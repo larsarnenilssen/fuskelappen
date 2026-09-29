@@ -1,0 +1,185 @@
+# Metodebeskrivelser for kalkulatorene i arbeidstidsmodulen («Slik regnes det ut»).
+# Tallene i beregningene står i rules/. Her står metoden med ord, slik at den kan kontrolleres og rettes uten kodeendring.
+- id: metode-beskjeftigelse
+  type: forklaring
+  tittel: { nb: Slik regnes beskjeftigelsen ut, nn: Slik blir sysselsetjinga rekna ut }
+  tekst:
+    nb: |
+      Beskjeftigelsen er hvor stor del av en hel stilling undervisningen i et fag utgjør:
+
+      **årstimer ÷ årsramme × 100**
+
+      - **Årstimer** er timene gruppen skal ha i faget i løpet av skoleåret, i 60-minutters timer. Skriver du inn økter per uke, regnes de om: økter × minutter ÷ 60 × antall uker (38 uker for hele skoleåret).
+      - **Årsrammen** er antallet undervisningstimer i faget som utgjør en hel stilling. Den står i vedlegg 1 til SFS 2213, i 60- og 45-minutters enheter. Kalkulatoren regner i 60-minutters timer.
+      - **Fag merket \*** i vedlegget får årsrammen økt med 52,5 timer (70 i 45-minutters enheter) når det faktiske antallet elever i klassen er 1–15.
+      - **Blandede grupper:** Har læreren elever fra ulike utdanningsprogram, programfag eller nivåer med ulike årsrammer i samme time, brukes laveste årsramme.
+      - **Flere fag:** Beskjeftigelsen regnes for hver gruppe og summeres. Mellomregningene avrundes ikke. Svaret vises med to desimaler.
+    nn: |
+      Sysselsetjinga er kor stor del av ei heil stilling undervisninga i eit fag utgjer:
+
+      **årstimar ÷ årsramme × 100**
+
+      - **Årstimar** er timane gruppa skal ha i faget i løpet av skuleåret, i 60-minutts timar. Skriv du inn økter per veke, blir dei rekna om: økter × minutt ÷ 60 × tal på veker (38 veker for heile skuleåret).
+      - **Årsramma** er talet på undervisningstimar i faget som utgjer ei heil stilling. Ho står i vedlegg 1 til SFS 2213, i 60- og 45-minutts einingar. Kalkulatoren reknar i 60-minutts timar.
+      - **Fag merkte \*** i vedlegget får årsramma auka med 52,5 timar (70 i 45-minutts einingar) når det faktiske talet på elevar i klassen er 1–15.
+      - **Blanda grupper:** Har læraren elevar frå ulike utdanningsprogram, programfag eller nivå med ulike årsrammer i same time, blir den lågaste årsramma brukt.
+      - **Fleire fag:** Sysselsetjinga blir rekna for kvar gruppe og summert. Mellomrekningane blir ikkje avrunda. Svaret blir vist med to desimalar.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+  kontrollert: null
+  stikkord: [undervisningsprosent, stillingsprosent, årsramme, årstimer]
+
+- id: metode-periode
+  type: forklaring
+  tittel: { nb: Slik regnes periodebeskjeftigelsen ut, nn: Slik blir periodesysselsetjinga rekna ut }
+  tekst:
+    nb: |
+      Årsrammene gjelder for et helt skoleår. Underviser læreren bare i en del av året, må årsrammen gjøres om til en ramme for perioden:
+
+      1. **Periodenøkkel** = undervisningsdager i perioden ÷ undervisningsdager i skoleåret. Dagene telles etter skoleruta.
+      2. **Perioderamme** = årsramme × periodenøkkel.
+      3. **Beskjeftigelse i perioden** = timene læreren underviser i perioden ÷ perioderammen × 100.
+
+      Uten eget antall bruker kalkulatoren 190 undervisningsdager i skoleåret. Samme metode brukes i Visma InSchool.
+    nn: |
+      Årsrammene gjeld for eit heilt skuleår. Underviser læraren berre i ein del av året, må årsramma gjerast om til ei ramme for perioden:
+
+      1. **Periodenøkkel** = undervisningsdagar i perioden ÷ undervisningsdagar i skuleåret. Dagane blir talde etter skuleruta.
+      2. **Perioderamme** = årsramme × periodenøkkel.
+      3. **Sysselsetjing i perioden** = timane læraren underviser i perioden ÷ perioderamma × 100.
+
+      Utan eige tal bruker kalkulatoren 190 undervisningsdagar i skuleåret. Same metode blir brukt i Visma InSchool.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    - { id: inschool-periodebeskjeftigelse }
+  kontrollert: null
+  stikkord: [periode, vikariat, periodenøkkel]
+
+- id: metode-vikar
+  type: forklaring
+  tittel: { nb: Slik regnes vikartimene ut, nn: Slik blir vikartimane rekna ut }
+  tekst:
+    nb: |
+      Vikarøktene gjøres først om til 60-minutters timer: økter × minutter ÷ 60.
+
+      **Ansatt i stilling:** Vikartimene øker beskjeftigelsen med timer ÷ årsramme × 100 prosentpoeng, med årsrammen for faget vikartimene gjelder.
+
+      **Timevikar:** Hovedtariffavtalen § 12.4 gir timelønnen for undervisning: (årslønn × 1400 × 100) ÷ (årsramme × 1687,5 × 112). Kalkulatoren deler formelen i to trinn:
+
+      1. **Kalkulert tid** = timer × 1400 ÷ årsramme. Det er tiden som regnes for undervisningen med for- og etterarbeid.
+      2. **Timelønn** = årslønn ÷ 1687,5 × 100 ÷ 112. Brøken 100/112 trekker feriepengene ut av timelønnen.
+
+      Lønn = kalkulert tid × timelønn. Feriepenger kommer i tillegg: 12 %, eller 14,3 % for arbeidstakere over 60 år (§ 7.4.2). Årslønnen er garantilønnen for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller en årslønn du skriver inn selv.
+    nn: |
+      Vikaröktene blir først gjorde om til 60-minutts timar: økter × minutt ÷ 60.
+
+      **Tilsett i stilling:** Vikartimane aukar sysselsetjinga med timar ÷ årsramme × 100 prosentpoeng, med årsramma for faget vikartimane gjeld.
+
+      **Timevikar:** Hovudtariffavtalen § 12.4 gir timeløna for undervisning: (årsløn × 1400 × 100) ÷ (årsramme × 1687,5 × 112). Kalkulatoren deler formelen i to steg:
+
+      1. **Kalkulert tid** = timar × 1400 ÷ årsramme. Det er tida som blir rekna for undervisninga med før- og etterarbeid.
+      2. **Timeløn** = årsløn ÷ 1687,5 × 100 ÷ 112. Brøken 100/112 trekkjer feriepengane ut av timeløna.
+
+      Løn = kalkulert tid × timeløn. Feriepengar kjem i tillegg: 12 %, eller 14,3 % for arbeidstakarar over 60 år (§ 7.4.2). Årsløna er garantiløna for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller ei årsløn du skriv inn sjølv.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    - { id: inschool-vikartimer }
+  kontrollert: null
+  stikkord: [timelønn, timevikar, kalkulert tid, feriepenger]
+
+- id: metode-planfestet
+  type: forklaring
+  tittel: { nb: Slik regnes planfestet arbeidstid ut, nn: Slik blir planfesta arbeidstid rekna ut }
+  tekst:
+    nb: |
+      Årsverket er 1687,5 timer. I videregående skole er 1150 av dem planfestet, med mindre partene på skolen blir enige om noe annet. Resten, 537,5 timer, disponerer læreren selv til for- og etterarbeid og faglig ajourføring.
+
+      Reduseres undervisningen for at læreren skal gjøre andre arbeidsoppgaver, reduseres tiden læreren disponerer selv med samme prosentandel, og planfestet tid øker like mye (punkt 5.3):
+
+      **planfestet tid = 1150 + 537,5 × reduksjon i prosent ÷ 100**
+
+      - Er reduksjonen oppgitt i årsrammetimer, gjøres den om til prosent med årsrammen 607,5, som gjelder for lærere med redusert undervisning på grunn av funksjon (vedlegg 1). Kontaktlærertjenesten gir minst 28,5 årsrammetimer (punkt 7.3 b), altså 4,69 %.
+      - Arbeidsåret er elevenes skoleår (190 dager) og 6 dager, altså 196 dager eller 39,2 uker à 5 dager.
+      - Planfestet tid kan være høyst 37,5 timer per uke (punkt 5.1), altså 39,2 × 37,5 = 1470 timer i arbeidsåret. Blir planfestet tid mer, utvides arbeidsåret. Timene over grensen deles på 7,5 timer per dag.
+    nn: |
+      Årsverket er 1687,5 timar. I vidaregåande skule er 1150 av dei planfesta, om ikkje partane på skulen blir samde om noko anna. Resten, 537,5 timar, disponerer læraren sjølv til før- og etterarbeid og fagleg ajourføring.
+
+      Blir undervisninga redusert for at læraren skal gjere andre arbeidsoppgåver, blir tida læraren disponerer sjølv redusert med same prosentdel, og planfesta tid aukar like mykje (punkt 5.3):
+
+      **planfesta tid = 1150 + 537,5 × reduksjon i prosent ÷ 100**
+
+      - Er reduksjonen oppgitt i årsrammetimar, blir han gjord om til prosent med årsramma 607,5, som gjeld for lærarar med redusert undervisning på grunn av funksjon (vedlegg 1). Kontaktlærartenesta gir minst 28,5 årsrammetimar (punkt 7.3 b), altså 4,69 %.
+      - Arbeidsåret er skuleåret til elevane (190 dagar) og 6 dagar, altså 196 dagar eller 39,2 veker à 5 dagar.
+      - Planfesta tid kan vere høgst 37,5 timar per veke (punkt 5.1), altså 39,2 × 37,5 = 1470 timar i arbeidsåret. Blir planfesta tid meir, blir arbeidsåret utvida. Timane over grensa blir delte på 7,5 timar per dag.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
+    - { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+  kontrollert: null
+  stikkord: [funksjon, kontaktlærer, andre arbeidsoppgaver, arbeidsår]
+
+- id: metode-overtid
+  type: forklaring
+  tittel: { nb: Slik regnes overtiden ut, nn: Slik blir overtida rekna ut }
+  tekst:
+    nb: |
+      Fast overtid kan avtales ved at årsrammen for undervisning økes. Overtidsbetaling gis for det antallet timer årsrammen er økt med (SFS 2213 punkt 5.2). Kalkulatoren regner beskjeftigelse ut over 100 % som overtid:
+
+      1. **Overtidstimer** = (beskjeftigelse − 100) × årsramme ÷ 100, med årsrammen for faget overtiden gjelder.
+      2. **Kalkulert tid** = overtidstimer × 1400 ÷ årsramme, og **timelønn** = årslønn ÷ 1687,5 × 100 ÷ 112, som for timevikarer (hovedtariffavtalen § 12.4).
+      3. **Overtidsbetaling** = kalkulert tid × timelønn × 1,5. For undervisning regnes overtidstillegget ut fra timelønnen for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3).
+
+      Feriepenger og overtid for deltidsansatte er ikke med ennå.
+    nn: |
+      Fast overtid kan avtalast ved at årsramma for undervisning blir auka. Overtidsbetaling blir gitt for talet på timar årsramma er auka med (SFS 2213 punkt 5.2). Kalkulatoren reknar sysselsetjing utover 100 % som overtid:
+
+      1. **Overtidstimar** = (sysselsetjing − 100) × årsramme ÷ 100, med årsramma for faget overtida gjeld.
+      2. **Kalkulert tid** = overtidstimar × 1400 ÷ årsramme, og **timeløn** = årsløn ÷ 1687,5 × 100 ÷ 112, som for timevikarar (hovudtariffavtalen § 12.4).
+      3. **Overtidsbetaling** = kalkulert tid × timeløn × 1,5. For undervisning blir overtidstillegget rekna ut frå timeløna for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3).
+
+      Feriepengar og overtid for deltidstilsette er ikkje med enno.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.4 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.5.3 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+  kontrollert: null
+  stikkord: [overtid, fast overtid, overtidsbetaling]
+
+- id: metode-fordeling
+  type: forklaring
+  tittel: { nb: Slik regnes fordelingen ut, nn: Slik blir fordelinga rekna ut }
+  tekst:
+    nb: |
+      Diagrammet viser årsverket i en tenkt stilling. Stillingen er beskjeftigelsen i fagene (B) og funksjoner og andre oppgaver (F), til sammen B + F prosent av 1687,5 timer.
+
+      - **Undervisning** er årstimene i fagene.
+      - **Møtetid** er møtetimene per uke × 38 uker.
+      - **Annen planfestet tid** er planfestet tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
+      - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet.
+      - **Tid læreren disponerer selv** er 537,5 × B.
+
+      For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon, ikke en arbeidsplan. Hvordan tiden fordeles, avtales på skolen.
+    nn: |
+      Diagrammet viser årsverket i ei tenkt stilling. Stillinga er sysselsetjinga i faga (B) og funksjonar og andre oppgåver (F), til saman B + F prosent av 1687,5 timar.
+
+      - **Undervisning** er årstimane i faga.
+      - **Møtetid** er møtetimane per veke × 38 veker.
+      - **Anna planfesta tid** er planfesta tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
+      - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta.
+      - **Tid læraren disponerer sjølv** er 537,5 × B.
+
+      For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon, ikkje ein arbeidsplan. Korleis tida blir fordelt, blir avtalt på skulen.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
+  kontrollert: null
+  stikkord: [fordeling, planfestet tid, selvdisponert tid, diagram]

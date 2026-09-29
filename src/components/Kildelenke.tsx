@@ -15,7 +15,8 @@ export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   const k = kilder.get(kilde.id);
   const url = kilde.url ?? k?.url;
   const navn = k?.navn ?? t('komponenter.kilde.ukjent');
-  const punkt = kilde.punkt ? `, ${t('komponenter.kilde.punkt', { punkt: kilde.punkt })}` : '';
+  // «punkt 5.2», men «Vedlegg 1» og «Kap. 1 § 12.4» uten «punkt» foran.
+  const punkt = kilde.punkt ? `, ${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
   if (!url) {
     return (
       <span class="kildelenke">

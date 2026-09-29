@@ -1,0 +1,111 @@
+# Hva de ulike delene av arbeidstiden brukes til. Vises under diagrammet i «Fordeling av arbeidstiden».
+- id: bruk-undervisning
+  type: forklaring
+  tittel: { nb: Undervisning, nn: Undervisning }
+  tekst:
+    nb: |
+      Tiden til undervisning legges innenfor planfestet arbeidstid, slik den følger av årsrammene for fagene i vedlegg 1 (punkt 5.2). Oversikten over planfestet tid skal vise når undervisningen er lagt.
+
+      Avtalen definerer ikke hva som regnes som undervisning. KS' FoU-rapport fra 2025 peker på at dette kan gi rom for ulike tolkninger og lokale forhandlinger.
+    nn: |
+      Tida til undervisning blir lagd innanfor planfesta arbeidstid, slik ho følgjer av årsrammene for faga i vedlegg 1 (punkt 5.2). Oversikta over planfesta tid skal vise når undervisninga er lagd.
+
+      Avtalen definerer ikkje kva som blir rekna som undervisning. FoU-rapporten til KS frå 2025 peikar på at dette kan gi rom for ulike tolkingar og lokale forhandlingar.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-fou-sfs2213 }
+  kontrollert: null
+
+- id: bruk-motetid
+  type: forklaring
+  tittel: { nb: Møtetid, nn: Møtetid }
+  tekst:
+    nb: |
+      Regelmessige møter skal gå fram av oversikten over planfestet arbeidstid (punkt 5.2). Samarbeid med kolleger i team, avdelinger og grupper er blant det planfestet tid først og fremst brukes til (punkt 5.1).
+
+      I kalkulatoren skriver du inn møtetiden per uke. Den regnes for 38 uker.
+    nn: |
+      Regelmessige møte skal gå fram av oversikta over planfesta arbeidstid (punkt 5.2). Samarbeid med kollegaer i team, avdelingar og grupper er blant det planfesta tid først og fremst blir brukt til (punkt 5.1).
+
+      I kalkulatoren skriv du inn møtetida per veke. Ho blir rekna for 38 veker.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+  kontrollert: null
+
+- id: bruk-annen-planfestet
+  type: forklaring
+  tittel: { nb: Annen planfestet tid og annet elevrettet arbeid, nn: Anna planfesta tid og anna elevretta arbeid }
+  tekst:
+    nb: |
+      Planfestet arbeidstid brukes først og fremst til (punkt 5.1):
+
+      - undervisning
+      - **annet elevrettet arbeid**
+      - for- og etterarbeid og faglig ajourføring, både hver for seg og sammen med kolleger i team, avdelinger, grupper og lignende
+      - kontakt med foresatte og samarbeidsinstanser
+
+      Skolens ledelse har ansvar for å legge til rette for samarbeidet.
+
+      **Annet elevrettet arbeid** er ikke definert i avtalen. KS' FoU-rapport fra 2025 viser at begrepet tolkes ulikt, og at hva som regnes med, ofte blir avklart lokalt mellom skoleledelsen og de tillitsvalgte. I kravet ved forhandlingene om avtalen i 2025 skrev Utdanningsforbundet at begrepet ofte fylles med oppgaver som ikke hører til lærernes kjerneoppgaver, slik at det blir mindre tid til å forberede undervisning sammen.
+
+      Avtalen setter disse rammene:
+
+      - Oversikten over planfestet tid settes opp av rektor etter samtale med læreren, og læreren kan ta med tillitsvalgt (punkt 5.2).
+      - Start- og sluttid kan endres med minst to ukers varsel, med mindre noe annet er avtalt (punkt 5.2).
+      - Lærerne spiser og har nødvendige pauser innenfor planfestet tid (punkt 5.2).
+      - Pålagt arbeid ut over oversikten, eller planer som går ut over grensene for planfestet tid, utløser overtidsgodtgjøring (punkt 5.2).
+      - Innholdet i planleggingsdagene drøftes lokalt (punkt 4).
+    nn: |
+      Planfesta arbeidstid blir først og fremst brukt til (punkt 5.1):
+
+      - undervisning
+      - **anna elevretta arbeid**
+      - før- og etterarbeid og fagleg ajourføring, både kvar for seg og saman med kollegaer i team, avdelingar, grupper og liknande
+      - kontakt med føresette og samarbeidsinstansar
+
+      Leiinga ved skulen har ansvar for å leggje til rette for samarbeidet.
+
+      **Anna elevretta arbeid** er ikkje definert i avtalen. FoU-rapporten til KS frå 2025 viser at omgrepet blir tolka ulikt, og at kva som blir rekna med, ofte blir avklart lokalt mellom skuleleiinga og dei tillitsvalde. I kravet ved forhandlingane om avtalen i 2025 skreiv Utdanningsforbundet at omgrepet ofte blir fylt med oppgåver som ikkje høyrer til kjerneoppgåvene til lærarane, slik at det blir mindre tid til å førebu undervisning saman.
+
+      Avtalen set desse rammene:
+
+      - Oversikta over planfesta tid blir sett opp av rektor etter samtale med læraren, og læraren kan ta med tillitsvald (punkt 5.2).
+      - Start- og sluttid kan endrast med minst to vekers varsel, om ikkje noko anna er avtalt (punkt 5.2).
+      - Lærarane et og har nødvendige pausar innanfor planfesta tid (punkt 5.2).
+      - Pålagt arbeid utover oversikta, eller planar som går utover grensene for planfesta tid, utløyser overtidsgodtgjering (punkt 5.2).
+      - Innhaldet i planleggingsdagane blir drøfta lokalt (punkt 4).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-fou-sfs2213 }
+    - { id: udf-krav-sfs2213-2025 }
+  kontrollert: null
+  stikkord: [elevrettet arbeid, planfestet tid, samarbeid]
+
+- id: bruk-funksjonstid
+  type: forklaring
+  tittel: { nb: Funksjoner og andre oppgaver, nn: Funksjonar og andre oppgåver }
+  tekst:
+    nb: |
+      Undervisningstiden kan reduseres etter avtale mellom læreren og rektor, slik at læreren kan gjøre andre arbeidsoppgaver knyttet til undervisningen (punkt 5.3), for eksempel som kontaktlærer eller rådgiver. Da reduseres også tiden læreren disponerer selv, og planfestet tid øker tilsvarende. Se kalkulatoren for planfestet arbeidstid.
+    nn: |
+      Undervisningstida kan reduserast etter avtale mellom læraren og rektor, slik at læraren kan gjere andre arbeidsoppgåver knytte til undervisninga (punkt 5.3), til dømes som kontaktlærar eller rådgivar. Då blir også tida læraren disponerer sjølv redusert, og planfesta tid aukar tilsvarande. Sjå kalkulatoren for planfesta arbeidstid.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "7.3" }
+  kontrollert: null
+
+- id: bruk-selvdisponert
+  type: forklaring
+  tittel: { nb: Tid læreren disponerer selv, nn: Tid læraren disponerer sjølv }
+  tekst:
+    nb: |
+      Den delen av årsverket som ikke er planfestet, disponerer læreren selv til for- og etterarbeid og faglig ajourføring (punkt 5.2). Hvor og når læreren gjør arbeidet utenom undervisningen, avhenger av oppgavene og hva som er hensiktsmessig for skolens oppdrag (punkt 3).
+    nn: |
+      Den delen av årsverket som ikkje er planfesta, disponerer læraren sjølv til før- og etterarbeid og fagleg ajourføring (punkt 5.2). Kvar og når læraren gjer arbeidet utanom undervisninga, er avhengig av oppgåvene og kva som er føremålstenleg for oppdraget til skulen (punkt 3).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "3" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+  kontrollert: null

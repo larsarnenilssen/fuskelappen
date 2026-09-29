@@ -795,6 +795,114 @@ main {
   fill: var(--farge-advarsel);
 }
 
+/* ---------- Fordelingsdiagram ---------- */
+
+.fordeling-del-undervisning {
+  fill: var(--diagram-undervisning);
+  background: var(--diagram-undervisning);
+}
+
+.fordeling-del-motetid {
+  fill: var(--diagram-motetid);
+  background: var(--diagram-motetid);
+}
+
+.fordeling-del-annen_planfestet {
+  fill: var(--diagram-annen);
+  background: var(--diagram-annen);
+}
+
+.fordeling-del-funksjonstid {
+  fill: var(--diagram-funksjon);
+  background: var(--diagram-funksjon);
+}
+
+.fordeling-del-selvdisponert {
+  fill: var(--diagram-selv);
+  background: var(--diagram-selv);
+}
+
+.fordeling-skille {
+  stroke: var(--farge-flate);
+  stroke-width: 1.5;
+}
+
+.fordeling-klamme {
+  fill: none;
+  stroke: var(--farge-tekst-dempet);
+  stroke-width: 1;
+}
+
+.fordeling-forklaring {
+  list-style: none;
+  margin: var(--rom-3) 0;
+  padding: 0;
+  display: grid;
+  gap: var(--rom-2);
+}
+
+.fordeling-forklaring li {
+  display: flex;
+  align-items: baseline;
+  gap: var(--rom-2);
+  flex-wrap: wrap;
+}
+
+.fordeling-farge {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 3px;
+  flex: none;
+  transform: translateY(0.1rem);
+}
+
+.fordeling-tabell {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--str-s);
+}
+
+.fordeling-tabell th,
+.fordeling-tabell td {
+  padding: var(--rom-1) var(--rom-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  text-align: left;
+}
+
+.fordeling-tabell td.tall,
+.fordeling-tabell th.tall {
+  text-align: right;
+}
+
+.oversikt {
+  margin: 0 0 var(--rom-2);
+}
+
+.oversikt-rad {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  flex-wrap: wrap;
+  padding: var(--rom-1) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.oversikt-rad dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.gruppe {
+  background: var(--farge-bakgrunn);
+}
+
+.arsramme-plass {
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-linje);
+  margin-bottom: var(--rom-3);
+}
+
 /* ---------- Resultatkort ---------- */
 
 .resultatkort {
@@ -839,11 +947,24 @@ main {
   font-weight: 700;
 }
 
+.utregning-formel {
+  display: block;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.utregning-linje {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
 .utregning-kilde {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: var(--rom-2);
   font-size: var(--str-s);
+  margin-top: var(--rom-1);
 }
 
 /* ---------- Varsel ---------- */
