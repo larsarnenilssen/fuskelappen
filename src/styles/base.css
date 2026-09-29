@@ -27,6 +27,7 @@ html {
 
 body {
   margin: 0;
+  font-size: var(--str-m);
   min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--farge-topplinje);
@@ -795,6 +796,326 @@ main {
   fill: var(--farge-advarsel);
 }
 
+/* ---------- Kalkulatorer: brytere, fagsøk og fagkort ---------- */
+
+.ingress-liten {
+  color: var(--farge-tekst-dempet);
+  margin-bottom: var(--rom-3);
+}
+
+.merknad-liten {
+  padding: var(--rom-2) var(--rom-3);
+  font-size: var(--str-xs);
+}
+
+.knapp-liten {
+  min-height: 2.25rem;
+  padding: var(--rom-1) var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.lenkeknapp.liten {
+  min-height: 2rem;
+  font-size: var(--str-s);
+  text-align: left;
+}
+
+.bryter {
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.bryter-legend {
+  padding: 0;
+  margin-bottom: var(--rom-1);
+  font-weight: 600;
+  font-size: var(--str-s);
+}
+
+.bryter-valg {
+  display: flex;
+  flex-wrap: wrap;
+  border: var(--strek) solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.bryter-valg label {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: var(--rom-1) var(--rom-3);
+  background: var(--farge-flate);
+  color: var(--farge-merke);
+  font-size: var(--str-s);
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.bryter-valg label + label {
+  border-left: var(--strek) solid var(--farge-merke);
+}
+
+.bryter-valg label.valgt {
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+}
+
+.bryter-valg input {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bryter-valg label:focus-within {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: -3px;
+}
+
+.vippe {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: var(--rom-3);
+  margin: 0 0 var(--rom-3);
+}
+
+.vippe input {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  width: 2.75rem;
+  height: 1.5rem;
+  margin: 0;
+  border-radius: 999px;
+  border: 2px solid var(--farge-tekst-dempet);
+  background: var(--farge-flate);
+  cursor: pointer;
+}
+
+.vippe input::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: var(--farge-tekst-dempet);
+}
+
+.vippe input:checked {
+  background: var(--farge-merke);
+  border-color: var(--farge-merke);
+}
+
+.vippe input:checked::after {
+  left: auto;
+  right: 2px;
+  background: var(--farge-merke-tekst);
+}
+
+.vippe label {
+  font-size: var(--str-s);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.vippe .felt-hjelp {
+  grid-column: 2;
+  margin: 0;
+  font-size: var(--str-xs);
+}
+
+.fagkortliste {
+  margin-bottom: var(--rom-4);
+}
+
+.fagkort {
+  position: relative;
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3) var(--rom-3) var(--rom-2);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  min-width: 0;
+}
+
+.fagkort-tittel {
+  padding: 0 var(--rom-1);
+  font-weight: 700;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+p.fagkort-tittel {
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+}
+
+.fagkort-fjern {
+  position: absolute;
+  top: -1.4rem;
+  right: var(--rom-2);
+  background: var(--farge-flate);
+}
+
+.fagkort-resultat {
+  margin: var(--rom-1) 0 0;
+  text-align: right;
+  font-weight: 700;
+  color: var(--farge-merke);
+}
+
+.fagkort .felt,
+.fagkort .bryter {
+  margin-bottom: var(--rom-2);
+}
+
+.feltrad {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  column-gap: var(--rom-3);
+}
+
+.fagvelger {
+  margin-bottom: var(--rom-2);
+}
+
+.fagvalg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--rom-2);
+  margin: 0 0 var(--rom-1);
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-info-flate);
+}
+
+.fagvalg-navn {
+  font-weight: 700;
+}
+
+.fagvalg-ramme {
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.fagvalg .lenkeknapp {
+  margin-left: auto;
+}
+
+.fag-blandet {
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-linje);
+}
+
+.fagtreff {
+  list-style: none;
+  margin: 0 0 var(--rom-1);
+  padding: 0;
+}
+
+.fagtreff:empty {
+  display: none;
+}
+
+.fagtreff li + li {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.fagtreff button {
+  display: block;
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-2);
+  border: 0;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fagtreff button:hover {
+  background: var(--farge-info-flate);
+}
+
+.fagtreff-navn {
+  display: block;
+  font-weight: 600;
+  color: var(--farge-lenke);
+}
+
+.fagtreff-under {
+  display: block;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.fagvelger .sokefelt input {
+  border-radius: var(--radius-s);
+}
+
+.figur {
+  margin: var(--rom-2) 0 var(--rom-3);
+}
+
+.figur-bakgrunn {
+  fill: var(--farge-linje);
+}
+
+.figur-grense {
+  stroke: var(--farge-tekst);
+  stroke-width: 2;
+}
+
+.figur-over {
+  fill: var(--farge-feil);
+}
+
+.figur-tekst {
+  fill: var(--farge-tekst-dempet);
+  font-size: 10px;
+  font-family: var(--font-tekst);
+}
+
+.fordeling-etikett {
+  fill: var(--farge-flate);
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-tekst);
+}
+
+.fordeling-tabell tr.sumrad th,
+.fordeling-tabell tr.sumrad td {
+  font-weight: 700;
+}
+
+.resultatkort-sammendrag {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.utregning-kilder ul {
+  margin: 0;
+  padding-left: var(--rom-4);
+  font-size: var(--str-s);
+}
+
 /* ---------- Fordelingsdiagram ---------- */
 
 .fordeling-del-undervisning {
@@ -857,6 +1178,15 @@ main {
   transform: translateY(0.1rem);
 }
 
+.fordeling-forklaring-rad {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--rom-4);
+  row-gap: var(--rom-1);
+  font-size: var(--str-s);
+  margin: var(--rom-1) 0 0;
+}
+
 .fordeling-tabell {
   width: 100%;
   border-collapse: collapse;
@@ -873,6 +1203,10 @@ main {
 .fordeling-tabell td.tall,
 .fordeling-tabell th.tall {
   text-align: right;
+}
+
+.fordeling-tabell td.tall {
+  white-space: nowrap;
 }
 
 .oversikt {
@@ -921,6 +1255,7 @@ main {
 
 .resultatkort-verdi {
   font-size: var(--str-xxl);
+  line-height: 1.2;
   font-weight: 700;
   margin: 0 0 var(--rom-2);
 }
@@ -937,6 +1272,7 @@ main {
 
 .utregning li {
   margin-bottom: var(--rom-2);
+  font-size: var(--str-s);
 }
 
 .utregning-tekst {
@@ -949,7 +1285,7 @@ main {
 
 .utregning-formel {
   display: block;
-  font-size: var(--str-s);
+  font-size: var(--str-xs);
   color: var(--farge-tekst-dempet);
 }
 

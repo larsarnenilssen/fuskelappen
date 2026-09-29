@@ -7,7 +7,7 @@
 //   funksjonstid = årsverk × F. Summen er årsverk × (B + F).
 // For hel stilling gir dette samme planfestede tid som punkt 5.3 (eier bekreftet 29.09.2026).
 import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
-import { funksjonsprosent, type Reduksjon } from './planfestet.ts';
+import { arbeidsaaret, funksjonsprosent, type Reduksjon } from './planfestet.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 
@@ -31,6 +31,8 @@ export interface Fordelingsresultat extends Utregning {
   funksjonsprosent: Operand;
   stilling: Operand;
   arsverk: Operand;
+  /** Uker i arbeidsåret (196 dager ÷ 5), til visning av timer per uke. */
+  arbeidsaarUker: Operand;
   deler: Fordelingsdel[];
 }
 
@@ -80,6 +82,7 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     funksjonsprosent: F,
     stilling: stilling.resultat,
     arsverk: arsverkStilling.resultat,
+    arbeidsaarUker: arbeidsaaret(hent).uker,
     deler: [
       { id: 'undervisning', timer: undervisning.verdi, planfestet: true },
       { id: 'motetid', timer: motetid.resultat.verdi, planfestet: true },

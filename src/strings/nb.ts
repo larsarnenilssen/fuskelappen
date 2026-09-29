@@ -200,7 +200,7 @@ export const nb = {
       skjulUtregning: 'Skjul utregning',
       utregning: 'Utregning',
       formel: 'Formel',
-      kilde: 'Kilde',
+      kilde: 'Kilder',
     },
     tallfelt: {
       ugyldig: 'Skriv inn et tall, for eksempel 12,5.',

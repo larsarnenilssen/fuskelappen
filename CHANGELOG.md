@@ -4,6 +4,26 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.2.1] – 2026-09-29
+
+Rettinger etter eiers førsteinntrykk av fase 1.
+
+### Lagt til
+
+- Fag velges med søk: fag, program, trinn, fagkode (f.eks. ENG1007, REA3036), bokstavene i fagkodene og programområdene (f.eks. ENG, BAT, HEA) og kallenavn (1P, R1, Biologi 2).
+- Brytere for årstimer eller økter, 45, 60 eller 90 minutter, «15 eller færre elever», vikartype og lønn.
+- Delresultat på hvert fag, og en stolpe som viser stillingen mot 100 %.
+- Tidslinje for perioden i skoleåret, og måler for planfestet tid mot grensen på 37,5 timer i uka.
+- Fordelingen viser prosent i stolpen og timer per uke i arbeidsåret i tabellen.
+- Det utfylte står der fortsatt når du går til en kilde eller et begrep og tilbake.
+
+### Endret
+
+- Mindre skrift og tettere skjema, kortere tekster og tydelig skille mellom fagene.
+- Flere program eller nivåer i samme time legges til med en liten lenke under faget.
+- Utregningen er kortere: én linje per trinn, formelen i liten skrift og kildene samlet nederst. Siste trinn vises under resultatet.
+- Metodebeskrivelsen står nederst på siden.
+
 ## [0.2.0] – 2026-09-29
 
 Fase 1: arbeidstid etter SFS 2213. Alle regelverdier og tekster er merket «Ikke kontrollert» til eier har godkjent dem.

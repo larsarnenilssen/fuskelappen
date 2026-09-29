@@ -73,10 +73,16 @@ function erStjerne(valg: Arsrammevalg): boolean {
  * - Har timen elever fra ulike program eller nivåer, brukes laveste årsramme (vedlegg 1).
  * - Fag merket * får årsrammen økt når det faktiske antallet elever i klassen er 1–15 (vedlegg 1).
  */
+/**
+ * Faktisk antall elever i klassen, eller svaret på «15 eller færre elever?» (true/false).
+ * Trengs bare for fag merket * i vedlegg 1.
+ */
+export type Elevtall = number | boolean | null;
+
 export function velgArsramme(
   hent: Hent,
   valg: readonly Arsrammevalg[],
-  elever: number | null,
+  elever: Elevtall,
   gruppe?: number,
 ): { arsramme: Operand; trinn: Trinn[]; manglerElevtall: boolean } {
   if (valg.length === 0) throw new Regelfeil('Gruppen mangler årsramme');
@@ -104,17 +110,10 @@ export function velgArsramme(
     if (elever === null) {
       manglerElevtall = true;
     } else {
-      const maks = regel(hent, 'sfs2213.stjerne_maks_elever', 'elever', 'elever');
-      if (elever >= 1 && elever <= maks.verdi) {
+      const faa = typeof elever === 'boolean' ? elever : elever >= 1 && elever <= regel(hent, 'sfs2213.stjerne_maks_elever', 'elever', 'elever').verdi;
+      if (faa) {
         const tillegg = regel(hent, 'sfs2213.stjernetillegg', 'stjernetillegg', 'arsrammetimer');
-        const t = trinn(
-          'stjernetillegg',
-          { arsramme, stjernetillegg: tillegg, elever: inndata('elever', elever, 'elever') },
-          'arsramme_justert',
-          'arsrammetimer',
-          arsramme.verdi + tillegg.verdi,
-          g,
-        );
+        const t = trinn('stjernetillegg', { arsramme, stjernetillegg: tillegg }, 'arsramme_justert', 'arsrammetimer', arsramme.verdi + tillegg.verdi, g);
         utTrinn.push(t);
         arsramme = t.resultat;
       }

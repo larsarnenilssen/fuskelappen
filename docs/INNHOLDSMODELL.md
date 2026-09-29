@@ -89,4 +89,4 @@ verdier:
 
 - `content/fylker.yaml`: fylkene (nummer og navn) med kilde.
 - `content/sok/synonymer.yaml`: par av nynorsk variant og bokmålsform for søket.
-- `data/`: genererte data (`status/kildestatus.json`, `skoler/vgs.json`). Endres bare av skript.
+- `data/`: genererte data (`status/kildestatus.json`, `skoler/vgs.json`, `grep/programomrader.json`). Endres bare av skript.

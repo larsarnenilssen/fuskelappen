@@ -4,7 +4,7 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Hent, lesGarantilonn, type Lonnsgrunnlag } from '../beregning/index.ts';
 import { prov } from './Kalkulatorside.tsx';
-import { Valgknapper } from './Skjema.tsx';
+import { Bryter } from './Skjema.tsx';
 
 export interface Lonnstilstand {
   type: 'garantilonn' | 'manuell';
@@ -31,18 +31,17 @@ export function Lonnsskjema({ hent, lonn, onEndring }: { hent: Hent; lonn: Lonns
   const sett = (endring: Partial<Lonnstilstand>) => onEndring({ ...lonn, ...endring });
   return (
     <>
-      <Valgknapper
+      <Bryter
         legend={t('arbeidstid.vikar.lonn')}
-        navn="lonn"
         verdi={lonn.type}
         valg={[
           { verdi: 'garantilonn', tekst: t('arbeidstid.vikar.lonnGarantilonn') },
           { verdi: 'manuell', tekst: t('arbeidstid.vikar.lonnManuell') },
         ]}
-        onEndring={(type) => sett({ type })}
+        onEndring={(type: Lonnstilstand['type']) => sett({ type })}
       />
       {lonn.type === 'garantilonn' ? (
-        <>
+        <div class="feltrad">
           <div class="felt">
             <label for={idGruppe}>{t('arbeidstid.vikar.stillingsgruppe')}</label>
             <select id={idGruppe} value={lonn.gruppe} onChange={(e) => sett({ gruppe: e.currentTarget.value })}>
@@ -63,9 +62,9 @@ export function Lonnsskjema({ hent, lonn, onEndring }: { hent: Hent; lonn: Lonns
               ))}
             </select>
           </div>
-        </>
+        </div>
       ) : (
-        <Tallfelt etikett={t('arbeidstid.vikar.arslonn')} hjelpetekst={t('arbeidstid.vikar.arslonnHjelp')} verdi={lonn.arslonn} min={1} maks={5000000} onEndring={(arslonn) => sett({ arslonn })} />
+        <Tallfelt etikett={t('arbeidstid.vikar.arslonn')} verdi={lonn.arslonn} min={1} maks={5000000} onEndring={(arslonn) => sett({ arslonn })} />
       )}
     </>
   );

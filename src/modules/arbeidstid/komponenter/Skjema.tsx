@@ -1,34 +1,58 @@
-// Skjemadeler som brukes av flere kalkulatorer: valgknapper, årsrammevalg og grupper av fag.
-import { useId } from 'preact/hooks';
+// Skjemadeler for kalkulatorene: brytere, fagsøk med årsramme fra vedlegg 1, og kort for hvert fag.
+import type { ComponentChildren } from 'preact';
+import { useId, useMemo, useState } from 'preact/hooks';
+import programomrader from '../../../../data/grep/programomrader.json';
 import { useTekst } from '../../../app/tilstand.ts';
+import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { type Arsrammerad, type Arsrammevalg, type Gruppe, radNavn } from '../beregning/index.ts';
+import { somTabell } from '../../../core/regler/motor.ts';
+import type { Arsrammerad, Arsrammevalg, Gruppe, Hent } from '../beregning/index.ts';
+import { lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
 
-export function Valgknapper<V extends string>({
+/** Segmentert bryter: et lite utvalg valg side om side (radioknapper). */
+export function Bryter<V extends string>({
   legend,
-  navn,
   verdi,
   valg,
   onEndring,
+  skjultLegend = false,
 }: {
   legend: string;
-  navn: string;
   verdi: V;
   valg: { verdi: V; tekst: string }[];
   onEndring: (v: V) => void;
+  skjultLegend?: boolean;
 }) {
   const id = useId();
   return (
-    <fieldset class="valggruppe">
-      <legend>{legend}</legend>
-      {valg.map((v) => (
-        <label class="valg" key={v.verdi}>
-          <input type="radio" name={`${navn}-${id}`} checked={verdi === v.verdi} onChange={() => onEndring(v.verdi)} />
-          <span>{v.tekst}</span>
-        </label>
-      ))}
+    <fieldset class="bryter">
+      <legend class={skjultLegend ? 'skjult-visuelt' : 'bryter-legend'}>{legend}</legend>
+      <div class="bryter-valg">
+        {valg.map((v) => (
+          <label key={v.verdi} class={verdi === v.verdi ? 'valgt' : undefined}>
+            <input type="radio" name={id} checked={verdi === v.verdi} onChange={() => onEndring(v.verdi)} />
+            <span>{v.tekst}</span>
+          </label>
+        ))}
+      </div>
     </fieldset>
+  );
+}
+
+/** Av/på-bryter (avkrysning med rollen «switch»). */
+export function Vippe({ tekst, hjelp, pa, onEndring }: { tekst: string; hjelp?: string; pa: boolean; onEndring: (pa: boolean) => void }) {
+  const id = useId();
+  return (
+    <div class="vippe">
+      <input id={id} type="checkbox" role="switch" checked={pa} aria-describedby={hjelp ? `${id}-hjelp` : undefined} onChange={(e) => onEndring(e.currentTarget.checked)} />
+      <label for={id}>{tekst}</label>
+      {hjelp && (
+        <p id={`${id}-hjelp`} class="felt-hjelp">
+          {hjelp}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -50,57 +74,206 @@ export function tilArsrammevalg(p: Arsrammeplass, rader: readonly Arsrammerad[])
   return rad ? { type: 'rad', rad } : null;
 }
 
-function grupperEtterRamme(rader: readonly Arsrammerad[]): { t60: number; t45: number; rader: Arsrammerad[] }[] {
-  const grupper = new Map<number, { t60: number; t45: number; rader: Arsrammerad[] }>();
-  for (const r of rader) {
-    const g = grupper.get(r.t60) ?? { t60: r.t60, t45: r.t45, rader: [] };
-    g.rader.push(r);
-    grupper.set(r.t60, g);
-  }
-  return [...grupper.values()].sort((a, b) => b.t60 - a.t60);
+export function erStjernefag(plasser: readonly Arsrammeplass[], rader: readonly Arsrammerad[]): boolean {
+  return plasser.some((p) => {
+    const v = tilArsrammevalg(p, rader);
+    return v !== null && (v.type === 'rad' ? v.rad.stjerne : v.stjerne);
+  });
 }
 
-export function Arsrammevelger({
+/** Søkeindeksen for vedlegg 1, med søkeord fra regelsettet og programområdene fra Grep. */
+export function useFagindeks(hent: Hent, rader: readonly Arsrammerad[]) {
+  return useMemo(() => {
+    const tabell = (n: string) => {
+      try {
+        return somTabell(hent(n), n);
+      } catch {
+        return [];
+      }
+    };
+    return lagFagindeks(rader, {
+      programnavn: tabell('sfs2213.programnavn'),
+      fagnavn: tabell('sfs2213.fagnavn'),
+      kallenavn: tabell('sfs2213.kallenavn'),
+      programomrader: (programomrader as unknown as { programomrader: Programomrader }).programomrader,
+    });
+  }, [hent, rader]);
+}
+
+type Fagindeks = ReturnType<typeof useFagindeks>;
+
+/** Kort visning av en valgt rad: «Engelsk · Studiespesialisering Vg1». */
+function radTekst(indeks: Fagindeks, nr: string): { navn: string; t60: number; t45: number; stjerne: boolean } | null {
+  const post = indeks.find((p) => String(p.treff.rad.nr) === nr);
+  if (!post) return null;
+  const { rad, fag, program } = post.treff;
+  return { navn: `${fag ?? rad.kategori} · ${program} ${rad.trinn}`, t60: rad.t60, t45: rad.t45, stjerne: rad.stjerne };
+}
+
+/** Velger en årsramme: søk i vedlegg 1, eller skriv inn årsrammen selv. */
+export function Fagvelger({
   etikett,
   plass,
-  rader,
+  indeks,
   onEndring,
+  ekstra,
 }: {
   etikett: string;
   plass: Arsrammeplass;
-  rader: readonly Arsrammerad[];
+  indeks: Fagindeks;
   onEndring: (p: Arsrammeplass) => void;
+  ekstra?: ComponentChildren;
 }) {
   const { t } = useTekst();
   const id = useId();
+  const [sok, settSok] = useState('');
+  const treff = useMemo(() => sokFag(indeks, sok, 6), [indeks, sok]);
+
+  if (plass.valg === 'manuell') {
+    return (
+      <div class="fagvelger">
+        <Tallfelt etikett={t('arbeidstid.felles.manuellEtikett')} verdi={plass.t60} min={1} maks={2000} onEndring={(v) => onEndring({ ...plass, t60: v })} />
+        <Vippe tekst={t('arbeidstid.felles.manuellStjerne')} pa={plass.stjerne} onEndring={(stjerne) => onEndring({ ...plass, stjerne })} />
+        <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())}>
+          {t('arbeidstid.felles.tilbakeTilSok')}
+        </button>
+        {ekstra}
+      </div>
+    );
+  }
+
+  const valgt = plass.valg ? radTekst(indeks, plass.valg) : null;
+  if (valgt) {
+    return (
+      <div class="fagvelger">
+        <p class="fagvalg" aria-label={`${etikett}: ${valgt.navn}`}>
+          <span class="fagvalg-navn">
+            {valgt.navn}
+            {valgt.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
+          </span>
+          <span class="fagvalg-ramme tall">{t('arbeidstid.felles.arsrammeKort', { t60: formaterTall(valgt.t60), t45: formaterTall(valgt.t45) })}</span>
+          <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())} aria-label={`${t('arbeidstid.felles.endreFag')}: ${valgt.navn}`}>
+            {t('arbeidstid.felles.endreFag')}
+          </button>
+        </p>
+        {ekstra}
+      </div>
+    );
+  }
+
   return (
-    <>
+    <div class="fagvelger">
       <div class="felt">
         <label for={id}>{etikett}</label>
-        <select id={id} value={plass.valg} onChange={(e) => onEndring({ ...plass, valg: e.currentTarget.value })}>
-          <option value="">{t('arbeidstid.felles.velgArsramme')}</option>
-          {grupperEtterRamme(rader).map((g) => (
-            <optgroup key={g.t60} label={t('arbeidstid.felles.optgruppe', { t60: formaterTall(g.t60), t45: formaterTall(g.t45) })}>
-              {g.rader.map((r) => (
-                <option key={r.nr} value={String(r.nr)}>
-                  {radNavn(r)}
-                  {r.stjerne ? ` ${t('arbeidstid.felles.stjerne')}` : ''}
-                </option>
-              ))}
-            </optgroup>
-          ))}
-          <option value="manuell">{t('arbeidstid.felles.manuellValg')}</option>
-        </select>
+        <div class="sokefelt">
+          <Ikon navn="sok" class="sokefelt-ikon" />
+          <input
+            id={id}
+            type="search"
+            autoComplete="off"
+            enterKeyHint="search"
+            placeholder={t('arbeidstid.felles.fagSok')}
+            aria-describedby={`${id}-hjelp`}
+            aria-controls={`${id}-treff`}
+            value={sok}
+            onInput={(e) => settSok(e.currentTarget.value)}
+          />
+        </div>
+        <p id={`${id}-hjelp`} class="felt-hjelp">
+          {t('arbeidstid.felles.fagSokHjelp')}
+        </p>
       </div>
-      {plass.valg === 'manuell' && (
-        <>
-          <Tallfelt etikett={t('arbeidstid.felles.manuellEtikett')} verdi={plass.t60} min={1} maks={2000} onEndring={(v) => onEndring({ ...plass, t60: v })} />
-          <label class="valg">
-            <input type="checkbox" checked={plass.stjerne} onChange={(e) => onEndring({ ...plass, stjerne: e.currentTarget.checked })} />
-            <span>{t('arbeidstid.felles.manuellStjerne')}</span>
-          </label>
-        </>
+      <ul id={`${id}-treff`} class="fagtreff" aria-live="polite">
+        {treff.map((tr) => (
+          <li key={tr.rad.nr}>
+            <button type="button" onClick={() => onEndring({ valg: String(tr.rad.nr), t60: null, stjerne: false })}>
+              <span class="fagtreff-navn">
+                {tr.fag ?? tr.rad.kategori} · {tr.program} {tr.rad.trinn}
+                {tr.rad.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
+              </span>
+              <span class="fagtreff-under tall">
+                {t('arbeidstid.felles.arsrammeKort', { t60: formaterTall(tr.rad.t60), t45: formaterTall(tr.rad.t45) })}
+                {tr.ekstra.length > 0 && ` · ${tr.ekstra.join(', ')}`}
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+      {sok.trim() !== '' && treff.length === 0 && <p class="felt-hjelp">{t('arbeidstid.felles.ingenFagTreff')}</p>}
+      <button type="button" class="lenkeknapp liten" onClick={() => onEndring({ valg: 'manuell', t60: null, stjerne: false })}>
+        {t('arbeidstid.felles.manuellValg')}
+      </button>
+      {ekstra}
+    </div>
+  );
+}
+
+/** Fag med årsramme: hovedfaget, eventuelt flere program eller nivåer i samme time, og bryter for små klasser. */
+export function Fagfelt({
+  plasser,
+  faaElever,
+  indeks,
+  rader,
+  onPlasser,
+  onFaaElever,
+}: {
+  plasser: Arsrammeplass[];
+  faaElever: boolean;
+  indeks: Fagindeks;
+  rader: readonly Arsrammerad[];
+  onPlasser: (p: Arsrammeplass[]) => void;
+  onFaaElever: (v: boolean) => void;
+}) {
+  const { t } = useTekst();
+  const sett = (i: number, ny: Arsrammeplass) => onPlasser(plasser.map((x, j) => (j === i ? ny : x)));
+  return (
+    <>
+      {plasser.map((p, i) => (
+        <div key={i} class={i > 0 ? 'fag-blandet' : undefined}>
+          <Fagvelger
+            etikett={i === 0 ? t('arbeidstid.felles.fag') : t('arbeidstid.felles.blandetEtikett')}
+            plass={p}
+            indeks={indeks}
+            onEndring={(ny) => sett(i, ny)}
+            ekstra={
+              i > 0 ? (
+                <button type="button" class="lenkeknapp liten" onClick={() => onPlasser(plasser.filter((_, j) => j !== i))}>
+                  {t('arbeidstid.felles.fjernArsramme')}
+                </button>
+              ) : undefined
+            }
+          />
+        </div>
+      ))}
+      {plasser[0]?.valg && (
+        <button type="button" class="lenkeknapp liten" onClick={() => onPlasser([...plasser, tomArsrammeplass()])}>
+          <Ikon navn="pluss" class="ikon-liten" />
+          {t('arbeidstid.felles.leggTilArsramme')}
+        </button>
       )}
+      {erStjernefag(plasser, rader) && <Vippe tekst={t('arbeidstid.felles.faaElever')} hjelp={t('arbeidstid.felles.faaEleverHjelp')} pa={faaElever} onEndring={onFaaElever} />}
+    </>
+  );
+}
+
+/** Minutter per økt: 45, 60, 90 eller annet. */
+export function Minuttvelger({ minutter, fritt, onEndring }: { minutter: number | null; fritt: boolean; onEndring: (m: number | null, fritt: boolean) => void }) {
+  const { t } = useTekst();
+  const valg = fritt ? 'annet' : String(minutter ?? 45);
+  return (
+    <>
+      <Bryter
+        legend={t('arbeidstid.felles.minutter')}
+        verdi={valg}
+        valg={[
+          { verdi: '45', tekst: '45' },
+          { verdi: '60', tekst: '60' },
+          { verdi: '90', tekst: '90' },
+          { verdi: 'annet', tekst: t('arbeidstid.felles.minutterAnnet') },
+        ]}
+        onEndring={(v) => (v === 'annet' ? onEndring(minutter, true) : onEndring(Number(v), false))}
+      />
+      {fritt && <Tallfelt etikett={t('arbeidstid.felles.minutterFritt')} verdi={minutter} min={1} maks={600} onEndring={(m) => onEndring(m, true)} />}
     </>
   );
 }
@@ -108,25 +281,25 @@ export function Arsrammevelger({
 export interface Gruppetilstand {
   id: number;
   arsrammer: Arsrammeplass[];
-  elever: number | null;
+  faaElever: boolean;
   modus: 'arstimer' | 'okter';
   arstimer: number | null;
   okter: number | null;
   minutter: number | null;
+  minutterFritt: boolean;
   uker: number | null;
+  endreUker: boolean;
 }
 
 let nesteId = 1;
 
 export function nyGruppe(): Gruppetilstand {
-  return { id: nesteId++, arsrammer: [tomArsrammeplass()], elever: null, modus: 'arstimer', arstimer: null, okter: null, minutter: 45, uker: null };
+  return { id: nesteId++, arsrammer: [tomArsrammeplass()], faaElever: false, modus: 'arstimer', arstimer: null, okter: null, minutter: 45, minutterFritt: false, uker: null, endreUker: false };
 }
 
-function harStjerne(g: Gruppetilstand, rader: readonly Arsrammerad[]): boolean {
-  return g.arsrammer.some((p) => {
-    const v = tilArsrammevalg(p, rader);
-    return v !== null && (v.type === 'rad' ? v.rad.stjerne : v.stjerne);
-  });
+/** Sørger for at nye grupper får id-er som ikke er brukt (etter at tilstanden er hentet fra historikken). */
+export function reserverIder(grupper: readonly Gruppetilstand[]): void {
+  for (const g of grupper) nesteId = Math.max(nesteId, g.id + 1);
 }
 
 /** Gjør gruppeskjemaet om til inndata for beregningen, eller null hvis noe mangler. */
@@ -136,18 +309,21 @@ export function tilGruppe(g: Gruppetilstand, rader: readonly Arsrammerad[], peri
   const arsrammer = valg as Arsrammevalg[];
   if (g.modus === 'arstimer') {
     if (g.arstimer === null) return null;
-    return { arsrammer, elever: g.elever, undervisning: { type: 'arstimer', arstimer: g.arstimer } };
+    return { arsrammer, elever: g.faaElever, undervisning: { type: 'arstimer', arstimer: g.arstimer } };
   }
-  if (g.okter === null || g.minutter === null || (periode && g.uker === null)) return null;
-  return { arsrammer, elever: g.elever, undervisning: { type: 'okter', okterPerUke: g.okter, minutter: g.minutter, uker: g.uker } };
+  const uker = g.endreUker || periode ? g.uker : null;
+  if (g.okter === null || g.minutter === null || (periode && uker === null)) return null;
+  return { arsrammer, elever: g.faaElever, undervisning: { type: 'okter', okterPerUke: g.okter, minutter: g.minutter, uker } };
 }
 
-export function Gruppeskjema({
+export function Gruppekort({
   gruppe,
   nr,
   rader,
+  indeks,
   periode,
   standardUker,
+  delresultat,
   kanFjernes,
   onEndring,
   onFjern,
@@ -155,45 +331,37 @@ export function Gruppeskjema({
   gruppe: Gruppetilstand;
   nr: number;
   rader: readonly Arsrammerad[];
+  indeks: Fagindeks;
   periode: boolean;
   standardUker: number;
+  delresultat: string | null;
   kanFjernes: boolean;
   onEndring: (g: Gruppetilstand) => void;
   onFjern: () => void;
 }) {
   const { t } = useTekst();
   const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
-  const flere = gruppe.arsrammer.length > 1;
   return (
-    <fieldset class="valggruppe gruppe" data-gruppe={nr}>
-      <legend>{t('arbeidstid.felles.gruppe', { nr })}</legend>
-      {gruppe.arsrammer.map((p, i) => (
-        <div class={flere ? 'arsramme-plass' : undefined} key={i}>
-          <Arsrammevelger
-            etikett={flere ? t('arbeidstid.felles.arsrammeNr', { nr: i + 1 }) : t('arbeidstid.felles.arsramme')}
-            plass={p}
-            rader={rader}
-            onEndring={(ny) => sett({ arsrammer: gruppe.arsrammer.map((x, j) => (j === i ? ny : x)) })}
-          />
-          {flere && (
-            <button type="button" class="lenkeknapp" onClick={() => sett({ arsrammer: gruppe.arsrammer.filter((_, j) => j !== i) })}>
-              {t('arbeidstid.felles.fjernArsramme', { nr: i + 1 })}
-            </button>
-          )}
-        </div>
-      ))}
-      <p class="felt-hjelp">{t('arbeidstid.felles.blandetForklaring')}</p>
-      <p>
-        <button type="button" class="knapp knapp-sekundaer" onClick={() => sett({ arsrammer: [...gruppe.arsrammer, tomArsrammeplass()] })}>
-          {t('arbeidstid.felles.leggTilArsramme')}
+    <fieldset class="fagkort" data-gruppe={nr}>
+      <legend class="fagkort-tittel">
+        <span>{t('arbeidstid.felles.gruppe', { nr })}</span>
+      </legend>
+      {kanFjernes && (
+        <button type="button" class="ikonknapp fagkort-fjern" aria-label={t('arbeidstid.felles.fjernGruppe', { nr })} onClick={onFjern}>
+          <Ikon navn="lukk" class="ikon-liten" />
         </button>
-      </p>
-      {harStjerne(gruppe, rader) && (
-        <Tallfelt etikett={t('arbeidstid.felles.elever')} hjelpetekst={t('arbeidstid.felles.eleverHjelp')} verdi={gruppe.elever} min={0} maks={100} onEndring={(v) => sett({ elever: v })} />
       )}
-      <Valgknapper
+      <Fagfelt
+        plasser={gruppe.arsrammer}
+        faaElever={gruppe.faaElever}
+        indeks={indeks}
+        rader={rader}
+        onPlasser={(arsrammer) => sett({ arsrammer })}
+        onFaaElever={(faaElever) => sett({ faaElever })}
+      />
+      <Bryter
         legend={t('arbeidstid.felles.undervisning')}
-        navn="modus"
+        skjultLegend
         verdi={gruppe.modus}
         valg={[
           { verdi: 'arstimer', tekst: periode ? t('arbeidstid.felles.modusTimerPeriode') : t('arbeidstid.felles.modusArstimer') },
@@ -203,8 +371,8 @@ export function Gruppeskjema({
       />
       {gruppe.modus === 'arstimer' ? (
         <Tallfelt
+          key="timer"
           etikett={periode ? t('arbeidstid.felles.timerIPerioden') : t('arbeidstid.felles.arstimer')}
-          {...(periode ? {} : { hjelpetekst: t('arbeidstid.felles.arstimerHjelp') })}
           verdi={gruppe.arstimer}
           min={0}
           maks={2000}
@@ -212,64 +380,76 @@ export function Gruppeskjema({
         />
       ) : (
         <>
-          <Tallfelt etikett={t('arbeidstid.felles.okter')} verdi={gruppe.okter} min={0} maks={50} onEndring={(v) => sett({ okter: v })} />
-          <Tallfelt etikett={t('arbeidstid.felles.minutter')} verdi={gruppe.minutter} min={1} maks={600} onEndring={(v) => sett({ minutter: v })} />
-          <Tallfelt
-            etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')}
-            {...(periode ? {} : { hjelpetekst: t('arbeidstid.felles.ukerHjelp', { uker: formaterTall(standardUker) }) })}
-            verdi={gruppe.uker}
-            min={0}
-            maks={60}
-            onEndring={(v) => sett({ uker: v })}
-          />
+          <div class="feltrad">
+            <Tallfelt key="okter" etikett={t('arbeidstid.felles.okter')} verdi={gruppe.okter} min={0} maks={50} onEndring={(v) => sett({ okter: v })} />
+            {(periode || gruppe.endreUker) && (
+              <Tallfelt key="uker" etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')} verdi={gruppe.uker} min={0} maks={60} onEndring={(v) => sett({ uker: v })} />
+            )}
+          </div>
+          <Minuttvelger minutter={gruppe.minutter} fritt={gruppe.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ minutter, minutterFritt })} />
+          {!periode && !gruppe.endreUker && (
+            <p class="felt-hjelp">
+              {t('arbeidstid.felles.ukerStandard', { uker: formaterTall(standardUker) })}{' '}
+              <button type="button" class="lenkeknapp liten" onClick={() => sett({ endreUker: true, uker: standardUker })}>
+                {t('arbeidstid.felles.endreUker')}
+              </button>
+            </p>
+          )}
         </>
       )}
-      {kanFjernes && (
-        <p>
-          <button type="button" class="lenkeknapp" onClick={onFjern}>
-            {t('arbeidstid.felles.fjernGruppe', { nr })}
-          </button>
+      {delresultat && (
+        <p class="fagkort-resultat tall" aria-live="polite">
+          = {t('arbeidstid.felles.delresultat', { verdi: delresultat })}
         </p>
       )}
     </fieldset>
   );
 }
 
-/** Liste av grupper med knapp for å legge til flere. */
+/** Kort for hvert fag, med knapp for å legge til flere. */
 export function Grupper({
   grupper,
   rader,
+  indeks,
   periode,
   standardUker,
+  delresultater,
   onEndring,
 }: {
   grupper: Gruppetilstand[];
   rader: readonly Arsrammerad[];
+  indeks: Fagindeks;
   periode: boolean;
   standardUker: number;
+  /** Beskjeftigelse per gruppe (prosent), vises på kortet når det finnes flere. */
+  delresultater?: (number | null)[];
   onEndring: (g: Gruppetilstand[]) => void;
 }) {
   const { t } = useTekst();
   return (
-    <section aria-label={t('arbeidstid.felles.grupper')}>
-      {grupper.map((g, i) => (
-        <Gruppeskjema
-          key={g.id}
-          gruppe={g}
-          nr={i + 1}
-          rader={rader}
-          periode={periode}
-          standardUker={standardUker}
-          kanFjernes={grupper.length > 1}
-          onEndring={(ny) => onEndring(grupper.map((x) => (x.id === g.id ? ny : x)))}
-          onFjern={() => onEndring(grupper.filter((x) => x.id !== g.id))}
-        />
-      ))}
-      <p>
-        <button type="button" class="knapp knapp-sekundaer" onClick={() => onEndring([...grupper, nyGruppe()])}>
-          {t('arbeidstid.felles.leggTilGruppe')}
-        </button>
-      </p>
+    <section aria-label={t('arbeidstid.felles.grupper')} class="fagkortliste">
+      {grupper.map((g, i) => {
+        const del = delresultater?.[i];
+        return (
+          <Gruppekort
+            key={g.id}
+            gruppe={g}
+            nr={i + 1}
+            rader={rader}
+            indeks={indeks}
+            periode={periode}
+            standardUker={standardUker}
+            delresultat={grupper.length > 1 && del != null ? formaterTall(del) : null}
+            kanFjernes={grupper.length > 1}
+            onEndring={(ny) => onEndring(grupper.map((x) => (x.id === g.id ? ny : x)))}
+            onFjern={() => onEndring(grupper.filter((x) => x.id !== g.id))}
+          />
+        );
+      })}
+      <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => onEndring([...grupper, nyGruppe()])}>
+        <Ikon navn="pluss" class="ikon-liten" />
+        {t('arbeidstid.felles.leggTilGruppe')}
+      </button>
     </section>
   );
 }

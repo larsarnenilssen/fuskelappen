@@ -23,19 +23,20 @@ export function medEnhet(t: T, verdi: number, enhet: Enhet): string {
   return e ? `${tallTekst(verdi)} ${e}` : tallTekst(verdi, 4);
 }
 
-function operandTall(o: Operand): string {
-  if (o.liste) return o.liste.map((v) => tallTekst(v)).join('; ');
+/** Tall for en operand. Lister vises som sum (a + b) når trinnet summerer, ellers adskilt med semikolon. */
+function operandTall(o: Operand, sum = false): string {
+  if (o.liste) return o.liste.map((v) => tallTekst(v)).join(sum ? ' + ' : '; ');
   return tallTekst(o.verdi, o.enhet === 'faktor' ? 4 : 2);
 }
 
-function steg(t: T, trinn: Trinn): Utregningssteg {
+function stegFra(t: T, trinn: Trinn): Utregningssteg {
   const nokkel = `arbeidstid.trinn.${trinn.id}`;
   const mal = t(`${nokkel}.formel` as Tekstnokkel);
   const navn: Record<string, string> = {};
   const tall: Record<string, string> = {};
   for (const [k, o] of Object.entries(trinn.operander)) {
     navn[k] = t(`arbeidstid.storrelser.${o.navn}` as Tekstnokkel);
-    tall[k] = operandTall(o);
+    tall[k] = operandTall(o, trinn.id === 'sum_beskjeftigelse');
   }
   // Hver kilde (med punkt og nivå) vises én gang per trinn. Rader i tabeller (f.eks. vedlegg 1) samles på kilden.
   const kilder = new Map<string, NonNullable<Utregningssteg['kilder']>[number]>();
@@ -71,13 +72,31 @@ interface Props {
   tittel: string;
   resultat: Operand;
   trinn: readonly Trinn[];
+  /** Vis siste trinn som sammendrag under verdien. Standard er sann. */
+  sammendrag?: boolean;
   children?: ComponentChildren;
 }
 
-/** Resultatkort for en beregning, med utregningen trinn for trinn. */
-export function Utregningskort({ tittel, resultat, trinn, children }: Props) {
+/** Alle kildene i utregningen, én gang hver, i rekkefølgen de brukes. */
+function samleKilder(steg: readonly Utregningssteg[]): NonNullable<Utregningssteg['kilder']> {
+  const kilder = new Map<string, NonNullable<Utregningssteg['kilder']>[number]>();
+  for (const s of steg) {
+    for (const k of s.kilder ?? []) {
+      const id = `${k.kilde.id}|${k.kilde.punkt ?? ''}|${k.niva}`;
+      const forrige = kilder.get(id);
+      const rader = new Set([...(forrige?.rad?.split('; ') ?? []), ...(k.rad ? [k.rad] : [])]);
+      kilder.set(id, { kilde: k.kilde, niva: k.niva, ...(rader.size ? { rad: [...rader].join('; ') } : {}) });
+    }
+  }
+  return [...kilder.values()];
+}
+
+/** Resultatkort for en beregning, med kompakt utregning trinn for trinn og kildene samlet. */
+export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, children }: Props) {
   const { t } = useTekst();
   const enhet = enhetTekst(t, resultat.enhet);
+  const steg = trinn.map((tr) => stegFra(t, tr));
+  const siste = steg[steg.length - 1];
   return (
     <Resultatkort
       tittel={tittel}
@@ -85,10 +104,11 @@ export function Utregningskort({ tittel, resultat, trinn, children }: Props) {
       {...(enhet ? { enhet } : {})}
       niva={brukteNiva(trinn)}
       ikkeKontrollert={harUkontrollert(trinn)}
-      steg={trinn.map((tr) => steg(t, tr))}
+      {...(sammendrag && siste?.innsatt ? { sammendrag: `${siste.innsatt} = ${siste.verdi}` } : {})}
+      steg={steg.map((s) => ({ ...s, kilder: (s.kilder ?? []).filter((k) => k.niva !== 'nasjonal') }))}
+      kilder={samleKilder(steg)}
     >
       {children}
     </Resultatkort>
   );
 }
-

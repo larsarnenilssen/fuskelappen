@@ -1,6 +1,6 @@
 // Beskjeftigelse (undervisningsprosent) for én eller flere grupper, og periodebeskjeftigelse.
 // Beskjeftigelse = årstimer ÷ årsramme × 100, i 60-minutters timer (vedlegg 1 til SFS 2213).
-import { type Arsrammevalg, velgArsramme } from './arsrammer.ts';
+import { type Arsrammevalg, type Elevtall, velgArsramme } from './arsrammer.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 
@@ -11,8 +11,8 @@ export type Undervisning =
 
 export interface Gruppe {
   arsrammer: Arsrammevalg[];
-  /** Faktisk antall elever. Trengs bare for fag merket * i vedlegg 1. */
-  elever: number | null;
+  /** Faktisk antall elever, eller om klassen har 15 eller færre. Trengs bare for fag merket * i vedlegg 1. */
+  elever: Elevtall;
   undervisning: Undervisning;
 }
 

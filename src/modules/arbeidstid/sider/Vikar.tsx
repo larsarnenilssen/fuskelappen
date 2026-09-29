@@ -1,61 +1,69 @@
 // Vikartimer: økt beskjeftigelse for ansatte i stilling, eller lønn for timevikarer.
-import { useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnTimevikar, beregnVikarFast } from '../beregning/index.ts';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer } from '../komponenter/Kalkulatorside.tsx';
-import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
-import { Arsrammevelger, tilArsrammevalg, tomArsrammeplass, Valgknapper } from '../komponenter/Skjema.tsx';
+import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
+import { Bryter, Fagfelt, Minuttvelger, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
-import { useHent } from '../kontekst.ts';
+import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Vikar() {
   const { t } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
-  const [type, settType] = useState<'fast' | 'timevikar'>('fast');
-  const [plass, settPlass] = useState(tomArsrammeplass);
-  const [elever, settElever] = useState<number | null>(null);
-  const [okter, settOkter] = useState<number | null>(null);
-  const [minutter, settMinutter] = useState<number | null>(45);
-  const [lonn, settLonn] = useState(nyLonnstilstand);
-  const [over60, settOver60] = useState(false);
+  const indeks = useFagindeks(hent, rader);
+  const [s, sett] = useSkjematilstand('vikar', () => ({
+    type: 'fast' as 'fast' | 'timevikar',
+    plasser: [tomArsrammeplass()],
+    faaElever: false,
+    okter: null as number | null,
+    minutter: 45 as number | null,
+    minutterFritt: false,
+    lonn: nyLonnstilstand(),
+    over60: false,
+  }));
 
-  const valg = tilArsrammevalg(plass, rader);
-  const stjerne = valg !== null && (valg.type === 'rad' ? valg.rad.stjerne : valg.stjerne);
-  const grunnlag = tilLonnsgrunnlag(lonn);
-  const felles = valg && okter !== null && minutter !== null ? { arsrammer: [valg] as Arsrammevalg[], elever, okter, minutter } : null;
-
-  const fast = prov(() => (type === 'fast' && felles ? beregnVikarFast(hent, felles) : null));
-  const time = prov(() => (type === 'timevikar' && felles && grunnlag ? beregnTimevikar(hent, { ...felles, lonn: grunnlag, over60 }) : null));
+  const valg = s.plasser.map((p) => tilArsrammevalg(p, rader));
+  const grunnlag = tilLonnsgrunnlag(s.lonn);
+  const felles =
+    valg.every((v) => v !== null) && s.okter !== null && s.minutter !== null
+      ? { arsrammer: valg as Arsrammevalg[], elever: s.faaElever, okter: s.okter, minutter: s.minutter }
+      : null;
+  const fast = prov(() => (s.type === 'fast' && felles ? beregnVikarFast(hent, felles) : null));
+  const time = prov(() => (s.type === 'timevikar' && felles && grunnlag ? beregnTimevikar(hent, { ...felles, lonn: grunnlag, over60: s.over60 }) : null));
   const feil = fast.feil ?? time.feil;
 
   return (
     <Kalkulatorside id="vikar">
-      <Valgknapper
+      <Bryter
         legend={t('arbeidstid.vikar.type')}
-        navn="vikartype"
-        verdi={type}
+        verdi={s.type}
         valg={[
           { verdi: 'fast', tekst: t('arbeidstid.vikar.fast') },
           { verdi: 'timevikar', tekst: t('arbeidstid.vikar.timevikar') },
         ]}
-        onEndring={settType}
+        onEndring={(type) => sett({ ...s, type })}
       />
-      <Arsrammevelger etikett={t('arbeidstid.felles.arsramme')} plass={plass} rader={rader} onEndring={settPlass} />
-      {stjerne && <Tallfelt etikett={t('arbeidstid.felles.elever')} hjelpetekst={t('arbeidstid.felles.eleverHjelp')} verdi={elever} min={0} maks={100} onEndring={settElever} />}
-      <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={okter} min={0} maks={2000} onEndring={settOkter} />
-      <Tallfelt etikett={t('arbeidstid.felles.minutter')} verdi={minutter} min={1} maks={600} onEndring={settMinutter} />
+      <div class="fagkort">
+        <Fagfelt
+          plasser={s.plasser}
+          faaElever={s.faaElever}
+          indeks={indeks}
+          rader={rader}
+          onPlasser={(plasser) => sett({ ...s, plasser })}
+          onFaaElever={(faaElever) => sett({ ...s, faaElever })}
+        />
+        <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={s.okter} min={0} maks={2000} onEndring={(okter) => sett({ ...s, okter })} />
+        <Minuttvelger minutter={s.minutter} fritt={s.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ ...s, minutter, minutterFritt })} />
+      </div>
 
-      {type === 'timevikar' && (
-        <>
-          <Lonnsskjema hent={hent} lonn={lonn} onEndring={settLonn} />
-          <label class="valg">
-            <input type="checkbox" checked={over60} onChange={(e) => settOver60(e.currentTarget.checked)} />
-            <span>{t('arbeidstid.vikar.over60')}</span>
-          </label>
-        </>
+      {s.type === 'timevikar' && (
+        <div class="fagkort">
+          <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
+          <Vippe tekst={t('arbeidstid.vikar.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+        </div>
       )}
 
       {feil && <Feilmelding feil={feil} />}
@@ -68,7 +76,7 @@ export default function Vikar() {
       {time.resultat && (
         <>
           <Advarsler advarsler={time.resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.samletLonn')} resultat={time.resultat.samlet} trinn={time.resultat.trinn}>
+          <Utregningskort tittel={t('arbeidstid.resultat.samletLonn')} resultat={time.resultat.samlet} trinn={time.resultat.trinn} sammendrag={false}>
             <Oversiktsliste
               rader={[
                 { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, time.resultat.kalkulertTid.verdi, 'timer') },

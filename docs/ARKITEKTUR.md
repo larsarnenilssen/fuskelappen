@@ -85,6 +85,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 - Hver beregning gir resultatet og **trinnene** i utregningen. Et trinn har en id, operandene (verdi, enhet, og om verdien kommer fra regelverket, en tabell, brukeren eller et tidligere trinn) og resultatet. Teksten og formelen for hvert trinn står i `src/strings/moduler/arbeidstid.*.ts` med plassholdere, f.eks. `{arstimer} ÷ {arsramme} × 100`. Appen fyller formelen inn to ganger: med navn og med tall. Kilde og nivå vises for hver regelverdi.
 - **Rette en utregning:** tall rettes i `rules/`, formeltekster i `src/strings/`, metodebeskrivelser i `content/arbeidstid/metoder.yaml`, og selve regnestykket i `beregning/`. Fasittestene (`tests/fasit/sfs2213/`) viser om svarene fortsatt stemmer.
 - Mellomregninger avrundes ikke. Svar vises med to desimaler.
+- Fag velges med et søk i vedlegg 1 (`fagsok.ts`), med søkeord fra `rules/sfs2213/fagsok-2026-2027.yaml` og programområder fra Grep (`data/grep/programomrader.json`, `npm run hent:grep`). Det utfylte huskes i nettleserhistorikken (`useSkjematilstand`), se [avgjørelse 009](avgjorelser/009-fagsok-og-skjematilstand.md).
 
 ## Lagring og personvern
 
