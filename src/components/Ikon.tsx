@@ -26,6 +26,8 @@ const baner = {
   hent: 'M12 16V5m0 0-4 4m4-4 4 4M5 19h14',
   slett: 'M5 7h14M10 7V4.5h4V7M7 7l1 13h8l1-13',
   pluss: 'M12 5v14M5 12h14',
+  sporsmal: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.5v.5M12 16.8h.01',
+  kopier: 'M9 9h10.5v11.5H9zM5.5 15V4H15',
 } as const;
 
 export type Ikonnavn = keyof typeof baner;

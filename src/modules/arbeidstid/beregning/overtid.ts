@@ -2,6 +2,7 @@
 // SFS 2213 punkt 5.2: overtidsbetaling gis for det antall timer årsrammen for undervisning er økt med.
 // Hovedtariffavtalen § 6.4 og § 12.4: tillegget regnes ut fra timelønn for undervisning; § 6.5.3: 50 % tillegg.
 // Overtidsbetaling = overtidstimer × kalkulert tid per time × timelønn × (100 + 50) ÷ 100.
+// Feriepenger regnes som vanlig i prosent av det som utbetales (§ 7.4.2), og vises som en ekstraopplysning.
 import { type Arsrammevalg, type Elevtall, velgArsramme } from './arsrammer.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
@@ -14,11 +15,19 @@ export interface Overtid {
   arsrammer: Arsrammevalg[];
   elever: Elevtall;
   lonn: Lonnsgrunnlag;
+  /** Høyere feriepengesats for arbeidstakere over 60 år. */
+  over60?: boolean;
 }
 
 export interface OvertidResultat extends Utregning {
+  /** Undervisningstimer i overtid: overtidsprosenten regnet om med fagets årsramme. */
   overtidstimer: Operand;
+  /** Arbeidstimene det betales for (HTA § 12.4). */
+  kalkulertTid: Operand;
+  timelonn: Operand;
   betaling: Operand;
+  /** Feriepenger av overtidsbetalingen. Kommer i tillegg, og er ikke med i betalingen. */
+  feriepenger: Operand;
 }
 
 export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
@@ -44,6 +53,16 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
     'kroner',
     (kalkulert.resultat.verdi * tl.resultat.verdi * (100 + tillegg.verdi)) / 100,
   );
-  const alle: Trinn[] = [...valg.trinn, prosent, timer, kalkulert, tl, betaling];
-  return { overtidstimer: timer.resultat, betaling: betaling.resultat, trinn: alle, advarsler };
+  const sats = regel(hent, o.over60 ? 'hta.feriepenger_prosent_over_60' : 'hta.feriepenger_prosent', 'feriepengesats', 'prosent');
+  const ferie = trinn('feriepenger', { lonn: betaling.resultat, sats }, 'feriepenger', 'kroner', (betaling.resultat.verdi * sats.verdi) / 100);
+  const alle: Trinn[] = [...valg.trinn, prosent, timer, kalkulert, tl, betaling, ferie];
+  return {
+    overtidstimer: timer.resultat,
+    kalkulertTid: kalkulert.resultat,
+    timelonn: tl.resultat,
+    betaling: betaling.resultat,
+    feriepenger: ferie.resultat,
+    trinn: alle,
+    advarsler,
+  };
 }

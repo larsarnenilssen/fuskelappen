@@ -40,8 +40,9 @@ export function begge(verdi: Tekstverdi): Flerspraak {
   return { nb: visTekst(verdi, 'nb'), nn: visTekst(verdi, 'nn') };
 }
 
-export function formaterTall(tall: number, desimaler = 2): string {
-  return new Intl.NumberFormat('nb-NO', { maximumFractionDigits: desimaler }).format(tall);
+/** Tall med høyst `desimaler` desimaler. `minst` gir faste desimaler, f.eks. 2 for kronebeløp (1 748,80). */
+export function formaterTall(tall: number, desimaler = 2, minst = 0): string {
+  return new Intl.NumberFormat('nb-NO', { maximumFractionDigits: desimaler, minimumFractionDigits: Math.min(minst, desimaler) }).format(tall);
 }
 
 export function formaterDato(iso: string, malform: Malform): string {

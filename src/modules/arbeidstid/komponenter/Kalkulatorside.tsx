@@ -1,8 +1,9 @@
-// Felles ramme for kalkulatorsidene: tittel med favorittknapp, ingress, metode, advarsler og feil.
+// Felles ramme for kalkulatorsidene: tittel med «?» for ingressen og favorittknapp, metode, advarsler og feil.
 import type { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
+import { Hjelp } from '../../../components/Hjelp.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Hent, lesArsrammer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
@@ -14,11 +15,13 @@ export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: C
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
   return (
     <div class="side kalkulator" data-kalkulator={id}>
-      <div class="tittelrad">
+      <div class="tittelrad med-hjelp">
         <h1 tabIndex={-1}>{tittel}</h1>
+        <Hjelp tema={tittel}>
+          <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
+        </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
       </div>
-      <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
       {children}
       <Metode id={`metode-${id}`} />
     </div>

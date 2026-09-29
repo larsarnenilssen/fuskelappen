@@ -53,6 +53,7 @@ export interface Timevikar extends Vikartimer {
 }
 
 export interface TimevikarResultat extends Utregning {
+  vikartimer: Operand;
   kalkulertTid: Operand;
   timelonn: Operand;
   lonn: Operand;
@@ -117,6 +118,7 @@ export function beregnTimevikar(hent: Hent, v: Timevikar): TimevikarResultat {
   const samlet = trinn('samlet_lonn', { lonn: lonn.resultat, feriepenger: ferie.resultat }, 'samlet_lonn', 'kroner', lonn.resultat.verdi + ferie.resultat.verdi);
   const alle: Trinn[] = [...valg.trinn, timer, kalkulert, timelonn, lonn, ferie, samlet];
   return {
+    vikartimer: timer.resultat,
     kalkulertTid: kalkulert.resultat,
     timelonn: timelonn.resultat,
     lonn: lonn.resultat,

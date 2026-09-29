@@ -1,4 +1,5 @@
-// Tallfelt som godtar desimalkomma og viser feil på en tilgjengelig måte.
+// Tallfelt som godtar desimalkomma og viser feil på en tilgjengelig måte. Hjelpeteksten står under feltet,
+// slik at felt side om side (.feltrad) står på linje.
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import { formaterTall } from '../core/i18n/tekst.ts';
@@ -12,9 +13,14 @@ interface Props {
   hjelpetekst?: string;
   min?: number;
   maks?: number;
+  /** Grå tekst i tomt felt, f.eks. verdien som brukes når feltet står tomt. */
+  plassholder?: string;
+  /** Skjul etiketten visuelt (den leses fortsatt av skjermlesere). Bare når enheten eller en bryter ved siden av viser hva feltet er. */
+  skjultEtikett?: boolean;
+  class?: string;
 }
 
-export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks }: Props) {
+export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks, plassholder, skjultEtikett = false, class: klasse }: Props) {
   const { t } = useTekst();
   const id = useId();
   const [tekst, settTekst] = useState(verdi === null ? '' : formaterTall(verdi, 4).replace(/\s/g, ''));
@@ -38,13 +44,10 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
   const beskrivelser = [hjelpetekst ? `${id}-hjelp` : null, feil ? `${id}-feil` : null].filter(Boolean).join(' ');
 
   return (
-    <div class={`felt${feil ? ' felt-feil' : ''}`}>
-      <label for={id}>{etikett}</label>
-      {hjelpetekst && (
-        <p id={`${id}-hjelp`} class="felt-hjelp">
-          {hjelpetekst}
-        </p>
-      )}
+    <div class={`felt${feil ? ' felt-feil' : ''}${klasse ? ` ${klasse}` : ''}`}>
+      <label for={id} class={skjultEtikett ? 'skjult-visuelt' : undefined}>
+        {etikett}
+      </label>
       <div class="tallfelt">
         <input
           id={id}
@@ -52,6 +55,7 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
           inputMode="decimal"
           autoComplete="off"
           value={tekst}
+          placeholder={plassholder}
           aria-invalid={feil ? true : undefined}
           aria-describedby={beskrivelser || undefined}
           onInput={(e) => vedEndring(e.currentTarget.value)}
@@ -62,6 +66,11 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
           </span>
         )}
       </div>
+      {hjelpetekst && (
+        <p id={`${id}-hjelp`} class="felt-hjelp">
+          {hjelpetekst}
+        </p>
+      )}
       {feil && (
         <p id={`${id}-feil`} class="felt-feilmelding" role="alert">
           {feil}

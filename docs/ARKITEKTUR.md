@@ -86,6 +86,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 - **Rette en utregning:** tall rettes i `rules/`, formeltekster i `src/strings/`, metodebeskrivelser i `content/arbeidstid/metoder.yaml`, og selve regnestykket i `beregning/`. Fasittestene (`tests/fasit/sfs2213/`) viser om svarene fortsatt stemmer.
 - Mellomregninger avrundes ikke. Svar vises med to desimaler.
 - Fag velges med et søk i vedlegg 1 (`fagsok.ts`), med søkeord fra `rules/sfs2213/fagsok-2026-2027.yaml` og programområder fra Grep (`data/grep/programomrader.json`, `npm run hent:grep`). Det utfylte huskes i nettleserhistorikken (`useSkjematilstand`), se [avgjørelse 009](avgjorelser/009-fagsok-og-skjematilstand.md).
+- Resultatkortet (`Utregningskort`) viser hovedsvaret i en fast linje nederst når kortet er utenfor skjermen, og kan kopiere utregningen som tekst. Korte forklaringer ligger bak «?» (`Hjelp`). Se [avgjørelse 010](avgjorelser/010-resultatlinje-hjelp-og-kopiering.md).
 
 ## Lagring og personvern
 

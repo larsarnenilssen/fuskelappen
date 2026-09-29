@@ -179,4 +179,33 @@ describe('overtid', () => {
     const ingen = beregnOvertid(hent, { beskjeftigelse: 90, arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, lonn: { type: 'manuell', arslonn: 600000 } });
     expect(ingen.betaling.verdi).toBe(0);
   });
+
+  it('fag og små klasser endrer undervisningstimene, men ikke beløpet', async () => {
+    const { beregnOvertid } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const lonn = { type: 'garantilonn', stillingsgruppe: 'lektor', ansiennitet: 0 } as const;
+    const engelsk = rad('Engelsk', 'Stud.spes', 'Vg1');
+    const stor = beregnOvertid(hent, { beskjeftigelse: 102, arsrammer: [engelsk], elever: false, lonn });
+    const liten = beregnOvertid(hent, { beskjeftigelse: 102, arsrammer: [engelsk], elever: true, lonn });
+    const manuell = beregnOvertid(hent, { beskjeftigelse: 102, arsrammer: [{ type: 'manuell', t60: 607.5, stjerne: false }], elever: null, lonn });
+    // 2 % av 525, 577,5 (med stjernetillegg) og 607,5 årsrammetimer.
+    expect(stor.overtidstimer.verdi).toBeCloseTo(10.5);
+    expect(liten.overtidstimer.verdi).toBeCloseTo(11.55);
+    expect(manuell.overtidstimer.verdi).toBeCloseTo(12.15);
+    // Kalkulert tid er 2 × 1400 ÷ 100 = 28 timer i alle tilfellene, og beløpet blir det samme.
+    for (const r of [stor, liten, manuell]) {
+      expect(r.kalkulertTid.verdi).toBeCloseTo(28);
+      expect(rund(r.betaling.verdi)).toBe(14573.33);
+    }
+  });
+
+  it('feriepenger regnes i prosent av overtidsbetalingen og holdes utenfor den', async () => {
+    const { beregnOvertid } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const inn = { beskjeftigelse: 102, arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: false, lonn: { type: 'garantilonn' as const, stillingsgruppe: 'lektor', ansiennitet: 0 } };
+    const vanlig = beregnOvertid(hent, inn);
+    const over60 = beregnOvertid(hent, { ...inn, over60: true });
+    expect(rund(vanlig.betaling.verdi)).toBe(14573.33);
+    expect(rund(vanlig.feriepenger.verdi)).toBe(1748.8);
+    expect(rund(over60.betaling.verdi)).toBe(14573.33);
+    expect(rund(over60.feriepenger.verdi)).toBe(2083.99);
+  });
 });
