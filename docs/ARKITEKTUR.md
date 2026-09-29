@@ -85,7 +85,7 @@ vite-plugin-pwa (Workbox). Appskallet og all kode forhåndslagres. `data/**` hen
 
 ### Ikonet
 
-Ikonet har én kildefil: `ikon/ikon.svg` (kvadratisk, full bakgrunn, motivet innenfor midtre 80 %). `npm run lag:ikoner` lager alle størrelser i `public/ikoner/` med faste filnavn. Manifest, `index.html` og kode peker bare på filnavnene.
+Ikonet har én kildefil: `ikon/ikon.svg` (kvadratisk, full bakgrunn, motivet innenfor midtre 80 %). `npm run lag:ikoner` lager alle størrelser i `public/ikoner/` med faste filnavn. Manifest, `index.html` og kode peker bare på filnavnene. Logoen i topplinjen (`logo.svg`) lages av samme fil: elementet med `id="bakgrunn"` fjernes, og bildet beskjæres til motivet, så logoen passer i både lyst og mørkt tema. Mangler `id="bakgrunn"`, brukes ikonet som det er.
 
 **Bytte ikon:** legg inn ny `ikon/ikon.svg`, kjør `npm run lag:ikoner`, og lag en ny versjon. Ingen annen kode endres. På iPhone kan det gamle ikonet bli liggende på hjemskjermen til appen legges til på nytt.
 

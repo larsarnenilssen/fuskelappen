@@ -186,10 +186,9 @@ select {
 }
 
 .applogo {
-  /* Ikonet har luft rundt motivet (for maskable-ikoner), så det vises litt større enn teksten. */
-  width: 2.5rem;
-  height: 2.5rem;
-  margin: -0.5rem -0.25rem;
+  /* logo.svg er ikonet uten bakgrunn, beskåret til motivet (se scripts/lag-ikoner.ts). */
+  width: 1.75rem;
+  height: 1.75rem;
   flex: none;
 }
 

@@ -30,7 +30,7 @@ export default defineConfig(({ mode }) => ({
     VitePWA({
       registerType: 'prompt',
       injectRegister: false,
-      includeAssets: ['ikoner/favicon.svg', 'ikoner/apple-touch-icon.png'],
+      includeAssets: ['ikoner/favicon.svg', 'ikoner/logo.svg', 'ikoner/apple-touch-icon.png'],
       manifest: {
         id: app.base,
         name: app.navn,

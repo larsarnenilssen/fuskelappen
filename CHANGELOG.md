@@ -9,6 +9,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Rettet
 
 - Den grå overgangen bak klokken og batteriet øverst på iPhone. iOS henter fargen der fra sidens bakgrunnsfarge, og den er nå den samme mørkeblå som toppfeltet.
+- Logoen i topplinjen viste en blå firkant i mørkt tema. Logoen er nå bare boka, uten bakgrunn.
 
 ## [0.1.1] – 2026-09-29
 

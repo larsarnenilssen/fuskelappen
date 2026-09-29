@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <!-- Plassholder: innbundet protokollbok med paragraftegn. Motivet holder seg innenfor midtre 80 %
-       slik at samme fil kan brukes som maskable-ikon. Bytt filen og kjør «npm run lag:ikoner». -->
-  <rect width="512" height="512" fill="#17324f"/>
+       slik at samme fil kan brukes som maskable-ikon. Bakgrunnen har id="bakgrunn" og fjernes i logoen
+       i topplinjen. Bytt filen og kjør «npm run lag:ikoner». -->
+  <rect id="bakgrunn" width="512" height="512" fill="#17324f"/>
   <rect x="172" y="128" width="196" height="268" rx="16" fill="#b9b3a5"/>
   <rect x="160" y="118" width="196" height="268" rx="16" fill="#f6f4ef"/>
   <path d="M176 118h22v268h-22a16 16 0 0 1-16-16V134a16 16 0 0 1 16-16Z" fill="#c8a86b"/>
