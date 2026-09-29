@@ -49,3 +49,18 @@ export function formaterDato(iso: string, malform: Malform): string {
   if (Number.isNaN(dato.getTime())) return iso;
   return new Intl.DateTimeFormat(malform === 'nn' ? 'nn-NO' : 'nb-NO', { day: 'numeric', month: 'long', year: 'numeric' }).format(dato);
 }
+
+/** Dato og klokkeslett i norsk tid, f.eks. «mandag 5. oktober 2026 kl. 06:17». */
+export function formaterTidspunkt(iso: string, malform: Malform): string {
+  const dato = new Date(iso);
+  if (Number.isNaN(dato.getTime())) return iso;
+  return new Intl.DateTimeFormat(malform === 'nn' ? 'nn-NO' : 'nb-NO', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/Oslo',
+  }).format(dato);
+}

@@ -9,3 +9,5 @@
 - Tema settes av et lite innebygd skript i `index.html` før første tegning, så skjermen ikke blinker.
 
 **Konsekvens:** Ingen nye avhengigheter. Ruter defineres i modulmanifestene og i `src/app/ruteliste.ts`.
+
+**Tillegg 0.1.1 (etter test på iPhone):** Installerte nettapper på iOS la en lys overgang bak statuslinjen og kunne regne visningsområdet for kort ved oppstart, slik at det ble en stripe under bunnmenyen. Vi retter dette med farge på lerretet (`html`): toppfarge øverst og menyfarge nederst, med sidefargen på `body`. Det krever ingen skript og ingen gjetting på iOS-versjoner. «Teknisk informasjon» under «Om» viser skjermmål og sikre kanter, så feil kan feilsøkes på eiers telefon.

@@ -3,14 +3,14 @@ import type { ComponentType } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { app } from '../config/app.ts';
 import { visTekst } from '../core/i18n/tekst.ts';
-import { samletStatus } from '../core/kildestatus/kildestatus.ts';
+import { visningsstatus, type Visningsstatus } from '../core/kildestatus/kildestatus.ts';
 import { Ikon, type Ikonnavn } from '../components/Ikon.tsx';
 import type { SideProps } from '../modules/typer.ts';
 import { useKildestatus } from './kildestatus.ts';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
 import { gaaTilbake, matchRute, usePlassering, utforScroll, type Navigasjonstype } from './ruter.ts';
 import { ruter, type Rute } from './ruteliste.ts';
-import { useTekst } from './tilstand.ts';
+import { useTekst, useTilstand } from './tilstand.ts';
 
 type Sidemodul = { default: ComponentType<SideProps> };
 const lastet = new Map<Rute, Sidemodul>();
@@ -95,9 +95,18 @@ function Side({ rute, props, type }: { rute: Rute; props: SideProps; type: Navig
 function KildestatusIndikator() {
   const { t } = useTekst();
   const status = useKildestatus();
-  const samlet = status.tilstand === 'ok' ? samletStatus(status.data, new Date()) : status.tilstand === 'feil' ? 'ukjent' : null;
+  const { skjultKildevarsel } = useTilstand();
+  const samlet: Visningsstatus | null =
+    status.tilstand === 'ok' ? visningsstatus(status.data, new Date(), skjultKildevarsel) : status.tilstand === 'feil' ? 'ukjent' : null;
   if (samlet === null) return <span class="indikator-plass" aria-hidden="true" />;
-  const ikon: Record<typeof samlet, Ikonnavn> = { ok: 'ok', endret: 'info', feilet: 'advarsel', utdatert: 'klokke', ukjent: 'info' };
+  const ikon: Record<Visningsstatus, Ikonnavn> = {
+    ok: 'ok',
+    endret: 'info',
+    feilet: 'advarsel',
+    utdatert: 'klokke',
+    ukjent: 'info',
+    skjult: 'ok',
+  };
   const etikett = t('kildestatus.indikator', { status: t(`kildestatus.status.${samlet}`) });
   return (
     <a class={`indikator indikator-${samlet}`} href="#/om/kilder" aria-label={etikett} title={etikett} data-status={samlet}>
@@ -148,7 +157,8 @@ export function Skall() {
             </button>
           )}
           <a class="appnavn" href="#/">
-            {app.navn}
+            <img class="applogo" src={`${import.meta.env.BASE_URL}ikoner/favicon.svg`} alt="" width="40" height="40" />
+            <span class="appnavn-tekst">{app.navn}</span>
           </a>
           <KildestatusIndikator />
         </div>

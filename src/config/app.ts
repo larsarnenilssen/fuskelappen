@@ -11,4 +11,8 @@ export const app = {
   repo: 'https://github.com/larsarnenilssen/protokollen',
   // Stien appen publiseres under på GitHub Pages.
   base: '/protokollen/',
+  // Når kildesjekken kjører (UTC). Må stemme med cron i .github/workflows/kilder.yml; det sjekkes av en test.
+  kildesjekk: { ukedag: 1, time: 4, minutt: 17 },
+  // Der eier kan starte kildesjekken med en gang.
+  kildesjekkUrl: 'https://github.com/larsarnenilssen/protokollen/actions/workflows/kilder.yml',
 } as const;

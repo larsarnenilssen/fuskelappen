@@ -1,4 +1,6 @@
 import { app } from '../../config/app.ts';
+import { Forklaring } from '../../components/Forklaring.tsx';
+import { TekniskInfo } from '../TekniskInfo.tsx';
 import { useTekst } from '../tilstand.ts';
 
 export default function Om() {
@@ -43,6 +45,10 @@ export default function Om() {
           </a>
         </p>
       </section>
+
+      <Forklaring tittel={t('om.teknisk.tittel')}>
+        <TekniskInfo />
+      </Forklaring>
 
       <p class="dempet liten">
         {t('om.kildekode')}{' '}

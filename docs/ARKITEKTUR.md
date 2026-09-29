@@ -30,6 +30,8 @@ src/
 - **Hash-ruting** (`#/sti`). Hver navigasjon er en ny oppføring i nettleserhistorikken, så operativsystemets tilbakenavigasjon (sveip på iOS, tilbakeknapp på Android) virker som vanlig. Ingen egne sveipebevegelser.
 - **Ett scrollområde:** dokumentet. Topplinjen er klebrig, bunnmenyen fast. Begge bruker `env(safe-area-inset-*)`. Høyder bruker `dvh`, og `overscroll-behavior` hindrer at gummistrikk viser tomt område.
 - Ved navigasjon flyttes fokus til sidens `h1`. Tilbake gjenoppretter scrollposisjonen.
+- Lerretet bak siden (`html`) har toppfeltets farge øverst og menyens farge nederst, mens `body` har sidefargen. iOS bruker lerretsfargen bak statuslinjen, og installerte nettapper på iOS kan regne visningsområdet for kort ved oppstart, så det blir synlig under bunnmenyen. Da vises riktig farge begge steder.
+- Overskriften som får fokus ved navigasjon, har ingen synlig fokusramme. Det er ikke noe brukeren kan trykke på, men skjermlesere leser den.
 - Pinch-zoom er ikke slått av. Bevegelse respekterer `prefers-reduced-motion`.
 - Forsiden lastes med en gang. Andre sider og søket lastes ved behov, slik at startpakken holdes liten (grense 150 kB gzip, sjekkes ved bygg).
 
@@ -103,7 +105,7 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
 
 Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen.
 
-I appen viser topplinjen en diskret indikator (`ok`, `endret`, `feilet`, `utdatert`). `utdatert` betyr at siste kjøring er eldre enn 14 dager. Det fanger også en jobb som har stoppet. Detaljer står under Om → Kilder.
+I appen viser topplinjen en diskret indikator (`ok`, `endret`, `feilet`, `utdatert`). Et varsel kan skjules på enheten til neste kjøring (lagres som `skjultKildevarsel`). Kildesiden viser neste planlagte kjøring, beregnet fra `app.kildesjekk` i `src/config/app.ts`. En test sjekker at den stemmer med cron i `kilder.yml`. `utdatert` betyr at siste kjøring er eldre enn 14 dager. Det fanger også en jobb som har stoppet. Detaljer står under Om → Kilder.
 
 ## Publisering
 

@@ -11,3 +11,12 @@ test('«Om» viser versjon, ansvarsfraskrivelse, personvern og kreditering', asy
   await expect(page.getByText('Norsk lisens for offentlige data (NLOD) 2.0', { exact: false })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Se alle kilder og kildestatus' })).toBeVisible();
 });
+
+test('«Om» har teknisk informasjon som er skjult til den åpnes', async ({ page }) => {
+  await page.goto('./#/om');
+  const knapp = page.getByRole('button', { name: /Teknisk informasjon/ });
+  await expect(knapp).toHaveAttribute('aria-expanded', 'false');
+  await knapp.click();
+  await expect(page.locator('.teknisk-liste')).toContainText('Visningsområde');
+  await expect(page.locator('.teknisk-liste')).toContainText('Sikre kanter');
+});

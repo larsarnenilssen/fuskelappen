@@ -4,6 +4,23 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.1.1] – 2026-09-29
+
+Rettinger etter eiers kontroll av fase 0 på iPhone.
+
+### Lagt til
+
+- Logo i topplinjen.
+- Kildesiden viser når neste kildesjekk kjøres, og har lenke for eier til å kjøre sjekken med en gang.
+- Et kildevarsel kan skjules på enheten til neste kildesjekk, og vises igjen med én knapp.
+- «Om appen» har «Teknisk informasjon» med skjermmål, som hjelper med feilsøking.
+
+### Rettet
+
+- Bunnmenyen kunne stå et stykke over bunnen av skjermen på iPhone, med en stripe i sidefarge under. Området under menyen har nå menyfarge.
+- Toppfeltet fikk en lys overgang bak statuslinjen på iPhone. Området bak statuslinjen har nå toppfeltets farge.
+- Overskriften fikk oransje ramme når en side ble åpnet. Rammen vises nå bare for ting som kan trykkes på.
+
 ## [0.1.0] – 2026-09-29
 
 ### Lagt til
@@ -20,5 +37,6 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.1
 [0.1.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.0

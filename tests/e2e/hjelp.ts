@@ -7,12 +7,13 @@ export interface Oppsett {
   fylke?: string | null;
   skole?: { id: string | null; navn: string } | null;
   favoritter?: string[];
+  skjultKildevarsel?: string | null;
 }
 
 /** Setter lagrede innstillinger før siden lastes. */
 export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
   const data = {
-    skjemaversjon: 1,
+    skjemaversjon: 2,
     innstillinger: {
       malform: oppsett.malform ?? 'nb',
       tema: oppsett.tema ?? 'system',
@@ -21,6 +22,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
     },
     favoritter: oppsett.favoritter ?? [],
     scenarier: {},
+    skjultKildevarsel: oppsett.skjultKildevarsel ?? null,
   };
   await side.addInitScript((d) => {
     if (!sessionStorage.getItem('oppsett-satt')) {
