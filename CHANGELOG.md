@@ -4,6 +4,25 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.3.0] – 2026-09-29
+
+Ny hovedkalkulator: stillingsplan.
+
+### Lagt til
+
+- **Stillingsplan** står øverst i arbeidstidsmodulen og først blant hurtigkalkulatorene. Du legger inn stillingsprosent, fag og funksjoner (i prosent av full stilling), og ser:
+  - samlet beskjeftigelse, med undervisning, funksjoner og stilling hver for seg
+  - teknisk undertid eller teknisk overtid i prosent, og regnet om til årsrammetimer i et fag du velger
+  - en stolpe med fagene og funksjonene mot stillingsprosenten
+  - «Timer i hvert fag»: hvor mange årsrammetimer som mangler eller er for mye, regnet med årsrammen i hvert fag
+  - en lenke til overtidskalkulatoren med prosenten ferdig utfylt når samlet beskjeftigelse er over 100 %
+- Fasiteksemplene E1–E4 for stillingsplanen, som eier har kontrollert (fasit 011–014).
+- Begrepet «Teknisk undertid og teknisk overtid».
+
+### Endret
+
+- Oversikten over arbeidstidsmodulen viser stillingsplanen som et stort kort øverst og de andre kalkulatorene under «Flere kalkulatorer».
+
 ## [0.2.2] – 2026-09-29
 
 Kalkulatorene tar mindre plass og viser svaret hele tiden.
@@ -122,7 +141,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.3.0
 [0.2.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.2
 [0.2.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.1
 [0.2.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.0

@@ -1,5 +1,33 @@
 # Metodebeskrivelser for kalkulatorene i arbeidstidsmodulen («Slik regnes det ut»).
 # Tallene i beregningene står i rules/. Her står metoden med ord, slik at den kan kontrolleres og rettes uten kodeendring.
+- id: metode-stillingsplan
+  type: forklaring
+  tittel: { nb: Slik regnes stillingsplanen ut, nn: Slik blir stillingsplanen rekna ut }
+  tekst:
+    nb: |
+      Stillingsplanen sammenligner det læreren skal gjøre, med stillingen læreren er ansatt i:
+
+      1. **Undervisning** = summen av beskjeftigelsen i hvert fag, årstimer ÷ årsramme × 100 (se beskjeftigelse).
+      2. **Samlet beskjeftigelse** = undervisning + funksjoner. Funksjoner, som kontaktlærer, oppgis i prosent av full stilling.
+      3. **Differanse** = samlet beskjeftigelse − stillingsprosent. Er differansen negativ, har læreren **teknisk undertid**. Er den positiv, har læreren **teknisk overtid**.
+      4. Differansen kan regnes om til **årsrammetimer** i et fag: differanse × årsramme ÷ 100. Da ser du hvor mange timer undervisning i faget som mangler eller er for mye.
+
+      Er samlet beskjeftigelse over 100 %, kan du regne ut overtidsbetalingen med kalkulatoren for overtid. Mellomregningene avrundes ikke. Svaret vises med to desimaler.
+    nn: |
+      Stillingsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
+
+      1. **Undervisning** = summen av sysselsetjinga i kvart fag, årstimar ÷ årsramme × 100 (sjå sysselsetjing).
+      2. **Samla sysselsetjing** = undervisning + funksjonar. Funksjonar, som kontaktlærar, blir oppgitt i prosent av full stilling.
+      3. **Differanse** = samla sysselsetjing − stillingsprosent. Er differansen negativ, har læraren **teknisk undertid**. Er han positiv, har læraren **teknisk overtid**.
+      4. Differansen kan reknast om til **årsrammetimar** i eit fag: differanse × årsramme ÷ 100. Då ser du kor mange timar undervisning i faget som manglar eller er for mykje.
+
+      Er samla sysselsetjing over 100 %, kan du rekne ut overtidsbetalinga med kalkulatoren for overtid. Mellomrekningane blir ikkje avrunda. Svaret blir vist med to desimalar.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+  kontrollert: null
+  stikkord: [stillingsplan, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
+
 - id: metode-beskjeftigelse
   type: forklaring
   tittel: { nb: Slik regnes beskjeftigelsen ut, nn: Slik blir sysselsetjinga rekna ut }

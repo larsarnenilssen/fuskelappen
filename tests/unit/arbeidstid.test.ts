@@ -209,3 +209,29 @@ describe('overtid', () => {
     expect(rund(over60.feriepenger.verdi)).toBe(2083.99);
   });
 });
+
+describe('stillingsplan', () => {
+  it('regner funksjoner uten fag, flere funksjoner og balanse', async () => {
+    const { beregnStillingsplan } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const bareFunksjon = beregnStillingsplan(hent, { stilling: 50, grupper: [], funksjoner: [{ navn: 'Leder', prosent: 50 }], timerIGruppe: null });
+    expect(bareFunksjon.beskjeftigelse.verdi).toBe(50);
+    expect(bareFunksjon.differanse.verdi).toBe(0);
+    expect(bareFunksjon.differanseTimer).toBeNull();
+
+    const to = beregnStillingsplan(hent, {
+      stilling: 100,
+      grupper: [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: false, undervisning: { type: 'arstimer', arstimer: 420 } }],
+      funksjoner: [
+        { navn: 'Kontaktlærer', prosent: 10 },
+        { navn: 'Teamleder', prosent: 5 },
+      ],
+      timerIGruppe: 0,
+    });
+    // 420 ÷ 525 × 100 = 80 %, + 10 + 5 = 95 %, differanse −5 % = −26,25 årsrammetimer.
+    expect(to.funksjon.verdi).toBe(15);
+    expect(rund(to.beskjeftigelse.verdi)).toBe(95);
+    expect(rund(to.differanse.verdi)).toBe(-5);
+    expect(rund(to.differanseTimer?.verdi ?? NaN)).toBe(-26.25);
+    expect(to.trinn.map((t) => t.id)).toEqual(['beskjeftigelse', 'sum_funksjon', 'samlet_beskjeftigelse', 'teknisk_differanse', 'teknisk_timer']);
+  });
+});

@@ -1,0 +1,22 @@
+id: sfs2213-014
+beskrivelse: "Stillingsplan, 100 % stilling: engelsk Vg1 140 årstimer, to grupper norsk Vg1 à 113 årstimer (studieforberedende) og funksjon 25 %."
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: stillingsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+  funksjoner: [{ prosent: 25 }]
+forventet:
+  undervisning: 72.23
+  beskjeftigelse: 97.23
+  differanse: -2.77
+  timer_fag_1: -14.54
+  timer_fag_2: -13.73
+begrunnelse: >-
+  Undervisning = 140 ÷ 525 × 100 + 2 × 113 ÷ 496 × 100 = 72,23 %. Samlet beskjeftigelse = 72,23 + 25 = 97,23 %.
+  Differanse = 97,23 − 100 = −2,77 %, altså teknisk undertid. Regnet om med årsrammen i hvert fag: −14,54
+  årsrammetimer i engelsk (525) eller −13,73 i norsk (496). Mellomregninger er uavrundet. Eksempel E4,
+  kontrollert av eier.

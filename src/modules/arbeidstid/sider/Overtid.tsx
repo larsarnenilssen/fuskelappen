@@ -1,4 +1,5 @@
 // Overtid ved beskjeftigelse over 100 % (fast overtid), betalt med 1,5 × timelønn for undervisning.
+import { lesHash } from '../../../app/ruter.ts';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
@@ -11,6 +12,11 @@ import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from 
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
+function tallFraAdresse(navn: string): number | null {
+  const verdi = Number(lesHash(location.hash).sporring.get(navn) ?? '');
+  return Number.isFinite(verdi) && verdi > 0 ? verdi : null;
+}
+
 export default function Overtid() {
   const { t } = useTekst();
   const hent = useHent();
@@ -18,7 +24,8 @@ export default function Overtid() {
   const indeks = useFagindeks(hent, rader);
   const konstant = useRegeltall(hent, 'hta.timelonn_konstant') ?? 0;
   const [s, sett] = useSkjematilstand('overtid', () => ({
-    beskjeftigelse: null as number | null,
+    // Stillingsplanen kan lenke hit med beskjeftigelsen utfylt (#/arbeidstid/overtid?beskjeftigelse=103.13).
+    beskjeftigelse: tallFraAdresse('beskjeftigelse'),
     plasser: [tomArsrammeplass()],
     faaElever: false,
     lonn: nyLonnstilstand(),

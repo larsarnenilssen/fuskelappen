@@ -8,7 +8,7 @@ import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Hent, lesArsrammer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
 
-export type KalkulatorId = 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
+export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
 
 export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: ComponentChildren }) {
   const { t } = useTekst();

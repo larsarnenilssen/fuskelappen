@@ -85,7 +85,13 @@ export type Storrelse =
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'overtidstillegg'
-  | 'overtidsbetaling';
+  | 'overtidsbetaling'
+  | 'undervisningsprosent'
+  | 'funksjon'
+  | 'funksjoner'
+  | 'samlet_beskjeftigelse'
+  | 'teknisk_differanse'
+  | 'teknisk_timer';
 
 export interface Operand {
   navn: Storrelse;
@@ -144,7 +150,11 @@ export type TrinnId =
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'kalkulert_tid_overtid'
-  | 'overtidsbetaling';
+  | 'overtidsbetaling'
+  | 'sum_funksjon'
+  | 'samlet_beskjeftigelse'
+  | 'teknisk_differanse'
+  | 'teknisk_timer';
 
 export interface Trinn {
   id: TrinnId;

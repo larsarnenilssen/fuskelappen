@@ -219,3 +219,14 @@
   kontrollert: null
   stikkord: [tillitsvalgte, medbestemmelse, hovedavtalen]
   relatert: [lokale-forhandlinger]
+
+- id: teknisk-undertid-overtid
+  type: begrep
+  tittel: { nb: Teknisk undertid og teknisk overtid, nn: Teknisk undertid og teknisk overtid }
+  tekst:
+    nb: Når undervisning og funksjoner i stillingsplanen til sammen er mindre enn stillingsprosenten, har læreren teknisk undertid. Er de mer, har læreren teknisk overtid. Differansen kan regnes om til årsrammetimer i et fag.
+    nn: Når undervisning og funksjonar i stillingsplanen til saman er mindre enn stillingsprosenten, har læraren teknisk undertid. Er dei meir, har læraren teknisk overtid. Differansen kan reknast om til årsrammetimar i eit fag.
+  kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
+  kontrollert: null
+  stikkord: [stillingsplan, undertid, overtid, differanse]
+  relatert: [beskjeftigelse, arsramme]

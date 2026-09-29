@@ -5,37 +5,49 @@ import { tallTekst } from './Utregning.tsx';
 
 const B = 320;
 const H = 18;
-const farger = ['undervisning', 'annen_planfestet', 'funksjonstid', 'motetid', 'selvdisponert'] as const;
+// Farger for fag etter tur. Funksjonstid er holdt av til funksjoner.
+const fagfarger = ['undervisning', 'annen_planfestet', 'motetid', 'selvdisponert'] as const;
 
-/** Beskjeftigelse per fag som deler av en stolpe, med strek ved 100 %. Det som går over 100 %, er markert. */
-export function Stillingsmaaler({ deler }: { deler: { navn: string; prosent: number }[] }) {
+export interface Stolpedel {
+  navn: string;
+  prosent: number;
+  /** Funksjoner får egen farge. Fag får farger etter tur. */
+  type?: 'fag' | 'funksjon';
+}
+
+/**
+ * Beskjeftigelse per fag (og funksjon) som deler av en stolpe, med strek ved stillingen (standard 100 %).
+ * Det som går over streken, er markert. Er stolpen kortere, viser den grå resten hva som mangler.
+ */
+export function Stillingsmaaler({ deler, grense = 100, beskrivelse }: { deler: Stolpedel[]; grense?: number; beskrivelse?: string }) {
   const { t } = useTekst();
   const sum = deler.reduce((s, d) => s + d.prosent, 0);
-  const skala = Math.max(100, sum);
-  const x100 = (100 / skala) * B;
+  const skala = Math.max(grense, sum, 1);
+  const xGrense = (grense / skala) * B;
+  const farge = (d: Stolpedel, i: number) => (d.type === 'funksjon' ? 'funksjonstid' : fagfarger[i % fagfarger.length]);
   let x = 0;
-  const beskrivelse = t('arbeidstid.grafikk.stilling', { sum: tallTekst(sum), deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', ') });
+  const tekst = beskrivelse ?? t('arbeidstid.grafikk.stilling', { sum: tallTekst(sum), deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', '), grense: tallTekst(grense) });
   return (
     <figure class="figur">
-      <svg class="diagram" viewBox={`0 0 ${B} ${H + 14}`} role="img" aria-label={beskrivelse}>
-        <rect class="figur-bakgrunn" x={0} y={0} width={x100} height={H} rx={3} />
+      <svg class="diagram" viewBox={`0 0 ${B} ${H + 14}`} role="img" aria-label={tekst}>
+        <rect class="figur-bakgrunn" x={0} y={0} width={xGrense} height={H} rx={3} />
         {deler.map((d, i) => {
-          const w = (d.prosent / skala) * B;
-          const r = <rect key={i} class={`fordeling-del-${farger[i % farger.length]}`} x={x} y={0} width={Math.max(0, w)} height={H} />;
+          const w = (Math.max(0, d.prosent) / skala) * B;
+          const r = <rect key={i} class={`fordeling-del-${farge(d, i)}`} x={x} y={0} width={w} height={H} />;
           x += w;
           return r;
         })}
-        {sum > 100 && <rect class="figur-over" x={x100} y={0} width={B - x100} height={H} />}
-        <line class="figur-grense" x1={x100} x2={x100} y1={-2} y2={H + 2} />
-        <text class="figur-tekst" x={Math.min(x100, B - 2)} y={H + 12} text-anchor="end">
-          100 %
+        {sum > grense && <rect class="figur-over" x={xGrense} y={0} width={B - xGrense} height={H} />}
+        <line class="figur-grense" x1={xGrense} x2={xGrense} y1={-2} y2={H + 2} />
+        <text class="figur-tekst" x={Math.min(Math.max(xGrense, 30), B - 2)} y={H + 12} text-anchor="end">
+          {tallTekst(grense)} %
         </text>
       </svg>
       {deler.length > 1 && (
         <ul class="fordeling-forklaring fordeling-forklaring-rad">
           {deler.map((d, i) => (
             <li key={i}>
-              <span class={`fordeling-farge fordeling-del-${farger[i % farger.length]}`} aria-hidden="true" />
+              <span class={`fordeling-farge fordeling-del-${farge(d, i)}`} aria-hidden="true" />
               <span>
                 {d.navn}: {tallTekst(d.prosent)} %
               </span>

@@ -1,0 +1,20 @@
+id: sfs2213-011
+beskrivelse: "Stillingsplan, 100 % stilling: tre grupper engelsk Vg1 studieforberedende à 140 årstimer og funksjon 10 %."
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: stillingsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+  funksjoner: [{ prosent: 10 }]
+forventet:
+  undervisning: 80
+  beskjeftigelse: 90
+  differanse: -10
+  timer_fag_1: -52.5
+begrunnelse: >-
+  Undervisning = 3 × 140 ÷ 525 × 100 = 80 %. Samlet beskjeftigelse = 80 + 10 = 90 %. Differanse mot stillingen =
+  90 − 100 = −10 %, altså teknisk undertid. I årsrammetimer i engelsk: −10 × 525 ÷ 100 = −52,5. Årsramme 525 for
+  Engelsk*, Stud.spes Vg1 (SFS 2213 vedlegg 1). Eksempel E1, kontrollert av eier.

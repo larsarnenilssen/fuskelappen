@@ -161,10 +161,10 @@ export function useFagindeks(hent: Hent, rader: readonly Arsrammerad[]) {
   }, [hent, rader]);
 }
 
-type Fagindeks = ReturnType<typeof useFagindeks>;
+export type Fagindeks = ReturnType<typeof useFagindeks>;
 
 /** Kort visning av en valgt rad: «Engelsk · Studiespesialisering Vg1». */
-function radTekst(indeks: Fagindeks, nr: string): { navn: string; t60: number; t45: number; stjerne: boolean } | null {
+export function radTekst(indeks: Fagindeks, nr: string): { navn: string; t60: number; t45: number; stjerne: boolean } | null {
   const post = indeks.find((p) => String(p.treff.rad.nr) === nr);
   if (!post) return null;
   const { rad, fag, program } = post.treff;

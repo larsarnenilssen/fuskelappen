@@ -79,7 +79,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 
 ## Arbeidstid (SFS 2213)
 
-`src/modules/arbeidstid/` har kalkulatorene for beskjeftigelse, periodebeskjeftigelse, vikartimer, planfestet arbeidstid, overtid og fordeling av arbeidstiden.
+`src/modules/arbeidstid/` har hovedkalkulatoren stillingsplan (`beregning/stillingsplan.ts`: undervisning + funksjoner − stillingsprosent, med teknisk undertid eller overtid) og kalkulatorene for beskjeftigelse, periodebeskjeftigelse, vikartimer, planfestet arbeidstid, overtid og fordeling av arbeidstiden.
 
 - Beregningene i `beregning/` er rene funksjoner. De får regelverdiene gjennom en `Hent`-funksjon (i appen `hentVerdi()` med brukerens dato, fylke og skole), så ingen tariff- eller lovverdier står i koden.
 - Hver beregning gir resultatet og **trinnene** i utregningen. Et trinn har en id, operandene (verdi, enhet, og om verdien kommer fra regelverket, en tabell, brukeren eller et tidligere trinn) og resultatet. Teksten og formelen for hvert trinn står i `src/strings/moduler/arbeidstid.*.ts` med plassholdere, f.eks. `{arstimer} ÷ {arsramme} × 100`. Appen fyller formelen inn to ganger: med navn og med tall. Kilde og nivå vises for hver regelverdi.

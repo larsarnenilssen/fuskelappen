@@ -244,6 +244,52 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText(/1 % over hel stilling gir alltid 14 timer kalkulert tid/)).toBeVisible();
   });
 
+  test('stillingsplanen er hovedkalkulatoren i modulen', async ({ page }) => {
+    await aapne(page, '/arbeidstid');
+    const kort = page.locator('a.hovedkort');
+    await expect(kort).toContainText('Stillingsplan');
+    await kort.click();
+    await expect(page.locator('main h1')).toHaveText('Stillingsplan');
+  });
+
+  test('stillingsplan med flere fag og funksjon gir teknisk undertid (fasit 014)', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await expect(page.getByLabel('Stillingsprosent')).toHaveValue('100');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('140');
+    for (const nr of [2, 3]) {
+      await page.getByRole('button', { name: 'Legg til fag' }).click();
+      const fag = page.locator(`[data-gruppe="${nr}"]`);
+      await velgFag(fag, 'norsk stud vg1', 'Norsk · Studiespesialisering Vg1');
+      await fag.getByLabel('Antall årstimer').fill('113');
+    }
+    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
+    await page.getByLabel('Funksjon 1: Prosent').fill('25');
+    await expect(resultat(page)).toContainText('97,23');
+    const differanse = page.locator('.stillingsplan-differanse');
+    await expect(differanse).toHaveAttribute('data-differanse', 'undertid');
+    await expect(differanse).toContainText('Teknisk undertid');
+    await expect(differanse).toContainText('2,77 % = 14,54 årsrammetimer');
+    await page.getByLabel('Årsrammetimer i').selectOption({ index: 1 });
+    await expect(differanse).toContainText('13,73 årsrammetimer');
+    await page.getByRole('button', { name: 'Timer i hvert fag' }).click();
+    await expect(page.locator('.hjelp-tekst .oversikt')).toContainText('14,54 årsrammetimer');
+    await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
+  });
+
+  test('teknisk overtid over 100 % lenker til overtid med prosenten utfylt', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'norsk stud vg1', 'Norsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('452');
+    await page.getByLabel('Funksjon 1: Prosent').fill('12');
+    const differanse = page.locator('.stillingsplan-differanse');
+    await expect(differanse).toHaveAttribute('data-differanse', 'overtid');
+    await expect(differanse).toContainText('3,13 % = 15,52 årsrammetimer');
+    await page.getByRole('link', { name: /Regn ut overtidsbetaling for 103,13 %/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Overtid over 100 %');
+    await expect(page.getByLabel('Samlet beskjeftigelse i prosent')).toHaveValue('103,13');
+  });
+
   test('kalkulatorene finnes på nynorsk', async ({ page }) => {
     await settLagret(page, { malform: 'nn' });
     await aapne(page, '/arbeidstid/beskjeftigelse');

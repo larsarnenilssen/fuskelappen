@@ -31,5 +31,6 @@ elever fra ulike program eller nivåer i samme time (laveste årsramme brukes).
 | `planfestet` | `reduksjon: { prosent }` eller `{ arsrammetimer }` | `funksjonsprosent`, `planfestet`, `per_uke`, `utvidelse_dager` |
 | `vikar-fast` | `arsrammer`, `elever`, `okter`, `minutter` | `endring` |
 | `timevikar` | som `vikar-fast`, pluss `lonn: { stillingsgruppe, ansiennitet }` eller `{ arslonn }`, `over60` | `kalkulert_tid`, `timelonn`, `lonn`, `feriepenger`, `samlet` |
+| `stillingsplan` | `stilling`, `grupper: [{ arsrammer, elever, arstimer }]`, `funksjoner: [{ prosent }]` | `undervisning`, `beskjeftigelse`, `differanse` (minus er teknisk undertid), `timer_fag_1`, `timer_fag_2` … (differansen i årsrammetimer med årsrammen i gruppe 1, 2 …) |
 
 Bare nøklene som står under `forventet`, sjekkes.
