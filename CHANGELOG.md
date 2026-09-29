@@ -4,9 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.4.0] – 2026-09-29
+
+Programfag får årstimer, nye figurer og lagrede varianter.
+
 ### Lagt til
 
 - Årstimer for programfag: søker du fram et bestemt fag med fagkode eller navn (f.eks. HEA2005 eller «Helsefremmende arbeid»), fylles årstimetallet inn fra Udir (Grep), og fagkoden vises ved faget. Det gjelder også programfag på yrkesfag.
+- **Lagrede varianter** i alle kalkulatorene: lagre det du har fylt ut, sammenlign hovedresultatet med det du har nå, og hent varianten fram igjen. Opptil tre varianter per kalkulator lagres bare på enheten.
+- Planfestet tid viser en gjennomsnittlig uke: planfestet tid og tid læreren disponerer selv, mot grensen på 37,5 timer planfestet tid i en uke, med snittet per dag og grensen på 9 timer for en enkelt dag.
+- Timevikar og overtid viser lønnen og feriepengene i en stolpe.
+- Periodebeskjeftigelse viser hva beskjeftigelsen i perioden tilsvarer for hele skoleåret.
+
+### Endret
+
+- På nettbrett og PC står resultatet i en egen kolonne ved siden av skjemaet.
+- Planfestet tid starter med 0 % reduksjon, så grunnverdiene vises med en gang.
 
 ## [0.3.0] – 2026-09-29
 
@@ -151,7 +164,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.4.0
 [0.3.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.3.0
 [0.2.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.2
 [0.2.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.1

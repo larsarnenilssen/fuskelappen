@@ -1735,3 +1735,68 @@ p.fagkort-tittel {
 .hovedkort-figur {
   max-width: 20rem;
 }
+
+/* ---------- Kalkulatorer på bred skjerm: skjema til venstre, resultat til høyre ----------
+   Resultatkolonnen er ikke et eget scrollområde (ett scrollområde på siden). Resultatlinjen nederst viser svaret. */
+
+@media (min-width: 64rem) {
+  main:has(.kalkulator) {
+    max-width: 72rem;
+  }
+
+  .kalkulator-flate {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--rom-5);
+  }
+}
+
+/* ---------- Lagrede varianter ---------- */
+
+.varianter {
+  margin: 0 0 var(--rom-4);
+}
+
+.varianter .liten-overskrift {
+  margin: 0;
+}
+
+.variantliste {
+  list-style: none;
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+}
+
+.variantliste li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0 var(--rom-3);
+  padding: var(--rom-1) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.variant-navn {
+  min-width: 0;
+  font-weight: 600;
+}
+
+.variant-verdi {
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Tidspunkt og differanse står i liten skrift under navnet og verdien. */
+.variant-under {
+  display: block;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+}
+
+.variant-knapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}

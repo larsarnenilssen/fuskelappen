@@ -5,6 +5,7 @@ import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Beskjeftigelse() {
@@ -23,10 +24,39 @@ export default function Beskjeftigelse() {
   let j = 0;
   const delresultater = inndata.map((g) => (g === null ? null : (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null)));
 
+  const tittel = utfylte.length > 1 ? t('arbeidstid.resultat.sumBeskjeftigelse') : t('arbeidstid.resultat.beskjeftigelse');
+
   return (
-    <Kalkulatorside id="beskjeftigelse">
+    <Kalkulatorside
+      id="beskjeftigelse"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {resultat ? (
+            <>
+              <Advarsler advarsler={resultat.advarsler} />
+              <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn}>
+                <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
+              </Utregningskort>
+            </>
+          ) : (
+            !feil && <ManglerInndata />
+          )}
+          <Varianter
+            id="beskjeftigelse"
+            skjema={skjema}
+            resultat={resultat ? { tittel, verdi: resultat.sum.verdi, enhet: 'prosent' } : null}
+            onHent={(v) => {
+              reserverIder(v.grupper);
+              settSkjema(v);
+            }}
+          />
+        </>
+      }
+    >
       <Grupper
-arstimer={arstimer}         grupper={grupper}
+        arstimer={arstimer}
+        grupper={grupper}
         rader={rader}
         indeks={indeks}
         periode={false}
@@ -34,21 +64,6 @@ arstimer={arstimer}         grupper={grupper}
         delresultater={delresultater}
         onEndring={(g) => settSkjema({ grupper: g })}
       />
-      {feil && <Feilmelding feil={feil} />}
-      {resultat ? (
-        <>
-          <Advarsler advarsler={resultat.advarsler} />
-          <Utregningskort
-            tittel={utfylte.length > 1 ? t('arbeidstid.resultat.sumBeskjeftigelse') : t('arbeidstid.resultat.beskjeftigelse')}
-            resultat={resultat.sum}
-            trinn={resultat.trinn}
-          >
-            <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
-          </Utregningskort>
-        </>
-      ) : (
-        !feil && <ManglerInndata />
-      )}
     </Kalkulatorside>
   );
 }

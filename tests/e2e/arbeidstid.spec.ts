@@ -345,6 +345,59 @@ test.describe('arbeidstid', () => {
     }
   });
 
+  test('varianter lagres, sammenlignes og hentes fram igjen', async ({ page }) => {
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    const timer = page.getByLabel('Antall årstimer');
+    await expect(timer).toHaveValue('140');
+    await page.getByRole('button', { name: 'Lagre variant' }).click();
+    const liste = page.locator('.variantliste');
+    await expect(liste.locator('li')).toHaveCount(1);
+    await expect(liste).toContainText('26,67 %');
+    await timer.fill('105');
+    await expect(resultat(page)).toContainText('20');
+    await expect(liste).toContainText('nå −6,67 %');
+    await page.getByRole('button', { name: 'Hent Variant 1' }).click();
+    await expect(timer).toHaveValue('140');
+    await expect(resultat(page)).toContainText('26,67');
+    // Variantene ligger i lagringen på enheten og er der etter ny innlasting.
+    await page.reload();
+    await venterPaaSide(page);
+    await expect(page.locator('.variantliste li')).toHaveCount(1);
+    await page.getByRole('button', { name: 'Slett variant 1' }).click();
+    await expect(page.locator('.variantliste li')).toHaveCount(0);
+  });
+
+  test('på bred skjerm står resultatet ved siden av skjemaet', async ({ page }, info) => {
+    test.skip(!/skrivebord/.test(info.project.name), 'Bred skjerm testes i skrivebordsprosjektene');
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    const skjema = await page.locator('.kalkulator-skjema').boundingBox();
+    const kort = await page.locator('.resultatkort').boundingBox();
+    expect(skjema && kort && kort.x > skjema.x + skjema.width - 1).toBe(true);
+  });
+
+  test('figurer for uke, beløp og hele skoleåret', async ({ page }) => {
+    await aapne(page, '/arbeidstid/planfestet');
+    await expect(page.getByRole('img', { name: /gjennomsnittlig uke: 29,3 timer planfestet tid/ })).toBeVisible();
+    await expect(page.getByText(/Enkeltuker kan ha opptil 37,5 timer planfestet tid, og enkeltdager opptil 9 timer/)).toBeVisible();
+
+    await aapne(page, '/arbeidstid/vikar');
+    await page.getByRole('radio', { name: 'Timevikar' }).check();
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall vikarøkter').fill('10');
+    await expect(page.getByRole('img', { name: /Stolpe for beløpet: Lønn 6\s939,68 kr, Feriepenger i tillegg 832,76 kr/ })).toBeVisible();
+
+    await aapne(page, '/arbeidstid/periode');
+    await page.getByLabel('Dager i perioden').fill('40');
+    await velgFag(page, 'biologi 2', 'Biologi · Studiespesialisering Vg3');
+    await page.getByLabel('Antall timer i perioden').fill('30');
+    // 28,73 % i perioden × 40 ÷ 190 = 6,05 %, det samme som 30 ÷ 496 × 100 for hele året.
+    await expect(page.locator('.oversikt')).toContainText('Tilsvarer for hele skoleåret');
+    await expect(page.locator('.oversikt')).toContainText('6,05 %');
+  });
+
   test('kalkulatorene finnes på nynorsk', async ({ page }) => {
     await settLagret(page, { malform: 'nn' });
     await aapne(page, '/arbeidstid/beskjeftigelse');

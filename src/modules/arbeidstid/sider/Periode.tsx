@@ -6,7 +6,9 @@ import { beregnPeriodebeskjeftigelse, type Gruppe } from '../beregning/index.ts'
 import { Periodelinje, Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
-import { Utregningskort } from '../komponenter/Utregning.tsx';
+import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
+import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Periode() {
@@ -32,8 +34,48 @@ export default function Periode() {
   let j = 0;
   const delresultater = inndata.map((g) => (g === null ? null : (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null)));
 
+  // Beskjeftigelsen i perioden regnet om til hele skoleåret: periodebeskjeftigelse × periodenøkkel.
+  const nokkel = resultat?.trinn.find((tr) => tr.id === 'periodenokkel')?.resultat.verdi ?? null;
+  const tittel = t('arbeidstid.resultat.periodebeskjeftigelse');
+
   return (
-    <Kalkulatorside id="periode">
+    <Kalkulatorside
+      id="periode"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {resultat ? (
+            <>
+              <Advarsler advarsler={resultat.advarsler} />
+              <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn}>
+                <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
+                {nokkel !== null && (
+                  <Oversiktsliste
+                    rader={[
+                      {
+                        navn: t('arbeidstid.periode.heleAret'),
+                        verdi: medEnhet(t, resultat.sum.verdi * nokkel, 'prosent'),
+                      },
+                    ]}
+                  />
+                )}
+              </Utregningskort>
+            </>
+          ) : (
+            !feil && <ManglerInndata />
+          )}
+          <Varianter
+            id="periode"
+            skjema={skjema}
+            resultat={resultat ? { tittel, verdi: resultat.sum.verdi, enhet: 'prosent' } : null}
+            onHent={(v) => {
+              reserverIder(v.grupper);
+              settSkjema(v);
+            }}
+          />
+        </>
+      }
+    >
       <div class="feltrad">
         <Tallfelt
           etikett={t('arbeidstid.periode.dager')}
@@ -55,17 +97,6 @@ export default function Periode() {
       </div>
       {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={dagerSkolear ?? skolear} />}
       <Grupper arstimer={arstimer} grupper={grupper} rader={rader} indeks={indeks} periode standardUker={0} delresultater={delresultater} onEndring={(g) => settSkjema({ ...skjema, grupper: g })} />
-      {feil && <Feilmelding feil={feil} />}
-      {resultat ? (
-        <>
-          <Advarsler advarsler={resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.periodebeskjeftigelse')} resultat={resultat.sum} trinn={resultat.trinn}>
-            <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
-          </Utregningskort>
-        </>
-      ) : (
-        !feil && <ManglerInndata />
-      )}
     </Kalkulatorside>
   );
 }

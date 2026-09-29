@@ -87,6 +87,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 - Mellomregninger avrundes ikke. Svar vises med to desimaler.
 - Fag velges med et søk i vedlegg 1 (`fagsok.ts`), med søkeord fra `rules/sfs2213/fagsok-2026-2027.yaml` og programområder fra Grep (`data/grep/programomrader.json`, `npm run hent:grep`). Det utfylte huskes i nettleserhistorikken (`useSkjematilstand`), se [avgjørelse 009](avgjorelser/009-fagsok-og-skjematilstand.md).
 - Når brukeren velger fag, fylles årstimene inn fra `rules/sfs2213/arstimer-2026-2027.yaml` (radnummer i vedlegg 1 → årstimer og fagkoder i Grep). Brukeren kan endre tallet. `npm run hent:grep` henter omfanget for fagkodene til `data/grep/arstimer.json`, og en enhetstest sjekker at tabellen stemmer med Grep. Se [avgjørelse 011](avgjorelser/011-arstimer-fra-grep.md).
+- `Kalkulatorside` har skjemaet og resultatet i hver sin del. På bred skjerm står de i to kolonner. «Lagrede varianter» (`Varianter.tsx`) lagrer utfyllingen og hovedresultatet i `scenarier` i lagringen på enheten (høyst tre per kalkulator).
 - Resultatkortet (`Utregningskort`) viser hovedsvaret i en fast linje nederst når kortet er utenfor skjermen, og kan kopiere utregningen som tekst. Korte forklaringer ligger bak «?» (`Hjelp`). Se [avgjørelse 010](avgjorelser/010-resultatlinje-hjelp-og-kopiering.md).
 
 ## Lagring og personvern

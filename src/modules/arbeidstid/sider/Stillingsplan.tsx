@@ -12,6 +12,7 @@ import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsram
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 interface Funksjonstilstand {
@@ -134,8 +135,98 @@ export default function Stillingsplan() {
   const diffTekst = iBalanse ? t('arbeidstid.resultat.iBalanse') : diff < 0 ? t('arbeidstid.resultat.tekniskUndertid') : t('arbeidstid.resultat.tekniskOvertid');
   const timerTekst = resultat?.differanseTimer ? ` = ${medEnhet(t, Math.abs(resultat.differanseTimer.verdi), 'arsrammetimer')}` : '';
 
+  const hentVariant = (v: typeof s) => {
+    reserverIder(v.grupper);
+    for (const f of v.funksjoner) nesteFunksjon = Math.max(nesteFunksjon, f.id + 1);
+    sett(v);
+  };
+
   return (
-    <Kalkulatorside id="stillingsplan">
+    <Kalkulatorside
+      id="stillingsplan"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {resultat ? (
+            <>
+              <Advarsler advarsler={resultat.advarsler} />
+              <Utregningskort tittel={t('arbeidstid.resultat.samletBeskjeftigelse')} resultat={resultat.beskjeftigelse} trinn={resultat.trinn} sammendrag={false}>
+                <Stillingsmaaler
+                  deler={deler}
+                  grense={resultat.stilling.verdi}
+                  beskrivelse={t('arbeidstid.grafikk.stillingsplan', {
+                    deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', '),
+                    sum: tallTekst(resultat.beskjeftigelse.verdi),
+                    grense: tallTekst(resultat.stilling.verdi),
+                  })}
+                />
+                <Oversiktsliste
+                  rader={[
+                    { navn: t('arbeidstid.resultat.undervisning'), verdi: medEnhet(t, resultat.undervisning.verdi, 'prosent') },
+                    { navn: t('arbeidstid.resultat.funksjoner'), verdi: medEnhet(t, resultat.funksjon.verdi, 'prosent') },
+                    { navn: t('arbeidstid.resultat.stillingsprosent'), verdi: medEnhet(t, resultat.stilling.verdi, 'prosent') },
+                  ]}
+                />
+                <p class={`stillingsplan-differanse${iBalanse ? '' : diff < 0 ? ' undertid' : ' overtid'}`} data-differanse={iBalanse ? 'balanse' : diff < 0 ? 'undertid' : 'overtid'}>
+                  <span>{diffTekst}</span>
+                  {!iBalanse && <span class="tall">{`${medEnhet(t, Math.abs(diff), 'prosent')}${timerTekst}`}</span>}
+                </p>
+                {!iBalanse && fylte.length > 1 && (
+                  <div class="felt felt-liten">
+                    <label for={idTimer}>{t('arbeidstid.stillingsplan.timerIFag')}</label>
+                    <select
+                      id={idTimer}
+                      value={String(valgtIndeks)}
+                      onChange={(e) => sett({ ...s, timerIGruppe: fylte[Number(e.currentTarget.value)]?.g.id ?? null })}
+                    >
+                      {gruppenavn.map((navn, i) => (
+                        <option key={i} value={String(i)}>
+                          {navn}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                {!iBalanse && fylte.length === 0 && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.ingenFag')}</p>}
+                {!iBalanse && fylte.length > 1 && (
+                  <>
+                    <button type="button" class="lenkeknapp liten" aria-expanded={visHvertFag} onClick={() => settVisHvertFag(!visHvertFag)}>
+                      <Ikon navn={visHvertFag ? 'opp' : 'ned'} class="ikon-liten" />
+                      {t('arbeidstid.stillingsplan.hvertFag')}
+                    </button>
+                    {visHvertFag && (
+                      <div class="hjelp-tekst">
+                        <p class="felt-hjelp">{diff < 0 ? t('arbeidstid.stillingsplan.hvertFagMangler') : t('arbeidstid.stillingsplan.hvertFagForMye')}</p>
+                        <Oversiktsliste
+                          rader={differanseIHvertFag(resultat).map((d, i) => ({
+                            navn: t('arbeidstid.stillingsplan.fagRad', { fag: gruppenavn[i] ?? '', arsramme: formaterTall(d.arsramme) }),
+                            verdi: medEnhet(t, Math.abs(d.timer), 'arsrammetimer'),
+                          }))}
+                        />
+                      </div>
+                    )}
+                  </>
+                )}
+                {resultat.beskjeftigelse.verdi > 100 && (
+                  <a class="lenke-pil" href={`#/arbeidstid/overtid?beskjeftigelse=${encodeURIComponent(String(Math.round(resultat.beskjeftigelse.verdi * 100) / 100))}`}>
+                    {t('arbeidstid.stillingsplan.overtidLenke', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}
+                    <Ikon navn="hoyre" class="ikon-liten" />
+                  </a>
+                )}
+              </Utregningskort>
+            </>
+          ) : (
+            !feil && <ManglerInndata />
+          )}
+          <Varianter
+            id="stillingsplan"
+            skjema={s}
+            resultat={resultat ? { tittel: t('arbeidstid.resultat.samletBeskjeftigelse'), verdi: resultat.beskjeftigelse.verdi, enhet: 'prosent' } : null}
+            onHent={hentVariant}
+          />
+        </>
+      }
+    >
       <Tallfelt
         class="felt-kompakt"
         etikett={t('arbeidstid.stillingsplan.stilling')}
@@ -146,7 +237,8 @@ export default function Stillingsplan() {
         onEndring={(stilling) => sett({ ...s, stilling })}
       />
       <Grupper
-arstimer={arstimer}         grupper={s.grupper}
+        arstimer={arstimer}
+        grupper={s.grupper}
         rader={rader}
         indeks={indeks}
         periode={false}
@@ -155,78 +247,6 @@ arstimer={arstimer}         grupper={s.grupper}
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
       <Funksjoner funksjoner={s.funksjoner} onEndring={(f) => sett({ ...s, funksjoner: f })} />
-      {feil && <Feilmelding feil={feil} />}
-      {resultat ? (
-        <>
-          <Advarsler advarsler={resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.samletBeskjeftigelse')} resultat={resultat.beskjeftigelse} trinn={resultat.trinn} sammendrag={false}>
-            <Stillingsmaaler
-              deler={deler}
-              grense={resultat.stilling.verdi}
-              beskrivelse={t('arbeidstid.grafikk.stillingsplan', {
-                deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', '),
-                sum: tallTekst(resultat.beskjeftigelse.verdi),
-                grense: tallTekst(resultat.stilling.verdi),
-              })}
-            />
-            <Oversiktsliste
-              rader={[
-                { navn: t('arbeidstid.resultat.undervisning'), verdi: medEnhet(t, resultat.undervisning.verdi, 'prosent') },
-                { navn: t('arbeidstid.resultat.funksjoner'), verdi: medEnhet(t, resultat.funksjon.verdi, 'prosent') },
-                { navn: t('arbeidstid.resultat.stillingsprosent'), verdi: medEnhet(t, resultat.stilling.verdi, 'prosent') },
-              ]}
-            />
-            <p class={`stillingsplan-differanse${iBalanse ? '' : diff < 0 ? ' undertid' : ' overtid'}`} data-differanse={iBalanse ? 'balanse' : diff < 0 ? 'undertid' : 'overtid'}>
-              <span>{diffTekst}</span>
-              {!iBalanse && <span class="tall">{`${medEnhet(t, Math.abs(diff), 'prosent')}${timerTekst}`}</span>}
-            </p>
-            {!iBalanse && fylte.length > 1 && (
-              <div class="felt felt-liten">
-                <label for={idTimer}>{t('arbeidstid.stillingsplan.timerIFag')}</label>
-                <select
-                  id={idTimer}
-                  value={String(valgtIndeks)}
-                  onChange={(e) => sett({ ...s, timerIGruppe: fylte[Number(e.currentTarget.value)]?.g.id ?? null })}
-                >
-                  {gruppenavn.map((navn, i) => (
-                    <option key={i} value={String(i)}>
-                      {navn}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            )}
-            {!iBalanse && fylte.length === 0 && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.ingenFag')}</p>}
-            {!iBalanse && fylte.length > 1 && (
-              <>
-                <button type="button" class="lenkeknapp liten" aria-expanded={visHvertFag} onClick={() => settVisHvertFag(!visHvertFag)}>
-                  <Ikon navn={visHvertFag ? 'opp' : 'ned'} class="ikon-liten" />
-                  {t('arbeidstid.stillingsplan.hvertFag')}
-                </button>
-                {visHvertFag && (
-                  <div class="hjelp-tekst">
-                    <p class="felt-hjelp">{diff < 0 ? t('arbeidstid.stillingsplan.hvertFagMangler') : t('arbeidstid.stillingsplan.hvertFagForMye')}</p>
-                    <Oversiktsliste
-                      rader={differanseIHvertFag(resultat).map((d, i) => ({
-                        navn: t('arbeidstid.stillingsplan.fagRad', { fag: gruppenavn[i] ?? '', arsramme: formaterTall(d.arsramme) }),
-                        verdi: medEnhet(t, Math.abs(d.timer), 'arsrammetimer'),
-                      }))}
-                    />
-                  </div>
-                )}
-              </>
-            )}
-            {resultat.beskjeftigelse.verdi > 100 && (
-              <a class="lenke-pil" href={`#/arbeidstid/overtid?beskjeftigelse=${encodeURIComponent(String(Math.round(resultat.beskjeftigelse.verdi * 100) / 100))}`}>
-                {t('arbeidstid.stillingsplan.overtidLenke', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}
-                <Ikon navn="hoyre" class="ikon-liten" />
-              </a>
-            )}
-          </Utregningskort>
-        </>
-      ) : (
-        !feil && <ManglerInndata />
-      )}
     </Kalkulatorside>
   );
 }

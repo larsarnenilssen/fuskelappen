@@ -10,7 +10,11 @@ import { Metode } from './Metode.tsx';
 
 export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
 
-export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: ComponentChildren }) {
+/**
+ * Kalkulatorsiden: skjemaet (children) og resultatet. På bred skjerm står resultatet i en egen kolonne til høyre,
+ * så det er synlig mens skjemaet fylles ut. På mobil kommer resultatet under skjemaet.
+ */
+export function Kalkulatorside({ id, children, resultat }: { id: KalkulatorId; children: ComponentChildren; resultat?: ComponentChildren }) {
   const { t } = useTekst();
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
   return (
@@ -22,7 +26,10 @@ export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: C
         </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
       </div>
-      {children}
+      <div class="kalkulator-flate">
+        <div class="kalkulator-skjema">{children}</div>
+        {resultat && <div class="kalkulator-resultat">{resultat}</div>}
+      </div>
       <Metode id={`metode-${id}`} />
     </div>
   );

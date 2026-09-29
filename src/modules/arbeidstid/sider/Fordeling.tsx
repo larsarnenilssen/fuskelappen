@@ -9,6 +9,7 @@ import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsram
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Bryter, Grupper, Nivavelger, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 import { Reduksjonsfelt, tilReduksjon } from './Planfestet.tsx';
 
@@ -64,7 +65,34 @@ export default function Fordeling() {
   const { resultat, feil } = prov(() => (grunnlag ? beregnFordeling(hent, { undervisning: grunnlag, funksjon: reduksjon, moterPerUke: s.moter ?? 0 }) : null));
 
   return (
-    <Kalkulatorside id="fordeling">
+    <Kalkulatorside
+      id="fordeling"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {resultat ? (
+            <>
+              <Advarsler advarsler={resultat.advarsler} />
+              <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
+              <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
+              <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
+              <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
+            </>
+          ) : (
+            !feil && <ManglerInndata />
+          )}
+          <Varianter
+            id="fordeling"
+            skjema={s}
+            resultat={resultat ? { tittel: t('arbeidstid.resultat.stilling'), verdi: resultat.stilling.verdi, enhet: 'prosent' } : null}
+            onHent={(v) => {
+              reserverIder(v.grupper);
+              sett(v);
+            }}
+          />
+        </>
+      }
+    >
       <p class="merknad merknad-liten">{t('arbeidstid.fordeling.illustrasjon')}</p>
       <Bryter
         legend={t('arbeidstid.fordeling.grunnlag')}
@@ -95,18 +123,6 @@ export default function Fordeling() {
         <Reduksjonsfelt legend={t('arbeidstid.fordeling.funksjon')} type={s.type} verdi={s.funksjon} onEndring={(type, funksjon) => sett({ ...s, type, funksjon })} />
         <Tallfelt etikett={t('arbeidstid.fordeling.moter')} hjelpetekst={t('arbeidstid.fordeling.moterHjelp')} verdi={s.moter} min={0} maks={37.5} onEndring={(moter) => sett({ ...s, moter })} />
       </div>
-      {feil && <Feilmelding feil={feil} />}
-      {resultat ? (
-        <>
-          <Advarsler advarsler={resultat.advarsler} />
-          <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
-          <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
-          <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
-          <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
-        </>
-      ) : (
-        !feil && <ManglerInndata />
-      )}
       <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
       {deler.map((d) => (
         <BrukAvDel key={d} id={d} />
