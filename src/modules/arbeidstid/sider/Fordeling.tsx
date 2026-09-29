@@ -5,7 +5,7 @@ import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { beregnFordeling, type FordelingsdelId, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
 import { Fordelingsdiagram, Fordelingstabell } from '../komponenter/Fordelingsdiagram.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Bryter, Grupper, Nivavelger, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
@@ -29,6 +29,7 @@ export default function Fordeling() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const arstimer = useArstimer(hent);
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const [s, sett] = useSkjematilstand(
     'fordeling',
@@ -71,7 +72,7 @@ export default function Fordeling() {
         onEndring={(grunnlag) => sett({ ...s, grunnlag })}
       />
       {s.grunnlag === 'fag' ? (
-        <Grupper key="fag" grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
+        <Grupper arstimer={arstimer} key="fag" grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
       ) : (
         <div class="fagkort" key="stilling">
           <Tallfelt

@@ -1,0 +1,115 @@
+# Årstimetall for elevene i fagene i vedlegg 1, hentet fra Grep (Udir, NLOD 2.0): feltet omfang-totalt på fagkoden.
+# Del av regelsettet sfs2213-2026-2027. Brukes til å fylle inn årstimer i kalkulatorene når brukeren velger et fag.
+# Brukeren kan alltid endre tallet. Nøkkelen er radnummeret (nr) i vedlegg 1.
+# Radene er koblet til fagkodene for hånd. Bare rader der fagkodene gir ett årstimetall for trinnet, er tatt med.
+# Ikke med: norsk og engelsk på yrkesfag (fagkoden gjelder flere trinn samlet), samisk, fremmedspråk på påbygging,
+# og forkortelser som ikke kan bekreftes i Grep (Info.tekn. samf., Nær.øk, Pol/samf).
+# npm run hent:grep henter omfanget for fagkodene på nytt (data/grep/arstimer.json), og en test sammenligner.
+id: sfs2213-2026-2027
+regelverk: sfs2213
+del: arstimer
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: udir-grep
+verdier:
+  arstimer:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    merknad: >-
+      Årstimer (60 minutter) per rad i vedlegg 1. Har raden flere fagkoder (f.eks. 1P og 1T, eller ulike
+      fremmedspråk), har alle det samme årstimetallet i Grep.
+    verdi:
+      - { nr: 6, arstimer: 56, fagkoder: [KRO1017] }
+      - { nr: 7, arstimer: 56, fagkoder: [KRO1018] }
+      - { nr: 8, arstimer: 56, fagkoder: [KRO1019] }
+      - { nr: 9, arstimer: 56, fagkoder: [KRO1017] }
+      - { nr: 10, arstimer: 56, fagkoder: [KRO1018] }
+      - { nr: 33, arstimer: 84, fagkoder: [REL1003] }
+      - { nr: 34, arstimer: 84, fagkoder: [REL1003] }
+      - { nr: 35, arstimer: 84, fagkoder: [REL1003] }
+      - { nr: 36, arstimer: 84, fagkoder: [SAK1001] }
+      - { nr: 37, arstimer: 84, fagkoder: [SAK1001] }
+      - { nr: 38, arstimer: 84, fagkoder: [SAK1001] }
+      - { nr: 39, arstimer: 84, fagkoder: [SAK1001] }
+      - { nr: 40, arstimer: 140, fagkoder: [NAT1007] }
+      - { nr: 41, arstimer: 56, fagkoder: [NAT1008, NAT1009, NAT1017] }
+      - { nr: 42, arstimer: 84, fagkoder: [NAT1018] }
+      - { nr: 43, arstimer: 140, fagkoder: [NAT1007] }
+      - { nr: 44, arstimer: 140, fagkoder: [NAT1007] }
+      - { nr: 45, arstimer: 113, fagkoder: [FSP6218, FSP6221, FSP6224] }
+      - { nr: 46, arstimer: 113, fagkoder: [FSP6218, FSP6221, FSP6224] }
+      - { nr: 47, arstimer: 113, fagkoder: [FSP6218, FSP6221, FSP6224] }
+      - { nr: 48, arstimer: 56, fagkoder: [HIS1009] }
+      - { nr: 49, arstimer: 56, fagkoder: [HIS1009] }
+      - { nr: 50, arstimer: 56, fagkoder: [HIS1009] }
+      - { nr: 51, arstimer: 56, fagkoder: [GEO1003] }
+      - { nr: 52, arstimer: 56, fagkoder: [GEO1003] }
+      - { nr: 53, arstimer: 56, fagkoder: [GEO1003] }
+      - { nr: 54, arstimer: 140, fagkoder: [HIS1011] }
+      - { nr: 55, arstimer: 113, fagkoder: [HIS1010] }
+      - { nr: 56, arstimer: 113, fagkoder: [HIS1010] }
+      - { nr: 57, arstimer: 113, fagkoder: [HIS1010] }
+      - { nr: 68, arstimer: 140, fagkoder: [ENG1007] }
+      - { nr: 71, arstimer: 140, fagkoder: [MAT1019, MAT1021] }
+      - { nr: 72, arstimer: 84, fagkoder: [MAT1111, MAT1131, MAT1149] }
+      - { nr: 73, arstimer: 140, fagkoder: [MAT1019, MAT1021] }
+      - { nr: 74, arstimer: 140, fagkoder: [MAT1019, MAT1021] }
+      - { nr: 75, arstimer: 140, fagkoder: [ENG1007] }
+      - { nr: 76, arstimer: 140, fagkoder: [ENG1007] }
+      - { nr: 77, arstimer: 140, fagkoder: [SPR3022, SPR3026, SPR3023] }
+      - { nr: 78, arstimer: 140, fagkoder: [SPR3033] }
+      - { nr: 79, arstimer: 140, fagkoder: [SPR3034, SPR3036] }
+      - { nr: 82, arstimer: 140, fagkoder: [SAM3045] }
+      - { nr: 83, arstimer: 140, fagkoder: [SAM3072] }
+      - { nr: 84, arstimer: 140, fagkoder: [SAM3073] }
+      - { nr: 85, arstimer: 140, fagkoder: [SPR3038] }
+      - { nr: 86, arstimer: 140, fagkoder: [SPR3039] }
+      - { nr: 87, arstimer: 140, fagkoder: [SAM3057] }
+      - { nr: 88, arstimer: 140, fagkoder: [SAM3060] }
+      - { nr: 89, arstimer: 140, fagkoder: [SAM3061] }
+      - { nr: 90, arstimer: 140, fagkoder: [REA3048] }
+      - { nr: 91, arstimer: 140, fagkoder: [REA3049] }
+      - { nr: 99, arstimer: 113, fagkoder: [NOR1260] }
+      - { nr: 100, arstimer: 113, fagkoder: [NOR1260] }
+      - { nr: 101, arstimer: 113, fagkoder: [NOR1260] }
+      - { nr: 102, arstimer: 112, fagkoder: [FSP6219, FSP6222, FSP6225] }
+      - { nr: 103, arstimer: 140, fagkoder: [FSP6226] }
+      - { nr: 104, arstimer: 112, fagkoder: [FSP6219, FSP6222, FSP6225] }
+      - { nr: 105, arstimer: 140, fagkoder: [FSP6226] }
+      - { nr: 106, arstimer: 112, fagkoder: [FSP6219, FSP6222, FSP6225] }
+      - { nr: 107, arstimer: 140, fagkoder: [FSP6226] }
+      - { nr: 108, arstimer: 140, fagkoder: [MAT1151] }
+      - { nr: 109, arstimer: 84, fagkoder: [MAT1023] }
+      - { nr: 110, arstimer: 84, fagkoder: [MAT1023] }
+      - { nr: 111, arstimer: 84, fagkoder: [MAT1023] }
+      - { nr: 112, arstimer: 140, fagkoder: [SPR3029] }
+      - { nr: 113, arstimer: 140, fagkoder: [SPR3031] }
+      - { nr: 114, arstimer: 140, fagkoder: [SPR3026, SPR3023] }
+      - { nr: 115, arstimer: 140, fagkoder: [SPR3027, SPR3024] }
+      - { nr: 116, arstimer: 140, fagkoder: [SAM3042] }
+      - { nr: 117, arstimer: 140, fagkoder: [SAM3043] }
+      - { nr: 118, arstimer: 140, fagkoder: [SAM3063] }
+      - { nr: 119, arstimer: 140, fagkoder: [SAM3064] }
+      - { nr: 122, arstimer: 140, fagkoder: [SAM3048] }
+      - { nr: 123, arstimer: 140, fagkoder: [SAM3049] }
+      - { nr: 124, arstimer: 140, fagkoder: [SAM3046] }
+      - { nr: 125, arstimer: 140, fagkoder: [SAM3058] }
+      - { nr: 128, arstimer: 140, fagkoder: [REA3056, REA3060] }
+      - { nr: 129, arstimer: 140, fagkoder: [REA3058, REA3062] }
+      - { nr: 130, arstimer: 140, fagkoder: [REA3042] }
+      - { nr: 131, arstimer: 140, fagkoder: [REA3043] }
+      - { nr: 132, arstimer: 140, fagkoder: [REA3038] }
+      - { nr: 133, arstimer: 140, fagkoder: [REA3039] }
+      - { nr: 134, arstimer: 140, fagkoder: [REA3045] }
+      - { nr: 135, arstimer: 140, fagkoder: [REA3046] }
+      - { nr: 136, arstimer: 140, fagkoder: [REA3035] }
+      - { nr: 137, arstimer: 140, fagkoder: [REA3036] }
+      - { nr: 138, arstimer: 140, fagkoder: [REA3052] }
+      - { nr: 139, arstimer: 140, fagkoder: [REA3053] }
+      - { nr: 141, arstimer: 112, fagkoder: [NOR1264] }
+      - { nr: 142, arstimer: 168, fagkoder: [NOR1267] }
+      - { nr: 147, arstimer: 281, fagkoder: [NOR1270] }
+      - { nr: 148, arstimer: 112, fagkoder: [NOR1264] }
+      - { nr: 149, arstimer: 168, fagkoder: [NOR1267] }
+      - { nr: 150, arstimer: 112, fagkoder: [NOR1264] }
+      - { nr: 151, arstimer: 168, fagkoder: [NOR1267] }

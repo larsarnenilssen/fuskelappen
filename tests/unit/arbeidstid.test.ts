@@ -1,5 +1,5 @@
 // Enhetstester for beregningene i arbeidstidsmodulen (utover fasiteksemplene).
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { finnVerdi, slaaSammen } from '../../src/core/regler/motor.ts';
@@ -233,5 +233,21 @@ describe('stillingsplan', () => {
     expect(rund(to.differanse.verdi)).toBe(-5);
     expect(rund(to.differanseTimer?.verdi ?? NaN)).toBe(-26.25);
     expect(to.trinn.map((t) => t.id)).toEqual(['beskjeftigelse', 'sum_funksjon', 'samlet_beskjeftigelse', 'teknisk_differanse', 'teknisk_timer']);
+  });
+});
+
+describe('årstimer fra Grep', () => {
+  it('stemmer med omfanget for fagkodene i Grep og peker på rader i vedlegg 1', async () => {
+    const { lesArstimer } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const grep = JSON.parse(readFileSync(join(rot, 'data/grep/arstimer.json'), 'utf8')) as { arstimer: Record<string, number | null> };
+    const tabell = lesArstimer(hent);
+    expect(tabell.size).toBeGreaterThan(80);
+    for (const [nr, rad] of tabell) {
+      expect(rader.some((r) => r.nr === nr), `rad ${nr} finnes i vedlegg 1`).toBe(true);
+      for (const kode of rad.fagkoder) expect(grep.arstimer[kode], `${kode} (rad ${nr})`).toBe(rad.arstimer);
+    }
+    // Eksemplene fra eier: kroppsøving 56 og engelsk vg1 studieforberedende 140.
+    expect(tabell.get(rad('Kroppsøv.', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(56);
+    expect(tabell.get(rad('Engelsk', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(140);
   });
 });

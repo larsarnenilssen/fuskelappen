@@ -37,6 +37,26 @@ export function lesArsrammer(oppslag: Oppslag): Arsrammerad[] {
   return rader as unknown as Arsrammerad[];
 }
 
+/** Årstimetallet for elevene i faget på en rad i vedlegg 1, med fagkodene i Grep tallet kommer fra. */
+export interface Arstimerad {
+  arstimer: number;
+  fagkoder: string[];
+}
+
+/**
+ * Leser tabellen «sfs2213.arstimer» (radnummer i vedlegg 1 → årstimer). Brukes til å fylle inn årstimer
+ * når brukeren velger et fag. Rader uten kjent årstimetall er ikke med.
+ */
+export function lesArstimer(hent: Hent): Map<number, Arstimerad> {
+  const ut = new Map<number, Arstimerad>();
+  for (const r of somTabell(hent('sfs2213.arstimer'), 'sfs2213.arstimer')) {
+    const koder = Array.isArray(r.fagkoder) ? r.fagkoder.map(String) : [];
+    if (typeof r.nr !== 'number' || typeof r.arstimer !== 'number') throw new Regelfeil(`Ugyldig rad i sfs2213.arstimer: ${JSON.stringify(r)}`);
+    ut.set(r.nr, { arstimer: r.arstimer, fagkoder: koder });
+  }
+  return ut;
+}
+
 /** Kort beskrivelse av raden, slik vedlegget angir den: «Engelsk – Stud.spes Vg1». */
 export function radNavn(r: Arsrammerad): string {
   return `${r.fag ?? r.kategori} – ${r.program} ${r.trinn}`;

@@ -6,7 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [0.3.0] – 2026-09-29
 
-Ny hovedkalkulator: stillingsplan.
+Ny hovedkalkulator, stillingsplan, og årstimer som fylles inn fra faget.
 
 ### Lagt til
 
@@ -18,6 +18,7 @@ Ny hovedkalkulator: stillingsplan.
   - en lenke til overtidskalkulatoren med prosenten ferdig utfylt når samlet beskjeftigelse er over 100 %
 - Fasiteksemplene E1–E4 for stillingsplanen, som eier har kontrollert (fasit 011–014).
 - Begrepet «Teknisk undertid og teknisk overtid».
+- Årstimer fylles inn når du velger fag i beskjeftigelse, periodebeskjeftigelse, fordeling og stillingsplan, f.eks. 56 i kroppsøving og 140 i engelsk vg1 studieforberedende. Tallet kommer fra Udir (Grep), og du kan endre det. Det gjelder 94 av radene i vedlegg 1. Programfag på yrkesfag, norsk og engelsk på yrkesfag, samisk og noen forkortelser som ikke kan bekreftes, er ikke med.
 
 ### Endret
 

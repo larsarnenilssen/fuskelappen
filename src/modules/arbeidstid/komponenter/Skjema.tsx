@@ -9,7 +9,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { somTabell } from '../../../core/regler/motor.ts';
-import type { Arsrammerad, Arsrammevalg, Gruppe, Hent } from '../beregning/index.ts';
+import type { Arsrammerad, Arsrammevalg, Arstimerad, Gruppe, Hent } from '../beregning/index.ts';
 import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
 
 /**
@@ -351,6 +351,8 @@ export interface Gruppetilstand {
   faaElever: boolean;
   modus: 'arstimer' | 'okter';
   arstimer: number | null;
+  /** Sann når årstimene er fylt inn fra det valgte faget (og ikke skrevet av brukeren). */
+  arstimerAuto: boolean;
   okter: number | null;
   minutter: number | null;
   minutterFritt: boolean;
@@ -361,7 +363,7 @@ export interface Gruppetilstand {
 let nesteId = 1;
 
 export function nyGruppe(): Gruppetilstand {
-  return { id: nesteId++, arsrammer: [tomArsrammeplass()], faaElever: false, modus: 'arstimer', arstimer: null, okter: null, minutter: 45, minutterFritt: false, uker: null, endreUker: false };
+  return { id: nesteId++, arsrammer: [tomArsrammeplass()], faaElever: false, modus: 'arstimer', arstimer: null, arstimerAuto: false, okter: null, minutter: 45, minutterFritt: false, uker: null, endreUker: false };
 }
 
 /** Sørger for at nye grupper får id-er som ikke er brukt (etter at tilstanden er hentet fra historikken). */
@@ -383,6 +385,22 @@ export function tilGruppe(g: Gruppetilstand, rader: readonly Arsrammerad[], peri
   return { arsrammer, elever: g.faaElever, undervisning: { type: 'okter', okterPerUke: g.okter, minutter: g.minutter, uker } };
 }
 
+/**
+ * Årstimer når faget i gruppen endres: det kjente årstimetallet for faget fylles inn, med mindre brukeren
+ * har skrevet inn timene selv. Fag uten kjent årstimetall tømmer bare et tall som var fylt inn automatisk.
+ */
+export function autoArstimer(
+  gruppe: Gruppetilstand,
+  arsrammer: readonly Arsrammeplass[],
+  tabell: ReadonlyMap<number, Arstimerad> | undefined,
+): Partial<Gruppetilstand> {
+  const ny = arsrammer[0]?.valg;
+  if (ny === gruppe.arsrammer[0]?.valg || !(gruppe.arstimer === null || gruppe.arstimerAuto)) return {};
+  const kjent = ny && ny !== 'manuell' ? tabell?.get(Number(ny)) : undefined;
+  if (kjent) return { arstimer: kjent.arstimer, arstimerAuto: true };
+  return gruppe.arstimerAuto ? { arstimer: null, arstimerAuto: false } : {};
+}
+
 export function Gruppekort({
   gruppe,
   nr,
@@ -392,6 +410,7 @@ export function Gruppekort({
   standardUker,
   delresultat,
   kanFjernes,
+  arstimer,
   onEndring,
   onFjern,
 }: {
@@ -403,11 +422,14 @@ export function Gruppekort({
   standardUker: number;
   delresultat: string | null;
   kanFjernes: boolean;
+  arstimer?: ReadonlyMap<number, Arstimerad>;
   onEndring: (g: Gruppetilstand) => void;
   onFjern: () => void;
 }) {
   const { t } = useTekst();
   const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
+  const forste = gruppe.arsrammer[0]?.valg;
+  const kjent = forste && forste !== 'manuell' ? arstimer?.get(Number(forste)) : undefined;
   return (
     <fieldset class="fagkort" data-gruppe={nr}>
       <legend class="fagkort-tittel">
@@ -424,7 +446,7 @@ export function Gruppekort({
         faaElever={gruppe.faaElever}
         indeks={indeks}
         rader={rader}
-        onPlasser={(arsrammer) => sett({ arsrammer })}
+        onPlasser={(arsrammer) => sett({ arsrammer, ...autoArstimer(gruppe, arsrammer, arstimer) })}
         onFaaElever={(faaElever) => sett({ faaElever })}
       />
       <div class="inndatarad">
@@ -448,7 +470,7 @@ export function Gruppekort({
             verdi={gruppe.arstimer}
             min={0}
             maks={2000}
-            onEndring={(v) => sett({ arstimer: v })}
+            onEndring={(v) => sett({ arstimer: v, arstimerAuto: false })}
           />
         ) : (
           <Tallfelt
@@ -463,6 +485,9 @@ export function Gruppekort({
           />
         )}
       </div>
+      {gruppe.modus === 'arstimer' && gruppe.arstimerAuto && kjent && (
+        <p class="felt-hjelp">{t('arbeidstid.felles.arstimerFraGrep', { fagkoder: kjent.fagkoder.join(', ') })}</p>
+      )}
       {gruppe.modus === 'okter' && (
         <>
           <Minuttvelger minutter={gruppe.minutter} fritt={gruppe.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ minutter, minutterFritt })} />
@@ -498,6 +523,7 @@ export function Grupper({
   periode,
   standardUker,
   delresultater,
+  arstimer,
   onEndring,
 }: {
   grupper: Gruppetilstand[];
@@ -507,6 +533,8 @@ export function Grupper({
   standardUker: number;
   /** Beskjeftigelse per gruppe (prosent), vises på kortet når det finnes flere. */
   delresultater?: (number | null)[];
+  /** Kjente årstimer per rad i vedlegg 1. Fylles inn når brukeren velger fag. */
+  arstimer?: ReadonlyMap<number, Arstimerad>;
   onEndring: (g: Gruppetilstand[]) => void;
 }) {
   const { t } = useTekst();
@@ -525,6 +553,7 @@ export function Grupper({
             standardUker={standardUker}
             delresultat={grupper.length > 1 && del != null ? formaterTall(del) : null}
             kanFjernes={grupper.length > 1}
+            {...(arstimer ? { arstimer } : {})}
             onEndring={(ny) => onEndring(grupper.map((x) => (x.id === g.id ? ny : x)))}
             onFjern={() => onEndring(grupper.filter((x) => x.id !== g.id))}
           />

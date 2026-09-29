@@ -2,7 +2,7 @@
 import { useTekst } from '../../../app/tilstand.ts';
 import { beregnBeskjeftigelse, type Gruppe } from '../beregning/index.ts';
 import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -12,6 +12,7 @@ export default function Beskjeftigelse() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const arstimer = useArstimer(hent);
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const [skjema, settSkjema] = useSkjematilstand('beskjeftigelse', () => ({ grupper: [nyGruppe()] }), (s) => reserverIder(s.grupper));
   const { grupper } = skjema;
@@ -25,7 +26,7 @@ export default function Beskjeftigelse() {
   return (
     <Kalkulatorside id="beskjeftigelse">
       <Grupper
-        grupper={grupper}
+arstimer={arstimer}         grupper={grupper}
         rader={rader}
         indeks={indeks}
         periode={false}

@@ -71,6 +71,7 @@ export const arbeidstidNb = {
     modusTimerPeriode: 'Timer',
     modusOkter: 'Økter/uke',
     arstimer: 'Antall årstimer',
+    arstimerFraGrep: 'Årstimetall for elevene fra Udir ({fagkoder}). Du kan endre det.',
     timerIPerioden: 'Antall timer i perioden',
     okter: 'Antall økter per uke',
     minutter: 'Minutter per økt',

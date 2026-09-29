@@ -4,7 +4,7 @@ import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { beregnPeriodebeskjeftigelse, type Gruppe } from '../beregning/index.ts';
 import { Periodelinje, Stillingsmaaler } from '../komponenter/Grafikk.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -14,6 +14,7 @@ export default function Periode() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const arstimer = useArstimer(hent);
   const skolear = useRegeltall(hent, 'sfs2213.skolear_dager') ?? 0;
   const [skjema, settSkjema] = useSkjematilstand(
     'periode',
@@ -53,7 +54,7 @@ export default function Periode() {
         />
       </div>
       {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={dagerSkolear ?? skolear} />}
-      <Grupper grupper={grupper} rader={rader} indeks={indeks} periode standardUker={0} delresultater={delresultater} onEndring={(g) => settSkjema({ ...skjema, grupper: g })} />
+      <Grupper arstimer={arstimer} grupper={grupper} rader={rader} indeks={indeks} periode standardUker={0} delresultater={delresultater} onEndring={(g) => settSkjema({ ...skjema, grupper: g })} />
       {feil && <Feilmelding feil={feil} />}
       {resultat ? (
         <>

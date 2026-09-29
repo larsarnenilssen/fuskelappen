@@ -290,6 +290,39 @@ test.describe('arbeidstid', () => {
     await expect(page.getByLabel('Samlet beskjeftigelse i prosent')).toHaveValue('103,13');
   });
 
+  test('årstimene fylles inn fra faget og kan endres', async ({ page }) => {
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await velgFag(page, 'kroppsøving stud vg1', 'Kroppsøving · Studiespesialisering Vg1');
+    const timer = page.getByLabel('Antall årstimer');
+    await expect(timer).toHaveValue('56');
+    await expect(resultat(page)).toContainText('8,82');
+    await expect(page.getByText(/Årstimetall for elevene fra Udir \(KRO1017\)/)).toBeVisible();
+
+    // Nytt fag gir nytt årstimetall så lenge brukeren ikke har skrevet inn timene selv.
+    await page.getByRole('button', { name: /Endre: Kroppsøving/ }).click();
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await expect(timer).toHaveValue('140');
+    await expect(resultat(page)).toContainText('26,67');
+
+    await timer.fill('120');
+    await expect(page.getByText(/Årstimetall for elevene fra Udir/)).toBeHidden();
+    await page.getByRole('button', { name: /Endre: Engelsk/ }).click();
+    await velgFag(page, 'kroppsøving stud vg1', 'Kroppsøving · Studiespesialisering Vg1');
+    await expect(timer).toHaveValue('120');
+  });
+
+  test('årstimene fylles inn også i periode, fordeling og stillingsplan', async ({ page }) => {
+    for (const [rute, etikett] of [
+      ['/arbeidstid/periode', 'Antall timer i perioden'],
+      ['/arbeidstid/fordeling', 'Antall årstimer'],
+      ['/arbeidstid/stillingsplan', 'Antall årstimer'],
+    ] as const) {
+      await aapne(page, rute);
+      await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+      await expect(page.getByLabel(etikett), rute).toHaveValue('140');
+    }
+  });
+
   test('kalkulatorene finnes på nynorsk', async ({ page }) => {
     await settLagret(page, { malform: 'nn' });
     await aapne(page, '/arbeidstid/beskjeftigelse');

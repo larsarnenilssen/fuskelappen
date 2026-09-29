@@ -72,6 +72,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     modusTimerPeriode: 'Timar',
     modusOkter: 'Økter/veke',
     arstimer: 'Tal på årstimar',
+    arstimerFraGrep: 'Årstimetal for elevane frå Udir ({fagkoder}). Du kan endre det.',
     timerIPerioden: 'Tal på timar i perioden',
     okter: 'Tal på økter per veke',
     minutter: 'Minutt per økt',

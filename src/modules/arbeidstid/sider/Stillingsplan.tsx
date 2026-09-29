@@ -8,7 +8,7 @@ import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
 import { Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
@@ -89,6 +89,7 @@ export default function Stillingsplan() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const arstimer = useArstimer(hent);
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const idTimer = useId();
   const [visHvertFag, settVisHvertFag] = useState(false);
@@ -145,7 +146,7 @@ export default function Stillingsplan() {
         onEndring={(stilling) => sett({ ...s, stilling })}
       />
       <Grupper
-        grupper={s.grupper}
+arstimer={arstimer}         grupper={s.grupper}
         rader={rader}
         indeks={indeks}
         periode={false}

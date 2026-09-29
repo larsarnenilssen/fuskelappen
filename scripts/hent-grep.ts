@@ -2,7 +2,8 @@
 // arbeidstidskalkulatorene bruker for å kjenne igjen koder som BAT (Bygg- og anleggsteknikk Vg1),
 // HEA (helsearbeiderfag Vg2) og fagnavn som «Helsefremmende arbeid» (HEA2005).
 // Programområdekoden er utdanningsprogram (2 bokstaver) + fagkodeprefiks (3 bokstaver) + trinn, f.eks. BABAT1----.
-// Resten av Grep-hentingen (fag, læreplaner, årstimer) kommer i fase 2.
+// Årstimetallet (omfang-totalt) for fagkodene i rules/sfs2213/arstimer-*.yaml hentes til data/grep/arstimer.json,
+// slik at en test kan se om Grep har endret tallene. Resten av Grep-hentingen (læreplaner) kommer i fase 2.
 // Bruk: npm run hent:grep
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -61,6 +62,22 @@ export function grupperFagkoder(liste: readonly Grepelement[], prefikser: Readon
   return Object.fromEntries(Object.entries(ut).sort(([a], [b]) => a.localeCompare(b)));
 }
 
+/** Fagkodene i årstimetabellen (rules/sfs2213/arstimer-*.yaml). */
+function arstimeFagkoder(): string[] {
+  const r = lesFil(rot, join(rot, 'rules/sfs2213/arstimer-2026-2027.yaml')) as Regelsett;
+  const rader = (r.verdier.arstimer?.verdi ?? []) as { fagkoder?: string[] }[];
+  return [...new Set(rader.flatMap((rad) => rad.fagkoder ?? []))].sort();
+}
+
+/** Omfanget (årstimer) for én fagkode, eller null hvis Grep ikke oppgir det. */
+async function omfang(kode: string): Promise<number | null> {
+  const svar = await fetch(`${GREP}/fagkoder/${kode}`, { headers: { Accept: 'application/json', 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(60_000) });
+  if (!svar.ok) throw new Error(`${GREP}/fagkoder/${kode} svarte ${svar.status}`);
+  const data = (await svar.json()) as { 'omfang-totalt'?: string | null };
+  const tall = Number(data['omfang-totalt']);
+  return Number.isFinite(tall) && tall > 0 ? tall : null;
+}
+
 /** Fellesfagprefiksene i søketabellen (rules/sfs2213/fagsok-*.yaml) som bare ett fag bruker. */
 function fellesfagprefikser(): string[] {
   const fil = join(rot, 'rules/sfs2213/fagsok-2026-2027.yaml');
@@ -90,4 +107,12 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const fagLinjer = Object.entries(fagkoder).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
   writeFileSync(fagfil, `{\n  ${hode},\n  "fagkoder": {\n${fagLinjer.join(',\n')}\n  }\n}\n`);
   console.log(`Skrev ${fagfil} (${antallFag} fagkoder).`);
+
+  const koder = arstimeFagkoder();
+  const arstimer: Record<string, number | null> = {};
+  for (const kode of koder) arstimer[kode] = await omfang(kode);
+  const timefil = join(rot, 'data/grep/arstimer.json');
+  const timeLinjer = Object.entries(arstimer).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
+  writeFileSync(timefil, `{\n  ${hode},\n  "arstimer": {\n${timeLinjer.join(',\n')}\n  }\n}\n`);
+  console.log(`Skrev ${timefil} (${koder.length} fagkoder).`);
 }
