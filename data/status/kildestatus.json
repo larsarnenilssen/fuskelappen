@@ -1,17 +1,17 @@
 {
   "skjema": 1,
-  "kjort": "2026-09-29T08:52:23.001Z",
+  "kjort": "2026-09-29T09:42:36.584Z",
   "kilder": {
     "ks-sfs2213": {
-      "status": "feilet",
-      "sjekket": "2026-09-29T08:52:23.001Z",
+      "status": "ok",
+      "sjekket": "2026-09-29T09:42:36.584Z",
       "fingeravtrykk": "sha256:7b5faa2311693ca97a7a881f1f9dbe6c87d02484e9df87dce086c4ba2bdfa092",
-      "endret_siden": "2026-09-29T08:24:12.161Z",
-      "melding": "Simulert feil (manuell test av varsling)."
+      "endret_siden": null,
+      "melding": null
     },
     "udir-nsr": {
       "status": "ok",
-      "sjekket": "2026-09-29T08:52:23.001Z",
+      "sjekket": "2026-09-29T09:42:36.584Z",
       "fingeravtrykk": "sha256:06b847a3ae6d671e182aa8f0db13b8305d1e62c18727fc7137482ac0adf16b2e",
       "endret_siden": null,
       "melding": null
