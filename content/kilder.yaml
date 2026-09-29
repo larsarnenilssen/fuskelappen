@@ -32,7 +32,8 @@ kilder:
     lisens: Opphavsrett KS. Lenkes, kopieres ikke.
     sjekkmetode: kf-infoserie
     aktiv: true
-    godkjent_fingeravtrykk: null
+    # Godkjent av eier 2026-09-29.
+    godkjent_fingeravtrykk: sha256:1c68729cdb42f9a73ce42cdae825a5f7e96507fc9361cb9488f0309ef1ad27ce
     faser: [1, 2, 3]
     merknad: >-
       Lenken er den KS publiserer på særavtalesiden. KF Infoserie krever nettleser, så kildejobben
@@ -62,7 +63,8 @@ kilder:
     lisens: Opphavsrett KS. Lenkes, kopieres ikke.
     sjekkmetode: fil
     aktiv: true
-    godkjent_fingeravtrykk: null
+    # Godkjent av eier 2026-09-29.
+    godkjent_fingeravtrykk: sha256:9060856923b545153ae7c4c2072d411157afe5f2fcfb08da5be1f374f86bc745
     faser: [1, 3]
     merknad: >-
       PDF-utgaven KS publiserer på https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/.
@@ -83,7 +85,8 @@ kilder:
       # Finner sjekken ikke kapittelet, beskriver feilmeldingen strukturen i filen (docs/avgjorelser/008).
       selektor: '[data-name="kap10"]'
       inneholder: Kapittel 10. Arbeidstid
-    godkjent_fingeravtrykk: null
+    # Godkjent av eier 2026-09-29.
+    godkjent_fingeravtrykk: sha256:3a795969f3c58abf9fe8d4bddc30e2144df258e9cc09cc7a09727731783966cd
     faser: [1, 3]
     merknad: Kildejobben følger kapittel 10 om arbeidstid.
 
