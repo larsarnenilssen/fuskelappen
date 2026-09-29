@@ -25,6 +25,7 @@ const baner = {
   last: 'M12 4v11m0 0-4-4m4 4 4-4M5 19h14',
   hent: 'M12 16V5m0 0-4 4m4-4 4 4M5 19h14',
   slett: 'M5 7h14M10 7V4.5h4V7M7 7l1 13h8l1-13',
+  pluss: 'M12 5v14M5 12h14',
 } as const;
 
 export type Ikonnavn = keyof typeof baner;

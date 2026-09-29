@@ -133,7 +133,7 @@ describe('fordeling', () => {
   const grupper = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
 
   it('delene summerer seg til årsverket for stillingen', () => {
-    const r = beregnFordeling(hent, { grupper, funksjon: { type: 'arsrammetimer', timer: 28.5 }, moterPerUke: 2 });
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'arsrammetimer', timer: 28.5 }, moterPerUke: 2 });
     const sum = r.deler.reduce((s, d) => s + d.timer, 0);
     expect(sum).toBeCloseTo(r.arsverk.verdi);
     expect(r.arsverk.verdi).toBeCloseTo((1687.5 * r.stilling.verdi) / 100);
@@ -143,13 +143,23 @@ describe('fordeling', () => {
 
   it('for hel stilling med funksjon gir planfestet tid det samme som punkt 5.3', () => {
     const hel = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
-    const r = beregnFordeling(hent, { grupper: hel, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: hel }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
     const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
     expect(planfestet).toBeCloseTo(beregnPlanfestet(hent, { type: 'prosent', prosent: 20 }).planfestet.verdi);
   });
 
+  it('kan regne ut fra stillingsprosent og årsramme i stedet for fag', () => {
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: { type: 'niva', t60: 525, t45: 700 } }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer;
+    expect(del('undervisning')).toBe(525);
+    expect(del('annen_planfestet')).toBe(625);
+    expect(del('selvdisponert')).toBe(537.5);
+    expect(r.arsverk.verdi).toBe(1687.5);
+    expect(r.trinn.find((t) => t.id === 'arstimer_fra_stilling')?.operander.arsramme?.oppslag?.kilde.punkt).toBe('Vedlegg 1');
+  });
+
   it('varsler når stillingen er over 100 % eller møtetiden er større enn planfestet tid', () => {
-    const r = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 20 });
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 20 });
     expect(r.advarsler).toEqual(expect.arrayContaining(['over_hel_stilling', 'motetid_for_stor']));
   });
 });

@@ -159,7 +159,7 @@
     nb: |
       Diagrammet viser årsverket i en tenkt stilling. Stillingen er beskjeftigelsen i fagene (B) og funksjoner og andre oppgaver (F), til sammen B + F prosent av 1687,5 timer.
 
-      - **Undervisning** er årstimene i fagene.
+      - **Undervisning** er årstimene i fagene. Regner du ut fra stillingsprosent, er undervisningen stillingsprosent × årsramme ÷ 100, f.eks. 100 % × 525 = 525 timer.
       - **Møtetid** er møtetimene per uke × 38 uker.
       - **Annen planfestet tid** er planfestet tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
       - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet.
@@ -169,7 +169,7 @@
     nn: |
       Diagrammet viser årsverket i ei tenkt stilling. Stillinga er sysselsetjinga i faga (B) og funksjonar og andre oppgåver (F), til saman B + F prosent av 1687,5 timar.
 
-      - **Undervisning** er årstimane i faga.
+      - **Undervisning** er årstimane i faga. Reknar du ut frå stillingsprosent, er undervisninga stillingsprosent × årsramme ÷ 100, t.d. 100 % × 525 = 525 timar.
       - **Møtetid** er møtetimane per veke × 38 veker.
       - **Anna planfesta tid** er planfesta tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
       - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta.

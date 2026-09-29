@@ -1,0 +1,125 @@
+# Søkeord for årsrammene i vedlegg 1: fulle navn, utdanningsprogram og fagkoder i Grep, og kallenavn.
+# Del av regelsettet sfs2213-2026-2027. Brukes bare til å finne riktig rad i fagsøket; beregningene bruker
+# årsrammen i raden brukeren velger. Programområdene (BAT, HEA …) hentes fra Grep med npm run hent:grep
+# (data/grep/programomrader.json). Kallenavn og fagkoder er tatt med bare når Grep har et fag med det navnet.
+# Tabellen over programnavn skal bekreftes av eier (OPPDRAG fase 2). Forkortelser som ikke kan bekreftes
+# i Grep (Pol/samf, Nær.øk, Info.tekn. samf.), står som i vedlegget.
+id: sfs2213-2026-2027
+regelverk: sfs2213
+del: fagsok
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: udir-grep
+verdier:
+  programnavn:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    merknad: Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver).
+    verdi:
+      - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST] }
+      - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }
+      - { vedlegg: "Idrett", navn: "Idrettsfag", grep: [ID] }
+      - { vedlegg: "Kunst, design og arkitektur", navn: "Kunst, design og arkitektur", grep: [KD] }
+      - { vedlegg: "Med./komm", navn: "Medier og kommunikasjon", grep: [ME] }
+      - { vedlegg: "Med./komm.", navn: "Medier og kommunikasjon", grep: [ME] }
+      - { vedlegg: "Yrkesfag", navn: "Yrkesfaglige utdanningsprogram", grep: [BA, DT, EL, FD, HS, IM, NA, RM, SR, TP] }
+      - { vedlegg: "Yrkes/På", navn: "Påbygging til generell studiekompetanse", grep: [] }
+      - { vedlegg: "Yrkesf/På", navn: "Påbygging til generell studiekompetanse", grep: [] }
+      - { vedlegg: "Rest. og mat", navn: "Restaurant- og matfag", grep: [RM] }
+      - { vedlegg: "Bygg og anl.", navn: "Bygg- og anleggsteknikk", grep: [BA] }
+      - { vedlegg: "Naturbruk", navn: "Naturbruk", grep: [NA] }
+      - { vedlegg: "Tekn/ind.prod", navn: "Teknologi- og industrifag", grep: [TP] }
+      - { vedlegg: "Helse/sos", navn: "Helse- og oppvekstfag", grep: [HS] }
+      - { vedlegg: "Elektrofag", navn: "Elektro og datateknologi", grep: [EL] }
+      - { vedlegg: "Håndverk, design og produktutvikling", navn: "Håndverk, design og produktutvikling", grep: [DT] }
+      - { vedlegg: "Frisør, blomster, interiør og eksponeringsdesign", navn: "Frisør, blomster, interiør og eksponeringsdesign", grep: [FD] }
+      - { vedlegg: "Salg, service, reiseliv", navn: "Salg, service og reiseliv", grep: [SR] }
+      - { vedlegg: "Informasjonsteknologi og medieproduksjon", navn: "Informasjonsteknologi og medieproduksjon", grep: [IM] }
+      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [] }
+      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [] }
+  fagnavn:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    merknad: Fagnavnene i vedlegg 1 med fullt navn og prefikset i fagkodene i Grep.
+    verdi:
+      - { vedlegg: "Norsk", navn: "Norsk", prefikser: [NOR] }
+      - { vedlegg: "Engelsk", navn: "Engelsk", prefikser: [ENG] }
+      - { vedlegg: "Matematikk", navn: "Matematikk", prefikser: [MAT] }
+      - { vedlegg: "Naturfag", navn: "Naturfag", prefikser: [NAT] }
+      - { vedlegg: "Samf.fag", navn: "Samfunnskunnskap (samfunnsfag)", prefikser: [SAK] }
+      - { vedlegg: "Historie", navn: "Historie", prefikser: [HIS] }
+      - { vedlegg: "Geografi", navn: "Geografi", prefikser: [GEO] }
+      - { vedlegg: "Rel/etikk", navn: "Religion og etikk", prefikser: [REL] }
+      - { vedlegg: "Kroppsøv.", navn: "Kroppsøving", prefikser: [KRO] }
+      - { vedlegg: "Fremmedspråk", navn: "Fremmedspråk (spansk, tysk, fransk m.fl.)", prefikser: [FSP] }
+      - { vedlegg: "Samisk 1. spr.", navn: "Samisk som førstespråk", prefikser: [SFS] }
+      - { vedlegg: "Samisk 2. spr.", navn: "Samisk som andrespråk", prefikser: [SAS] }
+      - { vedlegg: "Samisk 2. spr", navn: "Samisk som andrespråk", prefikser: [SAS] }
+      - { vedlegg: "Bio", navn: "Biologi", prefikser: [REA] }
+      - { vedlegg: "Fysikk", navn: "Fysikk", prefikser: [REA] }
+      - { vedlegg: "Kjemi", navn: "Kjemi", prefikser: [REA] }
+      - { vedlegg: "Geofag 1/2", navn: "Geofag", prefikser: [REA] }
+      - { vedlegg: "Info.tekn.", navn: "Informasjonsteknologi", prefikser: [REA] }
+      - { vedlegg: "Teknol/forsk", navn: "Teknologi og forskningslære", prefikser: [REA] }
+      - { vedlegg: "Psykologi", navn: "Psykologi", prefikser: [SAM] }
+      - { vedlegg: "Rettslære", navn: "Rettslære", prefikser: [SAM] }
+      - { vedlegg: "Samf.øk", navn: "Samfunnsøkonomi", prefikser: [SAM] }
+      - { vedlegg: "Ma/str/led", navn: "Markedsføring og ledelse", prefikser: [SAM] }
+      - { vedlegg: "Hist/filosofi", navn: "Historie og filosofi", prefikser: [SAM] }
+      - { vedlegg: "Entr./bedriftsu.", navn: "Entreprenørskap og bedriftsutvikling", prefikser: [SAM] }
+      - { vedlegg: "Medie/info", navn: "Medie- og informasjonskunnskap", prefikser: [SAM] }
+      - { vedlegg: "Pol/samf", navn: "Pol/samf", prefikser: [SAM] }
+      - { vedlegg: "Nær.øk", navn: "Nær.øk", prefikser: [] }
+      - { vedlegg: "Info.tekn. samf.", navn: "Info.tekn. samf.", prefikser: [] }
+      - { vedlegg: "Kultur/komm", navn: "Kultur og kommunikasjon", prefikser: [] }
+      - { vedlegg: "Reiseliv og språk", navn: "Reiseliv og språk", prefikser: [SPR] }
+      - { vedlegg: "Latin/Gresk", navn: "Latin og gresk", prefikser: [SPR] }
+      - { vedlegg: "Ant.spr. og ku.", navn: "Antikkens språk og kultur", prefikser: [SPR] }
+  kallenavn:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    merknad: Fagnavn og fagkoder i Grep som hører til en bestemt rad i vedlegg 1 (samme fag, program og trinn).
+    verdi:
+      - { fag: "Matematikk", program: "Stud.spes", trinn: "Vg1", sokeord: ["1P", "1T", MAT1019, MAT1021] }
+      - { fag: "Matematikk", program: "Idrett", trinn: "Vg1", sokeord: ["1P", "1T", MAT1019, MAT1021] }
+      - { fag: "Matematikk", program: "MDD", trinn: "Vg1", sokeord: ["1P", "1T", MAT1019, MAT1021] }
+      - { fag: "Matematikk", program: "Yrkesfag", trinn: "Vg1", sokeord: ["1P-Y", "1T-Y"] }
+      - { fag: "Matematikk", program: "Stud.spes", trinn: "Vg2", kategori: "Fellesfag", sokeord: ["2P", MAT1023] }
+      - { fag: "Matematikk", program: "Idrett", trinn: "Vg2", sokeord: ["2P", MAT1023] }
+      - { fag: "Matematikk", program: "MDD", trinn: "Vg2", sokeord: ["2P", MAT1023] }
+      - { fag: "Matematikk", program: "Yrkes/På", trinn: "Vg3", sokeord: ["2P-Y", MAT1151] }
+      - { fag: "Matematikk", program: "Stud.spes", trinn: "Vg2", kategori: "Valgfrie programfag", sokeord: ["R1", "S1", REA3056, REA3060] }
+      - { fag: "Matematikk", program: "Stud.spes", trinn: "Vg3", sokeord: ["R2", "S2", REA3058, REA3062] }
+      - { fag: "Engelsk", program: "Stud.spes", trinn: "Vg1", sokeord: [ENG1007] }
+      - { fag: "Engelsk", program: "Yrkesfag", trinn: "Vg1", sokeord: [ENG1009] }
+      - { fag: "Engelsk", program: "Stud.spes", trinn: "Vg2", kategori: "Valgfrie programfag", sokeord: ["Engelsk 1", SPR3029] }
+      - { fag: "Engelsk", program: "Stud.spes", trinn: "Vg3", kategori: "Valgfrie programfag", sokeord: ["Engelsk 2", SPR3031] }
+      - { fag: "Bio", program: "Stud.spes", trinn: "Vg2", sokeord: ["Biologi 1", REA3035] }
+      - { fag: "Bio", program: "Stud.spes", trinn: "Vg3", sokeord: ["Biologi 2", REA3036] }
+      - { fag: "Fysikk", program: "Stud.spes", trinn: "Vg2", sokeord: ["Fysikk 1", REA3038] }
+      - { fag: "Fysikk", program: "Stud.spes", trinn: "Vg3", sokeord: ["Fysikk 2", REA3039] }
+      - { fag: "Kjemi", program: "Stud.spes", trinn: "Vg2", sokeord: ["Kjemi 1", REA3045] }
+      - { fag: "Kjemi", program: "Stud.spes", trinn: "Vg3", sokeord: ["Kjemi 2", REA3046] }
+      - { fag: "Geofag 1/2", program: "Stud.spes", trinn: "Vg2", sokeord: ["Geofag 1", REA3042] }
+      - { fag: "Geofag 1/2", program: "Stud.spes", trinn: "Vg3", sokeord: ["Geofag 2", REA3043] }
+      - { fag: "Info.tekn.", program: "Stud.spes", trinn: "Vg2", sokeord: ["Informasjonsteknologi 1", "IT1", REA3048] }
+      - { fag: "Info.tekn.", program: "Stud.spes", trinn: "Vg3", sokeord: ["Informasjonsteknologi 2", "IT2", REA3049] }
+      - { fag: "Teknol/forsk", program: "Stud.spes", trinn: "Vg2", sokeord: ["Teknologi og forskningslære 1", REA3052] }
+      - { fag: "Teknol/forsk", program: "Stud.spes", trinn: "Vg3", sokeord: ["Teknologi og forskningslære 2", REA3053] }
+      - { fag: "Psykologi", program: "Stud.spes", trinn: "Vg2", sokeord: ["Psykologi 1", SAM3072] }
+      - { fag: "Psykologi", program: "Stud.spes", trinn: "Vg3", sokeord: ["Psykologi 2", SAM3073] }
+      - { fag: "Rettslære", program: "Stud.spes", trinn: "Vg2", sokeord: ["Rettslære 1", SAM3057] }
+      - { fag: "Rettslære", program: "Stud.spes", trinn: "Vg3", sokeord: ["Rettslære 2", SAM3058] }
+      - { fag: "Samf.øk", program: "Stud.spes", trinn: "Vg2", sokeord: ["Samfunnsøkonomi 1", SAM3060] }
+      - { fag: "Samf.øk", program: "Stud.spes", trinn: "Vg3", sokeord: ["Samfunnsøkonomi 2", SAM3061] }
+      - { fag: "Ma/str/led", program: "Stud.spes", trinn: "Vg2", sokeord: ["Markedsføring og ledelse 1", SAM3045] }
+      - { fag: "Ma/str/led", program: "Stud.spes", trinn: "Vg3", sokeord: ["Markedsføring og ledelse 2", SAM3046] }
+      - { fag: "Hist/filosofi", program: "Stud.spes", trinn: "Vg2", sokeord: ["Historie og filosofi 1", SAM3042] }
+      - { fag: "Hist/filosofi", program: "Stud.spes", trinn: "Vg3", sokeord: ["Historie og filosofi 2", SAM3043] }
+      - { fag: "Entr./bedriftsu.", program: "Stud.spes", trinn: "Vg2", sokeord: ["Entreprenørskap og bedriftsutvikling 1", SAM3063] }
+      - { fag: "Medie/info", program: "Stud.spes", trinn: "Vg2", sokeord: ["Medie- og informasjonskunnskap 1", SAM3048] }
+      - { fag: "Pol/samf", program: "Stud.spes", trinn: "Vg2", sokeord: ["Politikk og menneskerettigheter", "Sosiologi og sosialantropologi", SAM3055, SAM3054] }
+      - { fag: "Reiseliv og språk", program: "Stud.spes", trinn: "Vg2", sokeord: ["Reiseliv og språk 1", SPR3038] }
+      - { fag: "Latin/Gresk", program: "Stud.spes", trinn: "Vg2", sokeord: ["Latin 1", "Gresk 1", SPR3026, SPR3023] }
+      - { fag: "Ant.spr. og ku.", program: "Stud.spes", trinn: "Vg2", sokeord: ["Antikkens kultur", SPR3022] }
+      - { fag: "Kultur/komm", program: "Stud.spes", trinn: "Vg2", sokeord: [SRL2003] }

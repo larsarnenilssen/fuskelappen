@@ -1,45 +1,50 @@
 // Planfestet arbeidstid når undervisningen reduseres for funksjoner eller andre oppgaver (SFS 2213 punkt 5.3).
-import { useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { beregnPlanfestet, type Reduksjon } from '../beregning/index.ts';
+import { Planfestetmaaler } from '../komponenter/Grafikk.tsx';
 import { Feilmelding, Kalkulatorside, ManglerInndata, prov } from '../komponenter/Kalkulatorside.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
-import { Valgknapper } from '../komponenter/Skjema.tsx';
+import { Bryter } from '../komponenter/Skjema.tsx';
 import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
-import { useHent } from '../kontekst.ts';
+import { useHent, useSkjematilstand } from '../kontekst.ts';
 
-/** Skjemaet for reduksjonen: i prosent eller i årsrammetimer. Brukes også i fordelingen. */
+/** Reduksjonen i undervisning: i prosent eller i årsrammetimer. Brukes også i fordelingen. */
 export function Reduksjonsfelt({
   type,
   verdi,
-  onType,
-  onVerdi,
+  onEndring,
   legend,
 }: {
   type: Reduksjon['type'];
   verdi: number | null;
-  onType: (t: Reduksjon['type']) => void;
-  onVerdi: (v: number | null) => void;
+  onEndring: (type: Reduksjon['type'], verdi: number | null) => void;
   legend: string;
 }) {
   const { t } = useTekst();
   return (
     <>
-      <Valgknapper
+      <Bryter
         legend={legend}
-        navn="reduksjon"
         verdi={type}
         valg={[
           { verdi: 'prosent', tekst: t('arbeidstid.planfestet.iProsent') },
           { verdi: 'arsrammetimer', tekst: t('arbeidstid.planfestet.iArsrammetimer') },
         ]}
-        onEndring={onType}
+        onEndring={(ny) => onEndring(ny, null)}
       />
       {type === 'prosent' ? (
-        <Tallfelt key="prosent" etikett={t('arbeidstid.planfestet.prosent')} hjelpetekst={t('arbeidstid.planfestet.prosentHjelp')} enhet="%" verdi={verdi} min={0} maks={100} onEndring={onVerdi} />
+        <Tallfelt key="prosent" etikett={t('arbeidstid.planfestet.prosent')} enhet="%" verdi={verdi} min={0} maks={100} onEndring={(v) => onEndring(type, v)} />
       ) : (
-        <Tallfelt key="timer" etikett={t('arbeidstid.planfestet.arsrammetimer')} hjelpetekst={t('arbeidstid.planfestet.arsrammetimerHjelp')} verdi={verdi} min={0} maks={1000} onEndring={onVerdi} />
+        <Tallfelt
+          key="timer"
+          etikett={t('arbeidstid.planfestet.arsrammetimer')}
+          hjelpetekst={t('arbeidstid.planfestet.arsrammetimerHjelp')}
+          verdi={verdi}
+          min={0}
+          maks={1000}
+          onEndring={(v) => onEndring(type, v)}
+        />
       )}
     </>
   );
@@ -53,17 +58,20 @@ export function tilReduksjon(type: Reduksjon['type'], verdi: number | null): Red
 export default function Planfestet() {
   const { t } = useTekst();
   const hent = useHent();
-  const [type, settType] = useState<Reduksjon['type']>('prosent');
-  const [verdi, settVerdi] = useState<number | null>(null);
-  const reduksjon = tilReduksjon(type, verdi);
+  const [s, sett] = useSkjematilstand('planfestet', () => ({ type: 'prosent' as Reduksjon['type'], verdi: null as number | null }));
+  const reduksjon = tilReduksjon(s.type, s.verdi);
   const { resultat, feil } = prov(() => (reduksjon ? beregnPlanfestet(hent, reduksjon) : null));
+  const verdi = (id: string) => resultat?.trinn.find((tr) => tr.id === id)?.resultat.verdi ?? 0;
 
   return (
     <Kalkulatorside id="planfestet">
-      <Reduksjonsfelt legend={t('arbeidstid.planfestet.reduksjon')} type={type} verdi={verdi} onType={(ny) => { settType(ny); settVerdi(null); }} onVerdi={settVerdi} />
+      <div class="fagkort">
+        <Reduksjonsfelt legend={t('arbeidstid.planfestet.reduksjon')} type={s.type} verdi={s.verdi} onEndring={(type, v) => sett({ type, verdi: v })} />
+      </div>
       {feil && <Feilmelding feil={feil} />}
       {resultat ? (
-        <Utregningskort tittel={t('arbeidstid.resultat.planfestet')} resultat={resultat.planfestet} trinn={resultat.trinn}>
+        <Utregningskort tittel={t('arbeidstid.resultat.planfestet')} resultat={resultat.planfestet} trinn={resultat.trinn} sammendrag={false}>
+          <Planfestetmaaler grunn={resultat.planfestet.verdi - verdi('planfestet_okning')} okning={verdi('planfestet_okning')} maks={verdi('planfestet_maks')} />
           <Oversiktsliste
             rader={[
               { navn: t('arbeidstid.resultat.funksjonsprosent'), verdi: medEnhet(t, resultat.funksjonsprosent.verdi, 'prosent') },

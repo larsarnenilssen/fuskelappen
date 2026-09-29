@@ -3,7 +3,6 @@ import type { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
-import { Stedmerknad } from '../../../app/Stedmerknad.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Hent, lesArsrammer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
@@ -19,10 +18,9 @@ export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: C
         <h1 tabIndex={-1}>{tittel}</h1>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
       </div>
-      <p class="ingress">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
-      <Stedmerknad />
-      <Metode id={`metode-${id}`} />
+      <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
       {children}
+      <Metode id={`metode-${id}`} />
     </div>
   );
 }

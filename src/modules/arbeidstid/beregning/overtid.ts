@@ -2,7 +2,7 @@
 // SFS 2213 punkt 5.2: overtidsbetaling gis for det antall timer årsrammen for undervisning er økt med.
 // Hovedtariffavtalen § 6.4 og § 12.4: tillegget regnes ut fra timelønn for undervisning; § 6.5.3: 50 % tillegg.
 // Overtidsbetaling = overtidstimer × kalkulert tid per time × timelønn × (100 + 50) ÷ 100.
-import { type Arsrammevalg, velgArsramme } from './arsrammer.ts';
+import { type Arsrammevalg, type Elevtall, velgArsramme } from './arsrammer.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 import { type Lonnsgrunnlag, timelonnForUndervisning } from './vikar.ts';
@@ -12,7 +12,7 @@ export interface Overtid {
   beskjeftigelse: number;
   /** Faget overtiden gjelder (årsrammen timene regnes om med). */
   arsrammer: Arsrammevalg[];
-  elever: number | null;
+  elever: Elevtall;
   lonn: Lonnsgrunnlag;
 }
 

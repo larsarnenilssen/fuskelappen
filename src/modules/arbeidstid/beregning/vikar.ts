@@ -2,13 +2,13 @@
 // Timelønn etter hovedtariffavtalen kap. 1 § 12.4: (årslønn × 1400 × 100) ÷ (årsramme × 1687,5 × 112),
 // her delt i kalkulert tid (1400 ÷ årsramme per time) og timelønn (årslønn ÷ 1687,5 × 100 ÷ 112).
 import { Regelfeil, somTabell } from '../../../core/regler/motor.ts';
-import { type Arsrammevalg, velgArsramme } from './arsrammer.ts';
+import { type Arsrammevalg, type Elevtall, velgArsramme } from './arsrammer.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 
 export interface Vikartimer {
   arsrammer: Arsrammevalg[];
-  elever: number | null;
+  elever: Elevtall;
   okter: number;
   minutter: number;
 }

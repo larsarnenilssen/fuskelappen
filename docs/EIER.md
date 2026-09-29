@@ -114,7 +114,8 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 
 **Kalkulatorene** (på telefonen, under Hjem → Hurtigkalkulatorer):
 
-- [ ] Beskjeftigelse: prøv ett fag, et fag merket * med under 16 elever, to fag, og en time med elever fra to nivåer.
+- [ ] Beskjeftigelse: søk etter fag på navn, kallenavn (R1, 2P) og koder (ENG, BAT, HEA). Prøv ett fag, et fag merket * med «15 eller færre elever», to fag, og en blandet gruppe.
+- [ ] Søkeordene: kallenavn og koder står i `rules/sfs2213/fagsok-2026-2027.yaml`. Se særlig over tabellen som kobler programnavnene i vedlegg 1 til utdanningsprogrammene.
 - [ ] Periodebeskjeftigelse, vikartimer (ansatt og timevikar), planfestet tid (20 % og 80 %), overtid og fordeling.
 - [ ] Trykk «Vis utregning» og «Slik regnes det ut». Er metoden og formlene forståelige og riktige?
 - [ ] Velg Vestland og en skole under Innstillinger. Ingen ekte lokale avtaler er lagt inn ennå, så verdiene skal fortsatt være nasjonale.

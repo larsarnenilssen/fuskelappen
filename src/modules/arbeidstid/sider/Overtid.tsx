@@ -1,37 +1,61 @@
 // Overtid ved beskjeftigelse over 100 % (fast overtid), betalt med 1,5 × timelønn for undervisning.
-import { useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
-import { beregnOvertid } from '../beregning/index.ts';
+import { type Arsrammevalg, beregnOvertid } from '../beregning/index.ts';
+import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer } from '../komponenter/Kalkulatorside.tsx';
-import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
-import { Arsrammevelger, tilArsrammevalg, tomArsrammeplass } from '../komponenter/Skjema.tsx';
+import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
+import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks } from '../komponenter/Skjema.tsx';
 import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
-import { useHent } from '../kontekst.ts';
+import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Overtid() {
   const { t } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
-  const [beskjeftigelse, settBeskjeftigelse] = useState<number | null>(null);
-  const [plass, settPlass] = useState(tomArsrammeplass);
-  const [elever, settElever] = useState<number | null>(null);
-  const [lonn, settLonn] = useState(nyLonnstilstand);
+  const indeks = useFagindeks(hent, rader);
+  const [s, sett] = useSkjematilstand('overtid', () => ({
+    beskjeftigelse: null as number | null,
+    plasser: [tomArsrammeplass()],
+    faaElever: false,
+    lonn: nyLonnstilstand(),
+  }));
 
-  const valg = tilArsrammevalg(plass, rader);
-  const stjerne = valg !== null && (valg.type === 'rad' ? valg.rad.stjerne : valg.stjerne);
-  const grunnlag = tilLonnsgrunnlag(lonn);
+  const valg = s.plasser.map((p) => tilArsrammevalg(p, rader));
+  const grunnlag = tilLonnsgrunnlag(s.lonn);
   const { resultat, feil } = prov(() =>
-    valg && grunnlag && beskjeftigelse !== null ? beregnOvertid(hent, { beskjeftigelse, arsrammer: [valg], elever, lonn: grunnlag }) : null,
+    valg.every((v) => v !== null) && grunnlag && s.beskjeftigelse !== null
+      ? beregnOvertid(hent, { beskjeftigelse: s.beskjeftigelse, arsrammer: valg as Arsrammevalg[], elever: s.faaElever, lonn: grunnlag })
+      : null,
   );
 
   return (
     <Kalkulatorside id="overtid">
-      <Tallfelt etikett={t('arbeidstid.overtid.beskjeftigelse')} hjelpetekst={t('arbeidstid.overtid.beskjeftigelseHjelp')} enhet="%" verdi={beskjeftigelse} min={0} maks={300} onEndring={settBeskjeftigelse} />
-      <Arsrammevelger etikett={t('arbeidstid.overtid.fag')} plass={plass} rader={rader} onEndring={settPlass} />
-      {stjerne && <Tallfelt etikett={t('arbeidstid.felles.elever')} hjelpetekst={t('arbeidstid.felles.eleverHjelp')} verdi={elever} min={0} maks={100} onEndring={settElever} />}
-      <Lonnsskjema hent={hent} lonn={lonn} onEndring={settLonn} />
+      <Tallfelt
+        etikett={t('arbeidstid.overtid.beskjeftigelse')}
+        hjelpetekst={t('arbeidstid.overtid.beskjeftigelseHjelp')}
+        enhet="%"
+        verdi={s.beskjeftigelse}
+        min={0}
+        maks={300}
+        onEndring={(beskjeftigelse) => sett({ ...s, beskjeftigelse })}
+      />
+      {s.beskjeftigelse !== null && s.beskjeftigelse > 0 && <Stillingsmaaler deler={[{ navn: t('arbeidstid.resultat.beskjeftigelse'), prosent: s.beskjeftigelse }]} />}
+      <div class="fagkort">
+        <p class="fagkort-tittel">{t('arbeidstid.overtid.fag')}</p>
+        <Fagfelt
+          plasser={s.plasser}
+          faaElever={s.faaElever}
+          indeks={indeks}
+          rader={rader}
+          onPlasser={(plasser) => sett({ ...s, plasser })}
+          onFaaElever={(faaElever) => sett({ ...s, faaElever })}
+        />
+      </div>
+      <div class="fagkort">
+        <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
+      </div>
       {feil && <Feilmelding feil={feil} />}
       {resultat ? (
         <>

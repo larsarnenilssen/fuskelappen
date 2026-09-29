@@ -200,7 +200,7 @@ export const nn: Tekster = {
       skjulUtregning: 'Skjul utrekning',
       utregning: 'Utrekning',
       formel: 'Formel',
-      kilde: 'Kjelde',
+      kilde: 'Kjelder',
     },
     tallfelt: {
       ugyldig: 'Skriv inn eit tal, til dømes 12,5.',
