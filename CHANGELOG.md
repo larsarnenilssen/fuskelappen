@@ -14,6 +14,7 @@ Kalkulatorene tar mindre plass og viser svaret hele tiden.
 - «Kopier» på resultatkortet kopierer svaret, utregningen og kildene som tekst, f.eks. til en e-post.
 - Overtid viser undervisningstimene i overtid, kalkulert tid (timene det betales for) og timelønnen. Et «?» forklarer hvorfor faget endrer antall undervisningstimer, men ikke beløpet.
 - Små «?» som viser en kort forklaring når du trykker på dem: ved tittelen på hver kalkulator, ved fagsøket og ved «15 eller færre elever».
+- Overtid viser feriepenger (12 %, eller 14,3 % over 60 år) som en ekstraopplysning under overtidsbetalingen.
 
 ### Endret
 
@@ -23,6 +24,7 @@ Kalkulatorene tar mindre plass og viser svaret hele tiden.
 - Mindre tittel på kalkulatorsidene. Ingressen ligger bak «?».
 - «Ikke kontrollert» står ved siden av tittelen på resultatkortet.
 - Fordelingen starter med 0 % funksjon.
+- Timevikar: hovedtallet er nå lønnen som utbetales. Feriepengene står under som en ekstraopplysning, i stedet for å være lagt til i hovedtallet.
 
 ### Rettet
 

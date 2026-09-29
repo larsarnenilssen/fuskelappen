@@ -197,4 +197,15 @@ describe('overtid', () => {
       expect(rund(r.betaling.verdi)).toBe(14573.33);
     }
   });
+
+  it('feriepenger regnes i prosent av overtidsbetalingen og holdes utenfor den', async () => {
+    const { beregnOvertid } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const inn = { beskjeftigelse: 102, arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: false, lonn: { type: 'garantilonn' as const, stillingsgruppe: 'lektor', ansiennitet: 0 } };
+    const vanlig = beregnOvertid(hent, inn);
+    const over60 = beregnOvertid(hent, { ...inn, over60: true });
+    expect(rund(vanlig.betaling.verdi)).toBe(14573.33);
+    expect(rund(vanlig.feriepenger.verdi)).toBe(1748.8);
+    expect(rund(over60.betaling.verdi)).toBe(14573.33);
+    expect(rund(over60.feriepenger.verdi)).toBe(2083.99);
+  });
 });

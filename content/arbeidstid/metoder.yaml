@@ -70,7 +70,7 @@
       1. **Kalkulert tid** = timer × 1400 ÷ årsramme. Det er tiden som regnes for undervisningen med for- og etterarbeid.
       2. **Timelønn** = årslønn ÷ 1687,5 × 100 ÷ 112. Brøken 100/112 trekker feriepengene ut av timelønnen.
 
-      Lønn = kalkulert tid × timelønn. Feriepenger kommer i tillegg: 12 %, eller 14,3 % for arbeidstakere over 60 år (§ 7.4.2). Årslønnen er garantilønnen for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller en årslønn du skriver inn selv.
+      Lønn = kalkulert tid × timelønn. Dette er beløpet som utbetales. Feriepenger kommer i tillegg og vises som en ekstraopplysning: 12 %, eller 14,3 % for arbeidstakere over 60 år (§ 7.4.2). Årslønnen er garantilønnen for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller en årslønn du skriver inn selv.
     nn: |
       Vikaröktene blir først gjorde om til 60-minutts timar: økter × minutt ÷ 60.
 
@@ -81,7 +81,7 @@
       1. **Kalkulert tid** = timar × 1400 ÷ årsramme. Det er tida som blir rekna for undervisninga med før- og etterarbeid.
       2. **Timeløn** = årsløn ÷ 1687,5 × 100 ÷ 112. Brøken 100/112 trekkjer feriepengane ut av timeløna.
 
-      Løn = kalkulert tid × timeløn. Feriepengar kjem i tillegg: 12 %, eller 14,3 % for arbeidstakarar over 60 år (§ 7.4.2). Årsløna er garantiløna for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller ei årsløn du skriv inn sjølv.
+      Løn = kalkulert tid × timeløn. Dette er beløpet som blir utbetalt. Feriepengar kjem i tillegg og blir viste som ei ekstraopplysning: 12 %, eller 14,3 % for arbeidstakarar over 60 år (§ 7.4.2). Årsløna er garantiløna for stillingsgruppe og ansiennitet (kap. 4 punkt 4.1), eller ei årsløn du skriv inn sjølv.
   kilder:
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
@@ -133,21 +133,24 @@
 
       1. **Overtidstimer** = (beskjeftigelse − 100) × årsramme ÷ 100, med årsrammen for faget overtiden gjelder.
       2. **Kalkulert tid** = overtidstimer × 1400 ÷ årsramme, og **timelønn** = årslønn ÷ 1687,5 × 100 ÷ 112, som for timevikarer (hovedtariffavtalen § 12.4).
-      3. **Overtidsbetaling** = kalkulert tid × timelønn × 1,5. For undervisning regnes overtidstillegget ut fra timelønnen for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3).
+      3. **Overtidsbetaling** = kalkulert tid × timelønn × 1,5. For undervisning regnes overtidstillegget ut fra timelønnen for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3). Dette er beløpet som utbetales.
+      4. **Feriepenger** regnes som vanlig i prosent av det som utbetales: 12 %, eller 14,3 % for arbeidstakere over 60 år (§ 7.4.2). De vises som en ekstraopplysning og er ikke med i overtidsbetalingen.
 
-      Feriepenger og overtid for deltidsansatte er ikke med ennå.
+      Overtid for deltidsansatte er ikke med ennå.
     nn: |
       Fast overtid kan avtalast ved at årsramma for undervisning blir auka. Overtidsbetaling blir gitt for talet på timar årsramma er auka med (SFS 2213 punkt 5.2). Kalkulatoren reknar sysselsetjing utover 100 % som overtid:
 
       1. **Overtidstimar** = (sysselsetjing − 100) × årsramme ÷ 100, med årsramma for faget overtida gjeld.
       2. **Kalkulert tid** = overtidstimar × 1400 ÷ årsramme, og **timeløn** = årsløn ÷ 1687,5 × 100 ÷ 112, som for timevikarar (hovudtariffavtalen § 12.4).
-      3. **Overtidsbetaling** = kalkulert tid × timeløn × 1,5. For undervisning blir overtidstillegget rekna ut frå timeløna for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3).
+      3. **Overtidsbetaling** = kalkulert tid × timeløn × 1,5. For undervisning blir overtidstillegget rekna ut frå timeløna for undervisning (§ 6.4), og tillegget er 50 % (§ 6.5.3). Dette er beløpet som blir utbetalt.
+      4. **Feriepengar** blir rekna som vanleg i prosent av det som blir utbetalt: 12 %, eller 14,3 % for arbeidstakarar over 60 år (§ 7.4.2). Dei blir viste som ei ekstraopplysning og er ikkje med i overtidsbetalinga.
 
-      Feriepengar og overtid for deltidstilsette er ikkje med enno.
+      Overtid for deltidstilsette er ikkje med enno.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.4 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.5.3 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
   kontrollert: null
   stikkord: [overtid, fast overtid, overtidsbetaling]

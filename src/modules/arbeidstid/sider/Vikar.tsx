@@ -76,13 +76,12 @@ export default function Vikar() {
       {time.resultat && (
         <>
           <Advarsler advarsler={time.resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.samletLonn')} resultat={time.resultat.samlet} trinn={time.resultat.trinn} sammendrag={false}>
+          <Utregningskort tittel={t('arbeidstid.resultat.utbetaltLonn')} resultat={time.resultat.lonn} trinn={time.resultat.trinn} sammendrag={false}>
             <Oversiktsliste
               rader={[
                 { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, time.resultat.kalkulertTid.verdi, 'timer') },
                 { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, time.resultat.timelonn.verdi, 'kroner_per_time') },
-                { navn: t('arbeidstid.resultat.lonn'), verdi: medEnhet(t, time.resultat.lonn.verdi, 'kroner') },
-                { navn: t('arbeidstid.resultat.feriepenger'), verdi: medEnhet(t, time.resultat.feriepenger.verdi, 'kroner') },
+                { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, time.resultat.feriepenger.verdi, 'kroner') },
               ]}
             />
           </Utregningskort>

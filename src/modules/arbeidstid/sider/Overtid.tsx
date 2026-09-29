@@ -7,7 +7,7 @@ import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
-import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks } from '../komponenter/Skjema.tsx';
+import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
@@ -22,13 +22,14 @@ export default function Overtid() {
     plasser: [tomArsrammeplass()],
     faaElever: false,
     lonn: nyLonnstilstand(),
+    over60: false,
   }));
 
   const valg = s.plasser.map((p) => tilArsrammevalg(p, rader));
   const grunnlag = tilLonnsgrunnlag(s.lonn);
   const { resultat, feil } = prov(() =>
     valg.every((v) => v !== null) && grunnlag && s.beskjeftigelse !== null
-      ? beregnOvertid(hent, { beskjeftigelse: s.beskjeftigelse, arsrammer: valg as Arsrammevalg[], elever: s.faaElever, lonn: grunnlag })
+      ? beregnOvertid(hent, { beskjeftigelse: s.beskjeftigelse, arsrammer: valg as Arsrammevalg[], elever: s.faaElever, lonn: grunnlag, over60: s.over60 })
       : null,
   );
 
@@ -57,6 +58,7 @@ export default function Overtid() {
       </div>
       <div class="fagkort">
         <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
+        <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
       </div>
       {feil && <Feilmelding feil={feil} />}
       {resultat ? (
@@ -69,6 +71,7 @@ export default function Overtid() {
                 { navn: t('arbeidstid.resultat.overtidstimer'), verdi: medEnhet(t, resultat.overtidstimer.verdi, 'arsrammetimer') },
                 { navn: t('arbeidstid.resultat.kalkulertTidOvertid'), verdi: medEnhet(t, resultat.kalkulertTid.verdi, 'timer') },
                 { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, resultat.timelonn.verdi, 'kroner_per_time') },
+                { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, resultat.feriepenger.verdi, 'kroner') },
               ]}
             />
             <div class="med-hjelp liten">

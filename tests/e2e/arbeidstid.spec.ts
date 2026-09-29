@@ -119,8 +119,10 @@ test.describe('arbeidstid', () => {
     await page.getByRole('radio', { name: 'Timevikar' }).check();
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall vikarøkter').fill('10');
-    await expect(resultat(page)).toContainText(/7\s772,44/);
+    await expect(resultat(page)).toContainText(/6\s939,68/);
+    await expect(page.locator('.resultatkort-tittel')).toHaveText('Lønn som utbetales');
     await expect(page.locator('.oversikt')).toContainText('346,98');
+    await expect(page.locator('.oversikt')).toContainText('832,76');
   });
 
   test('periodebeskjeftigelse med tidslinje', async ({ page }) => {
@@ -230,6 +232,7 @@ test.describe('arbeidstid', () => {
     const oversikt = page.locator('.oversikt');
     await expect(oversikt).toContainText('10,5 årsrammetimer');
     await expect(oversikt).toContainText('28 timer');
+    await expect(oversikt).toContainText(/Feriepenger i tillegg\s*1\s748,8 kr/);
     await expect(resultat(page)).toContainText(/14\s573,33/);
     await page.getByRole('switch', { name: '15 eller færre elever i klassen' }).check();
     await expect(oversikt).toContainText('11,55 årsrammetimer');
