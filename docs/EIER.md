@@ -53,7 +53,7 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 **Kjøre sjekken selv:** Åpne **Actions** → **Kildesjekk** → **Run workflow** → la feltet stå tomt → **Run workflow**. Etter et par minutter kommer det et grønt hakemerke. Trykker du på kjøringen, ser du et sammendrag.
 
-**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages en sak under **Issues**, og du får e-post fra GitHub. Neste vanlige kjøring lukker saken automatisk.
+**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages en sak under **Issues**, og du får e-post fra GitHub. Det er alltid bare én sak per kilde: finnes det allerede en åpen sak for kilden, blir den oppdatert og får en kommentar i stedet for at det lages en ny. Neste vanlige kjøring lukker saken automatisk når kilden er i orden.
 
 ## 6. Når du får et kildevarsel
 
