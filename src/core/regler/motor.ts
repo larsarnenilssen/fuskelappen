@@ -1,7 +1,7 @@
 // Regelmotoren: velger periode og nivå for en regelverdi.
 // Rene funksjoner uten avhengighet til grensesnittet. Se docs/ARKITEKTUR.md.
 import type { KildeRef, Kontrollert, Niva } from '../innhold/skjema.ts';
-import type { Regelsett, Regelverdi } from './skjema.ts';
+import type { Regelsett, Regelverdi, Tabellrad } from './skjema.ts';
 
 export interface Regelkontekst {
   /** Datoen verdien skal gjelde for, ÅÅÅÅ-MM-DD. */
@@ -121,6 +121,50 @@ export function finnSupplerende(alle: readonly Regelsett[], nokkel: string, kont
     if (v) grupper[r.gyldighet.niva].push(tilOppslag(r, periode, v));
   }
   return grupper;
+}
+
+/**
+ * Slår sammen regelsett som er delt på flere filer (samme id, ulik «del»).
+ * Delene må ha samme regelverk, periode og gyldighet, og ingen verdinøkkel kan stå i to deler.
+ */
+export function slaaSammen(filer: readonly Regelsett[]): Regelsett[] {
+  const grupper = new Map<string, Regelsett[]>();
+  for (const r of filer) grupper.set(r.id, [...(grupper.get(r.id) ?? []), r]);
+  return [...grupper.values()].map((deler) => {
+    const [forste, ...resten] = deler as [Regelsett, ...Regelsett[]];
+    if (resten.length === 0) return forste;
+    const verdier: Regelsett['verdier'] = { ...forste.verdier };
+    for (const del of resten) {
+      const ulik =
+        del.regelverk !== forste.regelverk ||
+        del.gyldig_fra !== forste.gyldig_fra ||
+        del.gyldig_til !== forste.gyldig_til ||
+        JSON.stringify(del.gyldighet) !== JSON.stringify(forste.gyldighet);
+      if (ulik) throw new Regelfeil(`Delene av ${forste.id} har ulikt regelverk, periode eller gyldighet`);
+      for (const [navn, v] of Object.entries(del.verdier)) {
+        if (navn in verdier) throw new Regelfeil(`${navn} står i flere deler av ${forste.id}`);
+        verdier[navn] = v;
+      }
+    }
+    const samlet: Regelsett = { ...forste, verdier };
+    delete samlet.del;
+    return samlet;
+  });
+}
+
+/** Verdien som tall. Kaster Regelfeil hvis regelsettet har en annen type. */
+export function somTall(o: Oppslag, nokkel = o.regelsett): number {
+  if (typeof o.verdi !== 'number') throw new Regelfeil(`${nokkel} er ikke et tall`);
+  return o.verdi;
+}
+
+/** Verdien som tabell (liste av rader). Kaster Regelfeil hvis regelsettet har en annen type. */
+export function somTabell(o: Oppslag, nokkel = o.regelsett): Tabellrad[] {
+  const v = o.verdi;
+  if (!Array.isArray(v) || v.some((rad) => typeof rad !== 'object' || rad === null || Array.isArray(rad))) {
+    throw new Regelfeil(`${nokkel} er ikke en tabell`);
+  }
+  return v as Tabellrad[];
 }
 
 /** Nasjonale perioder for et regelverk som ikke må overlappe. Brukes i tester. */

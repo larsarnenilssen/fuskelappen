@@ -3,7 +3,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Fylker, Innholdselement, Kilderegister, Synonymer } from '../../src/core/innhold/skjema.ts';
-import { finnOverlapp } from '../../src/core/regler/motor.ts';
+import { finnOverlapp, slaaSammen } from '../../src/core/regler/motor.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 import { lagKilderMd } from '../../scripts/lag-kilder-md.ts';
@@ -32,7 +32,9 @@ const innholdsfiler = [...yamlFiler(join(rot, 'content')), ...yamlFiler(join(rot
 const elementer = innholdsfiler.flatMap((f) => (lesFil(rot, f, false) as Innholdselement[]).map((e) => ({ fil: relative(rot, f), e })));
 
 const regelfiler = [...yamlFiler(join(rot, 'rules')), ...yamlFiler(join(rot, 'tests/fixtures/regler'))];
-const regelsett = regelfiler.map((f) => lesFil(rot, f) as Regelsett);
+const regelfilinnhold = regelfiler.map((f) => lesFil(rot, f) as Regelsett);
+// Regelsett kan være delt på flere filer. slaaSammen kaster hvis delene ikke passer sammen.
+const regelsett = slaaSammen(regelfilinnhold);
 
 describe('kilderegisteret', () => {
   it('er gyldig og har alle kildene fra kapittel 5', () => {
@@ -125,8 +127,8 @@ describe('regelsett', () => {
     expect(finnOverlapp(regelsett)).toEqual([]);
   });
 
-  it('regelsett-id er unik', () => {
-    const ider = regelsett.map((r) => r.id);
+  it('regelsett-id er unik, og hver del finnes bare én gang', () => {
+    const ider = regelfilinnhold.map((r) => `${r.id}|${r.del ?? ''}`);
     expect(new Set(ider).size).toBe(ider.length);
   });
 });

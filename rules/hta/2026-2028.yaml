@@ -1,0 +1,67 @@
+# Hovedtariffavtalen i KS-området 1.5.2026–30.4.2028: verdier som brukes i vikarkalkulatoren.
+# Alle verdier er ikke kontrollert (kontrollert: null) til eier har godkjent dem.
+id: hta-2026-2028
+regelverk: hta
+gyldig_fra: "2026-05-01"
+gyldig_til: "2028-04-30"
+kilde: ks-hovedtariffavtalen
+verdier:
+  timelonn_konstant:
+    verdi: 1400
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    kontrollert: null
+    merknad: >-
+      Timelønn for undervisningspersonale = (årslønn × 1400 × 100) ÷ (årsramme × 1687,5 × 112).
+      1400 ÷ årsramme er tiden som beregnes for én undervisningstime på 60 minutter, med for- og etterarbeid.
+  timelonn_arsverk_timer:
+    verdi: 1687.5
+    enhet: timer
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    kontrollert: null
+  timelonn_ferie_teller:
+    verdi: 100
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    kontrollert: null
+    merknad: Brøken 100/112 i formelen trekker feriepengene ut av timelønnen. Feriepenger beregnes for seg.
+  timelonn_ferie_nevner:
+    verdi: 112
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    kontrollert: null
+  feriepenger_prosent:
+    verdi: 12
+    enhet: prosent
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
+    kontrollert: null
+  feriepenger_prosent_over_60:
+    verdi: 14.3
+    enhet: prosent
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
+    kontrollert: null
+    merknad: For arbeidstakere over 60 år.
+  overtidstillegg_prosent:
+    verdi: 50
+    enhet: prosent
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.5.3 }
+    kontrollert: null
+    merknad: >-
+      Overtidstillegg for dagarbeidstid til vanlig tid. For undervisning regnes tillegget ut fra timelønnen for
+      undervisning i § 12.4 (§ 6.4). Overtidsbetaling blir da 1,5 × timelønn (eier 29.09.2026).
+  garantilonn:
+    enhet: kroner per år
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
+    kontrollert: null
+    merknad: >-
+      Garantilønn (laveste årslønn) per 1.5.2026 etter ansiennitet, for stillingsgruppene i undervisning.
+      Navnene er gjengitt slik de står i avtalen.
+    verdi:
+      - { id: laerer, navn: "Lærer og stillinger med krav om 3-årig U/H-utdanning", ar_0: 545400, ar_6: 558400, ar_8: 568600, ar_10: 620800, ar_16: 639900 }
+      - { id: adjunkt, navn: "Adjunkt og stillinger med krav om 4-årig U/H-utdanning", ar_0: 586400, ar_6: 601800, ar_8: 622000, ar_10: 647900, ar_16: 673200 }
+      - { id: adjunkt-tillegg, navn: "Adjunkt med tilleggsutdanning og stillinger med krav om 5-årig U/H-utdanning", ar_0: 624700, ar_6: 638900, ar_8: 652300, ar_10: 686000, ar_16: 735300 }
+      - { id: lektor, navn: "Lektor og stillinger med krav om mastergrad", ar_0: 655800, ar_6: 676700, ar_8: 687500, ar_10: 723100, ar_16: 797500 }
+      - { id: lektor-tillegg, navn: "Lektor med tilleggsutdanning", ar_0: 676200, ar_6: 697400, ar_8: 711000, ar_10: 746600, ar_16: 833300 }
+  garantilonn_ansiennitet:
+    verdi: [0, 6, 8, 10, 16]
+    enhet: år
+    kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
+    kontrollert: null
+    merknad: Ansiennitetstrinnene i tabellen. Kolonnene i garantilonn heter ar_<trinn>.

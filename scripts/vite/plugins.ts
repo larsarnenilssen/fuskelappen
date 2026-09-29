@@ -60,11 +60,12 @@ export function testoppsettPlugin(mode: string): Plugin {
     load(lastId) {
       if (lastId !== '\0' + id) return null;
       if (!medTest) {
-        return 'export const ekstraModuler = {}; export const ekstraBegreper = {}; export const utvikling = false;';
+        return 'export const ekstraModuler = {}; export const ekstraBegreper = {}; export const ekstraRegelsett = {}; export const utvikling = false;';
       }
       return [
         `export const ekstraModuler = import.meta.glob('/tests/fixtures/moduler/*/index.ts', { eager: true, import: 'manifest' });`,
         `export const ekstraBegreper = import.meta.glob('/tests/fixtures/innhold/begreper/*.yaml', { import: 'default' });`,
+        `export const ekstraRegelsett = import.meta.glob('/tests/fixtures/regler/*.yaml', { eager: true, import: 'default' });`,
         `export const utvikling = true;`,
       ].join('\n');
     },
