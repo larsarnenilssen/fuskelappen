@@ -51,8 +51,10 @@ describe('kode', () => {
     expect(brudd).toEqual([]);
   });
 
-  it('appnavnet er definert ett sted', () => {
+  it('appnavnet er definert ett sted', async () => {
+    const { app } = await import('../../src/config/app.ts');
     const html = readFileSync(join(rot, 'index.html'), 'utf8');
-    expect(html).not.toMatch(/Protokollen/);
+    expect(html).not.toMatch(new RegExp(app.navn));
+    expect(readFileSync(join(rot, 'README.md'), 'utf8').split('\n')[0]).toBe(`# ${app.navn}`);
   });
 });

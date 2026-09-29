@@ -25,6 +25,9 @@ export const manifest: Modulmanifest = {
         rute: '/testmodul',
         modul: 'testmodul',
       },
+      // Samme tekst i nb og nn, slik at testene viser at søket normaliserer mellom målformene.
+      { id: 'testmodul:bibliotek', type: 'funksjon', tittel: { nb: 'Skolebibliotek', nn: 'Skolebibliotek' }, rute: '/testmodul', modul: 'testmodul' },
+      { id: 'testmodul:skyss', type: 'funksjon', tittel: { nb: 'Skuleskyss', nn: 'Skuleskyss' }, rute: '/testmodul', modul: 'testmodul' },
     ];
   },
   async favorittbare() {

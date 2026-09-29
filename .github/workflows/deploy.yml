@@ -1,0 +1,114 @@
+# Publiserer en versjon til GitHub Pages.
+#
+# - Når en versjonstag (vX.Y.Z) pushes, startes publiseringen av den taggen.
+# - Manuelt (Actions → Publiser → Run workflow): skriv en tag for å publisere eller rulle tilbake
+#   til en bestemt versjon. Tomt felt publiserer siste versjon.
+# - Kildesjekken kaller denne arbeidsflyten hver uke, slik at kildestatusen på Pages er fersk.
+#
+# Koden bygges alltid fra taggen. Bare data/status/kildestatus.json hentes fra main.
+# Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
+name: Publiser
+
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Versjon som skal publiseres, f.eks. v0.1.0. La stå tomt for siste versjon.'
+        required: false
+        default: ''
+  workflow_call:
+    inputs:
+      tag:
+        type: string
+        required: false
+        default: ''
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  videresend:
+    name: Start publisering fra main
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY" --ref main -f tag="$GITHUB_REF_NAME"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  bygg:
+    name: Bygg
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      tag: ${{ steps.versjon.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Finn versjon
+        id: versjon
+        env:
+          ONSKET: ${{ inputs.tag }}
+        run: |
+          if [ -n "$ONSKET" ]; then
+            TAG="$ONSKET"
+          else
+            TAG=$(git tag --list 'v*.*.*' --sort=-v:refname | head -n 1)
+          fi
+          if [ -z "$TAG" ]; then
+            echo "::notice::Ingen versjon er publisert ennå. Hopper over."
+          elif ! git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            echo "::error::Fant ikke versjonen $TAG."
+            exit 1
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+      - name: Hent koden for versjonen, med fersk kildestatus fra main
+        if: steps.versjon.outputs.tag != ''
+        env:
+          TAG: ${{ steps.versjon.outputs.tag }}
+        run: |
+          cp data/status/kildestatus.json "$RUNNER_TEMP/kildestatus.json"
+          git checkout --quiet "$TAG"
+          cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
+          VERSJON=$(node -p "require('./package.json').version")
+          if [ "v$VERSJON" != "$TAG" ]; then
+            echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
+            exit 1
+          fi
+      - uses: actions/setup-node@v5
+        if: steps.versjon.outputs.tag != ''
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - if: steps.versjon.outputs.tag != ''
+        run: npm ci
+      - if: steps.versjon.outputs.tag != ''
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        if: steps.versjon.outputs.tag != ''
+        with:
+          path: dist
+
+  publiser:
+    name: Publiser til GitHub Pages
+    needs: bygg
+    if: needs.bygg.outputs.tag != ''
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
+    steps:
+      - id: pages
+        uses: actions/deploy-pages@v4

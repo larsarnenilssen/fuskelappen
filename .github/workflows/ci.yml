@@ -1,0 +1,42 @@
+# Lint, typesjekk, tester, bygg og ende-til-ende-tester på hver PR og hver push til main.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Test og bygg
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - name: Bygg (med sjekk av startpakkens størrelse)
+        run: npm run build
+      - name: Installer nettlesere for Playwright
+        run: npx playwright install --with-deps chromium webkit
+      - name: Ende-til-ende-tester (Chromium og WebKit)
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
