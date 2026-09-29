@@ -86,6 +86,18 @@ describe('fagsøk', () => {
     expect(sokFag(indeks, 'HEA2005')[0]?.ekstra.join(' ')).toContain('HEA2005 Helsefremmende arbeid');
   });
 
+  it('tar med fagkoden når søket peker på ett bestemt fag i raden', () => {
+    expect(sokFag(indeks, 'HEA2005')[0]?.fagkoder).toEqual(['HEA2005']);
+    // Faget finnes på Vg1 (HSF1006) og Vg2 (HEA2005 m.fl.): hvert treff får fagkodene på sitt trinn.
+    const koder = sokFag(indeks, 'helsefremmende arbeid').flatMap((t) => t.fagkoder ?? []);
+    expect(koder).toEqual(expect.arrayContaining(['HSF1006', 'HEA2005']));
+    expect(sokFag(indeks, 'ENG1007')[0]?.fagkoder).toEqual(['ENG1007']);
+    // Søk på program, prefiks eller fellesfag uten kode gir ingen bestemte fagkoder.
+    expect(sokFag(indeks, 'HEA')[0]?.fagkoder).toBeUndefined();
+    expect(sokFag(indeks, 'engelsk vg1')[0]?.fagkoder).toBeUndefined();
+    expect(sokFag(indeks, 'BAT')[0]?.fagkoder).toBeUndefined();
+  });
+
   it('gir ingen treff for tomt eller ukjent søk', () => {
     expect(sokFag(indeks, '')).toEqual([]);
     expect(sokFag(indeks, 'finnesikke')).toEqual([]);

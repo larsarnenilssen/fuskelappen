@@ -1162,6 +1162,12 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
+.fagvalg-kode {
+  flex-basis: 100%;
+  order: 1;
+  font-size: var(--str-s);
+}
+
 .fagvalg-ramme {
   font-size: var(--str-s);
   color: var(--farge-tekst-dempet);

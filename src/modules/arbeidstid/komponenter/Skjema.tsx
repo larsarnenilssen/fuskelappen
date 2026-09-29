@@ -1,6 +1,7 @@
 // Skjemadeler for kalkulatorene: brytere, fagsøk med årsramme fra vedlegg 1, og kort for hvert fag.
 import type { ComponentChildren } from 'preact';
 import { useId, useMemo, useState } from 'preact/hooks';
+import grepArstimer from '../../../../data/grep/arstimer.json';
 import fagkoder from '../../../../data/grep/fagkoder.json';
 import programomrader from '../../../../data/grep/programomrader.json';
 import { useTekst } from '../../../app/tilstand.ts';
@@ -81,6 +82,30 @@ export interface Arsrammeplass {
   valg: string;
   t60: number | null;
   stjerne: boolean;
+  /** Fagkodene i Grep når brukeren søkte fram ett bestemt fag i raden (f.eks. HEA2005). */
+  fagkoder?: string[] | null;
+}
+
+const arstimerForFagkode = (grepArstimer as unknown as { arstimer: Record<string, number | null> }).arstimer;
+let fagkodenavn: Map<string, string> | null = null;
+
+/** Navnet på en fagkode i Grep, f.eks. «Helsefremmende arbeid» for HEA2005. */
+export function navnForFagkode(kode: string): string | undefined {
+  fagkodenavn ??= new Map(Object.values((fagkoder as unknown as { fagkoder: Fagkoder }).fagkoder).flat());
+  return fagkodenavn.get(kode);
+}
+
+/**
+ * Kjent årstimetall for et valg: fra fagkoden brukeren søkte fram (Grep), ellers fra årstimetabellen for raden.
+ * Undefined når årstimetallet ikke er kjent (f.eks. et programfag på yrkesfag uten valgt fagkode).
+ */
+export function kjentArstimer(plass: Arsrammeplass | undefined, tabell: ReadonlyMap<number, Arstimerad> | undefined): Arstimerad | undefined {
+  if (!plass?.valg || plass.valg === 'manuell') return undefined;
+  // Fagkodene må ha samme årstimetall (samme fag i flere programområder), ellers brukes tabellen for raden.
+  const tall = (plass.fagkoder ?? []).map((k) => arstimerForFagkode[k]);
+  const forste = tall[0];
+  if (plass.fagkoder && typeof forste === 'number' && tall.every((t) => t === forste)) return { arstimer: forste, fagkoder: plass.fagkoder };
+  return tabell?.get(Number(plass.valg));
 }
 
 export function tomArsrammeplass(): Arsrammeplass {
@@ -212,6 +237,11 @@ export function Fagvelger({
             {valgt.navn}
             {valgt.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
           </span>
+          {plass.fagkoder && plass.fagkoder.length > 0 && (
+            <span class="fagvalg-kode">
+              {plass.fagkoder.join(', ')} {navnForFagkode(plass.fagkoder[0] as string) ?? ''}
+            </span>
+          )}
           <span class="fagvalg-ramme tall">{t('arbeidstid.felles.arsrammeKort', { t60: formaterTall(valgt.t60), t45: formaterTall(valgt.t45) })}</span>
           <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())} aria-label={`${t('arbeidstid.felles.endreFag')}: ${valgt.navn}`}>
             {t('arbeidstid.felles.endreFag')}
@@ -251,7 +281,7 @@ export function Fagvelger({
       <ul id={`${id}-treff`} class="fagtreff" aria-live="polite">
         {treff.map((tr) => (
           <li key={tr.rad.nr}>
-            <button type="button" onClick={() => onEndring({ valg: String(tr.rad.nr), t60: null, stjerne: false })}>
+            <button type="button" onClick={() => onEndring({ valg: String(tr.rad.nr), t60: null, stjerne: false, fagkoder: tr.fagkoder ?? null })}>
               <span class="fagtreff-navn">
                 {tr.fag ?? tr.rad.kategori} · {tr.program} {tr.rad.trinn}
                 {tr.rad.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
@@ -394,9 +424,9 @@ export function autoArstimer(
   arsrammer: readonly Arsrammeplass[],
   tabell: ReadonlyMap<number, Arstimerad> | undefined,
 ): Partial<Gruppetilstand> {
-  const ny = arsrammer[0]?.valg;
-  if (ny === gruppe.arsrammer[0]?.valg || !(gruppe.arstimer === null || gruppe.arstimerAuto)) return {};
-  const kjent = ny && ny !== 'manuell' ? tabell?.get(Number(ny)) : undefined;
+  const nokkel = (p: Arsrammeplass | undefined) => `${p?.valg ?? ''}|${(p?.fagkoder ?? []).join(',')}`;
+  if (nokkel(arsrammer[0]) === nokkel(gruppe.arsrammer[0]) || !(gruppe.arstimer === null || gruppe.arstimerAuto)) return {};
+  const kjent = kjentArstimer(arsrammer[0], tabell);
   if (kjent) return { arstimer: kjent.arstimer, arstimerAuto: true };
   return gruppe.arstimerAuto ? { arstimer: null, arstimerAuto: false } : {};
 }
@@ -428,8 +458,7 @@ export function Gruppekort({
 }) {
   const { t } = useTekst();
   const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
-  const forste = gruppe.arsrammer[0]?.valg;
-  const kjent = forste && forste !== 'manuell' ? arstimer?.get(Number(forste)) : undefined;
+  const kjent = kjentArstimer(gruppe.arsrammer[0], arstimer);
   return (
     <fieldset class="fagkort" data-gruppe={nr}>
       <legend class="fagkort-tittel">

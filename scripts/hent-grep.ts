@@ -2,8 +2,9 @@
 // arbeidstidskalkulatorene bruker for å kjenne igjen koder som BAT (Bygg- og anleggsteknikk Vg1),
 // HEA (helsearbeiderfag Vg2) og fagnavn som «Helsefremmende arbeid» (HEA2005).
 // Programområdekoden er utdanningsprogram (2 bokstaver) + fagkodeprefiks (3 bokstaver) + trinn, f.eks. BABAT1----.
-// Årstimetallet (omfang-totalt) for fagkodene i rules/sfs2213/arstimer-*.yaml hentes til data/grep/arstimer.json,
-// slik at en test kan se om Grep har endret tallene. Resten av Grep-hentingen (læreplaner) kommer i fase 2.
+// Årstimetallet (omfang-totalt) for fagkodene i rules/sfs2213/arstimer-*.yaml og for alle fagkodene fagsøket kjenner,
+// hentes til data/grep/arstimer.json. En test ser om Grep har endret tallene i tabellen, og kalkulatorene fyller inn
+// årstimer for en fagkode brukeren har søkt fram (f.eks. HEA2005). Resten av Grep-hentingen (læreplaner) kommer i fase 2.
 // Bruk: npm run hent:grep
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -108,9 +109,17 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   writeFileSync(fagfil, `{\n  ${hode},\n  "fagkoder": {\n${fagLinjer.join(',\n')}\n  }\n}\n`);
   console.log(`Skrev ${fagfil} (${antallFag} fagkoder).`);
 
-  const koder = arstimeFagkoder();
+  // Årstimer for fagkodene i årstimetabellen og for alle fagkodene fagsøket kjenner (programfag på yrkesfag o.l.).
+  const koder = [...new Set([...arstimeFagkoder(), ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
   const arstimer: Record<string, number | null> = {};
-  for (const kode of koder) arstimer[kode] = await omfang(kode);
+  for (let i = 0; i < koder.length; i += 8) {
+    const bolk = koder.slice(i, i + 8);
+    const svar = await Promise.all(bolk.map((k) => omfang(k)));
+    bolk.forEach((k, j) => (arstimer[k] = svar[j] ?? null));
+  }
+  const medTall = Object.values(arstimer).filter((v) => v !== null).length;
+  // Eksamenskoder og fag i læretiden har ikke årstimer i Grep, så omtrent halvparten mangler tall.
+  if (medTall < 300) throw new Error(`Fikk årstimer for bare ${medTall} av ${koder.length} fagkoder. Beholder forrige fil.`);
   const timefil = join(rot, 'data/grep/arstimer.json');
   const timeLinjer = Object.entries(arstimer).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
   writeFileSync(timefil, `{\n  ${hode},\n  "arstimer": {\n${timeLinjer.join(',\n')}\n  }\n}\n`);

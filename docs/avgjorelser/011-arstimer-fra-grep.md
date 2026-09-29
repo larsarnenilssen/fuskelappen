@@ -9,3 +9,5 @@
 - I skjemaet fylles tallet inn når faget velges, så lenge brukeren ikke har skrevet inn timene selv. En kort tekst viser at tallet kommer fra Udir, og hvilken fagkode det gjelder.
 
 **Konsekvens:** Nye rader eller fagkoder legges til i regelfilen. Fase 2 kan bygge den fulle koblingen fra fagkode til årsramme og erstatte den håndlagde tabellen.
+
+**Tillegg (programfag):** Søker brukeren fram et bestemt fag, for eksempel HEA2005 eller «Helsefremmende arbeid», følger fagkodene med valget. Årstimetallet hentes da direkte fra Grep for fagkoden. `data/grep/arstimer.json` har omfanget for alle fagkodene fagsøket kjenner. Samme fag kan ha samme navn i flere programområder. Da brukes tallet bare når alle kodene har det samme årstimetallet. Bare bokstavene i en kode (HEA, BAT) peker på programområdet og ikke på ett fag, så de gir ikke noe tall. Slik får programfagene på yrkesfag årstimer uten at noen må kontrollere en tabell for hånd.

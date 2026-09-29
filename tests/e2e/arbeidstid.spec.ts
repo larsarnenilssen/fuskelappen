@@ -325,6 +325,14 @@ test.describe('arbeidstid', () => {
     await expect(timer).toHaveValue('120');
   });
 
+  test('årstimer for et programfag fylles inn når fagkoden er søkt fram', async ({ page }) => {
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await velgFag(page, 'HEA2005', 'Helse- og oppvekstfag Vg2');
+    await expect(page.locator('.fagvalg-kode')).toContainText('HEA2005 Helsefremmende arbeid');
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('197');
+    await expect(page.getByText(/Årstimetall for elevene fra Udir \(HEA2005\)/)).toBeVisible();
+  });
+
   test('årstimene fylles inn også i periode, fordeling og stillingsplan', async ({ page }) => {
     for (const [rute, etikett] of [
       ['/arbeidstid/periode', 'Antall timer i perioden'],
