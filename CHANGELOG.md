@@ -4,6 +4,28 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.2.0] – 2026-09-29
+
+Fase 1: arbeidstid etter SFS 2213. Alle regelverdier og tekster er merket «Ikke kontrollert» til eier har godkjent dem.
+
+### Lagt til
+
+- Modulen **Arbeidstid (SFS 2213)** med hurtigkalkulatorer på forsiden:
+  - Beskjeftigelse for ett eller flere fag, med blandede grupper (laveste årsramme) og fag merket * med 1–15 elever.
+  - Periodebeskjeftigelse for undervisning i en del av skoleåret.
+  - Vikartimer: økt beskjeftigelse for ansatte i stilling, og lønn for timevikarer med kalkulert tid, timelønn og feriepenger.
+  - Planfestet arbeidstid ved funksjoner og andre oppgaver, med utvidelse av arbeidsåret over 37,5 timer i uka.
+  - Overtid ved beskjeftigelse over 100 %, betalt med 1,5 × timelønn for undervisning.
+  - Fordeling av arbeidstiden i en tenkt stilling, med diagram, møtetid og forklaring av hva tiden brukes til.
+- Hvert resultat viser utregningen trinn for trinn, med formel, tall, kilde og nivå for hver verdi, og en forklaring av metoden.
+- Vedlegg 1 til SFS 2213 (årsrammer i videregående) og verdier fra SFS 2213 og hovedtariffavtalen 2026–2028 som regelsett.
+- Begrepsbanken er tatt i bruk, med begreper om arbeidstid.
+- Kildesjekk av avtaleteksten til SFS 2213, hovedtariffavtalen og arbeidsmiljøloven kapittel 10.
+
+### Rettet
+
+- Søket kunne få to oppføringer for samme begrep når begrepet finnes både nasjonalt og lokalt.
+
 ## [0.1.3] – 2026-09-29
 
 ### Rettet

@@ -97,3 +97,31 @@ Kryss av mens du tester på telefonen:
 - [ ] **Tekster:** Les «Om appen» (ansvarsfraskrivelse, personvern, kreditering) på bokmål og nynorsk.
 
 Skriv til Claude hva som var bra og hva som bør endres.
+
+## 9. Sjekkliste for kontrollpunktet i fase 1
+
+Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godkjenner ved å skrive til Claude hva som er kontrollert, med dato. Claude legger da inn datoen.
+
+**Kildene (etter at endringsforslaget er slått sammen):**
+
+- [ ] Kjør kildesjekken (punkt 5). Du får tre saker om nye fingeravtrykk: avtaleteksten til SFS 2213, hovedtariffavtalen og arbeidsmiljøloven kapittel 10. Åpne lenkene og se at det er riktig dokument. Skriv så til Claude: «Godkjent fingeravtrykk for ks-sfs2213-avtaletekst, ks-hovedtariffavtalen og arbeidsmiljoloven».
+
+**Regelverdiene** (filene ligger i mappen `rules/` på GitHub, men du kan like gjerne kontrollere dem i appen under «Vis utregning»):
+
+- [ ] SFS 2213: årsverk 1687,5 (1650 fra 60 år), 6 ekstra dager à 7,5 timer, planfestet tid 1150, høyst 9 timer per dag og 37,5 per uke, årsramme 607,5 ved funksjon, tillegg 52,5 for fag merket * med 1–15 elever, kontaktlærer 28,5, skoleår 190 dager og 38 uker, 5 arbeidsdager per uke.
+- [ ] Vedlegg 1: årsrammene for videregående (151 rader). Se særlig blokken 525/700, der vedlegget har overskriften «Felles programfag» over fellesfag.
+- [ ] Hovedtariffavtalen: 1400, 1687,5 og 100/112 i § 12.4, feriepenger 12 % og 14,3 %, overtidstillegg 50 %, garantilønn fra 1.5.2026.
+
+**Kalkulatorene** (på telefonen, under Hjem → Hurtigkalkulatorer):
+
+- [ ] Beskjeftigelse: prøv ett fag, et fag merket * med under 16 elever, to fag, og en time med elever fra to nivåer.
+- [ ] Periodebeskjeftigelse, vikartimer (ansatt og timevikar), planfestet tid (20 % og 80 %), overtid og fordeling.
+- [ ] Trykk «Vis utregning» og «Slik regnes det ut». Er metoden og formlene forståelige og riktige?
+- [ ] Velg Vestland og en skole under Innstillinger. Ingen ekte lokale avtaler er lagt inn ennå, så verdiene skal fortsatt være nasjonale.
+
+**Tekstene:**
+
+- [ ] Begrepene under Oppslag → Begreper, på bokmål og nynorsk.
+- [ ] «Hva tiden brukes til» under Fordeling, særlig «Annen planfestet tid og annet elevrettet arbeid».
+
+Skriv til Claude hva som er riktig, og hva som må endres.

@@ -71,9 +71,20 @@ Innhold og regelverdier har et nivå (`nasjonal`, `fylke`, `skole`) og, for loka
 - **erstatter:** lokal verdi gjelder i stedet for den generelle. Rekkefølge ved oppslag: skole → fylke → nasjonal.
 - **supplerer:** lokal regel gjelder i tillegg. Vises samlet, gruppert etter nivå.
 
+Et regelsett kan være delt på flere filer med samme `id` (feltet `del`), og en regelverdi kan være en tabell, som årsrammene i vedlegg 1 til SFS 2213 ([avgjørelse 007](avgjorelser/007-regelsett-i-flere-filer-og-tabeller.md)). I utvikling og testing lastes også testregelsettene i `tests/fixtures/regler/`, slik at lokale testverdier kan prøves i appen.
+
 `hentVerdi(nokkel, kontekst)` i `src/core/regler/` velger periode (etter dato, eller valgt av brukeren) og nivå, og returnerer `{ verdi, enhet, niva, kilde, kontrollert, periode }`. Grensesnittet merker verdier som ikke er nasjonale (`Nivamerke`) og verdier som ikke er kontrollert (`Statusmerke`).
 
 For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises for valgt fylke og skole. Uten valgt fylke vises bare nasjonalt innhold, med merknad om at lokale regler kan gjelde.
+
+## Arbeidstid (SFS 2213)
+
+`src/modules/arbeidstid/` har kalkulatorene for beskjeftigelse, periodebeskjeftigelse, vikartimer, planfestet arbeidstid, overtid og fordeling av arbeidstiden.
+
+- Beregningene i `beregning/` er rene funksjoner. De får regelverdiene gjennom en `Hent`-funksjon (i appen `hentVerdi()` med brukerens dato, fylke og skole), så ingen tariff- eller lovverdier står i koden.
+- Hver beregning gir resultatet og **trinnene** i utregningen. Et trinn har en id, operandene (verdi, enhet, og om verdien kommer fra regelverket, en tabell, brukeren eller et tidligere trinn) og resultatet. Teksten og formelen for hvert trinn står i `src/strings/moduler/arbeidstid.*.ts` med plassholdere, f.eks. `{arstimer} ÷ {arsramme} × 100`. Appen fyller formelen inn to ganger: med navn og med tall. Kilde og nivå vises for hver regelverdi.
+- **Rette en utregning:** tall rettes i `rules/`, formeltekster i `src/strings/`, metodebeskrivelser i `content/arbeidstid/metoder.yaml`, og selve regnestykket i `beregning/`. Fasittestene (`tests/fasit/sfs2213/`) viser om svarene fortsatt stemmer.
+- Mellomregninger avrundes ikke. Svar vises med to desimaler.
 
 ## Lagring og personvern
 
@@ -98,7 +109,10 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
 1. `scripts/kilder/sjekk.ts` sjekker de aktive kildene:
    - `side`: henter siden, trekker ut delen `uttrekk.selektor` peker på, normaliserer teksten og lager et fingeravtrykk (SHA-256). Avviker det fra `godkjent_fingeravtrykk`, blir status `endret`.
    - `nsr`: henter aktive videregående skoler fra Nasjonalt skoleregister til `data/skoler/vgs.json`. Oppdateres automatisk, med endringsrapport i jobbsammendraget.
-   - `lovdata` og `grep` lages når kildene tas i bruk (fase 1 og 2).
+   - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
+   - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen.
+   - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.
+   - `grep` lages i fase 2. Se [avgjørelse 008](avgjorelser/008-kildesjekk-for-avtaletekst-pdf-og-lovdata.md).
 2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
 3. `scripts/kilder/varsle.ts` oppretter én sak per kilde (etikett `kilde`) ved endring eller feil, oppdaterer den når tilstanden endres, og lukker den når kilden er i orden igjen.
 4. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil. Koden på Pages endres bare ved ny versjon.
