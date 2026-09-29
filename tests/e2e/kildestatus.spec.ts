@@ -1,0 +1,62 @@
+import { expect, test, type Page } from '@playwright/test';
+
+function status(kjort: Date, ...statuser: ('ok' | 'endret' | 'feilet')[]) {
+  return {
+    skjema: 1,
+    kjort: kjort.toISOString(),
+    kilder: Object.fromEntries(
+      statuser.map((s, i) => [
+        i === 0 ? 'ks-sfs2213' : 'udir-nsr',
+        { status: s, sjekket: kjort.toISOString(), fingeravtrykk: null, endret_siden: null, melding: null },
+      ]),
+    ),
+  };
+}
+
+async function medStatus(page: Page, data: unknown | null) {
+  await page.route('**/data/status/kildestatus.json', (r) =>
+    data === null ? r.fulfill({ status: 404, body: '' }) : r.fulfill({ json: data }),
+  );
+}
+
+const dagerSiden = (d: number) => new Date(Date.now() - d * 24 * 60 * 60 * 1000);
+
+test.describe('kildestatus', () => {
+  test('viser ok når siste kjøring er fersk og alt er i orden', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(2), 'ok', 'ok'));
+    await page.goto('./');
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'ok');
+  });
+
+  test('viser utdatert når statusfilen er eldre enn 14 dager', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(15), 'ok', 'ok'));
+    await page.goto('./');
+    const indikator = page.locator('.indikator');
+    await expect(indikator).toHaveAttribute('data-status', 'utdatert');
+    await expect(indikator).toHaveAccessibleName('Kildestatus: utdatert');
+    await indikator.click();
+    await expect(page.getByTestId('samlet-kildestatus')).toHaveAttribute('data-status', 'utdatert');
+    await expect(page.getByText('Det er mer enn 14 dager siden kildene ble sjekket.', { exact: false })).toBeVisible();
+  });
+
+  test('viser endret og feilet', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(1), 'endret', 'ok'));
+    await page.goto('./');
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'endret');
+    await page.unroute('**/data/status/kildestatus.json');
+  });
+
+  test('viser ukjent når statusfilen mangler', async ({ page }) => {
+    await medStatus(page, null);
+    await page.goto('./#/om/kilder');
+    await expect(page.getByTestId('samlet-kildestatus')).toHaveAttribute('data-status', 'ukjent');
+    await expect(page.getByText('Kildestatus er ikke tilgjengelig akkurat nå.')).toBeVisible();
+  });
+
+  test('kildesiden lister kildene fra kilderegisteret', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(1), 'ok', 'ok'));
+    await page.goto('./#/om/kilder');
+    await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('alt i orden');
+    await expect(page.locator('[data-kilde="opplaeringslova"]')).toContainText('sjekkes ikke ennå');
+  });
+});

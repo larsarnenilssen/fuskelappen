@@ -1,0 +1,185 @@
+# Kilderegister. docs/KILDER.md genereres fra denne filen (npm run kilder:dokumenter).
+#
+# sjekkmetode:  side | lovdata | grep | nsr | ingen
+# aktiv:        true når kildejobben skal sjekke kilden. Kilder aktiveres i fasen der de tas i bruk.
+# uttrekk:      for sjekkmetode «side»: hvilken del av siden som sammenlignes.
+# godkjent_fingeravtrykk: settes bare av eier, eller etter eksplisitt beskjed fra eier.
+kilder:
+  - id: ks-sfs2213
+    navn: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller
+    utgiver: KS
+    url: https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/
+    type: side
+    niva: nasjonal
+    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: article.theme-card
+      inneholder: SFS 2213
+    godkjent_fingeravtrykk: null
+    faser: [1, 2, 3]
+    merknad: >-
+      Fase 0 sjekker KS-oversikten over særavtaler. Selve avtaleteksten ligger hos KF Infoserie
+      og får egen sjekk i fase 1.
+
+  - id: ks-hovedtariffavtalen
+    navn: Hovedtariffavtalen
+    utgiver: KS
+    url: https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/
+    type: side
+    niva: nasjonal
+    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: false
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [1, 3]
+
+  - id: arbeidsmiljoloven
+    navn: Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2005-06-17-62
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovdata
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [1, 3]
+
+  - id: opplaeringslova
+    navn: Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2023-06-09-30
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovdata
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [4, 5, 6, 7, 8]
+
+  - id: opplaeringsforskrifta
+    navn: Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta), med vurderingsreglane
+    utgiver: Lovdata
+    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovdata
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [4, 5, 6, 7, 8]
+    merknad: Lenken går foreløpig til Udirs gjengivelse. Lovdata-adressen settes når kilden aktiveres.
+
+  - id: udir-grep
+    navn: Grep – fag, læreplaner, vurderingsordninger og årstimetall
+    utgiver: Utdanningsdirektoratet
+    url: https://data.udir.no/kl06/v201906/
+    type: grep
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: grep
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [2, 3, 6]
+
+  - id: udir-veileder-tilpasset-opplaering
+    navn: Veileder om tilpasset opplæring og individuell tilrettelegging
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: false
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+
+  - id: udir-overordnet-del
+    navn: Overordnet del – verdier og prinsipper for grunnopplæringen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/lk20/overordnet-del/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: false
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4, 6]
+
+  - id: vlfk-forskrift-inntak
+    navn: Lokal forskrift om inntak til vidaregåande opplæring, Vestland fylkeskommune
+    utgiver: Vestland fylkeskommune (Lovdata)
+    url: https://www.vlfk.no/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: NLOD 2.0
+    sjekkmetode: lovdata
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
+
+  - id: vlfk-skulereglar
+    navn: Skulereglar for dei vidaregåande skulane i Vestland fylkeskommune
+    utgiver: Vestland fylkeskommune (Lovdata)
+    url: https://www.vlfk.no/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: NLOD 2.0
+    sjekkmetode: lovdata
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [7]
+    merknad: Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
+
+  - id: vlfk-sider
+    navn: vlfk.no – sider om inntak, tilrettelegging og språkopplæring
+    utgiver: Vestland fylkeskommune
+    url: https://www.vlfk.no/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: false
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4, 5]
+    merknad: Hvilke sider som sjekkes, bestemmes når kilden aktiveres.
+
+  - id: udir-nsr
+    navn: Nasjonalt skoleregister (NSR)
+    utgiver: Utdanningsdirektoratet
+    url: https://data-nsr.udir.no/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: nsr
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [0]
+    merknad: Skolelisten i innstillingene. Oppdateres automatisk; varsel bare ved feil.
+
+  - id: ssb-fylkesinndeling
+    navn: Standard for fylkesinndeling
+    utgiver: Statistisk sentralbyrå
+    url: https://www.ssb.no/klass/klassifikasjoner/104
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [0]
+    merknad: Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.

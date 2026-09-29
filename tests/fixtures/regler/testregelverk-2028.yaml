@@ -1,0 +1,8 @@
+id: testregelverk-2028
+regelverk: testregelverk
+gyldig_fra: "2028-01-01"
+gyldig_til: "2028-12-31"
+kilde: ks-sfs2213
+verdier:
+  arsverk_timer: { verdi: 1100, enhet: timer, kilde: { id: ks-sfs2213 }, kontrollert: null }
+  uker: { verdi: 39, enhet: uker, kilde: { id: ks-sfs2213 }, kontrollert: null }

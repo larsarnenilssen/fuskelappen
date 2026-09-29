@@ -1,0 +1,869 @@
+/* Grunnstil og layout. Farger hentes bare fra variablene i tema.css. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--farge-bakgrunn);
+  color: var(--farge-tekst);
+  font-family: var(--font-tekst);
+  font-size: 100%;
+  line-height: var(--linjehoyde);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--farge-bakgrunn);
+  overscroll-behavior-y: none;
+  overflow-wrap: break-word;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: var(--rom-5) 0 var(--rom-3);
+}
+
+h1 {
+  font-size: var(--str-xxl);
+  margin-top: var(--rom-4);
+}
+
+h2 {
+  font-size: var(--str-xl);
+}
+
+h3 {
+  font-size: var(--str-l);
+}
+
+h1:focus {
+  outline: none;
+}
+
+h1:focus-visible {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: 2px;
+}
+
+p {
+  margin: 0 0 var(--rom-3);
+}
+
+a {
+  color: var(--farge-lenke);
+  text-underline-offset: 0.15em;
+}
+
+:focus-visible {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: 2px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+.skjult-visuelt {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.dempet {
+  color: var(--farge-tekst-dempet);
+}
+
+.liten {
+  font-size: var(--str-s);
+}
+
+.tall {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Skall ---------- */
+
+.skall {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hopp {
+  position: absolute;
+  left: var(--rom-2);
+  top: -10rem;
+  z-index: 30;
+  padding: var(--rom-2) var(--rom-3);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  border-radius: var(--radius-s);
+}
+
+.hopp:focus {
+  top: calc(env(safe-area-inset-top) + var(--rom-2));
+}
+
+.topplinje {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--farge-topplinje);
+  color: var(--farge-topplinje-tekst);
+  padding-top: env(safe-area-inset-top);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+.topplinje-innhold {
+  display: grid;
+  grid-template-columns: var(--trykkflate) minmax(0, 1fr) var(--trykkflate);
+  align-items: center;
+  min-height: var(--topplinje-hoyde);
+  max-width: var(--maks-bredde);
+  margin: 0 auto;
+  padding: 0 var(--rom-2);
+}
+
+.topplinje .ikonknapp,
+.topplinje .indikator {
+  color: var(--farge-topplinje-tekst);
+}
+
+.topplinje-plass,
+.indikator-plass {
+  display: block;
+  width: var(--trykkflate);
+}
+
+.appnavn {
+  justify-self: center;
+  color: var(--farge-topplinje-tekst);
+  font-weight: 650;
+  font-size: var(--str-l);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  padding: var(--rom-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.indikator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--trykkflate);
+  height: var(--trykkflate);
+  border-radius: 50%;
+  opacity: 0.85;
+}
+
+.indikator-ok {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--maks-bredde);
+  margin: 0 auto;
+  padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-6))
+    calc(var(--rom-4) + env(safe-area-inset-left));
+}
+
+main:focus {
+  outline: none;
+}
+
+.bunnmeny {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: var(--farge-flate);
+  border-top: var(--strek) solid var(--farge-linje);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+.bunnmeny ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: var(--maks-bredde);
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.bunnmeny a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: var(--bunnmeny-hoyde);
+  padding: var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  text-decoration: none;
+  font-size: var(--str-xs);
+  text-align: center;
+}
+
+.bunnmeny a span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bunnmeny a[aria-current='page'] {
+  color: var(--farge-merke);
+  font-weight: 650;
+}
+
+/* ---------- Byggeklosser ---------- */
+
+.side {
+  padding-top: var(--rom-2);
+}
+
+.laster {
+  padding-top: var(--rom-6);
+  color: var(--farge-tekst-dempet);
+}
+
+.ikon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex: none;
+}
+
+.ikon-liten {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.ikonknapp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--trykkflate);
+  height: var(--trykkflate);
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--farge-tekst);
+  cursor: pointer;
+}
+
+.ikonknapp:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.favorittknapp.valgt {
+  color: var(--farge-advarsel);
+}
+
+.knapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-4);
+  border: var(--strek) solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  max-width: 100%;
+}
+
+.knapp-sekundaer {
+  background: var(--farge-flate);
+  color: var(--farge-merke);
+}
+
+.knapp-fare {
+  background: var(--farge-flate);
+  color: var(--farge-feil);
+  border-color: var(--farge-feil);
+}
+
+.knapperad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin-bottom: var(--rom-3);
+}
+
+.filknapp {
+  position: relative;
+}
+
+.filknapp:focus-within {
+  outline: var(--fokusring) solid var(--farge-fokus);
+  outline-offset: 2px;
+}
+
+.lenkeknapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--farge-lenke);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+}
+
+.liste {
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.liste > li + li {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.listelenke {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-3);
+  min-height: 3.25rem;
+  padding: var(--rom-3) var(--rom-4);
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.listelenke > .ikon:first-child {
+  color: var(--farge-merke);
+}
+
+.listelenke-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.listelenke-tittel {
+  font-weight: 600;
+}
+
+.listelenke-under {
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.favoritt {
+  display: flex;
+  align-items: center;
+}
+
+.favoritt > .listelenke {
+  flex: 1;
+  min-width: 0;
+}
+
+.favoritt-knapper {
+  display: flex;
+  flex: none;
+  padding-right: var(--rom-1);
+}
+
+.utilgjengelig {
+  color: var(--farge-tekst-dempet);
+}
+
+.flis-rutenett {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: var(--rom-2);
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+}
+
+.flis {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+  height: 100%;
+  padding: var(--rom-3);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  color: var(--farge-tekst);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.flis .ikon {
+  color: var(--farge-merke);
+}
+
+.kategori h3 {
+  font-size: var(--str-m);
+  color: var(--farge-tekst-dempet);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: var(--rom-4) 0 var(--rom-2);
+}
+
+.merknad {
+  padding: var(--rom-3) var(--rom-4);
+  background: var(--farge-info-flate);
+  border-radius: var(--radius-m);
+  font-size: var(--str-s);
+}
+
+.merknad-stille {
+  background: transparent;
+  padding: 0;
+  color: var(--farge-tekst-dempet);
+}
+
+.merknad-advarsel {
+  background: var(--farge-advarsel-flate);
+}
+
+.kort {
+  padding: var(--rom-3) var(--rom-4);
+  margin: 0 0 var(--rom-4);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+}
+
+.kort > h2:first-child {
+  margin-top: var(--rom-1);
+  font-size: var(--str-l);
+}
+
+.kort-advarsel,
+.kort-endret,
+.kort-utdatert {
+  background: var(--farge-advarsel-flate);
+  border-color: var(--farge-advarsel);
+}
+
+.kort-feilet {
+  background: var(--farge-feil-flate);
+  border-color: var(--farge-feil);
+}
+
+.kort-ok {
+  background: var(--farge-ok-flate);
+  border-color: var(--farge-ok);
+}
+
+.bunntekst {
+  margin-top: var(--rom-6);
+  text-align: center;
+  font-size: var(--str-s);
+}
+
+.ingress {
+  font-size: var(--str-l);
+}
+
+.tittelrad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rom-2);
+}
+
+.tittelrad h1 {
+  min-width: 0;
+}
+
+.tittelrad .ikonknapp {
+  margin-top: var(--rom-4);
+}
+
+.liten-overskrift {
+  font-size: var(--str-m);
+  margin: var(--rom-5) 0 var(--rom-2);
+}
+
+.kildetekst {
+  margin: var(--rom-4) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border-left: 4px solid var(--farge-linje);
+  background: var(--farge-flate);
+  white-space: pre-line;
+}
+
+.kildeliste ul {
+  padding-left: var(--rom-5);
+}
+
+.kildelenke .ikon {
+  vertical-align: -0.15em;
+  margin-left: 0.2em;
+}
+
+.kilde {
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.kilde p {
+  margin: var(--rom-1) 0 0;
+}
+
+/* ---------- Merker ---------- */
+
+.merker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+}
+
+.merke {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  border: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+}
+
+.merke-fylke,
+.merke-skole {
+  background: var(--farge-info-flate);
+  border-color: var(--farge-merke);
+}
+
+.merke-utkast,
+.merke-bor_kontrolleres,
+.merke-kilde-endret {
+  background: var(--farge-advarsel-flate);
+  border-color: var(--farge-advarsel);
+}
+
+.merke-kilde_endret,
+.merke-kilde-feilet {
+  background: var(--farge-feil-flate);
+  border-color: var(--farge-feil);
+}
+
+.merke-kontrollert,
+.merke-kilde-ok {
+  background: var(--farge-ok-flate);
+  border-color: var(--farge-ok);
+}
+
+/* ---------- Skjema ---------- */
+
+.valggruppe {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4) var(--rom-2);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  min-width: 0;
+}
+
+.valggruppe legend {
+  padding: 0 var(--rom-1);
+  font-weight: 650;
+}
+
+.valg {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-3);
+  min-height: var(--trykkflate);
+}
+
+.valg input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0;
+  accent-color: var(--farge-merke);
+}
+
+.felt {
+  margin: 0 0 var(--rom-4);
+}
+
+.felt label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--rom-1);
+}
+
+.felt input,
+.felt select,
+.sokefelt input {
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  font-size: max(16px, 1rem);
+}
+
+.felt select:disabled {
+  opacity: 0.6;
+}
+
+.felt-hjelp {
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+.felt-feil input {
+  border-color: var(--farge-feil);
+  border-width: 2px;
+}
+
+.felt-feilmelding {
+  color: var(--farge-feil);
+  font-size: var(--str-s);
+  margin-top: var(--rom-1);
+}
+
+.tallfelt {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.tallfelt input {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-tekst);
+  font-variant-numeric: tabular-nums;
+}
+
+.tallfelt-enhet {
+  color: var(--farge-tekst-dempet);
+}
+
+/* ---------- Søk ---------- */
+
+.sokeboks {
+  margin: var(--rom-3) 0 var(--rom-2);
+}
+
+.sokefelt {
+  position: relative;
+}
+
+.sokefelt input {
+  padding-left: 2.5rem;
+  border-radius: var(--radius-m);
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sokefelt-ikon {
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--farge-tekst-dempet);
+  pointer-events: none;
+}
+
+.sokestatus {
+  min-height: 1.5em;
+  margin: var(--rom-2) 0;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+}
+
+/* ---------- Forklaring ---------- */
+
+.forklaring {
+  margin: 0 0 var(--rom-4);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.forklaring-knapp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: 0;
+  background: none;
+  color: var(--farge-lenke);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.forklaring-knapp > span:first-of-type {
+  flex: 1;
+}
+
+.forklaring-innhold {
+  padding: 0 var(--rom-4) var(--rom-3);
+}
+
+.diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.diagram-del-1 {
+  fill: var(--farge-merke);
+}
+
+.diagram-del-2 {
+  fill: var(--farge-advarsel);
+}
+
+/* ---------- Resultatkort ---------- */
+
+.resultatkort {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: 2px solid var(--farge-merke);
+  border-radius: var(--radius-l);
+  background: var(--farge-flate);
+}
+
+.resultatkort-tittel {
+  margin: var(--rom-1) 0 var(--rom-1);
+  font-size: var(--str-m);
+  color: var(--farge-tekst-dempet);
+}
+
+.resultatkort-verdi {
+  font-size: var(--str-xxl);
+  font-weight: 700;
+  margin: 0 0 var(--rom-2);
+}
+
+.resultatkort-enhet {
+  font-size: var(--str-l);
+  font-weight: 600;
+}
+
+.utregning {
+  margin: var(--rom-2) 0 0;
+  padding-left: var(--rom-5);
+}
+
+.utregning li {
+  margin-bottom: var(--rom-2);
+}
+
+.utregning-tekst {
+  display: block;
+}
+
+.utregning-verdi {
+  font-weight: 700;
+}
+
+.utregning-kilde {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  font-size: var(--str-s);
+}
+
+/* ---------- Varsel ---------- */
+
+.varsel {
+  position: fixed;
+  left: var(--rom-3);
+  right: var(--rom-3);
+  bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-3));
+  z-index: 25;
+  max-width: calc(var(--maks-bredde) - var(--rom-6));
+  margin: 0 auto;
+  padding: var(--rom-3) var(--rom-4);
+  border-radius: var(--radius-m);
+  background: var(--farge-topplinje);
+  color: var(--farge-topplinje-tekst);
+}
+
+.varsel p {
+  margin-bottom: var(--rom-2);
+}
+
+.varsel-knapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+}
+
+.brodtekst :where(p, ul, ol) {
+  margin: 0 0 var(--rom-3);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .forklaring-pil,
+  .knapp,
+  .listelenke {
+    transition:
+      background-color var(--varighet),
+      transform var(--varighet);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}

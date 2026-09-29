@@ -1,0 +1,72 @@
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
+import { app } from './src/config/app.ts';
+import { dataPlugin, innholdPlugin, lesToken, testoppsettPlugin, htmlPlugin } from './scripts/vite/plugins.ts';
+
+const rot = fileURLToPath(new URL('.', import.meta.url));
+const pakke = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
+
+export default defineConfig(({ mode }) => ({
+  base: app.base,
+  define: {
+    __APP_VERSJON__: JSON.stringify(pakke.version),
+  },
+  oxc: {
+    jsx: { runtime: 'automatic', importSource: 'preact' },
+  },
+  build: {
+    target: 'es2022',
+    sourcemap: false,
+  },
+  server: { port: 5173 },
+  preview: { port: 4173 },
+  plugins: [
+    innholdPlugin(rot),
+    htmlPlugin(rot, app.navn, app.kortnavn),
+    testoppsettPlugin(mode),
+    dataPlugin(rot, mode),
+    VitePWA({
+      registerType: 'prompt',
+      injectRegister: false,
+      includeAssets: ['ikoner/favicon.svg', 'ikoner/apple-touch-icon.png'],
+      manifest: {
+        id: app.base,
+        name: app.navn,
+        short_name: app.kortnavn,
+        description: app.beskrivelse.nb,
+        lang: 'nb',
+        start_url: './',
+        scope: './',
+        display: 'standalone',
+        orientation: 'any',
+        theme_color: lesToken(rot, 'meta-temafarge-lys'),
+        background_color: lesToken(rot, 'meta-bakgrunn-lys'),
+        icons: [
+          { src: 'ikoner/ikon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any' },
+          { src: 'ikoner/ikon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any' },
+          { src: 'ikoner/ikon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
+        ],
+      },
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,png,webmanifest}', 'sok/*.json'],
+        globIgnores: ['data/**'],
+        navigateFallback: null,
+        cleanupOutdatedCaches: true,
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.endsWith('/data/status/kildestatus.json'),
+            handler: 'NetworkFirst',
+            options: { cacheName: 'kildestatus', networkTimeoutSeconds: 4 },
+          },
+          {
+            urlPattern: ({ url }) => url.pathname.includes('/data/') && url.pathname.endsWith('.json'),
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'data', expiration: { maxEntries: 200 } },
+          },
+        ],
+      },
+    }),
+  ],
+}));
