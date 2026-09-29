@@ -74,6 +74,8 @@
   /* Mål */
   --maks-bredde: 44rem;
   --topplinje-hoyde: 3.25rem;
+  /* Ekstra luft over toppfeltets innhold i installert app på mobil, under iOS' uskarpe kant bak statuslinjen. */
+  --topplinje-luft-installert: 1.5rem;
   --bunnmeny-hoyde: 3.75rem;
   --trykkflate: 2.75rem;
 

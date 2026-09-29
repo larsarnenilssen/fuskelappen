@@ -142,9 +142,19 @@ select {
   z-index: 20;
   background: var(--farge-topplinje);
   color: var(--farge-topplinje-tekst);
-  padding-top: env(safe-area-inset-top);
+  padding-top: calc(env(safe-area-inset-top) + var(--topplinje-luft, 0px));
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+}
+
+/*
+ * I installert app på mobil legger iOS en uskarp, gjennomsiktig kant under statuslinjen.
+ * Innholdet i toppfeltet flyttes litt ned, så appnavnet ikke havner i den.
+ */
+@media (display-mode: standalone) and (pointer: coarse) {
+  .topplinje {
+    --topplinje-luft: var(--topplinje-luft-installert);
+  }
 }
 
 .topplinje-innhold {

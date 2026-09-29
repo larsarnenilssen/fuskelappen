@@ -51,6 +51,13 @@ describe('kode', () => {
     expect(brudd).toEqual([]);
   });
 
+  it('toppfeltet får ekstra luft bare i installert app på mobil', () => {
+    const css = readFileSync(join(rot, 'src/styles/base.css'), 'utf8');
+    expect(css).toMatch(/padding-top: calc\(env\(safe-area-inset-top\) \+ var\(--topplinje-luft, 0px\)\)/);
+    expect(css).toMatch(/@media \(display-mode: standalone\) and \(pointer: coarse\) \{\s*\.topplinje \{\s*--topplinje-luft: var\(--topplinje-luft-installert\);/);
+    expect(readFileSync(join(rot, 'src/styles/tokens.css'), 'utf8')).toMatch(/--topplinje-luft-installert: [\d.]+rem;/);
+  });
+
   it('appnavnet er definert ett sted', async () => {
     const { app } = await import('../../src/config/app.ts');
     const html = readFileSync(join(rot, 'index.html'), 'utf8');
