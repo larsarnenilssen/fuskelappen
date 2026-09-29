@@ -4,7 +4,7 @@
 
 **Valg:**
 - Koblingen fra rad i vedlegg 1 til fagkoder står som en tabell i regelsettet (`rules/sfs2213/arstimer-2026-2027.yaml`), med Grep som kilde og `kontrollert: null`. Den er laget for hånd ut fra fagnavn, program og trinn i Grep, og kan rettes uten kodeendring.
-- Bare rader der fagkodene gir ett årstimetall for trinnet, er tatt med. Norsk og engelsk på yrkesfag er ikke med, fordi fagkoden gjelder flere trinn samlet (norsk 112 timer på vg1 og vg2). Programfag på yrkesfag har mange fag med ulike timetall i samme rad, og er heller ikke med.
+- Bare rader der fagkodene gir ett årstimetall, er tatt med. For norsk og engelsk på yrkesfag bekreftet eier at årstimetallet er 112 og 140 (omfanget for NOR1262 og ENG1009), og det står på radene for både vg1 og vg2. Programfag på yrkesfag er ikke med, fordi mange fag med ulike timetall står i samme rad.
 - `npm run hent:grep` henter omfanget for fagkodene i tabellen til `data/grep/arstimer.json`. En enhetstest sammenligner tabellen med disse tallene, så en endring i Grep blir synlig.
 - I skjemaet fylles tallet inn når faget velges, så lenge brukeren ikke har skrevet inn timene selv. En kort tekst viser at tallet kommer fra Udir, og hvilken fagkode det gjelder.
 

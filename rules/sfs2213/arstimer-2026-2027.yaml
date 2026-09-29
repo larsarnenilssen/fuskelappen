@@ -2,8 +2,10 @@
 # Del av regelsettet sfs2213-2026-2027. Brukes til å fylle inn årstimer i kalkulatorene når brukeren velger et fag.
 # Brukeren kan alltid endre tallet. Nøkkelen er radnummeret (nr) i vedlegg 1.
 # Radene er koblet til fagkodene for hånd. Bare rader der fagkodene gir ett årstimetall for trinnet, er tatt med.
-# Ikke med: norsk og engelsk på yrkesfag (fagkoden gjelder flere trinn samlet), samisk, fremmedspråk på påbygging,
-# og forkortelser som ikke kan bekreftes i Grep (Info.tekn. samf., Nær.øk, Pol/samf).
+# Norsk og engelsk på yrkesfag: eier bekreftet 29.09.2026 at årstimetallet er 112 (norsk) og 140 (engelsk), som
+# omfanget for NOR1262 og ENG1009 i Grep. Samme tall står på radene for vg1 og vg2.
+# Ikke med: samisk, fremmedspråk på påbygging, programfag på yrkesfag og forkortelser som ikke kan bekreftes
+# i Grep (Info.tekn. samf., Nær.øk, Pol/samf).
 # npm run hent:grep henter omfanget for fagkodene på nytt (data/grep/arstimer.json), og en test sammenligner.
 id: sfs2213-2026-2027
 regelverk: sfs2213
@@ -49,7 +51,11 @@ verdier:
       - { nr: 55, arstimer: 113, fagkoder: [HIS1010] }
       - { nr: 56, arstimer: 113, fagkoder: [HIS1010] }
       - { nr: 57, arstimer: 113, fagkoder: [HIS1010] }
+      - { nr: 64, arstimer: 112, fagkoder: [NOR1262] }
+      - { nr: 65, arstimer: 112, fagkoder: [NOR1262] }
       - { nr: 68, arstimer: 140, fagkoder: [ENG1007] }
+      - { nr: 69, arstimer: 140, fagkoder: [ENG1009] }
+      - { nr: 70, arstimer: 140, fagkoder: [ENG1009] }
       - { nr: 71, arstimer: 140, fagkoder: [MAT1019, MAT1021] }
       - { nr: 72, arstimer: 84, fagkoder: [MAT1111, MAT1131, MAT1149] }
       - { nr: 73, arstimer: 140, fagkoder: [MAT1019, MAT1021] }

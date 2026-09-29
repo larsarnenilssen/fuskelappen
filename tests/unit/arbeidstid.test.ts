@@ -283,5 +283,8 @@ describe('årstimer fra Grep', () => {
     // Eksemplene fra eier: kroppsøving 56 og engelsk vg1 studieforberedende 140.
     expect(tabell.get(rad('Kroppsøv.', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(56);
     expect(tabell.get(rad('Engelsk', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(140);
+    // Yrkesfag (eier 29.09.2026): norsk 112 og engelsk 140.
+    expect(tabell.get(rad('Norsk', 'Yrkesfag', 'Vg1').rad.nr)?.arstimer).toBe(112);
+    expect(tabell.get(rad('Engelsk', 'Yrkesfag', 'Vg2').rad.nr)?.arstimer).toBe(140);
   });
 });
