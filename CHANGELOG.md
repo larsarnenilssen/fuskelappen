@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.1.0] – 2026-09-29
+
 ### Lagt til
 
 - Fase 0 – fundament:
@@ -17,3 +19,6 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Kildestatus i topplinjen og egen side med alle kilder.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
+
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.0
