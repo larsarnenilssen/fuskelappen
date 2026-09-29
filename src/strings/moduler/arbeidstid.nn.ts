@@ -98,8 +98,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     feriepengerTillegg: 'Feriepengar i tillegg',
     utbetaltLonn: 'Løn som blir utbetalt',
     funksjonsprosent: 'Funksjon og andre oppgåver',
-    overtidstimer: 'Undervisningstimar i overtid',
-    kalkulertTidOvertid: 'Kalkulert tid (blir betalt)',
+    undervisningstimer: 'Undervisningstimar',
     overtidsbetaling: 'Overtidsbetaling',
   },
   advarsler: {

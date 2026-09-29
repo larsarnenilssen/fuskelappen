@@ -97,8 +97,7 @@ export const arbeidstidNb = {
     feriepengerTillegg: 'Feriepenger i tillegg',
     utbetaltLonn: 'Lønn som utbetales',
     funksjonsprosent: 'Funksjon og andre oppgaver',
-    overtidstimer: 'Undervisningstimer i overtid',
-    kalkulertTidOvertid: 'Kalkulert tid (betales)',
+    undervisningstimer: 'Undervisningstimer',
     overtidsbetaling: 'Overtidsbetaling',
   },
   advarsler: {

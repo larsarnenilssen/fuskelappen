@@ -44,7 +44,6 @@ export default function Overtid() {
         maks={300}
         onEndring={(beskjeftigelse) => sett({ ...s, beskjeftigelse })}
       />
-      {s.beskjeftigelse !== null && s.beskjeftigelse > 0 && <Stillingsmaaler deler={[{ navn: t('arbeidstid.resultat.beskjeftigelse'), prosent: s.beskjeftigelse }]} />}
       <div class="fagkort">
         <p class="fagkort-tittel">{t('arbeidstid.overtid.fag')}</p>
         <Fagfelt
@@ -65,11 +64,12 @@ export default function Overtid() {
         <>
           <Advarsler advarsler={resultat.advarsler} />
           {resultat.overtidstimer.verdi === 0 && <p class="merknad">{t('arbeidstid.overtid.ingenOvertid')}</p>}
-          <Utregningskort tittel={t('arbeidstid.resultat.overtidsbetaling')} resultat={resultat.betaling} trinn={resultat.trinn}>
+          <Utregningskort tittel={t('arbeidstid.resultat.overtidsbetaling')} resultat={resultat.betaling} trinn={resultat.trinn} sammendrag={false}>
+            <Stillingsmaaler deler={[{ navn: t('arbeidstid.resultat.beskjeftigelse'), prosent: s.beskjeftigelse ?? 0 }]} />
             <Oversiktsliste
               rader={[
-                { navn: t('arbeidstid.resultat.overtidstimer'), verdi: medEnhet(t, resultat.overtidstimer.verdi, 'arsrammetimer') },
-                { navn: t('arbeidstid.resultat.kalkulertTidOvertid'), verdi: medEnhet(t, resultat.kalkulertTid.verdi, 'timer') },
+                { navn: t('arbeidstid.resultat.undervisningstimer'), verdi: medEnhet(t, resultat.overtidstimer.verdi, 'timer') },
+                { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, resultat.kalkulertTid.verdi, 'timer') },
                 { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, resultat.timelonn.verdi, 'kroner_per_time') },
                 { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, resultat.feriepenger.verdi, 'kroner') },
               ]}

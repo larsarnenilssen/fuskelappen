@@ -79,6 +79,7 @@ export default function Vikar() {
           <Utregningskort tittel={t('arbeidstid.resultat.utbetaltLonn')} resultat={time.resultat.lonn} trinn={time.resultat.trinn} sammendrag={false}>
             <Oversiktsliste
               rader={[
+                { navn: t('arbeidstid.resultat.undervisningstimer'), verdi: medEnhet(t, time.resultat.vikartimer.verdi, 'timer') },
                 { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, time.resultat.kalkulertTid.verdi, 'timer') },
                 { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, time.resultat.timelonn.verdi, 'kroner_per_time') },
                 { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, time.resultat.feriepenger.verdi, 'kroner') },

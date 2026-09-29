@@ -3,7 +3,7 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { beregnPeriodebeskjeftigelse, type Gruppe } from '../beregning/index.ts';
-import { Periodelinje } from '../komponenter/Grafikk.tsx';
+import { Periodelinje, Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { Utregningskort } from '../komponenter/Utregning.tsx';
@@ -58,7 +58,9 @@ export default function Periode() {
       {resultat ? (
         <>
           <Advarsler advarsler={resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.periodebeskjeftigelse')} resultat={resultat.sum} trinn={resultat.trinn} />
+          <Utregningskort tittel={t('arbeidstid.resultat.periodebeskjeftigelse')} resultat={resultat.sum} trinn={resultat.trinn}>
+            <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
+          </Utregningskort>
         </>
       ) : (
         !feil && <ManglerInndata />

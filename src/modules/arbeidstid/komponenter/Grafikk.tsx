@@ -7,7 +7,7 @@ const B = 320;
 const H = 18;
 const farger = ['undervisning', 'annen_planfestet', 'funksjonstid', 'motetid', 'selvdisponert'] as const;
 
-/** Beskjeftigelse per fag som deler av en stolpe, med strek ved 100 %. */
+/** Beskjeftigelse per fag som deler av en stolpe, med strek ved 100 %. Det som går over 100 %, er markert. */
 export function Stillingsmaaler({ deler }: { deler: { navn: string; prosent: number }[] }) {
   const { t } = useTekst();
   const sum = deler.reduce((s, d) => s + d.prosent, 0);
@@ -25,6 +25,7 @@ export function Stillingsmaaler({ deler }: { deler: { navn: string; prosent: num
           x += w;
           return r;
         })}
+        {sum > 100 && <rect class="figur-over" x={x100} y={0} width={B - x100} height={H} />}
         <line class="figur-grense" x1={x100} x2={x100} y1={-2} y2={H + 2} />
         <text class="figur-tekst" x={Math.min(x100, B - 2)} y={H + 12} text-anchor="end">
           100 %

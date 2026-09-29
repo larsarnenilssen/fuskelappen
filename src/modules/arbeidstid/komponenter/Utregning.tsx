@@ -13,6 +13,11 @@ export function tallTekst(verdi: number, desimaler = 2): string {
   return formaterTall(verdi, desimaler);
 }
 
+/** Kronebeløp vises alltid med øre (1 748,80), andre tall uten unødvendige nuller (28, 10,5). */
+function tallMedEnhet(verdi: number, enhet: Enhet): string {
+  return enhet === 'kroner' || enhet === 'kroner_per_time' ? formaterTall(verdi, 2, 2) : tallTekst(verdi, enhet === 'faktor' ? 4 : 2);
+}
+
 /** Enheter uten tekst: forholdstall og rene tall vises uten enhet. */
 function enhetTekst(t: T, enhet: Enhet): string {
   return enhet === 'faktor' || enhet === 'tall' ? '' : t(`arbeidstid.enheter.${enhet}` as Tekstnokkel);
@@ -20,13 +25,13 @@ function enhetTekst(t: T, enhet: Enhet): string {
 
 export function medEnhet(t: T, verdi: number, enhet: Enhet): string {
   const e = enhetTekst(t, enhet);
-  return e ? `${tallTekst(verdi)} ${e}` : tallTekst(verdi, 4);
+  return e ? `${tallMedEnhet(verdi, enhet)} ${e}` : tallTekst(verdi, 4);
 }
 
 /** Tall for en operand. Lister vises som sum (a + b) når trinnet summerer, ellers adskilt med semikolon. */
 function operandTall(o: Operand, sum = false): string {
   if (o.liste) return o.liste.map((v) => tallTekst(v)).join(sum ? ' + ' : '; ');
-  return tallTekst(o.verdi, o.enhet === 'faktor' ? 4 : 2);
+  return tallMedEnhet(o.verdi, o.enhet);
 }
 
 function stegFra(t: T, trinn: Trinn): Utregningssteg {
@@ -102,7 +107,7 @@ export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fas
   return (
     <Resultatkort
       tittel={tittel}
-      verdi={tallTekst(resultat.verdi)}
+      verdi={tallMedEnhet(resultat.verdi, resultat.enhet)}
       {...(enhet ? { enhet } : {})}
       niva={brukteNiva(trinn)}
       ikkeKontrollert={harUkontrollert(trinn)}

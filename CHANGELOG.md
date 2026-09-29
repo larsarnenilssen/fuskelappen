@@ -25,6 +25,9 @@ Kalkulatorene tar mindre plass og viser svaret hele tiden.
 - «Ikke kontrollert» står ved siden av tittelen på resultatkortet.
 - Fordelingen starter med 0 % funksjon.
 - Timevikar: hovedtallet er nå lønnen som utbetales. Feriepengene står under som en ekstraopplysning, i stedet for å være lagt til i hovedtallet.
+- Overtid og timevikar har like resultatkort: lønnen som utbetales øverst, deretter undervisningstimer, kalkulert tid, timelønn og feriepenger i tillegg. Utregningen ligger under «Vis utregning».
+- Kronebeløp vises alltid med øre (1 748,80 kr).
+- Stolpen for stillingen står i resultatkortet også for overtid og periodebeskjeftigelse. Det som går over 100 %, er markert i rødt.
 
 ### Rettet
 

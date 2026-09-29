@@ -123,6 +123,8 @@ test.describe('arbeidstid', () => {
     await expect(page.locator('.resultatkort-tittel')).toHaveText('Lønn som utbetales');
     await expect(page.locator('.oversikt')).toContainText('346,98');
     await expect(page.locator('.oversikt')).toContainText('832,76');
+    await expect(page.locator('.oversikt')).toContainText('7,5 timer');
+    await expect(page.locator('.resultatkort-sammendrag')).toHaveCount(0);
   });
 
   test('periodebeskjeftigelse med tidslinje', async ({ page }) => {
@@ -230,12 +232,13 @@ test.describe('arbeidstid', () => {
     await page.getByLabel('Samlet beskjeftigelse i prosent').fill('102');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     const oversikt = page.locator('.oversikt');
-    await expect(oversikt).toContainText('10,5 årsrammetimer');
+    await expect(oversikt).toContainText('10,5 timer');
     await expect(oversikt).toContainText('28 timer');
-    await expect(oversikt).toContainText(/Feriepenger i tillegg\s*1\s748,8 kr/);
+    await expect(oversikt).toContainText(/Feriepenger i tillegg\s*1\s748,80 kr/);
     await expect(resultat(page)).toContainText(/14\s573,33/);
+    await expect(page.locator('.resultatkort-sammendrag')).toHaveCount(0);
     await page.getByRole('switch', { name: '15 eller færre elever i klassen' }).check();
-    await expect(oversikt).toContainText('11,55 årsrammetimer');
+    await expect(oversikt).toContainText('11,55 timer');
     await expect(resultat(page)).toContainText(/14\s573,33/);
     await page.getByRole('button', { name: 'Forklaring: Hvorfor endrer ikke faget beløpet?' }).click();
     await expect(page.getByText(/1 % over hel stilling gir alltid 14 timer kalkulert tid/)).toBeVisible();
