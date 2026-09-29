@@ -4,6 +4,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.1.3] – 2026-09-29
+
+### Rettet
+
+- Appnavnet i toppfeltet så uklart ut på iPhone, fordi iOS legger en uskarp kant under statuslinjen. Innholdet i toppfeltet er flyttet litt ned når appen er installert på mobil.
+
 ## [0.1.2] – 2026-09-29
 
 ### Rettet
@@ -44,7 +50,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.3
 [0.1.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.2
 [0.1.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.1
 [0.1.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.0
