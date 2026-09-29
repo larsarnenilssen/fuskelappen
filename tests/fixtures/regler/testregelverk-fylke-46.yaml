@@ -1,0 +1,8 @@
+id: testregelverk-fylke-46
+regelverk: testregelverk
+gyldig_fra: "2026-08-01"
+gyldig_til: "2027-07-31"
+kilde: ks-sfs2213
+gyldighet: { niva: fylke, fylke: "46", forhold: erstatter }
+verdier:
+  uker: { verdi: 37, enhet: uker, kilde: { id: ks-sfs2213 }, kontrollert: null }

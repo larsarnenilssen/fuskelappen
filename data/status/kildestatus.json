@@ -1,0 +1,20 @@
+{
+  "skjema": 1,
+  "kjort": "2026-09-29T08:29:07.602Z",
+  "kilder": {
+    "ks-sfs2213": {
+      "status": "endret",
+      "sjekket": "2026-09-29T08:29:07.602Z",
+      "fingeravtrykk": "sha256:7b5faa2311693ca97a7a881f1f9dbe6c87d02484e9df87dce086c4ba2bdfa092",
+      "endret_siden": "2026-09-29T08:24:12.161Z",
+      "melding": "Ingen godkjent fingeravtrykk ennå."
+    },
+    "udir-nsr": {
+      "status": "ok",
+      "sjekket": "2026-09-29T08:29:07.602Z",
+      "fingeravtrykk": "sha256:06b847a3ae6d671e182aa8f0db13b8305d1e62c18727fc7137482ac0adf16b2e",
+      "endret_siden": null,
+      "melding": null
+    }
+  }
+}

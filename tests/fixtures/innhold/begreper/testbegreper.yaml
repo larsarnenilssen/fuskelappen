@@ -1,0 +1,33 @@
+# Testbegreper. Brukes bare i tester og utvikling.
+- id: testbegrep-skolemiljo
+  type: begrep
+  tittel: { nb: Skolemiljø (testbegrep), nn: Skulemiljø (testomgrep) }
+  tekst:
+    nb: Et **testbegrep** om skolemiljøet. Brukes for å teste søk og visning.
+    nn: Eit **testomgrep** om skulemiljøet. Blir brukt for å teste søk og vising.
+  kildetekst: { spraak: nn, tekst: "Alle elevar har rett til eit trygt og godt skulemiljø. (Testtekst)" }
+  kilder: [{ id: ks-sfs2213, punkt: "1" }]
+  kontrollert: null
+  stikkord: [trivsel]
+  relatert: [testbegrep-arsramme]
+
+- id: testbegrep-arsramme
+  type: begrep
+  tittel: { nb: Årsramme (testbegrep), nn: Årsramme (testomgrep) }
+  tekst:
+    nb: Testtekst om årsramme.
+    nn: Testtekst om årsramme.
+  kilder: [{ id: ks-sfs2213 }]
+  kontrollert: { dato: "2026-01-15" }
+  stikkord: []
+  relatert: [testbegrep-skolemiljo]
+
+- id: testbegrep-arsramme
+  type: begrep
+  gyldighet: { niva: fylke, fylke: "46", forhold: erstatter }
+  tittel: { nb: Årsramme i Vestland (testbegrep), nn: Årsramme i Vestland (testomgrep) }
+  tekst:
+    nb: Lokal testtekst for Vestland.
+    nn: Lokal testtekst for Vestland.
+  kilder: [{ id: ks-sfs2213 }]
+  kontrollert: null

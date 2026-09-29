@@ -1,0 +1,41 @@
+# Synonymer for søket: nynorske former (varianter) gjøres om til bokmål (kanonisk)
+# både når indeksen bygges og når brukeren søker. Varianter byttes også inne i
+# sammensatte ord, så «skul» dekker skule, skulen, skulemiljø og grunnskule.
+# Legg til nye par når nye moduler tar i bruk nye ord.
+grupper:
+  - { kanonisk: skol, varianter: [skul] }
+  - { kanonisk: fravær, varianter: [fråvær] }
+  - { kanonisk: lærer, varianter: [lærar] }
+  - { kanonisk: opplæringsloven, varianter: [opplæringslova] }
+  - { kanonisk: videregående, varianter: [vidaregåande] }
+  - { kanonisk: særskilt, varianter: [særskild] }
+  - { kanonisk: regler, varianter: [reglar] }
+  - { kanonisk: elever, varianter: [elevar] }
+  - { kanonisk: timer, varianter: [timar] }
+  - { kanonisk: hjemmel, varianter: [heimel] }
+  - { kanonisk: hjem, varianter: [heim] }
+  - { kanonisk: uke, varianter: [veke] }
+  - { kanonisk: måned, varianter: [månad] }
+  - { kanonisk: syk, varianter: [sjuk] }
+  - { kanonisk: egen, varianter: [eigen] }
+  - { kanonisk: ikke, varianter: [ikkje] }
+  - { kanonisk: hvordan, varianter: [korleis] }
+  - { kanonisk: undersøke, varianter: [undersøkje] }
+  - { kanonisk: søker, varianter: [søkjar] }
+  - { kanonisk: ansatt, varianter: [tilsett] }
+  - { kanonisk: giver, varianter: [gjevar] }
+  - { kanonisk: begrep, varianter: [omgrep] }
+  - { kanonisk: kilde, varianter: [kjelde] }
+  - { kanonisk: tilpasset, varianter: [tilpassa] }
+  - { kanonisk: planfestet, varianter: [planfesta] }
+  - { kanonisk: fastsatt, varianter: [fastsett] }
+  - { kanonisk: språklig, varianter: [språkleg] }
+  - { kanonisk: daglig, varianter: [dagleg] }
+  - { kanonisk: hele, varianter: [heile] }
+  - { kanonisk: bare, varianter: [berre] }
+  - { kanonisk: fremmedspråk, varianter: [framandspråk] }
+  - { kanonisk: forside, varianter: [framside] }
+  - { kanonisk: innhold, varianter: [innhald] }
+  - { kanonisk: veiledning, varianter: [rettleiing] }
+  - { kanonisk: veileder, varianter: [rettleiar] }
+  - { kanonisk: sakkyndig, varianter: [sakkunnig] }

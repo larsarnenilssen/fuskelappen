@@ -1,0 +1,8 @@
+id: testregelverk-skole-supplerer
+regelverk: testregelverk
+gyldig_fra: "2026-08-01"
+gyldig_til: "2027-07-31"
+kilde: ks-sfs2213
+gyldighet: { niva: skole, fylke: "46", skole: "999999999", forhold: supplerer }
+verdier:
+  regler: { verdi: [skolens-egen-regel], kilde: { id: ks-sfs2213 }, kontrollert: null }

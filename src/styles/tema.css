@@ -1,0 +1,78 @@
+/*
+ * Tema: semantiske fargenavn som peker på paletten i tokens.css.
+ * data-tema="lys" | "mork" settes av brukeren; uten valg følger vi systemet.
+ */
+:root,
+:root[data-tema='lys'] {
+  color-scheme: light;
+  --farge-bakgrunn: var(--p-papir);
+  --farge-flate: var(--p-hvit);
+  --farge-flate-2: var(--p-blaa-100);
+  --farge-tekst: var(--p-blekk);
+  --farge-tekst-dempet: var(--p-blekk-dempet);
+  --farge-linje: var(--p-linje-lys);
+  --farge-merke: var(--p-blaa-700);
+  --farge-merke-tekst: var(--p-hvit);
+  --farge-lenke: var(--p-blaa-700);
+  --farge-topplinje: var(--p-blaa-900);
+  --farge-topplinje-tekst: var(--p-hvit);
+  --farge-ok: var(--p-groenn-700);
+  --farge-ok-flate: var(--p-groenn-100);
+  --farge-advarsel: var(--p-rav-700);
+  --farge-advarsel-flate: var(--p-rav-100);
+  --farge-feil: var(--p-roed-700);
+  --farge-feil-flate: var(--p-roed-100);
+  --farge-info-flate: var(--p-blaa-100);
+  --farge-fokus: var(--p-fokus-lys);
+  --farge-temafarge: var(--meta-temafarge-lys);
+}
+
+:root[data-tema='mork'] {
+  color-scheme: dark;
+  --farge-bakgrunn: var(--p-natt);
+  --farge-flate: var(--p-natt-flate);
+  --farge-flate-2: var(--p-natt-flate-2);
+  --farge-tekst: var(--p-maane);
+  --farge-tekst-dempet: var(--p-maane-dempet);
+  --farge-linje: var(--p-linje-mork);
+  --farge-merke: var(--p-blaa-300);
+  --farge-merke-tekst: var(--p-blaa-950);
+  --farge-lenke: var(--p-blaa-300);
+  --farge-topplinje: var(--p-blaa-950);
+  --farge-topplinje-tekst: var(--p-maane);
+  --farge-ok: var(--p-groenn-300);
+  --farge-ok-flate: var(--p-groenn-900);
+  --farge-advarsel: var(--p-rav-300);
+  --farge-advarsel-flate: var(--p-rav-900);
+  --farge-feil: var(--p-roed-300);
+  --farge-feil-flate: var(--p-roed-900);
+  --farge-info-flate: var(--p-blaa-800);
+  --farge-fokus: var(--p-fokus-mork);
+  --farge-temafarge: var(--meta-temafarge-mork);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='lys']) {
+    color-scheme: dark;
+    --farge-bakgrunn: var(--p-natt);
+    --farge-flate: var(--p-natt-flate);
+    --farge-flate-2: var(--p-natt-flate-2);
+    --farge-tekst: var(--p-maane);
+    --farge-tekst-dempet: var(--p-maane-dempet);
+    --farge-linje: var(--p-linje-mork);
+    --farge-merke: var(--p-blaa-300);
+    --farge-merke-tekst: var(--p-blaa-950);
+    --farge-lenke: var(--p-blaa-300);
+    --farge-topplinje: var(--p-blaa-950);
+    --farge-topplinje-tekst: var(--p-maane);
+    --farge-ok: var(--p-groenn-300);
+    --farge-ok-flate: var(--p-groenn-900);
+    --farge-advarsel: var(--p-rav-300);
+    --farge-advarsel-flate: var(--p-rav-900);
+    --farge-feil: var(--p-roed-300);
+    --farge-feil-flate: var(--p-roed-900);
+    --farge-info-flate: var(--p-blaa-800);
+    --farge-fokus: var(--p-fokus-mork);
+    --farge-temafarge: var(--meta-temafarge-mork);
+  }
+}

@@ -1,0 +1,82 @@
+/*
+ * Designverdier for Protokollen. Alle farger i appen defineres her og bare her.
+ * Temaene i tema.css peker på disse verdiene.
+ */
+:root {
+  /* Palett – lys */
+  --p-papir: #f6f4ef;
+  --p-hvit: #ffffff;
+  --p-blekk: #1b2330;
+  --p-blekk-dempet: #4a5263;
+  --p-linje-lys: #d6d2c8;
+  --p-blaa-900: #17324f;
+  --p-blaa-700: #1f4e79;
+  --p-blaa-100: #e3ecf5;
+  --p-groenn-700: #1d6b3a;
+  --p-groenn-100: #e2f1e7;
+  --p-rav-700: #7a4f00;
+  --p-rav-100: #f8ecd3;
+  --p-roed-700: #a1261d;
+  --p-roed-100: #f8e1de;
+  --p-fokus-lys: #b35c00;
+
+  /* Palett – mørk */
+  --p-natt: #11151c;
+  --p-natt-flate: #1a2029;
+  --p-natt-flate-2: #232b36;
+  --p-maane: #e8e6e1;
+  --p-maane-dempet: #b4b9c3;
+  --p-linje-mork: #3a4452;
+  --p-blaa-300: #9cc3ee;
+  --p-blaa-950: #0b1622;
+  --p-blaa-800: #1c3350;
+  --p-groenn-300: #8fd4a6;
+  --p-groenn-900: #143822;
+  --p-rav-300: #f0c46e;
+  --p-rav-900: #3d2c08;
+  --p-roed-300: #f3a59c;
+  --p-roed-900: #4a1714;
+  --p-fokus-mork: #ffb45c;
+
+  /* Verdier som også brukes i manifest og theme-color (leses ved bygg) */
+  --meta-temafarge-lys: #17324f;
+  --meta-temafarge-mork: #0b1622;
+  --meta-bakgrunn-lys: #f6f4ef;
+  --meta-bakgrunn-mork: #11151c;
+
+  /* Typografi */
+  --font-tekst: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-tall: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --str-xs: 0.8125rem;
+  --str-s: 0.9375rem;
+  --str-m: 1rem;
+  --str-l: 1.1875rem;
+  --str-xl: 1.5rem;
+  --str-xxl: 1.875rem;
+  --linjehoyde: 1.5;
+
+  /* Avstand */
+  --rom-1: 0.25rem;
+  --rom-2: 0.5rem;
+  --rom-3: 0.75rem;
+  --rom-4: 1rem;
+  --rom-5: 1.5rem;
+  --rom-6: 2rem;
+  --rom-7: 3rem;
+
+  /* Form */
+  --radius-s: 6px;
+  --radius-m: 10px;
+  --radius-l: 16px;
+  --strek: 1px;
+  --fokusring: 3px;
+
+  /* Mål */
+  --maks-bredde: 44rem;
+  --topplinje-hoyde: 3.25rem;
+  --bunnmeny-hoyde: 3.75rem;
+  --trykkflate: 2.75rem;
+
+  /* Bevegelse */
+  --varighet: 160ms;
+}

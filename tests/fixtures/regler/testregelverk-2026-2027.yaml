@@ -1,0 +1,9 @@
+id: testregelverk-2026-2027
+regelverk: testregelverk
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: ks-sfs2213
+verdier:
+  arsverk_timer: { verdi: 1000, enhet: timer, kilde: { id: ks-sfs2213, punkt: "4" }, kontrollert: null }
+  uker: { verdi: 38, enhet: uker, kilde: { id: ks-sfs2213 }, kontrollert: { dato: "2026-02-01" } }
+  regler: { verdi: [nasjonal-regel], kilde: { id: ks-sfs2213 }, kontrollert: null }
