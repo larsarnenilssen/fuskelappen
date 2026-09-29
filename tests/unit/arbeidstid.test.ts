@@ -159,8 +159,42 @@ describe('fordeling', () => {
   });
 
   it('varsler når stillingen er over 100 % eller møtetiden er større enn planfestet tid', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 20 });
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 40 });
     expect(r.advarsler).toEqual(expect.arrayContaining(['over_hel_stilling', 'motetid_for_stor']));
+  });
+
+  it('regner ut en stilling med bare funksjon, og legger møtetiden i funksjonstiden', () => {
+    // 10 % stilling med 10 % funksjon og 3 timer møter i uka: ingen undervisning.
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    expect(r.beskjeftigelse.verdi).toBe(0);
+    expect(r.stilling.verdi).toBe(10);
+    expect(r.arsverk.verdi).toBeCloseTo(168.75);
+    expect(del('undervisning')).toBe(0);
+    expect(del('motetid')).toBe(114);
+    expect(del('funksjonstid')).toBeCloseTo(54.75);
+    expect(del('annen_planfestet')).toBe(0);
+    expect(del('selvdisponert')).toBe(0);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(r.arsverk.verdi);
+    expect(r.advarsler).toEqual([]);
+
+    // Det samme uten fag i fagvisningen.
+    const utenFag = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [] }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    expect(utenFag.deler).toEqual(r.deler);
+
+    // Møter som ikke får plass i funksjonstiden heller, gir varsel.
+    const forMye = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 10 });
+    expect(forMye.advarsler).toContain('motetid_for_stor');
+  });
+
+  it('med stillingsprosent er undervisningen stillingen minus funksjonene', () => {
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: { type: 'niva', t60: 525, t45: 700 } }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(r.beskjeftigelse.verdi).toBe(80);
+    expect(r.deler.find((d) => d.id === 'undervisning')?.timer).toBe(420);
+    expect(r.stilling.verdi).toBe(100);
+    const over = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(over.advarsler).toContain('funksjon_over_stilling');
+    expect(over.stilling.verdi).toBe(20);
   });
 });
 

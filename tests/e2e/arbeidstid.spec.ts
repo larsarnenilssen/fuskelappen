@@ -159,13 +159,27 @@ test.describe('arbeidstid', () => {
   test('fordelingen kan regnes ut fra stillingsprosent', async ({ page }) => {
     await aapne(page, '/arbeidstid/fordeling');
     await page.getByRole('radio', { name: 'Stillingsprosent' }).check();
-    await expect(page.getByLabel('Undervisning i prosent av full stilling')).toHaveValue('100');
+    await expect(page.getByRole('textbox', { name: 'Stillingsprosent' })).toHaveValue('100');
     await page.getByLabel('Årsramme (vedlegg 1)').selectOption({ value: '525' });
     await expect(resultat(page)).toContainText('100');
     const tabell = page.locator('.fordeling-tabell');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('525');
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('625');
     await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
+  });
+
+  test('fordelingen virker for en stilling med bare funksjon', async ({ page }) => {
+    await aapne(page, '/arbeidstid/fordeling');
+    await page.getByRole('radio', { name: 'Stillingsprosent' }).check();
+    await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('10');
+    await page.getByLabel('Reduksjon i prosent').fill('10');
+    await page.getByLabel('Møtetid per uke (timer)').fill('3');
+    await expect(page.locator('.merknad-advarsel')).toHaveCount(0);
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0');
+    await expect(tabell.getByRole('row', { name: /Møtetid/ })).toContainText('114');
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('54,8');
+    await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText('168,8');
   });
 
   test('fagsøket finner fagnavn fra Grep', async ({ page }) => {
@@ -254,7 +268,7 @@ test.describe('arbeidstid', () => {
 
   test('stillingsplan med flere fag og funksjon gir teknisk undertid (fasit 014)', async ({ page }) => {
     await aapne(page, '/arbeidstid/stillingsplan');
-    await expect(page.getByLabel('Stillingsprosent')).toHaveValue('100');
+    await expect(page.getByRole('textbox', { name: 'Stillingsprosent' })).toHaveValue('100');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('140');
     for (const nr of [2, 3]) {

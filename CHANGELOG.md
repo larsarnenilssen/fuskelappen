@@ -22,7 +22,12 @@ Ny hovedkalkulator, stillingsplan, og årstimer som fylles inn fra faget.
 
 ### Endret
 
+- Fordeling med stillingsprosent: feltet er nå hele stillingen, og undervisningen er stillingen minus funksjonene. Tidligere var feltet bare undervisningen.
 - Oversikten over arbeidstidsmodulen viser stillingsplanen som et stort kort øverst og de andre kalkulatorene under «Flere kalkulatorer».
+
+### Rettet
+
+- Fordelingen virker nå for en stilling med bare funksjon, for eksempel 10 % stilling med 10 % funksjon. Møtetid som ikke får plass i den planfestede tiden for undervisningen, legges i funksjonstiden. Delene i diagrammet summerer seg alltid til årsverket for stillingen. Med bare funksjoner kan fordelingen også regnes ut uten fag.
 
 ## [0.2.2] – 2026-09-29
 

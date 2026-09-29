@@ -91,7 +91,9 @@ export type Storrelse =
   | 'funksjoner'
   | 'samlet_beskjeftigelse'
   | 'teknisk_differanse'
-  | 'teknisk_timer';
+  | 'teknisk_timer'
+  | 'motetid_i_funksjon'
+  | 'funksjonstid_etter_moter';
 
 export interface Operand {
   navn: Storrelse;
@@ -154,7 +156,10 @@ export type TrinnId =
   | 'sum_funksjon'
   | 'samlet_beskjeftigelse'
   | 'teknisk_differanse'
-  | 'teknisk_timer';
+  | 'teknisk_timer'
+  | 'undervisning_fra_stilling'
+  | 'motetid_i_funksjon'
+  | 'funksjonstid_etter_moter';
 
 export interface Trinn {
   id: TrinnId;
@@ -165,7 +170,7 @@ export interface Trinn {
   gruppe?: number;
 }
 
-export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall';
+export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'funksjon_over_stilling';
 
 export interface Utregning {
   trinn: Trinn[];

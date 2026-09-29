@@ -190,20 +190,20 @@
     nb: |
       Diagrammet viser årsverket i en tenkt stilling. Stillingen er beskjeftigelsen i fagene (B) og funksjoner og andre oppgaver (F), til sammen B + F prosent av 1687,5 timer.
 
-      - **Undervisning** er årstimene i fagene. Regner du ut fra stillingsprosent, er undervisningen stillingsprosent × årsramme ÷ 100, f.eks. 100 % × 525 = 525 timer.
+      - **Undervisning** er årstimene i fagene. Regner du ut fra stillingsprosent, er B stillingsprosenten minus funksjonene, og undervisningen er B × årsramme ÷ 100, f.eks. (100 − 20) % × 525 = 420 timer. En stilling kan også ha bare funksjoner og ingen undervisning.
       - **Møtetid** er møtetimene per uke × 38 uker.
       - **Annen planfestet tid** er planfestet tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
-      - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet.
+      - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet. Får ikke møtetiden plass i den planfestede tiden for undervisningsdelen, for eksempel når stillingen bare er funksjon, legges resten av møtetiden i funksjonstiden.
       - **Tid læreren disponerer selv** er 537,5 × B.
 
       For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon, ikke en arbeidsplan. Hvordan tiden fordeles, avtales på skolen.
     nn: |
       Diagrammet viser årsverket i ei tenkt stilling. Stillinga er sysselsetjinga i faga (B) og funksjonar og andre oppgåver (F), til saman B + F prosent av 1687,5 timar.
 
-      - **Undervisning** er årstimane i faga. Reknar du ut frå stillingsprosent, er undervisninga stillingsprosent × årsramme ÷ 100, t.d. 100 % × 525 = 525 timar.
+      - **Undervisning** er årstimane i faga. Reknar du ut frå stillingsprosent, er B stillingsprosenten minus funksjonane, og undervisninga er B × årsramme ÷ 100, t.d. (100 − 20) % × 525 = 420 timar. Ei stilling kan også ha berre funksjonar og inga undervisning.
       - **Møtetid** er møtetimane per veke × 38 veker.
       - **Anna planfesta tid** er planfesta tid for undervisningsdelen (1150 × B) minus undervisning og møtetid.
-      - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta.
+      - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta. Får ikkje møtetida plass i den planfesta tida for undervisningsdelen, til dømes når stillinga berre er funksjon, blir resten av møtetida lagd i funksjonstida.
       - **Tid læraren disponerer sjølv** er 537,5 × B.
 
       For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon, ikkje ein arbeidsplan. Korleis tida blir fordelt, blir avtalt på skulen.

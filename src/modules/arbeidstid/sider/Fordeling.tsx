@@ -3,7 +3,7 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, type FordelingsdelId, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
+import { beregnFordeling, type FordelingsdelId, funksjonsprosent, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
 import { Fordelingsdiagram, Fordelingstabell } from '../komponenter/Fordelingsdiagram.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
@@ -49,13 +49,17 @@ export default function Fordeling() {
   const inndata = s.grupper.map((g) => tilGruppe(g, rader, false));
   const utfylte = inndata.filter((g): g is Gruppe => g !== null);
   const reduksjon = tilReduksjon(s.type, s.funksjon) ?? { type: 'prosent', prosent: 0 };
+  // Funksjonen i prosent av full stilling, for å se om det er undervisning igjen i stillingen.
+  const funksjon = prov(() => funksjonsprosent(hent, reduksjon).prosent.verdi).resultat ?? 0;
+  const arsramme = s.t60 !== null && s.t45 !== null ? ({ type: 'niva', t60: s.t60, t45: s.t45 } as const) : null;
+  // En stilling med bare funksjoner (uten fag, eller med stillingsprosent lik funksjonene) kan også regnes ut.
   const grunnlag: Undervisningsgrunnlag | null =
     s.grunnlag === 'fag'
-      ? utfylte.length > 0
+      ? utfylte.length > 0 || funksjon > 0
         ? { type: 'fag', grupper: utfylte }
         : null
-      : s.stilling !== null && s.t60 !== null && s.t45 !== null
-        ? { type: 'stilling', prosent: s.stilling, arsramme: { type: 'niva', t60: s.t60, t45: s.t45 } }
+      : s.stilling !== null && s.stilling > 0 && (arsramme !== null || s.stilling <= funksjon)
+        ? { type: 'stilling', prosent: s.stilling, arsramme }
         : null;
   const { resultat, feil } = prov(() => (grunnlag ? beregnFordeling(hent, { undervisning: grunnlag, funksjon: reduksjon, moterPerUke: s.moter ?? 0 }) : null));
 
