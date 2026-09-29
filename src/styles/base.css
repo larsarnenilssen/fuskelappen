@@ -7,12 +7,14 @@
 }
 
 /*
- * Lerretet bak siden: toppfarge øverst og menyfarge nederst. iOS bruker denne fargen
- * bak statuslinjen, og viser den under bunnmenyen hvis visningsområdet regnes for kort
- * (kjent feil i installerte nettapper på iOS). Selve siden har egen bakgrunn på body.
+ * Lerretet bak siden. iOS tar fargen bak statuslinjen fra bakgrunnsfargen (background-color)
+ * til html og body, så begge har toppfeltets farge. Fargeovergangen gir menyfarge nederst,
+ * der installerte nettapper på iOS kan vise en stripe under bunnmenyen. Selve siden har
+ * sidefargen på .skall.
  */
 html {
-  background: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
+  background-color: var(--farge-topplinje);
+  background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
   color: var(--farge-tekst);
   font-family: var(--font-tekst);
   font-size: 100%;
@@ -27,7 +29,7 @@ body {
   margin: 0;
   min-height: 100vh;
   min-height: 100dvh;
-  background: var(--farge-bakgrunn);
+  background-color: var(--farge-topplinje);
   overscroll-behavior-y: none;
   overflow-wrap: break-word;
 }
@@ -114,6 +116,7 @@ select {
 .skall {
   min-height: 100vh;
   min-height: 100dvh;
+  background: var(--farge-bakgrunn);
   display: flex;
   flex-direction: column;
 }

@@ -18,12 +18,12 @@ test.describe('målform og tema', () => {
     const html = page.locator('html');
     await page.getByRole('radio', { name: 'Mørkt' }).check();
     await expect(html).toHaveAttribute('data-tema', 'mork');
-    const bakgrunnMork = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+    const bakgrunnMork = await page.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     await page.reload();
     await expect(html).toHaveAttribute('data-tema', 'mork');
     await page.getByRole('radio', { name: 'Lyst' }).check();
     await expect(html).toHaveAttribute('data-tema', 'lys');
-    const bakgrunnLys = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+    const bakgrunnLys = await page.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     expect(bakgrunnLys).not.toBe(bakgrunnMork);
     await page.getByRole('radio', { name: 'Følg systemet' }).check();
     await expect(html).not.toHaveAttribute('data-tema', /.+/);
@@ -40,10 +40,10 @@ test.describe('målform og tema', () => {
     const kontekst = await browser.newContext({ colorScheme: 'dark' });
     const side = await kontekst.newPage();
     await side.goto('http://localhost:4173/protokollen/');
-    const bakgrunn = await side.evaluate(() => getComputedStyle(document.body).backgroundColor);
+    const bakgrunn = await side.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     const lys = await side.evaluate(() => {
       document.documentElement.dataset.tema = 'lys';
-      return getComputedStyle(document.body).backgroundColor;
+      return getComputedStyle(document.querySelector('.skall') as Element).backgroundColor;
     });
     expect(bakgrunn).not.toBe(lys);
     await kontekst.close();
