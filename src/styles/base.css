@@ -932,10 +932,140 @@ main {
   cursor: pointer;
 }
 
-.vippe .felt-hjelp {
-  grid-column: 2;
+/* Bryter, etikett og «?» på én linje; etiketten brytes heller enn at «?» havner på en ny linje. */
+.vippe.med-hjelp {
+  display: grid;
+  grid-template-columns: auto minmax(0, max-content) auto;
+  column-gap: var(--rom-2);
+}
+
+.vippe.med-hjelp > .hjelp-tekst {
+  grid-column: 1 / -1;
+}
+
+/* ---------- «?» med kort forklaring ---------- */
+
+.med-hjelp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--rom-1);
+}
+
+.med-hjelp > .hjelp-tekst {
+  flex-basis: 100%;
+  order: 10;
+}
+
+.hjelpknapp {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--farge-lenke);
+  cursor: pointer;
+}
+
+.hjelpknapp[aria-expanded='true'] {
+  background: var(--farge-info-flate);
+}
+
+.hjelp-tekst {
+  margin: var(--rom-1) 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-info-flate);
+  font-size: var(--str-s);
+}
+
+.hjelp-tekst > :last-child {
+  margin-bottom: 0;
+}
+
+.hjelp-tekst .felt-hjelp,
+.hjelp-tekst .ingress-liten {
+  color: var(--farge-tekst);
+}
+
+/* ---------- Kompakte rader i fagkortene ---------- */
+
+.etikettrad {
+  margin-bottom: var(--rom-1);
+}
+
+.felt .etikettrad label {
+  margin-bottom: 0;
+}
+
+.etikettrad-hoyre {
+  margin-left: auto;
+}
+
+.valgrad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--rom-4);
+  margin: 0 0 var(--rom-1);
+}
+
+.valgrad .vippe {
   margin: 0;
-  font-size: var(--str-xs);
+}
+
+.inndatarad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2) var(--rom-3);
+  margin: 0 0 var(--rom-2);
+}
+
+.fagkort .inndatarad .bryter,
+.fagkort .inndatarad .felt {
+  margin: 0;
+}
+
+.inndatarad .felt {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.felt-kompakt .tallfelt input {
+  flex: none;
+  width: 4.75rem;
+}
+
+.felt-kompakt .tallfelt-enhet {
+  font-size: var(--str-s);
+  white-space: nowrap;
+}
+
+.bryter-kompakt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-2);
+}
+
+.bryter-etikett {
+  font-weight: 600;
+  font-size: var(--str-s);
+}
+
+.bryter-kompakt .bryter-valg label {
+  min-height: 2.25rem;
+  padding: 0 var(--rom-2);
+}
+
+.fagvalg-navn {
+  font-size: var(--str-s);
 }
 
 .fagkortliste {
@@ -974,10 +1104,10 @@ p.fagkort-tittel {
 }
 
 .fagkort-resultat {
-  margin: var(--rom-1) 0 0;
-  text-align: right;
   font-weight: 700;
   color: var(--farge-merke);
+  text-transform: none;
+  letter-spacing: 0;
 }
 
 .fagkort .felt,
@@ -985,10 +1115,32 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-2);
 }
 
+/* Felt side om side. Med subgrid får etikett, felt og hjelpetekst hver sin rad på tvers av feltene,
+   så feltene står på linje selv om etikettene brytes ulikt eller bare ett av feltene har hjelpetekst. */
 .feltrad {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   column-gap: var(--rom-3);
+}
+
+/* Bare for tallfelt: WebKit regner en select i et rutenett som bredere enn den er, og gir da horisontal overflyt. */
+@supports (grid-template-rows: subgrid) {
+  .feltrad > .felt:has(> .tallfelt) {
+    display: grid;
+    grid-row: span 4;
+    grid-template-rows: subgrid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+    align-content: start;
+  }
+
+  .feltrad > .felt > * {
+    min-width: 0;
+  }
+
+  .feltrad > .felt:has(> .tallfelt) > label {
+    align-self: end;
+  }
 }
 
 .fagvelger {
@@ -1245,6 +1397,115 @@ p.fagkort-tittel {
   border: 2px solid var(--farge-merke);
   border-radius: var(--radius-l);
   background: var(--farge-flate);
+}
+
+.resultatkort-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0 var(--rom-2);
+}
+
+.merker-inline {
+  margin: 0;
+}
+
+.merker-inline:empty {
+  display: none;
+}
+
+.resultatkort-knapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: var(--rom-4);
+}
+
+.resultatkort-kopistatus {
+  font-size: var(--str-s);
+  color: var(--farge-ok);
+  font-weight: 600;
+}
+
+.resultatkort-kopi textarea {
+  width: 100%;
+  padding: var(--rom-2);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-s);
+  background: var(--farge-bakgrunn);
+  color: var(--farge-tekst);
+  font-family: var(--font-tall);
+  font-size: var(--str-xs);
+}
+
+/* Fast linje med hovedresultatet, rett over bunnmenyen. */
+.resultatlinje {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(var(--bunnmeny-hoyde) + var(--strek) + env(safe-area-inset-bottom));
+  z-index: 19;
+  display: flex;
+  justify-content: center;
+  padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) 0 calc(var(--rom-4) + env(safe-area-inset-left));
+  pointer-events: none;
+}
+
+.resultatlinje button {
+  pointer-events: auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  width: 100%;
+  max-width: calc(var(--maks-bredde) - 2 * var(--rom-4));
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-4);
+  border: 0;
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  text-align: left;
+  cursor: pointer;
+}
+
+.resultatlinje-tittel {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.resultatlinje-verdi {
+  flex: none;
+  font-size: var(--str-l);
+  font-weight: 700;
+}
+
+.resultatlinje-enhet {
+  font-size: var(--str-s);
+}
+
+/* Kalkulatorsidene: mindre tittel, og plass nederst til resultatlinjen. */
+.kalkulator {
+  padding-bottom: calc(var(--trykkflate) + var(--rom-3));
+}
+
+.kalkulator .tittelrad {
+  align-items: center;
+  column-gap: var(--rom-1);
+}
+
+.kalkulator .tittelrad h1 {
+  font-size: var(--str-xl);
+  margin: var(--rom-3) 0 var(--rom-2);
+}
+
+.kalkulator .tittelrad .ikonknapp {
+  margin: 0 0 0 auto;
 }
 
 .resultatkort-tittel {

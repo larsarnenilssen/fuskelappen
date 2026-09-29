@@ -17,7 +17,11 @@ export interface Overtid {
 }
 
 export interface OvertidResultat extends Utregning {
+  /** Undervisningstimer i overtid: overtidsprosenten regnet om med fagets årsramme. */
   overtidstimer: Operand;
+  /** Arbeidstimene det betales for (HTA § 12.4). */
+  kalkulertTid: Operand;
+  timelonn: Operand;
   betaling: Operand;
 }
 
@@ -45,5 +49,5 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
     (kalkulert.resultat.verdi * tl.resultat.verdi * (100 + tillegg.verdi)) / 100,
   );
   const alle: Trinn[] = [...valg.trinn, prosent, timer, kalkulert, tl, betaling];
-  return { overtidstimer: timer.resultat, betaling: betaling.resultat, trinn: alle, advarsler };
+  return { overtidstimer: timer.resultat, kalkulertTid: kalkulert.resultat, timelonn: tl.resultat, betaling: betaling.resultat, trinn: alle, advarsler };
 }

@@ -39,7 +39,7 @@ export default function Fordeling() {
       t60: null as number | null,
       t45: null as number | null,
       type: 'prosent' as Reduksjon['type'],
-      funksjon: null as number | null,
+      funksjon: 0 as number | null,
       moter: null as number | null,
     }),
     (lagret) => reserverIder(lagret.grupper),
@@ -97,7 +97,7 @@ export default function Fordeling() {
           <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
           <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
           <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
-          <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} />
+          <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
         </>
       ) : (
         !feil && <ManglerInndata />

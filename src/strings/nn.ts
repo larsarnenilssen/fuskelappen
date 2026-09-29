@@ -195,7 +195,17 @@ export const nn: Tekster = {
       vis: 'Vis forklaring',
       skjul: 'Skjul forklaring',
     },
+    hjelp: {
+      vis: 'Forklaring: {tema}',
+    },
     resultat: {
+      kopier: 'Kopier',
+      kopiert: 'Kopiert',
+      kopierFeilet: 'Kunne ikkje kopiere. Merk teksten og kopier han sjølv.',
+      kopiTekst: 'Kopi av utrekninga',
+      tilResultat: 'Gå til resultatet',
+      beregnet: 'Rekna ut med {app} {dato}.',
+      ikkeKontrollert: 'Verdiane er ikkje kontrollerte av eigar.',
       visUtregning: 'Vis utrekning',
       skjulUtregning: 'Skjul utrekning',
       utregning: 'Utrekning',

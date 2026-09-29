@@ -74,6 +74,8 @@ interface Props {
   trinn: readonly Trinn[];
   /** Vis siste trinn som sammendrag under verdien. Standard er sann. */
   sammendrag?: boolean;
+  /** Vis hovedresultatet i en fast linje nederst når kortet er utenfor skjermen. Standard er sann. */
+  fast?: boolean;
   children?: ComponentChildren;
 }
 
@@ -92,7 +94,7 @@ function samleKilder(steg: readonly Utregningssteg[]): NonNullable<Utregningsste
 }
 
 /** Resultatkort for en beregning, med kompakt utregning trinn for trinn og kildene samlet. */
-export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, children }: Props) {
+export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fast = true, children }: Props) {
   const { t } = useTekst();
   const enhet = enhetTekst(t, resultat.enhet);
   const steg = trinn.map((tr) => stegFra(t, tr));
@@ -107,6 +109,7 @@ export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, chi
       {...(sammendrag && siste?.innsatt ? { sammendrag: `${siste.innsatt} = ${siste.verdi}` } : {})}
       steg={steg.map((s) => ({ ...s, kilder: (s.kilder ?? []).filter((k) => k.niva !== 'nasjonal') }))}
       kilder={samleKilder(steg)}
+      fast={fast}
     >
       {children}
     </Resultatkort>

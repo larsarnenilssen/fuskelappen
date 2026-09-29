@@ -34,10 +34,18 @@ export default function Periode() {
   return (
     <Kalkulatorside id="periode">
       <div class="feltrad">
-        <Tallfelt etikett={t('arbeidstid.periode.dager')} verdi={dager} min={1} maks={400} onEndring={(v) => settSkjema({ ...skjema, dager: v })} />
+        <Tallfelt
+          etikett={t('arbeidstid.periode.dager')}
+          hjelpetekst={t('arbeidstid.periode.dagerHjelp')}
+          verdi={dager}
+          min={1}
+          maks={400}
+          onEndring={(v) => settSkjema({ ...skjema, dager: v })}
+        />
         <Tallfelt
           etikett={t('arbeidstid.periode.skolear')}
           hjelpetekst={t('arbeidstid.periode.skolearHjelp', { dager: formaterTall(skolear) })}
+          plassholder={formaterTall(skolear)}
           verdi={dagerSkolear}
           min={1}
           maks={400}

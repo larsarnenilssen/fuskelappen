@@ -1,13 +1,16 @@
-// Resultatkort med «vis utregning». Viser nivå og «ikke kontrollert» der det gjelder.
+// Resultatkort med «vis utregning» og «kopier». Viser nivå og «ikke kontrollert» der det gjelder.
 // Utregningen er kompakt: én linje per trinn med tallene satt inn, formelen med navn i liten skrift,
-// og kildene samlet nederst.
+// og kildene samlet nederst. Hovedresultatet kan også vises i en fast linje nederst på skjermen.
 import type { ComponentChildren } from 'preact';
-import { useId, useState } from 'preact/hooks';
-import { useTekst } from '../app/tilstand.ts';
+import { useId, useRef, useState } from 'preact/hooks';
+import { type T, useTekst } from '../app/tilstand.ts';
+import { app } from '../config/app.ts';
+import { formaterDato } from '../core/i18n/tekst.ts';
 import type { KildeRef, Niva } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
-import { Kildelenke } from './Kildelenke.tsx';
+import { Kildelenke, kildeTekst } from './Kildelenke.tsx';
 import { Nivamerke, Statusmerke } from './Merker.tsx';
+import { Resultatlinje } from './Resultatlinje.tsx';
 
 export interface Utregningssteg {
   tekst: string;
@@ -34,31 +37,88 @@ interface Props {
   steg: Utregningssteg[];
   /** Kildene for hele utregningen, vist samlet nederst i utregningen. */
   kilder?: { kilde: KildeRef; niva: Niva; rad?: string }[];
+  /** Vis hovedresultatet i en fast linje nederst når kortet er utenfor skjermen. */
+  fast?: boolean;
   /** Innhold under hovedverdien, f.eks. en oversikt over delresultater. */
   children?: ComponentChildren;
 }
 
-export function Resultatkort({ tittel, verdi, enhet, niva = 'nasjonal', ikkeKontrollert = false, sammendrag, steg, kilder, children }: Props) {
-  const { t } = useTekst();
+/** Utregningen som ren tekst, til utklippstavlen. */
+export function lagKopitekst(t: T, p: Omit<Props, 'children' | 'fast'>, dato: string): string {
+  const linjer = [`${p.tittel}: ${p.verdi}${p.enhet ? ` ${p.enhet}` : ''}`];
+  if (p.sammendrag) linjer.push(p.sammendrag);
+  linjer.push('', `${t('komponenter.resultat.utregning')}:`);
+  p.steg.forEach((s, i) => {
+    linjer.push(`${i + 1}. ${s.tekst}: ${s.innsatt ? `${s.innsatt} = ` : ''}${s.verdi}`);
+    if (s.formel) linjer.push(`   ${s.formel}`);
+  });
+  if (p.kilder && p.kilder.length > 0) {
+    linjer.push('', `${t('komponenter.resultat.kilde')}:`);
+    for (const k of p.kilder) {
+      const { navn, punkt, url } = kildeTekst(t, k.kilde);
+      linjer.push(`- ${navn}${punkt}${k.rad ? ` (${k.rad})` : ''}${url ? `: ${url}` : ''}`);
+    }
+  }
+  linjer.push('');
+  if (p.ikkeKontrollert) linjer.push(t('komponenter.resultat.ikkeKontrollert'));
+  linjer.push(t('komponenter.resultat.beregnet', { app: app.navn, dato }));
+  return linjer.join('\n');
+}
+
+type Kopistatus = 'klar' | 'kopiert' | 'feilet';
+
+export function Resultatkort(props: Props) {
+  const { tittel, verdi, enhet, niva = 'nasjonal', ikkeKontrollert = false, sammendrag, steg, kilder, fast = false, children } = props;
+  const { t, malform } = useTekst();
   const [vis, settVis] = useState(false);
+  const [kopi, settKopi] = useState<{ status: Kopistatus; tekst: string }>({ status: 'klar', tekst: '' });
   const id = useId();
+  const kort = useRef<HTMLElement>(null);
+
+  const kopier = async () => {
+    const tekst = lagKopitekst(t, props, formaterDato(new Date().toISOString(), malform));
+    try {
+      await navigator.clipboard.writeText(tekst);
+      settKopi({ status: 'kopiert', tekst });
+    } catch {
+      settKopi({ status: 'feilet', tekst });
+    }
+  };
+
   return (
-    <section class="resultatkort" aria-label={tittel}>
-      <h2 class="resultatkort-tittel">{tittel}</h2>
+    <section class="resultatkort" aria-label={tittel} ref={kort} tabIndex={-1}>
+      <div class="resultatkort-topp">
+        <h2 class="resultatkort-tittel">{tittel}</h2>
+        <div class="merker merker-inline">
+          <Nivamerke niva={niva} />
+          {ikkeKontrollert && <Statusmerke status="utkast" />}
+        </div>
+      </div>
       <p class="resultatkort-verdi" aria-live="polite">
         <span class="tall">{verdi}</span>
         {enhet && <span class="resultatkort-enhet"> {enhet}</span>}
       </p>
       {sammendrag && <p class="resultatkort-sammendrag tall">{sammendrag}</p>}
-      <div class="merker">
-        <Nivamerke niva={niva} />
-        {ikkeKontrollert && <Statusmerke status="utkast" />}
-      </div>
       {children}
-      <button type="button" class="lenkeknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
-        <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten" />
-        {vis ? t('komponenter.resultat.skjulUtregning') : t('komponenter.resultat.visUtregning')}
-      </button>
+      <div class="resultatkort-knapper">
+        <button type="button" class="lenkeknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
+          <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten" />
+          {vis ? t('komponenter.resultat.skjulUtregning') : t('komponenter.resultat.visUtregning')}
+        </button>
+        <button type="button" class="lenkeknapp" onClick={() => void kopier()}>
+          <Ikon navn="kopier" class="ikon-liten" />
+          {t('komponenter.resultat.kopier')}
+        </button>
+        <span class="resultatkort-kopistatus" role="status">
+          {kopi.status === 'kopiert' ? t('komponenter.resultat.kopiert') : ''}
+        </span>
+      </div>
+      {kopi.status === 'feilet' && (
+        <div class="resultatkort-kopi">
+          <p class="felt-hjelp">{t('komponenter.resultat.kopierFeilet')}</p>
+          <textarea readOnly rows={8} aria-label={t('komponenter.resultat.kopiTekst')} value={kopi.tekst} />
+        </div>
+      )}
       <div id={id} hidden={!vis}>
         <h3 class="skjult-visuelt">{t('komponenter.resultat.utregning')}</h3>
         <ol class="utregning">
@@ -98,6 +158,7 @@ export function Resultatkort({ tittel, verdi, enhet, niva = 'nasjonal', ikkeKont
           </div>
         )}
       </div>
+      {fast && <Resultatlinje mal={kort} tittel={tittel} verdi={verdi} {...(enhet ? { enhet } : {})} />}
     </section>
   );
 }

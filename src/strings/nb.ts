@@ -195,7 +195,17 @@ export const nb = {
       vis: 'Vis forklaring',
       skjul: 'Skjul forklaring',
     },
+    hjelp: {
+      vis: 'Forklaring: {tema}',
+    },
     resultat: {
+      kopier: 'Kopier',
+      kopiert: 'Kopiert',
+      kopierFeilet: 'Kunne ikke kopiere. Marker teksten og kopier den selv.',
+      kopiTekst: 'Kopi av utregningen',
+      tilResultat: 'Gå til resultatet',
+      beregnet: 'Regnet ut med {app} {dato}.',
+      ikkeKontrollert: 'Verdiene er ikke kontrollert av eier.',
       visUtregning: 'Vis utregning',
       skjulUtregning: 'Skjul utregning',
       utregning: 'Utregning',

@@ -4,6 +4,7 @@ import { useId, useMemo, useState } from 'preact/hooks';
 import fagkoder from '../../../../data/grep/fagkoder.json';
 import programomrader from '../../../../data/grep/programomrader.json';
 import { useTekst } from '../../../app/tilstand.ts';
+import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -11,47 +12,65 @@ import { somTabell } from '../../../core/regler/motor.ts';
 import type { Arsrammerad, Arsrammevalg, Gruppe, Hent } from '../beregning/index.ts';
 import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
 
-/** Segmentert bryter: et lite utvalg valg side om side (radioknapper). */
+/**
+ * Segmentert bryter: et lite utvalg valg side om side (radioknapper).
+ * Kompakt: mindre knapper, og etiketten (om den vises) står på samme linje som valgene.
+ */
 export function Bryter<V extends string>({
   legend,
   verdi,
   valg,
   onEndring,
   skjultLegend = false,
+  kompakt = false,
 }: {
   legend: string;
   verdi: V;
   valg: { verdi: V; tekst: string }[];
   onEndring: (v: V) => void;
   skjultLegend?: boolean;
+  kompakt?: boolean;
 }) {
   const id = useId();
+  const knapper = (
+    <div class="bryter-valg">
+      {valg.map((v) => (
+        <label key={v.verdi} class={verdi === v.verdi ? 'valgt' : undefined}>
+          <input type="radio" name={id} checked={verdi === v.verdi} onChange={() => onEndring(v.verdi)} />
+          <span>{v.tekst}</span>
+        </label>
+      ))}
+    </div>
+  );
+  if (kompakt) {
+    return (
+      <div class="bryter bryter-kompakt" role="radiogroup" aria-labelledby={`${id}-etikett`}>
+        <span id={`${id}-etikett`} class={skjultLegend ? 'skjult-visuelt' : 'bryter-etikett'}>
+          {legend}
+        </span>
+        {knapper}
+      </div>
+    );
+  }
   return (
     <fieldset class="bryter">
       <legend class={skjultLegend ? 'skjult-visuelt' : 'bryter-legend'}>{legend}</legend>
-      <div class="bryter-valg">
-        {valg.map((v) => (
-          <label key={v.verdi} class={verdi === v.verdi ? 'valgt' : undefined}>
-            <input type="radio" name={id} checked={verdi === v.verdi} onChange={() => onEndring(v.verdi)} />
-            <span>{v.tekst}</span>
-          </label>
-        ))}
-      </div>
+      {knapper}
     </fieldset>
   );
 }
 
-/** Av/på-bryter (avkrysning med rollen «switch»). */
+/** Av/på-bryter (avkrysning med rollen «switch»). Hjelpeteksten ligger bak et «?». */
 export function Vippe({ tekst, hjelp, pa, onEndring }: { tekst: string; hjelp?: string; pa: boolean; onEndring: (pa: boolean) => void }) {
   const id = useId();
   return (
-    <div class="vippe">
-      <input id={id} type="checkbox" role="switch" checked={pa} aria-describedby={hjelp ? `${id}-hjelp` : undefined} onChange={(e) => onEndring(e.currentTarget.checked)} />
+    <div class="vippe med-hjelp">
+      <input id={id} type="checkbox" role="switch" checked={pa} onChange={(e) => onEndring(e.currentTarget.checked)} />
       <label for={id}>{tekst}</label>
       {hjelp && (
-        <p id={`${id}-hjelp`} class="felt-hjelp">
-          {hjelp}
-        </p>
+        <Hjelp tema={tekst}>
+          <p class="felt-hjelp">{hjelp}</p>
+        </Hjelp>
       )}
     </div>
   );
@@ -206,7 +225,15 @@ export function Fagvelger({
   return (
     <div class="fagvelger">
       <div class="felt">
-        <label for={id}>{etikett}</label>
+        <div class="etikettrad med-hjelp">
+          <label for={id}>{etikett}</label>
+          <Hjelp tema={etikett}>
+            <p class="felt-hjelp">{t('arbeidstid.felles.fagSokHjelp')}</p>
+          </Hjelp>
+          <button type="button" class="lenkeknapp liten etikettrad-hoyre" onClick={() => onEndring({ valg: 'manuell', t60: null, stjerne: false })}>
+            {t('arbeidstid.felles.manuellValg')}
+          </button>
+        </div>
         <div class="sokefelt">
           <Ikon navn="sok" class="sokefelt-ikon" />
           <input
@@ -215,15 +242,11 @@ export function Fagvelger({
             autoComplete="off"
             enterKeyHint="search"
             placeholder={t('arbeidstid.felles.fagSok')}
-            aria-describedby={`${id}-hjelp`}
             aria-controls={`${id}-treff`}
             value={sok}
             onInput={(e) => settSok(e.currentTarget.value)}
           />
         </div>
-        <p id={`${id}-hjelp`} class="felt-hjelp">
-          {t('arbeidstid.felles.fagSokHjelp')}
-        </p>
       </div>
       <ul id={`${id}-treff`} class="fagtreff" aria-live="polite">
         {treff.map((tr) => (
@@ -242,9 +265,6 @@ export function Fagvelger({
         ))}
       </ul>
       {sok.trim() !== '' && treff.length === 0 && <p class="felt-hjelp">{t('arbeidstid.felles.ingenFagTreff')}</p>}
-      <button type="button" class="lenkeknapp liten" onClick={() => onEndring({ valg: 'manuell', t60: null, stjerne: false })}>
-        {t('arbeidstid.felles.manuellValg')}
-      </button>
       {ekstra}
     </div>
   );
@@ -287,18 +307,22 @@ export function Fagfelt({
           />
         </div>
       ))}
-      {plasser[0]?.valg && (
-        <button type="button" class="lenkeknapp liten" onClick={() => onPlasser([...plasser, tomArsrammeplass()])}>
-          <Ikon navn="pluss" class="ikon-liten" />
-          {t('arbeidstid.felles.leggTilArsramme')}
-        </button>
+      {(plasser[0]?.valg || erStjernefag(plasser, rader)) && (
+        <div class="valgrad">
+          {plasser[0]?.valg && (
+            <button type="button" class="lenkeknapp liten" onClick={() => onPlasser([...plasser, tomArsrammeplass()])}>
+              <Ikon navn="pluss" class="ikon-liten" />
+              {t('arbeidstid.felles.leggTilArsramme')}
+            </button>
+          )}
+          {erStjernefag(plasser, rader) && <Vippe tekst={t('arbeidstid.felles.faaElever')} hjelp={t('arbeidstid.felles.faaEleverHjelp')} pa={faaElever} onEndring={onFaaElever} />}
+        </div>
       )}
-      {erStjernefag(plasser, rader) && <Vippe tekst={t('arbeidstid.felles.faaElever')} hjelp={t('arbeidstid.felles.faaEleverHjelp')} pa={faaElever} onEndring={onFaaElever} />}
     </>
   );
 }
 
-/** Minutter per økt: 45, 60, 90 eller annet. */
+/** Minutter per økt: 45, 60, 90 eller annet. Kompakt, med etiketten på samme linje. */
 export function Minuttvelger({ minutter, fritt, onEndring }: { minutter: number | null; fritt: boolean; onEndring: (m: number | null, fritt: boolean) => void }) {
   const { t } = useTekst();
   const valg = fritt ? 'annet' : String(minutter ?? 45);
@@ -306,6 +330,7 @@ export function Minuttvelger({ minutter, fritt, onEndring }: { minutter: number 
     <>
       <Bryter
         legend={t('arbeidstid.felles.minutter')}
+        kompakt
         verdi={valg}
         valg={[
           { verdi: '45', tekst: '45' },
@@ -387,6 +412,7 @@ export function Gruppekort({
     <fieldset class="fagkort" data-gruppe={nr}>
       <legend class="fagkort-tittel">
         <span>{t('arbeidstid.felles.gruppe', { nr })}</span>
+        {delresultat && <span class="fagkort-resultat tall"> · {t('arbeidstid.felles.delresultat', { verdi: delresultat })}</span>}
       </legend>
       {kanFjernes && (
         <button type="button" class="ikonknapp fagkort-fjern" aria-label={t('arbeidstid.felles.fjernGruppe', { nr })} onClick={onFjern}>
@@ -401,35 +427,56 @@ export function Gruppekort({
         onPlasser={(arsrammer) => sett({ arsrammer })}
         onFaaElever={(faaElever) => sett({ faaElever })}
       />
-      <Bryter
-        legend={t('arbeidstid.felles.undervisning')}
-        skjultLegend
-        verdi={gruppe.modus}
-        valg={[
-          { verdi: 'arstimer', tekst: periode ? t('arbeidstid.felles.modusTimerPeriode') : t('arbeidstid.felles.modusArstimer') },
-          { verdi: 'okter', tekst: t('arbeidstid.felles.modusOkter') },
-        ]}
-        onEndring={(modus) => sett({ modus })}
-      />
-      {gruppe.modus === 'arstimer' ? (
-        <Tallfelt
-          key="timer"
-          etikett={periode ? t('arbeidstid.felles.timerIPerioden') : t('arbeidstid.felles.arstimer')}
-          verdi={gruppe.arstimer}
-          min={0}
-          maks={2000}
-          onEndring={(v) => sett({ arstimer: v })}
+      <div class="inndatarad">
+        <Bryter
+          legend={t('arbeidstid.felles.undervisning')}
+          skjultLegend
+          kompakt
+          verdi={gruppe.modus}
+          valg={[
+            { verdi: 'arstimer', tekst: periode ? t('arbeidstid.felles.modusTimerPeriode') : t('arbeidstid.felles.modusArstimer') },
+            { verdi: 'okter', tekst: t('arbeidstid.felles.modusOkter') },
+          ]}
+          onEndring={(modus) => sett({ modus })}
         />
-      ) : (
+        {gruppe.modus === 'arstimer' ? (
+          <Tallfelt
+            key="timer"
+            class="felt-kompakt"
+            skjultEtikett
+            etikett={periode ? t('arbeidstid.felles.timerIPerioden') : t('arbeidstid.felles.arstimer')}
+            verdi={gruppe.arstimer}
+            min={0}
+            maks={2000}
+            onEndring={(v) => sett({ arstimer: v })}
+          />
+        ) : (
+          <Tallfelt
+            key="okter"
+            class="felt-kompakt"
+            skjultEtikett
+            etikett={t('arbeidstid.felles.okter')}
+            verdi={gruppe.okter}
+            min={0}
+            maks={50}
+            onEndring={(v) => sett({ okter: v })}
+          />
+        )}
+      </div>
+      {gruppe.modus === 'okter' && (
         <>
-          <div class="feltrad">
-            <Tallfelt key="okter" etikett={t('arbeidstid.felles.okter')} verdi={gruppe.okter} min={0} maks={50} onEndring={(v) => sett({ okter: v })} />
-            {(periode || gruppe.endreUker) && (
-              <Tallfelt key="uker" etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')} verdi={gruppe.uker} min={0} maks={60} onEndring={(v) => sett({ uker: v })} />
-            )}
-          </div>
           <Minuttvelger minutter={gruppe.minutter} fritt={gruppe.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ minutter, minutterFritt })} />
-          {!periode && !gruppe.endreUker && (
+          {periode || gruppe.endreUker ? (
+            <Tallfelt
+              key="uker"
+              class="felt-kompakt"
+              etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')}
+              verdi={gruppe.uker}
+              min={0}
+              maks={60}
+              onEndring={(v) => sett({ uker: v })}
+            />
+          ) : (
             <p class="felt-hjelp">
               {t('arbeidstid.felles.ukerStandard', { uker: formaterTall(standardUker) })}{' '}
               <button type="button" class="lenkeknapp liten" onClick={() => sett({ endreUker: true, uker: standardUker })}>
@@ -438,11 +485,6 @@ export function Gruppekort({
             </p>
           )}
         </>
-      )}
-      {delresultat && (
-        <p class="fagkort-resultat tall" aria-live="polite">
-          = {t('arbeidstid.felles.delresultat', { verdi: delresultat })}
-        </p>
       )}
     </fieldset>
   );

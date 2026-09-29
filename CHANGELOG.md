@@ -4,6 +4,30 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.2.2] – 2026-09-29
+
+Kalkulatorene tar mindre plass og viser svaret hele tiden.
+
+### Lagt til
+
+- Når resultatkortet er utenfor skjermen, vises svaret i en smal linje over menyen nederst. Trykk på linjen for å gå til resultatet.
+- «Kopier» på resultatkortet kopierer svaret, utregningen og kildene som tekst, f.eks. til en e-post.
+- Overtid viser undervisningstimene i overtid, kalkulert tid (timene det betales for) og timelønnen. Et «?» forklarer hvorfor faget endrer antall undervisningstimer, men ikke beløpet.
+- Små «?» som viser en kort forklaring når du trykker på dem: ved tittelen på hver kalkulator, ved fagsøket og ved «15 eller færre elever».
+
+### Endret
+
+- Fagkortene er tettere: bryteren for årstimer eller økter og tallfeltet står på samme linje, og delresultatet står ved «Fag 1», «Fag 2» osv.
+- «Skriv inn årsramme selv» står på samme linje som «Fag». Søkefeltet viser eksempler på hva du kan søke etter.
+- Minuttvalget (45, 60, 90 eller annet) står på én linje.
+- Mindre tittel på kalkulatorsidene. Ingressen ligger bak «?».
+- «Ikke kontrollert» står ved siden av tittelen på resultatkortet.
+- Fordelingen starter med 0 % funksjon.
+
+### Rettet
+
+- Feltene for dager i perioden og dager i skoleåret står nå på linje. Tomt felt for skoleåret viser 190 som grå tekst.
+
 ## [0.2.1] – 2026-09-29
 
 Rettinger etter eiers førsteinntrykk av fase 1.
@@ -93,7 +117,10 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.3...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.2.2...HEAD
+[0.2.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.2
+[0.2.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.1
+[0.2.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.0
 [0.1.3]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.3
 [0.1.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.2
 [0.1.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.1

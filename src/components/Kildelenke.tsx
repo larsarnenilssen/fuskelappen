@@ -1,6 +1,6 @@
 // Lenke til en kilde i kilderegisteret, med punkt der det er oppgitt.
 import kilderegister from '../../content/kilder.yaml';
-import { useTekst } from '../app/tilstand.ts';
+import { type T, useTekst } from '../app/tilstand.ts';
 import type { KildeRef, Kilderegister } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
 
@@ -10,13 +10,17 @@ export function finnKilde(id: string) {
   return kilder.get(id);
 }
 
-export function Kildelenke({ kilde }: { kilde: KildeRef }) {
-  const { t } = useTekst();
+/** Navn, punkt og adresse for en kilde, slik den vises og kopieres. */
+export function kildeTekst(t: T, kilde: KildeRef): { navn: string; punkt: string; url: string | undefined } {
   const k = kilder.get(kilde.id);
-  const url = kilde.url ?? k?.url;
-  const navn = k?.navn ?? t('komponenter.kilde.ukjent');
   // «punkt 5.2», men «Vedlegg 1» og «Kap. 1 § 12.4» uten «punkt» foran.
   const punkt = kilde.punkt ? `, ${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
+  return { navn: k?.navn ?? t('komponenter.kilde.ukjent'), punkt, url: kilde.url ?? k?.url };
+}
+
+export function Kildelenke({ kilde }: { kilde: KildeRef }) {
+  const { t } = useTekst();
+  const { navn, punkt, url } = kildeTekst(t, kilde);
   if (!url) {
     return (
       <span class="kildelenke">

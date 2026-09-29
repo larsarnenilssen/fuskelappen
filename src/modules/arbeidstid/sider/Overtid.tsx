@@ -1,13 +1,14 @@
 // Overtid ved beskjeftigelse over 100 % (fast overtid), betalt med 1,5 × timelønn for undervisning.
 import { useTekst } from '../../../app/tilstand.ts';
+import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnOvertid } from '../beregning/index.ts';
 import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks } from '../komponenter/Skjema.tsx';
-import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
+import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Overtid() {
@@ -15,6 +16,7 @@ export default function Overtid() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const konstant = useRegeltall(hent, 'hta.timelonn_konstant') ?? 0;
   const [s, sett] = useSkjematilstand('overtid', () => ({
     beskjeftigelse: null as number | null,
     plasser: [tomArsrammeplass()],
@@ -62,7 +64,19 @@ export default function Overtid() {
           <Advarsler advarsler={resultat.advarsler} />
           {resultat.overtidstimer.verdi === 0 && <p class="merknad">{t('arbeidstid.overtid.ingenOvertid')}</p>}
           <Utregningskort tittel={t('arbeidstid.resultat.overtidsbetaling')} resultat={resultat.betaling} trinn={resultat.trinn}>
-            <Oversiktsliste rader={[{ navn: t('arbeidstid.resultat.overtidstimer'), verdi: medEnhet(t, resultat.overtidstimer.verdi, 'arsrammetimer') }]} />
+            <Oversiktsliste
+              rader={[
+                { navn: t('arbeidstid.resultat.overtidstimer'), verdi: medEnhet(t, resultat.overtidstimer.verdi, 'arsrammetimer') },
+                { navn: t('arbeidstid.resultat.kalkulertTidOvertid'), verdi: medEnhet(t, resultat.kalkulertTid.verdi, 'timer') },
+                { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, resultat.timelonn.verdi, 'kroner_per_time') },
+              ]}
+            />
+            <div class="med-hjelp liten">
+              <span class="dempet">{t('arbeidstid.overtid.forklaringTema')}</span>
+              <Hjelp tema={t('arbeidstid.overtid.forklaringTema')}>
+                <p class="felt-hjelp">{t('arbeidstid.overtid.forklaring', { konstant: tallTekst(konstant), perProsent: tallTekst(konstant / 100) })}</p>
+              </Hjelp>
+            </div>
           </Utregningskort>
         </>
       ) : (
