@@ -3,11 +3,11 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, type FordelingsdelId, type Gruppe, type Reduksjon } from '../beregning/index.ts';
+import { beregnFordeling, type FordelingsdelId, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
 import { Fordelingsdiagram, Fordelingstabell } from '../komponenter/Fordelingsdiagram.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
-import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
+import { Bryter, Grupper, Nivavelger, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 import { Reduksjonsfelt, tilReduksjon } from './Planfestet.tsx';
@@ -32,20 +32,61 @@ export default function Fordeling() {
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const [s, sett] = useSkjematilstand(
     'fordeling',
-    () => ({ grupper: [nyGruppe()], type: 'prosent' as Reduksjon['type'], funksjon: null as number | null, moter: null as number | null }),
+    () => ({
+      grunnlag: 'fag' as 'fag' | 'stilling',
+      grupper: [nyGruppe()],
+      stilling: 100 as number | null,
+      t60: null as number | null,
+      t45: null as number | null,
+      type: 'prosent' as Reduksjon['type'],
+      funksjon: null as number | null,
+      moter: null as number | null,
+    }),
     (lagret) => reserverIder(lagret.grupper),
   );
 
   const inndata = s.grupper.map((g) => tilGruppe(g, rader, false));
   const utfylte = inndata.filter((g): g is Gruppe => g !== null);
   const reduksjon = tilReduksjon(s.type, s.funksjon) ?? { type: 'prosent', prosent: 0 };
-  const { resultat, feil } = prov(() => (utfylte.length > 0 ? beregnFordeling(hent, { grupper: utfylte, funksjon: reduksjon, moterPerUke: s.moter ?? 0 }) : null));
+  const grunnlag: Undervisningsgrunnlag | null =
+    s.grunnlag === 'fag'
+      ? utfylte.length > 0
+        ? { type: 'fag', grupper: utfylte }
+        : null
+      : s.stilling !== null && s.t60 !== null && s.t45 !== null
+        ? { type: 'stilling', prosent: s.stilling, arsramme: { type: 'niva', t60: s.t60, t45: s.t45 } }
+        : null;
+  const { resultat, feil } = prov(() => (grunnlag ? beregnFordeling(hent, { undervisning: grunnlag, funksjon: reduksjon, moterPerUke: s.moter ?? 0 }) : null));
 
   return (
     <Kalkulatorside id="fordeling">
       <p class="merknad merknad-liten">{t('arbeidstid.fordeling.illustrasjon')}</p>
-      <Grupper grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
-      <div class="fagkort">
+      <Bryter
+        legend={t('arbeidstid.fordeling.grunnlag')}
+        verdi={s.grunnlag}
+        valg={[
+          { verdi: 'fag', tekst: t('arbeidstid.fordeling.grunnlagFag') },
+          { verdi: 'stilling', tekst: t('arbeidstid.fordeling.grunnlagStilling') },
+        ]}
+        onEndring={(grunnlag) => sett({ ...s, grunnlag })}
+      />
+      {s.grunnlag === 'fag' ? (
+        <Grupper key="fag" grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
+      ) : (
+        <div class="fagkort" key="stilling">
+          <Tallfelt
+            etikett={t('arbeidstid.fordeling.stilling')}
+            hjelpetekst={t('arbeidstid.fordeling.stillingHjelp')}
+            enhet="%"
+            verdi={s.stilling}
+            min={0}
+            maks={200}
+            onEndring={(stilling) => sett({ ...s, stilling })}
+          />
+          <Nivavelger etikett={t('arbeidstid.fordeling.arsramme')} t60={s.t60} indeks={indeks} onEndring={(t60, t45) => sett({ ...s, t60, t45 })} />
+        </div>
+      )}
+      <div class="fagkort" key="funksjon">
         <Reduksjonsfelt legend={t('arbeidstid.fordeling.funksjon')} type={s.type} verdi={s.funksjon} onEndring={(type, funksjon) => sett({ ...s, type, funksjon })} />
         <Tallfelt etikett={t('arbeidstid.fordeling.moter')} hjelpetekst={t('arbeidstid.fordeling.moterHjelp')} verdi={s.moter} min={0} maks={37.5} onEndring={(moter) => sett({ ...s, moter })} />
       </div>

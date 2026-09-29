@@ -140,6 +140,7 @@ export type TrinnId =
   | 'motetid'
   | 'annen_planfestet'
   | 'selvdisponert_stilling'
+  | 'arstimer_fra_stilling'
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'kalkulert_tid_overtid'

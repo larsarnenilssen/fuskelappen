@@ -152,6 +152,25 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText('Annet elevrettet arbeid er ikke definert i avtalen', { exact: false })).toBeVisible();
   });
 
+  test('fordelingen kan regnes ut fra stillingsprosent', async ({ page }) => {
+    await aapne(page, '/arbeidstid/fordeling');
+    await page.getByRole('radio', { name: 'Stillingsprosent' }).check();
+    await expect(page.getByLabel('Undervisning i prosent av full stilling')).toHaveValue('100');
+    await page.getByLabel('Årsramme (vedlegg 1)').selectOption({ value: '525' });
+    await expect(resultat(page)).toContainText('100');
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('525');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('625');
+    await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
+  });
+
+  test('fagsøket finner fagnavn fra Grep', async ({ page }) => {
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await page.getByLabel('Fag', { exact: true }).fill('HEA2005');
+    await expect(page.locator('.fagtreff button').first()).toContainText('Helse- og oppvekstfag Vg2');
+    await expect(page.locator('.fagtreff button').first()).toContainText('Helsefremmende arbeid');
+  });
+
   test('kalkulatorene finnes på nynorsk', async ({ page }) => {
     await settLagret(page, { malform: 'nn' });
     await aapne(page, '/arbeidstid/beskjeftigelse');

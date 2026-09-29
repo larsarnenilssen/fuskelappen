@@ -1,15 +1,19 @@
 // Søk i årsrammene i vedlegg 1 på fag, program, trinn, fagkoder (f.eks. ENG1007, REA3036), prefikser
-// (ENG, BAT, HEA) og kallenavn (1P, R1, Fysikk 1). Ren funksjon; dataene kommer fra rules/ og data/grep/.
+// (ENG, BAT, HEA), fagnavn i Grep (f.eks. «Helsefremmende arbeid») og kallenavn (1P, R1, Fysikk 1).
+// Ren funksjon; dataene kommer fra rules/ og data/grep/.
 import type { Tabellrad } from '../../core/regler/skjema.ts';
 import type { Arsrammerad } from './beregning/index.ts';
 
 export type Programomrader = Record<string, Record<string, [string, string][]>>;
+/** Fagkoder i videregående med navn, gruppert på prefiks: { HEA: [["HEA2005", "Helsefremmende arbeid"]] }. */
+export type Fagkoder = Record<string, [string, string][]>;
 
 export interface Sokedata {
   programnavn: readonly Tabellrad[];
   fagnavn: readonly Tabellrad[];
   kallenavn: readonly Tabellrad[];
   programomrader: Programomrader;
+  fagkoder: Fagkoder;
 }
 
 export interface Fagtreff {
@@ -25,7 +29,7 @@ interface Indekspost {
   treff: Omit<Fagtreff, 'ekstra'>;
   hoved: string[];
   /** Koder, programområder og kallenavn. frase er hele navnet normalisert, for eksakte treff på hele søket. */
-  andre: { ord: string[]; vis: string; frase: string }[];
+  andre: { ord: string[]; vis: string; frase: string; vekt: number }[];
 }
 
 const tekster = (v: unknown): string[] => (Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []);
@@ -52,15 +56,26 @@ export function lagFagindeks(rader: readonly Arsrammerad[], data: Sokedata): Ind
     const trinn = rad.trinn.replace(/\D/g, '');
     const andre: Indekspost['andre'] = [];
     for (const kode of tekster(p?.grep)) {
-      andre.push({ ord: [kode.toLowerCase()], vis: kode, frase: normaliser(kode) });
+      andre.push({ ord: [kode.toLowerCase()], vis: kode, frase: normaliser(kode), vekt: 5 });
       // Programområdene gjelder programfagene på trinnet (felles programfag i vedlegget).
-      if (rad.fag === null) for (const [prefiks, navn] of data.programomrader[kode]?.[trinn] ?? []) andre.push({ ord: [prefiks.toLowerCase(), ...ord(navn)], vis: `${prefiks} ${navn}`, frase: normaliser(prefiks) });
+      if (rad.fag !== null) continue;
+      for (const [prefiks, navn] of data.programomrader[kode]?.[trinn] ?? []) {
+        andre.push({ ord: [prefiks.toLowerCase(), ...ord(navn)], vis: `${prefiks} ${navn}`, frase: normaliser(prefiks), vekt: 5 });
+        // Fagene i programområdet på samme trinn (første siffer i fagkoden er trinnet, f.eks. HEA2005 → Vg2).
+        for (const [fagkode, fagnavn] of data.fagkoder[prefiks] ?? []) {
+          if (fagkode[3] === trinn) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 5 });
+        }
+      }
     }
-    for (const prefiks of tekster(f?.prefikser)) andre.push({ ord: [prefiks.toLowerCase()], vis: prefiks, frase: normaliser(prefiks) });
+    for (const prefiks of tekster(f?.prefikser)) {
+      andre.push({ ord: [prefiks.toLowerCase()], vis: prefiks, frase: normaliser(prefiks), vekt: 5 });
+      // Fagnavnene i Grep for fellesfaget (bare prefikser som ett fag bruker, se hent-grep.ts).
+      for (const [fagkode, fagnavn] of data.fagkoder[prefiks] ?? []) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 4 });
+    }
     for (const k of data.kallenavn) {
       if (k.fag !== rad.fag || k.program !== rad.program || k.trinn !== rad.trinn) continue;
       if (typeof k.kategori === 'string' && k.kategori !== rad.kategori) continue;
-      for (const s of tekster(k.sokeord)) andre.push({ ord: ord(s), vis: s, frase: normaliser(s) });
+      for (const s of tekster(k.sokeord)) andre.push({ ord: ord(s), vis: s, frase: normaliser(s), vekt: 6 });
     }
     return {
       treff: { rad, fag: fagNavn, program: programNavn },
@@ -96,9 +111,10 @@ export function sokFag(indeks: readonly Indekspost[], sporring: string, maks = 8
       poeng += Math.max(...andre.map((x) => x.p));
       for (const x of andre.slice(0, 2)) ekstra.add(x.a.vis);
     }
-    const eksakt = post.andre.find((a) => a.frase === hele);
+    // Hele søket er lik et kallenavn, en kode eller et fagnavn: ekstra poeng etter hvor presist det er.
+    const eksakt = post.andre.filter((a) => a.frase === hele).sort((a, b) => b.vekt - a.vekt)[0];
     if (eksakt) {
-      poeng += 5;
+      poeng += eksakt.vekt;
       ekstra.add(eksakt.vis);
     }
     if (alle) treff.push({ t: { ...post.treff, ekstra: [...ekstra] }, poeng });

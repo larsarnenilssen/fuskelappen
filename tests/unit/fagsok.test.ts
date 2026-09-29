@@ -18,11 +18,13 @@ const regler = slaaSammen(
 const hent = (n: string) => finnVerdi(regler, n, { dato: '2026-09-29' });
 const rader = lesArsrammer(hent('sfs2213.arsrammer'));
 const grep = JSON.parse(readFileSync(join(rot, 'data/grep/programomrader.json'), 'utf8')) as { programomrader: Record<string, Record<string, [string, string][]>> };
+const fagkoder = JSON.parse(readFileSync(join(rot, 'data/grep/fagkoder.json'), 'utf8')) as { fagkoder: Record<string, [string, string][]> };
 const indeks = lagFagindeks(rader, {
   programnavn: somTabell(hent('sfs2213.programnavn')),
   fagnavn: somTabell(hent('sfs2213.fagnavn')),
   kallenavn: somTabell(hent('sfs2213.kallenavn')),
   programomrader: grep.programomrader,
+  fagkoder: fagkoder.fagkoder,
 });
 const forste = (s: string) => {
   const t = sokFag(indeks, s)[0];
@@ -69,6 +71,19 @@ describe('fagsøk', () => {
     expect(forste('biologi 2')).toBe('Bio – Stud.spes Vg3');
     expect(forste('REA3036')).toBe('Bio – Stud.spes Vg3');
     expect(forste('1P-Y')).toBe('Matematikk – Yrkesfag Vg1');
+  });
+
+  it('finner fagnavn og fagkoder fra Grep', () => {
+    // Faget finnes både på Vg1 (HSF1006) og Vg2 (HEA2005); koden skiller dem.
+    expect(sokFag(indeks, 'helsefremmende arbeid').slice(0, 2).map((t) => radNavn(t.rad)).sort()).toEqual([
+      'Felles programfag – Helse/sos Vg1',
+      'Felles programfag – Helse/sos Vg2',
+    ]);
+    expect(forste('HEA2005')).toBe('Felles programfag – Helse/sos Vg2');
+    expect(forste('arbeidsmiljø og dokumentasjon')).toBe('Felles programfag – Bygg og anl. Vg1');
+    expect(forste('samfunnskunnskap')).toMatch(/^Samf\.fag – /);
+    expect(forste('ENG1009')).toBe('Engelsk – Yrkesfag Vg1');
+    expect(sokFag(indeks, 'HEA2005')[0]?.ekstra.join(' ')).toContain('HEA2005 Helsefremmende arbeid');
   });
 
   it('gir ingen treff for tomt eller ukjent søk', () => {

@@ -1,6 +1,7 @@
 // Skjemadeler for kalkulatorene: brytere, fagsøk med årsramme fra vedlegg 1, og kort for hvert fag.
 import type { ComponentChildren } from 'preact';
 import { useId, useMemo, useState } from 'preact/hooks';
+import fagkoder from '../../../../data/grep/fagkoder.json';
 import programomrader from '../../../../data/grep/programomrader.json';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -8,7 +9,7 @@ import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { somTabell } from '../../../core/regler/motor.ts';
 import type { Arsrammerad, Arsrammevalg, Gruppe, Hent } from '../beregning/index.ts';
-import { lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
+import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
 
 /** Segmentert bryter: et lite utvalg valg side om side (radioknapper). */
 export function Bryter<V extends string>({
@@ -77,8 +78,48 @@ export function tilArsrammevalg(p: Arsrammeplass, rader: readonly Arsrammerad[])
 export function erStjernefag(plasser: readonly Arsrammeplass[], rader: readonly Arsrammerad[]): boolean {
   return plasser.some((p) => {
     const v = tilArsrammevalg(p, rader);
-    return v !== null && (v.type === 'rad' ? v.rad.stjerne : v.stjerne);
+    if (v === null) return false;
+    return v.type === 'rad' ? v.rad.stjerne : v.type === 'manuell' && v.stjerne;
   });
+}
+
+/** Årsrammenivåene i vedlegg 1 (f.eks. 525/700), med noen eksempelfag på hvert nivå. */
+export function arsrammenivaer(indeks: Fagindeks): { t60: number; t45: number; eksempler: string[] }[] {
+  const nivaer = new Map<number, { t60: number; t45: number; eksempler: string[] }>();
+  for (const { treff } of indeks) {
+    const n = nivaer.get(treff.rad.t60) ?? { t60: treff.rad.t60, t45: treff.rad.t45, eksempler: [] };
+    const navn = treff.fag ?? treff.program;
+    if (!n.eksempler.includes(navn)) n.eksempler.push(navn);
+    nivaer.set(treff.rad.t60, n);
+  }
+  return [...nivaer.values()].sort((a, b) => b.t60 - a.t60);
+}
+
+/** Velger et årsrammenivå fra vedlegg 1 uten å velge fag. */
+export function Nivavelger({ etikett, t60, indeks, onEndring }: { etikett: string; t60: number | null; indeks: Fagindeks; onEndring: (t60: number | null, t45: number | null) => void }) {
+  const { t } = useTekst();
+  const id = useId();
+  const nivaer = useMemo(() => arsrammenivaer(indeks), [indeks]);
+  return (
+    <div class="felt">
+      <label for={id}>{etikett}</label>
+      <select
+        id={id}
+        value={t60 === null ? '' : String(t60)}
+        onChange={(e) => {
+          const n = nivaer.find((x) => String(x.t60) === e.currentTarget.value);
+          onEndring(n?.t60 ?? null, n?.t45 ?? null);
+        }}
+      >
+        <option value="">{t('arbeidstid.fordeling.velgNiva')}</option>
+        {nivaer.map((n) => (
+          <option key={n.t60} value={String(n.t60)}>
+            {t('arbeidstid.fordeling.nivaValg', { t60: formaterTall(n.t60), t45: formaterTall(n.t45), eksempler: n.eksempler.slice(0, 3).join(', ') })}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 }
 
 /** Søkeindeksen for vedlegg 1, med søkeord fra regelsettet og programområdene fra Grep. */
@@ -96,6 +137,7 @@ export function useFagindeks(hent: Hent, rader: readonly Arsrammerad[]) {
       fagnavn: tabell('sfs2213.fagnavn'),
       kallenavn: tabell('sfs2213.kallenavn'),
       programomrader: (programomrader as unknown as { programomrader: Programomrader }).programomrader,
+      fagkoder: (fagkoder as unknown as { fagkoder: Fagkoder }).fagkoder,
     });
   }, [hent, rader]);
 }
