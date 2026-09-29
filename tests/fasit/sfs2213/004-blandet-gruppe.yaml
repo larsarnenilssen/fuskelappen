@@ -1,0 +1,17 @@
+id: sfs2213-004
+beskrivelse: Fremmedspråk med elever fra Vg1 og Vg2 studieforberedende i samme time, 113 årstimer.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: beskjeftigelse
+input:
+  grupper:
+    - arsrammer:
+        - { fag: Fremmedspråk, program: Stud.spes, trinn: Vg1 }
+        - { fag: Fremmedspråk, program: Stud.spes, trinn: Vg2 }
+      elever: 28
+      arstimer: 113
+forventet:
+  arsramme: 496
+  beskjeftigelse: 22.78
+begrunnelse: >-
+  Har læreren undervisning i ulike program eller nivåer med ulike årsrammer i samme time, brukes laveste årsramme
+  (SFS 2213 vedlegg 1). Vg1 har 554, Vg2 har 496. 113 ÷ 496 × 100.

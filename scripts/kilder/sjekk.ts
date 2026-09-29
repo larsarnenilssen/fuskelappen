@@ -8,7 +8,9 @@ import type { Fylker, Kilde, Kilderegister } from '../../src/core/innhold/skjema
 import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../../src/core/kildestatus/kildestatus.ts';
 import { lesFil } from '../innhold/last.ts';
 import { lagFingeravtrykk, nyPost, vurderMotGodkjent, type Sjekkresultat } from './logikk.ts';
-import { hentSkoler, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
+import { sjekkKfInfoserie } from './kf-infoserie.ts';
+import { sjekkLovdata } from './lovdata.ts';
+import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const statusfil = join(rot, 'data/status/kildestatus.json');
@@ -71,6 +73,25 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
       }
       case 'nsr':
         return await sjekkNsr(kilde);
+      case 'fil': {
+        const { fingeravtrykk, bytes } = await sjekkFil(kilde);
+        rapport.push(`### ${kilde.navn}`, `Filen er ${bytes} byte, fingeravtrykk ${fingeravtrykk}.`, '');
+        return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+      }
+      case 'kf-infoserie': {
+        const r = await sjekkKfInfoserie(kilde);
+        rapport.push(
+          `### ${kilde.navn}`,
+          `${r.tittel ?? 'Ukjent tittel'}, versjon ${r.versjon ?? '?'}, gyldig ${r.gyldig ?? '?'}. ${r.tegn} tegn tekst, fingeravtrykk ${r.fingeravtrykk}.`,
+          '',
+        );
+        return vurderMotGodkjent(r.fingeravtrykk, kilde.godkjent_fingeravtrykk);
+      }
+      case 'lovdata': {
+        const { fingeravtrykk } = await sjekkLovdata(kilde);
+        rapport.push(`### ${kilde.navn}`, `Fingeravtrykk ${fingeravtrykk}.`, '');
+        return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
+      }
       default:
         return { status: 'feilet', fingeravtrykk: null, melding: `Sjekkmetoden «${kilde.sjekkmetode}» er ikke laget ennå.` };
     }

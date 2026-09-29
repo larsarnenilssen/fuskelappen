@@ -1,7 +1,21 @@
 // Begrepsbanken: felles modul som alle moduler legger sine begreper i.
-// Skjult til fase 1 gir den innhold.
+// Aktiv fra fase 1, med begrepene om arbeidstid.
+import type { Innholdselement } from '../../core/innhold/skjema.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { hentBegreper } from './innhold.ts';
+
+/**
+ * Ett begrep per id. Samme id kan finnes på flere nivåer (nasjonal, fylke, skole); siden velger riktig
+ * nivå for brukeren, så søk og favoritter trenger bare én oppføring. Den nasjonale teksten brukes når den finnes.
+ */
+async function unikeBegreper(): Promise<Innholdselement[]> {
+  const perId = new Map<string, Innholdselement>();
+  for (const b of await hentBegreper()) {
+    const forrige = perId.get(b.id);
+    if (!forrige || b.gyldighet.niva === 'nasjonal') perId.set(b.id, b);
+  }
+  return [...perId.values()];
+}
 
 export const manifest: Modulmanifest = {
   id: 'begreper',
@@ -15,7 +29,7 @@ export const manifest: Modulmanifest = {
     { sti: '/begreper/:id', tittel: 'begreper.tittel', side: () => import('./sider/Begrep.tsx') },
   ],
   async sokeoppforinger() {
-    return (await hentBegreper()).map((b) => ({
+    return (await unikeBegreper()).map((b) => ({
       id: `begrep:${b.id}`,
       type: 'begrep' as const,
       tittel: b.tittel,
@@ -26,7 +40,7 @@ export const manifest: Modulmanifest = {
     }));
   },
   async favorittbare() {
-    return (await hentBegreper()).map((b) => ({
+    return (await unikeBegreper()).map((b) => ({
       id: `begreper:${b.id}`,
       type: 'begrep' as const,
       tittel: b.tittel,
@@ -36,6 +50,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: [],
-  status: 'skjult',
+  kilder: ['ks-sfs2213-avtaletekst'],
+  status: 'aktiv',
 };

@@ -1,0 +1,17 @@
+id: sfs2213-003
+beskrivelse: Norsk Vg1 studieforberedende (113 årstimer, 30 elever) og matematikk Vg1 yrkesfag (84 årstimer, 25 elever).
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: beskjeftigelse
+input:
+  grupper:
+    - arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }]
+      elever: 30
+      arstimer: 113
+    - arsrammer: [{ fag: Matematikk, program: Yrkesfag, trinn: Vg1 }]
+      elever: 25
+      arstimer: 84
+forventet:
+  beskjeftigelse: 38.78
+begrunnelse: >-
+  Hver gruppe regnes for seg og summeres: 113 ÷ 496 × 100 = 22,78 og 84 ÷ 525 × 100 = 16,00.
+  Summen regnes av uavrundede tall og rundes til to desimaler til slutt. Årstimetallene er tenkte eksempeltall.

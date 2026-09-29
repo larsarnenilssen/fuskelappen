@@ -1,5 +1,6 @@
 // UI-tekster på bokmål. nn.ts må ha nøyaktig de samme nøklene (sjekkes av typesjekken).
 // Plassholdere skrives {navn} og fylles inn av t().
+import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 
 export const nb = {
   app: {
@@ -198,6 +199,7 @@ export const nb = {
       visUtregning: 'Vis utregning',
       skjulUtregning: 'Skjul utregning',
       utregning: 'Utregning',
+      formel: 'Formel',
       kilde: 'Kilde',
     },
     tallfelt: {
@@ -233,7 +235,12 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper i regelverket.',
     },
+    arbeidstid: {
+      navn: 'Arbeidstid (SFS 2213)',
+      beskrivelse: 'Beskjeftigelse, periode, vikartimer og planfestet tid, med utregning og kilder.',
+    },
   },
+  arbeidstid: arbeidstidNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',

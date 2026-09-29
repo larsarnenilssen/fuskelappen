@@ -1,0 +1,21 @@
+id: sfs2213-009
+beskrivelse: Timevikar, lektor med 0 års ansiennitet, 10 økter à 45 minutter i engelsk Vg1 studieforberedende.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: timevikar
+input:
+  arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+  elever: 30
+  okter: 10
+  minutter: 45
+  lonn: { stillingsgruppe: lektor, ansiennitet: 0 }
+  over60: false
+forventet:
+  kalkulert_tid: 20
+  timelonn: 346.98
+  lonn: 6939.68
+  feriepenger: 832.76
+  samlet: 7772.44
+begrunnelse: >-
+  Hovedtariffavtalen § 12.4: kalkulert tid = 7,5 × 1400 ÷ 525 = 20 timer. Timelønn = 655 800 ÷ 1687,5 × 100 ÷ 112
+  = 346,98 (garantilønn for lektor per 1.5.2026, kap. 4 punkt 4.1). Lønn = 20 × 346,98. Feriepenger 12 % kommer i
+  tillegg (§ 7.4.2). Mellomregninger er uavrundet.

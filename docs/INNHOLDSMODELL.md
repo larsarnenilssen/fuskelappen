@@ -65,6 +65,8 @@ verdier:
     kontrollert: null              # settes av eier
 ```
 
+- Et regelsett kan deles på flere filer med samme `id`, `regelverk`, periode og gyldighet, og hver sin `del` (f.eks. `del: arsrammer`). Delene slås sammen ved lasting, og en verdinøkkel kan bare stå i én del.
+- `verdi` kan være et tall, en tekst, sann/usann, en liste eller en **tabell**: en liste av rader med enkle celler. Vedlegg 1 til SFS 2213 ligger slik i `rules/sfs2213/arsrammer-2026-2027.yaml`, med én rad per fag, utdanningsprogram og trinn (`t60`, `t45`, `kategori`, `fag`, `program`, `trinn`, `stjerne`).
 - Verdier leses bare gjennom `hentVerdi('regelverk.nokkel', kontekst)`.
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
 - Verdier med `kontrollert: null` vises med merket «ikke kontrollert».
@@ -77,9 +79,9 @@ verdier:
 | `type` | `side`, `lovdata-datasett`, `grep`, `data` |
 | `niva`, `fylke` | `nasjonal`, `fylke` eller `skole`. Lokale kilder har fylke |
 | `lisens` | f.eks. `NLOD 2.0`, eller «Opphavsrett … Lenkes, kopieres ikke.» |
-| `sjekkmetode` | `side`, `lovdata`, `grep`, `nsr` eller `ingen` |
+| `sjekkmetode` | `side`, `kf-infoserie`, `fil`, `lovdata`, `grep`, `nsr` eller `ingen` |
 | `aktiv` | om kildejobben sjekker kilden nå. Kilder aktiveres i fasen der de tas i bruk |
-| `uttrekk` | for `side`: `selektor` (CSS), valgfritt `inneholder` (tekst treffet må ha) og `fjern` (selektorer som fjernes først) |
+| `uttrekk` | for `side` og `lovdata`: `selektor` (CSS), valgfritt `inneholder` (tekst treffet må ha) og `fjern` (selektorer som fjernes først) |
 | `godkjent_fingeravtrykk` | `sha256:…` eller `null`. **Oppdateres bare etter beskjed fra eier.** |
 | `faser`, `merknad` | dokumentasjon |
 

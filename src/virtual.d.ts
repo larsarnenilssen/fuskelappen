@@ -5,6 +5,8 @@ declare module 'virtual:testoppsett' {
   export const ekstraModuler: Record<string, unknown>;
   /** Testbegreper fra tests/fixtures/innhold/begreper. Tom i produksjon. */
   export const ekstraBegreper: Record<string, () => Promise<unknown>>;
+  /** Testregelsett fra tests/fixtures/regler (lokale testverdier). Tom i produksjon. */
+  export const ekstraRegelsett: Record<string, unknown>;
   /** Sann i utvikling og testing. */
   export const utvikling: boolean;
 }

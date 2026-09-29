@@ -1,0 +1,13 @@
+id: sfs2213-001
+beskrivelse: Engelsk Vg1 studieforberedende, 140 årstimer, 30 elever.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: beskjeftigelse
+input:
+  grupper:
+    - arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+      elever: 30
+      arstimer: 140
+forventet:
+  arsramme: 525
+  beskjeftigelse: 26.67
+begrunnelse: Årstimer ÷ årsramme × 100 = 140 ÷ 525 × 100. Årsramme 525/700 for Engelsk*, Stud.spes Vg1 (SFS 2213 vedlegg 1).

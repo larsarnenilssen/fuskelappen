@@ -1,0 +1,105 @@
+# SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, videreført for 1.1.2026–31.12.2027.
+# Verdiene gjelder videregående opplæring. Årsrammene (vedlegg 1) står i arsrammer-2026-2027.yaml,
+# som er en del av samme regelsett (docs/avgjorelser/007).
+# Timer er 60-minutters timer. Alle verdier er ikke kontrollert (kontrollert: null) til eier har godkjent dem.
+id: sfs2213-2026-2027
+regelverk: sfs2213
+del: hoved
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: ks-sfs2213-avtaletekst
+verdier:
+  arsverk_timer:
+    verdi: 1687.5
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    kontrollert: null
+  arsverk_timer_60_ar:
+    verdi: 1650
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    kontrollert: null
+    merknad: Årsverket for lærere som er 60 år og eldre.
+  arbeidsaar_tillegg_dager:
+    verdi: 6
+    enhet: dager
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "4 a" }
+    kontrollert: null
+    merknad: Arbeidsåret er elevenes skoleår pluss 6 dager til kompetanseutvikling, planlegging m.m.
+  timer_per_dag:
+    verdi: 7.5
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "4 a" }
+    kontrollert: null
+    merknad: De 6 dagene regnes «à 7,5 timer». Brukes også når arbeidsåret utvides (punkt 5.3).
+  arbeidsdager_per_uke:
+    verdi: 5
+    enhet: dager
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    kontrollert: null
+    merknad: >-
+      Avledet: 37,5 timer per uke ÷ 7,5 timer per dag. Gjør arbeidsårets dager om til uker
+      (196 dager = 39,2 uker), slik eier har bekreftet 29.09.2026.
+  planfestet_timer:
+    verdi: 1150
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    kontrollert: null
+    merknad: Videregående skole, med mindre partene på skolen blir enige om noe annet.
+  planfestet_maks_dag:
+    verdi: 9
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    kontrollert: null
+  planfestet_maks_uke:
+    verdi: 37.5
+    enhet: timer
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+    kontrollert: null
+  arsramme_funksjon:
+    verdi: 607.5
+    enhet: årsrammetimer (60 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+    merknad: Årsrammen for lærere som har redusert undervisningstid på grunn av funksjon (810 i 45-minutters enheter).
+  arsramme_funksjon_45:
+    verdi: 810
+    enhet: årsrammetimer (45 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+  stjernetillegg:
+    verdi: 52.5
+    enhet: årsrammetimer (60 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+    merknad: Fag merket * får årsrammen økt når det faktiske antallet elever i klassen er 1–15 (70 i 45-minutters enheter).
+  stjernetillegg_45:
+    verdi: 70
+    enhet: årsrammetimer (45 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+  stjerne_maks_elever:
+    verdi: 15
+    enhet: elever
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+  kontaktlaerer_reduksjon:
+    verdi: 28.5
+    enhet: årsrammetimer (60 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
+    kontrollert: null
+    merknad: Minste reduksjon for kontaktlærertjeneste i videregående opplæring (38 i 45-minutters enheter).
+  skolear_uker:
+    verdi: 38
+    enhet: uker
+    kilde: { id: opplaeringslova }
+    kontrollert: null
+    merknad: Elevenes skoleår i uker (190 dager). Brukes når timer per uke gjøres om til årstimer.
+  skolear_dager:
+    verdi: 190
+    enhet: dager
+    kilde: { id: opplaeringslova }
+    kontrollert: null
+    merknad: >-
+      Elevenes skoleår. Paragrafen legges inn når Lovdata-kilden er tatt i bruk. Skoleruta kan variere lokalt,
+      og periodekalkulatoren lar brukeren skrive inn antallet undervisningsdager.

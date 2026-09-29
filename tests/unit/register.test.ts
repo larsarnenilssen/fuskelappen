@@ -15,8 +15,10 @@ describe('modulregisteret', () => {
     expect(ider).toContain('testmodul');
   });
 
-  it('skjulte moduler er ikke aktive', () => {
-    expect(aktiveModuler.map((m) => m.id)).not.toContain('begreper');
+  it('bare moduler med status aktiv er aktive', () => {
+    expect(aktiveModuler.every((m) => m.status === 'aktiv')).toBe(true);
+    // Fase 1: arbeidstid og begrepsbanken er tatt i bruk.
+    expect(aktiveModuler.map((m) => m.id)).toEqual(expect.arrayContaining(['arbeidstid', 'begreper']));
   });
 
   it('testmodulen havner i riktig kategori på forsiden', () => {

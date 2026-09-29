@@ -25,6 +25,11 @@
   --farge-info-flate: var(--p-blaa-100);
   --farge-fokus: var(--p-fokus-lys);
   --farge-temafarge: var(--meta-temafarge-lys);
+  --diagram-undervisning: var(--p-blaa-700);
+  --diagram-motetid: var(--p-rav-700);
+  --diagram-annen: var(--p-groenn-700);
+  --diagram-funksjon: var(--p-lilla-700);
+  --diagram-selv: var(--p-graa-600);
 }
 
 :root[data-tema='mork'] {
@@ -49,6 +54,11 @@
   --farge-info-flate: var(--p-blaa-800);
   --farge-fokus: var(--p-fokus-mork);
   --farge-temafarge: var(--meta-temafarge-mork);
+  --diagram-undervisning: var(--p-blaa-300);
+  --diagram-motetid: var(--p-rav-300);
+  --diagram-annen: var(--p-groenn-300);
+  --diagram-funksjon: var(--p-lilla-300);
+  --diagram-selv: var(--p-graa-400);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,5 +84,15 @@
     --farge-info-flate: var(--p-blaa-800);
     --farge-fokus: var(--p-fokus-mork);
     --farge-temafarge: var(--meta-temafarge-mork);
+    --diagram-undervisning: var(--p-blaa-300);
+    --diagram-motetid: var(--p-rav-300);
+    --diagram-annen: var(--p-groenn-300);
+    --diagram-funksjon: var(--p-lilla-300);
+    --diagram-selv: var(--p-graa-400);
+  --diagram-undervisning: var(--p-blaa-300);
+  --diagram-motetid: var(--p-rav-300);
+  --diagram-annen: var(--p-groenn-300);
+  --diagram-funksjon: var(--p-lilla-300);
+  --diagram-selv: var(--p-graa-400);
   }
 }

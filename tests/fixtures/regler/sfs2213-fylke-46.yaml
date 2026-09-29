@@ -1,0 +1,9 @@
+# TESTDATA. Ikke en ekte lokal avtale. Viser at en fylkesverdi erstatter den nasjonale og merkes med nivå.
+id: sfs2213-testfylke-46
+regelverk: sfs2213
+gyldig_fra: "2026-08-01"
+gyldig_til: "2027-07-31"
+kilde: ks-sfs2213-avtaletekst
+gyldighet: { niva: fylke, fylke: "46", forhold: erstatter }
+verdier:
+  planfestet_timer: { verdi: 1100, enhet: timer, kilde: { id: ks-sfs2213-avtaletekst, punkt: "5.1" }, kontrollert: null, merknad: Testverdi }

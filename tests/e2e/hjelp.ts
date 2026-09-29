@@ -50,6 +50,14 @@ export const ruter = [
   '#/testmodul',
   '#/begreper',
   '#/begreper/testbegrep-skolemiljo',
+  '#/begreper/arsramme',
+  '#/arbeidstid',
+  '#/arbeidstid/beskjeftigelse',
+  '#/arbeidstid/periode',
+  '#/arbeidstid/vikar',
+  '#/arbeidstid/planfestet',
+  '#/arbeidstid/overtid',
+  '#/arbeidstid/fordeling',
   '#/finnes-ikke',
 ];
 

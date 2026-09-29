@@ -1,10 +1,13 @@
 // Regelsettene i rules/ lastes ved bygg. All lesing av regelverdier går gjennom hentVerdi().
-import { finnSupplerende, finnVerdi, type Oppslag, type Regelkontekst } from './motor.ts';
+// I utvikling og testing kommer testregelsettene i tests/fixtures/regler i tillegg (lokale testverdier).
+import { ekstraRegelsett } from 'virtual:testoppsett';
+import { finnSupplerende, finnVerdi, slaaSammen, type Oppslag, type Regelkontekst } from './motor.ts';
 import type { Regelsett } from './skjema.ts';
 
 const filer = import.meta.glob<Regelsett>('/rules/**/*.yaml', { eager: true, import: 'default' });
 
-export const regelsett: readonly Regelsett[] = Object.values(filer);
+// Regelsett kan være delt på flere filer (feltet «del»). De slås sammen her.
+export const regelsett: readonly Regelsett[] = slaaSammen([...Object.values(filer), ...(Object.values(ekstraRegelsett) as Regelsett[])]);
 
 export function hentVerdi(nokkel: string, kontekst: Regelkontekst): Oppslag {
   return finnVerdi(regelsett, nokkel, kontekst);

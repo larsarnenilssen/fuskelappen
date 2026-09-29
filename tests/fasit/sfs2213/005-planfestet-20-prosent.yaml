@@ -1,0 +1,14 @@
+id: sfs2213-005
+beskrivelse: Lektor i hel stilling med 20 % redusert undervisning for funksjon.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: planfestet
+input:
+  reduksjon: { prosent: 20 }
+forventet:
+  planfestet: 1257.5
+  per_uke: 32.08
+  utvidelse_dager: 0
+begrunnelse: >-
+  SFS 2213 punkt 5.3: tiden læreren disponerer selv (1687,5 − 1150 = 537,5) reduseres med 20 %, og planfestet tid
+  øker like mye: 1150 + 107,5 = 1257,5. Arbeidsåret er 190 + 6 = 196 dager = 39,2 uker, så 1257,5 ÷ 39,2 = 32,08
+  timer per uke. Grensen er 39,2 × 37,5 = 1470 timer, så arbeidsåret utvides ikke.

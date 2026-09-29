@@ -1,0 +1,172 @@
+# Vedlegg 1 til SFS 2213: årsrammer for undervisning i videregående opplæring (60/45 minutters enheter).
+# Del av regelsettet sfs2213-2026-2027 (se 2026-2027.yaml og docs/avgjorelser/007).
+# Én rad per fag, utdanningsprogram og trinn, gjengitt slik vedlegget angir dem.
+# kategori: overskriften i vedlegget. fag: tom for felles programfag (vedlegget angir bare program og trinn).
+# stjerne: fag merket * i vedlegget (årsrammen økes når det faktiske antallet elever i klassen er 1–15).
+# Alle verdier er ikke kontrollert (kontrollert: null) til eier har godkjent dem.
+id: sfs2213-2026-2027
+regelverk: sfs2213
+del: arsrammer
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: ks-sfs2213-avtaletekst
+verdier:
+  arsrammer:
+    enhet: årsrammetimer (60/45 min)
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    kontrollert: null
+    merknad: >-
+      I blokken 525/700 står overskriften «Felles programfag» over fellesfag som norsk, engelsk og matematikk.
+      Den er gjengitt slik den står i vedlegget (samme hos KF Infoserie og Utdanningsforbundet).
+    verdi:
+      - { nr: 1, t60: 642, t45: 856, kategori: "Felles programfag", fag: null, program: "Rest. og mat", trinn: "Vg1", stjerne: false }
+      - { nr: 2, t60: 642, t45: 856, kategori: "Felles programfag", fag: null, program: "Bygg og anl.", trinn: "Vg1", stjerne: false }
+      - { nr: 3, t60: 642, t45: 856, kategori: "Felles programfag", fag: null, program: "Håndverk, design og produktutvikling", trinn: "Vg1", stjerne: false }
+      - { nr: 4, t60: 642, t45: 856, kategori: "Felles programfag", fag: null, program: "Frisør, blomster, interiør og eksponeringsdesign", trinn: "Vg1", stjerne: false }
+      - { nr: 5, t60: 642, t45: 856, kategori: "Felles programfag", fag: null, program: "Naturbruk", trinn: "Vg1", stjerne: false }
+      - { nr: 6, t60: 635, t45: 847, kategori: "Fellesfag", fag: "Kroppsøv.", program: "Stud.spes", trinn: "Vg1", stjerne: false }
+      - { nr: 7, t60: 635, t45: 847, kategori: "Fellesfag", fag: "Kroppsøv.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 8, t60: 635, t45: 847, kategori: "Fellesfag", fag: "Kroppsøv.", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 9, t60: 635, t45: 847, kategori: "Fellesfag", fag: "Kroppsøv.", program: "Yrkesfag", trinn: "Vg1", stjerne: false }
+      - { nr: 10, t60: 635, t45: 847, kategori: "Fellesfag", fag: "Kroppsøv.", program: "Yrkesfag", trinn: "Vg2", stjerne: false }
+      - { nr: 11, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Naturbruk", trinn: "Vg2", stjerne: false }
+      - { nr: 12, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Rest. og mat", trinn: "Vg2", stjerne: false }
+      - { nr: 13, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Rest. og mat", trinn: "Vg3", stjerne: false }
+      - { nr: 14, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Bygg og anl.", trinn: "Vg2", stjerne: false }
+      - { nr: 15, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Bygg og anl.", trinn: "Vg3", stjerne: false }
+      - { nr: 16, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Frisør, blomster, interiør og eksponeringsdesign", trinn: "Vg2", stjerne: false }
+      - { nr: 17, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Håndverk, design og produktutvikling", trinn: "Vg2", stjerne: false }
+      - { nr: 18, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Design og hå", trinn: "Vg3", stjerne: false }
+      - { nr: 19, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Tekn/ind.prod", trinn: "Vg1", stjerne: false }
+      - { nr: 20, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Tekn/ind.prod", trinn: "Vg2", stjerne: false }
+      - { nr: 21, t60: 635, t45: 847, kategori: "Felles programfag", fag: null, program: "Tekn/ind.prod", trinn: "Vg3", stjerne: false }
+      - { nr: 22, t60: 607.5, t45: 810, kategori: "Felles programfag", fag: null, program: "Helse/sos", trinn: "Vg1", stjerne: false }
+      - { nr: 23, t60: 607.5, t45: 810, kategori: "Felles programfag", fag: null, program: "Helse/sos", trinn: "Vg2", stjerne: false }
+      - { nr: 24, t60: 607.5, t45: 810, kategori: "Felles programfag", fag: null, program: "Helse/sos", trinn: "Vg3", stjerne: false }
+      - { nr: 25, t60: 607.5, t45: 810, kategori: "Felles programfag", fag: null, program: "Elektrofag", trinn: "Vg1", stjerne: false }
+      - { nr: 26, t60: 607.5, t45: 810, kategori: "Felles programfag", fag: null, program: "Naturbruk", trinn: "Vg3", stjerne: false }
+      - { nr: 27, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "Elektrofag", trinn: "Vg2", stjerne: false }
+      - { nr: 28, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "Elektrofag", trinn: "Vg3", stjerne: false }
+      - { nr: 29, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "Salg, service, reiseliv", trinn: "Vg1", stjerne: false }
+      - { nr: 30, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "Informasjonsteknologi og medieproduksjon", trinn: "Vg1", stjerne: false }
+      - { nr: 31, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "Med./komm.", trinn: "Vg1", stjerne: false }
+      - { nr: 32, t60: 583.5, t45: 778, kategori: "Felles programfag", fag: null, program: "MDD", trinn: "Vg1", stjerne: false }
+      - { nr: 33, t60: 569, t45: 759, kategori: "Fellesfag", fag: "Rel/etikk", program: "Idrett", trinn: "Vg3", stjerne: false }
+      - { nr: 34, t60: 569, t45: 759, kategori: "Fellesfag", fag: "Rel/etikk", program: "MDD", trinn: "Vg3", stjerne: false }
+      - { nr: 35, t60: 569, t45: 759, kategori: "Fellesfag", fag: "Rel/etikk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 36, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Samf.fag", program: "Yrkesfag", trinn: "Vg2", stjerne: true }
+      - { nr: 37, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Samf.fag", program: "Idrett", trinn: "Vg2", stjerne: true }
+      - { nr: 38, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Samf.fag", program: "MDD", trinn: "Vg2", stjerne: true }
+      - { nr: 39, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Samf.fag", program: "Stud.spes", trinn: "Vg1", stjerne: true }
+      - { nr: 40, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Naturfag", program: "Stud.spes", trinn: "Vg1", stjerne: true }
+      - { nr: 41, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Naturfag", program: "Yrkesfag", trinn: "Vg1", stjerne: true }
+      - { nr: 42, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Naturfag", program: "Yrkes/På", trinn: "Vg3", stjerne: true }
+      - { nr: 43, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Naturfag", program: "Idrett", trinn: "Vg1", stjerne: true }
+      - { nr: 44, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Naturfag", program: "MDD", trinn: "Vg1", stjerne: true }
+      - { nr: 45, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Stud.spes", trinn: "Vg1", stjerne: false }
+      - { nr: 46, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Idrett", trinn: "Vg1", stjerne: false }
+      - { nr: 47, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Fremmedspråk", program: "MDD", trinn: "Vg1", stjerne: false }
+      - { nr: 48, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "Idrett", trinn: "Vg2", stjerne: false }
+      - { nr: 49, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "MDD", trinn: "Vg2", stjerne: false }
+      - { nr: 50, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 51, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Geografi", program: "Idrett", trinn: "Vg2", stjerne: false }
+      - { nr: 52, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Geografi", program: "MDD", trinn: "Vg2", stjerne: false }
+      - { nr: 53, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Geografi", program: "Stud.spes", trinn: "Vg1", stjerne: false }
+      - { nr: 54, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "Yrkes/På", trinn: "Vg3", stjerne: false }
+      - { nr: 55, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "Idrett", trinn: "Vg3", stjerne: false }
+      - { nr: 56, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "MDD", trinn: "Vg3", stjerne: false }
+      - { nr: 57, t60: 554, t45: 739, kategori: "Fellesfag", fag: "Historie", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 58, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Kunst, design og arkitektur", trinn: "Vg1", stjerne: false }
+      - { nr: 59, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Idrett", trinn: "Vg1", stjerne: false }
+      - { nr: 60, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Informasjonsteknologi og medieproduksjon", trinn: "Vg2", stjerne: false }
+      - { nr: 61, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Salg, service, reiseliv", trinn: "Vg2", stjerne: false }
+      - { nr: 62, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Serv/samf", trinn: "Vg3", stjerne: false }
+      - { nr: 63, t60: 554, t45: 739, kategori: "Felles programfag", fag: null, program: "Med./komm", trinn: "Vg2", stjerne: false }
+      - { nr: 64, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Norsk", program: "Yrkesfag", trinn: "Vg1", stjerne: true }
+      - { nr: 65, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Norsk", program: "Yrkesfag", trinn: "Vg2", stjerne: true }
+      - { nr: 66, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Samisk 1. spr.", program: "Stud.spes", trinn: "Vg1", stjerne: false }
+      - { nr: 67, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Samisk 2. spr.", program: "Stud.spes", trinn: "Vg1", stjerne: false }
+      - { nr: 68, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Engelsk", program: "Stud.spes", trinn: "Vg1", stjerne: true }
+      - { nr: 69, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Engelsk", program: "Yrkesfag", trinn: "Vg1", stjerne: true }
+      - { nr: 70, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Engelsk", program: "Yrkesfag", trinn: "Vg2", stjerne: true }
+      - { nr: 71, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Matematikk", program: "Stud.spes", trinn: "Vg1", stjerne: true }
+      - { nr: 72, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Matematikk", program: "Yrkesfag", trinn: "Vg1", stjerne: true }
+      - { nr: 73, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Matematikk", program: "Idrett", trinn: "Vg1", stjerne: true }
+      - { nr: 74, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Matematikk", program: "MDD", trinn: "Vg1", stjerne: true }
+      - { nr: 75, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Engelsk", program: "Idrett", trinn: "Vg1", stjerne: true }
+      - { nr: 76, t60: 525, t45: 700, kategori: "Felles programfag", fag: "Engelsk", program: "MDD", trinn: "Vg1", stjerne: true }
+      - { nr: 77, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Ant.spr. og ku.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 78, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Kultur/komm", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 79, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Kultur/komm", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 80, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Info.tekn. samf.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 81, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Info.tekn. samf.", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 82, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Ma/str/led", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 83, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Psykologi", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 84, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Psykologi", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 85, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Reiseliv og språk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 86, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Reiseliv og språk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 87, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Rettslære", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 88, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Samf.øk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 89, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Samf.øk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 90, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Info.tekn.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 91, t60: 525, t45: 700, kategori: "Valgfrie programfag", fag: "Info.tekn.", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 92, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "Idrett", trinn: "Vg2", stjerne: false }
+      - { nr: 93, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "Idrett", trinn: "Vg3", stjerne: false }
+      - { nr: 94, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "MDD", trinn: "Vg2", stjerne: false }
+      - { nr: 95, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "MDD", trinn: "Vg3", stjerne: false }
+      - { nr: 96, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "Kunst, design og arkitektur", trinn: "Vg2", stjerne: false }
+      - { nr: 97, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "Kunst, design og arkitektur", trinn: "Vg3", stjerne: false }
+      - { nr: 98, t60: 525, t45: 700, kategori: "Felles programfag", fag: null, program: "Med./komm", trinn: "Vg3", stjerne: false }
+      - { nr: 99, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Norsk", program: "Stud.spes", trinn: "Vg1", stjerne: true }
+      - { nr: 100, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Norsk", program: "Idrett", trinn: "Vg1", stjerne: true }
+      - { nr: 101, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Norsk", program: "MDD", trinn: "Vg1", stjerne: true }
+      - { nr: 102, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 103, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 104, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Idrett", trinn: "Vg2", stjerne: false }
+      - { nr: 105, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "Idrett", trinn: "Vg3", stjerne: false }
+      - { nr: 106, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "MDD", trinn: "Vg2", stjerne: false }
+      - { nr: 107, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Fremmedspråk", program: "MDD", trinn: "Vg3", stjerne: false }
+      - { nr: 108, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Matematikk", program: "Yrkes/På", trinn: "Vg3", stjerne: false }
+      - { nr: 109, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Matematikk", program: "Idrett", trinn: "Vg2", stjerne: false }
+      - { nr: 110, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Matematikk", program: "MDD", trinn: "Vg2", stjerne: false }
+      - { nr: 111, t60: 496, t45: 661, kategori: "Fellesfag", fag: "Matematikk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 112, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Engelsk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 113, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Engelsk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 114, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Latin/Gresk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 115, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Latin/Gresk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 116, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Hist/filosofi", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 117, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Hist/filosofi", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 118, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Entr./bedriftsu.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 119, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Entr./bedriftsu.", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 120, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Nær.øk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 121, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Nær.øk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 122, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Medie/info", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 123, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Medie/info", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 124, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Ma/str/led", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 125, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Rettslære", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 126, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Pol/samf", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 127, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Pol/samf", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 128, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Matematikk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 129, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Matematikk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 130, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Geofag 1/2", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 131, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Geofag 1/2", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 132, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Fysikk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 133, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Fysikk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 134, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Kjemi", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 135, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Kjemi", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 136, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Bio", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 137, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Bio", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 138, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Teknol/forsk", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 139, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Teknol/forsk", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 140, t60: 496, t45: 661, kategori: "Valgfrie programfag", fag: "Fremmedspråk", program: "Yrkes/På", trinn: "Vg3", stjerne: false }
+      - { nr: 141, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "Stud.spes", trinn: "Vg2", stjerne: true }
+      - { nr: 142, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "Stud.spes", trinn: "Vg3", stjerne: true }
+      - { nr: 143, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Samisk 1. spr.", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 144, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Samisk 1. spr.", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 145, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Samisk 2. spr", program: "Stud.spes", trinn: "Vg2", stjerne: false }
+      - { nr: 146, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Samisk 2. spr", program: "Stud.spes", trinn: "Vg3", stjerne: false }
+      - { nr: 147, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "Yrkesf/På", trinn: "Vg3", stjerne: true }
+      - { nr: 148, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "Idrett", trinn: "Vg2", stjerne: true }
+      - { nr: 149, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "Idrett", trinn: "Vg3", stjerne: true }
+      - { nr: 150, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "MDD", trinn: "Vg2", stjerne: true }
+      - { nr: 151, t60: 466.5, t45: 622, kategori: "Fellesfag", fag: "Norsk", program: "MDD", trinn: "Vg3", stjerne: true }
