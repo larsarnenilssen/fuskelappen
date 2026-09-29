@@ -1,0 +1,12 @@
+id: sfs2213-008
+beskrivelse: Fast ansatt tar 10 vikarøkter à 45 minutter i engelsk Vg1 studieforberedende.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: vikar-fast
+input:
+  arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+  elever: 30
+  okter: 10
+  minutter: 45
+forventet:
+  endring: 1.43
+begrunnelse: 10 økter à 45 minutter = 7,5 timer. 7,5 ÷ 525 × 100 = 1,43 prosentpoeng mer beskjeftigelse.

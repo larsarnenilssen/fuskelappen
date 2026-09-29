@@ -1,0 +1,15 @@
+id: sfs2213-002
+beskrivelse: Engelsk Vg1 studieforberedende, 140 årstimer, 14 elever (stjernefag).
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: beskjeftigelse
+input:
+  grupper:
+    - arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+      elever: 14
+      arstimer: 140
+forventet:
+  arsramme: 577.5
+  beskjeftigelse: 24.24
+begrunnelse: >-
+  Fag merket * får årsrammen økt med 52,5/70 når det faktiske antallet elever i klassen er 1–15 (SFS 2213 vedlegg 1).
+  140 ÷ (525 + 52,5) × 100.

@@ -1,0 +1,13 @@
+id: sfs2213-007
+beskrivelse: Kontaktlærer i videregående opplæring med 28,5 årsrammetimer redusert undervisning.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: planfestet
+input:
+  reduksjon: { arsrammetimer: 28.5 }
+forventet:
+  funksjonsprosent: 4.69
+  planfestet: 1175.22
+  utvidelse_dager: 0
+begrunnelse: >-
+  Lærere med redusert undervisningstid på grunn av funksjon bruker årsramme 607,5 (vedlegg 1). Kontaktlærertjenesten
+  gir minst 28,5 årsrammetimer (punkt 7.3 b): 28,5 ÷ 607,5 × 100 = 4,69 %. Planfestet tid: 1150 + 537,5 × 4,69 % = 1175,22.

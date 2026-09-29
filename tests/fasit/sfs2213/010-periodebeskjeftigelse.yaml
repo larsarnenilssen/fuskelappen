@@ -1,0 +1,16 @@
+id: sfs2213-010
+beskrivelse: Vikar i biologi 2 Vg3 studieforberedende, 30 timer i en periode på 40 av 190 undervisningsdager.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: periode
+input:
+  grupper:
+    - arsrammer: [{ fag: Bio, program: Stud.spes, trinn: Vg3 }]
+      elever: 30
+      timer: 30
+  dager_i_perioden: 40
+  dager_i_skolearet: 190
+forventet:
+  beskjeftigelse: 28.73
+begrunnelse: >-
+  Periodenøkkel = 40 ÷ 190. Perioderamme = 496 × 40 ÷ 190. Beskjeftigelse = 30 ÷ perioderamme × 100 = 28,73 %.
+  Samme svar som eksempelet i InSchool-artikkelen om periodebeskjeftigelse.

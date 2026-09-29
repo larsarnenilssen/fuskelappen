@@ -1,0 +1,124 @@
+// Årsrammer fra vedlegg 1 til SFS 2213 og valg av årsramme for en gruppe.
+import { Regelfeil, somTabell } from '../../../core/regler/motor.ts';
+import type { Oppslag } from '../../../core/regler/motor.ts';
+import type { Tabellrad } from '../../../core/regler/skjema.ts';
+import type { Hent, Operand, Trinn } from './typer.ts';
+import { inndata, regel, trinn } from './verdier.ts';
+
+export interface Arsrammerad {
+  nr: number;
+  t60: number;
+  t45: number;
+  kategori: string;
+  fag: string | null;
+  program: string;
+  trinn: string;
+  stjerne: boolean;
+}
+
+function erRad(r: Tabellrad): boolean {
+  return (
+    typeof r.nr === 'number' &&
+    typeof r.t60 === 'number' &&
+    typeof r.t45 === 'number' &&
+    typeof r.kategori === 'string' &&
+    (typeof r.fag === 'string' || r.fag === null) &&
+    typeof r.program === 'string' &&
+    typeof r.trinn === 'string' &&
+    typeof r.stjerne === 'boolean'
+  );
+}
+
+/** Leser tabellen «sfs2213.arsrammer» og sjekker at hver rad har riktig form. */
+export function lesArsrammer(oppslag: Oppslag): Arsrammerad[] {
+  const rader = somTabell(oppslag, 'sfs2213.arsrammer');
+  const feil = rader.find((r) => !erRad(r));
+  if (feil) throw new Regelfeil(`Ugyldig rad i sfs2213.arsrammer: ${JSON.stringify(feil)}`);
+  return rader as unknown as Arsrammerad[];
+}
+
+/** Kort beskrivelse av raden, slik vedlegget angir den: «Engelsk – Stud.spes Vg1». */
+export function radNavn(r: Arsrammerad): string {
+  return `${r.fag ?? r.kategori} – ${r.program} ${r.trinn}`;
+}
+
+export function finnRad(
+  rader: readonly Arsrammerad[],
+  sok: { fag: string | null; program: string; trinn: string },
+): Arsrammerad | undefined {
+  return rader.find((r) => r.fag === sok.fag && r.program === sok.program && r.trinn === sok.trinn);
+}
+
+/** Årsramme valgt fra vedlegget eller skrevet inn av brukeren (60-minutters enheter). */
+export type Arsrammevalg = { type: 'rad'; rad: Arsrammerad } | { type: 'manuell'; t60: number; stjerne: boolean };
+
+function somOperand(valg: Arsrammevalg, tabell: Oppslag | undefined): Operand {
+  if (valg.type === 'manuell') return inndata('arsramme', valg.t60, 'arsrammetimer');
+  return {
+    navn: 'arsramme',
+    verdi: valg.rad.t60,
+    enhet: 'arsrammetimer',
+    opprinnelse: 'tabell',
+    rad: radNavn(valg.rad),
+    ...(tabell ? { oppslag: tabell } : {}),
+  };
+}
+
+function erStjerne(valg: Arsrammevalg): boolean {
+  return valg.type === 'rad' ? valg.rad.stjerne : valg.stjerne;
+}
+
+/**
+ * Finner årsrammen for en gruppe:
+ * - Har timen elever fra ulike program eller nivåer, brukes laveste årsramme (vedlegg 1).
+ * - Fag merket * får årsrammen økt når det faktiske antallet elever i klassen er 1–15 (vedlegg 1).
+ */
+export function velgArsramme(
+  hent: Hent,
+  valg: readonly Arsrammevalg[],
+  elever: number | null,
+  gruppe?: number,
+): { arsramme: Operand; trinn: Trinn[]; manglerElevtall: boolean } {
+  if (valg.length === 0) throw new Regelfeil('Gruppen mangler årsramme');
+  const tabell = valg.some((v) => v.type === 'rad') ? hent('sfs2213.arsrammer') : undefined;
+  const operander = valg.map((v) => somOperand(v, tabell));
+  const g = gruppe !== undefined ? { gruppe } : {};
+  const utTrinn: Trinn[] = [];
+
+  let indeks = 0;
+  let arsramme = operander[0] as Operand;
+  if (operander.length > 1) {
+    operander.forEach((o, i) => {
+      if (o.verdi < (operander[indeks] as Operand).verdi) indeks = i;
+    });
+    const laveste = operander[indeks] as Operand;
+    const liste: Operand = { ...laveste, navn: 'arsrammer', liste: operander.map((o) => o.verdi) };
+    const t = trinn('laveste_arsramme', { arsrammer: liste }, 'arsramme', 'arsrammetimer', laveste.verdi, g);
+    utTrinn.push({ ...t, resultat: { ...laveste, navn: 'arsramme' } });
+    arsramme = laveste;
+  }
+
+  const valgt = valg[indeks] as Arsrammevalg;
+  let manglerElevtall = false;
+  if (erStjerne(valgt)) {
+    if (elever === null) {
+      manglerElevtall = true;
+    } else {
+      const maks = regel(hent, 'sfs2213.stjerne_maks_elever', 'elever', 'elever');
+      if (elever >= 1 && elever <= maks.verdi) {
+        const tillegg = regel(hent, 'sfs2213.stjernetillegg', 'stjernetillegg', 'arsrammetimer');
+        const t = trinn(
+          'stjernetillegg',
+          { arsramme, stjernetillegg: tillegg, elever: inndata('elever', elever, 'elever') },
+          'arsramme_justert',
+          'arsrammetimer',
+          arsramme.verdi + tillegg.verdi,
+          g,
+        );
+        utTrinn.push(t);
+        arsramme = t.resultat;
+      }
+    }
+  }
+  return { arsramme, trinn: utTrinn, manglerElevtall };
+}

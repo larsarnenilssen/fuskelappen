@@ -1,0 +1,13 @@
+id: sfs2213-006
+beskrivelse: Lektor i hel stilling med 80 % redusert undervisning for funksjon.
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: planfestet
+input:
+  reduksjon: { prosent: 80 }
+forventet:
+  planfestet: 1580
+  per_uke: 37.5
+  utvidelse_dager: 14.67
+begrunnelse: >-
+  1150 + 0,80 × 537,5 = 1580 timer. Høyst 37,5 timer per uke i 39,2 uker gir 1470 timer. De 110 timene over
+  utvider arbeidsåret med 110 ÷ 7,5 = 14,67 dager (SFS 2213 punkt 5.1 og 5.3).
