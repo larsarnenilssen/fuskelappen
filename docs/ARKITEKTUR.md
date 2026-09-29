@@ -30,7 +30,7 @@ src/
 - **Hash-ruting** (`#/sti`). Hver navigasjon er en ny oppføring i nettleserhistorikken, så operativsystemets tilbakenavigasjon (sveip på iOS, tilbakeknapp på Android) virker som vanlig. Ingen egne sveipebevegelser.
 - **Ett scrollområde:** dokumentet. Topplinjen er klebrig, bunnmenyen fast. Begge bruker `env(safe-area-inset-*)`. Høyder bruker `dvh`, og `overscroll-behavior` hindrer at gummistrikk viser tomt område.
 - Ved navigasjon flyttes fokus til sidens `h1`. Tilbake gjenoppretter scrollposisjonen.
-- Lerretet bak siden (`html`) har toppfeltets farge øverst og menyens farge nederst, mens `body` har sidefargen. iOS bruker lerretsfargen bak statuslinjen, og installerte nettapper på iOS kan regne visningsområdet for kort ved oppstart, så det blir synlig under bunnmenyen. Da vises riktig farge begge steder.
+- `html` og `body` har toppfeltets farge som bakgrunnsfarge (`background-color`). Det er den iOS bruker bak statuslinjen i installerte nettapper, og en fargeovergang teller ikke. `html` har i tillegg en fargeovergang med menyfarge nederst, fordi iOS kan regne visningsområdet for kort ved oppstart, slik at lerretet blir synlig under bunnmenyen. Sidefargen ligger på `.skall`.
 - Overskriften som får fokus ved navigasjon, har ingen synlig fokusramme. Det er ikke noe brukeren kan trykke på, men skjermlesere leser den.
 - Pinch-zoom er ikke slått av. Bevegelse respekterer `prefers-reduced-motion`.
 - Forsiden lastes med en gang. Andre sider og søket lastes ved behov, slik at startpakken holdes liten (grense 150 kB gzip, sjekkes ved bygg).
@@ -85,7 +85,7 @@ vite-plugin-pwa (Workbox). Appskallet og all kode forhåndslagres. `data/**` hen
 
 ### Ikonet
 
-Ikonet har én kildefil: `ikon/ikon.svg` (kvadratisk, full bakgrunn, motivet innenfor midtre 80 %). `npm run lag:ikoner` lager alle størrelser i `public/ikoner/` med faste filnavn. Manifest, `index.html` og kode peker bare på filnavnene.
+Ikonet har én kildefil: `ikon/ikon.svg` (kvadratisk, full bakgrunn, motivet innenfor midtre 80 %). `npm run lag:ikoner` lager alle størrelser i `public/ikoner/` med faste filnavn. Manifest, `index.html` og kode peker bare på filnavnene. Logoen i topplinjen (`logo.svg`) lages av samme fil: elementet med `id="bakgrunn"` fjernes, og bildet beskjæres til motivet, så logoen passer i både lyst og mørkt tema. Mangler `id="bakgrunn"`, brukes ikonet som det er.
 
 **Bytte ikon:** legg inn ny `ikon/ikon.svg`, kjør `npm run lag:ikoner`, og lag en ny versjon. Ingen annen kode endres. På iPhone kan det gamle ikonet bli liggende på hjemskjermen til appen legges til på nytt.
 

@@ -4,6 +4,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.1.2] – 2026-09-29
+
+### Rettet
+
+- Den grå overgangen bak klokken og batteriet øverst på iPhone. iOS henter fargen der fra sidens bakgrunnsfarge, og den er nå den samme mørkeblå som toppfeltet.
+- Logoen i topplinjen viste en blå firkant i mørkt tema. Logoen er nå bare boka, uten bakgrunn.
+
 ## [0.1.1] – 2026-09-29
 
 Rettinger etter eiers kontroll av fase 0 på iPhone.
@@ -37,6 +44,7 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.1...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.2
 [0.1.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.1
 [0.1.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.1.0

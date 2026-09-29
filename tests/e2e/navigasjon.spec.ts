@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { venterPaaSide } from './hjelp.ts';
+import { settLagret, venterPaaSide } from './hjelp.ts';
 
 test.describe('navigasjon', () => {
   test('forsiden har søk, favoritter og moduler', async ({ page }) => {
@@ -90,15 +90,26 @@ test.describe('navigasjon', () => {
     expect(await h1.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe('none');
   });
 
-  test('lerretet bak siden har toppfarge øverst og menyfarge nederst', async ({ page }) => {
-    await page.goto('./');
-    const farger = await page.evaluate(() => {
-      const bilde = getComputedStyle(document.documentElement).backgroundImage;
-      const topp = getComputedStyle(document.querySelector('.topplinje') as Element).backgroundColor;
-      const meny = getComputedStyle(document.querySelector('.bunnmeny') as Element).backgroundColor;
-      return { bilde, topp, meny };
+  for (const tema of ['lys', 'mork'] as const) {
+    test(`lerretet har toppfarge bak statuslinjen og menyfarge nederst (${tema})`, async ({ page }) => {
+      await settLagret(page, { tema });
+      await page.goto('./');
+      const farger = await page.evaluate(() => {
+        const stil = (el: Element) => getComputedStyle(el);
+        return {
+          htmlFarge: stil(document.documentElement).backgroundColor,
+          htmlBilde: stil(document.documentElement).backgroundImage,
+          bodyFarge: stil(document.body).backgroundColor,
+          side: stil(document.querySelector('.skall') as Element).backgroundColor,
+          topp: stil(document.querySelector('.topplinje') as Element).backgroundColor,
+          meny: stil(document.querySelector('.bunnmeny') as Element).backgroundColor,
+        };
+      });
+      // iOS tar fargen bak statuslinjen fra bakgrunnsfargen til html og body.
+      expect(farger.htmlFarge).toBe(farger.topp);
+      expect(farger.bodyFarge).toBe(farger.topp);
+      expect(farger.htmlBilde).toContain(farger.meny);
+      expect(farger.side).not.toBe(farger.topp);
     });
-    expect(farger.bilde).toContain(farger.topp);
-    expect(farger.bilde).toContain(farger.meny);
-  });
+  }
 });

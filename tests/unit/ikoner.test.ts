@@ -24,4 +24,16 @@ describe('ikoner', () => {
     }
     expect(readFileSync(join(rot, 'public/ikoner/favicon.svg'), 'utf8')).toBe(readFileSync(join(rot, 'ikon/ikon.svg'), 'utf8'));
   });
+
+  it('logoen i topplinjen er ikonet uten bakgrunn', () => {
+    const ikon = readFileSync(join(rot, 'ikon/ikon.svg'), 'utf8');
+    const logo = readFileSync(join(rot, 'public/ikoner/logo.svg'), 'utf8');
+    const bakgrunn = /<[a-z]+[^>]*\sid="bakgrunn"/;
+    if (bakgrunn.test(ikon)) {
+      expect(logo).not.toMatch(bakgrunn);
+      expect(logo).not.toMatch(/viewBox="0 0 512 512"/);
+    } else {
+      expect(logo).toBe(ikon);
+    }
+  });
 });

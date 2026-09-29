@@ -1,7 +1,9 @@
 // Lager alle ikonstørrelser fra én kildefil: ikon/ikon.svg.
 // Bytt ikon: legg inn ny ikon.svg (kvadratisk, motivet innenfor midtre 80 %) og kjør «npm run lag:ikoner».
 // Filnavnene er faste, så manifest, index.html og kode trenger ingen endring.
-import { copyFileSync, mkdirSync, readFileSync } from 'node:fs';
+// Logoen i topplinjen (logo.svg) er ikonet uten elementet med id="bakgrunn", beskåret til motivet.
+// Har ikonet ikke noe slikt element, brukes ikonet som det er.
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from '@playwright/test';
@@ -33,6 +35,40 @@ try {
     await side.screenshot({ path: join(ut, fil), clip: { x: 0, y: 0, width: storrelse, height: storrelse } });
     await side.close();
     console.log(`Laget ${fil}`);
+  }
+
+  // Logo: fjern bakgrunnen og beskjær til motivet, med litt luft rundt.
+  const logoSide = await nettleser.newPage();
+  await logoSide.setContent(`<html><body>${svg}</body></html>`);
+  const logo = await logoSide.evaluate(() => {
+    const rotSvg = document.querySelector('svg');
+    const bakgrunn = rotSvg?.querySelector('#bakgrunn');
+    if (!rotSvg || !bakgrunn) return null;
+    bakgrunn.remove();
+    let x1 = Infinity;
+    let y1 = Infinity;
+    let x2 = -Infinity;
+    let y2 = -Infinity;
+    for (const el of Array.from(rotSvg.querySelectorAll<SVGGraphicsElement>('rect, path, circle, ellipse, polygon, polyline, line, text, image, use'))) {
+      const b = el.getBBox();
+      x1 = Math.min(x1, b.x);
+      y1 = Math.min(y1, b.y);
+      x2 = Math.max(x2, b.x + b.width);
+      y2 = Math.max(y2, b.y + b.height);
+    }
+    const side = Math.max(x2 - x1, y2 - y1) * 1.06;
+    const cx = (x1 + x2) / 2;
+    const cy = (y1 + y2) / 2;
+    rotSvg.setAttribute('viewBox', [cx - side / 2, cy - side / 2, side, side].map((v) => Math.round(v)).join(' '));
+    return rotSvg.outerHTML;
+  });
+  await logoSide.close();
+  if (logo) {
+    writeFileSync(join(ut, 'logo.svg'), `${logo}\n`);
+    console.log('Laget logo.svg (uten bakgrunn)');
+  } else {
+    copyFileSync(kilde, join(ut, 'logo.svg'));
+    console.log('Fant ikke id="bakgrunn" i ikonet. logo.svg er en kopi av ikonet.');
   }
 } finally {
   await nettleser.close();
