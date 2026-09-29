@@ -1,4 +1,5 @@
 import { expect, test, type Page } from '@playwright/test';
+import { settLagret } from './hjelp.ts';
 
 function status(kjort: Date, ...statuser: ('ok' | 'endret' | 'feilet')[]) {
   return {
@@ -58,5 +59,37 @@ test.describe('kildestatus', () => {
     await page.goto('./#/om/kilder');
     await expect(page.locator('[data-kilde="ks-sfs2213"]')).toContainText('alt i orden');
     await expect(page.locator('[data-kilde="opplaeringslova"]')).toContainText('sjekkes ikke ennå');
+  });
+
+  test('varselet kan skjules til neste sjekk og vises igjen', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(1), 'feilet', 'ok'));
+    await page.goto('./#/om/kilder');
+    const indikator = page.locator('.indikator');
+    await expect(indikator).toHaveAttribute('data-status', 'feilet');
+    await page.getByRole('button', { name: 'Skjul varselet til neste sjekk' }).click();
+    await expect(indikator).toHaveAttribute('data-status', 'skjult');
+    await expect(page.getByText('Varselet er skjult på denne enheten til neste kildesjekk.')).toBeVisible();
+    await page.reload();
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'skjult');
+    await page.getByRole('button', { name: 'Vis varselet igjen' }).click();
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'feilet');
+  });
+
+  test('et skjult varsel vises igjen etter ny kjøring', async ({ page }) => {
+    const gammel = status(dagerSiden(8), 'feilet', 'ok');
+    await settLagret(page, { skjultKildevarsel: `${gammel.kjort}|feilet` });
+    await medStatus(page, status(dagerSiden(1), 'feilet', 'ok'));
+    await page.goto('./');
+    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'feilet');
+  });
+
+  test('viser neste planlagte sjekk og lenke for eier', async ({ page }) => {
+    await medStatus(page, status(dagerSiden(1), 'ok', 'ok'));
+    await page.goto('./#/om/kilder');
+    await expect(page.getByTestId('neste-kildesjekk')).toContainText(/Neste planlagte sjekk: mandag .* kl\. 0[56]:17\./);
+    await expect(page.getByRole('link', { name: 'Kjør kildesjekken på GitHub' })).toHaveAttribute(
+      'href',
+      'https://github.com/larsarnenilssen/protokollen/actions/workflows/kilder.yml',
+    );
   });
 });

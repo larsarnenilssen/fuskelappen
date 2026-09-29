@@ -28,13 +28,11 @@ Endringene er nå en del av hovedversjonen (`main`), men de er ikke publisert i 
 
 En ny versjon publiseres ved at den får et versjonsmerke (en «tag»), f.eks. `v0.1.0`.
 
-**Enklest:** skriv til Claude «Publiser v0.1.0». Claude setter merket, og publiseringen starter av seg selv. Claude setter aldri et versjonsmerke uten at du ber om det.
-
-**Selv, på GitHub:**
+Du setter versjonsmerket selv. Claude har ikke lov til å opprette versjonsmerker fra sine økter, men forteller deg når en ny versjon er klar og hvilket nummer den skal ha (det står også øverst i `CHANGELOG.md`).
 
 1. Åpne repoet og trykk **Releases** i høyre kolonne (eller gå til `…/protokollen/releases`).
 2. Trykk **Draft a new release**.
-3. Trykk **Choose a tag**, skriv versjonen (f.eks. `v0.1.0`) og velg **Create new tag**.
+3. Trykk **Choose a tag**, skriv versjonen (f.eks. `v0.1.1`) og velg **Create new tag**. «Target» skal være `main`.
 4. Skriv gjerne en kort tittel, og trykk **Publish release**.
 
 Etter omtrent 5 minutter er den nye versjonen ute. Du kan følge med under **Actions** → **Publiser**. Grønt hakemerke betyr at den er publisert.
@@ -51,7 +49,9 @@ Brukere som har appen installert, får meldingen «Ny versjon er klar» med en k
 
 En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, som vises i appen under **Om appen → Kilder**, og gir deg beskjed hvis noe er endret eller feiler.
 
-**Kjøre sjekken selv:** Åpne **Actions** → **Kildesjekk** → **Run workflow** → la feltet stå tomt → **Run workflow**. Etter et par minutter kommer det et grønt hakemerke. Trykker du på kjøringen, ser du et sammendrag.
+**Når kjøres den neste gang?** Det står i appen under **Om appen → Kilder**.
+
+**Kjøre sjekken selv:** Trykk lenken «Kjør kildesjekken på GitHub» nederst på kildesiden i appen, eller åpne **Actions** → **Kildesjekk** → **Run workflow** → la feltet stå tomt → **Run workflow**. Etter et par minutter kommer det et grønt hakemerke. Trykker du på kjøringen, ser du et sammendrag.
 
 **Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages en sak under **Issues**, og du får e-post fra GitHub. Det er alltid bare én sak per kilde: finnes det allerede en åpen sak for kilden, blir den oppdatert og får en kommentar i stedet for at det lages en ny. Neste vanlige kjøring lukker saken automatisk når kilden er i orden.
 
@@ -68,6 +68,8 @@ Varslene kommer som saker under **Issues** med merket `kilde`, og som e-post fra
 3. Når du er fornøyd, skriv til Claude: «Godkjent fingeravtrykk for [kilden]». Claude legger inn det nye fingeravtrykket, og saken lukkes ved neste kjøring.
 
 Innholdet i appen endres aldri automatisk.
+
+**Skjule varselet i appen:** Under **Om appen → Kilder** kan du trykke «Skjul varselet til neste sjekk». Da forsvinner advarselen øverst til høyre på din enhet til neste kildesjekk, eller til statusen endrer seg. Saken på GitHub påvirkes ikke.
 
 ## 7. Installere appen
 

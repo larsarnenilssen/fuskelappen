@@ -63,9 +63,23 @@ describe('lagring', () => {
     expect(lesLagret(null).status).toBe('utilgjengelig');
   });
 
+  it('migrerer data fra skjemaversjon 1', () => {
+    const v1 = {
+      skjemaversjon: 1,
+      innstillinger: { malform: 'nn', tema: 'mork', fylke: '46', skole: null },
+      favoritter: ['a'],
+      scenarier: {},
+    };
+    expect(migrer(v1)).toEqual({ ...v1, skjemaversjon: 2, skjultKildevarsel: null });
+    const lager = new MinneLager();
+    lager.setItem(LAGRINGSNOKKEL, JSON.stringify(v1));
+    expect(lesLagret(lager)).toMatchObject({ status: 'ok', data: { skjemaversjon: 2, favoritter: ['a'] } });
+  });
+
   it('avviser data fra en nyere skjemaversjon', () => {
     expect(migrer({ ...standard(), skjemaversjon: 99 })).toBeNull();
     expect(migrer({ ...standard(), skjemaversjon: 0 })).toBeNull();
+    expect(migrer({ ...standard(), skjemaversjon: 2, skjultKildevarsel: 5 })).toBeNull();
   });
 
   it('eksporterer og importerer', () => {

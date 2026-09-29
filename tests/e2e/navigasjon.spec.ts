@@ -73,4 +73,32 @@ test.describe('navigasjon', () => {
     const viewport = await page.locator('meta[name="viewport"]').getAttribute('content');
     expect(viewport).not.toMatch(/user-scalable\s*=\s*no|maximum-scale\s*=\s*1(\.0)?\b/);
   });
+
+  test('topplinjen viser logo og appnavn', async ({ page }) => {
+    await page.goto('./');
+    const logo = page.locator('.topplinje .applogo');
+    await expect(logo).toBeVisible();
+    expect(await logo.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
+    await expect(page.locator('.topplinje .appnavn')).toHaveText('Protokollen');
+  });
+
+  test('overskriften får fokus uten synlig ramme ved navigasjon', async ({ page }) => {
+    await page.goto('./');
+    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Søk' }).click();
+    const h1 = page.getByRole('heading', { level: 1, name: 'Søk' });
+    await expect(h1).toBeFocused();
+    expect(await h1.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe('none');
+  });
+
+  test('lerretet bak siden har toppfarge øverst og menyfarge nederst', async ({ page }) => {
+    await page.goto('./');
+    const farger = await page.evaluate(() => {
+      const bilde = getComputedStyle(document.documentElement).backgroundImage;
+      const topp = getComputedStyle(document.querySelector('.topplinje') as Element).backgroundColor;
+      const meny = getComputedStyle(document.querySelector('.bunnmeny') as Element).backgroundColor;
+      return { bilde, topp, meny };
+    });
+    expect(farger.bilde).toContain(farger.topp);
+    expect(farger.bilde).toContain(farger.meny);
+  });
 });

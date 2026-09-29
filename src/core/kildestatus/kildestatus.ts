@@ -20,6 +20,7 @@ export const kildestatusFil = z.strictObject({
 export type KildestatusPost = z.infer<typeof kildestatusPost>;
 export type Kildestatusfil = z.infer<typeof kildestatusFil>;
 export type SamletStatus = 'ok' | 'endret' | 'feilet' | 'utdatert' | 'ukjent';
+export type Visningsstatus = SamletStatus | 'skjult';
 
 export function lesKildestatus(data: unknown): Kildestatusfil | null {
   const r = kildestatusFil.safeParse(data);
@@ -43,4 +44,33 @@ export function samletStatus(fil: Kildestatusfil | null, naa: Date): SamletStatu
   if (statuser.includes('feilet')) return 'feilet';
   if (statuser.includes('endret')) return 'endret';
   return 'ok';
+}
+
+/** Nøkkel for et varsel som kan skjules. Nytt varsel (ny kjøring eller ny status) vises igjen. */
+export function varselnokkel(fil: Kildestatusfil | null, samlet: SamletStatus): string | null {
+  if (!fil || samlet === 'ok' || samlet === 'ukjent') return null;
+  return `${fil.kjort}|${samlet}`;
+}
+
+/** Status for indikatoren, der et varsel brukeren har skjult vises som «skjult». */
+export function visningsstatus(fil: Kildestatusfil | null, naa: Date, skjult: string | null): Visningsstatus {
+  const samlet = samletStatus(fil, naa);
+  const nokkel = varselnokkel(fil, samlet);
+  return nokkel !== null && nokkel === skjult ? 'skjult' : samlet;
+}
+
+export interface Kildesjekkplan {
+  /** 0 = søndag, 1 = mandag … (UTC) */
+  ukedag: number;
+  time: number;
+  minutt: number;
+}
+
+/** Neste planlagte kjøring av kildesjekken etter tidspunktet naa. */
+export function nesteKildesjekk(naa: Date, plan: Kildesjekkplan): Date {
+  const kandidat = new Date(Date.UTC(naa.getUTCFullYear(), naa.getUTCMonth(), naa.getUTCDate(), plan.time, plan.minutt));
+  const dager = (plan.ukedag - kandidat.getUTCDay() + 7) % 7;
+  kandidat.setUTCDate(kandidat.getUTCDate() + dager);
+  if (kandidat.getTime() <= naa.getTime()) kandidat.setUTCDate(kandidat.getUTCDate() + 7);
+  return kandidat;
 }

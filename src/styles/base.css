@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+/*
+ * Lerretet bak siden: toppfarge øverst og menyfarge nederst. iOS bruker denne fargen
+ * bak statuslinjen, og viser den under bunnmenyen hvis visningsområdet regnes for kort
+ * (kjent feil i installerte nettapper på iOS). Selve siden har egen bakgrunn på body.
+ */
 html {
-  background: var(--farge-bakgrunn);
+  background: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
   color: var(--farge-tekst);
   font-family: var(--font-tekst);
   font-size: 100%;
@@ -52,13 +57,11 @@ h3 {
   font-size: var(--str-l);
 }
 
-h1:focus {
+/* Overskrifter og hovedområdet får fokus fra koden ved navigasjon (for skjermlesere),
+   men er ikke noe brukeren kan trykke på. De skal derfor ikke få synlig fokusramme. */
+[tabindex='-1']:focus,
+[tabindex='-1']:focus-visible {
   outline: none;
-}
-
-h1:focus-visible {
-  outline: var(--fokusring) solid var(--farge-fokus);
-  outline-offset: 2px;
 }
 
 p {
@@ -164,6 +167,9 @@ select {
 
 .appnavn {
   justify-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
   color: var(--farge-topplinje-tekst);
   font-weight: 650;
   font-size: var(--str-l);
@@ -176,6 +182,19 @@ select {
   max-width: 100%;
 }
 
+.applogo {
+  /* Ikonet har luft rundt motivet (for maskable-ikoner), så det vises litt større enn teksten. */
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: -0.5rem -0.25rem;
+  flex: none;
+}
+
+.appnavn-tekst {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .indikator {
   display: inline-flex;
   align-items: center;
@@ -186,7 +205,8 @@ select {
   opacity: 0.85;
 }
 
-.indikator-ok {
+.indikator-ok,
+.indikator-skjult {
   opacity: 0.6;
 }
 
@@ -197,10 +217,6 @@ main {
   margin: 0 auto;
   padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-6))
     calc(var(--rom-4) + env(safe-area-inset-left));
-}
-
-main:focus {
-  outline: none;
 }
 
 .bunnmeny {
@@ -866,4 +882,27 @@ main:focus {
     transition: none !important;
     animation: none !important;
   }
+}
+
+/* ---------- Teknisk informasjon (Om) ---------- */
+
+.sikker-kant-probe {
+  position: fixed;
+  visibility: hidden;
+  pointer-events: none;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.teknisk-liste {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.teknisk-liste dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
 }

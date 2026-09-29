@@ -3,7 +3,7 @@
 import * as z from 'zod/mini';
 
 export const LAGRINGSNOKKEL = 'protokollen';
-export const SKJEMAVERSJON = 1;
+export const SKJEMAVERSJON = 2;
 
 const skoleSkjema = z.strictObject({ id: z.nullable(z.string()), navn: z.string().check(z.minLength(1)) });
 
@@ -19,6 +19,8 @@ export const lagretSkjema = z.strictObject({
   innstillinger: innstillingerSkjema,
   favoritter: z.array(z.string().check(z.minLength(1))),
   scenarier: z.record(z.string(), z.unknown()),
+  /** Kildevarsel brukeren har skjult til neste kildesjekk («kjort|status»), eller null. */
+  skjultKildevarsel: z.nullable(z.string()),
 });
 
 export type Innstillinger = z.infer<typeof innstillingerSkjema>;
@@ -31,6 +33,7 @@ export function standard(malform: 'nb' | 'nn' = 'nb'): Lagret {
     innstillinger: { malform, tema: 'system', fylke: null, skole: null },
     favoritter: [],
     scenarier: {},
+    skjultKildevarsel: null,
   };
 }
 
@@ -38,7 +41,10 @@ export function standard(malform: 'nb' | 'nn' = 'nb'): Lagret {
  * Migreringer fra eldre skjemaversjoner. Nøkkelen er versjonen det migreres FRA.
  * Legg til en funksjon her når SKJEMAVERSJON økes.
  */
-export const migreringer: Record<number, (gammel: Record<string, unknown>) => Record<string, unknown>> = {};
+export const migreringer: Record<number, (gammel: Record<string, unknown>) => Record<string, unknown>> = {
+  // 1 → 2: mulighet for å skjule kildevarsel (0.1.1).
+  1: (d) => ({ ...d, skjemaversjon: 2, skjultKildevarsel: null }),
+};
 
 export function migrer(raa: unknown): Lagret | null {
   if (typeof raa !== 'object' || raa === null) return null;
