@@ -315,7 +315,14 @@ export default function Arbeidsplan() {
                 rader={[
                   { navn: t('arbeidstid.arbeidsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
                   ...tilleggene.map((x) => ({ navn: t('arbeidstid.arbeidsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
-                  ...(lonn.resultat.variabel ? [{ navn: t('arbeidstid.resultat.variabelLonn'), verdi: medEnhet(t, lonn.resultat.variabel.verdi, 'kroner') }] : []),
+                  ...(lonn.resultat.variabel
+                    ? [
+                        {
+                          navn: t('arbeidstid.arbeidsplan.variabelRad', { timer: tallTekst(lonn.resultat.variabelKalkulertTid?.verdi ?? 0) }),
+                          verdi: medEnhet(t, lonn.resultat.variabel.verdi, 'kroner'),
+                        },
+                      ]
+                    : []),
                   ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
                   { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
                 ]}

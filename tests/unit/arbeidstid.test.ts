@@ -400,6 +400,11 @@ describe('variabel lønn og teknisk overtid', () => {
     const halv = beregnLonn(hent, { lonn, stilling: 50, tillegg: null, overtid: { beskjeftigelse: 160 / 3, arsrammer, elever: 30 }, over60: false });
     expect(halv.overtid).toBeNull();
     expect(halv.variabel?.verdi).toBeCloseTo(((17.5 * 1400) / 525) * timelonn);
+    // Regnet som vikartimer: 105 timer i engelsk gir samme lønn som 105 vikartimer for en timevikar.
+    const { beregnTimevikar } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const vikar = beregnTimevikar(hent, { arsrammer, elever: 30, okter: 105, minutter: 60, lonn, over60: false });
+    expect(r.variabelKalkulertTid?.verdi).toBeCloseTo(vikar.kalkulertTid.verdi);
+    expect(r.variabel?.verdi).toBeCloseTo(vikar.lonn.verdi);
     // Hel stilling: ingen variabel lønn.
     expect(beregnLonn(hent, { lonn, stilling: 100, tillegg: null, overtid: { beskjeftigelse: 110, arsrammer, elever: 30 }, over60: false }).variabel).toBeNull();
   });

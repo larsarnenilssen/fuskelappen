@@ -9,7 +9,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Variabel lønn i Arbeidsplan:** Har læreren en stilling under 100 % og mer undervisning og funksjoner enn stillingen, heter det som er over stillingen og opp til hel stilling **variabel lønn**. Det som er over 100 %, er fortsatt teknisk overtid. Er det begge deler, vises de i hver sin rute, med årsrammetimer.
-- **Lønn i året** har en egen linje for variabel lønn. Den betales med vanlig timelønn for undervisning, regnet som overtidsbetalingen, men uten overtidstillegget. Overtid over 100 % betales som før, med 50 % tillegg. Stolpen for beskjeftigelsen viser variabel lønn og overtid i hver sin farge.
+- **Lønn i året** har en egen linje for variabel lønn. Den regnes som vikartimer: prosenten gjøres om til timer i faget og videre til kalkulert tid, som betales med timelønnen for undervisning. Linjen viser den kalkulerte tiden. Overtid over 100 % betales som før, med 50 % tillegg. Stolpen for beskjeftigelsen viser variabel lønn og overtid i hver sin farge.
 
 ### Endret
 

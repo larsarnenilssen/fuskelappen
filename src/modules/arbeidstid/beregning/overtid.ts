@@ -1,5 +1,5 @@
 // Fast overtid: beskjeftigelse ut over 100 % betales som overtid. Variabel lønn: beskjeftigelse ut over en
-// stilling under 100 %, opp til hel stilling, betales med vanlig timelønn (eier 30.09.2026).
+// stilling under 100 %, opp til hel stilling, regnes som vikartimer: kalkulert tid × vanlig timelønn (eier 30.09.2026).
 // SFS 2213 punkt 5.2: overtidsbetaling gis for det antall timer årsrammen for undervisning er økt med.
 // Hovedtariffavtalen § 6.4 og § 12.4: tillegget regnes ut fra timelønn for undervisning; § 6.5.3: 50 % tillegg.
 // Overtidsbetaling = overtidstimer × kalkulert tid per time × timelønn × (100 + 50) ÷ 100.
@@ -84,8 +84,9 @@ export interface VariabelLonnResultat extends Utregning {
 }
 
 /**
- * Variabel lønn: beskjeftigelse ut over stillingen, opp til hel stilling, betales med vanlig timelønn for undervisning.
- * Regnes som overtidsbetalingen, men uten overtidstillegget (eier 30.09.2026: variabel lønn 1×, overtid 1,5×).
+ * Variabel lønn: beskjeftigelse ut over stillingen, opp til hel stilling, regnes som vikartimer (eier 30.09.2026):
+ * prosenten gjøres om til undervisningstimer i faget, og timene til kalkulert tid, som betales med vanlig timelønn
+ * for undervisning (som beregnTimevikar). Overtid er det samme med 50 % tillegg.
  */
 export function beregnVariabelLonn(hent: Hent, v: VariabelLonn): VariabelLonnResultat {
   const valg = velgArsramme(hent, v.arsrammer, v.elever);

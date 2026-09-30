@@ -125,7 +125,7 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Regelverdiene for godtgjøring i SFS 2213 punkt 9.1: 12 000 kr for kontaktlærer og for rådgiver/sosiallærer (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Arbeidsplan: slå av «Utvider planfestet tid» for en funksjon på 20 % i hel stilling. Planfestet tid skal da bli 1150 timer, ikke 1257,5.
 - [ ] Arbeidsplan: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår. 20 % og 80 % funksjon skal gi 1257,5 og 1580 timer planfestet tid.
-- [ ] Arbeidsplan: variabel lønn for det som er over en stilling under 100 %, opp til hel stilling (vanlig timelønn, som overtid uten 50 % tillegg), og overtid for det som er over 100 %.
+- [ ] Arbeidsplan: variabel lønn for det som er over en stilling under 100 %, opp til hel stilling (regnet som vikartimer: kalkulert tid × timelønn), og overtid for det som er over 100 %.
 - [ ] Arbeidsplan: kontaktlærer i årsrammetimer (28,5 = 4,69 %), og redusert undervisning for nyutdannet, 57 år og 60 år (60 år gir årsverk 1650, arbeidsår på 191 dager eller 38,2 uker, planfestet tid 1124,44 og høyere feriepengesats).
 - [ ] Regelverdiene for livsfasetiltak i punkt 6: 6 %, 6 % og 12,5 % (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Skriv ut Arbeidsplan eller lagre som PDF fra knappen ved tittelen.

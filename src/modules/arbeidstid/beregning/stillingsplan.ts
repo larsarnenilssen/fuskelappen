@@ -179,6 +179,8 @@ export interface LonnResultat extends Utregning {
   tillegg: Operand | null;
   /** Variabel lønn for beskjeftigelse ut over stillingen, opp til hel stilling, eller null. */
   variabel: Operand | null;
+  /** Kalkulert tid variabel lønn betales for, eller null. */
+  variabelKalkulertTid: Operand | null;
   overtid: Operand | null;
   /** Lønn, tillegg, variabel lønn og overtid i alt. Det er det som utbetales i året. */
   samlet: Operand;
@@ -197,6 +199,7 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const advarsler: AdvarselId[] = [];
   const tillegg = inn.tillegg !== null ? inndata('funksjonstillegg', inn.tillegg, 'kroner') : null;
   let variabel: Operand | null = null;
+  let variabelKalkulertTid: Operand | null = null;
   const variabelProsent = inn.overtid && inn.stilling < 100 ? Math.min(inn.overtid.beskjeftigelse, 100) - inn.stilling : 0;
   if (inn.overtid && variabelProsent > 1e-9) {
     const stilling = inndata('stilling', inn.stilling, 'prosent');
@@ -209,6 +212,7 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
     alle.push(prosent, ...v.trinn);
     advarsler.push(...v.advarsler);
     variabel = v.betaling;
+    variabelKalkulertTid = v.kalkulertTid;
   }
   let overtid: Operand | null = null;
   if (inn.overtid && inn.overtid.beskjeftigelse > 100) {
@@ -240,5 +244,5 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const sats = regel(hent, inn.over60 ? 'hta.feriepenger_prosent_over_60' : 'hta.feriepenger_prosent', 'feriepengesats', 'prosent');
   const ferie = trinn('feriepenger', { lonn: samlet, sats }, 'feriepenger', 'kroner', (samlet.verdi * sats.verdi) / 100);
   alle.push(ferie);
-  return { arslonn: lonn.resultat, tillegg, variabel, overtid, samlet, feriepenger: ferie.resultat, trinn: alle, advarsler };
+  return { arslonn: lonn.resultat, tillegg, variabel, variabelKalkulertTid, overtid, samlet, feriepenger: ferie.resultat, trinn: alle, advarsler };
 }

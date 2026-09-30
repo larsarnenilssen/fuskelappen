@@ -352,7 +352,7 @@ test.describe('arbeidstid', () => {
     await expect(page.locator('.arbeidsplan-differanse')).toHaveAttribute('data-differanse', 'variabel');
     await expect(page.locator('.arbeidsplan-differanse')).toContainText(/Variabel lønn\s*20 % = 105 årsrammetimer/);
     await expect(lonn).toContainText(/Årslønn i 80 % stilling\s*480\s000/);
-    await expect(lonn).toContainText(/Variabel lønn\s*88\s888,89/);
+    await expect(lonn).toContainText(/Variabel lønn \(280 timer kalkulert tid\)\s*88\s888,89/);
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/568\s888,89/);
     await expect(lonn).toContainText(/Feriepenger i tillegg\s*68\s266,67/);
     await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
@@ -602,7 +602,7 @@ test.describe('arbeidstid', () => {
     await page.getByLabel('Årslønn i kroner').fill('600000');
     const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
     // Variabel lønn med vanlig timelønn, overtid med 50 % tillegg, hver på sin linje.
-    await expect(lonn).toContainText(/Variabel lønn\s*88\s888,89/);
+    await expect(lonn).toContainText(/Variabel lønn \(280 timer kalkulert tid\)\s*88\s888,89/);
     await expect(lonn).toContainText(/Overtidsbetaling\s*66\s666,67/);
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/635\s555,56/);
   });
