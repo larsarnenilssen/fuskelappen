@@ -4,6 +4,29 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.5.0] – 2026-09-30
+
+Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og større diagram.
+
+### Lagt til
+
+- **Arbeidsplan** (tidligere Stillingsplan) viser fordelingen av arbeidstiden i samme diagram og tabell som Fordeling, ut fra fagene og funksjonene som er lagt inn. Møtetid per uke kan legges inn.
+- «Regn ut årslønn» i Arbeidsplan: velg garantilønn (stillingsgruppe og ansiennitet) eller skriv inn egen lønn, og se årslønnen i stillingen.
+- «Vis stort» viser fordelingsdiagrammet og tabellen i fullskjerm, der nettleseren støtter det (PC, Mac og nettbrett).
+- «Åpne i nytt vindu» ved tittelen på PC og Mac. Kalkulatoren åpnes i et eget vindu med det du har fylt ut, så flere kan være åpne samtidig.
+
+### Endret
+
+- Hovedkalkulatoren heter nå **Arbeidsplan**. Adressen, favoritter og lagrede varianter er de samme.
+- Fordeling: blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke regnes med det utvidede året. En hel stilling med bare funksjon gir nå 37,5 timer per uke over 45 uker, ikke 43 timer over 39,2 uker.
+- «Hva tiden brukes til» står under diagrammet og tabellen.
+- Fordelingsdiagrammet er høyere og har større tekst.
+
+### Rettet
+
+- Fordelingstabellen gikk utenfor skjermen på 320 px.
+- Bryteren «Regn ut årslønn» og andre brytere uten «?» sto med teksten midt på linjen på bred skjerm.
+
 ## [0.4.0] – 2026-09-29
 
 Programfag får årstimer, nye figurer og lagrede varianter.

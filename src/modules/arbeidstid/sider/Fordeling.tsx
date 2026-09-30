@@ -4,11 +4,11 @@ import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { beregnFordeling, type FordelingsdelId, funksjonsprosent, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
-import { Fordelingsdiagram, Fordelingstabell } from '../komponenter/Fordelingsdiagram.tsx';
+import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Bryter, Grupper, Nivavelger, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
-import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 import { Reduksjonsfelt, tilReduksjon } from './Planfestet.tsx';
@@ -73,9 +73,7 @@ export default function Fordeling() {
           {resultat ? (
             <>
               <Advarsler advarsler={resultat.advarsler} />
-              <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
-              <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
-              <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
+              <Fordelingsvisning resultat={resultat} />
               <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
             </>
           ) : (
@@ -90,6 +88,14 @@ export default function Fordeling() {
               sett(v);
             }}
           />
+        </>
+      }
+      etter={
+        <>
+          <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
+          {deler.map((d) => (
+            <BrukAvDel key={d} id={d} />
+          ))}
         </>
       }
     >
@@ -123,10 +129,6 @@ export default function Fordeling() {
         <Reduksjonsfelt legend={t('arbeidstid.fordeling.funksjon')} type={s.type} verdi={s.funksjon} onEndring={(type, funksjon) => sett({ ...s, type, funksjon })} />
         <Tallfelt etikett={t('arbeidstid.fordeling.moter')} hjelpetekst={t('arbeidstid.fordeling.moterHjelp')} verdi={s.moter} min={0} maks={37.5} onEndring={(moter) => sett({ ...s, moter })} />
       </div>
-      <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
-      {deler.map((d) => (
-        <BrukAvDel key={d} id={d} />
-      ))}
     </Kalkulatorside>
   );
 }

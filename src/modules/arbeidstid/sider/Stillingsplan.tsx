@@ -1,16 +1,20 @@
-// Stillingsplan for én lærer: fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid.
-// Hovedkalkulatoren i modulen. Differansen kan regnes om til årsrammetimer i et valgt fag.
+// Arbeidsplan for én lærer: fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid.
+// Hovedkalkulatoren i modulen. Differansen kan regnes om til årsrammetimer i et valgt fag. Under står fordelingen
+// av arbeidstiden (samme diagram som i Fordeling), og årslønnen i stillingen kan regnes ut ved behov.
+// Id og adresse er fortsatt «stillingsplan», så favoritter, lenker og lagrede varianter virker (avgjørelse 012).
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
+import { beregnArslonn, beregnFordeling, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
+import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
-import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
+import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -101,6 +105,9 @@ export default function Stillingsplan() {
       grupper: [nyGruppe()],
       funksjoner: [nyFunksjon()],
       timerIGruppe: null as number | null,
+      moter: null as number | null,
+      visLonn: false,
+      lonn: nyLonnstilstand(),
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -117,6 +124,18 @@ export default function Stillingsplan() {
       ? beregnStillingsplan(hent, { stilling: s.stilling, grupper: fylte.map((x) => x.inn), funksjoner, timerIGruppe: fylte.length > 0 ? valgtIndeks : null })
       : null,
   );
+  // Fordelingen av arbeidstiden for det som er lagt inn: fagene og summen av funksjonene.
+  const fordeling = resultat
+    ? prov(() =>
+        beregnFordeling(hent, {
+          undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn) },
+          funksjon: { type: 'prosent', prosent: resultat.funksjon.verdi },
+          moterPerUke: s.moter ?? 0,
+        }),
+      ).resultat
+    : null;
+  const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
+  const lonn = lonnsgrunnlag && s.stilling !== null && s.stilling > 0 ? prov(() => beregnArslonn(hent, lonnsgrunnlag, s.stilling ?? 0)) : null;
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const gruppenavn = fylte.map(
@@ -214,9 +233,21 @@ export default function Stillingsplan() {
                   </a>
                 )}
               </Utregningskort>
+              {fordeling && (
+                <>
+                  <Fordelingsvisning resultat={fordeling} />
+                  {!iBalanse && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+                </>
+              )}
             </>
           ) : (
             !feil && <ManglerInndata />
+          )}
+          {lonn?.feil && <Feilmelding feil={lonn.feil} />}
+          {lonn?.resultat && (
+            <Utregningskort tittel={t('arbeidstid.stillingsplan.arslonn')} resultat={lonn.resultat.arslonn} trinn={lonn.resultat.trinn} fast={false}>
+              <p class="felt-hjelp">{t('arbeidstid.stillingsplan.arslonnMerknad')}</p>
+            </Utregningskort>
           )}
           <Varianter
             id="stillingsplan"
@@ -247,6 +278,20 @@ export default function Stillingsplan() {
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
       <Funksjoner funksjoner={s.funksjoner} onEndring={(f) => sett({ ...s, funksjoner: f })} />
+      <fieldset class="fagkort">
+        <legend class="fagkort-tittel">{t('arbeidstid.stillingsplan.tillegg')}</legend>
+        <Tallfelt
+          class="felt-kompakt"
+          etikett={t('arbeidstid.fordeling.moter')}
+          hjelpetekst={t('arbeidstid.stillingsplan.moterHjelp')}
+          verdi={s.moter}
+          min={0}
+          maks={37.5}
+          onEndring={(moter) => sett({ ...s, moter })}
+        />
+        <Vippe tekst={t('arbeidstid.stillingsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
+        {s.visLonn && <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />}
+      </fieldset>
     </Kalkulatorside>
   );
 }

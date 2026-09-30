@@ -2,10 +2,10 @@
 # Tallene i beregningene står i rules/. Her står metoden med ord, slik at den kan kontrolleres og rettes uten kodeendring.
 - id: metode-stillingsplan
   type: forklaring
-  tittel: { nb: Slik regnes stillingsplanen ut, nn: Slik blir stillingsplanen rekna ut }
+  tittel: { nb: Slik regnes arbeidsplanen ut, nn: Slik blir arbeidsplanen rekna ut }
   tekst:
     nb: |
-      Stillingsplanen sammenligner det læreren skal gjøre, med stillingen læreren er ansatt i:
+      Arbeidsplanen sammenligner det læreren skal gjøre, med stillingen læreren er ansatt i:
 
       1. **Undervisning** = summen av beskjeftigelsen i hvert fag, årstimer ÷ årsramme × 100 (se beskjeftigelse).
       2. **Samlet beskjeftigelse** = undervisning + funksjoner. Funksjoner, som kontaktlærer, oppgis i prosent av full stilling.
@@ -13,8 +13,12 @@
       4. Differansen kan regnes om til **årsrammetimer** i et fag: differanse × årsramme ÷ 100. Da ser du hvor mange timer undervisning i faget som mangler eller er for mye.
 
       Er samlet beskjeftigelse over 100 %, kan du regne ut overtidsbetalingen med kalkulatoren for overtid. Mellomregningene avrundes ikke. Svaret vises med to desimaler.
+
+      **Fordelingen av arbeidstiden** regnes ut som i kalkulatoren for fordeling, med fagene og summen av funksjonene. Diagrammet viser det som er lagt inn, ikke stillingsprosenten.
+
+      **Årslønn i stillingen** = årslønn i hel stilling × stillingsprosent ÷ 100. Årslønnen i hel stilling er garantilønnen for stillingsgruppe og ansiennitet i hovedtariffavtalen, eller lønnen du skriver inn. Feriepenger, tillegg og overtid er ikke med.
     nn: |
-      Stillingsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
+      Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
 
       1. **Undervisning** = summen av sysselsetjinga i kvart fag, årstimar ÷ årsramme × 100 (sjå sysselsetjing).
       2. **Samla sysselsetjing** = undervisning + funksjonar. Funksjonar, som kontaktlærar, blir oppgitt i prosent av full stilling.
@@ -22,11 +26,16 @@
       4. Differansen kan reknast om til **årsrammetimar** i eit fag: differanse × årsramme ÷ 100. Då ser du kor mange timar undervisning i faget som manglar eller er for mykje.
 
       Er samla sysselsetjing over 100 %, kan du rekne ut overtidsbetalinga med kalkulatoren for overtid. Mellomrekningane blir ikkje avrunda. Svaret blir vist med to desimalar.
+
+      **Fordelinga av arbeidstida** blir rekna ut som i kalkulatoren for fordeling, med faga og summen av funksjonane. Diagrammet viser det som er lagt inn, ikkje stillingsprosenten.
+
+      **Årsløn i stillinga** = årsløn i heil stilling × stillingsprosent ÷ 100. Årsløna i heil stilling er garantiløna for stillingsgruppe og ansiennitet i hovudtariffavtalen, eller løna du skriv inn. Feriepengar, tillegg og overtid er ikkje med.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
   kontrollert: null
-  stikkord: [stillingsplan, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
+  stikkord: [arbeidsplan, stillingsplan, årslønn, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
 
 - id: metode-beskjeftigelse
   type: forklaring
@@ -196,7 +205,9 @@
       - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet. Får ikke møtetiden plass i den planfestede tiden for undervisningsdelen, for eksempel når stillingen bare er funksjon, legges resten av møtetiden i funksjonstiden.
       - **Tid læreren disponerer selv** er 537,5 × B.
 
-      For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon, ikke en arbeidsplan. Hvordan tiden fordeles, avtales på skolen.
+      For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon. Hvordan tiden fordeles, avtales på skolen.
+
+      **Timer per uke** er timene delt på uker i arbeidsåret (196 dager ÷ 5 = 39,2 uker). Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med, og timene per uke regnes med det utvidede arbeidsåret. En hel stilling med bare funksjoner gir 1687,5 timer planfestet tid, 29 dager utvidelse og 45 uker med 37,5 timer.
     nn: |
       Diagrammet viser årsverket i ei tenkt stilling. Stillinga er sysselsetjinga i faga (B) og funksjonar og andre oppgåver (F), til saman B + F prosent av 1687,5 timar.
 
@@ -206,7 +217,9 @@
       - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta. Får ikkje møtetida plass i den planfesta tida for undervisningsdelen, til dømes når stillinga berre er funksjon, blir resten av møtetida lagd i funksjonstida.
       - **Tid læraren disponerer sjølv** er 537,5 × B.
 
-      For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon, ikkje ein arbeidsplan. Korleis tida blir fordelt, blir avtalt på skulen.
+      For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon. Korleis tida blir fordelt, blir avtalt på skulen.
+
+      **Timar per veke** er timane delte på veker i arbeidsåret (196 dagar ÷ 5 = 39,2 veker). Blir planfesta tid meir enn 37,5 timar per veke i snitt, blir arbeidsåret utvida som i punkt 5.3: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med, og timane per veke blir rekna med det utvida arbeidsåret. Ei heil stilling med berre funksjonar gir 1687,5 timar planfesta tid, 29 dagar utviding og 45 veker med 37,5 timar.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }

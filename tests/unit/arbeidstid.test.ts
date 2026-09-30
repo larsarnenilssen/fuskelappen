@@ -196,6 +196,22 @@ describe('fordeling', () => {
     expect(over.advarsler).toContain('funksjon_over_stilling');
     expect(over.stilling.verdi).toBe(20);
   });
+
+  it('utvider arbeidsåret når planfestet tid går over 37,5 timer per uke, som punkt 5.3', () => {
+    // Hel stilling med bare funksjon: 1687,5 timer planfestet, over grensen på 39,2 × 37,5 = 1470 timer.
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: null }, funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });
+    const p = beregnPlanfestet(hent, { type: 'prosent', prosent: 100 });
+    expect(r.utvidelseDager.verdi).toBeCloseTo(p.utvidelseDager.verdi);
+    expect(r.utvidelseDager.verdi).toBeCloseTo(29);
+    expect(r.arbeidsaarUker.verdi).toBeCloseTo(45);
+    const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+    expect(planfestet / r.arbeidsaarUker.verdi).toBeCloseTo(37.5);
+
+    // Innenfor grensen er arbeidsåret 39,2 uker.
+    const vanlig = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(vanlig.utvidelseDager.verdi).toBe(0);
+    expect(vanlig.arbeidsaarUker.verdi).toBeCloseTo(39.2);
+  });
 });
 
 describe('overtid', () => {
@@ -286,5 +302,16 @@ describe('årstimer fra Grep', () => {
     // Yrkesfag (eier 29.09.2026): norsk 112 og engelsk 140.
     expect(tabell.get(rad('Norsk', 'Yrkesfag', 'Vg1').rad.nr)?.arstimer).toBe(112);
     expect(tabell.get(rad('Engelsk', 'Yrkesfag', 'Vg2').rad.nr)?.arstimer).toBe(140);
+  });
+});
+
+describe('årslønn i stillingen', () => {
+  it('er årslønn i hel stilling × stillingsprosent ÷ 100, fra garantilønn eller egen lønn', async () => {
+    const { beregnArslonn, lesGarantilonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    expect(beregnArslonn(hent, { type: 'manuell', arslonn: 600000 }, 80).arslonn.verdi).toBe(480000);
+    const lektor = lesGarantilonn(hent).find((r) => r.id === 'lektor');
+    const r = beregnArslonn(hent, { type: 'garantilonn', stillingsgruppe: 'lektor', ansiennitet: 0 }, 50);
+    expect(r.arslonn.verdi).toBeCloseTo((lektor?.lonn[0] ?? NaN) / 2);
+    expect(r.trinn[0]?.operander.arslonn?.opprinnelse).toBe('tabell');
   });
 });

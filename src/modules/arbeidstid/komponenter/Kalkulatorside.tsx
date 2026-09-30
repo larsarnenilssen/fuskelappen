@@ -4,17 +4,30 @@ import { useMemo } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Hjelp } from '../../../components/Hjelp.tsx';
+import { Ikon } from '../../../components/Ikon.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsrammer, lesArstimer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
+import { aapneINyttVindu } from '../kontekst.ts';
 
 export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
 
 /**
  * Kalkulatorsiden: skjemaet (children) og resultatet. På bred skjerm står resultatet i en egen kolonne til høyre,
- * så det er synlig mens skjemaet fylles ut. På mobil kommer resultatet under skjemaet.
+ * så det er synlig mens skjemaet fylles ut. På mobil kommer resultatet under skjemaet. Det som står i «etter»
+ * (f.eks. forklaringer av delene i diagrammet), kommer under både skjema og resultat.
  */
-export function Kalkulatorside({ id, children, resultat }: { id: KalkulatorId; children: ComponentChildren; resultat?: ComponentChildren }) {
+export function Kalkulatorside({
+  id,
+  children,
+  resultat,
+  etter,
+}: {
+  id: KalkulatorId;
+  children: ComponentChildren;
+  resultat?: ComponentChildren;
+  etter?: ComponentChildren;
+}) {
   const { t } = useTekst();
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
   return (
@@ -25,11 +38,21 @@ export function Kalkulatorside({ id, children, resultat }: { id: KalkulatorId; c
           <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
         </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
+        <button
+          type="button"
+          class="ikonknapp nytt-vindu"
+          aria-label={t('arbeidstid.felles.nyttVindu', { navn: tittel })}
+          title={t('arbeidstid.felles.nyttVinduKort')}
+          onClick={aapneINyttVindu}
+        >
+          <Ikon navn="ekstern" />
+        </button>
       </div>
       <div class="kalkulator-flate">
         <div class="kalkulator-skjema">{children}</div>
         {resultat && <div class="kalkulator-resultat">{resultat}</div>}
       </div>
+      {etter && <div class="kalkulator-etter">{etter}</div>}
       <Metode id={`metode-${id}`} />
     </div>
   );

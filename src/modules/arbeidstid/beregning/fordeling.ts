@@ -9,6 +9,8 @@
 //   planfestet tid for undervisningsdelen = planfestet × B, tid læreren disponerer selv = (årsverk − planfestet) × B,
 //   funksjonstid = årsverk × F. Summen er årsverk × (B + F).
 // For hel stilling gir dette samme planfestede tid som punkt 5.3 (eier bekreftet 29.09.2026).
+// Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
+// regnes med det utvidede arbeidsåret.
 import { Regelfeil } from '../../../core/regler/motor.ts';
 import { type Arsrammevalg, velgArsramme } from './arsrammer.ts';
 import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
@@ -65,8 +67,12 @@ export interface Fordelingsresultat extends Utregning {
   funksjonsprosent: Operand;
   stilling: Operand;
   arsverk: Operand;
-  /** Uker i arbeidsåret (196 dager ÷ 5), til visning av timer per uke. */
+  /** Uker i arbeidsåret (196 dager ÷ 5), utvidet når planfestet tid går over grensen. Til visning av timer per uke. */
   arbeidsaarUker: Operand;
+  /** Dager arbeidsåret er utvidet med (0 når planfestet tid er innenfor grensen). */
+  utvidelseDager: Operand;
+  /** Høyeste planfestede tid per uke i snitt (37,5), til forklaringen. */
+  planfestetMaksUke: Operand;
   deler: Fordelingsdel[];
 }
 
@@ -125,17 +131,50 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     ((arsverk.verdi - planfestet.verdi) * B.verdi) / 100,
   );
 
+  // Planfestet tid i alt. Går den over grensen for arbeidsåret, utvides arbeidsåret (punkt 5.3).
+  const planfestetStilling = trinn(
+    'planfestet_stilling',
+    { planfestet_undervisning: planU.resultat, funksjonstid: funksjonstid.resultat },
+    'planfestet_stilling',
+    'timer',
+    planU.resultat.verdi + funksjonstid.resultat.verdi,
+  );
+  const aar = arbeidsaaret(hent);
+  const maksUke = regel(hent, 'sfs2213.planfestet_maks_uke', 'planfestet_maks_uke', 'timer_per_uke');
+  const maks = trinn('planfestet_maks', { uker: aar.uker, maks_uke: maksUke }, 'planfestet_maks', 'timer', aar.uker.verdi * maksUke.verdi);
+  const aarTrinn: Trinn[] = [planfestetStilling, ...aar.trinn, maks];
+  let uker = aar.uker;
+  let utvidelseDager: Operand = { navn: 'utvidelse_dager', verdi: 0, enhet: 'dager', opprinnelse: 'trinn' };
+  if (planfestetStilling.resultat.verdi > maks.resultat.verdi + 1e-9) {
+    const over = trinn('utvidelse_timer', { planfestet: planfestetStilling.resultat, maks: maks.resultat }, 'utvidelse_timer', 'timer', planfestetStilling.resultat.verdi - maks.resultat.verdi);
+    const perDag = regel(hent, 'sfs2213.timer_per_dag', 'timer_per_dag', 'timer');
+    const dager = trinn('utvidelse_dager', { timer: over.resultat, per_dag: perDag }, 'utvidelse_dager', 'dager', over.resultat.verdi / perDag.verdi);
+    const perUke = regel(hent, 'sfs2213.arbeidsdager_per_uke', 'arbeidsdager_per_uke', 'dager');
+    const utvidet = trinn(
+      'arbeidsaar_uker_utvidet',
+      { uker: aar.uker, dager: dager.resultat, per_uke: perUke },
+      'arbeidsaar_uker_utvidet',
+      'uker',
+      aar.uker.verdi + dager.resultat.verdi / perUke.verdi,
+    );
+    aarTrinn.push(over, dager, utvidet);
+    uker = utvidet.resultat;
+    utvidelseDager = dager.resultat;
+  }
+
   const advarsler = new Set<AdvarselId>(u.advarsler);
   if (stilling.resultat.verdi > 100 + 1e-9) advarsler.add('over_hel_stilling');
   if (moterForStore) advarsler.add('motetid_for_stor');
 
-  const trinnliste: Trinn[] = [...f.trinn, ...u.trinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, funksjonstid, ...moteTrinn, selv];
+  const trinnliste: Trinn[] = [...f.trinn, ...u.trinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, funksjonstid, ...moteTrinn, selv, ...aarTrinn];
   return {
     beskjeftigelse: B,
     funksjonsprosent: F,
     stilling: stilling.resultat,
     arsverk: arsverkStilling.resultat,
-    arbeidsaarUker: arbeidsaaret(hent).uker,
+    arbeidsaarUker: uker,
+    utvidelseDager,
+    planfestetMaksUke: maksUke,
     deler: [
       { id: 'undervisning', timer: undervisningstimer.verdi, planfestet: true },
       { id: 'motetid', timer: motetid.resultat.verdi, planfestet: true },

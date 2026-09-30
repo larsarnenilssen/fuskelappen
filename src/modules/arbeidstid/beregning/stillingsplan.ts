@@ -4,6 +4,7 @@
 import { beregnBeskjeftigelse, type Gruppe, type Gruppeberegning } from './beskjeftigelse.ts';
 import type { Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, trinn } from './verdier.ts';
+import { arslonn, type Lonnsgrunnlag } from './vikar.ts';
 
 export interface Funksjon {
   /** Fritt navn, f.eks. «kontaktlærer». Brukes bare i visningen. */
@@ -87,4 +88,15 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
 /** Differansen i årsrammetimer i hvert fag: hvor mye undervisning som mangler (eller er for mye). */
 export function differanseIHvertFag(r: StillingsplanResultat): { arsramme: number; timer: number }[] {
   return r.grupper.map((g) => ({ arsramme: g.arsramme.verdi, timer: (r.differanse.verdi * g.arsramme.verdi) / 100 }));
+}
+
+export interface ArslonnResultat extends Utregning {
+  arslonn: Operand;
+}
+
+/** Årslønn i stillingen: årslønn i hel stilling × stillingsprosent ÷ 100. */
+export function beregnArslonn(hent: Hent, lonn: Lonnsgrunnlag, stilling: number): ArslonnResultat {
+  const hel = arslonn(hent, lonn);
+  const t = trinn('arslonn_stilling', { arslonn: hel, stilling: inndata('stilling', stilling, 'prosent') }, 'arslonn_stilling', 'kroner', (hel.verdi * stilling) / 100);
+  return { arslonn: t.resultat, trinn: [t], advarsler: [] };
 }

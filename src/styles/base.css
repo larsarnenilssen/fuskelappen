@@ -936,6 +936,7 @@ main {
 .vippe.med-hjelp {
   display: grid;
   grid-template-columns: auto minmax(0, max-content) auto;
+  justify-content: start;
   column-gap: var(--rom-2);
 }
 
@@ -1252,7 +1253,7 @@ p.fagkort-tittel {
 
 .fordeling-etikett {
   fill: var(--farge-flate);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   font-family: var(--font-tekst);
 }
@@ -1275,6 +1276,61 @@ p.fagkort-tittel {
 }
 
 /* ---------- Fordelingsdiagram ---------- */
+
+.fordeling .figur-tekst {
+  font-size: 12px;
+}
+
+.fordeling-visning {
+  margin: 0 0 var(--rom-4);
+}
+
+.fordeling-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-2);
+}
+
+.fordeling-topp .liten-overskrift {
+  margin: 0;
+}
+
+.fordeling {
+  margin: 0 0 var(--rom-3);
+}
+
+/* Stor visning: diagram og tabell fyller skjermen. Innholdet får plass uten eget scrollområde i vanlige vinduer. */
+.fordeling-visning:fullscreen {
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  padding: var(--rom-5) max(var(--rom-5), 4vw);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--str-l);
+}
+
+.fordeling-visning:fullscreen .fordeling-topp .liten-overskrift {
+  font-size: var(--str-xl);
+}
+
+.fordeling-visning:fullscreen .diagram {
+  max-height: 42vh;
+}
+
+.fordeling-visning:fullscreen .fordeling-forklaring-rad,
+.fordeling-visning:fullscreen .fordeling-tabell {
+  font-size: var(--str-l);
+}
+
+.fordeling-visning:fullscreen .fordeling-farge {
+  width: 1.2rem;
+  height: 1.2rem;
+}
 
 .fordeling-del-undervisning {
   fill: var(--diagram-undervisning);
@@ -1353,9 +1409,26 @@ p.fagkort-tittel {
 
 .fordeling-tabell th,
 .fordeling-tabell td {
-  padding: var(--rom-1) var(--rom-2);
+  padding: var(--rom-1) var(--rom-1);
   border-bottom: var(--strek) solid var(--farge-linje);
   text-align: left;
+}
+
+.fordeling-tabell th:first-child {
+  padding-left: 0;
+  overflow-wrap: anywhere;
+}
+
+.fordeling-tabell td:last-child,
+.fordeling-tabell th:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 30rem) {
+  .fordeling-tabell th,
+  .fordeling-tabell td {
+    padding: var(--rom-1) var(--rom-2);
+  }
 }
 
 .fordeling-tabell td.tall,
@@ -1512,6 +1585,21 @@ p.fagkort-tittel {
 
 .kalkulator .tittelrad .ikonknapp {
   margin: 0 0 0 auto;
+}
+
+.kalkulator .tittelrad .ikonknapp + .nytt-vindu {
+  margin-left: 0;
+}
+
+/* «Åpne i nytt vindu» gir bare mening på skrivebordet, der flere vinduer kan stå ved siden av hverandre. */
+.nytt-vindu {
+  display: none;
+}
+
+@media (min-width: 64rem) and (hover: hover) and (pointer: fine) {
+  .nytt-vindu {
+    display: inline-flex;
+  }
 }
 
 .resultatkort-tittel {

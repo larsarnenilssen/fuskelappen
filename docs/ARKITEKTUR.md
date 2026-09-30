@@ -79,7 +79,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 
 ## Arbeidstid (SFS 2213)
 
-`src/modules/arbeidstid/` har hovedkalkulatoren stillingsplan (`beregning/stillingsplan.ts`: undervisning + funksjoner − stillingsprosent, med teknisk undertid eller overtid) og kalkulatorene for beskjeftigelse, periodebeskjeftigelse, vikartimer, planfestet arbeidstid, overtid og fordeling av arbeidstiden.
+`src/modules/arbeidstid/` har hovedkalkulatoren Arbeidsplan (id og adresse `stillingsplan`, `beregning/stillingsplan.ts`: undervisning + funksjoner − stillingsprosent, med teknisk undertid eller overtid, fordeling og årslønn) og kalkulatorene for beskjeftigelse, periodebeskjeftigelse, vikartimer, planfestet arbeidstid, overtid og fordeling av arbeidstiden.
 
 - Beregningene i `beregning/` er rene funksjoner. De får regelverdiene gjennom en `Hent`-funksjon (i appen `hentVerdi()` med brukerens dato, fylke og skole), så ingen tariff- eller lovverdier står i koden.
 - Hver beregning gir resultatet og **trinnene** i utregningen. Et trinn har en id, operandene (verdi, enhet, og om verdien kommer fra regelverket, en tabell, brukeren eller et tidligere trinn) og resultatet. Teksten og formelen for hvert trinn står i `src/strings/moduler/arbeidstid.*.ts` med plassholdere, f.eks. `{arstimer} ÷ {arsramme} × 100`. Appen fyller formelen inn to ganger: med navn og med tall. Kilde og nivå vises for hver regelverdi.
@@ -87,7 +87,7 @@ For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises 
 - Mellomregninger avrundes ikke. Svar vises med to desimaler.
 - Fag velges med et søk i vedlegg 1 (`fagsok.ts`), med søkeord fra `rules/sfs2213/fagsok-2026-2027.yaml` og programområder fra Grep (`data/grep/programomrader.json`, `npm run hent:grep`). Det utfylte huskes i nettleserhistorikken (`useSkjematilstand`), se [avgjørelse 009](avgjorelser/009-fagsok-og-skjematilstand.md).
 - Når brukeren velger fag, fylles årstimene inn fra `rules/sfs2213/arstimer-2026-2027.yaml` (radnummer i vedlegg 1 → årstimer og fagkoder i Grep). Brukeren kan endre tallet. `npm run hent:grep` henter omfanget for fagkodene til `data/grep/arstimer.json`, og en enhetstest sjekker at tabellen stemmer med Grep. Se [avgjørelse 011](avgjorelser/011-arstimer-fra-grep.md).
-- `Kalkulatorside` har skjemaet og resultatet i hver sin del. På bred skjerm står de i to kolonner. «Lagrede varianter» (`Varianter.tsx`) lagrer utfyllingen og hovedresultatet i `scenarier` i lagringen på enheten (høyst tre per kalkulator).
+- `Kalkulatorside` har skjemaet og resultatet i hver sin del. På bred skjerm står de i to kolonner. Det som står i `etter`, kommer under begge. «Åpne i nytt vindu» åpner siden i et eget vindu, som leser skjemaet fra vinduet som åpnet det. Se [avgjørelse 012](avgjorelser/012-arbeidsplan-fullskjerm-og-nye-vinduer.md). «Lagrede varianter» (`Varianter.tsx`) lagrer utfyllingen og hovedresultatet i `scenarier` i lagringen på enheten (høyst tre per kalkulator).
 - Resultatkortet (`Utregningskort`) viser hovedsvaret i en fast linje nederst når kortet er utenfor skjermen, og kan kopiere utregningen som tekst. Korte forklaringer ligger bak «?» (`Hjelp`). Se [avgjørelse 010](avgjorelser/010-resultatlinje-hjelp-og-kopiering.md).
 
 ## Lagring og personvern

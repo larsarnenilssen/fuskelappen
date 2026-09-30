@@ -93,7 +93,10 @@ export type Storrelse =
   | 'teknisk_differanse'
   | 'teknisk_timer'
   | 'motetid_i_funksjon'
-  | 'funksjonstid_etter_moter';
+  | 'funksjonstid_etter_moter'
+  | 'planfestet_stilling'
+  | 'arbeidsaar_uker_utvidet'
+  | 'arslonn_stilling';
 
 export interface Operand {
   navn: Storrelse;
@@ -159,7 +162,10 @@ export type TrinnId =
   | 'teknisk_timer'
   | 'undervisning_fra_stilling'
   | 'motetid_i_funksjon'
-  | 'funksjonstid_etter_moter';
+  | 'funksjonstid_etter_moter'
+  | 'planfestet_stilling'
+  | 'arbeidsaar_uker_utvidet'
+  | 'arslonn_stilling';
 
 export interface Trinn {
   id: TrinnId;

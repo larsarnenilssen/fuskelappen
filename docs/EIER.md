@@ -120,7 +120,10 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Årstimer: velg noen fag og se at riktig årstimetall fylles inn. Tabellen står i `rules/sfs2213/arstimer-2026-2027.yaml`, med fagkodene i Grep.
 - [ ] Programfag: søk på en fagkode (f.eks. HEA2005) og se at årstimetallet fra Udir stemmer.
 - [ ] Lagrede varianter: lagre, endre og hent fram igjen.
-- [ ] Stillingsplan: prøv eksemplene E1–E4. Se at teknisk undertid og overtid, timene i hvert fag og lenken til overtid er riktige.
+- [ ] Arbeidsplan: prøv eksemplene E1–E4. Se at teknisk undertid og overtid, timene i hvert fag og lenken til overtid er riktige.
+- [ ] Arbeidsplan: se at diagrammet over arbeidstiden stemmer, og prøv «Regn ut årslønn» med garantilønn og egen lønn.
+- [ ] Fordeling: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår.
+- [ ] PC/Mac: prøv «Vis stort» på diagrammet og «Åpne i nytt vindu» ved tittelen.
 - [ ] Trykk «Vis utregning» og «Slik regnes det ut». Er metoden og formlene forståelige og riktige?
 - [ ] Velg Vestland og en skole under Innstillinger. Ingen ekte lokale avtaler er lagt inn ennå, så verdiene skal fortsatt være nasjonale.
 
