@@ -18,6 +18,8 @@ export interface Overtid {
   lonn: Lonnsgrunnlag;
   /** Høyere feriepengesats for arbeidstakere over 60 år. */
   over60?: boolean;
+  /** Når beskjeftigelsen gjelder en periode: overtidsprosenten i perioden × nøkkelen gir prosenten på årsbasis. */
+  periodenokkel?: Operand;
 }
 
 export interface OvertidResultat extends Utregning {
@@ -35,7 +37,9 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
   const valg = velgArsramme(hent, o.arsrammer, o.elever);
   const advarsler: AdvarselId[] = valg.manglerElevtall ? ['mangler_elevtall'] : [];
   const b = inndata('beskjeftigelse', o.beskjeftigelse, 'prosent');
-  const prosent = trinn('overtidsprosent', { beskjeftigelse: b }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100));
+  const prosent = o.periodenokkel
+    ? trinn('overtidsprosent_periode', { beskjeftigelse: b, periodenokkel: o.periodenokkel }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100) * o.periodenokkel.verdi)
+    : trinn('overtidsprosent', { beskjeftigelse: b }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100));
   const timer = trinn('overtidstimer', { overtidsprosent: prosent.resultat, arsramme: valg.arsramme }, 'overtidstimer', 'arsrammetimer', (prosent.resultat.verdi * valg.arsramme.verdi) / 100);
   const konstant = regel(hent, 'hta.timelonn_konstant', 'timelonn_konstant', 'tall');
   const kalkulert = trinn(

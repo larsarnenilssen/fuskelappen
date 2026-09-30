@@ -3,7 +3,7 @@
 // regnes om til årsrammetimer i et valgt fag: differanse × årsramme ÷ 100 (eiers beslutning 29.09.2026).
 // Funksjoner kan oppgis i årsrammetimer, som gjøres om til prosent med årsrammen for funksjoner (607,5).
 // Redusert undervisning etter punkt 6 (livsfasetiltak) regnes som en del av stillingen, som funksjonene (eier 30.09.2026).
-import { beregnBeskjeftigelse, type Gruppe, type Gruppeberegning } from './beskjeftigelse.ts';
+import { beregnBeskjeftigelse, beregnPeriodebeskjeftigelse, type Gruppe, type Gruppeberegning, type Periode, periodenokkel } from './beskjeftigelse.ts';
 import type { Arsrammevalg, Elevtall } from './arsrammer.ts';
 import { beregnOvertid, beregnVariabelLonn } from './overtid.ts';
 import { funksjonsprosent } from './planfestet.ts';
@@ -29,6 +29,11 @@ export interface Stillingsplan {
   timerIGruppe: number | null;
   /** Redusert undervisning etter punkt 6 i prosent av full stilling, eller 0. */
   reduksjon?: number;
+  /**
+   * En periode av skoleåret. Da er fagene timer i perioden, beskjeftigelsen er periodebeskjeftigelse, og stillingen og
+   * funksjonene gjelder perioden (en funksjon på 10 % er 10 % i perioden, eier 30.09.2026).
+   */
+  periode?: Periode;
 }
 
 export interface StillingsplanResultat extends Utregning {
@@ -55,6 +60,8 @@ export interface StillingsplanResultat extends Utregning {
   /** Variabel lønn og teknisk overtid i årsrammetimer i valgt fag, når begge finnes og fag er valgt. */
   variabelTimer: Operand | null;
   overtidTimer: Operand | null;
+  /** Periodenøkkelen (dager i perioden ÷ dager i skoleåret), eller null for hele skoleåret. Prosent × nøkkel gir årsbasis. */
+  periodenokkel: Operand | null;
 }
 
 /** Funksjonen i prosent av full stilling, også når den er oppgitt i årsrammetimer. */
@@ -66,9 +73,12 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
   const alle: Trinn[] = [];
   const b =
     s.grupper.length > 0
-      ? beregnBeskjeftigelse(hent, s.grupper)
-      : { grupper: [], sum: inndata('sum_beskjeftigelse', 0, 'prosent'), trinn: [], advarsler: [] };
+      ? s.periode
+        ? beregnPeriodebeskjeftigelse(hent, s.grupper, s.periode)
+        : beregnBeskjeftigelse(hent, s.grupper)
+      : { grupper: [], sum: inndata('sum_beskjeftigelse', 0, 'prosent'), trinn: s.periode ? [periodenokkel(hent, s.periode)] : [], advarsler: [] };
   alle.push(...b.trinn);
+  const nokkel = b.trinn.find((t) => t.id === 'periodenokkel')?.resultat ?? null;
   const undervisning: Operand = { ...b.sum, navn: 'undervisningsprosent' };
 
   // Funksjoner i årsrammetimer gjøres om til prosent, med eget trinn i utregningen.
@@ -100,10 +110,10 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
   if (valgt) {
     const t = trinn(
       'teknisk_timer',
-      { differanse: differanse.resultat, arsramme: valgt.arsramme },
+      { differanse: differanse.resultat, arsramme: valgt.perioderamme ?? valgt.arsramme },
       'teknisk_timer',
       'arsrammetimer',
-      (differanse.resultat.verdi * valgt.arsramme.verdi) / 100,
+      (differanse.resultat.verdi * (valgt.perioderamme ?? valgt.arsramme).verdi) / 100,
       s.grupper.length > 1 && s.timerIGruppe !== null ? { gruppe: s.timerIGruppe + 1 } : {},
     );
     alle.push(t);
@@ -126,8 +136,9 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     variabel = v.resultat;
     overtid = o.resultat;
     if (valgt) {
-      const vt = trinn('variabel_timer', { variabel, arsramme: valgt.arsramme }, 'variabel_timer', 'arsrammetimer', (variabelVerdi * valgt.arsramme.verdi) / 100);
-      const ot = trinn('overtidstimer', { overtidsprosent: overtid, arsramme: valgt.arsramme }, 'overtidstimer', 'arsrammetimer', (overtidVerdi * valgt.arsramme.verdi) / 100);
+      const ramme = valgt.perioderamme ?? valgt.arsramme;
+      const vt = trinn('variabel_timer', { variabel, arsramme: ramme }, 'variabel_timer', 'arsrammetimer', (variabelVerdi * ramme.verdi) / 100);
+      const ot = trinn('overtidstimer', { overtidsprosent: overtid, arsramme: ramme }, 'overtidstimer', 'arsrammetimer', (overtidVerdi * ramme.verdi) / 100);
       alle.push(vt, ot);
       variabelTimer = vt.resultat;
       overtidTimer = ot.resultat;
@@ -148,6 +159,7 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     overtid,
     variabelTimer,
     overtidTimer,
+    periodenokkel: nokkel,
     trinn: alle,
     advarsler: b.advarsler,
   };
@@ -155,7 +167,7 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
 
 /** Differansen i årsrammetimer i hvert fag: hvor mye undervisning som mangler (eller er for mye). */
 export function differanseIHvertFag(r: StillingsplanResultat): { arsramme: number; timer: number }[] {
-  return r.grupper.map((g) => ({ arsramme: g.arsramme.verdi, timer: (r.differanse.verdi * g.arsramme.verdi) / 100 }));
+  return r.grupper.map((g) => ({ arsramme: g.arsramme.verdi, timer: (r.differanse.verdi * (g.perioderamme ?? g.arsramme).verdi) / 100 }));
 }
 
 export interface Lonnsinndata {
@@ -171,6 +183,11 @@ export interface Lonnsinndata {
   overtid: { beskjeftigelse: number; arsrammer: Arsrammevalg[]; elever: Elevtall } | null;
   /** Høyere feriepengesats for arbeidstakere over 60 år. */
   over60: boolean;
+  /**
+   * Periodenøkkelen når lønnen gjelder en periode. Årslønn og tillegg regnes da for perioden (× nøkkel), og prosentene
+   * for variabel lønn og overtid i perioden gjøres om til årsbasis (× nøkkel) før de regnes om til timer og kroner.
+   */
+  periodenokkel?: Operand | null;
 }
 
 export interface LonnResultat extends Utregning {
@@ -194,10 +211,18 @@ export interface LonnResultat extends Utregning {
  */
 export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const hel = arslonn(hent, inn.lonn);
-  const lonn = trinn('arslonn_stilling', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent') }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling) / 100);
+  const k = inn.periodenokkel ?? null;
+  const lonn = k
+    ? trinn('arslonn_periode', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent'), periodenokkel: k }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling * k.verdi) / 100)
+    : trinn('arslonn_stilling', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent') }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling) / 100);
   const alle: Trinn[] = [lonn];
   const advarsler: AdvarselId[] = [];
-  const tillegg = inn.tillegg !== null ? inndata('funksjonstillegg', inn.tillegg, 'kroner') : null;
+  let tillegg = inn.tillegg !== null ? inndata('funksjonstillegg', inn.tillegg, 'kroner') : null;
+  if (tillegg && k) {
+    const t = trinn('tillegg_periode', { tillegg, periodenokkel: k }, 'funksjonstillegg', 'kroner', tillegg.verdi * k.verdi);
+    alle.push(t);
+    tillegg = t.resultat;
+  }
   let variabel: Operand | null = null;
   let variabelKalkulertTid: Operand | null = null;
   const variabelProsent = inn.overtid && inn.stilling < 100 ? Math.min(inn.overtid.beskjeftigelse, 100) - inn.stilling : 0;
@@ -208,15 +233,23 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
       inn.overtid.beskjeftigelse > 100
         ? trinn('variabel_prosent', { stilling }, 'variabel_prosent', 'prosent', variabelProsent)
         : trinn('variabel_prosent_differanse', { beskjeftigelse: inndata('beskjeftigelse', inn.overtid.beskjeftigelse, 'prosent'), stilling }, 'variabel_prosent', 'prosent', variabelProsent);
-    const v = beregnVariabelLonn(hent, { prosent: prosent.resultat, arsrammer: inn.overtid.arsrammer, elever: inn.overtid.elever, lonn: inn.lonn });
-    alle.push(prosent, ...v.trinn);
+    alle.push(prosent);
+    // I en periode gjøres prosenten om til årsbasis, så timene blir timene i perioden.
+    let arsbasis = prosent.resultat;
+    if (k) {
+      const a = trinn('prosent_arsbasis', { prosent: prosent.resultat, periodenokkel: k }, 'variabel_prosent', 'prosent', prosent.resultat.verdi * k.verdi);
+      alle.push(a);
+      arsbasis = a.resultat;
+    }
+    const v = beregnVariabelLonn(hent, { prosent: arsbasis, arsrammer: inn.overtid.arsrammer, elever: inn.overtid.elever, lonn: inn.lonn });
+    alle.push(...v.trinn);
     advarsler.push(...v.advarsler);
     variabel = v.betaling;
     variabelKalkulertTid = v.kalkulertTid;
   }
   let overtid: Operand | null = null;
   if (inn.overtid && inn.overtid.beskjeftigelse > 100) {
-    const o = beregnOvertid(hent, { ...inn.overtid, lonn: inn.lonn, over60: inn.over60 });
+    const o = beregnOvertid(hent, { ...inn.overtid, lonn: inn.lonn, over60: inn.over60, ...(k ? { periodenokkel: k } : {}) });
     // Feriepengene regnes av det samlede beløpet under, ikke av overtiden alene.
     // Årsrammen og timelønnen står allerede i utregningen når variabel lønn er regnet ut.
     const finnes = new Set(alle.map((t) => t.id));

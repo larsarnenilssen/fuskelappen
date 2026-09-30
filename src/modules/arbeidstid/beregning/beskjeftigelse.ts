@@ -19,6 +19,8 @@ export interface Gruppe {
 export interface Gruppeberegning {
   timer: Operand;
   arsramme: Operand;
+  /** Årsrammen for perioden (årsramme × periodenøkkel), når beskjeftigelsen gjelder en periode. */
+  perioderamme?: Operand;
   beskjeftigelse: Operand;
 }
 
@@ -93,6 +95,21 @@ export interface Periode {
   dagerISkolearet: number | null;
 }
 
+/** Periodenøkkelen: undervisningsdager i perioden ÷ undervisningsdager i skoleåret. */
+export function periodenokkel(hent: Hent, periode: Periode): Trinn {
+  const dagerSkolear =
+    periode.dagerISkolearet === null
+      ? regel(hent, 'sfs2213.skolear_dager', 'dager_i_skolearet', 'dager')
+      : inndata('dager_i_skolearet', periode.dagerISkolearet, 'dager');
+  return trinn(
+    'periodenokkel',
+    { dager_periode: inndata('dager_i_perioden', periode.dagerIPerioden, 'dager'), dager_skolear: dagerSkolear },
+    'periodenokkel',
+    'faktor',
+    periode.dagerIPerioden / dagerSkolear.verdi,
+  );
+}
+
 /**
  * Periodebeskjeftigelse: timene i perioden ÷ (årsramme × periodenøkkel) × 100,
  * der periodenøkkelen er undervisningsdager i perioden ÷ undervisningsdager i skoleåret.
@@ -100,17 +117,7 @@ export interface Periode {
 export function beregnPeriodebeskjeftigelse(hent: Hent, grupper: readonly Gruppe[], periode: Periode): Beskjeftigelsesresultat {
   const alleTrinn: Trinn[] = [];
   const advarsler = new Set<AdvarselId>();
-  const dagerSkolear =
-    periode.dagerISkolearet === null
-      ? regel(hent, 'sfs2213.skolear_dager', 'dager_i_skolearet', 'dager')
-      : inndata('dager_i_skolearet', periode.dagerISkolearet, 'dager');
-  const nokkel = trinn(
-    'periodenokkel',
-    { dager_periode: inndata('dager_i_perioden', periode.dagerIPerioden, 'dager'), dager_skolear: dagerSkolear },
-    'periodenokkel',
-    'faktor',
-    periode.dagerIPerioden / dagerSkolear.verdi,
-  );
+  const nokkel = periodenokkel(hent, periode);
   alleTrinn.push(nokkel);
   // Uker i perioden for økter per uke uten oppgitt antall uker: dagene i perioden ÷ skoledager per uke.
   // Ukene kan ha ulikt antall skoledager eller ulik timeplan, så det gir en advarsel.
@@ -137,7 +144,7 @@ export function beregnPeriodebeskjeftigelse(hent: Hent, grupper: readonly Gruppe
     const ramme = trinn('perioderamme', { arsramme: valg.arsramme, periodenokkel: nokkel.resultat }, 'perioderamme', 'arsrammetimer', valg.arsramme.verdi * nokkel.resultat.verdi, nr);
     const b = trinn('periodebeskjeftigelse', { timer: t.timer, perioderamme: ramme.resultat }, 'beskjeftigelse', 'prosent', (t.timer.verdi / ramme.resultat.verdi) * 100, nr);
     alleTrinn.push(...valg.trinn, ...t.trinn, ramme, b);
-    return { timer: t.timer, arsramme: valg.arsramme, beskjeftigelse: b.resultat };
+    return { timer: t.timer, arsramme: valg.arsramme, perioderamme: ramme.resultat, beskjeftigelse: b.resultat };
   });
   const s = summer(resultater, 'sum_beskjeftigelse', flere);
   alleTrinn.push(...s.trinn);
