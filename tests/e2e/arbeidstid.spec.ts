@@ -370,6 +370,41 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
   });
 
+  test('funksjoner kan ha bare tillegg, bare tid eller begge deler', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('600000');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    const tabell = page.locator('.fordeling-tabell');
+
+    // Funksjon 1: bare tillegg (0 %). Tillegget kommer i lønnen, men tiden endres ikke.
+    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    await expect(lonn).toContainText(/Tillegg: Rådgiver\s*12\s000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('0,0');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    // Også når prosentfeltet står tomt.
+    await page.getByLabel('Funksjon 1: Prosent').fill('');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+
+    // Funksjon 2: bare tid (10 %), uten tillegg.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Teamleder');
+    await page.getByLabel('Funksjon 2: Prosent').fill('10');
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('168,8');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+
+    // Funksjon 3: både tid (5 %) og tillegg.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    await page.getByLabel('Funksjon 3: Prosent').fill('5');
+    await page.getByRole('switch', { name: 'Funksjon 3: Tillegg i lønnen' }).check();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/624\s000/);
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('253,1');
+  });
+
   test('arbeidsplanen regner ut overtidsbetaling i lønnen over 100 %', async ({ page }) => {
     await aapne(page, '/arbeidstid/stillingsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');

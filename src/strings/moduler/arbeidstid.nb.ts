@@ -207,7 +207,7 @@ export const arbeidstidNb = {
     stillingHjelp: 'Stillingen læreren er ansatt i.',
     funksjoner: 'Funksjoner',
     funksjonerHjelp:
-      'Funksjoner som kontaktlærer oppgis i prosent av full stilling, slik de står i stillingsplanen. Slå av «Utvider planfestet tid» for funksjoner som gis uten at planfestet tid utvides, f.eks. kontaktlærer der det er praksis. Det endrer bare diagrammet over arbeidstiden.',
+      'Funksjoner som kontaktlærer oppgis i prosent av full stilling, slik de står i stillingsplanen. En funksjon kan ha bare avsatt tid, bare tillegg (0 %) eller begge deler. Tillegg slås på ved funksjonen når lønnen regnes ut. Slå av «Utvider planfestet tid» for funksjoner som gis uten at planfestet tid utvides, f.eks. kontaktlærer der det er praksis. Det endrer bare diagrammet over arbeidstiden.',
     funksjonNr: 'Funksjon {nr}',
     funksjonNavn: 'Navn',
     funksjonNavnPlassholder: 'F.eks. kontaktlærer',

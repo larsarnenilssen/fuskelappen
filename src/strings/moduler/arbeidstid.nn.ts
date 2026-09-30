@@ -208,7 +208,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     stillingHjelp: 'Stillinga læraren er tilsett i.',
     funksjoner: 'Funksjonar',
     funksjonerHjelp:
-      'Funksjonar som kontaktlærar blir oppgitt i prosent av full stilling, slik dei står i stillingsplanen. Slå av «Utvidar planfesta tid» for funksjonar som blir gitt utan at planfesta tid blir utvida, t.d. kontaktlærar der det er praksis. Det endrar berre diagrammet over arbeidstida.',
+      'Funksjonar som kontaktlærar blir oppgitt i prosent av full stilling, slik dei står i stillingsplanen. Ein funksjon kan ha berre avsett tid, berre tillegg (0 %) eller begge delar. Tillegg blir slått på ved funksjonen når løna blir rekna ut. Slå av «Utvidar planfesta tid» for funksjonar som blir gitt utan at planfesta tid blir utvida, t.d. kontaktlærar der det er praksis. Det endrar berre diagrammet over arbeidstida.',
     funksjonNr: 'Funksjon {nr}',
     funksjonNavn: 'Namn',
     funksjonNavnPlassholder: 'T.d. kontaktlærar',

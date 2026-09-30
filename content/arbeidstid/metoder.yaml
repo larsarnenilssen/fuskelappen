@@ -19,7 +19,7 @@
       **Lønn i året** = årslønn i stillingen + tillegg + overtidsbetaling.
 
       - **Årslønn i stillingen** = årslønn i hel stilling × stillingsprosent ÷ 100. Årslønnen i hel stilling er garantilønnen for stillingsgruppe og ansiennitet i hovedtariffavtalen, eller lønnen du skriver inn.
-      - **Tillegg** velges ved hver funksjon. Feltet fylles inn med minstegodtgjøringen i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærer og 12 000 kr for rådgiver eller sosiallærer, etter navnet på funksjonen. Kjennes navnet ikke igjen, brukes beløpet for kontaktlærer. Godtgjøring for andre funksjoner fastsettes lokalt, og du kan skrive inn et annet beløp.
+      - **Tillegg** velges ved hver funksjon. Feltet fylles inn med minstegodtgjøringen i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærer og 12 000 kr for rådgiver eller sosiallærer, etter navnet på funksjonen. Kjennes navnet ikke igjen, brukes beløpet for kontaktlærer. En funksjon kan ha bare tillegg (0 %), og da endrer den ikke fordelingen av tiden. Godtgjøring for andre funksjoner fastsettes lokalt, og du kan skrive inn et annet beløp.
       - **Overtidsbetaling** regnes som i kalkulatoren for overtid når samlet beskjeftigelse er over 100 %, med årsrammen i faget som er valgt for årsrammetimer.
       - **Feriepenger** regnes som vanlig i prosent av det som utbetales: 12 %, eller 14,3 % for arbeidstakere over 60 år (hovedtariffavtalen § 7.4.2). De kommer i tillegg og er ikke med i lønn i året.
     nn: |
@@ -37,7 +37,7 @@
       **Løn i året** = årsløn i stillinga + tillegg + overtidsbetaling.
 
       - **Årsløn i stillinga** = årsløn i heil stilling × stillingsprosent ÷ 100. Årsløna i heil stilling er garantiløna for stillingsgruppe og ansiennitet i hovudtariffavtalen, eller løna du skriv inn.
-      - **Tillegg** blir valt ved kvar funksjon. Feltet blir fylt inn med minstegodtgjeringa i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærar og 12 000 kr for rådgivar eller sosiallærar, etter namnet på funksjonen. Blir namnet ikkje kjent att, blir beløpet for kontaktlærar brukt. Godtgjering for andre funksjonar blir fastsett lokalt, og du kan skrive inn eit anna beløp.
+      - **Tillegg** blir valt ved kvar funksjon. Feltet blir fylt inn med minstegodtgjeringa i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærar og 12 000 kr for rådgivar eller sosiallærar, etter namnet på funksjonen. Blir namnet ikkje kjent att, blir beløpet for kontaktlærar brukt. Ein funksjon kan ha berre tillegg (0 %), og då endrar han ikkje fordelinga av tida. Godtgjering for andre funksjonar blir fastsett lokalt, og du kan skrive inn eit anna beløp.
       - **Overtidsbetaling** blir rekna som i kalkulatoren for overtid når samla sysselsetjing er over 100 %, med årsramma i faget som er valt for årsrammetimar.
       - **Feriepengar** blir rekna som vanleg i prosent av det som blir utbetalt: 12 %, eller 14,3 % for arbeidstakarar over 60 år (hovudtariffavtalen § 7.4.2). Dei kjem i tillegg og er ikkje med i løn i året.
   kilder:
