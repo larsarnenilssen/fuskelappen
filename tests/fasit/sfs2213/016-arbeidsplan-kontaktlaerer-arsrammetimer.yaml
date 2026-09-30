@@ -15,14 +15,16 @@ forventet:
   differanse_timer: -80.37
   undervisningstimer: 420
   motetid: 76
-  annen_planfestet: 600.05
+  annen_planfestet: 555.05
+  planleggingsdager: 45
   funksjonstid: 79.17
   selvdisponert: 512.28
   planfestet: 1175.22
-  per_uke: 29.98
+  per_uke: 29.74
 begrunnelse: >-
   Kontaktlærer 28,5 ÷ 607,5 × 100 = 4,69 %. Samlet beskjeftigelse 80 + 4,69 = 84,69 %, teknisk undertid −15,31 % eller
   −80,37 årsrammetimer i engelsk (525). Den ufylte delen fordeles som undervisning: planfestet 1150 × 95,31 % = 1096,05,
   som er undervisning 420, møtetid 2 × 38 = 76 og annen planfestet tid 600,05. Funksjonstid 1687,5 × 4,69 % = 79,17.
   Selvdisponert (1687,5 − 1150) × 95,31 % = 512,28. Planfestet i alt 1175,22, 29,98 timer per uke.
   Eksempel B, godkjent av eier 30.09.2026.
+  Endret 30.09.2026 etter eiers avklaring: planleggingsdagene (6 × 7,5 = 45 timer, som i InSchool) står på egen linje, og timene per uke er planfestet tid utenom planleggingsdagene delt på 38 skoleuker. Annen planfestet tid 600,05 − 45 = 555,05. Per uke (1175,22 − 45) ÷ 38 = 29,74 (før: 29,98).

@@ -28,6 +28,7 @@
   --diagram-undervisning: var(--p-blaa-700);
   --diagram-motetid: var(--p-rav-700);
   --diagram-annen: var(--p-groenn-700);
+  --diagram-planlegging: var(--p-turkis-700);
   --diagram-funksjon: var(--p-lilla-700);
   --diagram-selv: var(--p-graa-600);
 }
@@ -57,6 +58,7 @@
   --diagram-undervisning: var(--p-blaa-300);
   --diagram-motetid: var(--p-rav-300);
   --diagram-annen: var(--p-groenn-300);
+  --diagram-planlegging: var(--p-turkis-300);
   --diagram-funksjon: var(--p-lilla-300);
   --diagram-selv: var(--p-graa-400);
 }
@@ -87,11 +89,13 @@
     --diagram-undervisning: var(--p-blaa-300);
     --diagram-motetid: var(--p-rav-300);
     --diagram-annen: var(--p-groenn-300);
+    --diagram-planlegging: var(--p-turkis-300);
     --diagram-funksjon: var(--p-lilla-300);
     --diagram-selv: var(--p-graa-400);
   --diagram-undervisning: var(--p-blaa-300);
   --diagram-motetid: var(--p-rav-300);
   --diagram-annen: var(--p-groenn-300);
+  --diagram-planlegging: var(--p-turkis-300);
   --diagram-funksjon: var(--p-lilla-300);
   --diagram-selv: var(--p-graa-400);
   }
@@ -126,6 +130,7 @@
     --diagram-undervisning: var(--p-blaa-700);
     --diagram-motetid: var(--p-rav-700);
     --diagram-annen: var(--p-groenn-700);
+    --diagram-planlegging: var(--p-turkis-700);
     --diagram-funksjon: var(--p-lilla-700);
     --diagram-selv: var(--p-graa-600);
   }

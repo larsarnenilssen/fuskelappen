@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.7.1] – 2026-09-30
+
+### Endret
+
+- **Planleggingsdager i Arbeidsplan:** De 6 dagene i arbeidsåret utenom elevenes skoleår står på egen linje i fordelingen, som i Visma InSchool: 6 × 7,5 = 45 timer for en lærer i hel stilling, tatt fra annen planfestet tid. Feltet «Timer på planleggingsdager» kan endres for den enkelte, for eksempel ved deltid eller for en periode.
+- **Timer per uke** er nå planfestet tid utenom planleggingsdagene, delt på de 38 skoleukene (eller skoleukene i perioden). Hel stilling uten funksjoner gir 29,1 timer planfestet tid per uke (før 29,3). Grensen for utvidet arbeidsår er den samme som før.
+- Fasiteksemplene 015–017, 018, 019 og 023 er oppdatert etter dette (annen planfestet tid, planleggingsdager og timer per uke).
+
+### Rettet
+
+- Teksten «Tillegg i lønnen» ble delt midt i ordene når skjermen var smal eller skriften stor. Nå flytter beløpsfeltet ned på neste linje når det ikke er plass.
+
 ## [0.7.0] – 2026-09-30
 
 ### Lagt til

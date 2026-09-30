@@ -20,6 +20,7 @@
   --p-roed-100: #f8e1de;
   --p-fokus-lys: #b35c00;
   --p-lilla-700: #5b3f8c;
+  --p-turkis-700: #0e6a73;
   --p-graa-600: #5f6673;
 
   /* Palett – mørk */
@@ -40,6 +41,7 @@
   --p-roed-900: #4a1714;
   --p-fokus-mork: #ffb45c;
   --p-lilla-300: #c7b0ee;
+  --p-turkis-300: #86d0d6;
   --p-graa-400: #9ba3b0;
 
   /* Verdier som også brukes i manifest og theme-color (leses ved bygg) */

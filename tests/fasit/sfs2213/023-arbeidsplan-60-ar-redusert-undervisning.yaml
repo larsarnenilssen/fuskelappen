@@ -13,15 +13,17 @@ forventet:
   differanse: 0
   arsverk: 1650
   undervisningstimer: 459.38
-  annen_planfestet: 524.51
+  annen_planfestet: 479.51
+  planleggingsdager: 45
   funksjonstid: 140.56
   selvdisponert: 525.56
   planfestet: 1124.44
   arbeidsaar_uker: 38.2
-  per_uke: 29.44
+  per_uke: 28.41
 begrunnelse: >-
   Årsverket er 1650 timer fra 60 år (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie, så arbeidsåret er
   191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5 = 1124,44,
   og tiden læreren disponerer selv er 525,56. Redusert undervisning fordeles som undervisningen: 1124,44 × 12,5 % = 140,56
   planfestet. Undervisningsdelen 1124,44 × 87,5 % = 983,89 gir undervisning 459,38 og annen planfestet tid 524,51.
   Per uke 1124,44 ÷ 38,2 = 29,44. Eksempel C, rettet av eier 30.09.2026 (samme andel av årsverket).
+  Endret 30.09.2026 etter eiers avklaring: planleggingsdagene (6 × 7,5 = 45 timer, som i InSchool) står på egen linje, og timene per uke er planfestet tid utenom planleggingsdagene delt på 38 skoleuker. Annen planfestet tid 524,51 − 45 = 479,51. Per uke (1124,44 − 45) ÷ 38 = 28,41 (før: 1124,44 ÷ 38,2 = 29,44).

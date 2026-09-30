@@ -231,7 +231,8 @@ test.describe('arbeidstid', () => {
     await expect(tabell.getByRole('columnheader', { name: /Per uke/ })).toBeVisible();
     await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('37,5');
     await expect(page.getByText(/utvides arbeidsåret med 29(,0)? dager/)).toBeVisible();
-    await expect(page.getByText(/delt på 45(,0)? uker/)).toBeVisible();
+    // Skoleukene med utvidelsen: 38 + 29 ÷ 5 = 43,8 uker. Planleggingsdagene er holdt utenfor.
+    await expect(page.getByText(/delt på 43,8 uker/)).toBeVisible();
 
     // Forklaringen av delene står under diagrammet og tabellen.
     const tabellBoks = await tabell.boundingBox();
@@ -354,12 +355,21 @@ test.describe('arbeidstid', () => {
   test('arbeidsplanen viser fordelingen for stillingen før noe er fylt ut', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     const tabell = page.locator('.fordeling-tabell');
-    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    // Planleggingsdagene (6 × 7,5 = 45 timer) står for seg, og resten er annen planfestet tid.
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s105,0/);
+    await expect(tabell.getByRole('row', { name: /Planleggingsdager/ })).toContainText('45,0');
+    await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s150,0\s*29,1/);
     await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
+    // Timene på planleggingsdagene kan endres for den enkelte.
+    await page.getByLabel('Timer på planleggingsdager').fill('30');
+    await expect(tabell.getByRole('row', { name: /Planleggingsdager/ })).toContainText('30,0');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s120,0/);
+    await page.getByLabel('Timer på planleggingsdager').fill('');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
     await expect(page.getByText(/Delen av stillingen som ikke er fylt med fag og funksjoner \(100 %\)/)).toBeVisible();
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('50');
-    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('575,0');
+    // 50 % stilling: halvparten av planfestet tid (575), med de samme 45 timene på planleggingsdager når ikke annet er skrevet inn.
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('530,0');
   });
 
   test('arbeidsplanen har fordelingsdiagram og kan regne ut årslønn', async ({ page }) => {
@@ -469,7 +479,7 @@ test.describe('arbeidstid', () => {
     await expect(lonn).toContainText(/Tillegg: Rådgiver\s*12\s000/);
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
     await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('0,0');
-    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s105,0/);
     // Også når prosentfeltet står tomt.
     await page.getByLabel('Funksjon 1: Prosent').fill('');
     await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
@@ -514,8 +524,8 @@ test.describe('arbeidstid', () => {
     await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText(/1\s650,0/);
     // Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5.
     await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s124,4/);
-    // Fem arbeidsdager ekstra ferie: arbeidsåret er 191 dager eller 38,2 uker.
-    await expect(page.getByText('Per uke er timene delt på 38,2 uker i arbeidsåret.')).toBeVisible();
+    // Fem arbeidsdager ekstra ferie gir et arbeidsår på 191 dager. Timene per uke er fordelt på de 38 skoleukene.
+    await expect(page.getByText(/Per uke er timene delt på 38 skoleuker/)).toBeVisible();
     await page.getByRole('button', { name: 'Forklaring: Redusert undervisning' }).click();
     await expect(page.locator('.hjelp-tekst').getByText(/Forskjellen er 5 arbeidsdager ekstra ferie/)).toBeVisible();
     await page.getByRole('button', { name: 'Forklaring: Redusert undervisning' }).click();
@@ -620,6 +630,32 @@ test.describe('arbeidstid', () => {
     // Beløpet får plass i feltet.
     await expect(belop).toHaveValue(/12\s?000/);
     expect(await belop.evaluate((e: HTMLInputElement) => e.scrollWidth <= e.clientWidth)).toBe(true);
+  });
+
+  test('teksten ved vippen for tillegg deles ikke inne i et ord, heller ikke med stor skrift', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    for (const skrift of ['100%', '150%', '200%']) {
+      await page.addStyleTag({ content: `html { font-size: ${skrift} !important; }` });
+      // Hvert ord i etiketten skal stå på én linje (et delt ord gir to rektangler).
+      const delteOrd = await page.locator('.funksjon-tillegg .vippe label').evaluate((label) => {
+        const tekst = [...label.childNodes].find((n) => n.nodeType === Node.TEXT_NODE && (n.textContent ?? '').trim()) as Text;
+        const delte: string[] = [];
+        const innhold = tekst.textContent ?? '';
+        for (const m of innhold.matchAll(/\S+/g)) {
+          const r = document.createRange();
+          r.setStart(tekst, m.index ?? 0);
+          r.setEnd(tekst, (m.index ?? 0) + m[0].length);
+          if (r.getClientRects().length > 1) delte.push(m[0]);
+        }
+        return delte;
+      });
+      expect(delteOrd, skrift).toEqual([]);
+      // Raden med vippe og beløp går ikke utenfor kortet.
+      const [rad, kort] = await Promise.all([page.locator('.funksjon-tillegg').boundingBox(), page.locator('.funksjonsliste').boundingBox()]);
+      expect(rad && kort && rad.x + rad.width <= kort.x + kort.width + 1, skrift).toBe(true);
+    }
   });
 
   test('beskjeftigelse over en stilling under 100 % gir variabel lønn, og over 100 % også overtid', async ({ page }) => {
@@ -746,7 +782,7 @@ test.describe('arbeidstid', () => {
 
   test('figurer for uke, beløp og hele skoleåret', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
-    await expect(page.getByRole('img', { name: /gjennomsnittlig uke: 29,3 timer planfestet tid/ })).toBeVisible();
+    await expect(page.getByRole('img', { name: /gjennomsnittlig uke: 29,1 timer planfestet tid/ })).toBeVisible();
     await expect(page.getByText(/Enkeltuker kan ha opptil 37,5 timer planfestet tid, og enkeltdager opptil 9 timer/)).toBeVisible();
 
     await aapne(page, '/arbeidstid/vikar');

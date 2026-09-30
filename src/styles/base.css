@@ -1467,6 +1467,11 @@ p.fagkort-tittel {
   background: var(--diagram-annen);
 }
 
+.fordeling-del-planleggingsdager {
+  fill: var(--diagram-planlegging);
+  background: var(--diagram-planlegging);
+}
+
 .fordeling-del-funksjonstid {
   fill: var(--diagram-funksjon);
   background: var(--diagram-funksjon);
@@ -1898,13 +1903,13 @@ p.fagkort-tittel {
   width: 4.25rem;
 }
 
-/* Tillegg: vippen og beløpet på samme linje, forklaringen og eventuell feil under begge. */
+/* Tillegg: vippen og beløpet på samme linje, forklaringen og eventuell feil under begge. Er det ikke plass
+   (smal skjerm eller stor skrift), flytter beløpet ned på neste linje. Teksten ved vippen deles aldri inne i et ord. */
 .funksjon-tillegg {
-  display: grid;
-  grid-template-columns: minmax(0, max-content) auto;
-  justify-content: start;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  column-gap: var(--rom-4);
+  gap: var(--rom-2) var(--rom-4);
 }
 
 .funksjon-tillegg .felt {
@@ -1912,12 +1917,18 @@ p.fagkort-tittel {
 }
 
 .funksjon-tillegg .vippe {
+  flex: 0 1 auto;
   margin: 0;
+}
+
+.funksjon-tillegg .tallfelt {
+  flex: none;
 }
 
 .funksjon-tillegg .felt-hjelp,
 .funksjon-tillegg .felt-feilmelding {
-  grid-column: 1 / -1;
+  flex-basis: 100%;
+  margin: 0;
 }
 
 .funksjon-tillegg .tallfelt input {

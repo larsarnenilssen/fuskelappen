@@ -23,7 +23,9 @@
       - **Funksjoner som ikke utvider planfestet tid**, og **redusert undervisning**, fordeles som undervisningen: 1150 × prosent planfestet tid og resten til tid læreren disponerer selv. For nyutdannede og lærere over 60 år sier punkt 6 at den frigjorte tiden legges i planfestet tid, der den erstatter undervisning. Appen bruker den samme regelen for 57-åringer, uten at det står uttrykkelig i avtaleteksten.
       - Den delen av stillingen som ikke er fylt med fag og funksjoner, fordeles som undervisningsdelen. En hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv.
       - Får ikke møtetiden plass i den planfestede tiden for undervisningsdelen, for eksempel når stillingen bare er funksjon, legges resten i funksjonstiden.
-      - **Timer per uke** er timene delt på uker i arbeidsåret: elevenes skoleår (190 dager) og 6 dager, altså 196 dager eller 39,2 uker. For lærere som er 60 år og eldre er arbeidsåret fem dager kortere: 191 dager eller 38,2 uker. Planfestet tid kan være høyst 37,5 timer per uke (punkt 5.1). Blir den mer, utvides arbeidsåret: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med.
+      - **Planleggingsdager:** Arbeidsåret er elevenes skoleår (190 dager) og 6 dager, altså 196 dager (punkt 4 a). De 6 dagene står på egen linje som planleggingsdager: 6 × 7,5 = 45 timer for en lærer i hel stilling, tatt fra annen planfestet tid. Samme antall brukes for alle, slik Visma InSchool gjør, og det kan endres for den enkelte, for eksempel ved deltid eller for en periode.
+      - **Timer per uke** er timene utenom planleggingsdagene delt på de 38 skoleukene. Hel stilling uten funksjoner gir (1150 − 45) ÷ 38 = 29,1 timer planfestet tid per uke.
+      - **Utvidelse:** Planfestet tid kan være høyst 37,5 timer per uke (punkt 5.1), altså 37,5 × 38 + 45 = 1470 timer i et arbeidsår på 196 dager. Blir den mer, utvides arbeidsåret: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med. 100 % funksjon gir 29 dager, i alt 225 dager = 1687,5 ÷ 7,5. For lærere som er 60 år og eldre er arbeidsåret fem dager kortere (191 dager), og grensen 37,5 timer mindre.
 
       For stillinger under 100 % er tiden regnet forholdsmessig. Diagrammet er en illustrasjon. Hvordan tiden fordeles, avtales på skolen.
 
@@ -45,7 +47,7 @@
       - **Stillingen og funksjonene** gjelder perioden: en funksjon på 10 % er 10 % i perioden.
       - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skoleåret er 50 % for hele året. Timer og kroner er de samme i begge visningene.
       - **Differansen** regnes om til timer i perioden med perioderammen.
-      - **Fordelingen** viser timene i perioden: timene for et helt år med de samme prosentene × periodenøkkelen. Timene per uke blir de samme som for et helt år.
+      - **Fordelingen** viser timene i perioden: timene for et helt år med de samme prosentene × periodenøkkelen. Planleggingsdagene er timene som er skrevet inn (45 om feltet er tomt), og timene per uke er resten delt på skoleukene i perioden (dager ÷ 5).
       - **Lønn i perioden** = årslønn i stillingen × periodenøkkel + tillegg × periodenøkkel + variabel lønn + overtidsbetaling. Variabel lønn og overtid regnes som vikartimer med timene i perioden.
     nn: |
       Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
@@ -66,7 +68,9 @@
       - **Funksjonar som ikkje utvidar planfesta tid**, og **redusert undervisning**, blir fordelte som undervisninga: 1150 × prosent planfesta tid og resten til tid læraren disponerer sjølv. For nyutdanna og lærarar over 60 år seier punkt 6 at den frigjorde tida blir lagd i planfesta tid, der ho erstattar undervisning. Appen bruker den same regelen for 57-åringar, utan at det står uttrykkeleg i avtaleteksten.
       - Den delen av stillinga som ikkje er fylt med fag og funksjonar, blir fordelt som undervisningsdelen. Ei heil stilling utan fag og funksjonar gir 1150 timar anna planfesta tid og 537,5 timar tid læraren disponerer sjølv.
       - Får ikkje møtetida plass i den planfesta tida for undervisningsdelen, til dømes når stillinga berre er funksjon, blir resten lagd i funksjonstida.
-      - **Timar per veke** er timane delte på veker i arbeidsåret: skuleåret til elevane (190 dagar) og 6 dagar, altså 196 dagar eller 39,2 veker. For lærarar som er 60 år og eldre er arbeidsåret fem dagar kortare: 191 dagar eller 38,2 veker. Planfesta tid kan vere høgst 37,5 timar per veke (punkt 5.1). Blir ho meir, blir arbeidsåret utvida: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med.
+      - **Planleggingsdagar:** Arbeidsåret er skuleåret til elevane (190 dagar) og 6 dagar, altså 196 dagar (punkt 4 a). Dei 6 dagane står på eiga linje som planleggingsdagar: 6 × 7,5 = 45 timar for ein lærar i heil stilling, tekne frå anna planfesta tid. Same talet blir brukt for alle, slik Visma InSchool gjer, og det kan endrast for den einskilde, til dømes ved deltid eller for ein periode.
+      - **Timar per veke** er timane utanom planleggingsdagane delte på dei 38 skulevekene. Heil stilling utan funksjonar gir (1150 − 45) ÷ 38 = 29,1 timar planfesta tid per veke.
+      - **Utviding:** Planfesta tid kan vere høgst 37,5 timar per veke (punkt 5.1), altså 37,5 × 38 + 45 = 1470 timar i eit arbeidsår på 196 dagar. Blir ho meir, blir arbeidsåret utvida: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med. 100 % funksjon gir 29 dagar, i alt 225 dagar = 1687,5 ÷ 7,5. For lærarar som er 60 år og eldre er arbeidsåret fem dagar kortare (191 dagar), og grensa 37,5 timar mindre.
 
       For stillingar under 100 % er tida rekna forholdsmessig. Diagrammet er ein illustrasjon. Korleis tida blir fordelt, blir avtalt på skulen.
 
@@ -88,7 +92,7 @@
       - **Stillinga og funksjonane** gjeld perioden: ein funksjon på 10 % er 10 % i perioden.
       - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skuleåret er 50 % for heile året. Timar og kroner er dei same i begge visingane.
       - **Differansen** blir rekna om til timar i perioden med perioderamma.
-      - **Fordelinga** viser timane i perioden: timane for eit heilt år med dei same prosentane × periodenøkkelen. Timane per veke blir dei same som for eit heilt år.
+      - **Fordelinga** viser timane i perioden: timane for eit heilt år med dei same prosentane × periodenøkkelen. Planleggingsdagane er timane som er skrivne inn (45 om feltet er tomt), og timane per veke er resten delt på skulevekene i perioden (dagar ÷ 5).
       - **Løn i perioden** = årsløn i stillinga × periodenøkkel + tillegg × periodenøkkel + variabel løn + overtidsbetaling. Variabel løn og overtid blir rekna som vikartimar med timane i perioden.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
