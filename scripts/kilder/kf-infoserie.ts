@@ -13,6 +13,8 @@ export interface KfResultat {
   versjon: string | null;
   gyldig: string | null;
   tegn: number;
+  /** Den normaliserte teksten, til verdisjekken. */
+  tekst: string;
 }
 
 /** Normalisert tekst fra dokumentets HTML. Ren funksjon, testes i tests/unit/kildejobb.test.ts. */
@@ -56,6 +58,7 @@ export async function sjekkKfInfoserie(kilde: Kilde): Promise<KfResultat> {
       versjon: m ? String(m.DocumentRevisionNumber ?? '') || null : null,
       gyldig: m ? `${dato(m.date_effect)}–${dato(m.date_expired)}` : null,
       tegn: tekst.length,
+      tekst,
     };
   } finally {
     await nettleser.close();

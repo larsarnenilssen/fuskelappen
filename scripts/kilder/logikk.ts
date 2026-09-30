@@ -9,9 +9,7 @@ export interface Sjekkresultat {
   melding: string | null;
 }
 
-export function normaliserTekst(tekst: string): string {
-  return tekst.normalize('NFC').replace(/\s+/g, ' ').trim();
-}
+export { normaliserTekst } from '../../src/core/kontroll/tekst.ts';
 
 export function lagFingeravtrykk(tekst: string): string {
   return `sha256:${createHash('sha256').update(tekst, 'utf8').digest('hex')}`;

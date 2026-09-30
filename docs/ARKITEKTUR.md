@@ -114,10 +114,12 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
    - `side`: henter siden, trekker ut delen `uttrekk.selektor` peker på, normaliserer teksten og lager et fingeravtrykk (SHA-256). Avviker det fra `godkjent_fingeravtrykk`, blir status `endret`.
    - `nsr`: henter aktive videregående skoler fra Nasjonalt skoleregister til `data/skoler/vgs.json`. Oppdateres automatisk, med endringsrapport i jobbsammendraget.
    - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
-   - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen.
+   - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen. Teksten i PDF-en leses med pdfjs-dist til verdisjekken.
    - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.
    - `grep` lages i fase 2. Se [avgjørelse 008](avgjorelser/008-kildesjekk-for-avtaletekst-pdf-og-lovdata.md).
-2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
+   - Verdisjekken (`src/core/kontroll/verdisjekk.ts`) ser etter `sitat` for hver regelverdi i teksten fra kilden og skriver `data/status/verdistatus.json`: `samsvarer`, `avvik` (med forslag til nytt tall når teksten rundt tallet finnes) eller `ikke_sjekket`. Se [avgjørelse 017](avgjorelser/017-automatisk-kontroll-av-regelverdier.md).
+   - `scripts/kontroll/rapport.ts` lager kontrolloversikten `docs/KONTROLL.md`: hva som bygger på hver kilde (`src/core/kontroll/indeks.ts`), status for eiers kontroll og for verdisjekken.
+2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring, sammen med `verdistatus.json` og `docs/KONTROLL.md`. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
 3. `scripts/kilder/varsle.ts` oppretter én sak per kilde (etikett `kilde`) ved endring eller feil, oppdaterer den når tilstanden endres, og lukker den når kilden er i orden igjen.
 4. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil. Koden på Pages endres bare ved ny versjon.
 

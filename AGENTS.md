@@ -65,6 +65,7 @@ En endring er ikke ferdig før alle er grønne.
 - Innhold og verdier har riktig `gyldighet` (nasjonal, fylke eller skole). Fylkes- og skoleinnhold vises bare når brukeren har valgt fylke eller skole.
 - Data under NLOD (Udir, Lovdata) krediteres under «Om».
 - Oppdater `godkjent_fingeravtrykk` i kilderegisteret bare etter beskjed fra eier.
+- Tall i `rules/` fra en kilde får et `sitat` (kort, ordrett utdrag der tallet står). Tall som ikke står i kilden, får `grunnlag: avledet` eller `grunnlag: praksis` og en merknad. Automatisk samsvar med kilden er ikke det samme som eiers kontroll.
 
 ## Personvern
 

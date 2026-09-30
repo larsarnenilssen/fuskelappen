@@ -6,6 +6,8 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Fylker, Kilde, Kilderegister } from '../../src/core/innhold/skjema.ts';
 import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../../src/core/kildestatus/kildestatus.ts';
+import { lesVerdistatus, sjekkbareVerdier, sjekkVerdier, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
+import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { lagFingeravtrykk, nyPost, vurderMotGodkjent, type Sjekkresultat } from './logikk.ts';
 import { sjekkKfInfoserie } from './kf-infoserie.ts';
@@ -14,6 +16,7 @@ import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './m
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const statusfil = join(rot, 'data/status/kildestatus.json');
+const verdistatusfil = join(rot, 'data/status/verdistatus.json');
 const skolefil = join(rot, 'data/skoler/vgs.json');
 const generert = join(rot, '.generert');
 
@@ -34,6 +37,8 @@ function lesJson(fil: string): unknown {
 const forrige: Kildestatusfil | null = lesKildestatus(lesJson(statusfil));
 const naa = new Date().toISOString();
 const rapport: string[] = [];
+// Teksten fra hver kilde, eller hvorfor den ikke kunne leses. Brukes av verdisjekken etterpå.
+const tekster: Record<string, { tekst: string } | { feil: string }> = {};
 
 async function sjekkNsr(kilde: Kilde): Promise<Sjekkresultat> {
   const skoler = await hentSkoler(fylker);
@@ -63,23 +68,27 @@ async function sjekkNsr(kilde: Kilde): Promise<Sjekkresultat> {
 
 async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   if (kilde.id === simulertFeil) {
+    tekster[kilde.id] = { feil: 'Simulert feil.' };
     return { status: 'feilet', fingeravtrykk: null, melding: 'Simulert feil (manuell test av varsling).' };
   }
   try {
     switch (kilde.sjekkmetode) {
       case 'side': {
-        const { fingeravtrykk } = await sjekkSide(kilde);
+        const { fingeravtrykk, tekst } = await sjekkSide(kilde);
+        tekster[kilde.id] = { tekst };
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'nsr':
         return await sjekkNsr(kilde);
       case 'fil': {
-        const { fingeravtrykk, bytes } = await sjekkFil(kilde);
+        const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
+        tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };
         rapport.push(`### ${kilde.navn}`, `Filen er ${bytes} byte, fingeravtrykk ${fingeravtrykk}.`, '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'kf-infoserie': {
         const r = await sjekkKfInfoserie(kilde);
+        tekster[kilde.id] = { tekst: r.tekst };
         rapport.push(
           `### ${kilde.navn}`,
           `${r.tittel ?? 'Ukjent tittel'}, versjon ${r.versjon ?? '?'}, gyldig ${r.gyldig ?? '?'}. ${r.tegn} tegn tekst, fingeravtrykk ${r.fingeravtrykk}.`,
@@ -88,7 +97,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return vurderMotGodkjent(r.fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'lovdata': {
-        const { fingeravtrykk } = await sjekkLovdata(kilde);
+        const { fingeravtrykk, tekst } = await sjekkLovdata(kilde);
+        tekster[kilde.id] = { tekst };
         rapport.push(`### ${kilde.navn}`, `Fingeravtrykk ${fingeravtrykk}.`, '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
@@ -96,7 +106,9 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return { status: 'feilet', fingeravtrykk: null, melding: `Sjekkmetoden «${kilde.sjekkmetode}» er ikke laget ennå.` };
     }
   } catch (e) {
-    return { status: 'feilet', fingeravtrykk: null, melding: e instanceof Error ? e.message : String(e) };
+    const melding = e instanceof Error ? e.message : String(e);
+    tekster[kilde.id] = { feil: melding };
+    return { status: 'feilet', fingeravtrykk: null, melding };
   }
 }
 
@@ -110,6 +122,21 @@ for (const kilde of register.kilder.filter((k) => k.aktiv && k.sjekkmetode !== '
 const fil: Kildestatusfil = { skjema: 1, kjort: naa, kilder };
 mkdirSync(join(rot, 'data/status'), { recursive: true });
 writeFileSync(statusfil, `${JSON.stringify(fil, null, 2)}\n`);
+
+// Verdisjekken: ser etter sitatet til hver regelverdi i kildeteksten (docs/avgjorelser/017).
+const verdistatus: Verdistatusfil = sjekkVerdier(sjekkbareVerdier(lesRegelsett(rot)), tekster, lesVerdistatus(lesJson(verdistatusfil)), naa);
+writeFileSync(verdistatusfil, `${JSON.stringify(verdistatus, null, 2)}\n`);
+const verdiposter = Object.entries(verdistatus.verdier);
+const antall = (s: string) => verdiposter.filter(([, p]) => p.status === s).length;
+rapport.push(
+  '### Verdisjekk',
+  `${verdiposter.length} regelverdier med sitat: ${antall('samsvarer')} samsvarer med kilden, ${antall('avvik')} avvik, ${antall('ikke_sjekket')} ikke sjekket.`,
+  ...verdiposter
+    .filter(([, p]) => p.status !== 'samsvarer' || p.melding)
+    .map(([n, p]) => `- ${n}: ${p.status}${p.forslag === null ? '' : ` (forslag: ${p.forslag})`}${p.melding ? ` – ${p.melding}` : ''}`),
+  '',
+);
+console.log(`Verdisjekk: ${antall('samsvarer')} samsvarer, ${antall('avvik')} avvik, ${antall('ikke_sjekket')} ikke sjekket.`);
 
 const tabell = [
   '## Kildesjekk',

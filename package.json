@@ -22,6 +22,7 @@
     "eslint": "^10.11.0",
     "marked": "^18.0.14",
     "node-html-parser": "^9.0.4",
+    "pdfjs-dist": "^6.3.289",
     "tsx": "^4.23.15",
     "typescript": "~6.0",
     "typescript-eslint": "^8.71.0",
@@ -42,6 +43,7 @@
     "kilder:sjekk": "tsx scripts/kilder/sjekk.ts",
     "kilder:varsle": "tsx scripts/kilder/varsle.ts",
     "kilder:dokumenter": "tsx scripts/lag-kilder-md.ts",
+    "kontroll:rapport": "tsx scripts/kontroll/rapport.ts",
     "lag:ikoner": "tsx scripts/lag-ikoner.ts",
     "hent:grep": "tsx scripts/hent-grep.ts"
   }

@@ -1,5 +1,6 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json, committer den ved hver kjøring (holder den planlagte jobben i live),
+# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md på nytt,
+# committer dem ved hver kjøring (holder den planlagte jobben i live),
 # oppretter eller oppdaterer én sak (issue) per kilde ved endring eller feil, og publiserer fersk status.
 name: Kildesjekk
 
@@ -45,13 +46,15 @@ jobs:
           else
             npm run kilder:sjekk
           fi
+      - name: Kontrolloversikt
+        run: npm run kontroll:rapport
       - name: Sammendrag
         run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
       - name: Lagre kildestatus
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/skoler/vgs.json
+          git add data/status/kildestatus.json data/status/verdistatus.json data/skoler/vgs.json docs/KONTROLL.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       - name: Varsle eier (issues)

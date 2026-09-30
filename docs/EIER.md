@@ -143,3 +143,26 @@ Innhold du ikke har godkjent, har `kontrollert: null` i filene, men vises uten m
 - [ ] «Hva tiden brukes til» under Arbeidsplan, særlig «Annen planfestet tid og annet elevrettet arbeid».
 
 Skriv til Claude hva som er riktig, og hva som må endres.
+
+## 10. Kontrolloversikten og den automatiske verdisjekken
+
+**Kontrolloversikten** ligger i `docs/KONTROLL.md` på GitHub. Den lages på nytt hver mandag når kildesjekken kjører. For hver kilde viser den:
+
+- hvilke tall i appen som bygger på kilden, og hvilke begreper og forklaringer som viser til den
+- om du har kontrollert dem, og om kontrollen er gammel eller kilden er endret siden
+- resultatet av den automatiske verdisjekken
+
+Øverst står et sammendrag og en liste over det som bør ses på nå.
+
+**Den automatiske verdisjekken:** Hvert tall fra en kilde har et kort sitat fra kilden der tallet står. Årsverket har for eksempel sitatet «utføres innenfor et årsverk på 1687,5 timer (1650 timer for lærere som er 60 år og eldre)». Hver mandag ser kildesjekken etter sitatet i kilden:
+
+- **✅ samsvarer:** sitatet med tallet står fortsatt i kilden.
+- **⚠️ avvik:** sitatet står ikke der lenger. Finner sjekken den samme teksten med et annet tall, står det nye tallet i oversikten, for eksempel «Kilden har nå 1700 der verdien sto».
+- **ikke sjekket:** kilden kunne ikke leses denne gangen, eller den sjekkes ikke automatisk ennå.
+
+Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tolkningen eller forklaringen, og det teller ikke som din kontroll.
+
+**Tall som ikke kan sjekkes automatisk:**
+- **praksis:** for eksempel 21,67 arbeidsdager per måned. Det står ikke i kilden, men er praksis du har beskrevet.
+- **avledet:** regnet ut fra andre tall, for eksempel 5 arbeidsdager per uke (37,5 ÷ 7,5).
+- **tabeller:** vedlegg 1 og garantilønnen sjekkes ikke mot kilden ennå. Tester sjekker at tallene i dem henger sammen, for eksempel at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.
