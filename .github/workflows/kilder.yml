@@ -1,7 +1,8 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
 # Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md på nytt,
 # committer dem ved hver kjøring (holder den planlagte jobben i live),
-# oppretter eller oppdaterer én sak (issue) per kilde ved endring eller feil, og publiserer fersk status.
+# oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
+# fersk status og registerdata (Grep, skoleregisteret).
 name: Kildesjekk
 
 on:
@@ -37,6 +38,24 @@ jobs:
       - run: npm ci
       - name: Installer Chromium (for KF Infoserie, som krever nettleser)
         run: npx playwright install --with-deps chromium
+      # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
+      # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
+      - name: Hent Grep
+        id: grep
+        continue-on-error: true
+        run: npm run hent:grep
+      - name: Test de nye Grep-dataene
+        if: steps.grep.outcome == 'success'
+        run: |
+          mkdir -p .generert
+          if git diff --quiet -- data/grep; then
+            echo uendret > .generert/grep-tester.txt
+          elif npx vitest run; then
+            echo ok > .generert/grep-tester.txt
+          else
+            echo feilet > .generert/grep-tester.txt
+            git checkout -- data/grep
+          fi
       - name: Sjekk kildene
         env:
           SIMULER: ${{ inputs.simuler_feil }}
@@ -54,10 +73,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/skoler/vgs.json docs/KONTROLL.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/skoler/vgs.json data/grep docs/KONTROLL.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
-      - name: Varsle eier (issues)
+      - name: Ukentlig kontrollsak (issue)
         run: npm run kilder:varsle
         env:
           GITHUB_TOKEN: ${{ github.token }}

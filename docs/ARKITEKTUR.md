@@ -116,12 +116,15 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
    - `kf-infoserie`: henter avtaletekster hos KF Infoserie med Chromium (Playwright), fordi siden krever nettleser.
    - `fil`: fingeravtrykk av hele filen, f.eks. PDF-en av hovedtariffavtalen. Teksten i PDF-en leses med pdfjs-dist til verdisjekken.
    - `lovdata`: laster ned Lovdatas datasett med gjeldende lover og sjekker delen `uttrekk.selektor` peker på.
-   - `grep` lages i fase 2. Se [avgjørelse 008](avgjorelser/008-kildesjekk-for-avtaletekst-pdf-og-lovdata.md).
+   - `grep`: Grep hentes i et eget steg før sjekken (`npm run hent:grep`), og testene kjøres på de nye dataene. Består de, tas dataene inn og publiseres. Ellers legges de gamle tilbake, og status blir `endret`.
+   - Hva som er endret: teksten deles i setninger, og fingeravtrykkene av dem fra sist kilden var godkjent, lagres i `data/status/kildetekst.json` (`scripts/kilder/avsnitt.ts`). Ved endring sammenlignes setningene, og de nye vises med punktet de står under.
+   - Tabeller rad for rad (`scripts/kilder/tabeller.ts`): vedlegg 1 fra dokumentet hos KF Infoserie og garantilønnen fra teksten i hovedtariffavtalen. Resultatet står i `verdistatus.json`.
+   Se [avgjørelse 008](avgjorelser/008-kildesjekk-for-avtaletekst-pdf-og-lovdata.md).
    - Verdisjekken (`src/core/kontroll/verdisjekk.ts`) ser etter `sitat` for hver regelverdi i teksten fra kilden og skriver `data/status/verdistatus.json`: `samsvarer`, `avvik` (med forslag til nytt tall når teksten rundt tallet finnes) eller `ikke_sjekket`. Se [avgjørelse 017](avgjorelser/017-automatisk-kontroll-av-regelverdier.md).
    - `scripts/kontroll/rapport.ts` lager kontrolloversikten `docs/KONTROLL.md`: hva som bygger på hver kilde (`src/core/kontroll/indeks.ts`), status for eiers kontroll og for verdisjekken.
 2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring, sammen med `verdistatus.json` og `docs/KONTROLL.md`. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
-3. `scripts/kilder/varsle.ts` oppretter én sak per kilde (etikett `kilde`) ved endring eller feil, oppdaterer den når tilstanden endres, og lukker den når kilden er i orden igjen.
-4. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil. Koden på Pages endres bare ved ny versjon.
+3. `scripts/kilder/varsle.ts` lager den ukentlige kontrollsaken (etikett `kontroll`, `scripts/kilder/ukesrapport.ts`): endrede punkter i kildene med ny tekst og berørt innhold, tall og tabeller som ikke stemmer, Grep og kilder som feilet. Saken får en kommentar bare når innholdet er nytt, og lukkes når alt er i orden. Se [avgjørelse 018](avgjorelser/018-presise-ukentlige-varsler.md).
+4. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og ferske registerdata (Grep og skoleregisteret) fra main. Består ikke versjonens tester med de nye registerdataene, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
 
 Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen.
 

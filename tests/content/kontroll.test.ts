@@ -64,11 +64,11 @@ describe('sitater på regelverdiene', () => {
     expect(feil).toEqual([]);
   });
 
-  it('verdistatus gjelder bare verdier som finnes og har sitat', () => {
+  it('verdistatus gjelder bare verdier som finnes, og enkeltverdier med sitat', () => {
     const status = lesVerdistatus(JSON.parse(readFileSync(join(rot, 'data/status/verdistatus.json'), 'utf8')));
     expect(status).not.toBeNull();
-    const medSitat = new Set(alleVerdier.filter(({ v }) => v.sitat !== undefined).map(({ id }) => id));
-    expect(Object.keys(status?.verdier ?? {}).filter((id) => !medSitat.has(id))).toEqual([]);
+    const sjekkbare = new Set(alleVerdier.filter(({ v }) => v.sitat !== undefined || Array.isArray(v.verdi)).map(({ id }) => id));
+    expect(Object.keys(status?.verdier ?? {}).filter((id) => !sjekkbare.has(id))).toEqual([]);
   });
 });
 

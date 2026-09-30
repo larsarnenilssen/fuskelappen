@@ -14,6 +14,8 @@ export const verdistatusPost = z.strictObject({
   /** Tallet som nå står i kilden på samme sted, når det kan finnes. */
   forslag: z.nullable(z.number()),
   melding: z.nullable(z.string()),
+  /** For tabeller: én linje per rad som ikke stemmer med kilden. */
+  detaljer: z.optional(z.array(z.string())),
 });
 
 export const verdistatusFil = z.strictObject({
@@ -129,4 +131,24 @@ export function sjekkVerdier(
     ut[v.nokkel] = { ...post, sjekket: naa, siden: samme ? f.siden : naa };
   }
   return { skjema: 1, kjort: naa, verdier: ut };
+}
+
+/**
+ * Legger resultatet av en tabellsjekk inn i verdistatus, med samme regel for «siden» som for enkeltverdier.
+ * Kunne ikke kilden leses, blir tabellen «ikke sjekket».
+ */
+export function medTabellstatus(
+  fil: Verdistatusfil,
+  nokkel: string,
+  kilde: string,
+  resultat: { status: 'samsvarer' | 'avvik'; melding: string | null; detaljer: string[] } | { feil: string },
+  forrige: Verdistatusfil | null,
+): Verdistatusfil {
+  const post: Omit<VerdistatusPost, 'siden' | 'sjekket'> =
+    'feil' in resultat
+      ? { status: 'ikke_sjekket', kilde, forslag: null, melding: `Tabellen kunne ikke sjekkes: ${resultat.feil}` }
+      : { status: resultat.status, kilde, forslag: null, melding: resultat.melding, ...(resultat.detaljer.length > 0 ? { detaljer: resultat.detaljer } : {}) };
+  const f = forrige?.verdier[nokkel];
+  const siden = f !== undefined && f.status === post.status && f.melding === post.melding ? f.siden : fil.kjort;
+  return { ...fil, verdier: { ...fil.verdier, [nokkel]: { ...post, sjekket: fil.kjort, siden } } };
 }

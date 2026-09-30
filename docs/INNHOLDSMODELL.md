@@ -77,7 +77,7 @@ verdier:
 - Verdier leses bare gjennom `hentVerdi('regelverk.nokkel', kontekst)`.
 - `sitat`: et kort, ordrett utdrag fra kilden (høyst 200 tegn) der tallet står slik kilden skriver det, f.eks. «1687,5» eller «kr. 12 000». Kildejobben ser etter sitatet hver uke (verdisjekken, avgjørelse 017). Alle tall fra en kilde som kildejobben leser, må ha sitat. Det testes, og det testes at sitatet inneholder verdien.
 - `grunnlag`: `avledet` (regnet ut fra andre verdier) eller `praksis` (praksis eier har beskrevet). Slike verdier har ikke sitat, men en `merknad` som forklarer grunnlaget. Uten `grunnlag` står verdien i kilden.
-- Tabeller og lister har ikke sitat. De kontrolleres med egne tester, f.eks. at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.
+- Tabeller og lister har ikke sitat. De kontrolleres med egne tester, f.eks. at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad. Vedlegg 1 og garantilønnen sjekkes også rad for rad mot kilden hver uke (avgjørelse 018).
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
 - Verdier med `kontrollert: null` vises uten merke. Brukserklæringen under «Om appen» og setningen nederst på forsiden sier at appen er utviklet privat og kan ha feil (avgjørelse 016).
 

@@ -5,12 +5,15 @@
 // Årstimetallet (omfang-totalt) for fagkodene i rules/sfs2213/arstimer-*.yaml og for alle fagkodene fagsøket kjenner,
 // hentes til data/grep/arstimer.json. En test ser om Grep har endret tallene i tabellen, og kalkulatorene fyller inn
 // årstimer for en fagkode brukeren har søkt fram (f.eks. HEA2005). Resten av Grep-hentingen (læreplaner) kommer i fase 2.
+// Filene skrives bare når innholdet er endret. Endringene lagres i .generert/grep-endringer.json, som
+// kildesjekken tar med i rapporten (avgjørelse 018).
 // Bruk: npm run hent:grep
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Regelsett } from '../src/core/regler/skjema.ts';
 import { lesFil } from './innhold/last.ts';
+import { antallEndringer, grepsammendrag, sammenlignGrep, type Grepdata } from './kilder/grep.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
@@ -89,25 +92,32 @@ function fellesfagprefikser(): string[] {
   return [...antall].filter(([, n]) => n === 1).map(([p]) => p);
 }
 
+/** Leser dataene fra forrige henting, eller null hvis en fil mangler. */
+function lesForrige(): Grepdata | null {
+  const les = <T>(navn: string, felt: string): T | null => {
+    const fil = join(rot, 'data/grep', navn);
+    return existsSync(fil) ? ((JSON.parse(readFileSync(fil, 'utf8')) as Record<string, unknown>)[felt] as T) : null;
+  };
+  const programomrader = les<Grepdata['programomrader']>('programomrader.json', 'programomrader');
+  const fagkoder = les<Grepdata['fagkoder']>('fagkoder.json', 'fagkoder');
+  const arstimer = les<Grepdata['arstimer']>('arstimer.json', 'arstimer');
+  return programomrader && fagkoder && arstimer ? { programomrader, fagkoder, arstimer } : null;
+}
+
+function skriv(navn: string, felt: string, data: Record<string, unknown>, hode: string): void {
+  const linjer = Object.entries(data).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
+  writeFileSync(join(rot, 'data/grep', navn), `{\n  ${hode},\n  ${JSON.stringify(felt)}: {\n${linjer.join(',\n')}\n  }\n}\n`);
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const programomrader = grupperProgramomrader(await hent('programomraader'));
   const antall = Object.values(programomrader).reduce((s, p) => s + Object.values(p).reduce((t, l) => t + l.length, 0), 0);
   if (antall < 100) throw new Error(`Fikk bare ${antall} programområder fra Grep. Beholder forrige fil.`);
-  mkdirSync(join(rot, 'data/grep'), { recursive: true });
-  const fil = join(rot, 'data/grep/programomrader.json');
-  const hode = `"kilde": "udir-grep", "hentet": ${JSON.stringify(new Date().toISOString())}, "lisens": "NLOD 2.0"`;
-  const linjer = Object.entries(programomrader).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
-  writeFileSync(fil, `{\n  ${hode},\n  "programomrader": {\n${linjer.join(',\n')}\n  }\n}\n`);
-  console.log(`Skrev ${fil} (${antall} programområder).`);
 
   const prefikser = new Set([...Object.values(programomrader).flatMap((p) => Object.values(p).flatMap((l) => l.map(([k]) => k))), ...fellesfagprefikser()]);
   const fagkoder = grupperFagkoder(await hent('fagkoder'), prefikser);
   const antallFag = Object.values(fagkoder).reduce((s, l) => s + l.length, 0);
   if (antallFag < 300) throw new Error(`Fikk bare ${antallFag} fagkoder fra Grep. Beholder forrige fil.`);
-  const fagfil = join(rot, 'data/grep/fagkoder.json');
-  const fagLinjer = Object.entries(fagkoder).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
-  writeFileSync(fagfil, `{\n  ${hode},\n  "fagkoder": {\n${fagLinjer.join(',\n')}\n  }\n}\n`);
-  console.log(`Skrev ${fagfil} (${antallFag} fagkoder).`);
 
   // Årstimer for fagkodene i årstimetabellen og for alle fagkodene fagsøket kjenner (programfag på yrkesfag o.l.).
   const koder = [...new Set([...arstimeFagkoder(), ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
@@ -120,8 +130,19 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const medTall = Object.values(arstimer).filter((v) => v !== null).length;
   // Eksamenskoder og fag i læretiden har ikke årstimer i Grep, så omtrent halvparten mangler tall.
   if (medTall < 300) throw new Error(`Fikk årstimer for bare ${medTall} av ${koder.length} fagkoder. Beholder forrige fil.`);
-  const timefil = join(rot, 'data/grep/arstimer.json');
-  const timeLinjer = Object.entries(arstimer).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
-  writeFileSync(timefil, `{\n  ${hode},\n  "arstimer": {\n${timeLinjer.join(',\n')}\n  }\n}\n`);
-  console.log(`Skrev ${timefil} (${koder.length} fagkoder).`);
+
+  const ny: Grepdata = { programomrader, fagkoder, arstimer };
+  const forrige = lesForrige();
+  const endringer = forrige ? sammenlignGrep(forrige, ny) : null;
+  const endret = endringer === null || antallEndringer(endringer) > 0;
+  if (endret) {
+    mkdirSync(join(rot, 'data/grep'), { recursive: true });
+    const hode = `"kilde": "udir-grep", "hentet": ${JSON.stringify(new Date().toISOString())}, "lisens": "NLOD 2.0"`;
+    skriv('programomrader.json', 'programomrader', programomrader, hode);
+    skriv('fagkoder.json', 'fagkoder', fagkoder, hode);
+    skriv('arstimer.json', 'arstimer', arstimer, hode);
+  }
+  mkdirSync(join(rot, '.generert'), { recursive: true });
+  writeFileSync(join(rot, '.generert/grep-endringer.json'), `${JSON.stringify({ endret, endringer }, null, 2)}\n`);
+  console.log(`Grep: ${antall} programområder, ${antallFag} fagkoder, ${koder.length} fagkoder med årstimer. ${endringer ? grepsammendrag(endringer) : 'Første henting.'}`);
 }

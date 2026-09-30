@@ -9,6 +9,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Automatisk verdisjekk:** Hvert tall fra SFS 2213 og hovedtariffavtalen har et kort sitat fra kilden. Kildesjekken ser hver mandag etter sitatet i kilden og foreslår det nye tallet hvis det er endret.
 - **Kontrolloversikt** i `docs/KONTROLL.md`: hva som bygger på hver kilde, status for din kontroll og for verdisjekken, og hva som bør ses på nå.
 - Tester sjekker at tallene henger sammen, for eksempel at årsverket er 225 dager à 7,5 timer og at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad i vedlegg 1.
+- **Ukentlig kontrollsak** på GitHub i stedet for én sak per kilde: hvilket punkt i kilden som er endret, med den nye teksten og hvilket innhold i appen det kan berøre, tall og tabeller som ikke stemmer, og en avkrysningsliste. E-post bare når noe er nytt.
+- Vedlegg 1 (151 rader) og garantilønnen sjekkes rad for rad mot kilden hver uke.
+- Grep og skoleregisteret hentes hver uke og publiseres automatisk når testene består.
 
 ## [0.8.2] – 2026-09-30
 

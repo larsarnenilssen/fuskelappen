@@ -17,7 +17,7 @@ Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er komm
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
-| Samsvarer med kilden | 25 |
+| Samsvarer med kilden | 27 |
 | Avvik fra kilden | 0 |
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
 | Enkeltverdier fra kilden uten sitat | 2 |
@@ -55,7 +55,7 @@ Ingenting akkurat nå.
 | `livsfase_60_prosent` (sfs2213-2026-2027) | 6 | 12,5 prosent | ✅ samsvarer (30.09.2026) | ikke kontrollert |
 | `godtgjoring_kontaktlaerer` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (30.09.2026) | ikke kontrollert |
 | `godtgjoring_radgiver` (sfs2213-2026-2027) | 9.1 | 12000 kroner per år | ✅ samsvarer (30.09.2026) | ikke kontrollert |
-| `arsrammer` (sfs2213-2026-2027) | Vedlegg 1 | tabell, 151 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
+| `arsrammer` (sfs2213-2026-2027) | Vedlegg 1 | tabell, 151 rader | ✅ samsvarer (30.09.2026). Alle 151 radene stemmer. | ikke kontrollert |
 
 **Innhold som bygger på kilden**
 
@@ -108,7 +108,7 @@ Ingenting akkurat nå.
 | `feriepenger_prosent` (hta-2026-2028) | Kap. 1 § 7.4.2 | 12 prosent | ✅ samsvarer (30.09.2026) | ikke kontrollert |
 | `feriepenger_prosent_over_60` (hta-2026-2028) | Kap. 1 § 7.4.2 | 14,3 prosent | ✅ samsvarer (30.09.2026) | ikke kontrollert |
 | `overtidstillegg_prosent` (hta-2026-2028) | Kap. 1 § 6.5.3 | 50 prosent | ✅ samsvarer (30.09.2026) | ikke kontrollert |
-| `garantilonn` (hta-2026-2028) | Kap. 4 punkt 4.1 | tabell, 5 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
+| `garantilonn` (hta-2026-2028) | Kap. 4 punkt 4.1 | tabell, 5 rader | ✅ samsvarer (30.09.2026). Alle 5 radene stemmer. | ikke kontrollert |
 | `garantilonn_ansiennitet` (hta-2026-2028) | Kap. 4 punkt 4.1 | liste: 0, 6, 8, 10, 16 | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 
 **Innhold som bygger på kilden**
@@ -146,7 +146,7 @@ Ingenting akkurat nå.
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
-`udir-grep` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://data.udir.no/kl06/v201906/)
+`udir-grep` · Kildesjekk: i orden (30.09.2026) · [Åpne kilden](https://data.udir.no/kl06/v201906/)
 
 **Regelverdier**
 

@@ -1,17 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import {
-  lagFingeravtrykk,
-  lesMerke,
-  normaliserTekst,
-  nyPost,
-  planleggVarsler,
-  saksTekst,
-  vurderMotGodkjent,
-} from '../../scripts/kilder/logikk.ts';
+import { lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGodkjent } from '../../scripts/kilder/logikk.ts';
 import { kfTekst } from '../../scripts/kilder/kf-infoserie.ts';
 import { filtrerSkoler, lovdataFilnavn, skoleendringer, strukturhint, trekkUt } from '../../scripts/kilder/metoder.ts';
 
-const kilde = { id: 'ks-sfs2213', navn: 'SFS 2213', url: 'https://www.ks.no/', godkjent_fingeravtrykk: null };
 const A = lagFingeravtrykk('a');
 const B = lagFingeravtrykk('b');
 
@@ -42,41 +33,6 @@ describe('fingeravtrykk og status', () => {
     const forrige = nyPost(undefined, { status: 'ok', fingeravtrykk: A, melding: null }, 't1');
     const feil = nyPost(forrige, { status: 'feilet', fingeravtrykk: null, melding: 'Tidsavbrudd' }, 't2');
     expect(feil).toMatchObject({ status: 'feilet', fingeravtrykk: A, melding: 'Tidsavbrudd', sjekket: 't2' });
-  });
-});
-
-describe('varsler', () => {
-  const feilet = nyPost(undefined, { status: 'feilet', fingeravtrykk: null, melding: 'Simulert feil' }, 't1');
-  const endret = nyPost(undefined, { status: 'endret', fingeravtrykk: A, melding: null }, 't1');
-  const ok = nyPost(undefined, { status: 'ok', fingeravtrykk: A, melding: null }, 't1');
-
-  it('oppretter én sak ved feil eller endring', () => {
-    const h = planleggVarsler([kilde], { [kilde.id]: feilet }, []);
-    expect(h).toHaveLength(1);
-    expect(h[0]).toMatchObject({ type: 'opprett', kildeId: 'ks-sfs2213', tittel: '[kilde:ks-sfs2213] SFS 2213' });
-  });
-
-  it('gjør ingenting når tilstanden er den samme', () => {
-    const merke = lesMerke(saksTekst(kilde, feilet));
-    expect(merke?.kildeId).toBe('ks-sfs2213');
-    const h = planleggVarsler([kilde], { [kilde.id]: feilet }, [{ nummer: 7, kildeId: kilde.id, tilstand: merke?.tilstand ?? '' }]);
-    expect(h).toEqual([]);
-  });
-
-  it('oppdaterer saken når tilstanden endres', () => {
-    const merke = lesMerke(saksTekst(kilde, feilet));
-    const h = planleggVarsler([kilde], { [kilde.id]: endret }, [{ nummer: 7, kildeId: kilde.id, tilstand: merke?.tilstand ?? '' }]);
-    expect(h[0]).toMatchObject({ type: 'oppdater', nummer: 7 });
-  });
-
-  it('lukker saken når kilden er i orden', () => {
-    const h = planleggVarsler([kilde], { [kilde.id]: ok }, [{ nummer: 7, kildeId: kilde.id, tilstand: 'x' }]);
-    expect(h[0]).toMatchObject({ type: 'lukk', nummer: 7 });
-    expect(planleggVarsler([kilde], { [kilde.id]: ok }, [])).toEqual([]);
-  });
-
-  it('ignorerer kilder uten status', () => {
-    expect(planleggVarsler([kilde], {}, [])).toEqual([]);
   });
 });
 

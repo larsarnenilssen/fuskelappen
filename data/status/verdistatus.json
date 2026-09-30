@@ -1,13 +1,13 @@
 {
   "skjema": 1,
-  "kjort": "2026-09-30T17:07:24.503Z",
+  "kjort": "2026-09-30T17:19:46.913Z",
   "verdier": {
     "hta-2026-2028/timelonn_konstant": {
       "status": "samsvarer",
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/timelonn_arsverk_timer": {
@@ -15,7 +15,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/timelonn_ferie_teller": {
@@ -23,7 +23,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/timelonn_ferie_nevner": {
@@ -31,7 +31,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/feriepenger_prosent": {
@@ -39,7 +39,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/feriepenger_prosent_over_60": {
@@ -47,7 +47,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "hta-2026-2028/overtidstillegg_prosent": {
@@ -55,7 +55,7 @@
       "kilde": "ks-hovedtariffavtalen",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/arsverk_timer": {
@@ -63,7 +63,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/arsverk_timer_60_ar": {
@@ -71,7 +71,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/arbeidsaar_tillegg_dager": {
@@ -79,7 +79,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/timer_per_dag": {
@@ -87,7 +87,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/planfestet_timer": {
@@ -95,7 +95,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/planfestet_maks_dag": {
@@ -103,7 +103,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/planfestet_maks_uke": {
@@ -111,7 +111,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/arsramme_funksjon": {
@@ -119,7 +119,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/arsramme_funksjon_45": {
@@ -127,7 +127,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/stjernetillegg": {
@@ -135,7 +135,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/stjernetillegg_45": {
@@ -143,7 +143,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/stjerne_maks_elever": {
@@ -151,7 +151,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/kontaktlaerer_reduksjon": {
@@ -159,7 +159,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/livsfase_nyutdannet_prosent": {
@@ -167,7 +167,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/livsfase_57_prosent": {
@@ -175,7 +175,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/livsfase_60_prosent": {
@@ -183,7 +183,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/godtgjoring_kontaktlaerer": {
@@ -191,7 +191,7 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
     },
     "sfs2213-2026-2027/godtgjoring_radgiver": {
@@ -199,8 +199,24 @@
       "kilde": "ks-sfs2213-avtaletekst",
       "forslag": null,
       "melding": null,
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "siden": "2026-09-30T16:58:57.503Z"
+    },
+    "sfs2213-2026-2027/arsrammer": {
+      "status": "samsvarer",
+      "kilde": "ks-sfs2213-avtaletekst",
+      "forslag": null,
+      "melding": "Alle 151 radene stemmer.",
+      "sjekket": "2026-09-30T17:19:46.913Z",
+      "siden": "2026-09-30T17:19:46.913Z"
+    },
+    "hta-2026-2028/garantilonn": {
+      "status": "samsvarer",
+      "kilde": "ks-hovedtariffavtalen",
+      "forslag": null,
+      "melding": "Alle 5 radene stemmer.",
+      "sjekket": "2026-09-30T17:19:46.913Z",
+      "siden": "2026-09-30T17:19:46.913Z"
     }
   }
 }

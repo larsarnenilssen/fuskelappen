@@ -53,21 +53,28 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 **Kjøre sjekken selv:** Trykk lenken «Kjør kildesjekken på GitHub» nederst på kildesiden i appen, eller åpne **Actions** → **Kildesjekk** → **Run workflow** → la feltet stå tomt → **Run workflow**. Etter et par minutter kommer det et grønt hakemerke. Trykker du på kjøringen, ser du et sammendrag.
 
-**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages en sak under **Issues**, og du får e-post fra GitHub. Det er alltid bare én sak per kilde: finnes det allerede en åpen sak for kilden, blir den oppdatert og får en kommentar i stedet for at det lages en ny. Neste vanlige kjøring lukker saken automatisk når kilden er i orden.
+**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages kontrollsaken under **Issues** (punkt 6), og du får e-post fra GitHub. Neste vanlige kjøring lukker saken automatisk når alt er i orden.
 
-## 6. Når du får et kildevarsel
+**Grep og skoleregisteret** hentes også hver mandag. Består appens tester med de nye dataene, tas de inn og publiseres automatisk, uten at du trenger å gjøre noe. Det står i kontrollsaken hva som er endret. Feiler testene, tas dataene ikke inn, og kontrollsaken sier fra.
 
-Varslene kommer som saker under **Issues** med merket `kilde`, og som e-post fra GitHub. Det er én sak per kilde.
+## 6. Den ukentlige kontrollsaken
 
-**«Kildesjekken … feilet»:** Sjekken fikk ikke hentet kilden, for eksempel fordi nettstedet var nede eller har fått ny utforming. Ofte går det over av seg selv, og saken lukkes automatisk ved neste vellykkede kjøring. Står den åpen i flere uker, si fra til Claude.
+Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. Du får e-post fra GitHub når saken lages, og når den får noe nytt. Er alt i orden, lukkes saken automatisk. Uker uten noe nytt gir ingen e-post.
 
-**«… har et nytt fingeravtrykk som må godkjennes»:** Innholdet i kilden er endret siden du sist godkjente den. Fingeravtrykket er et «stempel» som viser hvordan siden så ut da du godkjente den.
+Saken kan ha disse delene:
 
-1. Åpne lenken til kilden i saken og se hva som er nytt.
-2. Vurder om noe i appen må endres. Si i så fall fra til Claude hva, med vanlige ord.
-3. Når du er fornøyd, skriv til Claude: «Godkjent fingeravtrykk for [kilden]». Claude legger inn det nye fingeravtrykket, og saken lukkes ved neste kjøring.
+- **Endret i kildene:** hvilket punkt i kilden som er endret, med den nye teksten sitert, og hvilke tall, begreper og forklaringer i appen som kan være berørt. Tekst som er fjernet, kan ikke vises, fordi appen ikke lagrer kildeteksten (opphavsrett). Da står det hvor mange setninger som er fjernet.
+- **Tall og tabeller som ikke stemmer med kilden:** tall der sitatet ikke lenger står i kilden, med forslag til nytt tall når det finnes. Vedlegg 1 og garantilønnen sjekkes rad for rad.
+- **Grep:** hva som er tatt inn automatisk, eller at Grep er endret slik at testene feiler.
+- **Kilder som ikke kunne sjekkes:** for eksempel fordi nettstedet var nede. Det går ofte over av seg selv. Står en kilde der i flere uker, si fra til Claude.
 
-Innholdet i appen endres aldri automatisk.
+**Slik behandler du saken:**
+
+1. Les gjennom punktene. Åpne lenken til kilden hvis du vil se mer.
+2. Kryss av punktene du har sett på.
+3. Skriv til Claude hva som skal gjøres, med vanlige ord. For eksempel: «Godkjent fingeravtrykk for SFS 2213. Oppdater maks timer per dag til 10.»
+
+Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep og skoleregisteret.
 
 **Skjule varselet i appen:** Under **Om appen → Kilder** kan du trykke «Skjul varselet til neste sjekk». Da forsvinner advarselen øverst til høyre på din enhet til neste kildesjekk, eller til statusen endrer seg. Saken på GitHub påvirkes ikke.
 
@@ -165,4 +172,4 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 **Tall som ikke kan sjekkes automatisk:**
 - **praksis:** for eksempel 21,67 arbeidsdager per måned. Det står ikke i kilden, men er praksis du har beskrevet.
 - **avledet:** regnet ut fra andre tall, for eksempel 5 arbeidsdager per uke (37,5 ÷ 7,5).
-- **tabeller:** vedlegg 1 og garantilønnen sjekkes ikke mot kilden ennå. Tester sjekker at tallene i dem henger sammen, for eksempel at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.
+- **tabeller og lister:** vedlegg 1 og garantilønnen sjekkes rad for rad mot kilden. Andre tabeller og lister sjekkes ikke mot kilden, men tester sjekker at tallene henger sammen, for eksempel at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.

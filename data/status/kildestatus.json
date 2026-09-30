@@ -1,38 +1,45 @@
 {
   "skjema": 1,
-  "kjort": "2026-09-30T17:07:24.503Z",
+  "kjort": "2026-09-30T17:19:46.913Z",
   "kilder": {
     "ks-sfs2213": {
       "status": "ok",
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "fingeravtrykk": "sha256:7b5faa2311693ca97a7a881f1f9dbe6c87d02484e9df87dce086c4ba2bdfa092",
       "endret_siden": null,
       "melding": null
     },
     "ks-sfs2213-avtaletekst": {
       "status": "ok",
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "fingeravtrykk": "sha256:1c68729cdb42f9a73ce42cdae825a5f7e96507fc9361cb9488f0309ef1ad27ce",
       "endret_siden": null,
       "melding": null
     },
     "ks-hovedtariffavtalen": {
       "status": "ok",
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "fingeravtrykk": "sha256:9060856923b545153ae7c4c2072d411157afe5f2fcfb08da5be1f374f86bc745",
       "endret_siden": null,
       "melding": null
     },
     "arbeidsmiljoloven": {
       "status": "ok",
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "fingeravtrykk": "sha256:3a795969f3c58abf9fe8d4bddc30e2144df258e9cc09cc7a09727731783966cd",
+      "endret_siden": null,
+      "melding": null
+    },
+    "udir-grep": {
+      "status": "ok",
+      "sjekket": "2026-09-30T17:19:46.913Z",
+      "fingeravtrykk": "sha256:029a044fd9d5ee1f9ecae536d5d24b17fb9b4e77ddcfb7d8890d9c81657c80d9",
       "endret_siden": null,
       "melding": null
     },
     "udir-nsr": {
       "status": "ok",
-      "sjekket": "2026-09-30T17:07:24.503Z",
+      "sjekket": "2026-09-30T17:19:46.913Z",
       "fingeravtrykk": "sha256:06b847a3ae6d671e182aa8f0db13b8305d1e62c18727fc7137482ac0adf16b2e",
       "endret_siden": null,
       "melding": null
