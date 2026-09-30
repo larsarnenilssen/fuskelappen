@@ -102,7 +102,7 @@ function innholdstabell(innhold: readonly Kontrollinnhold[]): string[] {
     '| Innhold | Type | Punkt | Fil | Din kontroll |',
     '|---|---|---|---|---|',
     ...innhold.map(
-      (i) => `| ${celle(i.tittel)} | ${TYPENAVN[i.elementtype]} | ${celle(i.punkter.join(', ') || '–')} | \`${i.fil}\` | ${celle(visEier(i))} |`,
+      (i) => `| ${celle(i.tittel)} (\`${i.id}\`) | ${TYPENAVN[i.elementtype]} | ${celle(i.punkter.join(', ') || '–')} | \`${i.fil}\` | ${celle(visEier(i))} |`,
     ),
     '',
   ];
@@ -159,7 +159,7 @@ function sporsmalsdel(indeks: readonly Kildekontroll[]): string[] {
     '',
     'Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om praksisen stemmer. Svar gjerne i en kommentar i kontrollsaken, eller skriv til Claude.',
     '',
-    ...med.flatMap((i) => [`**${i.tittel}** (${TYPENAVN[i.elementtype]}, ${visEier(i)})`, '', ...i.sporsmal.map((s) => `- ${s}`), '']),
+    ...med.flatMap((i) => [`**${i.tittel}** (\`${i.id}\`, ${TYPENAVN[i.elementtype]}, ${visEier(i)})`, '', ...i.sporsmal.map((s) => `- ${s}`), '']),
   ];
 }
 
@@ -193,7 +193,9 @@ export function lagKontrollrapport(
     '',
     `Oppdatert ${dato(idag)}. Kildesjekken kjørte sist ${kildestatus ? dato(kildestatus.kjort) : 'aldri'}, verdisjekken ${verdistatus ? dato(verdistatus.kjort) : 'aldri'}.`,
     '',
-    'Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10.',
+    'Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.',
+    '',
+    'Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i kontrollsaken, for eksempel `/godkjent arsverk planleggingsdager feriepenger_prosent`. Id-ene står i `kodeskrift` i tabellene.',
     '',
     '## Sammendrag',
     '',

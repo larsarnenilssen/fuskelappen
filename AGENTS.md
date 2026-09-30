@@ -58,7 +58,7 @@ En endring er ikke ferdig før alle er grønne.
 
 - Alt innhold følger skjemaet i `docs/INNHOLDSMODELL.md` og har minst én kilde.
 - Egne tekster skrives på både bokmål og nynorsk. Kildetekster (lov, forskrift, læreplan) gjengis uoversatt og merkes med målform.
-- Nytt eller endret faglig eller juridisk innhold får alltid `kontrollert: null`. **Sett aldri `kontrollert` selv.** Det gjør bare eier, eller du etter eksplisitt beskjed fra eier, med dato.
+- Nytt eller endret faglig eller juridisk innhold får alltid `kontrollert: null`. **Sett aldri `kontrollert` selv.** Det gjør bare eier, eller du etter eksplisitt beskjed fra eier, med dato. Godkjenningsjobben (`/godkjent` i en kontrollsak, avgjørelse 021) regnes som eiers beskjed.
 - **Endre aldri fasittester** uten eiers godkjenning. Feiler en fasittest, er det koden eller regelsettet som skal undersøkes.
 - Bruk gjeldende regelverk: opplæringslova og forskriften som gjelder fra 1.8.2024. Eldre materiale er bare bakgrunn.
 - Lov- og forskriftstekst kan siteres. Partenes tolkninger, andres veiledninger og Visma-materiell kopieres ikke. Skriv med egne ord og lenk til kilden.

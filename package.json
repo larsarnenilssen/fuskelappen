@@ -45,6 +45,7 @@
     "kilder:forslag": "tsx scripts/kilder/lag-forslag.ts",
     "kilder:dokumenter": "tsx scripts/lag-kilder-md.ts",
     "kontroll:rapport": "tsx scripts/kontroll/rapport.ts",
+    "kontroll:godkjenn": "tsx scripts/kilder/godkjenn.ts",
     "lag:ikoner": "tsx scripts/lag-ikoner.ts",
     "hent:grep": "tsx scripts/hent-grep.ts"
   }

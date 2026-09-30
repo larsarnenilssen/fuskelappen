@@ -127,7 +127,9 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
 4. `scripts/kilder/lag-forslag.ts` lager endringsforslag som PR: nye tall og sitater på grenen `kontroll/forslag`, og nye Grep-data som feiler testene på `kontroll/grep`. CI startes med `workflow_dispatch`. Se [avgjørelse 020](avgjorelser/020-automatiske-endringsforslag.md).
 5. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og ferske registerdata (Grep og skoleregisteret) fra main. Består ikke versjonens tester med de nye registerdataene, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
 
-Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen.
+Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen. Inndata `kontrollrunde` lager en kontrollrunde med en gang (ellers første mandag i mai og august, avgjørelse 019).
+
+`.github/workflows/godkjenning.yml` kjører når eier skriver `/godkjent` i en kontrollsak. Den setter `kontrollert`, `bekreftet` eller `godkjent_fingeravtrykk` for punktene som er krysset av, og for id-ene i kommentaren (`scripts/kilder/godkjenn.ts`). Endringen lagres på main når testene består, ellers som en PR. Se [avgjørelse 021](avgjorelser/021-godkjenning-med-avkrysning.md).
 
 I appen viser topplinjen en diskret indikator (`ok`, `endret`, `feilet`, `utdatert`). Et varsel kan skjules på enheten til neste kjøring (lagres som `skjultKildevarsel`). Kildesiden viser neste planlagte kjøring, beregnet fra `app.kildesjekk` i `src/config/app.ts`. En test sjekker at den stemmer med cron i `kilder.yml`. `utdatert` betyr at siste kjøring er eldre enn 14 dager. Det fanger også en jobb som har stoppet. Detaljer står under Om → Kilder.
 

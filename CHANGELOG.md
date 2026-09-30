@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Praksis og tolkninger** som ikke står i kildene, for eksempel 21,67 arbeidsdager per måned, er samlet i én liste som du bekrefter.
 - **Kontrollrunder** første mandag i mai og august: en sak med praksis som bør bekreftes og kontroller som bør gjøres på nytt.
 - **Endringsforslag:** Er et tall endret i kilden, lager kildesjekken en PR med nytt tall og nytt sitat, og viser hvilke tester som eventuelt feiler. Feiler testene med nye Grep-data, kommer det også en PR med dataene.
+- **Godkjenning med /godkjent:** Kryss av i kontrollsaken og skriv `/godkjent` i en kommentar, så legges datoen for kontroll, bekreftet praksis eller nytt fingeravtrykk inn automatisk. Du kan også skrive id-er etter `/godkjent`.
 
 ## [0.8.2] – 2026-09-30
 

@@ -190,7 +190,9 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   const tilstand = createHash('sha256').update(innhold.join('\n'), 'utf8').digest('hex').slice(0, 16);
   const tittel = punkter > 0 ? `Kontroll: ${punkter} ${punkter === 1 ? 'punkt' : 'punkter'} å se på` : 'Kontroll: til orientering';
   const tekst = [
-    `Kildesjekken kjørte ${dato(g.kildestatus.kjort)}. Her er det du bør se på. Kryss av når du har sett på et punkt, og skriv i en kommentar hva som skal gjøres, om noe.`,
+    `Kildesjekken kjørte ${dato(g.kildestatus.kjort)}. Her er det du bør se på.`,
+    '',
+    'Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar. Da legges datoen inn automatisk. Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk`. Skal noe endres, skriv det til Claude.',
     '',
     'Saken oppdateres hver mandag. Du får e-post når noe nytt har kommet til, og saken lukkes når alt er i orden.',
     '',

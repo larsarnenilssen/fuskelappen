@@ -1,0 +1,47 @@
+# Godkjenning fra en kontrollsak (avgjørelse 021). Når eier skriver /godkjent i en kommentar på en sak med
+# etiketten «kontroll» eller «kontrollrunde», settes datoen for punktene eier har krysset av og for id-ene etter
+# /godkjent. Endringene lagres på main når testene består, ellers som en PR. Bare eier kan godkjenne.
+name: Godkjenning
+
+on:
+  issue_comment:
+    types: [created]
+
+concurrency:
+  group: godkjenning
+  cancel-in-progress: false
+
+jobs:
+  godkjenn:
+    name: Godkjenn
+    if: >-
+      github.event.issue.pull_request == null &&
+      github.event.comment.author_association == 'OWNER' &&
+      startsWith(github.event.comment.body, '/godkjent') &&
+      (contains(github.event.issue.labels.*.name, 'kontroll') || contains(github.event.issue.labels.*.name, 'kontrollrunde'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Godkjenn
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npm run kontroll:godkjenn
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SAK: ${{ github.event.issue.number }}
+          SAKSTEKST: ${{ github.event.issue.body }}
+          KOMMENTAR: ${{ github.event.comment.body }}

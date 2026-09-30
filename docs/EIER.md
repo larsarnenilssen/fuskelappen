@@ -73,8 +73,8 @@ Saken kan ha disse delene:
 **Slik behandler du saken:**
 
 1. Les gjennom punktene. Åpne lenken til kilden hvis du vil se mer.
-2. Kryss av punktene du har sett på.
-3. Skriv til Claude hva som skal gjøres, med vanlige ord. For eksempel: «Godkjent fingeravtrykk for SFS 2213. Oppdater maks timer per dag til 10.»
+2. Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar (punkt 12).
+3. Skal noe endres, skriv til Claude hva, med vanlige ord. For eksempel: «Oppdater forklaringen av planfestet tid til 10 timer per dag.»
 
 Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep og skoleregisteret.
 
@@ -189,3 +189,20 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 - **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
 
 Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
+
+## 12. Godkjenne i saken med /godkjent
+
+Du kan godkjenne direkte i kontrollsaken eller kontrollrunden. Det går fint på telefonen.
+
+1. Kryss av punktene du godkjenner.
+2. Skriv en kommentar som begynner med `/godkjent`, og trykk **Comment**.
+
+Etter et par minutter legger en jobb inn datoen for det du har krysset av, og svarer i saken med hva som er godkjent:
+
+- **Nytt fingeravtrykk for en kilde:** kilden er godkjent, og varselet forsvinner ved neste kildesjekk.
+- **Praksis:** praksisen er bekreftet og kommer ikke opp i kontrollrundene de neste 12 månedene.
+- **Begreper, forklaringer og tall:** de er kontrollert, og appen viser «Kontrollert» med datoen fra neste versjon.
+
+Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk planleggingsdager feriepenger_prosent`. Id-ene står i `kodeskrift` i `docs/KONTROLL.md`. Slik kontrollerer du begreper og forklaringer du har lest, også når de ikke står i saken.
+
+Nye tall fra kildene godkjennes ved å flette PR-en med forslaget (punkt 6), ikke med `/godkjent`. Bare du kan godkjenne. Kommentarer fra andre blir ikke lest av jobben.

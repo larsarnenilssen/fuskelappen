@@ -54,7 +54,7 @@ export function lagKontrollrunde(periode: string, praksis: readonly Praksis[], i
   const t = tellKontroll(indeks);
   const oversikt = `https://github.com/${repo}/blob/main/docs/KONTROLL.md`;
   const tekst = [
-    `Kontrollrunden i ${navn} ${aar ?? ''}. ${innledning} går du gjennom det appen bygger på uten at det står i kildene, og det som bør kontrolleres på nytt. Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret.`,
+    `Kontrollrunden i ${navn} ${aar ?? ''}. ${innledning} går du gjennom det appen bygger på uten at det står i kildene, og det som bør kontrolleres på nytt. Kryss av det som fortsatt stemmer, og skriv \`/godkjent\` i en kommentar. Da legges datoen inn automatisk. Er noe endret, skriv det til Claude.`,
     '',
     '## Praksis og tolkninger',
     '',
