@@ -52,7 +52,7 @@ export const ruter = [
   '#/begreper/testbegrep-skolemiljo',
   '#/begreper/arsramme',
   '#/arbeidstid',
-  '#/arbeidstid/stillingsplan',
+  '#/arbeidstid/arbeidsplan',
   '#/arbeidstid/beskjeftigelse',
   '#/arbeidstid/periode',
   '#/arbeidstid/vikar',

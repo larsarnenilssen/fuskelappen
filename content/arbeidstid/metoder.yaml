@@ -1,6 +1,6 @@
 # Metodebeskrivelser for kalkulatorene i arbeidstidsmodulen («Slik regnes det ut»).
 # Tallene i beregningene står i rules/. Her står metoden med ord, slik at den kan kontrolleres og rettes uten kodeendring.
-- id: metode-stillingsplan
+- id: metode-arbeidsplan
   type: forklaring
   tittel: { nb: Slik regnes arbeidsplanen ut, nn: Slik blir arbeidsplanen rekna ut }
   tekst:

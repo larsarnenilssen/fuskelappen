@@ -322,7 +322,7 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 
 **Endret underveis etter eiers ønsker (0.2–0.6)**
 
-- **Arbeidsplan** er hovedkalkulatoren i modulen (adresse `#/arbeidstid/stillingsplan`). Den samler fag, funksjoner og redusert undervisning mot stillingsprosenten, med teknisk undertid eller overtid, fordeling av arbeidstiden (diagram, tabell og uke), lønn med tillegg, overtid og feriepenger, og lagrede varianter med navn.
+- **Arbeidsplan** er hovedkalkulatoren i modulen (adresse `#/arbeidstid/arbeidsplan`). Den samler fag, funksjoner og redusert undervisning mot stillingsprosenten, med teknisk undertid eller overtid, fordeling av arbeidstiden (diagram, tabell og uke), lønn med tillegg, overtid og feriepenger, og lagrede varianter med navn.
 - Hurtigkalkulator 5 (planfestet arbeidstid med utvidelse ved funksjoner) og forklaringen med grafikk om fordelingen er en del av Arbeidsplan. De egne kalkulatorene for planfestet tid og fordeling er fjernet (30.09.2026).
 - Funksjoner oppgis i prosent eller årsrammetimer, og hver funksjon kan utvide planfestet tid eller ikke, og gi tillegg (SFS 2213 punkt 9.1).
 - Livsfasetiltak (punkt 6) regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer (eier 30.09.2026). Lærere som er 60 år og eldre har årsverk på 1650 timer.
@@ -477,13 +477,15 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 
 ## 7. Åpne punkter
 
-| Punkt | Avklares |
-|---|---|
-| Ikon (forslag: innbundet protokollbok med paragraftegn på omslaget) | før fase 0 avsluttes |
-| Hva «utvidet planfestet arbeidstid ved funksjoner» omfatter, og regler for vikarberegning | ved start av fase 1 |
-| Fasiteksempler for SFS 2213 | fase 1 |
-| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 |
-| Poengberegning ved inntak i Vestland | fase 5 |
+| Punkt | Avklares | Status 30.09.2026 |
+|---|---|---|
+| Ikon (forslag: innbundet protokollbok med paragraftegn på omslaget) | før fase 0 avsluttes | Avklart |
+| Hva «utvidet planfestet arbeidstid ved funksjoner» omfatter, og regler for vikarberegning | ved start av fase 1 | Avklart. Hver funksjon kan utvide planfestet tid eller ikke. |
+| Fasiteksempler for SFS 2213 | fase 1 | 001–014 er godkjent. Nye eksempler for Arbeidsplan (fordeling, redusert undervisning, lønn, deltid) er sendt til eier. |
+| Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
+| Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Ikke med. Praksis inntil videre: bare beskjeftigelse over 100 %. |
+| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Venter |
+| Poengberegning ved inntak i Vestland | fase 5 | Venter |
 
 ## 8. Ferdig når
 

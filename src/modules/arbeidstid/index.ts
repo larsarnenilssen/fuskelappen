@@ -5,7 +5,7 @@ import type { Modulmanifest } from '../typer.ts';
 import { kalkulatorer } from './kalkulatorer.ts';
 
 const sider = {
-  stillingsplan: () => import('./sider/Stillingsplan.tsx'),
+  arbeidsplan: () => import('./sider/Arbeidsplan.tsx'),
   beskjeftigelse: () => import('./sider/Beskjeftigelse.tsx'),
   periode: () => import('./sider/Periode.tsx'),
   vikar: () => import('./sider/Vikar.tsx'),

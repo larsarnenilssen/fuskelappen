@@ -1,9 +1,9 @@
-// Oversikt over arbeidstidsmodulen: stillingsplanen som hovedkalkulator øverst, og de andre kalkulatorene under.
+// Oversikt over arbeidstidsmodulen: arbeidsplanen som hovedkalkulator øverst, og de andre kalkulatorene under.
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { kalkulatorer } from '../kalkulatorer.ts';
 
-/** Pynt på hovedkortet: en stillingsplan med to fag, en funksjon og strek ved stillingen. Uten tall. */
+/** Pynt på hovedkortet: en arbeidsplan med to fag, en funksjon og strek ved stillingen. Uten tall. */
 function Stolpeillustrasjon() {
   return (
     <svg class="diagram hovedkort-figur" viewBox="0 0 320 22" aria-hidden="true" focusable="false">

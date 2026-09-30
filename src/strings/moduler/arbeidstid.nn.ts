@@ -10,7 +10,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   kalkulatorer: {
     tittel: 'Kalkulatorar',
     flere: 'Fleire kalkulatorar',
-    stillingsplan: {
+    arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
       beskrivelse: 'Fag og funksjonar mot stillingsprosenten, med teknisk undertid eller overtid, fordelinga av arbeidstida og årsløn.',
@@ -175,7 +175,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
       selvdisponert: 'Sjølvdisponert tid',
     },
   },
-  stillingsplan: {
+  arbeidsplan: {
     illustrasjon: 'Illustrasjon – ikkje ein arbeidsplan. Ekte arbeidsplanar blir laga i skulen sine eigne system.',
     stilling: 'Stillingsprosent',
     funksjoner: 'Funksjonar',
@@ -263,7 +263,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     ukePlanfestet: 'Planfesta: {planfestet} t',
     ukeSelv: 'Disponerer sjølv: {selv} t',
     ukeTekst: 'Snitt per veke i arbeidsåret: {total} timar i alt, {planfestet} timar planfesta, det vil seie {perDag} timar per dag. Enkeltveker kan ha opptil {maksUke} timar planfesta tid, og enkeltdagar opptil {maksDag} timar.',
-    stillingsplan: 'Stolpe for arbeidsplanen: {deler}. Samla {sum} %. Streken viser stillinga på {grense} %.',
+    arbeidsplan: 'Stolpe for arbeidsplanen: {deler}. Samla {sum} %. Streken viser stillinga på {grense} %.',
     stilling: 'Stolpe for stillinga: {sum} % i alt ({deler}). Streken viser {grense} %.',
     periode: 'Perioden er {dager} av {skolear} undervisningsdagar ({prosent} % av skuleåret).',
   },

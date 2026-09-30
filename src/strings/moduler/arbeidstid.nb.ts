@@ -9,7 +9,7 @@ export const arbeidstidNb = {
   kalkulatorer: {
     tittel: 'Kalkulatorer',
     flere: 'Flere kalkulatorer',
-    stillingsplan: {
+    arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
       beskrivelse: 'Fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid, fordelingen av arbeidstiden og årslønn.',
@@ -174,7 +174,7 @@ export const arbeidstidNb = {
       selvdisponert: 'Selvdisponert tid',
     },
   },
-  stillingsplan: {
+  arbeidsplan: {
     illustrasjon: 'Illustrasjon – ikke en arbeidsplan. Ekte arbeidsplaner lages i skolens egne systemer.',
     stilling: 'Stillingsprosent',
     funksjoner: 'Funksjoner',
@@ -262,7 +262,7 @@ export const arbeidstidNb = {
     ukePlanfestet: 'Planfestet: {planfestet} t',
     ukeSelv: 'Disponerer selv: {selv} t',
     ukeTekst: 'Snitt per uke i arbeidsåret: {total} timer i alt, {planfestet} timer planfestet, det vil si {perDag} timer per dag. Enkeltuker kan ha opptil {maksUke} timer planfestet tid, og enkeltdager opptil {maksDag} timer.',
-    stillingsplan: 'Stolpe for arbeidsplanen: {deler}. Samlet {sum} %. Streken viser stillingen på {grense} %.',
+    arbeidsplan: 'Stolpe for arbeidsplanen: {deler}. Samlet {sum} %. Streken viser stillingen på {grense} %.',
     stilling: 'Stolpe for stillingen: {sum} % i alt ({deler}). Streken viser {grense} %.',
     periode: 'Perioden er {dager} av {skolear} undervisningsdager ({prosent} % av skoleåret).',
   },

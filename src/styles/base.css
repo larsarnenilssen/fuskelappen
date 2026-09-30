@@ -1904,7 +1904,7 @@ p.fagkort-tittel {
   font-size: max(16px, 1rem);
 }
 
-.stillingsplan-differanse {
+.arbeidsplan-differanse {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1917,12 +1917,12 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
-.stillingsplan-differanse.undertid {
+.arbeidsplan-differanse.undertid {
   border-color: var(--farge-advarsel);
   background: var(--farge-advarsel-flate);
 }
 
-.stillingsplan-differanse.overtid {
+.arbeidsplan-differanse.overtid {
   border-color: var(--farge-feil);
   background: var(--farge-feil-flate);
 }

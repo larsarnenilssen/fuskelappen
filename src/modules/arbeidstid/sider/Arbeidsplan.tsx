@@ -1,7 +1,6 @@
 // Arbeidsplan for én lærer: fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid.
 // Hovedkalkulatoren i modulen. Differansen kan regnes om til årsrammetimer i et valgt fag. Under står fordelingen
 // av arbeidstiden (samme diagram som i Fordeling), og årslønnen i stillingen kan regnes ut ved behov.
-// Id og adresse er fortsatt «stillingsplan», så favoritter, lenker og lagrede varianter virker (avgjørelse 012).
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
@@ -42,7 +41,7 @@ function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string 
   return reserve;
 }
 
-export default function Stillingsplan() {
+export default function Arbeidsplan() {
   const { t } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
@@ -52,7 +51,7 @@ export default function Stillingsplan() {
   const idTimer = useId();
   const [visHvertFag, settVisHvertFag] = useState(false);
   const [s, sett] = useSkjematilstand(
-    'stillingsplan',
+    'arbeidsplan',
     () => ({
       stilling: 100 as number | null,
       grupper: [nyGruppe()],
@@ -136,7 +135,7 @@ export default function Stillingsplan() {
   const tilleggene = s.funksjoner
     .map((f, i) => ({ f, i }))
     .filter(({ f }) => f.tillegg === true)
-    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f, satser).verdi }));
+    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f, satser).verdi }));
   const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
 
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
@@ -167,7 +166,7 @@ export default function Stillingsplan() {
     ? [
         ...resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf((fylte[i] as { g: Gruppetilstand }).g) + 1 }), prosent: g.beskjeftigelse.verdi })),
         ...s.funksjoner
-          .map((f, i) => ({ navn: f.navn || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), prosent: prosenter[i] ?? 0, type: 'funksjon' as const }))
+          .map((f, i) => ({ navn: f.navn || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), prosent: prosenter[i] ?? 0, type: 'funksjon' as const }))
           .filter((d) => d.prosent > 0),
         ...(reduksjon > 0 ? [{ navn: t('arbeidstid.livsfase.redusert'), prosent: reduksjon, type: 'funksjon' as const }] : []),
       ]
@@ -185,7 +184,7 @@ export default function Stillingsplan() {
 
   return (
     <Kalkulatorside
-      id="stillingsplan"
+      id="arbeidsplan"
       resultat={
         <>
           {feil && <Feilmelding feil={feil} />}
@@ -196,7 +195,7 @@ export default function Stillingsplan() {
                 <Stillingsmaaler
                   deler={deler}
                   grense={resultat.stilling.verdi}
-                  beskrivelse={t('arbeidstid.grafikk.stillingsplan', {
+                  beskrivelse={t('arbeidstid.grafikk.arbeidsplan', {
                     deler: deler.map((d) => `${d.navn} ${tallTekst(d.prosent)} %`).join(', '),
                     sum: tallTekst(resultat.beskjeftigelse.verdi),
                     grense: tallTekst(resultat.stilling.verdi),
@@ -210,13 +209,13 @@ export default function Stillingsplan() {
                     { navn: t('arbeidstid.resultat.stillingsprosent'), verdi: medEnhet(t, resultat.stilling.verdi, 'prosent') },
                   ]}
                 />
-                <p class={`stillingsplan-differanse${iBalanse ? '' : diff < 0 ? ' undertid' : ' overtid'}`} data-differanse={iBalanse ? 'balanse' : diff < 0 ? 'undertid' : 'overtid'}>
+                <p class={`arbeidsplan-differanse${iBalanse ? '' : diff < 0 ? ' undertid' : ' overtid'}`} data-differanse={iBalanse ? 'balanse' : diff < 0 ? 'undertid' : 'overtid'}>
                   <span>{diffTekst}</span>
                   {!iBalanse && <span class="tall">{`${medEnhet(t, Math.abs(diff), 'prosent')}${timerTekst}`}</span>}
                 </p>
                 {!iBalanse && fylte.length > 1 && (
                   <div class="felt felt-liten">
-                    <label for={idTimer}>{t('arbeidstid.stillingsplan.timerIFag')}</label>
+                    <label for={idTimer}>{t('arbeidstid.arbeidsplan.timerIFag')}</label>
                     <select
                       id={idTimer}
                       value={String(valgtIndeks)}
@@ -230,19 +229,19 @@ export default function Stillingsplan() {
                     </select>
                   </div>
                 )}
-                {!iBalanse && fylte.length === 0 && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.ingenFag')}</p>}
+                {!iBalanse && fylte.length === 0 && <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.ingenFag')}</p>}
                 {!iBalanse && fylte.length > 1 && (
                   <>
                     <button type="button" class="lenkeknapp liten" aria-expanded={visHvertFag} onClick={() => settVisHvertFag(!visHvertFag)}>
                       <Ikon navn={visHvertFag ? 'opp' : 'ned'} class="ikon-liten" />
-                      {t('arbeidstid.stillingsplan.hvertFag')}
+                      {t('arbeidstid.arbeidsplan.hvertFag')}
                     </button>
                     {visHvertFag && (
                       <div class="hjelp-tekst">
-                        <p class="felt-hjelp">{diff < 0 ? t('arbeidstid.stillingsplan.hvertFagMangler') : t('arbeidstid.stillingsplan.hvertFagForMye')}</p>
+                        <p class="felt-hjelp">{diff < 0 ? t('arbeidstid.arbeidsplan.hvertFagMangler') : t('arbeidstid.arbeidsplan.hvertFagForMye')}</p>
                         <Oversiktsliste
                           rader={differanseIHvertFag(resultat).map((d, i) => ({
-                            navn: t('arbeidstid.stillingsplan.fagRad', { fag: gruppenavn[i] ?? '', arsramme: formaterTall(d.arsramme) }),
+                            navn: t('arbeidstid.arbeidsplan.fagRad', { fag: gruppenavn[i] ?? '', arsramme: formaterTall(d.arsramme) }),
                             verdi: medEnhet(t, Math.abs(d.timer), 'arsrammetimer'),
                           }))}
                         />
@@ -252,7 +251,7 @@ export default function Stillingsplan() {
                 )}
                 {resultat.beskjeftigelse.verdi > 100 && (
                   <a class="lenke-pil" href={`#/arbeidstid/overtid?beskjeftigelse=${encodeURIComponent(String(Math.round(resultat.beskjeftigelse.verdi * 100) / 100))}`}>
-                    {t('arbeidstid.stillingsplan.overtidLenke', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}
+                    {t('arbeidstid.arbeidsplan.overtidLenke', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}
                     <Ikon navn="hoyre" class="ikon-liten" />
                   </a>
                 )}
@@ -264,39 +263,39 @@ export default function Stillingsplan() {
           {fordeling && (
             <>
               <Fordelingsvisning resultat={fordeling} {...(ukegrenser ? { uke: ukegrenser } : {})}>
-                {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
-                {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
-                {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+                {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.arbeidsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
+                {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.arbeidsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
+                {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.arbeidsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
               </Fordelingsvisning>
             </>
           )}
           {lonn?.feil && <Feilmelding feil={lonn.feil} />}
           {lonn?.resultat && (
-            <Utregningskort tittel={t('arbeidstid.stillingsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
+            <Utregningskort tittel={t('arbeidstid.arbeidsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
               <Advarsler advarsler={lonn.resultat.advarsler} />
               {(lonn.resultat.tillegg || lonn.resultat.overtid) && (
                 <Belopsstolpe
                   deler={[
-                    { navn: t('arbeidstid.stillingsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
-                    ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.stillingsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
+                    { navn: t('arbeidstid.arbeidsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
+                    ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.arbeidsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
                     ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
                   ]}
                 />
               )}
               <Oversiktsliste
                 rader={[
-                  { navn: t('arbeidstid.stillingsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
-                  ...tilleggene.map((x) => ({ navn: t('arbeidstid.stillingsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
+                  { navn: t('arbeidstid.arbeidsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
+                  ...tilleggene.map((x) => ({ navn: t('arbeidstid.arbeidsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
                   ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
                   { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
                 ]}
               />
-              {overtidUtenFag && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.overtidUtenFag')}</p>}
-              <p class="felt-hjelp">{t('arbeidstid.stillingsplan.lonnMerknad')}</p>
+              {overtidUtenFag && <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.overtidUtenFag')}</p>}
+              <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.lonnMerknad')}</p>
             </Utregningskort>
           )}
           <Varianter
-            id="stillingsplan"
+            id="arbeidsplan"
             skjema={s}
             resultat={resultat ? { tittel: t('arbeidstid.resultat.samletBeskjeftigelse'), verdi: resultat.beskjeftigelse.verdi, enhet: 'prosent' } : null}
             onHent={hentVariant}
@@ -312,10 +311,10 @@ export default function Stillingsplan() {
         </>
       }
     >
-      <p class="merknad merknad-liten">{t('arbeidstid.stillingsplan.illustrasjon')}</p>
+      <p class="merknad merknad-liten">{t('arbeidstid.arbeidsplan.illustrasjon')}</p>
       <Tallfelt
         class="felt-kompakt"
-        etikett={t('arbeidstid.stillingsplan.stilling')}
+        etikett={t('arbeidstid.arbeidsplan.stilling')}
         enhet="%"
         verdi={s.stilling}
         min={0}
@@ -351,22 +350,22 @@ export default function Stillingsplan() {
       />
       <Sammenleggbartkort
         nokkel="moter-og-lonn"
-        tittel={t('arbeidstid.stillingsplan.tillegg')}
+        tittel={t('arbeidstid.arbeidsplan.tillegg')}
         oppsummering={[
-          ...(s.moter !== null ? [t('arbeidstid.stillingsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
-          ...(s.visLonn ? [t('arbeidstid.stillingsplan.lonnOppsummering')] : []),
+          ...(s.moter !== null ? [t('arbeidstid.arbeidsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
+          ...(s.visLonn ? [t('arbeidstid.arbeidsplan.lonnOppsummering')] : []),
         ].join(', ') || undefined}
       >
         <Tallfelt
           class="felt-kompakt"
           etikett={t('arbeidstid.fordeling.moter')}
-          hjelpetekst={t('arbeidstid.stillingsplan.moterHjelp')}
+          hjelpetekst={t('arbeidstid.arbeidsplan.moterHjelp')}
           verdi={s.moter}
           min={0}
           maks={37.5}
           onEndring={(moter) => sett({ ...s, moter })}
         />
-        <Vippe tekst={t('arbeidstid.stillingsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
+        <Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
         {s.visLonn && (
           <>
             <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
@@ -375,7 +374,7 @@ export default function Stillingsplan() {
             ) : (
               <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(v) => sett({ ...s, over60: v })} />
             )}
-            <p class="felt-hjelp">{t('arbeidstid.stillingsplan.tilleggHint')}</p>
+            <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.tilleggHint')}</p>
           </>
         )}
       </Sammenleggbartkort>
