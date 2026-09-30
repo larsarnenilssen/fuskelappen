@@ -110,7 +110,11 @@ export type Storrelse =
   | 'variabel_prosent'
   | 'variabel_timer'
   | 'variabel_lonn'
-  | 'planleggingstimer';
+  | 'planleggingstimer'
+  | 'arbeidsdager_per_maned'
+  | 'hele_maneder'
+  | 'arbeidsdager_brutte'
+  | 'lonnsandel';
 
 export interface Operand {
   navn: Storrelse;
@@ -165,6 +169,7 @@ export type TrinnId =
   | 'prosent_arsbasis'
   | 'overtidsprosent_periode'
   | 'planleggingstimer'
+  | 'lonnsandel_periode'
   | 'arbeidsaar_uker'
   | 'planfestet_maks'
   | 'planfestet_per_uke'

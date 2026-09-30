@@ -48,7 +48,7 @@
       - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skoleåret er 50 % for hele året. Timer og kroner er de samme i begge visningene.
       - **Differansen** regnes om til timer i perioden med perioderammen.
       - **Fordelingen** viser timene i perioden: timene for et helt år med de samme prosentene × periodenøkkelen. Planleggingsdagene er timene som er skrevet inn (45 om feltet er tomt), og timene per uke er resten delt på skoleukene i perioden (dager ÷ 5).
-      - **Lønn i perioden** = årslønn i stillingen × periodenøkkel + tillegg × periodenøkkel + variabel lønn + overtidsbetaling. Variabel lønn og overtid regnes som vikartimer med timene i perioden.
+      - **Lønn i perioden** = årslønn i stillingen × andel av året + tillegg × andel av året + variabel lønn + overtidsbetaling. Andelen regnes fra første og siste dag i perioden, slik lønnssystemet gjør når Visma InSchool sender lønnsprosenten og datoene: hele måneder gir hel månedslønn, og i brutte måneder gir hver arbeidsdag (mandag–fredag) 1/21,67 av månedslønnen. Andelen er summen av måneder ÷ 12. Variabel lønn og overtid regnes som vikartimer med timene i perioden.
     nn: |
       Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
 
@@ -93,7 +93,7 @@
       - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skuleåret er 50 % for heile året. Timar og kroner er dei same i begge visingane.
       - **Differansen** blir rekna om til timar i perioden med perioderamma.
       - **Fordelinga** viser timane i perioden: timane for eit heilt år med dei same prosentane × periodenøkkelen. Planleggingsdagane er timane som er skrivne inn (45 om feltet er tomt), og timane per veke er resten delt på skulevekene i perioden (dagar ÷ 5).
-      - **Løn i perioden** = årsløn i stillinga × periodenøkkel + tillegg × periodenøkkel + variabel løn + overtidsbetaling. Variabel løn og overtid blir rekna som vikartimar med timane i perioden.
+      - **Løn i perioden** = årsløn i stillinga × del av året + tillegg × del av året + variabel løn + overtidsbetaling. Delen blir rekna frå første og siste dag i perioden, slik lønssystemet gjer når Visma InSchool sender lønsprosenten og datoane: heile månader gir heil månadsløn, og i brotne månader gir kvar arbeidsdag (måndag–fredag) 1/21,67 av månadsløna. Delen er summen av månader ÷ 12. Variabel løn og overtid blir rekna som vikartimar med timane i perioden.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
@@ -106,6 +106,7 @@
     - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     - { id: inschool-periodebeskjeftigelse }
+    - { id: inschool-fastlonn }
   kontrollert: null
   stikkord: [arbeidsplan, stillingsplan, fordeling, planfestet tid, livsfasetiltak, seniorredusering, nyutdannet, kontaktlærer, årslønn, teknisk undertid, teknisk overtid, funksjon, variabel lønn, periode, periodebeskjeftigelse, vikariat, periodenøkkel, årsbasis]
 

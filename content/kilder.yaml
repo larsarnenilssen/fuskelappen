@@ -251,6 +251,22 @@ kilder:
     faser: [1]
     merknad: Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
 
+  - id: inschool-fastlonn
+    navn: Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg
+    utgiver: Visma
+    url: https://inschool.zendesk.com/hc/no/articles/19452863757970
+    type: side
+    niva: nasjonal
+    lisens: Opphavsrett Visma. Lenkes, kopieres ikke.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [1]
+    merknad: >-
+      Bakgrunn for lønn i en periode i Arbeidsplan: lønnsprosenten for perioden sendes til lønnssystemet, og start- og
+      sluttdato for perioden settes på lønnsradene. Lønn for deler av en måned (arbeidsdager ÷ 21,67) er praksis i
+      lønnssystemet slik eier har beskrevet den 30.09.2026, og står ikke i artikkelen.
+
   - id: udir-nsr
     navn: Nasjonalt skoleregister (NSR)
     utgiver: Utdanningsdirektoratet

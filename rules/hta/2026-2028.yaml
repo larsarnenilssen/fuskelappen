@@ -65,3 +65,11 @@ verdier:
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
     kontrollert: null
     merknad: Ansiennitetstrinnene i tabellen. Kolonnene i garantilonn heter ar_<trinn>.
+  arbeidsdager_per_maned:
+    verdi: 21.67
+    enhet: dager
+    kilde: { id: inschool-fastlonn }
+    kontrollert: null
+    merknad: >-
+      Arbeidsdager i en gjennomsnittsmåned (260 ÷ 12). Lønn for deler av en måned = arbeidsdagene i perioden den måneden
+      ÷ 21,67 av månedslønnen, slik eier har beskrevet praksisen 30.09.2026. Står ikke i hovedtariffavtalen.

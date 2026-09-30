@@ -11,7 +11,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, type Operand, periodenokkel } from '../beregning/index.ts';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Periodelinje, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
@@ -75,6 +75,9 @@ export default function Arbeidsplan() {
       arsbasis: false as boolean | undefined,
       /** Timer på planleggingsdager, eller null for 6 dager × 7,5 timer (som for hel stilling). */
       planlegging: null as number | null | undefined,
+      /** Første og siste dag i perioden (ÅÅÅÅ-MM-DD), til lønnen for perioden. */
+      fraDato: '' as string | undefined,
+      tilDato: '' as string | undefined,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -178,10 +181,13 @@ export default function Arbeidsplan() {
   const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
 
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
+  // I en periode regnes lønnen fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder (som i lønnssystemet).
+  const lonnPeriode = iPeriode && s.fraDato && s.tilDato ? (prov(() => lonnsperiode(hent, s.fraDato ?? '', s.tilDato ?? '')).resultat ?? null) : null;
+  const datoFeil = iPeriode && !!s.fraDato && !!s.tilDato && lonnPeriode === null;
   // Variabel lønn og overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
   const overtidsfag = fylte[valgtIndeks]?.inn;
   const lonn =
-    lonnsgrunnlag && harStilling && periodeKlar
+    lonnsgrunnlag && harStilling && periodeKlar && (!iPeriode || lonnPeriode)
       ? prov(() =>
           beregnLonn(hent, {
             lonn: lonnsgrunnlag,
@@ -191,6 +197,7 @@ export default function Arbeidsplan() {
               resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
             over60: s.over60 || over60,
             periodenokkel: nokkel,
+            lonnsandel: lonnPeriode?.andel ?? null,
           }),
         )
       : null;
@@ -370,6 +377,7 @@ export default function Arbeidsplan() {
             </>
           )}
           {lonn?.feil && <Feilmelding feil={lonn.feil} />}
+          {s.visLonn && iPeriode && harStilling && !lonnPeriode && <p class="merknad merknad-liten">{t('arbeidstid.arbeidsplan.lonnPeriodeMangler')}</p>}
           {lonn?.resultat && (
             <Utregningskort tittel={iPeriode ? t('arbeidstid.arbeidsplan.lonnIPerioden') : t('arbeidstid.arbeidsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
               <Advarsler advarsler={lonn.resultat.advarsler} />
@@ -405,6 +413,15 @@ export default function Arbeidsplan() {
                   { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
                 ]}
               />
+              {lonnPeriode && (
+                <p class="felt-hjelp">
+                  {t('arbeidstid.arbeidsplan.lonnsandel', {
+                    hele: tallTekst(lonnPeriode.heleManeder),
+                    dager: tallTekst(lonnPeriode.arbeidsdager),
+                    andel: tallTekst(lonnPeriode.andel.verdi * 100, 2),
+                  })}
+                </p>
+              )}
               {overtidUtenFag && <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.overtidUtenFag')}</p>}
               <p class="felt-hjelp">{iPeriode ? t('arbeidstid.arbeidsplan.lonnMerknadPeriode') : t('arbeidstid.arbeidsplan.lonnMerknad')}</p>
             </Utregningskort>
@@ -530,6 +547,23 @@ export default function Arbeidsplan() {
         {s.visLonn && (
           <>
             <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
+            {iPeriode && (
+              <>
+                <div class="feltrad">
+                  <div class="felt">
+                    <label for={`${idTimer}-fra`}>{t('arbeidstid.arbeidsplan.fraDato')}</label>
+                    <input id={`${idTimer}-fra`} class="tekstfelt" type="date" value={s.fraDato ?? ''} onInput={(e) => sett({ ...s, fraDato: e.currentTarget.value })} />
+                  </div>
+                  <div class="felt">
+                    <label for={`${idTimer}-til`}>{t('arbeidstid.arbeidsplan.tilDato')}</label>
+                    <input id={`${idTimer}-til`} class="tekstfelt" type="date" value={s.tilDato ?? ''} onInput={(e) => sett({ ...s, tilDato: e.currentTarget.value })} />
+                  </div>
+                </div>
+                <p class={datoFeil ? 'felt-feilmelding' : 'felt-hjelp'} role={datoFeil ? 'alert' : undefined}>
+                  {datoFeil ? t('arbeidstid.arbeidsplan.datoFeil') : t('arbeidstid.arbeidsplan.datoHjelp')}
+                </p>
+              </>
+            )}
             {over60 ? (
               <p class="felt-hjelp">{t('arbeidstid.livsfase.feriepenger60')}</p>
             ) : (

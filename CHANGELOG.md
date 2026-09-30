@@ -4,7 +4,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
-## [0.7.2] – 2026-09-30
+## [0.8.0] – 2026-09-30
+
+### Lagt til
+
+- **Lønn i en periode regnes fra datoene**, slik lønnssystemet gjør når Visma InSchool sender lønnsprosenten og datoene for perioden. Arbeidsplan har fått feltene «Første dag i perioden» og «Siste dag i perioden». Hele måneder gir hel månedslønn, og i brutte måneder gir hver arbeidsdag (mandag–fredag) 1/21,67 av månedslønnen. Tillegg regnes på samme måte. Variabel lønn og overtid regnes fortsatt med timene i perioden.
+- Fasiteksempel 024: variabel lønn og overtid i 80 % stilling, godkjent av eier.
 
 ### Endret
 

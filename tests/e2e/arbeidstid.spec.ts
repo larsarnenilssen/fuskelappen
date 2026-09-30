@@ -164,14 +164,26 @@ test.describe('arbeidstid', () => {
     // Fordelingen gjelder perioden.
     await expect(page.getByRole('button', { name: /Fordeling av arbeidstiden i perioden/ })).toBeVisible();
     await expect(page.locator('.fordeling-tabell').getByRole('row', { name: /Undervisning/ })).toContainText('262,5');
-    // Lønn i perioden: halv årslønn og overtid for 26,25 timer (70 timer kalkulert tid × 1,5).
+    // Lønn i perioden regnes fra datoene, som i lønnssystemet. Uten datoer vises en merknad.
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('radio', { name: 'Egen årslønn' }).check();
     await page.getByLabel('Årslønn i kroner').fill('600000');
+    await expect(page.getByText(/Fyll inn første og siste dag i perioden/)).toBeVisible();
+    await page.getByLabel('Første dag i perioden').fill('2026-08-01');
+    await page.getByLabel('Siste dag i perioden').fill('2026-12-31');
+    // Fem hele måneder: 600 000 × 5 ÷ 12 = 250 000. Overtid for 26,25 timer i perioden (70 timer kalkulert tid × 1,5).
     const lonn = page.locator('.resultatkort', { hasText: 'Lønn i perioden' });
-    await expect(lonn).toContainText(/Lønn i 100 % stilling i perioden\s*300\s000/);
+    await expect(lonn).toContainText(/Lønn i 100 % stilling i perioden\s*250\s000/);
     await expect(lonn).toContainText(/Overtidsbetaling\s*33\s333,33/);
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/333\s333,33/);
+    await expect(lonn).toContainText(/5 hele måneder og 0 arbeidsdager i brutte måneder/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/283\s333,33/);
+    // En brutt måned: fra fredag 15. januar gir 11 arbeidsdager ÷ 21,67 i januar.
+    await page.getByLabel('Første dag i perioden').fill('2027-01-15');
+    await page.getByLabel('Siste dag i perioden').fill('2027-06-30');
+    await expect(lonn).toContainText(/5 hele måneder og 11 arbeidsdager i brutte måneder/);
+    // Baklengs periode gir feilmelding.
+    await page.getByLabel('Siste dag i perioden').fill('2027-01-01');
+    await expect(page.getByText('Siste dag kan ikke være før første dag.')).toBeVisible();
   });
 
   test('overtid over 100 %', async ({ page }) => {
