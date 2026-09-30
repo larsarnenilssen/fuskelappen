@@ -180,7 +180,32 @@
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6 }
   kontrollert: null
   stikkord: [overtid, overtidsbetaling, over 100 prosent]
-  relatert: [beskjeftigelse, kalkulert-tid]
+  relatert: [beskjeftigelse, kalkulert-tid, variabel-lonn]
+
+- id: variabel-lonn
+  type: begrep
+  tittel: { nb: Variabel lønn, nn: Variabel løn }
+  tekst:
+    nb: Har en lærer i deltidsstilling mer undervisning og funksjoner enn stillingen, gir det som er over stillingen og opp til hel stilling variabel lønn. Den betales med vanlig timelønn for undervisning, uten overtidstillegg, og regnes som vikartimer. Først det som er over hel stilling, er overtid. Om deltidsansatte skal ha overtidstillegg for arbeid ut over avtalt stillingsbrøk, er omstridt mellom partene.
+    nn: Har ein lærar i deltidsstilling meir undervisning og funksjonar enn stillinga, gir det som er over stillinga og opp til heil stilling variabel løn. Ho blir betalt med vanleg timeløn for undervisning, utan overtidstillegg, og blir rekna som vikartimar. Først det som er over heil stilling, er overtid. Om deltidstilsette skal ha overtidstillegg for arbeid utover avtalt stillingsbrøk, er omstridt mellom partane.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.2 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+  kontrollert: null
+  stikkord: [merarbeid, deltid, deltidsansatt, timelønn, ekstra undervisning]
+  relatert: [fast-overtid, kalkulert-tid, teknisk-undertid-overtid, beskjeftigelse]
+
+- id: planleggingsdager
+  type: begrep
+  tittel: { nb: Planleggingsdager, nn: Planleggingsdagar }
+  tekst:
+    nb: Arbeidsåret for lærere er elevenes skoleår og 6 dager, blant annet til planlegging og kompetanseutvikling. Disse dagene ligger utenom skoleukene og er planfestet tid. For en lærer i hel stilling er de 6 × 7,5 = 45 timer. Hvor mange timer en lærer i deltid eller i en periode skal ha, og hvor ferien for lærere over 60 år legges, avgjøres lokalt.
+    nn: Arbeidsåret for lærarar er skuleåret til elevane og 6 dagar, mellom anna til planlegging og kompetanseutvikling. Desse dagane ligg utanom skulevekene og er planfesta tid. For ein lærar i heil stilling er dei 6 × 7,5 = 45 timar. Kor mange timar ein lærar i deltid eller i ein periode skal ha, og kvar ferien for lærarar over 60 år blir lagd, blir avgjort lokalt.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: 4 a }
+  kontrollert: null
+  stikkord: [planleggingsdag, kompetanseutvikling, plandag, arbeidsår, 6 dager]
+  relatert: [arbeidsar, planfestet-arbeidstid]
 
 - id: delt-dagsverk
   type: begrep
@@ -229,7 +254,7 @@
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
   stikkord: [stillingsplan, undertid, overtid, differanse, variabel lønn, merarbeid, deltid]
-  relatert: [beskjeftigelse, arsramme]
+  relatert: [beskjeftigelse, arsramme, variabel-lonn]
 
 - id: livsfasetiltak
   type: begrep

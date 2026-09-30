@@ -4,6 +4,20 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.8.1] – 2026-09-30
+
+### Endret
+
+- Hjelpeteksten ved datoene og metodeteksten sier at offentlige fridager regnes som arbeidsdager i brutte måneder, slik Vestland fylkeskommune regner.
+
+### Lagt til
+
+- Begrepene «Variabel lønn» og «Planleggingsdager» i begrepsbanken.
+
+### Rettet
+
+- Søkesiden følger adressen: endres søket i adressen mens siden er åpen (lenke, tilbake-knappen eller adressefeltet), vises treffene for det nye søket.
+
 ## [0.8.0] – 2026-09-30
 
 ### Lagt til
