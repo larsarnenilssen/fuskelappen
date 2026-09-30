@@ -10,10 +10,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Variabel lønn i Arbeidsplan:** Har læreren en stilling under 100 % og mer undervisning og funksjoner enn stillingen, heter det som er over stillingen og opp til hel stilling **variabel lønn**. Det som er over 100 %, er fortsatt teknisk overtid. Er det begge deler, vises de i hver sin rute, med årsrammetimer.
 - **Lønn i året** har en egen linje for variabel lønn. Den regnes som vikartimer: prosenten gjøres om til timer i faget og videre til kalkulert tid, som betales med timelønnen for undervisning. Linjen viser den kalkulerte tiden. Overtid over 100 % betales som før, med 50 % tillegg. Stolpen for beskjeftigelsen viser variabel lønn og overtid i hver sin farge.
+- **Arbeidsplan for en periode:** Bryteren «Hele skoleåret / En periode» gjør arbeidsplanen om til periodebeskjeftigelse. Fagene er timer i perioden, og stillingen og funksjonene gjelder perioden (en funksjon på 10 % er 10 % i perioden). Prosentene kan vises i perioden eller på årsbasis. Differansen, fordelingen og lønnen gjelder perioden.
 
 ### Endret
 
 - **Funksjoner:** Knappen som fjerner en funksjon, står på linjen med navnet. Beløpet for tillegg står på linjen med vippen «Tillegg i lønnen», og feltet har plass til beløp på over 10 000 kr.
+
+### Fjernet
+
+- Kalkulatoren Periodebeskjeftigelse. Alt den gjorde, finnes i Arbeidsplan, og mer. Lagrede varianter fra den vises ikke lenger.
 
 ## [0.6.2] – 2026-09-30
 

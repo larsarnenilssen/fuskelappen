@@ -12,17 +12,12 @@ export const arbeidstidNb = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      beskrivelse: 'Fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid, fordelingen av arbeidstiden og årslønn.',
+      beskrivelse: 'Fag og funksjoner mot stillingsprosenten for hele skoleåret eller en periode (periodebeskjeftigelse), med fordelingen av arbeidstiden og lønn.',
     },
     beskjeftigelse: {
       tittel: 'Beskjeftigelse',
       kort: 'Beskjeftigelse',
       beskrivelse: 'Undervisningsprosent for ett eller flere fag.',
-    },
-    periode: {
-      tittel: 'Periodebeskjeftigelse',
-      kort: 'Periode',
-      beskrivelse: 'Beskjeftigelse når undervisningen bare gjelder en del av skoleåret.',
     },
     vikar: {
       tittel: 'Vikartimer',

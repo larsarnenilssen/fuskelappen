@@ -249,7 +249,7 @@ kilder:
     aktiv: false
     godkjent_fingeravtrykk: null
     faser: [1]
-    merknad: Bakgrunn for periodekalkulatoren (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
+    merknad: Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
 
   - id: udir-nsr
     navn: Nasjonalt skoleregister (NSR)

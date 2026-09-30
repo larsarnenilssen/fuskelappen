@@ -13,17 +13,12 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      beskrivelse: 'Fag og funksjonar mot stillingsprosenten, med teknisk undertid eller overtid, fordelinga av arbeidstida og årsløn.',
+      beskrivelse: 'Fag og funksjonar mot stillingsprosenten for heile skuleåret eller ein periode (periodesysselsetjing), med fordelinga av arbeidstida og løn.',
     },
     beskjeftigelse: {
       tittel: 'Sysselsetjing',
       kort: 'Sysselsetjing',
       beskrivelse: 'Undervisningsprosent for eitt eller fleire fag.',
-    },
-    periode: {
-      tittel: 'Periodesysselsetjing',
-      kort: 'Periode',
-      beskrivelse: 'Sysselsetjing når undervisninga berre gjeld ein del av skuleåret.',
     },
     vikar: {
       tittel: 'Vikartimar',

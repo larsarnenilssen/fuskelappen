@@ -54,7 +54,6 @@ export const ruter = [
   '#/arbeidstid',
   '#/arbeidstid/arbeidsplan',
   '#/arbeidstid/beskjeftigelse',
-  '#/arbeidstid/periode',
   '#/arbeidstid/vikar',
   '#/arbeidstid/overtid',
   '#/finnes-ikke',

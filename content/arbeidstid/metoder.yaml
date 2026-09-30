@@ -34,6 +34,19 @@
       - **Variabel lønn** betales for beskjeftigelse ut over en stilling under 100 %, opp til hel stilling. Den regnes som vikartimer: prosenten gjøres om til timer i faget (prosent × årsramme ÷ 100), timene × 1400 ÷ årsramme gir kalkulert tid, og kalkulert tid ganges med timelønnen for undervisning. Overtidsbetalingen regnes på samme måte, men med 50 % tillegg.
       - **Overtidsbetaling** regnes som i kalkulatoren for overtid når samlet beskjeftigelse er over 100 %, med årsrammen i faget som er valgt for årsrammetimer.
       - **Feriepenger** regnes som vanlig i prosent av det som utbetales: 12 %, eller 14,3 % for arbeidstakere over 60 år (hovedtariffavtalen § 7.4.2). De kommer i tillegg og er ikke med i lønn i året.
+
+      **En periode.** Arbeidsplanen kan gjelde en del av skoleåret, for eksempel et vikariat. Årsrammene gjelder et helt skoleår, så de gjøres om til en ramme for perioden:
+
+      1. **Periodenøkkel** = undervisningsdager i perioden ÷ undervisningsdager i skoleåret (190 om du ikke skriver inn et annet antall). Dagene telles etter skoleruta.
+      2. **Perioderamme** = årsramme × periodenøkkel.
+      3. **Beskjeftigelse i perioden** = timene læreren underviser i perioden ÷ perioderammen × 100. Samme metode brukes i Visma InSchool.
+
+      - Skriver du inn økter per uke, trengs antall uker i perioden. Står feltet tomt, regnes ukene ut fra dagene: dager ÷ 5 skoledager per uke. Ukene kan ha ulikt antall skoledager eller ulik timeplan, så skriv inn antall uker eller timene i perioden om det avviker.
+      - **Stillingen og funksjonene** gjelder perioden: en funksjon på 10 % er 10 % i perioden.
+      - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skoleåret er 50 % for hele året. Timer og kroner er de samme i begge visningene.
+      - **Differansen** regnes om til timer i perioden med perioderammen.
+      - **Fordelingen** viser timene i perioden: timene for et helt år med de samme prosentene × periodenøkkelen. Timene per uke blir de samme som for et helt år.
+      - **Lønn i perioden** = årslønn i stillingen × periodenøkkel + tillegg × periodenøkkel + variabel lønn + overtidsbetaling. Variabel lønn og overtid regnes som vikartimer med timene i perioden.
     nn: |
       Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
 
@@ -64,6 +77,19 @@
       - **Variabel løn** blir betalt for sysselsetjing ut over ei stilling under 100 %, opp til heil stilling. Ho blir rekna som vikartimar: prosenten blir gjord om til timar i faget (prosent × årsramme ÷ 100), timane × 1400 ÷ årsramme gir kalkulert tid, og kalkulert tid blir gonga med timeløna for undervisning. Overtidsbetalinga blir rekna på same måte, men med 50 % tillegg.
       - **Overtidsbetaling** blir rekna som i kalkulatoren for overtid når samla sysselsetjing er over 100 %, med årsramma i faget som er valt for årsrammetimar.
       - **Feriepengar** blir rekna som vanleg i prosent av det som blir utbetalt: 12 %, eller 14,3 % for arbeidstakarar over 60 år (hovudtariffavtalen § 7.4.2). Dei kjem i tillegg og er ikkje med i løn i året.
+
+      **Ein periode.** Arbeidsplanen kan gjelde ein del av skuleåret, til dømes eit vikariat. Årsrammene gjeld eit heilt skuleår, så dei blir gjorde om til ei ramme for perioden:
+
+      1. **Periodenøkkel** = undervisningsdagar i perioden ÷ undervisningsdagar i skuleåret (190 om du ikkje skriv inn eit anna tal). Dagane blir talde etter skuleruta.
+      2. **Perioderamme** = årsramme × periodenøkkel.
+      3. **Sysselsetjing i perioden** = timane læraren underviser i perioden ÷ perioderamma × 100. Same metode blir brukt i Visma InSchool.
+
+      - Skriv du inn økter per veke, trengst talet på veker i perioden. Står feltet tomt, blir vekene rekna ut frå dagane: dagar ÷ 5 skuledagar per veke. Vekene kan ha ulikt tal på skuledagar eller ulik timeplan, så skriv inn talet på veker eller timane i perioden om det avvik.
+      - **Stillinga og funksjonane** gjeld perioden: ein funksjon på 10 % er 10 % i perioden.
+      - **På årsbasis** er prosenten i perioden × periodenøkkelen. 100 % gjennom halve skuleåret er 50 % for heile året. Timar og kroner er dei same i begge visingane.
+      - **Differansen** blir rekna om til timar i perioden med perioderamma.
+      - **Fordelinga** viser timane i perioden: timane for eit heilt år med dei same prosentane × periodenøkkelen. Timane per veke blir dei same som for eit heilt år.
+      - **Løn i perioden** = årsløn i stillinga × periodenøkkel + tillegg × periodenøkkel + variabel løn + overtidsbetaling. Variabel løn og overtid blir rekna som vikartimar med timane i perioden.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
@@ -75,8 +101,9 @@
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
+    - { id: inschool-periodebeskjeftigelse }
   kontrollert: null
-  stikkord: [arbeidsplan, stillingsplan, fordeling, planfestet tid, livsfasetiltak, seniorredusering, nyutdannet, kontaktlærer, årslønn, teknisk undertid, teknisk overtid, funksjon]
+  stikkord: [arbeidsplan, stillingsplan, fordeling, planfestet tid, livsfasetiltak, seniorredusering, nyutdannet, kontaktlærer, årslønn, teknisk undertid, teknisk overtid, funksjon, variabel lønn, periode, periodebeskjeftigelse, vikariat, periodenøkkel, årsbasis]
 
 - id: metode-beskjeftigelse
   type: forklaring
@@ -107,36 +134,6 @@
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
   kontrollert: null
   stikkord: [undervisningsprosent, stillingsprosent, årsramme, årstimer]
-
-- id: metode-periode
-  type: forklaring
-  tittel: { nb: Slik regnes periodebeskjeftigelsen ut, nn: Slik blir periodesysselsetjinga rekna ut }
-  tekst:
-    nb: |
-      Årsrammene gjelder for et helt skoleår. Underviser læreren bare i en del av året, må årsrammen gjøres om til en ramme for perioden:
-
-      1. **Periodenøkkel** = undervisningsdager i perioden ÷ undervisningsdager i skoleåret. Dagene telles etter skoleruta.
-      2. **Perioderamme** = årsramme × periodenøkkel.
-      3. **Beskjeftigelse i perioden** = timene læreren underviser i perioden ÷ perioderammen × 100.
-
-      Skriver du inn økter per uke, trengs antall uker i perioden. Står feltet tomt, regnes ukene ut fra dagene i perioden: dager ÷ 5 skoledager per uke. Ukene kan ha ulikt antall skoledager (fridager, ferier) eller ulik timeplan, så skriv inn antall uker eller timene i perioden om det avviker.
-
-      Uten eget antall bruker kalkulatoren 190 undervisningsdager i skoleåret. Samme metode brukes i Visma InSchool.
-    nn: |
-      Årsrammene gjeld for eit heilt skuleår. Underviser læraren berre i ein del av året, må årsramma gjerast om til ei ramme for perioden:
-
-      1. **Periodenøkkel** = undervisningsdagar i perioden ÷ undervisningsdagar i skuleåret. Dagane blir talde etter skuleruta.
-      2. **Perioderamme** = årsramme × periodenøkkel.
-      3. **Sysselsetjing i perioden** = timane læraren underviser i perioden ÷ perioderamma × 100.
-
-      Skriv du inn økter per veke, trengst talet på veker i perioden. Står feltet tomt, blir vekene rekna ut frå dagane i perioden: dagar ÷ 5 skuledagar per veke. Vekene kan ha ulikt tal på skuledagar (fridagar, feriar) eller ulik timeplan, så skriv inn talet på veker eller timane i perioden om det avvik.
-
-      Utan eige tal bruker kalkulatoren 190 undervisningsdagar i skuleåret. Same metode blir brukt i Visma InSchool.
-  kilder:
-    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
-    - { id: inschool-periodebeskjeftigelse }
-  kontrollert: null
-  stikkord: [periode, vikariat, periodenøkkel]
 
 - id: metode-vikar
   type: forklaring
