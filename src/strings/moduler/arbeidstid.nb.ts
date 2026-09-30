@@ -240,7 +240,7 @@ export const arbeidstidNb = {
     lonnStillingKort: 'Lønn i stillingen',
     fraDato: 'Første dag i perioden',
     tilDato: 'Siste dag i perioden',
-    datoHjelp: 'Til lønnen for perioden. Hele måneder gir hel månedslønn, og i brutte måneder regnes arbeidsdagene ÷ 21,67.',
+    datoHjelp: 'Til lønnen for perioden. Hele måneder gir hel månedslønn, og i brutte måneder regnes arbeidsdagene ÷ 21,67. Arbeidsdager er mandag–fredag, også offentlige fridager, slik Vestland fylkeskommune regner. Andre arbeidsgivere kan trekke fra fridagene.',
     datoFeil: 'Siste dag kan ikke være før første dag.',
     lonnsandel: 'Perioden gir {hele} hele måneder og {dager} arbeidsdager i brutte måneder, altså {andel} % av årslønnen.',
     lonnPeriodeMangler: 'Fyll inn første og siste dag i perioden under «Møter, planleggingsdager og lønn» for å regne ut lønnen.',

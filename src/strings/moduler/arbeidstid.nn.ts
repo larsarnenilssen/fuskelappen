@@ -240,7 +240,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     lonnStillingKort: 'Løn i stillinga',
     fraDato: 'Første dag i perioden',
     tilDato: 'Siste dag i perioden',
-    datoHjelp: 'Til løna for perioden. Heile månader gir heil månadsløn, og i brotne månader blir arbeidsdagane rekna ÷ 21,67.',
+    datoHjelp: 'Til løna for perioden. Heile månader gir heil månadsløn, og i brotne månader blir arbeidsdagane rekna ÷ 21,67. Arbeidsdagar er måndag–fredag, også offentlege fridagar, slik Vestland fylkeskommune reknar. Andre arbeidsgivarar kan trekkje frå fridagane.',
     datoFeil: 'Siste dag kan ikkje vere før første dag.',
     lonnsandel: 'Perioden gir {hele} heile månader og {dager} arbeidsdagar i brotne månader, altså {andel} % av årsløna.',
     lonnPeriodeMangler: 'Fyll inn første og siste dag i perioden under «Møte, planleggingsdagar og løn» for å rekne ut løna.',

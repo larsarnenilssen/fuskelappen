@@ -1,6 +1,7 @@
 // Lønn for en periode, slik lønnssystemet gjør det (Visma InSchool sender lønnsprosenten og datoene for perioden):
 // hele måneder gir hel månedslønn, og en brutt måned gir arbeidsdagene i perioden den måneden ÷ 21,67 av månedslønnen
-// (eier 30.09.2026). Andelen av årslønnen er summen ÷ 12. Arbeidsdager er mandag–fredag.
+// (eier 30.09.2026). Andelen av årslønnen er summen ÷ 12. Arbeidsdager er mandag–fredag, også offentlige fridager,
+// slik Vestland fylkeskommune regner (eier 30.09.2026).
 import type { Hent, Operand, Trinn } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 

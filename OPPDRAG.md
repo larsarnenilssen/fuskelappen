@@ -326,6 +326,9 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Hurtigkalkulator 5 (planfestet arbeidstid med utvidelse ved funksjoner) og forklaringen med grafikk om fordelingen er en del av Arbeidsplan. De egne kalkulatorene for planfestet tid og fordeling er fjernet (30.09.2026).
 - Funksjoner oppgis i prosent eller årsrammetimer, og hver funksjon kan utvide planfestet tid eller ikke, og gi tillegg (SFS 2213 punkt 9.1).
 - Livsfasetiltak (punkt 6) regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer (eier 30.09.2026). Lærere som er 60 år og eldre har årsverk på 1650 timer. De 37,5 timene er fem arbeidsdager ekstra ferie, så arbeidsåret er 191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5 (eier 30.09.2026).
+- Variabel lønn: beskjeftigelse over en stilling under 100 %, opp til hel stilling, regnes som vikartimer. Bare det som er over 100 %, er overtid (eier 30.09.2026).
+- Planleggingsdagene (6 × 7,5 = 45 timer for hel stilling, som i Visma InSchool) står på egen linje i fordelingen, og timer per uke er resten fordelt på 38 skoleuker (eier 30.09.2026).
+- Periodebeskjeftigelse er en del av Arbeidsplan, med periodenøkkel som i InSchool. Lønn i en periode regnes fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder, med offentlige fridager medregnet (eier 30.09.2026, avgjørelse 015).
 - Hurtigkalkulatorene er Arbeidsplan (også for en periode), beskjeftigelse (fag og fagkombinasjoner, blandede grupper), vikartimer og overtid.
 
 **Avklares med eier før implementering**
@@ -481,7 +484,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 |---|---|---|
 | Ikon (forslag: innbundet protokollbok med paragraftegn på omslaget) | før fase 0 avsluttes | Avklart |
 | Hva «utvidet planfestet arbeidstid ved funksjoner» omfatter, og regler for vikarberegning | ved start av fase 1 | Avklart. Hver funksjon kan utvide planfestet tid eller ikke. |
-| Fasiteksempler for SFS 2213 | fase 1 | 001–023 er godkjent. |
+| Fasiteksempler for SFS 2213 | fase 1 | 001–024 er godkjent. |
 | Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
 | Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Praksis inntil videre (eier 30.09.2026): beskjeftigelse over stillingen og opp til 100 % gir variabel lønn med vanlig timelønn, og bare beskjeftigelse over 100 % gir overtid. |
 | Periodebeskjeftigelse med funksjoner, eller som del av Arbeidsplan | fase 1 | Avklart. Perioder er en del av Arbeidsplan, og kalkulatoren Periode er fjernet (avgjørelse 015). |

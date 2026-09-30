@@ -4,6 +4,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.8.1] – 2026-09-30
+
+### Endret
+
+- Hjelpeteksten ved datoene og metodeteksten sier at offentlige fridager regnes som arbeidsdager i brutte måneder, slik Vestland fylkeskommune regner.
+
 ## [0.8.0] – 2026-09-30
 
 ### Lagt til
