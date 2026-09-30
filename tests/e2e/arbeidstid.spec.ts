@@ -220,7 +220,9 @@ test.describe('arbeidstid', () => {
     const tabell = page.locator('.fordeling-tabell');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0');
     await expect(tabell.getByRole('row', { name: /Møtetid/ })).toContainText('114');
-    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('54,8');
+    // Planleggingsdagene (45 timer når ikke annet er skrevet inn) tas fra funksjonstiden: 54,75 − 45 = 9,75.
+    await expect(tabell.getByRole('row', { name: /Planlegging/ })).toContainText('45,0');
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('9,8');
     await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText('168,8');
   });
 
@@ -357,12 +359,12 @@ test.describe('arbeidstid', () => {
     const tabell = page.locator('.fordeling-tabell');
     // Planleggingsdagene (6 × 7,5 = 45 timer) står for seg, og resten er annen planfestet tid.
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s105,0/);
-    await expect(tabell.getByRole('row', { name: /Planleggingsdager/ })).toContainText('45,0');
+    await expect(tabell.getByRole('row', { name: /Planlegging/ })).toContainText('45,0');
     await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s150,0\s*29,1/);
     await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
     // Timene på planleggingsdagene kan endres for den enkelte.
     await page.getByLabel('Timer på planleggingsdager').fill('30');
-    await expect(tabell.getByRole('row', { name: /Planleggingsdager/ })).toContainText('30,0');
+    await expect(tabell.getByRole('row', { name: /Planlegging/ })).toContainText('30,0');
     await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s120,0/);
     await page.getByLabel('Timer på planleggingsdager').fill('');
     await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
@@ -598,6 +600,8 @@ test.describe('arbeidstid', () => {
       const fag = page.locator(`[data-gruppe="${nr}"]`);
       await velgFag(fag, 'norsk stud vg1', 'Norsk · Studiespesialisering Vg1');
       await fag.getByLabel('Antall årstimer').fill('113');
+      // Vent til gruppen er regnet ut (113 ÷ 496 = 22,78 %) før neste legges til, så ingen gruppe blir borte underveis.
+      await expect(fag.locator('.fagkort-resultat')).toContainText('22,78');
     }
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
     await page.getByLabel('Funksjon 1: Prosent').fill('25');

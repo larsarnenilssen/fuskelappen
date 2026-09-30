@@ -168,7 +168,8 @@ export const arbeidstidNb = {
       undervisning: 'Undervisning',
       motetid: 'Møtetid',
       annen_planfestet: 'Annen planfestet tid',
-      planleggingsdager: 'Planleggingsdager',
+      // Myk bindestrek, så ordet kan deles i tabellen på smale skjermer.
+      planleggingsdager: 'Planleggings\u00addager',
       funksjonstid: 'Funksjoner og andre oppgaver',
       selvdisponert: 'Selvdisponert tid',
     },

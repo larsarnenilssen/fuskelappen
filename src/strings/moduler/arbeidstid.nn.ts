@@ -169,7 +169,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
       undervisning: 'Undervisning',
       motetid: 'Møtetid',
       annen_planfestet: 'Anna planfesta tid',
-      planleggingsdager: 'Planleggingsdagar',
+      planleggingsdager: 'Planleggings\u00addagar',
       funksjonstid: 'Funksjonar og andre oppgåver',
       selvdisponert: 'Sjølvdisponert tid',
     },
