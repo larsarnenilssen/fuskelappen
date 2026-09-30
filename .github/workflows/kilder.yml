@@ -87,6 +87,8 @@ jobs:
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
       - name: Endringsforslag (PR)
+        # Feiler forslagene, skal kontrollsaken likevel komme.
+        continue-on-error: true
         run: npm run kilder:forslag
         env:
           GITHUB_TOKEN: ${{ github.token }}

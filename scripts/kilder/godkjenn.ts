@@ -118,6 +118,10 @@ try {
 }
 const melding = `Godkjent av eier i sak #${sak}\n\n${utfort.map((u) => `- ${u}`).join('\n')}`;
 git('add', '-A', 'content', 'rules');
+if (git('status', '--porcelain', '--', 'content', 'rules') === '') {
+  await github('POST', `/issues/${sak}/comments`, { body: `Dette var allerede godkjent med dagens dato:\n\n${utfort.map((u) => `- ${u}`).join('\n')}${ukjentTekst}` });
+  process.exit(0);
+}
 git('commit', '-m', melding);
 let hvor: string;
 if (testerOk) {
