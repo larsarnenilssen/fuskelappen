@@ -7,10 +7,12 @@ import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Nivamerke } from '../../../components/Merker.tsx';
 import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Fordelingsdel, Fordelingsresultat } from '../beregning/index.ts';
-import { tallTekst } from './Utregning.tsx';
+import { Ukemaaler } from './Grafikk.tsx';
+import { brukteNiva, tallTekst } from './Utregning.tsx';
 
 const BREDDE = 320;
 const STOLPE = 56;
@@ -118,7 +120,14 @@ export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Ford
 }
 
 /** Diagram, tabell og forklaring av timene per uke, med knapp for stor visning (fullskjerm). */
-export function Fordelingsvisning({ resultat, children }: { resultat: Fordelingsresultat; children?: ComponentChildren }) {
+/** Grensene for en gjennomsnittlig uke, til ukefiguren (fra regelverket). */
+export interface Ukegrenser {
+  maksUke: number;
+  maksDag: number;
+  dagerPerUke: number;
+}
+
+export function Fordelingsvisning({ resultat, uke, children }: { resultat: Fordelingsresultat; uke?: Ukegrenser; children?: ComponentChildren }) {
   const { t } = useTekst();
   const ramme = useRef<HTMLDivElement>(null);
   const [stor, settStor] = useState(false);
@@ -154,6 +163,8 @@ export function Fordelingsvisning({ resultat, children }: { resultat: Fordelings
             {t('arbeidstid.fordeling.diagramTittel')}
           </Sammenleggknapp>
         </h2>
+        {/* Lokale verdier (fylke eller skole), f.eks. lokalt avtalt planfestet tid, merkes med nivå. */}
+        <Nivamerke niva={brukteNiva(resultat.trinn)} />
         {kanVisesStor && !lukket && (
           <button type="button" class="lenkeknapp liten" onClick={veksle}>
             <Ikon navn={stor ? 'forminsk' : 'utvid'} class="ikon-liten" />
@@ -176,6 +187,9 @@ export function Fordelingsvisning({ resultat, children }: { resultat: Fordelings
               })
             : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
         </p>
+        {uke && uker > 0 && (
+          <Ukemaaler planfestet={planfestet / uker} total={totalt / uker} maksUke={uke.maksUke} maksDag={uke.maksDag} dagerPerUke={uke.dagerPerUke} />
+        )}
         {children}
       </div>
     </div>

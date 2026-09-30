@@ -89,6 +89,24 @@ verdier:
     kilde: { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
     kontrollert: null
     merknad: Minste reduksjon for kontaktlærertjeneste i videregående opplæring (38 i 45-minutters enheter).
+  livsfase_nyutdannet_prosent:
+    verdi: 6
+    enhet: prosent
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
+    kontrollert: null
+    merknad: Rett til redusert undervisning med inntil 6 % det første yrkesåret etter fullført faglig og pedagogisk utdanning.
+  livsfase_57_prosent:
+    verdi: 6
+    enhet: prosent
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
+    kontrollert: null
+    merknad: Rett til redusert undervisning med inntil 6 % fra skoleårets begynnelse det kalenderåret læreren fyller 57 år.
+  livsfase_60_prosent:
+    verdi: 12.5
+    enhet: prosent
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "6" }
+    kontrollert: null
+    merknad: Rett til redusert undervisning med inntil 12,5 % fra skoleårets begynnelse det kalenderåret læreren fyller 60 år.
   godtgjoring_kontaktlaerer:
     verdi: 12000
     enhet: kroner per år

@@ -23,6 +23,20 @@ export function useHent(): Hent {
   return useMemo(() => (nokkel: string) => hentVerdi(nokkel, kontekst), [kontekst]);
 }
 
+/** Skjema som skal fylles inn i en annen kalkulator når den åpnes, f.eks. fagene fra Beskjeftigelse i Arbeidsplan. */
+const overforinger = new Map<string, Record<string, unknown>>();
+
+/** Fyller inn deler av skjemaet i kalkulatoren med nøkkelen neste gang den åpnes (i samme vindu). */
+export function overforSkjema(nokkel: string, skjema: Record<string, unknown>): void {
+  overforinger.set(nokkel, JSON.parse(JSON.stringify(skjema)) as Record<string, unknown>);
+}
+
+function taOverforing(nokkel: string): Record<string, unknown> | undefined {
+  const skjema = overforinger.get(nokkel);
+  overforinger.delete(nokkel);
+  return skjema;
+}
+
 /** Navnet på vinduer som er åpnet med «Åpne i nytt vindu». Hvert vindu får et eget navn, så de ikke erstatter hverandre. */
 const VINDU = 'protokollen-vindu-';
 
@@ -56,7 +70,7 @@ export function useSkjematilstand<T extends object>(nokkel: string, start: () =>
   const [verdi, settVerdi] = useState<T>(() => {
     try {
       const egen = (history.state as { skjema?: Record<string, unknown> } | null)?.skjema?.[nokkel];
-      const lagret = egen ?? skjemaFraOpphav(nokkel);
+      const lagret = egen ?? taOverforing(nokkel) ?? skjemaFraOpphav(nokkel);
       if (lagret && typeof lagret === 'object') {
         const v = { ...start(), ...(lagret as Partial<T>) } as T;
         sjekk?.(v);

@@ -75,31 +75,6 @@ export function Periodelinje({ dager, skolear }: { dager: number; skolear: numbe
   );
 }
 
-/** Planfestet tid mot grensen på 37,5 timer i uka gjennom arbeidsåret. Det som går over, utvider arbeidsåret. */
-export function Planfestetmaaler({ grunn, okning, maks }: { grunn: number; okning: number; maks: number }) {
-  const { t } = useTekst();
-  const total = grunn + okning;
-  const skala = Math.max(maks, total);
-  const s = (v: number) => (v / skala) * B;
-  const over = Math.max(0, total - maks);
-  const tekst = t('arbeidstid.grafikk.planfestet', { grunn: tallTekst(grunn), okning: tallTekst(okning), maks: tallTekst(maks), over: tallTekst(over) });
-  return (
-    <figure class="figur">
-      <svg class="diagram" viewBox={`0 0 ${B} ${H + 14}`} role="img" aria-label={tekst}>
-        <rect class="figur-bakgrunn" x={0} y={0} width={s(maks)} height={H} rx={3} />
-        <rect class="fordeling-del-undervisning" x={0} y={0} width={s(grunn)} height={H} />
-        <rect class="fordeling-del-funksjonstid" x={s(grunn)} y={0} width={s(Math.min(okning, Math.max(0, maks - grunn)))} height={H} />
-        {over > 0 && <rect class="figur-over" x={s(maks)} y={0} width={s(over)} height={H} />}
-        <line class="figur-grense" x1={s(maks)} x2={s(maks)} y1={-2} y2={H + 2} />
-        <text class="figur-tekst" x={Math.min(s(maks), B - 2)} y={H + 12} text-anchor="end">
-          {t('arbeidstid.felles.timerKort', { timer: tallTekst(maks) })}
-        </text>
-      </svg>
-      <figcaption class="liten dempet">{tekst}</figcaption>
-    </figure>
-  );
-}
-
 /** Beløp som deler av en stolpe, f.eks. lønn og feriepenger. Beløpene står også som tekst. */
 export function Belopsstolpe({ deler }: { deler: { navn: string; verdi: number }[] }) {
   const { t } = useTekst();

@@ -2,6 +2,7 @@
 import { lesHash } from '../../../app/ruter.ts';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
+import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnOvertid } from '../beregning/index.ts';
 import { Belopsstolpe, Stillingsmaaler } from '../komponenter/Grafikk.tsx';
@@ -93,8 +94,7 @@ export default function Overtid() {
         maks={300}
         onEndring={(beskjeftigelse) => sett({ ...s, beskjeftigelse })}
       />
-      <div class="fagkort">
-        <p class="fagkort-tittel">{t('arbeidstid.overtid.fag')}</p>
+      <Sammenleggbartkort nokkel="fag" tittel={t('arbeidstid.overtid.fag')}>
         <Fagfelt
           plasser={s.plasser}
           faaElever={s.faaElever}
@@ -103,11 +103,11 @@ export default function Overtid() {
           onPlasser={(plasser) => sett({ ...s, plasser })}
           onFaaElever={(faaElever) => sett({ ...s, faaElever })}
         />
-      </div>
-      <div class="fagkort">
+      </Sammenleggbartkort>
+      <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
         <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
         <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
-      </div>
+      </Sammenleggbartkort>
     </Kalkulatorside>
   );
 }

@@ -1,12 +1,13 @@
 // Beskjeftigelse for ett eller flere fag (fagkombinasjoner og blandede grupper).
 import { useTekst } from '../../../app/tilstand.ts';
+import { Ikon } from '../../../components/Ikon.tsx';
 import { beregnBeskjeftigelse, type Gruppe } from '../beregning/index.ts';
 import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
-import { useHent, useSkjematilstand } from '../kontekst.ts';
+import { overforSkjema, useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Beskjeftigelse() {
   const { t } = useTekst();
@@ -38,6 +39,10 @@ export default function Beskjeftigelse() {
               <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn}>
                 <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
               </Utregningskort>
+              <a class="lenke-pil" href="#/arbeidstid/stillingsplan" onClick={() => overforSkjema('stillingsplan', { grupper })}>
+                {t('arbeidstid.felles.fortsettArbeidsplan')}
+                <Ikon navn="hoyre" class="ikon-liten" />
+              </a>
             </>
           ) : (
             !feil && <ManglerInndata />

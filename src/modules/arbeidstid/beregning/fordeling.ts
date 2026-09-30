@@ -1,7 +1,6 @@
-// Fordeling av årsverket i en tenkt stilling, til diagrammet.
-// Undervisningen kommer fra fagene (årstimer og årsramme), eller fra stillingsprosenten minus funksjonene
-// og en årsramme. Funksjoner og andre oppgaver kommer fra funksjonsprosenten, og møtetiden fra brukeren.
-// Resten av planfestet tid er egentid til andre oppgaver innenfor planfestet tid.
+// Fordeling av årsverket i en stilling, til diagrammet i Arbeidsplan.
+// Undervisningen kommer fra fagene (årstimer og årsramme). Funksjoner og andre oppgaver kommer fra funksjonsprosenten,
+// og møtetiden fra brukeren. Resten av planfestet tid er egentid til andre oppgaver innenfor planfestet tid.
 // Møtetid som ikke får plass i den planfestede tiden for undervisningen (f.eks. når stillingen bare er
 // funksjon), legges i funksjonstiden, som også er planfestet.
 //
@@ -11,60 +10,28 @@
 // For hel stilling gir dette samme planfestede tid som punkt 5.3 (eier bekreftet 29.09.2026).
 // Funksjoner som ikke utvider planfestet tid (G %, eiers valg per funksjon 30.09.2026), fordeles som undervisningen:
 //   planfestet del = planfestet × G, tid læreren disponerer selv = (årsverk − planfestet) × G.
-// Er stillingsprosenten oppgitt sammen med fagene (Arbeidsplan), fordeles den delen av stillingen som ikke er fylt
-// med fag og funksjoner (R), som undervisningsdelen: planfestet × R og (årsverk − planfestet) × R. Da viser
-// diagrammet hvor mye planfestet tid og tid til egen disposisjon stillingen gir uansett (eiers ønske 30.09.2026).
+//   Redusert undervisning etter punkt 6 (livsfasetiltak) regnes på samme måte (eier 30.09.2026).
+// Er stillingsprosenten oppgitt, fordeles den delen av stillingen som ikke er fylt med fag og funksjoner (R),
+// som undervisningsdelen: planfestet × R og (årsverk − planfestet) × R. Da viser diagrammet hvor mye planfestet tid
+// og tid til egen disposisjon stillingen gir uansett (eiers ønske 30.09.2026).
+// For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4).
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
 // regnes med det utvidede arbeidsåret.
-import { Regelfeil } from '../../../core/regler/motor.ts';
-import { type Arsrammevalg, velgArsramme } from './arsrammer.ts';
 import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
 import { arbeidsaaret, funksjonsprosent, type Reduksjon } from './planfestet.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 
-/**
- * Undervisningen i stillingen: fra fagene, eller fra stillingsprosenten. Med stillingsprosent er undervisningen
- * stillingen minus funksjonene. Årsrammen trengs bare når det er undervisning igjen.
- */
-export type Undervisningsgrunnlag =
-  | {
-      type: 'fag';
-      grupper: Gruppe[];
-      /** Stillingsprosenten læreren er ansatt i. Er den større enn fag og funksjoner, fordeles resten også. */
-      stilling?: number;
-    }
-  | { type: 'stilling'; prosent: number; arsramme: Arsrammevalg | null };
-
 export interface Fordelingsinndata {
-  undervisning: Undervisningsgrunnlag;
+  grupper: readonly Gruppe[];
+  /** Stillingsprosenten læreren er ansatt i. Er den større enn fag og funksjoner, fordeles resten også. */
+  stilling?: number;
   funksjon: Reduksjon;
-  /** Funksjoner i prosent av full stilling som ikke utvider planfestet tid. 0 når alle utvider (standard). */
+  /** Funksjoner og redusert undervisning i prosent av full stilling som ikke utvider planfestet tid. */
   funksjonUtenUtvidelse?: number;
   moterPerUke: number;
-}
-
-/** Beskjeftigelse (B) og undervisningstimer (U) for grunnlaget, med trinnene. F er funksjonsprosenten. */
-function undervisning(hent: Hent, u: Undervisningsgrunnlag, F: Operand): { B: Operand; U: Operand; trinn: Trinn[]; advarsler: AdvarselId[] } {
-  if (u.type === 'fag') {
-    const b = beregnBeskjeftigelse(hent, u.grupper);
-    const U: Operand = {
-      navn: 'arstimer',
-      verdi: b.grupper.reduce((s, g) => s + g.timer.verdi, 0),
-      enhet: 'timer',
-      opprinnelse: 'trinn',
-      liste: b.grupper.map((g) => g.timer.verdi),
-    };
-    return { B: b.sum, U, trinn: b.trinn, advarsler: b.advarsler };
-  }
-  const S = inndata('stilling', u.prosent, 'prosent');
-  const b = trinn('undervisning_fra_stilling', { stilling: S, funksjonsprosent: F }, 'beskjeftigelse', 'prosent', Math.max(0, u.prosent - F.verdi));
-  const advarsler: AdvarselId[] = u.prosent - F.verdi < -1e-9 ? ['funksjon_over_stilling'] : [];
-  if (b.resultat.verdi === 0) return { B: b.resultat, U: inndata('arstimer', 0, 'timer'), trinn: [b], advarsler };
-  if (!u.arsramme) throw new Regelfeil('Velg årsramme for undervisningen i stillingen.');
-  const ramme = velgArsramme(hent, [u.arsramme], false);
-  const t = trinn('arstimer_fra_stilling', { stilling: b.resultat, arsramme: ramme.arsramme }, 'arstimer', 'timer', (b.resultat.verdi * ramme.arsramme.verdi) / 100);
-  return { B: b.resultat, U: t.resultat, trinn: [b, ...ramme.trinn, t], advarsler };
+  /** Læreren er 60 år eller eldre: årsverket er 1650 timer (punkt 4). */
+  over60?: boolean;
 }
 
 /** Delene i diagrammet, i rekkefølge. Alle i timer per år. */
@@ -95,16 +62,22 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
   const F = f.prosent;
   const G = inn.funksjonUtenUtvidelse ?? 0;
   const utenUtvidelse = G > 0 ? inndata('funksjon_uten_utvidelse', G, 'prosent') : null;
-  // Undervisningen fra stillingsprosent er stillingen minus alle funksjonene.
+  // Alle funksjoner, også dem som ikke utvider planfestet tid.
   const alleFunksjoner: Operand = utenUtvidelse ? { navn: 'funksjoner', verdi: F.verdi + G, enhet: 'prosent', opprinnelse: 'inndata', liste: [F.verdi, G] } : F;
-  const u = undervisning(hent, inn.undervisning, alleFunksjoner);
-  const undervisningstimer = u.U;
-  const arsverk = regel(hent, 'sfs2213.arsverk_timer', 'arsverk', 'timer');
+  const b = beregnBeskjeftigelse(hent, inn.grupper);
+  const undervisningstimer: Operand = {
+    navn: 'arstimer',
+    verdi: b.grupper.reduce((sum, g) => sum + g.timer.verdi, 0),
+    enhet: 'timer',
+    opprinnelse: 'trinn',
+    liste: b.grupper.map((g) => g.timer.verdi),
+  };
+  const arsverk = regel(hent, inn.over60 ? 'sfs2213.arsverk_timer_60_ar' : 'sfs2213.arsverk_timer', 'arsverk', 'timer');
   const planfestet = regel(hent, 'sfs2213.planfestet_timer', 'planfestet', 'timer');
-  const B = u.B;
+  const B = b.sum;
 
   // Den delen av en oppgitt stilling som ikke er fylt med fag og funksjoner, regnes som undervisningsdelen.
-  const oppgitt = inn.undervisning.type === 'fag' ? inn.undervisning.stilling : undefined;
+  const oppgitt = inn.stilling;
   const restTrinn: Trinn[] = [];
   let Bdel = B;
   let oppgittStilling: Operand | null = null;
@@ -124,17 +97,14 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
 
   // Med stillingsprosent er stillingen oppgitt. Med fag er den undervisning + funksjoner, eller den oppgitte stillingen
   // når den er større.
-  const stilling =
-    inn.undervisning.type === 'stilling'
-      ? { resultat: inndata('stilling', Math.max(inn.undervisning.prosent, alleFunksjoner.verdi), 'prosent'), trinn: [] as Trinn[] }
-      : oppgittStilling
-        ? { resultat: oppgittStilling, trinn: [] as Trinn[] }
-        : (() => {
-          const t = utenUtvidelse
-            ? trinn('stilling_alle_funksjoner', { beskjeftigelse: B, funksjonsprosent: F, funksjon_uten_utvidelse: utenUtvidelse }, 'stilling', 'prosent', B.verdi + F.verdi + G)
-            : trinn('stilling', { beskjeftigelse: B, funksjonsprosent: F }, 'stilling', 'prosent', B.verdi + F.verdi);
-          return { resultat: t.resultat, trinn: [t] };
-        })();
+  const stilling = oppgittStilling
+    ? { resultat: oppgittStilling, trinn: [] as Trinn[] }
+    : (() => {
+        const t = utenUtvidelse
+          ? trinn('stilling_alle_funksjoner', { beskjeftigelse: B, funksjonsprosent: F, funksjon_uten_utvidelse: utenUtvidelse }, 'stilling', 'prosent', B.verdi + F.verdi + G)
+          : trinn('stilling', { beskjeftigelse: B, funksjonsprosent: F }, 'stilling', 'prosent', B.verdi + F.verdi);
+        return { resultat: t.resultat, trinn: [t] };
+      })();
   const arsverkStilling = trinn('arsverk_stilling', { arsverk, stilling: stilling.resultat }, 'arsverk_stilling', 'timer', (arsverk.verdi * stilling.resultat.verdi) / 100);
   const planU = trinn('planfestet_undervisning', { planfestet, beskjeftigelse: Bdel }, 'planfestet_undervisning', 'timer', (planfestet.verdi * Bdel.verdi) / 100);
   const utvidende = trinn('funksjonstid', { arsverk, funksjonsprosent: F }, 'funksjonstid', 'timer', (arsverk.verdi * F.verdi) / 100);
@@ -220,11 +190,11 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     utvidelseDager = dager.resultat;
   }
 
-  const advarsler = new Set<AdvarselId>(u.advarsler);
+  const advarsler = new Set<AdvarselId>(b.advarsler);
   if (stilling.resultat.verdi > 100 + 1e-9) advarsler.add('over_hel_stilling');
   if (moterForStore) advarsler.add('motetid_for_stor');
 
-  const trinnliste: Trinn[] = [...f.trinn, ...u.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
+  const trinnliste: Trinn[] = [...f.trinn, ...b.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
   return {
     beskjeftigelse: B,
     funksjonsprosent: F,

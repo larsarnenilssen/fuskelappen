@@ -4,6 +4,27 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.6.0] – 2026-09-30
+
+Arbeidsplan samler fordeling og planfestet tid, med redusert undervisning, funksjoner i årsrammetimer og utskrift.
+
+### Lagt til
+
+- **Redusert undervisning (livsfasetiltak, SFS 2213 punkt 6)** i Arbeidsplan: nyutdannet, 57 år eller 60 år, med den største reduksjonen fylt inn (6 %, 6 % og 12,5 %). Reduksjonen regnes som en del av stillingen og utvider ikke planfestet tid. 60 år gir årsverk på 1650 timer og høyere feriepengesats.
+- **Funksjoner i årsrammetimer:** hver funksjon kan oppgis i prosent eller årsrammetimer. Heter funksjonen «Kontaktlærer», foreslås minst 28,5 årsrammetimer (punkt 7.3 b).
+- **Skriv ut eller lagre som PDF** fra knappen ved tittelen i alle kalkulatorene. Utskriften viser utregningen og innholdet i lukkede kort, uten menyer og knapper, og alltid i lyst tema.
+- **Fortsett i Arbeidsplan** fra Beskjeftigelse, med fagene ferdig utfylt.
+- Figuren for en gjennomsnittlig uke og «Hva tiden brukes til» står i Arbeidsplan.
+- Arbeidsplan er merket «Illustrasjon – ikke en arbeidsplan».
+- Lokale verdier (fylke eller skole) merkes med nivå også i diagramkortet.
+
+### Endret
+
+- Kalkulatorene «Fordeling av arbeidstiden» og «Planfestet tid ved funksjoner» er fjernet. Alt de viste, finnes i Arbeidsplan.
+- Kortene i Vikartimer og Overtid har overskrift og kan legges sammen, som i Arbeidsplan.
+- Kronebeløp vises med mellomrom som tusenskille (600 000).
+- Hjelpeteksten for antall uker nevner fag som bare går et halvår.
+
 ## [0.5.0] – 2026-09-30
 
 Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og større diagram.

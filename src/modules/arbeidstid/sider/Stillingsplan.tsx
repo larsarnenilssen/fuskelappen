@@ -4,147 +4,42 @@
 // Id og adresse er fortsatt «stillingsplan», så favoritter, lenker og lagrede varianter virker (avgjørelse 012).
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
-import { Hjelp } from '../../../components/Hjelp.tsx';
+import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
-import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
+import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Funksjoner, type Livsfase, Livsfasekort, livsfaseregler, nyFunksjon, reserverFunksjonsider, tilFunksjon, tilleggsforslag, utvider } from '../komponenter/Funksjoner.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
+import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
-interface Funksjonstilstand {
-  id: number;
-  navn: string;
-  prosent: number | null;
-  /** Om funksjonen utvider planfestet tid (punkt 5.3). Mangler i skjema lagret før 0.5.0, og regnes da som på. */
-  utvider?: boolean;
-  /** Om funksjonen gir tillegg i lønnen (godtgjøring, SFS 2213 punkt 9.1). */
-  tillegg?: boolean;
-  /** Tillegget i kroner per år, eller null når beløpet fra SFS 2213 skal brukes. */
-  tilleggKr?: number | null;
+const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'funksjonstid', 'selvdisponert'];
+
+/** Forklaring av hva en del av arbeidstiden brukes til (innhold i content/arbeidstid). */
+function BrukAvDel({ id }: { id: FordelingsdelId }) {
+  const { t } = useTekst();
+  const element = useArbeidstidElement(`bruk-${id.replace('_', '-')}`);
+  return (
+    <Forklaring tittel={t(`arbeidstid.fordeling.deler.${id}` as Tekstnokkel)}>
+      {element ? <Innholdstekst element={element} /> : <p class="dempet">{element === undefined ? t('app.lasterInn') : t('arbeidstid.metode.ikkeFunnet')}</p>}
+    </Forklaring>
+  );
 }
-
-let nesteFunksjon = 1;
-const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0, utvider: true });
-const utvider = (f: Funksjonstilstand) => f.utvider !== false;
-
-/** Funksjoner med fast minstegodtgjøring i SFS 2213 punkt 9.1, kjent igjen på navnet brukeren har gitt funksjonen. */
-const godtgjorteFunksjoner = [
-  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i, hjelp: 'arbeidstid.stillingsplan.tilleggKontaktlaerer' },
-  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i, hjelp: 'arbeidstid.stillingsplan.tilleggRadgiver' },
-] as const;
-
-/** Forslag til tillegg for en funksjon: beløpet fra SFS 2213 og en forklaring av hvor det kommer fra. */
-type Tilleggsforslag = (f: Funksjonstilstand) => { verdi: number; hjelp: string };
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
 function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
   const plass = g.arsrammer[0];
   if (plass?.valg && plass.valg !== 'manuell') return radTekst(indeks, plass.valg)?.navn ?? reserve;
   return reserve;
-}
-
-function Funksjoner({
-  funksjoner,
-  tillegg,
-  onEndring,
-}: {
-  funksjoner: Funksjonstilstand[];
-  /** Forslag til tillegg når lønnen regnes ut, ellers null (da vises ikke tilleggene). */
-  tillegg: Tilleggsforslag | null;
-  onEndring: (f: Funksjonstilstand[]) => void;
-}) {
-  const { t } = useTekst();
-  const id = useId();
-  const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
-  return (
-    <Sammenleggbartkort
-      nokkel="funksjoner"
-      tittel={t('arbeidstid.stillingsplan.funksjoner')}
-      oppsummering={t('arbeidstid.stillingsplan.funksjonerOppsummering', {
-        antall: funksjoner.length,
-        prosent: tallTekst(funksjoner.reduce((sum, f) => sum + (f.prosent ?? 0), 0)),
-      })}
-    >
-      {funksjoner.map((f, i) => (
-        <div key={f.id} class="inndatarad funksjonsrad">
-          <label class="skjult-visuelt" for={`${id}-${f.id}`}>
-            {`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}: ${t('arbeidstid.stillingsplan.funksjonNavn')}`}
-          </label>
-          <input
-            id={`${id}-${f.id}`}
-            class="tekstfelt"
-            type="text"
-            autoComplete="off"
-            placeholder={t('arbeidstid.stillingsplan.funksjonNavnPlassholder')}
-            value={f.navn}
-            onInput={(e) => sett(f.id, { navn: e.currentTarget.value })}
-          />
-          <Tallfelt
-            class="felt-kompakt"
-            skjultEtikett
-            etikett={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}: ${t('arbeidstid.stillingsplan.funksjonProsent')}`}
-            enhet="%"
-            verdi={f.prosent}
-            min={0}
-            maks={100}
-            onEndring={(prosent) => sett(f.id, { prosent })}
-          />
-          <button
-            type="button"
-            class="ikonknapp"
-            aria-label={t('arbeidstid.stillingsplan.fjernFunksjon', { nr: i + 1 })}
-            onClick={() => onEndring(funksjoner.filter((x) => x.id !== f.id))}
-          >
-            <Ikon navn="lukk" class="ikon-liten" />
-          </button>
-          <Vippe
-            tekst={t('arbeidstid.stillingsplan.utvider')}
-            skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
-            pa={utvider(f)}
-            onEndring={(pa) => sett(f.id, { utvider: pa })}
-          />
-          {tillegg && (
-            <Vippe
-              tekst={t('arbeidstid.stillingsplan.tilleggVippe')}
-              skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
-              pa={f.tillegg === true}
-              onEndring={(pa) => sett(f.id, { tillegg: pa })}
-            />
-          )}
-          {tillegg && f.tillegg && (
-            <Tallfelt
-              class="felt-kompakt funksjon-tillegg"
-              etikett={t('arbeidstid.stillingsplan.tilleggFelt', { nr: i + 1 })}
-              hjelpetekst={f.tilleggKr == null ? tillegg(f).hjelp : t('arbeidstid.stillingsplan.tilleggEget')}
-              enhet="kr"
-              verdi={f.tilleggKr ?? tillegg(f).verdi}
-              min={0}
-              maks={1000000}
-              onEndring={(tilleggKr) => sett(f.id, { tilleggKr })}
-            />
-          )}
-        </div>
-      ))}
-      <div class="med-hjelp">
-        <button type="button" class="lenkeknapp liten" onClick={() => onEndring([...funksjoner, nyFunksjon()])}>
-          <Ikon navn="pluss" class="ikon-liten" />
-          {t('arbeidstid.stillingsplan.leggTilFunksjon')}
-        </button>
-        <Hjelp tema={t('arbeidstid.stillingsplan.funksjoner')}>
-          <p class="felt-hjelp">{t('arbeidstid.stillingsplan.funksjonerHjelp')}</p>
-        </Hjelp>
-      </div>
-    </Sammenleggbartkort>
-  );
 }
 
 export default function Stillingsplan() {
@@ -167,53 +62,81 @@ export default function Stillingsplan() {
       visLonn: false,
       lonn: nyLonnstilstand(),
       over60: false,
+      livsfase: 'ingen' as Livsfase,
+      /** Redusert undervisning i prosent, eller null for den største reduksjonen i tiltaket. */
+      livsfaseProsent: null as number | null,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
-      for (const f of lagret.funksjoner) nesteFunksjon = Math.max(nesteFunksjon, f.id + 1);
+      reserverFunksjonsider(lagret.funksjoner);
     },
   );
 
   // Bare utfylte grupper regnes med. Hver har med seg tilstanden, så navn og valg følger riktig gruppe.
   const fylte = s.grupper.map((g) => ({ g, inn: tilGruppe(g, rader, false) })).filter((x): x is { g: Gruppetilstand; inn: Gruppe } => x.inn !== null);
   const valgtIndeks = Math.max(0, fylte.findIndex((x) => x.g.id === s.timerIGruppe));
-  const funksjoner = s.funksjoner.filter((f) => f.prosent !== null).map((f) => ({ navn: f.navn, prosent: f.prosent ?? 0 }));
+  // Prosenten for hver funksjon, også dem som er oppgitt i årsrammetimer.
+  const prosenter = s.funksjoner.map((f) => {
+    const inn = tilFunksjon(f);
+    return inn ? (prov(() => funksjonsprosentFor(hent, inn)).resultat ?? 0) : 0;
+  });
+  const funksjoner = s.funksjoner.map(tilFunksjon).filter((f): f is Funksjon => f !== null);
+  // Redusert undervisning etter punkt 6: skrevet inn, eller den største reduksjonen i tiltaket.
+  const livsfasesatser = {
+    nyutdannet: useRegeltall(hent, livsfaseregler.nyutdannet),
+    fra57: useRegeltall(hent, livsfaseregler.fra57),
+    fra60: useRegeltall(hent, livsfaseregler.fra60),
+  };
+  const livsfaseMaks = s.livsfase === 'ingen' ? null : livsfasesatser[s.livsfase];
+  const reduksjon = s.livsfase === 'ingen' ? 0 : (s.livsfaseProsent ?? livsfaseMaks ?? 0);
+  const over60 = s.livsfase === 'fra60';
   const { resultat, feil } = prov(() =>
-    s.stilling !== null && s.stilling > 0 && (fylte.length > 0 || funksjoner.some((f) => f.prosent > 0))
-      ? beregnStillingsplan(hent, { stilling: s.stilling, grupper: fylte.map((x) => x.inn), funksjoner, timerIGruppe: fylte.length > 0 ? valgtIndeks : null })
+    s.stilling !== null && s.stilling > 0 && (fylte.length > 0 || prosenter.some((p) => p > 0) || reduksjon > 0)
+      ? beregnStillingsplan(hent, {
+          stilling: s.stilling,
+          grupper: fylte.map((x) => x.inn),
+          funksjoner,
+          timerIGruppe: fylte.length > 0 ? valgtIndeks : null,
+          reduksjon,
+        })
       : null,
   );
   // Fordelingen av arbeidstiden i stillingen vises alltid, også før noe er lagt inn: fagene, funksjonene og
   // den delen av stillingen som ikke er fylt ennå. Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
-  const sumFunksjoner = (utvid: boolean) => s.funksjoner.filter((f) => utvider(f) === utvid).reduce((sum, f) => sum + (f.prosent ?? 0), 0);
-  const utenUtvidelse = sumFunksjoner(false);
+  const sumFunksjoner = (utvid: boolean) => s.funksjoner.reduce((sum, f, i) => sum + (utvider(f) === utvid ? (prosenter[i] ?? 0) : 0), 0);
+  // Redusert undervisning utvider ikke planfestet tid: den frigjorte tiden erstatter undervisning i planfestet tid.
+  const utenUtvidelse = sumFunksjoner(false) + reduksjon;
   const harStilling = s.stilling !== null && s.stilling > 0;
   const fordeling =
     resultat || harStilling
     ? prov(() =>
         beregnFordeling(hent, {
-          undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn), ...(harStilling ? { stilling: s.stilling ?? 0 } : {}) },
+          grupper: fylte.map((x) => x.inn),
+          ...(harStilling ? { stilling: s.stilling ?? 0 } : {}),
           funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
           funksjonUtenUtvidelse: utenUtvidelse,
           moterPerUke: s.moter ?? 0,
+          over60,
         }),
       ).resultat
     : null;
+  const maksUke = useRegeltall(hent, 'sfs2213.planfestet_maks_uke');
+  const maksDag = useRegeltall(hent, 'sfs2213.planfestet_maks_dag');
+  const dagerPerUke = useRegeltall(hent, 'sfs2213.arbeidsdager_per_uke');
+  const ukegrenser = maksUke !== null && maksDag !== null && dagerPerUke !== null ? { maksUke, maksDag, dagerPerUke } : null;
   const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
   // Tillegg per funksjon. Forslaget er minstegodtgjøringen i SFS 2213 punkt 9.1 for funksjonen som er kjent igjen på
   // navnet, eller for kontaktlærer, som er den vanligste, når navnet ikke kjennes igjen. Brukeren kan skrive inn et annet beløp.
   const kontaktlaerer = useRegeltall(hent, 'sfs2213.godtgjoring_kontaktlaerer');
   const radgiver = useRegeltall(hent, 'sfs2213.godtgjoring_radgiver');
   const satser: Record<string, number | null> = { 'sfs2213.godtgjoring_kontaktlaerer': kontaktlaerer, 'sfs2213.godtgjoring_radgiver': radgiver };
-  const tilleggsforslag: Tilleggsforslag = (f) => {
-    const kjent = godtgjorteFunksjoner.find((g) => g.navn.test(f.navn));
-    const verdi = satser[(kjent ?? godtgjorteFunksjoner[0]).nokkel] ?? 0;
-    return { verdi, hjelp: t(kjent ? kjent.hjelp : 'arbeidstid.stillingsplan.tilleggUkjent', { kr: tallTekst(verdi) }) };
-  };
+  const kontaktlaererTimer = useRegeltall(hent, 'sfs2213.kontaktlaerer_reduksjon');
+  const arsrammeFunksjon = useRegeltall(hent, 'sfs2213.arsramme_funksjon');
+  const arsverk60 = useRegeltall(hent, 'sfs2213.arsverk_timer_60_ar');
   const tilleggene = s.funksjoner
     .map((f, i) => ({ f, i }))
     .filter(({ f }) => f.tillegg === true)
-    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f).verdi }));
+    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f, satser).verdi }));
   const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
 
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
@@ -228,7 +151,7 @@ export default function Stillingsplan() {
             tillegg,
             overtid:
               resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
-            over60: s.over60,
+            over60: s.over60 || over60,
           }),
         )
       : null;
@@ -243,7 +166,10 @@ export default function Stillingsplan() {
   const deler: Stolpedel[] = resultat
     ? [
         ...resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf((fylte[i] as { g: Gruppetilstand }).g) + 1 }), prosent: g.beskjeftigelse.verdi })),
-        ...funksjoner.filter((f) => f.prosent > 0).map((f, i) => ({ navn: f.navn || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), prosent: f.prosent, type: 'funksjon' as const })),
+        ...s.funksjoner
+          .map((f, i) => ({ navn: f.navn || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), prosent: prosenter[i] ?? 0, type: 'funksjon' as const }))
+          .filter((d) => d.prosent > 0),
+        ...(reduksjon > 0 ? [{ navn: t('arbeidstid.livsfase.redusert'), prosent: reduksjon, type: 'funksjon' as const }] : []),
       ]
     : [];
   const diff = resultat?.differanse.verdi ?? 0;
@@ -253,7 +179,7 @@ export default function Stillingsplan() {
 
   const hentVariant = (v: typeof s) => {
     reserverIder(v.grupper);
-    for (const f of v.funksjoner) nesteFunksjon = Math.max(nesteFunksjon, f.id + 1);
+    reserverFunksjonsider(v.funksjoner);
     sett(v);
   };
 
@@ -280,6 +206,7 @@ export default function Stillingsplan() {
                   rader={[
                     { navn: t('arbeidstid.resultat.undervisning'), verdi: medEnhet(t, resultat.undervisning.verdi, 'prosent') },
                     { navn: t('arbeidstid.resultat.funksjoner'), verdi: medEnhet(t, resultat.funksjon.verdi, 'prosent') },
+                    ...(resultat.reduksjon ? [{ navn: t('arbeidstid.livsfase.redusert'), verdi: medEnhet(t, resultat.reduksjon.verdi, 'prosent') }] : []),
                     { navn: t('arbeidstid.resultat.stillingsprosent'), verdi: medEnhet(t, resultat.stilling.verdi, 'prosent') },
                   ]}
                 />
@@ -336,7 +263,7 @@ export default function Stillingsplan() {
           )}
           {fordeling && (
             <>
-              <Fordelingsvisning resultat={fordeling}>
+              <Fordelingsvisning resultat={fordeling} {...(ukegrenser ? { uke: ukegrenser } : {})}>
                 {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
                 {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
                 {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
@@ -376,7 +303,16 @@ export default function Stillingsplan() {
           />
         </>
       }
+      etter={
+        <>
+          <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
+          {fordelingsdeler.map((d) => (
+            <BrukAvDel key={d} id={d} />
+          ))}
+        </>
+      }
     >
+      <p class="merknad merknad-liten">{t('arbeidstid.stillingsplan.illustrasjon')}</p>
       <Tallfelt
         class="felt-kompakt"
         etikett={t('arbeidstid.stillingsplan.stilling')}
@@ -396,7 +332,23 @@ export default function Stillingsplan() {
         delresultater={delresultater}
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
-      <Funksjoner funksjoner={s.funksjoner} tillegg={s.visLonn ? tilleggsforslag : null} onEndring={(f) => sett({ ...s, funksjoner: f })} />
+      <Funksjoner
+        funksjoner={s.funksjoner}
+        prosenter={prosenter}
+        satser={satser}
+        visTillegg={s.visLonn}
+        kontaktlaererTimer={kontaktlaererTimer}
+        arsrammeFunksjon={arsrammeFunksjon}
+        onEndring={(f) => sett({ ...s, funksjoner: f })}
+      />
+      <Livsfasekort
+        livsfase={s.livsfase}
+        prosent={s.livsfaseProsent}
+        maks={livsfaseMaks}
+        satser={livsfasesatser}
+        arsverk60={arsverk60}
+        onEndring={(livsfase, livsfaseProsent) => sett({ ...s, livsfase, livsfaseProsent })}
+      />
       <Sammenleggbartkort
         nokkel="moter-og-lonn"
         tittel={t('arbeidstid.stillingsplan.tillegg')}
@@ -418,7 +370,11 @@ export default function Stillingsplan() {
         {s.visLonn && (
           <>
             <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
-            <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+            {over60 ? (
+              <p class="felt-hjelp">{t('arbeidstid.livsfase.feriepenger60')}</p>
+            ) : (
+              <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(v) => sett({ ...s, over60: v })} />
+            )}
             <p class="felt-hjelp">{t('arbeidstid.stillingsplan.tilleggHint')}</p>
           </>
         )}

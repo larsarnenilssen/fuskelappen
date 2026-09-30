@@ -17,13 +17,17 @@ interface Props {
   plassholder?: string;
   /** Skjul etiketten visuelt (den leses fortsatt av skjermlesere). Bare når enheten eller en bryter ved siden av viser hva feltet er. */
   skjultEtikett?: boolean;
+  /** Vis tallet med mellomrom som tusenskille, f.eks. «600 000» for kronebeløp. Tallet formateres når brukeren forlater feltet. */
+  tusenskille?: boolean;
   class?: string;
 }
 
-export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks, plassholder, skjultEtikett = false, class: klasse }: Props) {
+export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks, plassholder, skjultEtikett = false, tusenskille = false, class: klasse }: Props) {
   const { t } = useTekst();
   const id = useId();
-  const [tekst, settTekst] = useState(verdi === null ? '' : formaterTall(verdi, 4).replace(/\s/g, ''));
+  // Mellomrom godtas når tallet tolkes, så et formatert tall kan redigeres som det står.
+  const vis = (v: number) => (tusenskille ? formaterTall(v, 4) : formaterTall(v, 4).replace(/\s/g, ''));
+  const [tekst, settTekst] = useState(verdi === null ? '' : vis(verdi));
   const [feil, settFeil] = useState<string | null>(null);
 
   // Verdien kan endres utenfra, f.eks. når årstimer fylles inn fra et valgt fag. Da vises den nye verdien,
@@ -32,7 +36,7 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
     const tolket = tolkTall(tekst, { ...(min !== undefined ? { min } : {}), ...(maks !== undefined ? { maks } : {}) });
     const vist = tolket.ok ? tolket.verdi : null;
     if (vist !== verdi && !(verdi === null && !tolket.ok)) {
-      settTekst(verdi === null ? '' : formaterTall(verdi, 4).replace(/\s/g, ''));
+      settTekst(verdi === null ? '' : vis(verdi));
       settFeil(null);
     }
   }, [verdi]);
@@ -70,6 +74,10 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
           aria-invalid={feil ? true : undefined}
           aria-describedby={beskrivelser || undefined}
           onInput={(e) => vedEndring(e.currentTarget.value)}
+          onBlur={() => {
+            // Tusenskille settes inn når brukeren er ferdig med feltet, ikke mens det skrives.
+            if (tusenskille && verdi !== null && !feil) settTekst(vis(verdi));
+          }}
         />
         {enhet && (
           <span class="tallfelt-enhet" aria-hidden="true">

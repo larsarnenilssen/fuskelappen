@@ -116,7 +116,7 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 
 - [ ] Beskjeftigelse: søk etter fag på navn, kallenavn (R1, 2P) og koder (ENG, BAT, HEA). Prøv ett fag, et fag merket * med «15 eller færre elever», to fag, og en blandet gruppe.
 - [ ] Søkeordene: kallenavn og koder står i `rules/sfs2213/fagsok-2026-2027.yaml`. Se særlig over tabellen som kobler programnavnene i vedlegg 1 til utdanningsprogrammene.
-- [ ] Periodebeskjeftigelse, vikartimer (ansatt og timevikar), planfestet tid (20 % og 80 %), overtid og fordeling.
+- [ ] Periodebeskjeftigelse (også økter per uke med uker regnet ut fra dagene), vikartimer (ansatt og timevikar) og overtid.
 - [ ] Årstimer: velg noen fag og se at riktig årstimetall fylles inn. Tabellen står i `rules/sfs2213/arstimer-2026-2027.yaml`, med fagkodene i Grep.
 - [ ] Programfag: søk på en fagkode (f.eks. HEA2005) og se at årstimetallet fra Udir stemmer.
 - [ ] Lagrede varianter: lagre, endre og hent fram igjen.
@@ -124,7 +124,10 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Arbeidsplan: se at diagrammet over arbeidstiden stemmer, og prøv «Regn ut lønn» med garantilønn og egen lønn, med tillegg og med overtid over 100 %.
 - [ ] Regelverdiene for godtgjøring i SFS 2213 punkt 9.1: 12 000 kr for kontaktlærer og for rådgiver/sosiallærer (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Arbeidsplan: slå av «Utvider planfestet tid» for en funksjon på 20 % i hel stilling. Planfestet tid skal da bli 1150 timer, ikke 1257,5.
-- [ ] Fordeling: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår.
+- [ ] Arbeidsplan: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår. 20 % og 80 % funksjon skal gi 1257,5 og 1580 timer planfestet tid.
+- [ ] Arbeidsplan: kontaktlærer i årsrammetimer (28,5 = 4,69 %), og redusert undervisning for nyutdannet, 57 år og 60 år (60 år gir årsverk 1650 og høyere feriepengesats).
+- [ ] Regelverdiene for livsfasetiltak i punkt 6: 6 %, 6 % og 12,5 % (`rules/sfs2213/2026-2027.yaml`).
+- [ ] Skriv ut Arbeidsplan eller lagre som PDF fra knappen ved tittelen.
 - [ ] PC/Mac: prøv «Vis stort» på diagrammet og «Åpne i nytt vindu» ved tittelen.
 - [ ] Lukk og åpne kortene i Arbeidsplan med et trykk på overskriften. Se at oppsummeringene er nyttige.
 - [ ] Trykk «Vis utregning» og «Slik regnes det ut». Er metoden og formlene forståelige og riktige?
@@ -133,6 +136,6 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 **Tekstene:**
 
 - [ ] Begrepene under Oppslag → Begreper, på bokmål og nynorsk.
-- [ ] «Hva tiden brukes til» under Fordeling, særlig «Annen planfestet tid og annet elevrettet arbeid».
+- [ ] «Hva tiden brukes til» under Arbeidsplan, særlig «Annen planfestet tid og annet elevrettet arbeid».
 
 Skriv til Claude hva som er riktig, og hva som må endres.
