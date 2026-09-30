@@ -9,4 +9,6 @@
 - `beregnPlanfestet` er beholdt fordi fasittestene 005–007 bruker den. Den gir samme planfestede tid som fordelingen for hel stilling.
 - Redusert undervisning (punkt 6) regnes som en funksjon som ikke utvider planfestet tid, for alle tre tiltak (eier 30.09.2026). For 57-åringer sier forklaringen at regelen er brukt uten at avtalen sier det uttrykkelig.
 
+- Arbeidsplan har fått id og adresse `arbeidsplan` (tidligere `stillingsplan`, avgjørelse 012), også uten videresending. Beregningen heter fortsatt `beregnStillingsplan`, fordi fasittestene 011–014 bruker den, og «stillingsplan» er det faglige begrepet for det som regnes ut.
+
 **Konsekvens:** Fem kalkulatorer: Arbeidsplan, beskjeftigelse, periodebeskjeftigelse, vikartimer og overtid. Lagrede varianter for de fjernede kalkulatorene vises ikke lenger.

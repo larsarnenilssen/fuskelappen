@@ -36,7 +36,7 @@ test.describe('ingen horisontal overflyt i 320–430 px', () => {
 test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ page }, info) => {
   test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
   await page.setViewportSize({ width: 320, height: 740 });
-  await page.goto('./#/arbeidstid/stillingsplan');
+  await page.goto('./#/arbeidstid/arbeidsplan');
   await venterPaaSide(page);
   await page.getByLabel('Fag', { exact: true }).fill('engelsk stud vg1');
   await page.locator('.fagtreff button').first().click();

@@ -39,7 +39,7 @@ export default function Beskjeftigelse() {
               <Utregningskort tittel={tittel} resultat={resultat.sum} trinn={resultat.trinn}>
                 <Stillingsmaaler deler={resultat.grupper.map((g, i) => ({ navn: t('arbeidstid.felles.gruppe', { nr: i + 1 }), prosent: g.beskjeftigelse.verdi }))} />
               </Utregningskort>
-              <a class="lenke-pil" href="#/arbeidstid/stillingsplan" onClick={() => overforSkjema('stillingsplan', { grupper })}>
+              <a class="lenke-pil" href="#/arbeidstid/arbeidsplan" onClick={() => overforSkjema('arbeidsplan', { grupper })}>
                 {t('arbeidstid.felles.fortsettArbeidsplan')}
                 <Ikon navn="hoyre" class="ikon-liten" />
               </a>

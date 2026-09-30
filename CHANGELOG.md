@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.6.1] – 2026-09-30
+
+### Lagt til
+
+- Begrepene «Livsfasetiltak (redusert undervisning)», «Kontaktlærer» og «Godtgjøring for funksjoner».
+
+### Endret
+
+- Arbeidsplan har adressen `#/arbeidstid/arbeidsplan` (tidligere `#/arbeidstid/stillingsplan`). Lagrede varianter fra den gamle adressen vises ikke.
+
 ## [0.6.0] – 2026-09-30
 
 Arbeidsplan samler fordeling og planfestet tid, med redusert undervisning, funksjoner i årsrammetimer og utskrift.

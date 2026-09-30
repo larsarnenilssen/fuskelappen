@@ -10,7 +10,7 @@ import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsra
 import { Metode } from './Metode.tsx';
 import { aapneINyttVindu } from '../kontekst.ts';
 
-export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'overtid';
+export type KalkulatorId = 'arbeidsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'overtid';
 
 /**
  * Kalkulatorsiden: skjemaet (children) og resultatet. På bred skjerm står resultatet i en egen kolonne til høyre,

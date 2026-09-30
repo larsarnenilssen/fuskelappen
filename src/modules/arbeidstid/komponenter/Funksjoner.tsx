@@ -48,8 +48,8 @@ export function tilFunksjon(f: Funksjonstilstand): Funksjon | null {
 
 /** Funksjoner med fast minstegodtgjøring i SFS 2213 punkt 9.1, kjent igjen på navnet brukeren har gitt funksjonen. */
 const godtgjorteFunksjoner = [
-  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i, hjelp: 'arbeidstid.stillingsplan.tilleggKontaktlaerer' },
-  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i, hjelp: 'arbeidstid.stillingsplan.tilleggRadgiver' },
+  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i, hjelp: 'arbeidstid.arbeidsplan.tilleggKontaktlaerer' },
+  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i, hjelp: 'arbeidstid.arbeidsplan.tilleggRadgiver' },
 ] as const;
 
 /**
@@ -59,7 +59,7 @@ const godtgjorteFunksjoner = [
 export function tilleggsforslag(f: Funksjonstilstand, satser: Readonly<Record<string, number | null>>): { verdi: number; hjelp: Tekstnokkel } {
   const kjent = godtgjorteFunksjoner.find((g) => g.navn.test(f.navn));
   const verdi = satser[(kjent ?? godtgjorteFunksjoner[0]).nokkel] ?? 0;
-  return { verdi, hjelp: kjent ? kjent.hjelp : 'arbeidstid.stillingsplan.tilleggUkjent' };
+  return { verdi, hjelp: kjent ? kjent.hjelp : 'arbeidstid.arbeidsplan.tilleggUkjent' };
 }
 
 export function Funksjoner({
@@ -87,12 +87,12 @@ export function Funksjoner({
   const { t } = useTekst();
   const id = useId();
   const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
-  const nr = (i: number) => t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 });
+  const nr = (i: number) => t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 });
   return (
     <Sammenleggbartkort
       nokkel="funksjoner"
-      tittel={t('arbeidstid.stillingsplan.funksjoner')}
-      oppsummering={t('arbeidstid.stillingsplan.funksjonerOppsummering', {
+      tittel={t('arbeidstid.arbeidsplan.funksjoner')}
+      oppsummering={t('arbeidstid.arbeidsplan.funksjonerOppsummering', {
         antall: funksjoner.length,
         prosent: tallTekst(prosenter.reduce((sum, p) => sum + p, 0)),
       })}
@@ -104,14 +104,14 @@ export function Funksjoner({
         return (
           <div key={f.id} class="inndatarad funksjonsrad">
             <label class="skjult-visuelt" for={`${id}-${f.id}`}>
-              {`${nr(i)}: ${t('arbeidstid.stillingsplan.funksjonNavn')}`}
+              {`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonNavn')}`}
             </label>
             <input
               id={`${id}-${f.id}`}
               class="tekstfelt"
               type="text"
               autoComplete="off"
-              placeholder={t('arbeidstid.stillingsplan.funksjonNavnPlassholder')}
+              placeholder={t('arbeidstid.arbeidsplan.funksjonNavnPlassholder')}
               value={f.navn}
               onInput={(e) => sett(f.id, { navn: e.currentTarget.value })}
             />
@@ -120,7 +120,7 @@ export function Funksjoner({
                 key="timer"
                 class="felt-kompakt"
                 skjultEtikett
-                etikett={`${nr(i)}: ${t('arbeidstid.stillingsplan.funksjonTimer')}`}
+                etikett={`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonTimer')}`}
                 verdi={f.timer ?? null}
                 min={0}
                 maks={1000}
@@ -131,7 +131,7 @@ export function Funksjoner({
                 key="prosent"
                 class="felt-kompakt"
                 skjultEtikett
-                etikett={`${nr(i)}: ${t('arbeidstid.stillingsplan.funksjonProsent')}`}
+                etikett={`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonProsent')}`}
                 verdi={f.prosent}
                 min={0}
                 maks={100}
@@ -139,40 +139,40 @@ export function Funksjoner({
               />
             )}
             <Bryter
-              legend={`${nr(i)}: ${t('arbeidstid.stillingsplan.funksjonEnhet')}`}
+              legend={`${nr(i)}: ${t('arbeidstid.arbeidsplan.funksjonEnhet')}`}
               skjultLegend
               kompakt
               verdi={f.enhet ?? 'prosent'}
               valg={[
                 { verdi: 'prosent', tekst: '%' },
-                { verdi: 'arsrammetimer', tekst: t('arbeidstid.stillingsplan.enhetTimer') },
+                { verdi: 'arsrammetimer', tekst: t('arbeidstid.arbeidsplan.enhetTimer') },
               ]}
               onEndring={(enhet) => sett(f.id, { enhet })}
             />
-            <button type="button" class="ikonknapp" aria-label={t('arbeidstid.stillingsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring(funksjoner.filter((x) => x.id !== f.id))}>
+            <button type="button" class="ikonknapp" aria-label={t('arbeidstid.arbeidsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring(funksjoner.filter((x) => x.id !== f.id))}>
               <Ikon navn="lukk" class="ikon-liten" />
             </button>
             {iTimer(f) && (prosenter[i] ?? 0) > 0 && (
-              <p class="felt-hjelp funksjon-linje">{t('arbeidstid.stillingsplan.timerSomProsent', { arsramme: tallTekst(arsrammeFunksjon ?? 0), prosent: tallTekst(prosenter[i] ?? 0) })}</p>
+              <p class="felt-hjelp funksjon-linje">{t('arbeidstid.arbeidsplan.timerSomProsent', { arsramme: tallTekst(arsrammeFunksjon ?? 0), prosent: tallTekst(prosenter[i] ?? 0) })}</p>
             )}
             {kontaktlaererHint && (
               <p class="felt-hjelp funksjon-linje">
-                {t('arbeidstid.stillingsplan.kontaktlaererHint', { timer: tallTekst(kontaktlaererTimer ?? 0) })}{' '}
+                {t('arbeidstid.arbeidsplan.kontaktlaererHint', { timer: tallTekst(kontaktlaererTimer ?? 0) })}{' '}
                 <button type="button" class="lenkeknapp liten" onClick={() => sett(f.id, { enhet: 'arsrammetimer', timer: kontaktlaererTimer })}>
-                  {t('arbeidstid.stillingsplan.kontaktlaererBruk', { timer: tallTekst(kontaktlaererTimer ?? 0) })}
+                  {t('arbeidstid.arbeidsplan.kontaktlaererBruk', { timer: tallTekst(kontaktlaererTimer ?? 0) })}
                 </button>
               </p>
             )}
-            <Vippe tekst={t('arbeidstid.stillingsplan.utvider')} skjultForan={`${nr(i)}:`} pa={utvider(f)} onEndring={(pa) => sett(f.id, { utvider: pa })} />
+            <Vippe tekst={t('arbeidstid.arbeidsplan.utvider')} skjultForan={`${nr(i)}:`} pa={utvider(f)} onEndring={(pa) => sett(f.id, { utvider: pa })} />
             {visTillegg && (
-              <Vippe tekst={t('arbeidstid.stillingsplan.tilleggVippe')} skjultForan={`${nr(i)}:`} pa={f.tillegg === true} onEndring={(pa) => sett(f.id, { tillegg: pa })} />
+              <Vippe tekst={t('arbeidstid.arbeidsplan.tilleggVippe')} skjultForan={`${nr(i)}:`} pa={f.tillegg === true} onEndring={(pa) => sett(f.id, { tillegg: pa })} />
             )}
             {visTillegg && f.tillegg && (
               <Tallfelt
                 class="felt-kompakt funksjon-tillegg"
-                etikett={t('arbeidstid.stillingsplan.tilleggFelt', { nr: i + 1 })}
+                etikett={t('arbeidstid.arbeidsplan.tilleggFelt', { nr: i + 1 })}
                 tusenskille
-                hjelpetekst={f.tilleggKr == null ? t(forslag.hjelp, { kr: tallTekst(forslag.verdi) }) : t('arbeidstid.stillingsplan.tilleggEget')}
+                hjelpetekst={f.tilleggKr == null ? t(forslag.hjelp, { kr: tallTekst(forslag.verdi) }) : t('arbeidstid.arbeidsplan.tilleggEget')}
                 enhet="kr"
                 verdi={f.tilleggKr ?? forslag.verdi}
                 min={0}
@@ -186,10 +186,10 @@ export function Funksjoner({
       <div class="med-hjelp">
         <button type="button" class="lenkeknapp liten" onClick={() => onEndring([...funksjoner, nyFunksjon()])}>
           <Ikon navn="pluss" class="ikon-liten" />
-          {t('arbeidstid.stillingsplan.leggTilFunksjon')}
+          {t('arbeidstid.arbeidsplan.leggTilFunksjon')}
         </button>
-        <Hjelp tema={t('arbeidstid.stillingsplan.funksjoner')}>
-          <p class="felt-hjelp">{t('arbeidstid.stillingsplan.funksjonerHjelp')}</p>
+        <Hjelp tema={t('arbeidstid.arbeidsplan.funksjoner')}>
+          <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.funksjonerHjelp')}</p>
         </Hjelp>
       </div>
     </Sammenleggbartkort>

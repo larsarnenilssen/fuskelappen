@@ -230,3 +230,41 @@
   kontrollert: null
   stikkord: [stillingsplan, undertid, overtid, differanse]
   relatert: [beskjeftigelse, arsramme]
+
+- id: livsfasetiltak
+  type: begrep
+  tittel: { nb: Livsfasetiltak (redusert undervisning), nn: Livsfasetiltak (redusert undervisning) }
+  tekst:
+    nb: Lærere har rett til å få redusert undervisningen med inntil 6 % det første yrkesåret etter fullført faglig og pedagogisk utdanning, inntil 6 % fra det kalenderåret de fyller 57 år, og inntil 12,5 % fra det kalenderåret de fyller 60 år. For nyutdannede og lærere over 60 år legges den frigjorte tiden i planfestet tid til for- og etterarbeid og faglig ajourføring, med mindre partene blir enige om noe annet. For lærere som er 60 år og eldre er årsverket 1650 timer.
+    nn: Lærarar har rett til å få redusert undervisninga med inntil 6 % det første yrkesåret etter fullført fagleg og pedagogisk utdanning, inntil 6 % frå det kalenderåret dei fyller 57 år, og inntil 12,5 % frå det kalenderåret dei fyller 60 år. For nyutdanna og lærarar over 60 år blir den frigjorde tida lagd i planfesta tid til før- og etterarbeid og fagleg ajourføring, om ikkje partane blir samde om noko anna. For lærarar som er 60 år og eldre er årsverket 1650 timar.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "4" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "6" }
+  kontrollert: null
+  stikkord: [redusert undervisning, seniorredusering, seniortiltak, nyutdannet, 57 år, 60 år]
+  relatert: [arsverk, planfestet-arbeidstid, beskjeftigelse]
+
+- id: kontaktlaerer
+  type: begrep
+  tittel: { nb: Kontaktlærer, nn: Kontaktlærar }
+  tekst:
+    nb: En lærer som utfører kontaktlærertjeneste i videregående opplæring, får redusert årsrammen for undervisning med minst 28,5 årsrammetimer (38 i 45-minutters enheter). For lærere med redusert undervisning på grunn av funksjon brukes årsrammen 607,5, så 28,5 årsrammetimer tilsvarer 4,69 % av en hel stilling. I tillegg gis det minst 12 000 kroner i året i godtgjøring for kontaktlærertjenesten.
+    nn: Ein lærar som utfører kontaktlærarteneste i vidaregåande opplæring, får redusert årsramma for undervisning med minst 28,5 årsrammetimar (38 i 45-minutts einingar). For lærarar med redusert undervisning på grunn av funksjon blir årsramma 607,5 brukt, så 28,5 årsrammetimar svarar til 4,69 % av ei heil stilling. I tillegg blir det gitt minst 12 000 kroner i året i godtgjering for kontaktlærartenesta.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
+    - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+  kontrollert: null
+  stikkord: [kontaktlærertjeneste, funksjon, reduksjon, "28,5 årsrammetimer"]
+  relatert: [andre-arbeidsoppgaver, funksjonsgodtgjoring, arsramme]
+
+- id: funksjonsgodtgjoring
+  type: begrep
+  tittel: { nb: Godtgjøring for funksjoner, nn: Godtgjering for funksjonar }
+  tekst:
+    nb: Lærere som har midlertidige funksjonsoppgaver, kan få et kronetillegg per år eller måned så lenge de har oppgavene. Tillegget kommer i tillegg til lønnen og er pensjonsgivende. Godtgjøringen fastsettes i forhandlinger. Avtalen setter minst 12 000 kroner i året for kontaktlærertjeneste og for rådgiver- eller sosiallærertjeneste. Godtgjøring for andre funksjoner fastsettes lokalt.
+    nn: Lærarar som har mellombelse funksjonsoppgåver, kan få eit kronetillegg per år eller månad så lenge dei har oppgåvene. Tillegget kjem i tillegg til løna og er pensjonsgivande. Godtgjeringa blir fastsett i forhandlingar. Avtalen set minst 12 000 kroner i året for kontaktlærarteneste og for rådgivar- eller sosiallærarteneste. Godtgjering for andre funksjonar blir fastsett lokalt.
+  kilder: [{ id: ks-sfs2213-avtaletekst, punkt: "9.1" }]
+  kontrollert: null
+  stikkord: [funksjonstillegg, tillegg, kronetillegg, godtgjørelse, rådgiver, sosiallærer]
+  relatert: [kontaktlaerer, andre-arbeidsoppgaver, lokale-forhandlinger]
