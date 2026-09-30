@@ -1,0 +1,128 @@
+{
+ "kode": "BLD03-03",
+ "tittel": "Læreplan i vg3 blomsterdekoratørfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-05-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV597",
+   "tittel": "Kompetansemål og vurdering vg3 blomsterdekoratørfaget",
+   "fag": [
+    "BLD3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6884",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere eige blomsterarbeid"
+    },
+    {
+     "kode": "KM6904",
+     "tekst": "utarbeide og vidareutvikle skisser for hand og med digitale ressursar"
+    },
+    {
+     "kode": "KM6903",
+     "tekst": "nytte analysar, stilform, komposisjonsprinsipp, teknikkar og materiale for å skape eit heilskapleg uttrykk"
+    },
+    {
+     "kode": "KM6902",
+     "tekst": "utforske stillære og ulike trendar og tilpasse blomsterdekor etter kva behov kunden har"
+    },
+    {
+     "kode": "KM6901",
+     "tekst": "utforske, utvikle og designe faglege produkt og grunngi val av stilform og uttrykk og knyte det til analysar av rom, anledning og person"
+    },
+    {
+     "kode": "KM6900",
+     "tekst": "gjere greie for kulturuttrykk i ulike kulturar og religionar og tilpasse dette i blomsterdekor i ulike stilartar"
+    },
+    {
+     "kode": "KM6899",
+     "tekst": "analysere og tolke ulike oppdrag og gjere estetiske, miljøvennlege og berekraftige faglege val, i tråd med ønska og behova til kunden"
+    },
+    {
+     "kode": "KM6898",
+     "tekst": "bruke formålstenlege handverksteknikkar og verktøy og grunngi eigne tekniske val knytte til kor haldbare materiala er og stil og uttrykk for produktet"
+    },
+    {
+     "kode": "KM6897",
+     "tekst": "utforske og eksperimentere med ulike handverksteknikkar, verktøy og materiale og bruke denne kunnskapen som inspirasjon i eige arbeid"
+    },
+    {
+     "kode": "KM6896",
+     "tekst": "vurdere botanisk materiale i produksjon ut frå eigenskapane og kvaliteten på materialet og grunngi eigne val knytte til ordre og stil og uttrykk for produktet"
+    },
+    {
+     "kode": "KM6905",
+     "tekst": "nytte overslag og budsjett for å berekne materiale til produkt ut frå tidsbruk, innkjøp og lønnsemd"
+    },
+    {
+     "kode": "KM6906",
+     "tekst": "vurdere korleis varelager, vareflyt, orden og tidsbruk påverkar økonomien i bedrifta og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM6895",
+     "tekst": "vurdere, bestille og bruke ulike botaniske materiale og støttemateriell i eige arbeid og gjere greie for konsekvensane av ulike val, med utgangspunkt i ein etisk og miljøvennleg produksjon i eit lokalt, nasjonalt og globalt perspektiv"
+    },
+    {
+     "kode": "KM6893",
+     "tekst": "nytte teknikkar som bidreg til berekraftig ressursutnytting, og vurdere gjenbruk, avfallshandtering og miljøpåverknad av materiale"
+    },
+    {
+     "kode": "KM6892",
+     "tekst": "gjere greie for opphav, naturleg sesong og stell for eit breitt utval av botaniske materiale og bruke denne kunnskapen i kommunikasjon med kundar og i praktisk arbeid"
+    },
+    {
+     "kode": "KM6891",
+     "tekst": "gjere greie for og nytte tiltak mot sjukdommar på stoveplanter"
+    },
+    {
+     "kode": "KM6890",
+     "tekst": "gjere greie for korleis kulde, varme, støyt og feilvatning skader blomstrar og planter, og vurdere korleis dette kan førebyggjast"
+    },
+    {
+     "kode": "KM6889",
+     "tekst": "nytte digitale ressursar til idéprosessen, dokumentasjonen og presentasjonen av eige arbeid"
+    },
+    {
+     "kode": "KM6888",
+     "tekst": "presentere blomsterprodukt ved å nytte vareeksponering og utstillingar"
+    },
+    {
+     "kode": "KM6887",
+     "tekst": "nytte formålstenlege kommunikasjonsformer og strategiar i møte med kundar, kollegaer, leverandørar og andre samarbeidspartnarar"
+    },
+    {
+     "kode": "KM6886",
+     "tekst": "rettleie og formidle informasjon om blomsterfaglege produkt og tenester til kundar"
+    },
+    {
+     "kode": "KM6885",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM6894",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 blomsterdekoratørfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 blomsterdekoratørfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 blomsterdekoratørfaget skal avsluttast med ein fagprøve. Alle skal opp til fagprøven, som skal gjennomførast innanfor ei tidsramme på tolv til fjorten vyrkedagar"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,147 @@
+{
+ "kode": "KDA06-02",
+ "tittel": "Læreplan i foto og grafikk",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV578",
+   "tittel": "Kompetansemål og vurdering Foto og grafikk 1",
+   "fag": [
+    "KDA6Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6667",
+     "tekst": "eksperimentere analogt og digitalt med biletmediet i ulike verktøy, og reflektere over resultatet"
+    },
+    {
+     "kode": "KM6653",
+     "tekst": "gjere greie for bruk av visuelle verkemiddel i arbeid med foto og grafikk og bruke det i eige uttrykk"
+    },
+    {
+     "kode": "KM6668",
+     "tekst": "utforske ulike stilretningar og etniske kulturuttrykk, og bruke dette som inspirasjon for eige arbeid"
+    },
+    {
+     "kode": "KM6669",
+     "tekst": "utforske korleis ulike kamerainnstillingar påverkar estetikken, og nytte dei som verkemiddel i visuell historieforteljing"
+    },
+    {
+     "kode": "KM6666",
+     "tekst": "presentere og montere eigne og andre sine arbeid i fysiske og digitale utstillingsrom"
+    },
+    {
+     "kode": "KM6664",
+     "tekst": "bruke ny og etablert teknologi og programvare i skapande prosessar"
+    },
+    {
+     "kode": "KM6663",
+     "tekst": "utforske ulike biletsjangrar og bruke erfaringa til å kommunisere stemning, bodskap og meining"
+    },
+    {
+     "kode": "KM6670",
+     "tekst": "analysere komposisjon, skrift og layout i visuelle ytringar, og bruke dette i planlegging og utvikling av eige arbeid"
+    },
+    {
+     "kode": "KM6665",
+     "tekst": "reflektere over reglar for kjeldebruk, opphavsrett og kreditering, og følgje desse i eige arbeid"
+    },
+    {
+     "kode": "KM6662",
+     "tekst": "bruke materiale, verktøy og utstyr i tråd med retningslinjer for helse, miljø og sikkerheit"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i foto og grafikk 1. Elevane viser og utviklar kompetanse i faget når dei gjennom skapande prosessar arbeider med og formidlar eigne biletuttrykk. Vidare viser og utviklar elevane kompetanse når dei hentar inspirasjon frå kulturelle og samfunnsaktuelle kjelder og utforskar og vurderer medium og visuelle uttrykk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme oppgåver som fremjar kreativitet, individuelt særpreg og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i foto og grafikk 1, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av kunnskap og ferdigheiter i arbeidet med foto og grafiske uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i foto og grafikk 1. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer utføring, forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i foto og grafikk 1 basert på kompetansen eleven har vist gjennom varierte praktiske og utforskande prosessar."
+   ]
+  },
+  {
+   "kode": "KV579",
+   "tittel": "Kompetansemål og vurdering Foto og grafikk 2",
+   "fag": [
+    "KDA6Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6657",
+     "tekst": "fortelje ei historie analogt og digitalt gjennom å utforske potensialet i biletmediet og reflektere over resultatet"
+    },
+    {
+     "kode": "KM6660",
+     "tekst": "utforske visuelle verkemiddel i arbeid med foto og grafiske uttrykk og reflektere over korleis verkemiddel er brukte"
+    },
+    {
+     "kode": "KM6659",
+     "tekst": "eksperimentere med ulike fotografiske uttrykk i arbeid med visuell historieforteljing"
+    },
+    {
+     "kode": "KM6658",
+     "tekst": "analysere arbeid frå ulike biletsjangrar, stilretningar og etniske grupper, og bruke element frå dette i eige arbeid"
+    },
+    {
+     "kode": "KM6656",
+     "tekst": "eksperimentere med publisering og visningsrom i presentasjon av eige og andre sitt arbeid"
+    },
+    {
+     "kode": "KM6654",
+     "tekst": "kombinere ulike teknologiar, programvarer og medium i utvikling av eige arbeid"
+    },
+    {
+     "kode": "KM6661",
+     "tekst": "drøfte bruk av komposisjon, skrift og layout i visuelle ytringar og kommunisere stemning, ulike bodskapar og meining ved hjelp av ulike verkemiddel"
+    },
+    {
+     "kode": "KM6655",
+     "tekst": "gjere greie for lov om opphavsrett, åndsverkslova og etiske omsyn rundt personvern og følgje dei i eige arbeid"
+    },
+    {
+     "kode": "KM6671",
+     "tekst": "følgje retningslinjer for helse, miljø og sikkerheit i arbeid med materiale, verktøy og utstyr"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i foto og grafikk 2. Elevane viser og utviklar kompetanse i faget når dei gjennom skapande praktiske prosessar utviklar og formidlar eigne tankar og idear i ulike biletuttrykk. Dei viser og utviklar òg kompetanse når dei bruker fagspråk og presenterer, reflekterer over, vurderer og utforskar uttrykk, meining, teknikkar og materiale. Vidare viser og utviklar elevane kompetanse når dei arbeider med og ser samanhengen mellom innhald, uttrykk og kontekst i kunst, medium og visuelle uttrykk, og når dei bruker kulturelle og samfunnsaktuelle kjelder i eige arbeid.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte oppgåver som fremjar kreativitet, individuelt særpreg og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i foto og grafikk 2, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av kunnskap og ferdigheiter i arbeidet med foto og grafiske uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i foto og grafikk 2. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer utføring, forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i foto og grafikk 2 basert på kompetansen eleven har vist gjennom varierte, praktiske og skapande prosessar og gjennom presentasjon og visuell formidling av eigne arbeid av foto og grafiske uttrykk"
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Foto og grafikk 1: Eleven skal ha éin standpunktkarakter.\nFoto og grafikk 2: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Foto og grafikk 1: Eleven kan bli trekt ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.\nFoto og grafikk 2: Eleven kan bli trekt ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Foto og grafikk 1: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nFoto og grafikk 2: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

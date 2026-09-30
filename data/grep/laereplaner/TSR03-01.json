@@ -1,0 +1,104 @@
+{
+ "kode": "TSR03-01",
+ "tittel": "Læreplan i vg3 tekstilrensfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV711",
+   "tittel": "Kompetansemål og vurdering vg3 tekstilrensfaget",
+   "fag": [
+    "TSR3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9248",
+     "tekst": "forstå og forklare betydningen av vedlikeholdsmerkingen"
+    },
+    {
+     "kode": "KM9234",
+     "tekst": "kartlegge behov og identifisere oppdrag i samarbeid med kunder og informere om konsekvenser og kostnader ved forskjellige rengjørings- og etterbehandlingsmetoder"
+    },
+    {
+     "kode": "KM9247",
+     "tekst": "planlegge og gjennomføre sortering, forbehandling og rens av tekstiler"
+    },
+    {
+     "kode": "KM9235",
+     "tekst": "drøfte og begrunne valg av renseprogram"
+    },
+    {
+     "kode": "KM9246",
+     "tekst": "identifisere og beskrive avvik på maskiner og foreslå tiltak"
+    },
+    {
+     "kode": "KM9244",
+     "tekst": "bruke og oppbevare kjemikalier og farlig avfall i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM9243",
+     "tekst": "utføre arbeid i samsvar med gjeldende regelverk for helse, miljø og sikkerhet og bedriftens prosedyrer for vedlikehold og hygiene"
+    },
+    {
+     "kode": "KM9249",
+     "tekst": "gjøre rede for og bruke riktig arbeidsstilling for å forebygge belastningsskader"
+    },
+    {
+     "kode": "KM9242",
+     "tekst": "gjøre rede for hvordan bedriftens maskiner fungerer, og vedlikeholde dem"
+    },
+    {
+     "kode": "KM9237",
+     "tekst": "utføre detasjering, omrens og våtbehandling"
+    },
+    {
+     "kode": "KM9240",
+     "tekst": "gjøre rede for og bruke ulike metoder og teknikker for finishering"
+    },
+    {
+     "kode": "KM9239",
+     "tekst": "vurdere og kvalitetssikre eget arbeid i tråd med kundeavtaler og bedriftens retningslinjer"
+    },
+    {
+     "kode": "KM9238",
+     "tekst": "behandle reklamasjoner og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM9236",
+     "tekst": "vurdere risiko knyttet til videre behandling og informere og veilede kunden om dette"
+    },
+    {
+     "kode": "KM9241",
+     "tekst": "vurdere og utføre tiltak for håndtering av tekstiler med hensyn til smittevern"
+    },
+    {
+     "kode": "KM9250",
+     "tekst": "vurdere og iverksette tiltak for å gjøre behandlingen mer miljøvennlig og etisk ansvarlig"
+    },
+    {
+     "kode": "KM9245",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 tekstilrensfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 tekstilrensfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides lokalt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 tekstilrensfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på minst to virkedager."
+   ]
+  }
+ ]
+}

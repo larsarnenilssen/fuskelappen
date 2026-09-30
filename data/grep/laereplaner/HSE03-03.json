@@ -1,0 +1,214 @@
+{
+ "kode": "HSE03-03",
+ "tittel": "Læreplan i vg3 helsesekretær",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV478",
+   "tittel": "Kompetansemål og vurdering helse og sjukdom",
+   "fag": [
+    "HSE3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5258",
+     "tekst": "vurdere allmenntilstanden til pasientar, observere teikn og symptom på svikt i vitale funksjonar og bidra til at det blir sett i verk nødvendige tiltak"
+    },
+    {
+     "kode": "KM5253",
+     "tekst": "reflektere over samanhengen mellom levevanar og livsstilsjukdommar og gjere greie for korleis kosthald og fysisk aktivitet kan førebyggje helseplager og sjukdommar"
+    },
+    {
+     "kode": "KM5256",
+     "tekst": "gjere greie for dei vanlegaste akutte og kroniske sjukdommane og infeksjonane"
+    },
+    {
+     "kode": "KM5255",
+     "tekst": "gjere greie for dei vanlegaste plagene og komplikasjonane i svangerskapet"
+    },
+    {
+     "kode": "KM5251",
+     "tekst": "gjere greie for korleis aldring verkar inn på helsa til menneske"
+    },
+    {
+     "kode": "KM5254",
+     "tekst": "reflektere over korleis smerte påverkar helsa til menneske"
+    },
+    {
+     "kode": "KM5257",
+     "tekst": "utføre førstehjelp og varsle etter gjeldande retningslinjer"
+    },
+    {
+     "kode": "KM5250",
+     "tekst": "utføre smittevern, hygienetiltak og andre førebyggjande tiltak i samband med epidemiar og pandemiar"
+    },
+    {
+     "kode": "KM5252",
+     "tekst": "reflektere over omgrepet triage og vurdere kor raskt pasientar skal behandlast"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i helse og sjukdom når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i helse og sjukdom. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i helse- og sjukdom ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i helse- og sjukdom basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV479",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "HSE3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5248",
+     "tekst": "yte service til og kommunisere og samhandle med pasientar og pårørande i ulike livssituasjonar på ein sikker og tillitvekkjande måte"
+    },
+    {
+     "kode": "KM5246",
+     "tekst": "observere, vurdere, dokumentere og rapportere om tilstanden til pasientar"
+    },
+    {
+     "kode": "KM5249",
+     "tekst": "rettleie pasientar og pårørande om helse- og omsorgstenestene"
+    },
+    {
+     "kode": "KM5244",
+     "tekst": "rettleie pasientar og pårørande om digitale helseplattformer og -applikasjonar"
+    },
+    {
+     "kode": "KM5243",
+     "tekst": "hjelpe pasientar og brukarar i krisesituasjonar og rettleie om bruk av hjelpeapparat"
+    },
+    {
+     "kode": "KM5270",
+     "tekst": "gjere greie for samanhengen mellom rus, avhengigheit og psykisk helse og informere om tilboda i det psykiske helsevernet og rusomsorga"
+    },
+    {
+     "kode": "KM5271",
+     "tekst": "rettleie om verknader og biverknader av dei mest brukte legemidla og samarbeide med anna helsepersonell om å setje i verk tiltak ved alvorlege biverknader"
+    },
+    {
+     "kode": "KM5245",
+     "tekst": "bruke medisinsk fagterminologi og helsefaglige uttrykk og kommunisere og samhandle med kollegaer og anna helsepersonell"
+    },
+    {
+     "kode": "KM5247",
+     "tekst": "bruke ulike metodar og teknikkar for å handtere stress og konfliktar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kommunikasjon og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i kommunikasjon og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kommunikasjon og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV477",
+   "tittel": "Kompetansemål og vurdering yrkesliv i helsesekretærfaget",
+   "fag": [
+    "HSE3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5242",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM5262",
+     "tekst": "utføre administrative oppgåver og oppgåver knytte til pasientlogistikk og handtere telefonførespurnader"
+    },
+    {
+     "kode": "KM5269",
+     "tekst": "assistere helsepersonell og utføre skade- og skiftestovearbeid og laboratoriearbeid"
+    },
+    {
+     "kode": "KM5260",
+     "tekst": "berekne mengd og styrkeforhold ved bruk av medikament og væsker"
+    },
+    {
+     "kode": "KM5266",
+     "tekst": "registrere opplysningar i elektronisk pasientjournal i samsvar med gjeldande regelverk"
+    },
+    {
+     "kode": "KM5267",
+     "tekst": "bruke og utføre intern og ekstern kontroll av medisinsk-teknisk utstyr"
+    },
+    {
+     "kode": "KM5261",
+     "tekst": "utføre logistikk- og bestillingsarbeid"
+    },
+    {
+     "kode": "KM5268",
+     "tekst": "sortere og handtere biologisk og kjemisk materiale og annet avfall miljøbevisst og forsvarleg"
+    },
+    {
+     "kode": "KM5265",
+     "tekst": "samhandle med andre for å oppnå heilskaplege pasientforløp som varetar pasientsikkerheita og omsorga for pasientane"
+    },
+    {
+     "kode": "KM5264",
+     "tekst": "utføre arbeidet i tråd med gjeldande rutinar for helse, miljø og sikkerheit, yrkesetiske retningslinjer og relevant lovverk for helsepersonell"
+    },
+    {
+     "kode": "KM5259",
+     "tekst": "reflektere over eiga kompetanse, moglegheiter og avgrensingar"
+    },
+    {
+     "kode": "KM5263",
+     "tekst": "følgje opp eigne rettar og plikter i arbeidsforholdet og gjere greie for korleis partane i arbeidslivet utfører samfunnsrolla si i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i yrkesliv i helsesekretærfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i yrkesliv i helsesekretærfaget. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i yrkesliv i helsesekretærfaget ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i yrkesliv i helsesekretærfaget basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helse og sjukdom: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha éin standpunktkarakter.",
+    "Yrkesliv i helsesekretærfaget: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Helse og sjukdom, kommunikasjon og samhandling og yrkesliv i helsesekretærfaget: Eleven skal opp til ein tverrfagleg praktisk eksamen kor dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Helse og sjukdom: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Yrkesliv i helsesekretærfaget: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helse og sjukdom, kommunikasjon og samhandling og yrkesliv i helsesekretærfaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

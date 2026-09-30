@@ -1,0 +1,238 @@
+{
+ "kode": "HUD03-04",
+ "tittel": "Læreplan i vg3 hudterapi",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV875",
+   "tittel": "Kompetansemål og vurdering helsefremjande arbeid",
+   "fag": [
+    "HUD3Z07"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11442",
+     "tekst": "gjere greie for livsløpet til huda og forklare korleis indre og ytre miljø påverkar huda"
+    },
+    {
+     "kode": "KM11443",
+     "tekst": "vurdere og gjennomføre passende tiltak for å førebyggje og betre hudendringar"
+    },
+    {
+     "kode": "KM11444",
+     "tekst": "gjere greie for oppbygginga og funksjonen til neglene og behandle ulike nagletilstandar"
+    },
+    {
+     "kode": "KM11445",
+     "tekst": "reflektere over samanhengen mellom hudhelse og ernæring og fysisk aktivitet"
+    },
+    {
+     "kode": "KM11446",
+     "tekst": "forklare korleis hormonsystemet, fordøyingssystemet, immunsystemet og musklane verkar inn på hudhelsa"
+    },
+    {
+     "kode": "KM11447",
+     "tekst": "gjere greie for samansetjinga av hudforbetrande og kosmetiske produkt og reflektere over kosmetiske produkt i eit miljøperspektiv"
+    },
+    {
+     "kode": "KM11450",
+     "tekst": "gjere greie for og vurdere verknadene ulike produkt har i og på huda"
+    },
+    {
+     "kode": "KM11448",
+     "tekst": "vurdere og dokumentere kontraindikasjonar ved behandling av hud"
+    },
+    {
+     "kode": "KM11449",
+     "tekst": "utføre førstehjelp etter gjeldande retningslinjer"
+    },
+    {
+     "kode": "KM11451",
+     "tekst": "gjennomføre tiltak som førebyggjer hudlidingar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i helsefremjande arbeid når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i helsefremjande arbeid. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i helsefremjande arbeid ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i helsefremjande arbeid basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV877",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "HUD3Z08"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11471",
+     "tekst": "reflektere over og gjennomføre profesjonell kundebehandling"
+    },
+    {
+     "kode": "KM11470",
+     "tekst": "rettleie om val og bruk av hudpleieprodukt"
+    },
+    {
+     "kode": "KM11477",
+     "tekst": "presentere resultat av hudanalysar og foreslå tiltak i samråd med kunden"
+    },
+    {
+     "kode": "KM11473",
+     "tekst": "skape tryggleik og tillit i møte med kundar og reflektere over verdien av langsiktige kundeforhold"
+    },
+    {
+     "kode": "KM11472",
+     "tekst": "bruke passande strategiar for konflikthandtering og vurdere konfliktreduserande tiltak"
+    },
+    {
+     "kode": "KM11474",
+     "tekst": "bruke digitale ressursar i kommunikasjon og samhandling og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM11475",
+     "tekst": "bruke etisk dømmekraft i yrkesutøvinga og drøfte bruken av reklame"
+    },
+    {
+     "kode": "KM11476",
+     "tekst": "vurdere og anvende passande metodar for sal av varer og tenester"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kommunikasjon og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane utviklinga deira i kommunikasjon og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kommunikasjon og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV876",
+   "tittel": "Kompetansemål og vurdering yrkesliv i hudterapifaget",
+   "fag": [
+    "HUD3Z09"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11453",
+     "tekst": "planleggje og gjennomføre konsultasjonar med kundar og utarbeide behandlings- og oppfølgingsplanar"
+    },
+    {
+     "kode": "KM11469",
+     "tekst": "gjere prisoverslag og rekne ut pris ved kjøp og sal av hudpleieprodukt og berekne avanse på produkt og behandlingar"
+    },
+    {
+     "kode": "KM11454",
+     "tekst": "vurdere passande hårfjerningsmetodar og drøfte ulike sider ved bruken av dei"
+    },
+    {
+     "kode": "KM11455",
+     "tekst": "planleggje, gjennomføre og vurdere spesialiserte ansiktsbehandlingar"
+    },
+    {
+     "kode": "KM11457",
+     "tekst": "bruke korrigeringsteknikkar og kamuflere endringar i huda, og vurdere resultatet"
+    },
+    {
+     "kode": "KM11458",
+     "tekst": "gjennomføre velvære-, spa- og kroppsbehandlingar og reflektere over forbetringspotensialet"
+    },
+    {
+     "kode": "KM11459",
+     "tekst": "bruke ulike teknikkar for og typar av massasje for ansikt og kropp og tilpasse behandlinga til kunden"
+    },
+    {
+     "kode": "KM11460",
+     "tekst": "planleggje, gjennomføre og vurdere manikyr- og pedikyrbehandlingar"
+    },
+    {
+     "kode": "KM11468",
+     "tekst": "gi råd om behandling av uønskt hårvekst og bruke ulike arbeidsmetodar og apparat for slik behandling"
+    },
+    {
+     "kode": "KM11465",
+     "tekst": "utforske og drøfte estetikk og trendar i hudterapifaget"
+    },
+    {
+     "kode": "KM11461",
+     "tekst": "vurdere ny teknologi, nye produkt og behandlingsmetodar"
+    },
+    {
+     "kode": "KM11467",
+     "tekst": "setje i verk tiltak som sørgjer for hygiene og hindrar smitte"
+    },
+    {
+     "kode": "KM11462",
+     "tekst": "bruke fagterminologi og tilpasse språket til samtalepartnaren"
+    },
+    {
+     "kode": "KM11456",
+     "tekst": "planleggje, gjennomføre og vurdere marknadsføring og forretningsdrift"
+    },
+    {
+     "kode": "KM11463",
+     "tekst": "reflektere over ressursbruken i yrkesutøvinga og gjere miljøbevisste val"
+    },
+    {
+     "kode": "KM11464",
+     "tekst": "arbeide i tråd med yrkesetiske retningslinjer og opptre profesjonelt som hudpleiar"
+    },
+    {
+     "kode": "KM11452",
+     "tekst": "utføre arbeidet i tråd med ergonomiske prinsipp og regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM11466",
+     "tekst": "følgje opp eigne rettar og plikter i arbeidsforholdet, og gjere greie for korleis partane i arbeidslivet utfører samfunnsrolla si i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i yrkesliv i hudterapifaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i yrkesliv i hudterapifaget. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i yrkesliv i hudterapifaget ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i yrkesliv i hudterapifaget basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helsefremjande arbeid: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha éin standpunktkarakter.",
+    "Yrkesliv i hudterapifaget: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Helsefremjande arbeid, kommunikasjon og samhandling og yrkesliv i hudterapifaget: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Helsefremjande arbeid: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Yrkesliv i hudterapifaget: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helsefremjande arbeid, kommunikasjon og samhandling og yrkesliv i hudterapifaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

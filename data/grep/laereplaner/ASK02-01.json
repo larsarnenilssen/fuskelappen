@@ -1,0 +1,94 @@
+{
+ "kode": "ASK02-01",
+ "tittel": "Læreplan i antikkens kultur",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV540",
+   "tittel": "Kompetansemål og vurdering antikkens kultur",
+   "fag": [
+    "ASK2Z01"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6305",
+     "tekst": "gjøre rede for og reflektere over hovedlinjene i gresk og romersk historie"
+    },
+    {
+     "kode": "KM6304",
+     "tekst": "sammenligne politiske styreformer i antikken"
+    },
+    {
+     "kode": "KM6306",
+     "tekst": "utforske tekster fra antikken og drøfte hvilken betydning de har som historiske kilder for vår forståelse av antikkens historie"
+    },
+    {
+     "kode": "KM6307",
+     "tekst": "analysere ulike kunst- og kulturuttrykk fra antikken og reflektere over hva de kan fortelle oss om sin samtid"
+    },
+    {
+     "kode": "KM6308",
+     "tekst": "sammenligne antikkens og dagens ideer om enkeltmennesket i samfunnet, familien og maktrelasjoner"
+    },
+    {
+     "kode": "KM6309",
+     "tekst": "drøfte emner innenfor gresk og romersk religion, mytologi og festivaler"
+    },
+    {
+     "kode": "KM6310",
+     "tekst": "drøfte emner fra antikkens filosofi og vitenskap, og utforske deres betydning i samtid og ettertid"
+    },
+    {
+     "kode": "KM6311",
+     "tekst": "bruke romertall og gjøre rede for det greske alfabetet og gjenkjenne ord og ordelementer fra gresk og latin i moderne språk"
+    },
+    {
+     "kode": "KM6312",
+     "tekst": "analysere en tekst ut fra antikkens retoriske prinsipper"
+    },
+    {
+     "kode": "KM6313",
+     "tekst": "utforske og reflektere over hvordan ettertiden har forholdt seg til og brukt antikken politisk og ideologisk"
+    },
+    {
+     "kode": "KM6314",
+     "tekst": "utforske og vurdere antikken som referanse og tema i senere kulturuttrykk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i antikkens kultur. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder og teorier i utforskende arbeid med og refleksjon over ulike emner og problemstillinger knyttet til antikkens kultur. Elevene viser og utvikler kompetanse når de arbeider med antikken og dens sentrale betydning for utviklingen av kultur, språk og politikk i Europa og andre deler av verden.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i antikkens kultur, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i antikkens kultur."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter antikkens kultur. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i antikkens kultur basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Antikkens kultur: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Antikkens kultur: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen har forberedelsedel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Antikkens kultur: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

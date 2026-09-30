@@ -1,0 +1,114 @@
+{
+ "kode": "MAT12-01",
+ "tittel": "Læreplan i matematikk for økonomi",
+ "spraak": "nno",
+ "fastsatt": "2026-09-11",
+ "gyldigFra": "2027-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1198",
+   "tittel": "Kompetansemål og vurdering i matematikk for økonomi",
+   "fag": [
+    "MAT4Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15205",
+     "tekst": "bruke prosentrekning til å forklare og utforske korleis rente på rente påverkar innskot og korleis inflasjon påverkar kroneverdi og prisindeks"
+    },
+    {
+     "kode": "KM15206",
+     "tekst": "bruke noverdi og framtidsverdi til å modellere sparing, lån og avbetaling og samanlikne økonomiske alternativ over tid ved hjelp av digitale verktøy"
+    },
+    {
+     "kode": "KM15207",
+     "tekst": "bruke og forklare lineære budsjettvilkår og skissere område i planet som er avgrensa av koordinataksane og eitt eller fleire budsjettvilkår"
+    },
+    {
+     "kode": "KM15208",
+     "tekst": "bruke lineær optimering til å bestemme maksimum og minimum for lineære funksjonar over område i planet som er avgrensa av rette linjer, og bruke løysingane til å analysere økonomiske og samfunnsfaglege problemstillingar"
+    },
+    {
+     "kode": "KM15209",
+     "tekst": "utforske kontinuerleg rente ved hjelp av digitale verktøy og forklare forskjellen på nominell, effektiv og kontinuerleg rente"
+    },
+    {
+     "kode": "KM15210",
+     "tekst": "bruke eigenskapane til potensfunksjonar, eksponentialfunksjonar og naturlege logaritmefunksjonar til å utforske og løyse problem knytte til renterekning"
+    },
+    {
+     "kode": "KM15211",
+     "tekst": "bruke formelen for geometriske rekkjer til å bestemme terminbeløpet i eit annuitetslån og til å berekne årleg effektiv rente ved hjelp av digitale verktøy når lånet har gebyr"
+    },
+    {
+     "kode": "KM15212",
+     "tekst": "bruke gjennomsnittleg og momentan vekstfart til å beskrive endring i økonomiske modellar og tolke vekstfart som endring i til dømes kostnad, inntekt, etterspurnad eller profitt"
+    },
+    {
+     "kode": "KM15213",
+     "tekst": "bruke derivasjon og digitale verktøy til å bestemme og utforske nullpunkt, ekstremalpunkt og andre relevante kjenneteikn ved funksjonar som modellerer økonomiske samanhengar, og gi ei praktisk tolking av desse"
+    },
+    {
+     "kode": "KM15214",
+     "tekst": "bruke og bestemme elastisitetar til å undersøkje sal av ei vare og gi ei praktisk tolking av resultata"
+    },
+    {
+     "kode": "KM15215",
+     "tekst": "bruke derivasjon til å bestemme grensekostnader og grenseinntekter i økonomiske modellar og forklare betydninga av desse storleikane"
+    },
+    {
+     "kode": "KM15216",
+     "tekst": "bestemme og utforske profitt som funksjon av pris eller kvantum når pris per eining, etterspurnad og produksjonskostnader er gitt ved funksjonar, og tolke resultata"
+    },
+    {
+     "kode": "KM15217",
+     "tekst": "bestemme pris som funksjon av kvantum når kvantum som funksjon av pris er ein lineær funksjon"
+    },
+    {
+     "kode": "KM15218",
+     "tekst": "utforske tilbods- og etterspurnadskurver, finne marknadskryss og beskrive samanhengen mellom tilbod, etterspurnad og overskot for konsument og produsent"
+    },
+    {
+     "kode": "KM15219",
+     "tekst": "vurdere føresetnader, gyldigheitsområde og avgrensingar ved økonomiske modellar og bruke vurderingane til å tolke resultata i praktiske situasjonar"
+    },
+    {
+     "kode": "KM15220",
+     "tekst": "planleggje og gjennomføre eit sjølvstendig arbeid knytt til samfunnsøkonomiske tema og forhold og bruke matematiske modellar til å analysere og presentere funn"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk for økonomi. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske og økonomiske omgrep i kommunikasjon, og når dei finn, forstår og generaliserer økonomiske samanhengar og formidlar desse. Elevane viser og utviklar òg kompetanse når dei jobbar utforskande og problemløysande med modellering ved å utføre og presentere sitt eige arbeid i faget. Vidare viser og utviklar elevane kompetanse ved å forstå fagomgrep og ved å resonnere og argumentere for om matematiske og økonomiske utsegner er gyldige.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske og økonomiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira når det gjeld å løyse matematiske problem knytte til økonomi. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring slik at elevane kan bruke rettleiinga for å sjå samanhengar mellom matematikk og praktiske bruksmåtar knytte til økonomi."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter matematikk for økonomi. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk for økonomi basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt. I vurderinga skal det leggjast vekt på korleis eleven bruker matematiske uttrykksformer og fagomgrep, bruker ulike strategiar og argumenterer for og kritisk vurderer sine eigne og andre sine løysingar og modellar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk for økonomi: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Matematikk for økonomi: Eleven kan bli trekt ut til skriftleg eksamen eller munnleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Skriftleg eksamen skal ikkje ha førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt. Munnleg eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Matematikk for økonomi: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt. Eksamen skal ikkje ha førebuingsdel."
+   ]
+  }
+ ]
+}

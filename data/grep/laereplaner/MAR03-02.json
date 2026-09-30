@@ -1,0 +1,343 @@
+{
+ "kode": "MAR03-02",
+ "tittel": "Læreplan i vg2 maritime fag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV437",
+   "tittel": "Kompetansemål og vurdering skipstekniske tjenester",
+   "fag": [
+    "MAR2Z10"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4653",
+     "tekst": "beskrive og reflektere over hvordan ulike fartøyer er konstruert"
+    },
+    {
+     "kode": "KM4683",
+     "tekst": "kunne utføre grunnleggende stabilitetsberegninger og forklare faktorer som påvirker stabiliteten til fartøy"
+    },
+    {
+     "kode": "KM4684",
+     "tekst": "beskrive fartøyets tekniske systemer og kunne utføre relevante beregninger"
+    },
+    {
+     "kode": "KM4685",
+     "tekst": "bruke sveise- og gassutstyr i reparasjoner av dekks- og maskinutstyr"
+    },
+    {
+     "kode": "KM4686",
+     "tekst": "bruke grunnleggende teknikker for overflatebehandling av ulike materialer og vurdere utført arbeid"
+    },
+    {
+     "kode": "KM4687",
+     "tekst": "beskrive metallers bruksområder og egenskaper i spenningsrekken"
+    },
+    {
+     "kode": "KM4688",
+     "tekst": "planlegge og utføre skipsrenhold"
+    },
+    {
+     "kode": "KM4689",
+     "tekst": "bruke ergonomisk riktige arbeidsteknikker og arbeidsstillinger"
+    },
+    {
+     "kode": "KM4690",
+     "tekst": "planlegge og utføre varme arbeider"
+    },
+    {
+     "kode": "KM4691",
+     "tekst": "vurdere og forklare eget arbeid i henhold til arbeidsordrer, tegninger, kostnader og standarder"
+    },
+    {
+     "kode": "KM4692",
+     "tekst": "bruke og forstå engelske maritime begreper for verktøy, vedlikeholdsutstyr og operasjoner i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM4693",
+     "tekst": "forklare hvordan man gjør fartøyet sjøklart"
+    },
+    {
+     "kode": "KM4694",
+     "tekst": "utføre stropping, anhuking og signalgiving etter gjeldende forskrifter og standarder"
+    },
+    {
+     "kode": "KM4696",
+     "tekst": "bruke tauverk og vaier på en sikker måte"
+    },
+    {
+     "kode": "KM4709",
+     "tekst": "gjøre rede for hvordan man bruker fastmontert løfteutstyr og taljer på en sikker måte"
+    },
+    {
+     "kode": "KM4697",
+     "tekst": "beskrive metoder for behandling, håndtering og sikring av last"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i skipstekniske tjenester når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i skipstekniske tjenester. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i skipstekniske tjenester ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i skipstekniske tjenester basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV438",
+   "tittel": "Kompetansemål og vurdering dokumentasjon og kvalitet",
+   "fag": [
+    "MAR2Z11"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4698",
+     "tekst": "beskrive funksjonen til og bakgrunnen for sikkerhets- og beredskapssystemer om bord"
+    },
+    {
+     "kode": "KM4699",
+     "tekst": "planlegge og dokumentere arbeidsoppgaver i tråd med forskrifter om arbeidsmiljø, sikkerhet og helse"
+    },
+    {
+     "kode": "KM4700",
+     "tekst": "gjøre rede for og anvende informasjon gitt i produkt- og sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM4701",
+     "tekst": "beskrive og følge lover og retningslinjer som omhandler rusmidler om bord på skip"
+    },
+    {
+     "kode": "KM4702",
+     "tekst": "beskrive rutiner for avfallshåndtering og kjenne til hvordan skadelige utslipp kan forebygges og begrenses"
+    },
+    {
+     "kode": "KM4703",
+     "tekst": "beskrive og følge relevante lover, forskrifter og konvensjoner"
+    },
+    {
+     "kode": "KM4704",
+     "tekst": "anvende relevante manualer, oppslagsverk og digitale applikasjoner på relevant fagspråk"
+    },
+    {
+     "kode": "KM4705",
+     "tekst": "beskrive hovedfunksjonene for bemanningen om bord på et fartøy"
+    },
+    {
+     "kode": "KM4706",
+     "tekst": "gjøre rede for og bruke ulike kvalitetssikringssystem"
+    },
+    {
+     "kode": "KM4707",
+     "tekst": "beskrive hensikten med, og utføre forbedrings- og avviksrapportering"
+    },
+    {
+     "kode": "KM4708",
+     "tekst": "gjøre rede for ISM-koden (International Safety Management) og ISPS-koden (International Ship and Port Facilities Security Code)"
+    },
+    {
+     "kode": "KM4681",
+     "tekst": "bruke et elektronisk vedlikeholdssystem og registrere utført vedlikehold på engelsk og norsk"
+    },
+    {
+     "kode": "KM4680",
+     "tekst": "bruke personlig verneutstyr og begrunne sitt valg i gitte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM4679",
+     "tekst": "beskrive og reflektere over beredskapsfunksjoner om bord"
+    },
+    {
+     "kode": "KM5098",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i dokumentasjon og kvalitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i dokumentasjon og kvalitet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i dokumentasjon og kvalitet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i dokumentasjon og kvalitet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Eleven må dokumentere gjennomført kurs i grunnleggende sikkerhetsopplæring i tråd med krav fra Sjøfartdirektoratet.",
+    "Eleven må dokumentere gjennomført opplæring i ISPS-koden (International Ship and Port Facilities Security Code)."
+   ]
+  },
+  {
+   "kode": "KV439",
+   "tittel": "Kompetansemål og vurdering dekk, valgfritt programfag",
+   "fag": [
+    "MAR4Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4654",
+     "tekst": "beskrive beredskapsoppgaver og kommunikasjon i en nødsituasjon"
+    },
+    {
+     "kode": "KM4655",
+     "tekst": "gjøre rede for gjeldende krav til og retningslinjer for føring av redningsfarkost og MOB-båt (Mann over bord-båt)"
+    },
+    {
+     "kode": "KM4656",
+     "tekst": "bruke maritim radio etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4657",
+     "tekst": "beskrive grunnleggende prinsipper for navigasjon og utføre enkle navigasjonsberegninger"
+    },
+    {
+     "kode": "KM4658",
+     "tekst": "forklare hvordan værforhold og klima påvirker seilasen"
+    },
+    {
+     "kode": "KM4659",
+     "tekst": "utføre grunnleggende laste- og stabilitetsberegninger"
+    },
+    {
+     "kode": "KM4660",
+     "tekst": "beskrive og bruke metoder for behandling og sikring av last"
+    },
+    {
+     "kode": "KM4661",
+     "tekst": "beskrive fortøynings- og ankringsutstyr med tilhørende prosedyrer"
+    },
+    {
+     "kode": "KM4662",
+     "tekst": "beskrive hvordan arbeid i lukkede rom og arbeid i høyden skal forberedes og utføres"
+    },
+    {
+     "kode": "KM4663",
+     "tekst": "forklare bruken av signaler, lanterneføring og sjømerker"
+    },
+    {
+     "kode": "KM4664",
+     "tekst": "beskrive vakttjeneste etter fastlagte retningslinjer og daglige rutiner i dekksdepartementet"
+    },
+    {
+     "kode": "KM4665",
+     "tekst": "forklare hensikten med og virkemåten til nødstrømsanlegg, brannpumpe og nødlensepumpe"
+    },
+    {
+     "kode": "KM4666",
+     "tekst": "gjøre rede for bruken av nødutstyr som finnes i dekksavdelingen, og planlegge og utføre arbeidsoppgaver på støttenivå"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i dekk, valgfritt programfag, når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i dekk, valgfritt programfag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i dekk, valgfritt programfag, ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i dekk, valgfritt programfag, basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Eleven må dokumentere bestått sertifisert opplæring som radiooperatør med SRC (Short Range Certificate).",
+    "Eleven må dokumentere bestått sertifisert opplæring som fører av redningsfarkost og MOB-båt (Mann over bord-båt)."
+   ]
+  },
+  {
+   "kode": "KV440",
+   "tittel": "Kompetansemål og vurdering maskin, valgfritt programfag",
+   "fag": [
+    "MAR5Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4668",
+     "tekst": "beskrive hvordan de ulike typene framdriftsanlegg er bygget opp med tilhørende hoved- og hjelpekomponenter"
+    },
+    {
+     "kode": "KM4669",
+     "tekst": "gjøre rede for oppbyggingen av og virkemåten til ulike forbrenningsmotorer som brukes i et framdriftsanlegg"
+    },
+    {
+     "kode": "KM4670",
+     "tekst": "beskrive motorteknologi som bruker brennstoff med lavt flammepunkt"
+    },
+    {
+     "kode": "KM4671",
+     "tekst": "gjøre rede for brenselcelleprinsipper"
+    },
+    {
+     "kode": "KM4710",
+     "tekst": "reflektere over bruken av batterier og elektromotorer til framdriftsanlegg"
+    },
+    {
+     "kode": "KM4672",
+     "tekst": "beregne effekt på motor- og framdriftsanlegg"
+    },
+    {
+     "kode": "KM4673",
+     "tekst": "beskrive ulike drivstofftyper med tilhørende bruksområder"
+    },
+    {
+     "kode": "KM4674",
+     "tekst": "planlegge og utføre arbeidsoppgaver på støttenivå"
+    },
+    {
+     "kode": "KM4676",
+     "tekst": "beskrive maskinvakttjeneste og daglige rutiner i maskinrommet"
+    },
+    {
+     "kode": "KM4677",
+     "tekst": "forklare hensikten med og virkemåten til nødsystemer"
+    },
+    {
+     "kode": "KM4678",
+     "tekst": "beskrive bruken av nødutstyr som finnes i maskinrommet"
+    },
+    {
+     "kode": "KM4695",
+     "tekst": "beskrive hvordan arbeid i lukkede rom og arbeid i høyden skal forberedes og utføres"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i maskin, valgfritt programfag, når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i maskin, valgfritt programfag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i maskin, valgfritt programfag, ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i maskin, valgfritt programfag, basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Skipstekniske tjenester: Eleven skal ha én standpunktkarakter.",
+    "Dokumentasjon og kvalitet: Eleven skal ha én standpunktkarakter.",
+    "Valgfritt programfag: Eleven skal ha én standpunktkarakter.",
+    "Gjennomgått opplæring etter Sjøfartsdirektoratets krav om grunnleggende sikkerhetsopplæring skal ikke inngå i grunnlaget for standpunktkarakter, men dokumenteres med eget kursbevis."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Skipstekniske tjenester, dokumentasjon og kvalitet og valgfritt programfag: Eleven skal opp til en tverrfaglig praktisk eksamen der både de felles programfagene og ett valgfritt programfag inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Skipstekniske tjenester: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Dokumentasjon og kvalitet: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Valgfritt programfag: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Skipstekniske tjenester, dokumentasjon og kvalitet og valgfritt programfag: Privatisten skal opp til en tverrfaglig praktisk eksamen der både de felles programfagene og ett valgfritt programfag inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

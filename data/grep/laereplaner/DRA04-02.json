@@ -1,0 +1,74 @@
+{
+ "kode": "DRA04-02",
+ "tittel": "Læreplan i drama og samfunn",
+ "spraak": "nob",
+ "fastsatt": "2021-04-20",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV586",
+   "tittel": "Kompetansemål og vurdering drama og samfunn",
+   "fag": [
+    "DRA4Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6747",
+     "tekst": "planlegge, gjennomføre og vurdere drama- og teateraktiviteter for og med ulike målgrupper"
+    },
+    {
+     "kode": "KM6748",
+     "tekst": "lede og formidle i skapende arbeid og begrunne valg ut fra kunnskap om ledelse av drama- og teaterprosesser"
+    },
+    {
+     "kode": "KM6749",
+     "tekst": "gjøre rede for dramapedagogiske og læringsteoretiske perspektiver og prøve ut disse i praktisk arbeid"
+    },
+    {
+     "kode": "KM6750",
+     "tekst": "legge til rette for og reflektere over estetiske læreprosesser ved å bruke narrative, estetiske og dramaturgiske innganger"
+    },
+    {
+     "kode": "KM6751",
+     "tekst": "drøfte sammenhenger mellom lek, drama og teater og utforske dette i skapende arbeid"
+    },
+    {
+     "kode": "KM6752",
+     "tekst": "utforske og reflektere over mellommenneskelige og samfunnsmessige dilemmaer og utfordringer, og trekke dette inn i arbeid med kunstneriske og pedagogiske prosesser og produkter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i drama og samfunn. Elevene viser og utvikler kompetanse i faget når de leder og formidler og når de tar i bruk estetiske læreprosesser i arbeid med drama og teater. Videre viser og utvikler elevene kompetanse i faget når de reflekterer over erfaringene og prosessene ved hjelp av ledelsesteori, pedagogisk teori og teaterfaglig teori.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å gi elevene erfaring med å lede andre og selv bli ledet i ulike drama- og teaterprosesser. Læreren skal være i dialog med elevene om utviklingen deres i å lede estetiske læreprosesser og i å anvende drama og i teater som metode, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å innta en ledende og kommuniserende rolle, utforske og reflektere over estetiske læreprosesser og vise kjennskap til et bredt spekter av drama og teaterfaglige metoder."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter drama og samfunn. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i drama og samfunn basert på kompetansen eleven har vist ved å lede og reflektere over estetiske læreprosesser, anvende og vise forståelse av drama og teater som metode i prosesser og produkter og legge til rette for ulike lærings- og formidlingssituasjoner."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Drama og samfunn: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Drama og samfunn: Eleven kan trekkes ut til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Drama og samfunn: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

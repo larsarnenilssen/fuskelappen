@@ -1,0 +1,180 @@
+{
+ "kode": "FRI02-03",
+ "tittel": "Læreplan i vg2 frisør",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV391",
+   "tittel": "Kompetanse og vurdering kommunikasjon, klipp og frisyreforming",
+   "fag": [
+    "FRI2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4129",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsprosesser"
+    },
+    {
+     "kode": "KM4153",
+     "tekst": "gjøre rede for og anvende ulike kommunikasjonsformer i arbeidsprosesser"
+    },
+    {
+     "kode": "KM4152",
+     "tekst": "tolke kundens stil og ønsker og drøfte ulike løsninger i samarbeid med kunden"
+    },
+    {
+     "kode": "KM4151",
+     "tekst": "reflektere over etiske problemstillinger i møte med ulike kundegrupper og vurdere ulike strategier for å møte kundenes forventninger"
+    },
+    {
+     "kode": "KM4150",
+     "tekst": "gjøre rede for valg av teknikker, produkter og verktøy og anvende dem på en hensiktsmessig måte tilpasset kundens ønsker og forutsetninger"
+    },
+    {
+     "kode": "KM4149",
+     "tekst": "gjennomføre grunnleggende klippeformer og effileringsteknikker"
+    },
+    {
+     "kode": "KM4148",
+     "tekst": "bruke klippeformer i kombinasjoner, og skape maskuline og feminine former"
+    },
+    {
+     "kode": "KM4147",
+     "tekst": "gjøre rede for og bruke grunnleggende prinsipper ved klipp av skjegg"
+    },
+    {
+     "kode": "KM4146",
+     "tekst": "utforske og bruke tradisjonelle og aktuelle teknikker i frisyreforming til å skape ulike former og uttrykk"
+    },
+    {
+     "kode": "KM4145",
+     "tekst": "bruke arbeidsbeskrivelser, fagterminologi, digitale ressurser og visuelle hjelpemidler i arbeidsprosesser, dokumentasjoner og presentasjoner"
+    },
+    {
+     "kode": "KM4144",
+     "tekst": "gjennomføre vedlikehold av utstyr, verktøy og maskiner og følge gjeldende regler for helse, miljø og sikkerhet i alt arbeid"
+    },
+    {
+     "kode": "KM4143",
+     "tekst": "beregne pris på varer og tjenester og vurdere sammenhengen mellom vareforbruk, tidsbruk og lønnsomhet"
+    },
+    {
+     "kode": "KM4154",
+     "tekst": "vurdere og bruke ulike metoder i markedsføringen av frisørfaget og virksomheten"
+    },
+    {
+     "kode": "KM4142",
+     "tekst": "utforske og drøfte betydningen av frisørfagets historie, moter, trender, tradisjoner og kulturelle uttrykk"
+    },
+    {
+     "kode": "KM4140",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget kommunikasjon, klipp og frisyreforming når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget kommunikasjon, klipp og frisyreforming. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget kommunikasjon, klipp og frisyreforming ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget kommunikasjon, klipp og frisyreforming basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV392",
+   "tittel": "Kompetanse og vurdering hår, farge og strukturendring",
+   "fag": [
+    "FRI2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4155",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsprosesser"
+    },
+    {
+     "kode": "KM4138",
+     "tekst": "beskrive hårets oppbygning, hårtyper med forskjellig tekstur og gjøre rede for hva som påvirker hårets kvalitet"
+    },
+    {
+     "kode": "KM4137",
+     "tekst": "gjøre rede for de vanligste årsakene til hår- og hodebunnsproblemer og vurdere hvordan produkter, helse og ernæring kan påvirke og forebygge problemene"
+    },
+    {
+     "kode": "KM4139",
+     "tekst": "beskrive gjeldende regler for helse, miljø og sikkerhet, og begrunne og bruke reglene i praktisk arbeid"
+    },
+    {
+     "kode": "KM4130",
+     "tekst": "bruke relevant teori om hår og hodebunn og ut fra denne kunnskapen gjennomføre hodebunnsmassasje"
+    },
+    {
+     "kode": "KM4136",
+     "tekst": "utforske og beskrive produkters egenskaper, virkemåter og påvirkning på helse og miljø"
+    },
+    {
+     "kode": "KM4135",
+     "tekst": "reflektere over forbruk, avfallshåndtering og hvordan valg av ulike materialer og produkter påvirker miljøet"
+    },
+    {
+     "kode": "KM4134",
+     "tekst": "gjøre rede for og vurdere begrensninger og forholdsregler som er yrkesetisk og helsemessig forsvarlige ved behandling av ulike hårtyper"
+    },
+    {
+     "kode": "KM4133",
+     "tekst": "gjøre rede for og bruke teori om farge i ulike fargebehandlingsprosesser"
+    },
+    {
+     "kode": "KM4131",
+     "tekst": "gjøre rede for og bruke teori om kjemisk strukturendring i strukturendringsprosesser"
+    },
+    {
+     "kode": "KM4132",
+     "tekst": "bruke relevant teori for å gjennomføre forming og farging av vipper og bryn"
+    },
+    {
+     "kode": "KM4141",
+     "tekst": "reflektere over tiltak som beskytter mot kjemiske stoffer og fremmer hygiene- og smittevern, og bruke denne kunnskapen i eget arbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget hår, farge og strukturendring når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget hår, farge og strukturendring. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget hår, farge og strukturendring ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget hår, farge og strukturendring basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Kommunikasjon, klipp og frisyreforming: Elevene skal ha én standpunktkarakter.",
+    "Hår, farge og strukturendring: Elevene skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Kommunikasjon, klipp og frisyreforming og hår, farge og strukturendring: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Kommunikasjon, klipp og frisyreforming: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Hår, farge og strukturendring: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon, klipp og frisyreforming og hår, farge og strukturendring: Privatisten skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

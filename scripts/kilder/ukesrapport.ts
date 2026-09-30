@@ -7,6 +7,7 @@ import type { Kildestatusfil } from '../../src/core/kildestatus/kildestatus.ts';
 import type { Kildekontroll } from '../../src/core/kontroll/indeks.ts';
 import type { Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tekstendring } from './avsnitt.ts';
+import type { Grependringer } from './grep.ts';
 
 export const KONTROLLETIKETT = 'kontroll';
 /** Etiketten de gamle sakene per kilde hadde. De lukkes og erstattes av kontrollsaken. */
@@ -26,6 +27,25 @@ export interface Ukesgrunnlag {
   repo: string;
   /** Endringsforslagene (PR) fra lag-forslag.ts, hvis noen. */
   forslag?: { verdier: string | null; grep: string | null };
+  /** Endringene i Grep denne uken (.generert/grep-endringer.json): læreplaner og fag listes i saken. */
+  grep?: Grependringer | null;
+}
+
+/** Endrede læreplaner og fag fra Grep, til orientering i kontrollsaken (avgjørelse 022). */
+export function grepLaereplanlinjer(e: Grependringer | null | undefined, maks = MAKS_DETALJER): string[] {
+  if (!e) return [];
+  const lenke = (k: string) => `[${k}](https://www.udir.no/lk20/${k.toLowerCase()})`;
+  const linjer = [
+    ...(e.laereplaner?.endret ?? []).map((k) => `Endret læreplan: ${lenke(k)}`),
+    ...(e.laereplaner?.nye ?? []).map((k) => `Ny læreplan: ${lenke(k)}`),
+    ...(e.laereplaner?.fjernet ?? []).map((k) => `Læreplan fjernet: ${k}`),
+    ...(e.fag?.endret ?? []).map((l) => `Endret fag: ${l}`),
+    ...(e.fag?.nye ?? []).map((l) => `Nytt fag: ${l}`),
+    ...(e.fag?.fjernet ?? []).map((l) => `Fag fjernet: ${l}`),
+  ];
+  const ut = linjer.slice(0, maks).map((l) => `  - ${l}`);
+  if (linjer.length > maks) ut.push(`  - … og ${linjer.length - maks} til. Se jobbsammendraget.`);
+  return ut;
 }
 
 export interface Ukesrapport {
@@ -166,7 +186,7 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     }
     if (p.melding) {
       orientering += 1;
-      return [`- ${p.melding}`];
+      return [`- ${p.melding}`, ...grepLaereplanlinjer(g.grep)];
     }
     return [];
   });

@@ -1,0 +1,108 @@
+{
+ "kode": "HBB03-02",
+ "tittel": "Læreplan i håndbokbinderfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV445",
+   "tittel": "Kompetansemål og vurdering håndbokbinderfaget",
+   "fag": [
+    "HBB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4786",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM4790",
+     "tekst": "binde bøker for hånd med skinn og andre bokbindermaterialer"
+    },
+    {
+     "kode": "KM4788",
+     "tekst": "gjøre rede for bøkenes oppbygning og ulike bruksområder, velge innbinding ut fra ønsket behov og uttrykk og presentere ideene for kunder"
+    },
+    {
+     "kode": "KM4798",
+     "tekst": "finne fiberretningen i papir og bruke den riktig i innbindingen"
+    },
+    {
+     "kode": "KM4797",
+     "tekst": "vurdere og bruke ulike materialtyper og klebestoffer ut fra det produktet som skal lages"
+    },
+    {
+     "kode": "KM4787",
+     "tekst": "anvende og vedlikeholde maskiner, utstyr og verktøy for håndbokbinding og ut fra gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4792",
+     "tekst": "utforske, skissere og plassere dekor og typografi til utvendig preg og forgylling med og uten digitale verktøy"
+    },
+    {
+     "kode": "KM4791",
+     "tekst": "prege og forgylle med presse og for hånd"
+    },
+    {
+     "kode": "KM4793",
+     "tekst": "lage tilpassede esker, kassetter og mapper ut fra ulike bruksområder og kundens bestilling"
+    },
+    {
+     "kode": "KM4784",
+     "tekst": "utarbeide og bruke produksjonsordrer, førsteeksemplarer og maler som referanse under produksjonen"
+    },
+    {
+     "kode": "KM4789",
+     "tekst": "planlegge en serieproduksjon og binde inn små opplag"
+    },
+    {
+     "kode": "KM4800",
+     "tekst": "beregne og presentere kostnader for valgte materialer, innbindingsteknikker og tidsforbruk"
+    },
+    {
+     "kode": "KM4796",
+     "tekst": "anvende og tilpasse ulike kommunikasjonsformer rettet mot kunder, kolleger og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM4799",
+     "tekst": "vurdere og utføre reparasjoner, restaureringer og ombindinger av gamle og nye bøker"
+    },
+    {
+     "kode": "KM4795",
+     "tekst": "gjøre rede for bokens betydning i et historisk perspektiv og forklare håndbokbinderens rolle i denne sammenheng"
+    },
+    {
+     "kode": "KM4794",
+     "tekst": "gjøre rede for hvordan ulike materialer, teknikker og verktøy påvirker holdbarheten og miljøet, og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM4801",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4785",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i håndbokbinderfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i håndbokbinderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i håndbokbinderfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

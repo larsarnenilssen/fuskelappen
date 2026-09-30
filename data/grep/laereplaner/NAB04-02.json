@@ -1,0 +1,109 @@
+{
+ "kode": "NAB04-02",
+ "tittel": "Læreplan i Vg3 bruk og vern av natur",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV615",
+   "tittel": "Kompetansemål og vurdering vg3 bruk og vern av natur",
+   "fag": [
+    "NAB4Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7180",
+     "tekst": "utforske biologisk mangfold i ulike naturtyper og gjøre rede for årsaker til forskjell i mangfold"
+    },
+    {
+     "kode": "KM7179",
+     "tekst": "vurdere sårbarhet i naturområder for både opphør av bruk og ulike typer bruk, og anbefale begrensning, tilrettelegging, gjenoppretting av tradisjonell bruk eller vern"
+    },
+    {
+     "kode": "KM7181",
+     "tekst": "sammenligne naturmangfold i ulike typer kulturlandskap og gjøre rede for konsekvenser av ulike bruksmåter"
+    },
+    {
+     "kode": "KM7185",
+     "tekst": "drøfte inngrep og påvirkninger som kan føre til irreversible endringer i natur eller klima, og mulige konsekvenser for framtidige generasjoner"
+    },
+    {
+     "kode": "KM7189",
+     "tekst": "sammenligne syn på natur, naturens egenverdi og menneskets plass i naturen i miljøetikken og i andre filosofiske retninger"
+    },
+    {
+     "kode": "KM7182",
+     "tekst": "analysere en sak eller en debatt om naturforvaltning og vurdere verdier og holdninger opp mot bærekraft"
+    },
+    {
+     "kode": "KM7183",
+     "tekst": "reflektere over nasjonalt og internasjonalt engasjement og samarbeid om bruk og vern av natur og drøfte effekter av ulike aksjons- og arbeidsformer"
+    },
+    {
+     "kode": "KM7190",
+     "tekst": "drøfte hvordan lokal tilhørighet, historie og kultur har formet synet på bruk av natur, forstå hvordan interessekonflikter knyttet til bruk og vern oppstår, og vurdere løsninger"
+    },
+    {
+     "kode": "KM7191",
+     "tekst": "drøfte hvordan ulike eierstrukturer har ført til ulik forvaltning av natur, og reflektere over ulikheter mellom lokalt og utenbygds eller utenlandsk eierskap"
+    },
+    {
+     "kode": "KM7184",
+     "tekst": "gjøre rede for nasjonalt og internasjonalt regel- og avtaleverk som regulerer forvaltning av natur og miljø, og sammenligne hvordan planprosesser etter ulike lover ivaretar naturens og ulike brukerinteressers rettsvern"
+    },
+    {
+     "kode": "KM7192",
+     "tekst": "kartlegge naturressurser i et område og menneskelig bruk av disse og reflektere over om bruken er bærekraftig"
+    },
+    {
+     "kode": "KM7186",
+     "tekst": "gjennomføre et praktisk tiltak ut fra egen eller en eksisterende plan for bruk eller vern av natur"
+    },
+    {
+     "kode": "KM7187",
+     "tekst": "beskrive en planprosess i et lokalsamfunn og presentere alle ledd i prosessen fra registreringsfasen og fram til vedtak"
+    },
+    {
+     "kode": "KM7188",
+     "tekst": "drøfte ulike brukerinteresser i en plan- eller verneprosess og utarbeide skriftlig innspill på vegne av en brukerinteresse"
+    },
+    {
+     "kode": "KM7193",
+     "tekst": "beskrive livsløpsanalyse og miljøsertifiseringssystemer for et produkt basert på en fornybar råvare og vurdere hvilke konsekvenser disse kan få for næringsliv, natur og miljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vg3 bruk og vern av natur når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vg3 bruk og vern av natur. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vg3 bruk og vern av natur ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vg3 bruk og vern av natur basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 bruk og vern av natur: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 bruk og vern av natur: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 bruk og vern av natur: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

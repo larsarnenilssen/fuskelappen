@@ -1,0 +1,144 @@
+{
+ "kode": "BRO03-02",
+ "tittel": "Læreplan i vg3 brønn- og borefaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV507",
+   "tittel": "Kompetansemål og vurdering Vg3 brønn- og borefaget",
+   "fag": [
+    "BRO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5774",
+     "tekst": "planlegge boring av brønn og borehull etter gjeldende regelverk, standarder og toleransekrav ved å bruke ulike prosjektverktøy, arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet og refelektere over koneskvensene av å ikke følge kravene."
+    },
+    {
+     "kode": "KM5783",
+     "tekst": "planlegge boring av brønner til vannforsyning, oppvarming og kjøling etter tegninger, beskrivelser og preaksepterte løsninger og reflektere over ulike typer fornybar energi"
+    },
+    {
+     "kode": "KM5758",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5782",
+     "tekst": "velge og bruke utstyr til ulike boremetoder med hensyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5776",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og iverksette tiltak som forebygger helseskader og ulykker"
+    },
+    {
+     "kode": "KM5769",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM5775",
+     "tekst": "transportere og rigge til utstyr, sikre boreplassen og vurdere ulike tiltak som sikrer risikoutsatte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM5772",
+     "tekst": "vurdere grunnforhold og grunnvannets egenskaper og gjøre rede for hvordan dette påvirker byggeprosessen"
+    },
+    {
+     "kode": "KM5762",
+     "tekst": "plassere ulike typer brønner og borehull i terrenget, optimalisere brønnens yteevne og beskytte mot innsig av overflatevann"
+    },
+    {
+     "kode": "KM5781",
+     "tekst": "bore i berg og løsmasser etter bestilling og gjøre rede for hvordan hydrogeologiske og geologiske forhold påvirker arbeidet"
+    },
+    {
+     "kode": "KM5780",
+     "tekst": "montere og vedlikeholde installasjoner i brønner og borehull i berg og løsmasser"
+    },
+    {
+     "kode": "KM5779",
+     "tekst": "utføre horisontalboring og legge til rette for å bygge infrastruktur"
+    },
+    {
+     "kode": "KM5768",
+     "tekst": "forsterke byggegrunnen med stålkjernepeler, rørspunt og stag og trekke rør og kabler"
+    },
+    {
+     "kode": "KM5765",
+     "tekst": "bruke senkborhammer med høytrykksluft i sensitive løsmasser"
+    },
+    {
+     "kode": "KM5764",
+     "tekst": "vedlikeholde rigg, høytrykkskompressor og senkborhammer"
+    },
+    {
+     "kode": "KM5763",
+     "tekst": "reparere høytrykkskompressor og borerigg og vurdere behov for service"
+    },
+    {
+     "kode": "KM5757",
+     "tekst": "utføre tiltak for å øke kapasiteten, montere mansjett, kollektorer og pumpe fram til og med trykktank"
+    },
+    {
+     "kode": "KM5767",
+     "tekst": "ta prøver av vann for vannanalyse etter gjeldende regelverk og vurdere konsekvenser for vannkvalitet"
+    },
+    {
+     "kode": "KM5778",
+     "tekst": "måle vanntap i brønnen med stigetest og dokumentere brønnens hydrauliske egenskaper"
+    },
+    {
+     "kode": "KM5766",
+     "tekst": "rehabilitere brønn og borehull"
+    },
+    {
+     "kode": "KM5761",
+     "tekst": "dokumentere utført arbeid og rapportere fra produksjonen"
+    },
+    {
+     "kode": "KM5773",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM5771",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy, vibrasjon, varme, farlige stoffer og støveksponering"
+    },
+    {
+     "kode": "KM5770",
+     "tekst": "håndtere avfall etter gjeldende regelverk, vurdere konsekvenser av feilhåndtering og iverksette tiltak"
+    },
+    {
+     "kode": "KM5777",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5760",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5759",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 brønn- og borefaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i brønn- og borefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 brønn- og borefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

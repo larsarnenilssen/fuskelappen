@@ -1,0 +1,116 @@
+{
+ "kode": "KER03-02",
+ "tittel": "Læreplan i keramikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV446",
+   "tittel": "Kompetansemål og vurdering keramikerfaget",
+   "fag": [
+    "KER3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4803",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM4802",
+     "tekst": "klargjøre leire, begitninger og glasurer ut fra idé og ønsket sluttprodukt"
+    },
+    {
+     "kode": "KM4819",
+     "tekst": "dreie og avdreie en serie like gjenstander"
+    },
+    {
+     "kode": "KM4807",
+     "tekst": "utforske og lage hanker, tuter og lokk tilpasset designet og i tråd med det ønskede resultatet"
+    },
+    {
+     "kode": "KM4806",
+     "tekst": "utforske og formgi gjenstander med ulike keramiske teknikker og gjøre rede for hvordan ulike teknikker påvirker resultatet"
+    },
+    {
+     "kode": "KM4818",
+     "tekst": "bearbeide og dekorere produkter med ulike overflate- og dybdeteknikker"
+    },
+    {
+     "kode": "KM4805",
+     "tekst": "utforske egenskapene og bruksområdene til ulike råstoffer og gjøre rede for hvordan valg påvirker prosessen"
+    },
+    {
+     "kode": "KM4817",
+     "tekst": "utvikle, konkretisere og gjøre rede for ideer til produkter med og uten digitale verktøy"
+    },
+    {
+     "kode": "KM4812",
+     "tekst": "lage skisser og arbeidstegninger og bruke det i eget arbeid"
+    },
+    {
+     "kode": "KM4820",
+     "tekst": "gjøre rede for hovedtrekk i keramikerfagets historie og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM4814",
+     "tekst": "stable keramikkovnen, tilpasse temperaturen og brenningsforløpet til forskjellige leirtyper og glasurer og gjøre rede for hvordan ulike valg påvirker en økonomisk brenning"
+    },
+    {
+     "kode": "KM4804",
+     "tekst": "vurdere og velge materialer og teknikker ut fra bestillinger, økonomiske rammer, frister og ressursforvaltning"
+    },
+    {
+     "kode": "KM4816",
+     "tekst": "vurdere etterspørsel etter keramiske produkter og gjøre rede for hvordan produksjonen kan tilpasses dette"
+    },
+    {
+     "kode": "KM4815",
+     "tekst": "reflektere over eget miljøavtrykk og gjøre rede for hvordan ulike valg påvirker en bærekraftig produksjon"
+    },
+    {
+     "kode": "KM4813",
+     "tekst": "presentere kalkyler og enkle budsjetter og beregne pris på ferdig produkt"
+    },
+    {
+     "kode": "KM4811",
+     "tekst": "gjøre rede for hvordan støv og avgasser påvirker arbeidsmiljøet, og følge retningslinjene knyttet til verkstedhygiene, helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4809",
+     "tekst": "gjøre rede for giftige glasurer og råvarer, anvende gjeldende lovverk knyttet til matsikkerhet og dokumentere bruk av dette i egne produkter"
+    },
+    {
+     "kode": "KM4810",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4821",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4808",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i keramikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i keramikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i keramikerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 20 - 23 virkedager."
+   ]
+  }
+ ]
+}

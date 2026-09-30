@@ -1,0 +1,400 @@
+{
+ "kode": "FJE03-03",
+ "tittel": "Læreplan i vg3 fjell- og bergverksfaget med fordjupingsområde",
+ "spraak": "nno",
+ "fastsatt": "2021-09-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV748",
+   "tittel": "Kompetansemål og vurdering vg3 fjell- og bergverksfaget med fordjuping i fjellsikring",
+   "fag": [
+    "FJE3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9882",
+     "tekst": "planleggje å bruke maskiner, sprengstoff og utstyr i grunnarbeid, mineraluttak og sikring av fjell, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9899",
+     "tekst": "utarbeide framtidsplanar, bestille, ta imot, handtere og lagre råvarer og materiale og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9878",
+     "tekst": "velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM9877",
+     "tekst": "bruke og halde ved like utstyr og maskiner for boring i fjell etter gjeldande regelverk og reflektere over ulike faktorar som påverkar miljø og kostnadseffektivitet"
+    },
+    {
+     "kode": "KM9876",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, dokumentere arbeidet i tråd med gjeldande krav for helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensane ved å ikkje følgje krava"
+    },
+    {
+     "kode": "KM9875",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9874",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9873",
+     "tekst": "kjeldesortere, vurdere om gjenbruk er mogleg, handtere avfall og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9872",
+     "tekst": "bruke fagterminologi i kommunikasjonen med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykket og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9871",
+     "tekst": "gjere greie for farar ved bruk av sprengstoff og tennmiddel og setje i verk tiltak som hindrar personskadar og skadar på materiell"
+    },
+    {
+     "kode": "KM9869",
+     "tekst": "klassifisere mineral og bergartar, identifisere bruksområda deira og vurdere farar ved sikringsarbeid"
+    },
+    {
+     "kode": "KM9897",
+     "tekst": "bruke kappe- og slipeutstyr til vedlikehald av borekroner, sikringsutstyr og kapping av boltar"
+    },
+    {
+     "kode": "KM9868",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, vibrasjonar og støveksponering"
+    },
+    {
+     "kode": "KM9898",
+     "tekst": "utføre arbeidsvarsling i samsvar med gjeldande regelverk og vurdere kva risikofaktorar under og etter arbeid som kan påverke sikkerheita for ein sjølv og andre og trafikkavviklinga"
+    },
+    {
+     "kode": "KM9870",
+     "tekst": "vurdere og gjennomføre sikkerheitstiltak ved arbeid i høgda og sikre risikoutsette arbeidssituasjonar"
+    },
+    {
+     "kode": "KM9867",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM9866",
+     "tekst": "vurdere farar ved forsagarar, varsle om fare og setje i verk tiltak for å unngå skadar"
+    },
+    {
+     "kode": "KM9864",
+     "tekst": "gjere greie for bruk og vedlikehald av knuse- og sikteutstyr"
+    },
+    {
+     "kode": "KM9863",
+     "tekst": "vurdere eigenskapar ved fjellet, rydde for lausstein og setje i verk mellombelse og permanente sikringstiltak før og etter sprenging, over og under jord"
+    },
+    {
+     "kode": "KM9896",
+     "tekst": "bruke kappe- og slipeutstyr til vedlikehald av borekroner, boltar og sikringsutstyr"
+    },
+    {
+     "kode": "KM9862",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9900",
+     "tekst": "velje personleg sikringsutstyr etter kva type arbeidsoperasjon det er, og bruke utstyret etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM9820",
+     "tekst": "vurdere tilstanden til fjellet, velje boltar og sikringsutstyr og drøfte kva faktorar som kan utløyse ras"
+    },
+    {
+     "kode": "KM9865",
+     "tekst": "vurdere korleis strøk og fall påverkar boltelengd og retning på bolten, bolte i fjell og estimere boltelengd"
+    },
+    {
+     "kode": "KM9879",
+     "tekst": "vurdere behovet for fagekspertise ut frå arbeidsbeskriving og eigenskapar ved arbeidsstaden"
+    },
+    {
+     "kode": "KM9881",
+     "tekst": "planleggje løfteoperasjonar, utføre anhuking, dirigere ved hjelp av handsignal og reflektere over konsekvensane av feil anhuking og signalgiving"
+    },
+    {
+     "kode": "KM9895",
+     "tekst": "utføre spett- og spylerensk, setje i verk sikringstiltak og drøfte faktorar som kan påverke sikkerheita til ein sjølv og andre"
+    },
+    {
+     "kode": "KM9894",
+     "tekst": "montere fjellboltar og stag, gjere greie for ulike forankringsmetodar og ulike typar boltar og stag og drøfte korleis val av materiale påverkar sluttresultatet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 fjell- og bergverksfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 fjell- og bergverksfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV749",
+   "tittel": "Kompetansemål og vurdering vg3 fjell- og bergverksfaget med fordjuping i knuseverk",
+   "fag": [
+    "FJE3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9836",
+     "tekst": "planleggje å bruke maskiner, sprengstoff og utstyr i grunnarbeid, mineraluttak og sikring av fjell, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9829",
+     "tekst": "utarbeide framtidsplanar, bestille, ta imot, handtere og lagre råvarer og materiale og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9893",
+     "tekst": "velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM9892",
+     "tekst": "bruke og halde ved like utstyr og maskiner for boring i fjell etter gjeldande regelverk og reflektere over ulike faktorar som påverkar miljø og kostnadseffektivitet"
+    },
+    {
+     "kode": "KM9891",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, dokumentere arbeidet i tråd med gjeldande krav for helse, miljø og sikkerheit og reflektere over konsekvensane ved ikkje å følgje krava"
+    },
+    {
+     "kode": "KM9890",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9889",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9888",
+     "tekst": "kjeldesortere, vurdere om gjenbruk er mogleg, handtere avfall og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9887",
+     "tekst": "bruke fagterminologi i kommunikasjonen med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykket og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9886",
+     "tekst": "gjere greie for farar ved bruk av sprengstoff og tennmiddel og setje i verk tiltak som hindrar personskadar og skadar på materiell"
+    },
+    {
+     "kode": "KM9831",
+     "tekst": "klassifisere mineral og bergartar, identifisere bruksområda deira og vurdere korleis kvaliteten kan påverke sluttprodukta"
+    },
+    {
+     "kode": "KM9885",
+     "tekst": "bruke kappe- og slipeutstyr til vedlikehald av borekroner, boltar og sikringsutstyr"
+    },
+    {
+     "kode": "KM9884",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, vibrasjonar og støveksponering"
+    },
+    {
+     "kode": "KM9883",
+     "tekst": "utføre arbeidsvarsling i samsvar med gjeldande regelverk og vurdere kva risikofaktorar under og etter arbeid som kan påverke trafikkavviklinga og sikkerheit for ein sjølv og andre"
+    },
+    {
+     "kode": "KM9861",
+     "tekst": "vurdere og gjennomføre sikkerheitstiltak ved arbeid i høgda og sikre risikoutsette arbeidssituasjonar"
+    },
+    {
+     "kode": "KM9830",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM9837",
+     "tekst": "vurdere farar ved forsagarar og utilsikta detonasjon, varsle om fare og setje i verk tiltak etter gjeldande reglar"
+    },
+    {
+     "kode": "KM9827",
+     "tekst": "gjere greie for bruk og vedlikehald av knuse- og sikteutstyr"
+    },
+    {
+     "kode": "KM9860",
+     "tekst": "vurdere eigenskapar ved fjellet, rydde for lausstein og setje i verk mellombelse og permanente sikringstiltak før og etter sprenging, over og under jord"
+    },
+    {
+     "kode": "KM9826",
+     "tekst": "bruke kappe- og slipeutstyr til vedlikehald av borekroner, boltar og sikringsutstyr"
+    },
+    {
+     "kode": "KM9859",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9858",
+     "tekst": "klassifisere mineral, identifisere bruksområde og vurdere korleis temperatur, fukt og klima påverkar eigenskapane til minerala"
+    },
+    {
+     "kode": "KM9835",
+     "tekst": "velje, bruke og halde ved like knuse- og sikteutstyr, gjere greie for ulike bruksområde for siktedukar og reflektere over korleis eigenskapar ved utstyret kan påverke kvaliteten på massar"
+    },
+    {
+     "kode": "KM9834",
+     "tekst": "utføre kvalitetsprøver ut frå bruksområdet til massane og reflektere over kva konsekvensar ulike kvalitetar har for sluttproduktet"
+    },
+    {
+     "kode": "KM9833",
+     "tekst": "setje i verk tiltak som hindrar støvutslepp i knuseprosessen, og drøfte konsekvensar for nærmiljøet ved støvutslepp"
+    },
+    {
+     "kode": "KM9832",
+     "tekst": "identifisere farlege stoff i fjellet ved hjelp av måleutstyr, vurdere ulike måtar å kassere massane på og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9825",
+     "tekst": "planleggje drift av mineraluttak, gjere greie for faktorar som kan skade miljøet, og setje i verk tiltak"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 fjell- og bergverksfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 fjell- og bergverksfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV750",
+   "tittel": "Kompetansemål og vurdering vg3 fjell- og bergverksfaget med fordjuping i bergsprengning",
+   "fag": [
+    "FJE3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9839",
+     "tekst": "planleggje å bruke maskiner, sprengstoff og utstyr i grunnarbeid, mineraluttak og sikring av fjell, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9840",
+     "tekst": "utarbeide framtidsplanar, bestille, ta imot, handtere og lagre råvarer og materiale og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9857",
+     "tekst": "velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM9856",
+     "tekst": "bruke og halde ved like utstyr og maskiner for boring i fjell etter gjeldande regelverk og reflektere over ulike faktorar som påverkar miljø og kostnadseffektivitet"
+    },
+    {
+     "kode": "KM9855",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og dokumentere arbeidet i tråd med gjeldande krav til helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9854",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9853",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobb-analyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9852",
+     "tekst": "kjeldesortere, vurdere om gjenbruk er mogleg, handtere avfall og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9851",
+     "tekst": "bruke fagterminologi i kommunikasjonen med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykket og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9850",
+     "tekst": "gjere greie for farar ved bruk av sprengstoff og tennmiddel og setje i verk tiltak som hindrar personskadar og skadar på materiell"
+    },
+    {
+     "kode": "KM9849",
+     "tekst": "klassifisere mineral og bergartar, identifisere bruksområda deira og vurdere korleis kvaliteten kan påverke sluttproduktet"
+    },
+    {
+     "kode": "KM9848",
+     "tekst": "bruke kappe- og slipeutstyr til vedlikehald av borekroner, boltar og sikringsutstyr"
+    },
+    {
+     "kode": "KM9847",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, vibrasjonar og støveksponering"
+    },
+    {
+     "kode": "KM9846",
+     "tekst": "utføre arbeidsvarsling i samsvar med gjeldande regelverk og vurdere kva risikofaktorar under og etter arbeid som kan påverke trafikkavviklinga og sikkerheit for ein sjølv og andre"
+    },
+    {
+     "kode": "KM9845",
+     "tekst": "vurdere og gjennomføre sikkerheitstiltak ved arbeid i høgda og sikre risikoutsette arbeidssituasjonar"
+    },
+    {
+     "kode": "KM9844",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM9843",
+     "tekst": "vurdere farar ved attståande forsagarar og utilsikta detonasjon, varsle om fare og setje i verk tiltak etter gjeldande reglar"
+    },
+    {
+     "kode": "KM9842",
+     "tekst": "gjere greie for bruk og vedlikehald av knuse- og sikteutstyr"
+    },
+    {
+     "kode": "KM9841",
+     "tekst": "vurdere eigenskapar ved fjellet, rydde for lausstein og setje i verk mellombelse og permanente sikringstiltak før og etter sprenging, over og under jord"
+    },
+    {
+     "kode": "KM9880",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9824",
+     "tekst": "velje tennmiddel og sprengstoff og vurdere konsekvensar av vala for sluttproduktet"
+    },
+    {
+     "kode": "KM9823",
+     "tekst": "utarbeide ein salveplan, vurdere strøk og fall i berggrunnen, og bore med omsyn til sikkerheit for ein sjølv og andre og i samsvar med sluttresultatet"
+    },
+    {
+     "kode": "KM9822",
+     "tekst": "utarbeide salverapport og reflektere over ulike faktorar som kan påverke underlaget for vidare graving og anleggsarbeid"
+    },
+    {
+     "kode": "KM9821",
+     "tekst": "lage ein varslingsplan og vurdere ulike sikringstiltak ved bruk av sprengstoff"
+    },
+    {
+     "kode": "KM9828",
+     "tekst": "lade og dekkje til salver med ulike dekkjemateriale og vurdere og gjennomføre sikringstiltak ved sprengingsarbeid"
+    },
+    {
+     "kode": "KM9901",
+     "tekst": "vurdere geologiske forhold, setje i verk tiltak som avgrensar vibrasjonar ved sprenging og reflektere over eigenskapar ved fjellet som påverkar vibrasjonar"
+    },
+    {
+     "kode": "KM9838",
+     "tekst": "transportere, handtere og lagre sprengstoff etter gjeldande regelverk og drøfte kva faktorar som reduserer risiko for tjuveri, brann og utilsikta detonasjon"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 fjell- og bergverksfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "nstruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 fjell- og bergverksfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 fjell- og bergverksfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

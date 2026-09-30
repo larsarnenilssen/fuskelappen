@@ -1,0 +1,152 @@
+{
+ "kode": "FUO03-02",
+ "tittel": "Læreplan i vg3 fjernstyrte undervannsoperasjoner",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV737",
+   "tittel": "Kompetansemål og vurdering vg3 fjernstyrte undervannsoperasjoner",
+   "fag": [
+    "FUO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9626",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i FU-faget i henhold til gjeldende regelverk og bedriftens internkontrollsystem, utstyrets begrensninger og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9650",
+     "tekst": "utføre arbeidet i henhold til sikkerhet ved arbeid på lav- og høyspenningsanlegg, utføre livreddende førstehjelp, arbeide etter ergonomiske prinsipper og forklare hvordan sikkerhetsarbeid forebygger ulykker og skader"
+    },
+    {
+     "kode": "KM9649",
+     "tekst": "funksjonsteste, vedlikeholde og reparere farkost, verktøy og støttesystemer og dokumentere arbeidet og vurdere testresultater mot tabeller og beregnede verdier"
+    },
+    {
+     "kode": "KM9624",
+     "tekst": "utføre ulike fjernstyrte undervannsoperasjoner i samarbeid med involverte parter og vurdere faren for skade på omkringliggende struktur og eget utstyr"
+    },
+    {
+     "kode": "KM9648",
+     "tekst": "klargjøre, konfigurere, programmere, koble til, teste og etterkontrollere farkost og verktøy og forklare framgangsmåten og hensikten med arbeidet"
+    },
+    {
+     "kode": "KM9646",
+     "tekst": "terminere løftekabel og forklare framgangsmåten fra start og til status ferdig godkjent for bruk"
+    },
+    {
+     "kode": "KM9647",
+     "tekst": "utføre løfteoperasjoner med involverte parter og redegjøre for begreper som statisk og dynamisk last i luft og i sjø, lastregulering, bevegelseskompensering og sertifisering av løfteutstyr"
+    },
+    {
+     "kode": "KM9645",
+     "tekst": "bruke ulike navigasjonshjelpemidler, forklare hvordan sensorer fungerer, og gjøre rede for bruk, muligheter og begrensninger innenfor autonom teknologi"
+    },
+    {
+     "kode": "KM9644",
+     "tekst": "iverksette tiltak for å unngå at olje og kjemikalier slipper ut til det ytre miljøet, og gjøre rede for konsekvenser ved utslipp"
+    },
+    {
+     "kode": "KM9643",
+     "tekst": "utføre datainnsamling og videoopptak, lagring og distribusjon, vurdere tiltak for å ivareta datasikkerheten og beskrive ulike formater"
+    },
+    {
+     "kode": "KM9642",
+     "tekst": "fjernstyre FU-systemet fra eksterne lokasjoner ved hjelp av ulike overføringsteknologier og gjøre rede for de forskjellige overføringsteknologiene"
+    },
+    {
+     "kode": "KM9641",
+     "tekst": "terminere optiske fiber, utføre kvalitetsmålinger og systematisk feilsøking og forklare fibersystemets funksjon og virkemåte"
+    },
+    {
+     "kode": "KM9640",
+     "tekst": "sammenstille og reparere undervannskabler, velge kabeltype og plugg og forklare skjøtemetoder"
+    },
+    {
+     "kode": "KM9639",
+     "tekst": "skifte ut hydrauliske og elektriske komponenter og foreta systematisk feilsøking, feilretting og optimalisering, og gjøre rede for FU-systemets elektriske og hydrauliske energioverføringer"
+    },
+    {
+     "kode": "KM9651",
+     "tekst": "bruke master- og slave manipulator i operasjoner og forklare funksjon og virkemåte til manipulatorene"
+    },
+    {
+     "kode": "KM9638",
+     "tekst": "iverksette tiltak mot farer ved arbeid på høyspenningsanlegg og forklare oppbygning og virkemåte av høyspentsystemet, jordfeilovervåkning og vern"
+    },
+    {
+     "kode": "KM9636",
+     "tekst": "kontrollere og vedlikeholde EX-utstyr og beskrive bruksområdene for utstyret"
+    },
+    {
+     "kode": "KM9635",
+     "tekst": "utføre arbeidet sikkert for å unngå skader som følge av potensielt energisatt utstyr og vurdere om utstyret kan ha opplagret energi og foreslå tiltak for å redusere farene"
+    },
+    {
+     "kode": "KM9634",
+     "tekst": "montere, konfigurere, kontrollere og vedlikeholde sensorer i FU-systemet og forklare sensorenes funksjon, virkemåte og begrensninger"
+    },
+    {
+     "kode": "KM9633",
+     "tekst": "arbeide på elektroniske og fiberoptiske delsystemer i farkost og støttesystem i henhold til ekomregelverk og gjøre rede for kommunikasjonsprotokoller og tilhørende nettermineringspunkter og terminalutstyr"
+    },
+    {
+     "kode": "KM9628",
+     "tekst": "anvende kommunikasjonssystemer, bruke et faglig presist språk og gjøre rede for faremomenter ved misforståelser og kommunikasjonssystemer som ikke fungerer"
+    },
+    {
+     "kode": "KM9627",
+     "tekst": "kontrollere og vedlikeholde trykkompensert utstyr og gjøre rede for trykkompensering og ulike typer olje, smøreutstyr, filtrering og rensing"
+    },
+    {
+     "kode": "KM9630",
+     "tekst": "kontrollere og vedlikeholde forskjellige typer batterier og gjøre rede for håndtering, bruk og faremomenter"
+    },
+    {
+     "kode": "KM9629",
+     "tekst": "overføre data og energi akustisk, optisk og induktivt mellom ulike systemer og forklare funksjon og virkemåte til de ulike overføringsmetodene"
+    },
+    {
+     "kode": "KM9631",
+     "tekst": "gjøre rede for økonomiske konsekvenser av driftsstans og skade på materiell og utstyr"
+    },
+    {
+     "kode": "KM9632",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9637",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9625",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9652",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 fjernstyrte undervannsoperasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 fjernstyrte undervannsoperasjoner. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 fjernstyrte undervannsoperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

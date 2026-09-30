@@ -1,0 +1,140 @@
+{
+ "kode": "KST03-02",
+ "tittel": "Læreplan i vg3 kostymesyerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV645",
+   "tittel": "Kompetansemål og vurdering vg3 kostymesyerfaget",
+   "fag": [
+    "KST3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7805",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7807",
+     "tekst": "analysere og tolke en kostymeillustrasjon eller kostymebeskrivelse og drøfte løsninger med oppdragsgiveren"
+    },
+    {
+     "kode": "KM7823",
+     "tekst": "presentere egne produkter og tjenester og bruke fagspråk i kommunikasjon med aktører, samarbeidspartnere og kolleger"
+    },
+    {
+     "kode": "KM7828",
+     "tekst": "anvende digitale ressurser, fagbøker, klær og tekstiler som informasjonskilde i forarbeid og arbeidsprosess, og reflektere kritisk rundt bruk av denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7827",
+     "tekst": "utforske stilhistoriens snitt, passform og silhuett og anvende denne kunnskapen i eget arbeid med framstilling av kostymer"
+    },
+    {
+     "kode": "KM7829",
+     "tekst": "vurdere kostymets helhetsinntrykk og funksjon i bruk og se det i sammenheng med hva karakteren skal formidle, og den visuelle helheten den er en del av"
+    },
+    {
+     "kode": "KM7813",
+     "tekst": "analysere og korrigere egen produksjon kontinuerlig med tanke på kostymets bruk og gitte tidsrammer"
+    },
+    {
+     "kode": "KM7826",
+     "tekst": "utforske ulike teknikker og materialer og anvende denne kunnskapen i kommunikasjon med oppdragsgiveren for å komme fram til ønsket uttrykk, funksjon og holdbarhet"
+    },
+    {
+     "kode": "KM7825",
+     "tekst": "utvikle arbeidstegninger, arbeidsbeskrivelser og planlegge arbeidsgangen i framstilling av kostymer"
+    },
+    {
+     "kode": "KM7824",
+     "tekst": "beregne kostnader for produksjon ut fra en bestilling og gjøre rede for hvordan ulike valg kan påvirke metode, materialer, tidsbruk, pris og holdbarhet"
+    },
+    {
+     "kode": "KM7820",
+     "tekst": "ta mål av utøveren og analysere fasong, balanse og volum i en kropp"
+    },
+    {
+     "kode": "KM7821",
+     "tekst": "konstruere og modellere mønstre og bearbeide eksisterende grunnformer"
+    },
+    {
+     "kode": "KM7815",
+     "tekst": "utarbeide mønstre til moderne og historiske kostymer, dansekostymer og fantasikostymer og til rollefigurer med spesiell kroppsform"
+    },
+    {
+     "kode": "KM7819",
+     "tekst": "utføre enkel drapering og vurdere fallet i stoffet"
+    },
+    {
+     "kode": "KM7817",
+     "tekst": "vurdere materialets kvaliteter og bærekraftig ressursutnyttelse og anvende disse vurderingene ved tilskjæring"
+    },
+    {
+     "kode": "KM7816",
+     "tekst": "anvende ulike fôr og innleggsmaterialer tilpasset ønsket uttrykk, funksjon og holdbarhet"
+    },
+    {
+     "kode": "KM7809",
+     "tekst": "anvende ulike sømteknikker og andre sammenføyingsteknikker og vurdere den mest hensiktsmessige metoden tilpasset kostymets funksjonalitet og bruk"
+    },
+    {
+     "kode": "KM7818",
+     "tekst": "vurdere og anvende forskjellige utstoppingsteknikker"
+    },
+    {
+     "kode": "KM7814",
+     "tekst": "planlegge og gjennomføre innprøvinger og tilpasse riktig balanse i kostymet og god bevegelighet i bruk"
+    },
+    {
+     "kode": "KM7806",
+     "tekst": "anvende varme, damp og pressing til å bearbeide og forme materialer, detaljer og plagg"
+    },
+    {
+     "kode": "KM7811",
+     "tekst": "vurdere og anvende ulike lukkemekanismer tilpasset hurtige skift og langvarig bruk"
+    },
+    {
+     "kode": "KM7810",
+     "tekst": "utforske og gjøre rede for hvordan patinering kan tilføre et kostyme karakter"
+    },
+    {
+     "kode": "KM7808",
+     "tekst": "gjøre rede for begrepet kontinuitet i film- og tv-produksjon og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7822",
+     "tekst": "utvikle og følge rutiner for orden på verkstedet og på egen arbeidsplass"
+    },
+    {
+     "kode": "KM7812",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet og velge hensiktsmessige ergonomiske arbeidsstillinger i arbeidet"
+    },
+    {
+     "kode": "KM7830",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kostymesyerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 kostymesyerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kostymesyerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
+   ]
+  }
+ ]
+}

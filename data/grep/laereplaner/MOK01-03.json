@@ -1,0 +1,223 @@
+{
+ "kode": "MOK01-03",
+ "tittel": "Læreplan i mediesamfunnet",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV897",
+   "tittel": "Kompetansemål og vurdering mediesamfunnet 1",
+   "fag": [
+    "MOK1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11710",
+     "tekst": "produsere innhold tilpasset ulike mottakere innenfor journalistikk, markedskommunikasjon, informasjon og underholdning"
+    },
+    {
+     "kode": "KM11711",
+     "tekst": "utforske og vurdere ny medieteknologi og aktuelle publiseringskanaler og kommunikasjonsformer"
+    },
+    {
+     "kode": "KM11712",
+     "tekst": "anvende grunnleggende modeller for kommunikasjon, tekstforståelse og mottakerforståelse i egne produksjoner"
+    },
+    {
+     "kode": "KM11713",
+     "tekst": "beskrive og kommentere egne og andres medietekster ved hjelp av fagbegreper"
+    },
+    {
+     "kode": "KM11714",
+     "tekst": "gjøre rede for grunnleggende retoriske strategier i medietekster, og produsere egne argumenterende og informerende tekster"
+    },
+    {
+     "kode": "KM11715",
+     "tekst": "gjøre rede for etiske normer og gjeldende lover og regler og anvende disse i egne produksjoner"
+    },
+    {
+     "kode": "KM11716",
+     "tekst": "bruke strategier for kildesøk og utøve kildekritikk i tilknytning til tekster og medieproduksjoner"
+    },
+    {
+     "kode": "KM11717",
+     "tekst": "beskrive egen mediebruk og diskutere egen rolle som deltaker i mediene"
+    },
+    {
+     "kode": "KM11718",
+     "tekst": "drøfte eksempler på hvordan medier framstiller og representerer ulike individer og grupper i samfunnet"
+    },
+    {
+     "kode": "KM11719",
+     "tekst": "drøfte grunnleggende problemstillinger knyttet til demokrati og ytringsfrihet og representasjon i mediene"
+    },
+    {
+     "kode": "KM11720",
+     "tekst": "presentere sentrale hendelser i mediehistorien"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i mediesamfunnet 1. Elevene viser og utvikler kompetanse i faget når de produserer innhold innenfor ulike sjangre, tilpasset ulike mottakere, medier og publiseringskanaler. De viser og utvikler også kompetanse når de benytter virkemidler, etiske normer og kildekritikk i egne tekster og produksjoner, og når de gjenkjenner disse i andres tekster og produkter. Videre viser elevene kompetanse når de bruker eksempler og begrepsapparat på en presis måte for å diskutere mediehistoriske hendelser og medienes rolle i samfunnet. De viser også kompetanse når de bruker grunnleggende kommunikasjonsmodeller for å gjøre rede for faglige valg, og når de vurderer og diskuterer egen mediebruk og andre mediefaglige problemstillinger, muntlig og i egne tekster.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å gi elevene varierte utfordringer innenfor ulike sjangre og arbeidsmetoder og gjennom å gi dem tilbakemeldinger i ulike former knyttet til arbeidsprosesser og presentasjoner. Læreren skal være i dialog med elevene om utviklingen deres i arbeid med skriftlige og sammensatte tekster, produksjoner og prosjekter, og elevene skal få mulighet til å prøve seg fram. Læreren skal legge til rette for kritisk tenkning gjennom aktuelle og varierte eksempler, samtaler og faglige diskusjoner. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle kompetansen sin innenfor innholdsproduksjon, argumentasjon, analyse og kildeferdighet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter mediesamfunnet 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i mediesamfunnet 1 basert på kompetansen eleven har vist gjennom arbeid med sammensatte medietekster i ulike sjangre, gjennom arbeid med argumenterende tekster og gjennom refleksjon, valg og anvendt fagkunnskap i tekster, presentasjoner, diskusjoner og prosesser."
+   ]
+  },
+  {
+   "kode": "KV898",
+   "tittel": "Kompetansemål og vurdering mediesamfunnet 2",
+   "fag": [
+    "MOK1Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11721",
+     "tekst": "produsere publiseringsklart innhold tilpasset ulike målgrupper, innenfor journalistikk, markedskommunikasjon, informasjon og underholdning"
+    },
+    {
+     "kode": "KM11722",
+     "tekst": "diskutere ny medieteknologi og aktuelle publiseringskanaler og kommunikasjonsformer, og utvikle innhold for disse"
+    },
+    {
+     "kode": "KM11723",
+     "tekst": "gjøre rede for grunnleggende teorier om markedskommunikasjon og segmentering, anvende disse ved egne produksjoner"
+    },
+    {
+     "kode": "KM11724",
+     "tekst": "analyser og diskutere strategier i egne og andres medietekster, og gjennomføre egne argumenterende og informerende tekst- og medieproduksjoner"
+    },
+    {
+     "kode": "KM11725",
+     "tekst": "diskutere etiske normer og gjeldende lover og regler og anvende dem i egne produksjoner"
+    },
+    {
+     "kode": "KM11726",
+     "tekst": "dokumentere og diskutere kildebruk i egne og andres tekster og produksjoner"
+    },
+    {
+     "kode": "KM11727",
+     "tekst": "gjøre rede for og vurdere hvordan mediene innhenter og presenterer kildemateriale og statistikk"
+    },
+    {
+     "kode": "KM11728",
+     "tekst": "gjøre rede for teorier om mediebruk og mediepåvirkning, og drøfte hvordan medier påvirker individ og samfunn"
+    },
+    {
+     "kode": "KM11729",
+     "tekst": "gjøre rede for hovedtrekkene i nasjonal mediepolitikk"
+    },
+    {
+     "kode": "KM11730",
+     "tekst": "drøfte betydningen av ytrings- og pressefrihet for et demokratisk samfunn"
+    },
+    {
+     "kode": "KM11731",
+     "tekst": "diskutere hvordan energi, miljø og bærekraft er knyttet til utvikling, produksjon og bruk av medieteknologi"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i mediesamfunnet 2. Elevene viser og utvikler kompetanse i faget når de produserer publiseringsklart innhold innenfor ulike sjangre, tilpasset ulike mottakere, medier og publiseringskanaler. De viser og utvikler også kompetanse når de benytter virkemidler, retoriske strategier, etiske normer og kildekritikk i egne tekster og produksjoner, og når de gjenkjenner disse i andres tekster og produkter. Videre viser og utvikler elevene kompetanse når de bruker eksempler, begrepsapparat og grunnleggende teori på en presis måte for å beskrive og diskutere medienes rolle i samfunnet. De viser også kompetanse når de redegjør for egne valg med en faglig begrunnelse, og når de vurderer og drøfter hvordan mediene framstiller og påvirker individ og samfunn, muntlig og i egne tekster.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å gi elevene varierte utfordringer innenfor ulike sjangre og arbeidsmetoder og gjennom å gi dem tilbakemeldinger i ulike former knyttet til arbeidsprosesser og presentasjoner. Læreren skal være i dialog med elevene om utviklingen deres i arbeid med skriftlige og sammensatte tekster, produksjoner og prosjekter, og elevene skal få mulighet til å prøve seg fram. Læreren skal legge til rette for kritisk tenkning gjennom aktuelle og varierte eksempler, samtaler og faglige diskusjoner. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle kompetansen sin innenfor innholdsproduksjon, argumentasjon og drøfting, analyse og kildeferdighet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter mediesamfunnet 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i mediesamfunnet 2 basert på kompetansen eleven har vist gjennom arbeid med sammensatte medietekster i ulike sjangre, gjennom arbeid med argumenterende og drøftende tekster og gjennom refleksjon, valg og anvendt fagkunnskap i tekster, presentasjoner, diskusjoner og prosesser."
+   ]
+  },
+  {
+   "kode": "KV899",
+   "tittel": "Kompetansemål og vurdering mediesamfunnet 3",
+   "fag": [
+    "MOK1Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11732",
+     "tekst": "planlegge, produsere, publisere og drøfte innhold i medieprodukter i ulike sjangre og for ulike målgrupper"
+    },
+    {
+     "kode": "KM11733",
+     "tekst": "vurdere og anvende modeller for analyse av avsendere, mottakere og målgrupper"
+    },
+    {
+     "kode": "KM11734",
+     "tekst": "analysere egne og andres medietekster og produksjoner, og diskutere funksjonen de har i samfunnet"
+    },
+    {
+     "kode": "KM11735",
+     "tekst": "vurdere kildebruk, retorikk og argumentasjon i egne og andres medietekster, og produsere argumenterende og informerende tekster i ulike sjangre"
+    },
+    {
+     "kode": "KM11736",
+     "tekst": "drøfte problemstillinger knyttet til etiske normer og gjeldende lover og regler, og anvende de samme prinsippene i egne produksjoner"
+    },
+    {
+     "kode": "KM11737",
+     "tekst": "gi eksempler på skillet mellom private og redaksjonelle medieaktører og drøfte forskjeller på journalistikk, markedskommunikasjon, informasjon og underholdning"
+    },
+    {
+     "kode": "KM11738",
+     "tekst": "drøfte hensikten med bruk av stordata og algoritmer i medieproduksjoner, markedsføring og publisering"
+    },
+    {
+     "kode": "KM11739",
+     "tekst": "drøfte mediepåvirkning og medienes makt, og diskutere hvordan medier kan skape, forsterke eller svekke informasjonskløfter, digitale skiller og mediemangfold"
+    },
+    {
+     "kode": "KM11740",
+     "tekst": "drøfte mediepolitikk, eierskap og mediemangfold i samfunnet ved hjelp av offentlighetsbegrepet"
+    },
+    {
+     "kode": "KM11741",
+     "tekst": "vurdere eksempler på samiske, norske og internasjonale mediers framstilling av klimaspørsmål, forbrukersamfunn og bærekraftig utvikling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i mediesamfunnet 3. Elevene viser og utvikler kompetanse i faget når de planlegger, produserer, publiserer og drøfter innhold innenfor ulike sjangre, tilpasset ulike mottakere, medier og kanaler. De viser og utvikler også kompetanse når de vurderer, bruker og dokumenterer ulike virkemidler, retoriske strategier, etiske normer og kildekritikk i egne tekster og produksjoner. Videre viser og utvikler elevene kompetanse når de analyserer medietekster og produksjoner, og når de diskuterer ulike teksters virkemidler, budskap og funksjon i en samfunnskontekst. De viser og utvikler også kompetanse når de bruker selvstendige eksempler og mediefaglig teori og begrepsapparat på en presis måte for å drøfte mediemakt og medienes rolle i samfunnet og offentligheten. Videre viser og utvikler de kompetanse når de argumenterer omkring, diskuterer og drøfter sammensatte problemstillinger på en objektiv og nyansert måte, muntlig og i egne tekster.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å gi elevene varierte utfordringer innenfor ulike sjangre og arbeidsmetoder og gjennom å gi dem tilbakemeldinger i ulike former knyttet til arbeidsprosesser og presentasjoner. Læreren skal være i dialog med elevene om utviklingen deres i arbeid med skriftlige og sammensatte tekster, produksjoner og prosjekter, og elevene skal få mulighet til å prøve seg fram. Læreren skal legge til rette for kritisk tenkning gjennom aktuelle og varierte eksempler, samtaler og faglige diskusjoner. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle kompetansen sin innenfor innholdsproduksjon, argumentasjon og drøfting, analyse og kildeferdighet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter mediesamfunnet 3. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i mediesamfunnet 3 basert på kompetansen eleven har vist gjennom arbeid med sammensatte medietekster i ulike sjangre, gjennom arbeid med argumenterende og drøftende tekster og gjennom refleksjon, valg og anvendt fagkunnskap i tekster, presentasjoner, diskusjoner og prosesser."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Mediesamfunnet 1: Eleven skal ha én standpunktkarakter.",
+    "Mediesamfunnet 2: Eleven skal ha én standpunktkarakter.",
+    "Mediesamfunnet 3: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Mediesamfunnet 1: Eleven kan trekkes ut til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Mediesamfunnet 2: Eleven kan trekkes ut til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Mediesamfunnet 3: Eleven kan trekkes ut til skriftlig eksamen eller praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Praktisk eksamen blir utarbeidet og sensurert lokalt. Praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Mediesamfunnet 1: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Mediesamfunnet 2: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Mediesamfunnet 3: Privatisten skal opp til skriftlig eksamen og praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

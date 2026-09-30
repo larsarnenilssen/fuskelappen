@@ -1,0 +1,88 @@
+{
+ "kode": "MET03-01",
+ "tittel": "Læreplan i vg3 medieteknikkfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV558",
+   "tittel": "Kompetansemål og vurdering vg3 medieteknikkfaget",
+   "fag": [
+    "MET3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6457",
+     "tekst": "planleggje og gjennomføre ein teknisk produksjon frå idé til ferdig produkt på aktuelle plattformer"
+    },
+    {
+     "kode": "KM6458",
+     "tekst": "velje, setje opp og bruke teknisk utstyr innanfor lyd-, lys- og biletproduksjon"
+    },
+    {
+     "kode": "KM6459",
+     "tekst": "nytte programvare og utstyr for konfigurasjon av system og løysingar i tekniske produksjonar"
+    },
+    {
+     "kode": "KM6460",
+     "tekst": "velje og nytte verktøy for informasjonsdistribusjon og mediepublisering på ulike plattformer tilpassa den aktuelle produksjonen"
+    },
+    {
+     "kode": "KM6465",
+     "tekst": "drifte og halde ved like teknisk utstyr"
+    },
+    {
+     "kode": "KM6461",
+     "tekst": "gjere greie for bruksområda til ulike filformat og filsystem og velje filformat og filsystem tilpassa den aktuelle produksjonen"
+    },
+    {
+     "kode": "KM6464",
+     "tekst": "beskrive kostnadsstyringa i eit prosjekt og setje opp eit budsjett for eit prosjekt"
+    },
+    {
+     "kode": "KM6467",
+     "tekst": "gjere greie for val av faglege løysingar i ein produksjon og presentere løysingane til aktørane i eit prosjekt"
+    },
+    {
+     "kode": "KM6466",
+     "tekst": "utforske og analysere eksisterande system og føreslå og argumentere for tiltak til forbetring av systema"
+    },
+    {
+     "kode": "KM6463",
+     "tekst": "vurdere og reflektere over pliktene og rettane til oppdragsgivaren og arbeidstakaren i arbeidet med oppdrag"
+    },
+    {
+     "kode": "KM6462",
+     "tekst": "vurdere risiko og sikkerheit i eit prosjekt i samsvar med gjeldande regelverk, og reflektere over kva konsekvensar regelverket har for eige arbeid"
+    },
+    {
+     "kode": "KM6469",
+     "tekst": "gjere greie for miljømessige konsekvensar ved ein produksjon og foreslå utbetringstiltak"
+    },
+    {
+     "kode": "KM6468",
+     "tekst": "gjere greie for kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har i lærebedrifta"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 medieteknikkfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 medieteknikkfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 medieteknikkfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
+   ]
+  }
+ ]
+}

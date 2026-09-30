@@ -1,0 +1,128 @@
+{
+ "kode": "FRI03-02",
+ "tittel": "Læreplan i vg3 frisørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV598",
+   "tittel": "Kompetansemål og vurdering vg3 frisørfaget",
+   "fag": [
+    "FRI3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6907",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsprosesser"
+    },
+    {
+     "kode": "KM6918",
+     "tekst": "beregne pris på varer og tjenester og vurdere vareforbruk, tidsbruk og lønnsomhet"
+    },
+    {
+     "kode": "KM6913",
+     "tekst": "følge gjeldende rutiner og regelverk for helse, miljø og sikkerhet i alle arbeidsprosesser i frisørfaget"
+    },
+    {
+     "kode": "KM6912",
+     "tekst": "følge gjeldende forskrift og regelverk for smittevern og anvende tiltak som fremmer smitteforebygging og hygiene i arbeidsprosessen"
+    },
+    {
+     "kode": "KM6919",
+     "tekst": "innhente og anvende produkters innholdsdeklarasjoner og bruksanvisninger, og vurdere produktenes egenskaper og påvirkning på helse og miljø"
+    },
+    {
+     "kode": "KM6914",
+     "tekst": "anvende og tilpasse ulike kommunikasjonsformer i samarbeid med kunder, kolleger og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM6927",
+     "tekst": "anvende teori om hår og hodebunnstilstander og vurdere behandling ut fra et etisk perspektiv"
+    },
+    {
+     "kode": "KM6926",
+     "tekst": "gjennomføre hodebunnsmassasje og gjøre rede for hensikten og valget av produkter og massasjeteknikk"
+    },
+    {
+     "kode": "KM6923",
+     "tekst": "anvende teknikker, produkter og verktøy ut fra kundens ønsker og forutsetning"
+    },
+    {
+     "kode": "KM6928",
+     "tekst": "kombinere klippeformer for å oppnå maskuline og feminine former"
+    },
+    {
+     "kode": "KM6910",
+     "tekst": "anvende kombinasjoner av klippe- og effileringsteknikker og gjøre rede for valgene ut fra ønsket resultat"
+    },
+    {
+     "kode": "KM6924",
+     "tekst": "anvende prinsipper ved klipping av skjegg ut fra ønsker og kundens forutsetninger og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM6922",
+     "tekst": "utforske og gjøre rede for tradisjonelle og eksperimentelle metoder for å skape ulike former og uttrykk i frisyreform"
+    },
+    {
+     "kode": "KM6921",
+     "tekst": "anvende fargeteori og gjøre rede for produkt og teknikk i fargeendringsprosesser"
+    },
+    {
+     "kode": "KM6920",
+     "tekst": "anvende strukturendringsteori og gjøre rede for produkt og teknikk i strukturendringsprosesser"
+    },
+    {
+     "kode": "KM6911",
+     "tekst": "anvende teori om farging og forming av vipper og bryn i gjennomføring av behandlinger og gjøre rede for valg av produkter, teknikk og estetisk uttrykk"
+    },
+    {
+     "kode": "KM6925",
+     "tekst": "anvende slør, løshår og andre rekvisitter for å oppnå ønsket uttrykk"
+    },
+    {
+     "kode": "KM6909",
+     "tekst": "anvende arbeidsbeskrivelser, digitale ressurser og andre visuelle hjelpemidler i arbeidsprosesser og presentasjoner"
+    },
+    {
+     "kode": "KM6916",
+     "tekst": "utforske moter og trender i et nasjonal og internasjonalt perspektiv og bruke dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM6915",
+     "tekst": "utvikle og bruke ulike strategier for å møte forventninger fra kunder, og vurdere etiske problemstillinger knyttet til kundens forutsetninger, ulike kulturer og tradisjoner"
+    },
+    {
+     "kode": "KM6908",
+     "tekst": "anvende aktuelle markedsføringskanaler og sosiale medier for å markedsføre bedriften, frisørfaget og seg selv som en yrkesutøver"
+    },
+    {
+     "kode": "KM6917",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM6929",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 frisørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 frisørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 frisørfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
+   ]
+  }
+ ]
+}

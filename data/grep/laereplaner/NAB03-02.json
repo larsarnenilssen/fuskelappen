@@ -1,0 +1,109 @@
+{
+ "kode": "NAB03-02",
+ "tittel": "Læreplan i Vg3 naturforvaltning",
+ "spraak": "nno",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV614",
+   "tittel": "Kompetansemål og vurdering vg3 naturforvaltning",
+   "fag": [
+    "NAB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7165",
+     "tekst": "utforske og beskrive sentrale artar, biotiske og abiotiske faktorar og biologiske prosessar i lokale eller globale økosystem"
+    },
+    {
+     "kode": "KM7170",
+     "tekst": "drøfte korleis synet på og bruken av natur som livsgrunnlag og til rekreasjon har endra seg over tid og i samspel med lokal kultur og identitet"
+    },
+    {
+     "kode": "KM7171",
+     "tekst": "gjere greie for korleis beiting i utmark påverkar natur og biologisk mangfald, og reflektere over korleis rovviltforvaltninga verkar inn på norsk og samisk næringsaktivitet og kultur"
+    },
+    {
+     "kode": "KM7172",
+     "tekst": "kartleggje artar, naturtypar eller naturressursar, og planleggje og gjennomføre eit tiltak som kan medverke til ei ønskt utvikling"
+    },
+    {
+     "kode": "KM7173",
+     "tekst": "drøfte korleis menneskeleg aktivitet kan påverke lokale eller globale økosystem"
+    },
+    {
+     "kode": "KM7174",
+     "tekst": "reflektere over korleis artar og område blir forvalta av grunneigarar og offentlege myndigheiter på ulike nivå"
+    },
+    {
+     "kode": "KM7167",
+     "tekst": "beskrive korleis forvaltningsplanar for artar og område blir utarbeidde og utforske korleis dei blir brukte"
+    },
+    {
+     "kode": "KM7169",
+     "tekst": "beskrive hovudtrekka i offentleg arealplanlegging og drøfte korleis ein tek omsyn til ulike brukar- og eigarinteresser"
+    },
+    {
+     "kode": "KM7164",
+     "tekst": "gjere greie for hovudtrekka i og drøfte formålet med nasjonalt regelverk og internasjonale avtalar som gjeld forvaltning av natur"
+    },
+    {
+     "kode": "KM7166",
+     "tekst": "presentere lokale, regionale eller globale miljøproblem og drøfte ulike løysingar"
+    },
+    {
+     "kode": "KM7168",
+     "tekst": "drøfte korleis berekraftig næringsverksemd, naturvern og friluftsinteresser kan samordnast i eit område, kva etiske dilemma og interessekonfliktar som kan oppstå, og korleis dei kan løysast"
+    },
+    {
+     "kode": "KM7175",
+     "tekst": "utforske og vurdere korleis bruk av natur kan bidra til betre fysisk og psykisk helse"
+    },
+    {
+     "kode": "KM7176",
+     "tekst": "gjennomføre idémyldringsprosessar for å utvikle opplevingsbasert næringsaktivitet og reflektere over korleis aktiviteten kan gjennomførast på ein berekraftig måte"
+    },
+    {
+     "kode": "KM7177",
+     "tekst": "gjere greie for omgrepet sirkulær økonomi og drøfte korleis sirkulær-økonomiske omsyn kan bidra til berekraftig naturforvaltning"
+    },
+    {
+     "kode": "KM7178",
+     "tekst": "presentere ei produksjonsbedrift og utforske korleis naturbaserte materiale kan erstatte produkt med stor klimabelastning"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget vg3 naturforvaltning når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget vg3 naturforvaltning. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget vg3 naturforvaltning ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget vg3 naturforvaltning basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 naturforvaltning: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Vg3 naturforvaltning: Eleven skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Vg3 naturforvaltning: Privatisten skal opp til ein skriftleg og ein munnleg eksamen. Eksamenane blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

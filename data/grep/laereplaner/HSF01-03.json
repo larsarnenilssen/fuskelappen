@@ -1,0 +1,208 @@
+{
+ "kode": "HSF01-03",
+ "tittel": "Læreplan i vg1 helse- og oppvekstfag",
+ "spraak": "nno",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV244",
+   "tittel": "Kompetansemål og vurdering helsefremjande arbeid",
+   "fag": [
+    "HSF1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2652",
+     "tekst": "beskrive korleis kroppen er bygd opp, og forklare korleis han fungerer"
+    },
+    {
+     "kode": "KM2651",
+     "tekst": "vurdere kva som fremjar psykisk og fysisk helse, og korleis ein kan førebyggje livsstilssjukdommar og hindre smitte"
+    },
+    {
+     "kode": "KM2627",
+     "tekst": "planleggje, gjennomføre og vurdere aktivitetar som bidreg til meistring, utvikling og god helse"
+    },
+    {
+     "kode": "KM2650",
+     "tekst": "setje saman og lage enkle måltid og vurdere energi- og næringsinnhaldet i tråd med kostråda frå helsestyresmaktene"
+    },
+    {
+     "kode": "KM2649",
+     "tekst": "bruke hygieniske prinsipp for å fremje god helse"
+    },
+    {
+     "kode": "KM2648",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM2647",
+     "tekst": "drøfte og gi døme på kva den enkelte og samfunnet kan gjere for å betre si eiga helse og folkehelsa"
+    },
+    {
+     "kode": "KM2646",
+     "tekst": "gjere greie for korleis forbruk og aktivitetar påverkar miljøet, og reflektere over korleis ein kan ta miljømedvitne val i yrkesutøvinga"
+    },
+    {
+     "kode": "KM2645",
+     "tekst": "bruke riktige arbeidsteknikkar og gode arbeidsstillingar og gjere greie for samanhengen mellom ergonomi og helse"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i helsefremjande arbeid når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i helsefremjande arbeid. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga til å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i helsefremjande arbeid ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i helsefremjande arbeid basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV245",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "HSF1Z05"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2644",
+     "tekst": "kommunisere og samhandle med menneske frå ulike kulturar, i ulike aldrar og livssituasjonar"
+    },
+    {
+     "kode": "KM2643",
+     "tekst": "vise relasjonsferdigheiter og reflektere over eiga åtferd"
+    },
+    {
+     "kode": "KM2642",
+     "tekst": "vise omsorg og yte service som fremjar trivsel og meistring"
+    },
+    {
+     "kode": "KM2641",
+     "tekst": "gjere greie for kva sosial og kulturell kompetanse er, og gi døme på korleis haldningar, verdiar og ulike menneskesyn påverkar yrkesutøvinga"
+    },
+    {
+     "kode": "KM2640",
+     "tekst": "drøfte korleis usemje kan handterast, og prøve ut ulike modellar for konflikthandtering"
+    },
+    {
+     "kode": "KM2639",
+     "tekst": "bruke digitale ressursar i kommunikasjon og samhandling"
+    },
+    {
+     "kode": "KM2638",
+     "tekst": "reflektere over kva digital dømmekraft inneber, vurdere kjelder kritisk og vise nettvett i arbeidet"
+    },
+    {
+     "kode": "KM2637",
+     "tekst": "bruke observasjons- og kommunikasjonsferdigheiter i eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kommunikasjon og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i kommunikasjon og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga til å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kommunikasjon og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV246",
+   "tittel": "Kompetansemål og vurdering yrkesliv helse- og oppvekstfag",
+   "fag": [
+    "HSF1Z06"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2630",
+     "tekst": "gjere greie for korleis helse- og oppvekstsektoren er organiserte, og reflektere over eige yrkesval"
+    },
+    {
+     "kode": "KM2635",
+     "tekst": "vise korleis brukarmedverknad kan gjennomførast i helse- og oppvekstsektoren"
+    },
+    {
+     "kode": "KM2634",
+     "tekst": "beskrive kva krav og forventningar som blir stilte til ein profesjonell yrkesutøvar, og reflektere over eigen praksis"
+    },
+    {
+     "kode": "KM2633",
+     "tekst": "gjere greie for gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM2632",
+     "tekst": "vurdere korleis hjelpemiddel, velferdsteknologi og annan teknologi kan brukast i yrkesutøvinga"
+    },
+    {
+     "kode": "KM2631",
+     "tekst": "drøfte korleis endringar i samfunnet kan påverke yrkesutøvinga og peike på moglegheiter og utfordringar desse endringane kan gji"
+    },
+    {
+     "kode": "KM2629",
+     "tekst": "forklare og gi døme på kva etiske dilemma i yrkesutøvinga er og korleis slike dilemma kan handterast"
+    },
+    {
+     "kode": "KM2636",
+     "tekst": "gjere greie for kvifor det er viktig med tverrfagleg samarbeid, og gi døme på yrkesgrupper som er med i eit slikt samarbeid"
+    },
+    {
+     "kode": "KM2628",
+     "tekst": "gjere greie for sentralt regelverk som regulerer arbeidet i helse- og oppvekstsektoren, og allmenne spelereglar som gjeld i arbeidslivet"
+    },
+    {
+     "kode": "KM2653",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM2654",
+     "tekst": "gjere greie for og vurdere korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i yrkesliv i helse- og oppvekstfag når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i yrkesliv i helse- og oppvekstfag. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga til å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i yrkesliv i helse- og oppvekstfag ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i yrkesliv i helse- og oppvekstfag basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helsefremjande arbeid: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha éin standpunktkarakter.",
+    "Yrkesliv i helse- og oppvekstfag: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Helsefremjande arbeid: Eleven skal ikkje opp til eksamen.",
+    "Kommunikasjon og samhandling: Eleven skal ikkje opp til eksamen.",
+    "Yrkesliv i helse- og oppvekstfag: Eleven skal ikkje opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Helsefremjande arbeid: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Yrkesliv i helse- og oppvekstfag: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helsefremjande arbeid, kommunikasjon og samhandling og yrkesliv i helse- og oppvekstfag: Privatisten skal opp til éin tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

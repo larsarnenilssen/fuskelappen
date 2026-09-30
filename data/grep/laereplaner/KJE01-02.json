@@ -1,0 +1,202 @@
+{
+ "kode": "KJE01-02",
+ "tittel": "Læreplan i kjemi",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV532",
+   "tittel": "Kompetansemål og vurdering kjemi 1",
+   "fag": [
+    "KJE1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6209",
+     "tekst": "forstå og bruke kjemisk terminologi og regler for navnsetting i faglig kommunikasjon"
+    },
+    {
+     "kode": "KM6238",
+     "tekst": "planlegge og gjennomføre forsøk, estimere usikkerhet og vurdere feilkilder, presentere resultater og argumentere for gyldigheten av resultater og konklusjoner"
+    },
+    {
+     "kode": "KM6223",
+     "tekst": "bruke informasjon fra sikkerhetsdatablad til å gjøre vurderinger knyttet til helse, miljø og sikkerhet i praktisk arbeid"
+    },
+    {
+     "kode": "KM6237",
+     "tekst": "bruke data, simuleringer og beregninger i tolkninger og til å trekke konklusjoner"
+    },
+    {
+     "kode": "KM6234",
+     "tekst": "bruke modeller til å forklare observasjoner og kjemiske fenomener, og argumentere for modellenes styrker og begrensinger"
+    },
+    {
+     "kode": "KM6232",
+     "tekst": "gjøre rede for oppbygningen av periodesystemet, og bruke kjerneladning og elektronkonfigurasjon til å forklare periodiske trender"
+    },
+    {
+     "kode": "KM6231",
+     "tekst": "gjøre rede for kjemisk binding som elektrostatiske krefter som virker mellom partikler, og bruke dette til å forklare molekylgeometri og organiske og uorganiske stoffers struktur, sammensetning og egenskaper"
+    },
+    {
+     "kode": "KM6235",
+     "tekst": "utforske og gjøre beregninger på kjemiske reaksjoner, og bruke observasjoner og teoretiske vurderinger til å identifisere reaksjonstype"
+    },
+    {
+     "kode": "KM6236",
+     "tekst": "gjøre beregninger med ulike enheter for konsentrasjon og bruke stoffkonsentrasjon i vurderinger av vann- og luftkvalitet"
+    },
+    {
+     "kode": "KM6233",
+     "tekst": "gjennomføre volumetrisk og gravimetrisk titreranalyse og drøfte bruk av titreranalyse"
+    },
+    {
+     "kode": "KM6224",
+     "tekst": "gjøre rede for sammenhengen mellom atomets oppbygning og grunnstoffers absorbsjons- og emisjonsspektre og bruke spektroskopiske metoder i kvalitativ og kvantitativ analyse"
+    },
+    {
+     "kode": "KM6229",
+     "tekst": "gjøre rede for entalpi og bruke beregninger og forsøk til å utforske entalpiendringer i reaksjoner"
+    },
+    {
+     "kode": "KM6230",
+     "tekst": "gjøre rede for kollisjonsteori og utforske faktorer som påvirker reaksjonsfart og kjemisk likevekt"
+    },
+    {
+     "kode": "KM6227",
+     "tekst": "utforske løseligheten til stoffer, og gjøre rede for betydningen av ladning, polaritet og temperatur for løselighet"
+    },
+    {
+     "kode": "KM6228",
+     "tekst": "gjøre rede for begrepene syre, base, protolyse og pH, og utforske egenskapene til sterke og svake syrer og baser"
+    },
+    {
+     "kode": "KM6226",
+     "tekst": "gjøre rede for prinsipper for grønn kjemi og drøfte hvordan bruk av prinsippene kan bidra til bærekraftig utvikling"
+    },
+    {
+     "kode": "KM6225",
+     "tekst": "presentere kjemifaglig innhold fra ulike kilder, kritisk vurdere kildene og bruke relevant teori til å drøfte innholdet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i kjemi 1. Elevene viser og utvikler kompetanse i faget når de gjør eksperimentelle og utforskende aktiviteter, og når de bruker kjemifaglige begreper, terminologi, modeller og beregninger i forklaringer og resonnementer. Videre viser og utvikler elevene kompetanse i kjemi 1 når de reflekterer over og vurderer kjemifaglige påstander og informasjon.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter som åpner for å formulere og utforske problemstillinger i faget. Læreren skal være i dialog med elevene om utviklingen deres i kjemi 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling.Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i kjemi 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter kjemi 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kjemi 1 basert på kompetansen eleven har vist gjennom praktisk, skriftlig og muntlig arbeid i faget. Standpunktvurderingen skal også være basert på kompetansen eleven har vist ved å bruke kjemifaglig terminologi og uttrykksformer i arbeid med faglige emner, sammenhenger og problemstillinger."
+   ]
+  },
+  {
+   "kode": "KV533",
+   "tittel": "Kompetansemål og vurdering kjemi 2",
+   "fag": [
+    "KJE1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6222",
+     "tekst": "forstå og bruke kjemisk terminologi og fagspråk i faglig kommunikasjon"
+    },
+    {
+     "kode": "KM6221",
+     "tekst": "planlegge og gjennomføre forsøk, drøfte metode og tiltak for å redusere risiko og vurdere usikkerhet og feilkilder i egne og andres forsøk"
+    },
+    {
+     "kode": "KM6219",
+     "tekst": "gjøre rede for hvordan naturvitenskapelige modeller og teorier utvikles, og reflektere over hvordan samarbeid bidrar til kunnskapsutvikling i kjemi"
+    },
+    {
+     "kode": "KM6214",
+     "tekst": "utforske redoksreaksjoner og bruke beregninger til å vurdere sammenhenger mellom masse, ladning, spenning og energi i elektrokjemiske reaksjoner"
+    },
+    {
+     "kode": "KM6239",
+     "tekst": "utforske likevekter og bruke massevirkningsloven til å gjøre beregninger og forklare observasjoner"
+    },
+    {
+     "kode": "KM6215",
+     "tekst": "gjøre rede for entropibegrepet og bruke entropi og entalpi til å vurdere spontanitet og endringer i likevektsystemer"
+    },
+    {
+     "kode": "KM6213",
+     "tekst": "utforske og beregne pH i vannløsninger og drøfte betydningen av buffere for regulering av pH i naturlige og industrielle prosesser"
+    },
+    {
+     "kode": "KM6212",
+     "tekst": "utforske og gjøre beregninger av løseligheten til stoffer og gjøre vurderinger av løselighet i biologiske og industrielle prosesser"
+    },
+    {
+     "kode": "KM6216",
+     "tekst": "utforske katalyserte reaksjoner og gjøre rede for betydningen av katalysatorer i biologiske og industrielle prosesser"
+    },
+    {
+     "kode": "KM6240",
+     "tekst": "gjøre rede for reaksjonstypene addisjon, eliminasjon, substitusjon, hydrolyse og kondensasjon og bruke elektrostatiske krefter til å forklare noen enkle reaksjonsmekanismer"
+    },
+    {
+     "kode": "KM6220",
+     "tekst": "gjennomføre synteser og gjøre rede for faktorer som påvirker utbytte og renhet i synteser"
+    },
+    {
+     "kode": "KM6218",
+     "tekst": "gjøre rede for prinsipper for kromatografi og bruke kromatografi for å separere og analysere organiske stoffblandinger"
+    },
+    {
+     "kode": "KM6217",
+     "tekst": "beskrive oppbygningen til noen biologiske makromolekyler og vurdere hvordan ytre faktorer kan påvirke molekylenes struktur og egenskaper"
+    },
+    {
+     "kode": "KM6211",
+     "tekst": "gi eksempler på produksjon, gjenvinning, deponering og nedbryting av noen metaller og noen typer plast, og drøfte tiltak som er i samsvar med prinsipper for grønn kjemi"
+    },
+    {
+     "kode": "KM6210",
+     "tekst": "utforske en teoretisk eller praktisk problemstilling, og drøfte og presentere funn"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i kjemi 2. Elevene viser og utvikler kompetanse i faget når de gjør eksperimentelle og utforskende aktiviteter, og når de bruker kjemifaglige begreper, terminologi, modeller og beregninger i forklaringer og resonnementer. Videre viser og utvikler elevene kompetanse i kjemi 2 når de reflekterer over og vurderer kjemifaglige påstander og informasjon.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter som åpner for å formulere og utforske problemstillinger i faget. Læreren skal være i dialog med elevene om utviklingen deres i kjemi 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i kjemi 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter kjemi 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kjemi 2 basert på kompetansen eleven har vist gjennom praktisk, skriftlig og muntlig arbeid i faget. Standpunktvurderingen skal også være basert på kompetansen eleven har vist ved å bruke kjemifaglig terminologi og uttrykksformer i arbeid med faglige emner, sammenhenger og problemstillinger."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Kjemi 1: Eleven skal ha én standpunktkarakter.",
+    "Kjemi 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Kjemi 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Kjemi 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Kjemi 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kjemi 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen skal ikke ha forberedelsesdel. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

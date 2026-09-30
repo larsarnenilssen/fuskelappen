@@ -1,0 +1,209 @@
+{
+ "kode": "IDR01-02",
+ "tittel": "Læreplan i aktivitetslære",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV275",
+   "tittel": "Kompetansemål og vurdering aktivitetslære 1",
+   "fag": [
+    "IDR1Z04"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2931",
+     "tekst": "gjennomføre samarbeid og fair play"
+    },
+    {
+     "kode": "KM2955",
+     "tekst": "bruke ferdigheter og gjennomføre målrettet trening i et variert utvalg av idretter fra ulike miljøkategorier"
+    },
+    {
+     "kode": "KM2954",
+     "tekst": "reflektere over egen praksis og opplevelser i trening og på tur"
+    },
+    {
+     "kode": "KM2953",
+     "tekst": "bruke ulike ferdigheter i svømming til livberging i vann"
+    },
+    {
+     "kode": "KM2952",
+     "tekst": "utforske og gjennomføre leker og aktiviteter i ulike miljøkategorier"
+    },
+    {
+     "kode": "KM2951",
+     "tekst": "gjennomføre målrettet trening av fysiske og koordinative egenskaper"
+    },
+    {
+     "kode": "KM2950",
+     "tekst": "gjennomføre kortsiktige planer og forstå betydningen av treningsplanlegging"
+    },
+    {
+     "kode": "KM2949",
+     "tekst": "planlegge og gjennomføre tur med og uten overnatting i ulike naturmiljøer"
+    },
+    {
+     "kode": "KM2948",
+     "tekst": "bruke redskaper, utstyr, mat og bekledning på en hensiktsmessig og sikker måte"
+    },
+    {
+     "kode": "KM2947",
+     "tekst": "planlegge og gjennomføre dagsopplegg hvor mestring av friluftslivaktiviteter står sentralt"
+    },
+    {
+     "kode": "KM2946",
+     "tekst": "planlegge og gjennomføre skadeforebyggende trening"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i aktivitetslære 1. Elevene viser og utvikler kompetanse i faget når de bidrar aktivt, yter sitt beste og reflekterer over ulike sider ved trening, aktiviteter og det å være ute på tur. De viser og utvikler også kompetanse i faget gjennom å vise ferdigheter i ulike idretter og aktiviteter, i livberging i vann, i trening og på turer. Videre viser og utvikler elevene kompetanse i faget ved å delta i samspill med andre og vise evne til samarbeid.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge opp til undervisning som gir den enkelte elev mulighet til å forbedre og utvikle ferdighetene sine på bakgrunn av eget utgangspunkt. Læreren skal være i dialog med elevene om utviklingen deres i aktivitetslære, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle ferdigheter og kunnskap på bakgrunn av tidligere erfaringer og eget utgangspunkt."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter aktivitetslære 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i aktivitetslære 1 basert på kompetansen eleven har vist gjennom ferdigheter og kunnskaper i idretter, lek, aktiviteter, basistrening og friluftsliv. Til grunn for sluttvurderingen må det ligge et bredt utvalg av aktiviteter og oppgaver der eleven må vise kompetanse i ulike sammenhenger, alene og sammen med andre."
+   ]
+  },
+  {
+   "kode": "KV276",
+   "tittel": "Kompetansemål og vurdering aktivitetslære 2",
+   "fag": [
+    "IDR1Z05"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2945",
+     "tekst": "anvende forpliktende samarbeid og fair play"
+    },
+    {
+     "kode": "KM2956",
+     "tekst": "utvikle ferdigheter og gjennomføre målrettet trening i et variert utvalg av idretter fra ulike miljøkategorier"
+    },
+    {
+     "kode": "KM2944",
+     "tekst": "reflektere over erfaring fra turer og aktiviteter"
+    },
+    {
+     "kode": "KM2942",
+     "tekst": "utforske og vise allsidighet i lek og aktiviteter i ulike miljøkategorier"
+    },
+    {
+     "kode": "KM2941",
+     "tekst": "utvikle fysiske, psykiske og koordinative egenskaper gjennom målrettet trening"
+    },
+    {
+     "kode": "KM2940",
+     "tekst": "gjennomføre treningsplaner og reflektere over betydningen av målrettet trening"
+    },
+    {
+     "kode": "KM2939",
+     "tekst": "planlegge, gjennomføre og vurdere tur med og uten overnatting i ulike naturmiljøer og til ulike årstider, hvor naturopplevelsen står sentralt"
+    },
+    {
+     "kode": "KM2938",
+     "tekst": "utvikle og anvende basisferdigheter i friluftsliv på en hensiktsmessig og bærekraftig måte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i aktivitetslære 2. Elevene viser og utvikler kompetanse i faget gjennom å utvikle ferdigheter i ulike idretter og aktiviteter og på turer. De viser og utvikler også kompetanse i faget ved å gjennomføre målrettet trening som skal gi dem mulighet til å utvikle sentrale ferdigheter og egenskaper. Videre viser og utvikler elevene kompetanse ved å vise allsidighet, samarbeide og anvende fair play.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge opp til undervisning som gir den enkelte elev mulighet til å forbedre og utvikle ferdighetene sine på bakgrunn av eget utgangspunkt. Læreren skal være i dialog med elevene om utviklingen deres i aktivitetslære, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å bli bevisste på ulike sider ved planlegging og gjennomføring av målrettet trening, aktiviteter og friluftslivsturer."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter aktivitetslære 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i aktivitetslære 2 basert på kompetansen eleven har vist gjennom ferdigheter og kunnskaper i idretter, lek, aktiviteter, basistrening og friluftsliv. Til grunn for sluttvurderingen må det ligge et bredt utvalg av aktiviteter og oppgaver der eleven må vise kompetanse i ulike sammenhenger, alene og sammen med andre."
+   ]
+  },
+  {
+   "kode": "KV277",
+   "tittel": "Kompetansemål og vurdering aktivitetslære 3",
+   "fag": [
+    "IDR1Z06"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2937",
+     "tekst": "reflektere over og anvende forpliktende samarbeid og fair play"
+    },
+    {
+     "kode": "KM2936",
+     "tekst": "utvikle og bruke ferdigheter gjennom målrettet trening i et variert utvalg av idretter"
+    },
+    {
+     "kode": "KM2935",
+     "tekst": "vurdere utbyttet av turer og aktiviteter"
+    },
+    {
+     "kode": "KM2934",
+     "tekst": "anvende motoriske ferdigheter, kreativitet og allsidighet i lek og aktiviteter"
+    },
+    {
+     "kode": "KM2933",
+     "tekst": "utvikle basisegenskaper gjennom systematisk trening"
+    },
+    {
+     "kode": "KM2932",
+     "tekst": "gjennomføre treningsplaner og vurdere betydningen av systematisk trening"
+    },
+    {
+     "kode": "KM2943",
+     "tekst": "planlegge, gjennomføre og vurdere turer med og uten overnatting i ulike naturmiljøer og til ulike årstider, hvor et bærekraftig friluftsliv er sentralt"
+    },
+    {
+     "kode": "KM2957",
+     "tekst": "reflektere over hvordan egen deltakelse i friluftsliv har betydning for samarbeid og fellesskap"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i aktivitetslære 3. Elevene viser og utvikler kompetanse i faget når de viser allsidighet og utvikler ferdigheter i ulike idretter, leker og aktiviteter og på turer. De viser og utvikler også kompetanse ved å gjennomføre og vurdere systematisk trening som skal gi dem muligheten til å utvikle sentrale ferdigheter og egenskaper. Videre viser og utvikler elevene kompetanse ved å bidra aktivt, yte sitt beste og reflektere over egne erfaringer i møte med friluftslivsturer, systematisk trening og ulike idretter og aktiviteter.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge opp til undervisning som gir den enkelte elev mulighet til å forbedre og utvikle ferdighetene sine på bakgrunn av eget utgangspunkt. Læreren skal være i dialog med elevene om utviklingen deres i aktivitetslære, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å bli bevisst på ulike sider av planlegging, gjennomføring og vurdering av systematisk trening, ferdighetsutvikling og friluftslivsturer."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter aktivitetslære 3. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i aktivitetslære 3 basert på kompetansen eleven har vist gjennom ferdigheter og kunnskaper i idretter, lek, aktiviteter, basistrening og friluftsliv. Til grunn for sluttvurderingen må det ligge et bredt utvalg av aktiviteter og oppgaver der eleven må vise kompetanse i ulike sammenhenger, alene og sammen med andre."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Aktivitetslære 1: Eleven skal ha én standpunktkarakter.",
+    "Aktivitetslære 2: Eleven skal ha én standpunktkarakter.",
+    "Aktivitetslære 3: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Aktivitetslære 1: Eleven skal ikke opp til eksamen.",
+    "Aktivitetslære 2: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Aktivitetslære 3: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Aktivitetslære 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Aktivitetslære 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Aktivitetslære 3: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

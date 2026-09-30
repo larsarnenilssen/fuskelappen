@@ -1,0 +1,176 @@
+{
+ "kode": "BMF02-03",
+ "tittel": "Læreplan i vg2 børsemakar",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV345",
+   "tittel": "Kompetansemål og vurdering produktutvikling og kvalitetssikring",
+   "fag": [
+    "BMF2Z03",
+    "BMF2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3630",
+     "tekst": "utarbeide risikoanalyse i samband med eit konkret arbeidsoppdrag og planleggje tiltak for å redusere risikoen knytt til oppdraget"
+    },
+    {
+     "kode": "KM3652",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    },
+    {
+     "kode": "KM3651",
+     "tekst": "planleggje og dokumentere prosessane i produksjonen av ein våpendel"
+    },
+    {
+     "kode": "KM3650",
+     "tekst": "bruke arbeidsteikningar og annan visuell informasjon i utforming og tilpassing av produkt på verkstaden og i kommunikasjon med andre"
+    },
+    {
+     "kode": "KM3649",
+     "tekst": "teikne, programmere og planleggje produksjon av enkle våpendelar i ei CNC-maskin"
+    },
+    {
+     "kode": "KM3648",
+     "tekst": "planleggje, dokumentere og sende plomberingsmelding i samband med deaktivering av skytevåpen"
+    },
+    {
+     "kode": "KM3647",
+     "tekst": "gjennomføre og dokumentere testing av våpen eller ammunisjon"
+    },
+    {
+     "kode": "KM3646",
+     "tekst": "utforske og nytte ulike arbeidsteknikkar, verktøy og materiale"
+    },
+    {
+     "kode": "KM3645",
+     "tekst": "vurdere og velje verktøy og materiale ut frå bruksområde, eigenskapane til materiala og miljøomsyn"
+    },
+    {
+     "kode": "KM3644",
+     "tekst": "vurdere og kvalitetssikre utført arbeid, nytte og følgje gjeldande lov- og regelverk for børsemakarfaget og reflektere over formålet med lover og reglar for utøving av børsemakarfaget på individ- og samfunnsnivå"
+    },
+    {
+     "kode": "KM3643",
+     "tekst": "gjere greie for dei mekaniske og ballistiske prosessane som skjer når eit skytevåpen blir avfyrt"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget produktutvikling og kvalitetssikring når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget produktutvikling og kvalitetssikring. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i produktutvikling og kvalitetssikring ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i produktutvikling og kvalitetssikring basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV346",
+   "tittel": "Kompetansemål og vurdering produksjon",
+   "fag": [
+    "BMF2Z04",
+    "BMF2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3653",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere arbeidsoppgåver knytte til det å reparere, halde ved like, modifisere og produsere våpen i samsvar med kvalitetsprosedyrar"
+    },
+    {
+     "kode": "KM3642",
+     "tekst": "utforske og bruke ulike verktøy og teknikkar i arbeidet med forskjellige materiale og former"
+    },
+    {
+     "kode": "KM3640",
+     "tekst": "planleggje og utføre modifikasjon av våpenmekanisme etter ønska og behova til oppdragsgivaren"
+    },
+    {
+     "kode": "KM3639",
+     "tekst": "beskrive og utføre enkle presisjonsfremjande tiltak på skytevåpen"
+    },
+    {
+     "kode": "KM3638",
+     "tekst": "planleggje og utføre hard- og mjuklodding av våpendelar"
+    },
+    {
+     "kode": "KM3637",
+     "tekst": "planleggje og utføre forskjellige overflatebehandlingar i ulike materialtypar for å ta vare på eigenskapane og utsjånaden på best mogleg vis"
+    },
+    {
+     "kode": "KM3636",
+     "tekst": "tilverke og montere våpendelar til mekanisme ved hjelp av verktøymaskiner og handverktøy"
+    },
+    {
+     "kode": "KM3635",
+     "tekst": "tilarbeide og forme våpendelar i dreiebenk med profilstål, fil og smergellerret til ønskt form og finish"
+    },
+    {
+     "kode": "KM3634",
+     "tekst": "utføre enkle våpenrelaterte oppdrag med utgangspunkt i ein sjølvlaga arbeidsplan"
+    },
+    {
+     "kode": "KM3633",
+     "tekst": "vurdere og nytte ulike sveisemetodar"
+    },
+    {
+     "kode": "KM3632",
+     "tekst": "bruke varmebehandling av metall for å forbetre mekaniske eigenskapar"
+    },
+    {
+     "kode": "KM3631",
+     "tekst": "nytte og halde ved like maskiner, verktøy og utstyr i samsvar med gjeldande regelverk for helse, miljø og tryggleik"
+    },
+    {
+     "kode": "KM3641",
+     "tekst": "reflektere over og følgje regelverk for helse, miljø og tryggleik og drøfte faktorar som kan bidra til sikker og trygg omgang med skytevåpen på individ- og samfunnsnivå"
+    },
+    {
+     "kode": "KM3654",
+     "tekst": "vurdere kost-nytte ved reparasjon av skytevåpen og reflektere over betydninga av reparasjon i et berekraftig perspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget produksjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget produksjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget produksjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget produksjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produktutvikling og kvalitetssikring: Eleven skal ha éin standpunktkarakter.",
+    "Produksjon: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Produktutvikling og kvalitetssikring og produksjon: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Produktutvikling og kvalitetssikring: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Produksjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Produktutvikling og kvalitetssikring og produksjon: Privatisten skal opp til ein tverrfaglig eksamen praktisk eksamen i desse felles programfaga. Eksamen blir utarbeid og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

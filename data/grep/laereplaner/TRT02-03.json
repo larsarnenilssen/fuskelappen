@@ -1,0 +1,176 @@
+{
+ "kode": "TRT02-03",
+ "tittel": "Læreplan i vg2 treteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV323",
+   "tittel": "Kompetansemål og vurdering tegning og materialvalg",
+   "fag": [
+    "TRT2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3324",
+     "tekst": "utforske ulike trematerialer og velge og bruke materialer ut i fra ønsket sluttprodukt"
+    },
+    {
+     "kode": "KM3347",
+     "tekst": "måle trefuktighet og gjøre rede for hvordan tørkeprosessen påvirker materialenes egenskaper"
+    },
+    {
+     "kode": "KM3346",
+     "tekst": "bruke ulike limtyper og velge påføringsmetode etter gjeldende regler for helse miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3345",
+     "tekst": "vurdere treproduktets tilstand og vurdere hvordan ytre og indre miljø påvirker sluttresultat og produktets levetid"
+    },
+    {
+     "kode": "KM3344",
+     "tekst": "drøfte sammenhenger mellom idé, design og produksjonsteknikk, og designe og produsere produkter"
+    },
+    {
+     "kode": "KM3343",
+     "tekst": "tegne tredimensjonale modeller med dataassisterte tegne- og konstruksjonsprogrammer og produsere produktet ved hjelp av datastyrte maskiner"
+    },
+    {
+     "kode": "KM3342",
+     "tekst": "velge materialer, bruke ulike sammensetningsmetoder for produkter ved å bruke material- og produksjonsstyringssystemer og vurdere hvilke faktorer som bidrar til kostnadseffektivitet"
+    },
+    {
+     "kode": "KM3341",
+     "tekst": "drøfte skogens betydning som ressurs og råstoffkilde og reflektere over miljøkonsekvenser av hogst"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget tegning og materialvalg når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker et av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget tegning og materialvalg. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget tegning og materialvalg ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget tegning og materialvalg basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV324",
+   "tittel": "Kompetansemål og vurdering produksjon",
+   "fag": [
+    "TRT2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3340",
+     "tekst": "planlegge produksjon av treprodukter og arbeide etter tegninger, beskrivelser og preaksepterte løsninger"
+    },
+    {
+     "kode": "KM3339",
+     "tekst": "gjøre rede for kvalitetssikringssystemer, arbeide i tråd med gjeldende krav for helse, miljø og sikkerhet og reflektere over konsekvensene av å ikke følge kravene"
+    },
+    {
+     "kode": "KM3329",
+     "tekst": "risikovurdere arbeidet, gjennomføre en sikker jobb analyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM3338",
+     "tekst": "lage ulike typer trevareprodukter og vurdere sluttproduktet ut fra kostnader, tidsbruk og miljøhensyn"
+    },
+    {
+     "kode": "KM3337",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, vurdere muligheter for å gjenbruke biprodukter og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM3336",
+     "tekst": "velge og bruke verktøy, maskiner og utstyr til ulike formål med hensyn til funksjonalitet, effektivitet og kvalitet på sluttproduktet"
+    },
+    {
+     "kode": "KM3335",
+     "tekst": "vedlikeholde verktøy, maskiner og utstyr"
+    },
+    {
+     "kode": "KM3348",
+     "tekst": "gjøre rede for årsaker til maskinstans og tiltak for å forhindre maskinstans"
+    },
+    {
+     "kode": "KM3334",
+     "tekst": "gjøre rede for egenskaper ved ulike treprodukter og vurdere hvordan egenskapene påvirker sluttproduktet"
+    },
+    {
+     "kode": "KM3349",
+     "tekst": "velge trebeskyttelsesmetode og overflatebehandle trevareprodukter"
+    },
+    {
+     "kode": "KM3333",
+     "tekst": "lage deler til trevareprodukter og ferdigprodukter ved hjelp av datastyrte maskiner"
+    },
+    {
+     "kode": "KM3332",
+     "tekst": "sette opp kapplister og materiallister for produkter"
+    },
+    {
+     "kode": "KM3331",
+     "tekst": "identifisere ulike typer teknikker og stilarter og gjøre rede for hvordan tradisjonelle arbeidsmetoder tar vare på fagets egenart og kulturarv"
+    },
+    {
+     "kode": "KM3330",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy- og støveksponering og bruk av kjemiske komponenter"
+    },
+    {
+     "kode": "KM3328",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og sikre effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM3327",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM3326",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM3325",
+     "tekst": "planlegge arbeidsprosesser, beregne kostnader og drøfte faktorer som påvirker bedriftens lønnsomhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker et av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Tegning og materialvalg: Eleven skal ha én standpunktkarakter.",
+    "Produksjon: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Tegning og materialvalg og produksjon: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Tegning og materialvalg: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Tegning og materialvalg og produksjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

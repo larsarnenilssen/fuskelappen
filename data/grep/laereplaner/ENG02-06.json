@@ -1,0 +1,200 @@
+{
+ "kode": "ENG02-06",
+ "tittel": "Læreplan i engelsk for elever med tegnspråk",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1040",
+   "tittel": "Kompetansemål og vurdering Vg1 yrkesfaglige utdanningsprogram",
+   "fag": [
+    "ENG2Z24"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13486",
+     "tekst": "bruke egnede strategier i språklæring, tekstskaping og kommunikasjon"
+    },
+    {
+     "kode": "KM13491",
+     "tekst": "bruke egnet teknologi og andre hjelpemidler i språklæring, tekstskaping og samhandling"
+    },
+    {
+     "kode": "KM13483",
+     "tekst": "oppfatte, forstå og bruke fagterminologi i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM13484",
+     "tekst": "uttrykke seg nyansert og presist med flyt og sammenheng, idiomatiske uttrykk og varierte setningsstrukturer tilpasset formål, mottaker og situasjon"
+    },
+    {
+     "kode": "KM13485",
+     "tekst": "gjøre rede for andres argumentasjon og bruke og følge opp andres innspill i samtaler og diskusjoner om yrkesrelevante emner"
+    },
+    {
+     "kode": "KM13487",
+     "tekst": "bruke kunnskap om sammenhenger mellom engelsk og andre språk eleven kjenner til i egen språklæring"
+    },
+    {
+     "kode": "KM13498",
+     "tekst": "bruke kunnskap om grammatikk og tekststruktur i arbeid med egne muntlige og skriftlige tekster"
+    },
+    {
+     "kode": "KM13488",
+     "tekst": "lese, diskutere og reflektere over innhold og virkemidler i ulike typer tekster, inkludert selvvalgte tekster"
+    },
+    {
+     "kode": "KM13489",
+     "tekst": "lese og sammenfatte faglig innhold fra engelskspråklig dokumentasjon"
+    },
+    {
+     "kode": "KM13490",
+     "tekst": "lese og sammenligne ulike sakprosatekster om samme emne fra forskjellige kilder og kritisk vurdere hvor pålitelige kildene er"
+    },
+    {
+     "kode": "KM13492",
+     "tekst": "bruke ulike kilder på en kritisk, hensiktsmessig og etterrettelig måte"
+    },
+    {
+     "kode": "KM13493",
+     "tekst": "skape yrkesrelevante tekster med struktur og sammenheng som beskriver og dokumenterer eget arbeid tilpasset formål, mottaker og situasjon"
+    },
+    {
+     "kode": "KM13494",
+     "tekst": "vurdere og bearbeide egne tekster ut fra faglige kriterier og kunnskap om språk"
+    },
+    {
+     "kode": "KM13495",
+     "tekst": "beskrive sentrale trekk ved framveksten av engelsk som arbeidsspråk"
+    },
+    {
+     "kode": "KM13497",
+     "tekst": "utforske og reflektere over mangfold og samfunnsforhold for talespråklige og tegnspråklige i den engelskspråklige verden ut fra historiske sammenhenger"
+    },
+    {
+     "kode": "KM13496",
+     "tekst": "diskutere og reflektere over form, innhold og virkemidler i engelskspråklige kulturelle uttrykksformer fra ulike medier, deriblant musikk/tegnspråkpoesi, film og spill"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i engelsk for elever med tegnspråk på Vg1 yrkesfaglige utdanningsprogram når de kommuniserer og samhandler nyansert og presist med flyt og sammenheng muntlig og skriftlig, tilpasset formål, mottaker og situasjon. Videre viser og utvikler de kompetanse når de skaper ulike typer tekster og når de bruker kilder på en kritisk, hensiktsmessig og etterrettelig måte.",
+    "Læreren skal bruke en hensiktsmessig språkmodalitet for å gjøre det engelske språket tilgjengelig for elevene. Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og ferdigheter i direkte kommunikasjon og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i engelsk og om valg av språkmodalitet. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle leseferdigheter, skriveferdigheter, ferdigheter i direkte kommunikasjon og digitale ferdigheter i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i engelsk for elever med tegnspråk ved avslutningen av opplæringen etter Vg1 yrkesfaglige utdanningsprogram. Læreren skal bruke en hensiktsmessig språkmodalitet for å gjøre det engelske språket tilgjengelig for elevene. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette én standpunktkarakter i engelsk basert på elevens samlede kompetanse i faget."
+   ]
+  },
+  {
+   "kode": "KV1041",
+   "tittel": "Kompetansemål og vurdering Vg1 studieforberedende utdanningsprogram",
+   "fag": [
+    "ENG2Z23"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13502",
+     "tekst": "bruke egnede strategier i språklæring, tekstskaping og kommunikasjon"
+    },
+    {
+     "kode": "KM13508",
+     "tekst": "bruke egnet teknologi og andre hjelpemidler i språklæring, tekstskaping og samhandling"
+    },
+    {
+     "kode": "KM13499",
+     "tekst": "oppfatte, forstå og bruke akademisk språk i arbeid med egne tekster"
+    },
+    {
+     "kode": "KM13500",
+     "tekst": "uttrykke seg nyansert og presist med flyt og sammenheng, idiomatiske uttrykk og varierte setningsstrukturer tilpasset formål, mottaker og situasjon"
+    },
+    {
+     "kode": "KM13501",
+     "tekst": "gjøre rede for andres argumentasjon og bruke og følge opp andres innspill i samtaler og diskusjoner om ulike emner"
+    },
+    {
+     "kode": "KM13504",
+     "tekst": "bruke kunnskap om sammenhenger mellom engelsk og andre språk eleven kjenner til i egen språklæring"
+    },
+    {
+     "kode": "KM13503",
+     "tekst": "bruke kunnskap om grammatikk og tekststruktur i arbeid med egne tekster"
+    },
+    {
+     "kode": "KM13505",
+     "tekst": "lese, diskutere og reflektere over innhold og virkemidler i ulike typer tekster, inkludert selvvalgte tekster"
+    },
+    {
+     "kode": "KM13506",
+     "tekst": "lese, analysere og tolke engelskspråklig skjønnlitteratur"
+    },
+    {
+     "kode": "KM13507",
+     "tekst": "lese og sammenligne ulike sakprosatekster om samme emne fra forskjellige kilder og kritisk vurdere hvor pålitelige kildene er"
+    },
+    {
+     "kode": "KM13509",
+     "tekst": "bruke ulike kilder på en kritisk, hensiktsmessig og etterrettelig måte"
+    },
+    {
+     "kode": "KM13510",
+     "tekst": "skrive ulike typer formelle og uformelle tekster, også sammensatte, med struktur og sammenheng som beskriver, diskuterer, begrunner og reflekterer tilpasset formål, mottaker og situasjon"
+    },
+    {
+     "kode": "KM13511",
+     "tekst": "vurdere og bearbeide egne tekster ut fra faglige kriterier og kunnskap om språk"
+    },
+    {
+     "kode": "KM13512",
+     "tekst": "beskrive sentrale trekk ved framveksten av engelsk som verdensspråk"
+    },
+    {
+     "kode": "KM13514",
+     "tekst": "utforske og reflektere over mangfold og samfunnsforhold for talespråklige og tegnspråklige i den engelskspråklige verden ut fra historiske sammenhenger"
+    },
+    {
+     "kode": "KM13513",
+     "tekst": "diskutere og reflektere over form, innhold og virkemidler i engelskspråklige kulturelle uttrykksformer fra ulike medier, deriblant musikk/tegnspråkpoesi, film og spill"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i engelsk for elever med tegnspråk etter Vg1 studieforberedende utdanningsprogram når de kommuniserer og samhandler nyansert og presist med flyt og sammenheng muntlig og skriftlig, tilpasset formål, mottaker og situasjon. Videre viser og utvikler de kompetanse når de skaper ulike typer tekster og når de bruker kilder på en kritisk, hensiktsmessig og etterrettelig måte.",
+    "Læreren skal bruke en hensiktsmessig språkmodalitet for å gjøre det engelske språket tilgjengelig for elevene. Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og ferdigheter i direkte kommunikasjon og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i engelsk og om valg av språkmodalitet. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle leseferdigheter, skriveferdigheter, ferdigheter i direkte kommunikasjon og digitale ferdigheter i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i engelsk for elever med tegnspråk ved avslutningen av opplæringen etter Vg1 studieforberedende utdanningsprogram. Læreren skal bruke en hensiktsmessig språkmodalitet for å gjøre det engelske språket tilgjengelig for elevene. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, ulike sammenhenger. Læreren skal sette én standpunktkarakter i engelsk basert på elevens samlede kompetanse i faget."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Etter 10. trinn: Eleven skal ha én standpunktkarakter.",
+    "Etter Vg1 studieforberedende utdanningsprogram / yrkesfaglige utdanningsprogram: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Etter 10. trinn: Eleven kan trekkes ut til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt.",
+    "Etter Vg1 studieforberedende utdanningsprogram / yrkesfaglige utdanningsprogram: Eleven kan trekkes ut til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Etter 10. trinn: Se gjeldende ordning for grunnskole-opplæring for voksne.",
+    "Etter Vg1 studieforberedende utdanningsprogram / yrkesfaglige utdanningsprogram: Eleven skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

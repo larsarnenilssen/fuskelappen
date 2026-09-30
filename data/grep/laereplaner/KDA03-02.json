@@ -1,0 +1,90 @@
+{
+ "kode": "KDA03-02",
+ "tittel": "Læreplan i kunst og skapande arbeid",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV577",
+   "tittel": "Kompetansemål og vurdering kunst og skapande arbeid",
+   "fag": [
+    "KDA3Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6644",
+     "tekst": "eksperimentere med ulike visuelle verkemiddel, materiale og teknikkar, og vurdere resultata i eige arbeid"
+    },
+    {
+     "kode": "KM6650",
+     "tekst": "arbeide utforskande med berekraft og miljø som fordjuping i ein kunstnarleg prosess"
+    },
+    {
+     "kode": "KM6646",
+     "tekst": "gjennomføre, dokumentere og presentere ein kunstnarleg prosess frå idé til ferdig produkt og grunngi eigne val"
+    },
+    {
+     "kode": "KM6643",
+     "tekst": "drøfte korleis kunst kan kommunisere kjensler, tankar og verdiar, og utforske dette i eige uttrykk"
+    },
+    {
+     "kode": "KM6647",
+     "tekst": "analysere og presentere ulike samfunnskritiske kunstuttrykk og bruke dei som referanse i drøftingar om kunsten si rolle i samfunnet"
+    },
+    {
+     "kode": "KM6651",
+     "tekst": "utforske og dokumentere korleis ulike etniske grupper, inkludert samiske, nyttar kunst som språk, og bruke denne kunnskapen som inspirasjon til eigne kunstytringar"
+    },
+    {
+     "kode": "KM6648",
+     "tekst": "gjere greie for kunst i det offentlege rommet og utvikle kunstprosjekt med utgangspunkt i det stadspesifikke"
+    },
+    {
+     "kode": "KM6649",
+     "tekst": "presentere reglar for publisering og vising av kunst, og planleggje og gjennomføre analoge og digitale utstillingar av eigne og andre sine arbeid"
+    },
+    {
+     "kode": "KM6645",
+     "tekst": "følgje reglar for helse, miljø og sikkerheit i arbeid med ulike materiale og teknikkar"
+    },
+    {
+     "kode": "KM6652",
+     "tekst": "utforske og reflektere over arbeidet til ulike sentrale kunstnarar og bruke inspirasjon frå dette i eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i kunst og skapande arbeid. Elevane viser og utviklar kompetanse i faget når dei gjennom skapande praktiske prosessar utviklar og formidlar eigne kunstuttrykk. Elevane viser og utviklar òg kompetanse når dei analyserer, reflekterer over og vurderer ulike kunstytringar. Vidare viser og utviklar dei kompetanse når dei bruker kunnskap og fagspråk til å presentere eige og andre sitt arbeid på ulike arenaer.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte oppgåver som fremjar kreativitet, individuelt særpreg og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i kunst og skapande arbeid, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av kunnskap og ferdigheiter i arbeidet med ulike kunstuttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i kunst og skapande arbeid. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kunst og skapande arbeid basert på kompetansen eleven har vist gjennom varierte praktiske, skapande og kunstnarlege prosesser, og gjennom utforsking og vurdering av ulike kunstytringar i kontekst"
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Kunst og skapende arbeid: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Kunst og skapende arbeid: Eleven kan trekkjast ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Kunst og skapende arbeid: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

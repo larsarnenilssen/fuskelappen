@@ -1,0 +1,181 @@
+{
+ "kode": "EKD03-01",
+ "tittel": "Læreplan i vg3 eksponeringsdesign",
+ "spraak": "nob",
+ "fastsatt": "2021-05-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV600",
+   "tittel": "Kompetansemål og vurdering produksjon og konseptutvikling",
+   "fag": [
+    "EKD3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6969",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere egne konsepter"
+    },
+    {
+     "kode": "KM6966",
+     "tekst": "utforme og tilpasse og gjøre etiske vurderinger av konsepter og utstillinger til definerte målgrupper"
+    },
+    {
+     "kode": "KM6970",
+     "tekst": "utvikle digitale skisser, arbeids- og presentasjonstegninger i målestokk og i to- og tredimensjonalt format"
+    },
+    {
+     "kode": "KM6975",
+     "tekst": "utforske og anvende ulike tegneteknikker, foto- og bildemanipulasjon i produksjonen av skisser og presentasjoner"
+    },
+    {
+     "kode": "KM6971",
+     "tekst": "gjøre rede for stilhistorie og trender og anvende kunnskap om dette i eget arbeid med design og konseptutvikling"
+    },
+    {
+     "kode": "KM6964",
+     "tekst": "anvende håndverktøy og ulke arbeidsteknikker og følge gjeldende regelverk for helse, miljø og sikkerhet i produksjon av eksponeringsmateriell"
+    },
+    {
+     "kode": "KM6978",
+     "tekst": "velge og bruke digitale ressurser som anvendes i bransjen til å utarbeide informasjons- og eksponeringsmateriell"
+    },
+    {
+     "kode": "KM6973",
+     "tekst": "utforske og anvende typografi, form og farge i salgsfremmende arbeid og visuell kommunikasjon"
+    },
+    {
+     "kode": "KM6953",
+     "tekst": "velge og bruke ulike fargesystemer ut fra oppdrag og bestilling og begrunne valgene"
+    },
+    {
+     "kode": "KM6976",
+     "tekst": "vurdere egnethet og velge filformater og farge- og bildekvalitet til ulike distribusjoner og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM6977",
+     "tekst": "velge og bruke ulike visuelle uttrykk i arbeidsoppgaver og gjøre rede for hvordan personer og omgivelser påvirkes av ulike uttrykk i det offentlige rom"
+    },
+    {
+     "kode": "KM6965",
+     "tekst": "produsere og montere arbeider for vareeksponering tilpasset en definert målgruppe"
+    },
+    {
+     "kode": "KM6963",
+     "tekst": "anvende komposisjonsprinsipper for styling til fotografering ut fra kundens bestillinger og tilpasset en definert målgruppe"
+    },
+    {
+     "kode": "KM6972",
+     "tekst": "anvende lyssetting og reflektere over prinsipper for belysning i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM6974",
+     "tekst": "tilpasse eksponeringskonsept til markedsføring i sosiale medier"
+    },
+    {
+     "kode": "KM6967",
+     "tekst": "bruke ulike presentasjonsteknikker til innsalg til mulige oppdragsgivere"
+    },
+    {
+     "kode": "KM6968",
+     "tekst": "gjennomføre vedlikehold av utstyr, verktøy og maskiner og følge gjeldende regler for helse, miljø og sikkerhet i alt arbeid"
+    },
+    {
+     "kode": "KM6962",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon og konseptutvikling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon og konseptutvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon og konseptutvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon og konseptutvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV601",
+   "tittel": "Kompetansemål og vurdering bedriftskultur og markedsføring",
+   "fag": [
+    "EKD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6954",
+     "tekst": "gjennomføre ulike konsepter og reflektere over kundens forbrukeratferd og bevegelsesmønster"
+    },
+    {
+     "kode": "KM6960",
+     "tekst": "utvikle skisser og idéforslag for en gitt målgruppe og reflektere over hvordan ulike valg kan påvirke sluttresultatet"
+    },
+    {
+     "kode": "KM6961",
+     "tekst": "analysere moter og trender og anvende resultatet i eget arbeid"
+    },
+    {
+     "kode": "KM6956",
+     "tekst": "analysere ulike markedsføringskanaler og reflektere over hvordan ulike strategier kan påvirke oppdragsgiverens lønnsomhet"
+    },
+    {
+     "kode": "KM6959",
+     "tekst": "anvende og gjøre rede for digital dømmekraft"
+    },
+    {
+     "kode": "KM6957",
+     "tekst": "følge gjeldende lov- og regelverk for personvern og opphavsrett i eget arbeid"
+    },
+    {
+     "kode": "KM6979",
+     "tekst": "bruke og gjøre rede for universell utforming i eget arbeid"
+    },
+    {
+     "kode": "KM6955",
+     "tekst": "gjøre rede for hvordan valg av materiale, utstyr og kjemikalier påvirker kvalitet, holdbarhet og miljøet, og reflektere over hvordan ulike valg påvirker en bærekraftig produksjon"
+    },
+    {
+     "kode": "KM6958",
+     "tekst": "utforske og anvende løsninger tilpasset oppdragets egenart og gjøre rede for hvordan ulike valg påvirker salg og lønnsomhet"
+    },
+    {
+     "kode": "KM6980",
+     "tekst": "lage et kostnads- og prisoverslag for egen produksjon og vurdere sammenhengen mellom vareforbruk, tidsbruk og lønnsomhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget bedriftskultur og markedsføring når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget bedriftskultur og markedsføring. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget bedriftskultur og markedsføring ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget bedriftskultur og markedsføring basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og konseptutvikling: Eleven skal ha én standpunktkarakter.\nBedriftskultur og markedsføring: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og konseptutvikling og bedriftskultur og markedsføring: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og konseptutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nBedriftskultur og markedsføring: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nProduksjon og konseptutvikling og bedriftskultur og markedsføring: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

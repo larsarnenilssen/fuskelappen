@@ -1,0 +1,86 @@
+{
+ "kode": "MOK05-02",
+ "tittel": "Læreplan i lyddesign",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV565",
+   "tittel": "Kompetansemål og vurdering lyddesign",
+   "fag": [
+    "MOK5Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6530",
+     "tekst": "gjennomføre lydproduksjonar i ulike sjangrar og tilpasse dei til ulike medium"
+    },
+    {
+     "kode": "KM6531",
+     "tekst": "bruke verktøy og programvare for opptak, redigering, miksing og mastring av lyd"
+    },
+    {
+     "kode": "KM6532",
+     "tekst": "anvende fagterminologi i beskriving og vurdering av eigne og andre sine lydproduksjonar"
+    },
+    {
+     "kode": "KM6533",
+     "tekst": "vurdere og anvende ulike forteljeteknikkar og auditive verkemiddel for å forsterke ein bodskap"
+    },
+    {
+     "kode": "KM6534",
+     "tekst": "vurdere eigne og andre sine produksjonar i ein uttrykkshistorisk samanheng, og utforske nye uttrykk og teknikkar i lydproduksjon"
+    },
+    {
+     "kode": "KM6535",
+     "tekst": "vurdere og bruke filformat tilpassa ulike publiseringskanalar for lyd"
+    },
+    {
+     "kode": "KM6536",
+     "tekst": "anvende aktiv lytting for å kunne beskrive og tolke innhaldet i lydproduksjonar"
+    },
+    {
+     "kode": "KM6537",
+     "tekst": "analysere lyd som verkemiddel og berar av meining og kulturelle uttrykk, og drøfte korleis lyduttrykk kan påverke haldningar, handlingar og offentleg diskurs"
+    },
+    {
+     "kode": "KM6538",
+     "tekst": "gjere greie for og drøfte etiske normer og gjeldande regelverk i eigne og andre sine lydproduksjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget lyddesign. Elevane viser og utviklar kompetanse i faget når dei identifiserer, beskriv og analyserer ulike element i eit lydbilete og funksjonen desse har. Vidare viser og utviklar elevane kompetanse i faget når dei utviklar idear, anvende produksjonsverktøy og kommuniserer auditivt i utforminga av ulike medieproduksjonar.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske faglege problemstillingar og arbeide kreativt for å finne svar på̊ desse. Læraren skal vere i dialog med elevane om utviklinga deira i analytisk lytting og produksjon av ulike lyduttrykk, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å forstå auditive uttrykk og anvende desse i eigne produksjonar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter lyddesign. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon, kreativitet og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i lyddesign basert på kompetansen eleven har vist ved å analysere og drøfte auditive uttrykk og produsere lydarbeid i ulike sjangrar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Lyd: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Lyd: Eleven kan trekkjast ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Lyd: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

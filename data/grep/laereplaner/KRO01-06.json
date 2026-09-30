@@ -1,0 +1,163 @@
+{
+ "kode": "KRO01-06",
+ "tittel": "Læreplan i kroppsøving",
+ "spraak": "nno",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1050",
+   "tittel": "Kompetansemål og vurdering vg1",
+   "fag": [
+    "KRO1Z37",
+    "KRO1Z40"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13600",
+     "tekst": "trene på og skape nye variantar av leik, bevegelsesaktivitet og dans saman med andre"
+    },
+    {
+     "kode": "KM13601",
+     "tekst": "planleggje og gjennomføre metodar for øving og trening for å oppnå individuelle mål, òg når ein ikkje fullt ut kan delta i aktiviteten"
+    },
+    {
+     "kode": "KM13602",
+     "tekst": "bruke eigne ferdigheiter og kunnskapar til å samarbeide og bidra til å gjere andre gode i aktivitet og samspel"
+    },
+    {
+     "kode": "KM13603",
+     "tekst": "førebyggje skadar ved bevegelsesaktivitetar og utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM13604",
+     "tekst": "bruke kart og digitale verktøy på ein måte som sikrar trygg ferdsel for seg sjølv og for andre"
+    },
+    {
+     "kode": "KM13605",
+     "tekst": "bruke lokale tradisjonar for ferdsel i naturen under vekslande årstider"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget. Elevane viser og utviklar kompetanse i kroppsøving på vg1 ved å øve og trene for å oppnå individuelle mål og utvikle bevegelsesaktivitetar, og ved å utforske leik og spel saman med andre. Vidare viser elevane kompetanse når dei bruker eigne ferdigheiter og kunnskapar til å samarbeide og gjere andre gode i aktivitet og samspel. Elevane viser òg kompetanse ved å bruke lokale tradisjonar for ferdsel i naturen.",
+    "I kroppsøving er samspel med andre, øving og deltaking i ulike bevegelsesaktivitetar og naturferdsel vesentlege trekk ved kompetansen i faget. Innsatsen til elevane er ein del av kompetansen i kroppsøving. Innsats i kroppsøving inneber at eleven prøver å løyse faglege utfordringar etter beste evne utan å gi opp, viser sjølvstende, utfordrar sin eigen fysiske kapasitet og samarbeider med andre.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte bevegelsesaktivitetar som elevane gjer åleine og saman med andre og gjennom at dei får vurdere eige arbeid i kroppsøving. Læraren skal vere i dialog med elevane om utviklinga deira i kroppsøving. Elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i bevegelsesaktivitet, leik og spel saman med andre, førstehjelp, uteaktivitet og friluftsliv."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1051",
+   "tittel": "Kompetansemål og vurdering vg2",
+   "fag": [
+    "KRO1Z38",
+    "KRO1Z41"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13606",
+     "tekst": "gjennomføre leikar, idrettsaktivitetar og andre bevegelsesaktivitetar og forstå korleis ulike aktivitetar påverkar og utviklar koordinasjon, styrke, uthald og bevegelegheit"
+    },
+    {
+     "kode": "KM13607",
+     "tekst": "utføre trening på eiga hand og reflektere over korleis fysisk aktivitet kan fremje god psykisk og fysisk helse og bidra til ein helsefremjande livsstil etter avslutta skulegang og i framtidig arbeidsliv"
+    },
+    {
+     "kode": "KM13608",
+     "tekst": "praktisere reglar for å delta i ulike bevegelsesaktivitetar og medverke til læring for andre"
+    },
+    {
+     "kode": "KM13609",
+     "tekst": "planleggje og gjennomføre uteaktivitetar til ulike årstider, der formålet er å ha gode naturopplevingar"
+    },
+    {
+     "kode": "KM13610",
+     "tekst": "praktisere berekraftig ferdsel i naturen og kunne gjennomføre friluftsliv i nærområdet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget. Elevane viser og utviklar kompetanse i kroppsøving på vg2 ved å delta og lære i leik og varierte bevegelsesaktivitetar, ved å trene på eiga hand, ved å medverke til læring for andre og gjennom berekraftig ferdsel i naturen og sjølvstende i friluftsliv.",
+    "I kroppsøving er samspel med andre, øving og deltaking i ulike bevegelsesaktivitetar og naturferdsel vesentlege trekk ved kompetansen i faget. Innsatsen til elevane er ein del av kompetansen i kroppsøving. Innsats i kroppsøving inneber at eleven prøver å løyse faglege utfordringar etter beste evne utan å gi opp, viser sjølvstende, utfordrar sin eigen fysiske kapasitet og samarbeider med andre.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte bevegelsesaktivitetar som elevane gjer åleine og saman med andre og gjennom at dei får vurdere eige arbeid i kroppsøving. Læraren skal vere i dialog med elevane om utviklinga deira i kroppsøving. Elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i bevegelsesaktivitet, eigentrening, deltaking og samspel, i uteaktivitet og friluftsliv."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kroppsøving ved avslutninga av opplæringa etter vg2. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kroppsøving basert på kompetansen eleven har vist i faget. Samspel med andre, øving og deltaking i ulike bevegelsesaktivitetar og naturferdsel er vesentlege trekk ved kompetansen i kroppsøving. Innsatsen til elevane er ein del av kompetansen i kroppsøving og er derfor ein del av grunnlaget for vurdering."
+   ]
+  },
+  {
+   "kode": "KV1052",
+   "tittel": "Kompetansemål og vurdering vg3",
+   "fag": [
+    "KRO1Z39"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13611",
+     "tekst": "øve på og utvikle kunnskapar og ferdigheiter i ulike bevegelsesaktivitetar ut frå eigne føresetnader"
+    },
+    {
+     "kode": "KM13612",
+     "tekst": "planleggje, gjennomføre og vurdere eigentrening og forklare korleis dette kan medverke til ein fysisk aktiv og helsefremjande livsstil etter avslutta skulegang"
+    },
+    {
+     "kode": "KM13613",
+     "tekst": "beskrive og drøfte samanhengar mellom bevegelse, kropp, trening og helse i samfunnet"
+    },
+    {
+     "kode": "KM13614",
+     "tekst": "samarbeide om å løyse praktiske oppgåver i eit læringsfellesskap og ut frå øving og aktivitet reflektere over korleis eigen medverknad kan påverke andre"
+    },
+    {
+     "kode": "KM13615",
+     "tekst": "planleggje og gjennomføre uteaktivitetar og friluftsliv i nærområdet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget. Elevane viser og utviklar kompetanse i kroppsøving på vg3 ved å øve på og å utvikle kunnskapar og ferdigheiter i varierte bevegelsesaktivitetar og ved å samarbeide om å løyse praktiske oppgåver i eit læringsfellesskap. Elevane viser òg kompetanse gjennom å planleggje, gjennomføre og vurdere eigentrening, uteaktivitetar og friluftsliv i nærområdet.",
+    "I kroppsøving er samspel med andre, øving og deltaking i ulike bevegelsesaktivitetar og naturferdsel vesentlege trekk ved kompetansen i faget. Innsatsen til elevane er ein del av kompetansen i kroppsøving. Innsats i kroppsøving inneber at eleven prøver å løyse faglege utfordringar etter beste evne utan å gi opp, viser sjølvstende, utfordrar sin eigen fysiske kapasitet og samarbeider med andre.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte bevegelsesaktivitetar som elevane gjer åleine og saman med andre, og gjennom at dei får vurdere eige arbeid i kroppsøving. Læraren skal vere i dialog med elevane om utviklinga deira i kroppsøving. Elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i bevegelsesaktivitet, i trening i samanheng med livsstil og helse, samarbeid og samspel med andre, og i uteaktivitet og friluftsliv i nærområdet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kroppsøving ved avslutninga av opplæringa etter vg3. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kroppsøving basert på kompetansen eleven har vist i faget. Samspel med andre, øving og deltaking i ulike bevegelsesaktivitetar og naturferdsel er vesentlege trekk ved kompetansen i kroppsøving. Innsatsen til elevane er ein del av kompetansen i kroppsøving og er derfor ein del av grunnlaget for vurdering."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "10. trinn: Eleven skal ha éin standpunktkarakter.",
+    "Vg1 særløp i yrkesfaglege utdanningsprogram: Eleven skal ha éin standpunktkarakter.",
+    "Vg2 yrkesfaglege utdanningsprogram: Eleven skal ha éin standpunktkarakter.",
+    "Vg3 studieførebuande og yrkesfaglege utdanningsprogram i skule: Eleven skal ha éin standpunktkarakter.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal ha éin standpunktkarakter.",
+    "Når faget går over fleire år, skal elevane få standpunktvurdering berre på det øvste nivået i faget."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Eleven har ikkje eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "10.trinn: Det er inga privatistordning i faget.",
+    "Vg2 yrkesfaglege utdanningsprogram: Privatisten skal opp til ein munnleg-praktisk eksamen som blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Vg3 studieførebuande og yrkesfaglege utdanningsprogram i skule: Privatisten skal opp til ein munnleg-praktisk eksamen som blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

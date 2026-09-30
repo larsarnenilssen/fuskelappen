@@ -1,0 +1,94 @@
+{
+ "kode": "MOK06-02",
+ "tittel": "Læreplan i grafisk design",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV566",
+   "tittel": "Kompetansemål og vurdering grafisk design",
+   "fag": [
+    "MOK6Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6544",
+     "tekst": "identifisere behov og utforme og presentere grafiske designløysingar"
+    },
+    {
+     "kode": "KM6541",
+     "tekst": "bruke og drøfte typografi, farge, komposisjon, symbol og forteljeteknikkar som verkemiddel"
+    },
+    {
+     "kode": "KM6539",
+     "tekst": "utforme og vurdere illustrasjonar og designløysingar tilpassa ulike bodskapar"
+    },
+    {
+     "kode": "KM6540",
+     "tekst": "utarbeide og vurdere kreative og sjølvstendige idear til grafiske designløysingar gjennom ein stegvis designprosess"
+    },
+    {
+     "kode": "KM6548",
+     "tekst": "anvende materiale, format og filtypar til produksjon i samsvar med tekniske krav, miljøomsyn, etiske normer og regelverk"
+    },
+    {
+     "kode": "KM6543",
+     "tekst": "utforske tidlegare og samtidige visuelle uttrykk og anvende desse i eigne grafiske medieprodukt"
+    },
+    {
+     "kode": "KM6546",
+     "tekst": "vurdere og drøfte korleis grafiske designløysingar påverkar forbruksmønster og samfunnsutvikling og aukar samfunnsdeltakinga"
+    },
+    {
+     "kode": "KM6547",
+     "tekst": "utvikle, utforme og vurdere grafisk design som tek omsyn til rettane og behova til ulike grupper i samfunnet"
+    },
+    {
+     "kode": "KM6549",
+     "tekst": "utforske nye verktøy og moglegheiter for interaksjon og kommunikasjon ved bruk av ny teknologi"
+    },
+    {
+     "kode": "KM6545",
+     "tekst": "utforske omgivnadsdesign som kommuniserer i ulike nærmiljø"
+    },
+    {
+     "kode": "KM6542",
+     "tekst": "anvende relevant fagterminologi i grafisk design"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget grafisk design. Elevane viser og utviklar kompetanse i faget når dei gjennom kreative prosessar utviklar og visualiserer løysingar og bruker fagspråk. Elevane viser og utviklar òg kompetanse når dei arbeider med visuelle verkemiddel, berekraft og praktisk problemløysing i grafisk design-oppgåver. Vidare viser og utviklar elevane kompetanse når dei hentar inspirasjon frå ulike kjelder.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte praktiske og teoretiske arbeidsmåtar som fremjar innovasjon, kreativitet og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i grafisk design, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i grafisk design."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter grafisk design. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i grafisk design basert på kompetansen eleven har vist gjennom prosess og praktisk produksjon av grafisk design, og gjennom refleksjon over bruk av verkemiddel og kjelder."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Grafisk design: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Grafisk design: Eleven kan trekkjast ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Grafisk design: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

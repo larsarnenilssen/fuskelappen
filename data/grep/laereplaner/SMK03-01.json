@@ -1,0 +1,112 @@
+{
+ "kode": "SMK03-01",
+ "tittel": "Læreplan i vg3 skipsmotormekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV689",
+   "tittel": "Kompetansemål og vurdering vg3 skipsmotormekanikerfaget",
+   "fag": [
+    "SMK3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8809",
+     "tekst": "utføre arbeid om bord i henhold til regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8825",
+     "tekst": "vurdere og bruke personlig verne- og sikkerhetsutstyr ut fra arbeidsoppgavene"
+    },
+    {
+     "kode": "KM8824",
+     "tekst": "bruke produkt- og sikkerhetsdatablader og følge retningslinjer for oppbevaring og merking av kjemikalier og helseskadelige stoffer"
+    },
+    {
+     "kode": "KM8823",
+     "tekst": "gjøre rede for og arbeide etter ISM-koden og gjeldende regelverk i den daglige driften"
+    },
+    {
+     "kode": "KM8822",
+     "tekst": "beskrive kvalitetssystemet om bord og registrere avvik"
+    },
+    {
+     "kode": "KM8821",
+     "tekst": "gjøre rede for alarmsystemer i forbindelse med varsling og utføre egen beredskapsfunksjon i en nødsituasjon om bord"
+    },
+    {
+     "kode": "KM8820",
+     "tekst": "betjene, vedlikeholde og gjennomføre ettersyn på rednings- og brannvernutstyr og slukkeanleggene om bord"
+    },
+    {
+     "kode": "KM8819",
+     "tekst": "gjennomføre vakthold i henhold til skipets vaktinstruks og overvåkingssystem i maskinrommet"
+    },
+    {
+     "kode": "KM8826",
+     "tekst": "vurdere faktorer som påvirker et fartøys stabilitet"
+    },
+    {
+     "kode": "KM8818",
+     "tekst": "velge og bruke ergonomisk riktige arbeidsteknikker og arbeidsstillinger"
+    },
+    {
+     "kode": "KM8816",
+     "tekst": "bruke vedlikeholdssystem til å hente ut arbeidsordrer og dokumentere utført arbeid og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM8815",
+     "tekst": "velge og bruke metoder og teknikker for renhold og overflatebehandling av ulike materialer og steder for å ivareta arbeids- og maritime miljøet"
+    },
+    {
+     "kode": "KM8814",
+     "tekst": "gjøre skipet sjøklart"
+    },
+    {
+     "kode": "KM8813",
+     "tekst": "bruke og vedlikeholde elektrisk og mekanisk maskineri og hjelpesystemer i henhold til vedlikeholdssystemet om bord"
+    },
+    {
+     "kode": "KM8812",
+     "tekst": "bruke og vedlikeholde elektriske og mekaniske verktøy og instrumenter"
+    },
+    {
+     "kode": "KM8811",
+     "tekst": "gjennomføre bunkring etter skipets prosedyrer"
+    },
+    {
+     "kode": "KM8810",
+     "tekst": "reflektere over hvordan man kan forebygge og begrense forurensning av det marine miljøet og håndtere avfall i tråd med gjeldende regelverk og krav"
+    },
+    {
+     "kode": "KM8817",
+     "tekst": "reflektere over hvordan en selv kan bidra til et godt psykososialt arbeidsmiljø"
+    },
+    {
+     "kode": "KM8827",
+     "tekst": "gjøre rede for partssamarbeidet i rederiet og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 skipsmotormekanikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 skipsmotormekanikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 skipsmotormekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager. Fagprøven skal gjennomføres i henhold til kravene i forskrift om kvalifikasjoner og sertifikater for sjøfolk."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "kode": "POS05-02",
+ "tittel": "Læreplan i politikk og menneskerettigheter",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV891",
+   "tittel": "Kompetansemål og vurdering politikk og menneskerettigheter",
+   "fag": [
+    "POS5Z01"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11643",
+     "tekst": "vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM11631",
+     "tekst": "bruke statsvitenskapelige teorier og modeller i arbeid med faglige spørsmål, emner og problemstillinger"
+    },
+    {
+     "kode": "KM11632",
+     "tekst": "reflektere over hva det innebærer å være medborger, sammenligne ulike staters styreform og analysere demokratiets utvikling og utfordringer"
+    },
+    {
+     "kode": "KM11633",
+     "tekst": "utforske og analysere nasjonale og internasjonale saker eller konflikter i et statsvitenskapelig perspektiv"
+    },
+    {
+     "kode": "KM11634",
+     "tekst": "gjøre rede for maktforhold, konfliktdimensjoner og kanaler for politisk innflytelse i det norske politiske systemet og drøfte hvordan dette kommer til uttrykk i praktisk politikk"
+    },
+    {
+     "kode": "KM11635",
+     "tekst": "bruke samfunnsvitenskapelig metode for å analysere og drøfte velgeratferd og politisk deltakelse"
+    },
+    {
+     "kode": "KM11636",
+     "tekst": "utforske, analysere og drøfte dagsaktuelle problemstillinger knyttet til bærekraft og fordeling"
+    },
+    {
+     "kode": "KM11637",
+     "tekst": "drøfte rettighetene til urfolk og minoriteter nasjonalt og internasjonalt og problemstillinger knyttet til politisk innflytelse"
+    },
+    {
+     "kode": "KM11638",
+     "tekst": "vurdere menneskerettighetenes betydning for demokratiet og velferdsstaten"
+    },
+    {
+     "kode": "KM11639",
+     "tekst": "vurdere folkerettens rolle og betydning nasjonalt og internasjonalt"
+    },
+    {
+     "kode": "KM11640",
+     "tekst": "utforske institusjoner og aktører som overvåker og håndhever menneskerettighetene, og drøfte forholdet mellom statlig, mellomstatlig og overstatlig myndighetsutøvelse"
+    },
+    {
+     "kode": "KM11641",
+     "tekst": "gjøre rede for det norske politiske systemet lokalt og nasjonalt og drøfte hvilke utfordringer det norske demokratiet står overfor"
+    },
+    {
+     "kode": "KM11642",
+     "tekst": "utforske og drøfte hvordan det internasjonale politiske systemet håndterer problemstillinger knyttet til krig og fred, sikkerhet, samarbeid og konfliktløsing"
+    }
+   ],
+   "underveis": [
+    "Underveisvurdering",
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i politikk og menneskerettigheter. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder, teorier og modeller i utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse når de arbeider med hvordan vårt eget og andre samfunn blir styrt gjennom politiske beslutninger og den betydningen menneskerettighetene har individuelt, nasjonalt og internasjonalt.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i politikk og menneskerettigheter, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i politikk og menneskerettigheter."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter politikk og menneskerettigheter. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i politikk og menneskerettigheter basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder, modeller og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Politikk og menneskerettigheter: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Politikk og menneskerettigheter: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Politikk og menneskerettigheter: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

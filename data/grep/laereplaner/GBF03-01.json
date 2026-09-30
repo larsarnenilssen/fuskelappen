@@ -1,0 +1,116 @@
+{
+ "kode": "GBF03-01",
+ "tittel": "Læreplan i glassblåserfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV651",
+   "tittel": "Kompetansemål og vurdering glassblåserfaget",
+   "fag": [
+    "GBF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7938",
+     "tekst": "utvikle, planlegge, gjennomføre, presentere, vurdere og dokumentere eget faglig arbeid"
+    },
+    {
+     "kode": "KM7947",
+     "tekst": "utvikle, forme og kvalitetssikre ulike glassprodukter og gjøre rede for egen og andres produksjon"
+    },
+    {
+     "kode": "KM7946",
+     "tekst": "kommunisere med kunder, kolleger og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM7934",
+     "tekst": "gjøre rede for dagens trender sett i lys av tradisjoner og fagets historie og anvende dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM7951",
+     "tekst": "anvende ulike teknikker for å eksperimentere med og utvikle et estetisk formspråk"
+    },
+    {
+     "kode": "KM7950",
+     "tekst": "fange an og forme biter til bein, fot, klakk, kant, puntel og andre påklipp"
+    },
+    {
+     "kode": "KM7949",
+     "tekst": "fange an og utforme poster med riktig glassfordeling som står i forhold til ønsket sluttprodukt"
+    },
+    {
+     "kode": "KM7939",
+     "tekst": "gjøre rede for og vurdere ulike glasstyper og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM7945",
+     "tekst": "utføre innfarging med pulverfarge av biter og poster"
+    },
+    {
+     "kode": "KM7944",
+     "tekst": "håndtere og levere fargestav"
+    },
+    {
+     "kode": "KM7941",
+     "tekst": "utforske og bruke farger og gjøre rede for fargenes påvirkning på glassmassen"
+    },
+    {
+     "kode": "KM7940",
+     "tekst": "bruke og vedlikeholde maskiner, verktøy og utstyr, holde orden på verkstedet og på egen arbeidsplass og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7937",
+     "tekst": "gjøre rede for bruk av canes, graal og tredimensjonal skulptering"
+    },
+    {
+     "kode": "KM7936",
+     "tekst": "gjøre rede for teknikkene sandblåsing, gravering, etsing, sliping og polering innenfor kaldtarbeid"
+    },
+    {
+     "kode": "KM7935",
+     "tekst": "gjøre rede for teknikker for varm- og kaldsprenging av produkter"
+    },
+    {
+     "kode": "KM7943",
+     "tekst": "gjøre rede for overfangs- og underfangsteknikker"
+    },
+    {
+     "kode": "KM7942",
+     "tekst": "planlegge og beregne materialbruk, tidsforbruk og kalkulere produktprisen på en bestilling"
+    },
+    {
+     "kode": "KM7952",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7948",
+     "tekst": "reflektere kritisk over de helse- og miljøfarlige materialene og prosessene i faget og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7953",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i glassblåserfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i glassblåserfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i glassblåserfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

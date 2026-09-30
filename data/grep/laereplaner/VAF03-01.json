@@ -1,0 +1,112 @@
+{
+ "kode": "VAF03-01",
+ "tittel": "Læreplan i vg3 vaskerifaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV712",
+   "tittel": "Kompetansemål og vurdering vg3 vaskerifaget",
+   "fag": [
+    "VAF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9251",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere produksjonsarbeid i henhold til bransjens gjeldende regelverk og bedriftens helse-, miljø- og sikkerhetssystem"
+    },
+    {
+     "kode": "KM9267",
+     "tekst": "gjøre rede for Sinners sirkel og bruke denne til å utvikle vaskeresepter tilpasset tekstiltype og smusshetsgrad"
+    },
+    {
+     "kode": "KM9266",
+     "tekst": "analysere produksjonsprosessen, rapportere avvik og drøfte korrigerende tiltak i en helhetlig prosess"
+    },
+    {
+     "kode": "KM9265",
+     "tekst": "innhente informasjon om og drøfte metodevalg og bruke tilgjengelige teknikker og teknisk utstyr i bransjen"
+    },
+    {
+     "kode": "KM9264",
+     "tekst": "anvende kjemikalier og håndtere emballasje i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM9263",
+     "tekst": "utføre hygiene- og bakteriekontroll i produksjonsprosessen, dokumentere dette og iverksette tiltak ved behov"
+    },
+    {
+     "kode": "KM9262",
+     "tekst": "anvende maskiner og produksjonsutstyr i hele produksjonslinjen"
+    },
+    {
+     "kode": "KM9261",
+     "tekst": "begrunne valg av maskin og maskininnstillinger og gjøre rede for nødvendigheten av prosessovervåking av alle produksjonsprosesser"
+    },
+    {
+     "kode": "KM9268",
+     "tekst": "gjøre rede for måling av produktivitet og effektiv produksjonsflyt"
+    },
+    {
+     "kode": "KM9260",
+     "tekst": "vurdere tekstilens tilstand med tanke på omvask, kassasjon eller fortsatt bruk"
+    },
+    {
+     "kode": "KM9258",
+     "tekst": "identifisere og vurdere tiltak for farer som kan oppstå på hvert prosesstrinn i tekstilbehandlingen, farer som kan redusere hygienekvaliteten og medføre smitterisiko for ansatte og besøkende"
+    },
+    {
+     "kode": "KM9257",
+     "tekst": "vurdere og utføre forebyggende vedlikehold av maskiner og utstyr"
+    },
+    {
+     "kode": "KM9256",
+     "tekst": "analysere avvik og foreslå og vurdere korrigerende tiltak i produksjonsprosessen i samarbeid med kollegaer"
+    },
+    {
+     "kode": "KM9255",
+     "tekst": "gjennomføre kvalitetskontroll og dokumentere at produktet er i tråd med spesifikasjonen for ordren"
+    },
+    {
+     "kode": "KM9254",
+     "tekst": "planlegge og gjennomføre ordrer for utlevering og transport i samsvar med bestillinger og hygieneregler"
+    },
+    {
+     "kode": "KM9253",
+     "tekst": "gjennomføre tiltak ved bestillingsavvik og presentere dette for kunder"
+    },
+    {
+     "kode": "KM9252",
+     "tekst": "utføre kostnadsberegninger knyttet til ulike produksjonsprosesser og utarbeide fakturagrunnlag"
+    },
+    {
+     "kode": "KM9259",
+     "tekst": "reflektere over hvordan en selv kan bidra til et godt psykososialt arbeidsmiljø"
+    },
+    {
+     "kode": "KM9269",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 vaskerifaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 vaskerifaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 vaskerifaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på to til tre virkedager."
+   ]
+  }
+ ]
+}

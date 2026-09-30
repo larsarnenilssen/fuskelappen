@@ -1,0 +1,132 @@
+{
+ "kode": "RSD03-02",
+ "tittel": "Læreplan i vg3 reservedelsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV687",
+   "tittel": "Kompetansemål og vurdering vg3 reservedelsfaget",
+   "fag": [
+    "RSD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8781",
+     "tekst": "planlegge og gjennomføre arbeid i tråd med bedriftens system for internkontroll og kvalitetssikring og i henhold til internasjonale og nasjonale standarder"
+    },
+    {
+     "kode": "KM8760",
+     "tekst": "veilede kunder i valg av reservedeler, tilbehør og ekstrautstyr til kjøretøy ut fra kundens behov, kjøretøyets understellsnummer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM8780",
+     "tekst": "behandle kunder og kundeinformasjon i tråd med lovverk, etikk, faglige normer og bedriftens retningslinjer"
+    },
+    {
+     "kode": "KM8779",
+     "tekst": "behandle reklamasjoner i henhold til lovverk og bedriftens og leverandørens garantisystem"
+    },
+    {
+     "kode": "KM8778",
+     "tekst": "veilede kunden og beskrive ulike valg av sikkerhetsutstyr og tilbehør og alternativer for montering av disse"
+    },
+    {
+     "kode": "KM8777",
+     "tekst": "pakke og sende ordre etter kundens bestilling"
+    },
+    {
+     "kode": "KM8776",
+     "tekst": "drøfte og anbefale bruk av byttekomponenter ut fra pris og miljøhensyn"
+    },
+    {
+     "kode": "KM8775",
+     "tekst": "vurdere og foreslå tiltak for å øke bedriftens salg og fortjeneste"
+    },
+    {
+     "kode": "KM8774",
+     "tekst": "bruke lagerstyringssystem for innkjøp, oppfølging, salg og økonomistyring"
+    },
+    {
+     "kode": "KM8773",
+     "tekst": "analysere og vurdere lagerbeholdningen med tanke på omsetningshastighet"
+    },
+    {
+     "kode": "KM8772",
+     "tekst": "gjennomføre mottakskontroll og plassering av varer"
+    },
+    {
+     "kode": "KM8771",
+     "tekst": "dokumentere avvik og reklamasjoner ved mottak av varer i henhold til virksomhetens rutiner"
+    },
+    {
+     "kode": "KM8770",
+     "tekst": "gjøre rede for vareflyten fra leverandør til gjenvinning og destruksjon, og håndtere og sortere avfall etter bedriftens rutiner"
+    },
+    {
+     "kode": "KM8769",
+     "tekst": "bruke verneutstyr etter gjeldende krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8768",
+     "tekst": "forstå og anvende helse-, miljø- og sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM8767",
+     "tekst": "analysere lagerets verdi og vurdere muligheter for kostnadsreduksjoner og skroting av varer"
+    },
+    {
+     "kode": "KM8766",
+     "tekst": "delta i oppsett av budsjett og forstå balansen mellom inntekter og utgifter"
+    },
+    {
+     "kode": "KM8765",
+     "tekst": "gjennomføre fakturering og kreditering og forstå hva ubetalte fakturaer medfører"
+    },
+    {
+     "kode": "KM8764",
+     "tekst": "gjennomføre og dokumentere ordrer, restordrer, reklamasjoner og returprosedyrer i bedriftens lagersystem"
+    },
+    {
+     "kode": "KM8763",
+     "tekst": "gjennomføre kontroll av inngående faktura"
+    },
+    {
+     "kode": "KM8762",
+     "tekst": "gjennomføre varetelling"
+    },
+    {
+     "kode": "KM8761",
+     "tekst": "gjennomføre og vurdere utstillinger og presentasjoner av varer i virksomheten"
+    },
+    {
+     "kode": "KM8782",
+     "tekst": "presentere pristilbud for kunder og gjennomføre salget etter bedriftens rutiner og krav"
+    },
+    {
+     "kode": "KM8783",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 reservedelsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 reservedelsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 reservedelsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

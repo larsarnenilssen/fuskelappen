@@ -1,0 +1,177 @@
+{
+ "kode": "DAT03-03",
+ "tittel": "Læreplan i vg3 dataelektronikarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV723",
+   "tittel": "Kompetansemål og vurdering installering og drift",
+   "fag": [
+    "DAT3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM9425",
+     "tekst": "risikovurdere, planleggje, gjennomføre og dokumentere arbeidsoppdrag i programfaget installering og drift individuelt og i samarbeid med andre i tråd med gjeldande regelverk, og grunngi dei vala som er gjorde"
+    },
+    {
+     "kode": "KM9426",
+     "tekst": "utføre arbeid i programfaget installering og drift nøyaktig, effektivt og estetisk i tråd med gjeldande regelverk, standardar, rettleiingar, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystem, og vurdere kvaliteten på eige arbeid"
+    },
+    {
+     "kode": "KM9423",
+     "tekst": "installere, konfigurere og setje i drift informasjons- og kommunikasjonssystem med ulike operativsystem, administrere brukarar, tilgangar og rettar i tråd med definerte behov og automatisere driftsoppgåver og vurdere tiltak for å vareta person- og kommunikasjonssikkerheit"
+    },
+    {
+     "kode": "KM9420",
+     "tekst": "konfigurere og setje i drift fysiske og virtuelle segmenterte nettverk i tråd med definerte behov, vurdere informasjonssikkerheita i infrastrukturen til nettverka og setje i verk tiltak for å redusere risiko"
+    },
+    {
+     "kode": "KM9421",
+     "tekst": "montere og setje i drift kraftelektronisk utstyr og system for spenningsomforming i informasjons- og kommunikasjonssystem, og gjere greie for oppbygginga og verkemåten"
+    },
+    {
+     "kode": "KM9424",
+     "tekst": "installere, programmere og setje i drift trådlause sensor- og kommunikasjonssystem med ulik rekkjevidd og lågt straumforbruk, og beskrive eigenskapane til og bruken av ulike trådlause sensor- og kommunikasjonssystem"
+    },
+    {
+     "kode": "KM9422",
+     "tekst": "installere, konfigurere og setje i drift eit nettverksbasert multimediesystem og beskrive bruksområda til ulike typar nettverksbaserte multimediesystem"
+    },
+    {
+     "kode": "KM9403",
+     "tekst": "programmere mikrokontrollbaserte system og teste, tilpasse og feilrette programma og beskrive prinsippa for strukturert programmering"
+    },
+    {
+     "kode": "KM9419",
+     "tekst": "reflektere over føresetnadene, verdiane og reglane i bedriftsdemokratiet og det organiserte arbeidslivet og over korleis eit regulert arbeidsliv kan bidra til å motverke arbeidslivskriminalitet, diskriminering og forskjellsbehandling"
+    },
+    {
+     "kode": "KM9418",
+     "tekst": "drøfte etiske dilemma ved val av elektriske produkt og løysingar og diskutere berekraft og konsekvensar av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9417",
+     "tekst": "dokumentere eige arbeid med elektronisk utstyr, elektroniske installasjonar og infrastruktur, vurdere arbeidsmetodar, faglege løysingar, kvalitet og estetikk i arbeidsoppdrag og foreslå forbetringar og reflektere rundt moglege endringar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget installering og drift når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget installering og drift. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget installering og drift ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget installering og drift basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV724",
+   "tittel": "Kompetansemål og vurdering reparasjon og vedlikehald",
+   "fag": [
+    "DAT3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM9416",
+     "tekst": "planleggje, gjennomføre og dokumentere arbeidsoppdrag i programfaget reparasjon og vedlikehald individuelt og i samarbeid med andre, og grunngi val og vurdere kvaliteten på eige arbeid"
+    },
+    {
+     "kode": "KM9408",
+     "tekst": "risikovurdere arbeid i programfaget reparasjon og vedlikehald og utføre arbeidet effektivt, estetisk og i tråd med gjeldande regelverk, standardar, rettleiingar, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystem"
+    },
+    {
+     "kode": "KM9406",
+     "tekst": "utføre arbeidet i tråd med elsikkerheitskrav, utføre livreddande førstehjelp, arbeide i tråd med ergonomiske prinsipp, bruke verneutstyr og drøfte korleis sikkerheitsarbeid kan førebyggje ulykkar og skader"
+    },
+    {
+     "kode": "KM9413",
+     "tekst": "utføre systematisk feilsøking i programfaget reparasjon og vedlikehald ved hjelp av eigna måleinstrument og dokumentasjon og vurdere måleresultat opp mot forventa og berekna verdiar"
+    },
+    {
+     "kode": "KM9407",
+     "tekst": "reparere elektronisk utstyr i programfaget reparasjon og vedlikehald på krinskort- og komponentnivå ved hjelp av eigna verktøy og dokumentasjon, og vurdere kor lang tid reparasjonen vil ta, og kor lønnsamt det vil vere å reparere"
+    },
+    {
+     "kode": "KM9415",
+     "tekst": "reparere og vedlikehalde datasystemer og foreslå tiltak for å unngå tap av lagra informasjon som følgje av reparasjons- og vedlikehaldsarbeidet"
+    },
+    {
+     "kode": "KM9411",
+     "tekst": "reparere og vedlikehalde kraftelektronisk utstyr og system for elektronisk spenningsomforming ved hjelp av eigna verktøy og dokumentasjon og drøfte bruksområde til kraftelektronisk utstyr"
+    },
+    {
+     "kode": "KM9412",
+     "tekst": "vurdere og setje i verk tiltak for å hindre elektromagnetisk interferens og for å sikre elektromagnetisk kompatibilitet ved reparasjon og vedlikehald"
+    },
+    {
+     "kode": "KM9410",
+     "tekst": "kontrollere og vedlikehalde batteri med tilhøyrande ladesystem og gjere greie for farar i samband med arbeid med batteri"
+    },
+    {
+     "kode": "KM9409",
+     "tekst": "reparere og vedlikehalde trådlause sensor- og kommunikasjonssystem med høvesvis kort og lang rekkjevidd og lågt straumforbruk ved hjelp av eigna verktøy, programvare og dokumentasjon"
+    },
+    {
+     "kode": "KM9414",
+     "tekst": "reparere nettverksbaserte multimediesystem ved hjelp av eigna verktøy og dokumentasjon og gjere greie for korleis systema er bygde opp og fungerer"
+    },
+    {
+     "kode": "KM9405",
+     "tekst": "gjennomføre fjerndiagnose og autodiagnose av elektronisk utstyr via elektroniske kommunikasjonsnett og gjere greie for bruk av desse formene for diagnostisering i programfaget"
+    },
+    {
+     "kode": "KM9404",
+     "tekst": "utforske teknologiar som gjer det mogleg å visualisere prosedyrar for vedlikehald av elektronisk utstyr, og reflektere over korleis bruk av desse teknologiane kan påverke organiseringa og utføringa av reparasjons- og vedlikehaldsarbeid"
+    },
+    {
+     "kode": "KM9427",
+     "tekst": "diskutere verdien av å oppleve meistring og stoltheit over eige arbeid og av å oppleve tilhøyrsel og tryggleik i eit arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9428",
+     "tekst": "handtere avfall etter eige arbeid miljømessig og økonomisk, drøfte korleis reparasjon av elektronisk utstyr bidreg til at færrast mogleg ressursar går tapt, og slette sensitiv informasjon ved avhending"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget reparasjon og vedlikehald når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget reparasjon og vedlikehald. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget reparasjon og vedlikehald ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget reparasjon og vedlikehald basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Installering og drift: Eleven skal ha éin standpunktkarakter.",
+    "Reparasjon og vedlikehald: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Installering og drift: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Reparasjon og vedlikehald: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  },
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Opplæringa i vg3 dataelektronikarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst seks vyrkedagar.",
+    "Før fagprøva må alle ha bestått ein tverrfagleg skriftleg eksamen laga ut frå læreplanane i programfaga i lærefaget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, i tillegg ha bestått ein tverrfagleg skriftleg eksamen laga ut frå læreplanen i programfaga på vg2 datateknologi og elektronikk. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel."
+   ]
+  }
+ ]
+}

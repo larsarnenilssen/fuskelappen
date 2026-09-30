@@ -1,0 +1,69 @@
+{
+ "kode": "MDD02-02",
+ "tittel": "Læreplan i bevegelse",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV260",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD2Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2797",
+     "tekst": "utforske og reflektere over egne bevegelsesmuligheter i trening og sceniske uttrykk"
+    },
+    {
+     "kode": "KM2798",
+     "tekst": "sette seg mål og gjennomføre og vurdere varierte treningsopplegg ut fra egne forutsetninger"
+    },
+    {
+     "kode": "KM2799",
+     "tekst": "beskrive og reflektere over sammenhengen mellom treningsrutiner, egen kroppslig læring og helse"
+    },
+    {
+     "kode": "KM2800",
+     "tekst": "utforske rytme, rom og bevegelse, og bruke ekspressivitet med presisjon i samhandling med andre"
+    },
+    {
+     "kode": "KM2801",
+     "tekst": "bruke pusteteknikker og metoder for konsentrasjon og avspenning i arbeid med kroppsbevissthet, tilstedeværelse og mental trening"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i bevegelse. Elevene viser og utvikler kompetanse i faget når de utforsker og mestrer et mangfold av bevegelsesaktiviteter og viser kroppsbevissthet og tilstedeværelse. De viser og utvikler også kompetanse i faget når de viser kunnskap om trening og forstår betydningen av gode treningsrutiner, og når de utforsker og bruker kroppens potensial for ekspressivitet og presisjon i ulike uttrykk, individuelt og i samhandling med andre. Videre viser og utvikler elevene kompetanse når de reflekterer over egen kroppslig læring og vurderer sammenhenger mellom fysisk og mental helse i bevegelse.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske ulike bevegelsesaktiviteter alene og sammen med andre, utvikle gode treningsrutiner, utforske og uttrykke kroppens potensial og ekspressivitet og reflektere over egen kroppslig læring. Læreren skal være i dialog med elevene om utviklingen deres i bevegelse, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å mestre ulike bevegelsesaktiviteter, utvikle gode treningsrutiner og utforske og uttrykke kroppens potensial og ekspressivitet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i bevegelse ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i bevegelse basert på kompetansen eleven har vist ved å utforske ulike bevegelsesaktiviteter, ved å tilegne seg kunnskap om trening og betydningen av gode treningsrutiner, ved å utforske og uttrykke kroppens potensial og ekspressivitet og ved å reflektere over egen kroppslig læring."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Bevegelse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Bevegelse: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Bevegelse: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "kode": "AMM03-04",
+ "tittel": "Læreplan i vg3 anleggsmaskinmekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV944",
+   "tittel": "Kompetansemål og vurdering feilsøking, reparasjon og vedlikehold",
+   "fag": [
+    "AMM3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12341",
+     "tekst": "planlegge, og gjennomføre arbeidsoppgaver knyttet til reparasjon og vedlikehold av anleggsmaskiner og utstyr og vurdere og dokumentere resultatet"
+    },
+    {
+     "kode": "KM12342",
+     "tekst": "feilsøke, registrere funksjonsavvik og diagnostisere systemer og komponenter, og vurdere reparasjonsbehov"
+    },
+    {
+     "kode": "KM12343",
+     "tekst": "vurdere reparasjonsoppdrag ut fra kostnader og lønnsomhet og drøfte alternative løsninger med kunder og kolleger"
+    },
+    {
+     "kode": "KM12344",
+     "tekst": "vurdere skader knyttet til feil bruk av arbeidsutstyr og veilede brukere om riktig bruk arbeidsutstyr"
+    },
+    {
+     "kode": "KM12345",
+     "tekst": "bruke analoge og digitale måleinstrumenter og vurdere måleresultater"
+    },
+    {
+     "kode": "KM12346",
+     "tekst": "kontrollere, vedlikeholde og reparere motorer etter produsentens anvisninger"
+    },
+    {
+     "kode": "KM12347",
+     "tekst": "vurdere skader og behov for vedlikehold på dekk og hjulutrustning"
+    },
+    {
+     "kode": "KM12348",
+     "tekst": "reparere etterbehandlingssystemer for avgasser fra forbrenningsmotorer"
+    },
+    {
+     "kode": "KM12349",
+     "tekst": "vedlikeholde og reparere transmisjoner og drivverk"
+    },
+    {
+     "kode": "KM12350",
+     "tekst": "vedlikeholde og reparere ramme-, grave- og lasteutstyr"
+    },
+    {
+     "kode": "KM12351",
+     "tekst": "vedlikeholde og reparere bremser, styring, belter og understell"
+    },
+    {
+     "kode": "KM12352",
+     "tekst": "vedlikeholde og reparere hydrauliske og pneumatiske systemer"
+    },
+    {
+     "kode": "KM12353",
+     "tekst": "kontrollere og vedlikeholde elektriske og elektroniske systemer"
+    },
+    {
+     "kode": "KM12354",
+     "tekst": "vedlikeholde og reparere kontroll- og varslingssystemer"
+    },
+    {
+     "kode": "KM12355",
+     "tekst": "vurdere sikkerhetstiltak ved vedlikehold og reparasjon av maskiner med alternative energikilder"
+    },
+    {
+     "kode": "KM12356",
+     "tekst": "vedlikeholde og reparere komfort- og klimaanlegg"
+    },
+    {
+     "kode": "KM12357",
+     "tekst": "utføre reparasjoner ved hjelp av ulike sveise- og sammenføyningsmetoder, inkludert lodding og liming"
+    },
+    {
+     "kode": "KM12358",
+     "tekst": "feilsøke og reparere digitale styringssystemer på maskiner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget feilsøking, reparasjon og vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget feilsøking, reparasjon og vedlikehold. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget feilsøking, reparasjon og vedlikehold ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget feilsøking, reparasjon og vedlikehold basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV945",
+   "tittel": "Kompetansemål og vurdering dokumentasjon og kontroll",
+   "fag": [
+    "AMM3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12359",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver i henhold til kvalitetsprosedyrer, sikkerhetskrav og godkjenningskrav"
+    },
+    {
+     "kode": "KM12360",
+     "tekst": "veilede kunder om nødvendig vedlikehold på anleggsmaskiner, utstyr og redskaper"
+    },
+    {
+     "kode": "KM12361",
+     "tekst": "vurdere og velge smøremidler og væsker i samsvar med produsentenes spesifikasjoner"
+    },
+    {
+     "kode": "KM12362",
+     "tekst": "følge og bruke internkontrollsystemer for rapportering og dokumentasjon"
+    },
+    {
+     "kode": "KM12363",
+     "tekst": "gjøre rede for å følge forskrifter og regler for sakkyndig kontroll på masseforflytningsmaskiner"
+    },
+    {
+     "kode": "KM12364",
+     "tekst": "reflektere over betydningen av gjenbruk og avfallshåndtering, og følge regler for håndtering og sortering avfall"
+    },
+    {
+     "kode": "KM12365",
+     "tekst": "gjøre rede for partssamarbeidet i arbeidslivet og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hva som kreves og forventes av et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget dokumentasjon og kontroll når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i dokumentasjon og kontroll. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget dokumentasjon og kontroll ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget dokumentasjon og kontroll basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Feilsøking, reparasjon og vedlikehold: Eleven skal ha én standpunktkarakter.",
+    "Dokumentasjon og kontroll: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Feilsøking, reparasjon og vedlikehold: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Dokumentasjon og kontroll: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  },
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanene i programfagene i vg3 anleggsmaskinmekanikerfaget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, i tillegg ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanene i programfagene i vg2 arbeidsmaskiner. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Opplæringen i vg3 anleggsmaskinmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

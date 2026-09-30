@@ -1,0 +1,89 @@
+{
+ "kode": "MAT06-04",
+ "tittel": "Læreplan i matematikk fellesfag 2P-Y – Vg3 påbygging til generell studiekompetanse",
+ "spraak": "nno",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV47",
+   "tittel": "Kompetansemål og vurdering matematikk 2P-Y",
+   "fag": [
+    "MAT6Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM461",
+     "tekst": "utforske korleis ulike premissar vil kunne påverke korleis matematiske problem frå samfunnsliv og arbeidsliv blir løyste"
+    },
+    {
+     "kode": "KM454",
+     "tekst": "analysere og presentere funn i datasett frå lokalsamfunn og media"
+    },
+    {
+     "kode": "KM455",
+     "tekst": "bruke og vurdere val av formålstenlege sentralmål og spreiingsmål for statistisk datamateriale"
+    },
+    {
+     "kode": "KM456",
+     "tekst": "lese, hente ut og vurdere matematikk i tekstar om samfunnsfaglege tema og tema frå lokalmiljøet, gjere berekningar knytte til dette og presentere og argumentere for resultata"
+    },
+    {
+     "kode": "KM463",
+     "tekst": "utforske, beskrive og bruke omgrepa proporsjonalitet og omvend proporsjonalitet"
+    },
+    {
+     "kode": "KM459",
+     "tekst": "identifisere variable storleikar i ulike situasjonar og bruke dei til utforsking og generalisering"
+    },
+    {
+     "kode": "KM457",
+     "tekst": "forklare og bruke prosent, prosentpoeng og vekstfaktor til modellering av praktiske situasjonar med digitale verktøy"
+    },
+    {
+     "kode": "KM458",
+     "tekst": "tolke og rekne med rotuttrykk, potensar og tal på standardform"
+    },
+    {
+     "kode": "KM462",
+     "tekst": "planleggje, utføre og presentere sjølvstendig arbeid knytt til modellering og funksjonar innanfor samfunnsfaglege tema"
+    },
+    {
+     "kode": "KM460",
+     "tekst": "bruke digitale verktøy i utforsking og problemløysing knytt til eigenskapar ved funksjonar, og diskutere løysingane"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 2P-Y. Elevane viser og utviklar kompetanse i faget når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i programmering og strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 2P-Y. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk 2P-Y: Eleven skal ha ein standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Matematikk 2P-Y: Eleven kan trekkjast ut til skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Eleven kan óg trekkjast ut til munnleg-praktisk eksamen med førebuingsdel. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Matematikk 2P-Y: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

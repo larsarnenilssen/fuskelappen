@@ -1,0 +1,157 @@
+{
+ "kode": "RMF01-03",
+ "tittel": "Læreplan i vg1 restaurant- og matfag",
+ "spraak": "nno",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV237",
+   "tittel": "Kompetansemål og vurdering råvare, produksjon og kvalitet",
+   "fag": [
+    "RMF1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2555",
+     "tekst": "praktisere personleg hygiene og næringsmiddel- og produksjonshygiene etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM2573",
+     "tekst": "bruke, montere og reingjere ulike handverktøy, maskiner, utstyr og lokale og forstå kor viktig dette er for å sikre trygg matproduksjon"
+    },
+    {
+     "kode": "KM2571",
+     "tekst": "forklare kva det inneber å arbeide med helse, miljø og tryggleik innanfor fagområdet, arbeide ergonomisk og bruke rett verneutstyr i tråd med gjeldande regelverk"
+    },
+    {
+     "kode": "KM2572",
+     "tekst": "bruke kvalitetssystem knytte til matproduksjon, ha kunnskap om mattryggleik og vurdere om produksjonsprosessane sikrar trygg mat"
+    },
+    {
+     "kode": "KM2570",
+     "tekst": "vurdere kvaliteten, bruksområdet og produksjonseigenskapane til råvarer og ferdige produkt og bruke denne kunnskapen i praktisk arbeid"
+    },
+    {
+     "kode": "KM2569",
+     "tekst": "bruke oppskrifter og reseptar for å planleggje, gjennomføre og vurdere ulike arbeids- og produksjonsprosessar"
+    },
+    {
+     "kode": "KM2568",
+     "tekst": "bruke arbeidsrutinar og handverksferdigheiter i praktisk arbeid og forklare kva desse har å seie for sluttproduktet"
+    },
+    {
+     "kode": "KM2567",
+     "tekst": "gjere berekraftige og miljømedvitne val i produksjonen av varer og tenester, og reflektere over korleis ressursane kan utnyttast på best mogleg måte"
+    },
+    {
+     "kode": "KM2560",
+     "tekst": "handtere avfall etter gjeldande forskrift og reflektere over om avfallet er ein ressurs som kan utnyttast"
+    },
+    {
+     "kode": "KM2574",
+     "tekst": "planleggje, lage og tilby mat og drikke ut frå norsk, samisk og internasjonal matkultur og ut frå nye trendar"
+    },
+    {
+     "kode": "KM2565",
+     "tekst": "planleggje, lage og tilby mat og drikke ut frå ulike religionar og ut frå behova til ulike brukargrupper"
+    },
+    {
+     "kode": "KM2563",
+     "tekst": "forklare korleis mat, drikke og livsstil påverkar folkehelsa og gjere reie for kostrådene frå helsestyresmaktene"
+    },
+    {
+     "kode": "KM2561",
+     "tekst": "emballere og merkje produkt for oppbevaring og sporing etter gjeldande forskrift"
+    },
+    {
+     "kode": "KM2566",
+     "tekst": "bruke digitale verktøy til å merkje produkt for sal etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM2562",
+     "tekst": "planleggje og klargjere ulike lokale for omsetning av varer og tenester"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i råvare, produksjon og kvalitet når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren og elevane skal vere i dialog med elevane om utviklinga deira i råvare, produksjon og kvalitet. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i råvare, produksjon og kvalitet ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i råvare, produksjon og kvalitet basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eiga fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV238",
+   "tittel": "Kompetansemål og vurdering bransje og arbeidsliv",
+   "fag": [
+    "RMF1Z05"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2559",
+     "tekst": "utvikle yrkesidentitet gjennom å prøve ut fagområda innanfor restaurant- og matfag og gjere greie for karrierevegar, særpreg og fellestrekk i bransjane"
+    },
+    {
+     "kode": "KM2558",
+     "tekst": "bruke faguttrykk og kjenne til at dei ulike lærefaga har forskjellige fagspråk"
+    },
+    {
+     "kode": "KM2557",
+     "tekst": "gjere greie for og vurdere korleis partane i arbeidslivet samarbeider for å utvikle et betre arbeidsliv"
+    },
+    {
+     "kode": "KM2575",
+     "tekst": "gjere greie for etiske problemstillingar knytte til produksjon og handel med mat og drikke"
+    },
+    {
+     "kode": "KM2556",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM2564",
+     "tekst": "bruke kommunikasjon, samarbeid og samhandling for å utføre service og kundebehandling innanfor dei ulike fagområda"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i bransje og arbeidsliv når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren og elevane skal vere i dialog med elevane om utviklinga deira i bransje og arbeidsliv. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i bransje og arbeidsliv ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i bransje og arbeidsliv basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eiga fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Råvare, produksjon og kvalitet: Eleven skal ha éin standpunktkarakter.",
+    "Bransje og arbeidsliv: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Råvare, produksjon og kvalitet: Eleven skal ikkje opp til eksamen.",
+    "Bransje og arbeidsliv: Eleven skal ikkje opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Råvare, produksjon og kvalitet: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Bransje og arbeidsliv: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Råvare, produksjon og kvalitet og bransje og arbeidsliv: Privatisten skal opp til éin tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

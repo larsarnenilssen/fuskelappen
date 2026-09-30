@@ -1,0 +1,92 @@
+{
+ "kode": "ITA03-02",
+ "tittel": "Læreplan i vg3 industritapetserarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV702",
+   "tittel": "Kompetansemål og vurdering vg3 industritapetserarfaget",
+   "fag": [
+    "ITA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9070",
+     "tekst": "vurdere og velje råvarer og produksjonsmetodar med omsyn til kvalitetskrav og miljøbelastning"
+    },
+    {
+     "kode": "KM9071",
+     "tekst": "gjere greie for korleis ein kan nytte ressursane i bedrifta optimalt og lønnsamt"
+    },
+    {
+     "kode": "KM9072",
+     "tekst": "velje og bruke verneutstyr og gjennomføre arbeidet i tråd med gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9064",
+     "tekst": "vurdere behovet for og utføre enkelt vedlikehald og service på maskiner og utstyr"
+    },
+    {
+     "kode": "KM9063",
+     "tekst": "vurdere og velje materiale med omsyn til kvalitet, estetikk, miljø, levetid og ombruk"
+    },
+    {
+     "kode": "KM9066",
+     "tekst": "utvikle og bruke malar og arbeidsbeskrivingar"
+    },
+    {
+     "kode": "KM9065",
+     "tekst": "utarbeide ein produksjonsplan i tråd med krav til produksjonsflyt"
+    },
+    {
+     "kode": "KM9067",
+     "tekst": "berekne, utarbeide og bruke materiallister i samsvar med produksjonsordrar"
+    },
+    {
+     "kode": "KM9068",
+     "tekst": "utføre tilskjering, samanføying, trekking og montering etter spesifikasjonar for eit produkt"
+    },
+    {
+     "kode": "KM9069",
+     "tekst": "utarbeide ein kalkyle for eit produkt og vurdere lønnsemd knytt til produktet"
+    },
+    {
+     "kode": "KM9073",
+     "tekst": "gjere greie for val knytt til produksjon, vurdere produktforbetringar og foreslå endringar knytt til produksjonen"
+    },
+    {
+     "kode": "KM9074",
+     "tekst": "vurdere, velje og nytte teknikkar, maskiner og utstyr i tråd med produksjonsordrar og planar"
+    },
+    {
+     "kode": "KM9076",
+     "tekst": "klargjere og emballere produkt for transport"
+    },
+    {
+     "kode": "KM9075",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritapetserarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritapetserarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 industritapetserarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på fire til fem vyrkedagar."
+   ]
+  }
+ ]
+}

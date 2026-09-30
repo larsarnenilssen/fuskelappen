@@ -1,0 +1,233 @@
+{
+ "kode": "BLD05-01",
+ "tittel": "Læreplan i vg3 blomsterdekoratørfaget - modulstrukturert opplæring for vaksne",
+ "spraak": "nno",
+ "fastsatt": "2025-10-06",
+ "gyldigFra": "2025-11-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV981",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og kunderettleiing",
+   "fag": [
+    "BLD5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12776",
+     "tekst": "presentere blomsterprodukt ved å nytte vareeksponering og utstillingar"
+    },
+    {
+     "kode": "KM12777",
+     "tekst": "nytte formålstenlege kommunikasjonsformer og strategiar i møte med kundar, kollegaer, leverandørar og andre samarbeidspartnarar"
+    },
+    {
+     "kode": "KM12778",
+     "tekst": "rettleie og formidle informasjon om blomsterfaglege produkt og tenester til kundar"
+    },
+    {
+     "kode": "KM12779",
+     "tekst": "nytte digitale ressursar til idéprosessen, dokumentasjonen og presentasjonen av eige arbeid"
+    },
+    {
+     "kode": "KM12780",
+     "tekst": "lytte til, forstå og bruke fagterminologi munnleg og skriftleg i arbeidssituasjonar"
+    },
+    {
+     "kode": "KM12781",
+     "tekst": "uttrykkje seg nyansert og presist med flyt og samanheng, idiomatiske uttrykk og varierte setningsstrukturar tilpassa formål, mottakar og situasjon"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen kommunikasjon og kunderettleiing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen kommunikasjon og kunderettleiing. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i kommunikasjon og kunderettleiing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV983",
+   "tittel": "Kompetansemål og vurdering idè og produktutvikling",
+   "fag": [
+    "BLD5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12787",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere eige blomsterarbeid"
+    },
+    {
+     "kode": "KM12788",
+     "tekst": "utarbeide og vidareutvikle skisser for hand og med digitale ressursar"
+    },
+    {
+     "kode": "KM12789",
+     "tekst": "utforske stillære og ulike trendar og tilpasse blomsterdekor etter kva behov kunden har"
+    },
+    {
+     "kode": "KM12790",
+     "tekst": "utforske, utvikle og designe faglege produkt og grunngi val av stilform og uttrykk og knyte det til analysar av rom, anledning og person"
+    },
+    {
+     "kode": "KM12791",
+     "tekst": "gjere greie for kulturuttrykk i ulike kulturar og religionar og tilpasse dette i blomsterdekor i ulike stilartar"
+    },
+    {
+     "kode": "KM12792",
+     "tekst": "analysere og tolke ulike oppdrag og gjere estetiske, miljøvennlege og berekraftige faglege val, i tråd med ønska og behova til kunden"
+    },
+    {
+     "kode": "KM12793",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar og rekne ut lengder, vinklar, areal, volum, forhold og målestokk i problemløysing innanfor frisør, blomster, interiør og eksponeringsdesign"
+    },
+    {
+     "kode": "KM12794",
+     "tekst": "anvende fargelære i eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen idè og produktutvikling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen idè og produktutvikling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i idè og produktutvikling. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV980",
+   "tittel": "Kompetansemål og vurdering materialkunnskap og yrkesidentitet",
+   "fag": [
+    "BLD5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12769",
+     "tekst": "vurdere botanisk materiale i produksjon ut frå eigenskapane og kvaliteten på materialet og grunngi eigne val knytte til ordre og stil og uttrykk for produktet"
+    },
+    {
+     "kode": "KM12770",
+     "tekst": "vurdere, bestille og bruke ulike botaniske materiale og støttemateriell i eige arbeid og gjere greie for konsekvensane av ulike val, med utgangspunkt i ein etisk og miljøvennleg produksjon i eit lokalt, nasjonalt og globalt perspektiv"
+    },
+    {
+     "kode": "KM12771",
+     "tekst": "gjere greie for opphav, naturleg sesong og stell for eit breitt utval av botaniske materiale og bruke denne kunnskapen i kommunikasjon med kundar og i praktisk arbeid"
+    },
+    {
+     "kode": "KM12772",
+     "tekst": "gjere greie for og nytte tiltak mot sjukdommar på stoveplanter"
+    },
+    {
+     "kode": "KM12773",
+     "tekst": "gjere greie for korleis kulde, varme, støyt og feilvatning skader blomstrar og planter, og vurdere korleis dette kan førebyggjast"
+    },
+    {
+     "kode": "KM12774",
+     "tekst": "norske og vitskaplege namn på botaniske materiale og bruke desse i kommunikasjon med kundar og leverandørar"
+    },
+    {
+     "kode": "KM12775",
+     "tekst": "undersøkje og vurdere livsløpet til ulike produkt i eit berekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen materialkunnskap og yrkesidentitet når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen materialkunnskap og yrkesidentitet. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i materialkunnskap og yrkesidentitet. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV982",
+   "tittel": "Kompetansemål og vurdering blomsterdekorering og handverksferdigheiter",
+   "fag": [
+    "BLD5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12782",
+     "tekst": "bruke formålstenlege handverksteknikkar og verktøy og grunngi eigne tekniske val knytte til kor haldbare materiala er og stil og uttrykk for produktet"
+    },
+    {
+     "kode": "KM12783",
+     "tekst": "nytte teknikkar som bidreg til berekraftig ressursutnytting, og vurdere gjenbruk, avfallshandtering og miljøpåverknad av materiale"
+    },
+    {
+     "kode": "KM12784",
+     "tekst": "nytte analysar, stilform, komposisjonsprinsipp, teknikkar og materiale for å skape eit heilskapleg uttrykk"
+    },
+    {
+     "kode": "KM12785",
+     "tekst": "utforske og eksperimentere med ulike handverksteknikkar, verktøy og materiale og bruke denne kunnskapen som inspirasjon i eige arbeid"
+    },
+    {
+     "kode": "KM12786",
+     "tekst": "velje, bruke og vedlikehalde verktøy i praktisk arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen blomsterdekorering og handverksferdigheiter når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen blomsterdekorering og handverksferdigheiter. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i blomsterdekorering og handverksferdigheiter. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV984",
+   "tittel": "Kompetansemål og vurdering økonomi og arbeidsliv",
+   "fag": [
+    "BLD5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12795",
+     "tekst": "nytte overslag og budsjett for å berekne materiale til produkt ut frå tidsbruk, innkjøp og lønnsemd"
+    },
+    {
+     "kode": "KM12796",
+     "tekst": "vurdere korleis varelager, vareflyt, orden og tidsbruk påverkar økonomien i bedrifta og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM12797",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM12798",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen økonomi og arbeidsliv når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen økonomi og arbeidsliv. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i økonomi og arbeidsliv. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle ha bestått ein skriftleg eksamen som er laga ut frå læreplanen i vg3 blomsterdekoratørfaget (BLD03-03). Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 blomsterdekoratørfaget - modulstrukturert opplæring for vaksne skal avsluttast med ein fagprøve. Fagprøva blir laga ut frå læreplanen i vg3 blomsterdekoratørfaget (BLD03-03). Alle skal opp til fagprøven, som skal gjennomførast innanfor ei tidsramme på tolv til fjorten vyrkedagar."
+   ]
+  }
+ ]
+}

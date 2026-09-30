@@ -1,0 +1,124 @@
+{
+ "kode": "HAV03-01",
+ "tittel": "Læreplan i vg3 havbruksteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-01",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV663",
+   "tittel": "Kompetansemål og vurdering vg3 havbruksteknikkfaget",
+   "fag": [
+    "HAV3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8246",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid i henhold til gjeldende regelverk og prosedyrer"
+    },
+    {
+     "kode": "KM8265",
+     "tekst": "vurdere risiko og ivareta egen og andres helse og sikkerhet under ulike forhold"
+    },
+    {
+     "kode": "KM8264",
+     "tekst": "utføre kontroll og vedlikehold av akvakulturanlegg med tilhørende installasjoner ved bruk av manualer og vedlikeholdsplaner"
+    },
+    {
+     "kode": "KM8263",
+     "tekst": "vurdere ressurs- og energiforbruk i ulike arbeidsoperasjoner med tanke på miljø og resultat"
+    },
+    {
+     "kode": "KM8262",
+     "tekst": "bruke løfte- og lasteutstyr etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM8261",
+     "tekst": "bruke og foreta daglig ettersyn av framkomstmidler og redskaper etter gjeldende prosedyrer og regelverk"
+    },
+    {
+     "kode": "KM8260",
+     "tekst": "beskrive oppbygningen, egenskapene og funksjonen til akvakulturenheter og øvrige driftsmidler med tilhørende utstyr, utføre service og vedlikehold og reflektere over ulike løsninger"
+    },
+    {
+     "kode": "KM8259",
+     "tekst": "gjøre rede for ulike materialers bruksområder og bruke og sammenføye materialer i tråd med gjeldende standarder og i henhold til deres egenskaper og tåleevne"
+    },
+    {
+     "kode": "KM8258",
+     "tekst": "identifisere og vurdere endringer i adferd og utseende hos akvakulturorganismer, og iverksette tiltak etter organismenes behov"
+    },
+    {
+     "kode": "KM8257",
+     "tekst": "reflektere over hvordan ulike driftsformer påvirker fiskevelferd og miljø og utføre arbeid på en måte som ivaretar akvakulturorganismenes velferd og minimerer miljøavtrykk"
+    },
+    {
+     "kode": "KM8256",
+     "tekst": "klargjøre anlegg for mottak av akvakulturorganismer"
+    },
+    {
+     "kode": "KM8255",
+     "tekst": "rengjøre og desinfisere anlegg, fartøy og utstyr i henhold til prosedyrer, sikkerhetsdatablad og regelverk"
+    },
+    {
+     "kode": "KM8254",
+     "tekst": "gjennomføre miljømålinger, tolke resultater og iverksette nødvendige tiltak"
+    },
+    {
+     "kode": "KM8253",
+     "tekst": "bruke, justere og kalibrere styrings- og overvåkingssystemer"
+    },
+    {
+     "kode": "KM8252",
+     "tekst": "bruke kommunikasjonsutstyr etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM8251",
+     "tekst": "kommunisere og samarbeide med andre yrkesgrupper, kunder og arbeidskolleger"
+    },
+    {
+     "kode": "KM8250",
+     "tekst": "vurdere egnethet og bruke kjemiske stoffer på en måte som tar hensyn til mennesker, akvakulturorganismer og natur"
+    },
+    {
+     "kode": "KM8249",
+     "tekst": "bistå ved krisesituasjoner og iverksette skadebegrensende tiltak ved uønskede hendelser"
+    },
+    {
+     "kode": "KM8248",
+     "tekst": "anvende beredskapsplaner og varslingsrutiner i henhold til bedriftens organisering"
+    },
+    {
+     "kode": "KM8247",
+     "tekst": "vurdere hvordan eget arbeid og andre innsatsfaktorer påvirker bedriftens resultat"
+    },
+    {
+     "kode": "KM8266",
+     "tekst": "vurdere og gjennomføre brannforebyggende tiltak og bruke brannslokkingsutstyr på arbeidsplassen"
+    },
+    {
+     "kode": "KM8267",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og arbeidsgiver og arbeidstakers plikter og rettigheter i virksomheten"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 havbruksteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 havbruksteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 havbruksteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én–to virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,168 @@
+{
+ "kode": "IED02-01",
+ "tittel": "Læreplan i vg2 interiør og eksponeringsdesign",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV387",
+   "tittel": "Kompetansemål og vurdering design, teknologi og produksjon",
+   "fag": [
+    "IED2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4080",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget praktisk arbeid"
+    },
+    {
+     "kode": "KM4101",
+     "tekst": "utforske og bruke ulike produkter, inventar og materialer tilpasset oppdragets egenart"
+    },
+    {
+     "kode": "KM4100",
+     "tekst": "anvende ulike håndverksteknikker og arbeidsmetoder i praktisk arbeid"
+    },
+    {
+     "kode": "KM4098",
+     "tekst": "anvende aktuelle fargesystemer, metoder, teknikker og 2D- og 3D-programvare for å visualisere ideer og løsninger"
+    },
+    {
+     "kode": "KM4099",
+     "tekst": "anvende aktuell programvare for produksjon med raster- og vektorgrafikk"
+    },
+    {
+     "kode": "KM4097",
+     "tekst": "gjøre rede for stilhistorie og trender og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM4096",
+     "tekst": "gjøre rede for belysningens påvirkning av rom og flater og anvende kunnskap om dette i utformingen av egne løsninger"
+    },
+    {
+     "kode": "KM4095",
+     "tekst": "beregne pris på varer og tjenester og gjøre rede for hvordan ulike valg kan påvirke produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4094",
+     "tekst": "utforske og anvende form, farge og komposisjon for å skape estetiske og funksjonelle løsninger"
+    },
+    {
+     "kode": "KM4093",
+     "tekst": "anvende målestokk og måle opp rom og produkter for å lage funksjonelle løsninger"
+    },
+    {
+     "kode": "KM4091",
+     "tekst": "gjøre rede for og bruke universell utforming i praktisk arbeid"
+    },
+    {
+     "kode": "KM4092",
+     "tekst": "vedlikeholde maskiner og utstyr, holde orden i verksted og på egen arbeidsplass og følge gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4090",
+     "tekst": "utforske bransjen og gjøre rede for hvordan ulike valg av materialer, varer og tjenester kan påvirke miljøet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget design, teknologi og produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling programfaget i design, teknologi og produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget design, teknologi og produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget design, teknologi og produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV388",
+   "tittel": "Kompetansemål og vurdering kunde og kommunikasjon",
+   "fag": [
+    "IED2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4103",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM4089",
+     "tekst": "analysere og vurdere oppdrag ut fra kundens bestillinger og behov"
+    },
+    {
+     "kode": "KM4088",
+     "tekst": "bruke og tilpasse ulike kommunikasjonsformer i dialog med andre og reflektere over egen rolle i samspillet"
+    },
+    {
+     "kode": "KM4087",
+     "tekst": "bruke kildehenvisning og vurdere kildebruk med tanke på opphavsrettigheter og personvernhensyn"
+    },
+    {
+     "kode": "KM4086",
+     "tekst": "undersøke og følge regelverk for montering og visuell eksponering"
+    },
+    {
+     "kode": "KM4085",
+     "tekst": "presentere og gjøre rede for løsningsforslag i dialog med kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM4084",
+     "tekst": "bruke skisser i dialog med kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM4083",
+     "tekst": "utforske og bruke markedsundersøkelser, markedsføring og salg i arbeid med design og produktutvikling og vurdere hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM4082",
+     "tekst": "style og fotografere miljøer for å visualisere løsninger"
+    },
+    {
+     "kode": "KM4081",
+     "tekst": "utforske og bruke typografi i eget arbeid"
+    },
+    {
+     "kode": "KM4102",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget kunde og kommunikasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget kunde og kommunikasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget kunde og kommunikasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget kunde og kommunikasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Design, teknologi og produksjon: Eleven skal ha én standpunktkarakter.",
+    "Kunde og kommunikasjon: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Design, teknologi og produksjon og kunde og kommunikasjon: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Design, teknologi og produksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kunde og kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Design, teknologi og produksjon og kunde og kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

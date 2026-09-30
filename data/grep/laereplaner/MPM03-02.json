@@ -1,0 +1,128 @@
+{
+ "kode": "MPM03-02",
+ "tittel": "Læreplan i maskør- og parykkmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV448",
+   "tittel": "Kompetansemål og vurdering maskør- og parykkmakerfaget",
+   "fag": [
+    "MPM3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4855",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM4844",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM4840",
+     "tekst": "lage og tilvirke, tilpasse og reparere parykker og hårdeler etter bestilling, konsept, design, trend eller tidsepoke"
+    },
+    {
+     "kode": "KM4859",
+     "tekst": "beskrive og anvende kordel, tresseramme, hekle og karde til bruk i arbeidet med å lage og å tilvirke parykker"
+    },
+    {
+     "kode": "KM4854",
+     "tekst": "anvende forskjellige friseringsteknikker ved å bruke moderne og tradisjonelle friseringsverktøy"
+    },
+    {
+     "kode": "KM4853",
+     "tekst": "utføre grunnleggende klippeteknikker og utvikle frisyrer etter en gitt karakter, trend eller tidsperiode"
+    },
+    {
+     "kode": "KM4843",
+     "tekst": "utføre kjemiske behandlinger av hår og vurdere hvordan bruk av ulike kjemikalier påvirker håret"
+    },
+    {
+     "kode": "KM4842",
+     "tekst": "gjøre rede for ulike bruksområder for hår og tyll og bruke denne kunnskapen i arbeid med å lage og å tilvirke parykker"
+    },
+    {
+     "kode": "KM4860",
+     "tekst": "planlegge og gjennomføre maskering etter et bestemt konsept, design, trend og tidsepoke"
+    },
+    {
+     "kode": "KM4856",
+     "tekst": "gjennomføre skjønnsminke tilpasset ulike uttrykk, trender og hudtyper"
+    },
+    {
+     "kode": "KM4841",
+     "tekst": "analysere tekst og ut fra dette utvikle en karakter og et eget maskedesign"
+    },
+    {
+     "kode": "KM4861",
+     "tekst": "vurdere og velge ulike materialer og drøfte metodevalg ut fra hensyn til miljø og etikk"
+    },
+    {
+     "kode": "KM4858",
+     "tekst": "analysere, beregne og korrigere materialkostnader, ressursbruk og budsjett"
+    },
+    {
+     "kode": "KM4848",
+     "tekst": "presentere arbeidsprosesser med digitale verktøy og arbeidstegninger og bruke fagspråk tilpasset formål og mottaker"
+    },
+    {
+     "kode": "KM4845",
+     "tekst": "bruke fargesirkelen og anvende fargeteori i arbeidsprosesser"
+    },
+    {
+     "kode": "KM4847",
+     "tekst": "beskrive og tegne kroppens anatomi og aldringsprosess i arbeidet med å skape karakterer"
+    },
+    {
+     "kode": "KM4852",
+     "tekst": "bruke forskjellige modelleringsteknikker for å utvikle et tredimensjonalt uttrykk ved hjelp av løse deler"
+    },
+    {
+     "kode": "KM4846",
+     "tekst": "utforske og sammenligne materialer ut fra egenskaper og bruksområder i tredimensjonal maskering"
+    },
+    {
+     "kode": "KM4851",
+     "tekst": "gjennomføre et avstøp og lage kopier"
+    },
+    {
+     "kode": "KM4849",
+     "tekst": "gjennomføre pigmentering, påsetting og innsminking av løse deler"
+    },
+    {
+     "kode": "KM4857",
+     "tekst": "utøve god hygiene, holde orden på arbeidsplassen og bruke materialer, kjemikalier, teknikker og utstyr i henhold til gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4850",
+     "tekst": "utføre grunnleggende vedlikehold av maskiner, verktøy og utstyr etter gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4862",
+     "tekst": "reflektere over kritisk bruk av kilder og vise digital dømmekraft"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i maskør- og parykkmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i maskør- og parykkmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i maskør- og parykkmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 10–14 virkedager."
+   ]
+  }
+ ]
+}

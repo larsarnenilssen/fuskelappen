@@ -1,0 +1,213 @@
+{
+ "kode": "FFA02-03",
+ "tittel": "Læreplan i vg2 fiske og fangst",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV411",
+   "tittel": "Kompetansemål og vurdering fartøy og reiskapar (337 timar)",
+   "fag": [
+    "FFA2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4339",
+     "tekst": "fangste med ulike reiskapar og beskrive oppbygginga og verkemåten til reiskapane"
+    },
+    {
+     "kode": "KM4346",
+     "tekst": "gjennomføre vedlikehald og reparasjon av fiske- og fangstreiskapar"
+    },
+    {
+     "kode": "KM4321",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere seglas ved bruk av sjøkart, farvatnbeskrivingar, sjømerke og navigasjonsmiddel"
+    },
+    {
+     "kode": "KM4340",
+     "tekst": "hente inn og vurdere meteorologiske observasjonar"
+    },
+    {
+     "kode": "KM4341",
+     "tekst": "bruke sjøvegsreglar og halde bruvakt i samsvar med godt sjømannskap"
+    },
+    {
+     "kode": "KM4342",
+     "tekst": "manøvrere og fortøye fartøy under rettleiing"
+    },
+    {
+     "kode": "KM4343",
+     "tekst": "gjere greie for operasjon av fartøy med omsyn til vêrforhold, straum, tidvatn og åtferda til fisken"
+    },
+    {
+     "kode": "KM4344",
+     "tekst": "rekne ut stabiliteten til fartøy i ulike lastekondisjonar"
+    },
+    {
+     "kode": "KM4345",
+     "tekst": "laste og losse fartøy i samsvar med gjeldande regelverk"
+    },
+    {
+     "kode": "KM4347",
+     "tekst": "handtere avfall og førebyggje skadelege utslepp etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM4354",
+     "tekst": "bruke sikkerheitsstyringssystem for fiskefartøy etter gjeldande regelverk og gjere greie for kva ISM-koden har å seie for drift og sikkerheit"
+    },
+    {
+     "kode": "KM4348",
+     "tekst": "gjere greie for hovudfunksjonane og ansvarsfordelinga til bemanninga om bord"
+    },
+    {
+     "kode": "KM4349",
+     "tekst": "vurdere risiko for arbeidsoperasjonar om bord og utføre arbeidet i tråd med vurderinga"
+    },
+    {
+     "kode": "KM4350",
+     "tekst": "uføre oppgåver etter sikkerheits- og beredskapsplanen om bord"
+    },
+    {
+     "kode": "KM4351",
+     "tekst": "velje ut og bruke personleg verneutstyr ved ulike arbeidsoperasjonar om bord"
+    },
+    {
+     "kode": "KM4352",
+     "tekst": "halde ved like og reparere fartøy og produksjonsutstyr etter vedlikehaldsplanen for fartøyet"
+    },
+    {
+     "kode": "KM4353",
+     "tekst": "starte, stoppe og utføre rutinemessig vedlikehald av ein motor"
+    },
+    {
+     "kode": "KM4328",
+     "tekst": "gjere greie for korleis dekksutstyr om bord er bygd opp og fungerer"
+    },
+    {
+     "kode": "KM4338",
+     "tekst": "gjere greie for innhaldet i ISPS-koden"
+    },
+    {
+     "kode": "KM4322",
+     "tekst": "bruke maritim radio etter gjeldande regelverk"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget fartøy og reiskapar når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget fartøy og reiskapar. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget fartøy og reiskapar ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget fartøy og reiskapar basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid.",
+    "Eleven må dokumentere gjennomført kurs i grunnleggjande sikkerheitsopplæring i tråd med gjeldande regelverk og krav frå Sjøfartsdirektoratet."
+   ]
+  },
+  {
+   "kode": "KV412",
+   "tittel": "Kompetansemål og vurdering fangst og kvalitet (140 timar)",
+   "fag": [
+    "FFA2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4333",
+     "tekst": "bruke arbeidsklede og verneutstyr om bord og følgje rutinar for god hygiene"
+    },
+    {
+     "kode": "KM4332",
+     "tekst": "fangste med omsyn til dyrevelferd, råstoffkvalitet, matvaretryggleik og fangstverdi"
+    },
+    {
+     "kode": "KM4334",
+     "tekst": "gjennomføre reinhald etter gjeldande reinhaldsplan om bord"
+    },
+    {
+     "kode": "KM4323",
+     "tekst": "utføre fangsting basert på biologien til dei aktuelle artane"
+    },
+    {
+     "kode": "KM4324",
+     "tekst": "gjennomføre disseksjon av ulike artar og gjere greie for anatomien og fysiologien til artane"
+    },
+    {
+     "kode": "KM4325",
+     "tekst": "drøfte økologiske konsekvensar av fiske og næringsverksemd, og fiske i tråd med prinsipp om berekraft"
+    },
+    {
+     "kode": "KM4326",
+     "tekst": "følgje gjeldande reguleringar for ulike fiskeri"
+    },
+    {
+     "kode": "KM4327",
+     "tekst": "bruke metodar for seleksjon og fangstavgrensing med ulike reiskapar, og vurdere kva desse metodane har å seie for berekraftig forvaltning"
+    },
+    {
+     "kode": "KM4336",
+     "tekst": "gjennomføre førstehandsbehandling av råstoff etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM4329",
+     "tekst": "bruke fangstbehandlingsutstyr om bord og vurdere påverknaden dette har på råstoffkvaliteten"
+    },
+    {
+     "kode": "KM4330",
+     "tekst": "bruke tilarbeidingsmetodar for ulike artar og vurdere korleis desse påverkar kvaliteten på råstoffet og graden av råstoffutnytting"
+    },
+    {
+     "kode": "KM4331",
+     "tekst": "bruke kvalitetssikringssystem og følgje standardar om bord"
+    },
+    {
+     "kode": "KM4335",
+     "tekst": "gjere greie for samanhengen mellom fangstinntekter, kostnader, lott og hyreoppgjer"
+    },
+    {
+     "kode": "KM4337",
+     "tekst": "gjere greie for organisasjonar og forvaltningsnivå i næringa"
+    },
+    {
+     "kode": "KM4355",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget fangst og kvalitet når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget fangst og kvalitet. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget fangst og kvalitet ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget fartøy og reiskapar basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Fartøy og reiskapar: Eleven skal ha éin standpunktkarakter.",
+    "Fangst og kvalitet: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Fartøy og reiskapar og fangst og kvalitet: Eleven skal opp til ein tverrfagleg eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Fartøy og reiskapar: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Fangst og kvalitet: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Fartøy og reiskapar og fangst og kvalitet: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

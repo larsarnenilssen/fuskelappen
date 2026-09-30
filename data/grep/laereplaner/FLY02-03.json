@@ -1,0 +1,194 @@
+{
+ "kode": "FLY02-03",
+ "tittel": "Læreplan i Vg2 flyfag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV455",
+   "tittel": "Kompetansemål og vurdering elektrofag",
+   "fag": [
+    "FLY2Z03",
+    "FLY2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4975",
+     "tekst": "gjøre rede for virkemåten til digitale luftfartøysystemer og elektroniske instrumentsystemer"
+    },
+    {
+     "kode": "KM4993",
+     "tekst": "behandle elektrostatisk følsomme komponenter på en riktig måte og gjøre rede for utfordringer knyttet til elektrostatiske miljøer og komponenter"
+    },
+    {
+     "kode": "KM4992",
+     "tekst": "gjøre rede for restriksjoner som gjelder luftdyktighetskrav og mulige konsekvenser av å bruke programvareoppdateringer som ikke er godkjent"
+    },
+    {
+     "kode": "KM4991",
+     "tekst": "identifisere, koble og måle på elektriske komponenter i luftfartøyer og gjøre rede for deres funksjon og virkemåte"
+    },
+    {
+     "kode": "KM4990",
+     "tekst": "identifisere, koble og måle på analoge elektroniske komponenter i luftfartøyer og gjøre rede for deres funksjon og virkemåte"
+    },
+    {
+     "kode": "KM4989",
+     "tekst": "identifisere, koble og måle på komponenter for produksjon og distribusjon av elektrisk energi i luftfartøyer og gjøre rede for deres funksjon og virkemåte"
+    },
+    {
+     "kode": "KM4988",
+     "tekst": "identifisere, koble og måle på digitale komponenter og elektroniske instrumentsystemer i luftfartøyer og gjøre rede for deres funksjon og virkemåte"
+    },
+    {
+     "kode": "KM4987",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elektrofag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elektrofag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elektrofag ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elektrofag basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV456",
+   "tittel": "Kompetansemål og vurdering luftfartøylære",
+   "fag": [
+    "FLY2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4986",
+     "tekst": "anvende matematiske beregninger innen aritmetikk, algebra og geometri i praktiske sammenhenger knyttet til luftfartøyer og systemer"
+    },
+    {
+     "kode": "KM4994",
+     "tekst": "anvende fysiske lover innen materie, mekanikk, termodynamikk, optikk og bølger og lyd i praktiske sammenhenger knyttet til luftfartøyer og utstyr"
+    },
+    {
+     "kode": "KM4985",
+     "tekst": "beskrive de aerodynamiske lovene og hvordan disse virker inn på luftfartøyets egenskaper"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i luftfartøylære når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i luftfartøylære. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i luftfartøylære ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i luftfartøylære basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV457",
+   "tittel": "Kompetansemål og vurdering material- og komponentlære",
+   "fag": [
+    "FLY2Z06",
+    "FLY2Z07"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4983",
+     "tekst": "risikovurdere, planlegge og utføre arbeidet individuelt og i samarbeid med andre flyfag på en fagmessig og nøyaktig måte i overensstemmelse med gjeldende lover, forskrifter, normer og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM4982",
+     "tekst": "utføre arbeidet i henhold til gjeldende krav om helse, miljø og sikkerhet og utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM4981",
+     "tekst": "arbeide i overensstemmelse med gjeldende rutiner for kvalitetssikring, og internkontroll"
+    },
+    {
+     "kode": "KM4980",
+     "tekst": "utføre vedlikehold og reparasjon av luftfartøyer ved bruk av egnede verktøy og måleinstrumenter"
+    },
+    {
+     "kode": "KM4979",
+     "tekst": "montere, demontere, inspisere og reparere luftfartøyer ved bruk av anbefalte teknikker"
+    },
+    {
+     "kode": "KM4978",
+     "tekst": "vurdere og dokumentere eget og andres arbeid som utføres på luftfartøy"
+    },
+    {
+     "kode": "KM4977",
+     "tekst": "bruke faglig presist språk på norsk og engelsk ved arbeid på luftfartøy"
+    },
+    {
+     "kode": "KM4976",
+     "tekst": "utføre grunnleggende lodde- og krympearbeid og vurdere kvaliteten"
+    },
+    {
+     "kode": "KM4984",
+     "tekst": "identifisere og gjøre rede for ulike materialer, deres egenskaper og bruksområder, og hvordan disse er brukt i ulike luftfartøykonstruksjoner"
+    },
+    {
+     "kode": "KM4995",
+     "tekst": "drøfte klima og miljøbelastning fra flykomponenter og utstyr i et livsløpsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i material- og komponentlære når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i material- og komponentlære. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i material- og komponentlære ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i material- og komponentlære basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elektrofag: Eleven skal ha én standpunktkarakter.",
+    "Luftfartøylære: Elevene skal ha én standpunktkarakter.",
+    "Material- og komponentlære: Elevene skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elektrofag:",
+    "Eleven skal opp til tre lokalgitte skriftlige eksamener. EASA Part-66 Modul 3(B1B2), Modul 4B1 eller Modul 4B2 og Modul 5B1 eller Modul 5B2.",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Luftfartøylære:",
+    "Eleven skal opp til 3 lokalgitte skriftlige eksamener. EASA Part-66 Modul1(B1B2), Modul 2(B1), Modul 8(B1B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Material- og komponentlære:",
+    "Eleven skal opp til en lokalgitt skriftlig eksamen. EASA Part 66 Modul 6(B1) eller Modul 6(B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elektrofag:",
+    "Privatisten skal opp til tre lokalgitte skriftlige eksamener. EASA Part-66 Modul 3(B1B2), Modul 4B1 eller Modul 4B2 og Modul 5B1 eller Modul 5B2.",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Luftfartøylære:",
+    "Privatisten skal opp til tre lokalgitte skriftlige eksamener. EASA Part-66 Modul1(B1B2), Modul 2(B1), Modul 8(B1B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Material- og komponentlære: Privatisten skal opp til en lokalgitt skriftlig eksamen. EASA Part 66 Modul 6(B1) eller Modul 6(B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelser om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, - deler og – utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgaver (vedlikeholdsforskriften).",
+    "Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  }
+ ]
+}

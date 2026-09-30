@@ -1,0 +1,104 @@
+{
+ "kode": "MOB03-02",
+ "tittel": "Læreplan i vg3 modellbyggjarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV703",
+   "tittel": "Kompetansemål og vurdering vg3 modellbyggjarfaget",
+   "fag": [
+    "MOB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9077",
+     "tekst": "planleggje og gjennomføre arbeidet i samsvar med spesifikasjonar, standardar og kundekrav"
+    },
+    {
+     "kode": "KM9090",
+     "tekst": "utarbeide ein sikker jobb-analyse og reflektere over risiko før arbeidet blir sett i gang og foreslå risikoreduserande tiltak"
+    },
+    {
+     "kode": "KM9089",
+     "tekst": "vurdere og velje materiale for å konstruere og byggje modellar ut frå miljøomsyn og bruksområde"
+    },
+    {
+     "kode": "KM9091",
+     "tekst": "vurdere økonomiske og miljømessige konsekvensar av produksjonen ut frå bruken av modellen"
+    },
+    {
+     "kode": "KM9088",
+     "tekst": "vurdere og velje materiale tilpassa bruken av modellen som skal framstillast"
+    },
+    {
+     "kode": "KM9087",
+     "tekst": "utforme og dimensjonere utvisarar på kjerne og kjernedor"
+    },
+    {
+     "kode": "KM9086",
+     "tekst": "velje og bruke eigna verneutstyr til ulike arbeidsoppgåver"
+    },
+    {
+     "kode": "KM9092",
+     "tekst": "finne og nytte datablad for helse, miljø og sikkerheit og sikkerheitsdatablad til ulike materiale og nytte desse i eige arbeid"
+    },
+    {
+     "kode": "KM9085",
+     "tekst": "gjere greie for og bruke krymptabell for ulike metall i framstilling av modellar"
+    },
+    {
+     "kode": "KM9083",
+     "tekst": "gjere greie for sleppvinkel på modell, kjernedor og kjernekasse"
+    },
+    {
+     "kode": "KM9082",
+     "tekst": "forstå behovet for og leggje til arbeidsmonn for omarbeiding etter spesifikasjon frå oppdragsgivaren eller standarden for bedrifta"
+    },
+    {
+     "kode": "KM9081",
+     "tekst": "vurdere behovet for å endre teikningar eller modellar for å tilpasse til støyping, og kommunisere dette til konstruktøren"
+    },
+    {
+     "kode": "KM9080",
+     "tekst": "tilpasse kjernekasser til skytemaskiner"
+    },
+    {
+     "kode": "KM9079",
+     "tekst": "montere modellar og løpssystem på plate"
+    },
+    {
+     "kode": "KM9078",
+     "tekst": "bruke digitale ressursar for framstilling av modellar og tilpasse modellar til spesifikasjon frå oppdragsgivaren eller standarden for bedrifta"
+    },
+    {
+     "kode": "KM9084",
+     "tekst": "bruke ulike verktøymaskiner og måleverktøy og vurdere når dei skal brukast"
+    },
+    {
+     "kode": "KM9093",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 modellbyggjarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 modellbyggjarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 modellbyggjarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst åtte vyrkedagar."
+   ]
+  }
+ ]
+}

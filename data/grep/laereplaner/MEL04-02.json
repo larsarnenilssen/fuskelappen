@@ -1,0 +1,162 @@
+{
+ "kode": "MEL04-02",
+ "tittel": "Læreplan i vg3 maritim elektrikerfaget – opplæring i bedrift",
+ "spraak": "nob",
+ "fastsatt": "2023-03-31",
+ "gyldigFra": "2023-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV785",
+   "tittel": "Kompetansemål",
+   "fag": [
+    "MEL4Z02"
+   ],
+   "trinn": [
+    "Bedrift"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10464",
+     "tekst": "planlegge, risikovurdere, gjennomføre og dokumentere arbeidsoppdrag individuelt og i samarbeid med andre i henhold til gjeldende regelverk, teknisk dokumentasjon, vedlikeholds-, kvalitetsstyrings- og sikkerhetsstyringssystemer, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM10465",
+     "tekst": "utføre arbeidet i henhold til forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM10466",
+     "tekst": "risikovurdere anlegg og utstyr med hensyn til beskyttelse mot elektrisk sjokk, overstrøm, overspenning, brann, elektromagnetisk støy og ytre påvirkninger"
+    },
+    {
+     "kode": "KM10467",
+     "tekst": "velge, anvende og vedlikeholde verktøy og verneutstyr til arbeidsoppdragene og gjøre rede for vedlikeholdsrutinene i internkontrollsystemet"
+    },
+    {
+     "kode": "KM10468",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av elektriske anlegg i brann- og eksplosjonsfarlige områder, utføre vedlikehold og redegjøre for krav til utstyr og sikkerhetssystemer i disse områdene"
+    },
+    {
+     "kode": "KM10469",
+     "tekst": "bryte og koble forbindelsen mellom hovedtavler og fordelingstavler og velge, lastfordele og omkoble generatorer og vurdere forventet forbruk, behov og risiko"
+    },
+    {
+     "kode": "KM10470",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller på anlegg for lokal energiproduksjon med energilagring og laststyring, utføre vedlikehold og optimalisering og gjøre rede for anleggets energiøkonomi"
+    },
+    {
+     "kode": "KM10471",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller og tester av nødstrømsforsyningsanlegg og avbruddsfrie strømforsyningsanlegg, utføre vedlikehold og gjøre rede for farer forbundet med arbeid på anlegg for lagring av energi"
+    },
+    {
+     "kode": "KM10472",
+     "tekst": "utføre systematisk feilsøking og reparasjon av maritime og tilhørende landbaserte elektroniske og elektriske installasjoner, anlegg og utstyr ved hjelp av egnede måleinstrumenter og dokumentasjon, vurdere måleresultater opp mot beregnede verdier og vurdere lønnsomheten ved reparasjon eller utskifting"
+    },
+    {
+     "kode": "KM10473",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av maritime og tilhørende landbaserte elektriske installasjoner og anlegg og utstyr, utføre vedlikehold og beskrive prinsippene for tilstandsbaserte og periodiske kontroller"
+    },
+    {
+     "kode": "KM10474",
+     "tekst": "samarbeide med andre faggrupper for å identifisere feilfunksjoner i maskineriet, iverksette tiltak for å hindre skade, og forklare driften av maskintekniske anlegg"
+    },
+    {
+     "kode": "KM10475",
+     "tekst": "utføre systematisk feilsøking og reparasjon av elektriske og elektroniske kontroll- og styresystemer for dekksmaskineri og lastehåndtering ved hjelp av egnede måleinstrumenter og dokumentasjon og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM10476",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av elektriske og elektroniske kontroll- og styresystemer for dekksmaskineri og lastehåndtering, utføre vedlikehold og beskrive systemenes oppbygning og virkemåte"
+    },
+    {
+     "kode": "KM10477",
+     "tekst": "isolere og sikre elektrisk og mekanisk utstyr med tilhørende systemer i henhold til gjeldende prosedyrer og forklare faremomentene ved ikke å følge prosedyrene"
+    },
+    {
+     "kode": "KM10478",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av fartøyets datasystemer, utføre vedlikehold og vurdere og iverksette tiltak for å ivareta informasjons-, data- og kommunikasjonssikkerheten"
+    },
+    {
+     "kode": "KM10479",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av fartøyets navigasjonsutstyr og interne og eksterne kommunikasjonssystemer, utføre vedlikehold og diskutere konsekvenser av feilfunksjoner"
+    },
+    {
+     "kode": "KM10480",
+     "tekst": "utføre systematisk feilsøking og reparasjon av navigasjonsutstyr og fartøyets interne og eksterne kommunikasjonssystemer ved hjelp av egnede måleinstrumenter og dokumentasjon og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM10481",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av alarm- og overvåkingssystemer med tilhørende utstyr, utføre vedlikehold og beskrive systemenes oppbygning og virkemåte"
+    },
+    {
+     "kode": "KM10482",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av utstyr for styring og regulering av hydrauliske og pneumatiske systemer, utføre vedlikehold og beskrive systemenes oppbygning og virkemåte"
+    },
+    {
+     "kode": "KM10483",
+     "tekst": "foreta tilstandsbaserte og periodiske kontroller av automatiske kontrollsystemer på framdrifts- og hjelpemaskineri, utføre vedlikehold og vurdere tiltak for optimalisering og energieffektivisering"
+    },
+    {
+     "kode": "KM10484",
+     "tekst": "klargjøre kontrollsystemer på framdrifts- og hjelpemaskineri for drift og forklare prinsipper for oppstart av dette maskineriet"
+    },
+    {
+     "kode": "KM10485",
+     "tekst": "utføre systematisk feilsøking og reparasjon av automasjons- og kontrollsystemer på hovedframdrifts- og hjelpemaskineri ved hjelp av egnede måleinstrumenter og dokumentasjon og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM10486",
+     "tekst": "montere føringsvei og installere ledning, kabel og fiber i henhold til krav til forlegning og gjøre rede for hvordan forlegning påvirker strømføringsevnen og transmisjonsegenskaper"
+    },
+    {
+     "kode": "KM10487",
+     "tekst": "skjøte og terminere ulike kabler og andre ledende forbindelser ved bruk av egnet metode, verktøy, pressutstyr og tiltrekkingsmoment og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM10488",
+     "tekst": "montere og konfigurere styringssystemer for motor med regulator og sensordata for å oppnå ønsket resultat, og vurdere og iverksette tiltak mot elektromagnetisk støy"
+    },
+    {
+     "kode": "KM10489",
+     "tekst": "håndtere avfall etter eget arbeid på en miljøvennlig og økonomisk måte, drøfte produkters miljøprestasjon, slette sensitiv informasjon ved avhending og gjøre etiske og økonomiske refleksjoner rundt bærekraft, sirkulær økonomi og produktkvalitet"
+    },
+    {
+     "kode": "KM10490",
+     "tekst": "praktisere prinsipper for ledelse, motivasjon og opplæring av personell om bord og drøfte viktigheten av å ta personlig og sosialt ansvar"
+    },
+    {
+     "kode": "KM10491",
+     "tekst": "utføre sikker jobbanalyse og styre og organisere arbeidsoppgaver innenfor fagområdet"
+    },
+    {
+     "kode": "KM10492",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering, seksuell trakassering og forskjellsbehandling"
+    },
+    {
+     "kode": "KM10493",
+     "tekst": "dokumentere eget og andres arbeid og diskutere faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    },
+    {
+     "kode": "KM10494",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 maritim elektrikerfaget - opplæring i bedrift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Videre skal instruktøren og lærlingene være i dialog om lærlingenes utvikling i vg3 maritim elektrikerfaget – opplæring i bedrift. Lærlingene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over sin faglige utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke rådene for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig, skriftlig eksamen laget ut fra læreplanene i programfagene i vg3 maritim elektriker – opplæring i skole. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 24 timer.",
+    "Opplæringen i vg3 maritim elektrikerfaget – opplæring i bedrift skal avsluttes med en fagprøve. Alle skal opp til fagprøve, som normalt skal gjennomføres over minst seks virkedager.",
+    "Fagprøven skal gjennomføres i samsvar med kravene i regel III/6 i den internasjonale konvensjon om normer for opplæring, sertifikater og vakthold for sjøfolk, 1978, med endringer (STCW).",
+    "Alle må også dokumentere gjennomført opplæring i samsvar med Sjøfartsdirektoratets krav om grunnleggende og videregående sikkerhetsopplæring."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "kode": "UIM02-03",
+ "tittel": "Læreplan i vg2 urmaker",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV402",
+   "tittel": "Kompetansemål produksjon og vedlikehold",
+   "fag": [
+    "UIM2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4250",
+     "tekst": "planlegge, gjennomføre og dokumentere en produksjon fra idé til ferdig produkt"
+    },
+    {
+     "kode": "KM4242",
+     "tekst": "utvikle, reparere, vedlikeholde armbåndsur, lommeur og store ur, både mekaniske og elektroniske, etter gjeldende nasjonale og internasjonale bestemmelser mål og standarder"
+    },
+    {
+     "kode": "KM4251",
+     "tekst": "anvende verktøy, tekniske apparater, instrumenter og maskiner til å framstille urdeler og reparere i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4252",
+     "tekst": "anvende fagspråk som brukes om enkeltdeler i mekaniske og elektroniske urverk i kommunikasjon med kunder og andre"
+    },
+    {
+     "kode": "KM4258",
+     "tekst": "sjekke og justere gangen på mekaniske urverk"
+    },
+    {
+     "kode": "KM4259",
+     "tekst": "bruke måleverktøy til å kontrollere finmekaniske komponenter"
+    },
+    {
+     "kode": "KM4257",
+     "tekst": "anvende enkle elektrotekniske prinsipper og komponenter i arbeid med å utvikle og vedlikeholde ulike urverk"
+    },
+    {
+     "kode": "KM4254",
+     "tekst": "bruke arbeidstegninger og annen visuell informasjon i produksjon, vedlikehold og reparasjon av urverk"
+    },
+    {
+     "kode": "KM4256",
+     "tekst": "utforske og velge ulike teknikker og materialer i framstilling av produkter og gjøre rede for hvordan ulike valg påvirker holdbarhet, gjenbruk og en etisk produksjon"
+    },
+    {
+     "kode": "KM4255",
+     "tekst": "utføre nødvendig vedlikehold av utstyr, redskaper og maskiner i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4253",
+     "tekst": "bruke hensiktsmessige arbeidsstillinger og gjøre rede for gode arbeidsrutiner i en produksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon og vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon og vedlikehold. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon og vedlikehold ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon og vedlikehold basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV403",
+   "tittel": "Kompetansemål og vurdering produktutvikling",
+   "fag": [
+    "UIM2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4249",
+     "tekst": "planlegge en produktutviklingsprosess basert på enkle halvfabrikater innenfor urprodukter"
+    },
+    {
+     "kode": "KM4248",
+     "tekst": "planlegge, vurdere og dokumentere en arbeidsprosess ut fra etiske og estetiske hensyn og i henhold til gjeldende lov- og regelverk"
+    },
+    {
+     "kode": "KM4247",
+     "tekst": "utforske ulike materialers egenskaper og bruksområder og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM4246",
+     "tekst": "utarbeide og bruke tegninger og annen visuell informasjon for å presentere eget design"
+    },
+    {
+     "kode": "KM4245",
+     "tekst": "gjøre rede for dagens trender sett i lys av tradisjoner og urmakerfagets historie og anvende dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM4244",
+     "tekst": "utvikle og lage enkle verktøy og urdeler etter egne og andres tegninger"
+    },
+    {
+     "kode": "KM4243",
+     "tekst": "beregne og presentere tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4260",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4261",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produktutvikling når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produktutvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produktutvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produktutvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og vedlikehold: Eleven skal ha én standpunktkarakter.",
+    "Produktutvikling: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og vedlikehold og produktutvikling: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og vedlikehold: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produktutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og vedlikehold og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

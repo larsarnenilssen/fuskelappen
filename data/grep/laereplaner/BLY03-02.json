@@ -1,0 +1,112 @@
+{
+ "kode": "BLY03-02",
+ "tittel": "Læreplan i blyglasshåndverkerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV441",
+   "tittel": "Kompetansemål og vurdering blyglasshåndverkerfaget",
+   "fag": [
+    "BLY3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4728",
+     "tekst": "planlegge, gjennomføre og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM4727",
+     "tekst": "utvikle design, lage skisser, arbeidstegninger og sjablonger til et blyglassvindu og kunne anvende disse i det praktiske arbeidet"
+    },
+    {
+     "kode": "KM4719",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4712",
+     "tekst": "utforske ulike teknikker, materialers egenskaper og bruksområder og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM4718",
+     "tekst": "gjøre rede for dagens trender sett i lys av tradisjoner og fagets historie og anvende dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM4711",
+     "tekst": "presentere og markedsføre egne produkter, og produkter ut fra bestillinger, og gjøre rede for hvordan ulike valg kan påvirke sluttproduktet"
+    },
+    {
+     "kode": "KM4726",
+     "tekst": "skjære alle typer flatt glass med glasskjærer på frihånd, med linjal og etter sjablong"
+    },
+    {
+     "kode": "KM4725",
+     "tekst": "gjenkjenne og utføre håndmalte konturstreker og toning på glass med glassmaling for innbrenning"
+    },
+    {
+     "kode": "KM4724",
+     "tekst": "vurdere og gjøre rede for bruk av dekorasjonsarbeider på flatt glass ved hjelp av sandblåsing, liming av glass og enkle ovnsteknikker og bruke disse i eget arbeid"
+    },
+    {
+     "kode": "KM4723",
+     "tekst": "montere sammen glassbiter til en helhet med bly- eller messingprofiler"
+    },
+    {
+     "kode": "KM4716",
+     "tekst": "lodde sammen og kitte bly- og messinginnfattede vinduer med vinduskitt"
+    },
+    {
+     "kode": "KM4713",
+     "tekst": "demontere og montere blyglassarbeider i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4722",
+     "tekst": "vurdere skader og tiltak for å reparere og restaurere enkle blyglassarbeider og begrunne valg knyttet til gjenbruk, holdbarhet og gjeldende antikvariske prinsipper"
+    },
+    {
+     "kode": "KM4721",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4714",
+     "tekst": "beskrive og gjøre rede for hovedtrekk i fagets arkitekturhistoriske og håndverksmessige tradisjon som grunnlag for faglige valg innenfor restaurering eller nyproduksjon"
+    },
+    {
+     "kode": "KM4720",
+     "tekst": "vurdere miljøeffektene av blyglassproduksjon og gjøre rede for hvordan utførelse, gjenbruk og avfallshåndtering påvirker helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4715",
+     "tekst": "bruke og vedlikeholde maskiner, verktøy og utstyr, holde orden i verksted og på egen arbeidsplass og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4729",
+     "tekst": "utvikle og bruke spesialverktøy og annet utstyr ved behov og ut fra arbeidsoppgave"
+    },
+    {
+     "kode": "KM4717",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i blyglasshåndverkerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i blyglasshåndverkerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha en forberedelsesdel.",
+    "Opplæringen i blyglasshåndverkerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "kode": "FVF03-01",
+ "tittel": "Læreplan i vg3 ferskvarehandlarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV653",
+   "tittel": "Kompetansemål og vurdering vg3 ferskvarehandlarfaget",
+   "fag": [
+    "FVF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8010",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere produksjon av ferskvarer og spesialitetar ut frå tradisjonar, trendar og sesongar"
+    },
+    {
+     "kode": "KM7991",
+     "tekst": "gjennomføre mottakskontroll, lagring og rullering av varer og vurdere samanhengen mellom vareflyt, svinn og ressursutnytting"
+    },
+    {
+     "kode": "KM8000",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personleg hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med rutinane og regelverket til verksemda, og gjere greie for konsekvensar av avvik"
+    },
+    {
+     "kode": "KM8012",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystem og reflektere over kor viktig dette arbeidet er for verksemda, kundar og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM7983",
+     "tekst": "vurdere kvaliteten på og gjere greie for endringar som skjer under lagring av ferskvarer, råvarer og salsklare produkt, og drøfte korleis ein kan nytte varer som nærmar seg datogrensa"
+    },
+    {
+     "kode": "KM7985",
+     "tekst": "partere, utføre anatomisk skjering og finstykke kjøtt for vidareforedling og sal, og gjere greie for bruksområde"
+    },
+    {
+     "kode": "KM7990",
+     "tekst": "reinse, filetere, dele opp og klargjere fisk og sjømat for sal og vurdere kvalitet og ressursutnytting"
+    },
+    {
+     "kode": "KM7989",
+     "tekst": "framstille deig- og farseprodukt og gjere greie for kva som påverkar kvaliteten og bruksområda"
+    },
+    {
+     "kode": "KM8009",
+     "tekst": "utvikle spesialitetar, panne- og gryteklare produkt, ferdigmat og delikatesser og forklare samanhengen mellom val av råvarer, kvalitet og haldbarheit på ferdige produkt"
+    },
+    {
+     "kode": "KM8008",
+     "tekst": "framstille sunne og tidsriktige produkt med utgangspunkt i vareutvalet og kostråda frå styresmaktene"
+    },
+    {
+     "kode": "KM8007",
+     "tekst": "leggje opp diskar, eksponere og selje kalde og varme produkt og andre ferskvarer og gjere greie for kva omsyn som må takast for å sikre trygg mat"
+    },
+    {
+     "kode": "KM8005",
+     "tekst": "planleggje og nytte kampanjeplanar, felles aktivitetar i bransjen og marknadsmateriell og forklare korleis dette kan bidra til gode salsmiljø"
+    },
+    {
+     "kode": "KM8006",
+     "tekst": "bruke heile verksemda som salsarena, kunne foreslå sameksponering og gjere greie for korleis dette kan medverke til meirsal"
+    },
+    {
+     "kode": "KM8004",
+     "tekst": "gi kundar råd om produkt, allergen, bruksområde og tillagingsmetodar og eigna tilbehøyr, meny og mengd"
+    },
+    {
+     "kode": "KM8003",
+     "tekst": "handtere kundeklagar etter rutinane til verksemda og gjere greie for kva som er god kundebehandling"
+    },
+    {
+     "kode": "KM7999",
+     "tekst": "reflektere over korleis ønskte og uønskte mikroorganismar kan påverke råvarer, halvfabrikata og ferdigvarer og gjere greie for tiltak for å styre førekomsten"
+    },
+    {
+     "kode": "KM7998",
+     "tekst": "gjere greie for og følgje rutinane for skadedyrutrydding i verksemda"
+    },
+    {
+     "kode": "KM7988",
+     "tekst": "gjennomføre kalkulasjonar knytte til produktutvikling, produksjon og sal og reflektere over korleis dette påverkar økonomiske resultat"
+    },
+    {
+     "kode": "KM8002",
+     "tekst": "drøfte etiske dilemma ved produksjon og omsetning av mat- og drikkevarer og gjere medvitne og berekraftige val"
+    },
+    {
+     "kode": "KM8001",
+     "tekst": "utvikle faglege ferdigheiter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbetringsarbeid i verksemda"
+    },
+    {
+     "kode": "KM7997",
+     "tekst": "følgje rutinar og reglar for helse, miljø og sikkerheit, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til eit trygt og inkluderande arbeidsmiljø"
+    },
+    {
+     "kode": "KM7996",
+     "tekst": "gjere greie for rammevilkår, lover og forskrifter og forklare kva rolle tilsynsmyndigheitene har overfor verksemda"
+    },
+    {
+     "kode": "KM7994",
+     "tekst": "gjennomføre næringsberekningar, følgje krava til merking og sporing og reflektere over konsekvensen ved avvik"
+    },
+    {
+     "kode": "KM7993",
+     "tekst": "anvende emballerings- og lagringsmetodar og gjere greie for korleis dette påverkar kvalitet og ressursutnytting"
+    },
+    {
+     "kode": "KM7987",
+     "tekst": "gjere greie for og handtere avfall i verksemda og reflektere over korleis avfall og utslepp påverker miljøet"
+    },
+    {
+     "kode": "KM7992",
+     "tekst": "bruke verktøy, maskiner og utstyr på ein kvalifisert måte, utføre førebyggjande dagleg vedlikehald av maskiner og utstyr og gjere greie for konsekvensane ved avvik"
+    },
+    {
+     "kode": "KM7984",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tileigne seg kunnskap, og kommunisere presist og forståeleg i samhandling med kollegaer, kundar og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM8011",
+     "tekst": "reflektere over korleis samhandling i eit fagleg og kollegialt yrkesfellesskap kan fremje likeverd og likestilling"
+    },
+    {
+     "kode": "KM7986",
+     "tekst": "beskrive måla og historia til verksemda og reflektere over korleis dette påverkar dagleg drift"
+    },
+    {
+     "kode": "KM7995",
+     "tekst": "gjere greie for organiseringa av verksemda, rettane og pliktene til arbeidstakaren og arbeidsgivaren, korleis partane i arbeidslivet samarbeider, og korleis dette bidreg til å utvikle eit betre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 ferskvarehandlarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 ferskvarehandlarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 ferskvarehandlarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
+   ]
+  }
+ ]
+}

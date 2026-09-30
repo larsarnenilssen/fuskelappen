@@ -1,0 +1,140 @@
+{
+ "kode": "IMF03-02",
+ "tittel": "Læreplan i vg3 industrimalerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV508",
+   "tittel": "Kompetansemål og vurdering Vg3 industrimalerfaget",
+   "fag": [
+    "IMF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5788",
+     "tekst": "planlegge forbehandling og oppbygging av korrosjonshindrende og brannbeskyttende belegg på konstruksjoner og materialer, arbeide etter spesifikasjoner, tegninger, beskrivelser og preaksepterte løsninger, velge verktøy og materialer og vurdere kostnadene, tidsbruken og miljøbelastningen ved arbeidet"
+    },
+    {
+     "kode": "KM5808",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5784",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, gjennomføre arbeid i tråd med gjeldende krav for helse, miljø og sikkerhet og toleransekrav og reflektere over konsekvenser av å ikke følge kravene"
+    },
+    {
+     "kode": "KM5800",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5807",
+     "tekst": "kildesortere og håndtere kjemikalier etter gjeldende regelverk, følge substitusjonsplikten og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM5787",
+     "tekst": "utbedre og forebygge korrosjon og gjøre rede for hvordan ulike former for korrosjon oppstår og bryter ned underlaget"
+    },
+    {
+     "kode": "KM5793",
+     "tekst": "vurdere konstruksjonens eksponeringsmiljø og velge forbehandlings- og påføringsmetoder ut fra funksjonalitet, levetid og bærekraft"
+    },
+    {
+     "kode": "KM5806",
+     "tekst": "tildekke og maskere konstruksjon og omgivelser, og vurdere hvilke faktorer som kan påvirke dets funksjonalitet og verdi"
+    },
+    {
+     "kode": "KM5804",
+     "tekst": "gjøre rede for hvordan ulike korrosjonsformer oppstår og påvirker ulike metall og metallegeringer, og vurdere konsekvenser av materialvalg og det å konstruere mot korrosjon."
+    },
+    {
+     "kode": "KM5785",
+     "tekst": "gjøre rede for grad av korrosjon på overflaten, velge metode for å oppnå renhet og ruhet før belegging og vurdere hvordan rust-, renhets- og ruhetsgrader påvirker levetiden"
+    },
+    {
+     "kode": "KM5786",
+     "tekst": "Identifisere og fjerne armeringskorrosjon i betongkonstruksjoner og gjøre rede for hvordan korrosjon påvirker konstruksjonens funksjon og levetid"
+    },
+    {
+     "kode": "KM5805",
+     "tekst": "velge utstyr i tråd med konstruksjonens størrelse og kompleksitet og påføre korrosjonsbeskyttelse og passivt brannbeskyttende belegg"
+    },
+    {
+     "kode": "KM5803",
+     "tekst": "velge metode, påføre termisk sprøytede belegg og vurdere konsekvensene for konstruksjonens levetid, miljø og økonomi"
+    },
+    {
+     "kode": "KM5802",
+     "tekst": "forebygge og utbedre feil i malingsbelegg og gjøre rede for årsaker til og konsekvenser av malingsfeil"
+    },
+    {
+     "kode": "KM5801",
+     "tekst": "dimensjonere, sammenstille og vedlikeholde forbehandlings- og påføringsutstyr"
+    },
+    {
+     "kode": "KM5799",
+     "tekst": "bruke stiger, arbeidsplattformer og stillas, iverksette sikkerhetstiltak for arbeid i høyden og presentere behov for sikringsutstyr for ulike brukere"
+    },
+    {
+     "kode": "KM5798",
+     "tekst": "vurdere overflatens egenskaper, påføre malingssystem og gjøre rede for hvordan ulike generiske malingstyper virker sammen og påvirker tørke- og herdeprosessen"
+    },
+    {
+     "kode": "KM5797",
+     "tekst": "utføre arbeid i brann- og eksplosjonsfarlige områder, velge egnet utstyr og vurdere risiko"
+    },
+    {
+     "kode": "KM5796",
+     "tekst": "programmere og bruke roboter til overflatebehandling"
+    },
+    {
+     "kode": "KM5795",
+     "tekst": "bruke og vedlikeholde personlig verneutstyr og gjøre rede for systemer som sikrer pusteluft og krav til atkomst i trange rom"
+    },
+    {
+     "kode": "KM5794",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM5792",
+     "tekst": "bruke fargekodesystemene RAL og NCS, sette sammen ulike farger og vurdere hvordan farger påvirker konstruksjonens funksjonalitet"
+    },
+    {
+     "kode": "KM5791",
+     "tekst": "bruke fagterminologi for å kommunisere med kunder, kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5790",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5789",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støveksponering og bruk av kjemikalier"
+    },
+    {
+     "kode": "KM5809",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feilbruk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 industrimaler når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i industrimalerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 industrimalerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

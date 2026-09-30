@@ -1,0 +1,120 @@
+{
+ "kode": "IUV03-01",
+ "tittel": "Læreplan i vg3 IT-utviklerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV530",
+   "tittel": "Kompetansemål og vurdering vg3 IT-utviklerfaget",
+   "fag": [
+    "IUV3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6179",
+     "tekst": "planlegge, utvikle og dokumentere løsninger med innebygd personvern og sikkerhet"
+    },
+    {
+     "kode": "KM6199",
+     "tekst": "planlegge, utvikle og dokumentere løsninger som er energieffektive og bærekraftige"
+    },
+    {
+     "kode": "KM6182",
+     "tekst": "videreutvikle en løsning for å ivareta brukernes behov"
+    },
+    {
+     "kode": "KM6197",
+     "tekst": "planlegge, utvikle, sette opp og dokumentere systemer for datainnsamling, analyse og visualisering"
+    },
+    {
+     "kode": "KM6196",
+     "tekst": "planlegge, utvikle, sette opp og dokumentere integrasjoner mellom ulike systemer og databaser"
+    },
+    {
+     "kode": "KM6183",
+     "tekst": "utvikle og bruke dokumentasjon og veiledninger"
+    },
+    {
+     "kode": "KM6193",
+     "tekst": "veilede brukere i ulike oppgaver"
+    },
+    {
+     "kode": "KM6181",
+     "tekst": "håndtere påloggingsopplysninger på en sikker og forsvarlig måte"
+    },
+    {
+     "kode": "KM6195",
+     "tekst": "utvikle og tilpasse brukergrensesnitt som ivaretar krav til universell utforming"
+    },
+    {
+     "kode": "KM6194",
+     "tekst": "velge og bruke relevante rammeverk og moduler til utvikling"
+    },
+    {
+     "kode": "KM6191",
+     "tekst": "beskrive konsekvenser av teknisk gjeld i løsninger"
+    },
+    {
+     "kode": "KM6192",
+     "tekst": "beskrive hvilke krav som ulike løsninger stiller til infrastruktur, og hvilke muligheter og begrensninger som følger av infrastrukturen"
+    },
+    {
+     "kode": "KM6190",
+     "tekst": "gjøre rede for og anvende gjeldende regelverk for personvern, opphavsrett og informasjonssikkerhet i eget arbeid"
+    },
+    {
+     "kode": "KM6198",
+     "tekst": "bruke utviklingsstrategier og samarbeide med andre utviklere"
+    },
+    {
+     "kode": "KM6189",
+     "tekst": "feilsøke kode og rette feil i algoritmer og kode"
+    },
+    {
+     "kode": "KM6187",
+     "tekst": "utforske prosesser knyttet til testing og feilsøking i utvikling av løsninger"
+    },
+    {
+     "kode": "KM6186",
+     "tekst": "behandle bedriftsinterne opplysninger på en sikker og etisk forsvarlig måte"
+    },
+    {
+     "kode": "KM6185",
+     "tekst": "utforske konseptene maskinlæring og kunstig intelligens"
+    },
+    {
+     "kode": "KM6184",
+     "tekst": "utforske og vurdere eksisterende og nye teknologier og bransjerelevante kodespråk"
+    },
+    {
+     "kode": "KM6180",
+     "tekst": "reflektere over og beskrive hvordan teknologi kan misbrukes og påvirke samfunnet negativt"
+    },
+    {
+     "kode": "KM6188",
+     "tekst": "gjøre rede for hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og reflektere over hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i lærebedriften"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 IT-utviklerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 IT-utviklerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 IT-utviklerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over sju virkedager."
+   ]
+  }
+ ]
+}

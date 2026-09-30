@@ -1,0 +1,96 @@
+{
+ "kode": "ITD03-01",
+ "tittel": "Læreplan i vg3 IT-driftsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV519",
+   "tittel": "Kompetansemål og vurdering vg3 IT-driftsfaget",
+   "fag": [
+    "ITD3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6036",
+     "tekst": "planlegge, innføre og dokumentere IT-systemer slik at de er stabile, sikre og effektive gjennom hele livssyklusen"
+    },
+    {
+     "kode": "KM6038",
+     "tekst": "bruke og gjøre rede for rutiner og systemer for avviksrapportering og vurdere tiltak for håndtering av avvik"
+    },
+    {
+     "kode": "KM6046",
+     "tekst": "reflektere over og anvende virksomhetens retningslinjer for datasikkerhet og personvern i virksomheten"
+    },
+    {
+     "kode": "KM6050",
+     "tekst": "vurdere og gjøre rede for konsekvensene ved sikkerhetsbrudd for virksomheten, samfunnet og individet og foreslå tiltak"
+    },
+    {
+     "kode": "KM6039",
+     "tekst": "bruke verktøy for å automatisere og effektivisere driftsoppgaver"
+    },
+    {
+     "kode": "KM6048",
+     "tekst": "utarbeide bestillinger og anbud knyttet til innkjøp av løsninger, systemer og tjenester og vurdere tekniske, økonomiske og bærekraftige forhold ved tilbudene"
+    },
+    {
+     "kode": "KM6041",
+     "tekst": "gjøre rede for og følge virksomhetens rutiner knyttet til anskaffelser, implementering, oppsett, drift og avhending av utstyr"
+    },
+    {
+     "kode": "KM6040",
+     "tekst": "dokumentere og reflektere over hvordan eget utført arbeid understøtter virksomhetens drift, tjenester og produkter"
+    },
+    {
+     "kode": "KM6037",
+     "tekst": "planlegge, gjennomføre og dokumentere brukerstøtte tilpasset oppdrag, målgruppe, kanal og teknologi"
+    },
+    {
+     "kode": "KM6042",
+     "tekst": "gjennomføre opplæring og veiledning i relevante IT-løsninger tilpasset oppdrag, målgruppe, kanal og teknologi"
+    },
+    {
+     "kode": "KM6043",
+     "tekst": "lese, forstå og utforme dokumentasjon og spesifikasjoner"
+    },
+    {
+     "kode": "KM6047",
+     "tekst": "gjøre rede for og reflektere over hvordan gjeldende lover og regler i arbeidslivet og etiske retningslinjer påvirker eget arbeid"
+    },
+    {
+     "kode": "KM6044",
+     "tekst": "anvende gjeldende regelverk for personvern og informasjonssikkerhet i eget arbeid og reflektere over konsekvensene hvis regelverket ikke følges"
+    },
+    {
+     "kode": "KM6045",
+     "tekst": "utforske og bruke metoder for feilsøking, utføre utbedringer og dokumentere løsninger"
+    },
+    {
+     "kode": "KM6049",
+     "tekst": "gjøre rede for hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og reflektere over hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i lærebedriften"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 IT-driftsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 IT-driftsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 IT-driftsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over sju virkedager."
+   ]
+  }
+ ]
+}

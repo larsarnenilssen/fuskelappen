@@ -1,0 +1,218 @@
+{
+ "kode": "ROF05-01",
+ "tittel": "Læreplan i reinhaldsoperatørfaget – modulstrukturert opplæring for vaksne",
+ "spraak": "nno",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV803",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerheit og ergonomi i reinhald",
+   "fag": [
+    "ROF5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10660",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av arbeidsbelastningar og skadeforebyggjande tiltak"
+    },
+    {
+     "kode": "KM10661",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk, handtere helsefarlege kjemikalium og spesialavfall og reflektere over konsekvensane av feilhandtering"
+    },
+    {
+     "kode": "KM10662",
+     "tekst": "velje og bruke verne- og smittevernutstyr for arbeidsoppgåva og vurdere konsekvensane ved feilbruk"
+    },
+    {
+     "kode": "KM10663",
+     "tekst": "vurdere smitterisiko, arbeide i samsvar med gjeldande regelverk for smittevern og gjere greie for smittespreiing og korleis smittekjeder kan brytast"
+    },
+    {
+     "kode": "KM10664",
+     "tekst": "risikovurdere metodar, kjemikalium og utstyr, gjere greie for korleis arbeidsoppgåvane påverkar kostnadseffektivitet, materiale og ytre miljø, og reflektere over feilhandtering"
+    },
+    {
+     "kode": "KM10665",
+     "tekst": "arbeide i tråd med berekraftige og miljømessige prinsipp og reflektere over konsekvensar av støveksponering og bruk av kjemikalium"
+    },
+    {
+     "kode": "KM10666",
+     "tekst": "gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og halde ved like maskiner og utstyr"
+    },
+    {
+     "kode": "KM10667",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM10659",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen helse, miljø og sikkerheit og ergonomi i reinhald når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen helse, miljø og sikkerheit og ergonomi i reinhald. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i Helse, miljø og sikkerheit og ergonomi i reinhald. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV805",
+   "tittel": "Kompetansemål og vurdering reinhaldsplanleggjing og arbeidsbeskrivingar",
+   "fag": [
+    "ROF5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10674",
+     "tekst": "utarbeide arbeidsplaner, bestille og motta utstyr og kjemikalie og kontrollere kvalitet og mengde i tråd med arbeidsoppgåva"
+    },
+    {
+     "kode": "KM10675",
+     "tekst": "utarbeide reinhaldsplanar, arbeidsplanar og arbeidsbeskrivingar og reflektere over val av frekvens, kvalitet og metode"
+    },
+    {
+     "kode": "KM10676",
+     "tekst": "planleggje reinhald av bygg, anlegg, installasjonar og transportmiddel arbeidet etter teikningar og beskrivingar ved bruk av ulike planleggingsverktøy, arbeide i samsvar med gjeldande krav til helse, miljø og sikkerheit og reflektere over konsekvensane ved å ikkje følgje krava"
+    },
+    {
+     "kode": "KM10677",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM10678",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM10679",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen reinhaldsplanlegging og arbeidsbeskrivingar når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen reinhaldsplanlegging og arbeidsbeskrivingar. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i reinhaldsplanleggjing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV804",
+   "tittel": "Kompetansemål og vurdering overflatemateriale, reinhaldsmaskiner, utstyr og metoder",
+   "fag": [
+    "ROF5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10669",
+     "tekst": "gjere greie for ulike overflatemateriale og vurdere korleis reinhaldsmetodar og reinhaldsmiddel påverkar overflatene"
+    },
+    {
+     "kode": "KM10670",
+     "tekst": "velje og bruke maskiner, utstyr og metodar etter reinhaldsbehov og vurdere dette opp mot kostnadseffektivitet, tidsbruk og miljøbelastning"
+    },
+    {
+     "kode": "KM10671",
+     "tekst": "utføre reinhald i ulike fasar av byggjeperioden etter gjeldande regelverk og vurdere korleis dei ulike fasane påverkar valet av reinhaldsutstyr og arbeidsmetodar"
+    },
+    {
+     "kode": "KM10672",
+     "tekst": "identifisere ulike typar smuss, gjere greie for og bruke ulike kjemikalium for å fjerne smuss og utføre reinhald"
+    },
+    {
+     "kode": "KM10673",
+     "tekst": "gjere greie for ulike typar fasadereinhald"
+    },
+    {
+     "kode": "KM10668",
+     "tekst": "undersøkje eigenskapane til ulike materiale og overflatebehandlingar og vurdere bruk av desse i eit berekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen overflatemateriale, reinhaldsmaskiner, utstyr og metoder når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen overflatemateriale, reinhaldsmaskiner, utstyr og metoder. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i overflatemateriale, reinhaldsmaskiner, utstyr og metoder. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV806",
+   "tittel": "Kompetansemål og vurdering kvalitet, service og samhandling",
+   "fag": [
+    "ROF5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10680",
+     "tekst": "arbeide i tråd med berekraftige og miljømessige prinsipp og reflektere over konsekvensar av støveksponering og bruk av kjemikalium"
+    },
+    {
+     "kode": "KM10681",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM10682",
+     "tekst": "gjere greie for og nytte kvalitetssikringssystem, arbeide etter fastsette kvalitetskrav og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM10683",
+     "tekst": "fastsettje og bedøme reinhaldskvalitet i tråd med gjeldande standarder og kvalitetssystem"
+    },
+    {
+     "kode": "KM10684",
+     "tekst": "utføre regelmessig og periodisk reinhald av ulike overflater på inventar, vegger, golv og himlingar i kjende og ukjende situasjonar, i tråd med kvalitetskrav og sikre innemiljøet"
+    },
+    {
+     "kode": "KM10685",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i reinhaldsoperatørfaget, og gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM10686",
+     "tekst": "beskrive kva krav og forventningar samfunnet stiller til ein profesjonell yrkesutøvar, og reflektere over eigen praksis"
+    },
+    {
+     "kode": "KM10687",
+     "tekst": "gjere greie for argumentasjonen til andre og bruke og følgje opp innspel frå andre i samtalar og diskusjonar om yrkesrelevante emne"
+    },
+    {
+     "kode": "KM10689",
+     "tekst": "lytte til, forstå og bruke fagterminologi munnleg og skriftleg i arbeidssituasjonar"
+    },
+    {
+     "kode": "KM10688",
+     "tekst": "utforske og presentere teknologi knytt til eige utdanningsprogram og vurdere han i eit berekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen kvalitet, service og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen kvalitet, service og samhandling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i kvalitet, service og samhandling. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle ha bestått ein skriftleg eksamen som er laga ut frå læreplanen i vg3 reinhaldsoperatørfaget (ROF03-01). Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i reinhaldsoperatørfaget – modulstrukturert opplæring for vaksne skal avsluttast med ei fagprøve. Fagprøva lagast ut frå læreplanen i vg3 reinhaldsoperatørfaget (ROF03-01). Alle skal opp til fagprøva som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

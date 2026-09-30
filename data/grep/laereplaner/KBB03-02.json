@@ -1,0 +1,104 @@
+{
+ "kode": "KBB03-02",
+ "tittel": "Læreplan i vg3 komposittbåtbyggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV627",
+   "tittel": "Kompetansemål og vurdering vg3 komposittbåtbyggerfaget",
+   "fag": [
+    "KBB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7415",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7428",
+     "tekst": "presentere en byggeprosess ut fra egne og andres tegninger og design og gjøre rede for hvordan ulike valg av materialer påvirker funksjon, kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7421",
+     "tekst": "beregne kostnader for produksjon ut fra en bestilling av et produkt eller tjeneste og gjøre rede for hvordan ulike valg kan påvirke metode, materialer, tidsbruk og pris"
+    },
+    {
+     "kode": "KM7430",
+     "tekst": "vurdere og velge materialer til båtbygging og kjemiske produkter til produksjon ut fra regelverk, prosess, klimaavtrykk, form og funksjon"
+    },
+    {
+     "kode": "KM7427",
+     "tekst": "utforske tradisjonelle byggeprosesser og anvende kunnskap om dette i eget arbeid med innovative metoder, materialer og bærekraftige byggeprosesser"
+    },
+    {
+     "kode": "KM7418",
+     "tekst": "utføre ulike framstillingsprosesser for å bygge, vedlikeholde og reparere båter og båtdeler og gjøre rede for hvordan ulike valg kan påvirke resultatet"
+    },
+    {
+     "kode": "KM7425",
+     "tekst": "vurdere og velge ulike metaller ut fra form og funksjon og gjøre rede for hvordan ulike valg påvirker korrosjon og tæring ved galvaniske spenninger"
+    },
+    {
+     "kode": "KM7429",
+     "tekst": "anvende montasjeteknikker, både mekaniske og kjemiske, ut fra produktets form og funksjon"
+    },
+    {
+     "kode": "KM7420",
+     "tekst": "utvikle og vedlikeholde støpeformer til produksjon"
+    },
+    {
+     "kode": "KM7424",
+     "tekst": "vurdere styrke og stivhet i forskjellige komposittkonstruksjoner ut fra valgt støpeprosess, form, funksjon og type båt"
+    },
+    {
+     "kode": "KM7426",
+     "tekst": "installere ulike motor- og drivverksløsninger, rigg og seil, svakstrømsinstallasjoner, røropplegg og interiør"
+    },
+    {
+     "kode": "KM7423",
+     "tekst": "vurdere skader og tiltak for å reparere og restaurere komposittbåter og begrunne valg knyttet til tidsbruk, pris, gjenbruk og holdbarhet"
+    },
+    {
+     "kode": "KM7419",
+     "tekst": "gjøre rede for CE-merking, ISO-standarder og EU-direktiver og anvende disse i praksis"
+    },
+    {
+     "kode": "KM7417",
+     "tekst": "anvende og vedlikeholde verktøy, maskiner og utstyr og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet"
+    },
+    {
+     "kode": "KM7416",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7422",
+     "tekst": "velge og bruke hensiktsmessige ergonomiske arbeidsstillinger i arbeidet på arbeidsplassen"
+    },
+    {
+     "kode": "KM7431",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 komposittbåtbyggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 komposittbåtbyggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 komposittbåtbyggerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på sju til ti virkedager."
+   ]
+  }
+ ]
+}

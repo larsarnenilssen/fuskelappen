@@ -1,0 +1,209 @@
+{
+ "kode": "HVF05-01",
+ "tittel": "Læreplan i vg3 håndveverfaget -  modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2025-10-17",
+ "gyldigFra": "2025-11-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV989",
+   "tittel": "Kompetansemål og vurdering veving og grunnbindingene",
+   "fag": [
+    "HVF5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12828",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM12826",
+     "tekst": "sette opp en vev og gjøre rede for hvordan ulike valg av material og redskap påvirker arbeidsprosessen"
+    },
+    {
+     "kode": "KM12827",
+     "tekst": "utforske og anvende grunnbindingene og variasjoner av disse i eget arbeid"
+    },
+    {
+     "kode": "KM12829",
+     "tekst": "bruke hensiktsmessige arbeidsstillinger og gjøre rede for hvordan man kan bidra til gode arbeidsrutiner i en produksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen veving og grunnbindingene når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen veving og grunnbindingene. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i veving og grunnbindingene. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV990",
+   "tittel": "Kompetansemål og vurdering vevnaden",
+   "fag": [
+    "HVF5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12830",
+     "tekst": "drøfte de ulike tekstilfibrenes egenskaper, opprinnelse og produksjon og gjøre rede for etiske valg, ressursutnyttelse, tilgjengelighet og holdbarhet og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM12831",
+     "tekst": "utforske og bruke ulike vevoppskrifter, utvikle egne oppskrifter og gjøre rede for hvordan materialbruk, trådtetthet, binding og formgivning påvirker kvalitet og funksjon"
+    },
+    {
+     "kode": "KM12832",
+     "tekst": "etterbehandle og montere vevnader og anvende relevant merking og vaskeanvisning"
+    },
+    {
+     "kode": "KM12833",
+     "tekst": "lage og anvende skisser og arbeidstegninger som grunnlag for idéutvikling og presentasjon av eget arbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen vevnaden når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen vevnaden. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i vevnaden. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV991",
+   "tittel": "Kompetansemål og vurdering tradisjon og nyskapning",
+   "fag": [
+    "HVF5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12834",
+     "tekst": "analysere vevde tekstilers form, farge, struktur, tekstur og tradisjon og kunne bruke dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM12835",
+     "tekst": "gjøre rede for vevtradisjoner, historie og lokale særpreg, reflektere over dette i et kulturelt perspektiv og bruke denne kunnskapen i egen formgivning"
+    },
+    {
+     "kode": "KM12836",
+     "tekst": "utforske dilemmaer som oppstår i spennet mellom tradisjon og nyskaping"
+    },
+    {
+     "kode": "KM12837",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen tradisjon og nyskaping når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen tradisjon og nyskaping. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i tradisjon og nyskaping. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV993",
+   "tittel": "Kompetansemål og vurdering vedlikehold og ressursutnyttelse",
+   "fag": [
+    "HVF5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12846",
+     "tekst": "reparere og vedlikeholde vevde tekstiler og gjøre rede for hvordan ulike valg påvirker kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM12847",
+     "tekst": "vurdere håndverksfaglig kvalitet på eget og andres arbeid ut fra holdbarhet, funksjon og estetisk uttrykk"
+    },
+    {
+     "kode": "KM12848",
+     "tekst": "gjøre rede for hvordan gjenbruk, avfallshåndtering og valg av materialer kan bidra til en bærekraftig produksjon"
+    },
+    {
+     "kode": "KM12849",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen vedlikehold og ressursutnyttelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen vedlikehold og ressursutnyttelse. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i vedlikehold og ressursutnyttelse. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV992",
+   "tittel": "Kompetansemål og vurdering yrkesutøvelse",
+   "fag": [
+    "HVF5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12838",
+     "tekst": "gjennomføre bestillingsoppdrag innenfor gitte rammer"
+    },
+    {
+     "kode": "KM12839",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM12840",
+     "tekst": "bruke fagspråk i formidling og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM12841",
+     "tekst": "veilede kunder, kolleger og samarbeidspartnere om design, materialer og fargevalg"
+    },
+    {
+     "kode": "KM12842",
+     "tekst": "anvende digitale ressurser i arbeidsprosess, markedsføring og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM12843",
+     "tekst": "gjøre rede for gjeldende lovverk om opphavsrett og markedsføring og følge dette i eget arbeid"
+    },
+    {
+     "kode": "KM12844",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM12845",
+     "tekst": "lese, bruke og lage regneark i arbeidet med budsjett, anbud og kostnadsberegning knyttet til håndverk, design og produktutvikling, og vurdere hvordan ulike faktorer påvirker resultatet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen yrkesutøvelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen yrkesutøvelse. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i yrkesutøvelse. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 håndveverfaget (HVF03-02). Eksamen utarbeides sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 håndveverfaget - modulstrukturert opplæring for voksne skal avsluttes med en svenneprøve. Svenneprøven lages ut fra læreplanen i vg3 håndveverfaget (HVF03-02). Alle skal opp til svenneprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

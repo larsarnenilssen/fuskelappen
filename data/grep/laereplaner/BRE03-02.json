@@ -1,0 +1,152 @@
+{
+ "kode": "BRE03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, elektriske kabeloperasjoner",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV673",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, elektriske kabeloperasjoner",
+   "fag": [
+    "BRE3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8449",
+     "tekst": "vurdere risiko, gjennomføre risikoreduserende tiltak og velge og bruke riktig verneutstyr"
+    },
+    {
+     "kode": "KM8475",
+     "tekst": "gjøre rede for krav knyttet til transport og lagring av farlig gods"
+    },
+    {
+     "kode": "KM8474",
+     "tekst": "utføre sikker jobb-analyse, skrive arbeidstillatelser og rapportere og iverksette tiltak når det blir identifisert avvik i operasjonen"
+    },
+    {
+     "kode": "KM8473",
+     "tekst": "klargjøre og anvende loggeutstyr i tråd med gjeldende regelverk og prosedyrer"
+    },
+    {
+     "kode": "KM8472",
+     "tekst": "bygge og anvende rope socket, svakpunkt og kabelhoder"
+    },
+    {
+     "kode": "KM8471",
+     "tekst": "anvende teknikker, utstyr og dokumentasjon i samsvar med gjeldende regelverk for helse, miljø og sikkerhet og reflektere over konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM8470",
+     "tekst": "klargjøre og bruke loggeinstrumenter og kabelhoder for brønner med høyt trykk og høy temperatur"
+    },
+    {
+     "kode": "KM8469",
+     "tekst": "gjøre rede for krefter og trykk som virker på brønnutstyret, og reflektere over utstyrets begrensninger"
+    },
+    {
+     "kode": "KM8468",
+     "tekst": "vedlikeholde, feilsøke og reparere overflateutstyr i tråd med gjeldende prosedyrer"
+    },
+    {
+     "kode": "KM8467",
+     "tekst": "kontrollere og rigge opp overflateutstyr på faste og flytende innretninger"
+    },
+    {
+     "kode": "KM8466",
+     "tekst": "klargjøre elektrisk betjent pyroteknisk brønnutstyr i forbindelse med en planlagt operasjon og gjøre rede for gjeldende helse-, miljø- og sikkerhetstiltak"
+    },
+    {
+     "kode": "KM8465",
+     "tekst": "reflektere over kapasitet og begrensninger knyttet til elektriske brønnkabler"
+    },
+    {
+     "kode": "KM8464",
+     "tekst": "teste og vedlikeholde elektriske brønnkabler og loggeinstrumenter i tråd med gjeldende prosedyrer"
+    },
+    {
+     "kode": "KM8476",
+     "tekst": "utføre beregninger knyttet til elektriske verdier, krefter og trykk på brønnutstyr"
+    },
+    {
+     "kode": "KM8463",
+     "tekst": "kontrollere og anvende systemer for vekt- og dybdemåling"
+    },
+    {
+     "kode": "KM8461",
+     "tekst": "anvende sleperingsboks for loggekabel og gjøre rede for kobling, testing og feilsøking"
+    },
+    {
+     "kode": "KM8460",
+     "tekst": "anvende loggeinstrumenter og brønnverktøy i brønnen ved hjelp av vinsj"
+    },
+    {
+     "kode": "KM8459",
+     "tekst": "forberede og gjennomføre fiskeoperasjoner med borestreng"
+    },
+    {
+     "kode": "KM8458",
+     "tekst": "assistere ved installasjon og fjerning av radioaktive kilder"
+    },
+    {
+     "kode": "KM8457",
+     "tekst": "gjøre rede for og følge nødprosedyrer ved brønnoperasjoner"
+    },
+    {
+     "kode": "KM8456",
+     "tekst": "dokumentere eget arbeid under brønnoperasjoner"
+    },
+    {
+     "kode": "KM8455",
+     "tekst": "vurdere og ferdigstille transportdokumenter og bestillingslister"
+    },
+    {
+     "kode": "KM8454",
+     "tekst": "dokumentere overføringslogg ved daglig skiftbytte"
+    },
+    {
+     "kode": "KM8453",
+     "tekst": "gjøre rede for prinsipper og prosesser for arbeid i høyden og ved fallende gjenstander og reflektere over konsekvenser av manglende sikring"
+    },
+    {
+     "kode": "KM8452",
+     "tekst": "vurdere brønnintegritet og sikkerhetsbarrierer ved elektriske kabeloperasjoner"
+    },
+    {
+     "kode": "KM8451",
+     "tekst": "gjøre rede for brønnvæskens egenskaper, sammensetning og faremomenter"
+    },
+    {
+     "kode": "KM8450",
+     "tekst": "gjøre rede for prinsipper for datainnsamling og hvordan loggeinstrumentene fungerer"
+    },
+    {
+     "kode": "KM8462",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8477",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, elektriske kabeloperasjoner når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktør og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 brønnfaget, elektriske kabeloperasjoner. Lærlingen skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke rådene for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, elektriske kabeloperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som normalt skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

@@ -3,6 +3,7 @@
 import { describe, expect, it } from 'vitest';
 import { delIBiter, finnEndringer, naermestePunkt } from '../../scripts/kilder/avsnitt.ts';
 import { grepsammendrag, sammenlignGrep, type Grepdata } from '../../scripts/kilder/grep.ts';
+import { grepLaereplanlinjer } from '../../scripts/kilder/ukesrapport.ts';
 import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn } from '../../scripts/kilder/tabeller.ts';
 import { lagUkesrapport, lesTilstand, planleggKontrollsak, punktTreff, type Ukesgrunnlag } from '../../scripts/kilder/ukesrapport.ts';
 import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
@@ -196,5 +197,19 @@ describe('den ukentlige kontrollsaken', () => {
       { type: 'lukk', nummer: 5, kommentar: expect.stringContaining('ingenting') },
       { type: 'lukk', nummer: 2, kommentar: expect.stringContaining('ukentlig kontrollsak') },
     ]);
+  });
+});
+
+describe('læreplaner i kontrollsaken', () => {
+  it('lister endrede læreplaner med lenke til udir.no, og fag med endret vurdering', () => {
+    const tom = { programomrader: { nye: [], fjernet: [] }, fagkoder: { nye: [], fjernet: [], nyttNavn: [] }, arstimer: { endret: [], nye: [], fjernet: [] } };
+    const e = { ...tom, laereplaner: { nye: [], fjernet: ['GML01-01'], endret: ['HEA02-04'] }, fag: { nye: [], fjernet: [], endret: ['HEA2005 Helsefremmende arbeid: vurderingsordning a → b'] } };
+    expect(grepLaereplanlinjer(e)).toEqual([
+      '  - Endret læreplan: [HEA02-04](https://www.udir.no/lk20/hea02-04)',
+      '  - Læreplan fjernet: GML01-01',
+      '  - Endret fag: HEA2005 Helsefremmende arbeid: vurderingsordning a → b',
+    ]);
+    expect(grepLaereplanlinjer(null)).toEqual([]);
+    expect(grepLaereplanlinjer(e, 1)).toEqual(['  - Endret læreplan: [HEA02-04](https://www.udir.no/lk20/hea02-04)', '  - … og 2 til. Se jobbsammendraget.']);
   });
 });

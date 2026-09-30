@@ -1,0 +1,108 @@
+{
+ "kode": "KAR03-02",
+ "tittel": "Læreplan i vg3 chassispåbyggjarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV671",
+   "tittel": "Kompetansemål og vurdering etter vg3 chassispåbyggjarfaget",
+   "fag": [
+    "KAR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8411",
+     "tekst": "gjere greie for ulik plassering av understellsnummeret på køyretøyet, forstå krav til det og forklare kva informasjon ein kan lese ut av det"
+    },
+    {
+     "kode": "KM8426",
+     "tekst": "velje og nytte materiale i samsvar med konstruksjonsteikningar og innverknaden ulike materiale har på kvarandre"
+    },
+    {
+     "kode": "KM8425",
+     "tekst": "produsere, tilpasse, demontere og montere chassiskomponentar, innreiing og utstyr etter konstruksjons- og arbeidsteikningar og etter regelverk og produsentkrav"
+    },
+    {
+     "kode": "KM8424",
+     "tekst": "stille inn, betene og halde ved like utstyr, maskiner og apparat som blir nytta i arbeidet"
+    },
+    {
+     "kode": "KM8423",
+     "tekst": "reflektere over korleis varmebehandling påverkar struktur i materiale og metall, og gjennomføre varme arbeid og samanføyingar"
+    },
+    {
+     "kode": "KM8422",
+     "tekst": "velje og utføre tiltak for å unngå korrosjon og oksidasjon på overflater og i holrom"
+    },
+    {
+     "kode": "KM8421",
+     "tekst": "reflektere over krav til styrke i konstruksjonen og korleis arbeidet påverkar styrken og sikkerheita"
+    },
+    {
+     "kode": "KM8420",
+     "tekst": "utføre nyinstallasjon og utskifting av vindauge i køyretøy"
+    },
+    {
+     "kode": "KM8419",
+     "tekst": "montere sikkerheitsutstyr etter krav frå produsentar og lovverk"
+    },
+    {
+     "kode": "KM8418",
+     "tekst": "utføre sikring av komponentar ved sveise- og varmearbeid på chassis, og vurdere moglege skadar"
+    },
+    {
+     "kode": "KM8417",
+     "tekst": "reflektere over behovet for og følgje sikkerheitsrutinar ved arbeid på køyretøy drivne av ulike energikjelder"
+    },
+    {
+     "kode": "KM8416",
+     "tekst": "montere elektronisk utstyr og bruke måleutstyr for funksjonskontroll"
+    },
+    {
+     "kode": "KM8415",
+     "tekst": "handtere kjemikaliar og spesialavfall i tråd med lover og forskrifter"
+    },
+    {
+     "kode": "KM8413",
+     "tekst": "registrere avvik og dokumentere arbeid etter framdriftsplanen til bedrifta"
+    },
+    {
+     "kode": "KM8414",
+     "tekst": "rettleie kunden om ønskte tilpassingar og endringar i køyretøy, chassis og påbygg i samsvar med regelverk og tilvisingar frå produsenten"
+    },
+    {
+     "kode": "KM8427",
+     "tekst": "samarbeide med andre for å utvikle løysningar som tek vare på kundebehov og regelverk"
+    },
+    {
+     "kode": "KM8428",
+     "tekst": "vurdere og velje produkt og komponent med tanke på økonomi, miljø og etikk"
+    },
+    {
+     "kode": "KM8412",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 chassispåbyggjarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 chassispåbyggjarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 chassispåbyggjarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

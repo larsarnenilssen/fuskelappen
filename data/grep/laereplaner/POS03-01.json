@@ -1,0 +1,106 @@
+{
+ "kode": "POS03-01",
+ "tittel": "Læreplan i samfunnsgeografi",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV499",
+   "tittel": "Kompetansemål og vurdering samfunnsgeografi",
+   "fag": [
+    "POS3Z01"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5587",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM5574",
+     "tekst": "utforske, drøfte og presentere samfunnsgeografiske forhold og prosesser ved å bruke kvalitativ og kvantitativ informasjon og faglige metoder og teorier"
+    },
+    {
+     "kode": "KM5575",
+     "tekst": "utforske et samfunnsgeografisk tema ved å lage problemstilling, og planlegge og gjennomføre et feltarbeid i lokalmiljøet"
+    },
+    {
+     "kode": "KM5576",
+     "tekst": "forstå hvordan geografiske informasjonssystemer brukes i lokale planprosesser, og reflektere over konsekvenser av planer og hvordan ulike aktører kan påvirke planprosesser"
+    },
+    {
+     "kode": "KM5577",
+     "tekst": "gjøre rede for demografiske forhold og bruke teorier og modeller for å drøfte sammenhenger mellom befolkningspolitikk, ressurser og bærekraft på ulike geografiske nivåer"
+    },
+    {
+     "kode": "KM5578",
+     "tekst": "gjøre rede for årsaker og endringer i bosetting og flyttemønstre nasjonalt og internasjonalt og drøfte muligheter, utfordringer og konsekvenser av migrasjon"
+    },
+    {
+     "kode": "KM5579",
+     "tekst": "analysere samfunnsgeografiske forhold i urfolks bosettingsområder og reflektere over problemstillinger knyttet til ressursforvaltning i disse områdene"
+    },
+    {
+     "kode": "KM5580",
+     "tekst": "gjøre rede for sammenhengen mellom ressurser, lokalisering av økonomisk aktivitet, globalisering og bærekraftig utvikling, og drøfte årsaker og konsekvenser av dette på ulike geografiske nivåer"
+    },
+    {
+     "kode": "KM5581",
+     "tekst": "reflektere over hvordan lokale og globale forskjeller i levekår oppstår, og bruke utviklingsteorier til å drøfte ulike handlingsalternativer for utvikling av samfunn"
+    },
+    {
+     "kode": "KM5582",
+     "tekst": "drøfte regionbegrepet og årsaker til regiondanning og regionale endringer på ulike geografiske nivåer"
+    },
+    {
+     "kode": "KM5583",
+     "tekst": "beskrive hvordan byer har utviklet seg i ulike deler av verden, og drøfte hvordan man planlegger bomiljøer for framtiden som sikrer gode sosiale, økonomiske og miljømessige forhold"
+    },
+    {
+     "kode": "KM5584",
+     "tekst": "reflektere over hva sted og stedsidentitet er, og hvordan disse kan endre seg over tid"
+    },
+    {
+     "kode": "KM5585",
+     "tekst": "drøfte hvordan digitalisering påvirker og endrer ulike sider av samfunnet på ulike geografiske nivåer, og reflektere over maktforhold knyttet til eierskap og forvaltning av egne og andres data"
+    },
+    {
+     "kode": "KM5586",
+     "tekst": "drøfte ulike konsekvenser av samfunnsutviklingen og utforske og vurdere tiltak for å håndtere ulike framtidsutfordringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i samfunnsgeografi. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder, modeller og teorier i utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig, skriftlig og praktisk. Videre viser og utvikler elevene kompetanse når de arbeider med samspillet mellom natur og samfunn på ulike geografiske nivåer og hvordan sosiale, kulturelle, økonomiske og politiske betingelser og prosesser virker inn på menneskers liv.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i samfunnsgeografi, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i samfunnsgeografi."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter samfunnsgeografi. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i samfunnsgeografi basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder, modeller og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Samfunnsgeografi: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Samfunnsgeografi: Elevene kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Samfunnsgeografi: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

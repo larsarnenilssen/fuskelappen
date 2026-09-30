@@ -1,0 +1,226 @@
+{
+ "kode": "KKM01-03",
+ "tittel": "Læreplan i kommunikasjon og kultur",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV878",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og kultur 1",
+   "fag": [
+    "KKM1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11478",
+     "tekst": "beskrive og bruke teorier om kultur, tegn, språk, argumentasjon og kommunikasjon"
+    },
+    {
+     "kode": "KM11479",
+     "tekst": "sammenligne hvordan ulike kulturer uttrykker normer, verdier og tradisjoner"
+    },
+    {
+     "kode": "KM11480",
+     "tekst": "forstå hvordan kulturer og kulturelle normer skaper forutsetninger for tekstskaping"
+    },
+    {
+     "kode": "KM11481",
+     "tekst": "beskrive og reflektere over hvordan kommunikasjon påvirkes av kulturelle og sosiale faktorer"
+    },
+    {
+     "kode": "KM11482",
+     "tekst": "utforske og beskrive interkulturell kommunikasjon"
+    },
+    {
+     "kode": "KM11483",
+     "tekst": "drøfte ulike mediers betydning for individ og samfunn"
+    },
+    {
+     "kode": "KM11484",
+     "tekst": "analysere hvordan tekster fra ulike tekstkulturer er komponert og satt sammen av ulike elementer"
+    },
+    {
+     "kode": "KM11485",
+     "tekst": "utforske og tolke egen og andres bruk av verbal og ikke-verbal kommunikasjon i ulike kommunikasjonssituasjoner"
+    },
+    {
+     "kode": "KM11486",
+     "tekst": "utvikle tekster tilpasset ulike kommunikasjonssituasjoner"
+    },
+    {
+     "kode": "KM11487",
+     "tekst": "vurdere kilders troverdighet og bruke dem på en etterrettelig måte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i kommunikasjon og kultur 1. Elevene viser og utvikler kompetanse i faget når de kommuniserer verbalt og ikke-verbalt, tilpasset formål, mottaker og kulturkontekst. Videre viser og utvikler de kompetanse når de anvender fagbegreper og teorier i vurderinger, drøftinger og analyser av kjente og ukjente tekster og kulturuttrykk. De viser også kompetanse når de bruker digitale verktøy, medier og ulike kilder på en selvstendig, kritisk og ansvarlig måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å tilegne seg og vise kompetanse i faget, og gjennom å la elevene få være nysgjerrige, kreative og aktivt kunnskapssøkende. Læreren skal være i dialog med elevene om utviklingen deres i kommunikasjon og kultur 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglige utvikling. Læreren skal gi veiledning om videre læring, slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i kommunikasjon og kultur 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter kommunikasjon og kultur 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og kultur 1 basert på den samlede kompetansen eleven har vist ved å utforske et bredt utvalg kulturuttrykk ved hjelp av teorier og metoder, ved å utforske sammenhengen mellom kommunikasjon og kultur, og ved å utvikle tekster tilpasset formål, mottaker og kulturkontekst."
+   ]
+  },
+  {
+   "kode": "KV879",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og kultur 2",
+   "fag": [
+    "KKM1Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11488",
+     "tekst": "gjøre rede for og bruke teorier om diskurs, sjanger, estetikk, retorikk og litteratur"
+    },
+    {
+     "kode": "KM11489",
+     "tekst": "utforske og beskrive hvordan tekstkulturer utvikles og endres"
+    },
+    {
+     "kode": "KM11490",
+     "tekst": "analysere og sammenligne hvordan tekster blir komponert av grammatiske, tekstuelle og estetiske elementer"
+    },
+    {
+     "kode": "KM11491",
+     "tekst": "tolke og drøfte hvordan tekster bidrar til å skape, bevare og utfordre kulturers virkelighetsforståelse"
+    },
+    {
+     "kode": "KM11492",
+     "tekst": "utforske og analysere hvordan kulturelle normer og verdier uttrykkes gjennom kommunikasjon"
+    },
+    {
+     "kode": "KM11493",
+     "tekst": "analysere og drøfte hvordan endring i kommunikasjonsteknologi påvirker utforming og mottagelse av tekst"
+    },
+    {
+     "kode": "KM11494",
+     "tekst": "utvikle og presentere egne tekster tilpasset ulike kommunikasjonssituasjoner"
+    },
+    {
+     "kode": "KM11495",
+     "tekst": "planlegge og vurdere egen og andres kommunikasjon"
+    },
+    {
+     "kode": "KM11496",
+     "tekst": "planlegge, gjennomføre og presentere en sammenlignende analyse av et selvvalgt tekstutvalg"
+    },
+    {
+     "kode": "KM11497",
+     "tekst": "vurdere kilders relevans og troverdighet og bruke dem på en etterrettelig måte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i kommunikasjon og kultur 2. Elevene viser og utvikler kompetanse i faget når de kommuniserer skriftlig og muntlig, tilpasset kommunikasjonssituasjonen. Videre viser og utvikler de kompetanse når de bruker fagbegreper og teorier i analyser, vurderinger og drøftinger av kjente og ukjente tekster, og når de bruker digitale verktøy, medier og kilder på en selvstendig, kritisk og ansvarlig måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på. Læreren skal også fremme lærelyst gjennom å la elevene få være nysgjerrige, utforskende og aktivt kunnskapssøkende. Læreren skal være i dialog med elevene om utviklingen deres i kommunikasjon og kultur 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglige utvikling. Læreren skal gi veiledning om videre læring, slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i kommunikasjon og kultur 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter kommunikasjon og kultur 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og kultur 2 basert på den samlede kompetansen eleven har vist ved å utforske, analysere og drøfte et bredt utvalg tekster i et kommunikativt perspektiv ved hjelp av relevante teorier og metoder, og ved å utvikle tekster tilpasset formål og mottakergruppe."
+   ]
+  },
+  {
+   "kode": "KV880",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og kultur 3",
+   "fag": [
+    "KKM1Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11498",
+     "tekst": "gjøre rede for og bruke teorier om diskurs, semiotikk, pragmatikk og kultur"
+    },
+    {
+     "kode": "KM11499",
+     "tekst": "analysere og drøfte hvordan kommunikasjon påvirkes av sosiale faktorer og kulturelle verdier"
+    },
+    {
+     "kode": "KM11500",
+     "tekst": "analysere forholdet mellom kommunikasjon og makt i lokale og globale sammenhenger"
+    },
+    {
+     "kode": "KM11501",
+     "tekst": "analysere og sammenligne språklige mønstre og samtaleformer"
+    },
+    {
+     "kode": "KM11502",
+     "tekst": "tolke og drøfte hvordan kommunikasjonsteknologi påvirker mellommenneskelige relasjoner og selvrepresentasjon"
+    },
+    {
+     "kode": "KM11503",
+     "tekst": "analysere og reflektere over kulturuttrykks rolle i identitetsdannelse"
+    },
+    {
+     "kode": "KM11504",
+     "tekst": "drøfte og sammenligne hvordan tekster skaper, bevarer og utfordrer kulturers virkelighetsforståelse"
+    },
+    {
+     "kode": "KM11505",
+     "tekst": "analysere samspillet mellom verbale og ikke-verbale uttrykksformer i ulike kommunikasjonsprosesser"
+    },
+    {
+     "kode": "KM11506",
+     "tekst": "reflektere over og drøfte interkulturell kommunikasjon"
+    },
+    {
+     "kode": "KM11507",
+     "tekst": "planlegge og vurdere egen og andres kommunikasjon"
+    },
+    {
+     "kode": "KM11508",
+     "tekst": "planlegge, gjennomføre og presentere et selvvalgt faglig emne"
+    },
+    {
+     "kode": "KM11509",
+     "tekst": "vurdere kilders relevans og troverdighet og bruke dem på en etterrettelig måte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i kommunikasjon og kultur 3. Elevene viser og utvikler kompetanse i faget når de kommuniserer og samhandler skriftlig og muntlig, tilpasset kommunikasjonssituasjonen. Videre viser og utvikler de kompetanse når de bruker fagbegreper og teorier i analyser, vurderinger og drøftinger av kjente og ukjente tekster og kulturuttrykk, og når de bruker digitale verktøy, medier og kilder på en selvstendig, kritisk og ansvarlig måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på, og gjennom å la elevene få være nysgjerrige, utforskende og aktivt kunnskapssøkende. Læreren skal være i dialog med elevene om utviklingen deres i kommunikasjon og kultur 3, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglige utvikling. Læreren skal gi veiledning om videre læring, slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i kommunikasjon og kultur 3."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter kommunikasjon og kultur 3. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og kultur 3 basert på den samlede kompetansen eleven har vist ved å utforske, analysere og drøfte et bredt utvalg tekster i et kommunikativt perspektiv ved hjelp av relevante teorier og metoder, og ved å skape tekster tilpasset formål og mottakergruppe."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Kommunikasjon og kultur 1: Elevene skal ha én standpunktkarakter",
+    "Kommunikasjon og kultur 2: Elevene skal ha én standpunktkarakter",
+    "Kommunikasjon og kultur 3: Elevene skal ha én standpunktkarakter"
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Kommunikasjon og kultur 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Kommunikasjon og kultur 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt.",
+    "Kommunikasjon og kultur 3: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Kommunikasjon og kultur 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Kommunikasjon og kultur 2: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt.",
+    "Kommunikasjon og kultur 3: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

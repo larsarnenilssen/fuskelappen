@@ -1,0 +1,120 @@
+{
+ "kode": "TRB03-02",
+ "tittel": "Læreplan i vg3 trebåtbyggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV626",
+   "tittel": "Kompetansemål og vurdering vg3 trebåtbyggerfaget",
+   "fag": [
+    "TRB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7408",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7411",
+     "tekst": "utforme skisser og enkle modeller og bruke dette i presentasjoner av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM7406",
+     "tekst": "konstruere linjetegning og maler fra tegning som forberedelser til produksjon og lage oppslag av båten i full målestokk"
+    },
+    {
+     "kode": "KM7405",
+     "tekst": "bruke digitale og analoge arbeidstegninger og tabeller"
+    },
+    {
+     "kode": "KM7394",
+     "tekst": "gjøre rede for internasjonale, samiske og lokale trebåtbyggertradisjoner og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7409",
+     "tekst": "vurdere, innhente, håndtere, lagre og kvalitetssortere trevirke og andre materialer og gjøre rede for hva som kan påvirke bruk, holdbarhet og miljø"
+    },
+    {
+     "kode": "KM7413",
+     "tekst": "anvende ulike tresorter og annet hjelpemateriale tilpasset den aktuelle båttypen og de forskjellige konstruksjonsdelene i båten"
+    },
+    {
+     "kode": "KM7412",
+     "tekst": "bygge båt i minst én av teknikkene klink, kravell eller limtrekonstruksjon og gjøre rede for metodene til de to andre"
+    },
+    {
+     "kode": "KM7402",
+     "tekst": "velge og bruke mekaniske og kjemiske forbindingsmetoder tilpasset aktuelle bruksområder og gjøre rede for hvordan ulike valg påvirker kvalitet og holdbarhet på ferdig produkt"
+    },
+    {
+     "kode": "KM7400",
+     "tekst": "utføre trearbeid i forbindelse med innredning, rigg og tekniske installasjoner"
+    },
+    {
+     "kode": "KM7396",
+     "tekst": "vurdere overflatebehandling tilpasset materiale, bruksområde og miljø, og bruke kunnskapen i praksis"
+    },
+    {
+     "kode": "KM7399",
+     "tekst": "gjøre rede for egenskaper ved metaller som brukes i trebåter, og hvordan disse brukes for å unngå korrosjon og tæring ved galvaniske spenninger, og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7397",
+     "tekst": "velge og bruke verktøy og teknikker tilpasset ulike materialer, ergonomi og tidsbruk"
+    },
+    {
+     "kode": "KM7398",
+     "tekst": "bruke og vedlikeholde maskiner, verktøy og utstyr, holde orden på verkstedet og på egen arbeidsplass og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7410",
+     "tekst": "lage og bruke eget håndverktøy og annet utstyr ved behov og ut fra arbeidsoppgave"
+    },
+    {
+     "kode": "KM7404",
+     "tekst": "utføre oppmåling og dokumentasjon av eldre trebåter"
+    },
+    {
+     "kode": "KM7401",
+     "tekst": "vurdere tilstanden og utføre ulike typer reparasjonsarbeid og restaurering av trebåter"
+    },
+    {
+     "kode": "KM7395",
+     "tekst": "beregne tid og pris på en produksjon og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7407",
+     "tekst": "gjøre rede for og følge gjeldende lov- og regelverk for trebåtbyggerfaget"
+    },
+    {
+     "kode": "KM7403",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7414",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 trebåtbyggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 trebåtbyggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 trebåtbyggerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på sju til ti virkedager."
+   ]
+  }
+ ]
+}

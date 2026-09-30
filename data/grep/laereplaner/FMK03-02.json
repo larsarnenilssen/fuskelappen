@@ -1,0 +1,128 @@
+{
+ "kode": "FMK03-02",
+ "tittel": "Læreplan i vg3 finmekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV693",
+   "tittel": "Kompetansemål og vurdering vg3 finmekanikerfaget",
+   "fag": [
+    "FMK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8887",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere oppgaver i tråd med tegninger, spesifikasjoner og kvalitetskriterier og -kontroll"
+    },
+    {
+     "kode": "KM8907",
+     "tekst": "velge og bruke verneutstyr tilpasset arbeidsoppdraget og følge regler og retningslinjer for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8906",
+     "tekst": "vurdere og beskrive toleranser i tråd med tegninger og standarder"
+    },
+    {
+     "kode": "KM8905",
+     "tekst": "bruke dataassisterte konstruksjoner for framstilling av produksjonsunderlag"
+    },
+    {
+     "kode": "KM8904",
+     "tekst": "utarbeide prototyper, komponenter og konstruksjoner, og drøfte utvikling av produkter med interessenter, leverandører, samarbeidspartnere og konstruktører"
+    },
+    {
+     "kode": "KM8903",
+     "tekst": "gjøre rede for egenskapene til ulike materialer og velge materialer ut fra bruksområder og med hensyn til bærekraft"
+    },
+    {
+     "kode": "KM8902",
+     "tekst": "velge og anvende egnet maskineringsmetode og maskintype ut fra arbeidsoppgave"
+    },
+    {
+     "kode": "KM8901",
+     "tekst": "anvende verktøy og skjæredata med hensyn til materialtype"
+    },
+    {
+     "kode": "KM8900",
+     "tekst": "bygge og bruke analoge og digitale måleverktøy og måleutstyr"
+    },
+    {
+     "kode": "KM8899",
+     "tekst": "bruke oppspennings- og opprettingsmetoder i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM8908",
+     "tekst": "bruke manuelle verktøymaskiner for bearbeiding av materialer etter spesifikasjoner"
+    },
+    {
+     "kode": "KM8898",
+     "tekst": "klargjøre, programmere og styre CNC-maskiner og utstyr"
+    },
+    {
+     "kode": "KM8896",
+     "tekst": "ferdigstille komponenter og produkter for forsendelse"
+    },
+    {
+     "kode": "KM8895",
+     "tekst": "utføre vedlikehold av maskiner i tråd med prosedyrer"
+    },
+    {
+     "kode": "KM8894",
+     "tekst": "utføre sammenføying og varmebehandling av deler og komponenter"
+    },
+    {
+     "kode": "KM8893",
+     "tekst": "tilpasse og sammenstille komponenter og deler og funksjonsteste produktet"
+    },
+    {
+     "kode": "KM8892",
+     "tekst": "dokumentere måleresultater i tråd med spesifikasjoner og standarder og registrere og behandle avvik i tråd med prosedyrer"
+    },
+    {
+     "kode": "KM8891",
+     "tekst": "sette opp budsjett for et arbeidsoppdrag og gjøre rede for hvordan eventuelle materielle feilvurderinger påvirker bedriftens lønnsomhet"
+    },
+    {
+     "kode": "KM8890",
+     "tekst": "tolke og forstå tegningsgrunnlag"
+    },
+    {
+     "kode": "KM8889",
+     "tekst": "gjennomføre arbeid i tråd med gjeldende system for helse, miljø og sikkerhet og kvalitetskontroll"
+    },
+    {
+     "kode": "KM8888",
+     "tekst": "reflektere over hvordan valg av materialer og metode kan bidra til å forebygge og redusere miljøavtrykket og bidra til bærekraftig utvikling"
+    },
+    {
+     "kode": "KM8897",
+     "tekst": "gjøre rede for behandling av opplysninger fra oppdragsgiver i tråd med fagetiske normer"
+    },
+    {
+     "kode": "KM8909",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 finmekanikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 finmekanikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 finmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

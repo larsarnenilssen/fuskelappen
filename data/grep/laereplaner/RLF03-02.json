@@ -1,0 +1,128 @@
+{
+ "kode": "RLF03-02",
+ "tittel": "Læreplan i vg3 røyrleggjarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV512",
+   "tittel": "Kompetansemål og vurdering vg3 røyrleggjarfaget",
+   "fag": [
+    "RLF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5880",
+     "tekst": "planleggje installering av røyrleidningar etter teikningar og beskrivingar ved å bruke ulike prosjektverktøy, arbeide i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM5890",
+     "tekst": "utarbeide framdriftsplanar, bestille og motta materiale og utstyr og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5900",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og iverksette tiltak"
+    },
+    {
+     "kode": "KM5899",
+     "tekst": "velje og bruke materiale, verktøy og maskiner til ulike formål og reflektere over konsekvensane for kvalitet, funksjonalitet, miljø og ressursbruk"
+    },
+    {
+     "kode": "KM5898",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM5897",
+     "tekst": "følgje regelverket for arbeid i høgda og vurdere bruk av sikringsutstyr"
+    },
+    {
+     "kode": "KM5896",
+     "tekst": "velje og bruke ulike produkt og drøfte korleis vala bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM5895",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, dokumentere eige arbeid og handtere avvik"
+    },
+    {
+     "kode": "KM5894",
+     "tekst": "bøye og føye saman røyr av ulike materiale og velje eigna samanføyingsmetode og verktøy etter eigenskapane til materialet"
+    },
+    {
+     "kode": "KM5893",
+     "tekst": "utføre enkel isolering av røyranlegg, vurdere faktorar som bidrar til energisparing og velge eigna isolering"
+    },
+    {
+     "kode": "KM5892",
+     "tekst": "beskrive kva type branntetting som eignar seg for røyrleidningar gjennom brannskilje, og setje i verk tiltak"
+    },
+    {
+     "kode": "KM5901",
+     "tekst": "utføre trykkprøve og tettleiksprøve, vurdere korleis trykkprøvingsmetode påvirker sikkerheiten og setje i gang aktuelle røyrinstallasjonar etter gjeldande prosedyrar"
+    },
+    {
+     "kode": "KM5891",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar"
+    },
+    {
+     "kode": "KM5881",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM5889",
+     "tekst": "beskrive korleis eit trykkluftsystem er bygd opp"
+    },
+    {
+     "kode": "KM5888",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp, reflektere over konsekvensane av kroppsbelastning, støy og støveksponering og sette iverk tiltak"
+    },
+    {
+     "kode": "KM5902",
+     "tekst": "bruke arbeids-, verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM5887",
+     "tekst": "vurdere ulike preaksepterte løysingar og byggje røyranlegg i samsvar med den valde løysinga"
+    },
+    {
+     "kode": "KM5886",
+     "tekst": "prosjektere komplette innvendige og utvendige sanitæranlegg ved å bruke bransjerelaterte manuelle og digitale teikneverktøy"
+    },
+    {
+     "kode": "KM5885",
+     "tekst": "dimensjonere røyr for spillvatn, overvatn og vatn, leggje røyr, montere sanitærutstyr og dokumentere arbeidet"
+    },
+    {
+     "kode": "KM5884",
+     "tekst": "nytte reglane for tilkopling til kommunale spillvass-, overvass- og vassleidningar og vurdere løysingane ut frå regionale forhold"
+    },
+    {
+     "kode": "KM5883",
+     "tekst": "vurdere ulike energikjelder for vassborne anlegg og prosjektere og montere ein enkel vassboren energiinstallasjon"
+    },
+    {
+     "kode": "KM5882",
+     "tekst": "gjere greie for ulike sprinklaranlegg og manuelle vassborne sløkkjemetodar for brann og montere eit sprinklaranlegg etter teikningar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 røyrleggjarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 røyrleggjarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 røyrleggjarfaget skal avsluttast med ein sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

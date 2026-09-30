@@ -1,0 +1,128 @@
+{
+ "kode": "DRA02-02",
+ "tittel": "Læreplan i teaterproduksjon",
+ "spraak": "nob",
+ "fastsatt": "2021-04-20",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV589",
+   "tittel": "Kompetansemål og vurdering teaterproduksjon 1",
+   "fag": [
+    "DRA2Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6763",
+     "tekst": "bruke grunnleggende skuespillerteknikk i arbeid med teater og reflektere over ulike skuespillertekniske innganger i skapende arbeid"
+    },
+    {
+     "kode": "KM6764",
+     "tekst": "lese og tolke ulike relasjoner og sceniske situasjoner knyttet til kropp, rom, tid, tekst og publikum"
+    },
+    {
+     "kode": "KM6765",
+     "tekst": "skape teaterproduksjoner og reflektere over arbeidsprosess og forestillingenes endelige uttrykk"
+    },
+    {
+     "kode": "KM6766",
+     "tekst": "lytte aktivt i arbeid med improvisasjon og spillsituasjoner, og reagere åpent og inkluderende i arbeidsprosesser"
+    },
+    {
+     "kode": "KM6767",
+     "tekst": "reflektere over bruken av sentrale teaterfornyeres metoder i ulike sjangre og spillestiler"
+    },
+    {
+     "kode": "KM6768",
+     "tekst": "eksperimentere med og reflektere over bruk av sceniske virkemidler, ulike audiovisuelle løsninger og medieplattformer i teaterproduksjoner"
+    },
+    {
+     "kode": "KM6769",
+     "tekst": "utforske og drøfte teateret som ytringsform og arena for å stille spørsmål og belyse meninger, tanker og følelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teaterproduksjon 1. Elevene viser og utvikler kompetanse i faget når de arbeider med skuespillerrollen, lytting og evnen til scenisk tilstedeværelse, og når de formidler teater for et publikum. Videre viser og utvikler de kompetanse i faget når de improviserer, og når de arbeider med å være positive bidragsytere i fellesskapet.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom at elevene får ta i bruk ulike innfallsvinkler, metoder og kollektive arbeidsformer i produksjon av teaterframføringer. Læreren skal være i dialog med elevene om utviklingen deres i å arbeide med rolle, tekst, idé, virkemidler og sceniske praksiser, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle skuespillerteknikker, ferdigheter i samspill, respons og improvisasjon, og utvikle bevissthet om arbeidsetikk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teaterproduksjon 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teaterproduksjon 1 basert på kompetansen eleven har vist ved å bruke skuespillerteknikker, refleksjon og analyse i teaterarbeid, skape egne uttrykk og delta konstruktivt og etisk i kollektivt produksjonsarbeid."
+   ]
+  },
+  {
+   "kode": "KV590",
+   "tittel": "Kompetansemål og vurdering teaterproduksjon 2",
+   "fag": [
+    "DRA2Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6770",
+     "tekst": "utforske og utfordre teaterfagets mangfold og muligheter i scenisk arbeid"
+    },
+    {
+     "kode": "KM6771",
+     "tekst": "skape scenisk nærvær i spillsituasjoner ved å bruke ulike skuespillertekniske innganger"
+    },
+    {
+     "kode": "KM6772",
+     "tekst": "kommunisere verbalt og nonverbalt i interaksjon med spillpartnere og publikum, og tilpasse diksjon og volum til ulike spillerom"
+    },
+    {
+     "kode": "KM6773",
+     "tekst": "utforske ulike sjangre og spillestiler, og bruke ulike metodiske innganger til å produsere scenisk materiale og bruke disse i et selvstendig scenisk uttrykk i formidling til et publikum"
+    },
+    {
+     "kode": "KM6774",
+     "tekst": "drøfte grenseganger mellom det personlige, private og profesjonelle i arbeid med teater og bruke innsikten om dette i produksjonsarbeid"
+    },
+    {
+     "kode": "KM6775",
+     "tekst": "integrere tekniske og scenografiske løsninger i ulike performative uttrykk og teaterproduksjoner og reflektere over bruk av multimediale løsninger og medieplattformer"
+    },
+    {
+     "kode": "KM6776",
+     "tekst": "drøfte teaterets performative og relasjonelle muligheter og teateret som arena for ulike ytringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teaterproduksjon 2. Elevene viser og utvikler kompetanse i faget når de arbeider med skuespillerrollen, lytting og evnen til scenisk tilstedeværelse, og når de formidler teater for et publikum. Videre viser og utvikler de kompetanse i faget når de samarbeider i kollektive og kreative prosesser om å skape ulike uttrykk og ytringer. Elevene viser og utvikler også kompetanse i faget når de improviserer, og når de arbeider med å utvikle scenisk tilstedeværelse.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom at elevene får ta i bruk ulike innfallsvinkler, metoder og kollektive arbeidsformer i produksjon av sceniske uttrykk. Læreren skal være i dialog med elevene om utviklingen deres i å arbeide med rolle, tekst, idé, virkemidler og kunstneriske valg, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle evnen til å bruke skuespillerteknikker, ferdigheter i samspill, respons og improvisasjon, og for å utvikle bevissthet om arbeidsetikk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teaterproduksjon 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer utøvelse, formidling, forståelse og selvstendig refleksjon, i ulike sammenhenger. Læreren skal sette karakter i teaterproduksjon basert på kompetansen eleven har vist ved å arbeide med sceniske uttrykk, ta kunstneriske valg, og ved å reflektere over, analysere og gjennomføre teaterproduksjoner."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teaterproduksjon 1: Eleven skal ha én standpunktkarakter.\nTeaterproduksjon 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Teaterproduksjon 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nTeaterproduksjon 2: Eleven skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Teaterproduksjon 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeaterproduksjon 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Privatister i teaterproduksjon 2 får godskrevet programfaget teaterproduksjon 1."
+   ]
+  }
+ ]
+}

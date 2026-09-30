@@ -1,0 +1,105 @@
+{
+ "kode": "KLO03-03",
+ "tittel": "Læreplan i vg3 kran- og løfteoperasjonsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV714",
+   "tittel": "Kompetansemål og vurdering vg3 kran- og løfteoperasjonsfaget",
+   "fag": [
+    "KLO3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9294",
+     "tekst": "planlegge, risikovurdere, utføre, dokumentere og evaluere løfteoperasjoner alene og sammen med andre"
+    },
+    {
+     "kode": "KM9295",
+     "tekst": "kontrollere og vurdere vedlikehold på løfteinnretning og løfteredskap før og etter bruk"
+    },
+    {
+     "kode": "KM9296",
+     "tekst": "betjene mobilkran over 10 tonn etter gjeldende regelverk og føre mobilkran på vei der virksomhetens produksjon avhenger av forflytning"
+    },
+    {
+     "kode": "KM10259",
+     "tekst": "betjene enten tårnkran, portal- og sving kran eller offshorekran i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM10542",
+     "tekst": "betjene lastebilkran, fastmontert hydraulisk kran og bro- og traverskran i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM9298",
+     "tekst": "bruke lastsikringssystemer, lastediagram, lastindikatorer, begrensningssystemer og arbeidskamera i planlegging og utførelse, og forklare hensikten med bruken"
+    },
+    {
+     "kode": "KM9299",
+     "tekst": "velge og bruke produkter som reduserer miljøpåvirkningen på omgivelsene, og reflektere over produktenes konsekvenser for miljøet"
+    },
+    {
+     "kode": "KM9302",
+     "tekst": "samarbeide med vedlikeholdsspesialister og sakkyndig virksomhet ved arbeid og funksjonsprøving av utstyr i tråd med instrukser"
+    },
+    {
+     "kode": "KM9303",
+     "tekst": "utføre korrektive og forebyggende vedlikeholdsoppgaver på løfteutstyr i tråd med gjeldende programmer og prosedyrer"
+    },
+    {
+     "kode": "KM9307",
+     "tekst": "reflektere over faremomenter ved arbeidet, foreslå forbedringstiltak og dokumentere utført vedlikeholdsarbeid"
+    },
+    {
+     "kode": "KM9306",
+     "tekst": "kildesortere avfall i tråd med sikkerhetsdatablader og gjeldende systemer for avfallshåndtering"
+    },
+    {
+     "kode": "KM9305",
+     "tekst": "planlegge, risikovurdere, utføre og evaluere ulike typer riggoperasjoner i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM9308",
+     "tekst": "kommunisere ved hjelp av signaler, tegn og radio under løfteoperasjoner vurdere og utføre tiltak ved operasjoner med løfting av farlig gods og ved løfting over kritisk utstyr og systemer"
+    },
+    {
+     "kode": "KM9309",
+     "tekst": "gjøre rede for løfteutstyrets oppbygning, virkemåte og bruksområde i henhold til produsentens anvisning og krav"
+    },
+    {
+     "kode": "KM9300",
+     "tekst": "funksjonsprøve løfteinnretningens systemer etter produsentens anvisninger og krav"
+    },
+    {
+     "kode": "KM9301",
+     "tekst": "rapportere avvik i tråd med prosedyre og utføre korrigerende tiltak"
+    },
+    {
+     "kode": "KM9304",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kran- og løfteoperasjonsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 kran- og løfteoperasjonsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kran- og løfteoperasjonsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager.",
+    "Før fagprøven kan gjennomføres, må kandidaten dokumentere bestått opplæring på mobilkran og en annen hovedkran og for truck klasse T4, og lastebilkran, fastmontert hydraulisk kran og bro- og traverskran i henhold til gjeldende nasjonale bestemmelser om arbeidsutstyr underlagt krav om sertifisert sikkerhetsopplæring."
+   ]
+  }
+ ]
+}

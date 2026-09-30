@@ -1,0 +1,120 @@
+{
+ "kode": "GIP03-02",
+ "tittel": "Læreplan i gipsmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV443",
+   "tittel": "Kompetansemål og vurdering gipsmakerfaget",
+   "fag": [
+    "GIP3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4749",
+     "tekst": "planlegge, gjennomføre og dokumentere prosesser med et gipsarbeid"
+    },
+    {
+     "kode": "KM4747",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4746",
+     "tekst": "gjøre rede for tradisjonelle og nye gipsprodukters egenskaper og bruksområder og bruke denne kunnskapen i eget arbeid og i samarbeid med andre"
+    },
+    {
+     "kode": "KM4764",
+     "tekst": "grunnlinjer og særtrekk i stilhistorien og bruke dette som referanse for eget arbeid"
+    },
+    {
+     "kode": "KM4763",
+     "tekst": "gjengi og beskrive en form med frihåndstegning"
+    },
+    {
+     "kode": "KM4761",
+     "tekst": "utforske og modellere en form i leire"
+    },
+    {
+     "kode": "KM4762",
+     "tekst": "bruke spesialiserte tegneprogram til å planlegge arbeidet"
+    },
+    {
+     "kode": "KM4751",
+     "tekst": "lage ekte form, forloren form og forskjellige silikonformer"
+    },
+    {
+     "kode": "KM4760",
+     "tekst": "vurdere formål og begrunne valg av støpeform ut fra arbeidsoppgave"
+    },
+    {
+     "kode": "KM4759",
+     "tekst": "støpe produkter i gips"
+    },
+    {
+     "kode": "KM4758",
+     "tekst": "vurdere og gjennomføre tiltak for å restaurere dekor, gjenstander eller overflater som er skadet, eller som må konserveres"
+    },
+    {
+     "kode": "KM4757",
+     "tekst": "tegne profiler og lage sjablonger til trekningsarbeider"
+    },
+    {
+     "kode": "KM4748",
+     "tekst": "utføre trekningsarbeider"
+    },
+    {
+     "kode": "KM4765",
+     "tekst": "montere utstøp og trekninger på en byggeplass i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4756",
+     "tekst": "utføre fagmessig retusjering og reparasjon av overflater i kalkmørtel og gips"
+    },
+    {
+     "kode": "KM4750",
+     "tekst": "vurdere skader og tiltak for å reparere og restaurere tak med Rabitz-puss og gjøre rede for hvordan ulike valg påvirker sluttresultatet"
+    },
+    {
+     "kode": "KM4754",
+     "tekst": "gjøre rede for hvordan stukkmarmor og stucco lustro utføres, og reflektere over bruk av disse i nye sammenhenger"
+    },
+    {
+     "kode": "KM4753",
+     "tekst": "anvende og vedlikeholde verktøy og materialer i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4755",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4766",
+     "tekst": "vurdere miljøeffekter for bruk og valg av materialer og gjøre rede for hvordan kildesortere og håndtere avfall etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4752",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i gipsmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i gipsmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i gipsmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst sju virkedager."
+   ]
+  }
+ ]
+}

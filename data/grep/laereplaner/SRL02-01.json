@@ -1,0 +1,222 @@
+{
+ "kode": "SRL02-01",
+ "tittel": "Læreplan i vg2 sal og reiseliv",
+ "spraak": "nno",
+ "fastsatt": "2021-02-05",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV375",
+   "tittel": "Kompetansemål og vurdering forretningsdrift (159 årstimar)",
+   "fag": [
+    "SRL2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3953",
+     "tekst": "utforske trendar, forretningsmodellar og samarbeidsformer i sal og reiseliv"
+    },
+    {
+     "kode": "KM3974",
+     "tekst": "utvikle, presentere og vurdere ein forretningsplan ut frå eit berekraftperspektiv"
+    },
+    {
+     "kode": "KM3980",
+     "tekst": "berekne pris på eit produkt og vurdere ulike former og strategiar for kalkulasjonar og prissetjing"
+    },
+    {
+     "kode": "KM3979",
+     "tekst": "utarbeide og anvende budsjett og rekneskapar, og vurdere dekningsgrad og lønnsemd med utgangspunkt i andre sentrale nøkkeltal"
+    },
+    {
+     "kode": "KM3982",
+     "tekst": "beskrive rekrutteringsprosessar og reflektere over forventningar til tilsette innanfor ulike sals- og reiselivsbedrifter"
+    },
+    {
+     "kode": "KM3981",
+     "tekst": "presentere utfordringar i helse-, miljø- og sikkerheitsarbeidet i ei bedrift og gjere greie for dei ulike rollene i bedrifta"
+    },
+    {
+     "kode": "KM3976",
+     "tekst": "beskrive og følgje gjeldande regelverk for sals- og reiselivsbedrifter som regulerer forholdet til kundar, tilsette og næringsliv"
+    },
+    {
+     "kode": "KM3977",
+     "tekst": "reflektere over og forstå korleis berekraft blir teke omsyn til i ei verdikjede"
+    },
+    {
+     "kode": "KM3973",
+     "tekst": "beskrive ulike typar svinn, reflektere over konsekvensane av svinn og foreslå tiltak for å førebyggje svinn"
+    },
+    {
+     "kode": "KM3975",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    },
+    {
+     "kode": "KM3978",
+     "tekst": "utforske ulike reiselivsdestinasjonar og vurdere korleis reiselivsverksemd påverkar berekraftig utvikling"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget forretningsdrift når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget forretningsdrift. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget forretningsdrift ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget forretningsdrift basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV376",
+   "tittel": "Kompetansemål og vurdering innovasjon og marknadsføring (159 årstimer)",
+   "fag": [
+    "SRL2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3967",
+     "tekst": "gjere greie for ulike merkevarer og utforske ulike marknadsstrategiar som bedrifter kan bruke"
+    },
+    {
+     "kode": "KM3970",
+     "tekst": "gjennomføre ei marknadsundersøking og bruke innhenta data"
+    },
+    {
+     "kode": "KM3971",
+     "tekst": "planleggje og gjennomføre ein marknadsføringskampanje til ei sjølvvald målgruppe og presentere korleis forbrukaråtferda og medievanane til denne målgruppa er tekne omsyn til"
+    },
+    {
+     "kode": "KM3966",
+     "tekst": "vurdere tiltak i salskanalar som kan fremje sal, meirsal og gjensal og ta omsyn til dette i utviklinga av indre og ytre salsmiljøet"
+    },
+    {
+     "kode": "KM3972",
+     "tekst": "utvikle eit produktforslag og presentere korleis lønnsemd, klima og etiske forhold er vektlagde"
+    },
+    {
+     "kode": "KM3965",
+     "tekst": "planleggje, gjennomføre og avslutte eit sal og vurdere salsprosessen"
+    },
+    {
+     "kode": "KM3964",
+     "tekst": "planleggje, gjennomføre og vurdere eit arrangement for kundar og gjester med vekt på marknadsaktivitetar"
+    },
+    {
+     "kode": "KM3963",
+     "tekst": "utforske ulike salsplattformer og kva service har å seie i salet av eit produkt"
+    },
+    {
+     "kode": "KM3969",
+     "tekst": "gjere greie for regelverk for klagar og reklamasjonar"
+    },
+    {
+     "kode": "KM3968",
+     "tekst": "forstå og presentere innhaldet i eit heilskapleg reiselivsprodukt og forklare samanhengar mellom ulike aktørar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget innovasjon og marknadsføring når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget innovasjon og marknadsføring. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget innovasjon og marknadsføring ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget innovasjon og marknadsføring basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV377",
+   "tittel": "Kompetansemål og vurdering kultur og kommunikasjon (159 årstimar)",
+   "fag": [
+    "SRL2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3957",
+     "tekst": "reflektere over og forstå korleis kultur, verdiar og haldningar påverkar kommunikasjon mellom menneske, og ta omsyn til dette i møte med kundar og gjester"
+    },
+    {
+     "kode": "KM3954",
+     "tekst": "gjere greie for servicerolla og utforske korleis utøvinga av servicerolla må tilpassast ulike mottakarar i ulike situasjonar, og korleis måten rolla blir utøvd på, kan påverke omdømmet til bedrifter"
+    },
+    {
+     "kode": "KM3962",
+     "tekst": "utforske kva yrkesetikk og bedriftskultur har å seie innanfor sal og reiseliv, og gjere greie for etiske dilemma som kan oppstå i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM3961",
+     "tekst": "utforske ulike kommunikasjonskanalar og kommunisere munnleg og skriftleg med ulike målgrupper"
+    },
+    {
+     "kode": "KM3955",
+     "tekst": "følgje ulike system for kundeoppfølging og beskrive korleis systema kan brukast til sal, meirsal og gjensal av produkt"
+    },
+    {
+     "kode": "KM3958",
+     "tekst": "skape opplevingar av og formidle forteljingar om norsk og samisk kultur, natur og geografi"
+    },
+    {
+     "kode": "KM3956",
+     "tekst": "utforske og vurdere kva vertskapsrolla har å seie for ulike reiselivsaktivitetar"
+    },
+    {
+     "kode": "KM3960",
+     "tekst": "utforske korleis nettverk og nettverkssamarbeid kan gi støtte for profesjonell og fagleg utvikling"
+    },
+    {
+     "kode": "KM3983",
+     "tekst": "forstå og bruke ein beredskapsplan og vurdere ulike risikofaktorar"
+    },
+    {
+     "kode": "KM3959",
+     "tekst": "følgje ein førstehjelpsinstruks og utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM3984",
+     "tekst": "vurdere tiltak i konflikt- og nødssituasjonar og reflektere over korleis ein skal vareta si eiga helse i slike situasjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget kultur og kommunikasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget kultur og kommunikasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget kultur og kommunikasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget kultur og kommunikasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Forretningsdrift: Eleven skal ha éin standpunktkarakter.",
+    "Innovasjon og marknadsføring: Eleven skal ha éin standpunktkarakter.",
+    "Kultur og kommunikasjon: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Forretningsdrift, innovasjon og marknadsføring og kultur og kommunikasjon: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Forretningsdrift: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Innovasjon og marknadsføring: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kultur og kommunikasjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Forretningsdrift, innovasjon og marknadsføring og kultur og kommunikasjon: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

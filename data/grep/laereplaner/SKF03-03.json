@@ -1,0 +1,100 @@
+{
+ "kode": "SKF03-03",
+ "tittel": "Læreplan i Vg3 skogfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV613",
+   "tittel": "Kompetansemål og vurdering vg3 skogfaget",
+   "fag": [
+    "SKF3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7156",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere klimatilpasset skogsdrift etter gjeldende miljøstandarder, avtaler og regelverk"
+    },
+    {
+     "kode": "KM7148",
+     "tekst": "bruke digitale ressurser og informasjon fra skogsmaskiner, skogbruksplaner, navigasjonsutstyr og andre kilder i planlegging, gjennomføring og dokumentasjon av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM7150",
+     "tekst": "vurdere risiko og arbeide under ulike naturgitte forhold, og i nærheten av privat og offentlig infrastruktur"
+    },
+    {
+     "kode": "KM7151",
+     "tekst": "bruke bedriftens internkontrollsystem og påvise, rapportere og dokumentere avvik"
+    },
+    {
+     "kode": "KM7153",
+     "tekst": "utføre arbeidsoppgaver i skog på en ergonomisk riktig måte, etter gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7157",
+     "tekst": "bruke skogsmaskiner og utstyr tilpasset arbeidsoppgaven etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM7154",
+     "tekst": "planlegge hogstform for etablering av ny skog, velge foryngelsesmetode og legge til rette for foryngelse"
+    },
+    {
+     "kode": "KM7158",
+     "tekst": "bruke gjeldende målereglement og dimensjonskrav og gjøre rede for hvordan en apteringsinstruksjon fungerer, for å oppnå optimal virkesutnytting"
+    },
+    {
+     "kode": "KM7159",
+     "tekst": "kontrollere, kalibrere og justere innstillinger av produksjonsutstyr"
+    },
+    {
+     "kode": "KM7160",
+     "tekst": "vedlikeholde skogsmaskiner, identifisere feil, bestille og bytte ut komponenter"
+    },
+    {
+     "kode": "KM7161",
+     "tekst": "kalkulere driftspris og utføre driftsoppfølging for å vurdere lønnsomhet av skogsdrift"
+    },
+    {
+     "kode": "KM7149",
+     "tekst": "vurdere risiko for og iverksette tiltak for å forebygge sporskader"
+    },
+    {
+     "kode": "KM7162",
+     "tekst": "vurdere skogbrannfare og iverksette tiltak som reduserer skogbrannrisikoen i skogsdrift, og iverksette slokking og varsling ved brann"
+    },
+    {
+     "kode": "KM7155",
+     "tekst": "bruke og vedlikeholde motorsag og ryddesag, og vurdere behov for og utføre ungskogpleie og forhåndsrydding"
+    },
+    {
+     "kode": "KM7163",
+     "tekst": "reflektere over hvordan arbeidet påvirker økosystemet i skogen, vurdere hvordan man kan begrense negativ påvirkning på skogen, miljøet og klimaet og iverksette tiltak"
+    },
+    {
+     "kode": "KM7152",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 skogfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 skogfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 skogfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på to–tre virkedager."
+   ]
+  }
+ ]
+}

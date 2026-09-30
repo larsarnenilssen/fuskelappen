@@ -1,0 +1,164 @@
+{
+ "kode": "ARL03-01",
+ "tittel": "Læreplan i vg3 anleggsrøyrleggjarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV503",
+   "tittel": "Kompetansemål og vurdering vg3 anleggsrøyrleggerfaget",
+   "fag": [
+    "ARL3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5681",
+     "tekst": "planleggje drift av infrastruktur for vatn og avløp etter teikningar, beskrivingar og preaksepterte løysingar ved å bruke ulike prosjektverktøy, arbeide i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og vurdere konsekvensar av avvik frå krava"
+    },
+    {
+     "kode": "KM5663",
+     "tekst": "velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM5658",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, dokumentere eige arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM5686",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget og med omsyn til miljø og ressursutnytting"
+    },
+    {
+     "kode": "KM5687",
+     "tekst": "bruke og halde ved like maskiner og utstyr for etablering av vass-, avløps- og overvassanlegg i samsvar med gjeldande kvalitetssikringssystem"
+    },
+    {
+     "kode": "KM5664",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og vurdere korleis geologiske forhold påverkar valet av arbeidsprosess"
+    },
+    {
+     "kode": "KM5685",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM5684",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av støy, vibrasjon, støveksponering og farlege kjemikalium for yrkesutøvaren"
+    },
+    {
+     "kode": "KM5683",
+     "tekst": "sikre og sperre av byggje- og anleggsområde etter gjeldande riggplan og drøfte ulike tiltak som sikrar risikoutsette arbeidsforhold"
+    },
+    {
+     "kode": "KM5682",
+     "tekst": "følgje krava til arbeidsvarsling og vurdere kva risikofaktorar som kan påverke arbeid i veg"
+    },
+    {
+     "kode": "KM5680",
+     "tekst": "bygge fundament, sidefyllingar og vernelag i grøfter og kumgroper"
+    },
+    {
+     "kode": "KM5689",
+     "tekst": "gjere greie for kva krefter som påverkar nedgravne og trykksette røyr, og setje i verk tiltak ved leidningsbrot"
+    },
+    {
+     "kode": "KM5679",
+     "tekst": "bruke preaksepterte løysingar for ulike typar arbeid i tråd med gjeldande regelverk, kommunale føresegner og monteringsinstruksjonar og vurdere konsekvensane av feilmontering"
+    },
+    {
+     "kode": "KM5678",
+     "tekst": "fundamentere og komprimere ulike massar ved vass-, avløps- og overvassanlegg"
+    },
+    {
+     "kode": "KM5662",
+     "tekst": "beskrive og dokumentere kva typar materiale som skal brukast i vass-, avløps- og overvassleidningar, og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM5677",
+     "tekst": "leggje røyr i ulike massetypar og temperaturar og vurdere korleis materiala blir påverka"
+    },
+    {
+     "kode": "KM5676",
+     "tekst": "isolere kummar, grunne leidningar og vurdere korleis temperaturar påverkar valet av isolering"
+    },
+    {
+     "kode": "KM5675",
+     "tekst": "montere og forankre røyr, bend, kummar, anboringar, armatur og pumpestasjoner i samsvar med teikningar og beskrivingar og gjere greie for korleis hydrauliske krefter påverkar røyr, delar og konstruksjonar"
+    },
+    {
+     "kode": "KM5674",
+     "tekst": "leggje røyr i tråd med gjeldande normer og drøfte korleis kommunale graveinstrukser påverkar arbeidet"
+    },
+    {
+     "kode": "KM5673",
+     "tekst": "velje samanføyingsmetodar for røyr og delar, hovudleidningar og stikkleidningar og vurdere konsekvensane av feilmontering"
+    },
+    {
+     "kode": "KM5672",
+     "tekst": "forskale, armere og støype fundament og forankringar til vass-, avløps- og overvassanlegg etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM5671",
+     "tekst": "utføre trykk- og tettleiksprøve på alle typar røyr og vurdere korleis lokalt regelverk påverkar arbeidet"
+    },
+    {
+     "kode": "KM5670",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk, behandle forureina massar, uønskte planter og organismar, reflektere over konsekvensane av feilhandtering og iverksette tiltak"
+    },
+    {
+     "kode": "KM5669",
+     "tekst": "utføre stikking og nivellering ved hjelp av oppmålingsutstyr og dokumentere arbeidet"
+    },
+    {
+     "kode": "KM5668",
+     "tekst": "drøfte ulike metodar for lekkasjesøk, trasésøk og røyrinspeksjon"
+    },
+    {
+     "kode": "KM5667",
+     "tekst": "drøfte ulike gravefrie metodar for renovering og leidningsfornying"
+    },
+    {
+     "kode": "KM5666",
+     "tekst": "reinse, stake, spyle og tine leidningsnett"
+    },
+    {
+     "kode": "KM5665",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM5661",
+     "tekst": "gjere greie for infiltrasjonsanlegg, montere minireinseanlegg etter gjeldande regelverk og lokale føresetnader og drøfte korleis tilstanden til grunnen påverkar arbeidsprosessen"
+    },
+    {
+     "kode": "KM5660",
+     "tekst": "byggje fundament og komprimere stadlege massar og knuste steinmassar ved attfylling av grøft og vurdere gjenbruk av stedlige massar"
+    },
+    {
+     "kode": "KM5659",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5688",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 anleggsrøyrleggjarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 anleggsrøyrleggjarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 anleggsrøyrleggjarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fire virkedagar."
+   ]
+  }
+ ]
+}

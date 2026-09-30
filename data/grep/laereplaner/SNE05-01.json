@@ -1,0 +1,288 @@
+{
+ "kode": "SNE05-01",
+ "tittel": "Læreplan i snikkarfaget med fordjupingsområde – modulstrukturert opplæring for vaksne",
+ "spraak": "nno",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV788",
+   "tittel": "Kompetansemål og vurdering planleggjing",
+   "fag": [
+    "SNE5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10543",
+     "tekst": "planleggje å produsere produkt, arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektivitet og verknader for miljøet"
+    },
+    {
+     "kode": "KM10544",
+     "tekst": "utarbeide produksjonsplanar, ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM10545",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM10546",
+     "tekst": "vurdere ulike faktorar som kan redusere varmeutvikling og brannsmitte"
+    },
+    {
+     "kode": "KM10547",
+     "tekst": "identifisere ulike typer teknikker og stilarter og gjøre rede for hvordan tradisjonelle arbeidsmetoder tar vare på fagets egenart og kulturarv"
+    },
+    {
+     "kode": "KM10548",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar, målestokk og trigonometri til å berekne lengder, vinklar og areal i problemløysing innanfor bygg- og anleggsfag"
+    },
+    {
+     "kode": "KM10549",
+     "tekst": "undersøkje eigenskapane til ulike materiale og overflatebehandlingar og vurdere bruk av desse i eit berekraftsperspektiv"
+    },
+    {
+     "kode": "KM10550",
+     "tekst": "gjere greie for argumentasjonen til andre og bruke og følgje opp innspel frå andre i samtalar og diskusjonar om yrkesrelevante emne"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen planleggjing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen planleggjing. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i planleggjing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV789",
+   "tittel": "Kompetansemål og vurdering produksjon og overflatebehandling",
+   "fag": [
+    "SNE5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10551",
+     "tekst": "velje og bruke ulike limtypar og samanføyingsteknikkar og vurdere korleis valet påverkar styrken og samanføyinga i konstruksjonen"
+    },
+    {
+     "kode": "KM10552",
+     "tekst": "framstille produkt, vurdere konsekvensar av fukt i materialane og luftfukt i bygget og settje i verk tiltak"
+    },
+    {
+     "kode": "KM10553",
+     "tekst": "gjere greie for produksjon av innreiing, dører, vindauge og trapper og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM10554",
+     "tekst": "velje produksjonsmetode, stille inn og programmere maskiner etter arbeidsoppdraget og reflektere over konsekvensar av vald metode"
+    },
+    {
+     "kode": "KM10555",
+     "tekst": "forbehandle og overflatebehandle ulike produkt og vurdere korleis valet av produkt og metodar påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM10556",
+     "tekst": "kontrollere, pakke, emballere og kvalitetssikre ulike typar produkt for transport og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM10557",
+     "tekst": "vurdere behov for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM10558",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM10559",
+     "tekst": "drøfte skogens betydning som ressurs og råstoffkilde og reflektere over miljøkonsekvenser av hogst"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen produksjon og overflatebehandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen produksjon og overflatebehandling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i produksjon og overflatebehandling. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV790",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerheit og arbeidsmiljø",
+   "fag": [
+    "SNE5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10560",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og settje i verk tiltak"
+    },
+    {
+     "kode": "KM10561",
+     "tekst": "bruke fagterminologi i kommunikasjon med kollegaer og andre yrkesutøvarar og drøfte løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM10562",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM10563",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM10564",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM10565",
+     "tekst": "vurdere risiko og følgje rutinar for å stroppe, anhuke og gi signal ved lasting og lossing"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen helse, miljø og sikkerheit og arbeidsmiljø når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen helse, miljø og sikkerheit og arbeidsmiljø. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i helse, miljø, sikkerheit og arbeidsmiljø . Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV791",
+   "tittel": "Kompetansemål og vurdering fordjuping i innreiing",
+   "fag": [
+    "SNE5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10566",
+     "tekst": "kartleggje forhold og ta mål på monteringsstaden og gjere greie for korleis elektriske installasjonar, ventilasjon, røyranlegg og byggmessige avvik påverkar konstruksjonen og prosessen fram til ferdig montert produkt"
+    },
+    {
+     "kode": "KM10567",
+     "tekst": "designe, teikne og konstruere innreiingar digitalt og vurdere estetisk uttrykk, funksjonalitet og kor lett innreiinga er å montere"
+    },
+    {
+     "kode": "KM10568",
+     "tekst": "velje materialar, beslag, festemiddel og samanføyingsmetodar og drøfte faktorar som sikrar funksjonen og bereevna i konstruksjonane"
+    },
+    {
+     "kode": "KM10569",
+     "tekst": "montere og ferdigstille innreiingar i samsvar med spesifikasjon og drøfte faktorar som sikrar design, funksjon, forankring og estetisk uttrykk"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen fordjuping i innreiing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen fordjuping i innreiing. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i innreiing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV792",
+   "tittel": "Kompetansemål og vurdering fordjuping i dør og vindauge",
+   "fag": [
+    "SNE5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10570",
+     "tekst": "velje matarialar og vurdere kva faktorar som påverkar eigenskapane, levetida, styrken og stabiliteten, sikkerheita og det estetiske uttrykket til sluttproduktet"
+    },
+    {
+     "kode": "KM10571",
+     "tekst": "drøfte ulike faktorar som påverkar isoleringsevna, lyd, lys, vask og risiko for knusing"
+    },
+    {
+     "kode": "KM10572",
+     "tekst": "velje glas og konstruksjonsmetode i samsvar med spesifikasjon om isoleringsevne og settje inn glas"
+    },
+    {
+     "kode": "KM10573",
+     "tekst": "reflektere over korleis montering av beslag og glas medverkar til å redusere brann og innbrot, velje beslag og sette sammen karm og ramme"
+    },
+    {
+     "kode": "KM10574",
+     "tekst": "velje konstruksjon og drøfte eigenskapar ved konstruksjonen som tilfredsstiller krava til rømmingsveg"
+    },
+    {
+     "kode": "KM10575",
+     "tekst": "velje og bruke impregneringsmetode og vurdere kva faktorar som påverkar levetida til produktet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen fordjuping i dør og vindauge når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen fordjuping i dør og vindauge. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i dør- og vindauge . Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV793",
+   "tittel": "Kompetansemål og vurdering fordjuping i trapp",
+   "fag": [
+    "SNE5Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10576",
+     "tekst": "byggje trapp i samsvar med gjeldande regelverk og drøfte korleis avvik i bygningskonstruksjonen kan påverke sluttproduktet"
+    },
+    {
+     "kode": "KM10577",
+     "tekst": "velje og bruke ulike måleverktøy, måle trappeopningar og vurdere korleis lengd, breidd, høgd og vinklar påverkar trappekonstruksjonar"
+    },
+    {
+     "kode": "KM10578",
+     "tekst": "teikne og konstruere trapp digitalt og vurdere kva faktorar som optimaliserer funksjonen, påverkar designet og hindrar ulukker"
+    },
+    {
+     "kode": "KM10579",
+     "tekst": "velje materialar, festemiddel og samanføyingsmetodar og drøfte faktorar som sikrar styrken og funksjonen til konstruksjonen"
+    },
+    {
+     "kode": "KM10580",
+     "tekst": "velje og bruke råvarer til trapper og vurdere kva faktorar som påverkar eigenskapane, levetida, styrken, sikkerheita og det estetiske uttrykket til sluttproduktet"
+    },
+    {
+     "kode": "KM10581",
+     "tekst": "montere og ferdigstille trapper i samsvar med spesifikasjon og drøfte faktorar som påverkar konstruksjon og styrken i trappa"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen fordjuping i trapp når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen fordjuping i trapp. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i trapp. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle ha bestått ein skriftleg eksamen som er laga ut frå læreplanen i vg3 snikkarfaget med fordjupningsområde (SNE03-01). Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 snikkarfaget med fordjupningsområde - modulstrukturert opplæring for vaksne skal avsluttast med ei sveineprøve. Sveineprøva lagast ut frå læreplanen i vg3 snikkarfaget med fordjupningsområde (SNE03-01). Alle skal opp til sveineprøva som skal gjennomførast over minst fem vyrkedagar ."
+   ]
+  }
+ ]
+}

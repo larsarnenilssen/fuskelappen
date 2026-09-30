@@ -1,0 +1,100 @@
+{
+ "kode": "IOV03-02",
+ "tittel": "Læreplan i vg3 industriell overflatebehandling",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV696",
+   "tittel": "Kompetansemål og vurdering vg3 industriell overflatebehandling",
+   "fag": [
+    "IOV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8956",
+     "tekst": "planlegge, beskrive og gjennomføre eget arbeid i tråd med dokumentasjon, metoder og prosesser og standarder, og evaluere arbeidet i etterkant"
+    },
+    {
+     "kode": "KM8957",
+     "tekst": "klargjøre komponenter for overflatebehandling og vurdere og velge behandlingsmetode basert på tegninger og tekniske spesifikasjoner"
+    },
+    {
+     "kode": "KM8958",
+     "tekst": "vurdere og velge opphengingsmetoder for overflateprosesser ut fra anleggets kapasitet og kvalitetskrav"
+    },
+    {
+     "kode": "KM8959",
+     "tekst": "benytte verneutstyr i henhold til bedriftens rutiner og reflektere over konsekvenser ved brudd på rutiner"
+    },
+    {
+     "kode": "KM8960",
+     "tekst": "finne og bruke sikkerhetsdatablader fra bedriftens stoffkartotek i eget arbeid"
+    },
+    {
+     "kode": "KM8961",
+     "tekst": "håndtere stoffer og avfall i tråd med lover og forskrifter"
+    },
+    {
+     "kode": "KM8962",
+     "tekst": "gjøre rede for gjeldende bransjenormer og standarder for bedriftens beleggingsprosesser"
+    },
+    {
+     "kode": "KM8963",
+     "tekst": "gjøre rede for belegg og beleggingsprosesser med pulver- og våtlakkering, med behandling i kjemiske og elektrolytiske bad, i metallsmelte og med sprøyting av metall og keramer"
+    },
+    {
+     "kode": "KM8964",
+     "tekst": "gjøre rede for hvordan råvarer, forbehandlingskjemikalier og driftsparametre virker inn på beleggskvaliteten og det ytre miljøet"
+    },
+    {
+     "kode": "KM8965",
+     "tekst": "velge forbehandlingsprosess, stille inn prosessparametre og overvåke og optimalisere beleggingsprosessene"
+    },
+    {
+     "kode": "KM8966",
+     "tekst": "planlegge og gjennomføre arbeid i henhold til tegninger, prosedyrer, spesifikasjoner og standarder"
+    },
+    {
+     "kode": "KM8967",
+     "tekst": "kontrollere og vurdere beleggskvaliteten visuelt, og gjennom bruk av tester og måleverktøy"
+    },
+    {
+     "kode": "KM8968",
+     "tekst": "dokumentere utført overflatebehandlingsprosess, analyseresultater og vedlikehold"
+    },
+    {
+     "kode": "KM8969",
+     "tekst": "bruke bedriftens systemer for rapportering av farlige forhold og avvik i produksjonen og reflektere over konsekvenser"
+    },
+    {
+     "kode": "KM8970",
+     "tekst": "gjennomføre rutinemessig tilstandskontroll på maskiner og utstyr, og vedlikeholde eller bytte ut tilhørende komponenter"
+    },
+    {
+     "kode": "KM8971",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 industriell overflatebehandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 industriell overflatebehandling. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra planen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 industriell overflatebehandling skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

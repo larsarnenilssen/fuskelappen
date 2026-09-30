@@ -1,0 +1,149 @@
+{
+ "kode": "SIG03-03",
+ "tittel": "Læreplan i vg3 signalmontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2026-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV996",
+   "tittel": "Kompetansemål og vurdering signalmontørfaget",
+   "fag": [
+    "SIG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12917",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i signalmontørfaget individuelt og i samarbeid med andre i henhold til gjeldende regelverk, bedriftens internkontrollsystem og begrunne de valg som er gjort"
+    },
+    {
+     "kode": "KM12918",
+     "tekst": "utføre arbeidet i henhold til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, benytte gode ergonomiske arbeidsstillinger, påkrevd verneutstyr og forklare hvordan sikkerhetsarbeid kan forebygge skader og ulykker"
+    },
+    {
+     "kode": "KM12919",
+     "tekst": "følge infrastrukturforvalters gjeldende bestemmelser for trafikksikkerhet ved arbeid i spor for å ivareta egen og andres sikkerhet og forklare prinsipper for bestemmelser om trafikksikkerhet"
+    },
+    {
+     "kode": "KM12900",
+     "tekst": "utføre kontrollrutiner etter utført arbeid og følge infrastrukturforvalters gjeldende regelverk for signalanlegget og forklare prinsipper for oppbyggingen av kontrollrutiner"
+    },
+    {
+     "kode": "KM12901",
+     "tekst": "gjøre rede for sikkerhetskritiske prinsipper, oppbygging, virkemåte, forrigling, hastighetsovervåking og funksjon til eldre signalsystemer som relebaserte og programvarebaserte sikrings- og veisikringsanlegg ved å bruke aktuell dokumentasjon"
+    },
+    {
+     "kode": "KM12902",
+     "tekst": "drifte og vedlikeholde ett radiobasert signalsystem på en sikker og effektiv måte og forklare sikkerhetskritiske prinsipper, oppbygging, virkemåte, forrigling, hastighetsovervåking og funksjon til ERTMS og CBTC ved å bruke aktuell dokumentasjon"
+    },
+    {
+     "kode": "KM12903",
+     "tekst": "installere, drifte og vedlikeholde installasjoner for optiske signaler og forklare oppbyggingen av og grensesnittet mot forriglingsutrustning og hastighetsovervåkning"
+    },
+    {
+     "kode": "KM12904",
+     "tekst": "installere, drifte og vedlikeholde signalanleggets spenning- og fordelingssystem fra inntak til belastning med tilhørende jordingssystem og forklare funksjon og virkemåte til disse systemer"
+    },
+    {
+     "kode": "KM12906",
+     "tekst": "installere, drifte og vedlikeholde statiske omformere, avbruddsfri strømforsyningsanlegg, aggregater og batterianlegg og forklare funksjon og virkemåte basert på like- og vekselspenning, spenningsnivåer og frekvenser for ulike signalanlegg"
+    },
+    {
+     "kode": "KM12907",
+     "tekst": "installere og vedlikeholde føringsvei, ledning, kabel og vern i signalanlegget, gjøre rede for hvordan forlegning påvirker strømføringsevne og transmisjonsegenskaper og vurdere dimensjonering av valgt ledning, kabel og vern og tiltak for å redusere elektromagnetisk støy"
+    },
+    {
+     "kode": "KM12908",
+     "tekst": "skjøte og terminere ulike kabler og andre ledende forbindelser i et signalanlegg ved bruk av egnet metode, verktøy, pressutstyr og tiltrekkingsmoment, og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM12914",
+     "tekst": "drifte og vedlikeholde signalanleggets elektroniske kommunikasjonsnett og forklare prinsipper for informasjonssikkerhet og kvalitet"
+    },
+    {
+     "kode": "KM12893",
+     "tekst": "installere ID-plugg for å konfigurere objektkontroller, kontrollere funksjon til objekt og drøfte viktigheten av sikkerhetskritiske kontroller"
+    },
+    {
+     "kode": "KM12894",
+     "tekst": "installere, drifte og vedlikeholde ulike målesystemer og forklare funksjon og virkemåte til disse, og gjøre rede for sikker dataoverføring, innsamling, analyse og presentasjon av data"
+    },
+    {
+     "kode": "KM12896",
+     "tekst": "installere, drifte og vedlikeholde sporsperre og drivmaskiner for sporveksel og sporsperre, og vurdere virkemåte opp mot de sikkerhetskritiske prinsipper og gjøre rede for sporvekseloppvarming"
+    },
+    {
+     "kode": "KM12905",
+     "tekst": "installere, drifte og vedlikeholde ulike typer deteksjonssystemer for rullende materiell, og forklare hvordan kjørestrøm- og returstrømssystemer påvirker deteksjonssystemer og hvordan sikkert arbeid skal utføres nær ved høyspenningsanlegg"
+    },
+    {
+     "kode": "KM12897",
+     "tekst": "gjøre rede for oppbygging og virkemåte av tverrfaglige jordingssystemer, isolerte skinneskjøter, impedanser, sugetransformatorer og autotransformatorer og drøfte hvordan feil i disse systemer kan påvirke signalanleggene"
+    },
+    {
+     "kode": "KM12915",
+     "tekst": "installere, programmere, drifte og vedlikeholde baliser for posisjonskontroll og hastighetsovervåkning og forklare virkemåte og funksjoner til disse"
+    },
+    {
+     "kode": "KM12916",
+     "tekst": "drifte, vedlikeholde og kontrollere fjernstyringsanlegg og gjøre rede for funksjoner for styring og indikering i fjernstyringsanlegget"
+    },
+    {
+     "kode": "KM12913",
+     "tekst": "bruke mekaniske og elektroniske betjeningsanlegg for drift, vedlikehold og kontroll av signalanlegg og forklare oppbygging og virkemåte til betjeningsanleggene"
+    },
+    {
+     "kode": "KM12895",
+     "tekst": "gjøre rede for brukergrensesnittet mellom signalanleggene og kjørende personal i forbindelse med togets ombordutrustning"
+    },
+    {
+     "kode": "KM12910",
+     "tekst": "utføre systematisk feilsøking i signalanlegg ved bruk av ulike instrumenter, system for overvåkning av tilstand og forklare konsekvenser av feilkilder i et signalanlegg"
+    },
+    {
+     "kode": "KM12909",
+     "tekst": "anvende ulike manuelle og digitale tegninger, skjemaer og annen dokumentasjon knyttet til arbeidsoppdrag i signalanlegg"
+    },
+    {
+     "kode": "KM12912",
+     "tekst": "gi brukere og andre fagfolk veiledning om signalanlegget med bruk av korrekt brukertilpasset fagspråk"
+    },
+    {
+     "kode": "KM12898",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12911",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12899",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12920",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i signalmontørfaget når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktør og lærlingene skal være i dialog om lærlingenes utvikling i signalmontørfaget. Lærlingen skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke rådene for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen varer i 6 timer og utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, i tillegg ha bestått en tverrfaglig skriftlig eksamen laget ut ifra læreplan i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Opplæringen i vg3 signalmontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tolv virkedager."
+   ]
+  }
+ ]
+}

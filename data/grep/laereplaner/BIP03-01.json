@@ -1,0 +1,128 @@
+{
+ "kode": "BIP03-01",
+ "tittel": "Læreplan i vg3 bilpleiefaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV618",
+   "tittel": "Kompetansemål og vurdering vg3 bilpleiefaget",
+   "fag": [
+    "BIP3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7227",
+     "tekst": "velje og bruke verne- og sikkerheitsutstyr ut frå arbeidsoppdrag og reflektere over korleis ulike arbeidsstillingar påverkar kroppen fysisk"
+    },
+    {
+     "kode": "KM7242",
+     "tekst": "vurdere risikoen ved arbeidsoppdrag i tråd med kvalitetskontrollsystemet til bedrifta"
+    },
+    {
+     "kode": "KM7241",
+     "tekst": "oppbevare, bruke og avhende kjemikaliar og anna spesialavfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM8312",
+     "tekst": "forstå og nytte produkt- og sikkerheitsdatablad"
+    },
+    {
+     "kode": "KM7240",
+     "tekst": "nytte og halde ved like verktøy, maskiner og utstyr"
+    },
+    {
+     "kode": "KM7239",
+     "tekst": "registrere avvik og skrive avviksrapportar"
+    },
+    {
+     "kode": "KM7238",
+     "tekst": "reflektere over sikkerheitsprosedyrar ved handtering av ein skadd bil med alternative drivkjelder"
+    },
+    {
+     "kode": "KM7237",
+     "tekst": "forklare aktive og passive sikkerheitssystem og tilpasse arbeidet etter systema"
+    },
+    {
+     "kode": "KM7236",
+     "tekst": "rettleie kundar og følgje rutinane for kundebehandling og fagetiske normer i bedrifta"
+    },
+    {
+     "kode": "KM8313",
+     "tekst": "vurdere og dokumentere kvaliteten på utført arbeid"
+    },
+    {
+     "kode": "KM7235",
+     "tekst": "reflektere over korleis ein sjølv kan bidra til godt arbeidsmiljø og kvalitet i utført arbeid"
+    },
+    {
+     "kode": "KM7234",
+     "tekst": "utføre bilpleie i tråd med reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM7233",
+     "tekst": "tileigne seg produktkunnskap til å velje rett produkt til ulike typar behandlingar og utbetringar av interiør og eksteriør"
+    },
+    {
+     "kode": "KM7232",
+     "tekst": "velje og bruke utbetringsmetodar og pleieprodukt ut frå omsyn til økonomi, miljø og sosiale forhold"
+    },
+    {
+     "kode": "KM7228",
+     "tekst": "velje reinhaldsmetodar og gjennomføre reinhald for ulike typar overflatemateriale utvendig og innvendig på køyretøy og ulike objekt"
+    },
+    {
+     "kode": "KM7231",
+     "tekst": "velje arbeidsmetode og utføre overflatebehandling etter tilvisingane frå produsenten og for å beskytte overflater innvendig og utvendig på køyretøyet eller objektet"
+    },
+    {
+     "kode": "KM10712",
+     "tekst": "gjere greie for lakkoppbygging på ulike overflater og identifisere ulike typar overflatedefektar"
+    },
+    {
+     "kode": "KM10713",
+     "tekst": "utføre småskadereparasjon av skadet overflate på lakk, påføre fyllmaterialer og utføre lakkutbetring"
+    },
+    {
+     "kode": "KM10714",
+     "tekst": "utføre utbetring av skadd overflate på interiør"
+    },
+    {
+     "kode": "KM10711",
+     "tekst": "vurdere og reparere ulike skadar på glass"
+    },
+    {
+     "kode": "KM10710",
+     "tekst": "utbetre steinskottskadar på køyretøyets frontglass"
+    },
+    {
+     "kode": "KM7243",
+     "tekst": "demontere og montere ulike komponentar utvendig og innvendig på køyretøyet eller objektet"
+    },
+    {
+     "kode": "KM7244",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 bilpleiefaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 bilpleiefaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 bilpleiefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

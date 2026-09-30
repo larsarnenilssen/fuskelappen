@@ -1,0 +1,205 @@
+{
+ "kode": "PRT05-01",
+ "tittel": "Læreplan i produksjonsteknikkfaget – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV816",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerhet",
+   "fag": [
+    "PRT5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10769",
+     "tekst": "bruke maskiner og utstyr til å bearbeide aktuelle materialer i tråd med gjeldende helse-, miljø- og sikkerhetsrutiner og sørge for orden og renhold på arbeidsplassen"
+    },
+    {
+     "kode": "KM10770",
+     "tekst": "beskrive og reflektere over betydningen av resirkulering og materialgjenvinning"
+    },
+    {
+     "kode": "KM10771",
+     "tekst": "anvende sikkerhetsdatablad og andre typer kjemikaliedokumentasjon og utføre risikoanalyse for kjemikalier som brukes på arbeidsplassen"
+    },
+    {
+     "kode": "KM10772",
+     "tekst": "gjennomføre en risikoanalyse, reflektere over resultatet, registrere avvik og foreslå tiltak"
+    },
+    {
+     "kode": "KM10773",
+     "tekst": "behandle biprodukter i tråd med bedriftens system for kildesortering og avfallshåndtering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen helse, miljø og sikkerhet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen helse, miljø og sikkerhet. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i helse, miljø og sikkerhet. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV817",
+   "tittel": "Kompetansemål og vurdering produksjon og drift",
+   "fag": [
+    "PRT5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10774",
+     "tekst": "utarbeide og bruke en produksjonsplan ut fra en produksjonsordre"
+    },
+    {
+     "kode": "KM10775",
+     "tekst": "gjennomføre oppstarts- og nedstengingsprosedyrer på produksjonsmaskiner og -utstyr og stille inn produksjonsparametre"
+    },
+    {
+     "kode": "KM10776",
+     "tekst": "sette i drift og optimalisere produksjonsprosessen ut fra hensynet til effektivitet og bærekraftig ressursutnyttelse"
+    },
+    {
+     "kode": "KM10777",
+     "tekst": "registrere produksjonsdata i bedriftens produksjonsstyringssystem"
+    },
+    {
+     "kode": "KM10778",
+     "tekst": "tolke og bruke bedriftens kvalitetsstyringssystem og gjennomføre kvalitetstester og kvalitetskontroller"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen produksjon og drift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen produksjon og drift. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i produksjon og drift. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV820",
+   "tittel": "Kompetansemål og vurdering kvalitet",
+   "fag": [
+    "PRT5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10788",
+     "tekst": "bruke og velge målemetode og måleutstyr i samsvar med arbeidsoppgaver og vurdere måleresultater i henhold til toleranser"
+    },
+    {
+     "kode": "KM10789",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver ut fra produksjonsordrer, kvalitetskrav og gjeldende retningslinjer"
+    },
+    {
+     "kode": "KM10790",
+     "tekst": "tolke og bruke bedriftens kvalitetsstyringssystem og gjennomføre kvalitetstester og kvalitetskontroller"
+    },
+    {
+     "kode": "KM10791",
+     "tekst": "registrere produksjonsdata i bedriftens produksjonsstyringssystem"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen kvalitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen kvalitet. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i kvalitet. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV818",
+   "tittel": "Kompetansemål og vurdering forebyggende vedlikehold",
+   "fag": [
+    "PRT5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10781",
+     "tekst": "gjennomføre forebyggende vedlikehold, inspeksjoner og feilsøking etter instruks, og rapportere feil og avvik"
+    },
+    {
+     "kode": "KM10782",
+     "tekst": "gjennomføre og dokumentere periodisk vedlikehold etter leverandørens spesifikasjoner og interne prosedyrer"
+    },
+    {
+     "kode": "KM10779",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM10780",
+     "tekst": "lese og sammenfatte faglig innhold fra engelskspråklig dokumentasjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen forebyggende vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen forebyggende vedlikehold. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i forebyggende vedlikehold. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV819",
+   "tittel": "Kompetansemål og vurdering forbedringsarbeid, økonomi og bærekraft",
+   "fag": [
+    "PRT5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10785",
+     "tekst": "vurdere produksjon og omstilling knyttet til forbedring, lønnsomhet og miljø"
+    },
+    {
+     "kode": "KM10786",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    },
+    {
+     "kode": "KM10787",
+     "tekst": "reflektere over hvordan bedriftens valg knyttet til produksjonsprosessen kan påvirke bærekraften til bedriften og samfunnet"
+    },
+    {
+     "kode": "KM10783",
+     "tekst": "innhente data fra praksisfeltet, gjøre overslag og beregninger og lage hensiktsmessige framstillinger av resultatene og presentere disse"
+    },
+    {
+     "kode": "KM10784",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen forbedringsarbeid, økonomi og bærekraft når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen forbedringsarbeid, økonomi og bærekraft. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i forbedringsarbeid, økonomi og bærekraft. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 produksjonsteknikkfaget (PRT03-02). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i produksjonsteknikkfaget - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 produksjonsteknikkfaget (PRT03-02). Alle skal opp til fagprøven som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "kode": "AVI04-02",
+ "tittel": "Læreplan i avionikerfaget – opplæring i bedrift",
+ "spraak": "nob",
+ "fastsatt": "2022-09-19",
+ "gyldigFra": "2023-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV773",
+   "tittel": "Kompetansemål og vurdering vg3 avionikerfaget - opplæring i bedrift",
+   "fag": [
+    "AVI4Z02"
+   ],
+   "trinn": [
+    "Bedrift"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10321",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene fagmessig og i overensstemmelse med kvalitetssikring, godkjent internkontroll og godkjent luftdyktighetsdokumentasjon og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM10322",
+     "tekst": "utføre arbeidet i henhold til internkontrollsystemet, basert på gjeldende nasjonalt og internasjonalt regelverk om kontinuerlig luftdyktighet"
+    },
+    {
+     "kode": "KM10323",
+     "tekst": "arbeide etter ergonomiske prinsipper og gjøre rede for hvordan sikkerhetsarbeid kan forebygge ulykker og skader, og kunne utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM10324",
+     "tekst": "vedlikeholde, reparere og modifisere og gjøre rede for hvordan riktig utførelse av arbeidet har betydning for energibruken for et luftfartøy i operasjon"
+    },
+    {
+     "kode": "KM10325",
+     "tekst": "feilsøke, teste og diagnostisere ved hjelp av ulike typer testutstyr og vurdere resultatet opp mot beregnede og forventede verdier, dokumentere resultatet og forklare mulige feilkilder"
+    },
+    {
+     "kode": "KM10326",
+     "tekst": "utføre arbeidet etter gjeldende prosedyrer for å forebygge skader på elektrostatisk sensitivt utstyr og forklare konsekvensene av mangelfull ESD-sikring og jordingsforbindelse"
+    },
+    {
+     "kode": "KM10327",
+     "tekst": "lodde og utføre terminering i samsvar med gjeldende prosedyrer og standarder og gjøre rede for materialenes kjemiske og mekaniske egenskaper"
+    },
+    {
+     "kode": "KM10328",
+     "tekst": "håndtere kjemikalier på en korrekt måte og vurdere faremomenter ved bruk"
+    },
+    {
+     "kode": "KM10329",
+     "tekst": "velge og bruke verktøy og måleutstyr som er tilpasset arbeidsoppgaven, og gjøre rede for krav til nøyaktighet, vedlikehold og kalibrering av måleutstyret"
+    },
+    {
+     "kode": "KM10330",
+     "tekst": "utføre låsing av skruer, bolter, muttere og elektriske plugger etter gjeldende prosedyrer og forklare konsekvenser av mangelfull sikring"
+    },
+    {
+     "kode": "KM10331",
+     "tekst": "reflektere over og ta hensyn til menneskelige faktorers betydning for flysikkerheten i forbindelse med vedlikeholdsarbeid"
+    },
+    {
+     "kode": "KM10332",
+     "tekst": "anvende vedlikeholdsorganisasjonens egenkontrollsystem og forklare prinsippene i egenkontrollsystemet"
+    },
+    {
+     "kode": "KM10333",
+     "tekst": "inn- og utmontere komponenter, konfigurere og oppdatere aktuell programvare, merke komponenter og vurdere retur"
+    },
+    {
+     "kode": "KM10334",
+     "tekst": "signere for og vurdere eget utført vedlikehold, benytte tilhørende luftdyktighetsdokumentasjon og sikre bruk av sporbart materiell"
+    },
+    {
+     "kode": "KM10335",
+     "tekst": "avdekke og rapportere avvik og farlige forhold og foreslå korrektive tiltak, og reflektere rundt hvordan dette kan øke sikkerheten og bidra til kontinuerlig forbedring"
+    },
+    {
+     "kode": "KM10336",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM10337",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellsbehandling"
+    },
+    {
+     "kode": "KM10338",
+     "tekst": "håndtere avfall etter eget arbeid og kjemikalier på en miljømessig, økonomisk og sikkerhetsmessig riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM10339",
+     "tekst": "dokumentere eget og andres arbeid med inspeksjon, vedlikehold, reparasjon og modifikasjon på luftfartøyers elektriske, elektroniske og digitale systemer og komponenter og diskutere faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 avionikerfaget – opplæring i bedrift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 avionikerfaget – opplæring i bedrift. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått de skriftlige eksamenene i programfagene på vg2 flyfag som gjelder for vg3 avionikerfaget - opplæring i bedrift og de skriftlige eksamenene i programfagene på vg3 avionikerfaget - opplæring i skole. Eksamen utarbeides lokalt og sensureres lokalt.",
+    "Opplæringen i vg3 avionikerfaget - opplæring i bedrift skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

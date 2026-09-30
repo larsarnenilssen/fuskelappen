@@ -1,0 +1,210 @@
+{
+ "kode": "RLF02-01",
+ "tittel": "Læreplan i vg2 røyrleggjar",
+ "spraak": "nno",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV340",
+   "tittel": "Kompetansemål og vurdering bransjelære",
+   "fag": [
+    "RLF2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3575",
+     "tekst": "gjere greie for kvalitetssikringssystem, gjennomføre arbeid i tråd med gjeldande krav for helse, miljø og sikkerheit og reflektere over konsekvensane av å ikkje følgje regelverket"
+    },
+    {
+     "kode": "KM3602",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobb-analyse og rapportere avvik"
+    },
+    {
+     "kode": "KM3601",
+     "tekst": "gjere greie for korleis varme arbeider kan forårsake brann, iverksette sikkerhetstiltak og hindre brann"
+    },
+    {
+     "kode": "KM3600",
+     "tekst": "planleggje å installere røyrleidningar etter teikningar og beskrivingar ved å bruke ulike prosjektverktøy og arbeide etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM3595",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk, reflektere over konsekvensane av feilhandtering og iverksette tiltak"
+    },
+    {
+     "kode": "KM3594",
+     "tekst": "reflektere over betydninga av orden på byggje- og anleggsplassar, følgje rutinar for dette og lage ein avfallsplan"
+    },
+    {
+     "kode": "KM3592",
+     "tekst": "bruke og halde ved like arbeidsutstyr, verktøy og maskiner og vurdere konsekvensane for kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM3593",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av lyd- og støveksponering"
+    },
+    {
+     "kode": "KM3599",
+     "tekst": "feste materiale i tre, gips, metall, lettbetong og betong ved å bruke ulike teknikkar og festemateriell, og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM3598",
+     "tekst": "bore hol i konstruksjonar etter gjeldande regelverk og vurdere kva faktorar som kan svekkje konstruksjonen"
+    },
+    {
+     "kode": "KM3597",
+     "tekst": "velje materiale og røyr til ulike anleggstypar og gjere greie for korleis produkteigenskapane påverkar røyrsystemet"
+    },
+    {
+     "kode": "KM3596",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM3591",
+     "tekst": "planleggje prosjekt, berekne kostnader og drøfte faktorar som påverkar lønnsemda til bedrifta"
+    },
+    {
+     "kode": "KM3590",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva rettar og plikter arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget bransjelære når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire eller alle programfaga. Læraren og elevane skal vere i dialog om utviklinga til elevane i programfaget bransjelære. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget bransjelære ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget bransjelære basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV341",
+   "tittel": "Kompetansemål og vurdering sanitærteknikk",
+   "fag": [
+    "RLF2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3589",
+     "tekst": "lodde og føye saman røyr med ulike metodar og drøfte kva konsekvensar samanføyingsmetoden har for sluttresultatet"
+    },
+    {
+     "kode": "KM3587",
+     "tekst": "teikne røyrsystem ved hjelp av analoge og digitale teikneverktøy og dimensjonere røyra med ein forenkla metode"
+    },
+    {
+     "kode": "KM3586",
+     "tekst": "dimensjonere utvendige stikkleidningar for spillvatn, overvatn og vatn med ein forenkla metode og gjere greie for reglane for tilkopling til kommunale røyr"
+    },
+    {
+     "kode": "KM3585",
+     "tekst": "beskrive oppbygginga av private vass- og avløpsanlegg"
+    },
+    {
+     "kode": "KM3584",
+     "tekst": "byggje og trykkprøve skjulte og opne sanitæranlegg og reflektere over kva ulike sanitæranlegg har å seie for vasskadesikkerheita"
+    },
+    {
+     "kode": "KM3583",
+     "tekst": "montere sanitærutstyr og gjere greie for ekspansjon og tryggleik i anlegget"
+    },
+    {
+     "kode": "KM3582",
+     "tekst": "gjennomføre enkel isolering av sanitæranlegg og drøfte korleis kondens påverkar byggkonstruksjonen"
+    },
+    {
+     "kode": "KM3581",
+     "tekst": "beskrive korleis eit sprinklaranlegg fungerer"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget sanitærteknikk når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire eller alle programfaga. Læraren og elevane skal vere i dialog om utviklinga til elevane i programfaget sanitærteknikk. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget sanitærteknikk ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget sanitærteknikk basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV342",
+   "tittel": "Kompetansemål og vurdering varmeteknikk",
+   "fag": [
+    "RLF2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3580",
+     "tekst": "gjere greie for ulike vassborne energisystem og drøfte energisparande tiltak og alternative fornybare energikjelder"
+    },
+    {
+     "kode": "KM3579",
+     "tekst": "sveise og føye saman røyr med ulike metodar, vurdere branntryggleik og gjennomføre tiltak"
+    },
+    {
+     "kode": "KM3578",
+     "tekst": "teikne eit varmeanlegg, gjennomføre ei forenkla utrekning av varmebehovet og dokumentere dette"
+    },
+    {
+     "kode": "KM3577",
+     "tekst": "byggje og trykkprøve eit enkelt vassbore varmeanlegg, gjere greie for korleis komponentane i eit varmeanlegg verkar, og gjennomføre regulering av vassmengdene"
+    },
+    {
+     "kode": "KM3603",
+     "tekst": "fylle opp og starte eit vassbore varmeanlegg og drøfte konsekvensane for vasskvaliteten og driftssikkerheita i anlegget"
+    },
+    {
+     "kode": "KM3576",
+     "tekst": "gjennomføre isolering av eit varmeanlegg og drøfte korleis ulike typar isolering kan vere energisparande"
+    },
+    {
+     "kode": "KM3588",
+     "tekst": "utforske korleis automatikk og styring fungerer på varmeanlegg"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget varmeteknikk når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire eller alle programfaga. Læraren og elevane skal vere i dialog om utviklinga til elevane i programfaget varmeteknikk. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget varmeteknikk ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget varmeteknikk basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Bransjelære: Eleven skal ha éin standpunktkarakter.",
+    "Sanitærteknikk: Eleven skal ha éin standpunktkarakter.",
+    "Varmeteknikk: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Bransjelære, sanitærteknikk og varmeteknikk: Eleven skal opp til ein tverrfagleg praktisk eksamen hvor de felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha ein forebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Bransjelære: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Sanitærteknikk: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Varmeteknikk: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Bransjelære, sanitærteknikk og varmeteknikk: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

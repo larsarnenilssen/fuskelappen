@@ -1,0 +1,102 @@
+{
+ "kode": "POS02-02",
+ "tittel": "Læreplan i sosialkunnskap",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV892",
+   "tittel": "Kompetansemål og vurdering sosialkunnskap",
+   "fag": [
+    "POS2Z01"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11647",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM11646",
+     "tekst": "vurdere ulike samfunnsvitenskapelige metoder og teorier og bruke disse til å utforske egne problemstillinger og gjennomføre undersøkelser"
+    },
+    {
+     "kode": "KM11644",
+     "tekst": "gjøre rede for ulike institusjoner, politisk styring, prinsipper og verdier i velferdsstaten og drøfte utfordringer ved velferdsstatens framtid og bærekraft"
+    },
+    {
+     "kode": "KM11645",
+     "tekst": "drøfte årsaker til sosial ulikhet, marginalisering og utenforskap og vurdere konsekvenser for individ og samfunn"
+    },
+    {
+     "kode": "KM11648",
+     "tekst": "gjøre rede for ulike perspektiver på sosialisering og drøfte hvordan sosialiseringen har endret seg over tid"
+    },
+    {
+     "kode": "KM11649",
+     "tekst": "utforske ulike perspektiver på kjønn og identitet og reflektere over holdninger til egen og andres identitet"
+    },
+    {
+     "kode": "KM11650",
+     "tekst": "utforske sammenhenger mellom velferdsforskjeller og sosiale problemer og drøfte konsekvenser for individ og samfunn"
+    },
+    {
+     "kode": "KM11651",
+     "tekst": "gjøre rede for ulike typer sosiale problemer og vurdere forebyggende tiltak"
+    },
+    {
+     "kode": "KM11652",
+     "tekst": "utforske inkludering på ulike nivåer i samfunnet og vurdere tiltak som kan bidra til inkludering i arbeidslivet og velferdssamfunnet"
+    },
+    {
+     "kode": "KM11653",
+     "tekst": "vurdere hvordan menneskerettighetene har påvirket den norske velferdsstaten, og drøfte hvordan menneskerettighetene ivaretas i Norge"
+    },
+    {
+     "kode": "KM11654",
+     "tekst": "gjøre rede for sentrale behov i barne- og ungdomsårene og vurdere sammenhengen mellom behovsdekning, velferd og livsmestring"
+    },
+    {
+     "kode": "KM11655",
+     "tekst": "gjøre rede for ulike former for vold og trakassering og drøfte konsekvenser av vold og trakassering på individ- og samfunnsnivå"
+    },
+    {
+     "kode": "KM11656",
+     "tekst": "vurdere hvordan ulike kriser kan håndteres på individ- og samfunnsnivå"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i sosialkunnskap. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder og teorier og i utforskende arbeid med og refleksjon over ulike emner, problemstillinger og perspektiver, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse når de arbeider med spørsmål knyttet til sosiale problemer og velferdsutfordringer, og sammenhenger mellom sosialisering, behovsdekning, mangfold og livsmestring.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske ulike sider ved samfunnet og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i sosialkunnskap, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i sosialkunnskap."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter sosialkunnskap. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i sosialkunnskap basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Sosialkunnskap: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Sosialkunnskap: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Sosialkunnskap: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

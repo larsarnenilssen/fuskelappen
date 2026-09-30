@@ -1,0 +1,116 @@
+{
+ "kode": "SAL03-02",
+ "tittel": "Læreplan i vg3 salmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV647",
+   "tittel": "Kompetansemål og vurdering vg3 salmakerfaget",
+   "fag": [
+    "SAL3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7849",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7866",
+     "tekst": "vurdere, lage og tilpasse holdbare, sikre og bærekraftige salmakerprodukter etter brukernes og hestens anatomi og biomekanikk"
+    },
+    {
+     "kode": "KM7864",
+     "tekst": "utforske, gjøre rede for bruksområdene til ulike saler, seler og remtøy, i forskjellige grener av hestesporten og i ulike kulturer, og bruke dette i eget arbeid, i markedsføring, og i veiledning av kunder"
+    },
+    {
+     "kode": "KM7852",
+     "tekst": "utforske bruk av hest i sport og arbeid, hest og rytters biomekanikk og forutsetninger for fysisk arbeid og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7859",
+     "tekst": "samarbeide med kunden og andre faggrupper om valg av utstyr og tilpassing etter behov og fysiske forutsetninger for hest og rytter"
+    },
+    {
+     "kode": "KM7855",
+     "tekst": "utforske salmakerfagets historie, tradisjoner og utvikling og dagens trender i hestesporten og anvende kunnskap om dette i eget arbeid og markedsføring"
+    },
+    {
+     "kode": "KM7854",
+     "tekst": "eksperimentere med design, dekor, materialer, teknikker og ressursforvaltning og bruke denne kunnskapen i utvikling av nye produkter"
+    },
+    {
+     "kode": "KM7865",
+     "tekst": "velge og bruke ulike stopningsmaterialer, tilpasse stopningen til hesten og gjøre rede for hvordan valg av oppbygging og stopping av saler og seletøy påvirker resultatet"
+    },
+    {
+     "kode": "KM7863",
+     "tekst": "velge og bruke tradisjonelle håndverksteknikker ved reparasjoner og produksjon av salmakerprodukter"
+    },
+    {
+     "kode": "KM7862",
+     "tekst": "anvende hånd- og maskinsøm tilpasset materialet og produktets bruksområde og gjøre rede for hvordan presisjon og nøyaktighet påvirker ønsket resultat"
+    },
+    {
+     "kode": "KM7861",
+     "tekst": "velge ulike beslag ut fra bruksområder og egenskaper, montere disse og bruke ulike sammenføyningsteknikker på ulike materialer"
+    },
+    {
+     "kode": "KM7860",
+     "tekst": "ta mål, lage maler, og gjøre innprøvinger og tilpassinger av salmakerarbeider i samråd med kunden"
+    },
+    {
+     "kode": "KM7858",
+     "tekst": "velge og bruke egnede materialer til ulike produkter til dagens bruk av hest, kjenne materialenes bruksområder og vurdere dem med tanke på bærekraft, pris, kvalitet, sikkerhet og opprinnelse"
+    },
+    {
+     "kode": "KM7857",
+     "tekst": "utføre rengjøring, repearasjon og vedlikehold, farging og etterbehandling av ulike typer lær, materialer og hesteutstyr, og gjøre rede for hvordan ulike valg påvirker gjenbruk og holdbarhet"
+    },
+    {
+     "kode": "KM7856",
+     "tekst": "vurdere og utføre enkle reparasjoner i tre og metall ved restaurering og vedlikehold av tradisjonelt hesteutstyr og seletøy og ved skader på salbommer"
+    },
+    {
+     "kode": "KM7853",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7851",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7850",
+     "tekst": "velge hensiktsmessige ergonomiske arbeidsstillinger"
+    },
+    {
+     "kode": "KM7867",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr og følge gjeldende regelverk for helse, miljø og sikkerhet både på verkstedet og ute hos kunder"
+    },
+    {
+     "kode": "KM7868",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 salmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 salmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 salmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på sju til ni virkedager."
+   ]
+  }
+ ]
+}

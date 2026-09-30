@@ -1,0 +1,196 @@
+{
+ "kode": "HDF02-01",
+ "tittel": "Læreplan i Vg2 heste- og dyrefag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV415",
+   "tittel": "Kompetansemål og vurdering dyrelære og aktivitet (280 årstimer)",
+   "fag": [
+    "HDF2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4381",
+     "tekst": "planlegge, vurdere, gjennomføre og dokumentere daglig og periodisk arbeid med dyr og begrunne valg faglig"
+    },
+    {
+     "kode": "KM4409",
+     "tekst": "planlegge, vurdere, gjennomføre og dokumentere tiltak som fremmer prestasjon, helse og dyrevelferd, og som forebygger helse- og atferdsproblemer"
+    },
+    {
+     "kode": "KM4408",
+     "tekst": "gjøre rede for og vurdere reproduksjon, avl og oppdrett for aktuelle arter og bruksområder"
+    },
+    {
+     "kode": "KM4407",
+     "tekst": "vurdere sammenhengen mellom dyrets tidlige liv og senere utvikling"
+    },
+    {
+     "kode": "KM4406",
+     "tekst": "beskrive domestiseringsprosessen og vurdere hvordan det påvirker dyr og dyrevelferd"
+    },
+    {
+     "kode": "KM4405",
+     "tekst": "gjøre rede for og reflektere over avliving og avlivingsmetoder"
+    },
+    {
+     "kode": "KM4404",
+     "tekst": "gjennomføre helsesjekk og vurdere hold, atferd og bevegelser"
+    },
+    {
+     "kode": "KM4403",
+     "tekst": "gjenkjenne og beskrive normaltilstander, normalatferd, avvik, smerter, sykdom og skade"
+    },
+    {
+     "kode": "KM4402",
+     "tekst": "utføre førstehjelp og enkel smertelindring på dyr, vurdere når det er nødvendig å tilkalle hjelp, og sette inn tiltak i samarbeid med andre yrkesgrupper"
+    },
+    {
+     "kode": "KM4401",
+     "tekst": "anvende ulike diagnostiske verktøy og metoder"
+    },
+    {
+     "kode": "KM4400",
+     "tekst": "utarbeide fôrplaner og fôre, beskrive fordøyelsesprosesser og vurdere innhold i og kvalitet til ulike fôrslag"
+    },
+    {
+     "kode": "KM4399",
+     "tekst": "anvende læringsteori for å planlegge, gjennomføre, vurdere og dokumentere trening og atferdsendring"
+    },
+    {
+     "kode": "KM4398",
+     "tekst": "trene dyr i håndtering, ulike bruksområder og aktiviteter"
+    },
+    {
+     "kode": "KM4396",
+     "tekst": "utforske og beskrive bruk og hold av dyr knyttet til kulturhistoriske tradisjoner"
+    },
+    {
+     "kode": "KM4397",
+     "tekst": "reflektere over og drøfte etiske og dyrevelferdsmessige utfordringer ved bruk og hold av dyr"
+    },
+    {
+     "kode": "KM4410",
+     "tekst": "vurdere når det er behov for ekstern kompetanse, og samarbeide med andre yrkesgrupper"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget dyrelære og aktivitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget dyrelære og aktivitet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget dyrelære og aktivitet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget dyrelære og aktivitet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV416",
+   "tittel": "Kompetansemål og vurdering drift og entreprenørskap (197 årstimer)",
+   "fag": [
+    "HDF2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4394",
+     "tekst": "planlegge, tilby og vurdere aktiviteter, produkter eller tjenester for ulike målgrupper"
+    },
+    {
+     "kode": "KM4393",
+     "tekst": "gjøre rede for etablering, utvikling og drift av næringsvirksomhet, hensikten med og innholdet i en forretningsplan"
+    },
+    {
+     "kode": "KM4392",
+     "tekst": "veilede, instruere og samarbeide med andre i utførelse av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM4391",
+     "tekst": "arbeide etter hygieniske prinsipper og ivareta smittevern mellom dyr, og mellom dyr og mennesker"
+    },
+    {
+     "kode": "KM4390",
+     "tekst": "arbeide i tråd med gjeldende lov- og regelverk og gjøre rede for aktuelle krav om dokumentert kompetanse"
+    },
+    {
+     "kode": "KM4389",
+     "tekst": "utføre arbeidsoppgaver på en ergonomisk riktig måte, gjøre rede for vanlige belastningsskader og iverksette tiltak for å unngå disse"
+    },
+    {
+     "kode": "KM4388",
+     "tekst": "vurdere risiko og håndtere dyr på en sikker og trygg måte"
+    },
+    {
+     "kode": "KM4387",
+     "tekst": "gjennomføre og dokumentere helse-, miljø- og sikkerhetsarbeid, sette i verk forebyggende tiltak og følge rutiner, kvalitetssystemer og arbeidsinstrukser"
+    },
+    {
+     "kode": "KM4386",
+     "tekst": "velge, bruke, tilpasse og vedlikeholde anlegg, utstyr, verktøy, materiale og metoder"
+    },
+    {
+     "kode": "KM4385",
+     "tekst": "informere og veilede kunder og yte kundeservice"
+    },
+    {
+     "kode": "KM4384",
+     "tekst": "utforske og gjøre rede for dyreholdets og næringens betydning for folkehelse, samfunn og natur i Norge"
+    },
+    {
+     "kode": "KM4383",
+     "tekst": "identifisere faktorer som påvirker arbeidsmiljø, økonomi, kvalitet og virksomhetens bærekraft og påvirkning på miljøet, og foreslå og iverksette forbedringstiltak"
+    },
+    {
+     "kode": "KM4382",
+     "tekst": "føre enkelt budsjett og regnskap, gjøre rede for sentrale elementer i økonomistyring og betydningen av korrekt regnskapsføring, og tolke nøkkeltall"
+    },
+    {
+     "kode": "KM4395",
+     "tekst": "gjennomføre markedsføringstiltak og vurdere prissetting av tjenester og produkter"
+    },
+    {
+     "kode": "KM4411",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget drift og entreprenørskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget drift og entreprenørskap. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget drift og entreprenørskap ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget drift og entreprenørskap basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Dyrelære og aktivitet: Eleven skal ha én standpunktkarakter.",
+    "Drift og entreprenørskap: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Dyrelære og aktivitet og drift og entreprenørskap: Elevene skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Dyrelære og aktivitet: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Drift og entreprenørskap: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Dyrelære og aktivitet og drift og entreprenørskap: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+ "kode": "LBR03-03",
+ "tittel": "Læreplan i vg3 landbruk",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV607",
+   "tittel": "Kompetansemål og vurdering plante- og husdyrproduksjon (337 årstimer)",
+   "fag": [
+    "LBR3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7075",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid i en jord- og plantekultur i både flerårige og ettårige produksjoner"
+    },
+    {
+     "kode": "KM7103",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere stell av drøvtyggende dyr og andre dyr ut fra hensyn til avl og fôring, anatomi, fysiologi, dyreatferd og dyrehelse"
+    },
+    {
+     "kode": "KM7094",
+     "tekst": "drøfte likheter og forskjeller mellom konvensjonelt og økologisk landbruk med tanke på dyrkingsteknikk, dyrehold, bruk av innsatsfaktorer og omsetning av produkter"
+    },
+    {
+     "kode": "KM7102",
+     "tekst": "identifisere symptomer på mistrivsel, skader og vanlige sykdommer hos planter og dyr, kartlegge mulige årsaker og iverksette tiltak på kort og lang sikt"
+    },
+    {
+     "kode": "KM7100",
+     "tekst": "utarbeide smittevernplan og plan for håndtering av smittsomme dyre- og plantesykdommer på et gårdsbruk etter gjeldende regelverk, og gjennomføre smitteverntiltak"
+    },
+    {
+     "kode": "KM7091",
+     "tekst": "gjøre rede for hvilken betydning klimaendringene har og drøfte hvilke konsekvenser det har for landbruket på lang sikt"
+    },
+    {
+     "kode": "KM7101",
+     "tekst": "utforske tiltak for klimatilpasning, og velge og gjennomføre produksjonsmetoder ut fra lokale klimatiske forhold"
+    },
+    {
+     "kode": "KM7099",
+     "tekst": "optimalisere kvalitet og produksjonsutbytte gjennom å utføre ulike arbeidsoppgaver til riktig tid"
+    },
+    {
+     "kode": "KM7098",
+     "tekst": "bruke traktor, arbeidsmaskiner, redskaper og annet utstyr i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7093",
+     "tekst": "utføre feilsøking og enkle reparasjoner på maskiner og verktøy og gjennomføre vedlikehold på disse"
+    },
+    {
+     "kode": "KM7097",
+     "tekst": "vurdere hvordan teknologi kan brukes for å øke produksjon, redusere klima- og miljøpåvirkning og for å optimalisere drift"
+    },
+    {
+     "kode": "KM7096",
+     "tekst": "håndtere avfall og plussprodukter fra en landbruksproduksjon og beskrive alternativ bruk av restråstoff fra landbruket"
+    },
+    {
+     "kode": "KM7095",
+     "tekst": "drøfte sentrale faktorer for å produsere mat med en høy standard på produksjon, kvalitet og mattrygghet"
+    },
+    {
+     "kode": "KM7092",
+     "tekst": "beskrive beskyttelsesfaktorer for god psykisk helse og risikofaktorer for psykisk uhelse, og reflektere over hvordan forskjellige aspekter ved det å arbeide i landbruket påvirker fysisk og psykisk helse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget plante- og husdyrproduksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget plante- og husdyrproduksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget plante- og husdyrproduksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget plante- og husdyrproduksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV608",
+   "tittel": "Kompetansemål og vurdering utmark og kulturlandskap (140 årstimer)",
+   "fag": [
+    "LBR3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7104",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid knyttet til skjøtsel, bruk, beiting og høsting i skog, utmark og kulturlandskap"
+    },
+    {
+     "kode": "KM7090",
+     "tekst": "følge planer for drift og skjøtsel av skog, utmark og kulturlandskap ut fra hensyn til økologi, økonomi og bærekraftig forvaltning"
+    },
+    {
+     "kode": "KM7088",
+     "tekst": "kartlegge vegetasjon i skog og utmarksområde, og gjøre rede for ulike landskapstypers betydning for biologisk mangfold, klima og miljø, for landskapsbildet og for vår bruk av landskapet"
+    },
+    {
+     "kode": "KM7087",
+     "tekst": "gjøre rede for naturlige endringsprosesser i skog, utmark og kulturlandskap og reflektere over hvordan menneskelig aktivitet kan påvirke økosystemene"
+    },
+    {
+     "kode": "KM7086",
+     "tekst": "bruke redskaper og utstyr knyttet til skjøtsel og høsting i skog og utmark i henhold til regler for trygg og sikker bruk og utføre feilsøking, enkle reparasjoner og vedlikehold på disse"
+    },
+    {
+     "kode": "KM7085",
+     "tekst": "gjøre rede for muligheter for flerbruk av utmark og kulturlandskap og drøfte mulige interessekonflikter hos brukere og rettighetshavere"
+    },
+    {
+     "kode": "KM7084",
+     "tekst": "påvise og vurdere kulturminner i utmarks- og kulturlandskapsområder etter gjeldende regelverk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget utmark og kulturlandskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget utmark og kulturlandskap. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget utmark og kulturlandskap ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget utmark og kulturlandskap basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV609",
+   "tittel": "Kompetansemål og vurdering gårdsdrift (168 årstimer)",
+   "fag": [
+    "LBR3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7083",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere landbruksproduksjoner i tråd med gjeldende regelverk, standarder, kvalitetssystemer og krav til dokumentasjon og internkontroll"
+    },
+    {
+     "kode": "KM7105",
+     "tekst": "beskrive de viktigste elementene for driftsplanlegging og økonomistyring på en landbrukseiendom"
+    },
+    {
+     "kode": "KM7082",
+     "tekst": "beskrive støtteordninger til ulike produksjoner, tjenester, miljøtiltak og investeringer og gjøre rede for gangen i en søknadsprosess og hvilke krav som stilles til den som søker"
+    },
+    {
+     "kode": "KM7078",
+     "tekst": "vurdere hvordan bærekraftig forvaltning kan ivaretas i landbruksproduksjoner, og drøfte hvordan næringsaktivitet kan påvirke lokalsamfunnet, miljøet og det biologiske mangfoldet"
+    },
+    {
+     "kode": "KM7089",
+     "tekst": "gjøre rede for lov- og regelverk og prosedyrer knyttet til eierskap og leie, forpakting, kjøp og overdragelse av landbrukseiendom"
+    },
+    {
+     "kode": "KM7081",
+     "tekst": "vurdere selskaps- og samarbeidsformer i landbruket innenfor omsetning og foredling, vurdere omsetningskanal for varer og tjenester i landbruket og beskrive sentrale markedsordninger"
+    },
+    {
+     "kode": "KM7079",
+     "tekst": "gjøre rede for de viktigste nærings- og fagorganisasjonene i landbruket og hvordan disse kan fremme ulike landbruksfaglige interesser, og drøfte muligheten for å påvirke gjennom demokratiske prosesser"
+    },
+    {
+     "kode": "KM7076",
+     "tekst": "planlegge og vurdere tiltak for energiøkonomisering og vurdere alternativer for å redusere klimaavtrykket"
+    },
+    {
+     "kode": "KM7077",
+     "tekst": "utarbeide beredskapsplaner, gjennomføre risikovurderinger og vurdere behovet for forsikringer"
+    },
+    {
+     "kode": "KM7080",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget gårdsdrift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget gårdsdrift. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget gårdsdrift ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget gårdsdrift basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Plante- og husdyrproduksjon: Eleven skal ha én standpunktkarakter.\nUtmark og kulturlandskap: Eleven skal ha én standpunktkarakter.\nGårdsdrift: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Plante- og husdyrproduksjon, utmark og kulturlandskap og gårdsdrift: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Plante- og husdyrproduksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nUtmark og kulturlandskap: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nGårdsdrift: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nPlante- og husdyrproduksjon, utmark og kulturlandskap og gårdsdrift: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,202 @@
+{
+ "kode": "BUN05-01",
+ "tittel": "Læreplan i vg3 bunadtilverkarfaget - modulstrukturert opplæring for vaksne",
+ "spraak": "nno",
+ "fastsatt": "2025-10-17",
+ "gyldigFra": "2025-11-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV985",
+   "tittel": "Kompetansemål og vurdering saum og tilverking",
+   "fag": [
+    "BUN5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12799",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM12800",
+     "tekst": "vurdere og utføre reparasjonar og omsaum på bunader"
+    },
+    {
+     "kode": "KM12801",
+     "tekst": "ta mål, tilpasse mønster, prøve inn og tilpasse nye og eldre bunader til kunde"
+    },
+    {
+     "kode": "KM12802",
+     "tekst": "anvende teknikkar for handsaum og maskinsaum og gjere greie for kva for teknikk som skal nyttast i den aktuelle bunaden og på tekstilt tilbehøyr"
+    },
+    {
+     "kode": "KM12803",
+     "tekst": "nytte angitt syrettleiing for bunader, bunadsskjorter og tekstilt tilbehøyr"
+    },
+    {
+     "kode": "KM12804",
+     "tekst": "nytte presse- og stiveteknikkar og før- og etterbehandlingsmetodar tilpassa materiale og bruksområde"
+    },
+    {
+     "kode": "KM12805",
+     "tekst": "anvende dei mest utbreidde broderiteknikkane for bunader og bunadsskjorter"
+    },
+    {
+     "kode": "KM12806",
+     "tekst": "velje og bruke tekstilar i ulike veveteknikkar i tilverking av ein bunad og gjere greie for korleis ulike val kan påverke kvaliteten og haldbarheita til bunaden"
+    },
+    {
+     "kode": "KM12807",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM12870",
+     "tekst": "gjere greie for korleis val av materialar, teknikkar og maskiner kan sikre ei etisk og berekraftig produksjon"
+    },
+    {
+     "kode": "KM12871",
+     "tekst": "gjere greie for korleis gjenbruk, avfallshandtering og val av materialar kan bidra til ei berekraftig produksjon"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen saum og tilverking når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen saum og tilverking. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i saum og tilverking. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV986",
+   "tittel": "Kompetansemål og vurdering formidling og kundebehandling",
+   "fag": [
+    "BUN5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12810",
+     "tekst": "rettleie kundar i bruk og vedlikehald av bunad og med tilbehøyr som draktsølv, hovudplagg og fottøy"
+    },
+    {
+     "kode": "KM12811",
+     "tekst": "utforske og bruke faget si historie og eigenart til å formidle og vidareføre tradisjonell kunnskap om bunadtilverking og til å rettleie kundar"
+    },
+    {
+     "kode": "KM12812",
+     "tekst": "gjere greie for forskjellen på bunad og folkedrakt, både stilhistorisk og saumteknisk, og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM12813",
+     "tekst": "bruke fagterminologi i kommunikasjon med kundar, kollegaer og andre samarbeidspartnarar knytte til tilverking av bunader"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen formidling og kundebehandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen formidling og kundebehandling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i formidling og kundebehandling. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV987",
+   "tittel": "Kompetansemål og vurdering forretningsdrift og arbeidsliv",
+   "fag": [
+    "BUN5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12814",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    },
+    {
+     "kode": "KM12815",
+     "tekst": "gjere greie for gjeldande lovverk om opphavsrett og marknadsføring og følgje dette i eige arbeid"
+    },
+    {
+     "kode": "KM12816",
+     "tekst": "bruke formålstenlege arbeidsstillingar og gjere greie for gode arbeidsrutinar i ein produksjon"
+    },
+    {
+     "kode": "KM12817",
+     "tekst": "anvende og halde ved like maskiner og utstyr og følgje gjeldande regelverk for helse, miljø og sikkerheit i arbeidet på verkstaden"
+    },
+    {
+     "kode": "KM12818",
+     "tekst": "berekne tid og pris på eigne produkt, og gjere greie for korleis ulike val påverkar tidsbruk og lønnsemd"
+    },
+    {
+     "kode": "KM12819",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til handverk, design og produktutvikling, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM12820",
+     "tekst": "undersøkje og vurdere livsløpet til ulike produkt i eit berekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen forretningsdrift og arbeidsliv når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen forretningsdrift og arbeidsliv. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i forretningsdrift og arbeidsliv. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent"
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV988",
+   "tittel": "Kompetansemål og vurdering bunadbruk og yrkesidentitet",
+   "fag": [
+    "BUN5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12821",
+     "tekst": "analysere lokal og nasjonal bunadtilverkartradisjon og nytte historiske korrekte saumteknikkar i arbeid med bunader, skjorter og ytterplagg"
+    },
+    {
+     "kode": "KM12822",
+     "tekst": "gjere greie for grunnprinsippa for rekonstruksjon av folkedrakter og mønsteravtak frå eldre plagg"
+    },
+    {
+     "kode": "KM12823",
+     "tekst": "finne og vurdere informasjon for å drøfte faglege spørsmål og problemstillingar og utvise kjeldekritikk"
+    },
+    {
+     "kode": "KM12872",
+     "tekst": "gjere greie for bunadsbruk og korleis bruken i dag tek vare på ein levande tradisjon"
+    },
+    {
+     "kode": "KM12825",
+     "tekst": "undersøkje eigenskapane til ulike materiale og overflatebehandlingar og vurdere bruk av desse i eit berekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen bunadbruk og yrkesidentitet når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen bunadbruk og yrkesidentitet. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i bunadbruk og yrkesidentitet. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle ha bestått ein skriftleg eksamen laga ut frå læreplanen i vg3 bunadtilverkarfaget (BUN05-01). Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 bunadtilverkarfaget - modulstrukturert opplæring for vaksne skal avsluttast med ei sveineprøve. Sveineprøva lagast ut frå læreplanen i vg3 bunadtilverkarfaget (BUN05-01). Alle skal opp til sveineprøva, som skal gjennomførast innanfor ei tidsramme på 8–10 vyrkedagar."
+   ]
+  }
+ ]
+}

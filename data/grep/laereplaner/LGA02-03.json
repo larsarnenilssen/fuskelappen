@@ -1,0 +1,164 @@
+{
+ "kode": "LGA02-03",
+ "tittel": "Læreplan i Vg2 landbruk og gartnernæring",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV418",
+   "tittel": "Kompetansemål og vurdering produksjon og tjenesteyting (297 årstimer)",
+   "fag": [
+    "LGA2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4437",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver innenfor landbruk og gartnernæring ut fra produksjonenes egenart, organismenes biologi, behov for stell, og gjeldende regelverk"
+    },
+    {
+     "kode": "KM4454",
+     "tekst": "gjøre rede for symptomene til de vanligste dyre- og plantesykdommer og hvordan disse spres, og vurdere tiltak som kan forebygge sykdom og smitte"
+    },
+    {
+     "kode": "KM4449",
+     "tekst": "dyrke planter i ulike jordtyper og dyrkingsmedier og gjøre rede for mikro- og makronæringsstoffers betydning for levende organismer"
+    },
+    {
+     "kode": "KM4458",
+     "tekst": "planlegge og utføre stell av jord og planter i ettårige og flerårige kulturer ut fra hensyn til jord- og plantekultur"
+    },
+    {
+     "kode": "KM4448",
+     "tekst": "planlegge og utføre fôring og stell av enmagede og flermagede produksjonsdyr ut fra hensyn til den enkelte art, dyrehelse og dyrevelferd"
+    },
+    {
+     "kode": "KM4457",
+     "tekst": "vurdere kvalitet og lønnsomhet i naturbaserte produksjoner etter gjeldende sertifiseringsordninger for produktkvalitet og miljø"
+    },
+    {
+     "kode": "KM4456",
+     "tekst": "utføre en produksjon etter prinsippene for økologisk drift etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4453",
+     "tekst": "bruke kjøretøy, maskiner og teknisk utstyr etter gjeldende forskrifter og standarder"
+    },
+    {
+     "kode": "KM4446",
+     "tekst": "utføre vedlikehold og enkle reparasjoner på kjøretøy, maskiner, bygninger og teknisk utstyr"
+    },
+    {
+     "kode": "KM4455",
+     "tekst": "vurdere risiko knyttet til landbruks- og gartnerfaglige arbeidsoppgaver og aktiviteter, og arbeide i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4452",
+     "tekst": "håndtere avfall etter gjeldende retningslinjer og vurdere gjenbruk, flerbruk og resirkulering av ressurser"
+    },
+    {
+     "kode": "KM4451",
+     "tekst": "gjøre rede for karbonkretsløpet og vurdere tiltak for å redusere klimabelastningen og øke karbonbindingen i en landbruks- eller gartnerproduksjon"
+    },
+    {
+     "kode": "KM4450",
+     "tekst": "vurdere klima- og miljømessige konsekvenser ved ulike produksjonsmåter og foreslå forbedringstiltak ut fra lokale forhold"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon og tjenesteyting når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon og tjenesteyting. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon og tjenesteyting ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon og tjenesteyting basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV419",
+   "tittel": "Kompetansemål og vurdering forvaltning og drift (180 årstimer)",
+   "fag": [
+    "LGA2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4445",
+     "tekst": "kartlegge naturtyper og foreslå nye produkter og tjenester basert på lokale naturressurser og i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM4444",
+     "tekst": "vurdere og beskrive hvordan næringsutøvelsen påvirker lokalsamfunnet, miljøet og det biologiske mangfoldet"
+    },
+    {
+     "kode": "KM4443",
+     "tekst": "vurdere arealbruken i ulike områder med tanke på andre brukerinteresser, miljø og lokal ressursforvaltning"
+    },
+    {
+     "kode": "KM4442",
+     "tekst": "gjøre rede for ulike faser i en bedriftsetablering og innholdet i en forretningsplan, og vurdere ulike eierformer i landbruket"
+    },
+    {
+     "kode": "KM4441",
+     "tekst": "klargjøre produkt eller tjeneste for salg og gjøre rede for noen salgs- og omsetningsformer i landbruk og gartnernæring"
+    },
+    {
+     "kode": "KM4440",
+     "tekst": "beskrive sentrale elementer for god økonomi- og driftsstyring i landbruk og gartnernæring og identifisere de viktigste nøkkeltallene for slike bedrifter"
+    },
+    {
+     "kode": "KM4439",
+     "tekst": "sette opp et budsjett og beskrive dokumentasjon og rutiner som er viktig for å kunne føre et regnskap"
+    },
+    {
+     "kode": "KM4459",
+     "tekst": "samle inn, tolke og bruke data innen en aktuell produksjon eller tjenesteyting innen landbruk og gartnernæring og bruke disse i faglige diskusjoner og vurderinger"
+    },
+    {
+     "kode": "KM4447",
+     "tekst": "presentere de viktigste nærings- og fagorganisasjonene og offentlige forvaltningsorganer i landbruk og gartnernæring og utforske mulighetene for å påvirke gjennom demokratiske prosesser"
+    },
+    {
+     "kode": "KM4438",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget forvaltning og drift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget forvaltning og drift. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget forvaltning og drift ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget forvaltning og drift basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og tjenesteyting: Eleven skal ha én standpunktkarakter.",
+    "Forvaltning og drift: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og tjenesteyting og forvaltning og drift: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og tjenesteyting: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Forvaltning og drift: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og tjenesteyting og forvaltning og drift: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,179 @@
+{
+ "kode": "MFL01-04",
+ "tittel": "Læreplan i markedsføring og ledelse",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV887",
+   "tittel": "Kompetansemål og vurdering markedsføring og ledelse 1",
+   "fag": [
+    "MFL1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11586",
+     "tekst": "velge og bruke kilder, markedsførings- og ledelsesteorier og modeller i arbeid med faglige spørsmål, emner og dagsaktuelle problemstillinger"
+    },
+    {
+     "kode": "KM11584",
+     "tekst": "vurdere forhold som påvirker forbrukeratferd, og reflektere over psykologiske, sosiale og kulturelle faktorer"
+    },
+    {
+     "kode": "KM11583",
+     "tekst": "utvikle forretningsideer og mål for virksomheten og vurdere aktuelle målgrupper"
+    },
+    {
+     "kode": "KM11585",
+     "tekst": "bruke og utvikle markedsundersøkelser for å utforske og få innsikt i markeder og målgrupper"
+    },
+    {
+     "kode": "KM11594",
+     "tekst": "gjennomføre situasjonsanalyser som grunnlag for beslutninger"
+    },
+    {
+     "kode": "KM11587",
+     "tekst": "utforske produkt- og merkevarestrategier og vurdere hvordan virksomheter bruker produkter som konkurransemiddel"
+    },
+    {
+     "kode": "KM11588",
+     "tekst": "utforske ulike distribusjonsstrategier i markedsføring og vurdere hvordan virksomheter bruker distribusjon som konkurransemiddel"
+    },
+    {
+     "kode": "KM11589",
+     "tekst": "utforske ulike prisstrategier og prissettingsmetoder og vurdere hvordan virksomheter bruker pris som konkurransemiddel"
+    },
+    {
+     "kode": "KM11590",
+     "tekst": "utforske ulike kommunikasjonsstrategier og vurdere hvordan virksomheter bruker markedskommunikasjon som konkurransemiddel"
+    },
+    {
+     "kode": "KM11591",
+     "tekst": "planlegge mediemiks og utvikle innhold for ulike kanaler i markedskommunikasjon"
+    },
+    {
+     "kode": "KM11592",
+     "tekst": "utforske og vurdere hvordan virksomheter kombinerer bruk av konkurransemidler"
+    },
+    {
+     "kode": "KM11595",
+     "tekst": "reflektere over og vurdere rollen til personalet og ledelsen i gjennomføring av virksomhetens markedsføringsstrategi"
+    },
+    {
+     "kode": "KM11593",
+     "tekst": "utforske og følge gjeldende regelverk for markedsføring og vurdere virksomhetens etiske ansvar"
+    },
+    {
+     "kode": "KM11596",
+     "tekst": "reflektere over sammenhengen mellom markedsføring og bærekraftig utvikling ut fra sosiale, økonomiske og miljømessige forhold"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i markedsføring og ledelse 1. Elevene viser og utvikler kompetanse i faget når de innhenter informasjon, bruker teorier og modeller og analyserer markeder, målgrupper og deres behov. De viser og utvikler også kompetanse når de vurderer strategiske beslutninger som er tatt for å nå virksomheters mål. Videre viser og utvikler de kompetanse når de får innsikt i markeds- og samfunnsforhold som kan påvirke markedsføringen og når de vurderer og skaper nye ideer og løsninger for å nå virksomheters mål.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom ulike muntlige, skriftlige, og praktiske måter, hvor elevene utforsker og finner svar på faglige spørsmål og problemstillinger med betydning for markedsføring og ledelse. Læreren skal være i dialog med elevene om utviklingen deres i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i markedsføring og ledelse 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i markedsføring og ledelse 1 ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i markedsføring og ledelse 1 basert på kompetansen eleven har vist av forståelse av markedsanalyse og innsikt, markedsstrategiske vurderinger og faglig kreativitet og problemløsing."
+   ]
+  },
+  {
+   "kode": "KV888",
+   "tittel": "Kompetansemål og vurdering markedsføring og ledelse 2",
+   "fag": [
+    "MFL1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11608",
+     "tekst": "velge og bruke kilder, markedsførings- og ledelsesteorier og modeller i arbeid med faglige spørsmål, emner og dagsaktuelle problemstillinger"
+    },
+    {
+     "kode": "KM11597",
+     "tekst": "utvikle og vurdere visjoner, forretningsideer og overordnede mål"
+    },
+    {
+     "kode": "KM11598",
+     "tekst": "drøfte og begrunne ulike faktorer som påvirker målgruppevalg"
+    },
+    {
+     "kode": "KM11599",
+     "tekst": "bruke situasjonsanalyse og bransjeanalyse og vurdere markedsstrategiske beslutninger"
+    },
+    {
+     "kode": "KM11600",
+     "tekst": "utvikle merkevarestrategier og vurdere posisjonering i merkevarebygging"
+    },
+    {
+     "kode": "KM11601",
+     "tekst": "utvikle distribusjonsstrategier og vurdere påvirkning av makt og avhengighet i en verdikjede"
+    },
+    {
+     "kode": "KM11602",
+     "tekst": "drøfte ulike faktorer som påvirker prissetting, og utvikle prisstrategier"
+    },
+    {
+     "kode": "KM11603",
+     "tekst": "vurdere og utvikle kommunikasjonsstrategier, utforske dagsaktuelle kommunikasjonskanaler og planlegge mediemiks"
+    },
+    {
+     "kode": "KM11604",
+     "tekst": "vurdere lederens rolle og funksjon i utviklingen av markedsstrategi og i internmarkedsføring"
+    },
+    {
+     "kode": "KM11605",
+     "tekst": "utvikle og begrunne helhetlige markedsstrategier og drøfte etisk bruk av konkurransemidler"
+    },
+    {
+     "kode": "KM11606",
+     "tekst": "vurdere hvordan virksomheter kan utvikle helhetlig markedsmiks, og utforske ulike metoder for å måle effekten av markedsføringstiltakene"
+    },
+    {
+     "kode": "KM11607",
+     "tekst": "drøfte virksomheters samfunnsansvar ut fra et etisk, lovmessig og forretningsmessig perspektiv, og vurdere dette opp mot virksomhetens omdømme"
+    },
+    {
+     "kode": "KM11609",
+     "tekst": "vurdere bærekraftige valg for virksomheter med tanke på sosiale, økonomiske og miljømessige forhold"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i markedsføring og ledelse 2. Elevene viser og utvikler kompetanse i faget når de innhenter informasjon og bruker teorier og modeller som gir perspektiver på markeder, målgrupper og deres behov. Videre viser og utvikler elevene kompetanse i faget når de utvikler og begrunner helhetlige markedsstrategier, tar etiske og bærekraftige beslutninger og vurderer nye ideer og løsninger for å nå virksomhetens mål.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom ulike muntlige, skriftlige, og praktiske måter, hvor elevene utforsker og finner svar på faglige spørsmål og problemstillinger med betydning for markedsføring og ledelse. Læreren skal være i dialog med elevene om utviklingen deres i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i markedsføring og ledelse 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i markedsføring og ledelse 2 ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i markedsføring og ledelse 2 basert på kompetansen eleven har vist av forståelse av markedsanalyse og innsikt, markedsstrategiske vurderinger og faglig kreativitet og problemløsing."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Markedsføring og ledelse 1: Eleven skal ha én standpunktkarakter.\nMarkedsføring og ledelse 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Markedsføring og ledelse 1: Eleven kan trekkes ut til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nMarkedsføring og ledelse 2: Eleven kan trekkes ut til skriftlig eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Markedsføring og ledelse 1: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.\nMarkedsføring og ledelse 2: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

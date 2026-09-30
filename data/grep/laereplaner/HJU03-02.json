@@ -1,0 +1,124 @@
+{
+ "kode": "HJU03-02",
+ "tittel": "Læreplan i vg3 hjulutrustningsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV684",
+   "tittel": "Kompetansemål og vurdering vg3 hjulutrustningsfaget",
+   "fag": [
+    "HJU3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8686",
+     "tekst": "planlegge og utføre arbeidet i henhold til arbeidsordrer, kvalitetskrav og prosedyrer for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8705",
+     "tekst": "feilsøke dekk, felger, bremser og styring ut fra tekniske data og gjeldende regelverk og utføre korrigerende tiltak"
+    },
+    {
+     "kode": "KM8704",
+     "tekst": "utføre hjulstillingskontroll og gjøre rede for viktigheten av en slik kontroll"
+    },
+    {
+     "kode": "KM8703",
+     "tekst": "kontrollere og måle innpress i henhold til spesifikasjoner og regelverk og vurdere behovet for justeringer"
+    },
+    {
+     "kode": "KM8702",
+     "tekst": "gjøre rede for sammensetting i gummiblandinger i ulike dekk og beskrive ulike bruksområder for de ulike dekkene"
+    },
+    {
+     "kode": "KM8701",
+     "tekst": "vurdere skadeomfang på dekk og felg og velge reparasjonsmetode i henhold til retningslinjer og anbefalinger fra produsent"
+    },
+    {
+     "kode": "KM8700",
+     "tekst": "forklare hvordan valg av hjulutrustning påvirker marktrykk og jordpakking"
+    },
+    {
+     "kode": "KM8699",
+     "tekst": "velge hjulutrustning ut fra parametere for anleggsdekk og klassifisere dekkene ut fra koder for bruksområde og mønstertype"
+    },
+    {
+     "kode": "KM8698",
+     "tekst": "velge dekk ut fra bruksområde og forklare forskjellen på styrende, drivende og frittrullende dekk"
+    },
+    {
+     "kode": "KM8697",
+     "tekst": "vurdere hvordan feil lufttrykk og feil i hjuloppheng og bremser påvirker dekkenes slitasje, kjøreegenskaper og det ytre miljø"
+    },
+    {
+     "kode": "KM8696",
+     "tekst": "legge om og avbalansere hjul og utføre tiltak for å unngå statisk og dynamisk ubalanse"
+    },
+    {
+     "kode": "KM8695",
+     "tekst": "velge, bruke og vedlikeholde verktøy, utstyr og maskiner"
+    },
+    {
+     "kode": "KM8694",
+     "tekst": "velge og bruke verneutstyr tilpasset arbeidsoppgaven"
+    },
+    {
+     "kode": "KM8693",
+     "tekst": "veilede kunder i valg av dekk og felg, forklare symboler og tegn på dekk og opplyse om lovlig alternativ hjulutrustning ut fra bruksområde og vognkort"
+    },
+    {
+     "kode": "KM8692",
+     "tekst": "velge og tilpasse kjetting etter kjøretøyets dekkutrustning og gjøre rede for krav til å medbringe og bruke kjettinger"
+    },
+    {
+     "kode": "KM8691",
+     "tekst": "kommunisere med kunder om arbeidsoppdrag og behandle kunder i tråd med bedriftens retningslinjer for kundebehandling"
+    },
+    {
+     "kode": "KM8690",
+     "tekst": "reflektere over hvordan eget arbeid påvirker bedriftens helhetlige produksjon, lønnsomhet og miljøavtrykk"
+    },
+    {
+     "kode": "KM8689",
+     "tekst": "håndtere klager og reklamasjoner i henhold til bedriftens kvalitetssikringssystem"
+    },
+    {
+     "kode": "KM8688",
+     "tekst": "stille inn, kalibrere, bruke og vedlikeholde verkstedsutstyr"
+    },
+    {
+     "kode": "KM8687",
+     "tekst": "kildesortere og behandle spesialavfall i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM8706",
+     "tekst": "gjøre rede for funksjonen til, feilsøke, montere og kalibrere dekktrykkvarslingssystemer"
+    },
+    {
+     "kode": "KM8707",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 hjulutrustningsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 hjulutrustningsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 hjulutrustningsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

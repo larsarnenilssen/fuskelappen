@@ -1,0 +1,172 @@
+{
+ "kode": "ANG02-01",
+ "tittel": "Læreplan i vg2 anleggsgartner",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV334",
+   "tittel": "Kompetansemål og vurdering rammebetingelser for anleggsgartnerarbeid",
+   "fag": [
+    "ANG2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3464",
+     "tekst": "planlegge å bygge utendørsanlegg etter tegninger og beskrivelser ved bruk av ulike prosjektverktøy, lage målsatte skisser og snitt og dokumentere kvaliteten på arbeidet"
+    },
+    {
+     "kode": "KM3486",
+     "tekst": "velge håndverktøy, redskaper og maskiner, vurdere hvordan de påvirker kvaliteten på sluttproduktet og arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3485",
+     "tekst": "velge materialtyper og vegetasjon til ulike formål og gjøre rede for hvilke konsekvenser valget har for kvalitet, funksjonalitet og miljø"
+    },
+    {
+     "kode": "KM3484",
+     "tekst": "bruke botaniske navn, beskrive vegetasjon, gjøre rede for gjeldende regelverk om vernet og uønsket vegetasjon og beskjære og vedlikeholde trær og busker"
+    },
+    {
+     "kode": "KM3483",
+     "tekst": "bruke fagterminologi for å kommunisere med andre og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket"
+    },
+    {
+     "kode": "KM3480",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og reflektere over hvilke konsekvenser ulike belastninger i forbindelse med yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3482",
+     "tekst": "planlegge prosjekter og beregne materialkostnader og tidsforbruk"
+    },
+    {
+     "kode": "KM3479",
+     "tekst": "kontrollere landmålingsverktøy og sette ut punkter, linjer, fall og vinkler i utendørsanlegg"
+    },
+    {
+     "kode": "KM3481",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget rammebetingelser for anleggsgartnerarbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker en av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget rammebetingelser for anleggsgartnerarbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget rammebetingelser for anleggsgartnerarbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget rammebetingelser for anleggsgartnerarbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV335",
+   "tittel": "Kompetansemål og vurdering anleggsgartnerarbeid",
+   "fag": [
+    "ANG2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3478",
+     "tekst": "gjøre rede for ulike landskapstyper og historiske grøntanlegg og reflektere over hvordan disse har utviklet seg"
+    },
+    {
+     "kode": "KM3475",
+     "tekst": "identifisere jord og vekstmedier og vurdere ulike tiltak som sikrer vekstforhold for trær og planter"
+    },
+    {
+     "kode": "KM3477",
+     "tekst": "identifisere og velge ulike trær, busker, stauder, plener og annen vegetasjon, plante i utendørsanlegg og vurdere faktorer som påvirker vekstforhold"
+    },
+    {
+     "kode": "KM3467",
+     "tekst": "etablere vegetasjon på terreng og konstruksjoner og gjøre rede for hvilke faktorer som sikrer vekst og kvalitet"
+    },
+    {
+     "kode": "KM3487",
+     "tekst": "identifisere invaderende arter, giftige- og allergifremkallende arter og vurdere videre behandling for å hindre spredning"
+    },
+    {
+     "kode": "KM3476",
+     "tekst": "identifisere skadedyr og nyttedyr i grøntanlegg, vurdere tiltak som begrenser skader og reflektere over faktorer som fremmer biologisk mangfold"
+    },
+    {
+     "kode": "KM3470",
+     "tekst": "gjøre rede for metoder for lokal overvannsdisponering og drøfte valg av vegetasjon og konsekvenser for lokalmiljøet"
+    },
+    {
+     "kode": "KM3466",
+     "tekst": "bygge fundamenter for faste, løse og permeable dekker, kanter, murer, trapper og installasjoner på mark og konstruksjon, vurdere risiko og iverksette tiltak for å redusere skader og belastninger"
+    },
+    {
+     "kode": "KM3474",
+     "tekst": "bygge faste, løse og permeable dekker, kanter, murer, trapper og installasjoner og drøfte ulike løsninger som reduserer vedlikeholdsbehov"
+    },
+    {
+     "kode": "KM3473",
+     "tekst": "velge, bruke og vedlikeholde håndverktøy, redskaper, og maskiner, og risikovurdere og iverksette tiltak som reduserer skade på omgivelsene og miljøet"
+    },
+    {
+     "kode": "KM3471",
+     "tekst": "lage drifts- og vedlikeholdplaner tilpasset årstidene og arbeide etter disse"
+    },
+    {
+     "kode": "KM3488",
+     "tekst": "vedlikeholde utendørsanlegg etter gjeldende regelverk, velge maskiner, verktøy og materialer og vurdere arbeidet ut fra miljøhensyn og hensynet til universell utforming"
+    },
+    {
+     "kode": "KM3469",
+     "tekst": "reflektere over hvordan utformingen av utendørsanlegg kan virke helsefremmende og legge til rette for fysisk aktivitet for mennesker i ulike livssituasjoner"
+    },
+    {
+     "kode": "KM3472",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, vurdere gjenbruk og gjøre rede for konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM3465",
+     "tekst": "gjenbruke produkter og reflektere over faktorer som påvirker den sirkulære økonomien"
+    },
+    {
+     "kode": "KM3468",
+     "tekst": "drifte anlegg for lek, idrett og friluftsliv og gjøre rede for hvordan anleggene fremmer folkehelse og bidrar til gode nærmiljøer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget anleggsgartnerarbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker en av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget anleggsgartnerarbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget anleggsgartnerarbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget anleggsgartnerarbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Rammebetingelser for anleggsgartnerarbeid: Eleven skal ha én standpunktkarakter.",
+    "Anleggsgartnerarbeid: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Rammebetingelser for anleggsgartnerfaget og anleggsgartnerarbeid: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Rammebetingelser for anleggsgartnerarbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Anleggsgartnerarbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Rammebetingelser for anleggsgartnerfaget og anleggsgartnerarbeid: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

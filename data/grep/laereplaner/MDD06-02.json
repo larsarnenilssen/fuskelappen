@@ -1,0 +1,81 @@
+{
+ "kode": "MDD06-02",
+ "tittel": "Læreplan i teaterensemble",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV264",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD6Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2824",
+     "tekst": "utvikle ideer, sette seg individuelle og kollektive mål for teaterarbeid, og planlegge, gjennomføre og reflektere over kunstneriske arbeidsprosesser"
+    },
+    {
+     "kode": "KM2825",
+     "tekst": "gjennomføre sceniske visninger for publikum i samarbeid med andre, og reflektere over forholdet mellom sal og scene"
+    },
+    {
+     "kode": "KM2826",
+     "tekst": "delta i samspill og samhandling i teaterarbeid ved å gi innspill til andre og ta i mot og vurdere innspill på eget arbeid"
+    },
+    {
+     "kode": "KM2827",
+     "tekst": "bruke skuespillertekniske ferdigheter, vise forståelse for egnes og andres grenser og for grensene mellom det private og det personlige i teaterfaglige prosesser"
+    },
+    {
+     "kode": "KM2828",
+     "tekst": "bruke improvisasjon i skapende prosesser til å utforske, utvikle og formgi sceniske forløp"
+    },
+    {
+     "kode": "KM2829",
+     "tekst": "bruke sceniske virkemidler og vise forståelse for dramaturgiske prinsipper i forestillingsarbeid"
+    },
+    {
+     "kode": "KM2830",
+     "tekst": "forstå og bruke teaterfaglig terminologi i teaterarbeid, analyse og refleksjon"
+    },
+    {
+     "kode": "KM2831",
+     "tekst": "reflektere over teaterets samfunnskritiske funksjon og vise forståelse for prinsipper for ytringsfriheten og dens grenser i eget teaterarbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teaterensemble. Elevene viser og utvikler kompetanse i faget når de skaper, utøver og opplever teater, og når de reflekterer over teaterfaglig arbeid og teaterfaglige prosesser og produkter.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å utvikle et ensemblemiljø hvor arbeidsetikk står sentralt og elevene utfordrer og utfolder seg i arbeid med teater, både i arbeids- og utviklingsprosesser og i visninger for et publikum. Læreren skal være i dialog med elevene om utviklingen deres i faget og hjelpe dem med å se sammenheng mellom prosess og produkt i teaterarbeidet. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle teaterfaglige ferdigheter."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i teaterensemble ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i kjente og ukjente situasjoner. Læreren skal sette karakter i teaterensemble basert på kompetansen eleven har vist ved å skape, utøve og oppleve teater og ved å reflektere kritisk over kompetansen og ferdighetene han eller hun har oppnådd."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teaterensemble: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Teaterensemble: Eleven kan trekkes ut til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Teaterensemble: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "kode": "TEL03-03",
+ "tittel": "Læreplan i vg3 telekommunikasjonsmontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV952",
+   "tittel": "Kompetansemål og vurdering vg3 telekommunikasjonsmontørfaget",
+   "fag": [
+    "TEL3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12491",
+     "tekst": "risikovurdere, planlegge, gjennomføre, kontrollere og dokumentere arbeidsoppdragene i henhold til gjeldende regelverk, normer, standarder og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12488",
+     "tekst": "utføre arbeidet i henhold til forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12489",
+     "tekst": "montere og sette i drift ulike systemer for kablet og radiobasert kommunikasjon, signal- og energidistribusjon og vurdere tiltak for å forhindre elektromagnetisk interferens og for å sikre elektromagnetisk kompatibilitet"
+    },
+    {
+     "kode": "KM12480",
+     "tekst": "systematisk feilsøke og utbedre feil i elektroniske kommunikasjonsnett ved hjelp av egnede måleinstrumenter, programvare og teknisk dokumentasjon og vurdere måleresultater opp mot beregnede verdier og kravene i gjeldende regelverk"
+    },
+    {
+     "kode": "KM12481",
+     "tekst": "montere og sette i drift elektroniske systemer som skal sikre liv, helse og materielle verdier og vurdere behov for sekundær strømforsyning"
+    },
+    {
+     "kode": "KM12482",
+     "tekst": "montere, programmere og sette i drift styringssystemer tilkoblet elektroniske kommunikasjonsnett og gjøre rede for kommunikasjonssikkerhet og kommunikasjonsprotokoller"
+    },
+    {
+     "kode": "KM12484",
+     "tekst": "montere og koble til strømforsyning fra ulike fordelingssystem, vurdere jording og dokumentere beskyttelse mot overbelastning og kortslutning på eksisterende kurs"
+    },
+    {
+     "kode": "KM12490",
+     "tekst": "installere, skjøte og terminere kabler for optisk og elektrisk overføring med ulike føringsveier og begrunne valg av kabel og utstyr, og beskrive faktorer som påvirker kvaliteten på forbindelsen"
+    },
+    {
+     "kode": "KM12483",
+     "tekst": "kommunisere med og veilede involverte i en arbeidsprosess og anvende faglig presist språk"
+    },
+    {
+     "kode": "KM12485",
+     "tekst": "arbeide systematisk med god faglig utførelse, riktig verktøy og instrumenter, og holde orden på eget utstyr og arbeidsplass"
+    },
+    {
+     "kode": "KM12486",
+     "tekst": "håndtere avfall etter eget arbeid på en miljøvennlig og sikker måte, drøfte produkters miljøpåvirkning og ivareta personvern og sensitive data ved avhending av digitalt utstyr"
+    },
+    {
+     "kode": "KM12487",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12492",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12493",
+     "tekst": "drøfte etiske dilemmaer ved valg av produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12494",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 telekommunikasjonsmontørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 telekommunikasjonsmontørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 24 timer.",
+    "Opplæringen i vg3 telekommunikasjonsmontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

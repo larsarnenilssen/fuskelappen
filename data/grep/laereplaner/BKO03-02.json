@@ -1,0 +1,116 @@
+{
+ "kode": "BKO03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, komplettering",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV675",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, komplettering",
+   "fag": [
+    "BKO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8498",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver i samsvar med kvalitetsprosedyrer for installasjon og vedlikehold"
+    },
+    {
+     "kode": "KM8515",
+     "tekst": "demontere og vedlikeholde kompletteringsutstyr i tråd med gjeldende regelverk og prosedyrer"
+    },
+    {
+     "kode": "KM8514",
+     "tekst": "gjøre rede for og utføre volum- og trykkberegninger som virker på kompletteringsutstyret"
+    },
+    {
+     "kode": "KM8513",
+     "tekst": "vurdere og velge utstyr og materialer for komplettering, og reflektere over utstyrets muligheter og begrensninger"
+    },
+    {
+     "kode": "KM8512",
+     "tekst": "utføre kvalitetssjekk og sluttkontroll av tegninger, installasjonsprogram og kjøreprosedyrer"
+    },
+    {
+     "kode": "KM8511",
+     "tekst": "vurdere risikoer og iverksette risikoreduserende tiltak"
+    },
+    {
+     "kode": "KM8510",
+     "tekst": "utføre sikker jobb-analyse og skrive arbeidstillatelser og avvik i operasjonen ved behov"
+    },
+    {
+     "kode": "KM8509",
+     "tekst": "installere, funksjonsteste og trykkteste kompletteringsutstyr"
+    },
+    {
+     "kode": "KM8508",
+     "tekst": "vurdere og beskrive kriterier for valg av brønnvæsker som blir brukt under komplettering"
+    },
+    {
+     "kode": "KM8507",
+     "tekst": "bruke gjeldende kommunikasjonsrutiner under arbeidsoppgaver"
+    },
+    {
+     "kode": "KM8506",
+     "tekst": "installere og beskrive krav til brønnbarrierer og reflektere over betydningen av brønnbarrierer"
+    },
+    {
+     "kode": "KM8505",
+     "tekst": "utføre lett brønnintervensjon fra ulike installasjonstyper"
+    },
+    {
+     "kode": "KM8504",
+     "tekst": "beskrive totalbildet av komplettering og andre operasjoner som pågår, og hvordan det påvirker eget arbeidsområde"
+    },
+    {
+     "kode": "KM8503",
+     "tekst": "forklare bruken av riggens bore- og slamsystem"
+    },
+    {
+     "kode": "KM8502",
+     "tekst": "planlegge operasjoner for å optimalisere tidsbruk og effektivisere installeringen av kompletteringsutstyr"
+    },
+    {
+     "kode": "KM8501",
+     "tekst": "installere fôringsrør og gjøre rede for betydningen av sementering ved installeringen"
+    },
+    {
+     "kode": "KM8500",
+     "tekst": "gjøre rede for betydningen av og gjennomføre brønnrensking før komplettering"
+    },
+    {
+     "kode": "KM8499",
+     "tekst": "utføre mottak, førbrukssjekk, preservering og pakking av utstyr"
+    },
+    {
+     "kode": "KM8516",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8517",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, komplettering når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 brønnfaget, komplettering. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, komplettering skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

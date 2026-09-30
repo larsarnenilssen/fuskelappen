@@ -1,0 +1,160 @@
+{
+ "kode": "BAK03-02",
+ "tittel": "Læreplan i vg3 bakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV628",
+   "tittel": "Kompetansemål og vurdering vg3 bakerfaget",
+   "fag": [
+    "BAK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7439",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere produksjon av bakervarer ut fra resept, råvarevalg, produksjonsmetode og gitte kriterier"
+    },
+    {
+     "kode": "KM7436",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom kvalitet, vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM7432",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM7462",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM7442",
+     "tekst": "forstå sammenhengen mellom kornets og råvarenes kjemiske sammensetning og deres bakertekniske egenskaper, og anvende dette for å optimalisere sluttproduktet"
+    },
+    {
+     "kode": "KM7438",
+     "tekst": "forstå grunnprinsippene i bakerens prosent og anvende kunnskapen i reseptoppbygging"
+    },
+    {
+     "kode": "KM7444",
+     "tekst": "produsere produkter med og uten kjemiske bakehjelpemidler og reflektere over hvordan kvaliteten påvirkes"
+    },
+    {
+     "kode": "KM7443",
+     "tekst": "vurdere og anvende ulike elteteknikker ved direkte og indirekte deigføring og de kjemiske egenskapene til ulike fordeiger, surdeiger og fermenteringsmetoder for å optimalisere sluttproduktet"
+    },
+    {
+     "kode": "KM7445",
+     "tekst": "produsere ulike typer brød, småbakst og søtbakst og vurdere resultatet av å bruke ulike formings- og steketeknikker"
+    },
+    {
+     "kode": "KM7455",
+     "tekst": "produsere og vurdere kvalitet på ulike fyllmasser, kremer og glasurer og gjøre rede for bruksområder"
+    },
+    {
+     "kode": "KM7460",
+     "tekst": "gjøre rede for de ulike baketekniske egenskapene til smør og margarin og produsere ulike typer laminerte deiger"
+    },
+    {
+     "kode": "KM7450",
+     "tekst": "anvende sensoriske tester i produksjon av bakervarer og gjøre rede for hvordan dette kan bidra til å sikreriktig kvalitet"
+    },
+    {
+     "kode": "KM7440",
+     "tekst": "vise kreativitet i arbeidet og ferdigstille produkter for salg på en estetisk måte"
+    },
+    {
+     "kode": "KM7461",
+     "tekst": "vurdere og framstille produkter ut fra myndighetenes anbefalinger for kosthold, helse og livsstil og for personer med allergier, matintoleranse og andre behov"
+    },
+    {
+     "kode": "KM7441",
+     "tekst": "beregne grovhetsgrad på bakervarer og reflektere over helseeffekten ved grovere produkter"
+    },
+    {
+     "kode": "KM7447",
+     "tekst": "utføre enkel markedsføring, yte service og bygge relasjoner med kunder ved profesjonell kundebehandling og salg"
+    },
+    {
+     "kode": "KM7459",
+     "tekst": "drøfte etiske dilemmaer ved produksjon og omsetning av bakervarer og gjøre bevisste og bærekraftige valg"
+    },
+    {
+     "kode": "KM7437",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM7435",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM7458",
+     "tekst": "reflektere over hvordan ønskede og uønskede mikroorganismer kan påvirke bakervarer, og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM7457",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM7456",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM7454",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM7452",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM7451",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM7449",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold av maskiner og utstyr og gjøre rede for konsekvensen ved avvik"
+    },
+    {
+     "kode": "KM7448",
+     "tekst": "gjennomføre beregninger og enkle kalkulasjoner i produksjon, produktutvikling og omsetning og drøfte faktorer som påvirker virksomhetens økonomiske resultater"
+    },
+    {
+     "kode": "KM7433",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM7453",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM7446",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM7434",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 bakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 bakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 bakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

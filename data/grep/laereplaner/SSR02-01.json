@@ -1,0 +1,238 @@
+{
+ "kode": "SSR02-01",
+ "tittel": "Læreplan i vg2 sal, service og reiseliv",
+ "spraak": "nno",
+ "fastsatt": "2026-03-17",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1011",
+   "tittel": "Kompetansemål og vurdering økonomi og administrasjon",
+   "fag": [
+    "SSR2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13065",
+     "tekst": "utvikle, presentere og vurdere ein forretningsplan"
+    },
+    {
+     "kode": "KM13061",
+     "tekst": "utforske trendar og forretningsmodellar lokalt og reflektere over korleis desse påverkar berekraft og miljø"
+    },
+    {
+     "kode": "KM13066",
+     "tekst": "beskrive rekrutteringsprosessar og reflektere over forventningar til tilsette i ulike typar servicebedrifter"
+    },
+    {
+     "kode": "KM13062",
+     "tekst": "berekne pris på eit produkt eller ei teneste og vurdere ulike former og strategiar for kalkulasjon og prissetjing"
+    },
+    {
+     "kode": "KM13067",
+     "tekst": "gjere greie for ulike typar lønn og lønnskostnader"
+    },
+    {
+     "kode": "KM13068",
+     "tekst": "utarbeide og presentere rekneskap og budsjett for ei sjølvvald verksemd eller eit sjølvvalt arrangement og kommentere budsjettavvik"
+    },
+    {
+     "kode": "KM13060",
+     "tekst": "rekne ut og bruke sentrale nøkkeltal og vurdere lønnsemda ut frå dei"
+    },
+    {
+     "kode": "KM13069",
+     "tekst": "beskrive ulike typar svinn, reflektere over konsekvensane av svinn og foreslå tiltak for å førebyggje svinn"
+    },
+    {
+     "kode": "KM13070",
+     "tekst": "reflektere over korleis berekraft blir teken omsyn til i ei verdikjede"
+    },
+    {
+     "kode": "KM13063",
+     "tekst": "beskrive og følgje regelverk som gjeld for servicebedrifter, og som regulerer forholdet til kundar, tilsette og næringsliv"
+    },
+    {
+     "kode": "KM13064",
+     "tekst": "bruke digitale system og plattformer til å rettleie, informere, kommunisere og følgje opp kundar, brukarar, gjester og kollegaer"
+    },
+    {
+     "kode": "KM13071",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget økonomi og administrasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget økonomi og administrasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget økonomi og administrasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget økonomi og administrasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV1012",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og marknadsføring",
+   "fag": [
+    "SSR2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13078",
+     "tekst": "gjere greie for ulike merkevarer og utforske ulike marknadsstrategiar som bedrifter kan bruke"
+    },
+    {
+     "kode": "KM13079",
+     "tekst": "gjere greie for samanhengen mellom ekstern, intern og interaktiv marknadsføring"
+    },
+    {
+     "kode": "KM13080",
+     "tekst": "presentere eit produkt som representerer innovasjon og nyskaping, og gjere greie for kva rolle lønnsemd, klima og etiske forhold har spelt i utviklinga"
+    },
+    {
+     "kode": "KM13081",
+     "tekst": "planleggje, gjennomføre og evaluere eit arrangement med tanke på lønnsemd, berekraft og sikkerheit"
+    },
+    {
+     "kode": "KM13075",
+     "tekst": "utforske ulike reiselivsdestinasjonar og vurdere korleis reiselivsverksemd påverkar berekraftig utvikling"
+    },
+    {
+     "kode": "KM13082",
+     "tekst": "utvikle og gjennomføre ei marknadsundersøking og bruke resultata i vidare arbeid"
+    },
+    {
+     "kode": "KM13083",
+     "tekst": "planleggje og gjennomføre ein marknadsføringskampanje og presentere korleis forbrukaråtferda og medievanane til målgruppa er tekne omsyn til"
+    },
+    {
+     "kode": "KM13076",
+     "tekst": "vurdere tiltak i salskanalar som kan fremje sal, meirsal og gjensal, og ta omsyn til dette i utviklinga av det indre og ytre salsmiljøet"
+    },
+    {
+     "kode": "KM13073",
+     "tekst": "planleggje, gjennomføre og avslutte eit sal og vurdere salsprosessen med utgangspunkt i måloppnåing, kundeoppleving, og bruk av eigna salsteknikkar"
+    },
+    {
+     "kode": "KM13077",
+     "tekst": "utvikle og presentere eit heilskapleg reiselivsprodukt og forklare korleis ulike aktørar samarbeider med og påverkar kvarandre"
+    },
+    {
+     "kode": "KM13084",
+     "tekst": "skape opplevingar av og formidle forteljingar om norsk og samisk kultur, natur og geografi"
+    },
+    {
+     "kode": "KM13074",
+     "tekst": "utforske og vurdere kva vertskapsrolla har å seie for ulike reiselivsaktivitetar"
+    },
+    {
+     "kode": "KM13085",
+     "tekst": "reflektere over korleis kultur, verdiar og haldningar påverkar kommunikasjon mellom menneske, og ta omsyn til dette i yrkesutøvinga"
+    },
+    {
+     "kode": "KM13072",
+     "tekst": "gjere greie for servicerolla og utforske korleis utøvinga av servicerolla må tilpassast ulike mottakarar i ulike situasjonar, og korleis måten rolla blir utøvd på, kan påverke omdømmet til bedrifter"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget kommunikasjon og marknadsføring når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget kommunikasjon og marknadsføring. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget kommunikasjon og marknadsføring ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget kommunikasjon og marknadsføring basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV1013",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerheit",
+   "fag": [
+    "SSR2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13093",
+     "tekst": "utarbeide ein risikoanalyse med forslag til tiltak og gjere greie for ulike former for risikovurdering"
+    },
+    {
+     "kode": "KM13088",
+     "tekst": "drøfte ulike trusselbilete for verksemder og for samfunnet"
+    },
+    {
+     "kode": "KM13086",
+     "tekst": "utforske, forklare og bruke ein beredskapsplan"
+    },
+    {
+     "kode": "KM13094",
+     "tekst": "vurdere ulike fysiske, tekniske, manuelle og administrative sikkerheitstiltak"
+    },
+    {
+     "kode": "KM13095",
+     "tekst": "vurdere tiltak som kan førebyggje konflikt, bruke ulike metodar for handtering av konflikt- og nødssituasjonar og forklare korleis utfordrande åtferd og eins eiga åtferd kan påverke situasjonen og sikkerheita"
+    },
+    {
+     "kode": "KM13087",
+     "tekst": "utføre livreddande førstehjelp, ta ansvar for ein skadestad og reflektere over kva eiga framferd har å seie"
+    },
+    {
+     "kode": "KM13089",
+     "tekst": "gjere greie for brannteori og planleggje, gjennomføre og evaluere ei brannøving"
+    },
+    {
+     "kode": "KM13090",
+     "tekst": "undersøkje helse-, miljø- og sikkerheitsarbeidet i ei verksemd og gjere greie for korleis ansvar og oppgåver er fordelte mellom dei ulike rollene i verksemda"
+    },
+    {
+     "kode": "KM13091",
+     "tekst": "reflektere over kva yrkesetikk og bedriftskultur har å seie innanfor servicefaga, og gjere greie for etiske dilemma som kan oppstå i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM13092",
+     "tekst": "reflektere over kva sikkerheit og personvern har å seie for yrkesutøvelsen, og følgje rutinar for sikkerheit og personvern i ulike informasjons- og kommunikasjonskanaler"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget helse, miljø og sikkerheit når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget helse, miljø og sikkerheit. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget helse, miljø og sikkerheit ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget helse, miljø og sikkerheit basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Økonomi og administrasjon: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og marknadsføring: Eleven skal ha éin standpunktkarakter.",
+    "Helse, miljø og sikkerheit: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Økonomi og administrasjon, kommunikasjon og marknadsføring og helse, miljø og sikkerheit: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Økonomi og administrasjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og marknadsføring: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helse, miljø og sikkerheit: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Økonomi og administrasjon, kommunikasjon og marknadsføring og helse, miljø og sikkerheit: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamenAdministrasjon og økonomi, marknadsføring og kommunikasjon og sikkerheit"
+   ]
+  }
+ ]
+}

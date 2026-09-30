@@ -1,0 +1,112 @@
+{
+ "kode": "LSM03-01",
+ "tittel": "Læreplan i vg3 låsesmedfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV739",
+   "tittel": "Kompetansemål og vurdering vg3 låsesmed",
+   "fag": [
+    "LSM3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9676",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i låsesmedfaget i henhold til sikkerhetsløsninger, gjeldende regelverk og bedriftens internkontrollsystem og begrunne de valg som er gjort"
+    },
+    {
+     "kode": "KM9679",
+     "tekst": "utføre arbeidet i henhold til forskrift om sikkerhet ved arbeid på lavspenningsanlegg, utføre livreddende førstehjelp, arbeide etter ergonomiske prinsipper og gjøre rede for hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9678",
+     "tekst": "kode, konfigurere og programmere utstyr og komponenter i henhold til kundens behov, produsentens spesifikasjon og gjøre rede for funksjon og virkemåte til utstyr og komponenter"
+    },
+    {
+     "kode": "KM9692",
+     "tekst": "beregne, produsere og installere mekaniske og mekatroniske låssystemer i henhold til systemleverandørens lisenskrav"
+    },
+    {
+     "kode": "KM9691",
+     "tekst": "framstille nøkler tilpasset låstype og forklare funksjon og virkemåte til ulike låstyper fungerer"
+    },
+    {
+     "kode": "KM9690",
+     "tekst": "utføre sammenføyning av ulike materialer, vurdere bruk av ulike teknikker og ta hensyn til materialenes egenskaper"
+    },
+    {
+     "kode": "KM9689",
+     "tekst": "bruke og vedlikeholde produksjonsverktøy og maskiner og gjøre rede for toleransekrav til verktøy og maskiner"
+    },
+    {
+     "kode": "KM9688",
+     "tekst": "reparere og sette sammen låser og sylindere og forklare produktets oppbygning"
+    },
+    {
+     "kode": "KM9687",
+     "tekst": "måle mekaniske og elektroniske verdier ved bruk av instrumenter og verktøy og vurdere måleresultatene mot beregnede verdier og tabeller"
+    },
+    {
+     "kode": "KM9686",
+     "tekst": "utføre systematisk feilsøking på anlegg, utstyr og komponenter, vurdere og foreslå tiltak for å rette feil"
+    },
+    {
+     "kode": "KM9693",
+     "tekst": "frese ut og installere mekaniske og elektromekaniske låser og beslag i dører, vinduer og andre bygningskonstruksjoner og gjøre rede for krav til verneutstyr og sikkerhet i arbeidsoppdragene"
+    },
+    {
+     "kode": "KM9685",
+     "tekst": "installere og vedlikeholde elektroniske adgangskontroll- og sikkerhetsanlegg og gjøre rede for funksjon og virkemåte til anleggene"
+    },
+    {
+     "kode": "KM9683",
+     "tekst": "installere, vedlikeholde og reparere mekaniske, elektroniske og elektromekaniske dørlukkere og dørautomatikk og gjøre rede for funksjon og virkemåte til utstyr og komponenter"
+    },
+    {
+     "kode": "KM9680",
+     "tekst": "utføre service og vedlikehold på enheter for verdioppbevaring og gjøre rede for enhetens oppbygging og virkemåte"
+    },
+    {
+     "kode": "KM9682",
+     "tekst": "utføre arbeidet i tråd med bedriftens rutiner og etiske retningslinjer for låsesmedfaget"
+    },
+    {
+     "kode": "KM9681",
+     "tekst": "håndtere avfall etter eget arbeid miljømessig og økonomisk, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9677",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid, drøfte fagets historie og betydning i samfunnet og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9684",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9694",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget og foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 låsesmedfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 låsesmedfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 låsesmedfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøve, som normalt skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

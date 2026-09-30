@@ -1,0 +1,112 @@
+{
+ "kode": "SVE03-02",
+ "tittel": "Læreplan i vg3 sveisefaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV710",
+   "tittel": "Kompetansemål og vurdering vg3 sveisefaget",
+   "fag": [
+    "SVE3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9215",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere sveiseprosessen i tråd med tegningsgrunnlag, prosedyrer, arbeidstillatelsessystem og gjeldende regelverk"
+    },
+    {
+     "kode": "KM9231",
+     "tekst": "reflektere over helsefarer ved arbeidsoppdrag og utføre sikker jobb-analyse"
+    },
+    {
+     "kode": "KM9230",
+     "tekst": "gjøre rede for og bruke ulike sveisemetoder og sveisestillinger på ulike materialer"
+    },
+    {
+     "kode": "KM9225",
+     "tekst": "planlegge sveiserekkefølge og velge materialer, verktøy, utstyr og tilsatsmaterialer tilpasset arbeidsoppgaven"
+    },
+    {
+     "kode": "KM9232",
+     "tekst": "vurdere faktorer som påvirker lønnsomheten ved valg av sveisemetode og materialtype"
+    },
+    {
+     "kode": "KM9229",
+     "tekst": "vurdere hvilke muligheter de enkelte sveisemetoder har for mekanisering og robotisering, og beskrive metoder for 3D-printing av metaller"
+    },
+    {
+     "kode": "KM9228",
+     "tekst": "gjøre rede for gyldighetsområde for et sveisesertifikat og kravene til sertifisering"
+    },
+    {
+     "kode": "KM9227",
+     "tekst": "vurdere hvilke NDT-metoder som skal brukes for å avdekke sveisedefekter"
+    },
+    {
+     "kode": "KM9226",
+     "tekst": "utføre arbeidet i tråd med arbeidsinstruksjoner og sveiseprosedyrer (Welding Procedure Specification)"
+    },
+    {
+     "kode": "KM9224",
+     "tekst": "behandle sveisetilsett i henhold til instruks fra bedrift og leverandør"
+    },
+    {
+     "kode": "KM9222",
+     "tekst": "feilsøke og utføre daglig vedlikehold av sveiseutstyr"
+    },
+    {
+     "kode": "KM9221",
+     "tekst": "gjøre rede for og utføre ulike metoder for fuging av sveis"
+    },
+    {
+     "kode": "KM9220",
+     "tekst": "gjøre rede for hvilken betydning beskyttelsesgasser har for sveiseresultatet og vurdere og velge riktig gass ut i fra arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9219",
+     "tekst": "gjøre rede for beregning og tolkning av parametre for varmetilførsel og måle forvarmings- og mellomlagstemperatur"
+    },
+    {
+     "kode": "KM9218",
+     "tekst": "vurdere kvaliteten på eget arbeid i henhold til sveiseprosedyrer, tegninger og gjeldende standarder"
+    },
+    {
+     "kode": "KM9217",
+     "tekst": "rapportere avvik og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM9216",
+     "tekst": "klargjøre det sveisede produktet til overflatebehandling"
+    },
+    {
+     "kode": "KM9223",
+     "tekst": "gjøre rede for krav til overflatetilstand på objektet før det går videre til overflatebehandling"
+    },
+    {
+     "kode": "KM9233",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 sveisefaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 sveisefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 sveisefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

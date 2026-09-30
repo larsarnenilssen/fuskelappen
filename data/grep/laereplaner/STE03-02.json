@@ -1,0 +1,104 @@
+{
+ "kode": "STE03-02",
+ "tittel": "Læreplan i steinfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV339",
+   "tittel": "Kompetansmål og vurdering steinfaget",
+   "fag": [
+    "STE3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM3558",
+     "tekst": "planlegge utvinning, foredling og bruk av stein, arbeide etter tegninger, beskrivelser og preaksepterte løsninger, velge verktøy og materialer og vurdere kostnadene, tidsbruken og miljøbelastningen ved arbeidet"
+    },
+    {
+     "kode": "KM3565",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM3573",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere arbeidet, arbeide i tråd med gjeldende regelverk for helse, miljø og sikkerhet og reflektere over konsekvensene av å ikke følge regelverket"
+    },
+    {
+     "kode": "KM3569",
+     "tekst": "risikovurdere arbeidsoppdrag gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM3571",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM3566",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støv- og støyeksponering og bruk av farlige kjemikalier."
+    },
+    {
+     "kode": "KM3574",
+     "tekst": "bruke verne- og sikkerhetsutstyr og reflektere over konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM3568",
+     "tekst": "tegne prosjekter, lage arbeidsbeskrivelser og beregne mengder, areal, masser, vekt, kostnader og materialbruk til prosjektet"
+    },
+    {
+     "kode": "KM3563",
+     "tekst": "håndtere stein etter gjeldende regelverk, og gjøre rede for ulike bruksområder for gjenbruk av skrotstein og gjenbruke steinen på en måte som minimere miljøbelastningen"
+    },
+    {
+     "kode": "KM3562",
+     "tekst": "vurdere bust, kløv og svall, spalte steinen, og reflektere over hvordan feilbryting påvirker ulike typer bergarter"
+    },
+    {
+     "kode": "KM3572",
+     "tekst": "velge verktøy, utvinne ulike typer bergarter og vurdere hvordan vaiersaging, boring og kiling påvirker produkter av granitt, skifer, marmor og kleberstein"
+    },
+    {
+     "kode": "KM3564",
+     "tekst": "identifisere sprekker, fargerenner og kvalitetsforskjeller i steinen og vurdere bearbeidingsmetode ut fra kvaliteten på steinen"
+    },
+    {
+     "kode": "KM3570",
+     "tekst": "klassifisere bergarter, identifisere bruksområder, og vurdere hvordan temperatur, fuktighet og klima påvirker steinens egenskaper"
+    },
+    {
+     "kode": "KM3567",
+     "tekst": "sage, slipe, polere, sandblåse, flammebrenne og hugge bergarter og vurdere hvordan ulike typer foredling påvirker bruksområdene for stein"
+    },
+    {
+     "kode": "KM3561",
+     "tekst": "foreslå steintype og foredlingsmetoder ut fra kunders behov for bruk"
+    },
+    {
+     "kode": "KM3560",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM3559",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter og reflektere over krav og forventinger som blir stilt til et likeverdig og inkluderende yrkesfelleskap"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i steinfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i steinfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke veiledningen for å utvikle kompetansen sin i lærefaget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i steinfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

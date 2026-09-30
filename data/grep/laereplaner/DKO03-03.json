@@ -1,0 +1,104 @@
+{
+ "kode": "DKO03-03",
+ "tittel": "Læreplan i vg3 dimensjonskontrollfaget",
+ "spraak": "nob",
+ "fastsatt": "2026-04-10",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1014",
+   "tittel": "Kompetansemål og vurdering vg3 dimensjonskontrollfaget",
+   "fag": [
+    "DKO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13096",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere arbeidsoppgaver i henhold til tegninger, spesifikasjoner og kontrollprosesser"
+    },
+    {
+     "kode": "KM13097",
+     "tekst": "utføre arbeid i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM13098",
+     "tekst": "anvende referanser og referansesystemer på tegninger"
+    },
+    {
+     "kode": "KM13099",
+     "tekst": "kontrollere og verifisere at komponentenes geometriske toleranser, form, retning, beliggenhet og kast følger kravene i relevant dokumentasjon"
+    },
+    {
+     "kode": "KM13100",
+     "tekst": "gjøre rede for og anvende maksimum material-prinsippet"
+    },
+    {
+     "kode": "KM13101",
+     "tekst": "velge og bruke måleinstrumenter og kontrollmetoder, og begrunne valg"
+    },
+    {
+     "kode": "KM13102",
+     "tekst": "utføre analoge geometriske og trigonometriske beregninger"
+    },
+    {
+     "kode": "KM13103",
+     "tekst": "vurdere måleresultater mot arbeidstegninger, krav og spesifikasjoner"
+    },
+    {
+     "kode": "KM13104",
+     "tekst": "justere måleverktøy og målefiksturer, og gjennomføre målinger og kontroll av overflatebeskaffenhet ved hjelp av egnet måleverktøy"
+    },
+    {
+     "kode": "KM13105",
+     "tekst": "programmere koordinatmålemaskiner og kvalitetssikre måleprogram"
+    },
+    {
+     "kode": "KM13106",
+     "tekst": "gjøre rede for og utføre vedlikehold av måleverktøy, målefiksturer og koordinatmålemaskiner"
+    },
+    {
+     "kode": "KM13107",
+     "tekst": "gjøre rede for hvordan materialbehandling og produksjonsprosess kan påvirke måleresultater"
+    },
+    {
+     "kode": "KM13108",
+     "tekst": "gjøre rede for og beregne måleusikkerhet"
+    },
+    {
+     "kode": "KM13109",
+     "tekst": "dokumentere og rapportere avvik i henhold til gjeldende kvalitetssystem"
+    },
+    {
+     "kode": "KM13110",
+     "tekst": "utføre kontroll av sporbarhet av måleresultater, måleverktøy, kalibreringer og komponenter"
+    },
+    {
+     "kode": "KM13111",
+     "tekst": "kalibrere måleverktøy og reflektere over hensikten med kalibrering"
+    },
+    {
+     "kode": "KM13112",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 dimensjonskontrollfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 dimensjonskontrollfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 dimensjonskontrollfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst åtte virkedager."
+   ]
+  }
+ ]
+}

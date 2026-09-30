@@ -1,0 +1,214 @@
+{
+ "kode": "KPL02-01",
+ "tittel": "Læreplan i vg2 kjemiprosess- og laboratoriefag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV429",
+   "tittel": "Kompetansemål og vurdering produksjon og tjenester",
+   "fag": [
+    "KPL2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4566",
+     "tekst": "kjøre prosesser sikkert og i henhold til prosedyrer for drift og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4593",
+     "tekst": "bruke, tegne og forklare blokkskjemaer, tekniske flytskjemaer og forriglingsmatriser."
+    },
+    {
+     "kode": "KM4592",
+     "tekst": "beskrive og forklare virkemåten for måle-, styre- og reguleringsutstyr og kunne bruke utstyret i laboratoriet"
+    },
+    {
+     "kode": "KM4591",
+     "tekst": "gjøre rede for start- og stopp-prosedyrer for utstyr, anlegg og instrumenter"
+    },
+    {
+     "kode": "KM4590",
+     "tekst": "beskrive ulike reguleringsprinsipper"
+    },
+    {
+     "kode": "KM4589",
+     "tekst": "beskrive prinsipper for å kontrollere og optimalisere produksjonsprosesser og utføre arbeidet i tråd med prinsippene"
+    },
+    {
+     "kode": "KM4588",
+     "tekst": "gjøre rede for virkemåten til skjermbaserte styrings- og overvåkingssystemer"
+    },
+    {
+     "kode": "KM4587",
+     "tekst": "identifisere og korrigere avvik og mulige feilkilder på måle-, styre- og reguleringsutstyr"
+    },
+    {
+     "kode": "KM4586",
+     "tekst": "utføre vedlikehold på utstyr, instrumenter og måleutstyr i samsvar med rutiner og prosedyrer"
+    },
+    {
+     "kode": "KM4585",
+     "tekst": "bruke norsk og engelsk fagterminologi i kommunikasjon med andre"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produksjon og tjenester når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produksjon og tjenester. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i produksjon og tjenester ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produksjon og tjenester basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV430",
+   "tittel": "Kompetansemål og vurdering kjemisk teknologi",
+   "fag": [
+    "KPL2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4584",
+     "tekst": "beskrive enhetsoperasjoner med tilhørende prosess- og laboratorieutstyr og forklare virkemåten"
+    },
+    {
+     "kode": "KM4583",
+     "tekst": "forklare den logiske sammenhengen mellom enhetsoperasjonene i prosessanlegg"
+    },
+    {
+     "kode": "KM4582",
+     "tekst": "forklare hvordan kjemiske og fysiske forhold påvirker kjemiske reaksjoner og produksjonsprosesser"
+    },
+    {
+     "kode": "KM4581",
+     "tekst": "anvende grunnleggende fysikk og kjemi til å forklare prosesser, utstyr, målemetoder og analysemetoder"
+    },
+    {
+     "kode": "KM4580",
+     "tekst": "gjennomføre beregninger på masse- og energibalanser"
+    },
+    {
+     "kode": "KM4579",
+     "tekst": "drøfte trykktap og energiomsetning i et rørsystem og sammenligne med forsøk"
+    },
+    {
+     "kode": "KM4578",
+     "tekst": "forklare og gjøre beregninger på varme- og energibalanse i et anlegg og sammenligne med forsøk"
+    },
+    {
+     "kode": "KM4577",
+     "tekst": "drøfte tiltak og metoder for miljøvennlig produksjon og bærekraftig utvikling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kjemisk teknologi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kjemisk teknologi. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kjemisk teknologi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kjemisk teknologi basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV431",
+   "tittel": "Kompetansemål og vurdering analyse, dokumentasjon og kvalitet",
+   "fag": [
+    "KPL2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4576",
+     "tekst": "anvende grunnleggende kjemi for å forstå kjemiske reaksjoner i prosess og analyse"
+    },
+    {
+     "kode": "KM4575",
+     "tekst": "gjøre rede for kjemiske analysemetoder og planlegge og gjennomføre laboratorieforsøk"
+    },
+    {
+     "kode": "KM4574",
+     "tekst": "kalibrere laboratorieutstyr og instrumenter, og gjøre rede for systematisk vedlikehold"
+    },
+    {
+     "kode": "KM4573",
+     "tekst": "gjøre rede for metoder for å kvalitetssikre prøvetaking og analyser"
+    },
+    {
+     "kode": "KM4572",
+     "tekst": "bruke støkiometriske beregninger"
+    },
+    {
+     "kode": "KM4571",
+     "tekst": "tolke, presentere og rapportere analyseresultater og vurdere usikkerhet og avvik i målingene"
+    },
+    {
+     "kode": "KM4570",
+     "tekst": "utføre miljøtester i nærmiljøet og analysere dem"
+    },
+    {
+     "kode": "KM4569",
+     "tekst": "lage et mikrobiologisk preparat og analysere det ved mikroskopering"
+    },
+    {
+     "kode": "KM4568",
+     "tekst": "bruke datablader og oppslagsverk, og foreta risikovurderinger"
+    },
+    {
+     "kode": "KM4567",
+     "tekst": "arbeide og evaluere eget arbeid i tråd med gjeldende standarder og regelverk for internkontroll og kvalitet og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4594",
+     "tekst": "vurdere og beskrive egen utvikling på grunnlag av utførte arbeidsoppgaver knyttet til ulike prosess- og laboratorieteknikker"
+    },
+    {
+     "kode": "KM4595",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiveren og arbeidstakeren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i analyse, dokumentasjon og kvalitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i analyse, dokumentasjon og kvalitet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i analyse, dokumentasjon og kvalitet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i analyse, dokumentasjon og kvalitet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og tjenester: Eleven skal ha én standpunktkarakter.",
+    "Kjemisk teknologi: Eleven skal ha én standpunktkarakter.",
+    "Analyse, dokumentasjon og kvalitet: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og tjenester, kjemisk teknologi og analyse, dokumentasjon og kvalitet: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og tjenester: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kjemisk teknologi: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Analyse, dokumentasjon og kvalitet: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og tjenester, kjemisk teknologi og analyse, dokumentasjon og kvalitet: Privatisten skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

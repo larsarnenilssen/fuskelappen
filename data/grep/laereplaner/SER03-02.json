@@ -1,0 +1,144 @@
+{
+ "kode": "SER03-02",
+ "tittel": "Læreplan i vg3 servitørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV659",
+   "tittel": "Kompetansemål og vurdering vg3 servitørfaget",
+   "fag": [
+    "SER3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8150",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere servering av mat og drikke ut fra lokale, nasjonale og internasjonale tradisjoner, trender, sesonger og anledninger"
+    },
+    {
+     "kode": "KM8155",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8166",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM8176",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystem og reflektere over hvor viktig dette arbeidet er for virksomheten, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8174",
+     "tekst": "utvikle menyer basert på tilgjengelige råvarer og produkter, gjøre rede for anbefalingene og vurdere alternative løsninger basert på gjestenes ønsker og behov"
+    },
+    {
+     "kode": "KM8173",
+     "tekst": "presentere og tilpasse mat og drikke ut fra gjestenes behov, allergier og intoleranser og vurdere hvordan dette kan bidra til en fullverdig og trygg matopplevelse"
+    },
+    {
+     "kode": "KM8172",
+     "tekst": "anvende utstyr og bruke kreativitet ved tilberedning og servering av kalde og varme drikker etter lokale, nasjonale og internasjonale oppskrifter"
+    },
+    {
+     "kode": "KM8171",
+     "tekst": "bruke mise en place for ulike serveringsmetoder og teknikker og reflektere over hvordan valg av metode kan bidra til profesjonell gjestebehandling og tjenesteyting"
+    },
+    {
+     "kode": "KM8151",
+     "tekst": "vise kreativitet i arbeidet med å dekke og dekorere bord, søke inspirasjon gjennom bruk av digitale verktøy og ivareta fagets krav til estetikk"
+    },
+    {
+     "kode": "KM8168",
+     "tekst": "yte profesjonell service og gjestebehandling og reflektere over hvordan servitøren kan bidra til kvalitet på mat og drikke, måltidsglede, reiselivsopplevelse og mersalg"
+    },
+    {
+     "kode": "KM8154",
+     "tekst": "gjøre rede for rutiner for profesjonell behandling av kundeklager og reflektere over hvordan dette er god kundebehandling"
+    },
+    {
+     "kode": "KM8170",
+     "tekst": "følge lover, forskrifter og retningslinjer for servering av alkoholholdig drikke, være tydelig i kommunikasjon med gjester og sette grenser, rapportere avvik og gjøre rede for konsekvenser ved brudd på regelverk"
+    },
+    {
+     "kode": "KM8153",
+     "tekst": "vurdere, anbefale og begrunne forslag om alkoholfrie og alkoholholdige drikkevarer ut fra retter og gjestens ønsker"
+    },
+    {
+     "kode": "KM8167",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger, gjester og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8152",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM8165",
+     "tekst": "reflektere over hvordan ønskede og uønskede mikroorganismer kan påvirke produkter og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM8164",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM8175",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM8163",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM8160",
+     "tekst": "følge krav og rutiner for merking og sporing og reflektere over konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8159",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8158",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold, rapportere feil og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8157",
+     "tekst": "gjennomføre beregninger og enkle kalkulasjoner og drøfte faktorer som påvirker virksomhetens økonomiske resultater"
+    },
+    {
+     "kode": "KM8162",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM8169",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM8161",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM8156",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 servitørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 servitørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 servitørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

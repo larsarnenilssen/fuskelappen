@@ -1,0 +1,144 @@
+{
+ "kode": "MME03-02",
+ "tittel": "Læreplan i vg3 motormekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV685",
+   "tittel": "Kompetansemål og vurdering vg3 motormekanikerfaget",
+   "fag": [
+    "MME3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8708",
+     "tekst": "planlegge, gjennomføre, vurdere, dokumentere og kvalitetssikre arbeidsoppgaver i tråd med gjeldende regelverk og arbeidsbeskrivelser"
+    },
+    {
+     "kode": "KM8732",
+     "tekst": "reflektere over sammenhengen mellom eget arbeid, arbeidsmiljø og lønnsomhet"
+    },
+    {
+     "kode": "KM8731",
+     "tekst": "vurdere risiko og gjennomføre arbeidsoppgaver i tråd med regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8711",
+     "tekst": "gjøre rede for ulike faktorer som påvirker kostnader, effektivitet og produktivitet, og reflektere over tiltak som kan påvirke lønnsomhet"
+    },
+    {
+     "kode": "KM8730",
+     "tekst": "bruke produkt- og sikkerhetsdatablader, behandle avfall etter krav og reflektere over hvordan bedriftens ressursforvaltning påvirker miljøet"
+    },
+    {
+     "kode": "KM8729",
+     "tekst": "bruke tekniske opplysninger og utføre arbeidsoppgaver etter fabrikantens anvisninger"
+    },
+    {
+     "kode": "KM8728",
+     "tekst": "måle slitasje på og overhale framdriftsmotorer"
+    },
+    {
+     "kode": "KM8727",
+     "tekst": "teste trykk og lekkasje på motor og gir med tilhørende systemer"
+    },
+    {
+     "kode": "KM8726",
+     "tekst": "kontrollere og justere motorinnstillinger"
+    },
+    {
+     "kode": "KM8725",
+     "tekst": "vedlikeholde motor og utstyr etter gjeldende miljøstandarder"
+    },
+    {
+     "kode": "KM8724",
+     "tekst": "vurdere resultater fra feilsøking og bruke resultatene i arbeid med å justere og reparere"
+    },
+    {
+     "kode": "KM8723",
+     "tekst": "feilsøke og skifte komponenter til framdriftsanlegg, ror og styringssystemer"
+    },
+    {
+     "kode": "KM8722",
+     "tekst": "tilvirke og reparere komponenter ved motorinstallasjoner og utføre motorinstallasjon"
+    },
+    {
+     "kode": "KM8733",
+     "tekst": "kontrollere og reparere feil på innsprøytingsanlegg"
+    },
+    {
+     "kode": "KM8710",
+     "tekst": "feilsøke og reparere feil på digitale styringssystemer og nettverk"
+    },
+    {
+     "kode": "KM8721",
+     "tekst": "feilsøke og reparere feil på elektriske systemer og komponenter"
+    },
+    {
+     "kode": "KM8719",
+     "tekst": "måle og beregne elektriske størrelser"
+    },
+    {
+     "kode": "KM8718",
+     "tekst": "vurdere og velge tilvirkningsmateriale, sammenføyningsmetoder og komponenter ut fra korrosjon"
+    },
+    {
+     "kode": "KM8717",
+     "tekst": "vurdere og velge verktøy, spesialverktøy og diagnoseverktøy"
+    },
+    {
+     "kode": "KM8716",
+     "tekst": "feilsøke, montere og reparere feil på hydrauliske og pneumatiske anlegg"
+    },
+    {
+     "kode": "KM8715",
+     "tekst": "feilsøke og reparere feil på varme- og ventilasjonsanlegg"
+    },
+    {
+     "kode": "KM8714",
+     "tekst": "velge og bruke oljer, smøremidler og væsker til motor og utstyr"
+    },
+    {
+     "kode": "KM8713",
+     "tekst": "gjøre rede for og følge helse-, miljø- og sikkerhetsprosedyrer ved utbedring av feil på elektrisk framdriftsmaskineri og reflektere over risiko ved arbeidet"
+    },
+    {
+     "kode": "KM8712",
+     "tekst": "feilsøke og reparere feil på elektrisk manøver- og framdriftsmaskineri med tilhørende energiforsyning"
+    },
+    {
+     "kode": "KM8709",
+     "tekst": "drøfte arbeidsoppdrag med kunder og behandle kunder i tråd med bedriftens retningslinjer for kundebehandling"
+    },
+    {
+     "kode": "KM8720",
+     "tekst": "bruke tekniske hjelpemidler i henhold til gjeldende regelverk ved forflytnings- og løfteoperasjoner"
+    },
+    {
+     "kode": "KM8734",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 motormekanikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 motormekanikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 motormekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fire til fem virkedager."
+   ]
+  }
+ ]
+}

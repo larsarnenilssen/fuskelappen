@@ -1,0 +1,128 @@
+{
+ "kode": "ERF03-02",
+ "tittel": "Læreplan i vg3 elektroreparatørfaget",
+ "spraak": "nno",
+ "fastsatt": "2022-05-23",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV770",
+   "tittel": "Kompetansemål og vurdering vg3 elektroreparatørfaget",
+   "fag": [
+    "ERF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10278",
+     "tekst": "risikovurdere, planleggje, gjennomføre og dokumentere arbeidsoppdraga i elektroreparatørfaget individuelt og i samarbeid med andre i tråd med gjeldande regelverk og internkontrollsystemet til bedrifta, og grunngi dei vala som er gjorde"
+    },
+    {
+     "kode": "KM10271",
+     "tekst": "utføre arbeid på utstyr i tråd med forskrift om sikkerheit ved arbeid i og drift av elektriske anlegg, utføre livreddande førstehjelp, arbeide i tråd med ergonomiske prinsipp, bruke verneutstyr og drøfte korleis sikkerheitsarbeid kan førebyggje ulukker og skadar"
+    },
+    {
+     "kode": "KM10262",
+     "tekst": "kople til og frå utstyr på ein- og trefaseeffektuttak og gjere greie for oppbygginga av ulike fordelingsnett"
+    },
+    {
+     "kode": "KM10277",
+     "tekst": "tilpasse elektrisk utstyr for tilkopling til ulike fordelingssystem og effektuttak og vurdere straumføringsevna på leiarar og leidningar"
+    },
+    {
+     "kode": "KM10260",
+     "tekst": "montere og setje i drift ulikt elektrisk og gassdrive utstyr og rettleie brukaren om sikker bruk og vedlikehald"
+    },
+    {
+     "kode": "KM10266",
+     "tekst": "montere og setje i drift alarm-, styrings- og overvakingssystem for å avgrense skade ved feil på utstyret og gjere greie for korleis systema verkar"
+    },
+    {
+     "kode": "KM10261",
+     "tekst": "funksjonsteste og sluttkontrollere utstyr i tråd med rettleiinga frå produsenten, og gjere greie for garanti- og reklamasjonsvilkår"
+    },
+    {
+     "kode": "KM10263",
+     "tekst": "konfigurere, oppdatere, fjerndiagnostisere og overvake utstyr kopla til eit elektronisk kommunikasjonsnett, og vurdere og setje i gang tiltak for å vareta datasikkerheit og personvern"
+    },
+    {
+     "kode": "KM10264",
+     "tekst": "kontrollere og halde ved like elektrisk og gassdrive utstyr i samsvar med rettleiinga frå produsenten"
+    },
+    {
+     "kode": "KM10267",
+     "tekst": "kontrollere, halde ved like og skifte ut leidning og fiber i utstyret og gjere greie for korleis forlegning påverkar straumføringsevne, transmisjonseigenskapar og elektromagnetisk kompatibilitet"
+    },
+    {
+     "kode": "KM10268",
+     "tekst": "kontrollere, halde ved like og skifte ut ein- og trefasemotorar med styresystem og motorvern i utstyret og gjere greie for korleis desse verkar"
+    },
+    {
+     "kode": "KM10269",
+     "tekst": "utføre systematisk elektrisk og mekanisk feilsøking og reparasjon på elektrisk og gassdrive utstyr, velje feilsøkingsmetode, måle elektriske og gasstekniske verdiar og vurdere måleresultatet"
+    },
+    {
+     "kode": "KM10279",
+     "tekst": "systematisk feilsøkje, halde ved like og dokumentere utstyr som bruker konveksjonsprinsippet, og gjere greie for korleis utstyret verkar"
+    },
+    {
+     "kode": "KM10270",
+     "tekst": "handtere og vurdere risiko for brann og andre hendingar og gjennomføre risikoreduserande tiltak for arbeid på utsyr som inneheld kjølemedium, og gjere greie for korleis kjølemedium skal avhendast"
+    },
+    {
+     "kode": "KM10272",
+     "tekst": "velje materiale og tilverke delar og komponentar til utstyr ved bruk av verktøy og maskiner i samsvar med arbeidsteikningar, toleransar og spesifikasjonar"
+    },
+    {
+     "kode": "KM10273",
+     "tekst": "montere, modifisere, setje i drift, halde ved like og funksjonsteste elektriske og mekaniske delar i utstyr og produkt ut frå ytre påverknader og eigenskapane til materiala"
+    },
+    {
+     "kode": "KM10274",
+     "tekst": "velje og bruke kjemiske og fysiske reinhaldsmetodar og reinhaldsmiddel på utstyr og gjere greie for fare knytt til reinhaldsmetodane og reinhaldsmidla"
+    },
+    {
+     "kode": "KM10275",
+     "tekst": "rettleie brukaren om dei miljømessige sidene og lønnsemda ved å reparere og halde ved like i staden for å skifte ut"
+    },
+    {
+     "kode": "KM10276",
+     "tekst": "diskutere verdien av å oppleve meistring og stoltheit over eige arbeid og av å oppleve tilhøyrsel og tryggleik i eit arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM10265",
+     "tekst": "reflektere over føresetnader, verdiar og reglar i bedriftsdemokratiet og i det organiserte arbeidslivet og korleis eit regulert arbeidsliv kan bidra til å motverke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM10280",
+     "tekst": "drøfte etiske dilemma ved val av elektrisk utstyr og løysingar og diskutere berekraft og konsekvensar av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM10281",
+     "tekst": "handtere avfall etter eige arbeid på ein berekraftig måte, slette sensitiv digital informasjon ved avhending av utstyr og gjere greie for gjeldande energi- og miljøkrav"
+    },
+    {
+     "kode": "KM10282",
+     "tekst": "dokumentere eige arbeid, vurdere arbeidsmetodar, faglege løysingar, kvalitet og estetikk i arbeidsoppdraget, foreslå forbetringar og reflektere rundt moglege endringar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 elektroreparatørfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i lærefaget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i elektroreparatørfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget. Målet med undervegsvurderinga er at lærlingane skal utvikle sjølvstende til å gjennomføre heilskaplege fagmessige yrkesoppgåver frå planlegging til sluttkontroll og dokumentasjon og kunne grunngi dei vala som er gjorde."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp ha bestått ein skriftleg eksamen laga ut ifrå læreplanen i lærefaget. Eksamen utarbeidast sentralt og sensurerast lokalt.",
+    "Opplæringa i elektroreparatørfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst 6 vyrkedagar."
+   ]
+  }
+ ]
+}

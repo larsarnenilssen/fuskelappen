@@ -1,0 +1,255 @@
+{
+ "kode": "AUT03-05",
+ "tittel": "Læreplan i vg3 automatiseringsfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2026-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV997",
+   "tittel": "Kompetansemål og vurdering automatiseringssystemer",
+   "fag": [
+    "AUT3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12923",
+     "tekst": "utføre risikovurdering og vurdere tiltak som skal ivareta person- og maskinsikkerheten, i henhold til hvilke regelverk og normer som gjelder for arbeidet som skal utføres"
+    },
+    {
+     "kode": "KM12921",
+     "tekst": "utføre arbeid på automatiserte anlegg fagmessig, nøyaktig og i overensstemmelse med gjeldende regelverk og normer for elektriske installasjoner og maskiner"
+    },
+    {
+     "kode": "KM12932",
+     "tekst": "planlegge, gjennomføre, vurdere kvalitet, sluttkontrollere og digitalt dokumentere arbeidsoppdragene i faget automatiseringssystemer, individuelt og i samarbeid med andre, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12938",
+     "tekst": "tegne tekniske flytskjemaer og annen dokumentasjon, og anvende dette i utførelsen av alle arbeidsoppdrag"
+    },
+    {
+     "kode": "KM12935",
+     "tekst": "utføre vedlikehold, systematisk feilsøking og feilretting med egnede instrumenter og verktøy, og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM12937",
+     "tekst": "montere, konfigurere, kalibrere, justere og sette i drift reguleringssløyfer for motor- og servodrift, temperatur, trykk, nivå og strømning, og simulere og optimalisere regulatorer basert på prosessbehov og gjøre rede for funksjon og virkemåte"
+    },
+    {
+     "kode": "KM12928",
+     "tekst": "gjøre rede for måleprinsipper for veiing, deteksjon med kamera, vibrasjon, gassdekteksjon, pH-måling og konduktivitet for analyse og montere, konfigurere, kalibrere, justere og sette i drift minst ett av disse målesystemene"
+    },
+    {
+     "kode": "KM12927",
+     "tekst": "montere og sette i drift ulike typer pådragsorganer med tilhørende forstillingselementer og hjelpeutstyr i henhold til leverandørens dokumentasjon, og gjøre rede for hvordan utstyret fungerer, og hvilke funksjoner det har"
+    },
+    {
+     "kode": "KM12930",
+     "tekst": "montere og sette i drift sikkerhetskomponenter og -utstyr for nødstopp- og sikkerhetskretser, og gjøre rede for sikkerhetskategoriene Safety Integrity Level (SIL) og Performance Level (PL)"
+    },
+    {
+     "kode": "KM12929",
+     "tekst": "programmere, montere og sette i drift programmerbare styresystemer for elektriske-, pneumatiske- og hydrauliske anlegg og gjøre rede for hvordan utstyret fungerer, og hvilke funksjoner det har"
+    },
+    {
+     "kode": "KM12936",
+     "tekst": "installere bus-systemer og konfigurere digital og analog kommunikasjon i automatiserte anlegg, og gjøre rede for hvordan komponentene fungerer, hvordan datasignaler bearbeides og transporteres mellom nettverk, og vurdere tiltak for å etablere et sikkert elektronisk kommunikasjonsnett"
+    },
+    {
+     "kode": "KM12924",
+     "tekst": "installere, terminere og skjøte elektriske og optiske kabler og måle kvaliteten på forbindelsen og beskrive faktorer som påvirker kvaliteten på forbindelsen"
+    },
+    {
+     "kode": "KM12925",
+     "tekst": "installere, programmere, konfigurere og brukertilpasse «Human–Machine Interface» (HMI) for et automatiseringssystem og gjøre rede for bruksområdene"
+    },
+    {
+     "kode": "KM12926",
+     "tekst": "simulere, sette i drift, programmere og optimalisere robot og gjøre rede for roboters funksjon og anvendelse i automatiserte anlegg"
+    },
+    {
+     "kode": "KM12931",
+     "tekst": "foreslå, vurdere og utprøve forenklinger og forbedringer av produkter og produksjonsprosesser og gjøre rede for mulig bruk i nye produkter og tjenester"
+    },
+    {
+     "kode": "KM12922",
+     "tekst": "håndtere avfall etter eget arbeid i industrielle og automatiserte anlegg på en miljøvennlig og økonomisk måte, drøfte produkters miljøprestasjon, slette sensitiv informasjon ved avhending og gjøre etiske og økonomiske refleksjoner rundt bærekraft, sirkulær økonomi og produktkvalitet"
+    },
+    {
+     "kode": "KM12933",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12934",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12939",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget automatiseringssystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget automatiseringssystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget automatiseringssystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget automatiseringssystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV998",
+   "tittel": "Kompetansemål og vurdering mekanisk arbeid",
+   "fag": [
+    "AUT3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12940",
+     "tekst": "risikovurdere og utføre arbeidet fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer, rutiner for kvalitetssikring og internkontroll og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM12947",
+     "tekst": "planlegge, gjennomføre, vurdere, dokumentere og sluttkontrollere arbeidsoppdrag individuelt og i samarbeid med andre og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12948",
+     "tekst": "utarbeide digitale tegninger i 2D og 3D tilpasset arbeidsoppdragene og vurdere materialbehov med hensyn til ressursutnyttelse og miljøpåvirkning"
+    },
+    {
+     "kode": "KM12941",
+     "tekst": "velge og bruke egnede materialer og håndverktøy med korrekt bruk av kraft og dreiemoment i arbeidsoppdrag"
+    },
+    {
+     "kode": "KM12942",
+     "tekst": "tilvirke deler og komponenter til automatiserte anlegg ved bruk av verktøy og maskiner for kutting, saging, knekking, boring, gjenging, dreiing, fresing, skjæring og rørbøying i henhold til arbeidstegninger, toleranser og spesifikasjoner"
+    },
+    {
+     "kode": "KM12943",
+     "tekst": "tilvirke og sammenføye deler og komponenter til automatiserte anlegg ved låsing av skrueforbindelser, liming, poppnagling, lodding og relevante sveisemetoder samt additive tilvirkingsmetoder i henhold til arbeidstegninger, toleranser og spesifikasjoner"
+    },
+    {
+     "kode": "KM12944",
+     "tekst": "montere, modifisere, sette i drift, vedlikeholde og funksjonsteste mekanisk utstyr i automatiserte anlegg ut fra ytre påvirkninger og materialenes kjemiske, elektriske og magnetiske egenskaper og strekkfasthet"
+    },
+    {
+     "kode": "KM12945",
+     "tekst": "gjennomføre og dokumentere vedlikehold av reguleringsventiler og ventilutrustning etter bedriftens og leverandørens spesifikasjoner"
+    },
+    {
+     "kode": "KM12946",
+     "tekst": "montere, modifisere, sette i drift, vedlikeholde og funksjonsteste pneumatiske og hydrauliske komponenter og anlegg med tilhørende rørsystemer på en sikker måte med dimensjonering med utgangspunkt i beregninger av trykk og kraft"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget mekanisk arbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget mekanisk arbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget mekanisk arbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget mekanisk arbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV999",
+   "tittel": "Kompetansemål og vurdering elenergisystemer",
+   "fag": [
+    "AUT3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12953",
+     "tekst": "risikovurdere, planlegge, gjennomføre, sluttkontrollere, sette i drift og dokumentere arbeidsoppdragene i elenergisystemer fagmessig, individuelt og i samarbeid med andre, i henhold til gjeldende regelverk, internkontrollsystemer og produsentenes dokumentasjon, og begrunne valg"
+    },
+    {
+     "kode": "KM12952",
+     "tekst": "utføre arbeidet i henhold til forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12951",
+     "tekst": "velge og bruke verktøy, maskiner og materiell ved utførelse av arbeidsoppdragene og vurdere materialbehov og økonomi"
+    },
+    {
+     "kode": "KM12954",
+     "tekst": "dimensjonere og velge ledning, kabel og vern i industrielle og automatiserte anlegg og gjøre beregninger og bruke tabeller for å dokumentere beskyttelse mot overbelastning, elektrisk sjokk og kortslutning"
+    },
+    {
+     "kode": "KM12955",
+     "tekst": "montere føringsvei og installere ledning, kabel og fiber i automatiserte anlegg i henhold til krav til forlegning, og gjøre rede for hvordan forlegning og elektromagnetisk støy påvirker strømføringsevne og transmisjonsegenskaper"
+    },
+    {
+     "kode": "KM12949",
+     "tekst": "installere elektriske lavspenningsanlegg i industrielle og automatiserte anlegg med tilhørende jordingssystemer, og gjøre rede for ulike spenningssystemer og installasjonsmetoder"
+    },
+    {
+     "kode": "KM12956",
+     "tekst": "montere og installere veksel- og likespenningsmotorer med frekvens- og servodrift for styring, regulering og posisjonering med tilhørende valg av motordrifter og motorytelse ut fra beregnet last"
+    },
+    {
+     "kode": "KM12957",
+     "tekst": "bygge og sette i drift en elektrisk tavle for et automatiseringssystem med tilkobling til nettsystem og gjøre rede for ulike spenningssystemer"
+    },
+    {
+     "kode": "KM12959",
+     "tekst": "utføre systematisk feilsøking og feilretting med egnede instrumenter og verktøy, og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM12950",
+     "tekst": "skjøte og terminere ulike kabler for signal- og effektkretser og andre ledende forbindelser ved bruk av egnet metode, verktøy, pressutstyr og dreiemoment, og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM12958",
+     "tekst": "måle og identifisere elektriske støykilder i elektriske anlegg og vurdere og iverksette tiltak for å redusere effekten av elektromagnetisk støy (EMI/EMC)"
+    },
+    {
+     "kode": "KM12960",
+     "tekst": "gjøre rede for forskriftskrav for arbeid på automatiserte anlegg i eksplosjonsfarlige områder og krav til verktøy, instrumenter og utstyr"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget elenergisystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget elenergisystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget elenergisystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget elenergisystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Automasjonssystemer: Eleven skal ha én standpunktkarakter.",
+    "Elenergisystemer: Eleven skal ha én standpunktkarakter.",
+    "Mekanisk arbeid: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Automasjonssystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elenergisystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Mekanisk arbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  },
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanene i programfagene i vg3 automatiseringsfaget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, i tillegg ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 automatisering. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Opplæringen i vg3 automatiseringsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst ti virkedager."
+   ]
+  }
+ ]
+}

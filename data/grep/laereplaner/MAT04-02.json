@@ -1,0 +1,170 @@
+{
+ "kode": "MAT04-02",
+ "tittel": "Læreplan i matematikk for samfunnsfag (matematikk S)",
+ "spraak": "nob",
+ "fastsatt": "2020-05-26",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV295",
+   "tittel": "Kompetansemål og vurdering matematikk S1",
+   "fag": [
+    "MAT4Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3132",
+     "tekst": "planlegge og gjennomføre et selvstendig arbeid med reelle datasett knyttet til samfunnsøkonomiske temaer og forhold, og analysere og presentere funn"
+    },
+    {
+     "kode": "KM3135",
+     "tekst": "uttrykke egne resonnementer ved hjelp av matematiske begreper og symbolspråk"
+    },
+    {
+     "kode": "KM3141",
+     "tekst": "forstå begrepene gjennomsnittlig og momentan vekstfart, grenseverdi og derivasjon, og bruke disse for å løse praktiske problemer"
+    },
+    {
+     "kode": "KM3143",
+     "tekst": "bruke ulike strategier for å utforske og bestemme grenseverdier til funksjoner, og utforske og argumentere for anvendelser av grenseverdier"
+    },
+    {
+     "kode": "KM3140",
+     "tekst": "anvende derivasjon til å analysere og tolke egne matematiske modeller av reelle datasett"
+    },
+    {
+     "kode": "KM3139",
+     "tekst": "anvende derivasjon til å analysere og forstå optimaliseringsproblemer"
+    },
+    {
+     "kode": "KM3134",
+     "tekst": "utforske og gjøre rede for egenskapene ved potenser og logaritmer, og gi eksempler på reelle anvendelser av disse egenskapene"
+    },
+    {
+     "kode": "KM3122",
+     "tekst": "utforske og forstå regneregler for potenser og logaritmer, og bruke ulike strategier for å løse eksponentialligninger og logaritmeligninger"
+    },
+    {
+     "kode": "KM3142",
+     "tekst": "gjøre rede for og argumentere for om en funksjon er kontinuerlig eller diskontinuerlig i et punkt i et definisjonsområde, og gi eksempler på anvendelser av funksjoner som ikke er kontinuerlige"
+    },
+    {
+     "kode": "KM3138",
+     "tekst": "utforske og forstå kombinatoriske forsøk med ordnede og uordnede utvalg"
+    },
+    {
+     "kode": "KM3137",
+     "tekst": "bruke digitale verktøy til å simulere og utforske utfall i stokastiske forsøk, og forstå begrepet stokastiske variabler"
+    },
+    {
+     "kode": "KM3133",
+     "tekst": "analysere et problem der sannsynlighet og kombinatorikk inngår, og bruke ulike strategier i problemløsingen"
+    },
+    {
+     "kode": "KM3136",
+     "tekst": "utforske og tolke binomiske og hypergeometriske fordelinger, og gi eksempler på reelle anvendelser av disse fordelingene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i matematikk S1. Elevene viser og utvikler kompetanse i faget når de bruker matematiske begreper i kommunikasjon, og når de finner, forstår og generaliserer matematiske sammenhenger og formidler disse. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende med modellering ved å utføre og presentere eget arbeid i faget. Videre viser og utvikler elevene kompetanse ved å utforske fagbegreper og ved å resonnere og argumentere for gyldigheten av matematiske utsagn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske matematikk og løse matematiske problemer gjennom å resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å kommunisere egne tanker i matematikk ved bruk av fagbegreper, og om utviklingen deres i utforskende arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å se sammenhenger mellom teoretisk matematikk og praktiske anvendelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter matematikk S1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i matematikk S1 basert på kompetansen eleven har vist, både skriftlig, muntlig og digitalt, ved å bruke matematiske uttrykksformer og fagbegreper, bruke ulike problemløsingsstrategier og argumentere for og kritisk vurdere egne og andres løsninger og modeller."
+   ]
+  },
+  {
+   "kode": "KV296",
+   "tittel": "Kompetansemål og vurdering matematikk S2",
+   "fag": [
+    "MAT4Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3131",
+     "tekst": "utforske egenskaper ved ulike rekker og gjøre rede for praktiske anvendelser av egenskaper ved rekker"
+    },
+    {
+     "kode": "KM3130",
+     "tekst": "utforske rekursive sammenhenger ved å bruke programmering og presentere egne framgangsmåter"
+    },
+    {
+     "kode": "KM3126",
+     "tekst": "forstå definisjonen av det bestemte integralet og anvende integralet til å analysere funksjoner"
+    },
+    {
+     "kode": "KM3125",
+     "tekst": "gjøre rede for analysens fundamentalteorem og gjøre rede for konsekvenser av teoremet"
+    },
+    {
+     "kode": "KM3129",
+     "tekst": "analysere og tolke ulike funksjoner ved å bruke derivasjon og integrasjon"
+    },
+    {
+     "kode": "KM3127",
+     "tekst": "modellere og analysere eksponentiell og logistisk vekst i reelle datasett"
+    },
+    {
+     "kode": "KM3145",
+     "tekst": "forstå begrepene forventningsverdi, varians og standardavvik, og bruke disse størrelsene til å tolke stokastiske variabler"
+    },
+    {
+     "kode": "KM3124",
+     "tekst": "simulere utfall i, utforske og tolke ulike statistiske fordelinger, og gi eksempler på reelle anvendelser av disse fordelingene"
+    },
+    {
+     "kode": "KM3128",
+     "tekst": "finne grensekostnader og grenseinntekter i økonomiske modeller, og gjøre rede for betydningen av disse størrelsene"
+    },
+    {
+     "kode": "KM3123",
+     "tekst": "argumentere for sentralgrensesetningen og utforske og tolke praktiske situasjoner ved hjelp av normalfordelingen"
+    },
+    {
+     "kode": "KM3144",
+     "tekst": "gjennomføre hypotesetesting i reelle datasett og tolke resultatet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i matematikk S2. Elevene viser og utvikler kompetanse i faget når de bruker matematiske begreper i kommunikasjon, og når de finner, forstår og generaliserer matematiske sammenhenger og formaliserer disse. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende med statistikk ved å planlegge, utføre og presentere eget arbeid i faget. Videre viser og utvikler elevene kompetanse ved å utforske fagbegreper og ved å resonnere og argumentere for gyldigheten av matematiske utsagn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske matematikk og løse matematiske problemer gjennom å resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å kommunisere egne tanker og resonnementer i matematikk ved bruk av fagbegreper, og om utviklingen deres i selvstendig og utforskende arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å se sammenhenger mellom teoretisk matematikk og praktiske anvendelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter matematikk S2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i matematikk S2 basert på kompetansen eleven har vist, både skriftlig, muntlig og digitalt, ved å bruke matematiske uttrykksformer og fagbegreper i kommunikasjon av matematikk, bruke ulike problemløsingsstrategier og argumentere for og kritisk vurdere egne og andres løsninger og modeller."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk S1: Eleven skal ha én standpunktkarakter.",
+    "Matematikk S2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Matematikk S1: Eleven kan trekkes ut til skriftlig eksamen eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel.",
+    "Matematikk S2: Eleven kan trekkes ut til skriftlig eksamen eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Matematikk S1: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel.",
+    "Matematikk S2: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel."
+   ]
+  }
+ ]
+}

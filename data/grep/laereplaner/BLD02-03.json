@@ -1,0 +1,172 @@
+{
+ "kode": "BLD02-03",
+ "tittel": "Læreplan i vg2 blomsterdekoratør",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV389",
+   "tittel": "Kompetansemål og vurdering produktutvikling, bransjelære og kommunikasjon",
+   "fag": [
+    "BLD2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4104",
+     "tekst": "planleggje og dokumentere eige blomsterarbeid"
+    },
+    {
+     "kode": "KM4126",
+     "tekst": "utvikle nye produkt i ulike stilformer med inspirasjon frå stilhistoria"
+    },
+    {
+     "kode": "KM4125",
+     "tekst": "analysere rom, personar, anledning og underlag og bruke funn for å grunngi val i produktutvikling"
+    },
+    {
+     "kode": "KM4124",
+     "tekst": "nytte faguttrykk i kommunikasjon og dokumentasjon og bruke ulike kommunikasjonsformer og fagleg rettleiing i sals- og servicesituasjonar"
+    },
+    {
+     "kode": "KM4123",
+     "tekst": "bruke og utvikle skisser og arbeidsteikningar med riktige mål og proporsjonar"
+    },
+    {
+     "kode": "KM4122",
+     "tekst": "nytte og utforske ulike digitale ressursar i eige arbeid med produktutvikling, i dokumentasjon og i kommunikasjon"
+    },
+    {
+     "kode": "KM4121",
+     "tekst": "presentere blomsterfaglege produkt på ein visuell og estetisk måte"
+    },
+    {
+     "kode": "KM4120",
+     "tekst": "berekne materiale til produkt etter ein fastsett pris"
+    },
+    {
+     "kode": "KM4119",
+     "tekst": "berekne utsalspris ut ifrå innkjøp, tidsbruk og lønnsemd"
+    },
+    {
+     "kode": "KM4118",
+     "tekst": "norske og vitskaplege namn på botaniske materiale og bruke desse i kommunikasjon med kundar og leverandørar"
+    },
+    {
+     "kode": "KM4117",
+     "tekst": "grunngi val av botaniske materiale med omsyn til haldbarheit, eigenskapar, bruksområde, opphav og sesong i produktutviklinga"
+    },
+    {
+     "kode": "KM4127",
+     "tekst": "utvikle og reflektere over strategiar for å møte forventningar frå kundar i ulike livssituasjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget produktutvikling, bransjelære og kommunikasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget produktutvikling, bransjelære og kommunikasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget produktutvikling, bransjelære og kommunikasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget produktutvikling, bransjekunnskap og kommunikasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV390",
+   "tittel": "Kompetansemål og vurdering produksjon og arbeidsliv",
+   "fag": [
+    "BLD2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4116",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere eige blomsterarbeid og eigen prosess"
+    },
+    {
+     "kode": "KM4114",
+     "tekst": "utvikle faglege produkt i ulike stilar og uttrykk knytte til ulike anledningar og kulturar"
+    },
+    {
+     "kode": "KM4113",
+     "tekst": "nytte materiale og grunngi valet av materiale ut frå det ønskte uttrykket på eit produkt og ut frå eigenskapane og haldbarheita til materiala"
+    },
+    {
+     "kode": "KM4111",
+     "tekst": "gjennomføre arbeidsoppgåver i tråd med gjeldande reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM4112",
+     "tekst": "bruke ulike komposisjonsprinsipp og formalestetiske verkemiddel i eige blomsterarbeid"
+    },
+    {
+     "kode": "KM4110",
+     "tekst": "nytte formålstenlege handverksteknikkar med omsyn til haldbarheit, funksjon, ressursutnytting, berekraft og økonomi, og grunngi eigne val av handverksteknikkar"
+    },
+    {
+     "kode": "KM4115",
+     "tekst": "gjere greie for ulike stilepokar, stilformer, trendar, motar og kulturelle utrykk og bruke denne kunnskapen som inspirasjon i blomsterarbeid"
+    },
+    {
+     "kode": "KM4109",
+     "tekst": "vurdere og kvalitetssikre eige blomsterarbeid"
+    },
+    {
+     "kode": "KM4108",
+     "tekst": "velje, bruke og vedlikehalde verktøy i praktisk arbeid"
+    },
+    {
+     "kode": "KM4107",
+     "tekst": "utforske og eksperimentere med ulike teknikkar og botaniske materiale"
+    },
+    {
+     "kode": "KM4106",
+     "tekst": "reflektere over samanhengen mellom berekraft, oppbevaring av råvarer, ressursutnytting, avfallshandtering og produksjon og import av botaniske materiale, og bruke denne kunnskapen i produksjon av blomsterfaglege produkt"
+    },
+    {
+     "kode": "KM4105",
+     "tekst": "bruke eit breitt utval av botaniske materiale og behandle desse på ein forsvarleg måte med omsyn til haldbarheit og estetikk"
+    },
+    {
+     "kode": "KM4128",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget produksjon og arbeidsliv når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget produksjon og arbeidsliv. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget produksjon og arbeidsliv ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget produksjon og arbeidsliv basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produktutvikling, bransjelære og kommunikasjon: Eleven skal ha éin standpunktkarakter.",
+    "Produksjon og arbeidsliv: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Produktutvikling, bransjelære og kommunikasjon, og produksjon og arbeidsliv: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Produktutvikling, bransjelære og kommunikasjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Produksjon og arbeidsliv: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Produktutvikling, bransjelære og kommunikasjon, og produksjon og arbeidsliv: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,218 @@
+{
+ "kode": "GFG01-03",
+ "tittel": "Læreplan i geofag",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV971",
+   "tittel": "Kompetansemål og vurdering geofag X",
+   "fag": [
+    "GFG1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12681",
+     "tekst": "gjøre rede for vekselvirkninger mellom de ulike jordsystemene og hvordan disse kan påvirke geosfæren og hydrosfæren"
+    },
+    {
+     "kode": "KM12682",
+     "tekst": "gjøre rede for bevegelser i jordas indre og hvilke konsekvenser de har for jordskorpa og jordoverflaten"
+    },
+    {
+     "kode": "KM12676",
+     "tekst": "utforske ulike mineralgrupper, bergartsgrupper og sedimenter, og tolke hvor de passer inn i bergartssyklusen"
+    },
+    {
+     "kode": "KM12677",
+     "tekst": "utforske berggrunn, løsmasser og jordarter lokalt, og tolke observasjonene for å beskrive områdets geologiske historie og betydning for lokale ressurser"
+    },
+    {
+     "kode": "KM12678",
+     "tekst": "sammenligne ulike landformer og gjøre rede for hvordan de dannes og endres under påvirkning av jordsystemene og menneskelig aktivitet"
+    },
+    {
+     "kode": "KM12679",
+     "tekst": "gjøre rede for det hydrologiske kretsløpet med vekt på ferskvann og utforske og presentere hvordan det påvirkes av menneskelig aktivitet"
+    },
+    {
+     "kode": "KM12680",
+     "tekst": "utforske en naturfare knyttet til geosfæren eller hydrosfæren i et bestemt geografisk område og vurdere risiko ved hjelp av modellering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i geofag X. Elevene viser og utvikler kompetanse i faget når de bruker fagteori og modeller til å utforske og se sammenhenger i og mellom jordsystemene og i ulike geofaglige problemstillinger. Elevene viser og utvikler også kompetanse gjennom å samle inn data fra feltarbeid, modeller og tekster. Videre viser og utvikler elevene kompetanse ved å bearbeide og visualisere innsamlede data og presentere og reflektere over resultater og funn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å tilrettelegge for ulike arbeidsmåter som utfordrer elevene til å utforske aktuelle geofaglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i geofag X, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle sin kompetanse i geofag X og bruke kompetansen i kjente og ukjente situasjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter geofag X. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i geofag X basert på kompetansen eleven har vist av innsikt i og forståelse av jorda som system og menneskets rolle i jordsystemene. Standpunktvurderingen skal også være basert på kompetansen eleven har vist i og gjennom praktisk arbeid, og ved å bearbeide data og reflektere over resultater fra dette."
+   ]
+  },
+  {
+   "kode": "KV972",
+   "tittel": "Kompetansemål og vurdering geofag 1",
+   "fag": [
+    "GFG1Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12694",
+     "tekst": "gjøre rede for vekselvirkninger mellom de ulike jordsystemene og hvordan disse kan påvirke geosfæren og hydrosfæren"
+    },
+    {
+     "kode": "KM12693",
+     "tekst": "gjøre rede for bevegelser i jordas indre og hvilke konsekvenser de har for jordskorpa og jordoverflaten"
+    },
+    {
+     "kode": "KM12683",
+     "tekst": "utforske ulike mineralgrupper, bergartsgrupper og sedimenter, og tolke hvor de passer inn i bergartssyklusen"
+    },
+    {
+     "kode": "KM12684",
+     "tekst": "gjøre rede for ulike metoder som brukes for å datere bergarter, og bruke metoder for å identifisere relativ alder"
+    },
+    {
+     "kode": "KM12685",
+     "tekst": "utforske berggrunn, løsmasser og jordarter lokalt, og tolke observasjonene for å beskrive områdets geologiske historie og betydning for lokale ressurser"
+    },
+    {
+     "kode": "KM12686",
+     "tekst": "sammenligne ulike landformer og gjøre rede for hvordan de dannes og endres under påvirkning av jordsystemene og menneskelig aktivitet"
+    },
+    {
+     "kode": "KM12687",
+     "tekst": "gjøre rede for det hydrologiske kretsløpet med vekt på ferskvann og utforske og presentere hvordan det påvirkes av menneskelig aktivitet"
+    },
+    {
+     "kode": "KM12688",
+     "tekst": "vurdere hvordan ulike lokale og globale ferskvannsressurser kan utnyttes på en bærekraftig måte"
+    },
+    {
+     "kode": "KM12689",
+     "tekst": "gjøre rede for danning, kartlegging og utvinning av geologiske ressurser nasjonalt og globalt og drøfte konsekvenser av å utvinne og utnytte disse i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM12690",
+     "tekst": "gjøre rede for ulike naturfarer knyttet til geosfæren og hydrosfæren, og vurdere hvordan mennesker kan forebygge og tilpasse seg disse farene"
+    },
+    {
+     "kode": "KM12692",
+     "tekst": "utforske en naturfare knyttet til geosfæren eller hydrosfæren i et bestemt geografisk område og vurdere risiko ved hjelp av modellering"
+    },
+    {
+     "kode": "KM12691",
+     "tekst": "gjennomføre geofaglig feltarbeid knyttet til geosfæren eller hydrosfæren, bearbeide og tolke de innsamlede dataene og presentere resultatene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i geofag 1. Elevene viser og utvikler kompetanse i faget når de bruker fagteori og modeller til å utforske og se sammenhenger i og mellom jordsystemene og i ulike geofaglige problemstillinger. Elevene viser og utvikler også kompetanse gjennom å velge metoder og kilder for å samle inn data fra feltarbeid, modeller og tekster. Videre viser og utvikler elevene kompetanse ved å bearbeide og visualisere innsamlede data og presentere og reflektere over resultater og funn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge til rette for ulike arbeidsmåter som utfordrer elevene til å utforske aktuelle geofaglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i geofag 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle sin kompetanse i geofag 1 og bruke kompetansen i kjente og ukjente situasjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter geofag 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i geofag 1 basert på kompetansen eleven har vist av innsikt i og forståelse av jorda som system og menneskets rolle i jordsystemene. Standpunktvurderingen skal også være basert på kompetansen eleven har vist i og gjennom feltarbeid og modellering, og ved å bearbeide data og reflektere over resultatene fra disse."
+   ]
+  },
+  {
+   "kode": "KV973",
+   "tittel": "Kompetansemål og vurdering geofag 2",
+   "fag": [
+    "GFG1Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12698",
+     "tekst": "gjøre rede for vekselvirkninger mellom de ulike jordsystemene, og hvordan disse kan påvirke havet, atmosfæren og kryosfæren"
+    },
+    {
+     "kode": "KM12695",
+     "tekst": "gjøre rede for strålingsbalanse, strålingsfordeling og strålingspådriv og bruke disse til å forstå den globale sirkulasjonen i atmosfæren"
+    },
+    {
+     "kode": "KM12697",
+     "tekst": "gjøre rede for konsekvensene av jordens rotasjon, tetthetsforskjeller og trykkforskjeller og hvordan de påvirker havet og atmosfæren"
+    },
+    {
+     "kode": "KM12696",
+     "tekst": "gjøre rede for hvordan ulike værsystemer oppstår og utvikler seg på global, regional og lokal skala, og tolke ulike værkart og værutvikling"
+    },
+    {
+     "kode": "KM12699",
+     "tekst": "gjøre rede for hvordan numeriske modeller i geofag bygges opp og videreutvikles, og beskrive hvordan modellene brukes innenfor værvarsling, havmodellering og klimaforskning"
+    },
+    {
+     "kode": "KM12700",
+     "tekst": "gjøre rede for klimasystemet på ulike skalaer i tid og rom og vurdere antropogen klimapåvirkning"
+    },
+    {
+     "kode": "KM12701",
+     "tekst": "gjøre rede for forskning på forhistorisk klima, og hvordan det bidrar til å lage prognoser for framtidens klima"
+    },
+    {
+     "kode": "KM12702",
+     "tekst": "drøfte konsekvenser av klimaendringer for enkeltmennesker, samfunn og økosystem, og vurdere bærekraftige løsninger for hvordan enkeltmennesker og samfunn kan redusere og tilpasse seg klimaendringer i nåtid og framtid"
+    },
+    {
+     "kode": "KM12703",
+     "tekst": "drøfte hvordan energiressurser fra hav og atmosfære kan utnyttes på en bærekraftig måte, både nasjonalt og globalt"
+    },
+    {
+     "kode": "KM12704",
+     "tekst": "gjennomføre geofaglig feltarbeid knyttet til havet, atmosfæren eller kryosfæren, bearbeide og tolke de innsamlede dataene og presentere resultatene"
+    },
+    {
+     "kode": "KM12705",
+     "tekst": "vurdere risiko ved naturfarer som følge av fenomener i atmosfæren, havet og kryosfæren og drøfte hvordan klimaendringer kan påvirke disse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i geofag 2. Elevene viser og utvikler kompetanse i faget når de bruker fagteori og modeller til å utforske og se sammenhenger i og mellom jordsystemene og i ulike geofaglige problemstillinger. Elevene viser og utvikler også kompetanse gjennom å velge metoder og kilder for å samle inn data fra feltarbeid, modeller og tekster. Videre viser og utvikler elevene kompetanse ved å bearbeide og visualisere innsamlede data og presentere og reflektere over resultater og funn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge til rette for ulike arbeidsmåter som utfordrer elevene til å utforske aktuelle geofaglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i geofag 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle sin kompetanse i geofag 2 og bruke kompetansen i kjente og ukjente situasjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter geofag 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i geofag 2 basert på kompetansen eleven har vist av innsikt i og forståelse av jorda som system og menneskets rolle i jordsystemene. Standpunktvurderingen skal også være basert på kompetansen eleven har vist i og gjennom feltarbeid og modellering, og ved å bearbeide data og reflektere over resultatene fra disse."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Geofag X: Eleven skal ha én standpunktkarakter.",
+    "Geofag 1: Eleven skal ha én standpunktkarakter.",
+    "Geofag 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Geofag X: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Geofag 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Geofag 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Geofag X: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Geofag 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Geofag 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

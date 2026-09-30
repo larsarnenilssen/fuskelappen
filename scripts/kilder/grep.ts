@@ -1,20 +1,35 @@
 // Endringer i Grep-dataene (data/grep/) mellom to hentinger: nye og fjernede programområder og fagkoder,
-// nye fagnavn og endrede årstimetall. Ren logikk, testes i tests/unit/grep.test.ts (avgjørelse 018).
+// nye fagnavn, endrede årstimetall og vurderingsordninger, og nye, fjernede og endrede læreplaner.
+// Ren logikk, testes i tests/unit/kontrollsak.test.ts (avgjørelse 018 og 022).
 
 export type Programomrader = Record<string, Record<string, [string, string][]>>;
 export type Fagkoder = Record<string, [string, string][]>;
 export type Arstimer = Record<string, number | null>;
 
+/** Det som sammenlignes for hvert fag i fagindeksen (data/grep/fagindeks.json). */
+export interface Fagspor {
+  navn: string;
+  timer: number | null;
+  /** Vurderingsordningen for elever som kort tekst, f.eks. «standpunkt, trekkordning_2, eksamensform_2». */
+  vurdering: string;
+}
+
 export interface Grepdata {
   programomrader: Programomrader;
   fagkoder: Fagkoder;
   arstimer: Arstimer;
+  /** Alle fagkoder i videregående (fase 2). Mangler i data fra før fase 2. */
+  fag?: Record<string, Fagspor>;
+  /** Fingeravtrykk per læreplan (data/grep/laereplaner/). */
+  laereplaner?: Record<string, string>;
 }
 
 export interface Grependringer {
   programomrader: { nye: string[]; fjernet: string[] };
   fagkoder: { nye: string[]; fjernet: string[]; nyttNavn: string[] };
   arstimer: { endret: string[]; nye: string[]; fjernet: string[] };
+  fag?: { nye: string[]; fjernet: string[]; endret: string[] };
+  laereplaner?: { nye: string[]; fjernet: string[]; endret: string[] };
 }
 
 function programliste(p: Programomrader): Map<string, string> {
@@ -40,7 +55,7 @@ export function sammenlignGrep(gammel: Grepdata, ny: Grepdata): Grependringer {
   const nf = fagliste(ny.fagkoder);
   const ga = new Map(Object.entries(gammel.arstimer));
   const na = new Map(Object.entries(ny.arstimer));
-  return {
+  const ut: Grependringer = {
     programomrader: {
       nye: [...np].filter(([k]) => !gp.has(k)).map(([k, n]) => `${k} ${n}`),
       fjernet: [...gp].filter(([k]) => !np.has(k)).map(([k, n]) => `${k} ${n}`),
@@ -56,10 +71,43 @@ export function sammenlignGrep(gammel: Grepdata, ny: Grepdata): Grependringer {
       fjernet: [...ga].filter(([k]) => !na.has(k)).map(([k, n]) => `${k}: ${timer(n)}`),
     },
   };
+  if (ny.fag) {
+    // Fagkoder og årstimetall som allerede står i delene over, tas ikke med to ganger.
+    const kjent = new Set([...nf.keys(), ...gf.keys()]);
+    const kjenteTimer = new Set([...na.keys(), ...ga.keys()]);
+    const gammelFag = gammel.fag ?? {};
+    const nye = Object.entries(ny.fag).filter(([k]) => !(k in gammelFag));
+    ut.fag = {
+      nye: gammel.fag ? nye.filter(([k]) => !kjent.has(k)).map(([k, f]) => `${k} ${f.navn}`) : [],
+      fjernet: Object.entries(gammelFag)
+        .filter(([k]) => !(k in (ny.fag ?? {})) && !kjent.has(k))
+        .map(([k, f]) => `${k} ${f.navn}`),
+      endret: Object.entries(ny.fag).flatMap(([k, f]) => {
+        const g = gammelFag[k];
+        if (!g) return [];
+        const linjer: string[] = [];
+        if (g.timer !== f.timer && !kjenteTimer.has(k)) linjer.push(`${k} ${f.navn}: årstimer ${timer(g.timer)} → ${timer(f.timer)}`);
+        if (g.vurdering !== f.vurdering) linjer.push(`${k} ${f.navn}: vurderingsordning ${g.vurdering} → ${f.vurdering}`);
+        if (g.navn !== f.navn && !kjent.has(k)) linjer.push(`${k}: ${g.navn} → ${f.navn}`);
+        return linjer;
+      }),
+    };
+  }
+  if (ny.laereplaner) {
+    const g = gammel.laereplaner ?? {};
+    const n = ny.laereplaner;
+    ut.laereplaner = {
+      nye: gammel.laereplaner ? Object.keys(n).filter((k) => !(k in g)) : [],
+      fjernet: Object.keys(g).filter((k) => !(k in n)),
+      endret: Object.keys(n).filter((k) => k in g && g[k] !== n[k]),
+    };
+  }
+  return ut;
 }
 
 export function antallEndringer(e: Grependringer): number {
-  return [e.programomrader, e.fagkoder, e.arstimer].reduce((s, del) => s + Object.values(del).reduce((t, l: string[]) => t + l.length, 0), 0);
+  const deler: Record<string, string[]>[] = [e.programomrader, e.fagkoder, e.arstimer, e.fag ?? {}, e.laereplaner ?? {}];
+  return deler.reduce((s, del) => s + Object.values(del).reduce((t, l) => t + l.length, 0), 0);
 }
 
 /** Kort sammendrag, f.eks. «3 nye fagkoder, 1 endret årstimetall». */
@@ -73,6 +121,12 @@ export function grepsammendrag(e: Grependringer): string {
     [e.arstimer.endret.length, 'endret årstimetall', 'endrede årstimetall'],
     [e.arstimer.nye.length, 'nytt årstimetall', 'nye årstimetall'],
     [e.arstimer.fjernet.length, 'årstimetall fjernet', 'årstimetall fjernet'],
+    [e.fag?.nye.length ?? 0, 'nytt fag', 'nye fag'],
+    [e.fag?.fjernet.length ?? 0, 'fag fjernet', 'fag fjernet'],
+    [e.fag?.endret.length ?? 0, 'endring i et fag', 'endringer i fag'],
+    [e.laereplaner?.nye.length ?? 0, 'ny læreplan', 'nye læreplaner'],
+    [e.laereplaner?.fjernet.length ?? 0, 'læreplan fjernet', 'læreplaner fjernet'],
+    [e.laereplaner?.endret.length ?? 0, 'endret læreplan', 'endrede læreplaner'],
   ];
   const tekst = deler.filter(([n]) => n > 0).map(([n, en, flere]) => `${n} ${n === 1 ? en : flere}`);
   return tekst.length === 0 ? 'Ingen endringer.' : `${tekst.join(', ')}.`;
@@ -89,6 +143,12 @@ export function grepdetaljer(e: Grependringer, maks = 60): string[] {
     ...e.arstimer.endret.map((l) => `Endret årstimetall: ${l}`),
     ...e.arstimer.nye.map((l) => `Nytt årstimetall: ${l}`),
     ...e.arstimer.fjernet.map((l) => `Årstimetall fjernet: ${l}`),
+    ...(e.fag?.nye ?? []).map((l) => `Nytt fag: ${l}`),
+    ...(e.fag?.fjernet ?? []).map((l) => `Fag fjernet: ${l}`),
+    ...(e.fag?.endret ?? []).map((l) => `Endret fag: ${l}`),
+    ...(e.laereplaner?.nye ?? []).map((l) => `Ny læreplan: ${l}`),
+    ...(e.laereplaner?.fjernet ?? []).map((l) => `Læreplan fjernet: ${l}`),
+    ...(e.laereplaner?.endret ?? []).map((l) => `Endret læreplan: ${l} (https://www.udir.no/lk20/${l.toLowerCase()})`),
   ];
   return linjer.length > maks ? [...linjer.slice(0, maks), `… og ${linjer.length - maks} til.`] : linjer;
 }

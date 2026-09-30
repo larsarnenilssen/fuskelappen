@@ -1,0 +1,128 @@
+{
+ "kode": "AKT03-03",
+ "tittel": "Læreplan i vg3 aktivitørfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV473",
+   "tittel": "Kompetansemål og vurdering aktivitørfaget",
+   "fag": [
+    "AKT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5190",
+     "tekst": "vurdere og bruke informasjon om funksjonsevna, behova, interessene og bakgrunn til brukarane i aktiviseringsarbeidet"
+    },
+    {
+     "kode": "KM5210",
+     "tekst": "setje mål for, planleggje, gjennomføre og vurdere aktiviseringsprosessar ut frå funksjonsnivået til den enkelte brukaren og måla til verksemda"
+    },
+    {
+     "kode": "KM5196",
+     "tekst": "samtale med og lytte til brukarar og pårørande"
+    },
+    {
+     "kode": "KM5209",
+     "tekst": "motivere og rettleie brukarar og pårørande i gjennomføring av aktivitetar"
+    },
+    {
+     "kode": "KM5205",
+     "tekst": "koordinere og leie ulike aktivitetar for enkeltbrukarar og for grupper av brukarar"
+    },
+    {
+     "kode": "KM5201",
+     "tekst": "planleggje nye aktivitetar ut frå dokumenterte funksjonsendringar hos ein brukar"
+    },
+    {
+     "kode": "KM5207",
+     "tekst": "bruke digitale ressursar i aktiviseringsprosessen"
+    },
+    {
+     "kode": "KM5212",
+     "tekst": "følgje reglar for personvern og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5208",
+     "tekst": "velje materiale, verktøy og teknikkar til ulike aktivitetar som varetek miljøet"
+    },
+    {
+     "kode": "KM5192",
+     "tekst": "vurdere korleis forbruk og aktivitetar kan påverke miljøet"
+    },
+    {
+     "kode": "KM5211",
+     "tekst": "administrere og dokumentere aktiviseringsarbeid i samsvar med måla til verksemda"
+    },
+    {
+     "kode": "KM5199",
+     "tekst": "setje opp budsjett og rekne ut materialforbruk og pris på aktivitetar og produkt"
+    },
+    {
+     "kode": "KM5204",
+     "tekst": "kommunisere og samhandle på tvers av tenestene for å oppnå heilskap og samanheng i tilbodet og gjere bruk av annan kompetanse når det er nødvendig"
+    },
+    {
+     "kode": "KM5197",
+     "tekst": "leie, koordinere og leggje til rette for frivillig arbeid"
+    },
+    {
+     "kode": "KM5203",
+     "tekst": "utføre arbeidet i tråd med etiske retningslinjer og vurdere eige arbeid"
+    },
+    {
+     "kode": "KM5206",
+     "tekst": "utføre førstehjelp og følgje rutinar for varsling"
+    },
+    {
+     "kode": "KM5202",
+     "tekst": "arbeide i samsvar med gjeldande reglar for helse, miljø og sikkerheit og delta i arbeid med internkontroll og kvalitetssikring"
+    },
+    {
+     "kode": "KM5195",
+     "tekst": "vurdere kva verknad aktivitetar har på den fysiske og mentale helsa til brukarane og dokumentere endringar på bakgrunn av gjennomførte aktivitetar"
+    },
+    {
+     "kode": "KM5198",
+     "tekst": "følgje gjeldande regelverk for aktivitørfaget"
+    },
+    {
+     "kode": "KM5193",
+     "tekst": "gjennomføre tiltak som sikrar god hygiene og hindrar smitte"
+    },
+    {
+     "kode": "KM5191",
+     "tekst": "samarbeide med frivillige og bruke ulike kulturtilbod i aktiviseringsarbeidet"
+    },
+    {
+     "kode": "KM5200",
+     "tekst": "halde orden på arbeidsplassen og gjere enkelt vedlikehald av utstyr og maskiner"
+    },
+    {
+     "kode": "KM5194",
+     "tekst": "følgje opp eigne rettar og plikter i arbeidsforholdet og gjere greie for korleis partane i arbeidslivet utfører samfunnsrolla si i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 aktivitørfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 aktivitørfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har fulgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i lærefaget. Eksamen utarbeidast sentralt og sensurerast lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 aktivitørfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva som normalt skal gjennomførast innanfor ei tidsramme på to til tre vyrkedagar."
+   ]
+  }
+ ]
+}

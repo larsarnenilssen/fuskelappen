@@ -1,0 +1,662 @@
+{
+ "kode": "NAT01-05",
+ "tittel": "Læreplan i naturfag",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1079",
+   "tittel": "Kompetansemål og vurdering vg1 studieforberedende utdanningsprogram",
+   "fag": [
+    "NAT1Z25"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13876",
+     "tekst": "utforske en selvvalgt naturfaglig problemstilling, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13877",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13878",
+     "tekst": "drøfte hvordan utvikling av naturvitenskapelige hypoteser, modeller og teorier bidrar til at vi kan forstå og forklare verden"
+    },
+    {
+     "kode": "KM13879",
+     "tekst": "vurdere og lage programmer som modellerer naturfaglige fenomener"
+    },
+    {
+     "kode": "KM13883",
+     "tekst": "utforske og beskrive noen sentrale bølgefenomener"
+    },
+    {
+     "kode": "KM13890",
+     "tekst": "forklare hovedprinsippene for trådløs kommunikasjon og gi eksempler på hva slik teknologi brukes til"
+    },
+    {
+     "kode": "KM13882",
+     "tekst": "utforske og beskrive elektromagnetisk og ioniserende stråling, og vurdere informasjon om stråling og helseeffekter av ulike strålingstyper"
+    },
+    {
+     "kode": "KM13887",
+     "tekst": "beskrive big bang-teorien om hvordan universet har oppstått og utviklet seg, og gjøre rede for observasjoner som støtter denne teorien"
+    },
+    {
+     "kode": "KM13880",
+     "tekst": "utforske og gjøre rede for sammenhenger mellom kjemiske bindinger og egenskaper til ulike stoffer"
+    },
+    {
+     "kode": "KM13881",
+     "tekst": "utforske egenskaper og reaksjoner til noen organiske og uorganiske karbonforbindelser, gi eksempler på anvendelser og gjøre rede for karbonets betydning for livet på jorda"
+    },
+    {
+     "kode": "KM13886",
+     "tekst": "gjøre rede for hvordan noen miljøgifter kan akkumuleres i næringskjeder, og vurdere tiltak for å ta vare på helse og miljø"
+    },
+    {
+     "kode": "KM13888",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13889",
+     "tekst": "drøfte aktuelle helse- og livsstilsspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13884",
+     "tekst": "beskrive DNA og hvordan egenskaper arves, og gjøre rede for hvordan arv er en forutsetning for evolusjon"
+    },
+    {
+     "kode": "KM13891",
+     "tekst": "gjøre rede for hvordan klimaendringer påvirker evolusjon, utbredelse av arter og biologisk mangfold"
+    },
+    {
+     "kode": "KM13885",
+     "tekst": "gi eksempler på bruk av bioteknologi og drøfte etiske spørsmål knyttet til bioteknologi"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 studieforberedende utdanningsprogram når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 studieforberedende utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1080",
+   "tittel": "Kompetansemål og vurdering vg1 bygg- og anleggsteknikk",
+   "fag": [
+    "NAT1Z26"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13892",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13893",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13896",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13894",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13895",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13897",
+     "tekst": "undersøke egenskapene til ulike materialer og overflatebehandlinger og vurdere bruk av disse i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13898",
+     "tekst": "bruke begrepene energiovergang, energibevaring og virkningsgrad til å vurdere energiøkonomisering i bygg"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 bygg- og anleggsteknikk når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 bygg- og anleggsteknikk. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1081",
+   "tittel": "Kompetansemål og vurdering vg1 elektro og datateknologi",
+   "fag": [
+    "NAT1Z28"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13899",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13900",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13903",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13901",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13902",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13904",
+     "tekst": "gjøre rede for sammenhenger mellom elektrisk energi og effekt og presentere noen energieffektive løsninger i bygg"
+    },
+    {
+     "kode": "KM13905",
+     "tekst": "bruke begrepene vekselstrømteknologi, likestrømsteknologi, energilagring og virkningsgrad for å beskrive og drøfte metoder for bærekraftig energiproduksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 elektro og datateknologi når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 elektro og datateknologi. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1089",
+   "tittel": "Kompetansemål og vurdering vg1 frisør, blomster, interiør og eksponeringsdesign",
+   "fag": [
+    "NAT1Z29"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13955",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13956",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13957",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13958",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13959",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13960",
+     "tekst": "undersøke og vurdere livsløpet til ulike produkter i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13961",
+     "tekst": "utforske egenskaper og reaksjoner til noen stoffer og stoffblandinger som er relevante for eget utdanningsprogram"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 frisør, blomster, interiør og eksponeringsdesign når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 frisør, blomster, interiør og eksponeringsdesign. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1082",
+   "tittel": "Kompetansemål og vurdering vg1 helse- og oppvekstfag",
+   "fag": [
+    "NAT1Z30"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13906",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13907",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13908",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13911",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13912",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13910",
+     "tekst": "utforske egenskaper og reaksjoner til noen stoffer og stoffblandinger som er relevante for eget utdanningsprogram"
+    },
+    {
+     "kode": "KM13909",
+     "tekst": "drøfte hvilken betydning mikroorganismer har for kropp og helse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 helse- og oppvekstfag når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 helse- og oppvekstfag. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1086",
+   "tittel": "Kompetansemål og vurdering vg1 håndverk, design og produktutvikling",
+   "fag": [
+    "NAT1Z27"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13934",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13935",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13936",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13937",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13938",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13940",
+     "tekst": "undersøke og vurdere livsløpet til ulike produkter i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13939",
+     "tekst": "undersøke egenskapene til ulike materialer og overflatebehandlinger og vurdere bruk av disse i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 håndverk, design og produktutvikling når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 håndverk, design og produktutvikling. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1087",
+   "tittel": "Kompetansemål og vurdering vg1 informasjonsteknologi og medieproduksjon",
+   "fag": [
+    "NAT1Z31"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13941",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13942",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13943",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13944",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13945",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13946",
+     "tekst": "beskrive ulike typer elektromagnetisk stråling og gi eksempler på hvordan stråling benyttes i trådløs kommunikasjon"
+    },
+    {
+     "kode": "KM13947",
+     "tekst": "utforske bølgefenomener knyttet til lyd og akustikk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 informasjonsteknologi og medieproduksjon når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 informasjonsteknologi og medieproduksjon. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1083",
+   "tittel": "Kompetansemål og vurdering vg1 naturbruk",
+   "fag": [
+    "NAT1Z32"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13913",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13914",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13915",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13916",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13917",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13918",
+     "tekst": "undersøke problemstillinger knyttet til arealbruk, gjøre rede for hvordan endringer kan påvirke økosystemer, og foreslå bærekraftige løsninger"
+    },
+    {
+     "kode": "KM13919",
+     "tekst": "gjøre rede for hvorfor noen grunnstoffer er viktige for liv, og vurdere hvordan menneskelig aktivitet kan påvirke kretsløpene til disse stoffene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 naturbruk når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 naturbruk. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1084",
+   "tittel": "Kompetansemål og vurdering vg1 restaurant- og matfag",
+   "fag": [
+    "NAT1Z33"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13920",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13921",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13922",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13923",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13924",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13925",
+     "tekst": "utforske egenskaper og reaksjoner til noen stoffer og stoffblandinger som er relevante for eget utdanningsprogram"
+    },
+    {
+     "kode": "KM13926",
+     "tekst": "gjøre rede for mattrygghet og betydningen av mikroorganismer i matproduksjon, for driftshygiene og ved håndtering av mat"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 restaurant- og matfag når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 restaurant- og matfag. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1088",
+   "tittel": "Kompetansemål og vurdering vg1 salg, service og reiseliv",
+   "fag": [
+    "NAT1Z34"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13948",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13949",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13950",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13951",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13952",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13953",
+     "tekst": "undersøke ulike materialers og produkters livsløp og vurdere disse i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13954",
+     "tekst": "gjøre rede for aktuelle miljøutfordringer knyttet til handel og reiseliv og drøfte disse i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 salg, service og reiseliv når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 salg, service og reiseliv. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1085",
+   "tittel": "Kompetansemål og vurdering vg1 teknologi- og industrifag",
+   "fag": [
+    "NAT1Z35"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13927",
+     "tekst": "utforske en selvvalgt problemstilling knyttet til eget utdanningsprogram, presentere funn og argumentere for valg av metoder"
+    },
+    {
+     "kode": "KM13928",
+     "tekst": "risikovurdere egne forsøk og håndtere avfallet fra disse på en forsvarlig måte"
+    },
+    {
+     "kode": "KM13929",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13930",
+     "tekst": "drøfte aktuelle helse- og livsstilspørsmål og vurdere pålitelighet i informasjon fra ulike kilder"
+    },
+    {
+     "kode": "KM13931",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13932",
+     "tekst": "undersøke egenskapene til ulike materialer og overflatebehandlinger og vurdere bruk av disse i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13933",
+     "tekst": "undersøke og vurdere ulike metoder for lagring og overføring av energi"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg1 teknologi- og industrifag når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg1 teknologi- og industrifag. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  },
+  {
+   "kode": "KV1090",
+   "tittel": "Kompetansemål og vurdering vg3 påbygging til generell studiekompetanse",
+   "fag": [
+    "NAT1Z36"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13962",
+     "tekst": "drøfte hvordan utvikling av naturvitenskapelige hypoteser, modeller og teorier bidrar til at vi kan forstå og forklare verden"
+    },
+    {
+     "kode": "KM13963",
+     "tekst": "vurdere og lage programmer som modellerer naturfaglige fenomener"
+    },
+    {
+     "kode": "KM13964",
+     "tekst": "beskrive big bang-teorien om hvordan universet har oppstått og utviklet seg, og gjøre rede for observasjoner som støtter denne teorien"
+    },
+    {
+     "kode": "KM13965",
+     "tekst": "utforske og beskrive elektromagnetisk og ioniserende stråling, og vurdere informasjon om stråling og helseeffekter av ulike strålingstyper"
+    },
+    {
+     "kode": "KM13966",
+     "tekst": "utforske og beskrive noen sentrale bølgefenomener"
+    },
+    {
+     "kode": "KM13970",
+     "tekst": "forklare hovedprinsippene for trådløs kommunikasjon og gi eksempler på hva slik teknologi brukes til"
+    },
+    {
+     "kode": "KM13967",
+     "tekst": "beskrive DNA og hvordan egenskaper arves, og gjøre rede for hvordan arv er en forutsetning for evolusjon"
+    },
+    {
+     "kode": "KM13971",
+     "tekst": "gjøre rede for hvordan klimaendringer påvirker evolusjon, utbredelse av arter og biologisk mangfold"
+    },
+    {
+     "kode": "KM13968",
+     "tekst": "gi eksempler på bruk av bioteknologi og drøfte etiske spørsmål knyttet til bioteknologi"
+    },
+    {
+     "kode": "KM13969",
+     "tekst": "gjøre rede for hvordan noen miljøgifter kan akkumuleres i næringskjeder, og vurdere tiltak for å ta vare på helse og miljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen i naturfag skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i naturfag på vg3 påbygging til generell studiekompetanse når de bruker fagspråk, teorier og modeller til å utforske, beskrive, forklare og drøfte sammenhenger i og mellom naturfaglige fenomener. De viser og utvikler også kompetanse når de argumenterer for metodevalg, gjør etiske og sikkerhetsmessige vurderinger, reflekterer over funn og kritisk vurderer kilder og informasjon knyttet til egne utforskinger og forsøk. Videre viser og utvikler de kompetanse når de anvender og reflekterer over naturvitenskapelige praksiser og tenkemåter og naturvitenskapelig teknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Læreren og elevene skal være i dialog om elevenes utvikling i naturfag. Elevene skal få mulighet til å utforske og prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i naturfag."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturfag ved avslutningen av opplæringen etter vg3 påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i naturfag basert på kompetansen eleven har vist når eleven har kommunisert kunnskap om og forståelse av fagets innhold og har sett sammenhenger. Karakteren skal også være basert på kompetansen eleven har vist når eleven har arbeidet praktisk og utforskende med faget."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "10. trinn: Eleven skal ha én standpunktkarakter.",
+    "Vg1 yrkesfaglige utdanningsprogram: Eleven skal ha én standpunktkarakter.",
+    "Vg1 studieforberedende utdanningsprogram: Eleven skal ha én standpunktkarakter.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "10. trinn: Eleven kan trekkes ut til muntlig-praktisk eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg1 yrkesfaglige utdanningsprogram: Eleven kan trekkes ut til muntlig-praktisk eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg1 studieforberedende utdanningsprogram: Eleven kan trekkes ut til muntlig-praktisk eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven kan trekkes ut til muntlig-praktisk eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "10. trinn: Se gjeldende ordning for grunnskoleopplæring for voksne.",
+    "Vg1 yrkesfaglige utdanningsprogram: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg1 studieforberedende utdanningsprogram: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

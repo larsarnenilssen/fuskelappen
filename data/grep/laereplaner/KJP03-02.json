@@ -1,0 +1,132 @@
+{
+ "kode": "KJP03-02",
+ "tittel": "Læreplan i vg3 kjemiprosessfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV680",
+   "tittel": "Kompetansemål og vurdering vg3 kjemiprosessfaget",
+   "fag": [
+    "KJP3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8618",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere arbeid i henhold til instrukser og prosedyrer"
+    },
+    {
+     "kode": "KM8617",
+     "tekst": "gjøre rede for virksomhetens verdikjede fra råstoff til produkt og beskrive faktorer som påvirker sikkerhet og lønnsomhet i produksjonen"
+    },
+    {
+     "kode": "KM8616",
+     "tekst": "vurdere og velge verneutstyr tilpasset arbeidsoppgaven og reflektere over konsekvenser av støy, vibrasjon, varme, farlige stoffer og støveksponering"
+    },
+    {
+     "kode": "KM8597",
+     "tekst": "vurdere risiko for ulykker og helsefare og reflektere over viktigheten av å holde orden på arbeidsplassen"
+    },
+    {
+     "kode": "KM8608",
+     "tekst": "reflektere over viktigheten av og arbeide i tråd med ergonomiske prinsipper og drøfte hvordan arbeidsteknikker og arbeidsstillinger kan forebygge helseskader"
+    },
+    {
+     "kode": "KM8615",
+     "tekst": "forklare kontrollert nedkjøring, akutt nedstenging og varslings- og nødprosedyrer"
+    },
+    {
+     "kode": "KM8613",
+     "tekst": "gjennomføre en sikker jobb-analyse og arbeids- og entretillatelse, gjøre rede for risikotiltak ved arbeid i høyden og sikre risikoutsatte arbeidsoperasjoner"
+    },
+    {
+     "kode": "KM8610",
+     "tekst": "registrere og rapportere avvik og uønskede hendelser og foreslå tiltak"
+    },
+    {
+     "kode": "KM8598",
+     "tekst": "følge opp tiltak i tråd med bedriftens rutiner for helse, miljø, sikkerhet og kvalitet"
+    },
+    {
+     "kode": "KM8601",
+     "tekst": "forklare hvordan virksomhetens drift og avvik kan påvirke miljøet og gi konsekvenser"
+    },
+    {
+     "kode": "KM8600",
+     "tekst": "klargjøre, starte og drifte prosessutstyr etter gjeldende standard og regelverk"
+    },
+    {
+     "kode": "KM8603",
+     "tekst": "tegne og gjøre rede for prinsipper og virkemåter til prosess- og måleutstyr for prosesstyring, regulering og optimalisering"
+    },
+    {
+     "kode": "KM8604",
+     "tekst": "utføre vedlikehold, og delta i feilsøking og klargjøring i tverrfaglig team"
+    },
+    {
+     "kode": "KM8605",
+     "tekst": "gjøre rede for hvordan relevant prosessutstyr fungerer, og hvordan kjemisk, biologisk, fysisk og mekanisk bearbeiding foregår i enhetsoperasjoner og prosesser"
+    },
+    {
+     "kode": "KM8612",
+     "tekst": "tegne og gjøre rede for prinsipper og virkemåter til reguleringer og ulikt måleutstyr for prosesstyring og optimalisering"
+    },
+    {
+     "kode": "KM8606",
+     "tekst": "bruke tekniske flytskjemaer og skjermbilder som forklarer prosessavsnitt, og skissere tegninger som forklarer enhetsoperasjoner"
+    },
+    {
+     "kode": "KM8599",
+     "tekst": "gjøre rede for og bruke bedriftens kvalitetsstyringssystemer"
+    },
+    {
+     "kode": "KM8602",
+     "tekst": "håndtere avfall og destruere restprodukter og feilvare etter offentlige og bedriftsinterne krav"
+    },
+    {
+     "kode": "KM8614",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere på norsk og engelsk"
+    },
+    {
+     "kode": "KM8607",
+     "tekst": "drøfte ulike løsninger som bidrar til å minimere miljøavtrykk og sikre effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM8611",
+     "tekst": "utføre driftsanalyser i samarbeid med laboratoriestøtte, og vurdere og foreslå tiltak ut fra analyseresultat"
+    },
+    {
+     "kode": "KM8609",
+     "tekst": "reflektere over betydningen av egen medvirkning på arbeidsplassen og hva det gjør med egen mestring, utvikling og motivasjon"
+    },
+    {
+     "kode": "KM8619",
+     "tekst": "gjøre rede for bedriftens organisering, egenart og rolle"
+    },
+    {
+     "kode": "KM8620",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kjemiprosess når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 kjemiprosessfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kjemiprosessfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

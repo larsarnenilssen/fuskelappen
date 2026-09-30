@@ -1,0 +1,109 @@
+{
+ "kode": "LBR05-02",
+ "tittel": "Læreplan i Vg3 økonomi og driftsledelse",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV612",
+   "tittel": "Kompetansemål og vurdering i vg3 økonomi og driftsledelse",
+   "fag": [
+    "LBR5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7134",
+     "tekst": "analysere en drifts- og investeringsplan, kartlegge ressurser og foreslå tiltak som kan optimalisere driften av en landbruksvirksomhet"
+    },
+    {
+     "kode": "KM7133",
+     "tekst": "utarbeide produksjonskalkyler og sette opp drifts- og forretningsplan"
+    },
+    {
+     "kode": "KM7135",
+     "tekst": "utforske og vurdere mulig produktutvikling og utarbeide en forretningsplan for en tilleggsnæring i landbruket"
+    },
+    {
+     "kode": "KM7136",
+     "tekst": "beregne nøkkeltall i landbruksregnskap og vurdere likviditeten i en landbruksvirksomhet"
+    },
+    {
+     "kode": "KM7137",
+     "tekst": "beskrive økonomiske risikofaktorer i en landbruksvirksomhet og vurdere tiltak som kan redusere risiko"
+    },
+    {
+     "kode": "KM7138",
+     "tekst": "vurdere sammenhengen mellom inntekter og kostnader i et landbruksregnskap og vurdere lønnsomhet"
+    },
+    {
+     "kode": "KM7139",
+     "tekst": "bruke et regnskapsprogram for å sette opp hovedprinsippene i et landbruksregnskap etter gjeldende regler"
+    },
+    {
+     "kode": "KM7140",
+     "tekst": "vurdere ulike finansieringsformer og gjøre rede for eksterne støtte- og finansieringsordninger"
+    },
+    {
+     "kode": "KM7141",
+     "tekst": "utarbeide planer for vedlikehold og investeringer og gjøre økonomiske beregninger"
+    },
+    {
+     "kode": "KM7142",
+     "tekst": "gjøre rede for gjeldende regler for sentrale skatte- og avgiftsforhold for landbruk"
+    },
+    {
+     "kode": "KM7143",
+     "tekst": "lede ansatte i utførelsen av arbeidsoppgaver i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7147",
+     "tekst": "legge til rette for et godt fysisk og psykososialt arbeidsmiljø og reflektere over sammenhengen mellom dette og en bærekraftig og god drift"
+    },
+    {
+     "kode": "KM7144",
+     "tekst": "utarbeide, anvende og vurdere et system for helse, miljø og sikkerhet i en landbruksbedrift"
+    },
+    {
+     "kode": "KM7145",
+     "tekst": "utforske ulike metoder for å vurdere og beregne klima- og miljøbelastning, og iverksette tiltak som reduserer denne belastningen og bidrar til en bærekraftig drift"
+    },
+    {
+     "kode": "KM7146",
+     "tekst": "gjøre rede for landbrukets fagorganisasjoner og samvirketankegangen i landbruket, og drøftemuligheten til å påvirke gjennom disse demokratiske organisasjonene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vg3 økonomi og driftsledelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vg3 økonomi og driftsledelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vg3 økonomi og driftsledelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vg3 økonomi og driftsledelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 økonomi og driftsledelse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 økonomi og driftsledelse: Eleven kan trekkes ut til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 økonomi og driftsledelse: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

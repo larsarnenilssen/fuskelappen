@@ -1,6 +1,7 @@
 // UI-tekstar på nynorsk. Typen Tekster gjer at ein manglande nøkkel gir byggjefeil.
 import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
+import { fagNn } from './moduler/fag.nn.ts';
 
 export const nn: Tekster = {
   app: {
@@ -248,12 +249,17 @@ export const nn: Tekster = {
       navn: 'Omgrep',
       beskrivelse: 'Forklaringar av sentrale omgrep i regelverket.',
     },
+    fag: {
+      navn: 'Fag og læreplanar',
+      beskrivelse: 'Fagkodar, kompetansemål, vurderingsordning og årstimetal for vidaregåande, frå Grep.',
+    },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
       beskrivelse: 'Sysselsetjing, periode, vikartimar og planfesta tid, med utrekning og kjelder.',
     },
   },
   arbeidstid: arbeidstidNn,
+  fag: fagNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

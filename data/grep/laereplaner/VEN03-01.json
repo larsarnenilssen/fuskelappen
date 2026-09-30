@@ -1,0 +1,128 @@
+{
+ "kode": "VEN03-01",
+ "tittel": "Læreplan i vg3 ventilasjonsteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV620",
+   "tittel": "Kompetansemål og vurdering vg3 ventilasjonsteknikkfaget",
+   "fag": [
+    "VEN3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7272",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i ventilasjonsteknikkfaget i henhold til gjeldende regelverk, bedriftens internkontrollsystem og begrunne de valg som er gjort"
+    },
+    {
+     "kode": "KM7281",
+     "tekst": "utføre arbeidet i henhold til sikkerhetshensyn ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM7287",
+     "tekst": "velge og bruke egnet verktøy, instrumenter og sertifisert utstyr i utførelse av arbeidsoppdrag og gjennomføre egenkontroll og vedlikehold av verktøyet"
+    },
+    {
+     "kode": "KM7292",
+     "tekst": "installere, terminere og sette i drift motorer, aktuatorer, regulatorer og varmeelementer på ventilasjonsanlegg og gjøre rede for ulike spenningssystemer"
+    },
+    {
+     "kode": "KM7291",
+     "tekst": "vedlikeholde ventilasjonssystemer og komfortkjøling etter krav angitt i forvaltnings-, drifts- og vedlikeholdsdokumentasjonen og foreslå tiltak for å forbedre energieffektivitet og luftkvalitet"
+    },
+    {
+     "kode": "KM7284",
+     "tekst": "koble ventilasjonssystemet til eksternt kommunikasjonsnett i henhold til lover og forskrifter om elektronisk kommunikasjon, kontrollere signalkvalitet og gjøre rede for byggets nettverks- og signaltopografi"
+    },
+    {
+     "kode": "KM7288",
+     "tekst": "montere og sette i drift komponenter og utstyr i ventilasjonsanlegg, utføre sluttkontroll, innregulering og lære opp driftspersonell"
+    },
+    {
+     "kode": "KM7280",
+     "tekst": "montere, installere og kalibrere sensorer, justere aktuatorer og regulatorer for å optimalisere prosessresultat og gjøre rede for hvordan reguleringssløyfer fungerer"
+    },
+    {
+     "kode": "KM7290",
+     "tekst": "foreta inneklimamåling av støy, temperatur, luftfuktighet og CO2 og vurdere måleresultatet opp mot regelverk"
+    },
+    {
+     "kode": "KM7289",
+     "tekst": "foreta energivurdering av ventilasjonsanlegg ved å måle temperatur, trykk og strømforbruk og beregne spesifikk vifteeffekt og temperaturvirkningsgrad"
+    },
+    {
+     "kode": "KM7276",
+     "tekst": "utføre sluttkontroll av ventilasjonsanlegget med egnet utstyr for å måle effekt, temperatur, mengder, trykk, og beregne energi- og effektforbruk og kapasiteter for å kontrollere og dokumentere anleggets krav til energieffektivitet og luftkvalitet"
+    },
+    {
+     "kode": "KM7279",
+     "tekst": "utføre systematisk feilsøking og feilretting av ventilasjonsanleggets energi- og styrekretser, komponenter og utstyr og dokumentere endringer i anleggsdokumentasjonen"
+    },
+    {
+     "kode": "KM7285",
+     "tekst": "vurdere reparasjon eller utskifting av komponenter og utstyr ut fra materialvalg og miljøhensyn og beregne lønnsomheten for kunden"
+    },
+    {
+     "kode": "KM7278",
+     "tekst": "dimensjonere og installere jordingssystem på ventilasjonsanlegg, utføre sluttkontroll på jordingssystemet og gjøre rede for prinsipper for jording"
+    },
+    {
+     "kode": "KM7286",
+     "tekst": "montere og installere ledning, kabel og vern på ventilasjonsanlegget og dokumentere beskyttelse mot overbelastning, kortslutning og elektrisk sjokk"
+    },
+    {
+     "kode": "KM7293",
+     "tekst": "utføre prøvedrift av ventilasjonsanlegget og dokumentere resultatene underveis i prøvedriftsperioden"
+    },
+    {
+     "kode": "KM7283",
+     "tekst": "programmere og teste funksjoner for brann- og røyksikring og vurdere konsekvenser av feil type sensorer og feil plassering av disse"
+    },
+    {
+     "kode": "KM7277",
+     "tekst": "foreta en visuell kontroll av fuktbelastning i ventilasjonsanlegget og vurdere tiltak som reduserer fukt og bakterievekst"
+    },
+    {
+     "kode": "KM7275",
+     "tekst": "håndtere avfall etter utført arbeid på en miljøvennlig måte og drøfte produktets miljøprestasjon gjennom hele livssyklusen"
+    },
+    {
+     "kode": "KM7274",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM7273",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM7282",
+     "tekst": "drøfte etiske dilemmaer ved valg av produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM7294",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 ventilasjonsteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget. Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver.",
+    "Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 ventilasjonsteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 ventilasjonsteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

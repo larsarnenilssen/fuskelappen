@@ -1,0 +1,168 @@
+{
+ "kode": "KON03-02",
+ "tittel": "Læreplan i vg3 konditorfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV657",
+   "tittel": "Kompetansemål og vurdering vg3 konditorfaget",
+   "fag": [
+    "KON3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8090",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere produksjon av konditorvarer ut fra resept, råvarevalg, produksjonsmetode og gitte kriterier"
+    },
+    {
+     "kode": "KM8098",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom kvalitet, vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8109",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM8122",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM8093",
+     "tekst": "vurdere kvaliteten og egenskapene til råvarene, anvende kunnskapen i reseptoppbygging og produksjon og gjøre rede for hvordan disse påvirker sluttproduktet"
+    },
+    {
+     "kode": "KM8092",
+     "tekst": "reflektere over kvalitet og egenskaper gjennom bruk av ulike hjelpe- og tilsetningsstoffer eller halvfabrikata og vurdere hvordan dette påvirker sluttprodukt, næringsinnhold og økonomi"
+    },
+    {
+     "kode": "KM8097",
+     "tekst": "drøfte etiske dilemmaer ved produksjon og omsetning av konditorvarer og gjøre bevisste og bærekraftige valg"
+    },
+    {
+     "kode": "KM8120",
+     "tekst": "anvende sensoriske tester i produksjon av konditorvarer og gjøre rede for hvordan dette kan bidra til å sikre tilfredsstillende kvalitet"
+    },
+    {
+     "kode": "KM8119",
+     "tekst": "lage desserter, konfekter, pynt og dekor og begrunne valg av råvarer og produksjonsmetode"
+    },
+    {
+     "kode": "KM8114",
+     "tekst": "modellere og framstille ulike og like figurer og dekor av egnet masse og reflektere over konsekvenser av avvik fra planlagt produkt"
+    },
+    {
+     "kode": "KM8118",
+     "tekst": "produsere konditorvarer av råmasser, piskede, rørte, rystede og forvellede masser og gjøre rede for oppbygning og bruksområder"
+    },
+    {
+     "kode": "KM8117",
+     "tekst": "produsere lagdelte kaker, diskkaker og porsjonskaker med og uten overtrekk og vurdere ulike sammensetninger basert på smak, egenskaper og utseende"
+    },
+    {
+     "kode": "KM8112",
+     "tekst": "produsere og bruke overtrekksglasurer, ulike kremer, ganacher og geleer til fyll og dekor og forklare oppbygning og bruksområder"
+    },
+    {
+     "kode": "KM8116",
+     "tekst": "lage butterdeig og ulike mørdeigsprodukter og vurdere egenskapene til de ulike deigene"
+    },
+    {
+     "kode": "KM8115",
+     "tekst": "produsere iskrem, sorbé og ulike støpte kaker av fromasj og mousse med forskjellig oppbygning og reflektere over valg av råvarer og sluttproduktets kvalitet"
+    },
+    {
+     "kode": "KM8113",
+     "tekst": "bruke og temperere sjokolade til ulike typer støpt og dyppet konfekt og dekor og ta hensyn til sjokoladens bruksegenskaper"
+    },
+    {
+     "kode": "KM8111",
+     "tekst": "tegne utkast til dekor, bruke overførings- og dekoreringsteknikker for kaker og bruke ulike egnede produkter til garnering og skriving av tekster i samsvar med kundens ønske"
+    },
+    {
+     "kode": "KM8110",
+     "tekst": "vise kreativitet i arbeidet, søke inspirasjon til produktutvikling gjennom bruk av digitale verktøy og ivareta fagets krav til estetikk"
+    },
+    {
+     "kode": "KM8108",
+     "tekst": "reflektere over hvordan uønskede mikroorganismer kan påvirke konditorvarer, og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM8107",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM8121",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM8106",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter for bransjen og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM8102",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8104",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8101",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold av maskiner og utstyr og gjøre rede for konsekvensene ved avvik"
+    },
+    {
+     "kode": "KM8096",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8100",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM8099",
+     "tekst": "gjennomføre beregninger og enkle kalkulasjoner i produksjon og salg av konditorvarer og drøfte faktorer som påvirker virksomhetens økonomiske resultater"
+    },
+    {
+     "kode": "KM8094",
+     "tekst": "utføre enkel markedsføring, yte service og bygge relasjoner med kunder ved profesjonell kundebehandling og salg"
+    },
+    {
+     "kode": "KM8091",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM8105",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM8103",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM8095",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 konditorfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 konditorfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 konditorfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

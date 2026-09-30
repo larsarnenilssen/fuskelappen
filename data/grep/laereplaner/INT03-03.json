@@ -1,0 +1,149 @@
+{
+ "kode": "INT03-03",
+ "tittel": "Læreplan i vg3 interiør",
+ "spraak": "nob",
+ "fastsatt": "2021-05-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV602",
+   "tittel": "Kompetansemål og vurdering prosess og prosjektering",
+   "fag": [
+    "INT3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6981",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM6998",
+     "tekst": "analysere og vurdere oppdragets omfang for å avklare kundens behov"
+    },
+    {
+     "kode": "KM6997",
+     "tekst": "utvikle funksjonelle romløsninger i interiøroppdrag"
+    },
+    {
+     "kode": "KM6996",
+     "tekst": "utforske prinsipper for komposisjon og anvende denne kunnskapen til å utvikle ideer og konsepter"
+    },
+    {
+     "kode": "KM6995",
+     "tekst": "anvende ulike materialer, farger, produkter og inventar i interiøroppdrag og gjøre rede for hvordan ulike valg påvirker resultat, kvalitet, holdbarhet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM6994",
+     "tekst": "gjøre rede for ulike fargesystemers egenskaper og anvende denne kunnskapen i interiøroppdrag"
+    },
+    {
+     "kode": "KM6993",
+     "tekst": "vurdere og anvende prinsipper for belysning i interiøroppdrag"
+    },
+    {
+     "kode": "KM6992",
+     "tekst": "anvende gjeldende regler og lovverk tilpasset ulike interiøroppdrag"
+    },
+    {
+     "kode": "KM6991",
+     "tekst": "utforske stilhistorie, tendenser og trender og anvende denne kunnskapen i design- og interiøroppdrag"
+    },
+    {
+     "kode": "KM6990",
+     "tekst": "anvende digitale ressurser og teknikker for å utvikle to- og tredimensjonale visualiseringer"
+    },
+    {
+     "kode": "KM6989",
+     "tekst": "beregne tid og pris på produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM6988",
+     "tekst": "velge og bruke ulike visuelle uttrykk og reflektere over hvordan ulike uttrykk påvirker person, rom og omgivelser"
+    },
+    {
+     "kode": "KM6987",
+     "tekst": "utforske og anvende farger, lys og materialers egenskaper i rom og gjøre rede for hvordan dette påvirker stemning og karakter"
+    },
+    {
+     "kode": "KM6986",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget prosess og prosjektering når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget prosess og prosjektering. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget prosess og prosjektering ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget prosess og prosjektering basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV603",
+   "tittel": "Kompetansemål og vurdering kunde og kommunikasjon",
+   "fag": [
+    "INT3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6985",
+     "tekst": "anvende faguttrykk i kommunikasjon med samarbeidspartnere og bruke ulike kommunikasjonsformer i faglig veiledning i salg- og servicesituasjoner"
+    },
+    {
+     "kode": "KM6984",
+     "tekst": "utforske leverandører og samarbeidspartnere i interiørbransjen og anvende denne kunnskapen i valg av arbeidsmetode og produkter i ulike oppdrag"
+    },
+    {
+     "kode": "KM6983",
+     "tekst": "velge og bruke ulike markedsføringskanaler for salg av tjenester og produkter ved å utforske og skape en tydelig designprofil mot sluttbruker"
+    },
+    {
+     "kode": "KM6982",
+     "tekst": "vurdere og anvende presentasjonsteknikker tilpasset kunder og oppdrag"
+    },
+    {
+     "kode": "KM6999",
+     "tekst": "utvikle og presentere løsninger gjennom styling og foto i ulike interiøroppdrag"
+    },
+    {
+     "kode": "KM7000",
+     "tekst": "reflektere over kritisk bruk av kilder, opphavsrettigheter og personvern og bruke denne kunnskapen i eget arbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget kunde og kommunikasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget kunde og kommunikasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget kunde og kommunikasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget kunde og kommunikasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Prosess og prosjektering: Eleven skal ha én standpunktkarakter.\nKunde og kommunikasjon: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Prosess og prosjektering og kunde og kommunikasjon: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Prosess og prosjektering: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nKunde og kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nProsess og prosjektering og kunde og kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

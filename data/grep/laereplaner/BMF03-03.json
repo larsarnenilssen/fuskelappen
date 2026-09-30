@@ -1,0 +1,121 @@
+{
+ "kode": "BMF03-03",
+ "tittel": "Læreplan i vg3 børsemakarfaget",
+ "spraak": "nno",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV946",
+   "tittel": "Kompetansemål og vurdering vg3 børsemakarfaget",
+   "fag": [
+    "BMF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12367",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere reparasjonar, ombyggingar, tilpassing og tilverking av skytevåpen i tråd med kvalitetsprosedyrar og tilrådingar frå produsenten"
+    },
+    {
+     "kode": "KM12369",
+     "tekst": "utarbeide rutinar for ei produksjonsmaskin og ein produksjonsprosess etter gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM12370",
+     "tekst": "bruke maskiner og utstyr på ein ergonomisk riktig måte og følgje reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM12371",
+     "tekst": "reflektere over og bruke gjeldande regelverk og retningslinjer"
+    },
+    {
+     "kode": "KM12366",
+     "tekst": "halde ved like verktøyet og maskinene i verkstaden"
+    },
+    {
+     "kode": "KM12368",
+     "tekst": "produsere våpenmekanismar som er sette saman av delar med ulike krav til mekaniske eigenskapar"
+    },
+    {
+     "kode": "KM12378",
+     "tekst": "vurdere og bruke ulike samanføyingsmetodar"
+    },
+    {
+     "kode": "KM12372",
+     "tekst": "lage arbeidsteikningar og annan visuell informasjon for produksjon av eit våpen eller ein våpendel og reflektere over avgrensingar knytte til tilgjengeleg utstyr og tilgjengelege maskiner i verkstaden"
+    },
+    {
+     "kode": "KM12373",
+     "tekst": "vurdere, velje og utføre varmebehandling av våpendelar"
+    },
+    {
+     "kode": "KM12374",
+     "tekst": "berekne kostnader og planleggje produksjon av ei vare eller teneste i samband med arbeidsoppdrag"
+    },
+    {
+     "kode": "KM12375",
+     "tekst": "gjennomføre reparasjonar, vedlikehald og service i samsvar med tilrådingar frå produsenten"
+    },
+    {
+     "kode": "KM12376",
+     "tekst": "deaktivere, dokumentere og rapportere skytevåpen til politiet etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM12377",
+     "tekst": "utvikle, vurdere og bruke testmetodar for våpen og ammunisjon"
+    },
+    {
+     "kode": "KM12379",
+     "tekst": "lage og sende våpenrapport til styresmaktene"
+    },
+    {
+     "kode": "KM12380",
+     "tekst": "rettleie kundar i bruk og vedlikehald av skytevåpen"
+    },
+    {
+     "kode": "KM12381",
+     "tekst": "tilpasse skytevåpen til kunden og endre skjeftemål etter behov"
+    },
+    {
+     "kode": "KM12382",
+     "tekst": "vurdere utbetring av skade på våpen opp mot personleg sikkerheit og lønnsemd"
+    },
+    {
+     "kode": "KM12383",
+     "tekst": "utføre ulike berekningar for å justere våpen og våpendelar"
+    },
+    {
+     "kode": "KM12384",
+     "tekst": "gjere greie for dei mekaniske og ballistiske prosessane som skjer når eit skytevåpen blir avfyrt"
+    },
+    {
+     "kode": "KM12385",
+     "tekst": "utvikle kontrollrutinar for eige arbeid baserte på produkt, produksjonsprosess og kvalitetskriterium"
+    },
+    {
+     "kode": "KM12386",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 børsemakarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 børsemakarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Opplæringa i vg3 børsemakarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast innanfor ei tidsramme på minst femten vyrkedagar.",
+    "Før sveineprøva må alle ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt.",
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, i tillegg ha bestått ein tverrfagleg skriftleg eksamen laga ut frå læreplanen i vg2 børsemakar. Eksamen blir utarbeidd sentralt og sensurert lokalt."
+   ]
+  }
+ ]
+}

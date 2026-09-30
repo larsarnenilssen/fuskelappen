@@ -1,0 +1,100 @@
+{
+ "kode": "FGY03-02",
+ "tittel": "Læreplan i forgyllerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV442",
+   "tittel": "Kompetansemål og vurdering forgyllerfaget",
+   "fag": [
+    "FGY3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4730",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid fra idé til ferdig produkt"
+    },
+    {
+     "kode": "KM4731",
+     "tekst": "velge, bearbeide og bruke ulike materialer, teknikker, verktøy og utstyr tilpasset arbeidsoppgavene og kundens økonomi og gjøre rede for gjeldende antikvariske retningslinjer, ressursutnyttelse, holdbarhet og kvalitet"
+    },
+    {
+     "kode": "KM4738",
+     "tekst": "utvikle design, lage skisser og arbeidstegninger og anvende disse i det praktiske arbeidet"
+    },
+    {
+     "kode": "KM4743",
+     "tekst": "framstille limdrenk, grundering, trykkemasse, støpemasse, bolus, anleggingsvann, lakk og voks til patinering og inntoning"
+    },
+    {
+     "kode": "KM4745",
+     "tekst": "velge og bruke ulike former for grunnarbeid tilpasset arbeidsoppgavene og gjøre rede for hvordan ulike valg påvirker sluttresultatet"
+    },
+    {
+     "kode": "KM4732",
+     "tekst": "anvende ulike dekorasjonsteknikker innenfor forgylling og ut fra ønsket form og funksjon"
+    },
+    {
+     "kode": "KM4733",
+     "tekst": "polimentforgylle ved å påføre bolus og anleggingsvann, legge bladgull og bladsølv, polere og forsegle bladsølv"
+    },
+    {
+     "kode": "KM4734",
+     "tekst": "oljeforgylle og gjøre rede for valg, funksjon og ulike teknikker i arbeidsprosessen"
+    },
+    {
+     "kode": "KM4735",
+     "tekst": "anvende ulike produkter til patinering og gjøre rede for hvordan ulike valg påvirker sluttresultatet"
+    },
+    {
+     "kode": "KM4736",
+     "tekst": "vurdere alder, tilstand og materiale til en gjenstand eller en overflate og velge restaureringsmetode ut fra ønsket uttrykk og funksjon"
+    },
+    {
+     "kode": "KM4737",
+     "tekst": "rekonstruere manglende elementer på en forgylt gjenstand for restaurering og bygge opp for hånd, støpe eller skjære"
+    },
+    {
+     "kode": "KM4740",
+     "tekst": "anvende utstyr, verktøy og maskiner, gjennomføre nødvendig vedlikehold og oppbevare materialer i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4742",
+     "tekst": "drøfte estetikk og design med kunder, kolleger og andre i eget og andres arbeid"
+    },
+    {
+     "kode": "KM4744",
+     "tekst": "velge og bruke digitale ressurser i arbeid, presentasjoner og dokumentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM4739",
+     "tekst": "utforske og bruke fagets historie, tradisjon og egenart i restaurering og som inspirasjon til egen produktutvikling og bruke kilder på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4741",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i forgyllerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i forgyllerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i forgyllerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
+   ]
+  }
+ ]
+}

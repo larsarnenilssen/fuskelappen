@@ -1,0 +1,136 @@
+{
+ "kode": "MFF03-01",
+ "tittel": "Læreplan i vg3 murer- og flisleggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV511",
+   "tittel": "Kompetansemål og vurdering Vg3 murer- og flisleggerfaget",
+   "fag": [
+    "MFF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5855",
+     "tekst": "planlegge bygging, vedlikehold og restaurering av konstruksjoner etter tegninger, beskrivelser, preaksepterte løsninger, standarder og toleransekrtav ved å bruke ulike prosjektverktøy og vurdere konsekvenser av avvik fra toleransekravene"
+    },
+    {
+     "kode": "KM5857",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr, kontrollere kvalitet og mengde i tråd med arbeidsoppdraget og vurdere konsekvenser av materialsvinn"
+    },
+    {
+     "kode": "KM5879",
+     "tekst": "arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet, bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av å ikke følge kravene"
+    },
+    {
+     "kode": "KM5877",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM5863",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5862",
+     "tekst": "mure tegl og blokk til spekk i lodd og stokk i henhold til kravspesifikasjon"
+    },
+    {
+     "kode": "KM5860",
+     "tekst": "pusse ulike underlag og vurdere hvordan egenskaper ved underlaget påvirker valg av metode"
+    },
+    {
+     "kode": "KM5876",
+     "tekst": "dele inn skiftegang, mure anlegg og ulike forband og vurdere hvordan underlagets egenskaper påvirker resultatet"
+    },
+    {
+     "kode": "KM5875",
+     "tekst": "fuge tegl og blokk og vurdere ulike faktorer som påvirker kvaliteten"
+    },
+    {
+     "kode": "KM5859",
+     "tekst": "drøfte hvordan tradisjonelle muremetoder tar vare på egenarten til faget og kulturtradisjonene"
+    },
+    {
+     "kode": "KM5858",
+     "tekst": "vurdere eksisterende underlag og velge en muremetode som ivaretar underlagets egenart"
+    },
+    {
+     "kode": "KM5874",
+     "tekst": "forankre, armere og utføre overdekningsløsninger og vurdere hvilke krefter som påvirker konstruksjonen"
+    },
+    {
+     "kode": "KM5873",
+     "tekst": "drenere og isolere konstruksjonen og vurdere hvordan temperatur og ventilasjon påvirker konstruksjonens levetid"
+    },
+    {
+     "kode": "KM5872",
+     "tekst": "velge og bruke egnet verktøy og materialer til nybygg, rehabilitering og restaurering med hensyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5871",
+     "tekst": "legge flis på ulike underlag, fuge og dele inn flis i ulike størrelser på vegg og gulv og vurdere hvordan underlaget påvirker sluttproduktet"
+    },
+    {
+     "kode": "KM5870",
+     "tekst": "legge membraner på ulike underlag i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM5869",
+     "tekst": "utføre natursteinsarbeid med ulike typer festemetoder"
+    },
+    {
+     "kode": "KM5868",
+     "tekst": "montere pipe og ildsted etter gjeldende regelverk og vurdere konsekvenser ved feilmontering"
+    },
+    {
+     "kode": "KM5866",
+     "tekst": "mure pipe og ildsteder etter gjeldende regelverk og drøfte ulike brannårsaker som kan oppstå ved muring"
+    },
+    {
+     "kode": "KM5878",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og bruke ulike produkter som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5867",
+     "tekst": "bruke stillas og iverksette sikkerhetstiltak for arbeid i høyden i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5865",
+     "tekst": "håndtere avfall etter gjeldende regelverk, iverksette tiltak for gjenbruk, optimalisere materialbruken og beregne produksjons- og materialkostnader ved feilhåndtering"
+    },
+    {
+     "kode": "KM5864",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper, bruke personlig verneutstyr og iverksette tiltak ved støy og støveksponering"
+    },
+    {
+     "kode": "KM5861",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5856",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 murer- og flisleggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 murer- og flisleggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 murer- og flisleggerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

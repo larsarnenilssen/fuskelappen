@@ -1,0 +1,156 @@
+{
+ "kode": "BLK02-03",
+ "tittel": "Læreplan i vg2 bilskade, lakk og karosseri",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV349",
+   "tittel": "Kompetansemål og vurdering karosseri- og lakkteknikk",
+   "fag": [
+    "BLK2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3691",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppdrag knyttet til bilskader, lakk og karosseri på kjøretøy og utstyr i henhold til kvalitetsprosedyrer og regelverk"
+    },
+    {
+     "kode": "KM3680",
+     "tekst": "reparere små skader i frontruter"
+    },
+    {
+     "kode": "KM3694",
+     "tekst": "vurdere og bruke kalde og varme sammenføyningsmetoder på kjøretøy"
+    },
+    {
+     "kode": "KM3693",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy, utstyr, lakkeringskabin, lakkblanderom og forarbeidssoner"
+    },
+    {
+     "kode": "KM3692",
+     "tekst": "demontere, montere og tilpasse ulike komponenter i og på karosserier"
+    },
+    {
+     "kode": "KM3695",
+     "tekst": "justere hjulvinklene og reflektere over hvilken funksjon disse har, og kontrollere og utbedre skader i drivverk, bremser og understell"
+    },
+    {
+     "kode": "KM3687",
+     "tekst": "vurdere og utbedre skadet overflate og anvende ulike retteteknikker"
+    },
+    {
+     "kode": "KM3686",
+     "tekst": "følge regelverk og retningslinjer for helse, miljø og sikkerhet ved arbeid på kjøretøy"
+    },
+    {
+     "kode": "KM3696",
+     "tekst": "velge og bruke verneutstyr etter type arbeidsoperasjoner"
+    },
+    {
+     "kode": "KM3699",
+     "tekst": "følge sikkerhetsrutiner ved arbeid på kjøretøy drevet av ulike energikilder og reflektere over betydningen av sikkerhetsrutiner for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3690",
+     "tekst": "gi eksempler på forskjellige karosserityper og forklare deres oppbygning"
+    },
+    {
+     "kode": "KM3689",
+     "tekst": "anvende systemtestere og feilsøkingsverktøy for å finne eller utbedre feil på kjøretøy"
+    },
+    {
+     "kode": "KM3688",
+     "tekst": "rengjøre og klargjøre overflater for videre bearbeiding"
+    },
+    {
+     "kode": "KM3698",
+     "tekst": "blande og påføre kjemiske produkter tilpasset underlaget for å vedlikeholde kjøretøyets innvendige og utvendige overflater"
+    },
+    {
+     "kode": "KM3697",
+     "tekst": "oppbevare, bruke og avhende kjemikalier og annet spesialavfall etter gjeldende regelverk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i karosseri- og lakkteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i karosseri- og lakkteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i karosseri- og lakkteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i karosseri- og lakkteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV350",
+   "tittel": "Kompetansemål og vurdering dokumentasjon og kvalitet",
+   "fag": [
+    "BLK2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3685",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere praktisk arbeid med bilskader, lakk og karosseri på kjøretøy og utstyr i tråd med kvalitetssikringssystem og regelverk"
+    },
+    {
+     "kode": "KM3684",
+     "tekst": "vurdere risikoen og foreslå tiltak som kan redusere risikoen ved arbeidsoppdrag"
+    },
+    {
+     "kode": "KM3701",
+     "tekst": "vurdere skadeomfang og velge materialer og reparasjonsmetode og beregne kostnader ved reparasjon og lakkering"
+    },
+    {
+     "kode": "KM3683",
+     "tekst": "reflektere over hva som kan endre materialers egenskaper ved kjemisk, termisk og mekanisk påvirkning"
+    },
+    {
+     "kode": "KM3682",
+     "tekst": "gjøre rede for kravene for håndtering og behandling av avfall, og reflektere over hva avfallshåndtering, valg av materialer og metoder ved reparasjon og lakkering har å si for bærekraftig utvikling på lokalt og globalt nivå"
+    },
+    {
+     "kode": "KM3681",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i dokumentasjon og kvalitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i dokumentasjon og kvalitet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i dokumentasjon og kvalitet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i dokumentasjon og kvalitet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Karosseri- og lakkteknikk: Eleven skal ha én standpunktkarakter.",
+    "Dokumentasjon og kvalitet: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Karosseri- og lakkteknikk og dokumentasjon og kvalitet: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Karosseri- og lakkteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Dokumentasjon og kvalitet: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Karosseri- og lakkteknikk og dokumentasjon og kvalitet: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

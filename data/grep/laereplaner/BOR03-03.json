@@ -1,0 +1,116 @@
+{
+ "kode": "BOR03-03",
+ "tittel": "Læreplan i vg3 boreoperatørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-03-08",
+ "gyldigFra": "2024-04-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV807",
+   "tittel": "Kompetansemål og vurdering vg3 boreoperatørfaget",
+   "fag": [
+    "BOR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10690",
+     "tekst": "planlegge og utføre boredekksarbeid i tråd med gjeldende prosedyrer og regelverk"
+    },
+    {
+     "kode": "KM10691",
+     "tekst": "vurdere risiko og gjennomføre risikoreduserende tiltak i arbeid med ulike brønnoperasjoner"
+    },
+    {
+     "kode": "KM10692",
+     "tekst": "gjøre rede for og kontrollere brønnsikringsutstyr på boredekk"
+    },
+    {
+     "kode": "KM10693",
+     "tekst": "utføre førstelinjevedlikehold på slampumper og slamutstyr"
+    },
+    {
+     "kode": "KM10694",
+     "tekst": "utføre førstelinjevedlikehold på boreutstyr, boretårn og boredekk"
+    },
+    {
+     "kode": "KM10695",
+     "tekst": "bruke og vedlikeholde løst boreutstyr og løst løfteutstyr"
+    },
+    {
+     "kode": "KM10696",
+     "tekst": "gjøre rede for og reflektere over bruk av boreutstyret og dets tekniske egenskaper"
+    },
+    {
+     "kode": "KM10697",
+     "tekst": "utarbeide sikkerhetsrapporter og erfaringsrapporter og vurdere og gjennomføre korrigerende tiltak"
+    },
+    {
+     "kode": "KM10698",
+     "tekst": "forklare og utføre metoder for vedlikehold av standpipe og choke-manifold"
+    },
+    {
+     "kode": "KM10699",
+     "tekst": "forklare ulike barrierer ved boring, ventiltreinstallasjon, komplettering og brønnoverhaling"
+    },
+    {
+     "kode": "KM10700",
+     "tekst": "vedlikeholde brønnhodets slitasjefôring og gjøre rede for hvordan et brønnhode fungerer"
+    },
+    {
+     "kode": "KM10701",
+     "tekst": "gjøre rede for hvordan ulike landeverktøy, landestrenger, innerstrenger, sementstrenger, slagverktøy og sidestegsverktøy brukes og virker"
+    },
+    {
+     "kode": "KM10702",
+     "tekst": "gjøre rede for hvordan fôringsrør i brønner brukes og virker"
+    },
+    {
+     "kode": "KM10703",
+     "tekst": "gjøre rede for de ulike drepemetodene i en brønn"
+    },
+    {
+     "kode": "KM10704",
+     "tekst": "gjøre rede for virkemåten og bruksområdet til retningsboringsutstyr, Measurement While Drilling-utstyr og kjerneboringsutstyr"
+    },
+    {
+     "kode": "KM10705",
+     "tekst": "gjøre rede for sirkulasjonssystemer og vedlikeholde og bruke slamsystemer"
+    },
+    {
+     "kode": "KM10706",
+     "tekst": "gjøre rede for prinsipper og prosesser ved arbeid i høyden, reflektere over konsekvenser av fallende gjenstander og iverksette nødvendige sikkerhetstiltak"
+    },
+    {
+     "kode": "KM10707",
+     "tekst": "utføre sikker jobb-analyse, skrive arbeidstillatelser og rapportere og iverksette tiltak når det blir identifisert avvik i operasjonen"
+    },
+    {
+     "kode": "KM10709",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM10708",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 boreoperatørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 boreoperatørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 boreoperatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

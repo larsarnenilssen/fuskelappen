@@ -1,0 +1,121 @@
+{
+ "kode": "DAN01-02",
+ "tittel": "Læreplan i grunntrening i dans",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV541",
+   "tittel": "Kompetansemål og vurdering grunntrening i dans 1",
+   "fag": [
+    "DAN1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6315",
+     "tekst": "utforske og prøve ut treningsformer for å fremme utvikling i dans, alene og sammen med andre"
+    },
+    {
+     "kode": "KM6316",
+     "tekst": "beskrive og reflektere over sammenhengen mellom trening, restitusjon og skadeforebygging for dansere"
+    },
+    {
+     "kode": "KM6317",
+     "tekst": "beskrive og prøve ut mentale strategier for å fremme egen utvikling i dans"
+    },
+    {
+     "kode": "KM6319",
+     "tekst": "gjøre rede for forholdet mellom kosthold og treningsutbytte og bruke denne kunnskapen i eget arbeid med dans"
+    },
+    {
+     "kode": "KM6318",
+     "tekst": "undersøke kroppens oppbygning og funksjon, og bruke kunnskap om anatomi i arbeid med trening og danseutøvelse"
+    },
+    {
+     "kode": "KM6320",
+     "tekst": "reflektere over sammenhenger mellom trening, bevegelsesglede og helse for dansere"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i grunntrening i dans 1. Elevene viser og utvikler kompetanse i faget når de utforsker og prøver ut ulike fysiske og mentale treningsformer for å utvikle grunnlaget for egen danseutøvelse.Videre viser og utvikler de kompetanse i faget når de beskriver og reflekterer over egen trening og sammenheng mellom trening, helse og funksjonell anatomi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte treningsformer og strategier som fremmer bevegelsesglede og mestringsfølelse. Læreren skal være i dialog med elevene om utviklingen deres og gi rom for refleksjon rundt egen trening og restitusjon, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle forståelsen av sammenhengen mellom trening, kropp og helse i egen danseutøvelse."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter grunntrening i dans 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i grunntrening i dans 1 basert på kompetansen eleven har vist, både gjennom å delta i varierte treningsformer, vise forståelse av og reflektere over sammenhengen mellom trening, helse og anatomi."
+   ]
+  },
+  {
+   "kode": "KV542",
+   "tittel": "Kompetansemål og vurdering grunntrening i dans 2",
+   "fag": [
+    "DAN1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6321",
+     "tekst": "planlegge, gjennomføre og vurdere treningsprogram som fremmer egen utvikling i dans"
+    },
+    {
+     "kode": "KM6323",
+     "tekst": "drøfte sammenhenger mellom trening, restitusjon og skadeforebygging for dansere"
+    },
+    {
+     "kode": "KM6322",
+     "tekst": "reflektere over og bruke mentale strategier i dansetrening"
+    },
+    {
+     "kode": "KM6324",
+     "tekst": "drøfte sammenhengen mellom helsefremmende kosthold, livskvalitet og utvikling i dans"
+    },
+    {
+     "kode": "KM6326",
+     "tekst": "formidle kunnskap om funksjonell anatomi gjennom trening og i refleksjon over egen utvikling i dans"
+    },
+    {
+     "kode": "KM6327",
+     "tekst": "drøfte sammenhenger mellom trening, bevegelsesglede og helse for dansere"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i grunntrening i dans 2. Elevene viser og utvikler kompetanse i faget når de tar i bruk og reflekterer over ulike fysiske og mentale treningsformer for å utvikle egen danseutøvelse. De viser og utvikler også kompetanse i faget når de drøfter og reflekterer over egne treningsstrategier og sammenhengen mellom trening, helse og funksjonell anatomi i danseutøvelse.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene delta i planlegging av ulike treningsprogram og andre aktiviteter som fremmer bevegelsesglede og mestringsfølelse. Læreren skal være i dialog med elevene om utviklingen deres og gi elevene mulighet til å forstå sammenhenger mellom ulike treningsformer, helse og utvikling i dans, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle forståelsen av sammenheng mellom trening, kropp og helse, livskvalitet og danseutøvelse."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter grunntrening i dans 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i grunntrening i dans 2 basert på kompetansen eleven har vist gjennom å arbeide med ulike treningsprogram, og ved å vise forståelse av sammenhengen mellom trening, danserisk utvikling og livskvalitet."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Grunntrening i dans 1: Eleven skal ha én standpunktkarakter.\nGrunntrening i dans 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Grunntrening i dans 1: Eleven skal ikke opp til eksamen.\nGrunntrening i dans 2: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Grunntrening i dans 1: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Grunntrening i dans 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Privatisten i grunntrening i dans 2 får godskrevet programfaget grunntrening i dans 1."
+   ]
+  }
+ ]
+}

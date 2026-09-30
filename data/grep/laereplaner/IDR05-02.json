@@ -1,0 +1,205 @@
+{
+ "kode": "IDR05-02",
+ "tittel": "Læreplan i toppidrett",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV283",
+   "tittel": "Kompetansemål og vurdering toppidrett 1",
+   "fag": [
+    "IDR5Z04"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3011",
+     "tekst": "vise og utvikle ferdigheter i idretten og gjennomføre systematisk og målrettet trening"
+    },
+    {
+     "kode": "KM3034",
+     "tekst": "dokumentere og evaluere en valgt treningsperiode"
+    },
+    {
+     "kode": "KM3033",
+     "tekst": "kjenne til ulike treningsformer, metoder, tester og øvelser som er relevant for ferdighetsutvikling i idretten og kunne bruke disse for å utvikle sin egen ferdighet"
+    },
+    {
+     "kode": "KM3032",
+     "tekst": "gjennomføre basistrening og skadeforebyggende tiltak som gir grunnlag for økt treningsbelastning"
+    },
+    {
+     "kode": "KM3031",
+     "tekst": "forstå forholdet mellom totalbelastning og restitusjon"
+    },
+    {
+     "kode": "KM3030",
+     "tekst": "beskrive mentale forberedelser til trening og konkurranse"
+    },
+    {
+     "kode": "KM3029",
+     "tekst": "bruke lyst- og lekbetonte oppvarmingsøvelser, aktiviteter, treningsformer og konkurranser for å stimulere til økt motivasjon"
+    },
+    {
+     "kode": "KM3028",
+     "tekst": "vise god samhandling og respektfull treningsatferd som bidrar til aktivitetsglede og et godt lærings- og utviklingsmiljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i toppidrett 1. Elevene viser og utvikler kompetanse i faget gjennom å vise ferdighet i sin idrett. Elevene viser og utvikler kompetanse i faget når de tilegner seg kunnskaper som er relevant for idretten, og bruke denne aktivt for å utvikle ferdighet i sin egen idrett.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst. Læreren skal være i dialog med elevene om utviklingen deres i egen idrett, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter toppidrett 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i toppidrett 1 basert på kompetansen eleven har vist ved å delta aktivt i undervisningen. Gjennom varierte treningsmetoder, øvelser, arbeidsformer og vurderingsformer skal eleven få en god mulighet til å vise sin samlede kompetanse i kunnskaps- og ferdighetsutviklingen."
+   ]
+  },
+  {
+   "kode": "KV284",
+   "tittel": "Kompetansemål og vurdering toppidrett 2",
+   "fag": [
+    "IDR5Z05"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3027",
+     "tekst": "vise og videreutvikle ferdigheter som er sentrale for å prestere i konkurranser i idretten"
+    },
+    {
+     "kode": "KM3026",
+     "tekst": "gjennomføre systematisk og målrettet trening, og dokumentere og analysere resultatet av denne treningen"
+    },
+    {
+     "kode": "KM3025",
+     "tekst": "gjøre rede for og gjennomføre relevante tester"
+    },
+    {
+     "kode": "KM3024",
+     "tekst": "utvikle basisegenskaper og integrere skadeforebyggende tiltak i de daglige treningsrutinene"
+    },
+    {
+     "kode": "KM3023",
+     "tekst": "gjøre rede for hvordan økt treningsmengde og totalbelastning stiller krav til organisering, planlegging, restitusjon og ernæring"
+    },
+    {
+     "kode": "KM3022",
+     "tekst": "beskrive et utviklingsløp fra eget utgangspunkt og til ønsket nivå på kort og lang sikt"
+    },
+    {
+     "kode": "KM3021",
+     "tekst": "reflektere over egne mentale behov og rutiner før, under og etter trening og i forbindelse med konkurranse"
+    },
+    {
+     "kode": "KM3020",
+     "tekst": "gjøre rede for og bruke lyst- og lekbetonte aktiviteter, øvelser, treningsformer og konkurranser som kan stimulere til økt motivasjon"
+    },
+    {
+     "kode": "KM3019",
+     "tekst": "utforske hvordan aktiviteter, øvelser, trening og konkurranse påvirker motivasjon og ferdighetsutvikling"
+    },
+    {
+     "kode": "KM3018",
+     "tekst": "opptre på en måte som bidrar til et godt lærings- og utviklingsmiljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i toppidrett 2. Elevene viser og utvikler kompetanse i faget gjennom å vise sine ferdigheter, gjennom å trene målbevisst på sentrale ferdigheter og gjennom å drive annen trening som kan gi bedre ferdigheter i egen idrett. Elevene viser og utvikler kompetanse gjennom å beskrive hvordan de utvikler seg, gjennom å forstå hvordan totalbelastning kan påvirke utvikling og progresjon, og gjennom å kjenne til hva som kan stoppe utviklingen.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst. Læreren skal være i dialog med elevene om utvikling deres og veilede dem slik at de blir bevisst hvordan de skal oppnå ønsket resultat. Videre skal elevene få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen til å reflektere over egen faglig utvikling."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter toppidrett 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i toppidrett 2 basert på kompetansen eleven har vist med hensyn til kunnskaps- og ferdighetsutviklingen."
+   ]
+  },
+  {
+   "kode": "KV285",
+   "tittel": "Kompetansemål og vurdering toppidrett 3",
+   "fag": [
+    "IDR5Z06"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3017",
+     "tekst": "vise og utvikle ferdigheter som kan forbedre prestasjonen i konkurransesituasjoner"
+    },
+    {
+     "kode": "KM3016",
+     "tekst": "dokumentere, analysere og reflektere over gjennomført trening i lys av egne mål og resultater"
+    },
+    {
+     "kode": "KM3015",
+     "tekst": "utarbeide planer og gjennomføre langsiktig, systematisk og målrettet trening i idretten med utgangspunkt i idrettens krav og egen kapasitet"
+    },
+    {
+     "kode": "KM3014",
+     "tekst": "videreutvikle basisegenskaper som er sentrale for ferdighetsutvikling"
+    },
+    {
+     "kode": "KM3013",
+     "tekst": "anvende skadeforebyggende øvelser og vurdere hvordan disse kan integreres i trening og forberedelse til konkurranse"
+    },
+    {
+     "kode": "KM3012",
+     "tekst": "gjennomføre mentale forberedelse og mental trening, og reflektere over hvordan dette kan påvirke ferdighetsutvikling"
+    },
+    {
+     "kode": "KM3035",
+     "tekst": "utforske og reflektere over hvordan, aktiviteter, øvelser, trening og konkurranse påvirker motivasjon og ferdighetsutvikling"
+    },
+    {
+     "kode": "KM3036",
+     "tekst": "opptre på en måte som fremmer treningsarbeidet og samhandlingen, og som bidrar til et trygt, positivt og godt utviklingsmiljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i toppidrett 3. Elevene viser og utvikler kompetanse ved å vise ferdighet i egen idrett gjennom målbevisst trening som vil kunne ta dem til et høyere prestasjonsnivå. Elevene viser og videreutvikler kompetanse i faget gjennom å ta ansvar for planleggingen av sin egen treningshverdag og ha kontroll på gjennomføringen. Elevene viser og utvikler kompetanse gjennom å reflektere over og analysere gjennomført trening opp mot ønskede resultater.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst. Læreren skal være i dialog med elevene om utviklingen deres i idretten og skal veilede dem slik at de blir bevisst hvordan de kan oppnå ønskede resultater. Videre skal elevene få mulighet til å prøve seg fram og vise sin ferdighet i egen idrett. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven ved avslutningen av opplæringen etter toppidrett 3. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i toppidrett 3 basert på kompetansen eleven har vist i kunnskaps- og ferdighetsutviklingen."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Toppidrett 1: Eleven skal ha én standpunktkarakter.",
+    "Toppidrett 2: Eleven skal ha én standpunktkarakter.",
+    "Toppidrett 3: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Toppidrett 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Toppidrett 2: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Toppidrett 3: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Toppidrett 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Toppidrett 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Toppidrett 3: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

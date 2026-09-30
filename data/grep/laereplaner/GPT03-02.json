@@ -1,0 +1,136 @@
+{
+ "kode": "GPT03-02",
+ "tittel": "Læreplan i vg3 grafisk produksjonsteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV695",
+   "tittel": "Kompetansemål og vurdering vg3 grafisk produksjonsteknikk",
+   "fag": [
+    "GPT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8931",
+     "tekst": "planlegge og tilrettelegge grafiske produksjonsoppdrag"
+    },
+    {
+     "kode": "KM8953",
+     "tekst": "kontrollere produksjonsordrer og andre dokumenter før produksjon"
+    },
+    {
+     "kode": "KM8952",
+     "tekst": "gjøre rede for og anvende fargemodeller, og tilpasse og kontrollere produksjonsfiler for aktuell produksjonsprosess, pakking og distribusjon"
+    },
+    {
+     "kode": "KM8951",
+     "tekst": "beregne materialforbruk, kontrollere materialbeholdning og bestille materialer ved behov"
+    },
+    {
+     "kode": "KM8950",
+     "tekst": "vurdere ulykkesrisiko og helsefarer, velge verneutstyr og sikre arbeidsplassen"
+    },
+    {
+     "kode": "KM8949",
+     "tekst": "vurdere og velge papir, kartong, papp, plast og andre materialer ut fra produktets bruksområde, miljøkrav, kvalitetskrav, trykktekniske egenskaper, etterbehandling, emballering og kostnadseffektivitet"
+    },
+    {
+     "kode": "KM8948",
+     "tekst": "velge trykkfargetype tilpasset produktets bruksområde, trykkmetode, trykkmateriale, helsefare og miljøkrav"
+    },
+    {
+     "kode": "KM8947",
+     "tekst": "velge heftematerialer ut fra bruksområdet, helsefare og miljøkrav"
+    },
+    {
+     "kode": "KM8946",
+     "tekst": "håndtere og transportere materialer og opplag på en skånsom og sikker måte"
+    },
+    {
+     "kode": "KM8945",
+     "tekst": "kildesortere materialer for gjenbruk og håndtere avfall forskriftsmessig etter bedriftens krav og rutiner og med hensyn til bærekraft"
+    },
+    {
+     "kode": "KM8944",
+     "tekst": "finne fram materialer og aktuelt tilleggsutstyr til produksjoner i tråd med produksjonsordrer"
+    },
+    {
+     "kode": "KM8954",
+     "tekst": "produsere og ferdigstille grafiske produkter kostnadseffektivt etter krav til kvalitet, industristandarder, bedriftsnormer og leveringstid"
+    },
+    {
+     "kode": "KM8943",
+     "tekst": "bruke styresystemer, klargjøre, stille inn og betjene produksjonsmaskiner og tilhørende utstyr"
+    },
+    {
+     "kode": "KM8941",
+     "tekst": "kontrollere trykt materiale i forbindelse med ferdiggjøring, pakking og distribusjon"
+    },
+    {
+     "kode": "KM8940",
+     "tekst": "velge vaskemidler, løsemidler og andre kjemikalier ut fra bruksområde og fare for helseskade"
+    },
+    {
+     "kode": "KM8939",
+     "tekst": "bruke og forstå sikkerhetsdatablader og bedriftens system for internkontroll før, under og etter produksjonsprosessen"
+    },
+    {
+     "kode": "KM8938",
+     "tekst": "utføre systematisk forebyggende renhold av maskiner og produksjonsutstyr og reflektere over hensikten med det"
+    },
+    {
+     "kode": "KM8937",
+     "tekst": "bruke måleverktøy og vurdere behovet for kontroll og kalibrering av måleverktøyene"
+    },
+    {
+     "kode": "KM8936",
+     "tekst": "utføre vedlikehold, feilretting og førstelinjereparasjoner, og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM8935",
+     "tekst": "utforske og bidra til å utvikle faglige løsninger med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8934",
+     "tekst": "bruke og forstå bedriftens systemer for dokumentasjon, kvalitetssikring og avviksbehandling"
+    },
+    {
+     "kode": "KM8933",
+     "tekst": "reflektere over betydningen av universell utforming og hvordan det påvirker andres hverdag"
+    },
+    {
+     "kode": "KM8932",
+     "tekst": "reflektere over og gjøre rede for bransjens etiske retningslinjer og ansvar i valg av oppdrag"
+    },
+    {
+     "kode": "KM8942",
+     "tekst": "reflektere over påvirkningen ulike materialer har på miljøet, og fremme forslag til hvordan overskuddsmateriale fra produksjonen kan utnyttes bedre"
+    },
+    {
+     "kode": "KM8955",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 grafisk produksjonsteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 grafisk produksjonsteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 grafisk produksjonsteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

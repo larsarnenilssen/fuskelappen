@@ -1,0 +1,147 @@
+{
+ "kode": "ASK03-02",
+ "tittel": "Læreplan i latin",
+ "spraak": "nob",
+ "fastsatt": "2025-01-28",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV947",
+   "tittel": "Kompetansemål og vurdering latin 1",
+   "fag": [
+    "ASK3Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12387",
+     "tekst": "utvikle og bruke et basisordforråd i arbeid med tekster"
+    },
+    {
+     "kode": "KM12388",
+     "tekst": "gjøre rede for et utvalg sitater fra antikken og reflektere over hva de kan fortelle om gresk og romersk tenkesett og kultur"
+    },
+    {
+     "kode": "KM12389",
+     "tekst": "gjøre rede for og sammenligne grunnleggende språkelementer i latin med moderne språk"
+    },
+    {
+     "kode": "KM12390",
+     "tekst": "utforske og presentere hovedtrekk i antikkens historie og sammenligne ulike kilder fra antikken"
+    },
+    {
+     "kode": "KM12391",
+     "tekst": "bruke grunnleggende grammatikk til å forstå og utforske enkle tekster"
+    },
+    {
+     "kode": "KM12392",
+     "tekst": "drøfte om og hvordan tanker, problemstillinger og kulturuttrykk fra antikkens filosofi, religion eller kunst er relevante i dag"
+    },
+    {
+     "kode": "KM12393",
+     "tekst": "delta i enkle samtaler"
+    },
+    {
+     "kode": "KM12394",
+     "tekst": "oversette enkle tekster til og fra latin"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i latin 1. Elevene viser og utvikler kompetanse når de arbeider med og bruker metoder for språklæring og språkforståelse av latin, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i utforskende arbeid med og refleksjon om antikken og språkenes aktualitet og betydning for oss i dag.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i latin 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter latin 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i latin 1 basert på kompetansen eleven har vist ved å bruke faglige metoder i språklæring, ved å kommunisere på latin og ved å formidle innsikt i ulike emner og sammenhenger i faget."
+   ]
+  },
+  {
+   "kode": "KV948",
+   "tittel": "Kompetansemål og vurdering latin 2",
+   "fag": [
+    "ASK3Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12395",
+     "tekst": "utvikle et ordforråd i arbeid med og produksjon av tekster"
+    },
+    {
+     "kode": "KM12396",
+     "tekst": "utforske og reflektere over sammenhengen mellom språkstrukturer i latin og moderne språk"
+    },
+    {
+     "kode": "KM12397",
+     "tekst": "utforske og presentere emner fra antikkens kultur, litteratur og politikk og sette dem i en historisk og kulturell kontekst"
+    },
+    {
+     "kode": "KM12398",
+     "tekst": "delta i samtale om kjent stoff og hverdagslige temaer"
+    },
+    {
+     "kode": "KM12399",
+     "tekst": "utforske og reflektere over bruk av ordtak og sitater fra antikken i dag"
+    },
+    {
+     "kode": "KM12400",
+     "tekst": "drøfte hvordan antikken kommer til syne i kunst og kulturuttrykk i dag"
+    },
+    {
+     "kode": "KM12401",
+     "tekst": "skrive på og oversette til og fra latin og reflektere over valgene man tar under en oversettelse"
+    },
+    {
+     "kode": "KM12402",
+     "tekst": "utforske ulike fremstillinger av antikken og reflektere over hvordan disse påvirker vår forståelse av perioden"
+    },
+    {
+     "kode": "KM12403",
+     "tekst": "utforske tekster i ulike sjangre fra antikken og sammenligne innhold og oppbygning med moderne tekster"
+    },
+    {
+     "kode": "KM12404",
+     "tekst": "utforske etymologi og orddanning og analysere fremmedord og fagbegreper"
+    },
+    {
+     "kode": "KM12405",
+     "tekst": "forstå og samtale om innhold i tekster og beskrive grammatiske strukturer i tekstene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i latin 2. Elevene viser og utvikler kompetanse når de arbeider med og bruker metoder for språklæring og språkforståelse av latin, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i utforskende arbeid med og refleksjon om antikken og språkenes aktualitet og betydning for oss i dag.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i latin 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter latin 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i latin 2 basert på kompetansen eleven har vist ved å bruke faglige metoder i språklæring, ved å kommunisere på latin og ved å formidle innsikt i ulike emner og sammenhenger i faget."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Latin 1: Elevene skal ha én standpunktkarakter.\nLatin 2: Elevene skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Latin 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsedel.\nLatin 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Latin 1: Privatistene skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt.\nLatin 2: Privatistene skal opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel for privatister."
+   ]
+  }
+ ]
+}

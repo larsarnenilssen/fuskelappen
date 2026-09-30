@@ -1,0 +1,476 @@
+{
+ "kode": "ITF03-01",
+ "tittel": "Læreplan i vg3 industritekstilfaget med fordjupingsområde",
+ "spraak": "nno",
+ "fastsatt": "2021-09-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV755",
+   "tittel": "Kompetansemål og vurdering vg3 industritekstilfaget med fordjuping i farging, trykking og etterbehandling",
+   "fag": [
+    "ITF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9991",
+     "tekst": "gjere greie for og nytte historia til faget i utvikling av tekstilprodukt og forklare dei ulike produksjonsprosessane innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10056",
+     "tekst": "beskrive bruksområda og eigenskapane til ulike materiale, og vurdere og velje materiale til produksjon"
+    },
+    {
+     "kode": "KM10055",
+     "tekst": "gjere greie for styring av produksjon og bruke maskiner og utstyr til produksjon av industritekstilar"
+    },
+    {
+     "kode": "KM10054",
+     "tekst": "utføre regelmessig vedlikehald og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM10053",
+     "tekst": "vurdere behovet for og utføre kontroll av råvarer og produkt, identifisere avvik og utføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM10052",
+     "tekst": "dokumentere og rapportere om kvalitet undervegs i produksjonen og på ferdig produkt"
+    },
+    {
+     "kode": "KM10051",
+     "tekst": "drøfte faglege utfordringar på tvers av fagområda innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10050",
+     "tekst": "utføre produksjon, vedlikehald, kvalitetskontroll og dokumentasjon i samsvar med instruksjonar, sikkerheitsdatablad og reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM10049",
+     "tekst": "bruke sikkerheitsdatablad og handtere kjemikaliar og avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM10048",
+     "tekst": "drøfte mogleg ombruk og utnytting av overskotsmateriale i ein sirkulær produksjon"
+    },
+    {
+     "kode": "KM10047",
+     "tekst": "gjere greie for korleis kjemikaliar og hjelpemiddel påverkar produkt og prosess og vurdere risiko ved bruk av kjemikaliar og andre hjelpemiddel"
+    },
+    {
+     "kode": "KM10046",
+     "tekst": "vurdere og velje fargestoff til ulike produkt og gjere greie for korleis ulike lyskjelder kan påverke fargar"
+    },
+    {
+     "kode": "KM10045",
+     "tekst": "gjere mottakskontroll av råmateriale, kjemikaliar og fargestoff"
+    },
+    {
+     "kode": "KM10038",
+     "tekst": "planleggje og utføre produksjon ut frå oppsette produksjonsordrar og gitte fargereseptar"
+    },
+    {
+     "kode": "KM10044",
+     "tekst": "vurdere og velje riktige maskiner og prosessar ut frå miljøomsyn, produksjonsreinleiksgradar og produkteigenskapar for produktet"
+    },
+    {
+     "kode": "KM10043",
+     "tekst": "skrive ut reseptar og vege opp fargestoff, kjemikaliar og hjelpemiddel"
+    },
+    {
+     "kode": "KM10042",
+     "tekst": "utføre fargemåling og nyansering i produksjonen og dokumentere resultat"
+    },
+    {
+     "kode": "KM10041",
+     "tekst": "utføre kvalitetskontroll av produserte varer, reinleiksgradar, breidd og krymp og berekne kvadratmetervekta slik at dette er innanfor spesifikasjonskrava til produkta"
+    },
+    {
+     "kode": "KM10040",
+     "tekst": "planleggje og utføre dagleg vedlikehald og reinhald av maskiner og produksjonsutstyr"
+    },
+    {
+     "kode": "KM10039",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritekstilfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritekstilfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV756",
+   "tittel": "Kompetansemål og vurdering vg3 industritekstilfaget med fordjuping i garnframstilling",
+   "fag": [
+    "ITF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10057",
+     "tekst": "gjere greie for og nytte historia til faget i utvikling av tekstilprodukt og forklare dei ulike produksjonsprosessane innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10058",
+     "tekst": "beskrive bruksområda og eigenskapane til ulike materiale, og vurdere og velje materiale til produksjon"
+    },
+    {
+     "kode": "KM10059",
+     "tekst": "gjere greie for styring av produksjon og bruke maskiner og utstyr til produksjon av industritekstilar"
+    },
+    {
+     "kode": "KM10060",
+     "tekst": "utføre regelmessig vedlikehald og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM10080",
+     "tekst": "vurdere behovet for og utføre kontroll av råvarer og produkt, identifisere avvik og utføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM10079",
+     "tekst": "dokumentere og rapportere om kvalitet undervegs i produksjonen og på ferdig produkt"
+    },
+    {
+     "kode": "KM10078",
+     "tekst": "drøfte faglege utfordringar på tvers av fagområda innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10077",
+     "tekst": "utføre produksjon, vedlikehald, kvalitetskontroll og dokumentasjon i samsvar med instruksjonar, sikkerheitsdatablad og reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM10076",
+     "tekst": "bruke sikkerheitsdatablad og handtere kjemikaliar og avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM10075",
+     "tekst": "drøfte mogleg ombruk og utnytting av overskotsmateriale i ein sirkulær produksjon"
+    },
+    {
+     "kode": "KM10074",
+     "tekst": "ta imot, vurdere, kontrollere og lagre fiber og garn etter kvalitetsrutinane i bedrifta"
+    },
+    {
+     "kode": "KM10073",
+     "tekst": "klargjere fiber etter rutinar og krav om kvalitet"
+    },
+    {
+     "kode": "KM10072",
+     "tekst": "utarbeide produksjonsplan og berekne materialforbruk"
+    },
+    {
+     "kode": "KM10081",
+     "tekst": "gjere greie for ulike fibertypar og ulike metodar for spinning og tvinning"
+    },
+    {
+     "kode": "KM10071",
+     "tekst": "førebu, stille inn og bruke garnframstillingsmaskinene frå fiber til ferdig garn"
+    },
+    {
+     "kode": "KM10069",
+     "tekst": "utføre testar og målingar på fiber og garn i produksjonen og på ferdig garn"
+    },
+    {
+     "kode": "KM10067",
+     "tekst": "forklare korleis teknologisk utvikling påverkar produksjonen og gjere nytte av dette i produksjonen"
+    },
+    {
+     "kode": "KM10068",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritekstilfaget, garnframstilling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritekstilfaget, garnframstilling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV759",
+   "tittel": "Kompetansemål og vurdering vg3 industritekstilfaget med fordjuping i industrisaum",
+   "fag": [
+    "ITF3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10028",
+     "tekst": "reflektere over historia og gjere greie for og nytte historia til faget i utvikling av tekstilprodukt og forklare dei ulike produksjonsprosessane innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10027",
+     "tekst": "beskrive bruksområda og eigenskapane til ulike materiale, og vurdere og velje materiale til produksjon"
+    },
+    {
+     "kode": "KM10026",
+     "tekst": "gjere greie for styring av produksjon og bruke maskiner og utstyr til produksjon av industritekstilar"
+    },
+    {
+     "kode": "KM10025",
+     "tekst": "utføre regelmessig vedlikehald og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM10024",
+     "tekst": "vurdere behovet for og utføre kontroll av råvarer og produkt, identifisere avvik og utføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM10023",
+     "tekst": "dokumentere og rapportere om kvalitet undervegs i produksjonen og på ferdig produkt"
+    },
+    {
+     "kode": "KM10022",
+     "tekst": "drøfte faglege utfordringar på tvers av fagområda innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10021",
+     "tekst": "utføre produksjon, vedlikehald, kvalitetskontroll og dokumentasjon i samsvar med instruksjonar, sikkerheitsdatablad og reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM10020",
+     "tekst": "bruke sikkerheitsdatablad og handtere kjemikaliar og avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM10019",
+     "tekst": "drøfte mogleg ombruk og utnytting av overskotsmateriale i ein sirkulær produksjon"
+    },
+    {
+     "kode": "KM10018",
+     "tekst": "utarbeide produksjonsplan med operasjonsrekkjefølgje"
+    },
+    {
+     "kode": "KM10017",
+     "tekst": "beskrive, teikne og kvalitetsdefinere samanføyingsteknikkane som blir brukte i produksjon"
+    },
+    {
+     "kode": "KM10016",
+     "tekst": "planleggje, velje malar, utføre merking og tilskjering av metervare"
+    },
+    {
+     "kode": "KM10015",
+     "tekst": "utføre samanføying etter spesifikasjonar og produksjonsplan"
+    },
+    {
+     "kode": "KM10070",
+     "tekst": "tilpasse eigen arbeidsstasjon og nytte ergonomiske arbeidsstillingar"
+    },
+    {
+     "kode": "KM10082",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritekstilfaget, industrisaum når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritekstilfaget, industrisaum. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV757",
+   "tittel": "Kompetansemål og vurdering vg3 industritekstilfaget med fordjuping i trikotasje",
+   "fag": [
+    "ITF3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10066",
+     "tekst": "gjere greie for og nytte historia til faget i utvikling av tekstilprodukt og forklare dei ulike produksjonsprosessane innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10065",
+     "tekst": "beskrive bruksområda og eigenskapane til ulike materiale, og vurdere og velje materiale til produksjon"
+    },
+    {
+     "kode": "KM10064",
+     "tekst": "gjere greie for styring av produksjon og bruke maskiner og utstyr til produksjon av industritekstilar"
+    },
+    {
+     "kode": "KM10063",
+     "tekst": "utføre regelmessig vedlikehald og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM10062",
+     "tekst": "vurdere behovet for og utføre kontroll av råvarer og produkt, identifisere avvik og utføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM10061",
+     "tekst": "dokumentere og rapportere om kvalitet undervegs i produksjonen og på ferdig produkt"
+    },
+    {
+     "kode": "KM10037",
+     "tekst": "drøfte faglege utfordringar på tvers av fagområda innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10036",
+     "tekst": "utføre produksjon, vedlikehald, kvalitetskontroll og dokumentasjon i samsvar med instruksjonar, sikkerheitsdatablad og reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM10035",
+     "tekst": "bruke sikkerheitsdatablad og handtere kjemikaliar og avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM10012",
+     "tekst": "drøfte mogleg ombruk og utnytting av overskotsmateriale i ein sirkulær produksjon"
+    },
+    {
+     "kode": "KM10010",
+     "tekst": "planleggje og berekne materialbehov for produksjon av ein ordre"
+    },
+    {
+     "kode": "KM10009",
+     "tekst": "velje, plukke og kontrollere garn for framstilling av ein ordre ut frå produksjonsspesifikasjon"
+    },
+    {
+     "kode": "KM10008",
+     "tekst": "beskrive og teikne dei ulike grunnbindingane for strikk"
+    },
+    {
+     "kode": "KM10007",
+     "tekst": "beskrive dei ulike maskindelane og dei ulike maskebyggjande elementa på ei strikkemaskin"
+    },
+    {
+     "kode": "KM10006",
+     "tekst": "gjere greie for ulike maskintypar og velje riktig maskin til produksjon"
+    },
+    {
+     "kode": "KM10005",
+     "tekst": "utføre mønsterskifte på strikkemaskin ut frå mønster, tettleik og fargeval i produksjonen"
+    },
+    {
+     "kode": "KM10004",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritekstilfaget, trikotasje når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritekstilfaget, trikotasje. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV758",
+   "tittel": "Kompetansemål og vurdering vg3 industritekstilfaget med fordjuping i veving",
+   "fag": [
+    "ITF3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10003",
+     "tekst": "gjere greie for og nytte historia til faget i utvikling av tekstilprodukt og forklare dei ulike produksjonsprosessane innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM10002",
+     "tekst": "beskrive bruksområda og eigenskapane til ulike materiale, og vurdere og velje materiale til produksjon"
+    },
+    {
+     "kode": "KM10001",
+     "tekst": "gjere greie for styring av produksjon og bruke maskiner og utstyr til produksjon av industritekstilar"
+    },
+    {
+     "kode": "KM10000",
+     "tekst": "utføre regelmessig vedlikehald og vurdere behov for teknisk assistanse"
+    },
+    {
+     "kode": "KM9999",
+     "tekst": "vurdere behovet for og utføre kontroll av råvarer og produkt, identifisere avvik og utføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM9998",
+     "tekst": "dokumentere og rapportere om kvalitet undervegs i produksjonen og på ferdig produkt"
+    },
+    {
+     "kode": "KM9997",
+     "tekst": "drøfte faglege utfordringar på tvers av fagområda innanfor industritekstilfaget"
+    },
+    {
+     "kode": "KM9996",
+     "tekst": "utføre produksjon, vedlikehald, kvalitetskontroll og dokumentasjon i samsvar med instruksjonar, sikkerheitsdatablad og reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9995",
+     "tekst": "bruke sikkerheitsdatablad og handtere kjemikaliar og avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM9994",
+     "tekst": "drøfte mogleg ombruk og utnytting av overskotsmateriale i ein sirkulær produksjon"
+    },
+    {
+     "kode": "KM9993",
+     "tekst": "teste og vurdere kvaliteten på materiale og garn"
+    },
+    {
+     "kode": "KM9992",
+     "tekst": "velje og grunngi valet av garn, utstyr, bindingar og mønster som skal brukast i renning og vev"
+    },
+    {
+     "kode": "KM10011",
+     "tekst": "utarbeide operasjonsplan, førebu renning og vev, og berekne materialforbruk"
+    },
+    {
+     "kode": "KM10013",
+     "tekst": "gjere greie for prinsippa for renning og kjenne til klistring og liming"
+    },
+    {
+     "kode": "KM10034",
+     "tekst": "setje opp garn i rennehekk og utføre renning og bomming på rennemaskin"
+    },
+    {
+     "kode": "KM10014",
+     "tekst": "montere og knyte ny renning i vevemaskin og utføre framtrekk og igangkøyring av vevemaskina"
+    },
+    {
+     "kode": "KM10033",
+     "tekst": "gjere greie for ulike veveteknikkar, innslags- og skiljemetodar og nødvendig utstyr på vevemaskina"
+    },
+    {
+     "kode": "KM10032",
+     "tekst": "gjere greie for, teikne og utvikle grunnbindingar til bruk i veven"
+    },
+    {
+     "kode": "KM10031",
+     "tekst": "træ reiskapar og gjennomføre mønsterskifte på vevemaskina ut frå binding, tettleik og innslagsgarn"
+    },
+    {
+     "kode": "KM10030",
+     "tekst": "utføre vektprøving, kontrollere mønster og farge og tettleik i renning og innslag"
+    },
+    {
+     "kode": "KM10029",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industritekstilfaget, veving når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industritekstilfaget, veving. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 industritekstilfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på to til tre vyrkedagar."
+   ]
+  }
+ ]
+}

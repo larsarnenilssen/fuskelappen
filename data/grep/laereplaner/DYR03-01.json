@@ -1,0 +1,128 @@
+{
+ "kode": "DYR03-01",
+ "tittel": "Læreplan i Vg3 dyrefaget",
+ "spraak": "nno",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV605",
+   "tittel": "Kompetansemål og vurdering vg3 dyrefaget",
+   "fag": [
+    "DYR3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7027",
+     "tekst": "planleggje, vurdere, gjennomføre og dokumentere arbeidsoppgåver i dyrenæringar"
+    },
+    {
+     "kode": "KM7047",
+     "tekst": "tilby tenester og produkt retta mot målgrupper i dyrenæringar"
+    },
+    {
+     "kode": "KM7046",
+     "tekst": "drifte og halde ved like dyreanlegg, lokale og innreiing"
+    },
+    {
+     "kode": "KM7045",
+     "tekst": "vurdere, selektere, trene og førebu dyr for ulike miljø, bruksområde og aktivitetar"
+    },
+    {
+     "kode": "KM7044",
+     "tekst": "vurdere og gjennomføre stell, fôring og pleie av dyr"
+    },
+    {
+     "kode": "KM7043",
+     "tekst": "vurdere faktorar som påverkar prestasjonar, helse og åtferd til dyr"
+    },
+    {
+     "kode": "KM7042",
+     "tekst": "vurdere, utføre og grunngi tiltak som fremjar prestasjonar, helse og velferd til dyr, og som førebyggjer helse- og åtferdsproblem"
+    },
+    {
+     "kode": "KM7041",
+     "tekst": "vurdere, utføre og grunngi tiltak ved sjukdom og skade på dyr i samarbeid med andre yrkesgrupper, vurdere skadeomfang og utføre førstehjelp på dyr og menneske"
+    },
+    {
+     "kode": "KM7040",
+     "tekst": "handtere redde og aggressive dyr på ein måte som varetek sikkerheit, dyrevelferd og -helse"
+    },
+    {
+     "kode": "KM7039",
+     "tekst": "reflektere over og nytte dyrevelferdsindikatorar og prinsippet om minste inngrep"
+    },
+    {
+     "kode": "KM7048",
+     "tekst": "observere og beskrive artstypiske og individuelle behov, allmenntilstand og helse- og åtferdsavvik"
+    },
+    {
+     "kode": "KM7038",
+     "tekst": "nytte journalar og andre dokumentasjonsverktøy i dyrenæringar etter gjeldande standardar og regelverk"
+    },
+    {
+     "kode": "KM7036",
+     "tekst": "nytte diagnostiske og yrkesrelevante verktøy og metodar i dyrenæringar"
+    },
+    {
+     "kode": "KM7035",
+     "tekst": "gjere greie for faktorar som påverkar økonomi, kundetilfredsheit, arbeidsmiljø og kvalitet, og gjennomføre og grunngi forbetringstiltak"
+    },
+    {
+     "kode": "KM7034",
+     "tekst": "arbeide på ein sikker måte, vurdere risiko og setje i verk tiltak for å redusere risiko"
+    },
+    {
+     "kode": "KM7033",
+     "tekst": "avdekkje behova til kunden og grunngi anbefalingar"
+    },
+    {
+     "kode": "KM7032",
+     "tekst": "kommunisere med og rettleie ulike målgrupper i dyrefaglege tema og yte profesjonell kundeservice"
+    },
+    {
+     "kode": "KM7031",
+     "tekst": "leggje til rette miljø, trening og rettleiing for godt samspel mellom dyr og menneske"
+    },
+    {
+     "kode": "KM7030",
+     "tekst": "velje, nytte og tilpasse utstyr, verktøy og materiale, og utføre vedlikehald"
+    },
+    {
+     "kode": "KM7029",
+     "tekst": "arbeide i samsvar med og grunngi smittevern og hygieniske og ergonomiske prinsipp"
+    },
+    {
+     "kode": "KM7028",
+     "tekst": "arbeide i samsvar med rutinar, kvalitetssystem, standardar, regelverk og forvaltningskrav, og beskrive offentlege forvaltningsorgan på området"
+    },
+    {
+     "kode": "KM7037",
+     "tekst": "vurdere eigen praksis og kompetanse, og samarbeide med dyrehelsepersonell og andre yrkesgrupper"
+    },
+    {
+     "kode": "KM7049",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 dyrefaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 dyrefaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 dyrefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på tre–fem vyrkedagar."
+   ]
+  }
+ ]
+}

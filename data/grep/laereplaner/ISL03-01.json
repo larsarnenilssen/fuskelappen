@@ -1,0 +1,124 @@
+{
+ "kode": "ISL03-01",
+ "tittel": "Læreplan i vg3 isolatørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV509",
+   "tittel": "Kompetansemål og vurdering vg3 isolatørfaget",
+   "fag": [
+    "ISL3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5829",
+     "tekst": "måle og utarbeide målsatte skisser for prefabrikkering av materialer ved hjelp av programmerbare maskiner i samsvar med tegninger, skjemaer og standarder"
+    },
+    {
+     "kode": "KM5811",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5820",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystem, gjennomføre arbeidet i tråd med gjeldende krav til helse, miljø og sikkerhet og toleransekrav og reflektere over konsekvenser av ikke å følge kravene"
+    },
+    {
+     "kode": "KM5824",
+     "tekst": "beregne mengder, kostnader, tidsbruk og vinkler og bruke målestokk i arbeidsoppgavene"
+    },
+    {
+     "kode": "KM5822",
+     "tekst": "forstå og bruke byggetegninger og rørtegninger"
+    },
+    {
+     "kode": "KM5828",
+     "tekst": "bruke materialer etter kundens bestilling og reflektere over hvordan materialvalg påvirker funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5826",
+     "tekst": "isolere gjennomføringer i bygg, industri, på skip og offshore etter kundens bestilling og gjøre rede for ulike branntettingsmetoder"
+    },
+    {
+     "kode": "KM5821",
+     "tekst": "forstå kravene til brann- og eksplosjonsvern og beskytte olje og gassinstallasjoner i henhold til disse"
+    },
+    {
+     "kode": "KM5818",
+     "tekst": "gjøre rede for prinsippene for varmeteknikk, kuldeteknikk og akustikk og velge materialer som isolerer mot varme, kulde og lyd"
+    },
+    {
+     "kode": "KM5810",
+     "tekst": "montere isolasjon og kapsling på rør, ventiler, beholdere og tankanlegg"
+    },
+    {
+     "kode": "KM5827",
+     "tekst": "vurdere brannårsaker og montere isolasjons- og brannsikringprodukter"
+    },
+    {
+     "kode": "KM5817",
+     "tekst": "tegne, utfolde, lage og montere kapsling i ulike tynnplatemetaller i røranlegg, ventiler og tankanlegg"
+    },
+    {
+     "kode": "KM5813",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5812",
+     "tekst": "håndtere avfall etter gjeldende regelverk, iverksette tiltak for gjenbruk, optimalisere materialbruken og beregne produksjons- og materialkostnader ved feilhåndtering"
+    },
+    {
+     "kode": "KM5825",
+     "tekst": "gjøre rede for og bruke ikke-metalliske overflatebeskyttelsesmaterialer"
+    },
+    {
+     "kode": "KM5823",
+     "tekst": "produsere og montere isolasjonsputer"
+    },
+    {
+     "kode": "KM5819",
+     "tekst": "produsere og montere underkonstruksjon og platekledning av struktur i henhold til spesifikasjoner"
+    },
+    {
+     "kode": "KM5816",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og reflektere over løsninger som bidrar til å redusere miljøavtrykket og sikre effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5815",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5814",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over hvilke konsekvenser ulike belastninger har for yrkesutøveren"
+    },
+    {
+     "kode": "KM5831",
+     "tekst": "bruke verne- og sikkerhetsutstyr, reflektere over konsekvensene av feilbruk og iverksette forebyggende tiltak"
+    },
+    {
+     "kode": "KM5830",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 isolatørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 isolatørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 isolatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "kode": "SOA03-01",
+ "tittel": "Læreplan i vg3 service- og administrasjonsfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-05-04",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV595",
+   "tittel": "Kompetansemål og vurdering vg3 service- og adminstrasjonsfaget",
+   "fag": [
+    "SOA3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6850",
+     "tekst": "presentere kjerneoppgåvene, organiseringa, strategiane og måla til verksemda"
+    },
+    {
+     "kode": "KM6860",
+     "tekst": "planleggje og koordinere ulike marknadsførings- og profileringsaktivitetar"
+    },
+    {
+     "kode": "KM6851",
+     "tekst": "gjere greie for og bruke dei interne og eksterne kommunikasjonskanalane til verksemda"
+    },
+    {
+     "kode": "KM6854",
+     "tekst": "bruke systema og programvarene til verksemda og rettleie andre i å bruke dei"
+    },
+    {
+     "kode": "KM6845",
+     "tekst": "utarbeide dokument og informasjonsmateriell i tråd med den grafiske profilen til verksemda"
+    },
+    {
+     "kode": "KM6853",
+     "tekst": "gjere greie for regelverk som gjeld personvern, og følgje rutinane verksemda har for å samle inn, behandle og lagre informasjon"
+    },
+    {
+     "kode": "KM6842",
+     "tekst": "reflektere over etiske dilemma knytte til personvern og behov for openheit"
+    },
+    {
+     "kode": "KM6847",
+     "tekst": "hente inn, omarbeide og presentere relevant informasjon for avgjerdstakarar i verksemda"
+    },
+    {
+     "kode": "KM6839",
+     "tekst": "hente inn tilbod og handle varer og tenester etter gjeldande regelverk, rutinar og miljøkrav i verksemda"
+    },
+    {
+     "kode": "KM6858",
+     "tekst": "utføre oppgåver som har med budsjett og økonomi å gjere, og drøfte samanhengar mellom budsjett, rekneskap og økonomiske nøkkeltal"
+    },
+    {
+     "kode": "KM6856",
+     "tekst": "gjere greie for og utføre administrative oppgåver knytte til personalarbeid"
+    },
+    {
+     "kode": "KM6855",
+     "tekst": "planleggje og gjennomføre møter og arrangement, og vurdere korleis kostnader og miljø- og klimaomsyn skal vektleggast i prosessen"
+    },
+    {
+     "kode": "KM6859",
+     "tekst": "forstå og gjere greie for korleis kulturforskjellar kan påverke ulike arbeidssituasjonar, og ta omsyn til dette i møte med kollegaer, kundar og brukarar"
+    },
+    {
+     "kode": "KM6852",
+     "tekst": "tilpasse kommunikasjonen og utøvinga av servicerolla i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM6844",
+     "tekst": "drøfte korleis medbestemming blir organisert og praktisert i verksemda, og presentere oppgåver knytte til organiseringa og praktiseringa av medbestemming"
+    },
+    {
+     "kode": "KM6848",
+     "tekst": "vurdere og foreslå tiltak som kan betre og effektivisere administrative arbeidsoppgåver i verksemda"
+    },
+    {
+     "kode": "KM6841",
+     "tekst": "gjere greie for og følgje lov- og regelverk og interne rutinar i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM6843",
+     "tekst": "reflektere over kva krav og forventningar som blir stilte til eit likeverdig og inkluderande arbeidsfellesskap"
+    },
+    {
+     "kode": "KM6840",
+     "tekst": "reflektere over etiske retningslinjer og verdiar i verksemda og arbeide i tråd med desse"
+    },
+    {
+     "kode": "KM6846",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    },
+    {
+     "kode": "KM6857",
+     "tekst": "gjere greie for ulike område innanfor helse, miljø og sikkerheit og for korleis tiltak og organisering i verksemda, og eigen medverknad, påverkar arbeidsmiljøet"
+    },
+    {
+     "kode": "KM6849",
+     "tekst": "gjennomføre arbeidsoppgåver på ein ergonomisk tilpassa måte"
+    },
+    {
+     "kode": "KM6861",
+     "tekst": "gjere greie for beredskapsplanane i verksemda og for eiga rolle i konflikt- og nødssituasjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 service- og administrasjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 service- og administrasjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 service- og administrasjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over tre vyrkedagar."
+   ]
+  }
+ ]
+}

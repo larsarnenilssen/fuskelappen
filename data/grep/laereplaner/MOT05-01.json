@@ -1,0 +1,221 @@
+{
+ "kode": "MOT05-01",
+ "tittel": "Læreplan i målar- og overflateteknikkfaget – modulstrukturert opplæring for vaksne",
+ "spraak": "nno",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV870",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerheit",
+   "fag": [
+    "MOT5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11410",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, arbeide i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM11411",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM11412",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av støveksponering og bruk av kjemikalium"
+    },
+    {
+     "kode": "KM11413",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM11414",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM11415",
+     "tekst": "bruke fagterminologi for å kommunisere med kundar, kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM11416",
+     "tekst": "gjere greie for argumentasjonen til andre og bruke og følgje opp innspel frå andre i samtalar og diskusjonar om yrkesrelevante emne"
+    },
+    {
+     "kode": "KM11417",
+     "tekst": "gjere greie for varme arbeid som brannårsak, gjennomføre sikkerheitstiltak og hindre brann"
+    },
+    {
+     "kode": "KM11418",
+     "tekst": "anvende sikkerheitsdatablad og følgje instruksar ved bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM11419",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM11420",
+     "tekst": "kjeldesortere og handtere kjemikalium etter gjeldande regelverk, følgje substitusjonsplikta, reflektere over konsekvensane av feilhandtering og iverksettje tiltak"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen helse, miljø og sikkerheit når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen helse, miljø og sikkerheit. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i helse, miljø og sikkerheit. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV871",
+   "tittel": "Kompetansemål og vurdering planleggjing",
+   "fag": [
+    "MOT5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11421",
+     "tekst": "planleggje behandling av flater på nybygg, eksisterande bygningsmasse og historiske bygg, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM11422",
+     "tekst": "utarbeide framdriftsplanar, bestille og motta produkt, utstyr og mengder og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM11423",
+     "tekst": "velje, bruke og halde ved like verktøy og maskiner til ulike formål og med omsyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM11424",
+     "tekst": "vurdere tilstanden til overflatene, byggje opp sjikt ut frå bruksområde og vurdere korleis det ytre og indre miljøet påverkar sluttresultatet og levetida til overflata"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen planleggjing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen planleggjing. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i planleggjing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV872",
+   "tittel": "Kompetansemål og vurdering overflatebehandling",
+   "fag": [
+    "MOT5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11426",
+     "tekst": "utbetre underlaget før behandling og vurdere korleis kvaliteten på underlaget påverkar arbeidsprosessen"
+    },
+    {
+     "kode": "KM11427",
+     "tekst": "bruke ulike påføringsteknikkar og påføringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM11428",
+     "tekst": "restaurere og dekorere bygningar og vurdere korleis byggjeskikk og historia til bygget påverkar valet av produkt og metodar"
+    },
+    {
+     "kode": "KM11429",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar, målestokk og trigonometri til å berekne lengder, vinklar og areal i problemløysing innanfor bygg- og anleggsfag"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen overflatebehandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen overflatebehandling. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i overflatebehandling. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV873",
+   "tittel": "Kompetansemål og vurdering måling og tapetsering",
+   "fag": [
+    "MOT5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11430",
+     "tekst": "drøfte og reflektere over korleis tradisjonelle målemetodar tek vare på eigenarten til faget og kulturtradisjonane"
+    },
+    {
+     "kode": "KM11431",
+     "tekst": "vurdere eksisterande målingslag og velje målemetode som tek vare på eigenarten til underlaget"
+    },
+    {
+     "kode": "KM11432",
+     "tekst": "bruke Natural Colour System, setje saman ulike fargar og vurdere korleis fargar påverkar bruksområdet, belysninga og harmonien til rommet"
+    },
+    {
+     "kode": "KM11433",
+     "tekst": "vurdere eigenskapane til overflata, påføre sparkel-, beis-, olje-, lakk- og målingssystem og gjere greie for korleis dei ulike produkta verkar saman og påverkar herdeprosessen"
+    },
+    {
+     "kode": "KM11434",
+     "tekst": "programmere og bruke robotar til overflatebehandling"
+    },
+    {
+     "kode": "KM11435",
+     "tekst": "setje opp glasfiberstrie, folie, tapet og overmålingstapet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen måling og tapetsering når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen måling og tapetsering. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i måling og tapetsering. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV874",
+   "tittel": "Kompetansemål og vurdering gulvleggjing",
+   "fag": [
+    "MOT5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11436",
+     "tekst": "påføre membransystem og leggje og sveise golv- og veggbelegg i våtrom"
+    },
+    {
+     "kode": "KM11437",
+     "tekst": "leggje teppe, fugefrie golv, banebelegg, LVT-stavar og flis i vinyl, velje metode og vurdere korleis bruken av lim, sparkel og avrettingsmassar påverkar sluttresultatet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderingen skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i modulen gulvleggjing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i modulen gulvleggjing. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i modulen. Kompetansemåla i alle modulane skal forståst i lys av teksten om faget.",
+    "Lærlingen skal ha ei midtvegsvurdering ved avslutninga av opplæringa i gulvleggjing. Midtvegsvurderinga har karakteruttrykket godkjent/ikkje godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle ha bestått ein skriftleg eksamen som er laga ut frå læreplanen i vg3 målar- og overflateteknikkfaget (MOT03-01). Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i målar- og overflateteknikkfaget – modulstrukturert opplæring for vaksne skal avsluttast med ei sveineprøve. Sveineprøva lagast ut frå læreplanen i vg3 målar- og overflateteknikkfaget (MOT03-01). Alle skal opp til sveineprøva som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

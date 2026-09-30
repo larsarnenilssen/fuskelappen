@@ -1,0 +1,140 @@
+{
+ "kode": "LMM03-02",
+ "tittel": "Læreplan i vg3 landbruksmaskinmekanikarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV668",
+   "tittel": "Kompetansemål og vurdering vg3 landbruksmaskinmekanikarfaget",
+   "fag": [
+    "LMM3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8344",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere arbeidsoppgåver ut frå prosedyrar, standardar og tilvisingane frå fabrikanten"
+    },
+    {
+     "kode": "KM8367",
+     "tekst": "søkje etter feil på system og komponentar i tråd med teknisk dokumentasjon, og stille diagnose"
+    },
+    {
+     "kode": "KM8366",
+     "tekst": "vurdere og beskrive reparasjonsbehov på komponentar med registrert funksjonsavvik"
+    },
+    {
+     "kode": "KM8365",
+     "tekst": "planleggje arbeidet og velje verktøy på bakgrunn av diagnose"
+    },
+    {
+     "kode": "KM8364",
+     "tekst": "gjennomføre reparasjonar og vedlikehald i tråd med teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM8363",
+     "tekst": "bruke måleutstyr og vurdere måleresultat i samsvar med teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM8362",
+     "tekst": "utføre vedlikehald og reparasjon på elmotorar og forbrenningsmotorar"
+    },
+    {
+     "kode": "KM8361",
+     "tekst": "feilsøkje og reparere etterbehandlingssystem for avgassar frå forbrenningsmotorar"
+    },
+    {
+     "kode": "KM8360",
+     "tekst": "utføre vedlikehald og reparasjon på transmisjonar og drivverk"
+    },
+    {
+     "kode": "KM8359",
+     "tekst": "utføre vedlikehald og reparasjon på ramme og lasteutstyr"
+    },
+    {
+     "kode": "KM8358",
+     "tekst": "utføre vedlikehald og reparasjon på bremsar og styring"
+    },
+    {
+     "kode": "KM8357",
+     "tekst": "vurdere slitasje, skadar og behov for vedlikehald på dekk og hjulutrusting"
+    },
+    {
+     "kode": "KM8356",
+     "tekst": "utføre vedlikehald og reparasjon på hydrauliske system og pneumatikk"
+    },
+    {
+     "kode": "KM8355",
+     "tekst": "utføre vedlikehald og reparasjon på elektriske og elektroniske system"
+    },
+    {
+     "kode": "KM8354",
+     "tekst": "utføre vedlikehald og reparasjon på kontroll- og varslingssystem"
+    },
+    {
+     "kode": "KM8353",
+     "tekst": "utføre vedlikehald og reparasjon på digitale styringar for motor, hydraulikk og transmisjon"
+    },
+    {
+     "kode": "KM8352",
+     "tekst": "utføre klargjering, vedlikehald og reparasjon på reiskapar for landbruksmaskiner"
+    },
+    {
+     "kode": "KM8351",
+     "tekst": "utføre vedlikehald og reparasjon på komfort- og klimaanlegg"
+    },
+    {
+     "kode": "KM8350",
+     "tekst": "utføre reparasjonar og vedlikehald på automatiserte maskinstyringssystem"
+    },
+    {
+     "kode": "KM8349",
+     "tekst": "utføre periodisk vedlikehald og gjere greie for kvifor det er viktig"
+    },
+    {
+     "kode": "KM8348",
+     "tekst": "velje smørjemiddel og væsker i samsvar med spesifikasjonane til produsenten"
+    },
+    {
+     "kode": "KM8347",
+     "tekst": "rettleie brukarar i nødvendig vedlikehald av landbruksmaskiner og reiskapar"
+    },
+    {
+     "kode": "KM8346",
+     "tekst": "kontrollere og vurdere kvaliteten på arbeid og dokumentasjon og skrive arbeidsrapportar"
+    },
+    {
+     "kode": "KM8345",
+     "tekst": "registrere og rapportere avvik"
+    },
+    {
+     "kode": "KM8368",
+     "tekst": "reflektere over kor viktig det er å gjenvinne og sortere avfall i tråd med gjeldande regelverk"
+    },
+    {
+     "kode": "KM8369",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 landbruksmaskinmekanikarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 landbruksmaskinmekanikarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 landbruksmaskinmekanikarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

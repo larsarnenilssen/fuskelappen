@@ -1,0 +1,166 @@
+{
+ "kode": "INF01-03",
+ "tittel": "Læreplan i informasjonsteknologi",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV977",
+   "tittel": "Kompetansemål og vurdering informasjonsteknologi 1",
+   "fag": [
+    "INF1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12738",
+     "tekst": "drøfte dagsaktuelle temaer knyttet til hvordan informasjonsteknologi påvirker individet og samfunnet"
+    },
+    {
+     "kode": "KM12732",
+     "tekst": "beskrive sentrale komponenter i datamaskiner og nettverk og gjøre rede for hvilken funksjon de har"
+    },
+    {
+     "kode": "KM12734",
+     "tekst": "gjøre rede for og vurdere hvordan ulike typer informasjon kan representeres digitalt og struktureres ved hjelp av ulike datalagringsmetoder"
+    },
+    {
+     "kode": "KM12739",
+     "tekst": "utvikle nettsider ved hjelp av markeringsspråk"
+    },
+    {
+     "kode": "KM12733",
+     "tekst": "lagre og hente fram data, presentere data på nettsider og reflektere over hvordan representasjonsform kan påvirke tolkningen"
+    },
+    {
+     "kode": "KM12736",
+     "tekst": "planlegge og lage nettsider som tar hensyn til brukervennlighet og universell utforming"
+    },
+    {
+     "kode": "KM12740",
+     "tekst": "utvikle prosedyreorienterte programmer med prosedyrer med og uten parametre og returverdier"
+    },
+    {
+     "kode": "KM12742",
+     "tekst": "beskrive ulike typer algoritmer og vurdere effektiviteten av egen programkode"
+    },
+    {
+     "kode": "KM12741",
+     "tekst": "utforske, strukturere og kommentere programkode"
+    },
+    {
+     "kode": "KM12735",
+     "tekst": "gjøre rede for gjeldende personvernregelverk og hvilke konsekvenser det har for utvikling av informasjonsteknologi"
+    },
+    {
+     "kode": "KM12737",
+     "tekst": "drøfte problemstillinger knyttet til innhenting, bruk og misbruk av data"
+    },
+    {
+     "kode": "KM12743",
+     "tekst": "bruke algoritmisk tenkning og programmering for å utforske en problemstilling og presentere resultatet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i informasjonsteknologi 1. Elevene viser og utvikler kompetanse i faget når de arbeider med modellering og programmering, og utforsker ulike problemstillinger knyttet til dette. Videre viser og utvikler elevene kompetanse når de gjør rede for og drøfter samfunnsmessige og tekniske aspekter ved informasjonsteknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte, praktiske og utforskende arbeidsmåter, ved bruk av relevant teknologi og hjelp til å utforske problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i å utforme nettsider, å lage programmer og å behandle data, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget, både når det gjelder faglig kunnskap og forståelse og praktiske ferdigheter."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter informasjonsteknologi 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer ferdigheter, forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i informasjonsteknologi 1 basert på kompetansen eleven har vist både skriftlig, muntlig og digitalt ved å gjøre bruk av kunnskaper og ferdigheter i faget til å forstå og utvikle informasjonssystemer."
+   ]
+  },
+  {
+   "kode": "KV978",
+   "tittel": "Kompetansemål og vurdering  informasjonsteknologi 2",
+   "fag": [
+    "INF1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12748",
+     "tekst": "utforske og vurdere muligheter, utfordringer og konsekvenser ved bruk av informasjonsteknologi i ulike sammenhenger"
+    },
+    {
+     "kode": "KM12747",
+     "tekst": "drøfte etiske dilemmaer som oppstår som en konsekvens av informasjonsteknologi, både for individ og samfunn"
+    },
+    {
+     "kode": "KM12749",
+     "tekst": "utforske og vurdere alternative løsninger for design og implementering av et program"
+    },
+    {
+     "kode": "KM12751",
+     "tekst": "anvende objektorientert modellering til å beskrive et programs struktur"
+    },
+    {
+     "kode": "KM12753",
+     "tekst": "utvikle objektorienterte programmer med klasser, objekter, metoder og arv"
+    },
+    {
+     "kode": "KM12754",
+     "tekst": "vurdere og bruke strategier for feilsøking og testing av programkode"
+    },
+    {
+     "kode": "KM12750",
+     "tekst": "generalisere løsninger ved å utvikle og bruke gjenbrukbar programkode"
+    },
+    {
+     "kode": "KM12745",
+     "tekst": "vurdere brukervennligheten i egne og andres programmer og foreslå forbedringer"
+    },
+    {
+     "kode": "KM12752",
+     "tekst": "velge og bruke relevante systemutviklingsmetoder og -verktøy for samarbeid med andre"
+    },
+    {
+     "kode": "KM12746",
+     "tekst": "gjøre rede for standarder for lagring, utveksling og sikring av ulike typer data"
+    },
+    {
+     "kode": "KM12744",
+     "tekst": "bruke programmering til å innhente, analysere og presentere informasjon fra reelle datasett"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i informasjonsteknologi 2. Elevene viser og utvikler kompetanse i faget når de utforsker og løser ulike problemstillinger. Elevene viser og utvikler også kompetanse gjennom arbeid med modellering og programmering. Videre viser og utvikler elevene kompetanse når de gjør rede for og drøfter samfunnsmessige og tekniske aspekter ved informasjonsteknologi.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å legge til rette for varierte, praktiske og utforskende arbeidsmåter. Videre skal læreren legge til rette for bruk av relevant teknologi og for at elevene kan utforske ulike faglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i å utvikle og forbedre programmer, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget, både når det gjelder faglig kunnskap og forståelse og praktiske ferdigheter."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter informasjonsteknologi 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer ferdigheter, forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i informasjonsteknologi 2 basert på kompetansen eleven har vist både skriftlig, muntlig og digitalt ved å gjøre bruk av kunnskaper og ferdigheter i faget til å forstå og utvikle informasjonssystemer."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Informasjonsteknologi 1: Eleven skal ha én standpunktkarakter.",
+    "Informasjonsteknologi 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Informasjonsteknologi 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Informasjonsteknologi 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Informasjonsteknologi 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommune avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Informasjonsteknologi 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ha forberedelsesdel. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

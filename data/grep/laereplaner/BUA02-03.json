@@ -1,0 +1,230 @@
+{
+ "kode": "BUA02-03",
+ "tittel": "Læreplan i vg2 barne- og ungdomsarbeiderfag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV378",
+   "tittel": "Kompetansemål og vurdering pedagogisk arbeid",
+   "fag": [
+    "BUA2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3985",
+     "tekst": "gjøre rede for hva lek er, og lekens betydning for barn og unges læring og utvikling, og legge til rette for ulike former for lek tilpasset alders-, modnings- og funksjonsnivå"
+    },
+    {
+     "kode": "KM4003",
+     "tekst": "drøfte faktorer for gode sosialiseringsprosesser hos barn og unge"
+    },
+    {
+     "kode": "KM4004",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere praktisk-estetiske aktiviteter i det pedagogiske arbeidet for barn og unge"
+    },
+    {
+     "kode": "KM4005",
+     "tekst": "beskrive didaktiske metoder i det pedagogiske arbeidet som bidrar til motivasjon og fremmer glede og mestring"
+    },
+    {
+     "kode": "KM4006",
+     "tekst": "gjøre rede for ulike observasjonsmetoder og vise hvordan disse kan være utgangspunkt for pedagogisk arbeid"
+    },
+    {
+     "kode": "KM4007",
+     "tekst": "gjøre rede for sentrale trekk i utviklingspsykologien og anvende disse i det pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM4008",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere aktiviteter for barn og unge som fremmer god helhetlig helse"
+    },
+    {
+     "kode": "KM4010",
+     "tekst": "planlegge og lage enkle måltider i tråd med anbefalinger fra nasjonale helsemyndigheter"
+    },
+    {
+     "kode": "KM4017",
+     "tekst": "veilede barn og unge om respekt og toleranse for ulike kulturer og fellesskapets verdier"
+    },
+    {
+     "kode": "KM4011",
+     "tekst": "gjøre rede for tiltak som forebygger kriminalitet og bruk av rusmidler"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i pedagogisk arbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i pedagogisk arbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i pedagogisk arbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i pedagogisk arbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV379",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "BUA2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4012",
+     "tekst": "gjøre rede for voksnes ansvar i samhandling med barn og unge og drøfte hvordan den voksnes relasjonsferdigheter påvirker samspillet mellom barn og voksne"
+    },
+    {
+     "kode": "KM4001",
+     "tekst": "beskrive barn og unges språkutvikling og hvilken betydning språket har for personlighetsutviklingen"
+    },
+    {
+     "kode": "KM4014",
+     "tekst": "gjøre rede for prinsippene for anerkjennende kommunikasjon og vise slik kommunikasjon i praksis"
+    },
+    {
+     "kode": "KM3998",
+     "tekst": "gjøre rede for ulike kommunikasjonsmetoder og vise hvordan tegn til tale kan brukes i samtale med barn og unge"
+    },
+    {
+     "kode": "KM4013",
+     "tekst": "samtale med barn, unge, foresatte, kolleger og andre samarbeidspartnere på en måte som fremmer trygghet og tillit"
+    },
+    {
+     "kode": "KM4000",
+     "tekst": "gjøre rede for betydningen av et godt selvbilde og en trygg identitet for barn og unges livsutfoldelse og skaperglede"
+    },
+    {
+     "kode": "KM4015",
+     "tekst": "beskrive hva som kjennetegner en velfungerende gruppe, og reflektere over og gjennomføre tiltak dersom gruppen fungerer dårlig"
+    },
+    {
+     "kode": "KM4016",
+     "tekst": "gjøre rede for hva sosial kompetanse og kulturkompetanse er, og foreslå tiltak som kan bidra til å utvikle slik kompetanse hos barn og unge"
+    },
+    {
+     "kode": "KM4002",
+     "tekst": "gjøre rede for hva en konflikt er, foreslå forebyggende tiltak og vise metoder for konflikthåndtering i praksis"
+    },
+    {
+     "kode": "KM3999",
+     "tekst": "gjøre rede for hvordan man kan tilrettelegge for samisk kultur i arbeidet med barn og unge"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV380",
+   "tittel": "Kompetansemål og vurdering yrkesliv i barne- og ungdomsarbeiderfag",
+   "fag": [
+    "BUA2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3997",
+     "tekst": "drøfte hva det vil si å være en profesjonell yrkesutøver og god rollemodell i barne- og ungdomsarbeiderfaget og å vise profesjonalitet i eget arbeid"
+    },
+    {
+     "kode": "KM3996",
+     "tekst": "drøfte muligheter og utfordringer som barn og unge møter i en digital hverdag, og veilede barn og unge i å vise digital dømmekraft"
+    },
+    {
+     "kode": "KM3995",
+     "tekst": "gjøre rede for gjeldende regelverk for pedagogiske virksomheter og vurdere hvordan regelverket får konsekvenser for det pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM3994",
+     "tekst": "drøfte hva medvirkning betyr i møte med barn, unge og foresatte, og vise hvordan dette kan komme til uttrykk i praksis"
+    },
+    {
+     "kode": "KM3993",
+     "tekst": "beskrive hva mobbing og krenkende atferd er, gi eksempler på forebyggende tiltak og vise hva aktivitetsplikten innebærer"
+    },
+    {
+     "kode": "KM3992",
+     "tekst": "reflektere over sammenhenger mellom identitet, seksualitet og selvfølelse og samtale med barn og unge om slike spørsmål"
+    },
+    {
+     "kode": "KM3991",
+     "tekst": "gjøre rede for hva som kjennetegner alderstilpasset omsorg, tegn som tyder på omsorgssvikt, og ansvar og tjenestevei ved omsorgssvikt"
+    },
+    {
+     "kode": "KM3990",
+     "tekst": "reflektere over hvordan barn og unges oppvekst kan være en ressurs i det praktisk-pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM3989",
+     "tekst": "gjøre rede for og praktisere god hygiene, og gjennomføre smitteverntiltak"
+    },
+    {
+     "kode": "KM3988",
+     "tekst": "drøfte hva helse, miljø og sikkerhet og yrkesetikk betyr for arbeids- og læringsmiljøet"
+    },
+    {
+     "kode": "KM3987",
+     "tekst": "gjøre rede for ergonomiske prinsipper og bruke disse i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM4009",
+     "tekst": "reflektere over hva det innebærer å ta miljøbevisste valg i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM4018",
+     "tekst": "utføre grunnleggende førstehjelp tilpasset barn og unge"
+    },
+    {
+     "kode": "KM3986",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i barne- og ungdomsarbeiderfag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i barne- og ungdomsarbeiderfag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i barne- og ungdomsarbeiderfag ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i barne- og ungdomsarbeiderfag basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Pedagogisk arbeid: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i barne- og ungdomsarbeiderfag: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Pedagogisk arbeid, kommunikasjon og samhandling og yrkesliv i barne- og ungdomsarbeiderfag: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Pedagogisk arbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i barne- og ungdomsarbeiderfag: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Pedagogisk arbeid, kommunikasjon og samhandling og yrkesliv i barne- og ungdomsarbeiderfag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

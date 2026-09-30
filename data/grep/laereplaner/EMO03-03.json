@@ -1,0 +1,117 @@
+{
+ "kode": "EMO03-03",
+ "tittel": "Læreplan i vg3 energimontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV953",
+   "tittel": "Kompetansemål og vurdering vg3 energimontørfaget",
+   "fag": [
+    "EMO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12495",
+     "tekst": "planlegge, risikovurdere, gjennomføre og dokumentere arbeidsoppdragene i henhold til gjeldende regelverk, bedriftens internkontrollsystem, instrukser og retningslinjer, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12502",
+     "tekst": "arbeide i henhold til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, bruke verneutstyr og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12496",
+     "tekst": "arbeide fagmessig og nøyaktig og etter ergonomiske prinsipper og velge løsninger som er miljøvennlige og kostnadseffektive"
+    },
+    {
+     "kode": "KM12497",
+     "tekst": "demontere stasjons-, kabel- og luftledningsanlegg på en sikker måte og gjøre rede for farene ved demontering"
+    },
+    {
+     "kode": "KM12498",
+     "tekst": "montere og sette i drift kabler, linjer, strømskinner, transformatorer og vern i vekselspenning- og likespenningsanlegg og bruke beregninger og tabeller for å dokumentere komponentvalg og strømføringsevne"
+    },
+    {
+     "kode": "KM12499",
+     "tekst": "bygge kabel- og luftledningsanlegg ved hjelp av løfte- og strekkutstyr og vurdere stabilitet og opptredende mekaniske krefter ved hjelp av beregninger og tabeller"
+    },
+    {
+     "kode": "KM12500",
+     "tekst": "arbeide under spenning (AUS) i elektriske lavspenningsanlegg og etablere sikkerhetstiltak for arbeid på høyspenningsanlegg, og gjøre rede for metoder for arbeid på elektriske anlegg"
+    },
+    {
+     "kode": "KM12501",
+     "tekst": "utføre systematisk feilsøking, diagnostisering, verifisering, ved bruk av sensordata, instrumenter og verktøy og vurdere måleresultatene mot beregnede verdier"
+    },
+    {
+     "kode": "KM12503",
+     "tekst": "montere og sette i drift brytere, vern og transformatorer og gjøre rede for virkemåte, funksjon og bruksområde"
+    },
+    {
+     "kode": "KM12504",
+     "tekst": "montere og konfigurere og vedlikeholde et nettstyringssystem og forklare virkemåte og bruksområde"
+    },
+    {
+     "kode": "KM12505",
+     "tekst": "montere, sette i drift og vedlikeholde batterisystemer og gjøre rede for virkemåte, funksjon og bruksområde"
+    },
+    {
+     "kode": "KM12506",
+     "tekst": "ta i bruk bedriftens nettinformasjonssystem og forklare funksjon, virkemåte og bruksområde"
+    },
+    {
+     "kode": "KM12507",
+     "tekst": "montere og vedlikeholde spoler og jordingsanlegg i forsyningsnett og forklare funksjon, virkemåte og bruksområder"
+    },
+    {
+     "kode": "KM12508",
+     "tekst": "tilkoble og sette i drift reservestrømaggregat som forsyning til et fordelingsnett og gjøre rede for aggregatets bruksområde og ytelse"
+    },
+    {
+     "kode": "KM12509",
+     "tekst": "ta i bruk bedriftens elektroniske kommunikasjonssystemer og gjøre rede for hvordan kommunikasjonssikkerhet og datasikkerhet er ivaretatt i systemene"
+    },
+    {
+     "kode": "KM12510",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12511",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12512",
+     "tekst": "drøfte etiske dilemmaer ved valg av elektriske produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12513",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12514",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 energimontørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 energimontørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 24 timer.",
+    "Opplæringen i vg3 energimontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

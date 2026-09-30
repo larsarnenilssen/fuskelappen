@@ -1,0 +1,168 @@
+{
+ "kode": "MUS05-02",
+ "tittel": "Læreplan i instrument, kor, samspill",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV569",
+   "tittel": "Kompetansemål og vurdering instrument, kor, samspill 1",
+   "fag": [
+    "MUS5Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6569",
+     "tekst": "innstudere et variert repertoar på fordypnings- og bruksinstrumenter ved å bruke metoder tilpasset repertoaret"
+    },
+    {
+     "kode": "KM6583",
+     "tekst": "ta selvstendige valg i musikalsk utforming av repertoar"
+    },
+    {
+     "kode": "KM6584",
+     "tekst": "utvikle og vise egnet instrumentteknikk i utøving på fordypningsinstrument"
+    },
+    {
+     "kode": "KM6590",
+     "tekst": "sette seg realistiske mål, planlegge, strukturere og dokumentere øvingsprosesser på fordypnings- og bruksinstrumenter"
+    },
+    {
+     "kode": "KM6589",
+     "tekst": "spille etter gehør, besifring og andre former for notasjon på bruksinstrumenter med rytme-, bass- og akkordfunksjon i ulike samspillsituasjoner"
+    },
+    {
+     "kode": "KM6588",
+     "tekst": "utforske og vise forståelse av ulike musikalske virkemidler i egen utøving"
+    },
+    {
+     "kode": "KM6582",
+     "tekst": "improvisere med utgangspunkt i et variert forelagt musikalsk materiale, alene og sammen med andre"
+    },
+    {
+     "kode": "KM6587",
+     "tekst": "forberede og framføre musikalsk materiale for et publikum i konsertsituasjoner"
+    },
+    {
+     "kode": "KM6581",
+     "tekst": "vise musikalsk initiativ og lytte til andre i samspillsituasjoner"
+    },
+    {
+     "kode": "KM6586",
+     "tekst": "gi og ta imot konstruktiv kritikk og respektere uenighet i skapende arbeid mot felles mål og framføringer"
+    },
+    {
+     "kode": "KM6585",
+     "tekst": "dokumentere framføringer med digitale ressurser"
+    },
+    {
+     "kode": "KM6580",
+     "tekst": "reflektere over hvordan det å utøve, formidle og skape musikk kan bidra til å opprettholde og videreutvikle kulturarven"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i instrument, kor, samspill 1. Elevene viser og utvikler kompetanse i faget når de øver på, utøver og formidler musikk alene og sammen med andre. Videre viser og utvikler elevene kompetanse i faget når de reflekterer over ulike musikalske uttrykk og uttrykksformer, og bruker refleksjonene til å ta egne kunstneriske valg i framføringer. Elevene viser og utvikler også kompetanse i faget når de bruker ulike metoder for å følge med på egen utvikling, og ut fra dette setter hensiktsmessige mål for videre læring i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å utforme varierte oppgaver som fremmer utvikling av musikalske og utøvende ferdigheter. Læreren skal være i dialog med elevene om utviklingen deres i arbeid med instrumentutøving, kor og ensemble, øving og musikkformidling, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle utøvende og skapende kompetanse i faget, individuelt og i samspill og samsang."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter instrument, kor, samspill 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i instrument, kor samspill 1 basert på kompetansen eleven har vist gjennom utøving, kunstnerisk forståelse og refleksjon."
+   ]
+  },
+  {
+   "kode": "KV570",
+   "tittel": "Kompetansemål og vurdering instrument, kor, samspill 2",
+   "fag": [
+    "MUS5Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6579",
+     "tekst": "innstudere et variert repertoar på fordypningsinstrument, ved bruk av metoder tilpasset repertoaret"
+    },
+    {
+     "kode": "KM6578",
+     "tekst": "bruke musikkteoretisk kunnskap i innstudering, interpretasjon og improvisasjon, og reflektere over sammenheng mellom musikkteori og praktisk musisering"
+    },
+    {
+     "kode": "KM6571",
+     "tekst": "videreutvikle egnet instrumentalteknikk på fordypningsinstrumentet, og forebygge belastningsskader"
+    },
+    {
+     "kode": "KM6577",
+     "tekst": "dokumentere øving individuelt og i samspill og bruke dokumentasjonen til å planlegge og forbedre videre øvingsprosesser"
+    },
+    {
+     "kode": "KM6576",
+     "tekst": "utforske og eksperimentere med et bredt utvalg av musikalske virkemidler i utforming av egne uttrykk"
+    },
+    {
+     "kode": "KM6575",
+     "tekst": "improvisere med og uten utgangspunkt i forelagt materiale, alene og sammen med andre"
+    },
+    {
+     "kode": "KM6574",
+     "tekst": "ta initiativ, lytte til andre og innta ulike musikalske roller i kor- og ensemblearbeid"
+    },
+    {
+     "kode": "KM6573",
+     "tekst": "planlegge og gjennomføre konserter med lys, lyd og hensiktsmessig bruk av sceneområdet"
+    },
+    {
+     "kode": "KM6592",
+     "tekst": "reflektere over hvordan situasjon, målgruppe og interaksjon med publikum kan påvirke musikalsk formidling og bruke dette i forberedelse til framføring av musikalsk materiale"
+    },
+    {
+     "kode": "KM6572",
+     "tekst": "utforske og bruke ulike digitale ressurser til å framføre musikk og dokumentere framføringene"
+    },
+    {
+     "kode": "KM6570",
+     "tekst": "utforske historiske, sosiale og kulturelle kontekster for instrument- og samspillsrepertoar, og bruke dette til å utvikle personlige musikalske uttrykk"
+    },
+    {
+     "kode": "KM6591",
+     "tekst": "reflektere over hvordan det å utøve, formidle og skape musikk kan bidra til å opprettholde og videreutvikle kulturarven og utfordre det bestående"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i instrument, kor, samspill 2. Elevene viser og utvikler kompetanse i faget når de øver på, utøver og formidler musikk alene og sammen med andre. Videre viser og utvikler elevene kompetanse i faget når de eksperimenterer med musikalske virkemidler, inntar ulike roller og utvikler sitt personlige uttrykk, og når de innstuderer repertoar og arbeider med utvikling av teknikk. Elevene viser og utvikler også kompetanse i faget når de bruker ulike metoder for å følge med på egen utvikling og ut fra dette velger strategier for videre læring i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å utforme varierte oppgaver som fremmer utvikling av musikalske og utøvende ferdigheter. Læreren skal være i dialog med elevene om utviklingen deres i arbeid instrumentutøving, kor og ensemble, øving og musikkformidling, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle utøvende og formidlende kompetanse i faget, individuelt og i samspill og samsang."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter instrument, kor, samspill 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger, i ulike sammenhenger. Læreren skal sette karakter i instrument, kor og samspill 2 basert på kompetansen eleven har vist gjennom egne øvingsprosesser, utøving på instrumenter, kunstnerisk selvstendighet, og gjennom forberedelse til og gjennomføring av musikalske fremføringer, alene og sammen med andre."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Instrument, kor, samspill 1: Eleven skal ha én standpunktkarakter.\nInstrument, kor, samspill 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Instrument, kor, samspill 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nInstrument, kor, samspill 2: Eleven skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Instrument, kor, samspill 1: Privatisten skal opp til en muntlig-praktisk eksamen i fordypningsinstrument og bruksinstrument. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Privatistene må dokumentere aktivitet i kor og samspill.",
+    "Instrument, kor, samspill 2: Privatisten skal opp til en muntlig-praktisk eksamen i fordypningsinstrument og bruksinstrument. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Privatistene må dokumentere aktivitet i kor og samspill."
+   ]
+  }
+ ]
+}

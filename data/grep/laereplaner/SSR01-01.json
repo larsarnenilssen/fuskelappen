@@ -1,0 +1,192 @@
+{
+ "kode": "SSR01-01",
+ "tittel": "Læreplan i vg1 sal, service og reiseliv",
+ "spraak": "nno",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV241",
+   "tittel": "Kompetansemål og vurdering forretningsdrift",
+   "fag": [
+    "SSR1Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2603",
+     "tekst": "gjere greie for reglar og lovverk som er relevante for servicenæringa, og forklare korleis dei regulerer drift av verksemder"
+    },
+    {
+     "kode": "KM2624",
+     "tekst": "beskrive ansvarsfordeling og kva dei ulike rollene i ei verksemd inneber, og utarbeide og presentere eit organisasjonskart"
+    },
+    {
+     "kode": "KM2623",
+     "tekst": "vurdere, kalkulere og tilpasse pris på eit produkt med tanke på kostnader og marknadssituasjon"
+    },
+    {
+     "kode": "KM2622",
+     "tekst": "forklare og føre ein enkel rekneskap, utarbeide budsjett og vurdere lønnsemda"
+    },
+    {
+     "kode": "KM2621",
+     "tekst": "beskrive vareflyt og kvalitet i verdikjeda og vurdere dilemma knytte til lønnsemd og berekraftig utvikling"
+    },
+    {
+     "kode": "KM2619",
+     "tekst": "gjennomføre ei enkel risikovurdering og presentere tiltak som førebyggjer uønskte hendingar"
+    },
+    {
+     "kode": "KM2618",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldande regelverk for helse, miljø og tryggleik"
+    },
+    {
+     "kode": "KM2620",
+     "tekst": "følgje ein beredskapsplan og gjere greie for funksjonen og formålet med beredskapsplanar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i forretningsdrift når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren og elevane skal vere i dialog med elevane om utviklinga deira i forretningsdrift. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i forretningsdrift ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i forretningsdrift basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eiga fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV243",
+   "tittel": "Kompetansemål og vurdering marknadsføring og innovasjon",
+   "fag": [
+    "SSR1Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2610",
+     "tekst": "analysere forbrukaråtferd i samanheng med segmentering av målgrupper"
+    },
+    {
+     "kode": "KM2609",
+     "tekst": "vurdere sentrale konkurranseverkemiddel i samanheng med profilen og lønnsemda til verksemder"
+    },
+    {
+     "kode": "KM2608",
+     "tekst": "utvikle ein forretningsidé og vurdere han i lys av berekraftig utvikling"
+    },
+    {
+     "kode": "KM2607",
+     "tekst": "lage ein enkel marknadsplan og gjere greie for val av mål og verkemiddel"
+    },
+    {
+     "kode": "KM2606",
+     "tekst": "utforske korleis teknologi og endringar i forbrukaråtferd påverkar sal og servicerolla, og presentere tiltak og marknadsføringsstrategiar"
+    },
+    {
+     "kode": "KM2605",
+     "tekst": "lage ein marknadsføringskampanje og gjere greie for val av verkemiddel"
+    },
+    {
+     "kode": "KM2604",
+     "tekst": "selje eit produkt og gjere greie for salsprosessen"
+    },
+    {
+     "kode": "KM2625",
+     "tekst": "kjenne til og nytte gjeldande regelverk for marknadsføring og sal"
+    },
+    {
+     "kode": "KM2626",
+     "tekst": "beskrive administrative funksjonar og rutinar i ei verksemd og drøfte korleis desse påverkar kvaliteten og servicenivået"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i marknadsføring og innovasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren og elevane skal vere i dialog med elevane om utviklinga deira i marknadsføring og innovasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i marknadsføring og innovasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i marknadsføring og innovasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eiga fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV242",
+   "tittel": "Kompetansemål og vurdering kultur og samhandling",
+   "fag": [
+    "SSR1Z03"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2617",
+     "tekst": "utforske korleis ulike kulturar og bakgrunn påverkar kommunikasjon og kundebehandling og ta omsyn til dette i møte med kundar og gjestar"
+    },
+    {
+     "kode": "KM2616",
+     "tekst": "planleggje og gjennomføre eit arrangement og gjere greie for betydninga av vertskapsrolla"
+    },
+    {
+     "kode": "KM2615",
+     "tekst": "reflektere over ulike former for relasjonsbygging og forklare betydninga av nettverk"
+    },
+    {
+     "kode": "KM2614",
+     "tekst": "reflektere over etiske dilemma i servicenæringa og vurdere verkemiddel som kan fremje etiske og berekraftige val"
+    },
+    {
+     "kode": "KM2613",
+     "tekst": "handtere klagar og beskrive tiltak som førebyggjer konfliktar"
+    },
+    {
+     "kode": "KM2612",
+     "tekst": "gjere greie for kva rolle servicemedarbeidaren har i konflikt- og nødssituasjonar"
+    },
+    {
+     "kode": "KM2611",
+     "tekst": "gjere greie for og vurdere korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kultur og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekker fleire eller alle programfaga. Læraren og elevane skal vere i dialog med elevane om utviklinga deira i kultur og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kultur og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kultur og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eiga fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Forretningsdrift: Eleven skal ha éin standpunktkarakter.",
+    "Marknadsføring og innovasjon: Eleven skal ha éin standpunktkarakter.",
+    "Kultur og samhandling: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Forretningsdrift: Eleven skal ikkje opp til eksamen.",
+    "Marknadsføring og innovasjon: Eleven skal ikkje opp til eksamen.",
+    "Kultur og samhandling: Eleven skal ikkje opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Forretningsdrift: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Marknadsføring og innovasjon: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kultur og samhandling: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Forretningsdrift, marknadsføring og innovasjon og kultur og samhandling: Privatisten skal opp til éin tverrfagleg praktisk eksamen i disse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

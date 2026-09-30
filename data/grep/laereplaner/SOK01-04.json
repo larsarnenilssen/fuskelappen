@@ -1,0 +1,179 @@
+{
+ "kode": "SOK01-04",
+ "tittel": "Læreplan i samfunnsøkonomi",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1000",
+   "tittel": "Kompetansemål og vurdering samfunnsøkonomi 1",
+   "fag": [
+    "SOK1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12973",
+     "tekst": "velge og bruke kilder, økonomiske teorier og modeller i arbeid med faglige spørsmål, emner og problemstillinger"
+    },
+    {
+     "kode": "KM12961",
+     "tekst": "gjøre rede for ulike markedsformer og bruke disse til å analysere ulike markeder"
+    },
+    {
+     "kode": "KM12962",
+     "tekst": "bruke realligningen til å analysere sammenhengen mellom tilgang på og bruk av varer og tjenester i en økonomi"
+    },
+    {
+     "kode": "KM12963",
+     "tekst": "beskrive hovedtrekkene i privat og offentlig sektor i Norge og drøfte muligheter og utfordringer for næringsliv og offentlig sektor i årene framover"
+    },
+    {
+     "kode": "KM12964",
+     "tekst": "drøfte årsaker til økonomisk vekst og reflektere over bruttonasjonalproduktet som mål for verdiskaping"
+    },
+    {
+     "kode": "KM12965",
+     "tekst": "reflektere over ulike sysselsettingstiltak og drøfte hvordan tiltakene kan påvirke ulike typer arbeidsledighet"
+    },
+    {
+     "kode": "KM12966",
+     "tekst": "gjøre rede for hvordan prisstigning måles, og drøfte årsaker til og konsekvenser av prisstigning"
+    },
+    {
+     "kode": "KM12967",
+     "tekst": "gjøre rede for formålet med pengepolitikk og finanspolitikk og hvordan politikken påvirker økonomien"
+    },
+    {
+     "kode": "KM12968",
+     "tekst": "vurdere finansmarkedenes muligheter og utfordringer for utviklingen av samfunnsøkonomien"
+    },
+    {
+     "kode": "KM12969",
+     "tekst": "utforske og reflektere over hva som påvirker lønnsforskjeller, inntektsfordeling og økonomisk ulikhet, og hvordan myndighetene kan påvirke dette"
+    },
+    {
+     "kode": "KM12970",
+     "tekst": "reflektere over sammenhengen mellom økonomisk aktivitet og miljøutfordringer, og hva som skal til for å oppnå bærekraftig vekst og utvikling"
+    },
+    {
+     "kode": "KM12971",
+     "tekst": "analysere hva som påvirker valutakursene, og drøfte konsekvenser av endringer i valutakursen"
+    },
+    {
+     "kode": "KM12972",
+     "tekst": "gjøre rede for årsaker til internasjonal handel og drøfte muligheter og utfordringer knyttet til økonomisk globalisering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i samfunnsøkonomi 1. Elevene viser og utvikler kompetanse når de setter seg inn i og bruker økonomisk teori og modeller i arbeid med samfunnsøkonomiske emner og problemstillinger, og dagsaktuelle spørsmål. Det innebærer at elevene viser og utvikler kompetanse når de bruker samfunnsøkonomisk metode og analyse til å få innsikt i og forståelse av ressursbruk, fordeling, makroøkonomi og økonomisk politikk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige og digitale måter å tilegne seg og vise kompetanse, og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i samfunnsøkonomi 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter samfunnsøkonomi 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i samfunnsøkonomi 1 basert på kompetansen eleven har vist ved bruk av og innsikt i samfunnsøkonomisk metode og analyse, og forståelse av ressursbruk, fordeling, makroøkonomi og økonomisk politikk."
+   ]
+  },
+  {
+   "kode": "KV1001",
+   "tittel": "Kompetansemål og vurdering samfunnsøkonomi 2",
+   "fag": [
+    "SOK1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12986",
+     "tekst": "velge og bruke kilder, økonomiske teorier og modeller i arbeid med faglige spørsmål, emner og problemstillinger"
+    },
+    {
+     "kode": "KM12974",
+     "tekst": "sammenligne markedstilpasningen for monopol og fullkommen konkurranse og analysere hvordan markedsformene påvirker ressursbruk og fordeling"
+    },
+    {
+     "kode": "KM12975",
+     "tekst": "reflektere over forskjellen mellom samfunnsøkonomiske og bedriftsøkonomiske vurderinger"
+    },
+    {
+     "kode": "KM12987",
+     "tekst": "reflektere over hva markedssvikt og samfunnsøkonomisk effektivitet innebærer, og drøfte muligheter og utfordringer ved ulike markedsformer"
+    },
+    {
+     "kode": "KM12976",
+     "tekst": "utforske og gjøre rede for årsaker til økonomisk vekst i ulike land, og drøfte hvilke virkemidler myndighetene kan bruke for å bidra til økonomisk utvikling på kort og på lengre sikt"
+    },
+    {
+     "kode": "KM12977",
+     "tekst": "gjøre rede for formålet med og retningslinjene for den økonomiske politikken i Norge og drøfte hvordan denne politikken virker"
+    },
+    {
+     "kode": "KM12978",
+     "tekst": "gjøre rede for ulike årsaker til arbeidsledighet og vurdere virkemidler mot ledighet"
+    },
+    {
+     "kode": "KM12979",
+     "tekst": "reflektere over sentrale langsiktige økonomiske utfordringer som Norge står overfor, og drøfte mulige løsninger"
+    },
+    {
+     "kode": "KM12980",
+     "tekst": "utforske og drøfte forholdet mellom bærekraftig utvikling og økonomisk utvikling og hvordan myndighetene kan forebygge miljøproblemer"
+    },
+    {
+     "kode": "KM12981",
+     "tekst": "utforske årsaker til økonomisk ulikhet og drøfte tiltak mot økonomisk ulikhet og fattigdomsproblemer i verden"
+    },
+    {
+     "kode": "KM12982",
+     "tekst": "gjøre rede for hvorfor land handler med hverandre, og drøfte sentrale økonomiske problemstillinger knyttet til frihandel og proteksjonisme"
+    },
+    {
+     "kode": "KM12983",
+     "tekst": "utforske ulike faktorer som kan påvirke valutakurser, og vurdere hvordan endringer i disse faktorene kan påvirke økonomier"
+    },
+    {
+     "kode": "KM12984",
+     "tekst": "utforske ulike faktorer som påvirker konkurranseevnen, og drøfte konsekvenser av endringer i konkurranseevnen"
+    },
+    {
+     "kode": "KM12985",
+     "tekst": "reflektere over økonomiske konsekvenser av uforutsette hendelser og økonomiske sjokk nasjonalt og globalt, og drøfte tiltak for å motvirke negative økonomiske konsekvenser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i samfunnsøkonomi 2. Elevene viser og utvikler kompetanse når de setter seg inn i og bruker økonomisk teori og modeller i arbeid med samfunnsøkonomiske emner og problemstillinger, dagsaktuelle spørsmål og sammenhenger i økonomien. Det innebærer at elevene viser og utvikler kompetanse når de bruker samfunnsøkonomisk metode og analyse til å få innsikt i og forståelse av ressursbruk, fordeling, makroøkonomi og økonomisk politikk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige og digitale måter å tilegne seg og vise kompetanse og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i samfunnsøkonomi 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter samfunnsøkonomi 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i samfunnsøkonomi 2 basert på kompetansen eleven har vist ved bruk av og innsikt i samfunnsøkonomisk metode og analyse og forståelse av ressursbruk, fordeling, makroøkonomi og økonomisk politikk."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Samfunnsøkonomi 1: Eleven skal ha én standpunktkarakter.\nSamfunnsøkonomi 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Samfunnsøkonomi 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nSamfunnsøkonomi 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Samfunnsøkonomi 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nSamfunnsøkonomi 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

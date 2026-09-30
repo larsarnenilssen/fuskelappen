@@ -1,0 +1,184 @@
+{
+ "kode": "KOS02-01",
+ "tittel": "Læreplan i vg2 kokk- og servitørfag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV422",
+   "tittel": "Kompetansemål og vurdering råvare, produksjon, salg og service",
+   "fag": [
+    "KOS2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4487",
+     "tekst": "planlegge, produsere, dokumentere og vurdere produkt ut fra oppskrift, ønsket mengde, råvarevalg, produksjonsmetode og produktbeskrivelse"
+    },
+    {
+     "kode": "KM4505",
+     "tekst": "praktisere personlig hygiene og følge retningslinjer for næringsmiddel- og produksjonshygiene og reflektere over konsekvenser av å bryte retningslinjene"
+    },
+    {
+     "kode": "KM4496",
+     "tekst": "kontrollere råvarekvalitet ved varemottak, vurdere om varene er levert i samsvar med bestilling, og utføre avviksbehandling"
+    },
+    {
+     "kode": "KM4503",
+     "tekst": "bruke verneutstyr, arbeide ergonomisk riktig og reflektere over betydningen av å følge retningslinjene for et trygt arbeidsmiljø"
+    },
+    {
+     "kode": "KM4511",
+     "tekst": "montere, kontrollere, bruke og rengjøre håndverktøy, maskiner og utstyr og justere ved avvik"
+    },
+    {
+     "kode": "KM4509",
+     "tekst": "vurdere sluttproduktene ut fra produktbeskrivelser og reflektere over sensorisk og hygienisk kvalitet"
+    },
+    {
+     "kode": "KM4502",
+     "tekst": "bruke ulike konserveringsmetoder og gjøre rede for sammenhengen mellom konservering, holdbarhet og mikroorganismers livsvilkår"
+    },
+    {
+     "kode": "KM4498",
+     "tekst": "gjøre rede for fareanalyse og risikovurdering og forstå sammenhengen mellom matbårne sykdommer og trygg mat"
+    },
+    {
+     "kode": "KM4508",
+     "tekst": "utnytte råvarenes produksjonsegenskaper og gjøre rede for hva som skjer med råvarene i en produksjonsprosess og under lagring og omsetning"
+    },
+    {
+     "kode": "KM4510",
+     "tekst": "produsere og anbefale mat og drikke ut fra helsemyndighetenes kostråd og gjøre rede for sammenhengen mellom kosthold, ernæring og helse"
+    },
+    {
+     "kode": "KM4504",
+     "tekst": "produsere og gi råd om spesialkost tilpasset gjester, kunder og brukergrupper med spesielle behov og merke menyer og varer etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4501",
+     "tekst": "produsere og tilby mat og drikke ut fra norsk, samisk og internasjonal kultur og gjøre rede for hva som kan påvirke endringer i forbruksmønster og vareutvalg"
+    },
+    {
+     "kode": "KM4497",
+     "tekst": "servere mat og drikke og drøfte serverings- og salgsmetoder"
+    },
+    {
+     "kode": "KM4512",
+     "tekst": "presentere, anbefale og servere alkoholfrie og alkoholholdige drikkevarer i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM5099",
+     "tekst": "tilberede, anbefale og servere varme og kalde drikkevarer til ulike gjester, kunder og brukergrupper"
+    },
+    {
+     "kode": "KM4500",
+     "tekst": "gjøre rede for bruksområder og produksjonsmetoder for ulike kalde og varme drikkevarer med eller uten alkohol i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM4506",
+     "tekst": "klargjøre lokaler for servering og salg og utarbeide menyer, plakater og salgsmateriell"
+    },
+    {
+     "kode": "KM4507",
+     "tekst": "beregne pris og næringsinnhold i produkter for å kunne emballere og merke varene etter gjeldende regelverk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget råvare, produksjon, salg og service når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget råvare, produksjon, salg og service. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget råvare, produksjon, salg og service ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget råvare, produksjon, salg og service basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV423",
+   "tittel": "Kompetansemål og vurdering bransje og arbeidsliv",
+   "fag": [
+    "KOS2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4491",
+     "tekst": "følge gjeldende lover og forskrifter for bransjen og gjøre rede for tilsynsmyndighetenes rolle"
+    },
+    {
+     "kode": "KM4490",
+     "tekst": "gjøre greie for risikofaktorer i eget arbeidsmiljø, forebygge skader og reflektere over forutsetninger for et godt arbeidsmiljø"
+    },
+    {
+     "kode": "KM4494",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM4495",
+     "tekst": "drøfte etiske, praktiske og økonomiske problemstillinger knyttet til produksjon, servering og salg av mat og drikke"
+    },
+    {
+     "kode": "KM4489",
+     "tekst": "gjøre bærekraftige og etiske valg ved innkjøp, produksjon og avfallshåndtering og reflektere over hvordan overskuddsvarer kan utnyttes"
+    },
+    {
+     "kode": "KM4513",
+     "tekst": "registrere og beregne kostnader ved svinn, foreslå tiltak for å begrense svinn og drøfte hvilke konsekvenser svinnet har for virksomhetens økonomi"
+    },
+    {
+     "kode": "KM4488",
+     "tekst": "vurdere sammenhengen mellom råvarevalg, produksjonsmetode, lagring, omsetning og bærekraftig produksjon"
+    },
+    {
+     "kode": "KM4493",
+     "tekst": "planlegge og gjennomføre markedsførings- og salgstiltak og reflektere over hvordan det påvirker forbruksmønstre"
+    },
+    {
+     "kode": "KM4492",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og gjøre rede for hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM4499",
+     "tekst": "utforske nye og ukjente råvarer og reflektere over endringer i forbruksmønster"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget bransje og arbeidsliv når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget bransje og arbeidsliv. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget bransje og arbeidsliv ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget bransje og arbeidsliv basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Råvare, produksjon, salg og service: Eleven skal ha én standpunktkarakter.",
+    "Bransje og arbeidsliv: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Råvare, produksjon, salg og service og bransje og arbeidsliv: Eleven skal opp til én tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Råvare, produksjon, salg og service: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Bransje og arbeidsliv: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Råvare, produksjon, salg og service og bransje og arbeidsliv: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

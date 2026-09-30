@@ -1,0 +1,124 @@
+{
+ "kode": "PLA03-02",
+ "tittel": "Læreplan i vg3 platearbeiderfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV707",
+   "tittel": "Kompetansemål og vurdering vg3 platearbeiderfaget",
+   "fag": [
+    "PLA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9164",
+     "tekst": "planlegge og gjennomføre arbeidsoppgaver i tråd med tegninger, prosedyrer, standarder og sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM9183",
+     "tekst": "gjøre rede for, planlegge og utføre arbeidet i tråd med krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM9182",
+     "tekst": "bruke rapporter og skjemaer i tråd med arbeidsoppgaver"
+    },
+    {
+     "kode": "KM9181",
+     "tekst": "registrere avvik og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM9180",
+     "tekst": "gjøre rede for økonomiske og miljømessige konsekvenser knyttet til valg av metode og materialer"
+    },
+    {
+     "kode": "KM9179",
+     "tekst": "forklare og bruke bedriftens kvalitetssikringssystem"
+    },
+    {
+     "kode": "KM9178",
+     "tekst": "anvende metoder for sporbarhet for plater, profiler, rør og utstyr"
+    },
+    {
+     "kode": "KM9177",
+     "tekst": "utføre stropping og anhuking i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM9176",
+     "tekst": "velge og bruke sikkerhetsutstyr, verneutstyr og arbeidstøy tilpasset arbeidsoppdraget og reflektere over konsekvenser ved å ikke bruke dette"
+    },
+    {
+     "kode": "KM9175",
+     "tekst": "gjennomføre kildesortering og avfallshåndtering i tråd med bedriftens instruks"
+    },
+    {
+     "kode": "KM9174",
+     "tekst": "vurdere og velge materialer ut fra tegninger og spesifikasjoner"
+    },
+    {
+     "kode": "KM9173",
+     "tekst": "legge inn forbøying og avstiving og gjøre rede for deformasjoner og sveisekrymp"
+    },
+    {
+     "kode": "KM9172",
+     "tekst": "beregne materialbruk og sveisekrymp og utbedre deformasjon"
+    },
+    {
+     "kode": "KM9171",
+     "tekst": "demontere, reparere og rette opp komponenter og konstruksjoner"
+    },
+    {
+     "kode": "KM9170",
+     "tekst": "bearbeide og klargjøre stålplater, profiler og rør i tråd med arbeidstegninger og spesifikasjoner"
+    },
+    {
+     "kode": "KM9169",
+     "tekst": "gjennomføre sveis i tråd med sveiseprosedyrer og spesifikasjoner"
+    },
+    {
+     "kode": "KM9168",
+     "tekst": "utføre varmebehandling og nedkjøling og forklare hvordan det påvirker materialer"
+    },
+    {
+     "kode": "KM9167",
+     "tekst": "forklare metoder for korrosjonsbeskyttelse og overflatebehandling av ulike materialer"
+    },
+    {
+     "kode": "KM9166",
+     "tekst": "bruke analoge og digitale verktøy og måleutstyr i tråd med arbeidsoppgavene"
+    },
+    {
+     "kode": "KM9165",
+     "tekst": "bruke manuelle og CNC-styrte maskiner"
+    },
+    {
+     "kode": "KM9184",
+     "tekst": "planlegge og gjennomføre forebyggende vedlikehold på maskiner og utstyr"
+    },
+    {
+     "kode": "KM9185",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 platearbeiderfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 platearbeiderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 platearbeiderfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst fem virkedager."
+   ]
+  }
+ ]
+}

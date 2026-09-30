@@ -1,0 +1,116 @@
+{
+ "kode": "ISN03-02",
+ "tittel": "Læreplan i vg3 industrisnikkarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV701",
+   "tittel": "Kompetansemål og vurdering vg3 industrisnikkarfaget",
+   "fag": [
+    "ISN3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9043",
+     "tekst": "planleggje, gjennomføre og dokumentere arbeidet etter prosedyrar og rutinar, arbeidsbeskrivingar, teikningar, standardar og bransjenormer"
+    },
+    {
+     "kode": "KM9049",
+     "tekst": "planleggje eige arbeid med tanke på optimal utnytting av dei tilgjengelege ressursane i samsvar med produksjonsplanar, beskrivingar og instruksjonar"
+    },
+    {
+     "kode": "KM9051",
+     "tekst": "utarbeide sikker jobb-analyse og vurdere risiko ut frå regelverk og produksjon, og reflektere over konsekvensar av å bryte reglar"
+    },
+    {
+     "kode": "KM9044",
+     "tekst": "velje og bruke verneutstyr i samsvar med regelverk og rutinane i bedrifta og reflektere over konsekvensar av å bryte reglar"
+    },
+    {
+     "kode": "KM9059",
+     "tekst": "vurdere materialval i produksjon ut frå materialeigenskapar og omsyn til berekraft"
+    },
+    {
+     "kode": "KM9058",
+     "tekst": "lese og forstå brukarmanualar og bruke CNC-styrte og manuelle maskiner og utstyr i samsvar med rutinane og prosedyrane i bedrifta"
+    },
+    {
+     "kode": "KM9057",
+     "tekst": "bruke prosedyrar og rutinar for å setje opp og bruke skjerande verktøy i maskiner og utstyr"
+    },
+    {
+     "kode": "KM9056",
+     "tekst": "beskrive korleis program til styrte maskiner fungerer, og utføre grunnleggjande programmering av produksjonsmaskiner og periodisk vedlikehald i samsvar med vedlikehaldstabellane og prosedyrane til maskinprodusenten"
+    },
+    {
+     "kode": "KM9060",
+     "tekst": "tolke teikningar til bruk i framstilling av produkt"
+    },
+    {
+     "kode": "KM9054",
+     "tekst": "bruke overflatebehandlingsmaskiner og -utstyr i samsvar med brukarmanualar og rutinar og prosedyrar i bedrifta"
+    },
+    {
+     "kode": "KM9052",
+     "tekst": "bruke utstyr, teikningar og beskrivingar ved montering og samansetjing av produkt"
+    },
+    {
+     "kode": "KM9053",
+     "tekst": "bruke utstyr og maskiner til å pakke og emballere ferdige produkt"
+    },
+    {
+     "kode": "KM9050",
+     "tekst": "dokumentere produksjonsdata i samsvar med rutinar og prosedyrar"
+    },
+    {
+     "kode": "KM9048",
+     "tekst": "bruke kontrollrutinar for å avdekkje, rapportere og dokumentere avvik og for å gjennomføre korrigerande tiltak"
+    },
+    {
+     "kode": "KM9047",
+     "tekst": "gjere greie for konsekvensane av robotisert og automatisert produksjon"
+    },
+    {
+     "kode": "KM9055",
+     "tekst": "gjere greie for moderne produksjonsprinsipp med sikte på optimal ressursutnytting"
+    },
+    {
+     "kode": "KM9046",
+     "tekst": "beskrive rutinar for produktdatablad og forklare formålet med dei"
+    },
+    {
+     "kode": "KM9045",
+     "tekst": "presentere forbetringsforslag og delta i forbetringsarbeid knytt til produksjonsprosessane"
+    },
+    {
+     "kode": "KM9061",
+     "tekst": "gjere greie for kva eigenskapar råvarene trebaserte produkt, lim og lakk har"
+    },
+    {
+     "kode": "KM9062",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som er stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industrisnikkarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industrisnikkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 industrisnikkarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fire vyrkedagar."
+   ]
+  }
+ ]
+}

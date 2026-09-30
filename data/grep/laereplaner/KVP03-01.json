@@ -1,0 +1,116 @@
+{
+ "kode": "KVP03-01",
+ "tittel": "Læreplan i vg3 kulde- og varmepumpeteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV731",
+   "tittel": "Kompetansemål og vurdering i vg3 kulde- og varmepumpeteknikkfaget",
+   "fag": [
+    "KVP3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9510",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene individuelt og i samarbeid med andre i henhold til gjeldende regelverk, miljøkrav og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9527",
+     "tekst": "utføre arbeidet i henhold til sikkerhet ved arbeid på lavspenningsanlegg og maskin, og utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9526",
+     "tekst": "montere, installere, vedlikeholde, konfigurere og sette i drift kulde- og varmepumpeanlegg i sammensatte løsninger og gjøre rede for anleggets energieffektivitet og sikkerhet ved håndtering av kuldemedier"
+    },
+    {
+     "kode": "KM9525",
+     "tekst": "velge og anvende instrumenter og verktøy for systematisk feilsøking, testing og diagnostisering av kulde- og varmepumpeanlegg og gjøre rede for instrumentenes målenøyaktighet"
+    },
+    {
+     "kode": "KM9524",
+     "tekst": "montere, installere og innregulere komponenter og utstyr i kulde- og varmepumpeanlegg og utføre sluttkontroll av anlegget og foreta opplæring av driftspersonell"
+    },
+    {
+     "kode": "KM9514",
+     "tekst": "utføre service og forebyggende vedlikehold etter gjeldende regelverk, leverandørers krav og foreskrevne intervaller og gjøre rede for hensikten med forebyggende vedlikehold og fare for bakterievekst i kjøletårn"
+    },
+    {
+     "kode": "KM9518",
+     "tekst": "montere, installere og terminere elektriske komponenter og utstyr for kraftforsyning og styring internt i kulde- og varmepumpeanlegget, dokumentere ledninger, kabel, vern og forlegningsmåte og gjøre rede for ulike spenningssystemer"
+    },
+    {
+     "kode": "KM9523",
+     "tekst": "foreta systematisk feilsøking og reparasjoner på kulde- og varmepumpeanlegg og vurdere lønnsomheten ved reparasjon sammenlignet med utskifting"
+    },
+    {
+     "kode": "KM9522",
+     "tekst": "installere jordingssystem i kulde- og varmepumpeanlegget, sluttkontrollere og forklare hensikten med jordingssystemet"
+    },
+    {
+     "kode": "KM9521",
+     "tekst": "etablere radiobasert og kablet nettilkobling til utstyr på kulde- og varmepumpeanlegg i henhold til regelverk om elektronisk kommunikasjon og gjøre rede for byggets signaltopografi"
+    },
+    {
+     "kode": "KM9520",
+     "tekst": "anvende og håndtere syntetiske og naturlige kuldemedier i henhold til regelverk og gjøre rede for kuldemedienes egenskaper og miljøpåvirkning"
+    },
+    {
+     "kode": "KM9519",
+     "tekst": "bytte smøreolje på kulde- og varmepumpeanlegg og gjøre rede for mineralbaserte og syntetiske smøreoljers egenskaper og bruksområder i anleggene"
+    },
+    {
+     "kode": "KM9517",
+     "tekst": "måle trykk og temperaturer i kulde- og varmepumpeanlegg og sette verdiene inn i aktuelle diagram for vurdering av anleggets driftsforhold i forhold til forventet ytelse og foreta korrigerende tiltak"
+    },
+    {
+     "kode": "KM9516",
+     "tekst": "måle kulde- og varmepumpeanleggets energiforbruk og vurdere og dokumentere om energiforbruket er i henhold til beregnede og forventede verdier"
+    },
+    {
+     "kode": "KM9515",
+     "tekst": "bruke et faglig presist språk i kommunikasjon med involverte parter og forklare hvorfor samarbeid er viktig i gjennomføringen av arbeidsoppdrag"
+    },
+    {
+     "kode": "KM9512",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9511",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø, uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9528",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9529",
+     "tekst": "drøfte etiske dilemmaer ved valg av ulike produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9513",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kulde- og varmepumpeteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 kulde- og varmepumpeteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kulde- og varmepumpeteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

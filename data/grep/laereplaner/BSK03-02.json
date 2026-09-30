@@ -1,0 +1,128 @@
+{
+ "kode": "BSK03-02",
+ "tittel": "Læreplan i vg3 bilskadefaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV670",
+   "tittel": "Kompetansemål og vurdering vg3 bilskadefaget",
+   "fag": [
+    "BSK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8391",
+     "tekst": "planlegge, gjennomføre og dokumentere arbeidsoppdrag i tråd med lov- og avtaleverk, produsentkrav og bedriftens internkontrollsystem"
+    },
+    {
+     "kode": "KM8388",
+     "tekst": "utføre arbeidet i tråd med arbeidsordrer og takstdokumenter, og vurdere og drøfte kvaliteten på utført arbeid"
+    },
+    {
+     "kode": "KM8408",
+     "tekst": "tolke og bruke produkt- og sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM8390",
+     "tekst": "vurdere skadeomfang og velge reparasjonsmetode og materialer etter produsentens anvisninger og ut fra hensyn til sikkerhet, økonomi, miljø og sosiale forhold"
+    },
+    {
+     "kode": "KM8410",
+     "tekst": "reflektere over og følge sikkerhetsprosedyrer ved håndtering og reparasjon av en skadet bil med høyspenningsanlegg"
+    },
+    {
+     "kode": "KM8389",
+     "tekst": "reparere sikkerhetssystemer etter prosedyrer og gjøre rede for aktiv og passiv sikkerhet"
+    },
+    {
+     "kode": "KM8398",
+     "tekst": "bruke testutstyr for feilsøking og kalibrering av kjøretøyets elektroniske komponenter og sikkerhetssystemer"
+    },
+    {
+     "kode": "KM8407",
+     "tekst": "utføre feilsøking og reparere ledningsnett etter produsentens anvisninger"
+    },
+    {
+     "kode": "KM8409",
+     "tekst": "justere komponenter, demontere og montere med ulike sammenføyningsteknikker"
+    },
+    {
+     "kode": "KM8406",
+     "tekst": "sikre elektroniske komponenter ved sveisearbeider i henhold til produsentens anvisninger"
+    },
+    {
+     "kode": "KM8405",
+     "tekst": "vurdere og reparere skader på glass og skifte ruter"
+    },
+    {
+     "kode": "KM8404",
+     "tekst": "reflektere over egenskapene til ulike limtyper og anvende limeteknikker for reparasjoner og sammenføyning"
+    },
+    {
+     "kode": "KM8402",
+     "tekst": "begrunne valg og bruke kjemikalier for rengjøring, tetting og liming"
+    },
+    {
+     "kode": "KM8401",
+     "tekst": "reflektere over metodevalg ved utbedring av skadet overflate og påføring av fyllmaterialer"
+    },
+    {
+     "kode": "KM8394",
+     "tekst": "krympe metaller og gjøre rede for hvordan varme påvirker ulike metallegeringer"
+    },
+    {
+     "kode": "KM8403",
+     "tekst": "gjøre rede for materialenes innvirkning på hverandre og sikre disse mot korrosjon"
+    },
+    {
+     "kode": "KM8400",
+     "tekst": "anvende måleutstyr for retting av karosseri, dokumentere målinger og vurdere og utbedre skjevheter i kjøretøy etter produsentens anvisninger"
+    },
+    {
+     "kode": "KM8399",
+     "tekst": "gjøre rede for oppbygningen i moderne karosseri og bruken av ulike materialer"
+    },
+    {
+     "kode": "KM8397",
+     "tekst": "funksjonsteste og reparere klima- og kjøleanlegg etter produsentens anvisninger"
+    },
+    {
+     "kode": "KM8396",
+     "tekst": "montere ekstrautstyr etter produsentkrav og gjeldende forskrifter"
+    },
+    {
+     "kode": "KM8395",
+     "tekst": "kontrollere og skifte komponenter i drivverk, understell og bremser"
+    },
+    {
+     "kode": "KM8393",
+     "tekst": "justere hjulvinkler og gjøre rede for hvordan de ulike vinklene påvirker dekkslitasjen og kjøreegenskapene"
+    },
+    {
+     "kode": "KM8392",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 bilskadefaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 bilskadefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra planen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 bilskadefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "kode": "KDA07-02",
+ "tittel": "Oahppoplána - Sámi visuála kultuvra",
+ "spraak": "sme",
+ "fastsatt": "2021-03-23",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV580",
+   "tittel": "Gealbomihttomearit ja árvvoštallan prográmmafágas sámi visuála kultuvra",
+   "fag": [
+    "KDA7Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM6672",
+     "tekst": "plánet, ovdánahttit, dokumenteret ja árvvoštallat iežas duoji ja dáiddaalbmanahttimiid gos lea viežžan inspirašuvnna sihke ovddeš ja dálá sámi visuála kultuvrras"
+    },
+    {
+     "kode": "KM6673",
+     "tekst": "suokkardit ja selvehit báikkálaš sámi visuála árbevieruid ja geavahit daid hutkkalaš proseassain"
+    },
+    {
+     "kode": "KM6674",
+     "tekst": "selvehit ja reflekteret kritihkalaččat ja ehtalaččat movt sámi visuála kultuvrrain sáhttá fuomášuhttit áigeguovdilis servodatáššiid."
+    },
+    {
+     "kode": "KM6683",
+     "tekst": "ságaškuššat ja reflekteret movt sámi visuála kultuvra váikkuha servodatdigaštallamiidda"
+    },
+    {
+     "kode": "KM6675",
+     "tekst": "reflekteret makkár árvu fágaterminologiijas lea ja geavahit fágaterminologiija njálmmálaččat ja čálalaččat"
+    },
+    {
+     "kode": "KM6676",
+     "tekst": "geavahit guovtte- ja golmmadimenšuvnnalaš hámiid komposišuvdnaprinsihpaid go ráhkada sárggastusaid ja bargotevnnegiid mat leat vuođđun iežas hutkkálaš bargguide"
+    },
+    {
+     "kode": "KM6677",
+     "tekst": "geavahit giehtareaidduid ja digitála reaidduid hutkkálaš proseassain"
+    },
+    {
+     "kode": "KM6684",
+     "tekst": "geavahit máhtu duoji ja dáiddaalbmanahttiimiid ivdne-, symbola-, ja ávnnasgeavaheami birra iežas hutkkálaš bargguin"
+    },
+    {
+     "kode": "KM6678",
+     "tekst": "reflekteret ja presenteret movt kultuvra, árbevierru ja guoddevašvuohta váikkuha sámi visuála kultuvrii"
+    },
+    {
+     "kode": "KM6679",
+     "tekst": "válljet ja geavahit sámi árbevirolaš bargovugiid ja ávdnasiid"
+    },
+    {
+     "kode": "KM6680",
+     "tekst": "selvehit ja geavahit árbevirolaš sámi mihtidanvugiid"
+    },
+    {
+     "kode": "KM6681",
+     "tekst": "geavahit reaidduid dearvvašvuođa, biras ja sihkkarvuođa njuolggadusaid mielde"
+    },
+    {
+     "kode": "KM6682",
+     "tekst": "selvehit ja čuovvut njuolggadusaid mat gusket dahkkivuoigatvuhtii ja gáldogeavaheapmái"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde ovddideamen oahppama ja ovdánahttit gealbbu sámi visuála kultuvrras. Oahppit čájehit ja ovdánahttet gealbbu sámi visuála kultuvrras iešguđet hutkkálaš proseassaid bokte. Oahppit čájehit ja ovdánahttet gealbbu go geavahit fágagiela, sámi visuála árbevieruid ja guoddevaš ávdnasiid iežaset hutkkálaš bargguin. Oahppit čájehit maid gealbbu go sii geavahit komposišuvdnaprinsihpaid, sárggastusaid, bargotevnnegiid ja reaidduid.",
+    "Oahpaheaddji galgá láhčit dili ohppiid mielváikkuheapmái ja arvvosmahttit oahppanhálu dan bokte ahte oahppit besset suokkardit ja bargat hutkáivuođain. Oahpaheaddji galgá gulahallat ohppiiguin movt sin ovdáneapmi lea leahkit hutkkálaš proseassas, geavahit sámi kulturárbbi inspirašuvdnan ja bargat suokkardahtti ja kreatiiva vugiiguin. Gealbbu vuođul maid oahppit čájehit, galget sii beassat muitalit maid sii iežaset mielas máhttet, ja reflekteret iežaset fágalaš ovdáneami birra. Oahpaheaddji galgá oaivadit viidásit oahppama ja heivehit oahpahusa nu ahte oahppit sáhttet geavahit oaivadeami plánet, čađahit, dokumenteret ja árvvoštallat iežaset hutkkálaš bargguid."
+   ],
+   "standpunkt": [
+    "Oppalašárvosátni galgá čájehit oahppi ollislaš gealbbu go oahpahus loahpahuvvo fágas sámi visuála kultuvra. Oahpaheaddji galgá plánet ja láhčit dili nu ahte oahppit besset čájehit iežaset gealbbu iešguđet láhkai mat fátmmastit ipmárdusa, reflekšuvnna ja kritihkalaš jurddašeami iešguđet oktavuođain. Oahpaheaddji galgá bidjat árvosáni sámi visuála kultuvrras dan gealbbu vuođul maid oahppi lea čájehan go hutká iežas bargguid, dokumentere ja reflektere fágalaš ipmárdusa."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Oppalaš árvvoštallan",
+   "tekst": [
+    "Sámi visuála kultuvra: Ohppiin galgá okta árvosátni"
+   ]
+  },
+  {
+   "overskrift": "Eksámen ohppiide",
+   "tekst": [
+    "Sámi visuála kultuvra: Oahppit sáhttet gessot njálmmálaš-praktihkalaš eksámenii. Eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Eksámenis galgá leat ráhkkananoassi."
+   ]
+  },
+  {
+   "overskrift": "Eksámen privatisttaide",
+   "tekst": [
+    "Sámi visuála kultuvra: Oahppit galget čađahit njálmmálaš-praktihkalaš eksámena. Eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galget go privatisttat oažžut ráhkkananoasi eksámenis mii báikkálaččat lea mearriduvvon."
+   ]
+  }
+ ]
+}

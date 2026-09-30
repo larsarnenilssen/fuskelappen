@@ -1,0 +1,136 @@
+{
+ "kode": "GAR03-02",
+ "tittel": "Læreplan i Vg3 gartnerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV606",
+   "tittel": "Kompetansemål og vurdering vg3 gartnerfaget",
+   "fag": [
+    "GAR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7050",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere plantedyrking etter både konvensjonelle og økologiske metoder"
+    },
+    {
+     "kode": "KM7072",
+     "tekst": "styre og kontrollere utviklingen av en plante under ulike dyrkingsforhold, fra formering til ferdig produkt, ut fra jord- og vannanalyser og miljømessige vurderinger"
+    },
+    {
+     "kode": "KM7071",
+     "tekst": "identifisere vanlige fysiologiske skader, skadegjørere og nytteorganismer og behandle planter mekanisk, biologisk og kjemisk"
+    },
+    {
+     "kode": "KM7070",
+     "tekst": "utarbeide en risikoanalyse i arbeid med planteproduksjon og utføre arbeidet på en måte som er ergonomisk riktig og i tråd med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7069",
+     "tekst": "vurdere muligheten for gjenbruk og flerbruk av ressurser og foreslå miljø- og energiøkonomiserende tiltak"
+    },
+    {
+     "kode": "KM7068",
+     "tekst": "beskrive prosesser i planter og planteprodukter etter høsting og lagre planteprodukter etter ulike lagringsteknikker"
+    },
+    {
+     "kode": "KM7067",
+     "tekst": "planlegge, gjennomføre og vurdere bruk av planter og planteprodukter som estetiske og kulturelle elementer"
+    },
+    {
+     "kode": "KM7066",
+     "tekst": "utforske og gjøre rede for kulturplanters betydning som mat, medisin og dekorasjon i et historisk perspektiv"
+    },
+    {
+     "kode": "KM7065",
+     "tekst": "identifisere kulturplanter med norske og botaniske navn"
+    },
+    {
+     "kode": "KM7064",
+     "tekst": "identifisere planter som kan være giftige eller gi allergi og presentere alternativer til disse"
+    },
+    {
+     "kode": "KM7063",
+     "tekst": "måle opp et areal, vurdere beplantning og presentere en skisse i tråd med kundens ønske"
+    },
+    {
+     "kode": "KM7073",
+     "tekst": "gjennomføre en beplantning i samsvar med en plan og lage en skjøtselsplan som dokumenterer arbeidsoppgaver for et område"
+    },
+    {
+     "kode": "KM7062",
+     "tekst": "vedlikeholde planter i ulike miljøer og optimalisere forholdene for plantene ut fra plantenes behov"
+    },
+    {
+     "kode": "KM7060",
+     "tekst": "beskrive og drøfte ulike omsetningsformer og økonomiske, politiske og organisatoriske rammebetingelser for gartnernæringen"
+    },
+    {
+     "kode": "KM7059",
+     "tekst": "velge og bruke maskiner og utstyr, både i planlegging og gjennomføring av ulike arbeidsoperasjoner, og i markedsføring av produkter og tjenester"
+    },
+    {
+     "kode": "KM7058",
+     "tekst": "delta i planlegging og gjennomføring av en kostnadseffektiv og miljøvennlig gartnerproduksjon og vurdere sammenhengen mellom dyrkingsmetode og utbytte i ulike planteproduksjoner"
+    },
+    {
+     "kode": "KM7057",
+     "tekst": "utarbeide anbud i forbindelse med arbeidsoppdrag"
+    },
+    {
+     "kode": "KM7074",
+     "tekst": "klargjøre produkter for salg, og kalkulere og fastsette pris på produktene"
+    },
+    {
+     "kode": "KM7056",
+     "tekst": "vurdere muligheten for produktutvikling og lage utstillinger som en del av markedsføring"
+    },
+    {
+     "kode": "KM7055",
+     "tekst": "forstå og bruke regelverket for plantehelse og bruk av plantevernmidler i eget arbeid"
+    },
+    {
+     "kode": "KM7054",
+     "tekst": "kontrollere importert plantemateriale for sykdom og smittefare i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM7053",
+     "tekst": "lagre, pakke og transportere planter etter kontrollrutiner og dokumentasjonskrav"
+    },
+    {
+     "kode": "KM7052",
+     "tekst": "vedlikeholde og føre tilsyn på bygninger, maskiner og utstyr"
+    },
+    {
+     "kode": "KM7051",
+     "tekst": "vedlikeholde og føre tilsyn på vannings- og dreneringssystemer, og beskrive ulike hydrotekniske løsninger"
+    },
+    {
+     "kode": "KM7061",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 gartnerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 gartnerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 gartnerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

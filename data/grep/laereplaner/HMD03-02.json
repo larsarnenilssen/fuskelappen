@@ -1,0 +1,119 @@
+{
+ "kode": "HMD03-02",
+ "tittel": "Oahppoplána - Jo3 čoarve-, dákte- ja metálladuodjefága",
+ "spraak": "sme",
+ "fastsatt": "2022-08-01",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV625",
+   "tittel": "Gealbomihttomearit ja árvvoštallan čoarve-, dákte ja metálladuodjefága",
+   "fag": [
+    "HMD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahpahalli galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM7374",
+     "tekst": "plánet, čađahit, árvvoštallat ja dokumenteret iežas bargguid ja bargoproseassaid ja geavahit fágaterminologiija barggus"
+    },
+    {
+     "kode": "KM7391",
+     "tekst": "suokkardit sámi árbevierromáhttu ja álgoálbmotkultuvra ja geavahit inspirašuvdnan ehtalaš vugiin iežas hutkkálaš barggus ja go gaskkusta duoji"
+    },
+    {
+     "kode": "KM7390",
+     "tekst": "geavahit digitála resurssaid ovdánahttit bargotevnnegiid, sárggastusaid ja modeallaid ja geavahit daid duddjomis go hábme ođđa čoarve-, dákte- ja metállabuktagiid trendaid ja ođđa albmanahttiimiid vuođul"
+    },
+    {
+     "kode": "KM7389",
+     "tekst": "selvehit duodjeárbevieruid Sámis ja ráhkadit iežas guovllu dáhje muhtin eará Sámi guovllu árbevirolaš duodjebuktagiid"
+    },
+    {
+     "kode": "KM7388",
+     "tekst": "válljet ávdnasiid, reidet ja vurkkodit daid árbevirolaš ja ođđa vugiid mielde ja válddahit funkšuvnna, kvalitehta ja bistima"
+    },
+    {
+     "kode": "KM7387",
+     "tekst": "duddjot ja gárvet árbevirolaš atnu- ja ođđamállet dujiid čoarvvis, dávttis ja metállas"
+    },
+    {
+     "kode": "KM7386",
+     "tekst": "hábmet ja ráhkadit ja buktagiid sahemiin, čuohppamiin ja jurssahemiin"
+    },
+    {
+     "kode": "KM7385",
+     "tekst": "geavahit relevánta metodaid gos geavaha silbba ovttas čorvviin ja dávttiin duddjot čiŋaid ja eará buktagiid, ja selvehit movt presišuvdna ja dárkilvuohta barggadettiin váikkuha bohtosii"
+    },
+    {
+     "kode": "KM7384",
+     "tekst": "geahččaladdat iešguđetlágan oktiibidjan- ja laktinvugiid, árvvoštallat daid ja geavahit daid iežas barggus"
+    },
+    {
+     "kode": "KM7383",
+     "tekst": "geavahit iešguđet vugiid buoššudit ja devkkodahttit ja hábmet stálli niibbebuvttadeapmáihábmet, vadjat ja goarrut leairaniibedohpa"
+    },
+    {
+     "kode": "KM8314",
+     "tekst": "hápmet ,vadjat ja goarrut leairaniibedoahpa"
+    },
+    {
+     "kode": "KM7382",
+     "tekst": "hervet graveremin, čuohppamiin ja deaddimin ávdnasiid ja dujiid"
+    },
+    {
+     "kode": "KM7381",
+     "tekst": "geavahit iešguđetlágan teknihkaid, pusset ja livttisin dahkat ja dikšut olggožiid iešguđet ávdnasiin ja buktagiin"
+    },
+    {
+     "kode": "KM7380",
+     "tekst": "meroštit ávnnas- ja buvttadangoluid iežas dujiin ja bálvalusain ja árvvoštallat ávnnasgeavaheami, produktivitehta ja gánnáheami oktavuođaid"
+    },
+    {
+     "kode": "KM7379",
+     "tekst": "geavahit iešguđet digitála resurssaid go márkanfievrrida ja vuovdá iežas ja fitnodaga mearkagálvvuid ja gulahallamis ostiiguin ja eará ovttasbargoguimmiiguin"
+    },
+    {
+     "kode": "KM7377",
+     "tekst": "selvehit sámi čoarve- ,dákte- ja metálladuoji historjjá ja iešvuođa ja geavahit historjjálaš gálduid referánsan buktagiid buvttadeamis ja rekonstrueremis luohtehahtti vugiin"
+    },
+    {
+     "kode": "KM7378",
+     "tekst": "šliipet, heidnet, poleret, geavahit ja máŧasdoallat ávjoreaidduid"
+    },
+    {
+     "kode": "KM7375",
+     "tekst": "geavahit ja máŧasdoallat mašiinnaid, reaidduid ja duodjebiergasiid gustovaš dearvvašvuođa, birrasa ja sihkarvuođanjuolggadusaid mielde"
+    },
+    {
+     "kode": "KM7393",
+     "tekst": "geavahit heivvolaš suodjalanbiergasiid ja buriid bargorutiinnaid ja válljet vuogas barganvugiid maid rievdadallá barggadettiin vai garvá noađđevigiid"
+    },
+    {
+     "kode": "KM7376",
+     "tekst": "suokkardit iešguđet sámi duodjeorganisašuvnnaid ja -ásahusaid doaibmasuorggi ja barggu, ja movt atnit ávkki dain, ja maid reflekteret makkár rolla dain lea servodagas"
+    },
+    {
+     "kode": "KM7392",
+     "tekst": "bargat gustovaš njuolggadusortnegiid ja šiehtadusaid vuođul mat regulerejit bargodili, ja válddahit bargoaddi ja bargi geatnegasvuođaid ja vuoigatvuođaid"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde oahppama ovddideamen ja ovdánahttimin gealbbu. Oahpahallit čájehit ja ovdánahttet gealbbu jo3 čoarve-, dákte- ja metálladuodjefágas go geavahit máhtu, gálggaid ja kritihkalaš jurddašeami go galget bargobihtáid čoavdit. Bagadeaddji galgá láhččit dili vai oahpahallis lea mielváikkuheapmi ja oahppanmovtta oalgguhit iešguđetlágan bargguid bokte. Bagadalli ja oahpahalli galgaba ságastallat oahppihalli ovdáneami birra jo3 čoarve-, dákte- ja metálladuodjefágas. Oahpahallit galget beassat muitalit maid orrot máhttimin, ja beassat reflekteret iežaset fágalaš ovdáneamis. Bagadeaddji galgá bagadallat viidáset oahppama birra ja heivehit oahpahusa nu ahte oahpahallit sáhttet geavahit bagadusa loktet iežaset gealbbu fágas."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Loahppaárvvoštallan",
+   "tekst": [
+    "Ovdal fágageahččaleami galget buohkat geat eai leat čuvvon dábálaš oahppomannolaga, leat ceavzán čálalaš eksámena mii lea ráhkaduvvon fága oahppoplána vuođul. Eksámen ráhkaduvvo guovddáš ásahusain ja sensurerejuvvo báikkálaččat. Eksámenis ii galgga leat ráhkkananoassi.",
+    "Oahpahus jo3 čoarve-, dákte- ja metálladuodjefágas galgá loahpahuvvot fágageahččalemiin. Buohkat galget čađahit fágageahččaleami, mii galgá čađahuvvot unnimusat guđa árgabeaivvi sisa."
+   ]
+  }
+ ]
+}

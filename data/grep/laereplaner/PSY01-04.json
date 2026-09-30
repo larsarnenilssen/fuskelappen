@@ -1,0 +1,174 @@
+{
+ "kode": "PSY01-04",
+ "tittel": "Læreplan i psykologi",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV883",
+   "tittel": "Kompetansemål og vurdering psykologi 1",
+   "fag": [
+    "PSY1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11545",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM11532",
+     "tekst": "sammenligne, anvende og vurdere ulike vitenskapelige tilnærminger, teorier, perspektiver og metoder, og vurdere forskjellige forklaringer på psykologiske problemstillinger"
+    },
+    {
+     "kode": "KM11533",
+     "tekst": "utforske ulike temaer innenfor anvendt psykologi, og vurdere hvordan psykologi kan anvendes i ulike yrker"
+    },
+    {
+     "kode": "KM11540",
+     "tekst": "gjøre rede for hukommelse og reflektere over hva som kan påvirke hukommelsesprosessen"
+    },
+    {
+     "kode": "KM11538",
+     "tekst": "beskrive ulike perspektiver på læring, reflektere over hva som hemmer og fremmer læring, og vurdere egne læringsstrategier"
+    },
+    {
+     "kode": "KM11539",
+     "tekst": "drøfte sammenhengen mellom motivasjon, mestring og læring"
+    },
+    {
+     "kode": "KM11534",
+     "tekst": "drøfte hvordan samspillet mellom arv og miljø har betydning for utvikling av personlighet, identitet og tilknytning"
+    },
+    {
+     "kode": "KM11541",
+     "tekst": "utforske og gjøre rede for hvordan persepsjon og kognisjon virker inn på menneskets forståelse av seg selv og omverdenen"
+    },
+    {
+     "kode": "KM11544",
+     "tekst": "utforske og vurdere hvordan individuelle, sosiale og psykologiske faktorer påvirker mennesket til å ta, og unnlate å ta, bærekraftige valg"
+    },
+    {
+     "kode": "KM11537",
+     "tekst": "gjøre rede for psykiske kriser og drøfte mulige utfall av disse"
+    },
+    {
+     "kode": "KM11536",
+     "tekst": "beskrive hovedtrekk i sansesystemets, nervesystemets og hormonsystemets oppbygning og funksjon, og utforske hvordan disse systemene sammen utgjør grunnlaget for tanker, emosjoner og atferd"
+    },
+    {
+     "kode": "KM11535",
+     "tekst": "utforske og gjøre rede for hvordan evolusjonspsykologi forklarer menneskets tanker, emosjoner og atferd"
+    },
+    {
+     "kode": "KM11542",
+     "tekst": "beskrive hvordan bruk av rusmidler hos ungdom og unge voksne påvirker hjernens funksjon og reflektere over hvordan bruk av rusmidler kan påvirke psykisk helse og livskvalitet"
+    },
+    {
+     "kode": "KM11543",
+     "tekst": "drøfte konsekvenser av stress, vurdere betydningen av sårbarhet og resiliens og reflektere over hvordan man kan forebygge negative stressreaksjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i psykologi 1. Elevene viser og utvikler kompetanse i faget når de bruker faglige perspektiver, metoder og teorier i utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i arbeid med spørsmål knyttet til psykologiske prosesser og mekanismer og menneskets tanker, emosjoner og atferd.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i psykologi 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i psykologi 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter psykologi 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i psykologi 1 basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder og teorier til å belyse dem."
+   ]
+  },
+  {
+   "kode": "KV884",
+   "tittel": "Kompetansemål og vurdering psykologi 2",
+   "fag": [
+    "PSY1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11547",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM11546",
+     "tekst": "planlegge, beskrive og gjennomføre en undersøkelse av en psykologisk problemstilling, analysere og drøfte resultater"
+    },
+    {
+     "kode": "KM11556",
+     "tekst": "sammenligne og anvende ulike vitenskapelige tilnærminger, teorier, perspektiver og metoder, og vurdere forskjellige forklaringer på psykologiske problemstillinger"
+    },
+    {
+     "kode": "KM11552",
+     "tekst": "drøfte hvordan sosial påvirkning og interaksjon i grupper kan påvirke holdninger, atferd og identitet"
+    },
+    {
+     "kode": "KM11553",
+     "tekst": "drøfte årsaker til utenforskap og reflektere over konsekvenser for individet"
+    },
+    {
+     "kode": "KM11554",
+     "tekst": "gjøre rede for faktorer som påvirker utviklingen av sosial kompetanse, og reflektere over betydningen av sosial kompetanse"
+    },
+    {
+     "kode": "KM11551",
+     "tekst": "gjøre rede for hvordan mellommenneskelige konflikter kan oppstå og utvikle seg, og drøfte hvordan verbal og ikke-verbal kommunikasjon kan bidra til både å utvikle og å løse konflikter"
+    },
+    {
+     "kode": "KM11555",
+     "tekst": "drøfte hvordan ulike former for kommunikasjon påvirker sosial samhandling og livskvalitet"
+    },
+    {
+     "kode": "KM11550",
+     "tekst": "reflektere over hvordan synet på psykisk helse og behandling av psykiske lidelser har endret seg og er i endring"
+    },
+    {
+     "kode": "KM11549",
+     "tekst": "drøfte begrepene normalitet og psykisk helse og reflektere over hva som skiller psykiske vansker og psykiske lidelser"
+    },
+    {
+     "kode": "KM11548",
+     "tekst": "utforske samspillet mellom biologiske, psykologiske og sosiale faktorer for utvikling av god psykisk helse, og drøfte forebygging og behandling av psykiske vansker og lidelser i lys av dette"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i psykologi 2. Elevene viser og utvikler kompetanse i faget når de bruker faglige perspektiver, metoder og teorier i utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i arbeid med spørsmål knyttet til psykologiske prosesser og mekanismer og menneskets tanker, emosjoner og atferd.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i psykologi 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i psykologi 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter psykologi 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i psykologi 2 basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Psykologi 1: Eleven skal ha én standpunktkarakter.",
+    "Psykologi 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Psykologi 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Psykologi 2: Eleven kan trekkes ut til en skriftlig eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Psykologi 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Psykologi 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

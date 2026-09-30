@@ -1,0 +1,262 @@
+{
+ "kode": "MEL03-04",
+ "tittel": "Læreplan i vg3 maritim elektriker – opplæring i skole",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV954",
+   "tittel": "Kompetansemål og vurdering elenergi",
+   "fag": [
+    "MEL3Z07"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12515",
+     "tekst": "risikovurdere, planlegge, gjennomføre, sette i drift og dokumentere yrkesoppgaver i programfaget elenergi individuelt og i samarbeid med andre i henhold til gjeldende regelverk og skolens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12516",
+     "tekst": "utføre arbeidet i henhold til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, benytte gode ergonomiske arbeidsstillinger, verneutstyr og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12517",
+     "tekst": "vedlikeholde og sette i drift ulike maritime fordelingssystemer fra energikilden til belastning med tilhørende målearrangement, ekomutstyr og jordingssystem, dimensjonere ledning, kabel og vern og vurdere behov for kompenserende tiltak med hensyn til effektfaktor ved inntak"
+    },
+    {
+     "kode": "KM12518",
+     "tekst": "konfigurere ulike brukertilpassede og maritime energieffektive installasjoner for lys, varme og variabel last, med tilhørende styringsutstyr og sensorer vurdere og iverksette tiltak mot elektromagnetisk støy"
+    },
+    {
+     "kode": "KM12519",
+     "tekst": "vedlikeholde og konfigurere anlegg for lokal energiproduksjon med energilagring, laststyring og energileveranse til nett og drøfte hvordan dette påvirker anleggets energiøkonomi"
+    },
+    {
+     "kode": "KM12520",
+     "tekst": "montere føringsvei og installere ledning, kabel og fiber i henhold til krav til forlegning, og gjøre rede for hvordan forlegning påvirker strømføringsevne og transmisjonsegenskaper"
+    },
+    {
+     "kode": "KM12521",
+     "tekst": "skjøte, endeavslutte og terminere ulike kabler og andre ledende forbindelser for høy- og lavspent anlegg ved bruk av egnet metode, verktøy, pressutstyr og tiltrekkingsmoment, og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM12522",
+     "tekst": "vedlikeholde verktøy og verneutstyr, og gjøre rede for vedlikeholdsrutinene i skolens internkontrollsystem"
+    },
+    {
+     "kode": "KM12523",
+     "tekst": "foreta systematisk feilsøking, reparasjoner og vedlikehold på elektriske anlegg og utstyr og vurdere lønnsomheten til reparasjonene"
+    },
+    {
+     "kode": "KM12524",
+     "tekst": "evaluere arbeidsmetoder og faglige løsninger i samarbeid med andre for å utvikle fagutøvelsen med tanke på estetikk, teknologi og kvalitet"
+    },
+    {
+     "kode": "KM12525",
+     "tekst": "montere og konfigurere nød- og reservestrømforsyningsanlegg, avbruddsfrie strømforsyningsanlegg og koblingsutstyr for prioriterte laster og gjøre rede for farer forbundet med arbeid på akkumulatoranlegg"
+    },
+    {
+     "kode": "KM12526",
+     "tekst": "drifte og vedlikeholde høyspenningsanlegg over 1000 volt, gjøre rede for farer og følge regler for sikker drift og vedlikehold"
+    },
+    {
+     "kode": "KM12527",
+     "tekst": "arbeide på ulike energikilder og tilhørende koblingsutstyr og gjøre rede for farer forbundet med omkoblinger"
+    },
+    {
+     "kode": "KM12528",
+     "tekst": "gjøre rede for elektrisk framdrift av skip og motorenes kontrollsystemer og mulige elektriske feilfunksjoner i framdrift- og hjelpemaskin og foreslå tiltak for å hindre skade på systemene"
+    },
+    {
+     "kode": "KM12529",
+     "tekst": "diskutere farer forbundet med elektriske systemer og utstyr i brann- og eksplosjonsfarlige områder og krav til utstyr og sikkerhetssystemer i eksplosjonsfarlige områder"
+    },
+    {
+     "kode": "KM12530",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12531",
+     "tekst": "reflektere over det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12532",
+     "tekst": "drøfte etiske dilemmaer ved valg av produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12533",
+     "tekst": "håndtere avfall etter eget arbeid med hensyn til miljø og økonomi og drøfte produkters miljøprestasjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget elenergi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget elenergi. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget elenergi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget elenergi basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV955",
+   "tittel": "Kompetansemål og vurdering automasjon",
+   "fag": [
+    "MEL3Z08"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12534",
+     "tekst": "risikovurdere, planlegge, gjennomføre, sette i drift og dokumentere yrkesoppgavene i programfaget automasjon individuelt og i samarbeid med andre i henhold til gjeldende regelverk og skolens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12535",
+     "tekst": "montere, programmere og konfigurere styringssystemer med regulator og sensordata for motor for å oppnå ønsket resultat, og vurdere og iverksette tiltak mot elektromagnetisk støy"
+    },
+    {
+     "kode": "KM12536",
+     "tekst": "montere, konfigurere og sette i drift systemer for styring og regulering av pådragsorgan og velge og installere sensorer og givere tilpasset systemet"
+    },
+    {
+     "kode": "KM12537",
+     "tekst": "installere instrumentering og alarm- og overvåkingssystemer i maritime installasjoner og gjøre rede for hvordan instrumenteringssystemets funksjon og virkemåte."
+    },
+    {
+     "kode": "KM12538",
+     "tekst": "montere og funksjonsteste styresystem for hydrauliske og pneumatiske komponenter og forklare komponentenes funksjon og virkemåte"
+    },
+    {
+     "kode": "KM12539",
+     "tekst": "arbeide på systemer for overvåking av elektriske og elektroniske anlegg for drift av maskintekniske anlegg, og forklare virkemåte og oppbygging til sensorer for innhenting av måleverdier på automatiserte systemer og utstyr, og vurdere måleresultatene mot tabeller og beregnede verdier"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget automasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget automasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget automasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget automasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV956",
+   "tittel": "Kompetansemål og vurdering elektronisk kommunikasjon",
+   "fag": [
+    "MEL3Z09"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12540",
+     "tekst": "risikovurdere, planlegge, gjennomføre, sette i drift og dokumentere yrkesoppgaver i programfaget elektronisk kommunikasjon individuelt og i samarbeid med andre i henhold til gjeldende regelverk og skolens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12541",
+     "tekst": "montere og konfigurere nettverkstilknyttet radiobasert og kablet utstyr for brukertilpassede og energieffektive installasjoner og vurdere om datasikkerhet og personvern er ivaretatt"
+    },
+    {
+     "kode": "KM12542",
+     "tekst": "montere og konfigurere brannalarm og adgangs- og sikkerhetssystemer og vurdere ulike typer detektorer og alarmgivere og plasseringen deres"
+    },
+    {
+     "kode": "KM12543",
+     "tekst": "foreta systematisk feilsøking, reparasjon og vedlikehold av varslings- og sikkerhetssystemer og gjøre rede for hvordan systemene er bygget opp og fungerer"
+    },
+    {
+     "kode": "KM12544",
+     "tekst": "gjøre rede for hvordan kommunikasjonssystemene på skip er bygget opp og brukes, og vurdere tiltak mot elektromagnetisk støy"
+    },
+    {
+     "kode": "KM12545",
+     "tekst": "funksjonsteste og forklare hvordan navigasjonsutstyret brukes, og diskutere tiltak mot elektromagnetisk påvirkning"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget elektronisk kommunikasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget elektronisk kommunikasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget automasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget automasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV957",
+   "tittel": "Kompetansemål og vurdering organisasjon og ledelse",
+   "fag": [
+    "MEL3Z10"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12546",
+     "tekst": "beskrive hvordan lov og avtaleverk for arbeidsforhold og helse bidrar til arbeidsvelferd, forklare hvordan tariff og lokale avtaler blir forhandlet fram, og diskutere hvordan svart arbeid og arbeidskriminalitet påvirker arbeidslivet og bransjen"
+    },
+    {
+     "kode": "KM12547",
+     "tekst": "kommunisere med og veilede involverte parter og bruke fagterminologi tilpasset mottaker og formål"
+    },
+    {
+     "kode": "KM12548",
+     "tekst": "håndtere avfall etter eget arbeid miljømessig og økonomisk, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12549",
+     "tekst": "drøfte tiltak for å unngå at olje og kjemikalier slipper ut til det ytre miljøet, og gjøre rede for konsekvenser ved utslipp"
+    },
+    {
+     "kode": "KM12550",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i yrkesoppgavene, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget organisasjon og ledelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i faget organisasjon og ledelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget.",
+    "Sikkerhetsopplæring i henhold til Sjøfartsdirektoratets gjeldende regelverk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget organisasjon og ledelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget organisasjon og ledelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Elever som har opplæring på fartøy på vg3, må dokumentere at de har gjennomført grunnleggende sikkerhetsopplæring i tråd med krav fra Sjøfartsdirektoratet."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elenergi: Eleven skal ha én standpunktkarakter.",
+    "Automasjon: Eleven skal ha én standpunktkarakter.",
+    "Elektronisk kommunikasjon: Eleven skal ha én standpunktkarakter.",
+    "Organisasjon og ledelse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elenergi, automasjon, elektronisk kommunikasjon og organisasjon og ledelse: Eleven skal opp til en tverrfaglig, skriftlig eksamen i programfagene. Eksamen utarbeides sentralt og sensureres lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elenergi: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Automasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elektronisk kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Organisasjon og ledelse: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elenergi, automasjon, elektronisk kommunikasjon og organisasjon og ledelse: Privatisten skal opp til en tverrfaglig, skriftlig eksamen i programfagene. Eksamen utarbeides sentralt og sensureres lokalt."
+   ]
+  }
+ ]
+}

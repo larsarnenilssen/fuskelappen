@@ -1,0 +1,128 @@
+{
+ "kode": "REI03-02",
+ "tittel": "Oahppoplána – Jo3 boazodoallofága",
+ "spraak": "sme",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV665",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo3 boazodoallofágas",
+   "fag": [
+    "REI3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahpahalli galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM8289",
+     "tekst": "plánet, čađahit, árvvoštallat ja dokumenteret iešguđet bargguid dihto bohccuin ja ealuin okto ja ovttasráđiid earáiguin"
+    },
+    {
+     "kode": "KM8309",
+     "tekst": "árvvoštallat ja geavahit heivvolaš bargovugiid doallodili ja ealáhaga ektui, ja dihto bohcco ja ealu meahtalaga vuođul"
+    },
+    {
+     "kode": "KM8308",
+     "tekst": "reidet dárbašiid ja reaidduid iešguđet bargguide, geavahit ja áimmahuššat ja hálddašit bargodávviriid, teknihkalaš veahkkeneavvuid ja rusttegiid"
+    },
+    {
+     "kode": "KM8307",
+     "tekst": "dovdat ja bagadit iežas ja siidaguimmiid bohccuid bealljemearkkaid, sohkabeali, agi, vuoimmi ja guolgga ja čorvviid vuođul"
+    },
+    {
+     "kode": "KM8306",
+     "tekst": "válddahit árbevirolaš mearkumiid ja merket iežas dahje siidaoasi bohccuid"
+    },
+    {
+     "kode": "KM8305",
+     "tekst": "fuobmát jus ovttaskas bohccos rievdá vuoibmi ja meahtalat ja álggahit heivvolaš doaibmabijuid gustovaš njuolggadusaid vuođul"
+    },
+    {
+     "kode": "KM8302",
+     "tekst": "gulahallat eará boazobargiiguin, doallodili, ealáhaga eanadaga, dálkkiid, doaibmadiliid ja dálkkádatrievdamiid birra ja heivehit bargguid ja siidadoalu dan mielde"
+    },
+    {
+     "kode": "KM8300",
+     "tekst": "gulahallat earáiguin ja šiehtadit čohkkema ja eallobuktima gárddástallama hárrái, ja bargat oktasašbargguid gárddis ja doalvut ealu guohtumii"
+    },
+    {
+     "kode": "KM8304",
+     "tekst": "válljet njuovvan- ja ealihanbohccuid, ja čilget válljema árbevirolašmáhtu, eallostruktuvrra ja buvttadanmihtu vuođul"
+    },
+    {
+     "kode": "KM8303",
+     "tekst": "heakkahuhttit bohcco gustovaš njuolggadusaid mielde ja njuovvat ja rihttet bohcco gustovaš ráinnasvuođaprinsihpaid vuođul"
+    },
+    {
+     "kode": "KM8301",
+     "tekst": "váldit vára ja ávkkástallat maid bohccos oažžu duodjeávnnasin ja árbevirolaš biebmoráhkadeapmái ja árvvoštallat vejolašvuođa ođđa buktagiidda ja bálvalusaide"
+    },
+    {
+     "kode": "KM8310",
+     "tekst": "geavahit beatnaga ja láidestanhearggi ulbmillaččat ja reflekteret ávkki das"
+    },
+    {
+     "kode": "KM8298",
+     "tekst": "geavahit vásáhusvuđot máhtu ja ođđa vugiid dádjadit ja geahčadit eanadaga ja luottaid, časkilit ja dulkot lihkademiid ja jienaid luonddus go galgá vánddardit dorvvolaččat iešguđet dálkkiin, eanadagain ja siivun"
+    },
+    {
+     "kode": "KM8290",
+     "tekst": "selvehit maid dálkkádatrievdamat daguhit ja ságaškuššat makkár guhkit áigge váikkuhusat dain leat boazodollui"
+    },
+    {
+     "kode": "KM8297",
+     "tekst": "árvvoštallat eallosturrodaga iešguđet eanadagain, jahkodagain ja heivehit siiddastallama dan mielde"
+    },
+    {
+     "kode": "KM8299",
+     "tekst": "selvehit boazofievrredeami gustovaš njuolggadusaid mielde"
+    },
+    {
+     "kode": "KM8296",
+     "tekst": "časkilit gos boazu lea johtalan ja guhton ja árvvoštallat masttadanvára ja muitalit vejolaš masttademiid ja ovttasráđiid eará boazodolliiguin easttadišgoahtit masttademiid"
+    },
+    {
+     "kode": "KM8295",
+     "tekst": "selvehit ja dokumenteret boraspiriid sihke árbevirolaččat, áicama, vuohttima ja ráppiid vuođul ja raporteret dan guoskevaš eiseválddiide ja árvvoštallat ja čađahit iešguđet vaháteastademiid boraspiriid vuostá"
+    },
+    {
+     "kode": "KM8294",
+     "tekst": "reflekteret iešguđet beroštusriidduid birra mat sáhttet čuožžilit boazodoalu guovdu ja makkár mearkkašupmi boazodoalus lea servodahkii"
+    },
+    {
+     "kode": "KM8292",
+     "tekst": "árvvoštallat riskka ja evalueret dárbbu álggahit eastadandoaimmaid ja fuolahit dearvvašvuođa, birrasa ja sihkarvuođa"
+    },
+    {
+     "kode": "KM8311",
+     "tekst": "selvehit ja čađahit heaggagádjuma ja heahteveahki"
+    },
+    {
+     "kode": "KM8293",
+     "tekst": "árvvoštallat ovttasráđiid earáiguin mo iežas ja siidda dagut ja válljemat váikkuhit luonddubirrasii, produktivitehtii, kvalitehtii ja ekonomiijii"
+    },
+    {
+     "kode": "KM8291",
+     "tekst": "bargat gustovaš mearrádusaid ja šiehtadusaid mielde mat regulerejit bargodili fágas, ja selvehit bargoaddi ja bargi geatnegasvuođaid ja vuoigatvuođaid"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá veahkehit ovddidit oahppama ja loktet gealbbu. Oahpahallit čájehit ja ovdánahttet gealbbu jo3 boazodoallofágas go sii geavahit máhtu, gálggaid ja jurddašit kritihkalaččat prográmmafága bargguid čoavdimis. Bagadeaddji galgá láhčit dili vai oahpahallis lea mielváikkuheapmi ja oahppanmovtta oalgguhit iešguđetlágan bargguid bokte.",
+    "Bagadeaddji ja oahpahalli galgaba ságastallat fidnooahppi ovdáneami birra jo3 boazodoallofágas. Oahpahallit galget oažžut vejolašvuođa muitalit maid sii hálddašit, ja iežaset fágalaš ovdáneami reflekteret. Bagadeaddji galgá bagadallat viidásat oahppamis ja heivehit oahpahusa nu ahte oahpahallit sáhttet bagadallama ávkkástallat ja loktet iežaset gealbbu fágas."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Loahppaárvvoštallan",
+   "tekst": [
+    "Ovdal fágageahččaleami galget buohkat geat eai leat čuvvon dábálaš oahppomannolaga, leat ceavzán čálalaš eksámena mii lea ráhkaduvvon fága oahppoplána vuođul. Eksámen ráhkaduvvo guovddáš ásahusain ja sensurerejuvvo báikkálaččat. Eksámenis ii galgga leat ráhkkananoassi",
+    "Jo3 boazodoallofága oahpahus galgá loahpahuvvot fágaiskosiin. Buohkat galget čađahit fágaiskosa, mii galgá čađahuvvot golmma bargobeaivvis."
+   ]
+  }
+ ]
+}

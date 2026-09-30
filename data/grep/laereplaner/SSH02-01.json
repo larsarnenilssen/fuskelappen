@@ -1,0 +1,230 @@
+{
+ "kode": "SSH02-01",
+ "tittel": "Læreplan i vg2 service, sikkerheit og administrasjon",
+ "spraak": "nno",
+ "fastsatt": "2021-02-05",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV353",
+   "tittel": "Kompetansemål og vurdering sikkerheit (169 årstimar)",
+   "fag": [
+    "SSH2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3707",
+     "tekst": "gjere greie for arbeidsområda, tenestene og produkta til vaktverksemdsbransjen og vurdere desse med utgangspunkt i sikkerheitsbehova i samfunnet"
+    },
+    {
+     "kode": "KM3710",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere eit lokalt arrangement med omsyn til sikkerheit"
+    },
+    {
+     "kode": "KM3709",
+     "tekst": "utforske helse-, miljø- og sikkerheitsarbeidet i ei verksemd og gjere greie for dei ulike rollene dei tilsette har i dette arbeidet"
+    },
+    {
+     "kode": "KM3708",
+     "tekst": "utforske kva sikkerheit og personvern har å seie, og følgje rutinar for sikkerheit og personvern i informasjons- og kommunikasjonsteknologi"
+    },
+    {
+     "kode": "KM3706",
+     "tekst": "drøfte ulike trusselbilete for verksemder og for samfunnet"
+    },
+    {
+     "kode": "KM3705",
+     "tekst": "gjere greie for ulike former for risikovurdering og utarbeide ein enkel risikoanalyse med forslag til tiltak"
+    },
+    {
+     "kode": "KM3704",
+     "tekst": "utforske, forstå og bruke ein beredskapsplan"
+    },
+    {
+     "kode": "KM3703",
+     "tekst": "gjere greie for brannteori og planleggje, gjennomføre og evaluere ei brannøving"
+    },
+    {
+     "kode": "KM3726",
+     "tekst": "utføre livreddande førstehjelp, ta ansvar for ein skadestad og reflektere over kva eiga framferd har å seie"
+    },
+    {
+     "kode": "KM3735",
+     "tekst": "gjere greie for symptom på å vere ruspåverka og drøfte korleis ruspåverknad, kan gå ut over sikkerheita i ulike situasjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget sikkerheit når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget sikkerheit. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget sikkerheit ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget sikkerheit basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV351",
+   "tittel": "Kompetansemål og vurdering administrasjon og berekraftig drift (168 årstimar)",
+   "fag": [
+    "SSH2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3702",
+     "tekst": "utforske og presentere ei sjølvvald verksemd som vektlegg innovasjon og nyskaping, og drøfte kva dette har å seie i utviklinga av verksemda"
+    },
+    {
+     "kode": "KM3721",
+     "tekst": "gjere greie for ulike typar lønn og berekne lønnskostnader"
+    },
+    {
+     "kode": "KM3723",
+     "tekst": "forstå og presentere ein enkel rekneskap, setje opp eit likviditets- og resultatbudsjett og kommentere avvik mellom budsjett og rekneskap"
+    },
+    {
+     "kode": "KM3722",
+     "tekst": "vurdere inntektsgrunnlaget til ei verksemd og kva faktorar som påverkar lønnsemd og berekraft"
+    },
+    {
+     "kode": "KM3720",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere eit lokalt arrangement med omsyn til lønnsemd og berekraftig utvikling"
+    },
+    {
+     "kode": "KM3724",
+     "tekst": "reflektere over kva faktorar som påverkar arbeidsmiljøet i ei verksemd, og drøfte ulike tiltak som kan betre det"
+    },
+    {
+     "kode": "KM3725",
+     "tekst": "gjere greie for ulike administrative rutinar og vurdere tiltak som kan betre rutinane"
+    },
+    {
+     "kode": "KM3727",
+     "tekst": "gjere greie for ulike system for å handtere, stille saman og finne att dokument, og bruke eigna verktøy for dette"
+    },
+    {
+     "kode": "KM3734",
+     "tekst": "utforske og drøfte korleis verksemder profilerer seg i ulike medium"
+    },
+    {
+     "kode": "KM3728",
+     "tekst": "utarbeide innhald til ulike planar, rapportar og dokument og tilpasse innhaldet til ulike mottakarar"
+    },
+    {
+     "kode": "KM3729",
+     "tekst": "beskrive ulike typar svinn, reflektere over konsekvensane av svinn og foreslå tiltak for å førebyggje svinn"
+    },
+    {
+     "kode": "KM3730",
+     "tekst": "koordinere og hjelpe til i saksbehandling og ulike administrative prosessar"
+    },
+    {
+     "kode": "KM3731",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget administrasjon og berekraftig drift når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte og praksisnære arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget administrasjon og berekraftig drift. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget administrasjon og berekraftig drift ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget administrasjon og berekraftig drift basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV352",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og yrkesutøving (140 årstimar)",
+   "fag": [
+    "SSH2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3732",
+     "tekst": "utforske kva yrkesetikk og verksemdskultur har å seie i utvalde bransjar innanfor administrasjon, service og sikkerheit"
+    },
+    {
+     "kode": "KM3733",
+     "tekst": "reflektere over forventningar til tilsette i sikkerheits-, administrasjons- og servicestilingar"
+    },
+    {
+     "kode": "KM3719",
+     "tekst": "utforske korleis kultur, verdiar og haldningar påverkar kommunikasjon mellom menneske, og reflektere over korleis ein kan ta omsyn til dette i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM3718",
+     "tekst": "gjere greie for servicerolla og utforske korleis utøvinga av servicerolla må tilpassast ulike mottakarar i ulike situasjonar, og korleis måten rolla blir utøvd på, kan påverke omdømmet til verksemder"
+    },
+    {
+     "kode": "KM3717",
+     "tekst": "møte behov på ein profesjonell og sjølvstendig måte og utvikle løysingar som dekkjer behova"
+    },
+    {
+     "kode": "KM3716",
+     "tekst": "reflektere over etiske dilemma som kan oppstå i ein arbeidssituasjon, og foreslå moglege løysingar og førebyggjande tiltak"
+    },
+    {
+     "kode": "KM3715",
+     "tekst": "presentere samanhengen mellom ekstern, intern og interaktiv marknadsføring og forstå servicemedarbeidaren si rolle i dette"
+    },
+    {
+     "kode": "KM3714",
+     "tekst": "utarbeide og presentere informasjon tilpassa ulike målgrupper og bruke eigna kommunikasjonsverktøy"
+    },
+    {
+     "kode": "KM3713",
+     "tekst": "utforske tiltak som kan førebyggje konflikt, og bruke ulike metodar for konflikthandtering"
+    },
+    {
+     "kode": "KM3711",
+     "tekst": "utforske og gjere greie for aktuelle lover som regulerer yrkesutøvinga"
+    },
+    {
+     "kode": "KM3712",
+     "tekst": "drøfte og forstå korleis verdiane og spelereglane i demokratiet regulerer yrkesutøvinga i sikkerheitsarbeidet og i administrativt arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget kommunikasjon og yrkesutøving når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget kommunikasjon og yrkesutøving. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget kommunikasjon og yrkesutøving ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget kommunikasjon og yrkesutøving basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Sikkerheit: Eleven skal ha éin standpunktkarakter.",
+    "Administrasjon og berekraftig drift: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og yrkesutøving: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Sikkerheit, administrasjon og berekraftig drift og kommunikasjon og yrkesutøving: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Sikkerheit: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Administrasjon og berekraftig drift: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og yrkesutøving: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Sikkerheit, administrasjon og berekraftig drift og kommunikasjon og yrkesutøving: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

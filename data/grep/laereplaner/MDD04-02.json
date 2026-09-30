@@ -1,0 +1,77 @@
+{
+ "kode": "MDD04-02",
+ "tittel": "Læreplan i danseteknikker",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV262",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD4Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2808",
+     "tekst": "utøve dansetekniske ferdigheter i ulike dansesjangre"
+    },
+    {
+     "kode": "KM2809",
+     "tekst": "utforske egne bevegelsesmuligheter i danseteknikk gjennom improvisasjon"
+    },
+    {
+     "kode": "KM2810",
+     "tekst": "formidle dans med oppmerksomhet, konsentrasjon og fokus i sceniske visninger"
+    },
+    {
+     "kode": "KM2811",
+     "tekst": "utforske egen danseriske identitet og uttrykke seg om og i dans"
+    },
+    {
+     "kode": "KM2812",
+     "tekst": "samhandle i danserisk arbeid ved å gi innspill og ta imot innspill fra andre, reflektere over egne grenser og samarbeide om sceniske visninger"
+    },
+    {
+     "kode": "KM2813",
+     "tekst": "identifisere og beskrive egne utviklingsområder og reflektere over egen kroppslig læring i dans"
+    },
+    {
+     "kode": "KM2814",
+     "tekst": "sette seg konkrete mål, øve og reflektere over arbeidsetikk i danseriske arbeidsprosesser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i danseteknikker. Elevene viser og utvikler kompetanse i faget når de utforsker egne bevegelsesmuligheter, forstår dansetekniske prinsipper og identifiserer og beskriver egne utviklingsområder. De viser og utvikler også kompetanse i faget når de bruker dansetekniske ferdigheter til å uttrykke nyanser og dynamikk. Videre viser og utvikler elevene kompetanse i faget når de samhandler med andre i kunstneriske prosesser og formidler dans med tilstedeværelse i ulike visningssituasjoner. De viser og utvikler også kompetanse når de bruker fagterminologi i refleksjon over egen kroppslig læring og arbeidsetikk i dans.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å gi elevene mulighet til å utforske egne bevegelsesmuligheter og dansetekniske prinsipper fra flere ulike dansesjangre, til å samhandle med andre i kunstneriske prosesser og til å formidle dans i ulike visningssituasjoner. Læreren skal være i dialog med elevene om utviklingen deres i danseteknikker, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å identifisere egne utviklingsområder, utvikle teknisk kompetanse i flere dansesjangre og formidle dans med tilstedeværelse."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i danseteknikker ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i danseteknikker basert på kompetansen eleven har vist ved å utforske, utøve, formidle og reflektere over egen kroppslig læring og egne dansetekniske ferdigheter, ved å samhandle med andre i kunstneriske prosesser og ved å utøve dans med tilstedeværelse i ulike visningssituasjoner."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Danseteknikker: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Danseteknikker: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Danseteknikker: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

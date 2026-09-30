@@ -1,0 +1,155 @@
+{
+ "kode": "RTL01-05",
+ "tittel": "Læreplan i rettslære",
+ "spraak": "nno",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV889",
+   "tittel": "Kompetansemål og vurdering rettslære 1",
+   "fag": [
+    "RTL1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11610",
+     "tekst": "reflektere over Noreg som rettsstat og vurdere maktfordeling, rettssikkerheit og legalitetsprinsippet i Noreg"
+    },
+    {
+     "kode": "KM11620",
+     "tekst": "utforske og drøfte kva funksjon rettsreglane har i samfunnet"
+    },
+    {
+     "kode": "KM11611",
+     "tekst": "utforske og bruke ulike rettskjelder for å løyse juridiske problemstillingar"
+    },
+    {
+     "kode": "KM11612",
+     "tekst": "identifisere partar, krav, rettsleg grunnlag og juridisk problemstilling, og gjennomføre juridisk drøfting for å komme fram til ein konklusjon"
+    },
+    {
+     "kode": "KM11614",
+     "tekst": "utforske prinsippet om barnets beste og bruke sentrale reglar i barnelova"
+    },
+    {
+     "kode": "KM11615",
+     "tekst": "bruke reglar om rettar og plikter mellom ektefellar og mellom sambuarar, og reglar som gjeld ved inngåing og oppløysing av ekteskap"
+    },
+    {
+     "kode": "KM11616",
+     "tekst": "gjere greie for reglane om uskifte og bruke reglar om arv etter lov og testament"
+    },
+    {
+     "kode": "KM11617",
+     "tekst": "gjere greie for rettar og plikter i arbeidslivet og bruke sentrale reglar om inngåing og avslutting av arbeidsforhold, varsling og trakassering"
+    },
+    {
+     "kode": "KM11619",
+     "tekst": "bruke sentrale reglar om likestilling og diskriminering i samfunnet"
+    },
+    {
+     "kode": "KM11613",
+     "tekst": "utforske grunnprinsippa i avtaleretten og forskjellen mellom ulike typar kjøp, og bruke sentrale reglar om pliktene og rettane til kjøparen og seljaren i samband med forbrukarkjøp og angrerett"
+    },
+    {
+     "kode": "KM11618",
+     "tekst": "utforske og drøfte dagsaktuelle eller rettshistoriske juridiske problemstillingar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i rettslære 1. Elevane viser og utviklar kompetanse i faget når dei bruker rettsreglane i samfunnet og juridisk metode til å løyse juridiske problemstillingar. Elevane viser og utviklar òg kompetanse gjennom innsikt i og forståing av ulike rettslege forhold og kva juridisk refleksjon inneber i eit demokratisk samfunn.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte munnlege, skriftlege og digitale måtar å tileigne seg og vise kompetanse i faget på, og gjennom å motivere elevane til å utforske og være aktivt kunnskapssøkjande. Læraren skal vere i dialog med elevane om utviklinga deira i rettslære 1, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i rettslære 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i rettslære 1 etter avslutninga av opplæringa. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i rettslære 1 basert på kompetansen eleven har vist gjennom bruk og forståing av juridisk metode, rettsreglane i samfunnet og juridisk refleksjon."
+   ]
+  },
+  {
+   "kode": "KV890",
+   "tittel": "Kompetansemål og vurdering rettslære 2",
+   "fag": [
+    "RTL1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11629",
+     "tekst": "utforske og drøfte skiljet mellom rett og rettferd i ein rettsstat"
+    },
+    {
+     "kode": "KM11621",
+     "tekst": "utforske og bruke ulike rettskjelder for å løyse juridiske problemstillingar"
+    },
+    {
+     "kode": "KM11622",
+     "tekst": "identifisere partar, krav, rettsleg grunnlag og juridisk problemstilling, og gjennomføre juridisk drøfting for å komme fram til ein konklusjon"
+    },
+    {
+     "kode": "KM11630",
+     "tekst": "utforske og drøfte dagsaktuelle juridiske problemstillingar eller rettsspørsmål"
+    },
+    {
+     "kode": "KM11624",
+     "tekst": "utforske demokratiet si stilling i Noreg og Sápmi/Sábme/Sáepmie, og gjere greie for grunnleggjande menneskerettar som varetek dette"
+    },
+    {
+     "kode": "KM11623",
+     "tekst": "utforske rettsforholdet mellom individ og offentleg forvaltning og bruke sentrale reglar om saksbehandling"
+    },
+    {
+     "kode": "KM11625",
+     "tekst": "bruke sentrale reglar om personvern og utforske juridiske problemstillingar som oppstår i samband med bruk av informasjons- og kommunikasjonsteknologi"
+    },
+    {
+     "kode": "KM11626",
+     "tekst": "bruke grunnleggjande vilkår til å vurdere spørsmål om erstatning"
+    },
+    {
+     "kode": "KM11627",
+     "tekst": "utforske reaksjonssystemet og bruke straffleggingsvilkåra til å vurdere straff etter rettsreglar om seksuallovbrot, valdslovbrot og vinningslovbrot"
+    },
+    {
+     "kode": "KM11628",
+     "tekst": "utforske og drøfte dagsaktuelle juridiske rettsspørsmål som gjeld varetaking av miljøet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i rettslære 2. Elevane viser og utviklar kompetanse i faget når dei bruker rettsreglane i samfunnet og juridisk metode til å løyse juridiske problemstillingar. Elevane viser og utviklar kompetanse gjennom innsikt i og forståing av ulike rettslege forhold og kva juridisk refleksjon inneber i eit demokratisk samfunn.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte munnlege, skriftlege og digitale måtar å tileigne seg og vise kompetanse i faget på, og gjennom å motivere elevane til å utforske og være aktivt kunnskapssøkjande. Læraren skal vere i dialog med elevane om utviklinga deira i rettslære 2, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i rettslære 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i rettslære 2 etter avslutninga av opplæringa. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i rettslære 2 basert på kompetansen eleven har vist gjennom bruk og forståing av juridisk metode, rettsreglane i samfunnet og juridisk refleksjon."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Rettslære 1: Eleven skal ha éin standpunktkarakter.\nRettslære 2: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Rettslære 1: Eleven kan trekkjast ut til ein munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.\nRettslære 2: Eleven kan trekkjast ut til ein skriftleg eksamen eller ein munnleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Munnleg eksamen blir utarbeidd og sensurert lokalt. Munnleg eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Rettslære 1: Privatisten skal opp til ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nRettslære 2: Privatisten skal opp til ein skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,216 @@
+{
+ "kode": "KDA01-02",
+ "tittel": "Læreplan i kunst og visuelle verkemiddel",
+ "spraak": "nno",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV269",
+   "tittel": "Kompetansemål og vurdering kunst og visuelle verkemiddel 1",
+   "fag": [
+    "KDA1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2871",
+     "tekst": "utvikle idéar ved å bruke skapande og utforskande metodar"
+    },
+    {
+     "kode": "KM2898",
+     "tekst": "gjennomføre, dokumentere og presentere ein prosess frå ide til ferdig arbeid"
+    },
+    {
+     "kode": "KM2897",
+     "tekst": "utforske bruk av visuelle verkemiddel og vurdere uttrykk, verknadar og meining i eigne arbeid"
+    },
+    {
+     "kode": "KM2896",
+     "tekst": "kjenne til grunnleggjande form- og fargeteori og bruke det i to- og tredimensjonale uttrykk"
+    },
+    {
+     "kode": "KM2895",
+     "tekst": "teikne perspektiv og oppnå illusjon av rom ved bruk av ulike prinsipp og metodar"
+    },
+    {
+     "kode": "KM2893",
+     "tekst": "bruke ulike teikneteknikkar i førestillings- og observasjonsteikning og eksperimentere med forenkling og abstrahering"
+    },
+    {
+     "kode": "KM2894",
+     "tekst": "bruke varierte analoge og digitale verktøy, teknikkar og programvare i eigne arbeid"
+    },
+    {
+     "kode": "KM2892",
+     "tekst": "bruke verktøy, utstyr og materiale i tråd med gjeldande retningslinjer for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM2891",
+     "tekst": "vurdere og skildre eit mangfald av samfunnsaktuelle tema og kunstuttrykk"
+    },
+    {
+     "kode": "KM2890",
+     "tekst": "gjere greie for særtrekk i vestleg kunst fram til 1600-talet og hente inspirasjon til eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal medverke til å fremje læring og til å utvikle kompetanse i kunst og visuelle verkemiddel 1. Elevane viser og utviklar kompetanse i faget når dei gjennom skapande, praktiske prosessar utviklar og formidlar eigne to- og tredimensjonale uttrykk. Dei viser og utviklar også kompetanse når dei bruker fagspråk, presenterer og vurderer ulike kunst, medium og visuelle uttrykk. Elevane viser og utviklar kompetanse når dei arbeider med uttrykk, meining, materiale og teknikk i skapande arbeid. Vidare viser og utviklar elevane kompetanse når dei hentar inspirasjon frå historiske, kulturelle og samfunnsaktuelle referansar.",
+    "Læraren skal legge til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte oppgåver som fremmer kreativitet, individuelt særpreg og skaparglede. Læraren skal være i dialog med elevane om deira utvikling i kunst og visuelle verkemiddel 1, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å sette ord på kva dei opplever at dei får til, og reflektere over eigen fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innan eit ulike oppgåver relatert til kunstfeltet og bruk av visuelle verkemiddel."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter kunst og visuelle verkemiddel 1. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kunst og visuelle verkemiddel 1 basert på kompetansen eleven har vist gjennom praktisk skapande arbeid med materiale og visuelle verkemiddel, og gjennom vurdering av uttrykk og bodskap."
+   ]
+  },
+  {
+   "kode": "KV270",
+   "tittel": "Kompetansemål og vurdering kunst og visuelle verkemiddel 2",
+   "fag": [
+    "KDA1Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2889",
+     "tekst": "gjennomføre og dokumentere ein kunstnarisk prosess og grunngje eigne tankar, idear og val"
+    },
+    {
+     "kode": "KM2888",
+     "tekst": "bruke stilisering, utsnitt, positive og negative former og utvikle sine eigne digitale komposisjonar"
+    },
+    {
+     "kode": "KM2887",
+     "tekst": "bruke kunnskap om form, proporsjonar og uttrykk i teikning av objekt og menneskekroppen"
+    },
+    {
+     "kode": "KM2886",
+     "tekst": "bruke ulike teknikkar i arbeid med harde, plastiske og mjuke materiale og vurdere kvalitet i sitt eige arbeid"
+    },
+    {
+     "kode": "KM2885",
+     "tekst": "reflektere over og vurdere haldbarheit, kvalitet og konsekvensar for miljøet i val og bruk av materiale, reiskapar og teknikkar"
+    },
+    {
+     "kode": "KM2880",
+     "tekst": "bruke kunnskap om visuelle verkemiddel for å synleggjere innhald og vurdere ein verknad eller tyding i digitalt og analogt arbeid"
+    },
+    {
+     "kode": "KM2884",
+     "tekst": "kjenne til grunnleggjande kommunikasjonsteori og gjere greie for samanheng mellom avsendar, bodskap og betraktar"
+    },
+    {
+     "kode": "KM2883",
+     "tekst": "prøve ut ulike måtar å presentere og stille ut kunstnariske arbeid på, åleine og saman med andre"
+    },
+    {
+     "kode": "KM2882",
+     "tekst": "utforske kunstverk frå samiske kunstnarar og drøfte korleis samisk identitet kjem til uttrykk i verka"
+    },
+    {
+     "kode": "KM2881",
+     "tekst": "gjere greie for ulike epokar, sentrale kunstverk og kunstnarar frå 1600- til 1900-talet som referanse i sitt eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i kunst og visuelle verkemiddel 2. Elevane viser og utviklar kompetanse i faget når dei gjennom skapande, praktiske prosesser utviklar og formidlar visuelle uttrykk. Dei viser og utviklar også kompetanse når dei bruker fagspråk, presenterer, reflekterer over, vurderer og utforskar uttrykk, meining, teknikkar og materiale. Elevane viser og utviklar kompetanse når dei arbeider med og ser samanhengen mellom innhald, uttrykk og kontekst i kunst, medium og visuelle uttrykk. Vidare viser og utviklar elevane kompetanse når dei viser til historiske, kulturelle og samfunnsaktuelle referansar i eige arbeid og ved bruk av visuelle verkemiddel.",
+    "Læraren skal legge til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte, oppgåver som fremmer kreativitet, individuelt særpreg og skaparglede. Læraren skal være i dialog med elevane om deira utvikling i kunst og visuelle verkemiddel, og elevane skal få moglegheit til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få moglegheit til å setje ord på kva dei opplever at dei får til, og reflektere over eigen fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innan eit spekter av oppgåver relatert til kunstfeltet og bruk av visuelle verkemiddel."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter kunst og visuelle verkemiddel 2. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kunst og visuelle verkemiddel 2 basert på kompetansen eleven har vist gjennom praktisk skapande arbeid med innhald, materiale og visuelle verkemiddel, og gjennom vurdering av uttrykk, verknad og bodskap."
+   ]
+  },
+  {
+   "kode": "KV271",
+   "tittel": "Kompetansemål og vurdering kunst og visuelle verkemiddel 3",
+   "fag": [
+    "KDA1Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2879",
+     "tekst": "gjennomføre, dokumentere og presentere ein skapande prosess og vurdere vala frå idé til ferdig arbeid"
+    },
+    {
+     "kode": "KM2878",
+     "tekst": "kombinere tekst og bilete for å synleggjere ein bodskap og gje uttrykk for kjensle eller meining i eige skapande arbeid"
+    },
+    {
+     "kode": "KM2877",
+     "tekst": "analysere innhald, kontekst og uttrykk i kunst, medium og visuelle uttrykk, og presentere og formidle eigne og andre sitt arbeid"
+    },
+    {
+     "kode": "KM2876",
+     "tekst": "undersøkje og ta i bruk alternative stader for produksjon og visning av kunst og vurdere kva konteksten har å seie"
+    },
+    {
+     "kode": "KM2875",
+     "tekst": "bruke teikning for å kommunisere haldningar, tankar og idear, og utforske teikning som sjølvstendig kunstform på analoge og digitale flater"
+    },
+    {
+     "kode": "KM2874",
+     "tekst": "bruke forenkling og abstraksjon av form i arbeid med to- og tredimensjonale uttrykk"
+    },
+    {
+     "kode": "KM2873",
+     "tekst": "eksperimentere med gjenbruk av materiale i skapande arbeid og reflektere over kvalitet og miljøbevisst ressursbruk"
+    },
+    {
+     "kode": "KM2872",
+     "tekst": "reflektere over og vurdere estetiske og etiske problemstillingar knytte til visuelle uttrykk, og følgje reglar for publisering og opphavsrett"
+    },
+    {
+     "kode": "KM2899",
+     "tekst": "gjere greie for bilet- og formuttrykk i si eiga samtid, og utforske og vise korleis samfunnsaktuelle tema og verdiar blir opplevde, belyste og kommenterte"
+    },
+    {
+     "kode": "KM2900",
+     "tekst": "gjere greie for sentrale stilartar, kunstnarar, verk og medium frå 1900-talet og samtida som referanse i sitt eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i kunst og visuelle verkemiddel 3. Elevane viser og utviklar kompetanse i faget når de gjennom skapande, praktiske prosessar utviklar og formidlar visuelle uttrykk. Dei viser og utviklar også kompetanse når dei brukar fagspråk, presenterer, reflekterer over og vurderer kunst, medium og visuelle uttrykk. Elevane viser og utviklar kompetanse når dei arbeider med og utforskar samanhengen mellom uttrykk, meining, materiale og teknikk i eige skapande arbeid. Vidare viser og utviklar elevane kompetanse når dei tar i bruk historiske, kulturelle og samfunnsaktuelle referansar i eige arbeid og bruker visuelle verkemiddel på ein hensiktsmessig måte.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte oppgåver som fremmer kreativitet, individuelt særpreg og skaparglede. Læraren skal være i dialog med elevane om utviklinga deira i kunst og visuelle verkemiddel, og elevane skal få moglegheit til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få moglegheit til å setje ord på kva dei opplever at dei får til, og reflektere over eigen fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innan eit bredt spekter av oppgåver relatert til kunst, medium og visuelle uttrykk og bruk av visuelle verkemiddel."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samla kompetansen eleven har i kunst og visuelle verkemiddel ved avslutninga av opplæringa etter kunst og visuelle verkemiddel 3. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking. Læraren skal setje karakter i kunst og visuelle verkemiddel basert på kompetansen eleven har vist gjennom varierte praktiske, skapande prosessar.",
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter kunst og visuelle verkemiddel 3. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i kunst og visuelle verkemiddel 3 basert på kompetansen eleven har vist gjennom praktisk skapande arbeid med innhald, materiale og visuelle verkemiddel, og gjennom vurdering av uttrykk bodskap og kontekst."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Kunst og visuelle verkemiddel 1: Eleven skal ha éin standpunktkarakter.",
+    "Kunst og visuelle verkemiddel 2: Eleven skal ha éin standpunktkarakter.",
+    "Kunst og visuelle verkemiddel 3: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Kunst og visuelle verkemiddel 1: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.",
+    "Kunst og visuelle verkemiddel 2: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.",
+    "Kunst og visuelle verkemiddel 3: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Kunst og visuelle verkemiddel 1: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kunst og visuelle verkemiddel 2: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kunst og visuelle verkemiddel 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

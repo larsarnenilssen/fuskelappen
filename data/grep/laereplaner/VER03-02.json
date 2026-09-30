@@ -1,0 +1,132 @@
+{
+ "kode": "VER03-02",
+ "tittel": "Læreplan i vg3 verktøymakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV713",
+   "tittel": "Kompetansemål og vurdering vg3 verktøymakerfaget",
+   "fag": [
+    "VER3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9270",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere arbeid i tråd med arbeidsoppgaver, dokumentasjon, tegninger og regelverk"
+    },
+    {
+     "kode": "KM9291",
+     "tekst": "velge og bruke sikkerhets- og verneutstyr tilpasset arbeidsoppgaven"
+    },
+    {
+     "kode": "KM9290",
+     "tekst": "velge og bruke materialer og framstillingsmetoder i tråd med dokumentasjon, verktøytegninger og hensyn til miljøkrav"
+    },
+    {
+     "kode": "KM9289",
+     "tekst": "utføre varmebehandling av materialer og gjøre rede for hvordan varmebehandlingen kan påvirke materialets form og egenskaper"
+    },
+    {
+     "kode": "KM9288",
+     "tekst": "gjøre rede for bruksområdene til og anvende spenningsglødning, herding, nitrering, sveising og overflatebehandling"
+    },
+    {
+     "kode": "KM9287",
+     "tekst": "bruke herdeovn og finne og stille inn herdetemperatur, holdetid og anløpingstemperatur"
+    },
+    {
+     "kode": "KM9286",
+     "tekst": "tolke verktøytegninger og anvende oppspennings- og opprettingsmetoder i tråd med verktøytegninger"
+    },
+    {
+     "kode": "KM9285",
+     "tekst": "bruke skjæreverktøy og vurdere kvaliteten på verktøyet"
+    },
+    {
+     "kode": "KM9284",
+     "tekst": "bruke manuelle verktøymaskiner for bearbeiding av materialer"
+    },
+    {
+     "kode": "KM9283",
+     "tekst": "programmere og bruke CNC-maskiner i tråd med tegninger og arbeidsoppgaver"
+    },
+    {
+     "kode": "KM9282",
+     "tekst": "gjøre rede for senkerosjon, trådskjæring og bruk av elektroder for erodering"
+    },
+    {
+     "kode": "KM9281",
+     "tekst": "kontrollere og funksjonsteste ferdige komponenter i henhold til krav til kvalitet og spesifikasjoner"
+    },
+    {
+     "kode": "KM9280",
+     "tekst": "planlegge og gjennomføre daglig og periodisk vedlikehold på maskiner og utstyr"
+    },
+    {
+     "kode": "KM9279",
+     "tekst": "montere og demontere produksjonsverktøy"
+    },
+    {
+     "kode": "KM9278",
+     "tekst": "gjennomføre ordrer med komponenter i tråd med instruksjoner fra leverandører og verktøykonstruktører"
+    },
+    {
+     "kode": "KM9277",
+     "tekst": "feilsøke og vedlikeholde produksjonsverktøy"
+    },
+    {
+     "kode": "KM9276",
+     "tekst": "tilpasse maskindeler og komponenter etter prøvekjøring i tråd med spesifikasjoner"
+    },
+    {
+     "kode": "KM9275",
+     "tekst": "vurdere og begrunne utført arbeid i tråd med krav til effektivitet, lønnsomhet og materialbruk"
+    },
+    {
+     "kode": "KM9274",
+     "tekst": "bruke toleranser, standarder, spesifikasjoner og applikasjoner for skjæredata innenfor sponfraskillende bearbeiding"
+    },
+    {
+     "kode": "KM9273",
+     "tekst": "beskrive bransjens kvalitetsstandarder og hovedtrekkene i bedriftens kvalitetssystem og vurdere utført arbeid opp mot disse"
+    },
+    {
+     "kode": "KM9272",
+     "tekst": "registrere avvik og utføre avviksbehandling i tråd med bedriftens kvalitetssystem"
+    },
+    {
+     "kode": "KM9271",
+     "tekst": "bruke produkt- og sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM9292",
+     "tekst": "behandle opplysninger fra kunder og oppdragsgivere i tråd med fagetiske normer"
+    },
+    {
+     "kode": "KM9293",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 verktøymakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 verktøymakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 verktøymakerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst ti virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,540 @@
+{
+ "kode": "MAT08-01",
+ "tittel": "Læreplan i matematikk fellesfag vg1 praktisk (matematikk P)",
+ "spraak": "nno",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV31",
+   "tittel": "Kompetansemål og vurdering matematikk 1P",
+   "fag": [
+    "MAT8Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM325",
+     "tekst": "lese, hente ut og vurdere matematikk i tekstar om situasjonar frå lokalmiljøet, gjere berekningar knytte til dette og presentere og argumentere for resultata"
+    },
+    {
+     "kode": "KM328",
+     "tekst": "utforske korleis ulike premissar vil kunne påverke korleis matematiske problem frå samfunnsliv og arbeidsliv blir løyste"
+    },
+    {
+     "kode": "KM330",
+     "tekst": "modellere situasjonar knytte til tema frå samfunnsliv og arbeidsliv, presentere og argumentere for resultata og for når modellane er gyldige"
+    },
+    {
+     "kode": "KM329",
+     "tekst": "identifisere variable storleikar i ulike situasjonar og bruke dei til utforsking og generalisering"
+    },
+    {
+     "kode": "KM335",
+     "tekst": "tolke og bruke formlar som gjeld samfunnsliv og arbeidsliv"
+    },
+    {
+     "kode": "KM324",
+     "tekst": "bruke prosent, prosentpoeng, promille og vekstfaktor i utrekningar og presentere og grunngi løysingar"
+    },
+    {
+     "kode": "KM323",
+     "tekst": "utforske, beskrive og bruke omgrepa proporsjonalitet og omvend proporsjonalitet"
+    },
+    {
+     "kode": "KM326",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM322",
+     "tekst": "tolke og bruke funksjonar i matematisk modellering og problemløysing"
+    },
+    {
+     "kode": "KM321",
+     "tekst": "planleggje, utføre og presentere sjølvstendig arbeid knytt til modellering og funksjonar innanfor samfunnsfaglege tema"
+    },
+    {
+     "kode": "KM372",
+     "tekst": "bruke digitale verktøy i utforsking og problemløysing knytt til eigenskapar ved funksjonar, og diskutere løysingane"
+    },
+    {
+     "kode": "KM373",
+     "tekst": "tolke og rekne med rotuttrykk, potensar og tal på standardform"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å lage og utforske matematiske modellar, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i programmering og strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV32",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for bygg- og anleggsteknikk",
+   "fag": [
+    "MAT8Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM302",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM352",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM351",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM349",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM350",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til bygg- og anleggsteknikk, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM348",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar, målestokk og trigonometri til å berekne lengder, vinklar og areal i problemløysing innanfor bygg- og anleggsfag"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for bygg- og anleggsteknikk. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for bygg- og anleggsteknikk. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV28",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for elektro og datateknologi",
+   "fag": [
+    "MAT8Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM341",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM340",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM339",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM355",
+     "tekst": "bruke ulike strategiar for å løyse likningar"
+    },
+    {
+     "kode": "KM345",
+     "tekst": "gjere greie for definisjonane av sinus, cosinus og tangens, tolke definisjonane grafisk og knyte dei til døme frå elektro og datateknologi"
+    },
+    {
+     "kode": "KM354",
+     "tekst": "bruke trigonometri til å rekne ut lengder, vinklar og areal i trekantar i problemløysing innanfor elektro og datateknologi"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for elektro og datateknologi. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for elektro og datateknologi. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV30",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for frisør, blomster, interiør og eksponeringsdesign",
+   "fag": [
+    "MAT8Z05"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM356",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM371",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM370",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM368",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM369",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til frisør, blomster, interiør og eksponeringsdesign, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM367",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar og rekne ut lengder, vinklar, areal, volum, forhold og målestokk i problemløysing innanfor frisør, blomster, interiør og eksponeringsdesign"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for frisør, blomster, interiør og eksponeringsdesign. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for frisør, blomster, interiør og eksponeringsdesign. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV34",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for handverk, design og produktutvikling",
+   "fag": [
+    "MAT8Z03"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM347",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM353",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM346",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM343",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM344",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til handverk, design og produktutvikling, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM342",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar, rekne ut lengder, vinklar, areal, volum, forhold og målestokk i problemløysing innanfor handverk, design og produktutvikling"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for handverk, design og produktutvikling. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for handverk, design og produktutvikling. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV29",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for helse- og oppvekstfag",
+   "fag": [
+    "MAT8Z06"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM366",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM365",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM364",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM362",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM363",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til helse- og oppvekstfag, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM361",
+     "tekst": "gjere berekningar knytte til velferdsteknologi som har med økonomi å gjere"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for helse- og oppvekstfag. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for helse- og oppvekstfag. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV33",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for informasjonsteknologi og medieproduksjon",
+   "fag": [
+    "MAT8Z07"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM360",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM359",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM358",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM338",
+     "tekst": "innhente data og behandle store datasett, gjere berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM357",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til informasjonsteknologi og medieproduksjon, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM337",
+     "tekst": "utforske og bruke geometriske former og forhold og bruke det i design og produktutvikling"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for informasjonsteknologi og medieproduksjon. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for informasjonsteknologi og medieproduksjon. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV27",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for naturbruk",
+   "fag": [
+    "MAT8Z08"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM336",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM318",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM316",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM314",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM315",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til naturbruk, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM313",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar og rekne ut lengder, vinklar, areal, volum, forhold og målestokk i problemløysing innanfor naturbruk"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for naturbruk. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for naturbruk. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV26",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for restaurant- og matfag",
+   "fag": [
+    "MAT8Z09"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM312",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM311",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM317",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM308",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM310",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til restaurant- og matfag, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM307",
+     "tekst": "tolke og rekne med nærings- og energiinnhald, og rekne om mellom ulike samansette einingar knytte til restaurant- og matfag"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for restaurant- og matfag. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for restaurant- og matfag. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV25",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for sal, service og reiseliv",
+   "fag": [
+    "MAT8Z10"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM306",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM305",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM304",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM309",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM303",
+     "tekst": "lese, bruke og lage rekneark i arbeidet med budsjett, anbod og kostnadsberekning knytt til sal, service og reiseliv, og vurdere korleis ulike faktorar påverkar resultatet"
+    },
+    {
+     "kode": "KM319",
+     "tekst": "tolke og gjere berekningar med statistisk datamateriale som er relevant innanfor sal, service og reiseliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for sal, service og reiseliv. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for sal, service og reiseliv. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  },
+  {
+   "kode": "KV24",
+   "tittel": "Kompetansemål og vurdering matematikk 1P-Y for teknologi- og industrifag",
+   "fag": [
+    "MAT8Z11"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM327",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM320",
+     "tekst": "tolke og bruke formlar som gjeld daglegliv og yrkesliv"
+    },
+    {
+     "kode": "KM334",
+     "tekst": "tolke og bruke samansette måleiningar i praktiske samanhengar og velje eigna måleining"
+    },
+    {
+     "kode": "KM332",
+     "tekst": "innhente data frå praksisfeltet, gjere overslag og berekningar og lage formålstenlege framstillingar av resultata og presentere desse"
+    },
+    {
+     "kode": "KM333",
+     "tekst": "gjere berekningar og vurderingar knytte til måleusikkerheit og toleranse"
+    },
+    {
+     "kode": "KM331",
+     "tekst": "utforske og bruke eigenskapane ved geometriske figurar og rekne ut lengder, vinklar, areal, volum, forhold og målestokk i problemløysing innanfor teknologi- og industrifag"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1P-Y for teknologi- og industrifag. Elevane viser og utviklar kompetanse i faget når dei bruker matematiske omgrep i kommunikasjon, og når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til arbeidslivet og samfunnet. Elevane viser og utviklar òg kompetanse ved å utforske matematiske omgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1P-Y for teknologi- og industrifag. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk 1P: Eleven skal ha éin standpunktkarakter.",
+    "Matematikk 1P-Y: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Matematikk 1P: Eleven kan trekkjast ut til skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Eleven kan óg trekkjast ut til munnleg-praktisk eksamen med førebuingsdel. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt.",
+    "Matematikk 1P-Y: Eleven kan trekkjast ut til skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Eleven kan óg trekkjast ut til munnleg-praktisk eksamen med førebuingsdel. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Matematikk 1P: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt.",
+    "Matematikk 1P-Y: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

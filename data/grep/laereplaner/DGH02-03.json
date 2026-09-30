@@ -1,0 +1,136 @@
+{
+ "kode": "DGH02-03",
+ "tittel": "Læreplan i vg2 gull- og sølvsmedhåndverk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV395",
+   "tittel": "Kompetansemål og vurdering gull- og sølvsmedhåndverk",
+   "fag": [
+    "DGH2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4180",
+     "tekst": "utforske teknikker i arbeid med metaller ved å sage, file, lodde og smi, og reflektere over egen arbeidsprosess"
+    },
+    {
+     "kode": "KM4181",
+     "tekst": "planlegge, gjennomføre og presentere utprøvinger av teknikker innenfor sølvsmed-, filigrans- og gullsmedarbeid"
+    },
+    {
+     "kode": "KM4182",
+     "tekst": "vurdere gjenbruk av produkter og materialer og gjøre rede for ressursforvaltning og bærekraft i eget arbeid"
+    },
+    {
+     "kode": "KM4183",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4184",
+     "tekst": "lage, tilpasse, bruke og vedlikeholde maskiner, eget verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4185",
+     "tekst": "vurdere, velge og bruke forskjellige materialer og formelementer for å skape varierte uttrykk"
+    },
+    {
+     "kode": "KM4186",
+     "tekst": "vurdere, dokumentere og utføre trygg bruk og avfallshåndtering av kjemikaler og materialer"
+    },
+    {
+     "kode": "KM4187",
+     "tekst": "gjøre rede for trygg bruk av sikkerhetsdatablader og gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4188",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget gull- og sølvsmedhåndverk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget gull- og sølvsmedhåndverk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget gull- og sølvsmedhåndverk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget gull- og sølvsmedhåndverk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV396",
+   "tittel": "Kompetansemål og vurdering design og produktutvikling",
+   "fag": [
+    "DGH2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4190",
+     "tekst": "utforske ulike materialers egenskaper og bruksområder og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM4189",
+     "tekst": "beskrive og dokumentere produksjonsmetode fra idé til ferdig produkt, etter bestilling fra kunde og i eget arbeid"
+    },
+    {
+     "kode": "KM4191",
+     "tekst": "utarbeide og bruke tegninger og annen visuell informasjon for å presentere eget design"
+    },
+    {
+     "kode": "KM4192",
+     "tekst": "gjøre rede for dagens trender og tidligere epokers produkter og bruke kunnskap om dette i eget arbeid med sølvsmed-, filigrans- og gullsmedhåndverk"
+    },
+    {
+     "kode": "KM4194",
+     "tekst": "bruke fagterminologi og presentere og markedsføre egne produkter og tjenester med kunder, leverandører og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM4193",
+     "tekst": "bruke kildehenvisning og vurdere kildebruk med tanke på opphavsrettigheter i eget arbeid"
+    },
+    {
+     "kode": "KM4195",
+     "tekst": "gjøre rede for gull- og sølvsmedhåndverkstradisjoner i ulike kulturer og bruke denne kunnskapen i eget arbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget design og produktutvikling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget design og produktutvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget design og produktutvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget design og produktutvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Gull- og sølvsmedhåndverk: Eleven skal ha én standpunktkarakter.",
+    "Design og produktutvikling: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Gull- og sølvsmedhåndverk og design og produktutvikling: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt.Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Gull- og sølvsmedhåndverk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Design og produktutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Gull- og sølvsmedhåndverk og design og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "kode": "NOK02-04",
+ "tittel": "Læreplan i næringslivsøkonomi",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1002",
+   "tittel": "Kompetansemål og vurdering økonomistyring",
+   "fag": [
+    "NOK2Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12998",
+     "tekst": "velge og bruke økonomiske modeller til å bearbeide og beregne økonomiske størrelser"
+    },
+    {
+     "kode": "KM12988",
+     "tekst": "utforske og presentere dagsaktuelle næringslivsøkonomiske temaer eller problemstillinger"
+    },
+    {
+     "kode": "KM12989",
+     "tekst": "vurdere og velge selskapsform ut fra ansvar og risiko"
+    },
+    {
+     "kode": "KM12996",
+     "tekst": "gjøre rede for regnskapsførerens autorisasjonsplikt, krav til revisor og revisors rolle"
+    },
+    {
+     "kode": "KM12990",
+     "tekst": "føre sentrale bilag, foreta og registrere årsoppgjørsdisposisjoner, avslutte regnskapet for et enkeltpersonforetak og presentere regnskapet i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM12991",
+     "tekst": "vurdere hvordan endringer i regnskapsposter påvirker resultat og balanse"
+    },
+    {
+     "kode": "KM12992",
+     "tekst": "gjennomføre regnskapsanalyse og vurdere og sammenligne lønnsomhet, likviditet og finansiering med tidligere år og med virksomheter i samme bransje"
+    },
+    {
+     "kode": "KM12999",
+     "tekst": "vurdere ulike metoder for priskalkulasjon i handelsbedrifter og fastsette pris på produkt"
+    },
+    {
+     "kode": "KM12993",
+     "tekst": "gjøre rede for formålet med budsjettering og utarbeide og vurdere resultatbudsjett og enkelt likviditetsbudsjett"
+    },
+    {
+     "kode": "KM12997",
+     "tekst": "gjennomføre budsjettkontroll og analysere avvik med betydning for virksomheten"
+    },
+    {
+     "kode": "KM12994",
+     "tekst": "utforske og reflektere over hvordan ny teknologi og automatisering kan bidra til innovasjon og nye forretningsmodeller som er bærekraftige"
+    },
+    {
+     "kode": "KM12995",
+     "tekst": "gjøre rede for virksomheters interessegrupper og samfunnsansvar og reflektere over virksomheters rolle i samfunnet lokalt og globalt"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i økonomistyring. Elevene viser og utvikler kompetanse i faget når de finner, behandler og beregner økonomiske tallstørrelser. Elevene viser og utvikler også kompetanse når de bruker økonomiske modeller og gjør økonomiske vurderinger. Videre viser og utvikler elevene kompetanse når de reflekterer over virksomheters rolle og ansvar i samfunnet, og utforsker nye forretningsmodeller.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske økonomiske forhold og arbeide med faglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i økonomistyring, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i økonomistyring."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i økonomistyring etter avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i økonomistyring basert på kompetansen eleven har vist gjennom innsikt i og forståelse av økonomisk virksomhet, økonomisk analyse og bærekraftig verdiskaping."
+   ]
+  },
+  {
+   "kode": "KV1003",
+   "tittel": "Kompetansemål og vurdering økonomi og ledelse",
+   "fag": [
+    "NOK2Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM13008",
+     "tekst": "velge og bruke økonomiske modeller til å bearbeide og beregne økonomiske størrelser"
+    },
+    {
+     "kode": "KM13000",
+     "tekst": "utforske og presentere dagsaktuelle næringslivsøkonomiske temaer eller problemstillinger"
+    },
+    {
+     "kode": "KM13001",
+     "tekst": "gjennomføre kostnads-, resultat- og volumanalyser og vurdere lønnsomhet og risiko"
+    },
+    {
+     "kode": "KM13002",
+     "tekst": "vurdere konkurransesituasjonen ved ulike markedsformer og analysere valg av produksjonsnivå og prissetting ut fra et bedriftsøkonomisk og bærekraftig perspektiv"
+    },
+    {
+     "kode": "KM13003",
+     "tekst": "vurdere ulike metoder for priskalkulasjon og fastsette pris på produkt"
+    },
+    {
+     "kode": "KM13004",
+     "tekst": "budsjettere og vurdere kapitalbehov og finansiering av investeringsprosjekter"
+    },
+    {
+     "kode": "KM13007",
+     "tekst": "gjennomføre investeringsanalyser og vurdere lønnsomhet og risiko ut fra et bedriftsøkonomisk og bærekraftig perspektiv"
+    },
+    {
+     "kode": "KM13005",
+     "tekst": "vurdere ulike organisasjonsteorier og drøfte hvordan struktur og kultur kan påvirke virksomheters arbeidsmiljø og lønnsomhet"
+    },
+    {
+     "kode": "KM13006",
+     "tekst": "utforske ledelsesteori og ledelse som funksjon, og vurdere hvordan ulike måter å utøve ledelse på kan påvirke arbeidsmiljø, bedriftskultur, effektivitet og bærekraft"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i økonomi og ledelse. Elevene viser og utvikler kompetanse i faget når de finner, behandler og beregner økonomiske tallstørrelser og gjør økonomiske vurderinger. Videre viser og utvikler elevene kompetanse når de viser innsikt i og bruker økonomiske modeller og organisasjons- og ledelsesteori i arbeid med næringslivsøkonomiske temaer, forhold og problemsstillinger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske økonomiske forhold og arbeide med faglige problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i økonomi og ledelse, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i økonomi og ledelse."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i økonomi og ledelse etter avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i økonomi og ledelse basert på kompetansen eleven har vist gjennom innsikt i og forståelse av økonomisk virksomhet, økonomisk analyse og ledelse og bærekraftig verdiskaping."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Økonomistyring: Eleven skal ha én standpunktkarakter\nØkonomi og ledelse: Eleven skal ha én standpunktkarakter"
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Økonomistyring: Eleven kan trekkes ut til en skriftlig eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel.\nØkonomi og ledelse: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Økonomistyring: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt.\nØkonomi og ledelse: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

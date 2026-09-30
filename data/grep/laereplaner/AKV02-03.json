@@ -1,0 +1,190 @@
+{
+ "kode": "AKV02-03",
+ "tittel": "Læreplan i Vg2 akvakultur",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV408",
+   "tittel": "Kompetansemål og vurdering drift og produksjon (197 årstimer)",
+   "fag": [
+    "AKV2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4316",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver i et akvakulturanlegg etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4295",
+     "tekst": "registrere og vurdere miljø- og produksjonsparametere"
+    },
+    {
+     "kode": "KM4315",
+     "tekst": "beregne fôrmengde og anvende ulike fôringsstrategier avhengig av art og utviklingstrinn"
+    },
+    {
+     "kode": "KM4314",
+     "tekst": "renholde og vedlikeholde utstyr som brukes i akvakulturnæringen"
+    },
+    {
+     "kode": "KM4313",
+     "tekst": "kontrollere, sortere og transportere akvakulturorganismer"
+    },
+    {
+     "kode": "KM4312",
+     "tekst": "planlegge og gjennomføre arbeid i akvakulturanlegg i tråd med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4311",
+     "tekst": "utarbeide, tolke og anvende en produksjonsplan"
+    },
+    {
+     "kode": "KM4310",
+     "tekst": "beskrive organiseringen av en akvakulturbedrift og vurdere sammenhenger mellom innsatsfaktorer, eget arbeid og økonomi"
+    },
+    {
+     "kode": "KM4308",
+     "tekst": "beskrive og anvende kvalitetsmål for akvakulturorganismer underveis i produksjonen og på sluttprodukter"
+    },
+    {
+     "kode": "KM4309",
+     "tekst": "beskrive markedet for produkter fra akvakulturproduksjoner og vurdere mulige framtidsutsikter"
+    },
+    {
+     "kode": "KM4307",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget drift og produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget drift og produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget drift og produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget drift og produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV409",
+   "tittel": "Kompetansemål og vurdering biologi og miljø (140 årstimer)",
+   "fag": [
+    "AKV2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4306",
+     "tekst": "vurdere sammenhengen mellom akvakulturarters biologi og ulike driftsformer"
+    },
+    {
+     "kode": "KM4305",
+     "tekst": "gjøre rede for miljøfaktorene i det akvatiske miljøet og vurdere faktorene ut fra artens miljøkrav og toleransegrenser"
+    },
+    {
+     "kode": "KM4304",
+     "tekst": "vurdere atferd, utseende og helsetilstand hos akvakulturorganismer og gjennomføre tiltak i tråd med regelverk for forebyggende helsearbeid og dyrevelferd"
+    },
+    {
+     "kode": "KM4303",
+     "tekst": "beskrive og reflektere over avlsarbeidet for aktuelle akvakulturorganismer"
+    },
+    {
+     "kode": "KM4302",
+     "tekst": "beskrive miljøpåvirkninger fra akvakulturvirksomhet og drøfte hvordan disse kan reduseres"
+    },
+    {
+     "kode": "KM4301",
+     "tekst": "drøfte hvordan akvakulturvirksomhet kan drives i sameksistens med andre interesser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget biologi og miljø når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget biologi og miljø. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget biologi og miljø ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget biologi og miljø basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV410",
+   "tittel": "Kompetansemål og vurdering anlegg og teknikk (140 årstimer)",
+   "fag": [
+    "AKV2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4300",
+     "tekst": "beskrive hvordan aktuelle anleggstyper innenfor akvakultur er bygget opp, og drøfte anleggets funksjonalitet"
+    },
+    {
+     "kode": "KM4299",
+     "tekst": "anvende redskaper og utstyr ut fra situasjon og behov, utstyrets oppbygning og bruksområde"
+    },
+    {
+     "kode": "KM4298",
+     "tekst": "velge materialer etter formål og utføre sammenføyninger"
+    },
+    {
+     "kode": "KM4297",
+     "tekst": "drøfte forebyggende tiltak, vurdere skadebegrensende tiltak ved uhell og følge nødprosedyrer"
+    },
+    {
+     "kode": "KM4296",
+     "tekst": "arbeide om bord i båt på en sikker måte og utvise godt sjømannskap"
+    },
+    {
+     "kode": "KM4317",
+     "tekst": "bruke yrkesrelevant kommunikasjonsutstyr til å kommunisere"
+    },
+    {
+     "kode": "KM4318",
+     "tekst": "utføre stropping, anhuking, rigging og signalføring ved bruk av kran"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget anlegg og teknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget anlegg og teknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget anlegg og teknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget anlegg og teknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Drift og produksjon: Eleven skal ha én standpunktkarakter.",
+    "Biologi og miljø: Eleven skal ha én standpunktkarakter.",
+    "Anlegg og teknikk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Drift og produksjon, biologi og miljø og anlegg og teknikk: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Drift og produksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Biologi og miljø: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Anlegg og teknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Drift og produksjon, biologi og miljø og anlegg og teknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

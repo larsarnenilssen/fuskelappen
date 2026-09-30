@@ -1,0 +1,228 @@
+{
+ "kode": "ELE02-03",
+ "tittel": "Læreplan i vg2 elenergi og ekom",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV461",
+   "tittel": "Kompetansemål og vurdering elenergi og styresystemer",
+   "fag": [
+    "ELE2Z04",
+    "ELE2Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5061",
+     "tekst": "planlegge, gjennomføre, sette i drift, kontrollere og dokumentere yrkesoppgaver i faget elenergi og styresystemer individuelt og i samarbeid med andre ut fra gjeldende regelverk, normer og teknisk underlag og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM5047",
+     "tekst": "risikovurdere yrkesoppgaver i faget elenergi og styresystemer og velge trygge og gode arbeidsmetoder og ergonomiske arbeidsstillinger"
+    },
+    {
+     "kode": "KM5054",
+     "tekst": "utføre arbeidet i faget elenergi og styresystemer i henhold til interne rutiner for elsikkerhet, personsikkerhet og utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM5065",
+     "tekst": "utarbeide og bruke skjemaer og tegninger i målestokk med normerte symboler i utførelsen av yrkesoppgaver og drøfte digitale verktøy som hjelpemiddel i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5057",
+     "tekst": "utføre systematisk feilsøking og utbedre feil på elektriske anlegg og utstyr ved hjelp av egnede instrumenter og teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM5051",
+     "tekst": "utføre reparasjon og vedlikehold av elektrisk verktøy og utstyr og vurdere miljøkonsekvenser og lønnsomhet av reparasjonen"
+    },
+    {
+     "kode": "KM5053",
+     "tekst": "dimensjonere ledning, kabel og vern ut fra overspenning, selektivitet og belastnings-, kortslutnings- og feilstrømmer og velge materiell på grunnlag av ytre påvirkninger og vurdere egnede tiltak for å ivareta sikkerheten ved feil"
+    },
+    {
+     "kode": "KM5063",
+     "tekst": "bruke egnede verktøy, maskiner og materiell i utførelsen av yrkesoppgavene og vedlikeholde og holde orden i eget håndverktøy"
+    },
+    {
+     "kode": "KM5055",
+     "tekst": "velge og bruke egnede materialer og metaller i yrkesoppgaver og begrunne valg ut fra mekaniske, kjemiske og termiske egenskaper"
+    },
+    {
+     "kode": "KM5067",
+     "tekst": "terminere ulike kabeltyper og elektriske forbindelser, skjøte kabel med tverrsnitt som er større enn 10 mm2, og gjøre rede for hvordan man oppnår gode og varige elektriske forbindelser"
+    },
+    {
+     "kode": "KM5066",
+     "tekst": "utføre sluttkontroll av yrkesoppgaver i faget elenergi og styresystemer og vurdere måleresultatet opp mot gjeldende regelverk og beregnede verdier"
+    },
+    {
+     "kode": "KM5052",
+     "tekst": "montere to fordelingsanlegg basert på ulike spenningssystemer med vern og utstyr for måling og overvåking av forbruk og beskrive egenskaper og bruksområder for TN-, IT- og TT-nett"
+    },
+    {
+     "kode": "KM5064",
+     "tekst": "montere brukertilpassede installasjoner med ulike effektuttak, belysnings- og varmeanlegg med tilhørende styringssystemer og vurdere løsninger for energieffektiviserende tiltak"
+    },
+    {
+     "kode": "KM5049",
+     "tekst": "montere og programmere styringssystemer for kontinuerlig regulering og gjøre rede for komponentenes virkemåte og funksjon og sensorenes måleområde og nøyaktighet"
+    },
+    {
+     "kode": "KM5060",
+     "tekst": "montere, programmere og konfigurere styringssystemer for motorer med mulighet for fjernstyring av turtall og dreieretning, foreslå tiltak for å redusere elektromagnetisk støy og gjøre rede for informasjon på motorens merkeskilt og motorens effektivitetsnivå"
+    },
+    {
+     "kode": "KM5059",
+     "tekst": "beregne effektfaktoren i anleggets tilførsel, forklare hvilke belastningstyper som påvirker effektfaktoren, og foreslå tiltak for å kompensere den"
+    },
+    {
+     "kode": "KM5056",
+     "tekst": "montere et mindre anlegg for lokal produksjon og lagring av elektrisk energi med mulighet for nettilkobling og drøfte hvordan dette kan bidra til energibalanse på strømnettet"
+    },
+    {
+     "kode": "KM5050",
+     "tekst": "montere styring av skillebryter og effektbryter med forrigling i fordelingsanlegg, forklare komponentenes og styringens virkemåte og gjøre rede for oppbygning og effektiv drift av et lokalt distribusjonsnett"
+    },
+    {
+     "kode": "KM5048",
+     "tekst": "montere, måle, beregne og vurdere kvaliteten på jordingssystem med jordelektrode, utjevningsforbindelser og beskyttelsesledere i elektriske anlegg, installasjoner og utstyr"
+    },
+    {
+     "kode": "KM5062",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet, og hvordan arbeidslivets lover og avtaler er laget for å ivareta alle ansatte"
+    },
+    {
+     "kode": "KM5031",
+     "tekst": "drøfte forebyggende tiltak for brannsikkerhet i elektriske anlegg"
+    },
+    {
+     "kode": "KM5032",
+     "tekst": "vurdere kvaliteten på utført arbeid og foreslå forbedringer knyttet til estetikk, funksjon og sikkerhet"
+    },
+    {
+     "kode": "KM5033",
+     "tekst": "håndtere avfall etter eget arbeid i henhold til gjeldende regelverk, leverandørenes beskrivelser og gjeldende system for internkontroll og drøfte forskjeller på lineær- og sirkulærøkonomi"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elenergi og styresystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren kan gi arbeidsoppgaver som dekker begge programfagene Læreren og elevene skal være i dialog om elevenes utvikling i elenergi og styresystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elenergi og styresystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elenergi og styresystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere, dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV462",
+   "tittel": "Kompetansemål og vurdering elektronisk kommunikasjon",
+   "fag": [
+    "ELE2Z05",
+    "ELE2Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5034",
+     "tekst": "planlegge, gjennomføre, sette i drift, kontrollere og dokumentere yrkesoppgaver knyttet til faget elektronisk kommunikasjon både individuelt og i samarbeid med andre ut fra gjeldende regelverk, normer og teknisk underlag og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM5045",
+     "tekst": "utføre arbeidet i faget elektronisk kommunikasjon i henhold til interne rutiner for elsikkerhet og personsikkerhet"
+    },
+    {
+     "kode": "KM5035",
+     "tekst": "utføre systematisk feilsøking og utbedre feil i elektroniske kommunikasjonsnett ved hjelp av egnede måleinstrumenter, programvare og teknisk dokumentasjon og vurdere måleresultater opp mot gjeldende regelverk og beregnede verdier"
+    },
+    {
+     "kode": "KM5046",
+     "tekst": "bruke egnede verktøy og materiell i utførelsen av yrkesoppgavene, og funksjonsteste måleinstrumenter og vedlikeholde skjøte- og termineringsverktøy"
+    },
+    {
+     "kode": "KM5040",
+     "tekst": "utføre sluttkontroll av yrkesoppgaver i faget elektronisk kommunikasjon og vurdere måleresultater opp mot gjeldende regelverk og beregnede verdier"
+    },
+    {
+     "kode": "KM5038",
+     "tekst": "montere og konfigurere trådbaserte og trådløse styringssystemer med sensorer for styring av utstyr i elektriske anlegg og installasjoner og vurdere tiltak for å ivareta personvern og datasikkerhet"
+    },
+    {
+     "kode": "KM5037",
+     "tekst": "montere og konfigurere elektroniske systemer for sikring av liv, helse og verdier og vurdere systemenes behov for sekundær strømforsyning"
+    },
+    {
+     "kode": "KM5041",
+     "tekst": "utføre dekningsmålinger, foreslå nødvendig antall og type aksesspunkter i trådløse kommunikasjonsnett og gjøre rede for hvilke forhold som påvirker signalkvaliteten"
+    },
+    {
+     "kode": "KM5043",
+     "tekst": "montere og funksjonsteste elektroniske kommunikasjonsnett for dataoverføring og kringkasting og vurdere nødvendige tiltak for å ivareta signalstyrke, stabilitet og hastighet i forhold til ytre påvirkninger"
+    },
+    {
+     "kode": "KM5036",
+     "tekst": "montere og konfigurere lavspent energiforsyning over elektronisk kommunikasjonsnett og gjøre rede for muligheter og begrensninger ved valgt løsning"
+    },
+    {
+     "kode": "KM5042",
+     "tekst": "utføre terminering og skjøting av optiske og elektriske kabler ved hjelp av egnet verktøy og produsentenes anvisninger og kontrollere at forbindelsen tilfredsstiller gjeldende krav"
+    },
+    {
+     "kode": "KM5039",
+     "tekst": "beskrive rutiner og metoder for sikker datasletting for å unngå at personopplysninger eller andre sensitive data kommer på avveier"
+    },
+    {
+     "kode": "KM5044",
+     "tekst": "håndtere avfall etter eget arbeid på en faglig, miljøvennlig og økonomisk måte, ivareta personvern og slette sensitive data ved avhending av digitalt utstyr"
+    },
+    {
+     "kode": "KM5058",
+     "tekst": "vurdere kvaliteten på eget arbeid med tanke på estetikk og funksjon og foreslå forbedringer"
+    },
+    {
+     "kode": "KM5068",
+     "tekst": "drøfte hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser, og hvordan elektronisk kommunikasjon og elektrisitet kan bidra til velferd i menneskers liv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elektronisk kommunikasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elektronisk kommunikasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elektronisk kommunikasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elektronisk kommunikasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elenergi og styresystemer: Eleven skal ha én standpunktkarakter.",
+    "Elektronisk kommunikasjon: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elenergi og styresystemer og elektronisk kommunikasjon: Elevene skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen skal ha forberedelsesdel. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elenergi og styresystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elektronisk kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elenergi og styresystemer og elektronisk kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  }
+ ]
+}

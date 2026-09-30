@@ -1,0 +1,120 @@
+{
+ "kode": "BUN03-02",
+ "tittel": "Læreplan i vg3 bunadtilverkarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV635",
+   "tittel": "Kompetansemål og vurdering vg3 bunadtilverkarfaget",
+   "fag": [
+    "BUN3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7608",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM7590",
+     "tekst": "analysere lokal og nasjonal bunadtilverkartradisjon og nytte historiske korrekte saumteknikkar i arbeid med bunader, skjorter og ytterplagg"
+    },
+    {
+     "kode": "KM7606",
+     "tekst": "vurdere og utføre reparasjonar og omsaum på bunader"
+    },
+    {
+     "kode": "KM7601",
+     "tekst": "ta mål, tilpasse mønster, prøve inn og tilpasse nye og eldre bunader til kunde"
+    },
+    {
+     "kode": "KM7604",
+     "tekst": "velje og bruke tekstilar i ulike veveteknikkar i tilverking av ein bunad og gjere greie for korleis ulike val kan påverke kvaliteten og haldbarheita til bunaden"
+    },
+    {
+     "kode": "KM7610",
+     "tekst": "anvende teknikkar for handsaum og maskinsaum og gjere greie for kva for teknikk som skal nyttast i den aktuelle bunaden og på tekstilt tilbehøyr"
+    },
+    {
+     "kode": "KM7607",
+     "tekst": "nytte angitt syrettleiing for bunader, bunadsskjorter og tekstilt tilbehøyr"
+    },
+    {
+     "kode": "KM7605",
+     "tekst": "nytte presse- og stiveteknikkar og før- og etterbehandlingsmetodar tilpassa materiale og bruksområde"
+    },
+    {
+     "kode": "KM7603",
+     "tekst": "anvende dei mest utbreidde broderiteknikkane for bunader og bunadsskjorter"
+    },
+    {
+     "kode": "KM7609",
+     "tekst": "gjere greie for grunnprinsippa for rekonstruksjon av folkedrakter og mønsteravtak frå eldre plagg"
+    },
+    {
+     "kode": "KM7599",
+     "tekst": "berekne tid og pris på eigne produkt, og gjere greie for korleis ulike val påverkar tidsbruk og lønnsemd"
+    },
+    {
+     "kode": "KM7600",
+     "tekst": "gjere greie for forskjellen på bunad og folkedrakt, både stilhistorisk og saumteknisk, og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM7596",
+     "tekst": "bruke fagterminologi i kommunikasjon med kundar, kollegaer og andre samarbeidspartnarar knytte til tilverking av bunader"
+    },
+    {
+     "kode": "KM7598",
+     "tekst": "gjere greie for bunadsbruk og korleis bruken i dag tek vare på ein levande tradisjon"
+    },
+    {
+     "kode": "KM7602",
+     "tekst": "rettleie kundar i bruk og vedlikehald av bunad og med tilbehøyr som draktsølv, hovudplagg og fottøy"
+    },
+    {
+     "kode": "KM7594",
+     "tekst": "utforske og bruke faget si historie og eigenart til å formidle og vidareføre tradisjonell kunnskap om bunadtilverking og til å rettleie kundar"
+    },
+    {
+     "kode": "KM7597",
+     "tekst": "anvende og halde ved like maskiner og utstyr og følgje gjeldande regelverk for helse, miljø og sikkerheit i arbeidet på verkstaden"
+    },
+    {
+     "kode": "KM7595",
+     "tekst": "finne og vurdere informasjon for å drøfte faglege spørsmål og problemstillingar og utvise kjeldekritikk"
+    },
+    {
+     "kode": "KM7593",
+     "tekst": "gjere greie for gjeldande lovverk om opphavsrett og marknadsføring og følgje dette i eige arbeid"
+    },
+    {
+     "kode": "KM7592",
+     "tekst": "bruke formålstenlege arbeidsstillingar og gjere greie for gode arbeidsrutinar i ein produksjon"
+    },
+    {
+     "kode": "KM7591",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 bunadtilverkarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 bunadtilverkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget"
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 bunadtilverkarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast innanfor ei tidsramme på 8–10 vyrkedagar."
+   ]
+  }
+ ]
+}

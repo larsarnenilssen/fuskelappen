@@ -1,0 +1,176 @@
+{
+ "kode": "PIN02-03",
+ "tittel": "Læreplan i vg2 industriteknologi",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV343",
+   "tittel": "Kompetansemål og vurdering teknologi",
+   "fag": [
+    "PIN2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3626",
+     "tekst": "bruke maskiner og utstyr til å bearbeide aktuelle materialer i tråd med gjeldende helse-, miljø- og sikkerhetsrutiner og sørge for orden og renhold på arbeidsplassen"
+    },
+    {
+     "kode": "KM3604",
+     "tekst": "montere, sette i drift og feilsøke automatiserte hydraulikk- og pneumatikkanlegg etter spesifikasjoner"
+    },
+    {
+     "kode": "KM3612",
+     "tekst": "montere, sette i drift og feilsøke maskiner og utstyr i en produksjonsprosess"
+    },
+    {
+     "kode": "KM3627",
+     "tekst": "bruke og velge målemetode og måleutstyr i samsvar med arbeidsoppgaver og vurdere måleresultater i henhold til toleranser"
+    },
+    {
+     "kode": "KM3625",
+     "tekst": "planlegge og gjennomføre praktiske arbeidsoppgaver i både kjente og ukjente sammenhenger"
+    },
+    {
+     "kode": "KM3624",
+     "tekst": "bruke digitale verktøy til å utarbeide modeller, tegninger, skjemaer, arbeidsbeskrivelser og kvalitetssikringssystemer i planlegging og produksjon"
+    },
+    {
+     "kode": "KM3623",
+     "tekst": "forklare og bruke riktig bearbeidingsmetode ut fra materialer, arbeidstegninger og spesifikasjoner"
+    },
+    {
+     "kode": "KM3622",
+     "tekst": "programmere, simulere og drifte styrte produksjonsmaskiner"
+    },
+    {
+     "kode": "KM3621",
+     "tekst": "forklare og bruke ulike metoder og teknikker for overflatebehandling"
+    },
+    {
+     "kode": "KM3620",
+     "tekst": "anvende sammenføyningsmetoder etter instruksjoner og arbeidsbeskrivelser"
+    },
+    {
+     "kode": "KM3619",
+     "tekst": "håndtere gasser og kjemikalier i henhold til sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM3618",
+     "tekst": "vurdere og beskrive bruksområder, egenskaper og kombinasjoner for aktuelle materialer"
+    },
+    {
+     "kode": "KM3617",
+     "tekst": "utarbeide rapporter og skjemaer knyttet til arbeidsoppgaver og vurdere resultatet av eget arbeid"
+    },
+    {
+     "kode": "KM3616",
+     "tekst": "anvende program for simulering og styring av robot og automasjon"
+    },
+    {
+     "kode": "KM3615",
+     "tekst": "bruke additiv tilvirkning for å løse læringsoppdrag"
+    },
+    {
+     "kode": "KM3614",
+     "tekst": "beskrive og reflektere over betydningen av resirkulering og materialgjenvinning"
+    },
+    {
+     "kode": "KM3613",
+     "tekst": "samarbeide med elever, kunder, leverandører og medarbeidere om arbeidsoppdrag"
+    },
+    {
+     "kode": "KM3611",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i teknologi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i teknologi. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i teknologi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i teknologi basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV344",
+   "tittel": "Kompetansemål og vurdering vedlikehold",
+   "fag": [
+    "PIN2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3610",
+     "tekst": "bruke og reflektere over helse-, miljø- og sikkerhetskrav i rutiner for vedlikehold"
+    },
+    {
+     "kode": "KM3609",
+     "tekst": "utarbeide og følge sikker jobb-analyser ved farlige operasjoner i henhold til gjeldende forskrifter"
+    },
+    {
+     "kode": "KM3608",
+     "tekst": "vedlikeholde, feilsøke og reparere maskiner og utstyr etter spesifikasjoner i samhandling med andre"
+    },
+    {
+     "kode": "KM3607",
+     "tekst": "velge og bruke riktig verktøy og utstyr til vedlikehold og reparasjoner"
+    },
+    {
+     "kode": "KM3606",
+     "tekst": "arbeide på elektriske og automatiserte systemer ved reparasjons- og vedlikeholdsarbeid etter instrukser og gjeldende forskrifter"
+    },
+    {
+     "kode": "KM3605",
+     "tekst": "beskrive hvordan man bruker blandet virkelighet i forbindelse med vedlikehold av maskiner og utstyr, og gjøre rede for hvordan denne teknologien kan bedre kvaliteten, effektiviteten og sikkerheten"
+    },
+    {
+     "kode": "KM3628",
+     "tekst": "gjennomføre forebyggende vedlikehold og sørge for maskinsikkerhet etter en vedlikeholdsplan"
+    },
+    {
+     "kode": "KM3629",
+     "tekst": "beskrive og reflektere over hvordan kostnader, drift og vedlikehold henger sammen med bærekraftig utvikling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i vedlikehold. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i vedlikehold ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i vedlikehold basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teknologi: Eleven skal ha én standpunktkarakter.",
+    "Vedlikehold: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Teknologi og vedlikehold: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Teknologi: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vedlikehold: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Teknologi og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

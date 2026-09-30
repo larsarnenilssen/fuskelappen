@@ -1,0 +1,222 @@
+{
+ "kode": "HUD02-03",
+ "tittel": "Læreplan i vg2 hudpleie",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV363",
+   "tittel": "Kompetansemål og vurdering helsefremmende arbeid",
+   "fag": [
+    "HUD2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3827",
+     "tekst": "gjøre rede for hudens og neglens oppbygning og funksjon"
+    },
+    {
+     "kode": "KM3856",
+     "tekst": "beskrive hårets oppbygning, vekst og funksjon"
+    },
+    {
+     "kode": "KM3855",
+     "tekst": "gjøre rede for ulike hudtyper og hudtilstander og utføre hudpleie"
+    },
+    {
+     "kode": "KM3854",
+     "tekst": "beskrive tiltak som forebygger og forbedrer hudforandringer"
+    },
+    {
+     "kode": "KM3853",
+     "tekst": "gjøre rede for betydningen av god hygiene og gjennomføre tiltak som forebygger sykdom og hindrer smitte"
+    },
+    {
+     "kode": "KM3852",
+     "tekst": "gjøre rede for sammenhenger mellom livsstil, kosthold, fysisk aktivitet og hudhelse"
+    },
+    {
+     "kode": "KM3851",
+     "tekst": "observere og dokumentere kontraindikasjoner ved behandling av hud"
+    },
+    {
+     "kode": "KM3850",
+     "tekst": "gjøre rede for sirkulasjons- og respirasjonssystemets betydning for hudhelsen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i helsefremmende arbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i helsefremmende arbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i helsefremmende arbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i helsefremmende arbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV365",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "HUD2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3834",
+     "tekst": "kommunisere med og vise toleranse overfor kunder, kolleger og samarbeidspartnere"
+    },
+    {
+     "kode": "KM3833",
+     "tekst": "utarbeide og presentere behandlingsplaner og veilede kunder ved behandling og salg"
+    },
+    {
+     "kode": "KM3832",
+     "tekst": "drøfte prinsipper for profesjonell service og utføre slik service i praksis"
+    },
+    {
+     "kode": "KM3831",
+     "tekst": "bruke digitale ressurser i behandlinger og i kommunikasjon med kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM3830",
+     "tekst": "drøfte betydningen av tverrfaglig samarbeid og reflektere over hva relasjonelle ferdigheter betyr i praksis"
+    },
+    {
+     "kode": "KM3829",
+     "tekst": "drøfte hva som kan bidra til å styrke eget og andre menneskers selvbilde"
+    },
+    {
+     "kode": "KM3828",
+     "tekst": "bruke ulike salgsteknikker"
+    },
+    {
+     "kode": "KM3857",
+     "tekst": "vurdere betydningen av samarbeid og anvende dette i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3858",
+     "tekst": "utforske rollen som veileder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV364",
+   "tittel": "Kompetansemål og vurdering yrkesliv i hudpleiefag",
+   "fag": [
+    "HUD2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3847",
+     "tekst": "dokumentere og bruke funn fra hudanalyse ved behandling"
+    },
+    {
+     "kode": "KM3846",
+     "tekst": "planlegge og gjennomføre farging av vipper og bryn og beskrive fargeprosessen"
+    },
+    {
+     "kode": "KM3845",
+     "tekst": "planlegge og gjennomføre hårfjerning i ansikt og på kropp med ulike depileringsteknikker"
+    },
+    {
+     "kode": "KM3844",
+     "tekst": "planlegge og gjennomføre ansiktsbehandling tilpasset kundens hudtype og hudtilstand"
+    },
+    {
+     "kode": "KM3843",
+     "tekst": "utføre grunnleggende massasje for ansikt og nakke og observere og gjøre rede for virkningen"
+    },
+    {
+     "kode": "KM3842",
+     "tekst": "bruke ulike apparater i ansiktsbehandling og gjøre rede for effekten"
+    },
+    {
+     "kode": "KM3841",
+     "tekst": "veilede om hudprodukter og hudbehandlinger"
+    },
+    {
+     "kode": "KM3849",
+     "tekst": "vurdere hva helse, miljø og sikkerhet betyr i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3840",
+     "tekst": "reflektere over og vise hva miljøbevisste og bærekraftige valg innebærer i hudpleiefaget"
+    },
+    {
+     "kode": "KM3839",
+     "tekst": "reflektere over og vise hva det vil si å være en profesjonell hudpleier"
+    },
+    {
+     "kode": "KM3838",
+     "tekst": "bruke fagterminologi i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3837",
+     "tekst": "utføre arbeidet i tråd med yrkesetiske retningslinjer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM3848",
+     "tekst": "bruke ergonomiske prinsipper i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3836",
+     "tekst": "gjøre rede for prinsipper for universell utforming"
+    },
+    {
+     "kode": "KM3835",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i hudpleiefag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i hudpleiefag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i hudpleiefag ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i hudpleiefag basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helsefremmende arbeid: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i hudpleiefag: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Helsefremmende arbeid, kommunikasjon og samhandling og yrkesliv i hudpleiefag: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Helsefremmende arbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i hudpleiefag: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Helsefremmende arbeid, kommunikasjon og samhandling og yrkesliv i hudpleiefag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

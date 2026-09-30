@@ -1,0 +1,120 @@
+{
+ "kode": "GLA03-02",
+ "tittel": "Læreplan i glassfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV338",
+   "tittel": "Kompetansemål og vurdering glassfaget",
+   "fag": [
+    "GLA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM3542",
+     "tekst": "planlegge bearbeiding, konstruksjon og montering av glassprodukter etter tegninger, beskrivelser og preaksepterte løsninger, arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet og reflektere over konsekvensene av å ikke følge kravene"
+    },
+    {
+     "kode": "KM3538",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM3537",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM3546",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM3551",
+     "tekst": "bruke verne- og sikkerhetsutstyr og reflektere over konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM3557",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM3555",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, vurdere muligheter for gjenbruk og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM3539",
+     "tekst": "montere glass med kitt og stift og drøfte hvordan tradisjonelle arbeidsmetodene ivaretar fagets egenart og utvikling"
+    },
+    {
+     "kode": "KM3548",
+     "tekst": "velge verktøy, skjære og bearbeide glass, kartong, tre, plast og metaller og vurdere konsekvenser av feilvalg"
+    },
+    {
+     "kode": "KM3553",
+     "tekst": "kommunisere med andre faggrupper og kunder om arbeidsoppdrag og presentere løsningsforslag i tråd med estetiske krav"
+    },
+    {
+     "kode": "KM3556",
+     "tekst": "bruke fugemasse og lim, forstå hvordan disse virker sammen og vurdere hvordan bindemidlenes egenskaper påvirker de ferdige konstruksjonene"
+    },
+    {
+     "kode": "KM3543",
+     "tekst": "velge, bruke og vedlikeholde maskiner, redskaper og utstyr"
+    },
+    {
+     "kode": "KM3545",
+     "tekst": "diagnostisere, feilsøke og kalibrere digitale og elektriske komponenter og kontrollere ferdig produkt"
+    },
+    {
+     "kode": "KM3554",
+     "tekst": "lage komponenter ved bruk av datamaskinbasert nummeringsstyring"
+    },
+    {
+     "kode": "KM3547",
+     "tekst": "montere og justere lås og beslag"
+    },
+    {
+     "kode": "KM3552",
+     "tekst": "montere glass og tilhørende elementer etter tegninger og beskrivelser og dokumentere arbeidet i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM3550",
+     "tekst": "montere og vedlikeholde systemer for solavskjerming og innsynsskjerming"
+    },
+    {
+     "kode": "KM3544",
+     "tekst": "gjøre rede for funksjonen og virkemåten til smarte glass og vurdere løsninger for fornybar energi der glasset er det bærende elementet"
+    },
+    {
+     "kode": "KM3549",
+     "tekst": "velge glassløsninger ut fra kravspesifikasjoner i henhold til standarder og preaksepterte løsninger og reflektere over hvordan ulike glassløsninger påvirker sikkerhet, energibruk, innemiljø, dagslys, støy og komfort"
+    },
+    {
+     "kode": "KM3541",
+     "tekst": "montere glass i kjøretøy i tråd med spesifikasjoner og dokumentere arbeidet i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM3540",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter og reflektere over krav og forventinger som blir stilt til et likeverdig og inkluderende yrkesfelleskap"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i glassfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i glassfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i glassfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

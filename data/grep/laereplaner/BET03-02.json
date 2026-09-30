@@ -1,0 +1,136 @@
+{
+ "kode": "BET03-02",
+ "tittel": "Læreplan i vg3 betongfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV506",
+   "tittel": "Kompetansemål og vurdering vg3 betongfaget",
+   "fag": [
+    "BET3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5754",
+     "tekst": "planlegge forskaling, armering og støping av nye konstruksjoner og vedlikehold av bygningsmasser, arbeide etter bygningsinformasjonsmodeller, tegninger, beskrivelser og prefabrikkerte løsninger, velge verktøy og materialer og vurdere kostnader, tidsbruk og miljøbelastning ved arbeidet"
+    },
+    {
+     "kode": "KM5732",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, gjennomføre arbeid i tråd med gjeldende krav for helse, miljø og sikkerhet og reflektere over konsekvenser av å ikke følge kravene"
+    },
+    {
+     "kode": "KM5739",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere, drøfte ulike løsninger som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse og iverksette tiltak"
+    },
+    {
+     "kode": "KM5736",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforhold i faget, og gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5738",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5751",
+     "tekst": "gjøre rede for sikkerhetstiltak ved arbeid i høyden, bruke stillaser og sikre risikoutsatte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM5753",
+     "tekst": "følge rutiner for å stroppe og anhuke, og vurdere konsekvenser av brudd på rutiner"
+    },
+    {
+     "kode": "KM5752",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper, drøfte hvordan arbeidsteknikker og arbeidsstillinger kan forebygge helseskader og reflektere over konsekvenser av støy og vibrasjon"
+    },
+    {
+     "kode": "KM5756",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM5733",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, gjenbruke materialer og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM5748",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5749",
+     "tekst": "gjøre rede for riggplan, gjennomføre riggarbeid, sikre byggeplassen og vurdere ulike tiltak som sikrer risikoutsatte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM5747",
+     "tekst": "sette ut mål på bygningskonstruksjoner, kontrollere høyder, akser og mål med manuelt og elektronisk måleutstyr og vurdere konsekvenser av feilmåling"
+    },
+    {
+     "kode": "KM5734",
+     "tekst": "forskale ulike konstruksjoner og bygningsdeler ved bruk av tradisjonell forskaling og systemforskaling"
+    },
+    {
+     "kode": "KM5746",
+     "tekst": "velge forskalingsmetode, forskale bygningdeler og gjøre rede for hvordan valget av metode påvirker kostnadseffektivitet, ressursutnyttelse og produktivitet"
+    },
+    {
+     "kode": "KM5745",
+     "tekst": "montere innstøpingsgods, isolasjonsprodukter og utsparinger i forskalingsform og vurdere konsekvenser av avvik fra geometriske toleransekrav"
+    },
+    {
+     "kode": "KM5755",
+     "tekst": "demontere forskaling, drøfte ulike risikofaktorer i arbeidssituasjonen og iverksette tiltak"
+    },
+    {
+     "kode": "KM5744",
+     "tekst": "armere konstruksjoner og bygningsdeler etter gjeldende beskrivelser for overdekning, forankring og omfaring og gjøre rede for arbeidsprosesser ved bruk av prefabrikkerte og tradisjonelle metoder"
+    },
+    {
+     "kode": "KM5742",
+     "tekst": "anhuke, transportere, lagre og understøtte betongelementer"
+    },
+    {
+     "kode": "KM5741",
+     "tekst": "støpe ulike konstruksjonsdeler og gulv og vurdere konsekvenser av ulike støpetrykk og stigehastigheter for forskalingskonstruksjonen"
+    },
+    {
+     "kode": "KM5740",
+     "tekst": "vurdere hvordan klimatiske forhold påvirker betongen, og velge ulike herdetiltak før og etter støping"
+    },
+    {
+     "kode": "KM5750",
+     "tekst": "kviste, slipe og flikke betongen etter herding i tråd med gjeldende kravspesifikasjoner"
+    },
+    {
+     "kode": "KM5737",
+     "tekst": "gjennomføre mottakskontroll av betong på byggeplass og vurdere betongegenskaper og- kvaliteter"
+    },
+    {
+     "kode": "KM5735",
+     "tekst": "anvende betongteknologi i tråd med gitte klassifikasjoner og spesifikasjoner ut fra hensynet til miljø og bærekraft"
+    },
+    {
+     "kode": "KM5743",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 betongfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 betongfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 betongfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

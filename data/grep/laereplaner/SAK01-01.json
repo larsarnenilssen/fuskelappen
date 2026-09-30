@@ -1,0 +1,121 @@
+{
+ "kode": "SAK01-01",
+ "tittel": "Læreplan i samfunnskunnskap fellesfag vg1/vg2",
+ "spraak": "nno",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV48",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "SAK1Z01",
+    "SAK1Z02"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM464",
+     "tekst": "utforske og presentere dagsaktuelle tema eller debatter ved å bruke samfunnsfaglege metodar, kjelder og digitale ressursar, og argumentere for sine eigne og andre sine meiningar og verdiar"
+    },
+    {
+     "kode": "KM476",
+     "tekst": "utforske korleis interesser og ideologisk ståstad påverkar våre argument og val av kjelder, og reflektere over korleis det gir seg utslag i forskjellige meiningar"
+    },
+    {
+     "kode": "KM466",
+     "tekst": "gjere greie for sosialisering og drøfte korleis identiteten og sjølvkjensla til ungdom blir påverka gjennom sosialisering"
+    },
+    {
+     "kode": "KM469",
+     "tekst": "drøfte korleis personleg økonomi, kommersiell påverknad og forbruk påverkar enkeltpersonar, grupper og samfunnet"
+    },
+    {
+     "kode": "KM468",
+     "tekst": "reflektere over utfordringar i samband med grensesetjing og drøfte ulike verdiar, normer og lover som gjeld kjønn, seksualitet og kropp"
+    },
+    {
+     "kode": "KM474",
+     "tekst": "reflektere over eigne digitale spor, utforske kven som har tilgang til spora, og drøfte korleis data og personopplysningar kan brukast eller misbrukast"
+    },
+    {
+     "kode": "KM467",
+     "tekst": "innhente informasjon om forskjellige former for sosial ulikskap i Noreg og drøfte samanhengen mellom ulikskap og utanforskap"
+    },
+    {
+     "kode": "KM465",
+     "tekst": "reflektere over likskapar og ulikskapar i kulturuttrykk, identitet og levesett innanfor og mellom majoritet og minoritet i Noreg og Sápmi/Sábme/Sáepmie"
+    },
+    {
+     "kode": "KM475",
+     "tekst": "utforske og beskrive korleis organiseringa av samfunnet og arbeidslivet i Noreg har endra seg, og drøfte korleis den nordiske samfunnsmodellen møter utfordringar enkeltpersonar og samfunnet står overfor"
+    },
+    {
+     "kode": "KM473",
+     "tekst": "utforske og drøfte korleis næringsgrunnlag, innovasjon og teknologi formar og påverkar arbeidsliv og lokalsamfunn i Noreg"
+    },
+    {
+     "kode": "KM470",
+     "tekst": "reflektere over kva det inneber å vere medborgar, og samanlikne korleis politiske system er organiserte i forskjellige land og område"
+    },
+    {
+     "kode": "KM471",
+     "tekst": "vurdere korleis utøving av makt påverkar enkeltpersonar og samfunn"
+    },
+    {
+     "kode": "KM472",
+     "tekst": "gjere greie for grunnlaget for menneskerettane og utforske og gi døme på brot på menneskerettane nasjonalt eller globalt"
+    },
+    {
+     "kode": "KM477",
+     "tekst": "vurdere årsaker til og tiltak som kan førebyggje rasisme, diskriminering og hatefulle ytringar, og drøfte grensene for ytringsfridommen"
+    },
+    {
+     "kode": "KM478",
+     "tekst": "utforske ei utfordring eller ein konflikt på lokalt, nasjonalt eller globalt nivå og drøfte korleis utfordringa eller konflikten påverkar forskjellige grupper"
+    },
+    {
+     "kode": "KM479",
+     "tekst": "drøfte samanhengen mellom økonomisk vekst, levestandard og livskvalitet i eit globalt og berekraftig perspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget. Elevane viser og utviklar kompetanse i samfunnskunnskap når dei reflekterer over forhold i samfunnet og kritisk vurderer og diskuterer ulike samanhengar og perspektiv. Elevane viser og utviklar kompetanse gjennom å bruke samfunnsfaglege metodar og digitale ressursar til å undersøkje og vurdere problemstillingar i samfunnet. Vidare viser og utviklar elevane kompetanse når dei reflekterer over seg sjølve som ein del av samfunnet dei lever i, kva som har forma dei som menneske, og korleis dei kan påverke eige og andre sitt liv i dag og i framtida.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom munnlege, skriftlege og praktiske måtar å tileigne seg og vise kompetanse i faget på, og gjennom å la elevane få vere nysgjerrige og aktivt kunnskapssøkjande. Læraren skal vere i dialog med elevane om utviklinga deira i samfunnskunnskap. Elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i samfunnskunnskap."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i samfunnskunnskap ved avslutninga av opplæringa i faget. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i samfunnskunnskap basert på kompetansen eleven har vist når eleven har brukt kunnskapar og ferdigheiter i kombinasjon."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Eleven skal ha éin standpunktkarakter.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og for medier og kommunikasjon: Eleven skal ha éin standpunktkarakter.",
+    "Vg2 yrkesfaglege utdanningsprogram: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Eleven kan trekkjast ut til munnleg eksamen med førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og for medier og kommunikasjon: Eleven kan trekkjast ut til munnleg eksamen med førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt.",
+    "Vg2 yrkesfaglege utdanningsprogram: Eleven kan trekkjast ut til munnleg eksamen med førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og for medier og kommunikasjon: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Vg2 yrkesfaglege utdanningsprogram: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

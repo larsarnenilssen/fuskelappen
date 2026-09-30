@@ -1,0 +1,128 @@
+{
+ "kode": "PFD03-02",
+ "tittel": "Læreplan i vg3 profileringsdesignfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV599",
+   "tittel": "Kompetansemål og vurdering vg3 profileringsdesignfaget",
+   "fag": [
+    "PFD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6930",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM6948",
+     "tekst": "analysere, presentere og drøfte ulike oppdrag og løsninger med ulike kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM6947",
+     "tekst": "utforske og anvende ulike digitale ressurser og medier til kommunikasjon med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM6936",
+     "tekst": "gjøre rede for hvordan personer og omgivelser påvirkes av ulike visuelle uttrykk og støy i det offentlige rom, og bruke denne kunnskapen i egne profileringsløsninger"
+    },
+    {
+     "kode": "KM6950",
+     "tekst": "anvende universell utforming i idéutvikling av profileringsløsninger for det offentlige rom"
+    },
+    {
+     "kode": "KM6949",
+     "tekst": "bruke gjeldende regelverk for utforming, plassering og montering av profileringsløsninger"
+    },
+    {
+     "kode": "KM6946",
+     "tekst": "anvende digitale verktøy for å utvikle to- og tredimensjonale arbeidstegninger"
+    },
+    {
+     "kode": "KM6945",
+     "tekst": "anvende vektor- og rasterbasert programvare i grafisk arbeid og produksjon"
+    },
+    {
+     "kode": "KM6944",
+     "tekst": "gjøre oppmålinger og anvende målestokk i arbeidet"
+    },
+    {
+     "kode": "KM6951",
+     "tekst": "anvende komposisjonsprinsipper for form, farge, typografi og bilde og begrunne valgene"
+    },
+    {
+     "kode": "KM6941",
+     "tekst": "utforske ulike fargesystemer og fargesymbolikk og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM6939",
+     "tekst": "utforske materialer og produkter og begrunne valg og løsninger i eget arbeid"
+    },
+    {
+     "kode": "KM6938",
+     "tekst": "bruke prinsipper for lys og farge til produktløsninger og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM6937",
+     "tekst": "utforske og utvikle løsningsforslag som tar hensyn til arkitektur, trender og stilhistorie"
+    },
+    {
+     "kode": "KM6943",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM6942",
+     "tekst": "vurdere miljøeffekter for bruk og valg av materialer og gjøre rede for hvordan kildesortere og håndtere avfall etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM6935",
+     "tekst": "følge gjeldende lov- og regelverk om opphavsrett og personvernhensyn i alt profileringsarbeid"
+    },
+    {
+     "kode": "KM6932",
+     "tekst": "lage og tolke planer, arbeidsbeskrivelser og tegninger, og produsere og montere ut fra disse og kvaltetssikre resultatet"
+    },
+    {
+     "kode": "KM6934",
+     "tekst": "anvende ulike maskiner innenfor print og foliering og gjøre rede for hvordan ulike valg påvirker resultat og uttrykk"
+    },
+    {
+     "kode": "KM6933",
+     "tekst": "anvende ulike monterings- og festeteknikker"
+    },
+    {
+     "kode": "KM6931",
+     "tekst": "anvende og vedlikeholde maskiner, utstyr og verktøy og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM6940",
+     "tekst": "følge og anvende gjeldende lokale forskrifter, kommunale vedtekter og lov- og regelverk, og gjennomføre søknadsprosesser i profileringsarbeid"
+    },
+    {
+     "kode": "KM6952",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 profileringsdesignfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 profileringsdesignfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 profileringsdesignfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

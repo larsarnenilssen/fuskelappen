@@ -1,0 +1,141 @@
+{
+ "kode": "FFA03-03",
+ "tittel": "Læreplan i vg3 fiske og fangst",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV604",
+   "tittel": "Kompetansemål og vurdering vg3 fiske og fangst",
+   "fag": [
+    "FFA3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7014",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere fiske og fangst på fartøy i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7003",
+     "tekst": "gjennomføre førstehåndshåndtering, behandling og oppbevaring av fangst om bord som sikrer råstoffkvaliteten i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM7002",
+     "tekst": "levere sjømatprodukter til landanlegg etter gjeldende kvalitetsforskrifter og markedskrav"
+    },
+    {
+     "kode": "KM7008",
+     "tekst": "vurdere og gjennomføre vedlikehold og reparasjon av fiskeredskaper"
+    },
+    {
+     "kode": "KM7001",
+     "tekst": "bruke sikkerhetsstyringssystem, vurdere risiko og ivareta helse og sikkerhet om bord etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM7024",
+     "tekst": "gjennomføre arbeid slik at fysisk helse blir ivaretatt, og vurdere om arbeidet kan forbedres med hensyn til ergonomi"
+    },
+    {
+     "kode": "KM7023",
+     "tekst": "følge prosedyrer i beredskaps- og nødssituasjoner, vurdere situasjonen og bruke brann- og redningsutstyr"
+    },
+    {
+     "kode": "KM7022",
+     "tekst": "forebygge og begrense forurensning i tråd med nasjonalt og internasjonalt regelverk, og reflektere over hvordan driften av eget fartøy påvirker miljøet"
+    },
+    {
+     "kode": "KM7021",
+     "tekst": "planlegge og gjennomføre lasting og lossing, og vurdere hvordan dette påvirker stabiliteten til fartøyet"
+    },
+    {
+     "kode": "KM7020",
+     "tekst": "bruke ISPS-koden ved anløp til havner som krever det"
+    },
+    {
+     "kode": "KM7019",
+     "tekst": "registrere og rapportere avvik i samsvar med vedlikeholds- og sikkerhetsstyringssystemer og forklare hvordan et slikt system kan bidra til å effektivisere driften"
+    },
+    {
+     "kode": "KM7018",
+     "tekst": "bruke og følge veiledninger og retningslinjer for oppbevaring og merking av kjemikalier og helseskadelige stoffer"
+    },
+    {
+     "kode": "KM7017",
+     "tekst": "merke og sikre last i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7016",
+     "tekst": "rapportere og dokumentere arbeidsoppgaver på engelsk og norsk"
+    },
+    {
+     "kode": "KM7015",
+     "tekst": "gjennomføre vakthold og utkikkstjeneste i samsvar med instruks, og ta imot rorkommando på norsk og engelsk"
+    },
+    {
+     "kode": "KM7013",
+     "tekst": "gjøre rede for og ta hensyn til driftsbegrensninger på bakgrunn av meteorologiske observasjoner og værmeldinger, og vurdere hvordan vær og vind kan påvirke sikkerhet til mannskap, fartøy og last"
+    },
+    {
+     "kode": "KM7012",
+     "tekst": "gjøre rede for sammenhenger mellom omsetning, fangstinntekter, lott og hyreoppgjør"
+    },
+    {
+     "kode": "KM7010",
+     "tekst": "bruke dekksutstyr, maskiner, instrumenter og redskaper på fartøy i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7009",
+     "tekst": "gjennomføre og dokumentere daglig ettersyn og vedlikehold av fartøy og utstyr i tråd med vedlikeholdssystemet på fartøyet"
+    },
+    {
+     "kode": "KM7007",
+     "tekst": "bruke navigasjonsinstrumenter og navigasjonshjelpemidler for å planlegge, gjennomføre og vurdere sikker seilas"
+    },
+    {
+     "kode": "KM7006",
+     "tekst": "bruke fortøynings- og ankringsutstyr, og vurdere tilstanden på utstyret"
+    },
+    {
+     "kode": "KM7005",
+     "tekst": "kommunisere med maritim radio på norsk og engelsk etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM7004",
+     "tekst": "utøve fiske og fangst på en bærekraftig måte i tråd med miljøkrav og drøfte konsekvensene av overbeskatning"
+    },
+    {
+     "kode": "KM7026",
+     "tekst": "bruke metoder for seleksjon og fangstbegrensning med ulike redskaper, og vurdere effekten av disse metodene"
+    },
+    {
+     "kode": "KM7025",
+     "tekst": "gjennomføre hygiene og renhold om bord på aktuelt fartøy etter gjeldende regelverk, standarder og kvalitetssystemer"
+    },
+    {
+     "kode": "KM7011",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 fiske og fangst når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 fiske og fangst. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 fiske og fangst skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én–to virkedager.",
+    "Fagprøven skal gjennomføres i tråd med gjeldende krav og regelverk fra Sjøfartsdirektoratet for alle med læretid på båter over 500 bruttotonn."
+   ]
+  }
+ ]
+}

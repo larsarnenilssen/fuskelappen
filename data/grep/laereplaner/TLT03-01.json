@@ -1,0 +1,446 @@
+{
+ "kode": "TLT03-01",
+ "tittel": "Læreplan i vg3 trelast- og limtreproduksjonsfaget med fordjupingsområde",
+ "spraak": "nno",
+ "fastsatt": "2021-09-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV751",
+   "tittel": "Kompetansemål og vurdering vg3 trelast og limtreproduksjonsfaget med fordjuping i konstruksjonslimtre",
+   "fag": [
+    "TLT3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9902",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og gjennomføre arbeid i tråd med gjeldande krav for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9965",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9964",
+     "tekst": "planleggje og arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9968",
+     "tekst": "gjere greie for framstilling av trelast- og limtreprodukt og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9963",
+     "tekst": "ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9962",
+     "tekst": "vurdere og dokumentere eige arbeid i samsvar med spesifikasjonar"
+    },
+    {
+     "kode": "KM9961",
+     "tekst": "setje i drift, styre og overvake framstilling av ulike produkt, vurdere konsekvensar av produksjonstempo, verktøyslitasje og endringar i materialkvalitet og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9960",
+     "tekst": "vurdere behovet for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9959",
+     "tekst": "kontrollere produktmerking, pakke, emballere og kvalitetssikre ulike typar produkt og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9958",
+     "tekst": "innhente produksjonsrapportar og reflektere over kor viktig det er å dokumentere produksjonsprosessen"
+    },
+    {
+     "kode": "KM9966",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9957",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9955",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9954",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9967",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9953",
+     "tekst": "vurdere og dokumentere arbeidsprosessane og gjere greie for korleis temperatur, dimensjon og fukt i materialane påverkar det ferdige produktet"
+    },
+    {
+     "kode": "KM9952",
+     "tekst": "kontrollere plank, betene fingerskøyteanlegg og gjere greie for korleis ulike produksjonsprosessar og limtypar påverkar fingerskøyten"
+    },
+    {
+     "kode": "KM9951",
+     "tekst": "kontrollere fingergeometri og limfuger og sikre eigenskapane til limtreet i tråd med kravspesifikasjonen"
+    },
+    {
+     "kode": "KM9950",
+     "tekst": "tilarbeide limingsflater og vurdere korleis kvaliteten av limingsflata påverkar hefteevna til limet"
+    },
+    {
+     "kode": "KM9949",
+     "tekst": "plassere lamellar, påføre lim og drøfte kva faktorar som påverkar kvaliteten på sluttproduktet"
+    },
+    {
+     "kode": "KM9948",
+     "tekst": "betene limpresse og gjere greie for kva konsekvensar presstrykk, presstid og varme har for limeresultatet"
+    },
+    {
+     "kode": "KM9956",
+     "tekst": "tilarbeide limtre til ferdig produkt og vurdere resultatet i samsvar med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9969",
+     "tekst": "byggje limtreprodukt, plassere lamellar og drøfte ulike faktorar som påverkar oppbygging av limtreprodukt"
+    },
+    {
+     "kode": "KM9988",
+     "tekst": "stille inn limeanlegget, påføre lim og drøfte konsekvensar ved val av påføringsmengde, blandeforhold og limtype"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 trelast- og limtreproduksjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 trelast- og limtreproduksjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV752",
+   "tittel": "Kompetansemål og vurdering vg3 trelast og limtreproduksjonsfaget med fordjuping i limtreplater og komponentar",
+   "fag": [
+    "TLT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9987",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og gjennomføre arbeid i tråd med gjeldande krav for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9986",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobb-analyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9985",
+     "tekst": "planleggje og arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9944",
+     "tekst": "gjere greie for framstilling av trelast- og limtreprodukt og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9984",
+     "tekst": "ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9983",
+     "tekst": "vurdere og dokumentere eige arbeid i samsvar med spesifikasjonar"
+    },
+    {
+     "kode": "KM9982",
+     "tekst": "setje i drift, styre og overvake framstilling av ulike produkt, vurdere konsekvensar av produksjonstempo, verktøyslitasje og endringar i materialkvalitet og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9981",
+     "tekst": "vurdere behovet for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9980",
+     "tekst": "kontrollere produktmerking, pakke, emballere og kvalitetssikre ulike typar produkt og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9979",
+     "tekst": "innhente produksjonsrapportar og reflektere over kor viktig det er å dokumentere produksjonsprosessen"
+    },
+    {
+     "kode": "KM9978",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9977",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9976",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9975",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9946",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9974",
+     "tekst": "kontrollere fukt i materialane og i bygget og vurdere fuktnivået opp mot produksjonsordren"
+    },
+    {
+     "kode": "KM9973",
+     "tekst": "planleggje lamelluttak, dele opp trelasta til emne og reflektere over materialutnyttinga"
+    },
+    {
+     "kode": "KM9972",
+     "tekst": "stille inn maskiner, høvle og splitte til lamellar og drøfte kva faktorar som påverkar limtreproduktet"
+    },
+    {
+     "kode": "KM9971",
+     "tekst": "kontrollere og vurdere dei tekniske og estetiske eigenskapane ved lamellar til ulike produkt"
+    },
+    {
+     "kode": "KM9970",
+     "tekst": "plassere lamellar før liming og gjere greie for korleis strukturen og dei hydroskopiske eigenskapane til treet påverkar oppbygginga av limtrekomponenten"
+    },
+    {
+     "kode": "KM9947",
+     "tekst": "velje lim og lime limtrekomponentar med tanke på bruksområde, miljø og økonomi"
+    },
+    {
+     "kode": "KM9989",
+     "tekst": "tilarbeide limtrekomponentar til ferdig produkt og vurdere overflatekvalitet og måltoleranse i samsvar med produksjonsordren"
+    },
+    {
+     "kode": "KM9920",
+     "tekst": "stille inn limeanlegget, påføre lim og drøfte konsekvensar ved val av påføringsmengde, blandeforhold og limtype"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 trelast- og limtreproduksjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 trelast- og limtreproduksjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV753",
+   "tittel": "Kompetansemål og vurdering vg3 trelast- og limtreproduksjonsfaget med fordjuping i høvellastproduksjon",
+   "fag": [
+    "TLT3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9919",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og gjennomføre arbeid i tråd med gjeldande krav for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9918",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobb-analyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9917",
+     "tekst": "planleggje og arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9922",
+     "tekst": "gjere greie for framstilling av trelast- og limtreprodukt og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9916",
+     "tekst": "ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9915",
+     "tekst": "vurdere og dokumentere eige arbeid i samsvar med spesifikasjonar"
+    },
+    {
+     "kode": "KM9914",
+     "tekst": "setje i drift, styre og overvake framstilling av ulike produkt, vurdere konsekvensar av produksjonstempo, verktøyslitasje og endringar i materialkvalitet og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9913",
+     "tekst": "vurdere behovet for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9921",
+     "tekst": "kontrollere produktmerking, pakke, emballere og kvalitetssikre ulike typar produkt og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9912",
+     "tekst": "innhente produksjonsrapportar og reflektere over kor viktig det er å dokumentere produksjonsprosessen"
+    },
+    {
+     "kode": "KM9910",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9909",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9908",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9907",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9911",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9906",
+     "tekst": "kontrollere fukt, dimensjon og kvalitet på trelasta ut frå produksjonsordren"
+    },
+    {
+     "kode": "KM9905",
+     "tekst": "stille inn maskiner og verktøy etter spesifikasjon, dele opp trelasta og vurdere korleis dimensjon på og plassering av produktet påverkar sluttresultatet"
+    },
+    {
+     "kode": "KM9904",
+     "tekst": "sortere og kappe ferdige produkt og drøfte kva faktorar som påverkar kvaliteten på høvellasta og bruksområdet"
+    },
+    {
+     "kode": "KM9903",
+     "tekst": "forbehandle og overflatebehandle trelasta og vurdere korleis val av behandlingsprodukt- og metodar påverkar sluttresultatet"
+    },
+    {
+     "kode": "KM9923",
+     "tekst": "stille inn maskiner, høvle trelasta og reflektere over kva faktorar som påverkar produktet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 trelast- og limtreproduksjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 trelast- og limtreproduksjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV754",
+   "tittel": "Kompetansemål og vurdering vg3 trelast- og limtreproduksjonsfaget med fordjuping i skurlastproduksjon",
+   "fag": [
+    "TLT3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9924",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og gjennomføre arbeid i tråd med gjeldande krav for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM9943",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobb-analyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM9942",
+     "tekst": "planleggje og arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektiviteten og miljøet"
+    },
+    {
+     "kode": "KM9990",
+     "tekst": "gjere greie for framstilling av trelast- og limtreprodukt og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9941",
+     "tekst": "ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9940",
+     "tekst": "vurdere og dokumentere eige arbeid i samsvar med spesifikasjonar"
+    },
+    {
+     "kode": "KM9939",
+     "tekst": "setje i drift, styre og overvake framstilling av ulike produkt, vurdere konsekvensar av produksjonstempo, verktøyslitasje og endringar i materialkvalitet og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9938",
+     "tekst": "vurdere behovet for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9937",
+     "tekst": "kontrollere produktmerking, pakke, emballere og kvalitetssikre ulike typar produkt og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9936",
+     "tekst": "innhente produksjonsrapportar og reflektere over kor viktig det er å dokumentere produksjonsprosessen"
+    },
+    {
+     "kode": "KM9935",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9934",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9933",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9932",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9945",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9931",
+     "tekst": "drøfte kor viktig det er med oppmåling og inndeling i tømmerklasser, lagre tømmer og setje i verk tiltak for å sikre tømmerkvaliteten"
+    },
+    {
+     "kode": "KM9930",
+     "tekst": "overvake barkeprosessen, sikre stokken mot framandfragment og gjere greie for ulike faktorar som medverkar til ein kostnadseffektiv produksjon"
+    },
+    {
+     "kode": "KM9929",
+     "tekst": "stille inn maskiner, produsere skurlast etter produksjonsordre og drøfte korleis produksjonstempoet påverkar skurresultatet"
+    },
+    {
+     "kode": "KM9928",
+     "tekst": "sortere skurlast etter dimensjon og kvalitet, klargjere for tørking og vurdere ulike faktorar som påverkar tørkeresultatet"
+    },
+    {
+     "kode": "KM9927",
+     "tekst": "førebu, setje i gang og kvalitetssikre tørkeprosessen og vurdere ulike faktorar som påverkar trelastkvaliteten"
+    },
+    {
+     "kode": "KM9926",
+     "tekst": "sortere og kappe tørr skurlast etter gjeldande regelverk og drøfte ulike eigenskapar som påverkar kvaliteten av skurlasta og bruksområdet"
+    },
+    {
+     "kode": "KM9925",
+     "tekst": "overvake energiproduksjonen og reflektere over korleis energiproduksjonen påverkar kostnadseffektiviteten i bedrifta og miljøet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 trelast- og limtreproduksjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 trelast- og limtreproduksjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel",
+    "Opplæringa i vg3 trelast- og limtreproduksjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast på minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

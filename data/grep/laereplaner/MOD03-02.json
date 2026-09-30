@@ -1,0 +1,108 @@
+{
+ "kode": "MOD03-02",
+ "tittel": "Læreplan i vg3 modistfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV646",
+   "tittel": "Kompetansemål og vurdering vg3 modistfaget",
+   "fag": [
+    "MOD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7831",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7839",
+     "tekst": "vurdere egnet hodeplagg tilpasset bruksområde og kundens proporsjoner og begrunne valg av materialer og fasong"
+    },
+    {
+     "kode": "KM7835",
+     "tekst": "konstruere mønstre, lage maler og bygge opp ulike arbeidsformer"
+    },
+    {
+     "kode": "KM7842",
+     "tekst": "vurdere og beregne material- og tidsforbruk og pris på egne produkter og tjenester"
+    },
+    {
+     "kode": "KM7838",
+     "tekst": "vurdere materialets egenskaper, som strekkfasthet og holdbarhet mot fuktighet og varme, og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7834",
+     "tekst": "dampe, blokke og forme hodebekledning av filt, strå og andre materialer"
+    },
+    {
+     "kode": "KM7846",
+     "tekst": "utforske egenskapene til ulike innleggsmaterialer og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7837",
+     "tekst": "bygge opp hatter ved bruk av modist-wire og andre støttematerialer"
+    },
+    {
+     "kode": "KM7833",
+     "tekst": "utforske draperinger av forskjellige tekstiler og bruke denne kunnskapen i produksjon av hatter og hodeplagg"
+    },
+    {
+     "kode": "KM7832",
+     "tekst": "anvende ulike teknikker for fjærpynt, håndlagde blomster og kokarder"
+    },
+    {
+     "kode": "KM7836",
+     "tekst": "vurdere, velge og bruke rensemidler, appretur og limstoffer og gjøre rede for hvordan ulike valg påvirker egen helse, miljø, kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7845",
+     "tekst": "reflektere over og gjøre rede for hodeplaggets betydning i historisk, religiøs og kulturell sammenheng, og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7840",
+     "tekst": "analysere og kopiere historiske hodeplagg"
+    },
+    {
+     "kode": "KM7841",
+     "tekst": "vurdere og utføre ulike typer reparasjonsarbeid og omsøm og vurdere lønnsomheten i dette"
+    },
+    {
+     "kode": "KM7843",
+     "tekst": "presentere og markedsføre produkter og tjenester muntlig og digitalt"
+    },
+    {
+     "kode": "KM7844",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7847",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr og arbeide i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7848",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 modistfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 modistfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 modistfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

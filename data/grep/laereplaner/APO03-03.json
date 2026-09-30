@@ -1,0 +1,202 @@
+{
+ "kode": "APO03-03",
+ "tittel": "Læreplan i vg3 apotekteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV484",
+   "tittel": "Kompetansemål og vurdering helseveiledning i apotek",
+   "fag": [
+    "APO3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5359",
+     "tekst": "gjøre rede for de vanligste legemiddelgruppene og medikamentene og deres virkning i kroppen og anvende regelverk for utlevering"
+    },
+    {
+     "kode": "KM5360",
+     "tekst": "veilede i teknisk bruk av legemidler og andre apotekvarer og tekniske hjelpemidler"
+    },
+    {
+     "kode": "KM5337",
+     "tekst": "kartlegge kundens helsesituasjon og vurdere om kunden trenger hjelp av annet helsepersonell og medvirke til slik hjelp"
+    },
+    {
+     "kode": "KM5361",
+     "tekst": "vurdere legemiddelformer, styrke, mengde og måleredskap for å veilede i riktig bruk"
+    },
+    {
+     "kode": "KM5358",
+     "tekst": "utføre helsetjenester etter gjeldende prosedyrer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i helseveiledning i apotek når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i helseveiledning i apotek. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i helseveiledning i apotek ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i helseveiledning i apotek basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV485",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "APO3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5357",
+     "tekst": "yte service og bruke relasjonsferdigheter i møte med kunder, kolleger og annet helsepersonell"
+    },
+    {
+     "kode": "KM5356",
+     "tekst": "kommunisere tydelig og presist og på en måte som gir trygghet og tillit"
+    },
+    {
+     "kode": "KM5352",
+     "tekst": "ekspedere e-resepter og veilede i selvvalget i apotek"
+    },
+    {
+     "kode": "KM5355",
+     "tekst": "bidra til kundemedvirkning og ivareta taushetsplikt, personvern og yrkesetikk i apotek"
+    },
+    {
+     "kode": "KM5351",
+     "tekst": "bruke digitale ressurser og vise digital dømmekraft i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5354",
+     "tekst": "bruke faguttrykk i apoteket"
+    },
+    {
+     "kode": "KM5353",
+     "tekst": "medvirke til tverrfaglig samarbeid og profesjonell yrkesutøvelse i apotek"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV486",
+   "tittel": "Kompetansemål og vurdering yrkesliv i apoteketteknikkfaget",
+   "fag": [
+    "APO3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5343",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM5362",
+     "tekst": "arbeide etter gjeldende regelverk, bransjestandarder og apotekets kvalitetssystemer"
+    },
+    {
+     "kode": "KM5350",
+     "tekst": "utføre praktisk resepturarbeid og bruke e-helse i samarbeid med farmasøyt"
+    },
+    {
+     "kode": "KM5363",
+     "tekst": "bistå ved produksjon av legemidler"
+    },
+    {
+     "kode": "KM5349",
+     "tekst": "bruke digitale ressurser i apotek og vise digital dømmekraft ved håndtering av pasientinformasjon"
+    },
+    {
+     "kode": "KM5338",
+     "tekst": "selge reseptfrie legemidler og apotekvarer basert på produktkunnskap og kundens behov og gjøre rede for refusjonsordninger"
+    },
+    {
+     "kode": "KM5347",
+     "tekst": "bruke apotekets logistikksystem og arbeide etter gjeldende regler for holdbarhet og oppbevaring"
+    },
+    {
+     "kode": "KM5341",
+     "tekst": "utføre arbeidet i tråd med yrkesetiske retningslinjer og vurdere etiske problemstillinger i apotek"
+    },
+    {
+     "kode": "KM5345",
+     "tekst": "håndtere returmedisin og veilede kunder om forsvarlig håndtering av legemiddelavfall"
+    },
+    {
+     "kode": "KM5339",
+     "tekst": "utføre hygiene- og smitteverntiltak etter gjeldende regelverk og retningslinjer"
+    },
+    {
+     "kode": "KM5348",
+     "tekst": "gi førstehjelp og sette sammen innhold i førstehjelpsenheter"
+    },
+    {
+     "kode": "KM5346",
+     "tekst": "drøfte hva profesjonell yrkesutøvelse innebærer for apotekteknikeren"
+    },
+    {
+     "kode": "KM5344",
+     "tekst": "reflektere over hvordan apotekene kan bidra til å redusere samfunnets utgifter til legemidler og arbeide etter rutiner for dette"
+    },
+    {
+     "kode": "KM5342",
+     "tekst": "gjøre rede for apotekbransjens og apotekets organisering og plassering i helsevesenet"
+    },
+    {
+     "kode": "KM5340",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet, og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i apotekteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i apotekteknikkfaget. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i apoteket ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i apotekteknikkfaget basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helseveiledning i apotek: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i apotekteknikkfaget: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Helseveiledning i apotek, kommunikasjon og samhandling og yrkesliv i apotek: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Helseveiledning i apotek: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i apotekteknikkfaget: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Helseveiledning i apotek, kommunikasjon og samhandling og yrkesliv i apotekteknikkfaget: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -49,8 +49,11 @@ export interface Modulmanifest {
   ruter: Modulrute[];
   /** Det modulen bidrar med til samlet søk. */
   sokeoppforinger(): Promise<Sokeoppforing[]>;
-  /** Funksjoner, fag, begreper osv. som kan favorittmerkes. */
-  favorittbare(): Promise<Favorittbar[]>;
+  /**
+   * Funksjoner, fag, begreper osv. som kan favorittmerkes. Med `ider` trengs bare disse (favorittene brukeren
+   * har). Moduler med mange oppføringer, som fagene, kan da la være å laste alt.
+   */
+  favorittbare(ider?: readonly string[]): Promise<Favorittbar[]>;
   /** Frister modulen eier. Samles i årshjulet i fase 8. */
   frister(): Promise<Frist[]>;
   /** Hurtigkalkulatorer som vises på forsiden. */

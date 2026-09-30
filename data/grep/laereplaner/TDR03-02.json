@@ -1,0 +1,128 @@
+{
+ "kode": "TDR03-02",
+ "tittel": "Læreplan i vg3 tredreierfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV637",
+   "tittel": "Kompetansemål og vurdering vg3 tredreierfaget",
+   "fag": [
+    "TDR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7635",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7637",
+     "tekst": "analysere og tolke ulike oppdrag og gjøre faglige, estetiske, miljøvennlige og bærekraftige faglige valg, i tråd med kundens ønsker og behov"
+    },
+    {
+     "kode": "KM7646",
+     "tekst": "utføre grunnleggende teknisk tegning og lage arbeidstegninger, arbeidsbeskrivelser og modeller etter egne og andres ideer og skisser"
+    },
+    {
+     "kode": "KM7644",
+     "tekst": "utforske og bruke visuelle virkemidler i designprosessen og gjøre rede for hvordan ulike valg påvirker uttrykk, form og funksjon"
+    },
+    {
+     "kode": "KM7655",
+     "tekst": "velge og bruke et utvalg av håndverksteknikker for å kunne utføre spindeldreiing, tverrveddreiing, endeveddreiing og kopidreiing ut fra ønsket form, funksjon og uttrykk"
+    },
+    {
+     "kode": "KM7653",
+     "tekst": "utføre eksenterdreiing, kannelering og spiralframstilling for å restaurere, reparere og framstille nye produkter"
+    },
+    {
+     "kode": "KM7643",
+     "tekst": "utføre grunnleggende teknikker for sliping av skulper, meisler, ringstål, krokjern, skraper og annet skjærende verktøy"
+    },
+    {
+     "kode": "KM7652",
+     "tekst": "gjenkjenne, vurdere og velge ulike treslag og emner ut fra deres egenskaper og bruke denne kunnskapen i eget arbeid med ulike produkter"
+    },
+    {
+     "kode": "KM7650",
+     "tekst": "velge og bruke egnede materialer tilpasset ønsket produkt og gjøre rede for hvordan ulike valg påvirker resultat, bærekraft og samsvar med miljøkrav"
+    },
+    {
+     "kode": "KM7649",
+     "tekst": "anvende ulike limtyper i variert emnetilvirking"
+    },
+    {
+     "kode": "KM7647",
+     "tekst": "velge og bruke egnet overflatebehandling i samsvar med materialenes egenart, bruksområder og miljøhensyn"
+    },
+    {
+     "kode": "KM7656",
+     "tekst": "reparere og restaurere tredreide gjenstander og gjøre rede for hvordan ulike valg påvirker gjenbruk, kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7641",
+     "tekst": "stille inn, bruke og vedlikeholde standard trebearbeidingsmaskiner, verktøy og utstyr generelt, og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet på verkstedet"
+    },
+    {
+     "kode": "KM7639",
+     "tekst": "gjøre rede for hel- og halvautomatløsninger for kopidreiing og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7651",
+     "tekst": "velge og bruke digitale verktøy i deler av eller gjennom hele arbeidsprosessen"
+    },
+    {
+     "kode": "KM7648",
+     "tekst": "beregne materialbruk, tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7638",
+     "tekst": "bruke fagspråk i samhandling med kunder, fagmiljøet og andre samarbeidspartnere gjennom samtale og presentasjoner, med og uten digitale hjelpemidler"
+    },
+    {
+     "kode": "KM7645",
+     "tekst": "gjøre rede for fagets historie i de ulike stilperiodene og bruke dette i arbeid med reparasjoner og rekonstruksjoner og som inspirasjon for eget arbeid"
+    },
+    {
+     "kode": "KM7636",
+     "tekst": "presentere og markedsføre egne produkter og produkter ut fra bestillinger, og gjøre rede for hvordan ulike valg kan påvirke sluttproduktet"
+    },
+    {
+     "kode": "KM7657",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7642",
+     "tekst": "gjøre rede for og bruke gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid på verkstedet"
+    },
+    {
+     "kode": "KM7654",
+     "tekst": "velge hensiktsmessige ergonomiske arbeidsstillinger og egnet verneutstyr gjennom en hel arbeidsprosess"
+    },
+    {
+     "kode": "KM7640",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 tredreierfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 tredreierfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 tredreierfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøve, som skal gjennomføres over minst åtte virkedager."
+   ]
+  }
+ ]
+}

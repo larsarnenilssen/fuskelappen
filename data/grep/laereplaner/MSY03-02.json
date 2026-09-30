@@ -1,0 +1,136 @@
+{
+ "kode": "MSY03-02",
+ "tittel": "Læreplan i vg3 motorsykkelfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV686",
+   "tittel": "Kompetansemål og vurdering vg3 motorsykkelfaget",
+   "fag": [
+    "MSY3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8735",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver ut fra produsentens anvisning, standarder og garanti"
+    },
+    {
+     "kode": "KM8757",
+     "tekst": "vurdere risiko og iverksette tiltak ved arbeid på kjøretøy med ulike drivlinjer og sikkerhetssystemer"
+    },
+    {
+     "kode": "KM8756",
+     "tekst": "bruke og vedlikeholde verktøy og utstyr"
+    },
+    {
+     "kode": "KM8755",
+     "tekst": "reflektere over motorens funksjon og virkemåte og utføre service og utbedringer av motor og motorens komponenter etter fabrikantens anvisninger"
+    },
+    {
+     "kode": "KM8754",
+     "tekst": "skifte oljer, kjølevæsker og bremsevæsker i tråd med produsentens anvisning"
+    },
+    {
+     "kode": "KM8753",
+     "tekst": "reflektere over i hvilken grad egne valg i forbindelse med reparasjon og vedlikehold bidrar til å ivareta sikkerheten til den som bruker kjøretøyet, og til å minimere miljøbelastningen til kjøretøyet"
+    },
+    {
+     "kode": "KM8752",
+     "tekst": "utføre arbeid på og kontroll av forgassere, innsprøytningssystem og eksosanlegg, måle og justere avgassverdier, og reflektere over krav til støy og utslipp"
+    },
+    {
+     "kode": "KM8751",
+     "tekst": "trykkmåle kjøle-, smøre- og drivstoffsystemer, og utbedre feil"
+    },
+    {
+     "kode": "KM8750",
+     "tekst": "bruke måleinstrumenter og diagnoseverktøy for elektroniske styringssystemer og utbedre feil"
+    },
+    {
+     "kode": "KM8749",
+     "tekst": "utføre kontroll og vurdere behov for utbedring av tennings-, start- og ladesystemer"
+    },
+    {
+     "kode": "KM8748",
+     "tekst": "utføre kontroll og vurdere behov for utbedring av elektroniske komponenter"
+    },
+    {
+     "kode": "KM8758",
+     "tekst": "utføre kontroll og vurdere behov for utbedring av girkasser, skiftemekanismer, kløtsj, variomaticsystemer og kraftoverføringssystem"
+    },
+    {
+     "kode": "KM8747",
+     "tekst": "utføre kontroll og vurdere behov for utbedring av bremsesystemer, antispinn- og ABS-bremsesystemer"
+    },
+    {
+     "kode": "KM8745",
+     "tekst": "kontrollere, utbedre og justere forstilling, svingarmsystemer og fjæringskomponenter"
+    },
+    {
+     "kode": "KM8744",
+     "tekst": "utføre kontroll og måling av chassis, og måle og justere sporing og spissing"
+    },
+    {
+     "kode": "KM8743",
+     "tekst": "avbalansere hjul og skifte dekk og drivbelter i tråd med spesifikasjoner for kjøretøyet"
+    },
+    {
+     "kode": "KM8742",
+     "tekst": "montere ekstrautstyr etter fabrikantens anvisninger"
+    },
+    {
+     "kode": "KM8741",
+     "tekst": "utføre små plastreparasjoner i tråd med anvisninger fra leverandøren"
+    },
+    {
+     "kode": "KM8740",
+     "tekst": "utføre garanti og reklamasjonsarbeid i tråd med rutiner og regelverk"
+    },
+    {
+     "kode": "KM8738",
+     "tekst": "feilsøke og utbedre batterier, ladesystemer og spenningsomformere på el-motorsykkel og følge sikkerhetsrutiner for arbeid på framdriftsbatterier"
+    },
+    {
+     "kode": "KM8739",
+     "tekst": "bruke verneutstyr tilpasset arbeidsoppgaven og reflektere over hensikten"
+    },
+    {
+     "kode": "KM8737",
+     "tekst": "bruke sikkerhetsdatablader og behandle miljø-, brann- og eksplosjonsfarlige stoffer i tråd med regelverk"
+    },
+    {
+     "kode": "KM8736",
+     "tekst": "drøfte faglige løsninger og lønnsomhet av arbeidsoppdrag med kunder, samarbeidspartnere og kolleger"
+    },
+    {
+     "kode": "KM8746",
+     "tekst": "dokumentere utført arbeid og registrere og rapportere avvik i henhold til kvalitetssikringssystemer"
+    },
+    {
+     "kode": "KM8759",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurdering skal bidra til å fremme læring og til å utvikle kompetanse i faget. Lærlingene viser og utvikler kompetanse i vg3 motorsykkelfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 motorsykkelfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i lærefaget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Opplæringen i vg3 motorsykkelfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme over minst tre virkedager."
+   ]
+  }
+ ]
+}

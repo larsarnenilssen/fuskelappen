@@ -1,6 +1,7 @@
 // UI-tekster på bokmål. nn.ts må ha nøyaktig de samme nøklene (sjekkes av typesjekken).
 // Plassholdere skrives {navn} og fylles inn av t().
 import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
+import { fagNb } from './moduler/fag.nb.ts';
 
 export const nb = {
   app: {
@@ -248,12 +249,17 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper i regelverket.',
     },
+    fag: {
+      navn: 'Fag og læreplaner',
+      beskrivelse: 'Fagkoder, kompetansemål, vurderingsordning og årstimetall for videregående, fra Grep.',
+    },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
       beskrivelse: 'Beskjeftigelse, periode, vikartimer og planfestet tid, med utregning og kilder.',
     },
   },
   arbeidstid: arbeidstidNb,
+  fag: fagNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',

@@ -1,0 +1,144 @@
+{
+ "kode": "DRF02-01",
+ "tittel": "Læreplan i vg2 drone",
+ "spraak": "nob",
+ "fastsatt": "2022-03-21",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV760",
+   "tittel": "Kompetansemål operasjon og sikkerhet",
+   "fag": [
+    "DRF2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10084",
+     "tekst": "planlegge, dokumentere, gjennomføre og evaluere operasjoner og vedlikehold i henhold til gjeldende krav til helse, miljø og sikkerhet og arbeidslivets behov, og reflektere over og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10085",
+     "tekst": "planlegge, gjennomføre og dokumentere risikoanalyse i henhold til gjeldende krav og prosedyrer"
+    },
+    {
+     "kode": "KM10086",
+     "tekst": "identifisere hvordan menneskelige, teknologiske og organisatoriske faktorer påvirker operasjoner og vedlikehold og drøfte hvordan systematisk sikkerhetsarbeid forebygger ulykker og skader"
+    },
+    {
+     "kode": "KM10087",
+     "tekst": "bygge et enkelt ubemannet multirotor luftfartøy med sensor og instrumentering og gjøre rede for funksjon og virkemåte for de ulike komponentene"
+    },
+    {
+     "kode": "KM10088",
+     "tekst": "utføre ubemannede operasjoner og gjøre rede for ytre faktorer som kan påvirke en operasjon"
+    },
+    {
+     "kode": "KM10089",
+     "tekst": "utføre operasjoner innenfor og utenfor synsrekkevidde med ubemannede farkoster med multirotor og fastvingedroner opptil 25 kg i tråd med felles europeisk regelverk, minimum i kategoriene åpen og spesifikk, og sertifiseres for denne typen operasjoner"
+    },
+    {
+     "kode": "KM10090",
+     "tekst": "bruke korrekt fraseologi med andre luftromsbrukere, og gjøre rede for ulike typer kommunikasjonssystemer"
+    },
+    {
+     "kode": "KM10091",
+     "tekst": "vedlikeholde farkostens energikilde i henhold til bruk og identifisere og redusere risiko i operasjonell drift"
+    },
+    {
+     "kode": "KM10092",
+     "tekst": "vedlikeholde og lagre farkosten for å sikre operasjonell drift og gjøre rede for vedlikeholdsrutiner"
+    },
+    {
+     "kode": "KM10093",
+     "tekst": "dokumentere, observere, evaluere og loggføre egne og andres operasjoner"
+    },
+    {
+     "kode": "KM10094",
+     "tekst": "håndtere avfall etter eget arbeid i henhold til gjeldende regelverk, leverandørens beskrivelser og system for internkontroll"
+    },
+    {
+     "kode": "KM10095",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget operasjon og sikkerhet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget operasjon og sikkerhet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget operasjon og sikkerhet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget operasjon og sikkerhet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV761",
+   "tittel": "Kompetansemål og vurdering nyttelast, sensorer og bearbeiding av data",
+   "fag": [
+    "DRF2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10096",
+     "tekst": "planlegge, dokumentere, gjennomføre og evaluere bruk av nyttelast og sensorer, bearbeide data i henhold til regelverk og prosedyrer og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10098",
+     "tekst": "kalibrere sensorer og gjøre rede for funksjon og virkemåte"
+    },
+    {
+     "kode": "KM10097",
+     "tekst": "programmere og konfigurere kommunikasjon mellom bakkestasjon og farkosten, og drøfte støttesystemer for å redusere risiko ved operasjoner"
+    },
+    {
+     "kode": "KM10099",
+     "tekst": "feilsøke ubemannet farkost og sensor ved tolking av logg"
+    },
+    {
+     "kode": "KM10100",
+     "tekst": "bearbeide data uavhengig av sensor"
+    },
+    {
+     "kode": "KM10101",
+     "tekst": "oppdatere utstyrets programvare"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget nyttelast, sensorer og bearbeiding av data når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget nyttelast, sensorer og bearbeiding av data. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget nyttelast, sensorer og bearbeiding av data ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget nyttelast, sensorer og bearbeiding av data basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Operasjon og sikkerhet: Eleven skal ha én standpunktkarakter.",
+    "Nyttelast, sensorer og bearbeiding av data: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Operasjon og sikkerhet og nyttelast, sensorer og bearbeiding av data: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 48 timer."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Operasjon og sikkerhet: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Nyttelast, sensorer og bearbeiding av data: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Operasjon og sikkerhet og nyttelast, sensorer og bearbeiding av data: Privatisten skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

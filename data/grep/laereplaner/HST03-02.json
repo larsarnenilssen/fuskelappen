@@ -1,0 +1,124 @@
+{
+ "kode": "HST03-02",
+ "tittel": "Læreplan i vg3 hestefaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-01",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV664",
+   "tittel": "Kompetansemål og vurdering vg3 hestefaget",
+   "fag": [
+    "HST3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8268",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere stell, bruk og hald av hest"
+    },
+    {
+     "kode": "KM8286",
+     "tekst": "arbeide med hest etter gjeldande regelverk og standardar for dyrehald, og gjere greie for relevante organisasjonar og offentlege forvaltningsorgan"
+    },
+    {
+     "kode": "KM8285",
+     "tekst": "beskrive forretningsidé, organisering og eige ansvarsområde, og vurdere samanhengen mellom innsatsfaktorar og økonomisk resultat og korleis bedrifta kan utviklast vidare"
+    },
+    {
+     "kode": "KM8284",
+     "tekst": "utarbeide og bruke system for internkontroll og kvalitetssikring i den daglege drifta av stallen"
+    },
+    {
+     "kode": "KM8283",
+     "tekst": "avdekkje kva behov kunden har, marknadsføre eit produkt eller ei teneste og yte profesjonell kundebehandling"
+    },
+    {
+     "kode": "KM8282",
+     "tekst": "beskrive språket, reaksjonsmåtane og instinkta til hesten, handtere han på ein trygg og etisk forsvarleg måte, og reflektere over eige kroppsspråk og stemmebruk"
+    },
+    {
+     "kode": "KM8281",
+     "tekst": "ta hand om behova hesten har for fridom og flokkliv, og vurdere korleis fôring, stell, utegang og bevegelse kan fremje velferd og helse"
+    },
+    {
+     "kode": "KM8280",
+     "tekst": "gjennomføre fôring med utgangspunkt i fôranalyse og fôrkvalitet, velje fôr og berekne fôrmengd med tanke på rase, alder og bruksområde"
+    },
+    {
+     "kode": "KM8279",
+     "tekst": "berekne behov for og reflektere over bruk av ressursar, areal og matjord til hestehald og fôrproduksjon, og drøfte korleis beitebruk påverkar ulike hestar, kulturlandskap og miljø"
+    },
+    {
+     "kode": "KM8287",
+     "tekst": "beskrive normal utvikling, åtferd, utsjånad og bevegelse for hesten, gjere greie for reproduksjon og vurdere kva ulike hestar er eigna til"
+    },
+    {
+     "kode": "KM8278",
+     "tekst": "identifisere og førebyggje smerte, mistrivsel, sjukdommar og skadar, og utføre mønstring, enkel sårbehandling og medisinering av hest og vurdere når det er nødvendig å tilkalle veterinær"
+    },
+    {
+     "kode": "KM8276",
+     "tekst": "bruke fagspråk som er tilpassa mottakaren i kommunikasjon og samarbeid med fagfolk, kundar, kollegaer og andre"
+    },
+    {
+     "kode": "KM8275",
+     "tekst": "arbeide etter hygieniske prinsipp og vurdere smittefare og setje inn smitteverntiltak"
+    },
+    {
+     "kode": "KM8274",
+     "tekst": "vurdere risiko knytt til stalldrift, bruk, handtering og transport av hest, og utføre tiltak som tek vare på helse, miljø og sikkerheit for dyr og menneske"
+    },
+    {
+     "kode": "KM8271",
+     "tekst": "drive tilsyn, utføre enkelt vedlikehald og vurdere utforminga av bygningar, innreiingar og anlegg for hest"
+    },
+    {
+     "kode": "KM8273",
+     "tekst": "velje, tilpasse, bruke og halde ved like utstyr og reiskapar ut frå bruksområde og behov"
+    },
+    {
+     "kode": "KM8272",
+     "tekst": "bruke hest på ein allsidig måte og etter eit oppsett treningsprogram, vurdere korleis trening påverkar hesten, og velje øvingar og treningsmetodar ut frå nivået og alderen til hesten"
+    },
+    {
+     "kode": "KM8270",
+     "tekst": "handtere hestar i ulike aldre og i ulike situasjonar og gjere greie for faktorar som kan påverke åtferda til hestar"
+    },
+    {
+     "kode": "KM10381",
+     "tekst": "skifte broddar, trekkje til saum og ta av sko, og vurdere behovet for verking og skoning ut fra bruksområdet til hesten"
+    },
+    {
+     "kode": "KM8269",
+     "tekst": "respektere og vise omsyn til menneske og miljø og opptre varsamt ved bruk av hest i utmark, trafikk og nærområda til stallen, og drøfte korleis stallen som arena kan være ein samlingspunkt for ulike menneske"
+    },
+    {
+     "kode": "KM8277",
+     "tekst": "gjere greie for dei særnorske hesterasane og betydninga deira for kulturarv, og drøfte kva rolle hesten har og har hatt i samfunnet og for folkehelsa"
+    },
+    {
+     "kode": "KM8288",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforhold i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 hestefaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 hestefaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 hestefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

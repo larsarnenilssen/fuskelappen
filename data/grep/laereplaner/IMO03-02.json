@@ -1,0 +1,104 @@
+{
+ "kode": "IMO03-02",
+ "tittel": "Læreplan i vg3 industrimontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV698",
+   "tittel": "Kompetansemål og vurdering vg3 industrimontørfaget",
+   "fag": [
+    "IMO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8993",
+     "tekst": "planlegge, risikovurdere, gjennomføre og dokumentere arbeidsoppdrag i tråd med regelverk for helse, miljø, sikkerhet og prosedyrer"
+    },
+    {
+     "kode": "KM9007",
+     "tekst": "montere mekaniske, elektriske, pneumatiske og hydrauliske komponenter i tråd med tegninger, monteringsinstrukser, spesifikasjoner, standarder og gjeldende regelverk"
+    },
+    {
+     "kode": "KM9006",
+     "tekst": "anvende, teste og sette i drift produkter og produksjonsutstyr i tråd med regelverk og spesifikasjoner"
+    },
+    {
+     "kode": "KM9005",
+     "tekst": "velge og anvende smøreprodukter, rengjøringsmateriell og festemateriell i tråd med spesifikasjoner og produktsikkerhetsdatablader og reflektere over miljøavtrykket"
+    },
+    {
+     "kode": "KM9004",
+     "tekst": "vurdere gjennomførte arbeidsoppgaver i henhold til produkt- og kvalitetskrav, og gjøre rede for alternative løsninger knyttet til material- og metodevalg"
+    },
+    {
+     "kode": "KM9003",
+     "tekst": "gjennomføre reparasjon og vedlikehold på utstyr og maskiner, og vurdere forbedrende tiltak som kan minske vedlikeholdsbehovet"
+    },
+    {
+     "kode": "KM9002",
+     "tekst": "velge og anvende egnet verktøy og utstyr i tråd med arbeidsoppgaven"
+    },
+    {
+     "kode": "KM9008",
+     "tekst": "vurdere og velge måleutstyr og stille inn, justere og kalibrere måleutstyr i tråd med spesifikasjoner"
+    },
+    {
+     "kode": "KM9001",
+     "tekst": "gjennomføre målinger og kontrollere og dokumentere at arbeidet er i tråd med tegninger og spesifikasjoner, og feilkorrigere ved behov"
+    },
+    {
+     "kode": "KM8999",
+     "tekst": "kontrollere og dokumentere at produktet er i samsvar med standarder og kundens kravspesifikasjoner"
+    },
+    {
+     "kode": "KM8998",
+     "tekst": "kontrollere og dokumentere at utført arbeid er i tråd med gjeldende regelverk for helse, miljø og sikkerhet, prosedyrer og kvalitetssystemer"
+    },
+    {
+     "kode": "KM8997",
+     "tekst": "registrere og dokumentere avvik i systemet for helse, miljø og sikkerhet og vurdere korrigerende tiltak"
+    },
+    {
+     "kode": "KM8996",
+     "tekst": "gjøre rede for og reflektere over prosessen fra materialvalg til ferdig produkt og kundens krav til sluttproduktet"
+    },
+    {
+     "kode": "KM8995",
+     "tekst": "kildesortere og håndtere avfall og spesialavfall i tråd med bedriftens retningslinjer, og vurdere forbedrende tiltak"
+    },
+    {
+     "kode": "KM8994",
+     "tekst": "bruke egnet verneutstyr for den aktuelle arbeidsoppgaven og vurdere forebyggende tiltak"
+    },
+    {
+     "kode": "KM9000",
+     "tekst": "arbeide etter prosedyrer og tegninger, og utarbeide relevant dokumentasjon og tegningsgrunnlag"
+    },
+    {
+     "kode": "KM9009",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 industrimontørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 industrimontørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 industrimontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst fem virkedager."
+   ]
+  }
+ ]
+}

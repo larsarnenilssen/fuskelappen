@@ -1,0 +1,86 @@
+{
+ "kode": "MOK03-02",
+ "tittel": "Læreplan i tekst",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV562",
+   "tittel": "Kompetansemål og vurdering tekst",
+   "fag": [
+    "MOK3Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6504",
+     "tekst": "planlegge, produsere og ferdigstille ulike tekster i ulike sjangre og med ulike formål individuelt og i samarbeid med andre"
+    },
+    {
+     "kode": "KM6505",
+     "tekst": "bruke og reflektere over komposisjon og fortellerteknikk i egne og andres tekstproduksjoner"
+    },
+    {
+     "kode": "KM6506",
+     "tekst": "publisere og reflektere over valg av kanal for å nå ønsket målgruppe"
+    },
+    {
+     "kode": "KM6507",
+     "tekst": "vurdere kildebruk i egne og andres tekstproduksjoner"
+    },
+    {
+     "kode": "KM6508",
+     "tekst": "utforske og bruke dramaturgi og retorikk i egne og andres produksjoner"
+    },
+    {
+     "kode": "KM6509",
+     "tekst": "drøfte og presentere ulike tekster ved bruk av fagterminologi"
+    },
+    {
+     "kode": "KM6510",
+     "tekst": "utforske og eksperimentere med egne og andres tekster i en uttrykkshistorisk sammenheng"
+    },
+    {
+     "kode": "KM6511",
+     "tekst": "vurdere og produsere tekster i samsvar med etiske retningslinjer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM6512",
+     "tekst": "drøfte grunnlaget for offentlig diskurs og aktiv deltakelse i demokratiske prosesser ved ulike tekstuttrykk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i tekst. Elevene viser og utvikler kompetanse i faget ved å planlegge, produsere og ferdigstille tekstuttrykk for ulike målgrupper. Elevene viser og utvikler også kompetanse i faget gjennom å utforske, analysere og vurdere tekstuttrykk. Elevene viser og utvikler kompetanse i faget når de drøfter og presenterer egne og andres tekster ved bruk av fagterminologi. Videre viser og utvikler elevene kompetanse i faget ved å reflektere over tekstlige uttrykks betydning i et demokratisk samfunn og ved å utvikle ferdigheter for å kunne delta aktivt i demokratiske prosesser.",
+    "Læreren skal videre legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske ulike tekstuttrykks betydning og ved å øve opp deres kritiske og etisk bevissthet. Læreren skal være i dialog med elevene om utviklingen deres i tekstfaget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetanse innenfor et bredt utvalg av oppgaver i forbindelse med tekstproduksjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen elevene har ved avslutningen av opplæringen etter tekst. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i tekst basert på kompetansen eleven har vist gjennom planlegging og praktisk produksjon av tekstlige uttrykk i ulike sjangre og gjennom å reflektere over komposisjon og fortellerteknikk, etiske retningslinjer og gjeldende regelverk."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Tekst: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Tekst: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Tekst: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

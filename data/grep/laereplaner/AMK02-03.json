@@ -1,0 +1,176 @@
+{
+ "kode": "AMK02-03",
+ "tittel": "Læreplan i vg2 arbeidsmaskiner",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV348",
+   "tittel": "Kompetansemål og vurdering planlegging og kommunikasjon",
+   "fag": [
+    "AMK2Z03",
+    "AMK2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3665",
+     "tekst": "planlegge arbeid og prosesser i tråd med gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3664",
+     "tekst": "utføre varme arbeider etter gjeldende regler og krav og reflektere over nødvendige sikkerhetstiltak"
+    },
+    {
+     "kode": "KM3663",
+     "tekst": "vurdere risiko ved, og følge rutiner for stropping, anhuking og signalføring"
+    },
+    {
+     "kode": "KM3662",
+     "tekst": "utføre arbeidsoppgaver i tråd med bestemmelsene for arbeidsmiljø, ansvar og konsekvenser"
+    },
+    {
+     "kode": "KM3661",
+     "tekst": "bruke sikkerhetsdatablader og velge og behandle kjemiske produkter i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM3660",
+     "tekst": "registrere avvik på arbeidsmaskiner, utarbeide avviksrapporter og følge gjeldende regelverk for bruk av arbeidsutstyr"
+    },
+    {
+     "kode": "KM3659",
+     "tekst": "reflektere over risiko og utarbeide risikovurderinger knyttet til ulike arbeidsoppgaver"
+    },
+    {
+     "kode": "KM3658",
+     "tekst": "bruke verneutstyr og reflektere over sammenhengen mellom ergonomi og helse"
+    },
+    {
+     "kode": "KM3657",
+     "tekst": "vurdere og dokumentere kvalitet på eget arbeid i henhold til beskrivelser, regelverk og standarder"
+    },
+    {
+     "kode": "KM3656",
+     "tekst": "beregne kostnader ved reparasjon og vedlikehold og vurdere dette opp mot lønnsomhet og valg av metoder"
+    },
+    {
+     "kode": "KM3666",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM3679",
+     "tekst": "reflektere over hvordan håndtering av utslipp og avfall, bruk av tilgjengelig teknologi og valg av produkter og metode kan påvirke bærekraftig utvikling på lokalt og globalt nivå"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i planlegging og kommunikasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i planlegging og kommunikasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i planlegging og kommunikasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i planlegging og kommunikasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV347",
+   "tittel": "Kompetansemål og vurdering reparasjon og vedlikehold",
+   "fag": [
+    "AMK2Z04",
+    "AMK2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3655",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver knyttet til reparasjon og vedlikehold av anleggs-, landbruks-, truck- og liftmaskiner og tilhørende utstyr"
+    },
+    {
+     "kode": "KM3677",
+     "tekst": "utføre periodisk ettersyn og forebyggende vedlikehold av arbeidsmaskiner og utstyr"
+    },
+    {
+     "kode": "KM3676",
+     "tekst": "demontere og montere maskinkomponenter ved å velge og bruke verktøy, utstyr, deler og arbeidsmetoder ut fra sikkerhetskrav og fabrikantens tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM3675",
+     "tekst": "bruke digitalt verktøy til feilsøking, kalibrering og oppdatering av en arbeidsmaskin"
+    },
+    {
+     "kode": "KM3674",
+     "tekst": "velge og utføre ulike reparasjonssveisings- og sammenføyningsmetoder ut fra prosedyrer og standarder"
+    },
+    {
+     "kode": "KM3673",
+     "tekst": "demontere og montere motorkomponenter og forklare oppbygningen og virkemåten til ulike motortyper"
+    },
+    {
+     "kode": "KM3672",
+     "tekst": "beskrive oppbygningen og virkemåten til etterbehandlingssystemer for avgasser fra forbrenningsmotorer"
+    },
+    {
+     "kode": "KM3671",
+     "tekst": "utføre service på komfort- og klimaanlegg i henhold til prosedyre og sikkerhetshensyn"
+    },
+    {
+     "kode": "KM3670",
+     "tekst": "beskrive oppbygningen og virkemåten til systemer og komponenter i drivverk, styring og bremser"
+    },
+    {
+     "kode": "KM3669",
+     "tekst": "bruke skjemaer for elektrisitet og hydraulikk for å måle grunnleggende elektriske og hydrauliske størrelser og vurdere måleresultatet opp mot teknisk litteratur"
+    },
+    {
+     "kode": "KM3668",
+     "tekst": "forklare oppbygningen og virkemåten til hydraulikk og trykkluftsystemer og utføre trykkmålinger og justeringer"
+    },
+    {
+     "kode": "KM3678",
+     "tekst": "identifisere og gjøre rede for egenskaper ved og bruksområder for oljer og væsker som brukes i arbeidsmaskiner og utstyr ut fra teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM3667",
+     "tekst": "vurdere og reflektere over sikkerhetstiltak ved reparasjoner på elektrisk drevne, gass- og hydrogendrevne arbeidsmaskiner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i reparasjon og vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene Læreren og elevene skal være i dialog om elevenes utvikling i reparasjon og vedlikehold. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget reparasjon og vedlikehold ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget reparasjon og vedlikehold basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Planlegging og kommunikasjon: Eleven skal ha én standpunktkarakter.",
+    "Reparasjon og vedlikehold: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Planlegging og kommunikasjon og reparasjon og vedlikehold: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Planlegging og kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Reparasjon og vedlikehold: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Planlegging og kommunikasjon og reparasjon og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

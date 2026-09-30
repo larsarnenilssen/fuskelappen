@@ -1,0 +1,105 @@
+{
+ "kode": "MAT09-02",
+ "tittel": "Læreplan i matematikk fellesfag vg1 teoretisk (matematikk T)",
+ "spraak": "nno",
+ "fastsatt": "2025-10-13",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV979",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MAT9Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12756",
+     "tekst": "formulere og løyse problem ved hjelp av algoritmisk tenking, ulike problemløysingsstrategiar, digitale verktøy og programmering"
+    },
+    {
+     "kode": "KM12764",
+     "tekst": "lese og forstå matematiske bevis og utforske og utvikle bevis i relevante matematiske emne"
+    },
+    {
+     "kode": "KM12762",
+     "tekst": "identifisere variable storleikar i ulike situasjonar, setje opp formlar og utforske desse ved hjelp av digitale verktøy"
+    },
+    {
+     "kode": "KM12755",
+     "tekst": "utforske strategiar for å løyse likningar, likningssystem og ulikskapar og argumentere for tenkjemåtane sine"
+    },
+    {
+     "kode": "KM12763",
+     "tekst": "forklare forskjellen mellom ein identitet, ei likning, eit algebraisk uttrykk og ein funksjon"
+    },
+    {
+     "kode": "KM12759",
+     "tekst": "utforske samanhengar mellom andregradslikningar og andregradsulikskapar, andregradsfunksjonar og kvadratsetningane og bruke samanhengane i problemløysing"
+    },
+    {
+     "kode": "KM12757",
+     "tekst": "modellere situasjonar knytte til ulike tema, drøfte, presentere og forklare resultata og argumentere for om modellane er gyldige"
+    },
+    {
+     "kode": "KM12760",
+     "tekst": "lese, hente ut og vurdere matematikk i relevante tekstar om ulike tema og presentere relevante berekningar og analysar av resultata"
+    },
+    {
+     "kode": "KM12768",
+     "tekst": "utforske og beskrive eigenskapane ved polynomfunksjonar, rasjonale funksjonar, eksponentialfunksjonar og potensfunksjonar"
+    },
+    {
+     "kode": "KM12758",
+     "tekst": "bruke gjennomsnittleg og momentan vekstfart i konkrete døme og gjere greie for den deriverte"
+    },
+    {
+     "kode": "KM12761",
+     "tekst": "forklare polynomdivisjon og bruke det til å omskrive algebraiske uttrykk, drøfte funksjonar og løyse likningar og ulikskapar"
+    },
+    {
+     "kode": "KM12765",
+     "tekst": "gjere greie for definisjonane av sinus, cosinus og tangens og bruke trigonometri til å berekne lengder, vinklar og areal i vilkårlege trekantar"
+    },
+    {
+     "kode": "KM12766",
+     "tekst": "grunngi sinus-, cosinus- og arealsetninga"
+    },
+    {
+     "kode": "KM12767",
+     "tekst": "bruke trigonometri til å analysere og løyse samansette teoretiske og praktiske problem med lengder, vinklar og areal"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 1T. Elevane viser og utviklar kompetanse i faget når dei finn, forstår og generaliserer matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar utforskande, problemløysande og med modellering ved å planleggje, utføre og presentere arbeid i faget. Elevane viser og utviklar òg kompetanse ved å utforske fagomgrep, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i programmering og strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og teoretiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 1T. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk 1T: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Matematikk 1T: Eleven kan trekkjast ut til skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Eleven kan óg trekkjast ut til munnleg-praktisk eksamen med førebuingsdel. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Matematikk 1T: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

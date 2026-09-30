@@ -1,0 +1,124 @@
+{
+ "kode": "SME03-02",
+ "tittel": "Læreplan i vg3 smedfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV632",
+   "tittel": "Kompetansemål og vurdering vg3 smedfaget",
+   "fag": [
+    "SME3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7527",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM7541",
+     "tekst": "lage og nytte skisser og tekniske teikningar i eige arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM7546",
+     "tekst": "velje og nytte stål og andre metall til ulike formål"
+    },
+    {
+     "kode": "KM7539",
+     "tekst": "velje og dimensjonere materiale ut frå forma og funksjonen til produktet"
+    },
+    {
+     "kode": "KM7540",
+     "tekst": "vurdere og velje samanføyingsmetodar etter kva form og funksjon produktet skal ha"
+    },
+    {
+     "kode": "KM7534",
+     "tekst": "anvende og nytte smisveising og ulike moderne sveisemetodar til samanføying av metall"
+    },
+    {
+     "kode": "KM7545",
+     "tekst": "anvende stuking, bøying, strekking, kløyving, krymping, samanføying og andre smiteknikkar i eige arbeid"
+    },
+    {
+     "kode": "KM7544",
+     "tekst": "varmebehandle ulike ståltypar og metallegeringar og gjere greie for korleis ulike val av stål påverkar bruksområdet til gjenstanden"
+    },
+    {
+     "kode": "KM7538",
+     "tekst": "vurdere og anvende ulike overflatebehandlingar på stål og metall og gjere greie for korleis ulike val påverkar kvalitet, haldbarheit og miljø"
+    },
+    {
+     "kode": "KM7537",
+     "tekst": "lage ulike typar eggverktøy ut frå kundebehov og bestilling"
+    },
+    {
+     "kode": "KM7535",
+     "tekst": "utforske og utføre eldre smiteknikkar i samband med restaurering og reproduksjonsarbeid"
+    },
+    {
+     "kode": "KM7543",
+     "tekst": "utforske og lage hjelpeverktøy og bruke dei i produksjonen"
+    },
+    {
+     "kode": "KM7542",
+     "tekst": "montere og nytte maskiner, verktøy og anna utstyr i smia"
+    },
+    {
+     "kode": "KM7536",
+     "tekst": "gjere greie for den historiske utviklinga til smedfaget og anvende denne kunnskapen i eige smedarbeid"
+    },
+    {
+     "kode": "KM7531",
+     "tekst": "utforske og bruke historia og eigenarten til faget til å formidle og føre vidare tradisjonell smedkunnskap for å rettleie kundar og ta del i utviklinga av smedfaget"
+    },
+    {
+     "kode": "KM7547",
+     "tekst": "vurdere miljøeffektar av smedproduksjon og gjere greie for bruk og val av materiale og brensel, og for korleis ein kjeldesorterer og handterer avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM7532",
+     "tekst": "berekne pris, marknadsføre eigne produkt og tenester og vurdere samanhengen mellom materialval, produktivitet og lønnsemd"
+    },
+    {
+     "kode": "KM7533",
+     "tekst": "presentere og marknadsføre eige arbeid og bruke fagspråk i kommunikasjon med kundar, samarbeidspartnarar, andre fagutøvarar og leverandørar"
+    },
+    {
+     "kode": "KM7530",
+     "tekst": "finne informasjon for å drøfte og analysere faglege spørsmål og problemstillingar, og bruke kjeldene på ein måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7529",
+     "tekst": "nytte og halde ved like maskiner, verktøy og utstyr i samsvar med gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM7528",
+     "tekst": "bruke formålstenlege arbeidsstillingar og gjere greie for gode arbeidsrutinar i ein produksjon"
+    },
+    {
+     "kode": "KM7548",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 smedfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren og lærlingane skal vere i dialog om utviklinga til lærlingane i vg3 smedfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 smedfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

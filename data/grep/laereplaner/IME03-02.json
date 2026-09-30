@@ -1,0 +1,120 @@
+{
+ "kode": "IME03-02",
+ "tittel": "Læreplan i vg3 industrimekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV697",
+   "tittel": "Kompetansemål og vurdering vg3 industrimekanikerfaget",
+   "fag": [
+    "IME3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8990",
+     "tekst": "ivareta helse, miljø og sikkerhet og kvalitet i henhold til bedriftenes, kundenes og myndighetenes krav"
+    },
+    {
+     "kode": "KM8972",
+     "tekst": "reflektere over risiko og utføre sikker jobb-analyser før arbeid settes i gang"
+    },
+    {
+     "kode": "KM8989",
+     "tekst": "utføre kildesortering og håndtere fraksjoner i tråd med gjeldende krav og rutiner"
+    },
+    {
+     "kode": "KM8988",
+     "tekst": "finne og tolke dokumentasjon som gjelder farer knyttet til aktuelle stoffer, gasser og kjemikalier, og anvende disse i tråd med gjeldende krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8978",
+     "tekst": "registrere avvik og vurdere og gjennomføre korrigerende tiltak"
+    },
+    {
+     "kode": "KM8973",
+     "tekst": "skissere, tegne, tolke og korrigere manuelle og digitale tegninger"
+    },
+    {
+     "kode": "KM8975",
+     "tekst": "utføre beregninger av materialbehov i henhold til tegninger og spesifikasjoner"
+    },
+    {
+     "kode": "KM8992",
+     "tekst": "velge materialer og produsere deler og komponenter som beskrevet ut fra tegninger"
+    },
+    {
+     "kode": "KM8974",
+     "tekst": "velge og bruke sammenføyningsmetoder ut fra spesifikasjoner"
+    },
+    {
+     "kode": "KM8976",
+     "tekst": "utføre og forklare ulike metoder og teknikker innenfor overflatebehandling av materialer"
+    },
+    {
+     "kode": "KM8977",
+     "tekst": "anvende analoge og digitale måleverktøy i tråd med gjeldende krav til nøyaktighet"
+    },
+    {
+     "kode": "KM8981",
+     "tekst": "gjennomføre endringer i parametre og vurdere resultatet ved betjening av utstyr i analoge og digitalt styrte prosesser tilgjengelig i bedriften"
+    },
+    {
+     "kode": "KM8982",
+     "tekst": "bidra med mekanisk kompetanse i automatisering av arbeidsprosesser ved bruk av tilgjengelig teknologi"
+    },
+    {
+     "kode": "KM8986",
+     "tekst": "montere og drifte elektriske, pneumatiske og hydrauliske prosesser"
+    },
+    {
+     "kode": "KM8985",
+     "tekst": "utføre fra- og tilkobling på elektriske systemer i tråd med gjeldende el-regelverk i forbindelse med vedlikeholdsarbeid"
+    },
+    {
+     "kode": "KM8987",
+     "tekst": "feilsøke, reparere, funksjonsteste og vedlikeholde tekniske og mekaniske innretninger i tråd med gjeldende regelverk og produsentens spesifikasjoner"
+    },
+    {
+     "kode": "KM8984",
+     "tekst": "måle trykk, temperatur, lengde, mengde og tid og vurdere resultatene"
+    },
+    {
+     "kode": "KM8983",
+     "tekst": "velge væsker og smøremidler ut fra komponentenes behov og produsentenes spesifikasjoner"
+    },
+    {
+     "kode": "KM8991",
+     "tekst": "reflektere over valg av metoder og løsninger og presentere forslag til forbedringer"
+    },
+    {
+     "kode": "KM8980",
+     "tekst": "reflektere over valg av arbeidsmetoder, materialer og ressurser ut fra det grønne skiftet og sirkulær økonomi"
+    },
+    {
+     "kode": "KM8979",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 industrimekanikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 industrimekanikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 industrimekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fem til åtte virkedager."
+   ]
+  }
+ ]
+}

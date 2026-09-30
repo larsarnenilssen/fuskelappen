@@ -1,0 +1,140 @@
+{
+ "kode": "SLF03-02",
+ "tittel": "Læreplan i vg3 slakterfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV661",
+   "tittel": "Kompetansemål og vurdering vg3 slakterfaget",
+   "fag": [
+    "SLF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8219",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere driving, oppstalling, bedøving og avliving av dyr og klargjøring av skrotter for videre bearbeiding"
+    },
+    {
+     "kode": "KM8218",
+     "tekst": "gjøre rede for gjeldende regelverk for transport av levende dyr"
+    },
+    {
+     "kode": "KM8217",
+     "tekst": "gjøre rede for og ta hensyn til dyrenes naturlige instinkter og vise respekt under driving av levende slaktedyr i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM8205",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM8226",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM8214",
+     "tekst": "kontrollere, slipe, vedlikeholde og bruke kniver og begrunne hvordan dette bidrar til egen helse"
+    },
+    {
+     "kode": "KM8216",
+     "tekst": "vedlikeholde og dokumentere kontroll av bedøvingsutstyr og gjøre rede for konsekvenser av manglende vedlikehold og dokumentasjon"
+    },
+    {
+     "kode": "KM8211",
+     "tekst": "utføre bedøving og avliving med stikking og blodtapping og nødvendig etterkontroll i henhold til gjeldende regelverk og gjøre rede for konsekvensene av avvik"
+    },
+    {
+     "kode": "KM8224",
+     "tekst": "vurdere og gjennomføre tiltak for å hindre spredning av forurenset kjøtt og gjøre rede for og følge rutiner for håndtering og registrering av særskilt risikomateriale"
+    },
+    {
+     "kode": "KM8223",
+     "tekst": "gjøre rede for klassifiseringens betydning for økonomi og anvendelse av hele slaktet"
+    },
+    {
+     "kode": "KM8201",
+     "tekst": "kontrollere, tilskjære, bearbeide og pakke biprodukter etter spesifikasjoner og reflektere over den økonomiske betydningen av å utnytte hele slaktet"
+    },
+    {
+     "kode": "KM8207",
+     "tekst": "analysere og tolke nøkkeltall og drøfte faktorer som påvirker virksomhetens økonomiske resultater"
+    },
+    {
+     "kode": "KM8222",
+     "tekst": "praktisere lovpålagt og forsvarlig bruk og oppbevaring av farlige stoffer og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8208",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8209",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8220",
+     "tekst": "reflektere over hvordan uønskede mikroorganismer kan påvirke slakteskrott og biprodukter og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM8215",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM8213",
+     "tekst": "bruke verktøy, maskiner, kniver og utstyr på en faglig kvalifisert måte, utføre forebyggende daglig vedlikehold og gjøre rede for konsekvensene ved avvik"
+    },
+    {
+     "kode": "KM8212",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM8204",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM8221",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8203",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM8210",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM8225",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM8202",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM8206",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 slakterfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 slakterfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 slakterfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

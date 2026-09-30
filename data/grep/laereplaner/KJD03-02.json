@@ -1,0 +1,124 @@
+{
+ "kode": "KJD03-02",
+ "tittel": "Læreplan i vg3 kjole- og draktsyerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV644",
+   "tittel": "Kompetansemål og vurdering vg3 kjole- og draktsyerfaget",
+   "fag": [
+    "KJD3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7792",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7796",
+     "tekst": "planlegge og produsere målsydde klær og mindre kolleksjoner til dame"
+    },
+    {
+     "kode": "KM7794",
+     "tekst": "planlegge, velge og gjøre rede for bruk av ulike fasonger, materialer og sømteknikker i design- og produksjonsprosessen"
+    },
+    {
+     "kode": "KM7788",
+     "tekst": "utforske og anvende trender, mote og drakthistorie som inspirasjon i designprosessen"
+    },
+    {
+     "kode": "KM7790",
+     "tekst": "utvikle ideer og lage skisser og bruke disse i kommunikasjon med kunder om design, materiale, form og funksjon"
+    },
+    {
+     "kode": "KM7789",
+     "tekst": "anvende arbeidstegninger og motetegninger i presentasjon og produksjon av klær"
+    },
+    {
+     "kode": "KM7786",
+     "tekst": "bruke skisser, tegninger og bilder som utgangspunkt ved utarbeidelse av mønstre"
+    },
+    {
+     "kode": "KM7791",
+     "tekst": "ta mål, konstruere grunnform og utvikle snittmønster etter kundens personlige mål"
+    },
+    {
+     "kode": "KM7797",
+     "tekst": "modellere plagg og plaggdetaljer på kunde eller byste"
+    },
+    {
+     "kode": "KM7783",
+     "tekst": "overføre mønstre til tekstiler og materialer og klippe og merke ut fra mønstrets form og plaggets funksjon"
+    },
+    {
+     "kode": "KM7802",
+     "tekst": "anvende og utnytte materialer på en hensiktsmessig og bærekraftig måte ved ny produksjon, reparasjoner, omsøm og redesign"
+    },
+    {
+     "kode": "KM7787",
+     "tekst": "bruke ulike sømteknikker for hånd og med maskin, og velge teknikk ut fra materiale og produkt"
+    },
+    {
+     "kode": "KM7800",
+     "tekst": "bruke ulike presseteknikker og velge og begrunne teknikk ut fra materiale og produkt"
+    },
+    {
+     "kode": "KM7799",
+     "tekst": "planlegge og gjennomføre innprøving, og tilpasse og vurdere plagg på kunden"
+    },
+    {
+     "kode": "KM7795",
+     "tekst": "vurdere og dokumentere håndverksfaglig kvalitet på eget arbeid og gjøre rede for hvordan ulike valg påvirker produksjon og design"
+    },
+    {
+     "kode": "KM7801",
+     "tekst": "velge og bruke digitale verktøy i arbeid med design og produktutvikling og til å presentere egne produkter og tjenester"
+    },
+    {
+     "kode": "KM7798",
+     "tekst": "anvende fagspråk i kommunikasjon med kunder og andre om design, farge, form og materialer"
+    },
+    {
+     "kode": "KM7793",
+     "tekst": "beregne materialbruk, tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7785",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7784",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet og bruke hensiktsmessige arbeidsstillinger"
+    },
+    {
+     "kode": "KM7803",
+     "tekst": "gjøre rede for og følge gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid på verkstedet"
+    },
+    {
+     "kode": "KM7804",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kjole- og draktsyerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 kjole- og draktsyerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kjole- og draktsyerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst åtte virkedager."
+   ]
+  }
+ ]
+}
