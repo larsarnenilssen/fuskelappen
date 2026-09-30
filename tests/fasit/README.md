@@ -27,10 +27,12 @@ elever fra ulike program eller nivåer i samme time (laveste årsramme brukes).
 | kalkulator | input | forventet |
 |---|---|---|
 | `beskjeftigelse` | `grupper: [{ arsrammer, elever, arstimer }]` | `beskjeftigelse`, `arsramme` (første gruppe) |
-| `periode` | `grupper: [{ arsrammer, elever, timer }]`, `dager_i_perioden`, `dager_i_skolearet` | `beskjeftigelse` |
+| `periode` | `grupper: [{ arsrammer, elever, timer }]` eller `[{ arsrammer, elever, okter_per_uke, minutter, uker }]` (uten `uker` regnes ukene ut fra dagene), `dager_i_perioden`, `dager_i_skolearet` | `beskjeftigelse` |
 | `planfestet` | `reduksjon: { prosent }` eller `{ arsrammetimer }` | `funksjonsprosent`, `planfestet`, `per_uke`, `utvidelse_dager` |
 | `vikar-fast` | `arsrammer`, `elever`, `okter`, `minutter` | `endring` |
 | `timevikar` | som `vikar-fast`, pluss `lonn: { stillingsgruppe, ansiennitet }` eller `{ arslonn }`, `over60` | `kalkulert_tid`, `timelonn`, `lonn`, `feriepenger`, `samlet` |
 | `stillingsplan` | `stilling`, `grupper: [{ arsrammer, elever, arstimer }]`, `funksjoner: [{ prosent }]` | `undervisning`, `beskjeftigelse`, `differanse` (minus er teknisk undertid), `timer_fag_1`, `timer_fag_2` … (differansen i årsrammetimer med årsrammen i gruppe 1, 2 …) |
+| `arbeidsplan` | `stilling`, `grupper`, `funksjoner: [{ prosent }` eller `{ arsrammetimer }`, `utvider` (standard `true`)`]`, `moter_per_uke`, `redusert_undervisning` (punkt 6, i prosent), `over60` | `funksjonsprosent`, `beskjeftigelse`, `differanse`, `differanse_timer` (gruppe 1), `arsverk`, `undervisningstimer`, `motetid`, `annen_planfestet`, `funksjonstid`, `selvdisponert`, `planfestet`, `arbeidsaar_uker`, `utvidelse_dager`, `per_uke` (timer per år, som tabellen i Arbeidsplan) |
+| `lonn` | `lonn` (som `timevikar`), `stilling`, `tillegg`, `overtid: { beskjeftigelse, arsrammer, elever }`, `over60` | `arslonn` (i stillingen), `overtid`, `samlet`, `feriepenger` |
 
 Bare nøklene som står under `forventet`, sjekkes.

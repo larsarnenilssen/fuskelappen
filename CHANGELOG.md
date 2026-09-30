@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.6.2] – 2026-09-30
+
+### Endret
+
+- **60 år og eldre:** De 37,5 timene årsverket er kortere med, er fem arbeidsdager ekstra ferie. Arbeidsåret er derfor 191 dager eller 38,2 uker, og timene per uke i Arbeidsplan regnes med det. Planfestet tid er samme andel av årsverket som for andre lærere, 1150 × 1650 ÷ 1687,5 = 1124,44 timer, så ferien tas like mye fra planfestet tid og tiden læreren disponerer selv. Utregningen viser begge deler.
+
+### Lagt til
+
+- Ni nye fasiteksempler godkjent av eier (015–023): fordeling i Arbeidsplan med og uten utvidet planfestet tid, deltid, stilling med bare funksjon, lønn med overtid og tillegg, lønn fra 60 år periode med uker regnet ut fra dagene og redusert undervisning fra 60 år.
+
 ## [0.6.1] – 2026-09-30
 
 ### Lagt til

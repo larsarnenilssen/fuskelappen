@@ -15,15 +15,15 @@
 
       Mellomregningene avrundes ikke. Svaret vises med to desimaler.
 
-      **Fordelingen av arbeidstiden** vises også før noe er fylt ut. Årsverket er 1687,5 timer, eller 1650 timer for lærere som er 60 år og eldre (punkt 4). I videregående er 1150 timer planfestet, og resten disponerer læreren selv (punkt 5.1 og 5.2).
+      **Fordelingen av arbeidstiden** vises også før noe er fylt ut. Årsverket er 1687,5 timer, eller 1650 timer for lærere som er 60 år og eldre (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie, og planfestet tid er samme andel av årsverket som for andre lærere: 1150 × 1650 ÷ 1687,5 = 1124,44 timer. Da tas ferien like mye fra planfestet tid og tiden læreren disponerer selv. I videregående er 1150 timer planfestet, og resten disponerer læreren selv (punkt 5.1 og 5.2).
 
       - **Undervisning** er årstimene i fagene. **Møtetid** er møtetimene per uke × 38 uker.
-      - For undervisningsdelen er planfestet tid 1150 × prosent. Det som ikke går til undervisning og møter, er **annen planfestet tid**. Tiden læreren **disponerer selv**, er (årsverk − 1150) × prosent.
+      - For undervisningsdelen er planfestet tid 1150 × prosent (1124,44 × prosent fra 60 år). Det som ikke går til undervisning og møter, er **annen planfestet tid**. Tiden læreren **disponerer selv**, er (årsverk − 1150) × prosent.
       - **Funksjoner som utvider planfestet tid** gir funksjonstid = årsverk × prosent, all planfestet. For hel stilling gir det samme planfestede tid som punkt 5.3: tiden læreren disponerer selv, reduseres med samme prosent som undervisningen, og planfestet tid øker like mye.
       - **Funksjoner som ikke utvider planfestet tid**, og **redusert undervisning**, fordeles som undervisningen: 1150 × prosent planfestet tid og resten til tid læreren disponerer selv. For nyutdannede og lærere over 60 år sier punkt 6 at den frigjorte tiden legges i planfestet tid, der den erstatter undervisning. Appen bruker den samme regelen for 57-åringer, uten at det står uttrykkelig i avtaleteksten.
       - Den delen av stillingen som ikke er fylt med fag og funksjoner, fordeles som undervisningsdelen. En hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv.
       - Får ikke møtetiden plass i den planfestede tiden for undervisningsdelen, for eksempel når stillingen bare er funksjon, legges resten i funksjonstiden.
-      - **Timer per uke** er timene delt på uker i arbeidsåret: elevenes skoleår (190 dager) og 6 dager, altså 196 dager eller 39,2 uker. Planfestet tid kan være høyst 37,5 timer per uke (punkt 5.1). Blir den mer, utvides arbeidsåret: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med.
+      - **Timer per uke** er timene delt på uker i arbeidsåret: elevenes skoleår (190 dager) og 6 dager, altså 196 dager eller 39,2 uker. For lærere som er 60 år og eldre er arbeidsåret fem dager kortere: 191 dager eller 38,2 uker. Planfestet tid kan være høyst 37,5 timer per uke (punkt 5.1). Blir den mer, utvides arbeidsåret: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med.
 
       For stillinger under 100 % er tiden regnet forholdsmessig. Diagrammet er en illustrasjon. Hvordan tiden fordeles, avtales på skolen.
 
@@ -44,15 +44,15 @@
 
       Mellomrekningane blir ikkje avrunda. Svaret blir vist med to desimalar.
 
-      **Fordelinga av arbeidstida** blir vist også før noko er fylt ut. Årsverket er 1687,5 timar, eller 1650 timar for lærarar som er 60 år og eldre (punkt 4). I vidaregåande er 1150 timar planfesta, og resten disponerer læraren sjølv (punkt 5.1 og 5.2).
+      **Fordelinga av arbeidstida** blir vist også før noko er fylt ut. Årsverket er 1687,5 timar, eller 1650 timar for lærarar som er 60 år og eldre (punkt 4). Dei 37,5 timane er fem arbeidsdagar ekstra ferie, og planfesta tid er same del av årsverket som for andre lærarar: 1150 × 1650 ÷ 1687,5 = 1124,44 timar. Då blir ferien teken like mykje frå planfesta tid og tida læraren disponerer sjølv. I vidaregåande er 1150 timar planfesta, og resten disponerer læraren sjølv (punkt 5.1 og 5.2).
 
       - **Undervisning** er årstimane i faga. **Møtetid** er møtetimane per veke × 38 veker.
-      - For undervisningsdelen er planfesta tid 1150 × prosent. Det som ikkje går til undervisning og møte, er **anna planfesta tid**. Tida læraren **disponerer sjølv**, er (årsverk − 1150) × prosent.
+      - For undervisningsdelen er planfesta tid 1150 × prosent (1124,44 × prosent frå 60 år). Det som ikkje går til undervisning og møte, er **anna planfesta tid**. Tida læraren **disponerer sjølv**, er (årsverk − 1150) × prosent.
       - **Funksjonar som utvidar planfesta tid** gir funksjonstid = årsverk × prosent, all planfesta. For heil stilling gir det same planfesta tid som punkt 5.3: tida læraren disponerer sjølv, blir redusert med same prosent som undervisninga, og planfesta tid aukar like mykje.
       - **Funksjonar som ikkje utvidar planfesta tid**, og **redusert undervisning**, blir fordelte som undervisninga: 1150 × prosent planfesta tid og resten til tid læraren disponerer sjølv. For nyutdanna og lærarar over 60 år seier punkt 6 at den frigjorde tida blir lagd i planfesta tid, der ho erstattar undervisning. Appen bruker den same regelen for 57-åringar, utan at det står uttrykkeleg i avtaleteksten.
       - Den delen av stillinga som ikkje er fylt med fag og funksjonar, blir fordelt som undervisningsdelen. Ei heil stilling utan fag og funksjonar gir 1150 timar anna planfesta tid og 537,5 timar tid læraren disponerer sjølv.
       - Får ikkje møtetida plass i den planfesta tida for undervisningsdelen, til dømes når stillinga berre er funksjon, blir resten lagd i funksjonstida.
-      - **Timar per veke** er timane delte på veker i arbeidsåret: skuleåret til elevane (190 dagar) og 6 dagar, altså 196 dagar eller 39,2 veker. Planfesta tid kan vere høgst 37,5 timar per veke (punkt 5.1). Blir ho meir, blir arbeidsåret utvida: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med.
+      - **Timar per veke** er timane delte på veker i arbeidsåret: skuleåret til elevane (190 dagar) og 6 dagar, altså 196 dagar eller 39,2 veker. For lærarar som er 60 år og eldre er arbeidsåret fem dagar kortare: 191 dagar eller 38,2 veker. Planfesta tid kan vere høgst 37,5 timar per veke (punkt 5.1). Blir ho meir, blir arbeidsåret utvida: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med.
 
       For stillingar under 100 % er tida rekna forholdsmessig. Diagrammet er ein illustrasjon. Korleis tida blir fordelt, blir avtalt på skulen.
 

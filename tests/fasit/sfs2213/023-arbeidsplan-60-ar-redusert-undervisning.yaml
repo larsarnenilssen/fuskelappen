@@ -1,0 +1,27 @@
+id: sfs2213-023
+beskrivelse: "Arbeidsplan, 100 % stilling, 60 år: engelsk Vg1 459,375 årstimer (87,5 %) og redusert undervisning 12,5 %."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: arbeidsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 459.375 }
+  redusert_undervisning: 12.5
+  over60: true
+forventet:
+  beskjeftigelse: 100
+  differanse: 0
+  arsverk: 1650
+  undervisningstimer: 459.38
+  annen_planfestet: 524.51
+  funksjonstid: 140.56
+  selvdisponert: 525.56
+  planfestet: 1124.44
+  arbeidsaar_uker: 38.2
+  per_uke: 29.44
+begrunnelse: >-
+  Årsverket er 1650 timer fra 60 år (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie, så arbeidsåret er
+  191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5 = 1124,44,
+  og tiden læreren disponerer selv er 525,56. Redusert undervisning fordeles som undervisningen: 1124,44 × 12,5 % = 140,56
+  planfestet. Undervisningsdelen 1124,44 × 87,5 % = 983,89 gir undervisning 459,38 og annen planfestet tid 524,51.
+  Per uke 1124,44 ÷ 38,2 = 29,44. Eksempel C, rettet av eier 30.09.2026 (samme andel av årsverket).

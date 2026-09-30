@@ -1,0 +1,16 @@
+id: sfs2213-022
+beskrivelse: "Periode på 40 dager i biologi 2 Vg3 studieforberedende, 3 økter à 60 minutter per uke, uker ikke oppgitt."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: periode
+input:
+  grupper:
+    - arsrammer: [{ fag: Bio, program: Stud.spes, trinn: Vg3 }]
+      elever: 30
+      okter_per_uke: 3
+      minutter: 60
+  dager_i_perioden: 40
+forventet:
+  beskjeftigelse: 22.98
+begrunnelse: >-
+  Uker i perioden = 40 dager ÷ 5 = 8. Timer i perioden = 3 × 60 × 8 ÷ 60 = 24. Perioderamme = 496 × 40 ÷ 190.
+  Beskjeftigelse = 24 ÷ perioderamme × 100 = 22,98 %. Eksempel G, godkjent av eier 30.09.2026.

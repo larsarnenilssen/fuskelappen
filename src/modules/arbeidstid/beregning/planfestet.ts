@@ -15,14 +15,36 @@ export function funksjonsprosent(hent: Hent, r: Reduksjon): { prosent: Operand; 
   return { prosent: t.resultat, trinn: [t] };
 }
 
-/** Arbeidsåret: elevenes skoleår + 6 dager, gjort om til uker. */
-export function arbeidsaaret(hent: Hent): { uker: Operand; trinn: Trinn[] } {
+/**
+ * Arbeidsåret: elevenes skoleår + 6 dager, gjort om til uker. For lærere som er 60 år og eldre er årsverket 37,5 timer
+ * kortere (punkt 4). Det er fem arbeidsdager ekstra ferie, så arbeidsåret er fem dager kortere (eier 30.09.2026).
+ * Dagene regnes ut fra regelverdiene: (årsverk − årsverk 60 år) ÷ 7,5.
+ */
+export function arbeidsaaret(hent: Hent, over60 = false): { uker: Operand; trinn: Trinn[] } {
   const skolear = regel(hent, 'sfs2213.skolear_dager', 'skolear_dager', 'dager');
   const tillegg = regel(hent, 'sfs2213.arbeidsaar_tillegg_dager', 'arbeidsaar_tillegg', 'dager');
-  const dager = trinn('arbeidsaar_dager', { skolear, tillegg }, 'arbeidsaar_dager', 'dager', skolear.verdi + tillegg.verdi);
+  const alle: Trinn[] = [];
+  let dager: Trinn;
+  if (over60) {
+    const arsverk = regel(hent, 'sfs2213.arsverk_timer', 'arsverk', 'timer');
+    const arsverk60 = regel(hent, 'sfs2213.arsverk_timer_60_ar', 'arsverk_60', 'timer');
+    const perDag = regel(hent, 'sfs2213.timer_per_dag', 'timer_per_dag', 'timer');
+    const ferie = trinn(
+      'ekstra_feriedager_60',
+      { arsverk, arsverk_60: arsverk60, per_dag: perDag },
+      'ekstra_feriedager',
+      'dager',
+      (arsverk.verdi - arsverk60.verdi) / perDag.verdi,
+    );
+    dager = trinn('arbeidsaar_dager_60', { skolear, tillegg, ferie: ferie.resultat }, 'arbeidsaar_dager', 'dager', skolear.verdi + tillegg.verdi - ferie.resultat.verdi);
+    alle.push(ferie);
+  } else {
+    dager = trinn('arbeidsaar_dager', { skolear, tillegg }, 'arbeidsaar_dager', 'dager', skolear.verdi + tillegg.verdi);
+  }
   const perUke = regel(hent, 'sfs2213.arbeidsdager_per_uke', 'arbeidsdager_per_uke', 'dager');
   const uker = trinn('arbeidsaar_uker', { dager: dager.resultat, per_uke: perUke }, 'arbeidsaar_uker', 'uker', dager.resultat.verdi / perUke.verdi);
-  return { uker: uker.resultat, trinn: [dager, uker] };
+  alle.push(dager, uker);
+  return { uker: uker.resultat, trinn: alle };
 }
 
 export interface PlanfestetResultat extends Utregning {
