@@ -33,7 +33,13 @@ jobs:
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
       - name: Installer nettlesere for Playwright
-        run: npx playwright install --with-deps chromium webkit
+        # Nedlastingen henger av og til. Da avbrytes den etter 5 minutter og prøves på nytt, opptil tre ganger.
+        run: |
+          for forsok in 1 2 3; do
+            timeout 300 npx playwright install --with-deps chromium webkit && exit 0
+            echo "::warning::Installasjonen av nettlesere hang eller feilet (forsøk $forsok av 3)."
+          done
+          exit 1
       - name: Ende-til-ende-tester (Chromium og WebKit)
         run: npm run test:e2e
       - uses: actions/upload-artifact@v4
