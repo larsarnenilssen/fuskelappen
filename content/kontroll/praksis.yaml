@@ -89,3 +89,11 @@ praksis:
     grunnlag: Appens valg, med utgangspunkt i SFS 2213 punkt 9.1.
     berorer: [sfs2213-2026-2027/godtgjoring_kontaktlaerer, funksjonsgodtgjoring, metode-arbeidsplan]
     bekreftet: null
+
+  - id: yff-arsramme
+    tittel: Årsramme for yrkesfaglig fordypning
+    sporsmal: Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning?
+    appen: Fagkoder for yrkesfaglig fordypning (YFF4101 osv.) kobles til raden for felles programfag på programmet og trinnet, f.eks. 607,5 på helse- og oppvekstfag vg2.
+    grunnlag: Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020.
+    berorer: [sfs2213-2026-2027/kobling_yff]
+    bekreftet: null

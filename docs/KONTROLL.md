@@ -15,8 +15,8 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 0 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 70 |
-| Praksis og tolkninger som bør bekreftes | 11 av 11 |
+| Ikke kontrollert | 74 |
+| Praksis og tolkninger som bør bekreftes | 12 av 12 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -24,6 +24,8 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Avvik fra kilden | 0 |
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
 | Enkeltverdier fra kilden uten sitat | 2 |
+
+**Kobling fra fagkode til årsramme** (fase 2): 748 av 1978 fagkoder er koblet, 1230 er ikke koblet, og det er 1 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
 
 ## Må ses på
 
@@ -46,6 +48,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Funksjoner i årsrammetimer** | Gjøres funksjoner som er oppgitt i årsrammetimer, fortsatt om til prosent med årsrammen 607,5? | Tolkning av vedlegg 1 til SFS 2213 (årsramme ved redusert undervisning på grunn av funksjon). | ikke bekreftet |
 | **Utvidet arbeidsår** | Regnes utvidelsen av arbeidsåret fortsatt som timene over 37,5 × 38 + 45 = 1470 planfestede timer, delt på 7,5 timer per dag? | Eier 30.09.2026. | ikke bekreftet |
 | **Tillegg for funksjoner** | Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner? | Appens valg, med utgangspunkt i SFS 2213 punkt 9.1. | ikke bekreftet |
+| **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | ikke bekreftet |
 
 ## Per kilde
 
@@ -174,9 +177,13 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
 | `arstimer` (sfs2213-2026-2027) | – | tabell, 98 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
-| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `fagnavn` (sfs2213-2026-2027) | – | tabell, 33 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `kallenavn` (sfs2213-2026-2027) | – | tabell, 43 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
+| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 142 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_regler` (sfs2213-2026-2027) | – | tabell, 36 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
 
 ### Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)
 

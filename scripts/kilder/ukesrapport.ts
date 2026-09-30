@@ -29,6 +29,8 @@ export interface Ukesgrunnlag {
   forslag?: { verdier: string | null; grep: string | null };
   /** Endringene i Grep denne uken (.generert/grep-endringer.json): læreplaner og fag listes i saken. */
   grep?: Grependringer | null;
+  /** Nye fag uten kobling til årsramme og nye avvik i koblingen (.generert/kobling-endringer.json). */
+  kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
 }
 
 /** Endrede læreplaner og fag fra Grep, til orientering i kontrollsaken (avgjørelse 022). */
@@ -192,6 +194,26 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   });
   if (g.forslag?.grep) grepLinjer.push(`- Forslag med de nye Grep-dataene: ${g.forslag.grep}`);
   if (grepLinjer.length > 0) deler.push(['## Grep', '', ...grepLinjer, '']);
+
+  // Koblingen fra fagkode til årsramme (avgjørelse 023): nye avvik skal ses på, nye ukoblede fag til orientering.
+  const kobling = g.kobling;
+  if (kobling && (kobling.nyeAvvik.length > 0 || kobling.nyeUkoblede.length > 0)) {
+    const lenke = `[docs/KOBLING.md](https://github.com/${g.repo}/blob/main/docs/KOBLING.md)`;
+    const linjer: string[] = [];
+    for (const a of kobling.nyeAvvik.slice(0, MAKS_DETALJER)) {
+      punkter += 1;
+      linjer.push(`- [ ] Nytt avvik i koblingen: ${a} <!-- kobling:${createHash('sha1').update(a).digest('hex').slice(0, 12)} -->`);
+    }
+    if (kobling.nyeUkoblede.length > 0) {
+      orientering += 1;
+      linjer.push(
+        `- ${kobling.nyeUkoblede.length === 1 ? 'Ett nytt fag' : `${kobling.nyeUkoblede.length} nye fag`} i Grep uten kobling til årsramme. Si fra til Claude hvis de skal kobles.`,
+        ...kobling.nyeUkoblede.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`),
+        ...(kobling.nyeUkoblede.length > MAKS_DETALJER ? [`  - … og ${kobling.nyeUkoblede.length - MAKS_DETALJER} til.`] : []),
+      );
+    }
+    deler.push(['## Kobling fra fagkode til årsramme', '', ...linjer, '', `Hele rapporten: ${lenke}.`, '']);
+  }
 
   const feilet = Object.entries(g.kildestatus.kilder).filter(([, p]) => p.status === 'feilet');
   if (feilet.length > 0) {

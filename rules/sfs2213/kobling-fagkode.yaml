@@ -1,0 +1,427 @@
+# Kobling fra fagkode i Grep til årsramme i vedlegg 1 til SFS 2213 (OPPDRAG fase 2, avgjørelse 023).
+# Del av regelsettet sfs2213-2026-2027. Radnummeret (nr) viser til rules/sfs2213/arsrammer-2026-2027.yaml.
+#
+# Slik finnes årsrammen for en fagkode (src/modules/arbeidstid/beregning/kobling.ts):
+# 1. Eksplisitt: fagkoden står i kobling_fellesfag eller kobling_programfag for utdanningsprogrammet og trinnet.
+# 2. Regel: fagkoden er et programfag (aldri et fellesfag), fagkodeprefikset står i en regel i kobling_regler eller
+#    kobling_yff, og faget brukes på utdanningsprogrammet og trinnet i Grep. Fagkoder i «unntak» følger ikke regelen.
+# 3. Manuell: brukeren velger rad i vedlegg 1 eller skriver årsrammen selv (i kalkulatoren).
+# Utdanningsprogram og trinn i Grep kommer fra programområdene faget brukes i (data/grep/fagindeks.json).
+# Gir koblingen ulik årsramme for ulike program eller trinn, spør kalkulatoren om program og trinn.
+# Fag som ikke er koblet, står i rapporten docs/KOBLING.md (npm run kobling:rapport), med grunn.
+#
+# Tabellene er et forslag laget av Claude 30.09.2026 ut fra navn, program og trinn i Grep og i vedlegg 1, og
+# fagsøket og årstimetabellen fra fase 1. Alt har kontrollert: null til eier har gått gjennom det.
+id: sfs2213-2026-2027
+regelverk: sfs2213
+del: kobling
+gyldig_fra: "2026-01-01"
+gyldig_til: "2027-12-31"
+kilde: udir-grep
+verdier:
+  programnavn:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    grunnlag: avledet
+    merknad: >-
+      Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver). PB er påbygging
+      til generell studiekompetanse (programområdet PBPBY3 i Grep). Vedlegget er skrevet for Kunnskapsløftet 2006.
+      Kunst, design og arkitektur (KD) og Medier og kommunikasjon (ME) er egne studieforberedende program fra 2020.
+      Om fellesfagene der skal ha årsrammen for «Stud.spes», er ikke avklart. Tabellen skal bekreftes av eier.
+    verdi:
+      - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST] }
+      - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }
+      - { vedlegg: "Idrett", navn: "Idrettsfag", grep: [ID] }
+      - { vedlegg: "Kunst, design og arkitektur", navn: "Kunst, design og arkitektur", grep: [KD] }
+      - { vedlegg: "Med./komm", navn: "Medier og kommunikasjon", grep: [ME] }
+      - { vedlegg: "Med./komm.", navn: "Medier og kommunikasjon", grep: [ME] }
+      - { vedlegg: "Yrkesfag", navn: "Yrkesfaglige utdanningsprogram", grep: [BA, DT, EL, FD, HS, IM, NA, RM, SR, TP] }
+      - { vedlegg: "Yrkes/På", navn: "Påbygging til generell studiekompetanse", grep: [PB] }
+      - { vedlegg: "Yrkesf/På", navn: "Påbygging til generell studiekompetanse", grep: [PB] }
+      - { vedlegg: "Rest. og mat", navn: "Restaurant- og matfag", grep: [RM] }
+      - { vedlegg: "Bygg og anl.", navn: "Bygg- og anleggsteknikk", grep: [BA] }
+      - { vedlegg: "Naturbruk", navn: "Naturbruk", grep: [NA] }
+      - { vedlegg: "Tekn/ind.prod", navn: "Teknologi- og industrifag", grep: [TP] }
+      - { vedlegg: "Helse/sos", navn: "Helse- og oppvekstfag", grep: [HS] }
+      - { vedlegg: "Elektrofag", navn: "Elektro og datateknologi", grep: [EL] }
+      - { vedlegg: "Håndverk, design og produktutvikling", navn: "Håndverk, design og produktutvikling", grep: [DT] }
+      - { vedlegg: "Frisør, blomster, interiør og eksponeringsdesign", navn: "Frisør, blomster, interiør og eksponeringsdesign", grep: [FD] }
+      - { vedlegg: "Salg, service, reiseliv", navn: "Salg, service og reiseliv", grep: [SR] }
+      - { vedlegg: "Informasjonsteknologi og medieproduksjon", navn: "Informasjonsteknologi og medieproduksjon", grep: [IM] }
+      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [] }
+      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [] }
+  kobling_fellesfag:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    grunnlag: avledet
+    merknad: >-
+      Fellesfag kobles alltid eksplisitt per fagkode, utdanningsprogram og trinn, aldri med prefiksregler (eier).
+      Med er hovedkodene for norsk, engelsk, matematikk, naturfag, samfunnskunnskap, historie, geografi, religion
+      og etikk, kroppsøving og alle fremmedspråk (også samiske språk og tegnspråk som fremmedspråk), med vurderingskodene for samme opplæring (f.eks. muntlig).
+      Norsk og engelsk på yrkesfag: NOR1262 og ENG1009 gjelder både vg1 og vg2 (eier 29.09.2026). Varianter
+      (samisk plan, tegnspråk, kort botid, grunnleggende norsk, styrket opplæring) og samisk er ikke koblet ennå.
+    verdi:
+      - { nr: 6, program: ST, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 7, program: ST, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 8, program: ST, trinn: Vg3, fagkoder: [KRO1019] }
+      - { nr: 9, program: BA, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: DT, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: EL, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: FD, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: HS, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: IM, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: NA, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: RM, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: SR, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 9, program: TP, trinn: Vg1, fagkoder: [KRO1017] }
+      - { nr: 10, program: BA, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: DT, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: EL, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: FD, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: HS, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: IM, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: NA, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: RM, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: SR, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 10, program: TP, trinn: Vg2, fagkoder: [KRO1018] }
+      - { nr: 33, program: ID, trinn: Vg3, fagkoder: [REL1003] }
+      - { nr: 34, program: MD, trinn: Vg3, fagkoder: [REL1003] }
+      - { nr: 35, program: ST, trinn: Vg3, fagkoder: [REL1003] }
+      - { nr: 36, program: BA, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: DT, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: EL, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: FD, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: HS, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: IM, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: NA, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: RM, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: SR, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 36, program: TP, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 37, program: ID, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 38, program: MD, trinn: Vg2, fagkoder: [SAK1001] }
+      - { nr: 39, program: ST, trinn: Vg1, fagkoder: [SAK1001] }
+      - { nr: 40, program: ST, trinn: Vg1, fagkoder: [NAT1007] }
+      - { nr: 41, program: BA, trinn: Vg1, fagkoder: [NAT1008] }
+      - { nr: 41, program: DT, trinn: Vg1, fagkoder: [NAT1012] }
+      - { nr: 41, program: EL, trinn: Vg1, fagkoder: [NAT1009] }
+      - { nr: 41, program: FD, trinn: Vg1, fagkoder: [NAT1010] }
+      - { nr: 41, program: HS, trinn: Vg1, fagkoder: [NAT1011] }
+      - { nr: 41, program: IM, trinn: Vg1, fagkoder: [NAT1013] }
+      - { nr: 41, program: NA, trinn: Vg1, fagkoder: [NAT1014] }
+      - { nr: 41, program: RM, trinn: Vg1, fagkoder: [NAT1015] }
+      - { nr: 41, program: SR, trinn: Vg1, fagkoder: [NAT1016] }
+      - { nr: 41, program: TP, trinn: Vg1, fagkoder: [NAT1017] }
+      - { nr: 42, program: PB, trinn: Vg3, fagkoder: [NAT1018] }
+      - { nr: 43, program: ID, trinn: Vg1, fagkoder: [NAT1007] }
+      - { nr: 44, program: MD, trinn: Vg1, fagkoder: [NAT1007] }
+      - { nr: 45, program: ST, trinn: Vg1, fagkoder: [FSP6138, FSP6141, FSP6148, FSP6151, FSP6154, FSP6158, FSP6161, FSP6164, FSP6168, FSP6171,
+                                                      FSP6174, FSP6178, FSP6181, FSP6184, FSP6188, FSP6191, FSP6194, FSP6198, FSP6201, FSP6204,
+                                                      FSP6208, FSP6211, FSP6214, FSP6218, FSP6221, FSP6224, FSP6228, FSP6231, FSP6234, FSP6238,
+                                                      FSP6241, FSP6244, FSP6248, FSP6251, FSP6258, FSP6261, FSP6268, FSP6271, FSP6278, FSP6281,
+                                                      FSP6288, FSP6291, FSP6295, FSP6298, FSP6301, FSP6308, FSP6311, FSP6318, FSP6321, FSP6328,
+                                                      FSP6331, FSP6338, FSP6341, FSP6348, FSP6351, FSP6358, FSP6361, FSP6368, FSP6371, FSP6374,
+                                                      FSP6378, FSP6381, FSP6388, FSP6391, FSP6398, FSP6401, FSP6408, FSP6411, FSP6418, FSP6421,
+                                                      FSP6428, FSP6431, FSP6438, FSP6441, FSP6448, FSP6451, FSP6458, FSP6461, FSP6468, FSP6471,
+                                                      FSP6478, FSP6481, FSP6488, FSP6491, FSP6494, FSP6498, FSP6501, FSP6508, FSP6511, FSP6518,
+                                                      FSP6521, FSP6528, FSP6531, FSP6538, FSP6541, FSP6548, FSP6551, FSP6558, FSP6561, FSP6568,
+                                                      FSP6571] }
+      - { nr: 46, program: ID, trinn: Vg1, fagkoder: [FSP6138, FSP6141, FSP6148, FSP6151, FSP6154, FSP6158, FSP6161, FSP6164, FSP6168, FSP6171,
+                                                      FSP6174, FSP6178, FSP6181, FSP6184, FSP6188, FSP6191, FSP6194, FSP6198, FSP6201, FSP6204,
+                                                      FSP6208, FSP6211, FSP6214, FSP6218, FSP6221, FSP6224, FSP6228, FSP6231, FSP6234, FSP6238,
+                                                      FSP6241, FSP6244, FSP6248, FSP6251, FSP6258, FSP6261, FSP6268, FSP6271, FSP6278, FSP6281,
+                                                      FSP6288, FSP6291, FSP6295, FSP6298, FSP6301, FSP6308, FSP6311, FSP6318, FSP6321, FSP6328,
+                                                      FSP6331, FSP6338, FSP6341, FSP6348, FSP6351, FSP6358, FSP6361, FSP6368, FSP6371, FSP6374,
+                                                      FSP6378, FSP6381, FSP6388, FSP6391, FSP6398, FSP6401, FSP6408, FSP6411, FSP6418, FSP6421,
+                                                      FSP6428, FSP6431, FSP6438, FSP6441, FSP6448, FSP6451, FSP6458, FSP6461, FSP6468, FSP6471,
+                                                      FSP6478, FSP6481, FSP6488, FSP6491, FSP6494, FSP6498, FSP6501, FSP6508, FSP6511, FSP6518,
+                                                      FSP6521, FSP6528, FSP6531, FSP6538, FSP6541, FSP6548, FSP6551, FSP6558, FSP6561, FSP6568,
+                                                      FSP6571] }
+      - { nr: 47, program: MD, trinn: Vg1, fagkoder: [FSP6138, FSP6141, FSP6148, FSP6151, FSP6154, FSP6158, FSP6161, FSP6164, FSP6168, FSP6171,
+                                                      FSP6174, FSP6178, FSP6181, FSP6184, FSP6188, FSP6191, FSP6194, FSP6198, FSP6201, FSP6204,
+                                                      FSP6208, FSP6211, FSP6214, FSP6218, FSP6221, FSP6224, FSP6228, FSP6231, FSP6234, FSP6238,
+                                                      FSP6241, FSP6244, FSP6248, FSP6251, FSP6258, FSP6261, FSP6268, FSP6271, FSP6278, FSP6281,
+                                                      FSP6288, FSP6291, FSP6295, FSP6298, FSP6301, FSP6308, FSP6311, FSP6318, FSP6321, FSP6328,
+                                                      FSP6331, FSP6338, FSP6341, FSP6348, FSP6351, FSP6358, FSP6361, FSP6368, FSP6371, FSP6374,
+                                                      FSP6378, FSP6381, FSP6388, FSP6391, FSP6398, FSP6401, FSP6408, FSP6411, FSP6418, FSP6421,
+                                                      FSP6428, FSP6431, FSP6438, FSP6441, FSP6448, FSP6451, FSP6458, FSP6461, FSP6468, FSP6471,
+                                                      FSP6478, FSP6481, FSP6488, FSP6491, FSP6494, FSP6498, FSP6501, FSP6508, FSP6511, FSP6518,
+                                                      FSP6521, FSP6528, FSP6531, FSP6538, FSP6541, FSP6548, FSP6551, FSP6558, FSP6561, FSP6568,
+                                                      FSP6571] }
+      - { nr: 48, program: ID, trinn: Vg2, fagkoder: [HIS1009] }
+      - { nr: 49, program: MD, trinn: Vg2, fagkoder: [HIS1009] }
+      - { nr: 50, program: ST, trinn: Vg2, fagkoder: [HIS1009] }
+      - { nr: 51, program: ID, trinn: Vg2, fagkoder: [GEO1003] }
+      - { nr: 52, program: MD, trinn: Vg2, fagkoder: [GEO1003] }
+      - { nr: 53, program: ST, trinn: Vg1, fagkoder: [GEO1003] }
+      - { nr: 54, program: PB, trinn: Vg3, fagkoder: [HIS1011] }
+      - { nr: 55, program: ID, trinn: Vg3, fagkoder: [HIS1010] }
+      - { nr: 56, program: MD, trinn: Vg3, fagkoder: [HIS1010] }
+      - { nr: 57, program: ST, trinn: Vg3, fagkoder: [HIS1010] }
+      - { nr: 64, program: BA, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: DT, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: EL, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: FD, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: HS, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: IM, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: NA, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: RM, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: SR, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 64, program: TP, trinn: Vg1, fagkoder: [NOR1262, NOR1263], merknad: "Eier 29.09.2026: NOR1262 gjelder vg1 og vg2" }
+      - { nr: 65, program: BA, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: DT, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: EL, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: FD, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: HS, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: IM, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: NA, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: RM, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: SR, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 65, program: TP, trinn: Vg2, fagkoder: [NOR1262, NOR1263] }
+      - { nr: 68, program: ST, trinn: Vg1, fagkoder: [ENG1007, ENG1008] }
+      - { nr: 69, program: BA, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: DT, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: EL, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: FD, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: HS, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: IM, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: NA, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: RM, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: SR, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 69, program: TP, trinn: Vg1, fagkoder: [ENG1009, ENG1010] }
+      - { nr: 70, program: BA, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: DT, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: EL, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: FD, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: HS, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: IM, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: NA, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: RM, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: SR, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 70, program: TP, trinn: Vg2, fagkoder: [ENG1009, ENG1010], merknad: "Eier 29.09.2026: ENG1009 gjelder vg1 og vg2" }
+      - { nr: 71, program: ST, trinn: Vg1, fagkoder: [MAT1019, MAT1020, MAT1021, MAT1022] }
+      - { nr: 72, program: BA, trinn: Vg1, fagkoder: [MAT1111, MAT1112, MAT1131, MAT1132] }
+      - { nr: 72, program: DT, trinn: Vg1, fagkoder: [MAT1119, MAT1120, MAT1139, MAT1140] }
+      - { nr: 72, program: EL, trinn: Vg1, fagkoder: [MAT1113, MAT1114, MAT1133, MAT1134] }
+      - { nr: 72, program: FD, trinn: Vg1, fagkoder: [MAT1115, MAT1116, MAT1135, MAT1136] }
+      - { nr: 72, program: HS, trinn: Vg1, fagkoder: [MAT1117, MAT1118, MAT1137, MAT1138] }
+      - { nr: 72, program: IM, trinn: Vg1, fagkoder: [MAT1121, MAT1122, MAT1141, MAT1142] }
+      - { nr: 72, program: NA, trinn: Vg1, fagkoder: [MAT1123, MAT1124, MAT1143, MAT1144] }
+      - { nr: 72, program: RM, trinn: Vg1, fagkoder: [MAT1125, MAT1126, MAT1145, MAT1146] }
+      - { nr: 72, program: SR, trinn: Vg1, fagkoder: [MAT1127, MAT1128, MAT1147, MAT1148] }
+      - { nr: 72, program: TP, trinn: Vg1, fagkoder: [MAT1129, MAT1130, MAT1149, MAT1150] }
+      - { nr: 73, program: ID, trinn: Vg1, fagkoder: [MAT1019, MAT1020, MAT1021, MAT1022] }
+      - { nr: 74, program: MD, trinn: Vg1, fagkoder: [MAT1019, MAT1020, MAT1021, MAT1022] }
+      - { nr: 75, program: ID, trinn: Vg1, fagkoder: [ENG1007, ENG1008] }
+      - { nr: 76, program: MD, trinn: Vg1, fagkoder: [ENG1007, ENG1008] }
+      - { nr: 99, program: ST, trinn: Vg1, fagkoder: [NOR1260, NOR1261] }
+      - { nr: 100, program: ID, trinn: Vg1, fagkoder: [NOR1260, NOR1261] }
+      - { nr: 101, program: MD, trinn: Vg1, fagkoder: [NOR1260, NOR1261] }
+      - { nr: 102, program: ST, trinn: Vg2, fagkoder: [FSP6139, FSP6140, FSP6142, FSP6143, FSP6149, FSP6150, FSP6152, FSP6153, FSP6155, FSP6159,
+                                                       FSP6160, FSP6162, FSP6163, FSP6165, FSP6169, FSP6170, FSP6172, FSP6173, FSP6175, FSP6179,
+                                                       FSP6180, FSP6182, FSP6183, FSP6185, FSP6189, FSP6190, FSP6192, FSP6193, FSP6195, FSP6199,
+                                                       FSP6200, FSP6202, FSP6203, FSP6205, FSP6209, FSP6210, FSP6212, FSP6213, FSP6215, FSP6219,
+                                                       FSP6220, FSP6222, FSP6223, FSP6225, FSP6229, FSP6230, FSP6232, FSP6233, FSP6235, FSP6239,
+                                                       FSP6240, FSP6242, FSP6243, FSP6245, FSP6249, FSP6250, FSP6252, FSP6253, FSP6259, FSP6260,
+                                                       FSP6262, FSP6263, FSP6269, FSP6270, FSP6272, FSP6273, FSP6279, FSP6280, FSP6282, FSP6283,
+                                                       FSP6289, FSP6290, FSP6292, FSP6293, FSP6294, FSP6299, FSP6300, FSP6302, FSP6303, FSP6309,
+                                                       FSP6310, FSP6312, FSP6313, FSP6319, FSP6320, FSP6322, FSP6323, FSP6329, FSP6330, FSP6332,
+                                                       FSP6333, FSP6339, FSP6340, FSP6342, FSP6343, FSP6349, FSP6350, FSP6352, FSP6353, FSP6359,
+                                                       FSP6360, FSP6362, FSP6363, FSP6369, FSP6370, FSP6372, FSP6373, FSP6375, FSP6379, FSP6380,
+                                                       FSP6382, FSP6383, FSP6389, FSP6390, FSP6392, FSP6393, FSP6399, FSP6400, FSP6402, FSP6403,
+                                                       FSP6409, FSP6410, FSP6412, FSP6413, FSP6419, FSP6420, FSP6422, FSP6423, FSP6429, FSP6430,
+                                                       FSP6432, FSP6433, FSP6439, FSP6440, FSP6442, FSP6443, FSP6449, FSP6450, FSP6452, FSP6453,
+                                                       FSP6459, FSP6460, FSP6462, FSP6463, FSP6469, FSP6470, FSP6472, FSP6473, FSP6479, FSP6480,
+                                                       FSP6482, FSP6483, FSP6489, FSP6490, FSP6492, FSP6493, FSP6495, FSP6499, FSP6500, FSP6502,
+                                                       FSP6503, FSP6509, FSP6510, FSP6512, FSP6513, FSP6519, FSP6520, FSP6522, FSP6523, FSP6529,
+                                                       FSP6530, FSP6532, FSP6533, FSP6539, FSP6540, FSP6542, FSP6543, FSP6549, FSP6550, FSP6552,
+                                                       FSP6553, FSP6559, FSP6560, FSP6562, FSP6563, FSP6569, FSP6570, FSP6572, FSP6573, FSP6579,
+                                                       FSP6580, FSP6582, FSP6583, FSP6589, FSP6590, FSP6592, FSP6593, FSP6599, FSP6600, FSP6602,
+                                                       FSP6603, FSP6609, FSP6610, FSP6612, FSP6613, FSP6619, FSP6620, FSP6622, FSP6623, FSP6629,
+                                                       FSP6630, FSP6632, FSP6633] }
+      - { nr: 103, program: ST, trinn: Vg3, fagkoder: [FSP6156, FSP6157, FSP6166, FSP6167, FSP6176, FSP6177, FSP6186, FSP6187, FSP6196, FSP6197,
+                                                       FSP6206, FSP6207, FSP6216, FSP6217, FSP6226, FSP6227, FSP6236, FSP6237, FSP6246, FSP6247,
+                                                       FSP6296, FSP6297, FSP6376, FSP6377, FSP6496, FSP6497] }
+      - { nr: 104, program: ID, trinn: Vg2, fagkoder: [FSP6139, FSP6140, FSP6142, FSP6143, FSP6149, FSP6150, FSP6152, FSP6153, FSP6155, FSP6159,
+                                                       FSP6160, FSP6162, FSP6163, FSP6165, FSP6169, FSP6170, FSP6172, FSP6173, FSP6175, FSP6179,
+                                                       FSP6180, FSP6182, FSP6183, FSP6185, FSP6189, FSP6190, FSP6192, FSP6193, FSP6195, FSP6199,
+                                                       FSP6200, FSP6202, FSP6203, FSP6205, FSP6209, FSP6210, FSP6212, FSP6213, FSP6215, FSP6219,
+                                                       FSP6220, FSP6222, FSP6223, FSP6225, FSP6229, FSP6230, FSP6232, FSP6233, FSP6235, FSP6239,
+                                                       FSP6240, FSP6242, FSP6243, FSP6245, FSP6249, FSP6250, FSP6252, FSP6253, FSP6259, FSP6260,
+                                                       FSP6262, FSP6263, FSP6269, FSP6270, FSP6272, FSP6273, FSP6279, FSP6280, FSP6282, FSP6283,
+                                                       FSP6289, FSP6290, FSP6292, FSP6293, FSP6294, FSP6299, FSP6300, FSP6302, FSP6303, FSP6309,
+                                                       FSP6310, FSP6312, FSP6313, FSP6319, FSP6320, FSP6322, FSP6323, FSP6329, FSP6330, FSP6332,
+                                                       FSP6333, FSP6339, FSP6340, FSP6342, FSP6343, FSP6349, FSP6350, FSP6352, FSP6353, FSP6359,
+                                                       FSP6360, FSP6362, FSP6363, FSP6369, FSP6370, FSP6372, FSP6373, FSP6375, FSP6379, FSP6380,
+                                                       FSP6382, FSP6383, FSP6389, FSP6390, FSP6392, FSP6393, FSP6399, FSP6400, FSP6402, FSP6403,
+                                                       FSP6409, FSP6410, FSP6412, FSP6413, FSP6419, FSP6420, FSP6422, FSP6423, FSP6429, FSP6430,
+                                                       FSP6432, FSP6433, FSP6439, FSP6440, FSP6442, FSP6443, FSP6449, FSP6450, FSP6452, FSP6453,
+                                                       FSP6459, FSP6460, FSP6462, FSP6463, FSP6469, FSP6470, FSP6472, FSP6473, FSP6479, FSP6480,
+                                                       FSP6482, FSP6483, FSP6489, FSP6490, FSP6492, FSP6493, FSP6495, FSP6499, FSP6500, FSP6502,
+                                                       FSP6503, FSP6509, FSP6510, FSP6512, FSP6513, FSP6519, FSP6520, FSP6522, FSP6523, FSP6529,
+                                                       FSP6530, FSP6532, FSP6533, FSP6539, FSP6540, FSP6542, FSP6543, FSP6549, FSP6550, FSP6552,
+                                                       FSP6553, FSP6559, FSP6560, FSP6562, FSP6563, FSP6569, FSP6570, FSP6572, FSP6573, FSP6579,
+                                                       FSP6580, FSP6582, FSP6583, FSP6589, FSP6590, FSP6592, FSP6593, FSP6599, FSP6600, FSP6602,
+                                                       FSP6603, FSP6609, FSP6610, FSP6612, FSP6613, FSP6619, FSP6620, FSP6622, FSP6623, FSP6629,
+                                                       FSP6630, FSP6632, FSP6633] }
+      - { nr: 105, program: ID, trinn: Vg3, fagkoder: [FSP6156, FSP6157, FSP6166, FSP6167, FSP6176, FSP6177, FSP6186, FSP6187, FSP6196, FSP6197,
+                                                       FSP6206, FSP6207, FSP6216, FSP6217, FSP6226, FSP6227, FSP6236, FSP6237, FSP6246, FSP6247,
+                                                       FSP6296, FSP6297, FSP6376, FSP6377, FSP6496, FSP6497] }
+      - { nr: 106, program: MD, trinn: Vg2, fagkoder: [FSP6139, FSP6140, FSP6142, FSP6143, FSP6149, FSP6150, FSP6152, FSP6153, FSP6155, FSP6159,
+                                                       FSP6160, FSP6162, FSP6163, FSP6165, FSP6169, FSP6170, FSP6172, FSP6173, FSP6175, FSP6179,
+                                                       FSP6180, FSP6182, FSP6183, FSP6185, FSP6189, FSP6190, FSP6192, FSP6193, FSP6195, FSP6199,
+                                                       FSP6200, FSP6202, FSP6203, FSP6205, FSP6209, FSP6210, FSP6212, FSP6213, FSP6215, FSP6219,
+                                                       FSP6220, FSP6222, FSP6223, FSP6225, FSP6229, FSP6230, FSP6232, FSP6233, FSP6235, FSP6239,
+                                                       FSP6240, FSP6242, FSP6243, FSP6245, FSP6249, FSP6250, FSP6252, FSP6253, FSP6259, FSP6260,
+                                                       FSP6262, FSP6263, FSP6269, FSP6270, FSP6272, FSP6273, FSP6279, FSP6280, FSP6282, FSP6283,
+                                                       FSP6289, FSP6290, FSP6292, FSP6293, FSP6294, FSP6299, FSP6300, FSP6302, FSP6303, FSP6309,
+                                                       FSP6310, FSP6312, FSP6313, FSP6319, FSP6320, FSP6322, FSP6323, FSP6329, FSP6330, FSP6332,
+                                                       FSP6333, FSP6339, FSP6340, FSP6342, FSP6343, FSP6349, FSP6350, FSP6352, FSP6353, FSP6359,
+                                                       FSP6360, FSP6362, FSP6363, FSP6369, FSP6370, FSP6372, FSP6373, FSP6375, FSP6379, FSP6380,
+                                                       FSP6382, FSP6383, FSP6389, FSP6390, FSP6392, FSP6393, FSP6399, FSP6400, FSP6402, FSP6403,
+                                                       FSP6409, FSP6410, FSP6412, FSP6413, FSP6419, FSP6420, FSP6422, FSP6423, FSP6429, FSP6430,
+                                                       FSP6432, FSP6433, FSP6439, FSP6440, FSP6442, FSP6443, FSP6449, FSP6450, FSP6452, FSP6453,
+                                                       FSP6459, FSP6460, FSP6462, FSP6463, FSP6469, FSP6470, FSP6472, FSP6473, FSP6479, FSP6480,
+                                                       FSP6482, FSP6483, FSP6489, FSP6490, FSP6492, FSP6493, FSP6495, FSP6499, FSP6500, FSP6502,
+                                                       FSP6503, FSP6509, FSP6510, FSP6512, FSP6513, FSP6519, FSP6520, FSP6522, FSP6523, FSP6529,
+                                                       FSP6530, FSP6532, FSP6533, FSP6539, FSP6540, FSP6542, FSP6543, FSP6549, FSP6550, FSP6552,
+                                                       FSP6553, FSP6559, FSP6560, FSP6562, FSP6563, FSP6569, FSP6570, FSP6572, FSP6573, FSP6579,
+                                                       FSP6580, FSP6582, FSP6583, FSP6589, FSP6590, FSP6592, FSP6593, FSP6599, FSP6600, FSP6602,
+                                                       FSP6603, FSP6609, FSP6610, FSP6612, FSP6613, FSP6619, FSP6620, FSP6622, FSP6623, FSP6629,
+                                                       FSP6630, FSP6632, FSP6633] }
+      - { nr: 107, program: MD, trinn: Vg3, fagkoder: [FSP6156, FSP6157, FSP6166, FSP6167, FSP6176, FSP6177, FSP6186, FSP6187, FSP6196, FSP6197,
+                                                       FSP6206, FSP6207, FSP6216, FSP6217, FSP6226, FSP6227, FSP6236, FSP6237, FSP6246, FSP6247,
+                                                       FSP6296, FSP6297, FSP6376, FSP6377, FSP6496, FSP6497] }
+      - { nr: 108, program: PB, trinn: Vg3, fagkoder: [MAT1151, MAT1152] }
+      - { nr: 109, program: ID, trinn: Vg2, fagkoder: [MAT1023, MAT1024] }
+      - { nr: 110, program: MD, trinn: Vg2, fagkoder: [MAT1023, MAT1024] }
+      - { nr: 111, program: ST, trinn: Vg2, fagkoder: [MAT1023, MAT1024] }
+      - { nr: 141, program: ST, trinn: Vg2, fagkoder: [NOR1264, NOR1265] }
+      - { nr: 142, program: ST, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269] }
+      - { nr: 147, program: PB, trinn: Vg3, fagkoder: [NOR1270, NOR1271, NOR1272] }
+      - { nr: 148, program: ID, trinn: Vg2, fagkoder: [NOR1264, NOR1265] }
+      - { nr: 149, program: ID, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269] }
+      - { nr: 150, program: MD, trinn: Vg2, fagkoder: [NOR1264, NOR1265] }
+      - { nr: 151, program: MD, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269] }
+  kobling_programfag:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    grunnlag: avledet
+    merknad: >-
+      Valgfrie programfag på studiespesialisering som vedlegg 1 nevner, koblet eksplisitt ut fra fagnavnene og
+      fagsøket og årstimetabellen fra fase 1. Et programfag kan tas på vg2 eller vg3, og vedlegget kan ha ulik
+      årsramme for trinnene. Da spør kalkulatoren om trinnet.
+    verdi:
+      - { nr: 77, program: ST, trinn: Vg2, fagkoder: [SPR3022] }
+      - { nr: 78, program: ST, trinn: Vg2, fagkoder: [SPR3033, SPR3034, SPR3035, SPR3036, SPR3037] }
+      - { nr: 79, program: ST, trinn: Vg3, fagkoder: [SPR3033, SPR3034, SPR3035, SPR3036, SPR3037] }
+      - { nr: 82, program: ST, trinn: Vg2, fagkoder: [SAM3045, SAM3046, SAM3047] }
+      - { nr: 83, program: ST, trinn: Vg2, fagkoder: [SAM3072, SAM3073, SAM3074] }
+      - { nr: 84, program: ST, trinn: Vg3, fagkoder: [SAM3072, SAM3073, SAM3074] }
+      - { nr: 85, program: ST, trinn: Vg2, fagkoder: [SPR3038, SPR3039, SPR3040] }
+      - { nr: 86, program: ST, trinn: Vg3, fagkoder: [SPR3038, SPR3039, SPR3040] }
+      - { nr: 87, program: ST, trinn: Vg2, fagkoder: [SAM3057, SAM3058, SAM3059] }
+      - { nr: 88, program: ST, trinn: Vg2, fagkoder: [SAM3060, SAM3061, SAM3062] }
+      - { nr: 89, program: ST, trinn: Vg3, fagkoder: [SAM3060, SAM3061, SAM3062] }
+      - { nr: 90, program: ST, trinn: Vg2, fagkoder: [REA3048, REA3049, REA3050] }
+      - { nr: 91, program: ST, trinn: Vg3, fagkoder: [REA3048, REA3049, REA3050] }
+      - { nr: 112, program: ST, trinn: Vg2, fagkoder: [SPR3029, SPR3030, SPR3031, SPR3032] }
+      - { nr: 113, program: ST, trinn: Vg3, fagkoder: [SPR3029, SPR3030, SPR3031, SPR3032] }
+      - { nr: 114, program: ST, trinn: Vg2, fagkoder: [SPR3026, SPR3027, SPR3028] }
+      - { nr: 115, program: ST, trinn: Vg3, fagkoder: [SPR3026, SPR3027, SPR3028] }
+      - { nr: 116, program: ST, trinn: Vg2, fagkoder: [SAM3042, SAM3043, SAM3044] }
+      - { nr: 117, program: ST, trinn: Vg3, fagkoder: [SAM3042, SAM3043, SAM3044] }
+      - { nr: 118, program: ST, trinn: Vg2, fagkoder: [SAM3063, SAM3064, SAM3065] }
+      - { nr: 119, program: ST, trinn: Vg3, fagkoder: [SAM3063, SAM3064, SAM3065] }
+      - { nr: 122, program: ST, trinn: Vg2, fagkoder: [SAM3048, SAM3049, SAM3050] }
+      - { nr: 123, program: ST, trinn: Vg3, fagkoder: [SAM3048, SAM3049, SAM3050] }
+      - { nr: 124, program: ST, trinn: Vg3, fagkoder: [SAM3045, SAM3046, SAM3047] }
+      - { nr: 125, program: ST, trinn: Vg3, fagkoder: [SAM3057, SAM3058, SAM3059] }
+      - { nr: 126, program: ST, trinn: Vg2, fagkoder: [SAM3054, SAM3055, SAM3056] }
+      - { nr: 127, program: ST, trinn: Vg3, fagkoder: [SAM3054, SAM3055, SAM3056] }
+      - { nr: 128, program: ST, trinn: Vg2, fagkoder: [REA3056, REA3057, REA3058, REA3059, REA3060, REA3061, REA3062, REA3063] }
+      - { nr: 129, program: ST, trinn: Vg3, fagkoder: [REA3056, REA3057, REA3058, REA3059, REA3060, REA3061, REA3062, REA3063] }
+      - { nr: 130, program: ST, trinn: Vg2, fagkoder: [REA3042, REA3043, REA3044] }
+      - { nr: 131, program: ST, trinn: Vg3, fagkoder: [REA3042, REA3043, REA3044] }
+      - { nr: 132, program: ST, trinn: Vg2, fagkoder: [REA3038, REA3039, REA3040] }
+      - { nr: 133, program: ST, trinn: Vg3, fagkoder: [REA3038, REA3039, REA3040] }
+      - { nr: 134, program: ST, trinn: Vg2, fagkoder: [REA3045, REA3046, REA3047] }
+      - { nr: 135, program: ST, trinn: Vg3, fagkoder: [REA3045, REA3046, REA3047] }
+      - { nr: 136, program: ST, trinn: Vg2, fagkoder: [REA3035, REA3036, REA3037] }
+      - { nr: 137, program: ST, trinn: Vg3, fagkoder: [REA3035, REA3036, REA3037] }
+      - { nr: 138, program: ST, trinn: Vg2, fagkoder: [REA3052, REA3053, REA3054] }
+      - { nr: 139, program: ST, trinn: Vg3, fagkoder: [REA3052, REA3053, REA3054] }
+  kobling_regler:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    grunnlag: avledet
+    merknad: >-
+      Felles programfag kobles med regler: fagkodeprefiks + utdanningsprogram + trinn gir raden for felles programfag
+      i vedlegg 1. Prefiksene er de som felles programfag med årstimer har på programmet og trinnet i Grep.
+      Reglene gjelder aldri fellesfag, og ikke fag uten årstimer i Grep (eksamenskoder, fag i læretiden).
+    verdi:
+      - { id: rm-vg1, prefikser: [RMF], program: RM, trinn: Vg1, fagtype: felles_programfag, nr: 1 }
+      - { id: ba-vg1, prefikser: [BAT], program: BA, trinn: Vg1, fagtype: felles_programfag, nr: 2 }
+      - { id: dt-vg1, prefikser: [DTH], program: DT, trinn: Vg1, fagtype: felles_programfag, nr: 3 }
+      - { id: fd-vg1, prefikser: [FBI], program: FD, trinn: Vg1, fagtype: felles_programfag, nr: 4 }
+      - { id: na-vg1, prefikser: [NAB], program: NA, trinn: Vg1, fagtype: felles_programfag, nr: 5 }
+      - { id: na-vg2, prefikser: [AKV, FFA, HDF, LGA, REI, SBR], program: NA, trinn: Vg2, fagtype: felles_programfag, nr: 11 }
+      - { id: rm-vg2, prefikser: [BAK, KOS, MPR], program: RM, trinn: Vg2, fagtype: felles_programfag, nr: 12 }
+      - { id: ba-vg2, prefikser: [ANG, ANL, BMO, KEM, OFT, RLF, TMF, TRT], program: BA, trinn: Vg2, fagtype: felles_programfag, nr: 14 }
+      - { id: fd-vg2, prefikser: [BLD, FRI, IED], program: FD, trinn: Vg2, fagtype: felles_programfag, nr: 16 }
+      - { id: dt-vg2, prefikser: [BBF, DDU, DGH, DTR, SME, STH, UIM], program: DT, trinn: Vg2, fagtype: felles_programfag, nr: 17 }
+      - { id: tp-vg1, prefikser: [TIP], program: TP, trinn: Vg1, fagtype: felles_programfag, nr: 19 }
+      - { id: tp-vg2, prefikser: [AMK, BLK, BMF, BRT, KJT, KPL, MAR, PIN, TOL], program: TP, trinn: Vg2, fagtype: felles_programfag, nr: 20 }
+      - { id: tp-vg3, prefikser: [AMM], program: TP, trinn: Vg3, fagtype: felles_programfag, nr: 21 }
+      - { id: hs-vg1, prefikser: [HSF], program: HS, trinn: Vg1, fagtype: felles_programfag, nr: 22 }
+      - { id: hs-vg2, prefikser: [AKT, AMB, BUA, FOT, HEA, HES, HUD], program: HS, trinn: Vg2, fagtype: felles_programfag, nr: 23 }
+      - { id: hs-vg3, prefikser: [APO, FOT, HSE, HUD, TAN], program: HS, trinn: Vg3, fagtype: felles_programfag, nr: 24 }
+      - { id: el-vg1, prefikser: [ELE], program: EL, trinn: Vg1, fagtype: felles_programfag, nr: 25 }
+      - { id: na-vg3, prefikser: [LBR, NAB], program: NA, trinn: Vg3, fagtype: felles_programfag, nr: 26 }
+      - { id: el-vg2, prefikser: [AUT, DEL, DRF, ELE, FLY, KVV], program: EL, trinn: Vg2, fagtype: felles_programfag, nr: 27 }
+      - { id: el-vg3, prefikser: [AUT, AVI, DAT, FLY, MEL, ROM], program: EL, trinn: Vg3, fagtype: felles_programfag, nr: 28 }
+      - { id: sr-vg1, prefikser: [SSR], program: SR, trinn: Vg1, fagtype: felles_programfag, nr: 29 }
+      - { id: im-vg1, prefikser: [IKM], program: IM, trinn: Vg1, fagtype: felles_programfag, nr: 30 }
+      - { id: me-vg1, prefikser: [MOK], program: ME, trinn: Vg1, fagtype: felles_programfag, nr: 31 }
+      - { id: md-vg1, prefikser: [MDD], program: MD, trinn: Vg1, fagtype: felles_programfag, nr: 32 }
+      - { id: kd-vg1, prefikser: [KDA], program: KD, trinn: Vg1, fagtype: felles_programfag, nr: 58 }
+      - { id: id-vg1, prefikser: [IDR], program: ID, trinn: Vg1, fagtype: felles_programfag, nr: 59 }
+      - { id: im-vg2, prefikser: [ITK, MED], program: IM, trinn: Vg2, fagtype: felles_programfag, nr: 60 }
+      - { id: sr-vg2, prefikser: [SSR], program: SR, trinn: Vg2, fagtype: felles_programfag, nr: 61 }
+      - { id: me-vg2, prefikser: [MOK], program: ME, trinn: Vg2, fagtype: felles_programfag, nr: 63 }
+      - { id: id-vg2, prefikser: [IDR], program: ID, trinn: Vg2, fagtype: felles_programfag, nr: 92 }
+      - { id: id-vg3, prefikser: [IDR], program: ID, trinn: Vg3, fagtype: felles_programfag, nr: 93 }
+      - { id: md-vg2, prefikser: [DAN, DRA, MUS], program: MD, trinn: Vg2, fagtype: felles_programfag, nr: 94 }
+      - { id: md-vg3, prefikser: [DAN, DRA, MUS], program: MD, trinn: Vg3, fagtype: felles_programfag, nr: 95 }
+      - { id: kd-vg2, prefikser: [KDA], program: KD, trinn: Vg2, fagtype: felles_programfag, nr: 96 }
+      - { id: kd-vg3, prefikser: [KDA], program: KD, trinn: Vg3, fagtype: felles_programfag, nr: 97 }
+      - { id: me-vg3, prefikser: [MOK], program: ME, trinn: Vg3, fagtype: felles_programfag, nr: 98 }
+  kobling_yff:
+    kilde: { id: udir-grep }
+    kontrollert: null
+    grunnlag: praksis
+    merknad: >-
+      Yrkesfaglig fordypning (YFF) får årsrammen for felles programfag på utdanningsprogrammet og trinnet. Vedlegg 1
+      sier dette om «prosjekt til fordypning», som ble yrkesfaglig fordypning i 2020. Tolkningen står i
+      praksislisten (yff-arsramme) og skal bekreftes av eier.
+    verdi:
+      - { id: yff-rm-vg1, prefikser: [YFF], program: RM, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 1 }
+      - { id: yff-ba-vg1, prefikser: [YFF], program: BA, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 2 }
+      - { id: yff-dt-vg1, prefikser: [YFF], program: DT, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 3 }
+      - { id: yff-fd-vg1, prefikser: [YFF], program: FD, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 4 }
+      - { id: yff-na-vg1, prefikser: [YFF], program: NA, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 5 }
+      - { id: yff-na-vg2, prefikser: [YFF], program: NA, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 11 }
+      - { id: yff-rm-vg2, prefikser: [YFF], program: RM, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 12 }
+      - { id: yff-ba-vg2, prefikser: [YFF], program: BA, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 14 }
+      - { id: yff-fd-vg2, prefikser: [YFF], program: FD, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 16 }
+      - { id: yff-dt-vg2, prefikser: [YFF], program: DT, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 17 }
+      - { id: yff-tp-vg1, prefikser: [YFF], program: TP, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 19 }
+      - { id: yff-tp-vg2, prefikser: [YFF], program: TP, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 20 }
+      - { id: yff-hs-vg1, prefikser: [YFF], program: HS, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 22 }
+      - { id: yff-hs-vg2, prefikser: [YFF], program: HS, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 23 }
+      - { id: yff-el-vg1, prefikser: [YFF], program: EL, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 25 }
+      - { id: yff-na-vg3, prefikser: [YFF], program: NA, trinn: Vg3, fagtype: yrkesfaglig_fordypning, nr: 26 }
+      - { id: yff-el-vg2, prefikser: [YFF], program: EL, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 27 }
+      - { id: yff-sr-vg1, prefikser: [YFF], program: SR, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 29 }
+      - { id: yff-im-vg1, prefikser: [YFF], program: IM, trinn: Vg1, fagtype: yrkesfaglig_fordypning, nr: 30 }
+      - { id: yff-im-vg2, prefikser: [YFF], program: IM, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 60 }
+      - { id: yff-sr-vg2, prefikser: [YFF], program: SR, trinn: Vg2, fagtype: yrkesfaglig_fordypning, nr: 61 }

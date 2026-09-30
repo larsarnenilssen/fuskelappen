@@ -71,7 +71,7 @@ async function lagPr(gren: string, tittel: string, endre: () => void, beskrivels
   try {
     endre();
     const feilet = feiledeTester();
-    git('add', '-A', 'rules', 'data/grep');
+    git('add', '-A', 'rules', 'data/grep', 'docs/KOBLING.md', 'data/status/kobling.json');
     git('commit', '-m', tittel);
     git('push', '--force', 'origin', gren);
     const eier = repo?.split('/')[0] ?? '';
@@ -135,6 +135,8 @@ if (grepTester === 'feilet' && existsSync(grepNy)) {
         // Læreplanmappen erstattes helt, så læreplaner som er fjernet i Grep, forsvinner også her.
         rmSync(join(rot, 'data/grep/laereplaner'), { recursive: true, force: true });
         cpSync(grepNy, join(rot, 'data/grep'), { recursive: true });
+        // Rapporten over koblingen (docs/KOBLING.md) lages med de nye dataene, så PR-en viser nye ukoblede fag.
+        execFileSync('npx', ['tsx', 'scripts/kobling/rapport.ts'], { cwd: rot, stdio: 'inherit' });
       },
       (feilet) => grepforslagstekst(sammendrag, g ? grepdetaljer(g) : [], feilet),
     );

@@ -14,6 +14,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til (for eier)
 
 - Grep-hentingen tar nå med alle fag og læreplaner i videregående hver uke. Endrede læreplaner og fag står i den ukentlige kontrollsaken.
+- **Kobling fra fagkode til årsramme** i `rules/sfs2213/kobling-fagkode.yaml`: fellesfag eksplisitt per fagkode, utdanningsprogram og trinn, felles programfag med regler. Forslag som du kontrollerer.
+- **Rapport over koblingen** i `docs/KOBLING.md`: avvik, tabellen over programnavn, et utvalg koblinger til kontroll og alle fag som ikke er koblet, med grunn. Nye avvik og nye ukoblede fag kommer i kontrollsaken.
 - **Automatisk verdisjekk:** Hvert tall fra SFS 2213 og hovedtariffavtalen har et kort sitat fra kilden. Kildesjekken ser hver mandag etter sitatet i kilden og foreslår det nye tallet hvis det er endret.
 - **Kontrolloversikt** i `docs/KONTROLL.md`: hva som bygger på hver kilde, status for din kontroll og for verdisjekken, og hva som bør ses på nå.
 - Tester sjekker at tallene henger sammen, for eksempel at årsverket er 225 dager à 7,5 timer og at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad i vedlegg 1.

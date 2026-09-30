@@ -146,6 +146,18 @@ describe('den ukentlige kontrollsaken', () => {
 
   it('er tom når alt er i orden', () => {
     expect(lagUkesrapport(grunnlag())).toMatchObject({ aapen: false, punkter: 0 });
+    expect(lagUkesrapport(grunnlag({ kobling: { nyeUkoblede: [], nyeAvvik: [] } }))).toMatchObject({ aapen: false, punkter: 0 });
+  });
+
+  it('tar med nye avvik i koblingen som punkter, og nye ukoblede fag til orientering', () => {
+    const r = lagUkesrapport(grunnlag({ kobling: { nyeUkoblede: ['NYA1001 Nytt fag (programfag uten rad i vedlegg 1)'], nyeAvvik: ['NOR1260 står i kobling_fellesfag, men finnes ikke lenger i Grep.'] } }));
+    expect(r.punkter).toBe(1);
+    expect(r.aapen).toBe(true);
+    expect(r.tekst).toContain('## Kobling fra fagkode til årsramme');
+    expect(r.tekst).toContain('- [ ] Nytt avvik i koblingen: NOR1260 står i kobling_fellesfag');
+    expect(r.tekst).toContain('- Ett nytt fag i Grep uten kobling til årsramme.');
+    expect(r.tekst).toContain('  - NYA1001 Nytt fag');
+    expect(r.tekst).toContain('https://github.com/eier/protokollen/blob/main/docs/KOBLING.md');
   });
 
   it('viser endringen, hva den kan berøre, avvik i tall og kilder som feilet', () => {

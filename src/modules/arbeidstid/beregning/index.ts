@@ -9,3 +9,4 @@ export * from './stillingsplan.ts';
 export * from './typer.ts';
 export * from './verdier.ts';
 export * from './vikar.ts';
+export * from './kobling.ts';
