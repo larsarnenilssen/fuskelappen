@@ -16,8 +16,8 @@
   type: begrep
   tittel: { nb: Årsverk, nn: Årsverk }
   tekst:
-    nb: Et årsverk for lærere er 1687,5 timer, eller 1650 timer for lærere som er 60 år og eldre. Forskjellen er fem arbeidsdager ekstra ferie, så arbeidsåret er fem dager kortere. Alle arbeidsoppgavene skal gjøres innenfor årsverket.
-    nn: Eit årsverk for lærarar er 1687,5 timar, eller 1650 timar for lærarar som er 60 år og eldre. Skilnaden er fem arbeidsdagar ekstra ferie, så arbeidsåret er fem dagar kortare. Alle arbeidsoppgåvene skal gjerast innanfor årsverket.
+    nb: Et årsverk for lærere er 1687,5 timer, eller 1650 timer for lærere som er 60 år og eldre. Forskjellen er fem arbeidsdager ekstra ferie, så arbeidsåret er fem dager kortere. Planfestet tid er da samme andel av årsverket som for andre lærere. Alle arbeidsoppgavene skal gjøres innenfor årsverket.
+    nn: Eit årsverk for lærarar er 1687,5 timar, eller 1650 timar for lærarar som er 60 år og eldre. Skilnaden er fem arbeidsdagar ekstra ferie, så arbeidsåret er fem dagar kortare. Planfesta tid er då same del av årsverket som for andre lærarar. Alle arbeidsoppgåvene skal gjerast innanfor årsverket.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: "4" }]
   kontrollert: null
   stikkord: ["1687,5", timer]

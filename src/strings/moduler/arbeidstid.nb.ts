@@ -241,7 +241,7 @@ export const arbeidstidNb = {
     planfestet: 'Den frigjorte tiden legges i planfestet tid, der den erstatter undervisning. Planfestet tid utvides ikke.',
     fra57:
       'Avtalen sier bare for nyutdannede og lærere over 60 år at den frigjorte tiden legges i planfestet tid. Appen bruker den samme regelen for 57-åringer, uten at det står uttrykkelig i avtaleteksten.',
-    fra60: 'For lærere som er 60 år og eldre er årsverket {arsverk} timer (punkt 4). Forskjellen er {dager} arbeidsdager ekstra ferie, så arbeidsåret er {dager} dager kortere. Feriepengesatsen er også høyere.',
+    fra60: 'For lærere som er 60 år og eldre er årsverket {arsverk} timer (punkt 4). Forskjellen er {dager} arbeidsdager ekstra ferie, så arbeidsåret er {dager} dager kortere. Planfestet tid er samme andel av årsverket som for andre lærere. Feriepengesatsen er også høyere.',
     redusert: 'Redusert undervisning',
     feriepenger60: 'Høyere feriepengesats, fordi læreren er 60 år eller eldre (redusert undervisning).',
   },
@@ -299,6 +299,7 @@ export const arbeidstidNb = {
     arbeidsaar_dager: { tekst: 'Arbeidsåret: elevenes skoleår og 6 dager', formel: '{skolear} + {tillegg}' },
     ekstra_feriedager_60: { tekst: 'Ekstra feriedager fra 60 år: årsverket er kortere', formel: '({arsverk} − {arsverk_60}) ÷ {per_dag}' },
     arbeidsaar_dager_60: { tekst: 'Arbeidsåret: elevenes skoleår og 6 dager, minus ekstra ferie fra 60 år', formel: '{skolear} + {tillegg} − {ferie}' },
+    planfestet_60: { tekst: 'Planfestet tid fra 60 år: samme andel av det kortere årsverket', formel: '{planfestet} × {arsverk_60} ÷ {arsverk}' },
     arbeidsaar_uker: { tekst: 'Arbeidsåret i uker', formel: '{dager} ÷ {per_uke}' },
     planfestet_maks: { tekst: 'Høyeste planfestede tid uten å utvide arbeidsåret', formel: '{uker} × {maks_uke}' },
     planfestet_per_uke: { tekst: 'Planfestet tid per uke', formel: '{planfestet} ÷ {uker}' },

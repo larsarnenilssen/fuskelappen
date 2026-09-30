@@ -325,7 +325,7 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - **Arbeidsplan** er hovedkalkulatoren i modulen (adresse `#/arbeidstid/arbeidsplan`). Den samler fag, funksjoner og redusert undervisning mot stillingsprosenten, med teknisk undertid eller overtid, fordeling av arbeidstiden (diagram, tabell og uke), lønn med tillegg, overtid og feriepenger, og lagrede varianter med navn.
 - Hurtigkalkulator 5 (planfestet arbeidstid med utvidelse ved funksjoner) og forklaringen med grafikk om fordelingen er en del av Arbeidsplan. De egne kalkulatorene for planfestet tid og fordeling er fjernet (30.09.2026).
 - Funksjoner oppgis i prosent eller årsrammetimer, og hver funksjon kan utvide planfestet tid eller ikke, og gi tillegg (SFS 2213 punkt 9.1).
-- Livsfasetiltak (punkt 6) regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer (eier 30.09.2026). Lærere som er 60 år og eldre har årsverk på 1650 timer. De 37,5 timene er fem arbeidsdager ekstra ferie, så arbeidsåret er 191 dager eller 38,2 uker (eier 30.09.2026).
+- Livsfasetiltak (punkt 6) regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer (eier 30.09.2026). Lærere som er 60 år og eldre har årsverk på 1650 timer. De 37,5 timene er fem arbeidsdager ekstra ferie, så arbeidsåret er 191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5 (eier 30.09.2026).
 - Hurtigkalkulatorene er Arbeidsplan, beskjeftigelse (fag og fagkombinasjoner, blandede grupper), periodebeskjeftigelse, vikartimer og overtid.
 
 **Avklares med eier før implementering**
@@ -481,7 +481,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 |---|---|---|
 | Ikon (forslag: innbundet protokollbok med paragraftegn på omslaget) | før fase 0 avsluttes | Avklart |
 | Hva «utvidet planfestet arbeidstid ved funksjoner» omfatter, og regler for vikarberegning | ved start av fase 1 | Avklart. Hver funksjon kan utvide planfestet tid eller ikke. |
-| Fasiteksempler for SFS 2213 | fase 1 | 001–022 er godkjent. Eksempelet for 60 år (redusert undervisning) venter på svar om fordelingen av planfestet tid. |
+| Fasiteksempler for SFS 2213 | fase 1 | 001–023 er godkjent. |
 | Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
 | Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Ikke med. Praksis inntil videre: bare beskjeftigelse over 100 %. |
 | InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Venter |

@@ -150,6 +150,7 @@ export type TrinnId =
   | 'arbeidsaar_dager'
   | 'ekstra_feriedager_60'
   | 'arbeidsaar_dager_60'
+  | 'planfestet_60'
   | 'arbeidsaar_uker'
   | 'planfestet_maks'
   | 'planfestet_per_uke'

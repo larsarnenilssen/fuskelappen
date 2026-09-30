@@ -156,6 +156,10 @@ describe('fordeling', () => {
     expect(eldre.arsverk.verdi).toBe(1650);
     expect(eldre.trinn.find((t) => t.id === 'ekstra_feriedager_60')?.resultat.verdi).toBe(5);
     expect(eldre.trinn.find((t) => t.id === 'arbeidsaar_dager_60')?.resultat.verdi).toBe(191);
+    // Samme andel planfestet tid som for andre lærere.
+    const planfestet = (r: typeof vanlig) => r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+    expect(planfestet(eldre) / eldre.arsverk.verdi).toBeCloseTo(planfestet(vanlig) / vanlig.arsverk.verdi);
+    expect(planfestet(eldre)).toBeCloseTo((1150 * 1650) / 1687.5);
   });
 
   it('delene summerer seg til årsverket for stillingen', () => {
@@ -429,8 +433,9 @@ describe('arbeidsplan: årsrammetimer og redusert undervisning', () => {
     const r = beregnFordeling(hent, { grupper: g, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 12.5, moterPerUke: 0, over60: true });
     const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
     expect(r.arsverk.verdi).toBe(1650);
-    expect(planfestet).toBeCloseTo(1150);
-    expect(r.deler.find((d) => d.id === 'selvdisponert')?.timer).toBeCloseTo(500);
+    // Samme andel planfestet tid som for andre lærere (eier 30.09.2026).
+    expect(planfestet).toBeCloseTo((1150 * 1650) / 1687.5);
+    expect(r.deler.find((d) => d.id === 'selvdisponert')?.timer).toBeCloseTo(1650 - (1150 * 1650) / 1687.5);
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1650);
   });
 });

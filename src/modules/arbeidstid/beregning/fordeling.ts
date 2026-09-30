@@ -15,7 +15,8 @@
 // som undervisningsdelen: planfestet × R og (årsverk − planfestet) × R. Da viser diagrammet hvor mye planfestet tid
 // og tid til egen disposisjon stillingen gir uansett (eiers ønske 30.09.2026).
 // For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie,
-// så arbeidsåret er fem dager kortere: 191 dager eller 38,2 uker (eier 30.09.2026).
+// så arbeidsåret er fem dager kortere: 191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for
+// andre: 1150 × 1650 ÷ 1687,5 (eier 30.09.2026).
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
 // regnes med det utvidede arbeidsåret.
 import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
@@ -74,7 +75,16 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     liste: b.grupper.map((g) => g.timer.verdi),
   };
   const arsverk = regel(hent, inn.over60 ? 'sfs2213.arsverk_timer_60_ar' : 'sfs2213.arsverk_timer', 'arsverk', 'timer');
-  const planfestet = regel(hent, 'sfs2213.planfestet_timer', 'planfestet', 'timer');
+  // Fra 60 år er planfestet tid samme andel av det kortere årsverket som for andre lærere (eier 30.09.2026):
+  // planfestet × årsverk 60 år ÷ årsverk. Den ekstra ferien tas da like mye fra planfestet tid og tiden læreren disponerer selv.
+  const planfestetTrinn: Trinn[] = [];
+  let planfestet = regel(hent, 'sfs2213.planfestet_timer', 'planfestet', 'timer');
+  if (inn.over60) {
+    const full = regel(hent, 'sfs2213.arsverk_timer', 'arsverk', 'timer');
+    const t = trinn('planfestet_60', { planfestet, arsverk_60: arsverk, arsverk: full }, 'planfestet', 'timer', (planfestet.verdi * arsverk.verdi) / full.verdi);
+    planfestetTrinn.push(t);
+    planfestet = t.resultat;
+  }
   const B = b.sum;
 
   // Den delen av en oppgitt stilling som ikke er fylt med fag og funksjoner, regnes som undervisningsdelen.
@@ -195,7 +205,7 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
   if (stilling.resultat.verdi > 100 + 1e-9) advarsler.add('over_hel_stilling');
   if (moterForStore) advarsler.add('motetid_for_stor');
 
-  const trinnliste: Trinn[] = [...f.trinn, ...b.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
+  const trinnliste: Trinn[] = [...f.trinn, ...b.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, ...planfestetTrinn, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
   return {
     beskjeftigelse: B,
     funksjonsprosent: F,

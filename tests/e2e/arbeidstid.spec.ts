@@ -469,7 +469,8 @@ test.describe('arbeidstid', () => {
     await expect(page.locator('.arbeidsplan-differanse')).toHaveAttribute('data-differanse', 'balanse');
     const tabell = page.locator('.fordeling-tabell');
     await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText(/1\s650,0/);
-    await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s150,0/);
+    // Planfestet tid er samme andel av årsverket som for andre: 1150 × 1650 ÷ 1687,5.
+    await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s124,4/);
     // Fem arbeidsdager ekstra ferie: arbeidsåret er 191 dager eller 38,2 uker.
     await expect(page.getByText('Per uke er timene delt på 38,2 uker i arbeidsåret.')).toBeVisible();
     await page.getByRole('button', { name: 'Forklaring: Redusert undervisning' }).click();
