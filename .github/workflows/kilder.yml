@@ -44,7 +44,13 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Installer Chromium (for KF Infoserie, som krever nettleser)
-        run: npx playwright install --with-deps chromium
+        # Nedlastingen henger av og til. Da avbrytes den etter 5 minutter og prøves på nytt, opptil tre ganger.
+        run: |
+          for forsok in 1 2 3; do
+            timeout 300 npx playwright install --with-deps chromium && exit 0
+            echo "::warning::Installasjonen av Chromium hang eller feilet (forsøk $forsok av 3)."
+          done
+          exit 1
       # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
       # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
       - name: Hent Grep
