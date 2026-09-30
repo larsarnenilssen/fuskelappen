@@ -825,5 +825,10 @@ test.describe('arbeidstid', () => {
   test('begrepene er søkbare', async ({ page }) => {
     await aapne(page, '/sok?q=årsramme');
     await expect(page.getByRole('link', { name: /Årsramme/ }).first()).toBeVisible();
+    const sok = page.getByRole('searchbox', { name: 'Søk etter tema, begrep eller fag' });
+    await sok.fill('merarbeid');
+    await expect(page.getByRole('link', { name: /Variabel lønn/ }).first()).toBeVisible();
+    await sok.fill('planleggingsdag');
+    await expect(page.getByRole('link', { name: /Planleggingsdager/ }).first()).toBeVisible();
   });
 });
