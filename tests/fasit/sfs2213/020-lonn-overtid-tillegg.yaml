@@ -1,0 +1,21 @@
+id: sfs2213-020
+beskrivelse: "Lønn i Arbeidsplan: årslønn 600 000, 100 % stilling, samlet beskjeftigelse 110 % i engelsk Vg1 og kontaktlærertillegg 12 000."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: lonn
+input:
+  lonn: { arslonn: 600000 }
+  stilling: 100
+  tillegg: 12000
+  overtid:
+    beskjeftigelse: 110
+    arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+    elever: 30
+forventet:
+  arslonn: 600000
+  overtid: 66666.67
+  samlet: 678666.67
+  feriepenger: 81440
+begrunnelse: >-
+  Overtid som i overtidskalkulatoren: 10 % av årsrammen 525 = 52,5 årsrammetimer, 140 timer kalkulert tid × timelønn
+  317,46 × 1,5 = 66 666,67. Lønn i året 600 000 + 12 000 + 66 666,67 = 678 666,67. Feriepenger 12 % av det som
+  utbetales = 81 440. Eksempel F, godkjent av eier 30.09.2026.

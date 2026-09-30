@@ -1,0 +1,22 @@
+id: sfs2213-015
+beskrivelse: "Arbeidsplan, 100 % stilling: engelsk Vg1 420 årstimer (80 %) og kontaktlærer 20 % som ikke utvider planfestet tid."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: arbeidsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 420 }
+  funksjoner: [{ navn: Kontaktlærer, prosent: 20, utvider: false }]
+forventet:
+  beskjeftigelse: 100
+  undervisningstimer: 420
+  annen_planfestet: 500
+  funksjonstid: 230
+  selvdisponert: 537.5
+  planfestet: 1150
+  per_uke: 29.34
+begrunnelse: >-
+  Funksjonen fortrenger undervisning i planfestet tid og fordeles som undervisningen: planfestet del 1150 × 20 % = 230,
+  selvdisponert (1687,5 − 1150) × (80 + 20) % = 537,5. Undervisningsdelen gir 1150 × 80 % = 920 planfestet, altså 420
+  undervisning og 500 annen planfestet tid. Planfestet tid i alt 1150, 1150 ÷ 39,2 uker = 29,34 timer per uke.
+  Eksempel A, godkjent av eier 30.09.2026.

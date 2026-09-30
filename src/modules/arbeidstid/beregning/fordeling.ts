@@ -14,7 +14,8 @@
 // Er stillingsprosenten oppgitt, fordeles den delen av stillingen som ikke er fylt med fag og funksjoner (R),
 // som undervisningsdelen: planfestet × R og (årsverk − planfestet) × R. Da viser diagrammet hvor mye planfestet tid
 // og tid til egen disposisjon stillingen gir uansett (eiers ønske 30.09.2026).
-// For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4).
+// For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie,
+// så arbeidsåret er fem dager kortere: 191 dager eller 38,2 uker (eier 30.09.2026).
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
 // regnes med det utvidede arbeidsåret.
 import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
@@ -30,7 +31,7 @@ export interface Fordelingsinndata {
   /** Funksjoner og redusert undervisning i prosent av full stilling som ikke utvider planfestet tid. */
   funksjonUtenUtvidelse?: number;
   moterPerUke: number;
-  /** Læreren er 60 år eller eldre: årsverket er 1650 timer (punkt 4). */
+  /** Læreren er 60 år eller eldre: årsverket er 1650 timer (punkt 4), og arbeidsåret fem dager kortere. */
   over60?: boolean;
 }
 
@@ -48,7 +49,7 @@ export interface Fordelingsresultat extends Utregning {
   funksjonsprosent: Operand;
   stilling: Operand;
   arsverk: Operand;
-  /** Uker i arbeidsåret (196 dager ÷ 5), utvidet når planfestet tid går over grensen. Til visning av timer per uke. */
+  /** Uker i arbeidsåret (196 dager ÷ 5, eller 191 fra 60 år), utvidet når planfestet tid går over grensen. Til visning av timer per uke. */
   arbeidsaarUker: Operand;
   /** Dager arbeidsåret er utvidet med (0 når planfestet tid er innenfor grensen). */
   utvidelseDager: Operand;
@@ -167,7 +168,7 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     'timer',
     planU.resultat.verdi + funksjonstid.resultat.verdi,
   );
-  const aar = arbeidsaaret(hent);
+  const aar = arbeidsaaret(hent, inn.over60 ?? false);
   const maksUke = regel(hent, 'sfs2213.planfestet_maks_uke', 'planfestet_maks_uke', 'timer_per_uke');
   const maks = trinn('planfestet_maks', { uker: aar.uker, maks_uke: maksUke }, 'planfestet_maks', 'timer', aar.uker.verdi * maksUke.verdi);
   const aarTrinn: Trinn[] = [planfestetStilling, ...aar.trinn, maks];

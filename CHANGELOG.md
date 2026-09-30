@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.6.2] – 2026-09-30
+
+### Endret
+
+- **60 år og eldre:** De 37,5 timene årsverket er kortere med, er fem arbeidsdager ekstra ferie. Arbeidsåret er derfor 191 dager eller 38,2 uker, og timene per uke i Arbeidsplan regnes med det. Utregningen viser de ekstra feriedagene.
+
+### Lagt til
+
+- Åtte nye fasiteksempler godkjent av eier (015–022): fordeling i Arbeidsplan med og uten utvidet planfestet tid, deltid, stilling med bare funksjon, lønn med overtid og tillegg, lønn fra 60 år og periode med uker regnet ut fra dagene.
+
 ## [0.6.1] – 2026-09-30
 
 ### Lagt til

@@ -1,0 +1,17 @@
+id: sfs2213-021
+beskrivelse: "Lønn i Arbeidsplan: årslønn 600 000, 80 % stilling, kontaktlærertillegg 12 000, 60 år."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: lonn
+input:
+  lonn: { arslonn: 600000 }
+  stilling: 80
+  tillegg: 12000
+  over60: true
+forventet:
+  arslonn: 480000
+  overtid: 0
+  samlet: 492000
+  feriepenger: 70356
+begrunnelse: >-
+  Årslønn i stillingen 600 000 × 80 % = 480 000. Lønn i året 480 000 + 12 000 = 492 000. Feriepenger for arbeidstakere
+  over 60 år 14,3 % = 70 356. Eksempel F2, godkjent av eier 30.09.2026.

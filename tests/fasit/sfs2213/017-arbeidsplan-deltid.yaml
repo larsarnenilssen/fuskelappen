@@ -1,0 +1,20 @@
+id: sfs2213-017
+beskrivelse: "Arbeidsplan, 60 % stilling med bare undervisning: engelsk Vg1 315 årstimer (60 %)."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: arbeidsplan
+input:
+  stilling: 60
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 315 }
+forventet:
+  beskjeftigelse: 60
+  differanse: 0
+  arsverk: 1012.5
+  undervisningstimer: 315
+  annen_planfestet: 375
+  selvdisponert: 322.5
+  planfestet: 690
+  per_uke: 17.6
+begrunnelse: >-
+  Deltid regnes forholdsmessig: årsverk 1687,5 × 60 % = 1012,5, planfestet 1150 × 60 % = 690 (undervisning 315 og annen
+  planfestet tid 375), selvdisponert (1687,5 − 1150) × 60 % = 322,5. Eksempel D, godkjent av eier 30.09.2026.

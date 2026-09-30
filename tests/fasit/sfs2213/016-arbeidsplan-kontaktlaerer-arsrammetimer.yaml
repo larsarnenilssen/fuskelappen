@@ -1,0 +1,28 @@
+id: sfs2213-016
+beskrivelse: "Arbeidsplan, 100 % stilling: engelsk Vg1 420 årstimer, kontaktlærer 28,5 årsrammetimer som utvider planfestet tid, og møter 2 timer per uke."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: arbeidsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 420 }
+  funksjoner: [{ navn: Kontaktlærer, arsrammetimer: 28.5 }]
+  moter_per_uke: 2
+forventet:
+  funksjonsprosent: 4.69
+  beskjeftigelse: 84.69
+  differanse: -15.31
+  differanse_timer: -80.37
+  undervisningstimer: 420
+  motetid: 76
+  annen_planfestet: 600.05
+  funksjonstid: 79.17
+  selvdisponert: 512.28
+  planfestet: 1175.22
+  per_uke: 29.98
+begrunnelse: >-
+  Kontaktlærer 28,5 ÷ 607,5 × 100 = 4,69 %. Samlet beskjeftigelse 80 + 4,69 = 84,69 %, teknisk undertid −15,31 % eller
+  −80,37 årsrammetimer i engelsk (525). Den ufylte delen fordeles som undervisning: planfestet 1150 × 95,31 % = 1096,05,
+  som er undervisning 420, møtetid 2 × 38 = 76 og annen planfestet tid 600,05. Funksjonstid 1687,5 × 4,69 % = 79,17.
+  Selvdisponert (1687,5 − 1150) × 95,31 % = 512,28. Planfestet i alt 1175,22, 29,98 timer per uke.
+  Eksempel B, godkjent av eier 30.09.2026.

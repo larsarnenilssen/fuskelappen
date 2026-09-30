@@ -148,6 +148,16 @@ describe('timevikar', () => {
 describe('fordeling', () => {
   const grupper = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
 
+  it('fra 60 år er arbeidsåret fem dager kortere (ekstra ferie)', () => {
+    const vanlig = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    const eldre = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0, over60: true });
+    expect(vanlig.arbeidsaarUker.verdi).toBeCloseTo(39.2);
+    expect(eldre.arbeidsaarUker.verdi).toBeCloseTo(38.2);
+    expect(eldre.arsverk.verdi).toBe(1650);
+    expect(eldre.trinn.find((t) => t.id === 'ekstra_feriedager_60')?.resultat.verdi).toBe(5);
+    expect(eldre.trinn.find((t) => t.id === 'arbeidsaar_dager_60')?.resultat.verdi).toBe(191);
+  });
+
   it('delene summerer seg til årsverket for stillingen', () => {
     const r = beregnFordeling(hent, { grupper, funksjon: { type: 'arsrammetimer', timer: 28.5 }, moterPerUke: 2 });
     const sum = r.deler.reduce((s, d) => s + d.timer, 0);

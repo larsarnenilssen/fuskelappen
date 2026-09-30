@@ -212,6 +212,7 @@ export function Livsfasekort({
   maks,
   satser,
   arsverk60,
+  feriedager60,
   onEndring,
 }: {
   livsfase: Livsfase;
@@ -223,6 +224,8 @@ export function Livsfasekort({
   satser: Readonly<Record<Exclude<Livsfase, 'ingen'>, number | null>>;
   /** Årsverket for lærere som er 60 år og eldre. */
   arsverk60: number | null;
+  /** Arbeidsdagene årsverket er kortere med fra 60 år (ekstra ferie). */
+  feriedager60: number | null;
   onEndring: (livsfase: Livsfase, prosent: number | null) => void;
 }) {
   const { t } = useTekst();
@@ -248,7 +251,7 @@ export function Livsfasekort({
             </p>
             <p class="felt-hjelp">{t('arbeidstid.livsfase.planfestet')}</p>
             {livsfase === 'fra57' && <p class="felt-hjelp">{t('arbeidstid.livsfase.fra57')}</p>}
-            {livsfase === 'fra60' && <p class="felt-hjelp">{t('arbeidstid.livsfase.fra60', { arsverk: tallTekst(arsverk60 ?? 0) })}</p>}
+            {livsfase === 'fra60' && <p class="felt-hjelp">{t('arbeidstid.livsfase.fra60', { arsverk: tallTekst(arsverk60 ?? 0), dager: tallTekst(feriedager60 ?? 0) })}</p>}
           </Hjelp>
         </div>
         <select id={id} value={livsfase} onChange={(e) => onEndring(e.currentTarget.value as Livsfase, null)}>

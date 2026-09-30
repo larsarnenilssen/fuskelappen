@@ -460,7 +460,7 @@ test.describe('arbeidstid', () => {
     await expect(page.getByLabel('Funksjon 1: Prosent')).toHaveValue('0');
   });
 
-  test('redusert undervisning for 60 år regnes som en del av stillingen, med årsverk 1650', async ({ page }) => {
+  test('redusert undervisning for 60 år regnes som en del av stillingen, med årsverk 1650 og kortere arbeidsår', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('459,375');
@@ -470,6 +470,11 @@ test.describe('arbeidstid', () => {
     const tabell = page.locator('.fordeling-tabell');
     await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText(/1\s650,0/);
     await expect(tabell.getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s150,0/);
+    // Fem arbeidsdager ekstra ferie: arbeidsåret er 191 dager eller 38,2 uker.
+    await expect(page.getByText('Per uke er timene delt på 38,2 uker i arbeidsåret.')).toBeVisible();
+    await page.getByRole('button', { name: 'Forklaring: Redusert undervisning' }).click();
+    await expect(page.locator('.hjelp-tekst').getByText(/Forskjellen er 5 arbeidsdager ekstra ferie/)).toBeVisible();
+    await page.getByRole('button', { name: 'Forklaring: Redusert undervisning' }).click();
     // Høyere feriepengesats følger av 60 år.
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await expect(page.getByText('Høyere feriepengesats, fordi læreren er 60 år eller eldre')).toBeVisible();

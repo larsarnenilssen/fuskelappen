@@ -132,6 +132,10 @@ export default function Arbeidsplan() {
   const kontaktlaererTimer = useRegeltall(hent, 'sfs2213.kontaktlaerer_reduksjon');
   const arsrammeFunksjon = useRegeltall(hent, 'sfs2213.arsramme_funksjon');
   const arsverk60 = useRegeltall(hent, 'sfs2213.arsverk_timer_60_ar');
+  const arsverk = useRegeltall(hent, 'sfs2213.arsverk_timer');
+  const timerPerDag = useRegeltall(hent, 'sfs2213.timer_per_dag');
+  // Fra 60 år er årsverket kortere. Forskjellen er arbeidsdager med ekstra ferie (punkt 4, eier 30.09.2026).
+  const feriedager60 = arsverk !== null && arsverk60 !== null && timerPerDag ? (arsverk - arsverk60) / timerPerDag : null;
   const tilleggene = s.funksjoner
     .map((f, i) => ({ f, i }))
     .filter(({ f }) => f.tillegg === true)
@@ -346,6 +350,7 @@ export default function Arbeidsplan() {
         maks={livsfaseMaks}
         satser={livsfasesatser}
         arsverk60={arsverk60}
+        feriedager60={feriedager60}
         onEndring={(livsfase, livsfaseProsent) => sett({ ...s, livsfase, livsfaseProsent })}
       />
       <Sammenleggbartkort
