@@ -2141,6 +2141,31 @@ p.fagkort-tittel {
 /* ---------- Utskrift og PDF ----------
    Bare kalkulatoren skrives ut: menyer, knapper og faste linjer skjules, og innhold i lukkede kort og utregningen vises. */
 
+/* ---------- Fagvalg med fagkode (kalkulatorene) ---------- */
+
+.fagtreff-overskrift {
+  margin: var(--rom-3) 0 var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
+.programvalg {
+  margin: var(--rom-2) 0;
+  padding: 0;
+  border: 0;
+}
+
+.programvalg legend {
+  padding: 0;
+  font-weight: 600;
+}
+
+.felt-hjelp.overstyrt {
+  padding-left: var(--rom-2);
+  border-left: 3px solid var(--farge-advarsel);
+}
+
 /* ---------- Fag og læreplaner ---------- */
 
 .fagfilter {

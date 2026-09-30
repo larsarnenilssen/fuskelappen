@@ -10,7 +10,7 @@ import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
-import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Periodelinje, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
@@ -38,14 +38,15 @@ function BrukAvDel({ id }: { id: FordelingsdelId }) {
 }
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
-function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
+function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string, malform: Malform): string {
   const plass = g.arsrammer[0];
+  if (plass?.fag) return `${plass.fag.kode} ${plass.fag.navn[malform]}`;
   if (plass?.valg && plass.valg !== 'manuell') return radTekst(indeks, plass.valg)?.navn ?? reserve;
   return reserve;
 }
 
 export default function Arbeidsplan() {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
@@ -207,7 +208,7 @@ export default function Arbeidsplan() {
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const gruppenavn = fylte.map(
     (x, i) =>
-      `${t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf(x.g) + 1 })}: ${fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`)}`,
+      `${t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf(x.g) + 1 })}: ${fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`, malform)}`,
   );
 
   const deler: Stolpedel[] = resultat

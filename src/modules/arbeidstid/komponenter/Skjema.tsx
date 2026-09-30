@@ -1,6 +1,6 @@
 // Skjemadeler for kalkulatorene: brytere, fagsøk med årsramme fra vedlegg 1, og kort for hvert fag.
 import type { ComponentChildren } from 'preact';
-import { useId, useMemo, useState } from 'preact/hooks';
+import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import grepArstimer from '../../../../data/grep/arstimer.json';
 import fagkoder from '../../../../data/grep/fagkoder.json';
 import programomrader from '../../../../data/grep/programomrader.json';
@@ -11,8 +11,15 @@ import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../component
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { somTabell } from '../../../core/regler/motor.ts';
-import type { Arsrammerad, Arsrammevalg, Arstimerad, Gruppe, Hent } from '../beregning/index.ts';
+import { lastFagindeks } from '../../fag/data.ts';
+import { filtrerFag, tomtFilter } from '../../fag/oppslag.ts';
+import type { Fagindeks as Grepindeks } from '../../fag/skjema.ts';
+import { finnKobling, lesArsrammer, lesKoblinger, type Arsrammerad, type Arsrammevalg, type Arstimerad, type Gruppe, type Hent, type Koblingstabeller } from '../beregning/index.ts';
 import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
+import { useHent } from '../kontekst.ts';
+import { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode } from '../fagvalg.ts';
+
+export { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode };
 
 /**
  * Segmentert bryter: et lite utvalg valg side om side (radioknapper).
@@ -94,14 +101,7 @@ export function Vippe({
   );
 }
 
-/** Ett valg av årsramme: en rad i vedlegg 1 (nr), «manuell», eller ikke valgt (''). */
-export interface Arsrammeplass {
-  valg: string;
-  t60: number | null;
-  stjerne: boolean;
-  /** Fagkodene i Grep når brukeren søkte fram ett bestemt fag i raden (f.eks. HEA2005). */
-  fagkoder?: string[] | null;
-}
+
 
 const arstimerForFagkode = (grepArstimer as unknown as { arstimer: Record<string, number | null> }).arstimer;
 let fagkodenavn: Map<string, string> | null = null;
@@ -117,6 +117,8 @@ export function navnForFagkode(kode: string): string | undefined {
  * Undefined når årstimetallet ikke er kjent (f.eks. et programfag på yrkesfag uten valgt fagkode).
  */
 export function kjentArstimer(plass: Arsrammeplass | undefined, tabell: ReadonlyMap<number, Arstimerad> | undefined): Arstimerad | undefined {
+  // Fag valgt med fagkode: årstimetallet i Grep, også når årsrammen er overstyrt.
+  if (plass?.fag && plass.fag.timer !== null) return { arstimer: plass.fag.timer, fagkoder: [plass.fag.kode] };
   if (!plass?.valg || plass.valg === 'manuell') return undefined;
   // Fagkodene må ha samme årstimetall (samme fag i flere programområder), ellers brukes tabellen for raden.
   const tall = (plass.fagkoder ?? []).map((k) => arstimerForFagkode[k]);
@@ -133,7 +135,7 @@ export function tomArsrammeplass(): Arsrammeplass {
 export function tilArsrammevalg(p: Arsrammeplass, rader: readonly Arsrammerad[]): Arsrammevalg | null {
   if (p.valg === 'manuell') return p.t60 !== null && p.t60 > 0 ? { type: 'manuell', t60: p.t60, stjerne: p.stjerne } : null;
   const rad = rader.find((r) => String(r.nr) === p.valg);
-  return rad ? { type: 'rad', rad } : null;
+  return rad ? { type: 'rad', rad, ...(p.fag ? { fagkode: p.fag.kode } : {}) } : null;
 }
 
 export function erStjernefag(plasser: readonly Arsrammeplass[], rader: readonly Arsrammerad[]): boolean {
@@ -174,7 +176,76 @@ export function radTekst(indeks: Fagindeks, nr: string): { navn: string; t60: nu
   return { navn: `${fag ?? rad.kategori} · ${program} ${rad.trinn}`, t60: rad.t60, t45: rad.t45, stjerne: rad.stjerne };
 }
 
-/** Velger en årsramme: søk i vedlegg 1, eller skriv inn årsrammen selv. */
+/** Koblingstabellene og radene i vedlegg 1 for perioden, eller null hvis regelsettet ikke har koblingen. */
+function useKoblingsdata(): { tabeller: Koblingstabeller; rader: Arsrammerad[] } | null {
+  const hent = useHent();
+  return useMemo(() => {
+    try {
+      return { tabeller: lesKoblinger(hent), rader: lesArsrammer(hent('sfs2213.arsrammer')) };
+    } catch {
+      return null;
+    }
+  }, [hent]);
+}
+
+/** Fagindeksen fra Grep. Lastes først når den trengs (brukeren søker, eller et fag med fagkode er valgt). */
+function useGrepindeks(aktiv: boolean): Grepindeks | null {
+  const [indeks, settIndeks] = useState<Grepindeks | null>(null);
+  useEffect(() => {
+    if (!aktiv || indeks) return;
+    let levende = true;
+    lastFagindeks().then(
+      (i) => levende && settIndeks(i),
+      () => undefined,
+    );
+    return () => {
+      levende = false;
+    };
+  }, [aktiv, indeks]);
+  return indeks;
+}
+
+/** Linjen om hvordan årsrammen ble funnet for et fag valgt med fagkode. */
+function Koblingslinje({ plass, onEndring }: { plass: Arsrammeplass; onEndring: (p: Arsrammeplass) => void }) {
+  const { t } = useTekst();
+  const fag = plass.fag;
+  const metode = koblingsmetode(plass);
+  if (!fag || metode === null) return null;
+  const tekst =
+    metode === 'eksplisitt'
+      ? t('arbeidstid.felles.koblingEksplisitt')
+      : metode === 'regel'
+        ? t('arbeidstid.felles.koblingRegel')
+        : fag.nr !== null
+          ? t('arbeidstid.felles.overstyrtArsramme', { nr: fag.nr })
+          : t('arbeidstid.felles.valgtSelv');
+  return (
+    <p class={`felt-hjelp fagvalg-metode${metode === 'manuell' ? ' overstyrt' : ''}`} data-metode={metode}>
+      {tekst}{' '}
+      {metode === 'manuell' && fag.nr !== null ? (
+        <button type="button" class="lenkeknapp liten" onClick={() => onEndring({ ...plass, valg: String(fag.nr), t60: null, stjerne: false, fag: { ...fag, overstyr: false } })}>
+          {t('arbeidstid.felles.brukKobling')}
+        </button>
+      ) : (
+        <button type="button" class="lenkeknapp liten" onClick={() => onEndring({ ...plass, valg: '', t60: null, stjerne: false, fag: { ...fag, overstyr: true } })}>
+          {t('arbeidstid.felles.endreArsramme')}
+        </button>
+      )}
+    </p>
+  );
+}
+
+/** Kort navn på faget valgt med fagkode: «HEA2005 Helsefremmende arbeid». */
+function Fagkodelinje({ fag }: { fag: Grepfag }) {
+  const { malform } = useTekst();
+  return (
+    <span class="fagvalg-kode">
+      {fag.kode} {fag.navn[malform]}
+    </span>
+  );
+}
+
+/** Velger en årsramme: søk i vedlegg 1 eller på fagkode, eller skriv inn årsrammen selv. */
 export function Fagvelger({
   etikett,
   plass,
@@ -188,16 +259,38 @@ export function Fagvelger({
   onEndring: (p: Arsrammeplass) => void;
   ekstra?: ComponentChildren;
 }) {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   const id = useId();
   const [sok, settSok] = useState('');
   const treff = useMemo(() => sokFag(indeks, sok, 6), [indeks, sok]);
+  const kobling = useKoblingsdata();
+  const fag = plass.fag ?? null;
+  const grep = useGrepindeks(sok.trim().length >= 2 || fag !== null);
+  const grepTreff = useMemo(() => {
+    if (!grep || !kobling || fag || sok.trim().length < 2) return [];
+    return filtrerFag(grep, { ...tomtFilter, tekst: sok })
+      .slice(0, 5)
+      .map(({ kode, fag: f }) => ({ kode, f, r: finnKobling(kode, grep, kobling.tabeller, kobling.rader) }));
+  }, [grep, kobling, fag, sok]);
+  // Valg som beholder faget valgt med fagkode (årstimene følger faget), men der brukeren velger årsrammen selv.
+  const medFag = (p: Arsrammeplass): Arsrammeplass => (fag ? { ...p, fagkoder: [fag.kode], fag: { ...fag, overstyr: false } } : p);
+  const manuellKnapp = (
+    <button type="button" class="lenkeknapp liten etikettrad-hoyre" onClick={() => onEndring(medFag({ valg: 'manuell', t60: null, stjerne: false }))}>
+      {t('arbeidstid.felles.manuellValg')}
+    </button>
+  );
 
   if (plass.valg === 'manuell') {
     return (
       <div class="fagvelger">
+        {fag && (
+          <p class="fagvalg">
+            <Fagkodelinje fag={fag} />
+          </p>
+        )}
         <Tallfelt etikett={t('arbeidstid.felles.manuellEtikett')} verdi={plass.t60} min={1} maks={2000} onEndring={(v) => onEndring({ ...plass, t60: v })} />
         <Vippe tekst={t('arbeidstid.felles.manuellStjerne')} pa={plass.stjerne} onEndring={(stjerne) => onEndring({ ...plass, stjerne })} />
+        <Koblingslinje plass={plass} onEndring={onEndring} />
         <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())}>
           {t('arbeidstid.felles.tilbakeTilSok')}
         </button>
@@ -210,21 +303,62 @@ export function Fagvelger({
   if (valgt) {
     return (
       <div class="fagvelger">
-        <p class="fagvalg" aria-label={`${etikett}: ${valgt.navn}`}>
+        <p class="fagvalg" aria-label={`${etikett}: ${fag ? `${fag.kode} ${fag.navn[malform]}, ` : ''}${valgt.navn}`}>
           <span class="fagvalg-navn">
             {valgt.navn}
             {valgt.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
           </span>
-          {plass.fagkoder && plass.fagkoder.length > 0 && (
-            <span class="fagvalg-kode">
-              {plass.fagkoder.join(', ')} {navnForFagkode(plass.fagkoder[0] as string) ?? ''}
-            </span>
+          {fag ? (
+            <Fagkodelinje fag={fag} />
+          ) : (
+            plass.fagkoder &&
+            plass.fagkoder.length > 0 && (
+              <span class="fagvalg-kode">
+                {plass.fagkoder.join(', ')} {navnForFagkode(plass.fagkoder[0] as string) ?? ''}
+              </span>
+            )
           )}
           <span class="fagvalg-ramme tall">{t('arbeidstid.felles.arsrammeKort', { t60: formaterTall(valgt.t60), t45: formaterTall(valgt.t45) })}</span>
           <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())} aria-label={`${t('arbeidstid.felles.endreFag')}: ${valgt.navn}`}>
             {t('arbeidstid.felles.endreFag')}
           </button>
         </p>
+        <Koblingslinje plass={plass} onEndring={onEndring} />
+        {ekstra}
+      </div>
+    );
+  }
+
+  // Faget er valgt med fagkode, men koblingen er flertydig: brukeren velger utdanningsprogram og trinn.
+  const kandidater = fag && !fag.overstyr ? fag.kandidater.filter((k, i, l) => l.findIndex((x) => x.program === k.program && x.trinn === k.trinn) === i) : [];
+  if (fag && kandidater.length > 0) {
+    return (
+      <div class="fagvelger">
+        <p class="fagvalg">
+          <Fagkodelinje fag={fag} />
+          <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())}>
+            {t('arbeidstid.felles.endreFag')}
+          </button>
+        </p>
+        <fieldset class="programvalg">
+          <legend>{t('arbeidstid.felles.velgProgramTrinn', { fag: `${fag.kode} ${fag.navn[malform]}` })}</legend>
+          <p class="felt-hjelp">{t('arbeidstid.felles.velgProgramTrinnHjelp')}</p>
+          <ul class="fagtreff">
+            {kandidater.map((k) => (
+              <li key={`${k.program}-${k.trinn}`}>
+                <button type="button" onClick={() => onEndring({ valg: String(k.nr), t60: null, stjerne: false, fagkoder: [fag.kode], fag: { ...fag, nr: k.nr, metode: k.metode, overstyr: false } })}>
+                  <span class="fagtreff-navn">
+                    {grep?.utdanningsprogram[k.program]?.[malform] ?? k.program} {k.trinn}
+                  </span>
+                  <span class="fagtreff-under tall">{t('arbeidstid.felles.arsrammeKort', { t60: formaterTall(k.t60), t45: formaterTall(k.t45) })}</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </fieldset>
+        <button type="button" class="lenkeknapp liten" onClick={() => onEndring({ ...plass, fag: { ...fag, overstyr: true } })}>
+          {t('arbeidstid.felles.endreArsramme')}
+        </button>
         {ekstra}
       </div>
     );
@@ -232,15 +366,36 @@ export function Fagvelger({
 
   return (
     <div class="fagvelger">
+      {fag && (
+        <>
+          <p class="fagvalg">
+            <Fagkodelinje fag={fag} />
+            <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())}>
+              {t('arbeidstid.felles.endreFag')}
+            </button>
+          </p>
+          {fag.kandidater.length === 0 ? (
+            <p class="felt-hjelp">{t('arbeidstid.felles.ikkeKoblet', { fag: fag.kode })}</p>
+          ) : (
+            <p class="felt-hjelp">
+              <button
+                type="button"
+                class="lenkeknapp liten"
+                onClick={() => onEndring(fag.nr !== null ? { ...plass, valg: String(fag.nr), fag: { ...fag, overstyr: false } } : { ...plass, fag: { ...fag, overstyr: false } })}
+              >
+                {t('arbeidstid.felles.avbrytOverstyring')}
+              </button>
+            </p>
+          )}
+        </>
+      )}
       <div class="felt">
         <div class="etikettrad med-hjelp">
           <label for={id}>{etikett}</label>
           <Hjelp tema={etikett}>
             <p class="felt-hjelp">{t('arbeidstid.felles.fagSokHjelp')}</p>
           </Hjelp>
-          <button type="button" class="lenkeknapp liten etikettrad-hoyre" onClick={() => onEndring({ valg: 'manuell', t60: null, stjerne: false })}>
-            {t('arbeidstid.felles.manuellValg')}
-          </button>
+          {manuellKnapp}
         </div>
         <div class="sokefelt">
           <Ikon navn="sok" class="sokefelt-ikon" />
@@ -259,7 +414,7 @@ export function Fagvelger({
       <ul id={`${id}-treff`} class="fagtreff" aria-live="polite">
         {treff.map((tr) => (
           <li key={tr.rad.nr}>
-            <button type="button" onClick={() => onEndring({ valg: String(tr.rad.nr), t60: null, stjerne: false, fagkoder: tr.fagkoder ?? null })}>
+            <button type="button" onClick={() => onEndring(medFag({ valg: String(tr.rad.nr), t60: null, stjerne: false, fagkoder: tr.fagkoder ?? null }))}>
               <span class="fagtreff-navn">
                 {tr.fag ?? tr.rad.kategori} · {tr.program} {tr.rad.trinn}
                 {tr.rad.stjerne && <span aria-hidden="true"> {t('arbeidstid.felles.stjerne')}</span>}
@@ -272,7 +427,37 @@ export function Fagvelger({
           </li>
         ))}
       </ul>
-      {sok.trim() !== '' && treff.length === 0 && <p class="felt-hjelp">{t('arbeidstid.felles.ingenFagTreff')}</p>}
+      {grepTreff.length > 0 && (
+        <>
+          <p class="fagtreff-overskrift" id={`${id}-grep`}>
+            {t('arbeidstid.felles.grepTreff')}
+          </p>
+          <ul class="fagtreff" aria-labelledby={`${id}-grep`}>
+            {grepTreff.map(({ kode, f, r }) => (
+              <li key={kode}>
+                <button type="button" onClick={() => onEndring(fagvalgFraKobling(kode, f.navn, f.timer, r))}>
+                  <span class="fagtreff-navn">
+                    {kode} {f.navn[malform]}
+                  </span>
+                  <span class="fagtreff-under tall">
+                    {[
+                      f.trinn.join(', '),
+                      r.status === 'koblet'
+                        ? t('arbeidstid.felles.grepArsramme', { t60: formaterTall(r.kandidat.rad.t60), t45: formaterTall(r.kandidat.rad.t45) })
+                        : r.status === 'flertydig'
+                          ? t('arbeidstid.felles.grepFlertydig')
+                          : t('arbeidstid.felles.grepUkoblet'),
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      {sok.trim() !== '' && treff.length === 0 && grepTreff.length === 0 && <p class="felt-hjelp">{t('arbeidstid.felles.ingenFagTreff')}</p>}
       {ekstra}
     </div>
   );
@@ -403,7 +588,7 @@ export function autoArstimer(
   arsrammer: readonly Arsrammeplass[],
   tabell: ReadonlyMap<number, Arstimerad> | undefined,
 ): Partial<Gruppetilstand> {
-  const nokkel = (p: Arsrammeplass | undefined) => `${p?.valg ?? ''}|${(p?.fagkoder ?? []).join(',')}`;
+  const nokkel = (p: Arsrammeplass | undefined) => `${p?.valg ?? ''}|${(p?.fagkoder ?? []).join(',')}|${p?.fag?.kode ?? ''}`;
   if (nokkel(arsrammer[0]) === nokkel(gruppe.arsrammer[0]) || !(gruppe.arstimer === null || gruppe.arstimerAuto)) return {};
   const kjent = kjentArstimer(arsrammer[0], tabell);
   if (kjent) return { arstimer: kjent.arstimer, arstimerAuto: true };
@@ -437,13 +622,14 @@ export function Gruppekort({
   onEndring: (g: Gruppetilstand) => void;
   onFjern: () => void;
 }) {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
   const kjent = kjentArstimer(gruppe.arsrammer[0], arstimer);
   const [lukket, veksle] = useSammenlagt(`gruppe-${gruppe.id}`);
   const innhold = useId();
   const valg = gruppe.arsrammer[0]?.valg;
-  const fagnavn = valg && valg !== 'manuell' ? radTekst(indeks, valg)?.navn : undefined;
+  const valgtFag = gruppe.arsrammer[0]?.fag;
+  const fagnavn = valgtFag ? `${valgtFag.kode} ${valgtFag.navn[malform]}` : valg && valg !== 'manuell' ? radTekst(indeks, valg)?.navn : undefined;
   return (
     <fieldset class={`fagkort${lukket ? ' lukket' : ''}`} data-gruppe={nr}>
       <legend class="fagkort-tittel">
@@ -507,6 +693,14 @@ export function Gruppekort({
         </div>
         {gruppe.modus === 'arstimer' && gruppe.arstimerAuto && kjent && (
           <p class="felt-hjelp">{t('arbeidstid.felles.arstimerFraGrep', { fagkoder: kjent.fagkoder.join(', ') })}</p>
+        )}
+        {!periode && gruppe.modus === 'arstimer' && !gruppe.arstimerAuto && kjent && gruppe.arstimer !== null && gruppe.arstimer !== kjent.arstimer && (
+          <p class="felt-hjelp overstyrt" data-overstyrt="arstimer">
+            {t('arbeidstid.felles.arstimerOverstyrt', { timer: formaterTall(kjent.arstimer), fagkode: kjent.fagkoder.join(', ') })}{' '}
+            <button type="button" class="lenkeknapp liten" onClick={() => sett({ arstimer: kjent.arstimer, arstimerAuto: true })}>
+              {t('arbeidstid.felles.brukArstimer', { timer: formaterTall(kjent.arstimer) })}
+            </button>
+          </p>
         )}
         {gruppe.modus === 'okter' && (
           <>

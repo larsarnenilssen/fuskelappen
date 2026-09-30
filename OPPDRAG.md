@@ -1,6 +1,6 @@
 # OPPDRAG – Protokollen
 
-**Versjon:** 1.2 · 30.09.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert)
+**Versjon:** 1.3 · 30.09.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -373,7 +373,13 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 
 **Fra eier:** Dagens status for årsramme og årstimetall per fag (CSV eller Excel), og bekreftelse av tabellen over programnavn.
 
-**Kontrollpunkt:** Eier går gjennom avviksrapporten og et utvalg koblinger.
+**Endret underveis etter eiers ønsker (30.09.2026)**
+
+- Fase 2 gjøres uten InSchool-data. Koblingene kontrolleres med tester, rapporten over ukoblede fag og avvik (`docs/KOBLING.md`) og eiers gjennomgang av et utvalg koblinger. InSchool-data kan legges inn som ekstra kontroll senere.
+- Kontrollen av innholdet i fase 1 tas fortløpende i kontrollrundene og med `/godkjent`. Fase 1 regnes som ferdig.
+- Levert i 0.9.0: fag og læreplaner fra Grep (avgjørelse 022), koblingen fra fagkode til årsramme med rapport (avgjørelse 023) og fagvalg i kalkulatorene.
+
+**Kontrollpunkt:** Eier går gjennom avviksrapporten, et utvalg koblinger og tabellen over programnavn.
 
 ### Fase 3 – Arbeidsplan som illustrasjon
 
@@ -491,7 +497,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
 | Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Praksis inntil videre (eier 30.09.2026): beskjeftigelse over stillingen og opp til 100 % gir variabel lønn med vanlig timelønn, og bare beskjeftigelse over 100 % gir overtid. |
 | Periodebeskjeftigelse med funksjoner, eller som del av Arbeidsplan | fase 1 | Avklart. Perioder er en del av Arbeidsplan, og kalkulatoren Periode er fjernet (avgjørelse 015). |
-| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Venter |
+| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Fase 2 uten InSchool-data (eier 30.09.2026). Forslag til tabell over programnavn i `docs/KOBLING.md`, venter på eiers bekreftelse. |
 | Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 

@@ -206,3 +206,34 @@ Etter et par minutter legger en jobb inn datoen for det du har krysset av, og sv
 Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk planleggingsdager feriepenger_prosent`. Id-ene står i `kodeskrift` i `docs/KONTROLL.md`. Slik kontrollerer du begreper og forklaringer du har lest, også når de ikke står i saken.
 
 Nye tall fra kildene godkjennes ved å flette PR-en med forslaget (punkt 6), ikke med `/godkjent`. Bare du kan godkjenne. Kommentarer fra andre blir ikke lest av jobben.
+
+## 13. Sjekkliste for kontrollpunktet i fase 2
+
+Fase 2 har tre deler: fag og læreplaner fra Grep, koblingen fra fagkode til årsramme, og fagvalg i kalkulatorene. Koblingen er et forslag fra Claude, og alt har `kontrollert: null` til du har sett på det.
+
+**Rapporten over koblingen** ligger i `docs/KOBLING.md` på GitHub. Den lages på nytt hver mandag.
+
+- [ ] **Avvik:** Les avsnittet «Avvik». Nå står det ett: Latin 1 står både under «Antikkens språk og kultur» og «Latin/Gresk» i tabellene fra fase 1. Koblingen bruker «Latin/Gresk». Stemmer det?
+- [ ] **Programnavn:** Se tabellen «Programnavn i vedlegg 1 og utdanningsprogram i Grep». Stemmer koblingen for hvert navn? Se særlig:
+  - «Stud.spes» → bare Studiespesialisering (ST). Skal fellesfag på Kunst, design og arkitektur (KD) og Medier og kommunikasjon (ME) ha årsrammen for «Stud.spes»? Nå er de ikke koblet.
+  - «Med./komm» → Medier og kommunikasjon (ME). Radene i vedlegget er fra da programmet var yrkesfaglig.
+  - «Yrkes/På» → påbygging (PB).
+  - «Design og hå» og «Serv/samf» er utgått og er ikke koblet. Hva skal Vg3 på Håndverk, design og produktutvikling, Frisør …, Informasjonsteknologi og medieproduksjon og Salg, service og reiseliv ha?
+- [ ] **Utvalget:** Se tabellen «Utvalg til kontroll». Stemmer årsrammen med det dere bruker for disse fagene?
+- [ ] **Ukoblede fag:** Se avsnittet «Program og trinn uten kobling» og listene nederst. Si fra hvilke som skal kobles, og til hvilken rad. For eksempel:
+  - varianter av fellesfag (samisk plan, tegnspråk, kort botid, grunnleggende norsk)
+  - valgfrie programfag på studiespesialisering som vedlegget ikke nevner (f.eks. sosiologi, toppidrett)
+  - valgfrie programfag på idrett, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon
+  - «Yrkesfaglig opphenting» (YFO2002)
+- [ ] **Yrkesfaglig fordypning:** Skal den ha årsrammen for felles programfag, slik vedlegget sier om prosjekt til fordypning? Den står i praksislisten som `yff-arsramme`.
+
+**I appen** (etter at versjon 0.9.0 er publisert):
+
+- [ ] **Fag og læreplaner** (Hjem → Fag og vurdering): søk på et fag du kjenner, og prøv filtrene. Åpne faget. Stemmer vurderingsordning og årstimetall? Står læreplanen på riktig målform?
+- [ ] Prøv et fag med læreplan på nynorsk (f.eks. AKT2004) med appen på bokmål: teksten fra læreplanen skal stå på nynorsk, merket «Fastsatt på nynorsk».
+- [ ] Legg et fag til som favoritt.
+- [ ] **Kalkulatorene:** Skriv en fagkode i fagfeltet i Beskjeftigelse (f.eks. HEA2005). Velg faget under «Fag med fagkode fra Udir». Årstimer og årsramme fylles inn, og det står hvordan årsrammen er funnet.
+- [ ] Prøv SAM3045 (Markedsføring og ledelse 1). Da skal du velge trinn, fordi vedlegget har ulik årsramme for vg2 og vg3.
+- [ ] Endre årstimene og velg årsramme selv. Begge deler skal merkes «Overstyrt», med en knapp tilbake til tallene fra Udir og koblingen.
+
+Skriv til Claude hva som stemmer, og hva som skal endres. Du kan også godkjenne tabellene med `/godkjent programnavn kobling_fellesfag kobling_programfag kobling_regler` i kontrollsaken, og praksisen med `/godkjent yff-arsramme`.
