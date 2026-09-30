@@ -2,7 +2,7 @@
 # Del av regelsettet sfs2213-2026-2027. Brukes bare til å finne riktig rad i fagsøket; beregningene bruker
 # årsrammen i raden brukeren velger. Programområdene (BAT, HEA …) hentes fra Grep med npm run hent:grep
 # (data/grep/programomrader.json). Kallenavn og fagkoder er tatt med bare når Grep har et fag med det navnet.
-# Tabellen over programnavn skal bekreftes av eier (OPPDRAG fase 2). Forkortelser som ikke kan bekreftes
+# Tabellen over programnavn står i kobling-fagkode.yaml (fase 2). Forkortelser som ikke kan bekreftes
 # i Grep (Pol/samf, Nær.øk, Info.tekn. samf.), står som i vedlegget.
 id: sfs2213-2026-2027
 regelverk: sfs2213
@@ -11,32 +11,6 @@ gyldig_fra: "2026-01-01"
 gyldig_til: "2027-12-31"
 kilde: udir-grep
 verdier:
-  programnavn:
-    kilde: { id: udir-grep }
-    kontrollert: null
-    merknad: Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver).
-    verdi:
-      - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST] }
-      - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }
-      - { vedlegg: "Idrett", navn: "Idrettsfag", grep: [ID] }
-      - { vedlegg: "Kunst, design og arkitektur", navn: "Kunst, design og arkitektur", grep: [KD] }
-      - { vedlegg: "Med./komm", navn: "Medier og kommunikasjon", grep: [ME] }
-      - { vedlegg: "Med./komm.", navn: "Medier og kommunikasjon", grep: [ME] }
-      - { vedlegg: "Yrkesfag", navn: "Yrkesfaglige utdanningsprogram", grep: [BA, DT, EL, FD, HS, IM, NA, RM, SR, TP] }
-      - { vedlegg: "Yrkes/På", navn: "Påbygging til generell studiekompetanse", grep: [] }
-      - { vedlegg: "Yrkesf/På", navn: "Påbygging til generell studiekompetanse", grep: [] }
-      - { vedlegg: "Rest. og mat", navn: "Restaurant- og matfag", grep: [RM] }
-      - { vedlegg: "Bygg og anl.", navn: "Bygg- og anleggsteknikk", grep: [BA] }
-      - { vedlegg: "Naturbruk", navn: "Naturbruk", grep: [NA] }
-      - { vedlegg: "Tekn/ind.prod", navn: "Teknologi- og industrifag", grep: [TP] }
-      - { vedlegg: "Helse/sos", navn: "Helse- og oppvekstfag", grep: [HS] }
-      - { vedlegg: "Elektrofag", navn: "Elektro og datateknologi", grep: [EL] }
-      - { vedlegg: "Håndverk, design og produktutvikling", navn: "Håndverk, design og produktutvikling", grep: [DT] }
-      - { vedlegg: "Frisør, blomster, interiør og eksponeringsdesign", navn: "Frisør, blomster, interiør og eksponeringsdesign", grep: [FD] }
-      - { vedlegg: "Salg, service, reiseliv", navn: "Salg, service og reiseliv", grep: [SR] }
-      - { vedlegg: "Informasjonsteknologi og medieproduksjon", navn: "Informasjonsteknologi og medieproduksjon", grep: [IM] }
-      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [] }
-      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [] }
   fagnavn:
     kilde: { id: udir-grep }
     kontrollert: null

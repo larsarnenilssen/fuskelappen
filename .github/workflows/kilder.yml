@@ -1,5 +1,5 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md på nytt,
+# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md og docs/KOBLING.md på nytt,
 # committer dem ved hver kjøring (holder den planlagte jobben i live),
 # oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
 # fersk status og registerdata (Grep, skoleregisteret).
@@ -54,19 +54,23 @@ jobs:
         id: grep
         continue-on-error: true
         run: npm run hent:grep
+      # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) lages på nytt med de nye dataene,
+      # så nye fag uten kobling havner i rapporten før testene kjøres.
       - name: Test de nye Grep-dataene
         if: steps.grep.outcome == 'success'
         run: |
           mkdir -p .generert
           if [ -z "$(git status --porcelain -- data/grep)" ]; then
             echo uendret > .generert/grep-tester.txt
-          elif npx vitest run; then
+            npm run kobling:rapport
+          elif npm run kobling:rapport && npx vitest run; then
             echo ok > .generert/grep-tester.txt
           else
             echo feilet > .generert/grep-tester.txt
-            # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake.
+            # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake (med rapporten for dem).
             mkdir -p .generert/grep-ny && cp -r data/grep/. .generert/grep-ny/
-            git checkout -- data/grep && git clean -fdq -- data/grep
+            git checkout -- data/grep docs/KOBLING.md data/status/kobling.json && git clean -fdq -- data/grep
+            npm run kobling:rapport
           fi
       - name: Sjekk kildene
         env:
@@ -85,7 +89,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/skoler/vgs.json data/grep docs/KONTROLL.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/skoler/vgs.json data/grep docs/KONTROLL.md docs/KOBLING.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

@@ -170,6 +170,7 @@ export function lagKontrollrapport(
   verdistatus: Verdistatusfil | null,
   idag: string,
   praksis: readonly Praksis[] = [],
+  kobling: KoblingsstatusKort | null = null,
 ): string {
   const t = tellKontroll(indeks);
   const sesPaa = maaSesPaa(indeks, register, kildestatus);
@@ -214,6 +215,12 @@ export function lagKontrollrapport(
     `| Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | ${t.ikkeSjekket} |`,
     `| Enkeltverdier fra kilden uten sitat | ${t.utenSitat} |`,
     '',
+    ...(kobling
+      ? [
+          `**Kobling fra fagkode til årsramme** (fase 2): ${kobling.antall.koblet + kobling.antall.flertydig} av ${kobling.antall.fag} fagkoder er koblet, ${kobling.antall.ukoblet} er ikke koblet, og det er ${kobling.avvik.length} avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.`,
+          '',
+        ]
+      : []),
     '## Må ses på',
     '',
     ...(sesPaa.length > 0 ? sesPaa : ['Ingenting akkurat nå.']),
@@ -224,6 +231,12 @@ export function lagKontrollrapport(
     ...deler,
     ...sporsmalsdel(indeks),
   ].join('\n');
+}
+
+/** Det kontrolloversikten trenger fra data/status/kobling.json (scripts/kobling/rapport.ts). */
+export interface KoblingsstatusKort {
+  antall: { fag: number; koblet: number; flertydig: number; ukoblet: number };
+  avvik: unknown[];
 }
 
 function lesJson(fil: string): unknown {
@@ -238,6 +251,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const idag = new Date().toISOString().slice(0, 10);
   const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), kildestatus?.kilder ?? {}, verdistatus, idag);
   const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
-  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag, praksis)}\n`);
+  const kobling = lesJson(join(rot, 'data/status/kobling.json')) as KoblingsstatusKort | null;
+  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag, praksis, kobling)}\n`);
   console.log('Skrev docs/KONTROLL.md');
 }
