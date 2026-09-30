@@ -24,6 +24,8 @@ export interface Ukesgrunnlag {
   endringer: Readonly<Record<string, Tekstendring[] | null>>;
   indeks: readonly Kildekontroll[];
   repo: string;
+  /** Endringsforslagene (PR) fra lag-forslag.ts, hvis noen. */
+  forslag?: { verdier: string | null; grep: string | null };
 }
 
 export interface Ukesrapport {
@@ -121,6 +123,7 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     deler.push([
       '## Tall og tabeller som ikke stemmer med kilden',
       '',
+      ...(g.forslag?.verdier ? [`Forslag med de nye tallene, klart til å flettes når du har sjekket dem: ${g.forslag.verdier}`, ''] : []),
       ...avvik.flatMap(([nokkel, p]) => [
         `- [ ] \`${nokkel}\`: ${p.melding ?? 'Stemmer ikke med kilden.'}${p.forslag === null ? '' : ` Forslag: ${norskTall(p.forslag)}.`} <!-- verdi:${nokkel}:${p.forslag ?? '-'} -->`,
         ...(p.detaljer ?? []).slice(0, MAKS_DETALJER).map((d) => `  - ${d}`),
@@ -167,6 +170,7 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     }
     return [];
   });
+  if (g.forslag?.grep) grepLinjer.push(`- Forslag med de nye Grep-dataene: ${g.forslag.grep}`);
   if (grepLinjer.length > 0) deler.push(['## Grep', '', ...grepLinjer, '']);
 
   const feilet = Object.entries(g.kildestatus.kilder).filter(([, p]) => p.status === 'feilet');

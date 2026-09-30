@@ -68,6 +68,8 @@ Saken kan ha disse delene:
 - **Grep:** hva som er tatt inn automatisk, eller at Grep er endret slik at testene feiler.
 - **Kilder som ikke kunne sjekkes:** for eksempel fordi nettstedet var nede. Det går ofte over av seg selv. Står en kilde der i flere uker, si fra til Claude.
 
+**Endringsforslag:** Er et tall endret i kilden, lager kildesjekken en PR med det nye tallet og det nye sitatet. Kontrollsaken lenker til den. Beskrivelsen av PR-en viser tallene før og etter, og hvilke tester som eventuelt feiler. Stemmer tallene, og gjelder endringen samme avtaleperiode, fletter du PR-en som vanlig (punkt 1). Gjelder den en ny periode, for eksempel en ny hovedtariffavtale, skal PR-en ikke flettes. Si fra til Claude, som lager en ny regelfil. Feiler testene med nye Grep-data, kommer det også en PR med dataene, så Claude kan rette koblingene der.
+
 **Slik behandler du saken:**
 
 1. Les gjennom punktene. Åpne lenken til kilden hvis du vil se mer.

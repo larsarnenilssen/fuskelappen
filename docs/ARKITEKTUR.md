@@ -124,7 +124,8 @@ Kilderegisteret er `content/kilder.yaml`. `docs/KILDER.md` genereres fra det, og
    - `scripts/kontroll/rapport.ts` lager kontrolloversikten `docs/KONTROLL.md`: hva som bygger på hver kilde (`src/core/kontroll/indeks.ts`), status for eiers kontroll og for verdisjekken.
 2. Statusfilen `data/status/kildestatus.json` committes ved hver kjøring, sammen med `verdistatus.json` og `docs/KONTROLL.md`. Det holder den planlagte jobben i live (GitHub slår av planlagte jobber etter 60 dager uten aktivitet).
 3. `scripts/kilder/varsle.ts` lager den ukentlige kontrollsaken (etikett `kontroll`, `scripts/kilder/ukesrapport.ts`): endrede punkter i kildene med ny tekst og berørt innhold, tall og tabeller som ikke stemmer, Grep og kilder som feilet. Saken får en kommentar bare når innholdet er nytt, og lukkes når alt er i orden. Se [avgjørelse 018](avgjorelser/018-presise-ukentlige-varsler.md).
-4. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og ferske registerdata (Grep og skoleregisteret) fra main. Består ikke versjonens tester med de nye registerdataene, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
+4. `scripts/kilder/lag-forslag.ts` lager endringsforslag som PR: nye tall og sitater på grenen `kontroll/forslag`, og nye Grep-data som feiler testene på `kontroll/grep`. CI startes med `workflow_dispatch`. Se [avgjørelse 020](avgjorelser/020-automatiske-endringsforslag.md).
+5. Arbeidsflyten publiserer siste versjon på nytt med fersk statusfil og ferske registerdata (Grep og skoleregisteret) fra main. Består ikke versjonens tester med de nye registerdataene, brukes versjonens egne. Koden på Pages endres bare ved ny versjon.
 
 Inndata `simuler_feil` gir simulert feil for én kilde, for å teste varslingen.
 

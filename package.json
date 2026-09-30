@@ -42,6 +42,7 @@
     "test:e2e": "playwright test",
     "kilder:sjekk": "tsx scripts/kilder/sjekk.ts",
     "kilder:varsle": "tsx scripts/kilder/varsle.ts",
+    "kilder:forslag": "tsx scripts/kilder/lag-forslag.ts",
     "kilder:dokumenter": "tsx scripts/lag-kilder-md.ts",
     "kontroll:rapport": "tsx scripts/kontroll/rapport.ts",
     "lag:ikoner": "tsx scripts/lag-ikoner.ts",

@@ -32,6 +32,8 @@ jobs:
     permissions:
       contents: write
       issues: write
+      pull-requests: write
+      actions: write
     steps:
       - uses: actions/checkout@v5
         with:
@@ -59,6 +61,8 @@ jobs:
             echo ok > .generert/grep-tester.txt
           else
             echo feilet > .generert/grep-tester.txt
+            # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake.
+            mkdir -p .generert/grep-ny && cp data/grep/*.json .generert/grep-ny/
             git checkout -- data/grep
           fi
       - name: Sjekk kildene
@@ -81,6 +85,11 @@ jobs:
           git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/skoler/vgs.json data/grep docs/KONTROLL.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
+      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
+      - name: Endringsforslag (PR)
+        run: npm run kilder:forslag
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
       - name: Ukentlig kontrollsak og kontrollrunde (issues)
         run: npm run kilder:varsle
         env:

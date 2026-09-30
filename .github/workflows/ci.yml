@@ -5,6 +5,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Kildesjekken starter CI på endringsforslagene sine (PR-er laget med GITHUB_TOKEN starter ikke CI selv).
+  workflow_dispatch:
 
 permissions:
   contents: read

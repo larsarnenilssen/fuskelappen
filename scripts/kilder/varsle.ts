@@ -29,7 +29,8 @@ const token = process.env.GITHUB_TOKEN;
 const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/protokollen';
 const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 
-const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo });
+const forslag = (lesJson(join(rot, '.generert/forslag.json')) ?? undefined) as { verdier: string | null; grep: string | null } | undefined;
+const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo, ...(forslag ? { forslag } : {}) });
 
 // Kontrollrunden: første mandag i mai og august, eller når den startes manuelt (KONTROLLRUNDE=ja).
 const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;

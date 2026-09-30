@@ -225,6 +225,7 @@ Arbeidsflyten `kilder.yml` kjører ukentlig og kan startes manuelt. Den:
 - oppretter eller oppdaterer én GitHub-issue per kilde (etikett `kilde`) ved endring eller feil, slik at eier får varsel
 - *(Lagt til 30.09.2026, avgjørelse 017:)* sjekker at sitatet til hver regelverdi fortsatt står i kilden (`data/status/verdistatus.json`), og lager kontrolloversikten `docs/KONTROLL.md` på nytt
 - *(Endret 30.09.2026, avgjørelse 018:)* samler alt eier bør se på, i én ukentlig kontrollsak i stedet for én sak per kilde, med endrede punkter, berørt innhold og avkrysningsliste. Vedlegg 1 og garantilønnen sjekkes rad for rad. Grep og skoleregisteret tas inn og publiseres automatisk når testene består (eier 30.09.2026)
+- *(Lagt til 30.09.2026, avgjørelse 019 og 020:)* kontrollspørsmål til hver tekst, en liste over praksis og tolkninger, kontrollrunder i mai og august, og endringsforslag som PR når et tall i en kilde er endret
 
 I appen:
 

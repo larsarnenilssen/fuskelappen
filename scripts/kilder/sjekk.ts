@@ -217,7 +217,9 @@ for (const [id, post] of Object.entries(kilder)) {
   }
 }
 writeFileSync(kildetekstfil, `${JSON.stringify(nyTekst, null, 2)}\n`);
-mkdirSync(generert, { recursive: true });
+mkdirSync(join(generert, 'kildetekster'), { recursive: true });
+// Teksten fra kildene, til endringsforslagene (lag-forslag.ts). Ligger bare i .generert, som ikke committes.
+for (const [id, t] of Object.entries(tekster)) if ('tekst' in t) writeFileSync(join(generert, 'kildetekster', `${id}.txt`), t.tekst);
 writeFileSync(join(generert, 'endringer.json'), `${JSON.stringify(endringer, null, 2)}\n`);
 for (const [id, liste] of Object.entries(endringer)) {
   rapport.push(`### Endringer i ${id}`, ...(liste === null ? ['Ingen lagret tekst fra forrige godkjenning å sammenligne med.'] : liste.map((e) => `- ${e.punkt ?? 'ukjent punkt'}: ${e.ny.length} nye biter, ${e.fjernet} fjernet`)), '');

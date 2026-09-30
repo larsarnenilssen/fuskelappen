@@ -15,6 +15,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Kontrollspørsmål** til hvert begrep og hver forklaring: spørsmål om det som er usikkert i teksten. Spørsmålene står i kontrolloversikten og i kontrollsaken når en kilde endres.
 - **Praksis og tolkninger** som ikke står i kildene, for eksempel 21,67 arbeidsdager per måned, er samlet i én liste som du bekrefter.
 - **Kontrollrunder** første mandag i mai og august: en sak med praksis som bør bekreftes og kontroller som bør gjøres på nytt.
+- **Endringsforslag:** Er et tall endret i kilden, lager kildesjekken en PR med nytt tall og nytt sitat, og viser hvilke tester som eventuelt feiler. Feiler testene med nye Grep-data, kommer det også en PR med dataene.
 
 ## [0.8.2] – 2026-09-30
 
