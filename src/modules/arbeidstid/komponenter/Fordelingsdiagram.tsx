@@ -1,6 +1,6 @@
 // Stolpediagram over årsverket i en tenkt stilling: planfestet tid (undervisning, møter, annen planfestet tid,
 // funksjoner) og tid læreren disponerer selv. Egen SVG uten diagrambibliotek. Tallene står også i en tabell,
-// med timer per uke i arbeidsåret, slik at fordelingen kan sammenlignes med en arbeidsplan. Tabellen har fargene
+// med timer per skoleuke (planleggingsdagene holdes utenfor), slik at fordelingen kan sammenlignes med en arbeidsplan. Tabellen har fargene
 // ved hver del og er fargeforklaringen til diagrammet (eiers valg 30.09.2026).
 // Fordelingsvisning samler diagram, tabell og forklaring, og kan vises i fullskjerm der nettleseren støtter det.
 import type { ComponentChildren } from 'preact';
@@ -72,11 +72,15 @@ export function Fordelingsdiagram({ deler, totalt }: { deler: readonly Fordeling
   );
 }
 
-export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Fordelingsdel[]; totalt: number; uker: number }) {
+/**
+ * Tabell over delene. Timer per uke er timene fordelt på skoleukene. Planleggingsdagene ligger utenom skoleukene,
+ * så de har ikke timer per uke og trekkes fra summene før de deles på ukene.
+ */
+export function Fordelingstabell({ deler, totalt, uker, planlegging = 0 }: { deler: readonly Fordelingsdel[]; totalt: number; uker: number; planlegging?: number }) {
   const { t } = useTekst();
   const sum = (planfestet: boolean) => deler.filter((d) => d.planfestet === planfestet).reduce((s, d) => s + d.timer, 0);
   // Tallene har alltid én desimal, så de står på linje i kolonnene.
-  const rad = (id: string, tekst: string, timer: number, klasse?: string) => (
+  const rad = (id: string, tekst: string, timer: number, klasse?: string, ukeTimer: number | null = timer) => (
     <tr key={id} class={klasse}>
       <th scope="row">
         {klasse ? (
@@ -89,7 +93,7 @@ export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Ford
         )}
       </th>
       <td class="tall">{formaterTall(timer, 1, 1)}</td>
-      <td class="tall">{uker > 0 ? formaterTall(timer / uker, 1, 1) : '–'}</td>
+      <td class="tall">{uker > 0 && ukeTimer !== null ? formaterTall(ukeTimer / uker, 1, 1) : '–'}</td>
       <td class="tall">{formaterTall(totalt > 0 ? (timer / totalt) * 100 : 0, 1, 1)} %</td>
     </tr>
   );
@@ -111,9 +115,9 @@ export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Ford
         </tr>
       </thead>
       <tbody>
-        {deler.map((d) => rad(d.id, t(`arbeidstid.fordeling.deler.${d.id}` as Tekstnokkel), d.timer))}
-        {rad('sum-planfestet', t('arbeidstid.fordeling.planfestet'), sum(true), 'sumrad')}
-        {rad('sum-alt', t('arbeidstid.fordeling.sum'), totalt, 'sumrad')}
+        {deler.map((d) => rad(d.id, t(`arbeidstid.fordeling.deler.${d.id}` as Tekstnokkel), d.timer, undefined, d.id === 'planleggingsdager' ? null : d.timer))}
+        {rad('sum-planfestet', t('arbeidstid.fordeling.planfestet'), sum(true), 'sumrad', sum(true) - planlegging)}
+        {rad('sum-alt', t('arbeidstid.fordeling.sum'), totalt, 'sumrad', totalt - planlegging)}
       </tbody>
     </table>
   );
@@ -145,7 +149,9 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
     else void ramme.current?.requestFullscreen().catch(() => undefined);
   };
   const totalt = resultat.arsverk.verdi;
-  const uker = resultat.arbeidsaarUker.verdi;
+  // Timer per uke: timene utenom planleggingsdagene, fordelt på skoleukene.
+  const uker = resultat.skoleuker.verdi;
+  const planlegging = resultat.planleggingstimer.verdi;
   const utvidet = resultat.utvidelseDager.verdi > 0;
   const [lukket, vekslLukket] = useSammenlagt('fordeling');
   const innhold = useId();
@@ -179,20 +185,21 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
       </Oppsummering>
       <div id={innhold} hidden={lukket}>
         <Fordelingsdiagram deler={resultat.deler} totalt={totalt} />
-        <Fordelingstabell deler={resultat.deler} totalt={totalt} uker={uker} />
+        <Fordelingstabell deler={resultat.deler} totalt={totalt} uker={uker} planlegging={planlegging} />
         <p class="liten dempet">
           {utvidet
             ? t('arbeidstid.fordeling.perUkeUtvidet', {
                 maksUke: tallTekst(resultat.planfestetMaksUke.verdi, 1),
                 dager: tallTekst(resultat.utvidelseDager.verdi, 1),
                 uker: tallTekst(uker, 1),
+                planlegging: tallTekst(planlegging, 1),
               })
             : iPeriode
-              ? t('arbeidstid.fordeling.perUkePeriode', { uker: tallTekst(uker, 1) })
-              : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
+              ? t('arbeidstid.fordeling.perUkePeriode', { uker: tallTekst(uker, 1), planlegging: tallTekst(planlegging, 1) })
+              : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1), planlegging: tallTekst(planlegging, 1) })}
         </p>
         {uke && uker > 0 && (
-          <Ukemaaler planfestet={planfestet / uker} total={totalt / uker} maksUke={uke.maksUke} maksDag={uke.maksDag} dagerPerUke={uke.dagerPerUke} />
+          <Ukemaaler planfestet={(planfestet - planlegging) / uker} total={(totalt - planlegging) / uker} maksUke={uke.maksUke} maksDag={uke.maksDag} dagerPerUke={uke.dagerPerUke} />
         )}
         {children}
       </div>

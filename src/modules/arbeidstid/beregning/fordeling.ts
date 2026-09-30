@@ -17,6 +17,10 @@
 // For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie,
 // så arbeidsåret er fem dager kortere: 191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for
 // andre: 1150 × 1650 ÷ 1687,5 (eier 30.09.2026).
+// Planleggingsdagene (de 6 dagene i arbeidsåret utenom elevenes skoleår, punkt 4 a) står på egen linje, som i
+// Visma InSchool (eier 30.09.2026): 6 × 7,5 = 45 timer for en lærer i hel stilling, samme tall for alle, og kan endres
+// for den enkelte (f.eks. deltid eller en periode). Timene tas fra annen planfestet tid. Timene per uke er resten
+// fordelt på de 38 skoleukene (eller skoleukene i perioden), og planleggingsdagene holdes utenfor.
 // I en periode regnes fordelingen som for et helt år med prosentene i perioden, og timene ganges til slutt med
 // periodenøkkelen (dager i perioden ÷ dager i skoleåret). Timene per uke blir da de samme som for et helt år.
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
@@ -38,10 +42,12 @@ export interface Fordelingsinndata {
   over60?: boolean;
   /** En periode av skoleåret. Fagene er da timer i perioden, og timene i fordelingen gjelder perioden. */
   periode?: Periode;
+  /** Timer på planleggingsdager (i perioden, når det er en periode). Mangler den, brukes 6 dager × 7,5 timer. */
+  planleggingstimer?: number | null;
 }
 
 /** Delene i diagrammet, i rekkefølge. Alle i timer per år. */
-export type FordelingsdelId = 'undervisning' | 'motetid' | 'annen_planfestet' | 'funksjonstid' | 'selvdisponert';
+export type FordelingsdelId = 'undervisning' | 'motetid' | 'annen_planfestet' | 'planleggingsdager' | 'funksjonstid' | 'selvdisponert';
 
 export interface Fordelingsdel {
   id: FordelingsdelId;
@@ -63,6 +69,10 @@ export interface Fordelingsresultat extends Utregning {
   deler: Fordelingsdel[];
   /** Periodenøkkelen timene er ganget med, eller null for hele skoleåret. */
   periodenokkel: Operand | null;
+  /** Timene på planleggingsdager (i perioden). De er planfestet, men holdes utenfor timene per uke. */
+  planleggingstimer: Operand;
+  /** Skoleukene timene per uke regnes med: 38 (+ utvidelsen), eller skoleukene i perioden. */
+  skoleuker: Operand;
 }
 
 export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsresultat {
@@ -210,11 +220,32 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     utvidelseDager = dager.resultat;
   }
 
+  // Planleggingsdagene: oppgitt, eller 6 dager × 7,5 timer. Timene er for perioden, så på årsbasis ÷ k.
+  const planTrinn: Trinn[] = [];
+  let planlegging: Operand;
+  if (inn.planleggingstimer != null) {
+    planlegging = inndata('planleggingstimer', inn.planleggingstimer, 'timer');
+  } else {
+    const dagerPlan = regel(hent, 'sfs2213.arbeidsaar_tillegg_dager', 'arbeidsaar_tillegg', 'dager');
+    const perDagPlan = regel(hent, 'sfs2213.timer_per_dag', 'timer_per_dag', 'timer');
+    const p = trinn('planleggingstimer', { dager: dagerPlan, per_dag: perDagPlan }, 'planleggingstimer', 'timer', dagerPlan.verdi * perDagPlan.verdi);
+    planTrinn.push(p);
+    planlegging = p.resultat;
+  }
+  // Timene tas fra annen planfestet tid, og deretter fra funksjonstiden, men aldri mer enn det som finnes.
+  const annenTimer = Math.max(0, annen.resultat.verdi);
+  const planAar = Math.min(planlegging.verdi / k, annenTimer + funksjonsdel);
+  const fraAnnen = Math.min(planAar, annenTimer);
+  const annenEtter = annenTimer - fraAnnen;
+  const funksjonEtter = funksjonsdel - (planAar - fraAnnen);
+  // Skoleukene: 38, med utvidelsen av arbeidsåret lagt til (dager ÷ 5).
+  const skolearUkerTall = skolearUker.verdi + (utvidelseDager.verdi > 0 ? utvidelseDager.verdi / regel(hent, 'sfs2213.arbeidsdager_per_uke', 'arbeidsdager_per_uke', 'dager').verdi : 0);
+
   const advarsler = new Set<AdvarselId>(b.advarsler);
   if (stilling.resultat.verdi > 100 + 1e-9) advarsler.add('over_hel_stilling');
   if (moterForStore) advarsler.add('motetid_for_stor');
 
-  const trinnliste: Trinn[] = [...f.trinn, ...b.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, ...planfestetTrinn, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
+  const trinnliste: Trinn[] = [...f.trinn, ...b.trinn, ...restTrinn, ...stilling.trinn, arsverkStilling, ...planfestetTrinn, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn, ...planTrinn];
   return {
     beskjeftigelse: B,
     funksjonsprosent: F,
@@ -226,11 +257,14 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     deler: [
       { id: 'undervisning', timer: undervisningstimer.verdi * k, planfestet: true },
       { id: 'motetid', timer: motetid.resultat.verdi * k, planfestet: true },
-      { id: 'annen_planfestet', timer: Math.max(0, annen.resultat.verdi) * k, planfestet: true },
-      { id: 'funksjonstid', timer: funksjonsdel * k, planfestet: true },
+      { id: 'annen_planfestet', timer: annenEtter * k, planfestet: true },
+      { id: 'planleggingsdager', timer: planAar * k, planfestet: true },
+      { id: 'funksjonstid', timer: funksjonEtter * k, planfestet: true },
       { id: 'selvdisponert', timer: selv.resultat.verdi * k, planfestet: false },
     ],
     periodenokkel: nokkel,
+    planleggingstimer: { ...planlegging, verdi: planAar * k },
+    skoleuker: { navn: 'skolear_uker', verdi: skolearUkerTall * k, enhet: 'uker', opprinnelse: 'trinn' },
     trinn: trinnliste,
     advarsler: [...advarsler],
   };

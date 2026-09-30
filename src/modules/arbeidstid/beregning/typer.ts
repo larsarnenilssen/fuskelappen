@@ -109,7 +109,8 @@ export type Storrelse =
   | 'ekstra_feriedager'
   | 'variabel_prosent'
   | 'variabel_timer'
-  | 'variabel_lonn';
+  | 'variabel_lonn'
+  | 'planleggingstimer';
 
 export interface Operand {
   navn: Storrelse;
@@ -163,6 +164,7 @@ export type TrinnId =
   | 'tillegg_periode'
   | 'prosent_arsbasis'
   | 'overtidsprosent_periode'
+  | 'planleggingstimer'
   | 'arbeidsaar_uker'
   | 'planfestet_maks'
   | 'planfestet_per_uke'

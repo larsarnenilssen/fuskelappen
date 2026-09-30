@@ -10,13 +10,15 @@ input:
 forventet:
   beskjeftigelse: 100
   undervisningstimer: 420
-  annen_planfestet: 500
+  annen_planfestet: 455
+  planleggingsdager: 45
   funksjonstid: 230
   selvdisponert: 537.5
   planfestet: 1150
-  per_uke: 29.34
+  per_uke: 29.08
 begrunnelse: >-
   Funksjonen fortrenger undervisning i planfestet tid og fordeles som undervisningen: planfestet del 1150 × 20 % = 230,
   selvdisponert (1687,5 − 1150) × (80 + 20) % = 537,5. Undervisningsdelen gir 1150 × 80 % = 920 planfestet, altså 420
   undervisning og 500 annen planfestet tid. Planfestet tid i alt 1150, 1150 ÷ 39,2 uker = 29,34 timer per uke.
   Eksempel A, godkjent av eier 30.09.2026.
+  Endret 30.09.2026 etter eiers avklaring: planleggingsdagene (6 × 7,5 = 45 timer, som i InSchool) står på egen linje, og timene per uke er planfestet tid utenom planleggingsdagene delt på 38 skoleuker. Annen planfestet tid 500 − 45 = 455. Per uke (1150 − 45) ÷ 38 = 29,08 (før: 1150 ÷ 39,2 = 29,34).

@@ -148,6 +148,26 @@ describe('timevikar', () => {
 describe('fordeling', () => {
   const grupper = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
 
+  it('planleggingsdagene står for seg, og timene per uke er resten fordelt på 38 skoleuker', () => {
+    const hel = beregnFordeling(hent, { grupper: [], stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    const planfestet = (r: typeof hel) => r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+    expect(hel.planleggingstimer.verdi).toBeCloseTo(45);
+    expect(hel.skoleuker.verdi).toBeCloseTo(38);
+    expect((planfestet(hel) - hel.planleggingstimer.verdi) / hel.skoleuker.verdi).toBeCloseTo(1105 / 38);
+    // Skrevet inn for den enkelte, f.eks. deltid: 27 timer.
+    const deltid = beregnFordeling(hent, { grupper: [], stilling: 60, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0, planleggingstimer: 27 });
+    expect(deltid.deler.find((d) => d.id === 'planleggingsdager')?.timer).toBeCloseTo(27);
+    expect(planfestet(deltid)).toBeCloseTo(690);
+    // Utvidet arbeidsår: skoleukene får utvidelsen, så 100 % funksjon gir 37,5 timer per uke.
+    const funksjon = beregnFordeling(hent, { grupper: [], funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });
+    expect(funksjon.skoleuker.verdi).toBeCloseTo(43.8);
+    expect((planfestet(funksjon) - funksjon.planleggingstimer.verdi) / funksjon.skoleuker.verdi).toBeCloseTo(37.5);
+    // I en periode: timene som er skrevet inn, og skoleukene i perioden (40 dager = 8 uker).
+    const periode = beregnFordeling(hent, { grupper: [], stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0, periode: { dagerIPerioden: 40, dagerISkolearet: null }, planleggingstimer: 7.5 });
+    expect(periode.skoleuker.verdi).toBeCloseTo(8);
+    expect(periode.planleggingstimer.verdi).toBeCloseTo(7.5);
+  });
+
   it('fra 60 år er arbeidsåret fem dager kortere (ekstra ferie)', () => {
     const vanlig = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
     const eldre = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0, over60: true });
@@ -192,7 +212,9 @@ describe('fordeling', () => {
     expect(r.arsverk.verdi).toBeCloseTo(168.75);
     expect(del('undervisning')).toBe(0);
     expect(del('motetid')).toBe(114);
-    expect(del('funksjonstid')).toBeCloseTo(54.75);
+    // Planleggingsdagene (45 timer, som for hel stilling når ikke annet er skrevet inn) tas fra funksjonstiden.
+    expect(del('planleggingsdager')).toBeCloseTo(45);
+    expect(del('funksjonstid')).toBeCloseTo(9.75);
     expect(del('annen_planfestet')).toBe(0);
     expect(del('selvdisponert')).toBe(0);
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(r.arsverk.verdi);
@@ -212,19 +234,20 @@ describe('fordeling', () => {
     // 100 % stilling uten fag, møter eller funksjoner: all planfestet tid er annen planfestet tid.
     const tom = beregnFordeling(hent, { grupper: [], stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
     expect(tom.stilling.verdi).toBe(100);
-    expect(del(tom, 'annen_planfestet')).toBeCloseTo(1150);
+    expect(del(tom, 'annen_planfestet') + del(tom, 'planleggingsdager')).toBeCloseTo(1150);
+    expect(del(tom, 'planleggingsdager')).toBeCloseTo(45);
     expect(del(tom, 'selvdisponert')).toBeCloseTo(537.5);
     expect(del(tom, 'undervisning')).toBe(0);
 
     // 50 % stilling: halvparten.
     const halv = beregnFordeling(hent, { grupper: [], stilling: 50, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
-    expect(del(halv, 'annen_planfestet')).toBeCloseTo(575);
+    expect(del(halv, 'annen_planfestet') + del(halv, 'planleggingsdager')).toBeCloseTo(575);
     expect(del(halv, 'selvdisponert')).toBeCloseTo(268.75);
 
     // 100 % stilling med 80 % undervisning: resten (20 %) regnes som undervisningsdelen.
     const r = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 2 });
     expect(r.trinn.find((t) => t.id === 'ikke_fordelt')?.resultat.verdi).toBeCloseTo(20);
-    expect(del(r, 'annen_planfestet')).toBeCloseTo(1150 - 420 - 76);
+    expect(del(r, 'annen_planfestet')).toBeCloseTo(1150 - 420 - 76 - 45);
     expect(del(r, 'selvdisponert')).toBeCloseTo(537.5);
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
 

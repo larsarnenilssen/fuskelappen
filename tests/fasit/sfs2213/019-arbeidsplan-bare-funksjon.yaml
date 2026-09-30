@@ -6,7 +6,8 @@ input:
   stilling: 100
   funksjoner: [{ prosent: 100 }]
 forventet:
-  funksjonstid: 1687.5
+  funksjonstid: 1642.5
+  planleggingsdager: 45
   selvdisponert: 0
   planfestet: 1687.5
   utvidelse_dager: 29
@@ -16,3 +17,4 @@ begrunnelse: >-
   Hele årsverket er planfestet: 1687,5 timer. Grensen er 37,5 × 39,2 = 1470 timer, så arbeidsåret utvides med
   (1687,5 − 1470) ÷ 7,5 = 29 dager til 39,2 + 29 ÷ 5 = 45 uker, altså 37,5 timer per uke (punkt 5.3).
   Eksempel E, godkjent av eier 30.09.2026.
+  Endret 30.09.2026 etter eiers avklaring: planleggingsdagene (6 × 7,5 = 45 timer, som i InSchool) står på egen linje, og timene per uke er planfestet tid utenom planleggingsdagene delt på 38 skoleuker. Stillingen har ingen annen planfestet tid, så planleggingsdagene tas fra funksjonstiden: 1687,5 − 45 = 1642,5. Per uke (1687,5 − 45) ÷ (38 + 29 ÷ 5) = 37,5 som før.

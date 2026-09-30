@@ -78,6 +78,7 @@ interface Fasitinput {
   stilling?: number;
   funksjoner?: Funksjonsinput[];
   moter_per_uke?: number;
+  planleggingstimer?: number;
   redusert_undervisning?: number;
   tillegg?: number | null;
   overtid?: { beskjeftigelse: number; arsrammer: Radsok[]; elever?: number | null } | null;
@@ -185,6 +186,7 @@ function regn(f: Fasit): Record<string, number> {
         funksjon: { type: 'prosent', prosent: sum(true) },
         funksjonUtenUtvidelse: sum(false) + reduksjon,
         moterPerUke: i.moter_per_uke ?? 0,
+        planleggingstimer: i.planleggingstimer ?? null,
         over60: i.over60 ?? false,
       });
       const del = (id: string) => f.deler.find((d) => d.id === id)?.timer ?? NaN;
@@ -200,12 +202,15 @@ function regn(f: Fasit): Record<string, number> {
         undervisningstimer: del('undervisning'),
         motetid: del('motetid'),
         annen_planfestet: del('annen_planfestet'),
+        planleggingsdager: del('planleggingsdager'),
         funksjonstid: del('funksjonstid'),
         selvdisponert: del('selvdisponert'),
         planfestet,
         arbeidsaar_uker: f.arbeidsaarUker.verdi,
         utvidelse_dager: f.utvidelseDager.verdi,
-        per_uke: planfestet / f.arbeidsaarUker.verdi,
+        skoleuker: f.skoleuker.verdi,
+        // Planfestet tid utenom planleggingsdagene, fordelt på skoleukene (eier 30.09.2026).
+        per_uke: (planfestet - f.planleggingstimer.verdi) / f.skoleuker.verdi,
       };
     }
     case 'lonn': {

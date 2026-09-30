@@ -11,10 +11,12 @@ forventet:
   differanse: 0
   arsverk: 1012.5
   undervisningstimer: 315
-  annen_planfestet: 375
+  annen_planfestet: 330
+  planleggingsdager: 45
   selvdisponert: 322.5
   planfestet: 690
-  per_uke: 17.6
+  per_uke: 16.97
 begrunnelse: >-
   Deltid regnes forholdsmessig: årsverk 1687,5 × 60 % = 1012,5, planfestet 1150 × 60 % = 690 (undervisning 315 og annen
   planfestet tid 375), selvdisponert (1687,5 − 1150) × 60 % = 322,5. Eksempel D, godkjent av eier 30.09.2026.
+  Endret 30.09.2026 etter eiers avklaring: planleggingsdagene (6 × 7,5 = 45 timer, som i InSchool) står på egen linje, og timene per uke er planfestet tid utenom planleggingsdagene delt på 38 skoleuker. Samme 45 timer som for hel stilling når ikke annet er skrevet inn (som i InSchool). Annen planfestet tid 375 − 45 = 330. Per uke (690 − 45) ÷ 38 = 16,97 (før: 17,6).

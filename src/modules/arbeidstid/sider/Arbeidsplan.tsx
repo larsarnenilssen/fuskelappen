@@ -24,7 +24,7 @@ import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.ts
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
-const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'funksjonstid', 'selvdisponert'];
+const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'planleggingsdager', 'funksjonstid', 'selvdisponert'];
 
 /** Forklaring av hva en del av arbeidstiden brukes til (innhold i content/arbeidstid). */
 function BrukAvDel({ id }: { id: FordelingsdelId }) {
@@ -73,6 +73,8 @@ export default function Arbeidsplan() {
       dagerSkolear: null as number | null | undefined,
       /** Vis prosentene på årsbasis i stedet for i perioden. */
       arsbasis: false as boolean | undefined,
+      /** Timer på planleggingsdager, eller null for 6 dager × 7,5 timer (som for hel stilling). */
+      planlegging: null as number | null | undefined,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -145,6 +147,7 @@ export default function Arbeidsplan() {
           funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
           funksjonUtenUtvidelse: utenUtvidelse,
           moterPerUke: s.moter ?? 0,
+          planleggingstimer: s.planlegging ?? null,
           over60,
           ...(periode ? { periode } : {}),
         }),
@@ -152,6 +155,8 @@ export default function Arbeidsplan() {
     : null;
   const maksUke = useRegeltall(hent, 'sfs2213.planfestet_maks_uke');
   const maksDag = useRegeltall(hent, 'sfs2213.planfestet_maks_dag');
+  // Timer på planleggingsdager for en lærer i hel stilling: 6 dager × 7,5 timer (samme tall for alle, som i InSchool).
+  const planleggingStandard = (useRegeltall(hent, 'sfs2213.arbeidsaar_tillegg_dager') ?? 0) * (useRegeltall(hent, 'sfs2213.timer_per_dag') ?? 0);
   const ukegrenser = maksUke !== null && maksDag !== null && dagerPerUke !== null ? { maksUke, maksDag, dagerPerUke } : null;
   const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
   // Tillegg per funksjon. Forslaget er minstegodtgjøringen i SFS 2213 punkt 9.1 for funksjonen som er kjent igjen på
@@ -498,6 +503,7 @@ export default function Arbeidsplan() {
         tittel={t('arbeidstid.arbeidsplan.tillegg')}
         oppsummering={[
           ...(s.moter !== null ? [t('arbeidstid.arbeidsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
+          ...(s.planlegging != null ? [t('arbeidstid.arbeidsplan.planleggingOppsummering', { timer: tallTekst(s.planlegging) })] : []),
           ...(s.visLonn ? [t('arbeidstid.arbeidsplan.lonnOppsummering')] : []),
         ].join(', ') || undefined}
       >
@@ -509,6 +515,16 @@ export default function Arbeidsplan() {
           min={0}
           maks={37.5}
           onEndring={(moter) => sett({ ...s, moter })}
+        />
+        <Tallfelt
+          class="felt-kompakt"
+          etikett={t('arbeidstid.arbeidsplan.planlegging')}
+          hjelpetekst={t('arbeidstid.arbeidsplan.planleggingHjelp', { timer: tallTekst(planleggingStandard) })}
+          plassholder={formaterTall(planleggingStandard)}
+          verdi={s.planlegging ?? null}
+          min={0}
+          maks={400}
+          onEndring={(planlegging) => sett({ ...s, planlegging })}
         />
         <Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
         {s.visLonn && (
