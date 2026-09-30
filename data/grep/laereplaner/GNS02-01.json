@@ -1,0 +1,120 @@
+{
+ "kode": "GNS02-01",
+ "tittel": "Læreplan i norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-31",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV852",
+   "tittel": "Kompetansemål og vurdering norsk og samfunnskunnskap for språklige minoriteter",
+   "fag": [
+    "GNS2Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11243",
+     "tekst": "reflektere over hvordan tekster framstiller møter mellom ulike kulturer"
+    },
+    {
+     "kode": "KM11244",
+     "tekst": "lytte til og vise åpenhet for andres argumentasjon, begrunne egne meninger og delta i diskusjoner"
+    },
+    {
+     "kode": "KM11245",
+     "tekst": "uttrykke seg med forståelig uttale, forstå vanlige idiomer og ha et stort nok ordforråd til å forstå hovedinnholdet i undervisningen"
+    },
+    {
+     "kode": "KM11246",
+     "tekst": "sammenstille informasjon fra ulike tekster, markere sitater og vise til kilder i egne tekster"
+    },
+    {
+     "kode": "KM11247",
+     "tekst": "kommunisere muntlig og skriftlig i yrkesrelevante sjangre"
+    },
+    {
+     "kode": "KM11248",
+     "tekst": "bruke relevant fagspråk til å presentere, gjøre rede for og dokumentere faglige emner og arbeidsprosesser fra eget yrkesfaglig område"
+    },
+    {
+     "kode": "KM11249",
+     "tekst": "orientere seg i faglitteratur fra eget yrkesfaglig område for å finne, kombinere og vurdere relevant informasjon"
+    },
+    {
+     "kode": "KM11250",
+     "tekst": "skrive enkle tekster i ulike sjangre tilpasset mottaker, formål og medium for hånd og på tastatur, og bearbeide egne tekster ut fra tilbakemeldinger og faglige kriterier"
+    },
+    {
+     "kode": "KM11251",
+     "tekst": "kjenne til og bruke sentrale regler om rettskriving, formverk, setningsbygning og tekstbinding og variere ordvalg og setningsbygning i egen skriving"
+    },
+    {
+     "kode": "KM11252",
+     "tekst": "sammenligne noen særtrekk ved norsk språk med eget morsmål eller andre språk eleven kjenner"
+    },
+    {
+     "kode": "KM11253",
+     "tekst": "bruke norskspråklige og flerspråklige digitale læringsressurser knyttet til ulike fag for å utvikle uttale, ordforråd og begrepsapparat"
+    },
+    {
+     "kode": "KM11242",
+     "tekst": "utforske hvordan interesser og ideologisk ståsted påvirker våre argumenter og valg av kilder, og reflektere over hvordan det gir seg utslag i forskjellige meninger"
+    },
+    {
+     "kode": "KM11234",
+     "tekst": "drøfte hvordan personlig økonomi, kommersiell påvirkning og forbruk påvirker enkeltpersoner, grupper og samfunnet"
+    },
+    {
+     "kode": "KM11235",
+     "tekst": "reflektere over utfordringer i sammenheng med grensesetting og drøfte ulike verdier, normer og lover som gjelder kjønn, seksualitet og kropp"
+    },
+    {
+     "kode": "KM11236",
+     "tekst": "reflektere over egne digitale spor, utforske hvem som har tilgang til sporene, og drøfte hvordan data og personopplysninger kan brukes eller misbrukes"
+    },
+    {
+     "kode": "KM11237",
+     "tekst": "reflektere over likheter og ulikheter i kulturuttrykk, identitet og levesett innenfor og mellom majoritet og minoritet i Norge og Sápmi/Sábme/Sáepmie"
+    },
+    {
+     "kode": "KM11238",
+     "tekst": "utforske og beskrive hvordan organiseringen av samfunnet og arbeidslivet i Norge har endret seg, og drøfte hvordan den nordiske samfunnsmodellen møter utfordringer enkeltpersoner og samfunnet står overfor"
+    },
+    {
+     "kode": "KM11239",
+     "tekst": "reflektere over hva det innebærer å være medborger, og sammenligne hvordan politiske systemer er organisert i forskjellige land og områder"
+    },
+    {
+     "kode": "KM11240",
+     "tekst": "vurdere årsaker til og tiltak som kan forebygge rasisme, diskriminering og hatefulle ytringer, og drøfte grensene for ytringsfriheten"
+    },
+    {
+     "kode": "KM11241",
+     "tekst": "drøfte sammenhengen mellom økonomisk vekst, levestandard og livskvalitet i et globalt og bærekraftig perspektiv"
+    },
+    {
+     "kode": "KM11254",
+     "tekst": "vurdere hvordan utøvelse av makt påvirker enkeltpersoner og samfunn"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen norsk og samfunnskunnskap for språklige minoriteter når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og lærlingene skal være i dialog om lærlingenes utvikling i modulen norsk og samfunnskunnskap for språklige minoriteter. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i norsk og i samfunnskunnskap skal ses i sammenheng og skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i modul norsk og samfunnskunnskap for språklige minoriteter. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Det er ikke sluttvurdering i modul norsk og samfunnskunnskap for spårklige minoriteter."
+   ]
+  }
+ ]
+}

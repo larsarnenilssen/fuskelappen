@@ -1,0 +1,164 @@
+{
+ "kode": "SME02-03",
+ "tittel": "Læreplan i vg2 smed",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV397",
+   "tittel": "Kompetansemål og vurdering smedhåndverk",
+   "fag": [
+    "SME2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4196",
+     "tekst": "utforske og bruke grunnleggende smiteknikker for å strekke, stuke, bøye, kløyve og krympe i framstilling av smedprodukter"
+    },
+    {
+     "kode": "KM4216",
+     "tekst": "gjøre rede for oppbygning, egenskaper og bruksområder for stål og metaller i smedfaget"
+    },
+    {
+     "kode": "KM4215",
+     "tekst": "smisveise og anvende ulike moderne sveisemetoder"
+    },
+    {
+     "kode": "KM4214",
+     "tekst": "formgi og dimensjonere eget smedarbeid etter brukerens krav til funksjon og estetikk"
+    },
+    {
+     "kode": "KM4208",
+     "tekst": "vurdere bruk og anvende jigger, maler og annet hjelpeverktøy i smia, reflektere over virkemåten og forbedre disse ved behov"
+    },
+    {
+     "kode": "KM4213",
+     "tekst": "anvende maskinhammer, håndverktøy, maskiner og utstyr i smia og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM4212",
+     "tekst": "gjøre rede for hvordan maskiner, verktøy og utstyr installeres, brukes og vedlikeholdes"
+    },
+    {
+     "kode": "KM4211",
+     "tekst": "holde orden på egen arbeidsplass og følge gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid"
+    },
+    {
+     "kode": "KM4210",
+     "tekst": "planlegge og gjennomføre et smedarbeid alene og i samarbeid med andre"
+    },
+    {
+     "kode": "KM4209",
+     "tekst": "gjøre rede for og bruke antikvariske prinsipper for restaurering og kopiering av gamle gjenstander"
+    },
+    {
+     "kode": "KM4217",
+     "tekst": "utforske og utføre grunnleggende varmebehandling for forskjellige ståltyper og kjenne til hvordan ulike valg påvirker sluttproduktet"
+    },
+    {
+     "kode": "KM4207",
+     "tekst": "vurdere og anvende ulike sammenføyningsmetoder, som å nagle, krympe, kile og klamre stål"
+    },
+    {
+     "kode": "KM4205",
+     "tekst": "vurdere miljøeffektene av smedproduksjon og gjøre rede for hvordan gjenbruk, avfallshåndtering og valg av brensel kan bidra til en bærekraftig drift"
+    },
+    {
+     "kode": "KM4204",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget smedhåndverk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget smedhåndverk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget smedhåndverk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget smedhåndverk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV398",
+   "tittel": "Kompetansemål og vurdering design og produktutvikling",
+   "fag": [
+    "SME2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4203",
+     "tekst": "formgi og dimensjonere eget smedarbeid etter kundens ønsker om funksjon og design"
+    },
+    {
+     "kode": "KM4199",
+     "tekst": "formgi egne smedprodukter og eksperimentere med form og komposisjon"
+    },
+    {
+     "kode": "KM4202",
+     "tekst": "utvikle, dokumentere og presentere eget smedarbeid ved hjelp av digitale ressurser"
+    },
+    {
+     "kode": "KM4201",
+     "tekst": "lage og anvende tekniske tegninger og designtegninger i eget arbeid"
+    },
+    {
+     "kode": "KM4200",
+     "tekst": "velge og dimensjonere stålemner ut fra krav til form og funksjon til det ferdige smedproduktet"
+    },
+    {
+     "kode": "KM4198",
+     "tekst": "beregne og presentere tid og pris på egne smedprodukter og tjenester, og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4197",
+     "tekst": "bruke fagspråk i presentasjon og formidling av smedprodukter og -tjenester"
+    },
+    {
+     "kode": "KM4206",
+     "tekst": "designe og utvikle hjelpeverktøy til en smedproduksjon ut fra ønsket form og funksjon for produktet og gjøre rede for virkemåten og hvordan ulike valg påvirker sluttproduktet"
+    },
+    {
+     "kode": "KM4218",
+     "tekst": "gjøre rede for smedfagets historiske utvikling og estetikk og anvende denne kunnskapen i eget smedarbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget design og produktutvikling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget design og produktutvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget design og produktutvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget design og produktutvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Smedhåndverk: Eleven skal ha én standpunktkarakter.",
+    "Design og produktutvikling: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Smedhåndverk og design og produktutvikling: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Smedhåndverk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Design og produktutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Smedhåndverk og design og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

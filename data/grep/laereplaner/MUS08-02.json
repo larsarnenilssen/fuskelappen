@@ -1,0 +1,149 @@
+{
+ "kode": "MUS08-02",
+ "tittel": "Læreplan i musikk fordypning",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV559",
+   "tittel": "Kompetansemål og vurdering musikk fordypning 1",
+   "fag": [
+    "MUS8Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6470",
+     "tekst": "gjenkjenne og sette ord på musikkens elementer i varierte eksempler fra klingende og noterte kilder ved hjelp av musikkteoretisk kunnskap og gehør"
+    },
+    {
+     "kode": "KM6471",
+     "tekst": "drøfte og vurdere musikalske virkemidler i ulike musikkeksempler, og reflektere over hvordan bruk av virkemidler henger sammen med følelser, opplevelse og musikalsk funksjon"
+    },
+    {
+     "kode": "KM6472",
+     "tekst": "utforske musikalske elementer gjennom varierte tilnærminger til improvisasjon på fordypnings- og bruksinstrumenter, alene og sammen med andre"
+    },
+    {
+     "kode": "KM6727",
+     "tekst": "lese notert musikk og notere musikalske elementer ved bruk av gehør"
+    },
+    {
+     "kode": "KM6473",
+     "tekst": "arrangere og komponere musikk for eget fordypningsinstrument og ulike besetninger ved å bruke grunnleggende arrangeringsteknikker og ulike former for notasjon"
+    },
+    {
+     "kode": "KM6474",
+     "tekst": "presentere og dokumentere egne arrangementer og komposisjoner"
+    },
+    {
+     "kode": "KM6476",
+     "tekst": "bruke ulik maskin- og programvare i skapende arbeid og i opptak og lydredigering, og gjøre rede for ressursvennlig bruk av teknologi"
+    },
+    {
+     "kode": "KM6728",
+     "tekst": "gi konstruktiv respons på andres kreative uttrykk, i samspill og samskaping, og reflektere over hvordan respekt og toleranse for kunstnerisk ulikhet kan bidra til likeverdig medborgerskap"
+    },
+    {
+     "kode": "KM6729",
+     "tekst": "drøfte mangfold i egne og andres skapende uttrykk, og reflektere over hvordan et støttende sosialt miljø kan bidra til å utvikle selvtillit og opplevelse av mestring"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk fordypning 1. Elevene viser og utvikler kompetanse i faget når de arbeider praktisk og teoretisk med musikkens elementer, arbeider med forståelse av musikalske forløp og bruker sin håndverksmessige forståelse til å ta egne valg i skapende arbeid. Elevene viser og utvikler også kompetanse i faget når de komponerer, arrangerer og improviserer.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske og utvikle skapende ferdigheter. Læreren skal være i dialog med elevene om utviklingen deres i å forstå og bruke musikkens elementer i skapende aktivitet, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen til å utforske musikalsk materiale og prinsipper for organisering av lyd til å skape egne kreative uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter musikk fordypning 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i musikk fordypning 1 basert på kompetansen eleven har vist gjennom praktisk og teoretisk arbeid med musikkens elementer og gjennom egen skapende aktivitet."
+   ]
+  },
+  {
+   "kode": "KV560",
+   "tittel": "Kompetansemål og vurdering musikk fordypning 2",
+   "fag": [
+    "MUS8Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6477",
+     "tekst": "gjenkjenne og utforske elementer og virkemidler i varierte musikkeksempler fra klingende og noterte kilder ved hjelp av musikkteoretisk kunnskap og gehør"
+    },
+    {
+     "kode": "KM6478",
+     "tekst": "drøfte og vurdere musikalsk intensjon og funksjon i egne og medelevers arrangementer, komposisjoner og improvisasjoner"
+    },
+    {
+     "kode": "KM6479",
+     "tekst": "uttrykke musikalske intensjoner ved å bruke ulike musikalske virkemidler i improvisasjon, alene og sammen med andre"
+    },
+    {
+     "kode": "KM6730",
+     "tekst": "lese notert musikk og notere musikalske forløp ved bruk av gehør"
+    },
+    {
+     "kode": "KM6480",
+     "tekst": "arrangere og komponere musikk for ulike besetninger ved å bruke kunnskap om musikalske virkemidler og idiomatiske trekk ved ulike instrumenter"
+    },
+    {
+     "kode": "KM6484",
+     "tekst": "øve inn, presentere og dokumentere egne arrangementer og komposisjoner"
+    },
+    {
+     "kode": "KM6482",
+     "tekst": "bruke ulik maskin- og programvare i arrangering, komponering, lydopptak, -redigering og -bearbeiding"
+    },
+    {
+     "kode": "KM6731",
+     "tekst": "drøfte og vurdere ressursbruk når det gjelder musikkteknologisk utstyr og digitale ressurser for lagring og samarbeid"
+    },
+    {
+     "kode": "KM6483",
+     "tekst": "fordype seg i en kunstnerisk prosess, og planlegge, gjennomføre og presentere arbeidet, alene eller sammen med andre"
+    },
+    {
+     "kode": "KM6732",
+     "tekst": "utfordre stereotypiske forventninger gjennom å utforske individuelle uttrykksmåter og reflektere over hvordan toleranse for kunstnerisk ulikhet kan bidra til respekt og likeverdig medborgerskap"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk fordypning 2. Elevene viser og utvikler kompetanse i faget når de arbeider skapende med musikkens elementer og virkemidler, og når de bruker et presist fagspråk for å drøfte og vurdere kvalitet i eget og andres arbeid. Elevene viser og utvikler også kompetanse i faget når de utvikler egne kreative uttrykk gjennom å komponere, arrangerer og improvisere.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske og utvikle skapende ferdigheter. Læreren skal være i dialog med elevene om utviklingen deres i å forstå og bruke musikkens elementer i skapende aktivitet, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen til å utforske musikalsk materiale og til å videreutvikle egen skapende aktivitet og kreative uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter musikk fordypning 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i musikk fordypning 2 basert på kompetansen eleven har vist gjennom å forstå musikkens elementer, organisering av lyd og hvordan denne forståelsen kan brukes i utvikling av en egen kunstnerisk stemme i skapende arbeid med musikk. Videre skal læreren sette karakter basert på kompetansen eleven har vist gjennom praktisk og skapende fordypning i faget."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Musikk fordypning 1: Eleven skal ha én standpunktkarakter.\nMusikk fordypning 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Musikk fordypning 1: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Skriftlig og muntlig-praktisk eksamen skal ha forberedelsesdel.",
+    "Musikk fordypning 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Skriftlig og muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Musikk fordypning 1: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Musikk fordypning 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

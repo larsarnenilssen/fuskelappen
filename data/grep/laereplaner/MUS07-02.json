@@ -1,0 +1,90 @@
+{
+ "kode": "MUS07-02",
+ "tittel": "Læreplan i instruksjon og ledelse",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV568",
+   "tittel": "Kompetansemål og vurdering instruksjon og ledelse",
+   "fag": [
+    "MUS7Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6559",
+     "tekst": "lede musikalske prosesser og vise forståelse av hvordan musikalsk materiale kan innstuderes, utvikles og framføres"
+    },
+    {
+     "kode": "KM6560",
+     "tekst": "lede et ensemble ved å bruke grunnleggende direksjonsteknikker"
+    },
+    {
+     "kode": "KM6561",
+     "tekst": "formidle musikalske intensjoner og virkemidler gjennom direksjon"
+    },
+    {
+     "kode": "KM6562",
+     "tekst": "diskutere og reflektere over egen og andres evne til å tilrettelegge repertoar og uttrykke musikalske intensjoner overfor ulike ensembler"
+    },
+    {
+     "kode": "KM6563",
+     "tekst": "lese, tolke og tilpasse varierte former for musikalsk notasjon for ulike ensembler"
+    },
+    {
+     "kode": "KM6564",
+     "tekst": "utvikle planer for, gjennomføre, dokumentere og evaluere prosjekter og produksjoner"
+    },
+    {
+     "kode": "KM6565",
+     "tekst": "drøfte rettferdig lederskap og tenke kritisk over balansen mellom deltakermedvirkning, lederstyring og egen rolle"
+    },
+    {
+     "kode": "KM6566",
+     "tekst": "vurdere lydmiljø og -nivå under produksjoner, og ta ansvar for å regulere dette slik at det er helsemessig forsvarlig, fysisk og psykisk"
+    },
+    {
+     "kode": "KM6567",
+     "tekst": "gjøre rede for opphavsrettslige regler og rutiner"
+    },
+    {
+     "kode": "KM6568",
+     "tekst": "sette opp og følge budsjett og føre regnskap i arbeid med prosjekter og produksjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i instruksjon og ledelse. Elevene viser og utvikler kompetanse i faget når de utøver musikalsk lederskap i ulike ensembler gjennom rettferdig styring og på måter som legger til rette for andres opplevelse av mestring. Elevene viser og utvikler også kompetanse når de viser lederskap gjennom kunstneriske, økonomiske og praktiske valg fram mot framføringer og produksjoner.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får øve seg på å ta egne valg i forberedelse av framførelser og produksjoner. Læreren skal være i dialog med elevene om utviklingen deres i rollene som ensembleleder og produsent, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle evne til musikalsk lederskap i ensembler og evne til å lede produksjonsarbeid."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter instruksjon og ledelse. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i instruksjon og ledelse basert på kompetansen eleven har vist gjennom å utøve lederskap som ensembleleder og produsent."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Instruksjon og ledelse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Instruksjon og ledelse: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Instruksjon og ledelse: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

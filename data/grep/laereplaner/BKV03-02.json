@@ -1,0 +1,112 @@
+{
+ "kode": "BKV03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, kveilerøroperasjoner",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV676",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, kveilerøroperasjoner",
+   "fag": [
+    "BKV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8518",
+     "tekst": "skrive arbeidstillatelser og arbeidsrapporter, uføre sikker jobb-analyser og dokumentere avvik i operasjonen"
+    },
+    {
+     "kode": "KM8534",
+     "tekst": "funksjonsteste og kontrollere kveilerørsutstyr før bruk i henhold til NORSOK-standard"
+    },
+    {
+     "kode": "KM8533",
+     "tekst": "kontrollere og vedlikeholde hydraulisk kveilerørsutstyr"
+    },
+    {
+     "kode": "KM8532",
+     "tekst": "manøvrere nedihullsutstyr ved hjelp av injektor og kontrollsystemer"
+    },
+    {
+     "kode": "KM8531",
+     "tekst": "velge og bruke egnet overflate- og nedihullsutstyr og reflektere over konsekvenser av feilvalg"
+    },
+    {
+     "kode": "KM8530",
+     "tekst": "vurdere og anvende krav til plassering og montering av kveilerørsutstyr på ulike typer installasjoner"
+    },
+    {
+     "kode": "KM8529",
+     "tekst": "klargjøre og vedlikeholde en basisverktøystreng før og etter kveilerørsoperasjoner"
+    },
+    {
+     "kode": "KM8528",
+     "tekst": "gjennomføre brønnoperasjoner i tråd med gjeldende plan og krav i kvalitetssikringssystemer"
+    },
+    {
+     "kode": "KM8535",
+     "tekst": "gjøre rede for virkemåten til og begrensningene for trykkontrollutstyret og gjennomføre systematisk vedlikehold og funksjonstesting av trykkontrollutstyr"
+    },
+    {
+     "kode": "KM8527",
+     "tekst": "anvende overflateutstyr for brønnkontroll"
+    },
+    {
+     "kode": "KM8525",
+     "tekst": "gjøre rede for oppbygning og sikkerhetsbarrierer for arbeidsoperasjoner ved ulike brønner"
+    },
+    {
+     "kode": "KM8524",
+     "tekst": "tolke signaler og retur fra brønnen og gjennomføre nødprosedyrer i forbindelse med kveilerørsoperasjoner"
+    },
+    {
+     "kode": "KM8523",
+     "tekst": "gjøre rede for og anvende utstyr for vekt- og dybdemålinger"
+    },
+    {
+     "kode": "KM8522",
+     "tekst": "bruke og gjøre rede for krav til utstyr som brukes i brønner med høyt trykk og temperatur"
+    },
+    {
+     "kode": "KM8521",
+     "tekst": "utføre sikkert arbeid gjennom å velge og bruke egnet utstyr til logge- og perforeringsoperasjoner på kveilerør"
+    },
+    {
+     "kode": "KM8520",
+     "tekst": "gjøre rede for og iverksette nødvendige sikkerhetstiltak for arbeid i høyden og ved fallende gjenstander"
+    },
+    {
+     "kode": "KM8519",
+     "tekst": "tolke og bruke sikkerhetsdatablader i forbindelse med håndtering av kjemikalier og brønnvæsker"
+    },
+    {
+     "kode": "KM8536",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8526",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, kveilerørsoperasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 brønnfaget, kveilerøroperasjoner. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, kveilerøroperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

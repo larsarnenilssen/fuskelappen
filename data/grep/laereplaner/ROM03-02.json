@@ -1,0 +1,459 @@
+{
+ "kode": "ROM03-02",
+ "tittel": "Læreplan i vg3 romteknologi",
+ "spraak": "nob",
+ "fastsatt": "2022-03-21",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV762",
+   "tittel": "Kompetansemål og vurdering romteknologi og satellitteknikk (140 årstimer)",
+   "fag": [
+    "ROM3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10124",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere oppgaver i romteknologi og satellitteknikk i samarbeid med andre i henhold til gjeldende regelverk, og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10125",
+     "tekst": "utføre arbeid i romteknologi og satellitteknikk nøyaktig, effektivt og estetisk i henhold til gjeldende regelverk, standarder, veiledninger, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystemer, og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM10102",
+     "tekst": "gjøre rede for milepæler innenfor romfartshistorien"
+    },
+    {
+     "kode": "KM10103",
+     "tekst": "utføre belastningstester og gjøre rede for satellitters rommiljø og krefter og påvirkninger som de utsettes for under oppskyting"
+    },
+    {
+     "kode": "KM10104",
+     "tekst": "beregne satellittbaner og gjøre rede for ulike romtransportsystemer, og beskrive ulike oppdrag og nyttelaster en satellitt kan ha"
+    },
+    {
+     "kode": "KM10105",
+     "tekst": "vurdere risiko og strategier for håndtering av romsøppel og menneskelig påvirkning i verdensrommet"
+    },
+    {
+     "kode": "KM10106",
+     "tekst": "innhente og bruke informasjon og gjøre rede for forskningsprogrammer for den tekniske og vitenskapelige utforskningen av verdensrommet"
+    },
+    {
+     "kode": "KM10107",
+     "tekst": "innhente og bruke informasjon fra internasjonale romteknologisentre, velge en problemstilling innenfor romteknologi og presentere resultater med engelsk som kommunikasjonsspråk"
+    },
+    {
+     "kode": "KM10108",
+     "tekst": "beskrive norsk romforskning, romrelatert industri og deltakelse i internasjonale prosjekter"
+    },
+    {
+     "kode": "KM10109",
+     "tekst": "gjøre rede for hvilke effekter vektløshet har på mennesker, tiltak for å motvirke effekter og hvordan man kan utnytte vektløshet i framstilling av nye produkter"
+    },
+    {
+     "kode": "KM10110",
+     "tekst": "orientere en treningssatellitt ved hjelp av magnetfelt og gyroskop og forklare hvordan forskjellige typer orienteringskontroll fungerer"
+    },
+    {
+     "kode": "KM10111",
+     "tekst": "opprette kommunikasjon mellom treningssatellitt og kontrollstasjon, styre antenner, kontrollere status for spenninger, strømmer og temperatur og forklare virkemåten til treningssatellitten og kontrollstasjonen"
+    },
+    {
+     "kode": "KM10112",
+     "tekst": "beskrive ulike typer energiforsyning og temperaturkontroll for plattformer i rommet"
+    },
+    {
+     "kode": "KM10113",
+     "tekst": "beskrive kommunikasjonssatellitters dekningsområde for formidling av ulike typer informasjon mellom to eller flere steder på jorden"
+    },
+    {
+     "kode": "KM10114",
+     "tekst": "anvende GNSS-systemer til posisjonering og satellittelefon for kommunikasjon, og gjøre rede for satellittnavigasjon og rombasert internett"
+    },
+    {
+     "kode": "KM10115",
+     "tekst": "opprette kontakt med en satellitt i lav jordbane i tillatte frekvensbånd, motta data, sende kommandoer, kontrollere resultatet og forklare hvordan en bakkestasjon fungerer"
+    },
+    {
+     "kode": "KM10116",
+     "tekst": "måle avstand og hastighet for en satellitt i lav jordbane ved hjelp av signalstyrke og dopplerforskyvning og vurdere resultatet"
+    },
+    {
+     "kode": "KM10117",
+     "tekst": "utforske laserteknologi for overføring av lyd og bilde og forklare prinsippet for overføring av lyd og bilde med laserteknologi"
+    },
+    {
+     "kode": "KM10118",
+     "tekst": "utforske LIDAR til å måle avstand, hastighet eller temperatur og forklare prinsippet bak LIDAR"
+    },
+    {
+     "kode": "KM10119",
+     "tekst": "konfigurere og bruke kunstig intelligens for roboter og droner, og forklare hvordan roboter kan brukes i oppdrag innenfor romteknologi"
+    },
+    {
+     "kode": "KM10120",
+     "tekst": "bruke teleskop til astronomiske observasjoner og gjøre rede for bakke- og rombaserte observatorier"
+    },
+    {
+     "kode": "KM10121",
+     "tekst": "bruke fagspråk og delta i faglige diskusjoner nasjonalt og internasjonalt"
+    },
+    {
+     "kode": "KM10122",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM10123",
+     "tekst": "reflektere over demokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM10126",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget romteknologi og satellitteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i romteknologi og satellitteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i romteknologi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i kjente og ukjente sammenhenger og situasjoner. Læreren skal sette karakter i romteknologi og satellitteknikk basert på kompetansen eleven viser gjennom planlegging, gjennomføring, vurdering og dokumentering av faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV763",
+   "tittel": "Kompetansemål og vurdering fjernanalyse og geografiske informasjonssystemer (140 årstimer)",
+   "fag": [
+    "ROM3Z07"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10127",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere oppgaver i fjernanalyse og geografiske informasjonssystemer i samarbeid med andre i henhold til gjeldende regelverk, og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10128",
+     "tekst": "utføre arbeid i fjernanalyse og geografiske informasjonssystemer nøyaktig, effektivt og estetisk i henhold til gjeldende regelverk, standarder, veiledninger, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystemer, og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM10129",
+     "tekst": "anvende og gjøre rede for datafangstmetoder"
+    },
+    {
+     "kode": "KM10130",
+     "tekst": "anvende og gjøre rede for navigasjons- og posisjoneringssystemer"
+    },
+    {
+     "kode": "KM10131",
+     "tekst": "anvende forskjellige kartprojeksjoner og koordinatsystemer og gjøre rede for bruksområder"
+    },
+    {
+     "kode": "KM10132",
+     "tekst": "anvende og gjøre rede for analysemetoder basert på raster- og vektordata i geografiske informasjonssystemer"
+    },
+    {
+     "kode": "KM10133",
+     "tekst": "utføre analyser innenfor fjernanalyse som er basert på aktive og passive sensorer, og gjøre rede for sensorenes funksjonsmåte"
+    },
+    {
+     "kode": "KM10134",
+     "tekst": "utføre målinger med infrarødt kamera og forklare hvordan temperatur bestemmes ved fjernanalyse"
+    },
+    {
+     "kode": "KM10135",
+     "tekst": "diskutere nytten av fjernanalyse og geografiske informasjonssystemer for anvendelser både på jorden og på objekter i verdensrommet"
+    },
+    {
+     "kode": "KM10136",
+     "tekst": "bruke fjernanalyse og geografiske informasjonssystemer for å vise global miljøstatus og beskrive hvordan bærekraftig utvikling kan ivaretas"
+    },
+    {
+     "kode": "KM10137",
+     "tekst": "visualisere og presentere analyseresultater og gjøre rede for datakvalitet"
+    },
+    {
+     "kode": "KM10138",
+     "tekst": "bruke et presist fagspråk og delta i faglige diskusjoner nasjonalt og internasjonalt"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget fjernanalyse og geografiske informasjonssystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i fjernanalyse og geografiske informasjonssystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fjernanalyse og geografiske informasjonssystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i kjente og ukjente sammenhenger og situasjoner. Læreren skal sette karakter i fjernanalyse og geografiske informasjonssystemer basert på kompetansen eleven viser gjennom planlegging, gjennomføring, vurdering og dokumentering av faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV764",
+   "tittel": "Kompetansemål og vurdering romfysikk (140 årstimer)",
+   "fag": [
+    "ROM3Z08"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10139",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere oppgaver i romfysikk i samarbeid med andre i henhold til gjeldende regelverk, og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10140",
+     "tekst": "utføre arbeid i romfysikk nøyaktig, effektivt og estetisk i henhold til gjeldende regelverk, standarder, veiledninger, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystemer, og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM10141",
+     "tekst": "utforske og forklare prinsipper for rettlinjet bevegelse og for sirkelbevegelse av objekter og foreta beregninger"
+    },
+    {
+     "kode": "KM10142",
+     "tekst": "utforske og forklare prinsipper for Newtons tre lover i romfysikk og Newtons gravitasjonslov i romrelaterte sammenhenger og foreta beregninger"
+    },
+    {
+     "kode": "KM10143",
+     "tekst": "beregne og beskrive ulike former for energi, energioverganger og energioverføringer i romrelaterte anvendelser, unnslipningsfart og frigjøringsarbeid fra tyngdefelt"
+    },
+    {
+     "kode": "KM10144",
+     "tekst": "gjøre rede for og anvende Keplers lover for å visualisere og beregne planet- og satellittbevegelse"
+    },
+    {
+     "kode": "KM10145",
+     "tekst": "beskrive hvordan vektløshet kan oppnås"
+    },
+    {
+     "kode": "KM10146",
+     "tekst": "anvende og forklare termofysikkens første og andre lov i romrelaterte sammenhenger"
+    },
+    {
+     "kode": "KM10147",
+     "tekst": "utforske brytning, bøyning, interferens, refleksjon og spredning av lys og gjøre beregninger av brytningsindeks, vurdere resultater og gjøre rede for det elektromagnetiske spekteret"
+    },
+    {
+     "kode": "KM10148",
+     "tekst": "utforske ulike spektre, beregne frekvenser og bølgelengder til spektrallinjer, forklare emisjons- og absorpsjonsspektre og gjøre rede for atommodeller"
+    },
+    {
+     "kode": "KM10149",
+     "tekst": "beskrive ulike typer ioniserende stråling, kildene til disse, farer for mennesker og utstyr ved stråling og ulike typer beskyttelse mot stråling ved romvirksomhet"
+    },
+    {
+     "kode": "KM10150",
+     "tekst": "beskrive solas oppbygning, temperatur, strålingsspektrum, sykluser, magnetfelt, solflekker, rotasjon og hvordan sola innvirker på jorden og solsystemet vårt"
+    },
+    {
+     "kode": "KM10151",
+     "tekst": "beskrive jordens magnetfelt, forklare variasjoner i magnetfeltet, forklare hvordan nordlys oppstår, og gjøre rede for nordlysforskning"
+    },
+    {
+     "kode": "KM10152",
+     "tekst": "beskrive strålingsmiljøet rundt jorden og forklare hvilken praktisk betydning varsling av romværet har"
+    },
+    {
+     "kode": "KM10153",
+     "tekst": "forklare strålingsbalanse, drivhuseffekt og drøfte årsaker til og konsekvenser av klimaendringer"
+    },
+    {
+     "kode": "KM10154",
+     "tekst": "anvende bevaringslover til å beregne frigjort energi i fisjons- og fusjonsprosesser, beskrive stjerners livssykluser og hvordan grunnstoffer blir dannet i stjerner"
+    },
+    {
+     "kode": "KM10155",
+     "tekst": "klassifisere og forklare sammensetning, temperatur, avstand og fart til stjerner"
+    },
+    {
+     "kode": "KM10156",
+     "tekst": "beregne strålingstetthet, temperatur og bølgelengde ved bruk av Stefan-Boltzmanns lov og Wiens forskyvningslov"
+    },
+    {
+     "kode": "KM10157",
+     "tekst": "gjøre rede for Hubbles lov og standardmodellen for universets utvikling"
+    },
+    {
+     "kode": "KM10158",
+     "tekst": "gjennomføre astronomiske observasjoner med teleskop, utføre analyser og beregninger ved hjelp av programvare og gjøre rede for forskning på eksoplaneter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget romfysikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget. Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver.",
+    "Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i romfysikk. Elevene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i romfysikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i kjente og ukjente sammenhenger og situasjoner. Læreren skal sette karakter i romfysikk i basert på kompetansen eleven viser gjennom planlegging, gjennomføring, vurdering og dokumentering av faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV765",
+   "tittel": "Kompetansemål og vurdering telemetri (140 årstimer)",
+   "fag": [
+    "ROM3Z09"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10159",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdrag i telemetri i samarbeid med andre i henhold til gjeldende regelverk, og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10160",
+     "tekst": "utføre arbeid i telemetri nøyaktig, effektivt og estetisk i henhold til gjeldende regelverk, standarder, veiledninger, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystemer, og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM10161",
+     "tekst": "sette opp og funksjonsteste en telemetristasjon og forklare oppbygning og virkemåte på blokknivå"
+    },
+    {
+     "kode": "KM10162",
+     "tekst": "kople opp og funksjonsteste og sette i drift sendere og mottakere for generell telemetri og beskrive oppbygging og virkemåte"
+    },
+    {
+     "kode": "KM10163",
+     "tekst": "utforske telemetri, sporing og styring (TT&C) for ulike romplattformer"
+    },
+    {
+     "kode": "KM10164",
+     "tekst": "forklare dopplerskift og fasemetermåling i tilknytning til telemetri fra raketter"
+    },
+    {
+     "kode": "KM10165",
+     "tekst": "gjøre rede for hvilke fenomener som påvirker signalkvaliteten i en datalink mellom bakke- og romsegment, plassere disse i et linkbudsjett og gjøre rede for informasjonsbegrepet, støy og Shannons teori"
+    },
+    {
+     "kode": "KM10166",
+     "tekst": "bygge, tilpasse og programmere dekodersystemer og telemetrinyttelast med sensorer, analysere, bearbeide og presentere mottatte telemetridata fra en reell rakettoppskyting og sammenligne disse dataene med data fra en simulert oppskyting"
+    },
+    {
+     "kode": "KM10167",
+     "tekst": "beskrive virkemåten til og oppbygging av ulike antennetyper til bruk i romsegmentet og for telemetrioverføring og gjøre rede for begrensninger og muligheter ved ulike antennetyper"
+    },
+    {
+     "kode": "KM10168",
+     "tekst": "beregne banen til en rakett med utgangspunkt i målinger gjort i telemetristasjon"
+    },
+    {
+     "kode": "KM10169",
+     "tekst": "følge sikkerhetsrutiner under rakettoppskytinger og for arbeid på telemetri- og mikrobølgeinstallasjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget telemetri når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i telemetri. Elevene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i telemetri ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i kjente og ukjente sammenhenger og situasjoner. Læreren skal sette karakter i telemetri basert på kompetansen eleven viser gjennom planlegging, gjennomføring, vurdering og dokumentering av faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV766",
+   "tittel": "Kompetansemål og vurdering elektronikk og kommunikasjonsteknologi (140 årstimer)",
+   "fag": [
+    "ROM3Z10"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10170",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdrag i elektronikk og kommunikasjonsteknologi i samarbeid med andre i henhold til gjeldende regelverk og begrunne de valgene som er gjort"
+    },
+    {
+     "kode": "KM10171",
+     "tekst": "utføre arbeid i elektronikk og kommunikasjonsteknologi nøyaktig, effektivt og estetisk i tråd med gjeldende regelverk, standarder, veiledninger, teknisk dokumentasjon og aktuelle kvalitetssikrings- og internkontrollsystemer, og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM10172",
+     "tekst": "bruke og tilpasse programvare for å utvikle, beregne, simulere, måle og feilsøke på elektriske kretser og forklare kretsens virkemåte"
+    },
+    {
+     "kode": "KM10173",
+     "tekst": "designe og programmere kretskort og montere komponenter for bruk til elektronikkprosjekter og begrunne valgene"
+    },
+    {
+     "kode": "KM10174",
+     "tekst": "tilpasse elektronikkutstyr til miljøet det skal operere i og begrunne valgene"
+    },
+    {
+     "kode": "KM10175",
+     "tekst": "måle på høyfrekvente effektforsterkere og forklare prinsipiell virkemåte for HF-kretser"
+    },
+    {
+     "kode": "KM10176",
+     "tekst": "utforske og gjøre rede for bølgeforplantning i kommunikasjonssammenheng, analoge og digitale modulasjonsmetoder, feilkorrigerende koding og kryptering"
+    },
+    {
+     "kode": "KM10177",
+     "tekst": "utføre antennemålinger, vurdere måleresultatene, forklare ulike antennetyper og beskrive bølgeforplantningen"
+    },
+    {
+     "kode": "KM10178",
+     "tekst": "opprette radiokommunikasjon ved bruk av sender- og mottakerutstyr og beskrive prinsippene for hvordan utstyret fungerer"
+    },
+    {
+     "kode": "KM10179",
+     "tekst": "konfigurere og bruke programvare-definert-radio (SDR) til å motta, demodulere og dekode et signal og til å modulere og sende ut et ønsket signal"
+    },
+    {
+     "kode": "KM10180",
+     "tekst": "drøfte etiske dilemmaer ved valg av elektronisk utstyr og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og global"
+    },
+    {
+     "kode": "KM10181",
+     "tekst": "håndtere avfall etter eget arbeid miljømessig og økonomisk, drøfte hvor miljøvennlige ulike produkter er, og slette sensitiv informasjon ved avhending"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget elektronikk og kommunikasjonsteknologi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elektronikk og kommunikasjonsteknologi. Elevene skal få mulighet til å uttrykke hva de opplever at de får til, og få mulighet til å reflektere over faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elektronikk og kommunikasjonsteknologi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i kjente og ukjente sammenhenger og situasjoner. Læreren skal sette karakter i elektronikk og kommunikasjonsteknologi basert på kompetansen eleven viser gjennom planlegging, gjennomføring, vurdering og dokumentering av faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Romteknologi og satellitteknikk: Eleven skal ha én standpunktkarakter.",
+    "Fjernanalyse og geografiske informasjonssystemer: Eleven skal ha én standpunktkarakter.",
+    "Romfysikk: Eleven skal ha én standpunktkarakter.",
+    "Telemetri: Eleven skal ha én standpunktkarakter.",
+    "Elektronikk og kommunikasjonsteknologi: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Romteknologi og satellitteknikk, romfysikk og elektronikk og kommunikasjonsteknikk: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Fjernanalyse og geografiske informasjonssystemer: Eleven kan trekkes ut til en praktisk eksamen i programfaget. Eksamen utarbeides og sensureres lokalt. Telemetri: Eleven kan trekkes ut til en praktisk eksamen i programfaget. Eksamen utarbeides og sensureres lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Romteknologi og satellitteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Romfysikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Elektronikk og kommunikasjonsteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Fjernanalyse og geografiske informasjonssystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Telemetri: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Romteknologi og satellitteknikk, romfysikk og elektronikk og kommunikasjonsteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,340 @@
+{
+ "kode": "SNE03-01",
+ "tittel": "Læreplan i vg3 snikkarfaget med fordjupingsområde",
+ "spraak": "nno",
+ "fastsatt": "2021-09-10",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV747",
+   "tittel": "Kompetansemål og vurdering vg3 snikkarfaget med fordjuping i innreiing",
+   "fag": [
+    "SNE3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9765",
+     "tekst": "planleggje å produsere produkt, arbeide etter teikningar, beskrivingar, preaksepterte løysingar og toleransekrav og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektivitet og verknader for miljøet"
+    },
+    {
+     "kode": "KM9766",
+     "tekst": "utarbeide produksjonsplanar, ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9782",
+     "tekst": "vurdere ulike faktorar som kan redusere varmeutvikling og brannsmitte"
+    },
+    {
+     "kode": "KM9767",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og settje i verk tiltak"
+    },
+    {
+     "kode": "KM9768",
+     "tekst": "bruke fagterminologi i kommunikasjon med kollegaer og andre yrkesutøvarar og drøfte løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9769",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9770",
+     "tekst": "velje og bruke ulike limtypar og samanføyingsteknikkar og vurdere korleis valet påverkar styrken og samanføyinga i konstruksjonen"
+    },
+    {
+     "kode": "KM9771",
+     "tekst": "framstille produkt, vurdere konsekvensar av fukt i materialane og luftfukt i bygget og settje i verk tiltak"
+    },
+    {
+     "kode": "KM9819",
+     "tekst": "gjere greie for produksjon av innreiing, dører, vindauge og trapper og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9772",
+     "tekst": "vurdere behov for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9773",
+     "tekst": "velje produksjonsmetode, stille inn og programmere maskiner etter arbeidsoppdraget og reflektere over konsekvensar av vald metode"
+    },
+    {
+     "kode": "KM9774",
+     "tekst": "forbehandle og overflatebehandle ulike produkt og vurdere korleis valet av produkt og metodar påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM9775",
+     "tekst": "kontrollere, pakke, emballere og kvalitetssikre ulike typar produkt for transport og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9776",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM9777",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9778",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9802",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9779",
+     "tekst": "kartleggje forhold og ta mål på monteringsstaden og gjere greie for korleis elektriske installasjonar, ventilasjon, røyranlegg og byggmessige avvik påverkar konstruksjonen og prosessen fram til ferdig montert produkt"
+    },
+    {
+     "kode": "KM9780",
+     "tekst": "designe, teikne og konstruere innreiingar digitalt og vurdere estetisk uttrykk, funksjonalitet og kor lett innreiinga er å montere"
+    },
+    {
+     "kode": "KM9781",
+     "tekst": "velje materialar, beslag, festemiddel og samanføyingsmetodar og drøfte faktorar som sikrar funksjonen og bereevna i konstruksjonane"
+    },
+    {
+     "kode": "KM9783",
+     "tekst": "montere og ferdigstille innreiingar i samsvar med spesifikasjon og drøfte faktorar som sikrar design, funksjon, forankring og estetisk uttrykk"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 snikkarfaget med fordjuping i innreiing når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 snikkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV745",
+   "tittel": "Kompetansemål og vurdering vg3 snikkarfaget med fordjuping i dør og vindauge",
+   "fag": [
+    "SNE3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9754",
+     "tekst": "planleggje å produsere produkt, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektivitet og verknader for miljøet"
+    },
+    {
+     "kode": "KM9788",
+     "tekst": "utarbeide produksjonsplanar, ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9808",
+     "tekst": "vurdere ulike faktorar som kan redusere varmeutvikling og brannsmitte"
+    },
+    {
+     "kode": "KM9789",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9790",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9791",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9792",
+     "tekst": "velje og bruke ulike limtypar og samanføyingsteknikkar og vurdere korleis valet påverkar styrken og samanføyinga i konstruksjonen"
+    },
+    {
+     "kode": "KM9793",
+     "tekst": "framstille produkt, vurdere konsekvensar av fukt i materialane og luftfukt i bygget og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9807",
+     "tekst": "gjere greie for produksjon av inreiing, dører, vindauge og trapper og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9794",
+     "tekst": "vurdere behov for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9795",
+     "tekst": "velje produksjonsmetode, stille inn og programmere maskiner etter arbeidsoppdraget og reflektere over konsekvensar av vald metode"
+    },
+    {
+     "kode": "KM9796",
+     "tekst": "forbehandle og overflatebehandle ulike produkt og vurdere korleis valet av produkt og metodar påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM9797",
+     "tekst": "kontrollere, pakke, emballere og kvalitetssikre ulike typar produkt for transport og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9798",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM9799",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9800",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9806",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9801",
+     "tekst": "velje matarialar og vurdere kva faktorar som påverkar eigenskapane, levetida, styrken og stabiliteten, sikkerheita og det estetiske uttrykket til sluttproduktet"
+    },
+    {
+     "kode": "KM9803",
+     "tekst": "drøfte ulike faktorar som påverkar isoleringsevna, lyd, lys, vask og risiko for knusing"
+    },
+    {
+     "kode": "KM10495",
+     "tekst": "velje glas og konstruksjonsmetode i samsvar med spesifikasjon om isoleringsevne og settje inn glas"
+    },
+    {
+     "kode": "KM9818",
+     "tekst": "reflektere over korleis montering av beslag og glas medverkar til å redusere brann og innbrot, velje beslag og sette sammen karm og ramme"
+    },
+    {
+     "kode": "KM9804",
+     "tekst": "velje konstruksjon og drøfte eigenskapar ved konstruksjonen som tilfredsstiller krava til rømmingsveg"
+    },
+    {
+     "kode": "KM9805",
+     "tekst": "velje og bruke impregneringsmetode og vurdere kva faktorar som påverkar levetida til produktet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 snikkarfaget med fordjuping i dør og vindauge når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 snikkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV746",
+   "tittel": "Kompetansemål og vurdering vg3 snikkarfaget med fordjuping i trapp",
+   "fag": [
+    "SNE3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9809",
+     "tekst": "planleggje å produsere produkt, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere arbeidet med tanke på arbeidsoppdraget, kostnadseffektivitet og verknader for miljøet"
+    },
+    {
+     "kode": "KM9810",
+     "tekst": "utarbeide produksjonsplanar, ta imot, handtere og lagre råvarer og materialar og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM9764",
+     "tekst": "vurdere ulike faktorar som kan redusere varmeutvikling og brannsmitte"
+    },
+    {
+     "kode": "KM9811",
+     "tekst": "risikovurdere produksjonsprosessen, gjennomføre ein sikker jobbanalyse, rapportere om uønskte hendingar og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9812",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som medverkar til å minimere miljøavtrykk og sikre effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM9813",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensar av støy, støveksponering og bruk av kjemikaliar"
+    },
+    {
+     "kode": "KM9814",
+     "tekst": "velje og bruke ulike limtypar og samanføyingsteknikkar og vurdere korleis valet påverkar styrken og samanføyinga i konstruksjonen"
+    },
+    {
+     "kode": "KM9815",
+     "tekst": "framstille produkt, vurdere konsekvensar av fukt i materialane og luftfukt i bygget og setje i verk tiltak"
+    },
+    {
+     "kode": "KM9763",
+     "tekst": "gjere greie for produksjon av inreiing, dører, vindauge og trapper og drøfte forskjellane i produksjonsmetodar"
+    },
+    {
+     "kode": "KM9816",
+     "tekst": "vurdere behov for vedlikehald av utstyr, setje i verk tiltak og reflektere over kva faktorar ved vedlikehald som sikrar drifta og produktkvaliteten"
+    },
+    {
+     "kode": "KM9817",
+     "tekst": "velje produksjonsmetode, stille inn og programmere maskiner etter arbeidsoppdraget og reflektere over konsekvensar av vald metode"
+    },
+    {
+     "kode": "KM9787",
+     "tekst": "forbehandle og overflatebehandle ulike produkt og vurdere korleis valet av produkt og metodar påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM9786",
+     "tekst": "kontrollere, pakke, emballere og kvalitetssikre ulike typar produkt for transport og vurdere kva faktorar som vernar produkta mot ytre påkjenningar"
+    },
+    {
+     "kode": "KM9785",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem og vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM9784",
+     "tekst": "kjeldesortere, handtere avfall etter gjeldande regelverk, vurdere om gjenbruk er mogleg, og reflektere over konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM9755",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har og reflektere over krav og forventingar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM9762",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM9756",
+     "tekst": "byggje trapp i samsvar med gjeldande regelverk og drøfte korleis avvik i bygningskonstruksjonen kan påverke sluttproduktet"
+    },
+    {
+     "kode": "KM9757",
+     "tekst": "velje og bruke ulike måleverktøy, måle trappeopningar og vurdere korleis lengd, breidd, høgd og vinklar påverkar trappekonstruksjonar"
+    },
+    {
+     "kode": "KM9758",
+     "tekst": "teikne og konstruere trapp digitalt og vurdere kva faktorar som optimaliserer funksjonen, påverkar designet og hindrar ulukker"
+    },
+    {
+     "kode": "KM9759",
+     "tekst": "velje materialar, festemiddel og samanføyingsmetodar og drøfte faktorar som sikrar styrken og funksjonen til konstruksjonen"
+    },
+    {
+     "kode": "KM9760",
+     "tekst": "velje og bruke råvarer til trapper og vurdere kva faktorar som påverkar eigenskapane, levetida, styrken, sikkerheita og det estetiske uttrykket til sluttproduktet"
+    },
+    {
+     "kode": "KM9761",
+     "tekst": "montere og ferdigstille trapper i samsvar med spesifikasjon og drøfte faktorar som påverkar konstruksjon og styrken i trappa"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 snikkarfaget med fordjuping i trapp når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 snikkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 snikkarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

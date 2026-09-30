@@ -56,6 +56,11 @@ export const ruter = [
   '#/arbeidstid/beskjeftigelse',
   '#/arbeidstid/vikar',
   '#/arbeidstid/overtid',
+  '#/fag',
+  '#/fag?q=norsk&program=ST&trinn=Vg1',
+  '#/fag/HEA2005',
+  '#/fag/AKT2004',
+  '#/fag/FINNES0',
   '#/finnes-ikke',
 ];
 

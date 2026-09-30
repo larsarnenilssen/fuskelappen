@@ -1,0 +1,120 @@
+{
+ "kode": "ALU03-02",
+ "tittel": "Læreplan i vg3 aluminiumskonstruksjonsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV690",
+   "tittel": "Kompetansemål og vurdering vg3 aluminiumkonstruksjonsfaget",
+   "fag": [
+    "ALU3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8828",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver ut fra tegninger, prosedyrer og standarder"
+    },
+    {
+     "kode": "KM8846",
+     "tekst": "vurdere og velge verktøy og klargjøre verktøymaskiner før bruk"
+    },
+    {
+     "kode": "KM8845",
+     "tekst": "vurdere og reflektere over økonomiske og miljømessige konsekvenser av metode- og materialvalg"
+    },
+    {
+     "kode": "KM8844",
+     "tekst": "gjennomføre produktkontroll før, under og etter ferdigstilling"
+    },
+    {
+     "kode": "KM8843",
+     "tekst": "bruke sikkerhetsdatablader og vurdere risiko ved bruk av ulike materialer og produkter"
+    },
+    {
+     "kode": "KM8842",
+     "tekst": "gjøre rede for bruksområder for aluminiumslegeringer og hvordan korrosjon oppstår i og påvirker ulike aluminiumslegeringer"
+    },
+    {
+     "kode": "KM8841",
+     "tekst": "gjøre rede for hvordan temperatur og bearbeiding påvirker materialenes egenskaper"
+    },
+    {
+     "kode": "KM8840",
+     "tekst": "vurdere bearbeidingsmetoder tilpasset arbeidsoppdraget og velge løsninger med hensyn til lønnsomhet, kvalitet og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8839",
+     "tekst": "gjennomføre tiltak for å motvirke deformasjoner, krymp og spenninger i produksjon og bruk av aluminiumsprodukter, og vurdere fordeler og ulemper med tiltakene"
+    },
+    {
+     "kode": "KM8847",
+     "tekst": "velge og anvende verktøy og utstyr for å kutte og bearbeide plater, profiler og rør i aluminium"
+    },
+    {
+     "kode": "KM8838",
+     "tekst": "vurdere og bruke ulike sammenføyingsmetoder i ut fra arbeidsoppdrag og prosedyrer"
+    },
+    {
+     "kode": "KM8836",
+     "tekst": "drøfte, vurdere og bruke ulike metoder for å rette opp og reparere deformerte konstruksjoner og produkter"
+    },
+    {
+     "kode": "KM8835",
+     "tekst": "vurdere og bruke metoder for etterbehandling av konstruksjoner og produkter i henhold til spesifikasjoner"
+    },
+    {
+     "kode": "KM8834",
+     "tekst": "utføre lagerhåndtering i tråd med prosedyrer"
+    },
+    {
+     "kode": "KM8833",
+     "tekst": "bruke sporbarhetsmetoder for materialer og utstyr for å dokumentere kvalitet på utført oppdrag"
+    },
+    {
+     "kode": "KM8832",
+     "tekst": "gjøre rede for ikke-destruktive testmetoder og kontrollere og dokumentere kvalitet på utført arbeid"
+    },
+    {
+     "kode": "KM8831",
+     "tekst": "følge rutiner for å dokumentere avvik og vurdere korrigerende tiltak"
+    },
+    {
+     "kode": "KM8830",
+     "tekst": "utføre arbeid i tråd med bedriftens helse-, miljø-, sikkerhets- og kvalitetssikringssystemer, og velge og bruke sikkerhets- og verneutstyr tilpasset arbeidsoppdraget"
+    },
+    {
+     "kode": "KM8829",
+     "tekst": "planlegge og gjennomføre operatørstyrt vedlikehold på maskiner og utstyr"
+    },
+    {
+     "kode": "KM8837",
+     "tekst": "reflektere over betydningen av bærekraftig kilde- og avfallshåndtering og gjennomføre kildesortering og avfallshåndtering i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM8848",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 aluminiumskonstruksjonsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 aluminiumskonstruksjonsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 aluminiumskonstruksjonsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

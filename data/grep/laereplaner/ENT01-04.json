@@ -1,0 +1,175 @@
+{
+ "kode": "ENT01-04",
+ "tittel": "Læreplan i entreprenørskap og bedriftsutvikling",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV885",
+   "tittel": "Kompetansemål og vurdering entreprenørskap og bedriftsutvikling 1",
+   "fag": [
+    "ENT1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11569",
+     "tekst": "bruke kilder, teorier og modeller i arbeid med faglige spørsmål, emner og problemstillinger"
+    },
+    {
+     "kode": "KM11557",
+     "tekst": "utforske ulike kreativitetsprosesser og utvikle forretningsideer"
+    },
+    {
+     "kode": "KM11558",
+     "tekst": "utforske og bruke ulike innovasjonsprosesser ved etablering av virksomheter"
+    },
+    {
+     "kode": "KM11559",
+     "tekst": "utvikle forretningsmodeller og vurdere opp mot bærekraftig utvikling"
+    },
+    {
+     "kode": "KM11560",
+     "tekst": "utforske og vurdere hvordan samhandling påvirker innovasjon og utvikling"
+    },
+    {
+     "kode": "KM11561",
+     "tekst": "sammenligne og vurdere informasjon om markeder, kjøpsatferd og segmenter for å ta beslutninger"
+    },
+    {
+     "kode": "KM11562",
+     "tekst": "gjennomføre situasjonsanalyse, vurdere utviklingsmuligheter og sette mål i en oppstartsfase"
+    },
+    {
+     "kode": "KM11563",
+     "tekst": "utforske og bruke ulike konkurransemidler i en oppstartsfase"
+    },
+    {
+     "kode": "KM11564",
+     "tekst": "vurdere og velge selskapsformer ut fra risiko og ansvar ved etablering"
+    },
+    {
+     "kode": "KM11565",
+     "tekst": "reflektere over hva som kjennetegner en god leder i etableringsfasen, og hvordan leder og medarbeidere samhandler og setter sammen gode team"
+    },
+    {
+     "kode": "KM11566",
+     "tekst": "beregne og vurdere pris og kapitalbehov, utarbeide budsjett og vurdere finansieringsmuligheter med tanke på risiko og ansvar for en ny virksomhet"
+    },
+    {
+     "kode": "KM11567",
+     "tekst": "lese regnskap og nøkkeltall for å vurdere en virksomhets lønnsomhet"
+    },
+    {
+     "kode": "KM11568",
+     "tekst": "reflektere over hva entreprenøriell kompetanse er, og vurdere hva det har å si for utvikling av virksomheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i entreprenørskap og bedriftsutvikling 1. Elevene viser og utvikler kompetanse i faget når de bruker kreativitets- og innovasjonsprosesser, teorier og modeller i arbeid med faglige emner og problemstillinger i forbindelse med oppstart av virksomheter. Det innebærer at elevene viser og utvikler kompetanse gjennom praktisk arbeid, og når de utforsker og reflekterer over faglige emner og praktiske problemstillinger knyttet til innovasjon, verdiskaping, bærekraft, strategi og virksomhetsutvikling.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige, digitale og praktiske arbeidsmåter for å tilegne seg og vise kompetanse, og gjennom å la elevene være aktivt kunnskapssøkende. Læreren skal være i dialog med elevene om utviklingen deres i entreprenørskap og bedriftsutvikling 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i entreprenørskap og bedriftsutvikling 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter entreprenørskap og bedriftsutvikling 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i entreprenørskap og bedriftsutvikling 1 basert på kompetanse eleven har vist gjennom bruk av teorier, modeller og en praktisk tilnærming til entreprenørielt arbeid med innovasjon, verdiskaping, bærekraft, strategi og virksomhetsutvikling i forbindelse med oppstart av virksomhet."
+   ]
+  },
+  {
+   "kode": "KV886",
+   "tittel": "Kompetansemål og vurdering entreprenørskap og bedriftsutvikling 2",
+   "fag": [
+    "ENT1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11582",
+     "tekst": "bruke kilder, teorier og modeller i arbeid med faglige spørsmål, emner og problemstillinger"
+    },
+    {
+     "kode": "KM11570",
+     "tekst": "utforske ulike innovasjonsprosesser og drøfte betydningen innovasjon har for videreutvikling av en virksomhet"
+    },
+    {
+     "kode": "KM11571",
+     "tekst": "utforske og vurdere konsekvenser bærekraftig verdiskaping har for videreutvikling av en virksomhet"
+    },
+    {
+     "kode": "KM11572",
+     "tekst": "utforske og vurdere forretningsmodeller for å videreutvikle virksomheter"
+    },
+    {
+     "kode": "KM11573",
+     "tekst": "reflektere over hva samfunnsansvar innebærer, og utforske og sammenligne virksomheters samfunnsansvar lokalt og globalt"
+    },
+    {
+     "kode": "KM11574",
+     "tekst": "kartlegge og vurdere støtteordninger i videreutvikling av virksomheter nasjonalt og internasjonalt"
+    },
+    {
+     "kode": "KM11575",
+     "tekst": "utforske og vurdere hvordan virksomheter kan bruke ulike vekst-, markeds- og konkurransestrategier ved videreutvikling"
+    },
+    {
+     "kode": "KM11576",
+     "tekst": "vurdere internasjonale forretningsmuligheter og sammenligne nasjonale og internasjonale forretningskulturer"
+    },
+    {
+     "kode": "KM11577",
+     "tekst": "vurdere ulike lederstiler og drøfte hvordan ledere og medarbeidere kan påvirke utviklingen av virksomheter"
+    },
+    {
+     "kode": "KM11578",
+     "tekst": "vurdere bruk av prosjekt og andre samarbeidsformer og betydningen nettverksbygging har i utvikling av virksomheter"
+    },
+    {
+     "kode": "KM11579",
+     "tekst": "vurdere behovet for organisasjonsutvikling i etablerte virksomheter"
+    },
+    {
+     "kode": "KM11580",
+     "tekst": "vurdere hvordan finansiering av kapitalbehov bidrar til framtidig lønnsomhet og verdiskaping for virksomheter"
+    },
+    {
+     "kode": "KM11581",
+     "tekst": "reflektere over og vurdere betydningen entreprenøriell kompetanse har for videreutvikling av en virksomhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i entreprenørskap og bedriftsutvikling 2. Elevene viser og utvikler kompetanse i faget når de bruker innovasjonsprosesser, teorier og modeller i arbeid med faglige emner og problemstillinger, i forbindelse med videreutvikling av virksomhet. Det innebærer at elevene viser og utvikler kompetanse gjennom praktisk arbeid, og når de utforsker og reflekterer over faglige emner og praktiske problemstillinger knyttet til innovasjon, verdiskaping, bærekraft, strategi og virksomhetsutvikling.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige, digitale og praktiske arbeidsmåter for å tilegne seg og vise kompetanse, og gjennom å la elevene være aktivt kunnskapssøkende. Læreren skal være i dialog med elevene om utviklingen deres i entreprenørskap og bedriftsutvikling 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i entreprenørskap og bedriftsutvikling 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter entreprenørskap og bedriftsutvikling 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i entreprenørskap og bedriftsutvikling 2 basert på kompetansen eleven har vist gjennom bruk av teori, modeller, og praktisk tilnærming til entreprenørielt arbeid med innovasjon, verdiskaping, bærekraft, strategi og virksomhetsutvikling i forbindelse med videreutvikling av virksomhet."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Entreprenørskap og bedriftsutvikling 1: Eleven skal ha én standpunktkarakter.\nEntreprenørskap og bedriftsutvikling 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Entreprenørskap og bedriftsutvikling 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nEntreprenørskap og bedriftsutvikling 2: Eleven kan trekkes ut til en skriftlig eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Entreprenørskap og bedriftsutvikling 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nEntreprenørskap og bedriftsutvikling 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
+   ]
+  }
+ ]
+}

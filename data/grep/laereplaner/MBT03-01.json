@@ -1,0 +1,140 @@
+{
+ "kode": "MBT03-01",
+ "tittel": "Læreplan i møbeltapetsererfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV650",
+   "tittel": "Kompetansemål og vurdering møbeltapetsererfaget",
+   "fag": [
+    "MBT3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7910",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere tapetserarbeidet fra idé til ferdig møbel"
+    },
+    {
+     "kode": "KM7908",
+     "tekst": "ta mål, lage projeksjonstegning i tre plan og arbeide etter tegningen"
+    },
+    {
+     "kode": "KM7930",
+     "tekst": "vurdere og velge spiralfjærer til sete og rygg og snøre disse til ønsket høyde og retning, tilpasse og montere fjærtråd og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM7927",
+     "tekst": "madrassere med alfagress og sy av kanter, lage engelsk og tysk forkant og lage vulster med treull"
+    },
+    {
+     "kode": "KM7931",
+     "tekst": "utforske og gjøre rede for ulike materialer og møbelstoffer, deres sammensetning, egnethet og anvendelsesområder og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7926",
+     "tekst": "utforme tilskjæringsskjema, lage maler, vurdere materialets kvaliteter ut fra ønsket resultat og bærekraftig ressursutnyttelse og anvende disse vurderingene ved tilskjæring"
+    },
+    {
+     "kode": "KM7929",
+     "tekst": "legge overstopp med ull, krøllhår og lerret"
+    },
+    {
+     "kode": "KM7928",
+     "tekst": "stoppe og trekke ørelappstol, sofa og andre møbler i tekstil og møbelhud"
+    },
+    {
+     "kode": "KM7924",
+     "tekst": "stoppe og trekke møbler med fast sete og rygg med og uten delinger, og møbler med løse puter og kapper"
+    },
+    {
+     "kode": "KM7911",
+     "tekst": "stoppe møbler med skumplast"
+    },
+    {
+     "kode": "KM7923",
+     "tekst": "ta mål, sy og montere gardiner, puter, varetrekk og andre interiørprodukter i tekstil"
+    },
+    {
+     "kode": "KM7918",
+     "tekst": "trekke dypheftede møbler"
+    },
+    {
+     "kode": "KM7922",
+     "tekst": "velge og bruke ulike sømteknikker for hånd og med maskin ut fra materiale og produkt og gjøre rede for hvordan ulike valg kan påvirke ønsket resultat"
+    },
+    {
+     "kode": "KM7921",
+     "tekst": "anvende kunnskap om stilhistorie ved restaurering av møbler i forskjellige stilarter"
+    },
+    {
+     "kode": "KM7920",
+     "tekst": "vurdere tilstand på stoppede møbler og veilede kunder om reparasjon og restaurering, og gjøre rede for hvordan ulike valg påvirker kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7925",
+     "tekst": "vurdere og beregne material- og tidsbruk, fastsette pris på produkter og tjenester i eget arbeid og gjøre rede for hvordan ulike valg kan påvirke metode, materialer, tidsbruk, pris og holdbarhet"
+    },
+    {
+     "kode": "KM7919",
+     "tekst": "velge possementer og tekstile tilbehør tilpasset møbelets stil og bruksområde"
+    },
+    {
+     "kode": "KM7917",
+     "tekst": "trekke vegger med tekstil"
+    },
+    {
+     "kode": "KM7916",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr og arbeide i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7915",
+     "tekst": "presentere og begrunne ideer til møbeltapetsererprodukter i samsvar med estetiske normer og kundenes behov og gjøre rede for hvordan ulike valg påvirker holdbarhet og kvalitet"
+    },
+    {
+     "kode": "KM7914",
+     "tekst": "utforske og anvende kunnskap om tekstiltrender og sette eget arbeid inn i en møbelfaglig historisk sammenheng"
+    },
+    {
+     "kode": "KM7913",
+     "tekst": "bruke fagspråk i kommunikasjon med kolleger, kunder og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM7912",
+     "tekst": "bruke digitale ressurser til å dokumentere, presentere og markedsføre egne produkter og tjenester i møbeltapetsererfaget"
+    },
+    {
+     "kode": "KM7909",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7932",
+     "tekst": "velge hensiktsmessige ergonomiske arbeidsstillinger i arbeidet på arbeidsplassen"
+    },
+    {
+     "kode": "KM7933",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i møbeltapetsererfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i møbeltapetsererfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i møbeltapetsererfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
+   ]
+  }
+ ]
+}

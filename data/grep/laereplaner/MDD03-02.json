@@ -1,0 +1,73 @@
+{
+ "kode": "MDD03-02",
+ "tittel": "Læreplan i lytting",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV261",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD3Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2807",
+     "tekst": "bruke fagbegreper og vise grunnleggende musikkteoretisk forståelse i beskrivelse av klingende musikk"
+    },
+    {
+     "kode": "KM2802",
+     "tekst": "gjenkjenne, utføre og utforske grunnleggende rytmiske, melodiske og harmoniske elementer i klingende musikk"
+    },
+    {
+     "kode": "KM2803",
+     "tekst": "lese og notere musikk ved bruk av grunnleggende lese- og notasjonsteknikker og ved bruk av digitale verktøy"
+    },
+    {
+     "kode": "KM2804",
+     "tekst": "bruke ulike lyttestrategier i møte med klingende musikk"
+    },
+    {
+     "kode": "KM2805",
+     "tekst": "beskrive og reflektere over kjennetegn ved musikk fra ulike sjangre"
+    },
+    {
+     "kode": "KM2806",
+     "tekst": "gjøre rede for og drøfte estetiske virkemidler og musikkopplevelser i møte med klingende musikk, og reflektere over musikkens betydning for opplevelse av identitet i ulike kulturelle kontekster"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i lytting. Elevene viser og utvikler kompetanse i lytting når de utfører ulike rytmiske, melodiske og harmoniske elementer i musikk, og når de reflekterer over sammenhenger mellom klingende og notert musikk og egen praktisk utføring. De viser og utvikler også kompetanse når de forstår og bruker musikkfaglige begreper og symboler, musikkteori og notasjon for å uttrykke mening i musikk innenfor ulike sjangerkulturer. Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene ta i bruk ulike strategier og læringsressurser når de arbeider med faget selvstendig og sammen med andre.",
+    "Læreren skal legge til rette for at elevene utvikler lytteferdigheter i arbeid med musikk innenfor ulike sjangerkulturer. Læreren skal være i dialog med elevene om utviklingen deres i å tilegne seg kunnskaper om hvordan musikkens elementer blir brukt i klingende musikk, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å videreutvikle musikklitterasitet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i lytting ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer utføring av praktiske gehørferdigheter, forståelse av musikkteori, refleksjon og kritisk tenkning, i kjente og ukjente situasjoner. Læreren skal sette karakter i lytting basert på kompetansen eleven har vist gjennom å gi uttrykk for gehøret sitt og gjennom å bruke musikkteoretiske fagbegreper, notasjon og auditiv analyse."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Lytting: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Lytting: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Lytting: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

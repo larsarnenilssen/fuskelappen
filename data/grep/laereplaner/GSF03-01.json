@@ -1,0 +1,120 @@
+{
+ "kode": "GSF03-01",
+ "tittel": "Læreplan i glassliperfaget",
+ "spraak": "nob",
+ "fastsatt": "2025-06-24",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV970",
+   "tittel": "Glassliperfaget",
+   "fag": [
+    "GSF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12655",
+     "tekst": "utvikle, planlegge, gjennomføre, presentere, vurdere og dokumentere eget faglig arbeid"
+    },
+    {
+     "kode": "KM12670",
+     "tekst": "planlegge eget arbeid med tanke på optimal utnyttelse av de tilgjengelige ressursene i samsvar med produksjonsplaner, beskrivelser og instruksjoner"
+    },
+    {
+     "kode": "KM12664",
+     "tekst": "utforske ulike foredlingsteknikker, glassmaterialers egenskaper og bruksområder og anvende kunnskap om dette i eget arbeid"
+    },
+    {
+     "kode": "KM12656",
+     "tekst": "merke, grovslipe, finslipe og polere rette og buede skjær til ulike typer mønstre"
+    },
+    {
+     "kode": "KM12657",
+     "tekst": "grovslipe, finslipe og polere fasetter"
+    },
+    {
+     "kode": "KM12658",
+     "tekst": "utføre boring i glassprodukter"
+    },
+    {
+     "kode": "KM12674",
+     "tekst": "gjøre rede for og anvende ulike teknikker form varm- og kaldspregning av produkter"
+    },
+    {
+     "kode": "KM12659",
+     "tekst": "utføre kaldsprengning og planering av bunn og topp"
+    },
+    {
+     "kode": "KM12662",
+     "tekst": "utføre enkel gravering og gjøre rede for hvordan ulike valg påvirker produksjon og design"
+    },
+    {
+     "kode": "KM12660",
+     "tekst": "utføre dreiing og annet vedlikehold av jern-, diamant- og steinskiver og andre hjelpemidler"
+    },
+    {
+     "kode": "KM12661",
+     "tekst": "anvende sandblåsing ut fra valgt materiale og ønsket utforming og begrunne valg av verktøy og utstyr"
+    },
+    {
+     "kode": "KM12672",
+     "tekst": "utføre saging med diamantsag og håndholdt verktøy"
+    },
+    {
+     "kode": "KM12671",
+     "tekst": "beskrive hvordan nedkjølingsprosessen kan påvirke arbeidet med foredling av glass og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM12673",
+     "tekst": "beskrive hvordan ulike farger i glass påvirker nedkjølingsprosessen og bruke denne kunnskapen i valg av teknikk i eget arbeid"
+    },
+    {
+     "kode": "KM12665",
+     "tekst": "vurdere skader og tiltak for å reparere og restaurere glassprodukter og begrunne valg knyttet til gjenbruk og holdbarhet"
+    },
+    {
+     "kode": "KM12663",
+     "tekst": "gjøre rede for fremstilling av glass i glassverkstedet, og ulike teknikker som å støpe, blåse i form og å friblåse"
+    },
+    {
+     "kode": "KM12666",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM12667",
+     "tekst": "vurdere miljøeffektene av foredling av glass og gjøre rede for hvordan utførelse, gjenbruk og avfallshåndtering påvirker helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM12675",
+     "tekst": "gjøre rede for digitale verktøy som kan brukes til design og utforming av produkter"
+    },
+    {
+     "kode": "KM12668",
+     "tekst": "bruke og vedlikeholde maskiner, verktøy og utstyr, holde orden i verksted og på egen arbeidsplass og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM12669",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i glassliperfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i glassliperfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i glassliperfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
+   ]
+  }
+ ]
+}

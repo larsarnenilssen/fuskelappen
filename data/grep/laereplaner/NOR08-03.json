@@ -1,0 +1,275 @@
+{
+ "kode": "NOR08-03",
+ "tittel": "Læreplan i morsmål for språklige minoriteter",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1185",
+   "tittel": "Kompetansemål og vurdering nivå 1",
+   "fag": [
+    "NOR8Z04",
+    "NOR8Z05",
+    "NOR8Z06",
+    "NOR8Z07",
+    "NOR8Z08",
+    "NOR8Z09",
+    "NOR8Z10",
+    "NOR8Z11",
+    "NOR8Z12",
+    "NOR8Z13",
+    "NOR8Z14",
+    "NOR8Z15",
+    "NOR8Z16",
+    "NOR8Z17",
+    "NOR8Z18",
+    "NOR8Z19"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15107",
+     "tekst": "samtale om kjente emner, ta ordet etter tur og gi tilbakemeldinger på andres ytringer"
+    },
+    {
+     "kode": "KM15108",
+     "tekst": "lytte til, forstå og gjengi innhold i egnede tekster og bearbeide tekster gjennom lek og dramatisering"
+    },
+    {
+     "kode": "KM15109",
+     "tekst": "utvikle et grunnleggende faglig ordforråd og forstå og bruke ord og begreper som er sentrale for trinnets lærestoff"
+    },
+    {
+     "kode": "KM15110",
+     "tekst": "kjenne til grunnleggende grammatiske begreper og bruke dem til å snakke om morsmålets grunnleggende strukturer, og om likheter og forskjeller mellom morsmålet og norsk"
+    },
+    {
+     "kode": "KM15111",
+     "tekst": "lære seg å lese på morsmålet og forstå sammenhengen mellom talespråk og skriftspråk"
+    },
+    {
+     "kode": "KM15112",
+     "tekst": "utvikle leseglede gjennom å lese egnede tekster med sammenheng og forståelse og reflektere over innholdet"
+    },
+    {
+     "kode": "KM15113",
+     "tekst": "kjenne til noen grunnleggende regler for tegnsetting og rettskriving"
+    },
+    {
+     "kode": "KM15114",
+     "tekst": "skrive enkle fortellende og beskrivende tekster og utforme enkle sammensatte tekster"
+    },
+    {
+     "kode": "KM15115",
+     "tekst": "bruke grunnleggende tekstbehandlingsprogram"
+    },
+    {
+     "kode": "KM15116",
+     "tekst": "bruke flerspråklige digitale læringsressurser og digitale ressurser på morsmål og norsk i kommunikasjon, og kjenne til grunnleggende regler for nettvett"
+    },
+    {
+     "kode": "KM15117",
+     "tekst": "samtale om viktige høytider, tradisjoner og skikker i land der morsmålet brukes, og i Norge"
+    },
+    {
+     "kode": "KM15118",
+     "tekst": "reflektere over sin egen flerspråklige situasjon og språklige utvikling i et flerkulturelt samfunn"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i morsmål for språklige minoriteter på nivå 1 når de utforsker og bruker morsmålet i lek og samhandling i ulike sammenhenger, både i dagligdagse situasjoner og i faglige kontekster. Videre viser og utvikler elevene kompetanse når de viser at de forstår sammenhengen mellom språklyd og skrift, og når de leser og skriver tekster på morsmålet.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å la elevene prøve seg fram i aktiv og kreativ læring av muntlig og skriftlig språk. Læreren skal legge til rette for situasjoner der elevene kan bruke flerspråklig kompetanse på ulike måter, og reflektere over verdien av egen flerspråklighet. Videre skal læreren legge til rette for at elevene får reflektere over og samtale om egne og andres tekster. Læreren og elevene skal være i dialog om elevenes utvikling i morsmål for språklige minoriteter. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledingen for å utvikle kompetanse i eget morsmål og forbedre forutsetningene for å lære norsk."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1186",
+   "tittel": "Kompetansemål og vurdering nivå 2",
+   "fag": [
+    "NOR8Z20",
+    "NOR8Z21",
+    "NOR8Z22",
+    "NOR8Z23",
+    "NOR8Z24",
+    "NOR8Z25",
+    "NOR8Z26",
+    "NOR8Z27",
+    "NOR8Z28",
+    "NOR8Z29",
+    "NOR8Z30",
+    "NOR8Z31",
+    "NOR8Z32",
+    "NOR8Z33",
+    "NOR8Z34",
+    "NOR8Z35"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15119",
+     "tekst": "delta i samtaler og diskusjoner, begrunne egne synspunkter og gi konstruktive tilbakemeldinger på andres synspunkter"
+    },
+    {
+     "kode": "KM15120",
+     "tekst": "lytte til, forstå og gjengi innhold i egnede tekster"
+    },
+    {
+     "kode": "KM15121",
+     "tekst": "bruke ord og begreper som er sentrale for fagstoff på trinnet og gjengi innholdet i faglige tekster"
+    },
+    {
+     "kode": "KM15122",
+     "tekst": "tilpasse språk til samtalepartner og bruke ulike tiltaleformer"
+    },
+    {
+     "kode": "KM15123",
+     "tekst": "bruke fagspråk for å samtale om sentrale likheter og ulikheter mellom morsmålet og norsk"
+    },
+    {
+     "kode": "KM15124",
+     "tekst": "bruke ordbøker og andre oppslagsverk"
+    },
+    {
+     "kode": "KM15125",
+     "tekst": "lese og forstå noen egnede litterære tekster i ulike sjangre, gjenkjenne noen språklige virkemidler og reflektere rundt og sammenligne ulike tekster"
+    },
+    {
+     "kode": "KM15126",
+     "tekst": "lese og forstå ulike fagtekster og kjenne til og benytte ulike lesestrategier"
+    },
+    {
+     "kode": "KM15127",
+     "tekst": "kjenne til sentrale regler for rettskriving og tegnsetting på morsmålet"
+    },
+    {
+     "kode": "KM15128",
+     "tekst": "skrive tekster i ulike sjangre og bearbeide tekster etter tilbakemeldinger"
+    },
+    {
+     "kode": "KM15129",
+     "tekst": "orientere seg i faglige kilder og vise til kilder i egne tekster"
+    },
+    {
+     "kode": "KM15130",
+     "tekst": "bruke digitale ressurser på morsmålet og på norsk i kommunikasjon og følge regler for personvern"
+    },
+    {
+     "kode": "KM15131",
+     "tekst": "reflektere over sin egen og andres flerspråklige situasjon og språklige utvikling i et flerkulturelt samfunn"
+    },
+    {
+     "kode": "KM15132",
+     "tekst": "kjenne til grunnleggende sider ved kulturen i land der morsmålet brukes, og sammenligne med norsk kultur"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i morsmål for språklige minoriteter på nivå 2 når de utvikler ordforråd og begrepsapparat på morsmålet, og når de uttrykker seg muntlig og skriftlig i spontane og forberedte situasjoner. De viser og utvikler også kompetanse når de gir og får tilbakemeldinger på muntlige og skriftlige tekster ut fra kriterier. Elevene viser og utvikler også kompetanse når de leser tekster og reflekterer over innhold og form og over sammenhengen mellom språk, kultur og identitet.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene være aktive og kreative i praktisk arbeid, samtaler og meningsutvekslinger. Læreren skal legge til rette for situasjoner der elevene kan reflektere over verdien av sin egen flerspråklighet og flerkulturelle identitet og der de kan bruke sin flerspråklige kompetanse på ulike måter. Læreren og elevene skal være i dialog om elevenes utvikling i morsmål for språklige minoriteter. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetanse i morsmålet og forbedre forutsetningene for å lære norsk."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1187",
+   "tittel": "Kompetansemål og vurdering nivå 3",
+   "fag": [
+    "NOR8Z36",
+    "NOR8Z37",
+    "NOR8Z38",
+    "NOR8Z39",
+    "NOR8Z40",
+    "NOR8Z41",
+    "NOR8Z42",
+    "NOR8Z43",
+    "NOR8Z44",
+    "NOR8Z45",
+    "NOR8Z46",
+    "NOR8Z47",
+    "NOR8Z48",
+    "NOR8Z49",
+    "NOR8Z50",
+    "NOR8Z51"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15133",
+     "tekst": "føre faglige samtaler, begrunne egne meninger og argumentere saklig i diskusjoner"
+    },
+    {
+     "kode": "KM15134",
+     "tekst": "bruke et bredt faglig ordforråd, forklare faglige begreper, gjengi innholdet i faglige tekster, og samtale om emner og fagstoff på trinnet"
+    },
+    {
+     "kode": "KM15135",
+     "tekst": "utforske hvordan språk brukes i ulike sosiale sammenhenger"
+    },
+    {
+     "kode": "KM15136",
+     "tekst": "bruke fagspråk for å beskrive morsmålet og sammenligne det med norsk"
+    },
+    {
+     "kode": "KM15137",
+     "tekst": "reflektere rundt egen språklæring på morsmålet og på norsk"
+    },
+    {
+     "kode": "KM15138",
+     "tekst": "lese, tolke og reflektere over innhold og form i skjønnlitterære tekster"
+    },
+    {
+     "kode": "KM15139",
+     "tekst": "forstå innholdet i og kunne samtale om fagtekster"
+    },
+    {
+     "kode": "KM15140",
+     "tekst": "bruke varierte og hensiktsmessige lesestrategier i arbeid med tekster i ulike sjangre"
+    },
+    {
+     "kode": "KM15141",
+     "tekst": "skrive tekster i ulike sjangre, vurdere og revidere tekster etter tilbakemelding og gi tilbakemelding på andres tekster"
+    },
+    {
+     "kode": "KM15142",
+     "tekst": "bruke og vurdere flerspråklige digitale læringsressurser og nettsteder"
+    },
+    {
+     "kode": "KM15143",
+     "tekst": "planlegge og utforme ulike digitale tekster og bruke regler for nettvett"
+    },
+    {
+     "kode": "KM15144",
+     "tekst": "utforske og reflektere over sammenhengen mellom språk, kultur og identitet både i Norge og i land der morsmålet brukes"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i morsmål for språklige minoriteter på nivå 3 når de leser kortere og lengre tekster i ulike sjangre, samtaler om form og innhold og utforsker tekstenes kontekster. Elevene viser og utvikler også kompetanse i faget når de bruker fagspråk og når de reflekterer, eksperimenterer og argumenterer muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i faget når de bruker kilder kritisk, anvender hensiktsmessige læringsstrategier og bruker flerspråklige digitale hjelpemidler. De viser og utvikler også kompetanse i morsmålet når de reflekter over sammenhengen mellom språk, kultur og identitet i et flerkulturelt og mangfoldig samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene være aktive og kreative i praktisk arbeid, samtaler og meningsutvekslinger. Læreren skal legge til rette for situasjoner der elevene kan reflektere over verdien av sin egen flerspråklighet og der de får vist sin flerspråklige kompetanse på ulike måter. Læreren skal legge til rette for at elevene kan bearbeide egne muntlige og skriftlige tekster etter kriterier og etter tilbakemeldinger fra andre. Læreren og elevene skal være i dialog om elevens utvikling i morsmål for språklige minoriteter. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetanse i eget morsmål og forbedre forutsetningene for å lære norsk."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Det gis ikke vurdering med karakter i opplæring etter læreplan i morsmål for språklige minoriteter.",
+    "Morsmålsopplæring er en form for særskilt språkopplæring (jf. Opplæringslovens §2-8 og §3-12) som om nødvendig kan tilbys elever i grunnskolen og videregående opplæring med annet morsmål enn norsk eller samisk. Læreplan i morsmål for språklige minoriteter er en nivåbasert overgangsplan som kan benyttes i tillegg til særskilt norskopplæring til elevene har tilstrekkelige ferdigheter i norsk til å følge den vanlige opplæringen i skolen."
+   ]
+  }
+ ]
+}

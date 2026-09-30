@@ -1,0 +1,132 @@
+{
+ "kode": "BNT03-02",
+ "tittel": "Læreplan i vg3 buntmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV641",
+   "tittel": "Kompetansemål og vurdering vg3 buntmakerfaget",
+   "fag": [
+    "BNT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7716",
+     "tekst": "planlegge, gjennomføre og dokumentere egen arbeidsprosess fra idéskisse til ferdig produkt"
+    },
+    {
+     "kode": "KM7724",
+     "tekst": "vurdere og velge materialer og teknikker ut fra bestillinger, økonomiske rammer, frister og ressursforvaltning"
+    },
+    {
+     "kode": "KM7723",
+     "tekst": "vurdere, sortere og klargjøre løsskinn ved å markere grotzen, svanger, kors, barflekker og hårfeil"
+    },
+    {
+     "kode": "KM7720",
+     "tekst": "beregne flateinnhold og sømtap og svinn ved rykking, og beregne antall rykk, rykklengde og rykkvinkel som skal brukes i hvert enkelt tilfelle"
+    },
+    {
+     "kode": "KM7734",
+     "tekst": "gjøre rede for beredning, farging, håring og lengde på ulike skinn og kunne beregne materialforbruk for ulike skinn og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7736",
+     "tekst": "anbrakke og spikre, overspikre, snittspikre og kilespikre ulike skinn og modeller"
+    },
+    {
+     "kode": "KM7737",
+     "tekst": "ta mål, lage og tilpasse mønstre og foreta innprøving på kunde"
+    },
+    {
+     "kode": "KM7733",
+     "tekst": "velge og anvende ulike tradisjonelle håndsømsteknikker"
+    },
+    {
+     "kode": "KM7718",
+     "tekst": "bruke ulike rykketeknikker, som å rykke inn og ut, utføre trapperykking og svingrykking, og forklare forskjellen på A-, V-, W- og M-rykk"
+    },
+    {
+     "kode": "KM7735",
+     "tekst": "velge og bruke ulike gallonerings- og sammenføyingsteknikker, som luftgallonering og gallonering med inn- og utrykking"
+    },
+    {
+     "kode": "KM7722",
+     "tekst": "forsette og skjøte skinn ved påkasting og sakketeknikker"
+    },
+    {
+     "kode": "KM7725",
+     "tekst": "renskjære og ferdigstille pelsplagg med underarbeid, lukning, støttestoffer, fôr og andre tekstiler og skinntyper, som semsket og nappaskinn"
+    },
+    {
+     "kode": "KM7732",
+     "tekst": "vurdere gjenbruksmulighetene på eldre plagg før gjennomføring av rens, reparasjoner, vedlikehold og omsøm, og gjøre rede for oppbevaring av pelsprodukter"
+    },
+    {
+     "kode": "KM7728",
+     "tekst": "velge og bruke kjemikalier i tilvirking av pelsprodukter og gjøre rede for hvordan utførelse, gjenbruk og avfallshåndtering påvirker helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7731",
+     "tekst": "veilede kunder i valg av materialer, passform og design"
+    },
+    {
+     "kode": "KM7730",
+     "tekst": "bruke fagspråk i kommunikasjon med kunder og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM7726",
+     "tekst": "presentere og markedsføre egne produkter og produkter ut fra bestillinger, og gjøre rede for hvordan ulike valg av materiale kan påvirke produktets pris, design og varighet"
+    },
+    {
+     "kode": "KM7719",
+     "tekst": "velge og bruke verktøy, pelsmaskin og andre symaskiner i produksjon, foreta enkle justeringer og vedlikehold av disse og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet på verkstedet"
+    },
+    {
+     "kode": "KM7727",
+     "tekst": "gjøre rede for tradisjoner, trender og særpreg i buntmakerfaget og bruke kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7721",
+     "tekst": "vurdere og artsbestemme pelsdyr og gjøre rede for dyrenes opprinnelsesland"
+    },
+    {
+     "kode": "KM7729",
+     "tekst": "gjøre rede for etikk og dyrevelferd i pelsdyrhold, forklare frednings- og fangstbestemmelser og ivareta intensjonen i bestemmelsen i eget arbeid"
+    },
+    {
+     "kode": "KM7717",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom produktvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7738",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7739",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 buntmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 buntmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 buntmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på fem til sju virkedager."
+   ]
+  }
+ ]
+}

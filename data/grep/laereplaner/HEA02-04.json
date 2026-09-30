@@ -1,0 +1,246 @@
+{
+ "kode": "HEA02-04",
+ "tittel": "Læreplan i vg2 helsearbeiderfag",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV366",
+   "tittel": "Kompetansemål og vurdering helsefremmende arbeid",
+   "fag": [
+    "HEA2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3859",
+     "tekst": "planlegge, gjennomføre og vurdere tiltak som øker pasienters og brukeres motivasjon til å ivareta egen helse og livskvalitet"
+    },
+    {
+     "kode": "KM3889",
+     "tekst": "gjøre rede for menneskers livsløp og helseutfordringer hos barn, unge og eldre"
+    },
+    {
+     "kode": "KM3887",
+     "tekst": "forklare hva allmenntilstand er, gjøre rede for de vanligste tegnene og symptomene på sykdommer og skader og gjenkjenne sykdomsforverring"
+    },
+    {
+     "kode": "KM3888",
+     "tekst": "gjøre rede for de vanligste sykdommene hos barn, unge og eldre, foreslå tiltak og delta i grunnleggende sykepleie"
+    },
+    {
+     "kode": "KM3892",
+     "tekst": "gjøre rede for de mest brukte legemiddelgruppene, forklare administrasjonsformer og de vanligste virkningene og bivirkningene"
+    },
+    {
+     "kode": "KM3884",
+     "tekst": "gjøre rede for aldringsprosesser og eldres behov for omsorg og sykepleie"
+    },
+    {
+     "kode": "KM3895",
+     "tekst": "forklare hva hverdagsmestring, habilitering og rehabilitering er, og gi eksempler på forebyggende og helsefremmende tiltak"
+    },
+    {
+     "kode": "KM3890",
+     "tekst": "drøfte betydningen av sosiale nettverk og foreslå tiltak for å forebygge ensomhet og psykiske lidelser"
+    },
+    {
+     "kode": "KM3881",
+     "tekst": "beskrive symptomer på psykiske lidelser og rusmisbruk hos pasienter og brukere"
+    },
+    {
+     "kode": "KM3882",
+     "tekst": "beskrive symptomer på underernæring og feilernæring og foreslå forebyggende og behandlende tiltak"
+    },
+    {
+     "kode": "KM3880",
+     "tekst": "planlegge, tilberede og tilrettelegge måltider i tråd med råd fra helsemyndighetene"
+    },
+    {
+     "kode": "KM3879",
+     "tekst": "ivareta hygiene i tråd med gjeldende retningslinjer og foreslå smitteverntiltak"
+    },
+    {
+     "kode": "KM3883",
+     "tekst": "utføre førstehjelp etter gjeldende retningslinjer"
+    },
+    {
+     "kode": "KM3885",
+     "tekst": "beskrive hva helhetlig omsorg og sykepleie innebærer for alvorlig syke, døende og deres pårørende"
+    },
+    {
+     "kode": "KM3891",
+     "tekst": "gjøre rede for hva miljøarbeid er, og foreslå målrettede tiltak"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i helsefremmende arbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i helsefremmende arbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i helsefremmende arbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i helsefremmende arbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV367",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "HEA2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3894",
+     "tekst": "beskrive ulike kommunikasjons- og relasjonsferdigheter og vise hvordan slike ferdigheter kan fremme trygghet og tillit"
+    },
+    {
+     "kode": "KM3862",
+     "tekst": "drøfte betydningen av tverrfaglig samarbeid og helhetlig pasientforløp"
+    },
+    {
+     "kode": "KM3860",
+     "tekst": "drøfte hva respekt og toleranse for andres kulturer og tradisjoner, livssyn og sosiale status innebærer"
+    },
+    {
+     "kode": "KM3877",
+     "tekst": "vise empati og reflektere over egne holdninger og atferd og hva det vil si å vise endringsvilje"
+    },
+    {
+     "kode": "KM3893",
+     "tekst": "forklare forskjellen på subjektiv og objektiv observasjon og rapportering og drøfte betydningen av korrekt rapportering, pasientsikkerhet og anonymitet"
+    },
+    {
+     "kode": "KM3861",
+     "tekst": "gjøre rede for regelverk om taushetsplikt og personvern og drøfte hva dette innebærer for yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3878",
+     "tekst": "gjøre rede for strategier for konflikthåndtering og forebygge konflikter i praksis"
+    },
+    {
+     "kode": "KM3876",
+     "tekst": "beskrive digitale kommunikasjonsverktøy som kan brukes i samhandling med pasienter, brukere, pårørende og helsepersonell"
+    },
+    {
+     "kode": "KM3875",
+     "tekst": "reflektere over bruken av tvang og makt og gjøre rede for gjeldende regelverk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV368",
+   "tittel": "Kompetansemål og vurdering yrkesliv i helsearbeiderfag",
+   "fag": [
+    "HEA2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3869",
+     "tekst": "reflektere over hva det vil si å være en profesjonell helsefagarbeider"
+    },
+    {
+     "kode": "KM3872",
+     "tekst": "forklare hva pasient- og brukermedvirkning innebærer og bruke dette i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3866",
+     "tekst": "gjøre rede for gjeldende regelverk om kvalitet i helse- og omsorgstjenesten og drøfte hva faglig forsvarlig og omsorgsfull helsehjelp innebærer"
+    },
+    {
+     "kode": "KM3865",
+     "tekst": "gjøre rede for hva yrkesetikk er og reflektere over etiske problemstillinger"
+    },
+    {
+     "kode": "KM3863",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM3870",
+     "tekst": "gjøre rede for ulike hjelpemidler og velferdsteknologi som kan bidra til selvstendighet, og som kan opprettholde funksjoner i dagliglivet"
+    },
+    {
+     "kode": "KM3868",
+     "tekst": "gjøre rede for gjeldende regelverk for håndtering av legemidler og helsearbeiderens ansvar og rolle"
+    },
+    {
+     "kode": "KM3886",
+     "tekst": "bruke hjelpemidler og teknologi for å forbedre og effektivisere arbeidet"
+    },
+    {
+     "kode": "KM3864",
+     "tekst": "beskrive prosedyrer for helse, miljø og sikkerhet og bruk av kvalitetssystemer"
+    },
+    {
+     "kode": "KM3871",
+     "tekst": "forklare hvordan frivillige organisasjoner kan være en ressurs i helse- og omsorgstjenesten"
+    },
+    {
+     "kode": "KM3896",
+     "tekst": "vurdere hvordan man kan gjøre miljøbevisste valg i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3867",
+     "tekst": "gjøre rede for ergonomiske prinsipper og bruke disse i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3873",
+     "tekst": "gjøre rede for prinsippene for universell utforming i forbindelse med yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3874",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i helsearbeiderfag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i helsearbeiderfag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i helsearbeiderfag ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i helsearbeiderfag basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helsefremmende arbeid: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i helsearbeiderfag: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Helsefremmende arbeid, kommunikasjon og samhandling og yrkesliv i helsearbeiderfag: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Helsefremmende arbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i helsearbeiderfag: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Helsefremmende arbeid, kommunikasjon og samhandling og yrkesliv i helsearbeiderfag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "kode": "NAB01-03",
+ "tittel": "Læreplan i vg1 naturbruk",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV247",
+   "tittel": "Kompetansemål og vurdering naturbasert produksjon og tjenesteyting",
+   "fag": [
+    "NAB1Z03"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2655",
+     "tekst": "stelle planter basert på kunnskaper om artenes biologi og kretsløpene i naturen"
+    },
+    {
+     "kode": "KM2674",
+     "tekst": "stelle dyr eller fisk med respekt for etiske retningslinjer og kunnskaper om dyrevelferd, dyrehelse og artenes biologi"
+    },
+    {
+     "kode": "KM2672",
+     "tekst": "utføre arbeidsoppgaver i ulike deler av verdikjeden basert på gjeldende regler og standarder"
+    },
+    {
+     "kode": "KM2673",
+     "tekst": "klassifisere og presentere et utvalg av arter og materialer og velge materialer ut fra arbeidsoppdrag og materialenes egenskaper"
+    },
+    {
+     "kode": "KM2671",
+     "tekst": "følge bruksanvisning og bruke manual for utstyr som benyttes i produksjonen, og foreta enkelt ettersyn, vedlikehold og enkle reparasjoner"
+    },
+    {
+     "kode": "KM2670",
+     "tekst": "prøve ut driftsmetoder og vurdere dem opp mot tradisjon, etikk, kvalitetskrav og miljøkonsekvenser"
+    },
+    {
+     "kode": "KM2669",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldende bestemmelser for helse, miljø og sikkerhet og vurdere risiko"
+    },
+    {
+     "kode": "KM2665",
+     "tekst": "velge og bruke analoge og digitale verktøy til planlegging og gjennomføring av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM2668",
+     "tekst": "foreta enkle beregninger av råvare- og materialforbruk, innsatsfaktorer og utbytte"
+    },
+    {
+     "kode": "KM2667",
+     "tekst": "samle, tolke og bruke data tilknyttet arbeidsoppgaver i naturbruk og tolke kilder og observasjoner kritisk"
+    },
+    {
+     "kode": "KM2664",
+     "tekst": "utføre enkel bearbeiding av råstoff"
+    },
+    {
+     "kode": "KM2666",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i naturbasert produksjon og tjenesteyting når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i naturbasert produksjon og tjenesteyting. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturbasert produksjon og tjenesteyting ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i naturbasert produksjon og tjenesteyting basert på kompetansen elevene viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Elever som har opplæring på fartøy i vg1, må dokumentere at de har gjennomført grunnleggende sikkerhetsopplæring i tråd med krav fra Sjøfartsdirektoratet."
+   ]
+  },
+  {
+   "kode": "KV248",
+   "tittel": "Kompetansemål og vurdering naturbasert næringsaktivitet",
+   "fag": [
+    "NAB1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2663",
+     "tekst": "reflektere over hvilke krav og forventninger som blir stilt til en profesjonell yrkesutøver knyttet til samhandling og deltakelse i samfunnsdebatten om natur, ressursbruk og forvaltning"
+    },
+    {
+     "kode": "KM2662",
+     "tekst": "planlegge, gjennomføre og vurdere naturbaserte næringsaktiviteter og beskrive en tilhørende verdikjede"
+    },
+    {
+     "kode": "KM2661",
+     "tekst": "utforske eksempler på lokal produkt- og næringsutvikling basert på teknologisk utvikling, lokale ressurser, kultur og tradisjon"
+    },
+    {
+     "kode": "KM2660",
+     "tekst": "presentere næringsaktiviteter, produkter eller tjenester for ulike målgrupper"
+    },
+    {
+     "kode": "KM2659",
+     "tekst": "drøfte hvordan naturbaserte produkter og tjenester kan utvikles innenfor rammen av bærekraftig utvikling og ressursforvaltning"
+    },
+    {
+     "kode": "KM2676",
+     "tekst": "beskrive og vurdere likheter og forskjeller i yrkesutøvelsen i ulike typer naturbruk"
+    },
+    {
+     "kode": "KM2658",
+     "tekst": "orientere seg i naturen ved hjelp av tradisjonelle og moderne metoder og hjelpemidler"
+    },
+    {
+     "kode": "KM2657",
+     "tekst": "velge og bruke utstyr og bekledning etter situasjon, naturforhold og klima og utføre enkelt vedlikehold på utstyret"
+    },
+    {
+     "kode": "KM2656",
+     "tekst": "vurdere risiko og utføre naturbaserte aktiviteter med hensyn til egen og andres sikkerhet"
+    },
+    {
+     "kode": "KM2675",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i naturbasert næringsaktivitet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i naturbasert næringsaktivitet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i naturbasert næringsaktivitet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i naturbasert næringsaktivitet basert på kompetansen elevene viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Naturbasert produksjon og tjenesteyting: Eleven skal ha én standpunktkarakter.",
+    "Naturbasert næringsaktivitet: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Naturbasert produksjon og tjenesteyting: Eleven skal ikke opp til eksamen.",
+    "Naturbasert næringsaktivitet: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Naturbasert produksjon og tjenesteyting: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Naturbasert næringsaktivitet: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og tjenesteyting og naturbasert næringsaktivitet: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "kode": "GVF05-01",
+ "tittel": "Læreplan i gjenvinningsfaget – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV821",
+   "tittel": "Kompetansemål og vurdering internkontroll og helse, miljø og sikkerhet",
+   "fag": [
+    "GVF5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10792",
+     "tekst": "forstå og følge virksomhetens rutiner ved uønskede hendelser"
+    },
+    {
+     "kode": "KM10793",
+     "tekst": "bruke kvalitets- og internkontrollsystem, registrere og rapportere avvik og gjennomføre risikovurdering"
+    },
+    {
+     "kode": "KM10794",
+     "tekst": "bruke verneutstyr og arbeide i tråd med gjeldende krav til helse, miljø, sikkerhet og kvalitet"
+    },
+    {
+     "kode": "KM10795",
+     "tekst": "håndtere gasser og kjemikalier i henhold til sikkerhetsdatablader"
+    },
+    {
+     "kode": "KM10797",
+     "tekst": "utarbeide og følge sikker jobb-analyser ved farlige operasjoner i henhold til gjeldende forskrifter"
+    },
+    {
+     "kode": "KM10796",
+     "tekst": "bruke materialer, teknikker og utstyr i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen internkontroll og helse, miljø og sikkerhet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen internkontroll og helse, miljø og sikkerhet. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i internkontroll og helse, miljø og sikkerhet. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV822",
+   "tittel": "Kompetansemål og vurdering regelverk og rammeverk",
+   "fag": [
+    "GVF5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10798",
+     "tekst": "utforske og bruke regelverk og tillatelser som regulerer gjenvinning og avfallhåndtering"
+    },
+    {
+     "kode": "KM10799",
+     "tekst": "beskrive avsenders ansvar ved lasting av transportør og bruke regler og retningslinjer for eksport av avfall"
+    },
+    {
+     "kode": "KM10800",
+     "tekst": "beskrive formålet med materialselskap, retursystemer og produsentansvar"
+    },
+    {
+     "kode": "KM10801",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    },
+    {
+     "kode": "KM10802",
+     "tekst": "lese og sammenfatte faglig innhold fra engelskspråklig dokumentasjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen regelverk og rammeverk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen regelverk og rammeverk. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i regelverk og rammeverk. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV823",
+   "tittel": "Kompetansemål og vurdering drift i praksis",
+   "fag": [
+    "GVF5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10803",
+     "tekst": "motta, kontrollere, klassifisere og sortere avfall etter gitte kravspesifikasjoner"
+    },
+    {
+     "kode": "KM10804",
+     "tekst": "skille farlig avfall fra øvrig avfall og deklarere og håndtere avfallet etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM10805",
+     "tekst": "håndtere og klargjøre avfallet for viderebehandling eller sluttbehandling etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM10806",
+     "tekst": "utføre operatørstyrt vedlikehold av relevante maskiner og utstyr"
+    },
+    {
+     "kode": "KM10807",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM10808",
+     "tekst": "tolke og bruke sammensatte måleenheter i praktiske sammenhenger og velge egnet måleenhet"
+    },
+    {
+     "kode": "KM10809",
+     "tekst": "bruke maskiner og utstyr til å bearbeide aktuelle materialer i tråd med gjeldende helse-, miljø- og sikkerhetsrutiner og sørge for orden og renhold på arbeidsplassen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen drift i praksis når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen drift i praksis. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i drift i praksis. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV824",
+   "tittel": "Kompetansemål og vurdering marked, økonomi og forvaltning",
+   "fag": [
+    "GVF5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10810",
+     "tekst": "beskrive og reflektere over faktorer som kan påvirke lønnsomheten i driften av avfallsanlegget, og foreslå tiltak"
+    },
+    {
+     "kode": "KM10811",
+     "tekst": "planlegge og beskrive avfallslogistikk fra kunde til sluttbehandling"
+    },
+    {
+     "kode": "KM10812",
+     "tekst": "vurdere og beskrive forbedringsmuligheter innenfor egne arbeidsområder og utarbeide forslag til løsninger"
+    },
+    {
+     "kode": "KM10813",
+     "tekst": "gjøre rede for kjemiske og fysiske egenskaper ved og håndtering av ulike typer avfall"
+    },
+    {
+     "kode": "KM10814",
+     "tekst": "innhente data fra praksisfeltet, gjøre overslag og beregninger og lage hensiktsmessige framstillinger av resultatene og presentere disse"
+    },
+    {
+     "kode": "KM10817",
+     "tekst": "planlegge kildesorteringsløsninger til ulike kundegrupper og veilede kunder i sortering og håndtering av avfall"
+    },
+    {
+     "kode": "KM10816",
+     "tekst": "vurdere den markedsmessige verdien av avfallsressursene"
+    },
+    {
+     "kode": "KM10815",
+     "tekst": "kommunisere og formidle budskap tilpasset ulike målgrupper"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen økonomi og forvaltning når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen økonomi og forvaltning. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i marked, økonomi og forvaltning. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV825",
+   "tittel": "Kompetansemål og vurdering utvikling, bærekraft og sirkulær økonomi",
+   "fag": [
+    "GVF5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10818",
+     "tekst": "reflektere over og beskrive avfallsressursenes betydning for økonomi og miljø"
+    },
+    {
+     "kode": "KM10819",
+     "tekst": "reflektere over muligheter for ombruk og gjenvinning og betydningen av bærekraftig ressursutnyttelse"
+    },
+    {
+     "kode": "KM10820",
+     "tekst": "drøfte og gjøre rede for gjenvinningsindustriens rolle i og avfallshåndteringens positive og negative virkning på klima og miljø"
+    },
+    {
+     "kode": "KM10821",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere ulike arbeidsprosesser og reflektere over hvordan ny teknologi kan påvirke arbeidsprosesser"
+    },
+    {
+     "kode": "KM10822",
+     "tekst": "utforske og presentere teknologi knyttet til eget utdanningsprogram og vurdere den i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen utvikling, bærekraft og sirkulær økonomi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen utvikling, bærekraft og sirkulær økonomi. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i bærekraft og sirkulærøkonomi. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 gjenvinningsfaget (GVF03-01). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i gjenvinningsfaget – modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 gjenvinningsfaget (GVF03-01). Alle skal opp til fagprøven som skal gjennomføres over minst 2 virkedager."
+   ]
+  }
+ ]
+}

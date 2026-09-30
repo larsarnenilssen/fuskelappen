@@ -1,0 +1,116 @@
+{
+ "kode": "TAV03-03",
+ "tittel": "Læreplan i vg3 tavlemontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV733",
+   "tittel": "Kompetansemål og vurdering vg3 tavlemontørfaget",
+   "fag": [
+    "TAV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9548",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i tavlemontørfaget individuelt og i samarbeid med andre i henhold til gjeldende regelverk, bedriftens internkontrollsystem og krav fra systemleverandører, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9565",
+     "tekst": "utføre arbeidet med hensyn til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9564",
+     "tekst": "bygge og renovere tavleløsninger beregnet for likespennings-, vekselspennings-, lavspennings- og høyspenningsanlegg og vurdere materialbruk og kvalitet på utført arbeid"
+    },
+    {
+     "kode": "KM9563",
+     "tekst": "tolke og revidere styrestrøm-, enlinje- og flerlinjeskjemaer og gjøre rede for hvordan komponenter og utstyr samhandler for å oppnå ønsket funksjon"
+    },
+    {
+     "kode": "KM9562",
+     "tekst": "montere mekaniske, elektriske og datatekniske enheter i tavler, gjøre rede for termiske forhold og lysbueproblematikk og foreslå tiltak for å hindre uønskede hendelser"
+    },
+    {
+     "kode": "KM9561",
+     "tekst": "montere vern og styrings- og overvåkingskomponenter i tavler og gjøre rede for hvordan komponentene fungerer"
+    },
+    {
+     "kode": "KM9560",
+     "tekst": "samarbeide med faglig ansvarlig i et elektroforetak og anvende spesialverktøy og påkrevd verneutstyr under arbeidet"
+    },
+    {
+     "kode": "KM9559",
+     "tekst": "utføre systematisk feilsøking og feilretting på komponenter, instrumenter, utstyr og kretser i tavleløsninger, velge måleinstrument og digitale verktøy og gjøre rede for måleinstrumentets målenøyaktighet"
+    },
+    {
+     "kode": "KM9558",
+     "tekst": "funksjonsteste og sluttkontrollere tavleløsninger i henhold til norm og kontrolldokumentasjon og gjøre rede for virkeområdet og formålet til forskrift om elektromagnetisk kompatibilitet"
+    },
+    {
+     "kode": "KM9557",
+     "tekst": "bearbeide, tilpasse og montere skinner i og utenfor tavler og montasjeutstyr i tavler, anvende spesialverktøy ved bearbeiding og tilpassing og gjøre rede for ulike kanalskinneløsninger og bruksområder"
+    },
+    {
+     "kode": "KM9556",
+     "tekst": "merke tavler, utstyr, komponenter, ledere og isolatorer i henhold til nettsystem og prosjektkrav"
+    },
+    {
+     "kode": "KM9555",
+     "tekst": "installere, endeavslutte og terminere ledning og kabel, velge forlegning, dokumentere valg av ledninger, kabel og vern og gjøre rede for metaller og materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM9554",
+     "tekst": "bygge og renovere tavleløsninger med bruk av verktøy og maskiner på en sikker måte for å oppnå kvalitets- og sikkerhetskrav, gjøre rede for farer forbundet med bruk av verktøy og maskiner og veilede kunden om sikker bruk av tavleløsningene"
+    },
+    {
+     "kode": "KM9553",
+     "tekst": "installere, programmere, konfigurere og funksjonsteste utstyr og komponenter koblet til et elektronisk kommunikasjonsnett, vurdere om datasikkerhet og personvern er ivaretatt, og gjøre rede for formålet og virkeområdet til ekomlov og -forskrift"
+    },
+    {
+     "kode": "KM9552",
+     "tekst": "utføre arbeid på tavler og utstyr til bruk i ex-områder og gjøre rede for krav til disse"
+    },
+    {
+     "kode": "KM9551",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9550",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9549",
+     "tekst": "drøfte etiske dilemmaer ved valg av komponenter og utstyr og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9566",
+     "tekst": "håndtere avfall etter eget arbeid på en bærekraftig måte og slette sensitiv digital informasjon ved avhending av utstyr og tavle, og gjøre rede for gjeldende energi- og miljøkrav"
+    },
+    {
+     "kode": "KM9567",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 tavlemontørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 tavlemontørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 tavlemontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

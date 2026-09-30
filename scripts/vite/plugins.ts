@@ -1,5 +1,5 @@
 // Lokale Vite-plugins: innhold (YAML), tokenfarger, testoppsett og data.
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
 import { Innholdsfeil, lesFil } from '../innhold/last.ts';
@@ -73,7 +73,7 @@ export function testoppsettPlugin(mode: string): Plugin {
 }
 
 /**
- * Serverer og publiserer data/ (kildestatus, skoler) og den ferdigbygde
+ * Serverer og publiserer data/ (kildestatus, skoler, læreplaner fra Grep) og den ferdigbygde
  * søkeindeksen. Filene hentes av appen som egne statiske filer.
  */
 export function dataPlugin(rot: string, mode: string): Plugin {
@@ -82,6 +82,11 @@ export function dataPlugin(rot: string, mode: string): Plugin {
     'data/skoler/vgs.json': join(rot, 'data/skoler/vgs.json'),
     'sok/indeks.json': join(rot, `.generert/sokeindeks-${mode}.json`),
   };
+  // Én fil per læreplan (avgjørelse 022). Lastes når brukeren åpner et fag.
+  const planer = join(rot, 'data/grep/laereplaner');
+  if (existsSync(planer)) {
+    for (const f of readdirSync(planer)) if (f.endsWith('.json')) filer[`data/grep/laereplaner/${f}`] = join(planer, f);
+  }
   let base = '/';
   return {
     name: 'protokollen:data',

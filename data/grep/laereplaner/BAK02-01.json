@@ -1,0 +1,172 @@
+{
+ "kode": "BAK02-01",
+ "tittel": "Læreplan i vg2 bakar og konditor",
+ "spraak": "nno",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV413",
+   "tittel": "Kompetansemål og vurdering råvare, produksjon og kvalitet",
+   "fag": [
+    "BAK2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4371",
+     "tekst": "planleggje, produsere, dokumentere og vurdere produkt ut frå resept, råvareval, produksjonsmetode og produktbeskriving"
+    },
+    {
+     "kode": "KM4356",
+     "tekst": "praktisere personleg hygiene og følgje retningslinjer for næringsmiddel- og produksjonshygiene og reflektere over konsekvensane av å bryte retningslinjene"
+    },
+    {
+     "kode": "KM4379",
+     "tekst": "kontrollere råvarekvalitet ved varemottak, vurdere om varene er leverte i samsvar med bestilling, og utføre avviksbehandling"
+    },
+    {
+     "kode": "KM4366",
+     "tekst": "bruke verneutstyr, arbeide ergonomisk riktig og reflektere over betydninga av å følgje retningslinjene for eit trygt arbeidsmiljø"
+    },
+    {
+     "kode": "KM4372",
+     "tekst": "bruke og halde ved like handverktøy, maskiner og utstyr"
+    },
+    {
+     "kode": "KM4365",
+     "tekst": "bruke ulike konserveringsmetodar og gjere greie for samanhengen mellom konservering, haldbarheit og livsvilkåra for mikroorganismar"
+    },
+    {
+     "kode": "KM4364",
+     "tekst": "gjere greie for fareanalyse og risikovurdering og forstå samanhengen mellom matborne sjukdommar og trygg mat"
+    },
+    {
+     "kode": "KM4369",
+     "tekst": "gjere bevisste val i produksjon og sal av bakar- og konditorvarer og reflektere over om produksjonen er kostnadseffektiv"
+    },
+    {
+     "kode": "KM4373",
+     "tekst": "gjere greie for korleis produksjonseigenskapane til råvarene påverkar haldbarheit, konsistens, utsjånad og smak på sluttproduktet"
+    },
+    {
+     "kode": "KM4374",
+     "tekst": "gjere greie for bakarens prosent og bruke den til å byggje opp ein resept"
+    },
+    {
+     "kode": "KM4378",
+     "tekst": "lage ulike typar brød, småbakst og søtbakst ved bruk av direkte eller indirekte deigføring, gjere greie for deigprosessen og reflektere over korleis dei ulike delane av prosessen påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM4370",
+     "tekst": "lage ulike typar laminerte deigar, framstille ulike produkt og gjere greie for kva som skjer i produkta"
+    },
+    {
+     "kode": "KM4376",
+     "tekst": "lage ulike produkt av rørte, piska og forvella massar, råmassar og mørdeig og gjere greie for kva som skil dei ulike prosessane"
+    },
+    {
+     "kode": "KM4368",
+     "tekst": "lage ulike støypte og lagdelte kaker med og utan overtrekk og dekor, og forskjellige typar fyll, og vurdere kvaliteten etter konsistens, utsjånad og smak på sluttproduktet"
+    },
+    {
+     "kode": "KM4377",
+     "tekst": "lage dessertar, konfektar, pynt og dekor og reflektere over korleis valet av råvarer og produksjonsprosess påverkar sluttproduktet"
+    },
+    {
+     "kode": "KM4375",
+     "tekst": "produsere, tilpasse og tilrå produkt til ulike grupper i samfunnet og reflektere over samanhengen mellom kosthald og helse"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget råvare, produksjon og kvalitet når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget råvare, produksjon og kvalitet. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget råvare, produksjon og kvalitet ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget råvare, produksjon og kvalitet basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV414",
+   "tittel": "Kompetansemål og vurdering bransje og arbeidsliv",
+   "fag": [
+    "BAK2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4363",
+     "tekst": "følgje gjeldande lover og forskrifter for bransjen og gjere greie for rolla til tilsynsmyndigheitene"
+    },
+    {
+     "kode": "KM4367",
+     "tekst": "gjere greie for risikofaktorar i eige arbeidsmiljø, førebyggje skadar og reflektere over føresetnader for eit godt arbeidsmiljø"
+    },
+    {
+     "kode": "KM4362",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM4380",
+     "tekst": "gjere berekraftige og etiske val ved innkjøp, produksjon og avfallshandtering og reflektere over korleis overskotsvarer kan utnyttast"
+    },
+    {
+     "kode": "KM4358",
+     "tekst": "registrere og berekne kostnader ved svinn, foreslå tiltak for å avgrense svinn og drøfte kva konsekvensar svinnet har for økonomien til verksemda"
+    },
+    {
+     "kode": "KM4361",
+     "tekst": "berekne pris og næringsinnhald i produkt for å kunne emballere og merke varene etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM4360",
+     "tekst": "klargjere og presentere produkt for sal og yte service og kundebehandling"
+    },
+    {
+     "kode": "KM4359",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og gjere greie for kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    },
+    {
+     "kode": "KM4357",
+     "tekst": "utforske nye og ukjende råvarer og reflektere over endringar i forbruksmønster"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget bransje og arbeidsliv når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer begge programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget bransje og arbeidsliv. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget bransje og arbeidsliv ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget bransje og arbeidsliv basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Råvare, produksjon og kvalitet: Eleven skal ha éin standpunktkarakter.",
+    "Bransje og arbeidsliv: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Råvare, produksjon og kvalitet og bransje og arbeidsliv: Eleven skal opp til éin tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Råvare, produksjon og kvalitet: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Bransje og arbeidsliv: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Råvare, produksjon og kvalitet og bransje og arbeidsliv: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "kode": "MUS04-02",
+ "tittel": "Læreplan i ergonomi og bevegelse",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV574",
+   "tittel": "Kompetansemål og vurdering ergonomi og bevegelse 1",
+   "fag": [
+    "MUS4Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6623",
+     "tekst": "øve på og utføre varierte bevegelsesaktiviteter alene og sammen med andre"
+    },
+    {
+     "kode": "KM6624",
+     "tekst": "gjennomføre og dokumentere egentrening som utvikler fleksibilitet, styrke og fysisk utholdenhet"
+    },
+    {
+     "kode": "KM6625",
+     "tekst": "utforske og vise musikalsk form og uttrykk gjennom bevegelse og dans"
+    },
+    {
+     "kode": "KM6626",
+     "tekst": "gjøre rede for grunnleggende arbeidsfysiologi for musikere"
+    },
+    {
+     "kode": "KM6627",
+     "tekst": "bruke mentale teknikker knyttet til psykisk utholdenhet og prestasjonsforberedelse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i ergonomi og bevegelse 1. Elevene viser og utvikler kompetanse i faget når de øver på, deltar i og samhandler i fysisk aktivitet. Elevene viser og utvikler også kompetanse når de utforsker sammenhenger mellom musikkutøvelse og fysisk og mental helse. Videre viser og utvikler elevene kompetanse når de arbeider praktisk med hvordan musikk kan bidra til å uttrykke bevegelse, og hvordan bevegelse kan bidra til å uttrykke musikk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får mulighet til å erfare bevegelsesglede i fysisk aktivitet. Læreren skal være i dialog med elevene om utviklingen deres når de utvikler fysiske ferdigheter og kroppsliggjør opplevelse av musikk, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å forstå sammenhengen mellom en fysisk aktiv livsstil med egentrening, god arbeidsfysiologi og god helse, og betydningen dette har for egen musikkutøvelse."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter ergonomi og bevegelse 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i ergonomi og bevegelse 1 basert på kompetansen elevene har vist gjennom å arbeide med varierte bevegelsesaktiviteter, vise forståelse av betydningen av god arbeidsfysiologi og god mental helse knyttet til musikkutøvelse, og vise forståelse av sammenhenger mellom musikk og kroppslige uttrykk"
+   ]
+  },
+  {
+   "kode": "KV575",
+   "tittel": "Kompetansemål og vurdering ergonomi og bevegelse 2",
+   "fag": [
+    "MUS4Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6628",
+     "tekst": "øve på og utføre varierte bevegelsesaktiviteter alene og sammen med andre"
+    },
+    {
+     "kode": "KM6631",
+     "tekst": "planlegge, gjennomføre og dokumentere egentrening med varierte bevegelsesaktiviteter som utvikler fleksibilitet, styrke og utholdenhet"
+    },
+    {
+     "kode": "KM6629",
+     "tekst": "utforske og vise musikalsk form, uttrykk og spenningsforløp gjennom varierte bevegelser"
+    },
+    {
+     "kode": "KM6630",
+     "tekst": "reflektere over betydningen kroppslig erfaring av musikk har for musikalsk forståelse og estetiske opplevelser"
+    },
+    {
+     "kode": "KM6632",
+     "tekst": "reflektere over sammenhenger mellom god fysisk helse, arbeidsfysiologi for musikere og musikkutøvelse"
+    },
+    {
+     "kode": "KM6633",
+     "tekst": "bruke mentale teknikker knyttet til psykisk utholdenhet og forberedelse til framføringssituasjoner, og reflektere over egen opplevelse av mestring"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i ergonomi og bevegelse 2. Elevene viser og utvikler kompetanse i faget når de planlegger, gjennomfører og dokumenterer egentrening. Elevene viser og utvikler også kompetanse når de utforsker sammenhenger mellom musikkutøvelse og fysisk og mental helse og når de reflekterer over og viser hvordan mental trening og arbeidsfysiologi kan brukes praktisk i egen musikkutøvelse. Videre viser og utvikler også kompetanse i faget når de arbeider praktisk, kroppslig og skapende med musikkens formelementer og spenningsforløp.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får erfare bevegelsesglede og mestringsfølelse gjennom varierte former for fysisk aktivitet og kroppslige uttrykk. Læreren skal være i dialog med elevene om utviklingen deres når de utvikler fysiske ferdigheter og kroppsliggjør opplevelse av musikk, og elevene skal få mulighet til å prøve seg fram.Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å forstå sammenhengen mellom egentrening, god arbeidsfysiologi og god helse, og betydningen dette har for egen musikkutøvelse"
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter ergonomi og bevegelse 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i ergonomi og bevegelse 2 basert på kompetansen elevene har vist gjennom å delta i varierte bevegelsesaktiviteter og -former, reflektere over sammenhenger mellom bevegelse og musikk og dokumentere egentrening, og hvordan de har vist at kunnskap om arbeidsfysiologi og mental trening er relevant for egen musikkutøvelse"
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Ergonomi og bevegelse 1: Eleven skal ha én standpunktkarakter.\nErgonomi og bevegelse 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Ergonomi og bevegelse 1: Eleven skal ikke opp til eksamen.\nErgonomi og bevegelse 2: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Ergonomi og bevegelse 1: Privatistene skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Ergonomi og bevegelse 2: Privatistene skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Privatisten i ergonomi og bevegelse 2 får godskrevet programfaget ergonomi og bevegelse 1."
+   ]
+  }
+ ]
+}

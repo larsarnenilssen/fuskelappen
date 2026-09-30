@@ -1,0 +1,100 @@
+{
+ "kode": "BKF03-02",
+ "tittel": "Læreplan i vg3 bøkkarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV634",
+   "tittel": "Kompetansemål og vurdering vg3 bøkkarfaget",
+   "fag": [
+    "BKF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7574",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM7583",
+     "tekst": "konstruere og forme ulike materialar etter gitte måldimensjonar, fasongar og ovalar"
+    },
+    {
+     "kode": "KM7585",
+     "tekst": "vurdere arbeidsmetode, utvikle, lage og tilpasse arbeidsteikningar til bøkkarprodukt"
+    },
+    {
+     "kode": "KM7576",
+     "tekst": "framstille bøkkarprodukt manuelt som enkeltprodukt og i serie og velje og bruke ulike verktøy og maskiner i framstillinga"
+    },
+    {
+     "kode": "KM7579",
+     "tekst": "demontere og montere bøkkarprodukt, skifte ut defektar ved reparasjon og velje og bruke eigna material, tettemiddel og overflatebehandling som er tilpassa bruksområdet"
+    },
+    {
+     "kode": "KM7586",
+     "tekst": "bruke eigna teknikkar, verktøy og metodar til å framstille bøkkarprodukt og gjere greie for korleis presisjon og nøyaktigheit påverkar det ønskte resultatet"
+    },
+    {
+     "kode": "KM7582",
+     "tekst": "forme metallband, føye saman band og lage og montere historiske treband til bøkkarprodukt"
+    },
+    {
+     "kode": "KM7580",
+     "tekst": "utforske og gjere greie for korleis treslag, trestruktur og spesifikk kvalitet verkar inn på funksjonen til tradisjonelle bøkkarprodukt og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM7581",
+     "tekst": "utforske tørke- og varmebehandlingsmåtar og bruke denne kunnskapen i eige arbeid og gjere greie for korleis ein bruker dei fysiske, kjemiske eigenskapane i trematerialar i ulike bøkkarprodukt"
+    },
+    {
+     "kode": "KM7589",
+     "tekst": "gjere greie for korleis gjenbruk av materialar, avfallshandtering og val av materialar kan bidra til ein berekraftig produksjon"
+    },
+    {
+     "kode": "KM7578",
+     "tekst": "berekne tid og pris på eigne produkt og tenester og vurdere samanhengen mellom materialval, produktivitet og lønnsemd"
+    },
+    {
+     "kode": "KM7587",
+     "tekst": "utvikle hjelpemiddel og verktøy til å framstille, byggje om, reparere og halde ved like bøkkarprodukt"
+    },
+    {
+     "kode": "KM7584",
+     "tekst": "utvikle, klargjere og halde ved like aktuelle maskiner og reiskapar og slipe verktøy i samsvar med helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM7575",
+     "tekst": "utforske og bruke faget si historie og eigenart til å formidle og vidareføre tradisjonell bøkkarkunnskap, ta del i utvikling av faget og rettleie kundar"
+    },
+    {
+     "kode": "KM7577",
+     "tekst": "gjere greie for og bruke gjeldande regelverk for helse, miljø og sikkerheit i alt arbeid"
+    },
+    {
+     "kode": "KM7588",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 bøkkarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 bøkkarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 bøkkarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

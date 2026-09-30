@@ -1,0 +1,116 @@
+{
+ "kode": "ASF03-02",
+ "tittel": "Læreplan i vg3 asfaltfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV504",
+   "tittel": "Kompetansemål og vurdering Vg3 asfaltfaget",
+   "fag": [
+    "ASF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5692",
+     "tekst": "planleggje produksjon, utlegging og vedlikehald av asfaltdekke, arbeide etter teikningar, beskrivingar og preaksepterte løysingar, velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM5705",
+     "tekst": "bruke og halde ved like maskiner og verktøy etter gjeldande regelverk og med omsyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5704",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, gjennomføre arbeidet i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM5702",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM5697",
+     "tekst": "kjeldesortere, vurdere moglegheita for gjenbruk, handtere spesialavfall og reflektere over konsekvensane av feilhandtering"
+    },
+    {
+     "kode": "KM5701",
+     "tekst": "utføre arbeidsvarsling i samsvar med gjeldande regelverk og vurdere kva risikofaktorar som kan påverke trafikkavviklinga"
+    },
+    {
+     "kode": "KM5700",
+     "tekst": "kommunisere med kundar, kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM5691",
+     "tekst": "lagre og laste tilslagsmateriale til asfaltproduksjon og vurdere faktorar som reduserer kvaliteten på materialet"
+    },
+    {
+     "kode": "KM5699",
+     "tekst": "produsere ulike typar asfalt med ulike typer energi, gjere greie for produksjonsprosessen frå blanding av steinmateriale og bitumen til ferdig asfalt, og laste opp asfalt"
+    },
+    {
+     "kode": "KM5698",
+     "tekst": "gjenvinne og handtere asfalt, vurdere moglegheitene for gjenbruk og reflektere over konsekvensane av feilhandtering"
+    },
+    {
+     "kode": "KM5696",
+     "tekst": "drifte og halde ved like blandeverket med omsyn til ressursutnytting og setje i verk tiltak for å hindre produksjonsstans"
+    },
+    {
+     "kode": "KM5693",
+     "tekst": "finplanere underlaget etter arbeidsordrar, teikningar og beskrivingar, vurdere fall og gjere greie for korleis kvaliteten på underlaget påverkar sluttresultatet"
+    },
+    {
+     "kode": "KM5690",
+     "tekst": "lage framdriftsplanar, bestille asfaltprodukt og utstyr og kontrollere kvalitet, volum, areal og vekt i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5695",
+     "tekst": "vurdere reinleiken og fukta på underlaget og klistre og leggje ut asfalt manuelt og maskinelt"
+    },
+    {
+     "kode": "KM5707",
+     "tekst": "halde ved like og fornye asfaltdekke"
+    },
+    {
+     "kode": "KM5694",
+     "tekst": "måle dekkedensitet, ta prøvar av asfaltmassar og analysere og dokumentere råvarene og det ferdige produktet"
+    },
+    {
+     "kode": "KM5706",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM5703",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av støy, vibrasjon, støveksponering og bruk av kjemiske komponentar"
+    },
+    {
+     "kode": "KM5708",
+     "tekst": "velje ut og bruke verne- og sikringsutstyr og vurdere konsekvensar av feilbruk"
+    },
+    {
+     "kode": "KM5709",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i Vg3 asfaltfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i Vg3 asfaltfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.'",
+    "Opplæringa i Vg3 asfaltfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre virkedagar."
+   ]
+  }
+ ]
+}

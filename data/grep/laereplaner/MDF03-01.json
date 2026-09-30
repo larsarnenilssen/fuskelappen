@@ -1,0 +1,84 @@
+{
+ "kode": "MDF03-01",
+ "tittel": "Læreplan i vg3 mediedesignfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV534",
+   "tittel": "Kompetansemål og vurdering vg3 mediedesignfaget",
+   "fag": [
+    "MDF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6241",
+     "tekst": "utvikle, tilpasse og produsere design til ulike medieflater, format, funksjonar og målgrupper"
+    },
+    {
+     "kode": "KM6242",
+     "tekst": "designe og produsere grafikk, presentasjonar og visuelle framstillingar"
+    },
+    {
+     "kode": "KM6243",
+     "tekst": "velje og bruke verktøy, metodar og teknologi i eige arbeid"
+    },
+    {
+     "kode": "KM6244",
+     "tekst": "nytte ulike teknikkar og visuelle verkemiddel i design av produkt og brukaropplevingar"
+    },
+    {
+     "kode": "KM6245",
+     "tekst": "utforske og nytte metodar for design, inspirasjon og idéutvikling, og vurdere og argumentere for val av metodar"
+    },
+    {
+     "kode": "KM6246",
+     "tekst": "vurdere eige arbeid og eiga rolle i prosjektarbeid og reflektere over korleis ein kan utvikle seg som prosjektmedarbeidar"
+    },
+    {
+     "kode": "KM6247",
+     "tekst": "planleggje og budsjettere ein designproduksjon innanfor gitte rammer for tids- og ressursbruk"
+    },
+    {
+     "kode": "KM6248",
+     "tekst": "nytte relevant fagterminologi i planlegging, gjennomføring og presentasjon av eige arbeid"
+    },
+    {
+     "kode": "KM6249",
+     "tekst": "bruke gjeldande reglar, lovverk og retningslinjer for produksjon, publisering og oppbevaring av medieprodukt, og reflektere over konsekvensane dersom regelverket ikkje blir følgt"
+    },
+    {
+     "kode": "KM6250",
+     "tekst": "bruke ulike metodar og verktøy for feilsøking i eige arbeid"
+    },
+    {
+     "kode": "KM6251",
+     "tekst": "vurdere kor truverdige og relevante ulike kjelder er, i samband med innhenting og publisering av materiale"
+    },
+    {
+     "kode": "KM6252",
+     "tekst": "gjere greie for kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har i lærebedrifta"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 mediedesignfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 mediedesignfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 mediedesignfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
+   ]
+  }
+ ]
+}

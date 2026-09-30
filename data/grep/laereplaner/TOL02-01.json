@@ -1,0 +1,204 @@
+{
+ "kode": "TOL02-01",
+ "tittel": "Læreplan i vg2 transport og logistikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV426",
+   "tittel": "Kompetansemål og vurdering bransjeteknikk",
+   "fag": [
+    "TOL2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4540",
+     "tekst": "føre personbil i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM4563",
+     "tekst": "reflektere over og vurdere risiko i ulike situasjoner knyttet til føring av personbil"
+    },
+    {
+     "kode": "KM4562",
+     "tekst": "anhuke og gi signal ved lossing og lasting etter gjeldende opplæringsplan og regelverk"
+    },
+    {
+     "kode": "KM4561",
+     "tekst": "betjene truck i klassene T1, T2 og T4 etter gjeldende opplæringsplan og regelverk"
+    },
+    {
+     "kode": "KM4560",
+     "tekst": "gjøre rede for innholdet i forskrift om landtransport av farlig gods og bruke dette til å planlegge transport av farlig gods i ulike klasser"
+    },
+    {
+     "kode": "KM8318",
+     "tekst": "gjøre rede for rutiner og konsekvenser knyttet til uhell ved håndtering av farlig gods"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i bransjeteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i bransjeteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i bransjeteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i bransjeteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Eleven må dokumentere gjennomført obligatorisk opplæring for førerkort klasse B i henhold til trafikkopplæringsforskriften.",
+    "Eleven må dokumentere gjennomført grunnopplæring i henhold til forskrift om landtransport av farlig gods."
+   ]
+  },
+  {
+   "kode": "KV427",
+   "tittel": "Kompetansemål og vurdering transport, logistikk og løfteoperasjoner",
+   "fag": [
+    "TOL2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4559",
+     "tekst": "gjøre rede for grunnleggende prinsipper for effektiv drift av lager og terminal"
+    },
+    {
+     "kode": "KM4558",
+     "tekst": "planlegge, gjennomføre og dokumentere logistikk-, transport- og løfteoppdrag etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4557",
+     "tekst": "yte service og gi kundebehandling ved ulike typer oppdrag og kartlegge kundens behov og krav til utførelse"
+    },
+    {
+     "kode": "KM4556",
+     "tekst": "utføre emballering, merking og klargjøring av gods for forsendelse på en forsvarlig måte i henhold til godsets egenart og gjeldende bestemmelser"
+    },
+    {
+     "kode": "KM4554",
+     "tekst": "sikre last etter gjeldende forskrifter"
+    },
+    {
+     "kode": "KM4555",
+     "tekst": "bruke ulike metoder og utstyr for å utføre sikre laste-, losse- og løfteoperasjoner"
+    },
+    {
+     "kode": "KM4553",
+     "tekst": "bruke og vedlikeholde manuelt, teknisk og digitalt arbeidsutstyr"
+    },
+    {
+     "kode": "KM4552",
+     "tekst": "velge ut og bruke ulike teknisk- og servicerelaterte hjelpemidler ved person- og godstransport og ved logistikk og løfteoperasjoner"
+    },
+    {
+     "kode": "KM4551",
+     "tekst": "sikre skadested og utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM4550",
+     "tekst": "håndtere og transportere varer med truck etter gjeldende forskrifter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i transport, logistikk og løfteoperasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i transport, logistikk og løfteoperasjoner. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i transport, logistikk og løfteoperasjoner ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i transport, logistikk og løfteoperasjoner basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV428",
+   "tittel": "Kompetansemål og vurdering bransjelære",
+   "fag": [
+    "TOL2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4549",
+     "tekst": "beskrive sentrale områder ved etablering, ledelse og økonomisk styring av en virksomhet"
+    },
+    {
+     "kode": "KM4548",
+     "tekst": "gjøre rede for sentrale lover og regler innenfor person- og godstransport, logistikk og løfteoperasjoner og beskrive forsikringsordninger i faget"
+    },
+    {
+     "kode": "KM4547",
+     "tekst": "gjøre rede for begrepene og forklare sammenhengen mellom bærekraftig utvikling, miljøvennlig drift og grønn logistikk"
+    },
+    {
+     "kode": "KM4546",
+     "tekst": "planlegge og utføre arbeid i samsvar med gjeldende regelverk for helse, miljø og sikkerhet, sertifiseringsbestemmelser og næringens krav til kvalitet"
+    },
+    {
+     "kode": "KM4545",
+     "tekst": "forklare sammenhengen mellom kosthold, fysisk helse og livsstilssykdommer og reflektere over betydningen av å ivareta egen helse"
+    },
+    {
+     "kode": "KM4544",
+     "tekst": "forklare hovedtrekkene i norsk samferdselspolitikk"
+    },
+    {
+     "kode": "KM4543",
+     "tekst": "forklare prosedyrer ved transport over landegrenser"
+    },
+    {
+     "kode": "KM4542",
+     "tekst": "beskrive verdikjeder fra produksjon til sluttbruker og gjenvinning"
+    },
+    {
+     "kode": "KM4541",
+     "tekst": "gjøre enkle økonomiske beregninger og vurdere hvilke faktorer som har betydning for prisfastsettelse av oppdrag"
+    },
+    {
+     "kode": "KM4565",
+     "tekst": "reflektere over og følge yrkesetiske normer"
+    },
+    {
+     "kode": "KM4564",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i bransjelære når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i bransjelære. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i bransjelære ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i bransjelære basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Bransjeteknikk: Eleven skal ha én standpunktkarakter.",
+    "Transport, logistikk og løfteoperasjoner: Eleven skal ha én standpunktkarakter.",
+    "Bransjelære: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Bransjeteknikk, transport, logistikk og løfteoperasjoner og bransjelære: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelesesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Bransjeteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Transport, logistikk og løfteoperasjoner: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Bransjelære: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Bransjeteknikk, transport, logistikk og løfteoperasjoner og bransjelære: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

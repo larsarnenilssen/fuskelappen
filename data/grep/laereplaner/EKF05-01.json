@@ -1,0 +1,234 @@
+{
+ "kode": "EKF05-01",
+ "tittel": "Læreplan i ernæringskokkfaget – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV866",
+   "tittel": "Kompetansemål og vurdering mattrygghet",
+   "fag": [
+    "EKF5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11375",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM11376",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM11377",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom kvalitet, vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM11378",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM11379",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM11381",
+     "tekst": "reflektere over hvordan ønskede og uønskede mikroorganismer kan påvirke forskjellige råvarer, halvfabrikata og ferdigvarer, og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM11382",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM11380",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen mattrygghet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen mattrygghet. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i mattrygghet. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV867",
+   "tittel": "Kompetansemål og vurdering demokrati, yrkesidentitet og arbeidsliv",
+   "fag": [
+    "EKF5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11383",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM11387",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger, brukere, gjester og samarbeidspartnere"
+    },
+    {
+     "kode": "KM11384",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM11385",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    },
+    {
+     "kode": "KM11386",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM11388",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen demokrati, yrkesidentitet og arbeidsliv når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen demokrati, yrkesidentitet og arbeidsliv. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i demokrati, yrkesidentitet og arbeidsliv. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV869",
+   "tittel": "Kompetansemål og vurdering råvarekunnskap, bærekraft og håndverksferdigheter",
+   "fag": [
+    "EKF5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11409",
+     "tekst": "planlegge, tilberede og servere mat og måltider etter ulike behov, allergier, intoleranser, diagnoser og kost i ulike livsfaser"
+    },
+    {
+     "kode": "KM11397",
+     "tekst": "partere og utføre anatomisk skjæring og finstykke kjøtt og fjærkre og vurdere bruksområder og ressursutnyttelse"
+    },
+    {
+     "kode": "KM11398",
+     "tekst": "rense, filetere, dele opp og klargjøre fisk og sjømat og vurdere kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM11399",
+     "tekst": "bearbeide animalske, marine og vegetabilske råvarer og gjøre rede for endringer som skjer i råvarene under tilberedning"
+    },
+    {
+     "kode": "KM11400",
+     "tekst": "anrette og presentere smakfulle, estetiske og appetittvekkende retter og menyer og reflektere over hvordan dette kan bidra til matomsorg og gode måltidsopplevelser"
+    },
+    {
+     "kode": "KM11401",
+     "tekst": "tilberede samiske og norske spesialiteter og reflektere over hvordan faget kan bidra til at mattradisjoner ivaretas og videreføres"
+    },
+    {
+     "kode": "KM11402",
+     "tekst": "forklare og bruke fagkunnskap, faguttrykk, tilberedningsmetoder og teknikker og være kreativ og nyskapende"
+    },
+    {
+     "kode": "KM11403",
+     "tekst": "utvikle faglige ferdigheter, anvende teknologi og ulike produksjonsteknikker og reflektere over hvordan dette kan bidra til innovasjon, effektivitet og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM11404",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold og gjøre rede for konsekvensen ved avvik"
+    },
+    {
+     "kode": "KM11405",
+     "tekst": "gjennomføre næringsberegninger og enkle kalkulasjoner av svinn, produktutvikling og omsetning"
+    },
+    {
+     "kode": "KM11406",
+     "tekst": "tolke og bruke sammensatte måleenheter i praktiske sammenhenger og velge egnet måleenhet"
+    },
+    {
+     "kode": "KM11407",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM11408",
+     "tekst": "utforske egenskaper og reaksjoner til noen stoffer og stoffblandinger som er relevante for eget utdanningsprogram"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen råvarekunnskap, bærekraft og håndverksferdigheter når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen råvarekunnskap, bærekraft og håndverksferdigheter. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i råvarekunnskap, bærekraft og håndverksferdigheter. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV868",
+   "tittel": "Kompetansemål og vurdering ernæring, måltidsutvikling og folkehelse",
+   "fag": [
+    "EKF5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11389",
+     "tekst": "reflektere over hvordan kosthold påvirker folkehelsen, og anvende kompetansen i utvikling av menyer og måltider"
+    },
+    {
+     "kode": "KM11390",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere produksjon av ernæringsriktig mat og spesialkost ut fra ut fra oppskrift, råvaretilgang, produksjonsmetode og beskrivelse"
+    },
+    {
+     "kode": "KM11391",
+     "tekst": "kommunisere med ulike brukergrupper og ta hensyn til anledning, årstid, behov, ulike religioner og kulturer i tilberedningen av mat og måltider"
+    },
+    {
+     "kode": "KM11392",
+     "tekst": "velge egnede råvarer og tilberedningsmetoder i utvikling av menyer og måltider og drøfte hvordan råvarer og metoder tar hensyn til ernæringsmessig kvalitet og brukernes behov"
+    },
+    {
+     "kode": "KM11393",
+     "tekst": "porsjons- og næringsberegne retter og menyer for brukergrupper med behov for ulike dietter og forklare hvilke hensyn man må ta ved servering under kort- og langtidsopphold"
+    },
+    {
+     "kode": "KM11394",
+     "tekst": "tolke og regne med nærings- og energiinnhold, og regne om mellom ulike sammensatte enheter knyttet til restaurant- og matfag"
+    },
+    {
+     "kode": "KM11395",
+     "tekst": "vurdere og bearbeide egne tekster ut fra faglige kriterier og kunnskap om språk"
+    },
+    {
+     "kode": "KM11396",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen ernæring, måltidsutvikling og folkehelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen ernæring, måltidsutvikling og folkehelse. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i ernæring, måltidsutvikling og folkehelse. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 ernæringskokkfaget (EKF03‑01). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i ernæringskokkfaget – modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 ernæringskokkfaget (EKF03‑01). Alle skal opp til fagprøven som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "kode": "LAB03-02",
+ "tittel": "Læreplan i vg3 laboratoriefaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV681",
+   "tittel": "Kompetansemål og vurdering i vg3 laboratoriefaget",
+   "fag": [
+    "LAB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8621",
+     "tekst": "bruke laboratorieutstyr og laboratorieteknikker selvstendig og sikkert med nødvendig verneutstyr"
+    },
+    {
+     "kode": "KM8622",
+     "tekst": "holde laboratoriet operativt, rent og ryddig i tråd med gjeldende rutiner"
+    },
+    {
+     "kode": "KM8623",
+     "tekst": "planlegge, utføre og rapportere laboratoriearbeid i henhold til forskrifter, metoder og rutiner, og sikre sporbare resultater"
+    },
+    {
+     "kode": "KM8624",
+     "tekst": "velge instrumenter og utstyr i tråd med arbeidsoppgavene og gjøre rede for teori knyttet til instrumenter og metoder"
+    },
+    {
+     "kode": "KM8625",
+     "tekst": "utføre og kontrollere kalibrering av laboratorieutstyr og instrumenter"
+    },
+    {
+     "kode": "KM8626",
+     "tekst": "utføre daglig og forebyggende vedlikehold av laboratorieutstyr og instrumenter"
+    },
+    {
+     "kode": "KM8627",
+     "tekst": "forstå og bruke kjemiske og statistiske beregninger til å tolke resultater og trender"
+    },
+    {
+     "kode": "KM8628",
+     "tekst": "håndtere kjemikalier, råvarer og avfall ved hjelp av sikkerhetsdatablader etter gjeldende regler og rutiner"
+    },
+    {
+     "kode": "KM8629",
+     "tekst": "reflektere over ressursbruk og prioritering"
+    },
+    {
+     "kode": "KM8630",
+     "tekst": "utforske og vurdere muligheter for effektivisering av metoder, rutiner og prosedyrer"
+    },
+    {
+     "kode": "KM8631",
+     "tekst": "utforske og drøfte innovative løsninger og bruk av teknologi for å utvikle laboratoriearbeidet"
+    },
+    {
+     "kode": "KM8632",
+     "tekst": "gjennomføre arbeidet i henhold til bedriftens krav til kvalitetssikring og retningslinjer for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8633",
+     "tekst": "bruke bedriftens kvalitets-, avviks- og rapporteringssystem"
+    },
+    {
+     "kode": "KM8634",
+     "tekst": "gjøre rede for bedriftens organisering, egenart og rolle"
+    },
+    {
+     "kode": "KM8635",
+     "tekst": "reflektere over betydningen av egen medvirkning på arbeidsplassen og hva det gjør med egen mestring, utvikling og motivasjon"
+    },
+    {
+     "kode": "KM8636",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 laboratoriefaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 laboratoriefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 laboratoriefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over to til tre virkedager."
+   ]
+  }
+ ]
+}

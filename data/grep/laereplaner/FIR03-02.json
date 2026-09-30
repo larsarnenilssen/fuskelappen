@@ -1,0 +1,96 @@
+{
+ "kode": "FIR03-02",
+ "tittel": "Læreplan i vg3 fiskeri- og akvakulturreiskapsfaget",
+ "spraak": "nno",
+ "fastsatt": "2025-12-08",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1005",
+   "tittel": "Kompetansemål og vurdering vg3 fiskeri- og akvakulturreiskapsfaget",
+   "fag": [
+    "FIR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13023",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere produksjon og reparasjon av utstyr og reiskapar til fiskeri og akvakultur i tråd med gjeldande regelverk"
+    },
+    {
+     "kode": "KM13009",
+     "tekst": "velje materiell i produksjon og reparasjon av reiskapar til fiskeri og akvakultur, i samsvar med gjeldande reglement og bruksområde, og reflektere over valet i eit kostnads- og berekraftsperspektiv"
+    },
+    {
+     "kode": "KM13010",
+     "tekst": "lage reiskap til fiskeri og akvakultur i samsvar med instruksjonar og teikningar, reflektere over effektiviteten til konstruksjonen og vurdere moglegheiter for forbetring"
+    },
+    {
+     "kode": "KM13011",
+     "tekst": "utføre ulike typar samanføyingar i samsvar med gjeldande regelverk og tradisjonelt handverk og drøfte bruken av desse samanføyingane"
+    },
+    {
+     "kode": "KM13012",
+     "tekst": "kontrollere reiskap i samsvar med regelverk, reflektere over formålet med regelverket og vurdere moglegheiter for forbetring"
+    },
+    {
+     "kode": "KM13013",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk og reflektere over konsekvensane av feilhandtering"
+    },
+    {
+     "kode": "KM13014",
+     "tekst": "oppbevare og behandle kjemikaliar og helseskadelege stoff i samsvar med gjeldande regelverk og vurdere konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM13015",
+     "tekst": "gjennomføre arbeidet på ein slik måte at den fysiske og psykiske helsa til ein sjølv og andre blir vareteken, og vurdere ergonomiske tiltak på arbeidsplassen for å betre arbeidsmiljøet"
+    },
+    {
+     "kode": "KM13016",
+     "tekst": "kjenne til beredskapsplanar og prosedyrar for nødssituasjonar og reflektere over kor viktige desse er for å redusere talet på og omfanget av ulukker og uønskte hendingar"
+    },
+    {
+     "kode": "KM13022",
+     "tekst": "planleggje og gjennomføre risikovurderingar og sikker jobb-analyse i tråd med gjeldande regelverk, og reflektere over betydninga av systematisk HMS-arbeid"
+    },
+    {
+     "kode": "KM13017",
+     "tekst": "registrere og rapportere avvik i samsvar med vedlikehalds- og styringssystemet i bedrifta og forklare korleis slike system kan bidra til å forbetre drifta"
+    },
+    {
+     "kode": "KM13018",
+     "tekst": "gjennomføre og dokumentere internt ettersyn og vedlikehald av utstyr i tråd med vedlikehaldssystemet i bedrifta"
+    },
+    {
+     "kode": "KM13019",
+     "tekst": "utføre hygienetiltak og reinhald på arbeidsplassen etter gjeldande regelverk og etter standardane og styringssystemet i bedrifta, og sjå moglegheiter for forbetring"
+    },
+    {
+     "kode": "KM13021",
+     "tekst": "gjere greie for at ulike marknader kan ha ulike standardar og regelverk for reiskapar og sendingar, og kunne finne informasjon om dette."
+    },
+    {
+     "kode": "KM13020",
+     "tekst": "arbeide etter gjeldande regelverk og avtale som regulerer arbeidsforhold i næringa, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 fiskeri- og akvakulturreiskapsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren og lærlingane skal vere i dialog om utviklinga til lærlingane i vg3 fiskeri- og akvakulturreiskapsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 fiskeri- og akvakulturreiskapsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på éin til to vyrkedagar."
+   ]
+  }
+ ]
+}

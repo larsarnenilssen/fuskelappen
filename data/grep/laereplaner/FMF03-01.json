@@ -1,0 +1,160 @@
+{
+ "kode": "FMF03-01",
+ "tittel": "Læreplan i vg3 fundamenteringsfaget",
+ "spraak": "nob",
+ "fastsatt": "2023-10-31",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV786",
+   "tittel": "Kompetansemål og vurdering vg3 fundamenteringsfaget",
+   "fag": [
+    "FMF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10496",
+     "tekst": "velge arbeidsmetoder etter gjeldende regelverk ved å bruke ulike prosjektverktøy og arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM10498",
+     "tekst": "velge og bruke maskiner, materialer og verktøy med hensyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM10525",
+     "tekst": "sikre og sperre av bygge- og anleggsområdet, og drøfte ulike tiltak som sikrer risikoutsatte arbeidsforhold"
+    },
+    {
+     "kode": "KM10497",
+     "tekst": "lage framdriftsplaner, beregne produksjonstid, bestille og motta materiell og utstyr og kontrollere at varer er i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM10499",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og iverksette tiltak som forebygger helseskader og ulykker"
+    },
+    {
+     "kode": "KM10522",
+     "tekst": "identifisere risiko for sensitiv kvikkleire og fare for grunnbrudd og forstyrrelser i grunnen"
+    },
+    {
+     "kode": "KM10523",
+     "tekst": "oppfylle krav til tilstandskontroll og sikre mot skader som kan oppstå på nærliggende bygg og infrastruktur"
+    },
+    {
+     "kode": "KM10500",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM10501",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feil bruk"
+    },
+    {
+     "kode": "KM10506",
+     "tekst": "utføre grunnleggende førstehjelp."
+    },
+    {
+     "kode": "KM10502",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy, vibrasjon, varme, farlige stoffer og støveksponering"
+    },
+    {
+     "kode": "KM10503",
+     "tekst": "håndtere avfall etter gjeldende regelverk og vurdere konsekvenser av feil håndtering"
+    },
+    {
+     "kode": "KM10524",
+     "tekst": "kildesortere avfall etter gjeldende regelverk og iverksette tiltak for gjenbruk av stålmateriell"
+    },
+    {
+     "kode": "KM10504",
+     "tekst": "bruke fagterminologi i kommunikasjon med kolleger og andre yrkesutøvere, drøfte ulike løsninger som bidrar til å redusere miljøavtrykket, og sikre effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM10505",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgivers og arbeidstakers plikter og rettigheter og reflektere over hvilke krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM10507",
+     "tekst": "velge og bruke pele-, spuntutstyr og boreutstyr tilpasset arbeidsoppgaven og gjøre rede for hvordan geotekniske forhold og ytre omgivelser kan påvirke valg av utstyr"
+    },
+    {
+     "kode": "KM10526",
+     "tekst": "gjøre rede for hvordan kalksementpeler og jetpeler kan brukes i grunnforsterkning og reflekter over hvordan ulike egenskaper i byggegrunnen påvirker valg av metode"
+    },
+    {
+     "kode": "KM10518",
+     "tekst": "velge boremetoder for ulike grunnforhold og vurdere risikofaktorer ved boring med luft"
+    },
+    {
+     "kode": "KM10508",
+     "tekst": "montere stålbjelker med avstivingssystemer og stålkonstruksjoner i henhold til prosjektbeskrivelsen og gjøre rede for konsekvenser av å ikke følge arbeidsgrunnlaget"
+    },
+    {
+     "kode": "KM10520",
+     "tekst": "montere spennstag for temporære og permanente utførelser"
+    },
+    {
+     "kode": "KM10509",
+     "tekst": "utarbeide spennlister, montere og spenne opp forankringer og avstivere og vurdere hvordan krefter og laster påvirker operasjonen"
+    },
+    {
+     "kode": "KM10519",
+     "tekst": "montere og installere stålkjernepeler i tråd med prosessbeskrivelser, standarder og bransjespesifikke veiledninger"
+    },
+    {
+     "kode": "KM10510",
+     "tekst": "kappe stålpeler ved bruk av kaldsaging og gjøre rede for hvordan valg av kappemetode kan påvirke sluttproduktet"
+    },
+    {
+     "kode": "KM10511",
+     "tekst": "blande gysemasse i ulike resepter, ta prøver av injeksjonsmasse etter byggherrens funksjonskrav og gjøre rede for tiltak som sikrer høy kvalitet og lang levetid på produktene"
+    },
+    {
+     "kode": "KM10512",
+     "tekst": "måle vanntapet i borehull, tolke måleresultatet, og iverksette injeksjon for tetting i berg ved vanntap"
+    },
+    {
+     "kode": "KM10513",
+     "tekst": "gjennomføre fordyblingsboring og montere dybel for spuntfot"
+    },
+    {
+     "kode": "KM10514",
+     "tekst": "lese av synk og måle bevegelse ved stoppramming og beregne bæreevne på pelen ved bruk av rammeformelen på peletyper"
+    },
+    {
+     "kode": "KM10515",
+     "tekst": "losse og lagre materialer og utstyr"
+    },
+    {
+     "kode": "KM10516",
+     "tekst": "motta varer og kontrollere mengde og kvalitet i henhold til bestilling og arbeidsgrunnlag"
+    },
+    {
+     "kode": "KM10517",
+     "tekst": "utføre daglig kontroll og vedlikehold av maskiner og utstyr"
+    },
+    {
+     "kode": "KM10521",
+     "tekst": "vurdere hvordan værforhold og årstider kan påvirke fundamenteringsarbeid på sjø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 fundamenteringsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 fundamenteringsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamenen utarbeides sentralt og sensureres lokalt. Eksamenen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 fundamenteringsfaget skal avsluttes med praktisk fagprøve som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

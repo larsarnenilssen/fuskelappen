@@ -1,0 +1,128 @@
+{
+ "kode": "TKS03-02",
+ "tittel": "Læreplan i taksidermistfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV451",
+   "tittel": "Kompetansemål og vurdering taksidermistfaget",
+   "fag": [
+    "TKS3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4907",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM4898",
+     "tekst": "bruke økologi, artskunnskap og annen relevant informasjon i planlegging av monteringsarbeidet"
+    },
+    {
+     "kode": "KM4919",
+     "tekst": "artsbestemme fugler og dyr fra norsk fauna"
+    },
+    {
+     "kode": "KM4911",
+     "tekst": "gjøre rede for og drøfte en arts leveområde og bruke denne kunnskapen i arbeidet med å gjenskape en riktig biotop"
+    },
+    {
+     "kode": "KM4916",
+     "tekst": "bruke digitale ressurser til skisser og måltaking i gjengivelse av biologisk materiale"
+    },
+    {
+     "kode": "KM4920",
+     "tekst": "finne og vurdere informasjon om faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4908",
+     "tekst": "vurdere og bruke ulike flå- og skinnbehandlingsteknikker"
+    },
+    {
+     "kode": "KM4915",
+     "tekst": "konservere biologisk materiale og ta prøver til forskning"
+    },
+    {
+     "kode": "KM4899",
+     "tekst": "gjøre rede for de mest utbredte skadeinsektene og gjennomføre forebyggende tiltak"
+    },
+    {
+     "kode": "KM4918",
+     "tekst": "gjennomføre konserveringsarbeid og monteringsarbeid i samsvar med egen arbeidsplan og ut fra gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4917",
+     "tekst": "bruke verktøy og materialer i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4913",
+     "tekst": "anvende anatomikunnskap i monteringsarbeid og tilvirking av modeller i ulike materialer"
+    },
+    {
+     "kode": "KM4914",
+     "tekst": "drøfte og gjennomføre avstøpning og fargelegging"
+    },
+    {
+     "kode": "KM4912",
+     "tekst": "planlegge, gjennomføre og analysere innsamling og konservering av plantemateriale til oppbygging av habitater og dioramaer"
+    },
+    {
+     "kode": "KM4901",
+     "tekst": "samarbeide med andre faggrupper i planlegging og produksjon av utstillinger"
+    },
+    {
+     "kode": "KM4902",
+     "tekst": "beregne råvarer og pris på produkter og tjenester"
+    },
+    {
+     "kode": "KM4906",
+     "tekst": "utforske nye trender i faget og vurdere eget arbeid i lys av dem"
+    },
+    {
+     "kode": "KM4910",
+     "tekst": "analysere og bruke egnede materialer og metoder i vedlikehold og restaurering av gammelt konservert materiale"
+    },
+    {
+     "kode": "KM4904",
+     "tekst": "presentere egne produkter og tjenester"
+    },
+    {
+     "kode": "KM4903",
+     "tekst": "utforske og gjøre rede for fagets håndverkshistorie og metoder og hva det betyr for dagens naturforståelse"
+    },
+    {
+     "kode": "KM4909",
+     "tekst": "gjøre rede for og følge gjeldende norske og internasjonale lover og regelverk som regulerer utøvelsen av faget, og nasjonale og internasjonale forskrifter som regulerer handel med truede arter"
+    },
+    {
+     "kode": "KM4900",
+     "tekst": "gjøre rede for og bruke gjeldende regelverk for helse, miljø og sikkerhet i arbeidet og vurdere eget produkt, arbeid og arbeidsetikk med tanke på natur, miljø og samfunn"
+    },
+    {
+     "kode": "KM4905",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i taksidermistfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i taksidermistfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i taksidermistfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på fire til fem virkedager."
+   ]
+  }
+ ]
+}

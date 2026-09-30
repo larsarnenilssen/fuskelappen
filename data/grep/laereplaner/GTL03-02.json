@@ -1,0 +1,104 @@
+{
+ "kode": "GTL03-02",
+ "tittel": "Læreplan i gjørtlerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV444",
+   "tittel": "Kompetansemål og vurdering gjørtlerfaget",
+   "fag": [
+    "GTL3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4780",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid fra idé til ferdig produkt"
+    },
+    {
+     "kode": "KM4767",
+     "tekst": "gjøre rede for fagets historie og tradisjon og anvende dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM4781",
+     "tekst": "drøfte estetikk og design med kunder, kolleger og andre i eget og andres arbeid"
+    },
+    {
+     "kode": "KM4779",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM4778",
+     "tekst": "velge og bruke ulike teknikker, materialer, verktøy og maskiner ut fra arbeidsoppgaven og gjøre rede for hvordan ulike valg påvirker støpeform, produkt, holdbarhet, ressursbruk og miljø"
+    },
+    {
+     "kode": "KM4777",
+     "tekst": "utforske og bruke ulike typer form- og kjernesand, bindemidler og tilsatsmaterialer og bruke denne kunnskapen i utvikling av sandformer med løpsetting"
+    },
+    {
+     "kode": "KM4783",
+     "tekst": "lage ulike metallegeringer og gjøre rede for hvordan ulike smelte- og støpetemperaturer påvirker resultatet"
+    },
+    {
+     "kode": "KM4776",
+     "tekst": "anvende og vedlikeholde hånd- og maskinverktøy og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4774",
+     "tekst": "vurdere og bruke ulike slipe- og poleringsteknikker og gjøre rede for hvordan ulike valg påvirker produkt og sluttresultat"
+    },
+    {
+     "kode": "KM4782",
+     "tekst": "vurdere og bruke forskjellige sammenføyningsteknikker ut fra valgt støpeform og produkt og gjøre rede for hvordan ulike valg påvirker produktet og sluttresultatet"
+    },
+    {
+     "kode": "KM4775",
+     "tekst": "bruke arbeidsrelevant verneutstyr og følge gjeldende regelverk for helse, miljø og sikkerhet i eget arbeid"
+    },
+    {
+     "kode": "KM4773",
+     "tekst": "vurdere gjenstanders alder og stilart og bruke ulike rengjørings- og konserveringsteknikker for metall i henhold til antikvariske verdier"
+    },
+    {
+     "kode": "KM4771",
+     "tekst": "rekonstruere manglende ornamenter i forbindelse med restaurering"
+    },
+    {
+     "kode": "KM4770",
+     "tekst": "presentere egne produksjoner og restaureringsarbeider"
+    },
+    {
+     "kode": "KM4769",
+     "tekst": "utforske og anvende tilgjengelig faglitteratur og redskaper for å gjøre støpefeilanalyser"
+    },
+    {
+     "kode": "KM4768",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet, lønnsomhet og miljø"
+    },
+    {
+     "kode": "KM4772",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i gjørtlerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i gjørtlerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i gjørtlerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager"
+   ]
+  }
+ ]
+}

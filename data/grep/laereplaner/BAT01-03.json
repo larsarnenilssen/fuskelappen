@@ -1,0 +1,182 @@
+{
+ "kode": "BAT01-03",
+ "tittel": "Læreplan i vg1 bygg- og anleggsteknikk",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV249",
+   "tittel": "Kompetansemål og vurdering arbeidsmiljø og dokumentasjon",
+   "fag": [
+    "BAT1Z03"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2677",
+     "tekst": "vurdere risiko og utføre forebyggende tiltak"
+    },
+    {
+     "kode": "KM2701",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldende bestemmelser for helse, miljø og sikkerhet, og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM2700",
+     "tekst": "utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM2699",
+     "tekst": "gjøre rede for varme arbeider som brannårsak, gjennomføre sikkerhetstiltak og hindre brann"
+    },
+    {
+     "kode": "KM2698",
+     "tekst": "anvende sikkerhetsdatablad og følge anvisninger ved bruk av kjemikalier"
+    },
+    {
+     "kode": "KM2697",
+     "tekst": "beskrive og bruke arbeidsteknikker og arbeidsstillinger som forebygger helseskader"
+    },
+    {
+     "kode": "KM2696",
+     "tekst": "gjøre rede for betydningen av orden på bygge- og anleggsplasser og følge rutiner for dette"
+    },
+    {
+     "kode": "KM2695",
+     "tekst": "vurdere risiko og følge rutiner for å stroppe, anhuke og gi signal ved lasting og lossing"
+    },
+    {
+     "kode": "KM2694",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM2693",
+     "tekst": "vedlikeholde maskiner og verktøy"
+    },
+    {
+     "kode": "KM2692",
+     "tekst": "kildesortere avfall etter gitte retningslinjer og reflektere over konsekvenser av feilhåndtering av avfall."
+    },
+    {
+     "kode": "KM2702",
+     "tekst": "kommunisere og formidle budskap tilpasset ulike målgrupper"
+    },
+    {
+     "kode": "KM2690",
+     "tekst": "forstå og bruke fagterminologi i samhandling med ulike målgrupper"
+    },
+    {
+     "kode": "KM2688",
+     "tekst": "vurdere hvordan miljø- og klimaendringer påvirker bygg- og anleggsbransjen"
+    },
+    {
+     "kode": "KM2691",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i arbeidsmiljø og dokumentasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i arbeidsmiljø og dokumentasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i arbeidsmiljø og dokumentasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i arbeidsmiljø og dokumentasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid.",
+    "Elevene skal dokumentere gjennomført kurs i varme arbeider."
+   ]
+  },
+  {
+   "kode": "KV250",
+   "tittel": "Kompetansemål og vurdering praktisk yrkesutøvelse",
+   "fag": [
+    "BAT1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2687",
+     "tekst": "forstå og arbeide etter tegninger og beskrivelser"
+    },
+    {
+     "kode": "KM2686",
+     "tekst": "tegne skisser og konstruksjoner i målestokk"
+    },
+    {
+     "kode": "KM2685",
+     "tekst": "velge og bruke maskiner og verktøy til ulike arbeidsoppdrag og følge anvisning for bruk og håndtering"
+    },
+    {
+     "kode": "KM2684",
+     "tekst": "montere og bruke arbeidsplattformer opp til 5 meter og gjennomføre risikotiltak ved arbeid i høyden"
+    },
+    {
+     "kode": "KM2683",
+     "tekst": "velge ut og bruke personlig verneutstyr og vurdere konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM2682",
+     "tekst": "velge og bruke materialer med hensyn til bærekraft og ulike byggetradisjoner"
+    },
+    {
+     "kode": "KM2681",
+     "tekst": "oppbevare, beregne og behandle materialer på en miljøvennlig, faglig og økonomisk måte"
+    },
+    {
+     "kode": "KM2680",
+     "tekst": "bruke digitale ressurser til å beregne, måle opp og merke etter beskrivelse og tegning"
+    },
+    {
+     "kode": "KM2679",
+     "tekst": "bruke enkel tredimensjonal modellering i arbeidsoppdrag"
+    },
+    {
+     "kode": "KM2678",
+     "tekst": "utforske og presentere kjennetegn ved kulturarv og byggeskikk"
+    },
+    {
+     "kode": "KM2689",
+     "tekst": "planlegge og bygge en konstruksjon"
+    },
+    {
+     "kode": "KM2703",
+     "tekst": "beskrive hvilke krav og forventninger samfunnet stiller til en profesjonell yrkesutøver, og reflektere over egen praksis"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i praktisk yrkesutøvelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i praktisk yrkesutøvelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i praktisk yrkesutøvelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i praktisk yrkesutøvelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Arbeidsmiljø og dokumentasjon: Eleven skal ha én standpunktkarakter.",
+    "Praktisk yrkesutøvelse: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Arbeidsmiljø og dokumentasjon: Eleven skal ikke opp til eksamen.",
+    "Praktisk yrkesutøvelse: Elevene skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Arbeidsmiljø og dokumentasjon: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få førberedelsesdel ved lokalt gitt eksamen.",
+    "Praktisk yrkesutøvelse: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få førberedelsesdel ved lokalt gitt eksamen.",
+    "Arbeidsmiljø og dokumentasjon og praktisk yrkesutøvelse: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få førberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

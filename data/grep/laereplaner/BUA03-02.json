@@ -1,0 +1,140 @@
+{
+ "kode": "BUA03-02",
+ "tittel": "Læreplan i vg3 barne- og ungdomsarbeiderfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV489",
+   "tittel": "Kompetansemål og vurdering barne- og ungdomsarbeiderfaget",
+   "fag": [
+    "BUA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5421",
+     "tekst": "observere barn og unge og planlegge, gjennomføre, vurdere og dokumentere aktiviteter"
+    },
+    {
+     "kode": "KM5422",
+     "tekst": "bruke pedagogiske metoder som bidrar til motivasjon og fremmer glede og mestring"
+    },
+    {
+     "kode": "KM5441",
+     "tekst": "planlegge og gjennomføre aktiviteter som bidrar til å utvikle barn og unges helhetlige helse, individuelt og i grupper"
+    },
+    {
+     "kode": "KM5423",
+     "tekst": "legge til rette for og reflektere over verdien av frilek"
+    },
+    {
+     "kode": "KM5446",
+     "tekst": "bruke regnearter og barne- og ungdomslitteratur i det pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM5430",
+     "tekst": "iverksette tiltak som bidrar til å styrke barn og unges sosiale kompetanse og kulturkompetanse"
+    },
+    {
+     "kode": "KM5439",
+     "tekst": "planlegge måltider og lage næringsrik mat for barn og unge i tråd med gjeldende anbefalinger fra helsemyndighetene"
+    },
+    {
+     "kode": "KM5425",
+     "tekst": "bruke kunnskaper om samisk kultur og egenart i det pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM5434",
+     "tekst": "planlegge og gjennomføre aktiviteter tilpasset årstidene og fortelle om og tilrettelegge for markeringer av høytider og merkedager"
+    },
+    {
+     "kode": "KM5440",
+     "tekst": "utføre arbeidet i tråd med gjeldende regelverk og bidra til tverrfaglig samarbeid i det pedagogiske arbeidet"
+    },
+    {
+     "kode": "KM5445",
+     "tekst": "kommunisere med barn og unge på en måte som fremmer trygghet og tillit, og som støtter utviklingen av gode relasjoner"
+    },
+    {
+     "kode": "KM5424",
+     "tekst": "bruke ulike strategier for kommunikasjon og samhandling med barn og unge og bruke tegn til tale"
+    },
+    {
+     "kode": "KM5435",
+     "tekst": "praktisere medvirkning i møte med barn, unge og foresatte"
+    },
+    {
+     "kode": "KM5426",
+     "tekst": "drøfte hva rollemodeller betyr i barn og unges sosialiseringsprosess"
+    },
+    {
+     "kode": "KM5444",
+     "tekst": "gi behovstilpasset omsorg til barn og unge og bidra til egenomsorg"
+    },
+    {
+     "kode": "KM5428",
+     "tekst": "identifisere tegn på omsorgssvikt og andre bekymringsfulle forhold og kunne varsle via tjenestevei"
+    },
+    {
+     "kode": "KM5443",
+     "tekst": "gjennomføre tiltak som forebygger ensomhet, krenkende atferd og utenforskap og som fremmer inkludering og mangfold"
+    },
+    {
+     "kode": "KM5437",
+     "tekst": "bruke strategier for konflikthåndtering og veilede barn og unge i å håndtere konflikter"
+    },
+    {
+     "kode": "KM5442",
+     "tekst": "gjennomføre tiltak som forebygger kriminalitet og bruk av rusmidler"
+    },
+    {
+     "kode": "KM5432",
+     "tekst": "iverksette tiltak som ivaretar miljøet, og vise barn og unge hvordan de kan bidra"
+    },
+    {
+     "kode": "KM5431",
+     "tekst": "iverksette tiltak som ivaretar hygiene, forebygger sykdommer og hindrer smitte"
+    },
+    {
+     "kode": "KM5438",
+     "tekst": "bruke prinsippene for universell utforming og ergonomi, og gjeldende regler for helse, miljø og sikkerhet i eget arbeid"
+    },
+    {
+     "kode": "KM5433",
+     "tekst": "utføre grunnleggende førstehjelp tilpasset barn og unge"
+    },
+    {
+     "kode": "KM5436",
+     "tekst": "bruke digitale og teknologiske hjelpemidler, vise digital dømmekraft og veilede barn og unge i dette"
+    },
+    {
+     "kode": "KM5429",
+     "tekst": "reflektere over hva det vil si å være en profesjonell yrkesutøver"
+    },
+    {
+     "kode": "KM5427",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i barne- og ungdomsarbeiderfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i barne- og ungdomsarbeiderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 barne- og ungdomsarbeiderfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres over tre virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "kode": "BYM03-01",
+ "tittel": "Læreplan i byggmontasjefaget",
+ "spraak": "nob",
+ "fastsatt": "2022-03-30",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV768",
+   "tittel": "Kompetansemål og vurdering byggmontasjefaget",
+   "fag": [
+    "BYM3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10210",
+     "tekst": "bruke og vedlikeholde maskiner og verktøy etter anvisning fra produsent og gjeldende regelverk"
+    },
+    {
+     "kode": "KM10211",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM10231",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM10212",
+     "tekst": "bruke ulike typer arbeidsutstyr, gjøre rede for utstyrets bruksområder og begrensninger og vurdere behov for vedlikehold"
+    },
+    {
+     "kode": "KM10213",
+     "tekst": "vurdere og bruke ulike typer verne- og sikkerhetsutstyr for aktiv og passiv sikring og vurdere konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM10214",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støveksponering, lyd, vibrasjon og bruk av kjemiske materialer"
+    },
+    {
+     "kode": "KM10215",
+     "tekst": "rigge, stroppe og dirigere kraner etter gjeldende regelverk, vurdere risiko ved ulike typer løft og hindre skader på personell, materiell og miljø"
+    },
+    {
+     "kode": "KM10216",
+     "tekst": "bruke fallsikringsutstyr og redningsutstyr, ivareta sikkerheten ved arbeid i høyden, forberede tiltak for øyeblikkelig redning, sikre ulykkesstedet og samvirke med nødetatene"
+    },
+    {
+     "kode": "KM10217",
+     "tekst": "vurdere ulike innfestingspunkter for fallsikringsutstyr i konstruksjoner, feste fallsikringsutstyr og reflektere over konsekvenser av pendeleffekt, fall og fallende objekter"
+    },
+    {
+     "kode": "KM10218",
+     "tekst": "sikre logistikksone, løftesone og atkomst på montasjeplassen i samarbeid med andre og drøfte ulike faktorer som påvirker sikkerhet og ressursbruk"
+    },
+    {
+     "kode": "KM10219",
+     "tekst": "planlegge og arbeide etter tegninger, beskrivelser, preaksepterte løsninger, toleransekrav, og krav til helse, mljø og sikkerhet og vurdere konsekvenser av å ikke følge kravene"
+    },
+    {
+     "kode": "KM10232",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta, konstruksjonselementer, materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM10220",
+     "tekst": "bruke stag og stemp for å avstive konstruksjonen midlertidig og gjøre rede for prinsippene for kraftnedføring og rotasjon"
+    },
+    {
+     "kode": "KM10221",
+     "tekst": "velge og bruke materialer og vurdere hvordan klimatiske forhold påvirker materialenes egenskaper"
+    },
+    {
+     "kode": "KM10222",
+     "tekst": "beregne forbruk av materiell og festemidler og vurdere ulike faktorer som påvirker montasjeprosessen"
+    },
+    {
+     "kode": "KM10233",
+     "tekst": "planlegge avsperring av montasjefront, montere rekkverk og drøfte sikkerhetsmessige aspekter ved sperring av montasjefront"
+    },
+    {
+     "kode": "KM10223",
+     "tekst": "sette sammen konstruksjonsdeler etter produsentens anvisning og dokumentere ytelseskravene til konstruksjonen"
+    },
+    {
+     "kode": "KM10224",
+     "tekst": "avstive konstruksjoner, reflektere over faktorer som bidrar til stabilitet i konstruksjoner og drøfte ulike situasjoner der avvik kan oppstå."
+    },
+    {
+     "kode": "KM10225",
+     "tekst": "gjøre rede for krav til konstruktiv sveising og drøfte konsekvenser for konstruksjonens stabilitet ved avvik fra kravene."
+    },
+    {
+     "kode": "KM10234",
+     "tekst": "velge og bruke ulike typer personløftere i tråd med gjeldende regelverk og gjøre rede for deres bruksområder og begrensninger"
+    },
+    {
+     "kode": "KM10226",
+     "tekst": "planlegge montasjerekkefølge og arbeidsoperasjoner i samarbeid med montasjeformann og reflektere over egen rolle i montasjelaget."
+    },
+    {
+     "kode": "KM10227",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter og reflektere over krav og forventinger som blir stilles et likeverdig og inkluderende yrkesfelleskap"
+    },
+    {
+     "kode": "KM10228",
+     "tekst": "drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og sikre effektiv ressursutnyttelse og bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere"
+    },
+    {
+     "kode": "KM10229",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM10230",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i byggmontasjefaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i byggmontasjefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i byggmontasjefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

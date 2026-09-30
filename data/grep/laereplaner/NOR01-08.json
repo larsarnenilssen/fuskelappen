@@ -1,0 +1,400 @@
+{
+ "kode": "NOR01-08",
+ "tittel": "Læreplan i norsk",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1111",
+   "tittel": "Kompetansemål og vurdering vg2 yrkesfaglige utdanningsprogram",
+   "fag": [
+    "NOR1Z66",
+    "NOR1Z71"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14211",
+     "tekst": "lese, analysere og tolke nyere skjønnlitteratur på bokmål og nynorsk og i oversettelse fra samiske og andre språk"
+    },
+    {
+     "kode": "KM14212",
+     "tekst": "reflektere over hvordan tekster framstiller møter mellom ulike kulturer"
+    },
+    {
+     "kode": "KM14205",
+     "tekst": "gjøre rede for og reflektere over bruken av retoriske appellformer og språklige virkemidler i sakprosatekster"
+    },
+    {
+     "kode": "KM14202",
+     "tekst": "lytte til andre, bygge opp saklig argumentasjon og bruke retoriske appellformer i diskusjoner"
+    },
+    {
+     "kode": "KM14209",
+     "tekst": "bruke ulike kilder på en kritisk, selvstendig og etterrettelig måte"
+    },
+    {
+     "kode": "KM14203",
+     "tekst": "kommunisere klart og forståelig muntlig og skriftlig i yrkesrelevante sjangre"
+    },
+    {
+     "kode": "KM14204",
+     "tekst": "bruke relevant fagspråk til å presentere, gjøre rede for og dokumentere faglige emner og arbeidsprosesser fra eget utdanningsprogram"
+    },
+    {
+     "kode": "KM14207",
+     "tekst": "orientere seg i faglitteratur fra eget yrkesfaglig område for å finne, kombinere og vurdere relevant informasjon"
+    },
+    {
+     "kode": "KM14213",
+     "tekst": "kombinere virkemidler og uttrykksformer kreativt i egen tekstskaping"
+    },
+    {
+     "kode": "KM14210",
+     "tekst": "vurdere og bearbeide egne tekster ut fra tilbakemeldinger og faglige kriterier"
+    },
+    {
+     "kode": "KM14208",
+     "tekst": "skrive tekster med god struktur og tekstbinding og mestre tegnsetting og rettskriving på hovedmål"
+    },
+    {
+     "kode": "KM14214",
+     "tekst": "sammenligne særtrekk ved norsk med andre språk og vise hvordan språklige møter kan skape språkendringer"
+    },
+    {
+     "kode": "KM14206",
+     "tekst": "gjøre rede for utbredelsen av de samiske språkene i Norge, fornorskingspolitikken og de språklige rettighetene samer har som urfolk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk på vg2 yrkesfaglige utdanningsprogram når de utformer tekster på kreative måter, og når de utforsker faglige emner med kritisk bruk av kilder og presenterer dette i muntlige og skriftlige tekster med struktur og sammenheng. Elevene viser og utvikler også kompetanse når de bruker kunnskap om språket som system til å utforske og sammenligne språk, og når de reflekterer kritisk over egne og andres tekster.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide oppdagende og utforskende, alene og sammen med andre. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide egne muntlige og skriftlige tekster.",
+    "I halvårsvurderingen skal læreren i samsvar med standpunktvurderingen gi én karakter i norsk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen elevene har i norsk ved avslutningen av opplæringen etter vg2 yrkesfaglige utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette én karakter i norsk etter vg2 yrkesfaglige utdanningsprogram der muntlig og skriftlig kompetanse tillegges like stor vekt. Karakteren skal settes basert på den kompetansen eleven har vist når eleven har kommunisert faglig innhold muntlig, og kompetansen eleven har vist i skriftlige elevtekster i ulike sjangre og for ulike formål på hovedmål."
+   ]
+  },
+  {
+   "kode": "KV1113",
+   "tittel": "Kompetansemål og vurdering vg1 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR1Z63",
+    "NOR1Z68"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14229",
+     "tekst": "lese, analysere og tolke nyere skjønnlitteratur på bokmål og nynorsk og i oversettelse fra samiske og andre språk"
+    },
+    {
+     "kode": "KM14230",
+     "tekst": "reflektere over hvordan tekster framstiller møter mellom ulike kulturer"
+    },
+    {
+     "kode": "KM14226",
+     "tekst": "gjøre rede for og reflektere over bruken av retoriske appellformer og språklige virkemidler i sakprosatekster"
+    },
+    {
+     "kode": "KM14224",
+     "tekst": "lytte til andre, bygge opp saklig argumentasjon og bruke retoriske appellformer i diskusjoner"
+    },
+    {
+     "kode": "KM14227",
+     "tekst": "bruke ulike kilder på en kritisk, selvstendig og etterrettelig måte"
+    },
+    {
+     "kode": "KM14225",
+     "tekst": "greie ut om og drøfte norskfaglige eller tverrfaglige temaer muntlig"
+    },
+    {
+     "kode": "KM14234",
+     "tekst": "skrive fagartikler som greier ut om og drøfter norskfaglige eller tverrfaglige temaer"
+    },
+    {
+     "kode": "KM14232",
+     "tekst": "bruke fagspråk til å beskrive setningsoppbygningen og sammenhengen mellom setninger i arbeid med tekster"
+    },
+    {
+     "kode": "KM14235",
+     "tekst": "kombinere virkemidler og uttrykksformer kreativt i egen tekstskaping"
+    },
+    {
+     "kode": "KM14228",
+     "tekst": "vurdere og bearbeide egne tekster ut fra tilbakemeldinger og faglige kriterier"
+    },
+    {
+     "kode": "KM14233",
+     "tekst": "skrive tekster med god struktur og tekstbinding og mestre tegnsetting og rettskriving på hovedmål og sidemål"
+    },
+    {
+     "kode": "KM14236",
+     "tekst": "sammenligne særtrekk ved norsk med andre språk og vise hvordan språklige møter kan skape språkendringer"
+    },
+    {
+     "kode": "KM14231",
+     "tekst": "gjøre rede for utbredelsen av de samiske språkene i Norge, fornorskingspolitikken og de språklige rettighetene samer har som urfolk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk på vg1 studieforberedende utdanningsprogram når de uttrykker seg kreativt, og når de utforsker faglige emner med kritisk bruk av kilder og presenterer disse i muntlige og skriftlige tekster med struktur og sammenheng. Elevene viser og utvikler også kompetanse når de bruker kunnskap om språket som system til å utforske og sammenligne språk, og når de reflekterer kritisk over egen og andres bruk av virkemidler i tekster.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide oppdagende og utforskende både alene og sammen med andre. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk muntlig og i skriftlig hovedmål og sidemål. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å reflektere over egen læring og som grunnlag for å bearbeide egne muntlige og skriftlige tekster.",
+    "I halvårsvurderingen skal læreren gi én karakter i norsk muntlig og én i norsk skriftlig. Karakteren i norsk muntlig skal gis på grunnlag av den kompetansen elevene har vist når de har kommunisert faglig innhold muntlig. Karakteren i norsk skriftlig skal gis på grunnlag av kortere og lengre elevtekster i ulike sjangre på både hovedmål og sidemål."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1112",
+   "tittel": "Kompetansemål og vurdering vg2 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR1Z64",
+    "NOR1Z69"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14215",
+     "tekst": "lese norrøne tekster i oversettelse og sammenligne dem med tekster fra nyere tid"
+    },
+    {
+     "kode": "KM14216",
+     "tekst": "lese og tolke tekster fra 1500 til 1850 i kulturhistorisk kontekst og drøfte hvordan de er relevante i dag"
+    },
+    {
+     "kode": "KM14217",
+     "tekst": "utforske og reflektere over hvordan tekster fra romantikken og nasjonalromantikken framstiller menneske, natur og samfunn, og sammenligne med tekster fra nyere tid"
+    },
+    {
+     "kode": "KM14222",
+     "tekst": "reflektere over sakprosatekster og gjøre rede for den retoriske situasjonen de er blitt til i"
+    },
+    {
+     "kode": "KM14219",
+     "tekst": "skrive fagartikler som gjør rede for og drøfter tekster i kontekst"
+    },
+    {
+     "kode": "KM14221",
+     "tekst": "bruke tilbakemeldinger og kunnskap om språk, tekst og sjanger til å utvikle egne tekster"
+    },
+    {
+     "kode": "KM14218",
+     "tekst": "bruke fagkunnskap og retoriske ferdigheter i norskfaglige diskusjoner og presentasjoner"
+    },
+    {
+     "kode": "KM14220",
+     "tekst": "bruke fagspråk til å beskrive særtrekk ved norsk sammenlignet med svensk, dansk og norrønt"
+    },
+    {
+     "kode": "KM14223",
+     "tekst": "gjøre rede for den historiske bakgrunnen for språksituasjonen i Norge i dag"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk på vg2 studieforberedende utdanningsprogram når de tolker tekster i kontekst og sammenligner eldre og nyere tekster i ulike medier og sjangre. Elevene viser og utvikler også kompetanse når de bruker kunnskap om språket som system til å utvikle egne tekster og til å sammenligne språk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene lager egne problemstillinger og arbeider kreativt for å finne svar på disse. Læreren skal legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder lesing av lengre tekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk muntlig og i skriftlig hovedmål og sidemål. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget.",
+    "I halvårsvurderingen skal læreren gi én karakter i norsk muntlig og én i norsk skriftlig. Karakteren i norsk muntlig skal gis på grunnlag av den kompetansen elevene har vist når de har kommunisert faglig innhold muntlig. Karakteren i norsk skriftlig skal gis på grunnlag av kortere og lengre elevtekster i ulike sjangre på både hovedmål og sidemål."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1114",
+   "tittel": "Kompetansemål og vurdering vg3 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR1Z65",
+    "NOR1Z70"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14237",
+     "tekst": "analysere og tolke romaner, noveller, drama, lyrikk og sakprosa på bokmål og nynorsk fra 1850 til i dag og reflektere over tekstene i lys av den kulturhistoriske konteksten og egen samtid"
+    },
+    {
+     "kode": "KM14238",
+     "tekst": "utforske og reflektere over hvordan tekster fra den realistiske og den modernistiske tradisjonen framstiller menneske, natur og samfunn"
+    },
+    {
+     "kode": "KM14246",
+     "tekst": "skrive essay som utforsker og reflekterer over innhold i tekster"
+    },
+    {
+     "kode": "KM14239",
+     "tekst": "skrive litterære tolkninger og sammenligninger"
+    },
+    {
+     "kode": "KM14240",
+     "tekst": "analysere uttrykksformer i sammensatte tekster i ulike medier og vurdere samspillet mellom dem"
+    },
+    {
+     "kode": "KM14243",
+     "tekst": "bruke fagkunnskap og presist fagspråk i utforskende samtaler, diskusjoner og muntlige presentasjoner om norskfaglige emner"
+    },
+    {
+     "kode": "KM14242",
+     "tekst": "skrive retoriske analyser og tolkninger av sakprosatekster"
+    },
+    {
+     "kode": "KM14244",
+     "tekst": "mestre språklige formkrav på hovedmål og sidemål og skrive tekster med etterrettelig kildebruk og et presist og nyansert språk"
+    },
+    {
+     "kode": "KM14245",
+     "tekst": "orientere seg i faglitteratur, vurdere kilder kritisk og skrive fagartikler som greier ut om og drøfter norskfaglige emner"
+    },
+    {
+     "kode": "KM14241",
+     "tekst": "gjøre rede for endringer i talespråk i Norge i dag og reflektere over sammenhenger mellom språk, kultur og identitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk på vg3 studieforberedende utdanningsprogram når de analyserer, tolker og sammenligner tekster og utforsker tekstenes kontekster. Elevene viser og utvikler også kompetanse når de produserer kortere og lengre tekster i ulike sjangre, for ulike formål og mottakere, og når de bearbeider egne tekster. Videre viser og utvikler de kompetanse når de reflekterer over språk og tekst ved bruk av fagspråk, uttrykker seg presist og nyansert muntlig og skriftlig og mestrer språklige formkrav på hovedmål og sidemål.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske faglige problemstillinger og arbeide kreativt for å finne svar på disse. Læreren skal legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder lesing av lengre tekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk muntlig og skriftlig hovedmål og sidemål. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle muntlig og skriftlig kompetanse i faget.",
+    "I halvårsvurderingen skal læreren gi samme antall karakterer som i standpunktvurderingen."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i norsk ved avslutningen av opplæringen etter vg3. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i norsk muntlig basert på kompetansen eleven har vist når eleven har kommunisert faglig innhold muntlig. Læreren skal sette karakter i norsk skriftlig hovedmål og norsk skriftlig sidemål basert på kompetansen eleven har vist i et bredt utvalg elevtekster i ulike sjangre. I vurderingen av norsk skriftlig sidemål skal læreren ta hensyn til at elevene har hatt lengre tid med formell opplæring i hovedmål enn i sidemål."
+   ]
+  },
+  {
+   "kode": "KV1115",
+   "tittel": "Kompetansemål og vurdering vg3 påbygging til generell studiekompetanse",
+   "fag": [
+    "NOR1Z67",
+    "NOR1Z72"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14247",
+     "tekst": "lese norrøne tekster i oversettelse og sammenligne dem med tekster fra nyere tid"
+    },
+    {
+     "kode": "KM14248",
+     "tekst": "lese og tolke tekster fra 1500 til 1850 i kulturhistorisk kontekst og drøfte hvordan de er relevante i dag"
+    },
+    {
+     "kode": "KM14249",
+     "tekst": "utforske og reflektere over hvordan tekster fra romantikken og nasjonalromantikken framstiller menneske, natur og samfunn, og sammenligne med tekster fra nyere tid"
+    },
+    {
+     "kode": "KM14250",
+     "tekst": "reflektere over sakprosatekster og gjøre rede for den retoriske situasjonen de er blitt til i"
+    },
+    {
+     "kode": "KM14251",
+     "tekst": "skrive fagartikler som gjør rede for og drøfter tekster i kontekst"
+    },
+    {
+     "kode": "KM14253",
+     "tekst": "bruke tilbakemeldinger og kunnskap om språk, tekst og sjanger til å utvikle egne tekster"
+    },
+    {
+     "kode": "KM14254",
+     "tekst": "bruke fagkunnskap og retoriske ferdigheter i norskfaglige diskusjoner og presentasjoner"
+    },
+    {
+     "kode": "KM14255",
+     "tekst": "bruke fagspråk til å beskrive særtrekk ved norsk sammenlignet med svensk, dansk og norrønt"
+    },
+    {
+     "kode": "KM14252",
+     "tekst": "gjøre rede for den historiske bakgrunnen for språksituasjonen i Norge i dag"
+    },
+    {
+     "kode": "KM14256",
+     "tekst": "analysere og tolke romaner, noveller, drama, lyrikk og sakprosa på bokmål og nynorsk fra 1850 til i dag og reflektere over tekstene i lys av den kulturhistoriske konteksten og elevens egen samtid"
+    },
+    {
+     "kode": "KM14257",
+     "tekst": "utforske og reflektere over hvordan tekster fra den realistiske og den modernistiske tradisjonen framstiller menneske, natur og samfunn"
+    },
+    {
+     "kode": "KM14264",
+     "tekst": "skrive essay som utforsker og reflekterer over innhold i tekster"
+    },
+    {
+     "kode": "KM14265",
+     "tekst": "skrive litterære tolkninger og sammenlikninger"
+    },
+    {
+     "kode": "KM14258",
+     "tekst": "analysere uttrykksformer i sammensatte tekster i ulike medier og vurdere samspillet mellom dem"
+    },
+    {
+     "kode": "KM14259",
+     "tekst": "bruke fagkunnskap og presist fagspråk i utforskende samtaler, diskusjoner og muntlige presentasjoner om norskfaglige emner"
+    },
+    {
+     "kode": "KM14260",
+     "tekst": "skrive retoriske analyser og tolkninger av sakprosatekster"
+    },
+    {
+     "kode": "KM14261",
+     "tekst": "mestre språklige formkrav på hovedmål og sidemål og skrive tekster med etterrettelig kildebruk og et presist og nyansert språk"
+    },
+    {
+     "kode": "KM14262",
+     "tekst": "orientere seg i faglitteratur, vurdere kilder kritisk og skrive fagartikler som greier ut om og drøfter norskfaglige emner"
+    },
+    {
+     "kode": "KM14263",
+     "tekst": "gjøre rede for endringer i talespråk i Norge i dag og reflektere over sammenhenger mellom språk, kultur og identitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk på vg3 påbygging til generell studiekompetanse når de analyserer, tolker og sammenligner tekster og utforsker tekstenes kontekster. Elevene viser og utvikler også kompetanse når de produserer kortere og lengre tekster i ulike sjangre, for ulike formål og mottakere, og når de bearbeider egne tekster. Videre viser og utvikler de kompetanse når de reflekterer over språk og tekst ved bruk av fagspråk, uttrykker seg presist og nyansert muntlig og skriftlig og mestrer språklige formkrav på hovedmål og sidemål.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske faglige problemstillinger og arbeide kreativt for å finne svar på disse. Læreren skal legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder lesing av lengre tekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk muntlig og i skriftlig hovedmål og sidemål. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle muntlig og skriftlig kompetanse i faget.",
+    "I halvårsvurderingen skal læreren gi samme antall karakterer som i standpunktvurderingen."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i norsk ved avslutningen av opplæringen i norsk etter vg3 påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i norsk muntlig basert på kompetansen eleven har vist når eleven har kommunisert faglig innhold muntlig. Læreren skal sette karakter i norsk skriftlig hovedmål og norsk skriftlig sidemål basert på kompetansen eleven har vist i et bredt utvalg elevtekster i ulike sjangre. I vurderingen av norsk skriftlig sidemål skal læreren ta hensyn til at elevene har hatt lengre tid med formell opplæring i hovedmål enn i sidemål."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "10. trinn: Eleven skal ha tre standpunktkarakterer, én i norsk muntlig, én i norsk skriftlig hovedmål og én i norsk skriftlig sidemål.",
+    "Vg2 yrkesfaglige utdanningsprogram: Eleven skal ha én standpunktkarakter.",
+    "Vg3 studieforberedende utdanningsprogram: Eleven skal ha tre standpunktkarakterer, én i norsk muntlig, én i norsk skriftlig hovedmål og én i norsk skriftlig sidemål.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal ha tre standpunktkarakterer, én i norsk muntlig, én i norsk skriftlig hovedmål og én i norsk skriftlig sidemål."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "10. trinn: Eleven kan trekkes ut til to dagers skriftlig eksamen som omfatter norsk hovedmål og norsk sidemål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg2 yrkesfaglige utdanningsprogram: Eleven kan trekkes ut til skriftlig eksamen i norsk hovedmål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg3 studieforberedende utdanningsprogram: Eleven skal opp til skriftlig eksamen i norsk hovedmål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til skriftlig eksamen i norsk sidemål. I tillegg kan eleven trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal opp til skriftlig eksamen i norsk hovedmål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til skriftlig eksamen i norsk sidemål. I tillegg kan eleven trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "10. trinn: Se gjeldende ordning for grunnskoleopplæring for voksne.",
+    "Vg2 yrkesfaglige utdanningsprogram: Privatisten skal opp til skriftlig eksamen i norsk hovedmål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg3 studieforberedende utdanningsprogram: Privatisten skal opp til skriftlig eksamen både i norsk hovedmål og i norsk sidemål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen både i norsk hovedmål og i norsk sidemål. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

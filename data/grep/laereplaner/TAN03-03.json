@@ -1,0 +1,210 @@
+{
+ "kode": "TAN03-03",
+ "tittel": "Læreplan i vg3 tannhelsesekretær",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV474",
+   "tittel": "Kompetansemål og vurdering smittevern, tannanatomi og fysiologi",
+   "fag": [
+    "TAN3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5213",
+     "tekst": "beskrive tennenes oppbygning, tanndannelse og forstyrrelser i tanndannelsen, og frambrudds- og tannfellingstidspunkter"
+    },
+    {
+     "kode": "KM5234",
+     "tekst": "beskrive kraniets, tyggemusklenes, periodontiets og munnhulens anatomi og fysiologi"
+    },
+    {
+     "kode": "KM5238",
+     "tekst": "informere om legemidlers virkninger og bivirkninger i munnen og kroppen"
+    },
+    {
+     "kode": "KM5239",
+     "tekst": "informere om utviklingen av sykdom i tenner og munnhule og gjøre rede for hvilke konsekvenser slike sykdommer kan ha for fysisk og psykisk helse"
+    },
+    {
+     "kode": "KM5236",
+     "tekst": "veilede pasienter om hvordan levevaner og kosthold henger sammen med og tann- og munnhelse"
+    },
+    {
+     "kode": "KM5237",
+     "tekst": "informere om konsekvenser for tann- og munnhelsen ved bruk av tobakk, snus og rusmidler"
+    },
+    {
+     "kode": "KM5235",
+     "tekst": "gjennomføre praktiske hygienetiltak og smittevernarbeid og gjøre rede for betydningen av slikt arbeid"
+    },
+    {
+     "kode": "KM5233",
+     "tekst": "utføre fysisk og psykologisk førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i smittevern, tannanatomi og fysiologi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i smittevern, tannanatomi og fysiolog. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i smittevern, tannanatomi og fysiolog ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i smittevern, tannanatomi og fysiologi basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV475",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "TAN3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5232",
+     "tekst": "beskrive og drøfte hva profesjonell yrkesutøvelse innebærer for tannhelsesekretæren"
+    },
+    {
+     "kode": "KM5230",
+     "tekst": "beskrive tannhelsesekretærens rolle i tannhelsetjenesten og delta i det tverrfaglige samarbeidet med interne og eksterne aktører"
+    },
+    {
+     "kode": "KM5231",
+     "tekst": "vise omsorg, yte service og kommunisere med pasienter og samarbeidspartnere"
+    },
+    {
+     "kode": "KM5240",
+     "tekst": "ivareta pasienter med odontofobi og pasienter med ulike traumer"
+    },
+    {
+     "kode": "KM5229",
+     "tekst": "informere om pasienters rettigheter og drøfte hva samvalg innebærer for pasienten"
+    },
+    {
+     "kode": "KM5228",
+     "tekst": "bruke korrekt fagterminologi ved journalføring og utarbeiding av planer"
+    },
+    {
+     "kode": "KM5227",
+     "tekst": "vise god telefonkultur, kommunisere digitalt og bruke nettvett"
+    },
+    {
+     "kode": "KM5225",
+     "tekst": "drøfte yrkesetiske dilemmaer i yrkesutøvelsen og bruke strategier for konflikthåndtering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV476",
+   "tittel": "Kompetansemål og vurdering yrkesliv i tannhelsesekretærfaget",
+   "fag": [
+    "TAN3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5226",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM5224",
+     "tekst": "bruke og vedlikeholde digitale og analoge instrumenter og utstyr"
+    },
+    {
+     "kode": "KM5217",
+     "tekst": "bruke elektroniske pasientjournalsystemer i samsvar med gjeldende lovverk"
+    },
+    {
+     "kode": "KM5223",
+     "tekst": "klargjøre behandlingsrommet før og etter pasientbehandling i henhold til faglige anbefalinger for smittevern i odontologisk praksis"
+    },
+    {
+     "kode": "KM5222",
+     "tekst": "bruke riktig opptaksteknikk ved dentale røntgenbilder i tråd med strålehygieniske retningslinjer og vurdere kvaliteten på røntgenbildene"
+    },
+    {
+     "kode": "KM5221",
+     "tekst": "utføre klinikkadministrative oppgaver"
+    },
+    {
+     "kode": "KM5241",
+     "tekst": "beregne kostnader, fakturere og ta imot betaling etter pasientbehandling"
+    },
+    {
+     "kode": "KM5219",
+     "tekst": "assistere ved ulike tannbehandlinger og informere pasienten om behandlingen"
+    },
+    {
+     "kode": "KM5218",
+     "tekst": "utføre enkelt laboratoriearbeid"
+    },
+    {
+     "kode": "KM5220",
+     "tekst": "arbeide i tråd med gjeldende regler for helse, miljø og sikkerhet og håndtere materialer og kjemiske stoffer i tråd med forskrift for internkontroll"
+    },
+    {
+     "kode": "KM5214",
+     "tekst": "sortere og håndtere avfall og biologisk og kjemisk materiale på en miljøbevisst og forsvarlig måte"
+    },
+    {
+     "kode": "KM5216",
+     "tekst": "bruke riktige arbeidsteknikker og gode arbeidsstillinger på tannklinikken, og gjøre rede for sammenhengen mellom ergonomi og helse"
+    },
+    {
+     "kode": "KM5215",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utføre sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i tannhelsesekretærfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i tannhelsesekretærfaget. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i tannhelsesekretærfaget ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i tannhelsesekretærfaget basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Smittevern, tannanatomi og fysiologi: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i tannhelsesekretærfaget: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Smittevern, tannanatomi og fysiologi, kommunikasjon og samhandling og yrkesliv i tannhelsesekretærfaget: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Smittevern, tannanatomi og fysiologi: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i tannhelsesekretærfaget: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Smittevern, tannanatomi og fysiologi, kommunikasjon og samhandling og yrkesliv i tannhelsesekretærfaget: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

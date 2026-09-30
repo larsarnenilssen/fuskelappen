@@ -1,0 +1,136 @@
+{
+ "kode": "IMP03-02",
+ "tittel": "Læreplan i vg3 industriell matproduksjon",
+ "spraak": "nno",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV654",
+   "tittel": "Kompetansemål og vurdering vg3 industriell matproduksjon",
+   "fag": [
+    "IMP3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8014",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere produksjon av mat- og drikkevarer frå råvare til ferdigvare"
+    },
+    {
+     "kode": "KM8013",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere samanhengen mellom vareflyt, svinn og ressursutnytting"
+    },
+    {
+     "kode": "KM8023",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personleg hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med rutinane og regelverket til verksemda, og gjere greie for konsekvensar av avvik"
+    },
+    {
+     "kode": "KM8016",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystem og reflektere over kor viktig dette arbeidet er for verksemda, kundar og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM8026",
+     "tekst": "anvende råvarer og hjelpe- og tilsetjingsstoff og forklare korleis produktsamansetning og produksjonsprosessar påverkar kvalitet, næringsinnhald og haldbarheit"
+    },
+    {
+     "kode": "KM8034",
+     "tekst": "tolke og følgje flytskjema og forklare kva som skjer i produksjonsprosessen, identifisere kontrollpunkt og forklare kva som kan vere kritisk"
+    },
+    {
+     "kode": "KM8033",
+     "tekst": "klargjere, drifte, overvake og omstille maskiner og utstyr og forklare korleis dette påverkar effektivitet"
+    },
+    {
+     "kode": "KM8030",
+     "tekst": "bruke verktøy, maskiner og utstyr på ein kvalifisert måte, utføre førebyggjande dagleg vedlikehald og operatørvedlikehald, rapportere feil og gjere greie for konsekvensar ved avvik"
+    },
+    {
+     "kode": "KM8032",
+     "tekst": "identifisere og rette driftsforstyrringar, registrere og gjere greie for bruken av driftsdata"
+    },
+    {
+     "kode": "KM8017",
+     "tekst": "gjere greie for og produsere etter ein produksjonsplan og spesifikasjonar og drøfte korleis dette kan bidra til å etterleve kundekrav"
+    },
+    {
+     "kode": "KM8019",
+     "tekst": "anvende emballerings- og lagringsmetodar og gjere greie for korleis dette påverkar kvalitet og ressursutnytting"
+    },
+    {
+     "kode": "KM8020",
+     "tekst": "reflektere over korleis ønskte og uønskte mikroorganismar kan påverke råvarer, halvfabrikata og ferdigvarer, og gjere greie for tiltak for å styre førekomsten"
+    },
+    {
+     "kode": "KM8036",
+     "tekst": "gjere greie for og følgje rutinar for skadedyrnedkjemping i verksemda"
+    },
+    {
+     "kode": "KM8015",
+     "tekst": "gjennomføre berekningar og enkle kalkulasjonar og drøfte faktorar som påverkar dei økonomiske resultata til verksemda"
+    },
+    {
+     "kode": "KM8031",
+     "tekst": "samarbeide med støttefunksjonar i verksemda for å sikre effektiv drift, og gjere greie for kva faktorar som påverkar produktiviteten"
+    },
+    {
+     "kode": "KM8028",
+     "tekst": "gjere greie for og handtere avfall i verksemda og reflektere over korleis avfall og utslepp påverkar miljøet"
+    },
+    {
+     "kode": "KM8027",
+     "tekst": "følgje krav og rutinar for merking og sporing og reflektere over konsekvensar ved avvik"
+    },
+    {
+     "kode": "KM8022",
+     "tekst": "drøfte etiske dilemma ved produksjon og omsetning av mat- og drikkevarer og gjere medvitne og berekraftige val"
+    },
+    {
+     "kode": "KM8018",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tileigne seg kunnskap, og kommunisere presist og forståeleg i samhandling med kollegaer og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM8021",
+     "tekst": "utvikle faglege ferdigheiter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbetringsarbeid i verksemda"
+    },
+    {
+     "kode": "KM8025",
+     "tekst": "følgje rutinar og reglar for helse, miljø og sikkerheit, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til eit trygt og inkluderande arbeidsmiljø"
+    },
+    {
+     "kode": "KM8035",
+     "tekst": "gjere greie for rammevilkår, lover og forskrifter og forklare kva rolle tilsynsmyndigheitene har overfor verksemda"
+    },
+    {
+     "kode": "KM8037",
+     "tekst": "reflektere over korleis samhandling i eit fagleg og kollegialt yrkesfellesskap kan fremje likeverd og likestilling"
+    },
+    {
+     "kode": "KM8024",
+     "tekst": "beskrive måla og historia til verksemda og reflektere over korleis dette påverkar dagleg drift"
+    },
+    {
+     "kode": "KM8029",
+     "tekst": "gjere greie for organiseringa av verksemda, rettane og pliktene til arbeidstakaren og arbeidsgivaren, korleis partane i arbeidslivet samarbeider, og korleis dette bidreg til å utvikle eit betre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 industriell matproduksjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 industriell matproduksjon. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 industriell matproduksjon skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
+   ]
+  }
+ ]
+}

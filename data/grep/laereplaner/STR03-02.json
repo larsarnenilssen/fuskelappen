@@ -1,0 +1,132 @@
+{
+ "kode": "STR03-02",
+ "tittel": "Læreplan i vg3 strikkefaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV636",
+   "tittel": "Kompetansemål og vurdering vg3 strikkefaget",
+   "fag": [
+    "STR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7632",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM7614",
+     "tekst": "ta mål, rekne ut strikkefastleik og berekne materialbehov ut frå prosjekt, kundebestillingar og produkt for sal"
+    },
+    {
+     "kode": "KM7611",
+     "tekst": "nytte digitale ressursar og programvare i produksjonsprosessen"
+    },
+    {
+     "kode": "KM7627",
+     "tekst": "utvikle og utarbeide idear til produkt og tenester manuelt og digitalt og nytte dette i eige arbeid"
+    },
+    {
+     "kode": "KM7621",
+     "tekst": "eksperimentere med snitt, form, farge og materiale"
+    },
+    {
+     "kode": "KM7628",
+     "tekst": "utarbeide mønster og oppskrifter for hand- og maskinstrikk ut frå ønskt form, funksjon, kvalitet og haldbarheit"
+    },
+    {
+     "kode": "KM7631",
+     "tekst": "analysere oppbygginga, eigenskapane og bruksområda til ulike materiale og bruke denne kunnskapen i eige arbeid"
+    },
+    {
+     "kode": "KM7620",
+     "tekst": "velje og bruke ulike materiale og gjere greie for korleis ulike val påverkar haldbarheit, kvalitet og gjenbruk"
+    },
+    {
+     "kode": "KM7630",
+     "tekst": "vurdere eigna strikkefastleik ut frå materiale, produkt og bruksområde og velje eigna verktøy"
+    },
+    {
+     "kode": "KM7615",
+     "tekst": "nytte manuelt og maskinelt verktøy til å utføre ulike strikketeknikkar"
+    },
+    {
+     "kode": "KM7622",
+     "tekst": "vurdere balanse og heilskap ved ulik bruk av mønster, tekstur, struktur og snitt på strikka produkt"
+    },
+    {
+     "kode": "KM7625",
+     "tekst": "montere, tilpasse og etterbehandle strikkeproduktet både for hand og med maskin"
+    },
+    {
+     "kode": "KM7612",
+     "tekst": "reparere og halde produkt ved like og gjere greie for korleis ulike val påverkar haldbarheit og bruksverdi"
+    },
+    {
+     "kode": "KM7629",
+     "tekst": "analysere lokale teknikkar, strikketradisjonar og historisk materiale og nytte dette til vidareutvikling og nyskaping"
+    },
+    {
+     "kode": "KM7619",
+     "tekst": "utforske særpreg, motar og trendar i strikkefaget og bruke denne kunnskapen som inspirasjon i eige arbeid i produksjonen"
+    },
+    {
+     "kode": "KM7624",
+     "tekst": "kommunisere på fagspråk og rettleie kundar, kollegaer og samarbeidspartnarar om design, materiale og fargeval"
+    },
+    {
+     "kode": "KM7618",
+     "tekst": "presentere og marknadsføre produkt og tenester munnleg og digitalt"
+    },
+    {
+     "kode": "KM7626",
+     "tekst": "gjere greie for gjeldande lovverk om opphavsrett og marknadsføring og følgje dette i eige arbeid"
+    },
+    {
+     "kode": "KM7613",
+     "tekst": "berekne tid og pris på eigne produkt, prosjekt og tenester, gjere innkjøp og vurdere samanhengen mellom materialval, produktivitet og lønnsemd"
+    },
+    {
+     "kode": "KM7623",
+     "tekst": "finne informasjon for å drøfte faglege spørsmål og problemstillingar, og bruke kjeldene på ein måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7617",
+     "tekst": "halde orden på arbeidsplassen og halde ved like utstyr, verktøy og maskiner, i samsvar med gjeldande regelverk for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM7633",
+     "tekst": "følgje gjeldande regelverk for tekstilproduksjon og vedlikehaldsmerking"
+    },
+    {
+     "kode": "KM7616",
+     "tekst": "nytte formålstenlege ergonomiske arbeidsstillingar i produksjonsprosessen"
+    },
+    {
+     "kode": "KM7634",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 strikkefaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 strikkefaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 strikkefaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som normalt skal gjennomførast innanfor ei tidsramme på 7–10 vyrkedagar."
+   ]
+  }
+ ]
+}

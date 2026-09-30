@@ -1,0 +1,156 @@
+{
+ "kode": "HEA03-03",
+ "tittel": "Læreplan i vg3 helsearbeiderfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV490",
+   "tittel": "Kompetansemål og vurdering helsearbeiderfaget",
+   "fag": [
+    "HEA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5447",
+     "tekst": "vurdere, planlegge og gjennomføre tiltak som øker pasienters og brukeres helsekompetanse"
+    },
+    {
+     "kode": "KM5455",
+     "tekst": "planlegge og gjennomføre tiltak som fremmer trivsel og bidrar til økt livskvalitet for brukere og pasienter gjennom livsløpet"
+    },
+    {
+     "kode": "KM5453",
+     "tekst": "planlegge og gjennomføre grunnleggende sykepleie for akutt og kronisk syke og mennesker med sammensatte og komplekse behov"
+    },
+    {
+     "kode": "KM5448",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere forebyggende, habiliterende og rehabiliterende pleie og omsorgstiltak"
+    },
+    {
+     "kode": "KM5464",
+     "tekst": "kartlegge pasienters og brukeres funksjonsnivå og omsorgsbehov og utføre grunnleggende sykepleie og miljøarbeid tilpasset brukere og pasienter i alle aldre"
+    },
+    {
+     "kode": "KM5460",
+     "tekst": "observere symptomer på psykiske lidelser og rusmisbruk og foreslå tiltak"
+    },
+    {
+     "kode": "KM5454",
+     "tekst": "identifisere og kartlegge ernæringsbehov hos brukere og pasienter i samarbeid med andre yrkesgrupper og tilberede måltider og som er i tråd med kostrådene fra helsemyndighetene"
+    },
+    {
+     "kode": "KM5449",
+     "tekst": "identifisere tegn på omsorgssvikt, vold og overgrep og andre bekymringsfulle forhold, og iverksette tiltak i tråd med virksomhetens rutiner og prosedyrer"
+    },
+    {
+     "kode": "KM5463",
+     "tekst": "gi helhetlig omsorg til alvorlig syke, døende og ta vare på deres pårørende"
+    },
+    {
+     "kode": "KM5473",
+     "tekst": "kommunisere, samhandle og bruke relasjonskompetanse i møte med pasienter, brukere og pårørende fra ulike kulturer og med ulik mulighet til å kommunisere"
+    },
+    {
+     "kode": "KM5456",
+     "tekst": "observere og vurdere systematisk tilstand og endringer hos pasienter og brukere og dokumentere i digitale journalsystemer"
+    },
+    {
+     "kode": "KM5472",
+     "tekst": "orientere i samarbeid med annet helsepersonell, pasienter, brukere og pårørende om deres rettigheter til helse- og omsorgstjenester"
+    },
+    {
+     "kode": "KM5474",
+     "tekst": "vurdere pasienters og brukeres behov for hjelpemidler og velferdsteknologi og veilede i bruken av disse"
+    },
+    {
+     "kode": "KM5458",
+     "tekst": "bruke digitale kommunikasjonsverktøy og veilede pasienter, brukere og pårørende om bruk av slike verktøy"
+    },
+    {
+     "kode": "KM5461",
+     "tekst": "bidra i tverrfaglig samarbeid for å sikre helhetlige pasientforløp"
+    },
+    {
+     "kode": "KM5470",
+     "tekst": "gjøre rede for strategier for konflikthåndtering og forebygge konflikter i praksis"
+    },
+    {
+     "kode": "KM5459",
+     "tekst": "samarbeide med frivillige organisasjoner og andre aktører om å tilrettelegge for helsefremmende tiltak"
+    },
+    {
+     "kode": "KM5475",
+     "tekst": "utføre faglig og etisk forsvarlig helsehjelp i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM5468",
+     "tekst": "følge gjeldende regelverk for legemiddelhåndtering og observere, rapportere og dokumentere virkningene og bivirkningene av legemidler"
+    },
+    {
+     "kode": "KM5476",
+     "tekst": "bruke relevant medisinsk utstyr ved observasjon og vurdering av tilstanden til pasienter og brukere"
+    },
+    {
+     "kode": "KM5467",
+     "tekst": "utføre førstehjelp etter gjeldende retningslinjer og følge rutiner for varsling"
+    },
+    {
+     "kode": "KM5471",
+     "tekst": "utføre arbeid etter gjeldende retningslinjer for hygiene og gjennomføre smitteverntiltak"
+    },
+    {
+     "kode": "KM5457",
+     "tekst": "forstå og overholde gjeldende regelverk om taushetsplikt og personvern og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5462",
+     "tekst": "følge gjeldende regelverk ved bruk av tvang og reflektere over egen maktposisjon i møte med pasienter og brukere"
+    },
+    {
+     "kode": "KM5452",
+     "tekst": "ivareta pasient- og brukermedvirkning i arbeidet"
+    },
+    {
+     "kode": "KM5450",
+     "tekst": "reflektere over og ta miljøbevisste valg i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5466",
+     "tekst": "gjennomføre arbeidet etter gjeldende regelverk for helse, miljø og sikkerhet, følge rutiner for uønskede hendelser og internkontroller og arbeide for kontinuerlig kvalitetsforbedring"
+    },
+    {
+     "kode": "KM5469",
+     "tekst": "bruke ergonomiske prinsipper i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5465",
+     "tekst": "reflektere over hva det vil si å være en profesjonell helsefagarbeider, og praktisere dette i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5451",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet, og gjøre rede for hvordan partene i arbeidslivet utføre sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 helsearbeiderfaget når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i helsearbeiderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 helsearbeiderfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på to til tre virkedager."
+   ]
+  }
+ ]
+}

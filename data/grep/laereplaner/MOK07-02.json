@@ -1,0 +1,86 @@
+{
+ "kode": "MOK07-02",
+ "tittel": "Læreplan i medieutvikling",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV563",
+   "tittel": "Kompetansemål og vurdering medieutvikling",
+   "fag": [
+    "MOK7Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6513",
+     "tekst": "bruke ulike metoder for idéutvikling og utvikle og visualisere produksjon av prototyper"
+    },
+    {
+     "kode": "KM6514",
+     "tekst": "diskutere hvordan man kan benytte ny teknologi innenfor medier og utforske og visualisere ideer og konsepter knyttet til dette"
+    },
+    {
+     "kode": "KM6515",
+     "tekst": "utforske, planlegge, gjennomføre og dokumentere ulike kommunikasjonsstrategier for ulike målgrupper"
+    },
+    {
+     "kode": "KM6516",
+     "tekst": "produsere målrettet og engasjerende innhold og utvikle løsninger som møter et behov, eller som skaper et behov"
+    },
+    {
+     "kode": "KM6517",
+     "tekst": "presentere og drøfte hvordan bruk av ulike former for teknologi kan føre til endringer i kommunikasjonsformer og brukeropplevelser"
+    },
+    {
+     "kode": "KM6518",
+     "tekst": "utforske og bruke utstyr og digitale verktøy tilpasset medium og publiseringsplattform"
+    },
+    {
+     "kode": "KM6519",
+     "tekst": "reflektere over valg under hele produksjonsprosessen ved utprøving av ny eller eksisterende teknologi og bruke fagterminologi for å beskrive dette"
+    },
+    {
+     "kode": "KM6520",
+     "tekst": "drøfte hvordan sosiale, økonomiske og miljømessige forhold er knyttet til utvikling, produksjon og bruk av medieteknologi og utvikle egne konsepter"
+    },
+    {
+     "kode": "KM6521",
+     "tekst": "gjennomføre en pitch av et konsept og kunne begrunne egne valg"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i medieutvikling. Elevene viser og utvikler kompetanse i faget når de utvikler ideer, produserer prototyper og konsepter. Elevene viser og utvikler også kompetanse når de lager innhold innenfor ulike medier, tilpasset ulike målgrupper. Videre viser elevene kompetanse når de bruker eksempler for å diskutere medie- og teknologiutvikling og påvirkningen den har på kommunikasjonsformer og samfunnsstrukturer.Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom arbeid der elevene får anledning til å utfolde seg kreativt og vise skaperglede.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom at elevene får ta i bruk ulike arbeidsmetoder og får tilbakemeldinger i ulike former knyttet til arbeidsprosesser og presentasjoner. Læreren skal være i dialog med elevene om utviklingen deres i arbeid med idé og konseptutvikling, produksjoner og prosjekter, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle sin kompetanse i faget medieutvikling."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter medieutvikling. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i medieutvikling basert på kompetansen eleven har vist gjennom arbeid i faget medieutvikling."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Medieutvikling: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Medieutvikling: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Medieutvikling: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatistene skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

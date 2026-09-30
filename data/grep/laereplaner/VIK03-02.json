@@ -1,0 +1,120 @@
+{
+ "kode": "VIK03-02",
+ "tittel": "Læreplan i vg3 viklerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV736",
+   "tittel": "Kompetansemål og vurdering vg3 viklerfaget",
+   "fag": [
+    "VIK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9603",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i viklerfaget i henhold til gjeldende regelverk og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9617",
+     "tekst": "utføre arbeidet fagmessig, nøyaktig og selvstendig og sammen med andre i henhold til forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9619",
+     "tekst": "vurdere forventet tidsforbruk og kostnad før arbeid igangsettes, og vurdere miljømessige forhold og lønnsomhet til reparasjonen"
+    },
+    {
+     "kode": "KM9620",
+     "tekst": "demontere og montere elektriske maskiner, bytte komponenter og gjøre rede for maskinens merkedata, oppbygning, virkemåte og bruksområde"
+    },
+    {
+     "kode": "KM9618",
+     "tekst": "inspisere ved hjelp av ulike sanser på elektrisk maskin og vurdere maskinens tilstand"
+    },
+    {
+     "kode": "KM9621",
+     "tekst": "utføre diagnose og mekanisk reparasjon og modifikasjon på elektriske maskiner og tilhørende utstyr og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM9616",
+     "tekst": "bygge, vedlikeholde og reparere magnetiske materialer og gjøre rede for jern- og kobbertap i maskin"
+    },
+    {
+     "kode": "KM9615",
+     "tekst": "gjennomføre ulike former for impregnering, lakkering og tørking av elektriske maskiner og gjøre rede for herdetid og -temperatur"
+    },
+    {
+     "kode": "KM9614",
+     "tekst": "vikle og anvende riktig tråd, isolasjon og termineringsutstyr og gjøre rede for elektriske, mekaniske og termiske egenskaper til tråd og isolasjon"
+    },
+    {
+     "kode": "KM9622",
+     "tekst": "montere og teste viklinger i elektriske maskiner, utarbeide teknisk dokumentasjon og forklare prinsipper for klassifisering av maskiner"
+    },
+    {
+     "kode": "KM9613",
+     "tekst": "arbeide på elektriske maskiner ved hjelp av egnet verktøy og verktøymaskiner og gjøre rede for vedlikehold av verktøy og sikkerhetsrutiner ved bruk av verktøymaskiner"
+    },
+    {
+     "kode": "KM9611",
+     "tekst": "teste, feilsøke og bytte sensorer og varmeelement i elektriske maskiner og gjøre rede for hva som er hensikten med sensor og varmeelement, og hvordan de fungerer"
+    },
+    {
+     "kode": "KM9610",
+     "tekst": "feilsøke systematisk og reparere elektriske maskiner med tilhørende utstyr og vurdere måleresultater med beregnede verdier"
+    },
+    {
+     "kode": "KM9609",
+     "tekst": "omvikle og teste elektriske maskiner og gjøre rede for oppstarts- og testrutiner"
+    },
+    {
+     "kode": "KM9608",
+     "tekst": "kontrollere og vedlikeholde kapsling på elektriske maskiner med ulike beskyttelsesgrader og gjøre rede for arbeid på utstyr i eksplosjonsfarlige områder"
+    },
+    {
+     "kode": "KM9607",
+     "tekst": "måle tilført og avgitt effekt på elektriske maskiner med tilhørende utstyr, beregne maskinens virkningsgrad og vurdere effektivitetsnivå"
+    },
+    {
+     "kode": "KM9606",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9605",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9604",
+     "tekst": "drøfte etiske dilemmaer ved valg av materialer og komponenter og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9612",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9623",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 viklerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 viklerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 viklerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

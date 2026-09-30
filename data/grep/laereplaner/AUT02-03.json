@@ -1,0 +1,192 @@
+{
+ "kode": "AUT02-03",
+ "tittel": "Læreplan i vg2 automatisering",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV463",
+   "tittel": "Kompetansemål og vurdering automatiseringssystemer",
+   "fag": [
+    "AUT2Z03",
+    "AUT2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5086",
+     "tekst": "risikovurdere og utføre arbeidet på automatiseringssystemer fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM5093",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere yrkesoppgaver knyttet til automatiseringssystemer individuelt og i samarbeid med andre og begrunne valg som er gjort"
+    },
+    {
+     "kode": "KM5095",
+     "tekst": "montere, sette i drift, programmere og funksjonsteste programmerbare styringssystemer knyttet til elektriske motoranlegg og hydrauliske og pneumatiske anlegg"
+    },
+    {
+     "kode": "KM5090",
+     "tekst": "løse automatiseringsoppgaver ved å programmere og funksjonsteste en industrirobot og gjøre rede for roboters funksjon og bruksområder"
+    },
+    {
+     "kode": "KM5069",
+     "tekst": "montere, kalibrere og sette i drift flere typer reguleringssløyfer for å oppnå ønsket resultat og å gjøre rede for komponentenes og kretsenes funksjon og virkemåte"
+    },
+    {
+     "kode": "KM5088",
+     "tekst": "montere, sette i drift og funksjonsteste maskin-til-maskin-kommunikasjon i automatiserte anlegg, gjøre rede for komponentenes virkemåte og vurdere tiltak for å etablere et sikkert elektronisk kommunikasjonsnett"
+    },
+    {
+     "kode": "KM5092",
+     "tekst": "installere og konfigurere menneske–maskin-grensesnitt (HMI) for et automatiseringssystem og gjøre rede for bruksområdene"
+    },
+    {
+     "kode": "KM5094",
+     "tekst": "utforske og koble sensorer til et automatisert styresystem, utføre målinger på disse og gjøre rede for digitale og analoge signaler"
+    },
+    {
+     "kode": "KM5089",
+     "tekst": "utvikle og bygge et selvvalgt produkt hvor sensorer og programmerbare elektroniske komponenter inngår"
+    },
+    {
+     "kode": "KM5087",
+     "tekst": "framstille mekaniske komponenter og deler ved riktig bruk av håndverktøy, maskiner og additiv tilvirkningsmetode, utføre sammenføyingsmetoder, som låsing av skrueforbindelser, liming, poppnagling og lodding, og vurdere kvaliteten på arbeidet"
+    },
+    {
+     "kode": "KM5091",
+     "tekst": "utføre systematisk feilsøking i automatiseringssystemer ved hjelp av riktige instrumenter, programmer og dokumentasjon og ta hensyn til måleinstrumentets nøyaktighet"
+    },
+    {
+     "kode": "KM5085",
+     "tekst": "gjøre rede for ulike energibærere og hvordan justering av styre- og reguleringssystemene påvirker energiforbruket"
+    },
+    {
+     "kode": "KM5083",
+     "tekst": "kildesortere avfall etter eget arbeid i samsvar med internkontrollsystemet og beskrive klima- og miljøbelastningen av ulike komponenter og materialer i faget automatiseringssystemer"
+    },
+    {
+     "kode": "KM5096",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM5084",
+     "tekst": "vurdere hvordan styre- og reguleringssystemer bidrar i samfunnsutviklingen i et miljø- og bærekraftperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i automatiseringssystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i automatiseringssystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i automatiseringssystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i automatiseringssystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV464",
+   "tittel": "Kompetansemål og vurdering elenergisystemer",
+   "fag": [
+    "AUT2Z04",
+    "AUT2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5077",
+     "tekst": "risikovurdere og utføre arbeidet i elenegisystemer fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM5080",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere yrkesoppgaver knyttet til elenergisystemer individuelt og i samarbeid med andre og begrunne valg som er gjort"
+    },
+    {
+     "kode": "KM5097",
+     "tekst": "utføre sluttkontroll av yrkesoppgaver og vurdere måleresultatet opp mot gjeldende regelverk og beregnede verdier"
+    },
+    {
+     "kode": "KM5076",
+     "tekst": "utføre arbeid i elenergisystemer i overensstemmelse med regler for elsikkerhet og utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM5081",
+     "tekst": "installere, sette i drift og dokumentere automatiserte anlegg i bygg og fordelingsanlegg i industri basert på ulike spenningssystemer og installasjonsmetoder med tilhørende jordingssystemer"
+    },
+    {
+     "kode": "KM5071",
+     "tekst": "velge ledning, kabel og vern og dokumentere beskyttelse mot overbelastning, elektrisk sjokk og kortslutning basert på beregninger"
+    },
+    {
+     "kode": "KM5079",
+     "tekst": "montere, koble opp, sette i drift og funksjonsteste flere typer motordrift, gjøre rede for ulike start- og reguleringsmetoder og krav til effektivitetsnivå på motorer"
+    },
+    {
+     "kode": "KM5078",
+     "tekst": "koble opp og funksjonsteste en avbruddsfri spenningsforsyning og gjøre rede for anleggets virkemåte"
+    },
+    {
+     "kode": "KM5075",
+     "tekst": "identifisere, vurdere og iverksette tiltak i forbindelse med elektriske støykilder"
+    },
+    {
+     "kode": "KM5073",
+     "tekst": "feilsøke, reparere og vedlikeholde elektromotorer og gjøre rede for ulike typer transformatorer, generatorer og elektriske motorer"
+    },
+    {
+     "kode": "KM5074",
+     "tekst": "utføre systematisk feilsøking i elenergisystemer ved hjelp av riktige måleinstrumenter og dokumentasjon og ta hensyn til måleinstrumentets nøyaktighet"
+    },
+    {
+     "kode": "KM5072",
+     "tekst": "kildesortere avfall etter eget arbeid i samsvar med internkontrollsystemet og beskrive klima- og miljøbelastningen av ulike komponenter og materialer i faget elenergisystemer"
+    },
+    {
+     "kode": "KM5070",
+     "tekst": "reflektere over betydningen av å mestre et fag og hvordan dette påvirker egen livskvalitet"
+    },
+    {
+     "kode": "KM5082",
+     "tekst": "utforske metoder for å håndtere meningsforskjeller"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elenergisystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elenergisystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elenergisystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elenergisystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Automatiseringssystemer: Eleven skal ha én standpunktkarakter.",
+    "Elenergisystemer: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Automatiseringssystemer og elenergisystemer: Elevene skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen skal ha forberedelsesdel. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Automatiseringssystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elenergisystemer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Automatiseringssystemer og elenergisystemer: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  }
+ ]
+}

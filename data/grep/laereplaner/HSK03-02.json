@@ -1,0 +1,128 @@
+{
+ "kode": "HSK03-02",
+ "tittel": "Læreplan i vg3 herreskredderfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV642",
+   "tittel": "Kompetansemål og vurdering vg3 herreskredderfaget",
+   "fag": [
+    "HSK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7742",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7746",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7740",
+     "tekst": "utforske og anvende trender, moter og stilhistorie innen herreskredderfaget i reparasjon og som inspirasjon i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM7762",
+     "tekst": "bruke fagspråk og tegning i kommunikasjon med kunder, leverandører og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM7757",
+     "tekst": "utarbeide og bruke idéskisser, arbeidstegninger og annen dokumentasjon som grunnlag for design og konstruksjon"
+    },
+    {
+     "kode": "KM7760",
+     "tekst": "veilede kunder i valg av passform, snitt, materialer og farger"
+    },
+    {
+     "kode": "KM7758",
+     "tekst": "ta nødvendige kroppsmål og vurdere kundens kroppsform og holdning og bruke denne kunnskapen til å utforme og tilpasse ulike plagg"
+    },
+    {
+     "kode": "KM7761",
+     "tekst": "konstruere, bearbeide og tilpasse mønstre og gjøre tilskjæring med nødvendige merker og informasjon for videre tilvirking av spesialtilpassede plagg"
+    },
+    {
+     "kode": "KM7756",
+     "tekst": "analysere de ulike materialenes egenskaper, kvaliteter og anvendelsesområder og gjøre rede for hvordan ulike valg påvirker ønsket form, funksjon og resultat"
+    },
+    {
+     "kode": "KM7759",
+     "tekst": "anvende og utnytte materialer på en hensiktsmessig og bærekraftig måte i ny produksjon, reparasjoner og omsøm"
+    },
+    {
+     "kode": "KM7752",
+     "tekst": "vurdere og anvende tradisjonelle hånd- og maskinsømteknikker ut fra behov, ønsket uttrykk og kvalitet"
+    },
+    {
+     "kode": "KM7754",
+     "tekst": "vurdere behov for innleggsmateriale og oppbygging av forskjellige materialer og plagg ut fra kundens ønsker og kroppsfasong"
+    },
+    {
+     "kode": "KM7753",
+     "tekst": "vurdere behov for, framstille og tilpasse fôring i ulike plagg ut fra plaggets material og bruk"
+    },
+    {
+     "kode": "KM7755",
+     "tekst": "utføre plasseringer og festeanordninger av fagets særegne innleggsmaterialer og fôr tilpasset materiale, form og bruk"
+    },
+    {
+     "kode": "KM7751",
+     "tekst": "utarbeide og plassere ulike lommer, krager, slag og andre detaljer med tradisjonelle søm- og formingsteknikker med underpress"
+    },
+    {
+     "kode": "KM7749",
+     "tekst": "planlegge og gjennomføre innprøvinger på kunden med nødvendige justeringer som balanse, snitt og merkinger for videre produksjon"
+    },
+    {
+     "kode": "KM7748",
+     "tekst": "ferdigstille ulike plagg med fôrisetting, prikkstikninger, knapphull og avpress"
+    },
+    {
+     "kode": "KM7747",
+     "tekst": "gjøre rede for ulike metoder og alternativer for vask og vedlikehold av ulike materialer og plagg"
+    },
+    {
+     "kode": "KM7744",
+     "tekst": "beregne tidsforbruk og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, kvalitet, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7741",
+     "tekst": "reflektere over og sammenligne lokal, nasjonal og internasjonal klesbransje ut fra en etisk produksjon, økonomiske forhold, bærekraft og miljø og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7743",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7745",
+     "tekst": "velge hensiktsmessige arbeidsstillinger og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet på verkstedet"
+    },
+    {
+     "kode": "KM7750",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 herreskredderfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 herreskredderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 herreskredderfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst åtte virkedager."
+   ]
+  }
+ ]
+}

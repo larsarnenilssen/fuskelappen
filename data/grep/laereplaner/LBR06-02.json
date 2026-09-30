@@ -1,0 +1,101 @@
+{
+ "kode": "LBR06-02",
+ "tittel": "Læreplan i Vg3 økologisk landbruk",
+ "spraak": "nno",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV611",
+   "tittel": "Kompetansemål og vurdering vg3 økologisk landbruk",
+   "fag": [
+    "LBR6Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7131",
+     "tekst": "stelle husdyr og tilpasse husdyrrom i samsvar med naturleg åtferd hos husdyr og regelverk for økologisk landbruk"
+    },
+    {
+     "kode": "KM7121",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere ein landbruksproduksjon ut frå hovudprinsippa for økologisk landbruksproduksjon"
+    },
+    {
+     "kode": "KM7120",
+     "tekst": "gjere greie for idégrunnlaget for økologisk landbruk og vurdere dette i eit miljø- og klimaperspektiv"
+    },
+    {
+     "kode": "KM7122",
+     "tekst": "beskrive og vurdere politiske mål, politiske verkemiddel og regelverk for økologisk landbruk"
+    },
+    {
+     "kode": "KM7123",
+     "tekst": "vurdere marknaden for økologiske produkt, og planleggje og utføre sal av eit produkt"
+    },
+    {
+     "kode": "KM7126",
+     "tekst": "planleggje, gjennomføre og vurdere bruk av ulike gjødselskjelder for ei økologisk driftseining"
+    },
+    {
+     "kode": "KM7124",
+     "tekst": "greie ut om generell jordøkologi og funksjonen til viktige jordorganismar og kva innverknad dei har på jordsmonnet, og vurdere jordprofil ut frå dette"
+    },
+    {
+     "kode": "KM7125",
+     "tekst": "treffe tiltak for å auke det biologiske mangfaldet og bindinga av karbon i jord, og beskrive omsetninga av organiske og uorganiske stoff i jord"
+    },
+    {
+     "kode": "KM7127",
+     "tekst": "beskrive kva faktorar som påverkar biologisk nitrogenfiksering hos belgvekstar, og rekne ut mengda nitrogen som belgvekstane tilfører"
+    },
+    {
+     "kode": "KM7128",
+     "tekst": "planleggje vekstskifte for eit økologisk gardsbruk med sikte på optimal effekt på jordstruktur, binding av karbon, næringsforsyning og plantevern"
+    },
+    {
+     "kode": "KM7129",
+     "tekst": "planleggje og utføre førebyggjande og direkte tiltak for å regulere ugras, skadedyr og plantesjukdommar i økologiske kulturar og vekstskifte"
+    },
+    {
+     "kode": "KM7130",
+     "tekst": "bruke, halde ved like og tilpasse maskiner og reiskapar i økologisk planteproduksjon, og lage ein mekaniseringsplan for ein økologisk gard"
+    },
+    {
+     "kode": "KM7132",
+     "tekst": "lage ein driftsplan for økologisk drift på eit gardsbruk i eit heilskapleg, langsiktig perspektiv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget vg3 økologisk landbruk når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget vg3 økologisk landbruk. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget vg3 økologisk landbruk ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget vg3 økologisk landbruk basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 økologisk landbruk: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Vg3 økologisk landbruk: Eleven kan trekkjast ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Vg3 økologisk landbruk: Privatisten skal opp til ein skriftleg og ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

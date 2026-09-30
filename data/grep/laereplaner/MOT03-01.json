@@ -1,0 +1,128 @@
+{
+ "kode": "MOT03-01",
+ "tittel": "Læreplan i vg3 målar- og overflateteknikkfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV510",
+   "tittel": "Kompetansemål og vurdering vg3 målar- og oveflateteknikkfaget",
+   "fag": [
+    "MOT3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5832",
+     "tekst": "planleggje behandling av flater på nybygg, eksisterande bygningsmasse og historiske bygg, arbeide etter teikningar, beskrivingar og preaksepterte løysingar og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM5833",
+     "tekst": "utarbeide framdriftsplanar, bestille og motta produkt, utstyr og mengder og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5852",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, arbeide i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM5842",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM5851",
+     "tekst": "velje, bruke og halde ved like verktøy og maskiner til ulike formål og med omsyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5850",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM5849",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av støveksponering og bruk av kjemikalium"
+    },
+    {
+     "kode": "KM5848",
+     "tekst": "kjeldesortere og handtere kjemikalium etter gjeldande regelverk, følgje substitusjonsplikta, reflektere over konsekvensane av feilhandtering og iverksettje tiltak"
+    },
+    {
+     "kode": "KM5854",
+     "tekst": "bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM5847",
+     "tekst": "vurdere tilstanden til overflatene, byggje opp sjikt ut frå bruksområde og vurdere korleis det ytre og indre miljøet påverkar sluttresultatet og levetida til overflata"
+    },
+    {
+     "kode": "KM5835",
+     "tekst": "drøfte og reflektere over korleis tradisjonelle målemetodar tek vare på eigenarten til faget og kulturtradisjonane"
+    },
+    {
+     "kode": "KM5834",
+     "tekst": "vurdere eksisterande målingslag og velje målemetode som tek vare på eigenarten til underlaget"
+    },
+    {
+     "kode": "KM5846",
+     "tekst": "utbetre underlaget før behandling og vurdere korleis kvaliteten på underlaget påverkar arbeidsprosessen"
+    },
+    {
+     "kode": "KM5845",
+     "tekst": "bruke Natural Colour System, setje saman ulike fargar og vurdere korleis fargar påverkar bruksområdet, belysninga og harmonien til rommet"
+    },
+    {
+     "kode": "KM5844",
+     "tekst": "bruke fagterminologi for å kommunisere med kundar, kollegaer og andre yrkesutøvarar og drøfte ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM5853",
+     "tekst": "bruke ulike påføringsteknikkar og påføringsutstyr og vurdere konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM5843",
+     "tekst": "restaurere og dekorere bygningar og vurdere korleis byggjeskikk og historia til bygget påverkar valet av produkt og metodar"
+    },
+    {
+     "kode": "KM5841",
+     "tekst": "vurdere eigenskapane til overflata, påføre sparkel-, beis-, olje-, lakk- og målingssystem og gjere greie for korleis dei ulike produkta verkar saman og påverkar herdeprosessen"
+    },
+    {
+     "kode": "KM5840",
+     "tekst": "setje opp glasfiberstrie, folie, tapet og overmålingstapet"
+    },
+    {
+     "kode": "KM5839",
+     "tekst": "påføre membransystem og leggje og sveise golv- og veggbelegg i våtrom"
+    },
+    {
+     "kode": "KM5838",
+     "tekst": "programmere og bruke robotar til overflatebehandling"
+    },
+    {
+     "kode": "KM5837",
+     "tekst": "leggje teppe, fugefrie golv, banebelegg, LVT-stavar og flis i vinyl, velje metode og vurdere korleis bruken av lim, sparkel og avrettingsmassar påverkar sluttresultatet"
+    },
+    {
+     "kode": "KM5836",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 målar- og overflateteknikkfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 målar- og overflateteknikkfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 målar- og overflateteknikkfaget skal avsluttast med ein sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+{
+ "kode": "PSP01-04",
+ "tittel": "Læreplan i fremmedspråk programfag",
+ "spraak": "nob",
+ "fastsatt": "2025-06-27",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV967",
+   "tittel": "Kompetansemål og vurdering nivå I",
+   "fag": [
+    "PSP1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12627",
+     "tekst": "lytte til og forstå enkel og tydelig tale om personlige og dagligdagse emner"
+    },
+    {
+     "kode": "KM12628",
+     "tekst": "delta i enkle samtaler i dagligdagse situasjoner om aktiviteter og kjente emner"
+    },
+    {
+     "kode": "KM12629",
+     "tekst": "muntlig fortelle om dagligliv og opplevelser og uttrykke meninger, også spontant"
+    },
+    {
+     "kode": "KM12630",
+     "tekst": "lese og forstå tilpassede og enklere autentiske tekster om personlige og dagligdagse emner"
+    },
+    {
+     "kode": "KM12631",
+     "tekst": "skrive enkle tekster om dagligliv og opplevelser som forteller, beskriver og informerer, med og uten hjelpemidler"
+    },
+    {
+     "kode": "KM12632",
+     "tekst": "bruke enkle språklige strukturer, regler for uttale og rettskriving og språkets offisielle alfabet eller tegn for å kommunisere på en situasjonstilpasset måte"
+    },
+    {
+     "kode": "KM12633",
+     "tekst": "bruke relevante lærings- og kommunikasjonsstrategier, digitale ressurser og erfaringer fra tidligere språklæring i læringsprosessen"
+    },
+    {
+     "kode": "KM12634",
+     "tekst": "utforske og beskrive levemåter, tradisjoner og geografi i områder der språket snakkes, og se sammenhenger med egen bakgrunn"
+    },
+    {
+     "kode": "KM12635",
+     "tekst": "utforske og beskrive kunstneriske og kulturelle uttrykk fra områder der språket snakkes, og gi uttrykk for egne opplevelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i fremmedspråk på nivå I når de forstår og bruker språket muntlig og skriftlig i dagligdags kommunikasjon om kjente og personlige emner, med og uten hjelpemidler. De viser og utvikler også kompetanse når de får anledning til å beskrive og reflektere over språket og over samfunnet og kulturen der språket snakkes, hvis nødvendig også på norsk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og muntlige og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i fremmedspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i å forstå og gjøre seg forstått på fremmedspråket, muntlig og skriftlig."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fremmedspråk ved avslutningen av opplæringen på nivå I. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i fremmedspråk nivå I basert på elevens kommunikative og interkulturelle kompetanse, der både forståelse og formidlingsevne tillegges like stor vekt. Læreren skal sette karakter i fremmedspråk muntlig basert på kompetansen eleven har vist i muntlige situasjoner, både spontane og planlagte. Læreren skal sette karakter i fremmedspråk skriftlig basert på kompetansen eleven har vist i et utvalg kortere og lengre tekster."
+   ]
+  },
+  {
+   "kode": "KV968",
+   "tittel": "Kompetansemål og vurdering nivå II",
+   "fag": [
+    "PSP1Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12636",
+     "tekst": "lytte til og forstå tydelig tale om personlige og faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12637",
+     "tekst": "samtale i en rekke dagligdagse situasjoner om kjente og faglig relevante emner"
+    },
+    {
+     "kode": "KM12638",
+     "tekst": "muntlig forklare faglig relevante emner, skildre opplevelser, hendelser og planer, og begrunne meninger, også spontant"
+    },
+    {
+     "kode": "KM12639",
+     "tekst": "lese og forstå ulike typer tekster, også autentiske, om personlige og faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12640",
+     "tekst": "skrive ulike teksttyper om personlige og faglig relevante emner, og uttrykke og begrunne egne meninger, med og uten hjelpemidler"
+    },
+    {
+     "kode": "KM12641",
+     "tekst": "bruke grunnleggende språklige strukturer, regler for uttale og rettskriving og språkets offisielle alfabet eller tegn for å kommunisere på en situasjonstilpasset måte"
+    },
+    {
+     "kode": "KM12642",
+     "tekst": "bruke relevante lærings- og kommunikasjonsstrategier, digitale ressurser og erfaringer fra tidligere språklæring i læringsprosessen"
+    },
+    {
+     "kode": "KM12643",
+     "tekst": "utforske og gjøre rede for mangfold, samfunnsforhold og historiske hendelser i områder der språket snakkes, og se sammenhenger med egen bakgrunn"
+    },
+    {
+     "kode": "KM12644",
+     "tekst": "utforske og presentere kunstneriske og kulturelle uttrykk fra områder der språket snakkes, og gjøre rede for egne opplevelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i fremmedspråk på nivå II når de forstår og bruker språket muntlig og skriftlig i dagligdagse situasjoner og i kommunikasjon om faglig relevante emner, med og uten hjelpemidler. De viser og utvikler også kompetanse når de får anledning til å beskrive og reflektere over språket, samfunnet og kulturen der språket snakkes.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser. Læreren skal legge til rette for at elevene kan utvikle leseferdigheter og muntlige og skriftlige ferdigheter gjennom å være kreative og prøve seg fram, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i fremmedspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i å forstå og gjøre seg forstått på fremmedspråket i kjente og ukjente kommunikasjonssituasjoner, muntlig og skriftlig."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fremmedspråk ved avslutningen av opplæringen på nivå II. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i fremmedspråk nivå II basert på elevens kommunikative og interkulturelle kompetanse, der både forståelse og formidlingsevne tillegges like stor vekt. Læreren skal sette karakter i fremmedspråk muntlig basert på kompetansen eleven har vist i muntlige situasjoner, både spontane og planlagte. Læreren skal sette karakter i fremmedspråk skriftlig basert på kompetansen eleven har vist i et utvalg ulike kortere og lengre tekster."
+   ]
+  },
+  {
+   "kode": "KV969",
+   "tittel": "Kompetansemål og vurdering nivå III",
+   "fag": [
+    "PSP1Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12645",
+     "tekst": "lytte til og forstå språklig mer kompleks tale om faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12646",
+     "tekst": "samtale om og diskutere kjente og faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12647",
+     "tekst": "muntlig gjøre rede for faglig relevante emner og begrunne egne synspunkter og refleksjoner, også spontant"
+    },
+    {
+     "kode": "KM12648",
+     "tekst": "lese og forstå et bredt utvalg tekster, også autentiske, om ulike emner og identifisere budskap, holdninger og språklige virkemidler"
+    },
+    {
+     "kode": "KM12649",
+     "tekst": "skrive klare og detaljerte tekster om faglig relevante emner og aktuelle saker og drøfte ulike holdninger, med og uten hjelpemidler"
+    },
+    {
+     "kode": "KM12650",
+     "tekst": "bruke hensiktsmessige språklige strukturer, regler for uttale og rettskriving og språkets offisielle alfabet eller tegn for å kommunisere på en situasjonstilpasset måte"
+    },
+    {
+     "kode": "KM12651",
+     "tekst": "bruke relevante lærings- og kommunikasjonsstrategier, digitale ressurser og erfaringer fra tidligere språklæring i læringsprosessen"
+    },
+    {
+     "kode": "KM12652",
+     "tekst": "utforske og reflektere over et utvalg historiske, sosiale, miljømessige og politiske forhold i områder der språket snakkes"
+    },
+    {
+     "kode": "KM12653",
+     "tekst": "utforske og drøfte kunstneriske og kulturelle uttrykk fra områder der språket snakkes, og gjøre rede for virkemidler og noen stilarter og trender"
+    },
+    {
+     "kode": "KM12654",
+     "tekst": "gjøre rede for opplevelser og erfaringer i møte med personer og kunstneriske og kulturelle uttrykk i områder der språket snakkes"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i fremmedspråk på nivå III når de forstår og bruker språket muntlig og skriftlig i en rekke kommunikasjonssituasjoner, inkludert i kommunikasjon om faglig relevante og aktuelle emner, med og uten hjelpemidler. De viser og utvikler også kompetanse når de får anledning til å drøfte og reflektere over språket, samfunnet og kulturen der språket snakkes.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser. Læreren skal legge til rette for at elevene kan utvikle leseferdigheter og muntlige og skriftlige ferdigheter gjennom å være kreative og prøve seg frem, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i fremmedspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i å forstå og uttrykke seg på fremmedspråket i forskjellige kjente og ukjente kommunikasjonssituasjoner, muntlig og skriftlig."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fremmedspråk ved avslutningen av opplæringen på nivå III. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i fremmedspråk nivå III basert på elevens kommunikative og interkulturelle kompetanse, der både forståelse og formidlingsevne tillegges like stor vekt. Læreren skal sette karakter i fremmedspråk muntlig basert på kompetansen eleven har vist i muntlige situasjoner, både spontane og planlagte. Læreren skal sette karakter i fremmedspråk skriftlig basert på kompetansen eleven har vist i et utvalg ulike kortere og lengre tekster."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Fremmedspråk nivå I: Elevene skal ha to standpunktkarakterer, én muntlig og én skriftlig.",
+    "Fremmedspråk nivå II: Elevene skal ha to standpunktkarakterer, én muntlig og én skriftlig.",
+    "Fremmedspråk nivå III: Elevene skal ha to standpunktkarakterer, én muntlig og én skriftlig."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Fremmedspråk nivå I: Elevene kan trekkes ut til skriftlig og/eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur.",
+    "Fremmedspråk nivå II: Elevene kan trekkes ut til skriftlig og/eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur.",
+    "Fremmedspråk nivå III: Elevene kan trekkes ut til skriftlig og/eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Fremmedspråk nivå I: Privatister skal gå opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur.",
+    "Fremmedspråk nivå II: Privatister skal gå opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur.",
+    "Fremmedspråk nivå III: Privatister skal gå opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur."
+   ]
+  }
+ ]
+}

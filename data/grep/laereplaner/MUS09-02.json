@@ -1,0 +1,79 @@
+{
+ "kode": "MUS09-02",
+ "tittel": "Oahppoplána – sámi musihkka ja lávdi",
+ "spraak": "sme",
+ "fastsatt": "2020-03-31",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV265",
+   "tittel": "Gealbomihttomearit ja árvvoštallan sámi musihkka ja lávdi",
+   "fag": [
+    "MUS9Z02"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM2832",
+     "tekst": "suokkardit ja reflekteret sámi árbevirolaš juoigama ja máinnasteami doaimma birra historjjálaš ja dálááiggi perspektiivvas"
+    },
+    {
+     "kode": "KM2833",
+     "tekst": "suokkardit ođđafuomášumiid sámi musihkas ja álgoálbmotmusihkas ja daid geavahit iežas ráhkademiin"
+    },
+    {
+     "kode": "KM2834",
+     "tekst": "analyseret iešguđetlágan luđiid tonalitehta ja rytmihka ja daid geavahit vuođđun improvisašuvdnii ja iežas komposišuvnnaide ja arrangemeanttaide"
+    },
+    {
+     "kode": "KM2835",
+     "tekst": "ráhkadit luđiid ja juoigat repertoára iešguđet ovdanbuktindiliin"
+    },
+    {
+     "kode": "KM2836",
+     "tekst": "plánet, ráhkadit ja gaskkustit sámi muitalusaid iešguđet ovdanbuktindiliin"
+    },
+    {
+     "kode": "KM2837",
+     "tekst": "suokkardit iežas persovnnalaš ovdanbuktinvuogi ja ávdnet ođđa lávdeovdanbuktimiid geavahettiin luođi, musihka, muitalusaid, lihkadeami ja digitála reaidduid ovttasdoaimmas earáiguin"
+    },
+    {
+     "kode": "KM2838",
+     "tekst": "analyseret ja ságaškuššat luođi, musihka, lihkadeami ja muitalusaid anu iežas lávddálaš gaskaoapmin ja identitehta ovdanbuktimin."
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde ovddideamen oahppama ja gelbbolašvuođa fágas sámi musihkka ja lávdi. Oahppit čájehit ja ovddidit gelbbolašvuođa fágas go suokkardit, ráhkadit, arrangerejit ja ovdanbuktet sámi musihka, luođi, lihkadeami ja muitalusaid iešguđet ovdanbuktindiliin ja go sii reflekterejit daid gaskavuođaid. Oahppit čájehit ja ovddidit maiddái gelbbolašvuođa fágas ovttasbarggu bokte dáiddalaš ideaid gaskkustemiin.",
+    "Oahpaheaddji galgá diktit ohppiid váikkuhit oahpahussii, ja movttiidahttit oahppanhálu dainna lágiin ahte oahppit besset suokkardit fágalaš ja dáiddalaš proseassaid, hábmet iežaset albmanahttinvugiid ja barget kreatiivvalaččat vai olahit bohtosa. Oahpaheaddji galgá gulahallat ohppiiguin ovdáneami birra fágas sámi musihkka ja lávdi ja oahppit galget beassat geahččaladdat. Dan gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat sániiguin muitalit maid sii orrot máhttimin, ja reflekteret iežaset fágalaš ovdáneami ektui. Oahpaheaddji galgá rávvet viidáset oahppama birra nu ahte oahppit sáhttet rávvagiid geavahit iežaset kreativitehta ovddideapmái ja buorideapmái suokkardeamis, ávdnemis ja ovdanbuktimis ja albmanahttit iežaset gealbbu sihke geavatlaččat ja njálmmálaččat."
+   ],
+   "standpunkt": [
+    "Oppalašárvosátni galgá čájehit oahppi ollislaš gelbbolašvuođa sámi musihkas ja lávddis go oahpahus fágas loahpahuvvo. Oahpaheaddji galgá plánet ja láhčit oahpahusa nu ahte oahppit besset máŋgga láhkai, oahpes ja amas dilálašvuođain, čájehit iežaset gelbbolašvuođa mas ipmárdus, reflekšuvdna ja kritihkalaš jurddašeapmi leat oassin. Oahpaheaddji galgá bidjat árvosáni fágas sámi musihkka ja lávdi dan vuođul máid oahppi lea čájehan sihke geavatlaččat ja njálmmálaččat go lea čađahan presentašuvnnaid, ovdanbuktimiid ja eará relevánta fágalaš bargguid, ja reflekšuvnnain proseassaid ektui."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Oppalaš árvvoštallan",
+   "tekst": [
+    "Sámi musihkka ja lávdi: Oahppis galgá leat okta oppalašárvosátni."
+   ]
+  },
+  {
+   "overskrift": "Eksámen ohppiide",
+   "tekst": [
+    "Sámi musihkka ja lávdi: Oahppi gessojuvvo njálmmálaš-geavatlaš eksámenii, ráhkkananosiin. Eksámen ráhkaduvvo ja árvvoštallojuvvo báikkálaččat."
+   ]
+  },
+  {
+   "overskrift": "Eksámen privatisttaide",
+   "tekst": [
+    "Sámi musihkka ja lávdi: Privatista gessojuvvo njálmmálaš-geavatlaš eksámenii, ráhkkananosiin. Eksámen ráhkaduvvo ja árvvoštallojuvvo báikkálaččat. Fylkkasuohkan mearrida galget go privatisttain leat ráhkkananoassi báikkalaš árvvoštallon eksámenis."
+   ]
+  }
+ ]
+}

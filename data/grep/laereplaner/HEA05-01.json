@@ -1,0 +1,246 @@
+{
+ "kode": "HEA05-01",
+ "tittel": "Læreplan i helsearbeiderfaget – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV858",
+   "tittel": "Kompetansemål og vurdering profesjonalitet i helsearbeiderfaget",
+   "fag": [
+    "HEA5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11315",
+     "tekst": "reflektere over hva det vil si å være en profesjonell helsefagarbeider, og praktisere dette i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM11317",
+     "tekst": "vise empati og reflektere over egne holdninger og atferd og hva det vil si å vise endringsvilje"
+    },
+    {
+     "kode": "KM11307",
+     "tekst": "kommunisere, samhandle og bruke relasjonskompetanse i møte med pasienter, brukere og pårørende fra ulike kulturer og med ulik mulighet til å kommunisere"
+    },
+    {
+     "kode": "KM11308",
+     "tekst": "utføre faglig og etisk forsvarlig helsehjelp i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM11311",
+     "tekst": "forstå og overholde gjeldende regelverk om taushetsplikt og personvern og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM11310",
+     "tekst": "utføre arbeid etter gjeldende retningslinjer for hygiene og gjennomføre smitteverntiltak"
+    },
+    {
+     "kode": "KM11312",
+     "tekst": "følge gjeldende regelverk ved bruk av tvang og reflektere over egen maktposisjon i møte med pasienter og brukere"
+    },
+    {
+     "kode": "KM11313",
+     "tekst": "gjennomføre arbeidet etter gjeldende regelverk for helse, miljø og sikkerhet, følge rutiner for uønskede hendelser og internkontroller og arbeide for kontinuerlig kvalitetsforbedring"
+    },
+    {
+     "kode": "KM11309",
+     "tekst": "utføre førstehjelp etter gjeldende retningslinjer og følge rutiner for varsling"
+    },
+    {
+     "kode": "KM11314",
+     "tekst": "bruke ergonomiske prinsipper i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM11316",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet, og gjøre rede for hvordan partene i arbeidslivet utføre sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen profesjonalitet i helsearbeiderfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen profesjonalitet i helsearbeiderfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i profesjonalitet i helsearbeiderfaget. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV859",
+   "tittel": "Kompetansemål og vurdering livskvalitet og helsekompetanse",
+   "fag": [
+    "HEA5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11318",
+     "tekst": "vurdere, planlegge og gjennomføre tiltak som øker pasienters og brukeres helsekompetanse"
+    },
+    {
+     "kode": "KM11324",
+     "tekst": "beskrive hvordan kroppen er bygget opp, og forklare hvordan den fungerer"
+    },
+    {
+     "kode": "KM11320",
+     "tekst": "kartlegge pasienters og brukeres funksjonsnivå og omsorgsbehov og utføre grunnleggende sykepleie og miljøarbeid tilpasset brukere og pasienter i alle aldre"
+    },
+    {
+     "kode": "KM11319",
+     "tekst": "planlegge og gjennomføre tiltak som fremmer trivsel og bidrar til økt livskvalitet for brukere og pasienter gjennom livsløpet"
+    },
+    {
+     "kode": "KM11323",
+     "tekst": "ivareta pasient- og brukermedvirkning i arbeidet"
+    },
+    {
+     "kode": "KM11321",
+     "tekst": "identifisere og kartlegge ernæringsbehov hos brukere og pasienter i samarbeid med andre yrkesgrupper og tilberede måltider og som er i tråd med kostrådene fra helsemyndighetene"
+    },
+    {
+     "kode": "KM11322",
+     "tekst": "bruke digitale kommunikasjonsverktøy og veilede pasienter, brukere og pårørende om bruk av slike verktøy"
+    },
+    {
+     "kode": "KM11325",
+     "tekst": "gjøre rede for strategier for konflikthåndtering og forebygge konflikter i praksis"
+    },
+    {
+     "kode": "KM11327",
+     "tekst": "gjøre rede for funksjonene til noen næringsstoffer og diskutere hvorfor et variert kosthold er viktig i et helse- og bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM11328",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    },
+    {
+     "kode": "KM11326",
+     "tekst": "tolke og bruke sammensatte måleenheter i praktiske sammenhenger og velge egnet måleenhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen livskvalitet og helsekompetanse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen livskvalitet og helsekompetanse. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i livskvalitet og helsekompetanse. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV860",
+   "tittel": "Kompetansemål og vurdering grunnleggende sykepleie",
+   "fag": [
+    "HEA5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11336",
+     "tekst": "gjøre rede for de vanligste sykdommene hos barn, unge og eldre, foreslå tiltak og delta i grunnleggende sykepleie"
+    },
+    {
+     "kode": "KM11338",
+     "tekst": "forklare hva allmenntilstand er, gjøre rede for de vanligste tegnene og symptomene på sykdommer og skader og gjenkjenne sykdomsforverring"
+    },
+    {
+     "kode": "KM11329",
+     "tekst": "planlegge og gjennomføre grunnleggende sykepleie for akutt og kronisk syke og mennesker med sammensatte og komplekse behov"
+    },
+    {
+     "kode": "KM11330",
+     "tekst": "observere symptomer på psykiske lidelser og rusmisbruk og foreslå tiltak"
+    },
+    {
+     "kode": "KM11331",
+     "tekst": "identifisere tegn på omsorgssvikt, vold og overgrep og andre bekymringsfulle forhold, og iverksette tiltak i tråd med virksomhetens rutiner og prosedyrer"
+    },
+    {
+     "kode": "KM11332",
+     "tekst": "gi helhetlig omsorg til alvorlig syke, døende og ta vare på deres pårørende"
+    },
+    {
+     "kode": "KM11333",
+     "tekst": "observere og vurdere systematisk tilstand og endringer hos pasienter og brukere og dokumentere i digitale journalsystemer"
+    },
+    {
+     "kode": "KM11334",
+     "tekst": "følge gjeldende regelverk for legemiddelhåndtering og observere, rapportere og dokumentere virkningene og bivirkningene av legemidler"
+    },
+    {
+     "kode": "KM11335",
+     "tekst": "bruke relevant medisinsk utstyr ved observasjon og vurdering av tilstanden til pasienter og brukere"
+    },
+    {
+     "kode": "KM11337",
+     "tekst": "drøfte hvilken betydning mikroorganismer har for kropp og helse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen grunnleggende sykepleie når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen grunnleggende sykepleie. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i grunnleggende sykepleie. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV861",
+   "tittel": "Kompetansemål og vurdering rehabilitering, habilitering og hverdagsmestring",
+   "fag": [
+    "HEA5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11339",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere forebyggende, habiliterende og rehabiliterende pleie og omsorgstiltak"
+    },
+    {
+     "kode": "KM11343",
+     "tekst": "bidra i tverrfaglig samarbeid for å sikre helhetlige pasientforløp"
+    },
+    {
+     "kode": "KM11340",
+     "tekst": "vurdere pasienters og brukeres behov for hjelpemidler og velferdsteknologi og veilede i bruken av disse"
+    },
+    {
+     "kode": "KM11344",
+     "tekst": "orientere i samarbeid med annet helsepersonell, pasienter, brukere og pårørende om deres rettigheter til helse- og omsorgstjenester"
+    },
+    {
+     "kode": "KM11341",
+     "tekst": "samarbeide med frivillige organisasjoner og andre aktører om å tilrettelegge for helsefremmende tiltak"
+    },
+    {
+     "kode": "KM11342",
+     "tekst": "reflektere over og ta miljøbevisste valg i yrkesutøvelsen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen rehabilitering, habilitering og hverdagsmestring når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen rehabilitering, habilitering og hverdagsmestring. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i rehabilitering, habilitering og hverdagsmestring. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 helsearbeiderfaget (HEA03‑03). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i helsearbeiderfaget - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 helsearbeiderfaget (HEA03‑03). Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på to til tre virkedager."
+   ]
+  }
+ ]
+}

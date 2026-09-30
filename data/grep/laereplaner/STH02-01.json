@@ -1,0 +1,160 @@
+{
+ "kode": "STH02-01",
+ "tittel": "Læreplan i vg2 søm og tekstilhåndverk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV404",
+   "tittel": "Kompetansemål og vurdering design og produktutvikling",
+   "fag": [
+    "STH2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4262",
+     "tekst": "planlegge, gjennomføre og dokumentere en design- og produktutviklingsprosess"
+    },
+    {
+     "kode": "KM4281",
+     "tekst": "utarbeide og videreutvikle skisser og arbeidstegninger manuelt og digitalt"
+    },
+    {
+     "kode": "KM4280",
+     "tekst": "velge og bruke ulike teknikker, farger og materialer i designprosessen ut fra produktets form, funksjon og kvalitet"
+    },
+    {
+     "kode": "KM4279",
+     "tekst": "designe og utvikle produkter i skinn, tekstil og andre relevante materialer ut fra form og funksjon"
+    },
+    {
+     "kode": "KM4278",
+     "tekst": "gjøre rede for hvordan valg av design og materialer innenfor skinn og tekstil kan sikre en bærekraftig tekstilproduksjon"
+    },
+    {
+     "kode": "KM4277",
+     "tekst": "bruke fagspråk i kommunikasjon med kunder og samarbeidspartnere i dokumentasjon og presentasjon"
+    },
+    {
+     "kode": "KM4276",
+     "tekst": "bruke kildehenvisning og vurdere kildebruk i eget arbeid med tanke på opphavsrettigheter og personvernhensyn"
+    },
+    {
+     "kode": "KM4275",
+     "tekst": "gjøre rede for hvordan tekstile håndverkstradisjoner lokalt og nasjonalt viderefører tradisjoner og bruke kunnskap om dette i eget arbeid"
+    },
+    {
+     "kode": "KM4274",
+     "tekst": "hente inspirasjon fra trender og produkter fra tidligere epoker i eget arbeid og reflektere over dilemmaer som oppstår i møtet mellom tradisjon og nyskaping"
+    },
+    {
+     "kode": "KM4273",
+     "tekst": "gjøre rede for hvordan gjenbruk, avfallshåndtering og valg av materialer kan bidra til en bærekraftig produksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget design og produktutvikling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget design og produktutvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget design og produktutvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget design og produktutvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV405",
+   "tittel": "Kompetansemål og vurdering produksjon og materialer",
+   "fag": [
+    "STH2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4266",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsprosesser"
+    },
+    {
+     "kode": "KM4265",
+     "tekst": "bruke arbeidstegninger og arbeidsplaner som en del av produksjonsprosessen"
+    },
+    {
+     "kode": "KM4269",
+     "tekst": "ta aktuelle mål og utarbeide og tilpasse mønstre og maler"
+    },
+    {
+     "kode": "KM4264",
+     "tekst": "bruke grunnleggende sømfaglige håndverksteknikker og relevante maskiner, verktøy og digitale ressurser i utforming av skinn og tekstilprodukter"
+    },
+    {
+     "kode": "KM4282",
+     "tekst": "utforske, velge og bruke materialer, håndsøm, maskinsøm og andre relevante sammenføyningsteknikker ut fra produktenes form og funksjon"
+    },
+    {
+     "kode": "KM4268",
+     "tekst": "planlegge og gjennomføre vedlikehold, reparasjon og redesign av søm- og tekstilprodukter"
+    },
+    {
+     "kode": "KM4283",
+     "tekst": "gjøre rede for ulike materialers egenskaper og bruksområder og vurdere kvaliteten på eget og andres arbeid"
+    },
+    {
+     "kode": "KM4267",
+     "tekst": "gjøre rede for hvordan valg av materialer, teknikker og maskiner kan sikre en etisk og bærekraftig produksjon"
+    },
+    {
+     "kode": "KM4272",
+     "tekst": "bruke og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4271",
+     "tekst": "utvikle og følge rutiner for orden i verksted og på egen arbeidsplass i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4270",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4263",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiveren og arbeidstakeren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon og materialer når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon og materialer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon og materialer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon og materialer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Design og produktutvikling: Elevene skal ha én standpunktkarakter.",
+    "Produksjon og materialer: Elevene skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Design og produktutvikling og produksjon og materialer: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Design og produktutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og materialer: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Design og produktutvikling og produksjon og materialer: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

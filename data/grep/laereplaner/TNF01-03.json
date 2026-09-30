@@ -1,0 +1,196 @@
+{
+ "kode": "TNF01-03",
+ "tittel": "Læreplan i teknologi og forskningslære",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV974",
+   "tittel": "Kompetansemål og vurdering teknologi og forskningslære X",
+   "fag": [
+    "TNF1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12706",
+     "tekst": "bruke kravspesifikasjon og arbeidstegninger i arbeid med å utvikle og teste funksjonelle produkter"
+    },
+    {
+     "kode": "KM12707",
+     "tekst": "utvikle og teste et produkt som inneholder en mikrokontroller, og vurdere muligheter for utvidelser og forbedringer"
+    },
+    {
+     "kode": "KM12708",
+     "tekst": "analysere datamateriale fra forsøk og reflektere over og teste om usikkerheten kan reduseres"
+    },
+    {
+     "kode": "KM12709",
+     "tekst": "bruke kvantitativ metode i forsøk og vurdere påliteligheten til resultatene"
+    },
+    {
+     "kode": "KM12710",
+     "tekst": "drøfte etiske problemstillinger knyttet til teknologisk utvikling"
+    },
+    {
+     "kode": "KM12711",
+     "tekst": "utforske hvordan en virksomhet arbeider med teknologi, og gjøre rede for virksomheten i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teknologi og forskningslære X. Elevene viser og utvikler kompetanse i faget når de forstår og bruker informasjon for å planlegge og gjennomføre praktisk arbeid. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende for å planlegge, utføre og presentere arbeidet i faget. Videre viser og utvikler elevene kompetanse når de reflekterer rundt naturfaglige fenomener og sammenhenger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske naturvitenskapelige problemer gjennom å prøve ut, resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres i naturvitenskapelig arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å se sammenhenger mellom naturvitenskapelige erfaringer og teori."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teknologi og forskningslære X. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teknologi og forskningslære X basert på kompetansen eleven har vist skriftlig, muntlig og praktisk ved å utforske naturvitenskapelige sammenhenger, bruke problemløsingsstrategier og reflektere over og argumentere for løsninger og modeller."
+   ]
+  },
+  {
+   "kode": "KV975",
+   "tittel": "Kompetansemål og vurdering teknologi og forskningslære 1",
+   "fag": [
+    "TNF1Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12712",
+     "tekst": "bruke kravspesifikasjon og arbeidstegninger i arbeid med å utvikle og teste funksjonelle produkter"
+    },
+    {
+     "kode": "KM12713",
+     "tekst": "utvikle og teste et produkt som inneholder en mikrokontroller, og vurdere muligheter for utvidelser og forbedringer"
+    },
+    {
+     "kode": "KM12714",
+     "tekst": "utforske og bruke analoge og digitale signaler fra sensorer og beskrive sensorenes ulike bruksområder"
+    },
+    {
+     "kode": "KM12715",
+     "tekst": "designe og lage et produkt som produserer empiriske data og presentere funn fra eget datamateriale"
+    },
+    {
+     "kode": "KM12716",
+     "tekst": "analysere datamateriale fra forsøk og reflektere over og teste om usikkerheten kan reduseres"
+    },
+    {
+     "kode": "KM12719",
+     "tekst": "bruke kvantitativ metode i forsøk og vurdere påliteligheten til resultatene"
+    },
+    {
+     "kode": "KM12717",
+     "tekst": "beskrive historisk utvikling av og virkemåten til et teknologisk produkt, og drøfte samfunnsnytten av dette"
+    },
+    {
+     "kode": "KM12720",
+     "tekst": "drøfte etiske problemstillinger knyttet til teknologisk utvikling"
+    },
+    {
+     "kode": "KM12718",
+     "tekst": "utforske hvordan en virksomhet arbeider med teknologi, og gjøre rede for virksomheten i et bærekraftsperspektiv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teknologi og forskningslære 1. Elevene viser og utvikler kompetanse i faget når de forstår og bruker informasjon for å planlegge og gjennomføre praktisk arbeid. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende for å planlegge, utføre og presentere arbeidet i faget. Videre viser og utvikler elevene kompetanse når de reflekterer rundt naturfaglige fenomener og sammenhenger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske naturvitenskapelige problemer gjennom å prøve ut, resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres i naturvitenskapelig arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å se sammenhenger mellom naturvitenskapelige erfaringer og teori."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teknologi og forskningslære 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teknologi og forskningslære 1 basert på kompetansen eleven har vist skriftlig, muntlig og praktisk ved å utforske naturvitenskapelige sammenhenger, bruke problemløsingsstrategier og reflektere over og argumentere for løsninger og modeller."
+   ]
+  },
+  {
+   "kode": "KV976",
+   "tittel": "Kompetansemål og vurdering teknologi og forskningslære 2",
+   "fag": [
+    "TNF1Z06"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12721",
+     "tekst": "drøfte hvordan ulike naturvitenskapelige prosesser og metoder brukes i forsknings- og utviklingsarbeid, og hvordan dette kan bidra til nye kunnskaper, teorier og modeller"
+    },
+    {
+     "kode": "KM12730",
+     "tekst": "forklare hvordan og vurdere når standardavvik, regresjon, konfidensintervall og t-test kan gi relevant informasjon om et datasett"
+    },
+    {
+     "kode": "KM12722",
+     "tekst": "drøfte hvordan metodevalg for å samle inn empiriske data har betydning for kvaliteten til og anvendeligheten av dataene"
+    },
+    {
+     "kode": "KM12723",
+     "tekst": "gjøre rede for hvordan empiriske data kan brukes for å styrke eller forkaste en hypotese"
+    },
+    {
+     "kode": "KM12731",
+     "tekst": "vurdere og beskrive hvordan samarbeid, datautveksling og finansiering påvirker forskningsutvikling"
+    },
+    {
+     "kode": "KM12724",
+     "tekst": "planlegge, gjennomføre og dokumentere selvvalgte forskningsprosjekter, og drøfte og presentere resultatene og hvordan valg av metode kan påvirke resultatene"
+    },
+    {
+     "kode": "KM12725",
+     "tekst": "skrive og presentere en vitenskapelig artikkel om eget forskningsarbeid, og vurdere hvordan budskapet kan påvirkes av presentasjonsform"
+    },
+    {
+     "kode": "KM12726",
+     "tekst": "drøfte hvilken betydning enkeltpersoner og samfunnsforhold i et historiske perspektiv har hatt for den teknologiske og vitenskapelige utviklingen"
+    },
+    {
+     "kode": "KM12727",
+     "tekst": "drøfte hvordan teknologi og vitenskapelige tenkemåter kan bidra og har bidratt til paradigmeskifter innenfor naturvitenskapen, og beskrive et eksempel på dette"
+    },
+    {
+     "kode": "KM12728",
+     "tekst": "drøfte etiske problemstillinger knyttet til forskning, naturvitenskap, teknologiutvikling og bruken av teknologi i samfunnet"
+    },
+    {
+     "kode": "KM12729",
+     "tekst": "analysere og gjøre rede for teknologiske tiltak knyttet til ett av FNs bærekraftsmål og vurdere hvilke virkninger og konsekvenser tiltakene kan ha"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teknologi og forskningslære 2. Elevene viser og utvikler kompetanse i faget når de forstår og bruker informasjon for å planlegge og gjennomføre praktisk arbeid. Elevene viser og utvikler også kompetanse når de jobber utforskende, problemløsende og med modellering for å planlegge, utføre og presentere arbeidet i faget. Videre viser og utvikler elevene kompetanse når de reflekterer rundt naturfaglige fenomener og sammenhenger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske naturvitenskapelige problemer gjennom å prøve ut, resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres i naturvitenskapelig arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å se sammenhenger mellom naturvitenskapelige erfaringer og teori."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teknologi og forskningslære 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teknologi og forskningslære 2 basert på kompetansen eleven har vist skriftlig, muntlig og praktisk ved å utforske naturvitenskapelige sammenhenger, bruke problemløsingsstrategier og reflektere over og argumentere for løsninger og modeller."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teknologi og forskningslære X: Eleven skal ha én standpunktkarakter.\nTeknologi og forskningslære 1: Eleven skal ha én standpunktkarakter.\nTeknologi og forskningslære 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Teknologi og forskningslære X: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nTeknologi og forskningslære 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nTeknologi og forskningslære 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Muntlig-praktisk eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Teknologi og forskningslære X: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeknologi og forskningslære 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeknologi og forskningslære 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

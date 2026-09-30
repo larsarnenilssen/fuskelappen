@@ -1,0 +1,128 @@
+{
+ "kode": "PLF03-01",
+ "tittel": "Læreplan i vg3 plastfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV705",
+   "tittel": "Kompetansemål og vurdering vg3 plastfaget",
+   "fag": [
+    "PLF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9114",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver i henhold til kvalitetsprosedyrer"
+    },
+    {
+     "kode": "KM9134",
+     "tekst": "reflektere over betydningen av innovasjon og bruk av teknologi for bærekraftig produksjon av plastprodukter"
+    },
+    {
+     "kode": "KM9133",
+     "tekst": "anvende og lagre kjemikalier og råvarer i tråd med prosedyrer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM9132",
+     "tekst": "kontrollere og velge råvarer og gjøre rede for hvordan klimatiske, fysiske og kjemiske belastninger kan påvirke råvarene og ferdig produkt"
+    },
+    {
+     "kode": "KM9130",
+     "tekst": "gjøre rede for oppbygningen av hybride plastmaterialer og forklare hvordan råvarekombinasjoner kan påvirke material- og produktkvalitet"
+    },
+    {
+     "kode": "KM9129",
+     "tekst": "anvende retningslinjer for avfallshåndtering og gjenvinning av plast og reflektere over betydningen av nedbryting og forbrenning av plast"
+    },
+    {
+     "kode": "KM9131",
+     "tekst": "identifisere ulike plasttyper og ulike materialsammensetninger og gjøre rede for materialenes kjemiske forbindelser og reaksjoner, og tekniske og fysiske muligheter og begrensninger"
+    },
+    {
+     "kode": "KM9128",
+     "tekst": "velge materialer, tilsetningsstoffer og produksjonsmetode og begrunne valg ut fra bruksområdet og miljøkrav"
+    },
+    {
+     "kode": "KM9127",
+     "tekst": "lage og bruke skisser av plastprodukter og komponenter og forstå og bruke tekniske tegninger, og lage maler for masseproduksjon"
+    },
+    {
+     "kode": "KM9126",
+     "tekst": "velge sammenføyningsmetoder ut fra bruksområde og materiale"
+    },
+    {
+     "kode": "KM9135",
+     "tekst": "lage og forme produkt og protyper, og vurdere design, materialer, jigg og verktøy ut fra slippvinkler og krymp"
+    },
+    {
+     "kode": "KM9125",
+     "tekst": "utføre vedlikehold, kontrollere og klargjøre verktøy og utstyr for produksjon, og gjøre rede for krav til kalibrering av måleverktøy og produksjonsutstyr"
+    },
+    {
+     "kode": "KM9123",
+     "tekst": "beskrive ulike parametre for maskinell bearbeiding"
+    },
+    {
+     "kode": "KM9122",
+     "tekst": "overflatebehandle plastprodukter med hensyn til materialets egenskaper"
+    },
+    {
+     "kode": "KM9121",
+     "tekst": "reflektere over sammenhengen mellom bruk av ressurser, bærekraftig utvikling og lønnsomhet"
+    },
+    {
+     "kode": "KM9136",
+     "tekst": "utføre arbeid i henhold til gjeldende regelverk for kvalitet, prosedyrer for helse, miljø og sikkerhet og reflektere over konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM9120",
+     "tekst": "gjøre rede for ulike formingsmetoder, overvåke, justere og logge parametre for optimalt resultat i formingsprosessen"
+    },
+    {
+     "kode": "KM9119",
+     "tekst": "forklare additiv tilvirkning i produksjonen og reflektere over bruk av ny teknologi for å effektivisere og bedre kvaliteten i plastproduksjon"
+    },
+    {
+     "kode": "KM9118",
+     "tekst": "identifisere og utbedre feil og skader underveis i produksjonsprosessen og i sluttprodukt og gjennomføre reparasjon"
+    },
+    {
+     "kode": "KM9117",
+     "tekst": "utføre målekontroll og teste produkter i henhold til tegninger og spesifikasjoner og dokumentere resultatet"
+    },
+    {
+     "kode": "KM9116",
+     "tekst": "utføre visuelle og destruktive tester"
+    },
+    {
+     "kode": "KM9115",
+     "tekst": "utføre prototypeproduksjon, testing og kvalitetssikring"
+    },
+    {
+     "kode": "KM9124",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 plastfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 plastfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 plastfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

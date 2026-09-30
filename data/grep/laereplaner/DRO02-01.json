@@ -1,0 +1,100 @@
+{
+ "kode": "DRO02-01",
+ "tittel": "Læreplan i vg3 droneoperatørfaget",
+ "spraak": "nob",
+ "fastsatt": "2022-09-19",
+ "gyldigFra": "2023-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV771",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "DRF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10283",
+     "tekst": "risikovurdere, planlegge, gjennomføre, dokumentere og evaluere operasjoner med ubemannet farkost individuelt og i samarbeid med andre i henhold til gjeldende krav og bedriftens internkontroll- og kvalitetssystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM10284",
+     "tekst": "risikovurdere ubemannet farkost og utstyr med hensyn til beskyttelse mot elektrisk sjokk, overstrøm, overspenning, brann, elektromagnetisk støy og ytre påvirkninger"
+    },
+    {
+     "kode": "KM10285",
+     "tekst": "arbeide med hensyn til sikkerhet ved arbeid på og drift av ubemannede farkoster, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM10286",
+     "tekst": "vedlikeholde ubemannet farkost, evaluere vedlikeholdsrutiner og komme med forslag til forbedringer"
+    },
+    {
+     "kode": "KM10287",
+     "tekst": "diskutere alternativ bruk av bedriftens nyttelast ved ubemannet farkost i lys av teknologisk utvikling, økonomi, etikk og bærekraft"
+    },
+    {
+     "kode": "KM10288",
+     "tekst": "vurdere bruk av bedriftens data fra ulike sensorer og diskutere mulige synergier gjennom samarbeid og deling av data med andre sektorer"
+    },
+    {
+     "kode": "KM10289",
+     "tekst": "diskutere hvordan menneskelige, teknologiske og organisatoriske faktorer påvirker operasjoner og vedlikehold, og drøfte hvordan systematisk sikkerhetsarbeid forebygger ulykker og skader"
+    },
+    {
+     "kode": "KM10290",
+     "tekst": "utføre operasjoner innenfor og utenfor synsrekkevidde med UAS (Unmanned Aircraft Systems) multirotor og fixed wing opptil 25 kg i EASA (European Union Aviation Safety Agency) i minimum kategoriene åpen og spesifikk"
+    },
+    {
+     "kode": "KM10291",
+     "tekst": "kommunisere korrekt med andre luftromsbrukere og gjøre rede for faremomenter ved misforståelser og når kommunikasjonssystemer ikke fungerer"
+    },
+    {
+     "kode": "KM10292",
+     "tekst": "vurdere og arbeide med ulike typer energikilder og bærere av energi som batteri med ulike sammensetninger"
+    },
+    {
+     "kode": "KM10293",
+     "tekst": "delta ved revisjoner av operasjonsmanualer og tekniske manualer i henhold til EASA-kategorien spesifikk"
+    },
+    {
+     "kode": "KM10294",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM10295",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellsbehandling"
+    },
+    {
+     "kode": "KM10296",
+     "tekst": "drøfte etiske dilemmaer ved valg av ubemannede løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM10297",
+     "tekst": "håndtere avfall etter eget arbeid på en bærekraftig, miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM10300",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger og kvalitet i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 droneoperatørfag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 droneoperatørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i droneoperatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

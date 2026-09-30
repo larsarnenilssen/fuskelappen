@@ -1,0 +1,112 @@
+{
+ "kode": "IHP03-01",
+ "tittel": "Læreplan i vg3 innhaldsproduksjonsfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV561",
+   "tittel": "Kompetansemål og vurdering vg3 innhaldsproduksjonsfaget",
+   "fag": [
+    "IHP3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6488",
+     "tekst": "planleggje, gjennomføre og publisere ulike innhaldsproduksjonar"
+    },
+    {
+     "kode": "KM6489",
+     "tekst": "forstå behovet til oppdragsgivaren og kva bodskap som skal formidlast"
+    },
+    {
+     "kode": "KM6496",
+     "tekst": "gjere greie for metodar for å tileigne seg brukarinnsikt og nytte metodar for brukarinnsikt på aktuelle målgrupper"
+    },
+    {
+     "kode": "KM6498",
+     "tekst": "beskrive og bruke metodar for idéutvikling"
+    },
+    {
+     "kode": "KM6495",
+     "tekst": "bruke ulike sjangrar og format for å formidle ein bodskap"
+    },
+    {
+     "kode": "KM6500",
+     "tekst": "utvikle og leggje fram ein pitch for eit prosjekt"
+    },
+    {
+     "kode": "KM6492",
+     "tekst": "kartleggje ressursbehov og lage produksjonsplan og budsjett for eit prosjekt"
+    },
+    {
+     "kode": "KM6494",
+     "tekst": "gjennomføre opptak med foto, film eller lyd tilpassa rammevilkåra i eit prosjekt"
+    },
+    {
+     "kode": "KM6502",
+     "tekst": "velje og bruke verktøy, programvare og teknisk utstyr tilpassa eit prosjekt"
+    },
+    {
+     "kode": "KM6490",
+     "tekst": "bruke komposisjon, ulike typar lyssetjing og digitalt etterarbeid som verkemiddel for å framheve form, struktur, farge og bodskap i visuelle produksjonar"
+    },
+    {
+     "kode": "KM6497",
+     "tekst": "bruke programvare for etterarbeid og eksportering av eit ferdig produkt og vurdere val av format og filtypar"
+    },
+    {
+     "kode": "KM6491",
+     "tekst": "gjere greie for korleis personalisering og algoritmar styrer distribusjon av digitalt innhald"
+    },
+    {
+     "kode": "KM6501",
+     "tekst": "planleggje ein marknadsførings- og publiseringsstrategi og vurdere val av plattform for publisering av eit ferdig produkt"
+    },
+    {
+     "kode": "KM6485",
+     "tekst": "bruke gjeldande regelverk, lovverk og retningslinjer for etikk, opphavsrett, produksjon, publisering og oppbevaring av medieprodukt i eige arbeid"
+    },
+    {
+     "kode": "KM6487",
+     "tekst": "reflektere over og evaluere resultat og erfaringar knytte til eige bidrag i produksjonar"
+    },
+    {
+     "kode": "KM6499",
+     "tekst": "reflektere over og beskrive eiga rolle i team og i verksemda"
+    },
+    {
+     "kode": "KM6486",
+     "tekst": "reflektere over og beskrive korleis ulike innhaldsproduksjonar kan påverke samfunnsdebatten og demokratiet"
+    },
+    {
+     "kode": "KM6493",
+     "tekst": "ferdigstille eit produkt for publisering i tråd med prinsipp for universell utforming"
+    },
+    {
+     "kode": "KM6503",
+     "tekst": "gjere greie for kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har i lærebedrifta"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 innhaldsproduksjonsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 innhaldsproduksjonsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 innhaldsproduksjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
+   ]
+  }
+ ]
+}

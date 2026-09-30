@@ -1,0 +1,202 @@
+{
+ "kode": "FOT03-03",
+ "tittel": "Læreplan i vg3 fotterapi",
+ "spraak": "nno",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV491",
+   "tittel": "Kompetansemål og vurdering helse, funksjon og bevegelse",
+   "fag": [
+    "FOT3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5497",
+     "tekst": "gjere greie for den funksjonelle anatomien og for sjukdommar, deformitetar og skadar som kan ha innverknad på aktivitetsnivået til den enkelte"
+    },
+    {
+     "kode": "KM5499",
+     "tekst": "førebyggje og behandle fotlidingar som kjem av sjukdommar og livsstil"
+    },
+    {
+     "kode": "KM5500",
+     "tekst": "vurdere helsetilstanden på huda og føtene til pasientar og brukarar og tilrå vidare behandling eller vise til anna helsepersonell"
+    },
+    {
+     "kode": "KM5477",
+     "tekst": "gjere greie for etiologiske faktorar i sko og vurdere korleis desse påverkar bevegelsesevna til brukarar og pasientar"
+    },
+    {
+     "kode": "KM5498",
+     "tekst": "planleggje og gjennomføre biomekaniske og terapeutiske behandlingar med vekt på etiologi og drøfte ulike behandlingsalternativ med samarbeidspartnarar"
+    },
+    {
+     "kode": "KM5501",
+     "tekst": "gjere greie for korleis fottøy er bygd opp og fungerer, og rettleie om korleis bruk av riktig fottøy påverkar aktivitetsnivået"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i helse, funksjon og bevegelse når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i helse, funksjon og bevegelse. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i helse, funksjon og bevegelse ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i helse, funksjon og bevegelse basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV493",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "FOT3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5481",
+     "tekst": "kommunisere og samhandle med kollegaer og anna helsepersonell om fothelse"
+    },
+    {
+     "kode": "KM5478",
+     "tekst": "rettleie og gi råd om behandlingsalternativ for å halde oppe og betre fothelsa"
+    },
+    {
+     "kode": "KM5503",
+     "tekst": "informere og rettleie om korleis bruk av solar, avlastingar og fottøy påverkar gangmønsteret"
+    },
+    {
+     "kode": "KM5480",
+     "tekst": "handtere konfliktar og etiske dilemma på arbeidsplassen"
+    },
+    {
+     "kode": "KM5479",
+     "tekst": "bruke faglitteratur og utøve kjeldekritikk"
+    },
+    {
+     "kode": "KM5489",
+     "tekst": "marknadsføre fotterapifaget og eigen praksis på ein profesjonell måte"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kommunikasjon og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i kommunikasjon og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kommunikasjon og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV492",
+   "tittel": "Kompetansemål og vurdering yrkesliv i fotterapifaget",
+   "fag": [
+    "FOT3Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5496",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere behandling av fot-, hud- og naglelidingar"
+    },
+    {
+     "kode": "KM5495",
+     "tekst": "bruke materiale, utstyr og tekniske og digitale hjelpemiddel i tråd med gjeldande regelverk"
+    },
+    {
+     "kode": "KM5484",
+     "tekst": "utforske korleis vedlikehald, gjenbruk og reparasjon av materiale og maskiner kan inngå i yrkesutøvinga"
+    },
+    {
+     "kode": "KM5494",
+     "tekst": "kartleggje og vurdere samanhengen mellom symptom på, årsaker til og behandling av fotlidingar"
+    },
+    {
+     "kode": "KM5492",
+     "tekst": "utføre ledd-, muskel- og føringstestar og gjere greie for konsekvensane ved avvik frå normalfunksjonen"
+    },
+    {
+     "kode": "KM5491",
+     "tekst": "observere og vurdere gonge med og utan sko og utføre skotest"
+    },
+    {
+     "kode": "KM5502",
+     "tekst": "utføre protetikk og reguleringsteknikkar for negler"
+    },
+    {
+     "kode": "KM5490",
+     "tekst": "vurdere hud- og nagleendringar og skorelaterte fotlidingar og tilrå behandling"
+    },
+    {
+     "kode": "KM5488",
+     "tekst": "kartleggje og vurdere risiko for smitte og gjennomføre smitteverntiltak"
+    },
+    {
+     "kode": "KM5493",
+     "tekst": "reflektere over og forbetre eigen praksis"
+    },
+    {
+     "kode": "KM5487",
+     "tekst": "arbeide i tråd med etiske retningslinjer, prinsipp for universell utforming og gjeldande reglar for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM5483",
+     "tekst": "utarbeide budsjett, kalkulere pris for tenester og berekne materialkostnader"
+    },
+    {
+     "kode": "KM5486",
+     "tekst": "planleggje etablering og drift av eiga verksemd i samsvar med god forretningsskikk og gjeldande lovverk"
+    },
+    {
+     "kode": "KM5482",
+     "tekst": "føre journal og samhandle med helsepersonell og brukarar ved bruk av elektroniske journalsystem, og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5485",
+     "tekst": "følgje opp eigne rettar og plikter i arbeidsforholdet og gjere greie for korleis partane i arbeidslivet utfører samfunnsrolla si i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i yrkesliv i fotterapifaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i yrkesliv i fotterapifaget. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i yrkesliv i fotterapifaget ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i yrkesliv i fotterapifaget basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helse, funksjon og bevegelse: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha éin standpunktkarakter.",
+    "Yrkesliv i fotterapifaget: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapifaget: Eleven skal opp til i ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Helse, funksjon og bevegelse: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Yrkesliv i fotterapifaget: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapifaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "kode": "AMB02-03",
+ "tittel": "Læreplan i vg2 ambulansefag",
+ "spraak": "nob",
+ "fastsatt": "2021-08-01",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV382",
+   "tittel": "Kompetansemål og vurdering ambulansemedisin",
+   "fag": [
+    "AMB2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4036",
+     "tekst": "gjøre rede for kroppens oppbygning og funksjoner og beskrive kroppens regulerings- og kompensasjonsmekanismer ved sykdom og skade"
+    },
+    {
+     "kode": "KM4039",
+     "tekst": "gjøre rede for og demonstrere undersøkelsesmetoder, vurdering og overvåking av vitale livsfunksjoner hos pasienter i alle aldre"
+    },
+    {
+     "kode": "KM4038",
+     "tekst": "gjøre rede for tegn og symptomer på relevante somatiske og psykiske sykdomstilstander og skader og behandling av pasienter i alle aldre"
+    },
+    {
+     "kode": "KM4035",
+     "tekst": "beskrive legemiddelgrupper og administrering og håndtering av de vanligste medikamentene som brukes i prehospital akuttmedisin"
+    },
+    {
+     "kode": "KM4031",
+     "tekst": "beskrive de vanligste virkningene og bivirkningene av medikamenter som brukes i prehospital akuttmedisin"
+    },
+    {
+     "kode": "KM4033",
+     "tekst": "beskrive hvordan aldersforandringer i kroppen virker inn ved sykdom og skade hos barn og eldre"
+    },
+    {
+     "kode": "KM4037",
+     "tekst": "beskrive normale svangerskap, fødsler og mulige komplikasjoner og gjøre rede for prehospital håndtering"
+    },
+    {
+     "kode": "KM4034",
+     "tekst": "gjøre rede for god hygiene og smittevern i ambulansetjenesten og anvende prinsipper for prehospitalt smittevern"
+    },
+    {
+     "kode": "KM4032",
+     "tekst": "gjøre rede for hvordan man bør undersøke og håndtere bevisstløse og livløse pasienter i ulike aldre"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i ambulansemedisin når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i ambulansemedisin. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i ambulansemedisin ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i ambulansemedisin basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV381",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "AMB2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4046",
+     "tekst": "gjøre rede for ambulansefagets plass i helsevesenet og gi eksempler på samhandling med andre yrkesgrupper i ulike pasientforløp"
+    },
+    {
+     "kode": "KM4043",
+     "tekst": "gjøre rede for kommunikasjonssystemer i ambulansetjenesten og bruke samband og sambandsuttrykk"
+    },
+    {
+     "kode": "KM4019",
+     "tekst": "reflektere over og demonstrere kommunikasjon og samhandling med pasienter, pårørende, kolleger og personell fra ulike kulturer de samarbeider med, på en tydelig og tillitsfull måte"
+    },
+    {
+     "kode": "KM4042",
+     "tekst": "møte alle mennesker med respekt og likeverd"
+    },
+    {
+     "kode": "KM4041",
+     "tekst": "gjøre rede for hva yrkesetikk er og reflektere over etiske problemstillinger"
+    },
+    {
+     "kode": "KM4040",
+     "tekst": "reflektere over hvordan man håndterer hendelser og situasjoner med døende og døde pasienter"
+    },
+    {
+     "kode": "KM4044",
+     "tekst": "reflektere over hvordan stressreaksjoner kan påvirke ambulansearbeideren, og beskrive ulike mestringsstrategier"
+    },
+    {
+     "kode": "KM4045",
+     "tekst": "gjøre rede for og demonstrere ulike strategier for konflikthåndtering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV383",
+   "tittel": "Kompetansemål og vurdering yrkesliv i ambulansefag",
+   "fag": [
+    "AMB2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4026",
+     "tekst": "beskrive redningstjenestens organisering og oppbygning og ambulansetjenestens oppgaver"
+    },
+    {
+     "kode": "KM4029",
+     "tekst": "gjøre rede for prosedyrer og retningslinjer for samvirke mellom nødetatene og andre aktører i redningstjenesten"
+    },
+    {
+     "kode": "KM4022",
+     "tekst": "gjøre rede for og bruke analoge og digitale kart"
+    },
+    {
+     "kode": "KM4028",
+     "tekst": "gjøre rede for relevante lover og regler som gjelder for ambulansetjenesten"
+    },
+    {
+     "kode": "KM4023",
+     "tekst": "gjøre rede for ambulansetjenestens kvalitetssystem"
+    },
+    {
+     "kode": "KM4030",
+     "tekst": "gjøre rede for og demonstrere tiltak innenfor helse, miljø og sikkerhet i ambulansefaget"
+    },
+    {
+     "kode": "KM4027",
+     "tekst": "reflektere over hvordan egen fysisk og psykisk helse kan ivaretas"
+    },
+    {
+     "kode": "KM4025",
+     "tekst": "beskrive og demonstrere bruk og kontroll av utstyr som benyttes i ambulansetjenesten"
+    },
+    {
+     "kode": "KM4024",
+     "tekst": "drøfte hva profesjonell yrkesutøvelse og tverrfaglig samarbeid innebærer for ambulansearbeideren"
+    },
+    {
+     "kode": "KM4047",
+     "tekst": "vurdere miljøhensyn i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM4021",
+     "tekst": "reflektere over trafikksikkerhet og risiko ved utrykningskjøring med ambulanse"
+    },
+    {
+     "kode": "KM4048",
+     "tekst": "dokumentere og reflektere over eget arbeid og rapportere avvik og uønskede hendelser"
+    },
+    {
+     "kode": "KM4020",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i ambulansefag når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i ambulansefag. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i ambulansefag ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i ambulansefag basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Ambulansemedisin: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha én standpunktkarakter.",
+    "Yrkesliv i ambulansefag: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Ambulansemedisin, kommunikasjon og samhandling og yrkesliv i ambulansefag: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Ambulansemedisin: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i ambulansefag: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Ambulansemedisin, kommunikasjon og samhandling og yrkesliv i ambulansefag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

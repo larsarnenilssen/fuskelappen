@@ -5,7 +5,7 @@
 // PR-er som lages med GITHUB_TOKEN, starter ikke CI av seg selv, så CI startes med workflow_dispatch, og
 // testresultatet fra jobben står i beskrivelsen. Uten GITHUB_TOKEN skrives forslagene bare ut.
 import { execFileSync } from 'node:child_process';
-import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { lesVerdistatus, sjekkbareVerdier } from '../../src/core/kontroll/verdisjekk.ts';
@@ -131,7 +131,11 @@ if (grepTester === 'feilet' && existsSync(grepNy)) {
     resultat.grep = await lagPr(
       'kontroll/grep',
       `Grep er endret: ${sammendrag}`,
-      () => cpSync(grepNy, join(rot, 'data/grep'), { recursive: true }),
+      () => {
+        // Læreplanmappen erstattes helt, så læreplaner som er fjernet i Grep, forsvinner også her.
+        rmSync(join(rot, 'data/grep/laereplaner'), { recursive: true, force: true });
+        cpSync(grepNy, join(rot, 'data/grep'), { recursive: true });
+      },
       (feilet) => grepforslagstekst(sammendrag, g ? grepdetaljer(g) : [], feilet),
     );
   } else {

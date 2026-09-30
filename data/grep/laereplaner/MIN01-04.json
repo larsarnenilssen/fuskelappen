@@ -1,0 +1,182 @@
+{
+ "kode": "MIN01-04",
+ "tittel": "Læreplan i medie- og informasjonskunnskap",
+ "spraak": "nno",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV893",
+   "tittel": "Kompetansemål og vurdering medie- og informasjonskunnskap 1",
+   "fag": [
+    "MIN1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11669",
+     "tekst": "finne, vurdere og bruke kjelder"
+    },
+    {
+     "kode": "KM11670",
+     "tekst": "bruke medie- og kommunikasjonsfaglege teoriar i arbeid med faglege spørsmål, emne og problemstillingar"
+    },
+    {
+     "kode": "KM11657",
+     "tekst": "reflektere over kva rolle media speler for utviklinga av demokratiet i Noreg, og drøfte samanhengen mellom ytringsfridom og demokrati"
+    },
+    {
+     "kode": "KM11658",
+     "tekst": "gjere greie for hovudlinjer i mediepolitikken i Noreg og drøfte samanhengar mellom mediestrukturen, mediepolitikken og den teknologiske utviklinga i dag"
+    },
+    {
+     "kode": "KM11659",
+     "tekst": "planleggje og utvikle medieprodukt knytte til medieutvikling"
+    },
+    {
+     "kode": "KM11660",
+     "tekst": "reflektere over mediebruk og vurdere korleis sosiale medium, og andre medium, kan påverke haldningar, identitet og sjølvforståing"
+    },
+    {
+     "kode": "KM11661",
+     "tekst": "utforske kva rolle media har i korleis dei presenterer ulike grupper i samfunnet og reflektere over korleis urfolk og minoritetar er presenterte og representerte i media i Noreg"
+    },
+    {
+     "kode": "KM11662",
+     "tekst": "reflektere over og vurdere etiske og juridiske utfordringar i ulike kommunikasjonssituasjonar og i eigne medieproduksjonar"
+    },
+    {
+     "kode": "KM11663",
+     "tekst": "vurdere skiljet mellom faktabaserte ytringar og andre ytringar"
+    },
+    {
+     "kode": "KM11664",
+     "tekst": "beskrive journalistisk arbeidsmetode og reflektere over denne i eigen medieproduksjon"
+    },
+    {
+     "kode": "KM11665",
+     "tekst": "reflektere over omgrepet sjølvjustis i media og drøfte konsekvensar av brot på medieetiske normer"
+    },
+    {
+     "kode": "KM11666",
+     "tekst": "reflektere over konsekvensar av uklare skilje mellom journalistikk og andre medieuttrykk"
+    },
+    {
+     "kode": "KM11667",
+     "tekst": "gjere greie for ulike kommunikasjonsmodellar og bruke desse i analyse og produksjon av medietekstar"
+    },
+    {
+     "kode": "KM11668",
+     "tekst": "reflektere over samanhengar mellom form og innhald i ulike typar medieforteljingar og utvikle ulike medieproduksjonar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i medie- og informasjonskunnskap 1. Elevane viser og utviklar kompetanse i faget når dei bruker faglege metodar og teoriar i utforskande arbeid med og refleksjon over ulike emne, samanhengar og problemstillingar, munnleg, skriftleg og praktisk. Vidare viser og utviklar elevane kompetanse gjennom refleksjon over etiske spørsmål, medieforteljingar og kva rolle media speler i samfunnet og i deira eige liv. Elevane viser og utviklar òg kompetanse i arbeid med journalististikk og medieproduksjonar.",
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i medie- og informasjonskunnskap 1. Elevane viser og utviklar kompetanse i faget når dei bruker faglege metodar og teoriar i utforskande arbeid med og refleksjon over ulike emne, samanhengar og problemstillingar, munnleg og skriftleg. Vidare viser og utviklar elevane kompetanse gjennom refleksjon over etiske spørsmål, medieforteljingar og kva rolle media speler i samfunnet og i deira eige liv. Elevane viser og utviklar òg kompetanse i arbeid med journalististikk og medieproduksjonar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter medie- og informasjonskunnskap 1. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i medie- og informasjonskunnskap 1 basert på kompetansen eleven har vist ved å skape produkt, belyse ulike emne, samanhengar og problemstillingar og bruke faglege teoriar og metodar i arbeidet."
+   ]
+  },
+  {
+   "kode": "KV894",
+   "tittel": "Kompetansemål og vurdering medie- og informasjonskunnskap 2",
+   "fag": [
+    "MIN1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11682",
+     "tekst": "finne, vurdere og bruke kjelder"
+    },
+    {
+     "kode": "KM11683",
+     "tekst": "bruke faglege teoriar i arbeid med faglege spørsmål, emne og problemstillingar"
+    },
+    {
+     "kode": "KM11671",
+     "tekst": "utforske sentrale trekk ved internasjonal mediestruktur og mediepolitikk, og drøfte samanhengar mellom mediesystem, ytringsfridom og demokrati"
+    },
+    {
+     "kode": "KM11672",
+     "tekst": "analysere nyheitsformidling i eit internasjonalt perspektiv"
+    },
+    {
+     "kode": "KM11673",
+     "tekst": "drøfte kva konsekvensar medieutviklinga har for journalistrolla, og utforske og reflektere over korleis nye medium og forteljemåtar kan brukast i eigne journalistiske produksjonar"
+    },
+    {
+     "kode": "KM11674",
+     "tekst": "drøfte etiske problemstillingar i journalistikk og andre medieuttrykk og i eigen medieproduksjon"
+    },
+    {
+     "kode": "KM11675",
+     "tekst": "drøfte korleis produksjon og distribusjon av informasjon kan bli styrt og kontrollert av ulike interesser og gjennom teknologi og ulike strategiar"
+    },
+    {
+     "kode": "KM11676",
+     "tekst": "drøfte kva makt media har"
+    },
+    {
+     "kode": "KM11677",
+     "tekst": "drøfte forholdet mellom ytringsfridom og ytringsansvar"
+    },
+    {
+     "kode": "KM11678",
+     "tekst": "utforske og vurdere eigne moglegheiter til å delta i samfunnsdebattar og til å setje dagsordenen"
+    },
+    {
+     "kode": "KM11679",
+     "tekst": "analysere forskjellige medieforteljingar og reflektere over samanhengar mellom form og innhald"
+    },
+    {
+     "kode": "KM11680",
+     "tekst": "drøfte korleis medieforteljingar kan skape respekt og forståing mellom folk og kulturar, men også stereotypiar og fordommar"
+    },
+    {
+     "kode": "KM11681",
+     "tekst": "planleggje, utvikle og presentere eigne medieforteljingar på nye måtar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i medie- og informasjonskunnskap 2. Elevane viser og utviklar kompetanse i faget når dei bruker faglege metodar og teoriar i utforskande arbeid med og refleksjon over ulike emne, samanhengar og problemstillingar, munnleg, skriftleg og praktisk. Vidare viser og utviklar elevane kompetanse gjennom refleksjon over etiske spørsmål og kva rolle media speler i det internasjonale samfunnet og i deira eige liv. Elevane viser og utviklar òg kompetanse i arbeid med medieforteljingar, journalististikk og medieproduksjonar.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte og praktiske arbeidsmåtar, og ved å la elevane skape, utforske og søke svar på faglege spørsmål og problemstillingar. Læraren skal vere i dialog med elevane om utviklinga deira i medie- og informasjonskunnskap 2, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i medie- og informasjonskunnskap 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter medie- og informasjonskunnskap 2. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i medie- og informasjonskunnskap 2 basert på kompetansen eleven har vist ved å skape produkt, belyse ulike emne, samanhengar og problemstillingar og bruke faglege teoriar og metodar i arbeidet."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Medie- og informasjonskunnskap 1: Eleven skal ha éin standpunktkarakter.",
+    "Medie- og informasjonskunnskap 2: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Medie- og informasjonskunnskap 1: Eleven kan trekkjast ut til ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.",
+    "Medie- og informasjonskunnskap 2: Eleven kan trekkjast ut til ein skriftleg eller munnleg-praktisk eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt. Munnleg-praktisk eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Medie- og informasjonskunnskap 1: Privatisten skal opp til ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Medie- og informasjonskunnskap 2: Privatisten skal opp til ein skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

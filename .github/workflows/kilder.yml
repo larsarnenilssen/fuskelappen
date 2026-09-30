@@ -58,15 +58,15 @@ jobs:
         if: steps.grep.outcome == 'success'
         run: |
           mkdir -p .generert
-          if git diff --quiet -- data/grep; then
+          if [ -z "$(git status --porcelain -- data/grep)" ]; then
             echo uendret > .generert/grep-tester.txt
           elif npx vitest run; then
             echo ok > .generert/grep-tester.txt
           else
             echo feilet > .generert/grep-tester.txt
             # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake.
-            mkdir -p .generert/grep-ny && cp data/grep/*.json .generert/grep-ny/
-            git checkout -- data/grep
+            mkdir -p .generert/grep-ny && cp -r data/grep/. .generert/grep-ny/
+            git checkout -- data/grep && git clean -fdq -- data/grep
           fi
       - name: Sjekk kildene
         env:

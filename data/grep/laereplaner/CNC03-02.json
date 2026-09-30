@@ -1,0 +1,120 @@
+{
+ "kode": "CNC03-02",
+ "tittel": "Læreplan i vg3 CNC-maskineringsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV691",
+   "tittel": "Kompetansemål og vurdering vg3 CNC-maskineringsfaget",
+   "fag": [
+    "CNC3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8867",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver i samsvar med tegningsgrunnlag, kvalitetsprosedyrer og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8849",
+     "tekst": "velge og bruke egnet verneutstyr tilpasset arbeidsoppdraget og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8866",
+     "tekst": "velge og bruke materialer, og gjøre rede for materialenes egenskaper og bruksområder"
+    },
+    {
+     "kode": "KM8865",
+     "tekst": "velge, klargjøre og bruke maskiner og utstyr, og utføre vedlikehold etter gjeldende prosedyrer"
+    },
+    {
+     "kode": "KM8864",
+     "tekst": "velge og bruke måleverktøy og måleutstyr tilpasset arbeidsoppdraget"
+    },
+    {
+     "kode": "KM8863",
+     "tekst": "forstå og bruke toleransesetting etter tegninger og standarder"
+    },
+    {
+     "kode": "KM8862",
+     "tekst": "programmere CNC-maskiner i tråd med tegninger og arbeidsoppgaver"
+    },
+    {
+     "kode": "KM8861",
+     "tekst": "simulere, feilsøke, justere og optimalisere CNC-program"
+    },
+    {
+     "kode": "KM8860",
+     "tekst": "spenne opp arbeidsstykket i tråd med spesifikasjoner, bearbeidingsmetoder og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8868",
+     "tekst": "velge skjæreverktøy og skjæredata med hensyn til materiale og arbeidsoppgave"
+    },
+    {
+     "kode": "KM8859",
+     "tekst": "gjøre rede for hensikten med og viktigheten av å overvåke en CNC-produksjon"
+    },
+    {
+     "kode": "KM8857",
+     "tekst": "gjennomføre målinger, vurdere måleresultat og justere i tråd med toleransekrav på tegninger"
+    },
+    {
+     "kode": "KM8856",
+     "tekst": "vurdere behov for grading av deler og utføre grading"
+    },
+    {
+     "kode": "KM8855",
+     "tekst": "gjøre rede for og gjennomføre produksjonsprosesser fra emne til ferdig del"
+    },
+    {
+     "kode": "KM8854",
+     "tekst": "tolke, bruke og forklare tegningsunderlag"
+    },
+    {
+     "kode": "KM8853",
+     "tekst": "kontrollere og sikre bruk av CNC-program i tråd med bedriftens prosedyrer"
+    },
+    {
+     "kode": "KM8852",
+     "tekst": "registrere avvik og utføre avviksbehandling i tråd med bedriftens kvalitetssystemer"
+    },
+    {
+     "kode": "KM8851",
+     "tekst": "gjennomføre dimensjons- og kvalitetskontroll på produkter i tråd med tegningsunderlag"
+    },
+    {
+     "kode": "KM8850",
+     "tekst": "reflektere over sammenhengen mellom eget arbeid, bruk av ressurser og krav til lønnsomhet sett opp mot sosiale og miljømessige forhold"
+    },
+    {
+     "kode": "KM8858",
+     "tekst": "reflektere over betydningen av bærekraftig avfallshåndtering og gjennomføre kildesortering og avfallshåndtering i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM8869",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 CNC-maskineringsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 CNC-maskineringsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 CNC-maskineringsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

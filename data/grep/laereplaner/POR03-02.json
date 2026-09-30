@@ -1,0 +1,152 @@
+{
+ "kode": "POR03-02",
+ "tittel": "Læreplan i vg3 portørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV480",
+   "tittel": "Kompetansemål og vurdering portørfaget",
+   "fag": [
+    "POR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5287",
+     "tekst": "transportere pasienter og brukere på en profesjonell måte"
+    },
+    {
+     "kode": "KM5289",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid og foreslå forbedringstiltak i samarbeid med annet helsepersonell"
+    },
+    {
+     "kode": "KM5296",
+     "tekst": "bruke digitale ressurser og analogt utstyr ved navigering, kommunikasjon og rapportering"
+    },
+    {
+     "kode": "KM5272",
+     "tekst": "kommunisere med og vise profesjonell omsorg for pasienter, brukere og pårørende fra ulike kulturer"
+    },
+    {
+     "kode": "KM5298",
+     "tekst": "kommunisere, samhandle, veilede og bli veiledet av kolleger og andre yrkesgrupper"
+    },
+    {
+     "kode": "KM5295",
+     "tekst": "gjøre rede for og bidra til et omsorgsfullt pasient- og brukerforløp"
+    },
+    {
+     "kode": "KM5294",
+     "tekst": "vurdere symptomer på sykdom og observere, identifisere og rapportere fysiske og psykiske endringer i tilstanden til pasienter og brukere"
+    },
+    {
+     "kode": "KM5293",
+     "tekst": "følge medisinskfaglig veiledning og instrukser og reflektere over hensikten med disse"
+    },
+    {
+     "kode": "KM5292",
+     "tekst": "gjennomføre arbeid i tråd med gjeldende retningslinjer for hygiene og utføre relevante smitteverntiltak og reflektere over hensikten med disse"
+    },
+    {
+     "kode": "KM5291",
+     "tekst": "gjennomføre helsefaglige støttefunksjoner i samsvar med retningslinjer og instrukser"
+    },
+    {
+     "kode": "KM5290",
+     "tekst": "utføre førstehjelp og varsling etter gjeldende retningslinjer og rutiner"
+    },
+    {
+     "kode": "KM5288",
+     "tekst": "reflektere over hva pasient- og brukermedvirkning innebærer i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5299",
+     "tekst": "reflektere over hva taushetsplikt og yrkesetiske problemstillinger innebærer i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5286",
+     "tekst": "utføre arbeidsoppgaver knyttet til døde personer etter gjeldende retningslinjer"
+    },
+    {
+     "kode": "KM5284",
+     "tekst": "utføre arbeidsoppgaver og vurdere risiko i henhold til beredskapsplanene for virksomheten og foreslå og gjennomføre tiltak"
+    },
+    {
+     "kode": "KM5283",
+     "tekst": "gjennomføre og dokumentere arbeidet i samsvar med gjeldende regelverk for helse, miljø og sikkerhet og rutiner for avviksmeldinger og internkontroller"
+    },
+    {
+     "kode": "KM5300",
+     "tekst": "utføre tiltak for å sikre liv, helse og verdier etter retningslinjer og rutiner for arbeidet"
+    },
+    {
+     "kode": "KM5282",
+     "tekst": "gjennomføre grunnleggende sykepleie og andre tiltak ved akutt sykdom og skade og i akutteam og mottak i tråd med portørens rolle"
+    },
+    {
+     "kode": "KM5285",
+     "tekst": "avgi muntlige og skriftlige rapporter, dokumentere eget arbeid og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5281",
+     "tekst": "gjennomføre tiltak overfor utagerende personer i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM5297",
+     "tekst": "bruke passende strategier for konflikthåndtering"
+    },
+    {
+     "kode": "KM5280",
+     "tekst": "gjennomføre debrifing etter opprivende hendelser og episoder"
+    },
+    {
+     "kode": "KM5274",
+     "tekst": "reflektere over hvordan egen fysisk og psykisk helse kan ivaretas i ulike arbeidssituasjoner"
+    },
+    {
+     "kode": "KM5279",
+     "tekst": "gjøre rede for og følge prosedyrer og retningslinjer for mottak, oppbevaring og utlevering av varer"
+    },
+    {
+     "kode": "KM5278",
+     "tekst": "bruke transport- og forflytningstekniske innretninger og gjøre rede for hvordan de er bygget opp, og hvilken betydning de har for pasientsikkerhet og forebygging av skader"
+    },
+    {
+     "kode": "KM5277",
+     "tekst": "behandle medikamenter og medisinskteknisk utstyr og transportere prøver og blodprodukter i samsvar med gjeldende retningslinjer"
+    },
+    {
+     "kode": "KM5276",
+     "tekst": "transportere, sortere og lagre ulike typer avfall i samsvar med gjeldende forskrifter og retningslinjer"
+    },
+    {
+     "kode": "KM5275",
+     "tekst": "utføre leiring og forflytning og bruke ergonomiske prinsipper i arbeidet"
+    },
+    {
+     "kode": "KM5273",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 portørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 portørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 portørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på to til fire virkedager."
+   ]
+  }
+ ]
+}

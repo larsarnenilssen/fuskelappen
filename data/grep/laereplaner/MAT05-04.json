@@ -1,0 +1,77 @@
+{
+ "kode": "MAT05-04",
+ "tittel": "Læreplan i matematikk fellesfag 2P",
+ "spraak": "nno",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV46",
+   "tittel": "Kompetansemål og vurdering matematikk 2P",
+   "fag": [
+    "MAT5Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM447",
+     "tekst": "forklare og bruke prosent, prosentpoeng og vekstfaktor til modellering av praktiske situasjonar med digitale verktøy"
+    },
+    {
+     "kode": "KM448",
+     "tekst": "utforske og forklare samanhengar mellom prisindeks, kroneverdi, reallønn, nominell lønn og brutto- og nettoinntekt"
+    },
+    {
+     "kode": "KM449",
+     "tekst": "utforske strategiar for å løyse likningar, likningssystem og ulikskapar og argumentere for tenkjemåtane sine"
+    },
+    {
+     "kode": "KM450",
+     "tekst": "vurdere val knytte til personleg økonomi og reflektere over konsekvensar av å ta opp lån og å bruke kredittkort"
+    },
+    {
+     "kode": "KM451",
+     "tekst": "analysere og presentere funn i datasett frå lokalsamfunn og media"
+    },
+    {
+     "kode": "KM452",
+     "tekst": "bruke og vurdere val av formålstenlege sentralmål og spreiingsmål for statistisk datamateriale"
+    },
+    {
+     "kode": "KM453",
+     "tekst": "utforske og forklare korleis formlikskap, målestokk og eigenskapar ved geometriske figurar kan brukast i berekningar og i praktisk arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i matematikk 2P. Elevane viser og utviklar kompetanse i faget når dei finn, forstår og bruker matematiske samanhengar. Elevane viser og utviklar kompetanse når dei jobbar praktisk og utforskande ved å planleggje, utføre og presentere sjølvstendig arbeid knytt til samfunnet. Elevane viser og utviklar òg kompetanse ved å vurdere statistikk og val knytte til personleg økonomi, bruke matematiske metodar og resonnere matematisk.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske matematikk og løyse matematiske problem gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira i programmering og strategiar for å løyse problem. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i å sjå samanhengar mellom matematikk og praktiske anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i matematikk ved avslutninga av opplæringa etter matematikk 2P. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i matematikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt, ved å bruke matematiske uttrykksformer, bruke problemløysingsstrategiar og reflektere over og argumentere for løysingar og modellar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk 2P: Eleven skal ha ein standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Matematikk 2P: Eleven kan trekkjast ut til skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Eleven kan óg trekkjast ut til munnleg-praktisk eksamen med førebuingsdel. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Matematikk 2P: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt."
+   ]
+  }
+ ]
+}

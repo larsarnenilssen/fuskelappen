@@ -1,0 +1,85 @@
+{
+ "kode": "MDD05-02",
+ "tittel": "Læreplan i musikk",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV263",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD5Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2815",
+     "tekst": "øve inn, framføre og formidle musikk etter gehør og notasjon"
+    },
+    {
+     "kode": "KM2816",
+     "tekst": "vise instrumentaltekniske ferdigheter i utøving på fordypnings- og bruksinstrument"
+    },
+    {
+     "kode": "KM2817",
+     "tekst": "utvikle øvingsplaner og reflektere over sammenhengen mellom øving og utøvende utvikling"
+    },
+    {
+     "kode": "KM2818",
+     "tekst": "bruke relevante arbeidsfysiologiske prinsipper og mentale strategier i øving, framføring og formidling"
+    },
+    {
+     "kode": "KM2819",
+     "tekst": "utforske musikalske uttrykk og virkemidler i interpretasjon og improvisasjon, og reflektere over egne musikalske valg i utøvende og skapende prosesser"
+    },
+    {
+     "kode": "KM2820",
+     "tekst": "samarbeide og ta aktivt ansvar i ensembler ved å gi og ta imot innspill og ved å forme felles uttrykk i utøvende og skapende prosesser"
+    },
+    {
+     "kode": "KM2821",
+     "tekst": "framføre innøvd repertoar og improvisert materiale på konserter, individuelt og i ensembler"
+    },
+    {
+     "kode": "KM2822",
+     "tekst": "bruke musikkteoretisk forståelse i innstudering, interpretasjon og improvisasjon på fordypningsinstrument og bruksinstrument"
+    },
+    {
+     "kode": "KM2823",
+     "tekst": "bruke relevant programvare og andre digitale ressurser i arbeid med innstudering, øving og formidling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk. Elevene viser og utvikler kompetanse i musikk når de skaper, utøver og formidler musikk gjennom spill og sang. De viser og utvikler også kompetanse når de bruker musikkteoretisk kunnskap og reflekterer over ulike musikalske uttrykk for å utvikle egne personlige uttrykk. Videre viser og utvikler de kompetanse når de arbeider med faget individuelt og i samarbeid med andre i øving, i arbeid med improvisasjon og i bruk av digitale ressurser.Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske og utvikle musikalske og utøvende ferdigheter.",
+    "Læreren skal være i dialog med elevene om utviklingen deres i arbeid med innstudering av repertoar og teknikkutvikling, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle utøvende og skapende kompetanse i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i musikk ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i musikk basert på kompetansen eleven har vist gjennom å øve målrettet og hensiktsmessig, utvikle tekniske ferdigheter, samarbeide i ensembler, bruke digitale ressurser på en etisk måte, og skape og formidle musikk på fordypnings- og bruksinstrument."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Musikk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Musikk: Eleven kan trekkes ut til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Musikk: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

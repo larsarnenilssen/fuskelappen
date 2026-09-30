@@ -1,0 +1,86 @@
+{
+ "kode": "GEO01-02",
+ "tittel": "Læreplan i geografi fellesfag",
+ "spraak": "nno",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV49",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "GEO1Z02",
+    "GEO1Z03"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM487",
+     "tekst": "utforske og presentere geografiske forhold og prosessar ved å bruke ulike kjelder, inkludert kart"
+    },
+    {
+     "kode": "KM480",
+     "tekst": "gjere greie for korleis indre og ytre krefter har danna ulike landskap, og utforske og gi døme på korleis menneska som bur der, kan utnytte ressursane"
+    },
+    {
+     "kode": "KM481",
+     "tekst": "drøfte ulike interesser knytte til ressurs- og arealbruk i Noreg, Sápmi/Sábme/Sáepmie og nordområda"
+    },
+    {
+     "kode": "KM485",
+     "tekst": "reflektere over eigen ressursbruk og ressursbruken i Noreg i eit globalt og berekraftig perspektiv"
+    },
+    {
+     "kode": "KM482",
+     "tekst": "utforske kva endringar i klimaet har å seie for natur og samfunn lokalt, regionalt eller globalt"
+    },
+    {
+     "kode": "KM483",
+     "tekst": "utforske og gjere greie for årsakene til ein aktuell natur- eller miljøkatastrofe og konsekvensar for menneske, samfunn og natur"
+    },
+    {
+     "kode": "KM484",
+     "tekst": "gjere greie for årsaker til demografiske endringar og drøfte ulike levekår i forskjellige delar av verda"
+    },
+    {
+     "kode": "KM486",
+     "tekst": "gjennomføre eit feltarbeid for å undersøkje og presentere geografiske forhold"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget. Elevane viser og utviklar kompetanse i geografi når dei nytter kunnskap om natur og samfunn til å utforske og reflektere over ulike geografiske forhold. Dei utviklar også kompetanse når dei undersøker og viser forståing for geografiske prosessar, og ser samanhengar mellom hendingar og endringar på ulike geografiske nivå.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom munnlege, skriftlege og praktiske arbeidsmåtar, slik at elevane kan tileigne seg og vise kompetanse i geografi. Læraren skal vere i dialog med elevane om utviklinga deira i geografi. Elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kunnskapen om og forståinga av korleis menneske og natur påverkar kvarandre."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i geografi ved avslutninga av opplæringa. Læraren skal planleggje og leggje til rette for at elevane får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i geografi basert på kompetansen eleven har vist når eleven har brukt kunnskapar og ferdigheiter i kombinasjon."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Eleven skal ha éin standpunktkarakter.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Eleven kan trekkjast ut til munnleg eksamen med førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon: Eleven kan trekkjast ut til munnleg eksamen med førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Vg1 utdanningsprogram for studiespesialisering: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

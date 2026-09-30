@@ -1,0 +1,128 @@
+{
+ "kode": "AMF03-02",
+ "tittel": "Læreplan i Vg3 anleggsmaskinførerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV501",
+   "tittel": "Kompetansemål og vurdering Vg3 anleggsmaskinførerfaget",
+   "fag": [
+    "AMF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5609",
+     "tekst": "velge og bruke masseforflytningsmaskiner tilpasset arbeidsoppgaven, reflektere over konsekvensene for miljø og ressursbruk og iverksette tiltak"
+    },
+    {
+     "kode": "KM5629",
+     "tekst": "grave, laste, transportere, legge ut og finavrette ulike type masser."
+    },
+    {
+     "kode": "KM5628",
+     "tekst": "velge og bruke tilleggsutstyr i tråd med arbeidsoppdraget. reflektere over konsekvensen av feilbruk og iverksette tiltak som sikrer eksisterende infrastruktur"
+    },
+    {
+     "kode": "KM5627",
+     "tekst": "utføre vedlikehold og enkle reparasjoner på anleggsmaskinen"
+    },
+    {
+     "kode": "KM5626",
+     "tekst": "planlegge bygging av infrastruktur etter tegninger, beskrivelser og preaksepterte løsninger, stardarder og toleransestandarder ved å bruke ulike prosjektverktøy og vurdere konsekvenser av avvik fra toleransekravene"
+    },
+    {
+     "kode": "KM5625",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer, utstyr og massetyper og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5612",
+     "tekst": "arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet, bruke verne- og sikringsutstyr og reflektere over konsekvenser av ikke å følge kravene"
+    },
+    {
+     "kode": "KM5611",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5610",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM5624",
+     "tekst": "utføre arbeidsvarsling i henhold til gjeldende regelverk og arbeide i samsvar med en skiltplan"
+    },
+    {
+     "kode": "KM5623",
+     "tekst": "beregne areal, volum, vekt, høyde og vinkler i tråd med arbeidsoppdraget og vurdere konsekvenser ved feilmåling."
+    },
+    {
+     "kode": "KM5622",
+     "tekst": "kontrollere fall og plan i grøft, byggegrop og vei"
+    },
+    {
+     "kode": "KM5621",
+     "tekst": "sikre fastmerker og utmålte punkter og vurdere konsekvenser av feilmarginer"
+    },
+    {
+     "kode": "KM5619",
+     "tekst": "bruke GPS og maskinstyringssystemer ved bruk av masseforflytningsmaskiner"
+    },
+    {
+     "kode": "KM5630",
+     "tekst": "fundamentere grunnen, bygge opp konstruksjoner og komprimere ulike massetyper i henhold til tegninger og beskrivelser"
+    },
+    {
+     "kode": "KM5620",
+     "tekst": "legge rør og montere kummer etter tegninger og beskrivelser"
+    },
+    {
+     "kode": "KM5618",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper, reflektere over hvordan støy og vibrasjon påvirker yrkesutøveren og iverksette tiltak"
+    },
+    {
+     "kode": "KM5617",
+     "tekst": "reflektere over egen rolle som yrkesutøver, tilpasse kommunikasjon i ulike situasjoner og bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere"
+    },
+    {
+     "kode": "KM5616",
+     "tekst": "behandle forurenset masse, uønskede planter og organismer og reflektere over konsekvensene av feilhåndtering og ulike løsninger som bidrar til å redusere miljøavtrykket og sikre effektiv ressursutnyttelse."
+    },
+    {
+     "kode": "KM5631",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM5615",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM5614",
+     "tekst": "vurdere farer ved gjenstående sprengstoff, varsle om fare og iverksette tiltak for å fjerne sprengstoff"
+    },
+    {
+     "kode": "KM5613",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 anleggsmaskinførerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 anleggsmaskinførerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 anleggsmaskinførerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

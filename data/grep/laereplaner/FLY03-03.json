@@ -1,0 +1,177 @@
+{
+ "kode": "FLY03-03",
+ "tittel": "Læreplan i vg3 flytekniske fag – opplæring i skole",
+ "spraak": "nob",
+ "fastsatt": "2025-05-14",
+ "gyldigFra": "2025-05-15",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV962",
+   "tittel": "Kompetansemål og vurdering luftfartøysystemer",
+   "fag": [
+    "FLY3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12592",
+     "tekst": "gjøre rede for hva som er hensikten til de ulike systemene i luftfartøyet, hvordan de er konstruert, og hvordan de fungerer"
+    },
+    {
+     "kode": "KM12593",
+     "tekst": "gjøre rede for strukturkonstruksjon og sammenføyingsprinsipper til ulike luftfartøy"
+    },
+    {
+     "kode": "KM12594",
+     "tekst": "gjøre rede for hensikten til ulike motor- og framdriftsanordninger, hvordan de konstruert, og hvordan de fungerer, og diskutere ulike former for energioverføring"
+    },
+    {
+     "kode": "KM12595",
+     "tekst": "beskrive egenskapene til en bestemt luftfartøytype ut fra konstruksjon og systemer"
+    },
+    {
+     "kode": "KM12596",
+     "tekst": "beskrive de aerodynamiske egenskapene til et luftfartøy og reflektere over ulike krefter som påvirker luftfartøyet"
+    },
+    {
+     "kode": "KM12597",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid uavhengig av kjønn og kultur"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget luftfartøysystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i luftfartøysystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget luftfartøysystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget luftfartøysystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV963",
+   "tittel": "Kompetansemål og vurdering vedlikeholdsteknikk",
+   "fag": [
+    "FLY3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12598",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidet på systemene fagmessig, nøyaktig og i overensstemmelse med kvalitetssikring, internkontroll og godkjent teknisk dokumentasjon og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12599",
+     "tekst": "planlegge, gjennomføre og dokumentere prosesser som innebærer å inspisere og teste systemer og vurdere resultatene"
+    },
+    {
+     "kode": "KM12600",
+     "tekst": "anvende ulike verktøy og måleinstrumenter ved vedlikehold på luftfartøyets systemer"
+    },
+    {
+     "kode": "KM12601",
+     "tekst": "bruke ulike monterings-, demonterings-, inspeksjons-, feilsøkings- og reparasjonsteknikker på luftfartøyets systemer"
+    },
+    {
+     "kode": "KM12602",
+     "tekst": "drøfte etiske dilemmaer ved valg av produkter og diskutere ulike komponenter og materialers miljøbelastning"
+    },
+    {
+     "kode": "KM12603",
+     "tekst": "samarbeide med andre og vurdere eget og andres arbeid på luftfartøyets systemer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vedlikeholdsteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vedlikeholdsteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vedlikeholdsteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vedlikeholdsteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV964",
+   "tittel": "Kompetansemål og vurdering flysikkerhet",
+   "fag": [
+    "FLY3Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12604",
+     "tekst": "reflektere over og gjenkjenne ulike menneskelige faktorers betydning for vedlikeholdsarbeid på luftfartøy"
+    },
+    {
+     "kode": "KM12605",
+     "tekst": "anvende lover og bestemmelser som gjelder i luftfarten"
+    },
+    {
+     "kode": "KM12606",
+     "tekst": "bruke faglig presist språk på norsk og engelsk om vedlikehold av luftfartøyer, systemer og komponenter"
+    },
+    {
+     "kode": "KM12607",
+     "tekst": "anvende prosedyrer for signering av utført vedlikehold, sporbarhet for materiell og tilhørende luftdyktighetsdokumentasjon"
+    },
+    {
+     "kode": "KM12608",
+     "tekst": "reflektere over det organiserte arbeidslivets forutsetninger, verdier og regler"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget flysikkerhet når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget flysikkerhet. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget flysikkerhet ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget flysikkerhet basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Luftfartøysystemer: Eleven skal ha én standpunktkarakter.",
+    "Vedlikeholdsteknikk: Eleven skal ha én standpunktkarakter.",
+    "Flysikkerhet: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Luftfartøysystemer:",
+    "Eleven skal opp til fire lokalgitte skriftlige eksamener. EASA Part-66 Modul 11A (B1.1), Modul 12 (B1.3-B1.4), Modul 15 (B1) og Modul 17(B1).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr og om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Vedlikeholdsteknikk:",
+    "Eleven skal opp til tre lokalgitte skriftlige eksamener. EASA Part-66 Modul 7A (B1), Modul 7A Essay 1 (B1) og Modul 7A Essay 2 (B1).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr og om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Flysikkerhet:",
+    "Eleven skal opp til to lokalgitte skriftlige eksamener. EASA Part-66 Modul 9 (B1B2) og Modul 10 (B1B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Luftfartøysystemer:",
+    "Privatisten skal opp til tre eller fire lokalgitte skriftlige eksamener. EASA Part-66 Modul 11A (B1.1) eller Modul 11B (B1.2) og Modul 16 (B1.2) eller Modul 12 (B1.3, B1.4), Modul 15 (B1) og Modul 17 (B1).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr og om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Vedlikeholdsteknikk:",
+    "Privatistene skal opp til tre lokalgitte skriftlige eksamener. EASA Part-66 Modul 7A (B1), Modul 7A Essay 1 (B1) og Modul 7A Essay 2 (B1).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Flysikkerhet:",
+    "Privatisten skal opp til to lokalgitte skriftlige eksamener. EASA Part-66 Modul 9 (B1B2) og Modul 10 (B1B2).",
+    "Eksamen gjennomføres etter de til enhver tid gjeldende nasjonale og internasjonale bestemmelsene om kontinuerlig luftdyktighet for luftfartøyer og luftfartøyprodukter, -deler og -utstyr om godkjenning av organisasjoner og personell som deltar i disse oppgavene (vedlikeholdsforskriften).",
+    "Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  }
+ ]
+}

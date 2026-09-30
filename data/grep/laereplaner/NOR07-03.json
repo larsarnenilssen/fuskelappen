@@ -1,0 +1,327 @@
+{
+ "kode": "NOR07-03",
+ "tittel": "Læreplan i grunnleggende norsk for språklige minoriteter",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1182",
+   "tittel": "Kompetansemål og vurdering nivå 1",
+   "fag": [
+    "NOR7Z04",
+    "NOR7Z05",
+    "NOR7Z06",
+    "NOR7Z07",
+    "NOR7Z08",
+    "NOR7Z09",
+    "NOR7Z10",
+    "NOR7Z11",
+    "NOR7Z12",
+    "NOR7Z13",
+    "NOR7Z14",
+    "NOR7Z15",
+    "NOR7Z16",
+    "NOR7Z17",
+    "NOR7Z18",
+    "NOR7Z19"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15056",
+     "tekst": "bruke ord og uttrykk for å hilse, introdusere seg, be om noe, takke og uttrykke følelser og behov"
+    },
+    {
+     "kode": "KM15057",
+     "tekst": "bruke fraser om personlige og hverdagslige emner"
+    },
+    {
+     "kode": "KM15058",
+     "tekst": "forstå og bruke grunnleggende begreper og fagord"
+    },
+    {
+     "kode": "KM15059",
+     "tekst": "delta i enkle samtaler om kjente emner fra hverdagslivet og fra ulike fag med støtte fra kontekst og samtalepartner"
+    },
+    {
+     "kode": "KM15060",
+     "tekst": "gjenkjenne og utforske norske språklyder og norsk stavelsesstruktur, trykk og intonasjon"
+    },
+    {
+     "kode": "KM15063",
+     "tekst": "utforske grunnleggende mønstre for norsk rettskriving, formverk og setningsstruktur"
+    },
+    {
+     "kode": "KM15066",
+     "tekst": "utforske og bruke strategier som støtter innlæring av språklig innhold, form og bruk i norsk"
+    },
+    {
+     "kode": "KM15061",
+     "tekst": "bruke store og små bokstaver"
+    },
+    {
+     "kode": "KM15062",
+     "tekst": "knytte bokstaver til lyder og trekke lyder sammen til ord i lesing og skriving"
+    },
+    {
+     "kode": "KM15070",
+     "tekst": "skrive enkle setninger og tekster"
+    },
+    {
+     "kode": "KM15064",
+     "tekst": "lese enkle alderstilpassede tekster om kjente temaer og med faglig innhold"
+    },
+    {
+     "kode": "KM15069",
+     "tekst": "uttale, lese og bruke norske tall"
+    },
+    {
+     "kode": "KM15065",
+     "tekst": "utforske ulike digitale ressurser og verktøy i kommunikasjon, og som støtte i språk- og faglæring"
+    },
+    {
+     "kode": "KM15067",
+     "tekst": "sammenligne ord og uttrykk på norsk med andre språk eleven kjenner"
+    },
+    {
+     "kode": "KM15068",
+     "tekst": "samtale om noen kunst- og kulturuttrykk fra ulike land og kulturer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i grunnleggende norsk for språklige minoriteter på nivå 1 når de bruker innøvde ord og fraser, og når de kommuniserer om kjente temaer i situasjoner hvor de får støtte fra konteksten og samtalepartneren. Elevene viser og utvikler også kompetanse når de bruker strategier som støtter forståelse og bruk av norsk, og når de sammenligner ord, uttrykk og grunnleggende språkmønstre på norsk med andre språk de kjenner.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å la elevene prøve seg fram, være kreative og bruke språket i forskjellige situasjoner. Læreren og elevene skal være i dialog om elevenes utvikling i grunnleggende norsk for språklige minoriteter. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å kunne utvikle ferdigheter i å lese, skrive og uttrykke seg muntlig på norsk."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1183",
+   "tittel": "Kompetansemål og vurdering nivå 2",
+   "fag": [
+    "NOR7Z20",
+    "NOR7Z21",
+    "NOR7Z22",
+    "NOR7Z23",
+    "NOR7Z24",
+    "NOR7Z25",
+    "NOR7Z26",
+    "NOR7Z27",
+    "NOR7Z28",
+    "NOR7Z29",
+    "NOR7Z30",
+    "NOR7Z31",
+    "NOR7Z32",
+    "NOR7Z33",
+    "NOR7Z34",
+    "NOR7Z35"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15071",
+     "tekst": "delta i samtaler om hverdagslige og faglige kjente emner"
+    },
+    {
+     "kode": "KM15072",
+     "tekst": "forstå og samtale om hovedinnholdet i muntlige tekster"
+    },
+    {
+     "kode": "KM15073",
+     "tekst": "uttale ord og setninger på en forståelig måte med funksjonell bruk av trykk og intonasjon"
+    },
+    {
+     "kode": "KM15074",
+     "tekst": "bruke et egnet ordforråd for kjente faglige emner"
+    },
+    {
+     "kode": "KM15075",
+     "tekst": "gi uttrykk for egne meninger skriftlig og muntlig"
+    },
+    {
+     "kode": "KM15077",
+     "tekst": "bruke grunnleggende regler for norsk rettskriving, formverk og setningsstruktur"
+    },
+    {
+     "kode": "KM15081",
+     "tekst": "bruke strategier som støtter innlæring av språklig innhold, form og bruk i norsk"
+    },
+    {
+     "kode": "KM15085",
+     "tekst": "bruke hele sin samlede språkkompetanse i eget læringsarbeid"
+    },
+    {
+     "kode": "KM15078",
+     "tekst": "lese og formidle innholdet i ulike skjønnlitterære og faglige tekster"
+    },
+    {
+     "kode": "KM15079",
+     "tekst": "lese enkle tabeller og grafiske framstillinger"
+    },
+    {
+     "kode": "KM15084",
+     "tekst": "forstå og bruke tall og grunnleggende matematiske begreper"
+    },
+    {
+     "kode": "KM15076",
+     "tekst": "skrive og strukturere ulike tekster"
+    },
+    {
+     "kode": "KM15080",
+     "tekst": "bruke digitale ressurser og verktøy i kommunikasjon og læringsarbeid"
+    },
+    {
+     "kode": "KM15082",
+     "tekst": "samtale om hvordan språk kan uttrykke og skape holdninger"
+    },
+    {
+     "kode": "KM15086",
+     "tekst": "samtale om språklig variasjon og mangfold i Norge"
+    },
+    {
+     "kode": "KM15083",
+     "tekst": "beskrive kunst- og kulturuttrykk fra ulike land og kulturer og samtale om likheter og forskjeller"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i grunnleggende norsk for språklige minoriteter på nivå 2 når de de deltar, skaper mening og gir uttrykk for egne meninger i samtaler, og når de bruker grunnleggende strukturer og konvensjoner i muntlig og skriftlig kommunikasjon på norsk. De viser og utvikler også kompetanse når de tar i bruk strategier som støtter kommunikasjon og språklæring. Videre viser og utvikler elevene kompetanse når de sammenligner norsk og andre språk de kan, ut fra kunnskap om språklig innhold, form og bruk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene prøve seg fram, være kreative og bruke språket i forskjellige situasjoner. Læreren og elevene skal være i dialog om elevenes utvikling i grunnleggende norsk for språklige minoriteter. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle språk-, fag- og kulturkompetanse for å kunne delta i norsk skole."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1184",
+   "tittel": "Kompetansemål og vurdering nivå 3",
+   "fag": [
+    "NOR7Z36",
+    "NOR7Z37",
+    "NOR7Z38",
+    "NOR7Z39",
+    "NOR7Z40",
+    "NOR7Z41",
+    "NOR7Z42",
+    "NOR7Z43",
+    "NOR7Z44",
+    "NOR7Z45",
+    "NOR7Z46",
+    "NOR7Z47",
+    "NOR7Z48",
+    "NOR7Z49",
+    "NOR7Z50",
+    "NOR7Z51"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15087",
+     "tekst": "snakke norsk med funksjonell uttale"
+    },
+    {
+     "kode": "KM15104",
+     "tekst": "gjenfortelle hovedinnholdet i muntlige tekster"
+    },
+    {
+     "kode": "KM15088",
+     "tekst": "uttrykke seg med sammenheng"
+    },
+    {
+     "kode": "KM15090",
+     "tekst": "følge opp og bygge videre på andres samtalebidrag i hverdagslige og faglige samtaler"
+    },
+    {
+     "kode": "KM15091",
+     "tekst": "bruke et faglig ordforråd"
+    },
+    {
+     "kode": "KM15089",
+     "tekst": "begrunne og argumentere for egne meninger muntlig og skriftlig"
+    },
+    {
+     "kode": "KM15092",
+     "tekst": "gjenkjenne virkemidler i ulike muntlige og skriftlige sjangre"
+    },
+    {
+     "kode": "KM15093",
+     "tekst": "utforske vanlige former for tvetydig kommunikasjon i norsk"
+    },
+    {
+     "kode": "KM15094",
+     "tekst": "bruke sentrale regler for rettskriving, formverk og setningsstruktur"
+    },
+    {
+     "kode": "KM15105",
+     "tekst": "reflektere over egen flerspråklighet og dens betydning for egen læring av fag og språk"
+    },
+    {
+     "kode": "KM15098",
+     "tekst": "reflektere over innhold, form og formål i ulike tekster"
+    },
+    {
+     "kode": "KM15100",
+     "tekst": "bruke strategier som støtter innlæring av språklig innhold, form og bruk i norsk"
+    },
+    {
+     "kode": "KM15096",
+     "tekst": "lese for å oppleve, få innsikt og lære"
+    },
+    {
+     "kode": "KM15097",
+     "tekst": "lese grafiske framstillinger"
+    },
+    {
+     "kode": "KM15095",
+     "tekst": "skrive tekster i ulike sjangre, med ulikt formål og med ulike uttrykksformer"
+    },
+    {
+     "kode": "KM15099",
+     "tekst": "bruke og vurdere ulike digitale ressurser i kommunikasjon og læringsarbeid"
+    },
+    {
+     "kode": "KM15101",
+     "tekst": "sammenligne humor, ironi og metaforer i ulike språk og kulturer"
+    },
+    {
+     "kode": "KM15102",
+     "tekst": "reflektere over hvordan språk kan uttrykke og skape holdninger til enkeltindivider og grupper"
+    },
+    {
+     "kode": "KM15106",
+     "tekst": "samtale om holdninger til ulike språk og talespråksvarianter i Norge"
+    },
+    {
+     "kode": "KM15103",
+     "tekst": "utforske et utvalg kunst- og kulturuttrykk fra ulike land og kulturer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i grunnleggende norsk for språklige minoriteter på nivå 3 når de kommuniserer på norsk muntlig og skriftlig. Videre viser og utvikler de kompetanse når de tilpasser språket til mottaker, formål og situasjon. De viser og utvikler også kompetanse når de vurderer virkemidler i muntlige, skriftlige og sammensatte tekster, og når de bruker digital kompetanse som støtte for språkbruk og språklæring. Elevene viser og utvikler også kompetanse når de bruker hensiktsmessige læringsstrategier og bruker sin flerspråklighet som ressurs i eget læringsarbeid.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å la elevene prøve seg fram, være kreative og bruke språket i stadig forskjellige situasjoner. Læreren og elevene skal være i dialog om elevens utvikling i grunnleggende norsk for språklige minoriteter. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal videre legge til rette for at elevene medvirker i egen og andres læring ved at de får reflektere over og samtale om egne og andres muntlige og skriftlige tekster ut fra faglige kriterier. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle språk-, fag- og kulturkompetanse slik at de blir i stand til å delta i norsk skole."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Det gis ikke vurdering med karakter i opplæring etter læreplan i grunnleggende norsk for språklige minoriteter.",
+    "Elever i grunnskolen og i videregående opplæring med annet morsmål enn norsk og samisk har rett til særskilt norskopplæring til de har tilstrekkelige ferdigheter i norsk til å følge vanlig opplæring i skolen. Kommunen eller fylkeskommunen skal kartlegge hvilke ferdigheter elevene har i norsk før det blir gjort vedtak om særskilt norskopplæring. Slik kartlegging skal også utføres underveis i opplæringen for elever som får særskilt språkopplæring etter forskriften, som grunnlag for å vurdere om elevene har tilstrekkelige ferdigheter i norsk til å følge den vanlige opplæringen i skolen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,180 @@
+{
+ "kode": "DEL02-03",
+ "tittel": "Læreplan i Vg2 datateknologi og elektronikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV453",
+   "tittel": "Kompetansemål og vurdering elektroniske kretser og utstyr",
+   "fag": [
+    "DEL2Z03",
+    "DEL2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4968",
+     "tekst": "planlegge, gjennomføre og dokumentere yrkesoppgaver i faget elektroniske kretser og utstyr, individuelt og i samarbeid med andre, og begrunne og evaluere valgene som er gjort"
+    },
+    {
+     "kode": "KM4966",
+     "tekst": "risikovurdere arbeid på elektroniske kretser og utstyr og utføre arbeidet fagmessig, nøyaktig og i overensstemmelse med gjeldende lover og forskrifter, normer og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM4967",
+     "tekst": "utføre arbeid på elektroniske kretser og utstyr i overensstemmelse med regler for elsikkerhet og utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM4971",
+     "tekst": "gjøre rede for elektrostatisk utladning (ESD) og gjennomføre tiltak for å beskytte elektriske og elektroniske komponenter og elektronisk utstyr mot ESD"
+    },
+    {
+     "kode": "KM4970",
+     "tekst": "montere, programmere og sette i drift mikrokontrollerbaserte systemer for innsamling av data og beskrive den grunnleggende oppbygningen av et mikrokontrollersystem"
+    },
+    {
+     "kode": "KM4949",
+     "tekst": "utforske trådløse sensorer, og kommunikasjonsprotokoller for disse sensorene og sensornettverk"
+    },
+    {
+     "kode": "KM4972",
+     "tekst": "programmere og sette i drift løsninger for tingenes internett (IoT) med utgangspunkt i en funksjonsbeskrivelse og beskrive grunnleggende IoT-arkitektur"
+    },
+    {
+     "kode": "KM4969",
+     "tekst": "montere og sette i drift kraftelektroniske systemer og utstyr for elektronisk styring og spenningsomforming av likespenning og vekselspenning, og simulere og beskrive virkemåten til disse"
+    },
+    {
+     "kode": "KM4965",
+     "tekst": "utføre systematisk feilsøking, reparasjon og testing av elektronisk utstyr ved hjelp av egnede verktøy, måleinstrumenter, programvare og dokumentasjon og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM4964",
+     "tekst": "montere og lodde komponenter i elektroniske kretser og utstyr ved hjelp av egnede verktøy og beskrive funksjonen og virkemåten til kretsene"
+    },
+    {
+     "kode": "KM4963",
+     "tekst": "kildesortere avfall etter utført arbeid på elektroniske kretser og utstyr og diskutere klima- og miljøbelastningen av elektronisk utstyr"
+    },
+    {
+     "kode": "KM4962",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM4961",
+     "tekst": "reflektere over betydningen av å mestre et fag og hvordan dette påvirker egen livskvalitet"
+    },
+    {
+     "kode": "KM4960",
+     "tekst": "utforske robotteknologi, 3D-teknologi, virtuell og utvidet virkelighet og bruk av kunstig intelligens, beskrive hvordan disse teknologiene kan utnyttes i yrkesutøvelsen, og reflektere over hva smartteknologi kan bety for samfunnsutviklingen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elektroniske kretser og utstyr når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elektroniske kretser og utstyr. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke rådene for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elektroniske kretser og utstyr ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elektroniske kretser og utstyr basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV454",
+   "tittel": "Kompetansemål og vurdering data- og informasjonsteknologi",
+   "fag": [
+    "DEL2Z04",
+    "DEL2Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4954",
+     "tekst": "planlegge, gjennomføre og dokumentere yrkesoppgaver i faget data- og informasjonsteknologi, individuelt og i samarbeid med andre, og begrunne og evaluere valgene som er gjort"
+    },
+    {
+     "kode": "KM4956",
+     "tekst": "risikovurdere og utføre arbeidet på data- og informasjonsteknologi fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM4973",
+     "tekst": "montere og sette i drift systemer for data- og informasjonsteknologi, iverksette tiltak mot skade og driftsforstyrrelser ved strømbrudd, overspenning og elektromagnetiske forstyrrelser og gjøre rede for elektromagnetisk interferens og kompatibilitet"
+    },
+    {
+     "kode": "KM4950",
+     "tekst": "administrere brukere, tilganger og rettigheter i systemer for data- og informasjonsteknologi i henhold til definerte behov og beskrive rutiner for oppdateringer av maskinvare og programvare"
+    },
+    {
+     "kode": "KM4955",
+     "tekst": "konfigurere og sette i drift fysiske og virtuelle segmenterte nettverk i henhold til definerte behov og beskrive sikkerhetsrutiner og rutiner for å opprettholde driften i et nettverk"
+    },
+    {
+     "kode": "KM4953",
+     "tekst": "måle på optiske fiberlinker, sette opp effekt- og dempingsbudsjett og beskrive forhold som påvirker kommunikasjonskvaliteten"
+    },
+    {
+     "kode": "KM4958",
+     "tekst": "montere og sette i drift kommunikasjonssystemer med utstyr som spenningsforsynes over nettverkskabler og gjøre rede for fordeler og ulemper med denne teknologien"
+    },
+    {
+     "kode": "KM4951",
+     "tekst": "utføre dekningsmålinger, foreslå nødvendig antall og type aksesspunkter i trådløse kommunikasjonsnett og gjøre rede for hvilke forhold som påvirker signalkvaliteten"
+    },
+    {
+     "kode": "KM4959",
+     "tekst": "utføre systematisk feilsøking, testing og reparasjon av kommunikasjonsnettverk ved hjelp av egnede verktøy, måleinstrumenter, programvare og dokumentasjon"
+    },
+    {
+     "kode": "KM4952",
+     "tekst": "beskrive rutiner og metoder for sikker datasletting for å unngå at personopplysninger eller andre sensitive data kommer på avveie"
+    },
+    {
+     "kode": "KM4957",
+     "tekst": "reflektere over hvordan utøvelsen av yrkesoppgaver knyttet til faget data- og informasjonsteknologi har betydning for bærekraftig utvikling"
+    },
+    {
+     "kode": "KM4974",
+     "tekst": "reflektere over hvordan ulike teknologier i faget data- og informasjonsteknologi kan forbedre menneskers helse og livskvalitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i data- og informasjonsteknologi når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i data- og informasjonsteknologi. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke rådene for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i data- og informasjonsteknologi ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i data- og informasjonsteknologi basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elektroniske kretser og utstyr: Eleven skal ha én standpunktkarakter.",
+    "Data- og informasjonsteknologi: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elektroniske kretser og utstyr, og data- og informasjonsteknologi: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elektroniske kretser og utstyr: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Data- og informasjonsteknologi: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elektroniske kretser og utstyr, og data- og informasjonsteknologi: Privatisten skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

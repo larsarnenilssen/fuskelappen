@@ -1,0 +1,124 @@
+{
+ "kode": "RLV03-02",
+ "tittel": "Læreplan i vg3 reiselivsfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-05-04",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV596",
+   "tittel": "Kompetansemål og vurdering vg3 reiselivsfaget",
+   "fag": [
+    "RLV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6862",
+     "tekst": "vurdere nasjonale og globale trendar og faktorar som påverkar reiselivet, og foreslå tiltak som kan bidra til ein berekraftig vekst"
+    },
+    {
+     "kode": "KM6876",
+     "tekst": "presentere eiga verksemd med vekt på forretningsplanen og reflektere over korleis berekraftsperspektivet er sikra"
+    },
+    {
+     "kode": "KM6863",
+     "tekst": "presentere dei ulike avdelingane og arbeidsoppgåvene i verksemda og korleis desse påverkar samhandling, heilskapleg drift og utvikling"
+    },
+    {
+     "kode": "KM6867",
+     "tekst": "drøfte og presentere korleis samarbeid mellom ulike aktørar i reiselivsbransjen kan bidra til innovasjon og styrkje heilskaplege reiselivsprodukt"
+    },
+    {
+     "kode": "KM6881",
+     "tekst": "planleggje og utvikle heilskaplege reiselivsprodukt og vurdere tiltak som sikrar ei berekraftig ressursutnytting"
+    },
+    {
+     "kode": "KM6874",
+     "tekst": "planleggje, gjennomføre og vurdere sals- og marknadsaktivitetar for verksemda"
+    },
+    {
+     "kode": "KM6869",
+     "tekst": "vurdere inntektene og kostnadene til verksemda og gjere greie for korleis desse påverkar lønnsemda"
+    },
+    {
+     "kode": "KM6870",
+     "tekst": "berekne pris og presentere tilbod på ulike reiselivsprodukt"
+    },
+    {
+     "kode": "KM6882",
+     "tekst": "gjere greie for prisdifferensieringar i reiselivsnæringa og vurdere moglege konsekvensar av prisdifferensiering"
+    },
+    {
+     "kode": "KM6865",
+     "tekst": "utforske og presentere kva det inneber å respektere og forstå ulike kulturar, og ta omsyn til kulturforskjellar i møte med kollegaer, besøkjande, gjester og andre samarbeidspartnarar"
+    },
+    {
+     "kode": "KM6866",
+     "tekst": "tilpasse kommunikasjonen og utøvinga av servicerolla til ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM6879",
+     "tekst": "utforske og formidle kunnskap om norsk og samisk kultur og om aktuell lokal historie, lokal kultur og lokale attraksjonar"
+    },
+    {
+     "kode": "KM6878",
+     "tekst": "presentere ein destinasjon på norsk og engelsk"
+    },
+    {
+     "kode": "KM6877",
+     "tekst": "reflektere over vertskapsrolla og anvende tiltak som kan auke totalopplevinga for gjestene"
+    },
+    {
+     "kode": "KM6864",
+     "tekst": "bruke kundeoppfølgingssystema i verksemda, og presentere korleis desse kan brukast i kampanjar og kundedialog og til å byggje kundelojalitet"
+    },
+    {
+     "kode": "KM6868",
+     "tekst": "bruke reservasjonssystema og betalingsløysingane til verksemda og utføre valutaberekningar"
+    },
+    {
+     "kode": "KM6875",
+     "tekst": "følgje retningsliner og lovverk og bruke dei interne rutinane i verksemda ved behandling av reklamasjonar og klagar"
+    },
+    {
+     "kode": "KM6871",
+     "tekst": "gjennomføre førstehjelp, bruke beredskapsplanane til verksemda og reflektere over eiga rolle og eige ansvar i konflikt- og nødssituasjonar"
+    },
+    {
+     "kode": "KM6883",
+     "tekst": "gjere greie for helse, miljø- og sikkerheitstiltak i verksemda og for eiga rolle og eige høve til å medverke i arbeidet med helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM6880",
+     "tekst": "utforske og presentere område og regelverk innanfor helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM6872",
+     "tekst": "reflektere over etiske retningslinjer og verdiar i verksemda og følgje desse i ulike arbeidssituasjonar"
+    },
+    {
+     "kode": "KM6873",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 reiselivsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 reiselivsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 reiselivsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over tre vyrkedagar."
+   ]
+  }
+ ]
+}

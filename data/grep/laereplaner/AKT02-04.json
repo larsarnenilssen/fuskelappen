@@ -1,0 +1,186 @@
+{
+ "kode": "AKT02-04",
+ "tittel": "Læreplan i vg2 aktivitør",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV370",
+   "tittel": "Kompetansemål og vurdering administrasjon",
+   "fag": [
+    "AKT2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3906",
+     "tekst": "planleggje, gjennomføre, dokumentere og vurdere aktiviseringsprosessar tilpassa ulike brukarar frå ulike kulturar og brukargrupper"
+    },
+    {
+     "kode": "KM3908",
+     "tekst": "setje mål for aktiviseringsarbeidet"
+    },
+    {
+     "kode": "KM3903",
+     "tekst": "drøfte kva frivillig arbeid har å seie og korleis frivillige og ulike kulturtilbod kan brukast i aktiviseringsarbeidet"
+    },
+    {
+     "kode": "KM3905",
+     "tekst": "gjere greie for kva verknad aktivitetar har på den fysiske og mentale helsa til brukarane"
+    },
+    {
+     "kode": "KM3918",
+     "tekst": "berekne forbruk, setje opp budsjett og føre rekneskap over kostnader knytte til aktiviseringsarbeidet"
+    },
+    {
+     "kode": "KM3904",
+     "tekst": "reflektere over særpreg og avgrensingar som gjeld aktivitørfaget som helsefag"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i administrasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i administrasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i administrasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i administrasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV371",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "AKT2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3900",
+     "tekst": "beskrive ulike kommunikasjons- og relasjonsferdigheiter og vise korleis slike ferdigheiter kan fremje tryggleik og tillit"
+    },
+    {
+     "kode": "KM3901",
+     "tekst": "vise empati og reflektere over eigne haldningar, eiga åtferd og kva det vil seie å vise endringsvilje"
+    },
+    {
+     "kode": "KM3907",
+     "tekst": "gjere greie for strategiar for konflikthandtering og førebyggje konfliktar i praksis"
+    },
+    {
+     "kode": "KM3898",
+     "tekst": "drøfte kva det inneber å ha respekt og toleranse for kulturane og tradisjonane, livssynet og den sosiale statusen til andre menneske"
+    },
+    {
+     "kode": "KM3899",
+     "tekst": "drøfte verdien av tverrfagleg samarbeid og gi døme på slikt samarbeid"
+    },
+    {
+     "kode": "KM3919",
+     "tekst": "rettleie brukarar, frivillige og samarbeidspartnarar i ulike aktiviseringstiltak"
+    },
+    {
+     "kode": "KM3902",
+     "tekst": "presentere eige arbeid, tenester, produkt og produksjonsprosessar ved hjelp av digitale ressursar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i kommunikasjon og samhandling når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira seg i kommunikasjon og samhandling. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i kommunikasjon og samhandling ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV369",
+   "tittel": "Kompetansemål og vurdering yrkesliv i aktivitørfag",
+   "fag": [
+    "AKT2Z07"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3897",
+     "tekst": "innhente informasjon om funksjonsnivået til brukarar og vurdere og grunngi valet av aktivitetar"
+    },
+    {
+     "kode": "KM3915",
+     "tekst": "bruke og vurdere fargar og formelement i arbeidet med å skape ulike produkt"
+    },
+    {
+     "kode": "KM3916",
+     "tekst": "vurdere kva slags hjelpemiddel, digitale ressursar og teknologi som kan brukast til ulike aktivitetar"
+    },
+    {
+     "kode": "KM3910",
+     "tekst": "gjere greie for kva kosthald, fysisk aktivitet og hygiene har å seie for helsa til brukarane"
+    },
+    {
+     "kode": "KM3917",
+     "tekst": "reflektere over korleis ein kan vareta miljøet ved bruk av materiale og andre ressursar"
+    },
+    {
+     "kode": "KM3914",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM3912",
+     "tekst": "gjere greie for grunnleggjande prinsipp for hygiene og smittevern"
+    },
+    {
+     "kode": "KM3909",
+     "tekst": "gjere greie for retningslinjer for yrkesetikk, personvern og helse, miljø og sikkerheit og drøfte kva dette inneber for yrkesutøvinga"
+    },
+    {
+     "kode": "KM3913",
+     "tekst": "drøfte kva som kjenneteiknar eit godt arbeidsmiljø og gode arbeidsvilkår i aktivitørfaget"
+    },
+    {
+     "kode": "KM3911",
+     "tekst": "følgje opp eigne rettar og plikter i arbeidsforholdet og gjere greie for korleis partane i arbeidslivet utfører samfunnsrolla si i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i yrkesliv i aktivitørfag når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i yrkesliv i aktivitørfag. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i yrkesliv i aktivitørfag ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i yrkesliv i aktivitørfag basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Administrasjon: Eleven skal ha éin standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha éin standpunktkarakter.",
+    "Yrkesliv i aktivitørfag: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Administrasjon, kommunikasjon og samhandling og yrkesliv i aktivitørfaget: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Administrasjon: Privatisten skal opp til éin skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Yrkesliv i aktivitørfag: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Administrasjon, kommunikasjon og samhandling og yrkesliv i aktivitørfag: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

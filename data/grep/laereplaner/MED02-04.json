@@ -1,0 +1,218 @@
+{
+ "kode": "MED02-04",
+ "tittel": "Læreplan i vg2 medieproduksjon",
+ "spraak": "nno",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV384",
+   "tittel": "Kompetansemål og vurdering teknologi og produksjon",
+   "fag": [
+    "MED2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4073",
+     "tekst": "planleggje og gjennomføre produksjonar innanfor oppsette tidsfristar og gjeldande rammer"
+    },
+    {
+     "kode": "KM4075",
+     "tekst": "berekne og vurdere tidsbruk og kostnader i eit prosjekt"
+    },
+    {
+     "kode": "KM4049",
+     "tekst": "utvikle produkt med brukarvennlege tenester og løysingar"
+    },
+    {
+     "kode": "KM4069",
+     "tekst": "planleggje, gjennomføre og vurdere sanntidsproduksjonar"
+    },
+    {
+     "kode": "KM4072",
+     "tekst": "bruke tidsriktige bransjeverktøy, fagterminologi og kjelder for produksjon og publisering av medieinnhald"
+    },
+    {
+     "kode": "KM4071",
+     "tekst": "utforske og bruke teknologi og interaktivitet for å formidle nye uttrykk og opplevingar"
+    },
+    {
+     "kode": "KM4077",
+     "tekst": "vurdere, velje og nytte metodar i brukarsentrerte designprosessar og brukarteste eigne løysingar og produkt"
+    },
+    {
+     "kode": "KM4076",
+     "tekst": "bruke prinsipp for feilsøking og retting av produkt, løysingar og tenester på ulike plattformer"
+    },
+    {
+     "kode": "KM4070",
+     "tekst": "følgje gjeldande regelverk og retningslinjer for publisering og etikk, og reflektere over det ansvaret ein har som formidlar av medieinnhald"
+    },
+    {
+     "kode": "KM4074",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget teknologi og produksjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget teknologi og produksjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget teknologi og produksjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget teknologi og produksjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV385",
+   "tittel": "Kompetansemål og vurdering konseptutvikling og kommunikasjon",
+   "fag": [
+    "MED2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4068",
+     "tekst": "utvikle idear, konsept og historier tilpassa ulike medium og målgrupper"
+    },
+    {
+     "kode": "KM4066",
+     "tekst": "pitche idear og produkt til oppdragsgivarar"
+    },
+    {
+     "kode": "KM4067",
+     "tekst": "produsere medieinnhald og kommunisere innanfor ulike sjangrar og format"
+    },
+    {
+     "kode": "KM4064",
+     "tekst": "utforske, bruke og vurdere dramaturgi og forteljarteknikkar i eigne og andre sine medieproduksjonar"
+    },
+    {
+     "kode": "KM4062",
+     "tekst": "utføre oppdrag etter gitte spesifikasjonar i dialog med oppdragsgivaren"
+    },
+    {
+     "kode": "KM4065",
+     "tekst": "vurdere, velje og nytte verktøy og fagterminologi for samhandling med oppdragsgivarar og andre deltakarar"
+    },
+    {
+     "kode": "KM4060",
+     "tekst": "utforske og løyse problem gjennom prototyping og brukartesting"
+    },
+    {
+     "kode": "KM4078",
+     "tekst": "utøve kjeldekritikk og vurdere relevansen til kjeldene i eigne og andre sine medieproduksjonar"
+    },
+    {
+     "kode": "KM4061",
+     "tekst": "lese og bruke mediestatistikk og vurdere korleis media påverkar menneske og medievanane deira"
+    },
+    {
+     "kode": "KM4059",
+     "tekst": "utforske og gjere greie for historieforteljing i visuelle og auditive medium"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget konseptutvikling og kommunikasjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget konseptutvikling og kommunikasjon. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i konseptutvikling og kommunikasjon ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget konseptutvikling og kommunikasjon basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV386",
+   "tittel": "Kompetansemål og vurdering design og visualisering",
+   "fag": [
+    "MED2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4058",
+     "tekst": "utvikle design for ulike målgrupper ved å bruke teknikkar for idéutvikling og kreativitet"
+    },
+    {
+     "kode": "KM4056",
+     "tekst": "vurdere og bruke relevante verktøy og designteknikkar innanfor lyd og bilete i ulike sjangrar og format"
+    },
+    {
+     "kode": "KM4063",
+     "tekst": "produsere og forstå kode til bruk i design- og publiseringsløysingar"
+    },
+    {
+     "kode": "KM4057",
+     "tekst": "beskrive og bruke verkemiddel frå ulike mediehistoriske epokar og tidsaktuelle sjangrar i eigne produksjonar"
+    },
+    {
+     "kode": "KM4052",
+     "tekst": "bruke komposisjonsprinsipp i medieprodukt og drøfte korleis dei ulike elementa påverkar kvarandre"
+    },
+    {
+     "kode": "KM4051",
+     "tekst": "velje komposisjon, typografi, farge og layout tilpassa bodskap og oppdragsgivar"
+    },
+    {
+     "kode": "KM4055",
+     "tekst": "beskrive og bruke ulike typar lyssetjing som verkemiddel for å framheve form, struktur, farge og bodskap"
+    },
+    {
+     "kode": "KM4054",
+     "tekst": "beskrive prinsipp for merkevarebygging og utvikle identitetsdesign"
+    },
+    {
+     "kode": "KM4053",
+     "tekst": "formidle ein bodskap ved hjelp av ulike verkemiddel"
+    },
+    {
+     "kode": "KM4050",
+     "tekst": "utforske og designe engasjerande brukaropplevingar i digitale og fysiske rom"
+    },
+    {
+     "kode": "KM4079",
+     "tekst": "gjere greie for og følgje regelverk og retningslinjer for universell utforming og personvern"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget design og visualisering når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i programfaget design og visualisering. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget design og visualisering ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget design og visualisering basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teknologi og produksjon: Eleven skal ha éin standpunktkarakter.",
+    "Konseptutvikling og kommunikasjon: Eleven skal ha éin standpunktkarakter.",
+    "Design og visualisering: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Teknologi og produksjon, konseptutvikling og kommunikasjon og design og visualisering: Eleven skal opp til ein tverrfagleg praktisk eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Teknologi og produksjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Konseptutvikling og kommunikasjon: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Design og visualisering: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Teknologi og produksjon, konseptutvikling og kommunikasjon og design og visualisering: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

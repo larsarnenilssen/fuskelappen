@@ -1,0 +1,88 @@
+{
+ "kode": "URM03-02",
+ "tittel": "Læreplan i vg3 urmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV640",
+   "tittel": "Kompetansemål og vurdering vg3 urmakerfaget",
+   "fag": [
+    "URM3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7707",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7705",
+     "tekst": "anvende skisser, tegninger og digital informasjon i eget arbeid med produksjon, vedlikehold og restaurering av nye og antikke ur og urverk"
+    },
+    {
+     "kode": "KM7709",
+     "tekst": "utforske og velge ulike teknikker og materialer i framstilling av produkter og gjøre rede for hvordan ulike valg påvirker holdbarhet, gjenbruk og en etisk produksjon"
+    },
+    {
+     "kode": "KM7704",
+     "tekst": "vurdere, velge og overflatebehandle materialer og anvende denne kunnskapen i eget arbeid og gjøre rede for hvordan ulike valg påvirker en bærekraftig produksjon, avfallshåndtering og ressursforvaltning"
+    },
+    {
+     "kode": "KM7703",
+     "tekst": "reparere og vedlikeholde armbåndsur, lommeur og store ur, både mekaniske og elektroniske, med og uten flerfunksjoner"
+    },
+    {
+     "kode": "KM7706",
+     "tekst": "anvende feilsøking som grunnlag for reparasjon av urverk"
+    },
+    {
+     "kode": "KM7710",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7711",
+     "tekst": "presentere og bruke fagspråk i eget arbeid i urmakerfaget med og uten digitale ressurser"
+    },
+    {
+     "kode": "KM7708",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7712",
+     "tekst": "bruke hensiktsmessige arbeidsstillinger og gjøre rede for gode arbeidsrutiner i en produksjon"
+    },
+    {
+     "kode": "KM7713",
+     "tekst": "vurdere, beregne og kalkulere pris på produkter og tjenester knyttet til kjøp, salg og reparasjoner av ur"
+    },
+    {
+     "kode": "KM7715",
+     "tekst": "gjøre rede for dagens trender sett i lys av tradisjoner og urmakerfagets historie og anvende dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM7714",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 urmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 urmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 urmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

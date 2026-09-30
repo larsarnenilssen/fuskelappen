@@ -1,0 +1,108 @@
+{
+ "kode": "BDK03-01",
+ "tittel": "Læreplan i vg3 bilfaget, demontering av køyretøy",
+ "spraak": "nno",
+ "fastsatt": "2026-05-22",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1015",
+   "tittel": "Kompetansemål og vurdering vg3 bilfaget, demontering av køyretøy",
+   "fag": [
+    "BDK3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13113",
+     "tekst": "planleggje, gjennomføre og dokumentere arbeidsoppdrag i tråd med internkontrollen og kvalitetssikringa i bedrifta og reflektere over personvern og datasikkerheit"
+    },
+    {
+     "kode": "KM13114",
+     "tekst": "vurdere og handtere kjemikaliar, batteri, gassar, råvarer og avfall ved hjelp av produkt- og sikkerheitsdatablad etter gjeldande reglar og rutinar og gjere greie for konsekvensar av feilhandtering"
+    },
+    {
+     "kode": "KM13124",
+     "tekst": "bruke testutstyr, lese feilkodar og vurdere tilstanden på komponentar"
+    },
+    {
+     "kode": "KM13118",
+     "tekst": "lage demonteringsliste til demonteringsobjekt på grunnlag av salsstatistikk og førespurnader"
+    },
+    {
+     "kode": "KM13119",
+     "tekst": "fotodokumentere, vurdere og registrere relevante opplysningar om køyretøyet for vidare behandling"
+    },
+    {
+     "kode": "KM13117",
+     "tekst": "registrere skadeomfang på køyretøy og vurdere kva komponentar som kan ombrukast"
+    },
+    {
+     "kode": "KM13115",
+     "tekst": "risikovurdere demontering av ulike komponentar, gjere greie for sikkerheitstiltak som bør setjast i verk, og evaluere korleis sikkerheitsarbeidet kan førebyggje ulukker og skader"
+    },
+    {
+     "kode": "KM13116",
+     "tekst": "demontere, vurdere og registrere komponentar som skal ombrukast"
+    },
+    {
+     "kode": "KM13128",
+     "tekst": "velje og bruke verne- og sikringsutstyr og vurdere konsekvensane av feilbruk, og reflektere over korleis ulike arbeidsstillingar påverkar kroppen fysisk"
+    },
+    {
+     "kode": "KM13121",
+     "tekst": "handtere syntetiske og naturlege kuldemedium forsvarleg med omsyn til miljø og sikkerheit etter gjeldande lov- og regelverk"
+    },
+    {
+     "kode": "KM13120",
+     "tekst": "handtere høgenergikomponentar og høgvoltsbatteri etter gjeldande regelverk og gjere greie for sikkerheitstiltak som må setjast i verk"
+    },
+    {
+     "kode": "KM13129",
+     "tekst": "gjere greie for oppbygginga av ulike køyretøy, inkludert motor, drivlinje, bremser, elektriske system og karosseri"
+    },
+    {
+     "kode": "KM13122",
+     "tekst": "bruke ulike demonteringsmetodar og vurdere dei med omsyn til økonomi og helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM13123",
+     "tekst": "bruke og vurdere teknisk dokumentasjon og rettleiingar for demontering av spesifikke køyretøy og delar"
+    },
+    {
+     "kode": "KM13125",
+     "tekst": "bruke og halde ved like verktøy og utstyr som blir brukt til demontering av køyretøy, og gjere greie for konsekvensar av manglande kontroll og vedlikehald"
+    },
+    {
+     "kode": "KM13126",
+     "tekst": "følgje reglane og rutinane bedrifta og bransjen har for vidare handtering av varer for gjenvinning eller sal"
+    },
+    {
+     "kode": "KM13127",
+     "tekst": "bruke og tilpasse fagspråk i kommunikasjon med kollegaer, kundar og andre samarbeidspartnarar"
+    },
+    {
+     "kode": "KM13130",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta og reflektere over pliktene og rettane til arbeidsgivaren og arbeidstakaren og over kva krav og forventningar som blir stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 bilfaget, demontering av køyretøy når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 bilfaget, demontering av køyretøy. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamenen blir utarbeidd sentralt og sensurert lokalt. Eksamenen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 bilfaget, demontering av køyretøy skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

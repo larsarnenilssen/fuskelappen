@@ -1,0 +1,226 @@
+{
+ "kode": "ANL02-03",
+ "tittel": "Læreplan i vg2 anleggsteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV333",
+   "tittel": "Kompetansemål og vurdering sikkerhetsopplæring for masseforflytningsmaskiner",
+   "fag": [
+    "ANL2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3438",
+     "tekst": "bruke gravemaskin og to masseforflytningsmaskiner etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM3437",
+     "tekst": "ta energiøkonomiske valg av ulike masseforflytningsmaskiner og vurdere ressursbruk og konsekvenser for miljøet"
+    },
+    {
+     "kode": "KM3436",
+     "tekst": "kontrollere og vedlikeholde masseforflytningsmaskiner og utstyr i henhold til service- og brukermanualer"
+    },
+    {
+     "kode": "KM3435",
+     "tekst": "bruke tilleggsutstyr og reflektere over konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM3434",
+     "tekst": "gjøre rede for masseforflytningsmaskiners oppbygning og virkemåte og vurdere ulike bruksområder"
+    },
+    {
+     "kode": "KM3433",
+     "tekst": "gjøre rede for hvilke ulykker bruk av masseforflytningsmaskiner kan forårsake, og reflektere over ansvarsforhold, årsakssammenhenger og hvordan ulykker kan forebygges"
+    },
+    {
+     "kode": "KM3432",
+     "tekst": "vurdere risiko for maskinvelt og gjøre rede for konsekvenser"
+    },
+    {
+     "kode": "KM3446",
+     "tekst": "velge og bruke løfteredskap med masseforflytningsmaskin etter signaler og tegn"
+    },
+    {
+     "kode": "KM3463",
+     "tekst": "gjøre rede for dokumentasjonskrav knyttet til bruk av masseforflytningsmaskiner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget sikkerhetsopplæring for masseforflytningsmaskiner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget sikkerhetsopplæring for masseforflytningsmaskiner. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget sikkerhetsopplæring for masseforflytningsmaskiner ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget sikkerhetsopplæring for masseforflytningsmaskiner basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV331",
+   "tittel": "Kompetansemål og vurdering grunnarbeider",
+   "fag": [
+    "ANL2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3458",
+     "tekst": "velge og bruke maskiner og utstyr for anleggsarbeid, masseforflytning og vedlikeholdsarbeid"
+    },
+    {
+     "kode": "KM3453",
+     "tekst": "bruke maskinstyring ved grunnarbeider"
+    },
+    {
+     "kode": "KM3431",
+     "tekst": "beregne fall og vinkler for grunnarbeider og beregne masser"
+    },
+    {
+     "kode": "KM3457",
+     "tekst": "planlegge og gjennomføre grunnarbeider i ulike løsmasser og bergarter og reflektere over hvordan geologiske forhold påvirker arbeidet"
+    },
+    {
+     "kode": "KM3461",
+     "tekst": "planlegge og gjennomføre grunnarbeider for vann- og avløpsanlegg"
+    },
+    {
+     "kode": "KM3456",
+     "tekst": "planlegge og bygge veier, baner og grunnarbeider etter tegninger og beskrivelser"
+    },
+    {
+     "kode": "KM3452",
+     "tekst": "følge gjeldende krav til håndtering og bruk av eksplosiver for sprengningsarbeider under og over jord og vurdere konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM3459",
+     "tekst": "drøfte ulike massetyper og deres bruksområder, komprimere masser og dokumentere kvaliteten av arbeidet"
+    },
+    {
+     "kode": "KM3444",
+     "tekst": "håndtere overvann etter gjeldende regelverk og vurdere konsekvenser av regnvann for avløpsnett"
+    },
+    {
+     "kode": "KM3460",
+     "tekst": "planlegge en bergsprengningssalve og iverksette tiltak som hindrer person- og materiellskader"
+    },
+    {
+     "kode": "KM3451",
+     "tekst": "gjøre rede for farer med gjenstående sprengstoff og planlegge tiltak for å unngå skade"
+    },
+    {
+     "kode": "KM3454",
+     "tekst": "gjøre rede for sikring av berg og drøfte metoder for bergsikring over og under jord"
+    },
+    {
+     "kode": "KM3455",
+     "tekst": "gjøre rede for hvordan et knuseverk er bygd opp, og produsere masser"
+    },
+    {
+     "kode": "KM3450",
+     "tekst": "gjøre rede for prinsippene ved bruk av borerigger for brønn, bergsprengning og fundamentering"
+    },
+    {
+     "kode": "KM3449",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og drøfte konsekvenser av støy, vibrasjons- og støveksponering"
+    },
+    {
+     "kode": "KM3448",
+     "tekst": "bruke fagterminologi til å kommunisere med andre og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM3462",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM3447",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM3445",
+     "tekst": "planlegge prosjekter, beregne kostnader og drøfte faktorer som påvirker bedriftens lønnsomhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget grunnarbeider når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget grunnarbeider. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget grunnarbeider ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget grunnarbeider basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV332",
+   "tittel": "Kompetansemål og vurdering drift og vedlikehold",
+   "fag": [
+    "ANL2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3440",
+     "tekst": "gjennomføre arbeidsvarsling etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM3443",
+     "tekst": "drifte og vedlikeholde vei, bane, vann, avløp og annen infrastruktur og reflektere over hvordan sesongvariasjoner påvirker valg av metoder"
+    },
+    {
+     "kode": "KM3442",
+     "tekst": "planlegge og dokumentere anleggsarbeid digitalt"
+    },
+    {
+     "kode": "KM3441",
+     "tekst": "følge gjeldende krav til å bygge, drifte og kontrollere grøfter og ledningsanlegg"
+    },
+    {
+     "kode": "KM3439",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, behandle forurenset masse, uønskede planter og organismer, og reflektere over konsekvenser av feilhåndtering"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget drift og vedlikehold når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget drift og vedlikehold. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at eleven kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget drift og vedlikehold ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget drift og vedlikehold basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Sikkerhetsopplæring for masseforflytningsmaskiner: Eleven skal ha én standpunktkarakter.",
+    "Grunnarbeider: Eleven skal ha én standpunktkarakter.",
+    "Drift og vedlikehold: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Sikkerhetsopplæring for masseforflytningsmaskiner, grunnarbeider og drift og vedlikehold: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Sikkerhetsopplæring for masseforflytningsmaskiner: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Grunnarbeider: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Drift og vedlikehold: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Sikkerhetsopplæring for masseforflytningsmaskiner, grunnarbeider og drift og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

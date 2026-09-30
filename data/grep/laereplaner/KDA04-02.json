@@ -1,0 +1,86 @@
+{
+ "kode": "KDA04-02",
+ "tittel": "Læreplan i design og berekraft",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV576",
+   "tittel": "Kompetansemål og vurdering design og berekraft",
+   "fag": [
+    "KDA4Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6638",
+     "tekst": "utforske eigenskapar og moglegheiter med teknikkar, materiale, form, farge og konstruksjonar, og bruke erfaringane i eige arbeid"
+    },
+    {
+     "kode": "KM6635",
+     "tekst": "identifisere eksisterande og framtidige utfordringar i samfunnet og lage utkast til berekraftige løysingar"
+    },
+    {
+     "kode": "KM6637",
+     "tekst": "kartleggje behov og bruke ergonomiske prinsipp og universell utforming i idéutvikling av produkt og tenester"
+    },
+    {
+     "kode": "KM6636",
+     "tekst": "utføre enkle marknads- og produktanalysar som verktøy i designprosessen"
+    },
+    {
+     "kode": "KM6639",
+     "tekst": "gjennomføre og dokumentere ein designprosess med prototypar, og vurdere funksjon, estetikk og berekraft"
+    },
+    {
+     "kode": "KM6640",
+     "tekst": "bruke teikning og modell til å kommunisere og presentere designløysingar, fysisk og digitalt"
+    },
+    {
+     "kode": "KM6641",
+     "tekst": "analysere produktidentitet og drøfte merkevarebygging som designstrategi"
+    },
+    {
+     "kode": "KM6634",
+     "tekst": "vurdere livssyklusen til eksisterande og planlagde produkt med tanke på miljø, gjenbruk, redesign og haldbarheit"
+    },
+    {
+     "kode": "KM6642",
+     "tekst": "bruke ulike metodar innanfor kreativ idéutvikling for å gjennomføre og dokumentere ein designprosess"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i design og berekraft. Elevane viser og utviklar kompetanse i design og berekraft når dei gjennom etiske og miljømessige problemstillingar utarbeider gode løysingar og produkt, og grunngir vala sine. Elevane viser og utviklar òg kompetanse gjennom å setje seg inn i andre sine behov, finne kreative løysingar og gjere funksjonelle og estetiske designval. Vidare viser og utviklar elevane kompetanse når dei dokumenterer, presenterer, kritisk vurderer og bruker ulike teknikkar og materiale i sitt eige praktiske arbeid.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved å utforme varierte oppgåver som fremjar etiske val og berekraftig design. Læraren skal vere i dialog med elevane om utviklinga deira i design og berekraft, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av oppgåver relaterte til design og berekraft."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i design og berekraft. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer utføring, forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i design og berekraft basert på kompetansen eleven har vist gjennom varierte, praktiske og skapande prosessar, og gjennom munnlege presentasjonar og visuell formidling av eigne arbeid ved hjelp av analogt og digitalt modell- og teiknearbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Design og berekraft: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Design og berekraft: Eleven kan bli trekt ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Design og berekraft: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

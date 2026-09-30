@@ -1,0 +1,190 @@
+{
+ "kode": "SLG05-01",
+ "tittel": "Læreplan i salgsfaget – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV808",
+   "tittel": "Kompetansemål og vurdering regelverk og arbeidsliv",
+   "fag": [
+    "SLG5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10718",
+     "tekst": "utforske og presentere områder og regelverk innenfor helse, miljø og sikkerhet og gjøre rede for bedriftens tiltak, egen rolle og mulighet til å medvirke"
+    },
+    {
+     "kode": "KM10715",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM10716",
+     "tekst": "reflektere over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv i salgsbransjen"
+    },
+    {
+     "kode": "KM10717",
+     "tekst": "gjøre rede for bedriftens beredskapsplaner og egen rolle i konflikt- og nødssituasjoner, og gjennomføre førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen regelverk og arbeidsliv når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen regelverk og arbeidsliv. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i regelverk og arbeidsliv. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV809",
+   "tittel": "Kompetansemål og vurdering service og relasjoner",
+   "fag": [
+    "SLG5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10723",
+     "tekst": "gjøre rede for andres argumentasjon og bruke og følge opp andres innspill i samtaler og diskusjoner om yrkesrelevante emner"
+    },
+    {
+     "kode": "KM10720",
+     "tekst": "tilpasse kommunikasjonen og utøvelsen av service til ulike arbeidssituasjoner og arbeidsplattformer"
+    },
+    {
+     "kode": "KM10722",
+     "tekst": "følgje retningslinjer, lovverk og bruke lokalt handlingsrom i behandling av reklamasjon og klager"
+    },
+    {
+     "kode": "KM10721",
+     "tekst": "reflektere over bedriftens etiske retningslinjer og verdier og følge disse i ulike arbeidssituasjoner"
+    },
+    {
+     "kode": "KM10719",
+     "tekst": "utforske og presentere hva det innebærer å respektere og forstå ulike kulturer, og ta hensyn til dette i møte med kolleger, kunder og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM10724",
+     "tekst": "utforske betydningen av service, produktkunnskap og forbrukeratferd i kundeveiledningen og bruke dette til å tilpasse service og veilede ulike kundegrupper på ulike salgsplattformer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen service og relasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen service og relasjoner. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i service og relasjoner. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV810",
+   "tittel": "Kompetansemål og vurdering markedsføring og salgsprosesser",
+   "fag": [
+    "SLG5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10730",
+     "tekst": "gjøre rede for ulike merkevarer og utforske ulike markedsstrategier som bedrifter kan bruke"
+    },
+    {
+     "kode": "KM10727",
+     "tekst": "vurdere salgsprosesser og hvordan de ulike elementene bidrar til den helhetlige kundeopplevelsen"
+    },
+    {
+     "kode": "KM10731",
+     "tekst": "vurdere tiltak i salgskanaler som kan fremme salg, mersalg og gjensalg og ta hensyn til dette i utviklingen av indre og ytre salgsmiljøer"
+    },
+    {
+     "kode": "KM10726",
+     "tekst": "vurdere og anvende bedriftens virkemidler, ressurser og mulighetsrom i markedsføringen og i salget av ulike produkter"
+    },
+    {
+     "kode": "KM10729",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere markedsføringskampanjer"
+    },
+    {
+     "kode": "KM10728",
+     "tekst": "presentere en selvvalgt merkevare og velge strategier for markedsføring og salg"
+    },
+    {
+     "kode": "KM10725",
+     "tekst": "bruke bedriftens kundeoppfølgingssystemer og vurdere hvordan disse kan brukes i kampanjer og kundedialog og til å bygge kundelojalitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen markedsføring og salgsprosesser når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen markedsføring og salgsprosesser. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i markedsføring og salgsprosesser. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV811",
+   "tittel": "Kompetansemål og vurdering økonomi og bærekraft i virksomheten",
+   "fag": [
+    "SLG5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10732",
+     "tekst": "følge rutiner for bestilling, mottak og dokumentkontroll"
+    },
+    {
+     "kode": "KM10733",
+     "tekst": "vurdere og gjennomføre tiltak som kan forebygge, avdekke og redusere svinn"
+    },
+    {
+     "kode": "KM10738",
+     "tekst": "lese, bruke og lage regneark i arbeidet med budsjett, anbud og kostnadsberegning knyttet til salg, service og reiseliv, og vurdere hvordan ulike faktorer påvirker resultatet"
+    },
+    {
+     "kode": "KM10735",
+     "tekst": "tolke og anvende budsjett og regnskap for å analysere inntekts- og kostnadsfaktorer og foreslå tiltak som kan bidra til lønnsomhet"
+    },
+    {
+     "kode": "KM10734",
+     "tekst": "kalkulere priser ut fra lønnsomhetsbetraktninger og vurdere hvordan bedriften kan tilpasse prisstrategier til ulike kundesegmenter"
+    },
+    {
+     "kode": "KM10736",
+     "tekst": "vurdere trender og foreslå tiltak som fremmer lønnsomhet og sikrer bærekraft i ulike deler av en verdikjede"
+    },
+    {
+     "kode": "KM10737",
+     "tekst": "presentere egen virksomhet med vekt på forretningsplan, og reflektere over hvordan bærekraftperspektivet er ivaretatt"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen økonomi og bærekraft i virksomheten når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen økonomi og bærekraft i virksomheten. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i økonomi og bærekraft i virksomheten. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 salgsfaget (SLG03-02). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i salgsfaget – modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 salgsfaget (SLG03-02). Alle skal opp til fagprøven som skal gjennomføres over 3 virkedager."
+   ]
+  }
+ ]
+}

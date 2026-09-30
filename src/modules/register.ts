@@ -67,7 +67,7 @@ export async function samleSokeoppforinger(moduler: readonly Modulmanifest[] = a
   return lister.flat();
 }
 
-export async function samleFavorittbare(moduler: readonly Modulmanifest[] = synligeModuler): Promise<Map<string, Favorittbar>> {
-  const lister = await Promise.all(moduler.map((m) => m.favorittbare()));
+export async function samleFavorittbare(moduler: readonly Modulmanifest[] = synligeModuler, ider?: readonly string[]): Promise<Map<string, Favorittbar>> {
+  const lister = await Promise.all(moduler.map((m) => m.favorittbare(ider)));
   return new Map(lister.flat().map((f) => [f.id, f]));
 }

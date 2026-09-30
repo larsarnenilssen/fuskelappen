@@ -1,0 +1,194 @@
+{
+ "kode": "TMF02-01",
+ "tittel": "Læreplan i vg2 tømrer",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV320",
+   "tittel": "Kompetansemål og vurdering konstruksjoner og klimaskall",
+   "fag": [
+    "TMF2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3299",
+     "tekst": "risikovurdere arbeidet og lage og følge en plan for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3321",
+     "tekst": "montere og bruke stillas på opptil ni meter og iverksette sikkerhetstiltak for arbeid i høyden"
+    },
+    {
+     "kode": "KM3316",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, vurdere konsekvenser av feilhåndtering og iverksette tiltak"
+    },
+    {
+     "kode": "KM3319",
+     "tekst": "bruke håndholdt verktøy, bygningssag, stropp og anhuk og vurdere konsekvenser av feilbruk"
+    },
+    {
+     "kode": "KM3320",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeider på prosjekter, beregne kostnader og drøfte faktorer som påvirker lønnsomhet"
+    },
+    {
+     "kode": "KM3318",
+     "tekst": "utarbeide målsatte skisser for konstruksjoner og bygninger og overføre mål fra tegning til konstruksjon"
+    },
+    {
+     "kode": "KM3312",
+     "tekst": "bygge og montere bærende veggkonstruksjoner og gjøre rede for hvordan fukt og temperaturendringer påvirker konstruksjonen"
+    },
+    {
+     "kode": "KM3315",
+     "tekst": "bygge og montere takkonstruksjoner og himlinger og gjøre rede for hvordan egenlast, vindlast og snølast påvirker bygningen"
+    },
+    {
+     "kode": "KM3314",
+     "tekst": "bygge og montere bjelkelag og etasjeskillere og gjøre rede for hvordan egenlast og nyttelast påvirker konstruksjonen"
+    },
+    {
+     "kode": "KM3317",
+     "tekst": "bygge utvendige trekonstruksjoner og vurdere hvordan klimatiske forhold påvirker konstruksjonen"
+    },
+    {
+     "kode": "KM3313",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM3322",
+     "tekst": "bygge konstruksjoner for brukere i ulike livssituasjoner og reflektere over hvordan tilgjengelighet og universell utforming fremmer folkehelse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget konstruksjoner og klimaskall når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget konstruksjoner og klimaskall. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget konstruksjoner og klimaskall ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget konstruksjoner og klimaskall basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV321",
+   "tittel": "Kompetansemål og vurdering vinduer, dører og innvendig arbeid",
+   "fag": [
+    "TMF2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3311",
+     "tekst": "planlegge, kontrollere og dokumentere eget arbeid og vurdere konsekvensen av avvik i bygningsdelen"
+    },
+    {
+     "kode": "KM3307",
+     "tekst": "montere, fore og beliste vinduer og dører, og gjøre rede for hvordan luft-, fukt- og varmetransport påvirker bygningsdelen"
+    },
+    {
+     "kode": "KM3308",
+     "tekst": "legge tregulv og gulv av sammensatte materialer og gjøre rede for materialenes fuktinnhold og lydgjennomgang"
+    },
+    {
+     "kode": "KM3309",
+     "tekst": "montere ulike typer kledning, innredning og listverk og gjøre rede for kvaliteten på materialene"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vinduer, dører og innvendig arbeid når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vinduer, dører og innvendig arbeid. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vinduer, dører og innvendig arbeid ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vinduer, dører og innvendig arbeid basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV322",
+   "tittel": "Kompetansemål og vurdering materialegenskaper, varmeisolering og tetting",
+   "fag": [
+    "TMF2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3306",
+     "tekst": "gjøre rede for trevirkets oppbygning og kontrollere fuktighet i trekonstruksjoner"
+    },
+    {
+     "kode": "KM3302",
+     "tekst": "gjøre rede for og utforske varmetransporten i materialer og konstruksjoner"
+    },
+    {
+     "kode": "KM3304",
+     "tekst": "gjøre rede for årsaker til dårlig inneklima og bygningsskader og vurdere tiltak"
+    },
+    {
+     "kode": "KM3303",
+     "tekst": "velge løsninger for, isolere og tette klimaskallet"
+    },
+    {
+     "kode": "KM3305",
+     "tekst": "vurdere og utforske materialenes egenskaper og bruksområder"
+    },
+    {
+     "kode": "KM3301",
+     "tekst": "identifisere ulike typer byggeskikker og stilarter og gjøre rede for hvordan tradisjonelle arbeidsmetoder tar vare på fagets egenart og kulturarv"
+    },
+    {
+     "kode": "KM3300",
+     "tekst": "gjøre rede for og bygge lyddempende og brannhemmende konstruksjoner"
+    },
+    {
+     "kode": "KM3310",
+     "tekst": "gjøre rede for materialbruk og byggemetoder i eldre bygningsmasse og drøfte forskjellene mellom fredet og vernet kulturminne"
+    },
+    {
+     "kode": "KM3323",
+     "tekst": "drøfte hvilke egenskaper ved ulike materialer som kan bidra til et helsefremmende inneklima"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget materialegenskaper, varmeisolering og tetting når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget materialegenskaper, varmeisolering og tetting. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget materialegenskaper, varmeisolering og tetting ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget materialegenskaper, varmeisolering og tetting basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Konstruksjoner og klimaskall: Eleven skal ha én standpunktkarakter.",
+    "Vinduer, dører og innvendig arbeid: Eleven skal ha én standpunktkarakter.",
+    "Materialegenskaper, varmeisolering og tetting: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Konstruksjoner og klimaskall, vinduer, dører og innvendig arbeid og materialegenskaper, varmeisolering og tetting: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Konstruksjoner og klimaskall: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vinduer, dører og innvendig arbeid: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Materialegenskaper, varmeisolering og tetting: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Konstruksjoner og klimaskall, vinduer, dører og innvendig arbeid og materialegenskaper, varmeisolering og tetting: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

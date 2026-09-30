@@ -1,0 +1,148 @@
+{
+ "kode": "BTK03-02",
+ "tittel": "Læreplan i vg3 bilfaget, tunge kjøretøy",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV683",
+   "tittel": "Komptansemål og vurdering vg3 bilfaget, tunge kjøretøy",
+   "fag": [
+    "BTK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8658",
+     "tekst": "planlegge, risikovurdere, utføre og dokumentere arbeid i tråd med lovverk, internkontrollforskrifter, arbeidsbeskrivelser og fabrikantens anvisninger"
+    },
+    {
+     "kode": "KM8683",
+     "tekst": "utføre varme arbeider i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM8682",
+     "tekst": "velge og bruke egnet verktøy, utstyr og måleinstrumenter i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM8680",
+     "tekst": "velge og bruke verneutstyr og reflektere over hvordan ulike arbeidsstillinger påvirker kroppen fysisk"
+    },
+    {
+     "kode": "KM8681",
+     "tekst": "kommunisere med kunder om arbeidsoppdrag og behandle kunder i tråd med bedriftens retningslinjer for kundebehandling"
+    },
+    {
+     "kode": "KM8679",
+     "tekst": "feilsøke på komponenter i drivstoffinnsprøytingsanlegg og elektroniske motorstyringssystemer."
+    },
+    {
+     "kode": "KM8678",
+     "tekst": "vurdere faktorer som kan påvirke kostnader og effektivitet i verksteddrift"
+    },
+    {
+     "kode": "KM8685",
+     "tekst": "beskrive hvordan motoren er bygd opp og energiomsetningsprinsipp på motor i kjøretøy drevet av ulike energikilder"
+    },
+    {
+     "kode": "KM8677",
+     "tekst": "utføre funksjonskontroll på ulike rensesystemer, stille diagnose og foreta utbedringer"
+    },
+    {
+     "kode": "KM8676",
+     "tekst": "feilsøke på motor, stille diagnose og foreta utbedringer"
+    },
+    {
+     "kode": "KM8675",
+     "tekst": "utføre vedlikehold, feilsøking og reparasjon på anlegg med høye spenninger i kjøretøy med ulike former for elektrisk drift og følge nødvendige sikkerhetstiltak ved slikt arbeid"
+    },
+    {
+     "kode": "KM8674",
+     "tekst": "feilsøke og utbedre feil på elektriske og elektroniske komponenter"
+    },
+    {
+     "kode": "KM8669",
+     "tekst": "kontrollere, reparere og justere lysanlegg i tråd med forskrifter"
+    },
+    {
+     "kode": "KM8673",
+     "tekst": "feilsøke på drivverk, stille diagnose og foreta utbedringer"
+    },
+    {
+     "kode": "KM8672",
+     "tekst": "utføre bremsetest i henhold til forskrifter, tolke og kontrollere måleresultater, og feilsøke og reparere bremsesystemer på ulike kjøretøy med tilhørende utstyr"
+    },
+    {
+     "kode": "KM8671",
+     "tekst": "utføre hjulstillingskontroll og forklare hjulvinklenes påvirkning på kjøretøyets kjøreegenskaper og dekkenes slitasjemønster"
+    },
+    {
+     "kode": "KM8670",
+     "tekst": "feilsøke og reparere komponenter i hjuloppheng og styreinnretninger"
+    },
+    {
+     "kode": "KM8668",
+     "tekst": "velge dekk og felg i tråd med krav fra fabrikanter og tekniske data på kjøretøy"
+    },
+    {
+     "kode": "KM8667",
+     "tekst": "forklare virkemåten til, feilsøke og reparere kjøretøyets fjæringssystemer"
+    },
+    {
+     "kode": "KM8660",
+     "tekst": "demontere, montere og tilpasse karosserikomponenter og tilleggsutstyr"
+    },
+    {
+     "kode": "KM8666",
+     "tekst": "reparere påbygg og tilhengerkonstruksjoner"
+    },
+    {
+     "kode": "KM8665",
+     "tekst": "gjøre rede for hvordan passive og aktive sikkerhetssystemer fungerer og er bygd opp, og feilsøke, reparere og kalibrere disse systemene"
+    },
+    {
+     "kode": "KM8659",
+     "tekst": "velge og bruke oljer, smøremidler og væsker til kjøretøyet i henhold til fabrikantenes spesifikasjoner og miljøhensyn"
+    },
+    {
+     "kode": "KM8684",
+     "tekst": "feilsøke og gjennomføre arbeider på hydraulikk-, diesel- og trykkluftsystemer i tråd med sikkerhetsforskrifter og -prosedyrer"
+    },
+    {
+     "kode": "KM8664",
+     "tekst": "velge og bruke produkt- og sikkerhetsdatablader i tråd med arbeidsoppdrag"
+    },
+    {
+     "kode": "KM8663",
+     "tekst": "reflektere over grunnprinsippene for klima- og komfortsystemer og utføre vedlikehold, feilsøking og reparasjon på systemene"
+    },
+    {
+     "kode": "KM8661",
+     "tekst": "kildesortere og behandle spesialavfall i tråd med bedriftens internkontrollsystemer"
+    },
+    {
+     "kode": "KM8662",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 bilfaget, tunge kjøretøy når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 bilfaget, tunge kjøretøy. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 bilfaget, tunge kjøretøy skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

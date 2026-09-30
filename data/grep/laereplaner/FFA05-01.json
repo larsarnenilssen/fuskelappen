@@ -1,0 +1,228 @@
+{
+ "kode": "FFA05-01",
+ "tittel": "Læreplan i fiske og fangst – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-30",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV854",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerhet ombord",
+   "fag": [
+    "FFA5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11273",
+     "tekst": "bruke sikkerhetsstyringssystem, vurdere risiko og ivareta helse og sikkerhet om bord etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM11274",
+     "tekst": "gjennomføre arbeid slik at fysisk helse blir ivaretatt, og vurdere om arbeidet kan forbedres med hensyn til ergonomi"
+    },
+    {
+     "kode": "KM11275",
+     "tekst": "følge prosedyrer i beredskaps- og nødssituasjoner, vurdere situasjonen og bruke brann- og redningsutstyr"
+    },
+    {
+     "kode": "KM11276",
+     "tekst": "bruke og følge veiledninger og retningslinjer for oppbevaring og merking av kjemikalier og helseskadelige stoffer"
+    },
+    {
+     "kode": "KM11281",
+     "tekst": "velge ut og bruke personlig verneutstyr ved ulike arbeidsoperasjoner om bord"
+    },
+    {
+     "kode": "KM11277",
+     "tekst": "registrere og rapportere avvik i samsvar med vedlikeholds- og sikkerhetsstyringssystemer og forklare hvordan et slikt system kan bidra til å effektivisere driften"
+    },
+    {
+     "kode": "KM11278",
+     "tekst": "forebygge og begrense forurensning i tråd med nasjonalt og internasjonalt regelverk, og reflektere over hvordan driften av eget fartøy påvirker miljøet"
+    },
+    {
+     "kode": "KM11279",
+     "tekst": "gjennomføre hygiene og renhold om bord på aktuelt fartøy etter gjeldende regelverk, standarder og kvalitetssystemer"
+    },
+    {
+     "kode": "KM11280",
+     "tekst": "bruke ISPS-koden ved anløp til havner som krever det"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen helse, miljø og sikkerhet ombord når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen helse, miljø og sikkerhet ombord. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten Om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i helse, miljø og sikkerhet ombord. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent.",
+    "Lærlingene må dokumentere at de har gjennomført grunnleggende sikkerhetsopplæring i tråd med krav fra Sjøfartsdirektoratet."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV855",
+   "tittel": "Kompetansemål og vurdering fangst og redskap",
+   "fag": [
+    "FFA5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11282",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere fiske og fangst på fartøy i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM11283",
+     "tekst": "gjennomføre førstehåndshåndtering, behandling og oppbevaring av fangst om bord som sikrer råstoffkvaliteten i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM11284",
+     "tekst": "vurdere og gjennomføre vedlikehold og reparasjon av fiskeredskaper"
+    },
+    {
+     "kode": "KM11285",
+     "tekst": "levere sjømatprodukter til landanlegg etter gjeldende kvalitetsforskrifter og markedskrav"
+    },
+    {
+     "kode": "KM11286",
+     "tekst": "rapportere og dokumentere arbeidsoppgaver på engelsk og norsk"
+    },
+    {
+     "kode": "KM11287",
+     "tekst": "bruke dekksutstyr, maskiner, instrumenter og redskaper på fartøy i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM11288",
+     "tekst": "bruke metoder for seleksjon og fangstbegrensning med ulike redskaper, og vurdere effekten av disse metodene"
+    },
+    {
+     "kode": "KM11289",
+     "tekst": "tolke og bruke formler som gjelder dagligliv og yrkesliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen fangst og redskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen fangst og redskap. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget. Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i fangst og redskap. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV856",
+   "tittel": "Kompetansemål og vurdering drift av fartøy",
+   "fag": [
+    "FFA5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11290",
+     "tekst": "bruke navigasjonsinstrumenter og navigasjonshjelpemidler for å planlegge, gjennomføre og vurdere sikker seilas"
+    },
+    {
+     "kode": "KM11291",
+     "tekst": "bruke fortøynings- og ankringsutstyr, og vurdere tilstanden på utstyret"
+    },
+    {
+     "kode": "KM11292",
+     "tekst": "kommunisere med maritim radio på norsk og engelsk etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM11293",
+     "tekst": "gjøre rede for og ta hensyn til driftsbegrensninger på bakgrunn av meteorologiske observasjoner og værmeldinger, og vurdere hvordan vær og vind kan påvirke sikkerhet til mannskap, fartøy og last"
+    },
+    {
+     "kode": "KM11299",
+     "tekst": "gjøre rede for operasjon av fartøy med hensyn til værforhold, strøm, tidevann og atferden til fisken"
+    },
+    {
+     "kode": "KM11300",
+     "tekst": "bruke sjøveisregler og holde brovakt i samsvar med godt sjømannskap"
+    },
+    {
+     "kode": "KM11301",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere seilas ved bruk av sjøkart, farvannsbeskrivelser, sjømerker og navigasjonsmidler"
+    },
+    {
+     "kode": "KM11294",
+     "tekst": "planlegge og gjennomføre lasting og lossing, og vurdere hvordan dette påvirker stabiliteten til fartøyet"
+    },
+    {
+     "kode": "KM11295",
+     "tekst": "merke og sikre last i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM11296",
+     "tekst": "gjennomføre vakthold og utkikkstjeneste i samsvar med instruks, og ta imot rorkommando på norsk og engelsk"
+    },
+    {
+     "kode": "KM11297",
+     "tekst": "gjennomføre og dokumentere daglig ettersyn og vedlikehold av fartøy og utstyr i tråd med vedlikeholdssystemet på fartøyet"
+    },
+    {
+     "kode": "KM11298",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen drift av fartøy når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen drift av fartøy. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget. Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i drift av fartøy. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV857",
+   "tittel": "Kompetansemål og vurdering organisering, arbeidsforhold og forvaltning",
+   "fag": [
+    "FFA5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11302",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM11303",
+     "tekst": "gjøre rede for sammenhenger mellom omsetning, fangstinntekter, lott og hyreoppgjør"
+    },
+    {
+     "kode": "KM11306",
+     "tekst": "følge gjeldende reguleringer for aktuelle fiskeri"
+    },
+    {
+     "kode": "KM11304",
+     "tekst": "utøve fiske og fangst på en bærekraftig måte i tråd med miljøkrav og drøfte konsekvensene av overbeskatning"
+    },
+    {
+     "kode": "KM11305",
+     "tekst": "lese, bruke og lage regneark i arbeidet med budsjett, anbud og kostnadsberegning knyttet til naturbruk, og vurdere hvordan ulike faktorer påvirker resultatet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen organisering, arbeidsforhold og forvaltning når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen organisering, arbeidsforhold og forvaltning. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget. Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i organisering arbeidsforhold og forvaltning. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i fiske og fangst (FFA03‑03). Eksamen blir utarbeidet sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsedel.",
+    "Opplæringen i fiske og fangst - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i fiske og fangst (FFA03‑03). Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på én–to virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "kode": "OPT03-02",
+ "tittel": "Læreplan i vg3 optronikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV744",
+   "tittel": "Kompetansemål og vurdering vg3 optronikerfaget",
+   "fag": [
+    "OPT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9731",
+     "tekst": "planlegge, gjennomføre, sluttkontrollere og dokumentere arbeidsoppdragene individuelt og i samarbeid med andre arbeide i henhold til teknisk underlag, tegninger, gjeldende regelverk og bedriftens internkontrollsystem og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9751",
+     "tekst": "risikovurdere optroniske systemer med hensyn til beskyttelse mot elektrisk sjokk, overstrøm, overspenning, brann, elektromagnetisk støy og ytre påvirkninger"
+    },
+    {
+     "kode": "KM9750",
+     "tekst": "utføre arbeidet i henhold til gjeldende sikkerhetsforskrifter og sikkerhet ved arbeid på lasersystemer, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9749",
+     "tekst": "velge egnet verktøy og verneutstyr til arbeidsoppdragene og gjøre rede for vedlikeholdsrutinene for verktøy og verneutstyr i bedriftens internkontrollsystem"
+    },
+    {
+     "kode": "KM9748",
+     "tekst": "tilvirke, reparere, kontrollere og vedlikeholde optronisk utstyr og komponenter ved hjelp av måleinstrumenter, verktøy og maskiner, og vedlikeholde verktøy, maskiner, redskaper, måleverktøy og testutrustning i henhold til gjeldende regelverk, instrukser og prosedyrer·"
+    },
+    {
+     "kode": "KM9747",
+     "tekst": "bruke digitale ressurser og programvare ved beregning, konstruksjon, sammenstilling og produksjon av optroniske komponenter og utstyr"
+    },
+    {
+     "kode": "KM9746",
+     "tekst": "utføre arbeid i henhold til gjeldende standarder og følge rutiner for behandling av elektrostatiske følsomme komponenter (ESD) og holde seg oppdatert på regelverk"
+    },
+    {
+     "kode": "KM9745",
+     "tekst": "utøve digital dømmekraft i forbindelse med sikring og beskyttelse av konfidensiell og gradert digital informasjon, følge bedriftens krav til person-, data- og informasjonssikkerhet og drøfte tiltak for å sikre at sensitive data ikke kommer på avveie"
+    },
+    {
+     "kode": "KM9744",
+     "tekst": "bruke verneutstyr tilpasset arbeidet og forberede optroniske komponenter og utstyr i henhold til krav til renhet og beskrive renromsprosesser og prosedyrer for forskjellige operasjoner"
+    },
+    {
+     "kode": "KM9743",
+     "tekst": "velge og anvende forskjellige materialer og komponenter i sammenstillinger og systemer der flere teknologier inngår, og gjøre rede for materialenes mekaniske, kjemiske, elektriske og magnetiske egenskaper og hvordan disse kan påvirke hverandre"
+    },
+    {
+     "kode": "KM9752",
+     "tekst": "velge og anvende forskjellige maskiner tilpasset valgt materiale i henhold til gjeldende regelverk, instrukser og retningslinjer"
+    },
+    {
+     "kode": "KM9742",
+     "tekst": "velge og anvende ulike tekniske funksjoner innenfor optikk, elektronikk og mekanikk ved sammenstilling av optroniske systemer og utstyr, og gjøre rede for valgt løsning"
+    },
+    {
+     "kode": "KM9740",
+     "tekst": "produsere, reparere, kalibrere og anvende optroniske komponenter, måleverktøy, testutrustning og systemer i henhold til nasjonale og internasjonale standarder, sikkerhetsbestemmelser, regler, rutiner og forskrifter"
+    },
+    {
+     "kode": "KM9739",
+     "tekst": "utarbeide tilbud og beregne tidsbruk på reparasjon og tjenester overfor kunder og gi faglig baserte råd og vurderinger om hvor lønnsomt det vil være å reparere"
+    },
+    {
+     "kode": "KM9738",
+     "tekst": "utarbeide digitale tegninger tilpasset arbeidsoppdragene og anvende illustrasjoner, arbeidstegninger og annen visuell informasjon ved dokumentasjon av valgt løsning"
+    },
+    {
+     "kode": "KM9737",
+     "tekst": "anvende digitale programmer for måling, logging, testing og utprøving av optroniske komponenter og systemer, føre servicehistorikk og kontrollere oppdatering av programvare"
+    },
+    {
+     "kode": "KM9736",
+     "tekst": "utføre systematisk feilsøking ved hjelp av egnede måleinstrument og dokumentasjon og vurdere måleresultat opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM9735",
+     "tekst": "gjennomføre fjerndiagnose og autodiagnose av optronisk utstyr via elektroniske kommunikasjonsnett og gjøre rede for bruk av disse formene for diagnostisering"
+    },
+    {
+     "kode": "KM9734",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9753",
+     "tekst": "gjøre rede for fagets og bransjens historie, tradisjon og utvikling og drøfte nye markedsområder for optroniske instrumenter og tjenester"
+    },
+    {
+     "kode": "KM9733",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9732",
+     "tekst": "drøfte etiske dilemmaer ved valg av og bruk av optroniske systemer og løsninger, og diskutere bærekraft og konsekvenser lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9741",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget og foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 optronikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 optronikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 optronikerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

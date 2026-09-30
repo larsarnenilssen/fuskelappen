@@ -1,0 +1,234 @@
+{
+ "kode": "KVV02-01",
+ "tittel": "Læreplan i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-08",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV458",
+   "tittel": "Kompetansemål og vurdering elenergi og automatisering",
+   "fag": [
+    "KVV2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5025",
+     "tekst": "risikovurdere og utføre arbeid innen elenergi og automatisering fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer, standarder og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM5018",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere yrkesoppgaver knyttet til elenergi og automatisering individuelt og i samarbeid med andre og begrunne valg som er gjort"
+    },
+    {
+     "kode": "KM5023",
+     "tekst": "utføre livreddende førstehjelp og utføre yrkesoppgaver i henhold til forskrift om sikkerhet ved arbeid i og drift av elektriske anlegg"
+    },
+    {
+     "kode": "KM5019",
+     "tekst": "installere og sette i drift start- og reguleringsutstyr for motorer og termiske pådragsapparater og vurdere tiltak for energieffektivisering og gjøre rede for motorers effektivitetsnivå"
+    },
+    {
+     "kode": "KM4996",
+     "tekst": "installere, programmere, justere og funksjonsteste aktuatorer, regulatorer, måleverdiomformere og sensorer for å oppnå ønsket resultat og gjøre rede for sensorers måleområde og metoder for å tilpasse regulator til system"
+    },
+    {
+     "kode": "KM5029",
+     "tekst": "montere, sette i drift og funksjonsteste menneske–maskin-grensesnitt for visualisering av driftsparametere og gjøre rede for bruksområdene"
+    },
+    {
+     "kode": "KM5020",
+     "tekst": "velge, montere og koble egnet ledning, kabel og vern for beskyttelse mot overbelastning og kortslutning på maskin og vurdere å iverksette tiltak i forbindelse med elektriske støykilder"
+    },
+    {
+     "kode": "KM5022",
+     "tekst": "dimensjonere og installere jordingssystem på maskin og utføre sluttkontroll av jordingssystemet"
+    },
+    {
+     "kode": "KM5024",
+     "tekst": "utføre systematisk feilsøking på maskiner ved hjelp av dokumentasjon og måleinstrumenter"
+    },
+    {
+     "kode": "KM5016",
+     "tekst": "utføre sluttkontroll og funksjonstest av maskin og forklare begrepet miljøytelse"
+    },
+    {
+     "kode": "KM5015",
+     "tekst": "håndtere avfall etter eget arbeid i henhold til gjeldende system for internkontroll og gjøre rede for forskjellen på lineær- og sirkulær økonomi"
+    },
+    {
+     "kode": "KM5017",
+     "tekst": "anvende fagterminologi i skriftlig og muntlig kommunikasjon"
+    },
+    {
+     "kode": "KM5027",
+     "tekst": "drøfte krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM5026",
+     "tekst": "reflektere over betydningen av å mestre et fag og hvordan dette påvirker egen livskvalitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elenergi og automatisering når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elenergi og automatisering. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke rådene for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elenergi og automatisering ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elenergi og automatisering basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV459",
+   "tittel": "Kompetansemål og vurdering kulde- og varmepumpeteknikk",
+   "fag": [
+    "KVV2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4999",
+     "tekst": "risikovurdere og utføre arbeid innen kulde- og varmepumpeteknikk fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer, standarder og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM5001",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere yrkesoppgaver knyttet til kulde- og varmepumpeteknikk individuelt og i samarbeid med andre og begrunne valg som er gjort"
+    },
+    {
+     "kode": "KM5028",
+     "tekst": "montere, lodde, trykk- og funksjonsteste kulde- og varmepumpeanlegg og gjøre rede for grunnleggende varmelære"
+    },
+    {
+     "kode": "KM5014",
+     "tekst": "måle trykk og temperaturer i et kuldeanlegg og utarbeide et trykk–entalpi-diagram og gjøre rede for anleggets energi- og miljøytelse"
+    },
+    {
+     "kode": "KM5021",
+     "tekst": "vedlikeholde kompressor, kondensator, ekspansjonsventil og fordamper og gjøre rede for virkemåten til disse"
+    },
+    {
+     "kode": "KM5013",
+     "tekst": "håndtere syntetiske og naturlige kuldemedier, smøremidler og kjemikalier som brukes i kulde- og varmepumpeanlegg, på en bærekraftig måte og gjøre rede for avhending av farlig avfall"
+    },
+    {
+     "kode": "KM5003",
+     "tekst": "montere og sette i drift et kulde- og varmepumpeanlegg og vurdere installasjonens energieffektivitet"
+    },
+    {
+     "kode": "KM4997",
+     "tekst": "utføre systematisk feilsøking og rette feil på kulde- og varmepumpeanlegg og gjøre rede for instrumentets målenøyaktighet ved aktuell måling"
+    },
+    {
+     "kode": "KM4998",
+     "tekst": "utføre service og vedlikehold på kulde- og varmepumpeanlegg og gjøre rede for metoder og krav for service på anleggene"
+    },
+    {
+     "kode": "KM5000",
+     "tekst": "beskrive system og prosess i ulike kulde- og varmepumpeanlegg og gjøre rede for forskjellen på prosess- og komfortkjøling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kulde- og varmepumpeteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kulde- og varmepumpeteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke rådene for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kulde- og varmepumpeteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kulde- og varmepumpeteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV460",
+   "tittel": "Kompetansemål og vurdering ventilasjonsteknikk",
+   "fag": [
+    "KVV2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5012",
+     "tekst": "risikovurdere og utføre arbeid innen ventilasjonsteknikk fagmessig, nøyaktig og i overensstemmelse med gjeldende lover, forskrifter, normer, standarder og produsentenes tekniske dokumentasjon"
+    },
+    {
+     "kode": "KM5002",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere yrkesoppgaver knyttet til ventilasjonsteknikk individuelt og i samarbeid med andre og begrunne valg som er gjort"
+    },
+    {
+     "kode": "KM5005",
+     "tekst": "installere komponenter på ventilasjonsanlegg og gjøre rede for et godt inneklima, riktig ventilasjon og effektivt energibruk med miljøvennlige løsninger"
+    },
+    {
+     "kode": "KM5004",
+     "tekst": "måle luftmengder, temperatur, luftfuktighet, CO2 og vurdere resultatet mot beregnede verdier og gjøre rede for sammenheng mellom målte verdier og luftkvalitet"
+    },
+    {
+     "kode": "KM5011",
+     "tekst": "kontrollere, innregulere og sette i drift et ventilasjonsanlegg og gjøre rede for krav til spesifikk vifteeffekt og temperaturvirkningsgrad for varmegjenvinning"
+    },
+    {
+     "kode": "KM5006",
+     "tekst": "vedlikeholde ventilasjonsanlegg og forklare ventilasjonsfilternes betydning for klimaytelsen"
+    },
+    {
+     "kode": "KM5007",
+     "tekst": "utføre systematisk feilsøking og rette feil på ventilasjonsanlegg"
+    },
+    {
+     "kode": "KM5008",
+     "tekst": "måle lydnivå, analysere resultatene, vurdere tiltak og redegjøre for prinsippene for støydemping i ventilasjonsanlegg"
+    },
+    {
+     "kode": "KM5009",
+     "tekst": "vedlikeholde måleverktøy og instrumenter og gjøre rede for kalibrering av disse"
+    },
+    {
+     "kode": "KM5010",
+     "tekst": "gjøre rede for luftforurensning, luftkvalitetsklasser, filtrering av forurenset luft og inneklimaets betydning for folkehelse og trivsel"
+    },
+    {
+     "kode": "KM5030",
+     "tekst": "finne løsninger i samarbeid med andre og håndtere meningsforskjeller"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i ventilasjonsteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i ventilasjonsteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke rådene for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i ventilasjonsteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i ventilasjonsteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elenergi og automatisering: Eleven skal ha én standpunktkarakter.",
+    "Kulde- og varmepumpeteknikk: Eleven skal ha én standpunktkarakter.",
+    "Ventilasjonsteknikk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elenergi og automatisering, kulde- og varmepumpeteknikk, og ventilasjonsteknikk: Elevene skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elenergi og automatisering: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kulde- og varmepumpeteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Ventilasjonsteknikk: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elenergi og automatisering, kulde- og varmepumpeteknikk, og ventilasjonsteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

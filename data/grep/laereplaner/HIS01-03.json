@@ -1,0 +1,381 @@
+{
+ "kode": "HIS01-03",
+ "tittel": "Læreplan i historie fellesfag",
+ "spraak": "nob",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV84",
+   "tittel": "Kompetansemål og vurdering vg2",
+   "fag": [
+    "HIS1Z09"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM845",
+     "tekst": "reflektere over hvordan fortiden former oss som mennesker"
+    },
+    {
+     "kode": "KM880",
+     "tekst": "utforske fortiden ved å stille spørsmål og innhente, tolke og bruke ulikt historisk materiale for å finne svar"
+    },
+    {
+     "kode": "KM888",
+     "tekst": "reflektere over hvorfor historikere deler inn fortiden i perioder og vurdere hvordan vi kan periodisere fortiden på grunnlag av ulike kriterier"
+    },
+    {
+     "kode": "KM887",
+     "tekst": "utforske og reflektere over hvordan fortiden minnes lokalt og nasjonalt"
+    },
+    {
+     "kode": "KM881",
+     "tekst": "gjøre rede for viktige endringer i hvordan mennesker har skaffet seg mat og brukt naturressurser, og vurdere betydningen av dette for mennesker og et bærekraftig samfunn"
+    },
+    {
+     "kode": "KM882",
+     "tekst": "presentere viktige demografiske endringer og vurdere årsaker til disse endringene og virkninger av dem for mennesker og samfunn"
+    },
+    {
+     "kode": "KM883",
+     "tekst": "gjøre rede for hvordan handel og økonomiske systemer har påvirket maktforhold og menneskers liv"
+    },
+    {
+     "kode": "KM884",
+     "tekst": "sammenligne hvordan demokratiet i antikken og demokratiet i vår tid har gitt mennesker ulike muligheter til demokratisk deltakelse"
+    },
+    {
+     "kode": "KM889",
+     "tekst": "utforske hvordan kommunikasjon og kulturmøter har hatt betydning for mennesker i Norge og verden"
+    },
+    {
+     "kode": "KM885",
+     "tekst": "vurdere endringer i fordeling og legitimering av makt fra middelalderen til og med tidlig nytid"
+    },
+    {
+     "kode": "KM886",
+     "tekst": "beskrive religionens betydning for samfunns- og maktforhold fra middelalderen til og med vår tid og vurdere dens rolle i menneskers selvoppfatning og syn på andre"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene utvikler og viser kompetanse i historie på vg2 når de bruker historiefaglige metoder i kombinasjon med kunnskaper om fortiden, og når de stiller spørsmål, gjennomfører undersøkelser og finner svar. Elevene utvikler og viser videre kompetanse i historiefaget når de ser sammenhenger i fortiden og mellom fortid og nåtid, og når de reflekter over hvordan konteksten mennesker levde i påvirket tenkemåten og handlingsvalgene.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på, og gjennom å la elevene få være nysgjerrige og aktivt kunnskapssøkende. Læreren og elevene skal være i dialog om elevenes utvikling i historie. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i historie."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV85",
+   "tittel": "Kompetansemål og vurdering vg3",
+   "fag": [
+    "HIS1Z10"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM890",
+     "tekst": "reflektere over hvordan fortolkninger av fortiden er preget av nåtidsforståelse og forventninger til framtiden"
+    },
+    {
+     "kode": "KM891",
+     "tekst": "reflektere over hvordan fortiden brukes av ulike aktører og drøfte hensikten med denne historiebruken"
+    },
+    {
+     "kode": "KM892",
+     "tekst": "utforske fortiden ved å formulere problemstillinger, finne, vurdere og bruke ulikt materiale og presentere egne slutninger"
+    },
+    {
+     "kode": "KM893",
+     "tekst": "utforske en historisk person og diskutere hans eller hennes tenkning, handlingsrom og valg i lys av samtiden han eller hun levde i"
+    },
+    {
+     "kode": "KM895",
+     "tekst": "sammenligne ulike framstillinger av en hendelse og reflektere over at historiske framstillinger preges av opphavspersonens ståsted og kontekst"
+    },
+    {
+     "kode": "KM910",
+     "tekst": "drøfte i hvilken grad utviklingen i ulike perioder har vært preget av brudd eller kontinuitet, og vurdere hva som gjør en hendelse i fortiden betydningsfull"
+    },
+    {
+     "kode": "KM896",
+     "tekst": "gjøre rede for tanker og ideologier som har ligget til grunn for politiske omveltninger fra opplysningstiden til i dag og vurdere betydningen av disse for menneskers muligheter til demokratisk deltakelse"
+    },
+    {
+     "kode": "KM897",
+     "tekst": "reflektere over hvordan teknologiske omveltninger fra den industrielle revolusjonen til i dag har endret menneskers liv og formet forventninger til framtiden"
+    },
+    {
+     "kode": "KM898",
+     "tekst": "gjøre rede for årsaker til at mennesker har migrert, og diskutere kulturmøtene sett fra ulike perspektiver."
+    },
+    {
+     "kode": "KM899",
+     "tekst": "gjøre rede for årsaker til at kolonimakter underla seg landområder, og drøfte konsekvenser for mennesker og samfunn i land og områder som ble kolonisert"
+    },
+    {
+     "kode": "KM900",
+     "tekst": "drøfte bakgrunnen for verdenskrigene og et utvalg andre sentrale kriger eller konflikter, og reflektere over om fredsslutninger har bidratt til å skape fred og forsoning"
+    },
+    {
+     "kode": "KM902",
+     "tekst": "utforske menneskers handlingsrom og valgmuligheter i konfliktsituasjoner og vurdere konsekvenser av valgene de har tatt"
+    },
+    {
+     "kode": "KM901",
+     "tekst": "reflektere over hvordan ideologier og tankesett på 1900-tallet og fram til i dag har bidratt til undertrykkelse, terror og folkemord som holocaust"
+    },
+    {
+     "kode": "KM903",
+     "tekst": "analysere hvordan framstillinger av fortiden har blitt brukt i Norge for å skape nasjonal identitet og drøfte hvilke virkninger dette har hatt for ulike grupper"
+    },
+    {
+     "kode": "KM904",
+     "tekst": "utforske hvordan mennesker har arbeidet for myndiggjøring og frigjøring i norsk og samisk historie, og gjøre rede for hvordan de samtidig har bidratt til utviklingen av demokratiet"
+    },
+    {
+     "kode": "KM905",
+     "tekst": "gjøre rede for velferdsutviklingen i Norge på 1900-tallet og drøfte konsekvenser for menneskers liv"
+    },
+    {
+     "kode": "KM906",
+     "tekst": "vurdere hvordan mennesket har forholdt seg til naturen, forvaltet og brukt ressurser og bruke historiske perspektiver i samtale om bærekraftige løsninger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene utvikler og viser kompetanse i historie på vg3 når de bruker historiefaglige metoder og historiefaglig materiale for å finne svar, og når de forstår menneskers utfordringer og handlinger i historiske kontekster. De utvikler og viser også kompetanse når de formulerer faglige problemstillinger, og når de finner og kritisk bruker historisk materiale i refleksjon og argumentasjon til å konstruere historiefortellinger. Elevene utvikler og viser videre kompetanse når de presenterer ulike perspektiver på fortidige hendelser, og når de reflekterer over hvordan framstillinger av fortiden brukes og hvordan fortiden bidrar til å prege dem selv som mennesker.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på, og gjennom å la elevene få være nysgjerrige og aktivt kunnskapssøkende. Læreren og elevene skal være i dialog om elevenes utvikling i historie. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i historie."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i historie ved avslutningen av opplæringen etter vg3. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i historie basert på kompetansen eleven har vist når eleven har brukt kunnskaper og ferdigheter i kombinasjon."
+   ]
+  },
+  {
+   "kode": "KV86",
+   "tittel": "Kompetansemål og vurdering vg3 – påbygging til generell studiekompetanse",
+   "fag": [
+    "HIS1Z11"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM907",
+     "tekst": "reflektere over hvordan fortiden former oss som mennesker, og hvordan våre fortolkninger av fortiden er preget av nåtidsforståelse og forventninger til framtiden"
+    },
+    {
+     "kode": "KM908",
+     "tekst": "drøfte i hvilken grad utviklingen i ulike perioder har vært preget av brudd eller kontinuitet, og vurdere hva som gjør en hendelse i fortiden betydningsfull"
+    },
+    {
+     "kode": "KM909",
+     "tekst": "reflektere over hvordan fortiden brukes i lokalmiljøet og av ulike aktører, og drøfte hensikten med denne historiebruken"
+    },
+    {
+     "kode": "KM879",
+     "tekst": "utforske fortiden ved å formulere problemstillinger, finne, vurdere og bruke ulikt materiale og presentere egne slutninger"
+    },
+    {
+     "kode": "KM894",
+     "tekst": "utforske en historisk person og diskutere hans eller hennes tenkning, handlingsrom og valg i lys av samtiden han eller hun levde i"
+    },
+    {
+     "kode": "KM878",
+     "tekst": "sammenligne ulike framstillinger av en hendelse og reflektere over at historiske framstillinger preges av opphavspersonens ståsted og kontekst"
+    },
+    {
+     "kode": "KM860",
+     "tekst": "gjøre rede for viktige endringer i hvordan mennesker har skaffet seg mat og brukt naturressurser, og vurdere betydningen av dette for mennesker og et bærekraftig samfunn"
+    },
+    {
+     "kode": "KM846",
+     "tekst": "presentere viktige demografiske endringer og vurdere årsakene til disse endringene og virkninger av dem for mennesker og samfunn"
+    },
+    {
+     "kode": "KM847",
+     "tekst": "gjøre rede for hvordan handel og økonomiske systemer har påvirket maktforhold og menneskers liv"
+    },
+    {
+     "kode": "KM848",
+     "tekst": "beskrive samfunnsendringer fra antikken til tidlig nytid og vurdere betydningen for fordeling og legitimering av makt og menneskers muligheter til demokratisk deltakelse"
+    },
+    {
+     "kode": "KM849",
+     "tekst": "beskrive religionens plass i samfunnet fra middelalderen til vår tid, og vurdere hvilken betydning den har hatt for hvordan mennesker har oppfattet seg selv og andre"
+    },
+    {
+     "kode": "KM850",
+     "tekst": "gjøre rede for tanker og ideologier som har ligget til grunn for politiske omveltninger fra opplysningstiden til i dag og vurdere betydningen av disse for utviklingen av det moderne demokratiet"
+    },
+    {
+     "kode": "KM851",
+     "tekst": "reflektere over hvordan teknologiske omveltninger fra den industrielle revolusjonen til i dag har endret menneskers liv og formet forventninger til framtiden"
+    },
+    {
+     "kode": "KM852",
+     "tekst": "gjøre rede for årsaker til at mennesker har migrert, og diskutere kulturmøtene sett fra ulike perspektiver"
+    },
+    {
+     "kode": "KM853",
+     "tekst": "gjøre rede for årsaker til at kolonimakter underla seg landområder, og vurdere hvilke konsekvenser dette fikk"
+    },
+    {
+     "kode": "KM854",
+     "tekst": "beskrive bakgrunnen for verdenskrigene og et utvalg andre sentrale kriger eller konflikter på 1900-tallet og reflektere over om fredsslutningene bidro til å skape fred og forsoning"
+    },
+    {
+     "kode": "KM856",
+     "tekst": "utforske en persons handlingsrom og valgmuligheter i en konfliktsituasjon og vurdere konsekvenser av valgene personen har tatt"
+    },
+    {
+     "kode": "KM855",
+     "tekst": "reflektere over hvordan ideologier og tankesett på 1900-tallet og fram til i dag har bidratt til undertrykkelse, terror og folkemord som holocaust"
+    },
+    {
+     "kode": "KM857",
+     "tekst": "analysere hvordan framstillinger av fortiden har blitt brukt i Norge for å skape nasjonal identitet og drøfte hvilke virkninger dette har hatt for ulike grupper"
+    },
+    {
+     "kode": "KM858",
+     "tekst": "utforske hvordan mennesker har arbeidet for myndiggjøring og frigjøring i norsk og samisk historie, og gjøre rede for hvordan de samtidig har bidratt til utviklingen av demokratiet"
+    },
+    {
+     "kode": "KM859",
+     "tekst": "gjøre rede for velferdsutviklingen i Norge på 1900-tallet og drøfte konsekvenser for menneskers liv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene utvikler og viser kompetanse i historie på vg3 – påbygging til generell studiekompetanse når de bruker historiefaglige metoder og historiefaglig materiale for å finne svar, og når de forstår menneskers utfordringer og handlinger i historiske kontekster. De utvikler og viser også kompetanse når de formulerer faglige problemstillinger, og når de finner og kritisk bruker historisk materiale i refleksjon og argumentasjon til å konstruere historiefortellinger. Elevene utvikler og viser videre kompetanse når de presenterer ulike perspektiver på fortidige hendelser, og når de reflekterer over hvordan framstillinger av fortiden brukes og hvordan fortiden bidrar til å prege dem selv som mennesker.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på, og gjennom å la elevene få være nysgjerrige og aktivt kunnskapssøkende. Læreren og elevene skal være i dialog om elevenes utvikling i historie. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i historie."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i historie ved avslutningen av opplæringen etter vg3 – påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i historie basert på kompetansen eleven har vist når eleven har brukt kunnskaper og ferdigheter i kombinasjon."
+   ]
+  },
+  {
+   "kode": "KV87",
+   "tittel": "Kompetansemål og vurdering vg3 – påbygging til generell studiekompetanse for elever med samisk første- eller andrespråk eller kvensk eller finsk som andrespråk",
+   "fag": [
+    "HIS1Z12"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM861",
+     "tekst": "reflektere over hvordan fortiden former oss som mennesker, og hvordan våre fortolkninger av fortiden er preget av nåtidsforståelse og forventninger til framtiden"
+    },
+    {
+     "kode": "KM876",
+     "tekst": "drøfte i hvilken grad utviklingen i ulike perioder har vært preget av brudd eller kontinuitet, og vurdere hva som gjør en hendelse i fortiden betydningsfull"
+    },
+    {
+     "kode": "KM862",
+     "tekst": "reflektere over hvordan fortiden brukes i lokalmiljøet og av ulike aktører, og drøfte hensikten med denne historiebruken"
+    },
+    {
+     "kode": "KM863",
+     "tekst": "utforske fortiden ved å formulere problemstillinger, finne, vurdere og bruke ulikt materiale og presentere egne slutninger"
+    },
+    {
+     "kode": "KM864",
+     "tekst": "gjøre rede for viktige endringer i hvordan mennesker har skaffet seg mat og brukt naturressurser, og vurdere betydningen av dette for mennesker og et bærekraftig samfunn"
+    },
+    {
+     "kode": "KM865",
+     "tekst": "gjøre rede for hvordan handel og økonomiske systemer har påvirket maktforhold og menneskers liv"
+    },
+    {
+     "kode": "KM866",
+     "tekst": "beskrive samfunnsendringer fra antikken til tidlig nytid og vurdere betydningen for fordeling og legitimering av makt og menneskers muligheter til demokratisk deltakelse"
+    },
+    {
+     "kode": "KM867",
+     "tekst": "beskrive religionens plass i samfunnet fra middelalderen til vår tid, og vurdere hvilken betydning den har hatt for hvordan mennesker har oppfattet seg selv og andre"
+    },
+    {
+     "kode": "KM868",
+     "tekst": "gjøre rede for tanker og ideologier som har ligget til grunn for politiske omveltninger fra opplysningstiden til i dag og vurdere betydningen av disse for utviklingen av det moderne demokratiet"
+    },
+    {
+     "kode": "KM869",
+     "tekst": "reflektere over hvordan teknologiske omveltninger fra den industrielle revolusjonen til i dag har endret menneskers liv og formet forventninger til framtiden"
+    },
+    {
+     "kode": "KM870",
+     "tekst": "gjøre rede for årsaker til at mennesker har migrert, og diskutere kulturmøtene sett fra ulike perspektiver"
+    },
+    {
+     "kode": "KM871",
+     "tekst": "gjøre rede for årsaker til at kolonimakter underla seg landområder, og vurdere hvilke konsekvenser dette fikk"
+    },
+    {
+     "kode": "KM872",
+     "tekst": "beskrive bakgrunnen for verdenskrigene og et utvalg andre sentrale kriger eller konflikter på 1900-tallet og reflektere over om fredsslutningene bidro til å skape fred og forsoning"
+    },
+    {
+     "kode": "KM874",
+     "tekst": "utforske en persons handlingsrom og valgmuligheter i en konfliktsituasjon og vurdere konsekvenser av valgene personen har tatt"
+    },
+    {
+     "kode": "KM873",
+     "tekst": "reflektere over hvordan ideologier og tankesett på 1900-tallet og fram til i dag har bidratt til undertrykkelse, terror og folkemord som holocaust"
+    },
+    {
+     "kode": "KM875",
+     "tekst": "analysere hvordan framstillinger av fortiden har blitt brukt i Norge for å skape nasjonal identitet og drøfte hvilke virkninger dette har hatt for ulike grupper"
+    },
+    {
+     "kode": "KM877",
+     "tekst": "utforske hvordan mennesker har arbeidet for myndiggjøring og frigjøring i norsk og samisk historie, og gjøre rede for hvordan de samtidig har bidratt til utviklingen av demokratiet"
+    },
+    {
+     "kode": "KM911",
+     "tekst": "gjøre rede for velferdsutviklingen i Norge på 1900-tallet og drøfte konsekvenser for menneskers liv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene utvikler og viser kompetanse i historie på vg3 – påbygging til generell studiekompetanse når de bruker historiefaglige metoder og historiefaglig materiale for å finne svar, og når de forstår menneskers utfordringer og handlinger i historiske kontekster. De utvikler og viser også kompetanse når de formulerer faglige problemstillinger, og når de finner og kritisk bruker historisk materiale i refleksjon og argumentasjon til å konstruere historiefortellinger. Elevene utvikler og viser videre kompetanse når de presenterer ulike perspektiver på fortidige hendelser, og når de reflekterer over hvordan framstillinger av fortiden brukes og hvordan fortiden bidrar til å prege dem selv som mennesker.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom muntlige, skriftlige og praktiske måter å tilegne seg og vise kompetanse i faget på, og gjennom å la elevene få være nysgjerrige og aktivt kunnskapssøkende. Læreren og elevene skal være i dialog om elevenes utvikling i historie. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i historie."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i historie ved avslutningen av opplæringen etter vg3 – påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i historie basert på kompetansen eleven har vist når eleven har brukt kunnskaper og ferdigheter i kombinasjon."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Eleven skal ha én standpunktkarakter.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal ha én standpunktkarakter.",
+    "Vg3 påbygging til generell studiekompetanse for elever med samisk første- eller andrespråk eller kvensk eller finsk som andrespråk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Eleven kan trekkes ut til muntlig eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven kan trekkes ut til muntlig eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt.",
+    "Vg3 påbygging til generell studiekompetanse for elever med samisk første- eller andrespråk eller kvensk eller finsk som andrespråk: Eleven kan trekkes ut til muntlig eksamen med forberedelsesdel. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Vg3 påbygging til generell studiekompetanse for elever med samisk første- eller andrespråk eller kvensk eller finsk som andrespråk: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

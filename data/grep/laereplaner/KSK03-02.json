@@ -1,0 +1,144 @@
+{
+ "kode": "KSK03-02",
+ "tittel": "Læreplan i vg3 kjøttskjærerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV655",
+   "tittel": "Kompetansemål og vurdering vg3 kjøttskjærerfaget",
+   "fag": [
+    "KSK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8038",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere nedskjæring og videreforedling av ulike typer slakt ut fra produktspesifikasjoner og skjæremønstre"
+    },
+    {
+     "kode": "KM8053",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8051",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM8039",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM8047",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM8061",
+     "tekst": "kontrollere, slipe, vedlikeholde og bruke kniver og begrunne hvordan dette bidrar til egen helse"
+    },
+    {
+     "kode": "KM8060",
+     "tekst": "vise godt håndlag ved nedskjæring, utbeining, tilskjæring, sortering og videreforedling av slakt etter gjeldende skjæremønster"
+    },
+    {
+     "kode": "KM8052",
+     "tekst": "presentere og forklare gjeldende klassifiseringssystem"
+    },
+    {
+     "kode": "KM8055",
+     "tekst": "gjøre rede for slakteskrottens anatomi og gjenkjenne og beskrive ulike kjøttråvarer"
+    },
+    {
+     "kode": "KM8064",
+     "tekst": "gjøre rede for og standardisere sorteringer i tråd med virksomhetens spesifikasjoner og kundekrav"
+    },
+    {
+     "kode": "KM8058",
+     "tekst": "forklare kjøttets modnings- og mørningsprosesser"
+    },
+    {
+     "kode": "KM8044",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede for hvordan dette påvirker kvaliteten på produktene"
+    },
+    {
+     "kode": "KM8043",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8059",
+     "tekst": "identifisere og behandle avvik ved skjæring og reflektere over hvordan dette påvirker kvalitet og økonomi"
+    },
+    {
+     "kode": "KM8063",
+     "tekst": "reflektere over hvordan uønskede mikroorganismer kan påvirke kjøttprodukter, og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM8049",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM8048",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8056",
+     "tekst": "utføre kalkyleskjæring og forstå en driftsrapport"
+    },
+    {
+     "kode": "KM8062",
+     "tekst": "gjennomføre beregninger og enkle kalkulasjoner av nedskjæring og drøfte faktorer som påvirker virksomhetens økonomiske resultater og nøkkeltall"
+    },
+    {
+     "kode": "KM8057",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM8041",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig i samhandling med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8054",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM8046",
+     "tekst": "drøfte etiske dilemmaer ved produksjon og omsetning av kjøtt og kjøttprodukter og gjøre bevisste og bærekraftige valg"
+    },
+    {
+     "kode": "KM8050",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetenes har overfor virksomheten"
+    },
+    {
+     "kode": "KM8040",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM8042",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM8045",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 kjøttskjærerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 kjøttskjærerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 kjøttskjærerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

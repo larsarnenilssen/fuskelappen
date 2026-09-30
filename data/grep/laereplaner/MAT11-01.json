@@ -1,0 +1,122 @@
+{
+ "kode": "MAT11-01",
+ "tittel": "Læreplan i statistikk",
+ "spraak": "nno",
+ "fastsatt": "2026-09-11",
+ "gyldigFra": "2027-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1197",
+   "tittel": "Kompetansemål og vurdering i statistikk",
+   "fag": [
+    "MAT4Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15187",
+     "tekst": "systematisere data frå relevante kjelder for å berekne, tolke og grunngje formålstenlege sentralmål og spreiingsmål"
+    },
+    {
+     "kode": "KM15188",
+     "tekst": "utforske samanhengar i data ved hjelp av korrelasjon og lineær regresjon"
+    },
+    {
+     "kode": "KM15189",
+     "tekst": "lage, velje og tolke formålstenlege grafiske representasjonar av data og vurdere kva framstillingane viser og skjuler"
+    },
+    {
+     "kode": "KM15190",
+     "tekst": "vurdere datakjelder, utvalsmetodar, representativitet og feilkjelder og drøfte korleis dette påverkar statistiske konklusjonar"
+    },
+    {
+     "kode": "KM15201",
+     "tekst": "forklare omgrepa uvisse, tilfeldigheit og stokastiske variablar"
+    },
+    {
+     "kode": "KM15191",
+     "tekst": "utføre enkle stokastiske forsøk og bruke sannsyn til å beskrive og analysere utfalla"
+    },
+    {
+     "kode": "KM15192",
+     "tekst": "forklare og bruke omgrepa utfall, utfallsrom, snitt, union og komplement innanfor stokastiske forsøk"
+    },
+    {
+     "kode": "KM15193",
+     "tekst": "forklare kva ein sannsynsmodell er, og bruke diskrete og kontinuerlege sannsynsmodellar til å undersøkje og tolke statistiske problemstillingar"
+    },
+    {
+     "kode": "KM15194",
+     "tekst": "bruke den generelle addisjonssetninga for sannsyn og lova om totalt sannsyn i problemløysing"
+    },
+    {
+     "kode": "KM15195",
+     "tekst": "bruke og forklare venndiagram, berekning, tabellar og sannsynstre i sannsynsrekning og problemløysing"
+    },
+    {
+     "kode": "KM15203",
+     "tekst": "forklare føresetnadene for binomisk fordeling og bruke fordelinga i relevante situasjonar ved hjelp av digitale verktøy og sannsynstabellar"
+    },
+    {
+     "kode": "KM15196",
+     "tekst": "rekne ut og tolke forventningsverdi, varians og standardavvik for stokastiske variablar og bruke desse storleikane til å beskrive uvisse og variasjon"
+    },
+    {
+     "kode": "KM15197",
+     "tekst": "forklare samanhengen mellom gjennomsnitt og forventningsverdi, utvalsstandardavvik og standardavvik"
+    },
+    {
+     "kode": "KM15198",
+     "tekst": "kjenne til at sannsyn for kontinuerlege variablar er arealet under tettleiksfunksjonen, og bruke tabellar og digitale verktøy til å rekne ut areal"
+    },
+    {
+     "kode": "KM15199",
+     "tekst": "bruke normalfordeling og sentralgrensesetninga i problemløysing"
+    },
+    {
+     "kode": "KM15202",
+     "tekst": "rekne ut punktestimat og konfidensintervall og tolke resultata i kontekst"
+    },
+    {
+     "kode": "KM15200",
+     "tekst": "gjennomføre hypotesetesting i reelle datasett og tolke resultatet"
+    },
+    {
+     "kode": "KM15204",
+     "tekst": "planleggje, gjennomføre og presentere eit utforskande arbeid i statistikk med utgangspunkt i ei tydeleg problemstilling og reelle data"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i faget statistikk. Elevane viser og utviklar kompetanse i faget når dei bruker statistiske omgrep i kommunikasjon, og når dei finn, forstår og generaliserer statistiske samanhengar og formidlar desse. Elevane viser og utviklar òg kompetanse når dei jobbar utforskande og problemløysande med statistikk ved å utføre og presentere sitt eige arbeid i faget. Vidare viser og utviklar elevane kompetanse ved å forstå fagomgrep og ved å resonnere og argumentere for om statistiske utsegner er gyldige.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst ved at elevane får utforske og løyse problem knytte til statistikk gjennom å resonnere, argumentere og modellere. Læraren skal vere i dialog med elevane om utviklinga deira når det gjeld å løyse problem knytte til statistikk. Elevane skal få høve til å prøve og feile. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring slik at elevane kan bruke rettleiinga for å sjå samanhengar mellom statistikk og anvendingar."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i faget statistikk. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i faget statistikk basert på kompetansen eleven har vist, både skriftleg, munnleg og digitalt. I vurderinga skal det leggjast vekt på korleis eleven bruker statistiske uttrykksformer, fagomgrep og ulike strategiar og argumenterer for og kritisk vurderer sine eigne og andre sine løysingar og statistiske analysar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Statistikk: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Statistikk: Eleven kan bli trekt ut til skriftleg eksamen eller munnleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Skriftleg eksamen skal ikkje ha førebuingsdel. Munnleg eksamen blir utarbeidd og sensurert lokalt. Munnleg eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Statistikk: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt. Eksamen skal ikkje ha førebuingsdel."
+   ]
+  }
+ ]
+}

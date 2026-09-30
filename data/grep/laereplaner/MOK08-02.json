@@ -1,0 +1,81 @@
+{
+ "kode": "MOK08-02",
+ "tittel": "Læreplan i mediespesialisering",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV564",
+   "tittel": "Kompetansemål og vurdering mediespesialisering",
+   "fag": [
+    "MOK8Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6522",
+     "tekst": "utvikle selvstendige medieuttrykk gjennom utforsking og produksjon av egne medieprodukter"
+    },
+    {
+     "kode": "KM6523",
+     "tekst": "anvende ulike teknikker for idéutvikling og kreativitet, individuelt og i samarbeid med andre"
+    },
+    {
+     "kode": "KM6524",
+     "tekst": "utforske ny teknologi, nyere trender og tidsaktuelle sjangre for å reflektere over egen faglig utvikling"
+    },
+    {
+     "kode": "KM6525",
+     "tekst": "anvende og analysere dramaturgi og fortellerteknikker i egne og andres medieproduksjoner"
+    },
+    {
+     "kode": "KM6526",
+     "tekst": "bruke ulike kilder til inspirasjon, idéutvikling og ny kunnskap til problemløsing innen egen produksjon"
+    },
+    {
+     "kode": "KM6527",
+     "tekst": "produsere og tilpasse innhold etter spesifikasjoner og tilbakemeldinger fra oppdragsgiver og målgruppe"
+    },
+    {
+     "kode": "KM6528",
+     "tekst": "produsere og publisere i samsvar med gjeldende kvalitetskrav og i tråd med etiske normer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM6529",
+     "tekst": "beregne og begrunne de økonomiske rammene for egen medieproduksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i mediespesialisering. Elevene viser og utvikler kompetanse i faget ved å jobbe utforskende og kreativt når de lager medieprodukter. Elevene viser og utvikler også kompetanse i faget når de jobber problemløsende med kjente og ukjente utfordringer i medieproduksjoner. Elevene viser og utvikler kompetanse i faget gjennom å søke opp ny kunnskap og utvikle strategier for læring.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske faglige problemstillinger og arbeide kreativt i et eget valgt medieuttrykk. Læreren skal være i dialog med elevene om utviklingen deres i idé- og produksjonsprosessen fram til publisering, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle et selvstendig medieuttrykk og produsere og publisere etter gjeldende kvalitetskrav."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter mediespesialisering. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i mediespesialisering basert på kompetansen eleven har vist gjennom å utforske, reflektere og lage egne medieprodukter og gjennom evnen eleven har vist til problemløsing og å ta i bruk ny kunnskap."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Mediespesialisering: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Mediespesialisering: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Mediespesialisering: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

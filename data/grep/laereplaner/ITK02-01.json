@@ -1,0 +1,226 @@
+{
+ "kode": "ITK02-01",
+ "tittel": "Læreplan i vg2 informasjonsteknologi",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV372",
+   "tittel": "Kompetansemål og vurdering driftsstøtte",
+   "fag": [
+    "ITK2Z01"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3942",
+     "tekst": "utforske og beskrive komponenter i en driftsarkitektur"
+    },
+    {
+     "kode": "KM3920",
+     "tekst": "planlegge, implementere og drifte fysiske og virtuelle løsninger med segmenterte nettverk"
+    },
+    {
+     "kode": "KM3950",
+     "tekst": "gjøre rede for prinsipper og strukturer for skytjenester og virtuelle tjenester"
+    },
+    {
+     "kode": "KM3949",
+     "tekst": "administrere brukere, tilganger og rettigheter i relevante systemer"
+    },
+    {
+     "kode": "KM3948",
+     "tekst": "utforske og beskrive relevante nettverksprotokoller, nettverkstjenester og serverroller"
+    },
+    {
+     "kode": "KM3947",
+     "tekst": "planlegge og dokumentere arbeidsprosesser og IT-løsninger"
+    },
+    {
+     "kode": "KM3945",
+     "tekst": "utforske trusler mot datasikkerhet og gjøre rede for dagens trusselbilde og hvordan truslene kan påvirke en åpen samfunnsdebatt og tilliten til demokratiet"
+    },
+    {
+     "kode": "KM3944",
+     "tekst": "gjennomføre risikoanalyse av nettverk og tjenester i en virksomhets systemer og foreslå tiltak for å redusere risikoen"
+    },
+    {
+     "kode": "KM3946",
+     "tekst": "forenkle og automatisere arbeidsprosesser i utvikling av IT-løsninger"
+    },
+    {
+     "kode": "KM3943",
+     "tekst": "planlegge, drifte og implementere IT-løsninger som ivaretar informasjonssikkerhet og gjeldende regelverk for personvern"
+    },
+    {
+     "kode": "KM3940",
+     "tekst": "reflektere over og beskrive hvordan brudd på personvernet kan påvirke enkeltmennesker, virksomheter og samfunn"
+    },
+    {
+     "kode": "KM3941",
+     "tekst": "utforske dataindustriens miljøavtrykk og vurdere tiltak for å sikre bærekraftige valg i IT-løsninger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget driftsstøtte når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget driftsstøtte. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget driftsstøtte ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget driftsstøtte basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV373",
+   "tittel": "Kompetansemål og vurdering brukerstøtte",
+   "fag": [
+    "ITK2Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3938",
+     "tekst": "gjøre rede for og anvende etiske retningslinjer og relevant lovverk i eget arbeid"
+    },
+    {
+     "kode": "KM3939",
+     "tekst": "utøve brukerstøtte og veilede i relevant programvare"
+    },
+    {
+     "kode": "KM3937",
+     "tekst": "kartlegge behovet for og utvikle veiledninger for brukere og kunder"
+    },
+    {
+     "kode": "KM3951",
+     "tekst": "utvikle kursmateriell og gjennomføre kurs i relevante IT-systemer tilpasset en målgruppe"
+    },
+    {
+     "kode": "KM3936",
+     "tekst": "bruke og tilpasse kommunikasjonsform og fagterminologi i møte med brukere, kunder og fagmiljø"
+    },
+    {
+     "kode": "KM3934",
+     "tekst": "feilsøke og rette feil ved hjelp av feilsøkingsstrategier og relevante rammeverk"
+    },
+    {
+     "kode": "KM3932",
+     "tekst": "beskrive og bruke rammeverk for kvalitetssikring av IT-drift"
+    },
+    {
+     "kode": "KM3931",
+     "tekst": "beskrive og anvende ulike metoder for å håndtere krevende situasjoner i kontakt med brukere og kunder"
+    },
+    {
+     "kode": "KM3930",
+     "tekst": "reflektere over og gjøre rede for hvordan intelligente systemer påvirker bransjen og samfunnet"
+    },
+    {
+     "kode": "KM3933",
+     "tekst": "bruke og administrere samhandlingsverktøy som effektiviserer samarbeid og deling av informasjon"
+    },
+    {
+     "kode": "KM3929",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget brukerstøtte når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget brukerstøtte. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget brukerstøtte ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget brukerstøtte basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV374",
+   "tittel": "Kompetansemål og vurdering utvikling",
+   "fag": [
+    "ITK2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3928",
+     "tekst": "vurdere fordeler og ulemper ved ulike programmeringsspråk og velge og anvende relevante programmeringsspråk og algoritmer i eget arbeid"
+    },
+    {
+     "kode": "KM3927",
+     "tekst": "lage og begrunne funksjonelle krav til en IT-løsning basert på behovskartlegging"
+    },
+    {
+     "kode": "KM3924",
+     "tekst": "vurdere brukergrensesnitt til IT-tjenester og designe tjenester som er tilpasset brukernes behov"
+    },
+    {
+     "kode": "KM3926",
+     "tekst": "gjøre rede for hensikten med teknisk dokumentasjon og utarbeide teknisk dokumentasjon for IT-løsninger"
+    },
+    {
+     "kode": "KM3925",
+     "tekst": "beskrive og anvende relevante versjonskontrollsystemer i utviklingsprosjekter"
+    },
+    {
+     "kode": "KM3923",
+     "tekst": "designe og implementere IT-tjenester med innebygget personvern"
+    },
+    {
+     "kode": "KM3922",
+     "tekst": "analysere digitale trusler, verdier og sårbarheter og utvikle applikasjoner med innebygget sikkerhet"
+    },
+    {
+     "kode": "KM3921",
+     "tekst": "anvende relevant testmiljø og utføre testing tilpasset IT-løsningen som utvikles"
+    },
+    {
+     "kode": "KM3935",
+     "tekst": "modellere og opprette databaser for informasjonsflyt i systemer"
+    },
+    {
+     "kode": "KM3952",
+     "tekst": "beskrive ulike datalagringsmodeller og metoder for å hente ut og sette inn bestemte data fra databaser som brukes av andre systemer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget utvikling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget utvikling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget utvikling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget utvikling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Driftsstøtte: Eleven skal ha én standpunktkarakter.",
+    "Brukerstøtte: Eleven skal ha én standpunktkarakter.",
+    "Utvikling: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Driftsstøtte, brukerstøtte og utvikling: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Driftsstøtte: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Brukerstøtte: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Utvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Driftsstøtte, brukerstøtte og utvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "kode": "KDA05-02",
+ "tittel": "Læreplan i arkitektur og samfunn",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV531",
+   "tittel": "Kompetansemål og vurdering Arkitektur og samfunn",
+   "fag": [
+    "KDA5Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6200",
+     "tekst": "utforske nomadisk og tradisjonell byggjeskikk, og bruke element av desse i eige arbeid med arkitektur"
+    },
+    {
+     "kode": "KM6201",
+     "tekst": "beskrive konstruksjonsmessige, estetiske og berekraftige eigenskapar ved ulike materiale og reflektere over bruken av dei i eige praktisk arbeid"
+    },
+    {
+     "kode": "KM6202",
+     "tekst": "eksperimentere med og reflektere over korleis arkitektoniske verkemiddel påverkar korleis menneske opplever rom og stader"
+    },
+    {
+     "kode": "KM6203",
+     "tekst": "dokumentere eigne opplevingar og erfaringar på ein stad gjennom arbeid med analoge og digitale skisser, tekst og foto"
+    },
+    {
+     "kode": "KM6204",
+     "tekst": "kartleggje historiske og fysiske særtrekk ved ein plass og utvikle stadtilpassa prosjekt gjennom skissearbeid med modell og teikning i målestokk"
+    },
+    {
+     "kode": "KM6205",
+     "tekst": "gjere greie for ulike strategiar for by- og stadutvikling, og bruke idear frå dette i eige arbeid"
+    },
+    {
+     "kode": "KM6206",
+     "tekst": "reflektere over ressursbruk i byggjebransjen og foreslå tiltak for gjenbruk"
+    },
+    {
+     "kode": "KM6207",
+     "tekst": "diskutere sosiale, økologiske og økonomiske problemstillingar i by- og stadutvikling, og foreslå relevante løysingar"
+    },
+    {
+     "kode": "KM6208",
+     "tekst": "utforske korleis teknologi, klimaendringar og samfunnstrendar påverkar korleis vi byggjer, og utarbeide forslag til kva arkitektur kan vere i framtida"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i arkitektur og samfunn. Elevane viser og utviklar kompetanse i faget når dei utforskar, utviklar og visualiserer løysingar i arbeid med arkitektoniske verkemiddel som form, materialitet, farge og lys. Elevane viser og utviklar kompetanse når dei hentar inspirasjon frå historiske, kulturelle og samfunnsaktuelle kjelder og set søkjelys på berekraft i arkitektur. Vidare viser og utviklar elevane kompetanse når dei bruker fagspråk og dokumenterer, presenterer, vurderer og nyttar ulike teknikkar og materiale i sitt eige arbeid.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å leggje til rette for at elevane får arbeide på ulike måtar. Læraren skal òg leggje til rette for at elevane bruker samfunnskritiske, økologiske og estetiske perspektiv når dei reflekterer over by- og stadutvikling. Læraren skal vere i dialog med elevane om utviklinga deira i arkitektur og samfunn, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse i arkitektur og samfunn."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa i arkitektur og samfunn. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer utføring, forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i arkitektur og samfunn basert på kompetansen eleven har vist gjennom eit breitt utval av praktiske og munnlege aktivitetar. Dette inkluderer munnlege og skriftlege presentasjonar og visuell formidling av eigne arbeid ved hjelp av analogt og digitalt modell- og teiknearbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Arkitektur og samfunn: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Arkitektur og samfunn: Eleven kan trekkjast ut til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Arkitektur og samfunn: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

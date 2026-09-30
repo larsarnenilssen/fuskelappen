@@ -1,0 +1,132 @@
+{
+ "kode": "VOV03-02",
+ "tittel": "Læreplan i vg3 veidrifts- og veivedlikeholdsfaget",
+ "spraak": "nob",
+ "fastsatt": "2025-02-04",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV949",
+   "tittel": "Kompetansemål og vurdering vg3 veidrifts- og veivedlikeholdsfaget",
+   "fag": [
+    "VOV3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12407",
+     "tekst": "planlegge drift og vedlikehold av veier og annen infrastruktur, arbeide etter tegninger, drifts- og vedlikeholdskontrakter, preaksepterte løsninger og gitte prosesser, velge verktøy og materialer og vurdere kostnader, tidsbruk og miljøbelastning ved arbeidet"
+    },
+    {
+     "kode": "KM12425",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM12424",
+     "tekst": "stille inn maskiner og utstyr og beregne blandingsforhold i væsker og kjemikalier."
+    },
+    {
+     "kode": "KM12406",
+     "tekst": "velge, bruke og vedlikeholde maskiner, verktøy og materialer etter gjeldende regelverk og med hensyn til kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM12414",
+     "tekst": "gjøre rede for og bruke rapporterings- og kvalitetssikringssystemer, gjennomføre arbeid i tråd med gjeldende krav for helse, miljø og sikkerhet og toleransekrav og reflektere over konsekvenser av å ikke følge kravene"
+    },
+    {
+     "kode": "KM12415",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM12416",
+     "tekst": "kildesortere, vurdere muligheten for gjenbruk, håndtere spesialavfall, uønskede planter og organismer, og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM12409",
+     "tekst": "inspisere veinettet, iverksette tiltak tilpasset årstidene, loggføre funn og vurdere ulike faktorer som kan utløse ras og flom"
+    },
+    {
+     "kode": "KM12418",
+     "tekst": "drifte og vedlikeholde kulverter, tunneler, bruer, rekkverk og andre konstruksjoner og drøfte ulike skader som kan oppstå i konstruksjonene"
+    },
+    {
+     "kode": "KM12408",
+     "tekst": "merke veier og drøfte tiltak som sikrer midlertidig og permanent kjøremønster"
+    },
+    {
+     "kode": "KM12410",
+     "tekst": "vurdere hvordan temperatur og fuktighet påvirker veidekke, sette i verk tiltak for å sikre friksjon på veien og vurdere konsekvenser av salting"
+    },
+    {
+     "kode": "KM12411",
+     "tekst": "montere, drifte og vedlikeholde veirekkverk i ulike materialer og vurdere hvordan materialvalg påvirker trafikksikkerheten og kvaliteten og styrken på rekkverket"
+    },
+    {
+     "kode": "KM12412",
+     "tekst": "utføre arbeidsvarsling i henhold til gjeldende regelverk og vurdere hvilke risikofaktorer som kan påvirke trafikkavviklingen og egen sikkerhet"
+    },
+    {
+     "kode": "KM12413",
+     "tekst": "drifte, vedlikeholde og fornye veidekker og gjøre rede for faktorer som påvirker trafikksikkerheten"
+    },
+    {
+     "kode": "KM12419",
+     "tekst": "drifte og vedlikeholde grøntområder, sikre siktsonen i kryss og reflektere over forholdet mellom estetikk og trafikksikkerhet"
+    },
+    {
+     "kode": "KM12417",
+     "tekst": "drifte og vedlikeholde grøfter, stikkrenner, kummer og sandfang og iverksette tiltak som reduserer skader i veikroppen og hindrer vannplaning og grusansamlinger"
+    },
+    {
+     "kode": "KM12422",
+     "tekst": "kommunisere med veieiere, kunder, kolleger og andre yrkesutøvere og gjennomføre tiltak som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse i arbeidsoppdraget"
+    },
+    {
+     "kode": "KM12420",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM12421",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy, vibrasjoner og støveksponering"
+    },
+    {
+     "kode": "KM12423",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM12426",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM12430",
+     "tekst": "Vurdere underlaget før behandling og påføre linjer, tekst og symboler på ulike underlag"
+    },
+    {
+     "kode": "KM12431",
+     "tekst": "Planlegge produksjon, utlegging og vedlikehold av formerking og veimerking og arbeide etter leggelister, bestillinger og beskrivelser"
+    },
+    {
+     "kode": "KM12432",
+     "tekst": "Produsere og vedlikeholde ulike typer veimerking og vurdere faktorer som kan redusere kvaliteten på materialet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 veidrifts- og veivedlikeholdsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 veidrifts- og veivedlikeholdsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 veidrifts- og veivedlikeholdsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

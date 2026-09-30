@@ -1,0 +1,113 @@
+{
+ "kode": "LOG03-02",
+ "tittel": "Læreplan i vg3 logistikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV715",
+   "tittel": "Kompetansemål og vurdering vg3 logistikkfaget",
+   "fag": [
+    "LOG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9328",
+     "tekst": "planlegge, gjennomføre og dokumentere logistikkfaglige arbeidsoppgaver slik at materialer, varer, gods eller passasjerer håndteres i henhold til sin egenart og bedriftens krav til kvalitet, helse, miljø og sikkerhet og etiske retningslinjer"
+    },
+    {
+     "kode": "KM9317",
+     "tekst": "planlegge og utføre transport med sikker, effektiv og miljøvennlig bruk av tekniske hjelpe- og transportmidler"
+    },
+    {
+     "kode": "KM9316",
+     "tekst": "behandle ordrer i henhold til bedriftens rutiner"
+    },
+    {
+     "kode": "KM9325",
+     "tekst": "bruke bedriftens digitale og elektroniske ressurser i kommunikasjon i og dokumentasjon av de ulike arbeidsprosessene i verdikjeden"
+    },
+    {
+     "kode": "KM9324",
+     "tekst": "klargjøre og håndtere gods i samsvar med bedriftens krav til kvalitet og lønnsomhet"
+    },
+    {
+     "kode": "KM9326",
+     "tekst": "velge emballasje og lastbærer for den enkelte vare- og godstypen og emballere for lagring og transport"
+    },
+    {
+     "kode": "KM9310",
+     "tekst": "klassifisere gods for transport i samsvar med sendingens innhold"
+    },
+    {
+     "kode": "KM9323",
+     "tekst": "følge nasjonalt og internasjonalt regelverk og tilhørende krav til dokumentasjon for å håndtere og forflytte gods eller passasjerer"
+    },
+    {
+     "kode": "KM9322",
+     "tekst": "velge, bruke, kontrollere og vedlikeholde tekniske hjelpemidler og reflektere over konsekvensene av manglende vedlikehold"
+    },
+    {
+     "kode": "KM9327",
+     "tekst": "velge og bruke sikringsutstyr til ulike logistikkoperasjoner og reflektere over konsekvensene av ulike valg"
+    },
+    {
+     "kode": "KM9320",
+     "tekst": "yte service og gi kundebehandling overfor kolleger, eksterne aktører og kunder i tråd med bedriftens mål"
+    },
+    {
+     "kode": "KM9321",
+     "tekst": "reflektere over sammenhengene mellom bedriftens logistikkfunksjoner, verdikjede, lønnsomhet og effektiv drift for å identifisere mulige forbedringstiltak i bedriften"
+    },
+    {
+     "kode": "KM9315",
+     "tekst": "reflektere over og vurdere eget arbeid og foreslå mulige forbedringstiltak"
+    },
+    {
+     "kode": "KM9313",
+     "tekst": "beregne framføringstider og bestille transport i samsvar med kundens krav til levering"
+    },
+    {
+     "kode": "KM9314",
+     "tekst": "beregne og vurdere muligheter og begrensinger ved bruk av ulike transportmidler og transportløsninger ut fra antall personer eller varenes eller godsets vekt, mål og egenart"
+    },
+    {
+     "kode": "KM9312",
+     "tekst": "utføre arbeidsoppgaver på en helsemessig forsvarlig og ergonomisk riktig måte innenfor gjeldende regelverk og standarder og drøfte konsekvenser av lite søvn og dårlig kosthold og verdien av gode arbeidsrutiner"
+    },
+    {
+     "kode": "KM9319",
+     "tekst": "håndtere avfall i tråd med bedriftsinterne krav og reflektere over miljømessige konsekvenser av avfallshåndteringen"
+    },
+    {
+     "kode": "KM9311",
+     "tekst": "følge bedriftens interne beredskapsplan og utføre førstehjelp på et skadested"
+    },
+    {
+     "kode": "KM9318",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 logistikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 logistikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 logistikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på to til tre virkedager.",
+    "For å kunne meldes opp til fagprøven, skal kandidatene ha dokumentert sikkerhetsopplæring for truck klasse T1 og bestått sertifisert sikkerhetsopplæring for truck klasse T2 og T4"
+   ]
+  }
+ ]
+}

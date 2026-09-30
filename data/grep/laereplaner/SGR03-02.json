@@ -1,0 +1,96 @@
+{
+ "kode": "SGR03-02",
+ "tittel": "Læreplan i vg3 serigrafifaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV709",
+   "tittel": "Kompetansemål og vurdering vg3 serigrafifaget",
+   "fag": [
+    "SGR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9200",
+     "tekst": "kommunisere og samarbeide med oppdragsgivere, konkretisere oppdragets innhold, og dokumentere dette for produksjon"
+    },
+    {
+     "kode": "KM9201",
+     "tekst": "planlegge produksjon ut fra materialegenskaper, avgjøre riktig fargetype og dukvalg, og bestille trykkeunderlag"
+    },
+    {
+     "kode": "KM9202",
+     "tekst": "kontrollere trykkunderlag i henhold til en ordre"
+    },
+    {
+     "kode": "KM9203",
+     "tekst": "velge trykkduk og utføre kvalitetskontroll av trykkduk"
+    },
+    {
+     "kode": "KM9204",
+     "tekst": "framstille trykkform i henhold til beskrivelse"
+    },
+    {
+     "kode": "KM9205",
+     "tekst": "klargjøre trykkmaskin og utstyr for trykking"
+    },
+    {
+     "kode": "KM9206",
+     "tekst": "gjennomføre trykkprosess i henhold til beskrivelse og kvalitetskrav"
+    },
+    {
+     "kode": "KM9207",
+     "tekst": "avslutte trykkeprosess, rengjøre og klargjøre utstyr"
+    },
+    {
+     "kode": "KM9208",
+     "tekst": "håndtere spesialavfall og annet avfall i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM9209",
+     "tekst": "legge til rette for videre bearbeiding og ferdiggjøring av det trykte produktet"
+    },
+    {
+     "kode": "KM9213",
+     "tekst": "utføre renhold og forebyggende vedlikehold av produksjonsutstyr"
+    },
+    {
+     "kode": "KM9210",
+     "tekst": "begrunne valg av og bruke personlig verneutstyr for å beskytte seg mot skadelige stoffer og situasjoner"
+    },
+    {
+     "kode": "KM9211",
+     "tekst": "vurdere og ta hensyn til miljøavtrykket i ulike ledd av produksjonen."
+    },
+    {
+     "kode": "KM9214",
+     "tekst": "beskrive serigrafifaget og dets kvaliteter"
+    },
+    {
+     "kode": "KM9212",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 serigrafifaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 serigrafifaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 serigrafifaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "kode": "PRT03-02",
+ "tittel": "Læreplan i vg3 produksjonsteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV708",
+   "tittel": "Kompetansemål og vurdering vg3 produksjonsteknikkfaget",
+   "fag": [
+    "PRT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9187",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver ut fra produksjonsordrer, kvalitetskrav og gjeldende retningslinjer"
+    },
+    {
+     "kode": "KM9186",
+     "tekst": "gjennomføre en risikoanalyse, reflektere over resultatet, registrere avvik og foreslå tiltak"
+    },
+    {
+     "kode": "KM9188",
+     "tekst": "utarbeide og bruke en produksjonsplan ut fra en produksjonsordre"
+    },
+    {
+     "kode": "KM9189",
+     "tekst": "gjennomføre oppstarts- og nedstengingsprosedyrer på produksjonsmaskiner og -utstyr og stille inn produksjonsparametre"
+    },
+    {
+     "kode": "KM9190",
+     "tekst": "sette i drift og optimalisere produksjonsprosessen ut fra hensynet til effektivitet og bærekraftig ressursutnyttelse"
+    },
+    {
+     "kode": "KM9191",
+     "tekst": "vurdere produksjon og omstilling knyttet til forbedring, lønnsomhet og miljø"
+    },
+    {
+     "kode": "KM9192",
+     "tekst": "behandle biprodukter i tråd med bedriftens system for kildesortering og avfallshåndtering"
+    },
+    {
+     "kode": "KM9193",
+     "tekst": "registrere produksjonsdata i bedriftens produksjonsstyringssystem"
+    },
+    {
+     "kode": "KM9194",
+     "tekst": "tolke og bruke bedriftens kvalitetsstyringssystem og gjennomføre kvalitetstester og kvalitetskontroller"
+    },
+    {
+     "kode": "KM9195",
+     "tekst": "gjøre rede for bedriftens organisering og etiske retningslinjer og utføre arbeid i tråd med bedriftens helse-, miljø- og sikkerhetsregler"
+    },
+    {
+     "kode": "KM9196",
+     "tekst": "gjennomføre forebyggende vedlikehold, inspeksjoner og feilsøking etter instruks, og rapportere feil og avvik"
+    },
+    {
+     "kode": "KM9197",
+     "tekst": "gjennomføre og dokumentere periodisk vedlikehold etter leverandørens spesifikasjoner og interne prosedyrer"
+    },
+    {
+     "kode": "KM9198",
+     "tekst": "reflektere over hvordan bedriftens valg knyttet til produksjonsprosessen kan påvirke bærekraften til bedriften og samfunnet"
+    },
+    {
+     "kode": "KM9199",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 produksjonsteknikkfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 produksjonsteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 produksjonsteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

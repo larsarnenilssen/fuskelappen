@@ -1,0 +1,128 @@
+{
+ "kode": "ORG03-02",
+ "tittel": "Læreplan i vg3 orgelbyggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV638",
+   "tittel": "Kompetansemål og vurdering vg3 orgelbyggerfaget",
+   "fag": [
+    "ORG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7658",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7678",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7677",
+     "tekst": "lage skisser for hånd og utarbeide arbeidstegninger av orgeldeler digitalt og bruke disse i eget arbeid"
+    },
+    {
+     "kode": "KM7675",
+     "tekst": "lage enkle prinsippskisser av et orgels tekniske oppbygging og reflektere over valg av ulike løsninger"
+    },
+    {
+     "kode": "KM7676",
+     "tekst": "vurdere og velge materialer og sammenføyingsteknikker ut fra ønsket form og funksjon og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM7673",
+     "tekst": "gjøre rede for bruksområder til aktuelle tresorter og metaller som brukes i orgelbygging, og gjøre rede for hvordan ulike valg påvirker en bærekraftig produksjon og miljøavtrykk"
+    },
+    {
+     "kode": "KM7672",
+     "tekst": "lage sink-, grad- og tappforbindelser i heltre for hånd og med maskin"
+    },
+    {
+     "kode": "KM7671",
+     "tekst": "lage trepiper, belger og deler til mekanikk og orgelhus ut fra ønsket form og funksjon"
+    },
+    {
+     "kode": "KM7670",
+     "tekst": "lage delene til en vindlade og utføre restaurering av vindlader"
+    },
+    {
+     "kode": "KM7679",
+     "tekst": "utføre grunnleggende sveise og loddeteknikker"
+    },
+    {
+     "kode": "KM7669",
+     "tekst": "lage en metallpipe og delta i produksjon og restaurering av metallpiper"
+    },
+    {
+     "kode": "KM7667",
+     "tekst": "vurdere, velge og bruke egnet lim og metode til ulike materialer, til både nybygging og restaurering og gjøre rede for hvordan ulike valg påvirker kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7666",
+     "tekst": "overflatebehandle orgeldeler med tradisjonelle og moderne metoder i samsvar med bruksområder, bevarings- og miljøhensyn"
+    },
+    {
+     "kode": "KM7665",
+     "tekst": "delta i å montere orgler og utføre arbeidet uten fare for skader og ulykker på personer, materiell eller ytre miljø og i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7674",
+     "tekst": "anvende og vedlikeholde håndverktøy, maskiner og utstyr og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet på verkstedet"
+    },
+    {
+     "kode": "KM7664",
+     "tekst": "beskrive hovedtrekk ved orgelets tekniske, klanglige og arkitektoniske utvikling fra middelalderen og fram til i dag, og bruke denne kunnskapen til å delta i diskusjoner om orgelprosjekter"
+    },
+    {
+     "kode": "KM7662",
+     "tekst": "gjøre rede for funksjonen til mekaniske, pneumatiske, elektriske og digitale systemer i orgler og utføre grunnleggende feilsøking og vedlikehold"
+    },
+    {
+     "kode": "KM7661",
+     "tekst": "gjøre rede for grunnlaget for akustikk og mensurering av orgelpiper og reflektere over hvordan det påvirker klangen i orgelpiper"
+    },
+    {
+     "kode": "KM7660",
+     "tekst": "gjøre rede for musikkteori og musikkhistorie som er relevant i faget, og bruke denne kunnskapen i eget arbeid og komponere en orgeldisposisjon"
+    },
+    {
+     "kode": "KM7659",
+     "tekst": "gjøre rede for intonasjonsmetoder av orgelpiper, delta i intonasjon av orgler og rette på intonasjonsfeil"
+    },
+    {
+     "kode": "KM7668",
+     "tekst": "temperere og stemme et orgelregister på gehør"
+    },
+    {
+     "kode": "KM7663",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7680",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 orgelbyggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 orgelbyggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 orgelbyggerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 27–30 virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "kode": "TSK03-02",
+ "tittel": "Læreplan i vg3 treskjerarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV633",
+   "tittel": "Kompetansemål og vurdering vg3 treskjerarfaget",
+   "fag": [
+    "TSK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7549",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM7571",
+     "tekst": "utforske, beskrive, planleggje og skjere ut ornamentikk i ulike stilartar som dyreornamentikk, drakestil, romansk-, gotisk- , renessanse-, barokk-, rokokko-, og jugendstil"
+    },
+    {
+     "kode": "KM7569",
+     "tekst": "utforske, planleggje og utføre tredimensjonal modellering i harde, mjuke og plastiske materialar"
+    },
+    {
+     "kode": "KM7568",
+     "tekst": "utforske og bruke design, kulturuttrykk, stilhistorie og lokale tradisjonar i faget som inspirasjon til eigen produktutvikling"
+    },
+    {
+     "kode": "KM7566",
+     "tekst": "frihandsteikne to- og tredimensjonale uttrykk i ulike stilartar og frie, eigenkomponerte uttrykk"
+    },
+    {
+     "kode": "KM7565",
+     "tekst": "lese og utarbeide skisser, arbeidsteikningar og tekniske teikningar, og utføre arbeid i samsvar med dei"
+    },
+    {
+     "kode": "KM7564",
+     "tekst": "utforske og bruke visuelle verkemiddel i teikne- og designprosessen og gjere greie for korleis ulike val påverkar uttrykk, form og funksjon"
+    },
+    {
+     "kode": "KM7573",
+     "tekst": "handskjere produkt i tre med tydeleg linjeføring, flyt, spenst, balanse og reinleik"
+    },
+    {
+     "kode": "KM7570",
+     "tekst": "planleggje og skjere i relieff med botnskjering og ornamentikk med gjennombroten skurd og bakskjering"
+    },
+    {
+     "kode": "KM7567",
+     "tekst": "reparere og restaurere ornamentale og skulpturale gjenstandar"
+    },
+    {
+     "kode": "KM7563",
+     "tekst": "kjenne igjen, vurdere og velje ulike treslag og emne ut frå eigenskapar dei har, og nytte dette til ulike produkt på ein berekraftig måte"
+    },
+    {
+     "kode": "KM7562",
+     "tekst": "utforske og nytte ulike metodar for lagring og tørking av trevirke og metodar for å måle fuktinnhald"
+    },
+    {
+     "kode": "KM7572",
+     "tekst": "utforske og nytte ulike teknikkar for overflatebehandling og gjere greie for og ta omsyn til helse- og miljøfarane ved dei ulike kjemikaliane som blir nytta"
+    },
+    {
+     "kode": "KM7561",
+     "tekst": "velje ulike metodar for å lime og føye saman treverk"
+    },
+    {
+     "kode": "KM7559",
+     "tekst": "slipe, bryne og polere eggverktøy og utforske ulike variantar av dette"
+    },
+    {
+     "kode": "KM7558",
+     "tekst": "utforske og nytte ulike teknikkar for manuell og maskinell tilarbeiding av tre, stille inn, halde ved like og nytte ulike maskiner, handverktøy og anna utstyr"
+    },
+    {
+     "kode": "KM7557",
+     "tekst": "berekne tid og pris på eigne produkt og tenester og vurdere samanhengen mellom materialval, produktivitet og lønnsemd"
+    },
+    {
+     "kode": "KM7556",
+     "tekst": "velje og bruke digitale ressursar i delar av eller gjennom heile arbeidsprosessen"
+    },
+    {
+     "kode": "KM7555",
+     "tekst": "bruke fagspråk i samhandling med kundar, fagmiljøet og andre samarbeidspartnarar, gjennom samtale og presentasjonar med og utan digitale hjelpemiddel"
+    },
+    {
+     "kode": "KM7554",
+     "tekst": "presentere og marknadsføre eigne produkt og produkt ut frå bestillingar, og gjere greie for korleis ulike val kan påverke sluttproduktet"
+    },
+    {
+     "kode": "KM7552",
+     "tekst": "analysere og tolke ulike oppdrag og gjere fagleg estetiske, miljøvennlege og berekraftige val, i tråd med ønska og behova til kunden"
+    },
+    {
+     "kode": "KM7553",
+     "tekst": "finne og vurdere informasjon for å analysere faglege spørsmål og problemstillingar og bruke kjeldene på ein måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7551",
+     "tekst": "vurdere miljøeffektar for bruk og val av materialar og gjere greie for korleis ein kjeldesorterer og handterer avfall etter gjeldande regelverk"
+    },
+    {
+     "kode": "KM7550",
+     "tekst": "velje formålstenlege ergonomiske arbeidsstillingar og følgje gjeldande regelverk for helse, miljø og sikkerheit i alt arbeid"
+    },
+    {
+     "kode": "KM7560",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 treskjerarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 treskjerarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 treskjerarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst 18 dagar."
+   ]
+  }
+ ]
+}

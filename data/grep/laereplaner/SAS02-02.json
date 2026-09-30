@@ -1,0 +1,307 @@
+{
+ "kode": "SAS02-02",
+ "tittel": "Oahppoplána – sámegiella nubbingiellan, sámegiella 2",
+ "spraak": "sme",
+ "fastsatt": "2026-06-30",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1161",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo2 fidnofágalaš oahppoprográmmat",
+   "fag": [
+    "SAS2Z24",
+    "SAS2Z25"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM14824",
+     "tekst": "geavahit iešguđetlágán sániid ja dajaldagaid mat gullet bargoeallimii ja sámi ealáhusaide"
+    },
+    {
+     "kode": "KM14825",
+     "tekst": "searvat ságastallamiidda ja heivehit giela ulbmilii ja dillái"
+    },
+    {
+     "kode": "KM14826",
+     "tekst": "ákkastallat iežas oaiviliid beali"
+    },
+    {
+     "kode": "KM14827",
+     "tekst": "presenteret fágalaš fáttáid"
+    },
+    {
+     "kode": "KM14832",
+     "tekst": "guldalit ja lohkat sámi čáppagirjjálašvuođa ja ságastallat dan birra"
+    },
+    {
+     "kode": "KM14828",
+     "tekst": "lohkat, suokkardit ja čállit áššeteavsttaid"
+    },
+    {
+     "kode": "KM14829",
+     "tekst": "plánet ja hábmet iešguđetlágan teavsttaid mat leat heivehuvvon sisdollui, ulbmilii ja vuostáiváldái"
+    },
+    {
+     "kode": "KM14830",
+     "tekst": "guldalit eará sámegielaid ja buohtastahttit iežas gielain"
+    },
+    {
+     "kode": "KM14831",
+     "tekst": "geavahit riektačállima, sátnesojaheami ja cealkkastruktuvrra ja teakstastruktuvrra njuolggadusaid"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde oahpu ja gelbbolašvuođa ovddideamen fágas. Oahppit čájehit ja ovddidit gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, jo2 fidnofágalaš oahppoprográmmain go fágalaš gulahallandilálašvuođain ráhkadit iešguđetlágan njálmmálaš ja čálalaš teavsttaid.\nOahpaheaddji galgá diktit ohppiid váikkuhit oahpahusa, ja oahppanhálu arvvosmahttit máŋggabealálaš bargovugiiguin gos oahppit besset bargat praktihkalaš bargguiguin, suokkardit ja leat kreatiivvalaččat. Oahpaheaddji ja oahppit galget gulahallat ohppiid ovdáneami birra sámegielas nubbingiellan, sámegiella 2. Oahppit galget beassat geahččaladdat. Gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat muitalit maid orrot máhttimin ja reflekteret iežaset fágalaš ovdáneami hárrái. Oahpaheaddji galgá oaivadit viidásit oahppama birra ja heivehit oahpahusa nu ahte oahppit besset rávvagiid geavahit iežaset njálmmálaš ja čálalaš giellamáhtu ovddideapmái oahpes ja ođđa gulahallandilálašvuođain."
+   ],
+   "standpunkt": [
+    "Oppalašárvosátni galgá čájehit oahppi ollislaš gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, go oahpahus loahpahuvvo maŋŋel jo2 fidnofágalaš oahppoprográmmaid. Oahpaheaddji galgá plánet ja láhčit dili nu ahte oahppit besset máŋgga láhkai, iešguđetge oktavuođain čájehit iežaset gelbbolašvuođa mas ipmárdus, reflekšuvdna ja kritihkalaš jurddašeapmi leat oassin. Oahpaheaddji galgá bidjat ovtta árvosáni sámegielas nubbingiellan, sámegiella 2, njálmmálaš ja čálalaš gelbbolašvuođa vuođul maid oahppi lea fágas čájehan."
+   ]
+  },
+  {
+   "kode": "KV1162",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo1 studerenráhkkanahtti oahppoprográmmat",
+   "fag": [
+    "SAS2Z21"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM14833",
+     "tekst": "geavahit iešguđetlágan sániid ja dajaldagaid mat gullet bargoeallimii ja sámi ealáhusaide"
+    },
+    {
+     "kode": "KM14834",
+     "tekst": "searvat ságastallamiidda ja heivehit giela ulbmilii ja dillái"
+    },
+    {
+     "kode": "KM14835",
+     "tekst": "ákkastallat iežas oaiviliid beali"
+    },
+    {
+     "kode": "KM14836",
+     "tekst": "presenteret fágalaš fáttáid"
+    },
+    {
+     "kode": "KM14838",
+     "tekst": "guldalit ja lohkat sámi čáppagirjjálašvuođa ja ságastallat dan birra"
+    },
+    {
+     "kode": "KM14837",
+     "tekst": "lohkat, suokkardit ja čállit áššeteavsttaid"
+    },
+    {
+     "kode": "KM14841",
+     "tekst": "plánet ja hábmet iešguđetlágan teavsttaid mat leat heivehuvvon sisdollui, ulbmilii ja vuostáiváldái"
+    },
+    {
+     "kode": "KM14839",
+     "tekst": "guldalit eará sámegielaid ja buohtastahttit iežas gielain"
+    },
+    {
+     "kode": "KM14840",
+     "tekst": "geavahit riektačállima, sátnesojaheami ja cealkkastruktuvrra ja teakstastruktuvrra njuolggadusaid"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde oahpu ja gelbbolašvuođa ovddideamen fágas. Oahppit čájehit ja ovddidit gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, jo1 studerenráhkkanahtti oahppoprográmmain go fágalaš gulahallandilálašvuođain ráhkadit iešguđetlágan njálmmálaš ja čálalaš teavsttaid.\nOahpaheaddji galgá diktit ohppiid váikkuhit oahpahusa, ja oahppanhálu arvvosmahttit máŋggabealálaš bargovugiiguin gos oahppit besset bargat praktihkalaš bargguiguin, suokkardit ja leat kreatiivvalaččat. Oahpaheaddji ja oahppit galget gulahallat ohppiid ovdáneami birra sámegielas nubbingiellan, sámegiella 2. Oahppit galget beassat geahččaladdat. Gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat muitalit maid orrot máhttimin ja reflekteret iežaset fágalaš ovdáneami hárrái. Oahpaheaddji galgá oaivadit viidásit oahppama birra ja heivehit oahpahusa nu ahte oahppit besset oahpes ja ođđa gulahallandilálašvuođain rávvagiid geavahit iešguđetlágan njálmmálaš ja čálalaš teavsttaid ovddideamis."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1163",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo2 studerenráhkkanahtti oahppoprográmmat",
+   "fag": [
+    "SAS2Z22"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM14842",
+     "tekst": "geavahit iešguđetlágán sániid ja dajaldagaid mat gullet sámi kultuvrii ja árbevirrui"
+    },
+    {
+     "kode": "KM14843",
+     "tekst": "searvat ságastallamii ja ságastallama doalvut viidásabbot relevánta oaiviliiguin"
+    },
+    {
+     "kode": "KM14844",
+     "tekst": "ákkastallat iežas oaiviliid beali earáid oaiviliid deaivamis"
+    },
+    {
+     "kode": "KM14845",
+     "tekst": "vuohkkasit presenteret fágalaš fáttáid"
+    },
+    {
+     "kode": "KM14846",
+     "tekst": "guldalit ja lohkat teavsttaid ja reflekteret daid hárrái"
+    },
+    {
+     "kode": "KM14847",
+     "tekst": "čállit teavsttaid mat muitalit, buktet dieđuid ja ákkastallet"
+    },
+    {
+     "kode": "KM14848",
+     "tekst": "suokkardit teavsttaid eará sámegielain ja ságastallat daid birra"
+    },
+    {
+     "kode": "KM14849",
+     "tekst": "geavahit máhtu riektačállima, sátnesojaheami, cealkkastruktuvrra ja teakstastruktuvrra birra barggus iežas njálmmálaš ja čálalaš teavsttaiguin"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde oahpu ja gelbbolašvuođa ovddideamen fágas. Oahppit čájehit ja ovddidit gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, jo2 studerenráhkkanahtti oahppoprográmmain go ságastallet ja digaštallet, reflekterejit teavsttaid hárrái ja ráhkadit iešguđetlágan njálmmálaš ja čálalaš teavsttaid.\nOahpaheaddji galgá diktit ohppiid váikkuhit oahpahusa, ja oahppanhálu arvvosmahttit máŋggabealálaš bargovugiiguin gos oahppit besset bargat praktihkalaš bargguiguin ja leat kreatiivvalaččat, suokkardit ja leat čeahpit áicat. Oahpaheaddji ja oahppit galget gulahallat ohppiid ovdáneami birra sámegielas nubbingiellan, sámegiella 2. Oahppit galget beassat geahččaladdat. Gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat muitalit maid orrot máhttimin ja reflekteret iežaset fágalaš ovdáneami hárrái. Oahpaheaddji galgá oaivadit viidásit oahppama birra ja heivehit oahpahusa nu ahte oahppit besset oahpes ja ođđa gulahallandilálašvuođain rávvagiid geavahit iešguđetlágan njálmmálaš ja čálalaš teavsttaiguin bargat ja daid ovddidit viidásit."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1164",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo3 studerenráhkkanahtti oahppoprográmmat",
+   "fag": [
+    "SAS2Z23"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM14850",
+     "tekst": "geavahit iešguđetlágán sániid ja dajaldagaid servodaga ja fágalaš fáttáid birra"
+    },
+    {
+     "kode": "KM14851",
+     "tekst": "searvat ságastallamii ja digaštallamiidda"
+    },
+    {
+     "kode": "KM14852",
+     "tekst": "guldalit, lohkat ja suokkardit čáppagirjjálašvuođa teavsttaid ja áššeteavsttaid ja reflekteret dan ektui"
+    },
+    {
+     "kode": "KM14853",
+     "tekst": "juohkit dieđuid, muitalit, ákkastallat ja reflekteret čálalaččat ja njálmmálaččat"
+    },
+    {
+     "kode": "KM14854",
+     "tekst": "árvvoštallat ja buoridit iežas teavsttaid fágalaš eavttuid vuođul ja máhtu vuođul gielalaš struktuvrraid birra"
+    }
+   ],
+   "underveis": [
+    "Dađistaga árvvoštallan galgá leat mielde oahpu ja gelbbolašvuođa ovddideamen fágas. Oahppit čájehit ja ovddidit gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, jo3 studerenráhkkanahtti oahppoprográmmain go ságastallet ja digaštallet, reflekterejit teavsttaid hárrái ja ráhkadit iešguđetlágan njálmmálaš ja čálalaš teavsttaid fágalaš ja dábálaš gulahallandilálašvuođain. Oahpaheaddji galgá diktit ohppiid váikkuhit oahpahusa, ja oahppanhálu arvvosmahttit máŋggabealálaš bargovugiiguin gos ohppiid áicilvuohta ja suokkardanhállu deattuhuvvo.\nOahpaheaddji ja oahppit galget gulahallat ohppiid ovdáneami birra sámegielas nubbingiellan, sámegiella 2. Oahppit galget beassat geahččaladdat. Gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat muitalit maid orrot máhttimin ja reflekteret iežaset fágalaš ovdáneami hárrái. Oahpaheaddji galgá oaivadit viidásit oahppama birra ja heivehit oahpahusa nu ahte oahppit besset rávvagiid geavahit iežaset njálmmálaš ja čálalaš gelbbolašvuođa ovddideapmái fágas."
+   ],
+   "standpunkt": [
+    "Oppalašárvosátni galgá čájehit oahppi ollislaš gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, go oahpahus loahpahuvvo maŋŋel Jo3 studerenráhkkanahtti oahppoprográmma. Oahpaheaddji galgá plánet ja láhčit dili nu ahte oahppit besset máŋgga láhkai, iešguđetge oktavuođain čájehit iežaset gelbbolašvuođa mas ipmárdus, reflekšuvdna ja kritihkalaš jurddašeapmi leat oassin. Oahpaheaddji galgá bidjat ovtta árvosáni sámegielas nubbingiellan, njálmmálaš sámegiella 2, njálmmálaš gelbbolašvuođa vuođul maid oahppi lea fágas čájehan. Oahpaheaddji galgá bidjat ovtta árvosáni sámegielas nubbingiellan, čálalaš sámegiella 2, čálalaš gelbbolašvuođa vuođul maid oahppi lea fágas čájehan."
+   ]
+  },
+  {
+   "kode": "KV1165",
+   "tittel": "Gealbomihttomearit ja árvvoštallan jo3 lasáhus oppalaš studerengelbbolašvuhtii fidnofágalaš oahppoprográmmat",
+   "fag": [
+    "SAS2Z26"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Oahpahusa mihttomearri lea ahte oahppi galgá máhttit",
+   "maal": [
+    {
+     "kode": "KM14855",
+     "tekst": "geavahit iešguđetlágán sániid ja dajaldagaid mat gullet sámi kultuvrii ja árbevirrui"
+    },
+    {
+     "kode": "KM14856",
+     "tekst": "searvat ságastallamii ja joatkit ságastallama relevánta oaiviliiguin"
+    },
+    {
+     "kode": "KM14857",
+     "tekst": "ákkastallat iežas oaiviliid beali earáid oaiviliid deaivamis"
+    },
+    {
+     "kode": "KM14859",
+     "tekst": "vuohkkasit presenteret iešguđetlágan fáttáid"
+    },
+    {
+     "kode": "KM14863",
+     "tekst": "gulalit ja lohkat teavsttaid ja reflekteret daid hárrái"
+    },
+    {
+     "kode": "KM14864",
+     "tekst": "čállit teavsttaid mat muitalit, buktet dieđuid ja ákkastallet"
+    },
+    {
+     "kode": "KM14862",
+     "tekst": "suokkardit teavsttaid eará sámegielain ja ságastallat daid birra"
+    },
+    {
+     "kode": "KM14865",
+     "tekst": "geavahit máhtu riektačállima, sátnesojaheami, cealkkastruktuvrra ja teakstastruktuvrra birra barggus iežas njálmmálaš ja čálalaš teavsttaiguin"
+    },
+    {
+     "kode": "KM14866",
+     "tekst": "geavahit iešguđetlágán sániid ja dajaldagaid servodaga ja fágalaš fáttáid birra"
+    },
+    {
+     "kode": "KM14867",
+     "tekst": "searvat ságastallamii ja digaštallamiidda"
+    },
+    {
+     "kode": "KM14858",
+     "tekst": "guldalit, lohkat ja suokkardit čáppagirjjálašvuođa teavsttaid ja áššeteavsttaid ja reflekteret daid ektui"
+    },
+    {
+     "kode": "KM14860",
+     "tekst": "juohkit dieđuid, muitalit, ákkastallat ja reflekteret čálalaččat ja njálmmálaččat"
+    },
+    {
+     "kode": "KM14861",
+     "tekst": "árvvoštallat iežas teavsttaid ja bargat daiguin fágalaš eavttuid vuođul ja máhtu vuođul gielalaš struktuvrraid birra"
+    }
+   ],
+   "underveis": [
+    ".Dađistaga árvvoštallan galgá leat mielde oahpu ja gelbbolašvuođa ovddideamen fágas. Oahppit čájehit ja ovddidit gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, jo3 lasáhus oppalaš studerengelbbolašvuhtii go ságastallet ja digaštallet, reflekterejit teavsttaid hárrái ja ráhkadit iešguđetlágan njálmmálaš ja čálalaš teavsttaid fágalaš ja dábálaš gulahallandilálašvuođain.\nOahpaheaddji ja oahppit galget gulahallat ohppiid ovdáneami birra sámegielas nubbingiellan, sámegiella 2. Oahppit galget beassat geahččaladdat. Gelbbolašvuođa vuođul maid oahppit čájehit, sii galget beassat muitalit maid orrot máhttimin ja reflekteret iežaset fágalaš ovdáneami hárrái. Oahpaheaddji galgá oaivadit viidásit oahppama birra ja heivehit oahpahusa nu ahte oahppit besset rávvagiid geavahit iežaset njálmmálaš ja čálalaš gelbbolašvuođa ovddideapmái fágas."
+   ],
+   "standpunkt": [
+    "Oppalašárvosátni galgá čájehit oahppi ollislaš gelbbolašvuođa sámegielas nubbingiellan, sámegiella 2, go oahpahus loahpahuvvo maŋŋel jo3 lasáhus oppalaš studerengelbbolašvuhtii. Oahpaheaddji galgá plánet ja láhčit dili nu ahte oahppit besset máŋgga láhkai, iešguđetge oktavuođain čájehit iežaset gelbbolašvuođa mas ipmárdus, reflekšuvdna ja kritihkalaš jurddašeapmi leat oassin. Oahpaheaddji galgá bidjat ovtta árvosáni sámegielas nubbingiellan, njálmmálaš sámegiella 2, njálmmálaš gelbbolašvuođa vuođul maid oahppi lea fágas čájehan. Oahpaheaddji galgá bidjat ovtta árvosáni sámegielas nubbingiellan, čálalaš sámegiella 2, čálalaš gelbbolašvuođa vuođul maid oahppi lea fágas čájehan."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Oppalaš árvvoštallan",
+   "tekst": [
+    "Maŋŋel 10.ceahki : Ohppiin galgá leat okta oppalašárvosátni.",
+    "Maŋŋel jo2 fidnofágalaš oahppoprográmmaid: Ohppiin galgá leat okta oppalašárvosátni sámegiella nubbingielas, sámegiella 2.",
+    "Maŋŋel jo3 studerenráhkkanahtti oahppoprográmmaid: Ohppiin galget leat guokte oppalašárvosáni, okta njálmmálaš sámegielas nubbingiellan, sámegiella 2 ja okta čálalaš sámegielas nubbingiellan, sámegiella 2.",
+    "Maŋŋel jo3 lasáhus oppalaš studerengelbbolašvuhtii: Ohppiin galget leat guokte oppalašárvosáni, okta njálmmálaš sámegielas nubbingiellan, sámegiella 2 ja okta čálalaš sámegielas nubbingiellan, sámegiella 2."
+   ]
+  },
+  {
+   "overskrift": "Eksámen ohppiide",
+   "tekst": [
+    "Maŋŋel 10.ceahki: Oahppi sáhttá vuorbáduvvot čálalaš eksámenii sámegielas nubbingiellan, sámegiella 2. Eksámenis galgá leat ráhkkananoassi. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo guovddáš ásahusas. Oahppi maid sáhttá vuorbáduvvot njálmmálaš eksámenii, oktan ráhkkananosiin. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat.",
+    "Maŋŋel jo2 fidnofágalaš oahppoprográmmaid: Oahppi sáhttá vuorbáduvvot čálalaš eksámenii sámegielas nubbingiellan, sámegiella 2. Eksámenis galgá leat ráhkkananoassi. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Oahppi maid sáhttá vuorbáduvvot njálmmálaš eksámenii, oktan ráhkkananosiin. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat.",
+    "Maŋŋel jo3 studerenráhkkanahtti oahppoprográmmaid: Oahppi sáhttá vuorbáduvvot čálalaš eksámenii, sámegielas nubbingiellan, sámegiella 2. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo guovddáš ásahusas. Oahppi maid sáhttá vuorbáduvvot njálmmálaš eksámenii, oktan ráhkkananosiin. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat.",
+    "Maŋŋel jo3 lasáhus oppalaš studerengelbbolašvuhtii: Oahppi sáhttá vuorbáduvvot čálalaš eksámenii, sámegielas nubbingiellan, sámegiella 2. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo guovddáš ásahusas. Oahppi maid sáhttá vuorbáduvvot njálmmálaš eksámenii, oktan ráhkkananosiin. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat."
+   ]
+  },
+  {
+   "overskrift": "Eksámen privatisttaide",
+   "tekst": [
+    "Maŋŋel 10.ceahki: Geahča gustovaš ortnega rávisolbmuid vuođđoskuvlaoahpahussii.",
+    "Maŋŋel jo2 fidnofágalaš oahppoprográmmaid: Privatista galgá váldit čálalaš eksámena sámegielas nubbingiellan, sámegiella 2. Eksámenis galgá leat ráhkkananoassi. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Dasa lassin galgá privatista váldit njálmmálaš eksámena. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galgá go privatisttain leat ráhkkananoassi báikkálaččat mearriduvvon eksámenis.",
+    "Maŋŋel jo3 studerenráhkkanahtti oahppoprográmmaid: Privatista galgá váldit čálalaš eksámena sámegielas nubbingiellan, sámegiella 2. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo guovddáš ásahusas. Dasa lassin galgá privatista váldit njálmmálaš eksámena. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galgá go privatisttain leat ráhkkananoassi báikkálaččat mearriduvvon eksámenis.",
+    "Maŋŋel jo3 lasáhus oppalaš studerengelbbolašvuhtii: Privatista galgá váldit čálalaš eksámena sámegielas nubbingiellan, sámegiella 2. Čálalaš eksámen ráhkaduvvo ja sensurerejuvvo guovddáš ásahusas. Dasa lassin galgá privatista váldit njálmmálaš eksámena. Njálmmálaš eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galgá go privatisttain leat ráhkkananoassi báikkálaččat mearriduvvon eksámenis."
+   ]
+  }
+ ]
+}

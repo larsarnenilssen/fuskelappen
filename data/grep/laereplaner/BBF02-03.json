@@ -1,0 +1,168 @@
+{
+ "kode": "BBF02-03",
+ "tittel": "Læreplan i vg2 båtbygger",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV393",
+   "tittel": "Kompetansemål og vurdering produksjon",
+   "fag": [
+    "BBF2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4171",
+     "tekst": "planlegge, gjennomføre og dokumentere arbeid i tråd med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4156",
+     "tekst": "gjøre rede for hvordan båter bygges, og bruke denne kunnskapen i praktisk arbeid med å bygge deler av en ny båt"
+    },
+    {
+     "kode": "KM4177",
+     "tekst": "velge og bruke aktuelle tre- og komposittmaterialer tilpasset ønsket produkt og gjøre rede for hvordan ulike valg påvirker resultat, bærekraft og samsvar med miljøkrav"
+    },
+    {
+     "kode": "KM4176",
+     "tekst": "velge og bruke mekaniske og kjemiske forbindelsesmetoder til bygging og vedlikehold av båter"
+    },
+    {
+     "kode": "KM4174",
+     "tekst": "utføre enkelt vedlikehold og små reparasjoner av båter"
+    },
+    {
+     "kode": "KM4169",
+     "tekst": "slipe skjæreverktøy og vedlikeholde maskiner og utstyr ut fra gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4175",
+     "tekst": "gjøre rede for og bruke digitale verktøy i produksjonen"
+    },
+    {
+     "kode": "KM4173",
+     "tekst": "velge og bruke egnet overflatebehandling i samsvar med materialenes egenart, bruksområder og miljøhensyn"
+    },
+    {
+     "kode": "KM4172",
+     "tekst": "bearbeide tre- og komposittmaterialer ved å bruke forskjellige maskiner, verktøy og teknikker og gjøre rede for hvordan ulike valg påvirker resultat, bærekraft og samsvar med miljøkrav"
+    },
+    {
+     "kode": "KM4170",
+     "tekst": "bruke hensiktsmessige arbeidsstillinger og gjøre rede for hvordan kroppen kan bidra til gode arbeidsrutiner i en produksjon"
+    },
+    {
+     "kode": "KM4168",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV394",
+   "tittel": "Kompetansemål og vurdering materialer og konstruksjon",
+   "fag": [
+    "BBF2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4162",
+     "tekst": "lage og bruke skisser og enkle modeller av komponenter"
+    },
+    {
+     "kode": "KM4159",
+     "tekst": "gjøre rede for og anvende linjetegning og lage oppslag i full størrelse"
+    },
+    {
+     "kode": "KM4165",
+     "tekst": "gjøre rede for bruk av ulike materialer i tradisjonell og moderne båtbygging og bruke denne kunnskapen i praktisk arbeid med å bygge deler av en ny båt"
+    },
+    {
+     "kode": "KM4157",
+     "tekst": "vurdere og velge arbeidsmetoder og materialbruk og gjøre rede for hvordan ulike valg påvirker resultat, bærekraft og samsvar med miljøkrav i produksjon av båter"
+    },
+    {
+     "kode": "KM4164",
+     "tekst": "gjøre rede for prinsipper knyttet til kjemiske og mekaniske sammenføyinger i båtbyggerfaget og bruke denne kunnskapen i praktisk arbeid med å vedlikeholde og å bygge deler av en ny båt"
+    },
+    {
+     "kode": "KM4167",
+     "tekst": "gjøre rede for håndtering og lagring av tre og komposittråvarer og gjennomføre enkle tekniske og klimatiske undersøkelser av aktuelle materialer og produkter"
+    },
+    {
+     "kode": "KM4166",
+     "tekst": "gjøre rede for relevante egenskaper ved metaller som brukes i båter, forskjellige typer korrosjon og hvordan metaller kan beskyttes mot korrosjon"
+    },
+    {
+     "kode": "KM4163",
+     "tekst": "gjøre rede for hvordan gjenbruk, avfallshåndtering og valg av materialer kan bidra til en bærekraftig produksjon"
+    },
+    {
+     "kode": "KM4161",
+     "tekst": "beregne materialforbruk og arbeidstid til en enkel produksjon av deler til en båt"
+    },
+    {
+     "kode": "KM4160",
+     "tekst": "gjøre rede for gjeldende lov- og regelverk knyttet til båtbyggerfagene"
+    },
+    {
+     "kode": "KM4158",
+     "tekst": "gjøre rede for ulike båttyper, byggetradisjoner, bruk av båtene og tradisjonene de inngår i, og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM4178",
+     "tekst": "gjøre rede for de grunnleggende hydrodynamiske prinsippene for båter"
+    },
+    {
+     "kode": "KM4179",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget materialer og konstruksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget materialer og konstruksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget materialer og konstruksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget materialer og konstruksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon: Elevene skal ha én standpunktkarakter.",
+    "Material og konstruksjon: Elevene skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og materialer og konstruksjon: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel"
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Materialer og konstruksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og materialer og konstruksjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

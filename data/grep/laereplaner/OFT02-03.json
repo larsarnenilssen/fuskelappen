@@ -1,0 +1,192 @@
+{
+ "kode": "OFT02-03",
+ "tittel": "Læreplan i vg2 overflateteknikk",
+ "spraak": "nno",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV327",
+   "tittel": "Kompetansemål og vurdering forbehandling og påføring",
+   "fag": [
+    "OFT2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3394",
+     "tekst": "måle klimatiske forhold og vurdere korleis fukt og ventilasjon påverkar sluttresultatet og levetida"
+    },
+    {
+     "kode": "KM3374",
+     "tekst": "rekne ut areal og materialforbruk i tråd med arbeidsbeskrivingar"
+    },
+    {
+     "kode": "KM3401",
+     "tekst": "vurdere og velje produkt ut frå eigenskapar, eksponeringsmiljø og levetid"
+    },
+    {
+     "kode": "KM3400",
+     "tekst": "beskrive korleis fargar blir oppfatta under ulike lysforhold"
+    },
+    {
+     "kode": "KM3399",
+     "tekst": "utforske fargelære, blande fargar og forstå fargekodane i fargesystema RAL og NCS"
+    },
+    {
+     "kode": "KM5189",
+     "tekst": "vurdere om underlaget tilfredsstiller gjeldande krav til underlag før påføring av måling eller anna belegg"
+    },
+    {
+     "kode": "KM3398",
+     "tekst": "forbehandle på uorganiske og organiske underlag etter spesifiserte krav"
+    },
+    {
+     "kode": "KM3390",
+     "tekst": "blåsereinse stål og vurdere korleis blåsemidla påverkar overflatene"
+    },
+    {
+     "kode": "KM3397",
+     "tekst": "velje og bruke kjemikalium til forbehandling og påføring og reflektere over konsekvensane av feilbruk"
+    },
+    {
+     "kode": "KM3396",
+     "tekst": "førebyggje og identifisere korrosjon og ròte og gjere greie for konsekvensane for materiale og underlag"
+    },
+    {
+     "kode": "KM3389",
+     "tekst": "bruke sprøyteutstyr og handverktøy til å påføre måling, sparkel og belegg"
+    },
+    {
+     "kode": "KM3395",
+     "tekst": "leggje, tettskjere og sveise belegg"
+    },
+    {
+     "kode": "KM3393",
+     "tekst": "tapetsere og drøfte korleis underlaget og ulike typar tapet påverkar resultatet"
+    },
+    {
+     "kode": "KM3392",
+     "tekst": "bruke foliering til belegging, korrosjonsvern og dekor"
+    },
+    {
+     "kode": "KM3391",
+     "tekst": "halde ved like verktøy og påføringsutstyr"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget forbehandling og påføring når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer eit eller begge programfaga. Læraren og elevane skal vere i dialog om utviklinga til elevane i programfaget forbehandling og påføring. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget forbehandling og påføring ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget forbehandling og påføring basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV328",
+   "tittel": "Kompetansemål og vurdering helse, miljø og sikkerheit",
+   "fag": [
+    "OFT2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3388",
+     "tekst": "planleggje og gjennomføre arbeid for å unngå skadar på menneske, materiell og miljø i samsvar med gjeldande regelverk for helse, miljø og sikkerheit og reflektere over konsekvensane av å ikkje følgje regelverket"
+    },
+    {
+     "kode": "KM3387",
+     "tekst": "rekne ut areal og materialforbruk i tråd med arbeidsbeskrivingar ved hjelp av analogt og digitalt utstyr"
+    },
+    {
+     "kode": "KM3403",
+     "tekst": "drøfte ulike løysingar som påverkar miljøet og bidreg til reduserte kostnader for kunden"
+    },
+    {
+     "kode": "KM3384",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    },
+    {
+     "kode": "KM3386",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp, bruke personleg verneutstyr og reflektere over konsekvensane av støy, vibrasjonar og støveksponering for yrkesutøvaren"
+    },
+    {
+     "kode": "KM3402",
+     "tekst": "bruke teikningar, standardar, spesifikasjonar, prosedyrar og arbeidsbeskrivingar"
+    },
+    {
+     "kode": "KM3383",
+     "tekst": "dekkje til og maskere underlag og detaljar som ikkje skal overflatebehandlast"
+    },
+    {
+     "kode": "KM3379",
+     "tekst": "førebyggje, identifisere og utbetre målingsfeil og vurdere konsekvensane av avvik"
+    },
+    {
+     "kode": "KM3382",
+     "tekst": "bruke stigar, arbeidsplattformer og stillas og setje i verk tiltak for å redusere risiko ved arbeid i høgda"
+    },
+    {
+     "kode": "KM3381",
+     "tekst": "gjere greie for korleis ulike kjemikalium og belegg opptrer i samspel med kvarandre, og beskrive dei ulike prosessane for tørking og herding"
+    },
+    {
+     "kode": "KM3380",
+     "tekst": "kjeldesortere og handtere kjemikalium etter gjeldande regelverk, oppfylle substitusjonsplikta og reflektere over konsekvensane av feilhandtering"
+    },
+    {
+     "kode": "KM3378",
+     "tekst": "skjere ut sjablongar, maskering, tekst og symbol digitalt"
+    },
+    {
+     "kode": "KM3377",
+     "tekst": "gjere greie for kvalitetssikringssystem og dokumentere eige arbeid"
+    },
+    {
+     "kode": "KM3376",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM3375",
+     "tekst": "planleggje prosjekt, berekne kostnader og drøfte faktorar som påverkar lønnsemda til bedrifta"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i programfaget helse, miljø og sikkerheit når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget. Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver.",
+    "Læraren kan gi arbeidsoppgåver som dekkjer eit eller begge programfaga. Læraren og elevane skal vere i dialog om utviklinga til elevane i programfaget helse, miljø, tryggleik og kvalitet. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i programfaget helse, miljø og sikkerheit ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i programfaget helse, miljø og sikkerheit basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Forbehandling og påføring: Eleven skal ha éin standpunktkarakter.",
+    "Helse, miljø, og sikkerheit: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Forbehandling og påføring og helse, miljø og sikkerhet: Eleven skal opp til ein tverrfagleg praktisk eksamen hvor de felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Forbehandling og påføring: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Helse, miljø og sikkerhet: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

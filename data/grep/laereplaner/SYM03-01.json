@@ -1,0 +1,96 @@
+{
+ "kode": "SYM03-01",
+ "tittel": "Læreplan i vg3 sykkelmekanikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2023-10-31",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV787",
+   "tittel": "Kompetansemål og vurdering Vg3 sykkelmekanikerfaget",
+   "fag": [
+    "SYM3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM10528",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver etter produsentens anvisning, standarder, garantier, servicehistorikk og gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM10527",
+     "tekst": "teste kjøreegenskapene og funksjonene til en sykkel, vurdere sykkelens funksjonalitet og gjøre rede for sammenhengen mellom kjøreegenskaper og trafikksikkerhet"
+    },
+    {
+     "kode": "KM10529",
+     "tekst": "velge, bruke og vedlikeholde verktøy, gjøre rede for konsekvenser av egne valg og vurdere ulike faktorer som forbygger skader på sykkelens komponenter"
+    },
+    {
+     "kode": "KM10530",
+     "tekst": "velge og montere tilleggsutstyr og gjøre rede for ulike tiltak som sikrer sykkelens funksjonalitet og ivaretar syklistens sikkerhet"
+    },
+    {
+     "kode": "KM10531",
+     "tekst": "reparere og vedlikeholde sykler og vurdere hvordan valg av deler og metoder kan ivareta trafikksikkerhet og forlenge sykkelens levetid"
+    },
+    {
+     "kode": "KM10532",
+     "tekst": "bruke verneutstyr tilpasset arbeidsoppgaven og drøfte hvordan støy og bruk av kjemikalier påvirker yrkesutøveren"
+    },
+    {
+     "kode": "KM10533",
+     "tekst": "veilede kunder, følge rutiner for kundebehandling og fagetiske normer i bedriften og vurdere lønnsomheten ved valg av reparasjonsmetode og komponenter"
+    },
+    {
+     "kode": "KM10534",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    },
+    {
+     "kode": "KM10535",
+     "tekst": "feilsøke, diagnostisere, justere og reparere drivverk og hjul og gjøre rede for drivverkets og hjulets funksjonalitet og sikkerhet."
+    },
+    {
+     "kode": "KM10536",
+     "tekst": "feilsøke og diagnostisere elektroniske komponenter, vurdere risiko for brukers sikkerhet og iverksette tiltak ved avvik"
+    },
+    {
+     "kode": "KM10541",
+     "tekst": "gjøre rede for faktorer som påvirker funksjonaliteten ved bruk av programmering, reprogrammering, styreenhetsoppdatering og digitale applikasjoner"
+    },
+    {
+     "kode": "KM10537",
+     "tekst": "håndtere, oppbevare og lagre elsykkelbatterier i henhold til gjeldende regelverk, håndtere avfall og gjøre rede for ulike tiltak som forbygger ulykker"
+    },
+    {
+     "kode": "KM10538",
+     "tekst": "feilsøke, diagnostisere, reparere og justere ulike bremsesystem og drøfte fordeler og ulemper med de ulike bremsesystemene."
+    },
+    {
+     "kode": "KM10539",
+     "tekst": "måle ramme og gaffel for skjevheter og skader og vurdere risiko for materialsvakhet og konsekvenser for brukers sikkerhet"
+    },
+    {
+     "kode": "KM10540",
+     "tekst": "feilsøke, diagnostisere, reparere og justere fjæringskomponenter og vurdere risiko for brukers sikkerhet ved komponentfeil"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 sykkelmekanikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 sykkelmekanikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamenen utarbeides sentralt og sensureres lokalt. Eksamenen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 sykkelmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

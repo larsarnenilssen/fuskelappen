@@ -1,0 +1,168 @@
+{
+ "kode": "KEM02-03",
+ "tittel": "Læreplan i vg2 klima, energi og miljøteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV325",
+   "tittel": "Kompetansemål og vurdering praktisk yrkesutøvelse",
+   "fag": [
+    "KEM2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3350",
+     "tekst": "planlegge og utføre arbeidet etter tegninger og beskrivelser ved å bruke ulike prosjektverktøy og arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM3371",
+     "tekst": "utarbeide målsatte skisser for arbeidsoperasjoner etter produsentens anvisninger og beskrivelser"
+    },
+    {
+     "kode": "KM3370",
+     "tekst": "vurdere og utforske materialenes egenskaper og bruksområder og gjøre rede for hvordan ulike materialer virker sammen"
+    },
+    {
+     "kode": "KM3369",
+     "tekst": "beregne inndelingen av sammenføyninger, velge sammenføyningsmetode og forstå hvordan ulike løsninger påvirker sluttproduktet arkitektonisk"
+    },
+    {
+     "kode": "KM3368",
+     "tekst": "produsere og montere beslag og klimaskjermer på tak og fasader og vurdere hvordan valg av arbeidsprosess påvirker bygg- og fasadeunderlagets kvalitet og kapasitet"
+    },
+    {
+     "kode": "KM3367",
+     "tekst": "sveise membraner og tekkinger og vurdere hvordan ulike sveiseløsninger påvirker kvaliteten på sluttproduktet"
+    },
+    {
+     "kode": "KM3366",
+     "tekst": "produsere og isolere sanitær-, varme- og ventilasjonsanlegg og drøfte løsninger som motvirker kulde, varme, brann og støy"
+    },
+    {
+     "kode": "KM3365",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy- og støveksponering, farlig avfall og arbeid i høyden"
+    },
+    {
+     "kode": "KM3364",
+     "tekst": "velge og bruke verktøy, maskiner og utstyr til ulike arbeidsoppdrag og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM3363",
+     "tekst": "vedlikeholde verktøy, maskiner og utstyr etter produsentens anvisninger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget praktisk yrkesutøvelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker et av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget praktisk yrkesutøvelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget praktisk yrkesutøvelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget praktisk yrkesutøvelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV326",
+   "tittel": "Kompetansemål og vurdering arbeidsmiljø og dokumentasjon",
+   "fag": [
+    "KEM2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3362",
+     "tekst": "planlegge prosjekter, beregne kostnader og drøfte faktorer som påvirker anleggets lønnsomhet"
+    },
+    {
+     "kode": "KM3361",
+     "tekst": "velge materialtyper og tykkelser til ulike formål og gjøre rede for hvilke konsekvenser valget har for kvalitet, funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM3360",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og redusere kostnader for kunden"
+    },
+    {
+     "kode": "KM3359",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM3358",
+     "tekst": "beregne og bruke materialer og utstyr til ulike formål etter tegninger og beskrivelser og vurdere bruken ut fra kostnader, tidsbruk og materialforbruk"
+    },
+    {
+     "kode": "KM3357",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    },
+    {
+     "kode": "KM3356",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, vurdere muligheter for gjenbruk og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM3355",
+     "tekst": "gjøre rede for kvalitetssikringssystemer og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM3372",
+     "tekst": "velge og bruke personlig verne og sikkerhetsutstyr og vurdere konsekvenser av feilvalg"
+    },
+    {
+     "kode": "KM3354",
+     "tekst": "gjøre rede for sikkerhetstiltak ved arbeid i høyden, bruke arbeidsplattformer og sikre risikoutsatte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM3353",
+     "tekst": "reflektere over betydningen av orden på arbeidsplassen, lage en ordensplan og følge denne"
+    },
+    {
+     "kode": "KM3352",
+     "tekst": "gjøre rede for ulike situasjoner der varme arbeider kan forårsake brann og drøfte ulike sikkerhetstiltak"
+    },
+    {
+     "kode": "KM3351",
+     "tekst": "bruke produktdatablader og følge anvisninger ved bruk av ulike produkter"
+    },
+    {
+     "kode": "KM3373",
+     "tekst": "risikovurdere arbeidsoppdrag og iverksette tiltak"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget arbeidsmiljø og dokumentasjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker et av eller begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget arbeidsmiljø og dokumentasjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget arbeidsmiljø og dokumentasjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget arbeidsmiljø og dokumentasjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Praktisk yrkesutøvelse: Eleven skal ha én standpunktkarakter.",
+    "Arbeidsmiljø og dokumentasjon: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Praktisk yrkesutøvelse og arbeidsmiljø og dokumentasjon: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha en forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Yrkesutøvelse: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Arbeidsmiljø og dokumentasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesutøvelse og arbeidsmiljø og dokumentasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

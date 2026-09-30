@@ -1,0 +1,100 @@
+{
+ "kode": "GRF03-02",
+ "tittel": "Læreplan i gravørfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV452",
+   "tittel": "Kompetansemål og vurdering gravørfaget",
+   "fag": [
+    "GRF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4948",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid med utgangspunkt i egne ideer og etter kundens ønske"
+    },
+    {
+     "kode": "KM4947",
+     "tekst": "utforske og bruke fagets historie, tradisjon og egenart som inspirasjon til egen produktutvikling"
+    },
+    {
+     "kode": "KM4933",
+     "tekst": "drøfte estetikk og design med kunder, kolleger og andre, selvstendig og i samarbeid med andre"
+    },
+    {
+     "kode": "KM4934",
+     "tekst": "tegne og gravere inskripsjoner og sjablonger med forskjellige teknikker i et bredt utvalg av skrifttyper og prospekter i ulike materialer"
+    },
+    {
+     "kode": "KM4935",
+     "tekst": "tegne og gravere logoer, monogrammer, mønstre og heraldiske våpen på ulike produkter og materialer"
+    },
+    {
+     "kode": "KM4936",
+     "tekst": "vurdere, tilpasse og forenkle tegning ut fra ønsket sluttresultat"
+    },
+    {
+     "kode": "KM4937",
+     "tekst": "lage og bruke arbeidstegninger og annen visuell informasjon i produktutvikling"
+    },
+    {
+     "kode": "KM4938",
+     "tekst": "velge, tilpasse og bruke ulike typer håndverktøy, maskiner og digitale ressurser i produksjonen"
+    },
+    {
+     "kode": "KM4942",
+     "tekst": "utføre nødvendig vedlikehold på maskiner og verktøy og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4943",
+     "tekst": "gjøre rede for ulike materialers egenskaper og bruksområder og bruke denne kunnskapen til å vurdere materialvalg, ressursbruk, kvalitet og verdi"
+    },
+    {
+     "kode": "KM4939",
+     "tekst": "skravere med stikkel og matt punsel"
+    },
+    {
+     "kode": "KM4940",
+     "tekst": "velge og utføre etterbehandling og overflatebehandling av graverte produkter"
+    },
+    {
+     "kode": "KM4941",
+     "tekst": "presentere, dokumentere og markedsføre egne produkter"
+    },
+    {
+     "kode": "KM4945",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4946",
+     "tekst": "gjøre rede for og følge gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid på verkstedet"
+    },
+    {
+     "kode": "KM4944",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i gravørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i gravørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i gravørfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på fem til syv virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,159 @@
+{
+ "kode": "BIO01-02",
+ "tittel": "Læreplan i biologi",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV538",
+   "tittel": "Kompetansemål og vurdering biologi 1",
+   "fag": [
+    "BIO1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6282",
+     "tekst": "planleggje og gjennomføre undersøkingar, samle, behandle og tolke data, og presentere resultat og funn"
+    },
+    {
+     "kode": "KM6296",
+     "tekst": "utforske korleis dei taksonomiske kriteria har endra seg i tråd med den teknologiske utviklinga, og samanlikne organismar med omsyn til fellestrekk og variasjon"
+    },
+    {
+     "kode": "KM6301",
+     "tekst": "utforske samanhengar mellom anatomi og fysiologi og gjere greie for prinsippa for livsprosessane i organismar"
+    },
+    {
+     "kode": "KM6292",
+     "tekst": "gjere greie for korleis utvalde reguleringsmekanismar styrer homeostase hos mennesket, og undersøkje korleis livsstil kan påverke disse mekanismane"
+    },
+    {
+     "kode": "KM6300",
+     "tekst": "utforske samanhengar mellom cellestrukturar og -funksjonar og gjere greie for korleis cellulære membranar dannar grunnlag for kommunikasjon mellom celler"
+    },
+    {
+     "kode": "KM6299",
+     "tekst": "samanlikne korleis ulike celler deler seg, og gjere greie for kvifor regulering av celledeling er viktig for vekst og reparasjon"
+    },
+    {
+     "kode": "KM6297",
+     "tekst": "gjere greie for korleis virale og mikrobielle sjukdommar oppstår, spreier seg og blir nedkjempa"
+    },
+    {
+     "kode": "KM6295",
+     "tekst": "drøfte korleis vaksinar førebyggjer og vernar mot sjukdom på individ- og populasjonsnivå"
+    },
+    {
+     "kode": "KM6294",
+     "tekst": "gjere greie for bruk av antibiotika og drøfte moglege konsekvensar"
+    },
+    {
+     "kode": "KM6298",
+     "tekst": "utforske abiotiske og biotiske faktorar i eit økosystem, drøfte samanhengar som forklarer det biologiske mangfaldet og reflekter over naturens eigenverdi"
+    },
+    {
+     "kode": "KM6293",
+     "tekst": "utforske kva konsekvensar endringar i klima og arealutnytting kan ha for det biologiske mangfaldet, og drøfte tiltak for ei meir berekraftig forvaltning"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i biologi 1. Elevane viser og utviklar kompetanse i biologi 1 ved å bruke fagspråk, fagteori og modellar til å utforske, drøfte og gjere greie for biologiske system og prosessar, og korleis biologisk kompetanse kan brukast. Vidare viser og utviklar elevane kompetanse når dei behandlar og tolkar innsamla data, og kritisk vurderer og presenterer resultata og funna sine.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte praktiske og utforskande arbeidsmåtar i forsøk, felt og på andre læringsarenaer. Læraren skal vere i dialog med elevane om utviklinga deira i biologi 1, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring, og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i biologi 1."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter biologi 1. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i biologi 1 basert på kompetansen eleven har vist av innsikt i og forståing av biologiske system og prosessar, og kunnskap om korleis biologisk kompetanse kan brukast i samfunnet. Også kompetanse eleven har vist i og gjennom feltarbeid og praktisk og utforskande arbeid med faget, skal liggje til grunn for standpunktvurderinga."
+   ]
+  },
+  {
+   "kode": "KV539",
+   "tittel": "Kompetansemål og vurdering biologi 2",
+   "fag": [
+    "BIO1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6291",
+     "tekst": "utforske ei biologisk problemstilling, analysere innsamla data, argumentere for val av metodar og drøfte resultat og funn"
+    },
+    {
+     "kode": "KM6290",
+     "tekst": "utforske faktorar som regulerer vekst i og storleiken på populasjonar, og drøfte interessekonfliktar rundt forvaltning av populasjonar"
+    },
+    {
+     "kode": "KM6289",
+     "tekst": "utforske og dokumentere artsmangfald gjennom feltarbeid, drøfte resultat og funn og vurdere korleis artane er tilpassa økosystemet dei lever i"
+    },
+    {
+     "kode": "KM6288",
+     "tekst": "gjere greie for energistraum og sentrale stoffkrinsløp"
+    },
+    {
+     "kode": "KM6303",
+     "tekst": "drøfte korleis menneskeleg aktivitet påverkar krinsløpa, og utforske tiltak for å vareta dei"
+    },
+    {
+     "kode": "KM6287",
+     "tekst": "utforske korleis enzym fungerer, og gjere greie for den rolla enzym speler i metabolske prosessar"
+    },
+    {
+     "kode": "KM6285",
+     "tekst": "samanlikne korleis energi blir omdanna gjennom fotosyntesen og celleandinga, og vurdere kva påverknad ulike faktorar har på energiomsetning"
+    },
+    {
+     "kode": "KM6284",
+     "tekst": "gjere greie for genetisk kode og regulering av genuttrykk, og beskrive korleis genteknologi kan brukast for å styre og endre genuttrykk"
+    },
+    {
+     "kode": "KM6283",
+     "tekst": "gjere greie for korleis eigenskapar blir arva, og utforske årsaker til genotypisk og fenotypisk variasjon i populasjonar"
+    },
+    {
+     "kode": "KM6286",
+     "tekst": "utforske korleis evolusjonære prosessar påverkar genlageret til populasjonar, og samanlikne ulike mekanismar for artsdanning"
+    },
+    {
+     "kode": "KM6302",
+     "tekst": "vurdere kommersiell bruk av genteknologi i medisin og matproduksjon, og drøfte etiske problemstillingar ved bruk av slik teknologi"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i biologi 2. Elevane viser og utviklar kompetanse i biologi 2 ved å bruke fagspråk, fagteori og modellar til å utforske, drøfte og gjere greie for biologiske system og prosessar, og korleis biologisk kompetanse kan brukast. Vidare viser og utviklar elevane kompetanse når dei behandlar og tolkar innsamla data, når dei kritisk vurderer og presenterer resultata og funna sine, og når dei argumenterer for metodevala sine.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte praktiske og utforskande arbeidsmåtar i forsøk, felt og på andre læringsarenaer. Læraren skal vere i dialog med elevane om utviklinga deira i biologi 2, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring, og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i biologi 2."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter biologi 2. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i biologi 2 basert på kompetansen eleven har vist av innsikt i og forståing av biologiske system og prosessar, og kunnskap om korleis biologisk kompetanse kan brukast i samfunnet. Også kompetanse eleven har vist i og gjennom praktisk og utforskande arbeid med faget, skal liggje til grunn for standpunktvurderinga."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Biologi 1: Eleven skal ha éin standpunktkarakter.\nBiologi 2: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Biologi 1: Eleven kan trekkjast ut til ein munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.\nBiologi 2: Eleven kan trekkjast ut til ein skriftleg eksamen eller ein munnleg-praktisk eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt. Skriftleg eksamen skal ikkje ha førebuingsdel. Munnleg-praktisk eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Biologi 1: Privatisten skal opp til ein munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nBiologi 2: Privatisten skal opp til ein skriftleg eksamen og ein munnleg-praktisk eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt. Skriftleg eksamen skal ikkje ha førebuingsdel. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

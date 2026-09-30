@@ -1,0 +1,152 @@
+{
+ "kode": "BDR03-02",
+ "tittel": "Læreplan i byggdrifterfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV337",
+   "tittel": "Kompetansemål og vurdering byggdrifterfaget",
+   "fag": [
+    "BDR3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM3508",
+     "tekst": "planlegge drift og vedlikehold av bygninger, tekniske anlegg og installasjoner og arbeide etter bygningsinformasjonsmodeller, tegninger og beskrivelser"
+    },
+    {
+     "kode": "KM3509",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM3534",
+     "tekst": "feilsøke på tekniske anlegg, reparere og vedlikeholde tekniske anlegg, bygninger og uteområder i henhold til gjeldende regelverk og vurdere behovet for å bruke fagekspertise"
+    },
+    {
+     "kode": "KM3532",
+     "tekst": "kontrollere og drifte pumpeanlegg for vann og avløp"
+    },
+    {
+     "kode": "KM3524",
+     "tekst": "regne ut forbruk og kostnader til strøm, vann og andre energibærere"
+    },
+    {
+     "kode": "KM3522",
+     "tekst": "forebygge vannskader fra vann- og avløpsinstallasjoner, vurdere konsekvenser av vannlekkasjer og iverksette tiltak"
+    },
+    {
+     "kode": "KM3518",
+     "tekst": "følge prinsipper for nødstrømsforsyning og gjennomføre testkjøring av nødstrømsaggregat"
+    },
+    {
+     "kode": "KM3528",
+     "tekst": "oppdage skadedyr, iverksette skadedyrbekjempelse etter gjeldende regelverk og kontakte skadedyrkontroll ved behov"
+    },
+    {
+     "kode": "KM3523",
+     "tekst": "følge forskriftskrav og rutiner for adgangskontroll og kameraovervåking og reflektere over etiske konsekvenser av brudd på personvern"
+    },
+    {
+     "kode": "KM3514",
+     "tekst": "gjøre rede for hvordan tekniske installasjoner og bruken av bygget påvirker energiforbruk og iverksette tiltak ved avvik"
+    },
+    {
+     "kode": "KM3529",
+     "tekst": "bruke sentrale driftskontrollanlegg og systemer for forvaltning, drift og vedlikehold og vurdere hvordan ulike driftsvalg påvirker miljø, kostnader og driftssikkerhet"
+    },
+    {
+     "kode": "KM3520",
+     "tekst": "bruke og oppdatere sikkerhetsdatablad"
+    },
+    {
+     "kode": "KM3515",
+     "tekst": "forebygge arbeidsulykker og utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM3531",
+     "tekst": "utarbeide rutiner for brannvern og ivareta brannsikkerhet i bygg på bakgrunn av brannkonseptet"
+    },
+    {
+     "kode": "KM3530",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av ulike belastninger i forbindelse med yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3536",
+     "tekst": "bruke verne- og sikkerhetsutstyr og reflektere over konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM3533",
+     "tekst": "vurdere effekten av belysning og bytte lyskilder i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM3517",
+     "tekst": "drifte og etterse ventilasjonsanlegg, varmeanlegg, kjøleanlegg, adgangskontrollsystemer, strømstyringssystemer og pumpesystemer og drøfte konsekvenser av energibruk for det indre og ytre miljøet"
+    },
+    {
+     "kode": "KM3516",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM3521",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM3527",
+     "tekst": "kildesortere og håndtere avfall etter gjeldende regelverk, behandle kjemisk avfall og giftstoffer, og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM3535",
+     "tekst": "lage avfallsplaner og betjene avfallssystemer"
+    },
+    {
+     "kode": "KM3526",
+     "tekst": "arbeide i tråd med avtaler om sentral driftsovervåking og forvaltning, drift- og vedlikeholdsdokumentasjon og loggføring"
+    },
+    {
+     "kode": "KM3525",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å minimere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM3519",
+     "tekst": "analysere, behandle og presentere informasjon og bruke digitale ressurser til måling, beregning, visuell kontroll, bildebehandling og tegning."
+    },
+    {
+     "kode": "KM3513",
+     "tekst": "gi primærhjelp ved heisstans og utføre ettersyn av heiser"
+    },
+    {
+     "kode": "KM3512",
+     "tekst": "planlegge og gjennomføre internkontroll av passive brannsikringstiltak, brannvarslingsystem, sprinkleranlegg og elektroinstallasjoner i henhold til gjeldende regelverk."
+    },
+    {
+     "kode": "KM3511",
+     "tekst": "drifte ulike typer badeanlegg og vannanlegg, kontrollere vannkvaliteten og vurdere og gjennomføre ulike tiltak ved avvik"
+    },
+    {
+     "kode": "KM3510",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter og reflektere over krav og forventinger som blir stilt til et likeverdig og inkluderende fellesskap."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i byggdrifterfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i byggdrifterfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i byggdrifterfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
+   ]
+  }
+ ]
+}

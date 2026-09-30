@@ -1,0 +1,110 @@
+{
+ "kode": "YRK03-03",
+ "tittel": "Læreplan i vg3 yrkessjåførfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV716",
+   "tittel": "Kompetansemål og vurdering vg3 yrkessjåførfaget",
+   "fag": [
+    "YRK3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9329",
+     "tekst": "føre tyngre kjøretøy i henhold til gjeldende regelverk for kjøretøy i klasse C, CE eller D, avhengig av bedriftens produksjon"
+    },
+    {
+     "kode": "KM9346",
+     "tekst": "reflektere over og vurdere risiko i ulike situasjoner knyttet til føring av tyngre kjøretøy"
+    },
+    {
+     "kode": "KM9344",
+     "tekst": "klargjøre kjøretøyet etter gjeldende regelverk og bruke egnet utstyr for framkommelighet og trafikksikkerhet under krevende vær og føreforhold"
+    },
+    {
+     "kode": "KM9343",
+     "tekst": "utføre daglig vedlikehold og kontrollere kjøretøyets påbygg, lastsikring, chassis, konstruksjon og annet utstyr"
+    },
+    {
+     "kode": "KM9339",
+     "tekst": "bruke kjøretøyets tekniske utstyr og hjelpemidler på en kostnadseffektiv måte og i tråd med brukermanualer og gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM9342",
+     "tekst": "laste og sikre personer og gods i henhold til lover, forskrifter og bedriftens krav til kvalitet og sikkerhet"
+    },
+    {
+     "kode": "KM9341",
+     "tekst": "planlegge, gjennomføre og dokumentere transportoppdrag uten unødvendige miljøbelastninger og i henhold til gjeldende regelverk og bedriftens produksjon og avtaler"
+    },
+    {
+     "kode": "KM9340",
+     "tekst": "opptre forsvarlig og hensynsfullt i trafikken under transportoppdrag med skiftende vei- og føreforhold"
+    },
+    {
+     "kode": "KM9338",
+     "tekst": "ta ansvar på et skadested og utføre førstehjelp"
+    },
+    {
+     "kode": "KM9337",
+     "tekst": "følge bedriftens rutiner ved driftsstans, sykdom, ulykker og andre uønskede hendelser"
+    },
+    {
+     "kode": "KM9336",
+     "tekst": "reflektere over egen kundeservice og utfordringer som kan oppstå i kommunikasjon med ulike kundegrupper, og håndtere eventuelle avvik som skjer i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM9335",
+     "tekst": "reflektere over og beskrive hvordan kjøreatferd og oppdragsgjennomføring påvirker lønnsomhet og regularitet"
+    },
+    {
+     "kode": "KM9334",
+     "tekst": "reflektere over og beskrive hvordan en anbudsprosess kan påvirke arbeidshverdagen"
+    },
+    {
+     "kode": "KM9333",
+     "tekst": "gjøre rede for hvordan bestillerrollen og påseplikten fungerer ved kjøp av transportoppdrag"
+    },
+    {
+     "kode": "KM9332",
+     "tekst": "reflektere over og beskrive ulike typer energibærere som finnes for tunge kjøretøyer"
+    },
+    {
+     "kode": "KM9331",
+     "tekst": "forstå, bruke og forklare aktuelle nasjonale og internasjonale transportdokumenter"
+    },
+    {
+     "kode": "KM9330",
+     "tekst": "reflektere over hvordan kosthold, søvnmønster og rusmiddelbruk kan påvirke arbeidsevnen"
+    },
+    {
+     "kode": "KM9345",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 yrkessjåførfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 yrkessjåførfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget.",
+    "Lærlingen må dokumentere gjennomført obligatorisk opplæring for førerkort klasse C, CE eller D, avhengig av bedriftens produksjon, i henhold til trafikkopplæringsforskriften."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 yrkessjåførfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager.",
+    "Før oppmelding til fagprøven må kandidaten dokumentere gyldig yrkessjåførkompetanse i samsvar med yrkessjåførforskriften. Kandidater i førerkortklasse C og CE skal i tillegg ha dokumentert sikkerhetsopplæring for truck klasse T1, bestått sertifisert sikkerhetsopplæring for truck i klasse T2 og T4, og dokumentere gyldig kompetansebevis i henhold til ADR-grunnopplæring."
+   ]
+  }
+ ]
+}

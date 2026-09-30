@@ -19,6 +19,8 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: 'es2022',
     sourcemap: false,
+    // Fagindeksen fra Grep er én stor JS-bit (om lag 1,1 MB, 60 kB komprimert) som lastes først når den trengs.
+    chunkSizeWarningLimit: 1500,
   },
   server: { port: 5173 },
   preview: { port: 4173 },

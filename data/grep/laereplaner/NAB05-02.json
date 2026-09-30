@@ -1,0 +1,101 @@
+{
+ "kode": "NAB05-02",
+ "tittel": "Læreplan i Vg3 feltarbeid i naturbruk",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV616",
+   "tittel": "Kompetansemål og vurdering vg3 feltarbeid i naturbruk",
+   "fag": [
+    "NAB5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7194",
+     "tekst": "vurdere eksisterende informasjon om økologiske forhold i områder som skal undersøkes, og utarbeide problemstilling for et feltarbeid"
+    },
+    {
+     "kode": "KM7195",
+     "tekst": "utføre feltarbeid i tråd med gjeldende regelverk for dyrevelferd, eiendomsrett og ferdsel i natur"
+    },
+    {
+     "kode": "KM7201",
+     "tekst": "vurdere sårbarhet i områder og drøfte konsekvenser dette får for gjennomføring av feltarbeid"
+    },
+    {
+     "kode": "KM7196",
+     "tekst": "utføre feltarbeid med hensyn til helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7202",
+     "tekst": "identifisere og drøfte mulige etiske dilemmaer i forbindelse med planlegging og gjennomføring av et feltarbeid"
+    },
+    {
+     "kode": "KM7203",
+     "tekst": "identifisere utvalgte nøkkelarter, truede arter og arter som utgjør risiko for norske arter og økosystemer, og vurdere hvordan funn av disse kan påvirke gjennomføring av feltarbeid"
+    },
+    {
+     "kode": "KM7198",
+     "tekst": "samarbeide med deltakere, veiledere, rettighetshavere, offentlige etater, oppdragsgivere og andre for å gjennomføre et feltarbeid fra idé til rapport"
+    },
+    {
+     "kode": "KM7205",
+     "tekst": "vurdere og velge metoder og utstyr ut fra problemstilling, tilgjengelig informasjon og forhold på stedet"
+    },
+    {
+     "kode": "KM7206",
+     "tekst": "bruke og vedlikeholde feltutstyr til registrering av biotiske og abiotiske faktorer i et feltarbeid"
+    },
+    {
+     "kode": "KM7204",
+     "tekst": "drøfte hva det innebærer å bruke naturvitenskapelige metoder, og bruke prinsippene i undersøkelser og forskning i ulike naturmiljøer"
+    },
+    {
+     "kode": "KM7199",
+     "tekst": "bearbeide og analysere feltdata og drøfte resultater, metodiske svakheter og feilkilder"
+    },
+    {
+     "kode": "KM7197",
+     "tekst": "tolke, systematisere og dokumentere innsamlede data og prøver fra feltarbeid og presentere dette for ulike målgrupper"
+    },
+    {
+     "kode": "KM7200",
+     "tekst": "vurdere og identifisere styrker og svakheter i et feltarbeid og reflektere over eventuelle konsekvenser dette får for eget arbeid"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vg3 feltarbeid i naturbruk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vg3 feltarbeid i naturbruk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vg3 feltarbeid i naturbruk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vg3 feltarbeid i naturbruk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 feltarbeid i naturbruk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 feltarbeid i naturbruk: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 feltarbeid i naturbruk: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

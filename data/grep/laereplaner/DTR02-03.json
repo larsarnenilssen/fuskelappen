@@ -1,0 +1,186 @@
+{
+ "kode": "DTR02-03",
+ "tittel": "Læreplan i vg2 trearbeid",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV399",
+   "tittel": "Kompetansemål og vurdering produksjon",
+   "fag": [
+    "DTR2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4239",
+     "tekst": "gjennomføre en produksjon fra idé til ferdig produkt i samsvar med gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4219",
+     "tekst": "utforske og gjøre rede for tradisjonelle håndverksteknikker og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM4233",
+     "tekst": "velge og bruke ulike typer manuelle og styrte trebearbeidingsmaskiner, elektriske håndmaskiner og håndverktøy og gjøre rede for hvordan ulike valg påvirker ressursutnyttelse og resultat"
+    },
+    {
+     "kode": "KM4238",
+     "tekst": "lage produkter i heltre med tradisjonelle sammenføyningsteknikker både maskinelt og for hånd og velge teknikk ut fra materialets egenskaper"
+    },
+    {
+     "kode": "KM4237",
+     "tekst": "vurdere, velge og bruke ulike platematerialer i produkter med ulike sammensettingsmetoder og utføre finering i tråd med hensyn til en bærekraftig produksjon"
+    },
+    {
+     "kode": "KM4236",
+     "tekst": "lage og bruke ulike maler, jigger og sjablonger i produksjonen"
+    },
+    {
+     "kode": "KM4235",
+     "tekst": "vurdere, tilpasse og montere ulike typer beslag både for hånd og ved hjelp av maskiner"
+    },
+    {
+     "kode": "KM4234",
+     "tekst": "slipe og sette opp skjærende håndverktøy og utføre enkelt vedlikehold av maskiner i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV400",
+   "tittel": "Kompetansemål og vurdering materialkunnskap",
+   "fag": [
+    "DTR2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4232",
+     "tekst": "gjøre rede for ulike treslags oppbygning, egenskaper, bruksområder og kvalitetssortering og bruke denne kunnskapen i valg av materialer til produkter"
+    },
+    {
+     "kode": "KM4231",
+     "tekst": "vurdere egenskaper og bruksområder for ulike platematerialer og bruke denne kunnskapen i praksis"
+    },
+    {
+     "kode": "KM4230",
+     "tekst": "utforske og vurdere bruk av ulike festemidler, overflatebehandlingsmidler og påføringsmetoder og bruke kunnskapen i praksis"
+    },
+    {
+     "kode": "KM4228",
+     "tekst": "gjøre rede for hvordan valg av ulike trevirker, materialer, overflatebehandlinger og festemidler påvirker resultatet og konsekvensene for helse og miljø, bærekraft og ressursutnyttelse"
+    },
+    {
+     "kode": "KM4227",
+     "tekst": "gjøre rede for ulike metoder for lagring og stabling av trematerialer og hvordan ulike valg påvirker kvalitet, skader og svinn på materialene"
+    },
+    {
+     "kode": "KM4240",
+     "tekst": "gjøre rede for hvordan gjenbruk, avfallshåndtering og valg av materialer kan bidra til en bærekraftig produksjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget materialkunnskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget materialkunnskap. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget materialkunnskap ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget materialkunnskap basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV401",
+   "tittel": "Kompetansemål og vurdering for arbeidsplanlegging og tegning",
+   "fag": [
+    "DTR2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4226",
+     "tekst": "utarbeide og bruke skisser, arbeidstegninger, modeller og digitale ressurser for å visualisere egne og andres ideer til ulike håndverksprodukter"
+    },
+    {
+     "kode": "KM4223",
+     "tekst": "gjøre rede for trefagenes historiske utvikling, stilhistorie og estetikk og anvende denne kunnskapen i eget arbeid med ulike treprodukter"
+    },
+    {
+     "kode": "KM4224",
+     "tekst": "bruke fagspråk i presentasjon og formidling av ulike treprodukter og -tjenester"
+    },
+    {
+     "kode": "KM4229",
+     "tekst": "utarbeide og dokumentere produksjonsplaner fra idé til ferdig produkt ved hjelp av tegninger og kapplister og ut fra gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4225",
+     "tekst": "vurdere og velge sammenføyninger i heltre- og plateprodukter og gjøre rede for sammenhengen mellom produktets funksjon og holdbarhet"
+    },
+    {
+     "kode": "KM4221",
+     "tekst": "beregne forbruk, tid og pris på materialer, egne produkter og tjenester og gjøre rede for hvordan ulike valg kan påvirke produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM4222",
+     "tekst": "utforske tradisjonelle sammensettingsteknikker og gjøre rede for hvordan konstruksjon, materialvalg og produksjonsmetode påvirker resultatet"
+    },
+    {
+     "kode": "KM4241",
+     "tekst": "gjøre rede for hvordan automatiserte trebearbeidingsmaskiner kan brukes i framstilling av deler og enkle produkter i tre"
+    },
+    {
+     "kode": "KM4220",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget arbeidsplanlegging og tegning når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget arbeidsplanlegging og tegning. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget arbeidsplanlegging og tegning ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget arbeidsplanlegging og tegning basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon: Eleven skal ha én standpunktkarakter.",
+    "Materialkunnskap: Eleven skal ha én standpunktkarakter.",
+    "Arbeidsplanlegging og tegning: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon, materialkunnskap og arbeidsplanlegging og tegning: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Materialkunnskap: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Arbeidsplanlegging og tegning: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon, materialkunnskap og arbeidsplanlegging og tegning Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

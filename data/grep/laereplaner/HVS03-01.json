@@ -1,0 +1,135 @@
+{
+ "kode": "HVS03-01",
+ "tittel": "Læreplan i hovslagarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV417",
+   "tittel": "Kompetansemål og vurdering hovslagarfaget",
+   "fag": [
+    "HVS3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4412",
+     "tekst": "planleggje, vurdere, gjennomføre og dokumentere verking og skoing av hest"
+    },
+    {
+     "kode": "KM4434",
+     "tekst": "arbeide i tråd med gjeldande regelverk for dyrevelferd og verke og sko hest på ein slik måte at det fremjar velferd, helse og prestasjonar"
+    },
+    {
+     "kode": "KM4415",
+     "tekst": "kjenne att og beskrive språket, åtferda og normaltilstandane til hesten, og handtere hest på ein trygg og etisk forsvarleg måte"
+    },
+    {
+     "kode": "KM4433",
+     "tekst": "vurdere anatomien og eksteriøret til hesten med vekt på dei nedre ekstremitetane, og gjere greie for oppbygginga av beinet og hoven med ytre og indre strukturar"
+    },
+    {
+     "kode": "KM4432",
+     "tekst": "vurdere og korrigere beinstilling på føl og unghestar"
+    },
+    {
+     "kode": "KM4431",
+     "tekst": "beskrive gangartane og vurdere bevegelsesmønsteret til hesten, og vurdere korleis verkinga og beslaget påverkar dette"
+    },
+    {
+     "kode": "KM4430",
+     "tekst": "velje, tilpasse og halde ved like verktøy og utstyr til arbeidet som skal utførast"
+    },
+    {
+     "kode": "KM4429",
+     "tekst": "velje materiale og dimensjonar på beslag etter korleis hesten blir brukt, og kva behov han har, og sko med eigna bruks- eller sjukebeslag"
+    },
+    {
+     "kode": "KM4428",
+     "tekst": "verke for berrfot og beslag og grunngi val for tilskjering"
+    },
+    {
+     "kode": "KM4427",
+     "tekst": "tilverke beslag etter mål og arbeidsteikning"
+    },
+    {
+     "kode": "KM4414",
+     "tekst": "vurdere effektar og bieffektar av beslag og ulike modifikasjonar på desse, og modifisere beslaget slik hesten treng"
+    },
+    {
+     "kode": "KM4413",
+     "tekst": "sveise for relevant hovslagararbeid"
+    },
+    {
+     "kode": "KM4426",
+     "tekst": "vurdere korleis ytre faktorar og levemiljøet til hesten påverkar hoven, hovhelsa og behova til hesten, og ta omsyn til dette i verking og skoing"
+    },
+    {
+     "kode": "KM4425",
+     "tekst": "gjere greie for eigenskapane til ulike produkt og materiale som blir nytta i skoing og verking, og bruke desse etter behov"
+    },
+    {
+     "kode": "KM4435",
+     "tekst": "utføre teknikkar for reparasjon og oppbygging av hovar, og leggje hovbandasje"
+    },
+    {
+     "kode": "KM4424",
+     "tekst": "identifisere og førebyggje smerte, skadar og sjukdommar, og tilvise vidare når tilstanden krev ekstern kompetanse og behandling"
+    },
+    {
+     "kode": "KM4422",
+     "tekst": "samarbeide med veterinær i førebygging og behandling av skadar og sjukdommar"
+    },
+    {
+     "kode": "KM4418",
+     "tekst": "samarbeide med og rettleie hestehaldaren og anna hestepersonell om skoing og hovpleie"
+    },
+    {
+     "kode": "KM4423",
+     "tekst": "bruke fagspråk som er tilpassa mottakaren i samarbeid og kommunikasjon med veterinær, anna hestepersonell og hestehaldaren"
+    },
+    {
+     "kode": "KM4421",
+     "tekst": "vurdere smittefare og setje inn smitteverntiltak"
+    },
+    {
+     "kode": "KM4420",
+     "tekst": "vurdere risiko i hovslagarabeid og gjennomføre tiltak for å redusere risikoen"
+    },
+    {
+     "kode": "KM4417",
+     "tekst": "utføre arbeidsoppgåver på ein ergonomisk rett måte, gjere greie for vanlege belastningsskadar og setje i verk tiltak for å unngå desse"
+    },
+    {
+     "kode": "KM4436",
+     "tekst": "utforske dei kulturhistoriske tradisjonane i hovslagarfaget, og reflektere over kva krav og forventningar som blir stilte til ein profesjonell yrkesutøvar"
+    },
+    {
+     "kode": "KM4416",
+     "tekst": "identifisere faktorar som påverkar arbeidsmiljø, økonomi og kvalitet, setje i verk forbetringstiltak og gjere greie for drift av næringsverksemd"
+    },
+    {
+     "kode": "KM4419",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i hovslagarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i hovslagarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.\nOpplæringa i hovslagarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
+   ]
+  }
+ ]
+}

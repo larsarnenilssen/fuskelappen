@@ -1,0 +1,132 @@
+{
+ "kode": "IDR04-03",
+ "tittel": "Læreplan i treningsledelse",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV281",
+   "tittel": "Kompetansemål og vurdering treningsledelse 1",
+   "fag": [
+    "IDR4Z10"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2997",
+     "tekst": "gjøre rede for og anvende grunnprinsippene for instruksjon og ledelse"
+    },
+    {
+     "kode": "KM2998",
+     "tekst": "gjøre rede for og bruke ulike undervisnings- og instruksjonsmetoder"
+    },
+    {
+     "kode": "KM2999",
+     "tekst": "gjør rede for ulike leder- og treneregenskaper"
+    },
+    {
+     "kode": "KM3000",
+     "tekst": "utarbeide og gjennomføre hensiktsmessige planer for aktivitet og trening"
+    },
+    {
+     "kode": "KM3001",
+     "tekst": "reflektere over egen og andres praksis som trener og leder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i treningsledelse 1. Elevene viser og utvikler kompetanse i faget ved å planlegge og gjennomføre praktiske økter. De viser og utvikler kompetanse ved å utforske undervisningsprinsippene og de ulike undervisningsmetodene. De viser og utvikler også kompetanse i faget ved å observere og reflektere over andre elevers praksis.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å gi elevene mulighet til å bruke fagkunnskapen i praktiske situasjoner. Læreren skal være i dialog med elevene om utviklingen deres i treningsledelse, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å forbedre kompetansen sin i utøvelsen av trener- og lederrollen."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter treningsledelse 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i treningsledelse 1 basert på kompetansen eleven har vist ved å bruke fagkunnskap, erfaringer og reflektert tenkning i praktiske situasjoner."
+   ]
+  },
+  {
+   "kode": "KV282",
+   "tittel": "Kompetansemål og vurdering treningsledelse 2",
+   "fag": [
+    "IDR4Z09"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3002",
+     "tekst": "beskrive sentrale forhold ved barns vekst og utvikling"
+    },
+    {
+     "kode": "KM3003",
+     "tekst": "forklare hvordan samspill og kommunikasjon påvirker læring og utvikling i ulike former for aktivitet og trening"
+    },
+    {
+     "kode": "KM3004",
+     "tekst": "veilede både individuelt og i gruppe i ulike praksissituasjoner"
+    },
+    {
+     "kode": "KM3005",
+     "tekst": "bruke hensiktsmessige aktiviteter, øvelser og undervisningsmetoder i praksis"
+    },
+    {
+     "kode": "KM3006",
+     "tekst": "planlegge, lede og vurdere trening som fører til ferdighetsutvikling i en idrettsaktivitet"
+    },
+    {
+     "kode": "KM3007",
+     "tekst": "planlegge, lede og vurdere aktiviteter for grupper og enkeltpersoner med ulike forutsetninger"
+    },
+    {
+     "kode": "KM3008",
+     "tekst": "vurdere egen og andres praksis som trener og leder"
+    },
+    {
+     "kode": "KM3009",
+     "tekst": "vise variasjon i valg av aktiviteter, øvelser og metoder ved planlegging og gjennomføring av aktivitet og trening"
+    },
+    {
+     "kode": "KM3010",
+     "tekst": "planlegge, gjennomføre og evaluere et arrangement knyttet til treningsledelse"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i treningsledelse 2. Elevene viser og utvikler kompetanse i faget når de deltar i treningsledelse med hovedvekt på praktisk læring. De viser og utvikler også kompetanse i faget ved å planlegge, gjennomføre og evaluere praktiske økter. Videre viser og utvikler elevene kompetanse i faget ved å reflektere over egen og andres praksis.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ha en teoretisk og praktisk tilnærming til faget. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å lede grupper med ulik alder og med ulike forutsetninger, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle seg til å bli trygge og ansvarsbevisste ledere."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter treningsledelse 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i treningsledelse 2 basert på kompetansen eleven har vist gjennom å planlegge og tilrettelegge for ulike og varierte praksissituasjoner. I utøvelsen av trener- og lederrollen vil også elevens veilednings- og refleksjonskompetanse være med og danne grunnlag for standpunktvurderingen."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Treningsledelse 1: Eleven skal ha én standpunktkarakter.",
+    "Treningsledelse 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Treningsledelse 1: Eleven skal ikke opp til eksamen.",
+    "Treningsledelse 2: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Treningsledelse 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Treningsledelse 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

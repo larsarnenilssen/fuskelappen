@@ -1,0 +1,160 @@
+{
+ "kode": "IDR07-02",
+ "tittel": "Læreplan i friluftsliv",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV289",
+   "tittel": "Kompetansemål og vurdering friluftsliv 1",
+   "fag": [
+    "IDR7Z03"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3058",
+     "tekst": "utforske og gjennomføre aktiviteter og turer i nærmiljøet til ulike årstider"
+    },
+    {
+     "kode": "KM3076",
+     "tekst": "planlegge, gjennomføre og reflektere over turer med flere overnattinger i ulike naturmiljøer og til ulike årstider"
+    },
+    {
+     "kode": "KM3075",
+     "tekst": "vurdere og tilberede mat som er hensiktsmessig på friluftslivsturer"
+    },
+    {
+     "kode": "KM3074",
+     "tekst": "forstå betydningen av og bruke hensiktsmessig bekledning i ulike typer friluftsliv"
+    },
+    {
+     "kode": "KM3073",
+     "tekst": "anvende, vedlikeholde og ta vare på utstyr og redskaper på en hensiktsmessig måte"
+    },
+    {
+     "kode": "KM3072",
+     "tekst": "bruke førstehjelp og livreddende ferdigheter i tilknytning til friluftsliv"
+    },
+    {
+     "kode": "KM3071",
+     "tekst": "gjennomføre sikker ferdsel og praktisere et friluftsliv som tar hensyn til naturen"
+    },
+    {
+     "kode": "KM3070",
+     "tekst": "beskrive og forstå hva som kan skape gode naturopplevelser"
+    },
+    {
+     "kode": "KM3069",
+     "tekst": "samarbeide for å bidra til fellesskap, sosiale opplevelser og mestring"
+    },
+    {
+     "kode": "KM3077",
+     "tekst": "reflektere over hvilken betydning friluftsliv kan ha for den enkelte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i friluftsliv 1. Elevene viser og utvikler kompetanse gjennom å planlegge og gjennomføre et bredt spekter av ulike typer friluftsliv, til ulike årstider og i ulike naturmiljøer. De viser og utvikler også kompetanse gjennom samarbeid, mestring og fellesskap og gjennom å utøve et sikkert friluftsliv der hensynet til både naturen, naturopplevelsen og bidraget til den enkeltes helse er sentralt.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte friluftslivsturer og aktiviteter som åpner for at kompetanse og faglig utvikling hos elevene kan vises på ulike måter. Læreren skal være i dialog med elevene om utviklingen deres i friluftsliv, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å styrke kompetansen sin i planlegging og gjennomføring av friluftslivsturer, i anvendelse av basisferdigheter og i tilrettelegging av og refleksjon over naturopplevelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter friluftsliv 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i friluftsliv 1 basert på kompetansen eleven har vist gjennom et bredt utvalg av friluftslivsturer og uteaktiviteter der hun eller han har tilegnet seg og brukt ferdigheter og kunnskaper i ulike naturmiljøer og til ulike årstider. Samarbeid, aktiv deltakelse og evne til å ta ansvar er også vesentlige sider ved kompetansen i faget."
+   ]
+  },
+  {
+   "kode": "KV290",
+   "tittel": "Kompetansemål og vurdering friluftsliv 2",
+   "fag": [
+    "IDR7Z04"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3068",
+     "tekst": "planlegge og gjennomføre aktiviteter og turer i nærmiljøet selvstendig og i fellesskap"
+    },
+    {
+     "kode": "KM3066",
+     "tekst": "planlegge, gjennomføre og vurdere turer med flere overnattinger i ulike naturmiljøer og til ulike årstider"
+    },
+    {
+     "kode": "KM3065",
+     "tekst": "forstå betydningen av et hensiktsmessig kosthold på turer og utforske mulighetene naturen gir oss som matkilde"
+    },
+    {
+     "kode": "KM3064",
+     "tekst": "forstå vanlige værtegn og varsler naturen gir, og ta hensyn til disse"
+    },
+    {
+     "kode": "KM3063",
+     "tekst": "anvende utstyr og redskaper på en bærekraftig måte,"
+    },
+    {
+     "kode": "KM3062",
+     "tekst": "anvende førstehjelp og livreddende ferdigheter i forbindelse med det friluftslivet eleven utøver"
+    },
+    {
+     "kode": "KM3061",
+     "tekst": "utøve og reflektere over bærekraftig ferdsel i naturen"
+    },
+    {
+     "kode": "KM3060",
+     "tekst": "reflektere over hvordan nye uteaktiviteter er med på å forandre det tradisjonelle friluftslivet"
+    },
+    {
+     "kode": "KM3059",
+     "tekst": "planlegge, gjennomføre og vurdere aktiviteter og turer som veileder for en gruppe"
+    },
+    {
+     "kode": "KM3067",
+     "tekst": "gjennomføre og vurdere friluftslivsturer der mestringsfølelse, naturopplevelser og fellesskap står sentralt"
+    },
+    {
+     "kode": "KM3078",
+     "tekst": "vurdere mulige helsemessige gevinster av friluftsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i friluftsliv 2. Elevene viser og utvikler kompetanse gjennom å planlegge, gjennomføre og vurdere et bredt spekter av ulike typer friluftsliv i ulike naturmiljøer, også som veileder for en gruppe. De viser og utvikler også kompetanse gjennom samarbeid, mestring og fellesskap, og gjennom å utøve et bærekraftig friluftsliv der hensynet til naturen, tilrettelegging av naturopplevelser og bidraget til en aktiv livsstil utendørs er sentralt.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte friluftslivsturer og aktiviteter som åpner for at kompetanse og faglig utvikling hos elevene kan vises på ulike måter. Læreren skal være i dialog med elevene om utviklingen deres i friluftsliv, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å styrke kompetansen sin i planlegging, gjennomføring og vurdering av friluftslivsturer, i anvendelse av basisferdigheter og i tilrettelegging av og refleksjon over naturopplevelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter friluftsliv 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i friluftsliv 2 basert på kompetansen eleven har vist gjennom et bredt utvalg av friluftslivsturer og uteaktiviteter der eleven har tilegnet seg og anvendt ferdigheter og kunnskaper i ulike naturmiljøer og til ulike årstider. Samarbeid, aktiv deltakelse og evne til å ta ansvar er også vesentlige sider ved kompetansen i faget."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Friluftsliv 1: Eleven skal ha én standpunktkarakter.",
+    "Friluftsliv 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Friluftsliv 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Friluftsliv 2: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Friluftsliv 1: Det er ingen privatistordning.",
+    "Friluftsliv 2: Det er ingen privatistordning."
+   ]
+  }
+ ]
+}

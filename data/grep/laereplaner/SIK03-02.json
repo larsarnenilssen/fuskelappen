@@ -1,0 +1,148 @@
+{
+ "kode": "SIK03-02",
+ "tittel": "Læreplan i vg3 sikkerhetsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-04",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV593",
+   "tittel": "Kompetansemål og vurdering vg3 Sikkerhetsfaget",
+   "fag": [
+    "SIK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6799",
+     "tekst": "gjøre rede for hva som kan true kritiske samfunnsfunksjoner og infrastruktur, og foreslå tiltak som kan sikre disse"
+    },
+    {
+     "kode": "KM6793",
+     "tekst": "reflektere over sikkerhet og trygghet i et samfunnsperspektiv og gjøre rede for samhandling mellom offentlige myndigheter og sikkerhetsbransjen"
+    },
+    {
+     "kode": "KM6791",
+     "tekst": "planlegge og gjennomføre risikoanalyser etter gjeldende standarder og presentere ulike forebyggende og konsekvensreduserende sikkerhetstjenester og -produkter"
+    },
+    {
+     "kode": "KM6809",
+     "tekst": "planlegge, gjennomføre og vurdere tiltak for å redusere risiko for brann i ulike virksomheter, etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM6816",
+     "tekst": "utvikle enkle beredskapsplaner og planlegge, gjennomføre og vurdere beredskapsøvelser"
+    },
+    {
+     "kode": "KM6812",
+     "tekst": "planlegge og gjennomføre sikkerhetsbefaringer og utarbeide sikringsplan for ulike objekter"
+    },
+    {
+     "kode": "KM6795",
+     "tekst": "gjøre rede for ulike typer identitetsbevis og utforske sikkerhetselementer i disse"
+    },
+    {
+     "kode": "KM6808",
+     "tekst": "beskrive og dokumentere observasjoner, egne aktiviteter og ulike hendelser"
+    },
+    {
+     "kode": "KM6817",
+     "tekst": "reflektere over egen maktposisjon i ulike arbeidssituasjoner og i møte med ulike sårbare grupper og utøve yrkesrollen i tråd med demokratiske prinsipper"
+    },
+    {
+     "kode": "KM6803",
+     "tekst": "reflektere over faktorer som påvirker samhandling mellom mennesker i ulike livssituasjoner"
+    },
+    {
+     "kode": "KM6818",
+     "tekst": "forstå og gjøre rede for hvordan kulturforskjeller kan påvirke ulike arbeidssituasjoner og ta hensyn til dette i møte med kolleger, kunder og publikum"
+    },
+    {
+     "kode": "KM6806",
+     "tekst": "vurdere risiko for konflikt og foreslå og gjennomføre tiltak for å forebygge og håndtere konfliktsituasjoner"
+    },
+    {
+     "kode": "KM6794",
+     "tekst": "utforske og anvende ulike hjelpemidler og verktøy i sikkerhetsarbeidet"
+    },
+    {
+     "kode": "KM6797",
+     "tekst": "gjennomføre førstehjelp og omsorg ved akutt sykdom og skade"
+    },
+    {
+     "kode": "KM6796",
+     "tekst": "gjøre rede for symptomer på ulike typer rus og gjennomføre tiltak for å håndtere ruspåvirkede personer"
+    },
+    {
+     "kode": "KM6810",
+     "tekst": "lede ulike skadesteder inntil nødetat overtar og håndtere situasjoner der liv og helse står på spill"
+    },
+    {
+     "kode": "KM6798",
+     "tekst": "reflektere over betydningen av service i sikkerhetsarbeid og tilpasse service til ulike mottakere"
+    },
+    {
+     "kode": "KM6814",
+     "tekst": "presentere ulike sikkerhetstjenester og produkter og tilpasse utførelsen av arbeidsoppgaven etter kundens behov"
+    },
+    {
+     "kode": "KM6805",
+     "tekst": "utvikle og vurdere tilbud for ulike sikkerhetsoppdrag"
+    },
+    {
+     "kode": "KM6804",
+     "tekst": "gjennomføre sikkerhetstjenester etter gjeldende lover og forskrift og krav til leveransekvalitet, og tilpasse utførelsen etter kundens behov"
+    },
+    {
+     "kode": "KM6807",
+     "tekst": "planlegge, gjennomføre og dokumentere sikkerhetsleveranser, og bidra til å gjennomføre sikkerhetsrevisjoner med forslag til kvalitetsforbedring"
+    },
+    {
+     "kode": "KM6815",
+     "tekst": "utforske områder innenfor helse, miljø og sikkerhet, anvende gjeldende regelverk i ulike arbeidssituasjoner, og gjøre rede for egen rolle og virksomhetens organisering og tiltak i helse-, miljø- og sikkerhetsarbeidet"
+    },
+    {
+     "kode": "KM6813",
+     "tekst": "utvikle og vurdere opplæringsplaner og tjenesteinstrukser for ulike sikkerhetstjenester og gjennomføre opplæring innenfor egne ansvarsområder"
+    },
+    {
+     "kode": "KM6811",
+     "tekst": "lage enkle turnusplaner for sikkerhetstjenester i samsvar med gjeldende lov- og avtaleverk"
+    },
+    {
+     "kode": "KM6801",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM6792",
+     "tekst": "reflektere over yrkesetiske retningslinjer og verdier og bruke disse i ulike arbeidssituasjoner"
+    },
+    {
+     "kode": "KM6802",
+     "tekst": "utforske og gjøre rede for sikkerhetskulturen i en virksomhet"
+    },
+    {
+     "kode": "KM6800",
+     "tekst": "arbeide etter bedriftens etiske regler og integritet, og gjøre rede for oppdragsgivers krav til informasjonssikkerhet og konfidensialitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 sikkerhetsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget. Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver.",
+    "Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 sikkerhetsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 sikkerhetsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
+   ]
+  }
+ ]
+}

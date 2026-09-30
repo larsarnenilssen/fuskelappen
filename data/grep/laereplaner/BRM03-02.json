@@ -1,0 +1,132 @@
+{
+ "kode": "BRM03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, mekaniske kabeloperasjoner",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV677",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, mekaniske kabeloperasjoner",
+   "fag": [
+    "BRM3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8537",
+     "tekst": "vurdere risiko, iverksette risikoreduserende tiltak og velge og bruke egnet sikkerhetsutstyr"
+    },
+    {
+     "kode": "KM8539",
+     "tekst": "anvende system for arbeidstillatelse, program, prosedyrer og teknisk informasjon i forbindelse med en kabeloperasjon"
+    },
+    {
+     "kode": "KM8545",
+     "tekst": "håndtere avfall, forurensninger og LRA (lavradioaktivt avfall) og bruke sikkerhetsdatablad for kjemikalier og brønnvæsker i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8560",
+     "tekst": "bruke risikoreduserende arbeidsmetoder under løfteoperasjoner og arbeid ved hengende last"
+    },
+    {
+     "kode": "KM8542",
+     "tekst": "velge og bruke løfteinnretning for kabeloperasjoner i samsvar med gjeldende regelverk"
+    },
+    {
+     "kode": "KM8541",
+     "tekst": "anvende korrekt løfteteknikk i forbindelse med håndtering av kabeloperasjonsutstyr og legge til rette for ergonomisk arbeidsstilling"
+    },
+    {
+     "kode": "KM8540",
+     "tekst": "gjøre rede for barrierer i alle faser av kabeloperasjoner og drøfte potensialet for at barrierer blokkeres"
+    },
+    {
+     "kode": "KM8557",
+     "tekst": "utføre beregninger av volum, hydrostatisk trykk, trekkevekt og skyvekraft, og bruke tabeller og databøker"
+    },
+    {
+     "kode": "KM8552",
+     "tekst": "plassere og klargjøre midlertidig kabeloperasjonsutstyr med hensyn til rømningsveier og operasjon av brønnsikringsutstyr i kritiske situasjoner"
+    },
+    {
+     "kode": "KM8551",
+     "tekst": "klargjøre og sammenstille utstyr for trykkontroll"
+    },
+    {
+     "kode": "KM8558",
+     "tekst": "gjøre rede for og gjennomføre sammenstilling av verktøystreng-komponenter for mekaniske brønnoperasjoner tilpasset brønnforhold og oppgave"
+    },
+    {
+     "kode": "KM8547",
+     "tekst": "vurdere tilstand på mekaniske og elektro-mekaniske kabeloperasjonskabler og tolke dataark, installasjonsrapport og logg"
+    },
+    {
+     "kode": "KM8556",
+     "tekst": "samarbeide ved klargjøring og montering av slepering og oppkobling mellom vinsj og loggeenhet"
+    },
+    {
+     "kode": "KM8548",
+     "tekst": "gjennomføre bygging av kabelhode for mekaniske kabeltyper og identifisere, klargjøre og koble sammen verktøystrengkomponenter"
+    },
+    {
+     "kode": "KM8543",
+     "tekst": "velge og klargjøre mekaniske trekkeverktøy og setteverktøy med tilhørende låser, plugger og ventiler"
+    },
+    {
+     "kode": "KM8553",
+     "tekst": "gjennomføre og dokumentere lekkasjetest av overflatesystem i samsvar med krav og kriterier"
+    },
+    {
+     "kode": "KM8549",
+     "tekst": "gjennomføre operering av ventiltre og dreneringssystem for å sluse verktøystreng i samarbeid med produksjonsavdelingen"
+    },
+    {
+     "kode": "KM8555",
+     "tekst": "samarbeide i gjennomføring av kabeloperasjoner med bruk av kontrollenheter for glatt og spunnet kabel"
+    },
+    {
+     "kode": "KM8550",
+     "tekst": "gjennomføre transportetappe og nedihullsoperasjon, tolke vektrespons og gjøre rede for verktøystrengens bevegelse i brønnen"
+    },
+    {
+     "kode": "KM8538",
+     "tekst": "gjennomføre brønnkontrolløvelser og betjene brønnsikringsutstyr i samsvar med nødprosedyrer"
+    },
+    {
+     "kode": "KM8554",
+     "tekst": "gjennomføre og dokumentere vedlikehold og preservering av overflateutstyr, trykkontrollutstyr, kabler og brønnverktøy"
+    },
+    {
+     "kode": "KM8559",
+     "tekst": "dokumentere utført arbeid med rapporter, sjekklister og skjemaer i henhold til prosedyrer og bruke rapporteringssystem for uønskede hendelser og tilstander"
+    },
+    {
+     "kode": "KM8544",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8546",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, mekaniske kabeloperasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 brønnfaget, mekaniske kabeloperasjoner. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, mekaniske kabeloperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

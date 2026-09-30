@@ -1,0 +1,185 @@
+{
+ "kode": "ELE01-03",
+ "tittel": "Læreplan i Vg1 elektro og datateknologi",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV254",
+   "tittel": "Kompetansemål og vurdering elektroniske kretser og nettverk",
+   "fag": [
+    "ELE1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2750",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver knyttet til elektroniske kretser og nettverk, individuelt og i samarbeid med andre og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM2759",
+     "tekst": "bygge og programmere et selvvalgt produkt som består av mikrokontroller, analoge kretser, relevante sensorer og aktuatorer for å oppnå ønsket virkemåte"
+    },
+    {
+     "kode": "KM2757",
+     "tekst": "koble sammen ulike datateknologiske enheter til et system, konfigurere aktuelle komponenter ved hjelp av programvare og opprette kommunikasjon mellom enhetene for å oppnå ønsket virkemåte"
+    },
+    {
+     "kode": "KM2734",
+     "tekst": "montere og konfigurere et mindre datanettverk med internettilkobling, utføre relevante målinger og gjøre rede for enkle tiltak for å sikre nettverket"
+    },
+    {
+     "kode": "KM2758",
+     "tekst": "utforske sensorer knyttet til elektroniske kretser og nettverk og drøfte bruksområdet deres"
+    },
+    {
+     "kode": "KM2755",
+     "tekst": "risikovurdere og utføre arbeidet i overensstemmelse med rutiner for el- og IKT-sikkerhet og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2754",
+     "tekst": "utføre arbeidet fagmessig i elektroniske kretser og nettverk i henhold til gjeldende forskrifter, montasje- og installasjonsanvisninger og kunne bruke egnede håndverktøy og maskiner"
+    },
+    {
+     "kode": "KM2756",
+     "tekst": "velge og bruke egnede instrumenter og programvare for å utføre målinger og feilsøking, og vurdere måleresultatet opp mot forventede verdier"
+    },
+    {
+     "kode": "KM2753",
+     "tekst": "vurdere kvalitet på eget arbeid og foreslå forbedringer"
+    },
+    {
+     "kode": "KM2751",
+     "tekst": "anvende og behandle materiell og utstyr i elektroniske kretser og nettverk på en ansvarlig og bærekraftig måte i samsvar med gjeldende system for internkontroll"
+    },
+    {
+     "kode": "KM2752",
+     "tekst": "håndtere avfall etter utført arbeid på en miljømessig forsvarlig måte og drøfte klima- og miljøbelastninger fra ulike produkter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i elektroniske kretser og nettverk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i elektroniske kretser og nettverk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og få mulighet til å reflektere over egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i elektroniske kretser og nettverk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven, viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i elektroniske kretser og nettverk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV255",
+   "tittel": "Kompetansemål og vurdering energi- og styresystemer",
+   "fag": [
+    "ELE1Z05"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2736",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsoppgaver knyttet til energi- og styresystemer, individuelt og i samarbeid med andre og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM2749",
+     "tekst": "programmere og sette i drift systemer for styring av dreieretning og motorturtall, forklare den prinsipielle virkemåten til motor og styresystem og drøfte effekttap"
+    },
+    {
+     "kode": "KM2745",
+     "tekst": "montere, programmere og sette i drift behovsstyrte anlegg for lys, varme og ulike effektuttak og diskutere energisparing ved styresystemet som er valgt"
+    },
+    {
+     "kode": "KM2747",
+     "tekst": "bruke riktige håndverktøy og maskiner til å produsere deler deler i metall og andre materialer ut fra arbeidstegninger"
+    },
+    {
+     "kode": "KM2748",
+     "tekst": "montere og sette i drift et mindre anlegg for produksjon og lagring av fornybar energi der likeretter og vekselretter inngår, og gjøre rede for omforming av likespenning til vekselspenning"
+    },
+    {
+     "kode": "KM2740",
+     "tekst": "montere og sette i drift styringssystemer som bruker måling av bevegelse, trykk og temperatur som inngangsdata"
+    },
+    {
+     "kode": "KM2737",
+     "tekst": "montere et mindre fordelingsystem med tilhørende jordingssystem og beskrive den prinsipielle oppbygningen av TN-, IT- og TT-nett"
+    },
+    {
+     "kode": "KM2741",
+     "tekst": "velge egnet ledning, kabel og vern, beregne og vurdere spenningsfall og dokumentere beskyttelse mot overbelastning og elektrisk sjokk"
+    },
+    {
+     "kode": "KM2746",
+     "tekst": "identifisere komponentene i et luftbehandlings- og varmepumpesystem, gjøre rede for virkemåten til hovedkomponentene og utføre målinger av CO2 og temperatur"
+    },
+    {
+     "kode": "KM2743",
+     "tekst": "risikovurdere og utføre arbeidet i overensstemmelse med rutiner for elsikkerhet, maskinsikkerhet og helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2761",
+     "tekst": "utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM2738",
+     "tekst": "bruke dokumentasjon og egnede instrumenter til å feilsøke på elektriske installasjoner"
+    },
+    {
+     "kode": "KM2744",
+     "tekst": "utføre arbeidet fagmessig i energi- og styresystemer i henhold til forskrifter, montasje- og installasjonsanvisninger og bruke egnede håndverktøy og maskiner"
+    },
+    {
+     "kode": "KM2742",
+     "tekst": "beregne strøm, spenning, resistans, impedans og effekt i like- og vekselstrømskretser og bruke egnede instrumenter for å utføre målinger og vurdere måleresultatet opp mot forventet resultat"
+    },
+    {
+     "kode": "KM2739",
+     "tekst": "gjøre rede for ulike former for produksjon, lagring og overføring av elektrisk energi og reflektere over og diskutere konsekvenser de ulike formene kan ha for klima og miljø"
+    },
+    {
+     "kode": "KM2760",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    },
+    {
+     "kode": "KM2735",
+     "tekst": "anvende og behandle materiell og utstyr i energi- og styresystemer på en ansvarlig og bærekraftig måte i henhold til gjeldende internkontrollsystem"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i energi- og styresystemer når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i energi- og styresystemer. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og få mulighet til å reflektere over egen faglige utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i energi- og styresystemer ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan de mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i energi- og styresystemer basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Elektroniske kretser og nettverk: Eleven skal ha én standpunktkarakter.",
+    "Energi- og styresystemer: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Elektroniske kretser og nettverk: Eleven skal ikke opp til eksamen.",
+    "Energi- og styresystemer: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Elektroniske kretser og nettverk: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Energi- og styresystemer: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Elektroniske kretser og nettverk og energi- og styresystemer: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

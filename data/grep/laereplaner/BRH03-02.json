@@ -1,0 +1,116 @@
+{
+ "kode": "BRH03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, havbunnsinstallasjoner",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV674",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, havbunnsinstallasjoner",
+   "fag": [
+    "BRH3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8478",
+     "tekst": "gjennomføre arbeid i tråd med regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8495",
+     "tekst": "gjøre rede for og reflektere over myndighetenes helsemessige krav til arbeid på norsk sokkel"
+    },
+    {
+     "kode": "KM8494",
+     "tekst": "planlegge, gjennomføre risikovurderinger og rapportere avvik i tråd med rutiner og prosedyrer i gjennomføring av arbeidsoppdrag"
+    },
+    {
+     "kode": "KM8493",
+     "tekst": "gjøre rede for oppbyggingen av en undervannsinstallasjon fra sammensetting til installasjon"
+    },
+    {
+     "kode": "KM8492",
+     "tekst": "gjøre rede for hvordan undervannsverktøy-systemer på brønnhodet fungerer, og betjene dem"
+    },
+    {
+     "kode": "KM8491",
+     "tekst": "gjøre rede for hvordan undervannsverktøy-systemer for installasjon og komplettering av ventiltre fungerer, og betjene dem"
+    },
+    {
+     "kode": "KM8490",
+     "tekst": "bruke prosedyrer, tegningsunderlag og vedlikeholdsprogrammer for planlegging og gjennomføring av vedlikehold på ulike systemer"
+    },
+    {
+     "kode": "KM8489",
+     "tekst": "velge og bruke verktøy for montering og demontering av komponenter og installasjoner og trekking av utstyr på havbunnen"
+    },
+    {
+     "kode": "KM8488",
+     "tekst": "bruke prosedyrer, tegningsunderlag og vedlikeholdsprogrammer for planlegging og gjennomføring av vedlikehold på ulike systemer"
+    },
+    {
+     "kode": "KM8487",
+     "tekst": "betjene ulike kontrollsystemer for verktøystyring"
+    },
+    {
+     "kode": "KM8486",
+     "tekst": "gjennomføre vedlikehold, trykktesting, montering og demontering på ulike systemer som er knyttet til havbunnsinstallasjoner"
+    },
+    {
+     "kode": "KM8485",
+     "tekst": "betjene undervannsverktøy-systemer for installasjon av produksjonsutstyr, brønnvedlikehold, modulutskifting og inntrekking av produksjonsrør og hydrauliske kabler på havbunnen"
+    },
+    {
+     "kode": "KM8484",
+     "tekst": "gjennomføre installasjon i henhold til installasjonsprogrammer, prosedyrer og gjeldende regelverk"
+    },
+    {
+     "kode": "KM8483",
+     "tekst": "ferdigstille og bruke undervannsutstyr og verktøysystemer for brønninstallasjon"
+    },
+    {
+     "kode": "KM8482",
+     "tekst": "utarbeide sluttdokumentasjon for utført arbeid og vurdere korrigerende tiltak"
+    },
+    {
+     "kode": "KM8481",
+     "tekst": "gjennomføre systematisk vedlikehold på undervannsverktøy-systemer ute til havs og på verksted"
+    },
+    {
+     "kode": "KM8480",
+     "tekst": "reflektere over fordeler og ulemper ved undervannsløsninger i forhold til plattformsløsninger"
+    },
+    {
+     "kode": "KM8479",
+     "tekst": "gjøre rede for prinsipper og prosesser for arbeid i høyden og ved fallende gjenstander og iverksette nødvendige sikkerhetstiltak"
+    },
+    {
+     "kode": "KM8496",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8497",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, havbunnsinstallasjoner når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 brønnfaget, havbunnsinstallasjoner. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, havbunnsinstallasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

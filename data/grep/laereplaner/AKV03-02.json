@@ -1,0 +1,112 @@
+{
+ "kode": "AKV03-02",
+ "tittel": "Læreplan i vg3 akvakulturfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-01",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV662",
+   "tittel": "Kompetansemål og vurdering vg3 akvakulturfaget",
+   "fag": [
+    "AKV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8236",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid i akvakulturanlegg i henhold til gjeldende regelverk og kvalitetssystemer"
+    },
+    {
+     "kode": "KM8239",
+     "tekst": "reflektere over hvordan driften av et akvakulturanlegg påvirker fiskevelferd og miljø, og hvordan driften kan bidra til verdiskapning"
+    },
+    {
+     "kode": "KM8238",
+     "tekst": "rengjøre og desinfisere produksjonsutstyr i henhold til prosedyrer og regelverk"
+    },
+    {
+     "kode": "KM8233",
+     "tekst": "håndtere døde akvakulturorganismer etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM8227",
+     "tekst": "røkte akvakulturorganismer i tråd med prinsipper for dyrevelferd"
+    },
+    {
+     "kode": "KM8240",
+     "tekst": "vurdere helse- og velferdstilstanden til ulike akvakulturarter og iverksette nødvendige tiltak"
+    },
+    {
+     "kode": "KM8228",
+     "tekst": "registrere, overvåke og tolke vannmiljøparametre og iverksette nødvendige tiltak"
+    },
+    {
+     "kode": "KM8243",
+     "tekst": "ta prøver av akvakulturorganismer og fôr for videre analyse"
+    },
+    {
+     "kode": "KM8242",
+     "tekst": "vurdere fôringsstrategier og fôrmengde og tildele fôr til akvakulturorganismer"
+    },
+    {
+     "kode": "KM8241",
+     "tekst": "kontrollere vekst og utviklingsstadier og sortere og klassifisere akvakulturorganismer etter krav i bedrift og i marked"
+    },
+    {
+     "kode": "KM8237",
+     "tekst": "bruke løfte- og lasteutstyr i akvakulturanlegg og på fartøy etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM8244",
+     "tekst": "bruke framkomstmidler og redskaper etter gjeldende regelverk og foreta daglig ettersyn og vedlikehold etter gjeldende prosedyrer og rutiner"
+    },
+    {
+     "kode": "KM8234",
+     "tekst": "utføre arbeidsoppgaver i forbindelse med transport, mottak og levering av akvakulturorganismer"
+    },
+    {
+     "kode": "KM8232",
+     "tekst": "vurdere og anvende produksjonsplan for en akvakulturvirksomhet"
+    },
+    {
+     "kode": "KM8231",
+     "tekst": "vurdere risiko og ivareta egen og andres helse og sikkerhet under ulike forhold"
+    },
+    {
+     "kode": "KM8229",
+     "tekst": "vurdere og gjennomføre brannforebyggende tiltak og bruke brannslokkingsutstyr på arbeidsplassen"
+    },
+    {
+     "kode": "KM8245",
+     "tekst": "anvende beredskapsplaner og varslingsrutiner i henhold til bedriftens organisering"
+    },
+    {
+     "kode": "KM8235",
+     "tekst": "vurdere hvordan eget arbeid og andre innsatsfaktorer påvirker bedriftens resultat"
+    },
+    {
+     "kode": "KM8230",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og reflektere over arbeidsgiver og arbeidstakers plikter og rettigheter i virksomheten"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 akvakulturfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 akvakulturfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 akvakulturfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én–to virkedager."
+   ]
+  }
+ ]
+}

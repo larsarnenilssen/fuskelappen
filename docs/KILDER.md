@@ -14,6 +14,7 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata (ikke aktiv) | 4, 5, 6, 7, 8 |
 | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta), med vurderingsreglane](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata (ikke aktiv) | 4, 5, 6, 7, 8 |
 | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | Utdanningsdirektoratet | nasjonal | grep | NLOD 2.0 | grep | 1, 2, 3, 6 |
+| [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/) | Utdanningsdirektoratet | nasjonal | side | NLOD 2.0 | ingen | 2, 6 |
 | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/) | Utdanningsdirektoratet | nasjonal | side | NLOD 2.0 | side (ikke aktiv) | 4 |
 | [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/) | Utdanningsdirektoratet | nasjonal | side | NLOD 2.0 | side (ikke aktiv) | 4, 6 |
 | [Lokal forskrift om inntak til vidaregåande opplæring, Vestland fylkeskommune](https://www.vlfk.no/) | Vestland fylkeskommune (Lovdata) | fylke (46) | side | NLOD 2.0 | lovdata (ikke aktiv) | 5 |
@@ -35,7 +36,8 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **ks-hovedtariffavtalen:** PDF-utgaven KS publiserer på https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/. Kildejobben sammenligner fingeravtrykket av hele filen. Brukes for timelønn (§ 12.4), feriepenger (§ 7.4.2) og garantilønn (kap. 4 punkt 4.1).
 - **arbeidsmiljoloven:** Kildejobben følger kapittel 10 om arbeidstid.
 - **opplaeringsforskrifta:** Lenken går foreløpig til Udirs gjengivelse. Lovdata-adressen settes når kilden aktiveres.
-- **udir-grep:** Programområder, fagkoder og årstimetall hentes hver uke med npm run hent:grep. Stemmer testene med de nye dataene, tas de inn og publiseres automatisk (eier 30.09.2026, avgjørelse 018). Feiler testene, blir status «endret», og dataene tas ikke inn. Fingeravtrykket godkjennes ikke, fordi dataene oppdateres automatisk.
+- **udir-grep:** Programområder, fagkoder, årstimetall, vurderingsordninger og læreplaner (kompetansemål, underveisvurdering og vurderingsordning) hentes hver uke med npm run hent:grep (avgjørelse 022). Stemmer testene med de nye dataene, tas de inn og publiseres automatisk (eier 30.09.2026, avgjørelse 018). Feiler testene, blir status «endret», og dataene tas ikke inn. Fingeravtrykket godkjennes ikke, fordi dataene oppdateres automatisk.
+- **udir-lk20:** Fagsidene lenker til læreplanene her. Teksten i appen hentes fra Grep (udir-grep), og endringer i læreplanene kommer i den ukentlige kontrollsaken derfra. Siden sjekkes derfor ikke for seg.
 - **vlfk-forskrift-inntak:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
 - **vlfk-skulereglar:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
 - **vlfk-sider:** Hvilke sider som sjekkes, bestemmes når kilden aktiveres.

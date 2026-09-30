@@ -1,0 +1,175 @@
+{
+ "kode": "IDR02-03",
+ "tittel": "Læreplan i treningslære",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV278",
+   "tittel": "Kompetansemål og vurdering treningslære 1",
+   "fag": [
+    "IDR2Z06",
+    "IDR2Z07"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2958",
+     "tekst": "sette seg ulike mål med tanke på prestasjonsutvikling"
+    },
+    {
+     "kode": "KM2980",
+     "tekst": "beskrive arbeidskravs og kapasitetsanalyse"
+    },
+    {
+     "kode": "KM2979",
+     "tekst": "utarbeide og reflektere over betydningen av økt-, uke- og periodeplaner"
+    },
+    {
+     "kode": "KM2978",
+     "tekst": "forklare treningsformer, treningsmetoder og øvelser"
+    },
+    {
+     "kode": "KM2977",
+     "tekst": "gjøre rede for grunnleggende treningsprinsipper"
+    },
+    {
+     "kode": "KM2976",
+     "tekst": "beskrive tester innenfor ulike treningsformer"
+    },
+    {
+     "kode": "KM2975",
+     "tekst": "forklare hvordan oppvarming og treningsformer kan påvirke kroppen fysisk og psykisk"
+    },
+    {
+     "kode": "KM2974",
+     "tekst": "forklare kroppens sirkulasjons- og respirasjonssystem"
+    },
+    {
+     "kode": "KM2973",
+     "tekst": "beskrive oppbygningen av og funksjonen til muskel-, nerve- og skjelettsystemet, og forklare muskelarbeid i ulike øvelser"
+    },
+    {
+     "kode": "KM2972",
+     "tekst": "beskrive aerob og anaerob energifrigjøring"
+    },
+    {
+     "kode": "KM2971",
+     "tekst": "gjøre rede for hvordan idrettsskader kan forebygges og behandles"
+    },
+    {
+     "kode": "KM2981",
+     "tekst": "gjøre rede for hvordan ernæring, restitusjon og livsstil kan påvirke helse og prestasjonsutvikling"
+    },
+    {
+     "kode": "KM2970",
+     "tekst": "drøfte informasjon om trening på en kritisk måte"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i treningslære 1. Elevene viser og utvikler kompetanse i faget når de gjennom aktiv medvirkning tilegner seg en grunnleggende forståelse av kroppens oppbygning og funksjon. De viser og utvikler også kompetanse når de tilegner seg kunnskap om helse og livsstil, treningsmetoder, treningsformer og øvelser. Videre viser og utvikler elevene kompetanse i faget når de beskriver, gjør rede for og vurderer fagstoff på en selvstendig og kritisk måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å gi variert undervisning som kan gi kunnskap om grunnleggende ferdigheter i faget. Læreren skal være i dialog med elevene om utviklingen deres for å oppnå forståelse og innsikt i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å utvikle forståelsen for anvendt treningslære, både knyttet til treningsplanlegging, kroppens oppbygging og funksjon og helse og livsstil."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter treningslære 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i treningslære 1 basert på kompetansen eleven har vist ved å se sammenhenger og vise forståelse på en selvstendig og kritisk måte."
+   ]
+  },
+  {
+   "kode": "KV279",
+   "tittel": "Kompetansemål og vurdering treningslære 2",
+   "fag": [
+    "IDR2Z08"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2968",
+     "tekst": "drøfte og ta i bruk grunnleggende treningsprinsipper"
+    },
+    {
+     "kode": "KM2967",
+     "tekst": "utarbeide og begrunne arbeidskravs- og kapasitetsanalyse, treningsplaner og mål knyttet til prestasjonsutvikling i en valgt idrettsaktivitet."
+    },
+    {
+     "kode": "KM2966",
+     "tekst": "bruke og vurdere forskjellige tester"
+    },
+    {
+     "kode": "KM2965",
+     "tekst": "gjøre rede for faktorer som har betydning for utvikling av fysiske, psykiske, tekniske og koordinative egenskaper"
+    },
+    {
+     "kode": "KM2964",
+     "tekst": "gjøre rede for hvordan energifrigjøringen foregår i idrettsaktiviteter"
+    },
+    {
+     "kode": "KM2963",
+     "tekst": "gjøre rede for mekaniske og organiske forhold som er sentrale i en valgt øvelse"
+    },
+    {
+     "kode": "KM2962",
+     "tekst": "forklare bevegelsesprinsipper som har betydning for funksjonell teknikk i en valgt idrettsaktivitet"
+    },
+    {
+     "kode": "KM2961",
+     "tekst": "gjør rede for treningsformer, treningsmetoder og øvelser som har betydning for en valgt idrettsaktivitet"
+    },
+    {
+     "kode": "KM2960",
+     "tekst": "utføre mental trening og drøfte betydningen av slik trening"
+    },
+    {
+     "kode": "KM2959",
+     "tekst": "drøfte hvordan doping og stimulerende midler kan virke negativt inn på helse og prestasjon"
+    },
+    {
+     "kode": "KM2969",
+     "tekst": "vurdere påliteligheten av kilder knyttet til treningslære"
+    },
+    {
+     "kode": "KM2982",
+     "tekst": "vurdere sammenheng mellom trening, helse og prestasjonsutvikling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i treningslære 2. Elevene viser og utvikler kompetanse i faget når de får løse ulike problemer, vurdere kilder kritisk og planlegge trening for å forbedre prestasjon, helse og livsstil. De viser og utvikler også kompetanse i faget når de reflekterer og bruker teori knyttet til treningslære.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å involvere elevene i læringsarbeidet og legge til rette for systematisk arbeid. Læreren skal være i dialog med elevene om utviklingen deres for å oppnå forståelse og innsikt i faget, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å kunne videreutvikle forståelsen for anvendt treningslære, både knyttet til treningsplanlegging, kroppens oppbygging og funksjon og helse og livsstil."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter treningslære 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i treningslære 2 basert på kompetansen eleven har vist ved å se sammenheng og vise forståelse på en selvstendig og kritisk måte."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Treningslære 1: Eleven skal ha én standpunktkarakter.",
+    "Treningslære 2: Eleven skal ha én standpunktkarakter.",
+    "Det skal bare settes standpunktvurdering for hele treningslære 1. Eleven skal ha halvårsvurdering med karakter på slutten av første opplæringsår i faget."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Treningslære 1: Eleven kan trekkes ut til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Treningslære 2: Eleven kan trekkes ut til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Treningslære 1: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Treningslære 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha foreberedelsesdel."
+   ]
+  }
+ ]
+}

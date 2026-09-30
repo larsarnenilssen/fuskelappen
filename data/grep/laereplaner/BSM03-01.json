@@ -1,0 +1,120 @@
+{
+ "kode": "BSM03-01",
+ "tittel": "Læreplan i vg3 bilsalmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV648",
+   "tittel": "Kompetansemål og vurdering vg3 bilsalmakerfaget",
+   "fag": [
+    "BSM3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7869",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7872",
+     "tekst": "utforske og eksperimentere med form, farge, teknikk, materiale og verktøy, utvikle ideer til ulike produkter og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM7887",
+     "tekst": "vurdere, lage og spesialtilpasse, reparere, restaurere og vedlikeholde ulike bilsalmakerprodukter"
+    },
+    {
+     "kode": "KM7886",
+     "tekst": "snøre, stoppe og trekke seter i eller på ulike framkomstmidler"
+    },
+    {
+     "kode": "KM7885",
+     "tekst": "trekke tak og utføre annet innvendig bilsalmakerarbeid i ulike framkomstmidler"
+    },
+    {
+     "kode": "KM7884",
+     "tekst": "lage og montere kapell, kabrioleter og vinyltak til eldre framkomstmidler"
+    },
+    {
+     "kode": "KM7883",
+     "tekst": "ta mål, lage maler og beregne materialforbruk til ulike bilsalmakerprodukter"
+    },
+    {
+     "kode": "KM7882",
+     "tekst": "velge og bruke ulike sammenføyingsteknikker og montere beslag på ulike materialer"
+    },
+    {
+     "kode": "KM7880",
+     "tekst": "lage rynker og stive opp ulike materialer og gjøre rede for hvordan man lager ulike dekorasjoner i aktuelle materialer"
+    },
+    {
+     "kode": "KM7888",
+     "tekst": "lage varetrekk og teppestykker med kanting til ulike framkomstmidler"
+    },
+    {
+     "kode": "KM7881",
+     "tekst": "samarbeide med kunden og gjøre tilpassinger og innprøvinger av ulike bilsalmakerprodukter"
+    },
+    {
+     "kode": "KM7879",
+     "tekst": "vurdere og tilpasse produkter og bilinteriør for kunder med spesielle behov"
+    },
+    {
+     "kode": "KM7876",
+     "tekst": "beskrive ulike materialers oppbygning, egenskaper og bruksområder og bruke og vurdere dem ut fra kvalitet, kostnad og miljøperspektiv"
+    },
+    {
+     "kode": "KM7873",
+     "tekst": "utforske bilsalmakerfagets tradisjon, historie og ulike bilsalmakerprodukter, gjøre rede for ulike krav til design, kvalitet, funksjon og sikkerhet og bruke dette i praktisk arbeid og i kommunikasjon med kunder"
+    },
+    {
+     "kode": "KM7874",
+     "tekst": "gjøre rede for rengjøring, impregnering, farging og etterbehandling av ulike materialer og eksperimentere med dette gjennom praktisk arbeid"
+    },
+    {
+     "kode": "KM7877",
+     "tekst": "reflektere og begrunne valg av verktøy, maskiner og håndverksteknikker ved tilpassing, produksjon og vedlikehold av bilsalmakerprodukter og gjøre rede for hvordan ulike valg kan påvirke resultatet"
+    },
+    {
+     "kode": "KM7875",
+     "tekst": "beregne kostnader for produksjon ut fra en bestilling av et produkt eller tjeneste og gjøre rede for hvordan ulike valg kan påvirke tidsbruk, metode, materialer, pris og holdbarhet"
+    },
+    {
+     "kode": "KM7871",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7870",
+     "tekst": "anvende og vedlikeholde maskiner og utstyr og følge gjeldende regelverk for helse, miljø og sikkerhet i arbeidet på verkstedet"
+    },
+    {
+     "kode": "KM7878",
+     "tekst": "velge hensiktsmessige ergonomiske arbeidsstillinger i arbeidet på arbeidsplassen"
+    },
+    {
+     "kode": "KM7889",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 bilsalmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 bilsalmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 bilsalmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på sju til ni virkedager."
+   ]
+  }
+ ]
+}

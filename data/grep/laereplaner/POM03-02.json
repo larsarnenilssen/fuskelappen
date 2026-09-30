@@ -1,0 +1,144 @@
+{
+ "kode": "POM03-02",
+ "tittel": "Læreplan i vg3 polymerkomposittfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV706",
+   "tittel": "Kompetansemål og vurdering vg3 polymerkomposittfaget",
+   "fag": [
+    "POM3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9161",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere arbeid i tråd med gjeldende lovverk, helse-, miljø-, sikkerhets- og kvalitetssikringssystemer og internkontrollsystemer for virksomheten"
+    },
+    {
+     "kode": "KM9137",
+     "tekst": "gjøre rede for definisjonen av og ulike bruksområder for polymerkompositt"
+    },
+    {
+     "kode": "KM9160",
+     "tekst": "registrere og rapportere feil og avvik og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM9159",
+     "tekst": "behandle kjemikalier og avfall i samsvar med sikkerhetsdatablader og prosedyrer"
+    },
+    {
+     "kode": "KM9158",
+     "tekst": "forklare hvor materialene man jobber med kommer fra og ender opp, og gjøre rede for sirkulærøkonomisk tenkning"
+    },
+    {
+     "kode": "KM9157",
+     "tekst": "kontrollere råvarer i samsvar med spesifikasjoner og dokumentere resultat"
+    },
+    {
+     "kode": "KM9156",
+     "tekst": "bruke produksjonsbeskrivelser for å planlegge og klargjøre produksjonsutstyr og råmaterialer for produksjon"
+    },
+    {
+     "kode": "KM9155",
+     "tekst": "tilvirke materialer og produkter i samsvar med produksjonsbeskrivelsene"
+    },
+    {
+     "kode": "KM9154",
+     "tekst": "gjøre rede for kjemisk oppbygging og reaksjoner i herdeprosessen og hvordan ulike faktorer påvirker herdeprosessen, og beskrive hvordan disse faktorene kan måles og kontrolleres"
+    },
+    {
+     "kode": "KM9153",
+     "tekst": "beregne herdeprosesser og planlegge avforming i samsvar med produksjonsbeskrivelser"
+    },
+    {
+     "kode": "KM9152",
+     "tekst": "forbehandle og plassere innstøpningsdeler og armering for optimal herding i samsvar med produksjonsbeskrivelser"
+    },
+    {
+     "kode": "KM9151",
+     "tekst": "loggføre og vurdere tilvirkningsprosessen og kalibrere og justere blandingsforhold og andre maskinparametre for å optimalisere resultatet"
+    },
+    {
+     "kode": "KM9162",
+     "tekst": "vurdere og gjøre tilpasninger for å unngå uønsket effekt av temperaturoppbygging og krymp"
+    },
+    {
+     "kode": "KM9150",
+     "tekst": "beskrive og drøfte optimal materialutnyttelse og råvarekombinasjoner og hvordan dette kan påvirke miljøet og material- og produktkvaliteten"
+    },
+    {
+     "kode": "KM9148",
+     "tekst": "vurdere og drøfte design av produkt og støpeverktøy ut fra slippvinkler og egenskapene til ulike materialer"
+    },
+    {
+     "kode": "KM9147",
+     "tekst": "sikre god vedheft ved tilvirkning av komposittstrukturer og ved overflatebehandling og sammenstilling på bakgrunn av bindingsegenskapene til ulike materialer"
+    },
+    {
+     "kode": "KM9146",
+     "tekst": "forklare årsaker til normale kvalitetsavvik og identifisere risiko basert på kunnskap om ulike feilkilder og faktorer som påvirker herdeprosessen og resultatet"
+    },
+    {
+     "kode": "KM9145",
+     "tekst": "planlegge og gjennomføre praktisk testing for å dokumentere egenskaper på materialer og komponenter"
+    },
+    {
+     "kode": "KM9144",
+     "tekst": "bruke digitale analyseverktøy for å simulere styrken og funksjonaliteten til materialer, kompositter og komponenter"
+    },
+    {
+     "kode": "KM9143",
+     "tekst": "vurdere kvaliteten på utført arbeid og dokumentere arbeidet i samsvar med spesifikasjoner"
+    },
+    {
+     "kode": "KM9142",
+     "tekst": "gjøre rede for krav til kalibrering av måleverktøy og produksjonsutstyr"
+    },
+    {
+     "kode": "KM9141",
+     "tekst": "klargjøre komponenter for videre bearbeiding"
+    },
+    {
+     "kode": "KM9140",
+     "tekst": "utføre renhold og preventivt og korrektivt vedlikehold på produksjonsutstyr i henhold til spesifikasjoner"
+    },
+    {
+     "kode": "KM9139",
+     "tekst": "identifisere feil og skader på maskiner og utstyr og utbedre disse"
+    },
+    {
+     "kode": "KM9138",
+     "tekst": "gjøre rede for substitusjonsplikten og vurdere nye materialer, og hvordan feil bruk av polymere materialer kan påvirke miljøet"
+    },
+    {
+     "kode": "KM9149",
+     "tekst": "bruke prinsipper for bedriftsøkonomi og presentere kostnadskalkyler"
+    },
+    {
+     "kode": "KM9163",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften, og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter, og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv."
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 polymerkomposittfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 polymerkomposittfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 polymerkomposittfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

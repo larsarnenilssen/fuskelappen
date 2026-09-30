@@ -2141,6 +2141,79 @@ p.fagkort-tittel {
 /* ---------- Utskrift og PDF ----------
    Bare kalkulatoren skrives ut: menyer, knapper og faste linjer skjules, og innhold i lukkede kort og utregningen vises. */
 
+/* ---------- Fag og læreplaner ---------- */
+
+.fagfilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2) var(--rom-4);
+  margin: var(--rom-2) 0 var(--rom-3);
+}
+
+.fagfilter .lenkeknapp .ikon {
+  vertical-align: -0.15em;
+  margin-right: var(--rom-1);
+}
+
+.fagfilter-felt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  column-gap: var(--rom-3);
+}
+
+.fagfilter-felt .felt select {
+  width: 100%;
+  min-width: 0;
+}
+
+.egenskaper {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-4);
+}
+
+.egenskaper > div {
+  display: grid;
+  grid-template-columns: min(11.5rem, 50%) minmax(0, 1fr);
+  gap: var(--rom-3);
+}
+
+.egenskaper dt {
+  color: var(--farge-tekst-dempet);
+}
+
+.egenskaper dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.fag-vurderinger {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  column-gap: var(--rom-5);
+}
+
+.fag-vurdering .liten-overskrift {
+  margin-top: var(--rom-2);
+}
+
+.fag-laereplan-tittel {
+  font-weight: 600;
+}
+
+.kompetansemaal {
+  padding-left: var(--rom-5);
+}
+
+.kompetansemaal li + li {
+  margin-top: var(--rom-2);
+}
+
+.linjeskift {
+  white-space: pre-line;
+}
+
 @media print {
   body,
   html {

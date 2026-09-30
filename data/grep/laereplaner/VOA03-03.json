@@ -1,0 +1,136 @@
+{
+ "kode": "VOA03-03",
+ "tittel": "Læreplan i vg3 veg- og anleggsfaget",
+ "spraak": "nno",
+ "fastsatt": "2025-02-04",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV958",
+   "tittel": "Kompetansemål og vurdering vg3 Vei- og anleggsfaget",
+   "fag": [
+    "VOA3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12551",
+     "tekst": "planleggje å byggje og halde ved like infrastruktur etter teikningar, beskrivingar, kart, standarder og toleransekrav og preaksepterte løysingar ved å bruke ulike prosjektverktøy og vurdere konsekvenser av avvik fra toleransekravene"
+    },
+    {
+     "kode": "KM12575",
+     "tekst": "utarbeide framdriftsplanar, bestille og motta materiale og utstyr og kontrollere kvalitet og mengd i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM12554",
+     "tekst": "arbeide i tråd med gjeldande krav til helse, miljø og sikkerheit, bruke verne- og sikringsutstyr og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM12573",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, dokumentere eige arbeid og handtere avvik"
+    },
+    {
+     "kode": "KM12552",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM12553",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av støy, vibrasjonar og støveksponering"
+    },
+    {
+     "kode": "KM12555",
+     "tekst": "velje ut og bruke masseforflyttingsmaskiner, utstyr og verktøy ut frå arbeidsoppgåve og gjeldande regelverk, og vurdere konsekvensane for miljøet og ressursbruken"
+    },
+    {
+     "kode": "KM12556",
+     "tekst": "bruke GPS- og maskinstyringssystem ved bruk av masseforflytningsmaskiner"
+    },
+    {
+     "kode": "KM12557",
+     "tekst": "vurdere farar ved gjenståande sprengstoff, varsle om fare og setje i verk tiltak for å fjerne sprengstoff"
+    },
+    {
+     "kode": "KM12558",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk, behandle kjemikalium, uønskte plantar og organismar og iverksette tiltak ved feilhandtering"
+    },
+    {
+     "kode": "KM12572",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    },
+    {
+     "kode": "KM12559",
+     "tekst": "utføre arbeidsvarsling i samsvar med gjeldande regelverk og vurdere kva risikofaktorar som kan påverke trafikkavviklinga"
+    },
+    {
+     "kode": "KM12560",
+     "tekst": "sikre og sperre av byggje- og anleggsområde og drøfte ulike tiltak som sikrar risikoutsette arbeidsforhold"
+    },
+    {
+     "kode": "KM12561",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer og andre yrkesutøvarar og velge ulike løysingar som bidreg til å minimere miljøavtrykket og sikre ei effektiv ressursutnytting"
+    },
+    {
+     "kode": "KM12574",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM12562",
+     "tekst": "utføre stikking og nivellering"
+    },
+    {
+     "kode": "KM12563",
+     "tekst": "vurdere grunnforhold, vurdere massetypar og bruksområda deira og gjere greie for korleis geologiske forhold påverkar arbeidet"
+    },
+    {
+     "kode": "KM12571",
+     "tekst": "fundamentere grunnen, komprimere massar og dokumentere arbeidet i samsvar med gjeldande regelverk"
+    },
+    {
+     "kode": "KM12564",
+     "tekst": "byggje opp og halde ved like infrastrukturar over og under jorda etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM12565",
+     "tekst": "leggje ulike typar røyr og setje ned og montere vass- og kabelkummar etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM12566",
+     "tekst": "montere ulike typar betongelement, sikringsmateriell og gjerder i ulike materiale over og under jorda etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM12567",
+     "tekst": "bore i berggrunnen manuelt og maskinelt og drøfte korleis ulukker ved boring kan førebyggjast"
+    },
+    {
+     "kode": "KM12568",
+     "tekst": "forskale, armere og støype mindre betongkonstruksjonar etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM12569",
+     "tekst": "setje opp murar i ulike materiale etter teikningar og beskrivingar"
+    },
+    {
+     "kode": "KM12570",
+     "tekst": "drenere grunnen etter gjeldande regelverk og drøfte korleis lokale forhold påverkar dreneringsmetoden"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 veg- og anleggsfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 veg- og anleggsfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 veg- og anleggsfaget skal avsluttast med ein fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

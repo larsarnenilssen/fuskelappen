@@ -1,0 +1,237 @@
+{
+ "kode": "FRI05-01",
+ "tittel": "Læreplan i vg3 frisørfaget - modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2026-03-16",
+ "gyldigFra": "2026-04-10",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1006",
+   "tittel": "Kompetansemål og vurdering bransjekunnskap",
+   "fag": [
+    "FRI5Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13029",
+     "tekst": "beregne pris på varer og tjenester og vurdere vareforbruk, tidsbruk og lønnsomhet"
+    },
+    {
+     "kode": "KM13030",
+     "tekst": "følge gjeldende rutiner og regelverk for helse, miljø og sikkerhet i alle arbeidsprosesser i frisørfaget"
+    },
+    {
+     "kode": "KM13031",
+     "tekst": "følge gjeldende forskrift og regelverk for smittevern og anvende tiltak som fremmer smitteforebygging og hygiene i arbeidsprosessen"
+    },
+    {
+     "kode": "KM13032",
+     "tekst": "utforske moter og trender i et nasjonal og internasjonalt perspektiv og bruke dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM13033",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM13034",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM13035",
+     "tekst": "bruke arbeidsbeskrivelser, fagterminologi, digitale ressurser og visuelle hjelpemidler i arbeidsprosesser, dokumentasjoner og presentasjoner"
+    },
+    {
+     "kode": "KM13036",
+     "tekst": "innhente og anvende produkters innholdsdeklarasjoner og bruksanvisninger, og vurdere produktenes egenskaper og påvirkning på helse og miljø"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen bransjekunnskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen bransjekunnskap. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i bransjekunnskap. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1007",
+   "tittel": "Kompetansemål og vurdering hår og hodebunnspleie",
+   "fag": [
+    "FRI5Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13037",
+     "tekst": "anvende teori om hår og hodebunnstilstander og vurdere behandling ut fra et etisk perspektiv"
+    },
+    {
+     "kode": "KM13038",
+     "tekst": "gjennomføre hodebunnsmassasje og gjøre rede for hensikten og valget av produkter og massasjeteknikk"
+    },
+    {
+     "kode": "KM13039",
+     "tekst": "beskrive hårets oppbygning, hårtyper med forskjellig tekstur og gjøre rede for hva som påvirker hårets kvalitet"
+    },
+    {
+     "kode": "KM13040",
+     "tekst": "lese og sammenfatte faglig innhold fra engelskspråklig dokumentasjon"
+    },
+    {
+     "kode": "KM13041",
+     "tekst": "utvikle og bruke ulike strategier for å møte forventninger fra kunder, og vurdere etiske problemstillinger knyttet til kundens forutsetninger, ulike kulturer og tradisjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen hår og hodebunnspleie når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen hår og hodebunnspleie. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i hår og hodebunnspleie. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1008",
+   "tittel": "Kompetansemål og vurdering kjemiske prosesser",
+   "fag": [
+    "FRI5Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13042",
+     "tekst": "anvende fargeteori og gjøre rede for produkt og teknikk i fargeendringsprosesser"
+    },
+    {
+     "kode": "KM13043",
+     "tekst": "anvende strukturendringsteori og gjøre rede for produkt og teknikk i strukturendringsprosesser"
+    },
+    {
+     "kode": "KM13044",
+     "tekst": "anvende teori om farging og forming av vipper og bryn i gjennomføring av behandlinger og gjøre rede for valg av produkter, teknikk og estetisk uttrykk"
+    },
+    {
+     "kode": "KM13045",
+     "tekst": "reflektere over forbruk, avfallshåndtering og hvordan valg av ulike materialer og produkter påvirker miljøet"
+    },
+    {
+     "kode": "KM13046",
+     "tekst": "utforske egenskaper og reaksjoner til noen stoffer og stoffblandinger som er relevante for eget utdanningsprogram"
+    },
+    {
+     "kode": "KM13047",
+     "tekst": "tolke og bruke sammensatte måleenheter i praktiske sammenhenger og velge egnet måleenhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen kjemiske prosesser når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen kjemiske prosesser. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i kjemiske prosesser. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1009",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og kundeservice",
+   "fag": [
+    "FRI5Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13048",
+     "tekst": "anvende og tilpasse ulike kommunikasjonsformer i samarbeid med kunder, kolleger og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM13049",
+     "tekst": "anvende arbeidsbeskrivelser, digitale ressurser og andre visuelle hjelpemidler i arbeidsprosesser og presentasjoner"
+    },
+    {
+     "kode": "KM13050",
+     "tekst": "anvende aktuelle markedsføringskanaler og sosiale medier for å markedsføre bedriften, frisørfaget og seg selv som en yrkesutøver"
+    },
+    {
+     "kode": "KM13051",
+     "tekst": "tolke kundens stil og ønsker og drøfte ulike løsninger i samarbeid med kunden"
+    },
+    {
+     "kode": "KM13052",
+     "tekst": "lytte til, forstå og bruke fagterminologi muntlig og skriftlig i arbeidssituasjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen kommunikasjon og kundeservice når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen kommunikasjon og kundeservice. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i kommunikasjon og kundeservice. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1010",
+   "tittel": "Kompetansemål og vurdering verktøy og teknikker",
+   "fag": [
+    "FRI5Z05"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13053",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeidsprosesser"
+    },
+    {
+     "kode": "KM13054",
+     "tekst": "anvende teknikker, produkter og verktøy ut fra kundens ønsker og forutsetning"
+    },
+    {
+     "kode": "KM13055",
+     "tekst": "kombinere klippeformer for å oppnå maskuline og feminine former"
+    },
+    {
+     "kode": "KM13056",
+     "tekst": "anvende kombinasjoner av klippe- og effileringsteknikker og gjøre rede for valgene ut fra ønsket resultat"
+    },
+    {
+     "kode": "KM13057",
+     "tekst": "anvende prinsipper ved klipping av skjegg ut fra ønsker og kundens forutsetninger og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM13058",
+     "tekst": "utforske og gjøre rede for tradisjonelle og eksperimentelle metoder for å skape ulike former og uttrykk i frisyreform"
+    },
+    {
+     "kode": "KM13059",
+     "tekst": "anvende slør, løshår og andre rekvisitter for å oppnå ønsket uttrykk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen verktøy og teknikker når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i modulen verktøy og teknikker. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i alle modulene skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i verktøy og teknikker. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen som er laget ut fra læreplanen i vg3 frisørfaget (FRI03-02). Eksamen utarbeides sentralt og sensurert lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 frisørfaget - modulstrukturert opplæring for voksne skal avsluttes med en svenneprøve. Svenneprøven lages ut fra læreplanen i vg3 frisørfaget (FRI03-02). Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
+   ]
+  }
+ ]
+}

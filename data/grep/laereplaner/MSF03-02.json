@@ -1,0 +1,124 @@
+{
+ "kode": "MSF03-02",
+ "tittel": "Læreplan i vg3 møbelsnekkerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV639",
+   "tittel": "Kompetansemål og vurdering vg3 møbelsnekkerfaget",
+   "fag": [
+    "MSF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7687",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7702",
+     "tekst": "produsere møbler og innredninger fra idé til ferdige produkter og gjøre rede for hvordan ulike valg påvirker form, funksjon, konstruksjon, langvarig bruk og gjenbruk"
+    },
+    {
+     "kode": "KM7681",
+     "tekst": "gjøre rede for ulike stilretninger fra møbelhistorien og anvende kunnskapen i arbeid med reparasjoner og som inspirasjon til utvikling av nye produkter"
+    },
+    {
+     "kode": "KM7686",
+     "tekst": "utvikle og konkretisere kunders, oppdragsgiveres og egne ideer ved hjelp av håndskisser, fysiske modeller eller digitale hjelpemidler, utarbeide arbeidstegning og anvende denne i eget arbeid"
+    },
+    {
+     "kode": "KM7700",
+     "tekst": "anvende fagspråk i kommunikasjon med kunder og andre om design, form og materialer"
+    },
+    {
+     "kode": "KM7690",
+     "tekst": "utarbeide kappliste, arbeidsbeskrivelse og materialliste i samsvar med arbeidstegningen"
+    },
+    {
+     "kode": "KM7692",
+     "tekst": "beregne tidsforbruk og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, kvalitet, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7699",
+     "tekst": "velge og bruke håndverktøy og snekkermaskiner til å forme og føye sammen materialer til møbler og innredninger med ønsket kvalitet på produktet og miljøhensyn i produksjonsprosessen"
+    },
+    {
+     "kode": "KM7698",
+     "tekst": "gjøre rede for ulike treslags oppbygning, egenskaper, bruksområder og betydning for klima og miljø og bruke denne kunnskapen i valg av materialer til møbler og innredninger"
+    },
+    {
+     "kode": "KM7685",
+     "tekst": "måle fuktinnhold, vurdere og velge metode for lagring og stabling av trematerialer og reflektere over hvordan ulike valg påvirker kvalitet, skader og svinn"
+    },
+    {
+     "kode": "KM7684",
+     "tekst": "vurdere og velge trelast ut fra tekniske og estetiske egenskaper, dele opp planker og lime emner til møbeldeler"
+    },
+    {
+     "kode": "KM7697",
+     "tekst": "vurdere og velge platematerialer for finering og laminering og finere ved å fuge sammen finerark av tre og laminere med belegg i natur- eller kunstmateriale"
+    },
+    {
+     "kode": "KM7696",
+     "tekst": "utforske, vurdere og anvende ulike typer lim og overflatebehandlingsmidler og gjøre rede for hvordan ulike valg påvirker bruksegenskaper og varighet på møbler og innredninger, og hvordan dette påvirker miljøbelastningen"
+    },
+    {
+     "kode": "KM7701",
+     "tekst": "vurdere og velge håndverksteknikker for å lage møbeldeler, møbler og innredninger i heltre med sink, grad og tapp for hånd og maskinelt"
+    },
+    {
+     "kode": "KM7695",
+     "tekst": "vurdere og velge teknikker for å lage møbler og innredninger av ulike platematerialer med løstappsystemer eller andre egnede sammenføyningsmetoder utført med maskiner"
+    },
+    {
+     "kode": "KM7691",
+     "tekst": "lage håndsinkede skuffer, innhøvlet i skufferom med styrlister og lage fyllingsdør med glattpusset tappforbindelse"
+    },
+    {
+     "kode": "KM7694",
+     "tekst": "vurdere og velge beslag, låser, hengsler og skinner og montere ved bruk av håndverktøy og maskiner"
+    },
+    {
+     "kode": "KM7688",
+     "tekst": "velge og utføre transparent, beskyttende overflatebehandling med lakk, olje eller voks tilpasset produktets egenskaper"
+    },
+    {
+     "kode": "KM7683",
+     "tekst": "utforske og bruke fagets historie og egenart til å formidle og videreføre tradisjonell møbelsnekring, ta del i utvikling av faget og rettlede kunder"
+    },
+    {
+     "kode": "KM7682",
+     "tekst": "slipe håndverktøy og vurdere behov for og utføre enkelt vedlikehold på maskiner"
+    },
+    {
+     "kode": "KM7693",
+     "tekst": "velge hensiktsmessige arbeidsstillinger og følge gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid på verkstedet"
+    },
+    {
+     "kode": "KM7689",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 møbelsnekkerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 møbelsnekkerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 møbelsnekkerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst ti virkedager."
+   ]
+  }
+ ]
+}

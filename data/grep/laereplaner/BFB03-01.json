@@ -1,0 +1,112 @@
+{
+ "kode": "BFB03-01",
+ "tittel": "Læreplan i brannforebyggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-04",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV336",
+   "tittel": "Kompetansemål og vurdering brannforebyggerfaget",
+   "fag": [
+    "BFB3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM3495",
+     "tekst": "planlegge å feie, føre tilsyn og iverksette informasjons- og motivasjonstiltak etter gjeldende regelverk og interne rutiner, arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet og reflektere over konsekvensene av å ikke følge kravene"
+    },
+    {
+     "kode": "KM3496",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM3498",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og drøfte ulike løsninger som bidrar til å minimere miljøutslipp og sikre brannforebygging"
+    },
+    {
+     "kode": "KM3497",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter og reflektere over krav og forventinger som blir stilt til et likeverdig og inkluderende yrkesfelleskap"
+    },
+    {
+     "kode": "KM3506",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av ulike belastninger i forbindelse med brannforebygging"
+    },
+    {
+     "kode": "KM3507",
+     "tekst": "bruke verne- og sikkerhetsutstyr og reflektere over konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM3493",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM3489",
+     "tekst": "kartlegge fyringsanlegg og byggverk, vurdere brannfaren og iverksette tiltak for å redusere den"
+    },
+    {
+     "kode": "KM3490",
+     "tekst": "ta mål, bruke målestokk etter målsatte tegninger og analysere og beregne hyppigheten av risiko for brann."
+    },
+    {
+     "kode": "KM3505",
+     "tekst": "gjøre rede for ulike brannårsaker og vurdere brannforebyggende strategier rettet mot ulike målgrupper"
+    },
+    {
+     "kode": "KM3503",
+     "tekst": "gjøre rede for kjennetegn ved skader og dødsfall som følge av brann, og foreslå å gjennomføre brannforebyggende strategier og tiltak"
+    },
+    {
+     "kode": "KM3501",
+     "tekst": "gjøre rede for hva brannrisiko betyr for byggetekniske, organisatoriske og bruksmessige forhold, vurdere behovet for brannbegrensende tiltak og anbefale løsninger for byggeier"
+    },
+    {
+     "kode": "KM3500",
+     "tekst": "vurdere risiko for miljøutslipp av fyringsanlegg og foreslå tiltak som reduserer miljøbelastningen"
+    },
+    {
+     "kode": "KM3499",
+     "tekst": "feie skorsteiner, røykrør, kanaler og ildsteder og vurdere hvordan ulike materialer og dimensjoner påvirker valg av verktøy"
+    },
+    {
+     "kode": "KM3502",
+     "tekst": "føre tilsyn med fyringsanlegg, gjøre rede for hvordan fyringsanlegget er montert og vedlikeholdt, og vurdere hvordan dette påvirker fyringsanleggets funksjon og drift"
+    },
+    {
+     "kode": "KM3494",
+     "tekst": "kartlegge behov for brannsikkerhet og vurdere informasjonstiltak knyttet til geografiske forhold, byggverk, fyringsanlegg og målgrupper"
+    },
+    {
+     "kode": "KM3504",
+     "tekst": "informere eiere og brukere om krav til brannsikkerhet og tilpasse kommunikasjon til ulike situasjoner og målgrupper"
+    },
+    {
+     "kode": "KM3491",
+     "tekst": "utføre tilsyn og behandle dokumenter i henhold til gjeldende regelverk og reflektere over egen rolle som myndighetsutøver"
+    },
+    {
+     "kode": "KM3492",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i brannforebyggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i brannforebyggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og til å reflektere over sin egen faglige utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingen kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i brannforebyggerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

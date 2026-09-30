@@ -1,0 +1,136 @@
+{
+ "kode": "MTS03-04",
+ "tittel": "Læreplan i vg3 matrosfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV688",
+   "tittel": "Komptensemål og vurdering vg3 matrosfaget",
+   "fag": [
+    "MTS3Z04"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8802",
+     "tekst": "utføre arbeid om bord i henhold til regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM8784",
+     "tekst": "vurdere og bruke personlig verne- og sikkerhetsutstyr ut fra arbeidsoppgavene"
+    },
+    {
+     "kode": "KM8806",
+     "tekst": "bruke produkt- og sikkerhetsdatablader og følge retningslinjer for oppbevaring og merking av kjemikalier og helseskadelige stoffer"
+    },
+    {
+     "kode": "KM8805",
+     "tekst": "gjøre rede for og arbeide etter ISM-koden og gjeldende regelverk i den daglige driften"
+    },
+    {
+     "kode": "KM8804",
+     "tekst": "beskrive kvalitetssystemet om bord og registrere avvik"
+    },
+    {
+     "kode": "KM8803",
+     "tekst": "gjøre rede for alarmsystemer i forbindelse med varsling og utføre egen beredskapsfunksjon i en nødsituasjon om bord"
+    },
+    {
+     "kode": "KM8801",
+     "tekst": "betjene, vedlikeholde og gjennomføre ettersyn på rednings- og brannvernutstyr og slukkeanleggene om bord"
+    },
+    {
+     "kode": "KM8798",
+     "tekst": "gjennomføre vakthold i henhold til skipets vaktinstruks og navigering på støttenivå"
+    },
+    {
+     "kode": "KM8800",
+     "tekst": "håndheve adgangsprosedyrer til skipet i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM8797",
+     "tekst": "identifisere merking av farlig last og sikre lasten i tråd med prosedyrer og forskrifter"
+    },
+    {
+     "kode": "KM8799",
+     "tekst": "delta i laste- og losseoperasjoner og anvende stroppe-, anhukings- og lastehåndteringsutstyr"
+    },
+    {
+     "kode": "KM8796",
+     "tekst": "vurdere faktorer som påvirker et fartøys stabilitet"
+    },
+    {
+     "kode": "KM8794",
+     "tekst": "velge og bruke ergonomisk riktige arbeidsteknikker og arbeidsstillinger"
+    },
+    {
+     "kode": "KM8791",
+     "tekst": "bruke vedlikeholdssystem til å hente ut arbeidsordrer og dokumentere utført arbeid og vurdere eget arbeid"
+    },
+    {
+     "kode": "KM8793",
+     "tekst": "velge og bruke metoder og teknikker for renhold og overflatebehandling av ulike materialer og steder for å ivareta arbeids- og maritimt miljø"
+    },
+    {
+     "kode": "KM8786",
+     "tekst": "bruke og vedlikeholde utstyr knyttet til fortøying, ankring, lasting og lossing og annen dekksutrustning"
+    },
+    {
+     "kode": "KM8792",
+     "tekst": "rigge opp og ned landgang og losleider med tilhørende utstyr"
+    },
+    {
+     "kode": "KM8807",
+     "tekst": "anvende tauverk og trosser ut fra deres bruksområder"
+    },
+    {
+     "kode": "KM8808",
+     "tekst": "forstå og følge flaggregler og bruke og lese signalflagg"
+    },
+    {
+     "kode": "KM8785",
+     "tekst": "gjøre fartøyet sjøklart"
+    },
+    {
+     "kode": "KM8795",
+     "tekst": "bruke og vedlikeholde elektriske og mekaniske verktøy og instrumenter"
+    },
+    {
+     "kode": "KM8790",
+     "tekst": "gjennomføre bunkring etter skipets prosedyrer"
+    },
+    {
+     "kode": "KM8789",
+     "tekst": "reflektere over hvordan man kan forebygge og begrense forurensning av det marine miljøet og håndtere avfall i tråd med gjeldende regelverk og krav"
+    },
+    {
+     "kode": "KM8788",
+     "tekst": "reflektere over hvordan en selv kan bidra til et godt psykososialt arbeidsmiljø"
+    },
+    {
+     "kode": "KM8787",
+     "tekst": "gjøre rede for partssamarbeidet i rederiet og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 matrosfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 matrosfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 matrosfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én til tre virkedager. Fagprøven skal gjennomføres i henhold til kravene i forskrift om kvalifikasjoner og sertifikater for sjøfolk."
+   ]
+  }
+ ]
+}

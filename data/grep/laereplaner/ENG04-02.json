@@ -1,0 +1,158 @@
+{
+ "kode": "ENG04-02",
+ "tittel": "Læreplan i engelsk programfag",
+ "spraak": "nob",
+ "fastsatt": "2020-05-26",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV300",
+   "tittel": "Kompetansemål og vurdering engelsk 1",
+   "fag": [
+    "ENG4Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3174",
+     "tekst": "bruke egnede lese-, lytte-, tale- og skrivestrategier tilpasset situasjon og formål"
+    },
+    {
+     "kode": "KM3192",
+     "tekst": "bruke et rikt og presist ordforråd av generell og fagspesifikk art på en hensiktsmessig og situasjonstilpasset måte både muntlig og skriftlig"
+    },
+    {
+     "kode": "KM3191",
+     "tekst": "anvende kunnskaper om ord, setningsbygging, tekstbinding og språkbruk for å forbedre eget språk og egne tekster"
+    },
+    {
+     "kode": "KM3190",
+     "tekst": "produsere ulike muntlige og skriftlige situasjonstilpassede tekster med klart innhold og hensiktsmessig stil og struktur"
+    },
+    {
+     "kode": "KM3189",
+     "tekst": "anvende hensiktsmessige kilder på en kritisk og etterrettelig måte"
+    },
+    {
+     "kode": "KM3188",
+     "tekst": "lese og bruke ulike typer tekster på engelsk som utgangspunkt for egen språklæring og faglig refleksjon"
+    },
+    {
+     "kode": "KM3187",
+     "tekst": "bruke ulike fagspesifikke tekster på engelsk med tema fra andre fag, som utgangspunkt for egen språklæring og faglig refleksjon"
+    },
+    {
+     "kode": "KM3186",
+     "tekst": "analysere og tolke skjønnlitterære tekster på engelsk, inkludert selvvalgte tekster"
+    },
+    {
+     "kode": "KM3185",
+     "tekst": "reflektere over språklige varianter i noen engelskspråklige land"
+    },
+    {
+     "kode": "KM3193",
+     "tekst": "reflektere over innflytelsen til og bruken av det engelske språket i informasjons- og meningsutveksling globalt"
+    },
+    {
+     "kode": "KM3184",
+     "tekst": "vise forståelse, selvstendig refleksjon og kritisk tenking i analyse av noen aktuelle samfunnsdebatter i engelskspråklige land"
+    },
+    {
+     "kode": "KM3182",
+     "tekst": "utforske og presentere minst ett selvvalgt emne knyttet til språk, kultur, samfunn eller vitenskap ved kritisk bruk av engelskspråklige tekster og andre kilder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i programfaget. Elevene viser og utvikler kompetanse i engelsk 1 når de kommuniserer og samhandler nyansert og presist med flyt og sammenheng muntlig og skriftlig, tilpasset formål, mottaker og situasjon. Videre viser og utvikler de kompetanse når de skaper ulike typer tekster og når de bruker kilder på en kritisk, hensiktsmessig og etterrettelig måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og muntlige og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren skal være i dialog med elevene om utviklingen deres i engelsk og elevene skal få mulighet å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen til å utvikle leseferdigheter, skriveferdigheter og muntlige og digitale ferdigheter i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakterene skal være uttrykk for den samlede kompetansen eleven har i engelsk ved avslutningen av opplæringen etter engelsk 1. Den skal basere seg på elevenes kompetanse i å produsere og bruke muntlige og skriftlige tekster og på kompetanse i faglig tolkning og drøfting. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i engelsk 1 basert på kompetansen eleven har vist gjennom å legge til rette for at elevene får vist kompetansen sin i varierte vurderingssituasjoner, både skriftlig og muntlig."
+   ]
+  },
+  {
+   "kode": "KV301",
+   "tittel": "Kompetansemål og vurdering engelsk 2",
+   "fag": [
+    "ENG4Z05"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3181",
+     "tekst": "bruke egnede lese-, lytte-, tale- og skrivestrategier tilpasset situasjon og formål"
+    },
+    {
+     "kode": "KM3180",
+     "tekst": "bruke et rikt, presist og variert språk av generell og fagspesifikk art på en hensiktsmessig og situasjonstilpasset måte både skriftlig og muntlig"
+    },
+    {
+     "kode": "KM3179",
+     "tekst": "produsere ulike typer skriftlige og muntlige faglige tekster med klart innhold, hensiktsmessig stil og struktur"
+    },
+    {
+     "kode": "KM3178",
+     "tekst": "anvende hensiktsmessige kilder på en kritisk og etterrettelig måte"
+    },
+    {
+     "kode": "KM3177",
+     "tekst": "vise selvstendig refleksjon og kritisk tenking i lesing og drøfting av ulike typer tekster"
+    },
+    {
+     "kode": "KM3176",
+     "tekst": "tolke og drøfte noen typer skjønnlitterære tekster på engelsk i lys av deres historiske og kulturelle sammenhenger"
+    },
+    {
+     "kode": "KM3175",
+     "tekst": "utforske og drøfte noen engelskspråklige lands språklige, kulturelle og politiske innflytelse i verden"
+    },
+    {
+     "kode": "KM3183",
+     "tekst": "sammenligne og videreformidle noen samfunnsmessige og politiske forhold i to engelskspråklige land ut fra historiske sammenhenger"
+    },
+    {
+     "kode": "KM3194",
+     "tekst": "utforske og presentere minst ett selvvalgt emne fra engelsk 2 ved kritisk bruk av engelskspråklige tekster og andre kilder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i programfaget. Elevene viser og utvikler kompetanse i engelsk 2 når de kommuniserer og samhandler nyansert og presist med flyt og sammenheng muntlig og skriftlig, tilpasset formål, mottaker og situasjon. Videre viser og utvikler de kompetanse når de skaper ulike typer tekster og når de bruker kilder på en kritisk, hensiktsmessig og etterrettelig måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og muntlige og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren skal være i dialog med elevene om utviklingen deres i engelsk og elevene skal få mulighet å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen til å utvikle leseferdigheter, skriveferdigheter og muntlige og digitale ferdigheter i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakterene skal være uttrykk for den samlede kompetansen eleven har i engelsk ved avslutningen av opplæringen etter engelsk 2. Den skal basere seg på elevenes kompetanse i å produsere og bruke muntlige og skriftlige tekster og på kompetanse i faglig tolkning og drøfting. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i engelsk 2 basert på kompetansen eleven har vist gjennom å legge til rette for at elevene får vist kompetansen sin i varierte vurderingssituasjoner, både skriftlig og muntlig."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Engelsk 1: Eleven skal ha én muntlig og én skriftlig standpunktkarakter.",
+    "Engelsk 2: Eleven skal ha én muntlig og én skriftlig standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Engelsk 1: Eleven kan trekkes ut til skriftlig og/eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet lokalt.",
+    "Engelsk 2: Eleven kan trekkes ut til skriftlig og/eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Engelsk 1: Privatisten skal opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Engelsk 2: Privatisten skal opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

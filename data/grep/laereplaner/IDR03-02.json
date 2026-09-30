@@ -1,0 +1,108 @@
+{
+ "kode": "IDR03-02",
+ "tittel": "Læreplan i idrett og samfunn",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV280",
+   "tittel": "Kompetansemål og vurdering idrett og samfunn",
+   "fag": [
+    "IDR3Z03",
+    "IDR3Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2983",
+     "tekst": "diskutere og forstå idrettens verdigrunnlag"
+    },
+    {
+     "kode": "KM2984",
+     "tekst": "utarbeide og vurdere problemstillinger knyttet til idrett og menneskesyn"
+    },
+    {
+     "kode": "KM2985",
+     "tekst": "drøfte hvilken betydning idrettens egenverdi og nytteverdi har for individet og samfunnet"
+    },
+    {
+     "kode": "KM2986",
+     "tekst": "forklare hovedtrekk ved idrettens historiske utvikling fram til i dag"
+    },
+    {
+     "kode": "KM2987",
+     "tekst": "gjør rede for utviklingen av de moderne olympiske lekene fram til i dag"
+    },
+    {
+     "kode": "KM2988",
+     "tekst": "drøfte hvordan barne- og ungdomsidrett bør drives"
+    },
+    {
+     "kode": "KM2989",
+     "tekst": "drøfte betydningen idrettsanlegg har for individet og samfunnet"
+    },
+    {
+     "kode": "KM2990",
+     "tekst": "forklare hvordan idretten blir organisert, finansiert og ledet på ulike nivåer og i ulike kulturer"
+    },
+    {
+     "kode": "KM2991",
+     "tekst": "vurdere medienes rolle i idretten"
+    },
+    {
+     "kode": "KM2992",
+     "tekst": "reflektere over hvordan idretten kan bidra til miljøbevissthet og bærekraftig utvikling"
+    },
+    {
+     "kode": "KM2993",
+     "tekst": "diskutere betydningen av fysisk aktivitet for egen helse og identitet og for samfunnet"
+    },
+    {
+     "kode": "KM2994",
+     "tekst": "diskutere problemstillinger rundt kjønnsroller og kroppssyn i idretten"
+    },
+    {
+     "kode": "KM2995",
+     "tekst": "drøfte aktuelle idrettspolitiske temaer"
+    },
+    {
+     "kode": "KM2996",
+     "tekst": "forstå kilders pålitelighet og metoder for innhenting av informasjon"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i idrett og samfunn. Elevene viser og utvikler kompetanse i faget når de drøfter problemstillinger knyttet til idrettens verdier og normer, etikk og moral. Videre viser og utvikler de kompetanse når de forstår sammenhenger og spenningsforhold mellom idrett, individ og samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte muntlige, skriftlige og praktiske oppgaver. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å drøfte idrettsfaglige problemstillinger, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å løse faglige spørsmål og bruke relevante kilder til å reflektere over faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i idrett og samfunn ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i idrett og samfunn basert på kompetansen eleven har vist ved å se sammenhenger mellom idrett og samfunn og gjennom å diskutere og reflektere over faglige spørsmål."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Idrett og samfunn: Eleven skal ha én standpunktkarakter.",
+    "Det skal bare settes standpunktvurdering for hele idrett og samfunn. Eleven skal ha halvårsvurdering med karakter på slutten av første opplæringsår i faget."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Idrett og samfunn: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Idrett og samfunn: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

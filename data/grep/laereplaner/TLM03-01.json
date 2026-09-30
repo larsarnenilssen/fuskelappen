@@ -1,0 +1,140 @@
+{
+ "kode": "TLM03-01",
+ "tittel": "Læreplan i vg3 truck- og liftmekanikarfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV619",
+   "tittel": "Kompetansemål og vurdering vg3 truck- og liftmekanikarfaget",
+   "fag": [
+    "TLM3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7245",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere arbeidsoppgåver ut frå prosedyrar, standardar og tilvisingane frå fabrikanten"
+    },
+    {
+     "kode": "KM7249",
+     "tekst": "planleggje, vurdere og nytte arbeidsteknikkar, arbeidsstillingar og framgangsmåte og velje rett verktøy"
+    },
+    {
+     "kode": "KM7268",
+     "tekst": "utføre ettersyn og vedlikehald på truckar og liftar og kontrollere og dokumentere sprekker i sveis- og stålkonstruksjonar"
+    },
+    {
+     "kode": "KM7267",
+     "tekst": "bruke diagnoseverktøy på system og komponent og beskrive reparasjonsbehov på komponentar med registrert funksjonsavvik"
+    },
+    {
+     "kode": "KM7270",
+     "tekst": "vurdere reparasjonsoppdrag med tanke på kostnader og lønnsemd og med omsyn til sirkulærøkonomi"
+    },
+    {
+     "kode": "KM7250",
+     "tekst": "utføre reparasjon, vedlikehald og feilsøking på batteri og ladesystem for relevant batteriteknologi og gjennomføre sikkerheitstiltak ved arbeid på ulike spenningskretsar"
+    },
+    {
+     "kode": "KM7258",
+     "tekst": "gjøre rede for rutiner for feilsøking, reparasjon og vedlikehald på sjølvkøyrande, fjernstyrte og robotiserte maskiner"
+    },
+    {
+     "kode": "KM7266",
+     "tekst": "gjøre rede for vedlikehald og reparasjon på truckar og liftar med hydrogenbrenselcelleteknologi i samsvar med rettleiingane frå produsentane"
+    },
+    {
+     "kode": "KM7265",
+     "tekst": "utføre ettersyn og reparasjon på forbrenningsmotorar, vekselstraumsmotorar, likestraumsmotorar, hydrauliske motorar og hybride system"
+    },
+    {
+     "kode": "KM7262",
+     "tekst": "utføre vedlikehald på og reparere transmisjonar, drivverk og bremsesystem"
+    },
+    {
+     "kode": "KM7261",
+     "tekst": "vurdere dekkutrustning på truckar og liftar med tilhøyrande utstyr og utføre vedlikehald i samsvar med rettleiingane frå produsentane"
+    },
+    {
+     "kode": "KM7259",
+     "tekst": "utføre vedlikehald på og reparere elektriske, elektroniske og digitale system, inkludert motorkontrollsystem (Canbus) og andre datastyringssystem for motor, hydraulikk og køyrekontroll"
+    },
+    {
+     "kode": "KM7260",
+     "tekst": "utføre feilsøking, vedlikehald og reparasjon på hydrauliske kretsar, slangar, koplingar, komponentar og mekaniske system på truckar og liftar og tilhøyrande utstyr"
+    },
+    {
+     "kode": "KM7263",
+     "tekst": "utføre periodisk vedlikehald på truckar og liftar og tilhøyrande utstyr og reiskapar i tråd med forskrift og spesifikasjonar frå fabrikanten"
+    },
+    {
+     "kode": "KM7257",
+     "tekst": "utføre vedlikehald på og reparere understell, svingkrans, svingmekanismar, bomkonstruksjonar, wire, glideflater og løftemekanismar og utføre slitasjemåling med tanke på stabilitet"
+    },
+    {
+     "kode": "KM7247",
+     "tekst": "utføre kontroll, reparasjon og vedlikehald på sikkerheitsutstyr som sikrar personell som arbeider i høgder"
+    },
+    {
+     "kode": "KM7248",
+     "tekst": "kontrollere, halde ved like, justere og reparere komplekse mast- og bomsystem"
+    },
+    {
+     "kode": "KM7246",
+     "tekst": "utføre reparasjon og vedlikehald på komfort- og klimaanlegg"
+    },
+    {
+     "kode": "KM7256",
+     "tekst": "gjere greie for forskrifter og regelverk for kontroll fram til attestering og bruksgodkjenning i samsvar med retningslinjene frå produsenten og relevante forskrifter"
+    },
+    {
+     "kode": "KM7251",
+     "tekst": "velje smørjemiddel, kjemikaliar og væsker i samsvar med spesifikasjonane frå produsenten og ut frå omsyn til miljøet"
+    },
+    {
+     "kode": "KM7255",
+     "tekst": "handtere kjemikaliar og sortere avfall i tråd med gjeldande regelverk og rutinar for helse, miljø og sikkerheit i bedrifta"
+    },
+    {
+     "kode": "KM7252",
+     "tekst": "utføre arbeid og risikovurdering i tråd med gjeldande regelverk for helse, miljø og sikkerheit og internkontroll"
+    },
+    {
+     "kode": "KM7254",
+     "tekst": "kommunisere med kundar og kollegaer om service og reparasjonar, faglege løysingar, omfanget på arbeidsoppdraget og vidare oppfølging"
+    },
+    {
+     "kode": "KM7269",
+     "tekst": "gjennomføre stabilitets- og momentprøving med og utan merkelast og løftekapasitet"
+    },
+    {
+     "kode": "KM7253",
+     "tekst": "gjere greie for og søkje informasjon i regelverk for maskiner som skal brukast i eksplosjonsfarlege område og soneinndeling"
+    },
+    {
+     "kode": "KM7271",
+     "tekst": "gjere greie for partssamarbeidet i bedrifta, og reflektere over kva plikter og rettar arbeidsgivaren og arbeidstakaren har, og kva krav og forventningar som blir stilte til eit likeverdig og inkluderande arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 truck- og liftmekanikarfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i Vg3 truck- og liftmekanikarfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og til å reflektere over si eiga faglege utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingen kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 truck- og liftmekanikarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som normalt skal gjennomførast på minst tre vyrkedagar."
+   ]
+  }
+ ]
+}

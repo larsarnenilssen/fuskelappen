@@ -1,0 +1,108 @@
+{
+ "kode": "GNS01-01",
+ "tittel": "Læreplan i norsk og samfunnskunnskap – modulstrukturert opplæring for voksne",
+ "spraak": "nob",
+ "fastsatt": "2024-05-31",
+ "gyldigFra": "2024-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV853",
+   "tittel": "Kompetansemål og vurdering norsk og samfunnskunnskap",
+   "fag": [
+    "GNS1Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM11255",
+     "tekst": "reflektere over hvordan tekster framstiller møter mellom ulike kulturer"
+    },
+    {
+     "kode": "KM11256",
+     "tekst": "lytte til andre, bygge opp saklig argumentasjon og bruke retoriske appellformer i diskusjoner"
+    },
+    {
+     "kode": "KM11257",
+     "tekst": "bruke ulike kilder på en kritisk, selvstendig og etterrettelig måte"
+    },
+    {
+     "kode": "KM11258",
+     "tekst": "kommunisere klart og forståelig muntlig og skriftlig i yrkesrelevante sjangre"
+    },
+    {
+     "kode": "KM11259",
+     "tekst": "bruke relevant fagspråk til å presentere, gjøre rede for og dokumentere faglige emner og arbeidsprosesser fra eget utdanningsprogram"
+    },
+    {
+     "kode": "KM11260",
+     "tekst": "orientere seg i faglitteratur fra eget yrkesfaglig område for å finne, kombinere og vurdere relevant informasjon"
+    },
+    {
+     "kode": "KM11261",
+     "tekst": "skrive tekster med god struktur og tekstbinding og mestre tegnsetting og rettskriving på hovedmål"
+    },
+    {
+     "kode": "KM11262",
+     "tekst": "vurdere og bearbeide egne tekster ut fra tilbakemeldinger og faglige kriterier"
+    },
+    {
+     "kode": "KM11271",
+     "tekst": "utforske hvordan interesser og ideologisk ståsted påvirker våre argumenter og valg av kilder, og reflektere over hvordan det gir seg utslag i forskjellige meninger"
+    },
+    {
+     "kode": "KM11263",
+     "tekst": "drøfte hvordan personlig økonomi, kommersiell påvirkning og forbruk påvirker enkeltpersoner, grupper og samfunnet"
+    },
+    {
+     "kode": "KM11264",
+     "tekst": "reflektere over utfordringer i sammenheng med grensesetting og drøfte ulike verdier, normer og lover som gjelder kjønn, seksualitet og kropp"
+    },
+    {
+     "kode": "KM11265",
+     "tekst": "reflektere over egne digitale spor, utforske hvem som har tilgang til sporene, og drøfte hvordan data og personopplysninger kan brukes eller misbrukes"
+    },
+    {
+     "kode": "KM11266",
+     "tekst": "reflektere over likheter og ulikheter i kulturuttrykk, identitet og levesett innenfor og mellom majoritet og minoritet i Norge og Sápmi/Sábme/Sáepmie"
+    },
+    {
+     "kode": "KM11267",
+     "tekst": "utforske og beskrive hvordan organiseringen av samfunnet og arbeidslivet i Norge har endret seg, og drøfte hvordan den nordiske samfunnsmodellen møter utfordringer enkeltpersoner og samfunnet står overfor"
+    },
+    {
+     "kode": "KM11268",
+     "tekst": "reflektere over hva det innebærer å være medborger, og sammenligne hvordan politiske systemer er organisert i forskjellige land og områder"
+    },
+    {
+     "kode": "KM11269",
+     "tekst": "vurdere årsaker til og tiltak som kan forebygge rasisme, diskriminering og hatefulle ytringer, og drøfte grensene for ytringsfriheten"
+    },
+    {
+     "kode": "KM11270",
+     "tekst": "drøfte sammenhengen mellom økonomisk vekst, levestandard og livskvalitet i et globalt og bærekraftig perspektiv"
+    },
+    {
+     "kode": "KM11272",
+     "tekst": "vurdere hvordan utøvelse av makt påvirker enkeltpersoner og samfunn"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i modulen norsk og samfunnskunnskap når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Læreren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og lærlingene skal være i dialog om lærlingenes utvikling i modulen norsk og samfunnskunnskap. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i modulen. Kompetansemålene i norsk og i samfunnskunnskap skal ses i sammenheng og skal forstås i lys av teksten om faget.",
+    "Lærlingen skal ha én midtveisvurdering ved avslutningen av opplæringen i modul norsk og samfunnskunnskap. Midtveisvurderingen har karakteruttrykket godkjent/ikke godkjent."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Det er ikke sluttvurdering i modul for norsk og samfunnskunnskap."
+   ]
+  }
+ ]
+}

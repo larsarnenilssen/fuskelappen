@@ -1,0 +1,229 @@
+{
+ "kode": "BRT02-04",
+ "tittel": "Læreplan i vg2 brønnteknikk",
+ "spraak": "nno",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV434",
+   "tittel": "Kompetansemål og vurdering boring",
+   "fag": [
+    "BRT2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4648",
+     "tekst": "samanlikne bruksområdar og eigenskapane til dei vanlegaste boreinnretningane"
+    },
+    {
+     "kode": "KM4650",
+     "tekst": "forklare verkemåtane til boreslammet og slamsirkulasjonssystemet"
+    },
+    {
+     "kode": "KM4622",
+     "tekst": "gjere greie for verkemåten til røyrhandteringsutstyr i boremodulen , og bevegelig utstyr i boretårnet"
+    },
+    {
+     "kode": "KM4641",
+     "tekst": "beskrive bruk av laust boreutstyr, borerøyr og nediholsutstyr"
+    },
+    {
+     "kode": "KM4647",
+     "tekst": "reflektere over korleis geologiske forhold kan påvirke boreoperasjoner og brønnbygging"
+    },
+    {
+     "kode": "KM4646",
+     "tekst": "forklare oppbygginga til brønnen, og koplinga mellom brønnhovudet og boreinnretning"
+    },
+    {
+     "kode": "KM4649",
+     "tekst": "beskrive sementering av fóringsrøyr og tilhøyrande utstyr"
+    },
+    {
+     "kode": "KM4645",
+     "tekst": "vurdere ein passande borestreng med bore- og loggeutstyr for ulike brønnseksjonar"
+    },
+    {
+     "kode": "KM4643",
+     "tekst": "berekne volum og væsketrykk i brønn, og reflektere over sikkerheitsmarginar"
+    },
+    {
+     "kode": "KM4644",
+     "tekst": "drøfte ulike barrierar under boreoperasjonar"
+    },
+    {
+     "kode": "KM4642",
+     "tekst": "beskrive kvifor ein stengjer ned brønnar permanent, og kva ulike verkemiddel som blir brukte som barrierar"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i boring når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i boring. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i boring ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i boring basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV435",
+   "tittel": "Kompetansemål og vurdering komplettering og brønnservice",
+   "fag": [
+    "BRT2Z07"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4632",
+     "tekst": "beskrive reservoareigenskapar på norsk kontinentalsokkel og danninga av petroleumsreservoar"
+    },
+    {
+     "kode": "KM4638",
+     "tekst": "beskrive passande løysningar for komplettering ut frå eigenskapane til reservoaret"
+    },
+    {
+     "kode": "KM4640",
+     "tekst": "beskrive korleis og kvifor brønnen og utstyr blir klargjort for komplettering"
+    },
+    {
+     "kode": "KM4639",
+     "tekst": "gjere greie for utstyret i den øvre kompletteringa og korleis barriereelementa kan hindre utslepp til det ytre miljøet"
+    },
+    {
+     "kode": "KM4637",
+     "tekst": "samanlikne bruksområde og eigenskapar til dei ulike installasjonstypane som blir brukte til olje- og gassproduksjon"
+    },
+    {
+     "kode": "KM4651",
+     "tekst": "forklare verkemåten til og plasseringa av ventiltre på brønnen"
+    },
+    {
+     "kode": "KM4635",
+     "tekst": "beskrive og reflektere over nytteområder av oppstarts- og drepemetodar for produksjonsbrønnar"
+    },
+    {
+     "kode": "KM4633",
+     "tekst": "forklare barriere-, overflate- og nediholsutstyr til kabel- og kveilerøyrsoperasjonar til levande og drepne brønnar"
+    },
+    {
+     "kode": "KM4634",
+     "tekst": "beskrive lett brønnintervensjon frå båt eller rigg"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i komplettering og brønnservice når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i komplettering og brønnservice. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i komplettering og brønnservice ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i komplettering og brønnservice basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid."
+   ]
+  },
+  {
+   "kode": "KV436",
+   "tittel": "Kompetansemål og vurdering prosedyrar og praksis",
+   "fag": [
+    "BRT2Z08"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4631",
+     "tekst": "beskrive og reflektere over korleis planlegging, utføring og rapportering av arbeidsoperasjonar skal gjennomførast, i samsvar med gjeldande prosedyrar og standardar"
+    },
+    {
+     "kode": "KM4628",
+     "tekst": "gjennomføre vedlikehald, kontroll, måling og dokumentasjon av utstyr som skal køyrast i brønn"
+    },
+    {
+     "kode": "KM4627",
+     "tekst": "reflektere over føremålet og risikoen med gjennomføring av trykktesting og lekkasjetesting"
+    },
+    {
+     "kode": "KM4630",
+     "tekst": "bruke simulator for å gjere øvingar i boring, trykkontroll og inn- og utkøyring i ein brønn"
+    },
+    {
+     "kode": "KM4629",
+     "tekst": "gjennomføre og rapportere laboratorieforsøk med brønnvæsker og reflektere over brønnvæskesamansetjingar og brønnkontroll"
+    },
+    {
+     "kode": "KM4626",
+     "tekst": "bruke den norske oljehistoria til å reflektere over utvikling i sikkerheitskultur og berekraftig teknologi på norsk sokkel"
+    },
+    {
+     "kode": "KM4625",
+     "tekst": "nytte prosedyrar for pakking og sikring av last"
+    },
+    {
+     "kode": "KM4624",
+     "tekst": "vurdere risiko knytt til bruk av traverskran og foreslå tiltak som kan førebygge ulykker og uønskte hendingar"
+    },
+    {
+     "kode": "KM8316",
+     "tekst": "stroppe, anhuke og gi signal under lasting og lossing ved bruk av traverskran"
+    },
+    {
+     "kode": "KM8317",
+     "tekst": "gjere greie for gjeldande krav til sikkerheit for sokkelarbeidarar"
+    },
+    {
+     "kode": "KM4652",
+     "tekst": "nytte arbeidstillatelse og sikker jobb-analyse til å reflektere over faremoment og redusere risikoen for uønskte hendingar"
+    },
+    {
+     "kode": "KM4623",
+     "tekst": "reflektere over korleis kosthald, rusmiddelbruk og søvnmønster kan påverke arbeidsevne"
+    },
+    {
+     "kode": "KM4636",
+     "tekst": "drøfte kva krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap, og beskrive kva plikter og rettar arbeidsgivaren og arbeidstakaren har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Elevane viser og utviklar kompetanse i prosedyrar og praksis når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i programfaget.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Læraren kan gi arbeidsoppgåver som dekkjer fleire av eller alle programfaga. Læraren skal vere i dialog med elevane om utviklinga deira i prosedyrar og praksis. Elevane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har i prosedyrar og praksis ved avslutninga av opplæringa i programfaget. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin i programfaget på varierte måtar. Med utgangspunkt i kompetansemåla skal læraren vurdere korleis eleven viser forståing, evne til refleksjon og kritisk tenking, og korleis eleven meistrar utfordringar og løyser oppgåver i ulike samanhengar. Læraren skal setje karakter i prosedyrar og praksis basert på kompetansen eleven viser ved å planleggje, gjennomføre, vurdere og dokumentere eige fagleg arbeid.",
+    "Eleven skal dokumentere gjennomført opplæring i G11 løfteredskap/stropp og anhuker.",
+    "Eleven skal dokumentere gjennomført teoretisk opplæring i G4 traverskran.",
+    "Eleven skal dokumentere gjennomført grunnleggjande sikkerheitsopplæring for sokkelarbeidande personar."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Boring: Eleven skal ha éin standpunktkarakter.",
+    "Komplettering og brønnservice: Eleven skal ha éin standpunktkarakter.",
+    "Prosedyrar og praksis: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Boring, komplettering og brønnservise og prosedyrar og praksis: Eleven skal opp til ein tverrfagleg skiftleg eksamen der dei felles programfaga inngår. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Boring: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Komplettering og brønnservice: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Prosedyrar og praksis: Privatisten skal opp til ein skriftleg eksamen i programfaget. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Boring, komplettering og brønnservice og prosedyrar og praksis: Privatisten skal opp til ein tverrfagleg skriftleg eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

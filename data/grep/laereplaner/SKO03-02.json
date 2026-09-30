@@ -1,0 +1,108 @@
+{
+ "kode": "SKO03-02",
+ "tittel": "Læreplan i vg3 skomakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV649",
+   "tittel": "Kompetansemål og vurdering vg3 skomakerfaget",
+   "fag": [
+    "SKO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7895",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid i tilvirking av nye sko, reparasjon og tilpassing av fottøy"
+    },
+    {
+     "kode": "KM7899",
+     "tekst": "utvikle arbeidstegninger og arbeidsbeskrivelser og konstruere maler til ulike produkter"
+    },
+    {
+     "kode": "KM7893",
+     "tekst": "vurdere og gjøre rede for hvordan valg av form, farge, funksjon og materialer påvirker sluttproduktet, og anvende kunnskapen om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM7901",
+     "tekst": "gjøre rede for sammenhenger mellom fottøy, fotens anatomi og enkelte fotlidelser og anvende kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7905",
+     "tekst": "bygge opp fottøy og vurdere og utføre tilpasninger etter kundens mål, ønsker og behov, og med relevant håndverktøy og maskiner"
+    },
+    {
+     "kode": "KM7904",
+     "tekst": "vurdere, justere og tilpasse standardlester etter mål"
+    },
+    {
+     "kode": "KM7903",
+     "tekst": "lage lestkopier og utvikle mønster til overlæret, tilskjæring, og nåtling av overlærsdelene"
+    },
+    {
+     "kode": "KM7890",
+     "tekst": "utføre reparasjon av hæler, såler og overlær på fottøy med relevant håndverktøy og maskiner og gjøre rede for hvordan ulike valg påvirker holdbarhet, kvalitet og gjenbruk"
+    },
+    {
+     "kode": "KM7900",
+     "tekst": "utføre pinning og bunning av fottøy med relevant håndverktøy og maskiner"
+    },
+    {
+     "kode": "KM7902",
+     "tekst": "vurdere og velge pleie og vedlikehold av skinn og lærprodukter"
+    },
+    {
+     "kode": "KM7898",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7897",
+     "tekst": "bruke fagspråk i kommunikasjon med kolleger, kunder og leverandører og for å markedsføre egne og bedriftens produkter"
+    },
+    {
+     "kode": "KM7896",
+     "tekst": "anvende aktuell teknologi og digitale plattformer til kommunikasjon og markedsføring og gjøre rede for god digital dømmekraft"
+    },
+    {
+     "kode": "KM7891",
+     "tekst": "gjøre rede for hovedtrekk i skomakerfagets historie og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7892",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr på verkstedet og følge gjeldende regelverk for helse, miljø og sikkerhet i alt arbeid på verkstedet"
+    },
+    {
+     "kode": "KM7894",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7906",
+     "tekst": "bruke og gjøre rede for hensiktsmessige arbeidsrutiner og ergonomiske arbeidsstillinger"
+    },
+    {
+     "kode": "KM7907",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 skomakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 skomakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 skomakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på tre til seks virkedager."
+   ]
+  }
+ ]
+}

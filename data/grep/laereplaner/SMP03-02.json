@@ -1,0 +1,132 @@
+{
+ "kode": "SMP03-02",
+ "tittel": "Læreplan i vg3 sjømatproduksjon",
+ "spraak": "nno",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV660",
+   "tittel": "Kompetansemål og vurdering vg3 sjømatproduksjon",
+   "fag": [
+    "SMP3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8198",
+     "tekst": "planleggje, gjennomføre, vurdere og dokumentere mottak, vidareforedling, transport og omsetning av sjømat"
+    },
+    {
+     "kode": "KM8177",
+     "tekst": "gjennomføre førstehandsbehandling i samsvar med gjeldande regelverk og forklare samanhengar mellom kvalitet og fangstmetodar"
+    },
+    {
+     "kode": "KM8194",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personleg hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med rutinane og regelverket til verksemda, og gjere greie for konsekvensar av avvik"
+    },
+    {
+     "kode": "KM8192",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystem og reflektere over kor viktig dette er for verksemda og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM8197",
+     "tekst": "gjennomføre manuell og maskinell handtering av sjømat og marint restråstoff og reflektere over val av metode"
+    },
+    {
+     "kode": "KM8190",
+     "tekst": "bruke verktøy, maskiner og utstyr på ein kvalifisert måte, utføre førebyggjande dagleg vedlikehald av maskiner og utstyr og gjere greie for konsekvensar ved avvik"
+    },
+    {
+     "kode": "KM8196",
+     "tekst": "anvende aktuelle kjøle-, fryse- og konserveringsmetodar og vurdere korleis kvaliteten på produkta blir påverka over tid"
+    },
+    {
+     "kode": "KM8179",
+     "tekst": "utvikle og justere reseptar og produktspesifikasjonar og gjere greie for korleis råvarer, hjelpe- og tilsetjingsstoff og produksjonsmetodar påverkar produkta"
+    },
+    {
+     "kode": "KM8183",
+     "tekst": "gjere greie for eigenskapane og samansetninga til råvarene, forklare kva endringar som skjer under produksjon og konservering, og gjere greie for kva rolle sjømat har for kosthald og helse"
+    },
+    {
+     "kode": "KM8180",
+     "tekst": "anvende emballerings- og lagringsmetodar og gjere greie for korleis dette påverkar kvalitet og ressursutnytting"
+    },
+    {
+     "kode": "KM8186",
+     "tekst": "reflektere over korleis ønskte og uønskte mikroorganismar kan påverke sjømat, og gjere greie for tiltak for å styre førekomsten"
+    },
+    {
+     "kode": "KM8182",
+     "tekst": "gjere greie for og følgje rutinar for skadedyrnedkjemping i verksemda"
+    },
+    {
+     "kode": "KM8188",
+     "tekst": "følgje rutinar og reglar for helse, miljø og sikkerheit, bruke verneutstyr, jobbe ergonomisk riktig, utføre førstehjelp og bidra til eit trygt og inkluderande arbeidsmiljø"
+    },
+    {
+     "kode": "KM8193",
+     "tekst": "gjere greie for rammevilkår, lover og forskrifter og forklare kva rolle tilsynsmyndigheitene har overfor verksemda"
+    },
+    {
+     "kode": "KM8199",
+     "tekst": "gjere greie for tekniske, kjemiske, biologiske og juridiske føresetnader for levandelagring av sjømat og drøfte konsekvensar ved avvik"
+    },
+    {
+     "kode": "KM8189",
+     "tekst": "følgje krav og rutinar for merking og sporing og gjere greie for konsekvensar ved avvik"
+    },
+    {
+     "kode": "KM8187",
+     "tekst": "handtere biologisk avfall og andre typar avfall og reflektere over korleis dette påverkar miljøet"
+    },
+    {
+     "kode": "KM8195",
+     "tekst": "gjennomføre utbytteberekningar og enkle kalkulasjonar og drøfte faktorar som påverkar dei økonomiske resultata til verksemda"
+    },
+    {
+     "kode": "KM8184",
+     "tekst": "drøfte etiske dilemma ved produksjon og omsetning av mat- og drikkevarer og gjere medvitne og berekraftige val"
+    },
+    {
+     "kode": "KM8181",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tileigne seg kunnskap, og kommunisere presist og forståeleg i samhandling med kollegaer og samarbeidspartnarar"
+    },
+    {
+     "kode": "KM8178",
+     "tekst": "utvikle faglege ferdigheiter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbetringsarbeid i verksemda"
+    },
+    {
+     "kode": "KM8200",
+     "tekst": "reflektere over korleis samhandling i eit fagleg og kollegialt yrkesfellesskap kan fremje likeverd og likestilling"
+    },
+    {
+     "kode": "KM8185",
+     "tekst": "beskrive måla og historia til verksemda og reflektere over korleis dette påverkar den daglege drifta"
+    },
+    {
+     "kode": "KM8191",
+     "tekst": "gjere greie for organiseringa av verksemda, rettane og pliktene til arbeidstakaren og arbeidsgivaren, korleis partane i arbeidslivet samarbeider, og korleis dette bidreg til å utvikle eit betre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 sjømatproduksjon når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 sjømatproduksjon. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 sjømatproduksjon skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "kode": "REL01-02",
+ "tittel": "Læreplan i religion og etikk – fellesfag i studieforberedende utdanningsprogram",
+ "spraak": "nob",
+ "fastsatt": "2019-11-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV172",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "REL1Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM1903",
+     "tekst": "presentere og sammenligne noen sentrale trekk ved østlige og vestlige religions- og livssynstradisjoner, inkludert kristendom og islam"
+    },
+    {
+     "kode": "KM1905",
+     "tekst": "utforske og drøfte hvordan religion inngår i historiske endringsprosesser globalt og nasjonalt"
+    },
+    {
+     "kode": "KM1904",
+     "tekst": "gjøre rede for og analysere religion og livssyn i et majoritets-, minoritets- og urfolksperspektiv med vekt på Sápmi/Sábme/Saepmie og Norge"
+    },
+    {
+     "kode": "KM1907",
+     "tekst": "gjøre rede for og drøfte aktuelle eksempler på samspillet mellom religion, livssyn og politikk"
+    },
+    {
+     "kode": "KM1906",
+     "tekst": "utforske og analysere hvordan religioner og livssyn kommer til uttrykk i medier og populærkultur"
+    },
+    {
+     "kode": "KM1910",
+     "tekst": "drøfte ulike former for religions- og livssynskritikk"
+    },
+    {
+     "kode": "KM1908",
+     "tekst": "gjøre rede for og drøfte sentrale fagbegreper knyttet til religioner, filosofi, livssyn og etikk"
+    },
+    {
+     "kode": "KM1909",
+     "tekst": "analysere og vurdere ulike kilder til kunnskap om religioner, livssyn og etikk"
+    },
+    {
+     "kode": "KM1915",
+     "tekst": "utforske og reflektere over eksistensielle spørsmål og svar"
+    },
+    {
+     "kode": "KM1912",
+     "tekst": "identifisere og drøfte etiske problemstillinger i tilknytning til kommunikasjon, mellommenneskelige relasjoner og identitet"
+    },
+    {
+     "kode": "KM1913",
+     "tekst": "drøfte menneskeverd og naturens egenverdi i møte med teknologisk utvikling"
+    },
+    {
+     "kode": "KM1914",
+     "tekst": "ta andres perspektiv og håndtere meningsbrytning om religion, livssyn og verdispørsmål"
+    },
+    {
+     "kode": "KM1911",
+     "tekst": "diskutere problemstillinger knyttet til gruppebaserte fordommer, rasisme og diskriminering"
+    },
+    {
+     "kode": "KM1916",
+     "tekst": "utforske og drøfte ideer om mennesket slik de kommer til uttrykk i ulike filosofiske tradisjoner"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i religion og etikk når de bruker fagets metoder og kunnskaper om religioner, livssyn, etikk og filosofi i utforsking av sentrale problemstillinger i faget. Elevene viser og utvikler kompetanse i etikk når de identifiserer og drøfter aktuelle etiske problemstillinger. Videre viser og utvikler elevene kompetanse når de inntar ulike standpunkter, tar andres perspektiv og står i meningsbrytninger på en måte som ivaretar den enkeltes integritet.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved gi elevene mulighet til å formulere faglige problemstillinger og til finne og kritisk bruke fagets metoder og kunnskaper i refleksjon og argumentasjon. Elevene skal få anledning til å arbeide utforskende med religion og etikk, undre seg og reflektere over etiske og filosofiske spørsmål. Læreren og elevene skal være i dialog om elevenes utvikling i religion og etikk. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i religion og etikk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i religion og etikk ved avslutningen av opplæringen etter vg3. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i religion og etikk basert på kompetansen elevene har vist når eleven har brukt kunnskaper og ferdigheter i kombinasjon."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Eleven kan trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 studieforberedende utdanningsprogram: Privatisten skal opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

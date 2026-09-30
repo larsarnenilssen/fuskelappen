@@ -1,0 +1,144 @@
+{
+ "kode": "PMF03-02",
+ "tittel": "Læreplan i vg3 pølsemakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-16",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV658",
+   "tittel": "Kompetansemål og vurdering vg3 pølsemakerfaget",
+   "fag": [
+    "PMF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8133",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere produksjon ut fra resept, råvarevalg, produksjonsmetode og gitte kriterier"
+    },
+    {
+     "kode": "KM8130",
+     "tekst": "gjennomføre mottakskontroll og lagerrullering og vurdere sammenhengen mellom vareflyt, svinn og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8140",
+     "tekst": "sikre trygg matproduksjon gjennom å praktisere god personlig hygiene, produksjonshygiene og næringsmiddelhygiene, i samsvar med virksomhetens rutiner og regelverk, og gjøre rede for konsekvenser av avvik"
+    },
+    {
+     "kode": "KM8149",
+     "tekst": "forstå og arbeide i tråd med kvalitetssystemer og reflektere over hvor viktig dette arbeidet er for virksomheten, kundene og samarbeidspartnerne"
+    },
+    {
+     "kode": "KM8132",
+     "tekst": "vurdere kvalitet på råvarer og anvende ulike behandlingsteknikker, konserveringsmetoder og prosesser og forklare hvordan disse påvirker kvaliteten på sluttproduktet"
+    },
+    {
+     "kode": "KM8123",
+     "tekst": "gjøre rede for slakteskrottens anatomi og gjenkjenne og beskrive ulike kjøttråvarer og biprodukter"
+    },
+    {
+     "kode": "KM8145",
+     "tekst": "gjøre rede for kjøttets egenskaper og sammensetning og forklare ulike kjemiske reaksjoner som skjer under produksjon og konservering"
+    },
+    {
+     "kode": "KM8131",
+     "tekst": "bruke ulike salte-, røyke-, koke- og tørkemetoder og forklare hvordan de påvirker produktenes egenskaper"
+    },
+    {
+     "kode": "KM8129",
+     "tekst": "produsere deiger og farser og gjøre rede for prosessen og hva som påvirker kvaliteten"
+    },
+    {
+     "kode": "KM8142",
+     "tekst": "stoppe pølser og forklare hvilke metoder og tarmer som benyttes til ulike produksjoner"
+    },
+    {
+     "kode": "KM8146",
+     "tekst": "utvikle og justere resepter og gjøre rede for hvordan råvarer, hjelpe- og tilsetningsstoffer og produksjonsmetoder påvirker produkt, næringsinnhold og økonomi"
+    },
+    {
+     "kode": "KM8141",
+     "tekst": "reflektere over hvordan ønskede og uønskede mikroorganismer kan påvirke forskjellige kjøttprodukter, og gjøre rede for tiltak for å styre forekomsten"
+    },
+    {
+     "kode": "KM8143",
+     "tekst": "gjøre rede for og følge rutiner for skadedyrbekjempelse i virksomheten"
+    },
+    {
+     "kode": "KM8139",
+     "tekst": "bruke verktøy, maskiner og utstyr på en kvalifisert måte, utføre forebyggende daglig vedlikehold og gjøre rede for konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8137",
+     "tekst": "følge rutiner og regler for helse, miljø og sikkerhet, bruke verneutstyr, jobbe ergonomisk riktig, kunne utføre førstehjelp og bidra til et trygt og inkluderende arbeidsmiljø"
+    },
+    {
+     "kode": "KM8144",
+     "tekst": "gjennomføre beregninger og enkle kalkulasjoner i forbindelse med produksjon, produktutvikling og omsetning og drøfte faktorer som påvirker virksomhetens økonomiske resultater"
+    },
+    {
+     "kode": "KM8134",
+     "tekst": "anvende emballerings- og lagringsmetoder og gjøre rede fro hvordan dette påvirker kvalitet og ressursutnyttelse"
+    },
+    {
+     "kode": "KM8138",
+     "tekst": "følge krav og rutiner for merking og sporing og gjøre rede for over konsekvenser ved avvik"
+    },
+    {
+     "kode": "KM8124",
+     "tekst": "gjøre rede for og håndtere avfall i virksomheten og reflektere over hvordan avfall og utslipp påvirker miljøet"
+    },
+    {
+     "kode": "KM8136",
+     "tekst": "utvikle fagidentitet gjennom å bruke faguttrykk og tilegne seg kunnskap, og kommunisere presist og forståelig med kolleger, kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM8128",
+     "tekst": "utvikle faglige ferdigheter, arbeide effektivt og reflektere over tiltak som kan bidra til innovasjon og forbedringsarbeid i virksomheten"
+    },
+    {
+     "kode": "KM8127",
+     "tekst": "drøfte etiske dilemmaer ved produksjon og omsetning av kjøtt- og pølseprodukter og gjøre bevisste og bærekraftige valg"
+    },
+    {
+     "kode": "KM8125",
+     "tekst": "reflektere over og gjøre bevisste valg med tanke på svinn, økonomi og bærekraftig utvikling i forbindelse med produksjon og emballering av kjøtt- og pølseprodukter"
+    },
+    {
+     "kode": "KM8147",
+     "tekst": "gjøre rede for rammevilkår, lover og forskrifter og forklare hvilken rolle tilsynsmyndighetene har overfor virksomheten"
+    },
+    {
+     "kode": "KM8135",
+     "tekst": "reflektere over hvordan samhandling i et faglig og kollegialt yrkesfellesskap kan fremme likeverd og likestilling"
+    },
+    {
+     "kode": "KM8148",
+     "tekst": "beskrive virksomhetens mål og historie og reflektere over hvordan dette påvirker daglig drift"
+    },
+    {
+     "kode": "KM8126",
+     "tekst": "gjøre rede for virksomhetens organisering, arbeidstaker og arbeidsgivers rettigheter og plikter, hvordan partene i arbeidslivet samarbeider, og hvordan dette bidrar til å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 pølsemakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 pølsemakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 pølsemakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over to virkedager."
+   ]
+  }
+ ]
+}

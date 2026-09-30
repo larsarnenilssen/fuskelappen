@@ -1,0 +1,105 @@
+{
+ "kode": "LBR04-02",
+ "tittel": "Læreplan i Vg3 maskiner og teknologi i landbruk",
+ "spraak": "nob",
+ "fastsatt": "2021-05-06",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV610",
+   "tittel": "Kompetansemål og vurdering vg3 maskiner og teknologi i landbruk",
+   "fag": [
+    "LBR4Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM7106",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere bruk av maskiner og ulike utstyr ut fra arbeidsoperasjon og i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7115",
+     "tekst": "planlegge og vurdere bruk av maskiner til leiekjøring og maskinsamarbeid"
+    },
+    {
+     "kode": "KM7107",
+     "tekst": "bruke maskiner og utstyr energiøkonomisk og med hensyn til miljø og klima, ut fra ulike agronomiske forhold og uten unødig slitasje på utstyr og belastning på jord og vegetasjon"
+    },
+    {
+     "kode": "KM7110",
+     "tekst": "kontrollere teknisk og sikkerhetsmessig status på traktor, utstyr og maskiner, og vurdere behovet for autorisert service og reparasjon"
+    },
+    {
+     "kode": "KM7113",
+     "tekst": "beskrive og følge bestemmelser som gjelder for bruk av traktor, redskaper og kjøring av last på offentlig vei og privat område"
+    },
+    {
+     "kode": "KM7108",
+     "tekst": "sammenligne ulike mekaniseringslinjer i driftsbygninger og planteproduksjoner, og velge teknologi basert på analyser av produktivitet, miljø, økonomi, dyrevelferd og muligheter for samarbeid"
+    },
+    {
+     "kode": "KM7116",
+     "tekst": "foreta enkle investeringsberegninger og sammenligne forskjellige anskaffelsesmetoder for maskiner og utstyr som kjøp eller leasing"
+    },
+    {
+     "kode": "KM7117",
+     "tekst": "utforske tilgjengelig ny teknologi for å optimalisere en produksjon"
+    },
+    {
+     "kode": "KM7112",
+     "tekst": "bruke grunnlagsdata og anvende digitale hjelpemidler til bruk i husdyr- og planteproduksjon"
+    },
+    {
+     "kode": "KM7119",
+     "tekst": "utføre vedlikehold og enkle reparasjoner på maskiner og utstyr, beskrive garantier på teknisk utstyr, planlegge periodisk vedlikehold og følge prosedyrer ved reklamasjon"
+    },
+    {
+     "kode": "KM7109",
+     "tekst": "instruere i bruk og enkelt vedlikehold av traktorer, maskiner og utstyr"
+    },
+    {
+     "kode": "KM7114",
+     "tekst": "utføre enkelt sveise- og sammenføyningsarbeid og ivareta sikkerheten ved varme arbeider"
+    },
+    {
+     "kode": "KM7118",
+     "tekst": "ta hånd om spillolje og annet spesialavfall fra traktor- og maskinparken i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM7111",
+     "tekst": "vurdere risiko ved og arbeide med maskinelt utstyr etter gjeldende regelverk for helse, miljø og sikkerhet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget vg3 maskiner og teknologi i landbruk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget vg3 maskiner og teknologi i landbruk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget vg3 maskiner og teknologi i landbruk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget vg3 maskiner og teknologi i landbruk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Vg3 maskiner og teknologi i landbruk: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Vg3 maskiner og teknologi i landbruk: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Vg3 maskiner og teknologi i landbruk: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

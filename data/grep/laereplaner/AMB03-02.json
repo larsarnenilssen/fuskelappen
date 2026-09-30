@@ -1,0 +1,184 @@
+{
+ "kode": "AMB03-02",
+ "tittel": "Læreplan i vg3 ambulansefaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV487",
+   "tittel": "Kompetansemål og vurdering ambulansefaget",
+   "fag": [
+    "AMB3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5385",
+     "tekst": "utføre faglig forsvarlig og omsorgsfull helsehjelp i tråd med gjeldende regelverk og krav til profesjonell yrkesutøvelse"
+    },
+    {
+     "kode": "KM5376",
+     "tekst": "motta og gi veiledning og reflektere over egen kompetanse"
+    },
+    {
+     "kode": "KM5388",
+     "tekst": "reflektere over etiske problemstillinger og gi eksempler på etiske dilemmaer i ambulansefaget"
+    },
+    {
+     "kode": "KM5389",
+     "tekst": "samhandle med andre for å oppnå helhetlige pasientforløp som ivaretar omsorgen for pasienten"
+    },
+    {
+     "kode": "KM5386",
+     "tekst": "kommunisere og samhandle med pasienter, pårørende, kolleger og personell fra ulike kulturer på en tydelig og tillitsfull måte"
+    },
+    {
+     "kode": "KM5397",
+     "tekst": "beskrive indikasjoner, kontraindikasjoner, bivirkninger og interaksjoner ved bruk av de vanligste medikamentene i ambulansetjenesten"
+    },
+    {
+     "kode": "KM5372",
+     "tekst": "beregne riktig medikamentdose og administrere medikamenter etter forordning fra lege og i samsvar med gjeldende prosedyrer"
+    },
+    {
+     "kode": "KM5396",
+     "tekst": "ivareta prinsippene for god hygiene og smittevern i ambulansetjenesten"
+    },
+    {
+     "kode": "KM5393",
+     "tekst": "gjøre rede for kroppens oppbygning og funksjon og kroppens regulerings- og kompensasjonsmekanismer ved sykdom og skade hos pasienter i ulike aldre"
+    },
+    {
+     "kode": "KM5375",
+     "tekst": "gjøre rede for fysiologiske forskjeller mellom pasienter i ulike aldre og hvilken betydning disse har for sykdom og skade"
+    },
+    {
+     "kode": "KM5394",
+     "tekst": "undersøke pasienter med ulik alder, skade og sykdom på en systematisk måte, vurdere tegn og symptomer på skade og sykdom, behandle og overvåke vitale livsfunksjoner"
+    },
+    {
+     "kode": "KM5399",
+     "tekst": "identifisere fysiske og psykiske behov for pleie og omsorg og utføre nødvendige tiltak"
+    },
+    {
+     "kode": "KM5377",
+     "tekst": "gi muntlige og skriftlige rapporter om pasientens tilstand"
+    },
+    {
+     "kode": "KM5383",
+     "tekst": "forflytte pasienter på en effektiv og skånsom måte og velge riktig leiring og sikring av pasienten"
+    },
+    {
+     "kode": "KM5380",
+     "tekst": "iverksette tiltak for pasienter med ulike funksjonshemminger på en omsorgsfull måte"
+    },
+    {
+     "kode": "KM5382",
+     "tekst": "identifisere tegn og symptomer på ruspåvirkning og psykisk sykdom og iverksette nødvendige tiltak ved akutte psykiske lidelser"
+    },
+    {
+     "kode": "KM5395",
+     "tekst": "gjøre rede for normale svangerskap, fødsler og komplikasjoner og iverksette nødvendig prehospital håndtering"
+    },
+    {
+     "kode": "KM5365",
+     "tekst": "identifisere tegn på livløshet og iverksette nødvendige tiltak for gjenoppliving"
+    },
+    {
+     "kode": "KM5366",
+     "tekst": "håndtere situasjoner knyttet til døende og døde pasienter ved naturlig og unaturlig dødsfall på en etisk forsvarlig måte"
+    },
+    {
+     "kode": "KM5370",
+     "tekst": "gjøre rede for hva risiko- og sårbarhetsanalyse er og bruke beredskapsplaner under øvelser og reelle hendelser"
+    },
+    {
+     "kode": "KM5364",
+     "tekst": "gjøre rede for hvordan stress kan påvirke ambulansearbeidere og anvende strategier for å mestre stress"
+    },
+    {
+     "kode": "KM5391",
+     "tekst": "ivareta prosedyrer for helse, miljø og sikkerhet, skrive avviksmeldinger og redegjøre for kvalitetssystemet på arbeidsplassen"
+    },
+    {
+     "kode": "KM5378",
+     "tekst": "identifisere trusler mot egen og andres sikkerhet og iverksette tiltak for å ivareta sikkerheten under ambulanseoppdrag"
+    },
+    {
+     "kode": "KM5387",
+     "tekst": "identifisere og forebygge konflikter og anvende ulike strategier for konflikthåndtering"
+    },
+    {
+     "kode": "KM5398",
+     "tekst": "arbeide i team og gjøre rede for ledelse og samhandling i team"
+    },
+    {
+     "kode": "KM5369",
+     "tekst": "utføre kontroll av ambulansekjøretøy og utstyr i ambulansen"
+    },
+    {
+     "kode": "KM5368",
+     "tekst": "gjøre rede for organisering og ledelse på et skadested og lede arbeidet som første ambulanseenhet"
+    },
+    {
+     "kode": "KM5379",
+     "tekst": "gi situasjonsrapporter i ulike faser av arbeidet på skadested"
+    },
+    {
+     "kode": "KM5390",
+     "tekst": "bruke sambandsutstyr og kommunisere over samband i samsvar med gjeldende reglementer og prosedyrer"
+    },
+    {
+     "kode": "KM5384",
+     "tekst": "samvirke med nødetatene, Forsvaret og andre aktører i redningstjenesten"
+    },
+    {
+     "kode": "KM5392",
+     "tekst": "navigere etter analoge og digitale kart"
+    },
+    {
+     "kode": "KM5367",
+     "tekst": "følge prosedyrer og retningslinjer ved pågående livstruende vold og masseskadesituasjoner"
+    },
+    {
+     "kode": "KM5400",
+     "tekst": "gjøre rede for ambulansearbeiderens rolle ved skred, flom og andre klimarelaterte hendelser"
+    },
+    {
+     "kode": "KM5381",
+     "tekst": "følge retningslinjer og prosedyrer på skadested med farlige stoffer"
+    },
+    {
+     "kode": "KM5371",
+     "tekst": "drøfte trafikale forhold som har betydning for ambulansekjøringen og iverksette tiltak for å ivareta sikkerheten i ambulansen"
+    },
+    {
+     "kode": "KM5374",
+     "tekst": "anvende fag- og forskningslitteratur, vurdere kilder kritisk og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5373",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet, og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 ambulansefaget når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 ambulansefaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringene slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 ambulansefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres på tre til fem virkedager."
+   ]
+  }
+ ]
+}

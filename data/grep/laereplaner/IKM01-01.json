@@ -1,0 +1,228 @@
+{
+ "kode": "IKM01-01",
+ "tittel": "Læreplan i vg1 informasjonsteknologi og medieproduksjon",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV234",
+   "tittel": "Kompetansemål og vurdering produksjon og historiefortelling",
+   "fag": [
+    "IKM1Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2522",
+     "tekst": "produsere og kommunisere innhold innenfor ulike sjangre tilpasset visuelle og auditive medier"
+    },
+    {
+     "kode": "KM2552",
+     "tekst": "utvikle og presentere budskap tilpasset ulike målgrupper og kanaler"
+    },
+    {
+     "kode": "KM2551",
+     "tekst": "utforske og bruke komposisjonsprinsipper for å sikre god lesbarhet tilpasset budskap og målgruppe"
+    },
+    {
+     "kode": "KM2550",
+     "tekst": "velge og bruke virkemidler, typografi og layout som passer til ulike budskap og reflektere over effekten disse har på budskapet"
+    },
+    {
+     "kode": "KM2549",
+     "tekst": "bruke teknikker for idéutvikling, kreativitet og historiefortelling i produksjon"
+    },
+    {
+     "kode": "KM2548",
+     "tekst": "utforske og bruke fortelleteknikk og dramaturgi i egne produksjoner"
+    },
+    {
+     "kode": "KM2547",
+     "tekst": "utøve kildekritikk og etisk refleksjon og anvende relevante regelverk i egen produksjon"
+    },
+    {
+     "kode": "KM2546",
+     "tekst": "utforske hvordan interaktivitet i historiefortelling kan brukes for å skape engasjement og nye uttrykk, og bruke dette i egen produksjon"
+    },
+    {
+     "kode": "KM2545",
+     "tekst": "utforske og tilegne seg kunnskap om endringer innenfor teknologi og programvare ved å bruke ulike kilder"
+    },
+    {
+     "kode": "KM2543",
+     "tekst": "gjøre rede for hvordan medier kan påvirke meningene våre, hvordan vi oppfatter andre og hvordan andre oppfatter oss"
+    },
+    {
+     "kode": "KM2542",
+     "tekst": "forstå hvordan teknologi og sikkerhet kan påvirke åpne og demokratiske prosesser og utøve etisk refleksjon knyttet til hvordan teknologi kan påvirke disse prosessene"
+    },
+    {
+     "kode": "KM2544",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produksjon og historiefortelling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produksjon og historiefortelling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i produksjon og historiefortelling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produksjon og historiefortelling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV235",
+   "tittel": "Kompetansemål og vurdering teknologiforståelse",
+   "fag": [
+    "IKM1Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2541",
+     "tekst": "planlegge og gjennomføre sanntidsproduksjoner"
+    },
+    {
+     "kode": "KM2540",
+     "tekst": "reflektere over og beskrive hvordan media påvirker mennesker og deres medievaner"
+    },
+    {
+     "kode": "KM2539",
+     "tekst": "kjenne til og anvende bransjefaglige metoder og relevant utstyr i produksjon"
+    },
+    {
+     "kode": "KM2553",
+     "tekst": "beskrive, utforske og konfigurere datanettverk med egne subnett"
+    },
+    {
+     "kode": "KM2538",
+     "tekst": "administrere brukerenheter og koble dem til sentrale administrasjonsplattformer"
+    },
+    {
+     "kode": "KM2536",
+     "tekst": "utforske og beskrive hvordan teknologi kan formidle nye uttrykk og gi nye opplevelser"
+    },
+    {
+     "kode": "KM2535",
+     "tekst": "gjøre rede for hvordan hensynet til bærekraft påvirker anskaffelse, drift og avhending av utstyr og materiell"
+    },
+    {
+     "kode": "KM2534",
+     "tekst": "gjennomføre og dokumentere arbeid i tråd med gjeldende bestemmelser for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2533",
+     "tekst": "gjøre rede for hvordan internett fungerer, og hvordan det blir brukt til kommunikasjon og lagring"
+    },
+    {
+     "kode": "KM2532",
+     "tekst": "utforske og beskrive digitale trusler, verdier og sårbarheter i samfunnet"
+    },
+    {
+     "kode": "KM2531",
+     "tekst": "gjøre rede for hvordan man behandler informasjon og personopplysninger i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM2530",
+     "tekst": "vurdere, anbefale og kvalitetssikre tiltak som reduserer risiko for uønsket spredning av data"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i teknologiforståelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i teknologiforståelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i teknologiforståelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i teknologiforståelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV236",
+   "tittel": "Kompetansemål og vurdering konseptutvikling og programmering",
+   "fag": [
+    "IKM1Z03"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2529",
+     "tekst": "anvende regelverk for bruk og formidling av innhold i egen produksjon og reflektere over ansvar og etikk knyttet til bruk og formidling av innhold i egen produksjon"
+    },
+    {
+     "kode": "KM2528",
+     "tekst": "utforske og beskrive sammenhenger mellom løsninger, kundens behov og brukernes forutsetninger og erfaringer"
+    },
+    {
+     "kode": "KM2527",
+     "tekst": "bruke programmering til å løse praktiske utfordringer og til å fortelle interaktive historier"
+    },
+    {
+     "kode": "KM2526",
+     "tekst": "utforske og anvende verktøy for datamodellering i oppbygging av databaser"
+    },
+    {
+     "kode": "KM2525",
+     "tekst": "bruke oppmerkingsspråk og stilsett i ulike produksjoner"
+    },
+    {
+     "kode": "KM2524",
+     "tekst": "visualisere og utvikle konsepter og ideer tilpasset ulike plattformer"
+    },
+    {
+     "kode": "KM2523",
+     "tekst": "beskrive hvordan teknologi behandler data, algoritmer og statistikk"
+    },
+    {
+     "kode": "KM2537",
+     "tekst": "bruke prinsipper for feilsøking og retting i arbeid med programmering"
+    },
+    {
+     "kode": "KM2554",
+     "tekst": "bruke dokumentasjon og dokumentere faglige prosesser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i konseptutvikling og programmering når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i konseptutvikling og programmering. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i konseptutvikling og programmering ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i konseptutvikling og programmering basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og historiefortelling: Eleven skal ha én standpunktkarakter.",
+    "Teknologiforståelse: Eleven skal ha én standpunktkarakter.",
+    "Konseptutvikling og programmering: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og historiefortelling: Eleven skal ikke opp til eksamen.",
+    "Teknologiforståelse: Eleven skal ikke opp til eksamen.",
+    "Konseptutvikling og programmering: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og historiefortelling: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Teknologiforståelse: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Konseptutvikling og programmering: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og historiefortelling, teknologiforståelse og konseptutvikling og programmering: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "kode": "ELE03-04",
+ "tittel": "Læreplan i vg3 elektrikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2026-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV995",
+   "tittel": "Kompetansemål og vurdering elektrikerfaget",
+   "fag": [
+    "ELE3Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12886",
+     "tekst": "planlegge, gjennomføre og dokumentere arbeidsoppdragene individuelt og i samarbeid med andre i henhold til gjeldende regelverk og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12890",
+     "tekst": "risikovurdere anlegg og utstyr med hensyn til beskyttelse mot elektrisk sjokk, overstrøm, overspenning, brann, elektromagnetisk støy og ytre påvirkninger"
+    },
+    {
+     "kode": "KM12889",
+     "tekst": "arbeide med hensyn til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12887",
+     "tekst": "velge egnet verktøy og verneutstyr til arbeidsoppdragene og gjøre rede for vedlikeholdsrutinene for verktøy og verneutstyr i bedriftens internkontrollsystem"
+    },
+    {
+     "kode": "KM12891",
+     "tekst": "montere og sette i drift ulike fordelingssystemer fra inntak til belastning med tilhørende målearrangement, ekomutstyr og jordingssystem, dimensjonere ledning, kabel og vern og vurdere behov for kompenserende tiltak med hensyn til effektfaktor ved inntak"
+    },
+    {
+     "kode": "KM12892",
+     "tekst": "montere, sette i drift og konfigurere ulike brukertilpassede og energieffektive installasjoner for lys, varme og variabel last med styringsutstyr og sensorer, vurdere og iverksette tiltak mot elektromagnetisk støy og gjøre rede for bygningers energikarakter og energimerking av utstyr"
+    },
+    {
+     "kode": "KM12888",
+     "tekst": "montere og konfigurere nettverkstilknyttet radiobasert og kablet utstyr for brukertilpassede og energieffektive installasjoner og beskrive hvordan datasikkerhet og personvern er ivaretatt"
+    },
+    {
+     "kode": "KM12874",
+     "tekst": "montere, programmere og konfigurere styringssystemer for motor med regulator og sensordata for å oppnå ønsket resultat, og vurdere og iverksette tiltak mot elektromagnetisk støy"
+    },
+    {
+     "kode": "KM12873",
+     "tekst": "montere og konfigurere anlegg for lokal energiproduksjon med energilagring, laststyring og energileveranse til nett og gjøre rede for hvordan dette påvirker anleggets energiøkonomi"
+    },
+    {
+     "kode": "KM12875",
+     "tekst": "montere og konfigurere nød- og reservestrømforsyningsanlegg, avbruddsfrie strømforsyningsanlegg og koblingsutstyr for prioriterte laster og gjøre rede for farer forbundet med arbeid på batterianlegg"
+    },
+    {
+     "kode": "KM12878",
+     "tekst": "montere og konfigurere brannalarm og adgangs- og sikkerhetssystemer og vurdere ulike typer detektorer og alarmgivere og plasseringen deres"
+    },
+    {
+     "kode": "KM12879",
+     "tekst": "montere føringsvei og installere ledning, kabel og fiber i henhold til krav til forlegning, og gjøre rede for hvordan forlegning påvirker strømføringsevne og transmisjonsegenskaper"
+    },
+    {
+     "kode": "KM12876",
+     "tekst": "skjøte og terminere ulike kabler og andre ledende forbindelser ved bruk av egnet metode, verktøy, pressutstyr og tiltrekkingsmoment, og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM12877",
+     "tekst": "foreta systematisk feilsøking, reparasjoner og vedlikehold på elektriske anlegg og utstyr og vurdere lønnsomheten til reparasjoner"
+    },
+    {
+     "kode": "KM12880",
+     "tekst": "vurdere tilstand og kvalitet på installasjoner og anbefale utbedringer og forbedringer i funksjon, sikkerhet og energieffektivitet"
+    },
+    {
+     "kode": "KM12881",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12882",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12883",
+     "tekst": "drøfte etiske dilemmaer ved valg av elektriske produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12884",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12885",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 elektrikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 elektrikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Opplæringen i vg3 elektrikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

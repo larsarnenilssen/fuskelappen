@@ -4,8 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Fag og læreplaner** (fase 2): søk på fagnavn og fagkode, og filter på utdanningsprogram, trinn, fagtype, vurderingsordning, eksamensform og årstimetall, for alle fagkoder i videregående i Grep.
+- **Fagside** med fagkode, fagtype, trinn, utdanningsprogram, årstimetall og vurderingsordning for elever og privatister, og kompetansemål, underveisvurdering, standpunktvurdering og vurderingsordning fra læreplanen, med lenke til læreplanen på udir.no.
+- Læreplanteksten vises på målformen læreplanen er fastsatt i (bokmål, nynorsk eller samisk), merket og uoversatt.
+- Fag kan legges til som favoritter, og fagene er med i det samlede søket.
+
 ### Lagt til (for eier)
 
+- Grep-hentingen tar nå med alle fag og læreplaner i videregående hver uke. Endrede læreplaner og fag står i den ukentlige kontrollsaken.
 - **Automatisk verdisjekk:** Hvert tall fra SFS 2213 og hovedtariffavtalen har et kort sitat fra kilden. Kildesjekken ser hver mandag etter sitatet i kilden og foreslår det nye tallet hvis det er endret.
 - **Kontrolloversikt** i `docs/KONTROLL.md`: hva som bygger på hver kilde, status for din kontroll og for verdisjekken, og hva som bør ses på nå.
 - Tester sjekker at tallene henger sammen, for eksempel at årsverket er 225 dager à 7,5 timer og at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad i vedlegg 1.

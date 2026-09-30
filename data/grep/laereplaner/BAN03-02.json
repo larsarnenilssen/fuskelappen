@@ -1,0 +1,124 @@
+{
+ "kode": "BAN03-02",
+ "tittel": "Læreplan i vg3 banemontørfaget",
+ "spraak": "nno",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV505",
+   "tittel": "Kompetansemål og vurdering vg3 banemontørfaget",
+   "fag": [
+    "BAN3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5710",
+     "tekst": "planleggje bygging, drift, kontroll og vedlikehald av over- og underbygningen i køyreveg for skjenegåande transport ved hjelp av ulike prosjektverktøy, arbeide etter teikningar, beskrivingar og preaksepterte løysingar, velje verktøy og materiale og vurdere kostnader, tidsbruk og miljøomsyn i arbeidet"
+    },
+    {
+     "kode": "KM5729",
+     "tekst": "gjere greie for og bruke kvalitetssikringssystem, gjennomføre arbeidet i tråd med gjeldande krav til helse, miljø og sikkerheit og toleransekrav og reflektere over konsekvensar av ikkje å følgje krava"
+    },
+    {
+     "kode": "KM5730",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre ein sikker jobbanalyse og rapportere om uønskte hendingar"
+    },
+    {
+     "kode": "KM5720",
+     "tekst": "arbeide i tråd med ergonomiske prinsipp og reflektere over konsekvensane av ulike belastningar for yrkesutøvaren"
+    },
+    {
+     "kode": "KM5715",
+     "tekst": "sikre og sperre av byggjeplassar og anleggsområde i samsvar med gjeldande regelverk og vurdere kva risikofaktorar som kan påverke trafikkavviklinga"
+    },
+    {
+     "kode": "KM5711",
+     "tekst": "velje ut og bruke verne- og sikringsutstyr og vurdere konsekvensar av feilbruk"
+    },
+    {
+     "kode": "KM5714",
+     "tekst": "kjeldesortere og handtere avfall etter gjeldande regelverk, behandle farlege stoff, uønskte plantar og organismar, reflektere over konsekvensane av feilhandtering og iverksette tiltak"
+    },
+    {
+     "kode": "KM5712",
+     "tekst": "arbeide etter regelverk og avtalar som regulerer arbeidsforholdet i faget, og gjere greie for pliktene og rettane til arbeidsgivaren og arbeidstakaren og reflektere over krav og forventningar som blir stilte til eit likeverdig og inkluderande yrkesfellesskap"
+    },
+    {
+     "kode": "KM5719",
+     "tekst": "gjere greie for kvalitetane og eigenskapane til stål, grus og andre steinmateriale, betong og trevirke og vurdere bruken ut frå haldbarheit, miljøomsyn og økonomi"
+    },
+    {
+     "kode": "KM5717",
+     "tekst": "ta imot materiale, utstyr og verktøy og kontrollere kvaliteten i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5721",
+     "tekst": "velje og bruke ulike maskiner og metodar i arbeidet med spor og sporanlegg og halde ved like maskiner, reiskapar og utstyr"
+    },
+    {
+     "kode": "KM5722",
+     "tekst": "forstå kvifor overhøgder blir brukte i sporet, og drøfte forholdet mellom overhøgde og strekningshastigheit"
+    },
+    {
+     "kode": "KM5716",
+     "tekst": "byggje og halde ved like sporanlegg og sporvekslarar og vurdere konsekvensen av feilproduksjon"
+    },
+    {
+     "kode": "KM5713",
+     "tekst": "forstå kreftene som verkar i sporet, og halde ved like heilsveisa spor"
+    },
+    {
+     "kode": "KM5723",
+     "tekst": "gjere greie for ulike typar brukonstruksjonar og byggje og halde ved like spor på bruer"
+    },
+    {
+     "kode": "KM5728",
+     "tekst": "velje skjener og sviller og byggje spor i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5727",
+     "tekst": "halde ved like vassvegar og vurdere korleis landskapet og dei geologiske forholda påverkar underbygninga"
+    },
+    {
+     "kode": "KM5726",
+     "tekst": "kontrollere vegetasjonen langs spor og ved stasjonsområde, fjerne uønskt vegetasjon, drøfte ulike metodar for vegetasjonskontroll og reflektere over hvorfor uønsket vegetasjon fjernes"
+    },
+    {
+     "kode": "KM5724",
+     "tekst": "vurdere korleis klimaet kan påverke sporstabiliteten, og setje i verk tiltak"
+    },
+    {
+     "kode": "KM5718",
+     "tekst": "forstå og gjere greie for oppbygginga av det elektrotekniske anlegget i og ved sporet"
+    },
+    {
+     "kode": "KM5725",
+     "tekst": "utføre enkel kontroll, sikring og vedlikehald av støttemurar, tunnelar og fjellskjeringar"
+    },
+    {
+     "kode": "KM5731",
+     "tekst": "utføre grunnleggjande førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse. Lærlingane viser og utviklar kompetanse i vg3 banemontørfaget når dei bruker kunnskapar, ferdigheiter og kritisk tenking til å løyse arbeidsoppgåver i faget.",
+    "Instruktøren skal leggje til rette for lærlingmedverknad og stimulere til lærelyst gjennom varierte arbeidsoppgåver. Instruktøren skal vere i dialog med lærlingane om utviklinga deira i vg3 banemontørfaget. Lærlingane skal få høve til å uttrykkje kva dei opplever at dei meistrar, og reflektere over eiga fagleg utvikling. Instruktøren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at lærlingane kan bruke rettleiinga for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.",
+    "Opplæringa i vg3 banemontørfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fire vyrkedagar."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,152 @@
+{
+ "kode": "IDR08-02",
+ "tittel": "Læreplan i lederutvikling",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV291",
+   "tittel": "Kompetansemål og vurdering lederutvikling 1",
+   "fag": [
+    "IDR8Z03"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3079",
+     "tekst": "presentere og anvende undervisningsprinsipper og undervisningsmetoder"
+    },
+    {
+     "kode": "KM3095",
+     "tekst": "utforske teorier og modeller for å forstå sentrale faktorer for god ledelse"
+    },
+    {
+     "kode": "KM3094",
+     "tekst": "presentere ulike kommunikasjonsmodeller"
+    },
+    {
+     "kode": "KM3093",
+     "tekst": "beskrive og bruke ulike formidlingsteknikker"
+    },
+    {
+     "kode": "KM3092",
+     "tekst": "gjøre rede for personlighetstyper og ledelsesfilosofi"
+    },
+    {
+     "kode": "KM3091",
+     "tekst": "beskrive aktuelle utviklingstrekk innen ledelse, nasjonalt og internasjonalt"
+    },
+    {
+     "kode": "KM3090",
+     "tekst": "gjøre rede for sentrale egenskaper hos gode trenere og ledere"
+    },
+    {
+     "kode": "KM3089",
+     "tekst": "kartlegge og beskrive egne lederegenskaper"
+    },
+    {
+     "kode": "KM3096",
+     "tekst": "utforske og reflektere over egen lederstil"
+    },
+    {
+     "kode": "KM3088",
+     "tekst": "planlegge, gjennomføre og evaluere oppdrag som trener, leder eller dommer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i lederutvikling 1. Elevene viser og utvikler kompetanse i faget gjennom å fordype seg i ledelsesteori. De viser og utvikler også kompetanse når de uttrykker ledelsesteori skriftlig eller muntlig og bruker teorien i praktisk lederskap.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å gi elevene mulighet til å utforske sentrale teorier om og modeller for ledelse, og ved å gi dem mulighet til å overføre dette til praksis. Læreren skal være i dialog med elevene om utviklingen deres i faget, med særlig vekt på den praktiske utøvelsen, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å videreutvikle sin kompetanse i praktiske lederoppgaver."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter lederutvikling 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i lederutvikling 1 basert på kompetansen eleven har vist innenfor ledelsesteori, egen lederatferd og praktisk lederskap."
+   ]
+  },
+  {
+   "kode": "KV292",
+   "tittel": "Kompetansemål og vurdering lederutvikling 2",
+   "fag": [
+    "IDR8Z04"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3086",
+     "tekst": "veilede både individuelt og i gruppe i ulike undervisnings- og lederoppdrag"
+    },
+    {
+     "kode": "KM3085",
+     "tekst": "utforske hvordan egne lederegenskaper kan påvirke andre i lederoppdrag"
+    },
+    {
+     "kode": "KM3084",
+     "tekst": "samarbeide med andre for å planlegge, gjennomføre og vurdere lederoppdrag i kjente og ukjente situasjoner"
+    },
+    {
+     "kode": "KM3083",
+     "tekst": "utforske og reflektere over bruken av ulike formidlingsteknikker"
+    },
+    {
+     "kode": "KM3082",
+     "tekst": "vurdere etiske og moralske utfordringer i ulike lederoppdrag"
+    },
+    {
+     "kode": "KM3081",
+     "tekst": "bruke kommunikasjon på en målrettet måte i ulike situasjoner og lederoppdrag"
+    },
+    {
+     "kode": "KM3080",
+     "tekst": "utforske og reflekter over egen og andres lederfilosofi og lederstil"
+    },
+    {
+     "kode": "KM3087",
+     "tekst": "beskrive og dokumentere arbeidet med å nå egne utviklingsmål"
+    },
+    {
+     "kode": "KM3097",
+     "tekst": "reflektere over aktuelle utviklingstrekk innen ledelse, nasjonalt og internasjonalt"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i lederutvikling 2. Elevene viser og utvikler kompetanse i faget gjennom praktiske lederoppdrag som utfordrer deres egne verdier og utviklingsmål. De viser og utvikler også kompetanse i faget ved å reflektere, drøfte og vurdere faktorer som har innvirkning på ledelse. Videre viser og utvikler elevene kompetanse når de planlegger, gjennomfører, evaluerer og vurderer ulike lederoppdrag.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene samarbeide med aktører som kan gi erfaringer med ulike typer lederoppdrag. Læreren skal være i dialog med elevene om utviklingen deres i teoretisk og praktisk lederskap, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å reflektere over sine egne erfaringer i utviklingen som leder."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter lederutvikling 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i lederutvikling 2 basert på kompetansen eleven har vist gjennom kunnskap om ledelsesteori, utvikling av egen lederatferd og praktisk lederskap."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Lederutvikling 1: Eleven skal ha én standpunktkarakter.",
+    "Lederutvikling 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Lederutvikling 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Lederutvikling 2: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Lederutvikling 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Lederutvikling 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "kode": "KEF01-02",
+ "tittel": "Læreplan i kvensk eller finsk som andrespråk",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1195",
+   "tittel": "Kompetansemål og vurdering vg2 yrkesfaglige utdanningsprogram",
+   "fag": [
+    "KEF1Z04",
+    "KEF1Z05"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15175",
+     "tekst": "delta i samtaler og tilpasse språket til formål og situasjon"
+    },
+    {
+     "kode": "KM15176",
+     "tekst": "finne informasjon i skriftlige og muntlige tekster og bruke den i egen produksjon, også i produksjon av tekster knyttet til eget utdanningsprogram"
+    },
+    {
+     "kode": "KM15177",
+     "tekst": "bruke metaspråk til å forklare og sortere språklige strukturer"
+    },
+    {
+     "kode": "KM15178",
+     "tekst": "reflektere over og fortelle om flerspråklige samfunn på Nordkalotten og muligheter som språkkunnskaper gir i arbeidslivet og andre sammenhenger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i kvensk eller finsk som andrespråk på vg2 yrkesfaglige utdanningsprogram når de deltar i samtaler og utveksler informasjon og meninger om kjente emner, og når de bruker språk som er tilpasset situasjon og mottaker både muntlig og skriftlig. De viser og utvikler også kompetanse i faget når de reflekterer over faglige emner og bruker grunnleggende språklige strukturer i muntlige og skriftlige tekster. Videre viser og utvikler de kompetanse når de får anledning til å reflektere over betydningen av flerspråklighet og hvilke muligheter språklige kunnskaper gir i et mangfoldig samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske og bruke kreativitet og fantasi i språklæringen. Læreren skal legge til rette for at elevene får arbeide med faglige oppgaver både alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i kvensk eller finsk som andrespråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide og videreutvikle egne muntlige og skriftlige tekster og til å bruke kvensk eller finsk i ulike kommunikasjonssituasjoner, inkludert situasjoner knyttet til eget utdanningsprogram."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kvensk eller finsk som andrespråk ved avslutningen av opplæringen etter vg2 yrkesfaglige utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kvensk eller finsk som andrespråk basert på kompetansen eleven har vist både muntlig og skriftlig."
+   ]
+  },
+  {
+   "kode": "KV1192",
+   "tittel": "Kompetansemål og vurdering vg1 studieforberedende utdanningsprogram",
+   "fag": [
+    "KEF1Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15163",
+     "tekst": "delta i samtaler og tilpasse språket til formål og situasjon"
+    },
+    {
+     "kode": "KM15165",
+     "tekst": "finne informasjon i skriftlige og muntlige tekster, og bruke den i egen produksjon"
+    },
+    {
+     "kode": "KM15166",
+     "tekst": "bruke metaspråk til å forklare og sortere språklige strukturer"
+    },
+    {
+     "kode": "KM15164",
+     "tekst": "reflektere over og fortelle om flerspråklige samfunn på Nordkalotten og muligheter som språkkunnskaper gir i arbeidslivet og i andre sammenhenger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i kvensk eller finsk som andrespråk på vg1 studieforberedende utdanningsprogram når de deltar i samtaler og utveksler informasjon og meninger om kjente emner, og når de bruker språk som er tilpasset situasjon og mottaker både muntlig og skriftlig. De viser og utvikler også kompetanse i faget når de reflekterer over faglige emner og bruker grunnleggende språklige strukturer i muntlige og skriftlige tekster. Videre viser og utvikler de kompetanse når de får anledning til å reflektere over betydningen av flerspråklighet og hvilke muligheter språklige kunnskaper gir i et mangfoldig samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske og bruke kreativitet og fantasi i språklæringen. Læreren skal legge til rette for at elevene får arbeide med faglige oppgaver både alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i kvensk eller finsk som andrespråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide og videreutvikle egne muntlige og skriftlige tekster og til å bruke kvensk eller finsk i ulike kommunikasjonssituasjoner."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1193",
+   "tittel": "Kompetansemål og vurdering vg2 studieforberedende utdanningsprogram",
+   "fag": [
+    "KEF1Z02"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15167",
+     "tekst": "delta i og drive samtaler videre med relevante innspill"
+    },
+    {
+     "kode": "KM15169",
+     "tekst": "finne og vurdere informasjon i ulike typer kilder og bearbeide og bruke informasjon i egen produksjon"
+    },
+    {
+     "kode": "KM15170",
+     "tekst": "bruke kunnskap om hensiktsmessige språklige strukturer i produksjon og bearbeiding av tekster"
+    },
+    {
+     "kode": "KM15168",
+     "tekst": "utforske og forklare hovedtrekkene i kvensk og finsk språkhistorie"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i kvensk eller finsk som andrespråk på vg2 studieforberedende utdanningsprogram når de videreutvikler innspill fra andre, fremmer egne meninger og samtaler om kjente emner. De viser og utvikler også kompetanse i faget når de leser, finner implisitt informasjon og reflekterer over innhold i tekster, og når de bruker relevant informasjon fra ulike typer kilder på en hensiktsmessig måte både muntlig og skriftlig. Videre viser og utvikler de kompetanse i faget når de gjør rede for sentrale trekk ved kvensk/finsk språkhistorie.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske faglige spørsmål på ulike måter, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i kvensk eller finsk som andrespråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide og videreutvikle egne muntlige og skriftlige tekster og til å bruke kvensk eller finsk i ulike kommunikasjonssituasjoner."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1194",
+   "tittel": "Kompetansemål og vurdering vg3 studieforberedende utdanningsprogram",
+   "fag": [
+    "KEF1Z03"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15171",
+     "tekst": "delta aktivt med konstruktive innspill i samtaler"
+    },
+    {
+     "kode": "KM15173",
+     "tekst": "finne informasjon i ulike typer tekster og reflektere over denne i eget arbeid"
+    },
+    {
+     "kode": "KM15174",
+     "tekst": "mestre og bruke sentrale språklige strukturer tilpasset kommunikasjonssituasjonen"
+    },
+    {
+     "kode": "KM15172",
+     "tekst": "utforske det språklige og kulturelle mangfoldet i Norge og nabolandene og reflektere over hvordan språk, kultur og tilhørighet er med på å skape identitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i kvensk eller finsk som andrespråk på vg3 studieforberedende utdanningsprogram når de tar initiativ til, opprettholder og avslutter samtaler, inkludert spontane samtaler om kjente emner. De viser og utvikler også kompetanse når de leser, finner implisitt informasjon og gir vurderinger av og reflekterer over innhold i ulike typer tekster. De viser og utvikler også kompetanse når de bruker sentrale språklige strukturer i muntlige og skriftlige tekster tilpasset innhold og mottaker. Til sist viser og utvikler de kompetanse i faget når de reflekterer over språk og identitet i et flerkulturelt samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske faglige spørsmål på ulike måter, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i kvensk eller finsk som andrespråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide og videreutvikle egne muntlige og skriftlige tekster og til å bruke kvensk eller finsk i ulike kommunikasjonssituasjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kvensk eller finsk som andrespråk ved avslutningen av opplæringen etter vg3 studieforberedende utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kvensk eller finsk muntlig basert på kompetansen eleven har vist i muntlige situasjoner, både spontane og planlagte. Læreren skal sette karakter i kvensk eller finsk skriftlig basert kompetansen eleven har vist i et utvalg kortere og lengre tekster i ulike sjangre og for ulike formål."
+   ]
+  },
+  {
+   "kode": "KV1196",
+   "tittel": "Kompetansemål og vurdering vg3 påbygging til generell studiekompetanse",
+   "fag": [
+    "KEF1Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM15179",
+     "tekst": "delta i og drive samtaler videre med relevante innspill"
+    },
+    {
+     "kode": "KM15180",
+     "tekst": "delta aktivt med konstruktive innspill i samtaler"
+    },
+    {
+     "kode": "KM15181",
+     "tekst": "finne og vurdere informasjon i ulike typer kilder og bearbeide og bruke informasjon i egen produksjon"
+    },
+    {
+     "kode": "KM15182",
+     "tekst": "finne informasjon i ulike typer tekster og reflektere over denne i eget arbeid"
+    },
+    {
+     "kode": "KM15183",
+     "tekst": "bruke kunnskap om hensiktsmessige språklige strukturer i produksjon og bearbeiding av tekster"
+    },
+    {
+     "kode": "KM15184",
+     "tekst": "mestre og bruke sentrale språklige strukturer tilpasset kommunikasjonssituasjonen"
+    },
+    {
+     "kode": "KM15185",
+     "tekst": "utforske og forklare hovedtrekkene i kvensk og finsk språkhistorie"
+    },
+    {
+     "kode": "KM15186",
+     "tekst": "utforske det språklige og kulturelle mangfoldet i Norge og nabolandene, og reflektere over hvordan språk, kultur og tilhørighet er med på å skape identitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i kvensk eller finsk som andrespråk på vg3 påbygging til generell studiekompetanse når de tar initiativ til, opprettholder og avslutter samtaler, inkludert spontane samtaler om kjente emner. De viser og utvikler også kompetanse når de leser, finner implisitt informasjon og gir vurderinger av og reflekterer over innhold i ulike typer tekster. De viser og utvikler også kompetanse når de bruker sentrale språklige strukturer i muntlige og skriftlige tekster tilpasset innhold og mottaker. Til sist viser og utvikler de kompetanse i faget når de reflekterer over språk og identitet i et flerkulturelt samfunn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske faglige spørsmål på ulike måter, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i kvensk eller finsk som andrespråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide og videreutvikle egne muntlige og skriftlige tekster og til å bruke kvensk eller finsk i ulike kommunikasjonssituasjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kvensk eller finsk som andrespråk ved avslutning av opplæringen etter vg3 påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i kvensk eller finsk muntlig basert på kompetansen eleven har vist i muntlige situasjoner, både spontane og planlagte. Læreren skal sette karakter i kvensk eller finsk skriftlig basert kompetansen eleven har vist i et utvalg kortere og lengre tekster i ulike sjangre og for ulike formål."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "10. trinn: Eleven skal ha én standpunktkarakter\nVg2 yrkesfaglige utdanningsprogram: Eleven skal ha én standpunktkarakter\nVg3 studieforberedende utdanningsprogram: Eleven skal ha to standpunktkarakterer, én skriftlig og én muntlig\nVg3 påbygging til generell studiekompetanse: Eleven skal ha to standpunktkarakterer, én skriftlig og én muntlig"
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "10. trinn: Eleven kan trekkes ut til skriftlig eksamen. Eksamen skal ha forberedelsesdel. Skriftlig eksamen blir utarbeidet og sensurert sentralt.\nVg2 yrkesfaglige utdanningsprogram: Eleven kan trekkes ut til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert lokalt.\nVg3 studieforberedende utdanningsprogram: Eleven kan trekkes ut til skriftlig eksamen. Eksamen skal ha forberedelsesdel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt.\nVg3 påbygging til generell studiekompetanse: Eleven kan trekkes ut til skriftlig eksamen. Eksamen skal ha forberedeslsedel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "10. trinn: Se gjeldende ordning for grunnskoleopplæring for voksne.\nVg2 yrkesfaglige utdanningsprogram: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsesdel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Privatisten skal også opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nVg3 studieforberedende utdanningsprogram: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsedel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nVg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsedel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

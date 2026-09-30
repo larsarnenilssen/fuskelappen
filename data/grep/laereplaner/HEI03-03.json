@@ -1,0 +1,129 @@
+{
+ "kode": "HEI03-03",
+ "tittel": "Læreplan i vg3 heismontørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV951",
+   "tittel": "Kompetansemål og vurdering vg3 heismontørfaget",
+   "fag": [
+    "HEI3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12457",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere ulike arbeidsoppdrag i heismontørfaget individuelt og i samarbeid med andre i henhold til gjeldende regelverk og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM12471",
+     "tekst": "utføre arbeidet i henhold til gjeldende regelverk om sikkerhet ved arbeid i og drift av elektriske anlegg og utføre livreddende førstehjelp, arbeide i henhold til ergonomiske prinsipper og forklare hvordan sikkerhetsarbeid kan forebygge ulykker"
+    },
+    {
+     "kode": "KM12465",
+     "tekst": "arbeide på heis i overensstemmelse med regelverk og rutiner for el-, maskin- og personsikkerhet og sikkerhet i elektronisk kommunikasjon, og evaluere arbeidsmetode og faglige løsninger i samarbeid med andre for å utvikle fagutøvelsen"
+    },
+    {
+     "kode": "KM12461",
+     "tekst": "montere, konfigurere og sette i drift heis i nye og eksisterende bygg i henhold til leverandørens gjeldende rutiner og instrukser og gi opplæring til heisens tilsynsperson om nødbetjening og daglig tilsyn"
+    },
+    {
+     "kode": "KM12470",
+     "tekst": "sluttkontrollere utført arbeid i henhold til gjeldende regelverk, instrukser og rutiner"
+    },
+    {
+     "kode": "KM12460",
+     "tekst": "montere, vedlikeholde og forklare hvordan hoveddeler, komponenter og sikkerhetskomponenter fungerer i ulike heistyper, og gjøre rede for ulike elektriske fordelingssystemer og jordingssystemer"
+    },
+    {
+     "kode": "KM12458",
+     "tekst": "montere og vedlikeholde elektrisk og mekanisk utstyr og komponenter på heis og forklare hvordan komponenter og utstyr virker sammen i et system for å oppnå best mulig energiutnyttelse og driftssikkerhet"
+    },
+    {
+     "kode": "KM12459",
+     "tekst": "bruke riktig verktøy, utstyr og hjelpemidler i utførelse av arbeidsoppdragene på heis og gjøre rede for personlig verneutstyr i påkrevde situasjoner"
+    },
+    {
+     "kode": "KM12468",
+     "tekst": "utføre arbeid på eldre heiser i henhold til relevant regelverk og gjøre rede for farene ved arbeid på heiser i drift"
+    },
+    {
+     "kode": "KM12463",
+     "tekst": "utføre produktspesifikk service og vedlikehold på heiser og gjøre rede for framgangsmåten for arbeidet"
+    },
+    {
+     "kode": "KM12464",
+     "tekst": "utføre systematisk feilsøking og reparasjon på nye og eksisterende heiser og beskrive framgangsmåten for arbeidet"
+    },
+    {
+     "kode": "KM12467",
+     "tekst": "monitorere, kommunisere med og programmere ulike elektroniske enheter, og vurdere og iverksette tiltak mot elektromagnetisk støy og forklare valg og metoder for utførelsen og gjøre rede for formålet med og virkeområdet for ekomlov og ekomforskrift"
+    },
+    {
+     "kode": "KM12474",
+     "tekst": "foreta risikovurdering, frakoble og demontere utstyr på heiser og forklare kompleksiteten og de ulike faremomentene ved arbeidet"
+    },
+    {
+     "kode": "KM12476",
+     "tekst": "løfte og forflytte heismateriell på en sikker måte og gjøre rede for ulike løfte- og forflytningsmetoder"
+    },
+    {
+     "kode": "KM12462",
+     "tekst": "behandle datainformasjon på en sikker måte og beskrive informasjonssystemene og den elektroniske kommunikasjonen til og fra enhetene og gjøre rede for heisens alarm-, brann- og adgangssystem"
+    },
+    {
+     "kode": "KM12466",
+     "tekst": "samarbeide og kommunisere med involverte parter og forklare viktigheten av samarbeid"
+    },
+    {
+     "kode": "KM12469",
+     "tekst": "gjøre rede for et produkts energibehov og potensiell energi og hvordan overskuddsenergi kan tilbakeføres til nett"
+    },
+    {
+     "kode": "KM12478",
+     "tekst": "iverksette tiltak på heis når statiske og dynamiske krefter endres, og gjøre rede for hvordan heiskonstruksjonen påvirkes av kraftendringer"
+    },
+    {
+     "kode": "KM12472",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12477",
+     "tekst": "drøfte etiske dilemmaer ved valg av elektriske produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12479",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur\""
+    },
+    {
+     "kode": "KM12475",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12473",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 heismontørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 heismontørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 24 timer.",
+    "Opplæringen i vg3 heismontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst 25 dager."
+   ]
+  }
+ ]
+}

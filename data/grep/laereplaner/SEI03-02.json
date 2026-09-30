@@ -1,0 +1,108 @@
+{
+ "kode": "SEI03-02",
+ "tittel": "Læreplan i seilmakerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-02-10",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV450",
+   "tittel": "Kompetansemål og vurdering seilmakerfaget",
+   "fag": [
+    "SEI3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM4894",
+     "tekst": "planlegge og gjennomføre en produksjonsprosess fra idé til ferdig produkt"
+    },
+    {
+     "kode": "KM4890",
+     "tekst": "dokumentere og kvalitetssikre produksjonsprosesser"
+    },
+    {
+     "kode": "KM4893",
+     "tekst": "utføre vedlikehold og reparasjoner på seil og andre relevante produkter"
+    },
+    {
+     "kode": "KM4880",
+     "tekst": "beregne kostnader for produksjon ut fra en bestilling av en vare eller tjeneste og gjøre rede for hvordan ulike valg kan påvirke sluttproduktet"
+    },
+    {
+     "kode": "KM4892",
+     "tekst": "bruke ulike materialer og teknikker ut fra ønsket funksjon og kundens krav og behov og gjøre rede for hvordan ulike valg kan påvirke holdbarheten og miljøet"
+    },
+    {
+     "kode": "KM4884",
+     "tekst": "måle opp båt og rigg for å produsere seil og formsydde trekk"
+    },
+    {
+     "kode": "KM4895",
+     "tekst": "tegne og konstruere seil og formsydde trekk manuelt og digitalt"
+    },
+    {
+     "kode": "KM4882",
+     "tekst": "anvende manuelle metoder eller aktuelle designprogram for seilkonstruksjon og seilanalyse"
+    },
+    {
+     "kode": "KM4891",
+     "tekst": "anvende seilmakertradisjonene som inspirasjon i egen produktutvikling"
+    },
+    {
+     "kode": "KM4886",
+     "tekst": "anvende tradisjonelle håndverksteknikker som håndliking, spleising, løyert og håndsydde ringer"
+    },
+    {
+     "kode": "KM4889",
+     "tekst": "gjøre rede for ulike båttyper, riggalternativer og regelverk som påvirker seilets form og størrelse, og bruke dette i eget arbeid"
+    },
+    {
+     "kode": "KM4881",
+     "tekst": "utforske aerodynamiske krefter som påvirker båt, rigg og seil, og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM4887",
+     "tekst": "veilede kunder om seil og andre seilmakerprodukter"
+    },
+    {
+     "kode": "KM4885",
+     "tekst": "bruke digitale ressurser i presentasjoner og dokumentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM4883",
+     "tekst": "gjøre rede for seilmakerfagets kultur- og håndverkshistorie og bruke historiske kilder som referanse i produksjon og rekonstruksjon av seilprodukter"
+    },
+    {
+     "kode": "KM4897",
+     "tekst": "gjøre rede for de ulike komponentene i komposittbaserte seil og bruke denne kunnskapen i produksjon og vedlikehold"
+    },
+    {
+     "kode": "KM4888",
+     "tekst": "anvende og vedlikeholde utstyr, maskiner og verktøy og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4896",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i seilmakerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i seilmakerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i seilmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over fire virkedager."
+   ]
+  }
+ ]
+}

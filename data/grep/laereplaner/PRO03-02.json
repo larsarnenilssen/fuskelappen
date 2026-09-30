@@ -1,0 +1,108 @@
+{
+ "kode": "PRO03-02",
+ "tittel": "Læreplan i vg3 produksjonselektronikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV732",
+   "tittel": "Kompetansemål og vurdering vg3 produksjonselektronikerfaget",
+   "fag": [
+    "PRO3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9530",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i produksjonselektronikerfaget individuelt og i samarbeid med andre i henhold til gjeldende regelverk og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9537",
+     "tekst": "utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9543",
+     "tekst": "montere, kontrollere, funksjonsteste og sette i drift elektromekaniske og elektroniske produkter og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM9545",
+     "tekst": "foreslå nye ideer og argumentere for produkter og tjenester som kan fremme forenklinger og forbedringer"
+    },
+    {
+     "kode": "KM9534",
+     "tekst": "anvende og programmere automatisert montasjeutstyr, roboter, verktøy og maskiner til å bearbeide komponenter, og gjøre rede for personlig verneutstyr ved bruk av verktøymaskiner"
+    },
+    {
+     "kode": "KM9533",
+     "tekst": "feilsøke systematisk ved hjelp av dokumentasjon og ved å bruke analoge og digitale måleverktøy, dokumentere måleresultatene og beskrive framgangsmåten"
+    },
+    {
+     "kode": "KM9535",
+     "tekst": "utføre myklodding og annen kontaktering og vurdere kvaliteten på utført terminering"
+    },
+    {
+     "kode": "KM9532",
+     "tekst": "produsere kretskort manuelt og automatisert og kontrollere at funksjon og kvalitet er ivaretatt i henhold til bedriftens standarder og kundens krav"
+    },
+    {
+     "kode": "KM9544",
+     "tekst": "teste og utføre reparasjon på elektromekaniske og elektroniske systemer og enheter og vurdere lønnsomhet ved reparasjon"
+    },
+    {
+     "kode": "KM9539",
+     "tekst": "vurdere behovet for å bruke mikroskop som arbeidsverktøy ved produksjon og inspeksjon"
+    },
+    {
+     "kode": "KM9538",
+     "tekst": "utføre arbeid i henhold til gjeldende standarder og følge rutiner for behandling av elektrostatiske følsomme komponenter (ESD) og holde seg oppdatert på regelverk og endringer i rutiner"
+    },
+    {
+     "kode": "KM9542",
+     "tekst": "følge bedriftens krav til person-, data- og informasjonssikkerhet og drøfte tiltak for å sikre at sensitive data ikke kommer på avveier"
+    },
+    {
+     "kode": "KM9541",
+     "tekst": "bruke verneutstyr tilpasset arbeidet, forberede komponentene for produksjon i henhold til krav til renhet og beskrive renromsprosesser og prosedyrer for forskjellige operasjoner"
+    },
+    {
+     "kode": "KM9540",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9531",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9547",
+     "tekst": "drøfte etiske dilemmaer ved valg av komponenter og materialer og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM9546",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9536",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 produksjonselektronikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 produksjonselektronikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 produksjonselektronikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,165 @@
+{
+ "kode": "FBI01-01",
+ "tittel": "Læreplan i vg1 frisør, blomster, interiør og eksponeringsdesign",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV232",
+   "tittel": "Kompetansemål og vurdering produktutvikling og produksjon",
+   "fag": [
+    "FBI1Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2499",
+     "tekst": "planlegge, gjennomføre, dokumentere og vurdere eget arbeid innenfor gitte tidsrammer"
+    },
+    {
+     "kode": "KM2519",
+     "tekst": "bruke kunnskap om mote, trender, stilhistorie og ulike kulturer i eget arbeid"
+    },
+    {
+     "kode": "KM2520",
+     "tekst": "beskrive og bruke ulike komposisjonsvirkemidler for å oppnå ønsket uttrykk i eget arbeid"
+    },
+    {
+     "kode": "KM2517",
+     "tekst": "anvende fargelære i eget arbeid"
+    },
+    {
+     "kode": "KM2518",
+     "tekst": "innhente og anvende kunnskap om materialer og produkters egenskaper i eget arbeid"
+    },
+    {
+     "kode": "KM2511",
+     "tekst": "analysere ulike oppdrag og ta estetiske valg i samsvar med kundens ønsker og behov"
+    },
+    {
+     "kode": "KM2513",
+     "tekst": "utforske og bruke visuelle og digitale verktøy til idéutvikling og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM2514",
+     "tekst": "anvende og velge egnede verktøy, maskiner og teknikker i framstillingen av produkter og tjenester"
+    },
+    {
+     "kode": "KM2512",
+     "tekst": "utføre enkelt vedlikehold av maskiner, verktøy og utstyr etter gjeldende sikkerhetsbestemmelser"
+    },
+    {
+     "kode": "KM2516",
+     "tekst": "holde orden i verkstedet og bruke materialer, kjemikalier, teknikker og utstyr i henhold til gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2515",
+     "tekst": "utforske og bruke teknikker og materialer i selvvalgte interesseområder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produktutvikling og produksjon når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produktutvikling og produksjon. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og få mulighet til å reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i produktutvikling og produksjon ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produktutvikling og produksjon basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV233",
+   "tittel": "Kompetansemål og vurdering kommunikasjon, kunde og arbeidsliv",
+   "fag": [
+    "FBI1Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2510",
+     "tekst": "analysere oppdrag og bestillinger fra kunder og bruke opplysningene i arbeidsprosessene"
+    },
+    {
+     "kode": "KM2508",
+     "tekst": "visualisere egne ideer overfor kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM2506",
+     "tekst": "utvikle og presentere produkter og tjenester"
+    },
+    {
+     "kode": "KM2507",
+     "tekst": "vurdere og gjøre rede for ressursutnyttelse og kvalitet i produksjon, og reflektere over hvordan bærekraftige valg i eget arbeid kan påvirke samfunnet og naturen"
+    },
+    {
+     "kode": "KM2505",
+     "tekst": "bruke ulike kommunikasjonsformer i samhandling med kunder og samarbeidspartnere"
+    },
+    {
+     "kode": "KM2504",
+     "tekst": "beskrive og bruke markedsføring og salgsprosesser i forbindelse med produkter og tjenester"
+    },
+    {
+     "kode": "KM2503",
+     "tekst": "beregne pris på produkter og tjenester og vurdere lønnsomheten i en bestilling"
+    },
+    {
+     "kode": "KM2502",
+     "tekst": "anvende strategier for å møte og mestre forventninger fra kunder og andre"
+    },
+    {
+     "kode": "KM2501",
+     "tekst": "reflektere over ulike livsfaser, behov, kultur og tradisjoner, og bruke dette i kundeveiledning"
+    },
+    {
+     "kode": "KM2500",
+     "tekst": "vurdere og bruke gjeldende regler for helse, miljø og sikkerhet i eget praktisk arbeid"
+    },
+    {
+     "kode": "KM2509",
+     "tekst": "beskrive hvilke krav og forventninger som stilles til en profesjonell yrkesutøver, og reflektere over egen praksis"
+    },
+    {
+     "kode": "KM2521",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon, kunde og arbeidsliv når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon, kunde og arbeidsliv. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og få mulighet til å reflektere over egne faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon, kunde og arbeidsliv ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon, kunde og arbeidsliv basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produktutvikling og produksjon: Eleven skal ha én standpunktkarakter.",
+    "Kommunikasjon, kunde og arbeidsliv: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produktutvikling og produksjon: Eleven skal ikke opp til eksamen.",
+    "Kommunikasjon, kunde og arbeidsliv: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produktutvikling og produksjon: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon, kunde og arbeidsliv: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produktutvikling og produksjon og kommunikasjon, kunde og arbeidsliv: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

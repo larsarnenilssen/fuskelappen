@@ -1,0 +1,116 @@
+{
+ "kode": "SLV03-02",
+ "tittel": "Læreplan i vg3 sølvsmedfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV631",
+   "tittel": "Kompetansemål og vurdering vg3 sølvsmedfaget",
+   "fag": [
+    "SLV3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7507",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7515",
+     "tekst": "utvikle skisser og modeller og prøve ut, konkretisere og gjøre rede for ideer til produkter med og uten digitale verktøy"
+    },
+    {
+     "kode": "KM7517",
+     "tekst": "utforske digitale ressurser til modellering og 3D-framstilling og bruke digitale verktøy i egen produktutvikling"
+    },
+    {
+     "kode": "KM7516",
+     "tekst": "utforske ulike stilarter, kulturer og sølvsmedtradisjoner og anvende kunnskap om dette i eget arbeid med design og produktutvikling"
+    },
+    {
+     "kode": "KM7509",
+     "tekst": "undersøke nye trender og håndverksutvikling i sølvsmedfaget og anvende kunnskapen om dette i eget arbeid"
+    },
+    {
+     "kode": "KM7514",
+     "tekst": "presentere og drøfte designprosessen digitalt og verbalt for kunder"
+    },
+    {
+     "kode": "KM7523",
+     "tekst": "velge og bruke teknikker som å hamre, smi, stuke, strekke og valse tråd, bolt og plate"
+    },
+    {
+     "kode": "KM7524",
+     "tekst": "tilpasse og montere flere deler til en hel korpus og utføre lange loddinger"
+    },
+    {
+     "kode": "KM7522",
+     "tekst": "utføre overflatebehandling med ulike hjelpemidler og velge metode tilpasset produktet"
+    },
+    {
+     "kode": "KM7521",
+     "tekst": "anvende ulike støpeteknikker og bearbeide omstøp, resirkulere og gjøre rede for gjenbruk av metall og hvordan dette påvirker utslipp, miljøavtrykk og lønnsomhet"
+    },
+    {
+     "kode": "KM7520",
+     "tekst": "utføre grunnleggende siselering og utforske prinsippene for gravering og emaljering og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7518",
+     "tekst": "anvende og vurdere ulike kjemiske prosesser til overflatebehandling i tilvirking av sølvsmedprodukter og gjøre rede for hvordan ulike valg påvirker resultatet"
+    },
+    {
+     "kode": "KM7510",
+     "tekst": "utforme dekor og inskripsjoner i ulike stilarter og på ulike produkter"
+    },
+    {
+     "kode": "KM7512",
+     "tekst": "vurdere og utføre reparasjoner og restaurering av sølvsmedprodukter som ikke forringer verdien eller forstyrrer objektets egenart"
+    },
+    {
+     "kode": "KM7519",
+     "tekst": "lage, tilpasse, anvende og vedlikeholde maskiner, verktøy og utstyr på en håndverksmessig måte og i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7513",
+     "tekst": "vurdere og gjenkjenne stempel, ansvarsmerker og materialkvalitet for konservering av antikke og verneverdige korpusgjenstander når disse skal repareres, pusses opp eller lages replika av"
+    },
+    {
+     "kode": "KM7511",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, kvalitet, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7508",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7525",
+     "tekst": "gjøre rede for gjeldende lovverk om opphavsrett og markedsføring og følge dette i eget arbeid"
+    },
+    {
+     "kode": "KM7526",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 sølvsmedfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 sølvsmedfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 sølvsmedfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 17 til 20 virkedager."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "kode": "POS04-01",
+ "tittel": "Læreplan i sosiologi og sosialantropologi",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV494",
+   "tittel": "Kompetansemål og vurdering i sosiologi og sosialantropologi",
+   "fag": [
+    "POS4Z01"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5504",
+     "tekst": "finne og vurdere informasjon for å analysere faglige spørsmål og problemstillinger"
+    },
+    {
+     "kode": "KM5518",
+     "tekst": "vurdere samfunnsvitenskapelige teorier, metoder og tenkemåter, og bruke disse for å utforske sosiale og kulturelle fenomener og gjennomføre samfunnsfaglige undersøkelser"
+    },
+    {
+     "kode": "KM5517",
+     "tekst": "gjøre rede for og reflektere over sosialisering som en livslang prosess"
+    },
+    {
+     "kode": "KM5514",
+     "tekst": "drøfte årsaker til sosiale avvik og reflektere over og vurdere individuelle og kollektive reaksjoner"
+    },
+    {
+     "kode": "KM5510",
+     "tekst": "drøfte ulike oppfatninger av begrepet kultur, og sammenligne kulturfenomener innad i og mellom kulturer"
+    },
+    {
+     "kode": "KM5508",
+     "tekst": "analysere hvordan kulturer er stabile og i endring, og drøfte utfordringer og muligheter som følger av kulturelt mangfold"
+    },
+    {
+     "kode": "KM5516",
+     "tekst": "gjøre rede for ulike former for makt og vurdere hvordan utøvelse av makt påvirker aktører, strukturer og handlinger"
+    },
+    {
+     "kode": "KM5515",
+     "tekst": "drøfte hvordan medier, kommunikasjon og samhandling endrer seg i takt med utvikling av ny teknologi"
+    },
+    {
+     "kode": "KM5513",
+     "tekst": "reflektere over årsaker til marginalisering i samfunnet og utforske og vurdere tiltak som kan motvirke utenforskap og fremme inkludering"
+    },
+    {
+     "kode": "KM5509",
+     "tekst": "utforske og reflektere over mangfold og variasjoner i ulike urfolks kulturer og samfunnsliv"
+    },
+    {
+     "kode": "KM5507",
+     "tekst": "drøfte betydningen av kulturforståelse og interkulturell kompetanse i et demokratisk og mangfoldig samfunn"
+    },
+    {
+     "kode": "KM5519",
+     "tekst": "bruke teorier om lagdeling og klasser for å drøfte sosial ulikhet"
+    },
+    {
+     "kode": "KM5512",
+     "tekst": "gjøre rede for forutsetninger for sosial mobilitet og drøfte konsekvenser av høy og lav sosial mobilitet i ulike samfunn og kulturer"
+    },
+    {
+     "kode": "KM5520",
+     "tekst": "drøfte konsekvenser av ulik organisering av arbeid og vurdere betydningen av arbeid og produksjon for individ og samfunn"
+    },
+    {
+     "kode": "KM5506",
+     "tekst": "vurdere ulike former for arbeidsdeling og drøfte sammenhenger mellom teknologi, produksjon og samfunnsendringer"
+    },
+    {
+     "kode": "KM5505",
+     "tekst": "vurdere hvordan politiske ideologier behandler makt- og fordelingsspørsmål, og drøfte oppfatninger av rettferdighet og fordeling"
+    },
+    {
+     "kode": "KM5511",
+     "tekst": "drøfte sammenhenger mellom sosiale prosesser og sosial ulikhet på individ- og samfunnsnivå, og muligheter for å skape bærekraftige samfunn"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i sosiologi og sosialantropologi. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder og teorier i utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse når de arbeider med det moderne samfunnet og samfunnsutviklingen og betydningen av sosiale og kulturelle prosesser for individ og samfunn i et samfunnsvitenskapelig perspektiv.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å legge til rette for ulike måter å arbeide på. Læreren skal være i dialog med elevene om utviklingen deres i sosiologi og sosialantropologi, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i sosiologi og sosialantropologi."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter sosiologi og sosialantropologi. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i sosiologi og sosialantropologi basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Sosiologi og sosialantropologi: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Sosiologi og sosialantropologi: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Sosiologi og sosialantropologi: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

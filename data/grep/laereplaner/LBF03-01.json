@@ -1,0 +1,172 @@
+{
+ "kode": "LBF03-01",
+ "tittel": "Læreplan i vg3 landbruksfaget — opplæring i bedrift",
+ "spraak": "nob",
+ "fastsatt": "2026-05-29",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1019",
+   "tittel": "Kompetansemål og vurdering vg3 landbruksfaget",
+   "fag": [
+    "LBF3Z01"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM13191",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid i landbruksproduksjoner i tråd med gjeldende regelverk, standarder, kvalitetssystemer og krav til dokumentasjon og internkontroll"
+    },
+    {
+     "kode": "KM13173",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid i jord- og plantekulturer i både flerårige og ettårige produksjoner"
+    },
+    {
+     "kode": "KM13174",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere stell av drøvtyggende og andre produksjonsdyr ut fra hensyn til avl, fôring, anatomi, fysiologi, dyreadferd, dyrevelferd og dyrehelse"
+    },
+    {
+     "kode": "KM13175",
+     "tekst": "vurdere og ta hensyn til risiko ved arbeid i landbruksproduksjoner etter gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM13176",
+     "tekst": "vurdere jordhelse ut fra generell jordøkologi, og beskrive viktige prosesser i jord som grunnlag for å gjennomføre eventuelle tiltak for å øke biologisk mangfold og binding av karbon i jord"
+    },
+    {
+     "kode": "KM13177",
+     "tekst": "beskrive likheter og forskjeller mellom konvensjonelle og økologiske produksjoner og vurdere disse i et bærekraftsperspektiv"
+    },
+    {
+     "kode": "KM13178",
+     "tekst": "optimalisere kvalitet og produksjonsutbytte gjennom å utføre aktuelle arbeidsoppgaver til riktig tid og vurdere hvilke faktorer som bidrar til økt kvalitet og mattrygghet"
+    },
+    {
+     "kode": "KM13179",
+     "tekst": "identifisere symptomer på mistrivsel, skader og vanlige sykdommer hos planter og dyr, kartlegge mulige årsaker, forebygge og iverksette tiltak på kort og lang sikt for god plante- og dyrehelse i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM13180",
+     "tekst": "gjennomføre smitteverntiltak, utarbeide smittevernplan og håndtere skadedyr og smittsomme dyre- og plantesykdommer i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM13181",
+     "tekst": "bruke maskiner og utstyr på en energiøkonomisk måte som tar hensyn til miljø og klima, ut fra ulike agronomiske forhold og uten unødig slitasje på utstyret eller unødig belastning på jorden og vegetasjonen"
+    },
+    {
+     "kode": "KM13206",
+     "tekst": "bruke maskiner og utstyr i tråd med gjeldende regelverk og gi veiledning om hvordan man tilpasser bruken til arbeidsoperasjonen og tar hensyn til helse, sikkerhet og miljøbelastning"
+    },
+    {
+     "kode": "KM13182",
+     "tekst": "kontrollere teknisk og sikkerhetsmessig status på traktor, maskiner og utstyr, bygninger og mekaniseringslinjer"
+    },
+    {
+     "kode": "KM13183",
+     "tekst": "utføre forebyggende vedlikehold på bygninger og utstyr og vurdere behovet for autorisert service og reparasjon, og ivareta sikkerheten ved varme arbeider"
+    },
+    {
+     "kode": "KM13184",
+     "tekst": "sammenligne ulike mekaniseringslinjer, vurdere tilgjengelig ny teknologi, automatisering og robotisering basert på analyser av produktivitet, miljø, økonomi, dyrevelferd og muligheter for samarbeid og optimalisering av produksjoner"
+    },
+    {
+     "kode": "KM13185",
+     "tekst": "bruke grunnlagsdata og anvende digitale hjelpemidler til bruk i husdyr- og planteproduksjon for å bidra til økt kvalitet og bedre økonomi i produksjonen"
+    },
+    {
+     "kode": "KM13186",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere arbeid knyttet til skjøtsel, bruk, beiting og høsting i skog, utmark og kulturlandskap etter gjeldende lover og regelverk"
+    },
+    {
+     "kode": "KM13187",
+     "tekst": "bruke forvaltningsplan eller skogbruksplan til forvaltning og drift av skog eller utmark"
+    },
+    {
+     "kode": "KM13188",
+     "tekst": "gjøre rede for muligheter for flerbruk av utmark og kulturlandskap og drøfte mulige interessekonflikter mellom brukere og rettighetshavere"
+    },
+    {
+     "kode": "KM13189",
+     "tekst": "beskrive hvordan næringsaktivitet påvirker lokalsamfunn, klima, miljø og biologisk mangfold, og vurdere hvordan bærekraftig forvaltning kan ivaretas i landbruksproduksjoner"
+    },
+    {
+     "kode": "KM13190",
+     "tekst": "påvise og vurdere kulturminner i utmarks- og kulturlandskapsområder etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM13192",
+     "tekst": "beskrive økonomiske risikofaktorer og de viktigste elementene for driftsplanlegging og økonomistyring i en landbruksvirksomhet, og vurdere tiltak som kan redusere risiko"
+    },
+    {
+     "kode": "KM13193",
+     "tekst": "gjøre rede for hovedprinsippene i et regnskap, vurdere regnskapsresultat, beregne lønnsomhet og likviditet i en landbruksvirksomhet og gjøre rede for sentrale skatte- og avgiftsforhold for landbruk"
+    },
+    {
+     "kode": "KM13194",
+     "tekst": "utarbeide planer for vedlikehold og investeringer, gjøre økonomiske beregninger og vurdere ulike samarbeids- og finansieringsformer"
+    },
+    {
+     "kode": "KM13195",
+     "tekst": "utarbeide en drifts- og investeringsplan, kartlegge ressurser og foreslå tiltak som kan bidra til næringsutvikling av landbruksvirksomheten"
+    },
+    {
+     "kode": "KM13196",
+     "tekst": "vurdere energibruk og fornybare energikilder som en del av driftsplanlegging og økonomistyring"
+    },
+    {
+     "kode": "KM13197",
+     "tekst": "planlegge og gjennomføre klimatilpasningstiltak basert på lokale forhold for å sikre landbruksproduksjonen mot klimavariasjoner og ekstremvær"
+    },
+    {
+     "kode": "KM13198",
+     "tekst": "håndtere avfall og biprodukter fra en landbruksproduksjon og beskrive alternativ bruk av restråstoff fra landbruket"
+    },
+    {
+     "kode": "KM13199",
+     "tekst": "gjøre rede for tilskuddsordninger i landbruket og for søknadsprosesser i støtteordninger til ulike produksjoner, tjenester, miljøtiltak og investeringer"
+    },
+    {
+     "kode": "KM13200",
+     "tekst": "gjøre rede for lovverk, regelverk og prosedyrer for eierskap og leie, forpakting, kjøp og overdragelse av landbrukseiendom"
+    },
+    {
+     "kode": "KM13201",
+     "tekst": "utarbeide og følge beredskapsplaner, og vurdere risiko og behovet for forsikringer"
+    },
+    {
+     "kode": "KM13202",
+     "tekst": "arbeide og veilede etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM13203",
+     "tekst": "samarbeide for et godt fysisk og psykososialt arbeidsmiljø og reflektere over risikofaktorer, beskyttelsesfaktorer og sammenhengen mellom fysisk og psykisk helse, arbeidsmiløet og en bærekraftig og god drift"
+    },
+    {
+     "kode": "KM13204",
+     "tekst": "vurdere omsetningskanaler inkludert sertifiseringsordninger for varer og tjenester i landbruket og beskrive sentrale markedsordninger"
+    },
+    {
+     "kode": "KM13205",
+     "tekst": "gjøre rede for den norske landbrukspolitiske modellen, landbrukets nærings- og fagorganisasjoner, samvirkeprinsippene, og drøfte muligheten til å påvirke gjennom demokratiske organisasjoner i landbruket"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 landbruksfaget - opplæring i bedrift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 landbruksfaget - opplæring i bedrift. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 landbruksfaget - opplæring i bedrift skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst tre virkedager."
+   ]
+  }
+ ]
+}

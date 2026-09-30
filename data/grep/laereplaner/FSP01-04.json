@@ -1,0 +1,158 @@
+{
+ "kode": "FSP01-04",
+ "tittel": "Læreplan i fremmedspråk",
+ "spraak": "nob",
+ "fastsatt": "2025-06-26",
+ "gyldigFra": "2025-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV965",
+   "tittel": "Kompetansemål og vurdering nivå I",
+   "fag": [
+    "FSP1Z03",
+    "FSP1Z04",
+    "FSP1Z05",
+    "FSP1Z16",
+    "FSP1Z17",
+    "FSP1Z18",
+    "FSP1Z19",
+    "FSP1Z20"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12609",
+     "tekst": "lytte til og forstå enkel og tydelig tale om personlige og dagligdagse emner"
+    },
+    {
+     "kode": "KM12610",
+     "tekst": "delta i enkle samtaler i dagligdagse situasjoner om aktiviteter og kjente emner"
+    },
+    {
+     "kode": "KM12611",
+     "tekst": "muntlig fortelle om dagligliv og opplevelser og uttrykke meninger, også spontant"
+    },
+    {
+     "kode": "KM12612",
+     "tekst": "lese og forstå tilpassede og enklere autentiske tekster om personlige og dagligdagse emner"
+    },
+    {
+     "kode": "KM12613",
+     "tekst": "skrive enkle tekster om dagligliv og opplevelser som forteller, beskriver og informerer, med og uten hjelpemidler"
+    },
+    {
+     "kode": "KM12614",
+     "tekst": "bruke enkle språklige strukturer, regler for uttale og rettskriving og språkets offisielle alfabet eller tegn for å kommunisere på en situasjonstilpasset måte"
+    },
+    {
+     "kode": "KM12615",
+     "tekst": "bruke relevante lærings- og kommunikasjonsstrategier, digitale ressurser og erfaringer fra tidligere språklæring i læringsprosessen"
+    },
+    {
+     "kode": "KM12616",
+     "tekst": "utforske og beskrive levemåter, tradisjoner og geografi i områder der språket snakkes, og se sammenhenger med egen bakgrunn"
+    },
+    {
+     "kode": "KM12617",
+     "tekst": "utforske og beskrive kunstneriske og kulturelle uttrykk fra områder der språket snakkes, og gi uttrykk for egne opplevelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i fremmedspråk på nivå I når de forstår og bruker språket muntlig og skriftlig i dagligdags kommunikasjon om kjente og personlige emner, med og uten hjelpemidler. De viser og utvikler også kompetanse når de får anledning til å beskrive og reflektere over språket og over samfunnet og kulturen der språket snakkes, hvis nødvendig også på norsk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser for å utvikle elevenes leseferdigheter og muntlige og skriftlige ferdigheter. Elevene skal få oppleve at det å prøve seg fram alene og sammen med andre er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i fremmedspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og hva de får til bedre enn tidligere. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i å forstå og gjøre seg forstått på fremmedspråket, muntlig og skriftlig."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fremmedspråk ved avslutningen av opplæringen på nivå I. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i fremmedspråk nivå I basert på elevens kommunikative og interkulturelle kompetanse, der både muntlig og skriftlig forståelse og formidlingsevne tillegges like stor vekt."
+   ]
+  },
+  {
+   "kode": "KV966",
+   "tittel": "Kompetansemål og vurdering nivå II",
+   "fag": [
+    "FSP1Z18",
+    "FSP1Z19",
+    "FSP1Z20",
+    "FSP1Z21",
+    "FSP1Z22"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM12618",
+     "tekst": "lytte til og forstå tydelig tale om personlige og faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12619",
+     "tekst": "samtale i en rekke dagligdagse situasjoner om kjente og faglig relevante emner"
+    },
+    {
+     "kode": "KM12620",
+     "tekst": "muntlig forklare faglig relevante emner, skildre opplevelser, hendelser og planer, og begrunne meninger, også spontant"
+    },
+    {
+     "kode": "KM12621",
+     "tekst": "lese og forstå ulike typer tekster, også autentiske, om personlige og faglig relevante emner og aktuelle saker"
+    },
+    {
+     "kode": "KM12622",
+     "tekst": "skrive ulike teksttyper om personlige og faglig relevante emner, og uttrykke og begrunne egne meninger, med og uten hjelpemidler"
+    },
+    {
+     "kode": "KM12623",
+     "tekst": "bruke grunnleggende språklige strukturer, regler for uttale og rettskriving og språkets offisielle alfabet eller tegn for å kommunisere på en situasjonstilpasset måte"
+    },
+    {
+     "kode": "KM12626",
+     "tekst": "bruke relevante lærings- og kommunikasjonsstrategier, digitale ressurser og erfaringer fra tidligere språklæring i læringsprosessen"
+    },
+    {
+     "kode": "KM12624",
+     "tekst": "utforske og gjøre rede for mangfold, samfunnsforhold og historiske hendelser i områder der språket snakkes, og se sammenhenger med egen bakgrunn"
+    },
+    {
+     "kode": "KM12625",
+     "tekst": "utforske og presentere kunstneriske og kulturelle uttrykk fra områder der språket snakkes, og gjøre rede for egne opplevelser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i fremmedspråk på nivå II når de forstår og bruker språket muntlig og skriftlig i dagligdagse situasjoner og i kommunikasjon om faglig relevante emner, med og uten hjelpemidler. De viser og utvikler også kompetanse når de får anledning til å beskrive og reflektere over språket, samfunnet og kulturen der språket snakkes.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å ta i bruk varierte strategier og læringsressurser. Læreren skal legge til rette for at elevene kan utvikle leseferdigheter og muntlige og skriftlige ferdigheter gjennom å være kreative og prøve seg fram, alene og sammen med andre. Elevene skal få oppleve at det å prøve seg fram er en del av det å lære et språk. Læreren og elevene skal være i dialog om elevenes utvikling i fremmedspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i å forstå og gjøre seg forstått på fremmedspråket i kjente og ukjente kommunikasjonssituasjoner, muntlig og skriftlig."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i fremmedspråk ved avslutningen av opplæringen på nivå II. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i fremmedspråk nivå II basert på elevens kommunikative og interkulturelle kompetanse, der både muntlig og skriftlig forståelse og formidlingsevne tillegges like stor vekt."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Etter 10. trinn: Eleven skal ha én standpunktkarakter.",
+    "Etter vg2/vg3: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Etter 10. trinn: Eleven kan trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt.",
+    "Etter vg2/vg3: Eleven kan trekkes ut til skriftlig eksamen. Skriftlig eksamen bli utarbeidet og sensurert sentralt. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur. Eleven kan også trekkes ut til muntlig eksamen med forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Etter vg2/vg3: Privatisten skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Privatisten skal også opp til muntlig eksamen. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

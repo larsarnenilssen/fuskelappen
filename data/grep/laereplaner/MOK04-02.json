@@ -1,0 +1,86 @@
+{
+ "kode": "MOK04-02",
+ "tittel": "Læreplan i bilde",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV567",
+   "tittel": "Kompetansemål og vurdering bilde",
+   "fag": [
+    "MOK4Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6550",
+     "tekst": "anvende ulike virkemidler og teknikker i egne billedproduksjoner for å formidle et budskap"
+    },
+    {
+     "kode": "KM6551",
+     "tekst": "utforske tidligere og samtidige billeduttrykk og bruke disse som inspirasjonskilde for egne medieprodukter"
+    },
+    {
+     "kode": "KM6552",
+     "tekst": "analysere innholdet i ulike billeduttrykk og drøfte hvordan billedframstillinger påvirker meninger og holdninger"
+    },
+    {
+     "kode": "KM6553",
+     "tekst": "anvende hensiktsmessig verktøy og programvare for å oppnå ønsket kvalitet i egne billedproduksjoner"
+    },
+    {
+     "kode": "KM6554",
+     "tekst": "anvende hensiktsmessig format og filtype for produksjon og publisering i ulike kanaler"
+    },
+    {
+     "kode": "KM6555",
+     "tekst": "anvende regler for opphavsrett og personvern ved publisering av egne billedproduksjoner"
+    },
+    {
+     "kode": "KM6556",
+     "tekst": "reflektere over og vurdere billedproduksjoner ved bruk av fagspråk"
+    },
+    {
+     "kode": "KM6557",
+     "tekst": "anvende kreative teknikker for å utvikle et idémangfold"
+    },
+    {
+     "kode": "KM6558",
+     "tekst": "utforske hvordan ulike teknologier og kanaler kan kombineres i billedframstillinger, og drøfte nye bruksområder for bilder"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i bilde. Elevene viser og utvikler kompetanse i faget ved å produsere billeduttrykk gjennom kreative prosesser, alene og sammen med andre. Elevene viser og utvikler også kompetanse i faget når de bruker fagbegreper til å identifisere, beskrive og analysere ulike elementer i et billeduttrykk, og forstår funksjonene de har. Videre viser og utvikler elevene også kompetanse i faget når de reflekterer over hvordan billeduttrykk kan påvirke meninger og holdninger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske faglige problemstillinger og arbeide kreativt for å finne svar på disse. Læreren skal være i dialog med elevene om utviklingen deres i å forstå og produsere billeduttrykk, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å forstå hvordan de ulike elementene i billeduttrykk bringes fram, og hvordan de kan anvende disse i sine egne produksjoner."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter bilde. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i bilde basert på kompetansen eleven har vist gjennom praktisk produksjon av billeduttrykk i ulike sjangre og til ulike formål, og gjennom kritisk vurdering av virkemidler og etikk."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Bilde: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Bilde: Eleven kan trekkes ut til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Bilde: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

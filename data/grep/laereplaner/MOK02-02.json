@@ -1,0 +1,196 @@
+{
+ "kode": "MOK02-02",
+ "tittel": "Læreplan i medieuttrykk",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV256",
+   "tittel": "Kompetansemål og vurdering medieuttrykk 1",
+   "fag": [
+    "MOK2Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2763",
+     "tekst": "produsere medieuttrykk i ulike sjangre og formater"
+    },
+    {
+     "kode": "KM2786",
+     "tekst": "planlegge en prosess for produksjon av et medieuttrykk"
+    },
+    {
+     "kode": "KM2785",
+     "tekst": "bruke grunnleggende teknikker for idéutvikling"
+    },
+    {
+     "kode": "KM2784",
+     "tekst": "bruke og vedlikeholde profesjonelt produksjonsutstyr og profesjonell programvare"
+    },
+    {
+     "kode": "KM2783",
+     "tekst": "utforske ulike tidligere og moderne stilarter og uttrykksformer, og reflektere over hvordan de preger medieuttrykk i dag"
+    },
+    {
+     "kode": "KM2782",
+     "tekst": "bruke komposisjonsprinsipper i produksjon av medieuttrykk og reflektere over hvordan de ulike delene påvirker hverandre"
+    },
+    {
+     "kode": "KM2781",
+     "tekst": "utforske og bruke ulike kommunikasjonsmodeller i produksjon av medieuttrykk"
+    },
+    {
+     "kode": "KM2780",
+     "tekst": "reflektere over opphavsrett, etikk og regler i arbeid med medieproduksjoner"
+    },
+    {
+     "kode": "KM2779",
+     "tekst": "utøve kildekritikk i egne medieuttrykk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i medieuttrykk 1. Elevene viser og utvikler kompetanse i faget når de lager medieuttrykk i ulike sjangre og formater individuelt og sammen med andre, og når de bruker relevant produksjonsutstyr i dette arbeidet. De viser og utvikler også kompetanse i faget når de bruker komposisjonsprinsipper og kommunikasjonsmodeller for å produsere medieuttrykk og tilpasse til riktig målgruppe. Videre viser og utvikler elevene kompetanse i faget når de beskriver hvordan ulike virkemidler og stiler påvirker innhold og budskap i medieuttrykk.\nLæreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å la elevene lage selvstendige medieuttrykk i ulike sjangre og formater og ved å la elevene få utforske og bruke produksjonsutstyr og programvare i arbeidene. Læreren skal være i dialog med elevene om utviklingen deres i produksjonen av medieuttrykk, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å styrke egen produksjonspraksis og evnen til faglig refleksjon."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter medieuttrykk 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i medieuttrykk 1 basert på kompetansen eleven har vist gjennom praktisk produksjon av ulike medieuttrykk og gjennom refleksjon og etisk bevissthet omkring medieuttrykkenes virkemidler og funksjon."
+   ]
+  },
+  {
+   "kode": "KV257",
+   "tittel": "Kompetansemål og vurdering medieuttrykk 2",
+   "fag": [
+    "MOK2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2778",
+     "tekst": "produsere ulike medieuttrykk individuelt og i samarbeid med andre"
+    },
+    {
+     "kode": "KM2777",
+     "tekst": "bruke og reflektere over teknikker for idéutvikling"
+    },
+    {
+     "kode": "KM2776",
+     "tekst": "bruke og vedlikeholde profesjonelt produksjonsutstyr og profesjonell programvare tilpasset produkt og kvalitetskrav i mediebransjen"
+    },
+    {
+     "kode": "KM2775",
+     "tekst": "utforske ulike stilarter og uttrykksformer, og bruke disse i egne produksjoner"
+    },
+    {
+     "kode": "KM2774",
+     "tekst": "utforske ulike virkemidler og fortellerteknikker, og reflektere over bruken av disse i egne og andres medieuttrykk"
+    },
+    {
+     "kode": "KM2773",
+     "tekst": "utvikle budskap og reflektere over valgt målgruppe, formål, sjanger og plattform"
+    },
+    {
+     "kode": "KM2772",
+     "tekst": "reflektere over opphavsrettslige og etiske spørsmål i egne og andres medieuttrykk"
+    },
+    {
+     "kode": "KM2771",
+     "tekst": "bruke kilder på en kritisk og etterprøvbar måte i egne medieuttrykk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i medieuttrykk 2. Elevene viser og utvikler kompetanse i faget når de produserer ulike medieuttrykk individuelt og i samarbeid med andre. Videre viser og utvikler elevene kompetanse i faget når de produserer medieuttrykk i ulike sjangre, for ulike formål og for ulike målgrupper. De viser og utvikler også kompetanse i faget når de bruker fortellerteknikker og kunnskap om tidligere og moderne stilarter til å utvikle egne medieuttrykk, samtidig som de tar hensyn til opphavsrettslige og etiske utfordringer ved bruk av referanser. Videre viser og utvikler de kompetanse i faget når de analyserer og sammenligner medieuttrykk, og når de reflekterer over uttrykkenes kontekst og hvordan den kan forme innhold og budskap i medieuttrykket.\nLæreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom å la elevene utforske og produsere medieuttrykk på egen hånd og sammen med andre og gjennom å veilede dem i arbeidet med kreative og praktiske løsninger. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å jobbe selvstendig, konsentrert og hensiktsmessig med teoretiske og praktiske oppgaver, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å styrke egen produksjonspraksis og evnen til faglig refleksjon."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter medieuttrykk 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i medieuttrykk 2 basert på kompetansen eleven har vist gjennom planlegging og praktisk produksjon av medieuttrykk og gjennom refleksjon rundt bruken av virkemidler og kilder."
+   ]
+  },
+  {
+   "kode": "KV258",
+   "tittel": "Kompetansemål og vurdering medieuttrykk 3",
+   "fag": [
+    "MOK2Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2770",
+     "tekst": "produsere ulike målgrupperettede medieuttrykk individuelt og i samarbeid med andre"
+    },
+    {
+     "kode": "KM2769",
+     "tekst": "dokumentere og kvalitetssikre produksjonsprosesser"
+    },
+    {
+     "kode": "KM2768",
+     "tekst": "jobbe utforskende med idéutvikling gjennom systematisk kildearbeid"
+    },
+    {
+     "kode": "KM2767",
+     "tekst": "planlegge, gjennomføre og vurdere en større selvvalgt og utforskende medieproduksjon tilpasset en tenkt eller reell oppdragsgiver"
+    },
+    {
+     "kode": "KM2766",
+     "tekst": "vurdere egen bruk av profesjonelt produksjonsutstyr og profesjonell programvare tilpasset produkt og kvalitetskrav i mediebransjen"
+    },
+    {
+     "kode": "KM2765",
+     "tekst": "analysere hvordan inspirasjon fra tidligere og moderne stilarter og uttrykk former nåtidens medieuttrykk"
+    },
+    {
+     "kode": "KM2764",
+     "tekst": "utforske og bruke ulike virkemidler og fortellerteknikker i medieuttrykk"
+    },
+    {
+     "kode": "KM2787",
+     "tekst": "utvikle budskap tilpasset målgruppe, formål, sjanger og plattformer"
+    },
+    {
+     "kode": "KM2788",
+     "tekst": "vurdere opphavsrettslige og etiske utfordringer i medieproduksjon ut fra gjeldende lover og regelverk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i medieuttrykk 3. Elevene viser og utvikler kompetanse i faget når de jobber kreativt med ideer, og når de viser til dokumenterte og kvalitetssikrede produksjonsprosesser. Videre viser og utvikler elevene kompetanse i faget når de produserer medieuttrykk i ulike sjangre, for ulike formål og for ulike målgrupper. De viser og utvikler også kompetanse når de bruker kunnskap om tidligere og moderne stilarter til å videreutvikle egne medieuttrykk, og når de viser bevissthet om opphavsrettslige og etiske utfordringer ved bruk av referanser. Videre viser og utvikler de kompetanse når de analyserer, tolker og sammenligner medieuttrykk og utforsker og reflekterer over deres kontekst og funksjon.\nLæreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved å la elevene utforske aktuelle mediefaglige problemer og arbeide kreativt for å løse disse. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å jobbe selvstendig, konsentrert og hensiktsmessig med teoretiske og praktiske oppgaver, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å styrke egen produksjonspraksis og evnen til faglig drøfting."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter medieuttrykk 3. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i medieuttrykk 3 basert på kompetansen eleven har vist gjennom praktisk produksjon av medieuttrykk i ulike sjangre og til ulike formål, og gjennom kritisk drøfting av virkemidler og etikk."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Medieuttrykk 1: Eleven skal ha én standpunktkarakter.",
+    "Medieuttrykk 2: Eleven skal ha én standpunktkarakter.",
+    "Medieuttrykk 3: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Medieuttrykk 1: Eleven kan trekkes ut til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Medieuttrykk 2: Eleven kan trekkes ut til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.",
+    "Medieuttrykk 3: Eleven kan trekkes ut til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Medieuttrykk 1: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Medieuttrykk 2: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.",
+    "Medieuttrykk 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

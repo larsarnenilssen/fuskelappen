@@ -1,0 +1,116 @@
+{
+ "kode": "HVF03-02",
+ "tittel": "Læreplan i vg3 håndveverfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV643",
+   "tittel": "Kompetansemål og vurdering vg3 håndveverfaget",
+   "fag": [
+    "HVF3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7779",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7763",
+     "tekst": "sette opp en vev og gjøre rede for hvordan ulike valg av material og redskap påvirker arbeidsprosessen"
+    },
+    {
+     "kode": "KM7780",
+     "tekst": "utforske og anvende grunnbindingene og variasjoner av disse i eget arbeid"
+    },
+    {
+     "kode": "KM7778",
+     "tekst": "gjennomføre bestillingsoppdrag innenfor gitte rammer"
+    },
+    {
+     "kode": "KM7777",
+     "tekst": "lage og anvende skisser og arbeidstegninger som grunnlag for idéutvikling og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM7776",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7775",
+     "tekst": "utforske og bruke ulike vevoppskrifter, utvikle egne oppskrifter og gjøre rede for hvordan materialbruk, trådtetthet, binding og formgivning påvirker kvalitet og funksjon"
+    },
+    {
+     "kode": "KM7771",
+     "tekst": "drøfte de ulike tekstilfibrenes egenskaper, opprinnelse og produksjon og gjøre rede for etiske valg, ressursutnyttelse, tilgjengelighet og holdbarhet og bruke denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7774",
+     "tekst": "etterbehandle og montere vevnader og anvende relevant merking og vaskeanvisning"
+    },
+    {
+     "kode": "KM7770",
+     "tekst": "reparere og vedlikeholde vevde tekstiler og gjøre rede for hvordan ulike valg påvirker kvalitet og holdbarhet"
+    },
+    {
+     "kode": "KM7769",
+     "tekst": "analysere vevde tekstilers form, farge, struktur, tekstur og tradisjon og kunne bruke dette som inspirasjon i eget arbeid"
+    },
+    {
+     "kode": "KM7767",
+     "tekst": "gjøre rede for vevtradisjoner, historie og lokale særpreg, reflektere over dette i et kulturelt perspektiv og bruke denne kunnskapen i egen formgivning"
+    },
+    {
+     "kode": "KM7766",
+     "tekst": "bruke fagspråk i formidling og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM7765",
+     "tekst": "veilede kunder, kolleger og samarbeidspartnere om design, materialer og fargevalg"
+    },
+    {
+     "kode": "KM7764",
+     "tekst": "anvende digitale ressurser i arbeidsprosess, markedsføring og presentasjon av eget arbeid"
+    },
+    {
+     "kode": "KM7768",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7773",
+     "tekst": "anvende og vedlikeholde maskiner, verktøy og utstyr i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7772",
+     "tekst": "bruke hensiktsmessige arbeidsstillinger og gjøre rede for hvordan man kan bidra til gode arbeidsrutiner i en produksjon"
+    },
+    {
+     "kode": "KM7781",
+     "tekst": "gjøre rede for gjeldende lovverk om opphavsrett og markedsføring og følge dette i eget arbeid"
+    },
+    {
+     "kode": "KM7782",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 håndveverfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 håndveverfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 håndveverfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

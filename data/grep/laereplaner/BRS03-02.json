@@ -1,0 +1,96 @@
+{
+ "kode": "BRS03-02",
+ "tittel": "Læreplan i vg3 brønnfaget, sementering",
+ "spraak": "nob",
+ "fastsatt": "2021-06-24",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV678",
+   "tittel": "Kompetansemål og vurdering vg3 brønnfaget, sementering",
+   "fag": [
+    "BRS3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM8561",
+     "tekst": "planlegge og gjennomføre sementeringsoperasjoner i tråd med gjeldende regelverk og prosedyrer"
+    },
+    {
+     "kode": "KM8562",
+     "tekst": "utføre sikker jobb-analyse, skrive arbeidstillatelser og rapportere og iverksette tiltak når det blir identifisert avvik i operasjonen"
+    },
+    {
+     "kode": "KM8563",
+     "tekst": "vedlikeholde og betjene sementenheter, sementhoder og tilhørende utstyr"
+    },
+    {
+     "kode": "KM8564",
+     "tekst": "gjennomføre prøvetaking og vurdere innholdet i laboratorierapporten"
+    },
+    {
+     "kode": "KM8565",
+     "tekst": "vurdere brønnforhold som kan påvirke resultatet av en sementjobb"
+    },
+    {
+     "kode": "KM8566",
+     "tekst": "gjøre rede for barriere- og brønnkontrollprinsipper"
+    },
+    {
+     "kode": "KM8567",
+     "tekst": "utføre lekkasjetesting med mekaniske plugger og brønnventiler i tråd med gjeldende regelverk og prosedyrer"
+    },
+    {
+     "kode": "KM8568",
+     "tekst": "utføre midlertidig tilbakeplugging med trykksementeringsventil og permanente broplugger"
+    },
+    {
+     "kode": "KM8569",
+     "tekst": "vurdere behov for og utføre vedlikehold på mekaniske plugger og ventiler"
+    },
+    {
+     "kode": "KM8570",
+     "tekst": "utarbeide sluttdokumentasjon for utført arbeid og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM8571",
+     "tekst": "oppdatere lagerbeholdning og levere sluttrapport"
+    },
+    {
+     "kode": "KM8572",
+     "tekst": "utføre oppgaver i tråd med bedriftens og kundens kvalitetssikrings- og sikkerhetssystem"
+    },
+    {
+     "kode": "KM8574",
+     "tekst": "bruke sikkerhetsdatablader ved håndtering av kjemikalier og brønnvæsker"
+    },
+    {
+     "kode": "KM8573",
+     "tekst": "reflektere over utviklingen av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå nullutslipp"
+    },
+    {
+     "kode": "KM8575",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 brønnfaget, sementering når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 brønnfaget, sementering. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 brønnfaget, sementering skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
+   ]
+  }
+ ]
+}

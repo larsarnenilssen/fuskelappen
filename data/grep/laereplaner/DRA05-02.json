@@ -1,0 +1,128 @@
+{
+ "kode": "DRA05-02",
+ "tittel": "Læreplan i teaterproduksjon fordypning",
+ "spraak": "nob",
+ "fastsatt": "2021-04-20",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV591",
+   "tittel": "Kompetansemål og vurdering teaterproduksjon fordypning 1",
+   "fag": [
+    "DRA5Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6777",
+     "tekst": "utarbeide og realisere sceniske konsepter og uttrykk ved å bruke ulike teaterfaglige metoder"
+    },
+    {
+     "kode": "KM6778",
+     "tekst": "bruke ulike former for teksttilnærming, dramaturgiske innganger og modeller i arbeid med iscenesettelse"
+    },
+    {
+     "kode": "KM6779",
+     "tekst": "eksperimentere med sceniske virkemidler og integrere tekniske, scenografiske og audiovisuelle løsninger"
+    },
+    {
+     "kode": "KM6780",
+     "tekst": "lede skapende arbeid, ta valg og reflektere over hvordan valgene virker inn på arbeidsprosessene i gruppa, produksjonen og publikum i det endelige uttrykket"
+    },
+    {
+     "kode": "KM6781",
+     "tekst": "gjøre rede for prinsipper for regi og skuespillerteknikk og nyttiggjøre seg disse i kollektivt skapende forestillingsarbeid"
+    },
+    {
+     "kode": "KM6782",
+     "tekst": "drøfte og prøve ut hvordan teater som ytringsform kan bidra til å belyse samfunnsutfordringer og bidra til bærekraftig utvikling"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teaterproduksjon fordypning 1. Elevene viser og utvikler kompetanse i faget når de arbeider med sceniske virkemidler, dramaturgi og analyse, og når de drøfter og utforske teater som kunstnerisk uttrykksform. Elevene viser og utvikler også kompetanse i faget når de tar egne valg, og når de deltar i og leder kollektivt skapende prosesser.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske sceniske virkemidler og utvikle seg i rollen som iscenesetter. Læreren skal være i dialog med elevene om utviklingen deres i å forstå, analysere og bruke dramaturgiske innganger og modeller i skapende aktivitet, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle egne lederegenskaper og utforske teaterets muligheter som ytringsform og kunstnerisk uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teaterproduksjon fordypning 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teaterproduksjon fordypning 1 basert på kompetansen eleven har vist ved å utforske og analysere scenisk materiale og konsepter, ved å utvikle teatrale uttrykk og forståelse av teaterets muligheter og ved å delta i og lede kollektivt forestillingsarbeid."
+   ]
+  },
+  {
+   "kode": "KV592",
+   "tittel": "Kompetansemål og vurdering teaterproduksjon fordypning 2",
+   "fag": [
+    "DRA5Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6783",
+     "tekst": "planlegge, gjennomføre og reflektere over kunstneriske valg i kollektive skapende teaterprosesser"
+    },
+    {
+     "kode": "KM6784",
+     "tekst": "bearbeide og analysere sceniske tekster og visuelle forløp"
+    },
+    {
+     "kode": "KM6785",
+     "tekst": "prøve ut dramaturgiske verktøy og innganger i arbeid med iscenesettelse"
+    },
+    {
+     "kode": "KM6786",
+     "tekst": "eksperimentere selvstendig med sceniske virkemidler og reflektere over effekten av disse i møte med publikum"
+    },
+    {
+     "kode": "KM6787",
+     "tekst": "integrere tekniske og scenografiske løsninger i ulike performative uttrykk og teaterproduksjoner og reflektere over bruk av multimediale løsninger og medieplattformer"
+    },
+    {
+     "kode": "KM6788",
+     "tekst": "lede skapende prosesser, ta kunstneriske og arbeidsetiske valg og reflektere over hvordan disse valgene virker inn på arbeidsprosessene i gruppa, produksjonen og publikum i det endelige uttrykket"
+    },
+    {
+     "kode": "KM6789",
+     "tekst": "utvikle regikonsept innenfor ulike sjangre ved å utforske og eksperimentere med form, innhold og spillestiler"
+    },
+    {
+     "kode": "KM6790",
+     "tekst": "utforske samfunnsutfordringer gjennom sceniske uttrykk og teatrale ytringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i teaterproduksjon fordypning 2. Elevene viser og utvikler kompetanse i faget når de arbeider med sceniske virkemidler, dramaturgi og analyse, når de bruker teater som ytringsform, og når de utvikler egne selvstendige uttrykk. Elevene viser og utvikler også kompetanse i faget når de tar kunstneriske valg, og når de deltar i og leder skapende prosesser.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske og eksperimentere med sceniske virkemidler og videreutvikle rollen som bidragsyter og iscenesetter i kollektive kunstneriske prosesser. Læreren skal være i dialog med elevene om utviklingen deres i å bruke dramaturgi og analyse i utvikling av scenisk materiale og formgiving av forestillinger, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle evne til kommunikasjon og samhandling, utvikle egne lederegenskaper og bruke teaterets muligheter som ytringsform og kunstnerisk uttrykk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter teaterproduksjon fordypning 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i teaterproduksjon fordypning 2 basert på kompetansen eleven har vist ved å arbeide selvstendig med å skape teater og ved å bruke teaterets muligheter som ytringsform og kunstnerisk uttrykk i kollektive prosesser."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Teaterproduksjon fordypning 1: Eleven skal ha én standpunktkarakter.\nTeaterproduksjon fordypning 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Teaterproduksjon fordypning 1: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel.\nTeaterproduksjon fordypning 2: Eleven kan trekkes ut til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Teaterproduksjon fordypning 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeaterproduksjon fordypning 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Privatister i teaterproduksjon fordypning 2 får godskrevet programfaget teaterproduksjon fordypning 1."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "kode": "DTH01-01",
+ "tittel": "Læreplan i vg1 håndverk, design og produktutvikling",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV239",
+   "tittel": "Kompetansemål og vurdering produktutvikling og skapende prosesser",
+   "fag": [
+    "DTH1Z01"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2576",
+     "tekst": "planlegge og dokumentere en design- og produktutviklingsprosess alene og i samarbeid med andre innenfor gitte tidsrammer"
+    },
+    {
+     "kode": "KM2600",
+     "tekst": "lage og bearbeide skisser og arbeidstegninger manuelt og med digitale ressurser"
+    },
+    {
+     "kode": "KM2591",
+     "tekst": "undersøke og bruke design, kulturuttrykk, stilhistorie og lokale tradisjoner innenfor tradisjonshåndverk som inspirasjon til egen produktutvikling"
+    },
+    {
+     "kode": "KM2594",
+     "tekst": "bruke fagterminologi og visuelle virkemidler i samhandling med andre og for å dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM2599",
+     "tekst": "utforske og bruke farger og symboler i utvikling av produkter i harde, myke og plastiske materialer"
+    },
+    {
+     "kode": "KM2593",
+     "tekst": "bruke prinsipper for komposisjon i to- og tredimensjonal form"
+    },
+    {
+     "kode": "KM2592",
+     "tekst": "anvende tradisjonelle målemetoder og tilpasse mønster og maler"
+    },
+    {
+     "kode": "KM2590",
+     "tekst": "utvikle nye håndverksprodukter og vurdere holdbarhet, funksjon og estetisk uttrykk"
+    },
+    {
+     "kode": "KM2598",
+     "tekst": "presentere ideer og produkter for kunder og andre og formidle produktenes historie og egenart"
+    },
+    {
+     "kode": "KM2601",
+     "tekst": "utforske og formidle hvordan etterspørsel, kultur, tradisjon, trender og bærekraft har betydning for håndverksfagene lokalt og regionalt"
+    },
+    {
+     "kode": "KM2589",
+     "tekst": "beregne kostnader og pris på materialer og produkter"
+    },
+    {
+     "kode": "KM2597",
+     "tekst": "utforske dilemmaer som oppstår i spennet mellom tradisjon og nyskaping"
+    },
+    {
+     "kode": "KM2596",
+     "tekst": "formidle ulik bruk av farger, symboler og materialer i håndverkprodukter"
+    },
+    {
+     "kode": "KM2595",
+     "tekst": "undersøke hvordan håndverkstradisjoner har blitt brukt til politiske og ideologiske ytringer i ulike kulturer og presentere eget arbeid som uttrykker egne følelser og meninger"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produktutvikling og skapende prosesser når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produktutvikling og skapende prosesser. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i produktutvikling og skapende prosesser ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produktutvikling og skapende prosesser basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV240",
+   "tittel": "Kompetansemål og vurdering materialer og teknikker",
+   "fag": [
+    "DTH1Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2587",
+     "tekst": "bruke ulike grunnleggende håndverksteknikker ved utforming av produkter i harde, myke og plastiske materialer og reflektere over egenskapene til de ulike materialene"
+    },
+    {
+     "kode": "KM2585",
+     "tekst": "utforske og lage håndverksprodukter med presisjon og nøyaktighet med utgangspunkt i eget planleggingsarbeid og gitte tidsfrister"
+    },
+    {
+     "kode": "KM2586",
+     "tekst": "utforske og fordype seg i teknikker og materialer i selvvalgte interesseområder"
+    },
+    {
+     "kode": "KM2581",
+     "tekst": "reflektere og anvende tradisjonelle teknikker for å gjenskape tradisjonelle håndverksprodukter"
+    },
+    {
+     "kode": "KM2602",
+     "tekst": "holde orden i verkstedet og bruke materialer, teknikker og utstyr i henhold til gjeldende regler for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2582",
+     "tekst": "anskaffe, sanke inn, bearbeide og oppbevare materialer på en bærekraftig og økonomisk måte, etter lokal ressurstilgang og tradisjon"
+    },
+    {
+     "kode": "KM2580",
+     "tekst": "gjøre rede for de ulike materialenes egenskaper og funksjonsområder"
+    },
+    {
+     "kode": "KM2579",
+     "tekst": "anvende og velge hensiktsmessige teknikker, verktøyer og materialer til produktet"
+    },
+    {
+     "kode": "KM2583",
+     "tekst": "gjenbruke, tilpasse, reparere og vedlikeholde ulike håndverksprodukter"
+    },
+    {
+     "kode": "KM2577",
+     "tekst": "bruke arbeidstegninger, mønstre og maler i eget arbeid"
+    },
+    {
+     "kode": "KM2588",
+     "tekst": "vurdere håndverksfaglig kvalitet på eget og andres arbeid ut fra holdbarhet, funksjon og estetisk uttrykk"
+    },
+    {
+     "kode": "KM2584",
+     "tekst": "utføre enkelt vedlikehold av maskiner, verktøy og utstyr etter gjeldende sikkerhetsbestemmelser"
+    },
+    {
+     "kode": "KM2578",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i materialer og teknikker når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i materialer og teknikker. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i materialer og teknikker ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i materialer og teknikker basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produktutvikling og skapende prosesser: Eleven skal ha én standpunktkarakter.",
+    "Materialer og teknikker: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produktutvikling og skapende prosesser: Eleven skal ikke opp til eksamen.",
+    "Materialer og teknikker: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produktutvikling og skapende prosesser: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Materialer og teknikker: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produktutvikling og skapende prosesser og materialer og teknikker: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

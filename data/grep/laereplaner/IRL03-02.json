@@ -1,0 +1,108 @@
+{
+ "kode": "IRL03-02",
+ "tittel": "Læreplan i vg3 industrirørleggerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-25",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV700",
+   "tittel": "Kompetansemål og vurdering vg3 industrirørleggerfaget",
+   "fag": [
+    "IRL3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9025",
+     "tekst": "planlegge, beskrive og gjennomføre eget arbeid i tråd med tegninger og standarder, og evaluere arbeidet i etterkant"
+    },
+    {
+     "kode": "KM9040",
+     "tekst": "vurdere ulike risikomomenter knyttet til bruk av materiell og utstyr i en arbeidsprosess, og dokumentere og iverksette tiltak i tråd med gjeldende rutiner"
+    },
+    {
+     "kode": "KM9027",
+     "tekst": "anvende sikkerhetsdatablader og reflektere over behovet for disse i planleggingen av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM9030",
+     "tekst": "registrere og rapportere farlige forhold, uønskede hendelser og avvik, og foreslå korrigerende tiltak"
+    },
+    {
+     "kode": "KM9041",
+     "tekst": "gjøre rede for opplæringsbedriftens virksomhet og organisasjonsstruktur, og hvilken rolle verneombudet har i en bedrift"
+    },
+    {
+     "kode": "KM9028",
+     "tekst": "bruke ulike verktøy og utstyr for å bearbeide materialer før sammenføying"
+    },
+    {
+     "kode": "KM9029",
+     "tekst": "bruke sveisemetoder til å sammenføye rør og materiale etter gjeldende prosedyrer og vurdere resultatet"
+    },
+    {
+     "kode": "KM9026",
+     "tekst": "gjøre rede for og reflektere over problemer knyttet til korrosjon og konsekvenser av å kombinere ulike typer materialer, og vurdere ulike typer overflatebehandling"
+    },
+    {
+     "kode": "KM9038",
+     "tekst": "utføre og dokumentere lekkasjetesting av rør og rørsystem og dokumentere resultatet"
+    },
+    {
+     "kode": "KM9039",
+     "tekst": "forklare og dokumentere sporbarhet av materialer og dokumentere utført sporing"
+    },
+    {
+     "kode": "KM9037",
+     "tekst": "bruke isometriske og andre tekniske tegninger for å planlegge og gjennomføre en produksjon og montasje"
+    },
+    {
+     "kode": "KM9036",
+     "tekst": "planlegge og gjennomføre klamring av rør etter behov og gjeldende krav"
+    },
+    {
+     "kode": "KM9035",
+     "tekst": "montere rør og utstyr ved hjelp av ulike mekaniske sammenføyingsmetoder etter gjeldende prosedyrer"
+    },
+    {
+     "kode": "KM9034",
+     "tekst": "utføre kildesortering og håndtere avfall i tråd med gjeldende krav og rutiner"
+    },
+    {
+     "kode": "KM9033",
+     "tekst": "anvende ulike typer måleutstyr og foreta beregninger i sammenheng med planlegging og utføring av arbeidsoppgaver"
+    },
+    {
+     "kode": "KM9042",
+     "tekst": "planlegge og utføre boltetrekking i henhold til krav og prosedyrer"
+    },
+    {
+     "kode": "KM9032",
+     "tekst": "gjøre rede for substitusjonsplikten og hvordan dette er med på å begrense skadelige stoffer i miljøet"
+    },
+    {
+     "kode": "KM9031",
+     "tekst": "gjøre rede for partssamarbeidet i bedriften og reflektere over arbeidsgivers og arbeidstakers plikter og rettigheter og over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 industrirørleggerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 industrirørleggerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 industrirørleggerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fire til seks virkedager."
+   ]
+  }
+ ]
+}

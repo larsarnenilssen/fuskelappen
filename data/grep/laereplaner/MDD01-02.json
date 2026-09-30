@@ -1,0 +1,81 @@
+{
+ "kode": "MDD01-02",
+ "tittel": "Læreplan i musikk, dans og drama",
+ "spraak": "nob",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV259",
+   "tittel": "Kompetansemål og vurdering",
+   "fag": [
+    "MDD1Z02"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2789",
+     "tekst": "planlegge, gjennomføre og vurdere tverrkunstneriske sceniske prosesser og framføringer"
+    },
+    {
+     "kode": "KM2790",
+     "tekst": "utforske, utøve og formidle tverrkunstneriske uttrykk og ta ansvar for felles prosesser og framføringer"
+    },
+    {
+     "kode": "KM2791",
+     "tekst": "bruke kunnskap om joik og samisk fortellertradisjon og om norsk folkemusikk og folkedans i formidlingsarbeid"
+    },
+    {
+     "kode": "KM2792",
+     "tekst": "bruke kunnskap om form, struktur og dynamiske komponenter i skapende aktivitet"
+    },
+    {
+     "kode": "KM2793",
+     "tekst": "vise tilstedeværelse, lytte og gi respons gjennom musikalske, danseriske og dramatisk uttrykk i improvisasjon og formidling"
+    },
+    {
+     "kode": "KM2794",
+     "tekst": "utforske tekstformidling, lydlek og sang i utøving, og reflektere over stemmens muligheter"
+    },
+    {
+     "kode": "KM2795",
+     "tekst": "utforske dans og fysiske uttrykk i utøving, og reflektere over kroppens muligheter i bevegelse"
+    },
+    {
+     "kode": "KM2796",
+     "tekst": "skape kunstneriske uttrykk som tar opp samfunnsutfordringer og reflektere over ytringsfrihetens muligheter og grenser"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk, dans og drama. Elevene viser og utvikler kompetanse i faget når de arbeider utforskende med ulike sceniske uttrykksformer, og når de reflekterer over sammenhenger mellom disse. De viser og utvikler også kompetanse i faget gjennom samarbeid og formidling av tverrkunstnerisk arbeid i ulike formater. Videre viser og utvikler elevene kompetanse i faget når de utforsker fagbegreper og ulike metoder i og tilnærminger til skapende arbeid, og når de formidler kunstneriske ideer på en nyansert måte.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske verktøy og prinsipper fra ulike scenekunstuttrykk og får mulighet til å skape sine egne uttrykksformer. Læreren skal være i dialog med elevene om utviklingen deres i musikk, dans og drama, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen til å utvikle kompetanse i samhandling, improvisasjon, stemmebruk og fysisk uttrykk i sceniske uttrykksformer."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i musikk, dans og drama ved avslutningen av opplæringen. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i kjente og ukjente situasjoner. Læreren skal sette karakter i musikk, dans og drama basert på kompetansen eleven har vist, både praktisk og muntlig, i utforsking av ulike sceniske uttrykksformer, i tverrkunstneriske prosesser og produksjoner og i refleksjon over og kritisk vurdering av disse prosessene og produksjonene."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Musikk, dans og drama: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Musikk, dans og drama: Eleven kan trekkes ut til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Musikk, dans og drama: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

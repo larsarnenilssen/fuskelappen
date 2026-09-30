@@ -1,0 +1,116 @@
+{
+ "kode": "TOG03-03",
+ "tittel": "Læreplan i vg3 togelektrikerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-08-20",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV735",
+   "tittel": "Kompetansemål og vurdering vg3 togelektrikerfaget",
+   "fag": [
+    "TOG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM9583",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i samarbeid med andre og individuelt i henhold til gjeldende regelverk, standarder, leverandørenes og operatørenes sikkerhetskrav og bedriftens internkontrollsystem, og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM9600",
+     "tekst": "arbeide med hensyn til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp, arbeide i tråd med ergonomiske prinsipper, bruke verneutstyr og drøfte hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM9599",
+     "tekst": "bygge om, oppgradere og vedlikeholde lav- og høyspenningsanlegg på skinnegående materiell og gjøre rede for hvordan anleggene fungerer"
+    },
+    {
+     "kode": "KM9598",
+     "tekst": "systematisk feilsøke og reparere skinnegående materiell ved hjelp av egnede måleinstrumenter og dokumentasjon, og vurdere måleresultater opp mot forventede og beregnede verdier"
+    },
+    {
+     "kode": "KM9597",
+     "tekst": "anvende hånd-, måle- og diagnoseverktøy i arbeid på skinnegående materiell og gjøre rede for vedlikeholds- og kalibreringsrutiner for verktøyet og instrumentenes målenøyaktighet"
+    },
+    {
+     "kode": "KM9596",
+     "tekst": "adressere komponenter og laste programvare inn i elektroniske enheter og funksjonsteste enhetene etter innlasting av programvare"
+    },
+    {
+     "kode": "KM9595",
+     "tekst": "bygge om, oppgradere og vedlikeholde bus-systemer for kommunikasjon og styring og gjøre rede for hvordan bus-systemenes er bygget opp og fungerer"
+    },
+    {
+     "kode": "KM9594",
+     "tekst": "utføre funksjonskontroll og igangkjøring av delsystemer på skinnegående materiell og drifte og vedlikeholde komponenter og utstyr som inngår i systemene, og gjøre rede for delsystemenes oppbygning og virkemåte"
+    },
+    {
+     "kode": "KM9593",
+     "tekst": "ombygge, oppgradere og vedlikeholde styrings-, kommunikasjons- og sikkerhetskritiske systemer på skinnegående materiell og diskutere med andre faggrupper hvordan systemene er bygget opp og fungerer"
+    },
+    {
+     "kode": "KM9592",
+     "tekst": "koble sammen skinnegående materiell og gjøre rede for kommunikasjon og styring av de sammenkoblede enhetene"
+    },
+    {
+     "kode": "KM9591",
+     "tekst": "bygge om, oppgradere og vedlikeholde hovedkomponentene i skinnegående materiell og gi en grunnleggende beskrivelse av hvordan hovedkomponentene er bygget opp og fungerer"
+    },
+    {
+     "kode": "KM9590",
+     "tekst": "bygge om, oppgradere og vedlikeholde lukkede toalettsystemer, iverksette tiltak for å unngå smittespredning og håndtere smittefarlig avfall"
+    },
+    {
+     "kode": "KM9589",
+     "tekst": "bygge om, oppgradere og vedlikeholde elektriske forsynings- og traksjonsomformersystemer og gjøre rede for utstyr og komponenter som inngår i systemene"
+    },
+    {
+     "kode": "KM9588",
+     "tekst": "bygge om, oppgradere og vedlikeholde elektromotorer og tilhørende styresystem og dimensjonere ledning, kabel og vern til motor"
+    },
+    {
+     "kode": "KM9587",
+     "tekst": "installere, funksjonsteste og justere sensorer og gjøre rede for sensorenes virkemåte, måleområde og begrensninger"
+    },
+    {
+     "kode": "KM9586",
+     "tekst": "bygge om, oppgradere og vedlikeholde jordingssystemet på rullende materiell og gjøre rede for forskjellen på drifts- og sikkerhetsjord"
+    },
+    {
+     "kode": "KM9585",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM9584",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM9601",
+     "tekst": "håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM9602",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 togelektrikerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 togelektrikerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 togelektrikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

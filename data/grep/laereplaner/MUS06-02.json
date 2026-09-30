@@ -1,0 +1,141 @@
+{
+ "kode": "MUS06-02",
+ "tittel": "Læreplan i musikk i perspektiv",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV554",
+   "tittel": "Kompetansemål og vurdering musikk i perspektiv 1",
+   "fag": [
+    "MUS6Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6419",
+     "tekst": "beskrive kjennetegn og virkemidler i musikkeksempler fra ulike sjangre, inkludert norsk og samisk folkemusikk"
+    },
+    {
+     "kode": "KM6433",
+     "tekst": "reflektere over sentrale musikalske utviklingstrekk og musikkens funksjoner for individet og samfunnet"
+    },
+    {
+     "kode": "KM6432",
+     "tekst": "drøfte musikktradisjoners historiske betydning i demokratiske prosesser og for kulturell identitetsdanning"
+    },
+    {
+     "kode": "KM6431",
+     "tekst": "drøfte musikkens rolle og betydning for menneskers følelsesliv, sosiale relasjoner og identitet"
+    },
+    {
+     "kode": "KM6430",
+     "tekst": "utforske og reflektere over hvordan natur, menneske, ressursbruk og samfunn kommer til uttrykk i ulike musikkformer"
+    },
+    {
+     "kode": "KM6429",
+     "tekst": "identifisere og beskrive musikkens elementer ved bruk av fagbegreper, med utgangspunkt i noterte og klingende musikkeksempler"
+    },
+    {
+     "kode": "KM6428",
+     "tekst": "memorere, utføre og sette ord på rytmiske og tonale elementer i musikk fra ulike sjangre ved å bruke gehør"
+    },
+    {
+     "kode": "KM6434",
+     "tekst": "lese notert musikk og notere musikalske elementer fra ulike sjangre ved å bruke gehør"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk i perspektiv 1. Elevene viser og utvikler kompetanse i faget når de bruker ferdigheter i gehør og kunnskap om musikkteori til å utforske og formidle musikalske elementer og virkemidler. Elevene viser og utvikler også kompetanse når de undersøker og uttrykker forståelse av ulike musikalske praksiser, og når de reflekterer over hvordan musikk er bygget opp, utøvd og brukt til ulike tider og i ulike kulturer.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide med musikk fra ulike kontekster og sjangerkulturer, alene og sammen med andre. Læreren skal være i dialog med elevene om utviklingen deres i musikalske praksiser, musikkanalyse og gehør i kontekst, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle praktiske og analytiske ferdigheter, musikkteoretisk kunnskap og evne til å reflektere over musikkens rolle, funksjon og utviklingstrekk."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter musikk i perspektiv 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i musikk i perspektiv 1 basert på kompetansen eleven har vist gjennom å bruke gehør, notasjon og musikkteoretisk kunnskap i analyse av musikk og gjennom å reflektere over musikkens rolle, funksjon og utviklingstrekk i ulike kontekster og sjangerkulturer."
+   ]
+  },
+  {
+   "kode": "KV555",
+   "tittel": "Kompetansemål og vurdering musikk i perspektiv 2",
+   "fag": [
+    "MUS6Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6427",
+     "tekst": "gjenkjenne, analysere og reflektere over kjennetegn og særtrekk ved lokale, nasjonale og globale musikktradisjoner og -praksiser, inkludert norsk og samisk folkemusikk"
+    },
+    {
+     "kode": "KM6425",
+     "tekst": "reflektere over musikkens utviklingstrekk og funksjoner for individet og samfunnet, i ulike historiske kontekster, ved å bruke kunnskap om musikalske virkemidler"
+    },
+    {
+     "kode": "KM6424",
+     "tekst": "utforske og reflektere over hvordan likestilling, menneskeverd og politiske meninger kommer til uttrykk i ulike musikkformer"
+    },
+    {
+     "kode": "KM6423",
+     "tekst": "drøfte musikkens rolle og betydning for menneskers følelsesliv, sosiale relasjoner og identitet til ulike tider"
+    },
+    {
+     "kode": "KM6726",
+     "tekst": "utforske og drøfte hvordan natur, menneske, ressursbruk og samfunn kommer til uttrykk i ulike musikkformer"
+    },
+    {
+     "kode": "KM6422",
+     "tekst": "analysere musikkens elementer med utgangspunkt i noterte og klingende musikkeksempler ved å bruke musikkteoretisk kunnskap og fagbegreper"
+    },
+    {
+     "kode": "KM6421",
+     "tekst": "memorere, utføre og utforske elementer og virkemidler i musikk fra ulike sjangre ved å bruke gehør"
+    },
+    {
+     "kode": "KM6420",
+     "tekst": "lese notert musikk og notere musikalske forløp fra ulike sjangre ved å bruke gehør"
+    },
+    {
+     "kode": "KM6435",
+     "tekst": "planlegge og gjennomføre et musikkfaglig fordypningsarbeid og presentere arbeidet i et passende medium"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i musikk i perspektiv 2. Elevene viser og utvikler kompetanse i faget når de bruker ferdigheter i gehør og kunnskap i musikkteori til å utforske, uttrykke og beskrive virkemidler og musikalske forløp i ulike sjangre. Videre viser og utvikler elevene kompetanse når de analyserer og reflekterer over musikkbruk i ulike kontekster, kulturer og tider, og når de tenker kritisk rundt musikkens betydning for individet og samfunnet. Elevene viser og utvikler også kompetanse når de fordyper seg i musikkfaglige temaer.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide med musikk innenfor ulike kontekster og sjangerkulturer, alene og sammen med andre. Læreren skal være i dialog med elevene om utviklingen deres i musikalske praksiser, musikkanalyse og gehør i kontekst, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle ferdigheter i gehør og notasjon, evne til refleksjon over og analyse av musikkens rolle, funksjon og utviklingstrekk i ulike kulturelle kontekster og til ulike tider, og til å planlegge og gjennomføre eget fordypningsarbeid."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter musikk i perspektiv 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i musikk i perspektiv 2 basert på kompetansen eleven har vist gjennom å bruke gehør, notasjon og musikkteoretisk kunnskap i musikalsk utforsking, gjennom å reflektere over og analysere musikkens rolle, funksjon og utviklingstrekk i ulike kulturelle kontekster og til ulike tider, og gjennom musikkfaglig fordypningsarbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Musikk i perspektiv 1: Eleven skal ha én standpunktkarakter.\nMusikk i perspektiv 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Musikk i perspektiv 1: Eleven kan trekkes ut til en skriftlig eller en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Skriftlig og muntlig eksamen skal ha forberedelsesdel.",
+    "Musikk i perspektiv 2: Eleven kan trekkes ut til en skriftlig eller en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Skriftlig og muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Musikk i perspektiv 1: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Musikk i perspektiv 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

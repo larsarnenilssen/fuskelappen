@@ -1,0 +1,140 @@
+{
+ "kode": "ANG03-02",
+ "tittel": "Læreplan i vg3 anleggsgartnerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV502",
+   "tittel": "Kompetansemål og vurdering Vg3 anleggsgartnerfaget",
+   "fag": [
+    "ANG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5652",
+     "tekst": "bruke fagterminologi for å kommunisere med kollegaer, leverandører og andre yrkesutøvere og tilpasse kommunikasjonen til ulike målgrupper og situasjoner"
+    },
+    {
+     "kode": "KM5656",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM5642",
+     "tekst": "planlegge bygging og vedlikehold av utendørsanlegg etter tegninger, beskrivelser og preaksepterte løsninger ved bruk av ulike prosjektverktøy, arbeide i tråd med gjeldende krav til helse, miljø og sikkerhet og toleransekrav og reflektere over konsekvenser av å ikke følge kravene"
+    },
+    {
+     "kode": "KM5632",
+     "tekst": "utarbeide framdriftsplaner og vedlikeholdsplaner, bestille og motta materialer, utstyr og masser og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM5654",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og rapportere om uønskede hendelser"
+    },
+    {
+     "kode": "KM5639",
+     "tekst": "velge og bruke maskiner, redskaper, håndverktøy og utstyr i tråd med gjeldende regler for helse, miljø og sikkerhet og med hensyn til ytre miljø"
+    },
+    {
+     "kode": "KM5638",
+     "tekst": "kontrollere landmålingsverktøy, sette ut punkter, linjer, fall og vinkler i utendørsanlegget og drøfte hvilke konsekvenser feil utsetting har for anlegget."
+    },
+    {
+     "kode": "KM5651",
+     "tekst": "velge, bruke og gjenbruke materialer til ulike formål, med hensyn til kvalitet, funksjonalitet og miljø og drøfte ulike sirkulærøkonomiske løsninger som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5653",
+     "tekst": "gjenvinne og håndtere avfall etter gjeldende regelverk og reflektere over konsekvenser av feilhåndtering"
+    },
+    {
+     "kode": "KM5655",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM5650",
+     "tekst": "bruke ulike jordtyper og vekstmedier, og vurdere ulike tiltak som sikrer vekstforhold og etablering av vegetasjon på naturlig grunn og konstruksjoner"
+    },
+    {
+     "kode": "KM5641",
+     "tekst": "gjøre rede for ulike typer vegetasjon, bruke botaniske navn, velge vegetasjon tilpasset bruksområdet og vurdere vedlikeholdstiltak som opprettholder kvaliteten"
+    },
+    {
+     "kode": "KM5636",
+     "tekst": "velge, bruke og vedlikeholde trær, busker, stauder, plener og annen vegetasjon og vurdere faktorer som påvirker kvalitet og levetid på utendørsanlegget"
+    },
+    {
+     "kode": "KM5649",
+     "tekst": "identifisere invaderende arter, giftige- og allergifremkallende arter, hindre spredning, vurdere videre behandling og iverksette tiltak"
+    },
+    {
+     "kode": "KM5648",
+     "tekst": "identifisere skadedyr og nyttedyr i grøntanlegg og iverksette tiltak som begrenser skadeomfang og fremmer biologisk mangfold"
+    },
+    {
+     "kode": "KM5643",
+     "tekst": "bygge anlegg for lokal overvannsdisponering, velge og bruke vegetasjon og regnvann som ressurs i uteanlegget og drøfte betydningen av lokal overvannsdisponering"
+    },
+    {
+     "kode": "KM5640",
+     "tekst": "utforske hvordan utformingen av utendørsanlegg kan virke helsefremmende og legge til rette for fysisk aktivitet for mennesker i ulike livssituasjoner"
+    },
+    {
+     "kode": "KM5647",
+     "tekst": "bygge fundamenter for faste, løse og permeable dekker, kanter, murer, trapper og installasjoner og vurdere hvordan ulike typer fundament påvirker kvaliteten på sluttproduktet"
+    },
+    {
+     "kode": "KM5637",
+     "tekst": "bygge faste, løse og permeable dekker, kanter, murer, trapper og installasjoner og vurdere hvordan materialvalg påvirker kvaliteten på sluttproduktet"
+    },
+    {
+     "kode": "KM5645",
+     "tekst": "bygge konstruksjoner og forskalinger i tre i utendørsanlegg"
+    },
+    {
+     "kode": "KM5644",
+     "tekst": "vurdere og bruke ulike byggtekniske løsninger og gjøre rede for konsekvenser for universell utforming i utendørsanlegg"
+    },
+    {
+     "kode": "KM5646",
+     "tekst": "bygge, drifte og vedlikeholde anlegg til lek, idrett og friluftsliv og vurdere ulike tiltak som forlenger anleggenes levetid"
+    },
+    {
+     "kode": "KM5635",
+     "tekst": "reflektere over fordeler og ulemper ved ulike entrepriseformer"
+    },
+    {
+     "kode": "KM5634",
+     "tekst": "planlegge utforming av utendørsanlegg etter gitte produksjonskrav, beregne kostnader og drøfte faktorer som påvirker bedriften lønnsomhet"
+    },
+    {
+     "kode": "KM5633",
+     "tekst": "utføre grunnleggende førstehjelp"
+    },
+    {
+     "kode": "KM5657",
+     "tekst": "bruke verne- og sikkerhetsutstyr og vurdere konsekvensene av feilbruk"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 anleggsgartnerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 anleggsgartnerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 anleggsgartnerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst sju virkedager."
+   ]
+  }
+ ]
+}

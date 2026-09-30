@@ -1,0 +1,148 @@
+{
+ "kode": "TAK03-02",
+ "tittel": "Læreplan i vg3 tak- og membrantekkerfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-19",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV516",
+   "tittel": "Kompetansemål og vurdering Vg3 tak- og membrantekkerfaget",
+   "fag": [
+    "TAK3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5983",
+     "tekst": "planlegge valg av dampsperrer, isolasjonsmaterialer og tekkeløsninger etter tegninger, beskrivelser, preaksepterte løsninger, standarder og toleransekrav og vurdere konsekvenser av avvik fra toleransekravene"
+    },
+    {
+     "kode": "KM6008",
+     "tekst": "tegne og beskrive arbeidsoppdrag for kunder og beregne materialmengder"
+    },
+    {
+     "kode": "KM6009",
+     "tekst": "utarbeide framdriftsplaner, bestille og motta materialer og utstyr og kontrollere kvalitet og mengde i tråd med arbeidsoppdraget"
+    },
+    {
+     "kode": "KM6007",
+     "tekst": "kontrollere og kvalitetssikre underlaget i henhold til gjeldene krav"
+    },
+    {
+     "kode": "KM6006",
+     "tekst": "tegne, måle og merke arbeidsoppdrag ved hjelp av mekaniske og digitale verktøy"
+    },
+    {
+     "kode": "KM6005",
+     "tekst": "velge og bruke verktøy og materialer til ulike formål og med hensyn til kvalitet funksjonalitet, miljø og økonomi"
+    },
+    {
+     "kode": "KM5986",
+     "tekst": "vurdere substitusjonsmulighetene for valgte produkter"
+    },
+    {
+     "kode": "KM6004",
+     "tekst": "montere dampsperre etter beskrivelse på kompakte tak"
+    },
+    {
+     "kode": "KM6003",
+     "tekst": "gjøre rede for prinsippene for varmeteknikk og kuldeteknikk, velge materialer som isolerer mot varme og kulde, og isolere på kompakte tak"
+    },
+    {
+     "kode": "KM5987",
+     "tekst": "utføre tekkearbeid i tunneller og bassenger"
+    },
+    {
+     "kode": "KM5985",
+     "tekst": "velge materialer for underlag til skifer, korrigerte plater og takstein og drøfte hvordan materialegenskaper påvirker sluttresultatet"
+    },
+    {
+     "kode": "KM6002",
+     "tekst": "utføre tekkearbeid på skråtak med shingel, rullevarer, korrugerte plater og takstein"
+    },
+    {
+     "kode": "KM6001",
+     "tekst": "velge lengder og plassering av mekaniske festemidler til skrå og flate tak, og montere dem"
+    },
+    {
+     "kode": "KM6000",
+     "tekst": "utføre ettlags og tolags tekking med alle taktekkematerialer"
+    },
+    {
+     "kode": "KM5999",
+     "tekst": "bruke mekaniske festemidler til skrå og flate tak"
+    },
+    {
+     "kode": "KM5984",
+     "tekst": "montere, demontere og remontere beslag"
+    },
+    {
+     "kode": "KM5998",
+     "tekst": "anvende flytende bitumen og lim til klebing, vurdere konsekvensen av feilbruk og vurdere miljøbelastningen ved bruk av ulike stoffer"
+    },
+    {
+     "kode": "KM5997",
+     "tekst": "arbeide i tråd med ergonomiske prinsipper og reflektere over konsekvenser av støy, varme og støveksponering og arbeid i høyden"
+    },
+    {
+     "kode": "KM5996",
+     "tekst": "bruke verne- og sikkerhetsutstyr etter gjeldende regelverk og reflektere over konsekvensene av feilbruk"
+    },
+    {
+     "kode": "KM5995",
+     "tekst": "vurdere risiko og følge rutiner for å stroppe, anhuke og gi signal ved lasting og lossing"
+    },
+    {
+     "kode": "KM5994",
+     "tekst": "risikovurdere arbeidsoppdrag, gjennomføre en sikker jobbanalyse og iverksette tiltak som forebygger helseskader og ulykker"
+    },
+    {
+     "kode": "KM5993",
+     "tekst": "vurdere og gjennomføre sikkerhetstiltak ved arbeid i høyden, montere og bruke arbeidsplattformer og sikre risikoutsatte arbeidssituasjoner"
+    },
+    {
+     "kode": "KM5992",
+     "tekst": "anvende sikkerhetsdatablad, følge anvisninger ved bruk av kjemikalier og reflektere over hvordan bruk av kjemikalier påvirker miljøet"
+    },
+    {
+     "kode": "KM5991",
+     "tekst": "gjøre rede for og bruke kvalitetssikringssystemer, dokumentere eget arbeid og håndtere avvik"
+    },
+    {
+     "kode": "KM5990",
+     "tekst": "bruke fagterminologi for å kommunisere med kolleger og andre yrkesutøvere og velge ulike løsninger som bidrar til å redusere miljøavtrykket og sikre en effektiv ressursutnyttelse"
+    },
+    {
+     "kode": "KM5989",
+     "tekst": "vurdere ulike situasjoner der varme arbeider kan forårsake brann og gjennomføre sikkerhetstiltak"
+    },
+    {
+     "kode": "KM5988",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, gjøre rede for pliktene og rettighetene til arbeidsgiveren og arbeidstakeren og reflektere over krav og forventinger som stilles til et likeverdig og inkluderende yrkesfellesskap"
+    },
+    {
+     "kode": "KM6010",
+     "tekst": "utføre grunnleggende førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i Vg3 tak- og membrantekkerfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i Vg3 tak- og membrantekkerfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i Vg3 tak- og membrantekkefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
+   ]
+  }
+ ]
+}

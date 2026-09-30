@@ -1,0 +1,82 @@
+{
+ "kode": "PRM01-02",
+ "tittel": "Læreplan i programmering og modellering X",
+ "spraak": "nno",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV535",
+   "tittel": "Kompetansemål og vurdering programmering og modellering X",
+   "fag": [
+    "PRM1Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM6257",
+     "tekst": "utvikle matematiske modellar gjennom ein strukturert modelleringsprosess"
+    },
+    {
+     "kode": "KM6253",
+     "tekst": "lage og utforske matematiske modellar for dynamiske system"
+    },
+    {
+     "kode": "KM6254",
+     "tekst": "utvikle heilskaplege og strukturerte program"
+    },
+    {
+     "kode": "KM6260",
+     "tekst": "bruke, utleie og lage algoritmar som kan brukast til modellering, og vurdere gyldigheita av disse algoritmane"
+    },
+    {
+     "kode": "KM6259",
+     "tekst": "vurdere og bruke strategiar for testing, feilsøking og feilhandtering"
+    },
+    {
+     "kode": "KM6256",
+     "tekst": "bruke matematiske modellar for å simulere verkelege system og vurdere om modellane er gyldige"
+    },
+    {
+     "kode": "KM6255",
+     "tekst": "utforske, arbeide med og visualisere målte og simulerte data ved hjelp av programmering"
+    },
+    {
+     "kode": "KM6258",
+     "tekst": "planleggje, utføre, drøfte og presentere eit sjølvstendig modelleringsarbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i programmering og modellering X. Elevane viser og utviklar kompetanse i faget når dei bruker fagspråk, program og modellar til å skildre, forklare og drøfte samanhengar i og mellom ulike fenomen i natur eller samfunn. Elevane viser og utviklar òg kompetanse ved å ha ei utforskande tilnærming til faget der dei planlegg, gjennomfører og presenterer eigne modellar og simuleringar. Vidare viser og utviklar elevane kompetanse når dei argumenterer for val av algoritmar og vurderer modellar og simuleringar i lys av eksperimentelle data.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom varierte arbeidsmåtar som opnar for å formulere og utforske problemstillingar i faget. Læraren skal vere i dialog med elevane om utviklinga deira i programmering og modellering X, og elevane skal få høve å prøve seg fram, til å eksperimentere og utforske modellar, algoritmar, programkode og simuleringar. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over eiga fagleg utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å gjere faglege prioriteringar, fordjupe seg i lærestoffet og utvikle sin kompetanse i programmering og modellering X."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter programmering og modellering X. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som inkluderer forståing, refleksjon og kritisk tenking i ulike samanhengar. Læraren skal setje karakter i programmering og modellering X basert på kompetansen eleven har vist gjennom munnleg, skriftleg og praktisk arbeid. Standpunktvurderinga skal vere basert på eleven si forståing av matematisk modellering, modellbasert simulering og fagleg utforsking og problemløysing."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Programmering og modellering X: Elevane skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Programmering og modellering X: Elevane kan trekkjast ut til munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Programmering og modellering X: Privatistane skal opp til munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel til lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

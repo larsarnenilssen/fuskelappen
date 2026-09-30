@@ -1,0 +1,170 @@
+{
+ "kode": "MAT03-02",
+ "tittel": "Læreplan i matematikk for realfag (matematikk R)",
+ "spraak": "nob",
+ "fastsatt": "2020-05-26",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV293",
+   "tittel": "Kompetansemål og vurdering matematikk R1",
+   "fag": [
+    "MAT3Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3113",
+     "tekst": "planlegge og gjennomføre et selvstendig arbeid med reelle datasett knyttet til naturvitenskapelige temaer og forhold, og analysere og presentere funn"
+    },
+    {
+     "kode": "KM3110",
+     "tekst": "forstå begrepene vekstfart, grenseverdi, derivasjon og kontinuitet, og bruke disse for å løse praktiske problemer"
+    },
+    {
+     "kode": "KM3117",
+     "tekst": "bruke ulike strategier for å utforske og bestemme grenseverdier til funksjoner, og utforske og argumentere for anvendelser av grenseverdier"
+    },
+    {
+     "kode": "KM3119",
+     "tekst": "bestemme den deriverte i et punkt geometrisk, algebraisk og ved numeriske metoder, og gi eksempler på funksjoner som ikke er deriverbare i gitte punkter"
+    },
+    {
+     "kode": "KM3111",
+     "tekst": "analysere og tolke ulike funksjoner ved å bruke derivasjon"
+    },
+    {
+     "kode": "KM3114",
+     "tekst": "anvende derivasjon til å analysere og tolke egne matematiske modeller av reelle datasett"
+    },
+    {
+     "kode": "KM3098",
+     "tekst": "utforske og forstå regneregler for potenser og logaritmer, og bruke ulike strategier for å løse eksponentialligninger og logaritmeligninger"
+    },
+    {
+     "kode": "KM3109",
+     "tekst": "modellere og analysere eksponentiell og logistisk vekst i reelle datasett"
+    },
+    {
+     "kode": "KM3118",
+     "tekst": "gjøre rede for og argumentere for om en funksjon er kontinuerlig eller diskontinuerlig i et punkt i et definisjonsområde, og gi eksempler på anvendelser av diskontinuerlige funksjoner"
+    },
+    {
+     "kode": "KM3116",
+     "tekst": "utforske, analysere og derivere ulike funksjoner og deres omvendte funksjoner, og gjøre rede for egenskaper til og sammenhenger mellom slike funksjoner"
+    },
+    {
+     "kode": "KM3115",
+     "tekst": "anvende parameterframstillinger til linjer og bruke parameterframstillinger til å løse naturvitenskapelige problemer"
+    },
+    {
+     "kode": "KM3112",
+     "tekst": "forstå begrepet vektor og regneregler for vektorer i planet, og bruke vektorer til å beregne ulike størrelser i planet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i matematikk R1. Elevene viser og utvikler kompetanse i faget når de bruker matematiske begreper i kommunikasjon, og når de finner, forstår og generaliserer matematiske sammenhenger og formidler disse. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende med modellering ved å gjennomføre og presentere eget arbeid i faget. Videre viser og utvikler elevene kompetanse ved å utforske fagbegreper og ved å resonnere og argumentere for gyldigheten av matematiske utsagn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske matematikk og løse matematiske problemer gjennom å resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å kommunisere egne tanker i matematikk ved bruk av fagbegreper, og om utviklingen deres i utforskende arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å se sammenhenger mellom teoretisk matematikk og praktiske anvendelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter matematikk R1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i matematikk R1 basert på kompetansen eleven har vist, både skriftlig, muntlig og digitalt, ved å bruke matematiske uttrykksformer og fagbegreper, bruke ulike problemløsingsstrategier og argumentere for og kritisk vurdere egne og andres løsninger og modeller."
+   ]
+  },
+  {
+   "kode": "KV294",
+   "tittel": "Kompetansemål og vurdering matematikk R2",
+   "fag": [
+    "MAT3Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3106",
+     "tekst": "utforske egenskaper ved ulike rekker og gjøre rede for praktiske anvendelser av egenskaper ved rekker"
+    },
+    {
+     "kode": "KM3105",
+     "tekst": "utforske rekursive sammenhenger ved å bruke programmering og presentere egne framgangsmåter"
+    },
+    {
+     "kode": "KM3102",
+     "tekst": "gjøre rede for integral som en grenseverdi av en følge av summer, og tolke betydningen av denne grenseverdien i ulike situasjoner"
+    },
+    {
+     "kode": "KM3100",
+     "tekst": "gjøre rede for analysens fundamentalteorem og gjøre rede for konsekvenser av teoremet"
+    },
+    {
+     "kode": "KM3101",
+     "tekst": "utvikle algoritmer for å beregne integraler numerisk, og bruke programmering til å utføre algoritmene"
+    },
+    {
+     "kode": "KM3121",
+     "tekst": "gi eksempler på ulike situasjoner som kan modelleres ved å bruke ulike matematiske funksjoner, og modellere og analysere slike situasjoner ved å bruke reelle datasett"
+    },
+    {
+     "kode": "KM3103",
+     "tekst": "anvende derivasjon og integrasjon til å analysere og tolke egne matematiske modeller av reelle datasett"
+    },
+    {
+     "kode": "KM3120",
+     "tekst": "analysere og tolke ulike funksjoner ved å bruke derivasjon og integrasjon, og anvende integrasjon til å beregne ulike mål av omdreiningslegemer"
+    },
+    {
+     "kode": "KM3107",
+     "tekst": "anvende parameterframstillinger til kurver og bruke parameterframstillinger til å løse naturvitenskapelige problemer inkludert problemer knyttet til fart og akselerasjon"
+    },
+    {
+     "kode": "KM3108",
+     "tekst": "utforske og forstå regneregler for vektorer i rommet, og bruke vektorer til å beregne ulike størrelser i rommet"
+    },
+    {
+     "kode": "KM3104",
+     "tekst": "utforske egenskaper ved radianer og trigonometriske funksjoner og identiteter og anvende disse egenskapene til å løse praktiske problemer"
+    },
+    {
+     "kode": "KM3099",
+     "tekst": "analysere og forstå matematiske bevis, forklare de bærende ideene i et matematisk bevis og utvikle egne bevis"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i matematikk R2. Elevene viser og utvikler kompetanse i faget når de bruker matematiske begreper i kommunikasjon, og når de finner, forstår og generaliserer matematiske sammenhenger og formaliserer disse. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende med reelle datasett ved å planlegge, gjennomføre og presentere eget arbeid i faget. Videre viser og utvikler elevene kompetanse ved å utforske fagbegreper og ved å resonnere og argumentere for gyldigheten av matematiske utsagn og formalisere disse.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske matematikk og løse matematiske problemer gjennom å resonnere, argumentere og modellere. Læreren skal være i dialog med elevene om utviklingen deres når det gjelder å kommunisere egne tanker og resonnementer i matematikk ved bruk av fagbegreper, og om utviklingen deres i selvstendig og utforskende arbeid. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring slik at elevene kan bruke veiledningen for å se sammenhenger mellom teoretisk matematikk og praktiske anvendelser."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter matematikk R2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i matematikk R2 basert på kompetansen eleven har vist, både skriftlig, muntlig og digitalt, ved å bruke matematiske uttrykksformer og fagbegreper i kommunikasjon av matematikk, bruke ulike problemløsingsstrategier og argumentere for og kritisk vurdere egne og andres løsninger og modeller."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk R1: Eleven skal ha én standpunktkarakter.",
+    "Matematikk R2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Matematikk R1: Eleven kan trekkes ut til skriftlig eksamen eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel.",
+    "Matematikk R2: Eleven kan trekkes ut til skriftlig eksamen eller muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig eksamen blir utarbeidet og sensurert lokalt. Muntlig eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Matematikk R1: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel.",
+    "Matematikk R2: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel."
+   ]
+  }
+ ]
+}

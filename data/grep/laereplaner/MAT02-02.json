@@ -1,0 +1,106 @@
+{
+ "kode": "MAT02-02",
+ "tittel": "Læreplan i matematikk X",
+ "spraak": "nob",
+ "fastsatt": "2021-03-24",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV465",
+   "tittel": "Kompetansemål og vurdering matematikk X",
+   "fag": [
+    "MAT2Z02"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM5100",
+     "tekst": "bruke og reflektere over ulike problemløsingsstrategier i møte med matematiske problemer"
+    },
+    {
+     "kode": "KM5101",
+     "tekst": "bruke ulike argumentasjonsteknikker i møte med matematiske påstander og reflektere over hvorfor de er hensiktsmessige og gyldige for å bevise et konkret resultat"
+    },
+    {
+     "kode": "KM5102",
+     "tekst": "utforske definisjonene og antakelsene som ligger til grunn for et matematisk bevis, og gjøre rede for konsekvensene av å endre disse"
+    },
+    {
+     "kode": "KM5103",
+     "tekst": "planlegge, utføre og presentere et selvstendig arbeid knyttet til et selvvalgt matematisk emne"
+    },
+    {
+     "kode": "KM5105",
+     "tekst": "lese og hente ut informasjon fra matematiske tekster om fordelingen av primtall og metoder for å finne primtall, og forstå bevis for at det finnes uendelig mange primtall"
+    },
+    {
+     "kode": "KM5106",
+     "tekst": "utforske og gjøre rede for aritmetikkens fundamentalteorem, og bruke det i argumentasjon"
+    },
+    {
+     "kode": "KM5112",
+     "tekst": "utforske og gjøre rede for kongruenser av hele tall, og beskrive oppdagede regneregler og sammenhenger med et formelt symbolspråk"
+    },
+    {
+     "kode": "KM5107",
+     "tekst": "bruke kongruensregning til å analysere delelighet og løse lineære kongruensligninger"
+    },
+    {
+     "kode": "KM5113",
+     "tekst": "utforske og løse diofantiske ligninger og argumentere for eventuelle løsninger"
+    },
+    {
+     "kode": "KM5108",
+     "tekst": "bruke linjer og sirkler som geometriske steder i geometriske konstruksjoner og resonnementer"
+    },
+    {
+     "kode": "KM5109",
+     "tekst": "utforske og bruke formlikhet og kongruens i geometriske konstruksjoner og resonnementer"
+    },
+    {
+     "kode": "KM5110",
+     "tekst": "utforske og utlede setningen om periferivinkler og bruke den i problemløsing"
+    },
+    {
+     "kode": "KM5111",
+     "tekst": "utføre ulike bevis for Pytagoras’ setning og presentere dem for andre"
+    },
+    {
+     "kode": "KM5104",
+     "tekst": "gjøre rede for og presentere anvendelser av matematisk teori innenfor tallteori og geometri"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i matematikk X. Elevene viser og utvikler kompetanse i faget når de bruker matematiske begreper presist i kommunikasjon, og når de finner, forstår og generaliserer matematiske sammenhenger og formaliserer disse. Elevene viser og utvikler også kompetanse når de jobber utforskende og problemløsende ved å planlegge, utføre og presentere arbeid i faget. Videre viser og utvikler elevene kompetanse ved å forstå fagbegreper og ved å resonnere og argumentere for gyldigheten av matematiske utsagn.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får utforske matematikk og løse matematiske problemer gjennom å resonnere, argumentere og generalisere. Læreren skal være i dialog med elevene om utviklingen deres i å lese matematiske tekster, å kommunisere matematikk ved bruk av fagbegreper og symboler, og å arbeide utforskende sammen med andre. Elevene skal få mulighet til å prøve og feile. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle matematisk tankegang."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter matematikk X. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i matematikk X basert på kompetansen eleven har vist gjennom å utforske og presentere matematiske begreper, temaer og sammenhenger, og gjennom å argumentere for og formalisere matematiske sammenhenger."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Matematikk X: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Matematikk X: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Matematikk X: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

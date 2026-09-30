@@ -1,0 +1,159 @@
+{
+ "kode": "RSP01-03",
+ "tittel": "Læreplan i reiseliv og språk",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV881",
+   "tittel": "Kompetansemål og vurdering reiseliv og språk 1",
+   "fag": [
+    "RSP1Z03"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11510",
+     "tekst": "kartlegge reiselivet på ulike destinasjoner ved hjelp av elementene i det helhetlige reiselivsproduktet"
+    },
+    {
+     "kode": "KM11516",
+     "tekst": "bruke markedsføringsverktøy og markedsdata for å utforske reiselivsprodukter og markeder"
+    },
+    {
+     "kode": "KM11512",
+     "tekst": "bruke norsk eller samisk og engelsk i samhandling med aktører i reiselivsnæringen og reflektere over hvordan tilpasse kommunikasjonen til ulike grupper"
+    },
+    {
+     "kode": "KM11513",
+     "tekst": "beskrive normer, verdier og tradisjoner i norsk kultur, samisk kultur og andre kulturer, og vurdere hvordan dette påvirker kommunikasjon og samhandling"
+    },
+    {
+     "kode": "KM11517",
+     "tekst": "planlegge reiser og presentere informasjon tilrettelagt for ulike målgrupper"
+    },
+    {
+     "kode": "KM11511",
+     "tekst": "beskrive og bruke nasjonale og internasjonale merke- og verneordninger i reiselivsfaglige sammenhenger"
+    },
+    {
+     "kode": "KM11514",
+     "tekst": "drøfte betydningen av samarbeid mellom ulike profesjonelle aktører i reiselivet og reiselivets omgivelser"
+    },
+    {
+     "kode": "KM11515",
+     "tekst": "planlegge og gjennomføre muntlig guiding og lede ulike typer reiselivsaktivitet"
+    },
+    {
+     "kode": "KM11518",
+     "tekst": "drøfte betydningen av reiselivsvirksomheters interne og eksterne arbeidsbetingelser"
+    },
+    {
+     "kode": "KM11519",
+     "tekst": "drøfte reiselivsmedarbeidernes betydning og ansvar i møte og samhandling med lokale, nasjonale og internasjonale gjester"
+    },
+    {
+     "kode": "KM11520",
+     "tekst": "utforske og beskrive prinsipper for bærekraftig reiseliv og hvordan disse kan brukes i utviklingen av opplevelser"
+    },
+    {
+     "kode": "KM11521",
+     "tekst": "utforske og presentere reiselivsprodukter med utgangspunkt i norsk og samisk kultur"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i reiseliv og språk 1. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder, teorier og modeller i kommunikasjon, utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse når de arbeider med reiseliv nasjonalt og globalt og med sammenhenger mellom turistenes individuelle valg, bedriftenes valg og samfunnets krav og forventninger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i reiseliv og språk 1, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter reiseliv og språk 1. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i reiseliv og språk 1 basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder, modeller og teorier til å belyse dem."
+   ]
+  },
+  {
+   "kode": "KV882",
+   "tittel": "Kompetansemål og vurdering reiseliv og språk 2",
+   "fag": [
+    "RSP1Z04"
+   ],
+   "trinn": [
+    "Vg2",
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM11522",
+     "tekst": "reflektere over organisasjonens, ledelsens og personalets rolle i utviklingen av reiselivsprodukter"
+    },
+    {
+     "kode": "KM11523",
+     "tekst": "presentere aktuelle hendelser og analysere mulige konsekvenser disse har for reiselivet"
+    },
+    {
+     "kode": "KM11524",
+     "tekst": "drøfte hvordan verdiskaping i reiselivet påvirker samfunnet på mikro- og makronivå"
+    },
+    {
+     "kode": "KM11525",
+     "tekst": "drøfte hvordan bærekraftprinsipper kan brukes i utvikling av destinasjoner"
+    },
+    {
+     "kode": "KM11526",
+     "tekst": "drøfte hvordan reiselivsvirksomheters ulike interne og eksterne arbeidsbetingelser påvirker deres strategiske valg innenfor markedsføring"
+    },
+    {
+     "kode": "KM11527",
+     "tekst": "drøfte verdien av og bruke kulturkunnskap i ulike reiselivssammenhenger"
+    },
+    {
+     "kode": "KM11528",
+     "tekst": "analysere og vurdere hvordan globalisering, bærekraftig utvikling og andre aktuelle utviklingstrekk påvirker reiselivsnæringen"
+    },
+    {
+     "kode": "KM11529",
+     "tekst": "vurdere destinasjoners konkurransefortrinn"
+    },
+    {
+     "kode": "KM11530",
+     "tekst": "gjøre rede for nasjonale og internasjonale reisemotiver, reisemønstre og reisetrender før og nå og drøfte hvordan disse påvirkes av utviklingstrekk i samfunnet"
+    },
+    {
+     "kode": "KM11531",
+     "tekst": "vurdere hva som kjennetegner innovative og bærekraftige reiselivsprodukter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i reiseliv og språk 2. Elevene viser og utvikler kompetanse i faget når de bruker faglige metoder, teorier og modeller i kommunikasjon, utforskende arbeid med og refleksjon over ulike emner og problemstillinger, muntlig og skriftlig. Videre viser og utvikler elevene kompetanse i faget når de arbeider med reiseliv nasjonalt og globalt og med sammenhenger mellom turistenes individuelle valg, bedriftenes valg og samfunnets krav og forventninger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsmåter og ved å la elevene utforske og finne svar på faglige spørsmål og problemstillinger. Læreren skal være i dialog med elevene om utviklingen deres i reiseliv og språk 2, og elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har ved avslutningen av opplæringen etter reiseliv og språk 2. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i reiseliv og språk 2 basert på kompetansen eleven har vist ved å formidle innsikt i ulike emner, sammenhenger og problemstillinger i faget og ved å bruke faglige metoder, modeller og teorier til å belyse dem."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Reiseliv og språk 1: Eleven skal ha én standpunktkarakter.\nReiseliv og språk 2: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Reiseliv og språk 1: Eleven kan trekkes ut til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt.\nReiseliv og språk 2: Eleven kan trekkes ut til en skriftlig eksamen eller en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentral. Muntlig eksamen blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Reiseliv og språk 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.\nReiseliv og språk 2: Privatisten skal opp til en skriftlig eksamen og en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,116 @@
+{
+ "kode": "FSY04-02",
+ "tittel": "Læreplan i flysystemmekanikerfaget – opplæring i bedrift",
+ "spraak": "nob",
+ "fastsatt": "2022-09-19",
+ "gyldigFra": "2023-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV772",
+   "tittel": "Kompetanse og vurdering flysystemmekanikerfaget - opplæring i bedrift",
+   "fag": [
+    "FSY4Z02"
+   ],
+   "trinn": [
+    "Bedrift"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM10301",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidet på systemene fagmessig og i overensstemmelse med kvalitetssikring, internkontroll og godkjent teknisk dokumentasjon og begrunne valgene som er gjort"
+    },
+    {
+     "kode": "KM10302",
+     "tekst": "utføre arbeidet i henhold til gjeldende nasjonalt og internasjonalt regelverk om kontinuerlig luftdyktighet"
+    },
+    {
+     "kode": "KM10303",
+     "tekst": "arbeide etter ergonomiske prinsipper og gjøre rede for hvordan sikkerhetsarbeid kan forebygge ulykker og skader, og kunne utføre livreddende førstehjelp"
+    },
+    {
+     "kode": "KM10305",
+     "tekst": "vedlikeholde, reparere og modifisere og gjøre rede for hvordan riktig utførelse av arbeidet har betydning for energibruken for et luftfartøy i operasjon"
+    },
+    {
+     "kode": "KM10304",
+     "tekst": "feilsøke, teste og diagnostisere ved hjelp av ulike typer testutstyr og vurdere resultatet opp mot beregnede og forventede verdier, dokumentere resultatet og forklare mulige feilkilder"
+    },
+    {
+     "kode": "KM10306",
+     "tekst": "sammenføye materialer og vurdere ulike arbeidsteknikker i samsvar med gjeldende prosedyrer og standarder og gjøre rede for materialenes egenskaper"
+    },
+    {
+     "kode": "KM10307",
+     "tekst": "velge og bruke verktøy og måleutstyr som er tilpasset arbeidsoppgaven, og gjøre rede for krav til nøyaktighet, vedlikehold og kalibrering av måleutstyret"
+    },
+    {
+     "kode": "KM10308",
+     "tekst": "utføre arbeidet etter gjeldende prosedyrer for å forebygge skader på elektrostatisk sensitivt utstyr og forklare konsekvensene av mangelfull ESD-sikring og jordingsforbindelse"
+    },
+    {
+     "kode": "KM10309",
+     "tekst": "utføre låsing av skruer, bolter, muttere og elektriske plugger etter gjeldende prosedyrer og forklare konsekvenser av mangelfull sikring"
+    },
+    {
+     "kode": "KM10310",
+     "tekst": "reflektere over og ta hensyn til menneskelige faktorers betydning i forbindelse med vedlikeholdsarbeid"
+    },
+    {
+     "kode": "KM10311",
+     "tekst": "anvende vedlikeholdsorganisasjonens egenkontrollsystem og forklare prinsippene i egenkontrollsystemet"
+    },
+    {
+     "kode": "KM10312",
+     "tekst": "inn- og utmontere komponenter, konfigurere og oppdatere aktuell programvare, merke komponenter og vurdere retur"
+    },
+    {
+     "kode": "KM10313",
+     "tekst": "signere for og vurdere eget utført vedlikehold, benytte tilhørende luftdyktighets-dokumentasjon og at det er brukt sporbart materiell"
+    },
+    {
+     "kode": "KM10314",
+     "tekst": "håndtere kjemikalier på en korrekt måte og vurdere faremomenter ved bruk"
+    },
+    {
+     "kode": "KM10315",
+     "tekst": "utføre service, inspisere, feilsøke, justere, reparere, funksjonsteste og preservere på luftfartøyets systemer og komponenter og vurdere resultatene"
+    },
+    {
+     "kode": "KM10316",
+     "tekst": "avdekke og rapportere avvik og farlige forhold og foreslå korrektive tiltak, og reflektere rundt hvordan dette kan øke sikkerheten og bidra til kontinuerlig forbedring"
+    },
+    {
+     "kode": "KM10317",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM10318",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellsbehandling"
+    },
+    {
+     "kode": "KM10319",
+     "tekst": "håndtere avfall etter eget arbeid og kjemikalier på en miljømessig, økonomisk og sikkerhetsmessig riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM10320",
+     "tekst": "dokumentere eget og andres arbeid ved vedlikehold, reparasjon og modifikasjon på luftfartøyets systemer og komponenter og diskutere faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 flysystemmekanikerfaget – opplæring i bedrift når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 flysystemmekanikerfaget – opplæring i bedrift. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått de skriftlige eksamenene i programfagene på vg2 flyfag og vg3 flytekniske fag - opplæring i skole som gjelder for vg3 flysystemmekanikerfaget - opplæring i bedrift. Eksamen utarbeides lokalt og sensureres lokalt.",
+    "Opplæringen i vg3 flysystemmekanikerfaget - opplæring i bedrift skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
+   ]
+  }
+ ]
+}

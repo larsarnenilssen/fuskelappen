@@ -1,0 +1,180 @@
+{
+ "kode": "SBR02-03",
+ "tittel": "Læreplan i Vg2 skogbruk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV420",
+   "tittel": "Kompetansemål og vurdering skogsdrift og maskinlære (279 årstimer)",
+   "fag": [
+    "SBR2Z03"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4460",
+     "tekst": "planlegge og gjennomføre skogsdrift etter skogbruksplan, regelverk og miljøstandarder, og vurdere og dokumentere arbeidet"
+    },
+    {
+     "kode": "KM4484",
+     "tekst": "vurdere risiko ved arbeid i skog og utmark og ivareta egen og andres sikkerhet i tråd med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM4474",
+     "tekst": "vurdere utfordringer ved bratt terreng og i nærheten av privat og offentlig infrastruktur, og utføre arbeid på disse stedene etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4481",
+     "tekst": "anvende skogbrukets maskiner og redskaper på en sikker og effektiv måte, etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4485",
+     "tekst": "vurdere skogbrannfare og gjøre rede for tiltak som reduserer skogbrannrisikoen i skogsdrift"
+    },
+    {
+     "kode": "KM4480",
+     "tekst": "planlegge og utføre hogst med hogstmaskin og skogsmaskinsimulator, utføre kontrollmåling, kalibrering og innstilling av hogstmaskin og håndtere maskinens digitale informasjon"
+    },
+    {
+     "kode": "KM4479",
+     "tekst": "planlegge og gjennomføre framkjøring av skogsvirke til velteplass med lassbærer og skogsmaskinsimulator, og håndtere digital informasjon"
+    },
+    {
+     "kode": "KM4478",
+     "tekst": "utføre virkesutnytting ut fra gjeldende dimensjonskrav, apteringsinstruksjon og målereglement, og gjøre rede for hvordan verdien av tømmeret blir bestemt, og hvordan virkesutnytting påvirker skogbrukets verdikjede"
+    },
+    {
+     "kode": "KM4477",
+     "tekst": "gjennomføre vedlikehold på skogsmaskiner i tråd med leverandørens anbefalinger, utføre enkle reparasjoner og bestille og bytte ut mindre maskindeler"
+    },
+    {
+     "kode": "KM4476",
+     "tekst": "utforske virkemåten til motor, drivverk, hydraulikk og elektriske systemer på skogsmaskiner, og utføre enkel feilsøking"
+    },
+    {
+     "kode": "KM4475",
+     "tekst": "montere, tilpasse og demontere belter og kjettinger på skogsmaskiner, og utføre andre varme arbeider etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM4482",
+     "tekst": "vurdere behovet for og nytten av forhåndsrydding før skogsdrift"
+    },
+    {
+     "kode": "KM4483",
+     "tekst": "drøfte betydningen skogsveinettet har for skogbruk, samfunn og beredskap, og beskrive hvordan man bygger opp og vedlikeholder skogsveier"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget skogsdrift og maskinlære når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget skogsdrift og maskinlære. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget skogsdrift og maskinlære ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget skogsdrift og maskinlære basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV421",
+   "tittel": "Kompetansemål og vurdering skogskjøtsel, klima og næring (198 årstimer)",
+   "fag": [
+    "SBR2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM4473",
+     "tekst": "planlegge og gjennomføre arbeid i skog og utmark etter skogbruksplan, lover og miljøstandarder, og vurdere og dokumentere arbeidet"
+    },
+    {
+     "kode": "KM4463",
+     "tekst": "beskrive verdikjeden i skogbruk og vurdere hvordan skog og skogbaserte råvarer kan bidra til utvikling av bærekraftige produkter og verdiskaping i samfunnet"
+    },
+    {
+     "kode": "KM4462",
+     "tekst": "beskrive karbonkretsløpet og utforske hvordan skogbruk kan påvirke klimaet"
+    },
+    {
+     "kode": "KM4469",
+     "tekst": "vurdere hvilke konsekvenser skogbruksaktivitet har for planter og dyr, deres leveområder og skogen som økosystem, og utføre arbeid i skogen med hensyn til dette"
+    },
+    {
+     "kode": "KM4468",
+     "tekst": "beskrive de vanligste vegetasjonstypene i skog og bruke dette i planleggingen av skjøtseltiltak i skogen"
+    },
+    {
+     "kode": "KM4471",
+     "tekst": "velge foryngelsesmetode, vurdere hjelpetiltak og utføre foryngelse av skog"
+    },
+    {
+     "kode": "KM4467",
+     "tekst": "bruke de vanligste redskapene for tre- og bestandmåling, og bruke utførte målinger til å planlegge skjøtseltiltak i skogen"
+    },
+    {
+     "kode": "KM4470",
+     "tekst": "vurdere behov for, utføre og beskrive nytten av ungskogpleie"
+    },
+    {
+     "kode": "KM4466",
+     "tekst": "bruke og vedlikeholde motorsag, ryddesag og manuelle redskaper i arbeid i skogen"
+    },
+    {
+     "kode": "KM4465",
+     "tekst": "planlegge og utøve skogs- og utmarksnæring med hensyn til bærekraftig utvikling, allmennhet og ulike brukergrupper"
+    },
+    {
+     "kode": "KM4486",
+     "tekst": "beregne kostnader og lønnsomhet av ulike tiltak, og vurdere ulike økonomiske virkemidler i skogbruket"
+    },
+    {
+     "kode": "KM4464",
+     "tekst": "gjøre rede for oppstart og drift av næringsvirksomhet i skog eller utmark, og evaluere lønnsomheten av den"
+    },
+    {
+     "kode": "KM4472",
+     "tekst": "gjøre rede for skogbrukets organisasjoner samt privat og offentlig skog- og miljøforvaltning og gjeldende kontraktsbestemmelser for skogsdrift, og drøfte hvordan skogsertifisering og lovverk styrer forvaltningen"
+    },
+    {
+     "kode": "KM4461",
+     "tekst": "drøfte hvilke krav og forventninger som stilles til et likeverdig og inkluderende yrkesfellesskap, og beskrive hvilke plikter og rettigheter arbeidsgiver og arbeidstaker har i arbeidslivet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i programfaget skogskjøtsel, klima og næring når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker begge programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i programfaget skogskjøtsel, klima og næring. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i programfaget skogskjøtsel, klima og næring ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i programfaget skogskjøtsel, klima og næring basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Skogsdrift og maskinlære: Eleven skal ha én standpunktkarakter.",
+    "Skogskjøtsel, klima og næring: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Skogsdrift og maskinlære og skogskjøtsel, klima og næring: Eleven skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Skogsdrift og maskinlære: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Skogskjøtsel, klima og næring: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Skogsdrift og maskinlære og skogskjøtsel, klima og næring: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

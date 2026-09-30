@@ -1,0 +1,116 @@
+{
+ "kode": "FIL03-02",
+ "tittel": "Læreplan i vg3 filigransølvsmedfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-06-15",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV629",
+   "tittel": "Kompetansemål og vurdering vg3 filigransølvsmedfaget",
+   "fag": [
+    "FIL3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM7463",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere eget arbeid"
+    },
+    {
+     "kode": "KM7471",
+     "tekst": "lage skisser, arbeidstegninger og konstruere ulike arbeider for hånd og ved bruk av digitale verktøy og bruke disse i eget arbeid"
+    },
+    {
+     "kode": "KM7480",
+     "tekst": "utforske og bruke ulike håndverksteknikker i filigran og gjøre rede for hvordan ulike teknikker brukes til å bearbeide ulike metaller"
+    },
+    {
+     "kode": "KM7479",
+     "tekst": "velge og bearbeide sølvtråder i ulike dimensjoner og gehalt til kruser, tvinnede tråder, fiskebeinstråd, kunsttråd og andre spesialtråder"
+    },
+    {
+     "kode": "KM7478",
+     "tekst": "gjøre rede for hva gløding gjør med metaller, og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7477",
+     "tekst": "forberede og gjennomføre store loddinger og velge slaglodd for loddingene med hensyn til den påstemplede gehalten"
+    },
+    {
+     "kode": "KM7469",
+     "tekst": "velge og bruke ulike graveringsstikler til gravering av torn og kanter og stikking av demanter og gjøre rede for hvordan ulike valg påvirker ønsket uttrykk og resultat​"
+    },
+    {
+     "kode": "KM7476",
+     "tekst": "sage, file, kupe og smi og gjøre rede for hvordan presisjon og nøyaktighet påvirker ønsket resultat"
+    },
+    {
+     "kode": "KM7474",
+     "tekst": "velge og utføre ulike overflatebehandlinger av filigransprodukter og gjøre rede for hvordan ulike valg påvirker ønsket resultat og uttrykk"
+    },
+    {
+     "kode": "KM7473",
+     "tekst": "gjøre rede for hvordan ulike materialer, teknikker og behandlinger påvirker kvalitet og holdbarhet, og anvende denne kunnskapen i eget arbeid"
+    },
+    {
+     "kode": "KM7472",
+     "tekst": "vurdere behov for reparasjon, gjenbruk og rekonstruksjon av filigransprodukter"
+    },
+    {
+     "kode": "KM7475",
+     "tekst": "lage, anvende og vedlikeholde verktøy og maskiner til bruk i filigransølvsmedfaget og i henhold til gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7470",
+     "tekst": "undersøke tradisjoner og kulturelt særpreg innenfor filigransarbeid og anvende kunnskap om dette i eget arbeid med produktutvikling, reparasjon og rekonstruksjon av filigransprodukter"
+    },
+    {
+     "kode": "KM7468",
+     "tekst": "gjøre rede for gjeldende lovverk om opphavsrett og markedsføring og følge dette i eget arbeid"
+    },
+    {
+     "kode": "KM7467",
+     "tekst": "beregne tid og pris på egne produkter og tjenester og vurdere sammenhengen mellom materialvalg, produktivitet og lønnsomhet"
+    },
+    {
+     "kode": "KM7482",
+     "tekst": "vurdere miljøeffekter for bruk og valg av materialer og gjøre rede for hvordan kildesortere og håndtere avfall etter gjeldende regelverk"
+    },
+    {
+     "kode": "KM7466",
+     "tekst": "anvende og tilpasse ulike kommunikasjonsformer rettet mot kunder, kolleger og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM7465",
+     "tekst": "finne informasjon for å drøfte faglige spørsmål og problemstillinger og bruke kildene på en måte som lar seg etterprøve"
+    },
+    {
+     "kode": "KM7464",
+     "tekst": "velge og bruke hensiktsmessige ergonomiske arbeidsstillinger i arbeidet på arbeidsplassen og følge gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM7481",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 filigransølvsmedfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 filigransølvsmedfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før svenneprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 filigransølvsmedfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
+   ]
+  }
+ ]
+}

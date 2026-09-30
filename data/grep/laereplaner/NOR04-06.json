@@ -1,0 +1,384 @@
+{
+ "kode": "NOR04-06",
+ "tittel": "Læreplan i norsk tegnspråk",
+ "spraak": "nob",
+ "fastsatt": "2026-05-20",
+ "gyldigFra": "2026-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV1129",
+   "tittel": "Kompetansemål og vurdering Vg2 yrkesfaglige utdanningsprogram",
+   "fag": [
+    "NOR4Z40",
+    "NOR4Z42"
+   ],
+   "trinn": [
+    "Vg1",
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14424",
+     "tekst": "reflektere over innhold, form og formål i ulike tegnspråktekster"
+    },
+    {
+     "kode": "KM14422",
+     "tekst": "analysere og sammenligne tegnspråktekster i ulike sjangre"
+    },
+    {
+     "kode": "KM14421",
+     "tekst": "informere, reflektere og argumentere i tegnspråktekster i ulike sjangre og tilpasse tekstene til mottaker, formål og medium"
+    },
+    {
+     "kode": "KM14431",
+     "tekst": "presentere, gjøre rede for og dokumentere faglige emner og arbeidsprosesser fra eget yrkesfaglig område"
+    },
+    {
+     "kode": "KM14427",
+     "tekst": "avlese andre, bygge opp saklig argumentasjon og bruke retoriske appellformer i faglige diskusjoner"
+    },
+    {
+     "kode": "KM14425",
+     "tekst": "bruke et presist tegnforråd i spontan muntlig faglig samhandling med andre"
+    },
+    {
+     "kode": "KM14432",
+     "tekst": "bruke relevant fagspråk i tekster om faglige emner og arbeidsprosesser fra eget utdanningsprogram"
+    },
+    {
+     "kode": "KM14433",
+     "tekst": "skape tekster i yrkesrelevante sjangre i eget utdanningsprogram"
+    },
+    {
+     "kode": "KM14430",
+     "tekst": "kombinere tegnspråklige og andre visuelle virkemidler og uttrykksformer kreativt i egen tekstskaping"
+    },
+    {
+     "kode": "KM14423",
+     "tekst": "utforske og gjøre rede for ulike nasjonale og internasjonale tegnspråkarenaer"
+    },
+    {
+     "kode": "KM14428",
+     "tekst": "utforske og bruke mulighetene digitale ressurser gir for tegnspråklig samhandling med andre"
+    },
+    {
+     "kode": "KM14426",
+     "tekst": "drøfte tegnspråklig kultur og identitet lokalt og globalt"
+    },
+    {
+     "kode": "KM14429",
+     "tekst": "gjøre rede for utbredelsen av de samiske språkene i Norge og de språklige rettighetene samer har som urfolk"
+    },
+    {
+     "kode": "KM14434",
+     "tekst": "produsere tekster som har tydelig tegnspråklig struktur og er tilpasset sjanger, mottaker og formål"
+    },
+    {
+     "kode": "KM14435",
+     "tekst": "bruke, sitere og vise til kilder på en etterrettelig måte i egne tekster"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk tegnspråk på Vg2 yrkesfaglige utdanningsprogram når de utforsker faglige emner med kritisk bruk av kilder og presenterer disse i muntlig samhandling og i tegnspråklig tekstskaping med hensiktsmessig struktur og sammenheng. Elevene viser og utvikler også kompetanse når de bruker kunnskap om tegnspråket som system til å utforske og sammenligne både tegnspråk og skriftspråk, og når de reflekterer kritisk over egen og andres bruk av virkemidler.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide oppdagende og utforskende både alene og sammen med andre, enten i fysiske eller i digitale klasserom. Læreren og elevene skal være i dialog om elevenes utvikling i faget. Elevene skal få mulighet til å prøve seg fram. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å beskrive hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle kompetansen sin i faget og til å bearbeide egne tekster."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i norsk tegnspråk ved avslutningen av opplæringen etter Vg2 yrkesfaglige utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette én karakter i norsk tegnspråk basert på kompetansen eleven har vist når eleven har kommunisert faglig innhold gjennom muntlig samhandling, og basert på kompetansen eleven har vist i et utvalg tekster i ulike sjangre og for ulike formål i tekstskaping."
+   ]
+  },
+  {
+   "kode": "KV1130",
+   "tittel": "Kompetansemål og vurdering Vg1 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR4Z37"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14437",
+     "tekst": "reflektere over innhold, form og formål i ulike tegnspråktekster"
+    },
+    {
+     "kode": "KM14438",
+     "tekst": "analysere og sammenligne tegnspråktekster i ulike sjangre"
+    },
+    {
+     "kode": "KM14439",
+     "tekst": "informere, reflektere og argumentere i ulike sjangre og tilpasse tekstene til mottaker, formål og medium"
+    },
+    {
+     "kode": "KM14440",
+     "tekst": "bruke, sitere og vise til kilder på en etterrettelig måte i egne tekster"
+    },
+    {
+     "kode": "KM14442",
+     "tekst": "avlese andre, bygge opp saklig argumentasjon og bruke retoriske appellformer i faglige diskusjoner"
+    },
+    {
+     "kode": "KM14443",
+     "tekst": "bruke et presist tegnforråd i muntlig samhandling med andre"
+    },
+    {
+     "kode": "KM14436",
+     "tekst": "produsere fagartikler om tegnspråkfaglige emner"
+    },
+    {
+     "kode": "KM14446",
+     "tekst": "utforske og bruke mulighetene digitale ressurser gir for tegnspråklig samhandling med andre"
+    },
+    {
+     "kode": "KM14441",
+     "tekst": "bruke fagspråk og grammatiske termer til å reflektere kritisk over tegnspråktekster"
+    },
+    {
+     "kode": "KM14444",
+     "tekst": "utforske og gjøre rede for ulike nasjonale og internasjonale tegnspråkarenaer"
+    },
+    {
+     "kode": "KM14447",
+     "tekst": "drøfte tegnspråklig kultur og identitet lokalt og globalt"
+    },
+    {
+     "kode": "KM14445",
+     "tekst": "utforske og sammenligne tegnspråkets situasjon i de nordiske landene, og drøfte hvordan det er å leve som tegnspråklig i dag"
+    },
+    {
+     "kode": "KM14448",
+     "tekst": "gjøre rede for utbredelsen av de samiske språkene i Norge og de språklige rettighetene samer har som urfolk"
+    },
+    {
+     "kode": "KM14449",
+     "tekst": "kombinere tegnspråklige og andre visuelle virkemidler og uttrykksformer kreativt i egen tekstskaping"
+    },
+    {
+     "kode": "KM14450",
+     "tekst": "produsere tekster som har en tydelig tegnspråklig struktur og er tilpasset sjanger, mottaker og formål"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk tegnspråk på Vg1 studieforberedende utdanningsprogram når de utforsker faglige emner med kritisk bruk av kilder og presenterer disse i muntlig samhandling og i tegnspråklig tekstskaping med god struktur og sammenheng. De viser og utvikler også kompetanse når de bruker kunnskap om tegnspråk som system til å utforske og sammenligne både tegnspråk og skriftspråk, og når de reflekterer kritisk over egen og andres bruk av virkemidler.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får arbeide oppdagende og utforskende, alene og sammen med andre i fysiske eller digitale klasserom. Læreren og elevene skal være i dialog om elevenes utvikling i norsk tegnspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å beskrive hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1131",
+   "tittel": "Kompetansemål og vurdering Vg2 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR4Z38"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14451",
+     "tekst": "analysere tegnspråktekster i ulike sjangre og reflektere over hvilke verdisyn tekstene representerer"
+    },
+    {
+     "kode": "KM14452",
+     "tekst": "analysere, vurdere og reflektere over tegnspråklige sakprosatekster fra ulike fagområder"
+    },
+    {
+     "kode": "KM14453",
+     "tekst": "vurdere troverdighet og resonnement i argumentasjon, kildebruk og henvisninger i tegnspråktekster"
+    },
+    {
+     "kode": "KM14455",
+     "tekst": "avlese og bygge på andres innspill ved å stille relevante oppfølgingsspørsmål og tilpasse responsen til kommunikasjonssituasjonen"
+    },
+    {
+     "kode": "KM14454",
+     "tekst": "bruke saklige argumenter og retoriske virkemidler i presentasjoner tilpasset ulike mottakere"
+    },
+    {
+     "kode": "KM14456",
+     "tekst": "bruke teknologi og digitale ressurser på en hensiktsmessig måte i utforming av tegnspråktekster"
+    },
+    {
+     "kode": "KM14459",
+     "tekst": "utforske og reflektere over tegns beskrivende, utpekende og avbildende funksjon og sammenligne med skriftspråk"
+    },
+    {
+     "kode": "KM14457",
+     "tekst": "utforske og bruke ferdigheter i internasjonal tegnkommunikasjon for å kunne oppsøke og kommunisere med tegnspråklige på internasjonale tegnspråkarenaer"
+    },
+    {
+     "kode": "KM14458",
+     "tekst": "utforske og presentere ulike lands nasjonale tegnspråk og reflektere over betydningen tegnspråkets status har for språk, historie, kultur og identitet"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk tegnspråk på Vg2 studieforberedende utdanningsprogram når de analyserer tegnspråktekster i ulike sjangre og fra ulike fagområder. De viser og utvikler også kompetanse når de bruker kunnskap om språket som system til å utvikle egne tekster og til å sammenligne språk, tegnspråk og skriftspråk.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får lage egne problemstillinger, og ved at de får prøve seg fram og arbeide kreativt for å finne svar på disse. Læreren skal legge til rette for at elevene får arbeide alene og sammen med andre, i fysiske eller digitale klasserom. Læreren skal også legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder avlesing av lengre tekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i faget Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å beskrive hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å bearbeide egne tekster, og for å øke kompetansen i muntlig samhandling og tegnspråklig tekstskaping."
+   ],
+   "standpunkt": []
+  },
+  {
+   "kode": "KV1132",
+   "tittel": "Kompetansemål og vurdering Vg3 studieforberedende utdanningsprogram",
+   "fag": [
+    "NOR4Z39"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14466",
+     "tekst": "analysere, tolke og sammenligne ulike tegnspråktekster og reflektere over hvordan konteksten påvirker teksttolkningen"
+    },
+    {
+     "kode": "KM14462",
+     "tekst": "bruke fagspråk i tegnspråktekster og i utforskende samtaler, diskusjoner og presentasjoner om tegnspråkfaglige emner"
+    },
+    {
+     "kode": "KM14463",
+     "tekst": "uttrykke seg presist og nyansert og mestre språklige formkrav i muntlig samhandling og tegnspråklig tekstskaping"
+    },
+    {
+     "kode": "KM14465",
+     "tekst": "produsere fagartikler som gjør rede for og drøfter emner knyttet til tegnspråk og døvekultur"
+    },
+    {
+     "kode": "KM14460",
+     "tekst": "utforske og reflektere over språksituasjonen og språkpolitikken i Norge i dag og gjøre rede for den historiske bakgrunnen"
+    },
+    {
+     "kode": "KM14461",
+     "tekst": "gjøre rede for språklig variasjon og språkendring i Norge i dag og drøfte sammenhenger mellom språk, kultur og identitet"
+    },
+    {
+     "kode": "KM14464",
+     "tekst": "gjøre rede for rettigheter til tolk i høyere utdanning og arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk tegnspråk på Vg3 studieforberedende utdanningsprogram når de analyserer, tolker og sammenligner tekster, og når de utforsker og reflekterer over tekstenes kontekster. De viser og utvikler også kompetanse når de uttrykker seg presist og nyansert på tegnspråk, og når de bruker fagspråk i arbeid med å utforske og forklare dagens språksituasjon. Videre viser og utvikler de kompetanse når de produserer kortere og lengre tekster i ulike sjangre med ulike formål og mottakere, og når de bearbeider tekster etter tilbakemeldinger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får prøve og feile og ved at de får utforske faglige problemstillinger og arbeide kreativt for å finne svar på disse. Læreren skal legge til rette for samarbeid om læring i klasserommet eller i digitale fora. Læreren skal også legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder avlesing av lengre tegnspråktekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk tegnspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å sette ord på hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle ferdigheter i muntlig samhandling og for å bearbeide egne tegnspråktekster."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i norsk tegnspråk ved avslutningen av opplæringen etter Vg3 studieforberedende utdanningsprogram. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i norsk tegnspråk muntlig basert på kompetansen eleven har vist når eleven har kommunisert faglig innhold gjennom muntlig samhandling. Læreren skal sette karakter i tekstskaping basert på kompetansen eleven har vist i et utvalg fagartikler og andre tekster i ulike sjangre."
+   ]
+  },
+  {
+   "kode": "KV1133",
+   "tittel": "Kompetansemål og vurdering Vg3 påbygging til generell studiekompetanse",
+   "fag": [
+    "NOR4Z41"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM14467",
+     "tekst": "analysere tegnspråktekster i ulike sjangre og reflektere over hvilke verdisyn tekstene representerer"
+    },
+    {
+     "kode": "KM14468",
+     "tekst": "analysere, vurdere og reflektere over tegnspråklige sakprosatekster fra ulike fagområder"
+    },
+    {
+     "kode": "KM14469",
+     "tekst": "vurdere troverdighet og resonnement i argumentasjon, kildebruk og henvisninger i tegnspråktekster"
+    },
+    {
+     "kode": "KM14470",
+     "tekst": "avlese og bygge på andres innspill ved å stille relevante oppfølgingsspørsmål og tilpasse responsen til kommunikasjonssituasjonen"
+    },
+    {
+     "kode": "KM14471",
+     "tekst": "bruke saklige argumenter og retoriske virkemidler i presentasjoner tilpasset ulike mottakere"
+    },
+    {
+     "kode": "KM14472",
+     "tekst": "bruke teknologi og digitale ressurser på en hensiktsmessig måte i utforming av tegnspråktekster"
+    },
+    {
+     "kode": "KM14473",
+     "tekst": "utforske og reflektere over tegns beskrivende, utpekende og avbildende funksjon og sammenligne med skriftspråk"
+    },
+    {
+     "kode": "KM14475",
+     "tekst": "utforske og bruke ferdigheter i internasjonal tegnkommunikasjon for å kunne oppsøke og kommunisere med tegnspråklige på internasjonale tegnspråkarenaer"
+    },
+    {
+     "kode": "KM14474",
+     "tekst": "utforske og presentere ulike lands nasjonale tegnspråk og reflektere over betydningen tegnspråkets status har for språk, historie, kultur og identitet"
+    },
+    {
+     "kode": "KM14476",
+     "tekst": "analysere, tolke og sammenligne ulike tegnspråktekster og reflektere over hvordan konteksten påvirker teksttolkningen"
+    },
+    {
+     "kode": "KM14477",
+     "tekst": "bruke fagspråk i tegnspråktekster og i utforskende samtaler, diskusjoner og presentasjoner om tegnspråklige emner"
+    },
+    {
+     "kode": "KM14478",
+     "tekst": "uttrykke seg presist og nyansert og mestre språklige formkrav i muntlig samhandling og tegnspråklig tekstskaping"
+    },
+    {
+     "kode": "KM14479",
+     "tekst": "produsere fagartikler som gjør rede for og drøfter emner knyttet til tegnspråk og døvekultur"
+    },
+    {
+     "kode": "KM14480",
+     "tekst": "utforske og reflektere over språksituasjonen og språkpolitikken i Norge i dag og gjøre rede for den historiske bakgrunnen"
+    },
+    {
+     "kode": "KM14481",
+     "tekst": "gjøre rede for språklig variasjon og språkendring i Norge i dag og drøfte sammenhenger mellom språk, kultur og identitet"
+    },
+    {
+     "kode": "KM14482",
+     "tekst": "gjøre rede for rettigheter til tolk i høyere utdanning og arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse i faget. Elevene viser og utvikler kompetanse i norsk tegnspråk på Vg3 påbygging til generell studiekompetanse når de analyserer, tolker og sammenligner tekster, og når de utforsker og reflekterer over tekstenes kontekster. De viser og utvikler også kompetanse når de uttrykker seg presist og nyansert på tegnspråk, og når de bruker fagspråk i arbeid med å utforske og forklare dagens språksituasjon. Videre viser og utvikler de kompetanse når de produserer kortere og lengre tekster i ulike sjangre for ulike formål og mottakere, og når de bearbeider tekster etter tilbakemeldinger.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst ved at elevene får prøve og feile og ved at de får utforske faglige problemstillinger og arbeide kreativt for å finne svar på disse. Læreren skal legge til rette for samarbeid om læring i klasserommet eller i digitale fora. Læreren skal også legge til rette for at elevene utvikler utholdenhet i større arbeider, enten det gjelder avlesing av lengre tegnspråktekster eller utforskende arbeid med faglige problemstillinger. Læreren og elevene skal være i dialog om utviklingen elevene viser i norsk tegnspråk. Med utgangspunkt i kompetansen elevene viser, skal de få mulighet til å beskrive hva de opplever at de får til, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å videreutvikle ferdigheter i muntlig samhandling og for å bearbeide egne tegnspråktekster."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i norsk tegnspråk ved avslutningen av opplæringen etter Vg3 påbygging til generell studiekompetanse. Læreren skal planlegge og legge til rette for at elevene får vist kompetansen sin på varierte måter som inkluderer forståelse, refleksjon og kritisk tenkning, i ulike sammenhenger. Læreren skal sette karakter i norsk tegnspråk muntlig basert på kompetansen eleven har vist når eleven har kommunisert faglig innhold gjennom muntlig samhandling. Læreren skal sette karakter i tekstskaping basert på kompetansen eleven har vist i et utvalg fagartikler og andre tekster i ulike sjangre."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "10. trinn: Eleven skal ha to standpunktkarakterer, én i muntlig samhandling og én i tekstskaping.",
+    "Vg2 yrkesfaglige utdanningsprogram: Eleven skal ha én standpunktkarakter.",
+    "Vg3 studieforberedende utdanningsprogram: Eleven skal ha to standpunktkarakterer, én i muntlig samhandling og én i tekstskaping.",
+    "Vg3 påbygging til generell studiekompetanse: Eleven skal ha to standpunktkarakterer, én i muntlig samhandling og én i tekstskaping."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "10. trinn: Eleven kan trekkes ut til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til eksamen i muntlig samhandling med forberedelsesdel. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt.",
+    "Vg2 yrkesfaglige utdanningsprogram: Eleven kan trekkes ut til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til eksamen i muntlig samhandling med forberedelsesdel. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt.",
+    "Vg3 studieforberedende utdanningsprogram: Eleven kan trekkes ut til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til eksamen i muntlig samhandling med forberedelsesdel. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt.",
+    "Vg3 påbygging til studieforberedende utdanningsprogram: Eleven kan trekkes ut til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Eleven kan også trekkes ut til eksamen i muntlig samhandling med forberedelsesdel. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "10. trinn: Se gjeldende ordning for grunnskoleopplæring for voksne.",
+    "Vg2 yrkesfaglige utdanningsprogram: Privatisten skal opp til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Privatisten skal også opp til eksamen i muntlig samhandling. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg3 studieforberedende utdanningsprogram: Privatisten skal opp til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Privatisten skal også opp til eksamen i muntlig samhandling. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Privatisten skal også opp til eksamen i muntlig samhandling. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

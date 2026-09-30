@@ -1,0 +1,116 @@
+{
+ "kode": "SLG03-02",
+ "tittel": "Læreplan i vg3 salgsfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-05-04",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV594",
+   "tittel": "Kompetansemål og vurdering vg3 salgsfaget",
+   "fag": [
+    "SLG3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM6819",
+     "tekst": "presentere egen virksomhet med vekt på forretningsplan, og reflektere over hvordan bærekraftperspektivet er ivaretatt"
+    },
+    {
+     "kode": "KM6835",
+     "tekst": "vurdere og anvende bedriftens virkemidler, ressurser og mulighetsrom i markedsføringen og i salget av ulike produkter"
+    },
+    {
+     "kode": "KM6838",
+     "tekst": "presentere en selvvalgt merkevare og velge strategier for markedsføring og salg"
+    },
+    {
+     "kode": "KM6836",
+     "tekst": "utforske betydningen av service, produktkunnskap og forbrukeratferd i kundeveiledningen og bruke dette til å tilpasse service og veilede ulike kundegrupper på ulike salgsplattformer"
+    },
+    {
+     "kode": "KM6834",
+     "tekst": "utforske og presentere hva det innebærer å respektere og forstå ulike kulturer, og ta hensyn til dette i møte med kolleger, kunder og andre samarbeidspartnere"
+    },
+    {
+     "kode": "KM6833",
+     "tekst": "kalkulere priser ut fra lønnsomhetsbetraktninger og vurdere hvordan bedriften kan tilpasse prisstrategier til ulike kundesegmenter"
+    },
+    {
+     "kode": "KM6832",
+     "tekst": "vurdere salgsprosesser og hvordan de ulike elementene bidrar til den helhetlige kundeopplevelsen"
+    },
+    {
+     "kode": "KM6831",
+     "tekst": "bruke bedriftens kundeoppfølgingssystemer og vurdere hvordan disse kan brukes i kampanjer og kundedialog og til å bygge kundelojalitet"
+    },
+    {
+     "kode": "KM6830",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere markedsføringskampanjer"
+    },
+    {
+     "kode": "KM6829",
+     "tekst": "tilpasse kommunikasjonen og utøvelsen av service til ulike arbeidssituasjoner og arbeidsplattformer"
+    },
+    {
+     "kode": "KM6828",
+     "tekst": "følgje retningslinjer, lovverk og bruke lokalt handlingsrom i behandling av reklamasjon og klager"
+    },
+    {
+     "kode": "KM6826",
+     "tekst": "vurdere trender og foreslå tiltak som fremmer lønnsomhet og sikrer bærekraft i ulike deler av en verdikjede"
+    },
+    {
+     "kode": "KM6827",
+     "tekst": "tolke og anvende budsjett og regnskap for å analysere inntekts- og kostnadsfaktorer og foreslå tiltak som kan bidra til lønnsomhet"
+    },
+    {
+     "kode": "KM6825",
+     "tekst": "vurdere og gjennomføre tiltak som kan forebygge, avdekke og redusere svinn"
+    },
+    {
+     "kode": "KM6824",
+     "tekst": "følge rutiner for bestilling, mottak og dokumentkontroll"
+    },
+    {
+     "kode": "KM6823",
+     "tekst": "reflektere over bedriftens etiske retningslinjer og verdier og følge disse i ulike arbeidssituasjoner"
+    },
+    {
+     "kode": "KM6822",
+     "tekst": "arbeide etter regelverk og avtaler som regulerer arbeidsforholdet i faget, og gjøre rede for arbeidsgiverens og arbeidstakerens plikter og rettigheter"
+    },
+    {
+     "kode": "KM6821",
+     "tekst": "reflektere over hvilke krav og forventninger som stilles til et likeverdig og inkluderende arbeidsliv i salgsbransjen"
+    },
+    {
+     "kode": "KM6820",
+     "tekst": "utforske og presentere områder og regelverk innenfor helse, miljø og sikkerhet og gjøre rede for bedriftens tiltak, egen rolle og mulighet til å medvirke"
+    },
+    {
+     "kode": "KM6837",
+     "tekst": "gjøre rede for bedriftens beredskapsplaner og egen rolle i konflikt- og nødssituasjoner, og gjennomføre førstehjelp"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 salgsfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 salgsfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 salgsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
+   ]
+  }
+ ]
+}

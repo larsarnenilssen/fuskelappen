@@ -1,0 +1,116 @@
+{
+ "kode": "ORT03-02",
+ "tittel": "Læreplan i vg3 ortopediteknikkfaget",
+ "spraak": "nob",
+ "fastsatt": "2021-03-18",
+ "gyldigFra": "2022-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV488",
+   "tittel": "Kompetansemål og vurdering ortopediteknikkfaget",
+   "fag": [
+    "ORT3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM5401",
+     "tekst": "planlegge, gjennomføre, vurdere og dokumentere framstilling, vedlikehold og reparasjon av ortopediske hjelpemidler"
+    },
+    {
+     "kode": "KM5416",
+     "tekst": "begrunne og beregne valg av materialer og bruke ulike teknikker til å framstille ortopediske hjelpemidler"
+    },
+    {
+     "kode": "KM5418",
+     "tekst": "velge design og flerdimensjonal form, kvalitet og funksjon ved utforming av ortopediske hjelpemidler"
+    },
+    {
+     "kode": "KM5419",
+     "tekst": "vurdere material- og tidsforbruk, sette opp budsjett og regne ut pris på produkter"
+    },
+    {
+     "kode": "KM5408",
+     "tekst": "utforme og framstille ortopediske hjelpemidler ut fra brukerens estetiske og funksjonelle behov og økonomi, begrunne valg og gjøre rede for konsekvenser"
+    },
+    {
+     "kode": "KM5412",
+     "tekst": "gjøre rede for oppbyggingen og virkemåten til bevegelsesapparatet"
+    },
+    {
+     "kode": "KM5409",
+     "tekst": "begrunne valg av ulike materialer og komponenter ut fra miljømessige og økonomiske forhold"
+    },
+    {
+     "kode": "KM5415",
+     "tekst": "dokumentere, kvalitetssikre og videreutvikle arbeidsmetoder og produkter i tråd med gjeldende regelverk"
+    },
+    {
+     "kode": "KM5417",
+     "tekst": "bruke og vedlikeholde digitale hjelpemidler, utstyr, verktøy og maskiner"
+    },
+    {
+     "kode": "KM5420",
+     "tekst": "bruke digitale ressurser i arbeidet, vurdere kilder kritisk og vise digital dømmekraft"
+    },
+    {
+     "kode": "KM5410",
+     "tekst": "designe og konstruere hjelpemidler ved bruk av teknologi og automatiserte systemer i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM5413",
+     "tekst": "utføre arbeidsoppgavene i tråd med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM5411",
+     "tekst": "kommunisere og samhandle med andre yrkesgrupper og brukere i ulike livssituasjoner og med ulik kulturell bakgrunn"
+    },
+    {
+     "kode": "KM5407",
+     "tekst": "drøfte etiske dilemmaer i ortopediteknikkfaget"
+    },
+    {
+     "kode": "KM5403",
+     "tekst": "bruke ulike strategier for konflikthåndtering"
+    },
+    {
+     "kode": "KM5414",
+     "tekst": "veilede brukere og pasienter i bruk av ortopediske hjelpemidler"
+    },
+    {
+     "kode": "KM5402",
+     "tekst": "drøfte betydningen av tverrfaglig samarbeid og bidra til helhetlige pasientforløp"
+    },
+    {
+     "kode": "KM5406",
+     "tekst": "gjøre rede for refusjonsordninger og saksgang ved søknader"
+    },
+    {
+     "kode": "KM5405",
+     "tekst": "vurdere smitterisiko og gjennomføre nødvendig smittevern og hygienetiltak"
+    },
+    {
+     "kode": "KM5404",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 ortopediteknikkfaget når de bruker kunnskaper ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i faget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i ortopediteknikkfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en skriftlig eksamen laget ut fra læreplanen i lærefaget. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ikke ha forberedelsesdel.",
+    "Opplæringen i vg3 ortopediteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme over fem virkedager."
+   ]
+  }
+ ]
+}

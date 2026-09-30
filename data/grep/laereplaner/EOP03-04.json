@@ -1,0 +1,133 @@
+{
+ "kode": "EOP03-04",
+ "tittel": "Læreplan i vg3 energioperatørfaget",
+ "spraak": "nob",
+ "fastsatt": "2024-12-17",
+ "gyldigFra": "2025-01-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV950",
+   "tittel": "Kompetansemål og vurdering vg3 energioperatørfaget",
+   "fag": [
+    "EOP3Z02"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringen er at lærlingen skal kunne",
+   "maal": [
+    {
+     "kode": "KM12433",
+     "tekst": "risikovurdere, planlegge, gjennomføre og dokumentere arbeidsoppdragene i energioperatørfaget i henhold til gjeldende regelverk, normer og bedriftens internkontrollsystem, og begrunne de valg som er gjort"
+    },
+    {
+     "kode": "KM12435",
+     "tekst": "utføre arbeidet med hensyn til sikkerhet ved arbeid i og drift av elektriske anlegg, utføre livreddende førstehjelp og forklare hvordan sikkerhetsarbeid kan forebygge ulykker og skader"
+    },
+    {
+     "kode": "KM12436",
+     "tekst": "overvåke og ivareta en sikker og stabil driftssituasjon og forklare hvordan forskjellige produksjonsanlegg er bygget opp og fungerer"
+    },
+    {
+     "kode": "KM12434",
+     "tekst": "utføre drift og vedlikeholdsarbeid på elektriske, mekaniske og hydrauliske komponenter, og gjøre rede for materialenes mekaniske og kjemiske egenskaper"
+    },
+    {
+     "kode": "KM12453",
+     "tekst": "gjøre rede for hvordan teknisk dokumentasjon, kretsskjemaer, tegninger og referansesystemer er bygget opp"
+    },
+    {
+     "kode": "KM12437",
+     "tekst": "utføre systematisk feilsøking, testing og diagnostisering og iverksette tiltak for å gjenopprette normal drift"
+    },
+    {
+     "kode": "KM12438",
+     "tekst": "foreta målinger og utføre hydrologiske, meteorologiske og aktuelle matematiske beregninger og vurdere hva som er optimal regulering og miljøvennlig utnyttelse av naturressursene"
+    },
+    {
+     "kode": "KM12439",
+     "tekst": "utføre arbeidet fagmessig, nøyaktig og etter ergonomiske prinsipper og anvende riktig verktøy i overensstemmelse med teknisk dokumentasjon for å ivareta kvalitet og drifts- og personsikkerhet"
+    },
+    {
+     "kode": "KM12440",
+     "tekst": "utføre montering, drift og vedlikehold av alarm-, overvåkings- og datakommunikasjonssystemer i automatiserte anlegg i henhold til gjeldende regelverk for elektronisk kommunikasjon"
+    },
+    {
+     "kode": "KM12441",
+     "tekst": "montere og sette i drift produksjonsanleggets kabler, jording og styringsanlegg og dokumentere komponentvalg og strømføringsevne ved hjelp av tabeller og beregninger"
+    },
+    {
+     "kode": "KM12442",
+     "tekst": "utføre drift og vedlikehold av produksjonsanleggets reservestrømanlegg og andre lagringsmedium og gjøre rede for lokal energiproduksjon"
+    },
+    {
+     "kode": "KM12443",
+     "tekst": "montere og sette i drift effektbrytere, skillebrytere, transformatorer, sensorer og styringssystemene for produksjonsanlegg, og gjøre rede for utstyrets virkemåte"
+    },
+    {
+     "kode": "KM12444",
+     "tekst": "utføre arbeid under spenning på lavspenningsanlegg, følge rutiner for vedlikehold av verktøy og utstyr og gjøre rede for farene ved arbeid under spenning"
+    },
+    {
+     "kode": "KM12454",
+     "tekst": "gjøre rede for metodene og farene ved arbeid under spenning på høyspenningsanlegg"
+    },
+    {
+     "kode": "KM12445",
+     "tekst": "utføre vedlikehold og oppgradering av produksjonsanleggets lav- og høyspenningsanlegg i henhold til beregninger og teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM12446",
+     "tekst": "utføre vedlikehold og oppgradering av produksjonsanleggets styrings- og kontrollanlegg i henhold til beregninger og teknisk dokumentasjon"
+    },
+    {
+     "kode": "KM12447",
+     "tekst": "utføre vedlikehold og oppgradering av produksjonsanleggets kabel- og fordelingsanlegg og dokumentere ledninger, kabler og vern"
+    },
+    {
+     "kode": "KM12448",
+     "tekst": "gjøre rede for faremomenter ved arbeid på elektriske anlegg i eksplosjonsfarlige områder"
+    },
+    {
+     "kode": "KM12449",
+     "tekst": "installere mekaniske komponenter, utføre målinger og vurdere måleresultatene mot beregnede verdier og vurdere kvaliteten på eget arbeid"
+    },
+    {
+     "kode": "KM12450",
+     "tekst": "velge materialer i arbeidet basert på elektriske og mekaniske egenskaper, håndtere avfall etter eget arbeid på en miljømessig og økonomisk riktig måte, drøfte produkters miljøprestasjon og slette sensitiv informasjon ved avhending"
+    },
+    {
+     "kode": "KM12451",
+     "tekst": "diskutere verdien av å oppleve mestring og stolthet over eget arbeid og av å oppleve tilhørighet og trygghet i et arbeidsmiljø uavhengig av kjønn og kultur"
+    },
+    {
+     "kode": "KM12452",
+     "tekst": "reflektere over bedriftsdemokratiets og det organiserte arbeidslivets forutsetninger, verdier og regler og hvordan et regulert arbeidsliv kan bidra til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling"
+    },
+    {
+     "kode": "KM12455",
+     "tekst": "drøfte etiske dilemmaer ved valg av elektriske produkter og løsninger og diskutere bærekraft og konsekvenser av ressursbruk lokalt, regionalt og globalt"
+    },
+    {
+     "kode": "KM12456",
+     "tekst": "dokumentere eget arbeid, vurdere arbeidsmetoder, faglige løsninger, kvalitet og estetikk i arbeidsoppdraget, foreslå forbedringer og reflektere rundt mulige endringer"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Lærlingene viser og utvikler kompetanse i vg3 energioperatørfaget når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i lærefaget.",
+    "Instruktøren skal legge til rette for lærlingmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Instruktøren og lærlingene skal være i dialog om lærlingenes utvikling i vg3 energioperatørfaget. Lærlingene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Instruktøren skal gi veiledning om videre læring og tilpasse opplæringen slik at lærlingene kan bruke veiledningen for å utvikle kompetansen sin i faget."
+   ],
+   "standpunkt": []
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Sluttvurdering",
+   "tekst": [
+    "Før fagprøven må alle ha bestått en skriftlig eksamen laget ut fra læreplanen i faget. Eksamen utarbeides sentralt og sensureres lokalt.",
+    "Før fagprøven må alle som ikke har fulgt normalt opplæringsløp, ha bestått en tverrfaglig skriftlig eksamen laget ut fra læreplanen i programfagene på vg2 elenergi og ekom. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen utarbeides sentralt og sensureres lokalt. Eksamen skal ha forberedelsesdel. Forberedelsestiden skal være 24 timer.",
+    "Opplæringen i vg3 energioperatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst ti virkedager."
+   ]
+  }
+ ]
+}

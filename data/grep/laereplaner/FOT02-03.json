@@ -1,0 +1,186 @@
+{
+ "kode": "FOT02-03",
+ "tittel": "Læreplan i vg2 fotterapi og ortopediteknikk",
+ "spraak": "nob",
+ "fastsatt": "2021-02-11",
+ "gyldigFra": "2021-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV360",
+   "tittel": "Kompetansemål og vurdering helse, funksjon og bevegelse",
+   "fag": [
+    "FOT2Z04"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3804",
+     "tekst": "gjøre rede for kroppens anatomi knyttet til funksjons- og bevegelsesevne"
+    },
+    {
+     "kode": "KM3824",
+     "tekst": "beskrive ulike endringer i kroppen som kan oppstå som følge av skader, deformiteter, sykdommer og lidelser som kan ha innvirkning på den enkeltes aktivitetsnivå"
+    },
+    {
+     "kode": "KM3823",
+     "tekst": "kartlegge og undersøke smerter, helsetilstand og funksjons- og bevegelsesevne"
+    },
+    {
+     "kode": "KM3821",
+     "tekst": "gjøre rede for skorelaterte fotproblemer og gi eksempler på hvordan disse kan påvirke funksjons- og bevegelsesevnen"
+    },
+    {
+     "kode": "KM3822",
+     "tekst": "beskrive manuelle og digitale avtrykksteknikker"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i helse, funksjon og bevegelse når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i helse, funksjon og bevegelse. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i helse, funksjon og bevegelse ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning, og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i helse, funksjon og bevegelse basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV361",
+   "tittel": "Kompetansemål og vurdering kommunikasjon og samhandling",
+   "fag": [
+    "FOT2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3820",
+     "tekst": "kommunisere og samhandle profesjonelt med pasienter, pårørende, kolleger og annet helsepersonell"
+    },
+    {
+     "kode": "KM3819",
+     "tekst": "gjøre rede for tegn og symptomer på ulike psykiske reaksjoner i forbindelse med sykdom eller skade og drøfte profesjonell opptreden i slike situasjoner"
+    },
+    {
+     "kode": "KM3818",
+     "tekst": "demonstrere hvordan veiledning, rådgivning og motivering av pasienter kan gjøres i en behandlingssituasjon"
+    },
+    {
+     "kode": "KM3817",
+     "tekst": "gjøre rede for ulike metoder for konflikthåndtering og vise det i praksis"
+    },
+    {
+     "kode": "KM3816",
+     "tekst": "reflektere over etiske dilemmaer og utfordringer i yrkesutøvelsen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i kommunikasjon og samhandling når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i kommunikasjon og samhandling. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i kommunikasjon og samhandling ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i kommunikasjon og samhandling basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV362",
+   "tittel": "Kompetansemål og vurdering yrkesliv i fotterapi og ortopediteknikk",
+   "fag": [
+    "FOT2Z06"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM3810",
+     "tekst": "planlegge, gjennomføre og dokumentere eget arbeid i henhold til gjeldende regelverk"
+    },
+    {
+     "kode": "KM3807",
+     "tekst": "gjøre rede for kompetanseområdet til fotterapeuter og ortopediteknikere, og gi eksempler på forebyggende tiltak og behandlinger innenfor disse yrkene"
+    },
+    {
+     "kode": "KM3811",
+     "tekst": "forklare og gi eksempler på profesjonell yrkesutøvelse og service innenfor fotterapi og ortopediteknikk"
+    },
+    {
+     "kode": "KM3809",
+     "tekst": "gjøre rede for og reflektere over verdien av tverrfaglig samarbeid i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3808",
+     "tekst": "forklare skoens oppbygning og funksjon"
+    },
+    {
+     "kode": "KM3813",
+     "tekst": "bruke materialer og utstyr og gi eksempler på muligheter digital teknologi kan gi i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3806",
+     "tekst": "identifisere ulike materialer og demonstrere materialenes egenskaper og ulike sammenføyningsmetoder"
+    },
+    {
+     "kode": "KM3812",
+     "tekst": "vise kreativitet og formforståelse i eget arbeid"
+    },
+    {
+     "kode": "KM3825",
+     "tekst": "gjøre rede for smitteverntiltak og gjennomføre tiltak for å opprettholde god hygiene på arbeidsplassen"
+    },
+    {
+     "kode": "KM3826",
+     "tekst": "reflektere over hva det innebærer å ta miljøbevisste valg i yrkesutøvelsen"
+    },
+    {
+     "kode": "KM3815",
+     "tekst": "gjøre rede for kriterier for et godt arbeidsmiljø, hensiktsmessige helse-, miljø- og sikkerhetstiltak og hvordan man kan forebygge risiko i eget arbeidsmiljø"
+    },
+    {
+     "kode": "KM3805",
+     "tekst": "gjøre rede for prinsipper for universell utforming"
+    },
+    {
+     "kode": "KM3814",
+     "tekst": "ivareta egne rettigheter og plikter i arbeidsforholdet og gjøre rede for hvordan partene i arbeidslivet utfører sin samfunnsrolle i den norske modellen"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i yrkesliv i fotterapi og ortopediteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere av eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i yrkesliv i fotterapi og ortopediteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i yrkesliv i fotterapi og ortopediteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan eleven mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i yrkesliv i fotterapi og ortopediteknikk basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Helse, funksjon og bevegelse: Eleven skal ha èn standpunktkarakter.",
+    "Kommunikasjon og samhandling: Eleven skal ha èn standpunktkarakter.",
+    "Yrkesliv i fotterapi og ortopediteknikk: Eleven skal ha èn standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapi og ortopediteknikk: Eleven skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Eksamen skal ha forberedelsesdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Helse, funksjon og bevegelse: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Kommunikasjon og samhandling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Yrkesliv i fotterapi og ortopediteknikk Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapi og ortopediteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

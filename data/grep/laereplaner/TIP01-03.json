@@ -1,0 +1,216 @@
+{
+ "kode": "TIP01-03",
+ "tittel": "Læreplan i vg1 teknologi- og industrifag",
+ "spraak": "nob",
+ "fastsatt": "2020-02-27",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV251",
+   "tittel": "Kompetansemål og vurdering produksjon og tjenester",
+   "fag": [
+    "TIP1Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2721",
+     "tekst": "bruke materialer, teknikker og utstyr i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2730",
+     "tekst": "anvende ergonomisk riktige teknikker og reflektere over sammenhengen mellom folkehelse, effektivitet og samfunnsøkonomi"
+    },
+    {
+     "kode": "KM2729",
+     "tekst": "forklare og anvende egnede håndverktøy, måleverktøy og maskiner for bearbeiding av materialer innenfor produksjon og tolke måleresultater i henhold til arbeidstegninger"
+    },
+    {
+     "kode": "KM2728",
+     "tekst": "planlegge, gjennomføre og dokumentere et praktisk arbeid innenfor produksjon og vedlikehold av maskiner og utstyr i samsvar med aktuelle standarder og prosedyrer"
+    },
+    {
+     "kode": "KM2727",
+     "tekst": "demontere og montere maskinelementer i relevante arbeidsoppgaver"
+    },
+    {
+     "kode": "KM2731",
+     "tekst": "beskrive arbeidsoppgaver innenfor produksjon og tjenester basert på tegningsunderlag og prosedyrer"
+    },
+    {
+     "kode": "KM2725",
+     "tekst": "beskrive de spesifikke egenskapene ved ulike materialer og gjøre rede for hvordan de kan påvirke det ytre miljøet"
+    },
+    {
+     "kode": "KM2726",
+     "tekst": "forklare hvordan kjemiske forbindelser og egenskaper virker inn på bruk, gjenbruk og trygg oppbevaring av råstoffer og materialer"
+    },
+    {
+     "kode": "KM2720",
+     "tekst": "gjennomføre og gjøre rede for termiske, kjemiske og mekaniske sammenføyingsmetoder"
+    },
+    {
+     "kode": "KM2724",
+     "tekst": "anvende sikkerhetsdatablad og andre typer kjemikaliedokumentasjon og utføre risikoanalyse for kjemikalier som brukes på arbeidsplassen"
+    },
+    {
+     "kode": "KM2722",
+     "tekst": "tolke informasjon ved hjelp av digitale hjelpemidler og relevante tabeller for å utføre arbeidsoppgaver innenfor produksjon og tjenesteyting"
+    },
+    {
+     "kode": "KM2704",
+     "tekst": "beskrive arbeidsgangen i en praktisk arbeidsoppgave fra idé til sluttprodukt"
+    },
+    {
+     "kode": "KM2723",
+     "tekst": "beskrive betydningen av bærekraftig utvikling av produkter og tjenester"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produksjon og tjenester når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produksjon og tjenester. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i produksjon og tjenester ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan den mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produksjon og tjenester basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV252",
+   "tittel": "Kompetansemål og vurdering konstruksjons- og styringsteknikk",
+   "fag": [
+    "TIP1Z05"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2714",
+     "tekst": "gjøre rede for og anvende helse-, miljø- og sikkerhetsregelverk og krav som gjelder elektriske, hydrauliske og pneumatiske anlegg"
+    },
+    {
+     "kode": "KM2719",
+     "tekst": "utvikle og beskrive skjemaer med grunnleggende komponenter som brukes i elektriske, hydrauliske og pneumatiske anlegg"
+    },
+    {
+     "kode": "KM2718",
+     "tekst": "utføre og bruke grunnleggende beregninger av relevante størrelser innenfor elektriske, hydrauliske og pneumatiske anlegg"
+    },
+    {
+     "kode": "KM2717",
+     "tekst": "bruke relevante simuleringsprogrammer for dokumentasjon, design og testing av styringssystemer innenfor elektro, hydraulikk, pneumatikk og kjemiske prosesser"
+    },
+    {
+     "kode": "KM2716",
+     "tekst": "koble opp, teste og feilsøke på automatiserte og manuelle styringssystemer basert på elektroniske, hydrauliske og pneumatiske anlegg og maskiner og utføre målinger som er relevante for fagområdene"
+    },
+    {
+     "kode": "KM2713",
+     "tekst": "tolke og forklare sammenhengen mellom utførte målinger og beregnede størrelser innenfor elektro, hydraulikk og pneumatikk"
+    },
+    {
+     "kode": "KM2712",
+     "tekst": "bruke programmer for 2D- og 3D-dataassistert konstruksjon (DAK) og dataassistert produksjon (DAP) til grunnleggende tegning og dokumentasjon"
+    },
+    {
+     "kode": "KM2715",
+     "tekst": "anvende grunnleggende programmering av styringssystemer innenfor robotisering, automatisering og CNC"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i konstruksjons- og styringsteknikk når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i konstruksjons- og styringsteknikk. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har i konstruksjons- og styringsteknikk ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan den mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produksjon og tjenester basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  },
+  {
+   "kode": "KV253",
+   "tittel": "Kompetansemål og vurdering produktivitet og kvalitetsstyring",
+   "fag": [
+    "TIP1Z06"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringen er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2711",
+     "tekst": "gjennomføre og dokumentere arbeid i samsvar med gjeldende regelverk for helse, miljø og sikkerhet"
+    },
+    {
+     "kode": "KM2710",
+     "tekst": "beskrive risikovurderinger og sikker-jobb-analyse og kjenne til nødvendige rapporteringskrav som er relevante for arbeidsoppgaver"
+    },
+    {
+     "kode": "KM2709",
+     "tekst": "anvende og gjøre rede for bruk av aktuelle håndverktøy og diagnoseutstyr ved service, utbedring og reparasjoner på maskiner og utstyr, og tolke måleresultater"
+    },
+    {
+     "kode": "KM2708",
+     "tekst": "bruke metoder og teknikker for overflatebehandling av ulike materialer"
+    },
+    {
+     "kode": "KM2707",
+     "tekst": "anvende og gjøre rede for bearbeiding av relevante materialer"
+    },
+    {
+     "kode": "KM2706",
+     "tekst": "beregne kostnader ved arbeidsoppgaver og utarbeide forslag til effektiviseringstiltak"
+    },
+    {
+     "kode": "KM2705",
+     "tekst": "beskrive og reflektere over logistikken fra innkjøp til gjenvinning av et produkt"
+    },
+    {
+     "kode": "KM2732",
+     "tekst": "kommunisere og formidle budskap tilpasset ulike målgrupper"
+    },
+    {
+     "kode": "KM2733",
+     "tekst": "gjøre rede for og vurdere hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv"
+    }
+   ],
+   "underveis": [
+    "Underveisvurderingen skal bidra til å fremme læring og til å utvikle kompetanse. Elevene viser og utvikler kompetanse i produktivitet og kvalitetsstyring når de bruker kunnskaper, ferdigheter og kritisk tenkning til å løse arbeidsoppgaver i programfaget.",
+    "Læreren skal legge til rette for elevmedvirkning og stimulere til lærelyst gjennom varierte arbeidsoppgaver. Læreren kan gi arbeidsoppgaver som dekker flere eller alle programfagene. Læreren og elevene skal være i dialog om elevenes utvikling i produktivitet og kvalitetsstyring. Elevene skal få mulighet til å uttrykke hva de opplever at de mestrer, og reflektere over egen faglig utvikling. Læreren skal gi veiledning om videre læring og tilpasse opplæringen slik at elevene kan bruke veiledningen for å utvikle kompetansen sin i programfaget."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal være uttrykk for den samlede kompetansen eleven har produktivitet og kvalitetsstyring ved avslutningen av opplæringen i programfaget. Læreren skal planlegge og legge til rette for at eleven får vist kompetansen sin i programfaget på varierte måter. Med utgangspunkt i kompetansemålene skal læreren vurdere hvordan eleven viser forståelse, evne til refleksjon og kritisk tenkning og hvordan den mestrer utfordringer og løser oppgaver i ulike sammenhenger. Læreren skal sette karakter i produktivitet og kvalitetsstyring basert på kompetansen eleven viser ved å planlegge, gjennomføre, vurdere og dokumentere eget faglig arbeid."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Produksjon og tjenester: Eleven skal ha én standpunktkarakter.",
+    "Konstruksjons- og styringsteknikk: Eleven skal ha én standpunktkarakter.",
+    "Produktivitet og kvalitetsstyring: Eleven skal ha én standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elever",
+   "tekst": [
+    "Produksjon og tjenester: Eleven skal ikke opp til eksamen.",
+    "Konstruksjons- og styringsteknikk: Eleven skal ikke opp til eksamen.",
+    "Produktivitet og kvalitetsstyring: Eleven skal ikke opp til eksamen."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatister",
+   "tekst": [
+    "Produksjon og tjenester: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Konstruksjons- og styringsteknikk: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produktivitet og kvalitetsstyring: Privatisten skal opp til én skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.",
+    "Produksjon og tjenester, konstruksjons- og styringsteknikk og produktivitet og kvalitetsstyring: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

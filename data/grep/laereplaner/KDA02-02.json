@@ -1,0 +1,215 @@
+{
+ "kode": "KDA02-02",
+ "tittel": "Læreplan i design og arkitektur",
+ "spraak": "nno",
+ "fastsatt": "2020-04-01",
+ "gyldigFra": "2020-08-01",
+ "kompetansemaalsett": [
+  {
+   "kode": "KV272",
+   "tittel": "Kompetansemål og vurdering design og arkitektur 1",
+   "fag": [
+    "KDA2Z04"
+   ],
+   "trinn": [
+    "Vg1"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2901",
+     "tekst": "bruke ulike metodar innanfor kreativ idéutvikling, individuelt og i grupper, for å gjennomføre og dokumentere ein designprosess"
+    },
+    {
+     "kode": "KM2928",
+     "tekst": "kartleggje behov for, undersøkje og visualisere berekraftige, helsefremjande og funksjonelle løysingar innanfor design og arkitektur"
+    },
+    {
+     "kode": "KM2926",
+     "tekst": "teikne og visualisere rom og form ved hjelp av analoge og digitale verktøy"
+    },
+    {
+     "kode": "KM2927",
+     "tekst": "teikne snitt, plan, fasade og projeksjonsteikning og velje formålstenleg målestokk"
+    },
+    {
+     "kode": "KM2925",
+     "tekst": "forstå og arbeide med korleis menneskekroppen sine mål og proporsjonar dannar utgangspunkt og er grunnleggjande referansar for design og arkitektur"
+    },
+    {
+     "kode": "KM2924",
+     "tekst": "vurdere og utforske kvalitetar ved form, farge, materiale og teknikk, og bruke erfaringane i sitt eige praktiske arbeid"
+    },
+    {
+     "kode": "KM2923",
+     "tekst": "bruke verktøy og verkstader i tråd med gjeldande retningslinjer for helse, miljø og sikkerheit"
+    },
+    {
+     "kode": "KM2922",
+     "tekst": "prøve ut konstruksjoner, form og funksjon gjennom å byggje modellar og prototypar fysisk og digitalt"
+    },
+    {
+     "kode": "KM2921",
+     "tekst": "kjenne til samiske kulturuttrykk og gjere greie for særtrekk ved lokale og samiske form- og byggjetradisjonar"
+    },
+    {
+     "kode": "KM2920",
+     "tekst": "gjere greie for hovudtrekk i handverkstradisjonar og arkitekturhistorie fram til 1600-talet og hente inspirasjon frå dette til eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i design og arkitektur 1. Elevane viser og utviklar kompetanse i faget når dei gjennom kreative prosessar utviklar og visualiserer løysingar. Dei viser og utviklar òg kompetanse når dei bruker fagspråk og dokumenterer, presenterer, vurderer og bruker ulike teknikkar og materiale i sitt eige arbeid. Vidare viser og utviklar dei òg kompetanse når dei arbeider med visuelle verkemiddel, berekraft og praktisk problemløysing i design- og arkitekturoppgåver. Elevane viser og utviklar vidare kompetanse når dei hentar inspirasjon frå historiske, kulturelle og samfunnsaktuelle kjelder.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte praktiske og teoretiske oppgåver som fremjar innovasjon, kreativitet og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i design og arkitektur, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av oppgåver relaterte til design- og arkitekturfeltet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter design og arkitektur 1. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i design og arkitektur 1 basert på kompetansen eleven har vist gjennom varierte prosessar der målet har vore å skape løysingsforslag innanfor design og arkitektur."
+   ]
+  },
+  {
+   "kode": "KV273",
+   "tittel": "Kompetansemål og vurdering design og arkitektur 2",
+   "fag": [
+    "KDA2Z05"
+   ],
+   "trinn": [
+    "Vg2"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2919",
+     "tekst": "bruke designtenking for å utvikle berekraftige løysingar for produkt, tenester eller fysiske miljø"
+    },
+    {
+     "kode": "KM2918",
+     "tekst": "analysere brukargrupper, utarbeide kravsspesifikasjonar og bruke fagomgrep i presentasjon, diskusjon og vurdering av sitt eige arbeid og arbeidet til andre"
+    },
+    {
+     "kode": "KM2917",
+     "tekst": "visualisere idear ved å bruke skisser, aksonometri, perspektiv og digitale verktøy"
+    },
+    {
+     "kode": "KM2916",
+     "tekst": "reflektere over kva verknad og symbolverdi fargar har, og synleggjere korleis fargebruk kan uttrykkje kjensler og markere identitet og tilhøyrsle"
+    },
+    {
+     "kode": "KM2915",
+     "tekst": "eksperimentere med konstruksjonar, samanføyingar og volum gjennom arbeid med modellar og prototypar"
+    },
+    {
+     "kode": "KM2914",
+     "tekst": "arbeide med og ta omsyn til menneskelege behov og ny teknologi i design- og arkitekturløysingar"
+    },
+    {
+     "kode": "KM2913",
+     "tekst": "undersøke og vurdere gjenbruk av materiale og drøfte korleis berekraft og miljø påverkar design og arkitektur"
+    },
+    {
+     "kode": "KM2911",
+     "tekst": "utforske og bruke visuelle verkemiddel i arbeid med grafiske og digitale produkter"
+    },
+    {
+     "kode": "KM2910",
+     "tekst": "utforske og skildre funksjonelle eigenskapar og sanselege opplevingar ved design og arkitektur"
+    },
+    {
+     "kode": "KM2912",
+     "tekst": "gjere greie for stilartar, handverkstradisjonar, byggjeskikk og byplanlegging innan ulike kulturar, mellom 1600- til 1900-talet som inspirasjon til eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i design og arkitektur 2. Elevane viser og utviklar kompetanse i faget når dei gjennom designprosessar utviklar og visualiserer berekraftige og funksjonelle løysingar. Dei viser og utviklar òg kompetanse når dei bruker fagspråk og presenterer, reflekterer over, vurderer og utforskar løysingar, teknikkar og materialbruk. Vidare viser og utviklar dei kompetanse når dei arbeider med og ser samanhengen mellom form, funksjon, berekraft og brukarvennlegheit i design- og arkitekturoppgåver. Dei viser og utviklar òg kompetanse når dei tek i bruk historiske, kulturelle og samfunnsaktuelle kjelder i sitt eige arbeid, og når dei bruker visuelle verkemiddel for å formidle eigne løysingar og idear.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte praktiske og teoretiske oppgåver som fremjar innovasjon, kreativitet og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i design og arkitektur, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av oppgåver relaterte til design- og arkitekturfeltet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter design og arkitektur 2. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i design og arkitektur 2 basert på kompetansen eleven har vist gjennom varierte prosessar der målet har vore å skape berekraftige og funksjonelle løysingsforslag innanfor design og arkitektur"
+   ]
+  },
+  {
+   "kode": "KV274",
+   "tittel": "Kompetansemål og vurdering design og arkitektur 3",
+   "fag": [
+    "KDA2Z06"
+   ],
+   "trinn": [
+    "Vg3"
+   ],
+   "ingress": "Mål for opplæringa er at eleven skal kunne",
+   "maal": [
+    {
+     "kode": "KM2909",
+     "tekst": "utvikle idear for innovative og berekraftige løysningar for framtidsorienterte produkt, tenester eller buformer"
+    },
+    {
+     "kode": "KM2908",
+     "tekst": "planleggje og gjennomføre prosjekt, følgje steg i ein designprosess og ta omsyn til felles utarbeida analysar, kravspesifikasjonar og tidsplan"
+    },
+    {
+     "kode": "KM2907",
+     "tekst": "setje seg inn i behov og lage forslag til løysingar for ei bestemt brukargruppe"
+    },
+    {
+     "kode": "KM2903",
+     "tekst": "vurdere og utarbeide eit visuelt materiale eller produkt retta mot ein oppdragsgivar"
+    },
+    {
+     "kode": "KM2906",
+     "tekst": "utforske eigenskapar og moglegheiter ved form, farge og ulike materiale, og bruke erfaringane i arbeid med modellar og prototypar"
+    },
+    {
+     "kode": "KM2905",
+     "tekst": "vurdere og bruke materiale, utstyr og teknologi for å skape den ønskte forma, funksjonaliteten og uttrykket i eit produkt og grunngi vala"
+    },
+    {
+     "kode": "KM2904",
+     "tekst": "vurdere arkitektoniske løysingar i nærmiljøet og leggje fram forslag til nye løysingar på utforming av fysiske omgivnader"
+    },
+    {
+     "kode": "KM2929",
+     "tekst": "kjenne til prinsipp for universell utforming, og kartleggje og analysere korleis bygg, produkt eller tenester er tilpassa ulike brukargrupper"
+    },
+    {
+     "kode": "KM2902",
+     "tekst": "arbeide med redesign og drøfte korleis kulturarv, miljø, ressursar og forbruk påverkar val og løysingar innan design og arkitektur"
+    },
+    {
+     "kode": "KM2930",
+     "tekst": "gjere greie for hovudtrekk innanfor design og arkitektur frå 1900-talet til vår eiga samtid som referanse i sitt eige arbeid"
+    }
+   ],
+   "underveis": [
+    "Undervegsvurderinga skal bidra til å fremje læring og til å utvikle kompetanse i design og arkitektur 3. Elevane viser og utviklar kompetanse i faget når dei gjennom designprosessar utviklar og visualiserer innovative løysingar. Dei viser og utviklar òg kompetanse når dei bruker fagspråk og presenterer, reflekterer over, vurderer og eksperimenterer med teknikk og materiale. Vidare viser og utviklar dei kompetanse når dei arbeider med og ser samanhengen mellom form, funksjon, berekraft og brukarvennlegheit i design- og arkitekturoppgåver. Dei viser og utviklar òg kompetanse når dei tek i bruk historiske, kulturelle og samfunnsaktuelle referansar i sitt eige arbeid, og når dei utnyttar visuelle verkemiddel på ein formålstenleg måte.",
+    "Læraren skal leggje til rette for elevmedverknad og stimulere til lærelyst gjennom å utforme varierte praktiske og teoretiske oppgåver som fremjar innovasjon, kreativitet og skaparglede. Læraren skal vere i dialog med elevane om utviklinga deira i design og arkitektur, og elevane skal få høve til å prøve seg fram. Med utgangspunkt i kompetansen elevane viser, skal dei få høve til å setje ord på kva dei opplever at dei får til, og reflektere over si eiga faglege utvikling. Læraren skal gi rettleiing om vidare læring og tilpasse opplæringa slik at elevane kan bruke rettleiinga for å utvikle kompetanse innanfor eit breitt spekter av oppgåver relaterte til design- og arkitekturfeltet."
+   ],
+   "standpunkt": [
+    "Standpunktkarakteren skal vere uttrykk for den samla kompetansen eleven har ved avslutninga av opplæringa etter design og arkitektur 3. Læraren skal planleggje og leggje til rette for at eleven får vist kompetansen sin på varierte måtar som omfattar forståing, refleksjon og kritisk tenking, i ulike samanhengar. Læraren skal setje karakter i design og arkitektur 3 basert på kompetansen eleven har vist gjennom varierte prosessar der målet har vore å skape innovative løysingsforslag innanfor design og arkitektur."
+   ]
+  }
+ ],
+ "vurderingsordning": [
+  {
+   "overskrift": "Standpunktvurdering",
+   "tekst": [
+    "Design og arkitektur 1: Eleven skal ha éin standpunktkarakter.",
+    "Design og arkitektur 2: Eleven skal ha éin standpunktkarakter.",
+    "Design og arkitektur 3: Eleven skal ha éin standpunktkarakter."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for elevar",
+   "tekst": [
+    "Design og arkitektur 1: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.",
+    "Design og arkitektur 2: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel.",
+    "Design og arkitektur 3: Eleven kan bli trekt ut til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Eksamen skal ha førebuingsdel."
+   ]
+  },
+  {
+   "overskrift": "Eksamen for privatistar",
+   "tekst": [
+    "Design og arkitektur 1: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Design og arkitektur 2: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.",
+    "Design og arkitektur 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
+   ]
+  }
+ ]
+}

@@ -10,13 +10,14 @@ export function Favorittliste({ kompakt = false }: { kompakt?: boolean }) {
   const { favoritter } = useTilstand();
   const [kjente, settKjente] = useState<Map<string, Favorittbar> | null>(null);
 
+  const ider = favoritter.join('|');
   useEffect(() => {
     let aktiv = true;
-    void samleFavorittbare().then((m) => aktiv && settKjente(m));
+    void samleFavorittbare(undefined, ider.split('|')).then((m) => aktiv && settKjente(m));
     return () => {
       aktiv = false;
     };
-  }, []);
+  }, [ider]);
 
   if (!kjente) return <p class="dempet">{t('app.lasterInn')}</p>;
 
