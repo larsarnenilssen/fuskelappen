@@ -7,6 +7,8 @@ import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/L
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Bryter, Fagfelt, Minuttvelger, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
+import { Belopsstolpe } from '../komponenter/Grafikk.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 export default function Vikar() {
@@ -35,8 +37,50 @@ export default function Vikar() {
   const time = prov(() => (s.type === 'timevikar' && felles && grunnlag ? beregnTimevikar(hent, { ...felles, lonn: grunnlag, over60: s.over60 }) : null));
   const feil = fast.feil ?? time.feil;
 
+  const hoved = fast.resultat
+    ? { tittel: t('arbeidstid.resultat.endring'), verdi: fast.resultat.endring.verdi, enhet: 'prosent' as const }
+    : time.resultat
+      ? { tittel: t('arbeidstid.resultat.utbetaltLonn'), verdi: time.resultat.lonn.verdi, enhet: 'kroner' as const }
+      : null;
+
   return (
-    <Kalkulatorside id="vikar">
+    <Kalkulatorside
+      id="vikar"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {fast.resultat && (
+            <>
+              <Advarsler advarsler={fast.resultat.advarsler} />
+              <Utregningskort tittel={t('arbeidstid.resultat.endring')} resultat={fast.resultat.endring} trinn={fast.resultat.trinn} />
+            </>
+          )}
+          {time.resultat && (
+            <>
+              <Advarsler advarsler={time.resultat.advarsler} />
+              <Utregningskort tittel={t('arbeidstid.resultat.utbetaltLonn')} resultat={time.resultat.lonn} trinn={time.resultat.trinn} sammendrag={false}>
+                <Belopsstolpe
+                  deler={[
+                    { navn: t('arbeidstid.resultat.lonn'), verdi: time.resultat.lonn.verdi },
+                    { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: time.resultat.feriepenger.verdi },
+                  ]}
+                />
+                <Oversiktsliste
+                  rader={[
+                    { navn: t('arbeidstid.resultat.undervisningstimer'), verdi: medEnhet(t, time.resultat.vikartimer.verdi, 'timer') },
+                    { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, time.resultat.kalkulertTid.verdi, 'timer') },
+                    { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, time.resultat.timelonn.verdi, 'kroner_per_time') },
+                    { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, time.resultat.feriepenger.verdi, 'kroner') },
+                  ]}
+                />
+              </Utregningskort>
+            </>
+          )}
+          {!fast.resultat && !time.resultat && !feil && <ManglerInndata />}
+          <Varianter id="vikar" skjema={s} resultat={hoved} onHent={sett} />
+        </>
+      }
+    >
       <Bryter
         legend={t('arbeidstid.vikar.type')}
         verdi={s.type}
@@ -66,29 +110,6 @@ export default function Vikar() {
         </div>
       )}
 
-      {feil && <Feilmelding feil={feil} />}
-      {fast.resultat && (
-        <>
-          <Advarsler advarsler={fast.resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.endring')} resultat={fast.resultat.endring} trinn={fast.resultat.trinn} />
-        </>
-      )}
-      {time.resultat && (
-        <>
-          <Advarsler advarsler={time.resultat.advarsler} />
-          <Utregningskort tittel={t('arbeidstid.resultat.utbetaltLonn')} resultat={time.resultat.lonn} trinn={time.resultat.trinn} sammendrag={false}>
-            <Oversiktsliste
-              rader={[
-                { navn: t('arbeidstid.resultat.undervisningstimer'), verdi: medEnhet(t, time.resultat.vikartimer.verdi, 'timer') },
-                { navn: t('arbeidstid.resultat.kalkulertTid'), verdi: medEnhet(t, time.resultat.kalkulertTid.verdi, 'timer') },
-                { navn: t('arbeidstid.resultat.timelonn'), verdi: medEnhet(t, time.resultat.timelonn.verdi, 'kroner_per_time') },
-                { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, time.resultat.feriepenger.verdi, 'kroner') },
-              ]}
-            />
-          </Utregningskort>
-        </>
-      )}
-      {!fast.resultat && !time.resultat && !feil && <ManglerInndata />}
     </Kalkulatorside>
   );
 }

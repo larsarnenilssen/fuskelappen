@@ -1,6 +1,6 @@
 // Tallfelt som godtar desimalkomma og viser feil på en tilgjengelig måte. Hjelpeteksten står under feltet,
 // slik at felt side om side (.feltrad) står på linje.
-import { useId, useState } from 'preact/hooks';
+import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import { formaterTall } from '../core/i18n/tekst.ts';
 import { tolkTall } from '../core/tall.ts';
@@ -25,6 +25,17 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
   const id = useId();
   const [tekst, settTekst] = useState(verdi === null ? '' : formaterTall(verdi, 4).replace(/\s/g, ''));
   const [feil, settFeil] = useState<string | null>(null);
+
+  // Verdien kan endres utenfra, f.eks. når årstimer fylles inn fra et valgt fag. Da vises den nye verdien,
+  // men ikke mens brukeren skriver et tall som betyr det samme (f.eks. «12,»), eller et ugyldig tall.
+  useEffect(() => {
+    const tolket = tolkTall(tekst, { ...(min !== undefined ? { min } : {}), ...(maks !== undefined ? { maks } : {}) });
+    const vist = tolket.ok ? tolket.verdi : null;
+    if (vist !== verdi && !(verdi === null && !tolket.ok)) {
+      settTekst(verdi === null ? '' : formaterTall(verdi, 4).replace(/\s/g, ''));
+      settFeil(null);
+    }
+  }, [verdi]);
 
   const vedEndring = (ny: string) => {
     settTekst(ny);

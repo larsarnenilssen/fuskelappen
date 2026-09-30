@@ -41,7 +41,7 @@ function stegFra(t: T, trinn: Trinn): Utregningssteg {
   const tall: Record<string, string> = {};
   for (const [k, o] of Object.entries(trinn.operander)) {
     navn[k] = t(`arbeidstid.storrelser.${o.navn}` as Tekstnokkel);
-    tall[k] = operandTall(o, trinn.id === 'sum_beskjeftigelse');
+    tall[k] = operandTall(o, trinn.id === 'sum_beskjeftigelse' || trinn.id === 'sum_funksjon');
   }
   // Hver kilde (med punkt og nivå) vises én gang per trinn. Rader i tabeller (f.eks. vedlegg 1) samles på kilden.
   const kilder = new Map<string, NonNullable<Utregningssteg['kilder']>[number]>();

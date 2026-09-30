@@ -4,6 +4,7 @@ export * from './beskjeftigelse.ts';
 export * from './fordeling.ts';
 export * from './overtid.ts';
 export * from './planfestet.ts';
+export * from './stillingsplan.ts';
 export * from './typer.ts';
 export * from './verdier.ts';
 export * from './vikar.ts';

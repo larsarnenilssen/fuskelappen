@@ -5,12 +5,16 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { type AdvarselId, type Arsrammerad, type Hent, lesArsrammer } from '../beregning/index.ts';
+import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsrammer, lesArstimer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
 
-export type KalkulatorId = 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
+export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
 
-export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: ComponentChildren }) {
+/**
+ * Kalkulatorsiden: skjemaet (children) og resultatet. På bred skjerm står resultatet i en egen kolonne til høyre,
+ * så det er synlig mens skjemaet fylles ut. På mobil kommer resultatet under skjemaet.
+ */
+export function Kalkulatorside({ id, children, resultat }: { id: KalkulatorId; children: ComponentChildren; resultat?: ComponentChildren }) {
   const { t } = useTekst();
   const tittel = t(`arbeidstid.kalkulatorer.${id}.tittel` as Tekstnokkel);
   return (
@@ -22,7 +26,10 @@ export function Kalkulatorside({ id, children }: { id: KalkulatorId; children: C
         </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
       </div>
-      {children}
+      <div class="kalkulator-flate">
+        <div class="kalkulator-skjema">{children}</div>
+        {resultat && <div class="kalkulator-resultat">{resultat}</div>}
+      </div>
       <Metode id={`metode-${id}`} />
     </div>
   );
@@ -63,6 +70,17 @@ export function useArsrammer(hent: Hent): Arsrammerad[] {
       return lesArsrammer(hent('sfs2213.arsrammer'));
     } catch {
       return [];
+    }
+  }, [hent]);
+}
+
+/** Kjente årstimer per rad i vedlegg 1 (fra Grep), eller tom tabell hvis de mangler for perioden. */
+export function useArstimer(hent: Hent): ReadonlyMap<number, Arstimerad> {
+  return useMemo(() => {
+    try {
+      return lesArstimer(hent);
+    } catch {
+      return new Map<number, Arstimerad>();
     }
   }, [hent]);
 }

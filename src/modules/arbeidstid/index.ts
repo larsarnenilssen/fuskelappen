@@ -1,10 +1,11 @@
-// Arbeidstid etter SFS 2213: kalkulatorer for beskjeftigelse, periode, vikartimer, planfestet tid,
+// Arbeidstid etter SFS 2213: stillingsplan og kalkulatorer for beskjeftigelse, periode, vikartimer, planfestet tid,
 // overtid og fordeling av arbeidstiden. Verdiene leses fra rules/ via hentVerdi().
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { kalkulatorer } from './kalkulatorer.ts';
 
 const sider = {
+  stillingsplan: () => import('./sider/Stillingsplan.tsx'),
   beskjeftigelse: () => import('./sider/Beskjeftigelse.tsx'),
   periode: () => import('./sider/Periode.tsx'),
   vikar: () => import('./sider/Vikar.tsx'),

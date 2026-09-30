@@ -1162,6 +1162,12 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
+.fagvalg-kode {
+  flex-basis: 100%;
+  order: 1;
+  font-size: var(--str-s);
+}
+
 .fagvalg-ramme {
   font-size: var(--str-s);
   color: var(--farge-tekst-dempet);
@@ -1635,4 +1641,162 @@ p.fagkort-tittel {
   margin: 0;
   font-variant-numeric: tabular-nums;
   text-align: right;
+}
+
+/* ---------- Stillingsplan ---------- */
+
+.funksjonsrad .tekstfelt {
+  flex: 1 1 8rem;
+  min-width: 0;
+}
+
+.tekstfelt {
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-tekst-dempet);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font-size: max(16px, 1rem);
+}
+
+.stillingsplan-differanse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+  margin: 0 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  border: var(--strek) solid var(--farge-ok);
+  background: var(--farge-ok-flate);
+  font-weight: 700;
+}
+
+.stillingsplan-differanse.undertid {
+  border-color: var(--farge-advarsel);
+  background: var(--farge-advarsel-flate);
+}
+
+.stillingsplan-differanse.overtid {
+  border-color: var(--farge-feil);
+  background: var(--farge-feil-flate);
+}
+
+/* Et lite valg i resultatkortet. Etiketten står over feltet: en nedtrekksliste i et fleksibelt oppsett
+   regnes som bredere enn den er i WebKit og gir horisontal overflyt. */
+.felt.felt-liten {
+  margin-bottom: var(--rom-2);
+}
+
+.felt.felt-liten label {
+  font-size: var(--str-s);
+}
+
+.lenke-pil {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  font-weight: 600;
+}
+
+/* Hovedkalkulatoren i modulen: stort kort øverst på oversikten. */
+.hovedkort {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-5);
+  padding: var(--rom-4);
+  border: 2px solid var(--farge-merke);
+  border-radius: var(--radius-l);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.hovedkort-topp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  color: var(--farge-merke);
+}
+
+.hovedkort-tittel {
+  flex: 1;
+  font-size: var(--str-xl);
+  font-weight: 700;
+}
+
+.hovedkort-tekst {
+  color: var(--farge-tekst-dempet);
+}
+
+.hovedkort-figur {
+  max-width: 20rem;
+}
+
+/* ---------- Kalkulatorer på bred skjerm: skjema til venstre, resultat til høyre ----------
+   Resultatkolonnen er ikke et eget scrollområde (ett scrollområde på siden). Resultatlinjen nederst viser svaret. */
+
+@media (min-width: 64rem) {
+  main:has(.kalkulator) {
+    max-width: 72rem;
+  }
+
+  .kalkulator-flate {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--rom-5);
+  }
+}
+
+/* ---------- Lagrede varianter ---------- */
+
+.varianter {
+  margin: 0 0 var(--rom-4);
+}
+
+.varianter .liten-overskrift {
+  margin: 0;
+}
+
+.variantliste {
+  list-style: none;
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+}
+
+.variantliste li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0 var(--rom-3);
+  padding: var(--rom-1) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.variant-navn {
+  min-width: 0;
+  font-weight: 600;
+}
+
+.variant-verdi {
+  font-weight: 700;
+  text-align: right;
+}
+
+/* Tidspunkt og differanse står i liten skrift under navnet og verdien. */
+.variant-under {
+  display: block;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+}
+
+.variant-knapper {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
 }

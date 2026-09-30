@@ -3,12 +3,13 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, type FordelingsdelId, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
+import { beregnFordeling, type FordelingsdelId, funksjonsprosent, type Gruppe, type Reduksjon, type Undervisningsgrunnlag } from '../beregning/index.ts';
 import { Fordelingsdiagram, Fordelingstabell } from '../komponenter/Fordelingsdiagram.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Bryter, Grupper, Nivavelger, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
 import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
+import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 import { Reduksjonsfelt, tilReduksjon } from './Planfestet.tsx';
 
@@ -29,6 +30,7 @@ export default function Fordeling() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
+  const arstimer = useArstimer(hent);
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const [s, sett] = useSkjematilstand(
     'fordeling',
@@ -48,18 +50,49 @@ export default function Fordeling() {
   const inndata = s.grupper.map((g) => tilGruppe(g, rader, false));
   const utfylte = inndata.filter((g): g is Gruppe => g !== null);
   const reduksjon = tilReduksjon(s.type, s.funksjon) ?? { type: 'prosent', prosent: 0 };
+  // Funksjonen i prosent av full stilling, for å se om det er undervisning igjen i stillingen.
+  const funksjon = prov(() => funksjonsprosent(hent, reduksjon).prosent.verdi).resultat ?? 0;
+  const arsramme = s.t60 !== null && s.t45 !== null ? ({ type: 'niva', t60: s.t60, t45: s.t45 } as const) : null;
+  // En stilling med bare funksjoner (uten fag, eller med stillingsprosent lik funksjonene) kan også regnes ut.
   const grunnlag: Undervisningsgrunnlag | null =
     s.grunnlag === 'fag'
-      ? utfylte.length > 0
+      ? utfylte.length > 0 || funksjon > 0
         ? { type: 'fag', grupper: utfylte }
         : null
-      : s.stilling !== null && s.t60 !== null && s.t45 !== null
-        ? { type: 'stilling', prosent: s.stilling, arsramme: { type: 'niva', t60: s.t60, t45: s.t45 } }
+      : s.stilling !== null && s.stilling > 0 && (arsramme !== null || s.stilling <= funksjon)
+        ? { type: 'stilling', prosent: s.stilling, arsramme }
         : null;
   const { resultat, feil } = prov(() => (grunnlag ? beregnFordeling(hent, { undervisning: grunnlag, funksjon: reduksjon, moterPerUke: s.moter ?? 0 }) : null));
 
   return (
-    <Kalkulatorside id="fordeling">
+    <Kalkulatorside
+      id="fordeling"
+      resultat={
+        <>
+          {feil && <Feilmelding feil={feil} />}
+          {resultat ? (
+            <>
+              <Advarsler advarsler={resultat.advarsler} />
+              <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
+              <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
+              <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
+              <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
+            </>
+          ) : (
+            !feil && <ManglerInndata />
+          )}
+          <Varianter
+            id="fordeling"
+            skjema={s}
+            resultat={resultat ? { tittel: t('arbeidstid.resultat.stilling'), verdi: resultat.stilling.verdi, enhet: 'prosent' } : null}
+            onHent={(v) => {
+              reserverIder(v.grupper);
+              sett(v);
+            }}
+          />
+        </>
+      }
+    >
       <p class="merknad merknad-liten">{t('arbeidstid.fordeling.illustrasjon')}</p>
       <Bryter
         legend={t('arbeidstid.fordeling.grunnlag')}
@@ -71,7 +104,7 @@ export default function Fordeling() {
         onEndring={(grunnlag) => sett({ ...s, grunnlag })}
       />
       {s.grunnlag === 'fag' ? (
-        <Grupper key="fag" grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
+        <Grupper arstimer={arstimer} key="fag" grupper={s.grupper} rader={rader} indeks={indeks} periode={false} standardUker={uker} onEndring={(g) => sett({ ...s, grupper: g })} />
       ) : (
         <div class="fagkort" key="stilling">
           <Tallfelt
@@ -90,18 +123,6 @@ export default function Fordeling() {
         <Reduksjonsfelt legend={t('arbeidstid.fordeling.funksjon')} type={s.type} verdi={s.funksjon} onEndring={(type, funksjon) => sett({ ...s, type, funksjon })} />
         <Tallfelt etikett={t('arbeidstid.fordeling.moter')} hjelpetekst={t('arbeidstid.fordeling.moterHjelp')} verdi={s.moter} min={0} maks={37.5} onEndring={(moter) => sett({ ...s, moter })} />
       </div>
-      {feil && <Feilmelding feil={feil} />}
-      {resultat ? (
-        <>
-          <Advarsler advarsler={resultat.advarsler} />
-          <Fordelingsdiagram deler={resultat.deler} totalt={resultat.arsverk.verdi} />
-          <Fordelingstabell deler={resultat.deler} totalt={resultat.arsverk.verdi} uker={resultat.arbeidsaarUker.verdi} />
-          <p class="liten dempet">{t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(resultat.arbeidsaarUker.verdi, 1) })}</p>
-          <Utregningskort tittel={t('arbeidstid.resultat.stilling')} resultat={resultat.stilling} trinn={resultat.trinn} sammendrag={false} fast={false} />
-        </>
-      ) : (
-        !feil && <ManglerInndata />
-      )}
       <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
       {deler.map((d) => (
         <BrukAvDel key={d} id={d} />

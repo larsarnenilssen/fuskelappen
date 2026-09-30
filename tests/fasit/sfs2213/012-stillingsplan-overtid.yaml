@@ -1,0 +1,22 @@
+id: sfs2213-012
+beskrivelse: "Stillingsplan, 100 % stilling: fire grupper norsk Vg1 studieforberedende à 113 årstimer og funksjon 12 %."
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: stillingsplan
+input:
+  stilling: 100
+  grupper:
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+    - { arsrammer: [{ fag: Norsk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 113 }
+  funksjoner: [{ prosent: 12 }]
+forventet:
+  undervisning: 91.13
+  beskjeftigelse: 103.13
+  differanse: 3.13
+  timer_fag_1: 15.52
+begrunnelse: >-
+  Undervisning = 4 × 113 ÷ 496 × 100 = 91,13 %. Samlet beskjeftigelse = 91,13 + 12 = 103,13 %. Differanse =
+  103,13 − 100 = 3,13 %, altså teknisk overtid. I årsrammetimer i norsk: 3,13 × 496 ÷ 100 = 15,52 (uavrundet:
+  452 + 59,52 − 496). Årsramme 496 for Norsk*, Stud.spes Vg1 (SFS 2213 vedlegg 1). Eksempel E2, kontrollert av
+  eier.

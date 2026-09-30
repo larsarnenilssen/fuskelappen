@@ -85,7 +85,15 @@ export type Storrelse =
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'overtidstillegg'
-  | 'overtidsbetaling';
+  | 'overtidsbetaling'
+  | 'undervisningsprosent'
+  | 'funksjon'
+  | 'funksjoner'
+  | 'samlet_beskjeftigelse'
+  | 'teknisk_differanse'
+  | 'teknisk_timer'
+  | 'motetid_i_funksjon'
+  | 'funksjonstid_etter_moter';
 
 export interface Operand {
   navn: Storrelse;
@@ -144,7 +152,14 @@ export type TrinnId =
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'kalkulert_tid_overtid'
-  | 'overtidsbetaling';
+  | 'overtidsbetaling'
+  | 'sum_funksjon'
+  | 'samlet_beskjeftigelse'
+  | 'teknisk_differanse'
+  | 'teknisk_timer'
+  | 'undervisning_fra_stilling'
+  | 'motetid_i_funksjon'
+  | 'funksjonstid_etter_moter';
 
 export interface Trinn {
   id: TrinnId;
@@ -155,7 +170,7 @@ export interface Trinn {
   gruppe?: number;
 }
 
-export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall';
+export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'funksjon_over_stilling';
 
 export interface Utregning {
   trinn: Trinn[];

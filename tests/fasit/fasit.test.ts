@@ -12,7 +12,9 @@ import {
   beregnPeriodebeskjeftigelse,
   beregnPlanfestet,
   beregnTimevikar,
+  beregnStillingsplan,
   beregnVikarFast,
+  differanseIHvertFag,
   finnRad,
   type Gruppe,
   type Hent,
@@ -61,6 +63,8 @@ interface Fasitinput {
   minutter?: number;
   lonn?: { stillingsgruppe?: string; ansiennitet?: number; arslonn?: number };
   over60?: boolean;
+  stilling?: number;
+  funksjoner?: { navn?: string; prosent: number }[];
 }
 
 function krev<T>(verdi: T | undefined, navn: string): T {
@@ -133,6 +137,16 @@ function regn(f: Fasit): Record<string, number> {
         over60: i.over60 ?? false,
       });
       return { kalkulert_tid: r.kalkulertTid.verdi, timelonn: r.timelonn.verdi, lonn: r.lonn.verdi, feriepenger: r.feriepenger.verdi, samlet: r.samlet.verdi };
+    }
+    case 'stillingsplan': {
+      const r = beregnStillingsplan(hent, {
+        stilling: krev(i.stilling, 'stilling'),
+        grupper: grupper(hent, i.grupper ?? []),
+        funksjoner: (i.funksjoner ?? []).map((fu) => ({ navn: fu.navn ?? '', prosent: fu.prosent })),
+        timerIGruppe: 0,
+      });
+      const timer = Object.fromEntries(differanseIHvertFag(r).map((d, n) => [`timer_fag_${n + 1}`, d.timer]));
+      return { undervisning: r.undervisning.verdi, beskjeftigelse: r.beskjeftigelse.verdi, differanse: r.differanse.verdi, ...timer };
     }
     default:
       throw new Error(`Ukjent kalkulator i ${f.id}: ${f.kalkulator}`);

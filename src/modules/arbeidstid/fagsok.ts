@@ -23,13 +23,18 @@ export interface Fagtreff {
   program: string;
   /** Kallenavn og programområder som passet søket, til visning. */
   ekstra: string[];
+  /**
+   * Fagkodene i Grep som passer søket når det peker på ett bestemt fag i raden (f.eks. «HEA2005», eller
+   * «helsefremmende arbeid», som kan ha samme navn i flere programområder). Høyst tre koder.
+   */
+  fagkoder?: string[];
 }
 
 interface Indekspost {
   treff: Omit<Fagtreff, 'ekstra'>;
   hoved: string[];
   /** Koder, programområder og kallenavn. frase er hele navnet normalisert, for eksakte treff på hele søket. */
-  andre: { ord: string[]; vis: string; frase: string; vekt: number }[];
+  andre: { ord: string[]; vis: string; frase: string; vekt: number; fagkode?: string }[];
 }
 
 const tekster = (v: unknown): string[] => (Array.isArray(v) ? v.filter((x): x is string => typeof x === 'string') : []);
@@ -63,14 +68,14 @@ export function lagFagindeks(rader: readonly Arsrammerad[], data: Sokedata): Ind
         andre.push({ ord: [prefiks.toLowerCase(), ...ord(navn)], vis: `${prefiks} ${navn}`, frase: normaliser(prefiks), vekt: 5 });
         // Fagene i programområdet på samme trinn (første siffer i fagkoden er trinnet, f.eks. HEA2005 → Vg2).
         for (const [fagkode, fagnavn] of data.fagkoder[prefiks] ?? []) {
-          if (fagkode[3] === trinn) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 5 });
+          if (fagkode[3] === trinn) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 5, fagkode });
         }
       }
     }
     for (const prefiks of tekster(f?.prefikser)) {
       andre.push({ ord: [prefiks.toLowerCase()], vis: prefiks, frase: normaliser(prefiks), vekt: 5 });
       // Fagnavnene i Grep for fellesfaget (bare prefikser som ett fag bruker, se hent-grep.ts).
-      for (const [fagkode, fagnavn] of data.fagkoder[prefiks] ?? []) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 4 });
+      for (const [fagkode, fagnavn] of data.fagkoder[prefiks] ?? []) andre.push({ ord: [fagkode.toLowerCase(), ...ord(fagnavn)], vis: `${fagkode} ${fagnavn}`, frase: normaliser(fagnavn), vekt: 4, fagkode });
     }
     for (const k of data.kallenavn) {
       if (k.fag !== rad.fag || k.program !== rad.program || k.trinn !== rad.trinn) continue;
@@ -92,6 +97,12 @@ export function sokFag(indeks: readonly Indekspost[], sporring: string, maks = 8
   const hele = normaliser(sporring);
   // Eksakt ord gir flere poeng enn begynnelsen av et ord, så «2P» rangeres foran «2P-Y».
   const poengFor = (s: string, liste: readonly string[]) => (liste.includes(s) ? 2 : liste.some((o) => o.startsWith(s)) ? 1 : 0);
+  // Et søkeord peker på et bestemt fag når det passer et ord i fagnavnet, eller koden med minst ett siffer
+  // (HEA2005, hea20). Bare bokstavene i koden (HEA, BAT) peker på programområdet, ikke på ett fag.
+  const pekerPaFag = (s: string, fagord: readonly string[]) => {
+    const [kode = '', ...navn] = fagord;
+    return poengFor(s, navn) > 0 || (/\d/.test(s) && kode.startsWith(s));
+  };
   const treff: { t: Fagtreff; poeng: number }[] = [];
   for (const post of indeks) {
     let poeng = 0;
@@ -117,7 +128,14 @@ export function sokFag(indeks: readonly Indekspost[], sporring: string, maks = 8
       poeng += eksakt.vekt;
       ekstra.add(eksakt.vis);
     }
-    if (alle) treff.push({ t: { ...post.treff, ekstra: [...ekstra] }, poeng });
+    // Fagkodene er med når søkeordene som ikke passet fag, program og trinn, peker på få fag i raden.
+    const utenomHoved = sok.filter((s) => poengFor(s, post.hoved) === 0);
+    const koder =
+      utenomHoved.length > 0
+        ? [...new Set(post.andre.filter((a) => a.fagkode !== undefined && utenomHoved.every((s) => pekerPaFag(s, a.ord))).map((a) => a.fagkode as string))]
+        : [];
+    const fagkoder = koder.length > 0 && koder.length <= 3 ? koder.sort() : undefined;
+    if (alle) treff.push({ t: { ...post.treff, ekstra: [...ekstra], ...(fagkoder ? { fagkoder } : {}) }, poeng });
   }
   return treff
     .sort((a, b) => b.poeng - a.poeng || b.t.rad.t60 - a.t.rad.t60 || a.t.rad.nr - b.t.rad.nr)

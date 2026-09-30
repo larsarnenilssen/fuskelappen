@@ -4,6 +4,48 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.4.0] – 2026-09-29
+
+Programfag får årstimer, nye figurer og lagrede varianter.
+
+### Lagt til
+
+- Årstimer for programfag: søker du fram et bestemt fag med fagkode eller navn (f.eks. HEA2005 eller «Helsefremmende arbeid»), fylles årstimetallet inn fra Udir (Grep), og fagkoden vises ved faget. Det gjelder også programfag på yrkesfag.
+- **Lagrede varianter** i alle kalkulatorene: lagre det du har fylt ut, sammenlign hovedresultatet med det du har nå, og hent varianten fram igjen. Opptil tre varianter per kalkulator lagres bare på enheten.
+- Planfestet tid viser en gjennomsnittlig uke: planfestet tid og tid læreren disponerer selv, mot grensen på 37,5 timer planfestet tid i en uke, med snittet per dag og grensen på 9 timer for en enkelt dag.
+- Timevikar og overtid viser lønnen og feriepengene i en stolpe.
+- Periodebeskjeftigelse viser hva beskjeftigelsen i perioden tilsvarer for hele skoleåret.
+
+### Endret
+
+- På nettbrett og PC står resultatet i en egen kolonne ved siden av skjemaet.
+- Planfestet tid starter med 0 % reduksjon, så grunnverdiene vises med en gang.
+
+## [0.3.0] – 2026-09-29
+
+Ny hovedkalkulator, stillingsplan, og årstimer som fylles inn fra faget.
+
+### Lagt til
+
+- **Stillingsplan** står øverst i arbeidstidsmodulen og først blant hurtigkalkulatorene. Du legger inn stillingsprosent, fag og funksjoner (i prosent av full stilling), og ser:
+  - samlet beskjeftigelse, med undervisning, funksjoner og stilling hver for seg
+  - teknisk undertid eller teknisk overtid i prosent, og regnet om til årsrammetimer i et fag du velger
+  - en stolpe med fagene og funksjonene mot stillingsprosenten
+  - «Timer i hvert fag»: hvor mange årsrammetimer som mangler eller er for mye, regnet med årsrammen i hvert fag
+  - en lenke til overtidskalkulatoren med prosenten ferdig utfylt når samlet beskjeftigelse er over 100 %
+- Fasiteksemplene E1–E4 for stillingsplanen, som eier har kontrollert (fasit 011–014).
+- Begrepet «Teknisk undertid og teknisk overtid».
+- Årstimer fylles inn når du velger fag i beskjeftigelse, periodebeskjeftigelse, fordeling og stillingsplan, f.eks. 56 i kroppsøving og 140 i engelsk vg1 studieforberedende. Tallet kommer fra Udir (Grep), og du kan endre det. Det gjelder 98 av radene i vedlegg 1, også norsk (112) og engelsk (140) på yrkesfag. Programfag på yrkesfag, samisk og noen forkortelser som ikke kan bekreftes, er ikke med.
+
+### Endret
+
+- Fordeling med stillingsprosent: feltet er nå hele stillingen, og undervisningen er stillingen minus funksjonene. Tidligere var feltet bare undervisningen.
+- Oversikten over arbeidstidsmodulen viser stillingsplanen som et stort kort øverst og de andre kalkulatorene under «Flere kalkulatorer».
+
+### Rettet
+
+- Fordelingen virker nå for en stilling med bare funksjon, for eksempel 10 % stilling med 10 % funksjon. Møtetid som ikke får plass i den planfestede tiden for undervisningen, legges i funksjonstiden. Delene i diagrammet summerer seg alltid til årsverket for stillingen. Med bare funksjoner kan fordelingen også regnes ut uten fag.
+
 ## [0.2.2] – 2026-09-29
 
 Kalkulatorene tar mindre plass og viser svaret hele tiden.
@@ -122,7 +164,9 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.2.2...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.4.0
+[0.3.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.3.0
 [0.2.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.2
 [0.2.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.1
 [0.2.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.2.0

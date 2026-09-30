@@ -1,5 +1,5 @@
 // Enhetstester for beregningene i arbeidstidsmodulen (utover fasiteksemplene).
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { finnVerdi, slaaSammen } from '../../src/core/regler/motor.ts';
@@ -159,8 +159,42 @@ describe('fordeling', () => {
   });
 
   it('varsler når stillingen er over 100 % eller møtetiden er større enn planfestet tid', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 20 });
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 40 });
     expect(r.advarsler).toEqual(expect.arrayContaining(['over_hel_stilling', 'motetid_for_stor']));
+  });
+
+  it('regner ut en stilling med bare funksjon, og legger møtetiden i funksjonstiden', () => {
+    // 10 % stilling med 10 % funksjon og 3 timer møter i uka: ingen undervisning.
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    expect(r.beskjeftigelse.verdi).toBe(0);
+    expect(r.stilling.verdi).toBe(10);
+    expect(r.arsverk.verdi).toBeCloseTo(168.75);
+    expect(del('undervisning')).toBe(0);
+    expect(del('motetid')).toBe(114);
+    expect(del('funksjonstid')).toBeCloseTo(54.75);
+    expect(del('annen_planfestet')).toBe(0);
+    expect(del('selvdisponert')).toBe(0);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(r.arsverk.verdi);
+    expect(r.advarsler).toEqual([]);
+
+    // Det samme uten fag i fagvisningen.
+    const utenFag = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [] }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    expect(utenFag.deler).toEqual(r.deler);
+
+    // Møter som ikke får plass i funksjonstiden heller, gir varsel.
+    const forMye = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 10 });
+    expect(forMye.advarsler).toContain('motetid_for_stor');
+  });
+
+  it('med stillingsprosent er undervisningen stillingen minus funksjonene', () => {
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: { type: 'niva', t60: 525, t45: 700 } }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(r.beskjeftigelse.verdi).toBe(80);
+    expect(r.deler.find((d) => d.id === 'undervisning')?.timer).toBe(420);
+    expect(r.stilling.verdi).toBe(100);
+    const over = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(over.advarsler).toContain('funksjon_over_stilling');
+    expect(over.stilling.verdi).toBe(20);
   });
 });
 
@@ -207,5 +241,50 @@ describe('overtid', () => {
     expect(rund(vanlig.feriepenger.verdi)).toBe(1748.8);
     expect(rund(over60.betaling.verdi)).toBe(14573.33);
     expect(rund(over60.feriepenger.verdi)).toBe(2083.99);
+  });
+});
+
+describe('stillingsplan', () => {
+  it('regner funksjoner uten fag, flere funksjoner og balanse', async () => {
+    const { beregnStillingsplan } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const bareFunksjon = beregnStillingsplan(hent, { stilling: 50, grupper: [], funksjoner: [{ navn: 'Leder', prosent: 50 }], timerIGruppe: null });
+    expect(bareFunksjon.beskjeftigelse.verdi).toBe(50);
+    expect(bareFunksjon.differanse.verdi).toBe(0);
+    expect(bareFunksjon.differanseTimer).toBeNull();
+
+    const to = beregnStillingsplan(hent, {
+      stilling: 100,
+      grupper: [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: false, undervisning: { type: 'arstimer', arstimer: 420 } }],
+      funksjoner: [
+        { navn: 'Kontaktlærer', prosent: 10 },
+        { navn: 'Teamleder', prosent: 5 },
+      ],
+      timerIGruppe: 0,
+    });
+    // 420 ÷ 525 × 100 = 80 %, + 10 + 5 = 95 %, differanse −5 % = −26,25 årsrammetimer.
+    expect(to.funksjon.verdi).toBe(15);
+    expect(rund(to.beskjeftigelse.verdi)).toBe(95);
+    expect(rund(to.differanse.verdi)).toBe(-5);
+    expect(rund(to.differanseTimer?.verdi ?? NaN)).toBe(-26.25);
+    expect(to.trinn.map((t) => t.id)).toEqual(['beskjeftigelse', 'sum_funksjon', 'samlet_beskjeftigelse', 'teknisk_differanse', 'teknisk_timer']);
+  });
+});
+
+describe('årstimer fra Grep', () => {
+  it('stemmer med omfanget for fagkodene i Grep og peker på rader i vedlegg 1', async () => {
+    const { lesArstimer } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const grep = JSON.parse(readFileSync(join(rot, 'data/grep/arstimer.json'), 'utf8')) as { arstimer: Record<string, number | null> };
+    const tabell = lesArstimer(hent);
+    expect(tabell.size).toBeGreaterThan(80);
+    for (const [nr, rad] of tabell) {
+      expect(rader.some((r) => r.nr === nr), `rad ${nr} finnes i vedlegg 1`).toBe(true);
+      for (const kode of rad.fagkoder) expect(grep.arstimer[kode], `${kode} (rad ${nr})`).toBe(rad.arstimer);
+    }
+    // Eksemplene fra eier: kroppsøving 56 og engelsk vg1 studieforberedende 140.
+    expect(tabell.get(rad('Kroppsøv.', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(56);
+    expect(tabell.get(rad('Engelsk', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(140);
+    // Yrkesfag (eier 29.09.2026): norsk 112 og engelsk 140.
+    expect(tabell.get(rad('Norsk', 'Yrkesfag', 'Vg1').rad.nr)?.arstimer).toBe(112);
+    expect(tabell.get(rad('Engelsk', 'Yrkesfag', 'Vg2').rad.nr)?.arstimer).toBe(140);
   });
 });

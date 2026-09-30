@@ -1,0 +1,19 @@
+id: sfs2213-013
+beskrivelse: "Stillingsplan, 80 % stilling: to grupper matematikk Vg1 studieforberedende à 140 årstimer og funksjon 20 %."
+godkjent: { av: eier, dato: 2026-09-29 }
+kalkulator: stillingsplan
+input:
+  stilling: 80
+  grupper:
+    - { arsrammer: [{ fag: Matematikk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+    - { arsrammer: [{ fag: Matematikk, program: Stud.spes, trinn: Vg1 }], elever: 30, arstimer: 140 }
+  funksjoner: [{ prosent: 20 }]
+forventet:
+  undervisning: 53.33
+  beskjeftigelse: 73.33
+  differanse: -6.67
+  timer_fag_1: -35
+begrunnelse: >-
+  Undervisning = 2 × 140 ÷ 525 × 100 = 53,33 %. Samlet beskjeftigelse = 53,33 + 20 = 73,33 %. Differanse = 73,33
+  − 80 = −6,67 %, altså teknisk undertid. I årsrammetimer i matematikk: −6,67 × 525 ÷ 100 = −35. Årsramme 525
+  for Matematikk*, Stud.spes Vg1 (SFS 2213 vedlegg 1). Eksempel E3, kontrollert av eier.
