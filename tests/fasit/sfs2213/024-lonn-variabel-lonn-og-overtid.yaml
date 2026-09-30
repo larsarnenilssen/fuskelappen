@@ -1,0 +1,27 @@
+id: sfs2213-024
+beskrivelse: "Lønn i Arbeidsplan: årslønn 600 000, 80 % stilling og samlet beskjeftigelse 110 % i engelsk Vg1 (variabel lønn og overtid)."
+godkjent: { av: eier, dato: 2026-09-30 }
+kalkulator: lonn
+input:
+  lonn: { arslonn: 600000 }
+  stilling: 80
+  overtid:
+    beskjeftigelse: 110
+    arsrammer: [{ fag: Engelsk, program: Stud.spes, trinn: Vg1 }]
+    elever: 30
+forventet:
+  arslonn: 480000
+  variabel: 88888.89
+  overtid: 66666.67
+  samlet: 635555.56
+  feriepenger: 76266.67
+begrunnelse: >-
+  Årslønn i stillingen 600 000 × 80 % = 480 000. Variabel lønn for det som er over stillingen og opp til hel stilling
+  (100 − 80 = 20 %), regnet som vikartimer (eier 30.09.2026): 20 % × 525 = 105 timer, kalkulert tid 105 × 1400 ÷ 525 =
+  280 timer, timelønn 600 000 ÷ 1687,5 × 100 ÷ 112 = 317,46, variabel lønn 280 × 317,46 = 88 888,89. Overtid for det som
+  er over hel stilling (10 %): 52,5 timer, kalkulert tid 140 timer, 140 × 317,46 × 1,5 = 66 666,67 (SFS 2213 punkt 5.2,
+  hovedtariffavtalen § 6.4, § 12.4 og § 6.5.3). Lønn i året 480 000 + 88 888,89 + 66 666,67 = 635 555,56. Feriepenger
+  12 % = 76 266,67 (§ 7.4.2). Kontrollert mot hovedtariffavtalen 2026–2028: § 6.2 sier at overtidsbestemmelsene gjelder
+  heltidsstillinger, og at deltidsansatte får overtid ut over det som er fastsatt for full stilling. § 12.4-formelen
+  årslønn × 1400 × 100 ÷ (årsramme × 1687,5 × 112) gir samme timelønn per time som kalkulert tid × timelønn over.
+  Spørsmålet om overtidstillegg for deltidsansatte er omstridt (tvisteprotokoller nevnt i protokollen fra 2026).

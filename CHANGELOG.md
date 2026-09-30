@@ -4,6 +4,21 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.8.0] – 2026-09-30
+
+### Lagt til
+
+- **Lønn i en periode regnes fra datoene**, slik lønnssystemet gjør når Visma InSchool sender lønnsprosenten og datoene for perioden. Arbeidsplan har fått feltene «Første dag i perioden» og «Siste dag i perioden». Hele måneder gir hel månedslønn, og i brutte måneder gir hver arbeidsdag (mandag–fredag) 1/21,67 av månedslønnen. Tillegg regnes på samme måte. Variabel lønn og overtid regnes fortsatt med timene i perioden.
+- Fasiteksempel 024: variabel lønn og overtid i 80 % stilling, godkjent av eier.
+
+### Endret
+
+- Forklaringen av planleggingsdager sier at timene for lærere som er 60 år og eldre avhenger av hvor de fem ekstra feriedagene legges.
+
+### Dokumentasjon
+
+- README har fått en liste over kjente begrensninger. Første punkt: fordelingstabellen går utenfor skjermen ved skriftstørrelse på 150 % eller mer.
+
 ## [0.7.1] – 2026-09-30
 
 ### Endret

@@ -184,10 +184,15 @@ export interface Lonnsinndata {
   /** Høyere feriepengesats for arbeidstakere over 60 år. */
   over60: boolean;
   /**
-   * Periodenøkkelen når lønnen gjelder en periode. Årslønn og tillegg regnes da for perioden (× nøkkel), og prosentene
-   * for variabel lønn og overtid i perioden gjøres om til årsbasis (× nøkkel) før de regnes om til timer og kroner.
+   * Periodenøkkelen når lønnen gjelder en periode. Prosentene for variabel lønn og overtid i perioden gjøres om til
+   * årsbasis (× nøkkel) før de regnes om til timer og kroner, så timene blir timene i perioden.
    */
   periodenokkel?: Operand | null;
+  /**
+   * Andelen av årslønnen perioden gir (hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder, se lonnsperiode.ts).
+   * Årslønn og tillegg ganges med den. Mangler den i en periode, brukes periodenøkkelen.
+   */
+  lonnsandel?: Operand | null;
 }
 
 export interface LonnResultat extends Utregning {
@@ -212,14 +217,16 @@ export interface LonnResultat extends Utregning {
 export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const hel = arslonn(hent, inn.lonn);
   const k = inn.periodenokkel ?? null;
-  const lonn = k
-    ? trinn('arslonn_periode', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent'), periodenokkel: k }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling * k.verdi) / 100)
+  // Andelen av året for lønn og tillegg: fra datoene i perioden, ellers periodenøkkelen.
+  const a = inn.lonnsandel ?? k;
+  const lonn = a
+    ? trinn('arslonn_periode', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent'), andel: a }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling * a.verdi) / 100)
     : trinn('arslonn_stilling', { arslonn: hel, stilling: inndata('stilling', inn.stilling, 'prosent') }, 'arslonn_stilling', 'kroner', (hel.verdi * inn.stilling) / 100);
   const alle: Trinn[] = [lonn];
   const advarsler: AdvarselId[] = [];
   let tillegg = inn.tillegg !== null ? inndata('funksjonstillegg', inn.tillegg, 'kroner') : null;
-  if (tillegg && k) {
-    const t = trinn('tillegg_periode', { tillegg, periodenokkel: k }, 'funksjonstillegg', 'kroner', tillegg.verdi * k.verdi);
+  if (tillegg && a) {
+    const t = trinn('tillegg_periode', { tillegg, andel: a }, 'funksjonstillegg', 'kroner', tillegg.verdi * a.verdi);
     alle.push(t);
     tillegg = t.resultat;
   }

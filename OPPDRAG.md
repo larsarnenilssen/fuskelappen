@@ -486,6 +486,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Praksis inntil videre (eier 30.09.2026): beskjeftigelse over stillingen og opp til 100 % gir variabel lønn med vanlig timelønn, og bare beskjeftigelse over 100 % gir overtid. |
 | Periodebeskjeftigelse med funksjoner, eller som del av Arbeidsplan | fase 1 | Avklart. Perioder er en del av Arbeidsplan, og kalkulatoren Periode er fjernet (avgjørelse 015). |
 | InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Venter |
+| Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 
 ## 8. Ferdig når

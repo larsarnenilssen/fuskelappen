@@ -470,6 +470,27 @@ describe('arbeidsplan for en periode', () => {
     expect(r.overtid?.verdi).toBeCloseTo(70 * timelonn * 1.5);
   });
 
+  it('regner andelen av årslønnen fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder', async () => {
+    const { lonnsperiode, beregnLonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    // Hele skoleåret: 12 hele måneder.
+    expect(lonnsperiode(hent, '2026-08-01', '2027-07-31')?.andel.verdi).toBeCloseTo(1);
+    // 15.1.–30.6.2027: januar er brutt (fredag 15. til søndag 31. = 11 arbeidsdager), februar–juni er hele.
+    const p = lonnsperiode(hent, '2027-01-15', '2027-06-30');
+    expect(p?.heleManeder).toBe(5);
+    expect(p?.arbeidsdager).toBe(11);
+    expect(p?.andel.verdi).toBeCloseTo((5 + 11 / 21.67) / 12);
+    // Innenfor én måned: onsdag 3. til fredag 12. februar = 8 arbeidsdager.
+    expect(lonnsperiode(hent, '2027-02-03', '2027-02-12')?.andel.verdi).toBeCloseTo(8 / 21.67 / 12);
+    // Ugyldig eller baklengs periode gir ingen andel.
+    expect(lonnsperiode(hent, '2027-02-12', '2027-02-03')).toBeNull();
+    expect(lonnsperiode(hent, '', '2027-02-03')).toBeNull();
+    // Lønn og tillegg ganges med andelen fra datoene, ikke periodenøkkelen.
+    const nokkel = { navn: 'periodenokkel' as const, verdi: 0.5, enhet: 'faktor' as const, opprinnelse: 'trinn' as const };
+    const r = beregnLonn(hent, { lonn: { type: 'manuell', arslonn: 600000 }, stilling: 100, tillegg: 12000, overtid: null, over60: false, periodenokkel: nokkel, lonnsandel: p?.andel ?? null });
+    expect(r.arslonn.verdi).toBeCloseTo(600000 * ((5 + 11 / 21.67) / 12));
+    expect(r.tillegg?.verdi).toBeCloseTo(12000 * ((5 + 11 / 21.67) / 12));
+  });
+
   it('gir timene i fordelingen for perioden, med samme timer per uke som for et helt år', async () => {
     const hel = beregnFordeling(hent, { grupper: [{ ...fag[0]!, undervisning: { type: 'arstimer', arstimer: 525 } }], stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
     const del = beregnFordeling(hent, { grupper: fag, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0, periode });

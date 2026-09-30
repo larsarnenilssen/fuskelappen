@@ -23,6 +23,7 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Utdanningsforbundets krav ved forhandlingene om SFS 2213, 24.11.2025 (dok. nr. 1)](https://www.ks.no/contentassets/8241bae38e5a49c385d5f549a05a33ef/utdanningsforbundet.pdf) | Utdanningsforbundet (publisert av KS) | nasjonal | side | Opphavsrett Utdanningsforbundet. Lenkes, kopieres ikke. | ingen | 1 |
 | [Visma InSchool – 3.25 Beregning av lønn for vikartimer](https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer) | Visma | nasjonal | side | Opphavsrett Visma. Lenkes, kopieres ikke. | ingen | 1 |
 | [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet) | Visma | nasjonal | side | Opphavsrett Visma. Lenkes, kopieres ikke. | ingen | 1 |
+| [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | Visma | nasjonal | side | Opphavsrett Visma. Lenkes, kopieres ikke. | ingen | 1 |
 | [Nasjonalt skoleregister (NSR)](https://data-nsr.udir.no/) | Utdanningsdirektoratet | nasjonal | data | NLOD 2.0 | nsr | 0 |
 | [Standard for fylkesinndeling](https://www.ssb.no/klass/klassifikasjoner/104) | Statistisk sentralbyrå | nasjonal | side | NLOD 2.0 | ingen | 0 |
 
@@ -41,5 +42,6 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **udf-krav-sfs2213-2025:** Partens syn på «annet elevrettet arbeid». Bakgrunn, gjengis med egne ord.
 - **inschool-vikartimer:** Bakgrunn for vikarkalkulatoren (kalkulert tid og timelønn). Regelen står i hovedtariffavtalen § 12.4.
 - **inschool-periodebeskjeftigelse:** Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
+- **inschool-fastlonn:** Bakgrunn for lønn i en periode i Arbeidsplan: lønnsprosenten for perioden sendes til lønnssystemet, og start- og sluttdato for perioden settes på lønnsradene. Lønn for deler av en måned (arbeidsdager ÷ 21,67) er praksis i lønnssystemet slik eier har beskrevet den 30.09.2026, og står ikke i artikkelen.
 - **udir-nsr:** Skolelisten i innstillingene. Oppdateres automatisk; varsel bare ved feil.
 - **ssb-fylkesinndeling:** Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.

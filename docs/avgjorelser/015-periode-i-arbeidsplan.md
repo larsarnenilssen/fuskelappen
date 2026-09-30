@@ -7,7 +7,7 @@
 - Stillingen og funksjonene gjelder perioden: en funksjon på 10 % er 10 % i perioden (eier).
 - Resultatene vises for perioden, og prosentene kan vises på årsbasis (× periodenøkkelen). Timer og kroner er de samme i begge visningene (eier: 100 % i halve året er 50 % for hele året).
 - Fordelingen regnes som for et helt år med prosentene i perioden, og timene ganges med periodenøkkelen. Timene per uke blir da de samme som for et helt år.
-- Lønnen gjelder perioden: årslønn i stillingen og tillegg × periodenøkkelen. Variabel lønn og overtid regnes som vikartimer med timene i perioden (prosent i perioden × nøkkel = prosent på årsbasis).
+- Lønnen gjelder perioden. Årslønn i stillingen og tillegg regnes fra første og siste dag i perioden, som i lønnssystemet (eier 30.09.2026): hele måneder gir hel månedslønn, og i brutte måneder gir hver arbeidsdag 1/21,67 av månedslønnen. Visma InSchool sender lønnsprosenten og datoene til lønnssystemet (artikkel 3.13). Variabel lønn og overtid regnes som vikartimer med timene i perioden (prosent i perioden × nøkkel = prosent på årsbasis).
 - Årstimer fra Grep fylles ikke inn i en periode, fordi de gjelder et helt år. Den gamle kalkulatoren fylte dem inn som timer i perioden.
 - Kalkulatoren Periode er fjernet uten videresending (appen er ikke delt ennå, som i avgjørelse 014). Metodeteksten er slått sammen med Arbeidsplan sin. `beregnPeriodebeskjeftigelse` og fasittestene 010 og 022 er beholdt.
 

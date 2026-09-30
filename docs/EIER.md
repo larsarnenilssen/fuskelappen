@@ -117,6 +117,7 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Beskjeftigelse: søk etter fag på navn, kallenavn (R1, 2P) og koder (ENG, BAT, HEA). Prøv ett fag, et fag merket * med «15 eller færre elever», to fag, og en blandet gruppe.
 - [ ] Søkeordene: kallenavn og koder står i `rules/sfs2213/fagsok-2026-2027.yaml`. Se særlig over tabellen som kobler programnavnene i vedlegg 1 til utdanningsprogrammene.
 - [ ] Arbeidsplan: planleggingsdager på egen linje (45 timer for hel stilling, kan endres), og timer per uke fordelt på 38 skoleuker.
+- [ ] Lønn i en periode fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder (verdien 21,67 står i regelfilen for hovedtariffavtalen, med InSchool-artikkelen om fastlønn som kilde).
 - [ ] Arbeidsplan for en periode: periodebeskjeftigelse (også økter per uke med uker regnet ut fra dagene), funksjoner i perioden, prosent på årsbasis, fordeling og lønn for perioden.
 - [ ] Vikartimer (ansatt og timevikar) og overtid.
 - [ ] Årstimer: velg noen fag og se at riktig årstimetall fylles inn. Tabellen står i `rules/sfs2213/arstimer-2026-2027.yaml`, med fagkodene i Grep.

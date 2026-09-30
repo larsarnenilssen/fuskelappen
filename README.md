@@ -35,6 +35,12 @@ Krever Node 22 (se `.nvmrc`).
 - [docs/avgjorelser/](docs/avgjorelser/) – tekniske avgjørelser
 - [CHANGELOG.md](CHANGELOG.md) – endringer per versjon
 
+## Kjente begrensninger
+
+Feil og mangler eier har valgt å vente med. Hver har en linje i tabellen over åpne punkter i [OPPDRAG.md](OPPDRAG.md).
+
+- **Fordelingstabellen i Arbeidsplan ved stor skrift:** Med skriftstørrelse på 150 % eller mer blir tabellen bredere enn skjermen, og siden må rulles sidelengs. Med vanlig skriftstørrelse er det ingen overflyt i 320–430 px (testet). Eier 30.09.2026: venter.
+
 ## Kilder og lisens
 
 Appen inneholder data fra Utdanningsdirektoratet og Lovdata under Norsk lisens for offentlige data (NLOD) 2.0. Kildene gjelder alltid foran appen.
