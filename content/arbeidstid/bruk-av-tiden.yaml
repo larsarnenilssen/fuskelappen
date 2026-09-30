@@ -15,6 +15,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-fou-sfs2213 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er KS-rapporten fra 2025 gjengitt nøytralt?"
 
 - id: bruk-motetid
   type: forklaring
@@ -32,6 +34,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å regne møtetiden for 38 uker, uten møter på planleggingsdagene?"
 
 - id: bruk-annen-planfestet
   type: forklaring
@@ -82,6 +86,8 @@
     - { id: ks-fou-sfs2213 }
     - { id: udf-krav-sfs2213-2025 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er Utdanningsforbundets krav fra 2025 gjengitt riktig, og bør KS’ syn også nevnes for å være balansert?"
   stikkord: [elevrettet arbeid, planfestet tid, samarbeid]
 
 - id: bruk-planleggingsdager
@@ -99,6 +105,8 @@
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4 a" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at timene til planleggingsdagene tas fra annen planfestet tid?"
   stikkord: [planleggingsdager, kompetanseutvikling, arbeidsår]
 
 - id: bruk-funksjonstid
@@ -113,6 +121,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
     - { id: ks-sfs2213-avtaletekst, punkt: "7.3" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det tydelig at valget om en funksjon utvider planfestet tid eller ikke, er en forenkling i appen?"
 
 - id: bruk-selvdisponert
   type: forklaring
@@ -126,3 +136,5 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "3" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er punkt 3 gjengitt riktig om hvor og når læreren gjør arbeidet utenom undervisningen?"

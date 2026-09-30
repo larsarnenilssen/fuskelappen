@@ -13,7 +13,7 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 | [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata | 1, 3 |
 | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata (ikke aktiv) | 4, 5, 6, 7, 8 |
 | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta), med vurderingsreglane](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/) | Lovdata | nasjonal | lovdata-datasett | NLOD 2.0 | lovdata (ikke aktiv) | 4, 5, 6, 7, 8 |
-| [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | Utdanningsdirektoratet | nasjonal | grep | NLOD 2.0 | grep (ikke aktiv) | 2, 3, 6 |
+| [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | Utdanningsdirektoratet | nasjonal | grep | NLOD 2.0 | grep | 1, 2, 3, 6 |
 | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/) | Utdanningsdirektoratet | nasjonal | side | NLOD 2.0 | side (ikke aktiv) | 4 |
 | [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/) | Utdanningsdirektoratet | nasjonal | side | NLOD 2.0 | side (ikke aktiv) | 4, 6 |
 | [Lokal forskrift om inntak til vidaregåande opplæring, Vestland fylkeskommune](https://www.vlfk.no/) | Vestland fylkeskommune (Lovdata) | fylke (46) | side | NLOD 2.0 | lovdata (ikke aktiv) | 5 |
@@ -35,6 +35,7 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **ks-hovedtariffavtalen:** PDF-utgaven KS publiserer på https://www.ks.no/fagomrader/lonn-og-tariff/hovedtariffavtalen/. Kildejobben sammenligner fingeravtrykket av hele filen. Brukes for timelønn (§ 12.4), feriepenger (§ 7.4.2) og garantilønn (kap. 4 punkt 4.1).
 - **arbeidsmiljoloven:** Kildejobben følger kapittel 10 om arbeidstid.
 - **opplaeringsforskrifta:** Lenken går foreløpig til Udirs gjengivelse. Lovdata-adressen settes når kilden aktiveres.
+- **udir-grep:** Programområder, fagkoder og årstimetall hentes hver uke med npm run hent:grep. Stemmer testene med de nye dataene, tas de inn og publiseres automatisk (eier 30.09.2026, avgjørelse 018). Feiler testene, blir status «endret», og dataene tas ikke inn. Fingeravtrykket godkjennes ikke, fordi dataene oppdateres automatisk.
 - **vlfk-forskrift-inntak:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
 - **vlfk-skulereglar:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
 - **vlfk-sider:** Hvilke sider som sjekkes, bestemmes når kilden aktiveres.

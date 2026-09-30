@@ -23,16 +23,20 @@ function hentArkiv(): Promise<string> {
   return arkiv;
 }
 
-export async function sjekkLovdata(kilde: Kilde): Promise<{ fingeravtrykk: string }> {
+export async function sjekkLovdata(kilde: Kilde): Promise<{ fingeravtrykk: string; tekst: string }> {
   const fil = await hentArkiv();
   const navn = lovdataFilnavn(kilde.url);
   const liste = execFileSync('tar', ['-tjf', fil], { maxBuffer: 256 * 1024 * 1024 }).toString().split('\n');
   const oppforing = liste.find((l) => l.includes(navn));
   if (!oppforing) throw new Error(`Fant ikke ${navn} i datasettet. Første oppføringer: ${liste.slice(0, 5).join(', ')}`);
   const html = execFileSync('tar', ['-xjf', fil, '-O', oppforing], { maxBuffer: 64 * 1024 * 1024 }).toString('utf8');
-  if (!kilde.uttrekk) return { fingeravtrykk: lagFingeravtrykk(trekkUt(html, { selektor: 'body', fjern: [] })) };
+  if (!kilde.uttrekk) {
+    const tekst = trekkUt(html, { selektor: 'body', fjern: [] });
+    return { fingeravtrykk: lagFingeravtrykk(tekst), tekst };
+  }
   try {
-    return { fingeravtrykk: lagFingeravtrykk(trekkUt(html, kilde.uttrekk)) };
+    const tekst = trekkUt(html, kilde.uttrekk);
+    return { fingeravtrykk: lagFingeravtrykk(tekst), tekst };
   } catch (e) {
     throw new Error(`${e instanceof Error ? e.message : String(e)} ${strukturhint(html)}`, { cause: e });
   }

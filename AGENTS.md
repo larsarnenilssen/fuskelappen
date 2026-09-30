@@ -58,13 +58,15 @@ En endring er ikke ferdig før alle er grønne.
 
 - Alt innhold følger skjemaet i `docs/INNHOLDSMODELL.md` og har minst én kilde.
 - Egne tekster skrives på både bokmål og nynorsk. Kildetekster (lov, forskrift, læreplan) gjengis uoversatt og merkes med målform.
-- Nytt eller endret faglig eller juridisk innhold får alltid `kontrollert: null`. **Sett aldri `kontrollert` selv.** Det gjør bare eier, eller du etter eksplisitt beskjed fra eier, med dato.
+- Nytt eller endret faglig eller juridisk innhold får alltid `kontrollert: null`. **Sett aldri `kontrollert` selv.** Det gjør bare eier, eller du etter eksplisitt beskjed fra eier, med dato. Godkjenningsjobben (`/godkjent` i en kontrollsak, avgjørelse 021) regnes som eiers beskjed.
 - **Endre aldri fasittester** uten eiers godkjenning. Feiler en fasittest, er det koden eller regelsettet som skal undersøkes.
 - Bruk gjeldende regelverk: opplæringslova og forskriften som gjelder fra 1.8.2024. Eldre materiale er bare bakgrunn.
 - Lov- og forskriftstekst kan siteres. Partenes tolkninger, andres veiledninger og Visma-materiell kopieres ikke. Skriv med egne ord og lenk til kilden.
 - Innhold og verdier har riktig `gyldighet` (nasjonal, fylke eller skole). Fylkes- og skoleinnhold vises bare når brukeren har valgt fylke eller skole.
 - Data under NLOD (Udir, Lovdata) krediteres under «Om».
 - Oppdater `godkjent_fingeravtrykk` i kilderegisteret bare etter beskjed fra eier.
+- Nytt innhold i `content/` får 1–5 `kontrollsporsmal` til eier om det som er usikkert: om en formulering kan misforstås, om en praksis stemmer. Ny praksis eller tolkning som ikke står i kildene, føres i `content/kontroll/praksis.yaml` med `bekreftet: null`. Sett aldri `bekreftet` selv.
+- Tall i `rules/` fra en kilde får et `sitat` (kort, ordrett utdrag der tallet står). Tall som ikke står i kilden, får `grunnlag: avledet` eller `grunnlag: praksis` og en merknad. Automatisk samsvar med kilden er ikke det samme som eiers kontroll.
 
 ## Personvern
 

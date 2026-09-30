@@ -10,6 +10,7 @@ verdier:
     verdi: 1400
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
+    sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
     merknad: >-
       Timelønn for undervisningspersonale = (årslønn × 1400 × 100) ÷ (årsramme × 1687,5 × 112).
       1400 ÷ årsramme er tiden som beregnes for én undervisningstime på 60 minutter, med for- og etterarbeid.
@@ -18,31 +19,37 @@ verdier:
     enhet: timer
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
+    sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
   timelonn_ferie_teller:
     verdi: 100
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
+    sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
     merknad: Brøken 100/112 i formelen trekker feriepengene ut av timelønnen. Feriepenger beregnes for seg.
   timelonn_ferie_nevner:
     verdi: 112
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     kontrollert: null
+    sitat: "Årslønn × 1400 × 100 = timelønn Årsramme × 1687,5 × 112"
   feriepenger_prosent:
     verdi: 12
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     kontrollert: null
+    sitat: "utgjør 12,0 % (14,3 % for arbeidstakere over 60 år)"
   feriepenger_prosent_over_60:
     verdi: 14.3
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     kontrollert: null
+    sitat: "utgjør 12,0 % (14,3 % for arbeidstakere over 60 år)"
     merknad: For arbeidstakere over 60 år.
   overtidstillegg_prosent:
     verdi: 50
     enhet: prosent
     kilde: { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.5.3 }
     kontrollert: null
+    sitat: "6.5.3 50 % For overtidsarbeid utført til annen tid enn foran nevnt."
     merknad: >-
       Overtidstillegg for dagarbeidstid til vanlig tid. For undervisning regnes tillegget ut fra timelønnen for
       undervisning i § 12.4 (§ 6.4). Overtidsbetaling blir da 1,5 × timelønn (eier 29.09.2026).
@@ -70,6 +77,7 @@ verdier:
     enhet: dager
     kilde: { id: inschool-fastlonn }
     kontrollert: null
+    grunnlag: praksis
     merknad: >-
       Arbeidsdager i en gjennomsnittsmåned (260 ÷ 12). Lønn for deler av en måned = arbeidsdagene i perioden den måneden
       ÷ 21,67 av månedslønnen, slik eier har beskrevet praksisen 30.09.2026. Står ikke i hovedtariffavtalen.

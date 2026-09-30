@@ -5,7 +5,9 @@
 #   til en bestemt versjon. Tomt felt publiserer siste versjon.
 # - Kildesjekken kaller denne arbeidsflyten hver uke, slik at kildestatusen på Pages er fersk.
 #
-# Koden bygges alltid fra taggen. Bare data/status/kildestatus.json hentes fra main.
+# Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
+# slik at de oppdateres hver uke (avgjørelse 018). Består ikke taggens tester med registerdataene fra main,
+# brukes taggens egne registerdata.
 # Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
 name: Publiser
 
@@ -71,14 +73,17 @@ jobs:
             exit 1
           fi
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-      - name: Hent koden for versjonen, med fersk kildestatus fra main
+      - name: Hent koden for versjonen, med fersk kildestatus og registerdata fra main
         if: steps.versjon.outputs.tag != ''
         env:
           TAG: ${{ steps.versjon.outputs.tag }}
         run: |
           cp data/status/kildestatus.json "$RUNNER_TEMP/kildestatus.json"
+          mkdir -p "$RUNNER_TEMP/data"
+          cp -r data/grep data/skoler "$RUNNER_TEMP/data/"
           git checkout --quiet "$TAG"
           cp "$RUNNER_TEMP/kildestatus.json" data/status/kildestatus.json
+          cp -r "$RUNNER_TEMP/data/grep" "$RUNNER_TEMP/data/skoler" data/
           VERSJON=$(node -p "require('./package.json').version")
           if [ "v$VERSJON" != "$TAG" ]; then
             echo "::error::package.json har versjon $VERSJON, men taggen er $TAG."
@@ -91,6 +96,19 @@ jobs:
           cache: npm
       - if: steps.versjon.outputs.tag != ''
         run: npm ci
+      - name: Sjekk registerdataene fra main mot versjonens tester
+        if: steps.versjon.outputs.tag != ''
+        env:
+          TAG: ${{ steps.versjon.outputs.tag }}
+        run: |
+          if git diff --quiet "$TAG" -- data/grep data/skoler; then
+            echo "Registerdataene er de samme som i $TAG."
+          elif npx vitest run; then
+            echo "Registerdataene fra main består testene i $TAG."
+          else
+            echo "::warning::Registerdataene fra main består ikke testene i $TAG. Bruker registerdataene i $TAG."
+            git checkout "$TAG" -- data/grep data/skoler
+          fi
       - if: steps.versjon.outputs.tag != ''
         run: npm run build
       - uses: actions/upload-pages-artifact@v4

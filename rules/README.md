@@ -10,3 +10,5 @@ Tariff- og lovavhengige verdier som data, én mappe per regelverk og én fil per
 - `hta/2026-2028.yaml`: hovedtariffavtalen 1.5.2026–30.4.2028 (timelønn, feriepenger, overtidstillegg, garantilønn).
 
 Alle verdier har `kontrollert: null` til eier har godkjent dem. Ny periode: ny fil med nye datoer og nye fasittester.
+
+Tall fra en kilde har et `sitat`: et kort, ordrett utdrag fra kilden der tallet står. Kildejobben ser etter sitatet hver uke og lager kontrolloversikten (`docs/KONTROLL.md`). Verdier som ikke står i kilden, har `grunnlag: avledet` eller `grunnlag: praksis` og en merknad. Se `docs/avgjorelser/017`.

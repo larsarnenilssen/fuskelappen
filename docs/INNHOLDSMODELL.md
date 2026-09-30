@@ -16,6 +16,7 @@ En fil kan inneholde ett element eller en liste.
 | `gyldighet` | nei | `{ niva: nasjonal }` (standard), `{ niva: fylke, fylke, forhold }` eller `{ niva: skole, fylke, skole, forhold }`. `forhold` er `erstatter` eller `supplerer` |
 | `kilder` | ja | minst én `{ id, punkt?, url? }`. `id` må finnes i `content/kilder.yaml` |
 | `kontrollert` | ja | `null` eller `{ dato: ÅÅÅÅ-MM-DD }`. **Settes bare av eier.** |
+| `kontrollsporsmal` | ja i `content/` | 1–5 spørsmål til eier (bokmål) om det som er usikkert i teksten: om noe kan misforstås, eller om en praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019) |
 | `stikkord` | nei | ekstra søkeord |
 | `relatert` | nei | id-er til annet innhold (må finnes) |
 
@@ -63,13 +64,38 @@ verdier:
     enhet: timer
     kilde: { id: ks-sfs2213, punkt: "4" }
     kontrollert: null              # settes av eier
+    sitat: "utføres innenfor et årsverk på 1687,5 timer (1650 timer for lærere som er 60 år og eldre)"
+  arbeidsdager_per_uke:
+    verdi: 5
+    kilde: { id: ks-sfs2213, punkt: "5.1" }
+    kontrollert: null
+    grunnlag: avledet              # avledet eller praksis når verdien ikke står i kilden
+    merknad: 37,5 timer per uke ÷ 7,5 timer per dag.
 ```
 
 - Et regelsett kan deles på flere filer med samme `id`, `regelverk`, periode og gyldighet, og hver sin `del` (f.eks. `del: arsrammer`). Delene slås sammen ved lasting, og en verdinøkkel kan bare stå i én del.
 - `verdi` kan være et tall, en tekst, sann/usann, en liste eller en **tabell**: en liste av rader med enkle celler. Vedlegg 1 til SFS 2213 ligger slik i `rules/sfs2213/arsrammer-2026-2027.yaml`, med én rad per fag, utdanningsprogram og trinn (`t60`, `t45`, `kategori`, `fag`, `program`, `trinn`, `stjerne`).
 - Verdier leses bare gjennom `hentVerdi('regelverk.nokkel', kontekst)`.
+- `sitat`: et kort, ordrett utdrag fra kilden (høyst 200 tegn) der tallet står slik kilden skriver det, f.eks. «1687,5» eller «kr. 12 000». Kildejobben ser etter sitatet hver uke (verdisjekken, avgjørelse 017). Alle tall fra en kilde som kildejobben leser, må ha sitat. Det testes, og det testes at sitatet inneholder verdien.
+- `grunnlag`: `avledet` (regnet ut fra andre verdier) eller `praksis` (praksis eier har beskrevet). Slike verdier har ikke sitat, men en `merknad` som forklarer grunnlaget. Uten `grunnlag` står verdien i kilden.
+- Tabeller og lister har ikke sitat. De kontrolleres med egne tester, f.eks. at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad. Vedlegg 1 og garantilønnen sjekkes også rad for rad mot kilden hver uke (avgjørelse 018).
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
 - Verdier med `kontrollert: null` vises uten merke. Brukserklæringen under «Om appen» og setningen nederst på forsiden sier at appen er utviklet privat og kan ha feil (avgjørelse 016).
+
+## Praksis og tolkninger (`content/kontroll/praksis.yaml`)
+
+Det appen bygger på uten at det står i kildene, f.eks. 21,67 arbeidsdager per måned og 45 timer planleggingsdager for alle. Eier bekrefter punktene i kontrollrundene i mai og august (avgjørelse 019).
+
+| Felt | Innhold |
+|---|---|
+| `id`, `tittel` | identifikasjon |
+| `sporsmal` | spørsmålet eier skal svare på |
+| `appen` | hva appen gjør |
+| `grunnlag` | hvem som har bestemt det, og når |
+| `berorer` | regelverdier (`regelsett/nøkkel`) og innhold (`id`) som bygger på praksisen. Må finnes (testes) |
+| `bekreftet` | `null` eller `{ dato }`. **Settes bare av eier.** |
+
+Regelverdier med `grunnlag: praksis` må stå i listen. Det testes.
 
 ## Kilderegister (`content/kilder.yaml`)
 

@@ -6,14 +6,22 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Fylker, Kilde, Kilderegister } from '../../src/core/innhold/skjema.ts';
 import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../../src/core/kildestatus/kildestatus.ts';
+import { lesVerdistatus, medTabellstatus, sjekkbareVerdier, sjekkVerdier, verdinokkel, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
+import type { Tabellrad } from '../../src/core/regler/skjema.ts';
+import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
+import { delIBiter, finnEndringer, lesKildetekst, type Kildetekstfil, type Tekstendring } from './avsnitt.ts';
+import { antallEndringer, grepdetaljer, grepsammendrag, type Grependringer } from './grep.ts';
 import { lagFingeravtrykk, nyPost, vurderMotGodkjent, type Sjekkresultat } from './logikk.ts';
 import { sjekkKfInfoserie } from './kf-infoserie.ts';
 import { sjekkLovdata } from './lovdata.ts';
 import { hentSkoler, sjekkFil, sjekkSide, skoleendringer, type Skole } from './metoder.ts';
+import { lesVedlegg1, sammenlignVedlegg1, sjekkGarantilonn, type Tabellresultat } from './tabeller.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const statusfil = join(rot, 'data/status/kildestatus.json');
+const verdistatusfil = join(rot, 'data/status/verdistatus.json');
+const kildetekstfil = join(rot, 'data/status/kildetekst.json');
 const skolefil = join(rot, 'data/skoler/vgs.json');
 const generert = join(rot, '.generert');
 
@@ -34,6 +42,10 @@ function lesJson(fil: string): unknown {
 const forrige: Kildestatusfil | null = lesKildestatus(lesJson(statusfil));
 const naa = new Date().toISOString();
 const rapport: string[] = [];
+// Teksten fra hver kilde, eller hvorfor den ikke kunne leses. Brukes av verdisjekken etterpå.
+const tekster: Record<string, { tekst: string } | { feil: string }> = {};
+// Dokumentet som HTML, for kilder med tabeller som sjekkes rad for rad (vedlegg 1).
+const html: Record<string, string> = {};
 
 async function sjekkNsr(kilde: Kilde): Promise<Sjekkresultat> {
   const skoler = await hentSkoler(fylker);
@@ -61,25 +73,55 @@ async function sjekkNsr(kilde: Kilde): Promise<Sjekkresultat> {
   return { status: 'ok', fingeravtrykk: lagFingeravtrykk(JSON.stringify(skoler)), melding: null };
 }
 
+/**
+ * Grep hentes i et eget steg før kildesjekken (npm run hent:grep), og testene kjøres på de nye dataene.
+ * Stemmer testene, tas dataene inn automatisk (eier 30.09.2026). Feiler de, er Grep endret slik at noe i
+ * appen må rettes, og dataene er ikke tatt inn.
+ */
+function sjekkGrep(): Sjekkresultat {
+  const endringsfil = join(generert, 'grep-endringer.json');
+  if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».' };
+  const { endringer } = JSON.parse(readFileSync(endringsfil, 'utf8')) as { endret: boolean; endringer: Grependringer | null };
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const data = ['programomrader', 'fagkoder', 'arstimer'].map((n) => {
+    const innhold = JSON.parse(readFileSync(join(rot, 'data/grep', `${n}.json`), 'utf8')) as Record<string, unknown>;
+    return JSON.stringify(innhold[n]);
+  });
+  const fingeravtrykk = lagFingeravtrykk(data.join('\n'));
+  rapport.push('### Grep', endringer ? grepsammendrag(endringer) : 'Første henting.', ...(endringer ? grepdetaljer(endringer).map((l) => `- ${l}`) : []), '');
+  if (tester === 'feilet') {
+    return { status: 'endret', fingeravtrykk, melding: `Grep er endret slik at testene feiler, og dataene er ikke tatt inn: ${endringer ? grepsammendrag(endringer) : ''}`.trim() };
+  }
+  const antall = endringer ? antallEndringer(endringer) : 0;
+  return { status: 'ok', fingeravtrykk, melding: antall > 0 && endringer ? `Tatt inn automatisk: ${grepsammendrag(endringer)}` : null };
+}
+
 async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   if (kilde.id === simulertFeil) {
+    tekster[kilde.id] = { feil: 'Simulert feil.' };
     return { status: 'feilet', fingeravtrykk: null, melding: 'Simulert feil (manuell test av varsling).' };
   }
   try {
     switch (kilde.sjekkmetode) {
       case 'side': {
-        const { fingeravtrykk } = await sjekkSide(kilde);
+        const { fingeravtrykk, tekst } = await sjekkSide(kilde);
+        tekster[kilde.id] = { tekst };
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'nsr':
         return await sjekkNsr(kilde);
+      case 'grep':
+        return sjekkGrep();
       case 'fil': {
-        const { fingeravtrykk, bytes } = await sjekkFil(kilde);
+        const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
+        tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };
         rapport.push(`### ${kilde.navn}`, `Filen er ${bytes} byte, fingeravtrykk ${fingeravtrykk}.`, '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'kf-infoserie': {
         const r = await sjekkKfInfoserie(kilde);
+        tekster[kilde.id] = { tekst: r.tekst };
+        html[kilde.id] = r.html;
         rapport.push(
           `### ${kilde.navn}`,
           `${r.tittel ?? 'Ukjent tittel'}, versjon ${r.versjon ?? '?'}, gyldig ${r.gyldig ?? '?'}. ${r.tegn} tegn tekst, fingeravtrykk ${r.fingeravtrykk}.`,
@@ -88,7 +130,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return vurderMotGodkjent(r.fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'lovdata': {
-        const { fingeravtrykk } = await sjekkLovdata(kilde);
+        const { fingeravtrykk, tekst } = await sjekkLovdata(kilde);
+        tekster[kilde.id] = { tekst };
         rapport.push(`### ${kilde.navn}`, `Fingeravtrykk ${fingeravtrykk}.`, '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
@@ -96,7 +139,9 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return { status: 'feilet', fingeravtrykk: null, melding: `Sjekkmetoden «${kilde.sjekkmetode}» er ikke laget ennå.` };
     }
   } catch (e) {
-    return { status: 'feilet', fingeravtrykk: null, melding: e instanceof Error ? e.message : String(e) };
+    const melding = e instanceof Error ? e.message : String(e);
+    tekster[kilde.id] = { feil: melding };
+    return { status: 'feilet', fingeravtrykk: null, melding };
   }
 }
 
@@ -110,6 +155,75 @@ for (const kilde of register.kilder.filter((k) => k.aktiv && k.sjekkmetode !== '
 const fil: Kildestatusfil = { skjema: 1, kjort: naa, kilder };
 mkdirSync(join(rot, 'data/status'), { recursive: true });
 writeFileSync(statusfil, `${JSON.stringify(fil, null, 2)}\n`);
+
+// Verdisjekken: ser etter sitatet til hver regelverdi i kildeteksten (docs/avgjorelser/017).
+const regelsett = lesRegelsett(rot);
+const forrigeVerdistatus = lesVerdistatus(lesJson(verdistatusfil));
+let verdistatus: Verdistatusfil = sjekkVerdier(sjekkbareVerdier(regelsett), tekster, forrigeVerdistatus, naa);
+
+// Tabeller rad for rad (avgjørelse 018): vedlegg 1 fra dokumentet hos KF Infoserie, garantilønnen fra teksten
+// i hovedtariffavtalen.
+function tabellsjekk(regelsettId: string, nokkel: string, kildeId: string, sjekk: (rader: Tabellrad[]) => Tabellresultat): void {
+  const verdi = regelsett.find((r) => r.id === regelsettId)?.verdier[nokkel];
+  if (!verdi || verdi.kilde.id !== kildeId || !Array.isArray(verdi.verdi)) return;
+  let resultat: Tabellresultat | { feil: string };
+  try {
+    resultat = sjekk(verdi.verdi as Tabellrad[]);
+  } catch (e) {
+    resultat = { feil: e instanceof Error ? e.message : String(e) };
+  }
+  verdistatus = medTabellstatus(verdistatus, verdinokkel(regelsettId, nokkel), kildeId, resultat, forrigeVerdistatus);
+}
+function kildetekst(id: string): string {
+  const t = tekster[id];
+  if (t === undefined) throw new Error('Kilden sjekkes ikke automatisk ennå.');
+  if ('feil' in t) throw new Error(`Kilden kunne ikke leses: ${t.feil}`);
+  return t.tekst;
+}
+tabellsjekk('sfs2213-2026-2027', 'arsrammer', 'ks-sfs2213-avtaletekst', (rader) => {
+  kildetekst('ks-sfs2213-avtaletekst');
+  return sammenlignVedlegg1(rader, lesVedlegg1(html['ks-sfs2213-avtaletekst'] ?? ''));
+});
+tabellsjekk('hta-2026-2028', 'garantilonn', 'ks-hovedtariffavtalen', (rader) => {
+  const trinn = regelsett.find((r) => r.id === 'hta-2026-2028')?.verdier.garantilonn_ansiennitet?.verdi as number[];
+  return sjekkGarantilonn(rader, trinn, kildetekst('ks-hovedtariffavtalen'));
+});
+writeFileSync(verdistatusfil, `${JSON.stringify(verdistatus, null, 2)}\n`);
+const verdiposter = Object.entries(verdistatus.verdier);
+const antall = (s: string) => verdiposter.filter(([, p]) => p.status === s).length;
+rapport.push(
+  '### Verdisjekk',
+  `${verdiposter.length} regelverdier med sitat: ${antall('samsvarer')} samsvarer med kilden, ${antall('avvik')} avvik, ${antall('ikke_sjekket')} ikke sjekket.`,
+  ...verdiposter
+    .filter(([, p]) => p.status !== 'samsvarer' || p.melding)
+    .map(([n, p]) => `- ${n}: ${p.status}${p.forslag === null ? '' : ` (forslag: ${p.forslag})`}${p.melding ? ` – ${p.melding}` : ''}`),
+  '',
+);
+console.log(`Verdisjekk: ${antall('samsvarer')} samsvarer, ${antall('avvik')} avvik, ${antall('ikke_sjekket')} ikke sjekket.`);
+
+// Hva som er endret i kildene (avgjørelse 018). Bitene fra sist kilden var godkjent (status ok) lagres; ved
+// endring sammenlignes teksten nå med dem. Endringene går til den ukentlige kontrollsaken (varsle.ts).
+const forrigeTekst: Kildetekstfil = lesKildetekst(lesJson(kildetekstfil)) ?? { skjema: 1, kilder: {} };
+const nyTekst: Kildetekstfil = { skjema: 1, kilder: { ...forrigeTekst.kilder } };
+const endringer: Record<string, Tekstendring[] | null> = {};
+for (const [id, post] of Object.entries(kilder)) {
+  const t = tekster[id];
+  if (t === undefined || 'feil' in t || post.fingeravtrykk === null) continue;
+  if (post.status === 'ok') {
+    nyTekst.kilder[id] = { fingeravtrykk: post.fingeravtrykk, lagret: forrigeTekst.kilder[id]?.fingeravtrykk === post.fingeravtrykk ? (forrigeTekst.kilder[id]?.lagret ?? naa) : naa, biter: delIBiter(t.tekst).map((b) => b.hash) };
+  } else if (post.status === 'endret') {
+    const godkjent = forrigeTekst.kilder[id];
+    endringer[id] = godkjent ? finnEndringer(godkjent.biter, t.tekst) : null;
+  }
+}
+writeFileSync(kildetekstfil, `${JSON.stringify(nyTekst, null, 2)}\n`);
+mkdirSync(join(generert, 'kildetekster'), { recursive: true });
+// Teksten fra kildene, til endringsforslagene (lag-forslag.ts). Ligger bare i .generert, som ikke committes.
+for (const [id, t] of Object.entries(tekster)) if ('tekst' in t) writeFileSync(join(generert, 'kildetekster', `${id}.txt`), t.tekst);
+writeFileSync(join(generert, 'endringer.json'), `${JSON.stringify(endringer, null, 2)}\n`);
+for (const [id, liste] of Object.entries(endringer)) {
+  rapport.push(`### Endringer i ${id}`, ...(liste === null ? ['Ingen lagret tekst fra forrige godkjenning å sammenligne med.'] : liste.map((e) => `- ${e.punkt ?? 'ukjent punkt'}: ${e.ny.length} nye biter, ${e.fjernet} fjernet`)), '');
+}
 
 const tabell = [
   '## Kildesjekk',

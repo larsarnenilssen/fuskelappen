@@ -5,6 +5,8 @@ on:
   pull_request:
   push:
     branches: [main]
+  # Kildesjekken starter CI på endringsforslagene sine (PR-er laget med GITHUB_TOKEN starter ikke CI selv).
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,6 +19,11 @@ jobs:
   test:
     name: Test og bygg
     runs-on: ubuntu-latest
+    # Playwrights eget bilde har nettleserne og alle systempakkene de trenger. Da slipper vi å installere dem
+    # fra Ubuntu-speilet, som av og til er svært tregt. Versjonen må være den samme som @playwright/test i
+    # package-lock.json (det testes i tests/unit/arbeidsflyter.test.ts).
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v5
@@ -30,8 +37,6 @@ jobs:
       - run: npm test
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
-      - name: Installer nettlesere for Playwright
-        run: npx playwright install --with-deps chromium webkit
       - name: Ende-til-ende-tester (Chromium og WebKit)
         run: npm run test:e2e
       - uses: actions/upload-artifact@v4

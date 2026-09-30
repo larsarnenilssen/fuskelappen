@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { parse } from 'node-html-parser';
 import type { Kilde } from '../../src/core/innhold/skjema.ts';
 import { lagFingeravtrykk, normaliserTekst } from './logikk.ts';
+import { pdfTekst } from './pdf.ts';
 
 export const USER_AGENT = 'Protokollen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/protokollen)';
 
@@ -101,10 +102,19 @@ export function skoleendringer(forrige: readonly Skole[], nye: readonly Skole[])
 
 // ---------- Hele filer (f.eks. PDF) ----------
 
-/** Fingeravtrykk av hele filen, byte for byte. Brukes for PDF-er der teksten ikke kan leses uten ekstra bibliotek. */
-export async function sjekkFil(kilde: Kilde): Promise<{ fingeravtrykk: string; bytes: number }> {
+/**
+ * Fingeravtrykk av hele filen, byte for byte. Er filen en PDF, følger teksten med til verdisjekken.
+ * Kan ikke teksten leses, sjekkes fortsatt fingeravtrykket.
+ */
+export async function sjekkFil(kilde: Kilde): Promise<{ fingeravtrykk: string; bytes: number; tekst: string | null; tekstfeil: string | null }> {
   const data = Buffer.from(await (await hent(kilde.url)).arrayBuffer());
-  return { fingeravtrykk: `sha256:${createHash('sha256').update(data).digest('hex')}`, bytes: data.length };
+  const fingeravtrykk = `sha256:${createHash('sha256').update(data).digest('hex')}`;
+  if (data.subarray(0, 5).toString('latin1') !== '%PDF-') return { fingeravtrykk, bytes: data.length, tekst: null, tekstfeil: 'Filen er ikke en PDF.' };
+  try {
+    return { fingeravtrykk, bytes: data.length, tekst: await pdfTekst(new Uint8Array(data)), tekstfeil: null };
+  } catch (e) {
+    return { fingeravtrykk, bytes: data.length, tekst: null, tekstfeil: e instanceof Error ? e.message : String(e) };
+  }
 }
 
 // ---------- Lovdata ----------

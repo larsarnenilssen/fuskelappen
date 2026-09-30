@@ -1,6 +1,8 @@
 # Kildesjekk: sjekker de aktive kildene hver uke og kan startes manuelt.
-# Skriver data/status/kildestatus.json, committer den ved hver kjøring (holder den planlagte jobben i live),
-# oppretter eller oppdaterer én sak (issue) per kilde ved endring eller feil, og publiserer fersk status.
+# Skriver data/status/kildestatus.json og verdistatus.json (verdisjekken) og lager docs/KONTROLL.md på nytt,
+# committer dem ved hver kjøring (holder den planlagte jobben i live),
+# oppretter, oppdaterer eller lukker den ukentlige kontrollsaken (issue med etiketten «kontroll»), og publiserer
+# fersk status og registerdata (Grep, skoleregisteret).
 name: Kildesjekk
 
 on:
@@ -12,6 +14,11 @@ on:
         description: 'Simuler feil for én kilde (skriv f.eks. ks-sfs2213). La stå tomt for vanlig kjøring.'
         required: false
         default: ''
+      kontrollrunde:
+        description: 'Lag en kontrollrunde nå (ellers bare første mandag i mai og august).'
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: kildesjekk
@@ -25,6 +32,8 @@ jobs:
     permissions:
       contents: write
       issues: write
+      pull-requests: write
+      actions: write
     steps:
       - uses: actions/checkout@v5
         with:
@@ -35,7 +44,30 @@ jobs:
           cache: npm
       - run: npm ci
       - name: Installer Chromium (for KF Infoserie, som krever nettleser)
-        run: npx playwright install --with-deps chromium
+        # Uten --with-deps: systempakkene fra Ubuntu-speilet er av og til svært trege, og maskinene hos GitHub har
+        # allerede det Chromium trenger (Google Chrome er installert). Nettleseren hentes fra Playwright.
+        timeout-minutes: 10
+        run: npx playwright install chromium
+      # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
+      # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
+      - name: Hent Grep
+        id: grep
+        continue-on-error: true
+        run: npm run hent:grep
+      - name: Test de nye Grep-dataene
+        if: steps.grep.outcome == 'success'
+        run: |
+          mkdir -p .generert
+          if git diff --quiet -- data/grep; then
+            echo uendret > .generert/grep-tester.txt
+          elif npx vitest run; then
+            echo ok > .generert/grep-tester.txt
+          else
+            echo feilet > .generert/grep-tester.txt
+            # Ta vare på de nye dataene til endringsforslaget, og legg de gamle tilbake.
+            mkdir -p .generert/grep-ny && cp data/grep/*.json .generert/grep-ny/
+            git checkout -- data/grep
+          fi
       - name: Sjekk kildene
         env:
           SIMULER: ${{ inputs.simuler_feil }}
@@ -45,19 +77,29 @@ jobs:
           else
             npm run kilder:sjekk
           fi
+      - name: Kontrolloversikt
+        run: npm run kontroll:rapport
       - name: Sammendrag
         run: cat .generert/kilderapport.md >> "$GITHUB_STEP_SUMMARY"
       - name: Lagre kildestatus
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/skoler/vgs.json
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/skoler/vgs.json data/grep docs/KONTROLL.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
-      - name: Varsle eier (issues)
+      # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.
+      - name: Endringsforslag (PR)
+        # Feiler forslagene, skal kontrollsaken likevel komme.
+        continue-on-error: true
+        run: npm run kilder:forslag
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: Ukentlig kontrollsak og kontrollrunde (issues)
         run: npm run kilder:varsle
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          KONTROLLRUNDE: ${{ inputs.kontrollrunde && 'ja' || '' }}
 
   publiser:
     name: Publiser fersk kildestatus

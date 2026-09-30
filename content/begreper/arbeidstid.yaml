@@ -9,6 +9,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "4–5" }
     - { id: arbeidsmiljoloven, punkt: Kapittel 10 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at arbeidstiden består av planfestet tid og tid læreren disponerer selv, også når arbeidsåret er utvidet på grunn av funksjoner?"
   stikkord: [SFS 2213, arbeidstidsavtale, lærerarbeidstid]
   relatert: [arsverk, planfestet-arbeidstid, selvdisponert-tid]
 
@@ -20,6 +22,9 @@
     nn: Eit årsverk for lærarar er 1687,5 timar, eller 1650 timar for lærarar som er 60 år og eldre. Skilnaden er fem arbeidsdagar ekstra ferie, så arbeidsåret er fem dagar kortare. Planfesta tid er då same del av årsverket som for andre lærarar. Alle arbeidsoppgåvene skal gjerast innanfor årsverket.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: "4" }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Stemmer det at forskjellen mellom 1687,5 og 1650 timer er fem arbeidsdager ekstra ferie?"
+    - "Er det riktig at planfestet tid er samme andel av årsverket for lærere som er 60 år og eldre (1124,44 timer), eller kan fylket regne annerledes?"
   stikkord: ["1687,5", timer]
   relatert: [arbeidsar, planfestet-arbeidstid]
 
@@ -33,6 +38,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Kan «Arbeidsåret kan også utvides når planfestet tid går over 37,5 timer i uka» leses som at det gjelder alle lærere, og ikke bare ved funksjoner og andre oppgaver etter punkt 5.3?"
   stikkord: [planleggingsdager, skoleår]
   relatert: [arsverk, planfestet-arbeidstid]
 
@@ -44,6 +51,8 @@
     nn: Årsramma er talet på undervisningstimar i eit fag som utgjer ei heil stilling i eit heilt skuleår. Årsrammene står i vedlegg 1 til SFS 2213, i 60- og 45-minutts einingar, og varierer med fag, utdanningsprogram og trinn. Har ein time elevar frå program eller nivå med ulike årsrammer, blir den lågaste brukt.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er regelen om laveste årsramme for grupper med elever fra ulike program eller nivåer gjengitt riktig og fullstendig?"
   stikkord: [vedlegg 1, årsrammetimer, blandet gruppe]
   relatert: [beskjeftigelse, stjernefag, minuttenheter]
 
@@ -55,6 +64,8 @@
     nn: Nokre fellesfag er merkte * i vedlegg 1. Er det faktiske talet på elevar i klassen 1–15, blir årsramma i desse faga auka med 52,5 timar (70 i 45-minutts einingar).
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er «det faktiske antallet elever i klassen» tydelig nok for grupper som ikke er klasser, for eksempel valgfag på tvers av klasser?"
   stikkord: [stjerne, små klasser, elevtall]
   relatert: [arsramme]
 
@@ -66,6 +77,8 @@
     nn: Årsrammene blir oppgitt både i 60-minutts timar og i 45-minutts einingar, til dømes 525/700. Ei økt på 45 minutt er 0,75 time på 60 minutt. Kalkulatorane i appen reknar i 60-minutts timar.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Kan det misforstås at kalkulatorene regner i 60-minutters timer når skolen bruker 45-minutters økter?"
   stikkord: [klokketimer, undervisningstimer, økt]
   relatert: [arsramme]
 
@@ -77,6 +90,9 @@
     nn: Sysselsetjing er kor stor del av ei heil stilling undervisninga utgjer, rekna som årstimar ÷ årsramme × 100. Undervisning i fleire fag blir summert. Sysselsetjing og stillingsprosent er ikkje alltid det same, til dømes når læraren også har funksjonar.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er formelen årstimer ÷ årsramme × 100 den samme som skolen og Visma InSchool bruker?"
+    - "Er forskjellen mellom beskjeftigelse og stillingsprosent forklart godt nok?"
   stikkord: [undervisningsprosent, stillingsprosent, beskjæftigelse]
   relatert: [arsramme, periodebeskjeftigelse, fast-overtid]
 
@@ -90,6 +106,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     - { id: inschool-periodebeskjeftigelse }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er periodenøkkelen (undervisningsdager i perioden ÷ undervisningsdager i skoleåret) forklart slik Visma InSchool regner?"
   stikkord: [periode, vikariat, periodenøkkel, perioderamme]
   relatert: [beskjeftigelse, arsramme]
 
@@ -103,6 +121,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over hva planfestet tid først og fremst brukes til, gjengitt riktig etter punkt 5.1?"
   stikkord: [bundet tid, bunden tid, tilstedeværelse, "1150"]
   relatert: [selvdisponert-tid, annet-elevrettet-arbeid, andre-arbeidsoppgaver]
 
@@ -114,6 +134,8 @@
     nn: Den delen av årsverket som ikkje er planfesta, disponerer læraren sjølv til før- og etterarbeid og fagleg ajourføring. I vidaregåande skule er det 1687,5 − 1150 = 537,5 timar i ei heil stilling utan funksjonar. Ho blir ofte kalla ikkje-planfesta tid.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: "5.2" }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er 537,5 timer riktig for en hel stilling uten funksjoner, og er «ikke-planfestet tid» en betegnelse som brukes i fylket?"
   stikkord: [ikke-planfestet tid, ubundet tid, egentid]
   relatert: [planfestet-arbeidstid, for-og-etterarbeid]
 
@@ -127,6 +149,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at for- og etterarbeid gjøres både i planfestet tid og i tiden læreren disponerer selv?"
   stikkord: [forberedelse, vurderingsarbeid, retting]
   relatert: [planfestet-arbeidstid, selvdisponert-tid]
 
@@ -140,6 +164,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-fou-sfs2213 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det nøytralt nok å si at hva som regnes med, ofte avklares lokalt?"
   stikkord: [elevrettet, planfestet tid]
   relatert: [planfestet-arbeidstid]
 
@@ -153,6 +179,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
     - { id: ks-sfs2213-avtaletekst, punkt: "7.3" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at tiden læreren disponerer selv, reduseres med samme prosentandel som undervisningen (punkt 5.3)?"
   stikkord: [funksjon, kontaktlærer, rådgiver, redusert undervisning]
   relatert: [planfestet-arbeidstid, arbeidsar]
 
@@ -166,6 +194,8 @@
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
     - { id: inschool-vikartimer }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er «kalkulert tid» et begrep som brukes i Visma InSchool eller lønnssystemet, eller bør det stå at det er appens navn?"
   stikkord: [timelønn, vikar, timevikar]
   relatert: [arsramme, fast-overtid]
 
@@ -179,6 +209,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er skillet mellom fast overtid (økt årsramme) og pålagt arbeid ut over oversikten over planfestet tid forklart riktig?"
   stikkord: [overtid, overtidsbetaling, over 100 prosent]
   relatert: [beskjeftigelse, kalkulert-tid, variabel-lonn]
 
@@ -192,6 +224,9 @@
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.2 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?"
+    - "Betaler fylket fortsatt variabel lønn som vikartimer uten overtidstillegg?"
   stikkord: [merarbeid, deltid, deltidsansatt, timelønn, ekstra undervisning]
   relatert: [fast-overtid, kalkulert-tid, teknisk-undertid-overtid, beskjeftigelse]
 
@@ -204,6 +239,8 @@
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: 4 a }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at timene for deltid og perioder, og plasseringen av ferien for lærere over 60 år, avgjøres lokalt?"
   stikkord: [planleggingsdag, kompetanseutvikling, plandag, arbeidsår, 6 dager]
   relatert: [arbeidsar, planfestet-arbeidstid]
 
@@ -215,6 +252,8 @@
     nn: Delt dagsverk er når arbeidsdagen blir delt opp, slik at dagen med opphald og matpausar strekkjer seg over 9 timar eller meir. Etter hovudtariffavtalen skal det berre brukast når det er nødvendig for forsvarleg drift, og det gir eit tillegg per arbeidsdag.
   kilder: [{ id: ks-hovedtariffavtalen, punkt: Kap. 1 § 5.5 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er delt dagsverk (arbeidsdagen strekker seg over 9 timer eller mer) beskrevet riktig etter hovedtariffavtalen § 5.5?"
   stikkord: [oppdelt arbeidsdag]
   relatert: [arbeidstid]
 
@@ -229,6 +268,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: Protokoll 2026 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er protokollen fra 2026 og listen over hva partene kan avtale lokalt, gjengitt riktig?"
   stikkord: [lokal avtale, arbeidstidsavtale, partsenighet]
   relatert: [drofting, planfestet-arbeidstid]
 
@@ -242,6 +283,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: 7.3 a }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er planleggingsdagene og tidsressurspotten de viktigste eksemplene på drøftinger i SFS 2213?"
   stikkord: [tillitsvalgte, medbestemmelse, hovedavtalen]
   relatert: [lokale-forhandlinger]
 
@@ -253,6 +296,9 @@
     nn: Når undervisning og funksjonar i stillingsplanen til saman er mindre enn stillingsprosenten, har læraren teknisk undertid. Er dei meir enn heil stilling, har læraren teknisk overtid for det som er over 100 %. Har læraren ei stilling under 100 %, gir det som er over stillinga og opp til heil stilling variabel løn. Differansen kan reknast om til årsrammetimar i eit fag.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er «teknisk undertid» og «teknisk overtid» begrepene fylket bruker?"
+    - "Er det tydelig at variabel lønn bare gjelder stillinger under 100 %?"
   stikkord: [stillingsplan, undertid, overtid, differanse, variabel lønn, merarbeid, deltid]
   relatert: [beskjeftigelse, arsramme, variabel-lonn]
 
@@ -266,6 +312,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "6" }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at den frigjorte tiden for nyutdannede og lærere over 60 år legges i planfestet tid, og er det tydelig at 57-åringer ikke er nevnt i den regelen?"
   stikkord: [redusert undervisning, seniorredusering, seniortiltak, nyutdannet, 57 år, 60 år]
   relatert: [arsverk, planfestet-arbeidstid, beskjeftigelse]
 
@@ -280,6 +328,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å gjøre 28,5 årsrammetimer om til prosent med årsrammen 607,5 (4,69 %)?"
   stikkord: [kontaktlærertjeneste, funksjon, reduksjon, "28,5 årsrammetimer"]
   relatert: [andre-arbeidsoppgaver, funksjonsgodtgjoring, arsramme]
 
@@ -291,5 +341,8 @@
     nn: Lærarar som har mellombelse funksjonsoppgåver, kan få eit kronetillegg per år eller månad så lenge dei har oppgåvene. Tillegget kjem i tillegg til løna og er pensjonsgivande. Godtgjeringa blir fastsett i forhandlingar. Avtalen set minst 12 000 kroner i året for kontaktlærarteneste og for rådgivar- eller sosiallærarteneste. Godtgjering for andre funksjonar blir fastsett lokalt.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: "9.1" }]
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at tillegget for funksjoner er pensjonsgivende?"
+    - "Har fylket egne satser for andre funksjoner som appen bør vise når fylket er valgt?"
   stikkord: [funksjonstillegg, tillegg, kronetillegg, godtgjørelse, rådgiver, sosiallærer]
   relatert: [kontaktlaerer, andre-arbeidsoppgaver, lokale-forhandlinger]

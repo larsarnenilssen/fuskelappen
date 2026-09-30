@@ -53,21 +53,30 @@ En automatisk jobb sjekker kildene hver mandag morgen. Den lagrer resultatet, so
 
 **Kjøre sjekken selv:** Trykk lenken «Kjør kildesjekken på GitHub» nederst på kildesiden i appen, eller åpne **Actions** → **Kildesjekk** → **Run workflow** → la feltet stå tomt → **Run workflow**. Etter et par minutter kommer det et grønt hakemerke. Trykker du på kjøringen, ser du et sammendrag.
 
-**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages en sak under **Issues**, og du får e-post fra GitHub. Det er alltid bare én sak per kilde: finnes det allerede en åpen sak for kilden, blir den oppdatert og får en kommentar i stedet for at det lages en ny. Neste vanlige kjøring lukker saken automatisk når kilden er i orden.
+**Teste varslingen:** Gjør det samme, men skriv `ks-sfs2213` i feltet «Simuler feil». Da lages kontrollsaken under **Issues** (punkt 6), og du får e-post fra GitHub. Neste vanlige kjøring lukker saken automatisk når alt er i orden.
 
-## 6. Når du får et kildevarsel
+**Grep og skoleregisteret** hentes også hver mandag. Består appens tester med de nye dataene, tas de inn og publiseres automatisk, uten at du trenger å gjøre noe. Det står i kontrollsaken hva som er endret. Feiler testene, tas dataene ikke inn, og kontrollsaken sier fra.
 
-Varslene kommer som saker under **Issues** med merket `kilde`, og som e-post fra GitHub. Det er én sak per kilde.
+## 6. Den ukentlige kontrollsaken
 
-**«Kildesjekken … feilet»:** Sjekken fikk ikke hentet kilden, for eksempel fordi nettstedet var nede eller har fått ny utforming. Ofte går det over av seg selv, og saken lukkes automatisk ved neste vellykkede kjøring. Står den åpen i flere uker, si fra til Claude.
+Etter kildesjekken hver mandag samles alt du bør se på, i **én sak** under **Issues** med merket `kontroll`. Du får e-post fra GitHub når saken lages, og når den får noe nytt. Er alt i orden, lukkes saken automatisk. Uker uten noe nytt gir ingen e-post.
 
-**«… har et nytt fingeravtrykk som må godkjennes»:** Innholdet i kilden er endret siden du sist godkjente den. Fingeravtrykket er et «stempel» som viser hvordan siden så ut da du godkjente den.
+Saken kan ha disse delene:
 
-1. Åpne lenken til kilden i saken og se hva som er nytt.
-2. Vurder om noe i appen må endres. Si i så fall fra til Claude hva, med vanlige ord.
-3. Når du er fornøyd, skriv til Claude: «Godkjent fingeravtrykk for [kilden]». Claude legger inn det nye fingeravtrykket, og saken lukkes ved neste kjøring.
+- **Endret i kildene:** hvilket punkt i kilden som er endret, med den nye teksten sitert, og hvilke tall, begreper og forklaringer i appen som kan være berørt. Tekst som er fjernet, kan ikke vises, fordi appen ikke lagrer kildeteksten (opphavsrett). Da står det hvor mange setninger som er fjernet.
+- **Tall og tabeller som ikke stemmer med kilden:** tall der sitatet ikke lenger står i kilden, med forslag til nytt tall når det finnes. Vedlegg 1 og garantilønnen sjekkes rad for rad.
+- **Grep:** hva som er tatt inn automatisk, eller at Grep er endret slik at testene feiler.
+- **Kilder som ikke kunne sjekkes:** for eksempel fordi nettstedet var nede. Det går ofte over av seg selv. Står en kilde der i flere uker, si fra til Claude.
 
-Innholdet i appen endres aldri automatisk.
+**Endringsforslag:** Er et tall endret i kilden, lager kildesjekken en PR med det nye tallet og det nye sitatet. Kontrollsaken lenker til den. Beskrivelsen av PR-en viser tallene før og etter, og hvilke tester som eventuelt feiler. Stemmer tallene, og gjelder endringen samme avtaleperiode, fletter du PR-en som vanlig (punkt 1). Gjelder den en ny periode, for eksempel en ny hovedtariffavtale, skal PR-en ikke flettes. Si fra til Claude, som lager en ny regelfil. Feiler testene med nye Grep-data, kommer det også en PR med dataene, så Claude kan rette koblingene der.
+
+**Slik behandler du saken:**
+
+1. Les gjennom punktene. Åpne lenken til kilden hvis du vil se mer.
+2. Kryss av punktene du godkjenner, og skriv `/godkjent` i en kommentar (punkt 12).
+3. Skal noe endres, skriv til Claude hva, med vanlige ord. For eksempel: «Oppdater forklaringen av planfestet tid til 10 timer per dag.»
+
+Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep og skoleregisteret.
 
 **Skjule varselet i appen:** Under **Om appen → Kilder** kan du trykke «Skjul varselet til neste sjekk». Da forsvinner advarselen øverst til høyre på din enhet til neste kildesjekk, eller til statusen endrer seg. Saken på GitHub påvirkes ikke.
 
@@ -143,3 +152,57 @@ Innhold du ikke har godkjent, har `kontrollert: null` i filene, men vises uten m
 - [ ] «Hva tiden brukes til» under Arbeidsplan, særlig «Annen planfestet tid og annet elevrettet arbeid».
 
 Skriv til Claude hva som er riktig, og hva som må endres.
+
+## 10. Kontrolloversikten og den automatiske verdisjekken
+
+**Kontrolloversikten** ligger i `docs/KONTROLL.md` på GitHub. Den lages på nytt hver mandag når kildesjekken kjører. For hver kilde viser den:
+
+- hvilke tall i appen som bygger på kilden, og hvilke begreper og forklaringer som viser til den
+- om du har kontrollert dem, og om kontrollen er gammel eller kilden er endret siden
+- resultatet av den automatiske verdisjekken
+
+Øverst står et sammendrag og en liste over det som bør ses på nå.
+
+**Den automatiske verdisjekken:** Hvert tall fra en kilde har et kort sitat fra kilden der tallet står. Årsverket har for eksempel sitatet «utføres innenfor et årsverk på 1687,5 timer (1650 timer for lærere som er 60 år og eldre)». Hver mandag ser kildesjekken etter sitatet i kilden:
+
+- **✅ samsvarer:** sitatet med tallet står fortsatt i kilden.
+- **⚠️ avvik:** sitatet står ikke der lenger. Finner sjekken den samme teksten med et annet tall, står det nye tallet i oversikten, for eksempel «Kilden har nå 1700 der verdien sto».
+- **ikke sjekket:** kilden kunne ikke leses denne gangen, eller den sjekkes ikke automatisk ennå.
+
+Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tolkningen eller forklaringen, og det teller ikke som din kontroll.
+
+**Tall som ikke kan sjekkes automatisk:**
+- **praksis:** for eksempel 21,67 arbeidsdager per måned. Det står ikke i kilden, men er praksis du har beskrevet.
+- **avledet:** regnet ut fra andre tall, for eksempel 5 arbeidsdager per uke (37,5 ÷ 7,5).
+- **tabeller og lister:** vedlegg 1 og garantilønnen sjekkes rad for rad mot kilden. Andre tabeller og lister sjekkes ikke mot kilden, men tester sjekker at tallene henger sammen, for eksempel at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.
+
+## 11. Kontrollspørsmål, praksis og kontrollrundene
+
+**Kontrollspørsmål:** Hvert begrep og hver forklaring har 1–5 spørsmål om det Claude er usikker på i teksten. Et eksempel: «Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?» Du finner alle spørsmålene nederst i `docs/KONTROLL.md`. Endres en kilde, står spørsmålene til det som kan være berørt, i kontrollsaken. Da kontrollerer du det som er usikkert, og trenger ikke lese hele teksten fra bunnen av.
+
+**Praksis og tolkninger:** Noe i appen står ikke i kildene. Det bygger på praksis eller på valg du har gjort, for eksempel 21,67 arbeidsdager per måned, 45 timer planleggingsdager for alle og variabel lønn for deltidsansatte. Alt dette står i `content/kontroll/praksis.yaml` og i kontrolloversikten, med hva appen gjør og hvem som har bestemt det.
+
+**Kontrollrundene:** Første mandag i **mai**, når hovedtariffavtalen endres, og første mandag i **august**, før skoleåret, lager kildesjekken en egen sak med merket `kontrollrunde`. Den har tre deler:
+
+- **Praksis og tolkninger** som ikke er bekreftet, eller som ble bekreftet for mer enn 12 måneder siden.
+- **Det som bør kontrolleres på nytt:** innhold du har kontrollert, men der kontrollen er over 12 måneder gammel eller kilden er endret siden.
+- **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
+
+Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
+
+## 12. Godkjenne i saken med /godkjent
+
+Du kan godkjenne direkte i kontrollsaken eller kontrollrunden. Det går fint på telefonen.
+
+1. Kryss av punktene du godkjenner.
+2. Skriv en kommentar som begynner med `/godkjent`, og trykk **Comment**.
+
+Etter et par minutter legger en jobb inn datoen for det du har krysset av, og svarer i saken med hva som er godkjent:
+
+- **Nytt fingeravtrykk for en kilde:** kilden er godkjent, og varselet forsvinner ved neste kildesjekk.
+- **Praksis:** praksisen er bekreftet og kommer ikke opp i kontrollrundene de neste 12 månedene.
+- **Begreper, forklaringer og tall:** de er kontrollert, og appen viser «Kontrollert» med datoen fra neste versjon.
+
+Du kan også skrive id-er etter `/godkjent`, for eksempel `/godkjent arsverk planleggingsdager feriepenger_prosent`. Id-ene står i `kodeskrift` i `docs/KONTROLL.md`. Slik kontrollerer du begreper og forklaringer du har lest, også når de ikke står i saken.
+
+Nye tall fra kildene godkjennes ved å flette PR-en med forslaget (punkt 6), ikke med `/godkjent`. Bare du kan godkjenne. Kommentarer fra andre blir ikke lest av jobben.

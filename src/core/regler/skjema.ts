@@ -16,6 +16,16 @@ export const regelverdiSkjema = z
     kilde: z.object({ id: z.string().min(1), punkt: z.string().optional() }).strict(),
     kontrollert: kontrollertSkjema,
     merknad: z.string().optional(),
+    /**
+     * Hva verdien bygger på når den ikke står i kilden. avledet: regnet ut fra andre verdier.
+     * praksis: praksis eier har beskrevet. Uten grunnlag står verdien i kilden. Se docs/avgjorelser/017.
+     */
+    grunnlag: z.enum(['avledet', 'praksis']).optional(),
+    /**
+     * Kort, ordrett utdrag fra kilden der verdien står, med tallet slik kilden skriver det. Kildesjekken
+     * ser hver uke etter utdraget i kilden (verdisjekken). Høyst 200 tegn: et sitat, ikke en kopi.
+     */
+    sitat: z.string().trim().min(1).max(200).optional(),
   })
   .strict();
 

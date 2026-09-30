@@ -25,7 +25,7 @@ function yamlFiler(mappe: string): string[] {
 const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
 const kildeIder = new Set(register.kilder.map((k) => k.id));
 
-const spesielle = new Set(['content/kilder.yaml', 'content/fylker.yaml', 'content/sok/synonymer.yaml']);
+const spesielle = new Set(['content/kilder.yaml', 'content/fylker.yaml', 'content/sok/synonymer.yaml', 'content/kontroll/praksis.yaml']);
 const innholdsfiler = [...yamlFiler(join(rot, 'content')), ...yamlFiler(join(rot, 'tests/fixtures/innhold'))].filter(
   (f) => !spesielle.has(relative(rot, f)),
 );
