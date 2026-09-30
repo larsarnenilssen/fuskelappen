@@ -14,14 +14,18 @@ export default function Om() {
         {t('om.versjon', { versjon: __APP_VERSJON__ })}
       </p>
 
-      <section class="kort kort-advarsel" aria-labelledby="om-ansvar">
-        <h2 id="om-ansvar">{t('om.ansvar.tittel')}</h2>
-        <p>{t('om.ansvar.tekst')}</p>
-      </section>
-
-      <section aria-labelledby="om-innhold">
-        <h2 id="om-innhold">{t('om.innhold.tittel')}</h2>
-        <p>{t('om.innhold.tekst')}</p>
+      <section class="kort" aria-labelledby="om-erklaering" data-testid="brukserklaering">
+        <h2 id="om-erklaering">{t('om.erklaering.tittel')}</h2>
+        <p>{t('om.erklaering.privat', { app: app.navn })}</p>
+        <p>{t('om.erklaering.garanti')}</p>
+        <p>{t('om.erklaering.ki')}</p>
+        <p>{t('om.erklaering.grunnlag')}</p>
+        <p>{t('om.erklaering.innspill')}</p>
+        <p>
+          <a href={`${app.repo}/issues/new`} target="_blank" rel="noopener noreferrer">
+            {t('om.erklaering.innspillLenke')}
+          </a>
+        </p>
       </section>
 
       <section aria-labelledby="om-kilder">

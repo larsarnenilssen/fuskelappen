@@ -4,6 +4,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.8.2] – 2026-09-30
+
+### Endret
+
+- «Ikke kontrollert»-merkene er erstattet av en samlet **brukserklæring** under «Om appen». Den sier at appen er utviklet privat og ikke gir garantier, hvordan utvikleren har brukt en KI-assistent, at appen bygger på kilder og er laget i god tro som et hjelpemiddel, og at innspill og beskjed om feil tas imot med takk.
+- Nederst på forsiden står det at appen er utviklet privat og at opplysningene kan være uriktige. Den samme setningen følger med når du kopierer en utregning.
+
 ## [0.8.1] – 2026-09-30
 
 ### Endret

@@ -5,7 +5,7 @@ import { Resultatkort, type Utregningssteg } from '../../../components/Resultatk
 import { fyllInn, formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Niva } from '../../../core/innhold/skjema.ts';
 import type { ComponentChildren } from 'preact';
-import { type Enhet, harUkontrollert, type Operand, type Trinn } from '../beregning/index.ts';
+import { type Enhet, type Operand, type Trinn } from '../beregning/index.ts';
 
 const nivaRang: Record<Niva, number> = { nasjonal: 0, fylke: 1, skole: 2 };
 
@@ -110,7 +110,6 @@ export function Utregningskort({ tittel, resultat, trinn, sammendrag = true, fas
       verdi={tallMedEnhet(resultat.verdi, resultat.enhet)}
       {...(enhet ? { enhet } : {})}
       niva={brukteNiva(trinn)}
-      ikkeKontrollert={harUkontrollert(trinn)}
       {...(sammendrag && siste?.innsatt ? { sammendrag: `${siste.innsatt} = ${siste.verdi}` } : {})}
       steg={steg.map((s) => ({ ...s, kilder: (s.kilder ?? []).filter((k) => k.niva !== 'nasjonal') }))}
       kilder={samleKilder(steg)}

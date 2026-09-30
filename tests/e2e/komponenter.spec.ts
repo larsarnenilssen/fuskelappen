@@ -29,10 +29,10 @@ test.describe('komponenter', () => {
     await expect(felt).not.toHaveAttribute('aria-invalid', 'true');
   });
 
-  test('resultatkortet viser utregning ved behov, med nivå og status', async ({ page }) => {
+  test('resultatkortet viser utregning ved behov, med nivå og uten kontrollmerke', async ({ page }) => {
     const kort = page.locator('.resultatkort');
     await expect(kort.getByText('Lokal verdi (fylke)').first()).toBeVisible();
-    await expect(kort.getByText('Ikke kontrollert')).toBeVisible();
+    await expect(kort.getByText('Ikke kontrollert')).toHaveCount(0);
     const knapp = kort.getByRole('button', { name: 'Vis utregning' });
     await expect(kort.locator('.utregning')).toBeHidden();
     await knapp.click();

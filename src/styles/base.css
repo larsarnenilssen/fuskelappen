@@ -609,7 +609,6 @@ main {
   border-color: var(--farge-merke);
 }
 
-.merke-utkast,
 .merke-bor_kontrolleres,
 .merke-kilde-endret {
   background: var(--farge-advarsel-flate);

@@ -35,8 +35,3 @@ export function rund(verdi: number, desimaler = 2): number {
   const faktor = 10 ** desimaler;
   return Math.round((verdi + Number.EPSILON * Math.sign(verdi)) * faktor) / faktor;
 }
-
-/** Sann hvis minst én regelverdi i trinnene ikke er kontrollert av eier. */
-export function harUkontrollert(trinnliste: readonly Trinn[]): boolean {
-  return trinnliste.some((t) => Object.values(t.operander).some((o) => o.oppslag !== undefined && o.oppslag.kontrollert === null));
-}

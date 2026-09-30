@@ -1,4 +1,4 @@
-// Resultatkort med «vis utregning» og «kopier». Viser nivå og «ikke kontrollert» der det gjelder.
+// Resultatkort med «vis utregning» og «kopier». Viser nivå der verdien er lokal.
 // Utregningen er kompakt: én linje per trinn med tallene satt inn, formelen med navn i liten skrift,
 // og kildene samlet nederst. Hovedresultatet kan også vises i en fast linje nederst på skjermen.
 import type { ComponentChildren } from 'preact';
@@ -9,7 +9,7 @@ import { formaterDato } from '../core/i18n/tekst.ts';
 import type { KildeRef, Niva } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
 import { Kildelenke, kildeTekst } from './Kildelenke.tsx';
-import { Nivamerke, Statusmerke } from './Merker.tsx';
+import { Nivamerke } from './Merker.tsx';
 import { Resultatlinje } from './Resultatlinje.tsx';
 import { Sammenleggknapp, useSammenlagt } from './Sammenlegg.tsx';
 
@@ -31,8 +31,6 @@ interface Props {
   verdi: string;
   enhet?: string;
   niva?: Niva;
-  /** Sann hvis minst én verdi i utregningen ikke er kontrollert av eier. */
-  ikkeKontrollert?: boolean;
   /** Kort linje under verdien, f.eks. den siste utregningen: «140 ÷ 525 × 100». */
   sammendrag?: string;
   steg: Utregningssteg[];
@@ -61,15 +59,15 @@ export function lagKopitekst(t: T, p: Omit<Props, 'children' | 'fast'>, dato: st
     }
   }
   linjer.push('');
-  if (p.ikkeKontrollert) linjer.push(t('komponenter.resultat.ikkeKontrollert'));
   linjer.push(t('komponenter.resultat.beregnet', { app: app.navn, dato }));
+  linjer.push(t('komponenter.resultat.forbehold', { app: app.navn }));
   return linjer.join('\n');
 }
 
 type Kopistatus = 'klar' | 'kopiert' | 'feilet';
 
 export function Resultatkort(props: Props) {
-  const { tittel, verdi, enhet, niva = 'nasjonal', ikkeKontrollert = false, sammendrag, steg, kilder, fast = false, children } = props;
+  const { tittel, verdi, enhet, niva = 'nasjonal', sammendrag, steg, kilder, fast = false, children } = props;
   const { t, malform } = useTekst();
   const [vis, settVis] = useState(false);
   const [kopi, settKopi] = useState<{ status: Kopistatus; tekst: string }>({ status: 'klar', tekst: '' });
@@ -99,7 +97,6 @@ export function Resultatkort(props: Props) {
         </h2>
         <div class="merker merker-inline">
           <Nivamerke niva={niva} />
-          {ikkeKontrollert && <Statusmerke status="utkast" />}
         </div>
       </div>
       <p class="resultatkort-verdi" aria-live="polite">

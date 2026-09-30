@@ -33,6 +33,7 @@ export const nb = {
     stedMerknad: 'Du ser nasjonalt innhold. Lokale regler i fylket eller på skolen kan også gjelde.',
     stedValgt: 'Viser også innhold for {sted}.',
     velgSted: 'Velg fylke og skole',
+    forbehold: '{app} er utviklet privat, og opplysningene i appen kan være uriktige.',
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
@@ -119,15 +120,18 @@ export const nb = {
     versjon: 'Versjon {versjon}',
     innledning:
       '{app} hjelper skoleledere og lærere i videregående opplæring å regne ut, forstå og forklare regelverket rundt lærerstillinger og skolens drift.',
-    ansvar: {
-      tittel: 'Kildene gjelder foran appen',
-      tekst:
-        'Appen er ikke en juridisk fasit. Den forklarer regelverket og viser kildene. Ved tvil eller uenighet gjelder alltid lover, forskrifter og avtaler slik de er vedtatt. Arbeidsplanfunksjonene er illustrasjoner og kalkulatorer, ikke ekte arbeidsplaner.',
-    },
-    innhold: {
-      tittel: 'Hvordan innholdet lages',
-      tekst:
-        'Alle tekster er skrevet og gjennomgått på forhånd. Appen bruker ikke kunstig intelligens mens du bruker den. Innhold som ikke er kontrollert ennå, er merket «ikke kontrollert».',
+    erklaering: {
+      tittel: 'Brukserklæring',
+      privat:
+        '{app} er utviklet privat. Appen er ikke utgitt av en arbeidsgiver, en fylkeskommune, en arbeidstaker- eller arbeidsgiverorganisasjon eller en offentlig myndighet.',
+      garanti:
+        'Appen gir ingen garantier. Beregninger og forklaringer kan inneholde feil, være ufullstendige eller bygge på en tolkning som ikke passer i din sak. Appen er ikke en juridisk fasit. Ved tvil eller uenighet gjelder alltid lover, forskrifter og avtaler slik de er vedtatt, og de lokale avtalene og rutinene der du arbeider. Arbeidsplanfunksjonene er illustrasjoner og kalkulatorer, ikke ekte arbeidsplaner.',
+      ki: 'Utvikleren har fått støtte fra en KI-assistent for programmering (Claude Code fra Anthropic). Assistenten har skrevet programkoden og testene, lest og sammenstilt kildene og skrevet tekstene, etter bestilling fra utvikleren. Utvikleren har bestemt hva appen skal gjøre, avgjort hvordan reglene skal forstås der de er uklare, og godkjent regneeksemplene som beregningene testes mot. Ikke alle tekster og verdier er gjennomgått av utvikleren i detalj. Appen bruker ikke kunstig intelligens mens du bruker den: tekstene og reglene ligger fast i appen, og de samme tallene gir alltid det samme svaret.',
+      grunnlag:
+        'Samtidig er appen laget i god tro, som et redskap og et hjelpemiddel. Beregningene og forklaringene bygger på kilder: lover og forskrifter, tariffavtaler, læreplaner og data fra Utdanningsdirektoratet. Hver utregning kan vises trinn for trinn med kilden til hver verdi, slik at du kan kontrollere den selv. Beregningene testes mot regneeksemplene før hver ny versjon, og kildene sjekkes automatisk for endringer hver uke.',
+      innspill:
+        'Innspill til funksjonaliteten og beskjed om feil tas imot med takk. Du kan melde fra på GitHub (krever en GitHub-konto) eller gi beskjed til den som delte appen med deg.',
+      innspillLenke: 'Meld fra på GitHub',
     },
     personvern: {
       tittel: 'Personvern',
@@ -205,7 +209,7 @@ export const nb = {
       kopiTekst: 'Kopi av utregningen',
       tilResultat: 'Gå til resultatet',
       beregnet: 'Regnet ut med {app} {dato}.',
-      ikkeKontrollert: 'Verdiene er ikke kontrollert av eier.',
+      forbehold: '{app} er utviklet privat, og opplysningene kan være uriktige.',
       visUtregning: 'Vis utregning',
       skjulUtregning: 'Skjul utregning',
       utregning: 'Utregning',
@@ -224,7 +228,6 @@ export const nb = {
       lokalVerdi: 'Lokal verdi ({niva})',
     },
     status: {
-      utkast: 'Ikke kontrollert',
       kontrollert: 'Kontrollert {dato}',
       kilde_endret: 'Kilden er endret',
       bor_kontrolleres: 'Bør kontrolleres på nytt',

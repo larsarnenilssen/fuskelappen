@@ -33,6 +33,7 @@ export const nn: Tekster = {
     stedMerknad: 'Du ser nasjonalt innhald. Lokale reglar i fylket eller på skulen kan også gjelde.',
     stedValgt: 'Viser også innhald for {sted}.',
     velgSted: 'Vel fylke og skule',
+    forbehold: '{app} er utvikla privat, og opplysningane i appen kan vere uriktige.',
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
@@ -119,15 +120,18 @@ export const nn: Tekster = {
     versjon: 'Versjon {versjon}',
     innledning:
       '{app} hjelper skuleleiarar og lærarar i vidaregåande opplæring å rekne ut, forstå og forklare regelverket rundt lærarstillingar og drifta av skulen.',
-    ansvar: {
-      tittel: 'Kjeldene gjeld framfor appen',
-      tekst:
-        'Appen er ikkje ein juridisk fasit. Han forklarer regelverket og viser kjeldene. Ved tvil eller usemje gjeld alltid lover, forskrifter og avtalar slik dei er vedtekne. Arbeidsplanfunksjonane er illustrasjonar og kalkulatorar, ikkje ekte arbeidsplanar.',
-    },
-    innhold: {
-      tittel: 'Korleis innhaldet blir laga',
-      tekst:
-        'Alle tekstar er skrivne og gjennomgåtte på førehand. Appen bruker ikkje kunstig intelligens medan du bruker han. Innhald som ikkje er kontrollert enno, er merkt «ikkje kontrollert».',
+    erklaering: {
+      tittel: 'Brukserklæring',
+      privat:
+        '{app} er utvikla privat. Appen er ikkje gitt ut av ein arbeidsgivar, ein fylkeskommune, ein arbeidstakar- eller arbeidsgivarorganisasjon eller ei offentleg styresmakt.',
+      garanti:
+        'Appen gir ingen garantiar. Utrekningar og forklaringar kan innehalde feil, vere ufullstendige eller byggje på ei tolking som ikkje passar i saka di. Appen er ikkje ein juridisk fasit. Ved tvil eller usemje gjeld alltid lover, forskrifter og avtalar slik dei er vedtekne, og dei lokale avtalane og rutinane der du arbeider. Arbeidsplanfunksjonane er illustrasjonar og kalkulatorar, ikkje ekte arbeidsplanar.',
+      ki: 'Utviklaren har fått støtte frå ein KI-assistent for programmering (Claude Code frå Anthropic). Assistenten har skrive programkoden og testane, lese og samanstilt kjeldene og skrive tekstane, etter bestilling frå utviklaren. Utviklaren har bestemt kva appen skal gjere, avgjort korleis reglane skal forståast der dei er uklare, og godkjent reknedøma som utrekningane blir testa mot. Ikkje alle tekstar og verdiar er gjennomgåtte av utviklaren i detalj. Appen bruker ikkje kunstig intelligens medan du bruker han: tekstane og reglane ligg fast i appen, og dei same tala gir alltid det same svaret.',
+      grunnlag:
+        'Samtidig er appen laga i god tru, som ein reiskap og eit hjelpemiddel. Utrekningane og forklaringane byggjer på kjelder: lover og forskrifter, tariffavtalar, læreplanar og data frå Utdanningsdirektoratet. Kvar utrekning kan visast steg for steg med kjelda til kvar verdi, slik at du kan kontrollere ho sjølv. Utrekningane blir testa mot reknedøma før kvar ny versjon, og kjeldene blir sjekka automatisk for endringar kvar veke.',
+      innspill:
+        'Innspel til funksjonaliteten og melding om feil blir tekne imot med takk. Du kan melde frå på GitHub (krev ein GitHub-konto) eller gi beskjed til den som delte appen med deg.',
+      innspillLenke: 'Meld frå på GitHub',
     },
     personvern: {
       tittel: 'Personvern',
@@ -205,7 +209,7 @@ export const nn: Tekster = {
       kopiTekst: 'Kopi av utrekninga',
       tilResultat: 'Gå til resultatet',
       beregnet: 'Rekna ut med {app} {dato}.',
-      ikkeKontrollert: 'Verdiane er ikkje kontrollerte av eigar.',
+      forbehold: '{app} er utvikla privat, og opplysningane kan vere uriktige.',
       visUtregning: 'Vis utrekning',
       skjulUtregning: 'Skjul utrekning',
       utregning: 'Utrekning',
@@ -224,7 +228,6 @@ export const nn: Tekster = {
       lokalVerdi: 'Lokal verdi ({niva})',
     },
     status: {
-      utkast: 'Ikkje kontrollert',
       kontrollert: 'Kontrollert {dato}',
       kilde_endret: 'Kjelda er endra',
       bor_kontrolleres: 'Bør kontrollerast på nytt',

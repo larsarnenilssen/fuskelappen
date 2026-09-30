@@ -160,7 +160,7 @@ verdier:
 - Flere perioder kan ligge side om side. Perioden velges etter dato, og brukeren kan velge en annen.
 - SFS 2213 er videreført uendret for 1.1.2026–31.12.2027 og skal reforhandles før hovedoppgjøret i 2028. Å legge inn neste periode skal være rutine: ny fil, nye fasittester, ingen kodeendring.
 - All lesing går gjennom én funksjon, `hentVerdi(nokkel, kontekst)`, som velger periode og nivå.
-- Verdier med `kontrollert: null` vises med merket «ikke kontrollert».
+- Verdier med `kontrollert: null` vises med merket «ikke kontrollert». *(Endret 30.09.2026: merket er erstattet av en brukserklæring, se avgjørelse 016.)*
 
 ### 3.5 Innholdsmodell
 
