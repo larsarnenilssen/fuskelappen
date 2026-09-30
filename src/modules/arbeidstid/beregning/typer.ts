@@ -179,7 +179,8 @@ export type TrinnId =
   | 'selvdisponert_med_funksjon'
   | 'ikke_fordelt'
   | 'undervisningsdel'
-  | 'lonn_i_alt';
+  | 'lonn_i_alt'
+  | 'uker_i_perioden';
 
 export interface Trinn {
   id: TrinnId;
@@ -190,7 +191,7 @@ export interface Trinn {
   gruppe?: number;
 }
 
-export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'funksjon_over_stilling';
+export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'funksjon_over_stilling' | 'uker_fra_dager';
 
 export interface Utregning {
   trinn: Trinn[];

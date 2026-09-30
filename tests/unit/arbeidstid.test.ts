@@ -97,6 +97,22 @@ describe('periodebeskjeftigelse', () => {
     expect(nokkel?.operander.dager_skolear?.oppslag?.niva).toBe('skole');
     expect(nokkel?.operander.dager_skolear?.verdi).toBe(188);
   });
+
+  it('regner ut ukene fra dagene i perioden når antall uker ikke er oppgitt, og varsler', () => {
+    const okter = (uker: number | null) => [
+      { arsrammer: [rad('Bio', 'Stud.spes', 'Vg3')], elever: 30, undervisning: { type: 'okter' as const, okterPerUke: 3, minutter: 60, uker } },
+    ];
+    // 40 dager ÷ 5 = 8 uker, 3 × 60 ÷ 60 × 8 = 24 timer i perioden.
+    const r = beregnPeriodebeskjeftigelse(hent, okter(null), { dagerIPerioden: 40, dagerISkolearet: null });
+    expect(r.trinn.find((t) => t.id === 'uker_i_perioden')?.resultat.verdi).toBe(8);
+    expect(r.trinn.find((t) => t.id === 'timer_i_perioden_fra_okter')?.resultat.verdi).toBe(24);
+    expect(r.advarsler).toContain('uker_fra_dager');
+    // Oppgitt antall uker brukes som før, uten varsel.
+    const oppgitt = beregnPeriodebeskjeftigelse(hent, okter(7), { dagerIPerioden: 40, dagerISkolearet: null });
+    expect(oppgitt.trinn.find((t) => t.id === 'timer_i_perioden_fra_okter')?.resultat.verdi).toBe(21);
+    expect(oppgitt.trinn.some((t) => t.id === 'uker_i_perioden')).toBe(false);
+    expect(oppgitt.advarsler).not.toContain('uker_fra_dager');
+  });
 });
 
 describe('planfestet arbeidstid', () => {

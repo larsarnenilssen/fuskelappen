@@ -90,6 +90,8 @@
       2. **Perioderamme** = årsramme × periodenøkkel.
       3. **Beskjeftigelse i perioden** = timene læreren underviser i perioden ÷ perioderammen × 100.
 
+      Skriver du inn økter per uke, trengs antall uker i perioden. Står feltet tomt, regnes ukene ut fra dagene i perioden: dager ÷ 5 skoledager per uke. Ukene kan ha ulikt antall skoledager (fridager, ferier) eller ulik timeplan, så skriv inn antall uker eller timene i perioden om det avviker.
+
       Uten eget antall bruker kalkulatoren 190 undervisningsdager i skoleåret. Samme metode brukes i Visma InSchool.
     nn: |
       Årsrammene gjeld for eit heilt skuleår. Underviser læraren berre i ein del av året, må årsramma gjerast om til ei ramme for perioden:
@@ -97,6 +99,8 @@
       1. **Periodenøkkel** = undervisningsdagar i perioden ÷ undervisningsdagar i skuleåret. Dagane blir talde etter skuleruta.
       2. **Perioderamme** = årsramme × periodenøkkel.
       3. **Sysselsetjing i perioden** = timane læraren underviser i perioden ÷ perioderamma × 100.
+
+      Skriv du inn økter per veke, trengst talet på veker i perioden. Står feltet tomt, blir vekene rekna ut frå dagane i perioden: dagar ÷ 5 skuledagar per veke. Vekene kan ha ulikt tal på skuledagar (fridagar, feriar) eller ulik timeplan, så skriv inn talet på veker eller timane i perioden om det avvik.
 
       Utan eige tal bruker kalkulatoren 190 undervisningsdagar i skuleåret. Same metode blir brukt i Visma InSchool.
   kilder:

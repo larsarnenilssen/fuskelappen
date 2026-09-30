@@ -143,6 +143,24 @@ test.describe('arbeidstid', () => {
     await expect(resultat(page)).toContainText(/72\s866,67/);
   });
 
+  test('periode med økter per uke regner ut ukene fra dagene, og ukene kan endres', async ({ page }) => {
+    await aapne(page, '/arbeidstid/periode');
+    await page.getByLabel('Dager i perioden').fill('40');
+    await velgFag(page, 'biologi 2', 'Biologi · Studiespesialisering Vg3');
+    await page.getByRole('radio', { name: 'Økter/uke' }).check();
+    await page.getByLabel('Antall økter per uke').fill('3');
+    await page.getByRole('radio', { name: '60', exact: true }).check();
+    const uker = page.getByLabel('Uker i perioden');
+    await expect(uker).toHaveAttribute('placeholder', '8');
+    await expect(page.getByText(/Tomt felt gir 8 uker: 40 dager ÷ 5 skoledager per uke/)).toBeVisible();
+    // 3 × 60 ÷ 60 × 8 = 24 timer i perioden, det samme som 24 timer skrevet inn.
+    await expect(page.locator('.merknad-advarsel', { hasText: 'Uker i perioden er regnet ut fra dagene' })).toBeVisible();
+    const medUker = await resultat(page).textContent();
+    await uker.fill('7');
+    await expect(resultat(page)).not.toHaveText(medUker ?? '');
+    await expect(page.locator('.merknad-advarsel', { hasText: 'Uker i perioden er regnet ut fra dagene' })).toHaveCount(0);
+  });
+
   test('fordelingen vises som diagram og tabell med timer per uke', async ({ page }) => {
     await aapne(page, '/arbeidstid/fordeling');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');

@@ -121,6 +121,8 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     over_hel_stilling: 'Undervisning og funksjonar er til saman meir enn ei heil stilling.',
     motetid_for_stor: 'Møtetida er meir enn den planfesta tida som er att etter undervisninga og funksjonane. Diagrammet viser då inga anna planfesta tid.',
     funksjon_over_stilling: 'Funksjonane er større enn stillingsprosenten. Stillinga er sett lik funksjonane, utan undervisning.',
+    uker_fra_dager:
+      'Veker i perioden er rekna ut frå dagane (dagar ÷ skuledagar per veke). Har vekene ulikt tal på skuledagar eller ulik timeplan, bør du skrive inn talet på veker eller timane i perioden sjølv.',
     mangler_elevtall: 'Faget er merkt * i vedlegg 1. Skriv inn talet på elevar for å sjå om årsramma skal aukast.',
   },
   feil: {
@@ -161,6 +163,9 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   },
   periode: {
     heleAret: 'Tilsvarande for heile skuleåret',
+    ukerFraDager:
+      'Tomt felt gir {uker} veker: {dager} dagar ÷ {perUke} skuledagar per veke. Vekene i perioden kan ha ulikt tal på skuledagar (fridagar, feriar) eller ulik timeplan. Skriv inn talet om det avvik.',
+    ukerFyllDager: 'Fyll inn dagar i perioden øvst, så blir vekene rekna ut. Du kan også skrive inn talet sjølv.',
     dager: 'Dagar i perioden',
     dagerHjelp: 'Undervisningsdagar etter skuleruta.',
     skolear: 'Dagar i skuleåret',
@@ -292,6 +297,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     stjernetillegg: { tekst: 'Fag merkte * med 1–15 elevar: årsramma blir auka', formel: '{arsramme} + {stjernetillegg}' },
     beskjeftigelse: { tekst: 'Sysselsetjing', formel: '{arstimer} ÷ {arsramme} × 100' },
     sum_beskjeftigelse: { tekst: 'Samla sysselsetjing', formel: '{beskjeftigelser}' },
+    uker_i_perioden: { tekst: 'Veker i perioden, rekna ut frå dagane', formel: '{dager_periode} ÷ {per_uke}' },
     timer_i_perioden_fra_okter: { tekst: 'Økter per veke gjort om til timar i perioden', formel: '{okter} × {minutter} ÷ 60 × {uker}' },
     periodenokkel: { tekst: 'Periodenøkkel: delen av skuleåret perioden utgjer', formel: '{dager_periode} ÷ {dager_skolear}' },
     perioderamme: { tekst: 'Perioderamme: årsramma for perioden', formel: '{arsramme} × {periodenokkel}' },

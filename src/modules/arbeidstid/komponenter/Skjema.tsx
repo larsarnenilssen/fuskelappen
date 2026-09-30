@@ -427,8 +427,9 @@ export function tilGruppe(g: Gruppetilstand, rader: readonly Arsrammerad[], peri
     if (g.arstimer === null) return null;
     return { arsrammer, elever: g.faaElever, undervisning: { type: 'arstimer', arstimer: g.arstimer } };
   }
+  // I en periode betyr tomt felt at ukene regnes ut fra dagene i perioden.
   const uker = g.endreUker || periode ? g.uker : null;
-  if (g.okter === null || g.minutter === null || (periode && uker === null)) return null;
+  if (g.okter === null || g.minutter === null) return null;
   return { arsrammer, elever: g.faaElever, undervisning: { type: 'okter', okterPerUke: g.okter, minutter: g.minutter, uker } };
 }
 
@@ -455,6 +456,7 @@ export function Gruppekort({
   indeks,
   periode,
   standardUker,
+  ukerHjelp,
   delresultat,
   kanFjernes,
   arstimer,
@@ -467,6 +469,7 @@ export function Gruppekort({
   indeks: Fagindeks;
   periode: boolean;
   standardUker: number;
+  ukerHjelp?: string;
   delresultat: string | null;
   kanFjernes: boolean;
   arstimer?: ReadonlyMap<number, Arstimerad>;
@@ -552,6 +555,8 @@ export function Gruppekort({
                 key="uker"
                 class="felt-kompakt"
                 etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')}
+                {...(periode && standardUker > 0 ? { plassholder: formaterTall(standardUker, 1) } : {})}
+                {...(periode && ukerHjelp ? { hjelpetekst: ukerHjelp } : {})}
                 verdi={gruppe.uker}
                 min={0}
                 maks={60}
@@ -579,6 +584,7 @@ export function Grupper({
   indeks,
   periode,
   standardUker,
+  ukerHjelp,
   delresultater,
   arstimer,
   onEndring,
@@ -588,6 +594,8 @@ export function Grupper({
   indeks: Fagindeks;
   periode: boolean;
   standardUker: number;
+  /** Hjelpetekst for antall uker i en periode (ukene regnes ut fra dagene når feltet er tomt). */
+  ukerHjelp?: string;
   /** Beskjeftigelse per gruppe (prosent), vises på kortet når det finnes flere. */
   delresultater?: (number | null)[];
   /** Kjente årstimer per rad i vedlegg 1. Fylles inn når brukeren velger fag. */
@@ -608,6 +616,7 @@ export function Grupper({
             indeks={indeks}
             periode={periode}
             standardUker={standardUker}
+            {...(ukerHjelp ? { ukerHjelp } : {})}
             delresultat={grupper.length > 1 && del != null ? formaterTall(del) : null}
             kanFjernes={grupper.length > 1}
             {...(arstimer ? { arstimer } : {})}
