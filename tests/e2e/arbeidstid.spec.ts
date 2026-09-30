@@ -312,6 +312,17 @@ test.describe('arbeidstid', () => {
     await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
   });
 
+  test('arbeidsplanen viser fordelingen for stillingen før noe er fylt ut', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
+    await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
+    await expect(page.getByText(/Delen av stillingen som ikke er fylt med fag og funksjoner \(100 %\)/)).toBeVisible();
+    await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('50');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('575,0');
+  });
+
   test('arbeidsplanen har fordelingsdiagram og kan regne ut årslønn', async ({ page }) => {
     await aapne(page, '/arbeidstid/stillingsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');

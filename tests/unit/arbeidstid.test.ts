@@ -197,6 +197,34 @@ describe('fordeling', () => {
     expect(over.stilling.verdi).toBe(20);
   });
 
+  it('med oppgitt stilling fordeles også den delen som ikke er fylt med fag og funksjoner', () => {
+    const del = (r: ReturnType<typeof beregnFordeling>, id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    // 100 % stilling uten fag, møter eller funksjoner: all planfestet tid er annen planfestet tid.
+    const tom = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    expect(tom.stilling.verdi).toBe(100);
+    expect(del(tom, 'annen_planfestet')).toBeCloseTo(1150);
+    expect(del(tom, 'selvdisponert')).toBeCloseTo(537.5);
+    expect(del(tom, 'undervisning')).toBe(0);
+
+    // 50 % stilling: halvparten.
+    const halv = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 50 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    expect(del(halv, 'annen_planfestet')).toBeCloseTo(575);
+    expect(del(halv, 'selvdisponert')).toBeCloseTo(268.75);
+
+    // 100 % stilling med 80 % undervisning: resten (20 %) regnes som undervisningsdelen.
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 2 });
+    expect(r.trinn.find((t) => t.id === 'ikke_fordelt')?.resultat.verdi).toBeCloseTo(20);
+    expect(del(r, 'annen_planfestet')).toBeCloseTo(1150 - 420 - 76);
+    expect(del(r, 'selvdisponert')).toBeCloseTo(537.5);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+
+    // Er fag og funksjoner mer enn stillingen, er det de som fordeles, som før.
+    const over = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    const utenStilling = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    expect(over.deler).toEqual(utenStilling.deler);
+    expect(over.stilling.verdi).toBeCloseTo(110);
+  });
+
   it('funksjoner som ikke utvider planfestet tid, fordeles som undervisningen', () => {
     // 80 % undervisning (420 av 525) og 20 % kontaktlærer uten utvidelse: planfestet tid blir 1150 som for hel undervisning.
     const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 20, moterPerUke: 0 });

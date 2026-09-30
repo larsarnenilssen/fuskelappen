@@ -133,20 +133,23 @@ export default function Stillingsplan() {
       ? beregnStillingsplan(hent, { stilling: s.stilling, grupper: fylte.map((x) => x.inn), funksjoner, timerIGruppe: fylte.length > 0 ? valgtIndeks : null })
       : null,
   );
-  // Fordelingen av arbeidstiden for det som er lagt inn: fagene og summen av funksjonene.
-  // Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
+  // Fordelingen av arbeidstiden i stillingen vises alltid, også før noe er lagt inn: fagene, funksjonene og
+  // den delen av stillingen som ikke er fylt ennå. Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
   const sumFunksjoner = (utvid: boolean) => s.funksjoner.filter((f) => utvider(f) === utvid).reduce((sum, f) => sum + (f.prosent ?? 0), 0);
   const utenUtvidelse = sumFunksjoner(false);
-  const fordeling = resultat
+  const harStilling = s.stilling !== null && s.stilling > 0;
+  const fordeling =
+    resultat || harStilling
     ? prov(() =>
         beregnFordeling(hent, {
-          undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn) },
+          undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn), ...(harStilling ? { stilling: s.stilling ?? 0 } : {}) },
           funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
           funksjonUtenUtvidelse: utenUtvidelse,
           moterPerUke: s.moter ?? 0,
         }),
       ).resultat
     : null;
+  const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
   const lonn = lonnsgrunnlag && s.stilling !== null && s.stilling > 0 ? prov(() => beregnArslonn(hent, lonnsgrunnlag, s.stilling ?? 0)) : null;
   let j = 0;
@@ -246,16 +249,17 @@ export default function Stillingsplan() {
                   </a>
                 )}
               </Utregningskort>
-              {fordeling && (
-                <>
-                  <Fordelingsvisning resultat={fordeling} />
-                  {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
-                  {!iBalanse && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
-                </>
-              )}
             </>
           ) : (
             !feil && <ManglerInndata />
+          )}
+          {fordeling && (
+            <>
+              <Fordelingsvisning resultat={fordeling} />
+              {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
+              {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
+              {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+            </>
           )}
           {lonn?.feil && <Feilmelding feil={lonn.feil} />}
           {lonn?.resultat && (

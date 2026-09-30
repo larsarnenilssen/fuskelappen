@@ -10,7 +10,7 @@ Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og st
 
 ### Lagt til
 
-- **Arbeidsplan** (tidligere Stillingsplan) viser fordelingen av arbeidstiden i samme diagram og tabell som Fordeling, ut fra fagene og funksjonene som er lagt inn. Møtetid per uke kan legges inn.
+- **Arbeidsplan** (tidligere Stillingsplan) viser fordelingen av arbeidstiden i samme diagram og tabell som Fordeling. Diagrammet vises hele tiden, ut fra stillingsprosenten: en hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv. Fag, funksjoner og møtetid per uke fyller stillingen etter hvert.
 - Bryteren «Utvider planfestet tid» på hver funksjon i Arbeidsplan. Slås den av (f.eks. for kontaktlærer), fordeles funksjonen i diagrammet som undervisningen, og planfestet tid utvides ikke.
 - Lagrede varianter kan få navn, f.eks. «Før endring». Navnefeltet åpnes når du lagrer, og blyanten ved navnet endrer det.
 - «Regn ut årslønn» i Arbeidsplan: velg garantilønn (stillingsgruppe og ansiennitet) eller skriv inn egen lønn, og se årslønnen i stillingen.
