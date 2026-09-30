@@ -4,12 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.9.0] – 2026-09-30
+
 ### Lagt til
 
 - **Fag og læreplaner** (fase 2): søk på fagnavn og fagkode, og filter på utdanningsprogram, trinn, fagtype, vurderingsordning, eksamensform og årstimetall, for alle fagkoder i videregående i Grep.
 - **Fagside** med fagkode, fagtype, trinn, utdanningsprogram, årstimetall og vurderingsordning for elever og privatister, og kompetansemål, underveisvurdering, standpunktvurdering og vurderingsordning fra læreplanen, med lenke til læreplanen på udir.no.
 - Læreplanteksten vises på målformen læreplanen er fastsatt i (bokmål, nynorsk eller samisk), merket og uoversatt.
 - Fag kan legges til som favoritter, og fagene er med i det samlede søket.
+- **Fagvalg i kalkulatorene:** søk på fagkode eller fagnavn fra Udir. Valgt fag fyller inn årstimetallet og årsrammen fra koblingen, og det står om årsrammen er koblet direkte eller med regel. Gir faget ulik årsramme på ulike program eller trinn, velger du program og trinn.
+- Du kan overstyre årstimer og årsramme. Det merkes, og du kan gå tilbake til tallene fra Udir og koblingen med én knapp.
 
 ### Lagt til (for eier)
 

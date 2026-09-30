@@ -74,7 +74,7 @@ export function finnRad(
  * eller skrevet inn av brukeren (60-minutters enheter).
  */
 export type Arsrammevalg =
-  | { type: 'rad'; rad: Arsrammerad }
+  | { type: 'rad'; rad: Arsrammerad; /** Fagkoden i Grep når faget er valgt med fagkode (fase 2). */ fagkode?: string }
   | { type: 'niva'; t60: number; t45: number }
   | { type: 'manuell'; t60: number; stjerne: boolean };
 
@@ -88,7 +88,7 @@ function somOperand(valg: Arsrammevalg, tabell: Oppslag | undefined): Operand {
     verdi: valg.rad.t60,
     enhet: 'arsrammetimer',
     opprinnelse: 'tabell',
-    rad: radNavn(valg.rad),
+    rad: valg.fagkode ? `${radNavn(valg.rad)} · ${valg.fagkode}` : radNavn(valg.rad),
     ...(tabell ? { oppslag: tabell } : {}),
   };
 }
