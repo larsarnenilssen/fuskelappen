@@ -203,7 +203,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     utenUtvidelseMerknad: 'Funksjonar som ikkje utvidar planfesta tid ({prosent} %), er fordelte som undervisninga: ein del planfesta tid og ein del tid læraren disponerer sjølv.',
     tillegg: 'Møte, planleggingsdagar og løn',
     planlegging: 'Timar på planleggingsdagar',
-    planleggingHjelp: 'Tomt felt gir {timer} timar (6 dagar à 7,5 timar), som for ein lærar i heil stilling. Skriv inn eit anna tal ved deltid, for ein periode eller om skulen har andre planleggingsdagar.',
+    planleggingHjelp: 'Tomt felt gir {timer} timar (6 dagar à 7,5 timar), som for ein lærar i heil stilling. Skriv inn eit anna tal ved deltid, for ein periode, om skulen har andre planleggingsdagar, eller for lærarar som er 60 år og eldre når ferien blir lagd til planleggingsdagane.',
     planleggingOppsummering: 'planleggingsdagar {timer} t',
     moterHjelp: 'Valfritt. Faste møte i planfesta tid, til diagrammet over arbeidstida.',
     visLonn: 'Rekn ut løn',

@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.7.2] – 2026-09-30
+
+### Endret
+
+- Forklaringen av planleggingsdager sier at timene for lærere som er 60 år og eldre avhenger av hvor de fem ekstra feriedagene legges.
+
+### Dokumentasjon
+
+- README har fått en liste over kjente begrensninger. Første punkt: fordelingstabellen går utenfor skjermen ved skriftstørrelse på 150 % eller mer.
+
 ## [0.7.1] – 2026-09-30
 
 ### Endret
