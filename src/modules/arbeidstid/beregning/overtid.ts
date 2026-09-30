@@ -1,4 +1,5 @@
-// Fast overtid: beskjeftigelse ut over 100 % betales som overtid.
+// Fast overtid: beskjeftigelse ut over 100 % betales som overtid. Variabel lønn: beskjeftigelse ut over en
+// stilling under 100 %, opp til hel stilling, regnes som vikartimer: kalkulert tid × vanlig timelønn (eier 30.09.2026).
 // SFS 2213 punkt 5.2: overtidsbetaling gis for det antall timer årsrammen for undervisning er økt med.
 // Hovedtariffavtalen § 6.4 og § 12.4: tillegget regnes ut fra timelønn for undervisning; § 6.5.3: 50 % tillegg.
 // Overtidsbetaling = overtidstimer × kalkulert tid per time × timelønn × (100 + 50) ÷ 100.
@@ -17,6 +18,8 @@ export interface Overtid {
   lonn: Lonnsgrunnlag;
   /** Høyere feriepengesats for arbeidstakere over 60 år. */
   over60?: boolean;
+  /** Når beskjeftigelsen gjelder en periode: overtidsprosenten i perioden × nøkkelen gir prosenten på årsbasis. */
+  periodenokkel?: Operand;
 }
 
 export interface OvertidResultat extends Utregning {
@@ -34,7 +37,9 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
   const valg = velgArsramme(hent, o.arsrammer, o.elever);
   const advarsler: AdvarselId[] = valg.manglerElevtall ? ['mangler_elevtall'] : [];
   const b = inndata('beskjeftigelse', o.beskjeftigelse, 'prosent');
-  const prosent = trinn('overtidsprosent', { beskjeftigelse: b }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100));
+  const prosent = o.periodenokkel
+    ? trinn('overtidsprosent_periode', { beskjeftigelse: b, periodenokkel: o.periodenokkel }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100) * o.periodenokkel.verdi)
+    : trinn('overtidsprosent', { beskjeftigelse: b }, 'overtidsprosent', 'prosent', Math.max(0, o.beskjeftigelse - 100));
   const timer = trinn('overtidstimer', { overtidsprosent: prosent.resultat, arsramme: valg.arsramme }, 'overtidstimer', 'arsrammetimer', (prosent.resultat.verdi * valg.arsramme.verdi) / 100);
   const konstant = regel(hent, 'hta.timelonn_konstant', 'timelonn_konstant', 'tall');
   const kalkulert = trinn(
@@ -63,6 +68,50 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
     betaling: betaling.resultat,
     feriepenger: ferie.resultat,
     trinn: alle,
+    advarsler,
+  };
+}
+
+export interface VariabelLonn {
+  /** Beskjeftigelsen ut over stillingen, opp til hel stilling, i prosent. */
+  prosent: Operand;
+  arsrammer: Arsrammevalg[];
+  elever: Elevtall;
+  lonn: Lonnsgrunnlag;
+}
+
+export interface VariabelLonnResultat extends Utregning {
+  timer: Operand;
+  kalkulertTid: Operand;
+  timelonn: Operand;
+  betaling: Operand;
+}
+
+/**
+ * Variabel lønn: beskjeftigelse ut over stillingen, opp til hel stilling, regnes som vikartimer (eier 30.09.2026):
+ * prosenten gjøres om til undervisningstimer i faget, og timene til kalkulert tid, som betales med vanlig timelønn
+ * for undervisning (som beregnTimevikar). Overtid er det samme med 50 % tillegg.
+ */
+export function beregnVariabelLonn(hent: Hent, v: VariabelLonn): VariabelLonnResultat {
+  const valg = velgArsramme(hent, v.arsrammer, v.elever);
+  const advarsler: AdvarselId[] = valg.manglerElevtall ? ['mangler_elevtall'] : [];
+  const timer = trinn('variabel_timer', { variabel: v.prosent, arsramme: valg.arsramme }, 'variabel_timer', 'arsrammetimer', (v.prosent.verdi * valg.arsramme.verdi) / 100);
+  const konstant = regel(hent, 'hta.timelonn_konstant', 'timelonn_konstant', 'tall');
+  const kalkulert = trinn(
+    'kalkulert_tid_variabel',
+    { timer: timer.resultat, konstant, arsramme: valg.arsramme },
+    'kalkulert_tid',
+    'timer',
+    (timer.resultat.verdi * konstant.verdi) / valg.arsramme.verdi,
+  );
+  const tl = timelonnForUndervisning(hent, v.lonn);
+  const betaling = trinn('variabel_lonn', { kalkulert_tid: kalkulert.resultat, timelonn: tl.resultat }, 'variabel_lonn', 'kroner', kalkulert.resultat.verdi * tl.resultat.verdi);
+  return {
+    timer: timer.resultat,
+    kalkulertTid: kalkulert.resultat,
+    timelonn: tl.resultat,
+    betaling: betaling.resultat,
+    trinn: [...valg.trinn, timer, kalkulert, tl, betaling],
     advarsler,
   };
 }

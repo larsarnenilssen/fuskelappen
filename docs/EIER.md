@@ -116,7 +116,8 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 
 - [ ] Beskjeftigelse: søk etter fag på navn, kallenavn (R1, 2P) og koder (ENG, BAT, HEA). Prøv ett fag, et fag merket * med «15 eller færre elever», to fag, og en blandet gruppe.
 - [ ] Søkeordene: kallenavn og koder står i `rules/sfs2213/fagsok-2026-2027.yaml`. Se særlig over tabellen som kobler programnavnene i vedlegg 1 til utdanningsprogrammene.
-- [ ] Periodebeskjeftigelse (også økter per uke med uker regnet ut fra dagene), vikartimer (ansatt og timevikar) og overtid.
+- [ ] Arbeidsplan for en periode: periodebeskjeftigelse (også økter per uke med uker regnet ut fra dagene), funksjoner i perioden, prosent på årsbasis, fordeling og lønn for perioden.
+- [ ] Vikartimer (ansatt og timevikar) og overtid.
 - [ ] Årstimer: velg noen fag og se at riktig årstimetall fylles inn. Tabellen står i `rules/sfs2213/arstimer-2026-2027.yaml`, med fagkodene i Grep.
 - [ ] Programfag: søk på en fagkode (f.eks. HEA2005) og se at årstimetallet fra Udir stemmer.
 - [ ] Lagrede varianter: lagre, endre og hent fram igjen.
@@ -125,6 +126,7 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Regelverdiene for godtgjøring i SFS 2213 punkt 9.1: 12 000 kr for kontaktlærer og for rådgiver/sosiallærer (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Arbeidsplan: slå av «Utvider planfestet tid» for en funksjon på 20 % i hel stilling. Planfestet tid skal da bli 1150 timer, ikke 1257,5.
 - [ ] Arbeidsplan: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår. 20 % og 80 % funksjon skal gi 1257,5 og 1580 timer planfestet tid.
+- [ ] Arbeidsplan: variabel lønn for det som er over en stilling under 100 %, opp til hel stilling (regnet som vikartimer: kalkulert tid × timelønn), og overtid for det som er over 100 %.
 - [ ] Arbeidsplan: kontaktlærer i årsrammetimer (28,5 = 4,69 %), og redusert undervisning for nyutdannet, 57 år og 60 år (60 år gir årsverk 1650, arbeidsår på 191 dager eller 38,2 uker, planfestet tid 1124,44 og høyere feriepengesats).
 - [ ] Regelverdiene for livsfasetiltak i punkt 6: 6 %, 6 % og 12,5 % (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Skriv ut Arbeidsplan eller lagre som PDF fra knappen ved tittelen.

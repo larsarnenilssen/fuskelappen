@@ -40,6 +40,6 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **ks-fou-sfs2213:** Bakgrunn for forklaringen av «annet elevrettet arbeid». Endres ikke; sjekkes derfor ikke.
 - **udf-krav-sfs2213-2025:** Partens syn på «annet elevrettet arbeid». Bakgrunn, gjengis med egne ord.
 - **inschool-vikartimer:** Bakgrunn for vikarkalkulatoren (kalkulert tid og timelønn). Regelen står i hovedtariffavtalen § 12.4.
-- **inschool-periodebeskjeftigelse:** Bakgrunn for periodekalkulatoren (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
+- **inschool-periodebeskjeftigelse:** Bakgrunn for perioder i Arbeidsplan (periodenøkkelen). Årsrammen står i vedlegg 1 til SFS 2213.
 - **udir-nsr:** Skolelisten i innstillingene. Oppdateres automatisk; varsel bare ved feil.
 - **ssb-fylkesinndeling:** Fylkeslisten i content/fylker.yaml. Endres sjelden og oppdateres for hånd.

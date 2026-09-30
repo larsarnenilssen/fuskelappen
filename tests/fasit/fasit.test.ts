@@ -194,6 +194,8 @@ function regn(f: Fasit): Record<string, number> {
         beskjeftigelse: plan.beskjeftigelse.verdi,
         differanse: plan.differanse.verdi,
         differanse_timer: plan.differanseTimer?.verdi ?? NaN,
+        variabel_prosent: plan.variabel.verdi,
+        overtid_prosent: plan.overtid.verdi,
         arsverk: f.arsverk.verdi,
         undervisningstimer: del('undervisning'),
         motetid: del('motetid'),
@@ -216,7 +218,7 @@ function regn(f: Fasit): Record<string, number> {
         overtid: o ? { beskjeftigelse: o.beskjeftigelse, arsrammer: arsrammer(hent, o.arsrammer), elever: o.elever ?? null } : null,
         over60: i.over60 ?? false,
       });
-      return { arslonn: r.arslonn.verdi, overtid: r.overtid?.verdi ?? 0, samlet: r.samlet.verdi, feriepenger: r.feriepenger.verdi };
+      return { arslonn: r.arslonn.verdi, variabel: r.variabel?.verdi ?? 0, overtid: r.overtid?.verdi ?? 0, samlet: r.samlet.verdi, feriepenger: r.feriepenger.verdi };
     }
     default:
       throw new Error(`Ukjent kalkulator i ${f.id}: ${f.kalkulator}`);

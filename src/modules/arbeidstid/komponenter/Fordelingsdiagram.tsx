@@ -128,6 +128,8 @@ export interface Ukegrenser {
 }
 
 export function Fordelingsvisning({ resultat, uke, children }: { resultat: Fordelingsresultat; uke?: Ukegrenser; children?: ComponentChildren }) {
+  // I en periode gjelder timene perioden, og ukene er periodens del av arbeidsåret.
+  const iPeriode = resultat.periodenokkel !== null;
   const { t } = useTekst();
   const ramme = useRef<HTMLDivElement>(null);
   const [stor, settStor] = useState(false);
@@ -160,7 +162,7 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
             kontroll={innhold}
             oppsummering={oppsummering}
           >
-            {t('arbeidstid.fordeling.diagramTittel')}
+            {iPeriode ? t('arbeidstid.fordeling.diagramTittelPeriode') : t('arbeidstid.fordeling.diagramTittel')}
           </Sammenleggknapp>
         </h2>
         {/* Lokale verdier (fylke eller skole), f.eks. lokalt avtalt planfestet tid, merkes med nivå. */}
@@ -185,7 +187,9 @@ export function Fordelingsvisning({ resultat, uke, children }: { resultat: Forde
                 dager: tallTekst(resultat.utvidelseDager.verdi, 1),
                 uker: tallTekst(uker, 1),
               })
-            : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
+            : iPeriode
+              ? t('arbeidstid.fordeling.perUkePeriode', { uker: tallTekst(uker, 1) })
+              : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
         </p>
         {uke && uker > 0 && (
           <Ukemaaler planfestet={planfestet / uker} total={totalt / uker} maksUke={uke.maksUke} maksDag={uke.maksDag} dagerPerUke={uke.dagerPerUke} />

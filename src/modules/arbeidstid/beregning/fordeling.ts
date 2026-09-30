@@ -17,9 +17,11 @@
 // For lærere som er 60 år og eldre er årsverket 1650 timer (punkt 4). De 37,5 timene er fem arbeidsdager ekstra ferie,
 // så arbeidsåret er fem dager kortere: 191 dager eller 38,2 uker. Planfestet tid er samme andel av årsverket som for
 // andre: 1150 × 1650 ÷ 1687,5 (eier 30.09.2026).
+// I en periode regnes fordelingen som for et helt år med prosentene i perioden, og timene ganges til slutt med
+// periodenøkkelen (dager i perioden ÷ dager i skoleåret). Timene per uke blir da de samme som for et helt år.
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
 // regnes med det utvidede arbeidsåret.
-import { beregnBeskjeftigelse, type Gruppe } from './beskjeftigelse.ts';
+import { beregnBeskjeftigelse, beregnPeriodebeskjeftigelse, type Gruppe, type Periode } from './beskjeftigelse.ts';
 import { arbeidsaaret, funksjonsprosent, type Reduksjon } from './planfestet.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
@@ -34,6 +36,8 @@ export interface Fordelingsinndata {
   moterPerUke: number;
   /** Læreren er 60 år eller eldre: årsverket er 1650 timer (punkt 4), og arbeidsåret fem dager kortere. */
   over60?: boolean;
+  /** En periode av skoleåret. Fagene er da timer i perioden, og timene i fordelingen gjelder perioden. */
+  periode?: Periode;
 }
 
 /** Delene i diagrammet, i rekkefølge. Alle i timer per år. */
@@ -57,6 +61,8 @@ export interface Fordelingsresultat extends Utregning {
   /** Høyeste planfestede tid per uke i snitt (37,5), til forklaringen. */
   planfestetMaksUke: Operand;
   deler: Fordelingsdel[];
+  /** Periodenøkkelen timene er ganget med, eller null for hele skoleåret. */
+  periodenokkel: Operand | null;
 }
 
 export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsresultat {
@@ -66,10 +72,13 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
   const utenUtvidelse = G > 0 ? inndata('funksjon_uten_utvidelse', G, 'prosent') : null;
   // Alle funksjoner, også dem som ikke utvider planfestet tid.
   const alleFunksjoner: Operand = utenUtvidelse ? { navn: 'funksjoner', verdi: F.verdi + G, enhet: 'prosent', opprinnelse: 'inndata', liste: [F.verdi, G] } : F;
-  const b = beregnBeskjeftigelse(hent, inn.grupper);
+  const b = inn.periode ? beregnPeriodebeskjeftigelse(hent, inn.grupper, inn.periode) : beregnBeskjeftigelse(hent, inn.grupper);
+  // Periodenøkkelen, eller 1 for hele skoleåret. Timene i perioden ÷ nøkkelen gir timene på årsbasis.
+  const nokkel = b.trinn.find((tr) => tr.id === 'periodenokkel')?.resultat ?? null;
+  const k = nokkel?.verdi ?? 1;
   const undervisningstimer: Operand = {
     navn: 'arstimer',
-    verdi: b.grupper.reduce((sum, g) => sum + g.timer.verdi, 0),
+    verdi: b.grupper.reduce((sum, g) => sum + g.timer.verdi, 0) / k,
     enhet: 'timer',
     opprinnelse: 'trinn',
     liste: b.grupper.map((g) => g.timer.verdi),
@@ -210,17 +219,18 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     beskjeftigelse: B,
     funksjonsprosent: F,
     stilling: stilling.resultat,
-    arsverk: arsverkStilling.resultat,
-    arbeidsaarUker: uker,
-    utvidelseDager,
+    arsverk: { ...arsverkStilling.resultat, verdi: arsverkStilling.resultat.verdi * k },
+    arbeidsaarUker: { ...uker, verdi: uker.verdi * k },
+    utvidelseDager: { ...utvidelseDager, verdi: utvidelseDager.verdi * k },
     planfestetMaksUke: maksUke,
     deler: [
-      { id: 'undervisning', timer: undervisningstimer.verdi, planfestet: true },
-      { id: 'motetid', timer: motetid.resultat.verdi, planfestet: true },
-      { id: 'annen_planfestet', timer: Math.max(0, annen.resultat.verdi), planfestet: true },
-      { id: 'funksjonstid', timer: funksjonsdel, planfestet: true },
-      { id: 'selvdisponert', timer: selv.resultat.verdi, planfestet: false },
+      { id: 'undervisning', timer: undervisningstimer.verdi * k, planfestet: true },
+      { id: 'motetid', timer: motetid.resultat.verdi * k, planfestet: true },
+      { id: 'annen_planfestet', timer: Math.max(0, annen.resultat.verdi) * k, planfestet: true },
+      { id: 'funksjonstid', timer: funksjonsdel * k, planfestet: true },
+      { id: 'selvdisponert', timer: selv.resultat.verdi * k, planfestet: false },
     ],
+    periodenokkel: nokkel,
     trinn: trinnliste,
     advarsler: [...advarsler],
   };

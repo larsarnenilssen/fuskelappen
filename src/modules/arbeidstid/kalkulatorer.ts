@@ -15,7 +15,6 @@ export interface Kalkulator {
 const ider: { id: KalkulatorId; ikon: Ikonnavn }[] = [
   { id: 'arbeidsplan', ikon: 'kategori' },
   { id: 'beskjeftigelse', ikon: 'kalkulator' },
-  { id: 'periode', ikon: 'klokke' },
   { id: 'vikar', ikon: 'kalkulator' },
   { id: 'overtid', ikon: 'kalkulator' },
 ];
