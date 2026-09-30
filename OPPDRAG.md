@@ -483,7 +483,8 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Hva «utvidet planfestet arbeidstid ved funksjoner» omfatter, og regler for vikarberegning | ved start av fase 1 | Avklart. Hver funksjon kan utvide planfestet tid eller ikke. |
 | Fasiteksempler for SFS 2213 | fase 1 | 001–023 er godkjent. |
 | Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
-| Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Ikke med. Praksis inntil videre: bare beskjeftigelse over 100 %. |
+| Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Praksis inntil videre (eier 30.09.2026): beskjeftigelse over stillingen og opp til 100 % gir variabel lønn med vanlig timelønn, og bare beskjeftigelse over 100 % gir overtid. |
+| Periodebeskjeftigelse med funksjoner, eller som del av Arbeidsplan | fase 1 | Forslag sendt til eier |
 | InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Venter |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
 

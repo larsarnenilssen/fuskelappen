@@ -1,4 +1,5 @@
-// Fast overtid: beskjeftigelse ut over 100 % betales som overtid.
+// Fast overtid: beskjeftigelse ut over 100 % betales som overtid. Variabel lønn: beskjeftigelse ut over en
+// stilling under 100 %, opp til hel stilling, betales med vanlig timelønn (eier 30.09.2026).
 // SFS 2213 punkt 5.2: overtidsbetaling gis for det antall timer årsrammen for undervisning er økt med.
 // Hovedtariffavtalen § 6.4 og § 12.4: tillegget regnes ut fra timelønn for undervisning; § 6.5.3: 50 % tillegg.
 // Overtidsbetaling = overtidstimer × kalkulert tid per time × timelønn × (100 + 50) ÷ 100.
@@ -63,6 +64,49 @@ export function beregnOvertid(hent: Hent, o: Overtid): OvertidResultat {
     betaling: betaling.resultat,
     feriepenger: ferie.resultat,
     trinn: alle,
+    advarsler,
+  };
+}
+
+export interface VariabelLonn {
+  /** Beskjeftigelsen ut over stillingen, opp til hel stilling, i prosent. */
+  prosent: Operand;
+  arsrammer: Arsrammevalg[];
+  elever: Elevtall;
+  lonn: Lonnsgrunnlag;
+}
+
+export interface VariabelLonnResultat extends Utregning {
+  timer: Operand;
+  kalkulertTid: Operand;
+  timelonn: Operand;
+  betaling: Operand;
+}
+
+/**
+ * Variabel lønn: beskjeftigelse ut over stillingen, opp til hel stilling, betales med vanlig timelønn for undervisning.
+ * Regnes som overtidsbetalingen, men uten overtidstillegget (eier 30.09.2026: variabel lønn 1×, overtid 1,5×).
+ */
+export function beregnVariabelLonn(hent: Hent, v: VariabelLonn): VariabelLonnResultat {
+  const valg = velgArsramme(hent, v.arsrammer, v.elever);
+  const advarsler: AdvarselId[] = valg.manglerElevtall ? ['mangler_elevtall'] : [];
+  const timer = trinn('variabel_timer', { variabel: v.prosent, arsramme: valg.arsramme }, 'variabel_timer', 'arsrammetimer', (v.prosent.verdi * valg.arsramme.verdi) / 100);
+  const konstant = regel(hent, 'hta.timelonn_konstant', 'timelonn_konstant', 'tall');
+  const kalkulert = trinn(
+    'kalkulert_tid_variabel',
+    { timer: timer.resultat, konstant, arsramme: valg.arsramme },
+    'kalkulert_tid',
+    'timer',
+    (timer.resultat.verdi * konstant.verdi) / valg.arsramme.verdi,
+  );
+  const tl = timelonnForUndervisning(hent, v.lonn);
+  const betaling = trinn('variabel_lonn', { kalkulert_tid: kalkulert.resultat, timelonn: tl.resultat }, 'variabel_lonn', 'kroner', kalkulert.resultat.verdi * tl.resultat.verdi);
+  return {
+    timer: timer.resultat,
+    kalkulertTid: kalkulert.resultat,
+    timelonn: tl.resultat,
+    betaling: betaling.resultat,
+    trinn: [...valg.trinn, timer, kalkulert, tl, betaling],
     advarsler,
   };
 }

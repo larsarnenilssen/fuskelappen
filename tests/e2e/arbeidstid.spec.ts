@@ -348,8 +348,13 @@ test.describe('arbeidstid', () => {
     await page.getByLabel('Årslønn i kroner').fill('600000');
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('80');
     const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/480\s000/);
-    await expect(lonn).toContainText(/Feriepenger i tillegg\s*57\s600/);
+    // 100 % beskjeftigelse i 80 % stilling: 20 % variabel lønn (105 årsrammetimer = 280 timer kalkulert tid).
+    await expect(page.locator('.arbeidsplan-differanse')).toHaveAttribute('data-differanse', 'variabel');
+    await expect(page.locator('.arbeidsplan-differanse')).toContainText(/Variabel lønn\s*20 % = 105 årsrammetimer/);
+    await expect(lonn).toContainText(/Årslønn i 80 % stilling\s*480\s000/);
+    await expect(lonn).toContainText(/Variabel lønn\s*88\s888,89/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/568\s888,89/);
+    await expect(lonn).toContainText(/Feriepenger i tillegg\s*68\s266,67/);
     await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
 
     // Tillegg per funksjon: beløpet fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
@@ -358,16 +363,16 @@ test.describe('arbeidstid', () => {
     const tillegg1 = page.getByLabel('Tillegg per år, funksjon 1');
     await expect(tillegg1).toHaveValue(/12\s?000/);
     await expect(page.getByText(/minst 12\s000 kr i året for rådgiver eller sosiallærer/)).toBeVisible();
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/492\s000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/580\s888,89/);
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
     // Funksjon 2 har ikke tillegg før bryteren slås på.
     await expect(page.getByLabel('Tillegg per år, funksjon 2')).toHaveCount(0);
     await page.getByRole('switch', { name: 'Funksjon 2: Tillegg i lønnen' }).check();
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/504\s000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/592\s888,89/);
     await expect(lonn).toContainText(/Tillegg: Kontaktlærer\s*12\s000/);
     await tillegg1.fill('15000');
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/507\s000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/595\s888,89/);
     await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
   });
 
@@ -558,6 +563,48 @@ test.describe('arbeidstid', () => {
     await page.getByRole('button', { name: 'Timer i hvert fag' }).click();
     await expect(page.locator('.hjelp-tekst .oversikt')).toContainText('14,54 årsrammetimer');
     await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
+  });
+
+  test('fjern-knappen står på linjen med navnet, og tillegget på linjen med vippen', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    const midt = async (l: Locator) => {
+      const b = await l.boundingBox();
+      return b ? b.y + b.height / 2 : NaN;
+    };
+    const navn = await midt(page.getByLabel('Funksjon 1: Navn'));
+    const fjern = await midt(page.getByRole('button', { name: 'Fjern funksjon 1' }));
+    expect(Math.abs(navn - fjern)).toBeLessThan(4);
+    const vippe = await midt(page.locator('.funksjon-tillegg .vippe'));
+    const belop = page.getByLabel('Tillegg per år, funksjon 1');
+    expect(Math.abs(vippe - (await midt(belop)))).toBeLessThan(12);
+    // Beløpet får plass i feltet.
+    await expect(belop).toHaveValue(/12\s?000/);
+    expect(await belop.evaluate((e: HTMLInputElement) => e.scrollWidth <= e.clientWidth)).toBe(true);
+  });
+
+  test('beskjeftigelse over en stilling under 100 % gir variabel lønn, og over 100 % også overtid', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('80');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('577,5');
+    // 110 % i 80 % stilling: 20 % variabel lønn opp til hel stilling og 10 % teknisk overtid.
+    const ruter = page.locator('.arbeidsplan-differanse');
+    await expect(ruter).toHaveCount(2);
+    await expect(ruter.first()).toHaveAttribute('data-differanse', 'variabel');
+    await expect(ruter.first()).toContainText(/Variabel lønn\s*20 % = 105 årsrammetimer/);
+    await expect(ruter.last()).toHaveAttribute('data-differanse', 'overtid');
+    await expect(ruter.last()).toContainText(/Teknisk overtid\s*10 % = 52,5 årsrammetimer/);
+
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('600000');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    // Variabel lønn med vanlig timelønn, overtid med 50 % tillegg, hver på sin linje.
+    await expect(lonn).toContainText(/Variabel lønn\s*88\s888,89/);
+    await expect(lonn).toContainText(/Overtidsbetaling\s*66\s666,67/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/635\s555,56/);
   });
 
   test('teknisk overtid over 100 % lenker til overtid med prosenten utfylt', async ({ page }) => {

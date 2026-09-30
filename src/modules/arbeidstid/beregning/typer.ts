@@ -106,7 +106,10 @@ export type Storrelse =
   | 'lonn_i_alt'
   | 'redusert_undervisning'
   | 'arsverk_60'
-  | 'ekstra_feriedager';
+  | 'ekstra_feriedager'
+  | 'variabel_prosent'
+  | 'variabel_timer'
+  | 'variabel_lonn';
 
 export interface Operand {
   navn: Storrelse;
@@ -151,6 +154,11 @@ export type TrinnId =
   | 'ekstra_feriedager_60'
   | 'arbeidsaar_dager_60'
   | 'planfestet_60'
+  | 'variabel_prosent'
+  | 'variabel_prosent_differanse'
+  | 'variabel_timer'
+  | 'kalkulert_tid_variabel'
+  | 'variabel_lonn'
   | 'arbeidsaar_uker'
   | 'planfestet_maks'
   | 'planfestet_per_uke'

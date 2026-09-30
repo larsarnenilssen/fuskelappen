@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.7.0] – 2026-09-30
+
+### Lagt til
+
+- **Variabel lønn i Arbeidsplan:** Har læreren en stilling under 100 % og mer undervisning og funksjoner enn stillingen, heter det som er over stillingen og opp til hel stilling **variabel lønn**. Det som er over 100 %, er fortsatt teknisk overtid. Er det begge deler, vises de i hver sin rute, med årsrammetimer.
+- **Lønn i året** har en egen linje for variabel lønn. Den betales med vanlig timelønn for undervisning, regnet som overtidsbetalingen, men uten overtidstillegget. Overtid over 100 % betales som før, med 50 % tillegg. Stolpen for beskjeftigelsen viser variabel lønn og overtid i hver sin farge.
+
+### Endret
+
+- **Funksjoner:** Knappen som fjerner en funksjon, står på linjen med navnet. Beløpet for tillegg står på linjen med vippen «Tillegg i lønnen», og feltet har plass til beløp på over 10 000 kr.
+
 ## [0.6.2] – 2026-09-30
 
 ### Endret

@@ -363,6 +363,48 @@ describe('årstimer fra Grep', () => {
   });
 });
 
+describe('variabel lønn og teknisk overtid', () => {
+  const fag = (arstimer: number) => [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer } }];
+
+  it('deler differansen over en stilling under 100 % i variabel lønn og teknisk overtid', async () => {
+    const { beregnStillingsplan } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    // 50 % stilling, 280 årstimer engelsk (53,33 %): bare variabel lønn.
+    const halv = beregnStillingsplan(hent, { stilling: 50, grupper: fag(280), funksjoner: [], timerIGruppe: 0 });
+    expect(halv.variabel.verdi).toBeCloseTo(10 / 3);
+    expect(halv.overtid.verdi).toBe(0);
+    expect(halv.differanseTimer?.verdi).toBeCloseTo(17.5);
+    // 80 % stilling, 577,5 årstimer (110 %): 20 % variabel lønn og 10 % teknisk overtid.
+    const over = beregnStillingsplan(hent, { stilling: 80, grupper: fag(577.5), funksjoner: [], timerIGruppe: 0 });
+    expect(over.variabel.verdi).toBeCloseTo(20);
+    expect(over.overtid.verdi).toBeCloseTo(10);
+    expect(over.variabelTimer?.verdi).toBeCloseTo(105);
+    expect(over.overtidTimer?.verdi).toBeCloseTo(52.5);
+    // Hel stilling: hele differansen er teknisk overtid.
+    const hel = beregnStillingsplan(hent, { stilling: 100, grupper: fag(577.5), funksjoner: [], timerIGruppe: 0 });
+    expect(hel.variabel.verdi).toBe(0);
+    expect(hel.overtid.verdi).toBeCloseTo(10);
+  });
+
+  it('betaler variabel lønn med vanlig timelønn og overtid med 50 % tillegg', async () => {
+    const { beregnLonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const lonn = { type: 'manuell' as const, arslonn: 600000 };
+    const arsrammer = [rad('Engelsk', 'Stud.spes', 'Vg1')];
+    const timelonn = (600000 / 1687.5) * (100 / 112);
+    // 80 % stilling og 110 % beskjeftigelse: 20 % = 105 årsrammetimer = 280 timer kalkulert tid med variabel lønn.
+    const r = beregnLonn(hent, { lonn, stilling: 80, tillegg: null, overtid: { beskjeftigelse: 110, arsrammer, elever: 30 }, over60: false });
+    expect(r.variabel?.verdi).toBeCloseTo(280 * timelonn);
+    expect(r.overtid?.verdi).toBeCloseTo(140 * timelonn * 1.5);
+    expect(r.samlet.verdi).toBeCloseTo(480000 + 280 * timelonn + 140 * timelonn * 1.5);
+    expect(r.trinn.filter((t) => t.id === 'timelonn')).toHaveLength(1);
+    // 50 % stilling og 53,33 % beskjeftigelse: bare variabel lønn.
+    const halv = beregnLonn(hent, { lonn, stilling: 50, tillegg: null, overtid: { beskjeftigelse: 160 / 3, arsrammer, elever: 30 }, over60: false });
+    expect(halv.overtid).toBeNull();
+    expect(halv.variabel?.verdi).toBeCloseTo(((17.5 * 1400) / 525) * timelonn);
+    // Hel stilling: ingen variabel lønn.
+    expect(beregnLonn(hent, { lonn, stilling: 100, tillegg: null, overtid: { beskjeftigelse: 110, arsrammer, elever: 30 }, over60: false }).variabel).toBeNull();
+  });
+});
+
 describe('lønn i stillingen', () => {
   it('er årslønn i hel stilling × stillingsprosent ÷ 100, fra garantilønn eller egen lønn', async () => {
     const { beregnLonn, lesGarantilonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');

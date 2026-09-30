@@ -19,6 +19,10 @@ export interface Stolpedel {
  * Beskjeftigelse per fag (og funksjon) som deler av en stolpe, med strek ved stillingen (standard 100 %).
  * Det som går over streken, er markert. Er stolpen kortere, viser den grå resten hva som mangler.
  */
+/**
+ * Stolpe for beskjeftigelsen mot stillingen. Delen ut over stillingen er markert: opp til hel stilling (100 %) som
+ * variabel lønn når stillingen er mindre, og over hel stilling som overtid.
+ */
 export function Stillingsmaaler({ deler, grense = 100, beskrivelse }: { deler: Stolpedel[]; grense?: number; beskrivelse?: string }) {
   const { t } = useTekst();
   const sum = deler.reduce((s, d) => s + d.prosent, 0);
@@ -37,7 +41,8 @@ export function Stillingsmaaler({ deler, grense = 100, beskrivelse }: { deler: S
           x += w;
           return r;
         })}
-        {sum > grense && <rect class="figur-over" x={xGrense} y={0} width={B - xGrense} height={H} />}
+        {sum > grense && grense < 100 && <rect class="figur-variabel" x={xGrense} y={0} width={(Math.min(sum, 100) / skala) * B - xGrense} height={H} />}
+        {sum > Math.max(grense, 100) && <rect class="figur-over" x={(Math.max(grense, 100) / skala) * B} y={0} width={B - (Math.max(grense, 100) / skala) * B} height={H} />}
         <line class="figur-grense" x1={xGrense} x2={xGrense} y1={-2} y2={H + 2} />
         <text class="figur-tekst" x={Math.min(Math.max(xGrense, 30), B - 2)} y={H + 12} text-anchor="end">
           {tallTekst(grense)} %

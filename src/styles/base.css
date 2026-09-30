@@ -1313,6 +1313,11 @@ p.fagkort-tittel {
   fill: var(--farge-feil);
 }
 
+/* Beskjeftigelse ut over en stilling under 100 %, opp til hel stilling (variabel lønn). */
+.figur-variabel {
+  fill: var(--farge-advarsel);
+}
+
 .figur-tekst {
   fill: var(--farge-tekst-dempet);
   font-size: 10px;
@@ -1877,11 +1882,46 @@ p.fagkort-tittel {
 
 /* ---------- Stillingsplan ---------- */
 
-.funksjonsrad .vippe,
+/* Navn og fjern-knapp, prosent eller timer og bryter. */
+.funksjonsrad {
+  column-gap: var(--rom-2);
+}
+
+.funksjonsrad > .vippe,
 .funksjonsrad .funksjon-tillegg,
 .funksjonsrad .funksjon-linje {
   flex-basis: 100%;
   margin: 0;
+}
+
+.funksjonsrad > .felt-kompakt .tallfelt input {
+  width: 4.25rem;
+}
+
+/* Tillegg: vippen og beløpet på samme linje, forklaringen og eventuell feil under begge. */
+.funksjon-tillegg {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) auto;
+  justify-content: start;
+  align-items: center;
+  column-gap: var(--rom-4);
+}
+
+.funksjon-tillegg .felt {
+  display: contents;
+}
+
+.funksjon-tillegg .vippe {
+  margin: 0;
+}
+
+.funksjon-tillegg .felt-hjelp,
+.funksjon-tillegg .felt-feilmelding {
+  grid-column: 1 / -1;
+}
+
+.funksjon-tillegg .tallfelt input {
+  width: 6.5rem;
 }
 
 .funksjonsrad + .funksjonsrad {
@@ -1889,9 +1929,31 @@ p.fagkort-tittel {
   border-top: var(--strek) solid var(--farge-linje);
 }
 
+/* Navnet og fjern-knappen står på første linje, og tallet og bryteren på neste. Er det plass (bred skjerm),
+   står alt på én linje. Bredden måles på listen med funksjoner, ikke på skjermen. */
+.funksjonsliste {
+  container-type: inline-size;
+}
+
 .funksjonsrad .tekstfelt {
-  flex: 1 1 8rem;
+  order: -2;
+  flex: 1 1 calc(100% - var(--trykkflate) - var(--rom-2));
   min-width: 0;
+}
+
+.funksjonsrad > .ikonknapp {
+  order: -1;
+}
+
+@container (min-width: 26rem) {
+  .funksjonsrad .tekstfelt,
+  .funksjonsrad > .ikonknapp {
+    order: 0;
+  }
+
+  .funksjonsrad .tekstfelt {
+    flex-basis: 9rem;
+  }
 }
 
 .tekstfelt {
@@ -1925,6 +1987,12 @@ p.fagkort-tittel {
 .arbeidsplan-differanse.overtid {
   border-color: var(--farge-feil);
   background: var(--farge-feil-flate);
+}
+
+/* Variabel lønn: beskjeftigelse ut over en stilling under 100 %, opp til hel stilling. Betales, men er ikke overtid. */
+.arbeidsplan-differanse.variabel {
+  border-color: var(--farge-advarsel);
+  background: var(--farge-advarsel-flate);
 }
 
 /* Et lite valg i resultatkortet. Etiketten står over feltet: en nedtrekksliste i et fleksibelt oppsett

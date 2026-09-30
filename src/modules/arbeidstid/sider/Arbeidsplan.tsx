@@ -8,7 +8,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe } from '../beregning/index.ts';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, type Operand } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
@@ -143,7 +143,7 @@ export default function Arbeidsplan() {
   const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
 
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
-  // Overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
+  // Variabel lønn og overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
   const overtidsfag = fylte[valgtIndeks]?.inn;
   const lonn =
     lonnsgrunnlag && harStilling
@@ -158,7 +158,8 @@ export default function Arbeidsplan() {
           }),
         )
       : null;
-  const overtidUtenFag = s.visLonn && resultat !== null && resultat.beskjeftigelse.verdi > 100 && !overtidsfag;
+  // Variabel lønn og overtid regnes om med et fag. Uten fag sier vi fra.
+  const overtidUtenFag = s.visLonn && resultat !== null && (resultat.variabel.verdi > 0 || resultat.beskjeftigelse.verdi > 100) && !overtidsfag;
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const gruppenavn = fylte.map(
@@ -177,8 +178,29 @@ export default function Arbeidsplan() {
     : [];
   const diff = resultat?.differanse.verdi ?? 0;
   const iBalanse = Math.abs(diff) < 0.005;
-  const diffTekst = iBalanse ? t('arbeidstid.resultat.iBalanse') : diff < 0 ? t('arbeidstid.resultat.tekniskUndertid') : t('arbeidstid.resultat.tekniskOvertid');
-  const timerTekst = resultat?.differanseTimer ? ` = ${medEnhet(t, Math.abs(resultat.differanseTimer.verdi), 'arsrammetimer')}` : '';
+  // Differansen vises som én rute, eller to når den er både variabel lønn (opp til hel stilling) og teknisk overtid.
+  const medTimer = (prosent: number, timer: Operand | null | undefined) =>
+    `${medEnhet(t, Math.abs(prosent), 'prosent')}${timer ? ` = ${medEnhet(t, Math.abs(timer.verdi), 'arsrammetimer')}` : ''}`;
+  const variabel = resultat?.variabel.verdi ?? 0;
+  const overtid = resultat?.overtid.verdi ?? 0;
+  const differanseruter: { type: 'balanse' | 'undertid' | 'variabel' | 'overtid'; tekst: string; tall?: string }[] = !resultat
+    ? []
+    : iBalanse
+      ? [{ type: 'balanse', tekst: t('arbeidstid.resultat.iBalanse') }]
+      : diff < 0
+        ? [{ type: 'undertid', tekst: t('arbeidstid.resultat.tekniskUndertid'), tall: medTimer(diff, resultat.differanseTimer) }]
+        : variabel > 0 && overtid > 0
+          ? [
+              { type: 'variabel', tekst: t('arbeidstid.resultat.variabelLonn'), tall: medTimer(variabel, resultat.variabelTimer) },
+              { type: 'overtid', tekst: t('arbeidstid.resultat.tekniskOvertid'), tall: medTimer(overtid, resultat.overtidTimer) },
+            ]
+          : [
+              {
+                type: variabel > 0 ? 'variabel' : 'overtid',
+                tekst: variabel > 0 ? t('arbeidstid.resultat.variabelLonn') : t('arbeidstid.resultat.tekniskOvertid'),
+                tall: medTimer(diff, resultat.differanseTimer),
+              },
+            ];
 
   const hentVariant = (v: typeof s) => {
     reserverIder(v.grupper);
@@ -213,10 +235,12 @@ export default function Arbeidsplan() {
                     { navn: t('arbeidstid.resultat.stillingsprosent'), verdi: medEnhet(t, resultat.stilling.verdi, 'prosent') },
                   ]}
                 />
-                <p class={`arbeidsplan-differanse${iBalanse ? '' : diff < 0 ? ' undertid' : ' overtid'}`} data-differanse={iBalanse ? 'balanse' : diff < 0 ? 'undertid' : 'overtid'}>
-                  <span>{diffTekst}</span>
-                  {!iBalanse && <span class="tall">{`${medEnhet(t, Math.abs(diff), 'prosent')}${timerTekst}`}</span>}
-                </p>
+                {differanseruter.map((r) => (
+                  <p key={r.type} class={`arbeidsplan-differanse${r.type === 'balanse' ? '' : ` ${r.type}`}`} data-differanse={r.type}>
+                    <span>{r.tekst}</span>
+                    {r.tall && <span class="tall">{r.tall}</span>}
+                  </p>
+                ))}
                 {!iBalanse && fylte.length > 1 && (
                   <div class="felt felt-liten">
                     <label for={idTimer}>{t('arbeidstid.arbeidsplan.timerIFag')}</label>
@@ -277,11 +301,12 @@ export default function Arbeidsplan() {
           {lonn?.resultat && (
             <Utregningskort tittel={t('arbeidstid.arbeidsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
               <Advarsler advarsler={lonn.resultat.advarsler} />
-              {(lonn.resultat.tillegg || lonn.resultat.overtid) && (
+              {(lonn.resultat.tillegg || lonn.resultat.variabel || lonn.resultat.overtid) && (
                 <Belopsstolpe
                   deler={[
                     { navn: t('arbeidstid.arbeidsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
                     ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.arbeidsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
+                    ...(lonn.resultat.variabel ? [{ navn: t('arbeidstid.resultat.variabelLonn'), verdi: lonn.resultat.variabel.verdi }] : []),
                     ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
                   ]}
                 />
@@ -290,6 +315,7 @@ export default function Arbeidsplan() {
                 rader={[
                   { navn: t('arbeidstid.arbeidsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
                   ...tilleggene.map((x) => ({ navn: t('arbeidstid.arbeidsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
+                  ...(lonn.resultat.variabel ? [{ navn: t('arbeidstid.resultat.variabelLonn'), verdi: medEnhet(t, lonn.resultat.variabel.verdi, 'kroner') }] : []),
                   ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
                   { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
                 ]}

@@ -5,7 +5,7 @@
 // Redusert undervisning etter punkt 6 (livsfasetiltak) regnes som en del av stillingen, som funksjonene (eier 30.09.2026).
 import { beregnBeskjeftigelse, type Gruppe, type Gruppeberegning } from './beskjeftigelse.ts';
 import type { Arsrammevalg, Elevtall } from './arsrammer.ts';
-import { beregnOvertid } from './overtid.ts';
+import { beregnOvertid, beregnVariabelLonn } from './overtid.ts';
 import { funksjonsprosent } from './planfestet.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
@@ -45,6 +45,16 @@ export interface StillingsplanResultat extends Utregning {
   differanse: Operand;
   /** Differansen i årsrammetimer i valgt fag (med fortegn), eller null når fag ikke er valgt. */
   differanseTimer: Operand | null;
+  /**
+   * Beskjeftigelsen ut over en stilling under 100 %, opp til hel stilling: variabel lønn (eier 30.09.2026).
+   * 0 når stillingen er hel eller det ikke er noe ut over den.
+   */
+  variabel: Operand;
+  /** Beskjeftigelsen ut over hel stilling (eller ut over stillingen når den er større): teknisk overtid. */
+  overtid: Operand;
+  /** Variabel lønn og teknisk overtid i årsrammetimer i valgt fag, når begge finnes og fag er valgt. */
+  variabelTimer: Operand | null;
+  overtidTimer: Operand | null;
 }
 
 /** Funksjonen i prosent av full stilling, også når den er oppgitt i årsrammetimer. */
@@ -100,6 +110,30 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     differanseTimer = t.resultat;
   }
 
+  // Differansen over stillingen deles i variabel lønn (opp til hel stilling) og teknisk overtid (over hel stilling).
+  // Delingen vises som egne trinn bare når det er begge deler. Ellers er den ene delen hele differansen.
+  const hel = Math.max(100, s.stilling);
+  const variabelVerdi = s.stilling < 100 ? Math.max(0, Math.min(total.resultat.verdi, 100) - s.stilling) : 0;
+  const overtidVerdi = Math.max(0, total.resultat.verdi - hel);
+  let variabel: Operand = { navn: 'variabel_prosent', verdi: variabelVerdi, enhet: 'prosent', opprinnelse: 'trinn' };
+  let overtid: Operand = { navn: 'overtidsprosent', verdi: overtidVerdi, enhet: 'prosent', opprinnelse: 'trinn' };
+  let variabelTimer: Operand | null = null;
+  let overtidTimer: Operand | null = null;
+  if (variabelVerdi > 0 && overtidVerdi > 0) {
+    const v = trinn('variabel_prosent', { stilling }, 'variabel_prosent', 'prosent', variabelVerdi);
+    const o = trinn('overtidsprosent', { beskjeftigelse: total.resultat }, 'overtidsprosent', 'prosent', overtidVerdi);
+    alle.push(v, o);
+    variabel = v.resultat;
+    overtid = o.resultat;
+    if (valgt) {
+      const vt = trinn('variabel_timer', { variabel, arsramme: valgt.arsramme }, 'variabel_timer', 'arsrammetimer', (variabelVerdi * valgt.arsramme.verdi) / 100);
+      const ot = trinn('overtidstimer', { overtidsprosent: overtid, arsramme: valgt.arsramme }, 'overtidstimer', 'arsrammetimer', (overtidVerdi * valgt.arsramme.verdi) / 100);
+      alle.push(vt, ot);
+      variabelTimer = vt.resultat;
+      overtidTimer = ot.resultat;
+    }
+  }
+
   return {
     grupper: b.grupper,
     undervisning,
@@ -110,6 +144,10 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     stilling,
     differanse: differanse.resultat,
     differanseTimer,
+    variabel,
+    overtid,
+    variabelTimer,
+    overtidTimer,
     trinn: alle,
     advarsler: b.advarsler,
   };
@@ -126,7 +164,10 @@ export interface Lonnsinndata {
   stilling: number;
   /** Tillegg i kroner per år, f.eks. godtgjøring for funksjoner (SFS 2213 punkt 9.1). null gir ingen tillegg. */
   tillegg: number | null;
-  /** Fast overtid: samlet beskjeftigelse over 100 % og faget timene regnes om med. null gir ingen overtid. */
+  /**
+   * Samlet beskjeftigelse og faget timene regnes om med. Beskjeftigelse ut over en stilling under 100 %, opp til hel
+   * stilling, gir variabel lønn. Beskjeftigelse over 100 % gir overtid. null gir ingen av delene.
+   */
   overtid: { beskjeftigelse: number; arsrammer: Arsrammevalg[]; elever: Elevtall } | null;
   /** Høyere feriepengesats for arbeidstakere over 60 år. */
   over60: boolean;
@@ -136,16 +177,18 @@ export interface LonnResultat extends Utregning {
   /** Årslønn i stillingen: årslønn i hel stilling × stillingsprosent ÷ 100. */
   arslonn: Operand;
   tillegg: Operand | null;
+  /** Variabel lønn for beskjeftigelse ut over stillingen, opp til hel stilling, eller null. */
+  variabel: Operand | null;
   overtid: Operand | null;
-  /** Lønn, tillegg og overtid i alt. Det er det som utbetales i året. */
+  /** Lønn, tillegg, variabel lønn og overtid i alt. Det er det som utbetales i året. */
   samlet: Operand;
   /** Feriepenger av det som utbetales. Kommer i tillegg, og er ikke med i det samlede beløpet. */
   feriepenger: Operand;
 }
 
 /**
- * Lønn i stillingen: årslønn × stillingsprosent ÷ 100, med tillegg og overtidsbetaling (som i beregnOvertid) når de
- * er valgt. Feriepengene regnes som vanlig i prosent av det som utbetales (hovedtariffavtalen § 7.4.2).
+ * Lønn i stillingen: årslønn × stillingsprosent ÷ 100, med tillegg, variabel lønn og overtidsbetaling (som i
+ * beregnOvertid) når de er valgt. Feriepengene regnes som vanlig i prosent av det som utbetales (hovedtariffavtalen § 7.4.2).
  */
 export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const hel = arslonn(hent, inn.lonn);
@@ -153,22 +196,43 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const alle: Trinn[] = [lonn];
   const advarsler: AdvarselId[] = [];
   const tillegg = inn.tillegg !== null ? inndata('funksjonstillegg', inn.tillegg, 'kroner') : null;
+  let variabel: Operand | null = null;
+  const variabelProsent = inn.overtid && inn.stilling < 100 ? Math.min(inn.overtid.beskjeftigelse, 100) - inn.stilling : 0;
+  if (inn.overtid && variabelProsent > 1e-9) {
+    const stilling = inndata('stilling', inn.stilling, 'prosent');
+    // Opp til hel stilling: 100 − stilling når beskjeftigelsen er over 100 %, ellers beskjeftigelse − stilling.
+    const prosent =
+      inn.overtid.beskjeftigelse > 100
+        ? trinn('variabel_prosent', { stilling }, 'variabel_prosent', 'prosent', variabelProsent)
+        : trinn('variabel_prosent_differanse', { beskjeftigelse: inndata('beskjeftigelse', inn.overtid.beskjeftigelse, 'prosent'), stilling }, 'variabel_prosent', 'prosent', variabelProsent);
+    const v = beregnVariabelLonn(hent, { prosent: prosent.resultat, arsrammer: inn.overtid.arsrammer, elever: inn.overtid.elever, lonn: inn.lonn });
+    alle.push(prosent, ...v.trinn);
+    advarsler.push(...v.advarsler);
+    variabel = v.betaling;
+  }
   let overtid: Operand | null = null;
   if (inn.overtid && inn.overtid.beskjeftigelse > 100) {
     const o = beregnOvertid(hent, { ...inn.overtid, lonn: inn.lonn, over60: inn.over60 });
     // Feriepengene regnes av det samlede beløpet under, ikke av overtiden alene.
-    alle.push(...o.trinn.filter((t) => t.id !== 'feriepenger'));
-    advarsler.push(...o.advarsler);
+    // Årsrammen og timelønnen står allerede i utregningen når variabel lønn er regnet ut.
+    const finnes = new Set(alle.map((t) => t.id));
+    alle.push(...o.trinn.filter((t) => t.id !== 'feriepenger' && !(variabel && finnes.has(t.id))));
+    if (!variabel) advarsler.push(...o.advarsler);
     overtid = o.betaling;
   }
   let samlet = lonn.resultat;
-  if (tillegg || overtid) {
+  if (tillegg || variabel || overtid) {
     const t = trinn(
       'lonn_i_alt',
-      { arslonn: lonn.resultat, tillegg: tillegg ?? inndata('funksjonstillegg', 0, 'kroner'), overtid: overtid ?? inndata('overtidsbetaling', 0, 'kroner') },
+      {
+        arslonn: lonn.resultat,
+        tillegg: tillegg ?? inndata('funksjonstillegg', 0, 'kroner'),
+        variabel: variabel ?? inndata('variabel_lonn', 0, 'kroner'),
+        overtid: overtid ?? inndata('overtidsbetaling', 0, 'kroner'),
+      },
       'lonn_i_alt',
       'kroner',
-      lonn.resultat.verdi + (tillegg?.verdi ?? 0) + (overtid?.verdi ?? 0),
+      lonn.resultat.verdi + (tillegg?.verdi ?? 0) + (variabel?.verdi ?? 0) + (overtid?.verdi ?? 0),
     );
     alle.push(t);
     samlet = t.resultat;
@@ -176,5 +240,5 @@ export function beregnLonn(hent: Hent, inn: Lonnsinndata): LonnResultat {
   const sats = regel(hent, inn.over60 ? 'hta.feriepenger_prosent_over_60' : 'hta.feriepenger_prosent', 'feriepengesats', 'prosent');
   const ferie = trinn('feriepenger', { lonn: samlet, sats }, 'feriepenger', 'kroner', (samlet.verdi * sats.verdi) / 100);
   alle.push(ferie);
-  return { arslonn: lonn.resultat, tillegg, overtid, samlet, feriepenger: ferie.resultat, trinn: alle, advarsler };
+  return { arslonn: lonn.resultat, tillegg, variabel, overtid, samlet, feriepenger: ferie.resultat, trinn: alle, advarsler };
 }
