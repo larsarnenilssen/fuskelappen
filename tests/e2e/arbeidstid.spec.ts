@@ -427,17 +427,32 @@ test.describe('arbeidstid', () => {
     const liste = page.locator('.variantliste');
     await expect(liste.locator('li')).toHaveCount(1);
     await expect(liste).toContainText('26,67 %');
+    // Navnefeltet åpnes når varianten er lagret.
+    const navn = page.getByRole('textbox', { name: 'Navn på variant 1' });
+    await expect(navn).toBeFocused();
+    await navn.fill('Før endring');
+    await navn.press('Enter');
+    await expect(liste).toContainText('Før endring');
     await timer.fill('105');
     await expect(resultat(page)).toContainText('20');
     await expect(liste).toContainText('nå −6,67 %');
-    await page.getByRole('button', { name: 'Hent Variant 1' }).click();
+    await page.getByRole('button', { name: 'Hent Før endring' }).click();
     await expect(timer).toHaveValue('140');
     await expect(resultat(page)).toContainText('26,67');
-    // Variantene ligger i lagringen på enheten og er der etter ny innlasting.
+    // Navnet kan endres, og et tomt navn gir «Variant 1» igjen.
+    await page.getByRole('button', { name: 'Gi nytt navn: Før endring' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    await expect(liste).toContainText('Variant 1');
+    await page.getByRole('button', { name: 'Gi nytt navn: Variant 1' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('Uten kontaktlærer');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    // Variantene og navnene ligger i lagringen på enheten og er der etter ny innlasting.
     await page.reload();
     await venterPaaSide(page);
     await expect(page.locator('.variantliste li')).toHaveCount(1);
-    await page.getByRole('button', { name: 'Slett variant 1' }).click();
+    await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
     await expect(page.locator('.variantliste li')).toHaveCount(0);
   });
 

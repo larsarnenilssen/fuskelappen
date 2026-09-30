@@ -28,6 +28,7 @@ const baner = {
   pluss: 'M12 5v14M5 12h14',
   sporsmal: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.5v.5M12 16.8h.01',
   kopier: 'M9 9h10.5v11.5H9zM5.5 15V4H15',
+  blyant: 'M4 20h4L19.5 8.5l-4-4L4 16v4ZM13.5 6.5l4 4',
   utvid: 'M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5',
   forminsk: 'M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5',
 } as const;

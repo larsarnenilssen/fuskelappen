@@ -232,11 +232,13 @@ export const arbeidstidNb = {
   },
   varianter: {
     tittel: 'Lagrede varianter',
-    hjelp: 'Lagre det du har fylt ut, og sammenlign med en endring. Du kan ha {maks} varianter per kalkulator. De lagres bare på denne enheten, og den eldste erstattes når listen er full.',
+    hjelp: 'Lagre det du har fylt ut, og sammenlign med en endring. Gi gjerne varianten et navn, f.eks. «Før endring». Du kan ha {maks} varianter per kalkulator. De lagres bare på denne enheten, og den eldste erstattes når listen er full.',
     variant: 'Variant {nr}',
     naa: 'nå {differanse}',
     hent: 'Hent',
-    slett: 'Slett variant {nr}',
+    slett: 'Slett {navn}',
+    navn: 'Navn på variant {nr}',
+    endreNavn: 'Gi nytt navn: {navn}',
     lagre: 'Lagre variant',
   },
   grafikk: {

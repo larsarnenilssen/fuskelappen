@@ -1,5 +1,7 @@
 // Lagrede varianter av en kalkulator: brukeren lagrer det utfylte med hovedresultatet, og kan sammenligne
-// og hente det fram igjen, f.eks. før og etter en endring. Lagres bare på enheten (scenarier i lagringen).
+// og hente det fram igjen, f.eks. før og etter en endring. Brukeren kan gi hver variant et navn.
+// Lagres bare på enheten (scenarier i lagringen).
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { useTekst, useTilstand, tilstand } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -9,6 +11,8 @@ import { medEnhet } from './Utregning.tsx';
 
 /** Høyst så mange varianter per kalkulator. */
 const MAKS = 3;
+/** Høyst så mange tegn i navnet på en variant. */
+const MAKS_NAVN = 40;
 
 export interface Hovedresultat {
   tittel: string;
@@ -18,6 +22,8 @@ export interface Hovedresultat {
 
 interface Variant {
   lagret: string;
+  /** Navnet brukeren har gitt varianten. Mangler det, heter den «Variant 1» osv. */
+  navn?: string;
   skjema: Record<string, unknown>;
   resultat: Hovedresultat;
 }
@@ -27,6 +33,7 @@ function erVariant(v: unknown): v is Variant {
   const x = v as Partial<Variant>;
   return (
     typeof x.lagret === 'string' &&
+    (x.navn === undefined || typeof x.navn === 'string') &&
     typeof x.skjema === 'object' &&
     x.skjema !== null &&
     typeof x.resultat?.tittel === 'string' &&
@@ -76,12 +83,42 @@ export function Varianter<T extends object>({
   const { t, malform } = useTekst();
   const { scenarier } = useTilstand();
   const liste = lesVarianter(scenarier, id);
+  // Varianten som får nytt navn nå (nøkkelen er tidspunktet den ble lagret), og teksten i feltet.
+  const [redigerer, settRedigerer] = useState<string | null>(null);
+  const [utkast, settUtkast] = useState('');
+  const felt = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (redigerer) felt.current?.focus();
+  }, [redigerer]);
+
+  const visningsnavn = (v: Variant, i: number) => v.navn?.trim() || t('arbeidstid.varianter.variant', { nr: i + 1 });
+  const startNavn = (v: Variant) => {
+    settUtkast(v.navn ?? '');
+    settRedigerer(v.lagret);
+  };
+  const lagreNavn = () => {
+    if (!redigerer) return;
+    const navn = utkast.trim().slice(0, MAKS_NAVN);
+    skrivVarianter(
+      id,
+      liste.map((v) => {
+        if (v.lagret !== redigerer) return v;
+        const ny: Variant = { ...v };
+        if (navn) ny.navn = navn;
+        else delete ny.navn;
+        return ny;
+      }),
+    );
+    settRedigerer(null);
+  };
 
   const lagre = () => {
     if (!resultat) return;
     const ny: Variant = { lagret: new Date().toISOString(), skjema: skjema as Record<string, unknown>, resultat };
-    // Den eldste varianten erstattes når listen er full.
+    // Den eldste varianten erstattes når listen er full. Navnefeltet åpnes, så varianten kan få et navn med en gang.
     skrivVarianter(id, [...liste, ny].slice(-MAKS));
+    settUtkast('');
+    settRedigerer(ny.lagret);
   };
 
   return (
@@ -96,10 +133,35 @@ export function Varianter<T extends object>({
         <ol class="variantliste">
           {liste.map((v, i) => (
             <li key={v.lagret}>
-              <span class="variant-navn">
-                {t('arbeidstid.varianter.variant', { nr: i + 1 })}
-                <span class="variant-under"> {kortTidspunkt(v.lagret, malform)}</span>
-              </span>
+              {redigerer === v.lagret ? (
+                <span class="variant-navn">
+                  <input
+                    ref={felt}
+                    class="tekstfelt variant-navnfelt"
+                    type="text"
+                    autoComplete="off"
+                    maxLength={MAKS_NAVN}
+                    aria-label={t('arbeidstid.varianter.navn', { nr: i + 1 })}
+                    placeholder={t('arbeidstid.varianter.variant', { nr: i + 1 })}
+                    value={utkast}
+                    onInput={(e) => settUtkast(e.currentTarget.value)}
+                    onBlur={lagreNavn}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter') lagreNavn();
+                      if (e.key === 'Escape') settRedigerer(null);
+                    }}
+                  />
+                  <span class="variant-under"> {kortTidspunkt(v.lagret, malform)}</span>
+                </span>
+              ) : (
+                <span class="variant-navn">
+                  <span class="variant-tittel">{visningsnavn(v, i)}</span>
+                  <button type="button" class="ikonknapp variant-navnknapp" aria-label={t('arbeidstid.varianter.endreNavn', { navn: visningsnavn(v, i) })} onClick={() => startNavn(v)}>
+                    <Ikon navn="blyant" class="ikon-liten" />
+                  </button>
+                  <span class="variant-under"> {kortTidspunkt(v.lagret, malform)}</span>
+                </span>
+              )}
               <span class="variant-verdi tall">
                 {medEnhet(t, v.resultat.verdi, v.resultat.enhet)}
                 {resultat && resultat.enhet === v.resultat.enhet && (
@@ -109,12 +171,12 @@ export function Varianter<T extends object>({
               <span class="variant-knapper">
                 <button type="button" class="lenkeknapp liten" onClick={() => onHent({ ...skjema, ...(v.skjema as Partial<T>) })}>
                   {t('arbeidstid.varianter.hent')}
-                  <span class="skjult-visuelt"> {t('arbeidstid.varianter.variant', { nr: i + 1 })}</span>
+                  <span class="skjult-visuelt"> {visningsnavn(v, i)}</span>
                 </button>
                 <button
                   type="button"
                   class="ikonknapp"
-                  aria-label={t('arbeidstid.varianter.slett', { nr: i + 1 })}
+                  aria-label={t('arbeidstid.varianter.slett', { navn: visningsnavn(v, i) })}
                   onClick={() => skrivVarianter(id, liste.filter((x) => x.lagret !== v.lagret))}
                 >
                   <Ikon navn="lukk" class="ikon-liten" />

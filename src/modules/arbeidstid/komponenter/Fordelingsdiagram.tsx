@@ -5,7 +5,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
-import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Fordelingsdel, Fordelingsresultat } from '../beregning/index.ts';
 import { tallTekst } from './Utregning.tsx';
 
@@ -78,14 +78,15 @@ export function Fordelingsdiagram({ deler, totalt }: { deler: readonly Fordeling
 export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Fordelingsdel[]; totalt: number; uker: number }) {
   const { t } = useTekst();
   const sum = (planfestet: boolean) => deler.filter((d) => d.planfestet === planfestet).reduce((s, d) => s + d.timer, 0);
+  // Tallene har alltid én desimal, så de står på linje i kolonnene.
   const rad = (id: string, tekst: string, timer: number, klasse?: string) => (
     <tr key={id} class={klasse}>
       <th scope="row">
         {!klasse && <span class={`fordeling-farge fordeling-del-${id}`} aria-hidden="true" />} {tekst}
       </th>
-      <td class="tall">{tallTekst(timer, 1)}</td>
-      <td class="tall">{uker > 0 ? tallTekst(timer / uker, 1) : '–'}</td>
-      <td class="tall">{tallTekst(totalt > 0 ? (timer / totalt) * 100 : 0, 1)} %</td>
+      <td class="tall">{formaterTall(timer, 1, 1)}</td>
+      <td class="tall">{uker > 0 ? formaterTall(timer / uker, 1, 1) : '–'}</td>
+      <td class="tall">{formaterTall(totalt > 0 ? (timer / totalt) * 100 : 0, 1, 1)} %</td>
     </tr>
   );
   return (

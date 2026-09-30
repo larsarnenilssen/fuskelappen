@@ -233,11 +233,13 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   },
   varianter: {
     tittel: 'Lagra variantar',
-    hjelp: 'Lagre det du har fylt ut, og samanlikn med ei endring. Du kan ha {maks} variantar per kalkulator. Dei blir berre lagra på denne eininga, og den eldste blir erstatta når lista er full.',
+    hjelp: 'Lagre det du har fylt ut, og samanlikn med ei endring. Gi gjerne varianten eit namn, t.d. «Før endring». Du kan ha {maks} variantar per kalkulator. Dei blir berre lagra på denne eininga, og den eldste blir erstatta når lista er full.',
     variant: 'Variant {nr}',
     naa: 'no {differanse}',
     hent: 'Hent',
-    slett: 'Slett variant {nr}',
+    slett: 'Slett {navn}',
+    navn: 'Namn på variant {nr}',
+    endreNavn: 'Gi nytt namn: {navn}',
     lagre: 'Lagre variant',
   },
   grafikk: {
