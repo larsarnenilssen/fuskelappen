@@ -1,4 +1,4 @@
-# Hva de ulike delene av arbeidstiden brukes til. Vises under diagrammet i «Fordeling av arbeidstiden».
+# Hva de ulike delene av arbeidstiden brukes til. Vises under diagrammet i Arbeidsplan («Hva tiden brukes til»).
 - id: bruk-undervisning
   type: forklaring
   tittel: { nb: Undervisning, nn: Undervisning }
@@ -89,9 +89,9 @@
   tittel: { nb: Funksjoner og andre oppgaver, nn: Funksjonar og andre oppgåver }
   tekst:
     nb: |
-      Undervisningstiden kan reduseres etter avtale mellom læreren og rektor, slik at læreren kan gjøre andre arbeidsoppgaver knyttet til undervisningen (punkt 5.3), for eksempel som kontaktlærer eller rådgiver. Da reduseres også tiden læreren disponerer selv, og planfestet tid øker tilsvarende. Se kalkulatoren for planfestet arbeidstid.
+      Undervisningstiden kan reduseres etter avtale mellom læreren og rektor, slik at læreren kan gjøre andre arbeidsoppgaver knyttet til undervisningen (punkt 5.3), for eksempel som kontaktlærer eller rådgiver. Da reduseres også tiden læreren disponerer selv, og planfestet tid øker tilsvarende. Se Arbeidsplan, der du velger om en funksjon utvider planfestet tid.
     nn: |
-      Undervisningstida kan reduserast etter avtale mellom læraren og rektor, slik at læraren kan gjere andre arbeidsoppgåver knytte til undervisninga (punkt 5.3), til dømes som kontaktlærar eller rådgivar. Då blir også tida læraren disponerer sjølv redusert, og planfesta tid aukar tilsvarande. Sjå kalkulatoren for planfesta arbeidstid.
+      Undervisningstida kan reduserast etter avtale mellom læraren og rektor, slik at læraren kan gjere andre arbeidsoppgåver knytte til undervisninga (punkt 5.3), til dømes som kontaktlærar eller rådgivar. Då blir også tida læraren disponerer sjølv redusert, og planfesta tid aukar tilsvarande. Sjå Arbeidsplan, der du vel om ein funksjon utvidar planfesta tid.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
     - { id: ks-sfs2213-avtaletekst, punkt: "7.3" }

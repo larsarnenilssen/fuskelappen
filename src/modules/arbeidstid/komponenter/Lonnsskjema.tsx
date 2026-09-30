@@ -64,7 +64,7 @@ export function Lonnsskjema({ hent, lonn, onEndring }: { hent: Hent; lonn: Lonns
           </div>
         </div>
       ) : (
-        <Tallfelt etikett={t('arbeidstid.vikar.arslonn')} verdi={lonn.arslonn} min={1} maks={5000000} onEndring={(arslonn) => sett({ arslonn })} />
+        <Tallfelt etikett={t('arbeidstid.vikar.arslonn')} tusenskille verdi={lonn.arslonn} min={1} maks={5000000} onEndring={(arslonn) => sett({ arslonn })} />
       )}
     </>
   );

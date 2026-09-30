@@ -1,9 +1,12 @@
 // Stillingsplan for én lærer: undervisning i fag og funksjoner i prosent av stillingen, sammenlignet med
 // stillingsprosenten. Differansen er teknisk undertid (negativ) eller teknisk overtid (positiv), og kan
 // regnes om til årsrammetimer i et valgt fag: differanse × årsramme ÷ 100 (eiers beslutning 29.09.2026).
+// Funksjoner kan oppgis i årsrammetimer, som gjøres om til prosent med årsrammen for funksjoner (607,5).
+// Redusert undervisning etter punkt 6 (livsfasetiltak) regnes som en del av stillingen, som funksjonene (eier 30.09.2026).
 import { beregnBeskjeftigelse, type Gruppe, type Gruppeberegning } from './beskjeftigelse.ts';
 import type { Arsrammevalg, Elevtall } from './arsrammer.ts';
 import { beregnOvertid } from './overtid.ts';
+import { funksjonsprosent } from './planfestet.ts';
 import type { AdvarselId, Hent, Operand, Trinn, Utregning } from './typer.ts';
 import { inndata, regel, trinn } from './verdier.ts';
 import { arslonn, type Lonnsgrunnlag } from './vikar.ts';
@@ -13,6 +16,8 @@ export interface Funksjon {
   navn: string;
   /** Funksjonen i prosent av full stilling. */
   prosent: number;
+  /** Funksjonen i årsrammetimer. Er den oppgitt, regnes prosenten ut fra den i stedet. */
+  arsrammetimer?: number;
 }
 
 export interface Stillingsplan {
@@ -22,18 +27,29 @@ export interface Stillingsplan {
   funksjoner: readonly Funksjon[];
   /** Gruppen (0, 1, …) med årsrammen differansen regnes om til timer med. null gir bare prosent. */
   timerIGruppe: number | null;
+  /** Redusert undervisning etter punkt 6 i prosent av full stilling, eller 0. */
+  reduksjon?: number;
 }
 
 export interface StillingsplanResultat extends Utregning {
   grupper: Gruppeberegning[];
   undervisning: Operand;
   funksjon: Operand;
+  /** Prosenten for hver funksjon, i samme rekkefølge som funksjonene (også dem oppgitt i årsrammetimer). */
+  funksjonsprosenter: number[];
+  /** Redusert undervisning etter punkt 6, eller null. */
+  reduksjon: Operand | null;
   beskjeftigelse: Operand;
   stilling: Operand;
   /** Beskjeftigelse − stilling. Negativ er teknisk undertid, positiv er teknisk overtid. */
   differanse: Operand;
   /** Differansen i årsrammetimer i valgt fag (med fortegn), eller null når fag ikke er valgt. */
   differanseTimer: Operand | null;
+}
+
+/** Funksjonen i prosent av full stilling, også når den er oppgitt i årsrammetimer. */
+export function funksjonsprosentFor(hent: Hent, f: Funksjon): number {
+  return f.arsrammetimer === undefined ? f.prosent : funksjonsprosent(hent, { type: 'arsrammetimer', timer: f.arsrammetimer }).prosent.verdi;
 }
 
 export function beregnStillingsplan(hent: Hent, s: Stillingsplan): StillingsplanResultat {
@@ -45,8 +61,15 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
   alle.push(...b.trinn);
   const undervisning: Operand = { ...b.sum, navn: 'undervisningsprosent' };
 
-  const prosenter = s.funksjoner.map((f) => f.prosent);
-  let funksjon: Operand = inndata('funksjon', prosenter[0] ?? 0, 'prosent');
+  // Funksjoner i årsrammetimer gjøres om til prosent, med eget trinn i utregningen.
+  const operander: Operand[] = s.funksjoner.map((f) => {
+    if (f.arsrammetimer === undefined) return inndata('funksjon', f.prosent, 'prosent');
+    const r = funksjonsprosent(hent, { type: 'arsrammetimer', timer: f.arsrammetimer });
+    alle.push(...r.trinn);
+    return r.prosent;
+  });
+  const prosenter = operander.map((o) => o.verdi);
+  let funksjon: Operand = operander[0] ?? inndata('funksjon', 0, 'prosent');
   if (prosenter.length > 1) {
     const liste: Operand = { navn: 'funksjoner', verdi: 0, enhet: 'prosent', opprinnelse: 'inndata', liste: prosenter };
     const t = trinn('sum_funksjon', { funksjoner: liste }, 'funksjon', 'prosent', prosenter.reduce((a, p) => a + p, 0));
@@ -54,7 +77,10 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     funksjon = t.resultat;
   }
 
-  const total = trinn('samlet_beskjeftigelse', { undervisning, funksjon }, 'samlet_beskjeftigelse', 'prosent', undervisning.verdi + funksjon.verdi);
+  const reduksjon = s.reduksjon ? inndata('redusert_undervisning', s.reduksjon, 'prosent') : null;
+  const total = reduksjon
+    ? trinn('samlet_med_reduksjon', { undervisning, funksjon, reduksjon }, 'samlet_beskjeftigelse', 'prosent', undervisning.verdi + funksjon.verdi + reduksjon.verdi)
+    : trinn('samlet_beskjeftigelse', { undervisning, funksjon }, 'samlet_beskjeftigelse', 'prosent', undervisning.verdi + funksjon.verdi);
   const stilling = inndata('stilling', s.stilling, 'prosent');
   const differanse = trinn('teknisk_differanse', { beskjeftigelse: total.resultat, stilling }, 'teknisk_differanse', 'prosent', total.resultat.verdi - s.stilling);
   alle.push(total, differanse);
@@ -78,6 +104,8 @@ export function beregnStillingsplan(hent: Hent, s: Stillingsplan): Stillingsplan
     grupper: b.grupper,
     undervisning,
     funksjon,
+    funksjonsprosenter: prosenter,
+    reduksjon,
     beskjeftigelse: total.resultat,
     stilling,
     differanse: differanse.resultat,

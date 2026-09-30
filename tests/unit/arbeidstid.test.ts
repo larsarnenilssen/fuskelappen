@@ -149,7 +149,7 @@ describe('fordeling', () => {
   const grupper = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
 
   it('delene summerer seg til årsverket for stillingen', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'arsrammetimer', timer: 28.5 }, moterPerUke: 2 });
+    const r = beregnFordeling(hent, { grupper, funksjon: { type: 'arsrammetimer', timer: 28.5 }, moterPerUke: 2 });
     const sum = r.deler.reduce((s, d) => s + d.timer, 0);
     expect(sum).toBeCloseTo(r.arsverk.verdi);
     expect(r.arsverk.verdi).toBeCloseTo((1687.5 * r.stilling.verdi) / 100);
@@ -159,29 +159,19 @@ describe('fordeling', () => {
 
   it('for hel stilling med funksjon gir planfestet tid det samme som punkt 5.3', () => {
     const hel = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: hel }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    const r = beregnFordeling(hent, { grupper: hel, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
     const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
     expect(planfestet).toBeCloseTo(beregnPlanfestet(hent, { type: 'prosent', prosent: 20 }).planfestet.verdi);
   });
 
-  it('kan regne ut fra stillingsprosent og årsramme i stedet for fag', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: { type: 'niva', t60: 525, t45: 700 } }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
-    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer;
-    expect(del('undervisning')).toBe(525);
-    expect(del('annen_planfestet')).toBe(625);
-    expect(del('selvdisponert')).toBe(537.5);
-    expect(r.arsverk.verdi).toBe(1687.5);
-    expect(r.trinn.find((t) => t.id === 'arstimer_fra_stilling')?.operander.arsramme?.oppslag?.kilde.punkt).toBe('Vedlegg 1');
-  });
-
   it('varsler når stillingen er over 100 % eller møtetiden er større enn planfestet tid', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 40 });
+    const r = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 40 });
     expect(r.advarsler).toEqual(expect.arrayContaining(['over_hel_stilling', 'motetid_for_stor']));
   });
 
   it('regner ut en stilling med bare funksjon, og legger møtetiden i funksjonstiden', () => {
     // 10 % stilling med 10 % funksjon og 3 timer møter i uka: ingen undervisning.
-    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    const r = beregnFordeling(hent, { grupper: [], stilling: 10, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
     const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
     expect(r.beskjeftigelse.verdi).toBe(0);
     expect(r.stilling.verdi).toBe(10);
@@ -195,55 +185,45 @@ describe('fordeling', () => {
     expect(r.advarsler).toEqual([]);
 
     // Det samme uten fag i fagvisningen.
-    const utenFag = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [] }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
+    const utenFag = beregnFordeling(hent, { grupper: [], funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 3 });
     expect(utenFag.deler).toEqual(r.deler);
 
     // Møter som ikke får plass i funksjonstiden heller, gir varsel.
-    const forMye = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 10 });
+    const forMye = beregnFordeling(hent, { grupper: [], stilling: 10, funksjon: { type: 'prosent', prosent: 10 }, moterPerUke: 10 });
     expect(forMye.advarsler).toContain('motetid_for_stor');
-  });
-
-  it('med stillingsprosent er undervisningen stillingen minus funksjonene', () => {
-    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: { type: 'niva', t60: 525, t45: 700 } }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
-    expect(r.beskjeftigelse.verdi).toBe(80);
-    expect(r.deler.find((d) => d.id === 'undervisning')?.timer).toBe(420);
-    expect(r.stilling.verdi).toBe(100);
-    const over = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 10, arsramme: null }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
-    expect(over.advarsler).toContain('funksjon_over_stilling');
-    expect(over.stilling.verdi).toBe(20);
   });
 
   it('med oppgitt stilling fordeles også den delen som ikke er fylt med fag og funksjoner', () => {
     const del = (r: ReturnType<typeof beregnFordeling>, id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
     // 100 % stilling uten fag, møter eller funksjoner: all planfestet tid er annen planfestet tid.
-    const tom = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    const tom = beregnFordeling(hent, { grupper: [], stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
     expect(tom.stilling.verdi).toBe(100);
     expect(del(tom, 'annen_planfestet')).toBeCloseTo(1150);
     expect(del(tom, 'selvdisponert')).toBeCloseTo(537.5);
     expect(del(tom, 'undervisning')).toBe(0);
 
     // 50 % stilling: halvparten.
-    const halv = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 50 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    const halv = beregnFordeling(hent, { grupper: [], stilling: 50, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
     expect(del(halv, 'annen_planfestet')).toBeCloseTo(575);
     expect(del(halv, 'selvdisponert')).toBeCloseTo(268.75);
 
     // 100 % stilling med 80 % undervisning: resten (20 %) regnes som undervisningsdelen.
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 2 });
+    const r = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 2 });
     expect(r.trinn.find((t) => t.id === 'ikke_fordelt')?.resultat.verdi).toBeCloseTo(20);
     expect(del(r, 'annen_planfestet')).toBeCloseTo(1150 - 420 - 76);
     expect(del(r, 'selvdisponert')).toBeCloseTo(537.5);
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
 
     // Er fag og funksjoner mer enn stillingen, er det de som fordeles, som før.
-    const over = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
-    const utenStilling = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    const over = beregnFordeling(hent, { grupper, stilling: 100, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    const utenStilling = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
     expect(over.deler).toEqual(utenStilling.deler);
     expect(over.stilling.verdi).toBeCloseTo(110);
   });
 
   it('funksjoner som ikke utvider planfestet tid, fordeles som undervisningen', () => {
     // 80 % undervisning (420 av 525) og 20 % kontaktlærer uten utvidelse: planfestet tid blir 1150 som for hel undervisning.
-    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 20, moterPerUke: 0 });
+    const r = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 20, moterPerUke: 0 });
     const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
     expect(r.stilling.verdi).toBe(100);
     expect(del('funksjonstid')).toBeCloseTo(230);
@@ -252,18 +232,18 @@ describe('fordeling', () => {
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
 
     // Med utvidelse blir planfestet tid det samme som punkt 5.3.
-    const med = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    const med = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
     expect(med.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1257.5);
 
     // Begge deler: 10 % som utvider og 10 % som ikke utvider.
-    const blandet = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 10 }, funksjonUtenUtvidelse: 10, moterPerUke: 0 });
+    const blandet = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 10 }, funksjonUtenUtvidelse: 10, moterPerUke: 0 });
     expect(blandet.deler.find((d) => d.id === 'funksjonstid')?.timer).toBeCloseTo(168.75 + 115);
     expect(blandet.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
   });
 
   it('utvider arbeidsåret når planfestet tid går over 37,5 timer per uke, som punkt 5.3', () => {
     // Hel stilling med bare funksjon: 1687,5 timer planfestet, over grensen på 39,2 × 37,5 = 1470 timer.
-    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: null }, funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });
+    const r = beregnFordeling(hent, { grupper: [], stilling: 100, funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });
     const p = beregnPlanfestet(hent, { type: 'prosent', prosent: 100 });
     expect(r.utvidelseDager.verdi).toBeCloseTo(p.utvidelseDager.verdi);
     expect(r.utvidelseDager.verdi).toBeCloseTo(29);
@@ -272,7 +252,7 @@ describe('fordeling', () => {
     expect(planfestet / r.arbeidsaarUker.verdi).toBeCloseTo(37.5);
 
     // Innenfor grensen er arbeidsåret 39,2 uker.
-    const vanlig = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    const vanlig = beregnFordeling(hent, { grupper, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
     expect(vanlig.utvidelseDager.verdi).toBe(0);
     expect(vanlig.arbeidsaarUker.verdi).toBeCloseTo(39.2);
   });
@@ -402,5 +382,45 @@ describe('lønn i stillingen', () => {
   it('godtgjøringen for kontaktlærer og rådgiver står i regelverket (SFS 2213 punkt 9.1)', () => {
     expect(hent('sfs2213.godtgjoring_kontaktlaerer').verdi).toBe(12000);
     expect(hent('sfs2213.godtgjoring_radgiver').verdi).toBe(12000);
+  });
+});
+
+describe('arbeidsplan: årsrammetimer og redusert undervisning', () => {
+  const engelsk = [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer' as const, arstimer: 420 } }];
+
+  it('gjør funksjoner i årsrammetimer om til prosent med årsrammen for funksjoner, med eget trinn', async () => {
+    const { beregnStillingsplan, funksjonsprosentFor } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    // Kontaktlærer 28,5 årsrammetimer ÷ 607,5 × 100 = 4,69 %.
+    expect(funksjonsprosentFor(hent, { navn: 'Kontaktlærer', prosent: 0, arsrammetimer: 28.5 })).toBeCloseTo(4.6914, 3);
+    const r = beregnStillingsplan(hent, {
+      stilling: 100,
+      grupper: engelsk,
+      funksjoner: [{ navn: 'Kontaktlærer', prosent: 0, arsrammetimer: 28.5 }, { navn: 'Team', prosent: 10 }],
+      timerIGruppe: 0,
+    });
+    expect(r.funksjonsprosenter[0]).toBeCloseTo(4.6914, 3);
+    expect(r.funksjon.verdi).toBeCloseTo(14.6914, 3);
+    expect(r.trinn.some((t) => t.id === 'funksjonsprosent')).toBe(true);
+  });
+
+  it('regner redusert undervisning som en del av stillingen', async () => {
+    const { beregnStillingsplan } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    // 87,5 % undervisning (459,375 av 525) og 12,5 % redusert undervisning for 60 år: stillingen går opp.
+    const g = [{ ...engelsk[0]!, undervisning: { type: 'arstimer' as const, arstimer: 459.375 } }];
+    const r = beregnStillingsplan(hent, { stilling: 100, grupper: g, funksjoner: [], timerIGruppe: 0, reduksjon: 12.5 });
+    expect(r.reduksjon?.verdi).toBe(12.5);
+    expect(r.beskjeftigelse.verdi).toBeCloseTo(100);
+    expect(Math.abs(r.differanse.verdi)).toBeLessThan(1e-9);
+    expect(r.trinn.some((t) => t.id === 'samlet_med_reduksjon')).toBe(true);
+  });
+
+  it('fordeler redusert undervisning uten å utvide planfestet tid, og bruker årsverket 1650 for 60 år', () => {
+    const g = [{ ...engelsk[0]!, undervisning: { type: 'arstimer' as const, arstimer: 459.375 } }];
+    const r = beregnFordeling(hent, { grupper: g, stilling: 100, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 12.5, moterPerUke: 0, over60: true });
+    const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+    expect(r.arsverk.verdi).toBe(1650);
+    expect(planfestet).toBeCloseTo(1150);
+    expect(r.deler.find((d) => d.id === 'selvdisponert')?.timer).toBeCloseTo(500);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1650);
   });
 });

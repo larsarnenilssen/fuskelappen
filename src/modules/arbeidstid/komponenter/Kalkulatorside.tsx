@@ -10,7 +10,7 @@ import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsra
 import { Metode } from './Metode.tsx';
 import { aapneINyttVindu } from '../kontekst.ts';
 
-export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'planfestet' | 'fordeling' | 'overtid';
+export type KalkulatorId = 'stillingsplan' | 'beskjeftigelse' | 'periode' | 'vikar' | 'overtid';
 
 /**
  * Kalkulatorsiden: skjemaet (children) og resultatet. På bred skjerm står resultatet i en egen kolonne til høyre,
@@ -38,6 +38,9 @@ export function Kalkulatorside({
           <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
         </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
+        <button type="button" class="ikonknapp skriv-ut" aria-label={t('arbeidstid.felles.skrivUt', { navn: tittel })} title={t('arbeidstid.felles.skrivUtKort')} onClick={() => window.print()}>
+          <Ikon navn="skriv" />
+        </button>
         <button
           type="button"
           class="ikonknapp nytt-vindu"

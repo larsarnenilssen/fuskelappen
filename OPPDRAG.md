@@ -1,6 +1,6 @@
 # OPPDRAG – Protokollen
 
-**Versjon:** 1.1 · 29.09.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til)
+**Versjon:** 1.2 · 30.09.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -320,6 +320,14 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Begrepsbank: arbeidstid, årsramme, beskjeftigelse, planfestet tid, delt dagsverk, lokale forhandlinger og drøftinger med flere. Søkbar og filtrerbar.
 - Kilder: SFS 2213 med vedlegg og protokoller, KS-hovedtariffavtalen, arbeidsmiljøloven.
 
+**Endret underveis etter eiers ønsker (0.2–0.6)**
+
+- **Arbeidsplan** er hovedkalkulatoren i modulen (adresse `#/arbeidstid/stillingsplan`). Den samler fag, funksjoner og redusert undervisning mot stillingsprosenten, med teknisk undertid eller overtid, fordeling av arbeidstiden (diagram, tabell og uke), lønn med tillegg, overtid og feriepenger, og lagrede varianter med navn.
+- Hurtigkalkulator 5 (planfestet arbeidstid med utvidelse ved funksjoner) og forklaringen med grafikk om fordelingen er en del av Arbeidsplan. De egne kalkulatorene for planfestet tid og fordeling er fjernet (30.09.2026).
+- Funksjoner oppgis i prosent eller årsrammetimer, og hver funksjon kan utvide planfestet tid eller ikke, og gi tillegg (SFS 2213 punkt 9.1).
+- Livsfasetiltak (punkt 6) regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer (eier 30.09.2026). Lærere som er 60 år og eldre har årsverk på 1650 timer.
+- Hurtigkalkulatorene er Arbeidsplan, beskjeftigelse (fag og fagkombinasjoner, blandede grupper), periodebeskjeftigelse, vikartimer og overtid.
+
 **Avklares med eier før implementering**
 
 - Hva «utvidet planfestet arbeidstid ved funksjoner» skal omfatte i kalkulatoren.
@@ -363,13 +371,13 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 
 ### Fase 3 – Arbeidsplan som illustrasjon
 
-**Leveranser**
+Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan med tenkt stilling, grafisk fordeling, lokalt lagrede varianter og merkingen «Illustrasjon – ikke en arbeidsplan». Eier har bestemt at variantene kan få navn (30.09.2026). Appen foreslår navn som «Før endring» og ber ikke om personopplysninger.
 
-- Brukeren setter sammen en tenkt stilling: fag og grupper (fra fase 2), funksjoner og andre oppgaver. Resultater fra kalkulatorene i fase 1–2 kan hentes inn.
-- Grafisk fremstilling av fordelingen: undervisning, for- og etterarbeid, andre oppgaver, planfestet og ikke-planfestet tid.
-- Sammenligning av to scenarier, f.eks. med og uten kontaktlærerfunksjon.
-- Scenarier lagres lokalt og kan deles som lenke (komprimert tilstand i adressen).
-- Tydelig merket «Illustrasjon – ikke en arbeidsplan». Ingen felt for navn; scenarier heter A, B og C.
+**Leveranser som gjenstår**
+
+- Fag og grupper hentes fra fagoppslaget i fase 2. Resultater fra andre kalkulatorer kan hentes inn (beskjeftigelse kan allerede føres videre til Arbeidsplan).
+- Sammenligning av to varianter side om side, f.eks. med og uten kontaktlærerfunksjon.
+- Varianter kan deles som lenke (komprimert tilstand i adressen).
 
 **Kontrollpunkt:** Eier vurderer om illustrasjonen er riktig og pedagogisk nyttig.
 

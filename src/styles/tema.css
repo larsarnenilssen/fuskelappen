@@ -96,3 +96,37 @@
   --diagram-selv: var(--p-graa-400);
   }
 }
+
+/* Utskrift og PDF bruker alltid lyst tema, også når skjermen er mørk. */
+@media print {
+  :root,
+  :root[data-tema='mork'],
+  :root:not([data-tema='lys']) {
+    color-scheme: light;
+    --farge-bakgrunn: var(--p-papir);
+    --farge-flate: var(--p-hvit);
+    --farge-flate-2: var(--p-blaa-100);
+    --farge-tekst: var(--p-blekk);
+    --farge-tekst-dempet: var(--p-blekk-dempet);
+    --farge-linje: var(--p-linje-lys);
+    --farge-merke: var(--p-blaa-700);
+    --farge-merke-tekst: var(--p-hvit);
+    --farge-lenke: var(--p-blaa-700);
+    --farge-topplinje: var(--p-blaa-900);
+    --farge-topplinje-tekst: var(--p-hvit);
+    --farge-ok: var(--p-groenn-700);
+    --farge-ok-flate: var(--p-groenn-100);
+    --farge-advarsel: var(--p-rav-700);
+    --farge-advarsel-flate: var(--p-rav-100);
+    --farge-feil: var(--p-roed-700);
+    --farge-feil-flate: var(--p-roed-100);
+    --farge-info-flate: var(--p-blaa-100);
+    --farge-fokus: var(--p-fokus-lys);
+    --farge-temafarge: var(--meta-temafarge-lys);
+    --diagram-undervisning: var(--p-blaa-700);
+    --diagram-motetid: var(--p-rav-700);
+    --diagram-annen: var(--p-groenn-700);
+    --diagram-funksjon: var(--p-lilla-700);
+    --diagram-selv: var(--p-graa-600);
+  }
+}

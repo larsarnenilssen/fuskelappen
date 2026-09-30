@@ -134,8 +134,8 @@
   type: begrep
   tittel: { nb: Annet elevrettet arbeid, nn: Anna elevretta arbeid }
   tekst:
-    nb: Annet elevrettet arbeid er blant det planfestet tid først og fremst brukes til. Begrepet er ikke definert i avtalen, og hva som regnes med, blir ofte avklart lokalt. Se forklaringen under «Fordeling av arbeidstiden».
-    nn: Anna elevretta arbeid er blant det planfesta tid først og fremst blir brukt til. Omgrepet er ikkje definert i avtalen, og kva som blir rekna med, blir ofte avklart lokalt. Sjå forklaringa under «Fordeling av arbeidstida».
+    nb: Annet elevrettet arbeid er blant det planfestet tid først og fremst brukes til. Begrepet er ikke definert i avtalen, og hva som regnes med, blir ofte avklart lokalt. Se forklaringen under «Hva tiden brukes til» i Arbeidsplan.
+    nn: Anna elevretta arbeid er blant det planfesta tid først og fremst blir brukt til. Omgrepet er ikkje definert i avtalen, og kva som blir rekna med, blir ofte avklart lokalt. Sjå forklaringa under «Kva tida blir brukt til» i Arbeidsplan.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-fou-sfs2213 }

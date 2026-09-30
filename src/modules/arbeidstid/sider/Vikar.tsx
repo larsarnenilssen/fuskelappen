@@ -1,12 +1,13 @@
 // Vikartimer: økt beskjeftigelse for ansatte i stilling, eller lønn for timevikarer.
 import { useTekst } from '../../../app/tilstand.ts';
+import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnTimevikar, beregnVikarFast } from '../beregning/index.ts';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer } from '../komponenter/Kalkulatorside.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Bryter, Fagfelt, Minuttvelger, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
-import { medEnhet, Utregningskort } from '../komponenter/Utregning.tsx';
+import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { Belopsstolpe } from '../komponenter/Grafikk.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -90,7 +91,11 @@ export default function Vikar() {
         ]}
         onEndring={(type) => sett({ ...s, type })}
       />
-      <div class="fagkort">
+      <Sammenleggbartkort
+        nokkel="vikartimer"
+        tittel={t('arbeidstid.vikar.kortTimer')}
+        {...(s.okter !== null && s.minutter !== null ? { oppsummering: t('arbeidstid.vikar.oppsummering', { okter: tallTekst(s.okter), minutter: tallTekst(s.minutter) }) } : {})}
+      >
         <Fagfelt
           plasser={s.plasser}
           faaElever={s.faaElever}
@@ -101,13 +106,13 @@ export default function Vikar() {
         />
         <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={s.okter} min={0} maks={2000} onEndring={(okter) => sett({ ...s, okter })} />
         <Minuttvelger minutter={s.minutter} fritt={s.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ ...s, minutter, minutterFritt })} />
-      </div>
+      </Sammenleggbartkort>
 
       {s.type === 'timevikar' && (
-        <div class="fagkort">
+        <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
           <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
           <Vippe tekst={t('arbeidstid.vikar.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
-        </div>
+        </Sammenleggbartkort>
       )}
 
     </Kalkulatorside>

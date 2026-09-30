@@ -17,9 +17,7 @@ const ider: { id: KalkulatorId; ikon: Ikonnavn }[] = [
   { id: 'beskjeftigelse', ikon: 'kalkulator' },
   { id: 'periode', ikon: 'klokke' },
   { id: 'vikar', ikon: 'kalkulator' },
-  { id: 'planfestet', ikon: 'klokke' },
   { id: 'overtid', ikon: 'kalkulator' },
-  { id: 'fordeling', ikon: 'kategori' },
 ];
 
 export const kalkulatorer: Kalkulator[] = ider.map(({ id, ikon }) => ({

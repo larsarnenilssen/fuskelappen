@@ -103,7 +103,8 @@ export type Storrelse =
   | 'ikke_fordelt'
   | 'undervisningsdel'
   | 'funksjonstillegg'
-  | 'lonn_i_alt';
+  | 'lonn_i_alt'
+  | 'redusert_undervisning';
 
 export interface Operand {
   navn: Storrelse;
@@ -158,7 +159,6 @@ export type TrinnId =
   | 'motetid'
   | 'annen_planfestet'
   | 'selvdisponert_stilling'
-  | 'arstimer_fra_stilling'
   | 'overtidsprosent'
   | 'overtidstimer'
   | 'kalkulert_tid_overtid'
@@ -167,7 +167,6 @@ export type TrinnId =
   | 'samlet_beskjeftigelse'
   | 'teknisk_differanse'
   | 'teknisk_timer'
-  | 'undervisning_fra_stilling'
   | 'motetid_i_funksjon'
   | 'funksjonstid_etter_moter'
   | 'planfestet_stilling'
@@ -180,7 +179,8 @@ export type TrinnId =
   | 'ikke_fordelt'
   | 'undervisningsdel'
   | 'lonn_i_alt'
-  | 'uker_i_perioden';
+  | 'uker_i_perioden'
+  | 'samlet_med_reduksjon';
 
 export interface Trinn {
   id: TrinnId;
@@ -191,7 +191,7 @@ export interface Trinn {
   gruppe?: number;
 }
 
-export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'funksjon_over_stilling' | 'uker_fra_dager';
+export type AdvarselId = 'over_hel_stilling' | 'motetid_for_stor' | 'mangler_elevtall' | 'uker_fra_dager';
 
 export interface Utregning {
   trinn: Trinn[];

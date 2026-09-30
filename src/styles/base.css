@@ -1730,7 +1730,8 @@ p.fagkort-tittel {
   margin: 0 0 0 auto;
 }
 
-.kalkulator .tittelrad .ikonknapp + .nytt-vindu {
+.kalkulator .tittelrad .ikonknapp + .nytt-vindu,
+.kalkulator .tittelrad .ikonknapp + .skriv-ut {
   margin-left: 0;
 }
 
@@ -1877,7 +1878,8 @@ p.fagkort-tittel {
 /* ---------- Stillingsplan ---------- */
 
 .funksjonsrad .vippe,
-.funksjonsrad .funksjon-tillegg {
+.funksjonsrad .funksjon-tillegg,
+.funksjonsrad .funksjon-linje {
   flex-basis: 100%;
   margin: 0;
 }
@@ -2057,3 +2059,51 @@ p.fagkort-tittel {
   align-items: center;
   gap: var(--rom-1);
 }
+
+/* ---------- Utskrift og PDF ----------
+   Bare kalkulatoren skrives ut: menyer, knapper og faste linjer skjules, og innhold i lukkede kort og utregningen vises. */
+
+@media print {
+  body,
+  html {
+    background: var(--farge-flate);
+  }
+
+  .topplinje,
+  .bunnmeny,
+  .hopp,
+  .resultatlinje,
+  .tittelrad .ikonknapp,
+  .hjelpknapp,
+  .varianter,
+  .resultatkort-knapper,
+  .fordeling-topp .lenkeknapp,
+  .kort-oppsummering,
+  .kortknapp-pil,
+  .fagkort-fjern,
+  .inndatarad .ikonknapp,
+  .lenke-pil,
+  .lenkeknapp,
+  .kalkulator .knapp,
+  .kalkulator-etter,
+  .kalkulator .forklaring {
+    display: none !important;
+  }
+
+  .kalkulator [hidden]:not(.hjelp-tekst) {
+    display: block !important;
+  }
+
+  main {
+    max-width: none;
+    padding: 0;
+  }
+
+  .fagkort,
+  .resultatkort,
+  .fordeling-visning,
+  .utregning li {
+    break-inside: avoid;
+  }
+}
+
