@@ -1808,7 +1808,8 @@ p.fagkort-tittel {
 
 /* ---------- Stillingsplan ---------- */
 
-.funksjonsrad .vippe {
+.funksjonsrad .vippe,
+.funksjonsrad .funksjon-tillegg {
   flex-basis: 100%;
   margin: 0;
 }

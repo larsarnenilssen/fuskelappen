@@ -351,17 +351,22 @@ test.describe('arbeidstid', () => {
     await expect(lonn).toContainText(/Feriepenger i tillegg\s*57\s600/);
     await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
 
-    // Tillegg fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
-    await page.getByRole('switch', { name: 'Legg til tillegg' }).check();
-    const tillegg = page.getByLabel('Tillegg per år');
-    await expect(tillegg).toHaveValue(/12\s?000/);
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/492\s000/);
+    // Tillegg per funksjon: beløpet fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    const tillegg1 = page.getByLabel('Tillegg per år, funksjon 1');
+    await expect(tillegg1).toHaveValue(/12\s?000/);
+    await expect(page.getByText(/minst 12\s000 kr i året for rådgiver eller sosiallærer/)).toBeVisible();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/492\s000/);
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
-    await expect(tillegg).toHaveValue(/24\s?000/);
-    await tillegg.fill('15000');
-    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/495\s000/);
+    // Funksjon 2 har ikke tillegg før bryteren slås på.
+    await expect(page.getByLabel('Tillegg per år, funksjon 2')).toHaveCount(0);
+    await page.getByRole('switch', { name: 'Funksjon 2: Tillegg i lønnen' }).check();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/504\s000/);
+    await expect(lonn).toContainText(/Tillegg: Kontaktlærer\s*12\s000/);
+    await tillegg1.fill('15000');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/507\s000/);
     await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
   });
 

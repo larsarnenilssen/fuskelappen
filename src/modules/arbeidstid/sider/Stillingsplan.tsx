@@ -25,6 +25,10 @@ interface Funksjonstilstand {
   prosent: number | null;
   /** Om funksjonen utvider planfestet tid (punkt 5.3). Mangler i skjema lagret før 0.5.0, og regnes da som på. */
   utvider?: boolean;
+  /** Om funksjonen gir tillegg i lønnen (godtgjøring, SFS 2213 punkt 9.1). */
+  tillegg?: boolean;
+  /** Tillegget i kroner per år, eller null når beløpet fra SFS 2213 skal brukes. */
+  tilleggKr?: number | null;
 }
 
 let nesteFunksjon = 1;
@@ -33,9 +37,12 @@ const utvider = (f: Funksjonstilstand) => f.utvider !== false;
 
 /** Funksjoner med fast minstegodtgjøring i SFS 2213 punkt 9.1, kjent igjen på navnet brukeren har gitt funksjonen. */
 const godtgjorteFunksjoner = [
-  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i },
-  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i },
+  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i, hjelp: 'arbeidstid.stillingsplan.tilleggKontaktlaerer' },
+  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i, hjelp: 'arbeidstid.stillingsplan.tilleggRadgiver' },
 ] as const;
+
+/** Forslag til tillegg for en funksjon: beløpet fra SFS 2213 og en forklaring av hvor det kommer fra. */
+type Tilleggsforslag = (f: Funksjonstilstand) => { verdi: number; hjelp: string };
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
 function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
@@ -44,7 +51,16 @@ function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string 
   return reserve;
 }
 
-function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]; onEndring: (f: Funksjonstilstand[]) => void }) {
+function Funksjoner({
+  funksjoner,
+  tillegg,
+  onEndring,
+}: {
+  funksjoner: Funksjonstilstand[];
+  /** Forslag til tillegg når lønnen regnes ut, ellers null (da vises ikke tilleggene). */
+  tillegg: Tilleggsforslag | null;
+  onEndring: (f: Funksjonstilstand[]) => void;
+}) {
   const { t } = useTekst();
   const id = useId();
   const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
@@ -89,6 +105,26 @@ function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]
             pa={utvider(f)}
             onEndring={(pa) => sett(f.id, { utvider: pa })}
           />
+          {tillegg && (
+            <Vippe
+              tekst={t('arbeidstid.stillingsplan.tilleggVippe')}
+              skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
+              pa={f.tillegg === true}
+              onEndring={(pa) => sett(f.id, { tillegg: pa })}
+            />
+          )}
+          {tillegg && f.tillegg && (
+            <Tallfelt
+              class="felt-kompakt funksjon-tillegg"
+              etikett={t('arbeidstid.stillingsplan.tilleggFelt', { nr: i + 1 })}
+              hjelpetekst={f.tilleggKr == null ? tillegg(f).hjelp : t('arbeidstid.stillingsplan.tilleggEget')}
+              enhet="kr"
+              verdi={f.tilleggKr ?? tillegg(f).verdi}
+              min={0}
+              maks={1000000}
+              onEndring={(tilleggKr) => sett(f.id, { tilleggKr })}
+            />
+          )}
         </div>
       ))}
       <div class="med-hjelp">
@@ -124,9 +160,6 @@ export default function Stillingsplan() {
       visLonn: false,
       lonn: nyLonnstilstand(),
       over60: false,
-      visTillegg: false,
-      /** Tillegg i kroner per år, eller null når forslaget fra SFS 2213 skal brukes. */
-      tillegg: null as number | null,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -160,14 +193,21 @@ export default function Stillingsplan() {
       ).resultat
     : null;
   const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
-  // Forslag til tillegg fra SFS 2213 punkt 9.1: minstegodtgjøringen for funksjonene som er kjent igjen på navnet,
-  // eller for kontaktlærer, som er den vanligste, når ingen er kjent igjen. Brukeren kan skrive inn et annet beløp.
+  // Tillegg per funksjon. Forslaget er minstegodtgjøringen i SFS 2213 punkt 9.1 for funksjonen som er kjent igjen på
+  // navnet, eller for kontaktlærer, som er den vanligste, når navnet ikke kjennes igjen. Brukeren kan skrive inn et annet beløp.
   const kontaktlaerer = useRegeltall(hent, 'sfs2213.godtgjoring_kontaktlaerer');
   const radgiver = useRegeltall(hent, 'sfs2213.godtgjoring_radgiver');
   const satser: Record<string, number | null> = { 'sfs2213.godtgjoring_kontaktlaerer': kontaktlaerer, 'sfs2213.godtgjoring_radgiver': radgiver };
-  const kjente = godtgjorteFunksjoner.filter((g) => s.funksjoner.some((f) => g.navn.test(f.navn)));
-  const foreslatt = (kjente.length > 0 ? kjente : [godtgjorteFunksjoner[0]]).reduce((sum, g) => sum + (satser[g.nokkel] ?? 0), 0);
-  const tillegg = s.tillegg ?? foreslatt;
+  const tilleggsforslag: Tilleggsforslag = (f) => {
+    const kjent = godtgjorteFunksjoner.find((g) => g.navn.test(f.navn));
+    const verdi = satser[(kjent ?? godtgjorteFunksjoner[0]).nokkel] ?? 0;
+    return { verdi, hjelp: t(kjent ? kjent.hjelp : 'arbeidstid.stillingsplan.tilleggUkjent', { kr: tallTekst(verdi) }) };
+  };
+  const tilleggene = s.funksjoner
+    .map((f, i) => ({ f, i }))
+    .filter(({ f }) => f.tillegg === true)
+    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f).verdi }));
+  const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
 
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
   // Overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
@@ -178,7 +218,7 @@ export default function Stillingsplan() {
           beregnLonn(hent, {
             lonn: lonnsgrunnlag,
             stilling: s.stilling ?? 0,
-            tillegg: s.visTillegg ? tillegg : null,
+            tillegg,
             overtid:
               resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
             over60: s.over60,
@@ -311,7 +351,7 @@ export default function Stillingsplan() {
               <Oversiktsliste
                 rader={[
                   { navn: t('arbeidstid.stillingsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
-                  ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.stillingsplan.tilleggNavn'), verdi: medEnhet(t, lonn.resultat.tillegg.verdi, 'kroner') }] : []),
+                  ...tilleggene.map((x) => ({ navn: t('arbeidstid.stillingsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
                   ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
                   { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
                 ]}
@@ -348,7 +388,7 @@ export default function Stillingsplan() {
         delresultater={delresultater}
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
-      <Funksjoner funksjoner={s.funksjoner} onEndring={(f) => sett({ ...s, funksjoner: f })} />
+      <Funksjoner funksjoner={s.funksjoner} tillegg={s.visLonn ? tilleggsforslag : null} onEndring={(f) => sett({ ...s, funksjoner: f })} />
       <fieldset class="fagkort">
         <legend class="fagkort-tittel">{t('arbeidstid.stillingsplan.tillegg')}</legend>
         <Tallfelt
@@ -365,26 +405,7 @@ export default function Stillingsplan() {
           <>
             <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
             <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
-            <Vippe tekst={t('arbeidstid.stillingsplan.visTillegg')} pa={s.visTillegg} onEndring={(visTillegg) => sett({ ...s, visTillegg })} />
-            {s.visTillegg && (
-              <Tallfelt
-                class="felt-kompakt"
-                etikett={t('arbeidstid.stillingsplan.tilleggFelt')}
-                hjelpetekst={
-                  s.tillegg === null
-                    ? t('arbeidstid.stillingsplan.tilleggForslag', {
-                        kontaktlaerer: tallTekst(kontaktlaerer ?? 0),
-                        radgiver: tallTekst(radgiver ?? 0),
-                      })
-                    : t('arbeidstid.stillingsplan.tilleggEget')
-                }
-                enhet="kr"
-                verdi={tillegg}
-                min={0}
-                maks={1000000}
-                onEndring={(verdi) => sett({ ...s, tillegg: verdi })}
-              />
-            )}
+            <p class="felt-hjelp">{t('arbeidstid.stillingsplan.tilleggHint')}</p>
           </>
         )}
       </fieldset>
