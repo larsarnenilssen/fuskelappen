@@ -4,13 +4,14 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
+import type { Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
 import { lesKildestatus } from '../../src/core/kildestatus/kildestatus.ts';
 import { lagKontrollindeks } from '../../src/core/kontroll/indeks.ts';
 import { lesVerdistatus } from '../../src/core/kontroll/verdisjekk.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import type { Tekstendring } from './avsnitt.ts';
+import { lagKontrollrunde, praksisTilBekreftelse, RUNDEETIKETT, rundemerke, rundeperiode } from './kontrollrunde.ts';
 import { GAMMEL_ETIKETT, KONTROLLETIKETT, lagUkesrapport, planleggKontrollsak, type Sakshandling } from './ukesrapport.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
@@ -29,6 +30,11 @@ const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/protokollen';
 const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 
 const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo });
+
+// Kontrollrunden: første mandag i mai og august, eller når den startes manuelt (KONTROLLRUNDE=ja).
+const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
+const periode = process.env.KONTROLLRUNDE === 'ja' ? idag.slice(0, 7) : rundeperiode(idag);
+const runde = periode ? lagKontrollrunde(periode, praksisTilBekreftelse(praksis, idag), indeks, repo) : null;
 
 async function github<T>(metode: string, sti: string, kropp?: unknown): Promise<T> {
   const svar = await fetch(`${api}/repos/${repo}${sti}`, {
@@ -52,11 +58,11 @@ async function aapneSaker(etikett: string): Promise<Sak[]> {
   return saker.filter((s) => !s.pull_request);
 }
 
-async function sikreEtikett(): Promise<void> {
+async function sikreEtikett(navn: string, beskrivelse: string): Promise<void> {
   try {
-    await github('GET', `/labels/${KONTROLLETIKETT}`);
+    await github('GET', `/labels/${navn}`);
   } catch {
-    await github('POST', '/labels', { name: KONTROLLETIKETT, color: 'fbca04', description: 'Ukentlig kontrollsak fra kildesjekken' });
+    await github('POST', '/labels', { name: navn, color: 'fbca04', description: beskrivelse });
   }
 }
 
@@ -75,14 +81,27 @@ async function utfor(h: Sakshandling): Promise<void> {
 if (!token || !process.env.GITHUB_REPOSITORY) {
   console.log(`[tørrkjøring] ${rapport.aapen ? rapport.tittel : 'Ingen kontrollsak denne uken.'}\n`);
   if (rapport.aapen) console.log(rapport.tekst);
+  if (runde) console.log(`\n[tørrkjøring] ${runde.tittel}\n\n${runde.tekst}`);
 } else {
   const [kontroll] = await aapneSaker(KONTROLLETIKETT);
   const gamle = (await aapneSaker(GAMMEL_ETIKETT)).map((s) => s.number);
   const handlinger = planleggKontrollsak(rapport, kontroll ? { nummer: kontroll.number, tekst: kontroll.body } : null, gamle);
-  if (handlinger.some((h) => h.type === 'opprett')) await sikreEtikett();
+  if (handlinger.some((h) => h.type === 'opprett')) await sikreEtikett(KONTROLLETIKETT, 'Ukentlig kontrollsak fra kildesjekken');
   for (const h of handlinger) {
     await utfor(h);
     console.log(h.type === 'opprett' ? `Opprettet kontrollsak: ${h.tittel}` : `${h.type} sak #${h.nummer}`);
   }
   if (handlinger.length === 0) console.log('Ingen kontrollsak denne uken.');
+
+  if (runde && periode) {
+    // Bare én sak per runde, også om jobben kjøres flere ganger i uken.
+    const finnes = (await github<Sak[]>('GET', `/issues?labels=${RUNDEETIKETT}&state=all&per_page=100`)).some((s) => s.body?.includes(rundemerke(periode)));
+    if (finnes) {
+      console.log(`Kontrollrunden for ${periode} finnes allerede.`);
+    } else {
+      await sikreEtikett(RUNDEETIKETT, 'Kontrollrunde i mai og august');
+      await github('POST', '/issues', { title: runde.tittel, body: runde.tekst, labels: [RUNDEETIKETT] });
+      console.log(`Opprettet kontrollrunde: ${runde.tittel}`);
+    }
+  }
 }

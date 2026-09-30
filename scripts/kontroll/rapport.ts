@@ -4,12 +4,13 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Kilde, Kilderegister } from '../../src/core/innhold/skjema.ts';
+import type { Kilde, Kilderegister, Praksis, Praksisfil } from '../../src/core/innhold/skjema.ts';
 import { lesKildestatus, type Kildestatusfil } from '../../src/core/kildestatus/kildestatus.ts';
 import { lagKontrollindeks, tellKontroll, type Kildekontroll, type Kontrollinnhold, type Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
 import { lesVerdistatus, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Innholdsstatus } from '../../src/core/innhold/status.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
+import { praksisTilBekreftelse } from '../kilder/kontrollrunde.ts';
 import { lesFil } from '../innhold/last.ts';
 
 function dato(iso: string): string {
@@ -133,15 +134,46 @@ function maaSesPaa(indeks: readonly Kildekontroll[], register: Kilderegister, st
   return linjer;
 }
 
+function praksisdel(praksis: readonly Praksis[]): string[] {
+  if (praksis.length === 0) return [];
+  return [
+    '## Praksis og tolkninger',
+    '',
+    'Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kontrollrundene i mai og august.',
+    '',
+    '| Praksis | Spørsmål | Grunnlag | Bekreftet |',
+    '|---|---|---|---|',
+    ...praksis.map((p) => `| **${celle(p.tittel)}** | ${celle(p.sporsmal)} | ${celle(p.grunnlag)} | ${p.bekreftet ? dato(p.bekreftet.dato) : 'ikke bekreftet'} |`),
+    '',
+  ];
+}
+
+/** Kontrollspørsmålene til innholdet, én gang per element, med de som ikke er kontrollert først. */
+function sporsmalsdel(indeks: readonly Kildekontroll[]): string[] {
+  const unike = new Map<string, Kontrollinnhold>();
+  for (const k of indeks) for (const i of k.innhold) if (!unike.has(i.id)) unike.set(i.id, i);
+  const med = [...unike.values()].filter((i) => i.sporsmal.length > 0).sort((a, b) => Number(a.eier === 'kontrollert') - Number(b.eier === 'kontrollert'));
+  if (med.length === 0) return [];
+  return [
+    '## Kontrollspørsmål',
+    '',
+    'Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om praksisen stemmer. Svar gjerne i en kommentar i kontrollsaken, eller skriv til Claude.',
+    '',
+    ...med.flatMap((i) => [`**${i.tittel}** (${TYPENAVN[i.elementtype]}, ${visEier(i)})`, '', ...i.sporsmal.map((s) => `- ${s}`), '']),
+  ];
+}
+
 export function lagKontrollrapport(
   indeks: readonly Kildekontroll[],
   register: Kilderegister,
   kildestatus: Kildestatusfil | null,
   verdistatus: Verdistatusfil | null,
   idag: string,
+  praksis: readonly Praksis[] = [],
 ): string {
   const t = tellKontroll(indeks);
   const sesPaa = maaSesPaa(indeks, register, kildestatus);
+  const ubekreftet = praksisTilBekreftelse(praksis, idag);
   const kilder = new Map(register.kilder.map((k) => [k.id, k]));
   const deler = indeks.flatMap((k) => {
     const kilde = kilder.get(k.kilde);
@@ -171,6 +203,7 @@ export function lagKontrollrapport(
     `| Kilden er endret etter kontrollen | ${t.kildeEndret} |`,
     `| Bør kontrolleres på nytt (over 12 måneder) | ${t.borKontrolleres} |`,
     `| Ikke kontrollert | ${t.ikkeKontrollert} |`,
+    ...(praksis.length > 0 ? [`| Praksis og tolkninger som bør bekreftes | ${ubekreftet.length} av ${praksis.length} |`] : []),
     '',
     '| Automatisk sjekk av regelverdier | Antall |',
     '|---|---|',
@@ -183,9 +216,11 @@ export function lagKontrollrapport(
     '',
     ...(sesPaa.length > 0 ? sesPaa : ['Ingenting akkurat nå.']),
     '',
+    ...praksisdel(praksis),
     '## Per kilde',
     '',
     ...deler,
+    ...sporsmalsdel(indeks),
   ].join('\n');
 }
 
@@ -200,6 +235,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   const verdistatus = lesVerdistatus(lesJson(join(rot, 'data/status/verdistatus.json')));
   const idag = new Date().toISOString().slice(0, 10);
   const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), kildestatus?.kilder ?? {}, verdistatus, idag);
-  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag)}\n`);
+  const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
+  writeFileSync(join(rot, 'docs/KONTROLL.md'), `${lagKontrollrapport(indeks, register, kildestatus, verdistatus, idag, praksis)}\n`);
   console.log('Skrev docs/KONTROLL.md');
 }

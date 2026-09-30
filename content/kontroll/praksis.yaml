@@ -1,0 +1,91 @@
+# Praksis og tolkninger som appen bygger på, men som ikke står i kildene. Eier bekrefter dem i kontrollrundene
+# i mai og august (avgjørelse 019). Listen vises i kontrolloversikten (docs/KONTROLL.md), ikke i appen.
+# berorer: regelverdier («regelsett/nøkkel») og innhold (id). bekreftet: { dato } settes bare av eier.
+praksis:
+  - id: lonn-brutte-maneder
+    tittel: Lønn i brutte måneder
+    sporsmal: Regnes lønn for deler av en måned fortsatt som arbeidsdagene ÷ 21,67 av månedslønnen, med offentlige fridager som arbeidsdager?
+    appen: Hele måneder gir hel månedslønn. I brutte måneder gir hver arbeidsdag (mandag–fredag, også fridager) 1/21,67 av månedslønnen.
+    grunnlag: Eier 30.09.2026. Praksis i lønnssystemet og i Vestland fylkeskommune.
+    berorer: [hta-2026-2028/arbeidsdager_per_maned, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: variabel-lonn-deltid
+    tittel: Variabel lønn for deltidsansatte
+    sporsmal: Gjelder det fortsatt at beskjeftigelse over en stilling under 100 %, opp til hel stilling, gir variabel lønn uten overtidstillegg? Er dommen om overtid for deltidsansatte blitt rettskraftig?
+    appen: Det som er over stillingen og opp til 100 %, er variabel lønn med vanlig timelønn. Bare det som er over 100 %, er overtid.
+    grunnlag: Eier 30.09.2026, inntil dommen om overtid for deltidsansatte er rettskraftig.
+    berorer: [variabel-lonn, teknisk-undertid-overtid, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: overtid-undervisning
+    tittel: Overtidsbetaling for undervisning
+    sporsmal: Betales overtid for undervisning fortsatt som kalkulert tid × timelønn × 1,5?
+    appen: Overtidsbetaling = kalkulert tid × timelønn for undervisning × 1,5.
+    grunnlag: Eier 29.09.2026. Hovedtariffavtalen § 6.4 og § 6.5.3.
+    berorer: [hta-2026-2028/overtidstillegg_prosent, metode-overtid, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: planleggingsdager-45
+    tittel: Planleggingsdager
+    sporsmal: Brukes fortsatt 45 timer planleggingsdager for alle, tatt fra annen planfestet tid, slik Visma InSchool gjør?
+    appen: Planleggingsdagene er 6 × 7,5 = 45 timer for alle, tatt fra annen planfestet tid. Tallet kan endres for den enkelte.
+    grunnlag: Eier 30.09.2026. Visma InSchool.
+    berorer: [planleggingsdager, bruk-planleggingsdager, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: skolear-38-uker
+    tittel: Skoleåret og timer per uke
+    sporsmal: Er elevenes skoleår fortsatt 190 dager og 38 uker, og skal timene per uke fordeles på 38 skoleuker?
+    appen: Skoleåret er 190 dager og 38 uker. Møtetid regnes for 38 uker, og timer per uke er timene utenom planleggingsdagene ÷ 38.
+    grunnlag: Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk.
+    berorer: [sfs2213-2026-2027/skolear_uker, sfs2213-2026-2027/skolear_dager, bruk-motetid, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: planfestet-60
+    tittel: Planfestet tid fra 60 år
+    sporsmal: Regnes planfestet tid for lærere som er 60 år og eldre fortsatt som samme andel av årsverket (1150 × 1650 ÷ 1687,5 = 1124,44 timer)?
+    appen: Ferien tas like mye fra planfestet tid og tiden læreren disponerer selv.
+    grunnlag: Eier 30.09.2026.
+    berorer: [sfs2213-2026-2027/arsverk_timer_60_ar, arsverk, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: periodenokkel
+    tittel: Periodenøkkel
+    sporsmal: Regnes periodebeskjeftigelse fortsatt med undervisningsdager i perioden ÷ undervisningsdager i skoleåret, slik Visma InSchool gjør?
+    appen: Perioderamme = årsramme × periodenøkkel. Beskjeftigelse i perioden = timene i perioden ÷ perioderammen × 100.
+    grunnlag: Eier 30.09.2026. Visma InSchool.
+    berorer: [periodebeskjeftigelse, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: frigjort-tid-57
+    tittel: Frigjort tid for 57-åringer
+    sporsmal: Skal redusert undervisning for lærere som har fylt 57 år, fortsatt regnes som for nyutdannede og lærere over 60 år, selv om avtaleteksten ikke sier det uttrykkelig?
+    appen: Livsfasetiltak regnes som funksjoner som ikke utvider planfestet tid, også for 57-åringer. Den frigjorte tiden fordeles som undervisningen.
+    grunnlag: Eier 30.09.2026.
+    berorer: [livsfasetiltak, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: funksjon-arsramme-607
+    tittel: Funksjoner i årsrammetimer
+    sporsmal: Gjøres funksjoner som er oppgitt i årsrammetimer, fortsatt om til prosent med årsrammen 607,5?
+    appen: Prosent = årsrammetimer ÷ 607,5 × 100. Kontaktlærer med 28,5 årsrammetimer gir 4,69 %.
+    grunnlag: Tolkning av vedlegg 1 til SFS 2213 (årsramme ved redusert undervisning på grunn av funksjon).
+    berorer: [sfs2213-2026-2027/arsramme_funksjon, kontaktlaerer, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: utvidet-arbeidsar
+    tittel: Utvidet arbeidsår
+    sporsmal: Regnes utvidelsen av arbeidsåret fortsatt som timene over 37,5 × 38 + 45 = 1470 planfestede timer, delt på 7,5 timer per dag?
+    appen: 100 % funksjon gir 29 dager, i alt 225 dager. For lærere som er 60 år og eldre er arbeidsåret fem dager kortere.
+    grunnlag: Eier 30.09.2026.
+    berorer: [arbeidsar, metode-arbeidsplan]
+    bekreftet: null
+
+  - id: tillegg-standard
+    tittel: Tillegg for funksjoner
+    sporsmal: Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner?
+    appen: Tillegget fylles inn med minstegodtgjøringen i punkt 9.1. Kjennes navnet ikke igjen, brukes beløpet for kontaktlærer.
+    grunnlag: Appens valg, med utgangspunkt i SFS 2213 punkt 9.1.
+    berorer: [sfs2213-2026-2027/godtgjoring_kontaktlaerer, funksjonsgodtgjoring, metode-arbeidsplan]
+    bekreftet: null

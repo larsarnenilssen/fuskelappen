@@ -14,6 +14,11 @@ on:
         description: 'Simuler feil for én kilde (skriv f.eks. ks-sfs2213). La stå tomt for vanlig kjøring.'
         required: false
         default: ''
+      kontrollrunde:
+        description: 'Lag en kontrollrunde nå (ellers bare første mandag i mai og august).'
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: kildesjekk
@@ -76,10 +81,11 @@ jobs:
           git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/skoler/vgs.json data/grep docs/KONTROLL.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
-      - name: Ukentlig kontrollsak (issue)
+      - name: Ukentlig kontrollsak og kontrollrunde (issues)
         run: npm run kilder:varsle
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          KONTROLLRUNDE: ${{ inputs.kontrollrunde && 'ja' || '' }}
 
   publiser:
     name: Publiser fersk kildestatus

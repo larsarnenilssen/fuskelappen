@@ -16,6 +16,7 @@ En fil kan inneholde ett element eller en liste.
 | `gyldighet` | nei | `{ niva: nasjonal }` (standard), `{ niva: fylke, fylke, forhold }` eller `{ niva: skole, fylke, skole, forhold }`. `forhold` er `erstatter` eller `supplerer` |
 | `kilder` | ja | minst én `{ id, punkt?, url? }`. `id` må finnes i `content/kilder.yaml` |
 | `kontrollert` | ja | `null` eller `{ dato: ÅÅÅÅ-MM-DD }`. **Settes bare av eier.** |
+| `kontrollsporsmal` | ja i `content/` | 1–5 spørsmål til eier (bokmål) om det som er usikkert i teksten: om noe kan misforstås, eller om en praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019) |
 | `stikkord` | nei | ekstra søkeord |
 | `relatert` | nei | id-er til annet innhold (må finnes) |
 
@@ -80,6 +81,21 @@ verdier:
 - Tabeller og lister har ikke sitat. De kontrolleres med egne tester, f.eks. at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad. Vedlegg 1 og garantilønnen sjekkes også rad for rad mot kilden hver uke (avgjørelse 018).
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
 - Verdier med `kontrollert: null` vises uten merke. Brukserklæringen under «Om appen» og setningen nederst på forsiden sier at appen er utviklet privat og kan ha feil (avgjørelse 016).
+
+## Praksis og tolkninger (`content/kontroll/praksis.yaml`)
+
+Det appen bygger på uten at det står i kildene, f.eks. 21,67 arbeidsdager per måned og 45 timer planleggingsdager for alle. Eier bekrefter punktene i kontrollrundene i mai og august (avgjørelse 019).
+
+| Felt | Innhold |
+|---|---|
+| `id`, `tittel` | identifikasjon |
+| `sporsmal` | spørsmålet eier skal svare på |
+| `appen` | hva appen gjør |
+| `grunnlag` | hvem som har bestemt det, og når |
+| `berorer` | regelverdier (`regelsett/nøkkel`) og innhold (`id`) som bygger på praksisen. Må finnes (testes) |
+| `bekreftet` | `null` eller `{ dato }`. **Settes bare av eier.** |
+
+Regelverdier med `grunnlag: praksis` må stå i listen. Det testes.
 
 ## Kilderegister (`content/kilder.yaml`)
 

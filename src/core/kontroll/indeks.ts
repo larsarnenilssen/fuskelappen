@@ -32,6 +32,8 @@ export interface Kontrollinnhold {
   punkter: string[];
   eier: Innholdsstatus;
   kontrollert: string | null;
+  /** Spørsmål til eier om det som er usikkert i teksten (avgjørelse 019). */
+  sporsmal: string[];
 }
 
 export interface Kildekontroll {
@@ -88,7 +90,17 @@ export function lagKontrollindeks(
       const liste = hent(ref.id).innhold;
       let post = liste.find((i) => i.id === element.id && i.fil === fil);
       if (!post) {
-        post = { type: 'innhold', id: element.id, tittel: element.tittel.nb, elementtype: element.type, fil, punkter: [], eier, kontrollert: element.kontrollert?.dato ?? null };
+        post = {
+          type: 'innhold',
+          id: element.id,
+          tittel: element.tittel.nb,
+          elementtype: element.type,
+          fil,
+          punkter: [],
+          eier,
+          kontrollert: element.kontrollert?.dato ?? null,
+          sporsmal: element.kontrollsporsmal ?? [],
+        };
         liste.push(post);
       }
       if (ref.punkt && !post.punkter.includes(ref.punkt)) post.punkter.push(ref.punkt);

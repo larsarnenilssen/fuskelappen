@@ -12,6 +12,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Ukentlig kontrollsak** på GitHub i stedet for én sak per kilde: hvilket punkt i kilden som er endret, med den nye teksten og hvilket innhold i appen det kan berøre, tall og tabeller som ikke stemmer, og en avkrysningsliste. E-post bare når noe er nytt.
 - Vedlegg 1 (151 rader) og garantilønnen sjekkes rad for rad mot kilden hver uke.
 - Grep og skoleregisteret hentes hver uke og publiseres automatisk når testene består.
+- **Kontrollspørsmål** til hvert begrep og hver forklaring: spørsmål om det som er usikkert i teksten. Spørsmålene står i kontrolloversikten og i kontrollsaken når en kilde endres.
+- **Praksis og tolkninger** som ikke står i kildene, for eksempel 21,67 arbeidsdager per måned, er samlet i én liste som du bekrefter.
+- **Kontrollrunder** første mandag i mai og august: en sak med praksis som bør bekreftes og kontroller som bør gjøres på nytt.
 
 ## [0.8.2] – 2026-09-30
 

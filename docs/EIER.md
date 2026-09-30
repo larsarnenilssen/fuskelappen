@@ -173,3 +173,17 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 - **praksis:** for eksempel 21,67 arbeidsdager per måned. Det står ikke i kilden, men er praksis du har beskrevet.
 - **avledet:** regnet ut fra andre tall, for eksempel 5 arbeidsdager per uke (37,5 ÷ 7,5).
 - **tabeller og lister:** vedlegg 1 og garantilønnen sjekkes rad for rad mot kilden. Andre tabeller og lister sjekkes ikke mot kilden, men tester sjekker at tallene henger sammen, for eksempel at 45-minutters årsrammen er 60-minutters årsrammen × 4/3 i hver rad.
+
+## 11. Kontrollspørsmål, praksis og kontrollrundene
+
+**Kontrollspørsmål:** Hvert begrep og hver forklaring har 1–5 spørsmål om det Claude er usikker på i teksten. Et eksempel: «Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?» Du finner alle spørsmålene nederst i `docs/KONTROLL.md`. Endres en kilde, står spørsmålene til det som kan være berørt, i kontrollsaken. Da kontrollerer du det som er usikkert, og trenger ikke lese hele teksten fra bunnen av.
+
+**Praksis og tolkninger:** Noe i appen står ikke i kildene. Det bygger på praksis eller på valg du har gjort, for eksempel 21,67 arbeidsdager per måned, 45 timer planleggingsdager for alle og variabel lønn for deltidsansatte. Alt dette står i `content/kontroll/praksis.yaml` og i kontrolloversikten, med hva appen gjør og hvem som har bestemt det.
+
+**Kontrollrundene:** Første mandag i **mai**, når hovedtariffavtalen endres, og første mandag i **august**, før skoleåret, lager kildesjekken en egen sak med merket `kontrollrunde`. Den har tre deler:
+
+- **Praksis og tolkninger** som ikke er bekreftet, eller som ble bekreftet for mer enn 12 måneder siden.
+- **Det som bør kontrolleres på nytt:** innhold du har kontrollert, men der kontrollen er over 12 måneder gammel eller kilden er endret siden.
+- **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
+
+Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.

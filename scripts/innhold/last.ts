@@ -9,17 +9,19 @@ import {
   fylkerSkjema,
   innholdsfil,
   kilderegisterSkjema,
+  praksisfilSkjema,
   synonymSkjema,
   type Innholdselement,
 } from '../../src/core/innhold/skjema.ts';
 import { regelsettSkjema } from '../../src/core/regler/skjema.ts';
 
-type Filtype = 'kilderegister' | 'fylker' | 'synonymer' | 'innhold' | 'regelsett';
+type Filtype = 'kilderegister' | 'fylker' | 'synonymer' | 'praksis' | 'innhold' | 'regelsett';
 
 const skjemaer: Record<Filtype, ZodType> = {
   kilderegister: kilderegisterSkjema,
   fylker: fylkerSkjema,
   synonymer: synonymSkjema,
+  praksis: praksisfilSkjema,
   innhold: innholdsfil,
   regelsett: regelsettSkjema,
 };
@@ -29,6 +31,7 @@ export function filtype(relSti: string): Filtype | null {
   if (sti === 'content/kilder.yaml') return 'kilderegister';
   if (sti === 'content/fylker.yaml') return 'fylker';
   if (sti === 'content/sok/synonymer.yaml') return 'synonymer';
+  if (sti === 'content/kontroll/praksis.yaml') return 'praksis';
   if (sti.startsWith('content/') || sti.startsWith('tests/fixtures/innhold/')) return 'innhold';
   if (sti.startsWith('rules/') || sti.startsWith('tests/fixtures/regler/')) return 'regelsett';
   return null;

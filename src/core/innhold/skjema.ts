@@ -63,6 +63,11 @@ const felles = {
   gyldighet: gyldighetSkjema.default({ niva: 'nasjonal' }),
   kilder: z.array(kildeRef).min(1, 'Minst én kilde er påkrevd'),
   kontrollert: kontrollertSkjema,
+  /**
+   * Spørsmål til eier om det som er usikkert i teksten, f.eks. om en formulering kan misforstås eller om en
+   * praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019).
+   */
+  kontrollsporsmal: z.array(z.string().trim().min(1)).optional(),
   stikkord: z.array(z.string()).default([]),
   relatert: z.array(z.string()).default([]),
 };
@@ -155,6 +160,32 @@ export const synonymSkjema = z
   })
   .strict();
 
+/**
+ * Praksis og tolkninger som ikke står i kildene, men som appen bygger på (content/kontroll/praksis.yaml).
+ * Eier bekrefter dem i kontrollrundene. bekreftet settes bare av eier (avgjørelse 019).
+ */
+export const praksisfilSkjema = z
+  .object({
+    praksis: z
+      .array(
+        z
+          .object({
+            id: idSkjema,
+            tittel: z.string().min(1),
+            sporsmal: z.string().min(1),
+            appen: z.string().min(1),
+            grunnlag: z.string().min(1),
+            /** Regelverdier («regelsett/nøkkel») og innhold (id) som bygger på praksisen. */
+            berorer: z.array(z.string().min(1)).min(1),
+            bekreftet: kontrollertSkjema,
+          })
+          .strict(),
+      )
+      .min(1),
+  })
+  .strict()
+  .refine((f) => new Set(f.praksis.map((p) => p.id)).size === f.praksis.length, { message: 'id må være unik' });
+
 export type Flerspraak = z.infer<typeof flerspraak>;
 export type KildeRef = z.infer<typeof kildeRef>;
 export type Gyldighet = z.infer<typeof gyldighetSkjema>;
@@ -167,3 +198,5 @@ export type Kilde = z.infer<typeof kildeSkjema>;
 export type Kilderegister = z.infer<typeof kilderegisterSkjema>;
 export type Fylker = z.infer<typeof fylkerSkjema>;
 export type Synonymer = z.infer<typeof synonymSkjema>;
+export type Praksisfil = z.infer<typeof praksisfilSkjema>;
+export type Praksis = Praksisfil['praksis'][number];

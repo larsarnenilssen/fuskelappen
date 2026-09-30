@@ -108,6 +108,11 @@
     - { id: inschool-periodebeskjeftigelse }
     - { id: inschool-fastlonn }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at funksjoner som ikke utvider planfestet tid, fordeles som undervisning (1150 × prosent planfestet)?"
+    - "Er det tydelig nok at samme regel brukes for 57-åringer som for nyutdannede og lærere over 60 år, selv om avtaleteksten ikke sier det uttrykkelig?"
+    - "Stemmer utvidelsen av arbeidsåret (timene over 1470 ÷ 7,5 timer per dag) med praksis?"
+    - "Stemmer lønn i en periode (hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder) med lønnssystemet?"
   stikkord: [arbeidsplan, stillingsplan, fordeling, planfestet tid, livsfasetiltak, seniorredusering, nyutdannet, kontaktlærer, årslønn, teknisk undertid, teknisk overtid, funksjon, variabel lønn, periode, periodebeskjeftigelse, vikariat, periodenøkkel, årsbasis]
 
 - id: metode-beskjeftigelse
@@ -138,6 +143,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er omregningen fra økter per uke (økter × minutter ÷ 60 × 38 uker) riktig når skoleukene har ulik lengde?"
   stikkord: [undervisningsprosent, stillingsprosent, årsramme, årstimer]
 
 - id: metode-vikar
@@ -173,6 +180,8 @@
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
     - { id: inschool-vikartimer }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at timevikarer får feriepenger i tillegg til lønnen etter formelen i § 12.4?"
   stikkord: [timelønn, timevikar, kalkulert tid, feriepenger]
 
 - id: metode-overtid
@@ -204,4 +213,7 @@
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
   kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at overtidsbetaling for undervisning er kalkulert tid × timelønn × 1,5?"
+    - "Er «Overtid for deltidsansatte er ikke med ennå» fortsatt dekkende, nå som Arbeidsplan regner variabel lønn?"
   stikkord: [overtid, fast overtid, overtidsbetaling]

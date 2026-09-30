@@ -129,7 +129,7 @@ describe('den ukentlige kontrollsaken', () => {
         { type: 'verdi', id: 's/planfestet_maks_dag', regelsett: 's', nokkel: 'planfestet_maks_dag', punkt: '5.1', verdi: 9, enhet: 'timer', grunnlag: 'kilde', harSitat: true, eier: 'utkast', kontrollert: null, auto: null },
         { type: 'verdi', id: 's/arsverk', regelsett: 's', nokkel: 'arsverk', punkt: '4', verdi: 1687.5, enhet: 'timer', grunnlag: 'kilde', harSitat: true, eier: 'utkast', kontrollert: null, auto: null },
       ],
-      innhold: [{ type: 'innhold', id: 'moetetid', tittel: 'Møtetid', elementtype: 'forklaring', fil: 'x.yaml', punkter: ['5.1'], eier: 'utkast', kontrollert: null }],
+      innhold: [{ type: 'innhold', id: 'moetetid', tittel: 'Møtetid', elementtype: 'forklaring', fil: 'x.yaml', punkter: ['5.1'], eier: 'utkast', kontrollert: null, sporsmal: ['Er møtetid forklart riktig?'] }],
     },
   ];
   const ok = { status: 'ok' as const, sjekket: '2026-10-05T04:17:00Z', fingeravtrykk: 'sha256:a', endret_siden: null, melding: null };

@@ -3,10 +3,10 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
+import type { Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
 import { lesVerdistatus, verdiISitat, verdinokkel } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Regelsett, Tabellrad } from '../../src/core/regler/skjema.ts';
-import { lesRegelsett } from '../../scripts/innhold/alt.ts';
+import { lesInnhold, lesRegelsett } from '../../scripts/innhold/alt.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
 const rot = join(__dirname, '../..');
@@ -143,5 +143,37 @@ describe('tallene henger sammen', () => {
       const kolonne = rader.map((r) => r[`ar_${t}`] as number);
       expect(kolonne).toEqual([...kolonne].sort((a, b) => a - b));
     }
+  });
+});
+
+describe('kontrollspørsmål og praksis', () => {
+  const innhold = lesInnhold(rot);
+  const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
+
+  it('alt innhold i content/ har 1–5 kontrollspørsmål som slutter med spørsmålstegn', () => {
+    const feil = innhold
+      .filter(({ element: e }) => {
+        const s = e.kontrollsporsmal ?? [];
+        return s.length < 1 || s.length > 5 || s.some((q) => !q.endsWith('?'));
+      })
+      .map(({ element }) => element.id);
+    expect(feil).toEqual([]);
+  });
+
+  it('praksislisten viser bare til regelverdier og innhold som finnes', () => {
+    const verdier = new Set(alleVerdier.map(({ id }) => id));
+    const ider = new Set(innhold.map(({ element }) => element.id));
+    const ukjente = praksis.flatMap((p) => p.berorer.filter((b) => !(b.includes('/') ? verdier.has(b) : ider.has(b))).map((b) => `${p.id}: ${b}`));
+    expect(ukjente).toEqual([]);
+  });
+
+  it('praksis er ikke bekreftet uten eier (bare formatet sjekkes)', () => {
+    for (const p of praksis) if (p.bekreftet) expect(p.bekreftet.dato).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+  });
+
+  it('verdier med grunnlag praksis står i praksislisten', () => {
+    const iListen = new Set(praksis.flatMap((p) => p.berorer));
+    const mangler = alleVerdier.filter(({ id, v }) => v.grunnlag === 'praksis' && !iListen.has(id)).map(({ id }) => id);
+    expect(mangler).toEqual([]);
   });
 });

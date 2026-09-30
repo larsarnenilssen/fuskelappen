@@ -15,6 +15,7 @@ export const GAMMEL_ETIKETT = 'kilde';
 const MAKS_BITER = 3;
 const MAKS_TEGN_PER_BIT = 400;
 const MAKS_DETALJER = 20;
+const MAKS_SPORSMAL = 8;
 
 export interface Ukesgrunnlag {
   register: Kilderegister;
@@ -82,13 +83,14 @@ function kildeseksjon(g: Ukesgrunnlag, id: string, navn: string, url: string, en
       linjer.push(`**${e.punkt ? `Punkt ${e.punkt}` : 'Ukjent punkt'}** (${hva}):`, '');
       for (const bit of e.ny.slice(0, MAKS_BITER)) linjer.push(sitat(bit), '');
       if (e.ny.length > MAKS_BITER) linjer.push(`… og ${e.ny.length - MAKS_BITER} setninger til.`, '');
-      const berort = e.punkt && kontroll
-        ? [
-            ...kontroll.verdier.filter((v) => v.punkt && punktTreff(e.punkt as string, v.punkt)).map((v) => `regelverdien \`${v.nokkel}\``),
-            ...kontroll.innhold.filter((i) => i.punkter.some((p) => punktTreff(e.punkt as string, p))).map((i) => `«${i.tittel}» (${i.elementtype})`),
-          ]
-        : [];
+      const verdier = e.punkt && kontroll ? kontroll.verdier.filter((v) => v.punkt && punktTreff(e.punkt as string, v.punkt)) : [];
+      const innhold = e.punkt && kontroll ? kontroll.innhold.filter((i) => i.punkter.some((p) => punktTreff(e.punkt as string, p))) : [];
+      const berort = [...verdier.map((v) => `regelverdien \`${v.nokkel}\``), ...innhold.map((i) => `«${i.tittel}» (${i.elementtype})`)];
       if (berort.length > 0) linjer.push(`Kan berøre: ${berort.join(', ')}.`, '');
+      const sporsmal = innhold.flatMap((i) => i.sporsmal.map((s) => `- ${i.tittel}: ${s}`));
+      if (sporsmal.length > 0) {
+        linjer.push('Kontrollspørsmål for det som kan være berørt:', '', ...sporsmal.slice(0, MAKS_SPORSMAL), ...(sporsmal.length > MAKS_SPORSMAL ? [`- … og ${sporsmal.length - MAKS_SPORSMAL} til i docs/KONTROLL.md.`] : []), '');
+      }
     }
   }
   linjer.push(`- [ ] Jeg har sett på endringene i ${navn}, og det nye fingeravtrykket kan godkjennes. <!-- godkjenn-kilde:${id}:${fingeravtrykk ?? '-'} -->`, '');
@@ -127,6 +129,30 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       '',
     ]);
     punkter += avvik.length;
+  }
+
+  // Innhold og verdier eier har kontrollert, men der kilden er endret etterpå eller kontrollen er over 12 måneder.
+  const sett = new Set<string>();
+  const gamle = g.indeks.flatMap((k) =>
+    [...k.verdier, ...k.innhold].filter((p) => {
+      const nokkel = `${p.type}:${p.id}`;
+      if ((p.eier !== 'kilde_endret' && p.eier !== 'bor_kontrolleres') || sett.has(nokkel)) return false;
+      sett.add(nokkel);
+      return true;
+    }),
+  );
+  if (gamle.length > 0) {
+    deler.push([
+      '## Bør kontrolleres på nytt',
+      '',
+      ...gamle.map((p) => {
+        const navn = p.type === 'verdi' ? `Regelverdien \`${p.id}\`` : `«${p.tittel}» (${p.elementtype})`;
+        const hvorfor = p.eier === 'kilde_endret' ? `kilden er endret etter kontrollen ${dato(p.kontrollert ?? '')}` : `kontrollert ${dato(p.kontrollert ?? '')}, for mer enn 12 måneder siden`;
+        return `- [ ] ${navn}: ${hvorfor}. <!-- kontroll:${p.type}:${p.id} -->`;
+      }),
+      '',
+    ]);
+    punkter += gamle.length;
   }
 
   const grep = Object.entries(g.kildestatus.kilder).filter(([id]) => kilder.get(id)?.sjekkmetode === 'grep');

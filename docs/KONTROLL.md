@@ -14,6 +14,7 @@ Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er komm
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
 | Ikke kontrollert | 70 |
+| Praksis og tolkninger som bør bekreftes | 11 av 11 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -25,6 +26,24 @@ Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er komm
 ## Må ses på
 
 Ingenting akkurat nå.
+
+## Praksis og tolkninger
+
+Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kontrollrundene i mai og august.
+
+| Praksis | Spørsmål | Grunnlag | Bekreftet |
+|---|---|---|---|
+| **Lønn i brutte måneder** | Regnes lønn for deler av en måned fortsatt som arbeidsdagene ÷ 21,67 av månedslønnen, med offentlige fridager som arbeidsdager? | Eier 30.09.2026. Praksis i lønnssystemet og i Vestland fylkeskommune. | ikke bekreftet |
+| **Variabel lønn for deltidsansatte** | Gjelder det fortsatt at beskjeftigelse over en stilling under 100 %, opp til hel stilling, gir variabel lønn uten overtidstillegg? Er dommen om overtid for deltidsansatte blitt rettskraftig? | Eier 30.09.2026, inntil dommen om overtid for deltidsansatte er rettskraftig. | ikke bekreftet |
+| **Overtidsbetaling for undervisning** | Betales overtid for undervisning fortsatt som kalkulert tid × timelønn × 1,5? | Eier 29.09.2026. Hovedtariffavtalen § 6.4 og § 6.5.3. | ikke bekreftet |
+| **Planleggingsdager** | Brukes fortsatt 45 timer planleggingsdager for alle, tatt fra annen planfestet tid, slik Visma InSchool gjør? | Eier 30.09.2026. Visma InSchool. | ikke bekreftet |
+| **Skoleåret og timer per uke** | Er elevenes skoleår fortsatt 190 dager og 38 uker, og skal timene per uke fordeles på 38 skoleuker? | Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk. | ikke bekreftet |
+| **Planfestet tid fra 60 år** | Regnes planfestet tid for lærere som er 60 år og eldre fortsatt som samme andel av årsverket (1150 × 1650 ÷ 1687,5 = 1124,44 timer)? | Eier 30.09.2026. | ikke bekreftet |
+| **Periodenøkkel** | Regnes periodebeskjeftigelse fortsatt med undervisningsdager i perioden ÷ undervisningsdager i skoleåret, slik Visma InSchool gjør? | Eier 30.09.2026. Visma InSchool. | ikke bekreftet |
+| **Frigjort tid for 57-åringer** | Skal redusert undervisning for lærere som har fylt 57 år, fortsatt regnes som for nyutdannede og lærere over 60 år, selv om avtaleteksten ikke sier det uttrykkelig? | Eier 30.09.2026. | ikke bekreftet |
+| **Funksjoner i årsrammetimer** | Gjøres funksjoner som er oppgitt i årsrammetimer, fortsatt om til prosent med årsrammen 607,5? | Tolkning av vedlegg 1 til SFS 2213 (årsramme ved redusert undervisning på grunn av funksjon). | ikke bekreftet |
+| **Utvidet arbeidsår** | Regnes utvidelsen av arbeidsåret fortsatt som timene over 37,5 × 38 + 45 = 1470 planfestede timer, delt på 7,5 timer per dag? | Eier 30.09.2026. | ikke bekreftet |
+| **Tillegg for funksjoner** | Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner? | Appens valg, med utgangspunkt i SFS 2213 punkt 9.1. | ikke bekreftet |
 
 ## Per kilde
 
@@ -216,4 +235,153 @@ Ingenting akkurat nå.
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Slik regnes arbeidsplanen ut | forklaring | – | `content/arbeidstid/metoder.yaml` | ikke kontrollert |
+
+## Kontrollspørsmål
+
+Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om praksisen stemmer. Svar gjerne i en kommentar i kontrollsaken, eller skriv til Claude.
+
+**Undervisning** (forklaring, ikke kontrollert)
+
+- Er KS-rapporten fra 2025 gjengitt nøytralt?
+
+**Møtetid** (forklaring, ikke kontrollert)
+
+- Er det riktig å regne møtetiden for 38 uker, uten møter på planleggingsdagene?
+
+**Annen planfestet tid og annet elevrettet arbeid** (forklaring, ikke kontrollert)
+
+- Er Utdanningsforbundets krav fra 2025 gjengitt riktig, og bør KS’ syn også nevnes for å være balansert?
+
+**Planleggingsdager** (forklaring, ikke kontrollert)
+
+- Er det riktig at timene til planleggingsdagene tas fra annen planfestet tid?
+
+**Funksjoner og andre oppgaver** (forklaring, ikke kontrollert)
+
+- Er det tydelig at valget om en funksjon utvider planfestet tid eller ikke, er en forenkling i appen?
+
+**Tid læreren disponerer selv** (forklaring, ikke kontrollert)
+
+- Er punkt 3 gjengitt riktig om hvor og når læreren gjør arbeidet utenom undervisningen?
+
+**Slik regnes arbeidsplanen ut** (forklaring, ikke kontrollert)
+
+- Er det riktig at funksjoner som ikke utvider planfestet tid, fordeles som undervisning (1150 × prosent planfestet)?
+- Er det tydelig nok at samme regel brukes for 57-åringer som for nyutdannede og lærere over 60 år, selv om avtaleteksten ikke sier det uttrykkelig?
+- Stemmer utvidelsen av arbeidsåret (timene over 1470 ÷ 7,5 timer per dag) med praksis?
+- Stemmer lønn i en periode (hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder) med lønnssystemet?
+
+**Slik regnes beskjeftigelsen ut** (forklaring, ikke kontrollert)
+
+- Er omregningen fra økter per uke (økter × minutter ÷ 60 × 38 uker) riktig når skoleukene har ulik lengde?
+
+**Slik regnes vikartimene ut** (forklaring, ikke kontrollert)
+
+- Er det riktig at timevikarer får feriepenger i tillegg til lønnen etter formelen i § 12.4?
+
+**Slik regnes overtiden ut** (forklaring, ikke kontrollert)
+
+- Er det riktig at overtidsbetaling for undervisning er kalkulert tid × timelønn × 1,5?
+- Er «Overtid for deltidsansatte er ikke med ennå» fortsatt dekkende, nå som Arbeidsplan regner variabel lønn?
+
+**Arbeidstid** (begrep, ikke kontrollert)
+
+- Er det riktig å si at arbeidstiden består av planfestet tid og tid læreren disponerer selv, også når arbeidsåret er utvidet på grunn av funksjoner?
+
+**Årsverk** (begrep, ikke kontrollert)
+
+- Stemmer det at forskjellen mellom 1687,5 og 1650 timer er fem arbeidsdager ekstra ferie?
+- Er det riktig at planfestet tid er samme andel av årsverket for lærere som er 60 år og eldre (1124,44 timer), eller kan fylket regne annerledes?
+
+**Arbeidsår** (begrep, ikke kontrollert)
+
+- Kan «Arbeidsåret kan også utvides når planfestet tid går over 37,5 timer i uka» leses som at det gjelder alle lærere, og ikke bare ved funksjoner og andre oppgaver etter punkt 5.3?
+
+**Årsramme** (begrep, ikke kontrollert)
+
+- Er regelen om laveste årsramme for grupper med elever fra ulike program eller nivåer gjengitt riktig og fullstendig?
+
+**Fag merket *** (begrep, ikke kontrollert)
+
+- Er «det faktiske antallet elever i klassen» tydelig nok for grupper som ikke er klasser, for eksempel valgfag på tvers av klasser?
+
+**60- og 45-minutters enheter** (begrep, ikke kontrollert)
+
+- Kan det misforstås at kalkulatorene regner i 60-minutters timer når skolen bruker 45-minutters økter?
+
+**Beskjeftigelse** (begrep, ikke kontrollert)
+
+- Er formelen årstimer ÷ årsramme × 100 den samme som skolen og Visma InSchool bruker?
+- Er forskjellen mellom beskjeftigelse og stillingsprosent forklart godt nok?
+
+**Periodebeskjeftigelse** (begrep, ikke kontrollert)
+
+- Er periodenøkkelen (undervisningsdager i perioden ÷ undervisningsdager i skoleåret) forklart slik Visma InSchool regner?
+
+**Planfestet arbeidstid** (begrep, ikke kontrollert)
+
+- Er listen over hva planfestet tid først og fremst brukes til, gjengitt riktig etter punkt 5.1?
+
+**Tid læreren disponerer selv** (begrep, ikke kontrollert)
+
+- Er 537,5 timer riktig for en hel stilling uten funksjoner, og er «ikke-planfestet tid» en betegnelse som brukes i fylket?
+
+**For- og etterarbeid** (begrep, ikke kontrollert)
+
+- Er det riktig at for- og etterarbeid gjøres både i planfestet tid og i tiden læreren disponerer selv?
+
+**Annet elevrettet arbeid** (begrep, ikke kontrollert)
+
+- Er det nøytralt nok å si at hva som regnes med, ofte avklares lokalt?
+
+**Funksjoner og andre arbeidsoppgaver** (begrep, ikke kontrollert)
+
+- Er det riktig at tiden læreren disponerer selv, reduseres med samme prosentandel som undervisningen (punkt 5.3)?
+
+**Fast overtid** (begrep, ikke kontrollert)
+
+- Er skillet mellom fast overtid (økt årsramme) og pålagt arbeid ut over oversikten over planfestet tid forklart riktig?
+
+**Planleggingsdager** (begrep, ikke kontrollert)
+
+- Er det riktig at timene for deltid og perioder, og plasseringen av ferien for lærere over 60 år, avgjøres lokalt?
+
+**Lokale forhandlinger om arbeidstid** (begrep, ikke kontrollert)
+
+- Er protokollen fra 2026 og listen over hva partene kan avtale lokalt, gjengitt riktig?
+
+**Drøftinger** (begrep, ikke kontrollert)
+
+- Er planleggingsdagene og tidsressurspotten de viktigste eksemplene på drøftinger i SFS 2213?
+
+**Teknisk undertid og teknisk overtid** (begrep, ikke kontrollert)
+
+- Er «teknisk undertid» og «teknisk overtid» begrepene fylket bruker?
+- Er det tydelig at variabel lønn bare gjelder stillinger under 100 %?
+
+**Livsfasetiltak (redusert undervisning)** (begrep, ikke kontrollert)
+
+- Er det riktig at den frigjorte tiden for nyutdannede og lærere over 60 år legges i planfestet tid, og er det tydelig at 57-åringer ikke er nevnt i den regelen?
+
+**Kontaktlærer** (begrep, ikke kontrollert)
+
+- Er det riktig å gjøre 28,5 årsrammetimer om til prosent med årsrammen 607,5 (4,69 %)?
+
+**Godtgjøring for funksjoner** (begrep, ikke kontrollert)
+
+- Er det riktig at tillegget for funksjoner er pensjonsgivende?
+- Har fylket egne satser for andre funksjoner som appen bør vise når fylket er valgt?
+
+**Kalkulert tid** (begrep, ikke kontrollert)
+
+- Er «kalkulert tid» et begrep som brukes i Visma InSchool eller lønnssystemet, eller bør det stå at det er appens navn?
+
+**Variabel lønn** (begrep, ikke kontrollert)
+
+- Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?
+- Betaler fylket fortsatt variabel lønn som vikartimer uten overtidstillegg?
+
+**Delt dagsverk** (begrep, ikke kontrollert)
+
+- Er delt dagsverk (arbeidsdagen strekker seg over 9 timer eller mer) beskrevet riktig etter hovedtariffavtalen § 5.5?
 
