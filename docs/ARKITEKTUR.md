@@ -73,7 +73,7 @@ Innhold og regelverdier har et nivå (`nasjonal`, `fylke`, `skole`) og, for loka
 
 Et regelsett kan være delt på flere filer med samme `id` (feltet `del`), og en regelverdi kan være en tabell, som årsrammene i vedlegg 1 til SFS 2213 ([avgjørelse 007](avgjorelser/007-regelsett-i-flere-filer-og-tabeller.md)). I utvikling og testing lastes også testregelsettene i `tests/fixtures/regler/`, slik at lokale testverdier kan prøves i appen.
 
-`hentVerdi(nokkel, kontekst)` i `src/core/regler/` velger periode (etter dato, eller valgt av brukeren) og nivå, og returnerer `{ verdi, enhet, niva, kilde, kontrollert, periode }`. Grensesnittet merker verdier som ikke er nasjonale (`Nivamerke`) og verdier som ikke er kontrollert (`Statusmerke`).
+`hentVerdi(nokkel, kontekst)` i `src/core/regler/` velger periode (etter dato, eller valgt av brukeren) og nivå, og returnerer `{ verdi, enhet, niva, kilde, kontrollert, periode }`. Grensesnittet merker verdier som ikke er nasjonale (`Nivamerke`) og innhold som er kontrollert av eier, har endret kilde eller bør kontrolleres på nytt (`Statusmerke`). Innhold som ikke er kontrollert, får ikke merke (avgjørelse 016).
 
 For innhold velger `velgSynlige()` i `src/core/innhold/status.ts` hva som vises for valgt fylke og skole. Uten valgt fylke vises bare nasjonalt innhold, med merknad om at lokale regler kan gjelde.
 

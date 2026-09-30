@@ -100,7 +100,7 @@ Skriv til Claude hva som var bra og hva som bør endres.
 
 ## 9. Sjekkliste for kontrollpunktet i fase 1
 
-Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godkjenner ved å skrive til Claude hva som er kontrollert, med dato. Claude legger da inn datoen.
+Innhold du ikke har godkjent, har `kontrollert: null` i filene, men vises uten merke i appen (brukserklæringen dekker det, avgjørelse 016). Du godkjenner ved å skrive til Claude hva som er kontrollert, med dato. Claude legger da inn datoen, og innholdet får merket «Kontrollert» med datoen.
 
 **Kildene (etter at endringsforslaget er slått sammen):**
 

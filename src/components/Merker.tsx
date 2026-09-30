@@ -15,8 +15,13 @@ export function Nivamerke({ niva, vis = 'lokal' }: { niva: Niva; vis?: 'lokal' |
   );
 }
 
+/**
+ * Innhold som ikke er kontrollert, får ikke merke. Brukserklæringen under «Om appen» dekker det (avgjørelse 016).
+ * Merket vises når eier har kontrollert innholdet, og når en kilde er endret eller kontrollen er gammel.
+ */
 export function Statusmerke({ status, kontrollert }: { status: Innholdsstatus; kontrollert?: Kontrollert }) {
   const { t, malform } = useTekst();
+  if (status === 'utkast') return null;
   const tekst =
     status === 'kontrollert'
       ? t('komponenter.status.kontrollert', { dato: kontrollert ? formaterDato(kontrollert.dato, malform) : '' })

@@ -56,7 +56,7 @@ test.describe('arbeidstid', () => {
     await expect(resultat(page)).toContainText('24,24');
 
     const kort = page.locator('.resultatkort');
-    await expect(kort.getByText('Ikke kontrollert')).toBeVisible();
+    await expect(kort.getByText('Ikke kontrollert')).toHaveCount(0);
     await expect(kort.locator('.utregning')).toBeHidden();
     await kort.getByRole('button', { name: 'Vis utregning' }).click();
     await expect(kort.getByText('årstimer ÷ justert årsramme × 100')).toBeVisible();

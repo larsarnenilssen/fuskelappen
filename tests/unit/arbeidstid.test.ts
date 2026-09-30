@@ -11,7 +11,6 @@ import {
   beregnPlanfestet,
   beregnTimevikar,
   finnRad,
-  harUkontrollert,
   type Hent,
   lesArsrammer,
   lesGarantilonn,
@@ -80,11 +79,6 @@ describe('beskjeftigelse', () => {
     const r = beregnBeskjeftigelse(hent, [{ arsrammer: [{ type: 'manuell', t60: 500, stjerne: false }], elever: null, undervisning: { type: 'arstimer', arstimer: 100 } }]);
     expect(r.sum.verdi).toBe(20);
     expect(r.grupper[0]?.arsramme.opprinnelse).toBe('inndata');
-  });
-
-  it('merker at verdiene ikke er kontrollert', () => {
-    const r = beregnBeskjeftigelse(hent, [{ arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30, undervisning: { type: 'arstimer', arstimer: 140 } }]);
-    expect(harUkontrollert(r.trinn)).toBe(true);
   });
 });
 

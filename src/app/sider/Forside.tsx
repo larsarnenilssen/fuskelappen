@@ -91,9 +91,12 @@ export default function Forside() {
             })}
           </section>
 
-          <p class="bunntekst">
-            <a href="#/om">{t('om.tittel')}</a>
-          </p>
+          <div class="bunntekst">
+            <p data-testid="forbehold">{t('forside.forbehold', { app: app.navn })}</p>
+            <p>
+              <a href="#/om">{t('om.tittel')}</a>
+            </p>
+          </div>
         </>
       )}
     </div>

@@ -42,7 +42,7 @@ Status beregnes automatisk (`beregnStatus()` i `src/core/innhold/status.ts`):
 
 | Status | Når |
 |---|---|
-| `utkast` | `kontrollert: null` |
+| `utkast` | `kontrollert: null` (vises ikke med merke, se avgjørelse 016) |
 | `kontrollert` | kontrollert av eier |
 | `kilde_endret` | en kilde har status `endret` etter kontrolldatoen |
 | `bor_kontrolleres` | kontrollert for mer enn 12 måneder siden |
@@ -69,7 +69,7 @@ verdier:
 - `verdi` kan være et tall, en tekst, sann/usann, en liste eller en **tabell**: en liste av rader med enkle celler. Vedlegg 1 til SFS 2213 ligger slik i `rules/sfs2213/arsrammer-2026-2027.yaml`, med én rad per fag, utdanningsprogram og trinn (`t60`, `t45`, `kategori`, `fag`, `program`, `trinn`, `stjerne`).
 - Verdier leses bare gjennom `hentVerdi('regelverk.nokkel', kontekst)`.
 - Nasjonale perioder for samme regelverk kan ikke overlappe. Det testes.
-- Verdier med `kontrollert: null` vises med merket «ikke kontrollert».
+- Verdier med `kontrollert: null` vises uten merke. Brukserklæringen under «Om appen» og setningen nederst på forsiden sier at appen er utviklet privat og kan ha feil (avgjørelse 016).
 
 ## Kilderegister (`content/kilder.yaml`)
 

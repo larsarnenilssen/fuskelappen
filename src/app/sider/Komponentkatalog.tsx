@@ -37,7 +37,6 @@ export default function Komponentkatalog() {
         verdi={timer === null ? '–' : formaterTall(timer * 2.5, 1)}
         enhet="%"
         niva="fylke"
-        ikkeKontrollert
         steg={[
           { tekst: t('utvikling.resultatSteg1'), verdi: timer === null ? '–' : formaterTall(timer * 0.025, 3), niva: 'fylke' },
           { tekst: t('utvikling.resultatSteg2'), verdi: timer === null ? '–' : formaterTall(timer * 2.5, 1) },
@@ -48,7 +47,6 @@ export default function Komponentkatalog() {
         <Nivamerke niva="nasjonal" vis="alltid" />
         <Nivamerke niva="fylke" />
         <Nivamerke niva="skole" />
-        <Statusmerke status="utkast" />
         <Statusmerke status="kontrollert" kontrollert={{ dato: '2026-09-01' }} />
         <Statusmerke status="kilde_endret" />
         <Statusmerke status="bor_kontrolleres" />
