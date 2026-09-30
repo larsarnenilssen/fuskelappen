@@ -38,6 +38,22 @@ test.describe('modulregister og søk', () => {
     await expect(page.getByRole('link', { name: /Innstillinger/ }).first()).toBeVisible();
   });
 
+  test('søket følger adressen når den endres mens søkesiden er åpen', async ({ page }) => {
+    await page.goto('./#/sok?q=skule');
+    const felt = page.getByRole('searchbox');
+    await expect(page.getByRole('link', { name: /Skuleskyss/ })).toBeVisible();
+    // Ny adresse med et annet søk, f.eks. fra adressefeltet eller en lenke.
+    await page.evaluate(() => (location.hash = '#/sok?q=innstillinger'));
+    await expect(felt).toHaveValue('innstillinger');
+    await expect(page.getByRole('link', { name: /Innstillinger/ }).first()).toBeVisible();
+    // Også etter at brukeren har skrevet selv: tilbake til det første søket.
+    await felt.fill('skolebibliotek');
+    await expect(page.getByRole('link', { name: /Skolebibliotek/ })).toBeVisible();
+    await page.goBack();
+    await expect(felt).toHaveValue('skule');
+    await expect(page.getByRole('link', { name: /Skuleskyss/ })).toBeVisible();
+  });
+
   test('ingen treff gir melding', async ({ page }) => {
     await page.goto('./#/sok');
     await page.getByRole('searchbox').fill('xqzwvy');

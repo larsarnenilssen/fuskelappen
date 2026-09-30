@@ -14,6 +14,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - Begrepene «Variabel lønn» og «Planleggingsdager» i begrepsbanken.
 
+### Rettet
+
+- Søkesiden følger adressen: endres søket i adressen mens siden er åpen (lenke, tilbake-knappen eller adressefeltet), vises treffene for det nye søket.
+
 ## [0.8.0] – 2026-09-30
 
 ### Lagt til
