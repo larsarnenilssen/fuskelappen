@@ -22,7 +22,7 @@ Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og st
 - Hovedkalkulatoren heter nå **Arbeidsplan**. Adressen, favoritter og lagrede varianter er de samme.
 - Fordeling: blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke regnes med det utvidede året. En hel stilling med bare funksjon gir nå 37,5 timer per uke over 45 uker, ikke 43 timer over 39,2 uker.
 - «Hva tiden brukes til» står under diagrammet og tabellen.
-- Fordelingsdiagrammet er høyere og har større tekst, og står sammen med tabellen i et eget kort med mer luft mellom stolpe, fargeforklaring, tabell og merknad.
+- Fordelingsdiagrammet er høyere og har større tekst, og står sammen med tabellen i et eget kort med mer luft. Tabellen viser fargen ved hver del og er fargeforklaringen, så den egne fargeforklaringen under stolpen er fjernet.
 
 ### Rettet
 

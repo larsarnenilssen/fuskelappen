@@ -1296,6 +1296,20 @@ p.fagkort-tittel {
   }
 }
 
+/* På de smaleste skjermene går kortet helt ut til kantene, så tabellen får plass uten å dele ord. */
+@media (max-width: 23.99rem) {
+  .fordeling-visning:not(:fullscreen) {
+    margin-inline: calc(-1 * var(--rom-4));
+    border-inline: 0;
+    border-radius: 0;
+    padding-inline: var(--rom-3);
+  }
+
+  .fordeling-visning .fordeling-del-navn {
+    gap: var(--rom-1);
+  }
+}
+
 .fordeling-topp {
   display: flex;
   flex-wrap: wrap;
@@ -1449,7 +1463,7 @@ p.fagkort-tittel {
 
 .fordeling-tabell th:first-child {
   padding-left: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .fordeling-tabell td:last-child,
@@ -1462,6 +1476,17 @@ p.fagkort-tittel {
   .fordeling-tabell td {
     padding: var(--rom-2) var(--rom-2);
   }
+}
+
+/* Fargeruten står fast ved navnet, også når navnet brytes over flere linjer. */
+.fordeling-del-navn {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+}
+
+.fordeling-del-navn .fordeling-farge {
+  transform: translateY(0.2rem);
 }
 
 .fordeling-tabell thead th {

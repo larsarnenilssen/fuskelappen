@@ -1,6 +1,7 @@
 // Stolpediagram over årsverket i en tenkt stilling: planfestet tid (undervisning, møter, annen planfestet tid,
 // funksjoner) og tid læreren disponerer selv. Egen SVG uten diagrambibliotek. Tallene står også i en tabell,
-// med timer per uke i arbeidsåret, slik at fordelingen kan sammenlignes med en arbeidsplan.
+// med timer per uke i arbeidsåret, slik at fordelingen kan sammenlignes med en arbeidsplan. Tabellen har fargene
+// ved hver del og er fargeforklaringen til diagrammet (eiers valg 30.09.2026).
 // Fordelingsvisning samler diagram, tabell og forklaring, og kan vises i fullskjerm der nettleseren støtter det.
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
@@ -63,14 +64,6 @@ export function Fordelingsdiagram({ deler, totalt }: { deler: readonly Fordeling
           </text>
         )}
       </svg>
-      <ul class="fordeling-forklaring fordeling-forklaring-rad">
-        {synlige.map((d) => (
-          <li key={d.id}>
-            <span class={`fordeling-farge fordeling-del-${d.id}`} aria-hidden="true" />
-            <span>{navn(d)}</span>
-          </li>
-        ))}
-      </ul>
     </figure>
   );
 }
@@ -82,7 +75,14 @@ export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Ford
   const rad = (id: string, tekst: string, timer: number, klasse?: string) => (
     <tr key={id} class={klasse}>
       <th scope="row">
-        {!klasse && <span class={`fordeling-farge fordeling-del-${id}`} aria-hidden="true" />} {tekst}
+        {klasse ? (
+          tekst
+        ) : (
+          <span class="fordeling-del-navn">
+            <span class={`fordeling-farge fordeling-del-${id}`} aria-hidden="true" />
+            <span>{tekst}</span>
+          </span>
+        )}
       </th>
       <td class="tall">{formaterTall(timer, 1, 1)}</td>
       <td class="tall">{uker > 0 ? formaterTall(timer / uker, 1, 1) : '–'}</td>
