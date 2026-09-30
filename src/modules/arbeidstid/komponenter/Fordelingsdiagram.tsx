@@ -3,9 +3,11 @@
 // med timer per uke i arbeidsåret, slik at fordelingen kan sammenlignes med en arbeidsplan. Tabellen har fargene
 // ved hver del og er fargeforklaringen til diagrammet (eiers valg 30.09.2026).
 // Fordelingsvisning samler diagram, tabell og forklaring, og kan vises i fullskjerm der nettleseren støtter det.
-import { useEffect, useRef, useState } from 'preact/hooks';
+import type { ComponentChildren } from 'preact';
+import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Fordelingsdel, Fordelingsresultat } from '../beregning/index.ts';
 import { tallTekst } from './Utregning.tsx';
@@ -116,7 +118,7 @@ export function Fordelingstabell({ deler, totalt, uker }: { deler: readonly Ford
 }
 
 /** Diagram, tabell og forklaring av timene per uke, med knapp for stor visning (fullskjerm). */
-export function Fordelingsvisning({ resultat }: { resultat: Fordelingsresultat }) {
+export function Fordelingsvisning({ resultat, children }: { resultat: Fordelingsresultat; children?: ComponentChildren }) {
   const { t } = useTekst();
   const ramme = useRef<HTMLDivElement>(null);
   const [stor, settStor] = useState(false);
@@ -134,28 +136,48 @@ export function Fordelingsvisning({ resultat }: { resultat: Fordelingsresultat }
   const totalt = resultat.arsverk.verdi;
   const uker = resultat.arbeidsaarUker.verdi;
   const utvidet = resultat.utvidelseDager.verdi > 0;
+  const [lukket, vekslLukket] = useSammenlagt('fordeling');
+  const innhold = useId();
+  const planfestet = resultat.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+  const selv = resultat.deler.filter((d) => !d.planfestet).reduce((s, d) => s + d.timer, 0);
+  const oppsummering = t('arbeidstid.fordeling.oppsummering', { planfestet: tallTekst(planfestet, 1), selv: tallTekst(selv, 1) });
   return (
-    <div class={`fordeling-visning${stor ? ' stor' : ''}`} ref={ramme}>
+    <div class={`fordeling-visning${stor ? ' stor' : ''}${lukket ? ' lukket' : ''}`} ref={ramme}>
       <div class="fordeling-topp">
-        <h2 class="liten-overskrift">{t('arbeidstid.fordeling.diagramTittel')}</h2>
-        {kanVisesStor && (
+        <h2 class="liten-overskrift">
+          <Sammenleggknapp
+            lukket={lukket}
+            onVeksle={vekslLukket}
+            kontroll={innhold}
+            oppsummering={oppsummering}
+          >
+            {t('arbeidstid.fordeling.diagramTittel')}
+          </Sammenleggknapp>
+        </h2>
+        {kanVisesStor && !lukket && (
           <button type="button" class="lenkeknapp liten" onClick={veksle}>
             <Ikon navn={stor ? 'forminsk' : 'utvid'} class="ikon-liten" />
             {stor ? t('arbeidstid.fordeling.visMindre') : t('arbeidstid.fordeling.visStort')}
           </button>
         )}
       </div>
-      <Fordelingsdiagram deler={resultat.deler} totalt={totalt} />
-      <Fordelingstabell deler={resultat.deler} totalt={totalt} uker={uker} />
-      <p class="liten dempet">
-        {utvidet
-          ? t('arbeidstid.fordeling.perUkeUtvidet', {
-              maksUke: tallTekst(resultat.planfestetMaksUke.verdi, 1),
-              dager: tallTekst(resultat.utvidelseDager.verdi, 1),
-              uker: tallTekst(uker, 1),
-            })
-          : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
-      </p>
+      <Oppsummering lukket={lukket} onVeksle={vekslLukket}>
+        {oppsummering}
+      </Oppsummering>
+      <div id={innhold} hidden={lukket}>
+        <Fordelingsdiagram deler={resultat.deler} totalt={totalt} />
+        <Fordelingstabell deler={resultat.deler} totalt={totalt} uker={uker} />
+        <p class="liten dempet">
+          {utvidet
+            ? t('arbeidstid.fordeling.perUkeUtvidet', {
+                maksUke: tallTekst(resultat.planfestetMaksUke.verdi, 1),
+                dager: tallTekst(resultat.utvidelseDager.verdi, 1),
+                uker: tallTekst(uker, 1),
+              })
+            : t('arbeidstid.fordeling.perUkeForklaring', { uker: tallTekst(uker, 1) })}
+        </p>
+        {children}
+      </div>
     </div>
   );
 }

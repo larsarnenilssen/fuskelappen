@@ -370,6 +370,46 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
   });
 
+  test('kortene kan legges sammen og åpnes med overskriften, og det huskes', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('420');
+
+    // Fagkortet: feltene skjules, og overskriften viser faget.
+    const fag = page.getByRole('button', { name: /^Fag 1/ });
+    await expect(fag).toHaveAttribute('aria-expanded', 'true');
+    await fag.click();
+    await expect(fag).toHaveAttribute('aria-expanded', 'false');
+    await expect(fag).toContainText('Engelsk · Studiespesialisering Vg1');
+    await expect(page.getByLabel('Antall årstimer')).toBeHidden();
+
+    // Resultatkortet viser fortsatt svaret når det er lagt sammen.
+    const kort = page.locator('.resultatkort', { hasText: 'Samlet beskjeftigelse' });
+    await kort.getByRole('button', { name: 'Samlet beskjeftigelse', exact: true }).click();
+    await expect(kort.locator('.resultatkort-verdi')).toContainText('80');
+    await expect(kort.getByRole('button', { name: 'Vis utregning' })).toBeHidden();
+
+    // Diagramkortet viser planfestet og selvdisponert tid i overskriften.
+    const diagram = page.getByRole('button', { name: /^Fordeling av årsverket/ });
+    await diagram.click();
+    await expect(diagram).toContainText(/planfestet 1\s150 t, selvdisponert 537,5 t/);
+    await expect(page.locator('.fordeling-tabell')).toBeHidden();
+
+    // Funksjoner og møter og lønn.
+    await page.getByRole('button', { name: /^Funksjoner/ }).click();
+    await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
+    await expect(page.getByRole('button', { name: /^Funksjoner/ })).toContainText('1 lagt inn, 0 %');
+
+    // Det som er lagt sammen, huskes når brukeren går til en annen side og tilbake.
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await page.goBack();
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+    await expect(page.getByRole('button', { name: /^Fag 1/ })).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.fordeling-tabell')).toBeHidden();
+    await page.getByRole('button', { name: /^Fag 1/ }).click();
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('420');
+  });
+
   test('funksjoner kan ha bare tillegg, bare tid eller begge deler', async ({ page }) => {
     await aapne(page, '/arbeidstid/stillingsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();

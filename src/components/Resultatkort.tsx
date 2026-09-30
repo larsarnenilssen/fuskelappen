@@ -11,6 +11,7 @@ import { Ikon } from './Ikon.tsx';
 import { Kildelenke, kildeTekst } from './Kildelenke.tsx';
 import { Nivamerke, Statusmerke } from './Merker.tsx';
 import { Resultatlinje } from './Resultatlinje.tsx';
+import { Sammenleggknapp, useSammenlagt } from './Sammenlegg.tsx';
 
 export interface Utregningssteg {
   tekst: string;
@@ -73,7 +74,10 @@ export function Resultatkort(props: Props) {
   const [vis, settVis] = useState(false);
   const [kopi, settKopi] = useState<{ status: Kopistatus; tekst: string }>({ status: 'klar', tekst: '' });
   const id = useId();
+  const innhold = useId();
   const kort = useRef<HTMLElement>(null);
+  // Et sammenlagt kort viser bare tittelen og svaret.
+  const [lukket, veksle] = useSammenlagt(`resultat-${tittel}`);
 
   const kopier = async () => {
     const tekst = lagKopitekst(t, props, formaterDato(new Date().toISOString(), malform));
@@ -88,7 +92,11 @@ export function Resultatkort(props: Props) {
   return (
     <section class="resultatkort" aria-label={tittel} ref={kort} tabIndex={-1}>
       <div class="resultatkort-topp">
-        <h2 class="resultatkort-tittel">{tittel}</h2>
+        <h2 class="resultatkort-tittel">
+          <Sammenleggknapp lukket={lukket} onVeksle={veksle} kontroll={innhold}>
+            {tittel}
+          </Sammenleggknapp>
+        </h2>
         <div class="merker merker-inline">
           <Nivamerke niva={niva} />
           {ikkeKontrollert && <Statusmerke status="utkast" />}
@@ -98,65 +106,67 @@ export function Resultatkort(props: Props) {
         <span class="tall">{verdi}</span>
         {enhet && <span class="resultatkort-enhet"> {enhet}</span>}
       </p>
-      {sammendrag && <p class="resultatkort-sammendrag tall">{sammendrag}</p>}
-      {children}
-      <div class="resultatkort-knapper">
-        <button type="button" class="lenkeknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
-          <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten" />
-          {vis ? t('komponenter.resultat.skjulUtregning') : t('komponenter.resultat.visUtregning')}
-        </button>
-        <button type="button" class="lenkeknapp" onClick={() => void kopier()}>
-          <Ikon navn="kopier" class="ikon-liten" />
-          {t('komponenter.resultat.kopier')}
-        </button>
-        <span class="resultatkort-kopistatus" role="status">
-          {kopi.status === 'kopiert' ? t('komponenter.resultat.kopiert') : ''}
-        </span>
-      </div>
-      {kopi.status === 'feilet' && (
-        <div class="resultatkort-kopi">
-          <p class="felt-hjelp">{t('komponenter.resultat.kopierFeilet')}</p>
-          <textarea readOnly rows={8} aria-label={t('komponenter.resultat.kopiTekst')} value={kopi.tekst} />
+      <div id={innhold} hidden={lukket}>
+        {sammendrag && <p class="resultatkort-sammendrag tall">{sammendrag}</p>}
+        {children}
+        <div class="resultatkort-knapper">
+          <button type="button" class="lenkeknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
+            <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten" />
+            {vis ? t('komponenter.resultat.skjulUtregning') : t('komponenter.resultat.visUtregning')}
+          </button>
+          <button type="button" class="lenkeknapp" onClick={() => void kopier()}>
+            <Ikon navn="kopier" class="ikon-liten" />
+            {t('komponenter.resultat.kopier')}
+          </button>
+          <span class="resultatkort-kopistatus" role="status">
+            {kopi.status === 'kopiert' ? t('komponenter.resultat.kopiert') : ''}
+          </span>
         </div>
-      )}
-      <div id={id} hidden={!vis}>
-        <h3 class="skjult-visuelt">{t('komponenter.resultat.utregning')}</h3>
-        <ol class="utregning">
-          {steg.map((s, i) => (
-            <li key={i}>
-              <span class="utregning-tekst">{s.tekst}</span>
-              <span class="utregning-linje">
-                {s.innsatt && <span class="tall">{s.innsatt} = </span>}
-                <span class="utregning-verdi tall">{s.verdi}</span>
-                {[...new Set((s.kilder ?? []).map((k) => k.niva).concat(s.niva ? [s.niva] : []))]
-                  .filter((n) => n !== 'nasjonal')
-                  .map((n) => (
-                    <Nivamerke key={n} niva={n} />
-                  ))}
-              </span>
-              {s.formel && <span class="utregning-formel">{s.formel}</span>}
-              {s.kilde && (
-                <span class="utregning-kilde">
-                  <Kildelenke kilde={s.kilde} />
-                </span>
-              )}
-            </li>
-          ))}
-        </ol>
-        {kilder && kilder.length > 0 && (
-          <div class="utregning-kilder">
-            <h3 class="liten-overskrift">{t('komponenter.resultat.kilde')}</h3>
-            <ul>
-              {kilder.map((k) => (
-                <li key={`${k.kilde.id}-${k.kilde.punkt ?? ''}-${k.niva}`}>
-                  <Kildelenke kilde={k.kilde} />
-                  {k.niva !== 'nasjonal' && <Nivamerke niva={k.niva} />}
-                  {k.rad && <span class="dempet"> {k.rad}</span>}
-                </li>
-              ))}
-            </ul>
+        {kopi.status === 'feilet' && (
+          <div class="resultatkort-kopi">
+            <p class="felt-hjelp">{t('komponenter.resultat.kopierFeilet')}</p>
+            <textarea readOnly rows={8} aria-label={t('komponenter.resultat.kopiTekst')} value={kopi.tekst} />
           </div>
         )}
+        <div id={id} hidden={!vis}>
+          <h3 class="skjult-visuelt">{t('komponenter.resultat.utregning')}</h3>
+          <ol class="utregning">
+            {steg.map((s, i) => (
+              <li key={i}>
+                <span class="utregning-tekst">{s.tekst}</span>
+                <span class="utregning-linje">
+                  {s.innsatt && <span class="tall">{s.innsatt} = </span>}
+                  <span class="utregning-verdi tall">{s.verdi}</span>
+                  {[...new Set((s.kilder ?? []).map((k) => k.niva).concat(s.niva ? [s.niva] : []))]
+                    .filter((n) => n !== 'nasjonal')
+                    .map((n) => (
+                      <Nivamerke key={n} niva={n} />
+                    ))}
+                </span>
+                {s.formel && <span class="utregning-formel">{s.formel}</span>}
+                {s.kilde && (
+                  <span class="utregning-kilde">
+                    <Kildelenke kilde={s.kilde} />
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+          {kilder && kilder.length > 0 && (
+            <div class="utregning-kilder">
+              <h3 class="liten-overskrift">{t('komponenter.resultat.kilde')}</h3>
+              <ul>
+                {kilder.map((k) => (
+                  <li key={`${k.kilde.id}-${k.kilde.punkt ?? ''}-${k.niva}`}>
+                    <Kildelenke kilde={k.kilde} />
+                    {k.niva !== 'nasjonal' && <Nivamerke niva={k.niva} />}
+                    {k.rad && <span class="dempet"> {k.rad}</span>}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
       </div>
       {fast && <Resultatlinje mal={kort} tittel={tittel} verdi={verdi} {...(enhet ? { enhet } : {})} />}
     </section>

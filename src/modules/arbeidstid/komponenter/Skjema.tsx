@@ -7,6 +7,7 @@ import programomrader from '../../../../data/grep/programomrader.json';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Oppsummering, Sammenleggknapp, useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { somTabell } from '../../../core/regler/motor.ts';
@@ -475,87 +476,98 @@ export function Gruppekort({
   const { t } = useTekst();
   const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
   const kjent = kjentArstimer(gruppe.arsrammer[0], arstimer);
+  const [lukket, veksle] = useSammenlagt(`gruppe-${gruppe.id}`);
+  const innhold = useId();
+  const valg = gruppe.arsrammer[0]?.valg;
+  const fagnavn = valg && valg !== 'manuell' ? radTekst(indeks, valg)?.navn : undefined;
   return (
-    <fieldset class="fagkort" data-gruppe={nr}>
+    <fieldset class={`fagkort${lukket ? ' lukket' : ''}`} data-gruppe={nr}>
       <legend class="fagkort-tittel">
-        <span>{t('arbeidstid.felles.gruppe', { nr })}</span>
-        {delresultat && <span class="fagkort-resultat tall"> · {t('arbeidstid.felles.delresultat', { verdi: delresultat })}</span>}
+        <Sammenleggknapp lukket={lukket} onVeksle={veksle} kontroll={innhold} oppsummering={fagnavn}>
+          <span>{t('arbeidstid.felles.gruppe', { nr })}</span>
+          {delresultat && <span class="fagkort-resultat tall"> · {t('arbeidstid.felles.delresultat', { verdi: delresultat })}</span>}
+        </Sammenleggknapp>
       </legend>
       {kanFjernes && (
         <button type="button" class="ikonknapp fagkort-fjern" aria-label={t('arbeidstid.felles.fjernGruppe', { nr })} onClick={onFjern}>
           <Ikon navn="lukk" class="ikon-liten" />
         </button>
       )}
-      <Fagfelt
-        plasser={gruppe.arsrammer}
-        faaElever={gruppe.faaElever}
-        indeks={indeks}
-        rader={rader}
-        onPlasser={(arsrammer) => sett({ arsrammer, ...autoArstimer(gruppe, arsrammer, arstimer) })}
-        onFaaElever={(faaElever) => sett({ faaElever })}
-      />
-      <div class="inndatarad">
-        <Bryter
-          legend={t('arbeidstid.felles.undervisning')}
-          skjultLegend
-          kompakt
-          verdi={gruppe.modus}
-          valg={[
-            { verdi: 'arstimer', tekst: periode ? t('arbeidstid.felles.modusTimerPeriode') : t('arbeidstid.felles.modusArstimer') },
-            { verdi: 'okter', tekst: t('arbeidstid.felles.modusOkter') },
-          ]}
-          onEndring={(modus) => sett({ modus })}
+      <Oppsummering lukket={lukket} onVeksle={veksle}>
+        {fagnavn}
+      </Oppsummering>
+      <div id={innhold} hidden={lukket}>
+        <Fagfelt
+          plasser={gruppe.arsrammer}
+          faaElever={gruppe.faaElever}
+          indeks={indeks}
+          rader={rader}
+          onPlasser={(arsrammer) => sett({ arsrammer, ...autoArstimer(gruppe, arsrammer, arstimer) })}
+          onFaaElever={(faaElever) => sett({ faaElever })}
         />
-        {gruppe.modus === 'arstimer' ? (
-          <Tallfelt
-            key="timer"
-            class="felt-kompakt"
-            skjultEtikett
-            etikett={periode ? t('arbeidstid.felles.timerIPerioden') : t('arbeidstid.felles.arstimer')}
-            verdi={gruppe.arstimer}
-            min={0}
-            maks={2000}
-            onEndring={(v) => sett({ arstimer: v, arstimerAuto: false })}
+        <div class="inndatarad">
+          <Bryter
+            legend={t('arbeidstid.felles.undervisning')}
+            skjultLegend
+            kompakt
+            verdi={gruppe.modus}
+            valg={[
+              { verdi: 'arstimer', tekst: periode ? t('arbeidstid.felles.modusTimerPeriode') : t('arbeidstid.felles.modusArstimer') },
+              { verdi: 'okter', tekst: t('arbeidstid.felles.modusOkter') },
+            ]}
+            onEndring={(modus) => sett({ modus })}
           />
-        ) : (
-          <Tallfelt
-            key="okter"
-            class="felt-kompakt"
-            skjultEtikett
-            etikett={t('arbeidstid.felles.okter')}
-            verdi={gruppe.okter}
-            min={0}
-            maks={50}
-            onEndring={(v) => sett({ okter: v })}
-          />
-        )}
-      </div>
-      {gruppe.modus === 'arstimer' && gruppe.arstimerAuto && kjent && (
-        <p class="felt-hjelp">{t('arbeidstid.felles.arstimerFraGrep', { fagkoder: kjent.fagkoder.join(', ') })}</p>
-      )}
-      {gruppe.modus === 'okter' && (
-        <>
-          <Minuttvelger minutter={gruppe.minutter} fritt={gruppe.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ minutter, minutterFritt })} />
-          {periode || gruppe.endreUker ? (
+          {gruppe.modus === 'arstimer' ? (
             <Tallfelt
-              key="uker"
+              key="timer"
               class="felt-kompakt"
-              etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')}
-              verdi={gruppe.uker}
+              skjultEtikett
+              etikett={periode ? t('arbeidstid.felles.timerIPerioden') : t('arbeidstid.felles.arstimer')}
+              verdi={gruppe.arstimer}
               min={0}
-              maks={60}
-              onEndring={(v) => sett({ uker: v })}
+              maks={2000}
+              onEndring={(v) => sett({ arstimer: v, arstimerAuto: false })}
             />
           ) : (
-            <p class="felt-hjelp">
-              {t('arbeidstid.felles.ukerStandard', { uker: formaterTall(standardUker) })}{' '}
-              <button type="button" class="lenkeknapp liten" onClick={() => sett({ endreUker: true, uker: standardUker })}>
-                {t('arbeidstid.felles.endreUker')}
-              </button>
-            </p>
+            <Tallfelt
+              key="okter"
+              class="felt-kompakt"
+              skjultEtikett
+              etikett={t('arbeidstid.felles.okter')}
+              verdi={gruppe.okter}
+              min={0}
+              maks={50}
+              onEndring={(v) => sett({ okter: v })}
+            />
           )}
-        </>
-      )}
+        </div>
+        {gruppe.modus === 'arstimer' && gruppe.arstimerAuto && kjent && (
+          <p class="felt-hjelp">{t('arbeidstid.felles.arstimerFraGrep', { fagkoder: kjent.fagkoder.join(', ') })}</p>
+        )}
+        {gruppe.modus === 'okter' && (
+          <>
+            <Minuttvelger minutter={gruppe.minutter} fritt={gruppe.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ minutter, minutterFritt })} />
+            {periode || gruppe.endreUker ? (
+              <Tallfelt
+                key="uker"
+                class="felt-kompakt"
+                etikett={periode ? t('arbeidstid.felles.ukerPeriode') : t('arbeidstid.felles.uker')}
+                verdi={gruppe.uker}
+                min={0}
+                maks={60}
+                onEndring={(v) => sett({ uker: v })}
+              />
+            ) : (
+              <p class="felt-hjelp">
+                {t('arbeidstid.felles.ukerStandard', { uker: formaterTall(standardUker) })}{' '}
+                <button type="button" class="lenkeknapp liten" onClick={() => sett({ endreUker: true, uker: standardUker })}>
+                  {t('arbeidstid.felles.endreUker')}
+                </button>
+              </p>
+            )}
+          </>
+        )}
+      </div>
     </fieldset>
   );
 }

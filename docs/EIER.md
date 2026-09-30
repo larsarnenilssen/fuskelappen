@@ -126,6 +126,7 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Arbeidsplan: slå av «Utvider planfestet tid» for en funksjon på 20 % i hel stilling. Planfestet tid skal da bli 1150 timer, ikke 1257,5.
 - [ ] Fordeling: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår.
 - [ ] PC/Mac: prøv «Vis stort» på diagrammet og «Åpne i nytt vindu» ved tittelen.
+- [ ] Lukk og åpne kortene i Arbeidsplan med et trykk på overskriften. Se at oppsummeringene er nyttige.
 - [ ] Trykk «Vis utregning» og «Slik regnes det ut». Er metoden og formlene forståelige og riktige?
 - [ ] Velg Vestland og en skole under Innstillinger. Ingen ekte lokale avtaler er lagt inn ennå, så verdiene skal fortsatt være nasjonale.
 

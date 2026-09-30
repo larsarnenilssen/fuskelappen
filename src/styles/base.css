@@ -1092,6 +1092,74 @@ main {
   letter-spacing: 0.04em;
 }
 
+/* ---------- Kort som kan legges sammen (overskriften er en knapp med pil opp/ned) ---------- */
+
+.fagkort-tittel {
+  max-width: calc(100% - 2.5rem);
+}
+
+.kortknapp {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0 var(--rom-2);
+  min-height: 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-s);
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kortknapp-tekst {
+  min-width: 0;
+}
+
+.kortknapp-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Oppsummeringen i et sammenlagt kort står på egen linje, og et trykk på den åpner kortet. */
+.kort-oppsummering {
+  margin: 0;
+  padding: var(--rom-1) 0;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.resultatkort-tittel {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.kortknapp:hover .kortknapp-pil {
+  color: var(--farge-merke);
+}
+
+.fagkort.lukket {
+  padding-top: var(--rom-2);
+  padding-bottom: var(--rom-2);
+}
+
+/* Lukkeknappen står på rammen, så oppsummeringen får plass ved siden av. */
+.fagkort.lukket .kort-oppsummering {
+  padding-right: 2rem;
+}
+
+.fordeling-visning.lukket .fordeling-topp {
+  margin-bottom: 0;
+}
+
 p.fagkort-tittel {
   margin: 0 0 var(--rom-2);
   padding: 0;
@@ -1319,7 +1387,7 @@ p.fagkort-tittel {
   margin: 0 0 var(--rom-4);
 }
 
-.fordeling-visning > .liten {
+.fordeling-visning .liten {
   margin: var(--rom-4) 0 0;
 }
 

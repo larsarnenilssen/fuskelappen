@@ -50,4 +50,11 @@ test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ p
     await page.setViewportSize({ width: bredde, height: 740 });
     expect(await finnOverflyt(page), `arbeidsplan i ${bredde}px`).toEqual([]);
   }
+  // Også når kortene er lagt sammen og overskriftene viser oppsummeringer.
+  const apne = page.locator('.kortknapp[aria-expanded="true"]');
+  while ((await apne.count()) > 0) await apne.first().click();
+  for (const bredde of bredder) {
+    await page.setViewportSize({ width: bredde, height: 740 });
+    expect(await finnOverflyt(page), `arbeidsplan lagt sammen i ${bredde}px`).toEqual([]);
+  }
 });

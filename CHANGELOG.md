@@ -17,6 +17,7 @@ Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og st
   - Bryteren «Tillegg i lønnen» ved hver funksjon fyller inn godtgjøringen i SFS 2213 punkt 9.1 (minst 12 000 kr for kontaktlærer og for rådgiver eller sosiallærer, etter navnet på funksjonen). Beløpet kan overskrives. En funksjon kan ha bare tillegg (0 %), bare avsatt tid eller begge deler.
   - Er samlet beskjeftigelse over 100 %, tas overtidsbetalingen med, regnet som i overtidskalkulatoren.
 - «Vis stort» viser fordelingsdiagrammet og tabellen i fullskjerm, der nettleseren støtter det (PC, Mac og nettbrett).
+- Kortene kan legges sammen og åpnes igjen med et trykk på overskriften (pil opp/ned): fagene, funksjoner, møter og lønn, resultatkortene og fordelingsdiagrammet. Et lukket kort viser en kort oppsummering, f.eks. faget, og resultatkort viser fortsatt svaret. Det huskes når du går til en annen side og tilbake.
 - «Åpne i nytt vindu» ved tittelen på PC og Mac. Kalkulatoren åpnes i et eget vindu med det du har fylt ut, så flere kan være åpne samtidig.
 
 ### Endret

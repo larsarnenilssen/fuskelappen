@@ -6,6 +6,7 @@ import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
@@ -65,8 +66,14 @@ function Funksjoner({
   const id = useId();
   const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
   return (
-    <fieldset class="fagkort">
-      <legend class="fagkort-tittel">{t('arbeidstid.stillingsplan.funksjoner')}</legend>
+    <Sammenleggbartkort
+      nokkel="funksjoner"
+      tittel={t('arbeidstid.stillingsplan.funksjoner')}
+      oppsummering={t('arbeidstid.stillingsplan.funksjonerOppsummering', {
+        antall: funksjoner.length,
+        prosent: tallTekst(funksjoner.reduce((sum, f) => sum + (f.prosent ?? 0), 0)),
+      })}
+    >
       {funksjoner.map((f, i) => (
         <div key={f.id} class="inndatarad funksjonsrad">
           <label class="skjult-visuelt" for={`${id}-${f.id}`}>
@@ -136,7 +143,7 @@ function Funksjoner({
           <p class="felt-hjelp">{t('arbeidstid.stillingsplan.funksjonerHjelp')}</p>
         </Hjelp>
       </div>
-    </fieldset>
+    </Sammenleggbartkort>
   );
 }
 
@@ -329,10 +336,11 @@ export default function Stillingsplan() {
           )}
           {fordeling && (
             <>
-              <Fordelingsvisning resultat={fordeling} />
-              {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
-              {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
-              {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+              <Fordelingsvisning resultat={fordeling}>
+                {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
+                {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
+                {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+              </Fordelingsvisning>
             </>
           )}
           {lonn?.feil && <Feilmelding feil={lonn.feil} />}
@@ -389,8 +397,14 @@ export default function Stillingsplan() {
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
       <Funksjoner funksjoner={s.funksjoner} tillegg={s.visLonn ? tilleggsforslag : null} onEndring={(f) => sett({ ...s, funksjoner: f })} />
-      <fieldset class="fagkort">
-        <legend class="fagkort-tittel">{t('arbeidstid.stillingsplan.tillegg')}</legend>
+      <Sammenleggbartkort
+        nokkel="moter-og-lonn"
+        tittel={t('arbeidstid.stillingsplan.tillegg')}
+        oppsummering={[
+          ...(s.moter !== null ? [t('arbeidstid.stillingsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
+          ...(s.visLonn ? [t('arbeidstid.stillingsplan.lonnOppsummering')] : []),
+        ].join(', ') || undefined}
+      >
         <Tallfelt
           class="felt-kompakt"
           etikett={t('arbeidstid.fordeling.moter')}
@@ -408,7 +422,7 @@ export default function Stillingsplan() {
             <p class="felt-hjelp">{t('arbeidstid.stillingsplan.tilleggHint')}</p>
           </>
         )}
-      </fieldset>
+      </Sammenleggbartkort>
     </Kalkulatorside>
   );
 }
