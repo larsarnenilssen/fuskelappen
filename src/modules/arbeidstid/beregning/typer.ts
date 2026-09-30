@@ -101,7 +101,9 @@ export type Storrelse =
   | 'funksjonstid_uten_utvidelse'
   | 'funksjonstid_i_alt'
   | 'ikke_fordelt'
-  | 'undervisningsdel';
+  | 'undervisningsdel'
+  | 'funksjonstillegg'
+  | 'lonn_i_alt';
 
 export interface Operand {
   navn: Storrelse;
@@ -176,7 +178,8 @@ export type TrinnId =
   | 'funksjonstid_i_alt'
   | 'selvdisponert_med_funksjon'
   | 'ikke_fordelt'
-  | 'undervisningsdel';
+  | 'undervisningsdel'
+  | 'lonn_i_alt';
 
 export interface Trinn {
   id: TrinnId;

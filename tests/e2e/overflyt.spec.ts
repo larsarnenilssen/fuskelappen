@@ -43,7 +43,8 @@ test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ p
   await page.getByLabel('Antall årstimer').fill('420');
   await page.getByLabel('Funksjon 1: Prosent').fill('20');
   await page.getByLabel('Møtetid per uke (timer)').fill('2');
-  await page.getByRole('switch', { name: 'Regn ut årslønn' }).check();
+  await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+  await page.getByRole('switch', { name: 'Legg til tillegg' }).check();
   await expect(page.locator('.fordeling-tabell')).toBeVisible();
   for (const bredde of bredder) {
     await page.setViewportSize({ width: bredde, height: 740 });

@@ -8,9 +8,9 @@ import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { beregnArslonn, beregnFordeling, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
-import { Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
+import { Belopsstolpe, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
@@ -30,6 +30,12 @@ interface Funksjonstilstand {
 let nesteFunksjon = 1;
 const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0, utvider: true });
 const utvider = (f: Funksjonstilstand) => f.utvider !== false;
+
+/** Funksjoner med fast minstegodtgjøring i SFS 2213 punkt 9.1, kjent igjen på navnet brukeren har gitt funksjonen. */
+const godtgjorteFunksjoner = [
+  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i },
+  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i },
+] as const;
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
 function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
@@ -117,6 +123,10 @@ export default function Stillingsplan() {
       moter: null as number | null,
       visLonn: false,
       lonn: nyLonnstilstand(),
+      over60: false,
+      visTillegg: false,
+      /** Tillegg i kroner per år, eller null når forslaget fra SFS 2213 skal brukes. */
+      tillegg: null as number | null,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -150,8 +160,32 @@ export default function Stillingsplan() {
       ).resultat
     : null;
   const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
+  // Forslag til tillegg fra SFS 2213 punkt 9.1: minstegodtgjøringen for funksjonene som er kjent igjen på navnet,
+  // eller for kontaktlærer, som er den vanligste, når ingen er kjent igjen. Brukeren kan skrive inn et annet beløp.
+  const kontaktlaerer = useRegeltall(hent, 'sfs2213.godtgjoring_kontaktlaerer');
+  const radgiver = useRegeltall(hent, 'sfs2213.godtgjoring_radgiver');
+  const satser: Record<string, number | null> = { 'sfs2213.godtgjoring_kontaktlaerer': kontaktlaerer, 'sfs2213.godtgjoring_radgiver': radgiver };
+  const kjente = godtgjorteFunksjoner.filter((g) => s.funksjoner.some((f) => g.navn.test(f.navn)));
+  const foreslatt = (kjente.length > 0 ? kjente : [godtgjorteFunksjoner[0]]).reduce((sum, g) => sum + (satser[g.nokkel] ?? 0), 0);
+  const tillegg = s.tillegg ?? foreslatt;
+
   const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
-  const lonn = lonnsgrunnlag && s.stilling !== null && s.stilling > 0 ? prov(() => beregnArslonn(hent, lonnsgrunnlag, s.stilling ?? 0)) : null;
+  // Overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
+  const overtidsfag = fylte[valgtIndeks]?.inn;
+  const lonn =
+    lonnsgrunnlag && harStilling
+      ? prov(() =>
+          beregnLonn(hent, {
+            lonn: lonnsgrunnlag,
+            stilling: s.stilling ?? 0,
+            tillegg: s.visTillegg ? tillegg : null,
+            overtid:
+              resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
+            over60: s.over60,
+          }),
+        )
+      : null;
+  const overtidUtenFag = s.visLonn && resultat !== null && resultat.beskjeftigelse.verdi > 100 && !overtidsfag;
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const gruppenavn = fylte.map(
@@ -263,8 +297,27 @@ export default function Stillingsplan() {
           )}
           {lonn?.feil && <Feilmelding feil={lonn.feil} />}
           {lonn?.resultat && (
-            <Utregningskort tittel={t('arbeidstid.stillingsplan.arslonn')} resultat={lonn.resultat.arslonn} trinn={lonn.resultat.trinn} fast={false}>
-              <p class="felt-hjelp">{t('arbeidstid.stillingsplan.arslonnMerknad')}</p>
+            <Utregningskort tittel={t('arbeidstid.stillingsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
+              <Advarsler advarsler={lonn.resultat.advarsler} />
+              {(lonn.resultat.tillegg || lonn.resultat.overtid) && (
+                <Belopsstolpe
+                  deler={[
+                    { navn: t('arbeidstid.stillingsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
+                    ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.stillingsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
+                    ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
+                  ]}
+                />
+              )}
+              <Oversiktsliste
+                rader={[
+                  { navn: t('arbeidstid.stillingsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
+                  ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.stillingsplan.tilleggNavn'), verdi: medEnhet(t, lonn.resultat.tillegg.verdi, 'kroner') }] : []),
+                  ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
+                  { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
+                ]}
+              />
+              {overtidUtenFag && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.overtidUtenFag')}</p>}
+              <p class="felt-hjelp">{t('arbeidstid.stillingsplan.lonnMerknad')}</p>
             </Utregningskort>
           )}
           <Varianter
@@ -308,7 +361,32 @@ export default function Stillingsplan() {
           onEndring={(moter) => sett({ ...s, moter })}
         />
         <Vippe tekst={t('arbeidstid.stillingsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
-        {s.visLonn && <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />}
+        {s.visLonn && (
+          <>
+            <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
+            <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+            <Vippe tekst={t('arbeidstid.stillingsplan.visTillegg')} pa={s.visTillegg} onEndring={(visTillegg) => sett({ ...s, visTillegg })} />
+            {s.visTillegg && (
+              <Tallfelt
+                class="felt-kompakt"
+                etikett={t('arbeidstid.stillingsplan.tilleggFelt')}
+                hjelpetekst={
+                  s.tillegg === null
+                    ? t('arbeidstid.stillingsplan.tilleggForslag', {
+                        kontaktlaerer: tallTekst(kontaktlaerer ?? 0),
+                        radgiver: tallTekst(radgiver ?? 0),
+                      })
+                    : t('arbeidstid.stillingsplan.tilleggEget')
+                }
+                enhet="kr"
+                verdi={tillegg}
+                min={0}
+                maks={1000000}
+                onEndring={(verdi) => sett({ ...s, tillegg: verdi })}
+              />
+            )}
+          </>
+        )}
       </fieldset>
     </Kalkulatorside>
   );

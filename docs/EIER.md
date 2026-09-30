@@ -121,7 +121,8 @@ Alt nytt innhold er merket «Ikke kontrollert» til du har godkjent det. Du godk
 - [ ] Programfag: søk på en fagkode (f.eks. HEA2005) og se at årstimetallet fra Udir stemmer.
 - [ ] Lagrede varianter: lagre, endre og hent fram igjen.
 - [ ] Arbeidsplan: prøv eksemplene E1–E4. Se at teknisk undertid og overtid, timene i hvert fag og lenken til overtid er riktige.
-- [ ] Arbeidsplan: se at diagrammet over arbeidstiden stemmer, og prøv «Regn ut årslønn» med garantilønn og egen lønn.
+- [ ] Arbeidsplan: se at diagrammet over arbeidstiden stemmer, og prøv «Regn ut lønn» med garantilønn og egen lønn, med tillegg og med overtid over 100 %.
+- [ ] Regelverdiene for godtgjøring i SFS 2213 punkt 9.1: 12 000 kr for kontaktlærer og for rådgiver/sosiallærer (`rules/sfs2213/2026-2027.yaml`).
 - [ ] Arbeidsplan: slå av «Utvider planfestet tid» for en funksjon på 20 % i hel stilling. Planfestet tid skal da bli 1150 timer, ikke 1257,5.
 - [ ] Fordeling: 100 % stilling med 100 % funksjon skal gi 37,5 timer per uke og 29 dager utvidet arbeidsår.
 - [ ] PC/Mac: prøv «Vis stort» på diagrammet og «Åpne i nytt vindu» ved tittelen.

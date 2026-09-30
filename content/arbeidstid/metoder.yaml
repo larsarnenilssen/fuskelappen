@@ -16,7 +16,12 @@
 
       **Fordelingen av arbeidstiden** regnes ut som i kalkulatoren for fordeling, med fagene og summen av funksjonene, og vises også før noe er fylt ut. Den delen av stillingen som ikke er fylt med fag og funksjoner, regnes som undervisningsdelen: 1150 × prosent planfestet tid (vist som annen planfestet tid) og 537,5 × prosent tid læreren disponerer selv. En hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv. Er fag og funksjoner mer enn stillingen, fordeles det som er lagt inn. For hver funksjon velger du om den utvider planfestet tid. Funksjoner som utvider, gir funksjonstid = 1687,5 × prosent, all planfestet (punkt 5.3). Funksjoner som ikke utvider, fordeles som undervisningen: 1150 × prosent planfestet tid og 537,5 × prosent tid læreren disponerer selv.
 
-      **Årslønn i stillingen** = årslønn i hel stilling × stillingsprosent ÷ 100. Årslønnen i hel stilling er garantilønnen for stillingsgruppe og ansiennitet i hovedtariffavtalen, eller lønnen du skriver inn. Feriepenger, tillegg og overtid er ikke med.
+      **Lønn i året** = årslønn i stillingen + tillegg + overtidsbetaling.
+
+      - **Årslønn i stillingen** = årslønn i hel stilling × stillingsprosent ÷ 100. Årslønnen i hel stilling er garantilønnen for stillingsgruppe og ansiennitet i hovedtariffavtalen, eller lønnen du skriver inn.
+      - **Tillegg** er valgfritt. Feltet fylles inn med minstegodtgjøringen i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærer og 12 000 kr for rådgiver eller sosiallærer, etter navnet på funksjonene. Kjennes ingen funksjon igjen, brukes kontaktlærer. Godtgjøring for andre funksjoner fastsettes lokalt, og du kan skrive inn et annet beløp.
+      - **Overtidsbetaling** regnes som i kalkulatoren for overtid når samlet beskjeftigelse er over 100 %, med årsrammen i faget som er valgt for årsrammetimer.
+      - **Feriepenger** regnes som vanlig i prosent av det som utbetales: 12 %, eller 14,3 % for arbeidstakere over 60 år (hovedtariffavtalen § 7.4.2). De kommer i tillegg og er ikke med i lønn i året.
     nn: |
       Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
 
@@ -29,11 +34,18 @@
 
       **Fordelinga av arbeidstida** blir rekna ut som i kalkulatoren for fordeling, med faga og summen av funksjonane, og blir vist også før noko er fylt ut. Den delen av stillinga som ikkje er fylt med fag og funksjonar, blir rekna som undervisningsdelen: 1150 × prosent planfesta tid (vist som anna planfesta tid) og 537,5 × prosent tid læraren disponerer sjølv. Ei heil stilling utan fag og funksjonar gir 1150 timar anna planfesta tid og 537,5 timar tid læraren disponerer sjølv. Er fag og funksjonar meir enn stillinga, blir det som er lagt inn, fordelt. For kvar funksjon vel du om han utvidar planfesta tid. Funksjonar som utvidar, gir funksjonstid = 1687,5 × prosent, all planfesta (punkt 5.3). Funksjonar som ikkje utvidar, blir fordelte som undervisninga: 1150 × prosent planfesta tid og 537,5 × prosent tid læraren disponerer sjølv.
 
-      **Årsløn i stillinga** = årsløn i heil stilling × stillingsprosent ÷ 100. Årsløna i heil stilling er garantiløna for stillingsgruppe og ansiennitet i hovudtariffavtalen, eller løna du skriv inn. Feriepengar, tillegg og overtid er ikkje med.
+      **Løn i året** = årsløn i stillinga + tillegg + overtidsbetaling.
+
+      - **Årsløn i stillinga** = årsløn i heil stilling × stillingsprosent ÷ 100. Årsløna i heil stilling er garantiløna for stillingsgruppe og ansiennitet i hovudtariffavtalen, eller løna du skriv inn.
+      - **Tillegg** er valfritt. Feltet blir fylt inn med minstegodtgjeringa i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærar og 12 000 kr for rådgivar eller sosiallærar, etter namnet på funksjonane. Blir ingen funksjon kjend att, blir kontaktlærar brukt. Godtgjering for andre funksjonar blir fastsett lokalt, og du kan skrive inn eit anna beløp.
+      - **Overtidsbetaling** blir rekna som i kalkulatoren for overtid når samla sysselsetjing er over 100 %, med årsramma i faget som er valt for årsrammetimar.
+      - **Feriepengar** blir rekna som vanleg i prosent av det som blir utbetalt: 12 %, eller 14,3 % for arbeidstakarar over 60 år (hovudtariffavtalen § 7.4.2). Dei kjem i tillegg og er ikkje med i løn i året.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
   kontrollert: null
   stikkord: [arbeidsplan, stillingsplan, årslønn, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
 

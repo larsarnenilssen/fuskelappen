@@ -353,13 +353,38 @@ describe('årstimer fra Grep', () => {
   });
 });
 
-describe('årslønn i stillingen', () => {
+describe('lønn i stillingen', () => {
   it('er årslønn i hel stilling × stillingsprosent ÷ 100, fra garantilønn eller egen lønn', async () => {
-    const { beregnArslonn, lesGarantilonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
-    expect(beregnArslonn(hent, { type: 'manuell', arslonn: 600000 }, 80).arslonn.verdi).toBe(480000);
+    const { beregnLonn, lesGarantilonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const enkel = beregnLonn(hent, { lonn: { type: 'manuell', arslonn: 600000 }, stilling: 80, tillegg: null, overtid: null, over60: false });
+    expect(enkel.arslonn.verdi).toBe(480000);
+    expect(enkel.samlet.verdi).toBe(480000);
+    expect(enkel.feriepenger.verdi).toBeCloseTo(57600);
     const lektor = lesGarantilonn(hent).find((r) => r.id === 'lektor');
-    const r = beregnArslonn(hent, { type: 'garantilonn', stillingsgruppe: 'lektor', ansiennitet: 0 }, 50);
+    const r = beregnLonn(hent, { lonn: { type: 'garantilonn', stillingsgruppe: 'lektor', ansiennitet: 0 }, stilling: 50, tillegg: null, overtid: null, over60: false });
     expect(r.arslonn.verdi).toBeCloseTo((lektor?.lonn[0] ?? NaN) / 2);
     expect(r.trinn[0]?.operander.arslonn?.opprinnelse).toBe('tabell');
+  });
+
+  it('legger til tillegg og overtidsbetaling, og regner feriepenger av det som utbetales', async () => {
+    const { beregnLonn, beregnOvertid } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const lonn = { type: 'manuell' as const, arslonn: 700000 };
+    const overtid = { beskjeftigelse: 110, arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30 };
+    const r = beregnLonn(hent, { lonn, stilling: 100, tillegg: 12000, overtid, over60: false });
+    const o = beregnOvertid(hent, { ...overtid, lonn, over60: false });
+    expect(r.overtid?.verdi).toBeCloseTo(o.betaling.verdi);
+    expect(r.samlet.verdi).toBeCloseTo(700000 + 12000 + o.betaling.verdi);
+    expect(r.feriepenger.verdi).toBeCloseTo(r.samlet.verdi * 0.12);
+    expect(r.trinn.filter((t) => t.id === 'feriepenger')).toHaveLength(1);
+    // Over 60 år gir høyere sats.
+    const eldre = beregnLonn(hent, { lonn, stilling: 100, tillegg: 12000, overtid: null, over60: true });
+    expect(eldre.feriepenger.verdi / eldre.samlet.verdi).toBeCloseTo(0.143, 3);
+    // Ingen overtid når beskjeftigelsen ikke er over 100 %.
+    expect(beregnLonn(hent, { lonn, stilling: 100, tillegg: null, overtid: { ...overtid, beskjeftigelse: 95 }, over60: false }).overtid).toBeNull();
+  });
+
+  it('godtgjøringen for kontaktlærer og rådgiver står i regelverket (SFS 2213 punkt 9.1)', () => {
+    expect(hent('sfs2213.godtgjoring_kontaktlaerer').verdi).toBe(12000);
+    expect(hent('sfs2213.godtgjoring_radgiver').verdi).toBe(12000);
   });
 });

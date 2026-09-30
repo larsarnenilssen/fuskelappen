@@ -342,12 +342,43 @@ test.describe('arbeidstid', () => {
     await expect(planfestet).toContainText(/1\s150/);
     await expect(page.getByText(/Funksjoner som ikke utvider planfestet tid \(20 %\)/)).toBeVisible();
 
-    await page.getByRole('switch', { name: 'Regn ut årslønn' }).check();
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('radio', { name: 'Egen årslønn' }).check();
     await page.getByLabel('Årslønn i kroner').fill('600000');
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('80');
-    await expect(page.locator('.resultatkort', { hasText: 'Årslønn i stillingen' })).toContainText(/480\s000/);
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/480\s000/);
+    await expect(lonn).toContainText(/Feriepenger i tillegg\s*57\s600/);
     await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
+
+    // Tillegg fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
+    await page.getByRole('switch', { name: 'Legg til tillegg' }).check();
+    const tillegg = page.getByLabel('Tillegg per år');
+    await expect(tillegg).toHaveValue(/12\s?000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/492\s000/);
+    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    await expect(tillegg).toHaveValue(/24\s?000/);
+    await tillegg.fill('15000');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/495\s000/);
+    await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
+  });
+
+  test('arbeidsplanen regner ut overtidsbetaling i lønnen over 100 %', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByLabel('Funksjon 1: Prosent').fill('30');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('700000');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    // 10 % overtid i engelsk med 700 000 kr i årslønn: 140 timer kalkulert tid × 370,37 kr × 1,5 = 77 777,78 kr,
+    // som i overtidskalkulatoren.
+    await expect(lonn).toContainText(/Overtidsbetaling\s*77\s777,78/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/777\s777,78/);
+    await expect(lonn).toContainText(/Feriepenger i tillegg\s*93\s333,33/);
   });
 
   test('stillingsplan med flere fag og funksjon gir teknisk undertid (fasit 014)', async ({ page }) => {
