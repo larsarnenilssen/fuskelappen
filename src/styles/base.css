@@ -1733,6 +1733,16 @@ p.fagkort-tittel {
 
 /* ---------- Stillingsplan ---------- */
 
+.funksjonsrad .vippe {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.funksjonsrad + .funksjonsrad {
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
 .funksjonsrad .tekstfelt {
   flex: 1 1 8rem;
   min-width: 0;

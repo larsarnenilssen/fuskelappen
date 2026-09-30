@@ -197,6 +197,26 @@ describe('fordeling', () => {
     expect(over.stilling.verdi).toBe(20);
   });
 
+  it('funksjoner som ikke utvider planfestet tid, fordeles som undervisningen', () => {
+    // 80 % undervisning (420 av 525) og 20 % kontaktlærer uten utvidelse: planfestet tid blir 1150 som for hel undervisning.
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 20, moterPerUke: 0 });
+    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    expect(r.stilling.verdi).toBe(100);
+    expect(del('funksjonstid')).toBeCloseTo(230);
+    expect(del('selvdisponert')).toBeCloseTo(537.5);
+    expect(r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1150);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+
+    // Med utvidelse blir planfestet tid det samme som punkt 5.3.
+    const med = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(med.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1257.5);
+
+    // Begge deler: 10 % som utvider og 10 % som ikke utvider.
+    const blandet = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 10 }, funksjonUtenUtvidelse: 10, moterPerUke: 0 });
+    expect(blandet.deler.find((d) => d.id === 'funksjonstid')?.timer).toBeCloseTo(168.75 + 115);
+    expect(blandet.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+  });
+
   it('utvider arbeidsåret når planfestet tid går over 37,5 timer per uke, som punkt 5.3', () => {
     // Hel stilling med bare funksjon: 1687,5 timer planfestet, over grensen på 39,2 × 37,5 = 1470 timer.
     const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: null }, funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });

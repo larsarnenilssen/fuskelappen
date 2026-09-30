@@ -96,7 +96,10 @@ export type Storrelse =
   | 'funksjonstid_etter_moter'
   | 'planfestet_stilling'
   | 'arbeidsaar_uker_utvidet'
-  | 'arslonn_stilling';
+  | 'arslonn_stilling'
+  | 'funksjon_uten_utvidelse'
+  | 'funksjonstid_uten_utvidelse'
+  | 'funksjonstid_i_alt';
 
 export interface Operand {
   navn: Storrelse;
@@ -165,7 +168,11 @@ export type TrinnId =
   | 'funksjonstid_etter_moter'
   | 'planfestet_stilling'
   | 'arbeidsaar_uker_utvidet'
-  | 'arslonn_stilling';
+  | 'arslonn_stilling'
+  | 'stilling_alle_funksjoner'
+  | 'funksjonstid_uten_utvidelse'
+  | 'funksjonstid_i_alt'
+  | 'selvdisponert_med_funksjon';
 
 export interface Trinn {
   id: TrinnId;

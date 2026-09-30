@@ -324,6 +324,13 @@ test.describe('arbeidstid', () => {
     await page.getByLabel('Møtetid per uke (timer)').fill('2');
     await expect(tabell.getByRole('row', { name: /Møtetid/ })).toContainText('76');
 
+    // Kontaktlærer uten utvidet planfestet tid: planfestet tid blir 1150 timer som for hel undervisning.
+    const planfestet = tabell.getByRole('row', { name: /^Planfestet tid/ });
+    await expect(planfestet).toContainText(/1\s257,5/);
+    await page.getByRole('switch', { name: 'Funksjon 1: Utvider planfestet tid' }).uncheck();
+    await expect(planfestet).toContainText(/1\s150/);
+    await expect(page.getByText(/Funksjoner som ikke utvider planfestet tid \(20 %\)/)).toBeVisible();
+
     await page.getByRole('switch', { name: 'Regn ut årslønn' }).check();
     await page.getByRole('radio', { name: 'Egen årslønn' }).check();
     await page.getByLabel('Årslønn i kroner').fill('600000');

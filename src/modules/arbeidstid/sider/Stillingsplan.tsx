@@ -23,10 +23,13 @@ interface Funksjonstilstand {
   id: number;
   navn: string;
   prosent: number | null;
+  /** Om funksjonen utvider planfestet tid (punkt 5.3). Mangler i skjema lagret før 0.5.0, og regnes da som på. */
+  utvider?: boolean;
 }
 
 let nesteFunksjon = 1;
-const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0 });
+const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0, utvider: true });
+const utvider = (f: Funksjonstilstand) => f.utvider !== false;
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
 function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
@@ -74,6 +77,12 @@ function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]
           >
             <Ikon navn="lukk" class="ikon-liten" />
           </button>
+          <Vippe
+            tekst={t('arbeidstid.stillingsplan.utvider')}
+            skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
+            pa={utvider(f)}
+            onEndring={(pa) => sett(f.id, { utvider: pa })}
+          />
         </div>
       ))}
       <div class="med-hjelp">
@@ -125,11 +134,15 @@ export default function Stillingsplan() {
       : null,
   );
   // Fordelingen av arbeidstiden for det som er lagt inn: fagene og summen av funksjonene.
+  // Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
+  const sumFunksjoner = (utvid: boolean) => s.funksjoner.filter((f) => utvider(f) === utvid).reduce((sum, f) => sum + (f.prosent ?? 0), 0);
+  const utenUtvidelse = sumFunksjoner(false);
   const fordeling = resultat
     ? prov(() =>
         beregnFordeling(hent, {
           undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn) },
-          funksjon: { type: 'prosent', prosent: resultat.funksjon.verdi },
+          funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
+          funksjonUtenUtvidelse: utenUtvidelse,
           moterPerUke: s.moter ?? 0,
         }),
       ).resultat
@@ -236,6 +249,7 @@ export default function Stillingsplan() {
               {fordeling && (
                 <>
                   <Fordelingsvisning resultat={fordeling} />
+                  {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
                   {!iBalanse && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
                 </>
               )}

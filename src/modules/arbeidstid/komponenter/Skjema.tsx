@@ -62,12 +62,28 @@ export function Bryter<V extends string>({
 }
 
 /** Av/på-bryter (avkrysning med rollen «switch»). Hjelpeteksten ligger bak et «?». */
-export function Vippe({ tekst, hjelp, pa, onEndring }: { tekst: string; hjelp?: string; pa: boolean; onEndring: (pa: boolean) => void }) {
+export function Vippe({
+  tekst,
+  hjelp,
+  skjultForan,
+  pa,
+  onEndring,
+}: {
+  tekst: string;
+  hjelp?: string;
+  /** Tekst foran etiketten som bare skjermlesere får, f.eks. «Funksjon 2:» når det er flere like brytere. */
+  skjultForan?: string;
+  pa: boolean;
+  onEndring: (pa: boolean) => void;
+}) {
   const id = useId();
   return (
     <div class="vippe med-hjelp">
       <input id={id} type="checkbox" role="switch" checked={pa} onChange={(e) => onEndring(e.currentTarget.checked)} />
-      <label for={id}>{tekst}</label>
+      <label for={id}>
+        {skjultForan && <span class="skjult-visuelt">{skjultForan} </span>}
+        {tekst}
+      </label>
       {hjelp && (
         <Hjelp tema={tekst}>
           <p class="felt-hjelp">{hjelp}</p>

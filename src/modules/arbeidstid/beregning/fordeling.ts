@@ -9,6 +9,8 @@
 //   planfestet tid for undervisningsdelen = planfestet × B, tid læreren disponerer selv = (årsverk − planfestet) × B,
 //   funksjonstid = årsverk × F. Summen er årsverk × (B + F).
 // For hel stilling gir dette samme planfestede tid som punkt 5.3 (eier bekreftet 29.09.2026).
+// Funksjoner som ikke utvider planfestet tid (G %, eiers valg per funksjon 30.09.2026), fordeles som undervisningen:
+//   planfestet del = planfestet × G, tid læreren disponerer selv = (årsverk − planfestet) × G.
 // Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke
 // regnes med det utvidede arbeidsåret.
 import { Regelfeil } from '../../../core/regler/motor.ts';
@@ -27,6 +29,8 @@ export type Undervisningsgrunnlag = { type: 'fag'; grupper: Gruppe[] } | { type:
 export interface Fordelingsinndata {
   undervisning: Undervisningsgrunnlag;
   funksjon: Reduksjon;
+  /** Funksjoner i prosent av full stilling som ikke utvider planfestet tid. 0 når alle utvider (standard). */
+  funksjonUtenUtvidelse?: number;
   moterPerUke: number;
 }
 
@@ -79,7 +83,11 @@ export interface Fordelingsresultat extends Utregning {
 export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsresultat {
   const f = funksjonsprosent(hent, inn.funksjon);
   const F = f.prosent;
-  const u = undervisning(hent, inn.undervisning, F);
+  const G = inn.funksjonUtenUtvidelse ?? 0;
+  const utenUtvidelse = G > 0 ? inndata('funksjon_uten_utvidelse', G, 'prosent') : null;
+  // Undervisningen fra stillingsprosent er stillingen minus alle funksjonene.
+  const alleFunksjoner: Operand = utenUtvidelse ? { navn: 'funksjoner', verdi: F.verdi + G, enhet: 'prosent', opprinnelse: 'inndata', liste: [F.verdi, G] } : F;
+  const u = undervisning(hent, inn.undervisning, alleFunksjoner);
   const undervisningstimer = u.U;
   const arsverk = regel(hent, 'sfs2213.arsverk_timer', 'arsverk', 'timer');
   const planfestet = regel(hent, 'sfs2213.planfestet_timer', 'planfestet', 'timer');
@@ -88,14 +96,30 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
   // Med stillingsprosent er stillingen oppgitt. Med fag er den undervisning + funksjoner.
   const stilling =
     inn.undervisning.type === 'stilling'
-      ? { resultat: inndata('stilling', Math.max(inn.undervisning.prosent, F.verdi), 'prosent'), trinn: [] as Trinn[] }
+      ? { resultat: inndata('stilling', Math.max(inn.undervisning.prosent, alleFunksjoner.verdi), 'prosent'), trinn: [] as Trinn[] }
       : (() => {
-          const t = trinn('stilling', { beskjeftigelse: B, funksjonsprosent: F }, 'stilling', 'prosent', B.verdi + F.verdi);
+          const t = utenUtvidelse
+            ? trinn('stilling_alle_funksjoner', { beskjeftigelse: B, funksjonsprosent: F, funksjon_uten_utvidelse: utenUtvidelse }, 'stilling', 'prosent', B.verdi + F.verdi + G)
+            : trinn('stilling', { beskjeftigelse: B, funksjonsprosent: F }, 'stilling', 'prosent', B.verdi + F.verdi);
           return { resultat: t.resultat, trinn: [t] };
         })();
   const arsverkStilling = trinn('arsverk_stilling', { arsverk, stilling: stilling.resultat }, 'arsverk_stilling', 'timer', (arsverk.verdi * stilling.resultat.verdi) / 100);
   const planU = trinn('planfestet_undervisning', { planfestet, beskjeftigelse: B }, 'planfestet_undervisning', 'timer', (planfestet.verdi * B.verdi) / 100);
-  const funksjonstid = trinn('funksjonstid', { arsverk, funksjonsprosent: F }, 'funksjonstid', 'timer', (arsverk.verdi * F.verdi) / 100);
+  const utvidende = trinn('funksjonstid', { arsverk, funksjonsprosent: F }, 'funksjonstid', 'timer', (arsverk.verdi * F.verdi) / 100);
+  // Funksjonstid i planfestet tid: funksjonene som utvider (årsverk × F) og planfestet del av dem som ikke utvider.
+  const funksjonTrinn: Trinn[] = [utvidende];
+  let funksjonstid = utvidende;
+  if (utenUtvidelse) {
+    const del = trinn(
+      'funksjonstid_uten_utvidelse',
+      { planfestet, funksjon_uten_utvidelse: utenUtvidelse },
+      'funksjonstid_uten_utvidelse',
+      'timer',
+      (planfestet.verdi * G) / 100,
+    );
+    funksjonstid = trinn('funksjonstid_i_alt', { funksjonstid: utvidende.resultat, funksjonstid_uten_utvidelse: del.resultat }, 'funksjonstid_i_alt', 'timer', utvidende.resultat.verdi + del.resultat.verdi);
+    funksjonTrinn.push(del, funksjonstid);
+  }
   const skolearUker = regel(hent, 'sfs2213.skolear_uker', 'skolear_uker', 'uker');
   const motetid = trinn('motetid', { moter: inndata('moter_per_uke', inn.moterPerUke, 'timer_per_uke'), uker: skolearUker }, 'motetid', 'timer', inn.moterPerUke * skolearUker.verdi);
   const annen = trinn(
@@ -123,13 +147,15 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
     funksjonsdel = igjen.resultat.verdi;
     moterForStore = over > funksjonstid.resultat.verdi + 1e-9;
   }
-  const selv = trinn(
-    'selvdisponert_stilling',
-    { arsverk, planfestet, beskjeftigelse: B },
-    'selvdisponert_stilling',
-    'timer',
-    ((arsverk.verdi - planfestet.verdi) * B.verdi) / 100,
-  );
+  const selv = utenUtvidelse
+    ? trinn(
+        'selvdisponert_med_funksjon',
+        { arsverk, planfestet, beskjeftigelse: B, funksjon_uten_utvidelse: utenUtvidelse },
+        'selvdisponert_stilling',
+        'timer',
+        ((arsverk.verdi - planfestet.verdi) * (B.verdi + G)) / 100,
+      )
+    : trinn('selvdisponert_stilling', { arsverk, planfestet, beskjeftigelse: B }, 'selvdisponert_stilling', 'timer', ((arsverk.verdi - planfestet.verdi) * B.verdi) / 100);
 
   // Planfestet tid i alt. Går den over grensen for arbeidsåret, utvides arbeidsåret (punkt 5.3).
   const planfestetStilling = trinn(
@@ -166,7 +192,7 @@ export function beregnFordeling(hent: Hent, inn: Fordelingsinndata): Fordelingsr
   if (stilling.resultat.verdi > 100 + 1e-9) advarsler.add('over_hel_stilling');
   if (moterForStore) advarsler.add('motetid_for_stor');
 
-  const trinnliste: Trinn[] = [...f.trinn, ...u.trinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, funksjonstid, ...moteTrinn, selv, ...aarTrinn];
+  const trinnliste: Trinn[] = [...f.trinn, ...u.trinn, ...stilling.trinn, arsverkStilling, planU, motetid, annen, ...funksjonTrinn, ...moteTrinn, selv, ...aarTrinn];
   return {
     beskjeftigelse: B,
     funksjonsprosent: F,
