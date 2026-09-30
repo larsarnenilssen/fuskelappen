@@ -936,6 +936,7 @@ main {
 .vippe.med-hjelp {
   display: grid;
   grid-template-columns: auto minmax(0, max-content) auto;
+  justify-content: start;
   column-gap: var(--rom-2);
 }
 
@@ -1089,6 +1090,74 @@ main {
   color: var(--farge-tekst-dempet);
   text-transform: uppercase;
   letter-spacing: 0.04em;
+}
+
+/* ---------- Kort som kan legges sammen (overskriften er en knapp med pil opp/ned) ---------- */
+
+.fagkort-tittel {
+  max-width: calc(100% - 2.5rem);
+}
+
+.kortknapp {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0 var(--rom-2);
+  min-height: 2rem;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-s);
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kortknapp-tekst {
+  min-width: 0;
+}
+
+.kortknapp-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Oppsummeringen i et sammenlagt kort står på egen linje, og et trykk på den åpner kortet. */
+.kort-oppsummering {
+  margin: 0;
+  padding: var(--rom-1) 0;
+  font-size: var(--str-s);
+  color: var(--farge-tekst-dempet);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.resultatkort-tittel {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.kortknapp:hover .kortknapp-pil {
+  color: var(--farge-merke);
+}
+
+.fagkort.lukket {
+  padding-top: var(--rom-2);
+  padding-bottom: var(--rom-2);
+}
+
+/* Lukkeknappen står på rammen, så oppsummeringen får plass ved siden av. */
+.fagkort.lukket .kort-oppsummering {
+  padding-right: 2rem;
+}
+
+.fordeling-visning.lukket .fordeling-topp {
+  margin-bottom: 0;
 }
 
 p.fagkort-tittel {
@@ -1252,7 +1321,7 @@ p.fagkort-tittel {
 
 .fordeling-etikett {
   fill: var(--farge-flate);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   font-family: var(--font-tekst);
 }
@@ -1275,6 +1344,108 @@ p.fagkort-tittel {
 }
 
 /* ---------- Fordelingsdiagram ---------- */
+
+.fordeling .figur-tekst {
+  font-size: 12px;
+}
+
+/* Diagram og tabell står i et eget kort, med luft mellom tittel, stolpe, fargeforklaring, tabell og merknad. */
+.fordeling-visning {
+  margin: var(--rom-5) 0;
+  padding: var(--rom-4);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-l);
+  background: var(--farge-flate);
+}
+
+@media (max-width: 29.99rem) {
+  .fordeling-visning {
+    padding: var(--rom-3);
+  }
+}
+
+/* På de smaleste skjermene går kortet helt ut til kantene, så tabellen får plass uten å dele ord. */
+@media (max-width: 23.99rem) {
+  .fordeling-visning:not(:fullscreen) {
+    margin-inline: calc(-1 * var(--rom-4));
+    border-inline: 0;
+    border-radius: 0;
+    padding-inline: var(--rom-3);
+  }
+
+  .fordeling-visning .fordeling-del-navn {
+    gap: var(--rom-1);
+  }
+}
+
+.fordeling-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-4);
+}
+
+.fordeling-visning .liten {
+  margin: var(--rom-4) 0 0;
+}
+
+.fordeling-topp .liten-overskrift {
+  margin: 0;
+}
+
+.fordeling {
+  margin: 0 0 var(--rom-5);
+}
+
+/* Stor visning: diagram og tabell fyller skjermen. Innholdet får plass uten eget scrollområde i vanlige vinduer. */
+.fordeling-visning:fullscreen {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  padding: var(--rom-5) max(var(--rom-5), 4vw);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--str-l);
+}
+
+/* Lesbar bredde også på store skjermer: tallene står ikke langt fra navnene. */
+.fordeling-visning:fullscreen > * {
+  width: 100%;
+  max-width: 64rem;
+  margin-inline: auto;
+}
+
+/* Midtstilt når det er plass, men aldri slik at toppen (med «Lukk stor visning») havner utenfor skjermen. */
+.fordeling-visning:fullscreen > :first-child {
+  margin-top: auto;
+}
+
+.fordeling-visning:fullscreen > :last-child {
+  margin-bottom: auto;
+}
+
+.fordeling-visning:fullscreen .fordeling-topp .liten-overskrift {
+  font-size: var(--str-xl);
+}
+
+.fordeling-visning:fullscreen .diagram {
+  max-height: 36vh;
+}
+
+.fordeling-visning:fullscreen .fordeling-forklaring-rad,
+.fordeling-visning:fullscreen .fordeling-tabell {
+  font-size: var(--str-l);
+}
+
+.fordeling-visning:fullscreen .fordeling-farge {
+  width: 1.2rem;
+  height: 1.2rem;
+}
 
 .fordeling-del-undervisning {
   fill: var(--diagram-undervisning);
@@ -1340,9 +1511,9 @@ p.fagkort-tittel {
   display: flex;
   flex-wrap: wrap;
   column-gap: var(--rom-4);
-  row-gap: var(--rom-1);
+  row-gap: var(--rom-2);
   font-size: var(--str-s);
-  margin: var(--rom-1) 0 0;
+  margin: var(--rom-4) 0 0;
 }
 
 .fordeling-tabell {
@@ -1353,9 +1524,54 @@ p.fagkort-tittel {
 
 .fordeling-tabell th,
 .fordeling-tabell td {
-  padding: var(--rom-1) var(--rom-2);
+  padding: var(--rom-2) var(--rom-1);
   border-bottom: var(--strek) solid var(--farge-linje);
   text-align: left;
+}
+
+.fordeling-tabell th:first-child {
+  padding-left: 0;
+  overflow-wrap: break-word;
+}
+
+.fordeling-tabell td:last-child,
+.fordeling-tabell th:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 30rem) {
+  .fordeling-tabell th,
+  .fordeling-tabell td {
+    padding: var(--rom-2) var(--rom-2);
+  }
+}
+
+/* Fargeruten står fast ved navnet, også når navnet brytes over flere linjer. */
+.fordeling-del-navn {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+}
+
+.fordeling-del-navn .fordeling-farge {
+  transform: translateY(0.2rem);
+}
+
+.fordeling-tabell thead th {
+  color: var(--farge-tekst-dempet);
+  font-weight: 600;
+  vertical-align: bottom;
+}
+
+/* Summene skilles fra delene med en tydeligere strek. */
+.fordeling-tabell tbody tr.sumrad:not(.sumrad + .sumrad) th,
+.fordeling-tabell tbody tr.sumrad:not(.sumrad + .sumrad) td {
+  border-top: 2px solid var(--farge-tekst-dempet);
+}
+
+.fordeling-tabell tbody tr:last-child th,
+.fordeling-tabell tbody tr:last-child td {
+  border-bottom: 0;
 }
 
 .fordeling-tabell td.tall,
@@ -1514,6 +1730,21 @@ p.fagkort-tittel {
   margin: 0 0 0 auto;
 }
 
+.kalkulator .tittelrad .ikonknapp + .nytt-vindu {
+  margin-left: 0;
+}
+
+/* «Åpne i nytt vindu» gir bare mening på skrivebordet, der flere vinduer kan stå ved siden av hverandre. */
+.nytt-vindu {
+  display: none;
+}
+
+@media (min-width: 64rem) and (hover: hover) and (pointer: fine) {
+  .nytt-vindu {
+    display: inline-flex;
+  }
+}
+
 .resultatkort-tittel {
   margin: var(--rom-1) 0 var(--rom-1);
   font-size: var(--str-m);
@@ -1644,6 +1875,17 @@ p.fagkort-tittel {
 }
 
 /* ---------- Stillingsplan ---------- */
+
+.funksjonsrad .vippe,
+.funksjonsrad .funksjon-tillegg {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+.funksjonsrad + .funksjonsrad {
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+}
 
 .funksjonsrad .tekstfelt {
   flex: 1 1 8rem;
@@ -1780,6 +2022,21 @@ p.fagkort-tittel {
 .variant-navn {
   min-width: 0;
   font-weight: 600;
+}
+
+.variant-tittel {
+  overflow-wrap: anywhere;
+}
+
+.variant-navnknapp {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+
+.variant-navnfelt {
+  width: 100%;
+  min-width: 0;
 }
 
 .variant-verdi {

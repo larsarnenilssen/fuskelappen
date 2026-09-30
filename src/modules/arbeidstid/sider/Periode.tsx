@@ -18,12 +18,19 @@ export default function Periode() {
   const indeks = useFagindeks(hent, rader);
   const arstimer = useArstimer(hent);
   const skolear = useRegeltall(hent, 'sfs2213.skolear_dager') ?? 0;
+  const perUke = useRegeltall(hent, 'sfs2213.arbeidsdager_per_uke') ?? 0;
   const [skjema, settSkjema] = useSkjematilstand(
     'periode',
     () => ({ grupper: [nyGruppe()], dager: null as number | null, dagerSkolear: null as number | null }),
     (s) => reserverIder(s.grupper),
   );
   const { grupper, dager, dagerSkolear } = skjema;
+  // Uker i perioden for økter per uke: dagene i perioden ÷ skoledager per uke, med mindre brukeren skriver inn antallet.
+  const ukerFraDager = dager !== null && dager > 0 && perUke > 0 ? dager / perUke : 0;
+  const ukerHjelp =
+    ukerFraDager > 0
+      ? t('arbeidstid.periode.ukerFraDager', { uker: formaterTall(ukerFraDager, 1), dager: formaterTall(dager ?? 0), perUke: formaterTall(perUke) })
+      : t('arbeidstid.periode.ukerFyllDager');
 
   const inndata = grupper.map((g) => tilGruppe(g, rader, true));
   const utfylte = inndata.filter((g): g is Gruppe => g !== null);
@@ -96,7 +103,17 @@ export default function Periode() {
         />
       </div>
       {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={dagerSkolear ?? skolear} />}
-      <Grupper arstimer={arstimer} grupper={grupper} rader={rader} indeks={indeks} periode standardUker={0} delresultater={delresultater} onEndring={(g) => settSkjema({ ...skjema, grupper: g })} />
+      <Grupper
+        arstimer={arstimer}
+        grupper={grupper}
+        rader={rader}
+        indeks={indeks}
+        periode
+        standardUker={ukerFraDager}
+        ukerHjelp={ukerHjelp}
+        delresultater={delresultater}
+        onEndring={(g) => settSkjema({ ...skjema, grupper: g })}
+      />
     </Kalkulatorside>
   );
 }

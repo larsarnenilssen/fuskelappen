@@ -29,10 +29,19 @@ export interface Beskjeftigelsesresultat extends Utregning {
 
 type Gruppenr = { gruppe?: number };
 
-function timer(hent: Hent, u: Undervisning, nr: Gruppenr, periode: boolean): { timer: Operand; trinn: Trinn[] } {
+/**
+ * Timene i gruppen. Økter per uke regnes om med antall uker: oppgitt av brukeren, ellers skoleårets uker, eller
+ * i en periode ukene regnet ut fra dagene i perioden (periodeUker).
+ */
+function timer(hent: Hent, u: Undervisning, nr: Gruppenr, periode: boolean, periodeUker?: Operand): { timer: Operand; trinn: Trinn[] } {
   const navn = periode ? 'timer_i_perioden' : 'arstimer';
   if (u.type === 'arstimer') return { timer: inndata(navn, u.arstimer, 'timer'), trinn: [] };
-  const uker = u.uker === null && !periode ? regel(hent, 'sfs2213.skolear_uker', 'uker', 'uker') : inndata('uker', u.uker ?? 0, 'uker');
+  const uker =
+    u.uker !== null
+      ? inndata('uker', u.uker, 'uker')
+      : periode
+        ? (periodeUker ?? inndata('uker', 0, 'uker'))
+        : regel(hent, 'sfs2213.skolear_uker', 'uker', 'uker');
   const t = trinn(
     periode ? 'timer_i_perioden_fra_okter' : 'arstimer_fra_okter',
     {
@@ -103,12 +112,28 @@ export function beregnPeriodebeskjeftigelse(hent: Hent, grupper: readonly Gruppe
     periode.dagerIPerioden / dagerSkolear.verdi,
   );
   alleTrinn.push(nokkel);
+  // Uker i perioden for økter per uke uten oppgitt antall uker: dagene i perioden ÷ skoledager per uke.
+  // Ukene kan ha ulikt antall skoledager eller ulik timeplan, så det gir en advarsel.
+  let periodeUker: Operand | undefined;
+  if (grupper.some((g) => g.undervisning.type === 'okter' && g.undervisning.uker === null)) {
+    const perUke = regel(hent, 'sfs2213.arbeidsdager_per_uke', 'arbeidsdager_per_uke', 'dager');
+    const u = trinn(
+      'uker_i_perioden',
+      { dager_periode: inndata('dager_i_perioden', periode.dagerIPerioden, 'dager'), per_uke: perUke },
+      'uker',
+      'uker',
+      periode.dagerIPerioden / perUke.verdi,
+    );
+    alleTrinn.push(u);
+    periodeUker = u.resultat;
+    advarsler.add('uker_fra_dager');
+  }
   const flere = grupper.length > 1;
   const resultater = grupper.map((g, i) => {
     const nr: Gruppenr = flere ? { gruppe: i + 1 } : {};
     const valg = velgArsramme(hent, g.arsrammer, g.elever, nr.gruppe);
     if (valg.manglerElevtall) advarsler.add('mangler_elevtall');
-    const t = timer(hent, g.undervisning, nr, true);
+    const t = timer(hent, g.undervisning, nr, true, periodeUker);
     const ramme = trinn('perioderamme', { arsramme: valg.arsramme, periodenokkel: nokkel.resultat }, 'perioderamme', 'arsrammetimer', valg.arsramme.verdi * nokkel.resultat.verdi, nr);
     const b = trinn('periodebeskjeftigelse', { timer: t.timer, perioderamme: ramme.resultat }, 'beskjeftigelse', 'prosent', (t.timer.verdi / ramme.resultat.verdi) * 100, nr);
     alleTrinn.push(...valg.trinn, ...t.trinn, ramme, b);

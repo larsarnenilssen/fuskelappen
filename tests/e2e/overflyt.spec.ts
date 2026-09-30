@@ -32,3 +32,29 @@ test.describe('ingen horisontal overflyt i 320–430 px', () => {
     }
   });
 });
+
+test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ page }, info) => {
+  test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
+  await page.setViewportSize({ width: 320, height: 740 });
+  await page.goto('./#/arbeidstid/stillingsplan');
+  await venterPaaSide(page);
+  await page.getByLabel('Fag', { exact: true }).fill('engelsk stud vg1');
+  await page.locator('.fagtreff button').first().click();
+  await page.getByLabel('Antall årstimer').fill('420');
+  await page.getByLabel('Funksjon 1: Prosent').fill('20');
+  await page.getByLabel('Møtetid per uke (timer)').fill('2');
+  await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+  await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+  await expect(page.locator('.fordeling-tabell')).toBeVisible();
+  for (const bredde of bredder) {
+    await page.setViewportSize({ width: bredde, height: 740 });
+    expect(await finnOverflyt(page), `arbeidsplan i ${bredde}px`).toEqual([]);
+  }
+  // Også når kortene er lagt sammen og overskriftene viser oppsummeringer.
+  const apne = page.locator('.kortknapp[aria-expanded="true"]');
+  while ((await apne.count()) > 0) await apne.first().click();
+  for (const bredde of bredder) {
+    await page.setViewportSize({ width: bredde, height: 740 });
+    expect(await finnOverflyt(page), `arbeidsplan lagt sammen i ${bredde}px`).toEqual([]);
+  }
+});

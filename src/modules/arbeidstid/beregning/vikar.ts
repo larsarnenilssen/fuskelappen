@@ -80,7 +80,8 @@ export function lesGarantilonn(hent: Hent): Garantilonnsrad[] {
   });
 }
 
-function arslonn(hent: Hent, l: Lonnsgrunnlag): Operand {
+/** Årslønn i hel stilling: garantilønn for stillingsgruppe og ansiennitet, eller egen årslønn. */
+export function arslonn(hent: Hent, l: Lonnsgrunnlag): Operand {
   if (l.type === 'manuell') return inndata('arslonn', l.arslonn, 'kroner');
   const rad = lesGarantilonn(hent).find((r) => r.id === l.stillingsgruppe);
   const verdi = rad?.lonn[l.ansiennitet];

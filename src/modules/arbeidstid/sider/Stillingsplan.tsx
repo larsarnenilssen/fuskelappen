@@ -1,16 +1,21 @@
-// Stillingsplan for én lærer: fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid.
-// Hovedkalkulatoren i modulen. Differansen kan regnes om til årsrammetimer i et valgt fag.
+// Arbeidsplan for én lærer: fag og funksjoner mot stillingsprosenten, med teknisk undertid eller overtid.
+// Hovedkalkulatoren i modulen. Differansen kan regnes om til årsrammetimer i et valgt fag. Under står fordelingen
+// av arbeidstiden (samme diagram som i Fordeling), og årslønnen i stillingen kan regnes ut ved behov.
+// Id og adresse er fortsatt «stillingsplan», så favoritter, lenker og lagrede varianter virker (avgjørelse 012).
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
-import { Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type Gruppe } from '../beregning/index.ts';
+import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
+import { Belopsstolpe, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
-import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
+import { type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
@@ -19,10 +24,26 @@ interface Funksjonstilstand {
   id: number;
   navn: string;
   prosent: number | null;
+  /** Om funksjonen utvider planfestet tid (punkt 5.3). Mangler i skjema lagret før 0.5.0, og regnes da som på. */
+  utvider?: boolean;
+  /** Om funksjonen gir tillegg i lønnen (godtgjøring, SFS 2213 punkt 9.1). */
+  tillegg?: boolean;
+  /** Tillegget i kroner per år, eller null når beløpet fra SFS 2213 skal brukes. */
+  tilleggKr?: number | null;
 }
 
 let nesteFunksjon = 1;
-const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0 });
+const nyFunksjon = (): Funksjonstilstand => ({ id: nesteFunksjon++, navn: '', prosent: 0, utvider: true });
+const utvider = (f: Funksjonstilstand) => f.utvider !== false;
+
+/** Funksjoner med fast minstegodtgjøring i SFS 2213 punkt 9.1, kjent igjen på navnet brukeren har gitt funksjonen. */
+const godtgjorteFunksjoner = [
+  { nokkel: 'sfs2213.godtgjoring_kontaktlaerer', navn: /kontakt/i, hjelp: 'arbeidstid.stillingsplan.tilleggKontaktlaerer' },
+  { nokkel: 'sfs2213.godtgjoring_radgiver', navn: /r[åa]dgiv|sosiall[æa]/i, hjelp: 'arbeidstid.stillingsplan.tilleggRadgiver' },
+] as const;
+
+/** Forslag til tillegg for en funksjon: beløpet fra SFS 2213 og en forklaring av hvor det kommer fra. */
+type Tilleggsforslag = (f: Funksjonstilstand) => { verdi: number; hjelp: string };
 
 /** Kort navn på faget i en gruppe, f.eks. «Engelsk · Studiespesialisering Vg1». */
 function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string {
@@ -31,13 +52,28 @@ function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string): string 
   return reserve;
 }
 
-function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]; onEndring: (f: Funksjonstilstand[]) => void }) {
+function Funksjoner({
+  funksjoner,
+  tillegg,
+  onEndring,
+}: {
+  funksjoner: Funksjonstilstand[];
+  /** Forslag til tillegg når lønnen regnes ut, ellers null (da vises ikke tilleggene). */
+  tillegg: Tilleggsforslag | null;
+  onEndring: (f: Funksjonstilstand[]) => void;
+}) {
   const { t } = useTekst();
   const id = useId();
   const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
   return (
-    <fieldset class="fagkort">
-      <legend class="fagkort-tittel">{t('arbeidstid.stillingsplan.funksjoner')}</legend>
+    <Sammenleggbartkort
+      nokkel="funksjoner"
+      tittel={t('arbeidstid.stillingsplan.funksjoner')}
+      oppsummering={t('arbeidstid.stillingsplan.funksjonerOppsummering', {
+        antall: funksjoner.length,
+        prosent: tallTekst(funksjoner.reduce((sum, f) => sum + (f.prosent ?? 0), 0)),
+      })}
+    >
       {funksjoner.map((f, i) => (
         <div key={f.id} class="inndatarad funksjonsrad">
           <label class="skjult-visuelt" for={`${id}-${f.id}`}>
@@ -70,6 +106,32 @@ function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]
           >
             <Ikon navn="lukk" class="ikon-liten" />
           </button>
+          <Vippe
+            tekst={t('arbeidstid.stillingsplan.utvider')}
+            skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
+            pa={utvider(f)}
+            onEndring={(pa) => sett(f.id, { utvider: pa })}
+          />
+          {tillegg && (
+            <Vippe
+              tekst={t('arbeidstid.stillingsplan.tilleggVippe')}
+              skjultForan={`${t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 })}:`}
+              pa={f.tillegg === true}
+              onEndring={(pa) => sett(f.id, { tillegg: pa })}
+            />
+          )}
+          {tillegg && f.tillegg && (
+            <Tallfelt
+              class="felt-kompakt funksjon-tillegg"
+              etikett={t('arbeidstid.stillingsplan.tilleggFelt', { nr: i + 1 })}
+              hjelpetekst={f.tilleggKr == null ? tillegg(f).hjelp : t('arbeidstid.stillingsplan.tilleggEget')}
+              enhet="kr"
+              verdi={f.tilleggKr ?? tillegg(f).verdi}
+              min={0}
+              maks={1000000}
+              onEndring={(tilleggKr) => sett(f.id, { tilleggKr })}
+            />
+          )}
         </div>
       ))}
       <div class="med-hjelp">
@@ -81,7 +143,7 @@ function Funksjoner({ funksjoner, onEndring }: { funksjoner: Funksjonstilstand[]
           <p class="felt-hjelp">{t('arbeidstid.stillingsplan.funksjonerHjelp')}</p>
         </Hjelp>
       </div>
-    </fieldset>
+    </Sammenleggbartkort>
   );
 }
 
@@ -101,6 +163,10 @@ export default function Stillingsplan() {
       grupper: [nyGruppe()],
       funksjoner: [nyFunksjon()],
       timerIGruppe: null as number | null,
+      moter: null as number | null,
+      visLonn: false,
+      lonn: nyLonnstilstand(),
+      over60: false,
     }),
     (lagret) => {
       reserverIder(lagret.grupper);
@@ -117,6 +183,56 @@ export default function Stillingsplan() {
       ? beregnStillingsplan(hent, { stilling: s.stilling, grupper: fylte.map((x) => x.inn), funksjoner, timerIGruppe: fylte.length > 0 ? valgtIndeks : null })
       : null,
   );
+  // Fordelingen av arbeidstiden i stillingen vises alltid, også før noe er lagt inn: fagene, funksjonene og
+  // den delen av stillingen som ikke er fylt ennå. Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
+  const sumFunksjoner = (utvid: boolean) => s.funksjoner.filter((f) => utvider(f) === utvid).reduce((sum, f) => sum + (f.prosent ?? 0), 0);
+  const utenUtvidelse = sumFunksjoner(false);
+  const harStilling = s.stilling !== null && s.stilling > 0;
+  const fordeling =
+    resultat || harStilling
+    ? prov(() =>
+        beregnFordeling(hent, {
+          undervisning: { type: 'fag', grupper: fylte.map((x) => x.inn), ...(harStilling ? { stilling: s.stilling ?? 0 } : {}) },
+          funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
+          funksjonUtenUtvidelse: utenUtvidelse,
+          moterPerUke: s.moter ?? 0,
+        }),
+      ).resultat
+    : null;
+  const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
+  // Tillegg per funksjon. Forslaget er minstegodtgjøringen i SFS 2213 punkt 9.1 for funksjonen som er kjent igjen på
+  // navnet, eller for kontaktlærer, som er den vanligste, når navnet ikke kjennes igjen. Brukeren kan skrive inn et annet beløp.
+  const kontaktlaerer = useRegeltall(hent, 'sfs2213.godtgjoring_kontaktlaerer');
+  const radgiver = useRegeltall(hent, 'sfs2213.godtgjoring_radgiver');
+  const satser: Record<string, number | null> = { 'sfs2213.godtgjoring_kontaktlaerer': kontaktlaerer, 'sfs2213.godtgjoring_radgiver': radgiver };
+  const tilleggsforslag: Tilleggsforslag = (f) => {
+    const kjent = godtgjorteFunksjoner.find((g) => g.navn.test(f.navn));
+    const verdi = satser[(kjent ?? godtgjorteFunksjoner[0]).nokkel] ?? 0;
+    return { verdi, hjelp: t(kjent ? kjent.hjelp : 'arbeidstid.stillingsplan.tilleggUkjent', { kr: tallTekst(verdi) }) };
+  };
+  const tilleggene = s.funksjoner
+    .map((f, i) => ({ f, i }))
+    .filter(({ f }) => f.tillegg === true)
+    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.stillingsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f).verdi }));
+  const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
+
+  const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
+  // Overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
+  const overtidsfag = fylte[valgtIndeks]?.inn;
+  const lonn =
+    lonnsgrunnlag && harStilling
+      ? prov(() =>
+          beregnLonn(hent, {
+            lonn: lonnsgrunnlag,
+            stilling: s.stilling ?? 0,
+            tillegg,
+            overtid:
+              resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
+            over60: s.over60,
+          }),
+        )
+      : null;
+  const overtidUtenFag = s.visLonn && resultat !== null && resultat.beskjeftigelse.verdi > 100 && !overtidsfag;
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const gruppenavn = fylte.map(
@@ -218,6 +334,40 @@ export default function Stillingsplan() {
           ) : (
             !feil && <ManglerInndata />
           )}
+          {fordeling && (
+            <>
+              <Fordelingsvisning resultat={fordeling}>
+                {ikkeFylt > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.ikkeFyltMerknad', { prosent: tallTekst(ikkeFylt) })}</p>}
+                {utenUtvidelse > 0 && <p class="liten dempet">{t('arbeidstid.stillingsplan.utenUtvidelseMerknad', { prosent: tallTekst(utenUtvidelse) })}</p>}
+                {resultat && diff > 0.005 && <p class="liten dempet">{t('arbeidstid.stillingsplan.diagramMerknad', { prosent: tallTekst(resultat.beskjeftigelse.verdi) })}</p>}
+              </Fordelingsvisning>
+            </>
+          )}
+          {lonn?.feil && <Feilmelding feil={lonn.feil} />}
+          {lonn?.resultat && (
+            <Utregningskort tittel={t('arbeidstid.stillingsplan.lonnIAlt')} resultat={lonn.resultat.samlet} trinn={lonn.resultat.trinn} sammendrag={false} fast={false}>
+              <Advarsler advarsler={lonn.resultat.advarsler} />
+              {(lonn.resultat.tillegg || lonn.resultat.overtid) && (
+                <Belopsstolpe
+                  deler={[
+                    { navn: t('arbeidstid.stillingsplan.arslonn'), verdi: lonn.resultat.arslonn.verdi },
+                    ...(lonn.resultat.tillegg ? [{ navn: t('arbeidstid.stillingsplan.tilleggNavn'), verdi: lonn.resultat.tillegg.verdi }] : []),
+                    ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: lonn.resultat.overtid.verdi }] : []),
+                  ]}
+                />
+              )}
+              <Oversiktsliste
+                rader={[
+                  { navn: t('arbeidstid.stillingsplan.arslonnStilling', { prosent: tallTekst(s.stilling ?? 0) }), verdi: medEnhet(t, lonn.resultat.arslonn.verdi, 'kroner') },
+                  ...tilleggene.map((x) => ({ navn: t('arbeidstid.stillingsplan.tilleggRad', { funksjon: x.navn }), verdi: medEnhet(t, x.kr, 'kroner') })),
+                  ...(lonn.resultat.overtid ? [{ navn: t('arbeidstid.resultat.overtidsbetaling'), verdi: medEnhet(t, lonn.resultat.overtid.verdi, 'kroner') }] : []),
+                  { navn: t('arbeidstid.resultat.feriepengerTillegg'), verdi: medEnhet(t, lonn.resultat.feriepenger.verdi, 'kroner') },
+                ]}
+              />
+              {overtidUtenFag && <p class="felt-hjelp">{t('arbeidstid.stillingsplan.overtidUtenFag')}</p>}
+              <p class="felt-hjelp">{t('arbeidstid.stillingsplan.lonnMerknad')}</p>
+            </Utregningskort>
+          )}
           <Varianter
             id="stillingsplan"
             skjema={s}
@@ -246,7 +396,33 @@ export default function Stillingsplan() {
         delresultater={delresultater}
         onEndring={(grupper) => sett({ ...s, grupper })}
       />
-      <Funksjoner funksjoner={s.funksjoner} onEndring={(f) => sett({ ...s, funksjoner: f })} />
+      <Funksjoner funksjoner={s.funksjoner} tillegg={s.visLonn ? tilleggsforslag : null} onEndring={(f) => sett({ ...s, funksjoner: f })} />
+      <Sammenleggbartkort
+        nokkel="moter-og-lonn"
+        tittel={t('arbeidstid.stillingsplan.tillegg')}
+        oppsummering={[
+          ...(s.moter !== null ? [t('arbeidstid.stillingsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
+          ...(s.visLonn ? [t('arbeidstid.stillingsplan.lonnOppsummering')] : []),
+        ].join(', ') || undefined}
+      >
+        <Tallfelt
+          class="felt-kompakt"
+          etikett={t('arbeidstid.fordeling.moter')}
+          hjelpetekst={t('arbeidstid.stillingsplan.moterHjelp')}
+          verdi={s.moter}
+          min={0}
+          maks={37.5}
+          onEndring={(moter) => sett({ ...s, moter })}
+        />
+        <Vippe tekst={t('arbeidstid.stillingsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
+        {s.visLonn && (
+          <>
+            <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
+            <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+            <p class="felt-hjelp">{t('arbeidstid.stillingsplan.tilleggHint')}</p>
+          </>
+        )}
+      </Sammenleggbartkort>
     </Kalkulatorside>
   );
 }

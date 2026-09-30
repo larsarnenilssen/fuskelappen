@@ -4,6 +4,35 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.5.0] – 2026-09-30
+
+Arbeidsplan med fordeling og årslønn, riktig uke ved utvidet arbeidsår, og større diagram.
+
+### Lagt til
+
+- **Arbeidsplan** (tidligere Stillingsplan) viser fordelingen av arbeidstiden i samme diagram og tabell som Fordeling. Diagrammet vises hele tiden, ut fra stillingsprosenten: en hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv. Fag, funksjoner og møtetid per uke fyller stillingen etter hvert.
+- Bryteren «Utvider planfestet tid» på hver funksjon i Arbeidsplan. Slås den av (f.eks. for kontaktlærer), fordeles funksjonen i diagrammet som undervisningen, og planfestet tid utvides ikke.
+- Lagrede varianter kan få navn, f.eks. «Før endring». Navnefeltet åpnes når du lagrer, og blyanten ved navnet endrer det.
+- «Regn ut lønn» i Arbeidsplan: velg garantilønn (stillingsgruppe og ansiennitet) eller skriv inn egen lønn, og se lønn i året med feriepenger i tillegg.
+  - Bryteren «Tillegg i lønnen» ved hver funksjon fyller inn godtgjøringen i SFS 2213 punkt 9.1 (minst 12 000 kr for kontaktlærer og for rådgiver eller sosiallærer, etter navnet på funksjonen). Beløpet kan overskrives. En funksjon kan ha bare tillegg (0 %), bare avsatt tid eller begge deler.
+  - Er samlet beskjeftigelse over 100 %, tas overtidsbetalingen med, regnet som i overtidskalkulatoren.
+- «Vis stort» viser fordelingsdiagrammet og tabellen i fullskjerm, der nettleseren støtter det (PC, Mac og nettbrett).
+- Kortene kan legges sammen og åpnes igjen med et trykk på overskriften (pil opp/ned): fagene, funksjoner, møter og lønn, resultatkortene og fordelingsdiagrammet. Et lukket kort viser en kort oppsummering, f.eks. faget, og resultatkort viser fortsatt svaret. Det huskes når du går til en annen side og tilbake.
+- Periodebeskjeftigelse med økter per uke: antall uker i perioden regnes ut fra dagene (dager ÷ 5) når feltet står tomt, og kan overskrives. En advarsel minner om at ukene kan ha ulikt antall skoledager eller ulik timeplan.
+- «Åpne i nytt vindu» ved tittelen på PC og Mac. Kalkulatoren åpnes i et eget vindu med det du har fylt ut, så flere kan være åpne samtidig.
+
+### Endret
+
+- Hovedkalkulatoren heter nå **Arbeidsplan**. Adressen, favoritter og lagrede varianter er de samme.
+- Fordeling: blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3, og timene per uke regnes med det utvidede året. En hel stilling med bare funksjon gir nå 37,5 timer per uke over 45 uker, ikke 43 timer over 39,2 uker.
+- «Hva tiden brukes til» står under diagrammet og tabellen.
+- Fordelingsdiagrammet er høyere og har større tekst, og står sammen med tabellen i et eget kort med mer luft. Tabellen viser fargen ved hver del og er fargeforklaringen, så den egne fargeforklaringen under stolpen er fjernet.
+
+### Rettet
+
+- Fordelingstabellen gikk utenfor skjermen på 320 px.
+- Bryteren «Regn ut årslønn» og andre brytere uten «?» sto med teksten midt på linjen på bred skjerm.
+
 ## [0.4.0] – 2026-09-29
 
 Programfag får årstimer, nye figurer og lagrede varianter.

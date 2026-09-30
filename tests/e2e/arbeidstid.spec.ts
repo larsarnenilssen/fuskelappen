@@ -143,6 +143,24 @@ test.describe('arbeidstid', () => {
     await expect(resultat(page)).toContainText(/72\s866,67/);
   });
 
+  test('periode med økter per uke regner ut ukene fra dagene, og ukene kan endres', async ({ page }) => {
+    await aapne(page, '/arbeidstid/periode');
+    await page.getByLabel('Dager i perioden').fill('40');
+    await velgFag(page, 'biologi 2', 'Biologi · Studiespesialisering Vg3');
+    await page.getByRole('radio', { name: 'Økter/uke' }).check();
+    await page.getByLabel('Antall økter per uke').fill('3');
+    await page.getByRole('radio', { name: '60', exact: true }).check();
+    const uker = page.getByLabel('Uker i perioden');
+    await expect(uker).toHaveAttribute('placeholder', '8');
+    await expect(page.getByText(/Tomt felt gir 8 uker: 40 dager ÷ 5 skoledager per uke/)).toBeVisible();
+    // 3 × 60 ÷ 60 × 8 = 24 timer i perioden, det samme som 24 timer skrevet inn.
+    await expect(page.locator('.merknad-advarsel', { hasText: 'Uker i perioden er regnet ut fra dagene' })).toBeVisible();
+    const medUker = await resultat(page).textContent();
+    await uker.fill('7');
+    await expect(resultat(page)).not.toHaveText(medUker ?? '');
+    await expect(page.locator('.merknad-advarsel', { hasText: 'Uker i perioden er regnet ut fra dagene' })).toHaveCount(0);
+  });
+
   test('fordelingen vises som diagram og tabell med timer per uke', async ({ page }) => {
     await aapne(page, '/arbeidstid/fordeling');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
@@ -180,6 +198,52 @@ test.describe('arbeidstid', () => {
     await expect(tabell.getByRole('row', { name: /Møtetid/ })).toContainText('114');
     await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('54,8');
     await expect(tabell.getByRole('row', { name: /Årsverk i alt/ })).toContainText('168,8');
+  });
+
+  test('arbeidsåret utvides når planfestet tid går over 37,5 timer per uke', async ({ page }) => {
+    await aapne(page, '/arbeidstid/fordeling');
+    await page.getByRole('radio', { name: 'Stillingsprosent' }).check();
+    await page.getByLabel('Reduksjon i prosent').fill('100');
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('columnheader', { name: /Per uke/ })).toBeVisible();
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('37,5');
+    await expect(page.getByText(/utvides arbeidsåret med 29(,0)? dager/)).toBeVisible();
+    await expect(page.getByText(/delt på 45(,0)? uker/)).toBeVisible();
+
+    // Forklaringen av delene står under diagrammet og tabellen.
+    const tabellBoks = await tabell.boundingBox();
+    const brukBoks = await page.getByRole('heading', { name: 'Hva tiden brukes til' }).boundingBox();
+    expect(brukBoks?.y ?? 0).toBeGreaterThan(tabellBoks?.y ?? Infinity);
+  });
+
+  test('diagrammet kan vises stort', async ({ page }, info) => {
+    test.skip(!info.project.name.startsWith('chromium'), 'Fullskjerm testes i Chromium. Safari på iPhone har ikke fullskjerm for andre elementer enn video.');
+    await aapne(page, '/arbeidstid/fordeling');
+    await page.getByRole('radio', { name: 'Stillingsprosent' }).check();
+    await page.getByLabel('Årsramme (vedlegg 1)').selectOption({ value: '525' });
+    await page.getByRole('button', { name: 'Vis stort' }).click();
+    await expect.poll(() => page.evaluate(() => document.fullscreenElement?.className ?? '')).toContain('fordeling-visning');
+    await page.getByRole('button', { name: 'Lukk stor visning' }).click();
+    await expect.poll(() => page.evaluate(() => document.fullscreenElement === null)).toBe(true);
+  });
+
+  test('kalkulatoren kan åpnes i nytt vindu med det utfylte', async ({ page }, info) => {
+    const knapp = page.getByRole('button', { name: 'Åpne Beskjeftigelse i nytt vindu' });
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    if (!info.project.name.endsWith('skrivebord')) {
+      await expect(knapp).toBeHidden();
+      return;
+    }
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('140');
+    const [vindu] = await Promise.all([page.waitForEvent('popup'), knapp.click()]);
+    await expect(vindu.locator('main h1')).toHaveText('Beskjeftigelse');
+    await expect(vindu.getByLabel('Antall årstimer')).toHaveValue('140');
+    await expect(vindu.locator('.resultatkort-verdi').first()).toContainText('26,67');
+    // Vinduene er uavhengige: en endring i det nye vinduet endrer ikke det første.
+    await vindu.getByLabel('Antall årstimer').fill('70');
+    await expect(vindu.locator('.resultatkort-verdi').first()).toContainText('13,33');
+    await expect(resultat(page)).toContainText('26,67');
   });
 
   test('fagsøket finner fagnavn fra Grep', async ({ page }) => {
@@ -258,12 +322,161 @@ test.describe('arbeidstid', () => {
     await expect(page.getByText(/1 % over hel stilling gir alltid 14 timer kalkulert tid/)).toBeVisible();
   });
 
-  test('stillingsplanen er hovedkalkulatoren i modulen', async ({ page }) => {
+  test('arbeidsplanen er hovedkalkulatoren i modulen', async ({ page }) => {
     await aapne(page, '/arbeidstid');
     const kort = page.locator('a.hovedkort');
-    await expect(kort).toContainText('Stillingsplan');
+    await expect(kort).toContainText('Arbeidsplan');
     await kort.click();
-    await expect(page.locator('main h1')).toHaveText('Stillingsplan');
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+  });
+
+  test('arbeidsplanen viser fordelingen for stillingen før noe er fylt ut', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    await expect(tabell.getByRole('row', { name: /Selvdisponert tid/ })).toContainText('537,5');
+    await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('0,0');
+    await expect(page.getByText(/Delen av stillingen som ikke er fylt med fag og funksjoner \(100 %\)/)).toBeVisible();
+    await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('50');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText('575,0');
+  });
+
+  test('arbeidsplanen har fordelingsdiagram og kan regne ut årslønn', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByLabel('Funksjon 1: Prosent').fill('20');
+    await expect(page.locator('.stillingsplan-differanse')).toHaveAttribute('data-differanse', 'balanse');
+    await expect(page.getByRole('img', { name: /Stolpediagram over årsverket på 1\s687,5 timer/ })).toBeVisible();
+    const tabell = page.locator('.fordeling-tabell');
+    await expect(tabell.getByRole('row', { name: /Undervisning/ })).toContainText('420');
+    await page.getByLabel('Møtetid per uke (timer)').fill('2');
+    await expect(tabell.getByRole('row', { name: /Møtetid/ })).toContainText('76');
+
+    // Kontaktlærer uten utvidet planfestet tid: planfestet tid blir 1150 timer som for hel undervisning.
+    const planfestet = tabell.getByRole('row', { name: /^Planfestet tid/ });
+    await expect(planfestet).toContainText(/1\s257,5/);
+    await page.getByRole('switch', { name: 'Funksjon 1: Utvider planfestet tid' }).uncheck();
+    await expect(planfestet).toContainText(/1\s150/);
+    await expect(page.getByText(/Funksjoner som ikke utvider planfestet tid \(20 %\)/)).toBeVisible();
+
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('600000');
+    await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('80');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/480\s000/);
+    await expect(lonn).toContainText(/Feriepenger i tillegg\s*57\s600/);
+    await expect(page.getByText(/Diagrammet viser undervisningen og funksjonene som er lagt inn \(100 %\)/)).toBeVisible();
+
+    // Tillegg per funksjon: beløpet fra SFS 2213 punkt 9.1 fylles inn og kan overskrives.
+    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    const tillegg1 = page.getByLabel('Tillegg per år, funksjon 1');
+    await expect(tillegg1).toHaveValue(/12\s?000/);
+    await expect(page.getByText(/minst 12\s000 kr i året for rådgiver eller sosiallærer/)).toBeVisible();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/492\s000/);
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    // Funksjon 2 har ikke tillegg før bryteren slås på.
+    await expect(page.getByLabel('Tillegg per år, funksjon 2')).toHaveCount(0);
+    await page.getByRole('switch', { name: 'Funksjon 2: Tillegg i lønnen' }).check();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/504\s000/);
+    await expect(lonn).toContainText(/Tillegg: Kontaktlærer\s*12\s000/);
+    await tillegg1.fill('15000');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/507\s000/);
+    await expect(page.getByText('Skrevet inn selv.', { exact: false })).toBeVisible();
+  });
+
+  test('kortene kan legges sammen og åpnes med overskriften, og det huskes', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('420');
+
+    // Fagkortet: feltene skjules, og overskriften viser faget.
+    const fag = page.getByRole('button', { name: /^Fag 1/ });
+    await expect(fag).toHaveAttribute('aria-expanded', 'true');
+    await fag.click();
+    await expect(fag).toHaveAttribute('aria-expanded', 'false');
+    await expect(fag).toContainText('Engelsk · Studiespesialisering Vg1');
+    await expect(page.getByLabel('Antall årstimer')).toBeHidden();
+
+    // Resultatkortet viser fortsatt svaret når det er lagt sammen.
+    const kort = page.locator('.resultatkort', { hasText: 'Samlet beskjeftigelse' });
+    await kort.getByRole('button', { name: 'Samlet beskjeftigelse', exact: true }).click();
+    await expect(kort.locator('.resultatkort-verdi')).toContainText('80');
+    await expect(kort.getByRole('button', { name: 'Vis utregning' })).toBeHidden();
+
+    // Diagramkortet viser planfestet og selvdisponert tid i overskriften.
+    const diagram = page.getByRole('button', { name: /^Fordeling av årsverket/ });
+    await diagram.click();
+    await expect(diagram).toContainText(/planfestet 1\s150 t, selvdisponert 537,5 t/);
+    await expect(page.locator('.fordeling-tabell')).toBeHidden();
+
+    // Funksjoner og møter og lønn.
+    await page.getByRole('button', { name: /^Funksjoner/ }).click();
+    await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
+    await expect(page.getByRole('button', { name: /^Funksjoner/ })).toContainText('1 lagt inn, 0 %');
+
+    // Det som er lagt sammen, huskes når brukeren går til en annen side og tilbake.
+    await aapne(page, '/arbeidstid/beskjeftigelse');
+    await page.goBack();
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+    await expect(page.getByRole('button', { name: /^Fag 1/ })).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.fordeling-tabell')).toBeHidden();
+    await page.getByRole('button', { name: /^Fag 1/ }).click();
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('420');
+  });
+
+  test('funksjoner kan ha bare tillegg, bare tid eller begge deler', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('600000');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    const tabell = page.locator('.fordeling-tabell');
+
+    // Funksjon 1: bare tillegg (0 %). Tillegget kommer i lønnen, men tiden endres ikke.
+    await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
+    await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
+    await expect(lonn).toContainText(/Tillegg: Rådgiver\s*12\s000/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('0,0');
+    await expect(tabell.getByRole('row', { name: /Annen planfestet tid/ })).toContainText(/1\s150,0/);
+    // Også når prosentfeltet står tomt.
+    await page.getByLabel('Funksjon 1: Prosent').fill('');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+
+    // Funksjon 2: bare tid (10 %), uten tillegg.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Teamleder');
+    await page.getByLabel('Funksjon 2: Prosent').fill('10');
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('168,8');
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/612\s000/);
+
+    // Funksjon 3: både tid (5 %) og tillegg.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByPlaceholder('F.eks. kontaktlærer').last().fill('Kontaktlærer');
+    await page.getByLabel('Funksjon 3: Prosent').fill('5');
+    await page.getByRole('switch', { name: 'Funksjon 3: Tillegg i lønnen' }).check();
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/624\s000/);
+    await expect(tabell.getByRole('row', { name: /Funksjoner og andre oppgaver/ })).toContainText('253,1');
+  });
+
+  test('arbeidsplanen regner ut overtidsbetaling i lønnen over 100 %', async ({ page }) => {
+    await aapne(page, '/arbeidstid/stillingsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByLabel('Funksjon 1: Prosent').fill('30');
+    await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('radio', { name: 'Egen årslønn' }).check();
+    await page.getByLabel('Årslønn i kroner').fill('700000');
+    const lonn = page.locator('.resultatkort', { hasText: 'Lønn i året' });
+    // 10 % overtid i engelsk med 700 000 kr i årslønn: 140 timer kalkulert tid × 370,37 kr × 1,5 = 77 777,78 kr,
+    // som i overtidskalkulatoren.
+    await expect(lonn).toContainText(/Overtidsbetaling\s*77\s777,78/);
+    await expect(lonn.locator('.resultatkort-verdi')).toContainText(/777\s777,78/);
+    await expect(lonn).toContainText(/Feriepenger i tillegg\s*93\s333,33/);
   });
 
   test('stillingsplan med flere fag og funksjon gir teknisk undertid (fasit 014)', async ({ page }) => {
@@ -354,17 +567,32 @@ test.describe('arbeidstid', () => {
     const liste = page.locator('.variantliste');
     await expect(liste.locator('li')).toHaveCount(1);
     await expect(liste).toContainText('26,67 %');
+    // Navnefeltet åpnes når varianten er lagret.
+    const navn = page.getByRole('textbox', { name: 'Navn på variant 1' });
+    await expect(navn).toBeFocused();
+    await navn.fill('Før endring');
+    await navn.press('Enter');
+    await expect(liste).toContainText('Før endring');
     await timer.fill('105');
     await expect(resultat(page)).toContainText('20');
     await expect(liste).toContainText('nå −6,67 %');
-    await page.getByRole('button', { name: 'Hent Variant 1' }).click();
+    await page.getByRole('button', { name: 'Hent Før endring' }).click();
     await expect(timer).toHaveValue('140');
     await expect(resultat(page)).toContainText('26,67');
-    // Variantene ligger i lagringen på enheten og er der etter ny innlasting.
+    // Navnet kan endres, og et tomt navn gir «Variant 1» igjen.
+    await page.getByRole('button', { name: 'Gi nytt navn: Før endring' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    await expect(liste).toContainText('Variant 1');
+    await page.getByRole('button', { name: 'Gi nytt navn: Variant 1' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('Uten kontaktlærer');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    // Variantene og navnene ligger i lagringen på enheten og er der etter ny innlasting.
     await page.reload();
     await venterPaaSide(page);
     await expect(page.locator('.variantliste li')).toHaveCount(1);
-    await page.getByRole('button', { name: 'Slett variant 1' }).click();
+    await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
     await expect(page.locator('.variantliste li')).toHaveCount(0);
   });
 

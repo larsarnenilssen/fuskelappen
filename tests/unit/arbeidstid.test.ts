@@ -97,6 +97,22 @@ describe('periodebeskjeftigelse', () => {
     expect(nokkel?.operander.dager_skolear?.oppslag?.niva).toBe('skole');
     expect(nokkel?.operander.dager_skolear?.verdi).toBe(188);
   });
+
+  it('regner ut ukene fra dagene i perioden når antall uker ikke er oppgitt, og varsler', () => {
+    const okter = (uker: number | null) => [
+      { arsrammer: [rad('Bio', 'Stud.spes', 'Vg3')], elever: 30, undervisning: { type: 'okter' as const, okterPerUke: 3, minutter: 60, uker } },
+    ];
+    // 40 dager ÷ 5 = 8 uker, 3 × 60 ÷ 60 × 8 = 24 timer i perioden.
+    const r = beregnPeriodebeskjeftigelse(hent, okter(null), { dagerIPerioden: 40, dagerISkolearet: null });
+    expect(r.trinn.find((t) => t.id === 'uker_i_perioden')?.resultat.verdi).toBe(8);
+    expect(r.trinn.find((t) => t.id === 'timer_i_perioden_fra_okter')?.resultat.verdi).toBe(24);
+    expect(r.advarsler).toContain('uker_fra_dager');
+    // Oppgitt antall uker brukes som før, uten varsel.
+    const oppgitt = beregnPeriodebeskjeftigelse(hent, okter(7), { dagerIPerioden: 40, dagerISkolearet: null });
+    expect(oppgitt.trinn.find((t) => t.id === 'timer_i_perioden_fra_okter')?.resultat.verdi).toBe(21);
+    expect(oppgitt.trinn.some((t) => t.id === 'uker_i_perioden')).toBe(false);
+    expect(oppgitt.advarsler).not.toContain('uker_fra_dager');
+  });
 });
 
 describe('planfestet arbeidstid', () => {
@@ -196,6 +212,70 @@ describe('fordeling', () => {
     expect(over.advarsler).toContain('funksjon_over_stilling');
     expect(over.stilling.verdi).toBe(20);
   });
+
+  it('med oppgitt stilling fordeles også den delen som ikke er fylt med fag og funksjoner', () => {
+    const del = (r: ReturnType<typeof beregnFordeling>, id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    // 100 % stilling uten fag, møter eller funksjoner: all planfestet tid er annen planfestet tid.
+    const tom = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    expect(tom.stilling.verdi).toBe(100);
+    expect(del(tom, 'annen_planfestet')).toBeCloseTo(1150);
+    expect(del(tom, 'selvdisponert')).toBeCloseTo(537.5);
+    expect(del(tom, 'undervisning')).toBe(0);
+
+    // 50 % stilling: halvparten.
+    const halv = beregnFordeling(hent, { undervisning: { type: 'fag', grupper: [], stilling: 50 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 0 });
+    expect(del(halv, 'annen_planfestet')).toBeCloseTo(575);
+    expect(del(halv, 'selvdisponert')).toBeCloseTo(268.75);
+
+    // 100 % stilling med 80 % undervisning: resten (20 %) regnes som undervisningsdelen.
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 0 }, moterPerUke: 2 });
+    expect(r.trinn.find((t) => t.id === 'ikke_fordelt')?.resultat.verdi).toBeCloseTo(20);
+    expect(del(r, 'annen_planfestet')).toBeCloseTo(1150 - 420 - 76);
+    expect(del(r, 'selvdisponert')).toBeCloseTo(537.5);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+
+    // Er fag og funksjoner mer enn stillingen, er det de som fordeles, som før.
+    const over = beregnFordeling(hent, { undervisning: { type: 'fag', grupper, stilling: 100 }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    const utenStilling = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 30 }, moterPerUke: 0 });
+    expect(over.deler).toEqual(utenStilling.deler);
+    expect(over.stilling.verdi).toBeCloseTo(110);
+  });
+
+  it('funksjoner som ikke utvider planfestet tid, fordeles som undervisningen', () => {
+    // 80 % undervisning (420 av 525) og 20 % kontaktlærer uten utvidelse: planfestet tid blir 1150 som for hel undervisning.
+    const r = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 0 }, funksjonUtenUtvidelse: 20, moterPerUke: 0 });
+    const del = (id: string) => r.deler.find((d) => d.id === id)?.timer ?? NaN;
+    expect(r.stilling.verdi).toBe(100);
+    expect(del('funksjonstid')).toBeCloseTo(230);
+    expect(del('selvdisponert')).toBeCloseTo(537.5);
+    expect(r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1150);
+    expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+
+    // Med utvidelse blir planfestet tid det samme som punkt 5.3.
+    const med = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(med.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1257.5);
+
+    // Begge deler: 10 % som utvider og 10 % som ikke utvider.
+    const blandet = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 10 }, funksjonUtenUtvidelse: 10, moterPerUke: 0 });
+    expect(blandet.deler.find((d) => d.id === 'funksjonstid')?.timer).toBeCloseTo(168.75 + 115);
+    expect(blandet.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1687.5);
+  });
+
+  it('utvider arbeidsåret når planfestet tid går over 37,5 timer per uke, som punkt 5.3', () => {
+    // Hel stilling med bare funksjon: 1687,5 timer planfestet, over grensen på 39,2 × 37,5 = 1470 timer.
+    const r = beregnFordeling(hent, { undervisning: { type: 'stilling', prosent: 100, arsramme: null }, funksjon: { type: 'prosent', prosent: 100 }, moterPerUke: 0 });
+    const p = beregnPlanfestet(hent, { type: 'prosent', prosent: 100 });
+    expect(r.utvidelseDager.verdi).toBeCloseTo(p.utvidelseDager.verdi);
+    expect(r.utvidelseDager.verdi).toBeCloseTo(29);
+    expect(r.arbeidsaarUker.verdi).toBeCloseTo(45);
+    const planfestet = r.deler.filter((d) => d.planfestet).reduce((s, d) => s + d.timer, 0);
+    expect(planfestet / r.arbeidsaarUker.verdi).toBeCloseTo(37.5);
+
+    // Innenfor grensen er arbeidsåret 39,2 uker.
+    const vanlig = beregnFordeling(hent, { undervisning: { type: 'fag', grupper }, funksjon: { type: 'prosent', prosent: 20 }, moterPerUke: 0 });
+    expect(vanlig.utvidelseDager.verdi).toBe(0);
+    expect(vanlig.arbeidsaarUker.verdi).toBeCloseTo(39.2);
+  });
 });
 
 describe('overtid', () => {
@@ -286,5 +366,41 @@ describe('årstimer fra Grep', () => {
     // Yrkesfag (eier 29.09.2026): norsk 112 og engelsk 140.
     expect(tabell.get(rad('Norsk', 'Yrkesfag', 'Vg1').rad.nr)?.arstimer).toBe(112);
     expect(tabell.get(rad('Engelsk', 'Yrkesfag', 'Vg2').rad.nr)?.arstimer).toBe(140);
+  });
+});
+
+describe('lønn i stillingen', () => {
+  it('er årslønn i hel stilling × stillingsprosent ÷ 100, fra garantilønn eller egen lønn', async () => {
+    const { beregnLonn, lesGarantilonn } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const enkel = beregnLonn(hent, { lonn: { type: 'manuell', arslonn: 600000 }, stilling: 80, tillegg: null, overtid: null, over60: false });
+    expect(enkel.arslonn.verdi).toBe(480000);
+    expect(enkel.samlet.verdi).toBe(480000);
+    expect(enkel.feriepenger.verdi).toBeCloseTo(57600);
+    const lektor = lesGarantilonn(hent).find((r) => r.id === 'lektor');
+    const r = beregnLonn(hent, { lonn: { type: 'garantilonn', stillingsgruppe: 'lektor', ansiennitet: 0 }, stilling: 50, tillegg: null, overtid: null, over60: false });
+    expect(r.arslonn.verdi).toBeCloseTo((lektor?.lonn[0] ?? NaN) / 2);
+    expect(r.trinn[0]?.operander.arslonn?.opprinnelse).toBe('tabell');
+  });
+
+  it('legger til tillegg og overtidsbetaling, og regner feriepenger av det som utbetales', async () => {
+    const { beregnLonn, beregnOvertid } = await import('../../src/modules/arbeidstid/beregning/index.ts');
+    const lonn = { type: 'manuell' as const, arslonn: 700000 };
+    const overtid = { beskjeftigelse: 110, arsrammer: [rad('Engelsk', 'Stud.spes', 'Vg1')], elever: 30 };
+    const r = beregnLonn(hent, { lonn, stilling: 100, tillegg: 12000, overtid, over60: false });
+    const o = beregnOvertid(hent, { ...overtid, lonn, over60: false });
+    expect(r.overtid?.verdi).toBeCloseTo(o.betaling.verdi);
+    expect(r.samlet.verdi).toBeCloseTo(700000 + 12000 + o.betaling.verdi);
+    expect(r.feriepenger.verdi).toBeCloseTo(r.samlet.verdi * 0.12);
+    expect(r.trinn.filter((t) => t.id === 'feriepenger')).toHaveLength(1);
+    // Over 60 år gir høyere sats.
+    const eldre = beregnLonn(hent, { lonn, stilling: 100, tillegg: 12000, overtid: null, over60: true });
+    expect(eldre.feriepenger.verdi / eldre.samlet.verdi).toBeCloseTo(0.143, 3);
+    // Ingen overtid når beskjeftigelsen ikke er over 100 %.
+    expect(beregnLonn(hent, { lonn, stilling: 100, tillegg: null, overtid: { ...overtid, beskjeftigelse: 95 }, over60: false }).overtid).toBeNull();
+  });
+
+  it('godtgjøringen for kontaktlærer og rådgiver står i regelverket (SFS 2213 punkt 9.1)', () => {
+    expect(hent('sfs2213.godtgjoring_kontaktlaerer').verdi).toBe(12000);
+    expect(hent('sfs2213.godtgjoring_radgiver').verdi).toBe(12000);
   });
 });

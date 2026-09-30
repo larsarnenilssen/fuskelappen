@@ -2,10 +2,10 @@
 # Tallene i beregningene står i rules/. Her står metoden med ord, slik at den kan kontrolleres og rettes uten kodeendring.
 - id: metode-stillingsplan
   type: forklaring
-  tittel: { nb: Slik regnes stillingsplanen ut, nn: Slik blir stillingsplanen rekna ut }
+  tittel: { nb: Slik regnes arbeidsplanen ut, nn: Slik blir arbeidsplanen rekna ut }
   tekst:
     nb: |
-      Stillingsplanen sammenligner det læreren skal gjøre, med stillingen læreren er ansatt i:
+      Arbeidsplanen sammenligner det læreren skal gjøre, med stillingen læreren er ansatt i:
 
       1. **Undervisning** = summen av beskjeftigelsen i hvert fag, årstimer ÷ årsramme × 100 (se beskjeftigelse).
       2. **Samlet beskjeftigelse** = undervisning + funksjoner. Funksjoner, som kontaktlærer, oppgis i prosent av full stilling.
@@ -13,8 +13,17 @@
       4. Differansen kan regnes om til **årsrammetimer** i et fag: differanse × årsramme ÷ 100. Da ser du hvor mange timer undervisning i faget som mangler eller er for mye.
 
       Er samlet beskjeftigelse over 100 %, kan du regne ut overtidsbetalingen med kalkulatoren for overtid. Mellomregningene avrundes ikke. Svaret vises med to desimaler.
+
+      **Fordelingen av arbeidstiden** regnes ut som i kalkulatoren for fordeling, med fagene og summen av funksjonene, og vises også før noe er fylt ut. Den delen av stillingen som ikke er fylt med fag og funksjoner, regnes som undervisningsdelen: 1150 × prosent planfestet tid (vist som annen planfestet tid) og 537,5 × prosent tid læreren disponerer selv. En hel stilling uten fag og funksjoner gir 1150 timer annen planfestet tid og 537,5 timer tid læreren disponerer selv. Er fag og funksjoner mer enn stillingen, fordeles det som er lagt inn. For hver funksjon velger du om den utvider planfestet tid. Funksjoner som utvider, gir funksjonstid = 1687,5 × prosent, all planfestet (punkt 5.3). Funksjoner som ikke utvider, fordeles som undervisningen: 1150 × prosent planfestet tid og 537,5 × prosent tid læreren disponerer selv.
+
+      **Lønn i året** = årslønn i stillingen + tillegg + overtidsbetaling.
+
+      - **Årslønn i stillingen** = årslønn i hel stilling × stillingsprosent ÷ 100. Årslønnen i hel stilling er garantilønnen for stillingsgruppe og ansiennitet i hovedtariffavtalen, eller lønnen du skriver inn.
+      - **Tillegg** velges ved hver funksjon. Feltet fylles inn med minstegodtgjøringen i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærer og 12 000 kr for rådgiver eller sosiallærer, etter navnet på funksjonen. Kjennes navnet ikke igjen, brukes beløpet for kontaktlærer. En funksjon kan ha bare tillegg (0 %), og da endrer den ikke fordelingen av tiden. Godtgjøring for andre funksjoner fastsettes lokalt, og du kan skrive inn et annet beløp.
+      - **Overtidsbetaling** regnes som i kalkulatoren for overtid når samlet beskjeftigelse er over 100 %, med årsrammen i faget som er valgt for årsrammetimer.
+      - **Feriepenger** regnes som vanlig i prosent av det som utbetales: 12 %, eller 14,3 % for arbeidstakere over 60 år (hovedtariffavtalen § 7.4.2). De kommer i tillegg og er ikke med i lønn i året.
     nn: |
-      Stillingsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
+      Arbeidsplanen samanliknar det læraren skal gjere, med stillinga læraren er tilsett i:
 
       1. **Undervisning** = summen av sysselsetjinga i kvart fag, årstimar ÷ årsramme × 100 (sjå sysselsetjing).
       2. **Samla sysselsetjing** = undervisning + funksjonar. Funksjonar, som kontaktlærar, blir oppgitt i prosent av full stilling.
@@ -22,11 +31,23 @@
       4. Differansen kan reknast om til **årsrammetimar** i eit fag: differanse × årsramme ÷ 100. Då ser du kor mange timar undervisning i faget som manglar eller er for mykje.
 
       Er samla sysselsetjing over 100 %, kan du rekne ut overtidsbetalinga med kalkulatoren for overtid. Mellomrekningane blir ikkje avrunda. Svaret blir vist med to desimalar.
+
+      **Fordelinga av arbeidstida** blir rekna ut som i kalkulatoren for fordeling, med faga og summen av funksjonane, og blir vist også før noko er fylt ut. Den delen av stillinga som ikkje er fylt med fag og funksjonar, blir rekna som undervisningsdelen: 1150 × prosent planfesta tid (vist som anna planfesta tid) og 537,5 × prosent tid læraren disponerer sjølv. Ei heil stilling utan fag og funksjonar gir 1150 timar anna planfesta tid og 537,5 timar tid læraren disponerer sjølv. Er fag og funksjonar meir enn stillinga, blir det som er lagt inn, fordelt. For kvar funksjon vel du om han utvidar planfesta tid. Funksjonar som utvidar, gir funksjonstid = 1687,5 × prosent, all planfesta (punkt 5.3). Funksjonar som ikkje utvidar, blir fordelte som undervisninga: 1150 × prosent planfesta tid og 537,5 × prosent tid læraren disponerer sjølv.
+
+      **Løn i året** = årsløn i stillinga + tillegg + overtidsbetaling.
+
+      - **Årsløn i stillinga** = årsløn i heil stilling × stillingsprosent ÷ 100. Årsløna i heil stilling er garantiløna for stillingsgruppe og ansiennitet i hovudtariffavtalen, eller løna du skriv inn.
+      - **Tillegg** blir valt ved kvar funksjon. Feltet blir fylt inn med minstegodtgjeringa i SFS 2213 punkt 9.1: 12 000 kr i året for kontaktlærar og 12 000 kr for rådgivar eller sosiallærar, etter namnet på funksjonen. Blir namnet ikkje kjent att, blir beløpet for kontaktlærar brukt. Ein funksjon kan ha berre tillegg (0 %), og då endrar han ikkje fordelinga av tida. Godtgjering for andre funksjonar blir fastsett lokalt, og du kan skrive inn eit anna beløp.
+      - **Overtidsbetaling** blir rekna som i kalkulatoren for overtid når samla sysselsetjing er over 100 %, med årsramma i faget som er valt for årsrammetimar.
+      - **Feriepengar** blir rekna som vanleg i prosent av det som blir utbetalt: 12 %, eller 14,3 % for arbeidstakarar over 60 år (hovudtariffavtalen § 7.4.2). Dei kjem i tillegg og er ikkje med i løn i året.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
     - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+    - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 4 punkt 4.1 }
+    - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 7.4.2 }
   kontrollert: null
-  stikkord: [stillingsplan, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
+  stikkord: [arbeidsplan, stillingsplan, årslønn, teknisk undertid, teknisk overtid, funksjon, kontaktlærer]
 
 - id: metode-beskjeftigelse
   type: forklaring
@@ -69,6 +90,8 @@
       2. **Perioderamme** = årsramme × periodenøkkel.
       3. **Beskjeftigelse i perioden** = timene læreren underviser i perioden ÷ perioderammen × 100.
 
+      Skriver du inn økter per uke, trengs antall uker i perioden. Står feltet tomt, regnes ukene ut fra dagene i perioden: dager ÷ 5 skoledager per uke. Ukene kan ha ulikt antall skoledager (fridager, ferier) eller ulik timeplan, så skriv inn antall uker eller timene i perioden om det avviker.
+
       Uten eget antall bruker kalkulatoren 190 undervisningsdager i skoleåret. Samme metode brukes i Visma InSchool.
     nn: |
       Årsrammene gjeld for eit heilt skuleår. Underviser læraren berre i ein del av året, må årsramma gjerast om til ei ramme for perioden:
@@ -76,6 +99,8 @@
       1. **Periodenøkkel** = undervisningsdagar i perioden ÷ undervisningsdagar i skuleåret. Dagane blir talde etter skuleruta.
       2. **Perioderamme** = årsramme × periodenøkkel.
       3. **Sysselsetjing i perioden** = timane læraren underviser i perioden ÷ perioderamma × 100.
+
+      Skriv du inn økter per veke, trengst talet på veker i perioden. Står feltet tomt, blir vekene rekna ut frå dagane i perioden: dagar ÷ 5 skuledagar per veke. Vekene kan ha ulikt tal på skuledagar (fridagar, feriar) eller ulik timeplan, så skriv inn talet på veker eller timane i perioden om det avvik.
 
       Utan eige tal bruker kalkulatoren 190 undervisningsdagar i skuleåret. Same metode blir brukt i Visma InSchool.
   kilder:
@@ -196,7 +221,9 @@
       - **Funksjoner og andre oppgaver** er 1687,5 × F. Denne tiden er planfestet. Får ikke møtetiden plass i den planfestede tiden for undervisningsdelen, for eksempel når stillingen bare er funksjon, legges resten av møtetiden i funksjonstiden.
       - **Tid læreren disponerer selv** er 537,5 × B.
 
-      For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon, ikke en arbeidsplan. Hvordan tiden fordeles, avtales på skolen.
+      For en hel stilling gir dette samme planfestede tid som punkt 5.3. For stillinger under 100 % er tiden regnet forholdsmessig. Det er en forenkling som må kontrolleres. Diagrammet er en illustrasjon. Hvordan tiden fordeles, avtales på skolen.
+
+      **Timer per uke** er timene delt på uker i arbeidsåret (196 dager ÷ 5 = 39,2 uker). Blir planfestet tid mer enn 37,5 timer per uke i snitt, utvides arbeidsåret som i punkt 5.3: timene over grensen ÷ 7,5 gir dagene arbeidsåret utvides med, og timene per uke regnes med det utvidede arbeidsåret. En hel stilling med bare funksjoner gir 1687,5 timer planfestet tid, 29 dager utvidelse og 45 uker med 37,5 timer.
     nn: |
       Diagrammet viser årsverket i ei tenkt stilling. Stillinga er sysselsetjinga i faga (B) og funksjonar og andre oppgåver (F), til saman B + F prosent av 1687,5 timar.
 
@@ -206,7 +233,9 @@
       - **Funksjonar og andre oppgåver** er 1687,5 × F. Denne tida er planfesta. Får ikkje møtetida plass i den planfesta tida for undervisningsdelen, til dømes når stillinga berre er funksjon, blir resten av møtetida lagd i funksjonstida.
       - **Tid læraren disponerer sjølv** er 537,5 × B.
 
-      For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon, ikkje ein arbeidsplan. Korleis tida blir fordelt, blir avtalt på skulen.
+      For ei heil stilling gir dette same planfesta tid som punkt 5.3. For stillingar under 100 % er tida rekna forholdsmessig. Det er ei forenkling som må kontrollerast. Diagrammet er ein illustrasjon. Korleis tida blir fordelt, blir avtalt på skulen.
+
+      **Timar per veke** er timane delte på veker i arbeidsåret (196 dagar ÷ 5 = 39,2 veker). Blir planfesta tid meir enn 37,5 timar per veke i snitt, blir arbeidsåret utvida som i punkt 5.3: timane over grensa ÷ 7,5 gir dagane arbeidsåret blir utvida med, og timane per veke blir rekna med det utvida arbeidsåret. Ei heil stilling med berre funksjonar gir 1687,5 timar planfesta tid, 29 dagar utviding og 45 veker med 37,5 timar.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }

@@ -89,6 +89,18 @@ verdier:
     kilde: { id: ks-sfs2213-avtaletekst, punkt: 7.3 b }
     kontrollert: null
     merknad: Minste reduksjon for kontaktlærertjeneste i videregående opplæring (38 i 45-minutters enheter).
+  godtgjoring_kontaktlaerer:
+    verdi: 12000
+    enhet: kroner per år
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
+    kontrollert: null
+    merknad: Minste godtgjøring for kontaktlærertjeneste. Kommer i tillegg til lønnen.
+  godtgjoring_radgiver:
+    verdi: 12000
+    enhet: kroner per år
+    kilde: { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
+    kontrollert: null
+    merknad: Minste godtgjøring for rådgiver- og sosiallærertjeneste. Kommer i tillegg til lønnen.
   skolear_uker:
     verdi: 38
     enhet: uker
