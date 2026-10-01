@@ -10,7 +10,7 @@ import { formaterDato, formaterTall, type Malform } from '../../../core/i18n/tek
 import type { SideProps } from '../../typer.ts';
 import { type Fagroller, lastFagindeks, lastFagrelasjoner, lastFagroller } from '../data.ts';
 import { etterLaereplan, type Fagklasse, fagklasser, gruppeRekkefolge, SKJULTE } from '../klasser.ts';
-import { type Fagfilter, type Fagtreff, filterFraAdresse, filterTilAdresse, filtervalg, sokFag, tomtFilter, visteKlasser } from '../oppslag.ts';
+import { type Fagfilter, type Fagtreff, filterFraAdresse, filterTilAdresse, filtervalg, sokFag, tilbudForLikeNavn, tomtFilter, visteKlasser } from '../oppslag.ts';
 import type { Fag, Fagindeks, Fagtype } from '../skjema.ts';
 import { programgruppe } from '../tilbud/modell.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
@@ -70,20 +70,24 @@ function Valgfelt({ etikett, verdi, valg, onEndring }: { etikett: string; verdi:
   );
 }
 
-/** Linjen under fagnavnet i listen: «NOR1260 · Fellesfag · Vg1 · 113 årstimer». */
-export function fagUndertekst(t: T, kode: string, fag: Fag): string {
-  return [kode, fagtypeTekst(t, fag.type), fag.trinn.map((x) => trinnTekst(t, x)).join(', '), fag.timer !== null ? t('fag.arstimerKort', { timer: formaterTall(fag.timer) }) : null]
+/**
+ * Linjen under fagnavnet i listen: «NOR1260 · Fellesfag · Vg1 · 113 årstimer». Har flere fag samme navn, står
+ * tilbudet etter koden: «HEA2005 · Helsearbeiderfag · Felles programfag · Vg2 · 197 årstimer».
+ */
+export function fagUndertekst(t: T, kode: string, fag: Fag, tilbud: readonly string[] = []): string {
+  const tilbudTekst = tilbud.length === 0 ? null : tilbud.length <= 2 ? tilbud.join(', ') : t('fag.flereTilbud', { tilbud: tilbud[0] ?? '', antall: tilbud.length - 1 });
+  return [kode, tilbudTekst, fagtypeTekst(t, fag.type), fag.trinn.map((x) => trinnTekst(t, x)).join(', '), fag.timer !== null ? t('fag.arstimerKort', { timer: formaterTall(fag.timer) }) : null]
     .filter((x) => x)
     .join(' · ');
 }
 
-function Faglenke({ kode, fag }: Fagtreff) {
+function Faglenke({ kode, fag, tilbud }: Fagtreff & { tilbud?: readonly string[] }) {
   const { t, malform } = useTekst();
   return (
     <a class="listelenke" href={`#/fag/${kode}`}>
       <span class="listelenke-tekst">
         <span class="listelenke-tittel">{fag.navn[malform]}</span>
-        <span class="listelenke-under">{fagUndertekst(t, kode, fag)}</span>
+        <span class="listelenke-under">{fagUndertekst(t, kode, fag, tilbud)}</span>
       </span>
       <Ikon navn="hoyre" class="ikon-liten" />
     </a>
@@ -91,7 +95,7 @@ function Faglenke({ kode, fag }: Fagtreff) {
 }
 
 /** Fagene i en liste, 50 om gangen. */
-function Fagliste({ treff }: { treff: readonly Fagtreff[] }) {
+function Fagliste({ treff }: { treff: readonly (Fagtreff & { tilbud?: readonly string[] })[] }) {
   const { t } = useTekst();
   const [antall, settAntall] = useState(PER_SIDE);
   return (
@@ -136,7 +140,7 @@ function Gruppe({ tittel, aapen: start, nivaa, children }: { tittel: string; aap
 const STOR_GRUPPE = 12;
 
 /** Treffene gruppert etter fagtype, og store grupper etter læreplan (lukket til brukeren åpner dem). */
-function Grupper({ treff, program, titler }: { treff: readonly Fagtreff[]; program: string; titler: Readonly<Record<string, string>> }) {
+function Grupper({ treff, program, titler }: { treff: readonly (Fagtreff & { tilbud?: readonly string[] })[]; program: string; titler: Readonly<Record<string, string>> }) {
   const { t, malform } = useTekst();
   const rekkefolge = gruppeRekkefolge(program !== '' && programgruppe(program) === 'yrkesfaglig');
   const grupper = rekkefolge.map((type) => ({ type, treff: treff.filter((x) => x.fag.type === type) })).filter((g) => g.treff.length > 0);
@@ -171,33 +175,47 @@ function Grupper({ treff, program, titler }: { treff: readonly Fagtreff[]; progr
   );
 }
 
-/** Valgene for å vise varianter, opplæring i bedrift og andre fagkoder i tillegg til de vanlige fagene. */
-function VisOgsaa({ filter, skjult, sett }: { filter: Fagfilter; skjult: Record<Exclude<Fagklasse, 'vanlig'>, number>; sett: (f: Partial<Fagfilter>) => void }) {
+/**
+ * «Vis også»: hvilke grupper av fag søket viser. Lukket til brukeren åpner den. De vanlige fagene kan også tas bort,
+ * så søket bare viser f.eks. variantene (eier 01.10.2026).
+ */
+function VisOgsaa({ filter, antall, skjult, sett }: { filter: Fagfilter; antall: Record<Fagklasse, number>; skjult: Record<Fagklasse, number>; sett: (f: Partial<Fagfilter>) => void }) {
   const { t } = useTekst();
+  const [aapen, settAapen] = useState(false);
+  const id = useId();
   const vis = visteKlasser(filter);
-  const aktuelle = SKJULTE.filter((k) => vis.has(k) || skjult[k] > 0);
-  if (aktuelle.length === 0) return null;
+  const klasser: Fagklasse[] = ['vanlig', ...SKJULTE.filter((k) => vis.has(k) || antall[k] > 0)];
+  if (klasser.length === 1 && vis.has('vanlig')) return null;
   const veksle = (k: Fagklasse) => {
+    if (k === 'vanlig') return sett({ vanlige: vis.has('vanlig') ? 'nei' : '' });
     const ny = new Set(vis);
     if (ny.has(k)) ny.delete(k);
     else ny.add(k);
     sett({ vis: SKJULTE.filter((x) => ny.has(x)).join(',') });
   };
-  const antallSkjult = SKJULTE.reduce((s, k) => s + skjult[k], 0);
+  const antallSkjult = SKJULTE.reduce((sum, k) => sum + skjult[k], 0) + skjult.vanlig;
   return (
-    <fieldset class="vis-ogsaa">
-      <legend>{t('fag.visOgsaa')}</legend>
-      {antallSkjult > 0 && <p class="dempet liten">{t('fag.skjulte', { antall: formaterTall(antallSkjult) })}</p>}
-      {aktuelle.map((k) => (
-        <label key={k} class="avkrysning">
-          <input type="checkbox" checked={vis.has(k)} onChange={() => veksle(k)} data-klasse={k} />
-          <span>
-            {t(`fag.klasse.${k}`, { antall: formaterTall(skjult[k]) })}
-            <span class="dempet liten blokk">{t(`fag.klasseHjelp.${k}`)}</span>
-          </span>
-        </label>
-      ))}
-    </fieldset>
+    <div class="vis-ogsaa">
+      <button type="button" class="kortknapp vis-ogsaa-knapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
+        <span class="kortknapp-tekst">
+          <strong>{t('fag.visOgsaa')}</strong>
+          {antallSkjult > 0 && <span class="dempet liten blokk">{t('fag.skjulte', { antall: formaterTall(antallSkjult) })}</span>}
+        </span>
+        <Ikon navn={aapen ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
+      </button>
+      <fieldset id={id} hidden={!aapen}>
+        <legend class="skjult-visuelt">{t('fag.visOgsaa')}</legend>
+        {klasser.map((k) => (
+          <label key={k} class="avkrysning">
+            <input type="checkbox" checked={vis.has(k)} onChange={() => veksle(k)} data-klasse={k} />
+            <span>
+              {t(`fag.klasse.${k}`, { antall: formaterTall(antall[k]) })}
+              <span class="dempet liten blokk">{t(`fag.klasseHjelp.${k}`)}</span>
+            </span>
+          </label>
+        ))}
+      </fieldset>
+    </div>
   );
 }
 
@@ -223,7 +241,7 @@ export default function Liste({ sporring }: SideProps) {
   const [roller, settRoller] = useState<Fagroller | null>(null);
   const [feil, settFeil] = useState(false);
   const [filter, settFilter] = useState<Fagfilter>(() => filterFraAdresse(sporring));
-  const antallAktive = Object.entries(filter).filter(([k, v]) => k !== 'tekst' && k !== 'vis' && v !== '').length;
+  const antallAktive = Object.entries(filter).filter(([k, v]) => k !== 'tekst' && k !== 'vis' && k !== 'vanlige' && v !== '').length;
   const [visFilter, settVisFilter] = useState(antallAktive > 0);
   // Ny nøkkel for listen når filteret endres, så «vis flere» og åpne grupper begynner på nytt.
   const [utgave, settUtgave] = useState(0);
@@ -253,8 +271,15 @@ export default function Liste({ sporring }: SideProps) {
   };
 
   const klasser = useMemo(() => (indeks && roller ? fagklasser(indeks, roller.roller) : undefined), [indeks, roller]);
-  const { treff, skjult } = useMemo(() => (indeks ? sokFag(indeks, filter, klasser) : { treff: [], skjult: { variant: 0, bedrift: 0, andre: 0 } }), [indeks, filter, klasser]);
+  const tomt = { vanlig: 0, variant: 0, bedrift: 0, andre: 0 };
+  const { treff, skjult, antall } = useMemo(() => (indeks ? sokFag(indeks, filter, klasser) : { treff: [], skjult: tomt, antall: tomt }), [indeks, filter, klasser]);
   const gruppert = filter.tekst.trim() === '' && treff.length > 0;
+  // Fag med samme navn får tilbudet i linjen under navnet.
+  const visteTreff = useMemo(() => {
+    if (!indeks) return treff;
+    const tilbud = tilbudForLikeNavn(treff, indeks, malform);
+    return treff.map((x) => ({ ...x, tilbud: tilbud.get(x.kode) }));
+  }, [treff, indeks, malform]);
 
   return (
     <div class="side">
@@ -279,7 +304,7 @@ export default function Liste({ sporring }: SideProps) {
               {antallAktive > 0 ? t('fag.filterAktive', { antall: antallAktive }) : t('fag.filter')}
             </button>
             {antallAktive > 0 && (
-              <button type="button" class="lenkeknapp liten" onClick={() => sett({ ...tomtFilter, tekst: filter.tekst, vis: filter.vis })}>
+              <button type="button" class="lenkeknapp liten" onClick={() => sett({ ...tomtFilter, tekst: filter.tekst, vis: filter.vis, vanlige: filter.vanlige })}>
                 {t('fag.nullstill')}
               </button>
             )}
@@ -289,10 +314,10 @@ export default function Liste({ sporring }: SideProps) {
           </div>
           <Erstatning sok={filter.tekst} indeks={indeks} malform={malform} t={t} />
           <p role="status" class="dempet liten">
-            {treff.length === 0 ? (skjult.variant + skjult.bedrift + skjult.andre > 0 ? t('fag.ingenVanlige') : t('fag.ingenTreff')) : treff.length === 1 ? t('fag.ettFag') : t('fag.antall', { antall: formaterTall(treff.length) })}
+            {treff.length === 0 ? (visteKlasser(filter).size === 0 ? t('fag.ingenValgt') : skjult.variant + skjult.bedrift + skjult.andre + skjult.vanlig > 0 ? (visteKlasser(filter).has('vanlig') ? t('fag.ingenVanlige') : t('fag.ingenIValgte')) : t('fag.ingenTreff')) : treff.length === 1 ? t('fag.ettFag') : t('fag.antall', { antall: formaterTall(treff.length) })}
           </p>
-          {klasser && <VisOgsaa filter={filter} skjult={skjult} sett={sett} />}
-          {gruppert ? <Grupper key={utgave} treff={treff} program={filter.program} titler={roller?.laereplaner ?? {}} /> : treff.length > 0 && <Fagliste key={utgave} treff={treff} />}
+          {klasser && <VisOgsaa filter={filter} antall={antall} skjult={skjult} sett={sett} />}
+          {gruppert ? <Grupper key={utgave} treff={visteTreff} program={filter.program} titler={roller?.laereplaner ?? {}} /> : visteTreff.length > 0 && <Fagliste key={utgave} treff={visteTreff} />}
           <p class="dempet liten">{t('fag.hentet', { dato: formaterDato(indeks.hentet, malform) })}</p>
         </>
       )}

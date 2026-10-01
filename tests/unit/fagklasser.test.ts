@@ -86,3 +86,20 @@ describe('programmene på fagarket', () => {
     expect(programSammendrag(indeks, ['HS', 'ST'])).toEqual({ alleYrkesfaglige: false, alleStudieforberedende: false, andre: ['HS', 'ST'] });
   });
 });
+
+describe('rettinger i fagsøket (eier 01.10.2026)', () => {
+  it('kan vise bare variantene, uten de vanlige fagene', () => {
+    const { treff, antall } = sok({ program: 'HS', vis: 'variant', vanlige: 'nei' });
+    expect(treff.length).toBe(antall.variant);
+    expect(treff.every((t) => klasser.get(t.kode) === 'variant')).toBe(true);
+  });
+
+  it('viser tilbudet for fag med samme navn', async () => {
+    const { tilbudForLikeNavn } = await import('../../src/modules/fag/oppslag.ts');
+    const treff = sok({ tekst: 'helsefremmende arbeid' }).treff;
+    const tilbud = tilbudForLikeNavn(treff, indeks, 'nb');
+    expect(tilbud.get('HEA2005')).toEqual(['Helsearbeiderfag']);
+    expect(tilbud.get('HUD3009')).toEqual(['Hudterapi']);
+    expect(tilbudForLikeNavn(sok({ tekst: 'HEA2005' }).treff, indeks, 'nb').size).toBe(0);
+  });
+});

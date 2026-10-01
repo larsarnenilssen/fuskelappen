@@ -13,6 +13,8 @@ test.describe('fag og læreplaner', () => {
     await expect(page).toHaveURL(/program=HS/);
     // Faget har samme navn i to programområder på Vg2. Fagkoden skiller dem.
     await expect(page.getByRole('status')).toHaveText('2 fag');
+    // Fag med samme navn viser tilbudet etter fagkoden.
+    await expect(page.getByRole('link', { name: /HEA2005/ })).toContainText('HEA2005 · Helsearbeiderfag');
     await page.getByRole('link', { name: /HEA2005/ }).click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Helsefremmende arbeid');
 
@@ -31,10 +33,20 @@ test.describe('fag og læreplaner', () => {
     await expect(grupper.first()).toContainText('Yrkesfaglig fordypning');
     await expect(page.getByRole('button', { name: /^Felles programfag \(\d+\)/ })).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByText(/Kvensk/)).toHaveCount(0);
+    // «Vis også» er lukket til brukeren åpner den.
+    const visOgsaa = page.getByRole('button', { name: /Vis også/ });
+    await expect(visOgsaa).toHaveAttribute('aria-expanded', 'false');
+    await expect(visOgsaa).toContainText(/\d+ skjulte fag passer søket/);
+    await visOgsaa.click();
     const varianter = page.getByRole('checkbox', { name: /Varianter for særskilte grupper/ });
     await expect(varianter).not.toBeChecked();
     await varianter.check();
     await expect(page).toHaveURL(/vis=variant/);
+    await expect(page.getByText(/Kvensk/).first()).toBeVisible();
+    // Uten de vanlige fagene står bare variantene igjen.
+    await page.getByRole('checkbox', { name: /Vanlige fag/ }).uncheck();
+    await expect(page).toHaveURL(/vanlige=nei/);
+    await expect(page.getByRole('button', { name: /^Yrkesfaglig fordypning/ })).toHaveCount(0);
     await expect(page.getByText(/Kvensk/).first()).toBeVisible();
 
     // Et søk på en hel fagkode viser faget, også når det er skjult.

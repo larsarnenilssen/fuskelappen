@@ -202,7 +202,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Utdanningsprogram (`utdanningsprogram`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Utdanningsprogram (`utdanningsprogram`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur, Vedlegg 1, 3.5 Studieforberedende tilbud innenfor yrkesfaglige utdanningsprogram | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Programområde (`programomrade`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg1, vg2 og vg3 (`trinn-vg`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur, Vedlegg 1, 3.4 og 3.4.3 Særløp | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Fellesfag (`fellesfag`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag), Vedlegg 1, 3.4.1 Fellesfag | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
@@ -581,9 +581,9 @@ Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapslø
 
 **Utdanningsprogram** (`utdanningsprogram`, begrep, ikke kontrollert)
 
-- Grep har påbygging til generell studiekompetanse som eget utdanningsprogram (PB), mens rundskrivet regner det som et tilbud innenfor yrkesfag (3.5). Bør begrepet nevne dette?
+- Påbygging regnes som et tilbud innenfor yrkesfag (eier 01.10.2026). Er setningen om dette riktig formulert?
 
-Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/): Vedlegg 1, 3.5 Studieforberedende tilbud innenfor yrkesfaglige utdanningsprogram
 
 **Vg1, vg2 og vg3** (`trinn-vg`, begrep, ikke kontrollert)
 
@@ -619,7 +619,7 @@ Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapslø
 
 **Kryssløp** (`krysslop`, begrep, ikke kontrollert)
 
-- Rundskrivet sier at elever fra vg1 studiespesialisering til «alle andre vg2 yrkesfag» skal ha yrkesfaglig opphenting. Er «som hovedregel» riktig, og hvilke vg2 er unntatt?
+- Teksten er skrevet om etter eiers svar 01.10.2026: kryssløp krever ikke yrkesfaglig opphenting, som er for elever som bytter fra vg1 studiespesialisering til et vg2 som ikke er et kryssløp. Er den nå riktig?
 
 Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger
 

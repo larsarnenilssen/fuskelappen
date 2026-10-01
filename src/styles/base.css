@@ -2189,9 +2189,15 @@ p.fagkort-tittel {
   background: var(--farge-flate);
 }
 
-.vis-ogsaa legend {
-  padding: 0 var(--rom-1);
-  font-weight: 600;
+.vis-ogsaa-knapp {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.vis-ogsaa fieldset {
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  border: 0;
 }
 
 .avkrysning {
