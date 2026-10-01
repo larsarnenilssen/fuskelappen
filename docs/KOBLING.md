@@ -25,7 +25,7 @@ Tabellen skal bekreftes av eier.
 
 | Vedlegg 1 | Utdanningsprogram | Kode i Grep |
 |---|---|---|
-| Stud.spes | Studiespesialisering (og KD og ME for fellesfag) | ST, KD, ME |
+| Stud.spes | Studiespesialisering | ST, KD, ME |
 | MDD | Musikk, dans og drama | MD |
 | Idrett | Idrettsfag | ID |
 | Kunst, design og arkitektur | Kunst, design og arkitektur | KD |
@@ -44,8 +44,8 @@ Tabellen skal bekreftes av eier.
 | Frisør, blomster, interiør og eksponeringsdesign | Frisør, blomster, interiør og eksponeringsdesign | FD |
 | Salg, service, reiseliv | Salg, service og reiseliv | SR |
 | Informasjonsteknologi og medieproduksjon | Informasjonsteknologi og medieproduksjon | IM |
-| Design og hå | Design og håndverk (utgått, nå DT og FD) | DT, FD |
-| Serv/samf | Service og samferdsel (utgått, nå SR og IM) | SR, IM |
+| Design og hå | Design og håndverk (utgått) | DT, FD |
+| Serv/samf | Service og samferdsel (utgått) | SR, IM |
 
 ## Utvalg til kontroll
 

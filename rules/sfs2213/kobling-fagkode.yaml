@@ -31,7 +31,7 @@ verdier:
       for «Stud.spes», og at de utgåtte radene «Design og hå» og «Serv/samf» gjelder programmene som har tatt over
       (DT og FD, SR og IM). Tabellen er derfor endret og må godkjennes på nytt.
     verdi:
-      - { vedlegg: "Stud.spes", navn: "Studiespesialisering (og KD og ME for fellesfag)", grep: [ST, KD, ME] }
+      - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST, KD, ME] }
       - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }
       - { vedlegg: "Idrett", navn: "Idrettsfag", grep: [ID] }
       - { vedlegg: "Kunst, design og arkitektur", navn: "Kunst, design og arkitektur", grep: [KD] }
@@ -50,8 +50,8 @@ verdier:
       - { vedlegg: "Frisør, blomster, interiør og eksponeringsdesign", navn: "Frisør, blomster, interiør og eksponeringsdesign", grep: [FD] }
       - { vedlegg: "Salg, service, reiseliv", navn: "Salg, service og reiseliv", grep: [SR] }
       - { vedlegg: "Informasjonsteknologi og medieproduksjon", navn: "Informasjonsteknologi og medieproduksjon", grep: [IM] }
-      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått, nå DT og FD)", grep: [DT, FD] }
-      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått, nå SR og IM)", grep: [SR, IM] }
+      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [DT, FD] }
+      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [SR, IM] }
   kobling_fellesfag:
     kilde: { id: udir-grep }
     kontrollert: null
