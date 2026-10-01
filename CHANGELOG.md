@@ -12,6 +12,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - «Vis også» er lukket til du åpner den, og viser hvor mange skjulte fag som passer søket.
   - Du kan ta bort «Vanlige fag», så søket bare viser f.eks. variantene.
   - Har flere fag samme navn, står tilbudet etter fagkoden, f.eks. «HEA2005 · Helsearbeiderfag».
+- **Begreper:** «Utdanningsprogram» sier at påbygging er et tilbud innenfor yrkesfag. «Kryssløp» er skrevet om: kryssløp krever ikke yrkesfaglig opphenting, som er for elever som bytter fra vg1 studiespesialisering til et vg2 som ikke er et kryssløp (eiers svar på kontrollspørsmålene).
 
 ## [0.14.0] – 2026-10-01
 
