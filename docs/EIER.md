@@ -240,7 +240,7 @@ Fase 2 har tre deler: fag og læreplaner fra Grep, koblingen fra fagkode til år
   - «Yrkesfaglig opphenting» (YFO2002)
 - [ ] **Yrkesfaglig fordypning:** Skal den ha årsrammen for felles programfag, slik vedlegget sier om prosjekt til fordypning? Den står i praksislisten som `yff-arsramme`.
 
-**I appen** (etter at versjon 0.9.0 er publisert):
+**I appen** (fra versjon 0.9.0; versjon 0.10.0 har flere fag med årsramme):
 
 - [ ] **Fag og læreplaner** (Hjem → Fag og vurdering): søk på et fag du kjenner, og prøv filtrene. Åpne faget. Stemmer vurderingsordning og årstimetall? Står læreplanen på riktig målform?
 - [ ] Prøv et fag med læreplan på nynorsk (f.eks. AKT2004) med appen på bokmål: teksten fra læreplanen skal stå på nynorsk, merket «Fastsatt på nynorsk».
