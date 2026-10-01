@@ -149,6 +149,25 @@ kilder:
       rundskrivet for neste år, står det i kontrollsaken, og adressen her oppdateres. Fingeravtrykket godkjennes
       ikke, fordi dataene oppdateres automatisk når testene består.
 
+  - id: udir-regbok-programomradekode
+    navn: Registreringshåndboken, A03 Programområdekode
+    utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe
+    url: https://regbok.udir.no/35004/3344/35042-1014307.html
+    type: side
+    niva: nasjonal
+    lisens: Ikke oppgitt. Lenkes, siteres kort.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: "#maincolpage"
+    godkjent_fingeravtrykk: null
+    faser: [2, 3]
+    merknad: >-
+      Hva programområdekodene betyr, også kategoriene og variantene i VIGO (posisjon 7–10). Kilde for at
+      «Fag for studiekompetanse» (PBPBY4) er påbygging etter fag- og yrkesopplæring (PBPBY4YK--, PBPBY4H---),
+      i tillegg til «fag for studiekompetanse» for voksne og privatister. Sist endret 08.04.2025. Håndboken har
+      ikke API; vurderingen av den som kilde står i docs/REGISTRERINGSHANDBOKEN.md.
+
   - id: vigo-kodeverk
     navn: VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader
     utgiver: Novari IKS for fylkeskommunene

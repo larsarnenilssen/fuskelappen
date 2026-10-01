@@ -4,7 +4,7 @@
 
 **Valg:**
 - **Henting:** `scripts/hent-vigo.ts` (`npm run hent:vigo`) henter fem tabeller og koblinger med samme POST-API som nettsiden bruker, i sider på høyst 2000 rader, og skriver:
-  - `data/vigo/fagrelasjoner.json`: utgåtte fagkoder og kodene som erstatter dem (en kode kan være delt opp i flere), nye versjoner av læreplaner, og fag som brukes sammen. VIGOs egne koder for opplæringsfag (med Z) er utelatt.
+  - `data/vigo/fagrelasjoner.json`: utgåtte fagkoder og kodene som erstatter dem (en kode kan være delt opp i flere), nye versjoner av læreplaner, fag som brukes sammen, og fag som bygger på andre fag (rekkefølgen på fag over flere trinn i tilbudsstrukturen, eier 01.10.2026). VIGOs egne koder for opplæringsfag (med Z) er utelatt.
   - `data/vigo/merknader.json`: FAM- og VMM-koder med tekst på bokmål, nynorsk, samisk og engelsk, hvor de brukes, om de krever vedlegg, og sluttdato.
 - **Kontroller:** skjema (zod) og minste antall. Ved feil beholdes forrige filer. Filene skrives bare ved endret innhold.
 - **Kildesjekken:** henter VIGO i samme steg som Grep og Udir-1, og testene kjøres på alt samlet. Ny sjekkmetode `vigo-kodeverk` med kilden `vigo-kodeverk` i kilderegisteret. Endringene står i kildesjekkrapporten. Feiler testene, blir status «endret», dataene tas ikke inn, og endringsforslaget (avgjørelse 020) får dem.

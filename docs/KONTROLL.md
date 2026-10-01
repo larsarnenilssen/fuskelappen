@@ -12,10 +12,10 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 | Din kontroll | Antall |
 |---|---|
-| Kontrollert | 1 |
+| Kontrollert | 0 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 75 |
+| Ikke kontrollert | 76 |
 | Praksis og tolkninger som bør bekreftes | 12 av 12 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -25,7 +25,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
 | Enkeltverdier fra kilden uten sitat | 2 |
 
-**Kobling fra fagkode til årsramme** (fase 2): 748 av 1978 fagkoder er koblet, 1230 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
+**Kobling fra fagkode til årsramme** (fase 2): 1047 av 1978 fagkoder er koblet, 931 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
 
 ## Må ses på
 
@@ -179,10 +179,10 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `arstimer` (sfs2213-2026-2027) | – | tabell, 98 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `fagnavn` (sfs2213-2026-2027) | – | tabell, 33 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `kallenavn` (sfs2213-2026-2027) | – | tabell, 43 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
-| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | kontrollert 01.10.2026 |
-| `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 142 rader | avledet av andre verdier | ikke kontrollert |
+| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 315 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
-| `kobling_regler` (sfs2213-2026-2027) | – | tabell, 36 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_regler` (sfs2213-2026-2027) | – | tabell, 61 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
 
 ### VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader

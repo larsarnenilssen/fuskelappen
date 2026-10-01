@@ -22,6 +22,7 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 | `relation/course-used-together-with` («fag_benyttessammenmed») | 1 761 | Fagsiden viser fag som brukes sammen, f.eks. tverrfaglig eksamen og fagene den gjelder. |
 | `course-remarks` (FAM-koder) | 63 | Oppslaget «Fagmerknader (FAM-koder)» i begrepsbanken, med søk. |
 | `diploma-remarks` (VMM-koder) | 45 | Oppslaget «Vitnemålsmerknader (VMM-koder)» i begrepsbanken, med søk. |
+| `relation/course-paabygning` («fag_paabygning») | 131 (49 fag etter at VIGOs egne koder er tatt bort) | Rekkefølgen på fag over flere trinn i tilbudsstrukturen, f.eks. Teater og bevegelse 1 → 2. Eier 01.10.2026: fagene tas i denne rekkefølgen. Aktivitetslære og treningsledelse på idrettsfag mangler i VIGO. |
 
 ## Mulig bruk senere
 
@@ -34,8 +35,7 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 | `relation/exam-assessment-pupil` og `…-private` | 5 444 og 4 072 | Eksamensordning for elever og privatister per fag | Samme som over. |
 | `courses` | 22 469 | Alle fagkoder med navn, type, omfang på vitnemålet, sensur, om faget teller for poeng | Kontrollere Grep. «Teller for poeng» kan brukes i poengberegningen i fase 5. |
 | `relation/main-course-sub-course` | 8 618 | Hovedfag og delfag (f.eks. tverrfaglig eksamen og delene) | Bedre kobling mellom eksamenskoder og fag i tilbudsstrukturen. |
-| `relation/course-paabygning` | 131 | Fag som bygger på et annet fag (f.eks. Teater og bevegelse 2 på 1) | Rekkefølgen på fag over flere trinn i tilbudsstrukturen. Eier er usikker på om rekkefølgen er obligatorisk. |
-| `similar-courses` | 1 740 | Par av fagkoder som VIGO regner som «like» (f.eks. KRO1001 og KRO1004) | Meningen må avklares før bruk (godkjenning, dobbeltføring?). |
+| `similar-courses` | 1 740 | Par av fagkoder som VIGO regner som «like» (f.eks. KRO1001 og KRO1004) | Antakelig for godkjenning av fag tatt tidligere. Eksemplene er ikke i bruk i dag (eier 01.10.2026). Ikke i bruk. |
 | `grades` | 131 | Karakterkoder (tall, IV, fritatt osv.) og om de teller som karakter | Forklaring av karakterkoder i fase 6. |
 | `exam-forms`, `course-types`, `variables` | 7, 15, 219 | Eksamensformer, fagtyper og diverse koder (f.eks. oppmøtestatus) | Oppslag og forklaringer i fase 6. |
 

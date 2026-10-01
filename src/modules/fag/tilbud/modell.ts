@@ -113,6 +113,45 @@ export interface Utvalg {
   /** Antall fag å velge, når alle fagene har samme timetall. */
   antall: number | null;
   koder: string[];
+  /**
+   * Fag over flere trinn som bygger på hverandre i VIGO, i rekkefølgen de tas (f.eks. Teater og bevegelse 1 → 2).
+   * Fagene tas i denne rekkefølgen (eier 01.10.2026). Fag som ikke står i en rekke, har ingen rekkefølge i VIGO.
+   */
+  rekker: string[][];
+}
+
+/** Fag som bygger på andre fag (fra VIGO), fagkode → kodene den bygger på. */
+export type FagBygger = Readonly<Record<string, readonly string[]>>;
+
+/**
+ * Rekkene blant kodene: hvert fag kommer etter fagene det bygger på. Bare rekker med minst to fag er med.
+ * Bygger et fag på flere av kodene, følges den første i sortert rekkefølge.
+ */
+export function rekker(koder: readonly string[], bygger: FagBygger): string[][] {
+  const sett = new Set(koder);
+  const forrige = new Map<string, string>();
+  for (const k of koder) {
+    const f = [...(bygger[k] ?? [])].filter((b) => sett.has(b) && b !== k).sort()[0];
+    if (f) forrige.set(k, f);
+  }
+  const neste = new Map<string, string[]>();
+  for (const [k, f] of forrige) neste.set(f, [...(neste.get(f) ?? []), k].sort());
+  const ut: string[][] = [];
+  const brukt = new Set<string>();
+  for (const start of [...sett].filter((k) => !forrige.has(k) && neste.has(k)).sort()) {
+    const rekke = [start];
+    brukt.add(start);
+    let naa = start;
+    for (;;) {
+      const n = (neste.get(naa) ?? []).find((x) => !brukt.has(x));
+      if (!n) break;
+      rekke.push(n);
+      brukt.add(n);
+      naa = n;
+    }
+    ut.push(rekke);
+  }
+  return ut;
 }
 
 export interface Tilpasning {
@@ -147,6 +186,8 @@ export interface Tilbud {
   /** Programområdene tilbudet bygger på, i samme program (forrige trinn) og fra andre program (kryssløp). */
   fra: string[];
   kryssFra: string[];
+  /** «Bygger på» mangler i Grep og er funnet ut fra programmet (se byggerPaa). */
+  fraAvledet: boolean;
   /** Videre løp: neste trinn i samme program, påbygging og kryssløp til andre program. */
   videre: string[];
   pabygging: string[];
@@ -162,6 +203,24 @@ const trinnFraOmfang = (omfang: string): Trinn | null => {
 /** Er programområdet en variant for særskilte skoler (kode som STUSP1RS--, STREA2MO--, STUSP1TY--)? */
 export const erVariant = (kode: string) => /^[A-Z]{5}\d[A-Z]{2}/.test(kode);
 
+/**
+ * Hva et programområde bygger på. Mangler «bygger på» i Grep for et lærefag (vg3 i bedrift), og har programmet
+ * bare ett ordinært vg2 i skole, bygger lærefaget på det. Eksempel: de fire lærefagene i salg, service og reiseliv
+ * bygger på vg2 salg, service og reiseliv, slik Udir viser strukturen på udir.no/kl06/SR (eier 01.10.2026).
+ */
+export function byggerPaa(kode: string, indeks: Fagindeks): { koder: string[]; avledet: boolean } {
+  const po = indeks.programomrader[kode];
+  if (!po) return { koder: [], avledet: false };
+  if (po.bygger.length > 0 || po.sted !== 'bedrift' || po.trinn !== 'Vg3' || erVariant(kode)) return { koder: po.bygger, avledet: false };
+  const vg2 = Object.entries(indeks.programomrader)
+    .filter(([k, p]) => p.program === po.program && p.trinn === 'Vg2' && p.sted === 'skole' && !erVariant(k) && p.merkelapper.length === 0)
+    .map(([k]) => k);
+  return vg2.length === 1 ? { koder: vg2, avledet: true } : { koder: [], avledet: false };
+}
+
+/** Er programområdet for voksne (merkelapp i Grep)? Rundskrivets tabeller gjelder ikke (eier 01.10.2026). */
+export const erVoksenopplaering = (po: Programomrade) => po.merkelapper.includes('for_voksenopplaering');
+
 /** Fordelingstabellen i rundskrivet for et programområde (program og trinn), eller null. */
 export function finnTabell(f: Fagfordeling, kode: string, po: Programomrade, programnavn: string): Fordelingstabell | null {
   const tittel = (t: Fordelingstabell) => t.tittel.toLowerCase();
@@ -171,7 +230,7 @@ export function finnTabell(f: Fagfordeling, kode: string, po: Programomrade, pro
   const tabeller = f.tabeller.filter((t): t is Fordelingstabell => t.type === 'fordeling' && trinnFraOmfang(t.omfang) === po.trinn);
   if (po.program === 'PB') return kode.startsWith('PBPBY3') ? (tabeller.find((t) => /påbygging til generell studiekompetanse for yrkesfaglige/.test(tittel(t))) ?? null) : null;
   if (programgruppe(po.program) === 'studieforberedende') return tabeller.find((t) => tittel(t).includes(`for ${programnavn.toLowerCase()}`)) ?? null;
-  if (po.sted === 'bedrift') return null;
+  if (po.sted === 'bedrift' || erVoksenopplaering(po)) return null;
   if (po.trinn === 'Vg3' && /^studieforberedende/i.test(po.navn.nb)) return tabeller.find((t) => /studieforberedende vg3/.test(tittel(t)) && tittel(t).includes(programnavn.toLowerCase())) ?? null;
   if (po.trinn === 'Vg3') return tabeller.find((t) => /yrkesfaglige utdanningsprogram.*vg3 i skole/.test(tittel(t))) ?? null;
   return tabeller.find((t) => /yrkesfaglige utdanningsprogram/.test(tittel(t)) && /vg1 og vg2/.test(tittel(t))) ?? null;
@@ -221,10 +280,10 @@ const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((
  * 2. Valg: mangler det timer, og har programområdet valgfrie programfag i samme læreplan med samme timetall,
  *    velger eleven blant dem (f.eks. maritime fag: dekk eller maskin).
  * 3. Flere trinn: fag som i Grep går over flere trinn (f.eks. aktivitetslære 1–3 på idrettsfag), fyller resten
- *    av timene. Hvilke av dem som hører til trinnet, står ikke i Grep.
+ *    av timene. Hvilke av dem som hører til trinnet, står ikke i Grep. Rekkefølgen kommer fra VIGO når den finnes.
  * Stemmer summen fortsatt ikke, meldes avvik.
  */
-function programfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks): Tilbudsdel {
+function programfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks, fagBygger: FagBygger): Tilbudsdel {
   // Opphenting (f.eks. YFO2002) er felles programfag i Grep, men en egen linje i rundskrivet.
   const alle = Object.entries(indeks.fag).filter(([, f]) => f.type === 'felles_programfag' && harPo(f, kode) && !erOpphenting(f));
   let medTimer = alle.filter(([, f]) => f.timer !== null).map(([k]) => k);
@@ -250,7 +309,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
   if (rest() > 0) {
     const valg = Object.entries(indeks.fag).filter(([, f]) => f.type === 'valgfritt_programfag' && harPo(f, kode) && f.timer !== null && lp.has(f.lp));
     const t = valg[0]?.[1].timer ?? 0;
-    if (valg.length > 1 && valg.every(([, f]) => f.timer === t) && rest() % t === 0) utvalg = { grunn: 'valg', timer: rest(), antall: rest() / t, koder: valg.map(([k]) => k).sort() };
+    if (valg.length > 1 && valg.every(([, f]) => f.timer === t) && rest() % t === 0) utvalg = { grunn: 'valg', timer: rest(), antall: rest() / t, koder: valg.map(([k]) => k).sort(), rekker: [] };
   }
   // 3. Fag over flere trinn
   if (!utvalg && rest() !== 0) {
@@ -258,7 +317,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
     const faste = koder.filter((k) => !flere.includes(k));
     if (flere.length > 0 && timerFor(faste, indeks) < timer && timerFor(flere, indeks) >= timer - timerFor(faste, indeks)) {
       koder = faste;
-      utvalg = { grunn: 'flere_trinn', timer: rest(), antall: null, koder: flere.sort() };
+      utvalg = { grunn: 'flere_trinn', timer: rest(), antall: null, koder: flere.sort(), rekker: rekker(flere, fagBygger) };
     }
   }
   const sum = timerFor(koder, indeks) + (utvalg?.timer ?? 0);
@@ -288,7 +347,7 @@ function plassdel(linje: string, kategori: 'fordypning' | 'valgfritt' | 'yff' | 
 }
 
 /** Bygger tilbudet for ett programområde. */
-export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordeling | null): Tilbud {
+export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordeling | null, fagBygger: FagBygger = {}): Tilbud {
   const po = indeks.programomrader[kode];
   if (!po) throw new Error(`Ukjent programområde ${kode}`);
   const programnavn = indeks.utdanningsprogram[po.program]?.nb ?? po.program;
@@ -329,7 +388,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
         if (d?.type === 'fag' && !harFellesfag && !d.lantFra) d.avvik = [];
         if (d) deler.push(d);
         else avvik.push(`Linjen «${r.linje}» i rundskrivet er ikke kjent.`);
-      } else if (type === 'felles_programfag') deler.push(programfagdel(r.linje, t, kode, indeks));
+      } else if (type === 'felles_programfag') deler.push(programfagdel(r.linje, t, kode, indeks, fagBygger));
       else deler.push(plassdel(r.linje, type, t, kode, po, indeks));
     }
     tabell.kolonner.forEach((k, j) => {
@@ -363,9 +422,10 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
   const alternativer = rest.filter(([, f]) => f.type === 'fellesfag').map(([k]) => k).sort();
   const andreFag = rest.filter(([, f]) => f.type !== 'fellesfag').map(([k]) => k).sort();
   const alle = Object.entries(indeks.programomrader);
-  const fra = po.bygger.filter((b) => indeks.programomrader[b]?.program === po.program);
-  const kryssFra = po.bygger.filter((b) => indeks.programomrader[b]?.program !== po.program);
-  const barn = alle.filter(([, p]) => p.bygger.includes(kode)).map(([k]) => k);
+  const bygger = byggerPaa(kode, indeks);
+  const fra = bygger.koder.filter((b) => indeks.programomrader[b]?.program === po.program);
+  const kryssFra = bygger.koder.filter((b) => indeks.programomrader[b]?.program !== po.program);
+  const barn = alle.filter(([k]) => byggerPaa(k, indeks).koder.includes(kode)).map(([k]) => k);
   return {
     kode,
     programomrade: po,
@@ -380,6 +440,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
     andreFag,
     fra,
     kryssFra,
+    fraAvledet: bygger.avledet,
     videre: barn.filter((b) => indeks.programomrader[b]?.program === po.program).sort(),
     pabygging: barn.filter((b) => indeks.programomrader[b]?.program === 'PB').sort(),
     kryssTil: barn.filter((b) => !['PB', po.program].includes(indeks.programomrader[b]?.program ?? '')).sort(),
@@ -416,8 +477,8 @@ export function byggStruktur(indeks: Fagindeks): Programstruktur[] {
       let endret = true;
       while (endret) {
         endret = false;
-        for (const [k, p] of egne) {
-          if (!naadd.has(k) && p.bygger.some((b) => naadd.has(b))) {
+        for (const [k] of egne) {
+          if (!naadd.has(k) && byggerPaa(k, indeks).koder.some((b) => naadd.has(b))) {
             naadd.add(k);
             endret = true;
           }
