@@ -441,7 +441,8 @@ main {
   border: 0;
   border-top: var(--strek) solid var(--farge-linje);
   border-radius: 0;
-  background: var(--farge-bakgrunn);
+  /* Egen flate, så boksene skiller seg fra bakgrunnen på forsiden i både lys og mørk visning. */
+  background: var(--farge-flate-2);
 }
 
 .flere-liste .listelenke {
@@ -1331,12 +1332,12 @@ p.fagkort-tittel {
 }
 
 .figur-over {
-  fill: var(--farge-feil);
+  fill: var(--diagram-over);
 }
 
 /* Beskjeftigelse ut over en stilling under 100 %, opp til hel stilling (variabel lønn). */
 .figur-variabel {
-  fill: var(--farge-advarsel);
+  fill: var(--diagram-variabel);
 }
 
 .figur-tekst {
@@ -1346,7 +1347,7 @@ p.fagkort-tittel {
 }
 
 .fordeling-etikett {
-  fill: var(--farge-flate);
+  fill: var(--diagram-etikett);
   font-size: 14px;
   font-weight: 700;
   font-family: var(--font-tekst);
@@ -2252,6 +2253,29 @@ p.fagkort-tittel {
 
 .egenskaper dt {
   color: var(--farge-tekst-dempet);
+}
+
+/* «i» ved et begrep på fagarket: lenke til begrepsbanken. */
+.begrep-i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.75rem;
+  min-height: 1.75rem;
+  margin: -0.25rem 0;
+  vertical-align: middle;
+  color: var(--farge-lenke);
+}
+
+/* Delene av fagarket som kan lukkes. */
+.fag-seksjon {
+  margin: var(--rom-4) 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.fag-seksjon-tittel {
+  margin: 0 0 var(--rom-2);
 }
 
 .egenskaper dd {

@@ -1,0 +1,175 @@
+# Begreper om opplæringsløpet i videregående: utdanningsprogram, programområder, trinn og fagtyper.
+# Fagarket viser dem med «i» (pakke 4, OPPDRAG 1.4). Bygger på rundskrivet Udir-1-2026, vedlegg 1, kapittel 3,
+# og forskriften om yrkesfaglig fordypning. Egne ord, ikke kopiert.
+- id: utdanningsprogram
+  type: begrep
+  tittel: { nb: Utdanningsprogram, nn: Utdanningsprogram }
+  tekst:
+    nb: Utdanningsprogrammene er den øverste inndelingen av videregående opplæring. Det er fem studieforberedende utdanningsprogram (studiespesialisering, idrettsfag, musikk, dans og drama, kunst, design og arkitektur, og medier og kommunikasjon) og ti yrkesfaglige. Hvert utdanningsprogram er delt inn i trinn og programområder.
+    nn: Utdanningsprogramma er den øvste inndelinga av vidaregåande opplæring. Det er fem studieførebuande utdanningsprogram (studiespesialisering, idrettsfag, musikk, dans og drama, kunst, design og arkitektur, og medium og kommunikasjon) og ti yrkesfaglege. Kvart utdanningsprogram er delt inn i trinn og programområde.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Grep har påbygging til generell studiekompetanse som eget utdanningsprogram (PB), mens rundskrivet regner det som et tilbud innenfor yrkesfag (3.5). Bør begrepet nevne dette?"
+  stikkord: [studieforberedende, yrkesfaglig, yrkesfag, tilbudsstruktur]
+  relatert: [programomrade, trinn-vg, fellesfag]
+
+- id: programomrade
+  type: begrep
+  tittel: { nb: Programområde, nn: Programområde }
+  tekst:
+    nb: Et programområde er et tilbud på ett trinn i et utdanningsprogram, for eksempel vg2 helsearbeiderfag. Tilbudsstrukturen viser hvilke programområder som finnes på vg1, vg2, vg3 og i opplæring i bedrift, og hvilke som bygger på hverandre. Hvert programområde har en kode, for eksempel HSHEA2----. Noen programområder på vg2 tar også inn elever fra vg1 i et annet utdanningsprogram. Det kalles kryssløp.
+    nn: Eit programområde er eit tilbod på eitt trinn i eit utdanningsprogram, til dømes vg2 helsearbeidarfag. Tilbodsstrukturen viser kva programområde som finst på vg1, vg2, vg3 og i opplæring i bedrift, og kva som byggjer på kvarandre. Kvart programområde har ein kode, til dømes HSHEA2----. Nokre programområde på vg2 tek også inn elevar frå vg1 i eit anna utdanningsprogram. Det blir kalla kryssløp.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+    - { id: udir-regbok-programomradekode, punkt: "A03 Programområdekode" }
+    - { id: udir-grep, punkt: Programområder }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «et tilbud på ett trinn i et utdanningsprogram» en dekkende forklaring av programområde?"
+  stikkord: [tilbud, programområdekode, kryssløp, vg2, vg3]
+  relatert: [utdanningsprogram, trinn-vg, krysslop]
+
+- id: trinn-vg
+  type: begrep
+  tittel: { nb: "Vg1, vg2 og vg3", nn: "Vg1, vg2 og vg3" }
+  tekst:
+    nb: Opplæringen i skole er normalt delt i videregående trinn 1, 2 og 3 (vg1, vg2 og vg3), og hvert trinn varer normalt ett skoleår. På yrkesfag er hovedmodellen to år i skole (vg1 og vg2) og to år i bedrift, der det ene året er opplæring og det andre verdiskaping. Noen løp avsluttes med vg3 i skole, og noen har bare vg1 i skole og tre års læretid (særløp).
+    nn: Opplæringa i skule er normalt delt i vidaregåande trinn 1, 2 og 3 (vg1, vg2 og vg3), og kvart trinn varer normalt eitt skuleår. På yrkesfag er hovudmodellen to år i skule (vg1 og vg2) og to år i bedrift, der det eine året er opplæring og det andre verdiskaping. Nokre løp blir avslutta med vg3 i skule, og nokre har berre vg1 i skule og tre års læretid (særløp).
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4 og 3.4.3 Særløp", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er hovedmodellen for yrkesfag (to år i skole og to år i bedrift, der ett år er verdiskaping) beskrevet riktig?"
+  stikkord: [vg1, vg2, vg3, trinn, årstrinn, hovedmodellen, særløp]
+  relatert: [programomrade, opplaering-i-bedrift]
+
+- id: fellesfag
+  type: begrep
+  tittel: { nb: Fellesfag, nn: Fellesfag }
+  tekst:
+    nb: Fellesfag er obligatoriske fag på både studieforberedende og yrkesfaglige utdanningsprogram, for eksempel norsk, engelsk, matematikk og naturfag. Kravet til fellesfag er større på studieforberedende utdanningsprogram. Elever med opplæring i samisk, tegnspråk, kvensk eller finsk har egne læreplaner eller ordninger i noen fellesfag. Årsrammen for et fellesfag i vedlegg 1 til SFS 2213 kan være ulik på ulike utdanningsprogram og trinn.
+    nn: Fellesfag er obligatoriske fag på både studieførebuande og yrkesfaglege utdanningsprogram, til dømes norsk, engelsk, matematikk og naturfag. Kravet til fellesfag er større på studieførebuande utdanningsprogram. Elevar med opplæring i samisk, teiknspråk, kvensk eller finsk har eigne læreplanar eller ordningar i nokre fellesfag. Årsramma for eit fellesfag i vedlegg 1 til SFS 2213 kan vere ulik på ulike utdanningsprogram og trinn.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag)", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.1 Fellesfag", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig og nyttig å nevne at årsrammen for et fellesfag kan være ulik på ulike utdanningsprogram og trinn?"
+  stikkord: [obligatorisk, norsk, engelsk, matematikk, naturfag, samfunnskunnskap, kroppsøving]
+  relatert: [felles-programfag, programfag, arsramme]
+
+- id: felles-programfag
+  type: begrep
+  tittel: { nb: Felles programfag, nn: Felles programfag }
+  tekst:
+    nb: Felles programfag er fag som er obligatoriske på et bestemt utdanningsprogram eller programområde. Alle utdanningsprogram har felles programfag, unntatt studiespesialisering. På yrkesfag har elevene ordinært 954 timer felles programfag fra eget programområde på vg1 og vg2 til sammen.
+    nn: Felles programfag er fag som er obligatoriske på eit bestemt utdanningsprogram eller programområde. Alle utdanningsprogram har felles programfag, unnateke studiespesialisering. På yrkesfag har elevane ordinært 954 timar felles programfag frå eige programområde på vg1 og vg2 til saman.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag)", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2 Vg1 og vg2 i skole", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er 954 timer felles programfag på vg1 og vg2 til sammen riktig for alle yrkesfaglige utdanningsprogram?"
+  stikkord: [obligatorisk, programfag, yrkesfag]
+  relatert: [fellesfag, programfag, programomrade]
+
+- id: programfag
+  type: begrep
+  tittel: { nb: Programfag og valgfrie programfag, nn: Programfag og valfrie programfag }
+  tekst:
+    nb: Programfag er fag som hører til et bestemt utdanningsprogram. Valgfrie programfag er programfag elevene velger selv, for eksempel matematikk R1 eller biologi 1 på studiespesialisering. Hvilke fag skolen tilbyr, bestemmer fylkeskommunen. Elever på yrkesfag kan også ta programfag fra studieforberedende utdanningsprogram i yrkesfaglig fordypning.
+    nn: Programfag er fag som høyrer til eit bestemt utdanningsprogram. Valfrie programfag er programfag elevane vel sjølve, til dømes matematikk R1 eller biologi 1 på studiespesialisering. Kva fag skulen tilbyr, avgjer fylkeskommunen. Elevar på yrkesfag kan også ta programfag frå studieførebuande utdanningsprogram i yrkesfagleg fordjuping.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag)", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/" }
+    - { id: udir-yff-forskrift, punkt: "3.1.3" }
+    - { id: udir-grep, punkt: Fagtype }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at fylkeskommunen bestemmer hvilke valgfrie programfag skolen tilbyr?"
+  stikkord: [valgfritt, valgfag, programfag, studiespesialisering, R1, fordypning]
+  relatert: [felles-programfag, yrkesfaglig-fordypning, utdanningsprogram]
+
+- id: yrkesfaglig-fordypning
+  type: begrep
+  tittel: { nb: Yrkesfaglig fordypning (YFF), nn: Yrkesfagleg fordjuping (YFF) }
+  tekst:
+    nb: >-
+      Yrkesfaglig fordypning er et obligatorisk fag på vg1 og vg2 i de yrkesfaglige utdanningsprogrammene, ordinært
+      168 timer på vg1 og 253 timer på vg2. Elever med samisk, finsk eller tegnspråk har færre timer. Faget skal gi
+      elevene et godt grunnlag for å velge lærefag og mulighet til å knytte kontakt med lærebedrifter.
+      Faget har ingen egen nasjonal læreplan. Timene brukes normalt til kompetansemål fra læreplanene for vg3 i skole
+      og opplæring i bedrift, i eget eller et annet utdanningsprogram. Skoleeier lager lokale læreplaner som viser
+      hvilke nasjonale kompetansemål som ligger til grunn. På vg2 i bygg- og anleggsteknikk, håndverk, design og
+      produktutvikling og frisør, blomster, interiør og eksponeringsdesign kan timene ikke brukes til kompetansemål
+      fra andre utdanningsprogram. Timene kan også brukes til fellesfag fra vg3 påbygging, fellesfag i fremmedspråk
+      eller programfag fra de studieforberedende utdanningsprogrammene. Da gjelder læreplanen og timetallet for det
+      faget. Eleven får standpunktkarakter fra skolen for den delen som følger lokal læreplan, og har ikke eksamen i
+      den.
+    nn: >-
+      Yrkesfagleg fordjuping er eit obligatorisk fag på vg1 og vg2 i dei yrkesfaglege utdanningsprogramma, ordinært
+      168 timar på vg1 og 253 timar på vg2. Elevar med samisk, finsk eller teiknspråk har færre timar. Faget skal gi
+      elevane eit godt grunnlag for å velje lærefag og moglegheit til å knyte kontakt med lærebedrifter.
+      Faget har ingen eigen nasjonal læreplan. Timane blir normalt brukte til kompetansemål frå læreplanane for vg3 i
+      skule og opplæring i bedrift, i eige eller eit anna utdanningsprogram. Skuleeigar lagar lokale læreplanar som
+      viser kva nasjonale kompetansemål som ligg til grunn. På vg2 i bygg- og anleggsteknikk, handverk, design og
+      produktutvikling og frisør, blomster, interiør og eksponeringsdesign kan timane ikkje brukast til kompetansemål
+      frå andre utdanningsprogram. Timane kan også brukast til fellesfag frå vg3 påbygging, fellesfag i framandspråk
+      eller programfag frå dei studieførebuande utdanningsprogramma. Då gjeld læreplanen og timetalet for det faget.
+      Eleven får standpunktkarakter frå skulen for den delen som følgjer lokal læreplan, og har ikkje eksamen i han.
+  kilder:
+    - { id: udir-yff-forskrift, punkt: "1 Formålet, 2 Omfang, 3 Valg av innhold og 4 Vurdering" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2 Yrkesfaglig fordypning", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er forklaringen av hva timene kan brukes til, riktig og dekkende etter forskriften punkt 3?"
+    - "Rundskrivet sier 421 timer på vg1 og vg2 til sammen, forskriften 168 + 253. Er det riktig å oppgi timene per trinn?"
+    - "Er det nyttig å nevne at elever med særskilt rett til eksamen (forskriften punkt 4.1) skal opp til praktisk eksamen, eller er det for detaljert?"
+  stikkord: [YFF, fordypning, lokal læreplan, lærefag, lærebedrift, vg3-kompetansemål]
+  relatert: [programfag, opplaering-i-bedrift, pabygging]
+
+- id: opplaering-i-bedrift
+  type: begrep
+  tittel: { nb: Lærefag og opplæring i bedrift, nn: Lærefag og opplæring i bedrift }
+  tekst:
+    nb: Et lærefag fører fram til fag- eller svennebrev. I hovedmodellen har lærlingen to år i skole (vg1 og vg2) og deretter to års læretid i bedrift, der ett år er opplæring og ett år verdiskaping. Læreplanene for opplæring i bedrift har kompetansemål på vg3-nivå. Noen lærefag har bare vg1 i skole og tre års læretid (særløp), og noen har vg3 i skole før læretiden. Lærlinger som tar opplæring i bedrift som ellers gis i skole, kan være fritatt fra kroppsøving og yrkesfaglig fordypning.
+    nn: Eit lærefag fører fram til fag- eller sveinebrev. I hovudmodellen har lærlingen to år i skule (vg1 og vg2) og deretter to års læretid i bedrift, der eitt år er opplæring og eitt år verdiskaping. Læreplanane for opplæring i bedrift har kompetansemål på vg3-nivå. Nokre lærefag har berre vg1 i skule og tre års læretid (særløp), og nokre har vg3 i skule før læretida. Lærlingar som tek opplæring i bedrift som elles blir gitt i skule, kan vere fritekne frå kroppsøving og yrkesfagleg fordjuping.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1, 3.4.3, 3.4.4 og 3.4.5", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å si at lærlinger «kan være fritatt» fra kroppsøving og yrkesfaglig fordypning, eller bør vilkårene i 3.4.3 og 3.4.5 stå?"
+  stikkord: [lærling, læretid, fagbrev, svennebrev, særløp, verdiskaping, bedrift]
+  relatert: [trinn-vg, yrkesfaglig-fordypning, programomrade]
+
+- id: pabygging
+  type: begrep
+  tittel: { nb: Påbygging til generell studiekompetanse, nn: Påbygging til generell studiekompetanse }
+  tekst:
+    nb: Vg3 påbygging til generell studiekompetanse er et år for elever som har fullført vg1 og vg2 på et yrkesfaglig utdanningsprogram. Det har ordinært minst 841 timer, med 701 timer fellesfag og 140 timer programfag fra studieforberedende utdanningsprogram. Har eleven brukt timer i yrkesfaglig fordypning til fellesfag eller programfag, endres fagene på vg3. Den som har fullført og bestått fag- og yrkesopplæring innen utgangen av året vedkommende fyller 24 år, har rett til ett års påbygging etter fag- eller svennebrevet (vg4).
+    nn: Vg3 påbygging til generell studiekompetanse er eit år for elevar som har fullført vg1 og vg2 på eit yrkesfagleg utdanningsprogram. Det har ordinært minst 841 timar, med 701 timar fellesfag og 140 timar programfag frå studieførebuande utdanningsprogram. Har eleven brukt timar i yrkesfagleg fordjuping til fellesfag eller programfag, blir faga på vg3 endra. Den som har fullført og bestått fag- og yrkesopplæring innan utgangen av året vedkomande fyller 24 år, har rett til eitt års påbygging etter fag- eller sveinebrevet (vg4).
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.2 og 3.5.3", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+    - { id: udir-regbok-programomradekode, punkt: "A03 Programområdekode (PBPBY4)" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er retten til vg4 påbygging (fullført og bestått innen utgangen av året man fyller 24 år) gjengitt riktig, og bør unntakene for praksiskandidater nevnes?"
+  stikkord: [påbygg, vg3 påbygging, vg4, generell studiekompetanse, PBPBY4]
+  relatert: [yrkesfaglig-fordypning, utdanningsprogram, opplaering-i-bedrift]
+
+- id: krysslop
+  type: begrep
+  tittel: { nb: Kryssløp, nn: Kryssløp }
+  tekst:
+    nb: Kryssløp betyr at et programområde på vg2 også tar inn elever fra vg1 i et annet utdanningsprogram, for eksempel fra vg1 studiespesialisering. Hvilke kryssløp som gjelder, står i tilbudsstrukturen. Elever som går fra vg1 studiespesialisering til vg2 på et yrkesfaglig utdanningsprogram, har allerede fellesfagene for vg2, unntatt kroppsøving. De skal ha andre fag i stedet, som hovedregel faget yrkesfaglig opphenting.
+    nn: Kryssløp tyder at eit programområde på vg2 også tek inn elevar frå vg1 i eit anna utdanningsprogram, til dømes frå vg1 studiespesialisering. Kva kryssløp som gjeld, står i tilbodsstrukturen. Elevar som går frå vg1 studiespesialisering til vg2 på eit yrkesfagleg utdanningsprogram, har alt fellesfaga for vg2, unnateke kroppsøving. Dei skal ha andre fag i staden, som hovudregel faget yrkesfagleg opphenting.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Rundskrivet sier at elever fra vg1 studiespesialisering til «alle andre vg2 yrkesfag» skal ha yrkesfaglig opphenting. Er «som hovedregel» riktig, og hvilke vg2 er unntatt?"
+  stikkord: [kryssløp, yrkesfaglig opphenting, YFO, studiespesialisering]
+  relatert: [programomrade, utdanningsprogram]

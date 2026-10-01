@@ -11,7 +11,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      forside: 'Fag, funksjonar, fordeling av arbeidstida og løn.',
+      forside: 'Fag, funksjonar, periodesysselsetjing, fordeling av arbeidstida og løn.',
       beskrivelse: 'Fag og funksjonar mot stillingsprosenten for heile skuleåret eller ein periode (periodesysselsetjing), med fordelinga av arbeidstida og løn.',
     },
     beskjeftigelse: {

@@ -10,7 +10,7 @@ export const arbeidstidNb = {
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      forside: 'Fag, funksjoner, fordeling av arbeidstiden og lønn.',
+      forside: 'Fag, funksjoner, periodebeskjeftigelse, fordeling av arbeidstiden og lønn.',
       beskrivelse: 'Fag og funksjoner mot stillingsprosenten for hele skoleåret eller en periode (periodebeskjeftigelse), med fordelingen av arbeidstiden og lønn.',
     },
     beskjeftigelse: {
