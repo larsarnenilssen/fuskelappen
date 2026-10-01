@@ -27,7 +27,7 @@ export const nn: Tekster = {
     favoritter: 'Favorittar',
     ingenFavoritter: 'Du har ingen favorittar enno. Trykk på stjerna ved ein funksjon eller eit omgrep for å leggje han til her.',
     alleFavoritter: 'Alle favorittar',
-    hurtig: 'Snøggkalkulatorar',
+    flere: 'Fleire',
     moduler: 'Innhald',
     seAlle: 'Sjå alle i {kategori}',
     ingenModuler: 'Innhaldet er under arbeid. Nye delar kjem etter kvart.',
@@ -38,7 +38,7 @@ export const nn: Tekster = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Fag og vurdering',
+    fag: 'Læreplanverk og opplæringsløp',
     elev: 'Elevar og opplæring',
     skolemiljo: 'Skulemiljø',
     felles: 'Oppslag',

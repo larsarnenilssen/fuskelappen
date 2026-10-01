@@ -4,14 +4,13 @@
 
 export const arbeidstidNb = {
   tittel: 'Arbeidstid',
-  innledning:
-    'Kalkulatorer for arbeidstid etter SFS 2213 (arbeidstidsavtalen for undervisningspersonalet) og hovedtariffavtalen i KS-området. Hver utregning viser metoden trinn for trinn og hvor tallene kommer fra.',
   kalkulatorer: {
     tittel: 'Kalkulatorer',
     flere: 'Flere kalkulatorer',
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
+      forside: 'Fag, funksjoner, fordeling av arbeidstiden og lønn.',
       beskrivelse: 'Fag og funksjoner mot stillingsprosenten for hele skoleåret eller en periode (periodebeskjeftigelse), med fordelingen av arbeidstiden og lønn.',
     },
     beskjeftigelse: {

@@ -19,8 +19,9 @@ export const manifest: Modulmanifest = {
   kategori: 'arbeidstid',
   rekkefolge: 10,
   ruter: [
-    { sti: '/arbeidstid', tittel: 'arbeidstid.tittel', side: () => import('./sider/Oversikt.tsx') },
     ...kalkulatorer.map((k) => ({ sti: k.rute, tittel: k.tittel, side: sider[k.id] })),
+    // Oversiktssiden er erstattet av boksene på forsiden (avgjørelse 030). Gamle lenker sendes dit.
+    { sti: '/arbeidstid', tittel: 'arbeidstid.tittel', side: () => import('./sider/TilForsiden.tsx') },
   ],
   async sokeoppforinger() {
     return kalkulatorer.map((k) => ({
@@ -38,7 +39,17 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  hurtigfunksjoner: kalkulatorer.map((k) => ({ id: `arbeidstid:${k.id}`, tittel: k.kort, beskrivelse: k.beskrivelse, rute: k.rute, ikon: k.ikon })),
+  // Arbeidsplan er hovedboksen. De andre kalkulatorene står i en boks som kan åpnes.
+  // Arbeidsplan har en kortere tekst på forsiden, så boksen ikke blir høy.
+  innganger: kalkulatorer.map((k, i) => ({
+    id: `arbeidstid:${k.id}`,
+    tittel: k.kort,
+    beskrivelse: k.id === 'arbeidsplan' ? 'arbeidstid.kalkulatorer.arbeidsplan.forside' : k.beskrivelse,
+    rute: k.rute,
+    ikon: k.ikon,
+    flere: i > 0,
+  })),
+  flereTittel: 'arbeidstid.kalkulatorer.flere',
   kilder: ['ks-sfs2213-avtaletekst', 'ks-hovedtariffavtalen', 'arbeidsmiljoloven', 'opplaeringslova'],
   status: 'aktiv',
 };

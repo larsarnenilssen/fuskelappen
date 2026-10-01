@@ -27,7 +27,7 @@ export const nb = {
     favoritter: 'Favoritter',
     ingenFavoritter: 'Du har ingen favoritter ennå. Trykk på stjernen ved en funksjon eller et begrep for å legge den til her.',
     alleFavoritter: 'Alle favoritter',
-    hurtig: 'Hurtigkalkulatorer',
+    flere: 'Flere',
     moduler: 'Innhold',
     seAlle: 'Se alle i {kategori}',
     ingenModuler: 'Innholdet er under arbeid. Nye deler kommer etter hvert.',
@@ -38,7 +38,7 @@ export const nb = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Fag og vurdering',
+    fag: 'Læreplanverk og opplæringsløp',
     elev: 'Elever og opplæring',
     skolemiljo: 'Skolemiljø',
     felles: 'Oppslag',

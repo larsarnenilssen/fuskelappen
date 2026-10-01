@@ -4,7 +4,7 @@ import { ekstraModuler, utvikling } from 'virtual:testoppsett';
 import { begge } from '../core/i18n/tekst.ts';
 import type { Sokeoppforing } from '../core/sok/sok.ts';
 import { kategorier, type KategoriId } from './kategorier.ts';
-import type { Favorittbar, Modulmanifest, Modulrute } from './typer.ts';
+import type { Favorittbar, Inngang, Modulmanifest, Modulrute } from './typer.ts';
 
 const funnet = import.meta.glob<Modulmanifest>('./*/index.ts', { eager: true, import: 'manifest' });
 
@@ -38,6 +38,12 @@ export function modulerIKategori(kategori: KategoriId): Modulmanifest[] {
 
 export function kategorierMedModuler() {
   return kategorier.map((k) => ({ ...k, moduler: modulerIKategori(k.id) })).filter((k) => k.moduler.length > 0);
+}
+
+/** Boksene modulen har på forsiden. Uten egne innganger er modulen selv én boks. */
+export function innganger(m: Modulmanifest): Inngang[] {
+  if (m.innganger) return m.innganger;
+  return [{ id: `modul:${m.id}`, tittel: m.navn, ...(m.beskrivelse ? { beskrivelse: m.beskrivelse } : {}), rute: m.ruter[0]?.sti ?? '/', ikon: m.ikon }];
 }
 
 export function alleRuter(): { modul: Modulmanifest; rute: Modulrute }[] {

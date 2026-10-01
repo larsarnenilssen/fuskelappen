@@ -9,9 +9,14 @@ test.describe('modulregister og søk', () => {
     await expect(page.getByRole('heading', { level: 1, name: 'Testmodul for skolemiljø' })).toBeVisible();
   });
 
-  test('hurtigkalkulatorer fra modulene vises på forsiden', async ({ page }) => {
+  test('innganger merket «flere» står i en boks som er lukket til brukeren åpner den', async ({ page }) => {
     await page.goto('./');
-    await expect(page.getByRole('link', { name: 'Testkalkulator' })).toBeVisible();
+    const kategori = page.locator('[data-kategori="skolemiljo"]');
+    const knapp = kategori.getByRole('button', { name: /Flere testfunksjoner/ });
+    await expect(knapp).toHaveAttribute('aria-expanded', 'false');
+    await expect(kategori.getByRole('link', { name: 'Testkalkulator' })).toBeHidden();
+    await knapp.click();
+    await expect(kategori.getByRole('link', { name: 'Testkalkulator' })).toBeVisible();
   });
 
   test('testmodulen finnes i søket', async ({ page }) => {
