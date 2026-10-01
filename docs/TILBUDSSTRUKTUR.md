@@ -8,7 +8,7 @@ Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026
 
 - 16 utdanningsprogram, 323 programområder: 134 i skole og 189 i bedrift. 32 er varianter for særskilte skoler.
 - 133 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 133 av dem.
-- 7 ulike avvik i 36 programområder (se under).
+- 3 ulike avvik i 35 programområder (se under).
 
 ### Summer i rundskrivet som ikke stemmer
 
@@ -37,10 +37,6 @@ Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst u
 - Grep kobler ingen fellesfag til programområdet. (34: ELDRF2, KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS …)
 - Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (16: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700. ELROM3
-- Historie: fant ingen fagkode i Grep for programområdet. NANAB3
-- Matematikk: fant ingen fagkode i Grep for programområdet. NANAB3
-- Naturfag: fant ingen fagkode i Grep for programområdet. NANAB3
-- Norsk: fant ingen fagkode i Grep for programområdet. NANAB3
 
 ## Studieforberedende utdanningsprogram
 
@@ -57,7 +53,7 @@ Tabell 7 (Vg1) i Udir-1-2026.
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
 | Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
-| Felles programfag fra eget utdanningsprogram | 196 | IDR2025 Treningslære 1 vg1 (56)<br>140 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 554 |
+| Felles programfag fra eget utdanningsprogram | 196 | IDR2025 Treningslære 1 vg1 (56)<br>140 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 554 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 24 programfag |  |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -80,7 +76,7 @@ Tabell 7 (Vg2) i Udir-1-2026. Bygger på Idrettsfag vg1 (IDRET1).
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 336 | IDR2021 Idrett og samfunn vg2 (56)<br>IDR2026 Treningslære 1 (84)<br>196 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
+| Felles programfag fra eget utdanningsprogram | 336 | IDR2021 Idrett og samfunn vg2 (56)<br>IDR2026 Treningslære 1 (84)<br>196 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -100,7 +96,7 @@ Tabell 7 (Vg3) i Udir-1-2026. Bygger på Idrettsfag vg2 (IDIDR2).
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 476 | IDR2022 Idrett og samfunn Vg3 (84)<br>IDR2027 Treningslære 2 (140)<br>252 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
+| Felles programfag fra eget utdanningsprogram | 476 | IDR2022 Idrett og samfunn Vg3 (84)<br>IDR2027 Treningslære 2 (140)<br>252 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -304,7 +300,7 @@ Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -324,7 +320,7 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Dans vg2 (MDDAN2).
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -348,7 +344,7 @@ Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -368,7 +364,7 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Drama vg2 (MDDRA2).
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -392,7 +388,7 @@ Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -412,7 +408,7 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Musikk vg2 (MDMUS2).
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1921,28 +1917,21 @@ Tabell 24 (Vg3) i Udir-1-2026. Bygger på Akvakultur (NAAKV2), Fiske og fangst (
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 281 | **ingen fagkode i Grep** |  |
-| Matematikk | 140 | **ingen fagkode i Grep** |  |
-| Naturfag | 84 | **ingen fagkode i Grep** |  |
-| Historie | 140 | **ingen fagkode i Grep** |  |
+| Norsk | 281 | NOR1270 Norsk hovedmål, vg3 påbygging til generell studiekompetanse, skriftlig<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep<br>vurdering: NOR1271 Norsk sidemål, vg3 påbygging til generell studiekompetanse, skriftlig, NOR1272 Norsk, vg3 påbygging til generell studiekompetanse, muntlig | 466.5* |
+| Matematikk | 140 | MAT1151 Matematikk 2P-Y<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep<br>vurdering: MAT1152 Matematikk 2P-Y, muntlig-praktisk | 496 |
+| Naturfag | 84 | NAT1018 Naturfag Vg3 påbygging til generell studiekompetanse<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep | 554* |
+| Historie | 140 | HIS1011 Historie Vg3 påbygging til generell studiekompetanse<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep | 554 |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
 | Felles programfag fra eget programområde | 140 | NAB3007 Naturforvaltning (140)<br>vurdering: NAB3011 Naturforvaltning, muntlig | 607.5 |
 | Programfag fra eget programområde eller studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
-Alternativer for særskilte grupper: Norsk: 6 koder, f.eks. NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse, NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse.
+Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse, NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse; Naturfag: NAT1030 Naturfag Vg3 påbygging til generell studiekompetanse, samisk plan; Historie: HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse, HIS1015 Historie, Vg3, påbygging til generell studiekompetanse for elever med samisk, kvensk eller finsk som andrespråk.
 
 Tilpassede ordninger (kolonner i rundskrivet):
 
 - Samisk, 971 timer: Norsk 281 → –; Førstespråk samisk – → 219; Andrespråk norsk – → 219; Historie 140 → 113; Programfag fra eget programområde eller studieforberedende utdanningsprogram 140 → –
 - Elever med tegnspråk, 981 timer: Norsk 281 → –; Norsk for elever med tegnspråk – → 281; Norsk tegnspråk – → 113; Yrkesfaglig fordypning – → 27; Programfag fra eget programområde eller studieforberedende utdanningsprogram 140 → –
-
-Avvik:
-
-- ⚠ Norsk: fant ingen fagkode i Grep for programområdet.
-- ⚠ Matematikk: fant ingen fagkode i Grep for programområdet.
-- ⚠ Naturfag: fant ingen fagkode i Grep for programområdet.
-- ⚠ Historie: fant ingen fagkode i Grep for programområdet.
 
 Andre fag i Grep for programområdet: YFF4301 Yrkesfaglig fordypning vg3.
 

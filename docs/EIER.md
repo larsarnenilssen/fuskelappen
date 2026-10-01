@@ -250,6 +250,11 @@ Tilbudsstrukturen viser fagene samlet for hvert utdanningsprogram, trinn og retn
 - [ ] **Valgfrie plasser:** Antall fag er timene ÷ 140. Fagene som kan velges, er de valgfrie programfagene på trinnet i de studieforberedende programmene, og for fordypning de valgfrie programfagene på programområdet. Er det riktig?
 Svar fra eier 01.10.2026: Rekkefølgen er oversiktlig (1), alternativene stemmer (3), og de valgfrie plassene stemmer (4). Hvert programfag står nå med navn og timer, og muntlig-kodene står under faget (2). Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama er rettet ut fra læreplanene i Grep og Udirs sider om programområdene (5).
 
+Oppfølging samme dag:
+- Studieforberedende vg3 i naturbruk (NANAB3) har fellesfagene fra påbygging. Grep merker programområdet «påbygg».
+- Romteknologi (ELROM3) har 700 timer programfag i Grep. Rundskrivet har 925. Den eneste skolen som har tilbudet, bruker resten til matematikk 2P-Y og naturfag, og elevene tar norsk og historie som privatister. Dette er skolens ordning, ikke en nasjonal regel. Derfor står det fortsatt som avvik.
+- Fag som går over flere trinn, tas normalt i rekkefølge. Om rekkefølgen er obligatorisk, er ikke avklart. Rapporten sier derfor «normalt».
+
 - [ ] **Avvik:** Se «Avvik mellom rundskrivet og Grep». De viktigste:
   - Felles programfag på idrettsfag, musikk, dans og drama, Maritime fag (TPMAR2), Landbruk (NALBR3) og Romteknologi (ELROM3) har en annen sum i Grep enn i rundskrivet. Hvilke fag tar eleven?
   - Studieforberedende vg3 i naturbruk (NANAB3): Grep kobler ikke norsk, matematikk, naturfag og historie til programområdet.

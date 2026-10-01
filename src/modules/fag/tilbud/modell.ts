@@ -85,6 +85,11 @@ export type Tilbudsdel =
        * eller maskin), eller fag som går over flere trinn i Grep (f.eks. aktivitetslære 1–3).
        */
       utvalg: Utvalg | null;
+      /**
+       * Programområdet fagkodene er hentet fra, når Grep ikke knytter fellesfaget til dette programområdet.
+       * Programområder merket «påbygg» i Grep (studieforberedende vg3 i naturbruk) får fellesfagene fra påbygging.
+       */
+      lantFra: string | null;
       /** Avvik mellom rundskrivet og Grep, f.eks. ulike timer. */
       avvik: string[];
     }
@@ -171,10 +176,18 @@ export function finnTabell(f: Fagfordeling, kode: string, po: Programomrade, pro
 const harPo = (fag: Fag, kode: string) => fag.po.includes(kode);
 const erOpphenting = (fag: Fag) => /opphenting/i.test(fag.navn.nb);
 
-function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks): Tilbudsdel | null {
+function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks, reserve: readonly string[] = []): Tilbudsdel | null {
   const prefiks = FELLESFAG.find(([r]) => r.test(linje))?.[1];
   if (!prefiks) return null;
-  const alle = Object.entries(indeks.fag).filter(([k, f]) => f.type === 'fellesfag' && prefiks.test(k) && harPo(f, kode));
+  const finn = (po: string) => Object.entries(indeks.fag).filter(([k, f]) => f.type === 'fellesfag' && prefiks.test(k) && harPo(f, po));
+  // Har ikke programområdet egne koder for faget, brukes kodene fra reserveprogramområdet (påbygging).
+  const ordinareFor = (po: string) => finn(po).filter(([, f]) => f.timer === timer && !ALTERNATIV.test(f.navn.nb));
+  const lantFra = ordinareFor(kode).length === 0 ? (reserve.find((r) => ordinareFor(r).length > 0) ?? null) : null;
+  if (lantFra) {
+    const d = fellesfagdel(linje, timer, lantFra, indeks);
+    return d?.type === 'fag' ? { ...d, lantFra } : d;
+  }
+  const alle = finn(kode);
   // Samisk og tegnspråk er vanlige valg som fremmedspråk, ikke alternativer.
   const erAlternativ = (f: Fag) => !/^fremmedspråk/i.test(linje) && ALTERNATIV.test(f.navn.nb);
   const alternativer = alle.filter(([, f]) => erAlternativ(f)).map(([k]) => k);
@@ -191,7 +204,7 @@ function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagind
   // Vurderingskoder: ordinære koder uten timer, med samme læreplan som en av kodene.
   const lp = new Set(koder.map((k) => indeks.fag[k]?.lp));
   const vurdering = ordinare.filter(([, f]) => f.timer === null && lp.has(f.lp)).map(([k]) => k);
-  return { type: 'fag', linje, kategori: 'fellesfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: alternativer.sort(), utvalg: null, avvik };
+  return { type: 'fag', linje, kategori: 'fellesfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: alternativer.sort(), utvalg: null, lantFra: null, avvik };
 }
 
 const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((s, k) => s + (indeks.fag[k]?.timer ?? 0), 0);
@@ -211,7 +224,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
   // Opphenting (f.eks. YFO2002) er felles programfag i Grep, men en egen linje i rundskrivet.
   const alle = Object.entries(indeks.fag).filter(([, f]) => f.type === 'felles_programfag' && harPo(f, kode) && !erOpphenting(f));
   let medTimer = alle.filter(([, f]) => f.timer !== null).map(([k]) => k);
-  if (medTimer.length === 0) return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: [], vurdering: alle.map(([k]) => k).sort(), alternativer: [], utvalg: null, avvik: [`${linje}: fant ingen felles programfag i Grep.`] };
+  if (medTimer.length === 0) return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: [], vurdering: alle.map(([k]) => k).sort(), alternativer: [], utvalg: null, lantFra: null, avvik: [`${linje}: fant ingen felles programfag i Grep.`] };
   // 1. Læreplanene
   const planer = [...new Set(medTimer.map((k) => indeks.fag[k]?.lp ?? ''))].sort();
   if (planer.length > 1 && planer.length <= 8 && timerFor(medTimer, indeks) !== timer) {
@@ -246,7 +259,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
   }
   const sum = timerFor(koder, indeks) + (utvalg?.timer ?? 0);
   const avvik = sum !== timer ? [`${linje}: rundskrivet har ${timer} timer, fagene i Grep har til sammen ${sum}.`] : [];
-  return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: [], utvalg, avvik };
+  return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: [], utvalg, lantFra: null, avvik };
 }
 
 function plassdel(linje: string, kategori: 'fordypning' | 'valgfritt' | 'yff' | 'opphenting', timer: number, kode: string, po: Programomrade, indeks: Fagindeks): Tilbudsdel {
@@ -280,6 +293,15 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
   const tilpasninger: Tilpasning[] = [];
   let totalt: number | null = null;
   const avvik: string[] = [];
+  // Programområder merket «påbygg» i Grep utenfor påbygging (studieforberedende vg3 i naturbruk) tar fellesfagene
+  // fra påbygging på samme trinn.
+  const reserve =
+    po.merkelapper.includes('paabygg') && po.program !== 'PB'
+      ? Object.entries(indeks.programomrader)
+          .filter(([, p]) => p.program === 'PB' && p.trinn === po.trinn && p.sted === 'skole' && p.merkelapper.includes('paabygg'))
+          .map(([k]) => k)
+          .sort()
+      : [];
   // Varianter for særskilte skoler har ofte ingen fellesfag i Grep. Da holder det med én merknad.
   const harFellesfag = Object.values(indeks.fag).some((f) => f.type === 'fellesfag' && harPo(f, kode));
   if (tabell) {
@@ -292,7 +314,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
       if (type === 'totalt') totalt = t;
       if (t === null || t === 0 || type === 'sum' || type === 'totalt') continue;
       if (type === 'fellesfag') {
-        const d = fellesfagdel(r.linje, t, kode, indeks);
+        const d = fellesfagdel(r.linje, t, kode, indeks, reserve);
         if (d?.type === 'fag' && !harFellesfag) d.avvik = [];
         if (d) deler.push(d);
         else avvik.push(`Linjen «${r.linje}» i rundskrivet er ikke kjent.`);
@@ -317,7 +339,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
       .filter(([, f]) => harPo(f, kode))
       .map(([k]) => k)
       .sort();
-    if (koder.length > 0) deler.push({ type: 'fag', linje: 'Opplæring i bedrift', kategori: 'felles_programfag', timer: 0, koder, vurdering: [], alternativer: [], utvalg: null, avvik: [] });
+    if (koder.length > 0) deler.push({ type: 'fag', linje: 'Opplæring i bedrift', kategori: 'felles_programfag', timer: 0, koder, vurdering: [], alternativer: [], utvalg: null, lantFra: null, avvik: [] });
   }
   const sum = deler.reduce((s, d) => s + d.timer, 0);
   if (tabell && totalt !== null && sum !== totalt) avvik.push(`Summen av delene er ${sum} timer, rundskrivet sier ${totalt}.`);

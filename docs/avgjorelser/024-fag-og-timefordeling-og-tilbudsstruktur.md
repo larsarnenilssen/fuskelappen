@@ -13,6 +13,7 @@
     1. Står fagene i flere læreplaner, og passer nøyaktig én kombinasjon av læreplaner med summen, brukes den. Eksempel: landbruk har én læreplan for opplæring i skole og én for bedrift.
     2. Mangler det timer, og har programområdet valgfrie programfag i samme læreplan med likt timetall, velger eleven blant dem. Eksempel: dekk eller maskin på maritime fag.
     3. Fag som går over flere trinn i Grep, fyller resten. Eksempel: aktivitetslære 1–3 på idrettsfag. Grep sier ikke hvilket trinn hvert fag hører til.
+  - Programområder som Grep merker «påbygg» (`merkelapper`), men som ikke er påbygging, får fellesfag som mangler, fra påbygging på samme trinn. Eksempel: studieforberedende vg3 i naturbruk (NANAB3) har norsk, matematikk 2P-Y, naturfag og historie etter tabell 24. Grep knytter dem bare til påbygging (eier 01.10.2026, med fagtilbudet ved en skole som eksempel).
   - Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men står sammen med faget i samme læreplan.
   - Yrkesfaglig fordypning er en obligatorisk plass. Den anbefalte koden er YFF-koden med samme timetall som linjen (eier 01.10.2026).
   - Fordypning og valgfrie programfag er plasser med timer og antall fag (timer ÷ 140), og en liste over fag som kan velges.

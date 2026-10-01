@@ -53,11 +53,13 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     koder.length <= maks ? koder.map(fagnavn).join(', ') : `${koder.length} koder, f.eks. ${koder.slice(0, 2).map(fagnavn).join(', ')}`;
 
   /** Årsrammen (60-minutters timer) fra koblingen for kodene på programmet og trinnet. */
-  const arsramme = (koder: readonly string[], t: Tilbud): string => {
+  const arsramme = (koder: readonly string[], t: Tilbud, lantFra: string | null = null): string => {
+    // Koder hentet fra påbygging har årsrammen for påbygging.
+    const po = (lantFra ? indeks.programomrader[lantFra] : undefined) ?? t.programomrade;
     const verdier = new Set<string>();
     let ukoblet = 0;
     for (const k of koder) {
-      const r = finnKobling(k, indeks, kobling.tabeller, kobling.rader, { program: t.programomrade.program, trinn: t.programomrade.trinn });
+      const r = finnKobling(k, indeks, kobling.tabeller, kobling.rader, { program: po.program, trinn: po.trinn });
       if (r.status === 'koblet') verdier.add(`${r.kandidat.rad.t60}${r.kandidat.rad.stjerne ? '*' : ''}`);
       else if (r.status === 'flertydig') verdier.add('flertydig');
       else ukoblet++;
@@ -77,9 +79,10 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
       else if (d.kategori === 'fellesfag') deler.push(d.koder.length === 1 ? fagnavn(d.koder[0] as string) : d.koder.length <= 4 ? `velg én: ${d.koder.map(fagnavn).join(', ')}` : `velg én av ${d.koder.length}: ${d.koder.slice(0, 3).map(fagnavn).join(', ')} …`);
       else deler.push(...d.koder.map(medTimer));
       if (d.utvalg?.grunn === 'valg') deler.push(`velg ${d.utvalg.antall ?? ''} av: ${d.utvalg.koder.map(medTimer).join(', ')}`);
-      if (d.utvalg?.grunn === 'flere_trinn') deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep: ${d.utvalg.koder.map(medTimer).join(', ')}`);
+      if (d.utvalg?.grunn === 'flere_trinn') deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): ${d.utvalg.koder.map(medTimer).join(', ')}`);
+      if (d.lantFra) deler.push(`koder fra påbygging (${kort(d.lantFra)}): programområdet er merket «påbygg» i Grep`);
       if (d.vurdering.length > 0) deler.push(`vurdering: ${d.vurdering.length <= 3 ? d.vurdering.map(fagnavn).join(', ') : `${d.vurdering.length} koder`}`);
-      return `| ${celle(d.linje)} | ${d.timer} | ${celle(deler.join('<br>'))} | ${arsramme([...d.koder, ...(d.utvalg?.koder ?? [])], t)} |`;
+      return `| ${celle(d.linje)} | ${d.timer} | ${celle(deler.join('<br>'))} | ${arsramme([...d.koder, ...(d.utvalg?.koder ?? [])], t, d.lantFra)} |`;
     }
     const tekst =
       d.kategori === 'yff'
