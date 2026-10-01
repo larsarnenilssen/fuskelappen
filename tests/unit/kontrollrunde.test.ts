@@ -38,5 +38,13 @@ describe('kontrollrunder', () => {
     expect(r.tekst).toContain('- [ ] Regelverdien `s/v`: kontrollert for mer enn 12 måneder siden (01.04.2025). <!-- kontroll:verdi:s/v -->');
     expect(r.tekst).toContain('1 begrep, forklaring eller verdi er ikke kontrollert.');
     expect(r.tekst).toContain(rundemerke('2027-05'));
+    expect(r.tekst).not.toContain('Lenker til Vilbli');
+  });
+
+  it('tar med lenkene til Vilbli som skal sjekkes for hånd', () => {
+    const r = lagKontrollrunde('2027-08', [], [], 'eier/repo', [{ tekst: 'Vg2 helsearbeiderfag', url: 'https://www.vilbli.no/x/p5' }]);
+    expect(r.tittel).toBe('Kontrollrunde august 2027: 1 punkt');
+    expect(r.tekst).toContain('## Lenker til Vilbli');
+    expect(r.tekst).toContain('- [ ] [Vg2 helsearbeiderfag](https://www.vilbli.no/x/p5) <!-- vilbli:1 -->');
   });
 });

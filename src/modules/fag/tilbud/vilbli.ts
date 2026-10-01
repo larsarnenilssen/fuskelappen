@@ -64,3 +64,23 @@ export function vilbliLenke(
   const sted = valg.fylke ? vilbliTekst(valg.fylke) : 'no';
   return `https://www.vilbli.no/nb/nb/${sted}/${vilbliTekst(programnavn)}/program/v.${po.program.toLowerCase()}/${lop}/${valg.side}`;
 }
+
+/**
+ * Lenker eier sjekker for hånd i hver kontrollrunde, fordi Vilbli ikke kan sjekkes automatisk: hele landet, et
+ * fylke, et lærefag, vg3 studiespesialisering, påbygging og et fylke med æ/ø/å. Programområder som ikke finnes
+ * lenger, hoppes over.
+ */
+export function kontrollenker(indeks: Pick<Fagindeks, 'programomrader' | 'utdanningsprogram'>): { tekst: string; url: string }[] {
+  const utvalg: [string, string, { side: Vilblisside; fylke?: string; via?: string }][] = [
+    ['Vg2 helsearbeiderfag, hele landet', 'HSHEA2----', { side: 'p5' }],
+    ['Vg2 helsearbeiderfag, Vestland', 'HSHEA2----', { side: 'p5', fylke: 'Vestland' }],
+    ['Lærefag: helsearbeiderfaget', 'HSHEA3----', { side: 'p5', via: 'HSHEA2----' }],
+    ['Vg3 språk, samfunnsfag og økonomi', 'STSSA3----', { side: 'p5' }],
+    ['Påbygging', 'PBPBY3----', { side: 'p5' }],
+    ['Vg2 helsearbeiderfag, Møre og Romsdal', 'HSHEA2----', { side: 'p5', fylke: 'Møre og Romsdal' }],
+  ];
+  return utvalg.flatMap(([tekst, kode, valg]) => {
+    const url = vilbliLenke(kode, indeks, valg);
+    return url ? [{ tekst, url }] : [];
+  });
+}

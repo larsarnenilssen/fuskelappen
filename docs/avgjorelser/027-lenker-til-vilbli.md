@@ -11,4 +11,4 @@
 - Appen lagrer ingen skoledata og gjør ingen kall til Vilbli. Det er bare lenker.
 - `docs/TILBUDSSTRUKTUR.md` har lenkene nå. Visningen i appen får dem også, med fylket fra innstillingene.
 
-**Konsekvens:** Lenkene følger Grep hver uke uten vedlikehold. Endrer Vilbli adresseformatet, virker ikke lenkene lenger. Det kan ikke kontrolleres automatisk, så eier sjekker noen lenker i hver kontrollrunde (sjekklisten i `docs/EIER.md`).
+**Konsekvens:** Lenkene følger Grep hver uke uten vedlikehold. Endrer Vilbli adresseformatet, virker ikke lenkene lenger. Det kan ikke kontrolleres automatisk. Vilbli svarer alle automatiske forespørsler med en side for «Human Verification», så en sjekk kan ikke skille en virkende lenke fra en brutt. Kontrollrundene i mai og august (avgjørelse 019) har derfor seks lenker til avkrysning (`kontrollenker()`), som eier åpner for hånd.

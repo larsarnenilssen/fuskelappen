@@ -5,6 +5,8 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
+import { kontrollenker } from '../../src/modules/fag/tilbud/vilbli.ts';
 import { lesKildestatus } from '../../src/core/kildestatus/kildestatus.ts';
 import { lagKontrollindeks } from '../../src/core/kontroll/indeks.ts';
 import { lesVerdistatus } from '../../src/core/kontroll/verdisjekk.ts';
@@ -39,7 +41,8 @@ const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, 
 // Kontrollrunden: første mandag i mai og august, eller når den startes manuelt (KONTROLLRUNDE=ja).
 const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
 const periode = process.env.KONTROLLRUNDE === 'ja' ? idag.slice(0, 7) : rundeperiode(idag);
-const runde = periode ? lagKontrollrunde(periode, praksisTilBekreftelse(praksis, idag), indeks, repo) : null;
+const fagindeks = lesJson(join(rot, 'data/grep/fagindeks.json')) as Fagindeks | null;
+const runde = periode ? lagKontrollrunde(periode, praksisTilBekreftelse(praksis, idag), indeks, repo, fagindeks ? kontrollenker(fagindeks) : []) : null;
 
 async function github<T>(metode: string, sti: string, kropp?: unknown): Promise<T> {
   const svar = await fetch(`${api}/repos/${repo}${sti}`, {

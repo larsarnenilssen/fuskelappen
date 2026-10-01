@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
 import { byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
-import { lopTil, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
+import { kontrollenker, lopTil, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
 const fag = (navn: string, type: Fag['type'], po: string[], timer: number | null, lp: string | null = null): Fag => ({ navn: { nb: navn, nn: navn }, type, trinn: [], po, timer, lp, km: [], elev: null, privatist: null });
 const po = (navn: string, program: string, trinn: Programomrade['trinn'], bygger: string[] = [], sted: Programomrade['sted'] = 'skole'): Programomrade => ({ navn: { nb: navn, nn: navn }, program, trinn, sted, bygger, timer: null, merkelapper: [] });
@@ -259,5 +259,11 @@ describe('lenker til Vilbli', () => {
     // Via et programområde tilbudet bygger på, og bare det.
     expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'HSHEA2----' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5');
     expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'STUSP1----' })).toContain('v.hshsf1----_v.hshea2----_v.hshea3----');
+  });
+
+  it('gir lenkene til kontrollrunden, og hopper over programområder som mangler', () => {
+    const l = kontrollenker(indeks);
+    expect(l.map((x) => x.tekst)).toEqual(['Vg2 helsearbeiderfag, hele landet', 'Vg2 helsearbeiderfag, Vestland', 'Lærefag: helsearbeiderfaget', 'Vg2 helsearbeiderfag, Møre og Romsdal']);
+    expect(l[2]?.url).toContain('v.hshsf1----_v.hshea2----_v.hshea3----/p5');
   });
 });
