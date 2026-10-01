@@ -34,6 +34,11 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-700);
   --diagram-over: var(--p-roed-700);
+  --fagtype-fellesfag: var(--p-blaa-700);
+  --fagtype-felles: var(--p-groenn-700);
+  --fagtype-valgfritt: var(--p-lilla-700);
+  --fagtype-yff: var(--p-rav-700);
+  --fagtype-andre: var(--p-graa-600);
 }
 
 :root[data-tema='mork'] {
@@ -67,6 +72,11 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-500);
   --diagram-over: var(--p-roed-500);
+  --fagtype-fellesfag: var(--p-blaa-300);
+  --fagtype-felles: var(--p-groenn-300);
+  --fagtype-valgfritt: var(--p-lilla-300);
+  --fagtype-yff: var(--p-rav-300);
+  --fagtype-andre: var(--p-graa-400);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -101,6 +111,11 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-500);
     --diagram-over: var(--p-roed-500);
+    --fagtype-fellesfag: var(--p-blaa-300);
+    --fagtype-felles: var(--p-groenn-300);
+    --fagtype-valgfritt: var(--p-lilla-300);
+    --fagtype-yff: var(--p-rav-300);
+    --fagtype-andre: var(--p-graa-400);
   }
 }
 
@@ -139,5 +154,10 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-700);
     --diagram-over: var(--p-roed-700);
+    --fagtype-fellesfag: var(--p-blaa-700);
+    --fagtype-felles: var(--p-groenn-700);
+    --fagtype-valgfritt: var(--p-lilla-700);
+    --fagtype-yff: var(--p-rav-700);
+    --fagtype-andre: var(--p-graa-600);
   }
 }

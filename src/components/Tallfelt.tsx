@@ -1,5 +1,6 @@
 // Tallfelt som godtar desimalkomma og viser feil på en tilgjengelig måte. Hjelpeteksten står under feltet,
 // slik at felt side om side (.feltrad) står på linje.
+import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import { formaterTall } from '../core/i18n/tekst.ts';
@@ -20,9 +21,11 @@ interface Props {
   /** Vis tallet med mellomrom som tusenskille, f.eks. «600 000» for kronebeløp. Tallet formateres når brukeren forlater feltet. */
   tusenskille?: boolean;
   class?: string;
+  /** Lenke eller knapp til høyre på linjen med etiketten, f.eks. for å bytte til en annen måte å fylle inn på. */
+  etikettHoyre?: ComponentChildren;
 }
 
-export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks, plassholder, skjultEtikett = false, tusenskille = false, class: klasse }: Props) {
+export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, maks, plassholder, skjultEtikett = false, tusenskille = false, class: klasse, etikettHoyre }: Props) {
   const { t } = useTekst();
   const id = useId();
   // Mellomrom godtas når tallet tolkes, så et formatert tall kan redigeres som det står.
@@ -60,9 +63,18 @@ export function Tallfelt({ etikett, verdi, onEndring, enhet, hjelpetekst, min, m
 
   return (
     <div class={`felt${feil ? ' felt-feil' : ''}${klasse ? ` ${klasse}` : ''}`}>
-      <label for={id} class={skjultEtikett ? 'skjult-visuelt' : undefined}>
-        {etikett}
-      </label>
+      {etikettHoyre ? (
+        <div class="etikettrad med-hjelp">
+          <label for={id} class={skjultEtikett ? 'skjult-visuelt' : undefined}>
+            {etikett}
+          </label>
+          {etikettHoyre}
+        </div>
+      ) : (
+        <label for={id} class={skjultEtikett ? 'skjult-visuelt' : undefined}>
+          {etikett}
+        </label>
+      )}
       <div class="tallfelt">
         <input
           id={id}

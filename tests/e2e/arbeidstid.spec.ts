@@ -38,6 +38,21 @@ test.describe('arbeidstid', () => {
     await expect(arbeidstid.getByRole('link', { name: /Vikartimer/ })).toBeVisible();
   });
 
+  test('byttet mellom søk og årsramme skrevet inn selv står på samme sted i fagkortet', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    const kort = page.locator('[data-gruppe="1"]');
+    const manuell = kort.getByRole('button', { name: 'Skriv inn årsramme selv' });
+    const for_ = await manuell.boundingBox();
+    await manuell.click();
+    const tilbake = kort.getByRole('button', { name: 'Søk i vedlegg 1' });
+    // Knappen står på linjen med etiketten, til høyre, som «Skriv inn årsramme selv».
+    await expect(kort.locator('.etikettrad', { has: page.getByRole('button', { name: 'Søk i vedlegg 1' }) })).toContainText('Årsramme (60 min)');
+    const etter = await tilbake.boundingBox();
+    expect(Math.abs((etter?.y ?? 0) - (for_?.y ?? 0))).toBeLessThan(8);
+    await tilbake.click();
+    await expect(kort.getByRole('button', { name: 'Skriv inn årsramme selv' })).toBeVisible();
+  });
+
   test('den gamle adressen til arbeidstid sender til forsiden', async ({ page }) => {
     await aapne(page, '/arbeidstid');
     await expect(page).toHaveURL(/#\/$/);
