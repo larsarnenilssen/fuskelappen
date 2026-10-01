@@ -14,6 +14,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - Data fra VIGO Kodeverksbase hentes hver uke sammen med Grep. `docs/VIGO-KODEVERK.md` beskriver hva kodebasen inneholder og hva det kan brukes til senere.
 - Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til Vilbli for hvert tilbud: skolene og lærebedriftene, og fag- og timefordelingen. Kontrollrundene i mai og august har seks av lenkene til avkrysning, fordi Vilbli ikke kan sjekkes automatisk. Lenkene til lærefag og påbygging er rettet etter eiers kontroll.
+- **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.
+- **Fag- og timefordelingen** fra rundskrivet Udir-1 hentes hver uke, med én fil per skoleår. Endringer står i kontrollsaken. Når rundskrivet for neste skoleår kommer, sier kontrollsaken fra.
+- Grep-hentingen tar med hva hvert programområde bygger på og timetallet på trinnet. Kontrollsaken viser nye og nedlagte programområder, endret «bygger på» og fag som bytter trinn.
 
 ### Rettet
 
@@ -24,12 +27,6 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - `docs/TILBUDSSTRUKTUR.md` viser hvert felles programfag med navn og timer, og vurderingskodene (muntlig, tverrfaglig eksamen) under faget.
 - Studieforberedende vg3 i naturbruk viser norsk, matematikk, naturfag og historie med kodene fra påbygging.
 - Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama stemmer nå med rundskrivet. Landbruk bruker læreplanen for opplæring i skole. Maritime fag har valg mellom dekk og maskin. Fag som går over flere trinn, står for seg.
-
-### Lagt til (for eier)
-
-- **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.
-- **Fag- og timefordelingen** fra rundskrivet Udir-1 hentes hver uke, med én fil per skoleår. Endringer står i kontrollsaken. Når rundskrivet for neste skoleår kommer, sier kontrollsaken fra.
-- Grep-hentingen tar med hva hvert programområde bygger på og timetallet på trinnet. Kontrollsaken viser nye og nedlagte programområder, endret «bygger på» og fag som bytter trinn.
 
 ### Endret
 
