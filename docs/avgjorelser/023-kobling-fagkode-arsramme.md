@@ -20,7 +20,8 @@
   - Står det en merknad på en kobling eller regel, kan raden gjelde et annet program eller trinn. Det er eiers valg og meldes ikke som avvik.
   - Fremmedspråk som valgfritt programfag (PSP) på studiespesialisering har raden for fellesfaget fremmedspråk på trinnet (496). Kroppsøving vg3 på påbygging har raden for kroppsøving vg3 på studiespesialisering (635).
   - Står det en merknad, kan raden også ha en annen kategori i vedlegget (f.eks. et fellesfag for et valgfritt programfag).
-  - Fortsatt ukoblet: andre valgfrie programfag på studiespesialisering som vedlegget ikke nevner (f.eks. sosialkunnskap, statistikk), fordi studiespesialisering ikke har en rad for felles programfag.
+  - Ni andre valgfrie programfag på studiespesialisering (f.eks. sosialkunnskap, geofag X, økonomistyring) har årsrammen eier fant i InSchool, koblet til raden i vedlegget med samme årsramme som passer best (eier 01.10.2026).
+  - Fortsatt ukoblet: valgfrie programfag eier ikke fant i InSchool (kristendomskunnskap, katolsk kristendom, statistikk, matematikk for økonomi, samisk historie og samfunn).
 - **Rapporten** `docs/KOBLING.md` (`npm run kobling:rapport`) viser sammendrag, avvik, tabellen over programnavn, et fast utvalg koblinger til kontroll, program og trinn uten kobling, og alle ukoblede fagkoder med grunn. `data/status/kobling.json` har det samme som data. Kildesjekken lager rapporten på nytt hver uke etter Grep, før testene, og kontrollsaken tar med nye avvik (til avkrysning) og nye ukoblede fag (til orientering).
 - **Tester:** Alle fagkoder er koblet eller står i rapporten. Ingen fellesfag kobles via regel. Tabellene motsier ikke vedlegg 1 (program, trinn og kategori på raden), programnavnene eller fagtypen i Grep. Samme fagkode, program og trinn gir ikke ulik årsramme. Rapporten er oppdatert. Fagkoder som forsvinner fra Grep, gir bare en advarsel, så de ukentlige dataene fortsatt kan tas inn.
 

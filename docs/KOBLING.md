@@ -9,11 +9,11 @@ Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplis
 | | Fagkoder |
 |---|---:|
 | Fagkoder i videregående i Grep | 1978 |
-| Koblet til én årsramme | 1080 |
+| Koblet til én årsramme | 1091 |
 | Koblet, men årsrammen avhenger av utdanningsprogram eller trinn (kalkulatoren spør) | 117 |
-| Ikke koblet (listen nederst) | 781 |
+| Ikke koblet (listen nederst) | 770 |
 
-Av de koblede er 733 koblet eksplisitt og 464 med regel.
+Av de koblede er 744 koblet eksplisitt og 464 med regel.
 
 ## Avvik
 
@@ -79,14 +79,14 @@ Et fast utvalg koblinger (det samme fra uke til uke så lenge dataene er de samm
 | ENG1008 | Engelsk vg1 studieforberedende utdanningsprogram, muntlig | MD Vg1 | 76: Engelsk – MDD Vg1 | 525/700 * | eksplisitt |
 | REA3042 | Geofag 1 | ST Vg2 | 130: Geofag 1/2 – Stud.spes Vg2 | 496/661 | eksplisitt |
 | REA3042 | Geofag 1 | ST Vg3 | 131: Geofag 1/2 – Stud.spes Vg3 | 496/661 | eksplisitt |
+| SAM3069 | Økonomistyring, muntlig-praktisk | ST Vg2 | 120: Nær.øk – Stud.spes Vg2 | 496/661 | eksplisitt |
+| SAM3069 | Økonomistyring, muntlig-praktisk | ST Vg3 | 121: Nær.øk – Stud.spes Vg3 | 496/661 | eksplisitt |
 | SAM3054 | Sosiologi og sosialantropologi | ST Vg2 | 126: Pol/samf – Stud.spes Vg2 | 496/661 | eksplisitt |
 | SAM3054 | Sosiologi og sosialantropologi | ST Vg3 | 127: Pol/samf – Stud.spes Vg3 | 496/661 | eksplisitt |
 | SAM3072 | Psykologi 1 | ST Vg2 | 83: Psykologi – Stud.spes Vg2 | 525/700 | eksplisitt |
 | SAM3072 | Psykologi 1 | ST Vg3 | 84: Psykologi – Stud.spes Vg3 | 525/700 | eksplisitt |
-| SPR3033 | Kommunikasjon og kultur 1 | ST Vg2 | 78: Kultur/komm – Stud.spes Vg2 | 525/700 | eksplisitt |
-| SPR3033 | Kommunikasjon og kultur 1 | ST Vg3 | 79: Kultur/komm – Stud.spes Vg3 | 525/700 | eksplisitt |
-| REA3046 | Kjemi 2 | ST Vg2 | 134: Kjemi – Stud.spes Vg2 | 496/661 | eksplisitt |
-| REA3046 | Kjemi 2 | ST Vg3 | 135: Kjemi – Stud.spes Vg3 | 496/661 | eksplisitt |
+| SAM3070 | Økonomi og ledelse | ST Vg2 | 120: Nær.øk – Stud.spes Vg2 | 496/661 | eksplisitt |
+| SAM3070 | Økonomi og ledelse | ST Vg3 | 121: Nær.øk – Stud.spes Vg3 | 496/661 | eksplisitt |
 | IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
 | IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
 | IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
@@ -114,33 +114,25 @@ Fag med årstimer som brukes på et utdanningsprogram og trinn i Grep, men som i
 | Program | Trinn | Fagtype | Fagkoder | Eksempler |
 |---|---|---|---:|---|
 | Studiespesialisering (ST) | Vg1 | valgfritt programfag | 2 | KRI1023, KRI1028 |
-| Studiespesialisering (ST) | Vg2 | valgfritt programfag | 14 | KRI1024, KRI1029, REA3041, REA3051 |
-| Studiespesialisering (ST) | Vg3 | valgfritt programfag | 13 | SPR3022, REA3041, REA3051, REA3055 |
+| Studiespesialisering (ST) | Vg2 | valgfritt programfag | 6 | KRI1024, KRI1029, REA3065, REA3067 |
+| Studiespesialisering (ST) | Vg3 | valgfritt programfag | 4 | REA3065, REA3067, SAM3066, SAM3067 |
 
 ## Fagkoder som ikke er koblet
 
-### Programfag uten rad i vedlegg 1 (12)
+### Programfag uten rad i vedlegg 1 (4)
 
 Programfag med årstimer der ingen regel eller eksplisitt kobling passer: valgfrie programfag vedlegget ikke nevner, og program og trinn uten rad for felles programfag.
 
 <details><summary>Vis fagkodene</summary>
 
-- REA3041 Geofag X (ST Vg2, ST Vg3)
-- REA3051 Teknologi og forskningslære X (ST Vg2, ST Vg3)
-- REA3055 Matematikk X (ST Vg2, ST Vg3)
-- REA3064 Programmering og modellering X (ST Vg2, ST Vg3)
 - REA3065 Statistikk (ST Vg2, ST Vg3)
 - REA3067 Matematikk for økonomi (ST Vg2, ST Vg3)
-- SAM3051 Sosialkunnskap (ST Vg2, ST Vg3)
-- SAM3053 Samfunnsgeografi (ST Vg2, ST Vg3)
 - SAM3066 Samisk historie og samfunn 1 (ST Vg2, ST Vg3)
 - SAM3067 Samisk historie og samfunn 2 (ST Vg2, ST Vg3)
-- SAM3068 Økonomistyring (ST Vg2, ST Vg3)
-- SAM3070 Økonomi og ledelse (ST Vg2, ST Vg3)
 
 </details>
 
-### Programfag uten årstimer i Grep (281)
+### Programfag uten årstimer i Grep (278)
 
 Ofte eksamenskoder (tverrfaglig eksamen) eller vurderingskoder (muntlig). Reglene gjelder bare fag med årstimer.
 
@@ -407,9 +399,6 @@ Ofte eksamenskoder (tverrfaglig eksamen) eller vurderingskoder (muntlig). Reglen
 - RLF2004 Tverrfaglig eksamen rørlegger (BA Vg2)
 - RMF1008 Tverrfaglig eksamen, restaurant- og matfag, privatister (RM Vg1)
 - ROM3012 Tverrfaglig eksamen romteknologi (EL Vg3)
-- SAM3052 Sosialkunnskap, muntlig (ST Vg2, ST Vg3)
-- SAM3069 Økonomistyring, muntlig-praktisk (ST Vg2, ST Vg3)
-- SAM3071 Økonomi og ledelse, muntlig-praktisk (ST Vg2, ST Vg3)
 - SBR2006 Tverrfaglig eksamen skogbruk (NA Vg2)
 - SME2006 Tverrfaglig eksamen i smed (DT Vg2)
 - SSR1004 Tverrfaglig eksamen, salg, service og reiseliv, privatister (SR Vg1)

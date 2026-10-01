@@ -25,7 +25,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
 | Enkeltverdier fra kilden uten sitat | 2 |
 
-**Kobling fra fagkode til årsramme** (fase 2): 1197 av 1978 fagkoder er koblet, 781 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
+**Kobling fra fagkode til årsramme** (fase 2): 1208 av 1978 fagkoder er koblet, 770 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
 
 ## Må ses på
 
@@ -181,7 +181,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `kallenavn` (sfs2213-2026-2027) | – | tabell, 43 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | kontrollert 01.10.2026 |
 | `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 316 rader | avledet av andre verdier | ikke kontrollert |
-| `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
+| `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 54 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 63 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
 

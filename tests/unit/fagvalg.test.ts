@@ -48,7 +48,7 @@ describe('fagvalg med fagkode', () => {
   });
 
   it('et fag uten kobling har årstimer, men ingen rad', () => {
-    const p = velg('SAM3051');
+    const p = velg('REA3065');
     expect(p).toMatchObject({ valg: '', fag: { timer: 140, nr: null, metode: null, kandidater: [] } });
     expect(koblingsmetode({ ...p, valg: 'manuell', t60: 525 })).toBe('manuell');
   });

@@ -680,6 +680,23 @@ verdier:
       - { nr: 137, program: ST, trinn: Vg3, fagkoder: [REA3035, REA3036, REA3037] }
       - { nr: 138, program: ST, trinn: Vg2, fagkoder: [REA3052, REA3053, REA3054] }
       - { nr: 139, program: ST, trinn: Vg3, fagkoder: [REA3052, REA3053, REA3054] }
+      # Valgfrie programfag på ST som vedlegget ikke nevner: årsrammen eier fant i InSchool 01.10.2026, koblet til
+      # den mest sannsynlige raden i vedlegget med samme årsramme.
+      - { nr: 130, program: ST, trinn: Vg2, fagkoder: [REA3041], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Geofag 1/2 (samme læreplan)" }
+      - { nr: 131, program: ST, trinn: Vg3, fagkoder: [REA3041], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Geofag 1/2 (samme læreplan)" }
+      - { nr: 138, program: ST, trinn: Vg2, fagkoder: [REA3051], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Teknologi og forskningslære (samme læreplan)" }
+      - { nr: 139, program: ST, trinn: Vg3, fagkoder: [REA3051], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Teknologi og forskningslære (samme læreplan)" }
+      - { nr: 128, program: ST, trinn: Vg2, fagkoder: [REA3055], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Matematikk" }
+      - { nr: 129, program: ST, trinn: Vg3, fagkoder: [REA3055], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Matematikk" }
+      - { nr: 128, program: ST, trinn: Vg2, fagkoder: [REA3064], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Matematikk (nærmeste rad med 496)" }
+      - { nr: 129, program: ST, trinn: Vg3, fagkoder: [REA3064], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Matematikk (nærmeste rad med 496)" }
+      - { nr: 126, program: ST, trinn: Vg2, fagkoder: [SAM3051, SAM3052], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Pol/samf" }
+      - { nr: 127, program: ST, trinn: Vg3, fagkoder: [SAM3051, SAM3052], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Pol/samf" }
+      - { nr: 126, program: ST, trinn: Vg2, fagkoder: [SAM3053], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Pol/samf" }
+      - { nr: 127, program: ST, trinn: Vg3, fagkoder: [SAM3053], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Pol/samf" }
+      - { nr: 120, program: ST, trinn: Vg2, fagkoder: [SAM3068, SAM3069, SAM3070, SAM3071], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Nær.øk (samme læreplan for begge fagene)" }
+      - { nr: 121, program: ST, trinn: Vg3, fagkoder: [SAM3068, SAM3069, SAM3070, SAM3071], merknad: "Eier 01.10.2026: 496 i InSchool, rad for Nær.øk (samme læreplan for begge fagene)" }
+      - { nr: 77, program: ST, trinn: Vg3, fagkoder: [SPR3022], merknad: "Eier 01.10.2026: 525 i InSchool; vedlegget har bare raden for vg2" }
   kobling_regler:
     kilde: { id: udir-grep }
     kontrollert: null
