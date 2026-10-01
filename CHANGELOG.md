@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til (for eier)
+
+- Arbeidsflyten **Sett versjonstag** setter versjonsmerket og publiserer når versjonsnummeret i `package.json` endres på main (avgjørelse 029).
+
 ## [0.10.0] – 2026-10-01
 
 ### Lagt til
