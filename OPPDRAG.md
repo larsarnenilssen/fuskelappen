@@ -1,6 +1,6 @@
 # OPPDRAG – Protokollen
 
-**Versjon:** 1.3 · 30.09.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data)
+**Versjon:** 1.4 · 01.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
@@ -196,8 +196,9 @@ Skjemaet defineres med zod og valideres i testene.
 
 ### 3.7 Forside, søk og favoritter
 
-- Forsiden har samlet søkefelt øverst, deretter favoritter, hurtigkalkulatorer og moduler gruppert i kategorier.
-- Oppsettet skal tåle mange moduler. Når en kategori blir stor, får den egen side.
+- Forsiden har samlet søkefelt øverst, deretter favoritter og moduler gruppert under overskrifter.
+- *(Endret 01.10.2026, eier:)* Hver overskrift har én til tre hovedbokser og eventuelt én sammenleggbar boks med resten. Under «Arbeidstid» står Arbeidsplan som egen boks og de andre kalkulatorene i den sammenleggbare boksen. Egen overskrift for hurtigkalkulatorer og mellomsiden for arbeidstid tas bort, og gamle adresser sendes videre.
+- Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
 - Favoritter: funksjoner, fag og begreper. Lagres lokalt og kan sorteres.
 
@@ -380,6 +381,43 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Levert i 0.9.0: fag og læreplaner fra Grep (avgjørelse 022), koblingen fra fagkode til årsramme med rapport (avgjørelse 023) og fagvalg i kalkulatorene.
 - Levert i 0.10.0 (01.10.2026): VIGO Kodeverksbase (avgjørelse 026) med fag som brukes sammen og utgåtte koder på fagsiden, FAM- og VMM-koder i begrepsbanken, tilbudsstrukturen som rapport (avgjørelse 024) med lenker til Vilbli (avgjørelse 027), registreringshåndboken som kilde (avgjørelse 028), 1208 koblede fagkoder etter eiers svar, og kilder ved hvert kontrollspørsmål. Eier har godkjent tabellen over programnavn.
 
+**Videre arbeid i fase 2 etter eiers innspill (01.10.2026)**
+
+Eier har gitt innspill til «Fag og vurdering» og fase 1, og svart på B1–B6. Arbeidet deles i pakker. Hver pakke er én PR og én versjon, i denne rekkefølgen:
+
+1. **Rettinger i fase 1 og små endringer**
+   - Arbeidsplan: hvert fag vises én gang under «timer i hvert fag», med timene lagt sammen (samme fagkode, eller samme navn og årsramme for fag skrevet inn for hånd).
+   - Begrepene «variabel lønn» (gjelder også timevikarer), «fag merket *» (lavere beskjeftigelse per økt) og «annet elevrettet arbeid» (kildebelagte eksempler, også omstridte, med hvem som mener hva). Arbeidsplan og begrepsbanken bruker samme tekst om annet elevrettet arbeid.
+   - «Fra Grep» tas bort fra modulknappen og fra vurderingsordningen. Grep står som kilde nederst på fagarket og under «Om». Kortere tekst i modulknappene på forsiden.
+   - Testen for fasit 014 som svikter av og til i WebKit.
+2. **Forsiden** (se 3.7)
+   - «Arbeidstid»: Arbeidsplan som egen boks og Beskjeftigelse, Vikar og Overtid i en sammenleggbar boks.
+   - «Fag og vurdering» får navnet **Læreplanverk og opplæringsløp** (eier, B1).
+3. **Fagsøk og filter**
+   - «Vanlige fag» er standard: fagene i det ordinære tilbudet i tilbudsmodellen og yrkesfaglig fordypning (eier, B3). Varianter (morsmål, kvensk, samisk, tegnspråk, kort botid o.l.), fag uten timetall eller læreplan, opplæring i bedrift og utgåtte fag vises når brukeren slår dem på. Hvor mange som er skjult, står ved resultatet.
+   - Et søk på en hel fagkode viser alltid faget.
+   - Treffene grupperes etter fagtype, og valgfrie programfag på studieforberedende etter læreplan. Gruppene kan lukkes. Yrkesfaglig fordypning står øverst når et yrkesfaglig program er valgt.
+   - Søket på forsiden følger de samme reglene.
+4. **Fagarket og begreper for opplæringsløpet**
+   - Rekkefølge: grunnopplysninger (navn, kode, fagtype, trinn, program, årstimetall, årsramme), så kompetansemål, så vurdering samlet på ett sted, så resten. Alle deler kan lukkes og har et sammendrag i overskriften.
+   - Program og programområder samles («Alle yrkesfaglige utdanningsprogram, vg1»), med hele listen i en del som kan åpnes.
+   - Årsramme der den er kjent, med forklaring om at den bygger på appens tolkning av vedlegg 1, og en lenke som åpner en ny, ulagret arbeidsplan med faget som fag 1 (eier, B4).
+   - Yrkesfaglig fordypning forklares på fagarket og i et begrep, med kilde fra Udir.
+   - Nye begreper: utdanningsprogram, programområde, vg1–vg3, fellesfag, felles programfag, valgfrie programfag, yrkesfaglig fordypning, lærefag og opplæring i bedrift, påbygging. Fagarket viser dem med «i».
+5. **Opplæringsløp** (tilbudsstrukturen i appen)
+   - Ny modul som boks direkte under «Læreplanverk og opplæringsløp», uten mellomside: program → tilbud → fag og timer, med valgfrie plasser og yrkesfaglig fordypning.
+   - Lenker begge veier mellom fag og tilbud. Lenkene til Vilbli (avgjørelse 027) bygges inn, for valgt fylke.
+   - Dataene lastes når de trengs.
+6. **Læreplanverket**
+   - Ny modul som egen boks under samme overskrift (eier, B2): overordnet del, grunnleggende ferdigheter og tverrfaglige temaer.
+   - Overordnet del har mye tekst og skal være lett å navigere: innholdsregister med lenker, søk, og tekstene i bokser som er lukket til brukeren åpner dem, med nye lukkede bokser inni.
+   - Fagarket viser grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del.
+   - Kilder: Grep har grunnleggende ferdigheter og tverrfaglige temaer (koder og titler). Teksten i overordnet del hentes fra Lovdatas datasett (forskrift) eller fra udir.no. Det avgjøres i pakken.
+
+Begrepsbanken utvides der det passer i hver pakke. Nytt og endret innhold får `kontrollert: null` og kontrollspørsmål med kilder. Fasittestene endres ikke.
+
+**Utgår:** En oversikt over tilbudene ved hver skole og i hvert fylke (eier, B5). Det finnes ingen åpen kilde: VIGO-kodeverket har skolene, men ikke tilbudene, Vilbli stenger for automatisk henting, og Udirs åpne statistikkbank har bare Elevundersøkelsen (sjekket 01.10.2026). Tas opp igjen hvis en kilde blir kjent.
+
 **Kontrollpunkt:** Eier går gjennom avviksrapporten, et utvalg koblinger og tabellen over programnavn.
 
 ### Fase 3 – Arbeidsplan som illustrasjon
@@ -475,7 +513,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 | Forskrift til opplæringslova, inkludert vurderingsbestemmelsene | nasjonal | Lovdata-datasett | 4–8 |
 | Grep: fag, læreplaner, vurderingsordninger, årstimetall (Udir, NLOD) | nasjonal | grep | 2, 3, 6 |
 | Udirs veileder om tilpasset opplæring og individuell tilrettelegging | nasjonal | side | 4 |
-| Overordnet del av læreplanverket (Udir) | nasjonal | side | 4, 6 |
+| Overordnet del av læreplanverket (Udir) | nasjonal | side | 2, 4, 6 |
 | VLFK: lokal forskrift om inntak (Lovdata) | fylke | side | 5 |
 | VLFK: skulereglar (Lovdata) | fylke | side | 7 |
 | vlfk.no: relevante sider om inntak, tilrettelegging og språk | fylke | side | 4, 5 |
@@ -501,9 +539,10 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | Eiers kontroll av regelverdier og tekster (`kontrollert`) | etter fase 1 | Venter, etter eiers ønske |
 | Overtid for deltidsansatte (merarbeid under 100 %) | når dommen er rettskraftig | Praksis inntil videre (eier 30.09.2026): beskjeftigelse over stillingen og opp til 100 % gir variabel lønn med vanlig timelønn, og bare beskjeftigelse over 100 % gir overtid. |
 | Periodebeskjeftigelse med funksjoner, eller som del av Arbeidsplan | fase 1 | Avklart. Perioder er en del av Arbeidsplan, og kalkulatoren Periode er fjernet (avgjørelse 015). |
-| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Fase 2 uten InSchool-data (eier 30.09.2026). Forslag til tabell over programnavn i `docs/KOBLING.md`, venter på eiers bekreftelse. |
+| InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Fase 2 uten InSchool-data (eier 30.09.2026). Tabellen over programnavn er godkjent (eier 01.10.2026). |
 | Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
+| Oversikt over tilbudene ved hver skole | fase 2 | Utgår til en åpen kilde finnes (eier 01.10.2026). Lenker til Vilbli brukes. |
 
 ## 8. Ferdig når
 
