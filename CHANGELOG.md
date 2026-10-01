@@ -31,6 +31,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - Lærefagene i salg, service og reiseliv står under vg2 salg, service og reiseliv. Grep mangler «bygger på» for dem.
 - Yrkessjåførkurs for voksne står som voksenopplæring, uten tabell fra rundskrivet og uten kroppsøving.
 - Fag som går over flere trinn (f.eks. dans, drama og musikk) står i rekkefølgen fra VIGO, f.eks. Scenisk dans 1 → 2 → 3. VIGO-hentingen tar med hvilke fag som bygger på andre fag.
+- Begrepene om fagmerknader og vitnemålsmerknader viser også til Udirs skriv om føring av vitnemål og kompetansebevis og til registreringshåndboken. Begge sjekkes hver uke.
 - Registreringshåndboken (regbok.udir.no) er ny kilde for hva programområdekodene betyr, bl.a. PBPBY4. `docs/REGISTRERINGSHANDBOKEN.md` beskriver hva den kan brukes til senere.
 - Dronefag har fellesfagene for vg2 yrkesfag. Grep kobler dem ikke til programområdet, så kodene hentes fra et annet vg2-tilbud i elektro og datateknologi.
 - Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama stemmer nå med rundskrivet. Landbruk bruker læreplanen for opplæring i skole. Maritime fag har valg mellom dekk og maskin. Fag som går over flere trinn, står for seg.

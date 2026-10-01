@@ -6,7 +6,10 @@
   tekst:
     nb: Fagmerknader er korte, faste merknader som føres ved et fag på vitnemålet eller kompetansebeviset, for eksempel «Fritatt fra opplæring» (FAM01) eller «Fritatt fra vurdering med karakter» (FAM02). Kodene er felles for alle fylkeskommunene og ligger i VIGO. Listen viser hver kode med teksten, hvor den brukes, og om den krever vedlegg. Tekst i vinkelparentes, for eksempel &lt;åååå&gt;, fylles ut for eleven.
     nn: Fagmerknader er korte, faste merknader som blir førte ved eit fag på vitnemålet eller kompetansebeviset, til dømes «Friteken frå opplæring» (FAM01) eller «Friteken frå vurdering med karakter» (FAM02). Kodane er felles for alle fylkeskommunane og ligg i VIGO. Lista viser kvar kode med teksten, kvar han blir brukt, og om han krev vedlegg. Tekst i vinkelparentes, til dømes &lt;åååå&gt;, blir fylt ut for eleven.
-  kilder: [{ id: vigo-kodeverk, punkt: Fagmerknader }]
+  kilder:
+    - { id: udir-foring-vitnemal-merknader, punkt: "3.1 Fagmerknader" }
+    - { id: udir-regbok-fam, punkt: "B16 FAM-kode og B17 FAM-merknad" }
+    - { id: vigo-kodeverk, punkt: Fagmerknader }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig å beskrive fagmerknader som merknader ved et fag på vitnemål og kompetansebevis, og ikke på andre dokumenter?"
@@ -22,7 +25,10 @@
   tekst:
     nb: Vitnemålsmerknader er faste tekster som føres på vitnemålet for hele opplæringen, ikke ved et enkelt fag, for eksempel om utvidet tid, fritak eller avlyst eksamen. Kodene er felles for alle fylkeskommunene og ligger i VIGO. Listen viser hver kode med teksten og hvor den brukes. Tekst i vinkelparentes, for eksempel &lt;ddmmåå&gt;, fylles ut for eleven.
     nn: Vitnemålsmerknader er faste tekstar som blir førte på vitnemålet for heile opplæringa, ikkje ved eit enkelt fag, til dømes om utvida tid, fritak eller avlyst eksamen. Kodane er felles for alle fylkeskommunane og ligg i VIGO. Lista viser kvar kode med teksten og kvar han blir brukt. Tekst i vinkelparentes, til dømes &lt;ddmmåå&gt;, blir fylt ut for eleven.
-  kilder: [{ id: vigo-kodeverk, punkt: Vitnemålsmerknader }]
+  kilder:
+    - { id: udir-foring-vitnemal-merknader, punkt: "3.2 Andre vitnemålsmerknader og 3.3 Merknader kun på kompetansebevis" }
+    - { id: udir-regbok-vmm, punkt: "B18 VMM-kode og B19 VMM-merknad" }
+    - { id: vigo-kodeverk, punkt: Vitnemålsmerknader }
   kontrollert: null
   kontrollsporsmal:
     - "Er skillet riktig: vitnemålsmerknader gjelder hele vitnemålet, fagmerknader gjelder et enkelt fag?"

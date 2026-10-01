@@ -185,6 +185,37 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 63 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
 
+### Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis
+
+`udir-foring-vitnemal-merknader` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | 3.1 Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+| Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | 3.2 Andre vitnemålsmerknader og 3.3 Merknader kun på kompetansebevis | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+
+### Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad
+
+`udir-regbok-fam` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015037)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | B16 FAM-kode og B17 FAM-merknad | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+
+### Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad
+
+`udir-regbok-vmm` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://regbok.udir.no/felt/?Id=1015039)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | B18 VMM-kode og B19 VMM-merknad | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+
 ### VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader
 
 `vigo-kodeverk` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://kodeverk.vigo.no/)
