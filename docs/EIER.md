@@ -263,6 +263,12 @@ Oppfølging samme dag:
   - Studieforberedende vg3 i naturbruk (NANAB3): Grep kobler ikke norsk, matematikk, naturfag og historie til programområdet.
   - Dronefag (ELDRF2) og variantene for særskilte skoler har ingen fellesfag i Grep.
   - «Fag for studiekompetanse» (PBPBY4) har ingen tabell. Er dette vg4 påbygging (tabell 27)?
+Svar fra eier 01.10.2026 (andre runde):
+- «Fag for studiekompetanse» (PBPBY4) er påbygging vg4, for dem som har fag- eller yrkeskompetanse, eller som går mot grunnkompetanse etter opplæringskontrakt. Den bruker nå tabell 27: norsk, matematikk 2P-Y, naturfag og historie, 645 timer.
+- Dronefag (ELDRF2) har de samme fellesfagene som de andre vg2-tilbudene, slik Vilbli viser. Grep og VIGO kobler dem ikke til dronefag. Kodene hentes nå fra et annet vg2-tilbud i elektro og datateknologi, og dette står i rapporten.
+- Steiner- og Montessoriskolene følger egne læreplaner. Variantene vises med det Grep har.
+- De to tilbudene ved tysk skole kan mangle «bygger på». De står nederst under studiespesialisering.
+
 - [ ] **Programområder som ikke nås:** Fire vg3 på salg, service og reiseliv, og to realfag-tilbud ved tysk skole, mangler «bygger på» i Grep. Hvor hører de til?
 
 ## 15. Lenker til Vilbli
