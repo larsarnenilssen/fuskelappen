@@ -24,6 +24,24 @@ test.describe('fag og læreplaner', () => {
     await expect(page).not.toHaveURL(/program=/);
   });
 
+  test('filteret viser de vanlige fagene gruppert, og varianter når de slås på (avgjørelse 031)', async ({ page }) => {
+    await page.goto('./#/fag?program=HS');
+    const grupper = page.locator('.faggruppe-2 > .faggruppe-tittel');
+    // Yrkesfaglig fordypning står først på et yrkesfaglig program.
+    await expect(grupper.first()).toContainText('Yrkesfaglig fordypning');
+    await expect(page.getByRole('button', { name: /^Felles programfag \(\d+\)/ })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByText(/Kvensk/)).toHaveCount(0);
+    const varianter = page.getByRole('checkbox', { name: /Varianter for særskilte grupper/ });
+    await expect(varianter).not.toBeChecked();
+    await varianter.check();
+    await expect(page).toHaveURL(/vis=variant/);
+    await expect(page.getByText(/Kvensk/).first()).toBeVisible();
+
+    // Et søk på en hel fagkode viser faget, også når det er skjult.
+    await page.goto('./#/fag?q=KEF1001');
+    await expect(page.getByRole('link', { name: /KEF1001/ })).toBeVisible();
+  });
+
   test('fagsiden viser årstimer, vurdering og kompetansemål, merket med målformen læreplanen er fastsatt i', async ({ page }) => {
     await page.goto('./#/fag/HEA2005');
     await expect(page.getByText('197 timer à 60 minutter')).toBeVisible();

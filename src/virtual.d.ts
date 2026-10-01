@@ -11,6 +11,14 @@ declare module 'virtual:testoppsett' {
   export const utvikling: boolean;
 }
 
+declare module 'virtual:fagroller' {
+  /** Rollen til hver fagkode i tilbudene, regnet ut når appen bygges (avgjørelse 031). */
+  const roller: Record<string, 'ordinar' | 'alternativ' | 'vurdering'>;
+  export default roller;
+  /** Titlene på læreplanene uten «Læreplan i», f.eks. { «FSP01-04»: «Fremmedspråk» }. */
+  export const laereplaner: Record<string, string>;
+}
+
 declare const __APP_VERSJON__: string;
 
 declare module '*.yaml' {

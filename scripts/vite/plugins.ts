@@ -3,6 +3,9 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
 import { Innholdsfeil, lesFil } from '../innhold/last.ts';
+import { beregnFagroller, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
+import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -68,6 +71,46 @@ export function testoppsettPlugin(mode: string): Plugin {
         `export const ekstraRegelsett = import.meta.glob('/tests/fixtures/regler/*.yaml', { eager: true, import: 'default' });`,
         `export const utvikling = true;`,
       ].join('\n');
+    },
+  };
+}
+
+/**
+ * Rollen til hver fagkode i tilbudene (ordinært fag, alternativ eller vurderingskode), regnet ut fra fagindeksen og
+ * fag- og timefordelingen som gjelder når appen bygges (avgjørelse 031), og titlene på læreplanene. Appen laster modulen når fagsøket trenger
+ * den. Rollene følger dataene hver gang appen bygges, uten en egen fil i data/.
+ */
+export function fagrollerPlugin(rot: string): Plugin {
+  const id = 'virtual:fagroller';
+  return {
+    name: 'protokollen:fagroller',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
+      const mappe = join(rot, 'data/udir');
+      const fordelinger = existsSync(mappe)
+        ? readdirSync(mappe)
+            .filter((f) => /^fagfordeling-\d{4}-\d{4}\.json$/.test(f))
+            .map((f) => JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Fagfordeling)
+        : [];
+      const fordeling = velgFordeling(fordelinger, new Date().toISOString().slice(0, 10));
+      const roller = Object.fromEntries([...beregnFagroller(indeks, fordeling)].sort(([a], [b]) => a.localeCompare(b)));
+      // Titlene på læreplanene, til grupperingen i fagsøket. «Læreplan i fremmedspråk» → «Fremmedspråk».
+      const planer = join(rot, 'data/grep/laereplaner');
+      const titler: Record<string, string> = {};
+      if (existsSync(planer)) {
+        for (const f of readdirSync(planer).filter((x) => x.endsWith('.json')).sort()) {
+          const lp = JSON.parse(readFileSync(join(planer, f), 'utf8')) as { kode: string; tittel: string; spraak: string };
+          // Titler på samisk brukes ikke som gruppenavn. Da brukes det fagnavnene har felles.
+          if (lp.spraak !== 'nob' && lp.spraak !== 'nno') continue;
+          const t = lp.tittel.replace(/^(læreplan|læreplanen)\s+i\s+/i, '');
+          titler[lp.kode] = t.charAt(0).toUpperCase() + t.slice(1);
+        }
+      }
+      return `export default ${JSON.stringify(roller)};\nexport const laereplaner = ${JSON.stringify(titler)};`;
     },
   };
 }

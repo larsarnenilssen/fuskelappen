@@ -1,14 +1,18 @@
 // Søk og filter i fagene fra Grep. Søket og filteret står i adressen (#/fag?q=…&program=…), så tilbake-knappen
 // og lenker gir samme utvalg. Adressen oppdateres uten ny navigasjon mens brukeren skriver.
+// Som standard vises de vanlige fagene i tilbudene. Varianter, opplæring i bedrift og andre fagkoder slås på under
+// «Vis også». Uten fritekst grupperes treffene etter fagtype, og store grupper etter læreplan (avgjørelse 031).
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { formaterDato, formaterTall, type Malform } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { lastFagindeks, lastFagrelasjoner } from '../data.ts';
-import { type Fagfilter, filterFraAdresse, filterTilAdresse, filtervalg, filtrerFag, tomtFilter } from '../oppslag.ts';
-import type { Fag, Fagindeks } from '../skjema.ts';
+import { type Fagroller, lastFagindeks, lastFagrelasjoner, lastFagroller } from '../data.ts';
+import { etterLaereplan, type Fagklasse, fagklasser, gruppeRekkefolge, SKJULTE } from '../klasser.ts';
+import { type Fagfilter, type Fagtreff, filterFraAdresse, filterTilAdresse, filtervalg, sokFag, tomtFilter, visteKlasser } from '../oppslag.ts';
+import type { Fag, Fagindeks, Fagtype } from '../skjema.ts';
+import { programgruppe } from '../tilbud/modell.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
 import { gjeldendeKoder } from '../vigo/oppslag.ts';
 import type { Fagrelasjoner } from '../vigo/skjema.ts';
@@ -73,6 +77,130 @@ export function fagUndertekst(t: T, kode: string, fag: Fag): string {
     .join(' · ');
 }
 
+function Faglenke({ kode, fag }: Fagtreff) {
+  const { t, malform } = useTekst();
+  return (
+    <a class="listelenke" href={`#/fag/${kode}`}>
+      <span class="listelenke-tekst">
+        <span class="listelenke-tittel">{fag.navn[malform]}</span>
+        <span class="listelenke-under">{fagUndertekst(t, kode, fag)}</span>
+      </span>
+      <Ikon navn="hoyre" class="ikon-liten" />
+    </a>
+  );
+}
+
+/** Fagene i en liste, 50 om gangen. */
+function Fagliste({ treff }: { treff: readonly Fagtreff[] }) {
+  const { t } = useTekst();
+  const [antall, settAntall] = useState(PER_SIDE);
+  return (
+    <>
+      <ul class="liste">
+        {treff.slice(0, antall).map((tr) => (
+          <li key={tr.kode}>
+            <Faglenke {...tr} />
+          </li>
+        ))}
+      </ul>
+      {treff.length > antall && (
+        <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => settAntall(antall + PER_SIDE)}>
+          {t('fag.visFlere', { antall: formaterTall(treff.length - antall) })}
+        </button>
+      )}
+    </>
+  );
+}
+
+/** En gruppe med overskrift som åpner og lukker den. Innholdet tegnes først når gruppen er åpen. */
+function Gruppe({ tittel, aapen: start, nivaa, children }: { tittel: string; aapen: boolean; nivaa: 2 | 3; children: () => preact.ComponentChildren }) {
+  const [aapen, settAapen] = useState(start);
+  const id = useId();
+  const Overskrift = nivaa === 2 ? 'h2' : 'h3';
+  return (
+    <section class={`faggruppe faggruppe-${nivaa}`}>
+      <Overskrift class="faggruppe-tittel">
+        <button type="button" class="kortknapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
+          <span class="kortknapp-tekst">{tittel}</span>
+          <Ikon navn={aapen ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
+        </button>
+      </Overskrift>
+      <div id={id} hidden={!aapen}>
+        {aapen && children()}
+      </div>
+    </section>
+  );
+}
+
+/** Grupper med mer enn så mange fag deles etter læreplan. */
+const STOR_GRUPPE = 12;
+
+/** Treffene gruppert etter fagtype, og store grupper etter læreplan (lukket til brukeren åpner dem). */
+function Grupper({ treff, program, titler }: { treff: readonly Fagtreff[]; program: string; titler: Readonly<Record<string, string>> }) {
+  const { t, malform } = useTekst();
+  const rekkefolge = gruppeRekkefolge(program !== '' && programgruppe(program) === 'yrkesfaglig');
+  const grupper = rekkefolge.map((type) => ({ type, treff: treff.filter((x) => x.fag.type === type) })).filter((g) => g.treff.length > 0);
+  return (
+    <div class="faggrupper">
+      {grupper.map((g) => (
+        <Gruppe key={g.type} nivaa={2} aapen tittel={t('fag.gruppe', { navn: t(`fag.gruppenavn.${g.type}` as `fag.gruppenavn.${Fagtype}`), antall: formaterTall(g.treff.length) })}>
+          {() =>
+            g.treff.length <= STOR_GRUPPE ? (
+              <Fagliste treff={g.treff} />
+            ) : (
+              <ul class="liste">
+                {etterLaereplan(g.treff, malform, titler).map((u) =>
+                  u.treff.length === 1 && u.treff[0] ? (
+                    <li key={u.treff[0].kode}>
+                      <Faglenke {...u.treff[0]} />
+                    </li>
+                  ) : (
+                    <li key={u.laereplan ?? u.tittel}>
+                      <Gruppe nivaa={3} aapen={false} tittel={t('fag.gruppe', { navn: u.laereplan ? u.tittel : t('fag.utenLaereplan'), antall: formaterTall(u.treff.length) })}>
+                        {() => <Fagliste treff={u.treff} />}
+                      </Gruppe>
+                    </li>
+                  ),
+                )}
+              </ul>
+            )
+          }
+        </Gruppe>
+      ))}
+    </div>
+  );
+}
+
+/** Valgene for å vise varianter, opplæring i bedrift og andre fagkoder i tillegg til de vanlige fagene. */
+function VisOgsaa({ filter, skjult, sett }: { filter: Fagfilter; skjult: Record<Exclude<Fagklasse, 'vanlig'>, number>; sett: (f: Partial<Fagfilter>) => void }) {
+  const { t } = useTekst();
+  const vis = visteKlasser(filter);
+  const aktuelle = SKJULTE.filter((k) => vis.has(k) || skjult[k] > 0);
+  if (aktuelle.length === 0) return null;
+  const veksle = (k: Fagklasse) => {
+    const ny = new Set(vis);
+    if (ny.has(k)) ny.delete(k);
+    else ny.add(k);
+    sett({ vis: SKJULTE.filter((x) => ny.has(x)).join(',') });
+  };
+  const antallSkjult = SKJULTE.reduce((s, k) => s + skjult[k], 0);
+  return (
+    <fieldset class="vis-ogsaa">
+      <legend>{t('fag.visOgsaa')}</legend>
+      {antallSkjult > 0 && <p class="dempet liten">{t('fag.skjulte', { antall: formaterTall(antallSkjult) })}</p>}
+      {aktuelle.map((k) => (
+        <label key={k} class="avkrysning">
+          <input type="checkbox" checked={vis.has(k)} onChange={() => veksle(k)} data-klasse={k} />
+          <span>
+            {t(`fag.klasse.${k}`, { antall: formaterTall(skjult[k]) })}
+            <span class="dempet liten blokk">{t(`fag.klasseHjelp.${k}`)}</span>
+          </span>
+        </label>
+      ))}
+    </fieldset>
+  );
+}
+
 function Filterfelt({ indeks, filter, sett, t, malform }: { indeks: Fagindeks; filter: Fagfilter; sett: (f: Partial<Fagfilter>) => void; t: T; malform: Malform }) {
   const valg = useMemo(() => filtervalg(indeks), [indeks]);
   return (
@@ -92,24 +220,41 @@ export default function Liste({ sporring }: SideProps) {
   const sokId = useId();
   const filterId = useId();
   const [indeks, settIndeks] = useState<Fagindeks | null>(null);
+  const [roller, settRoller] = useState<Fagroller | null>(null);
   const [feil, settFeil] = useState(false);
   const [filter, settFilter] = useState<Fagfilter>(() => filterFraAdresse(sporring));
-  const antallAktive = Object.entries(filter).filter(([k, v]) => k !== 'tekst' && v !== '').length;
+  const antallAktive = Object.entries(filter).filter(([k, v]) => k !== 'tekst' && k !== 'vis' && v !== '').length;
   const [visFilter, settVisFilter] = useState(antallAktive > 0);
-  const [antall, settAntall] = useState(PER_SIDE);
+  // Ny nøkkel for listen når filteret endres, så «vis flere» og åpne grupper begynner på nytt.
+  const [utgave, settUtgave] = useState(0);
+
+  // En lenke til et annet søk mens siden er åpen (f.eks. #/fag?q=KEF1001) gir nytt søk og filter.
+  const adresse = sporring.toString();
+  useEffect(() => {
+    const ny = filterFraAdresse(new URLSearchParams(adresse));
+    if (new URLSearchParams(filterTilAdresse(ny)).toString() !== new URLSearchParams(filterTilAdresse(filter)).toString()) {
+      settFilter(ny);
+      settUtgave((u) => u + 1);
+    }
+    // Bare når adressen endres utenfra. Når brukeren endrer filteret, er adressen og filteret like.
+  }, [adresse]);
 
   useEffect(() => {
     lastFagindeks().then(settIndeks, () => settFeil(true));
+    // Uten rollene vises alle fagene, som før (avgjørelse 031).
+    lastFagroller().then(settRoller, () => undefined);
   }, []);
 
   const sett = (endring: Partial<Fagfilter>) => {
     const ny = { ...filter, ...endring };
     settFilter(ny);
-    settAntall(PER_SIDE);
+    settUtgave((u) => u + 1);
     erstattAdresse('/fag', filterTilAdresse(ny));
   };
 
-  const treff = useMemo(() => (indeks ? filtrerFag(indeks, filter) : []), [indeks, filter]);
+  const klasser = useMemo(() => (indeks && roller ? fagklasser(indeks, roller.roller) : undefined), [indeks, roller]);
+  const { treff, skjult } = useMemo(() => (indeks ? sokFag(indeks, filter, klasser) : { treff: [], skjult: { variant: 0, bedrift: 0, andre: 0 } }), [indeks, filter, klasser]);
+  const gruppert = filter.tekst.trim() === '' && treff.length > 0;
 
   return (
     <div class="side">
@@ -134,7 +279,7 @@ export default function Liste({ sporring }: SideProps) {
               {antallAktive > 0 ? t('fag.filterAktive', { antall: antallAktive }) : t('fag.filter')}
             </button>
             {antallAktive > 0 && (
-              <button type="button" class="lenkeknapp liten" onClick={() => sett({ ...tomtFilter, tekst: filter.tekst })}>
+              <button type="button" class="lenkeknapp liten" onClick={() => sett({ ...tomtFilter, tekst: filter.tekst, vis: filter.vis })}>
                 {t('fag.nullstill')}
               </button>
             )}
@@ -144,28 +289,10 @@ export default function Liste({ sporring }: SideProps) {
           </div>
           <Erstatning sok={filter.tekst} indeks={indeks} malform={malform} t={t} />
           <p role="status" class="dempet liten">
-            {treff.length === 0 ? t('fag.ingenTreff') : treff.length === 1 ? t('fag.ettFag') : t('fag.antall', { antall: formaterTall(treff.length) })}
+            {treff.length === 0 ? (skjult.variant + skjult.bedrift + skjult.andre > 0 ? t('fag.ingenVanlige') : t('fag.ingenTreff')) : treff.length === 1 ? t('fag.ettFag') : t('fag.antall', { antall: formaterTall(treff.length) })}
           </p>
-          {treff.length > 0 && (
-            <ul class="liste">
-              {treff.slice(0, antall).map(({ kode, fag }) => (
-                <li key={kode}>
-                  <a class="listelenke" href={`#/fag/${kode}`}>
-                    <span class="listelenke-tekst">
-                      <span class="listelenke-tittel">{fag.navn[malform]}</span>
-                      <span class="listelenke-under">{fagUndertekst(t, kode, fag)}</span>
-                    </span>
-                    <Ikon navn="hoyre" class="ikon-liten" />
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-          {treff.length > antall && (
-            <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => settAntall(antall + PER_SIDE)}>
-              {t('fag.visFlere', { antall: formaterTall(treff.length - antall) })}
-            </button>
-          )}
+          {klasser && <VisOgsaa filter={filter} skjult={skjult} sett={sett} />}
+          {gruppert ? <Grupper key={utgave} treff={treff} program={filter.program} titler={roller?.laereplaner ?? {}} /> : treff.length > 0 && <Fagliste key={utgave} treff={treff} />}
           <p class="dempet liten">{t('fag.hentet', { dato: formaterDato(indeks.hentet, malform) })}</p>
         </>
       )}

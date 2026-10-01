@@ -2,6 +2,7 @@
 // når appen installeres). Læreplanene er egne filer under data/grep/laereplaner/ som hentes når et fag åpnes,
 // og som tjenestearbeideren tar vare på til bruk uten nett (avgjørelse 022).
 import type { Fagindeks, Laereplan } from './skjema.ts';
+import type { Rolle } from './tilbud/modell.ts';
 import type { Fagrelasjoner } from './vigo/skjema.ts';
 
 let indeks: Promise<Fagindeks> | null = null;
@@ -17,6 +18,20 @@ let relasjoner: Promise<Fagrelasjoner> | null = null;
 export function lastFagrelasjoner(): Promise<Fagrelasjoner> {
   relasjoner ??= import('../../../data/vigo/fagrelasjoner.json').then((m) => m.default as unknown as Fagrelasjoner);
   return relasjoner;
+}
+
+// Rollene til fagkodene i tilbudene (avgjørelse 031) er en liten JS-bit som regnes ut når appen bygges.
+export interface Fagroller {
+  roller: Readonly<Record<string, Rolle>>;
+  /** Titlene på læreplanene, f.eks. «Fremmedspråk». */
+  laereplaner: Readonly<Record<string, string>>;
+}
+
+let roller: Promise<Fagroller> | null = null;
+
+export function lastFagroller(): Promise<Fagroller> {
+  roller ??= import('virtual:fagroller').then((m) => ({ roller: m.default, laereplaner: m.laereplaner }));
+  return roller;
 }
 
 const planer = new Map<string, Promise<Laereplan>>();

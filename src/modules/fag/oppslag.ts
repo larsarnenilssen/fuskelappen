@@ -1,4 +1,5 @@
 // Søk og filter i fagindeksen fra Grep. Rene funksjoner uten avhengighet til grensesnittet.
+import { type Fagklasse, SKJULTE } from './klasser.ts';
 import type { Fag, Fagindeks, Fagtype, Trinn } from './skjema.ts';
 
 export interface Fagfilter {
@@ -14,12 +15,14 @@ export interface Fagfilter {
   eksamensform: string;
   /** Årstimetall som tekst, f.eks. «140». */
   timer: string;
+  /** Fagklasser som vises i tillegg til de vanlige fagene, kommaseparert, f.eks. «variant,bedrift» (avgjørelse 031). */
+  vis: string;
 }
 
-export const tomtFilter: Fagfilter = { tekst: '', program: '', trinn: '', type: '', vurdering: '', eksamensform: '', timer: '' };
+export const tomtFilter: Fagfilter = { tekst: '', program: '', trinn: '', type: '', vurdering: '', eksamensform: '', timer: '', vis: '' };
 
 /** Feltene i filteret i den rekkefølgen de står i adressen (#/fag?q=…&program=…). */
-export const filterfelt = { tekst: 'q', program: 'program', trinn: 'trinn', type: 'type', vurdering: 'vurdering', eksamensform: 'eksamen', timer: 'timer' } as const satisfies Record<keyof Fagfilter, string>;
+export const filterfelt = { tekst: 'q', program: 'program', trinn: 'trinn', type: 'type', vurdering: 'vurdering', eksamensform: 'eksamen', timer: 'timer', vis: 'vis' } as const satisfies Record<keyof Fagfilter, string>;
 
 export function filterFraAdresse(sporring: URLSearchParams): Fagfilter {
   const f = { ...tomtFilter };
@@ -70,6 +73,37 @@ export function tekstpoeng(kode: string, fag: Fag, tekst: string): number {
 export interface Fagtreff {
   kode: string;
   fag: Fag;
+}
+
+/** Klassene brukeren har slått på i filteret. */
+export function visteKlasser(f: Fagfilter): Set<Fagklasse> {
+  const vis = new Set(f.vis.split(',').filter(Boolean));
+  return new Set(['vanlig', ...SKJULTE.filter((k) => vis.has(k))]);
+}
+
+export interface Fagsok {
+  treff: Fagtreff[];
+  /** Fag som passer filteret, men som er skjult fordi klassen ikke er slått på. */
+  skjult: Record<Exclude<Fagklasse, 'vanlig'>, number>;
+}
+
+/**
+ * Fagene som passer filteret, med de vanlige fagene og klassene brukeren har slått på. Et søk på en hel fagkode
+ * viser alltid faget (avgjørelse 031). Uten klasser vises alle fagene.
+ */
+export function sokFag(indeks: Fagindeks, f: Fagfilter, klasser?: ReadonlyMap<string, Fagklasse>): Fagsok {
+  const skjult = { variant: 0, bedrift: 0, andre: 0 };
+  const alle = filtrerFag(indeks, f);
+  if (!klasser) return { treff: alle, skjult };
+  const vis = visteKlasser(f);
+  const sok = normaliser(f.tekst);
+  const treff = alle.filter(({ kode }) => {
+    const k = klasser.get(kode) ?? 'andre';
+    if (vis.has(k) || sok === kode.toLowerCase()) return true;
+    if (k !== 'vanlig') skjult[k]++;
+    return false;
+  });
+  return { treff, skjult };
 }
 
 /** Fagene som passer filteret, sortert etter hvor godt de passer søket og så etter fagkode. */

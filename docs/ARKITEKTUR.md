@@ -54,6 +54,8 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 
 I utvikling og testing tas også testmodulen i `tests/fixtures/moduler/` med (via den virtuelle modulen `virtual:testoppsett`). I produksjonsbygget er den tom.
 
+Den virtuelle modulen `virtual:fagroller` regner ut rollen til hver fagkode i tilbudene og titlene på læreplanene når appen bygges. Fagsøket bruker den til å vise de vanlige fagene og gruppere treffene (avgjørelse 031).
+
 ## Søk
 
 MiniSearch med prefikssøk og toleranse for skrivefeil. Synonymlisten i `content/sok/synonymer.yaml` gjør nynorske former om til bokmål, både ved indeksering og ved søk, også inne i sammensatte ord («grunnskule» → «grunnskole»).
