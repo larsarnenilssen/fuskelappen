@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Rettet
+
+- Kalkulatorene mister ikke lenger et fagvalg eller et fag når to endringer kommer rett etter hverandre, for eksempel når du velger fag og skriver årstimer raskt.
+
 ### Endret (for eier)
 
 - `docs/TILBUDSSTRUKTUR.md` viser hvert felles programfag med navn og timer, og vurderingskodene (muntlig, tverrfaglig eksamen) under faget.

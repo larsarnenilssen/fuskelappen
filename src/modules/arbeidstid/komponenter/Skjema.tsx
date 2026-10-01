@@ -16,7 +16,7 @@ import { filtrerFag, tomtFilter } from '../../fag/oppslag.ts';
 import type { Fagindeks as Grepindeks } from '../../fag/skjema.ts';
 import { finnKobling, lesArsrammer, lesKoblinger, type Arsrammerad, type Arsrammevalg, type Arstimerad, type Gruppe, type Hent, type Koblingstabeller } from '../beregning/index.ts';
 import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
-import { useHent } from '../kontekst.ts';
+import { type Oppdater, useHent } from '../kontekst.ts';
 import { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode } from '../fagvalg.ts';
 
 export { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode };
@@ -476,11 +476,11 @@ export function Fagfelt({
   faaElever: boolean;
   indeks: Fagindeks;
   rader: readonly Arsrammerad[];
-  onPlasser: (p: Arsrammeplass[]) => void;
+  onPlasser: Oppdater<Arsrammeplass[]>;
   onFaaElever: (v: boolean) => void;
 }) {
   const { t } = useTekst();
-  const sett = (i: number, ny: Arsrammeplass) => onPlasser(plasser.map((x, j) => (j === i ? ny : x)));
+  const sett = (i: number, ny: Arsrammeplass) => onPlasser((gamle) => gamle.map((x, j) => (j === i ? ny : x)));
   return (
     <>
       {plasser.map((p, i) => (
@@ -492,7 +492,7 @@ export function Fagfelt({
             onEndring={(ny) => sett(i, ny)}
             ekstra={
               i > 0 ? (
-                <button type="button" class="lenkeknapp liten" onClick={() => onPlasser(plasser.filter((_, j) => j !== i))}>
+                <button type="button" class="lenkeknapp liten" onClick={() => onPlasser((gamle) => gamle.filter((_, j) => j !== i))}>
                   {t('arbeidstid.felles.fjernArsramme')}
                 </button>
               ) : undefined
@@ -503,7 +503,7 @@ export function Fagfelt({
       {(plasser[0]?.valg || erStjernefag(plasser, rader)) && (
         <div class="valgrad">
           {plasser[0]?.valg && (
-            <button type="button" class="lenkeknapp liten" onClick={() => onPlasser([...plasser, tomArsrammeplass()])}>
+            <button type="button" class="lenkeknapp liten" onClick={() => onPlasser((gamle) => [...gamle, tomArsrammeplass()])}>
               <Ikon navn="pluss" class="ikon-liten" />
               {t('arbeidstid.felles.leggTilArsramme')}
             </button>
@@ -619,11 +619,11 @@ export function Gruppekort({
   delresultat: string | null;
   kanFjernes: boolean;
   arstimer?: ReadonlyMap<number, Arstimerad>;
-  onEndring: (g: Gruppetilstand) => void;
+  onEndring: Oppdater<Gruppetilstand>;
   onFjern: () => void;
 }) {
   const { t, malform } = useTekst();
-  const sett = (endring: Partial<Gruppetilstand>) => onEndring({ ...gruppe, ...endring });
+  const sett = (endring: Partial<Gruppetilstand>) => onEndring((gammel) => ({ ...gammel, ...endring }));
   const kjent = kjentArstimer(gruppe.arsrammer[0], arstimer);
   const [lukket, veksle] = useSammenlagt(`gruppe-${gruppe.id}`);
   const innhold = useId();
@@ -652,7 +652,12 @@ export function Gruppekort({
           faaElever={gruppe.faaElever}
           indeks={indeks}
           rader={rader}
-          onPlasser={(arsrammer) => sett({ arsrammer, ...autoArstimer(gruppe, arsrammer, arstimer) })}
+          onPlasser={(endre) =>
+            onEndring((gammel) => {
+              const arsrammer = endre(gammel.arsrammer);
+              return { ...gammel, arsrammer, ...autoArstimer(gammel, arsrammer, arstimer) };
+            })
+          }
           onFaaElever={(faaElever) => sett({ faaElever })}
         />
         <div class="inndatarad">
@@ -756,7 +761,7 @@ export function Grupper({
   delresultater?: (number | null)[];
   /** Kjente årstimer per rad i vedlegg 1. Fylles inn når brukeren velger fag. */
   arstimer?: ReadonlyMap<number, Arstimerad>;
-  onEndring: (g: Gruppetilstand[]) => void;
+  onEndring: Oppdater<Gruppetilstand[]>;
 }) {
   const { t } = useTekst();
   return (
@@ -776,12 +781,12 @@ export function Grupper({
             delresultat={grupper.length > 1 && del != null ? formaterTall(del) : null}
             kanFjernes={grupper.length > 1}
             {...(arstimer ? { arstimer } : {})}
-            onEndring={(ny) => onEndring(grupper.map((x) => (x.id === g.id ? ny : x)))}
-            onFjern={() => onEndring(grupper.filter((x) => x.id !== g.id))}
+            onEndring={(endre) => onEndring((gamle) => gamle.map((x) => (x.id === g.id ? endre(x) : x)))}
+            onFjern={() => onEndring((gamle) => gamle.filter((x) => x.id !== g.id))}
           />
         );
       })}
-      <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => onEndring([...grupper, nyGruppe()])}>
+      <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={() => onEndring((gamle) => [...gamle, nyGruppe()])}>
         <Ikon navn="pluss" class="ikon-liten" />
         {t('arbeidstid.felles.leggTilGruppe')}
       </button>

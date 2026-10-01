@@ -54,7 +54,7 @@ export default function Arbeidsplan() {
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const idTimer = useId();
   const [visHvertFag, settVisHvertFag] = useState(false);
-  const [s, sett] = useSkjematilstand(
+  const [s, sett, endre] = useSkjematilstand(
     'arbeidsplan',
     () => ({
       stilling: 100 as number | null,
@@ -100,7 +100,7 @@ export default function Arbeidsplan() {
       : t('arbeidstid.periode.ukerFyllDager');
   // Årstimer fylt inn fra Grep gjelder et helt år. De tømmes når arbeidsplanen gjøres om til en periode.
   const settPeriode = (pa: boolean) =>
-    sett({ ...s, periode: pa, grupper: pa ? s.grupper.map((g) => (g.arstimerAuto ? { ...g, arstimer: null, arstimerAuto: false } : g)) : s.grupper });
+    sett((gammel) => ({ ...gammel, periode: pa, grupper: pa ? gammel.grupper.map((g) => (g.arstimerAuto ? { ...g, arstimer: null, arstimerAuto: false } : g)) : gammel.grupper }));
   const fylte = s.grupper.map((g) => ({ g, inn: tilGruppe(g, rader, iPeriode) })).filter((x): x is { g: Gruppetilstand; inn: Gruppe } => x.inn !== null);
   const valgtIndeks = Math.max(0, fylte.findIndex((x) => x.g.id === s.timerIGruppe));
   // Prosenten for hver funksjon, også dem som er oppgitt i årsrammetimer.
@@ -281,7 +281,7 @@ export default function Arbeidsplan() {
                       { verdi: 'periode', tekst: t('arbeidstid.arbeidsplan.iPerioden') },
                       { verdi: 'arsbasis', tekst: t('arbeidstid.arbeidsplan.paArsbasis') },
                     ]}
-                    onEndring={(v) => sett({ ...s, arsbasis: v === 'arsbasis' })}
+                    onEndring={(v) => endre({ arsbasis: v === 'arsbasis' })}
                   />
                 )}
                 <Stillingsmaaler
@@ -322,7 +322,7 @@ export default function Arbeidsplan() {
                     <select
                       id={idTimer}
                       value={String(valgtIndeks)}
-                      onChange={(e) => sett({ ...s, timerIGruppe: fylte[Number(e.currentTarget.value)]?.g.id ?? null })}
+                      onChange={(e) => endre({ timerIGruppe: fylte[Number(e.currentTarget.value)]?.g.id ?? null })}
                     >
                       {gruppenavn.map((navn, i) => (
                         <option key={i} value={String(i)}>
@@ -463,7 +463,7 @@ export default function Arbeidsplan() {
               verdi={dager}
               min={1}
               maks={400}
-              onEndring={(v) => sett({ ...s, dager: v })}
+              onEndring={(v) => endre({ dager: v })}
             />
             <Tallfelt
               etikett={t('arbeidstid.periode.skolear')}
@@ -472,7 +472,7 @@ export default function Arbeidsplan() {
               verdi={s.dagerSkolear ?? null}
               min={1}
               maks={400}
-              onEndring={(v) => sett({ ...s, dagerSkolear: v })}
+              onEndring={(v) => endre({ dagerSkolear: v })}
             />
           </div>
           {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={s.dagerSkolear ?? skolearDager} />}
@@ -485,7 +485,7 @@ export default function Arbeidsplan() {
         verdi={s.stilling}
         min={0}
         maks={200}
-        onEndring={(stilling) => sett({ ...s, stilling })}
+        onEndring={(stilling) => endre({ stilling })}
       />
       <Grupper
         {...(iPeriode ? {} : { arstimer })}
@@ -496,7 +496,7 @@ export default function Arbeidsplan() {
         standardUker={iPeriode ? ukerFraDager : uker}
         {...(iPeriode ? { ukerHjelp } : {})}
         delresultater={delresultater}
-        onEndring={(grupper) => sett({ ...s, grupper })}
+        onEndring={(oppdater) => sett((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
       />
       <Funksjoner
         funksjoner={s.funksjoner}
@@ -505,7 +505,7 @@ export default function Arbeidsplan() {
         visTillegg={s.visLonn}
         kontaktlaererTimer={kontaktlaererTimer}
         arsrammeFunksjon={arsrammeFunksjon}
-        onEndring={(f) => sett({ ...s, funksjoner: f })}
+        onEndring={(oppdater) => sett((gammel) => ({ ...gammel, funksjoner: oppdater(gammel.funksjoner) }))}
       />
       <Livsfasekort
         livsfase={s.livsfase}
@@ -514,7 +514,7 @@ export default function Arbeidsplan() {
         satser={livsfasesatser}
         arsverk60={arsverk60}
         feriedager60={feriedager60}
-        onEndring={(livsfase, livsfaseProsent) => sett({ ...s, livsfase, livsfaseProsent })}
+        onEndring={(livsfase, livsfaseProsent) => endre({ livsfase, livsfaseProsent })}
       />
       <Sammenleggbartkort
         nokkel="moter-og-lonn"
@@ -532,7 +532,7 @@ export default function Arbeidsplan() {
           verdi={s.moter}
           min={0}
           maks={37.5}
-          onEndring={(moter) => sett({ ...s, moter })}
+          onEndring={(moter) => endre({ moter })}
         />
         <Tallfelt
           class="felt-kompakt"
@@ -542,22 +542,22 @@ export default function Arbeidsplan() {
           verdi={s.planlegging ?? null}
           min={0}
           maks={400}
-          onEndring={(planlegging) => sett({ ...s, planlegging })}
+          onEndring={(planlegging) => endre({ planlegging })}
         />
-        <Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => sett({ ...s, visLonn })} />
+        <Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => endre({ visLonn })} />
         {s.visLonn && (
           <>
-            <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => sett({ ...s, lonn: l })} />
+            <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => endre({ lonn: l })} />
             {iPeriode && (
               <>
                 <div class="feltrad">
                   <div class="felt">
                     <label for={`${idTimer}-fra`}>{t('arbeidstid.arbeidsplan.fraDato')}</label>
-                    <input id={`${idTimer}-fra`} class="tekstfelt" type="date" value={s.fraDato ?? ''} onInput={(e) => sett({ ...s, fraDato: e.currentTarget.value })} />
+                    <input id={`${idTimer}-fra`} class="tekstfelt" type="date" value={s.fraDato ?? ''} onInput={(e) => endre({ fraDato: e.currentTarget.value })} />
                   </div>
                   <div class="felt">
                     <label for={`${idTimer}-til`}>{t('arbeidstid.arbeidsplan.tilDato')}</label>
-                    <input id={`${idTimer}-til`} class="tekstfelt" type="date" value={s.tilDato ?? ''} onInput={(e) => sett({ ...s, tilDato: e.currentTarget.value })} />
+                    <input id={`${idTimer}-til`} class="tekstfelt" type="date" value={s.tilDato ?? ''} onInput={(e) => endre({ tilDato: e.currentTarget.value })} />
                   </div>
                 </div>
                 <p class={datoFeil ? 'felt-feilmelding' : 'felt-hjelp'} role={datoFeil ? 'alert' : undefined}>
@@ -568,7 +568,7 @@ export default function Arbeidsplan() {
             {over60 ? (
               <p class="felt-hjelp">{t('arbeidstid.livsfase.feriepenger60')}</p>
             ) : (
-              <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(v) => sett({ ...s, over60: v })} />
+              <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(v) => endre({ over60: v })} />
             )}
             <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.tilleggHint')}</p>
           </>

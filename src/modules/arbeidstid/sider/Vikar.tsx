@@ -17,7 +17,7 @@ export default function Vikar() {
   const hent = useHent();
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
-  const [s, sett] = useSkjematilstand('vikar', () => ({
+  const [s, sett, endre] = useSkjematilstand('vikar', () => ({
     type: 'fast' as 'fast' | 'timevikar',
     plasser: [tomArsrammeplass()],
     faaElever: false,
@@ -89,7 +89,7 @@ export default function Vikar() {
           { verdi: 'fast', tekst: t('arbeidstid.vikar.fast') },
           { verdi: 'timevikar', tekst: t('arbeidstid.vikar.timevikar') },
         ]}
-        onEndring={(type) => sett({ ...s, type })}
+        onEndring={(type) => endre({ type })}
       />
       <Sammenleggbartkort
         nokkel="vikartimer"
@@ -101,17 +101,17 @@ export default function Vikar() {
           faaElever={s.faaElever}
           indeks={indeks}
           rader={rader}
-          onPlasser={(plasser) => sett({ ...s, plasser })}
-          onFaaElever={(faaElever) => sett({ ...s, faaElever })}
+          onPlasser={(oppdater) => sett((gammel) => ({ ...gammel, plasser: oppdater(gammel.plasser) }))}
+          onFaaElever={(faaElever) => endre({ faaElever })}
         />
-        <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={s.okter} min={0} maks={2000} onEndring={(okter) => sett({ ...s, okter })} />
-        <Minuttvelger minutter={s.minutter} fritt={s.minutterFritt} onEndring={(minutter, minutterFritt) => sett({ ...s, minutter, minutterFritt })} />
+        <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={s.okter} min={0} maks={2000} onEndring={(okter) => endre({ okter })} />
+        <Minuttvelger minutter={s.minutter} fritt={s.minutterFritt} onEndring={(minutter, minutterFritt) => endre({ minutter, minutterFritt })} />
       </Sammenleggbartkort>
 
       {s.type === 'timevikar' && (
         <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
-          <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
-          <Vippe tekst={t('arbeidstid.vikar.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+          <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => endre({ lonn })} />
+          <Vippe tekst={t('arbeidstid.vikar.over60')} pa={s.over60} onEndring={(over60) => endre({ over60 })} />
         </Sammenleggbartkort>
       )}
 

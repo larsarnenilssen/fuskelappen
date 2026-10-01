@@ -25,7 +25,7 @@ export default function Overtid() {
   const rader = useArsrammer(hent);
   const indeks = useFagindeks(hent, rader);
   const konstant = useRegeltall(hent, 'hta.timelonn_konstant') ?? 0;
-  const [s, sett] = useSkjematilstand('overtid', () => ({
+  const [s, sett, endre] = useSkjematilstand('overtid', () => ({
     // Stillingsplanen kan lenke hit med beskjeftigelsen utfylt (#/arbeidstid/overtid?beskjeftigelse=103.13).
     beskjeftigelse: tallFraAdresse('beskjeftigelse'),
     plasser: [tomArsrammeplass()],
@@ -92,7 +92,7 @@ export default function Overtid() {
         verdi={s.beskjeftigelse}
         min={0}
         maks={300}
-        onEndring={(beskjeftigelse) => sett({ ...s, beskjeftigelse })}
+        onEndring={(beskjeftigelse) => endre({ beskjeftigelse })}
       />
       <Sammenleggbartkort nokkel="fag" tittel={t('arbeidstid.overtid.fag')}>
         <Fagfelt
@@ -100,13 +100,13 @@ export default function Overtid() {
           faaElever={s.faaElever}
           indeks={indeks}
           rader={rader}
-          onPlasser={(plasser) => sett({ ...s, plasser })}
-          onFaaElever={(faaElever) => sett({ ...s, faaElever })}
+          onPlasser={(oppdater) => sett((gammel) => ({ ...gammel, plasser: oppdater(gammel.plasser) }))}
+          onFaaElever={(faaElever) => endre({ faaElever })}
         />
       </Sammenleggbartkort>
       <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
-        <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => sett({ ...s, lonn })} />
-        <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => sett({ ...s, over60 })} />
+        <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => endre({ lonn })} />
+        <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => endre({ over60 })} />
       </Sammenleggbartkort>
     </Kalkulatorside>
   );
