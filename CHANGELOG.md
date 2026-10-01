@@ -27,6 +27,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - `docs/TILBUDSSTRUKTUR.md` viser hvert felles programfag med navn og timer, og vurderingskodene (muntlig, tverrfaglig eksamen) under faget.
 - Studieforberedende vg3 i naturbruk viser norsk, matematikk, naturfag og historie med kodene fra påbygging.
 - «Fag for studiekompetanse» (PBPBY4) står som vg4 påbygging med fagene fra tabell 27 i rundskrivet.
+- Lærefagene i salg, service og reiseliv står under vg2 salg, service og reiseliv. Grep mangler «bygger på» for dem.
+- Yrkessjåførkurs for voksne står som voksenopplæring, uten tabell fra rundskrivet og uten kroppsøving.
+- Registreringshåndboken (regbok.udir.no) er ny kilde for hva programområdekodene betyr, bl.a. PBPBY4. `docs/REGISTRERINGSHANDBOKEN.md` beskriver hva den kan brukes til senere.
 - Dronefag har fellesfagene for vg2 yrkesfag. Grep kobler dem ikke til programområdet, så kodene hentes fra et annet vg2-tilbud i elektro og datateknologi.
 - Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama stemmer nå med rundskrivet. Landbruk bruker læreplanen for opplæring i skole. Maritime fag har valg mellom dekk og maskin. Fag som går over flere trinn, står for seg.
 

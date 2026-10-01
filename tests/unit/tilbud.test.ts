@@ -1,7 +1,7 @@
 // Tilbudsmodellen (src/modules/fag/tilbud/modell.ts) med små testdata (avgjørelse 024).
 import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
-import { byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import { byggerPaa, byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
 import { kontrollenker, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
@@ -242,6 +242,41 @@ describe('fellesfag som mangler i Grep, og vg4 påbygging', () => {
     expect(t.tabell).toEqual({ nr: '27', omfang: 'Vg4 påbygging' });
     expect(t.deler).toMatchObject([{ linje: 'Historie', koder: ['HIS1011'] }]);
     expect(t.avvik).toEqual([]);
+  });
+});
+
+describe('«bygger på» som mangler i Grep, og voksenopplæring', () => {
+  const i: Fagindeks = {
+    ...indeks,
+    utdanningsprogram: { SR: { nb: 'Salg, service og reiseliv', nn: 'Sal, service og reiseliv' }, TP: { nb: 'Teknologi- og industrifag', nn: 'Teknologi- og industrifag' } },
+    programomrader: {
+      'SRSSR1----': po('Salg, service og reiseliv', 'SR', 'Vg1'),
+      'SRSSR2----': po('Salg, service og reiseliv', 'SR', 'Vg2', ['SRSSR1----']),
+      'SRRLV3----': po('Reiselivsfaget', 'SR', 'Vg3', [], 'bedrift'),
+      'TPTIP1----': po('Teknologi- og industrifag', 'TP', 'Vg1'),
+      'TPAMK2----': po('Arbeidsmaskiner', 'TP', 'Vg2', ['TPTIP1----']),
+      'TPBRT2----': po('Brønnteknikk', 'TP', 'Vg2', ['TPTIP1----']),
+      'TPXXX3----': po('Lærefag uten bygger på', 'TP', 'Vg3', [], 'bedrift'),
+      'TPYSL3----': { ...po('Yrkessjåførkurs for voksne', 'TP', 'Vg3', ['TPTIP1----']), merkelapper: ['for_voksenopplaering'] },
+    },
+    fag: {},
+  };
+
+  it('lærefag uten «bygger på» bygger på programmets eneste vg2', () => {
+    expect(byggerPaa('SRRLV3----', i)).toEqual({ koder: ['SRSSR2----'], avledet: true });
+    expect(byggTilbud('SRSSR2----', i, null).videre).toEqual(['SRRLV3----']);
+    expect(byggTilbud('SRRLV3----', i, null)).toMatchObject({ fra: ['SRSSR2----'], fraAvledet: true });
+    expect(byggStruktur(i).find((p) => p.program === 'SR')?.utenfor).toEqual([]);
+  });
+
+  it('gjetter ikke når programmet har flere vg2', () => {
+    expect(byggerPaa('TPXXX3----', i)).toEqual({ koder: [], avledet: false });
+    expect(byggerPaa('TPAMK2----', i)).toEqual({ koder: ['TPTIP1----'], avledet: false });
+  });
+
+  it('voksenopplæring får ingen tabell fra rundskrivet', () => {
+    const vg3 = { ...fordeling('Vg3', 'Tabell 21 Fag- og timefordeling i yrkesfaglige utdanningsprogram, vg3 i skole', ['Ordinær'], [['Kroppsøving', 56], ['Totalt omfang', 56]]), nr: '21' };
+    expect(byggTilbud('TPYSL3----', i, { ...ff, tabeller: [vg3] })).toMatchObject({ tabell: null, deler: [] });
   });
 });
 

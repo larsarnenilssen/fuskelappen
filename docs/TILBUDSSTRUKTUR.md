@@ -7,8 +7,8 @@ Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026
 ## Sammendrag
 
 - 16 utdanningsprogram, 323 programområder: 134 i skole og 189 i bedrift. 32 er varianter for særskilte skoler.
-- 134 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 134 av dem.
-- 4 ulike avvik i 35 programområder (se under).
+- 133 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 133 av dem.
+- 4 ulike avvik i 34 programområder (se under).
 
 ### Summer i rundskrivet som ikke stemmer
 
@@ -21,17 +21,20 @@ Kontrollen av hver kolonne i rundskrivet fant disse. De påvirker ikke tilbudene
 - Tabell 13 (Totalt over 3 år), kolonne 14 Elever med tegnspråk: linjene gir 2831, tabellen sier 2943.
 - Tabell 23 (Samlet timetall over to år for lærlinger uten vg1 og vg2 i skole eller vg2), kolonne 3 Elever med tegnspråk: linjene gir 588, tabellen sier 644.
 
+### Programområder i skole uten tabell i rundskrivet
+
+- Vg3 Yrkessjåførkurs for voksne (TPYSL3) – voksenopplæring
+
 ### Programområder som ikke nås fra inngangen
 
 Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst under programmet.
 
 - Studiespesialisering: Realfag vg2 tyske skole (STREA2TY), Realfag vg3 tyske skole (STREA3TY)
-- Salg, service og reiseliv: Reiselivsfaget (SRRLV3), Sikkerhetsfaget (SRSIK3), Salgsfaget (SRSLG3), Service- og administrasjonsfaget (SRSOA3)
 
 ### Avvik mellom rundskrivet og Grep
 
-- Grep kobler ingen fellesfag til programområdet. (33: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
-- Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (16: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
+- Grep kobler ingen fellesfag til programområdet. (32: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
+- Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (15: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700. ELROM3
 - Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde. ELDRF2
 
@@ -2448,39 +2451,12 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram (PBPBY3).
 
-#### Ikke koblet til inngangen i Grep
+Lærefag etter Salg, service og reiseliv (SRSSR2):
 
-##### Vg3 Reiselivsfaget (SRRLV3)
-
-Opplæring i bedrift.
-
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p2)
-
-Fagkoder: RLV3004 Reiselivsfaget, RLV3103 Reiselivsfaget, skriftlig.
-
-##### Vg3 Sikkerhetsfaget (SRSIK3)
-
-Opplæring i bedrift.
-
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p2)
-
-Fagkoder: SIK3004 Sikkerhetsfaget, SIK3103 Sikkerhetsfaget, skriftlig.
-
-##### Vg3 Salgsfaget (SRSLG3)
-
-Opplæring i bedrift.
-
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p2)
-
-Fagkoder: GNSV100 Norsk og samfunnskunnskap, VOV, GNSV200 Norsk og samfunnskunnskap for språklige minoriteter, VOV, SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig, SLGV105 Regelverk og arbeidsliv, SLGV106 Service og relasjoner, SLGV107 Markedsføring og salgsprosesser, SLGV108 Økonomi og bærekraft i virksomheten.
-
-##### Vg3 Service- og administrasjonsfaget (SRSOA3)
-
-Opplæring i bedrift.
-
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p2)
-
-Fagkoder: SOA3001 Service- og administrasjonsfaget, SOA3103 Service- og administrasjonsfaget, skriftlig.
+- Reiselivsfaget (SRRLV3): RLV3004 Reiselivsfaget, RLV3103 Reiselivsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p5)
+- Sikkerhetsfaget (SRSIK3): SIK3004 Sikkerhetsfaget, SIK3103 Sikkerhetsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p5)
+- Salgsfaget (SRSLG3): 8 koder, f.eks. SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5)
+- Service- og administrasjonsfaget (SRSOA3): SOA3001 Service- og administrasjonsfaget, SOA3103 Service- og administrasjonsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p5)
 
 ### Teknologi- og industrifag (TP)
 
@@ -2840,22 +2816,13 @@ Lærefag etter Transport og logistikk (TPTOL2):
 - Logistikkfaget (TPLOG3): 8 koder, f.eks. LOG3004 Logistikkfaget, LOG3103 Logistikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplog3----/p5)
 - Yrkessjåførfaget (TPYRK3): YRK3004 Yrkessjåførfaget, YRK3103 Yrkessjåførfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpyrk3----/p5)
 
-##### Vg3 Yrkessjåførkurs for voksne (TPYSL3) · 981 timer ✓
+##### Vg3 Yrkessjåførkurs for voksne (TPYSL3)
 
-Tabell 21 (Vg3) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1).
+Voksenopplæring: tabellene i rundskrivet gjelder ikke, og det er ingen kroppsøving. Bygger på Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpysl3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpysl3----/p2)
 
-| Del | Timer | Fagkoder | Årsramme |
-|---|--:|---|---|
-| Kroppsøving | 56 | **ingen fagkode i Grep** |  |
-| Felles programfag fra eget programområde | 925 | **ingen fagkode i Grep**<br>vurdering: 4 koder |  |
-| **Sum** | **981** | Rundskrivet: 981 | |
-
-Avvik:
-
-- ⚠ Grep kobler ingen fellesfag til programområdet.
-- ⚠ Felles programfag fra eget programområde: fant ingen felles programfag i Grep.
+Andre fag i Grep for programområdet: YSL2001 Bransjeteknikk, YSL2002 Transport og logistikk, YSL3001 Transport, YSL3002 Planlegging og drift.
 
 ## Påbygging til generell studiekompetanse
 

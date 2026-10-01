@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import type { Arsrammerad } from '../../src/modules/arbeidstid/beregning/arsrammer.ts';
 import { finnKobling, type Koblingstabeller } from '../../src/modules/arbeidstid/beregning/kobling.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import { byggStruktur, byggTilbud, erVariant, skolearFor, velgFordeling, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
+import { byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
@@ -116,8 +116,8 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     ut.push(`${niva} ${po.trinn} ${ponavn(kode)}${t.tabell ? ` · ${t.sum} timer ${stemmer ? '✓' : '⚠'}` : ''}`, '');
     const om: string[] = [];
     if (t.tabell) om.push(`Tabell ${t.tabell.nr} (${t.tabell.omfang}) i ${fordeling?.rundskriv ?? 'rundskrivet'}.`);
-    else om.push(po.sted === 'bedrift' ? 'Opplæring i bedrift.' : '**Ingen tabell i rundskrivet.**');
-    if (t.fra.length > 0) om.push(`Bygger på ${polister(t.fra)}.`);
+    else om.push(po.sted === 'bedrift' ? 'Opplæring i bedrift.' : erVoksenopplaering(po) ? 'Voksenopplæring: tabellene i rundskrivet gjelder ikke, og det er ingen kroppsøving.' : '**Ingen tabell i rundskrivet.**');
+    if (t.fra.length > 0) om.push(`Bygger på ${polister(t.fra)}${t.fraAvledet ? ' (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06)' : ''}.`);
     // Påbygging bygger på vg2 i de yrkesfaglige programmene. Det er det vanlige løpet, ikke kryssløp.
     if (t.kryssFra.length > 0) om.push(`${t.gruppe === 'pabygging' ? 'Bygger på' : 'Kryssløp fra'} ${polister(t.kryssFra)}.`);
     if (po.timer !== null && t.totalt !== null && po.timer !== t.totalt) om.push(`Grep oppgir ${po.timer} årstimer.`);
@@ -169,7 +169,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
         // Lærefagets egne koder først, så fellesfag og andre koder (f.eks. norsk og samfunnskunnskap for voksne).
         const koder = (tb?.deler.flatMap((d) => (d.type === 'fag' ? d.koder : [])) ?? []).sort((x, y) => Number(indeks.fag[x]?.type !== 'felles_programfag') - Number(indeks.fag[y]?.type !== 'felles_programfag') || x.localeCompare(y));
         const lenke = vilbliLenke(b, indeks, { side: 'p5', via: kode });
-        ut.push(`- ${ponavn(b)}${koder.length > 0 ? `: ${faglister(koder, 3)}` : ''}${tb && tb.fra.length > 1 ? ` (også etter ${tb.fra.filter((f) => f !== kode).map(kort).join(', ')})` : ''}${lenke ? ` · [Vilbli](${lenke})` : ''}`);
+        ut.push(`- ${ponavn(b)}${koder.length > 0 ? `: ${faglister(koder, 3)}` : ''}${tb && tb.fra.length > 1 ? ` (også etter ${tb.fra.filter((f) => f !== kode).map(kort).join(', ')})` : ''}${tb?.fraAvledet ? ' (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06)' : ''}${lenke ? ` · [Vilbli](${lenke})` : ''}`);
       }
       ut.push('');
     }
@@ -207,7 +207,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     ut.push('');
   }
   const utenTabell = iSkole.filter((t) => !t.tabell);
-  if (utenTabell.length > 0) ut.push('### Programområder i skole uten tabell i rundskrivet', '', ...utenTabell.map((t) => `- ${t.programomrade.trinn} ${ponavn(t.kode)}`), '');
+  if (utenTabell.length > 0) ut.push('### Programområder i skole uten tabell i rundskrivet', '', ...utenTabell.map((t) => `- ${t.programomrade.trinn} ${ponavn(t.kode)}${erVoksenopplaering(t.programomrade) ? ' – voksenopplæring' : ''}`), '');
   const utenfor = struktur.filter((s) => s.utenfor.length > 0);
   if (utenfor.length > 0) {
     ut.push('### Programområder som ikke nås fra inngangen', '', 'Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst under programmet.', '');
