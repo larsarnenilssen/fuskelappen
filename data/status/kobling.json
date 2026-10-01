@@ -1,5 +1,5 @@
 {
- "hentet": "2026-09-30T19:33:33.531Z",
+ "hentet": "2026-10-01T08:50:03.521Z",
  "antall": {
   "fag": 1978,
   "koblet": 718,
@@ -1240,10 +1240,5 @@
   "YSL3001": "uten_arstimer",
   "YSL3002": "uten_arstimer"
  },
- "avvik": [
-  {
-   "alvor": "advarsel",
-   "tekst": "Årstimetabellen har SPR3026 Latin 1 på rad 77 (Ant.spr. og ku. – Stud.spes Vg2), men koblingen gir rad 114, 115."
-  }
- ]
+ "avvik": []
 }

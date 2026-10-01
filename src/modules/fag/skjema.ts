@@ -47,6 +47,10 @@ export const programomradeSkjema = z
     program: z.string().regex(/^[A-Z0-9]{2}$/),
     trinn: trinnSkjema,
     sted: z.enum(['skole', 'bedrift', 'ukjent']),
+    /** Programområdene dette bygger på (forrige trinn, og kryssløp fra andre utdanningsprogram). */
+    bygger: z.array(z.string()),
+    /** Årstimer for elevene på trinnet (feltet aarstimer i Grep), eller null. */
+    timer: z.number().positive().nullable(),
   })
   .strict();
 

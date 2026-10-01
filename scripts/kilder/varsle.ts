@@ -33,7 +33,8 @@ const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 const forslag = (lesJson(join(rot, '.generert/forslag.json')) ?? undefined) as { verdier: string | null; grep: string | null } | undefined;
 const grep = ((lesJson(join(rot, '.generert/grep-endringer.json')) ?? { endringer: null }) as { endringer: Grependringer | null }).endringer;
 const kobling = lesJson(join(rot, '.generert/kobling-endringer.json')) as { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
-const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo, grep, kobling, ...(forslag ? { forslag } : {}) });
+const udir = lesJson(join(rot, '.generert/udir-endringer.json')) as { endringer: string[]; nyVersjon: string | null } | null;
+const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, indeks, repo, grep, kobling, udir, ...(forslag ? { forslag } : {}) });
 
 // Kontrollrunden: første mandag i mai og august, eller når den startes manuelt (KONTROLLRUNDE=ja).
 const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;

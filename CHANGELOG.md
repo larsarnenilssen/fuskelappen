@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til (for eier)
+
+- **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.
+- **Fag- og timefordelingen** fra rundskrivet Udir-1 hentes hver uke, med én fil per skoleår. Endringer står i kontrollsaken. Når rundskrivet for neste skoleår kommer, sier kontrollsaken fra.
+- Grep-hentingen tar med hva hvert programområde bygger på og timetallet på trinnet. Kontrollsaken viser nye og nedlagte programområder, endret «bygger på» og fag som bytter trinn.
+
+### Endret
+
+- Latin 1 og Gresk 1 får nå bare årsrammen for Latin/Gresk (496), etter beskjed fra eier.
+- Eier har kontrollert tabellen over programnavn i koblingen.
+
 ## [0.9.0] – 2026-09-30
 
 ### Lagt til

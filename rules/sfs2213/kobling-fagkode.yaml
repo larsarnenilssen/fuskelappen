@@ -21,13 +21,13 @@ kilde: udir-grep
 verdier:
   programnavn:
     kilde: { id: udir-grep }
-    kontrollert: null
+    kontrollert: { dato: "2026-10-01" }
     grunnlag: avledet
     merknad: >-
       Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver). PB er påbygging
       til generell studiekompetanse (programområdet PBPBY3 i Grep). Vedlegget er skrevet for Kunnskapsløftet 2006.
       Kunst, design og arkitektur (KD) og Medier og kommunikasjon (ME) er egne studieforberedende program fra 2020.
-      Om fellesfagene der skal ha årsrammen for «Stud.spes», er ikke avklart. Tabellen skal bekreftes av eier.
+      Eier bekreftet tabellen 01.10.2026: «Stud.spes» gjelder bare studiespesialisering (ST).
     verdi:
       - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST] }
       - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }

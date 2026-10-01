@@ -12,6 +12,18 @@ export interface Fagspor {
   timer: number | null;
   /** Vurderingsordningen for elever som kort tekst, f.eks. «standpunkt, trekkordning_2, eksamensform_2». */
   vurdering: string;
+  /** Trinn, f.eks. «Vg2» eller «Vg2, Vg3». Mangler i data fra før tilbudsstrukturen. */
+  trinn?: string;
+}
+
+/** Det som sammenlignes for hvert programområde (tilbudsstrukturen). */
+export interface Programomradespor {
+  navn: string;
+  trinn: string;
+  sted: string;
+  /** Programområdene det bygger på, kommaseparert. */
+  bygger: string;
+  timer: number | null;
 }
 
 export interface Grepdata {
@@ -22,6 +34,8 @@ export interface Grepdata {
   fag?: Record<string, Fagspor>;
   /** Fingeravtrykk per læreplan (data/grep/laereplaner/). */
   laereplaner?: Record<string, string>;
+  /** Programområdene i tilbudsstrukturen (fagindeksen). */
+  tilbud?: Record<string, Programomradespor>;
 }
 
 export interface Grependringer {
@@ -30,6 +44,7 @@ export interface Grependringer {
   arstimer: { endret: string[]; nye: string[]; fjernet: string[] };
   fag?: { nye: string[]; fjernet: string[]; endret: string[] };
   laereplaner?: { nye: string[]; fjernet: string[]; endret: string[] };
+  tilbud?: { nye: string[]; fjernet: string[]; endret: string[] };
 }
 
 function programliste(p: Programomrader): Map<string, string> {
@@ -88,8 +103,31 @@ export function sammenlignGrep(gammel: Grepdata, ny: Grepdata): Grependringer {
         const linjer: string[] = [];
         if (g.timer !== f.timer && !kjenteTimer.has(k)) linjer.push(`${k} ${f.navn}: årstimer ${timer(g.timer)} → ${timer(f.timer)}`);
         if (g.vurdering !== f.vurdering) linjer.push(`${k} ${f.navn}: vurderingsordning ${g.vurdering} → ${f.vurdering}`);
+        if (g.trinn !== undefined && f.trinn !== undefined && g.trinn !== f.trinn) linjer.push(`${k} ${f.navn}: trinn ${g.trinn || 'ingen'} → ${f.trinn || 'ingen'}`);
         if (g.navn !== f.navn && !kjent.has(k)) linjer.push(`${k}: ${g.navn} → ${f.navn}`);
         return linjer;
+      }),
+    };
+  }
+  if (ny.tilbud) {
+    const g = gammel.tilbud ?? {};
+    const n = ny.tilbud;
+    const vis = (k: string, p: Programomradespor) => `${k.replace(/-+$/, '')} ${p.navn} (${p.trinn})`;
+    ut.tilbud = {
+      nye: gammel.tilbud ? Object.entries(n).filter(([k]) => !(k in g)).map(([k, p]) => vis(k, p)) : [],
+      fjernet: Object.entries(g)
+        .filter(([k]) => !(k in n))
+        .map(([k, p]) => vis(k, p)),
+      endret: Object.entries(n).flatMap(([k, p]) => {
+        const f = g[k];
+        if (!f) return [];
+        const felt: string[] = [];
+        if (f.navn !== p.navn) felt.push(`navn ${f.navn} → ${p.navn}`);
+        if (f.trinn !== p.trinn) felt.push(`trinn ${f.trinn} → ${p.trinn}`);
+        if (f.sted !== p.sted) felt.push(`opplæringssted ${f.sted} → ${p.sted}`);
+        if (f.bygger !== p.bygger) felt.push(`bygger på ${f.bygger || 'ingen'} → ${p.bygger || 'ingen'}`);
+        if (f.timer !== p.timer) felt.push(`timer ${timer(f.timer)} → ${timer(p.timer)}`);
+        return felt.length > 0 ? [`${vis(k, p)}: ${felt.join('; ')}`] : [];
       }),
     };
   }
@@ -106,7 +144,7 @@ export function sammenlignGrep(gammel: Grepdata, ny: Grepdata): Grependringer {
 }
 
 export function antallEndringer(e: Grependringer): number {
-  const deler: Record<string, string[]>[] = [e.programomrader, e.fagkoder, e.arstimer, e.fag ?? {}, e.laereplaner ?? {}];
+  const deler: Record<string, string[]>[] = [e.programomrader, e.fagkoder, e.arstimer, e.fag ?? {}, e.laereplaner ?? {}, e.tilbud ?? {}];
   return deler.reduce((s, del) => s + Object.values(del).reduce((t, l) => t + l.length, 0), 0);
 }
 
@@ -127,6 +165,9 @@ export function grepsammendrag(e: Grependringer): string {
     [e.laereplaner?.nye.length ?? 0, 'ny læreplan', 'nye læreplaner'],
     [e.laereplaner?.fjernet.length ?? 0, 'læreplan fjernet', 'læreplaner fjernet'],
     [e.laereplaner?.endret.length ?? 0, 'endret læreplan', 'endrede læreplaner'],
+    [e.tilbud?.nye.length ?? 0, 'nytt programområde i tilbudsstrukturen', 'nye programområder i tilbudsstrukturen'],
+    [e.tilbud?.fjernet.length ?? 0, 'programområde lagt ned', 'programområder lagt ned'],
+    [e.tilbud?.endret.length ?? 0, 'endret programområde', 'endrede programområder'],
   ];
   const tekst = deler.filter(([n]) => n > 0).map(([n, en, flere]) => `${n} ${n === 1 ? en : flere}`);
   return tekst.length === 0 ? 'Ingen endringer.' : `${tekst.join(', ')}.`;
@@ -149,6 +190,9 @@ export function grepdetaljer(e: Grependringer, maks = 60): string[] {
     ...(e.laereplaner?.nye ?? []).map((l) => `Ny læreplan: ${l}`),
     ...(e.laereplaner?.fjernet ?? []).map((l) => `Læreplan fjernet: ${l}`),
     ...(e.laereplaner?.endret ?? []).map((l) => `Endret læreplan: ${l} (https://www.udir.no/lk20/${l.toLowerCase()})`),
+    ...(e.tilbud?.nye ?? []).map((l) => `Nytt programområde: ${l}`),
+    ...(e.tilbud?.fjernet ?? []).map((l) => `Programområde lagt ned: ${l}`),
+    ...(e.tilbud?.endret ?? []).map((l) => `Endret programområde: ${l}`),
   ];
   return linjer.length > maks ? [...linjer.slice(0, maks), `… og ${linjer.length - maks} til.`] : linjer;
 }

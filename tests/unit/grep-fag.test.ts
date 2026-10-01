@@ -46,7 +46,16 @@ function raadata(): Raadata {
     ],
     programomrader: [
       { kode: 'STUSP1----', status: PUB, tittel: tittel('Studiespesialisering vg1'), aarstrinn: { kode: 'vg1' }, opplaeringssted: [{ uri: 'http://psi.udir.no/kl06/opplaeringssted_skole' }] },
-      { kode: 'HSHEA2----', status: PUB, tittel: tittel('Helsearbeiderfag'), aarstrinn: { kode: 'vg2' }, opplaeringssted: [{ uri: 'http://psi.udir.no/kl06/opplaeringssted_skole' }] },
+      {
+        kode: 'HSHEA2----',
+        status: PUB,
+        tittel: tittel('Helsearbeiderfag'),
+        aarstrinn: { kode: 'vg2' },
+        aarstimer: '982',
+        opplaeringssted: [{ uri: 'http://psi.udir.no/kl06/opplaeringssted_skole' }],
+        // Kryssløp fra vg1 studiespesialisering. Programområder som ikke er med (HSHSF1), tas ikke med.
+        'bygger-paa-programomraade': [ref('HSHSF1----'), ref('STUSP1----'), ref('GAMMEL----', UTG)],
+      },
       { kode: 'PBPBY3----', status: PUB, tittel: tittel('Vg3 påbygging'), aarstrinn: { kode: 'vg3' }, opplaeringssted: [] },
     ],
     opplaeringsfag: [
@@ -117,7 +126,7 @@ describe('fagindeksen', () => {
 
   it('kjenner utdanningsprogrammene, med påbygging (PB) fra programområdet', () => {
     expect(Object.keys(indeks.utdanningsprogram)).toEqual(['HS', 'PB', 'ST']);
-    expect(indeks.programomrader['HSHEA2----']).toEqual({ navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeiderfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole' });
+    expect(indeks.programomrader['HSHEA2----']).toEqual({ navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeiderfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole', bygger: ['STUSP1----'], timer: 982 });
     expect(indeks.programomrader['PBPBY3----']).toMatchObject({ program: 'PB', trinn: 'Vg3', sted: 'ukjent' });
   });
 });
@@ -204,6 +213,25 @@ describe('endringsrapporten for fag og læreplaner', () => {
       'Ny læreplan: NOR01-08',
       'Læreplan fjernet: NOR01-06',
       'Endret læreplan: HEA02-04 (https://www.udir.no/lk20/hea02-04)',
+    ]);
+  });
+});
+
+describe('endringer i tilbudsstrukturen', () => {
+  const tom: Grepdata = { programomrader: {}, fagkoder: {}, arstimer: {} };
+  const po = { navn: 'Helsearbeiderfag', trinn: 'Vg2', sted: 'skole', bygger: 'HSHSF1----', timer: 982 };
+  it('viser nye, nedlagte og endrede programområder, og fag som flyttes til et annet trinn', () => {
+    const forrige: Grepdata = { ...tom, tilbud: { 'HSHEA2----': po, 'HSGML2----': { ...po, navn: 'Gammelt' } }, fag: { HEA2005: { navn: 'Helsefremmende arbeid', timer: 197, vurdering: 'x', trinn: 'Vg2' } } };
+    const ny: Grepdata = {
+      ...tom,
+      tilbud: { 'HSHEA2----': { ...po, bygger: 'HSHSF1----, STUSP1----', timer: 981 }, 'HSNYT2----': { ...po, navn: 'Nytt' } },
+      fag: { HEA2005: { navn: 'Helsefremmende arbeid', timer: 197, vurdering: 'x', trinn: 'Vg1' } },
+    };
+    expect(grepdetaljer(sammenlignGrep(forrige, ny))).toEqual([
+      'Endret fag: HEA2005 Helsefremmende arbeid: trinn Vg2 → Vg1',
+      'Nytt programområde: HSNYT2 Nytt (Vg2)',
+      'Programområde lagt ned: HSGML2 Gammelt (Vg2)',
+      'Endret programområde: HSHEA2 Helsearbeiderfag (Vg2): bygger på HSHSF1---- → HSHSF1----, STUSP1----; timer 982 → 981',
     ]);
   });
 });

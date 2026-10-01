@@ -130,6 +130,15 @@ function programomrade(p: Grepelement): Programomrade | null {
     program: p.kode.slice(0, 2),
     trinn,
     sted: sted.some((s) => s.endsWith('_bedrift')) ? 'bedrift' : sted.some((s) => s.endsWith('_skole')) ? 'skole' : 'ukjent',
+    // Grep kan ha samme programområde flere ganger (f.eks. HSPOR3).
+    bygger: [
+      ...new Set(
+        liste(p['bygger-paa-programomraade'])
+          .filter(erPublisert)
+          .map((b) => String(b.kode)),
+      ),
+    ].sort(),
+    timer: Number.isFinite(Number(p.aarstimer)) && Number(p.aarstimer) > 0 ? Number(p.aarstimer) : null,
   };
 }
 
@@ -173,6 +182,7 @@ export function byggFagindeks(r: Raadata, hentet: string): Fagindeks {
   }
   // Programområder uten gjeldende utdanningsprogram (f.eks. Reform 94) tas ikke med.
   for (const [k, p] of Object.entries(programomrader)) if (!utdanningsprogram[p.program]) delete programomrader[k];
+  for (const p of Object.values(programomrader)) p.bygger = p.bygger.filter((b) => programomrader[b] !== undefined);
 
   const koder = new Map<string, string>();
   const fag: Fagindeks['fag'] = {};

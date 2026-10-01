@@ -1,6 +1,6 @@
 # Kobling fra fagkode til årsramme
 
-Laget automatisk (`npm run kobling:rapport`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet 2026-09-30.
+Laget automatisk (`npm run kobling:rapport`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet 2026-10-01.
 
 Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.
 
@@ -17,9 +17,7 @@ Av de koblede er 491 koblet eksplisitt og 257 med regel.
 
 ## Avvik
 
-**Bør ses på:**
-
-- Årstimetabellen har SPR3026 Latin 1 på rad 77 (Ant.spr. og ku. – Stud.spes Vg2), men koblingen gir rad 114, 115.
+Ingen avvik.
 
 ## Programnavn i vedlegg 1 og utdanningsprogram i Grep
 

@@ -2,7 +2,7 @@
 
 <!-- Generert av `npm run kontroll:rapport`. Kildesjekken lager den på nytt hver uke. Ikke rediger for hånd. -->
 
-Oppdatert 30.09.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
+Oppdatert 01.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
 
 Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.
 
@@ -12,10 +12,10 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 | Din kontroll | Antall |
 |---|---|
-| Kontrollert | 0 |
+| Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 74 |
+| Ikke kontrollert | 73 |
 | Praksis og tolkninger som bør bekreftes | 12 av 12 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -25,7 +25,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
 | Enkeltverdier fra kilden uten sitat | 2 |
 
-**Kobling fra fagkode til årsramme** (fase 2): 748 av 1978 fagkoder er koblet, 1230 er ikke koblet, og det er 1 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
+**Kobling fra fagkode til årsramme** (fase 2): 748 av 1978 fagkoder er koblet, 1230 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
 
 ## Må ses på
 
@@ -179,7 +179,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `arstimer` (sfs2213-2026-2027) | – | tabell, 98 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `fagnavn` (sfs2213-2026-2027) | – | tabell, 33 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `kallenavn` (sfs2213-2026-2027) | – | tabell, 43 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
-| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | ikke kontrollert |
+| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | kontrollert 01.10.2026 |
 | `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 142 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 36 rader | avledet av andre verdier | ikke kontrollert |
