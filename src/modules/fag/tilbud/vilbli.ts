@@ -1,16 +1,18 @@
 // Lenker til Vilbli.no for et tilbud: oversikten, fag- og timefordelingen og skolene og lærebedriftene som tilbyr
 // det. Vilbli er fylkeskommunenes informasjonstjeneste for søkere og holder skoletilbudet oppdatert fra VIGO. Appen
-// lagrer ingen skoledata; lenken lages fra programområdekodene og «bygger på» i Grep (avgjørelse 027).
+// lagrer ingen skoledata; lenken lages fra programområdekodene i Grep (avgjørelse 027).
 //
 // Formatet er lest ut av adressene på Vilbli, f.eks.
-// https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
-// - «no» er hele landet, ellers fylket (f.eks. «viken», «agder»).
+// https://www.vilbli.no/nb/nb/no/aktivitorfaget/program/v.hs/v.hsakt3----/p5
+// - «no» er hele landet, ellers fylket (f.eks. «vestland», «more-og-romsdal»).
 // - Teksten etter fylket er utdanningsprogrammet.
-// - Løpet er programområdekodene fra vg1 og fram til tilbudet, med «v.» foran og «_» mellom.
+// - Programområdet står alene, med «v.» foran. Hele løpet (vg1_vg2_vg3) sender lærefag til vg1 (eier 01.10.2026),
+//   så det brukes ikke.
+// - Påbygging (PB) står under et yrkesfaglig utdanningsprogram: programmet brukeren kom fra, ellers det første
+//   programmet påbyggingen bygger på. Under v.pb gir Vilbli 404 (eier 01.10.2026).
 // - p1 er oversikten, p2 fag- og timefordelingen, p5 skoler og lærebedrifter.
 // Vilbli stenger for maskinell henting, så formatet kontrolleres for hånd i kontrollrundene.
 import type { Fagindeks } from '../skjema.ts';
-import { erVariant } from './modell.ts';
 
 export type Vilblisside = 'p1' | 'p2' | 'p5';
 
@@ -22,32 +24,14 @@ export function vilbliTekst(tekst: string): string {
     .replace(/ø/g, 'o')
     .replace(/å/g, 'a')
     .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
+    .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
 
 /**
- * Løpet fram til et programområde: følger «bygger på» bakover i samme utdanningsprogram (hovedløpet, ikke
- * varianter og kryssløp) til inngangen. Gir [vg1, vg2, …, koden].
- */
-export function lopTil(kode: string, indeks: Pick<Fagindeks, 'programomrader'>): string[] {
-  const lop = [kode];
-  const sett = new Set(lop);
-  let naa = kode;
-  for (;;) {
-    const po = indeks.programomrader[naa];
-    const forrige = po?.bygger.filter((b) => indeks.programomrader[b]?.program === po.program && !erVariant(b) && !sett.has(b)).sort()[0];
-    if (!forrige) return lop;
-    lop.unshift(forrige);
-    sett.add(forrige);
-    naa = forrige;
-  }
-}
-
-/**
- * Lenke til et tilbud på Vilbli, for hele landet eller et fylke (fylkesnavnet, f.eks. «Vestland»). Kan tilbudet nås
- * fra flere programområder (f.eks. et lærefag etter to vg2), gir `via` løpet brukeren kom fra.
+ * Lenke til et tilbud på Vilbli, for hele landet eller et fylke (fylkesnavnet, f.eks. «Vestland»). `via` er
+ * programområdet brukeren kom fra; det avgjør programmet påbygging vises under.
  */
 export function vilbliLenke(
   kode: string,
@@ -56,13 +40,14 @@ export function vilbliLenke(
 ): string | null {
   const po = indeks.programomrader[kode];
   if (!po) return null;
-  const programnavn = indeks.utdanningsprogram[po.program]?.nb ?? po.program;
-  const via = valg.via && po.bygger.includes(valg.via) ? valg.via : null;
-  const lop = (via ? [...lopTil(via, indeks), kode] : lopTil(kode, indeks))
-    .map((k) => `v.${k.toLowerCase()}`)
-    .join('_');
+  const program =
+    po.program === 'PB'
+      ? (indeks.programomrader[valg.via && po.bygger.includes(valg.via) ? valg.via : ([...po.bygger].sort()[0] ?? '')]?.program ?? null)
+      : po.program;
+  if (!program) return null;
+  const programnavn = indeks.utdanningsprogram[program]?.nb ?? program;
   const sted = valg.fylke ? vilbliTekst(valg.fylke) : 'no';
-  return `https://www.vilbli.no/nb/nb/${sted}/${vilbliTekst(programnavn)}/program/v.${po.program.toLowerCase()}/${lop}/${valg.side}`;
+  return `https://www.vilbli.no/nb/nb/${sted}/${vilbliTekst(programnavn)}/program/v.${program.toLowerCase()}/v.${kode.toLowerCase()}/${valg.side}`;
 }
 
 /**
@@ -76,7 +61,7 @@ export function kontrollenker(indeks: Pick<Fagindeks, 'programomrader' | 'utdann
     ['Vg2 helsearbeiderfag, Vestland', 'HSHEA2----', { side: 'p5', fylke: 'Vestland' }],
     ['Lærefag: helsearbeiderfaget', 'HSHEA3----', { side: 'p5', via: 'HSHEA2----' }],
     ['Vg3 språk, samfunnsfag og økonomi', 'STSSA3----', { side: 'p5' }],
-    ['Påbygging', 'PBPBY3----', { side: 'p5' }],
+    ['Påbygging etter vg2 helsearbeiderfag', 'PBPBY3----', { side: 'p5', via: 'HSHEA2----' }],
     ['Vg2 helsearbeiderfag, Møre og Romsdal', 'HSHEA2----', { side: 'p5', fylke: 'Møre og Romsdal' }],
   ];
   return utvalg.flatMap(([tekst, kode, valg]) => {
