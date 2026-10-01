@@ -245,12 +245,26 @@ Svar fra eier 01.10.2026 (K1–K4):
 - K3: Utvalget ser riktig ut.
 - K4: Varianter av fellesfag har samme årsramme som det ordinære faget. Valgfrie programfag har raden for programfag på programmet og trinnet. Yrkesfaglig opphenting har årsrammen for felles programfag på vg1 i programmet som hentes opp.
 
-Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn er endret og må godkjennes på nytt (`/godkjent programnavn`). Fortsatt åpent:
+Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn ble endret, og eier godkjente den på nytt 01.10.2026. Fortsatt åpent:
 - [x] **Fremmedspråk som valgfritt programfag** (PSP) på studiespesialisering: eier 01.10.2026: som fremmedspråk vg2 og vg3 (496, rad 102 og 103).
 - [x] **Kroppsøving vg3 på påbygging** (KRO1019): eier 01.10.2026: som kroppsøving vg3 på studiespesialisering (635, rad 8).
-- [ ] **Andre valgfrie programfag på studiespesialisering** som vedlegget ikke nevner: sosialkunnskap, samfunnsgeografi, økonomistyring, økonomi og ledelse, samisk historie og samfunn, statistikk, matematikk for økonomi, matematikk X, geofag X, programmering og modellering X, teknologi og forskningslære X, kristendomskunnskap og katolsk kristendom. Hvilken rad skal de ha?
+- [x] **Andre valgfrie programfag på studiespesialisering:** Eier fant årsrammen i InSchool 01.10.2026. Fagene er koblet til raden i vedlegget med samme årsramme som passer best:
 
-Nå er 1197 fagkoder koblet.
+  | Fagkode | Fag | Årsramme (InSchool) | Rad i vedlegg 1 |
+  |---|---|--:|---|
+  | REA3041 | Geofag X | 496 | Geofag 1/2 (130, 131), samme læreplan |
+  | REA3051 | Teknologi og forskningslære X | 496 | Teknol/forsk (138, 139), samme læreplan |
+  | REA3055 | Matematikk X | 496 | Matematikk (128, 129) |
+  | REA3064 | Programmering og modellering X | 496 | Matematikk (128, 129). Info.tekn. har 525, så den passer ikke |
+  | SAM3051 | Sosialkunnskap | 496 | Pol/samf (126, 127) |
+  | SAM3053 | Samfunnsgeografi | 496 | Pol/samf (126, 127) |
+  | SAM3068 | Økonomistyring | 496 | Nær.øk (120, 121), samme læreplan som økonomi og ledelse |
+  | SAM3070 | Økonomi og ledelse | 496 | Nær.øk (120, 121) |
+  | SPR3022 | Antikkens kultur, vg3 | 525 | Ant.spr. og ku. (77), raden for vg2 |
+
+  Ikke funnet i InSchool (antakelig friskolefag eller utgått), derfor fortsatt uten årsramme: KRI1023 og KRI1024 Kristendomskunnskap 3, KRI1028 og KRI1029 Katolsk kristendom, REA3065 Statistikk, REA3067 Matematikk for økonomi, SAM3066 og SAM3067 Samisk historie og samfunn 1 og 2. Kalkulatoren lar brukeren skrive inn årsrammen selv.
+
+Nå er 1208 fagkoder koblet.
 
 Skriv til Claude hva som stemmer, og hva som skal endres. Du kan også godkjenne tabellene med `/godkjent programnavn kobling_fellesfag kobling_programfag kobling_regler` i kontrollsaken, og praksisen med `/godkjent yff-arsramme`.
 

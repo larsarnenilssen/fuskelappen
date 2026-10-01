@@ -66,8 +66,8 @@ test.describe('fagvalg med fagkode', () => {
 
   test('fag som ikke er koblet, får årstimer, og årsrammen velges selv', async ({ page }) => {
     await aapneBeskjeftigelse(page);
-    await velgFagkode(page, 'SAM3051');
-    await expect(page.getByText('SAM3051 er ikke koblet til en årsramme i vedlegg 1.')).toBeVisible();
+    await velgFagkode(page, 'REA3065');
+    await expect(page.getByText('REA3065 er ikke koblet til en årsramme i vedlegg 1.')).toBeVisible();
     await page.getByRole('button', { name: 'Skriv inn årsramme selv' }).click();
     await page.getByLabel('Årsramme (60 min)').fill('525');
     await expect(page.getByText('Valgt selv: faget er ikke koblet til en årsramme.')).toBeVisible();

@@ -20,7 +20,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Rettet
 
-- **Flere fag får årsramme fra fagkoden** i kalkulatorene (1197 fagkoder, før 748): fellesfag på kunst, design og arkitektur og medier og kommunikasjon, varianter av fellesfag (samisk, tegnspråk, grunnleggende norsk, styrket opplæring o.l.), valgfrie programfag på idrett, musikk, dans og drama, kunst, design og arkitektur, medier og kommunikasjon og naturbruk, fremmedspråk som programfag på studiespesialisering, kroppsøving vg3 på påbygging og yrkesfaglig opphenting. Etter eiers svar.
+- **Flere fag får årsramme fra fagkoden** i kalkulatorene (1208 fagkoder, før 748): fellesfag på kunst, design og arkitektur og medier og kommunikasjon, varianter av fellesfag (samisk, tegnspråk, grunnleggende norsk, styrket opplæring o.l.), valgfrie programfag på idrett, musikk, dans og drama, kunst, design og arkitektur, medier og kommunikasjon og naturbruk, fremmedspråk og flere andre valgfrie programfag på studiespesialisering (årsramme fra InSchool), kroppsøving vg3 på påbygging og yrkesfaglig opphenting. Etter eiers svar.
 - Kalkulatorene mister ikke lenger et fagvalg eller et fag når to endringer kommer rett etter hverandre, for eksempel når du velger fag og skriver årstimer raskt.
 
 ### Endret (for eier)
@@ -38,7 +38,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - Latin 1 og Gresk 1 får nå bare årsrammen for Latin/Gresk (496), etter beskjed fra eier.
-- Eier har kontrollert tabellen over programnavn i koblingen.
+- Eier har kontrollert tabellen over programnavn i koblingen, også etter endringene for KD, ME og de utgåtte programnavnene.
 
 ## [0.9.0] – 2026-09-30
 
