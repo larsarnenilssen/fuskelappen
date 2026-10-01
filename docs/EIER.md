@@ -245,10 +245,30 @@ Svar fra eier 01.10.2026 (K1–K4):
 - K3: Utvalget ser riktig ut.
 - K4: Varianter av fellesfag har samme årsramme som det ordinære faget. Valgfrie programfag har raden for programfag på programmet og trinnet. Yrkesfaglig opphenting har årsrammen for felles programfag på vg1 i programmet som hentes opp.
 
-Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn er endret og må godkjennes på nytt (`/godkjent programnavn`). Fortsatt åpent:
+Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn ble endret, og eier godkjente den på nytt 01.10.2026. Fortsatt åpent:
 - [x] **Fremmedspråk som valgfritt programfag** (PSP) på studiespesialisering: eier 01.10.2026: som fremmedspråk vg2 og vg3 (496, rad 102 og 103).
 - [x] **Kroppsøving vg3 på påbygging** (KRO1019): eier 01.10.2026: som kroppsøving vg3 på studiespesialisering (635, rad 8).
-- [ ] **Andre valgfrie programfag på studiespesialisering** som vedlegget ikke nevner: sosialkunnskap, samfunnsgeografi, økonomistyring, økonomi og ledelse, samisk historie og samfunn, statistikk, matematikk for økonomi, matematikk X, geofag X, programmering og modellering X, teknologi og forskningslære X, kristendomskunnskap og katolsk kristendom. Hvilken rad skal de ha?
+- [ ] **Andre valgfrie programfag på studiespesialisering** uten årsramme (eier slår dem opp i InSchool):
+
+  | Fagkode | Fag | Årstimer | Trinn |
+  |---|---|--:|---|
+  | KRI1023 | Kristendomskunnskap 3, vg1 | 70 | Vg1 |
+  | KRI1024 | Kristendomskunnskap 3, vg2 | 70 | Vg2 |
+  | KRI1028 | Katolsk kristendom, vg1 | 84 | Vg1 |
+  | KRI1029 | Katolsk kristendom, vg2 | 56 | Vg2 |
+  | REA3041 | Geofag X | 84 | Vg2, Vg3 |
+  | REA3051 | Teknologi og forskningslære X | 84 | Vg2, Vg3 |
+  | REA3055 | Matematikk X | 84 | Vg2, Vg3 |
+  | REA3064 | Programmering og modellering X | 84 | Vg2, Vg3 |
+  | REA3065 | Statistikk | 140 | Vg2, Vg3 |
+  | REA3067 | Matematikk for økonomi | 140 | Vg2, Vg3 |
+  | SAM3051 | Sosialkunnskap | 140 | Vg2, Vg3 |
+  | SAM3053 | Samfunnsgeografi | 140 | Vg2, Vg3 |
+  | SAM3066 | Samisk historie og samfunn 1 | 140 | Vg2, Vg3 |
+  | SAM3067 | Samisk historie og samfunn 2 | 140 | Vg2, Vg3 |
+  | SAM3068 | Økonomistyring | 140 | Vg2, Vg3 |
+  | SAM3070 | Økonomi og ledelse | 140 | Vg2, Vg3 |
+  | SPR3022 | Antikkens kultur | 140 | Vg3 (vg2 er koblet til rad 77) |
 
 Nå er 1197 fagkoder koblet.
 

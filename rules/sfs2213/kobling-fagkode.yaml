@@ -21,7 +21,7 @@ kilde: udir-grep
 verdier:
   programnavn:
     kilde: { id: udir-grep }
-    kontrollert: null
+    kontrollert: { dato: "2026-10-01" }
     grunnlag: avledet
     merknad: >-
       Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver). PB er påbygging
@@ -29,7 +29,7 @@ verdier:
       Kunst, design og arkitektur (KD) og Medier og kommunikasjon (ME) er egne studieforberedende program fra 2020.
       Eier bekreftet tabellen 01.10.2026. Senere samme dag svarte eier at fellesfag på KD og ME har årsrammen
       for «Stud.spes», og at de utgåtte radene «Design og hå» og «Serv/samf» gjelder programmene som har tatt over
-      (DT og FD, SR og IM). Tabellen er derfor endret og må godkjennes på nytt.
+      (DT og FD, SR og IM). Eier godkjente den endrede tabellen 01.10.2026.
     verdi:
       - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST, KD, ME] }
       - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }

@@ -12,10 +12,10 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 
 | Din kontroll | Antall |
 |---|---|
-| Kontrollert | 0 |
+| Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 76 |
+| Ikke kontrollert | 75 |
 | Praksis og tolkninger som bør bekreftes | 12 av 12 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -179,7 +179,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `arstimer` (sfs2213-2026-2027) | – | tabell, 98 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `fagnavn` (sfs2213-2026-2027) | – | tabell, 33 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
 | `kallenavn` (sfs2213-2026-2027) | – | tabell, 43 rader | tabell eller liste, sjekkes ikke automatisk ennå | ikke kontrollert |
-| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | ikke kontrollert |
+| `programnavn` (sfs2213-2026-2027) | – | tabell, 21 rader | avledet av andre verdier | kontrollert 01.10.2026 |
 | `kobling_fellesfag` (sfs2213-2026-2027) | – | tabell, 316 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 63 rader | avledet av andre verdier | ikke kontrollert |

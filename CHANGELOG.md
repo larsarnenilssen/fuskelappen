@@ -38,7 +38,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - Latin 1 og Gresk 1 får nå bare årsrammen for Latin/Gresk (496), etter beskjed fra eier.
-- Eier har kontrollert tabellen over programnavn i koblingen.
+- Eier har kontrollert tabellen over programnavn i koblingen, også etter endringene for KD, ME og de utgåtte programnavnene.
 
 ## [0.9.0] – 2026-09-30
 
