@@ -16,7 +16,7 @@ En fil kan inneholde ett element eller en liste.
 | `gyldighet` | nei | `{ niva: nasjonal }` (standard), `{ niva: fylke, fylke, forhold }` eller `{ niva: skole, fylke, skole, forhold }`. `forhold` er `erstatter` eller `supplerer` |
 | `kilder` | ja | minst én `{ id, punkt?, url? }`. `id` må finnes i `content/kilder.yaml` |
 | `kontrollert` | ja | `null` eller `{ dato: ÅÅÅÅ-MM-DD }`. **Settes bare av eier.** |
-| `kontrollsporsmal` | ja i `content/` | 1–5 spørsmål til eier (bokmål) om det som er usikkert i teksten: om noe kan misforstås, eller om en praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019) |
+| `kontrollsporsmal` | ja i `content/` | 1–5 spørsmål til eier (bokmål) om det som er usikkert i teksten: om noe kan misforstås, eller om en praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019). Under spørsmålene står kildene elementet viser til, med lenke og punkt, så eier kan sjekke svaret der. Minst én kilde må ha `punkt` eller `url` |
 | `stikkord` | nei | ekstra søkeord |
 | `relatert` | nei | id-er til annet innhold (må finnes) |
 | `kodeliste` | nei | kodeliste fra VIGO Kodeverksbase som vises under teksten, med søk: `fagmerknader` eller `vitnemalsmerknader` (avgjørelse 026) |

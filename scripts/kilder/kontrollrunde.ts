@@ -1,9 +1,10 @@
 // Kontrollrundene: to ganger i året (første mandag i mai, når hovedtariffavtalen endres, og første mandag i
 // august, før skoleåret) lager kildejobben en egen sak med praksis og tolkninger som bør bekreftes, og innhold
 // som bør kontrolleres på nytt. Ren logikk, testes i tests/unit/kontrollrunde.test.ts (avgjørelse 019).
-import type { Praksis } from '../../src/core/innhold/skjema.ts';
-import type { Kildekontroll, Kontrollinnhold, Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
+import type { Kilderegister, Praksis } from '../../src/core/innhold/skjema.ts';
+import type { Kildekontroll, Kontrollinnhold, Kontrollkilde, Kontrollverdi } from '../../src/core/kontroll/indeks.ts';
 import { tellKontroll } from '../../src/core/kontroll/indeks.ts';
+import { kildelenker, praksiskilder } from '../kontroll/kildelenker.ts';
 
 export const RUNDEETIKETT = 'kontrollrunde';
 
@@ -49,6 +50,8 @@ export function lagKontrollrunde(
   repo: string,
   /** Lenker til Vilbli som sjekkes for hånd (avgjørelse 027). */
   lenker: readonly { tekst: string; url: string }[] = [],
+  /** Kilderegisteret, for lenker til kildene eier kan sjekke hvert punkt mot. */
+  register: Pick<Kilderegister, 'kilder'> | null = null,
 ): Kontrollrunde {
   const [aar, maned] = periode.split('-');
   const nr = Number(maned);
@@ -60,6 +63,10 @@ export function lagKontrollrunde(
   const gamle = [...sett.values()].filter((p) => p.eier === 'bor_kontrolleres' || p.eier === 'kilde_endret');
   const t = tellKontroll(indeks);
   const oversikt = `https://github.com/${repo}/blob/main/docs/KONTROLL.md`;
+  const kildelinje = (kilder: readonly Kontrollkilde[]) => {
+    const tekst = register ? kildelenker(kilder, register) : '';
+    return tekst ? [`  - Kilder å sjekke mot: ${tekst}`] : [];
+  };
   const tekst = [
     `Kontrollrunden i ${navn} ${aar ?? ''}. ${innledning} går du gjennom det appen bygger på uten at det står i kildene, og det som bør kontrolleres på nytt. Kryss av det som fortsatt stemmer, og skriv \`/godkjent\` i en kommentar. Da legges datoen inn automatisk. Er noe endret, skriv det til Claude.`,
     '',
@@ -71,6 +78,7 @@ export function lagKontrollrunde(
           `- [ ] **${p.tittel}:** ${p.sporsmal} <!-- praksis:${p.id} -->`,
           `  - Appen: ${p.appen}`,
           `  - Grunnlag: ${p.grunnlag} Sist bekreftet: ${p.bekreftet ? dato(p.bekreftet.dato) : 'aldri'}.`,
+          ...kildelinje(praksiskilder(p, indeks)),
         ])),
     '',
     '## Bør kontrolleres på nytt',
@@ -80,7 +88,8 @@ export function lagKontrollrunde(
       : gamle.map((p) => {
           const hva = p.type === 'verdi' ? `Regelverdien \`${p.id}\`` : `«${p.tittel}» (${p.elementtype})`;
           const hvorfor = p.eier === 'kilde_endret' ? 'kilden er endret etter kontrollen' : 'kontrollert for mer enn 12 måneder siden';
-          return `- [ ] ${hva}: ${hvorfor} (${p.kontrollert ? dato(p.kontrollert) : '–'}). <!-- kontroll:${p.type}:${p.id} -->`;
+          const kilder = p.type === 'innhold' ? p.kilder : indeks.filter((k) => k.verdier.some((v) => v.id === p.id)).map((k) => ({ id: k.kilde, punkt: p.punkt, url: null }));
+          return [`- [ ] ${hva}: ${hvorfor} (${p.kontrollert ? dato(p.kontrollert) : '–'}). <!-- kontroll:${p.type}:${p.id} -->`, ...kildelinje(kilder)].join('\n');
         })),
     '',
     ...(lenker.length > 0

@@ -160,6 +160,11 @@ describe('kontrollspørsmål og praksis', () => {
     expect(feil).toEqual([]);
   });
 
+  it('innhold med kontrollspørsmål viser til et konkret sted i minst én kilde (punkt eller url)', () => {
+    const feil = innhold.filter(({ element: e }) => (e.kontrollsporsmal ?? []).length > 0 && !e.kilder.some((k) => k.punkt || k.url)).map(({ element }) => element.id);
+    expect(feil).toEqual([]);
+  });
+
   it('praksislisten viser bare til regelverdier og innhold som finnes', () => {
     const verdier = new Set(alleVerdier.map(({ id }) => id));
     const ider = new Set(innhold.map(({ element }) => element.id));

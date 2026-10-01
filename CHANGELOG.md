@@ -9,9 +9,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Fagsiden** viser fag som brukes sammen, for eksempel tverrfaglig eksamen og fagene den gjelder, og hvilke utgåtte fagkoder faget erstatter. Er læreplanen erstattet av en ny versjon, står det på siden.
 - **Utgåtte fagkoder:** Søker du på en utgått kode, eller åpner den, ser du hvilken kode som gjelder nå.
 - **Fagmerknader (FAM-koder) og vitnemålsmerknader (VMM-koder)** i begrepsbanken, hver i sitt oppslag med søk på kode og tekst. Kodene finnes også i søket på forsiden.
+- Forklaringene av fagmerknader og vitnemålsmerknader bygger nå på Udirs skriv om føring av vitnemål og kompetansebevis: hva merknadene brukes til, at det er plass til én fagmerknad per fag, og hvilke merknader som bare gjelder vitnemål eller bare kompetansebevis.
 
 ### Lagt til (for eier)
 
+- **Kilder ved kontrollspørsmålene:** Kontrolloversikten (`docs/KONTROLL.md`) og kontrollrundene viser under hvert kontrollspørsmål, hver praksis og hvert punkt som bør kontrolleres på nytt, hvilke kilder du kan sjekke mot, med lenke og punkt.
 - Data fra VIGO Kodeverksbase hentes hver uke sammen med Grep. `docs/VIGO-KODEVERK.md` beskriver hva kodebasen inneholder og hva det kan brukes til senere.
 - Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til Vilbli for hvert tilbud: skolene og lærebedriftene, og fag- og timefordelingen. Kontrollrundene i mai og august har seks av lenkene til avkrysning, fordi Vilbli ikke kan sjekkes automatisk. Lenkene til lærefag og påbygging er rettet etter eiers kontroll.
 - **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.
@@ -31,6 +33,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - Lærefagene i salg, service og reiseliv står under vg2 salg, service og reiseliv. Grep mangler «bygger på» for dem.
 - Yrkessjåførkurs for voksne står som voksenopplæring, uten tabell fra rundskrivet og uten kroppsøving.
 - Fag som går over flere trinn (f.eks. dans, drama og musikk) står i rekkefølgen fra VIGO, f.eks. Scenisk dans 1 → 2 → 3. VIGO-hentingen tar med hvilke fag som bygger på andre fag.
+- Begrepene om fagmerknader og vitnemålsmerknader viser også til Udirs skriv om føring av vitnemål og kompetansebevis og til registreringshåndboken. Begge sjekkes hver uke.
 - Registreringshåndboken (regbok.udir.no) er ny kilde for hva programområdekodene betyr, bl.a. PBPBY4. `docs/REGISTRERINGSHANDBOKEN.md` beskriver hva den kan brukes til senere.
 - Dronefag har fellesfagene for vg2 yrkesfag. Grep kobler dem ikke til programområdet, så kodene hentes fra et annet vg2-tilbud i elektro og datateknologi.
 - Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama stemmer nå med rundskrivet. Landbruk bruker læreplanen for opplæring i skole. Maritime fag har valg mellom dekk og maskin. Fag som går over flere trinn, står for seg.

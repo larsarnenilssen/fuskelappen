@@ -180,7 +180,7 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 
 ## 11. Kontrollspørsmål, praksis og kontrollrundene
 
-**Kontrollspørsmål:** Hvert begrep og hver forklaring har 1–5 spørsmål om det Claude er usikker på i teksten. Et eksempel: «Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?» Du finner alle spørsmålene nederst i `docs/KONTROLL.md`. Endres en kilde, står spørsmålene til det som kan være berørt, i kontrollsaken. Da kontrollerer du det som er usikkert, og trenger ikke lese hele teksten fra bunnen av.
+**Kontrollspørsmål:** Hvert begrep og hver forklaring har 1–5 spørsmål om det Claude er usikker på i teksten. Et eksempel: «Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?» Du finner alle spørsmålene nederst i `docs/KONTROLL.md`. Endres en kilde, står spørsmålene til det som kan være berørt, i kontrollsaken. Da kontrollerer du det som er usikkert, og trenger ikke lese hele teksten fra bunnen av. Under hvert spørsmål står «Kilder å sjekke mot»: kildene teksten bygger på, med lenke og punkt. Det samme står ved hver praksis og i kontrollrundene.
 
 **Praksis og tolkninger:** Noe i appen står ikke i kildene. Det bygger på praksis eller på valg du har gjort, for eksempel 21,67 arbeidsdager per måned, 45 timer planleggingsdager for alle og variabel lønn for deltidsansatte. Alt dette står i `content/kontroll/praksis.yaml` og i kontrolloversikten, med hva appen gjør og hvem som har bestemt det.
 
@@ -192,6 +192,16 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 - **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
 
 Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
+
+**Kontrollspørsmålene til fagmerknader og vitnemålsmerknader** ble besvart fra Udirs skriv om føring av vitnemål og kompetansebevis, kapittel 3, etter beskjed fra eier 01.10.2026:
+
+- Fagmerknader står ved et fag på vitnemål og kompetansebevis. Noen gjelder bare det ene. Det er plass til én per fag.
+- Tekst i vinkelparentes (f.eks. `<FAGKODE>`, `<åååå>`) fylles ut for eleven. Registreringshåndboken sier at disse overføres som fritekst.
+- Utgåtte koder vises fortsatt samlet nederst, fordi de kan stå på eldre vitnemål (Claudes valg).
+- Vitnemålsmerknader gjelder opplæringen generelt eller hele dokumentet. De kan også vise til vedlegg eller utdype en fagmerknad.
+- Vitnemålsmerknader brukes også på kompetansebevis. Noen gjelder bare vitnemål (VMM06, VMM36), og noen bare kompetansebevis (VMM14, 26, 27, 29, 33, 34, 38).
+
+Tekstene er skrevet om etter dette. De har ett nytt kontrollspørsmål hver og `kontrollert: null` til du har lest dem.
 
 ## 12. Godkjenne i saken med /godkjent
 

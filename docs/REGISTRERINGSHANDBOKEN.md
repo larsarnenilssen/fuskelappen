@@ -8,7 +8,7 @@ Vurdering av Udirs registreringshåndbok (`regbok.udir.no`) som kilde, 01.10.202
 - **Omfang:** 67 felt i fire deler: A (felles, f.eks. programområdekode og fagkode), B (skole, f.eks. fagstatus, fullførtkode, fravær, FAM- og VMM-koder, karakterer), C (fagopplæring, f.eks. læretid, kontraktstype, avbrudd) og E (voksne).
 - **Oppdatering:** Én gang i året, vanligvis i april–mai. De fleste feltene ble sist endret 08.04.2025. Hver endring står i endringsloggen (`/endringslogg`), med versjon og dato per felt.
 - **Tilgang:** Vanlige HTML-sider. Det finnes ikke noe API eller nedlasting. `robots.txt` tillater henting, helst kl. 02–05 (norsk tid). Lisens er ikke oppgitt, så vi lenker og siterer kort.
-- **Adresser:** Hvert felt har en fast adresse for gjeldende versjon, f.eks. A03 Programområdekode: `https://regbok.udir.no/35004/3344/35042-1014307.html`. Eldre versjoner har egne adresser. Lenken eier fant (`35042-1037484`) er versjonen fra 2016. Oversiktssiden (`/oversikt`) har alle feltene med full tekst på én side.
+- **Adresser:** Hvert felt har en fast adresse for gjeldende versjon, f.eks. A03 Programområdekode: `https://regbok.udir.no/felt/?Id=1014307` (samme side som `35004/3344/35042-1014307.html`). Eldre versjoner har egne adresser. Lenken eier fant (`35042-1037484`) er versjonen fra 2016. Oversiktssiden (`/oversikt`) har alle feltene med full tekst på én side.
 
 ## Kan den hentes automatisk?
 
@@ -19,13 +19,13 @@ Ja, som en vanlig side. Kildesjekken bruker metoden `side` med `#maincolpage` so
 | Felt | Brukes til |
 |---|---|
 | A03 Programområdekode | Kilde for at PBPBY4 er påbygging etter fag- og yrkesopplæring (`PBPBY4YK--` for elever med fag- eller yrkeskompetanse, `PBPBY4H---` for elever som går mot planlagt sluttkompetanse på lavere nivå etter kontrakt om opplæring), i tillegg til fag for studiekompetanse for voksne og privatister. Sjekkes hver uke (`udir-regbok-programomradekode`). |
+| B16–B19 FAM- og VMM-koder | Kilde for begrepene «Fagmerknader (FAM-koder)» og «Vitnemålsmerknader (VMM-koder)», sammen med Udirs skriv om føring av vitnemål og kompetansebevis, kapittel 3, som er primærkilden. Sjekkes hver uke (`udir-regbok-fam`, `udir-regbok-vmm`, `udir-foring-vitnemal-merknader`). |
 
 ## Mulig bruk senere
 
 | Felt | Mulig bruk |
 |---|---|
 | A03 Programområdekode | Forklare kategoriene og variantene i VIGO (posisjon 7–10, f.eks. H = planlagt sluttkompetanse på lavere nivå, A/B = vg1 over to år, SY = overgang fra studiespesialisering til yrkesfag) i tilbudsvisningen og begrepsbanken. |
-| B16–B19 FAM- og VMM-koder | Kilde for begrepene om fagmerknader og vitnemålsmerknader. Håndboken sier hvilke koder som krever utfyllende tekst (f.eks. FAM13, VMM17) og viser til Udirs skriv om føring av vitnemål og kompetansebevis, som er primærkilden. Kan svare på noen av kontrollspørsmålene til eier. |
 | B07 Fagstatus, B21 Fullførtkode, B22 Bevistype, B26 Karakterer og andre vurderingsuttrykk, B24 Fravær | Fase 6 (vurdering og dokumentasjon): forklaringer av koder skolen ser i InSchool og VIGO. |
 | B10 Individuelt tilrettelagt opplæring, B11 Særskilt språkopplæring, B12 Styrket opplæring | Fase 4: hvordan vedtak registreres. |
 | B14 Merknad for yrkesfaglig fordypning | Tilbudsvisningen og vurdering. |
