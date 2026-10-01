@@ -67,7 +67,7 @@ export default function Beskjeftigelse() {
         periode={false}
         standardUker={uker}
         delresultater={delresultater}
-        onEndring={(g) => settSkjema({ grupper: g })}
+        onEndring={(oppdater) => settSkjema((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
       />
     </Kalkulatorside>
   );

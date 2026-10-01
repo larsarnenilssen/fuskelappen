@@ -10,6 +10,7 @@ import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { Funksjon } from '../beregning/index.ts';
+import type { Oppdater } from '../kontekst.ts';
 import { Bryter, Vippe } from './Skjema.tsx';
 import { tallTekst } from './Utregning.tsx';
 
@@ -82,11 +83,11 @@ export function Funksjoner({
   kontaktlaererTimer: number | null;
   /** Årsrammen for lærere med funksjon (607,5), som årsrammetimer gjøres om med. */
   arsrammeFunksjon: number | null;
-  onEndring: (f: Funksjonstilstand[]) => void;
+  onEndring: Oppdater<Funksjonstilstand[]>;
 }) {
   const { t } = useTekst();
   const id = useId();
-  const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring(funksjoner.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
+  const sett = (fid: number, endring: Partial<Funksjonstilstand>) => onEndring((gamle) => gamle.map((f) => (f.id === fid ? { ...f, ...endring } : f)));
   const nr = (i: number) => t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 });
   return (
     <Sammenleggbartkort
@@ -150,7 +151,7 @@ export function Funksjoner({
                 ]}
                 onEndring={(enhet) => sett(f.id, { enhet })}
               />
-              <button type="button" class="ikonknapp" aria-label={t('arbeidstid.arbeidsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring(funksjoner.filter((x) => x.id !== f.id))}>
+              <button type="button" class="ikonknapp" aria-label={t('arbeidstid.arbeidsplan.fjernFunksjon', { nr: i + 1 })} onClick={() => onEndring((gamle) => gamle.filter((x) => x.id !== f.id))}>
                 <Ikon navn="lukk" class="ikon-liten" />
               </button>
               {iTimer(f) && (prosenter[i] ?? 0) > 0 && (
@@ -190,7 +191,7 @@ export function Funksjoner({
         })}
       </div>
       <div class="med-hjelp">
-        <button type="button" class="lenkeknapp liten" onClick={() => onEndring([...funksjoner, nyFunksjon()])}>
+        <button type="button" class="lenkeknapp liten" onClick={() => onEndring((gamle) => [...gamle, nyFunksjon()])}>
           <Ikon navn="pluss" class="ikon-liten" />
           {t('arbeidstid.arbeidsplan.leggTilFunksjon')}
         </button>

@@ -602,6 +602,26 @@ test.describe('arbeidstid', () => {
     await expect(lonn).toContainText(/Feriepenger i tillegg\s*93\s333,33/);
   });
 
+  test('to endringer før appen har tegnet på nytt, blir begge med', async ({ page }) => {
+    // Velg fag og skriv årstimer i samme JavaScript-oppgave, før appen rekker å tegne på nytt. Begge endringene
+    // skal bli med (tidligere overskrev den siste den første, så faget forsvant).
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByLabel('Fag', { exact: true }).fill('norsk stud vg1');
+    const treff = page.locator('.fagtreff button', { hasText: 'Norsk · Studiespesialisering Vg1' }).first();
+    await expect(treff).toBeVisible();
+    await page.evaluate(() => {
+      const knapp = [...document.querySelectorAll<HTMLButtonElement>('.fagtreff button')].find((b) => b.textContent?.includes('Norsk · Studiespesialisering Vg1'));
+      const felt = document.querySelector<HTMLInputElement>('[data-gruppe="1"] input[inputmode="decimal"]');
+      knapp?.click();
+      if (felt) {
+        felt.value = '140';
+        felt.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+    });
+    // 140 ÷ 496 = 28,23 %
+    await expect(resultat(page)).toContainText('28,23');
+  });
+
   test('arbeidsplan med flere fag og funksjon gir teknisk undertid (fasit 014)', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await expect(page.getByRole('textbox', { name: 'Stillingsprosent' })).toHaveValue('100');

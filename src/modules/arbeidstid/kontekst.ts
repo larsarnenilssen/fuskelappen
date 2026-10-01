@@ -1,5 +1,5 @@
 // Regelkontekst for kalkulatorene: dagens dato og brukerens fylke og skole.
-import { useCallback, useMemo, useState } from 'preact/hooks';
+import { useCallback, useMemo, useRef, useState } from 'preact/hooks';
 import { useTilstand } from '../../app/tilstand.ts';
 import { hentVerdi, type Regelkontekst } from '../../core/regler/index.ts';
 import type { Hent } from './beregning/index.ts';
@@ -61,12 +61,19 @@ function skjemaFraOpphav(nokkel: string): unknown {
   }
 }
 
+/** Oppdaterer en verdi ut fra den siste verdien, ikke den som ble vist sist (se useSkjematilstand). */
+export type Oppdater<T> = (endre: (gammel: T) => T) => void;
+
 /**
  * Tilstand for et skjema som huskes i nettleserhistorikken (history.state) for denne siden.
  * Går brukeren til en kilde eller et begrep og tilbake, står det utfylte der fortsatt.
  * Ingenting lagres på enheten eller sendes noe sted.
+ *
+ * `sett` tar en ny verdi eller en funksjon av den siste verdien. `endre` fletter inn felt i den siste verdien.
+ * Bruk `endre` eller en funksjon: kommer to endringer før skjemaet er tegnet på nytt (f.eks. et fagvalg og
+ * årstimer rett etter), blir begge med. Med `sett({ ...s, felt })` ville den siste overskrevet den første.
  */
-export function useSkjematilstand<T extends object>(nokkel: string, start: () => T, sjekk?: (lagret: T) => void): [T, (ny: T) => void] {
+export function useSkjematilstand<T extends object>(nokkel: string, start: () => T, sjekk?: (lagret: T) => void): [T, (ny: T | ((gammel: T) => T)) => void, (del: Partial<T>) => void] {
   const [verdi, settVerdi] = useState<T>(() => {
     try {
       const egen = (history.state as { skjema?: Record<string, unknown> } | null)?.skjema?.[nokkel];
@@ -85,8 +92,11 @@ export function useSkjematilstand<T extends object>(nokkel: string, start: () =>
     }
     return start();
   });
+  const siste = useRef(verdi);
   const sett = useCallback(
-    (ny: T) => {
+    (endring: T | ((gammel: T) => T)) => {
+      const ny = typeof endring === 'function' ? endring(siste.current) : endring;
+      siste.current = ny;
       settVerdi(ny);
       try {
         const tilstand = (history.state as Record<string, unknown> | null) ?? {};
@@ -98,5 +108,6 @@ export function useSkjematilstand<T extends object>(nokkel: string, start: () =>
     },
     [nokkel],
   );
-  return [verdi, sett];
+  const endre = useCallback((del: Partial<T>) => sett((gammel) => ({ ...gammel, ...del })), [sett]);
+  return [verdi, sett, endre];
 }
