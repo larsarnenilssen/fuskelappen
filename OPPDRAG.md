@@ -378,6 +378,7 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Fase 2 gjøres uten InSchool-data. Koblingene kontrolleres med tester, rapporten over ukoblede fag og avvik (`docs/KOBLING.md`) og eiers gjennomgang av et utvalg koblinger. InSchool-data kan legges inn som ekstra kontroll senere.
 - Kontrollen av innholdet i fase 1 tas fortløpende i kontrollrundene og med `/godkjent`. Fase 1 regnes som ferdig.
 - Levert i 0.9.0: fag og læreplaner fra Grep (avgjørelse 022), koblingen fra fagkode til årsramme med rapport (avgjørelse 023) og fagvalg i kalkulatorene.
+- Levert i 0.10.0 (01.10.2026): VIGO Kodeverksbase (avgjørelse 026) med fag som brukes sammen og utgåtte koder på fagsiden, FAM- og VMM-koder i begrepsbanken, tilbudsstrukturen som rapport (avgjørelse 024) med lenker til Vilbli (avgjørelse 027), registreringshåndboken som kilde (avgjørelse 028), 1208 koblede fagkoder etter eiers svar, og kilder ved hvert kontrollspørsmål. Eier har godkjent tabellen over programnavn.
 
 **Kontrollpunkt:** Eier går gjennom avviksrapporten, et utvalg koblinger og tabellen over programnavn.
 
