@@ -80,6 +80,11 @@ export type Tilbudsdel =
       vurdering: string[];
       /** Fag for særskilte grupper som kan erstatte faget. */
       alternativer: string[];
+      /**
+       * Felles programfag der en del av timene fylles fra en liste: valg mellom fag i samme læreplan (f.eks. dekk
+       * eller maskin), eller fag som går over flere trinn i Grep (f.eks. aktivitetslære 1–3).
+       */
+      utvalg: Utvalg | null;
       /** Avvik mellom rundskrivet og Grep, f.eks. ulike timer. */
       avvik: string[];
     }
@@ -95,6 +100,14 @@ export type Tilbudsdel =
       /** Fagkoden som passer timetallet (YFF). */
       anbefalt: string | null;
     };
+
+export interface Utvalg {
+  grunn: 'valg' | 'flere_trinn';
+  timer: number;
+  /** Antall fag å velge, når alle fagene har samme timetall. */
+  antall: number | null;
+  koder: string[];
+}
 
 export interface Tilpasning {
   /** Kolonnen i rundskrivet, f.eks. «Samisk», «Elever med tegnspråk», «Med stud.spes vg1». */
@@ -178,17 +191,62 @@ function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagind
   // Vurderingskoder: ordinære koder uten timer, med samme læreplan som en av kodene.
   const lp = new Set(koder.map((k) => indeks.fag[k]?.lp));
   const vurdering = ordinare.filter(([, f]) => f.timer === null && lp.has(f.lp)).map(([k]) => k);
-  return { type: 'fag', linje, kategori: 'fellesfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: alternativer.sort(), avvik };
+  return { type: 'fag', linje, kategori: 'fellesfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: alternativer.sort(), utvalg: null, avvik };
 }
 
+const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((s, k) => s + (indeks.fag[k]?.timer ?? 0), 0);
+
+/**
+ * Felles programfag på et programområde. Grep knytter av og til flere fag til programområdet enn eleven har på
+ * trinnet. Da brukes summen i rundskrivet til å finne fagene, i denne rekkefølgen:
+ * 1. Læreplanene: står fagene i flere læreplaner, og passer nøyaktig én kombinasjon av læreplaner med summen,
+ *    brukes den (f.eks. landbruk: læreplanen for opplæring i skole, ikke den for bedrift).
+ * 2. Valg: mangler det timer, og har programområdet valgfrie programfag i samme læreplan med samme timetall,
+ *    velger eleven blant dem (f.eks. maritime fag: dekk eller maskin).
+ * 3. Flere trinn: fag som i Grep går over flere trinn (f.eks. aktivitetslære 1–3 på idrettsfag), fyller resten
+ *    av timene. Hvilke av dem som hører til trinnet, står ikke i Grep.
+ * Stemmer summen fortsatt ikke, meldes avvik.
+ */
 function programfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks): Tilbudsdel {
   // Opphenting (f.eks. YFO2002) er felles programfag i Grep, men en egen linje i rundskrivet.
   const alle = Object.entries(indeks.fag).filter(([, f]) => f.type === 'felles_programfag' && harPo(f, kode) && !erOpphenting(f));
-  const koder = alle.filter(([, f]) => f.timer !== null).map(([k]) => k);
-  const vurdering = alle.filter(([, f]) => f.timer === null).map(([k]) => k);
-  const sum = koder.reduce((s, k) => s + (indeks.fag[k]?.timer ?? 0), 0);
-  const avvik = sum !== timer && koder.length > 0 ? [`${linje}: rundskrivet har ${timer} timer, fagene i Grep har til sammen ${sum}.`] : koder.length === 0 ? [`${linje}: fant ingen felles programfag i Grep.`] : [];
-  return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: [], avvik };
+  let medTimer = alle.filter(([, f]) => f.timer !== null).map(([k]) => k);
+  if (medTimer.length === 0) return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: [], vurdering: alle.map(([k]) => k).sort(), alternativer: [], utvalg: null, avvik: [`${linje}: fant ingen felles programfag i Grep.`] };
+  // 1. Læreplanene
+  const planer = [...new Set(medTimer.map((k) => indeks.fag[k]?.lp ?? ''))].sort();
+  if (planer.length > 1 && planer.length <= 8 && timerFor(medTimer, indeks) !== timer) {
+    const treff: string[][] = [];
+    for (let m = 1; m < 1 << planer.length; m++) {
+      const valgt = planer.filter((_, i) => m & (1 << i));
+      if (timerFor(medTimer.filter((k) => valgt.includes(indeks.fag[k]?.lp ?? '')), indeks) === timer) treff.push(valgt);
+    }
+    if (treff.length === 1) medTimer = medTimer.filter((k) => (treff[0] as string[]).includes(indeks.fag[k]?.lp ?? ''));
+  }
+  const lp = new Set(medTimer.map((k) => indeks.fag[k]?.lp));
+  // Vurderingskoder (muntlig, tverrfaglig eksamen), unntatt dem som hører til en læreplan som er valgt bort.
+  const bortvalgt = new Set(planer.filter((p) => !lp.has(p)));
+  const vurdering = alle.filter(([, f]) => f.timer === null && !bortvalgt.has(f.lp ?? '')).map(([k]) => k);
+  let koder = medTimer;
+  let utvalg: Utvalg | null = null;
+  const rest = () => timer - timerFor(koder, indeks);
+  // 2. Valg blant valgfrie programfag i samme læreplan
+  if (rest() > 0) {
+    const valg = Object.entries(indeks.fag).filter(([, f]) => f.type === 'valgfritt_programfag' && harPo(f, kode) && f.timer !== null && lp.has(f.lp));
+    const t = valg[0]?.[1].timer ?? 0;
+    if (valg.length > 1 && valg.every(([, f]) => f.timer === t) && rest() % t === 0) utvalg = { grunn: 'valg', timer: rest(), antall: rest() / t, koder: valg.map(([k]) => k).sort() };
+  }
+  // 3. Fag over flere trinn
+  if (!utvalg && rest() !== 0) {
+    const flere = koder.filter((k) => (indeks.fag[k]?.trinn.length ?? 0) > 1);
+    const faste = koder.filter((k) => !flere.includes(k));
+    if (flere.length > 0 && timerFor(faste, indeks) < timer && timerFor(flere, indeks) >= timer - timerFor(faste, indeks)) {
+      koder = faste;
+      utvalg = { grunn: 'flere_trinn', timer: rest(), antall: null, koder: flere.sort() };
+    }
+  }
+  const sum = timerFor(koder, indeks) + (utvalg?.timer ?? 0);
+  const avvik = sum !== timer ? [`${linje}: rundskrivet har ${timer} timer, fagene i Grep har til sammen ${sum}.`] : [];
+  return { type: 'fag', linje, kategori: 'felles_programfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: [], utvalg, avvik };
 }
 
 function plassdel(linje: string, kategori: 'fordypning' | 'valgfritt' | 'yff' | 'opphenting', timer: number, kode: string, po: Programomrade, indeks: Fagindeks): Tilbudsdel {
@@ -259,13 +317,13 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
       .filter(([, f]) => harPo(f, kode))
       .map(([k]) => k)
       .sort();
-    if (koder.length > 0) deler.push({ type: 'fag', linje: 'Opplæring i bedrift', kategori: 'felles_programfag', timer: 0, koder, vurdering: [], alternativer: [], avvik: [] });
+    if (koder.length > 0) deler.push({ type: 'fag', linje: 'Opplæring i bedrift', kategori: 'felles_programfag', timer: 0, koder, vurdering: [], alternativer: [], utvalg: null, avvik: [] });
   }
   const sum = deler.reduce((s, d) => s + d.timer, 0);
   if (tabell && totalt !== null && sum !== totalt) avvik.push(`Summen av delene er ${sum} timer, rundskrivet sier ${totalt}.`);
   for (const d of deler) if (d.type === 'fag') avvik.push(...d.avvik);
   const brukt = new Set([
-    ...deler.flatMap((d) => (d.type === 'fag' ? [...d.koder, ...d.vurdering, ...d.alternativer] : [...d.kandidater])),
+    ...deler.flatMap((d) => (d.type === 'fag' ? [...d.koder, ...d.vurdering, ...d.alternativer, ...(d.utvalg?.koder ?? [])] : [...d.kandidater])),
     ...tilpasninger.flatMap((t) => t.linjer.flatMap((l) => l.koder)),
   ]);
   const rest = Object.entries(indeks.fag).filter(([k, f]) => harPo(f, kode) && !brukt.has(k) && f.type !== 'valgfritt_programfag');
@@ -356,6 +414,7 @@ export function fagroller(tilbud: readonly Tilbud[]): Map<string, Rolle> {
     for (const d of t.deler) {
       if (d.type === 'fag') {
         d.koder.forEach((k) => sett(k, 'ordinar'));
+        d.utvalg?.koder.forEach((k) => sett(k, 'ordinar'));
         d.vurdering.forEach((k) => sett(k, 'vurdering'));
         d.alternativer.forEach((k) => sett(k, 'alternativ'));
       } else d.kandidater.forEach((k) => sett(k, 'ordinar'));

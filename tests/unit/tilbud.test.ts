@@ -148,6 +148,36 @@ describe('tilbudet for et programområde', () => {
   });
 });
 
+describe('felles programfag som Grep knytter til programområdet', () => {
+  // Samme vg2-tabell (477 timer felles programfag) med tre tenkte programområder.
+  const lag = (fag: Record<string, Fag>): Fagindeks => ({
+    ...indeks,
+    programomrader: { 'XXAAA2----': po('Tenkt vg2', 'HS', 'Vg2') },
+    fag: { ...fag, YFF4209: fag_('Yrkesfaglig fordypning vg2', 'yrkesfaglig_fordypning', 253), NOR1262: fag_('Norsk', 'fellesfag', 112), KRO1018: fag_('Kroppsøving', 'fellesfag', 56) },
+  });
+  const fag_ = (navn: string, type: Fag['type'], timer: number | null, lp: string | null = null, trinn: Fag['trinn'] = ['Vg2']): Fag => ({ ...fag(navn, type, ['XXAAA2----'], timer, lp), trinn });
+  const programfag = (i: Fagindeks) => byggTilbud('XXAAA2----', i, ff).deler.find((d) => d.linje.startsWith('Felles programfag'));
+
+  it('velger læreplanen som stemmer med summen, og holder den andre utenfor', () => {
+    const i = lag({ AAA1: fag_('Skole 1', 'felles_programfag', 337, 'SKOLE'), AAA2: fag_('Skole 2', 'felles_programfag', 140, 'SKOLE'), AAA3: fag_('Skole, eksamen', 'felles_programfag', null, 'SKOLE'), BBB1: fag_('Bedrift 1', 'felles_programfag', 337, 'BEDRIFT'), BBB2: fag_('Bedrift, eksamen', 'felles_programfag', null, 'BEDRIFT') });
+    expect(programfag(i)).toMatchObject({ koder: ['AAA1', 'AAA2'], vurdering: ['AAA3'], utvalg: null, avvik: [] });
+    expect(byggTilbud('XXAAA2----', i, ff).andreFag).toEqual(['BBB1', 'BBB2']);
+  });
+
+  it('lar eleven velge blant valgfrie programfag i samme læreplan når timene mangler', () => {
+    const i = lag({ MAR1: fag_('Skipstekniske tjenester', 'felles_programfag', 197, 'MAR'), MAR2: fag_('Dokumentasjon', 'felles_programfag', 140, 'MAR'), MAR3: fag_('Dekk', 'valgfritt_programfag', 140, 'MAR'), MAR4: fag_('Maskin', 'valgfritt_programfag', 140, 'MAR') });
+    expect(programfag(i)).toMatchObject({ koder: ['MAR1', 'MAR2'], utvalg: { grunn: 'valg', timer: 140, antall: 1, koder: ['MAR3', 'MAR4'] }, avvik: [] });
+  });
+
+  it('fyller resten med fag som går over flere trinn, og melder avvik når det ikke går', () => {
+    const over = (navn: string, timer: number) => fag_(navn, 'felles_programfag', timer, 'IDR', ['Vg2', 'Vg3']);
+    const i = lag({ IDR1: fag_('Treningslære vg2', 'felles_programfag', 197, 'IDR2'), IDR2: over('Aktivitetslære 1', 140), IDR3: over('Aktivitetslære 2', 140), IDR4: over('Aktivitetslære 3', 140) });
+    expect(programfag(i)).toMatchObject({ koder: ['IDR1'], utvalg: { grunn: 'flere_trinn', timer: 280, antall: null, koder: ['IDR2', 'IDR3', 'IDR4'] }, avvik: [] });
+    const for_ = lag({ ROM1: fag_('Romfysikk', 'felles_programfag', 140, 'ROM') });
+    expect(programfag(for_)).toMatchObject({ avvik: ['Felles programfag fra eget programområde: rundskrivet har 477 timer, fagene i Grep har til sammen 140.'] });
+  });
+});
+
 describe('strukturen', () => {
   it('ordner programmene studieforberedende først, med varianter sist', () => {
     const s = byggStruktur(indeks);

@@ -248,6 +248,8 @@ Tilbudsstrukturen viser fagene samlet for hvert utdanningsprogram, trinn og retn
 - [ ] **Et tilbud du kjenner godt,** f.eks. Vg2 Helsearbeiderfag (HSHEA2) eller Vg2 Realfag (STREA2): Stemmer fagene, timene og den anbefalte YFF-koden? Stemmer antall valgfrie fag?
 - [ ] **Alternativer:** Fag med samisk, tegnspråk, kort botid, grunnleggende norsk, minoritet, styrket opplæring, morsmål eller katolske skoler i navnet regnes som alternativer, ikke som det vanlige tilbudet. Det gjelder også fellesfag i Grep som ikke står i den ordinære kolonnen, f.eks. fremmedspråk I+II på vg3. Samisk og tegnspråk som fremmedspråk regnes som vanlige valg. Stemmer det?
 - [ ] **Valgfrie plasser:** Antall fag er timene ÷ 140. Fagene som kan velges, er de valgfrie programfagene på trinnet i de studieforberedende programmene, og for fordypning de valgfrie programfagene på programområdet. Er det riktig?
+Svar fra eier 01.10.2026: Rekkefølgen er oversiktlig (1), alternativene stemmer (3), og de valgfrie plassene stemmer (4). Hvert programfag står nå med navn og timer, og muntlig-kodene står under faget (2). Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama er rettet ut fra læreplanene i Grep og Udirs sider om programområdene (5).
+
 - [ ] **Avvik:** Se «Avvik mellom rundskrivet og Grep». De viktigste:
   - Felles programfag på idrettsfag, musikk, dans og drama, Maritime fag (TPMAR2), Landbruk (NALBR3) og Romteknologi (ELROM3) har en annen sum i Grep enn i rundskrivet. Hvilke fag tar eleven?
   - Studieforberedende vg3 i naturbruk (NANAB3): Grep kobler ikke norsk, matematikk, naturfag og historie til programområdet.

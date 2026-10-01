@@ -4,6 +4,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret (for eier)
+
+- `docs/TILBUDSSTRUKTUR.md` viser hvert felles programfag med navn og timer, og vurderingskodene (muntlig, tverrfaglig eksamen) under faget.
+- Felles programfag på landbruk, maritime fag, idrettsfag og musikk, dans og drama stemmer nå med rundskrivet. Landbruk bruker læreplanen for opplæring i skole. Maritime fag har valg mellom dekk og maskin. Fag som går over flere trinn, står for seg.
+
 ### Lagt til (for eier)
 
 - **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.

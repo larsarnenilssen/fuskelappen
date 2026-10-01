@@ -69,10 +69,17 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
 
   const delrad = (d: Tilbudsdel, t: Tilbud): string => {
     if (d.type === 'fag') {
-      // Fellesfag med flere koder: eleven velger én (1P/1T, fremmedspråk). Felles programfag: eleven har alle.
-      const valg = d.kategori === 'fellesfag' ? 'velg én' : 'alle';
-      const koder = d.koder.length === 0 ? '**ingen fagkode i Grep**' : d.koder.length === 1 ? fagnavn(d.koder[0] as string) : d.koder.length <= 4 ? `${valg}: ${d.koder.map(fagnavn).join(', ')}` : `${valg} ${d.kategori === 'fellesfag' ? 'av ' : ''}${d.koder.length}: ${d.koder.slice(0, 3).map(fagnavn).join(', ')} …`;
-      return `| ${celle(d.linje)} | ${d.timer} | ${celle(koder)} | ${arsramme(d.koder, t)} |`;
+      // Fellesfag med flere koder: eleven velger én (1P/1T, fremmedspråk). Felles programfag: eleven har alle, og
+      // hvert fag står på egen linje med timetall.
+      const medTimer = (k: string) => `${fagnavn(k)} (${indeks.fag[k]?.timer ?? '–'})`;
+      const deler: string[] = [];
+      if (d.koder.length === 0 && !d.utvalg) deler.push('**ingen fagkode i Grep**');
+      else if (d.kategori === 'fellesfag') deler.push(d.koder.length === 1 ? fagnavn(d.koder[0] as string) : d.koder.length <= 4 ? `velg én: ${d.koder.map(fagnavn).join(', ')}` : `velg én av ${d.koder.length}: ${d.koder.slice(0, 3).map(fagnavn).join(', ')} …`);
+      else deler.push(...d.koder.map(medTimer));
+      if (d.utvalg?.grunn === 'valg') deler.push(`velg ${d.utvalg.antall ?? ''} av: ${d.utvalg.koder.map(medTimer).join(', ')}`);
+      if (d.utvalg?.grunn === 'flere_trinn') deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep: ${d.utvalg.koder.map(medTimer).join(', ')}`);
+      if (d.vurdering.length > 0) deler.push(`vurdering: ${d.vurdering.length <= 3 ? d.vurdering.map(fagnavn).join(', ') : `${d.vurdering.length} koder`}`);
+      return `| ${celle(d.linje)} | ${d.timer} | ${celle(deler.join('<br>'))} | ${arsramme([...d.koder, ...(d.utvalg?.koder ?? [])], t)} |`;
     }
     const tekst =
       d.kategori === 'yff'
@@ -173,7 +180,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     '',
     `Generert av \`npm run tilbud:rapport\` fra Grep (hentet ${indeks.hentet.slice(0, 10)})${fordeling ? ` og ${fordeling.rundskriv} «Fag- og timefordeling og tilbudsstruktur» for skoleåret ${fordeling.skolear.replace('-', '–')} (hentet ${fordeling.hentet.slice(0, 10)})` : ''}. Ikke rediger for hånd. Se avgjørelse 024.`,
     '',
-    '**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.',
+    '**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. Felles programfag står hvert for seg med timetallet i Grep i parentes. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men hører til samme læreplan. Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.',
     '',
     '## Sammendrag',
     '',
