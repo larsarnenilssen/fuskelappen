@@ -4,6 +4,7 @@
 # Radene er koblet til fagkodene for hånd. Bare rader der fagkodene gir ett årstimetall for trinnet, er tatt med.
 # Norsk og engelsk på yrkesfag: eier bekreftet 29.09.2026 at årstimetallet er 112 (norsk) og 140 (engelsk), som
 # omfanget for NOR1262 og ENG1009 i Grep. Samme tall står på radene for vg1 og vg2.
+# Latin 1 og Gresk 1 står under Latin/Gresk (rad 114), ikke Antikkens språk og kultur (eier 01.10.2026: 496).
 # Ikke med: samisk, fremmedspråk på påbygging, programfag på yrkesfag og forkortelser som ikke kan bekreftes
 # i Grep (Info.tekn. samf., Nær.øk, Pol/samf).
 # npm run hent:grep henter omfanget for fagkodene på nytt (data/grep/arstimer.json), og en test sammenligner.
@@ -62,7 +63,7 @@ verdier:
       - { nr: 74, arstimer: 140, fagkoder: [MAT1019, MAT1021] }
       - { nr: 75, arstimer: 140, fagkoder: [ENG1007] }
       - { nr: 76, arstimer: 140, fagkoder: [ENG1007] }
-      - { nr: 77, arstimer: 140, fagkoder: [SPR3022, SPR3026, SPR3023] }
+      - { nr: 77, arstimer: 140, fagkoder: [SPR3022] }
       - { nr: 78, arstimer: 140, fagkoder: [SPR3033] }
       - { nr: 79, arstimer: 140, fagkoder: [SPR3034, SPR3036] }
       - { nr: 82, arstimer: 140, fagkoder: [SAM3045] }

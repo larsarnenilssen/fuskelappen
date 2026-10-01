@@ -1,6 +1,6 @@
 # Kilderegister. docs/KILDER.md genereres fra denne filen (npm run kilder:dokumenter).
 #
-# sjekkmetode:  side | kf-infoserie | fil | lovdata | grep | nsr | ingen
+# sjekkmetode:  side | kf-infoserie | fil | lovdata | grep | udir-fagfordeling | nsr | ingen
 # aktiv:        true når kildejobben skal sjekke kilden. Kilder aktiveres i fasen der de tas i bruk.
 # uttrekk:      for sjekkmetode «side»: hvilken del av siden som sammenlignes.
 # godkjent_fingeravtrykk: settes bare av eier, eller etter eksplisitt beskjed fra eier.
@@ -131,6 +131,23 @@ kilder:
       vurderingsordning) hentes hver uke med npm run hent:grep (avgjørelse 022). Stemmer testene med de nye
       dataene, tas de inn og publiseres automatisk (eier 30.09.2026, avgjørelse 018). Feiler testene, blir status
       «endret», og dataene tas ikke inn. Fingeravtrykket godkjennes ikke, fordi dataene oppdateres automatisk.
+
+  - id: udir-fag-og-timefordeling
+    navn: Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: udir-fagfordeling
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [2, 3]
+    merknad: >-
+      Tabellene i vedlegg 1, kapittel 3 (videregående) hentes hver uke med npm run hent:udir til
+      data/udir/fagfordeling-<skoleår>.json (avgjørelse 024). Udir-1-2026 gjelder skoleåret 2026–2027. Kommer
+      rundskrivet for neste år, står det i kontrollsaken, og adressen her oppdateres. Fingeravtrykket godkjennes
+      ikke, fordi dataene oppdateres automatisk når testene består.
 
   - id: udir-lk20
     navn: Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no

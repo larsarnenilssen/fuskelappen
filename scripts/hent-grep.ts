@@ -21,7 +21,7 @@ import type { Regelsett } from '../src/core/regler/skjema.ts';
 import { fagindeksSkjema, laereplanSkjema, type Fagindeks, type Laereplan } from '../src/modules/fag/skjema.ts';
 import { byggFagindeks, byggLaereplan, erPublisert, laereplankoder, paSpraak, type Grepelement, type Raadata } from './grep/bygg.ts';
 import { lesFil } from './innhold/last.ts';
-import { antallEndringer, grepsammendrag, sammenlignGrep, type Fagspor, type Grepdata } from './kilder/grep.ts';
+import { antallEndringer, grepsammendrag, sammenlignGrep, type Fagspor, type Grepdata, type Programomradespor } from './kilder/grep.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
@@ -122,8 +122,15 @@ export function fagspor(indeks: Fagindeks): Record<string, Fagspor> {
     Object.entries(indeks.fag).map(([k, f]) => {
       const v = f.elev;
       const vurdering = v ? [v.standpunkt ? 'standpunkt' : 'ikke standpunkt', v.trekk ?? '-', v.eksamensordning ?? '-', v.eksamensform ?? '-', v.uttrykk ?? '-'].join(', ') : 'ingen';
-      return [k, { navn: f.navn.nb, timer: f.timer, vurdering }];
+      return [k, { navn: f.navn.nb, timer: f.timer, vurdering, trinn: f.trinn.join(', ') }];
     }),
+  );
+}
+
+/** Det som sammenlignes per programområde mellom to hentinger (tilbudsstrukturen). */
+export function tilbudspor(indeks: Fagindeks): Record<string, Programomradespor> {
+  return Object.fromEntries(
+    Object.entries(indeks.programomrader).map(([k, p]) => [k, { navn: p.navn.nb, trinn: p.trinn, sted: p.sted, bygger: p.bygger.join(', '), timer: p.timer }]),
   );
 }
 
@@ -150,7 +157,12 @@ function lesForrige(): Grepdata | null {
   if (!programomrader || !fagkoder || !arstimer) return null;
   const data: Grepdata = { programomrader, fagkoder, arstimer };
   const indeksfil = join(rot, 'data/grep/fagindeks.json');
-  if (existsSync(indeksfil)) data.fag = fagspor(JSON.parse(readFileSync(indeksfil, 'utf8')) as Fagindeks);
+  if (existsSync(indeksfil)) {
+    const forrige = JSON.parse(readFileSync(indeksfil, 'utf8')) as Fagindeks;
+    data.fag = fagspor(forrige);
+    // Programområdene fikk «bygger på» og timer i oktober 2026. Eldre data sammenlignes ikke for tilbudsstrukturen.
+    if (Object.values(forrige.programomrader).every((p) => Array.isArray(p.bygger))) data.tilbud = tilbudspor(forrige);
+  }
   const mappe = join(rot, 'data/grep/laereplaner');
   if (existsSync(mappe)) {
     data.laereplaner = Object.fromEntries(
@@ -245,7 +257,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   if (medTall < 300) throw new Error(`Fikk årstimer for bare ${medTall} av ${koder.length} fagkoder. Beholder forrige fil.`);
 
   const planfiler = new Map([...laereplaner].map(([k, p]) => [k, laereplanJson(p)]));
-  const ny: Grepdata = { programomrader, fagkoder, arstimer, fag: fagspor(indeks), laereplaner: Object.fromEntries([...planfiler].map(([k, t]) => [k, fingeravtrykk(t)])) };
+  const ny: Grepdata = { programomrader, fagkoder, arstimer, fag: fagspor(indeks), tilbud: tilbudspor(indeks), laereplaner: Object.fromEntries([...planfiler].map(([k, t]) => [k, fingeravtrykk(t)])) };
   const forrige = lesForrige();
   const endringer = forrige ? sammenlignGrep(forrige, ny) : null;
   // Også endringer som ikke står i rapporten (f.eks. navn på programområder), gir nye filer.

@@ -48,6 +48,8 @@
     "kontroll:godkjenn": "tsx scripts/kilder/godkjenn.ts",
     "lag:ikoner": "tsx scripts/lag-ikoner.ts",
     "hent:grep": "tsx scripts/hent-grep.ts",
-    "kobling:rapport": "tsx scripts/kobling/rapport.ts"
+    "kobling:rapport": "tsx scripts/kobling/rapport.ts",
+    "tilbud:rapport": "tsx scripts/tilbud/rapport.ts",
+    "hent:udir": "tsx scripts/hent-udir.ts"
   }
 }

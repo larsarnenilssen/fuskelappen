@@ -237,3 +237,21 @@ Fase 2 har tre deler: fag og læreplaner fra Grep, koblingen fra fagkode til år
 - [ ] Endre årstimene og velg årsramme selv. Begge deler skal merkes «Overstyrt», med en knapp tilbake til tallene fra Udir og koblingen.
 
 Skriv til Claude hva som stemmer, og hva som skal endres. Du kan også godkjenne tabellene med `/godkjent programnavn kobling_fellesfag kobling_programfag kobling_regler` i kontrollsaken, og praksisen med `/godkjent yff-arsramme`.
+
+## 14. Sjekkliste for tilbudsstrukturen
+
+Tilbudsstrukturen viser fagene samlet for hvert utdanningsprogram, trinn og retning. Den bygger på Grep og rundskrivet Udir-1 «Fag- og timefordeling og tilbudsstruktur». Den lages på nytt hver mandag (avgjørelse 024).
+
+**Oversikten** ligger i `docs/TILBUDSSTRUKTUR.md` på GitHub. Start med «Sammendrag».
+
+- [ ] **Rekkefølgen:** Er det lett å finne fram? Programmene står slik: studieforberedende, så yrkesfaglige, så påbygging. Under hvert program kommer vg1, så hver vg2-retning med vg3 og lærefag.
+- [ ] **Et tilbud du kjenner godt,** f.eks. Vg2 Helsearbeiderfag (HSHEA2) eller Vg2 Realfag (STREA2): Stemmer fagene, timene og den anbefalte YFF-koden? Stemmer antall valgfrie fag?
+- [ ] **Alternativer:** Fag med samisk, tegnspråk, kort botid, grunnleggende norsk, minoritet, styrket opplæring, morsmål eller katolske skoler i navnet regnes som alternativer, ikke som det vanlige tilbudet. Det gjelder også fellesfag i Grep som ikke står i den ordinære kolonnen, f.eks. fremmedspråk I+II på vg3. Samisk og tegnspråk som fremmedspråk regnes som vanlige valg. Stemmer det?
+- [ ] **Valgfrie plasser:** Antall fag er timene ÷ 140. Fagene som kan velges, er de valgfrie programfagene på trinnet i de studieforberedende programmene, og for fordypning de valgfrie programfagene på programområdet. Er det riktig?
+- [ ] **Avvik:** Se «Avvik mellom rundskrivet og Grep». De viktigste:
+  - Felles programfag på idrettsfag, musikk, dans og drama, Maritime fag (TPMAR2), Landbruk (NALBR3) og Romteknologi (ELROM3) har en annen sum i Grep enn i rundskrivet. Hvilke fag tar eleven?
+  - Studieforberedende vg3 i naturbruk (NANAB3): Grep kobler ikke norsk, matematikk, naturfag og historie til programområdet.
+  - Dronefag (ELDRF2) og variantene for særskilte skoler har ingen fellesfag i Grep.
+  - «Fag for studiekompetanse» (PBPBY4) har ingen tabell. Er dette vg4 påbygging (tabell 27)?
+- [ ] **Programområder som ikke nås:** Fire vg3 på salg, service og reiseliv, og to realfag-tilbud ved tysk skole, mangler «bygger på» i Grep. Hvor hører de til?
+

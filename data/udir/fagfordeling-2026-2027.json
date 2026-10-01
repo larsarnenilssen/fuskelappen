@@ -1,0 +1,7599 @@
+{
+ "kilde": "udir-fag-og-timefordeling",
+ "rundskriv": "Udir-1-2026",
+ "skolear": "2026-2027",
+ "hentet": "2026-10-01T08:55:10.553Z",
+ "lisens": "NLOD 2.0",
+ "sider": [
+  "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.3studieforberedende/",
+  "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/",
+  "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/"
+ ],
+ "tabeller": [
+  {
+   "nr": "4",
+   "tittel": "Tabell 4 Fag- og timefordeling i utdanningsprogram for studiespesialisering, programområde for realfag og språk, samfunnsfag og økonomi",
+   "type": "fordeling",
+   "omfang": "Vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      842,
+      822,
+      804
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde (fordypning)",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforb. utdanningsprogram",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      842,
+      822,
+      804
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "4",
+   "tittel": "Tabell 4 Fag- og timefordeling i utdanningsprogram for studiespesialisering, programområde for realfag og språk, samfunnsfag og økonomi",
+   "type": "fordeling",
+   "omfang": "Vg2",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      420,
+      402,
+      383
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde (fordypning)",
+     "timer": [
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforb. utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      840,
+      822,
+      803
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "4",
+   "tittel": "Tabell 4 Fag- og timefordeling i utdanningsprogram for studiespesialisering, programområde for realfag og språk, samfunnsfag og økonomi",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 7,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 8,
+     "navn": "Uten fr.språk gr.sk"
+    },
+    {
+     "nr": 9,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 10,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      168,
+      168,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      168
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      113,
+      113,
+      113,
+      113
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      421,
+      561,
+      459,
+      496
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde (fordypning)",
+     "timer": [
+      280,
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforb. utdanningsprogram",
+     "timer": [
+      140,
+      null,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      841,
+      841,
+      879,
+      916
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "4",
+   "tittel": "Tabell 4 Fag- og timefordeling i utdanningsprogram for studiespesialisering, programområde for realfag og språk, samfunnsfag og økonomi",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 11,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 12,
+     "navn": "Uten fr.språk gr.sk"
+    },
+    {
+     "nr": 13,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 14,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      225,
+      365,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      169,
+      169,
+      169,
+      169
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      168,
+      168,
+      168,
+      168
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1683,
+      1823,
+      1683,
+      1683
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde (fordypning)",
+     "timer": [
+      560,
+      560,
+      560,
+      560
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforb. utdanningsprogram",
+     "timer": [
+      280,
+      140,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2523,
+      2523,
+      2523,
+      2523
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "5",
+   "tittel": "Tabell 5 Programfag i programområde for realfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Biologi",
+     "del": null,
+     "fag": "Biologi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Biologi",
+     "del": null,
+     "fag": "Biologi 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fysikk",
+     "del": null,
+     "fag": "Fysikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fysikk",
+     "del": null,
+     "fag": "Fysikk 2 (bygger på fysikk 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Geofag",
+     "del": null,
+     "fag": "Geofag X",
+     "timer": 84
+    },
+    {
+     "gruppe": "Geofag",
+     "del": null,
+     "fag": "Geofag 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Geofag",
+     "del": null,
+     "fag": "Geofag 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Informasjonsteknologi",
+     "del": null,
+     "fag": "Informasjonsteknologi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Informasjonsteknologi",
+     "del": null,
+     "fag": "Informasjonsteknologi 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kjemi",
+     "del": null,
+     "fag": "Kjemi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kjemi",
+     "del": null,
+     "fag": "Kjemi 2 (bygger på kjemi 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk X",
+     "timer": 84
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk R1, realfaglig matematikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk R2, realfaglig matematikk 2 (bygger på matematikk R1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk S1, samfunnsfaglig matematikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk S2, samfunnsfaglig matematikk 2 (bygger på matematikk S1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Programmering og modellering X",
+     "del": null,
+     "fag": "Programmering og modellering X",
+     "timer": 84
+    },
+    {
+     "gruppe": "Teknologi og forskningslære",
+     "del": null,
+     "fag": "Teknologi og forskningslære X",
+     "timer": 84
+    },
+    {
+     "gruppe": "Teknologi og forskningslære",
+     "del": null,
+     "fag": "Teknologi og forskningslære 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teknologi og forskningslære",
+     "del": null,
+     "fag": "Teknologi og forskningslære 2",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "6",
+   "tittel": "Tabell 6 Programfag i programområde for språk, samfunnsfag og økonomi",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Antikkens språk og kultur",
+     "del": null,
+     "fag": "Antikkens kultur",
+     "timer": 140
+    },
+    {
+     "gruppe": "Antikkens språk og kultur",
+     "del": null,
+     "fag": "Latin 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Antikkens språk og kultur",
+     "del": null,
+     "fag": "Latin 2 (bygger på latin 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Engelsk",
+     "del": null,
+     "fag": "Engelsk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Engelsk",
+     "del": null,
+     "fag": "Engelsk 2 (bygger på engelsk 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Entreprenørskap og bedriftsutvikling",
+     "del": null,
+     "fag": "Entreprenørskap og bedriftsutvikling 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Entreprenørskap og bedriftsutvikling",
+     "del": null,
+     "fag": "Entreprenørskap og bedriftsutvikling 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fremmedspråk",
+     "del": null,
+     "fag": "Fremmedspråk I",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fremmedspråk",
+     "del": null,
+     "fag": "Fremmedspråk II (bygger på fremmedspråk I)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fremmedspråk",
+     "del": null,
+     "fag": "Fremmedspråk III (bygger på fremmedspråk II)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Historie og filosofi",
+     "del": null,
+     "fag": "Historie og filosofi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Historie og filosofi",
+     "del": null,
+     "fag": "Historie og filosofi 2 (bygger på historie og filosofi 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kommunikasjon og kultur",
+     "del": null,
+     "fag": "Kommunikasjon og kultur 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kommunikasjon og kultur",
+     "del": null,
+     "fag": "Kommunikasjon og kultur 2 (bygger på kommunikasjon og kultur 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kommunikasjon og kultur",
+     "del": null,
+     "fag": "Kommunikasjon og kultur 3 (bygger på kommunikasjon og kultur 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Markedsføring og ledelse",
+     "del": null,
+     "fag": "Markedsføring og ledelse 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Markedsføring og ledelse",
+     "del": null,
+     "fag": "Markedsføring og ledelse 2 (bygger på markedsføring og ledelse 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk R1, realfaglig matematikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk R2, realfaglig matematikk (bygger på matematikk R1)",
+     "timer": null
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk S1, samfunnsfaglig matematikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matematikk",
+     "del": null,
+     "fag": "Matematikk S2, samfunnsfaglig matematikk (bygger på matematikk S1)",
+     "timer": null
+    },
+    {
+     "gruppe": "Medie- og informasjonskunnskap",
+     "del": null,
+     "fag": "Medie- og informasjonskunnskap 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Medie- og informasjonskunnskap",
+     "del": null,
+     "fag": "Medie- og informasjonskunnskap 2 (bygger på medie- og informasjonskunnskap 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Næringslivsøkonomi",
+     "del": null,
+     "fag": "Økonomistyring",
+     "timer": 140
+    },
+    {
+     "gruppe": "Næringslivsøkonomi",
+     "del": null,
+     "fag": "Økonomi og ledelse",
+     "timer": 140
+    },
+    {
+     "gruppe": "Politikk, individ og samfunn",
+     "del": null,
+     "fag": "Sosialkunnskap",
+     "timer": 140
+    },
+    {
+     "gruppe": "Politikk, individ og samfunn",
+     "del": null,
+     "fag": "Samfunnsgeografi",
+     "timer": 140
+    },
+    {
+     "gruppe": "Politikk, individ og samfunn",
+     "del": null,
+     "fag": "Sosiologi og sosialantropologi",
+     "timer": 140
+    },
+    {
+     "gruppe": "Politikk, individ og samfunn",
+     "del": null,
+     "fag": "Politikk og menneskerettigheter",
+     "timer": 140
+    },
+    {
+     "gruppe": "Psykologi",
+     "del": null,
+     "fag": "Psykologi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Psykologi",
+     "del": null,
+     "fag": "Psykologi 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Reiseliv og språk",
+     "del": null,
+     "fag": "Reiseliv og språk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Reiseliv og språk",
+     "del": null,
+     "fag": "Reiseliv og språk 2 (bygger på reiseliv og språk 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Rettslære",
+     "del": null,
+     "fag": "Rettslære 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Rettslære",
+     "del": null,
+     "fag": "Rettslære 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Samfunnsøkonomi",
+     "del": null,
+     "fag": "Samfunnsøkonomi 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Samfunnsøkonomi",
+     "del": null,
+     "fag": "Samfunnsøkonomi 2 (bygger på samfunnsøkonomi 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Samisk historie og samfunn",
+     "del": null,
+     "fag": "Samisk historie og samfunn 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Samisk historie og samfunn",
+     "del": null,
+     "fag": "Samisk historie og samfunn 2 (bygger på samisk historie og samfunn 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "7",
+   "tittel": "Tabell 7 Fag- og timefordeling i utdanningsprogram for idrettsfag",
+   "type": "fordeling",
+   "omfang": "Vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      646,
+      626,
+      608
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget utdanningsprogram",
+     "timer": [
+      196,
+      196,
+      196
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      982,
+      962,
+      944
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "7",
+   "tittel": "Tabell 7 Fag- og timefordeling i utdanningsprogram for idrettsfag",
+   "type": "fordeling",
+   "omfang": "Vg2",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      504,
+      486,
+      467
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget utdanningsprogram",
+     "timer": [
+      336,
+      336,
+      336
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      980,
+      962,
+      943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "7",
+   "tittel": "Tabell 7 Fag- og timefordeling i utdanningsprogram for idrettsfag",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 7,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 8,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 9,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 10,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      168,
+      168,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      168
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      113,
+      113,
+      113,
+      113
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      365,
+      505,
+      403,
+      440
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget utdanningsprogram",
+     "timer": [
+      476,
+      476,
+      476,
+      476
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      null,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      981,
+      1019,
+      1056
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "7",
+   "tittel": "Tabell 7 Fag- og timefordeling i utdanningsprogram for idrettsfag",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 11,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 12,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 13,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 14,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      225,
+      365,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      169,
+      169,
+      169,
+      169
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1515,
+      1655,
+      1515,
+      1515
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget utdanningsprogram",
+     "timer": [
+      1008,
+      1008,
+      1008,
+      1008
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      420,
+      280,
+      420,
+      420
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2943,
+      2943,
+      2943,
+      2943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "8a",
+   "tittel": "Tabell 8a Felles programfag i idrettsfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Aktivitetslære",
+     "del": null,
+     "fag": "Aktivitetslære 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Aktivitetslære",
+     "del": null,
+     "fag": "Aktivitetslære 2 (bygger på aktivitetslære 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Aktivitetslære",
+     "del": null,
+     "fag": "Aktivitetslære 3 (bygger på aktivitetslære 2)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Idrett og samfunn",
+     "del": null,
+     "fag": "Idrett og samfunn vg2",
+     "timer": 56
+    },
+    {
+     "gruppe": "Idrett og samfunn",
+     "del": null,
+     "fag": "Idrett og samfunn vg3",
+     "timer": 84
+    },
+    {
+     "gruppe": "Treningsledelse",
+     "del": null,
+     "fag": "Treningsledelse 1",
+     "timer": 56
+    },
+    {
+     "gruppe": "Treningsledelse",
+     "del": null,
+     "fag": "Treningsledelse 2 + 3 (bygger på treningsledelse 1)",
+     "timer": 112
+    },
+    {
+     "gruppe": "Treningslære",
+     "del": null,
+     "fag": "Treningslære 1–vg1",
+     "timer": 56
+    },
+    {
+     "gruppe": "Treningslære",
+     "del": null,
+     "fag": "Treningslære 1–vg2",
+     "timer": 84
+    },
+    {
+     "gruppe": "Treningslære",
+     "del": null,
+     "fag": "Treningslære 2 (bygger på treningslære 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "8b",
+   "tittel": "Tabell 8b Valgfrie programfag for programområde idrettsfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Breddeidrett",
+     "del": null,
+     "fag": "Breddeidrett 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Breddeidrett",
+     "del": null,
+     "fag": "Breddeidrett 2 (bygger på breddeidrett 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Breddeidrett",
+     "del": null,
+     "fag": "Breddeidrett 3 (bygger på breddeidrett 2)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Friluftsliv",
+     "del": null,
+     "fag": "Friluftsliv 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Friluftsliv",
+     "del": null,
+     "fag": "Friluftsliv 2 (bygger på friluftsliv 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Lederutvikling",
+     "del": null,
+     "fag": "Lederutvikling 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Lederutvikling",
+     "del": null,
+     "fag": "Lederutvikling 2 (bygger på lederutvikling 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Toppidrett",
+     "del": null,
+     "fag": "Toppidrett 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Toppidrett",
+     "del": null,
+     "fag": "Toppidrett 2 (bygger på toppidrett 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Toppidrett",
+     "del": null,
+     "fag": "Toppidrett 3 (bygger på toppidrett 2)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "9",
+   "tittel": "Tabell 9 Fag- og timefordeling i utdanningsprogram for musikk, dans og drama",
+   "type": "fordeling",
+   "omfang": "Vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      646,
+      626,
+      608
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      196,
+      196,
+      196
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      982,
+      962,
+      944
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "9",
+   "tittel": "Tabell 9 Fag- og timefordeling i utdanningsprogram for musikk, dans og drama",
+   "type": "fordeling",
+   "omfang": "Vg2",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      504,
+      486,
+      467
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      336,
+      336,
+      336
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      980,
+      962,
+      943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "9",
+   "tittel": "Tabell 9 Fag- og timefordeling i utdanningsprogram for musikk, dans og drama",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 7,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 8,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 9,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 10,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      168,
+      168,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      168
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      113,
+      113,
+      113,
+      113
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      365,
+      505,
+      403,
+      440
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      476,
+      476,
+      476,
+      476
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      null,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      981,
+      1019,
+      1056
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "9",
+   "tittel": "Tabell 9 Fag- og timefordeling i utdanningsprogram for musikk, dans og drama",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 11,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 12,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 13,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 14,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      225,
+      225,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap/samfunnsfag",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      169,
+      169,
+      169,
+      169
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1515,
+      1655,
+      1515,
+      1515
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      952,
+      952,
+      952,
+      952
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      476,
+      336,
+      476,
+      476
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2943,
+      2943,
+      2943,
+      2943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "10a",
+   "tittel": "Tabell 10a Felles programfag for programområde musikk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Ergonomi og bevegelse",
+     "del": null,
+     "fag": "Ergonomi og bevegelse 1",
+     "timer": 56
+    },
+    {
+     "gruppe": "Ergonomi og bevegelse",
+     "del": null,
+     "fag": "Ergonomi og bevegelse 2 (bygger på ergonomi og bevegelse 1)",
+     "timer": 56
+    },
+    {
+     "gruppe": "Instruksjon og ledelse",
+     "del": null,
+     "fag": "Instruksjon og ledelse",
+     "timer": 140
+    },
+    {
+     "gruppe": "Instrument, kor, samspill",
+     "del": null,
+     "fag": "Instrument, kor, samspill 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Instrument, kor, samspill",
+     "del": null,
+     "fag": "Instrument, kor, samspill 2 (bygger på Instrument, kor, samspill 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Musikk, dans og drama",
+     "del": null,
+     "fag": "Musikk, dans og drama (felles programfag på Vg1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Musikk i perspektiv",
+     "del": null,
+     "fag": "Musikk i perspektiv 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Musikk i perspektiv",
+     "del": null,
+     "fag": "Musikk i perspektiv 2 (bygger på musikk i perspektiv 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "10b",
+   "tittel": "Tabell 10b Valgfrie programfag for programområde musikk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Bevegelse",
+     "timer": 56
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Lytting",
+     "timer": 56
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Musikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Musikk fordypning 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Musikk fordypning 2 (bygger på musikk fordypning 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Samisk musikk og scene",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "11a",
+   "tittel": "Tabell 11a Felles programfag for programområde dans",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Dans i perspektiv",
+     "del": null,
+     "fag": "Dans i perspektiv 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Dans i perspektiv",
+     "del": null,
+     "fag": "Dans i perspektiv 2 (bygger på dans i perspektiv 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Grunntrening i dans",
+     "del": null,
+     "fag": "Grunntrening i dans 1",
+     "timer": 56
+    },
+    {
+     "gruppe": "Grunntrening i dans",
+     "del": null,
+     "fag": "Grunntrening i dans 2 (bygger på grunntrening i dans 1)",
+     "timer": 56
+    },
+    {
+     "gruppe": "Musikk, dans og drama",
+     "del": null,
+     "fag": "Musikk, dans og drama (felles programfag på Vg1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Scenisk dans",
+     "del": null,
+     "fag": "Scenisk dans 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Scenisk dans",
+     "del": null,
+     "fag": "Scenisk dans 2 (bygger på scenisk dans 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Scenisk dans",
+     "del": null,
+     "fag": "Scenisk dans 3 (bygger på scenisk dans 2)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "11b",
+   "tittel": "Tabell 11b Valgfrie programfag for programområde dans",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Bevegelse",
+     "timer": 56
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Danseteknikker",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Scenisk dans fordypning 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Scenisk dans fordypning 2 (bygger på scenisk dans fordypning 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "12a",
+   "tittel": "Tabell 12a Felles programfag for programområde drama",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Drama og samfunn",
+     "del": null,
+     "fag": "Drama og samfunn",
+     "timer": 140
+    },
+    {
+     "gruppe": "Musikk, dans og drama",
+     "del": null,
+     "fag": "Musikk, dans og drama (felles programfag på Vg1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teater og bevegelse",
+     "del": null,
+     "fag": "Teater og bevegelse 1",
+     "timer": 56
+    },
+    {
+     "gruppe": "Teater og bevegelse",
+     "del": null,
+     "fag": "Teater og bevegelse 2 (bygger på teater og bevegelse 1)",
+     "timer": 56
+    },
+    {
+     "gruppe": "Teater i perspektiv",
+     "del": null,
+     "fag": "Teater i perspektiv 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teater i perspektiv",
+     "del": null,
+     "fag": "Teater i perspektiv 2 (bygger på teater i perspektiv 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teaterproduksjon",
+     "del": null,
+     "fag": "Teaterproduksjon 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teaterproduksjon",
+     "del": null,
+     "fag": "Teaterproduksjon 2 (bygger på teaterproduksjon 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "12b",
+   "tittel": "Tabell 12b Valgfrie programfag for programområde drama",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Bevegelse",
+     "timer": 56
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Samisk musikk og scene",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Teaterensemble",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Teaterproduksjon fordypning 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": null,
+     "fag": "Teaterproduksjon fordypning 2 (bygger på teaterproduksjon fordypning 1)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "13",
+   "tittel": "Tabell 13 Fag- og timefordeling i utdanningsprogram for kunst, design og arkitektur",
+   "type": "fordeling",
+   "omfang": "Vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      702,
+      682,
+      664
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      982,
+      962,
+      944
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "13",
+   "tittel": "Tabell 13 Fag- og timefordeling i utdanningsprogram for kunst, design og arkitektur",
+   "type": "fordeling",
+   "omfang": "Vg2",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      560,
+      542,
+      523
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      980,
+      962,
+      943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "13",
+   "tittel": "Tabell 13 Fag- og timefordeling i utdanningsprogram for kunst, design og arkitektur",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 7,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 8,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 9,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 10,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      168,
+      168,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      168
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      113,
+      113,
+      113,
+      113
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      421,
+      561,
+      459,
+      496
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      280,
+      140,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      981,
+      1019,
+      1056
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "13",
+   "tittel": "Tabell 13 Fag- og timefordeling i utdanningsprogram for kunst, design og arkitektur",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 11,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 12,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 13,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 14,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      225,
+      365,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      169,
+      169,
+      169,
+      169
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1683,
+      1823,
+      1683,
+      1683
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      840,
+      840,
+      840,
+      840
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      420,
+      280,
+      420,
+      420
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2943,
+      2943,
+      2943,
+      2943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "14a",
+   "tittel": "Tabell 14a Felles programfag for programområde kunst, design og arkitektur",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Kunst og visuelle virkemidler",
+     "del": null,
+     "fag": "Kunst og visuelle virkemidler 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kunst og visuelle virkemidler",
+     "del": null,
+     "fag": "Kunst og visuelle virkemidler 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kunst og visuelle virkemidler",
+     "del": null,
+     "fag": "Kunst og visuelle virkemidler 3",
+     "timer": 140
+    },
+    {
+     "gruppe": "Design og arkitektur",
+     "del": null,
+     "fag": "Design og arkitektur 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Design og arkitektur",
+     "del": null,
+     "fag": "Design og arkitektur 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Design og arkitektur",
+     "del": null,
+     "fag": "Design og arkitektur 3",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "14b",
+   "tittel": "Tabell 14b Valgfrie programfag for programområde kunst, design og arkitektur",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Kunst og skapende arbeid",
+     "del": null,
+     "fag": "Kunst og skapende arbeid",
+     "timer": 140
+    },
+    {
+     "gruppe": "Arkitektur og samfunn",
+     "del": null,
+     "fag": "Arkitektur og samfunn",
+     "timer": 140
+    },
+    {
+     "gruppe": "Design og bærekraft",
+     "del": null,
+     "fag": "Design og bærekraft",
+     "timer": 140
+    },
+    {
+     "gruppe": "Foto og grafikk",
+     "del": null,
+     "fag": "Foto og grafikk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Foto og grafikk",
+     "del": null,
+     "fag": "Foto og grafikk 2 (bygger på foto og grafikk 1)",
+     "timer": 140
+    },
+    {
+     "gruppe": "Samisk visuell kultur",
+     "del": null,
+     "fag": "Samisk visuell kultur",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "15",
+   "tittel": "Tabell 15 Fag- og timefordeling i utdanningsprogram for medier og kommunikasjon",
+   "type": "fordeling",
+   "omfang": "Vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      702,
+      682,
+      664
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      982,
+      962,
+      944
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "15",
+   "tittel": "Tabell 15 Fag- og timefordeling i utdanningsprogram for medier og kommunikasjon",
+   "type": "fordeling",
+   "omfang": "Vg2",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      560,
+      542,
+      523
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      980,
+      962,
+      943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "15",
+   "tittel": "Tabell 15 Fag- og timefordeling i utdanningsprogram for medier og kommunikasjon",
+   "type": "fordeling",
+   "omfang": "vg3",
+   "kolonner": [
+    {
+     "nr": 7,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 8,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 9,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 10,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      168,
+      168,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      103,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      168
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      75
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      113,
+      113,
+      113,
+      113
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      421,
+      561,
+      459,
+      496
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      280,
+      280,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      280,
+      140,
+      280,
+      280
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      981,
+      1019,
+      1056
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "15",
+   "tittel": "Tabell 15 Fag- og timefordeling i utdanningsprogram for medier og kommunikasjon",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 11,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 12,
+     "navn": "Uten fr.språk gr.skole"
+    },
+    {
+     "nr": 13,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 14,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Religion og etikk",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      225,
+      365,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      169,
+      169,
+      169,
+      169
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      168,
+      168,
+      168,
+      168
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1683,
+      1823,
+      1683,
+      1683
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      840,
+      840,
+      840,
+      840
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      420,
+      280,
+      420,
+      420
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2943,
+      2943,
+      2943,
+      2943
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "16a",
+   "tittel": "Tabell 16a Felles programfag for programområde medier og kommunikasjon",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Mediesamfunnet",
+     "del": null,
+     "fag": "Mediesamfunnet 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Mediesamfunnet",
+     "del": null,
+     "fag": "Mediesamfunnet 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Mediesamfunnet",
+     "del": null,
+     "fag": "Mediesamfunnet 3",
+     "timer": 140
+    },
+    {
+     "gruppe": "Medieuttrykk",
+     "del": null,
+     "fag": "Medieuttrykk 1",
+     "timer": 140
+    },
+    {
+     "gruppe": "Medieuttrykk",
+     "del": null,
+     "fag": "Medieuttrykk 2",
+     "timer": 140
+    },
+    {
+     "gruppe": "Medieuttrykk",
+     "del": null,
+     "fag": "Medieuttrykk 3",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "16b",
+   "tittel": "Tabell 16b Valgfrie programfag for programområde medier og kommunikasjon",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Bilde",
+     "del": null,
+     "fag": "Bilde",
+     "timer": 140
+    },
+    {
+     "gruppe": "Grafisk design",
+     "del": null,
+     "fag": "Grafisk design",
+     "timer": 140
+    },
+    {
+     "gruppe": "Lyddesign",
+     "del": null,
+     "fag": "Lyddesign",
+     "timer": 140
+    },
+    {
+     "gruppe": "Tekst",
+     "del": null,
+     "fag": "Tekst",
+     "timer": 140
+    },
+    {
+     "gruppe": "Medieutvikling",
+     "del": null,
+     "fag": "Medieutvikling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Mediespesialisering",
+     "del": null,
+     "fag": "Mediespesialisering (bygger på ett av de andre valgfrie programfagene innenfor medier og kommunikasjon)",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "17a",
+   "tittel": "Tabell 17a Fag- og timefordeling på vg1 og vg2 i yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "vg1",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Med stud.spes vg1"
+    },
+    {
+     "nr": 3,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 4,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk/norsk for elever med samisk/norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/andrespråk samisk, kvensk eller finsk",
+     "timer": [
+      null,
+      null,
+      45,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      56
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      140,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      56,
+      140,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      84,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      56,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      336,
+      842,
+      381,
+      392
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      477,
+      null,
+      477,
+      477
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      168,
+      null,
+      140,
+      112
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig opphenting",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      842,
+      998,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "17a",
+   "tittel": "Tabell 17a Fag- og timefordeling på vg1 og vg2 i yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "vg2",
+   "kolonner": [
+    {
+     "nr": 5,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 6,
+     "navn": "Med stud.spes Vg1"
+    },
+    {
+     "nr": 7,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 8,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk/norsk for elever med samisk/norsk for elever med tegnspråk",
+     "timer": [
+      112,
+      null,
+      90,
+      112
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/andrespråk samisk, kvensk eller finsk",
+     "timer": [
+      null,
+      null,
+      45,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      56
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      null,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      252,
+      56,
+      275,
+      308
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      477,
+      477,
+      477,
+      477
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      253,
+      253,
+      225,
+      197
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig opphenting",
+     "timer": [
+      null,
+      196,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      982,
+      982,
+      977,
+      982
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "17a",
+   "tittel": "Tabell 17a Fag- og timefordeling på vg1 og vg2 i yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "Totalt over to år",
+   "kolonner": [
+    {
+     "nr": 9,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 10,
+     "navn": "Med stud.spes Vg1"
+    },
+    {
+     "nr": 11,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 12,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk/norsk for elever med samisk/norsk for elever med tegnspråk",
+     "timer": [
+      112,
+      113,
+      90,
+      112
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/andrespråk samisk, kvensk eller finsk",
+     "timer": [
+      null,
+      null,
+      90,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      140,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      56,
+      140,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      56,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      112,
+      112,
+      112,
+      112
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      588,
+      898,
+      656,
+      700
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      954,
+      477,
+      954,
+      954
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      421,
+      253,
+      365,
+      309
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig opphenting",
+     "timer": [
+      null,
+      196,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      1963,
+      1824,
+      1975,
+      1963
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "18",
+   "tittel": "Tabell 18 Felles programfag på vg1 i yrkesfaglige utdanningsprogram",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Bygg- og anleggsteknikk",
+     "del": null,
+     "fag": "Arbeidsmiljø og dokumentasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Bygg- og anleggsteknikk",
+     "del": null,
+     "fag": "Praktisk yrkesutøvelse",
+     "timer": 337
+    },
+    {
+     "gruppe": "Elektro og datateknologi",
+     "del": null,
+     "fag": "Elektroniske kretser og nettverk",
+     "timer": 197
+    },
+    {
+     "gruppe": "Elektro og datateknologi",
+     "del": null,
+     "fag": "Energi- og styringssystemer",
+     "timer": 280
+    },
+    {
+     "gruppe": "Frisør, blomster, interiør og eksponeringsdesign",
+     "del": null,
+     "fag": "Produktutvikling og produksjon",
+     "timer": 280
+    },
+    {
+     "gruppe": "Frisør, blomster, interiør og eksponeringsdesign",
+     "del": null,
+     "fag": "Kommunikasjon, kunde og arbeidsliv",
+     "timer": 197
+    },
+    {
+     "gruppe": "Helse- og oppvekstfag",
+     "del": null,
+     "fag": "Helsefremmende arbeid",
+     "timer": 197
+    },
+    {
+     "gruppe": "Helse- og oppvekstfag",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Helse- og oppvekstfag",
+     "del": null,
+     "fag": "Yrkesliv i helse- og oppvekstfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Håndverk, design og produktutvikling",
+     "del": null,
+     "fag": "Materialer og teknikker",
+     "timer": 337
+    },
+    {
+     "gruppe": "Håndverk, design og produktutvikling",
+     "del": null,
+     "fag": "Produktutvikling og skapende prosesser",
+     "timer": 140
+    },
+    {
+     "gruppe": "Informasjonsteknologi og medieproduksjon",
+     "del": null,
+     "fag": "Produksjon og historiefortelling",
+     "timer": 159
+    },
+    {
+     "gruppe": "Informasjonsteknologi og medieproduksjon",
+     "del": null,
+     "fag": "Teknologiforståelse",
+     "timer": 159
+    },
+    {
+     "gruppe": "Informasjonsteknologi og medieproduksjon",
+     "del": null,
+     "fag": "Konseptutvikling og programmering",
+     "timer": 159
+    },
+    {
+     "gruppe": "Naturbruk",
+     "del": null,
+     "fag": "Naturbasert produksjon og tjenesteyting",
+     "timer": 337
+    },
+    {
+     "gruppe": "Naturbruk",
+     "del": null,
+     "fag": "Naturbasert næringsaktivitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Restaurant- og matfag",
+     "del": null,
+     "fag": "Bransje og arbeidsliv",
+     "timer": 140
+    },
+    {
+     "gruppe": "Restaurant- og matfag",
+     "del": null,
+     "fag": "Råvare, produksjon og kvalitet",
+     "timer": 337
+    },
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Forretningsdrift",
+     "timer": 169
+    },
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Markedsføring og innovasjon",
+     "timer": 168
+    },
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Kultur og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teknologi og industrifag",
+     "del": null,
+     "fag": "Produksjon og tjenester",
+     "timer": 197
+    },
+    {
+     "gruppe": "Teknologi og industrifag",
+     "del": null,
+     "fag": "Konstruksjons- og styringsteknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Teknologi og industrifag",
+     "del": null,
+     "fag": "Kvalitetsstyring",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "19a",
+   "tittel": "Tabell 19a Felles programfag på vg2 bygg- og anleggsteknikk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Anleggsgartner",
+     "del": null,
+     "fag": "Anleggsgartnerarbeid",
+     "timer": 337
+    },
+    {
+     "gruppe": "Anleggsgartner",
+     "del": null,
+     "fag": "Rammebetingelser for anleggsgartnerarbeid",
+     "timer": 140
+    },
+    {
+     "gruppe": "Anleggsteknikk",
+     "del": null,
+     "fag": "Drift og vedlikehold",
+     "timer": 140
+    },
+    {
+     "gruppe": "Anleggsteknikk",
+     "del": null,
+     "fag": "Grunnarbeider",
+     "timer": 197
+    },
+    {
+     "gruppe": "Anleggsteknikk",
+     "del": null,
+     "fag": "Sikkerhetsopplæring av masseforflytningsmaskiner",
+     "timer": 140
+    },
+    {
+     "gruppe": "Betong og mur",
+     "del": null,
+     "fag": "Betong og mur",
+     "timer": 337
+    },
+    {
+     "gruppe": "Betong og mur",
+     "del": null,
+     "fag": "Dokumentasjon og kommunikasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Klima-, energi- og miljø",
+     "del": null,
+     "fag": "Arbeidsmiljø og dokumentasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Klima-, energi- og miljø",
+     "del": null,
+     "fag": "Praktisk yrkesutøvelse",
+     "timer": 337
+    },
+    {
+     "gruppe": "Overflateteknikk",
+     "del": null,
+     "fag": "Forbehandling og påføring",
+     "timer": 337
+    },
+    {
+     "gruppe": "Overflateteknikk",
+     "del": null,
+     "fag": "Helse, miljø, sikkerhet og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Rørlegger",
+     "del": null,
+     "fag": "Bransjelære",
+     "timer": 140
+    },
+    {
+     "gruppe": "Rørlegger",
+     "del": null,
+     "fag": "Sanitærteknikk",
+     "timer": 197
+    },
+    {
+     "gruppe": "Rørlegger",
+     "del": null,
+     "fag": "Varmeteknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Treteknikk",
+     "del": null,
+     "fag": "Produksjon",
+     "timer": 337
+    },
+    {
+     "gruppe": "Treteknikk",
+     "del": null,
+     "fag": "Tegning og materialvalg",
+     "timer": 140
+    },
+    {
+     "gruppe": "Tømrer",
+     "del": null,
+     "fag": "Konstruksjoner og klimaskall",
+     "timer": 197
+    },
+    {
+     "gruppe": "Tømrer",
+     "del": null,
+     "fag": "Materialegenskaper, varmeisolering og tetting",
+     "timer": 140
+    },
+    {
+     "gruppe": "Tømrer",
+     "del": null,
+     "fag": "Vinduer, dører og innvendig arbeid",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "19b",
+   "tittel": "Tabell 19b Felles programfag på vg2 elektro og datateknologi",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Automatisering",
+     "del": null,
+     "fag": "Automatiseringssystemer",
+     "timer": 337
+    },
+    {
+     "gruppe": "Automatisering",
+     "del": null,
+     "fag": "Elenergisystemer",
+     "timer": 140
+    },
+    {
+     "gruppe": "Datateknologi og elektronikk",
+     "del": null,
+     "fag": "Data- og informasjonsteknologi",
+     "timer": 197
+    },
+    {
+     "gruppe": "Datateknologi og elektronikk",
+     "del": null,
+     "fag": "Elektroniske kretser og utstyr",
+     "timer": 280
+    },
+    {
+     "gruppe": "Dronefag",
+     "del": null,
+     "fag": "Operasjon og sikkerhet",
+     "timer": 300
+    },
+    {
+     "gruppe": "Dronefag",
+     "del": null,
+     "fag": "Nyttelast, sensorer og bearbeiding av data",
+     "timer": 177
+    },
+    {
+     "gruppe": "Elenergi og ekom",
+     "del": null,
+     "fag": "Elenergi og styresystemer",
+     "timer": 337
+    },
+    {
+     "gruppe": "Elenergi og ekom",
+     "del": null,
+     "fag": "Elektronisk kommunikasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Flyfag",
+     "del": null,
+     "fag": "Elektrofag",
+     "timer": 197
+    },
+    {
+     "gruppe": "Flyfag",
+     "del": null,
+     "fag": "Luftfartøylære",
+     "timer": 140
+    },
+    {
+     "gruppe": "Flyfag",
+     "del": null,
+     "fag": "Material- og komponentlære",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kulde-, varmepumpe og ventilasjonsteknikk",
+     "del": null,
+     "fag": "Elenergi- og automatisering",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kulde-, varmepumpe og ventilasjonsteknikk",
+     "del": null,
+     "fag": "Kulde- og varmepumpeteknikk",
+     "timer": 169
+    },
+    {
+     "gruppe": "Kulde-, varmepumpe og ventilasjonsteknikk",
+     "del": null,
+     "fag": "Ventilasjonsteknikk",
+     "timer": 168
+    }
+   ]
+  },
+  {
+   "nr": "19c",
+   "tittel": "Tabell 19c Felles programfag på vg2 frisør, blomster, interiør og eksponeringsdesign",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Blomsterdekoratør",
+     "del": null,
+     "fag": "Produksjon og arbeidsliv",
+     "timer": 290
+    },
+    {
+     "gruppe": "Blomsterdekoratør",
+     "del": null,
+     "fag": "Produktutvikling, bransjelære og kommunikasjon",
+     "timer": 187
+    },
+    {
+     "gruppe": "Frisør",
+     "del": null,
+     "fag": "Hår, farge og strukturendring",
+     "timer": 220
+    },
+    {
+     "gruppe": "Frisør",
+     "del": null,
+     "fag": "Kommunikasjon, klipp og frisyreforming",
+     "timer": 257
+    },
+    {
+     "gruppe": "Interiør og eksponeringsdesign",
+     "del": null,
+     "fag": "Design, teknologi og produksjon",
+     "timer": 337
+    },
+    {
+     "gruppe": "Interiør og eksponeringsdesign",
+     "del": null,
+     "fag": "Kunde og kommunikasjon",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "19d",
+   "tittel": "Tabell 19d Felles programfag på vg2 helse- og oppvekstfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Aktivitør",
+     "del": null,
+     "fag": "Administrasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Aktivitør",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Aktivitør",
+     "del": null,
+     "fag": "Yrkesliv i aktivitørfag",
+     "timer": 197
+    },
+    {
+     "gruppe": "Ambulansefag",
+     "del": null,
+     "fag": "Ambulansemedisin",
+     "timer": 197
+    },
+    {
+     "gruppe": "Ambulansefag",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Ambulansefag",
+     "del": null,
+     "fag": "Yrkesliv i ambulansefag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Barne- og ungdomsarbeiderfag",
+     "del": null,
+     "fag": "Pedagogisk arbeid",
+     "timer": 197
+    },
+    {
+     "gruppe": "Barne- og ungdomsarbeiderfag",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Barne- og ungdomsarbeiderfag",
+     "del": null,
+     "fag": "Yrkesliv i barne- og ungdomsarbeiderfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fotterapi og ortopediteknikk",
+     "del": null,
+     "fag": "Helse, funksjon og bevegelse",
+     "timer": 197
+    },
+    {
+     "gruppe": "Fotterapi og ortopediteknikk",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fotterapi og ortopediteknikk",
+     "del": null,
+     "fag": "Yrkesliv i fotterapi og ortopediteknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Helsearbeiderfag",
+     "del": null,
+     "fag": "Helsefremmende arbeid",
+     "timer": 197
+    },
+    {
+     "gruppe": "Helsearbeiderfag",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Helsearbeiderfag",
+     "del": null,
+     "fag": "Yrkesliv i helsearbeiderfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Helseservicefag",
+     "del": null,
+     "fag": "Helse og sykdom",
+     "timer": 197
+    },
+    {
+     "gruppe": "Helseservicefag",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Helseservicefag",
+     "del": null,
+     "fag": "Yrkesliv i helseservicefag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Hudpleie",
+     "del": null,
+     "fag": "Helsefremmende arbeid",
+     "timer": 140
+    },
+    {
+     "gruppe": "Hudpleie",
+     "del": null,
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Hudpleie",
+     "del": null,
+     "fag": "Yrkesliv i hudpleiefaget",
+     "timer": 197
+    }
+   ]
+  },
+  {
+   "nr": "19e",
+   "tittel": "Tabell 19e Felles programfag på vg2 håndverk, design og produktutvikling",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Båtbygger",
+     "del": null,
+     "fag": "Materialer og konstruksjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Båtbygger",
+     "del": null,
+     "fag": "Produksjon",
+     "timer": 337
+    },
+    {
+     "gruppe": "Duodji",
+     "del": null,
+     "fag": "Duodji/duodje/duedtie- og designprosesser",
+     "timer": 140
+    },
+    {
+     "gruppe": "Duodji",
+     "del": null,
+     "fag": "Materialkunnskap, duodji-/duodje-/duedtie-utøvelse og kulturarv",
+     "timer": 337
+    },
+    {
+     "gruppe": "Gull- og sølvsmedhåndverk",
+     "del": null,
+     "fag": "Design og produktutvikling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Gull- og sølvsmedhåndverk",
+     "del": null,
+     "fag": "Gull- og sølvsmedhåndverk",
+     "timer": 337
+    },
+    {
+     "gruppe": "Smed",
+     "del": null,
+     "fag": "Design og produktutvikling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Smed",
+     "del": null,
+     "fag": "Smedhåndverk",
+     "timer": 337
+    },
+    {
+     "gruppe": "Søm og tekstilhåndverk",
+     "del": null,
+     "fag": "Design og produktutvikling",
+     "timer": 140
+    },
+    {
+     "gruppe": "Søm og tekstilhåndverk",
+     "del": null,
+     "fag": "Produksjon og materialer",
+     "timer": 337
+    },
+    {
+     "gruppe": "Trearbeid",
+     "del": null,
+     "fag": "Arbeidsplanlegging og tegning",
+     "timer": 140
+    },
+    {
+     "gruppe": "Trearbeid",
+     "del": null,
+     "fag": "Materialkunnskap",
+     "timer": 140
+    },
+    {
+     "gruppe": "Trearbeid",
+     "del": null,
+     "fag": "Produksjon",
+     "timer": 197
+    },
+    {
+     "gruppe": "Urmaker",
+     "del": null,
+     "fag": "Produksjon og vedlikehold",
+     "timer": 337
+    },
+    {
+     "gruppe": "Urmaker",
+     "del": null,
+     "fag": "Produktutvikling",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "19f",
+   "tittel": "Tabell 19f Felles programfag på vg2 informasjonsteknologi og medieproduksjon",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Informasjonsteknologi",
+     "del": null,
+     "fag": "Brukerstøtte",
+     "timer": 140
+    },
+    {
+     "gruppe": "Informasjonsteknologi",
+     "del": null,
+     "fag": "Driftsstøtte",
+     "timer": 169
+    },
+    {
+     "gruppe": "Informasjonsteknologi",
+     "del": null,
+     "fag": "Utvikling",
+     "timer": 168
+    },
+    {
+     "gruppe": "Medieproduksjon",
+     "del": null,
+     "fag": "Design og visualisering",
+     "timer": 159
+    },
+    {
+     "gruppe": "Medieproduksjon",
+     "del": null,
+     "fag": "Konseptutvikling og kommunikasjon",
+     "timer": 159
+    },
+    {
+     "gruppe": "Medieproduksjon",
+     "del": null,
+     "fag": "Teknologi og produksjon",
+     "timer": 159
+    }
+   ]
+  },
+  {
+   "nr": "19g",
+   "tittel": "Tabell 19g Felles programfag på vg2 naturbruk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Akvakultur",
+     "del": null,
+     "fag": "Anlegg og teknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Akvakultur",
+     "del": null,
+     "fag": "Biologi og miljø",
+     "timer": 140
+    },
+    {
+     "gruppe": "Akvakultur",
+     "del": null,
+     "fag": "Drift og produksjon",
+     "timer": 197
+    },
+    {
+     "gruppe": "Fiske og fangst",
+     "del": null,
+     "fag": "Fangst og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fiske og fangst",
+     "del": null,
+     "fag": "Fartøy og redskaper",
+     "timer": 337
+    },
+    {
+     "gruppe": "Heste- og dyrefag",
+     "del": null,
+     "fag": "Drift og entreprenørskap",
+     "timer": 197
+    },
+    {
+     "gruppe": "Heste- og dyrefag",
+     "del": null,
+     "fag": "Dyrelære og aktivitet",
+     "timer": 280
+    },
+    {
+     "gruppe": "Landbruk og gartnernæring",
+     "del": null,
+     "fag": "Forvaltning og drift",
+     "timer": 180
+    },
+    {
+     "gruppe": "Landbruk og gartnernæring",
+     "del": null,
+     "fag": "Produksjon og tjenesteyting",
+     "timer": 297
+    },
+    {
+     "gruppe": "Reindrift",
+     "del": null,
+     "fag": "Reinen og dens naturmiljø",
+     "timer": 135
+    },
+    {
+     "gruppe": "Reindrift",
+     "del": null,
+     "fag": "Reindriftsbasert aktivitet og produksjon",
+     "timer": 190
+    },
+    {
+     "gruppe": "Reindrift",
+     "del": null,
+     "fag": "Økonomi og ressursforvaltning",
+     "timer": 152
+    },
+    {
+     "gruppe": "Skogbruk",
+     "del": null,
+     "fag": "Skogsdrift og maskinlære",
+     "timer": 279
+    },
+    {
+     "gruppe": "Skogbruk",
+     "del": null,
+     "fag": "Skogskjøtsel, klima og næring",
+     "timer": 198
+    }
+   ]
+  },
+  {
+   "nr": "19h",
+   "tittel": "Tabell 19h Felles programfag på vg2 restaurant- og matfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Baker og konditor",
+     "del": null,
+     "fag": "Bransje og arbeidsliv",
+     "timer": 337
+    },
+    {
+     "gruppe": "Baker og konditor",
+     "del": null,
+     "fag": "Råvare, produksjon og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kokk- og servitørfag",
+     "del": null,
+     "fag": "Bransje og arbeidsliv",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kokk- og servitørfag",
+     "del": null,
+     "fag": "Råvare, produksjon, salg og service",
+     "timer": 337
+    },
+    {
+     "gruppe": "Matproduksjon",
+     "del": null,
+     "fag": "Bransje og arbeidsliv",
+     "timer": 140
+    },
+    {
+     "gruppe": "Matproduksjon",
+     "del": null,
+     "fag": "Råvarer, produksjon og kvalitet",
+     "timer": 337
+    }
+   ]
+  },
+  {
+   "nr": "19i",
+   "tittel": "Tabell 19i Felles programfag på vg2 salg, service og reiseliv",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Økonomi og administrasjon",
+     "timer": 168
+    },
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Kommunikasjon og markedsføring",
+     "timer": 169
+    },
+    {
+     "gruppe": "Salg, service og reiseliv",
+     "del": null,
+     "fag": "Helse, miljø og sikkerhet",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "19j",
+   "tittel": "Tabell 19j Felles programfag på vg2 teknologi- og industrifag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Arbeidsmaskiner",
+     "del": null,
+     "fag": "Planlegging og kommunikasjon",
+     "timer": 140
+    },
+    {
+     "gruppe": "Arbeidsmaskiner",
+     "del": null,
+     "fag": "Reparasjon og vedlikehold",
+     "timer": 337
+    },
+    {
+     "gruppe": "Bilskade, lakk og karosseri",
+     "del": null,
+     "fag": "Dokumentasjon og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Bilskade, lakk og karosseri",
+     "del": null,
+     "fag": "Karosseri- og lakkteknikk",
+     "timer": 337
+    },
+    {
+     "gruppe": "Brønnteknikk",
+     "del": null,
+     "fag": "Boring",
+     "timer": 197
+    },
+    {
+     "gruppe": "Brønnteknikk",
+     "del": null,
+     "fag": "Komplettering og brønnservice",
+     "timer": 140
+    },
+    {
+     "gruppe": "Brønnteknikk",
+     "del": null,
+     "fag": "Prosedyrer og praksis",
+     "timer": 140
+    },
+    {
+     "gruppe": "Børsemaker",
+     "del": null,
+     "fag": "Produksjon",
+     "timer": 277
+    },
+    {
+     "gruppe": "Børsemaker",
+     "del": null,
+     "fag": "Produktutvikling og kvalitetssikring",
+     "timer": 200
+    },
+    {
+     "gruppe": "Kjemiprosess- og laboratoriefag",
+     "del": null,
+     "fag": "Analyse, dokumentasjon og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kjemiprosess- og laboratoriefag",
+     "del": null,
+     "fag": "Kjemisk teknologi",
+     "timer": 168
+    },
+    {
+     "gruppe": "Kjemiprosess- og laboratoriefag",
+     "del": null,
+     "fag": "Produksjon og tjenester",
+     "timer": 169
+    },
+    {
+     "gruppe": "Kjøretøy",
+     "del": null,
+     "fag": "Dokumentasjon og kvalitet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Kjøretøy",
+     "del": null,
+     "fag": "Verkstedarbeid",
+     "timer": 337
+    },
+    {
+     "gruppe": "Maritime fag",
+     "del": null,
+     "fag": "Dokumentasjon og kvalitet – felles programfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Maritime fag",
+     "del": null,
+     "fag": "Skipstekniske tjenester – felles programfag",
+     "timer": 197
+    },
+    {
+     "gruppe": "Maritime fag",
+     "del": null,
+     "fag": "Dekk – valgfritt programfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Maritime fag",
+     "del": null,
+     "fag": "Maskin – valgfritt programfag",
+     "timer": 140
+    },
+    {
+     "gruppe": "Industriteknologi",
+     "del": null,
+     "fag": "Teknologi",
+     "timer": 337
+    },
+    {
+     "gruppe": "Industriteknologi",
+     "del": null,
+     "fag": "Vedlikehold",
+     "timer": 140
+    },
+    {
+     "gruppe": "Transport og logistikk",
+     "del": null,
+     "fag": "Bransjelære",
+     "timer": 140
+    },
+    {
+     "gruppe": "Transport og logistikk",
+     "del": null,
+     "fag": "Bransjeteknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Transport og logistikk",
+     "del": null,
+     "fag": "Transport, logistikk og løfteoperasjoner",
+     "timer": 197
+    }
+   ]
+  },
+  {
+   "nr": "20",
+   "tittel": "Tabell 20 Fag- og timefordeling totalt over to år for lærlinger som følger særløp i yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "Totalt over to år, særløp",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Med stud.spes vg1"
+    },
+    {
+     "nr": 3,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 4,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      90,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      90,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      140,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      56,
+      140,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      56,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      532,
+      842,
+      600,
+      644
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      477,
+      null,
+      477,
+      477
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      168,
+      null,
+      140,
+      112
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende eller yrkesfaglige utdanningsprogram",
+     "timer": [
+      null,
+      196,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      1177,
+      1038,
+      1217,
+      1233
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "21",
+   "tittel": "Tabell 21 Yrkesfaglige utdanningsprogram – fag- og timefordeling på vg3 i skole",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      925,
+      925,
+      925
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      981,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "22a",
+   "tittel": "Tabell 22a Programfag på vg3 i skole i utdanningsprogram for elektro og datateknologi",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Automatiseringsfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Automatiseringssystemer",
+     "timer": 645
+    },
+    {
+     "gruppe": "Automatiseringsfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Elenergisystemer",
+     "timer": 140
+    },
+    {
+     "gruppe": "Automatiseringsfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Mekanisk arbeid",
+     "timer": 140
+    },
+    {
+     "gruppe": "Dataelektronikerfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Installering og drift",
+     "timer": 420
+    },
+    {
+     "gruppe": "Dataelektronikerfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Reparasjon og vedlikehold",
+     "timer": 505
+    },
+    {
+     "gruppe": "Romteknologi",
+     "del": "Felles programfag",
+     "fag": "Elektronikk og kommunikasjonsteknologi",
+     "timer": 140
+    },
+    {
+     "gruppe": "Romteknologi",
+     "del": "Felles programfag",
+     "fag": "Fjernanalyse og geografiske informasjonssystemer",
+     "timer": 140
+    },
+    {
+     "gruppe": "Romteknologi",
+     "del": "Felles programfag",
+     "fag": "Romfysikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Romteknologi",
+     "del": "Felles programfag",
+     "fag": "Romteknologi og satellitteknikk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Romteknologi",
+     "del": "Felles programfag",
+     "fag": "Telemetri",
+     "timer": 140
+    },
+    {
+     "gruppe": "Fellesfag",
+     "del": null,
+     "fag": "Matematikk og naturfag som på vg3 påbygging til generell studiekompetanse, se punkt 3.5.2",
+     "timer": 224
+    },
+    {
+     "gruppe": "Avionikerfaget (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Luftfartøysystemer",
+     "timer": 463
+    },
+    {
+     "gruppe": "Avionikerfaget (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Vedlikeholdsteknikk",
+     "timer": 322
+    },
+    {
+     "gruppe": "Avionikerfaget (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Flysikkerhet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Flytekniske fag (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Luftfartøysystemer",
+     "timer": 478
+    },
+    {
+     "gruppe": "Flytekniske fag (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Vedlikeholdsteknikk",
+     "timer": 307
+    },
+    {
+     "gruppe": "Flytekniske fag (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Flysikkerhet",
+     "timer": 140
+    },
+    {
+     "gruppe": "Maritim elektriker (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Elenergi",
+     "timer": 350
+    },
+    {
+     "gruppe": "Maritim elektriker (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Automasjon",
+     "timer": 250
+    },
+    {
+     "gruppe": "Maritim elektriker (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Elektronisk kommunikasjon",
+     "timer": 185
+    },
+    {
+     "gruppe": "Maritim elektriker (avsluttes med læretid i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Organisasjon og ledelse",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "22b",
+   "tittel": "Tabell 22b Programfag på vg3 i skole i utdanningsprogram for frisør, blomster, interiør og eksponeringsdesign",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Interiør",
+     "del": "Felles programfag",
+     "fag": "Prosess og prosjektering",
+     "timer": 660
+    },
+    {
+     "gruppe": "Interiør",
+     "del": "Felles programfag",
+     "fag": "Kunde og kommunikasjon",
+     "timer": 265
+    },
+    {
+     "gruppe": "Eksponeringsdesign",
+     "del": "Felles programfag",
+     "fag": "Produksjon og konseptutvikling",
+     "timer": 660
+    },
+    {
+     "gruppe": "Eksponeringsdesign",
+     "del": "Felles programfag",
+     "fag": "Bedriftskultur og markedsføring",
+     "timer": 265
+    }
+   ]
+  },
+  {
+   "nr": "22c",
+   "tittel": "Tabell 22c Programfag på vg3 i skole i utdanningsprogram for helse- og oppvekstfag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Fotterapi",
+     "del": "Felles programfag",
+     "fag": "Helse, funksjon og bevegelse",
+     "timer": 250
+    },
+    {
+     "gruppe": "Fotterapi",
+     "del": "Felles programfag",
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 250
+    },
+    {
+     "gruppe": "Fotterapi",
+     "del": "Felles programfag",
+     "fag": "Yrkesliv i fotterapifaget",
+     "timer": 425
+    },
+    {
+     "gruppe": "Apotekteknikk",
+     "del": "Felles programfag",
+     "fag": "Helseveiledning i apotek",
+     "timer": 371
+    },
+    {
+     "gruppe": "Apotekteknikk",
+     "del": "Felles programfag",
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 139
+    },
+    {
+     "gruppe": "Apotekteknikk",
+     "del": "Felles programfag",
+     "fag": "Yrkesliv i apotekteknikkfaget",
+     "timer": 415
+    },
+    {
+     "gruppe": "Helsesekretær",
+     "del": "Felles programfag",
+     "fag": "Helse og sjukdom",
+     "timer": 371
+    },
+    {
+     "gruppe": "Helsesekretær",
+     "del": "Felles programfag",
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 184
+    },
+    {
+     "gruppe": "Helsesekretær",
+     "del": "Felles programfag",
+     "fag": "Yrkesliv i helsesekretærfaget",
+     "timer": 370
+    },
+    {
+     "gruppe": "Tannhelsesekretær",
+     "del": "Felles programfag",
+     "fag": "Smittevern, tannanatomi og fysiologi",
+     "timer": 250
+    },
+    {
+     "gruppe": "Tannhelsesekretær",
+     "del": "Felles programfag",
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 250
+    },
+    {
+     "gruppe": "Tannhelsesekretær",
+     "del": "Felles programfag",
+     "fag": "Yrkesliv i tannhelsesekretærfaget",
+     "timer": 425
+    },
+    {
+     "gruppe": "Hudterapi",
+     "del": "Felles programfag",
+     "fag": "Helsefremmende arbeid",
+     "timer": 250
+    },
+    {
+     "gruppe": "Hudterapi",
+     "del": "Felles programfag",
+     "fag": "Kommunikasjon og samhandling",
+     "timer": 250
+    },
+    {
+     "gruppe": "Hudterapi",
+     "del": "Felles programfag",
+     "fag": "Yrkesliv i hudterapifaget",
+     "timer": 425
+    }
+   ]
+  },
+  {
+   "nr": "22d",
+   "tittel": "Tabell 22d Programfag på vg3 i skole i utdanningsprogram for naturbruk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Gartnernæring",
+     "del": "Felles programfag",
+     "fag": "Gartnernæring",
+     "timer": 981
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Felles programfag",
+     "fag": "Gårdsdrift",
+     "timer": 168
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Felles programfag",
+     "fag": "Plante- og husdyrproduksjon",
+     "timer": 337
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Felles programfag",
+     "fag": "Utmark og kulturlandskap",
+     "timer": 140
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Valgfrie programfag",
+     "fag": "Maskiner og teknologi i landbruk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Valgfrie programfag",
+     "fag": "Økologisk landbruk",
+     "timer": 140
+    },
+    {
+     "gruppe": "Landbruk",
+     "del": "Valgfrie programfag",
+     "fag": "Økonomi og driftsledelse",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "22e",
+   "tittel": "Tabell 22e Programfag på vg3 i skole i utdanningsprogram for teknologi- og industrifag",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "Anleggsmaskinmekanikerfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Dokumentasjon og kontroll",
+     "timer": 170
+    },
+    {
+     "gruppe": "Anleggsmaskinmekanikerfaget (avsluttes med verdiskaping i bedrift etter vg3 i skole)",
+     "del": "Felles programfag",
+     "fag": "Feilsøking, reparasjon og vedlikehold",
+     "timer": 755
+    }
+   ]
+  },
+  {
+   "nr": "23",
+   "tittel": "Tabell 23 Fag- og timefordeling totalt over to år for lærlinger uten vg2 eller vg1 og vg2 i skole i yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "Samlet timetall over to år for lærlinger uten vg1 og vg2 i skole eller vg2",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      112,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      90,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      90,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      112
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving (se teksten nedenfor)",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      476,
+      544,
+      644
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      476,
+      544,
+      644
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "24",
+   "tittel": "Tabell 24 Fag- og timefordeling på studieforberedende vg3 innenfor de yrkesfaglige utdanningsprogrammene for naturbruk",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      281,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      281
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      701,
+      831,
+      814
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      null,
+      null,
+      27
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde eller studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      981,
+      971,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "24",
+   "tittel": "Tabell 24 Fag- og timefordeling på studieforberedende vg3 innenfor de yrkesfaglige utdanningsprogrammene for naturbruk",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      168,
+      168,
+      168
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1289,
+      1487,
+      1514
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      1094,
+      1094,
+      1094
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      421,
+      365,
+      336
+     ]
+    },
+    {
+     "linje": "Programfag fra eget programområde eller studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2944,
+      2946,
+      2944
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "25",
+   "tittel": "Tabell 25 Programfag på studieforberedende vg3 for naturbruk",
+   "type": "fagliste",
+   "rader": [
+    {
+     "gruppe": "",
+     "del": "Felles programfag",
+     "fag": "Naturforvaltning",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": "Valgfrie programfag spesielt utarbeidet for vg3 naturbruk",
+     "fag": "Bruk og vern av natur",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": "Valgfrie programfag spesielt utarbeidet for vg3 naturbruk",
+     "fag": "Feltarbeid i naturbruk",
+     "timer": 140
+    },
+    {
+     "gruppe": "",
+     "del": "Valgfrie programfag spesielt utarbeidet for vg3 naturbruk",
+     "fag": "Naturbasert næringsutvikling",
+     "timer": 140
+    }
+   ]
+  },
+  {
+   "nr": "26",
+   "tittel": "Tabell 26 Fag- og timefordeling på vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "Vg3",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Med stud.spes vg1"
+    },
+    {
+     "nr": 3,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 4,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      281,
+      280,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      281
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      84,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      84,
+      null,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      56,
+      56,
+      56,
+      56
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      701,
+      560,
+      831,
+      814
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      null,
+      null,
+      null,
+      27
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Programfag fra studief. eller yrkesf. utdanningsprogram",
+     "timer": [
+      null,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      841,
+      840,
+      831,
+      841
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "26",
+   "tittel": "Tabell 26 Fag- og timefordeling på vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram",
+   "type": "fordeling",
+   "omfang": "Totalt over 3 år",
+   "kolonner": [
+    {
+     "nr": 5,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 6,
+     "navn": "Med stud.spes vg1"
+    },
+    {
+     "nr": 7,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 8,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Fremmedspråk",
+     "timer": [
+      null,
+      113,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Geografi",
+     "timer": [
+      null,
+      56,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      168,
+      168,
+      168,
+      168
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1289,
+      1458,
+      1487,
+      1514
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      954,
+      477,
+      954,
+      954
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      421,
+      253,
+      365,
+      336
+     ]
+    },
+    {
+     "linje": "Programfag fra studieforberedende utdanningsprogram",
+     "timer": [
+      140,
+      140,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Programfag fra studief. eller yrkesf. utdanningsprogram",
+     "timer": [
+      null,
+      336,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2804,
+      2664,
+      2806,
+      2804
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "27",
+   "tittel": "Tabell 27 Fag- og timefordeling vg4 påbygging til generell studiekompetanse",
+   "type": "fordeling",
+   "omfang": "Vg4 påbygging",
+   "kolonner": [
+    {
+     "nr": 1,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 2,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 3,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      281,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      219,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      281
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      113
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      645,
+      775,
+      758
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      645,
+      775,
+      758
+     ]
+    }
+   ]
+  },
+  {
+   "nr": "27",
+   "tittel": "Tabell 27 Fag- og timefordeling vg4 påbygging til generell studiekompetanse",
+   "type": "fordeling",
+   "omfang": "Totalt",
+   "kolonner": [
+    {
+     "nr": 4,
+     "navn": "Ordinær"
+    },
+    {
+     "nr": 5,
+     "navn": "Samisk"
+    },
+    {
+     "nr": 6,
+     "navn": "Elever med tegnspråk"
+    }
+   ],
+   "rader": [
+    {
+     "linje": "Norsk",
+     "timer": [
+      393,
+      null,
+      null
+     ]
+    },
+    {
+     "linje": "Førstespråk samisk/norsk",
+     "timer": [
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Andrespråk norsk/samisk/kvensk/finsk",
+     "timer": [
+      null,
+      309,
+      null
+     ]
+    },
+    {
+     "linje": "Norsk for elever med tegnspråk",
+     "timer": [
+      null,
+      null,
+      393
+     ]
+    },
+    {
+     "linje": "Norsk tegnspråk",
+     "timer": [
+      null,
+      null,
+      225
+     ]
+    },
+    {
+     "linje": "Matematikk",
+     "timer": [
+      224,
+      224,
+      224
+     ]
+    },
+    {
+     "linje": "Naturfag",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Engelsk",
+     "timer": [
+      140,
+      140,
+      140
+     ]
+    },
+    {
+     "linje": "Samfunnskunnskap",
+     "timer": [
+      84,
+      84,
+      84
+     ]
+    },
+    {
+     "linje": "Kroppsøving",
+     "timer": [
+      112,
+      112,
+      112
+     ]
+    },
+    {
+     "linje": "Historie",
+     "timer": [
+      140,
+      113,
+      140
+     ]
+    },
+    {
+     "linje": "Sum fellesfag",
+     "timer": [
+      1233,
+      1431,
+      1458
+     ]
+    },
+    {
+     "linje": "Felles programfag fra eget programområde",
+     "timer": [
+      954,
+      954,
+      954
+     ]
+    },
+    {
+     "linje": "Yrkesfaglig fordypning",
+     "timer": [
+      421,
+      365,
+      309
+     ]
+    },
+    {
+     "linje": "Totalt omfang",
+     "timer": [
+      2608,
+      2750,
+      2721
+     ]
+    }
+   ]
+  }
+ ],
+ "merknader": [
+  "Tabell 9 (Totalt over 3 år), kolonne 12 Uten fr.språk gr.skole: linjene gir 2803, tabellen sier 2943.",
+  "Tabell 13 (Totalt over 3 år), kolonne 11 Ordinær: linjene gir 2831, tabellen sier 2943.",
+  "Tabell 13 (Totalt over 3 år), kolonne 12 Uten fr.språk gr.skole: linjene gir 2831, tabellen sier 2943.",
+  "Tabell 13 (Totalt over 3 år), kolonne 13 Samisk: linjene gir 2831, tabellen sier 2943.",
+  "Tabell 13 (Totalt over 3 år), kolonne 14 Elever med tegnspråk: linjene gir 2831, tabellen sier 2943.",
+  "Tabell 23 (Samlet timetall over to år for lærlinger uten vg1 og vg2 i skole eller vg2), kolonne 3 Elever med tegnspråk: linjene gir 588, tabellen sier 644."
+ ]
+}

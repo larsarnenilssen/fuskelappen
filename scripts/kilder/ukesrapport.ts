@@ -29,6 +29,8 @@ export interface Ukesgrunnlag {
   forslag?: { verdier: string | null; grep: string | null };
   /** Endringene i Grep denne uken (.generert/grep-endringer.json): læreplaner og fag listes i saken. */
   grep?: Grependringer | null;
+  /** Endringer i fag- og timefordelingen denne uken (.generert/udir-endringer.json). */
+  udir?: { endringer: string[]; nyVersjon: string | null } | null;
   /** Nye fag uten kobling til årsramme og nye avvik i koblingen (.generert/kobling-endringer.json). */
   kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
 }
@@ -44,6 +46,9 @@ export function grepLaereplanlinjer(e: Grependringer | null | undefined, maks = 
     ...(e.fag?.endret ?? []).map((l) => `Endret fag: ${l}`),
     ...(e.fag?.nye ?? []).map((l) => `Nytt fag: ${l}`),
     ...(e.fag?.fjernet ?? []).map((l) => `Fag fjernet: ${l}`),
+    ...(e.tilbud?.nye ?? []).map((l) => `Nytt programområde: ${l}`),
+    ...(e.tilbud?.fjernet ?? []).map((l) => `Programområde lagt ned: ${l}`),
+    ...(e.tilbud?.endret ?? []).map((l) => `Endret programområde: ${l}`),
   ];
   const ut = linjer.slice(0, maks).map((l) => `  - ${l}`);
   if (linjer.length > maks) ut.push(`  - … og ${linjer.length - maks} til. Se jobbsammendraget.`);
@@ -127,7 +132,8 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   let punkter = 0;
   let orientering = 0;
 
-  const endrede = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'endret' && kilder.get(id)?.sjekkmetode !== 'grep');
+  // Registerdata (Grep og fag- og timefordelingen) har egne deler lenger ned.
+  const endrede = Object.entries(g.kildestatus.kilder).filter(([id, p]) => p.status === 'endret' && !['grep', 'udir-fagfordeling'].includes(kilder.get(id)?.sjekkmetode ?? ''));
   if (endrede.length > 0) {
     deler.push([
       '## Endret i kildene',
@@ -194,6 +200,25 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
   });
   if (g.forslag?.grep) grepLinjer.push(`- Forslag med de nye Grep-dataene: ${g.forslag.grep}`);
   if (grepLinjer.length > 0) deler.push(['## Grep', '', ...grepLinjer, '']);
+
+  // Fag- og timefordelingen fra rundskrivet Udir-1 (avgjørelse 024).
+  const udir = Object.entries(g.kildestatus.kilder).filter(([id]) => kilder.get(id)?.sjekkmetode === 'udir-fagfordeling');
+  const udirLinjer = udir.flatMap(([id, p]) => {
+    if (p.status === 'endret') {
+      punkter += 1;
+      return [`- [ ] ${p.melding ?? 'Fag- og timefordelingen er endret.'} <!-- udir:${id}:${p.fingeravtrykk ?? '-'} -->`];
+    }
+    if (p.melding) {
+      orientering += 1;
+      return [`- ${p.melding}`];
+    }
+    return [];
+  });
+  if (udirLinjer.length > 0) {
+    const detaljer = (g.udir?.endringer ?? []).slice(0, MAKS_DETALJER).map((l) => `  - ${l}`);
+    if ((g.udir?.endringer.length ?? 0) > MAKS_DETALJER) detaljer.push(`  - … og ${(g.udir?.endringer.length ?? 0) - MAKS_DETALJER} til. Se jobbsammendraget.`);
+    deler.push(['## Fag- og timefordeling', '', ...udirLinjer, ...detaljer, '']);
+  }
 
   // Koblingen fra fagkode til årsramme (avgjørelse 023): nye avvik skal ses på, nye ukoblede fag til orientering.
   const kobling = g.kobling;

@@ -16,11 +16,11 @@ const rader = [
 const fag = (type: Fag['type'], po: string[], timer: number | null = 140): Fag => ({ navn: { nb: 'Fag', nn: 'Fag' }, type, trinn: [], po, timer, lp: null, km: [], elev: null, privatist: null });
 const indeks: Pick<Fagindeks, 'fag' | 'programomrader'> = {
   programomrader: {
-    'HSHEA2----': { navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeidarfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole' },
-    'HSHEA3----': { navn: { nb: 'Helsearbeiderfaget', nn: 'Helsearbeidarfaget' }, program: 'HS', trinn: 'Vg3', sted: 'bedrift' },
-    'STUSP1----': { navn: { nb: 'Studiespesialisering', nn: 'Studiespesialisering' }, program: 'ST', trinn: 'Vg1', sted: 'skole' },
-    'STSSA2----': { navn: { nb: 'SSØ vg2', nn: 'SSØ vg2' }, program: 'ST', trinn: 'Vg2', sted: 'skole' },
-    'STSSA3----': { navn: { nb: 'SSØ vg3', nn: 'SSØ vg3' }, program: 'ST', trinn: 'Vg3', sted: 'skole' },
+    'HSHEA2----': { navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeidarfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole', bygger: [], timer: null },
+    'HSHEA3----': { navn: { nb: 'Helsearbeiderfaget', nn: 'Helsearbeidarfaget' }, program: 'HS', trinn: 'Vg3', sted: 'bedrift', bygger: [], timer: null },
+    'STUSP1----': { navn: { nb: 'Studiespesialisering', nn: 'Studiespesialisering' }, program: 'ST', trinn: 'Vg1', sted: 'skole', bygger: [], timer: null },
+    'STSSA2----': { navn: { nb: 'SSØ vg2', nn: 'SSØ vg2' }, program: 'ST', trinn: 'Vg2', sted: 'skole', bygger: [], timer: null },
+    'STSSA3----': { navn: { nb: 'SSØ vg3', nn: 'SSØ vg3' }, program: 'ST', trinn: 'Vg3', sted: 'skole', bygger: [], timer: null },
   },
   fag: {
     NOR1260: fag('fellesfag', ['STUSP1----'], 113),

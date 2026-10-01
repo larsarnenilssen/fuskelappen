@@ -96,6 +96,32 @@ function sjekkGrep(): Sjekkresultat {
   return { status: 'ok', fingeravtrykk, melding: antall > 0 && endringer ? `Tatt inn automatisk: ${grepsammendrag(endringer)}` : null };
 }
 
+/**
+ * Fag- og timefordelingen fra rundskrivet Udir-1 hentes i samme steg som Grep (npm run hent:udir), og testes
+ * sammen med Grep-dataene. Stemmer testene, tas de inn automatisk (avgjørelse 024).
+ */
+function sjekkUdir(): Sjekkresultat {
+  const endringsfil = join(generert, 'udir-endringer.json');
+  if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av fag- og timefordelingen feilet. Se loggen for steget «Hent Grep og fag- og timefordeling».' };
+  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { rundskriv: string; skolear: string; forste: boolean; endringer: string[]; nyVersjon: string | null };
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const fil = join(rot, 'data/udir', `fagfordeling-${e.skolear}.json`);
+  const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(JSON.stringify((JSON.parse(readFileSync(fil, 'utf8')) as { tabeller: unknown }).tabeller)) : null;
+  rapport.push(
+    `### Fag- og timefordeling (${e.rundskriv}, skoleåret ${e.skolear.replace('-', '–')})`,
+    e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
+    ...e.endringer.slice(0, 60).map((l) => `- ${l}`),
+    ...(e.nyVersjon ? [`- Nytt rundskriv er publisert: ${e.nyVersjon}.`] : []),
+    '',
+  );
+  const nytt = e.nyVersjon ? ` Nytt rundskriv er publisert: ${e.nyVersjon}.` : '';
+  if (tester === 'feilet' && e.endringer.length > 0) {
+    return { status: 'endret', fingeravtrykk, melding: `Fag- og timefordelingen er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).${nytt}` };
+  }
+  if (e.nyVersjon) return { status: 'endret', fingeravtrykk, melding: `Nytt rundskriv om fag- og timefordeling er publisert: ${e.nyVersjon}. Det nye skoleåret må legges inn.` };
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i fag- og timefordelingen.` : null };
+}
+
 async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   if (kilde.id === simulertFeil) {
     tekster[kilde.id] = { feil: 'Simulert feil.' };
@@ -112,6 +138,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return await sjekkNsr(kilde);
       case 'grep':
         return sjekkGrep();
+      case 'udir-fagfordeling':
+        return sjekkUdir();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };
