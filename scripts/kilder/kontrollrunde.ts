@@ -42,7 +42,14 @@ export interface Kontrollrunde {
  * enn 12 måneder siden). Innhold og verdier som eier har kontrollert, men som er gamle eller har endret kilde,
  * får et avkrysningspunkt. Det som ikke er kontrollert ennå, telles bare, med lenke til kontrolloversikten.
  */
-export function lagKontrollrunde(periode: string, praksis: readonly Praksis[], indeks: readonly Kildekontroll[], repo: string): Kontrollrunde {
+export function lagKontrollrunde(
+  periode: string,
+  praksis: readonly Praksis[],
+  indeks: readonly Kildekontroll[],
+  repo: string,
+  /** Lenker til Vilbli som sjekkes for hånd (avgjørelse 027). */
+  lenker: readonly { tekst: string; url: string }[] = [],
+): Kontrollrunde {
   const [aar, maned] = periode.split('-');
   const nr = Number(maned);
   const navn = MANEDER[nr - 1] ?? periode;
@@ -76,12 +83,22 @@ export function lagKontrollrunde(periode: string, praksis: readonly Praksis[], i
           return `- [ ] ${hva}: ${hvorfor} (${p.kontrollert ? dato(p.kontrollert) : '–'}). <!-- kontroll:${p.type}:${p.id} -->`;
         })),
     '',
+    ...(lenker.length > 0
+      ? [
+          '## Lenker til Vilbli',
+          '',
+          'Lenkene fra tilbudene til skolene på Vilbli kan ikke sjekkes automatisk. Åpne dem, og kryss av når riktig side med skoler vises. Virker en lenke ikke, skriv hvordan adressen ser ut når du finner siden selv på Vilbli.',
+          '',
+          ...lenker.map((l, i) => `- [ ] [${l.tekst}](${l.url}) <!-- vilbli:${i + 1} -->`),
+          '',
+        ]
+      : []),
     '## Ikke kontrollert ennå',
     '',
     `${t.ikkeKontrollert} ${t.ikkeKontrollert === 1 ? 'begrep, forklaring eller verdi er' : 'begreper, forklaringer og verdier er'} ikke kontrollert. Kontrollspørsmålene til hver tekst står i [kontrolloversikten](${oversikt}). Ta gjerne noen av dem i denne runden.`,
     '',
     rundemerke(periode),
   ].join('\n');
-  const antall = praksis.length + gamle.length;
+  const antall = praksis.length + gamle.length + lenker.length;
   return { tittel: `Kontrollrunde ${navn} ${aar ?? ''}: ${antall} ${antall === 1 ? 'punkt' : 'punkter'}`, tekst };
 }

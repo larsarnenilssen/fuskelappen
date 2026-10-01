@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
 import { byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
+import { kontrollenker, lopTil, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
 const fag = (navn: string, type: Fag['type'], po: string[], timer: number | null, lp: string | null = null): Fag => ({ navn: { nb: navn, nn: navn }, type, trinn: [], po, timer, lp, km: [], elev: null, privatist: null });
 const po = (navn: string, program: string, trinn: Programomrade['trinn'], bygger: string[] = [], sted: Programomrade['sted'] = 'skole'): Programomrade => ({ navn: { nb: navn, nn: navn }, program, trinn, sted, bygger, timer: null, merkelapper: [] });
@@ -236,5 +237,33 @@ describe('skoleåret', () => {
     expect(velgFordeling(f, '2028-10-01')?.skolear).toBe('2027-2028');
     expect(velgFordeling(f, '2025-10-01')?.skolear).toBe('2026-2027');
     expect(velgFordeling([], '2026-10-01')).toBeNull();
+  });
+});
+
+describe('lenker til Vilbli', () => {
+  it('skriver tekst i adressen uten æøå og mellomrom', () => {
+    expect(vilbliTekst('Møre og Romsdal')).toBe('more-og-romsdal');
+    expect(vilbliTekst('Helse- og oppvekstfag')).toBe('helse-og-oppvekstfag');
+    expect(vilbliTekst('Trøndelag')).toBe('trondelag');
+  });
+
+  it('følger hovedløpet bakover, ikke kryssløp', () => {
+    expect(lopTil('HSHEA3----', indeks)).toEqual(['HSHSF1----', 'HSHEA2----', 'HSHEA3----']);
+    expect(lopTil('STUSP1----', indeks)).toEqual(['STUSP1----']);
+  });
+
+  it('lager lenken til skolene for hele landet eller et fylke', () => {
+    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p5' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5');
+    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p2', fylke: 'Møre og Romsdal' })).toBe('https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p2');
+    expect(vilbliLenke('FINNES0---', indeks, { side: 'p5' })).toBeNull();
+    // Via et programområde tilbudet bygger på, og bare det.
+    expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'HSHEA2----' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5');
+    expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'STUSP1----' })).toContain('v.hshsf1----_v.hshea2----_v.hshea3----');
+  });
+
+  it('gir lenkene til kontrollrunden, og hopper over programområder som mangler', () => {
+    const l = kontrollenker(indeks);
+    expect(l.map((x) => x.tekst)).toEqual(['Vg2 helsearbeiderfag, hele landet', 'Vg2 helsearbeiderfag, Vestland', 'Lærefag: helsearbeiderfaget', 'Vg2 helsearbeiderfag, Møre og Romsdal']);
+    expect(l[2]?.url).toContain('v.hshsf1----_v.hshea2----_v.hshea3----/p5');
   });
 });

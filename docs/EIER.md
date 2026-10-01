@@ -186,6 +186,7 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 
 - **Praksis og tolkninger** som ikke er bekreftet, eller som ble bekreftet for mer enn 12 måneder siden.
 - **Det som bør kontrolleres på nytt:** innhold du har kontrollert, men der kontrollen er over 12 måneder gammel eller kilden er endret siden.
+- **Lenker til Vilbli** fra tilbudsoversikten, som ikke kan sjekkes automatisk (se punkt 15).
 - **Hvor mye som ikke er kontrollert ennå**, med lenke til kontrollspørsmålene.
 
 Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
@@ -261,4 +262,17 @@ Oppfølging samme dag:
   - Dronefag (ELDRF2) og variantene for særskilte skoler har ingen fellesfag i Grep.
   - «Fag for studiekompetanse» (PBPBY4) har ingen tabell. Er dette vg4 påbygging (tabell 27)?
 - [ ] **Programområder som ikke nås:** Fire vg3 på salg, service og reiseliv, og to realfag-tilbud ved tysk skole, mangler «bygger på» i Grep. Hvor hører de til?
+
+## 15. Lenker til Vilbli
+
+Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til skolene og lærebedriftene på Vilbli for hvert tilbud (avgjørelse 027). Lenkene lages fra kodene i Grep. Vilbli kan ikke sjekkes automatisk. Klikk derfor på disse lenkene nå. Kontrollrundene i mai og august har de samme lenkene til avkrysning. Vises riktig side med skoler?
+
+- [ ] Vg2 helsearbeiderfag, hele landet: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+- [ ] Det samme for et fylke (fylkesnavnet i adressen): https://www.vilbli.no/nb/nb/vestland/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+- [ ] Et lærefag (vg3 i bedrift): https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5
+- [ ] Vg3 studiespesialisering: https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----_v.stssa3----/p5
+- [ ] Påbygging: https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby3----/p5
+- [ ] Et fylke med «æ», «ø» eller «å» i navnet: https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+
+Si fra hvilke som ikke virker, og hvordan adressen ser ut når du finner siden selv på Vilbli.
 
