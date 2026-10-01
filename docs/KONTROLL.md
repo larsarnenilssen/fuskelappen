@@ -193,8 +193,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | 3.1 Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
-| Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | 3.2 Andre vitnemålsmerknader og 3.3 Merknader kun på kompetansebevis | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+| Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | 3 Merknader til vitnemål og kompetansebevis, 3.1 Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+| Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3 | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
 
 ### Registreringshåndboken, B16 FAM-kode og B17 FAM-merknad
 
@@ -438,12 +438,9 @@ Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om pr
 
 **Fagmerknader (FAM-koder)** (`fagmerknader`, begrep, ikke kontrollert)
 
-- Er det riktig å beskrive fagmerknader som merknader ved et fag på vitnemål og kompetansebevis, og ikke på andre dokumenter?
-- Stemmer det at tekst i vinkelparentes, f.eks. <åååå> og <fagkode>, fylles ut for hver elev?
-- Er det nyttig å vise de utgåtte kodene (sammenlagt nederst), eller bør de skjules helt?
+- Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
 **Vitnemålsmerknader (VMM-koder)** (`vitnemalsmerknader`, begrep, ikke kontrollert)
 
-- Er skillet riktig: vitnemålsmerknader gjelder hele vitnemålet, fagmerknader gjelder et enkelt fag?
-- Brukes vitnemålsmerknadene også på kompetansebevis, eller bare på vitnemål?
+- Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 

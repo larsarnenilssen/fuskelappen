@@ -183,8 +183,8 @@ kilder:
     faser: [2, 6]
     merknad: >-
       Udirs skriv om føring av vitnemål og kompetansebevis. Kapittel 3 er primærkilden for fagmerknadene (3.1),
-      vitnemålsmerknadene (3.2) og merknadene som bare brukes på kompetansebevis (3.3), med bruksområde og om de
-      gjelder vitnemål eller kompetansebevis. Adressen har skoleåret i seg (vgs-25); kommer et nytt skriv, må den
+      vitnemålsmerknadene (3.2) og vitnemålsmerknadene som bare kan stå på kompetansebevis (3.3), med bruksområde
+      og om de gjelder vitnemål eller kompetansebevis. Adressen har skoleåret i seg (vgs-25); kommer et nytt skriv, må den
       oppdateres. Kodene og tekstene i appen hentes fra VIGO Kodeverksbase (vigo-kodeverk).
 
   - id: udir-regbok-fam

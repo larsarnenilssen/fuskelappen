@@ -4,17 +4,15 @@
   type: begrep
   tittel: { nb: Fagmerknader (FAM-koder), nn: Fagmerknader (FAM-kodar) }
   tekst:
-    nb: Fagmerknader er korte, faste merknader som føres ved et fag på vitnemålet eller kompetansebeviset, for eksempel «Fritatt fra opplæring» (FAM01) eller «Fritatt fra vurdering med karakter» (FAM02). Kodene er felles for alle fylkeskommunene og ligger i VIGO. Listen viser hver kode med teksten, hvor den brukes, og om den krever vedlegg. Tekst i vinkelparentes, for eksempel &lt;åååå&gt;, fylles ut for eleven.
-    nn: Fagmerknader er korte, faste merknader som blir førte ved eit fag på vitnemålet eller kompetansebeviset, til dømes «Friteken frå opplæring» (FAM01) eller «Friteken frå vurdering med karakter» (FAM02). Kodane er felles for alle fylkeskommunane og ligg i VIGO. Lista viser kvar kode med teksten, kvar han blir brukt, og om han krev vedlegg. Tekst i vinkelparentes, til dømes &lt;åååå&gt;, blir fylt ut for eleven.
+    nb: Fagmerknader er korte, faste merknader som føres ved et fag på vitnemålet eller kompetansebeviset. De gir opplysninger om faget som ikke går fram av karakteren eller eksamensformen, utdyper dem eller viser til et vedlegg, for eksempel «Fritatt fra opplæring» (FAM01) eller «Fritatt fra vurdering med karakter» (FAM02). Noen merknader gjelder bare vitnemål eller bare kompetansebevis. Det er plass til én fagmerknad per fag, og bare merknader Udir har fastsatt, kan brukes. Kodene ligger i VIGO. Listen viser hver kode med teksten, hvor den brukes, og om den krever vedlegg. Tekst i vinkelparentes, for eksempel &lt;åååå&gt; eller &lt;FAGKODE&gt;, fylles ut for eleven. Utgåtte koder står samlet nederst, fordi de kan stå på eldre vitnemål.
+    nn: Fagmerknader er korte, faste merknader som blir førte ved eit fag på vitnemålet eller kompetansebeviset. Dei gir opplysningar om faget som ikkje går fram av karakteren eller eksamensforma, utdjupar dei eller viser til eit vedlegg, til dømes «Friteken frå opplæring» (FAM01) eller «Friteken frå vurdering med karakter» (FAM02). Nokre merknader gjeld berre vitnemål eller berre kompetansebevis. Det er plass til éin fagmerknad per fag, og berre merknader Udir har fastsett, kan brukast. Kodane ligg i VIGO. Lista viser kvar kode med teksten, kvar han blir brukt, og om han krev vedlegg. Tekst i vinkelparentes, til dømes &lt;åååå&gt; eller &lt;FAGKODE&gt;, blir fylt ut for eleven. Utgåtte kodar står samla nedst, fordi dei kan stå på eldre vitnemål.
   kilder:
-    - { id: udir-foring-vitnemal-merknader, punkt: "3.1 Fagmerknader" }
+    - { id: udir-foring-vitnemal-merknader, punkt: "3 Merknader til vitnemål og kompetansebevis, 3.1 Fagmerknader" }
     - { id: udir-regbok-fam, punkt: "B16 FAM-kode og B17 FAM-merknad" }
     - { id: vigo-kodeverk, punkt: Fagmerknader }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig å beskrive fagmerknader som merknader ved et fag på vitnemål og kompetansebevis, og ikke på andre dokumenter?"
-    - "Stemmer det at tekst i vinkelparentes, f.eks. <åååå> og <fagkode>, fylles ut for hver elev?"
-    - "Er det nyttig å vise de utgåtte kodene (sammenlagt nederst), eller bør de skjules helt?"
+    - "Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?"
   stikkord: [FAM, fagmerknad, vitnemål, kompetansebevis, fritak, VIGO]
   relatert: [vitnemalsmerknader]
   kodeliste: fagmerknader
@@ -23,16 +21,15 @@
   type: begrep
   tittel: { nb: Vitnemålsmerknader (VMM-koder), nn: Vitnemålsmerknader (VMM-kodar) }
   tekst:
-    nb: Vitnemålsmerknader er faste tekster som føres på vitnemålet for hele opplæringen, ikke ved et enkelt fag, for eksempel om utvidet tid, fritak eller avlyst eksamen. Kodene er felles for alle fylkeskommunene og ligger i VIGO. Listen viser hver kode med teksten og hvor den brukes. Tekst i vinkelparentes, for eksempel &lt;ddmmåå&gt;, fylles ut for eleven.
-    nn: Vitnemålsmerknader er faste tekstar som blir førte på vitnemålet for heile opplæringa, ikkje ved eit enkelt fag, til dømes om utvida tid, fritak eller avlyst eksamen. Kodane er felles for alle fylkeskommunane og ligg i VIGO. Lista viser kvar kode med teksten og kvar han blir brukt. Tekst i vinkelparentes, til dømes &lt;ddmmåå&gt;, blir fylt ut for eleven.
+    nb: Vitnemålsmerknader er faste tekster som gjelder opplæringen generelt eller hele vitnemålet eller kompetansebeviset, ikke et enkelt fag, for eksempel om utvidet tid, dispensasjon eller avlyst eksamen. En vitnemålsmerknad kan også vise til et vedlegg eller utdype en fagmerknad. De fleste kan stå både på vitnemål og kompetansebevis. Noen gjelder bare vitnemål, for eksempel «Førstegangsvitnemål» (VMM06), og noen bare kompetansebevis, for eksempel at opplæring i programfag inngår i kontrakten om opplæring (VMM14). Bare merknader Udir har fastsatt, kan brukes. Kodene ligger i VIGO. Listen viser hver kode med teksten og hvor den brukes. Tekst i vinkelparentes, for eksempel &lt;ddmmåå&gt;, fylles ut for eleven.
+    nn: Vitnemålsmerknader er faste tekstar som gjeld opplæringa generelt eller heile vitnemålet eller kompetansebeviset, ikkje eit enkelt fag, til dømes om utvida tid, dispensasjon eller avlyst eksamen. Ein vitnemålsmerknad kan også vise til eit vedlegg eller utdjupe ein fagmerknad. Dei fleste kan stå både på vitnemål og kompetansebevis. Nokre gjeld berre vitnemål, til dømes «Førstegongsvitnemål» (VMM06), og nokre berre kompetansebevis, til dømes at opplæring i programfag inngår i kontrakten om opplæring (VMM14). Berre merknader Udir har fastsett, kan brukast. Kodane ligg i VIGO. Lista viser kvar kode med teksten og kvar han blir brukt. Tekst i vinkelparentes, til dømes &lt;ddmmåå&gt;, blir fylt ut for eleven.
   kilder:
-    - { id: udir-foring-vitnemal-merknader, punkt: "3.2 Andre vitnemålsmerknader og 3.3 Merknader kun på kompetansebevis" }
+    - { id: udir-foring-vitnemal-merknader, punkt: "3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3" }
     - { id: udir-regbok-vmm, punkt: "B18 VMM-kode og B19 VMM-merknad" }
     - { id: vigo-kodeverk, punkt: Vitnemålsmerknader }
   kontrollert: null
   kontrollsporsmal:
-    - "Er skillet riktig: vitnemålsmerknader gjelder hele vitnemålet, fagmerknader gjelder et enkelt fag?"
-    - "Brukes vitnemålsmerknadene også på kompetansebevis, eller bare på vitnemål?"
-  stikkord: [VMM, vitnemålsmerknad, vitnemål, utvidet tid, VIGO]
+    - "Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?"
+  stikkord: [VMM, vitnemålsmerknad, vitnemål, kompetansebevis, utvidet tid, VIGO]
   relatert: [fagmerknader]
   kodeliste: vitnemalsmerknader

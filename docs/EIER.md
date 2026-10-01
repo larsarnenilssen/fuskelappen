@@ -193,6 +193,16 @@ Automatisk samsvar betyr bare at tallet står i kilden. Det sier ikke noe om tol
 
 Kryss av det som fortsatt stemmer, og skriv i en kommentar hva som er endret. Vil du ha en kontrollrunde nå: **Actions** → **Kildesjekk** → **Run workflow** → kryss av for «Lag en kontrollrunde nå» → **Run workflow**.
 
+**Kontrollspørsmålene til fagmerknader og vitnemålsmerknader** ble besvart fra Udirs skriv om føring av vitnemål og kompetansebevis, kapittel 3, etter beskjed fra eier 01.10.2026:
+
+- Fagmerknader står ved et fag på vitnemål og kompetansebevis. Noen gjelder bare det ene. Det er plass til én per fag.
+- Tekst i vinkelparentes (f.eks. `<FAGKODE>`, `<åååå>`) fylles ut for eleven. Registreringshåndboken sier at disse overføres som fritekst.
+- Utgåtte koder vises fortsatt samlet nederst, fordi de kan stå på eldre vitnemål (Claudes valg).
+- Vitnemålsmerknader gjelder opplæringen generelt eller hele dokumentet. De kan også vise til vedlegg eller utdype en fagmerknad.
+- Vitnemålsmerknader brukes også på kompetansebevis. Noen gjelder bare vitnemål (VMM06, VMM36), og noen bare kompetansebevis (VMM14, 26, 27, 29, 33, 34, 38).
+
+Tekstene er skrevet om etter dette. De har ett nytt kontrollspørsmål hver og `kontrollert: null` til du har lest dem.
+
 ## 12. Godkjenne i saken med /godkjent
 
 Du kan godkjenne direkte i kontrollsaken eller kontrollrunden. Det går fint på telefonen.

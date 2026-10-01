@@ -9,6 +9,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Fagsiden** viser fag som brukes sammen, for eksempel tverrfaglig eksamen og fagene den gjelder, og hvilke utgåtte fagkoder faget erstatter. Er læreplanen erstattet av en ny versjon, står det på siden.
 - **Utgåtte fagkoder:** Søker du på en utgått kode, eller åpner den, ser du hvilken kode som gjelder nå.
 - **Fagmerknader (FAM-koder) og vitnemålsmerknader (VMM-koder)** i begrepsbanken, hver i sitt oppslag med søk på kode og tekst. Kodene finnes også i søket på forsiden.
+- Forklaringene av fagmerknader og vitnemålsmerknader bygger nå på Udirs skriv om føring av vitnemål og kompetansebevis: hva merknadene brukes til, at det er plass til én fagmerknad per fag, og hvilke merknader som bare gjelder vitnemål eller bare kompetansebevis.
 
 ### Lagt til (for eier)
 
