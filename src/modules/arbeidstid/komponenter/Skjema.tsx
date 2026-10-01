@@ -288,12 +288,21 @@ export function Fagvelger({
             <Fagkodelinje fag={fag} />
           </p>
         )}
-        <Tallfelt etikett={t('arbeidstid.felles.manuellEtikett')} verdi={plass.t60} min={1} maks={2000} onEndring={(v) => onEndring({ ...plass, t60: v })} />
+        {/* Byttet tilbake til søk står på samme sted som «Skriv inn årsramme selv» (eier 01.10.2026). */}
+        <Tallfelt
+          etikett={t('arbeidstid.felles.manuellEtikett')}
+          verdi={plass.t60}
+          min={1}
+          maks={2000}
+          onEndring={(v) => onEndring({ ...plass, t60: v })}
+          etikettHoyre={
+            <button type="button" class="lenkeknapp liten etikettrad-hoyre" onClick={() => onEndring(tomArsrammeplass())}>
+              {t('arbeidstid.felles.tilbakeTilSok')}
+            </button>
+          }
+        />
         <Vippe tekst={t('arbeidstid.felles.manuellStjerne')} pa={plass.stjerne} onEndring={(stjerne) => onEndring({ ...plass, stjerne })} />
         <Koblingslinje plass={plass} onEndring={onEndring} />
-        <button type="button" class="lenkeknapp liten" onClick={() => onEndring(tomArsrammeplass())}>
-          {t('arbeidstid.felles.tilbakeTilSok')}
-        </button>
         {ekstra}
       </div>
     );

@@ -81,13 +81,20 @@ export function fagUndertekst(t: T, kode: string, fag: Fag, tilbud: readonly str
     .join(' · ');
 }
 
+/** Et fag i listen. Kanten og fagtypen har fargen til fagtypen, som på fagarket (eier 01.10.2026). */
 function Faglenke({ kode, fag, tilbud }: Fagtreff & { tilbud?: readonly string[] }) {
   const { t, malform } = useTekst();
+  const type = fagtypeTekst(t, fag.type);
+  const [for_, etter] = fagUndertekst(t, kode, fag, tilbud).split(type);
   return (
-    <a class="listelenke" href={`#/fag/${kode}`}>
+    <a class="listelenke faglenke" href={`#/fag/${kode}`} data-fagtype={fag.type}>
       <span class="listelenke-tekst">
         <span class="listelenke-tittel">{fag.navn[malform]}</span>
-        <span class="listelenke-under">{fagUndertekst(t, kode, fag, tilbud)}</span>
+        <span class="listelenke-under">
+          {for_}
+          {etter !== undefined && <span class="faglenke-type">{type}</span>}
+          {etter}
+        </span>
       </span>
       <Ikon navn="hoyre" class="ikon-liten" />
     </a>
@@ -117,12 +124,12 @@ function Fagliste({ treff }: { treff: readonly (Fagtreff & { tilbud?: readonly s
 }
 
 /** En gruppe med overskrift som åpner og lukker den. Innholdet tegnes først når gruppen er åpen. */
-function Gruppe({ tittel, aapen: start, nivaa, children }: { tittel: string; aapen: boolean; nivaa: 2 | 3; children: () => preact.ComponentChildren }) {
+function Gruppe({ tittel, aapen: start, nivaa, fagtype, children }: { tittel: string; aapen: boolean; nivaa: 2 | 3; fagtype?: Fagtype; children: () => preact.ComponentChildren }) {
   const [aapen, settAapen] = useState(start);
   const id = useId();
   const Overskrift = nivaa === 2 ? 'h2' : 'h3';
   return (
-    <section class={`faggruppe faggruppe-${nivaa}`}>
+    <section class={`faggruppe faggruppe-${nivaa}`} data-fagtype={fagtype}>
       <Overskrift class="faggruppe-tittel">
         <button type="button" class="kortknapp" aria-expanded={aapen} aria-controls={id} onClick={() => settAapen(!aapen)}>
           <span class="kortknapp-tekst">{tittel}</span>
@@ -147,7 +154,7 @@ function Grupper({ treff, program, titler }: { treff: readonly (Fagtreff & { til
   return (
     <div class="faggrupper">
       {grupper.map((g) => (
-        <Gruppe key={g.type} nivaa={2} aapen tittel={t('fag.gruppe', { navn: t(`fag.gruppenavn.${g.type}` as `fag.gruppenavn.${Fagtype}`), antall: formaterTall(g.treff.length) })}>
+        <Gruppe key={g.type} fagtype={g.type} nivaa={2} aapen tittel={t('fag.gruppe', { navn: t(`fag.gruppenavn.${g.type}` as `fag.gruppenavn.${Fagtype}`), antall: formaterTall(g.treff.length) })}>
           {() =>
             g.treff.length <= STOR_GRUPPE ? (
               <Fagliste treff={g.treff} />

@@ -4,6 +4,21 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.15.0] – 2026-10-01
+
+### Endret
+
+- **Nytt design for fagarket:**
+  - Fagkode, fagtype og trinn står som merker under tittelen.
+  - Årstimetall og årsramme står som nøkkeltall med store tall, og «Regn ut i Arbeidsplan» er en knapp.
+  - Hver del står i et eget kort med en kant i fargen til fagtypen. Fellesfag er blå, felles programfag grønn, valgfrie programfag lilla og yrkesfaglig fordypning gul.
+  - Kompetansemålene har strek mellom hvert mål.
+- **Fagsøket** bruker de samme fargene: hvert fag og hver gruppe har en kant i fargen til fagtypen.
+
+### Rettet
+
+- **Arbeidsplan:** Når du har valgt «Skriv inn årsramme selv», står «Søk i vedlegg 1» på samme sted, til høyre for etiketten, i stedet for under bryteren for fag merket *.
+
 ## [0.14.1] – 2026-10-01
 
 ### Endret
@@ -433,7 +448,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.14.1...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.15.0...HEAD
+[0.15.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.15.0
 [0.14.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.14.1
 [0.14.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.14.0
 [0.13.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.13.0

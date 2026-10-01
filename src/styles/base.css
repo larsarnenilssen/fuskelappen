@@ -2273,15 +2273,222 @@ p.fagkort-tittel {
   color: var(--farge-lenke);
 }
 
-/* Delene av fagarket som kan lukkes. */
+/* ---------- Fagarket (eier 01.10.2026) ----------
+   Merker under tittelen, nøkkeltall og kort for hver del. Fargen på fagtypen går igjen som kant på kortene. */
+/* Fargen på fagtypen, brukt både på fagarket og i fagsøket. */
+.fagark,
+[data-fagtype] {
+  --fagtype: var(--fagtype-andre);
+}
+
+[data-fagtype='fellesfag'] {
+  --fagtype: var(--fagtype-fellesfag);
+}
+
+[data-fagtype='felles_programfag'] {
+  --fagtype: var(--fagtype-felles);
+}
+
+[data-fagtype='valgfritt_programfag'] {
+  --fagtype: var(--fagtype-valgfritt);
+}
+
+[data-fagtype='yrkesfaglig_fordypning'] {
+  --fagtype: var(--fagtype-yff);
+}
+
+.fagark-merker {
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.merke-kode {
+  letter-spacing: 0.04em;
+}
+
+.merke-fagtype {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  border-color: var(--fagtype);
+  color: var(--fagtype);
+}
+
+.merke-fagtype .begrep-i {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  margin: -0.35rem -0.25rem;
+}
+
+.fagark-kort,
+.nokkeltall-kort,
+.fagark-fakta,
 .fag-seksjon {
-  margin: var(--rom-4) 0;
-  padding-top: var(--rom-2);
-  border-top: var(--strek) solid var(--farge-linje);
+  margin: 0 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-linje);
+  border-left: 4px solid var(--fagtype);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.nokkeltall-kort {
+  padding: var(--rom-3);
+}
+
+.nokkeltall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: var(--rom-2);
+}
+
+.nokkeltall-rute {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+}
+
+.nokkeltall-etikett {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
+.nokkeltall-etikett .begrep-i {
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+  margin: -0.25rem 0;
+}
+
+.nokkeltall-verdi {
+  font-size: var(--str-xxl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.nokkeltall-enhet {
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.nokkeltall-rader {
+  margin: var(--rom-2) 0 0;
+  font-size: var(--str-s);
+}
+
+.nokkeltall-bunn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin-top: var(--rom-3);
+}
+
+.nokkeltall-bunn .knapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  text-decoration: none;
+}
+
+.fagark-fakta {
+  padding: var(--rom-3);
+}
+
+.fagark-fakta:empty {
+  display: none;
+}
+
+/* På smal skjerm står etiketten over verdien, så lange navn og lister får hele bredden. */
+@media (max-width: 34rem) {
+  .fagark-fakta > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .fagark-fakta dt {
+    font-size: var(--str-s);
+    font-weight: 600;
+  }
+}
+
+.fag-seksjon {
+  padding: 0;
+  overflow: hidden;
 }
 
 .fag-seksjon-tittel {
-  margin: 0 0 var(--rom-2);
+  margin: 0;
+  font-size: var(--str-l);
+}
+
+.fag-seksjon-tittel .kortknapp {
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--rom-3);
+  border-radius: 0;
+}
+
+.fag-seksjon > div {
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+/* Fagsøket: en farget kant ved hvert fag og ved overskriften på hver gruppe, i fargen på fagtypen. */
+.faglenke {
+  box-shadow: inset 4px 0 0 var(--fagtype);
+}
+
+.faglenke-type {
+  color: var(--fagtype);
+  font-weight: 600;
+}
+
+.faggruppe-2[data-fagtype] > .faggruppe-tittel {
+  padding-left: var(--rom-2);
+  border-left: 4px solid var(--fagtype);
+}
+
+/* Kompetansemålene med luft og strek mellom, så lange lister er lette å lese. */
+.fagark .kompetansemaal {
+  margin: var(--rom-2) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fagark .kompetansemaal li {
+  padding: var(--rom-1) 0 var(--rom-1) var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+  position: relative;
+}
+
+.fagark .kompetansemaal li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.95em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--fagtype);
+}
+
+.fagark .fag-vurderinger {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--rom-3);
+}
+
+.fagark .fag-vurdering {
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
 }
 
 .egenskaper dd {

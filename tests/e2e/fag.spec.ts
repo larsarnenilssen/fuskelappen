@@ -13,8 +13,10 @@ test.describe('fag og læreplaner', () => {
     await expect(page).toHaveURL(/program=HS/);
     // Faget har samme navn i to programområder på Vg2. Fagkoden skiller dem.
     await expect(page.getByRole('status')).toHaveText('2 fag');
-    // Fag med samme navn viser tilbudet etter fagkoden.
+    // Fag med samme navn viser tilbudet etter fagkoden, og fagtypen har fargen til fagtypen.
     await expect(page.getByRole('link', { name: /HEA2005/ })).toContainText('HEA2005 · Helsearbeiderfag');
+    await expect(page.getByRole('link', { name: /HEA2005/ })).toHaveAttribute('data-fagtype', 'felles_programfag');
+    await expect(page.getByRole('link', { name: /HEA2005/ }).locator('.faglenke-type')).toHaveText('Felles programfag');
     await page.getByRole('link', { name: /HEA2005/ }).click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Helsefremmende arbeid');
 
@@ -56,8 +58,11 @@ test.describe('fag og læreplaner', () => {
 
   test('fagsiden viser årstimer, vurdering og kompetansemål, merket med målformen læreplanen er fastsatt i', async ({ page }) => {
     await page.goto('./#/fag/HEA2005');
-    await expect(page.getByText('197 timer à 60 minutter')).toBeVisible();
-    await expect(page.getByText('Felles programfag', { exact: true })).toBeVisible();
+    // Årstimetallet står som nøkkeltall: tallet og enheten hver for seg.
+    const timer = page.locator('.nokkeltall-rute').first();
+    await expect(timer.locator('.nokkeltall-verdi')).toHaveText('197');
+    await expect(timer.locator('.nokkeltall-enhet')).toHaveText('timer à 60 minutter');
+    await expect(page.locator('.merke-fagtype')).toContainText('Felles programfag');
     await expect(page.getByText('Fastsatt på bokmål. Teksten fra læreplanen er gjengitt uoversatt.')).toBeVisible();
     await expect(page.locator('.kompetansemaal li').first()).toBeVisible();
     await expect(page.getByRole('link', { name: /Læreplanen på udir.no \(KV366\)/ })).toHaveAttribute('href', 'https://www.udir.no/lk20/hea02-04/kompetansemaal-og-vurdering/kv366');
@@ -69,7 +74,11 @@ test.describe('fag og læreplaner', () => {
 
   test('fagarket viser årsramme, og «Regn ut i Arbeidsplan» åpner en ny arbeidsplan med faget (eier 01.10.2026)', async ({ page }) => {
     await page.goto('./#/fag/HEA2005');
-    const ramme = page.locator('.egenskaper > div', { hasText: 'Årsramme' });
+    // Fagkode, fagtype og trinn står som merker, og fagtypen har fargen til fagtypen (eier 01.10.2026).
+    await expect(page.locator('.fagark-merker')).toContainText('HEA2005');
+    await expect(page.locator('article.fagark')).toHaveAttribute('data-fagtype', 'felles_programfag');
+    const ramme = page.locator('.nokkeltall-kort');
+    await expect(ramme.locator('.nokkeltall-rute').first()).toContainText('197');
     await expect(ramme).toContainText('607,5');
     await expect(ramme).toContainText('appens tolkning av vedlegg 1');
     // Delene kan lukkes: kompetansemål og vurdering er åpne, programområdene lukket.
