@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 73 |
+| Ikke kontrollert | 75 |
 | Praksis og tolkninger som bør bekreftes | 12 av 12 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -184,6 +184,17 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 39 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 36 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
+
+### VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader
+
+`vigo-kodeverk` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://kodeverk.vigo.no/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+| Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | Vitnemålsmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
 
 ### Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)
 
@@ -393,4 +404,15 @@ Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om pr
 **Delt dagsverk** (`delt-dagsverk`, begrep, ikke kontrollert)
 
 - Er delt dagsverk (arbeidsdagen strekker seg over 9 timer eller mer) beskrevet riktig etter hovedtariffavtalen § 5.5?
+
+**Fagmerknader (FAM-koder)** (`fagmerknader`, begrep, ikke kontrollert)
+
+- Er det riktig å beskrive fagmerknader som merknader ved et fag på vitnemål og kompetansebevis, og ikke på andre dokumenter?
+- Stemmer det at tekst i vinkelparentes, f.eks. <åååå> og <fagkode>, fylles ut for hver elev?
+- Er det nyttig å vise de utgåtte kodene (sammenlagt nederst), eller bør de skjules helt?
+
+**Vitnemålsmerknader (VMM-koder)** (`vitnemalsmerknader`, begrep, ikke kontrollert)
+
+- Er skillet riktig: vitnemålsmerknader gjelder hele vitnemålet, fagmerknader gjelder et enkelt fag?
+- Brukes vitnemålsmerknadene også på kompetansebevis, eller bare på vitnemål?
 

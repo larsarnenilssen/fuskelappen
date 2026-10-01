@@ -1,0 +1,140 @@
+// Bygger dataene i data/vigo/ fra radene i VIGO Kodeverksbase, kontrollerer dem og finner endringene siden forrige
+// henting. Rene funksjoner, testes i tests/unit/vigo.test.ts (avgjørelse 026).
+import type { Fagrelasjoner, Merknad, Merknader } from '../../src/modules/fag/vigo/skjema.ts';
+
+/** En rad fra API-et. Bare feltene som brukes, er beskrevet. */
+export type Vigorad = Record<string, unknown>;
+
+const tekst = (v: unknown): string | null => (typeof v === 'string' && v.trim() !== '' ? v.trim() : null);
+const objekt = (v: unknown): Vigorad | null => (v && typeof v === 'object' && !Array.isArray(v) ? (v as Vigorad) : null);
+const dato = (v: unknown): string | null => tekst(v)?.slice(0, 10) ?? null;
+/** VIGOs egne koder for opplæringsfag har Z som fjerde eller femte tegn (f.eks. NOR1Z13). De finnes ikke i Grep. */
+export const erOpplaeringsfagkode = (kode: string) => /^.{3}Z|^.{4}Z/.test(kode);
+const jaNei = (v: unknown): boolean | null => (v === 'J' || v === true ? true : v === 'N' || v === false ? false : null);
+
+/** Erstatninger, nye læreplaner og fag som brukes sammen, fra tre koblinger i kodebasen. */
+export function byggFagrelasjoner(
+  rader: { erstatter: readonly Vigorad[]; erstattesAv: readonly Vigorad[]; brukesSammen: readonly Vigorad[] },
+  hentet: string,
+): { data: Fagrelasjoner; merknader: string[] } {
+  const merknader: string[] = [];
+  const erstatninger: Fagrelasjoner['erstatninger'] = {};
+  // «element_erstatter_element»: code1 erstatter code2. Bare fag (course1 og course2), og ikke VIGOs egne koder.
+  for (const r of rader.erstatter) {
+    const ny = tekst(r.code1);
+    const gammel = tekst(r.code2);
+    const fag = objekt(r.course2);
+    if (!ny || !gammel || !objekt(r.course1) || !fag || erOpplaeringsfagkode(ny) || erOpplaeringsfagkode(gammel)) continue;
+    const forrige = erstatninger[gammel];
+    if (forrige) {
+      if (!forrige.ny.includes(ny)) forrige.ny = [...forrige.ny, ny].sort();
+      continue;
+    }
+    const utgatt = dato(fag.validTo) ?? (fag.expired === 'Ja' ? 'ukjent' : null);
+    erstatninger[gammel] = { ny: [ny], navn: tekst(fag.officialName) ?? tekst(fag.courseName) ?? gammel, utgatt };
+  }
+  const laereplaner: Fagrelasjoner['laereplaner'] = {};
+  for (const r of rader.erstattesAv) {
+    const gammel = tekst(r.code1);
+    const ny = tekst(r.code2);
+    if (gammel && ny && gammel !== ny) laereplaner[gammel] = ny;
+  }
+  const brukesSammen: Record<string, Set<string>> = {};
+  const navn: Fagrelasjoner['navn'] = {};
+  for (const r of rader.brukesSammen) {
+    const a = tekst(r.code1);
+    const b = tekst(r.code2);
+    if (!a || !b || a === b || erOpplaeringsfagkode(a) || erOpplaeringsfagkode(b)) continue;
+    (brukesSammen[a] ??= new Set()).add(b);
+    const na = tekst(objekt(r.grepCourse1)?.name);
+    const nb = tekst(objekt(r.grepCourse2)?.name);
+    if (na) navn[a] = na;
+    if (nb) navn[b] = nb;
+  }
+  const sortert = <V>(o: Record<string, V>) => Object.fromEntries(Object.entries(o).sort(([x], [y]) => x.localeCompare(y)));
+  return {
+    data: {
+      kilde: 'vigo-kodeverk',
+      hentet,
+      erstatninger: sortert(erstatninger),
+      laereplaner: sortert(laereplaner),
+      brukesSammen: sortert(Object.fromEntries(Object.entries(brukesSammen).map(([k, v]) => [k, [...v].sort()]))),
+      navn: sortert(navn),
+    },
+    merknader,
+  };
+}
+
+/** En fagmerknad (FAM) eller vitnemålsmerknad (VMM) fra kodebasen. */
+export function lesMerknad(r: Vigorad): Merknad | null {
+  const kode = tekst(r.code);
+  const nb = tekst(r.norwegianName) ?? tekst(r.text);
+  if (!kode || !nb) return null;
+  return {
+    kode,
+    nb,
+    nn: tekst(r.nynorskName) ?? nb,
+    se: tekst(r.samiName),
+    en: tekst(r.englishName),
+    grunnskole: r.primarySchool === true,
+    videregaende: r.highSchool === true,
+    fagopplaering: r.vocationalSchool === true,
+    kreverVedlegg: r.requireAttachment === 'J',
+    vitnemal: jaNei(r.vitnemal),
+    kompetansebevis: jaNei(r.kompBevis),
+    utgatt: dato(r.validTo) ?? (r.expired === 'Ja' ? 'ukjent' : null),
+  };
+}
+
+const kodeorden = (a: Merknad, b: Merknad) => a.kode.localeCompare(b.kode, 'nb', { numeric: true });
+
+export function byggMerknader(rader: { fag: readonly Vigorad[]; vitnemal: readonly Vigorad[] }, hentet: string): Merknader {
+  const les = (liste: readonly Vigorad[]) => liste.map(lesMerknad).filter((m): m is Merknad => m !== null).sort(kodeorden);
+  return { kilde: 'vigo-kodeverk', hentet, fagmerknader: les(rader.fag), vitnemalsmerknader: les(rader.vitnemal) };
+}
+
+/** Feil som gjør at de nye dataene ikke tas inn (forrige fil blir stående). */
+export function validerVigo(rel: Fagrelasjoner, m: Merknader): string[] {
+  const feil: string[] = [];
+  const antall = (o: object) => Object.keys(o).length;
+  if (antall(rel.erstatninger) < 1000) feil.push(`Fant bare ${antall(rel.erstatninger)} erstattede fagkoder.`);
+  if (antall(rel.brukesSammen) < 200) feil.push(`Fant bare ${antall(rel.brukesSammen)} koder i «brukes sammen».`);
+  if (m.fagmerknader.length < 30 || m.fagmerknader.some((x) => !/^FAM\d+$/.test(x.kode))) feil.push(`Fagmerknadene ser ikke ut som ventet (${m.fagmerknader.length}).`);
+  if (m.vitnemalsmerknader.length < 20 || m.vitnemalsmerknader.some((x) => !/^VMM\d+$/.test(x.kode))) feil.push(`Vitnemålsmerknadene ser ikke ut som ventet (${m.vitnemalsmerknader.length}).`);
+  return feil;
+}
+
+/** Endringene mellom to hentinger, én linje per endring, til kildesjekken og kontrollsaken. */
+export function sammenlignVigo(gammel: { rel: Fagrelasjoner; m: Merknader } | null, ny: { rel: Fagrelasjoner; m: Merknader }): string[] {
+  if (!gammel) return [];
+  const ut: string[] = [];
+  for (const [k, e] of Object.entries(ny.rel.erstatninger)) {
+    const g = gammel.rel.erstatninger[k];
+    if (!g) ut.push(`Ny erstatning: ${k} ${e.navn} → ${e.ny.join(', ')}`);
+    else if (g.ny.join() !== e.ny.join()) ut.push(`Endret erstatning: ${k} → ${e.ny.join(', ')} (var ${g.ny.join(', ')})`);
+  }
+  for (const k of Object.keys(gammel.rel.erstatninger)) if (!ny.rel.erstatninger[k]) ut.push(`Erstatning fjernet: ${k}`);
+  for (const [k, v] of Object.entries(ny.rel.laereplaner)) if (gammel.rel.laereplaner[k] !== v) ut.push(`Ny læreplan: ${k} → ${v}`);
+  const par = (r: Fagrelasjoner) => new Set(Object.entries(r.brukesSammen).flatMap(([a, l]) => l.map((b) => `${a} + ${b}`)));
+  const gp = par(gammel.rel);
+  const np = par(ny.rel);
+  const nyePar = [...np].filter((p) => !gp.has(p));
+  const fjernedePar = [...gp].filter((p) => !np.has(p));
+  if (nyePar.length > 0) ut.push(`Brukes sammen, nye koblinger (${nyePar.length}): ${nyePar.slice(0, 10).join(', ')}${nyePar.length > 10 ? ' …' : ''}`);
+  if (fjernedePar.length > 0) ut.push(`Brukes sammen, fjernede koblinger (${fjernedePar.length}): ${fjernedePar.slice(0, 10).join(', ')}${fjernedePar.length > 10 ? ' …' : ''}`);
+  for (const [liste, navn] of [
+    ['fagmerknader', 'fagmerknad'],
+    ['vitnemalsmerknader', 'vitnemålsmerknad'],
+  ] as const) {
+    const g = new Map(gammel.m[liste].map((x) => [x.kode, x]));
+    for (const x of ny.m[liste]) {
+      const f = g.get(x.kode);
+      if (!f) ut.push(`Ny ${navn} ${x.kode}: ${x.nb}`);
+      else if (f.nb !== x.nb || f.nn !== x.nn) ut.push(`Endret ${navn} ${x.kode}: ${x.nb}`);
+      else if (!f.utgatt && x.utgatt) ut.push(`Utgått ${navn} ${x.kode}: ${x.nb}`);
+    }
+    const n = new Set(ny.m[liste].map((x) => x.kode));
+    for (const k of g.keys()) if (!n.has(k)) ut.push(`Fjernet ${navn} ${k}`);
+  }
+  return ut;
+}

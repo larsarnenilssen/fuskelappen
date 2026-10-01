@@ -2,12 +2,21 @@
 // når appen installeres). Læreplanene er egne filer under data/grep/laereplaner/ som hentes når et fag åpnes,
 // og som tjenestearbeideren tar vare på til bruk uten nett (avgjørelse 022).
 import type { Fagindeks, Laereplan } from './skjema.ts';
+import type { Fagrelasjoner } from './vigo/skjema.ts';
 
 let indeks: Promise<Fagindeks> | null = null;
 
 export function lastFagindeks(): Promise<Fagindeks> {
   indeks ??= import('../../../data/grep/fagindeks.json').then((m) => m.default as unknown as Fagindeks);
   return indeks;
+}
+
+// Fagrelasjonene fra VIGO Kodeverksbase (avgjørelse 026) er en egen JS-bit, som lastes når den trengs.
+let relasjoner: Promise<Fagrelasjoner> | null = null;
+
+export function lastFagrelasjoner(): Promise<Fagrelasjoner> {
+  relasjoner ??= import('../../../data/vigo/fagrelasjoner.json').then((m) => m.default as unknown as Fagrelasjoner);
+  return relasjoner;
 }
 
 const planer = new Map<string, Promise<Laereplan>>();

@@ -122,6 +122,22 @@ function sjekkUdir(): Sjekkresultat {
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i fag- og timefordelingen.` : null };
 }
 
+/**
+ * Dataene fra VIGO Kodeverksbase hentes i samme steg som Grep (npm run hent:vigo) og testes sammen med dem.
+ * Stemmer testene, tas de inn automatisk (avgjørelse 026).
+ */
+function sjekkVigo(): Sjekkresultat {
+  const endringsfil = join(generert, 'vigo-endringer.json');
+  if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra VIGO Kodeverksbase feilet. Se loggen for steget «Hent Grep og fag- og timefordeling».' };
+  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { forste: boolean; endringer: string[] };
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const filer = ['fagrelasjoner', 'merknader'].map((f) => join(rot, 'data/vigo', `${f}.json`)).filter(existsSync);
+  const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8').replace(/"hentet": "[^"]*"/, '')).join('\n')) : null;
+  rapport.push('### VIGO Kodeverksbase', e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`, ...e.endringer.slice(0, 60).map((l) => `- ${l}`), '');
+  if (tester === 'feilet' && e.endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Dataene fra VIGO Kodeverksbase er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).` };
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i VIGO Kodeverksbase.` : null };
+}
+
 async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   if (kilde.id === simulertFeil) {
     tekster[kilde.id] = { feil: 'Simulert feil.' };
@@ -140,6 +156,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkGrep();
       case 'udir-fagfordeling':
         return sjekkUdir();
+      case 'vigo-kodeverk':
+        return sjekkVigo();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };

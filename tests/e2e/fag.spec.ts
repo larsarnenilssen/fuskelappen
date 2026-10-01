@@ -63,6 +63,23 @@ test.describe('fag og læreplaner', () => {
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Fant ikke faget.');
   });
 
+  test('fagsiden viser fag som brukes sammen og utgåtte koder faget erstatter (VIGO)', async ({ page }) => {
+    await page.goto('./#/fag/LBR3018');
+    const sammen = page.locator('.egenskaper div', { hasText: 'Brukes sammen med' });
+    await expect(sammen.getByRole('link', { name: /LBR3020 Tverrfaglig eksamen landbruk/ })).toBeVisible();
+    await page.goto('./#/fag/LBR3012');
+    await expect(page.locator('.egenskaper div', { hasText: 'Erstatter' })).toContainText('LBR3004 Traktor og maskiner');
+  });
+
+  test('en utgått fagkode viser koden som erstatter den, på fagsiden og i søket', async ({ page }) => {
+    await page.goto('./#/fag/LBR3004');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Fagkoden LBR3004 er utgått.');
+    await page.getByRole('link', { name: /LBR3012/ }).click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Maskiner og teknologi i landbruk');
+    await page.goto('./#/fag?q=lbr3004');
+    await expect(page.locator('[data-erstatning="LBR3004"]').getByRole('link', { name: /LBR3012/ })).toBeVisible();
+  });
+
   test('det samlede søket finner fag på navn og kode', async ({ page }) => {
     await page.goto('./#/sok?q=HEA2005');
     await expect(page.getByRole('link', { name: /Helsefremmende arbeid/ }).first()).toBeVisible();

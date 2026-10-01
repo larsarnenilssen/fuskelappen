@@ -50,6 +50,7 @@
     "hent:grep": "tsx scripts/hent-grep.ts",
     "kobling:rapport": "tsx scripts/kobling/rapport.ts",
     "tilbud:rapport": "tsx scripts/tilbud/rapport.ts",
-    "hent:udir": "tsx scripts/hent-udir.ts"
+    "hent:udir": "tsx scripts/hent-udir.ts",
+    "hent:vigo": "tsx scripts/hent-vigo.ts"
   }
 }

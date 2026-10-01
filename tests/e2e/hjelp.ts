@@ -51,6 +51,8 @@ export const ruter = [
   '#/begreper',
   '#/begreper/testbegrep-skolemiljo',
   '#/begreper/arsramme',
+  '#/begreper/fagmerknader',
+  '#/begreper/vitnemalsmerknader?q=utvidet',
   '#/arbeidstid',
   '#/arbeidstid/arbeidsplan',
   '#/arbeidstid/beskjeftigelse',
@@ -60,6 +62,8 @@ export const ruter = [
   '#/fag?q=norsk&program=ST&trinn=Vg1',
   '#/fag/HEA2005',
   '#/fag/AKT2004',
+  '#/fag/LBR3018',
+  '#/fag/LBR3004',
   '#/fag/FINNES0',
   '#/finnes-ikke',
 ];

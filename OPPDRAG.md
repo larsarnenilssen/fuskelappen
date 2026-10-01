@@ -410,6 +410,7 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 **Leveranser**
 
 - Søkerkategorier etter opplæringslova, forskriften og VLFKs lokale forskrift om inntak (fylkesinnhold).
+- Se `docs/VIGO-KODEVERK.md` for data fra VIGO Kodeverksbase som kan brukes: hva et programområde gir grunnlag for å søke videre på, status på søkerønsker, og hvilke fag som teller for poeng.
 - Veiviser: «Hvilken søkerkategori?»
 - Tidslinje for søkertidspunkt og frister, og oversikt over rettigheter knyttet til inntak.
 - Poengberegning etter gjeldende inntaksregler, med utregning og kilde.
@@ -423,6 +424,7 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 
 - Vurderingsbestemmelsene i forskriften til opplæringslova: underveis- og standpunktvurdering, grunnlag for vurdering, klage, eksamen og særskilt tilrettelegging.
 - Fraværskalkulator per fag: årstimetall fra Grep → hvor mange timer som tilsvarer fraværsgrensen, med forklaring av unntak etter gjeldende regler.
+- Se `docs/VIGO-KODEVERK.md` for data fra VIGO Kodeverksbase som kan brukes: vurderingsordning per fagkode, karakterkoder og fagmerknader knyttet til fag. Fagmerknadene og vitnemålsmerknadene er alt i begrepsbanken (avgjørelse 026).
 - Veivisere for grunnlag for vurdering og for klagegangen.
 
 Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på fase 2.
@@ -477,6 +479,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 | VLFK: skulereglar (Lovdata) | fylke | side | 7 |
 | vlfk.no: relevante sider om inntak, tilrettelegging og språk | fylke | side | 4, 5 |
 | Nasjonalt skoleregister (Udir) | – | data | innstillinger |
+| VIGO Kodeverksbase (Novari IKS): erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader. Se `docs/VIGO-KODEVERK.md`. | nasjonal | data | 2, 6 |
 
 Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger, opplæringsmateriell for Visma InSchool) brukes som bakgrunn og kan lenkes til, men kopieres ikke inn. Materiale basert på opplæringsloven fra 1998 brukes bare når det er kontrollert mot gjeldende lov, som trådte i kraft 1.8.2024.
 

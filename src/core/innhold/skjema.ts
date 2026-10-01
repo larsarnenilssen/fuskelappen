@@ -70,6 +70,11 @@ const felles = {
   kontrollsporsmal: z.array(z.string().trim().min(1)).optional(),
   stikkord: z.array(z.string()).default([]),
   relatert: z.array(z.string()).default([]),
+  /**
+   * Kodeliste fra VIGO Kodeverksbase som vises og kan søkes i under teksten (avgjørelse 026). Kodene kommer også
+   * med i det samlede søket.
+   */
+  kodeliste: z.enum(['fagmerknader', 'vitnemalsmerknader']).optional(),
 };
 
 export const vanligElement = z
@@ -110,7 +115,7 @@ export const kildeSkjema = z
     niva: nivaSkjema,
     fylke: z.string().regex(/^\d{2}$/).optional(),
     lisens: z.string().min(1),
-    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'grep', 'udir-fagfordeling', 'nsr', 'ingen']),
+    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'nsr', 'ingen']),
     aktiv: z.boolean(),
     uttrekk: z
       .object({

@@ -8,8 +8,9 @@ import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { beregnStatus, velgSynlige } from '../../../core/innhold/status.ts';
 import type { SideProps } from '../../typer.ts';
 import { hentBegreper } from '../innhold.ts';
+import { Kodeliste } from '../Kodeliste.tsx';
 
-export default function Begrep({ parametre }: SideProps) {
+export default function Begrep({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const kildestatus = useKildestatus();
@@ -55,6 +56,7 @@ export default function Begrep({ parametre }: SideProps) {
           <p>{begrep.kildetekst.tekst}</p>
         </blockquote>
       )}
+      {begrep.kodeliste && <Kodeliste liste={begrep.kodeliste} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
       <Kildeliste kilder={begrep.kilder} />
       {relaterte.length > 0 && (
         <section>

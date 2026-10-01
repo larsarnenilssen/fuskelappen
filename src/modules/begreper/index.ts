@@ -3,6 +3,7 @@
 import type { Innholdselement } from '../../core/innhold/skjema.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { hentBegreper } from './innhold.ts';
+import { lastMerknader, merknadsoppforinger } from './merknader.ts';
 
 /**
  * Ett begrep per id. Samme id kan finnes på flere nivåer (nasjonal, fylke, skole); siden velger riktig
@@ -29,7 +30,9 @@ export const manifest: Modulmanifest = {
     { sti: '/begreper/:id', tittel: 'begreper.tittel', side: () => import('./sider/Begrep.tsx') },
   ],
   async sokeoppforinger() {
-    return (await unikeBegreper()).map((b) => ({
+    // Fagmerknadene og vitnemålsmerknadene er søkbare hver for seg. Feiler lastingen, søkes det uten dem.
+    const koder = await lastMerknader().then(merknadsoppforinger, () => []);
+    const begreper = (await unikeBegreper()).map((b) => ({
       id: `begrep:${b.id}`,
       type: 'begrep' as const,
       tittel: b.tittel,
@@ -38,6 +41,7 @@ export const manifest: Modulmanifest = {
       rute: `/begreper/${b.id}`,
       modul: 'begreper',
     }));
+    return [...begreper, ...koder];
   },
   async favorittbare() {
     return (await unikeBegreper()).map((b) => ({
@@ -50,6 +54,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: ['ks-sfs2213-avtaletekst'],
+  kilder: ['ks-sfs2213-avtaletekst', 'vigo-kodeverk'],
   status: 'aktiv',
 };

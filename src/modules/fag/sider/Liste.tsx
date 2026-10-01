@@ -6,10 +6,45 @@ import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { formaterDato, formaterTall, type Malform } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { lastFagindeks } from '../data.ts';
+import { lastFagindeks, lastFagrelasjoner } from '../data.ts';
 import { type Fagfilter, filterFraAdresse, filterTilAdresse, filtervalg, filtrerFag, tomtFilter } from '../oppslag.ts';
 import type { Fag, Fagindeks } from '../skjema.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
+import { gjeldendeKoder } from '../vigo/oppslag.ts';
+import type { Fagrelasjoner } from '../vigo/skjema.ts';
+
+/** Søket ser ut som én fagkode, f.eks. «psp5596». */
+const FAGKODE = /^[A-Za-z]{3}[A-Za-z0-9]{2}\d{2}$/;
+
+/**
+ * Er søket en utgått fagkode, vises kodene som erstatter den (VIGO Kodeverksbase, avgjørelse 026). Dataene lastes
+ * bare når søket ser ut som en fagkode som ikke finnes i fagindeksen.
+ */
+function Erstatning({ sok, indeks, malform, t }: { sok: string; indeks: Fagindeks; malform: Malform; t: T }) {
+  const kode = sok.trim().toUpperCase();
+  const aktuell = FAGKODE.test(kode) && !indeks.fag[kode];
+  const [rel, settRel] = useState<Fagrelasjoner | null>(null);
+  useEffect(() => {
+    if (aktuell && !rel) lastFagrelasjoner().then(settRel, () => undefined);
+  }, [aktuell, rel]);
+  if (!aktuell || !rel) return null;
+  const nye = gjeldendeKoder(kode, rel, (k) => indeks.fag[k] !== undefined).filter((k) => indeks.fag[k]);
+  if (nye.length === 0) return null;
+  return (
+    <div class="merknad" data-erstatning={kode}>
+      <p>{t('fag.erstattetSok', { kode })}</p>
+      <ul>
+        {nye.map((k) => (
+          <li key={k}>
+            <a href={`#/fag/${k}`}>
+              {k} {indeks.fag[k]?.navn[malform]}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 const PER_SIDE = 50;
 
@@ -107,6 +142,7 @@ export default function Liste({ sporring }: SideProps) {
           <div id={filterId} hidden={!visFilter}>
             <Filterfelt indeks={indeks} filter={filter} sett={sett} t={t} malform={malform} />
           </div>
+          <Erstatning sok={filter.tekst} indeks={indeks} malform={malform} t={t} />
           <p role="status" class="dempet liten">
             {treff.length === 0 ? t('fag.ingenTreff') : treff.length === 1 ? t('fag.ettFag') : t('fag.antall', { antall: formaterTall(treff.length) })}
           </p>
