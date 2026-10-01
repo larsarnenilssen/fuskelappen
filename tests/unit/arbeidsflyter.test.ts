@@ -24,4 +24,13 @@ describe('arbeidsflyter', () => {
     const deploy = fil('deploy.yml') as { on: { workflow_call: { inputs: { tag: unknown } } } };
     expect(deploy.on.workflow_call.inputs.tag).toBeDefined();
   });
+
+  it('publiseringen bygger når den kalles fra et push til main, og videresender bare ved push av en tag', () => {
+    // I en kalt arbeidsflyt er github.event_name den kallende arbeidsflytens hendelse (push til main).
+    const deploy = parse(readFileSync(join(rot, '.github/workflows/deploy.yml'), 'utf8')) as {
+      jobs: { videresend: { if: string }; bygg: { if: string } };
+    };
+    expect(deploy.jobs.videresend.if).toContain("github.ref_type == 'tag'");
+    expect(deploy.jobs.bygg.if).toContain("github.ref_type != 'tag'");
+  });
 });
