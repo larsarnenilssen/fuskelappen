@@ -2213,6 +2213,15 @@ p.fagkort-tittel {
   overflow-wrap: anywhere;
 }
 
+/* Lister i en egenskap (f.eks. fag som brukes sammen), uten punkt og med lite luft. */
+.egenskaper ul.tett {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: var(--rom-1);
+}
+
 .fag-vurderinger {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
@@ -2283,3 +2292,33 @@ p.fagkort-tittel {
   }
 }
 
+
+/* Kodelister i begrepsbanken (FAM- og VMM-koder fra VIGO). */
+.kodeliste {
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  display: grid;
+  gap: var(--rom-3);
+}
+
+.kodeliste li {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  column-gap: var(--rom-3);
+}
+
+.kodeliste-kode {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.kodeliste-tekst {
+  overflow-wrap: anywhere;
+}
+
+.kodeliste-bruk {
+  grid-column: 2;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}

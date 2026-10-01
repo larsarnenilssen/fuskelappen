@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Fagsiden** viser fag som brukes sammen, for eksempel tverrfaglig eksamen og fagene den gjelder, og hvilke utgåtte fagkoder faget erstatter. Er læreplanen erstattet av en ny versjon, står det på siden.
+- **Utgåtte fagkoder:** Søker du på en utgått kode, eller åpner den, ser du hvilken kode som gjelder nå.
+- **Fagmerknader (FAM-koder) og vitnemålsmerknader (VMM-koder)** i begrepsbanken, hver i sitt oppslag med søk på kode og tekst. Kodene finnes også i søket på forsiden.
+
+### Lagt til (for eier)
+
+- Data fra VIGO Kodeverksbase hentes hver uke sammen med Grep. `docs/VIGO-KODEVERK.md` beskriver hva kodebasen inneholder og hva det kan brukes til senere.
+
 ### Rettet
 
 - Kalkulatorene mister ikke lenger et fagvalg eller et fag når to endringer kommer rett etter hverandre, for eksempel når du velger fag og skriver årstimer raskt.

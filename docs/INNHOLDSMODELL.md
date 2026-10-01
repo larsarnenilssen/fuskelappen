@@ -19,6 +19,7 @@ En fil kan inneholde ett element eller en liste.
 | `kontrollsporsmal` | ja i `content/` | 1–5 spørsmål til eier (bokmål) om det som er usikkert i teksten: om noe kan misforstås, eller om en praksis stemmer. Vises bare i kontrolloversikten og kontrollsakene, ikke i appen (avgjørelse 019) |
 | `stikkord` | nei | ekstra søkeord |
 | `relatert` | nei | id-er til annet innhold (må finnes) |
+| `kodeliste` | nei | kodeliste fra VIGO Kodeverksbase som vises under teksten, med søk: `fagmerknader` eller `vitnemalsmerknader` (avgjørelse 026) |
 
 Frister (`type: frist`) har i tillegg `modul`, `malgruppe` (`skoleleder`, `laerer`) og enten `dato` eller `regel` (`{ type: arlig, dag, maned }`).
 
