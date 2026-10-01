@@ -1,0 +1,70 @@
+# Setter versjonstaggen og publiserer (avgjørelse 029).
+#
+# - Når versjonsnummeret i package.json endres på main, lages taggen vX.Y.Z på main, og publiseringen startes.
+#   Versjonsnummeret økes bare når eier og Claude er enige om en ny versjon (AGENTS.md).
+# - Manuelt (Actions → Sett versjonstag → Run workflow): lager taggen for versjonen i package.json hvis den
+#   mangler, og publiserer.
+# Taggen settes her fordi Claudes arbeidsmiljø ikke kan pushe tagger. En tag pushet med GITHUB_TOKEN starter ikke
+# andre arbeidsflyter, så publiseringen kalles direkte.
+name: Sett versjonstag
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - package.json
+      - .github/workflows/versjonstag.yml
+  workflow_dispatch:
+
+concurrency:
+  group: versjonstag
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    name: Sett versjonstag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      tag: ${{ steps.tag.outputs.tag }}
+      ny: ${{ steps.tag.outputs.ny }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Lag taggen hvis den mangler
+        id: tag
+        run: |
+          VERSJON=$(node -p "require('./package.json').version")
+          TAG="v$VERSJON"
+          if ! echo "$TAG" | grep -Eq '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::Ugyldig versjon i package.json: $VERSJON"
+            exit 1
+          fi
+          if git rev-parse -q --verify "refs/tags/$TAG" >/dev/null; then
+            echo "Taggen $TAG finnes allerede."
+            echo "ny=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "$TAG" -m "Versjon $VERSJON"
+            git push origin "$TAG"
+            echo "::notice::Satte taggen $TAG på $(git rev-parse --short HEAD)."
+            echo "ny=true" >> "$GITHUB_OUTPUT"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+  publiser:
+    name: Publiser
+    needs: tag
+    if: needs.tag.outputs.ny == 'true' || github.event_name == 'workflow_dispatch'
+    uses: ./.github/workflows/deploy.yml
+    with:
+      tag: ${{ needs.tag.outputs.tag }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      actions: write
