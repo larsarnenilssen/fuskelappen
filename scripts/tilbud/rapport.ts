@@ -12,6 +12,7 @@ import { finnKobling, type Koblingstabeller } from '../../src/modules/arbeidstid
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { byggStruktur, byggTilbud, erVariant, skolearFor, velgFordeling, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
+import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
 
 export interface Kobling {
@@ -116,6 +117,8 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     if (t.kryssFra.length > 0) om.push(`${t.gruppe === 'pabygging' ? 'Bygger på' : 'Kryssløp fra'} ${polister(t.kryssFra)}.`);
     if (po.timer !== null && t.totalt !== null && po.timer !== t.totalt) om.push(`Grep oppgir ${po.timer} årstimer.`);
     ut.push(om.join(' '), '');
+    const skoler = vilbliLenke(kode, indeks, { side: 'p5' });
+    if (skoler) ut.push(`Vilbli: [skoler og lærebedrifter](${skoler}) · [fag- og timefordeling](${vilbliLenke(kode, indeks, { side: 'p2' }) ?? ''})`, '');
     if (t.tabell) {
       ut.push('| Del | Timer | Fagkoder | Årsramme |', '|---|--:|---|---|');
       for (const d of t.deler) ut.push(delrad(d, t));
@@ -160,7 +163,8 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
         const tb = tilbud.get(b);
         // Lærefagets egne koder først, så fellesfag og andre koder (f.eks. norsk og samfunnskunnskap for voksne).
         const koder = (tb?.deler.flatMap((d) => (d.type === 'fag' ? d.koder : [])) ?? []).sort((x, y) => Number(indeks.fag[x]?.type !== 'felles_programfag') - Number(indeks.fag[y]?.type !== 'felles_programfag') || x.localeCompare(y));
-        ut.push(`- ${ponavn(b)}${koder.length > 0 ? `: ${faglister(koder, 3)}` : ''}${tb && tb.fra.length > 1 ? ` (også etter ${tb.fra.filter((f) => f !== kode).map(kort).join(', ')})` : ''}`);
+        const lenke = vilbliLenke(b, indeks, { side: 'p5', via: kode });
+        ut.push(`- ${ponavn(b)}${koder.length > 0 ? `: ${faglister(koder, 3)}` : ''}${tb && tb.fra.length > 1 ? ` (også etter ${tb.fra.filter((f) => f !== kode).map(kort).join(', ')})` : ''}${lenke ? ` · [Vilbli](${lenke})` : ''}`);
       }
       ut.push('');
     }
@@ -183,7 +187,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     '',
     `Generert av \`npm run tilbud:rapport\` fra Grep (hentet ${indeks.hentet.slice(0, 10)})${fordeling ? ` og ${fordeling.rundskriv} «Fag- og timefordeling og tilbudsstruktur» for skoleåret ${fordeling.skolear.replace('-', '–')} (hentet ${fordeling.hentet.slice(0, 10)})` : ''}. Ikke rediger for hånd. Se avgjørelse 024.`,
     '',
-    '**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. Felles programfag står hvert for seg med timetallet i Grep i parentes. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men hører til samme læreplan. Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.',
+    '**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. Felles programfag står hvert for seg med timetallet i Grep i parentes. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men hører til samme læreplan. Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). Lenkene til Vilbli viser skolene og lærebedriftene som tilbyr hvert tilbud (avgjørelse 027). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.',
     '',
     '## Sammendrag',
     '',

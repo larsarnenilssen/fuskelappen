@@ -262,3 +262,16 @@ Oppfølging samme dag:
   - «Fag for studiekompetanse» (PBPBY4) har ingen tabell. Er dette vg4 påbygging (tabell 27)?
 - [ ] **Programområder som ikke nås:** Fire vg3 på salg, service og reiseliv, og to realfag-tilbud ved tysk skole, mangler «bygger på» i Grep. Hvor hører de til?
 
+## 15. Lenker til Vilbli
+
+Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til skolene og lærebedriftene på Vilbli for hvert tilbud (avgjørelse 027). Lenkene lages fra kodene i Grep. Vilbli kan ikke sjekkes automatisk. Klikk derfor på disse lenkene nå, og i hver kontrollrunde. Vises riktig side med skoler?
+
+- [ ] Vg2 helsearbeiderfag, hele landet: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+- [ ] Det samme for et fylke (fylkesnavnet i adressen): https://www.vilbli.no/nb/nb/vestland/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+- [ ] Et lærefag (vg3 i bedrift): https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5
+- [ ] Vg3 studiespesialisering: https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----_v.stssa3----/p5
+- [ ] Påbygging: https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby3----/p5
+- [ ] Et fylke med «æ», «ø» eller «å» i navnet: https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5
+
+Si fra hvilke som ikke virker, og hvordan adressen ser ut når du finner siden selv på Vilbli.
+

@@ -13,6 +13,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til (for eier)
 
 - Data fra VIGO Kodeverksbase hentes hver uke sammen med Grep. `docs/VIGO-KODEVERK.md` beskriver hva kodebasen inneholder og hva det kan brukes til senere.
+- Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til Vilbli for hvert tilbud: skolene og lærebedriftene, og fag- og timefordelingen.
 
 ### Rettet
 
