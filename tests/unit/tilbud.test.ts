@@ -206,6 +206,45 @@ describe('programområder merket «påbygg» i Grep', () => {
   });
 });
 
+describe('fellesfag som mangler i Grep, og vg4 påbygging', () => {
+  it('ordinært programområde uten fellesfag får kodene fra et annet programområde i programmet på samme trinn', () => {
+    const i: Fagindeks = {
+      ...indeks,
+      utdanningsprogram: { EL: { nb: 'Elektro og datateknologi', nn: 'Elektro og datateknologi' } },
+      programomrader: {
+        'ELAUT2----': po('Automatisering', 'EL', 'Vg2'),
+        'ELDRF2----': po('Dronefag', 'EL', 'Vg2'),
+        'ELDRF2RS--': po('Dronefag, Steiner', 'EL', 'Vg2'),
+      },
+      fag: {
+        NOR1262: fag('Norsk, vg2 yrkesfag', 'fellesfag', ['ELAUT2----'], 112),
+        DRF2001: fag('Operasjon og sikkerhet', 'felles_programfag', ['ELDRF2----'], 300),
+      },
+    };
+    const f: Fagfordeling = { ...ff, tabeller: [fordeling('vg2', 'Tabell 17a Fag- og timefordeling på vg1 og vg2 i yrkesfaglige utdanningsprogram', ['Ordinær'], [['Norsk', 112], ['Felles programfag fra eget programområde', 300], ['Totalt omfang', 412]])] };
+    const t = byggTilbud('ELDRF2----', i, f);
+    expect(t.deler[0]).toMatchObject({ linje: 'Norsk', koder: ['NOR1262'], lantFra: 'ELAUT2----', avvik: [] });
+    expect(t.avvik).toEqual(['Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.']);
+    // Varianter for særskilte skoler får ikke lånte koder.
+    expect(byggTilbud('ELDRF2RS--', i, f).deler[0]).toMatchObject({ koder: [], lantFra: null });
+  });
+
+  it('Fag for studiekompetanse (PBPBY4) bruker tabellen for vg4 påbygging', () => {
+    const i: Fagindeks = {
+      ...indeks,
+      utdanningsprogram: { PB: { nb: 'Påbygging', nn: 'Påbygging' } },
+      programomrader: { 'PBPBY4----': { ...po('Fag for studiekompetanse', 'PB', 'Vg3'), merkelapper: ['paabygg'] } },
+      fag: { HIS1011: fag('Historie vg3 påbygging', 'fellesfag', ['PBPBY4----'], 140) },
+    };
+    const vg4 = { ...fordeling('Vg4 påbygging', 'Tabell 27 Fag- og timefordeling vg4 påbygging til generell studiekompetanse', ['Ordinær'], [['Historie', 140], ['Totalt omfang', 140]]), nr: '27' };
+    const totalt = { ...vg4, omfang: 'Totalt', rader: [{ linje: 'Historie', timer: [140] }, { linje: 'Totalt omfang', timer: [2608] }] };
+    const t = byggTilbud('PBPBY4----', i, { ...ff, tabeller: [totalt, vg4] });
+    expect(t.tabell).toEqual({ nr: '27', omfang: 'Vg4 påbygging' });
+    expect(t.deler).toMatchObject([{ linje: 'Historie', koder: ['HIS1011'] }]);
+    expect(t.avvik).toEqual([]);
+  });
+});
+
 describe('strukturen', () => {
   it('ordner programmene studieforberedende først, med varianter sist', () => {
     const s = byggStruktur(indeks);

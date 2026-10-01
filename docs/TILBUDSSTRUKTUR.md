@@ -7,8 +7,8 @@ Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026
 ## Sammendrag
 
 - 16 utdanningsprogram, 323 programområder: 134 i skole og 189 i bedrift. 32 er varianter for særskilte skoler.
-- 133 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 133 av dem.
-- 3 ulike avvik i 35 programområder (se under).
+- 134 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 134 av dem.
+- 4 ulike avvik i 35 programområder (se under).
 
 ### Summer i rundskrivet som ikke stemmer
 
@@ -21,10 +21,6 @@ Kontrollen av hver kolonne i rundskrivet fant disse. De påvirker ikke tilbudene
 - Tabell 13 (Totalt over 3 år), kolonne 14 Elever med tegnspråk: linjene gir 2831, tabellen sier 2943.
 - Tabell 23 (Samlet timetall over to år for lærlinger uten vg1 og vg2 i skole eller vg2), kolonne 3 Elever med tegnspråk: linjene gir 588, tabellen sier 644.
 
-### Programområder i skole uten tabell i rundskrivet
-
-- Vg3 Fag for studiekompetanse (PBPBY4)
-
 ### Programområder som ikke nås fra inngangen
 
 Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst under programmet.
@@ -34,9 +30,10 @@ Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst u
 
 ### Avvik mellom rundskrivet og Grep
 
-- Grep kobler ingen fellesfag til programområdet. (34: ELDRF2, KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS …)
+- Grep kobler ingen fellesfag til programområdet. (33: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (16: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
 - Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700. ELROM3
+- Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde. ELDRF2
 
 ## Studieforberedende utdanningsprogram
 
@@ -1040,12 +1037,14 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | **ingen fagkode i Grep** |  |
-| Samfunnskunnskap | 84 | **ingen fagkode i Grep** |  |
-| Kroppsøving | 56 | **ingen fagkode i Grep** |  |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
+| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet | 554* |
+| Kroppsøving | 56 | KRO1018 Kroppsøving vg2<br>koder fra Automatisering (ELAUT2): Grep kobler ingen fellesfag til programområdet | 635 |
 | Felles programfag fra eget programområde | 477 | DRF2001 Operasjon og sikkerhet (300)<br>DRF2002 Nyttelast, sensorer og bearbeiding av data (177)<br>vurdering: DRF2003 Tverrfaglig eksamen dronefag | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
+
+Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1066 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, NOR1067 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, muntlig samhandling; Samfunnskunnskap: SAK1002 Samfunnskunnskap, samisk plan.
 
 Tilpassede ordninger (kolonner i rundskrivet):
 
@@ -1055,7 +1054,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Avvik:
 
-- ⚠ Grep kobler ingen fellesfag til programområdet.
+- ⚠ Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.
 
 Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram (PBPBY3).
 
@@ -2886,8 +2885,21 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 831 timer: Norsk 281 → –; Førstespråk samisk – → 219; Andrespråk norsk – → 219; Historie 140 → 113; Programfag fra studieforberedende utdanningsprogram 140 → –
 - Elever med tegnspråk, 841 timer: Norsk 281 → –; Norsk for elever med tegnspråk – → 281; Norsk tegnspråk – → 113; Yrkesfaglig fordypning – → 27; Programfag fra studieforberedende utdanningsprogram 140 → –
 
-#### Vg3 Fag for studiekompetanse (PBPBY4)
+#### Vg3 Fag for studiekompetanse (PBPBY4) · 645 timer ✓
 
-**Ingen tabell i rundskrivet.**
+Tabell 27 (Vg4 påbygging) i Udir-1-2026.
 
-Alternativer for særskilte grupper: andre fellesfag: 52 koder, f.eks. HIS1011 Historie Vg3 påbygging til generell studiekompetanse, HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse.
+| Del | Timer | Fagkoder | Årsramme |
+|---|--:|---|---|
+| Norsk | 281 | NOR1270 Norsk hovedmål, vg3 påbygging til generell studiekompetanse, skriftlig<br>vurdering: NOR1271 Norsk sidemål, vg3 påbygging til generell studiekompetanse, skriftlig, NOR1272 Norsk, vg3 påbygging til generell studiekompetanse, muntlig | 466.5* |
+| Matematikk | 140 | MAT1151 Matematikk 2P-Y<br>vurdering: MAT1152 Matematikk 2P-Y, muntlig-praktisk | 496 |
+| Naturfag | 84 | NAT1018 Naturfag Vg3 påbygging til generell studiekompetanse | 554* |
+| Historie | 140 | HIS1011 Historie Vg3 påbygging til generell studiekompetanse | 554 |
+| **Sum** | **645** | Rundskrivet: 645 | |
+
+Alternativer for særskilte grupper: Norsk: 14 koder, f.eks. NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse, NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse; Naturfag: NAT1030 Naturfag Vg3 påbygging til generell studiekompetanse, samisk plan; Historie: HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse, HIS1015 Historie, Vg3, påbygging til generell studiekompetanse for elever med samisk, kvensk eller finsk som andrespråk; andre fellesfag: 28 koder, f.eks. KEF1010 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, skriftlig, KEF1011 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, muntlig.
+
+Tilpassede ordninger (kolonner i rundskrivet):
+
+- Samisk, 775 timer: Norsk 281 → –; Førstespråk samisk – → 219; Andrespråk norsk – → 219; Historie 140 → 113
+- Elever med tegnspråk, 758 timer: Norsk 281 → –; Norsk for elever med tegnspråk – → 281; Norsk tegnspråk – → 113

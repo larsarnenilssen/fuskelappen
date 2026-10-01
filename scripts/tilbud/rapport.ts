@@ -81,7 +81,12 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
       else deler.push(...d.koder.map(medTimer));
       if (d.utvalg?.grunn === 'valg') deler.push(`velg ${d.utvalg.antall ?? ''} av: ${d.utvalg.koder.map(medTimer).join(', ')}`);
       if (d.utvalg?.grunn === 'flere_trinn') deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): ${d.utvalg.koder.map(medTimer).join(', ')}`);
-      if (d.lantFra) deler.push(`koder fra påbygging (${kort(d.lantFra)}): programområdet er merket «påbygg» i Grep`);
+      if (d.lantFra)
+        deler.push(
+          indeks.programomrader[d.lantFra]?.program === 'PB' && t.programomrade.program !== 'PB'
+            ? `koder fra påbygging (${kort(d.lantFra)}): programområdet er merket «påbygg» i Grep`
+            : `koder fra ${indeks.programomrader[d.lantFra]?.navn.nb ?? ''} (${kort(d.lantFra)}): Grep kobler ingen fellesfag til programområdet`,
+        );
       if (d.vurdering.length > 0) deler.push(`vurdering: ${d.vurdering.length <= 3 ? d.vurdering.map(fagnavn).join(', ') : `${d.vurdering.length} koder`}`);
       return `| ${celle(d.linje)} | ${d.timer} | ${celle(deler.join('<br>'))} | ${arsramme([...d.koder, ...(d.utvalg?.koder ?? [])], t, d.lantFra)} |`;
     }

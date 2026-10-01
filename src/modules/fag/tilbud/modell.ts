@@ -88,6 +88,7 @@ export type Tilbudsdel =
       /**
        * Programområdet fagkodene er hentet fra, når Grep ikke knytter fellesfaget til dette programområdet.
        * Programområder merket «påbygg» i Grep (studieforberedende vg3 i naturbruk) får fellesfagene fra påbygging.
+       * Ordinære programområder uten fellesfag i Grep (dronefag) får dem fra et annet programområde i programmet.
        */
       lantFra: string | null;
       /** Avvik mellom rundskrivet og Grep, f.eks. ulike timer. */
@@ -163,8 +164,11 @@ export const erVariant = (kode: string) => /^[A-Z]{5}\d[A-Z]{2}/.test(kode);
 
 /** Fordelingstabellen i rundskrivet for et programområde (program og trinn), eller null. */
 export function finnTabell(f: Fagfordeling, kode: string, po: Programomrade, programnavn: string): Fordelingstabell | null {
-  const tabeller = f.tabeller.filter((t): t is Fordelingstabell => t.type === 'fordeling' && trinnFraOmfang(t.omfang) === po.trinn);
   const tittel = (t: Fordelingstabell) => t.tittel.toLowerCase();
+  // Fag for studiekompetanse (PBPBY4) er vg4 påbygging, for dem som har fag- eller yrkeskompetanse eller går mot
+  // grunnkompetanse etter opplæringskontrakt (eier 01.10.2026). Grep oppgir trinnet som vg3.
+  if (kode.startsWith('PBPBY4')) return f.tabeller.find((t): t is Fordelingstabell => t.type === 'fordeling' && /^vg4/i.test(t.omfang) && /vg4 påbygging/.test(tittel(t))) ?? null;
+  const tabeller = f.tabeller.filter((t): t is Fordelingstabell => t.type === 'fordeling' && trinnFraOmfang(t.omfang) === po.trinn);
   if (po.program === 'PB') return kode.startsWith('PBPBY3') ? (tabeller.find((t) => /påbygging til generell studiekompetanse for yrkesfaglige/.test(tittel(t))) ?? null) : null;
   if (programgruppe(po.program) === 'studieforberedende') return tabeller.find((t) => tittel(t).includes(`for ${programnavn.toLowerCase()}`)) ?? null;
   if (po.sted === 'bedrift') return null;
@@ -293,19 +297,26 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
   const tilpasninger: Tilpasning[] = [];
   let totalt: number | null = null;
   const avvik: string[] = [];
-  // Programområder merket «påbygg» i Grep utenfor påbygging (studieforberedende vg3 i naturbruk) tar fellesfagene
-  // fra påbygging på samme trinn.
-  const reserve =
-    po.merkelapper.includes('paabygg') && po.program !== 'PB'
-      ? Object.entries(indeks.programomrader)
-          .filter(([, p]) => p.program === 'PB' && p.trinn === po.trinn && p.sted === 'skole' && p.merkelapper.includes('paabygg'))
-          .map(([k]) => k)
-          .sort()
-      : [];
   // Varianter for særskilte skoler har ofte ingen fellesfag i Grep. Da holder det med én merknad.
   const harFellesfag = Object.values(indeks.fag).some((f) => f.type === 'fellesfag' && harPo(f, kode));
+  // Programområder merket «påbygg» i Grep utenfor påbygging (studieforberedende vg3 i naturbruk) tar fellesfagene
+  // fra påbygging på samme trinn. Ordinære programområder uten fellesfag i Grep (dronefag) tar kodene fra de andre
+  // programområdene i programmet på samme trinn; fellesfagene er de samme for alle (eier 01.10.2026).
+  const andre = Object.entries(indeks.programomrader).filter(([k, p]) => k !== kode && p.trinn === po.trinn && p.sted === 'skole');
+  const reserve =
+    po.merkelapper.includes('paabygg') && po.program !== 'PB'
+      ? andre
+          .filter(([, p]) => p.program === 'PB' && p.merkelapper.includes('paabygg'))
+          .map(([k]) => k)
+          .sort()
+      : !harFellesfag && !erVariant(kode) && po.merkelapper.length === 0 && po.program !== 'PB'
+        ? andre
+            .filter(([k, p]) => p.program === po.program && !erVariant(k) && p.merkelapper.length === 0)
+            .map(([k]) => k)
+            .sort()
+        : [];
   if (tabell) {
-    if (!harFellesfag) avvik.push('Grep kobler ingen fellesfag til programområdet.');
+    if (!harFellesfag) avvik.push(reserve.length > 0 ? 'Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.' : 'Grep kobler ingen fellesfag til programområdet.');
     const ord = tabell.kolonner.findIndex((k) => /^ordinær/i.test(k.navn));
     const i = ord < 0 ? 0 : ord;
     for (const r of tabell.rader) {
@@ -315,7 +326,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
       if (t === null || t === 0 || type === 'sum' || type === 'totalt') continue;
       if (type === 'fellesfag') {
         const d = fellesfagdel(r.linje, t, kode, indeks, reserve);
-        if (d?.type === 'fag' && !harFellesfag) d.avvik = [];
+        if (d?.type === 'fag' && !harFellesfag && !d.lantFra) d.avvik = [];
         if (d) deler.push(d);
         else avvik.push(`Linjen «${r.linje}» i rundskrivet er ikke kjent.`);
       } else if (type === 'felles_programfag') deler.push(programfagdel(r.linje, t, kode, indeks));
