@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.13.0] – 2026-10-01
+
+### Endret
+
+- **Fagsøket viser de vanlige fagene** i tilbudene og yrkesfaglig fordypning. Under «Vis også» kan du slå på varianter for særskilte grupper (f.eks. samisk, tegnspråk, kort botid og morsmål), opplæring i bedrift og andre fagkoder. Antallet som er skjult, står ved valget. Søker du på en hel fagkode, vises faget alltid.
+- **Treffene grupperes** etter fagtype når du filtrerer uten å skrive noe. Yrkesfaglig fordypning står først på yrkesfaglige program. Store grupper deles etter læreplan, f.eks. «Fremmedspråk (214)», og du åpner dem med et trykk.
+- **Søket på forsiden** viser de vanlige fagene først.
+
+### Rettet
+
+- Fagsøket følger adressen når den endres mens siden er åpen, f.eks. fra en lenke til et søk.
+
 ## [0.12.0] – 2026-10-01
 
 ### Endret
@@ -393,7 +405,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.12.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.13.0...HEAD
+[0.13.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.13.0
 [0.12.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.12.0
 [0.11.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.11.0
 [0.10.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.10.0

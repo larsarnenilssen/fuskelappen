@@ -2179,6 +2179,65 @@ p.fagkort-tittel {
   min-width: 0;
 }
 
+/* «Vis også» i fagsøket: varianter, opplæring i bedrift og andre fagkoder (avgjørelse 031). */
+.vis-ogsaa {
+  margin: 0 0 var(--rom-4);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.vis-ogsaa legend {
+  padding: 0 var(--rom-1);
+  font-weight: 600;
+}
+
+.avkrysning {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
+  padding: var(--rom-1) 0;
+  cursor: pointer;
+}
+
+.avkrysning input {
+  flex: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.15em 0 0;
+  accent-color: var(--farge-merke);
+}
+
+.blokk {
+  display: block;
+}
+
+/* Treffene gruppert etter fagtype, og store grupper etter læreplan. */
+.faggruppe-2 {
+  margin: 0 0 var(--rom-3);
+}
+
+.faggruppe-tittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-l);
+}
+
+.faggruppe-3 {
+  padding: var(--rom-2) var(--rom-4);
+}
+
+.faggruppe-3 .faggruppe-tittel {
+  margin: 0;
+  font-size: var(--str-m);
+  font-weight: 600;
+}
+
+.faggruppe-3 .liste {
+  margin: var(--rom-2) 0 0;
+}
+
 .egenskaper {
   display: grid;
   gap: var(--rom-2);

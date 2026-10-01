@@ -519,6 +519,17 @@ export function fagroller(tilbud: readonly Tilbud[]): Map<string, Rolle> {
   return ut;
 }
 
+/**
+ * Rollene til alle fagkodene, ut fra tilbudene i skole. Regnes ut når appen bygges (virtual:fagroller), fordi
+ * det tar om lag ett sekund å bygge alle tilbudene.
+ */
+export function beregnFagroller(indeks: Fagindeks, fordeling: Fagfordeling | null): Map<string, Rolle> {
+  const tilbud = Object.entries(indeks.programomrader)
+    .filter(([, p]) => p.sted !== 'bedrift')
+    .map(([kode]) => byggTilbud(kode, indeks, fordeling));
+  return fagroller(tilbud);
+}
+
 /** Skoleåret for en dato (ÅÅÅÅ-MM-DD): skoleåret begynner 1. august. 2026-10-01 → 2026-2027. */
 export function skolearFor(dato: string): string {
   const aar = Number(dato.slice(0, 4));

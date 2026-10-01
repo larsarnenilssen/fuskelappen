@@ -13,6 +13,8 @@ export interface Sokeoppforing {
   /** Hash-rute uten #, f.eks. "/begreper/arsramme". */
   rute: string;
   modul: string;
+  /** Ganges med treffpoengene. Under 1 gir oppføringen lavere plass, f.eks. fag utenom de vanlige (avgjørelse 031). */
+  vekt?: number;
 }
 
 interface Dokument {
@@ -25,6 +27,7 @@ interface Dokument {
   tittelNn: string;
   rute: string;
   modul: string;
+  vekt: number;
 }
 
 export interface Sokeresultat {
@@ -73,6 +76,7 @@ function tilDokument(o: Sokeoppforing): Dokument {
     tittelNn: o.tittel.nn,
     rute: o.rute,
     modul: o.modul,
+    vekt: o.vekt ?? 1,
   };
 }
 
@@ -82,7 +86,7 @@ function valg(synonymer: Synonymer): Options<Dokument> {
   const normaliser = lagNormaliserer(synonymer);
   return {
     fields: ['tittel', 'stikkord', 'tekst'],
-    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul'],
+    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul', 'vekt'],
     tokenize: (tekst) => tekst.split(TEGN).filter(Boolean),
     processTerm: (term) => {
       const t = normaliser(term);
@@ -90,6 +94,7 @@ function valg(synonymer: Synonymer): Options<Dokument> {
     },
     searchOptions: {
       boost: { tittel: 3, stikkord: 2, tekst: 1 },
+      boostDocument: (_id, _term, felt) => (typeof felt?.vekt === 'number' ? felt.vekt : 1),
       prefix: true,
       fuzzy: (term) => (term.length > 4 ? 0.2 : term.length > 3 ? 1 : 0),
       combineWith: 'AND',
