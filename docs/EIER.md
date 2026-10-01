@@ -269,14 +269,16 @@ Oppfølging samme dag:
 
 Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til skolene og lærebedriftene på Vilbli for hvert tilbud (avgjørelse 027). Lenkene lages fra kodene i Grep. Vilbli kan ikke sjekkes automatisk. Klikk derfor på disse lenkene nå. Kontrollrundene i mai og august har de samme lenkene til avkrysning. Vises riktig side med skoler?
 
-- [ ] Vg2 helsearbeiderfag, hele landet: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
-- [ ] Vg2 helsearbeiderfag, Vestland: https://www.vilbli.no/nb/nb/vestland/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
-- [ ] Lærefag: helsearbeiderfaget: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5
-- [ ] Vg3 språk, samfunnsfag og økonomi: https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa3----/p5
-- [ ] Påbygging etter vg2 helsearbeiderfag: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.pbpby3----/p5
-- [ ] Vg2 helsearbeiderfag, Møre og Romsdal: https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
+- [x] Vg2 helsearbeiderfag, hele landet: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
+- [x] Vg2 helsearbeiderfag, Vestland: https://www.vilbli.no/nb/nb/vestland/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
+- [x] Lærefag: helsearbeiderfaget: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5
+- [x] Vg3 språk, samfunnsfag og økonomi: https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa3----/p5
+- [x] Påbygging etter vg2 helsearbeiderfag: https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.pbpby3----/p5
+- [x] Vg2 helsearbeiderfag, Møre og Romsdal: https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5
 
 Eier 01.10.2026: Med hele løpet i adressen virket fire av seks lenker. Lærefaget sendte til vg1, og påbygging under `v.pb` ga 404. Lenkene bruker nå bare koden for tilbudet, og påbygging står under et yrkesfaglig program, slik Vilbli selv gjør.
 
-Si fra hvilke som ikke virker, og hvordan adressen ser ut når du finner siden selv på Vilbli.
+Eier 01.10.2026, etter rettingen: Alle seks lenkene virker.
+
+Slutter en lenke å virke senere, si fra hvordan adressen ser ut når du finner siden selv på Vilbli.
 
