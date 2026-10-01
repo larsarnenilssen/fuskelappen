@@ -9,3 +9,5 @@
 - Versjonsnummeret økes fortsatt bare i en egen PR når eier og Claude er enige om versjonen. Den PR-en er selve beslutningen om å publisere.
 
 **Konsekvens:** Når versjons-PR-en flettes, settes taggen og appen publiseres uten flere steg. Eier kan fortsatt sette en tag selv (EIER.md punkt 3), og da publiserer `deploy.yml` som før.
+
+**Rettelse 01.10.2026:** I en kalt arbeidsflyt er `github.event_name` den kallende arbeidsflytens hendelse. Første kjøring tolket derfor kallet som et push av en tag og prøvde å publisere «main». `deploy.yml` sjekker nå også `github.ref_type == 'tag'`. 0.10.0 ble publisert for hånd med taggen.

@@ -8,6 +8,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - Arbeidsflyten **Sett versjonstag** setter versjonsmerket og publiserer når versjonsnummeret i `package.json` endres på main (avgjørelse 029).
 
+### Rettet (for eier)
+
+- Publiseringen fra **Sett versjonstag** prøvde å publisere «main» i stedet for den nye taggen. Den bruker nå taggen.
+
 ## [0.10.0] – 2026-10-01
 
 ### Lagt til

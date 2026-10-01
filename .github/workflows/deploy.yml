@@ -4,6 +4,8 @@
 # - Manuelt (Actions → Publiser → Run workflow): skriv en tag for å publisere eller rulle tilbake
 #   til en bestemt versjon. Tomt felt publiserer siste versjon.
 # - Kildesjekken kaller denne arbeidsflyten hver uke, slik at kildestatusen på Pages er fersk.
+# - «Sett versjonstag» kaller den med den nye taggen. I en kalt arbeidsflyt er github.event_name den kallende
+#   arbeidsflytens hendelse (push til main), så videresendingen må også sjekke at det er en tag som er pushet.
 #
 # Koden bygges alltid fra taggen. Kildestatusen og registerdataene (Grep og skoleregisteret) hentes fra main,
 # slik at de oppdateres hver uke (avgjørelse 018). Består ikke taggens tester med registerdataene fra main,
@@ -34,7 +36,7 @@ concurrency:
 jobs:
   videresend:
     name: Start publisering fra main
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && github.ref_type == 'tag'
     runs-on: ubuntu-latest
     permissions:
       actions: write
@@ -45,7 +47,7 @@ jobs:
 
   bygg:
     name: Bygg
-    if: github.event_name != 'push'
+    if: github.event_name != 'push' || github.ref_type != 'tag'
     runs-on: ubuntu-latest
     permissions:
       contents: read
