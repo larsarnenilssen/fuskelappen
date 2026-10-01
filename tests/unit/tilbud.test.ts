@@ -178,6 +178,33 @@ describe('felles programfag som Grep knytter til programområdet', () => {
   });
 });
 
+describe('programområder merket «påbygg» i Grep', () => {
+  it('får fellesfag som mangler, fra påbygging på samme trinn', () => {
+    const i: Fagindeks = {
+      ...indeks,
+      utdanningsprogram: { NA: { nb: 'Naturbruk', nn: 'Naturbruk' }, PB: { nb: 'Påbygging', nn: 'Påbygging' } },
+      programomrader: {
+        'NANAB3----': { ...po('Studieforberedende vg3 innen naturbruk', 'NA', 'Vg3'), merkelapper: ['paabygg'] },
+        'PBPBY3----': { ...po('Vg3 påbygging', 'PB', 'Vg3'), merkelapper: ['paabygg'] },
+      },
+      fag: {
+        NOR1270: fag('Norsk, vg3 påbygging', 'fellesfag', ['PBPBY3----'], 281),
+        KRO1019: fag('Kroppsøving vg3', 'fellesfag', ['NANAB3----', 'PBPBY3----'], 56),
+      },
+    };
+    const f: Fagfordeling = {
+      ...ff,
+      tabeller: [{ ...fordeling('Vg3', 'Tabell 24 Fag- og timefordeling på studieforberedende vg3 innenfor de yrkesfaglige utdanningsprogrammene for naturbruk', ['Ordinær'], [['Norsk', 281], ['Kroppsøving', 56], ['Totalt omfang', 337]]), nr: '24' }],
+    };
+    const t = byggTilbud('NANAB3----', i, f);
+    expect(t.deler).toMatchObject([
+      { linje: 'Norsk', koder: ['NOR1270'], lantFra: 'PBPBY3----', avvik: [] },
+      { linje: 'Kroppsøving', koder: ['KRO1019'], lantFra: null },
+    ]);
+    expect(t.avvik).toEqual([]);
+  });
+});
+
 describe('strukturen', () => {
   it('ordner programmene studieforberedende først, med varianter sist', () => {
     const s = byggStruktur(indeks);
