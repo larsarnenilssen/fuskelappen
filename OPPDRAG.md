@@ -414,6 +414,8 @@ Eier har gitt innspill til «Fag og vurdering» og fase 1, og svart på B1–B6.
    - Fagarket viser grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del.
    - Kilder: Grep har grunnleggende ferdigheter og tverrfaglige temaer (koder og titler). Teksten i overordnet del hentes fra Lovdatas datasett (forskrift) eller fra udir.no. Det avgjøres i pakken.
 
+Levert: pakke 1 i 0.11.0 (01.10.2026).
+
 Begrepsbanken utvides der det passer i hver pakke. Nytt og endret innhold får `kontrollert: null` og kontrollspørsmål med kilder. Fasittestene endres ikke.
 
 **Utgår:** En oversikt over tilbudene ved hver skole og i hvert fylke (eier, B5). Det finnes ingen åpen kilde: VIGO-kodeverket har skolene, men ikke tilbudene, Vilbli stenger for automatisk henting, og Udirs åpne statistikkbank har bare Elevundersøkelsen (sjekket 01.10.2026). Tas opp igjen hvis en kilde blir kjent.

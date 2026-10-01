@@ -5,6 +5,7 @@ import { describe, expect, it } from 'vitest';
 import type { Fylker, Innholdselement, Kilderegister, Synonymer } from '../../src/core/innhold/skjema.ts';
 import { finnOverlapp, slaaSammen } from '../../src/core/regler/motor.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
+import { lesInnhold } from '../../scripts/innhold/alt.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 import { lagKilderMd } from '../../scripts/lag-kilder-md.ts';
 
@@ -130,5 +131,24 @@ describe('regelsett', () => {
   it('regelsett-id er unik, og hver del finnes bare én gang', () => {
     const ider = regelfilinnhold.map((r) => `${r.id}|${r.del ?? ''}`);
     expect(new Set(ider).size).toBe(ider.length);
+  });
+});
+
+describe('annet elevrettet arbeid', () => {
+  // Eier 01.10.2026: begrepet og «Hva tiden brukes til» i Arbeidsplan skal forklare det på samme måte.
+  it('har samme forklaring i begrepet og i Arbeidsplan', () => {
+    const alle = lesInnhold(join(__dirname, '../..'));
+    const tekst = (id: string) => alle.find((x) => x.element.id === id)?.element.tekst;
+    const begrep = tekst('annet-elevrettet-arbeid');
+    const forklaring = tekst('bruk-annen-planfestet');
+    for (const m of ['nb', 'nn'] as const) {
+      const avsnitt = forklaring?.[m]
+        .split('\n\n')
+        .find((a) => a.startsWith('**Ann'))
+        ?.replace(/\*\*/g, '')
+        .trim();
+      expect(avsnitt).toBeTruthy();
+      expect(begrep?.[m]).toContain(avsnitt);
+    }
   });
 });

@@ -60,14 +60,15 @@
   type: begrep
   tittel: { nb: Fag merket *, nn: Fag merkte * }
   tekst:
-    nb: Noen fellesfag er merket * i vedlegg 1. Er det faktiske antallet elever i klassen 1–15, økes årsrammen i disse fagene med 52,5 timer (70 i 45-minutters enheter).
-    nn: Nokre fellesfag er merkte * i vedlegg 1. Er det faktiske talet på elevar i klassen 1–15, blir årsramma i desse faga auka med 52,5 timar (70 i 45-minutts einingar).
+    nb: Noen fellesfag er merket * i vedlegg 1. Er det faktiske antallet elever i klassen 1–15, økes årsrammen i disse fagene med 52,5 timer (70 i 45-minutters enheter). For læreren betyr en større årsramme at hver undervisningstime i faget gir lavere beskjeftigelse enn når klassen har flere enn 15 elever, og læreren må undervise flere timer for å fylle stillingen. Eksempel – 140 årstimer i naturfag på vg1 studieforberedende (årsramme 554) gir 140 ÷ 554 × 100 = 25,27 % med 16 elever eller flere, og 140 ÷ 606,5 × 100 = 23,08 % med 15 eller færre.
+    nn: Nokre fellesfag er merkte * i vedlegg 1. Er det faktiske talet på elevar i klassen 1–15, blir årsramma i desse faga auka med 52,5 timar (70 i 45-minutts einingar). For læraren tyder ei større årsramme at kvar undervisningstime i faget gir lågare sysselsetjing enn når klassen har fleire enn 15 elevar, og læraren må undervise fleire timar for å fylle stillinga. Døme – 140 årstimar i naturfag på vg1 studieførebuande (årsramme 554) gir 140 ÷ 554 × 100 = 25,27 % med 16 elevar eller fleire, og 140 ÷ 606,5 × 100 = 23,08 % med 15 eller færre.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
   kontrollsporsmal:
     - "Er «det faktiske antallet elever i klassen» tydelig nok for grupper som ikke er klasser, for eksempel valgfag på tvers av klasser?"
-  stikkord: [stjerne, små klasser, elevtall]
-  relatert: [arsramme]
+    - "Er det tydelig at større årsramme gir lavere beskjeftigelse per undervisningstime, og er eksemplet med naturfag riktig?"
+  stikkord: [stjerne, små klasser, elevtall, beskjeftigelse]
+  relatert: [arsramme, beskjeftigelse]
 
 - id: minuttenheter
   type: begrep
@@ -158,15 +159,18 @@
   type: begrep
   tittel: { nb: Annet elevrettet arbeid, nn: Anna elevretta arbeid }
   tekst:
-    nb: Annet elevrettet arbeid er blant det planfestet tid først og fremst brukes til. Begrepet er ikke definert i avtalen, og hva som regnes med, blir ofte avklart lokalt. Se forklaringen under «Hva tiden brukes til» i Arbeidsplan.
-    nn: Anna elevretta arbeid er blant det planfesta tid først og fremst blir brukt til. Omgrepet er ikkje definert i avtalen, og kva som blir rekna med, blir ofte avklart lokalt. Sjå forklaringa under «Kva tida blir brukt til» i Arbeidsplan.
+    nb: Annet elevrettet arbeid er blant det planfestet tid først og fremst brukes til (punkt 5.1). Annet elevrettet arbeid er ikke definert i avtalen. KS' FoU-rapport fra 2025 viser at begrepet tolkes ulikt, og at hva som regnes med, ofte blir avklart lokalt mellom skoleledelsen og de tillitsvalgte. Ifølge rapporten bruker de mye tid på å bli enige om hvilke elevrettede oppgaver som kan legges til planfestet tid, og hva som hører til tiden læreren disponerer selv. Rapporten viser også at kontaktlærere trenger mer tid til elevrettet arbeid, og at skoleledere ved yrkesfaglige skoler peker på uklarhet om oppfølging av elever og lærlinger utenfor skolen er elevrettet arbeid eller undervisning. I kravet ved forhandlingene om avtalen i 2025 skrev Utdanningsforbundet at begrepet ofte fylles med oppgaver som ikke hører til lærernes kjerneoppgaver, slik at det blir mindre tid til å forberede undervisning sammen, til felles utviklingsarbeid og til å følge opp elevene.
+    nn: Anna elevretta arbeid er blant det planfesta tid først og fremst blir brukt til (punkt 5.1). Anna elevretta arbeid er ikkje definert i avtalen. FoU-rapporten til KS frå 2025 viser at omgrepet blir tolka ulikt, og at kva som blir rekna med, ofte blir avklart lokalt mellom skuleleiinga og dei tillitsvalde. Ifølgje rapporten bruker dei mykje tid på å bli samde om kva elevretta oppgåver som kan leggjast til planfesta tid, og kva som høyrer til tida læraren disponerer sjølv. Rapporten viser òg at kontaktlærarar treng meir tid til elevretta arbeid, og at skuleleiarar ved yrkesfaglege skular peikar på uklarleik om oppfølging av elevar og lærlingar utanfor skulen er elevretta arbeid eller undervisning. I kravet ved forhandlingane om avtalen i 2025 skreiv Utdanningsforbundet at omgrepet ofte blir fylt med oppgåver som ikkje høyrer til kjerneoppgåvene til lærarane, slik at det blir mindre tid til å førebu undervisning saman, til felles utviklingsarbeid og til å følgje opp elevane.
   kilder:
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
-    - { id: ks-fou-sfs2213 }
+    - { id: ks-fou-sfs2213, punkt: "s. 23, 38–39, 76 og 90" }
+    - { id: udf-krav-sfs2213-2025, punkt: "Punkt 5.1 (s. 3)" }
   kontrollert: null
   kontrollsporsmal:
     - "Er det nøytralt nok å si at hva som regnes med, ofte avklares lokalt?"
-  stikkord: [elevrettet, planfestet tid]
+    - "Er KS-rapporten og Utdanningsforbundets krav fra 2025 gjengitt riktig og balansert?"
+    - "Kildene gir få konkrete eksempler på annet elevrettet arbeid. Finnes det en kilde med flere eksempler (f.eks. tilsyn eller elevsamtaler) som bør tas med?"
+  stikkord: [elevrettet, planfestet tid, oppfølging av elever, lærlinger, kjerneoppgaver]
   relatert: [planfestet-arbeidstid]
 
 - id: andre-arbeidsoppgaver
@@ -218,16 +222,18 @@
   type: begrep
   tittel: { nb: Variabel lønn, nn: Variabel løn }
   tekst:
-    nb: Har en lærer i deltidsstilling mer undervisning og funksjoner enn stillingen, gir det som er over stillingen og opp til hel stilling variabel lønn. Den betales med vanlig timelønn for undervisning, uten overtidstillegg, og regnes som vikartimer. Først det som er over hel stilling, er overtid. Om deltidsansatte skal ha overtidstillegg for arbeid ut over avtalt stillingsbrøk, er omstridt mellom partene.
-    nn: Har ein lærar i deltidsstilling meir undervisning og funksjonar enn stillinga, gir det som er over stillinga og opp til heil stilling variabel løn. Ho blir betalt med vanleg timeløn for undervisning, utan overtidstillegg, og blir rekna som vikartimar. Først det som er over heil stilling, er overtid. Om deltidstilsette skal ha overtidstillegg for arbeid utover avtalt stillingsbrøk, er omstridt mellom partane.
+    nb: Variabel lønn er lønn for undervisning som ikke er en del av en fast stilling. Den betales med timelønn for undervisning etter kalkulert tid (hovedtariffavtalen § 12.4). Timevikarer får variabel lønn for vikartimene. Har en lærer i deltidsstilling mer undervisning og funksjoner enn stillingen, gir det som er over stillingen og opp til hel stilling, også variabel lønn, uten overtidstillegg. Først det som er over hel stilling, er overtid. Om deltidsansatte skal ha overtidstillegg for arbeid ut over avtalt stillingsbrøk, er omstridt mellom partene.
+    nn: Variabel løn er løn for undervisning som ikkje er ein del av ei fast stilling. Ho blir betalt med timeløn for undervisning etter kalkulert tid (hovudtariffavtalen § 12.4). Timevikarar får variabel løn for vikartimane. Har ein lærar i deltidsstilling meir undervisning og funksjonar enn stillinga, gir det som er over stillinga og opp til heil stilling, òg variabel løn, utan overtidstillegg. Først det som er over heil stilling, er overtid. Om deltidstilsette skal ha overtidstillegg for arbeid utover avtalt stillingsbrøk, er omstridt mellom partane.
   kilder:
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 6.2 }
     - { id: ks-hovedtariffavtalen, punkt: Kap. 1 § 12.4 }
+    - { id: inschool-vikartimer, punkt: Kalkulert tid }
   kontrollert: null
   kontrollsporsmal:
     - "Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?"
     - "Betaler fylket fortsatt variabel lønn som vikartimer uten overtidstillegg?"
-  stikkord: [merarbeid, deltid, deltidsansatt, timelønn, ekstra undervisning]
+    - "Er det riktig at timevikarer får vikartimene utbetalt som variabel lønn?"
+  stikkord: [merarbeid, deltid, deltidsansatt, timelønn, ekstra undervisning, timevikar, vikartimer]
   relatert: [fast-overtid, kalkulert-tid, teknisk-undertid-overtid, beskjeftigelse]
 
 - id: planleggingsdager

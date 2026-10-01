@@ -11,7 +11,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
+import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, unikeFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Periodelinje, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
@@ -206,10 +206,10 @@ export default function Arbeidsplan() {
   const overtidUtenFag = s.visLonn && resultat !== null && (resultat.variabel.verdi > 0 || resultat.beskjeftigelse.verdi > 100) && !overtidsfag;
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
-  const gruppenavn = fylte.map(
-    (x, i) =>
-      `${t('arbeidstid.felles.gruppe', { nr: s.grupper.indexOf(x.g) + 1 })}: ${fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`, malform)}`,
-  );
+  const fagIGruppe = fylte.map((x, i) => fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`, malform));
+  // Samme fag lagt til i flere grupper gir samme omregning, så hvert fag vises én gang i valget og listen.
+  const hvertFag = resultat ? unikeFag(differanseIHvertFag(resultat).map((d, i) => ({ ...d, fag: fagIGruppe[i] ?? '' }))) : [];
+  const valgtFag = Math.max(0, hvertFag.findIndex((f) => f.indekser.includes(valgtIndeks)));
 
   const deler: Stolpedel[] = resultat
     ? [
@@ -316,24 +316,24 @@ export default function Arbeidsplan() {
                     {r.tall && <span class="tall">{r.tall}</span>}
                   </p>
                 ))}
-                {!iBalanse && fylte.length > 1 && (
+                {!iBalanse && hvertFag.length > 1 && (
                   <div class="felt felt-liten">
                     <label for={idTimer}>{t('arbeidstid.arbeidsplan.timerIFag')}</label>
                     <select
                       id={idTimer}
-                      value={String(valgtIndeks)}
-                      onChange={(e) => endre({ timerIGruppe: fylte[Number(e.currentTarget.value)]?.g.id ?? null })}
+                      value={String(valgtFag)}
+                      onChange={(e) => endre({ timerIGruppe: fylte[hvertFag[Number(e.currentTarget.value)]?.indekser[0] ?? 0]?.g.id ?? null })}
                     >
-                      {gruppenavn.map((navn, i) => (
+                      {hvertFag.map((f, i) => (
                         <option key={i} value={String(i)}>
-                          {navn}
+                          {f.fag}
                         </option>
                       ))}
                     </select>
                   </div>
                 )}
                 {!iBalanse && fylte.length === 0 && <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.ingenFag')}</p>}
-                {!iBalanse && fylte.length > 1 && (
+                {!iBalanse && hvertFag.length > 1 && (
                   <>
                     <button type="button" class="lenkeknapp liten" aria-expanded={visHvertFag} onClick={() => settVisHvertFag(!visHvertFag)}>
                       <Ikon navn={visHvertFag ? 'opp' : 'ned'} class="ikon-liten" />
@@ -343,8 +343,8 @@ export default function Arbeidsplan() {
                       <div class="hjelp-tekst">
                         <p class="felt-hjelp">{diff < 0 ? t('arbeidstid.arbeidsplan.hvertFagMangler') : t('arbeidstid.arbeidsplan.hvertFagForMye')}</p>
                         <Oversiktsliste
-                          rader={differanseIHvertFag(resultat).map((d, i) => ({
-                            navn: t('arbeidstid.arbeidsplan.fagRad', { fag: gruppenavn[i] ?? '', arsramme: formaterTall(d.arsramme) }),
+                          rader={hvertFag.map((d) => ({
+                            navn: t('arbeidstid.arbeidsplan.fagRad', { fag: d.fag, arsramme: formaterTall(d.arsramme) }),
                             verdi: medEnhet(t, Math.abs(d.timer), 'arsrammetimer'),
                           }))}
                         />

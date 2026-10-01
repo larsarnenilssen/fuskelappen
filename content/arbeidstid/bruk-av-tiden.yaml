@@ -51,7 +51,7 @@
 
       Skolens ledelse har ansvar for å legge til rette for samarbeidet.
 
-      **Annet elevrettet arbeid** er ikke definert i avtalen. KS' FoU-rapport fra 2025 viser at begrepet tolkes ulikt, og at hva som regnes med, ofte blir avklart lokalt mellom skoleledelsen og de tillitsvalgte. I kravet ved forhandlingene om avtalen i 2025 skrev Utdanningsforbundet at begrepet ofte fylles med oppgaver som ikke hører til lærernes kjerneoppgaver, slik at det blir mindre tid til å forberede undervisning sammen.
+      **Annet elevrettet arbeid** er ikke definert i avtalen. KS' FoU-rapport fra 2025 viser at begrepet tolkes ulikt, og at hva som regnes med, ofte blir avklart lokalt mellom skoleledelsen og de tillitsvalgte. Ifølge rapporten bruker de mye tid på å bli enige om hvilke elevrettede oppgaver som kan legges til planfestet tid, og hva som hører til tiden læreren disponerer selv. Rapporten viser også at kontaktlærere trenger mer tid til elevrettet arbeid, og at skoleledere ved yrkesfaglige skoler peker på uklarhet om oppfølging av elever og lærlinger utenfor skolen er elevrettet arbeid eller undervisning. I kravet ved forhandlingene om avtalen i 2025 skrev Utdanningsforbundet at begrepet ofte fylles med oppgaver som ikke hører til lærernes kjerneoppgaver, slik at det blir mindre tid til å forberede undervisning sammen, til felles utviklingsarbeid og til å følge opp elevene.
 
       Avtalen setter disse rammene:
 
@@ -70,7 +70,7 @@
 
       Leiinga ved skulen har ansvar for å leggje til rette for samarbeidet.
 
-      **Anna elevretta arbeid** er ikkje definert i avtalen. FoU-rapporten til KS frå 2025 viser at omgrepet blir tolka ulikt, og at kva som blir rekna med, ofte blir avklart lokalt mellom skuleleiinga og dei tillitsvalde. I kravet ved forhandlingane om avtalen i 2025 skreiv Utdanningsforbundet at omgrepet ofte blir fylt med oppgåver som ikkje høyrer til kjerneoppgåvene til lærarane, slik at det blir mindre tid til å førebu undervisning saman.
+      **Anna elevretta arbeid** er ikkje definert i avtalen. FoU-rapporten til KS frå 2025 viser at omgrepet blir tolka ulikt, og at kva som blir rekna med, ofte blir avklart lokalt mellom skuleleiinga og dei tillitsvalde. Ifølgje rapporten bruker dei mykje tid på å bli samde om kva elevretta oppgåver som kan leggjast til planfesta tid, og kva som høyrer til tida læraren disponerer sjølv. Rapporten viser òg at kontaktlærarar treng meir tid til elevretta arbeid, og at skuleleiarar ved yrkesfaglege skular peikar på uklarleik om oppfølging av elevar og lærlingar utanfor skulen er elevretta arbeid eller undervisning. I kravet ved forhandlingane om avtalen i 2025 skreiv Utdanningsforbundet at omgrepet ofte blir fylt med oppgåver som ikkje høyrer til kjerneoppgåvene til lærarane, slik at det blir mindre tid til å førebu undervisning saman, til felles utviklingsarbeid og til å følgje opp elevane.
 
       Avtalen set desse rammene:
 
@@ -83,11 +83,12 @@
     - { id: ks-sfs2213-avtaletekst, punkt: "4" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
     - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
-    - { id: ks-fou-sfs2213 }
-    - { id: udf-krav-sfs2213-2025 }
+    - { id: ks-fou-sfs2213, punkt: "s. 23, 38–39, 76 og 90" }
+    - { id: udf-krav-sfs2213-2025, punkt: "Punkt 5.1 (s. 3)" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er Utdanningsforbundets krav fra 2025 gjengitt riktig, og bør KS’ syn også nevnes for å være balansert?"
+    - "Er KS-rapporten og Utdanningsforbundets krav fra 2025 gjengitt riktig og balansert?"
+    - "Kildene gir få konkrete eksempler på annet elevrettet arbeid. Finnes det en kilde med flere eksempler (f.eks. tilsyn eller elevsamtaler) som bør tas med?"
   stikkord: [elevrettet arbeid, planfestet tid, samarbeid]
 
 - id: bruk-planleggingsdager

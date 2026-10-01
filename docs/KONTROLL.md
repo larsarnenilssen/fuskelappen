@@ -16,7 +16,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
 | Ikke kontrollert | 75 |
-| Praksis og tolkninger som bør bekreftes | 12 av 12 |
+| Praksis og tolkninger som bør bekreftes | 13 av 13 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -38,7 +38,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Praksis | Spørsmål | Grunnlag | Kilder å sjekke mot | Bekreftet |
 |---|---|---|---|---|
 | **Lønn i brutte måneder** | Regnes lønn for deler av en måned fortsatt som arbeidsdagene ÷ 21,67 av månedslønnen, med offentlige fridager som arbeidsdager? | Eier 30.09.2026. Praksis i lønnssystemet og i Vestland fylkeskommune. | [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970); [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet) | ikke bekreftet |
-| **Variabel lønn for deltidsansatte** | Gjelder det fortsatt at beskjeftigelse over en stilling under 100 %, opp til hel stilling, gir variabel lønn uten overtidstillegg? Er dommen om overtid for deltidsansatte blitt rettskraftig? | Eier 30.09.2026, inntil dommen om overtid for deltidsansatte er rettskraftig. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2, Kap. 1 § 12.4, Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og punkt 9.1; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
+| **Variabel lønn for deltidsansatte** | Gjelder det fortsatt at beskjeftigelse over en stilling under 100 %, opp til hel stilling, gir variabel lønn uten overtidstillegg? Er dommen om overtid for deltidsansatte blitt rettskraftig? | Eier 30.09.2026, inntil dommen om overtid for deltidsansatte er rettskraftig. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2, Kap. 1 § 12.4, Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 3.25 Beregning av lønn for vikartimer](https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer): Kalkulert tid; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og punkt 9.1; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
+| **Variabel lønn for timevikarer** | Får timevikarer fortsatt vikartimene utbetalt som variabel lønn, med timelønn etter kalkulert tid? | Eier 01.10.2026. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2 og Kap. 1 § 12.4; [Visma InSchool – 3.25 Beregning av lønn for vikartimer](https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer): Kalkulert tid | ikke bekreftet |
 | **Overtidsbetaling for undervisning** | Betales overtid for undervisning fortsatt som kalkulert tid × timelønn × 1,5? | Eier 29.09.2026. Hovedtariffavtalen § 6.4 og § 6.5.3. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.5.3, Kap. 1 § 6.4, Kap. 1 § 7.4.2, Kap. 1 § 12.4 og Kap. 4 punkt 4.1; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.2, punkt 4, punkt 5.1, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Planleggingsdager** | Brukes fortsatt 45 timer planleggingsdager for alle, tatt fra annen planfestet tid, slik Visma InSchool gjør? | Eier 30.09.2026. Visma InSchool. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4 a, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Skoleåret og timer per uke** | Er elevenes skoleår fortsatt 190 dager og 38 uker, og skal timene per uke fordeles på 38 skoleuker? | Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk. | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30); [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1, punkt 5.2, punkt 4, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
@@ -236,8 +237,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Undervisning (`bruk-undervisning`) | forklaring | – | `content/arbeidstid/bruk-av-tiden.yaml` | ikke kontrollert |
-| Annen planfestet tid og annet elevrettet arbeid (`bruk-annen-planfestet`) | forklaring | – | `content/arbeidstid/bruk-av-tiden.yaml` | ikke kontrollert |
-| Annet elevrettet arbeid (`annet-elevrettet-arbeid`) | begrep | – | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
+| Annen planfestet tid og annet elevrettet arbeid (`bruk-annen-planfestet`) | forklaring | s. 23, 38–39, 76 og 90 | `content/arbeidstid/bruk-av-tiden.yaml` | ikke kontrollert |
+| Annet elevrettet arbeid (`annet-elevrettet-arbeid`) | begrep | s. 23, 38–39, 76 og 90 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 
 ### Utdanningsforbundets krav ved forhandlingene om SFS 2213, 24.11.2025 (dok. nr. 1)
 
@@ -247,7 +248,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Annen planfestet tid og annet elevrettet arbeid (`bruk-annen-planfestet`) | forklaring | – | `content/arbeidstid/bruk-av-tiden.yaml` | ikke kontrollert |
+| Annen planfestet tid og annet elevrettet arbeid (`bruk-annen-planfestet`) | forklaring | Punkt 5.1 (s. 3) | `content/arbeidstid/bruk-av-tiden.yaml` | ikke kontrollert |
+| Annet elevrettet arbeid (`annet-elevrettet-arbeid`) | begrep | Punkt 5.1 (s. 3) | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 
 ### Visma InSchool – 3.25 Beregning av lønn for vikartimer
 
@@ -259,6 +261,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Slik regnes vikartimene ut (`metode-vikar`) | forklaring | – | `content/arbeidstid/metoder.yaml` | ikke kontrollert |
 | Kalkulert tid (`kalkulert-tid`) | begrep | – | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
+| Variabel lønn (`variabel-lonn`) | begrep | Kalkulert tid | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 
 ### Visma InSchool – 2a.17 Periodebeskjeftigelse
 
@@ -305,9 +308,10 @@ Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](http
 
 **Annen planfestet tid og annet elevrettet arbeid** (`bruk-annen-planfestet`, forklaring, ikke kontrollert)
 
-- Er Utdanningsforbundets krav fra 2025 gjengitt riktig, og bør KS’ syn også nevnes for å være balansert?
+- Er KS-rapporten og Utdanningsforbundets krav fra 2025 gjengitt riktig og balansert?
+- Kildene gir få konkrete eksempler på annet elevrettet arbeid. Finnes det en kilde med flere eksempler (f.eks. tilsyn eller elevsamtaler) som bør tas med?
 
-Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.1 og punkt 5.2; [Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)](https://www.ks.no/contentassets/fe673f1aa4254bc0b9e2f49f00434251/erfaringer-med-sfs2213_rapport.pdf); [Utdanningsforbundets krav ved forhandlingene om SFS 2213, 24.11.2025 (dok. nr. 1)](https://www.ks.no/contentassets/8241bae38e5a49c385d5f549a05a33ef/utdanningsforbundet.pdf)
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.1 og punkt 5.2; [Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)](https://www.ks.no/contentassets/fe673f1aa4254bc0b9e2f49f00434251/erfaringer-med-sfs2213_rapport.pdf): s. 23, 38–39, 76 og 90; [Utdanningsforbundets krav ved forhandlingene om SFS 2213, 24.11.2025 (dok. nr. 1)](https://www.ks.no/contentassets/8241bae38e5a49c385d5f549a05a33ef/utdanningsforbundet.pdf): Punkt 5.1 (s. 3)
 
 **Planleggingsdager** (`bruk-planleggingsdager`, forklaring, ikke kontrollert)
 
@@ -383,6 +387,7 @@ Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](http
 **Fag merket *** (`stjernefag`, begrep, ikke kontrollert)
 
 - Er «det faktiske antallet elever i klassen» tydelig nok for grupper som ikke er klasser, for eksempel valgfag på tvers av klasser?
+- Er det tydelig at større årsramme gir lavere beskjeftigelse per undervisningstime, og er eksemplet med naturfag riktig?
 
 Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1
 
@@ -426,8 +431,10 @@ Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](http
 **Annet elevrettet arbeid** (`annet-elevrettet-arbeid`, begrep, ikke kontrollert)
 
 - Er det nøytralt nok å si at hva som regnes med, ofte avklares lokalt?
+- Er KS-rapporten og Utdanningsforbundets krav fra 2025 gjengitt riktig og balansert?
+- Kildene gir få konkrete eksempler på annet elevrettet arbeid. Finnes det en kilde med flere eksempler (f.eks. tilsyn eller elevsamtaler) som bør tas med?
 
-Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1; [Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)](https://www.ks.no/contentassets/fe673f1aa4254bc0b9e2f49f00434251/erfaringer-med-sfs2213_rapport.pdf)
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1; [Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)](https://www.ks.no/contentassets/fe673f1aa4254bc0b9e2f49f00434251/erfaringer-med-sfs2213_rapport.pdf): s. 23, 38–39, 76 og 90; [Utdanningsforbundets krav ved forhandlingene om SFS 2213, 24.11.2025 (dok. nr. 1)](https://www.ks.no/contentassets/8241bae38e5a49c385d5f549a05a33ef/utdanningsforbundet.pdf): Punkt 5.1 (s. 3)
 
 **Funksjoner og andre arbeidsoppgaver** (`andre-arbeidsoppgaver`, begrep, ikke kontrollert)
 
@@ -495,8 +502,9 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 
 - Er det nøytralt å si at overtidstillegg for deltidsansatte er omstridt mellom partene?
 - Betaler fylket fortsatt variabel lønn som vikartimer uten overtidstillegg?
+- Er det riktig at timevikarer får vikartimene utbetalt som variabel lønn?
 
-Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2 og Kap. 1 § 12.4
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2 og Kap. 1 § 12.4; [Visma InSchool – 3.25 Beregning av lønn for vikartimer](https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer): Kalkulert tid
 
 **Delt dagsverk** (`delt-dagsverk`, begrep, ikke kontrollert)
 

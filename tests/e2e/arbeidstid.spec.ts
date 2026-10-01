@@ -631,9 +631,18 @@ test.describe('arbeidstid', () => {
       await page.getByRole('button', { name: 'Legg til fag' }).click();
       const fag = page.locator(`[data-gruppe="${nr}"]`);
       await velgFag(fag, 'norsk stud vg1', 'Norsk · Studiespesialisering Vg1');
+      // Hvert steg sjekkes for seg, så en feil viser hvilket steg som ikke ble med.
+      await expect(fag.locator('.fagvalg-navn')).toContainText('Norsk');
       await fag.getByLabel('Antall årstimer').fill('113');
+      await expect(fag.getByLabel('Antall årstimer')).toHaveValue('113');
       // Vent til gruppen er regnet ut (113 ÷ 496 = 22,78 %) før neste legges til, så ingen gruppe blir borte underveis.
-      await expect(fag.locator('.fagkort-resultat')).toContainText('22,78');
+      try {
+        await expect(fag.locator('.fagkort-resultat')).toContainText('22,78');
+      } catch (feil) {
+        // Testen har sviktet av og til i WebKit uten at årsaken er funnet. Skjemaet skrives ut for feilsøking.
+        const kort = await page.locator('.fagkort').allInnerTexts();
+        throw new Error(`Gruppe ${nr} ble ikke regnet ut. Fagkortene: ${JSON.stringify(kort)}`, { cause: feil });
+      }
     }
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
     await page.getByLabel('Funksjon 1: Prosent').fill('25');
@@ -642,10 +651,13 @@ test.describe('arbeidstid', () => {
     await expect(differanse).toHaveAttribute('data-differanse', 'undertid');
     await expect(differanse).toContainText('Teknisk undertid');
     await expect(differanse).toContainText('2,77 % = 14,54 årsrammetimer');
+    // Norsk er lagt til to ganger, men står bare én gang i valget og listen.
+    await expect(page.getByLabel('Årsrammetimer i').locator('option')).toHaveCount(2);
     await page.getByLabel('Årsrammetimer i').selectOption({ index: 1 });
     await expect(differanse).toContainText('13,73 årsrammetimer');
     await page.getByRole('button', { name: 'Timer i hvert fag' }).click();
     await expect(page.locator('.hjelp-tekst .oversikt')).toContainText('14,54 årsrammetimer');
+    await expect(page.locator('.hjelp-tekst .oversikt-rad')).toHaveCount(2);
     await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
   });
 
