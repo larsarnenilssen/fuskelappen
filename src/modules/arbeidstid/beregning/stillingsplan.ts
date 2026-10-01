@@ -170,6 +170,21 @@ export function differanseIHvertFag(r: StillingsplanResultat): { arsramme: numbe
   return r.grupper.map((g) => ({ arsramme: g.arsramme.verdi, timer: (r.differanse.verdi * (g.perioderamme ?? g.arsramme).verdi) / 100 }));
 }
 
+/**
+ * Hvert fag én gang: grupper med samme fag og samme årsramme (og dermed samme timer) slås sammen. Fag som er lagt til
+ * flere ganger, gir samme omregning, så de vises bare én gang. `indekser` er gruppene faget står for, i rekkefølge.
+ */
+export function unikeFag<T extends { fag: string; arsramme: number; timer: number }>(rader: readonly T[]): (T & { indekser: number[] })[] {
+  const ut = new Map<string, T & { indekser: number[] }>();
+  rader.forEach((r, i) => {
+    const nokkel = `${r.fag}|${r.arsramme}|${r.timer.toFixed(6)}`;
+    const funnet = ut.get(nokkel);
+    if (funnet) funnet.indekser.push(i);
+    else ut.set(nokkel, { ...r, indekser: [i] });
+  });
+  return [...ut.values()];
+}
+
 export interface Lonnsinndata {
   lonn: Lonnsgrunnlag;
   /** Stillingsprosenten læreren er ansatt i. */

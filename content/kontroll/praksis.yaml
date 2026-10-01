@@ -18,6 +18,14 @@ praksis:
     berorer: [variabel-lonn, teknisk-undertid-overtid, metode-arbeidsplan]
     bekreftet: null
 
+  - id: variabel-lonn-timevikar
+    tittel: Variabel lønn for timevikarer
+    sporsmal: Får timevikarer fortsatt vikartimene utbetalt som variabel lønn, med timelønn etter kalkulert tid?
+    appen: Begrepet «variabel lønn» sier at timevikarer får variabel lønn for vikartimene.
+    grunnlag: Eier 01.10.2026.
+    berorer: [variabel-lonn]
+    bekreftet: null
+
   - id: overtid-undervisning
     tittel: Overtidsbetaling for undervisning
     sporsmal: Betales overtid for undervisning fortsatt som kalkulert tid × timelønn × 1,5?

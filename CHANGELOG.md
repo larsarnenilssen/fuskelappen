@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.11.0] – 2026-10-01
+
+### Endret
+
+- **Arbeidsplan:** Et fag som er lagt til i flere grupper, står bare én gang under «Årsrammetimer i» og «Timer i hvert fag».
+- **Begreper:**
+  - «Variabel lønn» gjelder også timevikarer.
+  - «Fag merket *» forklarer at større årsramme gir lavere beskjeftigelse per undervisningstime, med et eksempel.
+  - «Annet elevrettet arbeid» forklares som i Arbeidsplan, med det KS-rapporten og Utdanningsforbundet sier om begrepet.
+- **Forsiden:** Kortere tekst i knappene for fag og arbeidstid. «Fra Grep» er tatt bort fra knappen og fra vurderingsordningen på fagsiden. Grep står fortsatt som kilde.
+
 ### Lagt til (for eier)
 
 - Arbeidsflyten **Sett versjonstag** setter versjonsmerket og publiserer når versjonsnummeret i `package.json` endres på main (avgjørelse 029).
@@ -375,7 +386,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.10.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.11.0...HEAD
+[0.11.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.11.0
 [0.10.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.10.0
 [0.9.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.9.0
 [0.8.2]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.8.2

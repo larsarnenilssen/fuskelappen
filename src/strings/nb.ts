@@ -251,11 +251,11 @@ export const nb = {
     },
     fag: {
       navn: 'Fag og læreplaner',
-      beskrivelse: 'Fagkoder, kompetansemål, vurderingsordning og årstimetall for videregående, fra Grep.',
+      beskrivelse: 'Fagkoder, kompetansemål, vurdering og årstimetall.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
-      beskrivelse: 'Beskjeftigelse, periode, vikartimer og planfestet tid, med utregning og kilder.',
+      beskrivelse: 'Arbeidsplan, beskjeftigelse, vikartimer og overtid.',
     },
   },
   arbeidstid: arbeidstidNb,

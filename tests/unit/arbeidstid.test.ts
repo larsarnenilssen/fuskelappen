@@ -16,6 +16,7 @@ import {
   lesGarantilonn,
   radNavn,
   rund,
+  unikeFag,
 } from '../../src/modules/arbeidstid/beregning/index.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
@@ -571,5 +572,27 @@ describe('arbeidsplan: årsrammetimer og redusert undervisning', () => {
     expect(planfestet).toBeCloseTo((1150 * 1650) / 1687.5);
     expect(r.deler.find((d) => d.id === 'selvdisponert')?.timer).toBeCloseTo(1650 - (1150 * 1650) / 1687.5);
     expect(r.deler.reduce((s, d) => s + d.timer, 0)).toBeCloseTo(1650);
+  });
+});
+
+describe('unikeFag', () => {
+  it('viser et fag som er lagt til flere ganger, én gang, og husker gruppene', () => {
+    const rader = [
+      { fag: 'Engelsk', arsramme: 525, timer: 14.54 },
+      { fag: 'Norsk', arsramme: 496, timer: 13.73 },
+      { fag: 'Norsk', arsramme: 496, timer: 13.73 },
+    ];
+    expect(unikeFag(rader)).toEqual([
+      { fag: 'Engelsk', arsramme: 525, timer: 14.54, indekser: [0] },
+      { fag: 'Norsk', arsramme: 496, timer: 13.73, indekser: [1, 2] },
+    ]);
+  });
+
+  it('holder samme fag med ulik årsramme hver for seg', () => {
+    const rader = [
+      { fag: 'Matematikk', arsramme: 607.5, timer: 10 },
+      { fag: 'Matematikk', arsramme: 525, timer: 8.64 },
+    ];
+    expect(unikeFag(rader).map((r) => r.indekser)).toEqual([[0], [1]]);
   });
 });

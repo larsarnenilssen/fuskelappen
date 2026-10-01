@@ -251,11 +251,11 @@ export const nn: Tekster = {
     },
     fag: {
       navn: 'Fag og læreplanar',
-      beskrivelse: 'Fagkodar, kompetansemål, vurderingsordning og årstimetal for vidaregåande, frå Grep.',
+      beskrivelse: 'Fagkodar, kompetansemål, vurdering og årstimetal.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
-      beskrivelse: 'Sysselsetjing, periode, vikartimar og planfesta tid, med utrekning og kjelder.',
+      beskrivelse: 'Arbeidsplan, sysselsetjing, vikartimar og overtid.',
     },
   },
   arbeidstid: arbeidstidNn,

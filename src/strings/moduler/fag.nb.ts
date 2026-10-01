@@ -52,7 +52,7 @@ export const fagNb = {
     program: 'Utdanningsprogram',
     programomrader: 'Programområder ({antall})',
     vurdering: 'Vurderingsordning',
-    vurderingIngress: 'Fra Grep. Vurderingsordningen i læreplanen står nedenfor.',
+    vurderingIngress: 'Vurderingsordningen i læreplanen står nedenfor.',
     elev: 'Elever',
     privatist: 'Privatister',
     standpunkt: 'Standpunktkarakter',
