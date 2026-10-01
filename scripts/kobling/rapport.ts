@@ -66,7 +66,8 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
   const ut: Avvik[] = [];
   const radFor = new Map(rader.map((r) => [r.nr, r]));
   const program = new Map(tabeller.programnavn.map((p) => [p.vedlegg, p.grep]));
-  // Med merknad (eiers valg, f.eks. opphenting av vg1 på vg2) kan raden gjelde et annet program eller trinn.
+  // Med merknad (eiers valg, f.eks. opphenting av vg1 på vg2) kan raden gjelde et annet program, trinn eller en annen
+  // kategori i vedlegget.
   const passer = (nr: number, prog: string, trinn: string, hva: string, medVilje = false): Arsrammerad | null => {
     const rad = radFor.get(nr);
     if (!rad) {
@@ -82,8 +83,8 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
   for (const e of tabeller.eksplisitte) {
     const hva = `${e.tabell} (${e.program} ${e.trinn})`;
     const rad = passer(e.nr, e.program, e.trinn, hva, !!e.merknad);
-    if (rad && e.tabell === 'kobling_fellesfag' && (rad.fag === null || rad.kategori === 'Valgfrie programfag')) ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et fellesfag i vedlegg 1.` });
-    if (rad && e.tabell === 'kobling_programfag' && rad.kategori !== 'Valgfrie programfag') ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et valgfritt programfag i vedlegg 1.` });
+    if (rad && !e.merknad && e.tabell === 'kobling_fellesfag' && (rad.fag === null || rad.kategori === 'Valgfrie programfag')) ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et fellesfag i vedlegg 1.` });
+    if (rad && !e.merknad && e.tabell === 'kobling_programfag' && rad.kategori !== 'Valgfrie programfag') ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et valgfritt programfag i vedlegg 1.` });
     for (const k of e.fagkoder) {
       const fag = indeks.fag[k];
       if (!fag) {
@@ -105,7 +106,7 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
   }
   for (const r of tabeller.regler) {
     const rad = passer(r.nr, r.program, r.trinn, `Regelen ${r.id}`, !!r.merknad);
-    if (rad && (rad.fag !== null || rad.kategori !== 'Felles programfag')) ut.push({ alvor: 'feil', tekst: `Regelen ${r.id}: rad ${r.nr} er ikke felles programfag i vedlegg 1.` });
+    if (rad && !r.merknad && (rad.fag !== null || rad.kategori !== 'Felles programfag')) ut.push({ alvor: 'feil', tekst: `Regelen ${r.id}: rad ${r.nr} er ikke felles programfag i vedlegg 1.` });
     const treff = Object.keys(indeks.fag).filter((k) => {
       const fag = indeks.fag[k];
       return fag && koblingskandidater(k, fag, grepPar(fag, indeks.programomrader), { ...tabeller, eksplisitte: [], regler: [r] }, rader).length > 0;

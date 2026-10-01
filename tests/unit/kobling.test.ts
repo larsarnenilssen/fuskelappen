@@ -115,11 +115,14 @@ describe('avvik i koblingstabellene', () => {
   it('godtar en rad for et annet program eller trinn når koblingen har en merknad (eiers valg)', () => {
     const medVilje: Koblingstabeller = {
       ...tabeller,
-      eksplisitte: [{ tabell: 'kobling_fellesfag', nr: 2, program: 'HS', trinn: 'Vg2', fagkoder: ['NOR1262'], merknad: 'Eier: som ST' }],
+      eksplisitte: [
+        { tabell: 'kobling_fellesfag', nr: 2, program: 'HS', trinn: 'Vg2', fagkoder: ['NOR1262'], merknad: 'Eier: som ST' },
+        { tabell: 'kobling_programfag', nr: 2, program: 'ST', trinn: 'Vg2', fagkoder: ['SAM3072'], merknad: 'Eier: som fellesfaget' },
+      ],
       regler: [{ ...tabeller.regler[0]!, nr: 1, merknad: 'Eier: annen rad' }],
     };
     const tekster = finnAvvik(indeks, medVilje, rader).map((a) => a.tekst);
-    expect(tekster.filter((t) => /gjelder/.test(t))).toEqual([]);
+    expect(tekster.filter((t) => /gjelder|er ikke et/.test(t))).toEqual([]);
   });
 
   it('finner samme fagkode, program og trinn med ulike årsrammer', () => {

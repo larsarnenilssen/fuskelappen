@@ -630,6 +630,8 @@ verdier:
                                                        SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044, SAS3045,
                                                        SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056, SFS1032, SFS1033,
                                                        SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      # Kroppsøving vg3 på påbygging har raden for kroppsøving vg3 på studiespesialisering (eier 01.10.2026).
+      - { nr: 8, program: PB, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: som kroppsøving vg3 på ST" }
   kobling_programfag:
     kilde: { id: udir-grep }
     kontrollert: null
@@ -753,6 +755,10 @@ verdier:
       - { id: yfo-rm-vg2, prefikser: [YFO], program: RM, trinn: Vg2, fagtype: felles_programfag, nr: 1, merknad: "Eier 01.10.2026: opphenting av vg1 RM" }
       - { id: yfo-sr-vg2, prefikser: [YFO], program: SR, trinn: Vg2, fagtype: felles_programfag, nr: 29, merknad: "Eier 01.10.2026: opphenting av vg1 SR" }
       - { id: yfo-tp-vg2, prefikser: [YFO], program: TP, trinn: Vg2, fagtype: felles_programfag, nr: 19, merknad: "Eier 01.10.2026: opphenting av vg1 TP" }
+      # Fremmedspråk som valgfritt programfag (PSP) på studiespesialisering har raden for fellesfaget fremmedspråk
+      # på trinnet (eier 01.10.2026).
+      - { id: st-vg2-fremmedsprak, prefikser: [PSP], program: ST, trinn: Vg2, fagtype: valgfritt_programfag, nr: 102, merknad: "Eier 01.10.2026: som fremmedspråk vg2" }
+      - { id: st-vg3-fremmedsprak, prefikser: [PSP], program: ST, trinn: Vg3, fagtype: valgfritt_programfag, nr: 103, merknad: "Eier 01.10.2026: som fremmedspråk vg3" }
   kobling_yff:
     kilde: { id: udir-grep }
     kontrollert: null

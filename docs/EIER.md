@@ -246,8 +246,11 @@ Svar fra eier 01.10.2026 (K1–K4):
 - K4: Varianter av fellesfag har samme årsramme som det ordinære faget. Valgfrie programfag har raden for programfag på programmet og trinnet. Yrkesfaglig opphenting har årsrammen for felles programfag på vg1 i programmet som hentes opp.
 
 Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn er endret og må godkjennes på nytt (`/godkjent programnavn`). Fortsatt åpent:
-- [ ] **Valgfrie programfag på studiespesialisering** som vedlegget ikke nevner (f.eks. fremmedspråk som programfag (PSP), sosialkunnskap, statistikk, matematikk for økonomi, kristendomskunnskap): Studiespesialisering har ingen rad for felles programfag. Hvilken rad skal de ha?
-- [ ] **Kroppsøving vg3 på påbygging** (KRO1019): Vedlegget har ikke kroppsøving for påbygging. Hvilken rad?
+- [x] **Fremmedspråk som valgfritt programfag** (PSP) på studiespesialisering: eier 01.10.2026: som fremmedspråk vg2 og vg3 (496, rad 102 og 103).
+- [x] **Kroppsøving vg3 på påbygging** (KRO1019): eier 01.10.2026: som kroppsøving vg3 på studiespesialisering (635, rad 8).
+- [ ] **Andre valgfrie programfag på studiespesialisering** som vedlegget ikke nevner: sosialkunnskap, samfunnsgeografi, økonomistyring, økonomi og ledelse, samisk historie og samfunn, statistikk, matematikk for økonomi, matematikk X, geofag X, programmering og modellering X, teknologi og forskningslære X, kristendomskunnskap og katolsk kristendom. Hvilken rad skal de ha?
+
+Nå er 1197 fagkoder koblet.
 
 Skriv til Claude hva som stemmer, og hva som skal endres. Du kan også godkjenne tabellene med `/godkjent programnavn kobling_fellesfag kobling_programfag kobling_regler` i kontrollsaken, og praksisen med `/godkjent yff-arsramme`.
 
