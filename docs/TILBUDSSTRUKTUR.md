@@ -124,12 +124,12 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-o
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | flertydig |
-| Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | flertydig |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | flertydig |
-| Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | flertydig |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | 496* |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | 525* |
+| Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
+| Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
+| Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
 | Felles programfag fra eget programområde | 280 | KDA2007 Kunst og visuelle virkemidler 1 (140)<br>KDA2010 Design og arkitektur 1 (140) | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -148,13 +148,13 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-o
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | flertydig |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | flertydig |
-| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | flertydig |
-| Geografi | 56 | GEO1003 Geografi | flertydig |
-| Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | flertydig |
-| Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | flertydig |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
+| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
+| Geografi | 56 | GEO1003 Geografi | 554 |
+| Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
+| Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
 | Felles programfag fra eget programområde | 280 | KDA2008 Kunst og visuelle verkemiddel 2 (140)<br>KDA2011 Design og arkitektur 2 (140) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
@@ -174,10 +174,10 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-o
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Religion og etikk | 84 | REL1003 Religion og etikk | flertydig |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | flertydig |
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 280 | KDA2009 Kunst og visuelle virkemidler 3 (140)<br>KDA2012 Design og arkitektur 3 (140) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 280 | 2 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
@@ -208,12 +208,12 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-komm
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | flertydig |
-| Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | flertydig |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | flertydig |
-| Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | flertydig |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | 496* |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | 525* |
+| Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
+| Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
+| Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
 | Felles programfag fra eget programområde | 280 | MOK2008 Mediesamfunnet 1 (140)<br>MOK2012 Medieuttrykk 1 (140) | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -232,13 +232,13 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-komm
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | flertydig |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | flertydig |
-| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | flertydig |
-| Geografi | 56 | GEO1003 Geografi | flertydig |
-| Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | flertydig |
-| Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | flertydig |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
+| Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
+| Geografi | 56 | GEO1003 Geografi | 554 |
+| Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
+| Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
 | Felles programfag fra eget programområde | 280 | MOK2009 Mediesamfunnet 2 (140)<br>MOK2013 Medieuttrykk 2 (140) | 554 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
@@ -258,10 +258,10 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-komm
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Religion og etikk | 84 | REL1003 Religion og etikk | flertydig |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | flertydig |
-| Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | flertydig |
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 280 | MOK2010 Mediesamfunnet 3 (140)<br>MOK2014 Medieuttrykk 3 (140)<br>vurdering: MOK2011 Mediesamfunnet 3, praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 280 | 2 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
@@ -969,7 +969,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | AUT3005 Automatiseringssystemer (645)<br>AUT3006 Elenergisystemer (140)<br>AUT3007 Mekanisk arbeid (140)<br>vurdering: AUT2102 Automatisering, AUT3008 Automatiseringsfaget, AUT3103 Automatiseringsfaget, skriftlig | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1012,7 +1012,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | DAT3004 Installering og drift (420)<br>DAT3005 Reparasjon og vedlikehold (505)<br>vurdering: DAT3006 Dataelektronikerfaget, DAT3103 Dataelektronikerfaget, skriftlig, DEL2102 Datateknologi og elektronikk | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1024,7 +1024,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | ROM3007 Elektronikk og kommunikasjonsteknologi (140)<br>ROM3008 Romteknologi og satellitteknikk (140)<br>ROM3009 Telemetri (140)<br>ROM3010 Romfysikk (140)<br>ROM3011 Fjernanalyse og geografiske informasjonssystemer (140)<br>vurdering: ROM3012 Tverrfaglig eksamen romteknologi | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1111,7 +1111,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | MEL3006 Elenergi (350)<br>MEL3007 Automasjon (250)<br>MEL3008 Elektronisk kommunikasjon (185)<br>MEL3009 Organisasjon og ledelse (140)<br>vurdering: MEL3104 Maritim elektrikerfaget, skriftlig | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1152,7 +1152,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | AVI3012 Luftfartøysystemer (463)<br>AVI3015 Vedlikeholdsteknikk (322)<br>AVI3019 Flysikkerhet (140)<br>vurdering: 7 koder | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1168,7 +1168,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | FLY3014 Luftfartøysystemer (478)<br>FLY3019 Vedlikeholdsteknikk (307)<br>FLY3023 Flysikkerhet (140)<br>vurdering: 9 koder | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1333,8 +1333,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomste
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | EKD3001 Produksjon og konseptutvikling (660)<br>EKD3002 Bedriftskultur og markedsføring (265)<br>vurdering: EKD3003 Tverrfaglig eksamen eksponeringsdesign | – |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
+| Felles programfag fra eget programområde | 925 | EKD3001 Produksjon og konseptutvikling (660)<br>EKD3002 Bedriftskultur og markedsføring (265)<br>vurdering: EKD3003 Tverrfaglig eksamen eksponeringsdesign | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ###### Vg3 Interiør (FDINT3) · 981 timer ✓
@@ -1345,8 +1345,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomste
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | INT3004 Prosess og prosjektering (660)<br>INT3005 Kunde og kommunikasjon (265)<br>vurdering: INT3006 Tverrfaglig eksamen interiør | – |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
+| Felles programfag fra eget programområde | 925 | INT3004 Prosess og prosjektering (660)<br>INT3005 Kunde og kommunikasjon (265)<br>vurdering: INT3006 Tverrfaglig eksamen interiør | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ### Helse- og oppvekstfag (HS)
@@ -1501,7 +1501,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | FOT3005 Helse, funksjon og bevegelse (250)<br>FOT3006 Kommunikasjon og samhandling (250)<br>FOT3007 Yrkesliv i fotterapifaget (425)<br>vurdering: FOT3008 Tverrfaglig eksamen fotterapi | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1572,7 +1572,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | APO3005 Helseveiledning i apotek (371)<br>APO3006 Kommunikasjon og samhandling (139)<br>APO3007 Yrkesliv i apotekteknikkfaget (415)<br>vurdering: APO3008 Tverrfaglig eksamen, apotekteknikk | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1584,7 +1584,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | HSE3005 Helse og sykdom (371)<br>HSE3006 Kommunikasjon og samhandling (184)<br>HSE3007 Yrkesliv i helsesekretærfaget (370)<br>vurdering: HSE3008 Tverrfaglig eksamen, helsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1596,7 +1596,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | TAN3005 Smittevern, tannanatomi og fysiologi (250)<br>TAN3006 Kommunikasjon og samhandling (250)<br>TAN3007 Yrkesliv i tannhelsesekretærfaget (425)<br>vurdering: TAN3008 Tverrfaglig eksamen, tannhelsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1633,7 +1633,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | HUD3009 Helsefremmende arbeid (250)<br>HUD3010 Kommunikasjon og samhandling (250)<br>HUD3011 Yrkesliv i hudterapifaget (425)<br>vurdering: HUD3012 Tverrfaglig eksamen, hudterapifaget | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2075,7 +2075,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/prog
 | Matematikk | 140 | MAT1151 Matematikk 2P-Y<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep<br>vurdering: MAT1152 Matematikk 2P-Y, muntlig-praktisk | 496 |
 | Naturfag | 84 | NAT1018 Naturfag Vg3 påbygging til generell studiekompetanse<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep | 554* |
 | Historie | 140 | HIS1011 Historie Vg3 påbygging til generell studiekompetanse<br>koder fra påbygging (PBPBY3): programområdet er merket «påbygg» i Grep | 554 |
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 140 | NAB3007 Naturforvaltning (140)<br>vurdering: NAB3011 Naturforvaltning, muntlig | 607.5 |
 | Programfag fra eget programområde eller studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
@@ -2197,7 +2197,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/prog
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | LBR3017 Planteproduksjon (337)<br>LBR3018 Husdyrproduksjon (308)<br>LBR3019 Økonomi og gårdsdrift (280)<br>vurdering: LBR3020 Tverrfaglig eksamen landbruk | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2525,7 +2525,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-i
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | AMM3009 Feilsøking, reparasjon og vedlikehold (755)<br>AMM3010 Dokumentasjon og kontroll (170)<br>vurdering: AMK2102 Arbeidsmaskiner, AMM3011 Anleggsmaskinmekanikerfaget, AMM3103 Tverrfaglig eksamen, anleggsmaskinmekanikerfaget | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2766,7 +2766,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-i
 | Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | MAR2012 Skipstekniske tjenester (197)<br>MAR2013 Dokumentasjon og kvalitet (140)<br>velg 1 av: MAR2014 Dekk (140), MAR2015 Maskin (140)<br>vurdering: MAR2016 Tverrfaglig eksamen maritime fag, dekk, MAR2017 Tverrfaglig eksamen maritime fag, maskin | 635, 2 ukoblet |
+| Felles programfag fra eget programområde | 477 | MAR2012 Skipstekniske tjenester (197)<br>MAR2013 Dokumentasjon og kvalitet (140)<br>velg 1 av: MAR2014 Dekk (140), MAR2015 Maskin (140)<br>vurdering: MAR2016 Tverrfaglig eksamen maritime fag, dekk, MAR2017 Tverrfaglig eksamen maritime fag, maskin | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 

@@ -21,15 +21,17 @@ kilde: udir-grep
 verdier:
   programnavn:
     kilde: { id: udir-grep }
-    kontrollert: { dato: "2026-10-01" }
+    kontrollert: null
     grunnlag: avledet
     merknad: >-
       Programnavnene i vedlegg 1 koblet til utdanningsprogrammene i Grep (kode på to bokstaver). PB er påbygging
       til generell studiekompetanse (programområdet PBPBY3 i Grep). Vedlegget er skrevet for Kunnskapsløftet 2006.
       Kunst, design og arkitektur (KD) og Medier og kommunikasjon (ME) er egne studieforberedende program fra 2020.
-      Eier bekreftet tabellen 01.10.2026: «Stud.spes» gjelder bare studiespesialisering (ST).
+      Eier bekreftet tabellen 01.10.2026. Senere samme dag svarte eier at fellesfag på KD og ME har årsrammen
+      for «Stud.spes», og at de utgåtte radene «Design og hå» og «Serv/samf» gjelder programmene som har tatt over
+      (DT og FD, SR og IM). Tabellen er derfor endret og må godkjennes på nytt.
     verdi:
-      - { vedlegg: "Stud.spes", navn: "Studiespesialisering", grep: [ST] }
+      - { vedlegg: "Stud.spes", navn: "Studiespesialisering (og KD og ME for fellesfag)", grep: [ST, KD, ME] }
       - { vedlegg: "MDD", navn: "Musikk, dans og drama", grep: [MD] }
       - { vedlegg: "Idrett", navn: "Idrettsfag", grep: [ID] }
       - { vedlegg: "Kunst, design og arkitektur", navn: "Kunst, design og arkitektur", grep: [KD] }
@@ -48,8 +50,8 @@ verdier:
       - { vedlegg: "Frisør, blomster, interiør og eksponeringsdesign", navn: "Frisør, blomster, interiør og eksponeringsdesign", grep: [FD] }
       - { vedlegg: "Salg, service, reiseliv", navn: "Salg, service og reiseliv", grep: [SR] }
       - { vedlegg: "Informasjonsteknologi og medieproduksjon", navn: "Informasjonsteknologi og medieproduksjon", grep: [IM] }
-      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått)", grep: [] }
-      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått)", grep: [] }
+      - { vedlegg: "Design og hå", navn: "Design og håndverk (utgått, nå DT og FD)", grep: [DT, FD] }
+      - { vedlegg: "Serv/samf", navn: "Service og samferdsel (utgått, nå SR og IM)", grep: [SR, IM] }
   kobling_fellesfag:
     kilde: { id: udir-grep }
     kontrollert: null
@@ -58,8 +60,10 @@ verdier:
       Fellesfag kobles alltid eksplisitt per fagkode, utdanningsprogram og trinn, aldri med prefiksregler (eier).
       Med er hovedkodene for norsk, engelsk, matematikk, naturfag, samfunnskunnskap, historie, geografi, religion
       og etikk, kroppsøving og alle fremmedspråk (også samiske språk og tegnspråk som fremmedspråk), med vurderingskodene for samme opplæring (f.eks. muntlig).
-      Norsk og engelsk på yrkesfag: NOR1262 og ENG1009 gjelder både vg1 og vg2 (eier 29.09.2026). Varianter
-      (samisk plan, tegnspråk, kort botid, grunnleggende norsk, styrket opplæring) og samisk er ikke koblet ennå.
+      Norsk og engelsk på yrkesfag: NOR1262 og ENG1009 gjelder både vg1 og vg2 (eier 29.09.2026). Eier 01.10.2026:
+      fellesfag på KD og ME har samme årsramme som på ST, og varianter (samisk plan, tegnspråk, kort botid,
+      grunnleggende norsk, styrket opplæring, morsmål, kvensk og finsk) har samme årsramme som det ordinære faget.
+      Samisk som første- og andrespråk på ST, KD og ME har radene for samisk i vedlegget.
     verdi:
       - { nr: 6, program: ST, trinn: Vg1, fagkoder: [KRO1017] }
       - { nr: 7, program: ST, trinn: Vg2, fagkoder: [KRO1018] }
@@ -302,6 +306,330 @@ verdier:
       - { nr: 149, program: ID, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269] }
       - { nr: 150, program: MD, trinn: Vg2, fagkoder: [NOR1264, NOR1265] }
       - { nr: 151, program: MD, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269] }
+      # Lagt til etter eiers svar 01.10.2026 (K1 og K4 i spørsmålene): fellesfag på KD og ME som ST, og varianter
+      # (samisk, kvensk, finsk, tegnspråk, kort botid, grunnleggende norsk, styrket opplæring, morsmål) med samme
+      # årsramme som det ordinære faget. Laget med skript ut fra fagnavnene i Grep; kontrolleres av eier.
+      - { nr: 6, program: KD, trinn: Vg1, fagkoder: [KRO1017], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 6, program: ME, trinn: Vg1, fagkoder: [KRO1017], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 7, program: KD, trinn: Vg2, fagkoder: [KRO1018], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 7, program: ME, trinn: Vg2, fagkoder: [KRO1018], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 8, program: KD, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 8, program: ME, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 10, program: EL, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: alle fag har en årsramme; raden for faget på et annet trinn" }
+      - { nr: 10, program: FD, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: alle fag har en årsramme; raden for faget på et annet trinn" }
+      - { nr: 10, program: HS, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: alle fag har en årsramme; raden for faget på et annet trinn" }
+      - { nr: 10, program: NA, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: alle fag har en årsramme; raden for faget på et annet trinn" }
+      - { nr: 10, program: TP, trinn: Vg3, fagkoder: [KRO1019], merknad: "Eier 01.10.2026: alle fag har en årsramme; raden for faget på et annet trinn" }
+      - { nr: 33, program: ID, trinn: Vg3, fagkoder: [KRI1037, REL1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 34, program: MD, trinn: Vg3, fagkoder: [REL1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 35, program: KD, trinn: Vg3, fagkoder: [REL1003], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 35, program: KD, trinn: Vg3, fagkoder: [REL1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 35, program: ME, trinn: Vg3, fagkoder: [REL1003], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 35, program: ME, trinn: Vg3, fagkoder: [REL1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 35, program: ST, trinn: Vg3, fagkoder: [KRI1037, REL1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: BA, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: DT, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: EL, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: FD, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: HS, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: IM, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: NA, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: RM, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: SR, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 36, program: TP, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 37, program: ID, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 38, program: MD, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 39, program: KD, trinn: Vg2, fagkoder: [SAK1001], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 39, program: KD, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 39, program: ME, trinn: Vg2, fagkoder: [SAK1001], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 39, program: ME, trinn: Vg2, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 39, program: ST, trinn: Vg1, fagkoder: [SAK1002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 40, program: KD, trinn: Vg1, fagkoder: [NAT1007], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 40, program: KD, trinn: Vg1, fagkoder: [NAT1019], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 40, program: ME, trinn: Vg1, fagkoder: [NAT1007], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 40, program: ME, trinn: Vg1, fagkoder: [NAT1019], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 40, program: ST, trinn: Vg1, fagkoder: [NAT1019], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: BA, trinn: Vg1, fagkoder: [NAT1020], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: DT, trinn: Vg1, fagkoder: [NAT1024], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: EL, trinn: Vg1, fagkoder: [NAT1021], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: FD, trinn: Vg1, fagkoder: [NAT1022], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: HS, trinn: Vg1, fagkoder: [NAT1023], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: IM, trinn: Vg1, fagkoder: [NAT1025], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: NA, trinn: Vg1, fagkoder: [NAT1026], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: RM, trinn: Vg1, fagkoder: [NAT1027], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: SR, trinn: Vg1, fagkoder: [NAT1028], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 41, program: TP, trinn: Vg1, fagkoder: [NAT1029], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 42, program: PB, trinn: Vg3, fagkoder: [NAT1030], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 43, program: ID, trinn: Vg1, fagkoder: [NAT1019], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 44, program: MD, trinn: Vg1, fagkoder: [NAT1019], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 45, program: KD, trinn: Vg1, fagkoder: [FSP6138, FSP6141, FSP6148, FSP6151, FSP6154, FSP6158, FSP6161, FSP6164, FSP6168, FSP6171,
+                                                      FSP6174, FSP6178, FSP6181, FSP6184, FSP6188, FSP6191, FSP6194, FSP6198, FSP6201, FSP6204,
+                                                      FSP6208, FSP6211, FSP6214, FSP6218, FSP6221, FSP6224, FSP6228, FSP6231, FSP6234, FSP6238,
+                                                      FSP6241, FSP6244, FSP6248, FSP6251, FSP6258, FSP6261, FSP6268, FSP6271, FSP6278, FSP6281,
+                                                      FSP6288, FSP6291, FSP6295, FSP6298, FSP6301, FSP6308, FSP6311, FSP6318, FSP6321, FSP6328,
+                                                      FSP6331, FSP6338, FSP6341, FSP6348, FSP6351, FSP6358, FSP6361, FSP6368, FSP6371, FSP6374,
+                                                      FSP6378, FSP6381, FSP6388, FSP6391, FSP6398, FSP6401, FSP6408, FSP6411, FSP6418, FSP6421,
+                                                      FSP6428, FSP6431, FSP6438, FSP6441, FSP6448, FSP6451, FSP6458, FSP6461, FSP6468, FSP6471,
+                                                      FSP6478, FSP6481, FSP6488, FSP6491, FSP6494, FSP6498, FSP6501, FSP6508, FSP6511, FSP6518,
+                                                      FSP6521, FSP6528, FSP6531, FSP6538, FSP6541, FSP6548, FSP6551, FSP6558, FSP6561, FSP6568,
+                                                      FSP6571], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 45, program: ME, trinn: Vg1, fagkoder: [FSP6138, FSP6141, FSP6148, FSP6151, FSP6154, FSP6158, FSP6161, FSP6164, FSP6168, FSP6171,
+                                                      FSP6174, FSP6178, FSP6181, FSP6184, FSP6188, FSP6191, FSP6194, FSP6198, FSP6201, FSP6204,
+                                                      FSP6208, FSP6211, FSP6214, FSP6218, FSP6221, FSP6224, FSP6228, FSP6231, FSP6234, FSP6238,
+                                                      FSP6241, FSP6244, FSP6248, FSP6251, FSP6258, FSP6261, FSP6268, FSP6271, FSP6278, FSP6281,
+                                                      FSP6288, FSP6291, FSP6295, FSP6298, FSP6301, FSP6308, FSP6311, FSP6318, FSP6321, FSP6328,
+                                                      FSP6331, FSP6338, FSP6341, FSP6348, FSP6351, FSP6358, FSP6361, FSP6368, FSP6371, FSP6374,
+                                                      FSP6378, FSP6381, FSP6388, FSP6391, FSP6398, FSP6401, FSP6408, FSP6411, FSP6418, FSP6421,
+                                                      FSP6428, FSP6431, FSP6438, FSP6441, FSP6448, FSP6451, FSP6458, FSP6461, FSP6468, FSP6471,
+                                                      FSP6478, FSP6481, FSP6488, FSP6491, FSP6494, FSP6498, FSP6501, FSP6508, FSP6511, FSP6518,
+                                                      FSP6521, FSP6528, FSP6531, FSP6538, FSP6541, FSP6548, FSP6551, FSP6558, FSP6561, FSP6568,
+                                                      FSP6571], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 48, program: ID, trinn: Vg2, fagkoder: [HIS1012], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 49, program: MD, trinn: Vg2, fagkoder: [HIS1012], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 50, program: KD, trinn: Vg2, fagkoder: [HIS1009], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 50, program: KD, trinn: Vg2, fagkoder: [HIS1012], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 50, program: ME, trinn: Vg2, fagkoder: [HIS1009], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 50, program: ME, trinn: Vg2, fagkoder: [HIS1012], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 50, program: ST, trinn: Vg2, fagkoder: [HIS1012], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 51, program: ID, trinn: Vg2, fagkoder: [GEO1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 52, program: MD, trinn: Vg2, fagkoder: [GEO1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 53, program: KD, trinn: Vg2, fagkoder: [GEO1003], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 53, program: KD, trinn: Vg2, fagkoder: [GEO1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 53, program: ME, trinn: Vg2, fagkoder: [GEO1003], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 53, program: ME, trinn: Vg2, fagkoder: [GEO1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 53, program: ST, trinn: Vg1, fagkoder: [GEO1004], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 54, program: PB, trinn: Vg3, fagkoder: [HIS1014, HIS1015], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 55, program: ID, trinn: Vg3, fagkoder: [HIS1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 56, program: MD, trinn: Vg3, fagkoder: [HIS1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 57, program: KD, trinn: Vg3, fagkoder: [HIS1010], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 57, program: KD, trinn: Vg3, fagkoder: [HIS1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 57, program: ME, trinn: Vg3, fagkoder: [HIS1010], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 57, program: ME, trinn: Vg3, fagkoder: [HIS1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 57, program: ST, trinn: Vg3, fagkoder: [HIS1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: BA, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001, SAS2010,
+                                                      SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: DT, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: EL, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: FD, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: HS, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: IM, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: NA, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: RM, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: SR, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 64, program: TP, trinn: Vg1, fagkoder: [KEF1001, KEF1101, NOR1065, NOR1151, NOR1155, NOR1159, NOR1813, NOR1815, NOR1817, SAS2001,
+                                                      SAS2010, SAS2019, SAS3029, SAS3031, SAS3033, SAS4037, SAS4047, SAS4057, SFS1025, SFS1037], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: BA, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: DT, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: EL, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: FD, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: HS, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: IM, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: NA, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: RM, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: SR, trinn: Vg2, fagkoder: [NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160, NOR1274, NOR1275, NOR1285, NOR1418,
+                                                      NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003, SAS2011, SAS2012, SAS2020, SAS2021,
+                                                      SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058, SFS1026, SFS1027, SFS1035, SFS1036,
+                                                      SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 65, program: TP, trinn: Vg2, fagkoder: [KEF1002, KEF1003, KEF1102, KEF1103, NOR1066, NOR1067, NOR1076, NOR1152, NOR1156, NOR1160,
+                                                      NOR1274, NOR1275, NOR1285, NOR1418, NOR1419, NOR1814, NOR1816, NOR1818, SAS2002, SAS2003,
+                                                      SAS2011, SAS2012, SAS2020, SAS2021, SAS3035, SAS3037, SAS3039, SAS4038, SAS4048, SAS4058,
+                                                      SFS1026, SFS1027, SFS1035, SFS1036, SFS1044, SFS1045], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 66, program: KD, trinn: Vg1, fagkoder: [SFS1028, SFS1029, SFS1034, SFS1038, SFS1043, SFS1046, SFS1047], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 66, program: ME, trinn: Vg1, fagkoder: [SFS1028, SFS1029, SFS1034, SFS1038, SFS1043, SFS1046, SFS1047], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 66, program: ST, trinn: Vg1, fagkoder: [SFS1028, SFS1029, SFS1034, SFS1038, SFS1043, SFS1046, SFS1047], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 67, program: KD, trinn: Vg1, fagkoder: [SAS2004, SAS2005, SAS2013, SAS2014, SAS2022, SAS2023, SAS3030, SAS3032, SAS3034, SAS4000,
+                                                      SAS4031, SAS4041, SAS4051], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 67, program: ME, trinn: Vg1, fagkoder: [SAS2004, SAS2005, SAS2013, SAS2014, SAS2022, SAS2023, SAS3030, SAS3032, SAS3034, SAS4000,
+                                                      SAS4031, SAS4041, SAS4051], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 67, program: ST, trinn: Vg1, fagkoder: [SAS2004, SAS2005, SAS2013, SAS2014, SAS2022, SAS2023, SAS3030, SAS3032, SAS3034, SAS4000,
+                                                      SAS4031, SAS4041, SAS4051], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 68, program: KD, trinn: Vg1, fagkoder: [ENG1007, ENG1008], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 68, program: KD, trinn: Vg1, fagkoder: [ENG1011, ENG3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 68, program: KD, trinn: Vg2, fagkoder: [ENG3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 68, program: KD, trinn: Vg3, fagkoder: [ENG3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 68, program: ME, trinn: Vg1, fagkoder: [ENG1007, ENG1008], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 68, program: ME, trinn: Vg1, fagkoder: [ENG1011, ENG3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 68, program: ME, trinn: Vg2, fagkoder: [ENG3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 68, program: ME, trinn: Vg3, fagkoder: [ENG3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn; som ST" }
+      - { nr: 68, program: ST, trinn: Vg1, fagkoder: [ENG1011, ENG3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 68, program: ST, trinn: Vg2, fagkoder: [ENG3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 68, program: ST, trinn: Vg3, fagkoder: [ENG3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 69, program: BA, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: DT, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: EL, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: FD, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: HS, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: IM, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: NA, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: RM, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: SR, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 69, program: TP, trinn: Vg1, fagkoder: [ENG1013], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 71, program: KD, trinn: Vg1, fagkoder: [MAT1019, MAT1020, MAT1021, MAT1022], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 71, program: ME, trinn: Vg1, fagkoder: [MAT1019, MAT1020, MAT1021, MAT1022], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 75, program: ID, trinn: Vg1, fagkoder: [ENG1011, ENG3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 75, program: ID, trinn: Vg2, fagkoder: [ENG3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 75, program: ID, trinn: Vg3, fagkoder: [ENG3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 76, program: MD, trinn: Vg1, fagkoder: [ENG1011, ENG3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 76, program: MD, trinn: Vg2, fagkoder: [ENG3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 76, program: MD, trinn: Vg3, fagkoder: [ENG3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; raden for faget på et annet trinn" }
+      - { nr: 99, program: KD, trinn: Vg1, fagkoder: [NOR1260, NOR1261], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 99, program: KD, trinn: Vg1, fagkoder: [KEF1004, KEF1005, KEF1104, KEF1105, NOR1051, NOR1055, NOR1059, NOR1068, NOR1069, NOR1077,
+                                                      NOR1276, NOR1277, NOR1284, NOR1412, NOR1413, NOR1801, NOR1805, NOR1809, NOR3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 99, program: ME, trinn: Vg1, fagkoder: [NOR1260, NOR1261], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 99, program: ME, trinn: Vg1, fagkoder: [KEF1004, KEF1005, KEF1104, KEF1105, NOR1051, NOR1055, NOR1059, NOR1068, NOR1069, NOR1077,
+                                                      NOR1276, NOR1277, NOR1284, NOR1412, NOR1413, NOR1801, NOR1805, NOR1809, NOR3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 99, program: ST, trinn: Vg1, fagkoder: [KEF1004, KEF1005, KEF1104, KEF1105, NOR1051, NOR1055, NOR1059, NOR1068, NOR1069, NOR1077,
+                                                      NOR1276, NOR1277, NOR1284, NOR1412, NOR1413, NOR1801, NOR1805, NOR1809, NOR3001], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 100, program: ID, trinn: Vg1, fagkoder: [KEF1004, KEF1005, KEF1104, KEF1105, NOR1051, NOR1055, NOR1059, NOR1068, NOR1069, NOR1077,
+                                                       NOR1276, NOR1277, NOR1284, NOR1412, NOR1413, NOR1801, NOR1805, NOR1809, NOR3001, SAS2004,
+                                                       SAS2005, SAS2013, SAS2014, SAS2022, SAS2023, SAS3030, SAS3032, SAS3034, SAS4000, SAS4031,
+                                                       SAS4041, SAS4051, SFS1028, SFS1029, SFS1034, SFS1038, SFS1043, SFS1046, SFS1047], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 101, program: MD, trinn: Vg1, fagkoder: [KEF1004, KEF1005, KEF1104, KEF1105, NOR1051, NOR1055, NOR1059, NOR1068, NOR1069, NOR1077,
+                                                       NOR1276, NOR1277, NOR1284, NOR1412, NOR1413, NOR1801, NOR1805, NOR1809, NOR3001, SAS2004,
+                                                       SAS2005, SAS2013, SAS2014, SAS2022, SAS2023, SAS3030, SAS3032, SAS3034, SAS4000, SAS4031,
+                                                       SAS4041, SAS4051, SFS1028, SFS1029, SFS1034, SFS1038, SFS1043, SFS1046, SFS1047], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 102, program: KD, trinn: Vg2, fagkoder: [FSP6139, FSP6140, FSP6142, FSP6143, FSP6149, FSP6150, FSP6152, FSP6153, FSP6155, FSP6159,
+                                                       FSP6160, FSP6162, FSP6163, FSP6165, FSP6169, FSP6170, FSP6172, FSP6173, FSP6175, FSP6179,
+                                                       FSP6180, FSP6182, FSP6183, FSP6185, FSP6189, FSP6190, FSP6192, FSP6193, FSP6195, FSP6199,
+                                                       FSP6200, FSP6202, FSP6203, FSP6205, FSP6209, FSP6210, FSP6212, FSP6213, FSP6215, FSP6219,
+                                                       FSP6220, FSP6222, FSP6223, FSP6225, FSP6229, FSP6230, FSP6232, FSP6233, FSP6235, FSP6239,
+                                                       FSP6240, FSP6242, FSP6243, FSP6245, FSP6249, FSP6250, FSP6252, FSP6253, FSP6259, FSP6260,
+                                                       FSP6262, FSP6263, FSP6269, FSP6270, FSP6272, FSP6273, FSP6279, FSP6280, FSP6282, FSP6283,
+                                                       FSP6289, FSP6290, FSP6292, FSP6293, FSP6294, FSP6299, FSP6300, FSP6302, FSP6303, FSP6309,
+                                                       FSP6310, FSP6312, FSP6313, FSP6319, FSP6320, FSP6322, FSP6323, FSP6329, FSP6330, FSP6332,
+                                                       FSP6333, FSP6339, FSP6340, FSP6342, FSP6343, FSP6349, FSP6350, FSP6352, FSP6353, FSP6359,
+                                                       FSP6360, FSP6362, FSP6363, FSP6369, FSP6370, FSP6372, FSP6373, FSP6375, FSP6379, FSP6380,
+                                                       FSP6382, FSP6383, FSP6389, FSP6390, FSP6392, FSP6393, FSP6399, FSP6400, FSP6402, FSP6403,
+                                                       FSP6409, FSP6410, FSP6412, FSP6413, FSP6419, FSP6420, FSP6422, FSP6423, FSP6429, FSP6430,
+                                                       FSP6432, FSP6433, FSP6439, FSP6440, FSP6442, FSP6443, FSP6449, FSP6450, FSP6452, FSP6453,
+                                                       FSP6459, FSP6460, FSP6462, FSP6463, FSP6469, FSP6470, FSP6472, FSP6473, FSP6479, FSP6480,
+                                                       FSP6482, FSP6483, FSP6489, FSP6490, FSP6492, FSP6493, FSP6495, FSP6499, FSP6500, FSP6502,
+                                                       FSP6503, FSP6509, FSP6510, FSP6512, FSP6513, FSP6519, FSP6520, FSP6522, FSP6523, FSP6529,
+                                                       FSP6530, FSP6532, FSP6533, FSP6539, FSP6540, FSP6542, FSP6543, FSP6549, FSP6550, FSP6552,
+                                                       FSP6553, FSP6559, FSP6560, FSP6562, FSP6563, FSP6569, FSP6570, FSP6572, FSP6573, FSP6579,
+                                                       FSP6580, FSP6582, FSP6583, FSP6589, FSP6590, FSP6592, FSP6593, FSP6599, FSP6600, FSP6602,
+                                                       FSP6603, FSP6609, FSP6610, FSP6612, FSP6613, FSP6619, FSP6620, FSP6622, FSP6623, FSP6629,
+                                                       FSP6630, FSP6632, FSP6633], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 102, program: ME, trinn: Vg2, fagkoder: [FSP6139, FSP6140, FSP6142, FSP6143, FSP6149, FSP6150, FSP6152, FSP6153, FSP6155, FSP6159,
+                                                       FSP6160, FSP6162, FSP6163, FSP6165, FSP6169, FSP6170, FSP6172, FSP6173, FSP6175, FSP6179,
+                                                       FSP6180, FSP6182, FSP6183, FSP6185, FSP6189, FSP6190, FSP6192, FSP6193, FSP6195, FSP6199,
+                                                       FSP6200, FSP6202, FSP6203, FSP6205, FSP6209, FSP6210, FSP6212, FSP6213, FSP6215, FSP6219,
+                                                       FSP6220, FSP6222, FSP6223, FSP6225, FSP6229, FSP6230, FSP6232, FSP6233, FSP6235, FSP6239,
+                                                       FSP6240, FSP6242, FSP6243, FSP6245, FSP6249, FSP6250, FSP6252, FSP6253, FSP6259, FSP6260,
+                                                       FSP6262, FSP6263, FSP6269, FSP6270, FSP6272, FSP6273, FSP6279, FSP6280, FSP6282, FSP6283,
+                                                       FSP6289, FSP6290, FSP6292, FSP6293, FSP6294, FSP6299, FSP6300, FSP6302, FSP6303, FSP6309,
+                                                       FSP6310, FSP6312, FSP6313, FSP6319, FSP6320, FSP6322, FSP6323, FSP6329, FSP6330, FSP6332,
+                                                       FSP6333, FSP6339, FSP6340, FSP6342, FSP6343, FSP6349, FSP6350, FSP6352, FSP6353, FSP6359,
+                                                       FSP6360, FSP6362, FSP6363, FSP6369, FSP6370, FSP6372, FSP6373, FSP6375, FSP6379, FSP6380,
+                                                       FSP6382, FSP6383, FSP6389, FSP6390, FSP6392, FSP6393, FSP6399, FSP6400, FSP6402, FSP6403,
+                                                       FSP6409, FSP6410, FSP6412, FSP6413, FSP6419, FSP6420, FSP6422, FSP6423, FSP6429, FSP6430,
+                                                       FSP6432, FSP6433, FSP6439, FSP6440, FSP6442, FSP6443, FSP6449, FSP6450, FSP6452, FSP6453,
+                                                       FSP6459, FSP6460, FSP6462, FSP6463, FSP6469, FSP6470, FSP6472, FSP6473, FSP6479, FSP6480,
+                                                       FSP6482, FSP6483, FSP6489, FSP6490, FSP6492, FSP6493, FSP6495, FSP6499, FSP6500, FSP6502,
+                                                       FSP6503, FSP6509, FSP6510, FSP6512, FSP6513, FSP6519, FSP6520, FSP6522, FSP6523, FSP6529,
+                                                       FSP6530, FSP6532, FSP6533, FSP6539, FSP6540, FSP6542, FSP6543, FSP6549, FSP6550, FSP6552,
+                                                       FSP6553, FSP6559, FSP6560, FSP6562, FSP6563, FSP6569, FSP6570, FSP6572, FSP6573, FSP6579,
+                                                       FSP6580, FSP6582, FSP6583, FSP6589, FSP6590, FSP6592, FSP6593, FSP6599, FSP6600, FSP6602,
+                                                       FSP6603, FSP6609, FSP6610, FSP6612, FSP6613, FSP6619, FSP6620, FSP6622, FSP6623, FSP6629,
+                                                       FSP6630, FSP6632, FSP6633], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 103, program: KD, trinn: Vg3, fagkoder: [FSP6156, FSP6157, FSP6166, FSP6167, FSP6176, FSP6177, FSP6186, FSP6187, FSP6196, FSP6197,
+                                                       FSP6206, FSP6207, FSP6216, FSP6217, FSP6226, FSP6227, FSP6236, FSP6237, FSP6246, FSP6247,
+                                                       FSP6296, FSP6297, FSP6376, FSP6377, FSP6496, FSP6497], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 103, program: ME, trinn: Vg3, fagkoder: [FSP6156, FSP6157, FSP6166, FSP6167, FSP6176, FSP6177, FSP6186, FSP6187, FSP6196, FSP6197,
+                                                       FSP6206, FSP6207, FSP6216, FSP6217, FSP6226, FSP6227, FSP6236, FSP6237, FSP6246, FSP6247,
+                                                       FSP6296, FSP6297, FSP6376, FSP6377, FSP6496, FSP6497], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 111, program: KD, trinn: Vg2, fagkoder: [MAT1023, MAT1024], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 111, program: ME, trinn: Vg2, fagkoder: [MAT1023, MAT1024], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 141, program: KD, trinn: Vg2, fagkoder: [NOR1264, NOR1265], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 141, program: KD, trinn: Vg2, fagkoder: [KEF1006, KEF1007, KEF1106, KEF1107, NOR1052, NOR1056, NOR1060, NOR1070, NOR1071, NOR1078,
+                                                       NOR1278, NOR1279, NOR1286, NOR1414, NOR1416, NOR1802, NOR1806, NOR1810, NOR3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 141, program: ME, trinn: Vg2, fagkoder: [NOR1264, NOR1265], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 141, program: ME, trinn: Vg2, fagkoder: [KEF1006, KEF1007, KEF1106, KEF1107, NOR1052, NOR1056, NOR1060, NOR1070, NOR1071, NOR1078,
+                                                       NOR1278, NOR1279, NOR1286, NOR1414, NOR1416, NOR1802, NOR1806, NOR1810, NOR3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 141, program: ST, trinn: Vg2, fagkoder: [KEF1006, KEF1007, KEF1106, KEF1107, NOR1052, NOR1056, NOR1060, NOR1070, NOR1071, NOR1078,
+                                                       NOR1278, NOR1279, NOR1286, NOR1414, NOR1416, NOR1802, NOR1806, NOR1810, NOR3002], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 142, program: KD, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 142, program: KD, trinn: Vg3, fagkoder: [KEF1008, KEF1009, KEF1108, KEF1109, NOR1053, NOR1057, NOR1061, NOR1072, NOR1073, NOR1079,
+                                                       NOR1280, NOR1281, NOR1287, NOR1420, NOR1421, NOR1803, NOR1807, NOR1811, NOR3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 142, program: ME, trinn: Vg3, fagkoder: [NOR1267, NOR1268, NOR1269], merknad: "Eier 01.10.2026: KD og ME som ST" }
+      - { nr: 142, program: ME, trinn: Vg3, fagkoder: [KEF1008, KEF1009, KEF1108, KEF1109, NOR1053, NOR1057, NOR1061, NOR1072, NOR1073, NOR1079,
+                                                       NOR1280, NOR1281, NOR1287, NOR1420, NOR1421, NOR1803, NOR1807, NOR1811, NOR3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som ST" }
+      - { nr: 142, program: ST, trinn: Vg3, fagkoder: [KEF1008, KEF1009, KEF1108, KEF1109, NOR1053, NOR1057, NOR1061, NOR1072, NOR1073, NOR1079,
+                                                       NOR1280, NOR1281, NOR1287, NOR1420, NOR1421, NOR1803, NOR1807, NOR1811, NOR3003], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 143, program: KD, trinn: Vg2, fagkoder: [SFS1030, SFS1031, SFS1039, SFS1040, SFS1048, SFS1049], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 143, program: ME, trinn: Vg2, fagkoder: [SFS1030, SFS1031, SFS1039, SFS1040, SFS1048, SFS1049], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 143, program: ST, trinn: Vg2, fagkoder: [SFS1030, SFS1031, SFS1039, SFS1040, SFS1048, SFS1049], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 144, program: KD, trinn: Vg3, fagkoder: [SFS1032, SFS1033, SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 144, program: ME, trinn: Vg3, fagkoder: [SFS1032, SFS1033, SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 144, program: ST, trinn: Vg3, fagkoder: [SFS1032, SFS1033, SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: samisk som førstespråk, raden for samisk i vedlegget" }
+      - { nr: 145, program: KD, trinn: Vg2, fagkoder: [SAS2006, SAS2007, SAS2015, SAS2016, SAS2024, SAS2025, SAS3036, SAS3038, SAS3040, SAS4000,
+                                                       SAS4033, SAS4043, SAS4053], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 145, program: ME, trinn: Vg2, fagkoder: [SAS2006, SAS2007, SAS2015, SAS2016, SAS2024, SAS2025, SAS3036, SAS3038, SAS3040, SAS4000,
+                                                       SAS4033, SAS4043, SAS4053], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 145, program: ST, trinn: Vg2, fagkoder: [SAS2006, SAS2007, SAS2015, SAS2016, SAS2024, SAS2025, SAS3036, SAS3038, SAS3040, SAS4000,
+                                                       SAS4033, SAS4043, SAS4053], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 146, program: KD, trinn: Vg3, fagkoder: [SAS2008, SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044,
+                                                       SAS3045, SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 146, program: ME, trinn: Vg3, fagkoder: [SAS2008, SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044,
+                                                       SAS3045, SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 146, program: ST, trinn: Vg3, fagkoder: [SAS2008, SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044,
+                                                       SAS3045, SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056], merknad: "Eier 01.10.2026: samisk som andrespråk, raden for samisk i vedlegget" }
+      - { nr: 147, program: NA, trinn: Vg3, fagkoder: [NOR1054, NOR1058, NOR1062, NOR1804, NOR1808, NOR1812], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget; som påbygging" }
+      - { nr: 147, program: PB, trinn: Vg3, fagkoder: [KEF1010, KEF1011, KEF1110, KEF1111, NOR1054, NOR1058, NOR1062, NOR1074, NOR1075, NOR1080,
+                                                       NOR1282, NOR1283, NOR1288, NOR1422, NOR1423, NOR1804, NOR1808, NOR1812, SAS2028, SAS2029,
+                                                       SAS2030, SAS2031, SAS2032, SAS2033, SAS3047, SAS3048, SAS3049, SAS3050, SAS3051, SAS3052,
+                                                       SAS4039, SAS4040, SAS4049, SAS4050, SAS4059, SAS4060, SFS1052, SFS1053, SFS1054, SFS1055,
+                                                       SFS1056, SFS1059], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 148, program: ID, trinn: Vg2, fagkoder: [KEF1006, KEF1007, KEF1106, KEF1107, NOR1052, NOR1056, NOR1060, NOR1070, NOR1071, NOR1078,
+                                                       NOR1278, NOR1279, NOR1286, NOR1414, NOR1416, NOR1802, NOR1806, NOR1810, NOR3002, SAS2006,
+                                                       SAS2007, SAS2015, SAS2016, SAS2024, SAS2025, SAS3036, SAS3038, SAS3040, SAS4000, SAS4033,
+                                                       SAS4043, SAS4053, SFS1030, SFS1031, SFS1039, SFS1040, SFS1048, SFS1049], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 149, program: ID, trinn: Vg3, fagkoder: [KEF1008, KEF1009, KEF1108, KEF1109, NOR1053, NOR1057, NOR1061, NOR1072, NOR1073, NOR1079,
+                                                       NOR1280, NOR1281, NOR1287, NOR1420, NOR1421, NOR1803, NOR1807, NOR1811, NOR3003, SAS2008,
+                                                       SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044, SAS3045,
+                                                       SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056, SFS1032, SFS1033,
+                                                       SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 150, program: MD, trinn: Vg2, fagkoder: [KEF1006, KEF1007, KEF1106, KEF1107, NOR1052, NOR1056, NOR1060, NOR1070, NOR1071, NOR1078,
+                                                       NOR1278, NOR1279, NOR1286, NOR1414, NOR1416, NOR1802, NOR1806, NOR1810, NOR3002, SAS2006,
+                                                       SAS2007, SAS2015, SAS2016, SAS2024, SAS2025, SAS3036, SAS3038, SAS3040, SAS4000, SAS4033,
+                                                       SAS4043, SAS4053, SFS1030, SFS1031, SFS1039, SFS1040, SFS1048, SFS1049], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
+      - { nr: 151, program: MD, trinn: Vg3, fagkoder: [KEF1008, KEF1009, KEF1108, KEF1109, NOR1053, NOR1057, NOR1061, NOR1072, NOR1073, NOR1079,
+                                                       NOR1280, NOR1281, NOR1287, NOR1420, NOR1421, NOR1803, NOR1807, NOR1811, NOR3003, SAS2008,
+                                                       SAS2009, SAS2017, SAS2018, SAS2026, SAS2027, SAS3041, SAS3042, SAS3043, SAS3044, SAS3045,
+                                                       SAS3046, SAS4000, SAS4035, SAS4036, SAS4045, SAS4046, SAS4055, SAS4056, SFS1032, SFS1033,
+                                                       SFS1041, SFS1042, SFS1050, SFS1051], merknad: "Eier 01.10.2026: variant, samme årsramme som det ordinære faget" }
   kobling_programfag:
     kilde: { id: udir-grep }
     kontrollert: null
@@ -395,6 +723,36 @@ verdier:
       - { id: kd-vg2, prefikser: [KDA], program: KD, trinn: Vg2, fagtype: felles_programfag, nr: 96 }
       - { id: kd-vg3, prefikser: [KDA], program: KD, trinn: Vg3, fagtype: felles_programfag, nr: 97 }
       - { id: me-vg3, prefikser: [MOK], program: ME, trinn: Vg3, fagtype: felles_programfag, nr: 98 }
+      # Eier 01.10.2026: vg3 i frisør, blomster, interiør og eksponeringsdesign har raden for «Design og hå» (K2), og
+      # valgfrie programfag har raden for felles programfag på programmet og trinnet (K4). Studiespesialisering har
+      # ikke en slik rad; der står valgfrie programfag som vedlegget ikke nevner, fortsatt ukoblet.
+      - { id: fd-vg3, prefikser: [EKD, INT], program: FD, trinn: Vg3, fagtype: felles_programfag, nr: 18 }
+      - { id: id-vg1-valgfrie, prefikser: [IDR, KRI], program: ID, trinn: Vg1, fagtype: valgfritt_programfag, nr: 59 }
+      - { id: id-vg2-valgfrie, prefikser: [IDR, KRI], program: ID, trinn: Vg2, fagtype: valgfritt_programfag, nr: 92 }
+      - { id: id-vg3-valgfrie, prefikser: [IDR], program: ID, trinn: Vg3, fagtype: valgfritt_programfag, nr: 93 }
+      - { id: kd-vg1-valgfrie, prefikser: [KRI], program: KD, trinn: Vg1, fagtype: valgfritt_programfag, nr: 58 }
+      - { id: kd-vg2-valgfrie, prefikser: [KDA, KRI], program: KD, trinn: Vg2, fagtype: valgfritt_programfag, nr: 96 }
+      - { id: kd-vg3-valgfrie, prefikser: [KDA], program: KD, trinn: Vg3, fagtype: valgfritt_programfag, nr: 97 }
+      - { id: md-vg1-valgfrie, prefikser: [KRI, MDD, MUS], program: MD, trinn: Vg1, fagtype: valgfritt_programfag, nr: 32 }
+      - { id: md-vg2-valgfrie, prefikser: [DAN, DRA, KRI, MUS], program: MD, trinn: Vg2, fagtype: valgfritt_programfag, nr: 94 }
+      - { id: md-vg3-valgfrie, prefikser: [DAN, DRA, MUS], program: MD, trinn: Vg3, fagtype: valgfritt_programfag, nr: 95 }
+      - { id: me-vg1-valgfrie, prefikser: [KRI], program: ME, trinn: Vg1, fagtype: valgfritt_programfag, nr: 31 }
+      - { id: me-vg2-valgfrie, prefikser: [KRI, MOK], program: ME, trinn: Vg2, fagtype: valgfritt_programfag, nr: 63 }
+      - { id: me-vg3-valgfrie, prefikser: [MOK], program: ME, trinn: Vg3, fagtype: valgfritt_programfag, nr: 98 }
+      - { id: na-vg3-valgfrie, prefikser: [LBR, NAB], program: NA, trinn: Vg3, fagtype: valgfritt_programfag, nr: 26 }
+      - { id: tp-vg2-valgfrie, prefikser: [MAR], program: TP, trinn: Vg2, fagtype: valgfritt_programfag, nr: 20 }
+      # Yrkesfaglig opphenting på vg2 for elever fra studiespesialisering vg1 har årsrammen for felles programfag på
+      # vg1 i programmet som hentes opp (eier 01.10.2026, K4).
+      - { id: yfo-ba-vg2, prefikser: [YFO], program: BA, trinn: Vg2, fagtype: felles_programfag, nr: 2, merknad: "Eier 01.10.2026: opphenting av vg1 BA" }
+      - { id: yfo-dt-vg2, prefikser: [YFO], program: DT, trinn: Vg2, fagtype: felles_programfag, nr: 3, merknad: "Eier 01.10.2026: opphenting av vg1 DT" }
+      - { id: yfo-el-vg2, prefikser: [YFO], program: EL, trinn: Vg2, fagtype: felles_programfag, nr: 25, merknad: "Eier 01.10.2026: opphenting av vg1 EL" }
+      - { id: yfo-fd-vg2, prefikser: [YFO], program: FD, trinn: Vg2, fagtype: felles_programfag, nr: 4, merknad: "Eier 01.10.2026: opphenting av vg1 FD" }
+      - { id: yfo-hs-vg2, prefikser: [YFO], program: HS, trinn: Vg2, fagtype: felles_programfag, nr: 22, merknad: "Eier 01.10.2026: opphenting av vg1 HS" }
+      - { id: yfo-im-vg2, prefikser: [YFO], program: IM, trinn: Vg2, fagtype: felles_programfag, nr: 30, merknad: "Eier 01.10.2026: opphenting av vg1 IM" }
+      - { id: yfo-na-vg2, prefikser: [YFO], program: NA, trinn: Vg2, fagtype: felles_programfag, nr: 5, merknad: "Eier 01.10.2026: opphenting av vg1 NA" }
+      - { id: yfo-rm-vg2, prefikser: [YFO], program: RM, trinn: Vg2, fagtype: felles_programfag, nr: 1, merknad: "Eier 01.10.2026: opphenting av vg1 RM" }
+      - { id: yfo-sr-vg2, prefikser: [YFO], program: SR, trinn: Vg2, fagtype: felles_programfag, nr: 29, merknad: "Eier 01.10.2026: opphenting av vg1 SR" }
+      - { id: yfo-tp-vg2, prefikser: [YFO], program: TP, trinn: Vg2, fagtype: felles_programfag, nr: 19, merknad: "Eier 01.10.2026: opphenting av vg1 TP" }
   kobling_yff:
     kilde: { id: udir-grep }
     kontrollert: null

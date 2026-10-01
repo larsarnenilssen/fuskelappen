@@ -31,6 +31,8 @@ export interface Koblingsregel {
   fagtype: string;
   nr: number;
   unntak: string[];
+  /** Begrunnelse når raden gjelder et annet trinn eller program, f.eks. opphenting av vg1 på vg2 (eiers valg). */
+  merknad?: string;
 }
 
 export interface Programnavn {
@@ -64,7 +66,7 @@ export function lesKoblinger(hent: Hent): Koblingstabeller {
     tabell(t).map((r) => {
       if (typeof r.id !== 'string' || typeof r.nr !== 'number' || typeof r.program !== 'string' || typeof r.trinn !== 'string' || typeof r.fagtype !== 'string') ugyldig(t, r);
       if (r.fagtype === 'fellesfag') throw new Regelfeil(`Regelen ${r.id} gjelder fellesfag. Fellesfag kobles bare eksplisitt.`);
-      return { tabell: t, id: r.id, prefikser: tekster(r.prefikser), program: r.program, trinn: r.trinn, fagtype: r.fagtype, nr: r.nr, unntak: tekster(r.unntak) };
+      return { tabell: t, id: r.id, prefikser: tekster(r.prefikser), program: r.program, trinn: r.trinn, fagtype: r.fagtype, nr: r.nr, unntak: tekster(r.unntak), ...(typeof r.merknad === 'string' ? { merknad: r.merknad } : {}) };
     }),
   );
   const programnavn = tabell('programnavn').map((r) => {

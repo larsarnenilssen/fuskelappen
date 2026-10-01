@@ -20,6 +20,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Rettet
 
+- **Flere fag får årsramme fra fagkoden** i kalkulatorene (1047 fagkoder, før 748): fellesfag på kunst, design og arkitektur og medier og kommunikasjon, varianter av fellesfag (samisk, tegnspråk, grunnleggende norsk, styrket opplæring o.l.), valgfrie programfag på idrett, musikk, dans og drama, kunst, design og arkitektur, medier og kommunikasjon og naturbruk, og yrkesfaglig opphenting. Etter eiers svar.
 - Kalkulatorene mister ikke lenger et fagvalg eller et fag når to endringer kommer rett etter hverandre, for eksempel når du velger fag og skriver årstimer raskt.
 
 ### Endret (for eier)

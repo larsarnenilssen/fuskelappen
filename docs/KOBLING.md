@@ -9,11 +9,11 @@ Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplis
 | | Fagkoder |
 |---|---:|
 | Fagkoder i videregående i Grep | 1978 |
-| Koblet til én årsramme | 718 |
-| Koblet, men årsrammen avhenger av utdanningsprogram eller trinn (kalkulatoren spør) | 30 |
-| Ikke koblet (listen nederst) | 1230 |
+| Koblet til én årsramme | 930 |
+| Koblet, men årsrammen avhenger av utdanningsprogram eller trinn (kalkulatoren spør) | 117 |
+| Ikke koblet (listen nederst) | 931 |
 
-Av de koblede er 491 koblet eksplisitt og 257 med regel.
+Av de koblede er 733 koblet eksplisitt og 314 med regel.
 
 ## Avvik
 
@@ -25,7 +25,7 @@ Tabellen skal bekreftes av eier.
 
 | Vedlegg 1 | Utdanningsprogram | Kode i Grep |
 |---|---|---|
-| Stud.spes | Studiespesialisering | ST |
+| Stud.spes | Studiespesialisering (og KD og ME for fellesfag) | ST, KD, ME |
 | MDD | Musikk, dans og drama | MD |
 | Idrett | Idrettsfag | ID |
 | Kunst, design og arkitektur | Kunst, design og arkitektur | KD |
@@ -44,8 +44,8 @@ Tabellen skal bekreftes av eier.
 | Frisør, blomster, interiør og eksponeringsdesign | Frisør, blomster, interiør og eksponeringsdesign | FD |
 | Salg, service, reiseliv | Salg, service og reiseliv | SR |
 | Informasjonsteknologi og medieproduksjon | Informasjonsteknologi og medieproduksjon | IM |
-| Design og hå | Design og håndverk (utgått) | – |
-| Serv/samf | Service og samferdsel (utgått) | – |
+| Design og hå | Design og håndverk (utgått, nå DT og FD) | DT, FD |
+| Serv/samf | Service og samferdsel (utgått, nå SR og IM) | SR, IM |
 
 ## Utvalg til kontroll
 
@@ -53,30 +53,30 @@ Et fast utvalg koblinger (det samme fra uke til uke så lenge dataene er de samm
 
 | Fagkode | Fag | Program og trinn | Rad i vedlegg 1 | Årsramme (60/45) | Hvordan |
 |---|---|---|---|---|---|
+| KEF1007 | Kvensk som andrespråk, vg2 studieforberedende utdanningsprogram, muntlig | ID Vg2 | 148: Norsk – Idrett Vg2 | 466,5/622 * | eksplisitt |
+| KEF1007 | Kvensk som andrespråk, vg2 studieforberedende utdanningsprogram, muntlig | KD Vg2 | 141: Norsk – Stud.spes Vg2 | 466,5/622 * | eksplisitt |
+| KEF1007 | Kvensk som andrespråk, vg2 studieforberedende utdanningsprogram, muntlig | MD Vg2 | 150: Norsk – MDD Vg2 | 466,5/622 * | eksplisitt |
 | FSP6538 | Thai I, 1. år | ID Vg1 | 46: Fremmedspråk – Idrett Vg1 | 554/739 | eksplisitt |
+| FSP6538 | Thai I, 1. år | KD Vg1 | 45: Fremmedspråk – Stud.spes Vg1 | 554/739 | eksplisitt |
 | FSP6538 | Thai I, 1. år | MD Vg1 | 47: Fremmedspråk – MDD Vg1 | 554/739 | eksplisitt |
-| FSP6538 | Thai I, 1. år | ST Vg1 | 45: Fremmedspråk – Stud.spes Vg1 | 554/739 | eksplisitt |
+| SAS3051 | Samisk som andrespråk, samisk 3, lulesamisk, Vg3 påbygging til generell studiekompetanse | PB Vg3 | 147: Norsk – Yrkesf/På Vg3 | 466,5/622 * | eksplisitt |
 | MAT1142 | Matematikk 1T-Y IM, muntlig-praktisk | IM Vg1 | 72: Matematikk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
-| NOR1263 | Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | BA Vg1 | 64: Norsk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
-| NOR1263 | Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | BA Vg2 | 65: Norsk – Yrkesfag Vg2 | 525/700 * | eksplisitt |
-| NOR1263 | Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | DT Vg1 | 64: Norsk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
-| KRO1019 | Kroppsøving Vg3 | ST Vg3 | 8: Kroppsøv. – Stud.spes Vg3 | 635/847 | eksplisitt |
+| NOR1813 | Morsmål for språklige minoriteter, nivå 1 | BA Vg1 | 64: Norsk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
+| NOR1813 | Morsmål for språklige minoriteter, nivå 1 | DT Vg1 | 64: Norsk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
+| NOR1813 | Morsmål for språklige minoriteter, nivå 1 | EL Vg1 | 64: Norsk – Yrkesfag Vg1 | 525/700 * | eksplisitt |
+| KRO1019 | Kroppsøving Vg3 | EL Vg3 | 10: Kroppsøv. – Yrkesfag Vg2 | 635/847 | eksplisitt |
+| KRO1019 | Kroppsøving Vg3 | FD Vg3 | 10: Kroppsøv. – Yrkesfag Vg2 | 635/847 | eksplisitt |
+| KRO1019 | Kroppsøving Vg3 | HS Vg3 | 10: Kroppsøv. – Yrkesfag Vg2 | 635/847 | eksplisitt |
 | REL1003 | Religion og etikk | ID Vg3 | 33: Rel/etikk – Idrett Vg3 | 569/759 | eksplisitt |
+| REL1003 | Religion og etikk | KD Vg3 | 35: Rel/etikk – Stud.spes Vg3 | 569/759 | eksplisitt |
 | REL1003 | Religion og etikk | MD Vg3 | 34: Rel/etikk – MDD Vg3 | 569/759 | eksplisitt |
-| REL1003 | Religion og etikk | ST Vg3 | 35: Rel/etikk – Stud.spes Vg3 | 569/759 | eksplisitt |
-| NAT1010 | Naturfag vg1 FD | FD Vg1 | 41: Naturfag – Yrkesfag Vg1 | 554/739 * | eksplisitt |
+| SFS1027 | Samisk som førstespråk, samisk 1, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig | BA Vg2 | 65: Norsk – Yrkesfag Vg2 | 525/700 * | eksplisitt |
+| SFS1027 | Samisk som førstespråk, samisk 1, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig | DT Vg2 | 65: Norsk – Yrkesfag Vg2 | 525/700 * | eksplisitt |
+| SFS1027 | Samisk som førstespråk, samisk 1, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig | EL Vg2 | 65: Norsk – Yrkesfag Vg2 | 525/700 * | eksplisitt |
+| NAT1024 | Naturfag vg1 DT, samisk plan | DT Vg1 | 41: Naturfag – Yrkesfag Vg1 | 554/739 * | eksplisitt |
 | ENG1008 | Engelsk vg1 studieforberedende utdanningsprogram, muntlig | ID Vg1 | 75: Engelsk – Idrett Vg1 | 525/700 * | eksplisitt |
+| ENG1008 | Engelsk vg1 studieforberedende utdanningsprogram, muntlig | KD Vg1 | 68: Engelsk – Stud.spes Vg1 | 525/700 * | eksplisitt |
 | ENG1008 | Engelsk vg1 studieforberedende utdanningsprogram, muntlig | MD Vg1 | 76: Engelsk – MDD Vg1 | 525/700 * | eksplisitt |
-| ENG1008 | Engelsk vg1 studieforberedende utdanningsprogram, muntlig | ST Vg1 | 68: Engelsk – Stud.spes Vg1 | 525/700 * | eksplisitt |
-| GEO1003 | Geografi | ID Vg2 | 51: Geografi – Idrett Vg2 | 554/739 | eksplisitt |
-| GEO1003 | Geografi | MD Vg2 | 52: Geografi – MDD Vg2 | 554/739 | eksplisitt |
-| GEO1003 | Geografi | ST Vg1 | 53: Geografi – Stud.spes Vg1 | 554/739 | eksplisitt |
-| HIS1009 | Historie vg2 studieforberedende utdanningsprogram | ID Vg2 | 48: Historie – Idrett Vg2 | 554/739 | eksplisitt |
-| HIS1009 | Historie vg2 studieforberedende utdanningsprogram | MD Vg2 | 49: Historie – MDD Vg2 | 554/739 | eksplisitt |
-| HIS1009 | Historie vg2 studieforberedende utdanningsprogram | ST Vg2 | 50: Historie – Stud.spes Vg2 | 554/739 | eksplisitt |
-| SAK1001 | Samfunnskunnskap | BA Vg2 | 36: Samf.fag – Yrkesfag Vg2 | 554/739 * | eksplisitt |
-| SAK1001 | Samfunnskunnskap | DT Vg2 | 36: Samf.fag – Yrkesfag Vg2 | 554/739 * | eksplisitt |
-| SAK1001 | Samfunnskunnskap | EL Vg2 | 36: Samf.fag – Yrkesfag Vg2 | 554/739 * | eksplisitt |
 | REA3042 | Geofag 1 | ST Vg2 | 130: Geofag 1/2 – Stud.spes Vg2 | 496/661 | eksplisitt |
 | REA3042 | Geofag 1 | ST Vg3 | 131: Geofag 1/2 – Stud.spes Vg3 | 496/661 | eksplisitt |
 | SAM3054 | Sosiologi og sosialantropologi | ST Vg2 | 126: Pol/samf – Stud.spes Vg2 | 496/661 | eksplisitt |
@@ -87,18 +87,23 @@ Et fast utvalg koblinger (det samme fra uke til uke så lenge dataene er de samm
 | SPR3033 | Kommunikasjon og kultur 1 | ST Vg3 | 79: Kultur/komm – Stud.spes Vg3 | 525/700 | eksplisitt |
 | REA3046 | Kjemi 2 | ST Vg2 | 134: Kjemi – Stud.spes Vg2 | 496/661 | eksplisitt |
 | REA3046 | Kjemi 2 | ST Vg3 | 135: Kjemi – Stud.spes Vg3 | 496/661 | eksplisitt |
+| IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
+| IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
+| IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
+| KDA3009 | Arkitektur og samfunn | KD Vg2 | 96: Felles programfag – Kunst, design og arkitektur Vg2 | 525/700 | regel kd-vg2-valgfrie |
+| KDA3009 | Arkitektur og samfunn | KD Vg3 | 97: Felles programfag – Kunst, design og arkitektur Vg3 | 525/700 | regel kd-vg3-valgfrie |
+| IDR3022 | Lederutvikling 2 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
+| IDR3022 | Lederutvikling 2 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
+| IDR3022 | Lederutvikling 2 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
 | APO3005 | Helseveiledning i apotek | HS Vg3 | 24: Felles programfag – Helse/sos Vg3 | 607,5/810 | regel hs-vg3 |
 | BLK2004 | Karosseri- og lakkteknikk | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
 | BMF2004 | Produktutvikling og kvalitetssikring | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
 | UIM2004 | Produksjon og vedlikehold | DT Vg2 | 17: Felles programfag – Håndverk, design og produktutvikling Vg2 | 635/847 | regel dt-vg2 |
 | KPL2003 | Analyse, dokumentasjon og kvalitet | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
 | STH2001 | Design og produktutvikling | DT Vg2 | 17: Felles programfag – Håndverk, design og produktutvikling Vg2 | 635/847 | regel dt-vg2 |
-| AMB2005 | Ambulansemedisin | HS Vg2 | 23: Felles programfag – Helse/sos Vg2 | 607,5/810 | regel hs-vg2 |
-| HSE3005 | Helse og sykdom | HS Vg3 | 24: Felles programfag – Helse/sos Vg3 | 607,5/810 | regel hs-vg3 |
-| IDR2025 | Treningslære 1 vg1 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1 |
-| YFF4206 | Yrkesfaglig fordypning vg2 | BA Vg2 | 14: Felles programfag – Bygg og anl. Vg2 | 635/847 | regel yff-ba-vg2 |
-| YFF4206 | Yrkesfaglig fordypning vg2 | DT Vg2 | 17: Felles programfag – Håndverk, design og produktutvikling Vg2 | 635/847 | regel yff-dt-vg2 |
-| YFF4206 | Yrkesfaglig fordypning vg2 | EL Vg2 | 27: Felles programfag – Elektrofag Vg2 | 583,5/778 | regel yff-el-vg2 |
+| IDR3018 | Breddeidrett 3 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
+| IDR3018 | Breddeidrett 3 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
+| IDR3018 | Breddeidrett 3 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
 
 ## Program og trinn uten kobling
 
@@ -106,391 +111,19 @@ Fag med årstimer som brukes på et utdanningsprogram og trinn i Grep, men som i
 
 | Program | Trinn | Fagtype | Fagkoder | Eksempler |
 |---|---|---|---:|---|
-| Bygg- og anleggsteknikk (BA) | Vg1 | fellesfag | 18 | ENG1013, KEF1001, KEF1101, NAT1020 |
-| Bygg- og anleggsteknikk (BA) | Vg2 | felles programfag | 1 | YFO2002 |
-| Bygg- og anleggsteknikk (BA) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Håndverk, design og produktutvikling (DT) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1024 |
-| Håndverk, design og produktutvikling (DT) | Vg2 | felles programfag | 1 | YFO2002 |
-| Håndverk, design og produktutvikling (DT) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Elektro og datateknologi (EL) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1021 |
-| Elektro og datateknologi (EL) | Vg2 | felles programfag | 1 | YFO2002 |
-| Elektro og datateknologi (EL) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Elektro og datateknologi (EL) | Vg3 | fellesfag | 1 | KRO1019 |
-| Frisør, blomster, interiør og eksponeringsdesign (FD) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1022 |
-| Frisør, blomster, interiør og eksponeringsdesign (FD) | Vg2 | felles programfag | 1 | YFO2002 |
-| Frisør, blomster, interiør og eksponeringsdesign (FD) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Frisør, blomster, interiør og eksponeringsdesign (FD) | Vg3 | felles programfag | 4 | EKD3001, EKD3002, INT3004, INT3005 |
-| Frisør, blomster, interiør og eksponeringsdesign (FD) | Vg3 | fellesfag | 1 | KRO1019 |
-| Helse- og oppvekstfag (HS) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1023 |
-| Helse- og oppvekstfag (HS) | Vg2 | felles programfag | 1 | YFO2002 |
-| Helse- og oppvekstfag (HS) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Helse- og oppvekstfag (HS) | Vg3 | fellesfag | 1 | KRO1019 |
-| Idrettsfag (ID) | Vg1 | fellesfag | 26 | ENG1011, KEF1004, KEF1104, NAT1019 |
-| Idrettsfag (ID) | Vg1 | valgfritt programfag | 18 | IDR3013, IDR3014, IDR3015, IDR3016 |
-| Idrettsfag (ID) | Vg2 | fellesfag | 26 | GEO1004, HIS1012, KEF1006, KEF1106 |
-| Idrettsfag (ID) | Vg2 | valgfritt programfag | 18 | IDR3013, IDR3014, IDR3015, IDR3016 |
-| Idrettsfag (ID) | Vg3 | fellesfag | 26 | HIS1013, KEF1008, KEF1108, KRI1037 |
-| Idrettsfag (ID) | Vg3 | valgfritt programfag | 16 | IDR3013, IDR3014, IDR3015, IDR3016 |
-| Informasjonsteknologi og medieproduksjon (IM) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1025 |
-| Informasjonsteknologi og medieproduksjon (IM) | Vg2 | felles programfag | 1 | YFO2002 |
-| Informasjonsteknologi og medieproduksjon (IM) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Kunst, design og arkitektur (KD) | Vg1 | fellesfag | 133 | ENG1007, FSP6138, FSP6141, FSP6148 |
-| Kunst, design og arkitektur (KD) | Vg1 | valgfritt programfag | 1 | KRI1023 |
-| Kunst, design og arkitektur (KD) | Vg2 | fellesfag | 145 | FSP6139, FSP6142, FSP6149, FSP6152 |
-| Kunst, design og arkitektur (KD) | Vg2 | valgfritt programfag | 7 | KDA3007, KDA3008, KDA3009, KDA3010 |
-| Kunst, design og arkitektur (KD) | Vg3 | fellesfag | 42 | FSP6156, FSP6166, FSP6176, FSP6186 |
-| Kunst, design og arkitektur (KD) | Vg3 | valgfritt programfag | 6 | KDA3007, KDA3008, KDA3009, KDA3010 |
-| Musikk, dans og drama (MD) | Vg1 | fellesfag | 26 | ENG1011, KEF1004, KEF1104, NAT1019 |
-| Musikk, dans og drama (MD) | Vg1 | valgfritt programfag | 7 | KRI1023, MDD3006, MDD3007, MDD3008 |
-| Musikk, dans og drama (MD) | Vg2 | fellesfag | 26 | GEO1004, HIS1012, KEF1006, KEF1106 |
-| Musikk, dans og drama (MD) | Vg2 | valgfritt programfag | 8 | DAN3003, DAN3004, DRA3003, DRA3004 |
-| Musikk, dans og drama (MD) | Vg3 | fellesfag | 25 | HIS1013, KEF1008, KEF1108, NOR1053 |
-| Musikk, dans og drama (MD) | Vg3 | valgfritt programfag | 7 | DAN3003, DAN3004, DRA3003, DRA3004 |
-| Medier og kommunikasjon (ME) | Vg1 | fellesfag | 133 | ENG1007, FSP6138, FSP6141, FSP6148 |
-| Medier og kommunikasjon (ME) | Vg1 | valgfritt programfag | 1 | KRI1023 |
-| Medier og kommunikasjon (ME) | Vg2 | fellesfag | 145 | FSP6139, FSP6142, FSP6149, FSP6152 |
-| Medier og kommunikasjon (ME) | Vg2 | valgfritt programfag | 6 | KRI1024, MOK3007, MOK3008, MOK3009 |
-| Medier og kommunikasjon (ME) | Vg3 | fellesfag | 42 | FSP6156, FSP6166, FSP6176, FSP6186 |
-| Medier og kommunikasjon (ME) | Vg3 | valgfritt programfag | 6 | MOK3007, MOK3008, MOK3009, MOK3010 |
-| Naturbruk (NA) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1026 |
-| Naturbruk (NA) | Vg2 | felles programfag | 1 | YFO2002 |
-| Naturbruk (NA) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Naturbruk (NA) | Vg3 | fellesfag | 4 | KRO1019, NOR1054, NOR1058, NOR1062 |
-| Naturbruk (NA) | Vg3 | valgfritt programfag | 6 | LBR3012, LBR3013, LBR3014, NAB3008 |
-| Påbygging til generell studiekompetanse (PB) | Vg3 | fellesfag | 26 | KRO1019, HIS1014, HIS1015, KEF1010 |
-| Restaurant- og matfag (RM) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1027 |
-| Restaurant- og matfag (RM) | Vg2 | felles programfag | 1 | YFO2002 |
-| Restaurant- og matfag (RM) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Salg, service og reiseliv (SR) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1028 |
-| Salg, service og reiseliv (SR) | Vg2 | felles programfag | 1 | YFO2002 |
-| Salg, service og reiseliv (SR) | Vg2 | fellesfag | 21 | NOR1066, NOR1076, NOR1152, NOR1156 |
-| Studiespesialisering (ST) | Vg1 | fellesfag | 28 | ENG1011, GEO1004, KEF1004, KEF1104 |
+| Påbygging til generell studiekompetanse (PB) | Vg3 | fellesfag | 1 | KRO1019 |
 | Studiespesialisering (ST) | Vg1 | valgfritt programfag | 2 | KRI1023, KRI1028 |
-| Studiespesialisering (ST) | Vg2 | fellesfag | 24 | HIS1012, KEF1006, KEF1106, NOR1052 |
 | Studiespesialisering (ST) | Vg2 | valgfritt programfag | 164 | KRI1024, KRI1029, PSP5790, PSP5792 |
-| Studiespesialisering (ST) | Vg3 | fellesfag | 26 | HIS1013, KEF1008, KEF1108, KRI1037 |
 | Studiespesialisering (ST) | Vg3 | valgfritt programfag | 163 | SPR3022, PSP5790, PSP5792, PSP5794 |
-| Teknologi- og industrifag (TP) | Vg1 | fellesfag | 19 | ENG1013, KEF1001, KEF1101, NAT1029 |
-| Teknologi- og industrifag (TP) | Vg2 | felles programfag | 1 | YFO2002 |
-| Teknologi- og industrifag (TP) | Vg2 | fellesfag | 23 | KEF1002, KEF1102, NOR1066, NOR1076 |
-| Teknologi- og industrifag (TP) | Vg2 | valgfritt programfag | 2 | MAR2014, MAR2015 |
-| Teknologi- og industrifag (TP) | Vg3 | fellesfag | 1 | KRO1019 |
 
 ## Fagkoder som ikke er koblet
 
-### Fellesfag som ikke er koblet (242)
-
-Fellesfag kobles bare eksplisitt. Dette er varianter (samisk plan, tegnspråk, kort botid, grunnleggende norsk, styrket opplæring, morsmål), samisk, og fellesfag på program og trinn uten rad i vedlegg 1. Skal de ha samme årsramme som hovedfaget?
-
-<details><summary>Vis fagkodene</summary>
-
-- ENG1011 Engelsk for elever med tegnspråk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- ENG1013 Engelsk for elever med tegnspråk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- ENG3001 Engelsk, styrket opplæring, vg1 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- ENG3002 Engelsk, styrket opplæring, vg2 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- ENG3003 Engelsk, styrket opplæring, vg3 (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- GEO1004 Geografi, samisk plan (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg1)
-- HIS1012 Historie, samisk plan, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- HIS1013 Historie, samisk plan, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- HIS1015 Historie, Vg3, påbygging til generell studiekompetanse for elever med samisk, kvensk eller finsk som andrespråk (PB Vg3)
-- KEF1001 Kvensk som andrespråk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- KEF1002 Kvensk som andrespråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- KEF1003 Kvensk som andrespråk, muntlig for privatister, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- KEF1004 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- KEF1005 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- KEF1006 Kvensk som andrespråk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- KEF1007 Kvensk som andrespråk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- KEF1008 Kvensk som andrespråk, vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- KEF1009 Kvensk som andrespråk, vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- KEF1010 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- KEF1011 Kvensk som andrespråk, vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- KEF1101 Finsk som andrespråk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- KEF1102 Finsk som andrespråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- KEF1103 Finsk som andrespråk, muntlig for privatister, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- KEF1104 Finsk som andrespråk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- KEF1105 Finsk som andrespråk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- KEF1106 Finsk som andrespråk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- KEF1107 Finsk som andrespråk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- KEF1108 Finsk som andrespråk, vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- KEF1109 Finsk som andrespråk, vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- KEF1110 Finsk som andrespråk, vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- KEF1111 Finsk som andrespråk, vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- KRI1037 Religion og etikk for katolske skoler (ID Vg3, ST Vg3)
-- NAT1019 Naturfag vg1 studieforberedende utdanningsprogram, samisk plan (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NAT1020 Naturfag vg1 BA, samisk plan (BA Vg1)
-- NAT1021 Naturfag vg1 EL, samisk plan (EL Vg1)
-- NAT1022 Naturfag vg1 FD, samisk plan (FD Vg1)
-- NAT1023 Naturfag vg1 HS, samisk plan (HS Vg1)
-- NAT1024 Naturfag vg1 DT, samisk plan (DT Vg1)
-- NAT1025 Naturfag vg1 IM, samisk plan (IM Vg1)
-- NAT1026 Naturfag vg1 NA, samisk plan (NA Vg1)
-- NAT1027 Naturfag vg1 RM, samisk plan (RM Vg1)
-- NAT1028 Naturfag vg1 SR, samisk plan (SR Vg1)
-- NAT1029 Naturfag vg1 TP, samisk plan (TP Vg1)
-- NAT1030 Naturfag Vg3 påbygging til generell studiekompetanse, samisk plan (PB Vg3)
-- NOR1051 Grunnleggende norsk for språklige minoriteter, nivå 1, vg1 studieforberedende utdanningsprogram og vg2 yrkesfaglige utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1052 Grunnleggende norsk for språklige minoriteter, nivå 1, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1053 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1054 Grunnleggende norsk for språklige minoriteter, nivå 1, vg3 påbygging til generell studiekompetanse (NA Vg3, PB Vg3)
-- NOR1055 Grunnleggende norsk for språklige minoriteter, nivå 2, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1056 Grunnleggende norsk for språklige minoriteter, nivå 2, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1057 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1058 Grunnleggende norsk for språklige minoriteter, nivå 2, vg3 påbygging til generell studiekompetanse (NA Vg3, PB Vg3)
-- NOR1059 Grunnleggende norsk for språklige minoriteter, nivå 3, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1060 Grunnleggende norsk for språklige minoriteter, nivå 3, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1061 Grunnleggende norsk for språklige minoriteter, nivå 3, vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1062 Grunnleggende norsk for språklige minoriteter, nivå 3, vg3 påbygging til generell studiekompetanse (NA Vg3, PB Vg3)
-- NOR1065 Norsk tegnspråk, vg1 yrkesfaglige utdanningsprogram (DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1, NA Vg1 …)
-- NOR1066 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1067 Norsk tegnspråk, vg2 yrkesfaglige utdanningsprogram, muntlig samhandling (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1068 Norsk tegnspråk, vg1 studieforberedende utdanningsprogram, tekstskaping (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1069 Norsk tegnspråk, vg1 studieforberedende utdanningsprogram, muntlig samhandling (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1070 Norsk tegnspråk, vg2 studieforberedende utdanningsprogram, tekstskaping (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1071 Norsk tegnspråk, vg2 studieforberedende utdanningsprogram, muntlig samhandling (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1072 Norsk tegnspråk, vg3 studieforberedende utdanningsprogram, tekstskaping (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1073 Norsk tegnspråk, vg3 studieforberedende utdanningsprogram, muntlig samhandling (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1074 Norsk tegnspråk, vg3 påbygging til generell studiekompetanse, tekstskaping (PB Vg3)
-- NOR1075 Norsk tegnspråk, vg3 påbygging til generell studiekompetanse, muntlig samhandling (PB Vg3)
-- NOR1076 Norsk for elever med tegnspråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1077 Norsk for elever med tegnspråk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1078 Norsk for elever med tegnspråk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1079 Norsk for elever med tegnspråk, vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1080 Norsk for elever med tegnspråk, vg3 påbygging til generell studiekompetanse (PB Vg3)
-- NOR1151 Grunnleggende norsk for språklige minoriteter, nivå 1, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1152 Grunnleggende norsk for språklige minoriteter, nivå 1, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1155 Grunnleggende norsk for språklige minoriteter, nivå 2, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1156 Grunnleggende norsk for språklige minoriteter, nivå 2, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1159 Grunnleggende norsk for språklige minoriteter, nivå 3, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1160 Grunnleggende norsk for språklige minoriteter, nivå 3, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1274 Norsk for elever med samisk som førstespråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1275 Norsk for elever med samisk som førstespråk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1276 Norsk for elever med samisk som førstespråk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1277 Norsk for elever med samisk som førstespråk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1278 Norsk for elever med samisk som førstespråk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1279 Norsk for elever med samisk som førstespråk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1280 Norsk for elever med samisk som førstespråk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1281 Norsk for elever med samisk som førstespråk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1282 Norsk for elever med samisk som førstespråk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- NOR1283 Norsk for elever med samisk som førstespråk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- NOR1284 Norsk for elever med samisk/kvensk/finsk som andrespråk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1285 Norsk for elever med samisk/kvensk/finsk som andrespråk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1286 Norsk for elever med samisk/kvensk/finsk som andrespråk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1287 Norsk for elever med samisk/kvensk/finsk som andrespråk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1288 Norsk for elever med samisk/kvensk/finsk som andrespråk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- NOR1412 Norsk for elever i vgo med kort botid i Norge, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1413 Norsk for elever i vgo med kort botid i Norge, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1414 Norsk for elever i vgo med kort botid i Norge, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1416 Norsk for elever i vgo med kort botid i Norge, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1418 Norsk for elever i vgo med kort botid i Norge, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1419 Norsk for elever i vgo med kort botid i Norge, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1420 Norsk for elever i vgo med kort botid i Norge, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1421 Norsk for elever i vgo med kort botid i Norge, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1422 Norsk for elever i vgo med kort botid i Norge, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- NOR1423 Norsk for elever i vgo med kort botid i Norge, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- NOR1801 Morsmål for språklige minoriteter, nivå 1 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1802 Morsmål for språklige minoriteter, nivå 1 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1803 Morsmål for språklige minoriteter, nivå 1 (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1804 Morsmål for språklige minoriteter, nivå 1 (NA Vg3, PB Vg3)
-- NOR1805 Morsmål for språklige minoriteter, nivå 2 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1806 Morsmål for språklige minoriteter, nivå 2 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1807 Morsmål for språklige minoriteter, nivå 2 (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1808 Morsmål for språklige minoriteter, nivå 2 (NA Vg3, PB Vg3)
-- NOR1809 Morsmål for språklige minoriteter, nivå 3 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR1810 Morsmål for språklige minoriteter, nivå 3 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR1811 Morsmål for språklige minoriteter, nivå 3 (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- NOR1812 Morsmål for språklige minoriteter, nivå 3 (NA Vg3, PB Vg3)
-- NOR1813 Morsmål for språklige minoriteter, nivå 1 (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1814 Morsmål for språklige minoriteter, nivå 1 (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1815 Morsmål for språklige minoriteter, nivå 2 (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1816 Morsmål for språklige minoriteter, nivå 2 (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR1817 Morsmål for språklige minoriteter, nivå 3 (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- NOR1818 Morsmål for språklige minoriteter, nivå 3 (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- NOR3001 Norsk, styrket opplæring, vg1 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- NOR3002 Norsk, styrket opplæring, vg2 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- NOR3003 Norsk, styrket opplæring, vg3 (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- REL1004 Religion og etikk, samisk plan (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAK1002 Samfunnskunnskap, samisk plan (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, ID Vg2 …)
-- SAS2001 Samisk som andrespråk, samisk 2, nordsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS2002 Samisk som andrespråk, samisk 2, nordsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2003 Samisk som andrespråk, samisk 2, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2004 Samisk som andrespråk, samisk 2, nordsamisk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2005 Samisk som andrespråk, samisk 2, nordsamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2006 Samisk som andrespråk, samisk 2, nordsamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2007 Samisk som andrespråk, samisk 2, nordsamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2008 Samisk som andrespråk, samisk 2, nordsamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2009 Samisk som andrespråk, samisk 2, nordsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2010 Samisk som andrespråk, samisk 2, sørsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS2011 Samisk som andrespråk, samisk 2, sørsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2012 Samisk som andrespråk, samisk 2, sørsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2013 Samisk som andrespråk, samisk 2, sørsamisk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2014 Samisk som andrespråk, samisk 2, sørsamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2015 Samisk som andrespråk, samisk 2, sørsamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2016 Samisk som andrespråk, samisk 2, sørsamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2017 Samisk som andrespråk, samisk 2, sørsamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2018 Samisk som andrespråk, samisk 2, sørsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2019 Samisk som andrespråk, samisk 2, lulesamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS2020 Samisk som andrespråk, samisk 2, lulesamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2021 Samisk som andrespråk, samisk 2, lulesamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS2022 Samisk som andrespråk, samisk 2, lulesamisk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2023 Samisk som andrespråk, samisk 2, lulesamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS2024 Samisk som andrespråk, samisk 2, lulesamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2025 Samisk som andrespråk, samisk 2, lulesamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS2026 Samisk som andrespråk, samisk 2, lulesamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2027 Samisk som andrespråk, samisk 2, lulesamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS2028 Samisk som andrespråk, samisk 2, nordsamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SAS2029 Samisk som andrespråk, samisk 2, nordsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS2030 Samisk som andrespråk, samisk 2, sørsamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SAS2031 Samisk som andrespråk, samisk 2, sørsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS2032 Samisk som andrespråk, samisk 2, lulesamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SAS2033 Samisk som andrespråk, samisk 2, lulesamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS3029 Samisk som andrespråk, samisk 3, nordsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS3030 Samisk som andrespråk, samisk 3, nordsamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS3031 Samisk som andrespråk, samisk 3, sørsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS3032 Samisk som andrespråk, samisk 3, sørsamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS3033 Samisk som andrespråk, samisk 3, lulesamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS3034 Samisk som andrespråk, samisk 3, lulesamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS3035 Samisk som andrespråk, samisk 3, nordsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS3036 Samisk som andrespråk, samisk 3, nordsamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS3037 Samisk som andrespråk, samisk 3, sørsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS3038 Samisk som andrespråk, samisk 3, sørsamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS3039 Samisk som andrespråk, samisk 3, lulesamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS3040 Samisk som andrespråk, samisk 3, lulesamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS3041 Samisk som andrespråk, samisk 3, nordsamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3042 Samisk som andrespråk, samisk 3, nordsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3043 Samisk som andrespråk, samisk 3, sørsamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3044 Samisk som andrespråk, samisk 3, sørsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3045 Samisk som andrespråk, samisk 3, lulesamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3046 Samisk som andrespråk, samisk 3, lulesamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS3047 Samisk som andrespråk, samisk 3, nordsamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS3048 Samisk som andrespråk, samisk 3, nordsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS3049 Samisk som andrespråk, samisk 3, sørsamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS3050 Samisk som andrespråk, samisk 3, sørsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS3051 Samisk som andrespråk, samisk 3, lulesamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS3052 Samisk som andrespråk, samisk 3, lulesamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS4000 Samisk som andrespråk, samisk 4, styrket opplæring (ID Vg1, ID Vg2, ID Vg3, KD Vg1, KD Vg2, KD Vg3 …)
-- SAS4031 Samisk som andrespråk, samisk 4, nordsamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS4033 Samisk som andrespråk, samisk 4, nordsamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS4035 Samisk som andrespråk, samisk 4, nordsamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4036 Samisk som andrespråk, samisk 4, nordsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4037 Samisk som andrespråk, samisk 4, nordsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS4038 Samisk som andrespråk, samisk 4, nordsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS4039 Samisk som andrespråk, samisk 4, nordsamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS4040 Samisk som andrespråk, samisk 4, nordsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS4041 Samisk som andrespråk, samisk 4, sørsamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS4043 Samisk som andrespråk, samisk 4, sørsamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS4045 Samisk som andrespråk, samisk 4, sørsamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4046 Samisk som andrespråk, samisk 4, sørsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4047 Samisk som andrespråk, samisk 4, sørsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS4048 Samisk som andrespråk, samisk 4, sørsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS4049 Samisk som andrespråk, samisk 4, sørsamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS4050 Samisk som andrespråk, samisk 4, sørsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SAS4051 Samisk som andrespråk, samisk 4, lulesamisk, vg1 studieforberedende utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SAS4053 Samisk som andrespråk, samisk 4, lulesamisk, vg2 studieforberedende utdanningsprogram (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SAS4055 Samisk som andrespråk, samisk 4, lulesamisk, Vg3 studieforberedende utdanningsprogram (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4056 Samisk som andrespråk, samisk 4, lulesamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SAS4057 Samisk som andrespråk, samisk 4, lulesamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SAS4058 Samisk som andrespråk, samisk 4, lulesamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SAS4059 Samisk som andrespråk, samisk 4, lulesamisk, Vg3 påbygging til generell studiekompetanse (PB Vg3)
-- SAS4060 Samisk som andrespråk, samisk 4, lulesamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SFS1025 Samisk som førstespråk, samisk 1, nordsamisk, vg1 yrkesfaglige utdanningsprogram (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SFS1026 Samisk som førstespråk, samisk 1, nordsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1027 Samisk som førstespråk, samisk 1, nordsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1028 Samisk som førstespråk, samisk 1, nordsamisk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1029 Samisk som førstespråk, samisk 1, nordsamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1030 Samisk som førstespråk, samisk 1, nordsamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1031 Samisk som førstespråk, samisk 1, nordsamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1032 Samisk som førstespråk, samisk 1, nordsamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1033 Samisk som førstespråk, samisk 1, nordsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1034 Samisk som førstespråk, samisk 1, sørsamisk, vg1 yrkesfaglige utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1035 Samisk som førstespråk, samisk 1, sørsamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1036 Samisk som førstespråk, samisk 1, sørsamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1037 Samisk som førstespråk, samisk 1, sørsamisk, vg1 studieforberedende utdanningsprogram, skriftlig (BA Vg1, DT Vg1, EL Vg1, FD Vg1, HS Vg1, IM Vg1 …)
-- SFS1038 Samisk som førstespråk, samisk 1, sørsamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1039 Samisk som førstespråk, samisk 1, sørsamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1040 Samisk som førstespråk, samisk 1, sørsamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1041 Samisk som førstespråk, samisk 1, sørsamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1042 Samisk som førstespråk, samisk 1, sørsamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1043 Samisk som førstespråk, samisk 1, lulesamisk, vg1 yrkesfaglige utdanningsprogram (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1044 Samisk som førstespråk, samisk 1, lulesamisk, vg2 yrkesfaglige utdanningsprogram (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1045 Samisk som førstespråk, samisk 1, lulesamisk, vg2 yrkesfaglige utdanningsprogram, muntlig (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
-- SFS1046 Samisk som førstespråk, samisk 1, lulesamisk, vg1 studieforberedende utdanningsprogram, skriftlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1047 Samisk som førstespråk, samisk 1, lulesamisk, vg1 studieforberedende utdanningsprogram, muntlig (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- SFS1048 Samisk som førstespråk, samisk 1, lulesamisk, vg2 studieforberedende utdanningsprogram, skriftlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1049 Samisk som førstespråk, samisk 1, lulesamisk, vg2 studieforberedende utdanningsprogram, muntlig (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- SFS1050 Samisk som førstespråk, samisk 1, lulesamisk, Vg3 studieforberedende utdanningsprogram, skriftlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1051 Samisk som førstespråk, samisk 1, lulesamisk, Vg3 studieforberedende utdanningsprogram, muntlig (ID Vg3, KD Vg3, MD Vg3, ME Vg3, ST Vg3)
-- SFS1052 Samisk som førstespråk, samisk 1, nordsamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SFS1053 Samisk som førstespråk, samisk 1, nordsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SFS1054 Samisk som førstespråk, samisk 1, sørsamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SFS1055 Samisk som førstespråk, samisk 1, sørsamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-- SFS1056 Samisk som førstespråk, samisk 1, lulesamisk, Vg3 påbygging til generell studiekompetanse, skriftlig (PB Vg3)
-- SFS1059 Samisk som førstespråk, samisk 1, lulesamisk, Vg3 påbygging til generell studiekompetanse, muntlig (PB Vg3)
-
-</details>
-
-### Programfag uten rad i vedlegg 1 (219)
+### Programfag uten rad i vedlegg 1 (162)
 
 Programfag med årstimer der ingen regel eller eksplisitt kobling passer: valgfrie programfag vedlegget ikke nevner, og program og trinn uten rad for felles programfag.
 
 <details><summary>Vis fagkodene</summary>
 
-- DAN3003 Scenisk dans fordypning 1 (MD Vg2, MD Vg3)
-- DAN3004 Scenisk dans fordypning 2 (MD Vg2, MD Vg3)
-- DRA3003 Teaterproduksjon fordypning 1 (MD Vg2, MD Vg3)
-- DRA3004 Teaterproduksjon fordypning 2 (MD Vg2, MD Vg3)
-- EKD3001 Produksjon og konseptutvikling (FD Vg3)
-- EKD3002 Bedriftskultur og markedsføring (FD Vg3)
-- IDR3013 Toppidrett 1 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3014 Toppidrett 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3015 Toppidrett 3 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3016 Breddeidrett 1 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3017 Breddeidrett 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3018 Breddeidrett 3 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3019 Friluftsliv 1 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3020 Friluftsliv 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3021 Lederutvikling 1 (ID Vg1, ID Vg2, ID Vg3)
-- IDR3022 Lederutvikling 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF04 Konkurranse- og toppidrett 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF05 Konkurranse- og toppidrett 3 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF06 Konkurranse- og toppidrett 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF07 Konkurranse- og toppidrett 3 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF08 Toppidrett og prestasjonsutvikling 2 (ID Vg1, ID Vg2, ID Vg3)
-- IDRPF09 Toppidrett og prestasjonsutvikling 3 (ID Vg1, ID Vg2, ID Vg3)
-- INT3004 Prosess og prosjektering (FD Vg3)
-- INT3005 Kunde og kommunikasjon (FD Vg3)
-- KDA3007 Kunst og skapende arbeid (KD Vg2, KD Vg3)
-- KDA3008 Design og bærekraft (KD Vg2, KD Vg3)
-- KDA3009 Arkitektur og samfunn (KD Vg2, KD Vg3)
-- KDA3010 Foto og grafikk 1 (KD Vg2, KD Vg3)
-- KDA3011 Foto og grafikk 2 (KD Vg2, KD Vg3)
-- KDA3012 Samisk visuell kultur (KD Vg2, KD Vg3)
-- KRI1023 Kristendomskunnskap 3, vg1 (ID Vg1, KD Vg1, MD Vg1, ME Vg1, ST Vg1)
-- KRI1024 Kristendomskunnskap 3, vg2 (ID Vg2, KD Vg2, MD Vg2, ME Vg2, ST Vg2)
-- KRI1028 Katolsk kristendom, vg1 (ID Vg1, ST Vg1)
-- KRI1029 Katolsk kristendom, vg2 (ID Vg2, ST Vg2)
-- LBR3012 Maskiner og teknologi i landbruk (NA Vg3)
-- LBR3013 Økonomi og driftsledelse (NA Vg3)
-- LBR3014 Økologisk landbruk (NA Vg3)
-- MAR2014 Dekk (TP Vg2)
-- MAR2015 Maskin (TP Vg2)
-- MDD3006 Bevegelse (MD Vg1)
-- MDD3007 Lytting (MD Vg1)
-- MDD3008 Danseteknikker (MD Vg1)
-- MDD3009 Musikk (MD Vg1)
-- MDD3010 Teaterensemble (MD Vg1)
-- MOK3007 Tekst (ME Vg2, ME Vg3)
-- MOK3008 Bilde (ME Vg2, ME Vg3)
-- MOK3009 Lyddesign (ME Vg2, ME Vg3)
-- MOK3010 Grafisk design (ME Vg2, ME Vg3)
-- MOK3011 Medieutvikling (ME Vg2, ME Vg3)
-- MOK3012 Mediespesialisering (ME Vg3)
-- MUS3006 Musikk fordypning 1 (MD Vg2, MD Vg3)
-- MUS3008 Musikk fordypning 2 (MD Vg2, MD Vg3)
-- MUS3010 Samisk musikk og scene (MD Vg1, MD Vg2, MD Vg3)
-- NAB3008 Bruk og vern av natur (NA Vg3)
-- NAB3009 Feltarbeid i naturbruk (NA Vg3)
-- NAB3010 Naturbasert næringsutvikling (NA Vg3)
 - PSP5790 Finsk nivå I (ST Vg2, ST Vg3)
 - PSP5792 Finsk nivå II (ST Vg2, ST Vg3)
 - PSP5794 Finsk nivå III (ST Vg2, ST Vg3)
@@ -653,7 +286,6 @@ Programfag med årstimer der ingen regel eller eksplisitt kobling passer: valgfr
 - SAM3067 Samisk historie og samfunn 2 (ST Vg2, ST Vg3)
 - SAM3068 Økonomistyring (ST Vg2, ST Vg3)
 - SAM3070 Økonomi og ledelse (ST Vg2, ST Vg3)
-- YFO2002 Yrkesfaglig opphenting (BA Vg2, DT Vg2, EL Vg2, FD Vg2, HS Vg2, IM Vg2 …)
 
 </details>
 

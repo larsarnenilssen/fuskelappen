@@ -66,12 +66,14 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
   const ut: Avvik[] = [];
   const radFor = new Map(rader.map((r) => [r.nr, r]));
   const program = new Map(tabeller.programnavn.map((p) => [p.vedlegg, p.grep]));
-  const passer = (nr: number, prog: string, trinn: string, hva: string): Arsrammerad | null => {
+  // Med merknad (eiers valg, f.eks. opphenting av vg1 på vg2) kan raden gjelde et annet program eller trinn.
+  const passer = (nr: number, prog: string, trinn: string, hva: string, medVilje = false): Arsrammerad | null => {
     const rad = radFor.get(nr);
     if (!rad) {
       ut.push({ alvor: 'feil', tekst: `${hva}: rad ${nr} finnes ikke i vedlegg 1.` });
       return null;
     }
+    if (medVilje) return rad;
     if (!(program.get(rad.program) ?? []).includes(prog)) ut.push({ alvor: 'feil', tekst: `${hva}: rad ${nr} gjelder «${rad.program}», som ikke er koblet til ${prog} i tabellen over programnavn.` });
     if (rad.trinn !== trinn) ut.push({ alvor: 'feil', tekst: `${hva}: rad ${nr} gjelder ${rad.trinn}, ikke ${trinn}.` });
     return rad;
@@ -79,7 +81,7 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
   const ikkeIGrep = new Map<string, string[]>();
   for (const e of tabeller.eksplisitte) {
     const hva = `${e.tabell} (${e.program} ${e.trinn})`;
-    const rad = passer(e.nr, e.program, e.trinn, hva);
+    const rad = passer(e.nr, e.program, e.trinn, hva, !!e.merknad);
     if (rad && e.tabell === 'kobling_fellesfag' && (rad.fag === null || rad.kategori === 'Valgfrie programfag')) ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et fellesfag i vedlegg 1.` });
     if (rad && e.tabell === 'kobling_programfag' && rad.kategori !== 'Valgfrie programfag') ut.push({ alvor: 'feil', tekst: `${hva}: rad ${e.nr} er ikke et valgfritt programfag i vedlegg 1.` });
     for (const k of e.fagkoder) {
@@ -102,7 +104,7 @@ export function finnAvvik(indeks: Pick<Fagindeks, 'fag' | 'programomrader'>, tab
     ut.push({ alvor: 'advarsel', tekst: `${fag} er koblet for ${program.join(', ')} ${trinn} (rad ${nr}), men brukes ikke der i Grep.` });
   }
   for (const r of tabeller.regler) {
-    const rad = passer(r.nr, r.program, r.trinn, `Regelen ${r.id}`);
+    const rad = passer(r.nr, r.program, r.trinn, `Regelen ${r.id}`, !!r.merknad);
     if (rad && (rad.fag !== null || rad.kategori !== 'Felles programfag')) ut.push({ alvor: 'feil', tekst: `Regelen ${r.id}: rad ${r.nr} er ikke felles programfag i vedlegg 1.` });
     const treff = Object.keys(indeks.fag).filter((k) => {
       const fag = indeks.fag[k];

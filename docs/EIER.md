@@ -239,6 +239,16 @@ Fase 2 har tre deler: fag og læreplaner fra Grep, koblingen fra fagkode til år
 - [ ] Prøv SAM3045 (Markedsføring og ledelse 1). Da skal du velge trinn, fordi vedlegget har ulik årsramme for vg2 og vg3.
 - [ ] Endre årstimene og velg årsramme selv. Begge deler skal merkes «Overstyrt», med en knapp tilbake til tallene fra Udir og koblingen.
 
+Svar fra eier 01.10.2026 (K1–K4):
+- K1: Fellesfag på KD og ME har årsrammen for «Stud.spes».
+- K2: De utgåtte radene gjelder programmene som har tatt over: «Design og hå» for DT og FD, «Serv/samf» for SR og IM.
+- K3: Utvalget ser riktig ut.
+- K4: Varianter av fellesfag har samme årsramme som det ordinære faget. Valgfrie programfag har raden for programfag på programmet og trinnet. Yrkesfaglig opphenting har årsrammen for felles programfag på vg1 i programmet som hentes opp.
+
+Oppfølging: Koblet er nå 1047 fagkoder (før 748). Tabellen over programnavn er endret og må godkjennes på nytt (`/godkjent programnavn`). Fortsatt åpent:
+- [ ] **Valgfrie programfag på studiespesialisering** som vedlegget ikke nevner (f.eks. fremmedspråk som programfag (PSP), sosialkunnskap, statistikk, matematikk for økonomi, kristendomskunnskap): Studiespesialisering har ingen rad for felles programfag. Hvilken rad skal de ha?
+- [ ] **Kroppsøving vg3 på påbygging** (KRO1019): Vedlegget har ikke kroppsøving for påbygging. Hvilken rad?
+
 Skriv til Claude hva som stemmer, og hva som skal endres. Du kan også godkjenne tabellene med `/godkjent programnavn kobling_fellesfag kobling_programfag kobling_regler` i kontrollsaken, og praksisen med `/godkjent yff-arsramme`.
 
 ## 14. Sjekkliste for tilbudsstrukturen
