@@ -51,6 +51,8 @@ export const programomradeSkjema = z
     bygger: z.array(z.string()),
     /** Årstimer for elevene på trinnet (feltet aarstimer i Grep), eller null. */
     timer: z.number().positive().nullable(),
+    /** Merkelapper i Grep, f.eks. «paabygg» (påbygg til generell studiekompetanse) på studieforberedende vg3 i naturbruk. */
+    merkelapper: z.array(z.string()),
   })
   .strict();
 

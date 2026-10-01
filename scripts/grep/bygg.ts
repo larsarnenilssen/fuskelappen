@@ -139,6 +139,7 @@ function programomrade(p: Grepelement): Programomrade | null {
       ),
     ].sort(),
     timer: Number.isFinite(Number(p.aarstimer)) && Number(p.aarstimer) > 0 ? Number(p.aarstimer) : null,
+    merkelapper: [...new Set(liste(p.merkelapper).filter(erPublisert).map((m) => String(m.kode)))].sort(),
   };
 }
 

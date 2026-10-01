@@ -5,7 +5,7 @@ import { byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgrupp
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
 
 const fag = (navn: string, type: Fag['type'], po: string[], timer: number | null, lp: string | null = null): Fag => ({ navn: { nb: navn, nn: navn }, type, trinn: [], po, timer, lp, km: [], elev: null, privatist: null });
-const po = (navn: string, program: string, trinn: Programomrade['trinn'], bygger: string[] = [], sted: Programomrade['sted'] = 'skole'): Programomrade => ({ navn: { nb: navn, nn: navn }, program, trinn, sted, bygger, timer: null });
+const po = (navn: string, program: string, trinn: Programomrade['trinn'], bygger: string[] = [], sted: Programomrade['sted'] = 'skole'): Programomrade => ({ navn: { nb: navn, nn: navn }, program, trinn, sted, bygger, timer: null, merkelapper: [] });
 
 const indeks: Fagindeks = {
   kilde: 'udir-grep',

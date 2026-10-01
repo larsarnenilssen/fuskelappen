@@ -55,6 +55,7 @@ function raadata(): Raadata {
         opplaeringssted: [{ uri: 'http://psi.udir.no/kl06/opplaeringssted_skole' }],
         // Kryssløp fra vg1 studiespesialisering. Programområder som ikke er med (HSHSF1), tas ikke med.
         'bygger-paa-programomraade': [ref('HSHSF1----'), ref('STUSP1----'), ref('GAMMEL----', UTG)],
+        merkelapper: [ref('paabygg'), ref('utgaatt', UTG)],
       },
       { kode: 'PBPBY3----', status: PUB, tittel: tittel('Vg3 påbygging'), aarstrinn: { kode: 'vg3' }, opplaeringssted: [] },
     ],
@@ -126,7 +127,7 @@ describe('fagindeksen', () => {
 
   it('kjenner utdanningsprogrammene, med påbygging (PB) fra programområdet', () => {
     expect(Object.keys(indeks.utdanningsprogram)).toEqual(['HS', 'PB', 'ST']);
-    expect(indeks.programomrader['HSHEA2----']).toEqual({ navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeiderfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole', bygger: ['STUSP1----'], timer: 982 });
+    expect(indeks.programomrader['HSHEA2----']).toEqual({ navn: { nb: 'Helsearbeiderfag', nn: 'Helsearbeiderfag' }, program: 'HS', trinn: 'Vg2', sted: 'skole', bygger: ['STUSP1----'], timer: 982, merkelapper: ['paabygg'] });
     expect(indeks.programomrader['PBPBY3----']).toMatchObject({ program: 'PB', trinn: 'Vg3', sted: 'ukjent' });
   });
 });
