@@ -18,12 +18,14 @@ export interface Fagfilter {
   timer: string;
   /** Fagklasser som vises i tillegg til de vanlige fagene, kommaseparert, f.eks. «variant,bedrift» (avgjørelse 031). */
   vis: string;
+  /** «nei» skjuler de vanlige fagene, så bare klassene i `vis` vises, f.eks. bare variantene (eier 01.10.2026). */
+  vanlige: string;
 }
 
-export const tomtFilter: Fagfilter = { tekst: '', program: '', trinn: '', type: '', vurdering: '', eksamensform: '', timer: '', vis: '' };
+export const tomtFilter: Fagfilter = { tekst: '', program: '', trinn: '', type: '', vurdering: '', eksamensform: '', timer: '', vis: '', vanlige: '' };
 
 /** Feltene i filteret i den rekkefølgen de står i adressen (#/fag?q=…&program=…). */
-export const filterfelt = { tekst: 'q', program: 'program', trinn: 'trinn', type: 'type', vurdering: 'vurdering', eksamensform: 'eksamen', timer: 'timer', vis: 'vis' } as const satisfies Record<keyof Fagfilter, string>;
+export const filterfelt = { tekst: 'q', program: 'program', trinn: 'trinn', type: 'type', vurdering: 'vurdering', eksamensform: 'eksamen', timer: 'timer', vis: 'vis', vanlige: 'vanlige' } as const satisfies Record<keyof Fagfilter, string>;
 
 export function filterFraAdresse(sporring: URLSearchParams): Fagfilter {
   const f = { ...tomtFilter };
@@ -93,13 +95,15 @@ export interface Fagtreff {
 /** Klassene brukeren har slått på i filteret. */
 export function visteKlasser(f: Fagfilter): Set<Fagklasse> {
   const vis = new Set(f.vis.split(',').filter(Boolean));
-  return new Set(['vanlig', ...SKJULTE.filter((k) => vis.has(k))]);
+  return new Set<Fagklasse>([...(f.vanlige === 'nei' ? [] : ['vanlig' as const]), ...SKJULTE.filter((k) => vis.has(k))]);
 }
 
 export interface Fagsok {
   treff: Fagtreff[];
   /** Fag som passer filteret, men som er skjult fordi klassen ikke er slått på. */
-  skjult: Record<Exclude<Fagklasse, 'vanlig'>, number>;
+  skjult: Record<Fagklasse, number>;
+  /** Alle fag som passer filteret, per klasse, enten de vises eller ikke. */
+  antall: Record<Fagklasse, number>;
 }
 
 /**
@@ -107,18 +111,36 @@ export interface Fagsok {
  * viser alltid faget (avgjørelse 031). Uten klasser vises alle fagene.
  */
 export function sokFag(indeks: Fagindeks, f: Fagfilter, klasser?: ReadonlyMap<string, Fagklasse>): Fagsok {
-  const skjult = { variant: 0, bedrift: 0, andre: 0 };
+  const skjult = { vanlig: 0, variant: 0, bedrift: 0, andre: 0 };
+  const antall = { vanlig: 0, variant: 0, bedrift: 0, andre: 0 };
   const alle = filtrerFag(indeks, f);
-  if (!klasser) return { treff: alle, skjult };
+  if (!klasser) return { treff: alle, skjult, antall: { ...antall, vanlig: alle.length } };
   const vis = visteKlasser(f);
   const sok = normaliser(f.tekst);
   const treff = alle.filter(({ kode }) => {
     const k = klasser.get(kode) ?? 'andre';
+    antall[k]++;
     if (vis.has(k) || sok === kode.toLowerCase()) return true;
-    if (k !== 'vanlig') skjult[k]++;
+    skjult[k]++;
     return false;
   });
-  return { treff, skjult };
+  return { treff, skjult, antall };
+}
+
+/**
+ * Tilbudene (programområdene) til fag som har samme navn som et annet fag i treffene, f.eks. fire fag som heter
+ * «Helsefremmende arbeid». Navnene skiller dem i listen (eier 01.10.2026). Andre fag får ingen oppføring.
+ */
+export function tilbudForLikeNavn(treff: readonly Fagtreff[], indeks: Fagindeks, malform: 'nb' | 'nn'): Map<string, string[]> {
+  const antall = new Map<string, number>();
+  for (const { fag } of treff) antall.set(fag.navn[malform], (antall.get(fag.navn[malform]) ?? 0) + 1);
+  const ut = new Map<string, string[]>();
+  for (const { kode, fag } of treff) {
+    if ((antall.get(fag.navn[malform]) ?? 0) < 2) continue;
+    const navn = [...new Set(fag.po.map((p) => indeks.programomrader[p]?.navn[malform]).filter((n): n is string => !!n))];
+    if (navn.length > 0) ut.set(kode, navn);
+  }
+  return ut;
 }
 
 /** Fagene som passer filteret, sortert etter hvor godt de passer søket og så etter fagkode. */

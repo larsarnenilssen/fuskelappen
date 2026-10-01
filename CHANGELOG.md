@@ -4,6 +4,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.14.1] – 2026-10-01
+
+### Endret
+
+- **Fagsøket:**
+  - «Vis også» er lukket til du åpner den, og viser hvor mange skjulte fag som passer søket.
+  - Du kan ta bort «Vanlige fag», så søket bare viser f.eks. variantene.
+  - Har flere fag samme navn, står tilbudet etter fagkoden, f.eks. «HEA2005 · Helsearbeiderfag».
+
 ## [0.14.0] – 2026-10-01
 
 ### Lagt til
@@ -423,7 +432,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.14.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.14.1...HEAD
+[0.14.1]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.14.1
 [0.14.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.14.0
 [0.13.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.13.0
 [0.12.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.12.0
