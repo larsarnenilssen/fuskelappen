@@ -10,6 +10,8 @@ Står en knapp ikke der veiledningen sier, eller GitHub spør om noe som ikke st
 
 ## 1. Godkjenne og slå sammen et endringsforslag (PR)
 
+Fra 01.10.2026 fletter Claude PR-ene på dine vegne når CI er grønn og det ikke er konflikter. Du får lenken og en kort oppsummering. Vil du se på en PR før den flettes, så si fra. Stegene under gjelder når du fletter selv, og for endringsforslagene fra kildesjekken (punkt 6).
+
 Når Claude er ferdig med en fase, får du en lenke til et endringsforslag («pull request»).
 
 1. Åpne lenken.
@@ -28,7 +30,7 @@ Endringene er nå en del av hovedversjonen (`main`), men de er ikke publisert i 
 
 En ny versjon publiseres ved at den får et versjonsmerke (en «tag»), f.eks. `v0.1.0`.
 
-Du setter versjonsmerket selv. Claude har ikke lov til å opprette versjonsmerker fra sine økter, men forteller deg når en ny versjon er klar og hvilket nummer den skal ha (det står også øverst i `CHANGELOG.md`).
+Fra 01.10.2026 setter Claude versjonsmerket når dere er enige om at en versjon skal publiseres, og hvilket nummer den får (det står også øverst i `CHANGELOG.md`). Claude følger med til publiseringen er ferdig og sier fra. Stegene under gjelder når du setter versjonsmerket selv.
 
 1. Åpne repoet og trykk **Releases** i høyre kolonne (eller gå til `…/protokollen/releases`).
 2. Trykk **Draft a new release**.
