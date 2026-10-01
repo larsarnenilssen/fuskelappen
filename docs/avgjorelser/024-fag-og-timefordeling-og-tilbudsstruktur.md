@@ -9,6 +9,11 @@
 - **Modellen** (`src/modules/fag/tilbud/modell.ts`) er ren logikk. Den har ingen lister over program eller fag skrevet inn for hånd. For hvert programområde i Grep:
   - Tabellen finnes ut fra program og trinn (og tittelen for påbygging og studieforberedende vg3 i naturbruk). Lærefag i bedrift har ingen tabell.
   - Linjene i den ordinære kolonnen blir deler. Fellesfag og felles programfag får fagkodene fra Grep. Står det flere fellesfagkoder med samme timetall, velger eleven én (1P/1T, fremmedspråk). Felles programfag har eleven alle.
+  - Grep knytter av og til flere felles programfag til programområdet enn eleven har på trinnet. Da brukes summen i rundskrivet, i denne rekkefølgen (eier 01.10.2026: hvert programfag skal vises med navn og timer):
+    1. Står fagene i flere læreplaner, og passer nøyaktig én kombinasjon av læreplaner med summen, brukes den. Eksempel: landbruk har én læreplan for opplæring i skole og én for bedrift.
+    2. Mangler det timer, og har programområdet valgfrie programfag i samme læreplan med likt timetall, velger eleven blant dem. Eksempel: dekk eller maskin på maritime fag.
+    3. Fag som går over flere trinn i Grep, fyller resten. Eksempel: aktivitetslære 1–3 på idrettsfag. Grep sier ikke hvilket trinn hvert fag hører til.
+  - Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men står sammen med faget i samme læreplan.
   - Yrkesfaglig fordypning er en obligatorisk plass. Den anbefalte koden er YFF-koden med samme timetall som linjen (eier 01.10.2026).
   - Fordypning og valgfrie programfag er plasser med timer og antall fag (timer ÷ 140), og en liste over fag som kan velges.
   - Fellesfag for særskilte grupper (navn med samisk, tegnspråk, kort botid, grunnleggende norsk, minoritet, styrket, morsmål, katolske skoler) er alternativer. Det samme gjelder fellesfag i Grep som ikke står i den ordinære kolonnen. Unntak: samisk og tegnspråk som fremmedspråk er vanlige valg.

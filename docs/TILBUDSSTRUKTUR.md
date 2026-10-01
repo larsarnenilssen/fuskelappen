@@ -2,13 +2,13 @@
 
 Generert av `npm run tilbud:rapport` fra Grep (hentet 2026-10-01) og Udir-1-2026 «Fag- og timefordeling og tilbudsstruktur» for skoleåret 2026–2027 (hentet 2026-10-01). Ikke rediger for hånd. Se avgjørelse 024.
 
-**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.
+**Slik leser du den.** Hvert programområde (tilbud) viser linjene i den ordinære kolonnen i rundskrivet med timer (60 minutter) og fagkodene fra Grep. Felles programfag står hvert for seg med timetallet i Grep i parentes. «Velg én» betyr at eleven velger ett av fagene (f.eks. 1P eller 1T). Vurderingskoder (muntlig, tverrfaglig eksamen) har ikke timer, men hører til samme læreplan. Yrkesfaglig fordypning er obligatorisk; den anbefalte koden er den med samme timetall som trinnet. Plasser for fordypning og valgfrie programfag viser antall fag og hvor mange fag som kan velges. Alternativer er fag for særskilte grupper (samisk, tegnspråk, grunnleggende norsk, styrket opplæring …) som kan erstatte et fag, men ikke er det vanlige tilbudet. Tilpassede ordninger er de andre kolonnene i rundskrivet. Årsrammen er fra koblingen til vedlegg 1 i SFS 2213 (* = stjernemerket), se [KOBLING.md](KOBLING.md). ✓ betyr at summen stemmer med «Totalt omfang» i rundskrivet.
 
 ## Sammendrag
 
 - 16 utdanningsprogram, 323 programområder: 134 i skole og 189 i bedrift. 32 er varianter for særskilte skoler.
 - 133 av 134 programområder i skole har tabell i rundskrivet. Summen stemmer for 133 av dem.
-- 14 ulike avvik i 47 programområder (se under).
+- 7 ulike avvik i 36 programområder (se under).
 
 ### Summer i rundskrivet som ikke stemmer
 
@@ -36,14 +36,7 @@ Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst u
 
 - Grep kobler ingen fellesfag til programområdet. (34: ELDRF2, KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS …)
 - Felles programfag fra eget programområde: fant ingen felles programfag i Grep. (16: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
-- Felles programfag fra eget programområde: rundskrivet har 336 timer, fagene i Grep har til sammen 812. (3: MDDAN2, MDDRA2, MDMUS2)
-- Felles programfag fra eget programområde: rundskrivet har 476 timer, fagene i Grep har til sammen 812. (3: MDDAN3, MDDRA3, MDMUS3)
-- Felles programfag fra eget programområde: rundskrivet har 477 timer, fagene i Grep har til sammen 337. TPMAR2
-- Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 1570. NALBR3
 - Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700. ELROM3
-- Felles programfag fra eget utdanningsprogram: rundskrivet har 196 timer, fagene i Grep har til sammen 644. IDRET1
-- Felles programfag fra eget utdanningsprogram: rundskrivet har 336 timer, fagene i Grep har til sammen 728. IDIDR2
-- Felles programfag fra eget utdanningsprogram: rundskrivet har 476 timer, fagene i Grep har til sammen 812. IDIDR3
 - Historie: fant ingen fagkode i Grep for programområdet. NANAB3
 - Matematikk: fant ingen fagkode i Grep for programområdet. NANAB3
 - Naturfag: fant ingen fagkode i Grep for programområdet. NANAB3
@@ -59,12 +52,12 @@ Tabell 7 (Vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig | 496* |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T | 525* |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | 496* |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | 525* |
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
-| Felles programfag fra eget utdanningsprogram | 196 | alle 6: IDR2018 Aktivitetslære 1, IDR2019 Aktivitetslære 2, IDR2020 Aktivitetslære 3 … | 554 |
+| Felles programfag fra eget utdanningsprogram | 196 | IDR2025 Treningslære 1 vg1 (56)<br>140 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 554 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 24 programfag |  |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -75,23 +68,19 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 962 timer: Norsk 113 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 113 → –
 - Elever med tegnspråk, 944 timer: Norsk 113 → –; Norsk for elever med tegnspråk – → 113; Norsk tegnspråk – → 75; Fremmedspråk 113 → –
 
-Avvik:
-
-- ⚠ Felles programfag fra eget utdanningsprogram: rundskrivet har 196 timer, fagene i Grep har til sammen 644.
-
 ##### Vg2 Idrettsfag vg2 (IDIDR2) · 980 timer ✓
 
 Tabell 7 (Vg2) i Udir-1-2026. Bygger på Idrettsfag vg1 (IDRET1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 336 | alle 7: IDR2018 Aktivitetslære 1, IDR2019 Aktivitetslære 2, IDR2020 Aktivitetslære 3 … | 525 |
+| Felles programfag fra eget utdanningsprogram | 336 | IDR2021 Idrett og samfunn vg2 (56)<br>IDR2026 Treningslære 1 (84)<br>196 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -102,10 +91,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 962 timer: Norsk 112 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 112 → –
 - Elever med tegnspråk, 943 timer: Norsk 112 → –; Norsk for elever med tegnspråk – → 112; Norsk tegnspråk – → 75; Fremmedspråk 112 → –
 
-Avvik:
-
-- ⚠ Felles programfag fra eget utdanningsprogram: rundskrivet har 336 timer, fagene i Grep har til sammen 728.
-
 ###### Vg3 Idrettsfag vg3 (IDIDR3) · 981 timer ✓
 
 Tabell 7 (Vg3) i Udir-1-2026. Bygger på Idrettsfag vg2 (IDIDR2).
@@ -113,9 +98,9 @@ Tabell 7 (Vg3) i Udir-1-2026. Bygger på Idrettsfag vg2 (IDIDR2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 476 | alle 7: IDR2018 Aktivitetslære 1, IDR2019 Aktivitetslære 2, IDR2020 Aktivitetslære 3 … | 525 |
+| Felles programfag fra eget utdanningsprogram | 476 | IDR2022 Idrett og samfunn Vg3 (84)<br>IDR2027 Treningslære 2 (140)<br>252 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -127,10 +112,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 1019 timer: Norsk 168 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103
 - Elever med tegnspråk, 1056 timer: Norsk 168 → –; Norsk for elever med tegnspråk – → 168; Norsk tegnspråk – → 75
 
-Avvik:
-
-- ⚠ Felles programfag fra eget utdanningsprogram: rundskrivet har 476 timer, fagene i Grep har til sammen 812.
-
 ### Kunst, design og arkitektur (KD)
 
 #### Vg1 Kunst, design og arkitektur vg1 (KDKDA1) · 982 timer ✓
@@ -139,13 +120,13 @@ Tabell 13 (Vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig | flertydig |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T | flertydig |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | flertydig |
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | flertydig |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram | flertydig |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | flertydig |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: KDA2007 Kunst og visuelle virkemidler 1, KDA2010 Design og arkitektur 1 | 554 |
+| Felles programfag fra eget programområde | 280 | KDA2007 Kunst og visuelle virkemidler 1 (140)<br>KDA2010 Design og arkitektur 1 (140) | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
 Alternativer for særskilte grupper: Norsk: 15 koder, f.eks. NOR1051 Grunnleggende norsk for språklige minoriteter, nivå 1, vg1 studieforberedende utdanningsprogram og vg2 yrkesfaglige utdanningsprogram, NOR1055 Grunnleggende norsk for språklige minoriteter, nivå 2, vg1 studieforberedende utdanningsprogram; Naturfag: NAT1019 Naturfag vg1 studieforberedende utdanningsprogram, samisk plan; Engelsk: ENG1011 Engelsk for elever med tegnspråk, vg1 studieforberedende utdanningsprogram, ENG3001 Engelsk, styrket opplæring, vg1; andre fellesfag: 24 koder, f.eks. KEF1004 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, skriftlig, KEF1005 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, muntlig.
@@ -161,14 +142,14 @@ Tabell 13 (Vg2) i Udir-1-2026. Bygger på Kunst, design og arkitektur vg1 (KDKDA
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | flertydig |
-| Matematikk | 84 | MAT1023 Matematikk 2P | flertydig |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | flertydig |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | flertydig |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | flertydig |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | flertydig |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | flertydig |
 | Geografi | 56 | GEO1003 Geografi | flertydig |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | flertydig |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: KDA2008 Kunst og visuelle verkemiddel 2, KDA2011 Design og arkitektur 2 | 525 |
+| Felles programfag fra eget programområde | 280 | KDA2008 Kunst og visuelle verkemiddel 2 (140)<br>KDA2011 Design og arkitektur 2 (140) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -186,10 +167,10 @@ Tabell 13 (Vg3) i Udir-1-2026. Bygger på Kunst, design og arkitektur vg2 (KDKDA
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | flertydig |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | flertydig |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | flertydig |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | flertydig |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: KDA2009 Kunst og visuelle virkemidler 3, KDA2012 Design og arkitektur 3 | 525 |
+| Felles programfag fra eget programområde | 280 | KDA2009 Kunst og visuelle virkemidler 3 (140)<br>KDA2012 Design og arkitektur 3 (140) | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 280 | 2 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -217,13 +198,13 @@ Tabell 15 (Vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig | flertydig |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T | flertydig |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | flertydig |
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | flertydig |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram | flertydig |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | flertydig |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | flertydig |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: MOK2008 Mediesamfunnet 1, MOK2012 Medieuttrykk 1 | 583.5 |
+| Felles programfag fra eget programområde | 280 | MOK2008 Mediesamfunnet 1 (140)<br>MOK2012 Medieuttrykk 1 (140) | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
 Alternativer for særskilte grupper: Norsk: 15 koder, f.eks. NOR1051 Grunnleggende norsk for språklige minoriteter, nivå 1, vg1 studieforberedende utdanningsprogram og vg2 yrkesfaglige utdanningsprogram, NOR1055 Grunnleggende norsk for språklige minoriteter, nivå 2, vg1 studieforberedende utdanningsprogram; Naturfag: NAT1019 Naturfag vg1 studieforberedende utdanningsprogram, samisk plan; Engelsk: ENG1011 Engelsk for elever med tegnspråk, vg1 studieforberedende utdanningsprogram, ENG3001 Engelsk, styrket opplæring, vg1; andre fellesfag: 24 koder, f.eks. KEF1004 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, skriftlig, KEF1005 Kvensk som andrespråk, vg1 studieforberedende utdanningsprogram, muntlig.
@@ -239,14 +220,14 @@ Tabell 15 (Vg2) i Udir-1-2026. Bygger på Medier og kommunikasjon vg1 (MEMOK1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | flertydig |
-| Matematikk | 84 | MAT1023 Matematikk 2P | flertydig |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | flertydig |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | flertydig |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | flertydig |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | flertydig |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | flertydig |
 | Geografi | 56 | GEO1003 Geografi | flertydig |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | flertydig |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: MOK2009 Mediesamfunnet 2, MOK2013 Medieuttrykk 2 | 554 |
+| Felles programfag fra eget programområde | 280 | MOK2009 Mediesamfunnet 2 (140)<br>MOK2013 Medieuttrykk 2 (140) | 554 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -264,10 +245,10 @@ Tabell 15 (vg3) i Udir-1-2026. Bygger på Medier og kommunikasjon vg2 (MEMOK2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | flertydig |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | flertydig |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | flertydig |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | flertydig |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 280 | alle: MOK2010 Mediesamfunnet 3, MOK2014 Medieuttrykk 3 | 525 |
+| Felles programfag fra eget programområde | 280 | MOK2010 Mediesamfunnet 3 (140)<br>MOK2014 Medieuttrykk 3 (140)<br>vurdering: MOK2011 Mediesamfunnet 3, praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 280 | 2 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -295,12 +276,12 @@ Tabell 9 (Vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig | 496* |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T | 525* |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | 496* |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | 525* |
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
-| Felles programfag fra eget programområde | 140 | MDD2002 Musikk, dans og drama | 583.5 |
+| Felles programfag fra eget programområde | 140 | MDD2002 Musikk, dans og drama (140) | 583.5 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 196 | 1 fag à 140 timer, velges blant 24 programfag |  |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -317,13 +298,13 @@ Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | alle 7: DAN2010 Grunntrening i dans 1, DAN2011 Grunntrening i dans 2, DAN2012 Scenisk dans 1 … | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -333,10 +314,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 - Samisk, 962 timer: Norsk 112 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 112 → –
 - Elever med tegnspråk, 943 timer: Norsk 112 → –; Norsk for elever med tegnspråk – → 112; Norsk tegnspråk – → 75; Fremmedspråk 112 → –
-
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 336 timer, fagene i Grep har til sammen 812.
 
 ###### Vg3 Dans vg3 (MDDAN3) · 981 timer ✓
 
@@ -345,9 +322,9 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Dans vg2 (MDDAN2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | alle 7: DAN2010 Grunntrening i dans 1, DAN2011 Grunntrening i dans 2, DAN2012 Scenisk dans 1 … | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -359,23 +336,19 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 1019 timer: Norsk 168 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103
 - Elever med tegnspråk, 1056 timer: Norsk 168 → –; Norsk for elever med tegnspråk – → 168; Norsk tegnspråk – → 75
 
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 476 timer, fagene i Grep har til sammen 812.
-
 ##### Vg2 Drama vg2 (MDDRA2) · 980 timer ✓
 
 Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | alle 7: DRA2010 Teater og bevegelse 1, DRA2011 Teater og bevegelse 2, DRA2012 Teaterproduksjon 1 … | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -385,10 +358,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 - Samisk, 962 timer: Norsk 112 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 112 → –
 - Elever med tegnspråk, 943 timer: Norsk 112 → –; Norsk for elever med tegnspråk – → 112; Norsk tegnspråk – → 75; Fremmedspråk 112 → –
-
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 336 timer, fagene i Grep har til sammen 812.
 
 ###### Vg3 Drama vg3 (MDDRA3) · 981 timer ✓
 
@@ -397,9 +366,9 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Drama vg2 (MDDRA2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | alle 7: DRA2010 Teater og bevegelse 1, DRA2011 Teater og bevegelse 2, DRA2012 Teaterproduksjon 1 … | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -411,23 +380,19 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 1019 timer: Norsk 168 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103
 - Elever med tegnspråk, 1056 timer: Norsk 168 → –; Norsk for elever med tegnspråk – → 168; Norsk tegnspråk – → 75
 
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 476 timer, fagene i Grep har til sammen 812.
-
 ##### Vg2 Musikk vg2 (MDMUS2) · 980 timer ✓
 
 Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | alle 7: MUS2010 Ergonomi og bevegelse 1, MUS2011 Ergonomi og bevegelse 2, MUS2012 Instrument, kor, samspill 1 … | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -438,10 +403,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 962 timer: Norsk 112 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 112 → –
 - Elever med tegnspråk, 943 timer: Norsk 112 → –; Norsk for elever med tegnspråk – → 112; Norsk tegnspråk – → 75; Fremmedspråk 112 → –
 
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 336 timer, fagene i Grep har til sammen 812.
-
 ###### Vg3 Musikk vg3 (MDMUS3) · 981 timer ✓
 
 Tabell 9 (Vg3) i Udir-1-2026. Bygger på Musikk vg2 (MDMUS2).
@@ -449,9 +410,9 @@ Tabell 9 (Vg3) i Udir-1-2026. Bygger på Musikk vg2 (MDMUS2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | alle 7: MUS2010 Ergonomi og bevegelse 1, MUS2011 Ergonomi og bevegelse 2, MUS2012 Instrument, kor, samspill 1 … | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -462,10 +423,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Uten fr.språk gr.skole, 981 timer: Fremmedspråk – → 140; Programfag fra studieforberedende utdanningsprogram 140 → –
 - Samisk, 1019 timer: Norsk 168 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103
 - Elever med tegnspråk, 1056 timer: Norsk 168 → –; Norsk for elever med tegnspråk – → 168; Norsk tegnspråk – → 75
-
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 476 timer, fagene i Grep har til sammen 812.
 
 #### Varianter for særskilte skoler
 
@@ -489,10 +446,10 @@ Tabell 4 (Vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig | 496* |
-| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T | 525* |
+| Norsk | 113 | NOR1260 Norsk, vg1 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1261 Norsk, vg1 studieforberedende utdanningsprogram, muntlig | 496* |
+| Matematikk | 140 | velg én: MAT1019 Matematikk 1P, MAT1021 Matematikk 1T<br>vurdering: MAT1020 Matematikk 1P, muntlig-praktisk, MAT1022 Matematikk 1T, muntlig-praktisk | 525* |
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
-| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -514,9 +471,9 @@ Tabell 4 (Vg2) i Udir-1-2026. Bygger på Studiespesialisering (STUSP1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
 | Programfag fra eget programområde (fordypning) | 280 | 2 fag à 140 timer, velges blant 24 programfag |  |
@@ -537,7 +494,7 @@ Tabell 4 (Vg3) i Udir-1-2026. Bygger på Realfag vg2 (STREA2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Programfag fra eget programområde (fordypning) | 280 | 2 fag à 140 timer, velges blant 22 programfag |  |
@@ -558,9 +515,9 @@ Tabell 4 (Vg2) i Udir-1-2026. Bygger på Studiespesialisering (STUSP1).
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P | 496 |
-| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I … | 496 |
+| Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
+| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
 | Programfag fra eget programområde (fordypning) | 280 | 2 fag à 140 timer, velges blant 190 programfag |  |
@@ -581,7 +538,7 @@ Tabell 4 (Vg3) i Udir-1-2026. Bygger på Språk, samfunnsfag og økonomi vg2 (ST
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
-| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig | 466.5* |
+| Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Programfag fra eget programområde (fordypning) | 280 | 2 fag à 140 timer, velges blant 188 programfag |  |
@@ -628,11 +585,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1111 Matematikk 1P-Y BA, MAT1131 Matematikk 1T-Y BA | 525* |
+| Matematikk | 84 | velg én: MAT1111 Matematikk 1P-Y BA, MAT1131 Matematikk 1T-Y BA<br>vurdering: MAT1112 Matematikk 1P-Y BA, muntlig-praktisk, MAT1132 Matematikk 1T-Y BA, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1008 Naturfag vg1 BA | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BAT1005 Arbeidsmiljø og dokumentasjon, BAT1006 Praktisk yrkesutøvelse | 642 |
+| Felles programfag fra eget programområde | 477 | BAT1005 Arbeidsmiljø og dokumentasjon (140)<br>BAT1006 Praktisk yrkesutøvelse (337)<br>vurdering: BAT1007 Tverrfaglig eksamen, bygg- og anleggsteknikk, privatister | 642 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 642 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -662,10 +619,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: ANG2001 Rammebetingelser for anleggsgartnerarbeid, ANG2002 Anleggsgartnerarbeid | 635 |
+| Felles programfag fra eget programområde | 477 | ANG2001 Rammebetingelser for anleggsgartnerarbeid (140)<br>ANG2002 Anleggsgartnerarbeid (337)<br>vurdering: ANG2003 Tverrfaglig eksamen anleggsgartner | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -689,10 +646,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: ANL2004 Sikkerhetsopplæring for masseforflytningsmaskiner, ANL2005 Grunnarbeider, ANL2006 Drift og vedlikehold | 635 |
+| Felles programfag fra eget programområde | 477 | ANL2004 Sikkerhetsopplæring for masseforflytningsmaskiner (140)<br>ANL2005 Grunnarbeider (197)<br>ANL2006 Drift og vedlikehold (140)<br>vurdering: ANL2007 Tverrfaglig eksamen anleggsteknikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -724,10 +681,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BMO2001 Dokumentasjon og kommunikasjon, BMO2002 Betong og mur | 635 |
+| Felles programfag fra eget programområde | 477 | BMO2001 Dokumentasjon og kommunikasjon (140)<br>BMO2002 Betong og mur (337)<br>vurdering: BMO2003 Tverrfaglig eksamen betong og mur | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -752,10 +709,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: KEM2004 Praktisk yrkesutøvelse, KEM2005 Arbeidsmiljø og dokumentasjon | 635 |
+| Felles programfag fra eget programområde | 477 | KEM2004 Praktisk yrkesutøvelse (337)<br>KEM2005 Arbeidsmiljø og dokumentasjon (140)<br>vurdering: KEM2006 Tverrfaglig eksamen klima, energi og miljøteknikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -782,10 +739,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: OFT2004 Forbehandling og påføring, OFT2005 Helse, miljø, sikkerhet og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | OFT2004 Forbehandling og påføring (337)<br>OFT2005 Helse, miljø, sikkerhet og kvalitet (140)<br>vurdering: OFT2006 Tverrfaglig eksamen overflateteknikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -810,10 +767,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: RLF2001 Bransjelære, RLF2002 Sanitærteknikk, RLF2003 Varmeteknikk | 635 |
+| Felles programfag fra eget programområde | 477 | RLF2001 Bransjelære (140)<br>RLF2002 Sanitærteknikk (197)<br>RLF2003 Varmeteknikk (140)<br>vurdering: RLF2004 Tverrfaglig eksamen rørlegger | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -837,10 +794,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: TRT2004 Tegning og materialvalg, TRT2005 Produksjon | 635 |
+| Felles programfag fra eget programområde | 477 | TRT2004 Tegning og materialvalg (140)<br>TRT2005 Produksjon (337)<br>vurdering: TRT2006 Tverrfaglig eksamen treteknikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -867,10 +824,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kry
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: TMF2001 Konstruksjoner og klimaskall, TMF2002 Vinduer, dører og innvendig arbeid, TMF2003 Materialegenskaper, varmeisolering og tetting | 635 |
+| Felles programfag fra eget programområde | 477 | TMF2001 Konstruksjoner og klimaskall (197)<br>TMF2002 Vinduer, dører og innvendig arbeid (140)<br>TMF2003 Materialegenskaper, varmeisolering og tetting (140)<br>vurdering: TMF2004 Tverrfaglig eksamen tømrer | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -896,11 +853,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1113 Matematikk 1P-Y EL, MAT1133 Matematikk 1T-Y EL | 525* |
+| Matematikk | 84 | velg én: MAT1113 Matematikk 1P-Y EL, MAT1133 Matematikk 1T-Y EL<br>vurdering: MAT1114 Matematikk 1P-Y EL, muntlig-praktisk, MAT1134 Matematikk 1T-Y EL, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1009 Naturfag vg1 EL | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: ELE1006 Elektroniske kretser og nettverk, ELE1007 Energi og styresystemer | 607.5 |
+| Felles programfag fra eget programområde | 477 | ELE1006 Elektroniske kretser og nettverk (197)<br>ELE1007 Energi og styresystemer (280)<br>vurdering: ELE1008 Tverrfaglig eksamen, elektro og datateknologi, for privatister | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -920,10 +877,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kr
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: AUT2004 Automatiseringssystemer, AUT2005 Elenergisystemer | 583.5 |
+| Felles programfag fra eget programområde | 477 | AUT2004 Automatiseringssystemer (337)<br>AUT2005 Elenergisystemer (140)<br>vurdering: AUT2006 Tverrfaglig eksamen i automatisering | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -951,7 +908,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Automatisering (ELAUT2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: AUT3005 Automatiseringssystemer, AUT3006 Elenergisystemer, AUT3007 Mekanisk arbeid | 583.5 |
+| Felles programfag fra eget programområde | 925 | AUT3005 Automatiseringssystemer (645)<br>AUT3006 Elenergisystemer (140)<br>AUT3007 Mekanisk arbeid (140)<br>vurdering: AUT2102 Automatisering, AUT3008 Automatiseringsfaget, AUT3103 Automatiseringsfaget, skriftlig | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ##### Vg2 Datateknologi og elektronikk (ELDEL2) · 982 timer ✓
@@ -960,10 +917,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kr
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: DEL2004 Elektroniske kretser og utstyr, DEL2005 Data- og informasjonsteknologi | 583.5 |
+| Felles programfag fra eget programområde | 477 | DEL2004 Elektroniske kretser og utstyr (280)<br>DEL2005 Data- og informasjonsteknologi (197)<br>vurdering: DEL2006 Tverrfaglig eksamen datateknologi og elektronikk | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -990,7 +947,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Datateknologi og elektronikk (ELDEL2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: DAT3004 Installering og drift, DAT3005 Reparasjon og vedlikehold | 583.5 |
+| Felles programfag fra eget programområde | 925 | DAT3004 Installering og drift (420)<br>DAT3005 Reparasjon og vedlikehold (505)<br>vurdering: DAT3006 Dataelektronikerfaget, DAT3103 Dataelektronikerfaget, skriftlig, DEL2102 Datateknologi og elektronikk | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ###### Vg3 Romteknologi (ELROM3) · 981 timer ✓
@@ -1000,7 +957,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Datateknologi og elektronikk (ELDEL2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle 5: ROM3007 Elektronikk og kommunikasjonsteknologi, ROM3008 Romteknologi og satellitteknikk, ROM3009 Telemetri … | 583.5 |
+| Felles programfag fra eget programområde | 925 | ROM3007 Elektronikk og kommunikasjonsteknologi (140)<br>ROM3008 Romteknologi og satellitteknikk (140)<br>ROM3009 Telemetri (140)<br>ROM3010 Romfysikk (140)<br>ROM3011 Fjernanalyse og geografiske informasjonssystemer (140)<br>vurdering: ROM3012 Tverrfaglig eksamen romteknologi | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 Avvik:
@@ -1016,7 +973,7 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1).
 | Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | **ingen fagkode i Grep** |  |
 | Samfunnskunnskap | 84 | **ingen fagkode i Grep** |  |
 | Kroppsøving | 56 | **ingen fagkode i Grep** |  |
-| Felles programfag fra eget programområde | 477 | alle: DRF2001 Operasjon og sikkerhet, DRF2002 Nyttelast, sensorer og bearbeiding av data | 583.5 |
+| Felles programfag fra eget programområde | 477 | DRF2001 Operasjon og sikkerhet (300)<br>DRF2002 Nyttelast, sensorer og bearbeiding av data (177)<br>vurdering: DRF2003 Tverrfaglig eksamen dronefag | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1042,10 +999,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kr
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: ELE2005 Elenergi og styresystemer, ELE2006 Elektronisk kommunikasjon | 583.5 |
+| Felles programfag fra eget programområde | 477 | ELE2005 Elenergi og styresystemer (337)<br>ELE2006 Elektronisk kommunikasjon (140)<br>vurdering: ELE2007 Tverrfaglig eksamen elenergi og ekom | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1079,7 +1036,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Elenergi og ekom (ELELE2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: MEL3006 Elenergi, MEL3007 Automasjon, MEL3008 Elektronisk kommunikasjon, MEL3009 Organisasjon og ledelse | 583.5 |
+| Felles programfag fra eget programområde | 925 | MEL3006 Elenergi (350)<br>MEL3007 Automasjon (250)<br>MEL3008 Elektronisk kommunikasjon (185)<br>MEL3009 Organisasjon og ledelse (140)<br>vurdering: MEL3104 Maritim elektrikerfaget, skriftlig | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 Lærefag etter Maritim elektrikerfaget vg3 i skole (ELMEL3):
@@ -1092,10 +1049,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kr
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: FLY2013 Elektrofag, FLY2014 Luftfartøylære, FLY2015 Material- og komponentlære | 583.5 |
+| Felles programfag fra eget programområde | 477 | FLY2013 Elektrofag (197)<br>FLY2014 Luftfartøylære (140)<br>FLY2015 Material- og komponentlære (140)<br>vurdering: 10 koder | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1116,7 +1073,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Flyfag (ELFLY2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: AVI3012 Luftfartøysystemer, AVI3015 Vedlikeholdsteknikk, AVI3019 Flysikkerhet | 583.5 |
+| Felles programfag fra eget programområde | 925 | AVI3012 Luftfartøysystemer (463)<br>AVI3015 Vedlikeholdsteknikk (322)<br>AVI3019 Flysikkerhet (140)<br>vurdering: 7 koder | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 Lærefag etter Avionikerfaget (ELAVI3):
@@ -1130,7 +1087,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Flyfag (ELFLY2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: FLY3014 Luftfartøysystemer, FLY3019 Vedlikeholdsteknikk, FLY3023 Flysikkerhet | 583.5 |
+| Felles programfag fra eget programområde | 925 | FLY3014 Luftfartøysystemer (478)<br>FLY3019 Vedlikeholdsteknikk (307)<br>FLY3023 Flysikkerhet (140)<br>vurdering: 9 koder | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 Lærefag etter Flytekniske fag (ELFLY3):
@@ -1145,10 +1102,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kr
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: KVV2001 Elenergi og automatisering, KVV2002 Kulde- og varmepumpeteknikk, KVV2003 Ventilasjonsteknikk | 583.5 |
+| Felles programfag fra eget programområde | 477 | KVV2001 Elenergi og automatisering (140)<br>KVV2002 Kulde- og varmepumpeteknikk (169)<br>KVV2003 Ventilasjonsteknikk (168)<br>vurdering: KVV2004 Tverrfaglig eksamen kulde-, varmepumpe og og ventilasjonsteknikk | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 583.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1175,11 +1132,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1115 Matematikk 1P-Y FD, MAT1135 Matematikk 1T-Y FD | 525* |
+| Matematikk | 84 | velg én: MAT1115 Matematikk 1P-Y FD, MAT1135 Matematikk 1T-Y FD<br>vurdering: MAT1116 Matematikk 1P-Y FD, muntlig-praktisk, MAT1136 Matematikk 1T-Y FD, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1010 Naturfag vg1 FD | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: FBI1001 Produktutvikling og produksjon, FBI1002 Kommunikasjon, kunde og arbeidsliv | 642 |
+| Felles programfag fra eget programområde | 477 | FBI1001 Produktutvikling og produksjon (280)<br>FBI1002 Kommunikasjon, kunde og arbeidsliv (197)<br>vurdering: FBI1003 Tverrfaglig eksamen, frisør, blomster, interiør og eksponeringsdesign, for privatister | 642 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 642 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1201,10 +1158,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og ekspo
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BLD2004 Produktutvikling, bransjelære og kommunikasjon, BLD2005 Produksjon og arbeidsliv | 635 |
+| Felles programfag fra eget programområde | 477 | BLD2004 Produktutvikling, bransjelære og kommunikasjon (187)<br>BLD2005 Produksjon og arbeidsliv (290)<br>vurdering: BLD2006 Tverrfaglig eksamen blomsterdekoratør | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1228,10 +1185,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og ekspo
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: FRI2004 Kommunikasjon, klipp og frisyreforming, FRI2005 Hår, farge og strukturendring | 635 |
+| Felles programfag fra eget programområde | 477 | FRI2004 Kommunikasjon, klipp og frisyreforming (257)<br>FRI2005 Hår, farge og strukturendring (220)<br>vurdering: FRI2006 Tverrfaglig eksamen frisør | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1255,10 +1212,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og ekspo
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: IED2001 Design, teknologi og produksjon, IED2002 Kunde og kommunikasjon | 635 |
+| Felles programfag fra eget programområde | 477 | IED2001 Design, teknologi og produksjon (337)<br>IED2002 Kunde og kommunikasjon (140)<br>vurdering: IED2003 Tverrfaglig eksamen interiør og eksponeringsdesign | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1283,7 +1240,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Interiør og eksponeringsdesign (FDIED
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: EKD3001 Produksjon og konseptutvikling, EKD3002 Bedriftskultur og markedsføring | – |
+| Felles programfag fra eget programområde | 925 | EKD3001 Produksjon og konseptutvikling (660)<br>EKD3002 Bedriftskultur og markedsføring (265)<br>vurdering: EKD3003 Tverrfaglig eksamen eksponeringsdesign | – |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ###### Vg3 Interiør (FDINT3) · 981 timer ✓
@@ -1293,7 +1250,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Interiør og eksponeringsdesign (FDIED
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: INT3004 Prosess og prosjektering, INT3005 Kunde og kommunikasjon | – |
+| Felles programfag fra eget programområde | 925 | INT3004 Prosess og prosjektering (660)<br>INT3005 Kunde og kommunikasjon (265)<br>vurdering: INT3006 Tverrfaglig eksamen interiør | – |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ### Helse- og oppvekstfag (HS)
@@ -1304,11 +1261,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1117 Matematikk 1P-Y HS, MAT1137 Matematikk 1T-Y HS | 525* |
+| Matematikk | 84 | velg én: MAT1117 Matematikk 1P-Y HS, MAT1137 Matematikk 1T-Y HS<br>vurdering: MAT1118 Matematikk 1P-Y HS, muntlig-praktisk, MAT1138 Matematikk 1T-Y HS, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1011 Naturfag vg1 HS | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: HSF1006 Helsefremmende arbeid, HSF1007 Kommunikasjon og samhandling, HSF1008 Yrkesliv i helse- og oppvekstfag | 607.5 |
+| Felles programfag fra eget programområde | 477 | HSF1006 Helsefremmende arbeid (197)<br>HSF1007 Kommunikasjon og samhandling (140)<br>HSF1008 Yrkesliv i helse- og oppvekstfag (140)<br>vurdering: HSF1009 Tverrfaglig eksamen, helse- og oppvekstfag, privatister | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1326,10 +1283,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: AKT2004 Administrasjon, AKT2005 Kommunikasjon og samhandling, AKT2006 Yrkesliv i aktivitørfag | 607.5 |
+| Felles programfag fra eget programområde | 477 | AKT2004 Administrasjon (140)<br>AKT2005 Kommunikasjon og samhandling (140)<br>AKT2006 Yrkesliv i aktivitørfag (197)<br>vurdering: AKT2007 Tverrfaglig eksamen aktivitør | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1353,10 +1310,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: AMB2005 Ambulansemedisin, AMB2006 Kommunikasjon og samhandling, AMB2007 Yrkesliv i ambulansefag | 607.5 |
+| Felles programfag fra eget programområde | 477 | AMB2005 Ambulansemedisin (197)<br>AMB2006 Kommunikasjon og samhandling (140)<br>AMB2007 Yrkesliv i ambulansefag (140)<br>vurdering: AMB2008 Tverrfaglig eksamen ambulansefag | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1382,10 +1339,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BUA2005 Pedagogisk arbeid, BUA2006 Kommunikasjon og samhandling, BUA2007 Yrkesliv i barne- og ungdomsarbeiderfag | 607.5 |
+| Felles programfag fra eget programområde | 477 | BUA2005 Pedagogisk arbeid (197)<br>BUA2006 Kommunikasjon og samhandling (140)<br>BUA2007 Yrkesliv i barne- og ungdomsarbeiderfag (140)<br>vurdering: BUA2008 Tverrfaglig eksamen barne- og ungdomsarbeiderfag | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1409,10 +1366,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: FOT2005 Helse, funksjon og bevegelse, FOT2006 Kommunikasjon og samhandling, FOT2007 Yrkesliv i fotterapi og ortopediteknikk | 607.5 |
+| Felles programfag fra eget programområde | 477 | FOT2005 Helse, funksjon og bevegelse (197)<br>FOT2006 Kommunikasjon og samhandling (140)<br>FOT2007 Yrkesliv i fotterapi og ortopediteknikk (140)<br>vurdering: FOT2008 Tverrfaglig eksamen fotterapi og ortopediteknikk | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1437,7 +1394,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Fotterapi og ortopediteknikk (HSFOT2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: FOT3005 Helse, funksjon og bevegelse, FOT3006 Kommunikasjon og samhandling, FOT3007 Yrkesliv i fotterapifaget | 607.5 |
+| Felles programfag fra eget programområde | 925 | FOT3005 Helse, funksjon og bevegelse (250)<br>FOT3006 Kommunikasjon og samhandling (250)<br>FOT3007 Yrkesliv i fotterapifaget (425)<br>vurdering: FOT3008 Tverrfaglig eksamen fotterapi | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ##### Vg2 Helsearbeiderfag (HSHEA2) · 982 timer ✓
@@ -1446,10 +1403,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: HEA2005 Helsefremmende arbeid, HEA2006 Kommunikasjon og samhandling, HEA2007 Yrkesliv i helsearbeiderfag | 607.5 |
+| Felles programfag fra eget programområde | 477 | HEA2005 Helsefremmende arbeid (197)<br>HEA2006 Kommunikasjon og samhandling (140)<br>HEA2007 Yrkesliv i helsearbeiderfag (140)<br>vurdering: HEA2008 Tverrfaglig eksamen helsearbeiderfag | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1474,10 +1431,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: HES2005 Helse og sykdom, HES2006 Kommunikasjon og samhandling, HES2007 Yrkesliv i helseservicefag | 607.5 |
+| Felles programfag fra eget programområde | 477 | HES2005 Helse og sykdom (197)<br>HES2006 Kommunikasjon og samhandling (140)<br>HES2007 Yrkesliv i helseservicefag (140)<br>vurdering: HES2008 Tverrfaglig eksamen helseservicefag | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1502,7 +1459,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: APO3005 Helseveiledning i apotek, APO3006 Kommunikasjon og samhandling, APO3007 Yrkesliv i apotekteknikkfaget | 607.5 |
+| Felles programfag fra eget programområde | 925 | APO3005 Helseveiledning i apotek (371)<br>APO3006 Kommunikasjon og samhandling (139)<br>APO3007 Yrkesliv i apotekteknikkfaget (415)<br>vurdering: APO3008 Tverrfaglig eksamen, apotekteknikk | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ###### Vg3 Helsesekretær (HSHSE3) · 981 timer ✓
@@ -1512,7 +1469,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: HSE3005 Helse og sykdom, HSE3006 Kommunikasjon og samhandling, HSE3007 Yrkesliv i helsesekretærfaget | 607.5 |
+| Felles programfag fra eget programområde | 925 | HSE3005 Helse og sykdom (371)<br>HSE3006 Kommunikasjon og samhandling (184)<br>HSE3007 Yrkesliv i helsesekretærfaget (370)<br>vurdering: HSE3008 Tverrfaglig eksamen, helsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ###### Vg3 Tannhelsesekretær (HSTAN3) · 981 timer ✓
@@ -1522,7 +1479,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: TAN3005 Smittevern, tannanatomi og fysiologi, TAN3006 Kommunikasjon og samhandling, TAN3007 Yrkesliv i tannhelsesekretærfaget | 607.5 |
+| Felles programfag fra eget programområde | 925 | TAN3005 Smittevern, tannanatomi og fysiologi (250)<br>TAN3006 Kommunikasjon og samhandling (250)<br>TAN3007 Yrkesliv i tannhelsesekretærfaget (425)<br>vurdering: TAN3008 Tverrfaglig eksamen, tannhelsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ##### Vg2 Hudpleie (HSHUD2) · 982 timer ✓
@@ -1531,10 +1488,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: HUD2005 Helsefremmende arbeid, HUD2006 Kommunikasjon og samhandling, HUD2007 Yrkesliv i hudpleiefaget | 607.5 |
+| Felles programfag fra eget programområde | 477 | HUD2005 Helsefremmende arbeid (140)<br>HUD2006 Kommunikasjon og samhandling (140)<br>HUD2007 Yrkesliv i hudpleiefaget (197)<br>vurdering: HUD2008 Tverrfaglig eksamen hudpleie | 607.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 607.5 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1555,7 +1512,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Hudpleie (HSHUD2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: HUD3009 Helsefremmende arbeid, HUD3010 Kommunikasjon og samhandling, HUD3011 Yrkesliv i hudterapifaget | 607.5 |
+| Felles programfag fra eget programområde | 925 | HUD3009 Helsefremmende arbeid (250)<br>HUD3010 Kommunikasjon og samhandling (250)<br>HUD3011 Yrkesliv i hudterapifaget (425)<br>vurdering: HUD3012 Tverrfaglig eksamen, hudterapifaget | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ### Håndverk, design og produktutvikling (DT)
@@ -1566,11 +1523,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1119 Matematikk 1P-Y DT, MAT1139 Matematikk 1T-Y DT | 525* |
+| Matematikk | 84 | velg én: MAT1119 Matematikk 1P-Y DT, MAT1139 Matematikk 1T-Y DT<br>vurdering: MAT1120 Matematikk 1P-Y DT, muntlig-praktisk, MAT1140 Matematikk 1T-Y DT, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1012 Naturfag vg1 DT | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: DTH1001 Produktutvikling og skapende prosesser, DTH1002 Materialer og teknikker | 642 |
+| Felles programfag fra eget programområde | 477 | DTH1001 Produktutvikling og skapende prosesser (140)<br>DTH1002 Materialer og teknikker (337)<br>vurdering: DTH1003 Tverrfaglig eksamen, håndverk, design og produktutvikling, privatister | 642 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 642 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1608,10 +1565,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BBF2004 Produksjon, BBF2005 Materialer og konstruksjon | 635 |
+| Felles programfag fra eget programområde | 477 | BBF2004 Produksjon (337)<br>BBF2005 Materialer og konstruksjon (140)<br>vurdering: BBF2006 Tverrfaglig eksamen i båtbyggerfag | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1636,10 +1593,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: DDU2005 Materialkunnskap, duodji-/duodje-/duedtie-utøvelse og kulturarv, DDU2006 Duodji/duodje/duedtie- og designprosesser | 635 |
+| Felles programfag fra eget programområde | 477 | DDU2005 Materialkunnskap, duodji-/duodje-/duedtie-utøvelse og kulturarv (337)<br>DDU2006 Duodji/duodje/duedtie- og designprosesser (140)<br>vurdering: DDU2007 Tverrfaglig eksamen duodji/duodje/duedtie | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1667,10 +1624,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: DGH2004 Gull- og sølvsmedhåndverk, DGH2005 Design og produktutvikling | 635 |
+| Felles programfag fra eget programområde | 477 | DGH2004 Gull- og sølvsmedhåndverk (337)<br>DGH2005 Design og produktutvikling (140)<br>vurdering: DGH2006 Tverrfaglig eksamen gull- og sølvsmedhåndverk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1696,10 +1653,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: SME2004 Smedhåndverk, SME2005 Design og produktutvikling | 635 |
+| Felles programfag fra eget programområde | 477 | SME2004 Smedhåndverk (337)<br>SME2005 Design og produktutvikling (140)<br>vurdering: SME2006 Tverrfaglig eksamen i smed | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1723,10 +1680,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: STH2001 Design og produktutvikling, STH2002 Produksjon og materialer | 635 |
+| Felles programfag fra eget programområde | 477 | STH2001 Design og produktutvikling (140)<br>STH2002 Produksjon og materialer (337)<br>vurdering: STH2003 Tverrfaglig eksamen søm og tekstilhåndverk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1762,10 +1719,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: DTR2004 Produksjon, DTR2005 Materialkunnskap, DTR2006 Arbeidsplanlegging og tegning | 635 |
+| Felles programfag fra eget programområde | 477 | DTR2004 Produksjon (197)<br>DTR2005 Materialkunnskap (140)<br>DTR2006 Arbeidsplanlegging og tegning (140)<br>vurdering: DTR2007 Tverrfaglig eksamen trearbeid | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1793,10 +1750,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: UIM2004 Produksjon og vedlikehold, UIM2005 Produktutvikling | 635 |
+| Felles programfag fra eget programområde | 477 | UIM2004 Produksjon og vedlikehold (337)<br>UIM2005 Produktutvikling (140)<br>vurdering: UIM2006 Tverrfaglig eksamen ur- og instrumentmaker | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1822,11 +1779,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1121 Matematikk 1P-Y IM, MAT1141 Matematikk 1T-Y IM | 525* |
+| Matematikk | 84 | velg én: MAT1121 Matematikk 1P-Y IM, MAT1141 Matematikk 1T-Y IM<br>vurdering: MAT1122 Matematikk 1P-Y IM, muntlig-praktisk, MAT1142 Matematikk 1T-Y IM, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1013 Naturfag vg1 IM | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: IKM1001 Produksjon og historiefortelling, IKM1002 Teknologiforståelse, IKM1003 Konseptutvikling og programmering | 583.5 |
+| Felles programfag fra eget programområde | 477 | IKM1001 Produksjon og historiefortelling (159)<br>IKM1002 Teknologiforståelse (159)<br>IKM1003 Konseptutvikling og programmering (159)<br>vurdering: IKM1004 Tverrfaglig eksamen, informasjonsteknologi og medieproduksjon, privatister | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1844,10 +1801,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduks
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: ITK2001 Driftsstøtte, ITK2002 Brukerstøtte, ITK2003 Utvikling | 554 |
+| Felles programfag fra eget programområde | 477 | ITK2001 Driftsstøtte (169)<br>ITK2002 Brukerstøtte (140)<br>ITK2003 Utvikling (168)<br>vurdering: ITK2004 Tverrfaglig eksamen informasjonsteknologi | 554 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1872,10 +1829,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduks
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: MED2005 Teknologi og produksjon, MED2006 Konseptutvikling og kommunikasjon, MED2007 Design og visualisering | 554 |
+| Felles programfag fra eget programområde | 477 | MED2005 Teknologi og produksjon (159)<br>MED2006 Konseptutvikling og kommunikasjon (159)<br>MED2007 Design og visualisering (159)<br>vurdering: MED2008 Tverrfaglig eksamen medieproduksjon | 554 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1906,11 +1863,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1123 Matematikk 1P-Y NA, MAT1143 Matematikk 1T-Y NA | 525* |
+| Matematikk | 84 | velg én: MAT1123 Matematikk 1P-Y NA, MAT1143 Matematikk 1T-Y NA<br>vurdering: MAT1124 Matematikk 1P-Y NA, muntlig-praktisk, MAT1144 Matematikk 1T-Y NA, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1014 Naturfag vg1 NA | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: NAB1005 Naturbasert produksjon og tjenesteyting, NAB1006 Naturbasert næringsaktivitet | 642 |
+| Felles programfag fra eget programområde | 477 | NAB1005 Naturbasert produksjon og tjenesteyting (337)<br>NAB1006 Naturbasert næringsaktivitet (140)<br>vurdering: NAB1007 Tverrfaglig eksamen, naturbruk, privatister | 642 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 642 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1934,10 +1891,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Stu
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: AKV2005 Drift og produksjon, AKV2006 Biologi og miljø, AKV2007 Anlegg og teknikk | 635 |
+| Felles programfag fra eget programområde | 477 | AKV2005 Drift og produksjon (197)<br>AKV2006 Biologi og miljø (140)<br>AKV2007 Anlegg og teknikk (140)<br>vurdering: AKV2008 Tverrfaglig eksamen akvakultur | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -1969,7 +1926,7 @@ Tabell 24 (Vg3) i Udir-1-2026. Bygger på Akvakultur (NAAKV2), Fiske og fangst (
 | Naturfag | 84 | **ingen fagkode i Grep** |  |
 | Historie | 140 | **ingen fagkode i Grep** |  |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 140 | NAB3007 Naturforvaltning | 607.5 |
+| Felles programfag fra eget programområde | 140 | NAB3007 Naturforvaltning (140)<br>vurdering: NAB3011 Naturforvaltning, muntlig | 607.5 |
 | Programfag fra eget programområde eller studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -1995,10 +1952,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Res
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: FFA2004 Fartøy og redskaper, FFA2005 Fangst og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | FFA2004 Fartøy og redskaper (337)<br>FFA2005 Fangst og kvalitet (140)<br>vurdering: FFA2006 Tverrfaglig eksamen fiske og fangst | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2029,10 +1986,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Stu
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: HDF2001 Dyrelære og aktivitet, HDF2002 Drift og entreprenørskap | 635 |
+| Felles programfag fra eget programområde | 477 | HDF2001 Dyrelære og aktivitet (280)<br>HDF2002 Drift og entreprenørskap (197)<br>vurdering: HDF2003 Tverrfaglig eksamen heste- og dyrefag | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2061,10 +2018,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Stu
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: LGA2010 Produksjon og tjenesteyting, LGA2011 Forvaltning og drift | 635 |
+| Felles programfag fra eget programområde | 477 | LGA2010 Produksjon og tjenesteyting (297)<br>LGA2011 Forvaltning og drift (180)<br>vurdering: LGA2012 Tverrfaglig eksamen landbruk og gartnernæring | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2090,12 +2047,10 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Landbruk og gartnernæring (NALGA2).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle 6: LBR3009 Plante- og husdyrproduksjon, LBR3010 Utmark og kulturlandskap, LBR3011 Gårdsdrift … | 607.5 |
+| Felles programfag fra eget programområde | 925 | LBR3017 Planteproduksjon (337)<br>LBR3018 Husdyrproduksjon (308)<br>LBR3019 Økonomi og gårdsdrift (280)<br>vurdering: LBR3020 Tverrfaglig eksamen landbruk | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 1570.
+Andre fag i Grep for programområdet: LBR3009 Plante- og husdyrproduksjon, LBR3010 Utmark og kulturlandskap, LBR3011 Gårdsdrift, LBR3016 Tverrfaglig eksamen, landbruk.
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
@@ -2107,10 +2062,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Stu
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: REI2009 Reindriftsbasert aktivitet og produksjon, REI2010 Reinen og dens naturmiljø, REI2011 Økonomi og ressursforvaltning | 635 |
+| Felles programfag fra eget programområde | 477 | REI2009 Reindriftsbasert aktivitet og produksjon (190)<br>REI2010 Reinen og dens naturmiljø (135)<br>REI2011 Økonomi og ressursforvaltning (152)<br>vurdering: REI2012 Tverrfaglig eksamen reindrift | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2138,10 +2093,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Stu
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: SBR2004 Skogsdrift og maskinlære, SBR2005 Skogskjøtsel, klima og næring | 635 |
+| Felles programfag fra eget programområde | 477 | SBR2004 Skogsdrift og maskinlære (279)<br>SBR2005 Skogskjøtsel, klima og næring (198)<br>vurdering: SBR2006 Tverrfaglig eksamen skogbruk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2171,11 +2126,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1125 Matematikk 1P-Y RM, MAT1145 Matematikk 1T-Y RM | 525* |
+| Matematikk | 84 | velg én: MAT1125 Matematikk 1P-Y RM, MAT1145 Matematikk 1T-Y RM<br>vurdering: MAT1126 Matematikk 1P-Y RM, muntlig-praktisk, MAT1146 Matematikk 1T-Y RM, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1015 Naturfag vg1 RM | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: RMF1006 Råvare, produksjon og kvalitet, RMF1007 Bransje og arbeidsliv | 642 |
+| Felles programfag fra eget programområde | 477 | RMF1006 Råvare, produksjon og kvalitet (337)<br>RMF1007 Bransje og arbeidsliv (140)<br>vurdering: RMF1008 Tverrfaglig eksamen, restaurant- og matfag, privatister | 642 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 642 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2195,10 +2150,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BAK2001 Råvare, produksjon og kvalitet, BAK2002 Bransje og arbeidsliv | 635 |
+| Felles programfag fra eget programområde | 477 | BAK2001 Råvare, produksjon og kvalitet (337)<br>BAK2002 Bransje og arbeidsliv (140)<br>vurdering: BAK2003 Tverrfaglig eksamen baker og konditor | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2224,10 +2179,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: KOS2001 Råvare, produksjon, salg og service, KOS2002 Bransje og arbeidsliv | 635 |
+| Felles programfag fra eget programområde | 477 | KOS2001 Råvare, produksjon, salg og service (337)<br>KOS2002 Bransje og arbeidsliv (140)<br>vurdering: KOS2003 Tverrfaglig eksamen kokk- og servitørfag | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2254,10 +2209,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryss
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: MPR2001 Råvare, produksjon og kvalitet, MPR2002 Bransje og arbeidsliv | 635 |
+| Felles programfag fra eget programområde | 477 | MPR2001 Råvare, produksjon og kvalitet (337)<br>MPR2002 Bransje og arbeidsliv (140)<br>vurdering: MPR2003 Tverrfaglig eksamen kjøttfag og næringsmiddelindustri | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2288,11 +2243,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1127 Matematikk 1P-Y SR, MAT1147 Matematikk 1T-Y SR | 525* |
+| Matematikk | 84 | velg én: MAT1127 Matematikk 1P-Y SR, MAT1147 Matematikk 1T-Y SR<br>vurdering: MAT1128 Matematikk 1P-Y SR, muntlig-praktisk, MAT1148 Matematikk 1T-Y SR, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1016 Naturfag vg1 SR | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: SSR1001 Forretningsdrift, SSR1002 Markedsføring og innovasjon, SSR1003 Kultur og samhandling | 583.5 |
+| Felles programfag fra eget programområde | 477 | SSR1001 Forretningsdrift (169)<br>SSR1002 Markedsføring og innovasjon (168)<br>SSR1003 Kultur og samhandling (140)<br>vurdering: SSR1004 Tverrfaglig eksamen, salg, service og reiseliv, privatister | 583.5 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 583.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2312,10 +2267,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Salg, service og reiseliv (SRSSR1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: SSR2001 Økonomi og administrasjon, SSR2002 Kommunikasjon og markedsføring, SSR2003 Helse, miljø og sikkerheit | 554 |
+| Felles programfag fra eget programområde | 477 | SSR2001 Økonomi og administrasjon (168)<br>SSR2002 Kommunikasjon og markedsføring (169)<br>SSR2003 Helse, miljø og sikkerheit (140)<br>vurdering: SSR2004 Tverrfaglig eksamen salg, service og reiseliv | 554 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 554 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2363,11 +2318,11 @@ Tabell 17a (vg1) i Udir-1-2026.
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Matematikk | 84 | velg én: MAT1129 Matematikk 1P-Y TP, MAT1149 Matematikk 1T-Y TP | 525* |
+| Matematikk | 84 | velg én: MAT1129 Matematikk 1P-Y TP, MAT1149 Matematikk 1T-Y TP<br>vurdering: MAT1130 Matematikk 1P-Y TP, muntlig-praktisk, MAT1150 Matematikk 1T-Y TP, muntlig-praktisk | 525* |
 | Naturfag | 56 | NAT1017 Naturfag vg1 TP | 554* |
-| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram | 525* |
+| Engelsk | 140 | ENG1009 Engelsk vg1 yrkesfaglige utdanningsprogram<br>vurdering: ENG1010 Engelsk vg1 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Kroppsøving | 56 | KRO1017 Kroppsøving vg1 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: TIP1006 Produksjon og tjenester, TIP1007 Konstruksjons- og styringsteknikk, TIP1008 Produktivitet og kvalitetsstyring | 635 |
+| Felles programfag fra eget programområde | 477 | TIP1006 Produksjon og tjenester (197)<br>TIP1007 Konstruksjons- og styringsteknikk (140)<br>TIP1008 Produktivitet og kvalitetsstyring (140)<br>vurdering: TIP1009 Tverrfaglig eksamen, teknologi- og industrifag, privatister | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 168 | anbefalt YFF4106 Yrkesfaglig fordypning vg1; 7 YFF-koder å velge blant | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -2387,10 +2342,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: AMK2004 Planlegging og kommunikasjon, AMK2005 Reparasjon og vedlikehold | 635 |
+| Felles programfag fra eget programområde | 477 | AMK2004 Planlegging og kommunikasjon (140)<br>AMK2005 Reparasjon og vedlikehold (337)<br>vurdering: AMK2006 Tverrfaglig eksamen arbeidsmaskiner | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2417,7 +2372,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Arbeidsmaskiner (TPAMK2), Kjøretøy (
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
-| Felles programfag fra eget programområde | 925 | alle: AMM3009 Feilsøking, reparasjon og vedlikehold, AMM3010 Dokumentasjon og kontroll | 635 |
+| Felles programfag fra eget programområde | 925 | AMM3009 Feilsøking, reparasjon og vedlikehold (755)<br>AMM3010 Dokumentasjon og kontroll (170)<br>vurdering: AMK2102 Arbeidsmaskiner, AMM3011 Anleggsmaskinmekanikerfaget, AMM3103 Tverrfaglig eksamen, anleggsmaskinmekanikerfaget | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 ##### Vg2 Bilskade, lakk og karosseri (TPBLK2) · 982 timer ✓
@@ -2426,10 +2381,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BLK2004 Karosseri- og lakkteknikk, BLK2005 Dokumentasjon og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | BLK2004 Karosseri- og lakkteknikk (337)<br>BLK2005 Dokumentasjon og kvalitet (140)<br>vurdering: BLK2006 Tverrfaglig eksamen bilskade, lakk og karosseri | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2457,10 +2412,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BRT2007 Boring, BRT2008 Komplettering og brønnservice, BRT2009 Prosedyrer og praksis | 635 |
+| Felles programfag fra eget programområde | 477 | BRT2007 Boring (197)<br>BRT2008 Komplettering og brønnservice (140)<br>BRT2009 Prosedyrer og praksis (140)<br>vurdering: BRT2010 Tverrfaglig eksamen brønnteknikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2490,10 +2445,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: BMF2004 Produktutvikling og kvalitetssikring, BMF2005 Produksjon | 635 |
+| Felles programfag fra eget programområde | 477 | BMF2004 Produktutvikling og kvalitetssikring (200)<br>BMF2005 Produksjon (277)<br>vurdering: BMF2006 Tverrfaglig eksamen børsemaker | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2517,10 +2472,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: PIN2005 Teknologi, PIN2006 Vedlikehold | 635 |
+| Felles programfag fra eget programområde | 477 | PIN2005 Teknologi (337)<br>PIN2006 Vedlikehold (140)<br>vurdering: PIN2007 Tverrfaglig eksamen industriteknologi | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2572,10 +2527,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: KPL2001 Produksjon og tjenester, KPL2002 Kjemisk teknologi, KPL2003 Analyse, dokumentasjon og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | KPL2001 Produksjon og tjenester (169)<br>KPL2002 Kjemisk teknologi (168)<br>KPL2003 Analyse, dokumentasjon og kvalitet (140)<br>vurdering: KPL2004 Tverrfaglig eksamen kjemiprosess- og laboratoriefag | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2600,10 +2555,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: KJT2004 Verkstedarbeid, KJT2005 Dokumentasjon og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | KJT2004 Verkstedarbeid (337)<br>KJT2005 Dokumentasjon og kvalitet (140)<br>vurdering: KJT2006 Tverrfaglig eksamen kjøretøy | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2640,10 +2595,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: MAR2012 Skipstekniske tjenester, MAR2013 Dokumentasjon og kvalitet | 635 |
+| Felles programfag fra eget programområde | 477 | MAR2012 Skipstekniske tjenester (197)<br>MAR2013 Dokumentasjon og kvalitet (140)<br>velg 1 av: MAR2014 Dekk (140), MAR2015 Maskin (140)<br>vurdering: MAR2016 Tverrfaglig eksamen maritime fag, dekk, MAR2017 Tverrfaglig eksamen maritime fag, maskin | 635, 2 ukoblet |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2654,10 +2609,6 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Med stud.spes Vg1, 982 timer: Norsk 112 → –; Samfunnskunnskap 84 → –; Yrkesfaglig opphenting – → 196 (YFO2002)
 - Samisk, 977 timer: Norsk 112 → 90; Førstespråk samisk – → 45; Yrkesfaglig fordypning 253 → 225
 - Elever med tegnspråk, 982 timer: Norsk tegnspråk – → 56; Yrkesfaglig fordypning 253 → 197
-
-Avvik:
-
-- ⚠ Felles programfag fra eget programområde: rundskrivet har 477 timer, fagene i Grep har til sammen 337.
 
 Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdanningsprogram (PBPBY3).
 
@@ -2672,10 +2623,10 @@ Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). K
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram | 525* |
+| Norsk/norsk for elever med samisk/norsk for elever med tegnspråk | 112 | NOR1262 Norsk, vg2 yrkesfaglige utdanningsprogram<br>vurdering: NOR1263 Norsk, vg2 yrkesfaglige utdanningsprogram, muntlig | 525* |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
-| Felles programfag fra eget programområde | 477 | alle: TOL2001 Bransjeteknikk, TOL2002 Transport, logistikk og løfteoperasjoner, TOL2003 Bransjelære | 635 |
+| Felles programfag fra eget programområde | 477 | TOL2001 Bransjeteknikk (140)<br>TOL2002 Transport, logistikk og løfteoperasjoner (197)<br>TOL2003 Bransjelære (140)<br>vurdering: TOL2004 Tverrfaglig eksamen transport og logistikk | 635 |
 | Yrkesfaglig fordypning (obligatorisk) | 253 | anbefalt YFF4209 Yrkesfaglig fordypning vg2; 14 YFF-koder å velge blant | 635 |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -2702,7 +2653,7 @@ Tabell 21 (Vg3) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1).
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Kroppsøving | 56 | **ingen fagkode i Grep** |  |
-| Felles programfag fra eget programområde | 925 | **ingen fagkode i Grep** |  |
+| Felles programfag fra eget programområde | 925 | **ingen fagkode i Grep**<br>vurdering: 4 koder |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
 Avvik:
@@ -2720,8 +2671,8 @@ Tabell 26 (Vg3) i Udir-1-2026. Bygger på 52 programområder: BA 8, DT 7, EL 6, 
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
-| Norsk | 281 | NOR1270 Norsk hovedmål, vg3 påbygging til generell studiekompetanse, skriftlig | 466.5* |
-| Matematikk | 140 | MAT1151 Matematikk 2P-Y | 496 |
+| Norsk | 281 | NOR1270 Norsk hovedmål, vg3 påbygging til generell studiekompetanse, skriftlig<br>vurdering: NOR1271 Norsk sidemål, vg3 påbygging til generell studiekompetanse, skriftlig, NOR1272 Norsk, vg3 påbygging til generell studiekompetanse, muntlig | 466.5* |
+| Matematikk | 140 | MAT1151 Matematikk 2P-Y<br>vurdering: MAT1152 Matematikk 2P-Y, muntlig-praktisk | 496 |
 | Naturfag | 84 | NAT1018 Naturfag Vg3 påbygging til generell studiekompetanse | 554* |
 | Historie | 140 | HIS1011 Historie Vg3 påbygging til generell studiekompetanse | 554 |
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
