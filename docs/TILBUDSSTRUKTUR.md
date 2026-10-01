@@ -2840,7 +2840,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anlegg
 | Matematikk | 140 | MAT1151 Matematikk 2P-Y<br>vurdering: MAT1152 Matematikk 2P-Y, muntlig-praktisk | 496 |
 | Naturfag | 84 | NAT1018 Naturfag Vg3 påbygging til generell studiekompetanse | 554* |
 | Historie | 140 | HIS1011 Historie Vg3 påbygging til generell studiekompetanse | 554 |
-| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | flertydig |
+| Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **841** | Rundskrivet: 841 | |
 

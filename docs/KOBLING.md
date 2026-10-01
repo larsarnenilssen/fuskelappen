@@ -9,11 +9,11 @@ Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplis
 | | Fagkoder |
 |---|---:|
 | Fagkoder i videregående i Grep | 1978 |
-| Koblet til én årsramme | 930 |
+| Koblet til én årsramme | 1080 |
 | Koblet, men årsrammen avhenger av utdanningsprogram eller trinn (kalkulatoren spør) | 117 |
-| Ikke koblet (listen nederst) | 931 |
+| Ikke koblet (listen nederst) | 781 |
 
-Av de koblede er 733 koblet eksplisitt og 314 med regel.
+Av de koblede er 733 koblet eksplisitt og 464 med regel.
 
 ## Avvik
 
@@ -92,18 +92,20 @@ Et fast utvalg koblinger (det samme fra uke til uke så lenge dataene er de samm
 | IDRPF05 | Konkurranse- og toppidrett 3 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
 | KDA3009 | Arkitektur og samfunn | KD Vg2 | 96: Felles programfag – Kunst, design og arkitektur Vg2 | 525/700 | regel kd-vg2-valgfrie |
 | KDA3009 | Arkitektur og samfunn | KD Vg3 | 97: Felles programfag – Kunst, design og arkitektur Vg3 | 525/700 | regel kd-vg3-valgfrie |
+| PSP6008 | Tigrinja nivå II | ST Vg2 | 102: Fremmedspråk – Stud.spes Vg2 | 496/661 | regel st-vg2-fremmedsprak |
+| PSP6008 | Tigrinja nivå II | ST Vg3 | 103: Fremmedspråk – Stud.spes Vg3 | 496/661 | regel st-vg3-fremmedsprak |
 | IDR3022 | Lederutvikling 2 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
 | IDR3022 | Lederutvikling 2 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
 | IDR3022 | Lederutvikling 2 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
 | APO3005 | Helseveiledning i apotek | HS Vg3 | 24: Felles programfag – Helse/sos Vg3 | 607,5/810 | regel hs-vg3 |
 | BLK2004 | Karosseri- og lakkteknikk | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
+| PSP5816 | Sørsamisk nivå II | ST Vg2 | 102: Fremmedspråk – Stud.spes Vg2 | 496/661 | regel st-vg2-fremmedsprak |
+| PSP5816 | Sørsamisk nivå II | ST Vg3 | 103: Fremmedspråk – Stud.spes Vg3 | 496/661 | regel st-vg3-fremmedsprak |
+| PSP5840 | Tysk nivå II | ST Vg2 | 102: Fremmedspråk – Stud.spes Vg2 | 496/661 | regel st-vg2-fremmedsprak |
+| PSP5840 | Tysk nivå II | ST Vg3 | 103: Fremmedspråk – Stud.spes Vg3 | 496/661 | regel st-vg3-fremmedsprak |
+| PSP5796 | Fransk nivå I | ST Vg2 | 102: Fremmedspråk – Stud.spes Vg2 | 496/661 | regel st-vg2-fremmedsprak |
+| PSP5796 | Fransk nivå I | ST Vg3 | 103: Fremmedspråk – Stud.spes Vg3 | 496/661 | regel st-vg3-fremmedsprak |
 | BMF2004 | Produktutvikling og kvalitetssikring | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
-| UIM2004 | Produksjon og vedlikehold | DT Vg2 | 17: Felles programfag – Håndverk, design og produktutvikling Vg2 | 635/847 | regel dt-vg2 |
-| KPL2003 | Analyse, dokumentasjon og kvalitet | TP Vg2 | 20: Felles programfag – Tekn/ind.prod Vg2 | 635/847 | regel tp-vg2 |
-| STH2001 | Design og produktutvikling | DT Vg2 | 17: Felles programfag – Håndverk, design og produktutvikling Vg2 | 635/847 | regel dt-vg2 |
-| IDR3018 | Breddeidrett 3 | ID Vg1 | 59: Felles programfag – Idrett Vg1 | 554/739 | regel id-vg1-valgfrie |
-| IDR3018 | Breddeidrett 3 | ID Vg2 | 92: Felles programfag – Idrett Vg2 | 525/700 | regel id-vg2-valgfrie |
-| IDR3018 | Breddeidrett 3 | ID Vg3 | 93: Felles programfag – Idrett Vg3 | 525/700 | regel id-vg3-valgfrie |
 
 ## Program og trinn uten kobling
 
@@ -111,169 +113,18 @@ Fag med årstimer som brukes på et utdanningsprogram og trinn i Grep, men som i
 
 | Program | Trinn | Fagtype | Fagkoder | Eksempler |
 |---|---|---|---:|---|
-| Påbygging til generell studiekompetanse (PB) | Vg3 | fellesfag | 1 | KRO1019 |
 | Studiespesialisering (ST) | Vg1 | valgfritt programfag | 2 | KRI1023, KRI1028 |
-| Studiespesialisering (ST) | Vg2 | valgfritt programfag | 164 | KRI1024, KRI1029, PSP5790, PSP5792 |
-| Studiespesialisering (ST) | Vg3 | valgfritt programfag | 163 | SPR3022, PSP5790, PSP5792, PSP5794 |
+| Studiespesialisering (ST) | Vg2 | valgfritt programfag | 14 | KRI1024, KRI1029, REA3041, REA3051 |
+| Studiespesialisering (ST) | Vg3 | valgfritt programfag | 13 | SPR3022, REA3041, REA3051, REA3055 |
 
 ## Fagkoder som ikke er koblet
 
-### Programfag uten rad i vedlegg 1 (162)
+### Programfag uten rad i vedlegg 1 (12)
 
 Programfag med årstimer der ingen regel eller eksplisitt kobling passer: valgfrie programfag vedlegget ikke nevner, og program og trinn uten rad for felles programfag.
 
 <details><summary>Vis fagkodene</summary>
 
-- PSP5790 Finsk nivå I (ST Vg2, ST Vg3)
-- PSP5792 Finsk nivå II (ST Vg2, ST Vg3)
-- PSP5794 Finsk nivå III (ST Vg2, ST Vg3)
-- PSP5796 Fransk nivå I (ST Vg2, ST Vg3)
-- PSP5798 Fransk nivå II (ST Vg2, ST Vg3)
-- PSP5800 Fransk nivå III (ST Vg2, ST Vg3)
-- PSP5802 Lulesamisk nivå I (ST Vg2, ST Vg3)
-- PSP5804 Lulesamisk nivå II (ST Vg2, ST Vg3)
-- PSP5806 Lulesamisk nivå III (ST Vg2, ST Vg3)
-- PSP5808 Nordsamisk nivå I (ST Vg2, ST Vg3)
-- PSP5810 Nordsamisk nivå II (ST Vg2, ST Vg3)
-- PSP5812 Nordsamisk nivå III (ST Vg2, ST Vg3)
-- PSP5814 Sørsamisk, nivå I (ST Vg2, ST Vg3)
-- PSP5816 Sørsamisk nivå II (ST Vg2, ST Vg3)
-- PSP5818 Sørsamisk nivå III (ST Vg2, ST Vg3)
-- PSP5820 Russisk, nivå I (ST Vg2, ST Vg3)
-- PSP5822 Russisk nivå II (ST Vg2, ST Vg3)
-- PSP5824 Russisk nivå III (ST Vg2, ST Vg3)
-- PSP5826 Spansk, nivå I (ST Vg2, ST Vg3)
-- PSP5828 Spansk nivå II (ST Vg2, ST Vg3)
-- PSP5830 Spansk nivå III (ST Vg2, ST Vg3)
-- PSP5832 Tegnspråk, nivå I (ST Vg2, ST Vg3)
-- PSP5834 Tegnspråk nivå II (ST Vg2, ST Vg3)
-- PSP5836 Tegnspråk nivå III (ST Vg2, ST Vg3)
-- PSP5838 Tysk, nivå I (ST Vg2, ST Vg3)
-- PSP5840 Tysk nivå II (ST Vg2, ST Vg3)
-- PSP5842 Tysk nivå III (ST Vg2, ST Vg3)
-- PSP5844 Italiensk nivå I (ST Vg2, ST Vg3)
-- PSP5846 Italiensk nivå II (ST Vg2, ST Vg3)
-- PSP5848 Italiensk nivå III (ST Vg2, ST Vg3)
-- PSP5850 Japansk nivå I (ST Vg2, ST Vg3)
-- PSP5852 Japansk nivå II (ST Vg2, ST Vg3)
-- PSP5854 Japansk nivå III (ST Vg2, ST Vg3)
-- PSP5856 Arabisk nivå I (ST Vg2, ST Vg3)
-- PSP5858 Arabisk nivå II (ST Vg2, ST Vg3)
-- PSP5860 Arabisk nivå III (ST Vg2, ST Vg3)
-- PSP5862 Kinesisk nivå I (ST Vg2, ST Vg3)
-- PSP5864 Kinesisk nivå II (ST Vg2, ST Vg3)
-- PSP5866 Kinesisk nivå III (ST Vg2, ST Vg3)
-- PSP5868 Portugisisk nivå I (ST Vg2, ST Vg3)
-- PSP5870 Portugisisk nivå II (ST Vg2, ST Vg3)
-- PSP5872 Portugisisk nivå III (ST Vg2, ST Vg3)
-- PSP5874 Albansk nivå I (ST Vg2, ST Vg3)
-- PSP5876 Albansk nivå II (ST Vg2, ST Vg3)
-- PSP5878 Albansk nivå III (ST Vg2, ST Vg3)
-- PSP5880 Bosnisk nivå I (ST Vg2, ST Vg3)
-- PSP5882 Bosnisk nivå II (ST Vg2, ST Vg3)
-- PSP5884 Bosnisk nivå III (ST Vg2, ST Vg3)
-- PSP5886 Dari nivå I (ST Vg2, ST Vg3)
-- PSP5888 Dari nivå II (ST Vg2, ST Vg3)
-- PSP5890 Dari nivå III (ST Vg2, ST Vg3)
-- PSP5892 Koreansk nivå I (ST Vg2, ST Vg3)
-- PSP5894 Koreansk nivå II (ST Vg2, ST Vg3)
-- PSP5896 Koreansk nivå III (ST Vg2, ST Vg3)
-- PSP5898 Kurdisk (sorani) nivå I (ST Vg2, ST Vg3)
-- PSP5900 Kurdisk (sorani) nivå II (ST Vg2, ST Vg3)
-- PSP5902 Kurdisk (sorani) nivå III (ST Vg2, ST Vg3)
-- PSP5904 Persisk nivå I (ST Vg2, ST Vg3)
-- PSP5906 Persisk nivå II (ST Vg2, ST Vg3)
-- PSP5908 Persisk nivå III (ST Vg2, ST Vg3)
-- PSP5910 Polsk nivå I (ST Vg2, ST Vg3)
-- PSP5912 Polsk nivå II (ST Vg2, ST Vg3)
-- PSP5914 Polsk nivå III (ST Vg2, ST Vg3)
-- PSP5916 Somali nivå I (ST Vg2, ST Vg3)
-- PSP5918 Somali nivå II (ST Vg2, ST Vg3)
-- PSP5920 Somali nivå III (ST Vg2, ST Vg3)
-- PSP5922 Tamil nivå I (ST Vg2, ST Vg3)
-- PSP5924 Tamil nivå II (ST Vg2, ST Vg3)
-- PSP5926 Tamil nivå III (ST Vg2, ST Vg3)
-- PSP5928 Tyrkisk nivå I (ST Vg2, ST Vg3)
-- PSP5930 Tyrkisk nivå II (ST Vg2, ST Vg3)
-- PSP5932 Tyrkisk nivå III (ST Vg2, ST Vg3)
-- PSP5934 Urdu nivå I (ST Vg2, ST Vg3)
-- PSP5936 Urdu nivå II (ST Vg2, ST Vg3)
-- PSP5938 Urdu nivå III (ST Vg2, ST Vg3)
-- PSP5940 Vietnamesisk nivå I (ST Vg2, ST Vg3)
-- PSP5942 Vietnamesisk nivå II (ST Vg2, ST Vg3)
-- PSP5944 Vietnamesisk nivå III (ST Vg2, ST Vg3)
-- PSP5946 Amharisk nivå I (ST Vg2, ST Vg3)
-- PSP5948 Amharisk nivå II (ST Vg2, ST Vg3)
-- PSP5950 Amharisk nivå III (ST Vg2, ST Vg3)
-- PSP5952 Estisk nivå I (ST Vg2, ST Vg3)
-- PSP5954 Estisk nivå II (ST Vg2, ST Vg3)
-- PSP5956 Estisk nivå III (ST Vg2, ST Vg3)
-- PSP5958 Filipino nivå I (ST Vg2, ST Vg3)
-- PSP5960 Filipino nivå II (ST Vg2, ST Vg3)
-- PSP5962 Filipino nivå III (ST Vg2, ST Vg3)
-- PSP5964 Hebraisk nivå I (ST Vg2, ST Vg3)
-- PSP5966 Hebraisk nivå II (ST Vg2, ST Vg3)
-- PSP5968 Hebraisk nivå III (ST Vg2, ST Vg3)
-- PSP5970 Kantonesisk nivå I (ST Vg2, ST Vg3)
-- PSP5972 Kantonesisk nivå II (ST Vg2, ST Vg3)
-- PSP5974 Kantonesisk nivå III (ST Vg2, ST Vg3)
-- PSP5976 Latvisk nivå I (ST Vg2, ST Vg3)
-- PSP5978 Latvisk nivå II (ST Vg2, ST Vg3)
-- PSP5980 Latvisk nivå III (ST Vg2, ST Vg3)
-- PSP5982 Nederlandsk nivå I (ST Vg2, ST Vg3)
-- PSP5984 Nederlandsk nivå II (ST Vg2, ST Vg3)
-- PSP5986 Nederlandsk nivå III (ST Vg2, ST Vg3)
-- PSP5988 Oromo nivå I (ST Vg2, ST Vg3)
-- PSP5990 Oromo nivå II (ST Vg2, ST Vg3)
-- PSP5992 Oromo nivå III (ST Vg2, ST Vg3)
-- PSP5994 Panjabi nivå I (ST Vg2, ST Vg3)
-- PSP5996 Panjabi nivå II (ST Vg2, ST Vg3)
-- PSP5998 Panjabi nivå III (ST Vg2, ST Vg3)
-- PSP6000 Pashto nivå I (ST Vg2, ST Vg3)
-- PSP6002 Pashto nivå II (ST Vg2, ST Vg3)
-- PSP6004 Pashto nivå III (ST Vg2, ST Vg3)
-- PSP6006 Tigrinja nivå I (ST Vg2, ST Vg3)
-- PSP6008 Tigrinja nivå II (ST Vg2, ST Vg3)
-- PSP6010 Tigrinja nivå III (ST Vg2, ST Vg3)
-- PSP6012 Islandsk nivå I (ST Vg2, ST Vg3)
-- PSP6014 Islandsk nivå II (ST Vg2, ST Vg3)
-- PSP6016 Islandsk nivå III (ST Vg2, ST Vg3)
-- PSP6018 Hindi nivå I (ST Vg2, ST Vg3)
-- PSP6020 Hindi nivå II (ST Vg2, ST Vg3)
-- PSP6022 Hindi nivå III (ST Vg2, ST Vg3)
-- PSP6032 Litauisk nivå I (ST Vg2, ST Vg3)
-- PSP6034 Litauisk nivå II (ST Vg2, ST Vg3)
-- PSP6036 Litauisk nivå III (ST Vg2, ST Vg3)
-- PSP6038 Thai nivå I (ST Vg2, ST Vg3)
-- PSP6040 Thai nivå II (ST Vg2, ST Vg3)
-- PSP6042 Thai nivå III (ST Vg2, ST Vg3)
-- PSP6044 Serbisk nivå I (ST Vg2, ST Vg3)
-- PSP6046 Serbisk nivå II (ST Vg2, ST Vg3)
-- PSP6048 Serbisk nivå III (ST Vg2, ST Vg3)
-- PSP6050 Nygresk nivå I (ST Vg2, ST Vg3)
-- PSP6052 Nygresk nivå II (ST Vg2, ST Vg3)
-- PSP6054 Nygresk nivå III (ST Vg2, ST Vg3)
-- PSP6056 Ungarsk nivå I (ST Vg2, ST Vg3)
-- PSP6058 Ungarsk nivå II (ST Vg2, ST Vg3)
-- PSP6060 Ungarsk nivå III (ST Vg2, ST Vg3)
-- PSP6062 Ukrainsk nivå I (ST Vg2, ST Vg3)
-- PSP6064 Ukrainsk nivå II (ST Vg2, ST Vg3)
-- PSP6066 Ukrainsk nivå III (ST Vg2, ST Vg3)
-- PSP6068 Bulgarsk nivå I (ST Vg2, ST Vg3)
-- PSP6070 Bulgarsk nivå II (ST Vg2, ST Vg3)
-- PSP6072 Bulgarsk nivå III (ST Vg2, ST Vg3)
-- PSP6074 Kroatisk nivå I (ST Vg2, ST Vg3)
-- PSP6076 Kroatisk nivå II (ST Vg2, ST Vg3)
-- PSP6078 Kroatisk nivå III (ST Vg2, ST Vg3)
-- PSP6080 Kurdisk (kurmanji) nivå I (ST Vg2, ST Vg3)
-- PSP6082 Kurdisk (kurmanji) nivå II (ST Vg2, ST Vg3)
-- PSP6084 Kurdisk (kurmanji) nivå III (ST Vg2, ST Vg3)
-- PSP6086 Rumensk nivå I (ST Vg2, ST Vg3)
-- PSP6088 Rumensk nivå II (ST Vg2, ST Vg3)
-- PSP6090 Rumensk nivå III (ST Vg2, ST Vg3)
-- PSP6092 Kvensk nivå I (ST Vg2, ST Vg3)
-- PSP6094 Kvensk nivå II (ST Vg2, ST Vg3)
-- PSP6096 Kvensk nivå III (ST Vg2, ST Vg3)
 - REA3041 Geofag X (ST Vg2, ST Vg3)
 - REA3051 Teknologi og forskningslære X (ST Vg2, ST Vg3)
 - REA3055 Matematikk X (ST Vg2, ST Vg3)
