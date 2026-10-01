@@ -414,7 +414,7 @@ Eier har gitt innspill til «Fag og vurdering» og fase 1, og svart på B1–B6.
    - Fagarket viser grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del.
    - Kilder: Grep har grunnleggende ferdigheter og tverrfaglige temaer (koder og titler). Teksten i overordnet del hentes fra Lovdatas datasett (forskrift) eller fra udir.no. Det avgjøres i pakken.
 
-Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) og pakke 3 i 0.13.0 (avgjørelse 031), 01.10.2026.
+Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) pakke 3 i 0.13.0 (avgjørelse 031) og pakke 4 i 0.14.0, 01.10.2026. Eier ba 01.10.2026 i tillegg om dempede diagramfarger i mørk visning, egen bakgrunn i «Flere kalkulatorer», punktum i oppsummeringen og periodebeskjeftigelse i teksten om Arbeidsplan. Det kom med i pakke 4.
 
 Begrepsbanken utvides der det passer i hver pakke. Nytt og endret innhold får `kontrollert: null` og kontrollspørsmål med kilder. Fasittestene endres ikke.
 

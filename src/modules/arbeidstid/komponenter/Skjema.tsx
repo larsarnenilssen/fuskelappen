@@ -177,7 +177,7 @@ export function radTekst(indeks: Fagindeks, nr: string): { navn: string; t60: nu
 }
 
 /** Koblingstabellene og radene i vedlegg 1 for perioden, eller null hvis regelsettet ikke har koblingen. */
-function useKoblingsdata(): { tabeller: Koblingstabeller; rader: Arsrammerad[] } | null {
+export function useKoblingsdata(): { tabeller: Koblingstabeller; rader: Arsrammerad[] } | null {
   const hent = useHent();
   return useMemo(() => {
     try {

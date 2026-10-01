@@ -75,3 +75,14 @@ describe('gruppering', () => {
     expect(grupper.reduce((s, g) => s + g.treff.length, 0)).toBe(treff.length);
   });
 });
+
+describe('programmene på fagarket', () => {
+  it('samler alle yrkesfaglige og alle studieforberedende utdanningsprogram', async () => {
+    const { programSammendrag, programmerFor } = await import('../../src/modules/fag/oppslag.ts');
+    const yff = indeks.fag.YFF4106;
+    expect(yff).toBeDefined();
+    if (!yff) return;
+    expect(programSammendrag(indeks, programmerFor(indeks, yff))).toEqual({ alleYrkesfaglige: true, alleStudieforberedende: false, andre: [] });
+    expect(programSammendrag(indeks, ['HS', 'ST'])).toEqual({ alleYrkesfaglige: false, alleStudieforberedende: false, andre: ['HS', 'ST'] });
+  });
+});

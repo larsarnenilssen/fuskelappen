@@ -55,6 +55,29 @@ test.describe('fag og læreplaner', () => {
     await expect(page.locator('.forklaring-innhold p').first()).toBeVisible();
   });
 
+  test('fagarket viser årsramme, og «Regn ut i Arbeidsplan» åpner en ny arbeidsplan med faget (eier 01.10.2026)', async ({ page }) => {
+    await page.goto('./#/fag/HEA2005');
+    const ramme = page.locator('.egenskaper > div', { hasText: 'Årsramme' });
+    await expect(ramme).toContainText('607,5');
+    await expect(ramme).toContainText('appens tolkning av vedlegg 1');
+    // Delene kan lukkes: kompetansemål og vurdering er åpne, programområdene lukket.
+    await expect(page.getByRole('button', { name: /^Kompetansemål og læreplan/ })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: 'Vurderingsordning', exact: true })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: /^Programområder/ })).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.getByRole('link', { name: 'Om begrepet felles programfag' })).toHaveAttribute('href', '#/begreper/felles-programfag');
+    await ramme.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+    await expect(page.locator('[data-gruppe="1"] .fagvalg')).toContainText('HEA2005');
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('197');
+  });
+
+  test('fagarket for yrkesfaglig fordypning forklarer faget og samler programmene', async ({ page }) => {
+    await page.goto('./#/fag/YFF4106');
+    await expect(page.getByText('Alle yrkesfaglige utdanningsprogram')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Om yrkesfaglig fordypning' })).toBeVisible();
+    await expect(page.locator('.merknad')).toContainText('lokale læreplaner');
+  });
+
   test('læreplaner fastsatt på nynorsk vises på nynorsk også når appen er på bokmål', async ({ page }) => {
     await page.goto('./#/fag/AKT2004');
     await expect(page.getByText('Fastsatt på nynorsk.', { exact: false })).toBeVisible();

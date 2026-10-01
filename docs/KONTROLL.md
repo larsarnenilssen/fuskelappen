@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 75 |
+| Ikke kontrollert | 85 |
 | Praksis og tolkninger som bør bekreftes | 13 av 13 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -117,6 +117,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Livsfasetiltak (redusert undervisning) (`livsfasetiltak`) | begrep | 4, 6 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Kontaktlærer (`kontaktlaerer`) | begrep | 7.3 b, 9.1, Vedlegg 1 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Godtgjøring for funksjoner (`funksjonsgodtgjoring`) | begrep | 9.1 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
+| Fellesfag (`fellesfag`) | begrep | Vedlegg 1 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 
 ### Hovedtariffavtalen 1.5.2026–30.4.2028
 
@@ -185,6 +186,54 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | `kobling_programfag` (sfs2213-2026-2027) | – | tabell, 54 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_regler` (sfs2213-2026-2027) | – | tabell, 63 rader | avledet av andre verdier | ikke kontrollert |
 | `kobling_yff` (sfs2213-2026-2027) | – | tabell, 21 rader | praksis, sjekkes ikke automatisk | ikke kontrollert |
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Programområde (`programomrade`) | begrep | Programområder | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Programfag og valgfrie programfag (`programfag`) | begrep | Fagtype | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+
+### Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)
+
+`udir-fag-og-timefordeling` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Utdanningsprogram (`utdanningsprogram`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Programområde (`programomrade`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Vg1, vg2 og vg3 (`trinn-vg`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur, Vedlegg 1, 3.4 og 3.4.3 Særløp | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Fellesfag (`fellesfag`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag), Vedlegg 1, 3.4.1 Fellesfag | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Felles programfag (`felles-programfag`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag), Vedlegg 1, 3.4.2 Vg1 og vg2 i skole | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Programfag og valgfrie programfag (`programfag`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag) | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Yrkesfaglig fordypning (YFF) (`yrkesfaglig-fordypning`) | begrep | Vedlegg 1, 3.4.2 Yrkesfaglig fordypning | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Lærefag og opplæring i bedrift (`opplaering-i-bedrift`) | begrep | Vedlegg 1, 3.1, 3.4.3, 3.4.4 og 3.4.5 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Påbygging til generell studiekompetanse (`pabygging`) | begrep | Vedlegg 1, 3.5.2 og 3.5.3 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Kryssløp (`krysslop`) | begrep | Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+
+### Registreringshåndboken, A03 Programområdekode
+
+`udir-regbok-programomradekode` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://regbok.udir.no/felt/?Id=1014307)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Programområde (`programomrade`) | begrep | A03 Programområdekode | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Påbygging til generell studiekompetanse (`pabygging`) | begrep | A03 Programområdekode (PBPBY4) | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+
+### Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020
+
+`udir-yff-forskrift` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Programfag og valgfrie programfag (`programfag`) | begrep | 3.1.3 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Yrkesfaglig fordypning (YFF) (`yrkesfaglig-fordypning`) | begrep | 1 Formålet, 2 Omfang, 3 Valg av innhold og 4 Vurdering | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 
 ### Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis
 
@@ -492,6 +541,12 @@ Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](http
 
 Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.1
 
+**Fellesfag** (`fellesfag`, begrep, ikke kontrollert)
+
+- Er det riktig og nyttig å nevne at årsrammen for et fellesfag kan være ulik på ulike utdanningsprogram og trinn?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag); [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.4.1 Fellesfag; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1
+
 **Kalkulert tid** (`kalkulert-tid`, begrep, ikke kontrollert)
 
 - Er «kalkulert tid» et begrep som brukes i Visma InSchool eller lønnssystemet, eller bør det stå at det er appens navn?
@@ -511,6 +566,62 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 - Er delt dagsverk (arbeidsdagen strekker seg over 9 timer eller mer) beskrevet riktig etter hovedtariffavtalen § 5.5?
 
 Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 5.5
+
+**Programområde** (`programomrade`, begrep, ikke kontrollert)
+
+- Er «et tilbud på ett trinn i et utdanningsprogram» en dekkende forklaring av programområde?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur; [Registreringshåndboken, A03 Programområdekode](https://regbok.udir.no/felt/?Id=1014307): A03 Programområdekode; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Programområder
+
+**Programfag og valgfrie programfag** (`programfag`, begrep, ikke kontrollert)
+
+- Er det riktig å si at fylkeskommunen bestemmer hvilke valgfrie programfag skolen tilbyr?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag); [Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/): punkt 3.1.3; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Fagtype
+
+**Utdanningsprogram** (`utdanningsprogram`, begrep, ikke kontrollert)
+
+- Grep har påbygging til generell studiekompetanse som eget utdanningsprogram (PB), mens rundskrivet regner det som et tilbud innenfor yrkesfag (3.5). Bør begrepet nevne dette?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur
+
+**Vg1, vg2 og vg3** (`trinn-vg`, begrep, ikke kontrollert)
+
+- Er hovedmodellen for yrkesfag (to år i skole og to år i bedrift, der ett år er verdiskaping) beskrevet riktig?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.4 og 3.4.3 Særløp
+
+**Felles programfag** (`felles-programfag`, begrep, ikke kontrollert)
+
+- Er 954 timer felles programfag på vg1 og vg2 til sammen riktig for alle yrkesfaglige utdanningsprogram?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag); [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.4.2 Vg1 og vg2 i skole
+
+**Yrkesfaglig fordypning (YFF)** (`yrkesfaglig-fordypning`, begrep, ikke kontrollert)
+
+- Er forklaringen av hva timene kan brukes til, riktig og dekkende etter forskriften punkt 3?
+- Rundskrivet sier 421 timer på vg1 og vg2 til sammen, forskriften 168 + 253. Er det riktig å oppgi timene per trinn?
+- Er det nyttig å nevne at elever med særskilt rett til eksamen (forskriften punkt 4.1) skal opp til praktisk eksamen, eller er det for detaljert?
+
+Kilder å sjekke mot: [Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/): punkt 1 Formålet, 2 Omfang, 3 Valg av innhold og 4 Vurdering; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.4.2 Yrkesfaglig fordypning
+
+**Lærefag og opplæring i bedrift** (`opplaering-i-bedrift`, begrep, ikke kontrollert)
+
+- Er det dekkende å si at lærlinger «kan være fritatt» fra kroppsøving og yrkesfaglig fordypning, eller bør vilkårene i 3.4.3 og 3.4.5 stå?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.1, 3.4.3, 3.4.4 og 3.4.5
+
+**Påbygging til generell studiekompetanse** (`pabygging`, begrep, ikke kontrollert)
+
+- Er retten til vg4 påbygging (fullført og bestått innen utgangen av året man fyller 24 år) gjengitt riktig, og bør unntakene for praksiskandidater nevnes?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/): Vedlegg 1, 3.5.2 og 3.5.3; [Registreringshåndboken, A03 Programområdekode](https://regbok.udir.no/felt/?Id=1014307): A03 Programområdekode (PBPBY4)
+
+**Kryssløp** (`krysslop`, begrep, ikke kontrollert)
+
+- Rundskrivet sier at elever fra vg1 studiespesialisering til «alle andre vg2 yrkesfag» skal ha yrkesfaglig opphenting. Er «som hovedregel» riktig, og hvilke vg2 er unntatt?
+
+Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger
 
 **Fagmerknader (FAM-koder)** (`fagmerknader`, begrep, ikke kontrollert)
 

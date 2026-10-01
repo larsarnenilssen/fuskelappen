@@ -4,6 +4,24 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.14.0] – 2026-10-01
+
+### Lagt til
+
+- **Årsramme på fagarket:** Der koblingen til vedlegg 1 kjenner årsrammen, står den på fagarket, med en merknad om at den bygger på appens tolkning av vedlegget. Avhenger den av program og trinn, står hver rad. «Regn ut i Arbeidsplan» åpner en ny, ulagret arbeidsplan med faget som fag 1.
+- **Begreper om opplæringsløpet:** utdanningsprogram, programområde, vg1–vg3, fellesfag, felles programfag, programfag og valgfrie programfag, yrkesfaglig fordypning, lærefag og opplæring i bedrift, påbygging og kryssløp. Fagarket har «i» med lenke til begrepene.
+- Fagarket for yrkesfaglig fordypning forklarer hvorfor faget ikke har egen læreplan, og hva timene kan brukes til, etter Udirs forskrift om yrkesfaglig fordypning.
+
+### Endret
+
+- **Fagarket:** Grunnopplysningene står øverst, så kompetansemålene, så vurderingen samlet på ett sted (også vurderingsordningen i læreplanen), og til slutt programområdene. Hver del kan lukkes. Fag som brukes i alle yrkesfaglige eller alle studieforberedende utdanningsprogram, viser det i stedet for en lang liste.
+- **Mørk visning:** Diagrammene i kalkulatorene har dempede farger og hvit tekst i stolpene.
+- **Forsiden:** Kalkulatorene i «Flere kalkulatorer» har en egen bakgrunn, så de skiller seg fra siden. Teksten om Arbeidsplan nevner periodebeskjeftigelse.
+
+### Rettet
+
+- Overskriftene for kompetansemål, underveisvurdering og standpunktvurdering viser ikke lenger «Kompetansemål og vurdering» to ganger eller et kolon uten noe etter.
+
 ## [0.13.0] – 2026-10-01
 
 ### Endret
@@ -405,7 +423,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.13.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.14.0...HEAD
+[0.14.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.14.0
 [0.13.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.13.0
 [0.12.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.12.0
 [0.11.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.11.0

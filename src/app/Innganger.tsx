@@ -33,7 +33,7 @@ function Flere({ modul, tittel, liste }: { modul: Modulmanifest; tittel: string;
         <Ikon navn={liste[0]?.ikon ?? modul.ikon} />
         <span class="listelenke-tekst">
           <span class="listelenke-tittel">{tittel}</span>
-          <span class="listelenke-under">{navn.join(', ')}</span>
+          <span class="listelenke-under">{`${navn.join(', ')}.`}</span>
         </span>
         <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
       </button>

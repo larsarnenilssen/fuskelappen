@@ -1,5 +1,6 @@
 // Søk og filter i fagindeksen fra Grep. Rene funksjoner uten avhengighet til grensesnittet.
 import { type Fagklasse, SKJULTE } from './klasser.ts';
+import { programgruppe } from './tilbud/modell.ts';
 import type { Fag, Fagindeks, Fagtype, Trinn } from './skjema.ts';
 
 export interface Fagfilter {
@@ -44,6 +45,20 @@ export function normaliser(tekst: string): string {
 /** Utdanningsprogrammene faget brukes i, ut fra programområdene. */
 export function programmerFor(indeks: Fagindeks, fag: Fag): string[] {
   return [...new Set(fag.po.map((p) => indeks.programomrader[p]?.program).filter((p): p is string => p !== undefined))].sort();
+}
+
+/**
+ * Programmene faget brukes i, samlet: «alle yrkesfaglige» når faget brukes i alle de yrkesfaglige programmene,
+ * tilsvarende for de studieforberedende, og resten for seg (eier 01.10.2026).
+ */
+export function programSammendrag(indeks: Fagindeks, programmer: readonly string[]): { alleYrkesfaglige: boolean; alleStudieforberedende: boolean; andre: string[] } {
+  const alle = Object.keys(indeks.utdanningsprogram);
+  const gruppe = (g: 'yrkesfaglig' | 'studieforberedende') => alle.filter((p) => programgruppe(p) === g);
+  const har = (liste: string[]) => liste.length > 1 && liste.every((p) => programmer.includes(p));
+  const alleYrkesfaglige = har(gruppe('yrkesfaglig'));
+  const alleStudieforberedende = har(gruppe('studieforberedende'));
+  const andre = programmer.filter((p) => !(alleYrkesfaglige && programgruppe(p) === 'yrkesfaglig') && !(alleStudieforberedende && programgruppe(p) === 'studieforberedende'));
+  return { alleYrkesfaglige, alleStudieforberedende, andre };
 }
 
 /** Merkene for vurderingsordningen for elever: «standpunkt» og trekkordningen. */

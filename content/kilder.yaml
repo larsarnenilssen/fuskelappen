@@ -168,6 +168,23 @@ kilder:
       i tillegg til «fag for studiekompetanse» for voksne og privatister. Sist endret 08.04.2025. Håndboken har
       ikke API; vurderingen av den som kilde står i docs/REGISTRERINGSHANDBOKEN.md.
 
+  - id: udir-yff-forskrift
+    navn: Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: .rich-text
+    godkjent_fingeravtrykk: null
+    faser: [2]
+    merknad: >-
+      Primærkilden for begrepet «Yrkesfaglig fordypning» og forklaringen på fagarket for fagene i yrkesfaglig
+      fordypning: formål, omfang, hva timene kan brukes til og vurdering.
+
   - id: udir-foring-vitnemal-merknader
     navn: Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis
     utgiver: Utdanningsdirektoratet

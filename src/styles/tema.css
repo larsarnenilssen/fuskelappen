@@ -31,6 +31,9 @@
   --diagram-planlegging: var(--p-turkis-700);
   --diagram-funksjon: var(--p-lilla-700);
   --diagram-selv: var(--p-graa-600);
+  --diagram-etikett: var(--p-hvit);
+  --diagram-variabel: var(--p-rav-700);
+  --diagram-over: var(--p-roed-700);
 }
 
 :root[data-tema='mork'] {
@@ -55,12 +58,15 @@
   --farge-info-flate: var(--p-blaa-800);
   --farge-fokus: var(--p-fokus-mork);
   --farge-temafarge: var(--meta-temafarge-mork);
-  --diagram-undervisning: var(--p-blaa-300);
-  --diagram-motetid: var(--p-rav-300);
-  --diagram-annen: var(--p-groenn-300);
-  --diagram-planlegging: var(--p-turkis-300);
-  --diagram-funksjon: var(--p-lilla-300);
-  --diagram-selv: var(--p-graa-400);
+  --diagram-undervisning: var(--p-blaa-500);
+  --diagram-motetid: var(--p-rav-500);
+  --diagram-annen: var(--p-groenn-500);
+  --diagram-planlegging: var(--p-turkis-500);
+  --diagram-funksjon: var(--p-lilla-500);
+  --diagram-selv: var(--p-graa-500);
+  --diagram-etikett: var(--p-hvit);
+  --diagram-variabel: var(--p-rav-500);
+  --diagram-over: var(--p-roed-500);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,18 +92,15 @@
     --farge-info-flate: var(--p-blaa-800);
     --farge-fokus: var(--p-fokus-mork);
     --farge-temafarge: var(--meta-temafarge-mork);
-    --diagram-undervisning: var(--p-blaa-300);
-    --diagram-motetid: var(--p-rav-300);
-    --diagram-annen: var(--p-groenn-300);
-    --diagram-planlegging: var(--p-turkis-300);
-    --diagram-funksjon: var(--p-lilla-300);
-    --diagram-selv: var(--p-graa-400);
-  --diagram-undervisning: var(--p-blaa-300);
-  --diagram-motetid: var(--p-rav-300);
-  --diagram-annen: var(--p-groenn-300);
-  --diagram-planlegging: var(--p-turkis-300);
-  --diagram-funksjon: var(--p-lilla-300);
-  --diagram-selv: var(--p-graa-400);
+    --diagram-undervisning: var(--p-blaa-500);
+    --diagram-motetid: var(--p-rav-500);
+    --diagram-annen: var(--p-groenn-500);
+    --diagram-planlegging: var(--p-turkis-500);
+    --diagram-funksjon: var(--p-lilla-500);
+    --diagram-selv: var(--p-graa-500);
+    --diagram-etikett: var(--p-hvit);
+    --diagram-variabel: var(--p-rav-500);
+    --diagram-over: var(--p-roed-500);
   }
 }
 
@@ -133,5 +136,8 @@
     --diagram-planlegging: var(--p-turkis-700);
     --diagram-funksjon: var(--p-lilla-700);
     --diagram-selv: var(--p-graa-600);
+    --diagram-etikett: var(--p-hvit);
+    --diagram-variabel: var(--p-rav-700);
+    --diagram-over: var(--p-roed-700);
   }
 }

@@ -43,6 +43,14 @@
   --p-lilla-300: #c7b0ee;
   --p-turkis-300: #86d0d6;
   --p-graa-400: #9ba3b0;
+  /* Dempede mellomtoner for diagrammer i mørk visning: hvit tekst gir minst 4,5:1, flaten minst 3:1. */
+  --p-blaa-500: #3f6fa6;
+  --p-rav-500: #8f6516;
+  --p-groenn-500: #357a50;
+  --p-turkis-500: #25787f;
+  --p-lilla-500: #7a60b2;
+  --p-graa-500: #636b79;
+  --p-roed-500: #b0443a;
 
   /* Verdier som også brukes i manifest og theme-color (leses ved bygg) */
   --meta-temafarge-lys: #17324f;
