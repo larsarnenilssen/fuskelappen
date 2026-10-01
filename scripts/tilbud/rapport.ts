@@ -10,9 +10,10 @@ import { fileURLToPath } from 'node:url';
 import type { Arsrammerad } from '../../src/modules/arbeidstid/beregning/arsrammer.ts';
 import { finnKobling, type Koblingstabeller } from '../../src/modules/arbeidstid/beregning/kobling.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import { byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
+import { byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
+import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
 
 export interface Kobling {
@@ -37,8 +38,8 @@ const KATEGORI: Record<Exclude<Tilbudsdel['kategori'], 'fellesfag' | 'felles_pro
 const kort = (kode: string) => kode.replace(/-+$/, '');
 const celle = (t: string) => t.replace(/\|/g, '\\|');
 
-export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | null, kobling: Kobling, neste: Fagfordeling | null = null): string {
-  const tilbud = new Map(Object.keys(indeks.programomrader).map((k) => [k, byggTilbud(k, indeks, fordeling)]));
+export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | null, kobling: Kobling, neste: Fagfordeling | null = null, fagBygger: FagBygger = {}): string {
+  const tilbud = new Map(Object.keys(indeks.programomrader).map((k) => [k, byggTilbud(k, indeks, fordeling, fagBygger)]));
   const struktur = byggStruktur(indeks);
   const fagnavn = (k: string) => `${k} ${indeks.fag[k]?.navn.nb ?? '(ukjent)'}`;
   const ponavn = (k: string) => `${indeks.programomrader[k]?.navn.nb ?? '(ukjent)'} (${kort(k)})`;
@@ -80,7 +81,13 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
       else if (d.kategori === 'fellesfag') deler.push(d.koder.length === 1 ? fagnavn(d.koder[0] as string) : d.koder.length <= 4 ? `velg én: ${d.koder.map(fagnavn).join(', ')}` : `velg én av ${d.koder.length}: ${d.koder.slice(0, 3).map(fagnavn).join(', ')} …`);
       else deler.push(...d.koder.map(medTimer));
       if (d.utvalg?.grunn === 'valg') deler.push(`velg ${d.utvalg.antall ?? ''} av: ${d.utvalg.koder.map(medTimer).join(', ')}`);
-      if (d.utvalg?.grunn === 'flere_trinn') deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): ${d.utvalg.koder.map(medTimer).join(', ')}`);
+      if (d.utvalg?.grunn === 'flere_trinn') {
+        const iRekke = new Set(d.utvalg.rekker.flat());
+        const uten = d.utvalg.koder.filter((k) => !iRekke.has(k));
+        deler.push(`${d.utvalg.timer} timer fra fag som går over flere trinn i Grep: ${d.utvalg.koder.map(medTimer).join(', ')}`);
+        if (d.utvalg.rekker.length > 0) deler.push(`rekkefølge (VIGO): ${d.utvalg.rekker.map((r) => r.join(' → ')).join('; ')}`);
+        if (uten.length > 0) deler.push(`uten rekkefølge i VIGO: ${uten.join(', ')}`);
+      }
       if (d.lantFra)
         deler.push(
           indeks.programomrader[d.lantFra]?.program === 'PB' && t.programomrade.program !== 'PB'
@@ -220,7 +227,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     ut.push('');
   }
   if (neste) {
-    const nesteTilbud = alle.map((t) => ({ t, n: byggTilbud(t.kode, indeks, neste) }));
+    const nesteTilbud = alle.map((t) => ({ t, n: byggTilbud(t.kode, indeks, neste, fagBygger) }));
     const endret = nesteTilbud.filter(({ t, n }) => JSON.stringify(t.deler.map((d) => [d.linje, d.timer])) !== JSON.stringify(n.deler.map((d) => [d.linje, d.timer])));
     ut.push(`### Endringer i ${neste.rundskriv} for skoleåret ${neste.skolear.replace('-', '–')}`, '');
     if (endret.length === 0) ut.push('Ingen endringer i linjene eller timene.', '');
@@ -284,11 +291,16 @@ export function lesFordelinger(rot: string, dato: string): { fordeling: Fagforde
   return { fordeling, neste };
 }
 
+/** Fag som bygger på andre fag, fra VIGO (data/vigo/fagrelasjoner.json). */
+export function lesFagBygger(rot: string): FagBygger {
+  return (JSON.parse(readFileSync(join(rot, 'data/vigo/fagrelasjoner.json'), 'utf8')) as Fagrelasjoner).byggerPaa;
+}
+
 /** Lager rapporten med dataene i repoet. */
 export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): string {
   const g = lesKoblingsgrunnlag(rot);
   const { fordeling, neste } = lesFordelinger(rot, dato);
-  return lagTilbudsrapport(g.indeks, fordeling, { tabeller: g.tabeller, rader: g.rader }, neste);
+  return lagTilbudsrapport(g.indeks, fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot));
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {

@@ -55,7 +55,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/pro
 | Naturfag | 140 | NAT1007 Naturfag vg1 studieforberedende utdanningsprogram | 554* |
 | Engelsk | 140 | ENG1007 Engelsk vg1 studieforberedende utdanningsprogram<br>vurdering: ENG1008 Engelsk vg1 studieforberedende utdanningsprogram, muntlig | 525* |
 | Fremmedspråk | 113 | velg én av 101: FSP6138 Finsk I, 1. år, FSP6141 Finsk II, 1. år, FSP6148 Fransk I, 1. år … | 554 |
-| Felles programfag fra eget utdanningsprogram | 196 | IDR2025 Treningslære 1 vg1 (56)<br>140 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 554 |
+| Felles programfag fra eget utdanningsprogram | 196 | IDR2025 Treningslære 1 vg1 (56)<br>140 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112)<br>uten rekkefølge i VIGO: IDR2018, IDR2019, IDR2020, IDR2023, IDR2024 | 554 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 24 programfag |  |
 | **Sum** | **982** | Rundskrivet: 982 | |
 
@@ -80,7 +80,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/pro
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 336 | IDR2021 Idrett og samfunn vg2 (56)<br>IDR2026 Treningslære 1 (84)<br>196 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
+| Felles programfag fra eget utdanningsprogram | 336 | IDR2021 Idrett og samfunn vg2 (56)<br>IDR2026 Treningslære 1 (84)<br>196 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112)<br>uten rekkefølge i VIGO: IDR2018, IDR2019, IDR2020, IDR2023, IDR2024 | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -102,7 +102,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/pro
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget utdanningsprogram | 476 | IDR2022 Idrett og samfunn Vg3 (84)<br>IDR2027 Treningslære 2 (140)<br>252 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112) | 525 |
+| Felles programfag fra eget utdanningsprogram | 476 | IDR2022 Idrett og samfunn Vg3 (84)<br>IDR2027 Treningslære 2 (140)<br>252 timer fra fag som går over flere trinn i Grep: IDR2018 Aktivitetslære 1 (140), IDR2019 Aktivitetslære 2 (140), IDR2020 Aktivitetslære 3 (140), IDR2023 Treningsledelse 1 (56), IDR2024 Treningsledelse 2 (112)<br>uten rekkefølge i VIGO: IDR2018, IDR2019, IDR2020, IDR2023, IDR2024 | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -322,7 +322,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>rekkefølge (VIGO): DAN2010 → DAN2011; DAN2012 → DAN2013 → DAN2014; DAN2015 → DAN2017<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -344,7 +344,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DAN2010 Grunntrening i dans 1 (56), DAN2011 Grunntrening i dans 2 (56), DAN2012 Scenisk dans 1 (140), DAN2013 Scenisk dans 2 (140), DAN2014 Scenisk dans 3 (140), DAN2015 Dans i perspektiv 1 (140), DAN2017 Dans i perspektiv 2 (140)<br>rekkefølge (VIGO): DAN2010 → DAN2011; DAN2012 → DAN2013 → DAN2014; DAN2015 → DAN2017<br>vurdering: DAN2016 Dans i perspektiv 1, muntlig-praktisk, DAN2018 Dans i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -370,7 +370,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>rekkefølge (VIGO): DRA2010 → DRA2011; DRA2012 → DRA2013; DRA2014 → DRA2016<br>uten rekkefølge i VIGO: DRA2018<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -392,7 +392,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: DRA2010 Teater og bevegelse 1 (56), DRA2011 Teater og bevegelse 2 (56), DRA2012 Teaterproduksjon 1 (140), DRA2013 Teaterproduksjon 2 (140), DRA2014 Teater i perspektiv 1 (140), DRA2016 Teater i perspektiv 2 (140), DRA2018 Drama og samfunn (140)<br>rekkefølge (VIGO): DRA2010 → DRA2011; DRA2012 → DRA2013; DRA2014 → DRA2016<br>uten rekkefølge i VIGO: DRA2018<br>vurdering: DRA2015 Teater i perspektiv 1, muntlig-praktisk, DRA2017 Teater i perspektiv 2, muntlig-praktisk | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
@@ -418,7 +418,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
+| Felles programfag fra eget programområde | 336 | 336 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>rekkefølge (VIGO): MUS2010 → MUS2011; MUS2012 → MUS2013; MUS2014 → MUS2016<br>uten rekkefølge i VIGO: MUS2018<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 240 programfag |  |
 | **Sum** | **980** | Rundskrivet: 980 | |
 
@@ -440,7 +440,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Religion og etikk | 84 | REL1003 Religion og etikk | 569 |
 | Norsk | 168 | NOR1267 Norsk hovedmål, vg3 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1268 Norsk sidemål, vg3 studieforberedende utdanningsprogram, skriftlig, NOR1269 Norsk, vg3 studieforberedende utdanningsprogram, muntlig | 466.5* |
 | Historie | 113 | HIS1010 Historie Vg3 studieforberedende utdanningsprogram | 554 |
-| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep (tas normalt i rekkefølge): MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
+| Felles programfag fra eget programområde | 476 | 476 timer fra fag som går over flere trinn i Grep: MUS2010 Ergonomi og bevegelse 1 (56), MUS2011 Ergonomi og bevegelse 2 (56), MUS2012 Instrument, kor, samspill 1 (140), MUS2013 Instrument, kor, samspill 2 (140), MUS2014 Musikk i perspektiv 1 (140), MUS2016 Musikk i perspektiv 2 (140), MUS2018 Instruksjon og ledelse (140)<br>rekkefølge (VIGO): MUS2010 → MUS2011; MUS2012 → MUS2013; MUS2014 → MUS2016<br>uten rekkefølge i VIGO: MUS2018<br>vurdering: MUS2015 Musikk i perspektiv, muntlig, MUS2017 Musikk i perspektiv 2, muntlig | 525 |
 | Programfag fra studieforberedende utdanningsprogram (valgfritt) | 140 | 1 fag à 140 timer, velges blant 239 programfag |  |
 | **Sum** | **981** | Rundskrivet: 981 | |
 

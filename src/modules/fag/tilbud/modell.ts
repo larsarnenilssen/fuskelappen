@@ -113,6 +113,45 @@ export interface Utvalg {
   /** Antall fag å velge, når alle fagene har samme timetall. */
   antall: number | null;
   koder: string[];
+  /**
+   * Fag over flere trinn som bygger på hverandre i VIGO, i rekkefølgen de tas (f.eks. Teater og bevegelse 1 → 2).
+   * Fagene tas i denne rekkefølgen (eier 01.10.2026). Fag som ikke står i en rekke, har ingen rekkefølge i VIGO.
+   */
+  rekker: string[][];
+}
+
+/** Fag som bygger på andre fag (fra VIGO), fagkode → kodene den bygger på. */
+export type FagBygger = Readonly<Record<string, readonly string[]>>;
+
+/**
+ * Rekkene blant kodene: hvert fag kommer etter fagene det bygger på. Bare rekker med minst to fag er med.
+ * Bygger et fag på flere av kodene, følges den første i sortert rekkefølge.
+ */
+export function rekker(koder: readonly string[], bygger: FagBygger): string[][] {
+  const sett = new Set(koder);
+  const forrige = new Map<string, string>();
+  for (const k of koder) {
+    const f = [...(bygger[k] ?? [])].filter((b) => sett.has(b) && b !== k).sort()[0];
+    if (f) forrige.set(k, f);
+  }
+  const neste = new Map<string, string[]>();
+  for (const [k, f] of forrige) neste.set(f, [...(neste.get(f) ?? []), k].sort());
+  const ut: string[][] = [];
+  const brukt = new Set<string>();
+  for (const start of [...sett].filter((k) => !forrige.has(k) && neste.has(k)).sort()) {
+    const rekke = [start];
+    brukt.add(start);
+    let naa = start;
+    for (;;) {
+      const n = (neste.get(naa) ?? []).find((x) => !brukt.has(x));
+      if (!n) break;
+      rekke.push(n);
+      brukt.add(n);
+      naa = n;
+    }
+    ut.push(rekke);
+  }
+  return ut;
 }
 
 export interface Tilpasning {
@@ -241,10 +280,10 @@ const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((
  * 2. Valg: mangler det timer, og har programområdet valgfrie programfag i samme læreplan med samme timetall,
  *    velger eleven blant dem (f.eks. maritime fag: dekk eller maskin).
  * 3. Flere trinn: fag som i Grep går over flere trinn (f.eks. aktivitetslære 1–3 på idrettsfag), fyller resten
- *    av timene. Hvilke av dem som hører til trinnet, står ikke i Grep.
+ *    av timene. Hvilke av dem som hører til trinnet, står ikke i Grep. Rekkefølgen kommer fra VIGO når den finnes.
  * Stemmer summen fortsatt ikke, meldes avvik.
  */
-function programfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks): Tilbudsdel {
+function programfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks, fagBygger: FagBygger): Tilbudsdel {
   // Opphenting (f.eks. YFO2002) er felles programfag i Grep, men en egen linje i rundskrivet.
   const alle = Object.entries(indeks.fag).filter(([, f]) => f.type === 'felles_programfag' && harPo(f, kode) && !erOpphenting(f));
   let medTimer = alle.filter(([, f]) => f.timer !== null).map(([k]) => k);
@@ -270,7 +309,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
   if (rest() > 0) {
     const valg = Object.entries(indeks.fag).filter(([, f]) => f.type === 'valgfritt_programfag' && harPo(f, kode) && f.timer !== null && lp.has(f.lp));
     const t = valg[0]?.[1].timer ?? 0;
-    if (valg.length > 1 && valg.every(([, f]) => f.timer === t) && rest() % t === 0) utvalg = { grunn: 'valg', timer: rest(), antall: rest() / t, koder: valg.map(([k]) => k).sort() };
+    if (valg.length > 1 && valg.every(([, f]) => f.timer === t) && rest() % t === 0) utvalg = { grunn: 'valg', timer: rest(), antall: rest() / t, koder: valg.map(([k]) => k).sort(), rekker: [] };
   }
   // 3. Fag over flere trinn
   if (!utvalg && rest() !== 0) {
@@ -278,7 +317,7 @@ function programfagdel(linje: string, timer: number, kode: string, indeks: Fagin
     const faste = koder.filter((k) => !flere.includes(k));
     if (flere.length > 0 && timerFor(faste, indeks) < timer && timerFor(flere, indeks) >= timer - timerFor(faste, indeks)) {
       koder = faste;
-      utvalg = { grunn: 'flere_trinn', timer: rest(), antall: null, koder: flere.sort() };
+      utvalg = { grunn: 'flere_trinn', timer: rest(), antall: null, koder: flere.sort(), rekker: rekker(flere, fagBygger) };
     }
   }
   const sum = timerFor(koder, indeks) + (utvalg?.timer ?? 0);
@@ -308,7 +347,7 @@ function plassdel(linje: string, kategori: 'fordypning' | 'valgfritt' | 'yff' | 
 }
 
 /** Bygger tilbudet for ett programområde. */
-export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordeling | null): Tilbud {
+export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordeling | null, fagBygger: FagBygger = {}): Tilbud {
   const po = indeks.programomrader[kode];
   if (!po) throw new Error(`Ukjent programområde ${kode}`);
   const programnavn = indeks.utdanningsprogram[po.program]?.nb ?? po.program;
@@ -349,7 +388,7 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
         if (d?.type === 'fag' && !harFellesfag && !d.lantFra) d.avvik = [];
         if (d) deler.push(d);
         else avvik.push(`Linjen «${r.linje}» i rundskrivet er ikke kjent.`);
-      } else if (type === 'felles_programfag') deler.push(programfagdel(r.linje, t, kode, indeks));
+      } else if (type === 'felles_programfag') deler.push(programfagdel(r.linje, t, kode, indeks, fagBygger));
       else deler.push(plassdel(r.linje, type, t, kode, po, indeks));
     }
     tabell.kolonner.forEach((k, j) => {

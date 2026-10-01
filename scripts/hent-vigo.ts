@@ -1,6 +1,7 @@
 // Henter fra VIGO Kodeverksbase (kodeverk.vigo.no, Novari IKS for fylkeskommunene) til data/vigo/:
 // - fagrelasjoner.json: utgåtte fagkoder og koden som erstatter dem, nye versjoner av læreplaner, og fag som brukes
-//   sammen (f.eks. tverrfaglig eksamen og fagene den gjelder). Brukes på fagsiden og i fagsøket.
+//   sammen (f.eks. tverrfaglig eksamen og fagene den gjelder), og fag som bygger på andre fag (rekkefølgen på fag
+//   over flere trinn). Brukes på fagsiden, i fagsøket og i tilbudsstrukturen.
 // - merknader.json: fagmerknader (FAM-koder) og vitnemålsmerknader (VMM-koder). Brukes i begrepsbanken.
 // Kjøres hver uke av kildesjekken, sammen med Grep og Udir-1 (avgjørelse 026). Kodebasen er offentlig og åpen for
 // oppslag (eier 01.10.2026). Den har ikke dokumentert API; vi bruker det nettsiden selv bruker.
@@ -62,14 +63,15 @@ const utenTid = <T extends { hentet: string }>(d: T) => vigoJson({ ...d, hentet:
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const hentet = new Date().toISOString();
-  const [erstatter, erstattesAv, brukesSammen, fag, vitnemal] = await Promise.all([
+  const [erstatter, erstattesAv, brukesSammen, paabygning, fag, vitnemal] = await Promise.all([
     hentAlle('/relation/element-replaces-element'),
     hentAlle('/relation/replaced-by'),
     hentAlle('/relation/course-used-together-with'),
+    hentAlle('/relation/course-paabygning'),
     hentAlle('/course-remarks'),
     hentAlle('/diploma-remarks'),
   ]);
-  const { data: rel, merknader: relmerknader } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen }, hentet);
+  const { data: rel, merknader: relmerknader } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, hentet);
   const m = byggMerknader({ fag, vitnemal }, hentet);
   fagrelasjonerSkjema.parse(rel);
   merknaderSkjema.parse(m);
@@ -92,6 +94,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   mkdirSync(join(rot, '.generert'), { recursive: true });
   writeFileSync(join(rot, '.generert/vigo-endringer.json'), `${JSON.stringify({ endret, forste, endringer, merknader: relmerknader }, null, 2)}\n`);
   console.log(
-    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${m.fagmerknader.length} fagmerknader og ${m.vitnemalsmerknader.length} vitnemålsmerknader. ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
+    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${Object.keys(rel.byggerPaa).length} fag som bygger på andre, ${m.fagmerknader.length} fagmerknader og ${m.vitnemalsmerknader.length} vitnemålsmerknader. ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
   );
 }

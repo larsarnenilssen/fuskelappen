@@ -12,9 +12,9 @@ const dato = (v: unknown): string | null => tekst(v)?.slice(0, 10) ?? null;
 export const erOpplaeringsfagkode = (kode: string) => /^.{3}Z|^.{4}Z/.test(kode);
 const jaNei = (v: unknown): boolean | null => (v === 'J' || v === true ? true : v === 'N' || v === false ? false : null);
 
-/** Erstatninger, nye læreplaner og fag som brukes sammen, fra tre koblinger i kodebasen. */
+/** Erstatninger, nye læreplaner, fag som brukes sammen og fag som bygger på andre fag, fra fire koblinger i kodebasen. */
 export function byggFagrelasjoner(
-  rader: { erstatter: readonly Vigorad[]; erstattesAv: readonly Vigorad[]; brukesSammen: readonly Vigorad[] },
+  rader: { erstatter: readonly Vigorad[]; erstattesAv: readonly Vigorad[]; brukesSammen: readonly Vigorad[]; paabygning: readonly Vigorad[] },
   hentet: string,
 ): { data: Fagrelasjoner; merknader: string[] } {
   const merknader: string[] = [];
@@ -51,6 +51,14 @@ export function byggFagrelasjoner(
     if (na) navn[a] = na;
     if (nb) navn[b] = nb;
   }
+  // «fag_paabygning»: code1 bygger på code2.
+  const byggerPaa: Record<string, Set<string>> = {};
+  for (const r of rader.paabygning) {
+    const a = tekst(r.code1);
+    const b = tekst(r.code2);
+    if (!a || !b || a === b || erOpplaeringsfagkode(a) || erOpplaeringsfagkode(b)) continue;
+    (byggerPaa[a] ??= new Set()).add(b);
+  }
   const sortert = <V>(o: Record<string, V>) => Object.fromEntries(Object.entries(o).sort(([x], [y]) => x.localeCompare(y)));
   return {
     data: {
@@ -59,6 +67,7 @@ export function byggFagrelasjoner(
       erstatninger: sortert(erstatninger),
       laereplaner: sortert(laereplaner),
       brukesSammen: sortert(Object.fromEntries(Object.entries(brukesSammen).map(([k, v]) => [k, [...v].sort()]))),
+      byggerPaa: sortert(Object.fromEntries(Object.entries(byggerPaa).map(([k, v]) => [k, [...v].sort()]))),
       navn: sortert(navn),
     },
     merknader,
@@ -99,6 +108,7 @@ export function validerVigo(rel: Fagrelasjoner, m: Merknader): string[] {
   const antall = (o: object) => Object.keys(o).length;
   if (antall(rel.erstatninger) < 1000) feil.push(`Fant bare ${antall(rel.erstatninger)} erstattede fagkoder.`);
   if (antall(rel.brukesSammen) < 200) feil.push(`Fant bare ${antall(rel.brukesSammen)} koder i «brukes sammen».`);
+  if (antall(rel.byggerPaa) < 30) feil.push(`Fant bare ${antall(rel.byggerPaa)} fag som bygger på andre fag.`);
   if (m.fagmerknader.length < 30 || m.fagmerknader.some((x) => !/^FAM\d+$/.test(x.kode))) feil.push(`Fagmerknadene ser ikke ut som ventet (${m.fagmerknader.length}).`);
   if (m.vitnemalsmerknader.length < 20 || m.vitnemalsmerknader.some((x) => !/^VMM\d+$/.test(x.kode))) feil.push(`Vitnemålsmerknadene ser ikke ut som ventet (${m.vitnemalsmerknader.length}).`);
   return feil;
@@ -122,6 +132,13 @@ export function sammenlignVigo(gammel: { rel: Fagrelasjoner; m: Merknader } | nu
   const fjernedePar = [...gp].filter((p) => !np.has(p));
   if (nyePar.length > 0) ut.push(`Brukes sammen, nye koblinger (${nyePar.length}): ${nyePar.slice(0, 10).join(', ')}${nyePar.length > 10 ? ' …' : ''}`);
   if (fjernedePar.length > 0) ut.push(`Brukes sammen, fjernede koblinger (${fjernedePar.length}): ${fjernedePar.slice(0, 10).join(', ')}${fjernedePar.length > 10 ? ' …' : ''}`);
+  const bp = (r: Fagrelasjoner) => new Set(Object.entries(r.byggerPaa ?? {}).flatMap(([a, l]) => l.map((b) => `${a} på ${b}`)));
+  const gb = bp(gammel.rel);
+  const nb = bp(ny.rel);
+  const nyeBp = [...nb].filter((p) => !gb.has(p));
+  const fjernedeBp = [...gb].filter((p) => !nb.has(p));
+  if (nyeBp.length > 0) ut.push(`Bygger på, nye koblinger (${nyeBp.length}): ${nyeBp.slice(0, 10).join(', ')}${nyeBp.length > 10 ? ' …' : ''}`);
+  if (fjernedeBp.length > 0) ut.push(`Bygger på, fjernede koblinger (${fjernedeBp.length}): ${fjernedeBp.slice(0, 10).join(', ')}${fjernedeBp.length > 10 ? ' …' : ''}`);
   for (const [liste, navn] of [
     ['fagmerknader', 'fagmerknad'],
     ['vitnemalsmerknader', 'vitnemålsmerknad'],

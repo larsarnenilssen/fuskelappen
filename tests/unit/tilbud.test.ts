@@ -1,7 +1,7 @@
 // Tilbudsmodellen (src/modules/fag/tilbud/modell.ts) med små testdata (avgjørelse 024).
 import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
-import { byggerPaa, byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import { byggerPaa, byggStruktur, byggTilbud, erVariant, rekker, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
 import { kontrollenker, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
@@ -277,6 +277,19 @@ describe('«bygger på» som mangler i Grep, og voksenopplæring', () => {
   it('voksenopplæring får ingen tabell fra rundskrivet', () => {
     const vg3 = { ...fordeling('Vg3', 'Tabell 21 Fag- og timefordeling i yrkesfaglige utdanningsprogram, vg3 i skole', ['Ordinær'], [['Kroppsøving', 56], ['Totalt omfang', 56]]), nr: '21' };
     expect(byggTilbud('TPYSL3----', i, { ...ff, tabeller: [vg3] })).toMatchObject({ tabell: null, deler: [] });
+  });
+});
+
+describe('rekkefølgen på fag over flere trinn (VIGO)', () => {
+  it('lager rekker av fag som bygger på hverandre, og tar bare med kodene i utvalget', () => {
+    const bygger = { DAN2011: ['DAN2001', 'DAN2010'], DAN2013: ['DAN2012'], DAN2014: ['DAN2013'], DAN2017: ['DAN2015'] };
+    expect(rekker(['DAN2010', 'DAN2011', 'DAN2012', 'DAN2013', 'DAN2014', 'DAN2015', 'DAN2017', 'IDR2018'], bygger)).toEqual([
+      ['DAN2010', 'DAN2011'],
+      ['DAN2012', 'DAN2013', 'DAN2014'],
+      ['DAN2015', 'DAN2017'],
+    ]);
+    expect(rekker(['DAN2013', 'DAN2014'], bygger)).toEqual([['DAN2013', 'DAN2014']]);
+    expect(rekker(['IDR2018', 'IDR2019'], bygger)).toEqual([]);
   });
 });
 

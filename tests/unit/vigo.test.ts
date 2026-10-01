@@ -24,8 +24,14 @@ const brukesSammen = [
   { code1: 'LBR3020', code2: 'LBR3017', grepCourse1: { name: 'Tverrfaglig eksamen landbruk' }, grepCourse2: { name: 'Planteproduksjon' } },
 ];
 
+const paabygning = [
+  { code1: 'DRA2011', code2: 'DRA2010' },
+  { code1: 'DRA2011', code2: 'DRA2001' },
+  { code1: 'NOR1Z27', code2: 'NOR1Z13' },
+];
+
 describe('bygging av fagrelasjonene', () => {
-  const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen }, '2026-10-01T00:00:00Z');
+  const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, '2026-10-01T00:00:00Z');
 
   it('gir erstatninger med navn og sluttdato, også når en kode er delt opp', () => {
     expect(data.erstatninger.LBR3004).toEqual({ ny: ['LBR3012'], navn: 'Traktor og maskiner', utgatt: '2022-07-31' });
@@ -39,6 +45,10 @@ describe('bygging av fagrelasjonene', () => {
     expect(data.laereplaner).toEqual({ 'MAT01-05': 'MAT01-06' });
     expect(data.brukesSammen).toEqual({ LBR3020: ['LBR3017', 'LBR3018'] });
     expect(data.navn.LBR3020).toBe('Tverrfaglig eksamen landbruk');
+  });
+
+  it('gir fag som bygger på andre fag, uten VIGOs egne koder', () => {
+    expect(data.byggerPaa).toEqual({ DRA2011: ['DRA2001', 'DRA2010'] });
   });
 
   it('slår opp gjeldende koder, også gjennom en kjede', () => {
@@ -83,13 +93,15 @@ describe('merknadene', () => {
   });
 
   it('kontrolleres, og endringer meldes', () => {
-    const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen }, 'x');
-    expect(validerVigo(data, m)).toHaveLength(4);
-    const ny: Fagrelasjoner = { ...data, erstatninger: { ...data.erstatninger, NYA1001: { ny: ['NYA1002'], navn: 'Ny', utgatt: null } }, brukesSammen: { LBR3020: ['LBR3017'] } };
+    const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, 'x');
+    expect(validerVigo(data, m)).toHaveLength(5);
+    const ny: Fagrelasjoner = { ...data, erstatninger: { ...data.erstatninger, NYA1001: { ny: ['NYA1002'], navn: 'Ny', utgatt: null } }, brukesSammen: { LBR3020: ['LBR3017'] }, byggerPaa: { DRA2011: ['DRA2010'], DRA2013: ['DRA2012'] } };
     const m2 = { ...m, fagmerknader: [...m.fagmerknader.map((x) => (x.kode === 'FAM10' ? { ...x, nb: 'Ti, endret' } : x)), { ...m.fagmerknader[0], kode: 'FAM70', nb: 'Ny merknad' } as (typeof m.fagmerknader)[number]] };
     expect(sammenlignVigo({ rel: data, m }, { rel: ny, m: m2 })).toEqual([
       'Ny erstatning: NYA1001 Ny → NYA1002',
       'Brukes sammen, fjernede koblinger (1): LBR3020 + LBR3018',
+      'Bygger på, nye koblinger (1): DRA2013 på DRA2012',
+      'Bygger på, fjernede koblinger (1): DRA2011 på DRA2001',
       'Endret fagmerknad FAM10: Ti, endret',
       'Ny fagmerknad FAM70: Ny merknad',
     ]);

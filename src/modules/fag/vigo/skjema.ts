@@ -21,6 +21,11 @@ export const fagrelasjonerSkjema = z
      * Nøkkelen er koden VIGO oppgir først, oftest eksamens- eller vurderingskoden.
      */
     brukesSammen: z.record(kode, z.array(kode)),
+    /**
+     * Fag som bygger på andre fag (koblingen «fag_paabygning»), f.eks. Teater og bevegelse 2 på Teater og bevegelse 1.
+     * Fagene tas i denne rekkefølgen (eier 01.10.2026).
+     */
+    byggerPaa: z.record(kode, z.array(kode)),
     /** Navn på kodene i «brukes sammen», til koder som ikke finnes i fagindeksen fra Grep. */
     navn: z.record(kode, z.string()),
   })

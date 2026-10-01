@@ -6,12 +6,12 @@ import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { byggStruktur, byggTilbud, erVariant } from '../../src/modules/fag/tilbud/modell.ts';
-import { lagRapportFraRepo, lesFordelinger } from '../../scripts/tilbud/rapport.ts';
+import { lagRapportFraRepo, lesFagBygger, lesFordelinger } from '../../scripts/tilbud/rapport.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
 const { fordeling } = lesFordelinger(rot, new Date().toISOString().slice(0, 10));
-const tilbud = Object.keys(indeks.programomrader).map((k) => byggTilbud(k, indeks, fordeling));
+const tilbud = Object.keys(indeks.programomrader).map((k) => byggTilbud(k, indeks, fordeling, lesFagBygger(rot)));
 const hoved = tilbud.filter((t) => !t.variant);
 
 describe('tilbudsstrukturen', () => {
