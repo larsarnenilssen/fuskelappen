@@ -123,7 +123,7 @@ Innhold du ikke har godkjent, har `kontrollert: null` i filene, men vises uten m
 - [ ] Vedlegg 1: årsrammene for videregående (151 rader). Se særlig blokken 525/700, der vedlegget har overskriften «Felles programfag» over fellesfag.
 - [ ] Hovedtariffavtalen: 1400, 1687,5 og 100/112 i § 12.4, feriepenger 12 % og 14,3 %, overtidstillegg 50 %, garantilønn fra 1.5.2026.
 
-**Kalkulatorene** (på telefonen, under Hjem → Hurtigkalkulatorer):
+**Kalkulatorene** (på telefonen, under Hjem → Arbeidstid: Arbeidsplan, og de andre under «Flere kalkulatorer»):
 
 - [ ] Beskjeftigelse: søk etter fag på navn, kallenavn (R1, 2P) og koder (ENG, BAT, HEA). Prøv ett fag, et fag merket * med «15 eller færre elever», to fag, og en blandet gruppe.
 - [ ] Søkeordene: kallenavn og koder står i `rules/sfs2213/fagsok-2026-2027.yaml`. Se særlig over tabellen som kobler programnavnene i vedlegg 1 til utdanningsprogrammene.

@@ -5,14 +5,13 @@ type Skjema<T> = { [K in keyof T]: T[K] extends string ? string : Skjema<T[K]> }
 
 export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   tittel: 'Arbeidstid',
-  innledning:
-    'Kalkulatorar for arbeidstid etter SFS 2213 (arbeidstidsavtalen for undervisningspersonalet) og hovudtariffavtalen i KS-området. Kvar utrekning viser metoden steg for steg og kvar tala kjem frå.',
   kalkulatorer: {
     tittel: 'Kalkulatorar',
     flere: 'Fleire kalkulatorar',
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
+      forside: 'Fag, funksjonar, fordeling av arbeidstida og løn.',
       beskrivelse: 'Fag og funksjonar mot stillingsprosenten for heile skuleåret eller ein periode (periodesysselsetjing), med fordelinga av arbeidstida og løn.',
     },
     beskjeftigelse: {

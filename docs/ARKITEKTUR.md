@@ -46,7 +46,7 @@ Hver modul eksporterer `manifest` fra `src/modules/<modul>/index.ts` (typen stå
 | `sokeoppforinger()` | det modulen bidrar med til samlet søk |
 | `favorittbare()` | funksjoner, fag og begreper som kan favorittmerkes |
 | `frister()` | frister modulen eier (samles i årshjulet i fase 8) |
-| `hurtigfunksjoner` | hurtigkalkulatorer på forsiden |
+| `innganger`, `flereTittel` | boksene modulen har på forsiden: hovedbokser, og innganger merket `flere` i en boks som kan åpnes (avgjørelse 030). Uten innganger er modulen selv én boks |
 | `kilder` | kilde-id-er fra `content/kilder.yaml` |
 | `status` | `aktiv` eller `skjult`. Skjulte moduler vises bare i utvikling og testing |
 

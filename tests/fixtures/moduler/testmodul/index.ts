@@ -43,14 +43,23 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  hurtigfunksjoner: [
+  innganger: [
+    {
+      id: 'testmodul:hoved',
+      tittel: { nb: 'Testmodul for skolemiljø', nn: 'Testmodul for skulemiljø' },
+      beskrivelse: { nb: 'Finnes bare i testene.', nn: 'Finst berre i testane.' },
+      rute: '/testmodul',
+      ikon: 'skole',
+    },
     {
       id: 'testmodul:hurtig',
       tittel: { nb: 'Testkalkulator', nn: 'Testkalkulator' },
       rute: '/testmodul',
       ikon: 'kalkulator',
+      flere: true,
     },
   ],
+  flereTittel: { nb: 'Flere testfunksjoner', nn: 'Fleire testfunksjonar' },
   kilder: ['ks-sfs2213'],
   status: 'aktiv',
 };

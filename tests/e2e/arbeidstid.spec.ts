@@ -24,12 +24,24 @@ async function velgFag(omraade: Locator | Page, sok: string, treff: string) {
 }
 
 test.describe('arbeidstid', () => {
-  test('hurtigkalkulatorene står på forsiden', async ({ page }) => {
+  test('Arbeidsplan står som egen boks på forsiden, og de andre kalkulatorene i en boks som kan åpnes', async ({ page }) => {
     await aapne(page, '/');
-    const hurtig = page.locator('section[aria-labelledby="forside-hurtig"]');
-    await expect(hurtig.getByRole('link', { name: 'Beskjeftigelse' })).toBeVisible();
-    await hurtig.getByRole('link', { name: 'Vikartimer' }).click();
+    const arbeidstid = page.locator('[data-kategori="arbeidstid"]');
+    await expect(arbeidstid.getByRole('link', { name: /Arbeidsplan/ })).toBeVisible();
+    await expect(arbeidstid.getByRole('link', { name: /Vikartimer/ })).toBeHidden();
+    await arbeidstid.getByRole('button', { name: /Flere kalkulatorer/ }).click();
+    await expect(arbeidstid.getByRole('link', { name: /Beskjeftigelse/ })).toBeVisible();
+    await arbeidstid.getByRole('link', { name: /Vikartimer/ }).click();
     await expect(page.locator('main h1')).toHaveText('Vikartimer');
+    // Tilbake til forsiden: boksen er fortsatt åpen.
+    await page.goBack();
+    await expect(arbeidstid.getByRole('link', { name: /Vikartimer/ })).toBeVisible();
+  });
+
+  test('den gamle adressen til arbeidstid sender til forsiden', async ({ page }) => {
+    await aapne(page, '/arbeidstid');
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.locator('[data-kategori="arbeidstid"]')).toBeVisible();
   });
 
   test('fagsøket finner fag, kallenavn og fagkoder', async ({ page }) => {
@@ -356,14 +368,6 @@ test.describe('arbeidstid', () => {
     await expect(resultat(page)).toContainText(/14\s573,33/);
     await page.getByRole('button', { name: 'Forklaring: Hvorfor endrer ikke faget beløpet?' }).click();
     await expect(page.getByText(/1 % over hel stilling gir alltid 14 timer kalkulert tid/)).toBeVisible();
-  });
-
-  test('arbeidsplanen er hovedkalkulatoren i modulen', async ({ page }) => {
-    await aapne(page, '/arbeidstid');
-    const kort = page.locator('a.hovedkort');
-    await expect(kort).toContainText('Arbeidsplan');
-    await kort.click();
-    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
   });
 
   test('arbeidsplanen viser fordelingen for stillingen før noe er fylt ut', async ({ page }) => {

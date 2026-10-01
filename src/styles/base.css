@@ -426,6 +426,28 @@ main {
   color: var(--farge-tekst-dempet);
 }
 
+/* Boksen på forsiden med flere innganger, lukket til brukeren åpner den (avgjørelse 030). */
+.flere-knapp {
+  width: 100%;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.flere-liste {
+  margin: 0;
+  border: 0;
+  border-top: var(--strek) solid var(--farge-linje);
+  border-radius: 0;
+  background: var(--farge-bakgrunn);
+}
+
+.flere-liste .listelenke {
+  padding-inline-start: var(--rom-6);
+}
+
 .favoritt {
   display: flex;
   align-items: center;
@@ -2021,41 +2043,6 @@ p.fagkort-tittel {
   gap: var(--rom-1);
   min-height: var(--trykkflate);
   font-weight: 600;
-}
-
-/* Hovedkalkulatoren i modulen: stort kort øverst på oversikten. */
-.hovedkort {
-  display: flex;
-  flex-direction: column;
-  gap: var(--rom-2);
-  margin: 0 0 var(--rom-5);
-  padding: var(--rom-4);
-  border: 2px solid var(--farge-merke);
-  border-radius: var(--radius-l);
-  background: var(--farge-flate);
-  color: var(--farge-tekst);
-  text-decoration: none;
-}
-
-.hovedkort-topp {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
-  color: var(--farge-merke);
-}
-
-.hovedkort-tittel {
-  flex: 1;
-  font-size: var(--str-xl);
-  font-weight: 700;
-}
-
-.hovedkort-tekst {
-  color: var(--farge-tekst-dempet);
-}
-
-.hovedkort-figur {
-  max-width: 20rem;
 }
 
 /* ---------- Kalkulatorer på bred skjerm: skjema til venstre, resultat til høyre ----------

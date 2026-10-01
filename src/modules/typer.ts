@@ -30,12 +30,15 @@ export interface Favorittbar {
   rute: string;
 }
 
-export interface Hurtigfunksjon {
+/** En inngang til modulen på forsiden. Uten innganger står modulen selv som én boks. */
+export interface Inngang {
   id: string;
   tittel: Tekstverdi;
   beskrivelse?: Tekstverdi;
   rute: string;
   ikon: Ikonnavn;
+  /** Står i den sammenleggbare boksen under hovedboksene (`flereTittel`), lukket til brukeren åpner den. */
+  flere?: boolean;
 }
 
 export interface Modulmanifest {
@@ -56,8 +59,13 @@ export interface Modulmanifest {
   favorittbare(ider?: readonly string[]): Promise<Favorittbar[]>;
   /** Frister modulen eier. Samles i årshjulet i fase 8. */
   frister(): Promise<Frist[]>;
-  /** Hurtigkalkulatorer som vises på forsiden. */
-  hurtigfunksjoner?: Hurtigfunksjon[];
+  /**
+   * Boksene modulen har på forsiden under kategorien sin (avgjørelse 030). Uten innganger står modulen som én boks
+   * med navn og beskrivelse.
+   */
+  innganger?: Inngang[];
+  /** Tittelen på den sammenleggbare boksen med innganger merket `flere`. */
+  flereTittel?: Tekstverdi;
   /** Kilde-id-er fra content/kilder.yaml. */
   kilder: string[];
   /** Moduler fra senere faser er skjult til de er godkjent. */

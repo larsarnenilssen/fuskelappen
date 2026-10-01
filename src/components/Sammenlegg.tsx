@@ -14,9 +14,15 @@ function lesLukket(): Record<string, boolean> {
   }
 }
 
-/** Om kortet med denne nøkkelen er lagt sammen, og en funksjon som veksler. Alle kort er åpne til brukeren lukker dem. */
-export function useSammenlagt(nokkel: string): [boolean, () => void] {
-  const [lukket, settLukket] = useState(() => lesLukket()[nokkel] === true);
+/**
+ * Om kortet med denne nøkkelen er lagt sammen, og en funksjon som veksler. Kortene er åpne til brukeren lukker dem,
+ * med mindre `standardLukket` er satt.
+ */
+export function useSammenlagt(nokkel: string, standardLukket = false): [boolean, () => void] {
+  const [lukket, settLukket] = useState(() => {
+    const lagret = lesLukket()[nokkel];
+    return typeof lagret === 'boolean' ? lagret : standardLukket;
+  });
   const veksle = useCallback(() => {
     settLukket((naa) => {
       const ny = !naa;

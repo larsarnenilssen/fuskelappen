@@ -4,6 +4,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.12.0] – 2026-10-01
+
+### Endret
+
+- **Forsiden:** Under «Arbeidstid» står Arbeidsplan som egen boks, og Beskjeftigelse, Vikartimer og Overtid i boksen «Flere kalkulatorer», som du åpner med et trykk. Overskriften «Hurtigkalkulatorer» og mellomsiden for arbeidstid er tatt bort. Gamle lenker til arbeidstid går til forsiden.
+- «Fag og vurdering» på forsiden heter nå **Læreplanverk og opplæringsløp**.
+
 ## [0.11.0] – 2026-10-01
 
 ### Endret
@@ -386,7 +393,8 @@ Rettinger etter eiers kontroll av fase 0 på iPhone.
   - Begrepsbank som felles modul (skjult til fase 1 gir den innhold).
   - Plassholderikon (protokollbok med paragraftegn).
 
-[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.11.0...HEAD
+[Unreleased]: https://github.com/larsarnenilssen/protokollen/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.12.0
 [0.11.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.11.0
 [0.10.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.10.0
 [0.9.0]: https://github.com/larsarnenilssen/protokollen/releases/tag/v0.9.0
