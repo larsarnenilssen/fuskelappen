@@ -42,7 +42,7 @@ const rapport = lagUkesrapport({ register, kildestatus, verdistatus, endringer, 
 const praksis = (lesFil(rot, join(rot, 'content/kontroll/praksis.yaml')) as Praksisfil).praksis;
 const periode = process.env.KONTROLLRUNDE === 'ja' ? idag.slice(0, 7) : rundeperiode(idag);
 const fagindeks = lesJson(join(rot, 'data/grep/fagindeks.json')) as Fagindeks | null;
-const runde = periode ? lagKontrollrunde(periode, praksisTilBekreftelse(praksis, idag), indeks, repo, fagindeks ? kontrollenker(fagindeks) : []) : null;
+const runde = periode ? lagKontrollrunde(periode, praksisTilBekreftelse(praksis, idag), indeks, repo, fagindeks ? kontrollenker(fagindeks) : [], register) : null;
 
 async function github<T>(metode: string, sti: string, kropp?: unknown): Promise<T> {
   const svar = await fetch(`${api}/repos/${repo}${sti}`, {

@@ -22,6 +22,13 @@ export interface Kontrollverdi {
   auto: VerdistatusPost | null;
 }
 
+/** En kilde et innhold viser til: id i kilderegisteret, punktet og eventuelt avsnittets egen adresse. */
+export interface Kontrollkilde {
+  id: string;
+  punkt: string | null;
+  url: string | null;
+}
+
 export interface Kontrollinnhold {
   type: 'innhold';
   id: string;
@@ -34,6 +41,8 @@ export interface Kontrollinnhold {
   kontrollert: string | null;
   /** Spørsmål til eier om det som er usikkert i teksten (avgjørelse 019). */
   sporsmal: string[];
+  /** Alle kildene elementet viser til, med punkt. Eier sjekker kontrollspørsmålene mot dem. */
+  kilder: Kontrollkilde[];
 }
 
 export interface Kildekontroll {
@@ -100,6 +109,7 @@ export function lagKontrollindeks(
           eier,
           kontrollert: element.kontrollert?.dato ?? null,
           sporsmal: element.kontrollsporsmal ?? [],
+          kilder: element.kilder.map((r) => ({ id: r.id, punkt: r.punkt ?? null, url: r.url ?? null })),
         };
         liste.push(post);
       }

@@ -66,7 +66,7 @@ En endring er ikke ferdig før alle er grønne.
 - Innhold og verdier har riktig `gyldighet` (nasjonal, fylke eller skole). Fylkes- og skoleinnhold vises bare når brukeren har valgt fylke eller skole.
 - Data under NLOD (Udir, Lovdata) krediteres under «Om».
 - Oppdater `godkjent_fingeravtrykk` i kilderegisteret bare etter beskjed fra eier.
-- Nytt innhold i `content/` får 1–5 `kontrollsporsmal` til eier om det som er usikkert: om en formulering kan misforstås, om en praksis stemmer. Ny praksis eller tolkning som ikke står i kildene, føres i `content/kontroll/praksis.yaml` med `bekreftet: null`. Sett aldri `bekreftet` selv.
+- Nytt innhold i `content/` får 1–5 `kontrollsporsmal` til eier om det som er usikkert: om en formulering kan misforstås, om en praksis stemmer. Eier skal kunne svare ut fra kildene: oppgi `punkt` for hver kilde (og `url` til avsnittet når kilden har egne adresser for avsnitt). Kontrolloversikten og kontrollrundene viser kildene med lenke under hvert spørsmål (eier 01.10.2026). Ny praksis eller tolkning som ikke står i kildene, føres i `content/kontroll/praksis.yaml` med `bekreftet: null`. Sett aldri `bekreftet` selv.
 - Tall i `rules/` fra en kilde får et `sitat` (kort, ordrett utdrag der tallet står). Tall som ikke står i kilden, får `grunnlag: avledet` eller `grunnlag: praksis` og en merknad. Automatisk samsvar med kilden er ikke det samme som eiers kontroll.
 
 ## Personvern

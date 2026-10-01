@@ -1,7 +1,7 @@
 // Kontrollrundene i mai og august (avgjørelse 019).
 import { describe, expect, it } from 'vitest';
 import { lagKontrollrunde, praksisTilBekreftelse, rundemerke, rundeperiode } from '../../scripts/kilder/kontrollrunde.ts';
-import type { Praksis } from '../../src/core/innhold/skjema.ts';
+import type { Kilderegister, Praksis } from '../../src/core/innhold/skjema.ts';
 import type { Kildekontroll } from '../../src/core/kontroll/indeks.ts';
 
 const praksis: Praksis[] = [
@@ -27,14 +27,17 @@ describe('kontrollrunder', () => {
       {
         kilde: 'k',
         verdier: [{ type: 'verdi', id: 's/v', regelsett: 's', nokkel: 'v', punkt: '4', verdi: 1, enhet: null, grunnlag: 'kilde', harSitat: true, eier: 'bor_kontrolleres', kontrollert: '2025-04-01', auto: null }],
-        innhold: [{ type: 'innhold', id: 'i', tittel: 'Årsverk', elementtype: 'begrep', fil: 'f', punkter: ['4'], eier: 'utkast', kontrollert: null, sporsmal: [] }],
+        innhold: [{ type: 'innhold', id: 'i', tittel: 'Årsverk', elementtype: 'begrep', fil: 'f', punkter: ['4'], eier: 'utkast', kontrollert: null, sporsmal: [], kilder: [{ id: 'k', punkt: '4', url: null }] }],
       },
     ];
-    const r = lagKontrollrunde('2027-05', praksisTilBekreftelse(praksis, '2027-05-03'), indeks, 'eier/repo');
+    const register = { kilder: [{ id: 'k', navn: 'SFS 2213', url: 'https://ks.no/sfs2213' }] } as unknown as Kilderegister;
+    const r = lagKontrollrunde('2027-05', praksisTilBekreftelse(praksis, '2027-05-03'), indeks, 'eier/repo', [], register);
     expect(r.tittel).toBe('Kontrollrunde mai 2027: 3 punkter');
     expect(r.tekst).toContain('Når hovedtariffavtalen endres 1. mai');
     expect(r.tekst).toContain('- [ ] **Lønn i brutte måneder:** Stemmer 21,67? <!-- praksis:a -->');
     expect(r.tekst).toContain('Sist bekreftet: 01.05.2025.');
+    // Kildene bak det praksisen og verdien berører, med punkt, så eier kan sjekke svaret der.
+    expect(r.tekst).toContain('  - Kilder å sjekke mot: [SFS 2213](https://ks.no/sfs2213): punkt 4');
     expect(r.tekst).toContain('- [ ] Regelverdien `s/v`: kontrollert for mer enn 12 måneder siden (01.04.2025). <!-- kontroll:verdi:s/v -->');
     expect(r.tekst).toContain('1 begrep, forklaring eller verdi er ikke kontrollert.');
     expect(r.tekst).toContain(rundemerke('2027-05'));

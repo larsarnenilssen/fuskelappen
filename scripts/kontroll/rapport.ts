@@ -12,6 +12,7 @@ import type { Innholdsstatus } from '../../src/core/innhold/status.ts';
 import { lesInnhold, lesRegelsett } from '../innhold/alt.ts';
 import { praksisTilBekreftelse } from '../kilder/kontrollrunde.ts';
 import { lesFil } from '../innhold/last.ts';
+import { kildelenker, praksiskilder } from './kildelenker.ts';
 
 function dato(iso: string): string {
   const [aar, mnd, dag] = iso.slice(0, 10).split('-');
@@ -134,22 +135,22 @@ function maaSesPaa(indeks: readonly Kildekontroll[], register: Kilderegister, st
   return linjer;
 }
 
-function praksisdel(praksis: readonly Praksis[]): string[] {
+function praksisdel(praksis: readonly Praksis[], indeks: readonly Kildekontroll[], register: Kilderegister): string[] {
   if (praksis.length === 0) return [];
   return [
     '## Praksis og tolkninger',
     '',
-    'Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kontrollrundene i mai og august.',
+    'Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kontrollrundene i mai og august. «Kilder å sjekke mot» er kildene bak det praksisen berører.',
     '',
-    '| Praksis | Spørsmål | Grunnlag | Bekreftet |',
-    '|---|---|---|---|',
-    ...praksis.map((p) => `| **${celle(p.tittel)}** | ${celle(p.sporsmal)} | ${celle(p.grunnlag)} | ${p.bekreftet ? dato(p.bekreftet.dato) : 'ikke bekreftet'} |`),
+    '| Praksis | Spørsmål | Grunnlag | Kilder å sjekke mot | Bekreftet |',
+    '|---|---|---|---|---|',
+    ...praksis.map((p) => `| **${celle(p.tittel)}** | ${celle(p.sporsmal)} | ${celle(p.grunnlag)} | ${celle(kildelenker(praksiskilder(p, indeks), register) || '–')} | ${p.bekreftet ? dato(p.bekreftet.dato) : 'ikke bekreftet'} |`),
     '',
   ];
 }
 
 /** Kontrollspørsmålene til innholdet, én gang per element, med de som ikke er kontrollert først. */
-function sporsmalsdel(indeks: readonly Kildekontroll[]): string[] {
+function sporsmalsdel(indeks: readonly Kildekontroll[], register: Kilderegister): string[] {
   const unike = new Map<string, Kontrollinnhold>();
   for (const k of indeks) for (const i of k.innhold) if (!unike.has(i.id)) unike.set(i.id, i);
   const med = [...unike.values()].filter((i) => i.sporsmal.length > 0).sort((a, b) => Number(a.eier === 'kontrollert') - Number(b.eier === 'kontrollert'));
@@ -157,9 +158,9 @@ function sporsmalsdel(indeks: readonly Kildekontroll[]): string[] {
   return [
     '## Kontrollspørsmål',
     '',
-    'Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om praksisen stemmer. Svar gjerne i en kommentar i kontrollsaken, eller skriv til Claude.',
+    'Spørsmål om det som er usikkert i hver tekst: om noe kan misforstås, og om praksisen stemmer. Under hvert spørsmål står kildene teksten bygger på, med punkt, så du kan sjekke svaret der. Svar gjerne i en kommentar i kontrollsaken, eller skriv til Claude.',
     '',
-    ...med.flatMap((i) => [`**${i.tittel}** (\`${i.id}\`, ${TYPENAVN[i.elementtype]}, ${visEier(i)})`, '', ...i.sporsmal.map((s) => `- ${s}`), '']),
+    ...med.flatMap((i) => [`**${i.tittel}** (\`${i.id}\`, ${TYPENAVN[i.elementtype]}, ${visEier(i)})`, '', ...i.sporsmal.map((s) => `- ${s}`), '', `Kilder å sjekke mot: ${kildelenker(i.kilder, register)}`, '']),
   ];
 }
 
@@ -225,11 +226,11 @@ export function lagKontrollrapport(
     '',
     ...(sesPaa.length > 0 ? sesPaa : ['Ingenting akkurat nå.']),
     '',
-    ...praksisdel(praksis),
+    ...praksisdel(praksis, indeks, register),
     '## Per kilde',
     '',
     ...deler,
-    ...sporsmalsdel(indeks),
+    ...sporsmalsdel(indeks, register),
   ].join('\n');
 }
 

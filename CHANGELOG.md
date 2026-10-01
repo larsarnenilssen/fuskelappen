@@ -13,6 +13,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Lagt til (for eier)
 
+- **Kilder ved kontrollspørsmålene:** Kontrolloversikten (`docs/KONTROLL.md`) og kontrollrundene viser under hvert kontrollspørsmål, hver praksis og hvert punkt som bør kontrolleres på nytt, hvilke kilder du kan sjekke mot, med lenke og punkt.
 - Data fra VIGO Kodeverksbase hentes hver uke sammen med Grep. `docs/VIGO-KODEVERK.md` beskriver hva kodebasen inneholder og hva det kan brukes til senere.
 - Tilbudsoversikten (`docs/TILBUDSSTRUKTUR.md`) har lenker til Vilbli for hvert tilbud: skolene og lærebedriftene, og fag- og timefordelingen. Kontrollrundene i mai og august har seks av lenkene til avkrysning, fordi Vilbli ikke kan sjekkes automatisk. Lenkene til lærefag og påbygging er rettet etter eiers kontroll.
 - **Tilbudsstrukturen** i `docs/TILBUDSSTRUKTUR.md`: alle utdanningsprogram ordnet fra vg1 til vg2-retninger, vg3, lærefag og påbygging. For hvert tilbud vises fag, timer, fagkoder og årsramme, valgfrie plasser med antall fag, obligatorisk yrkesfaglig fordypning med anbefalt kode, alternativer for særskilte grupper, tilpassede ordninger, kryssløp og avvik mellom rundskrivet og Grep.
