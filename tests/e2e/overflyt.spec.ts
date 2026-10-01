@@ -8,6 +8,8 @@ test.describe('ingen horisontal overflyt i 320–430 px', () => {
     for (const rute of ruter) {
       test(`${rute} (${tema})`, async ({ page }, info) => {
         test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
+        // Fagsøket åpner alle faggruppene i fem bredder. Det tar nær 30 sekunder i CI, så testen får mer tid.
+        test.slow(rute === '#/fag', 'Fagsøket åpner mange grupper i fem bredder');
         await settLagret(page, { tema, fylke: '46', favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
         for (const bredde of bredder) {
           await page.setViewportSize({ width: bredde, height: 740 });
