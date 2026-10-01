@@ -70,7 +70,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 7 (Vg2) i Udir-1-2026. Bygger på Idrettsfag vg1 (IDRET1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.idret1----_v.ididr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.idret1----_v.ididr2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.ididr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.ididr2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -95,7 +95,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 7 (Vg3) i Udir-1-2026. Bygger på Idrettsfag vg2 (IDIDR2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.idret1----_v.ididr2----_v.ididr3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.idret1----_v.ididr2----_v.ididr3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.ididr3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/idrettsfag/program/v.id/v.ididr3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -144,7 +144,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 13 (Vg2) i Udir-1-2026. Bygger på Kunst, design og arkitektur vg1 (KDKDA1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda1----_v.kdkda2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda1----_v.kdkda2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -170,7 +170,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 13 (Vg3) i Udir-1-2026. Bygger på Kunst, design og arkitektur vg2 (KDKDA2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda1----_v.kdkda2----_v.kdkda3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda1----_v.kdkda2----_v.kdkda3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/kunst-design-og-arkitektur/program/v.kd/v.kdkda3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -228,7 +228,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 15 (Vg2) i Udir-1-2026. Bygger på Medier og kommunikasjon vg1 (MEMOK1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok1----_v.memok2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok1----_v.memok2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -254,7 +254,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 15 (vg3) i Udir-1-2026. Bygger på Medier og kommunikasjon vg2 (MEMOK2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok1----_v.memok2----_v.memok3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok1----_v.memok2----_v.memok3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/medier-og-kommunikasjon/program/v.me/v.memok3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -312,7 +312,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddan2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddan2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddan2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddan2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -337,7 +337,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg3) i Udir-1-2026. Bygger på Dans vg2 (MDDAN2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddan2----_v.mddan3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddan2----_v.mddan3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddan3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddan3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -360,7 +360,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddra2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddra2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddra2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddra2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -385,7 +385,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg3) i Udir-1-2026. Bygger på Drama vg2 (MDDRA2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddra2----_v.mddra3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mddra2----_v.mddra3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddra3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mddra3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -408,7 +408,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg2) i Udir-1-2026. Bygger på Musikk, dans og drama vg1 (MDMDD1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mdmus2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mdmus2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmus2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmus2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -433,7 +433,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 9 (Vg3) i Udir-1-2026. Bygger på Musikk vg2 (MDMUS2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mdmus2----_v.mdmus3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmdd1----_v.mdmus2----_v.mdmus3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmus3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/musikk-dans-og-drama/program/v.md/v.mdmus3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -499,7 +499,7 @@ Kryssløp til: 51 programområder: BA 8, DT 7, EL 5, FD 3, HS 7, IM 2, NA 6, RM 
 
 Tabell 4 (Vg2) i Udir-1-2026. Bygger på Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.strea2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.strea2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.strea2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.strea2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -523,7 +523,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 4 (Vg3) i Udir-1-2026. Bygger på Realfag vg2 (STREA2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.strea2----_v.strea3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.strea2----_v.strea3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.strea3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.strea3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -547,7 +547,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 4 (Vg2) i Udir-1-2026. Bygger på Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -571,7 +571,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 4 (Vg3) i Udir-1-2026. Bygger på Språk, samfunnsfag og økonomi vg2 (STSSA2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----_v.stssa3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stusp1----_v.stssa2----_v.stssa3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/studiespesialisering/program/v.st/v.stssa3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -645,19 +645,19 @@ Kryssløp til: Trearbeid (DTDTR2), Gipsmakerfaget (DTGIP3).
 
 Lærefag etter Bygg- og anleggsteknikk (BABAT1):
 
-- Byggdrifterfaget (BABDR3): 8 koder, f.eks. BDR3004 Byggdrifterfaget - særløp, BDR3103 Byggdrifterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babdr3----/p5)
-- Brannforebygger (BABFB3): BFB3004 Brannforebyggerfaget – særløp, BFB3103 Brannforebyggerfaget- skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babfb3----/p5)
-- Byggmontasjefaget (BABYM3): BYM3001 Byggmontasjefaget – særløp, BYM3103 Byggmontasjefaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babym3----/p5)
-- Glassfaget (BAGLA3): 8 koder, f.eks. GLA3004 Glassfaget - særløp, GLA3103 Glassfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bagla3----/p5)
-- Renholdsoperatørfaget (BAROF3): 8 koder, f.eks. ROF3004 Renholdsoperatørfaget - særløp, ROF3103 Renholdsoperatørfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.barof3----/p5)
-- Stillasbyggerfaget (BASBF3): SBF3001 Stillasbyggerfaget - særløp, SBF3103 Stillasbyggerfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.basbf3----/p5)
-- Steinfaget (BASTE3): 8 koder, f.eks. STE3004 Steinfaget - særløp, STE3103 Steinfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baste3----/p5)
+- Byggdrifterfaget (BABDR3): 8 koder, f.eks. BDR3004 Byggdrifterfaget - særløp, BDR3103 Byggdrifterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babdr3----/p5)
+- Brannforebygger (BABFB3): BFB3004 Brannforebyggerfaget – særløp, BFB3103 Brannforebyggerfaget- skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babfb3----/p5)
+- Byggmontasjefaget (BABYM3): BYM3001 Byggmontasjefaget – særløp, BYM3103 Byggmontasjefaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babym3----/p5)
+- Glassfaget (BAGLA3): 8 koder, f.eks. GLA3004 Glassfaget - særløp, GLA3103 Glassfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bagla3----/p5)
+- Renholdsoperatørfaget (BAROF3): 8 koder, f.eks. ROF3004 Renholdsoperatørfaget - særløp, ROF3103 Renholdsoperatørfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barof3----/p5)
+- Stillasbyggerfaget (BASBF3): SBF3001 Stillasbyggerfaget - særløp, SBF3103 Stillasbyggerfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.basbf3----/p5)
+- Steinfaget (BASTE3): 8 koder, f.eks. STE3004 Steinfaget - særløp, STE3103 Steinfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baste3----/p5)
 
 ##### Vg2 Anleggsgartner (BAANG2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Naturbruk (NANAB1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baang2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baang2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baang2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baang2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -680,13 +680,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Anleggsgartner (BAANG2):
 
-- Anleggsgartnerfaget (BAANG3): ANG3004 Anleggsgartnerfaget, ANG3103 Anleggsgartnerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baang2----_v.baang3----/p5)
+- Anleggsgartnerfaget (BAANG3): ANG3004 Anleggsgartnerfaget, ANG3103 Anleggsgartnerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baang3----/p5)
 
 ##### Vg2 Anleggsteknikk (BAANL2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baanl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baanl2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -709,21 +709,21 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Anleggsteknikk (BAANL2):
 
-- Anleggsmaskinførerfaget (BAAMF3): AMF3004 Anleggsmaskinførerfaget, AMF3103 Anleggsmaskinførerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.baamf3----/p5)
-- Anleggsrørleggerfaget (BAARL3): ARL3001 Anleggsrørleggerfaget, ARL3103 Anleggsrørleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.baarl3----/p5)
-- Asfaltfaget (BAASF3): ASF3004 Asfaltfaget, ASF3103 Asfaltfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.baasf3----/p5)
-- Banemontørfaget (BABAN3): BAN3004 Banemontørfaget, BAN3103 Banemontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.baban3----/p5)
-- Brønn- og borefaget (BABRO3): BRO3004 Brønn- og borefaget, BRO3103 Brønn- og borefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.babro3----/p5)
-- Fjell- og bergverksfaget (BAFJE3): 6 koder, f.eks. FJE3004 Fjell- og bergverksfaget, fordypningsområde fjellsikring, FJE3005 Fjell- og bergverksfaget, fordypningsområde knuseverk · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.bafje3----/p5)
-- Fundamenteringsfaget (BAFMF3): FMF3001 Fundamenteringsfaget, FMF3103 Fundamenteringsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.bafmf3----/p5)
-- Vei- og anleggsfaget (BAVOA3): VOA3004 Vei- og anleggsfaget, VOA3103 Vei- og anleggsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.bavoa3----/p5)
-- Veidrift- og veivedlikeholdsfaget (BAVOV3): VOV3001 Veidrift- og veivedlikeholdsfaget, VOV3103 Veidrift- og veivedlikeholdsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baanl2----_v.bavov3----/p5)
+- Anleggsmaskinførerfaget (BAAMF3): AMF3004 Anleggsmaskinførerfaget, AMF3103 Anleggsmaskinførerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baamf3----/p5)
+- Anleggsrørleggerfaget (BAARL3): ARL3001 Anleggsrørleggerfaget, ARL3103 Anleggsrørleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baarl3----/p5)
+- Asfaltfaget (BAASF3): ASF3004 Asfaltfaget, ASF3103 Asfaltfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baasf3----/p5)
+- Banemontørfaget (BABAN3): BAN3004 Banemontørfaget, BAN3103 Banemontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baban3----/p5)
+- Brønn- og borefaget (BABRO3): BRO3004 Brønn- og borefaget, BRO3103 Brønn- og borefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babro3----/p5)
+- Fjell- og bergverksfaget (BAFJE3): 6 koder, f.eks. FJE3004 Fjell- og bergverksfaget, fordypningsområde fjellsikring, FJE3005 Fjell- og bergverksfaget, fordypningsområde knuseverk · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bafje3----/p5)
+- Fundamenteringsfaget (BAFMF3): FMF3001 Fundamenteringsfaget, FMF3103 Fundamenteringsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bafmf3----/p5)
+- Vei- og anleggsfaget (BAVOA3): VOA3004 Vei- og anleggsfaget, VOA3103 Vei- og anleggsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bavoa3----/p5)
+- Veidrift- og veivedlikeholdsfaget (BAVOV3): VOV3001 Veidrift- og veivedlikeholdsfaget, VOV3103 Veidrift- og veivedlikeholdsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bavov3----/p5)
 
 ##### Vg2 Betong og mur (BABMO2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babmo2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babmo2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babmo2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babmo2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -746,14 +746,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Betong og mur (BABMO2):
 
-- Betongfaget (BABET3): 8 koder, f.eks. BET3004 Betongfaget, BET3103 Betongfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babmo2----_v.babet3----/p5)
-- Murer- og flisleggerfaget (BAMFF3): MFF3001 Murer- og flisleggerfaget, MFF3103 Murer- og flisleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.babmo2----_v.bamff3----/p5)
+- Betongfaget (BABET3): 8 koder, f.eks. BET3004 Betongfaget, BET3103 Betongfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babet3----/p5)
+- Murer- og flisleggerfaget (BAMFF3): MFF3001 Murer- og flisleggerfaget, MFF3103 Murer- og flisleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bamff3----/p5)
 
 ##### Vg2 Klima, energi og miljøteknikk (BAKEM2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bakem2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bakem2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -776,16 +776,16 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Klima, energi og miljøteknikk (BAKEM2):
 
-- Isolatørfaget (BAISL3): ISL3001 Isolatørfaget, ISL3103 Isolatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----_v.baisl3----/p5)
-- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BARLF2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----_v.barlf3----/p5)
-- Tak- og membrantekkerfaget (BATAK3): TAK3004 Tak- og membrantekkerfaget, TAK3103 Tak- og membrantekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----_v.batak3----/p5)
-- Ventilasjons- og blikkenslagerfaget (BAVBL3): VBL3004 Ventilasjons- og blikkenslagerfaget, VBL3103 Ventilasjons- og blikkenslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.bakem2----_v.bavbl3----/p5)
+- Isolatørfaget (BAISL3): ISL3001 Isolatørfaget, ISL3103 Isolatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baisl3----/p5)
+- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BARLF2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
+- Tak- og membrantekkerfaget (BATAK3): TAK3004 Tak- og membrantekkerfaget, TAK3103 Tak- og membrantekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batak3----/p5)
+- Ventilasjons- og blikkenslagerfaget (BAVBL3): VBL3004 Ventilasjons- og blikkenslagerfaget, VBL3103 Ventilasjons- og blikkenslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bavbl3----/p5)
 
 ##### Vg2 Overflateteknikk (BAOFT2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baoft2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baoft2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baoft2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baoft2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -808,14 +808,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Overflateteknikk (BAOFT2):
 
-- Industrimalerfaget (BAIMF3): IMF3004 Industrimalerfaget, IMF3103 Industrimalerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baoft2----_v.baimf3----/p5)
-- Maler- og overflateteknikkfaget (BAMOT3): 9 koder, f.eks. MOT3001 Maler- og overflateteknikkfaget, MOT3103 Maler- og overflateteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.baoft2----_v.bamot3----/p5)
+- Industrimalerfaget (BAIMF3): IMF3004 Industrimalerfaget, IMF3103 Industrimalerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baimf3----/p5)
+- Maler- og overflateteknikkfaget (BAMOT3): 9 koder, f.eks. MOT3001 Maler- og overflateteknikkfaget, MOT3103 Maler- og overflateteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bamot3----/p5)
 
 ##### Vg2 Rørlegger (BARLF2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.barlf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.barlf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -838,13 +838,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Rørlegger (BARLF2):
 
-- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BAKEM2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.barlf2----_v.barlf3----/p5)
+- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BAKEM2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
 
 ##### Vg2 Treteknikk (BATRT2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Håndverk, design og produktutvikling (DTDTH1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batrt2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batrt2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -869,14 +869,14 @@ Kryssløp til: Industrisnekkerfaget (TPISN3).
 
 Lærefag etter Treteknikk (BATRT2):
 
-- Snekkerfaget (BASNE3): 14 koder, f.eks. SNEV100 Planlegging, SNEV101 Produksjon og overflatebehandling · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batrt2----_v.basne3----/p5)
-- Trelast- og limtreproduksjonsfaget (BATLT3): 8 koder, f.eks. TLT3001 Trelast- og limtreproduksjonsfaget, fordypningsområde høvellastproduksjon, TLT3004 Trelast- og limtreproduksjonsfaget, fordypningsområde skurlastproduksjon · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batrt2----_v.batlt3----/p5)
+- Snekkerfaget (BASNE3): 14 koder, f.eks. SNEV100 Planlegging, SNEV101 Produksjon og overflatebehandling · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.basne3----/p5)
+- Trelast- og limtreproduksjonsfaget (BATLT3): 8 koder, f.eks. TLT3001 Trelast- og limtreproduksjonsfaget, fordypningsområde høvellastproduksjon, TLT3004 Trelast- og limtreproduksjonsfaget, fordypningsområde skurlastproduksjon · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batlt3----/p5)
 
 ##### Vg2 Tømrer (BATMF2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batmf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batmf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -899,7 +899,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Tømrer (BATMF2):
 
-- Tømrerfaget (BATMF3): TMF3004 Tømrerfaget, TMF3103 Tømrerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babat1----_v.batmf2----_v.batmf3----/p5)
+- Tømrerfaget (BATMF3): TMF3004 Tømrerfaget, TMF3103 Tømrerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batmf3----/p5)
 
 ### Elektro og datateknologi (EL)
 
@@ -933,7 +933,7 @@ Kryssløp til: 7 programområder: DT 1, TP 6.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -956,16 +956,16 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Automatisering (ELAUT2):
 
-- Fjernstyrte undervannsoperasjoner (ELFUO3): FUO3004 Fjernstyrte undervannsoperasjoner, FUO3103 Fjernstyrte undervannsoperasjoner · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.elfuo3----/p5)
-- Låsesmedfaget (ELLSM3): LSM3004 Låsesmedfaget, LSM3103 Låsesmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.ellsm3----/p5)
-- Tavlemontørfaget (ELTAV3): TAV3004 Tavlemontørfaget, TAV3103 Tavlemontørfaget (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.eltav3----/p5)
-- Viklerfaget (ELVIK3): VIK3004 Viklerfaget, VIK3103 Viklerfaget (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.elvik3----/p5)
+- Fjernstyrte undervannsoperasjoner (ELFUO3): FUO3004 Fjernstyrte undervannsoperasjoner, FUO3103 Fjernstyrte undervannsoperasjoner · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfuo3----/p5)
+- Låsesmedfaget (ELLSM3): LSM3004 Låsesmedfaget, LSM3103 Låsesmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.ellsm3----/p5)
+- Tavlemontørfaget (ELTAV3): TAV3004 Tavlemontørfaget, TAV3103 Tavlemontørfaget (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eltav3----/p5)
+- Viklerfaget (ELVIK3): VIK3004 Viklerfaget, VIK3103 Viklerfaget (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elvik3----/p5)
 
 ###### Vg3 Automatiseringsfaget (ELAUT3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Automatisering (ELAUT2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.elaut3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elaut2----_v.elaut3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -977,7 +977,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldel2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldel2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1000,15 +1000,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Datateknologi og elektronikk (ELDEL2):
 
-- Optronikerfaget (ELOPT3): OPT3004 Optronikerfaget, OPT3103 Optronikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.elopt3----/p5)
-- Produksjonselektronikerfaget (ELPRO3): PRO3004 Produksjonselektronikerfaget, PRO3103 Produksjonselektronikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.elpro3----/p5)
-- Telekommunikasjonsmontørfaget (ELTEL3): ELE2102 Elenergi og ekom, TEL3004 Telekommunikasjonsmontørfaget, TEL3103 Telekommunikasjonsmontørfaget, skriftlig (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.eltel3----/p5)
+- Optronikerfaget (ELOPT3): OPT3004 Optronikerfaget, OPT3103 Optronikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elopt3----/p5)
+- Produksjonselektronikerfaget (ELPRO3): PRO3004 Produksjonselektronikerfaget, PRO3103 Produksjonselektronikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elpro3----/p5)
+- Telekommunikasjonsmontørfaget (ELTEL3): ELE2102 Elenergi og ekom, TEL3004 Telekommunikasjonsmontørfaget, TEL3103 Telekommunikasjonsmontørfaget, skriftlig (også etter ELELE2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eltel3----/p5)
 
 ###### Vg3 Dataelektronikerfaget (ELDAT3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Datateknologi og elektronikk (ELDEL2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.eldat3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.eldat3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldat3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldat3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1020,7 +1020,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Datateknologi og elektronikk (ELDEL2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.elrom3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldel2----_v.elrom3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elrom3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elrom3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1036,7 +1036,7 @@ Avvik:
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldrf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldrf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldrf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldrf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1061,13 +1061,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Dronefag (ELDRF2):
 
-- Droneoperatørfaget (ELDRF3): DRF3001 Droneoperatørfaget, DRF3103 Droneoperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.eldrf2----_v.eldrf3----/p5)
+- Droneoperatørfaget (ELDRF3): DRF3001 Droneoperatørfaget, DRF3103 Droneoperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldrf3----/p5)
 
 ##### Vg2 Elenergi og ekom (ELELE2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1090,22 +1090,22 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Elenergi og ekom (ELELE2):
 
-- Elektrikerfaget (ELELE3): ELE2102 Elenergi og ekom, ELE3004 Elektrikerfaget, ELE3103 Elektrikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elele3----/p5)
-- Energimontørfaget (ELEMO3): ELE2102 Elenergi og ekom, EMO3004 Energimontørfaget, EMO3103 Energimontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elemo3----/p5)
-- Energioperatørfaget (ELEOP3): ELE2102 Elenergi og ekom, EOP3004 Energioperatørfaget, EOP3103 Energioperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.eleop3----/p5)
-- Elektroreparatørfaget (ELERF3): ERF3004 Elektroreparatørfaget, ERF3103 Elektroreparatørfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elerf3----/p5)
-- Heismontørfaget (ELHEI3): ELE2102 Elenergi og ekom, HEI3004 Heismontørfaget, HEI3103 Heismontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elhei3----/p5)
-- Signalmontørfaget (ELSIG3): ELE2102 Elenergi og ekom, SIG3004 Signalmontørfaget, SIG3103 Signalmontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elsig3----/p5)
-- Tavlemontørfaget (ELTAV3): TAV3004 Tavlemontørfaget, TAV3103 Tavlemontørfaget (også etter ELAUT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.eltav3----/p5)
-- Telekommunikasjonsmontørfaget (ELTEL3): ELE2102 Elenergi og ekom, TEL3004 Telekommunikasjonsmontørfaget, TEL3103 Telekommunikasjonsmontørfaget, skriftlig (også etter ELDEL2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.eltel3----/p5)
-- Togelektrikerfaget (ELTOG3): TOG3004 Togelektrikerfaget, TOG3103 Togelektrikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.eltog3----/p5)
-- Viklerfaget (ELVIK3): VIK3004 Viklerfaget, VIK3103 Viklerfaget (også etter ELAUT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elvik3----/p5)
+- Elektrikerfaget (ELELE3): ELE2102 Elenergi og ekom, ELE3004 Elektrikerfaget, ELE3103 Elektrikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele3----/p5)
+- Energimontørfaget (ELEMO3): ELE2102 Elenergi og ekom, EMO3004 Energimontørfaget, EMO3103 Energimontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elemo3----/p5)
+- Energioperatørfaget (ELEOP3): ELE2102 Elenergi og ekom, EOP3004 Energioperatørfaget, EOP3103 Energioperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eleop3----/p5)
+- Elektroreparatørfaget (ELERF3): ERF3004 Elektroreparatørfaget, ERF3103 Elektroreparatørfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elerf3----/p5)
+- Heismontørfaget (ELHEI3): ELE2102 Elenergi og ekom, HEI3004 Heismontørfaget, HEI3103 Heismontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elhei3----/p5)
+- Signalmontørfaget (ELSIG3): ELE2102 Elenergi og ekom, SIG3004 Signalmontørfaget, SIG3103 Signalmontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elsig3----/p5)
+- Tavlemontørfaget (ELTAV3): TAV3004 Tavlemontørfaget, TAV3103 Tavlemontørfaget (også etter ELAUT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eltav3----/p5)
+- Telekommunikasjonsmontørfaget (ELTEL3): ELE2102 Elenergi og ekom, TEL3004 Telekommunikasjonsmontørfaget, TEL3103 Telekommunikasjonsmontørfaget, skriftlig (også etter ELDEL2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eltel3----/p5)
+- Togelektrikerfaget (ELTOG3): TOG3004 Togelektrikerfaget, TOG3103 Togelektrikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eltog3----/p5)
+- Viklerfaget (ELVIK3): VIK3004 Viklerfaget, VIK3103 Viklerfaget (også etter ELAUT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elvik3----/p5)
 
 ###### Vg3 Maritim elektrikerfaget vg3 i skole (ELMEL3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Elenergi og ekom (ELELE2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elmel3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elmel3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elmel3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elmel3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1115,13 +1115,13 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 Lærefag etter Maritim elektrikerfaget vg3 i skole (ELMEL3):
 
-- Maritim elektrikerfaget vg3 i bedrift (ELMEL4): MEL4003 Maritim elektrikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elele2----_v.elmel3----_v.elmel4----/p5)
+- Maritim elektrikerfaget vg3 i bedrift (ELMEL4): MEL4003 Maritim elektrikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elmel4----/p5)
 
 ##### Vg2 Flyfag (ELFLY2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1146,7 +1146,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Flyfag (ELFLY2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elavi3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elavi3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elavi3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elavi3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1156,13 +1156,13 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 Lærefag etter Avionikerfaget (ELAVI3):
 
-- Avionikerfaget (ELAVI4): AVI4004 Avionikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elavi3----_v.elavi4----/p5)
+- Avionikerfaget (ELAVI4): AVI4004 Avionikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elavi4----/p5)
 
 ###### Vg3 Flytekniske fag (ELFLY3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Flyfag (ELFLY2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elfly3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elfly3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1172,15 +1172,15 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 Lærefag etter Flytekniske fag (ELFLY3):
 
-- Flymotormekanikerfaget (ELFMO4): FMO4004 Flymotormekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elfly3----_v.elfmo4----/p5)
-- Flystrukturmekanikerfaget (ELFST4): FST4004 Flystrukturmekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elfly3----_v.elfst4----/p5)
-- Flysystemmekanikerfaget (ELFSY4): FSY4004 Flysystemmekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elfly2----_v.elfly3----_v.elfsy4----/p5)
+- Flymotormekanikerfaget (ELFMO4): FMO4004 Flymotormekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfmo4----/p5)
+- Flystrukturmekanikerfaget (ELFST4): FST4004 Flystrukturmekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfst4----/p5)
+- Flysystemmekanikerfaget (ELFSY4): FSY4004 Flysystemmekanikerfaget · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfsy4----/p5)
 
 ##### Vg2 Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elkvv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elkvv2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elkvv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elkvv2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1203,8 +1203,8 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2):
 
-- Kulde- og varmepumpeteknikkfaget (ELKVP3): KVP3001 Kulde- og varmepumpeteknikkfaget, KVP3103 Kulde- og varmepumpeteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elkvv2----_v.elkvp3----/p5)
-- Ventilasjonsteknikkfaget (ELVEN3): VEN3001 Ventilasjonsteknikkfaget, VEN3103 Ventilasjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele1----_v.elkvv2----_v.elven3----/p5)
+- Kulde- og varmepumpeteknikkfaget (ELKVP3): KVP3001 Kulde- og varmepumpeteknikkfaget, KVP3103 Kulde- og varmepumpeteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elkvp3----/p5)
+- Ventilasjonsteknikkfaget (ELVEN3): VEN3001 Ventilasjonsteknikkfaget, VEN3103 Ventilasjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elven3----/p5)
 
 ### Frisør, blomster, interiør og eksponeringsdesign (FD)
 
@@ -1234,13 +1234,13 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Lærefag etter Frisør, blomster, interiør og eksponeringsdesign (FDFBI1):
 
-- Maskør- og parykkmakerfaget (FDMPM3): MPM3004 Maskør- og parykkmakerfaget - særløp, MPM3103 Maskør- og parykkmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdmpm3----/p5)
+- Maskør- og parykkmakerfaget (FDMPM3): MPM3004 Maskør- og parykkmakerfaget - særløp, MPM3103 Maskør- og parykkmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdmpm3----/p5)
 
 ##### Vg2 Blomsterdekoratør (FDBLD2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdbld2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdbld2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdbld2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdbld2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1263,13 +1263,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Blomsterdekoratør (FDBLD2):
 
-- Blomsterdekoratørfaget (FDBLD3): 7 koder, f.eks. BLD3004 Blomsterdekoratørfaget, BLD3103 Blomsterdekoratørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdbld2----_v.fdbld3----/p5)
+- Blomsterdekoratørfaget (FDBLD3): 7 koder, f.eks. BLD3004 Blomsterdekoratørfaget, BLD3103 Blomsterdekoratørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdbld3----/p5)
 
 ##### Vg2 Frisør (FDFRI2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdfri2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdfri2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfri2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfri2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1292,13 +1292,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Frisør (FDFRI2):
 
-- Frisørfaget (FDFRI3): 7 koder, f.eks. FRI3004 Frisørfaget, FRI3103 Frisørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdfri2----_v.fdfri3----/p5)
+- Frisørfaget (FDFRI3): 7 koder, f.eks. FRI3004 Frisørfaget, FRI3103 Frisørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfri3----/p5)
 
 ##### Vg2 Interiør og eksponeringsdesign (FDIED2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdied2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdied2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1321,13 +1321,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Interiør og eksponeringsdesign (FDIED2):
 
-- Profileringsdesignfaget (FDPFD3): PFD3004 Profileringsdesignfaget, PFD3103 Profileringsdesignfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----_v.fdpfd3----/p5)
+- Profileringsdesignfaget (FDPFD3): PFD3004 Profileringsdesignfaget, PFD3103 Profileringsdesignfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdpfd3----/p5)
 
 ###### Vg3 Eksponeringsdesign (FDEKD3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Interiør og eksponeringsdesign (FDIED2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----_v.fdekd3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----_v.fdekd3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdekd3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdekd3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1339,7 +1339,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomste
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Interiør og eksponeringsdesign (FDIED2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----_v.fdint3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfbi1----_v.fdied2----_v.fdint3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdint3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdint3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1377,7 +1377,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsakt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsakt2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsakt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsakt2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1400,13 +1400,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Aktivitør (HSAKT2):
 
-- Aktivitørfaget (HSAKT3): AKT3004 Aktivitørfaget, AKT3103 Aktivitørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsakt2----_v.hsakt3----/p5)
+- Aktivitørfaget (HSAKT3): AKT3004 Aktivitørfaget, AKT3103 Aktivitørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsakt3----/p5)
 
 ##### Vg2 Ambulansefag (HSAMB2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsamb2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsamb2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1429,15 +1429,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Ambulansefag (HSAMB2):
 
-- Ambulansefaget (HSAMB3): AMB3004 Ambulansefaget, AMB3103 Ambulansefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsamb2----_v.hsamb3----/p5)
-- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsamb2----_v.hshea3----/p5)
-- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSHEA2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsamb2----_v.hspor3----/p5)
+- Ambulansefaget (HSAMB3): AMB3004 Ambulansefaget, AMB3103 Ambulansefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb3----/p5)
+- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
+- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSHEA2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hspor3----/p5)
 
 ##### Vg2 Barne- og ungdomsarbeiderfag (HSBUA2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsbua2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsbua2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsbua2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsbua2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1460,13 +1460,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Barne- og ungdomsarbeiderfag (HSBUA2):
 
-- Barne- og ungdomsarbeiderfaget (HSBUA3): BUA3004 Barne- og ungdomsarbeiderfaget, BUA3103 Barne- og ungdomsarbeiderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsbua2----_v.hsbua3----/p5)
+- Barne- og ungdomsarbeiderfaget (HSBUA3): BUA3004 Barne- og ungdomsarbeiderfaget, BUA3103 Barne- og ungdomsarbeiderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsbua3----/p5)
 
 ##### Vg2 Fotterapi og ortopediteknikk (HSFOT2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsfot2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsfot2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1489,13 +1489,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Fotterapi og ortopediteknikk (HSFOT2):
 
-- Ortopediteknikkfaget (HSORT3): ORT3004 Ortopediteknikkfaget, ORT3103 Ortopediteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsfot2----_v.hsort3----/p5)
+- Ortopediteknikkfaget (HSORT3): ORT3004 Ortopediteknikkfaget, ORT3103 Ortopediteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsort3----/p5)
 
 ###### Vg3 Fotterapi (HSFOT3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Fotterapi og ortopediteknikk (HSFOT2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsfot2----_v.hsfot3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hsfot2----_v.hsfot3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1507,7 +1507,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1530,14 +1530,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Helsearbeiderfag (HSHEA2):
 
-- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSAMB2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5)
-- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSAMB2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hspor3----/p5)
+- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSAMB2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
+- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSAMB2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hspor3----/p5)
 
 ##### Vg2 Helseservicefag (HSHES2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshes2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshes2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1560,13 +1560,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Helseservicefag (HSHES2):
 
-- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSAMB2, HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hspor3----/p5)
+- Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSAMB2, HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hspor3----/p5)
 
 ###### Vg3 Apotekteknikk (HSAPO3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hsapo3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hsapo3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsapo3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsapo3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1578,7 +1578,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hshse3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hshse3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshse3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshse3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1590,7 +1590,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hstan3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshes2----_v.hstan3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hstan3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hstan3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1602,7 +1602,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshud2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshud2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1627,7 +1627,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Hudpleie (HSHUD2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshud2----_v.hshud3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshud2----_v.hshud3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1665,27 +1665,27 @@ Kryssløp til: Treteknikk (BATRT2).
 
 Lærefag etter Håndverk, design og produktutvikling (DTDTH1):
 
-- Blyglasshåndverkerfaget (DTBLY3): BLY3004 Blyglasshåndverkerfaget - særløp, BLY3103 Blyglasshåndverkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtbly3----/p5)
-- Forgyllerfaget (DTFGY3): FGY3004 Forgyllerfaget - særløp, FGY3103 Forgyllerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtfgy3----/p5)
-- Garverfaget (DTGAF3) · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgaf3----/p5)
-- Glassblåserfaget (DTGBF3): GBF3004 Glassblåserfaget - særløp, GBF3103 Glassblåserfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgbf3----/p5)
-- Gipsmakerfaget (DTGIP3): GIP3004 Gipsmakerfaget - særløp, GIP3103 Gipsmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgip3----/p5)
-- Gravørfaget (DTGRF3): GRF3004 Gravørfaget - særløp, GRF3103 Gravørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgrf3----/p5)
-- Glassliperfaget (DTGSF3): GSF3001 Glassliperfaget, GSF3103 Glassliperfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgsf3----/p5)
-- Gjørtlerfaget (DTGTL3): GTL3004 Gjørtlerfaget - særløp, GTL3103 Gjørtlerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtgtl3----/p5)
-- Håndbokbinderfaget (DTHBB3): HBB3004 Håndbokbinderfaget - særløp, HBB3103 Håndbokbinderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dthbb3----/p5)
-- Keramikerfaget (DTKER3): KER3004 Keramikerfaget - særløp, KER3103 Keramikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtker3----/p5)
-- Kurvmakerfaget (DTKRV3): KRV3004 Kurvmakerfaget - særløp, KRV3103 Kurvmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtkrv3----/p5)
-- Møbeltapetsererfaget (DTMBT3): MBT3004 Møbeltapetsererfaget - særløp, MBT3103 Møbeltapetsererfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtmbt3----/p5)
-- Repslagerfaget (DTREP3): REP3004 Repslagerfaget - særløp, REP3103 Repslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtrep3----/p5)
-- Seilmakerfaget (DTSEI3): SEI3004 Seilmakerfaget - særløp, SEI3103 Seilmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsei3----/p5)
-- Taksidermistfaget (DTTKS3): TKS3004 Taksidermistfaget - særløp, TKS3103 Taksidermistfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dttks3----/p5)
+- Blyglasshåndverkerfaget (DTBLY3): BLY3004 Blyglasshåndverkerfaget - særløp, BLY3103 Blyglasshåndverkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbly3----/p5)
+- Forgyllerfaget (DTFGY3): FGY3004 Forgyllerfaget - særløp, FGY3103 Forgyllerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtfgy3----/p5)
+- Garverfaget (DTGAF3) · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgaf3----/p5)
+- Glassblåserfaget (DTGBF3): GBF3004 Glassblåserfaget - særløp, GBF3103 Glassblåserfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgbf3----/p5)
+- Gipsmakerfaget (DTGIP3): GIP3004 Gipsmakerfaget - særløp, GIP3103 Gipsmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgip3----/p5)
+- Gravørfaget (DTGRF3): GRF3004 Gravørfaget - særløp, GRF3103 Gravørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgrf3----/p5)
+- Glassliperfaget (DTGSF3): GSF3001 Glassliperfaget, GSF3103 Glassliperfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgsf3----/p5)
+- Gjørtlerfaget (DTGTL3): GTL3004 Gjørtlerfaget - særløp, GTL3103 Gjørtlerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgtl3----/p5)
+- Håndbokbinderfaget (DTHBB3): HBB3004 Håndbokbinderfaget - særløp, HBB3103 Håndbokbinderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dthbb3----/p5)
+- Keramikerfaget (DTKER3): KER3004 Keramikerfaget - særløp, KER3103 Keramikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtker3----/p5)
+- Kurvmakerfaget (DTKRV3): KRV3004 Kurvmakerfaget - særløp, KRV3103 Kurvmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtkrv3----/p5)
+- Møbeltapetsererfaget (DTMBT3): MBT3004 Møbeltapetsererfaget - særløp, MBT3103 Møbeltapetsererfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtmbt3----/p5)
+- Repslagerfaget (DTREP3): REP3004 Repslagerfaget - særløp, REP3103 Repslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtrep3----/p5)
+- Seilmakerfaget (DTSEI3): SEI3004 Seilmakerfaget - særløp, SEI3103 Seilmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsei3----/p5)
+- Taksidermistfaget (DTTKS3): TKS3004 Taksidermistfaget - særløp, TKS3103 Taksidermistfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dttks3----/p5)
 
 ##### Vg2 Båtbygger (DTBBF2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtbbf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtbbf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbbf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbbf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1708,14 +1708,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Båtbygger (DTBBF2):
 
-- Komposittbåtbyggerfaget (DTKBB3): KBB3004 Komposittbåtbyggerfaget, KBB3103 Komposittbåtbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtbbf2----_v.dtkbb3----/p5)
-- Trebåtbyggerfaget (DTTRB3): TRB3004 Trebåtbyggerfaget, TRB3103 Trebåtbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtbbf2----_v.dttrb3----/p5)
+- Komposittbåtbyggerfaget (DTKBB3): KBB3004 Komposittbåtbyggerfaget, KBB3103 Komposittbåtbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtkbb3----/p5)
+- Trebåtbyggerfaget (DTTRB3): TRB3004 Trebåtbyggerfaget, TRB3103 Trebåtbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dttrb3----/p5)
 
 ##### Vg2 Duodji (DTDDU2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtddu2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtddu2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1738,17 +1738,17 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Duodji (DTDDU2):
 
-- Horn-, bein- og metallduodjifaget (DTHMD3): HMD3004 Horn-, bein- og metallduodjifaget, HMD3103 Horn-, bein- og metallduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----_v.dthmd3----/p5)
-- Skinn- og pelsduodjifaget (DTSPD3): SPD3004 Skinn- og pelsduodjifaget, SPD3103 Skinn- og pelsduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----_v.dtspd3----/p5)
-- Tekstilduodjifaget (DTTED3): TED3004 Tekstilduodjifaget, TED3103 Tekstilduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----_v.dtted3----/p5)
-- Treduodjifaget (DTTRD3): TRD3004 Treduodjifaget, TRD3103 Treduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----_v.dttrd3----/p5)
-- Ull- og garnduodjifaget (DTVHD3): VHD3004 Ull- og garnduodjifaget, VHD3103 Ull- og garnduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtddu2----_v.dtvhd3----/p5)
+- Horn-, bein- og metallduodjifaget (DTHMD3): HMD3004 Horn-, bein- og metallduodjifaget, HMD3103 Horn-, bein- og metallduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dthmd3----/p5)
+- Skinn- og pelsduodjifaget (DTSPD3): SPD3004 Skinn- og pelsduodjifaget, SPD3103 Skinn- og pelsduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtspd3----/p5)
+- Tekstilduodjifaget (DTTED3): TED3004 Tekstilduodjifaget, TED3103 Tekstilduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtted3----/p5)
+- Treduodjifaget (DTTRD3): TRD3004 Treduodjifaget, TRD3103 Treduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dttrd3----/p5)
+- Ull- og garnduodjifaget (DTVHD3): VHD3004 Ull- og garnduodjifaget, VHD3103 Ull- og garnduodjifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtvhd3----/p5)
 
 ##### Vg2 Gull- og sølvsmedhåndverk (DTDGH2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdgh2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdgh2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdgh2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdgh2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1771,15 +1771,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Gull- og sølvsmedhåndverk (DTDGH2):
 
-- Filigransølvsmedfaget (DTFIL3): FIL3004 Filigranssølvsmedfaget, FIL3103 Filigranssølvsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdgh2----_v.dtfil3----/p5)
-- Gullsmedfaget (DTGUL3): GUL3004 Gullsmedfaget, GUL3103 Gullsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdgh2----_v.dtgul3----/p5)
-- Sølvsmedfaget (DTSLV3): SLV3004 Sølvsmedfaget, SLV3103 Sølvsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdgh2----_v.dtslv3----/p5)
+- Filigransølvsmedfaget (DTFIL3): FIL3004 Filigranssølvsmedfaget, FIL3103 Filigranssølvsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtfil3----/p5)
+- Gullsmedfaget (DTGUL3): GUL3004 Gullsmedfaget, GUL3103 Gullsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtgul3----/p5)
+- Sølvsmedfaget (DTSLV3): SLV3004 Sølvsmedfaget, SLV3103 Sølvsmedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtslv3----/p5)
 
 ##### Vg2 Smed (DTSME2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsme2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsme2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsme2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsme2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1802,13 +1802,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Smed (DTSME2):
 
-- Smedfaget (DTSME3): SME3004 Smedfaget, SME3103 Smedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsme2----_v.dtsme3----/p5)
+- Smedfaget (DTSME3): SME3004 Smedfaget, SME3103 Smedfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsme3----/p5)
 
 ##### Vg2 Søm og tekstilhåndverk (DTSTH2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsth2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsth2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1833,23 +1833,23 @@ Kryssløp til: Industritekstilfaget (TPITF3).
 
 Lærefag etter Søm og tekstilhåndverk (DTSTH2):
 
-- Buntmakerfaget (DTBNT3): BNT3004 Buntmakerfaget, BNT3103 Buntmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtbnt3----/p5)
-- Bilsalmakerfaget (DTBSM3): BSM3001 Bilsalmakerfaget, BSM3103 Bilsalmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtbsm3----/p5)
-- Bunadtilvirkerfaget (DTBUN3): 6 koder, f.eks. BUN3004 Bunadtilvirkerfaget, BUN3103 Bunadtilvirkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtbun3----/p5)
-- Herreskredderfaget (DTHSK3): HSK3004 Herreskredderfaget, HSK3103 Herreskredderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dthsk3----/p5)
-- Håndveverfaget (DTHVF3): 7 koder, f.eks. HVF3004 Håndveverfaget, HVF3103 Håndveverfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dthvf3----/p5)
-- Kjole- og draktsyerfaget (DTKJD3): KJD3004 Kjole- og draktsyerfaget, KJD3103 Kjole- og draktsyerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtkjd3----/p5)
-- Kostymesyerfaget (DTKST3): KST3004 Kostymesyerfaget, KST3103 Kostymesyerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtkst3----/p5)
-- Modistfaget (DTMOD3): MOD3004 Modistfaget, MOD3103 Modistfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtmod3----/p5)
-- Salmakerfaget (DTSAL3): SAL3004 Salmakerfaget, SAL3103 Salmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtsal3----/p5)
-- Skomakerfaget (DTSKO3): SKO3004 Skomakerfaget, SKO3103 Skomakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtsko3----/p5)
-- Strikkefaget (DTSTR3): STR3004 Strikkefaget, STR3103 Strikkefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtsth2----_v.dtstr3----/p5)
+- Buntmakerfaget (DTBNT3): BNT3004 Buntmakerfaget, BNT3103 Buntmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbnt3----/p5)
+- Bilsalmakerfaget (DTBSM3): BSM3001 Bilsalmakerfaget, BSM3103 Bilsalmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbsm3----/p5)
+- Bunadtilvirkerfaget (DTBUN3): 6 koder, f.eks. BUN3004 Bunadtilvirkerfaget, BUN3103 Bunadtilvirkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbun3----/p5)
+- Herreskredderfaget (DTHSK3): HSK3004 Herreskredderfaget, HSK3103 Herreskredderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dthsk3----/p5)
+- Håndveverfaget (DTHVF3): 7 koder, f.eks. HVF3004 Håndveverfaget, HVF3103 Håndveverfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dthvf3----/p5)
+- Kjole- og draktsyerfaget (DTKJD3): KJD3004 Kjole- og draktsyerfaget, KJD3103 Kjole- og draktsyerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtkjd3----/p5)
+- Kostymesyerfaget (DTKST3): KST3004 Kostymesyerfaget, KST3103 Kostymesyerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtkst3----/p5)
+- Modistfaget (DTMOD3): MOD3004 Modistfaget, MOD3103 Modistfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtmod3----/p5)
+- Salmakerfaget (DTSAL3): SAL3004 Salmakerfaget, SAL3103 Salmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsal3----/p5)
+- Skomakerfaget (DTSKO3): SKO3004 Skomakerfaget, SKO3103 Skomakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsko3----/p5)
+- Strikkefaget (DTSTR3): STR3004 Strikkefaget, STR3103 Strikkefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtstr3----/p5)
 
 ##### Vg2 Trearbeid (DTDTR2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Bygg- og anleggsteknikk (BABAT1), Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdtr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdtr2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1872,17 +1872,17 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Trearbeid (DTDTR2):
 
-- Bøkkerfaget (DTBKF3): BKF3004 Bøkkerfaget, BKF3103 Bøkkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----_v.dtbkf3----/p5)
-- Møbelsnekkerfaget (DTMSF3): MSF3004 Møbelsnekkerfaget, MSF3103 Møbelsnekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----_v.dtmsf3----/p5)
-- Orgelbyggerfaget (DTORG3): ORG3004 Orgelbyggerfaget, ORG3103 Orgelbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----_v.dtorg3----/p5)
-- Tredreierfaget (DTTDR3): TDR3004 Tredreierfaget, TDR3103 Tredreierfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----_v.dttdr3----/p5)
-- Treskjærerfaget (DTTSK3): TSK3004 Treskjærerfaget, TSK3103 Treskjærerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtdtr2----_v.dttsk3----/p5)
+- Bøkkerfaget (DTBKF3): BKF3004 Bøkkerfaget, BKF3103 Bøkkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbkf3----/p5)
+- Møbelsnekkerfaget (DTMSF3): MSF3004 Møbelsnekkerfaget, MSF3103 Møbelsnekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtmsf3----/p5)
+- Orgelbyggerfaget (DTORG3): ORG3004 Orgelbyggerfaget, ORG3103 Orgelbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtorg3----/p5)
+- Tredreierfaget (DTTDR3): TDR3004 Tredreierfaget, TDR3103 Tredreierfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dttdr3----/p5)
+- Treskjærerfaget (DTTSK3): TSK3004 Treskjærerfaget, TSK3103 Treskjærerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dttsk3----/p5)
 
 ##### Vg2 Urmaker (DTUIM2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtuim2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtuim2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtuim2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtuim2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1905,7 +1905,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Urmaker (DTUIM2):
 
-- Urmakerfaget (DTURM3): URM3004 Urmakerfaget, URM3103 Urmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdth1----_v.dtuim2----_v.dturm3----/p5)
+- Urmakerfaget (DTURM3): URM3004 Urmakerfaget, URM3103 Urmakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dturm3----/p5)
 
 ### Informasjonsteknologi og medieproduksjon (IM)
 
@@ -1937,7 +1937,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.imitk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.imitk2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imitk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imitk2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1960,14 +1960,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Informasjonsteknologi (IMITK2):
 
-- IT-driftsfaget (IMITD3): ITD3001 IT-driftsfaget, ITD3103 IT-driftsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.imitk2----_v.imitd3----/p5)
-- IT-utviklerfaget (IMIUV3): IUV3001 IT-utviklerfaget, IUV3103 IT-utviklerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.imitk2----_v.imiuv3----/p5)
+- IT-driftsfaget (IMITD3): ITD3001 IT-driftsfaget, ITD3103 IT-driftsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imitd3----/p5)
+- IT-utviklerfaget (IMIUV3): IUV3001 IT-utviklerfaget, IUV3103 IT-utviklerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imiuv3----/p5)
 
 ##### Vg2 Medieproduksjon (IMMED2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immed2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immed2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -1992,10 +1992,10 @@ Kryssløp til: Profileringsdesignfaget (FDPFD3).
 
 Lærefag etter Medieproduksjon (IMMED2):
 
-- Grafisk produksjonsteknikkfaget (IMGPT3): GPT3004 Grafisk produksjonsteknikkfaget, GPT3103 Grafisk produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----_v.imgpt3----/p5)
-- Innholdsproduksjonsfaget (IMIHP3): IHP3001 Innholdsproduksjonsfaget, IHP3103 Innholdsproduksjonsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----_v.imihp3----/p5)
-- Mediedesignfaget (IMMDF3): MDF3001 Mediedesignfaget, MDF3103 Mediedesignfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----_v.immdf3----/p5)
-- Medieteknikkfaget (IMMET3): MET3001 Medieteknikkfaget, MET3103 Medieteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imikm1----_v.immed2----_v.immet3----/p5)
+- Grafisk produksjonsteknikkfaget (IMGPT3): GPT3004 Grafisk produksjonsteknikkfaget, GPT3103 Grafisk produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imgpt3----/p5)
+- Innholdsproduksjonsfaget (IMIHP3): IHP3001 Innholdsproduksjonsfaget, IHP3103 Innholdsproduksjonsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imihp3----/p5)
+- Mediedesignfaget (IMMDF3): MDF3001 Mediedesignfaget, MDF3103 Mediedesignfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immdf3----/p5)
+- Medieteknikkfaget (IMMET3): MET3001 Medieteknikkfaget, MET3103 Medieteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immet3----/p5)
 
 ### Naturbruk (NA)
 
@@ -2027,13 +2027,13 @@ Kryssløp til: Anleggsgartner (BAANG2), Byggdrifterfaget (BABDR3).
 
 Lærefag etter Naturbruk (NANAB1):
 
-- Hovslagerfaget (NAHVS3): HVS3004 Hovslagerfaget - særløp, HVS3103 Hovslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nahvs3----/p5)
+- Hovslagerfaget (NAHVS3): HVS3004 Hovslagerfaget - særløp, HVS3103 Hovslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahvs3----/p5)
 
 ##### Vg2 Akvakultur (NAAKV2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naakv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naakv2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2058,14 +2058,14 @@ Kryssløp til: Sjømatproduksjon (RMSMP3).
 
 Lærefag etter Akvakultur (NAAKV2):
 
-- Akvakulturfaget (NAAKV3): AKV3004 Akvakulturfaget, AKV3103 Akvakulturfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----_v.naakv3----/p5)
-- Havbruksteknikkfaget (NAHAV3): HAV3001 Havbruksteknikkfaget, HAV3103 Havbruksteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----_v.nahav3----/p5)
+- Akvakulturfaget (NAAKV3): AKV3004 Akvakulturfaget, AKV3103 Akvakulturfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naakv3----/p5)
+- Havbruksteknikkfaget (NAHAV3): HAV3001 Havbruksteknikkfaget, HAV3103 Havbruksteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahav3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3) · 981 timer ✓
 
 Tabell 24 (Vg3) i Udir-1-2026. Bygger på Akvakultur (NAAKV2), Fiske og fangst (NAFFA2), Heste- og dyrefag (NAHDF2), Landbruk og gartnernæring (NALGA2), Reindrift (NAREI2), Skogbruk (NASBR2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----_v.nanab3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naakv2----_v.nanab3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2091,7 +2091,7 @@ Andre fag i Grep for programområdet: YFF4301 Yrkesfaglig fordypning vg3.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Restaurant- og matfag (RMRMF1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naffa2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naffa2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2116,8 +2116,8 @@ Kryssløp til: Sjømatproduksjon (RMSMP3).
 
 Lærefag etter Fiske og fangst (NAFFA2):
 
-- Fiske og fangst (NAFFA3): 8 koder, f.eks. FFA3004 Fiske og fangst, FFA3103 Fiske og fangst, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naffa2----_v.naffa3----/p5)
-- Fiskeri- og akvakulturredskapsfaget (NAFIR3): FIR3004 Fiskeri- og akvakulturredskapsfaget, FIR3103 Fiskeri- og akvakulturredskapsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.naffa2----_v.nafir3----/p5)
+- Fiske og fangst (NAFFA3): 8 koder, f.eks. FFA3004 Fiske og fangst, FFA3103 Fiske og fangst, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa3----/p5)
+- Fiskeri- og akvakulturredskapsfaget (NAFIR3): FIR3004 Fiskeri- og akvakulturredskapsfaget, FIR3103 Fiskeri- og akvakulturredskapsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nafir3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
@@ -2127,7 +2127,7 @@ Se over.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nahdf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nahdf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahdf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahdf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2150,8 +2150,8 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Heste- og dyrefag (NAHDF2):
 
-- Dyrefaget (NADYR3): DYR3001 Dyrefaget, DYR3103 Dyrefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nahdf2----_v.nadyr3----/p5)
-- Hestefaget (NAHST3): HST3004 Hestefaget, HST3103 Hestefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nahdf2----_v.nahst3----/p5)
+- Dyrefaget (NADYR3): DYR3001 Dyrefaget, DYR3103 Dyrefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nadyr3----/p5)
+- Hestefaget (NAHST3): HST3004 Hestefaget, HST3103 Hestefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahst3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
@@ -2161,7 +2161,7 @@ Se over.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalga2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalga2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2184,14 +2184,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Landbruk og gartnernæring (NALGA2):
 
-- Gartnerfaget (NAGAR3): GAR3004 Gartnerfaget, GAR3103 Gartnerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----_v.nagar3----/p5)
-- Landbruksfaget (NALBF3): LBF3001 Landbruksfaget, LBF3103 Landbruksfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----_v.nalbf3----/p5)
+- Gartnerfaget (NAGAR3): GAR3004 Gartnerfaget, GAR3103 Gartnerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nagar3----/p5)
+- Landbruksfaget (NALBF3): LBF3001 Landbruksfaget, LBF3103 Landbruksfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalbf3----/p5)
 
 ###### Vg3 Landbruk (NALBR3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Landbruk og gartnernæring (NALGA2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----_v.nalbr3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nalga2----_v.nalbr3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalbr3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalbr3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2209,7 +2209,7 @@ Se over.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.narei2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.narei2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.narei2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.narei2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2232,7 +2232,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Reindrift (NAREI2):
 
-- Reindriftsfaget (NAREI3): REI3004 Reindriftsfaget, REI3103 Reindriftsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.narei2----_v.narei3----/p5)
+- Reindriftsfaget (NAREI3): REI3004 Reindriftsfaget, REI3103 Reindriftsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.narei3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
@@ -2242,7 +2242,7 @@ Se over.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nasbr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nasbr2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nasbr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nasbr2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2265,7 +2265,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Skogbruk (NASBR2):
 
-- Skogfaget (NASKF3): SKF3004 Skogfaget, SKF3103 Skogfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nanab1----_v.nasbr2----_v.naskf3----/p5)
+- Skogfaget (NASKF3): SKF3004 Skogfaget, SKF3103 Skogfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naskf3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
@@ -2303,7 +2303,7 @@ Kryssløp til: Fiske og fangst (NAFFA2).
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmbak2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmbak2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmbak2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmbak2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2326,15 +2326,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Baker og konditor (RMBAK2):
 
-- Bakerfaget (RMBAK3): BAK3004 Bakerfaget, BAK3103 Bakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmbak2----_v.rmbak3----/p5)
-- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMKOS2, RMMPR2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmbak2----_v.rmfvf3----/p5)
-- Konditorfaget (RMKON3): KON3004 Konditorfaget, KON3103 Konditorfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmbak2----_v.rmkon3----/p5)
+- Bakerfaget (RMBAK3): BAK3004 Bakerfaget, BAK3103 Bakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmbak3----/p5)
+- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMKOS2, RMMPR2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmfvf3----/p5)
+- Konditorfaget (RMKON3): KON3004 Konditorfaget, KON3103 Konditorfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkon3----/p5)
 
 ##### Vg2 Kokk- og servitørfag (RMKOS2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkos2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkos2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2357,16 +2357,16 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Kokk- og servitørfag (RMKOS2):
 
-- Ernæringskokkfaget (RMEKF3): 8 koder, f.eks. EKF3001 Ernæringskokkfaget, EKF3103 Ernæringskokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----_v.rmekf3----/p5)
-- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMBAK2, RMMPR2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----_v.rmfvf3----/p5)
-- Kokkfaget (RMKOK3): 8 koder, f.eks. KOK3004 Kokkfaget, KOK3103 Kokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----_v.rmkok3----/p5)
-- Servitørfaget (RMSER3): SER3004 Servitørfaget, SER3103 Servitørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmkos2----_v.rmser3----/p5)
+- Ernæringskokkfaget (RMEKF3): 8 koder, f.eks. EKF3001 Ernæringskokkfaget, EKF3103 Ernæringskokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmekf3----/p5)
+- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMBAK2, RMMPR2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmfvf3----/p5)
+- Kokkfaget (RMKOK3): 8 koder, f.eks. KOK3004 Kokkfaget, KOK3103 Kokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkok3----/p5)
+- Servitørfaget (RMSER3): SER3004 Servitørfaget, SER3103 Servitørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmser3----/p5)
 
 ##### Vg2 Matproduksjon (RMMPR2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmmpr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmmpr2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2389,12 +2389,12 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Matproduksjon (RMMPR2):
 
-- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMBAK2, RMKOS2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmfvf3----/p5)
-- Industriell matproduksjon (RMIMP3): IMP3004 Industriell matproduksjon, IMP3103 Industriell matproduksjon, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmimp3----/p5)
-- Kjøttskjærerfaget (RMKSK3): KSK3004 Kjøttskjærerfaget, KSK3103 Kjøttskjærerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmksk3----/p5)
-- Pølsemakerfaget (RMPMF3): PMF3004 Pølsemakerfaget, PMF3103 Pølsemakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmpmf3----/p5)
-- Slakterfaget (RMSLF3): SLF3004 Slakterfaget, SLF3103 Slakterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmslf3----/p5)
-- Sjømatproduksjon (RMSMP3): SMP3004 Sjømatproduksjon, SMP3103 Sjømatproduksjon, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmrmf1----_v.rmmpr2----_v.rmsmp3----/p5)
+- Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMBAK2, RMKOS2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmfvf3----/p5)
+- Industriell matproduksjon (RMIMP3): IMP3004 Industriell matproduksjon, IMP3103 Industriell matproduksjon, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmimp3----/p5)
+- Kjøttskjærerfaget (RMKSK3): KSK3004 Kjøttskjærerfaget, KSK3103 Kjøttskjærerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmksk3----/p5)
+- Pølsemakerfaget (RMPMF3): PMF3004 Pølsemakerfaget, PMF3103 Pølsemakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmpmf3----/p5)
+- Slakterfaget (RMSLF3): SLF3004 Slakterfaget, SLF3103 Slakterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmslf3----/p5)
+- Sjømatproduksjon (RMSMP3): SMP3004 Sjømatproduksjon, SMP3103 Sjømatproduksjon, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmsmp3----/p5)
 
 ### Salg, service og reiseliv (SR)
 
@@ -2428,7 +2428,7 @@ Kryssløp til: Transport og logistikk (TPTOL2).
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Salg, service og reiseliv (SRSSR1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr1----_v.srssr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr1----_v.srssr2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2515,7 +2515,7 @@ Kryssløp til: 10 programområder: BA 1, DT 6, EL 3.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamk2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2538,15 +2538,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Arbeidsmaskiner (TPAMK2):
 
-- Bilfaget, tunge kjøretøy (TPBTK3): BTK3004 Bilfaget, tunge kjøretøy, BTK3103 Bilfaget, tunge kjøretøy, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----_v.tpbtk3----/p5)
-- Landbruksmaskinmekanikerfaget (TPLMM3): LMM3004 Landbruksmaskinmekanikerfaget, LMM3103 Landbruksmaskinmekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----_v.tplmm3----/p5)
-- Truck- og liftmekanikerfaget (TPTLM3): TLM3001 Truck- og liftmekanikerfaget, TLM3103 Truck- og liftmekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----_v.tptlm3----/p5)
+- Bilfaget, tunge kjøretøy (TPBTK3): BTK3004 Bilfaget, tunge kjøretøy, BTK3103 Bilfaget, tunge kjøretøy, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbtk3----/p5)
+- Landbruksmaskinmekanikerfaget (TPLMM3): LMM3004 Landbruksmaskinmekanikerfaget, LMM3103 Landbruksmaskinmekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplmm3----/p5)
+- Truck- og liftmekanikerfaget (TPTLM3): TLM3001 Truck- og liftmekanikerfaget, TLM3103 Truck- og liftmekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptlm3----/p5)
 
 ###### Vg3 Anleggsmaskinmekanikerfaget (TPAMM3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Arbeidsmaskiner (TPAMK2), Kjøretøy (TPKJT2).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----_v.tpamm3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpamk2----_v.tpamm3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamm3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamm3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2558,7 +2558,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-i
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpblk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpblk2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2581,17 +2581,17 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Bilskade, lakk og karosseri (TPBLK2):
 
-- Bilpleiefaget (TPBIP3): BIP3001 Bilpleiefaget, BIP3103 Bilpleiefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----_v.tpbip3----/p5)
-- Billakkererfaget (TPBLA3): BLA3004 Billakkererfaget, BLA3103 Billakkerarfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----_v.tpbla3----/p5)
-- Bilskadefaget (TPBSK3): BSK3004 Bilskadefaget, BSK3103 Bilskadefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----_v.tpbsk3----/p5)
-- Chassispåbyggerfaget (TPKAR3): KAR3004 Chassispåbyggefaget, KAR3103 Chassispåbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----_v.tpkar3----/p5)
-- Reservedelsfaget (TPRSD3): RSD3004 Reservedelsfaget, RSD3103 Reservedelsfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpblk2----_v.tprsd3----/p5)
+- Bilpleiefaget (TPBIP3): BIP3001 Bilpleiefaget, BIP3103 Bilpleiefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbip3----/p5)
+- Billakkererfaget (TPBLA3): BLA3004 Billakkererfaget, BLA3103 Billakkerarfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbla3----/p5)
+- Bilskadefaget (TPBSK3): BSK3004 Bilskadefaget, BSK3103 Bilskadefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbsk3----/p5)
+- Chassispåbyggerfaget (TPKAR3): KAR3004 Chassispåbyggefaget, KAR3103 Chassispåbyggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkar3----/p5)
+- Reservedelsfaget (TPRSD3): RSD3004 Reservedelsfaget, RSD3103 Reservedelsfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tprsd3----/p5)
 
 ##### Vg2 Brønnteknikk (TPBRT2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrt2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2614,19 +2614,19 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Brønnteknikk (TPBRT2):
 
-- Brønnfaget, komplettering (TPBKO3): BKO3004 Brønnfaget, komplettering, BKO3103 Brønnfaget, komplettering, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbko3----/p5)
-- Brønnfaget, kveilerøroperasjoner (TPBKV3): BKV3004 Brønnfaget, kveilerøroperasjoner, BKV3103 Brønnfaget, kveilerøroperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbkv3----/p5)
-- Boreoperatørfaget (TPBOR3): BOR3004 Boreoperatørfaget, BOR3103 Boreoperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbor3----/p5)
-- Brønnfaget, elektriske kabeloperasjoner (TPBRE3): BRE3004 Brønnfaget, elektriske kabeloperasjoner, BRE3103 Brønnfaget, elektriske kabeloperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbre3----/p5)
-- Brønnfaget, havbunnsinstallasjoner (TPBRH3): BRH3004 Brønnfaget, havbunnsinstallasjoner, BRH3103 Brønnfaget, havbunnsinstallasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbrh3----/p5)
-- Brønnfaget, mekaniske kabeloperasjoner (TPBRM3): BRM3004 Brønnfaget, mekaniske kabeloperasjoner, BRM3103 Brønnfaget, mekaniske kabeloperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbrm3----/p5)
-- Brønnfaget, sementering (TPBRS3): BRS3004 Brønnfaget, sementering, BRS3103 Brønnfaget, sementering, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbrt2----_v.tpbrs3----/p5)
+- Brønnfaget, komplettering (TPBKO3): BKO3004 Brønnfaget, komplettering, BKO3103 Brønnfaget, komplettering, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbko3----/p5)
+- Brønnfaget, kveilerøroperasjoner (TPBKV3): BKV3004 Brønnfaget, kveilerøroperasjoner, BKV3103 Brønnfaget, kveilerøroperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbkv3----/p5)
+- Boreoperatørfaget (TPBOR3): BOR3004 Boreoperatørfaget, BOR3103 Boreoperatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbor3----/p5)
+- Brønnfaget, elektriske kabeloperasjoner (TPBRE3): BRE3004 Brønnfaget, elektriske kabeloperasjoner, BRE3103 Brønnfaget, elektriske kabeloperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbre3----/p5)
+- Brønnfaget, havbunnsinstallasjoner (TPBRH3): BRH3004 Brønnfaget, havbunnsinstallasjoner, BRH3103 Brønnfaget, havbunnsinstallasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrh3----/p5)
+- Brønnfaget, mekaniske kabeloperasjoner (TPBRM3): BRM3004 Brønnfaget, mekaniske kabeloperasjoner, BRM3103 Brønnfaget, mekaniske kabeloperasjoner, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrm3----/p5)
+- Brønnfaget, sementering (TPBRS3): BRS3004 Brønnfaget, sementering, BRS3103 Brønnfaget, sementering, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrs3----/p5)
 
 ##### Vg2 Børsemaker (TPBMF2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbmf2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmf2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2649,13 +2649,13 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Børsemaker (TPBMF2):
 
-- Børsemakerfaget (TPBMF3): BMF2102 Børsemaker, BMF3004 Børsemakerfaget, BMF3103 Børsemakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpbmf2----_v.tpbmf3----/p5)
+- Børsemakerfaget (TPBMF3): BMF2102 Børsemaker, BMF3004 Børsemakerfaget, BMF3103 Børsemakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmf3----/p5)
 
 ##### Vg2 Industriteknologi (TPPIN2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppin2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppin2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2680,39 +2680,39 @@ Kryssløp til: Grafisk produksjonsteknikkfaget (IMGPT3), Industriell matproduksj
 
 Lærefag etter Industriteknologi (TPPIN2):
 
-- Aluminiumskonstruksjonsfaget (TPALU3): ALU3004 Aluminiumskonstruksjonsfaget, ALU3103 Aluminiumskonstruksjonsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpalu3----/p5)
-- CNC-maskineringsfaget (TPCNC3): CNC3004 CNC-maskineringsfaget, CNC3103 CNC-maskineringsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpcnc3----/p5)
-- Dimensjonskontrollfaget (TPDKO3): DKO3004 Dimensjonskontrollfaget, DKO3103 Dimensjonskontrollfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpdko3----/p5)
-- Finmekanikerfaget (TPFMK3): FMK3004 Finmekanikerfaget, FMK3103 Finmekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpfmk3----/p5)
-- Grafisk produksjonsteknikk (TPGPT3): GPT3004 Grafisk produksjonsteknikkfaget, GPT3103 Grafisk produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpgpt3----/p5)
-- Gjenvinningsfaget (TPGVF3): 9 koder, f.eks. GVF3004 Gjenvinningsfaget, GVF3103 Gjenvinningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpgvf3----/p5)
-- Industrimekanikerfaget (TPIME3): IME3004 Industrimekanikerfaget, IME3103 Industrimekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpime3----/p5)
-- Industrimontørfaget (TPIMO3): IMO3004 Industrimontørfaget, IMO3103 Industrimontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpimo3----/p5)
-- Industrioppmålingsfaget (TPIOM3): IOM3004 Industrioppmålingsfaget, IOM3103 Industrioppmålingsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpiom3----/p5)
-- Industriell overflatebehandling (TPIOV3): IOV3004 Industriell overflatebehandling, IOV3103 Industriell overflatebehandling, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpiov3----/p5)
-- Industrirørleggerfaget (TPIRL3): IRL3004 Industrirørleggerfaget, IRL3103 Industrirørleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpirl3----/p5)
-- Industrisnekkerfaget (TPISN3): ISN3004 Industrisnekkerfaget, ISN3103 Industrisnekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpisn3----/p5)
-- Industritapetsererfaget (TPITA3): ITA3004 Industritapetsererfaget, ITA3103 Industritapetsererfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpita3----/p5)
-- Industritekstilfaget (TPITF3): 10 koder, f.eks. ITF3001 Industritekstilfaget, fordypningsområde farging, trykking og etterbehandling, ITF3004 Industritekstilfaget, fordypningsområde garnframstilling · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpitf3----/p5)
-- Kran- og løfteoperasjonsfaget (TPKLO3): KLO3004 Kran- og løfteoperasjonsfaget, KLO3103 Kran- og løfteoperasjonsfaget, skriftlig (også etter TPTOL2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpklo3----/p5)
-- Motormekanikerfaget (TPMME3): MME3004 Motormekanikerfaget, MME3103 Motormekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpmme3----/p5)
-- Modellbyggerfaget (TPMOB3): MOB3004 Modellbyggerfaget, MOB3103 Modellbyggjarfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpmob3----/p5)
-- NDT-kontrollørfaget (TPNDT3): NDT3004 NDT-kontrollørfaget, NDT3103 NDT-kontrollørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpndt3----/p5)
-- Platearbeiderfaget (TPPLA3): PLA3004 Platearbeiderfaget, PLA3103 Platearbeiderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tppla3----/p5)
-- Plastfaget (TPPLF3): PLF3001 Plastfaget, PLF3103 Plastfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpplf3----/p5)
-- Polymerkomposittfaget (TPPOM3): POM3004 Polymerkomposittfaget, POM3103 Polymerkomposittfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tppom3----/p5)
-- Produksjonsteknikkfaget (TPPRT3): 9 koder, f.eks. PRT3004 Produksjonsteknikkfaget, PRT3103 Produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpprt3----/p5)
-- Serigrafifaget (TPSGR3): SGR3004 Serigrafifaget, SGR3103 Serigrafifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpsgr3----/p5)
-- Sveisefaget (TPSVE3): SVE3004 Sveisefaget, SVE3103 Sveisefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpsve3----/p5)
-- Tekstilrensfaget (TPTSR3): TSR3001 Tekstilrensfaget, TSR3103 Tekstilrensfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tptsr3----/p5)
-- Vaskerifaget (TPVAF3): VAF3001 Vaskerifaget, VAF3103 Vaskerifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpvaf3----/p5)
-- Verktøymakerfaget (TPVER3): VER3004 Verktøymakerfaget, VER3103 Verktøymakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tppin2----_v.tpver3----/p5)
+- Aluminiumskonstruksjonsfaget (TPALU3): ALU3004 Aluminiumskonstruksjonsfaget, ALU3103 Aluminiumskonstruksjonsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpalu3----/p5)
+- CNC-maskineringsfaget (TPCNC3): CNC3004 CNC-maskineringsfaget, CNC3103 CNC-maskineringsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpcnc3----/p5)
+- Dimensjonskontrollfaget (TPDKO3): DKO3004 Dimensjonskontrollfaget, DKO3103 Dimensjonskontrollfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpdko3----/p5)
+- Finmekanikerfaget (TPFMK3): FMK3004 Finmekanikerfaget, FMK3103 Finmekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpfmk3----/p5)
+- Grafisk produksjonsteknikk (TPGPT3): GPT3004 Grafisk produksjonsteknikkfaget, GPT3103 Grafisk produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpgpt3----/p5)
+- Gjenvinningsfaget (TPGVF3): 9 koder, f.eks. GVF3004 Gjenvinningsfaget, GVF3103 Gjenvinningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpgvf3----/p5)
+- Industrimekanikerfaget (TPIME3): IME3004 Industrimekanikerfaget, IME3103 Industrimekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpime3----/p5)
+- Industrimontørfaget (TPIMO3): IMO3004 Industrimontørfaget, IMO3103 Industrimontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpimo3----/p5)
+- Industrioppmålingsfaget (TPIOM3): IOM3004 Industrioppmålingsfaget, IOM3103 Industrioppmålingsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpiom3----/p5)
+- Industriell overflatebehandling (TPIOV3): IOV3004 Industriell overflatebehandling, IOV3103 Industriell overflatebehandling, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpiov3----/p5)
+- Industrirørleggerfaget (TPIRL3): IRL3004 Industrirørleggerfaget, IRL3103 Industrirørleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpirl3----/p5)
+- Industrisnekkerfaget (TPISN3): ISN3004 Industrisnekkerfaget, ISN3103 Industrisnekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpisn3----/p5)
+- Industritapetsererfaget (TPITA3): ITA3004 Industritapetsererfaget, ITA3103 Industritapetsererfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpita3----/p5)
+- Industritekstilfaget (TPITF3): 10 koder, f.eks. ITF3001 Industritekstilfaget, fordypningsområde farging, trykking og etterbehandling, ITF3004 Industritekstilfaget, fordypningsområde garnframstilling · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpitf3----/p5)
+- Kran- og løfteoperasjonsfaget (TPKLO3): KLO3004 Kran- og løfteoperasjonsfaget, KLO3103 Kran- og løfteoperasjonsfaget, skriftlig (også etter TPTOL2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpklo3----/p5)
+- Motormekanikerfaget (TPMME3): MME3004 Motormekanikerfaget, MME3103 Motormekanikerfaget, skriftlig (også etter TPKJT2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmme3----/p5)
+- Modellbyggerfaget (TPMOB3): MOB3004 Modellbyggerfaget, MOB3103 Modellbyggjarfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmob3----/p5)
+- NDT-kontrollørfaget (TPNDT3): NDT3004 NDT-kontrollørfaget, NDT3103 NDT-kontrollørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpndt3----/p5)
+- Platearbeiderfaget (TPPLA3): PLA3004 Platearbeiderfaget, PLA3103 Platearbeiderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppla3----/p5)
+- Plastfaget (TPPLF3): PLF3001 Plastfaget, PLF3103 Plastfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpplf3----/p5)
+- Polymerkomposittfaget (TPPOM3): POM3004 Polymerkomposittfaget, POM3103 Polymerkomposittfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppom3----/p5)
+- Produksjonsteknikkfaget (TPPRT3): 9 koder, f.eks. PRT3004 Produksjonsteknikkfaget, PRT3103 Produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpprt3----/p5)
+- Serigrafifaget (TPSGR3): SGR3004 Serigrafifaget, SGR3103 Serigrafifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsgr3----/p5)
+- Sveisefaget (TPSVE3): SVE3004 Sveisefaget, SVE3103 Sveisefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsve3----/p5)
+- Tekstilrensfaget (TPTSR3): TSR3001 Tekstilrensfaget, TSR3103 Tekstilrensfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptsr3----/p5)
+- Vaskerifaget (TPVAF3): VAF3001 Vaskerifaget, VAF3103 Vaskerifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpvaf3----/p5)
+- Verktøymakerfaget (TPVER3): VER3004 Verktøymakerfaget, VER3103 Verktøymakerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpver3----/p5)
 
 ##### Vg2 Kjemiprosess- og laboratoriefag (TPKPL2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkpl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkpl2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkpl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkpl2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2735,14 +2735,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Kjemiprosess- og laboratoriefag (TPKPL2):
 
-- Kjemiprosessfaget (TPKJP3): KJP3004 Kjemiprosessfaget, KJP3103 Kjemiprosessfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkpl2----_v.tpkjp3----/p5)
-- Laboratoriefaget (TPLAB3): LAB3004 Laboratoriefaget, LAB3103 Laboratoriefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkpl2----_v.tplab3----/p5)
+- Kjemiprosessfaget (TPKJP3): KJP3004 Kjemiprosessfaget, KJP3103 Kjemiprosessfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkjp3----/p5)
+- Laboratoriefaget (TPLAB3): LAB3004 Laboratoriefaget, LAB3103 Laboratoriefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplab3----/p5)
 
 ##### Vg2 Kjøretøy (TPKJT2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkjt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkjt2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2765,16 +2765,16 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Kjøretøy (TPKJT2):
 
-- Bilfaget, demontering av kjøretøy (TPBDK3): BDK3001 Bilfaget, demontering av kjøretøy, BDK3103 Bilfaget, demontering av kjøretøy, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpbdk3----/p5)
-- Bilfaget, lette kjøretøy (TPBMK3): BMK3004 Bilfaget, lette kjøretøy, BMK3103 Bilfaget, lette kjøretøy, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpbmk3----/p5)
-- Bilfaget, tunge kjøretøy (TPBTK3): BTK3004 Bilfaget, tunge kjøretøy, BTK3103 Bilfaget, tunge kjøretøy, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpbtk3----/p5)
-- Hjulutrustningsfaget (TPHJU3): HJU3004 Hjulutrustningsfaget, HJU3103 Hjulutrustningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tphju3----/p5)
-- Landbruksmaskinmekanikerfaget (TPLMM3): LMM3004 Landbruksmaskinmekanikerfaget, LMM3103 Landbruksmaskinmekanikerfaget, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tplmm3----/p5)
-- Motormekanikerfaget (TPMME3): MME3004 Motormekanikerfaget, MME3103 Motormekanikerfaget, skriftlig (også etter TPPIN2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpmme3----/p5)
-- Motorsykkelfaget (TPMSY3): MSY3004 Motorsykkelfaget, MSY3103 Motorsykkelfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpmsy3----/p5)
-- Reservedelsfaget (TPRSD3): RSD3004 Reservedelsfaget, RSD3103 Reservedelsfaget, skriftlig (også etter TPBLK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tprsd3----/p5)
-- Sykkelmekanikerfaget (TPSYM3): SYM3001 Sykkelmekanikerfaget, SYM3103 Sykkelmekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tpsym3----/p5)
-- Truck- og liftmekanikerfaget (TPTLM3): TLM3001 Truck- og liftmekanikerfaget, TLM3103 Truck- og liftmekanikerfaget, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpkjt2----_v.tptlm3----/p5)
+- Bilfaget, demontering av kjøretøy (TPBDK3): BDK3001 Bilfaget, demontering av kjøretøy, BDK3103 Bilfaget, demontering av kjøretøy, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbdk3----/p5)
+- Bilfaget, lette kjøretøy (TPBMK3): BMK3004 Bilfaget, lette kjøretøy, BMK3103 Bilfaget, lette kjøretøy, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmk3----/p5)
+- Bilfaget, tunge kjøretøy (TPBTK3): BTK3004 Bilfaget, tunge kjøretøy, BTK3103 Bilfaget, tunge kjøretøy, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbtk3----/p5)
+- Hjulutrustningsfaget (TPHJU3): HJU3004 Hjulutrustningsfaget, HJU3103 Hjulutrustningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tphju3----/p5)
+- Landbruksmaskinmekanikerfaget (TPLMM3): LMM3004 Landbruksmaskinmekanikerfaget, LMM3103 Landbruksmaskinmekanikerfaget, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplmm3----/p5)
+- Motormekanikerfaget (TPMME3): MME3004 Motormekanikerfaget, MME3103 Motormekanikerfaget, skriftlig (også etter TPPIN2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmme3----/p5)
+- Motorsykkelfaget (TPMSY3): MSY3004 Motorsykkelfaget, MSY3103 Motorsykkelfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmsy3----/p5)
+- Reservedelsfaget (TPRSD3): RSD3004 Reservedelsfaget, RSD3103 Reservedelsfaget, skriftlig (også etter TPBLK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tprsd3----/p5)
+- Sykkelmekanikerfaget (TPSYM3): SYM3001 Sykkelmekanikerfaget, SYM3103 Sykkelmekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsym3----/p5)
+- Truck- og liftmekanikerfaget (TPTLM3): TLM3001 Truck- og liftmekanikerfaget, TLM3103 Truck- og liftmekanikerfaget, skriftlig (også etter TPAMK2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptlm3----/p5)
 
 ###### Vg3 Anleggsmaskinmekanikerfaget (TPAMM3)
 
@@ -2784,7 +2784,7 @@ Se over.
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpmar2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpmar2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmar2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmar2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2807,14 +2807,14 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Maritime fag (TPMAR2):
 
-- Matrosfaget (TPMTS3): MTS3004 Matrosfaget, MTS3103 Matrosfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpmar2----_v.tpmts3----/p5)
-- Skipsmotormekanikerfaget (TPSMK3): SMK3001 Skipsmotormekanikerfaget, SMK3103 Skipsmotormekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpmar2----_v.tpsmk3----/p5)
+- Matrosfaget (TPMTS3): MTS3004 Matrosfaget, MTS3103 Matrosfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmts3----/p5)
+- Skipsmotormekanikerfaget (TPSMK3): SMK3001 Skipsmotormekanikerfaget, SMK3103 Skipsmotormekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsmk3----/p5)
 
 ##### Vg2 Transport og logistikk (TPTOL2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Salg, service og reiseliv (SRSSR1), Studiespesialisering (STUSP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tptol2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tptol2----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptol2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptol2----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2837,15 +2837,15 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Transport og logistikk (TPTOL2):
 
-- Kran- og løfteoperasjonsfaget (TPKLO3): KLO3004 Kran- og løfteoperasjonsfaget, KLO3103 Kran- og løfteoperasjonsfaget, skriftlig (også etter TPPIN2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tptol2----_v.tpklo3----/p5)
-- Logistikkfaget (TPLOG3): 8 koder, f.eks. LOG3004 Logistikkfaget, LOG3103 Logistikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tptol2----_v.tplog3----/p5)
-- Yrkessjåførfaget (TPYRK3): YRK3004 Yrkessjåførfaget, YRK3103 Yrkessjåførfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tptol2----_v.tpyrk3----/p5)
+- Kran- og løfteoperasjonsfaget (TPKLO3): KLO3004 Kran- og løfteoperasjonsfaget, KLO3103 Kran- og løfteoperasjonsfaget, skriftlig (også etter TPPIN2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpklo3----/p5)
+- Logistikkfaget (TPLOG3): 8 koder, f.eks. LOG3004 Logistikkfaget, LOG3103 Logistikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplog3----/p5)
+- Yrkessjåførfaget (TPYRK3): YRK3004 Yrkessjåførfaget, YRK3103 Yrkessjåførfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpyrk3----/p5)
 
 ##### Vg3 Yrkessjåførkurs for voksne (TPYSL3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1).
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpysl3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptip1----_v.tpysl3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpysl3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpysl3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2866,7 +2866,7 @@ Avvik:
 
 Tabell 26 (Vg3) i Udir-1-2026. Bygger på 52 programområder: BA 8, DT 7, EL 6, FD 3, HS 7, IM 2, NA 6, RM 3, SR 1, TP 9.
 
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby3----/p2)
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby3----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby3----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
@@ -2889,7 +2889,5 @@ Tilpassede ordninger (kolonner i rundskrivet):
 #### Vg3 Fag for studiekompetanse (PBPBY4)
 
 **Ingen tabell i rundskrivet.**
-
-Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby4----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/pabygging-til-generell-studiekompetanse/program/v.pb/v.pbpby4----/p2)
 
 Alternativer for særskilte grupper: andre fellesfag: 52 koder, f.eks. HIS1011 Historie Vg3 påbygging til generell studiekompetanse, HIS1014 Historie, samisk plan, Vg3 påbygging til generell studiekompetanse.

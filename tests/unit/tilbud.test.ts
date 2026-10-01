@@ -3,7 +3,7 @@ import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
 import { byggStruktur, byggTilbud, erVariant, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
-import { kontrollenker, lopTil, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
+import { kontrollenker, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
 const fag = (navn: string, type: Fag['type'], po: string[], timer: number | null, lp: string | null = null): Fag => ({ navn: { nb: navn, nn: navn }, type, trinn: [], po, timer, lp, km: [], elev: null, privatist: null });
 const po = (navn: string, program: string, trinn: Programomrade['trinn'], bygger: string[] = [], sted: Programomrade['sted'] = 'skole'): Programomrade => ({ navn: { nb: navn, nn: navn }, program, trinn, sted, bygger, timer: null, merkelapper: [] });
@@ -247,23 +247,27 @@ describe('lenker til Vilbli', () => {
     expect(vilbliTekst('Trøndelag')).toBe('trondelag');
   });
 
-  it('følger hovedløpet bakover, ikke kryssløp', () => {
-    expect(lopTil('HSHEA3----', indeks)).toEqual(['HSHSF1----', 'HSHEA2----', 'HSHEA3----']);
-    expect(lopTil('STUSP1----', indeks)).toEqual(['STUSP1----']);
+  it('lager lenken til skolene for hele landet eller et fylke', () => {
+    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p5' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5');
+    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p2', fylke: 'Møre og Romsdal' })).toBe('https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p2');
+    expect(vilbliLenke('FINNES0---', indeks, { side: 'p5' })).toBeNull();
+    // Lærefag: bare koden (hele løpet sender til vg1 på Vilbli).
+    expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5');
   });
 
-  it('lager lenken til skolene for hele landet eller et fylke', () => {
-    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p5' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p5');
-    expect(vilbliLenke('HSHEA2----', indeks, { side: 'p2', fylke: 'Møre og Romsdal' })).toBe('https://www.vilbli.no/nb/nb/more-og-romsdal/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----/p2');
-    expect(vilbliLenke('FINNES0---', indeks, { side: 'p5' })).toBeNull();
-    // Via et programområde tilbudet bygger på, og bare det.
-    expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'HSHEA2----' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshsf1----_v.hshea2----_v.hshea3----/p5');
-    expect(vilbliLenke('HSHEA3----', indeks, { side: 'p5', via: 'STUSP1----' })).toContain('v.hshsf1----_v.hshea2----_v.hshea3----');
+  it('legger påbygging under programmet brukeren kom fra, ellers det første den bygger på', () => {
+    const i = {
+      ...indeks,
+      utdanningsprogram: { ...indeks.utdanningsprogram, BA: { nb: 'Bygg- og anleggsteknikk', nn: 'Bygg- og anleggsteknikk' } },
+      programomrader: { ...indeks.programomrader, 'BATMF2----': po('Tømrer', 'BA', 'Vg2'), 'PBPBY3----': po('Påbygging', 'PB', 'Vg3', ['HSHEA2----', 'BATMF2----']) },
+    };
+    expect(vilbliLenke('PBPBY3----', i, { side: 'p5', via: 'HSHEA2----' })).toBe('https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.pbpby3----/p5');
+    expect(vilbliLenke('PBPBY3----', i, { side: 'p5' })).toBe('https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby3----/p5');
   });
 
   it('gir lenkene til kontrollrunden, og hopper over programområder som mangler', () => {
     const l = kontrollenker(indeks);
     expect(l.map((x) => x.tekst)).toEqual(['Vg2 helsearbeiderfag, hele landet', 'Vg2 helsearbeiderfag, Vestland', 'Lærefag: helsearbeiderfaget', 'Vg2 helsearbeiderfag, Møre og Romsdal']);
-    expect(l[2]?.url).toContain('v.hshsf1----_v.hshea2----_v.hshea3----/p5');
+    expect(l[2]?.url).toContain('/program/v.hs/v.hshea3----/p5');
   });
 });
