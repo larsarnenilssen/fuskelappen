@@ -387,7 +387,7 @@ main {
   margin: 0 0 var(--rom-4);
   padding: 0;
   background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   overflow: hidden;
 }
@@ -485,7 +485,7 @@ main {
   height: 100%;
   padding: var(--rom-3);
   background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   color: var(--farge-tekst);
   text-decoration: none;
@@ -525,7 +525,7 @@ main {
   padding: var(--rom-3) var(--rom-4);
   margin: 0 0 var(--rom-4);
   background: var(--farge-flate);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
 }
 
@@ -655,7 +655,7 @@ main {
 .valggruppe {
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4) var(--rom-2);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   min-width: 0;
@@ -776,7 +776,7 @@ main {
 
 .forklaring {
   margin: 0 0 var(--rom-4);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
 }
@@ -866,6 +866,9 @@ main {
 
 .bryter-valg label {
   flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  hyphens: auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -907,7 +910,7 @@ main {
 
 .vippe {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   column-gap: var(--rom-3);
   margin: 0 0 var(--rom-3);
@@ -1099,7 +1102,7 @@ main {
   position: relative;
   margin: 0 0 var(--rom-3);
   padding: var(--rom-3) var(--rom-3) var(--rom-2);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   min-width: 0;
@@ -1210,7 +1213,7 @@ p.fagkort-tittel {
    så feltene står på linje selv om etikettene brytes ulikt eller bare ett av feltene har hjelpetekst. */
 .feltrad {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(9rem, 100%), 1fr));
   column-gap: var(--rom-3);
 }
 
@@ -1380,7 +1383,7 @@ p.fagkort-tittel {
 .fordeling-visning {
   margin: var(--rom-5) 0;
   padding: var(--rom-4);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-l);
   background: var(--farge-flate);
 }
@@ -1918,6 +1921,7 @@ p.fagkort-tittel {
 .funksjonsrad .funksjon-tillegg,
 .funksjonsrad .funksjon-linje {
   flex-basis: 100%;
+  min-width: 0;
   margin: 0;
 }
 
@@ -1931,7 +1935,7 @@ p.fagkort-tittel {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--rom-2) var(--rom-4);
+  gap: var(--rom-2) var(--rom-3);
 }
 
 .funksjon-tillegg .felt {
@@ -1940,11 +1944,16 @@ p.fagkort-tittel {
 
 .funksjon-tillegg .vippe {
   flex: 0 1 auto;
+  min-width: 0;
   margin: 0;
 }
 
+/* Er det svært smalt (stor skrift på smal skjerm), får beløpet hele linjen og «kr» går ned, så tallet ikke klippes. */
 .funksjon-tillegg .tallfelt {
-  flex: none;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .funksjon-tillegg .felt-hjelp,
@@ -1954,7 +1963,8 @@ p.fagkort-tittel {
 }
 
 .funksjon-tillegg .tallfelt input {
-  width: 6.5rem;
+  flex: 0 1 6rem;
+  min-width: min(100%, 6rem);
 }
 
 .funksjonsrad + .funksjonsrad {
@@ -2184,7 +2194,7 @@ p.fagkort-tittel {
 .vis-ogsaa {
   margin: 0 0 var(--rom-4);
   padding: var(--rom-3) var(--rom-4);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
 }
@@ -2326,7 +2336,7 @@ p.fagkort-tittel {
 .fagark-fakta,
 .fag-seksjon {
   margin: 0 0 var(--rom-3);
-  border: var(--strek) solid var(--farge-linje);
+  border: var(--strek) solid var(--farge-kant);
   border-left: 4px solid var(--fagtype);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
@@ -2479,10 +2489,12 @@ p.fagkort-tittel {
   background: var(--fagtype);
 }
 
+/* Like mye luft under boksene som mellom dem, før «Vurderingsordning i læreplanen» (eier 02.10.2026). */
 .fagark .fag-vurderinger {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
   gap: var(--rom-3);
+  margin-bottom: var(--rom-3);
 }
 
 .fagark .fag-vurdering {
@@ -2604,4 +2616,208 @@ p.fagkort-tittel {
   grid-column: 2;
   color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
+}
+/* ---------- Kalkulatorskjema i deler (avgjørelse 033) ----------
+   Hver del er et kort med tykk kant og overskrift i fargen til delen i diagrammet, og kan legges sammen.
+   Fag og funksjoner står som egne små kort inne i delen, med kant i fargen de har i stolpen for beskjeftigelse. */
+.skjemadel {
+  --del: var(--diagram-selv);
+  --del-tekst: var(--farge-tekst);
+  margin: 0 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 6px solid var(--del);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  min-width: 0;
+}
+
+.skjemadel[data-del='undervisning'] {
+  --del: var(--diagram-undervisning);
+  --del-tekst: var(--diagram-tekst-undervisning);
+}
+
+.skjemadel[data-del='funksjoner'] {
+  --del: var(--diagram-funksjon);
+  --del-tekst: var(--diagram-tekst-funksjon);
+}
+
+.skjemadel[data-del='tid'] {
+  --del: var(--diagram-motetid);
+  --del-tekst: var(--diagram-tekst-motetid);
+}
+
+.skjemadel[data-del='lonn'] {
+  --del: var(--diagram-planlegging);
+  --del-tekst: var(--diagram-tekst-planlegging);
+}
+
+.skjemadel-topp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-3);
+  padding: var(--rom-2) var(--rom-3);
+}
+
+.skjemadel-tittel {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-size: var(--str-l);
+  color: var(--del-tekst);
+}
+
+/* Overskriften er en knapp over hele bredden: navnet til venstre, summen og pilen til høyre. */
+.skjemadel-tittel .kortknapp {
+  display: flex;
+  width: 100%;
+  min-height: var(--trykkflate);
+}
+
+.skjemadel-tittel .kortknapp-tekst,
+.skjemadel-rad {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 var(--rom-2);
+}
+
+.skjemadel-rad {
+  min-height: var(--trykkflate);
+  align-items: center;
+}
+
+.skjemadel-navn {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.skjemadel-sum {
+  font-size: var(--str-m);
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+.skjemadel-hoyre {
+  margin-left: auto;
+}
+
+.skjemadel-hoyre .vippe {
+  margin: 0;
+}
+
+.skjemadel-innhold {
+  container-type: inline-size;
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+.skjemadel-innhold > :last-child {
+  margin-bottom: 0;
+}
+
+/* Fag, funksjoner og livsfasetiltak står som små kort inne i delen, med luft mellom og egen kant til venstre. */
+.skjemadel .fagkort {
+  --rad: var(--farge-kant);
+  --rad-tekst: var(--farge-tekst-dempet);
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--rad);
+  border-radius: var(--radius-s);
+  background: var(--farge-bakgrunn);
+}
+
+.skjemadel .fagkort {
+  margin: var(--rom-4) 0 var(--rom-3);
+  padding: var(--rom-3) var(--rom-2) var(--rom-2);
+}
+
+.skjemadel .fagkort-tittel {
+  color: var(--rad-tekst);
+}
+
+.skjemadel .fagkort-fjern {
+  background: var(--farge-flate);
+}
+
+/* Fagene får fargen de har i stolpen for beskjeftigelse, etter tur. */
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 1) {
+  --rad: var(--diagram-undervisning);
+  --rad-tekst: var(--diagram-tekst-undervisning);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 2) {
+  --rad: var(--diagram-annen);
+  --rad-tekst: var(--diagram-tekst-annen);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 3) {
+  --rad: var(--diagram-motetid);
+  --rad-tekst: var(--diagram-tekst-motetid);
+}
+
+.skjemadel .fagkortliste > .fagkort:nth-of-type(4n + 4) {
+  --rad: var(--diagram-selv);
+  --rad-tekst: var(--diagram-tekst-selv);
+}
+
+.skjemadel .fagkortliste {
+  margin-bottom: 0;
+}
+
+/* Funksjonene er kort som fagene, i fargen til funksjoner (eier 02.10.2026). */
+.skjemadel .funksjonskort {
+  --rad: var(--diagram-funksjon);
+  --rad-tekst: var(--diagram-tekst-funksjon);
+}
+
+/* Fjern-knappen står på rammen, så navnet får hele linjen. */
+.funksjonskort .funksjonsrad .tekstfelt {
+  flex-basis: 100%;
+}
+
+/* På smal skjerm er det mindre luft rundt de indre kortene, så feltene får plass på linjen. */
+@media (max-width: 34rem) {
+  .skjemadel-topp {
+    padding: var(--rom-1) var(--rom-2) var(--rom-1) var(--rom-3);
+  }
+
+  .skjemadel-innhold {
+    padding: 0 var(--rom-2) var(--rom-2);
+  }
+}
+
+/* Med stor skrift på smal skjerm kan et langt ord være bredere enn kortet. Da deles ordet, i stedet for at teksten
+   går utenfor kortet (eier 02.10.2026). */
+.med-hjelp > label,
+.funksjon-linje,
+.fagvalg-navn {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+/* Svært smalt innhold (stor skrift på smal skjerm): etiketten ved en bryter står under bryteren, overskriften på
+   fag- og funksjonskortene får hele bredden, og fjern-knappen står under overskriften i stedet for på rammen. */
+@container (max-width: 15rem) {
+  .vippe.med-hjelp {
+    grid-template-columns: auto auto;
+    row-gap: var(--rom-1);
+  }
+
+  .vippe.med-hjelp > label {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .skjemadel .fagkort-tittel {
+    max-width: 100%;
+  }
+
+  .skjemadel .fagkort-fjern {
+    position: static;
+    display: flex;
+    margin: 0 0 var(--rom-1) auto;
+  }
 }

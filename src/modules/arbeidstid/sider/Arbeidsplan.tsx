@@ -8,7 +8,6 @@ import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, unikeFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
@@ -19,6 +18,7 @@ import { Funksjoner, type Livsfase, Livsfasekort, livsfaseregler, nyFunksjon, re
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
+import { Skjemadel } from '../komponenter/Skjemadel.tsx';
 import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
@@ -445,86 +445,90 @@ export default function Arbeidsplan() {
       }
     >
       <p class="merknad merknad-liten">{t('arbeidstid.arbeidsplan.illustrasjon')}</p>
-      <Bryter
-        legend={t('arbeidstid.arbeidsplan.gjelder')}
-        verdi={iPeriode ? 'periode' : 'aar'}
-        valg={[
-          { verdi: 'aar', tekst: t('arbeidstid.arbeidsplan.heleSkolearet') },
-          { verdi: 'periode', tekst: t('arbeidstid.arbeidsplan.enPeriode') },
-        ]}
-        onEndring={(v) => settPeriode(v === 'periode')}
-      />
-      {iPeriode && (
-        <>
-          <div class="feltrad">
-            <Tallfelt
-              etikett={t('arbeidstid.periode.dager')}
-              hjelpetekst={t('arbeidstid.periode.dagerHjelp')}
-              verdi={dager}
-              min={1}
-              maks={400}
-              onEndring={(v) => endre({ dager: v })}
-            />
-            <Tallfelt
-              etikett={t('arbeidstid.periode.skolear')}
-              hjelpetekst={t('arbeidstid.periode.skolearHjelp', { dager: formaterTall(skolearDager) })}
-              plassholder={formaterTall(skolearDager)}
-              verdi={s.dagerSkolear ?? null}
-              min={1}
-              maks={400}
-              onEndring={(v) => endre({ dagerSkolear: v })}
-            />
-          </div>
-          {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={s.dagerSkolear ?? skolearDager} />}
-        </>
-      )}
-      <Tallfelt
-        class="felt-kompakt"
-        etikett={iPeriode ? t('arbeidstid.arbeidsplan.stillingPeriode') : t('arbeidstid.arbeidsplan.stilling')}
-        enhet="%"
-        verdi={s.stilling}
-        min={0}
-        maks={200}
-        onEndring={(stilling) => endre({ stilling })}
-      />
-      <Grupper
-        {...(iPeriode ? {} : { arstimer })}
-        grupper={s.grupper}
-        rader={rader}
-        indeks={indeks}
-        periode={iPeriode}
-        standardUker={iPeriode ? ukerFraDager : uker}
-        {...(iPeriode ? { ukerHjelp } : {})}
-        delresultater={delresultater}
-        onEndring={(oppdater) => sett((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
-      />
-      <Funksjoner
-        funksjoner={s.funksjoner}
-        prosenter={prosenter}
-        satser={satser}
-        visTillegg={s.visLonn}
-        kontaktlaererTimer={kontaktlaererTimer}
-        arsrammeFunksjon={arsrammeFunksjon}
-        onEndring={(oppdater) => sett((gammel) => ({ ...gammel, funksjoner: oppdater(gammel.funksjoner) }))}
-      />
-      <Livsfasekort
-        livsfase={s.livsfase}
-        prosent={s.livsfaseProsent}
-        maks={livsfaseMaks}
-        satser={livsfasesatser}
-        arsverk60={arsverk60}
-        feriedager60={feriedager60}
-        onEndring={(livsfase, livsfaseProsent) => endre({ livsfase, livsfaseProsent })}
-      />
-      <Sammenleggbartkort
-        nokkel="moter-og-lonn"
-        tittel={t('arbeidstid.arbeidsplan.tillegg')}
-        oppsummering={[
-          ...(s.moter !== null ? [t('arbeidstid.arbeidsplan.moterOppsummering', { timer: tallTekst(s.moter) })] : []),
-          ...(s.planlegging != null ? [t('arbeidstid.arbeidsplan.planleggingOppsummering', { timer: tallTekst(s.planlegging) })] : []),
-          ...(s.visLonn ? [t('arbeidstid.arbeidsplan.lonnOppsummering')] : []),
-        ].join(', ') || undefined}
+      {/* Skjemaet i fem deler (avgjørelse 033): stilling, undervisning, funksjoner, tid på skolen og lønn. */}
+      <Skjemadel del="stilling" tittel={t('arbeidstid.skjema.stilling')} sum={s.stilling !== null ? `${tallTekst(s.stilling)} %` : null}>
+        <Bryter
+          legend={t('arbeidstid.arbeidsplan.gjelder')}
+          verdi={iPeriode ? 'periode' : 'aar'}
+          valg={[
+            { verdi: 'aar', tekst: t('arbeidstid.arbeidsplan.heleSkolearet') },
+            { verdi: 'periode', tekst: t('arbeidstid.arbeidsplan.enPeriode') },
+          ]}
+          onEndring={(v) => settPeriode(v === 'periode')}
+        />
+        {iPeriode && (
+          <>
+            <div class="feltrad">
+              <Tallfelt
+                etikett={t('arbeidstid.periode.dager')}
+                hjelpetekst={t('arbeidstid.periode.dagerHjelp')}
+                verdi={dager}
+                min={1}
+                maks={400}
+                onEndring={(v) => endre({ dager: v })}
+              />
+              <Tallfelt
+                etikett={t('arbeidstid.periode.skolear')}
+                hjelpetekst={t('arbeidstid.periode.skolearHjelp', { dager: formaterTall(skolearDager) })}
+                plassholder={formaterTall(skolearDager)}
+                verdi={s.dagerSkolear ?? null}
+                min={1}
+                maks={400}
+                onEndring={(v) => endre({ dagerSkolear: v })}
+              />
+            </div>
+            {dager !== null && dager > 0 && <Periodelinje dager={dager} skolear={s.dagerSkolear ?? skolearDager} />}
+          </>
+        )}
+        <Tallfelt
+          class="felt-kompakt"
+          etikett={iPeriode ? t('arbeidstid.arbeidsplan.stillingPeriode') : t('arbeidstid.arbeidsplan.stilling')}
+          enhet="%"
+          verdi={s.stilling}
+          min={0}
+          maks={200}
+          onEndring={(stilling) => endre({ stilling })}
+        />
+        <Livsfasekort
+          livsfase={s.livsfase}
+          prosent={s.livsfaseProsent}
+          maks={livsfaseMaks}
+          satser={livsfasesatser}
+          arsverk60={arsverk60}
+          feriedager60={feriedager60}
+          onEndring={(livsfase, livsfaseProsent) => endre({ livsfase, livsfaseProsent })}
+        />
+      </Skjemadel>
+      <Skjemadel del="undervisning" tittel={t('arbeidstid.skjema.undervisning')} sum={resultat ? `${tallTekst(vis(resultat.undervisning.verdi))} %` : null}>
+        <Grupper
+          {...(iPeriode ? {} : { arstimer })}
+          grupper={s.grupper}
+          rader={rader}
+          indeks={indeks}
+          periode={iPeriode}
+          standardUker={iPeriode ? ukerFraDager : uker}
+          {...(iPeriode ? { ukerHjelp } : {})}
+          delresultater={delresultater}
+          onEndring={(oppdater) => sett((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
+        />
+      </Skjemadel>
+      <Skjemadel
+        del="funksjoner"
+        tittel={t('arbeidstid.arbeidsplan.funksjoner')}
+        sum={resultat && resultat.funksjon.verdi > 0 ? `${tallTekst(vis(resultat.funksjon.verdi))} %` : null}
+        oppsummering={t('arbeidstid.arbeidsplan.funksjonerOppsummering', { antall: s.funksjoner.length, prosent: tallTekst(prosenter.reduce((sum, p) => sum + p, 0)) })}
       >
+        <Funksjoner
+          funksjoner={s.funksjoner}
+          prosenter={prosenter}
+          satser={satser}
+          visTillegg={s.visLonn}
+          kontaktlaererTimer={kontaktlaererTimer}
+          arsrammeFunksjon={arsrammeFunksjon}
+          onEndring={(oppdater) => sett((gammel) => ({ ...gammel, funksjoner: oppdater(gammel.funksjoner) }))}
+        />
+      </Skjemadel>
+      <Skjemadel del="tid" tittel={t('arbeidstid.skjema.tid')}>
         <Tallfelt
           class="felt-kompakt"
           etikett={t('arbeidstid.fordeling.moter')}
@@ -544,7 +548,9 @@ export default function Arbeidsplan() {
           maks={400}
           onEndring={(planlegging) => endre({ planlegging })}
         />
-        <Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => endre({ visLonn })} />
+      </Skjemadel>
+      {/* Lønn har eget kort. Bryteren står i overskriften, og resten vises når den er slått på (eier 01.10.2026). */}
+      <Skjemadel del="lonn" tittel={t('arbeidstid.skjema.lonn')} hoyre={<Vippe tekst={t('arbeidstid.arbeidsplan.visLonn')} pa={s.visLonn} onEndring={(visLonn) => endre({ visLonn })} />}>
         {s.visLonn && (
           <>
             <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(l) => endre({ lonn: l })} />
@@ -573,7 +579,7 @@ export default function Arbeidsplan() {
             <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.tilleggHint')}</p>
           </>
         )}
-      </Sammenleggbartkort>
+      </Skjemadel>
     </Kalkulatorside>
   );
 }

@@ -4,8 +4,9 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { beregnBeskjeftigelse, type Gruppe } from '../beregning/index.ts';
 import { Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Skjemadel } from '../komponenter/Skjemadel.tsx';
 import { Grupper, nyGruppe, reserverIder, tilGruppe, useFagindeks } from '../komponenter/Skjema.tsx';
-import { Utregningskort } from '../komponenter/Utregning.tsx';
+import { tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { overforSkjema, useHent, useSkjematilstand } from '../kontekst.ts';
 
@@ -59,16 +60,19 @@ export default function Beskjeftigelse() {
         </>
       }
     >
-      <Grupper
-        arstimer={arstimer}
-        grupper={grupper}
-        rader={rader}
-        indeks={indeks}
-        periode={false}
-        standardUker={uker}
-        delresultater={delresultater}
-        onEndring={(oppdater) => settSkjema((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
-      />
+      {/* Skjemaet i deler som i Arbeidsplan (avgjørelse 033). */}
+      <Skjemadel del="undervisning" tittel={t('arbeidstid.skjema.undervisning')} sum={resultat ? `${tallTekst(resultat.sum.verdi)} %` : null}>
+        <Grupper
+          arstimer={arstimer}
+          grupper={grupper}
+          rader={rader}
+          indeks={indeks}
+          periode={false}
+          standardUker={uker}
+          delresultater={delresultater}
+          onEndring={(oppdater) => settSkjema((gammel) => ({ ...gammel, grupper: oppdater(gammel.grupper) }))}
+        />
+      </Skjemadel>
     </Kalkulatorside>
   );
 }

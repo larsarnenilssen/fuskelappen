@@ -2,11 +2,11 @@
 import { lesHash } from '../../../app/ruter.ts';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
-import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnOvertid } from '../beregning/index.ts';
 import { Belopsstolpe, Stillingsmaaler } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Skjemadel } from '../komponenter/Skjemadel.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
@@ -85,16 +85,19 @@ export default function Overtid() {
         </>
       }
     >
-      <Tallfelt
-        etikett={t('arbeidstid.overtid.beskjeftigelse')}
-        hjelpetekst={t('arbeidstid.overtid.beskjeftigelseHjelp')}
-        enhet="%"
-        verdi={s.beskjeftigelse}
-        min={0}
-        maks={300}
-        onEndring={(beskjeftigelse) => endre({ beskjeftigelse })}
-      />
-      <Sammenleggbartkort nokkel="fag" tittel={t('arbeidstid.overtid.fag')}>
+      {/* Skjemaet i deler som i Arbeidsplan (avgjørelse 033). */}
+      <Skjemadel del="stilling" tittel={t('arbeidstid.skjema.stilling')} sum={s.beskjeftigelse !== null ? `${tallTekst(s.beskjeftigelse)} %` : null}>
+        <Tallfelt
+          etikett={t('arbeidstid.overtid.beskjeftigelse')}
+          hjelpetekst={t('arbeidstid.overtid.beskjeftigelseHjelp')}
+          enhet="%"
+          verdi={s.beskjeftigelse}
+          min={0}
+          maks={300}
+          onEndring={(beskjeftigelse) => endre({ beskjeftigelse })}
+        />
+      </Skjemadel>
+      <Skjemadel del="undervisning" tittel={t('arbeidstid.overtid.fag')}>
         <Fagfelt
           plasser={s.plasser}
           faaElever={s.faaElever}
@@ -103,11 +106,11 @@ export default function Overtid() {
           onPlasser={(oppdater) => sett((gammel) => ({ ...gammel, plasser: oppdater(gammel.plasser) }))}
           onFaaElever={(faaElever) => endre({ faaElever })}
         />
-      </Sammenleggbartkort>
-      <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
+      </Skjemadel>
+      <Skjemadel del="lonn" tittel={t('arbeidstid.skjema.lonn')}>
         <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => endre({ lonn })} />
         <Vippe tekst={t('arbeidstid.overtid.over60')} pa={s.over60} onEndring={(over60) => endre({ over60 })} />
-      </Sammenleggbartkort>
+      </Skjemadel>
     </Kalkulatorside>
   );
 }

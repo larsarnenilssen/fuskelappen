@@ -1,9 +1,9 @@
 // Vikartimer: økt beskjeftigelse for ansatte i stilling, eller lønn for timevikarer.
 import { useTekst } from '../../../app/tilstand.ts';
-import { Sammenleggbartkort } from '../../../components/Sammenlegg.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnTimevikar, beregnVikarFast } from '../beregning/index.ts';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer } from '../komponenter/Kalkulatorside.tsx';
+import { Skjemadel } from '../komponenter/Skjemadel.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Bryter, Fagfelt, Minuttvelger, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
@@ -82,19 +82,22 @@ export default function Vikar() {
         </>
       }
     >
-      <Bryter
-        legend={t('arbeidstid.vikar.type')}
-        verdi={s.type}
-        valg={[
-          { verdi: 'fast', tekst: t('arbeidstid.vikar.fast') },
-          { verdi: 'timevikar', tekst: t('arbeidstid.vikar.timevikar') },
-        ]}
-        onEndring={(type) => endre({ type })}
-      />
-      <Sammenleggbartkort
-        nokkel="vikartimer"
+      {/* Skjemaet i deler som i Arbeidsplan (avgjørelse 033). */}
+      <Skjemadel del="stilling" tittel={t('arbeidstid.skjema.vikariat')}>
+        <Bryter
+          legend={t('arbeidstid.vikar.type')}
+          verdi={s.type}
+          valg={[
+            { verdi: 'fast', tekst: t('arbeidstid.vikar.fast') },
+            { verdi: 'timevikar', tekst: t('arbeidstid.vikar.timevikar') },
+          ]}
+          onEndring={(type) => endre({ type })}
+        />
+      </Skjemadel>
+      <Skjemadel
+        del="undervisning"
         tittel={t('arbeidstid.vikar.kortTimer')}
-        {...(s.okter !== null && s.minutter !== null ? { oppsummering: t('arbeidstid.vikar.oppsummering', { okter: tallTekst(s.okter), minutter: tallTekst(s.minutter) }) } : {})}
+        sum={s.okter !== null && s.minutter !== null ? t('arbeidstid.vikar.oppsummering', { okter: tallTekst(s.okter), minutter: tallTekst(s.minutter) }) : null}
       >
         <Fagfelt
           plasser={s.plasser}
@@ -106,13 +109,13 @@ export default function Vikar() {
         />
         <Tallfelt etikett={t('arbeidstid.vikar.okter')} verdi={s.okter} min={0} maks={2000} onEndring={(okter) => endre({ okter })} />
         <Minuttvelger minutter={s.minutter} fritt={s.minutterFritt} onEndring={(minutter, minutterFritt) => endre({ minutter, minutterFritt })} />
-      </Sammenleggbartkort>
+      </Skjemadel>
 
       {s.type === 'timevikar' && (
-        <Sammenleggbartkort nokkel="lonn" tittel={t('arbeidstid.felles.kortLonn')}>
+        <Skjemadel del="lonn" tittel={t('arbeidstid.skjema.lonn')}>
           <Lonnsskjema hent={hent} lonn={s.lonn} onEndring={(lonn) => endre({ lonn })} />
           <Vippe tekst={t('arbeidstid.vikar.over60')} pa={s.over60} onEndring={(over60) => endre({ over60 })} />
-        </Sammenleggbartkort>
+        </Skjemadel>
       )}
 
     </Kalkulatorside>

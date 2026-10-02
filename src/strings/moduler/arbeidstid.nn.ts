@@ -5,6 +5,13 @@ type Skjema<T> = { [K in keyof T]: T[K] extends string ? string : Skjema<T[K]> }
 
 export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   tittel: 'Arbeidstid',
+  skjema: {
+    stilling: 'Stilling',
+    vikariat: 'Vikariat',
+    undervisning: 'Undervisning',
+    tid: 'Tid på skulen',
+    lonn: 'Løn',
+  },
   kalkulatorer: {
     tittel: 'Kalkulatorar',
     flere: 'Fleire kalkulatorar',
@@ -35,7 +42,6 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     skrivUt: 'Skriv ut {navn} eller lagre som PDF',
     skrivUtKort: 'Skriv ut eller lagre som PDF',
     ukerHalvaar: 'T.d. for fag som berre går eit halvår.',
-    kortLonn: 'Løn og feriepengar',
     nyttVindu: 'Opne {navn} i nytt vindauge',
     nyttVinduKort: 'Opne i nytt vindauge',
     gruppe: 'Fag {nr}',
