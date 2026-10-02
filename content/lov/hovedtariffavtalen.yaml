@@ -108,8 +108,8 @@
     - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 6 (6.1–6.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=20" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er unntaket for ledere riktig gjengitt? Avtalen nevner arbeidsmiljøloven § 10-12 og HTA kap. 3 punkt 3.4, og at arbeidsgiver vurderer ledere i 3.4.2 og 3.4.3 konkret."
-    - "Gjelder prosenttilleggene i 6.5 også for overtid i undervisning, eller bare satsene i SFS 2213 og § 12.4? Teksten nevner ikke prosenttilleggene."
+    - "Avtalen nevner arbeidsmiljøloven § 10-12 og HTA kap. 3 punkt 3.4, og at arbeidsgiver vurderer ledere i 3.4.2 og 3.4.3 konkret. Er unntaket for ledere riktig gjengitt?"
+    - "Teksten nevner ikke prosenttilleggene i 6.5. Gjelder de også for overtid i undervisning, eller bare satsene i SFS 2213 og § 12.4?"
   stikkord: [overtid, overtidstillegg, ledere, fridager]
 
 - id: hta-ferie
@@ -290,7 +290,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er forskjellen mellom 3.4.2 («og») og 3.4.3 («eller») tydelig nok?"
-    - "Er det riktig at rektor og andre skoleledere vanligvis får lønn etter 3.4.2 eller 3.4.3, eller kan de også ligge i kapittel 4? Teksten sier ikke noe om det."
+    - "Teksten sier ikke hvilket kapittel skoleledere får lønn etter. Er det riktig at rektor og andre skoleledere vanligvis får lønn etter 3.4.2 eller 3.4.3, eller kan de også ligge i kapittel 4?"
   stikkord: [ledere, lederlønn, rektor, avdelingsleder, lønnsforhandlinger]
 
 - id: hta-sentral-lonn
@@ -313,7 +313,7 @@
     - { id: ks-hovedtariffavtalen, punkt: "Kap. 4 punkt 4.0–4.1", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=48" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig å si at «de fleste andre stillinger på skolen» får lønn etter kapittel 4? Noen stillinger ligger i kapittel 5 eller 3.4."
+    - "Noen stillinger ligger i kapittel 5 eller 3.4. Er det riktig å si at «de fleste andre stillinger på skolen» får lønn etter kapittel 4?"
   stikkord: [garantilønn, minstelønn, kapittel 4, stillingsgruppe, lønnsansiennitet]
 
 - id: hta-forhandlinger
@@ -355,6 +355,6 @@
     - { id: ks-hovedtariffavtalen, punkt: "Vedlegg 2", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=64" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er kravene for faglærere i yrkesfag forenklet for mye? Avtalen har to veier til adjunkt (med 2-årig yrkesteoretisk utdanning og PPU, eller med 3-årig yrkesfaglærerutdanning), begge med fire års yrkespraksis."
+    - "Avtalen har to veier til adjunkt for faglærere i yrkesfag (med 2-årig yrkesteoretisk utdanning og PPU, eller med 3-årig yrkesfaglærerutdanning), begge med fire års yrkespraksis. Er kravene forenklet for mye?"
     - "Er det riktig at minstelønn «som om utdanningen var fullført» gjelder dem som fyller de faglige kravene og har fag i læreplanen?"
   stikkord: [stillingskode, lektor, adjunkt, lærer, "7960", "7965", faglærer, PPU, kompetanselønn]

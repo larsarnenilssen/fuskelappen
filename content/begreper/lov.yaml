@@ -37,16 +37,16 @@
   type: begrep
   tittel: { nb: Lokal forskrift, nn: Lokal forskrift }
   tekst:
-    nb: En lokal forskrift er en forskrift som en kommune eller fylkeskommune gir, og som gjelder der. Fylkeskommunen skal blant annet gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjøres i Norsk Lovtidend og står på Lovdata, men de er ikke med i Lovdatas gratis datasett. Appen kan derfor ikke vise teksten, men lenker til den.
-    nn: Ei lokal forskrift er ei forskrift som ein kommune eller fylkeskommune gir, og som gjeld der. Fylkeskommunen skal mellom anna gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjerast i Norsk Lovtidend og står på Lovdata, men dei er ikkje med i det gratis datasettet til Lovdata. Appen kan difor ikkje vise teksten, men lenkjer til han.
+    nb: En lokal forskrift er en forskrift som en kommune eller fylkeskommune gir, og som gjelder der. Fylkeskommunen skal blant annet gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjøres i Norsk Lovtidend og står på Lovdata, men de er ikke med i Lovdatas gratis datasett. Appen henter dem derfor fra siden hos Lovdata og viser dem under Regelverk for dem som har valgt fylket.
+    nn: Ei lokal forskrift er ei forskrift som ein kommune eller fylkeskommune gir, og som gjeld der. Fylkeskommunen skal mellom anna gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjerast i Norsk Lovtidend og står på Lovdata, men dei er ikkje med i det gratis datasettet til Lovdata. Appen hentar dei difor frå sida hos Lovdata og viser dei under Regelverk for dei som har valt fylket.
   kilder:
     - { id: udir-lokale-forskrifter, punkt: "På hvilke områder må kommunene og fylkeskommunene fastsette forskrift?", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
     - { id: opplaeringslova, punkt: "§ 10-7 Skolereglar", url: "https://lovdata.no/lov/2023-06-09-30/§10-7" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-5 Lokal forskrift om inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-5" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er listen over lokale forskrifter fylkeskommunen skal gi (skolereglar, skolerute, inntak og formidling), dekkende for videregående opplæring? Udir nevner også hovedmål for hver skole."
-    - "Appen lenker til Vestlands lokale forskrifter først når adressene er lagt inn. Er det riktig at de ikke kan vises som tekst i appen?"
+    - "Udir nevner også hovedmål for hver skole. Er listen over lokale forskrifter fylkeskommunen skal gi (skolereglar, skolerute, inntak og formidling), dekkende for videregående opplæring?"
+    - "Er det greit at lokale forskrifter bare vises for dem som har valgt fylket, og at de hentes fra Lovdata fire ganger i året?"
   stikkord: [skolereglar, skoleregler, inntaksforskrift, ordensreglement, Lovtidend, kunngjøring]
   relatert: [forskrift, lov]
 

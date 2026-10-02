@@ -447,6 +447,14 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
   - Opplæringsforskrifta: kapittel 4–20, 22 og 23. Ikke med: 1–3 (grunnskolen), 21 (kommunens økonomiske ansvar), 24 (iverksetjing) og vedlegg 1–2.
   - Hele kapitler tas med, også paragrafer i dem som bare gjelder grunnskolen, så teksten står som i kilden.
   - Eier ba om at Udirs regelverkssider brukes til å avgjøre om flere lover og forskrifter er aktuelle (02.10.2026). Forslaget fra den kartleggingen legges fram før pakken Lov og forskrift bygges.
+  - Etter kartleggingen godkjente eier 02.10.2026 også forvaltningsloven kapittel II–VI og forskrift om helse og miljø i barnehager og skoler, på vilkår av at nye kilder er lette å legge til. Senere samme dag: arbeidsmiljøloven kapittel 4, 10, 12, 14 og 15, og Vestlands lokale forskrifter om inntak (2020-09-29-3380) og skolereglar (2026-06-16-1587).
+
+*Status 02.10.2026:* Levert i 0.22.0 som modulen **Regelverk** (avgjørelse 039). Eier valgte navnet, med «Lov, forskrift og avtaler» som undertekst.
+- Gruppene lover, forskrifter, lokale forskrifter og avtaler kan legges sammen.
+- Lokale forskrifter vises bare når brukeren har valgt fylket. De hentes fra siden hos Lovdata hver 13. uke, fordi de ikke er i datasettene (eier valgte å hente uten å spørre Lovdata først).
+- Hovedtariffavtalen og SFS 2213 står under «Avtaler», skrevet med egne ord, fordi vilkårene for gjenbruk av avtaleteksten ikke er avklart. Kildesjekken melder endringer i avtalene, med de berørte bestemmelsene og kontrollspørsmålene.
+- Søket finner bokmål i nynorsk tekst og omvendt. Paragraftitler i eldre lover ryddes. Kilder som lenker til en paragraf hos Lovdata, får også «Les i appen».
+- Nye begreper: lov, forskrift, lokal forskrift, paragraf og ledd, enkeltvedtak, tariffavtale, garantilønn, stillingskode, lønnsansiennitet, konstituering, tidsressurspott, midlertidig ansettelse, oppsigelse og avskjed, klage, habilitet, forhåndsvarsel, aktivitetsplikt, bortvisning og skoleregler.
 
 **Kontrollpunkt:** Eier vurderer om illustrasjonen er riktig og pedagogisk nyttig, og godkjenner utvalget av kapitler og forskrifter før modulen Lov og forskrift bygges.
 

@@ -16,6 +16,7 @@ const BYTT: readonly (readonly [string, string])[] = [
   ['lig', 'leg'],
   ['het', 'heit'],
   ['else', 'ing'],
+  ['els', 'ing'],
   ['sning', 'sing'],
 ];
 

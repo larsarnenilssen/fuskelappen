@@ -8,6 +8,7 @@ import { lesFil } from '../../scripts/innhold/last.ts';
 import { kapittelliste, lovdokumentSkjema, lovoversiktSkjema, lovutvalgSkjema } from '../../src/modules/lov/skjema.ts';
 import { alleParagrafer, alleSeksjoner, rentekst } from '../../src/modules/lov/typer.ts';
 import { kilderegisterSkjema } from '../../src/core/innhold/skjema.ts';
+import { lokalForskrift } from '../../scripts/hent-lovdata.ts';
 
 const rot = join(__dirname, '../..');
 const html = readFileSync(join(rot, 'tests/fixtures/lovdata/lov.html'), 'utf8');
@@ -51,7 +52,8 @@ describe('leseren for Lovdata', () => {
     expect(p('16-1')?.ledd[0]?.tekst).toEqual(['Lova gjeld frå den tida', { f: '1' }, ' Kongen fastset.']);
     expect(rentekst(p('16-1')?.fotnoter[0]?.tekst ?? [])).toBe('Frå 1. august 2024 iflg. res. 31 mai 2024 nr. 1028.');
     expect(alleSeksjoner(d.seksjoner).find((s) => s.nr === '16')?.merknader).toEqual([['(', { t: 'opplæringslova § 1-4', l: 'lov/2023-06-09-30/§1-4' }, ')']]);
-    expect(p('16-2')).toMatchObject({ tittel: '(Oppheva)', ledd: [] });
+    // Parentesen rundt tittelen fjernes i visningen (eier 02.10.2026).
+    expect(p('16-2')).toMatchObject({ tittel: 'Oppheva', ledd: [] });
   });
 
   it('stopper når et kapittel i utvalget mangler', () => {
@@ -94,12 +96,23 @@ describe('utvalget i content/lovverk.yaml', () => {
     expect(kap('opplaeringsforskrifta')).toEqual([...Array.from({ length: 17 }, (_, i) => String(i + 4)), '22', '23']);
   });
 
-  it('peker på aktive kilder fra Lovdata med sjekkmetode lovtekst', () => {
+  it('peker på aktive kilder fra Lovdata: datasettene, eller siden for lokale forskrifter med fylke', () => {
     for (const d of utvalg.dokumenter) {
       const kilde = register.kilder.find((k) => k.id === d.kilde);
       expect(kilde, d.kilde).toBeDefined();
-      expect(kilde).toMatchObject({ type: 'lovdata-datasett', sjekkmetode: 'lovtekst', aktiv: true });
-      expect(() => datasettnavn(kilde?.url ?? '')).not.toThrow();
+      expect(kilde?.aktiv, d.kilde).toBe(true);
+      // Arbeidsmiljøloven har sjekkmetode lovdata fra fase 1 (fingeravtrykk av kapittel 10). Endringene i teksten står
+      // likevel i kontrollsaken, fordi ukesrapporten tar med alle dokumentene fra hentingen.
+      expect(['lovtekst', 'lovdata'], d.kilde).toContain(kilde?.sjekkmetode);
+      if (lokalForskrift(kilde?.url ?? '')) {
+        expect(kilde?.type, d.kilde).toBe('side');
+        expect(d.gyldighet.niva, d.id).toBe('fylke');
+        expect(d.malform, d.id).toBeDefined();
+        expect(d.kapitler, d.id).toBeUndefined();
+      } else {
+        expect(kilde?.type, d.kilde).toBe('lovdata-datasett');
+        expect(() => datasettnavn(kilde?.url ?? '')).not.toThrow();
+      }
     }
   });
 });
