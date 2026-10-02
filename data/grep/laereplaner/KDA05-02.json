@@ -82,5 +82,57 @@
     "Arkitektur og samfunn: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i arkitektur og samfunn inneber å kunne formidle eigne idear og arbeid, og å samtale om ulike løysingar med bruk av relevante faguttrykk"
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i arkitektur og samfunn inneber å kunne beskrive og dokumentere eigne kreative prosessar med bruk av faguttrykk, og å kunne formidle relevant informasjon i visuelle presentasjonar. Å kunne skrive inneber òg å kunne registrere eigne opplevingar av ein stad i form av teikning, tekst, målingar og bilete."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i arkitektur og samfunn inneber å lese, tolke og kritisk vurdere fagtekstar og teikningar, og å finne relevant informasjon til bruk i eigne prosjekt. Å kunne lese inneber òg å sjå kva som er mogleg av romleg og formmessig utprøving i ulike kontekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i arkitektur og samfunn inneber å tolke og nytte kartdata, og å rekne og arbeide med proporsjonar og målestokk i digitalt og analogt arbeid med teikningar og modellar. Det inneber òg å forstå areal- og ressursbruk og korleis økonomiske val påverkar prosjekt."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i arkitektur og samfunn inneber å kunne bruke digitale ressursar til å hente inn og organisere fagrelevant informasjon, å vurdere kjeldene kritisk og å oppgi dei på ein etterretteleg måte. Det inneber òg å bruke digital modellering og teikning til å utforme, visualisere og presentere eigne arbeid. Vidare inneber det å utøve digital dømmekraft ved å følgje reglar for personvern og vise omsyn til andre på nett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I arkitektur og samfunn handlar det tverrfaglege temaet folkehelse og livsmeistring om å forstå korleis utforming av omgivnadane kan påverke helsa til ein sjølv og andre. I dette faget handlar folkehelse og livsmeistring òg om universell utforming, alternative buformer og bustadsosiale problemstillingar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I arkitektur og samfunn handlar det tverrfaglege temaet demokrati og medborgarskap om å kjenne til prosessar og høve for påverknad knytte til endring og utviklingsplanar. Å forstå korleis arkitektur kan fungere som både inkluderande og ekskluderande verkemiddel, står sentralt."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I arkitektur og samfunn handlar det tverrfaglege temaet berekraftig utvikling om å reflektere over og drøfte korleis vi planlegg og byggjer byar og tettstader for framtida. I dette inngår innsikt i miljøvennlege løysingar i teknologi og materiale og korleis vi tar omsyn til vêr, klima og landskap. Berekraftig utvikling handlar òg om kunnskap om kva levetid materiale og bygningar har, og korleis dei kan brukast om att."
+   ]
+  }
  ]
 }

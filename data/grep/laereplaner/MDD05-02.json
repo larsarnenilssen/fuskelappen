@@ -81,5 +81,45 @@
     "Musikk: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i musikk innebærer å tilegne seg musikk via gehør og å bruke språk og stemme i formidling. Det innebærer også å beskrive og reflektere over egne og andres musikkopplevelser og læringsprosesser med bruk av fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i musikk innebærer å gjengi musikk med notasjon i musikalske arbeidsprosesser, både for å bevare og kommunisere musikalske ideer og som støtte til å formidle musikk. Det innebærer også å skrive planleggingsnotater og øvingslogg."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i musikk innebærer å tilegne seg musikk via notasjon og å bruke notasjon som kilde til musikalsk interpretasjon og i formidling av musikalske uttrykk. Det innebærer også å forstå og kritisk vurdere faglig informasjon i ulike typer tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i musikk innebærer å oppfatte, forstå og skape musikalsk mening ut fra matematiske og logiske dimensjoner ved rytmiske og tonale parametre, og å bruke denne forståelsen i utøving."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i musikk innebærer å bruke digitale ressurser i arbeid med øving, innstudering og formidling. Videre innebærer det å vise god digital dømmekraft når det gjelder bruk av åndsverk, og å forholde seg etisk til opphavsrett og personvern i musikalsk arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I musikk handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene økt forståelse av eget og andres følelsesliv, og slik legge til rette for at de kan oppleve og bidra til fellesskap. Videre handler det om å legge til rette for at elevene kan utvikle trygg identitet og kulturell tilhørighet og oppleve mestring gjennom å utøve musikk. Det legges vekt på fysisk og psykisk helse gjennom at elevene får mulighet til å tilegne seg sunne arbeidsfysiologiske vaner knyttet til utøving på fordypnings- og bruksinstrument og strategier for å håndtere nervøsitet og prestasjonspress i forberedelse til og i formidlingssituasjoner."
+   ]
+  }
  ]
 }

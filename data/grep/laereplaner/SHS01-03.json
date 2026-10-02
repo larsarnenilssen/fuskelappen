@@ -154,5 +154,51 @@
     "Sámi historjá ja servodat 2: Privatista galgá njálmmálaš eksámenii. Eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galget go privatisttat oažžut ráhkkananoasi eksámenis mii báikkálaččat lea mearriduvvon."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Njálmmálaš gálggat sámi historjá- ja servodatfágas mearkkašit máhttit gaskkustit, presenteret, dulkot ja ságaskuššat iešguđetlágan čuolmmaid. Dat mearkkaša maid dahkat oaiviliid guldalemiin ja ságastemiin, ja ovddidit iežas oaiviliid spontána ja ráhkkanan ságastallamiin."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Máhttit čállit sámi historjá- ja servodatfágas mearkkaša máhttit hábmet fágalaš čuolmmaid ja čállit iešguđetlágan fágalaš teavsttaid oktan gáldočujuhusaiguin. Čállin lea mielde oahppama ovddidit go oahppit čálalaččat albmanahttet oaiviliid, ideaid ja máhtu iešguđet historjjálaš dáhpáhusaid ja áigeguovdilis servvodatfágalaš fáttáid birra, nu ahte sii sáhttet oassálastit aktiivvalaččat servodateallimis kritihkalaččat ja reflekterejuvvon vugiin."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Máhttit lohkat sámi historjá- ja servodatfágas mearkkaša geavahit strategiijaid ipmirdit ja dulkot iešguđetlágan teavsttain oaiviliid ja oktavuođaid. Dasa lassin mearkkaša dat ahte máhttit gávdnat ja árvvoštallat dieđuid iešguđetlágan gálduin ja kritihkalaččat reflekteret daid ektui, ja čujuhit gálduide."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitála gálggat sámi historjá- ja servodatfágas mearkkaša geavahit digitála reaidduid go áigu viežžat dieđuid ja go buvttada ja divoda digitála buktagiid. Dat mearkkaša maid geavahit digitála gulahallan- ja ovttasbargoreaidduid kreatiivvalaččat ja heivvolaččat. Oahppit galget doaimmahit gáldokritihka, čujuhit gálduide heivvolaš ja luohtehahtti vugiin, leat dihtomielalaččat gáldoperspektiivii ja čuovvut digitála ovttasdoaibmama njuolggadusaid ja norpmaid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "Sámi historjá- ja servodatfágas fágaidrasttideaddji fáttás álbmotdearvvašvuohta ja eallimis birgen guoská dasa ahte oažžut gealbbu birget máŋggakultuvrralaš servodagas ja bidjat rájiid ja doahttalit earáid rájiid. Fága galgá addit ipmárdusa ovddešáiggi ja dálááiggi birra mii sáhttá sihke duođaštit ja hástalit iešgova, ja leat veahkkin ovdánahttit identitehta ja birget eallimis."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "Sámi historjá- ja servodatfágas fágaidrasttideaddji fáttás demokratiija ja mielborgárvuohta guoská dasa ahte searvat demokráhtalaš proseassaide ja reflekteret dilemmaid ektui mat čuožžilit go sihke eanetlogu rievtti ja unnitlogu vuoigatvuođaid galgá dohkkehit. Fágaidrasttideaddji fáddá demokratiija ja mielborgárvuohta galgá ovddidit áktejumi vuostálasoaiviliidda, ja movttiidahttit kritihkalaš jurddašeapmái ja aktiivvalaš searvamii."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "Sámi historjá- ja servodatfágas fágaidrasttideaddji fáttás guoddevaš ovdáneapmi guoská dasa ahte oažžut ipmárdusa luondduresurssaid hálddašeamis sámi servodagas. Dasa gullá maid reflekteret mo livččii vejolaš čoavdit iešguđetlágan hástalusaid ja beroštupmeriidduid vai lea guoddevaš ovdáneapmi ja birgenláhki boahttevaš buolvvaide. Dás lea maid sáhka ipmirdit mo iešguđet bealit guoddevaš ovdáneamis sáhttet váikkuhit sámi guovlluin."
+   ]
+  }
  ]
 }

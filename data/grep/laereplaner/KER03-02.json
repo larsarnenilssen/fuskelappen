@@ -112,5 +112,45 @@
     "Opplæringen i keramikerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 20 - 23 virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i keramikerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk i kommunikasjon med andre og reflektere over og drøfte mulige valg og løsninger for estetikk, design og arbeidsprosesser og tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i keramikerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og dokumentere arbeidsprosesser gjennom tekst og visualiseringer."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i keramikerfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i keramikerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne materialforbruk, vekt, volum, mengde, krymp og størrelse. Videre handler det om å beregne glasurer, begitninger og leire, kalkulere brenningsprogram, konstruere former og vurdere proporsjoner. Det innebærer også å gjøre økonomiske beregninger i forbindelse med tidsbruk og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i keramikerfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer. Videre handler det om å bruke digitale ressurser for å lage skisser og arbeidstegninger og løse praktiske og håndverksfaglige oppgaver. Det innebærer å kommunisere med faglige nettverk og kunder og å drive markedsføring og salg av keramiske produkter."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I keramikerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over ressursbruk og god verkstedhygiene. Det innebærer å utarbeide gode rutiner og praksiser rundt resirkulering av leire, økonomisk brenning i ovner og om hvordan unngå unødvendig støving og utslipp av de skadelige råstoffene bly, barium og kadmium. Videre handler det om å håndtere avfall, og å sette seg inn i hvordan ulike valg kan påvirke miljøet. Det handler også om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv og å fremme regionale og lokale kulturer og produkter."
+   ]
+  }
  ]
 }

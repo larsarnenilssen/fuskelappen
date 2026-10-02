@@ -172,5 +172,45 @@
     "Verkstedarbeid og dokumentasjon og kvalitet: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 kjøretøy innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og diskutere faglige løsninger i ulike situasjoner og sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 kjøretøy innebærer å planlegge og dokumentere utført arbeid. Det innebærer videre å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 kjøretøy innebærer å forstå og tolke lovverk, arbeidsbeskrivelser, prosedyrer, håndbøker og forskrifter. Videre innebærer det å bruke datablader og faglitteratur for å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 kjøretøy innebærer å regne ut og omregne krefter, elektriske størrelser og tiltrekkingsmomenter. Det innebærer videre å kunne utarbeide kostnadsanalyser og beregninger og å hente ut, beskrive, tolke og vurdere informasjonen fra tallmateriale og beregninger. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 kjøretøy innebærer å kunne bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere, dokumentere og presentere eget arbeid. Det innebærer også å bruke måleverktøy og diagnoseutstyr. Digitale ferdigheter omfatter også evnen til å vise digital dømmekraft, være kildekritisk og reflektere over innhentet informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 kjøretøy handler det tverrfaglige temaet bærekraftig utvikling om kompetanse i håndtering av kjemikalier, oljer og væsker og gjenbruk av komponenter og deler. Det handler også om å ta etiske og miljøbevisste valg og å reflektere over at valgene har betydning for samfunnet rundt. Det handler videre om å reflektere over og erfare at reparasjon av kjøretøy og motor og valg av deler påvirker miljøet."
+   ]
+  }
  ]
 }

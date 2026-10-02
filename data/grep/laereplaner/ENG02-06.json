@@ -196,5 +196,45 @@
     "Etter Vg1 studieforberedende utdanningsprogram / yrkesfaglige utdanningsprogram: Eleven skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i engelsk for elever med tegnspråk er å skape mening gjennom å oppfatte og uttrykke seg aktivt, gjennom å samtale uten bruk av tolk, og gjennom å tilpasse språket til formål, mottaker og situasjon og velge egnede strategier. Det innebærer å delta i direkte kommunikasjon i ulike språkmodaliteter ut fra egne behov og preferanser og ved hjelp av teknologi. Dette kan omfatte talespråk, tegnspråk, skriftspråk, lytting og avlesing. Utvikling av muntlige ferdigheter skjer gjennom praktiske erfaringer og ved å bruke språk gradvis mer presist og nyansert til å kommunisere om forskjellige emner, i formelle og uformelle situasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i engelsk for elever med tegnspråk er å kunne uttrykke ideer og meninger på en forståelig og hensiktsmessig måte i ulike typer tekster, på papir og digitalt. Å skrive handler om å planlegge, utforme og bearbeide tekster som kommuniserer, og å tilpasse språket til formål, mottaker og situasjon og velge egnede skrivestrategier. Utviklingen av skriveferdigheter i engelsk går fra å lære enkeltord og fraser til å skape ulike typer sammenhengende tekster som formidler synspunkter og kunnskap. Det innebærer også å bruke ulike typer kilder på en kritisk og etterrettelig måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i engelsk for elever med tegnspråk er å forstå og reflektere over innhold i ulike typer tekster på papir og digitalt og skal bidra til leseglede og tilegnelse av språk. Det innebærer å lese og finne informasjon i sammensatte tekster med konkurrerende budskap og å bruke lesestrategier til å forstå eksplisitt og implisitt informasjon. Utviklingen av leseferdigheter i engelsk går fra å eksperimentere med språklyder, stavemønstre og stavelser til å lese varierte og komplekse tekster med flyt og forståelse og i stadig større grad kunne reflektere over og vurdere ulike typer tekster kritisk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i engelsk for elever med tegnspråk er å kunne bruke teknologi for å styrke språklæringen, for å møte autentiske språkmodeller og samtalepartnere og for å tilegne seg relevant kunnskap i engelskfaget. Det innebærer å opptre kritisk og reflektert i engelskspråklige digitale uttrykksformer og i kommunikasjon med andre. Utviklingen av digitale ferdigheter i engelsk går fra å utforske språket til å kunne samhandle, skape tekster og tilegne seg kunnskap ved å innhente, utforske og kritisk vurdere informasjon fra ulike engelskspråklige kilder. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I engelsk for elever med tegnspråk handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes evne til å uttrykke seg på engelsk. Dette legger grunnlag for å kunne gi uttrykk for egne følelser, tanker, erfaringer og meninger. Opplæringen kan gi nye perspektiver på ulike tenkemåter og kommunikasjonsmønstre, og på egen og andres levemåte og livssituasjon. Å håndtere situasjoner som krever språk- og kulturkompetanse kan gi elevene mestringsfølelse og bidra til at de utvikler et positivt selvbilde og en trygg identitet som tegnspråklig, både i døvekultur og i majoritetskultur. Arbeidet med temaet kan øke elevenes bevissthet om egen fysisk og psykisk helse, og gi dem muligheter til å ta ansvarlige livsvalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I engelsk for elever med tegnspråk handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes forståelse for at deres oppfatning av verden er kulturavhengig. Ved å lære engelsk kan elevene møte ulike samfunn og kulturer gjennom å kommunisere med andre over hele verden, uavhengig av språklig og kulturell bakgrunn. Dette kan bidra til å åpne for flere måter å tolke verden på og være med på å skape nysgjerrighet og engasjement, og medvirke til å forebygge fordommer."
+   ]
+  }
  ]
 }

@@ -120,5 +120,45 @@
     "Opplæringen i vg3 platearbeiderfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 platearbeiderfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å kommunisere og å tilpasse muntlig tekst til mottaker og formål. Videre innebærer det å fremme egne synspunkter og å drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 platearbeiderfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å bruke uttrykksformer som bilder, figurer og symboler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 platearbeiderfaget innebærer å finne og vurdere innhold i tekster og å forstå lovverk og arbeidsbeskrivelser, prosedyrer, og håndbøker. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 platearbeiderfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, utføre beregninger og stille inn og korrigere utstyr og maskiner. Videre innebærer det å knytte økonomiske utregninger til materialvalg, utstyrsvalg, forbruk og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 platearbeiderfaget innebærer å bruke digitale ressurser for kommunikasjon, planlegging, produksjon og dokumentasjon av arbeidsoppdrag. Det innebærer også å utvikle etisk bevissthet og digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 platearbeiderfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvordan materialer brukes kvalitetsbevisst i produksjon. Det handler også om å kildesortere, gjenbruke og gjenvinne ulike materialer i produksjonen. Videre handler det om sammenhengen mellom valg av metode og materialer i et økonomisk perspektiv."
+   ]
+  }
  ]
 }

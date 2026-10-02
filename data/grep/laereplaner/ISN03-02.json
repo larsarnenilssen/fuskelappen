@@ -112,5 +112,45 @@
     "Opplæringa i vg3 industrisnikkarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fire vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 industrisnikkarfaget inneber å lytte, tale og samtale for å beskrive, dele og utvikle kunnskap som er knytt til observasjonar og erfaringar. Det inneber òg å bruke faglege omgrep til å beskrive produkt, arbeidsprosessar og teknikkar, formulere spørsmål, argument og forklaringar og grunngi eigne haldningar og val. Vidare inneber det å tilpasse uttrykksform, omgrep og døme til formålet og mottakaren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industrisnikkarfaget inneber å uttrykkje seg skriftleg ved beskriving av produkt, prosessar og teknikkar. Det inneber òg å bruke faguttrykk og formuleringar til å beskrive avvik og rapportere data frå produksjonsprosessen. Det inneber vidare å utforme tekstar og tilpasse innhaldet til mottakaren og føremålet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industrisnikkarfaget inneber å lese beskrivingar og instruksjonar for arbeidet og forstå faguttrykk og faglege framstillingar. Det inneber òg å lese og forstå visuelle framstillingar som arbeidsteikningar og skjema for produksjonsflyt."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 industrisnikkarfaget inneber å kunne hente ut, beskrive og tolke informasjon frå talmateriale og ordrar. Det inneber òg å berekne og analysere lønnsemd knytt til arbeidsprosessar og materialutnytting. Vidare inneber det å rekne ut toleransar knytte til produksjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 industrisnikkarfaget inneber å finne informasjon, planleggje og gjennomføre produksjonen og rapportere om og dokumentere opplysningar frå prosessane. Det inneber vidare å forstå program for betening av styrte maskiner, justering av verktøydata og kontroll med utstyr til maskiner. Digitale ferdigheiter inneber òg å utføre programmering av produksjonsmaskiner og -utstyr."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industrisnikkarfaget handlar det tverrfaglege temaet berekraftig utvikling om korleis ein sikrar berekraft i industriell produksjon av trebaserte produkt, og kva verdi produkta har i samfunnet. Vidare handlar det om kunnskap om sertifiseringsordningar for berekraftig trevirke og bruken av verna og nær utryddingstrua treslag, der rett dokumentasjon på trevirket er avgjerande for ei berekraftig forvaltning av artane. Det handlar òg om berekraftig utvikling for andre materialar som blir nytta, under dette lim, lakk, beis og måling."
+   ]
+  }
  ]
 }

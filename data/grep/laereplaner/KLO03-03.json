@@ -101,5 +101,45 @@
     "Før fagprøven kan gjennomføres, må kandidaten dokumentere bestått opplæring på mobilkran og en annen hovedkran og for truck klasse T4, og lastebilkran, fastmontert hydraulisk kran og bro- og traverskran i henhold til gjeldende nasjonale bestemmelser om arbeidsutstyr underlagt krav om sertifisert sikkerhetsopplæring."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 kran- og løfteoperasjonsfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å forstå og bruke fagterminologi og uttrykksmåter og å drøfte og reflektere over fagrelaterte emner og problemstillinger. Det innebærer også å tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 kran- og løfteoperasjonsfaget innebærer å bruke fagspråk i tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å utarbeide rapporter og planer, dokumenter, måleresultater og avviksrapporter."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 kran- og løfteoperasjonsfaget innebærer å finne og vurdere informasjon i tekster, arbeidsbeskrivelser, instruksjonsmanualer og vedlikeholdsinstrukser. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 kran- og løfteoperasjonsfaget innebærer å hente ut, beskrive og tolke informasjon for å beregne symmetriske og usymmetriske løft, og å bruke løftetabeller. Det innebærer også å bruke og bearbeide informasjon for å forstå, beregne og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 kran- og løfteoperasjonsfaget innebærer å bruke digitale ressurser for å planlegge, dokumentere og søke etter informasjon. Det innebærer også å bruke bedriftsinterne systemer. Videre innebærer det å hente inn operasjonelt og teknisk underlag og å registrere, programmere og feilsøke. Det handler også om å utvikle digital dømmekraft og etisk bevissthet ved å reflektere over og følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 kran- og løfteoperasjonsfaget handler det tverrfaglige temaet bærekraftig utvikling om å ta i bruk miljøvennlige og bærekraftige løsninger for det aktuelle løfteutstyret. Dette handler også om å velge miljøvennlig sikringsutstyr, å sortere avfall, og å velge oljer og væsker som er mindre skadelige for miljøet."
+   ]
+  }
  ]
 }

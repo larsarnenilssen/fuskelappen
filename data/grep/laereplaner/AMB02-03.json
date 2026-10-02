@@ -210,5 +210,57 @@
     "Ambulansemedisin, kommunikasjon og samhandling og yrkesliv i ambulansefag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 ambulansefag innebærer å kunne kommunisere og samhandle profesjonelt med pasienter og kolleger under ambulanseoppdrag. Videre innebærer det å kunne samhandle i team, ta ledelse på et skadested, kommunisere også i stressede situasjoner og gi systematiske og relevante rapporter."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 ambulansefag innebærer å dokumentere pasientsituasjoner under ambulanseoppdrag, bruke et presist fagspråk og føre journaler. Det innebærer også å kunne rapportere systematisk og korrekt om hendelsesforløp."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 ambulansefag innebærer å forstå prosedyrer, aktuell merking, regelverk, instrukser og pasientrapporter. Videre innebærer det å sette seg inn i og forstå faglitteratur, å vurdere ny forskning på feltet og å bruke kildekritikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 ambulansefag innebærer å bruke tall- og mengdeforståelse for å håndtere, beregne og administrere medikamenter og å regne ut forbruk av væske og oksygen. Det innebærer å forstå skadeenergi og skademekanikk. Å kunne regne innebærer også å kunne beregne forbruk av tid og materiell og å forstå statistikk og budsjett."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 ambulansefag innebærer å være kjent med bruk av medisinskteknisk utstyr, å bruke digitale kart og å anvende elektronisk pasientjournalsystem. Det innebærer også å samhandle med andre gjennom nettbaserte ressurser. Videre innebærer det å kunne vise digital dømmekraft og å vurdere kilder kritisk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 ambulansefag handler det tverrfaglige temaet folkehelse og livsmestring om å forstå og respektere pasientenes behov for trygg, sikker og omsorgsfull behandling og transport. Det handler også om å se sammenhengen mellom egen fysisk og psykisk helse og muligheten til å være en profesjonell yrkesutøver."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 ambulansefag handler det tverrfaglige temaet demokrati og medborgerskap om pasientmedvirkning under ambulanseoppdrag. Videre handler det om likeverd og respekt for ulikhet som grunnlag for profesjonell yrkesutøvelse. Det handler også om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 ambulansefag handler det tverrfaglige temaet bærekraftig utvikling om bevisst bruk av menneskelige og materielle ressurser. Videre handler det om å være miljø- og kostnadsbevisst ved planlegging av transportoppdrag og anskaffelser og ved håndtering av avfall."
+   ]
+  }
  ]
 }

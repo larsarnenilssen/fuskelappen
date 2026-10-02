@@ -128,5 +128,45 @@
     "Opplæringen i vg3 kjemiprosessfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 kjemiprosessfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å kommunisere og tilpasse muntlig tekst til mottaker og formål. Videre innebærer det å fremme egne synspunkter og å drøfte faglige problemstillinger. Det innebærer også å bruke fagterminologi i arbeidet for å unngå feil og misforståelser."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 kjemiprosessfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å dokumentere arbeidsprosesser, bruke faguttrykk, lage framdriftsplaner og føre logg over arbeidsprosesser."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 kjemiprosessfaget innebærer å finne og vurdere innhold i tekster og faglitteratur og å forstå lovverk, regelverk og standarder. Det innebærer også å forstå innholdet i og bruke spesifikasjoner, tegninger, produktbeskrivelser og arbeidsbeskrivelser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 kjemiprosessfaget innebærer å beregne størrelser trykk, tid, volum, areal og mengder, og sammenheng mellom disse. Det innebærer også å vurdere måleresultater og foreta beregninger knyttet til kvalitet, materialforbruk og produksjonskostnader."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 kjemiprosessfaget innebærer å bruke digitale ressurser til å søke informasjon, kommunisere med samarbeidspartnere, koordinere aktiviteter og å visualisere presentasjoner. Videre innebærer det å bruke digitale styrings- og overvåkingssystemer. Det innebærer også å utvikle etisk bevissthet og digital dømmekraft ved å følge normer og regler."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 kjemiprosessfaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan prosessindustrien kan bidra til en mer energieffektiv og miljøvennlig ressursforvaltning. Videre handler det om å håndtere avfall, resirkulere og minimere utslipp på en måte som reduserer miljøbelastningen på det ytre miljøet. Det handler også om å forstå hvordan lokal næringsaktivitet kan påvirke naturen og menneskenes levevilkår."
+   ]
+  }
  ]
 }

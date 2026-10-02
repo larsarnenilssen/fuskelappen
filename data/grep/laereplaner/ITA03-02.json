@@ -88,5 +88,45 @@
     "Opplæringa i vg3 industritapetserarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på fire til fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 industritapetserarfaget inneber å kunne lytte og gi respons i spontan og førebudd samtale. Det inneber òg å kunne drøfte kvalitetskrav, produksjonsprosessar og faglege løysingar og å kunne fremje eigne meiningar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industritapetserarfaget inneber å kunne utarbeide dokumentasjon og rapportar for utvikling og planlegging av produksjonsprosessar tilpassa mottakaren og formålet. Det inneber òg å kunne dokumentere hendingar og leggje fram forbetringsforslag og å kunne nytte kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industritapetserarfaget inneber å forstå og kunne bruke arbeidsteikningar, arbeidsinstruksjonar, feilmeldingar, bruksrettleiingar og datablad. Det inneber òg å forstå faguttrykk og faglege beskrivingar og å kunne nytte kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 industritapetserarfaget inneber å kunne hente ut, beskrive og tolke informasjon frå talmateriale og å kunne kalkulere produkt og setje mål på arbeidsteikningar. Det inneber vidare å kunne utarbeide malar, stille inn maskiner og gjennomføre målingar og registreringar i samsvar med teikningar, skjema og standardar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 industritapetserarfaget inneber å kunne bruke digitale ressursar til å søkje etter, kommunisere og hente inn informasjon knytt til produksjon og dokumentasjon av arbeidsoppgåver. Det inneber òg etisk refleksjon og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industritapetserarfaget handlar det tverrfaglege temaet berekraftig utvikling om å ta miljømedvitne val i produksjonsprosessen. Det handlar òg om val av råvarer og om å bruke berekraftige produksjonsmetodar. Vidare handlar det om ombruk av råvarer, å utnytte restar i produksjonen, å produsere møblar som er lette å kjeldesortere, og å energiøkonomisere produksjonen."
+   ]
+  }
  ]
 }

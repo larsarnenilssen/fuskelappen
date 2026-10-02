@@ -108,5 +108,45 @@
     "Opplæringen i vg3 brønnfaget, kveilerøroperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlig ferdigheter i vg3 brønnfaget, kveilerøroperasjoner innebærer å lytte til og gi respons i spontan og forberedt samtale tilpasset mottaker og formål. Det innebærer å kommunisere om og reflektere over risikovurderinger og faglige løsninger på fagspråk med kolleger og andre involverte."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 brønnfaget, kveilerøroperasjoner innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å utarbeide rapporter og planlegge arbeid på fagspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 brønnfaget, kveilerøroperasjoner innebærer å finne og vurdere eksplisitt og implisitt innhold i tekster og å bruke og forstå prosedyrer, arbeidsbeskrivelser og regelverk på fagspråk. Det innebærer også å tolke og sammenligne ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 brønnfaget, kveilerøroperasjoner innebærer å hente ut, beskrive og tolke tallmateriell og å beregne krefter, trykk og volum i forbindelse med brønnoperasjoner og vedlikeholdsaktiviteter. Det innebærer også å måle, registrere og forstå tegninger, tabeller og standarder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 brønnfaget, kveilerøroperasjoner innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere. Det innebærer og å bruke digitale ressurser til å planlegge og gjennomføre arbeidsoperasjoner i faget. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 brønnfaget, kveilerøroperasjoner handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om kritisk vurdering av konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

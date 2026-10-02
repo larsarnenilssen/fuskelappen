@@ -132,5 +132,57 @@
     "Opplæringa i vg3 industriell matproduksjon skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 industriell matproduksjon inneber å grunngi faglege val, bruke faguttrykk og kommunisere presist og forståeleg. Vidare inneber det å tilpasse språket til mottakar, innhald og formål og lytte til og vise respekt for kollegaer, kundar og samarbeidspartnarar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industriell matproduksjon inneber å bruke faguttrykk i arbeid med planar og i dokumentasjon av eige arbeid. Vidare inneber det å dokumentere utført kvalitetskontroll og avviksbehandling. Det inneber òg å bruke kjelder på ein måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industriell matproduksjon inneber å setje seg inn i og forstå faglitteratur, bestillingar, produktspesifikasjonar, reseptar, deklarasjonar og manualar. Det inneber òg å forstå regelverk, prosedyrar, instruksar og rutinar i kvalitetssystem."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 industriell matproduksjon inneber å velje og bruke nøyaktige og formålstenlege måleeiningar og å gjere enkle overslag knytte til produksjonsprosessen. Vidare inneber det å kontrollere verdiar som tids- og råvareforbruk og rekne ut utnyttingsgrad og leveringsevne. Det inneber òg å rekne ut mengder og bruke prosentrekning i utvikling og endring av produktspesifikasjonar og reseptar. I tillegg inneber det å utføre kalkulasjon og næringsberekning."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 industriell matproduksjon inneber å bruke digitale ressursar og system, maskiner og utstyr i heile produksjonskjeda. Vidare inneber det bruk og vern av digital informasjon ved kontakt med eksterne, i tråd med rutinane til verksemda. Det inneber òg kunnskap om digital dømmekraft og respekt for opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 industriell matproduksjon handlar det tverrfaglege temaet folkehelse og livsmeistring om å reflektere over samanhengen mellom kosthald og folkehelse. Vidare handlar det om å utvikle ein yrkesidentitet som bidreg til eit positivt sjølvbilete gjennom meistring og deltaking i eit fagleg og kollegialt yrkesfellesskap."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 industriell matproduksjon handlar det tverrfaglege temaet demokrati og medborgarskap om respekt for ulike religionar, kulturar og mat- og drikketradisjonar. Det handlar vidare om plikter og rettar i trepartssamarbeidet, der arbeidsgivaren, arbeidstakaren og lovgivande myndigheit jobbar saman om å utvikle eit betre arbeidsliv. Demokrati og medborgarskap handlar òg om å motverke arbeidslivskriminalitet, diskriminering og forskjellsbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industriell matproduksjon handlar det tverrfaglege temaet berekraftig utvikling om ei verd i endring som treng eit meir tilpassa forbruk av mat og drikke. Gjennom kunnskap om råvaretilgang og ressursutnytting, teknologiutvikling, avfallshandtering, gjenbruk og resirkulering skal lærlingen forstå korleis miljøet blir påverka lokalt og globalt."
+   ]
+  }
  ]
 }

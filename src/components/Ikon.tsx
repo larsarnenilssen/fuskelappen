@@ -34,6 +34,8 @@ const baner = {
   forminsk: 'M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5',
   // Veiviser: en stolpe med to skilt, for opplæringsløp.
   veiviser: 'M12 3v18M12 5h7l2 2.5-2 2.5h-7M12 12H5l-2 2.5L5 17h7M9 21h6',
+  // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
+  lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;
 
 export type Ikonnavn = keyof typeof baner;

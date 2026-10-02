@@ -172,5 +172,45 @@
     "Teknologi og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 industriteknologi innebærer å kommunisere, beskrive, forklare og dokumentere ulike arbeidsoppgaver. Det innebærer å forstå uttrykksmåter og fremme egne synspunkter og drøfte problemstillinger. Videre innebærer det å bruke et presist språk for å gjøre seg forstått og unngå feil og misforståelser. Muntlige ferdigheter innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 industriteknologi innebærer å planlegge, dokumentere, utforme og bearbeide tekster og ta notater. Det innebærer også å bruke et presist og tydelig språk, inkludert figurer og symboler som er aktuelle for faget. Å kunne skrive innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger"
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 industriteknologi innebærer å lese og forstå lovverk og arbeidsbeskrivelser, prosedyrer, håndbøker og forskrifter. Det innebærer også å kunne sette seg inn i nødvendig informasjon for å delta aktivt i skole- og arbeidsmiljøet. Lesing innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 industriteknologi innebærer å kunne stille inn og korrigere utstyr og maskiner i tillegg til å utføre beregninger og bruke tekniske tabeller som er relevante for faget og tilhørende bransjer. Regneferdigheter inngår også i økonomistyring knyttet til materialvalg, utstyrsvalg, forbruk og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 industriteknologi innebærer å bruke digitale ressurser i kommunikasjon, planlegging, produksjon og dokumentasjon av arbeidsoppdrag. Videre innebærer det å bruke digitale løsninger i feilsøking og bruk av maskiner, verktøy og utstyr. Digitale ferdigheter innebærer også å holde seg oppdatert på teknologisk utvikling og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 industriteknologi handler det tverrfaglige temaet bærekraftig utvikling om betydningen av teknologi og industrielle prosesser i et effektivt og bærekraftig samfunn. Det tverrfaglige temaet skal bidra til kunnskap om hvordan miljøvennlige materialer kan brukes i innovativ og kvalitetsrettet produksjon. Videre skal det bidra til å vise fram nytten av å utnytte begrensede ressurser på en bærekraftig måte, og gi kunnskaper om hvordan forskjellige typer materialer blir brukt bærekraftig i ulike prosesser og produksjonsmetoder."
+   ]
+  }
  ]
 }

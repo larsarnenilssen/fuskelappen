@@ -132,5 +132,57 @@
     "Gull- og sølvsmedhåndverk og design og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 gull- og sølvsmedhåndverk innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale om faglige emner. Det innebærer å bruke fagspråk i drøfting av og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til presentasjon av eget arbeid og i samtale med kunder, leverandører og andre samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 gull- og sølvsmedhåndverk innebærer å bruke fagspråk og varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å lage tegninger og presise beskrivelser av arbeidsprosesser og revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 gull- og sølvsmedhåndverk innebærer å finne og vurdere eksplisitt og implisitt informasjon i ulike kilder og tekster som bilder, illustrasjoner, arbeidstegninger og mønstre på en kritisk måte som lar seg etterprøve. Det innebærer å sammenligne, tolke og systematisere informasjon i ulike tekster, tegninger, bilder og illustrasjoner for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 gull- og sølvsmedhåndverk innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale for å beregne pris, vekt, volum, vinkler, styrkeforhold og tidsbruk. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 gull- og sølvsmedhåndverk innebærer å bruke digitale ressurser til å innhente informasjon, og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 gull- og sølvsmedhåndverk handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med oppgaver innenfor gull- og sølvsmedhåndverk."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 gull- og sølvsmedhåndverk handler det tverrfaglige temaet demokrati og medborgerskap om kritisk refleksjon rundt hvordan materialer blir utvunnet, og av hvem. Det innebærer å se sammenhenger mellom demokrati og sentrale menneskerettigheter og hvordan de kommer til uttrykk i håndverkstradisjonen. Videre handler det om å ta aktivt del i samfunnet og gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 gull- og sølvsmedhåndverk handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over hvordan produksjonsmetoder henger sammen med handel med nasjonale, samiske og internasjonale produsenter. Videre handler det om fagenes rolle i arbeidet med å verne og sikre verdens kultur- og naturarv og i å fremme regionale og lokale kulturer og produkter. Bærekraftig utvikling handler også om å vurdere gjenbruk av edle metaller til nyutvikling av produkter i ulike materialer og om entreprenørskap med vekt på kvalitet og etisk produksjon i ressursforvaltningen. Videre handler det om trygg håndtering av kjemikalier for å ivareta helse, miljø og sikkerhet i produksjonen."
+   ]
+  }
  ]
 }

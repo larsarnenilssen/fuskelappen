@@ -102,5 +102,38 @@
     "Matematikk X: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
- ]
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i matematikk X innebærer å skape mening gjennom å samtale i og om matematikk. Det handler om å bidra i utforskende samtaler ved å kommunisere ideer og drøfte matematiske problemer, strategier og løsninger med andre. Det handler også om å beskrive og diskutere abstrakte matematiske begreper."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i matematikk X innebærer å beskrive og forklare sammenhenger, oppdagelser og ideer ved hjelp av hensiktsmessige representasjoner. Å kunne skrive i matematikk X er et redskap for å utvikle egne tanker og egen læring. Det innebærer å kunne løse problemer med et presist matematisk språk og gi en ryddig framstilling av løsningen."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i matematikk X innebærer å kunne skape mening i matematiske tekster. Det innebærer også å finne og bruke informasjon i komplekse tekster med avansert symbolspråk og begrepsbruk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i matematikk X innebærer å bruke symbolspråk, matematiske begreper og framgangsmåter til å gjøre utregninger og vurdere om løsninger er gyldige. Dette innebærer å gjenkjenne problemer som kan løses med matematikk, og formulere spørsmål om disse. Det innebærer også å analysere og løse et spekter av komplekse problemer med effektive og hensiktsmessige strategier, begreper, symboler og metoder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i matematikk X innebærer å bruke digitale verktøy til å utforske, formulere og løse matematiske problemer. Digitale ferdigheter innebærer også å bruke digitale ressurser som hjelpemiddel i utforsking, løsing og presentasjon av matematiske problemer."
+   ]
+  }
+ ],
+ "temaer": []
 }

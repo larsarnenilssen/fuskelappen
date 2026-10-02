@@ -192,5 +192,51 @@
     "Dyrelære og aktivitet og drift og entreprenørskap: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 heste- og dyrefag innebærer å tilegne seg kunnskaper ved å lytte til og diskutere med andre og å forklare og begrunne valg. Videre handler det om å drøfte og reflektere over faglige emner, veilede ulike målgrupper og å bruke fagspråk for å kommunisere profesjonelt og presist om faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 heste- og dyrefag innebærer å planlegge, presentere og utveksle informasjon, og å utforme tekster tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å føre journal og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 heste- og dyrefag innebærer å finne, vurdere og tilegne seg informasjon i trykte og digitale ressurser og å bruke dette i praktisk arbeid, tjenesteyting eller produksjonsprosesser. Videre innebærer det å tolke, forstå og bruke bruksanvisninger, kvalitetssystemer, faglitteratur, diagnostiske verktøy og journaler. Det innebærer også å orientere seg i gjeldende regelverk og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 heste- og dyrefag innebærer å bruke tall og beregninger til drifts- og økonomistyring og å sette opp og tolke tabeller, diagrammer og enkel statistikk. Det innebærer også å velge framgangsmåter, stille inn og tilpasse verktøy og utstyr og å beregne innsatsfaktorer og utbytte av prosesser. Videre betyr det å regne med ulike måleenheter, og å måle økonomiske, biologiske, kjemiske og fysiske parametre."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 heste- og dyrefag innebærer å bruke teknologi og digitale ressurser i drift, produksjon og aktivitet. Det innebærer også å innhente data, tolke kilder kritisk og å bruke ulike digitale ressurser i faglige diskusjoner og til informasjonsutveksling. Det innebærer videre å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 heste- og dyrefag handler det tverrfaglige temaet folkehelse og livsmestring om å håndtere og mestre relasjoner mellom mennesker, og mellom mennesker og dyr. Det handler om å kommunisere med kunder, kollegaer og andre yrkesgrupper. Det handler også om å ivareta egen og andres sikkerhet gjennom kunnskap om smittevern, risikovurdering og sikker håndtering av dyr."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 heste- og dyrefag handler det tverrfaglige temaet bærekraftig utvikling om kompetanse til å gjøre ansvarlige, etiske og miljøbevisste valg i tjenester, produkter og aktiviteter relatert til dyr. Videre handler det om å reflektere over ressursbruk, og om natur- og klimaavtrykk av egen næringspraksis."
+   ]
+  }
  ]
 }

@@ -116,5 +116,57 @@
     "Opplæringen i vg3 flystrukturmekanikerfaget - opplæring i bedrift skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 flystrukturmekanikerfaget innebærer å lytte til og gi respons i samtale med involverte parter i arbeid på luftfartøyets struktur og komponenter. Det innebærer å bruke fagterminologi og tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 flystrukturmekanikerfaget innebærer å bruke fagterminologi, symboler og prefikser i planlegging og utarbeidelse av dokumentasjon. Det innebærer også å kommunisere skriftlig tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 flystrukturmekanikerfaget innebærer å søke og vurdere informasjon i fagtekster, teknisk dokumentasjon, gjeldende regelverk og instrukser. Det innebærer også å sammenligne og tolke informasjon, trekke faglige slutninger og å holde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 flystrukturmekanikerfaget innebærer å utføre beregninger i planlegging og dimensjonering og vurdere måleresultater opp mot beregnede verdier. Det innebærer også å tolke informasjon fra tabeller og diagrammer. Videre innebærer det å beregne verdier og bruke symboler og prefikser."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 flystrukturmekanikerfaget innebærer å anvende digitale ressurser og tjenester til å planlegge, utføre og verifisere arbeidsoppdrag. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og vise god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 flystrukturmekanikerfaget – opplæring i bedrift handler det tverrfaglige temaet folkehelse og livsmestring om hva som kjennetegner et godt arbeidsmiljø, og hvordan lærlingene kan mestre kravene som arbeidslivet stiller. Det tverrfaglige temaet handler også om hvordan flytekniske løsninger bidrar til at mennesker transporteres trygt, og hvordan denne teknologien gir effektive redningstjenester."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 flystrukturmekanikerfaget – opplæring i bedrift handler det tverrfaglige temaet demokrati og medborgerskap om aktiv deltakelse i bedriftsdemokratiet og det organiserte arbeidslivet. Det handler også om trepartssamarbeidet der arbeidsgiver, arbeidstaker og lovgivende myndighet jobber sammen for å utvikle et bedre arbeidsliv, der plikter og rettigheter er en gjensidig forpliktelse. Videre handler det om kunnskap om utfordringene med arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 flystrukturmekanikerfaget – opplæring i bedrift handler det tverrfaglige temaet bærekraftig utvikling om bevisstgjøring om klimautslipp og energiforbruk. Det handler også om å diskutere hvordan ulike energiløsninger kan bidra til å redusere luftfartøyenes klimautslipp og miljøbelastning. Videre handler det om valg som har betydning for en bærekraftig utvikling."
+   ]
+  }
  ]
 }

@@ -113,5 +113,33 @@
     "Privatisten i ergonomi og bevegelse 2 får godskrevet programfaget ergonomi og bevegelse 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i ergonomi og bevegelse innebærer å uttrykke egne meninger, lytte og gi respons i spontane og forberedte samtaler. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i ergonomi og bevegelse innebærer å dokumentere skriftlig faglige erfaringer og kunnskaper om helse, bevegelsesglede og arbeidsfysiologi. Det innebærer også å bruke fagspråk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i ergonomi og bevegelse innebærer å bruke digitale ressurser i arbeid med informasjonsinnhenting, planlegging og dokumentasjon av fysisk utfoldelse. Videre innebærer det å vise digital dømmekraft i kommunikasjon, samhandling og kildebruk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I ergonomi og bevegelse handler det tverrfaglige temaet folkehelse og livsmestring om å sette og utfordre fysiske og mentale grenser, og om hvordan mestringsopplevelser bidrar til å utvikle et positivt selvbilde, en trygg identitet og respekt for andre. Det handler også om å erfare bevegelsesglede og tilegne seg kunnskaper om arbeidsfysiologi som grunnlag for varig god helse som musiker."
+   ]
+  }
  ]
 }

@@ -167,5 +167,39 @@
     "Privatisten i scenisk dans 3 får godskrevet programfagene danseteknikker, scenisk dans 1 og scenisk dans 2."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i scenisk dans innebærer å formidle fagkunnskap, egne erfaringer og refleksjoner over egne og andres danseuttrykk. Bruk av muntlige ferdigheter innebærer å lytte, bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Muntlige ferdigheter innebærer også å bruke fagspråk i samtaler med medelever og lærere, og om å gi og ta imot respons."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i scenisk dans innebærer å bruke symboler og tekst til å dokumentere og bearbeide den kroppslige læringen i faget. Å kunne skrive i scenisk dans innebærer også å bruke fagspråk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i scenisk dans innebærer å forstå rytme, puls, takt og dynamikk og å uttrykke disse kroppslig. Videre innebærer det å formidle størrelser og former i rom og bevegelse og i relasjon til meddansere."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i scenisk dans innebærer å bruke relevante digitale ressurser for egen danseriske utvikling og læring, og å bruke ulike digitale ressurser i utforsking og dokumentasjon. Digitale ferdigheter innebærer også å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I scenisk dans handler det tverrfaglige temaet folkehelse og livsmestring om kroppslig utfoldelse og bevegelsesglede. Videre handler det om å utvikle forståelse av hvordan trening og kunnskap om kroppen, og mulighet til å uttrykke seg gjennom bevegelse, kan bidra til økt livskvalitet og god helse."
+   ]
+  }
  ]
 }

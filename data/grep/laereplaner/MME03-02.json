@@ -140,5 +140,45 @@
     "Opplæringen i vg3 motormekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fire til fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 motormekanikerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og arbeidsoppgaver og å bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Videre innebærer det å drøfte faglige løsninger med kolleger, samarbeidspartnere og kunder."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 motormekanikerfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner, problemstillinger og arbeidsoppgaver og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å formulere risikovurderinger, kostnadsoverslag og tilstandsrapporter til forbrukeren og dokumentere arbeidsoppgaver."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 motormekanikerfaget innebærer å finne og vurdere informasjon i tekster og å forstå og følge arbeidsbeskrivelser, prosedyrer, håndbøker, standarder, regelverk og fabrikantenes anvisninger og spesifikasjoner. Det innebærer også å sammenligne, tolke og systematisere informasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 motormekanikerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å beregne krefter, elektriske størrelser og tiltrekkingsmomenter og bruke og bearbeide informasjon for å forstå og vise sammenhenger. Videre innebærer det å beregne materialer og utstyr, kostnader og tidsforbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 motormekanikerfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å presentere eget arbeid. Videre innebærer det å bruke digitalt utstyr til å feilsøke og stille inn maskiner og utstyr og til å programmere kommunikasjonsutstyr. Det innebærer også å bruke digitale ressurser i planlegging, produksjon, dokumentasjon og kommunikasjon og å vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 motormekanikerfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå sammenhengen mellom bruk av ressurser til å utføre reparasjoner og vedlikehold og miljø. Det handler også om å bidra til å ivareta sikkerheten og miljøet i kystområdene. Videre handler det om valg av materialer og metoder ut fra et etisk og miljøbevisst perspektiv. Det handler også om kjemikaliebehandling, renhold, kildesortering og sirkulærøkonomi ved gjenbruk av komponenter."
+   ]
+  }
  ]
 }

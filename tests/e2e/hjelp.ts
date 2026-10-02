@@ -70,6 +70,8 @@ export const ruter = [
   '#/opplaeringslop/HS/HSHEA2',
   '#/opplaeringslop/ST/STUSP1',
   '#/opplaeringslop/PB/PBPBY3?via=HSHEA2',
+  '#/laereplanverket',
+  '#/laereplanverket/overordnet-del/2.5.1',
   '#/finnes-ikke',
 ];
 

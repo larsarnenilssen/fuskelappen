@@ -100,5 +100,45 @@
     "Opplæringa i vg3 modellbyggjarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst åtte vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 modellbyggjarfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber vidare å kunne bruke fagterminologi og uttrykksmåtar og drøfte faglege løysingar med kollegaer og samarbeidspartnarar. Det inneber òg å kunne tilpasse munnleg tekst til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 modellbyggjarfaget inneber å kunne bruke fagspråk for å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å kunne reflektere over faglege emne og problemstillingar og bruke faglege kjelder på ein kritisk måte som lar seg etterprøve. Det inneber vidare å kunne utforme arbeidsbeskrivingar og målerapportar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 modellbyggjarfaget inneber å forstå og kunne bruke arbeidsteikningar, dokumentasjon, instruksjonar, rapportar og tekniske standardar. Det inneber òg å kunne samanlikne, tolke og systematisere informasjon og forstå lovverk og føresegner."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 modellbyggjarfaget inneber å kunne hente ut, beskrive og tolke informasjon knytt til talmateriale. Det inneber òg å kunne nytte og leggje til rette informasjon for å forstå og vise samanhengar. Vidare inneber det å kunne berekne kostnader, materialforbruk og livsløpet til produktet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 modellbyggjarfaget inneber å kunne nytte digitale ressursar til planlegging, dokumentasjon og testing. Det inneber òg å kunne ta imot og tolke 2D- og 3D-geometriar og nytte 3D-verktøy ved modellframstilling. Vidare inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 modellbyggjarfaget handlar det tverrfaglege temaet berekraftig utvikling om miljømedvitne val og handlingar knytte til materialbruk, utslepp og avfall. Det handlar òg om å redusere forbruket av ressursar knytte til produksjon av modellar. Vidare handlar det om å forstå og støtte opp om balansen mellom miljø, samfunn og økonomi ved å produsere og bruke materiale og tenester som gir minst mogleg miljøpåverknad."
+   ]
+  }
  ]
 }

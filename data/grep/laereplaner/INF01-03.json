@@ -162,5 +162,45 @@
     "Informasjonsteknologi 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ha forberedelsesdel. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i informasjonsteknologi innebærer å bruke fagterminologi tilpasset situasjon og mottakere. Muntlige ferdigheter innebærer også å gi uttrykk for, begrunne og argumentere for egne meninger og forslag. Videre innebærer muntlige ferdigheter å diskutere, drøfte strategier og vurdere og reflektere over ulike løsninger i dialog med andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i informasjonsteknologi innebærer å utforme fagtekster tilpasset formål og mottaker, lage dokumentasjon og programkode med presis fagterminologi, notasjon og struktur. Det innebærer også å lage modeller og veksle mellom ulike representasjoner av samme system."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i informasjonsteknologi innebærer å trekke ut, tolke og reflektere over informasjon i fagtekster, dokumentasjon og programkode. Videre innebærer det å sortere, analysere, vurdere og sammenfatte relevant informasjon og tilpasse til eget bruk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i informasjonsteknologi innebærer å gjenkjenne, beskrive og vurdere verdier, størrelser, mønstre, representasjoner og tekniske avgrensninger i informasjonssystemer. Det innebærer også å bruke og bearbeide datasett for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i informasjonsteknologi innebærer å bruke og velge relevante digitale ressurser til å søke etter, utveksle, bearbeide og presentere informasjon. Det innebærer videre å kritisk vurdere kilder og vise digital og etisk dømmekraft. Digitale ferdigheter innebærer også å bruke relevante og effektive verktøy til å utvikle og feilsøke informasjonssystemer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I informasjonsteknologi handler det tverrfaglige temaet demokrati og medborgerskap om hvordan bruk av informasjonsteknologi påvirker og utvikler samfunnet med konsekvenser for egen og andres hverdag. Videre handler det om å forstå hvordan data kan brukes og misbrukes som grunnlag for beslutninger. Det handler også om hvordan universell utforming kan sikre at individet får anledning til å delta aktivt i samfunnet."
+   ]
+  }
  ]
 }

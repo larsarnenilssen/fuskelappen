@@ -69,5 +69,45 @@
     "Lytting: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i faget lytting innebærer å tilegne seg, memorere og formidle musikk etter gehør. Det innebærer også å kunne bruke musikkfaglige begreper til å reflektere over klingende musikk og å kunne sette ord på musikkopplevelser."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i faget lytting innebærer å bruke grunnleggende noter og symboler for å gjengi klingende musikalske elementer. Det innebærer også å kunne bruke musikkfaglige begreper og reflektere over klingende musikk og musikkopplevelse."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i faget lytting innebærer å kunne synge etter grunnleggende noter og symboler. Det innebærer også å utvikle lyttestrategier for å avkode klingende musikk, og det innebærer å tilegne seg forståelse av musikk gjennom fagtekst."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i faget lytting innebærer å oppfatte og forstå matematiske og logiske dimensjoner ved rytmiske og tonale parametre"
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i faget lytting innebærer å kunne bruke digitale ressurser i arbeid med gehørtrening. Videre innebærer det å vise god digital dømmekraft når det gjelder bruk av åndsverk, og å forholde seg etisk til opphavsrett og personvern i musikalsk arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I lytting handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene tilgang til rike og varierte musikkopplevelser og opplevelse av mening og livskvalitet. Gjennom arbeid med faget får elevene innsikt i musikalsk mangfold, og dette legger grunnlag for at de kan anerkjenne både sine egne og hverandres musikalske identiteter."
+   ]
+  }
  ]
 }

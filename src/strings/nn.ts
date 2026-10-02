@@ -2,6 +2,7 @@
 import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
+import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 
 export const nn: Tekster = {
@@ -62,6 +63,7 @@ export const nn: Tekster = {
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbod',
+      laereplanverk: 'Læreplanverket',
       side: 'Side',
     },
   },
@@ -247,6 +249,10 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    laereplanverket: {
+      navn: 'Læreplanverket',
+      beskrivelse: 'Overordna del, grunnleggjande ferdigheiter og tverrfaglege tema.',
+    },
     opplaeringslop: {
       navn: 'Opplæringsløp',
       beskrivelse: 'Utdanningsprogram, tilbod på kvart trinn, og fag og timar i kvart tilbod.',
@@ -267,6 +273,7 @@ export const nn: Tekster = {
   arbeidstid: arbeidstidNn,
   fag: fagNn,
   opplaeringslop: opplaeringslopNn,
+  laereplanverket: laereplanverketNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

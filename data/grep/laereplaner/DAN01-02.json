@@ -117,5 +117,39 @@
     "Privatisten i grunntrening i dans 2 får godskrevet programfaget grunntrening i dans 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i grunntrening i dans innebærer å uttrykke seg om og reflektere over trening og helse, og å diskutere hensiktsmessig trening og livsstil. Muntlige ferdigheter i faget handler også om å bruke fagspråk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i grunntrening i dans innebærer å strukturere, planlegge og dokumentere trening på en hensiktsmessig måte. Det innebærer også å bearbeide og reflektere over kroppslig erfaring og læring ved å bruke relevant fagspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i grunntrening i dans innebærer å lese sammensatte tekster om kropp, helse og trening og å vurdere disse kritisk. Å lese innebærer også å tilegne seg relevant fagspråk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i grunntrening i dans innebærer å bruke digitale ressurser i arbeidet med trening knyttet til danseutøvelse. Digitale ferdigheter handler også om å vise digital dømmekraft i kommunikasjon, samhandling og kildebruk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I grunntrening i dans handler det tverrfaglige temaet folkehelse og livsmestring om å ta vare på egen kropp og helse og å oppleve bevegelsesglede og mestringsfølelse. Det handler videre om innsikt i sammenhengen mellom trening, god helse og livskvalitet for dansere."
+   ]
+  }
  ]
 }

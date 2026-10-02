@@ -90,5 +90,51 @@
     "Antikkens kultur: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i antikkens kultur innebærer å beskrive, samtale om og presentere temaer på en nyansert måte og ved bruk av fagbegreper. Bruk av muntlige ferdigheter innebærer også å lytte, uttrykke meninger, drøfte problemstillinger og strukturere og tilpasse egen muntlig tekst til mottakere, innhold og formål. Muntlige ferdigheter i faget innebærer å bruke antikkens retoriske verktøy i praksis."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i antikkens kultur innebærer å ta i bruk ulike strategier i forkant av og under skriving av tekster om antikken og antikkens aktualitet. Det innebærer å uttrykke meninger, drøfte problemstillinger samt dele kunnskap og erfaringer gjennom å tilpasse egne tekster til mottaker, innhold og formål. Det innebærer å bruke analytiske ferdigheter, relevante kilder og fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i antikkens kultur innebærer å trekke ut informasjon, reflektere over, vurdere og tolke formen og innholdet i antikkens tekster i oversettelse. Det innebærer også å ta i bruk ulike strategier for å forstå tekster av stadig større vanskelighetsgrad. Det innebærer videre kritisk bruk av ulike typer kilder, som historiske tekster og å vurdere hvordan de er overlevert. Leseferdighet i faget innebærer grunnleggende kjennskap til romertall og til det greske alfabetet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i antikkens kultur innebærer å gjenkjenne og bruke romertall i ulike sammenhenger, deriblant for å angi størrelser, mengder og tid. Det innebærer å regne med romertall og omgjøre dem til arabiske tall."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i antikkens kultur innebærer å tilegne seg, behandle, tolke og vurdere informasjon fra digitale kilder, være kildekritisk og bruke kildehenvisning på en hensiktsmessig måte i arbeid med oppgaver, presentasjoner og tekstskriving. Digitale ferdigheter innebærer også å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I antikkens kultur handler det tverrfaglige temaet folkehelse og livsmestring om hvordan kunnskap om antikkens livsfilosofi kan gi elevene en bedre forståelse av mellommenneskelige forhold. Faget kan bidra til folkehelse og livsmestring ved å sette søkelyset på etiske problemstillinger, som hva det vil si å være menneske og leve et godt liv, og bidra til at elevene reflekterer over eksistensielle spørsmål og ser seg selv i en større historisk sammenheng. Faget kan også bidra til folkehelse og livsmestring gjennom kunnskap om antikkens filosofer og deres idealer for det gode samfunn og enkeltmenneskets verdier. Disse er aktuelle også i dag."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I antikkens kultur handler det tverrfaglige temaet demokrati og medborgerskap om utviklingen av demokratiet og andre styreformer i antikken. Faget skal gi elevene en historisk forståelse av demokratiets forutsetninger og verdier og av sammenhengen mellom individets rettigheter og plikter. Faget gir også innsikt i retorikkens rolle i demokratiet. Synet på medborgerskap og på ikke-europeere i de antikke samfunnene kan videre gi et perspektiv på dagens samfunn"
+   ]
+  }
  ]
 }

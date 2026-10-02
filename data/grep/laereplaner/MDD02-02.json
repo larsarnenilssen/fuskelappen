@@ -65,5 +65,39 @@
     "Bevegelse: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i bevegelse innebærer å lytte og kommunisere og å uttrykke seg muntlig om sammenhenger mellom egen kroppslig læring og muligheter i sceniske uttrykk. Det innebærer også å bruke fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i bevegelse innebærer å bruke fagkunnskap og fagbegreper i skriftlig arbeid til å planlegge og reflektere over egen kroppslig læring og utvikling."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i bevegelse innebærer å lese skriftlige og sammensatte tekster om trening, helse og ekspressivitet i scenekunst. Det innebærer også å tilegne seg fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i bevegelse innebærer å bruke digitale ressurser bevisst i informasjonsinnhenting, planlegging og dokumentasjon av trening og fysisk utforsking. Det innebærer også å velge hensiktsmessige digitale ressurser og verktøy i eget arbeid, og å forholde seg kritisk og etisk til bruk av sosiale medier."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I bevegelse handler det tverrfaglige temaet folkehelse og livsmestring om at bevegelse bidrar til å fremme god fysisk og mental helse, og at elevene skal få et grunnlag for å ta ansvarlige livsvalg knyttet til en fysisk aktiv livsstil. Bevegelsesaktiviteter kan gi opplevelse av mestring og mening, og gjennom positive opplevelser rustes elevene til å håndtere medgang og motgang."
+   ]
+  }
  ]
 }

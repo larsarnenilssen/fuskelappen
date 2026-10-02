@@ -396,5 +396,45 @@
     "Opplæringa i vg3 fjell- og bergverksfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 fjell- og bergverksfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kunne bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte moglege val og løysingar og tilpasse kommunikasjonen til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 fjell- og bergverksfaget inneber å kunne bruke fagterminologi til å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å kunne utforske og reflektere over faglege emne og problemstillingar og å kunne rapportere om og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 fjell- og bergverksfaget inneber å kunne finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, standardar og toleransestandardar, bruksrettleiingar og regelverk. Det inneber òg å kunne samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 fjell- og bergverksfaget inneber å kunne hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å kunne berekne lengd, areal, volum og vekt knytt til arbeidsoperasjonen. Det inneber vidare å kunne berekne radiusar, vinklar og fall og gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 fjell- og bergverksfaget inneber å kunne bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å kunne søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 fjell- og bergverksfaget handlar det tverrfaglege temaet berekraftig utvikling om å velje materiale og verktøy som medverkar til energieffektiv og varig infrastruktur. Vidare handlar det om å bruke maskiner og utstyr med tanke på det indre og det ytre miljøet. Det handlar òg om å minimere miljøbelastninga og sikre det estetiske uttrykket i landskapet ved sprenging og sikring. Berekraftig utvikling handlar dessutan om å kjeldesortere, handtere avfall og resirkulere materiale på ein måte som minimerer miljøbelastninga."
+   ]
+  }
  ]
 }

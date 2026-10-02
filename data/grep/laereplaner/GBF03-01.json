@@ -112,5 +112,45 @@
     "Opplæringen i glassblåserfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i glassblåserfaget innebærer å beskrive, dele og utvikle kunnskap med faglig innhold med kolleger, kunder, formgivere og andre samarbeidspartnere og å uttrykke egne meninger, lytte og gi respons. Muntlige ferdigheter innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og å bygge opp argumentasjon tilpasset mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i glassblåserfaget innebærer å dokumentere arbeid og kommunisere med kunder, kolleger, formgivere og andre samarbeidspartnere. Det innebærer også å skrive tekster for å synliggjøre ideer, valg og meninger i det praktiske arbeidet. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og revidere egne tekster i tillegg til å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i glassblåserfaget innebærer å bruke faglitteratur, arbeidsbeskrivelser og bestillinger for å finne og vurdere informasjon i tekster om faglige emner og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer videre å sammenligne, tolke og systematisere informasjon i ulike tekster, tegninger, produktdatablad, lover og forskrifter og veiledninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i glassblåserfaget innebærer å beregne pris, vekt, volum og mengde og proporsjoner og å konstruere form og funksjon. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i glassblåserfaget handler å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I glassblåserfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over valg av produksjonsmetoder, verktøy og teknikker i det praktiske arbeidet. Det innebærer å reflektere kritisk over hvordan utøvelsen i faget kan tilpasses gjeldende regelverk for miljøfarlige materialer, samtidig som man ivaretar det tradisjonelle håndverket. Det handler om valg og kvalitet i glassblåserarbeidet for å bidra til holdbarhet og gjenbruk av glassprodukter. Videre handler det om faget som en del av arbeidet med å sikre verdens natur- og kulturarv, og å fremme regionale og lokale kulturer og produkter."
+   ]
+  }
  ]
 }

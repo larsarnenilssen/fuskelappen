@@ -124,5 +124,51 @@
     "Opplæringa i vg3 service- og administrasjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 service- og administrasjonsfaget inneber å kommunisere med kollegaer og brukarar frå ulike kulturar. Det inneber å tilpasse sitt eige språk til mottakaren, innhaldet og formålet og å lytte til og vise respekt for andre. Vidare inneber det å bruke relevante faguttrykk og sikre at informasjonen ikkje berre blir gitt, men òg forstått av mottakaren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 service- og administrasjonsfaget inneber å dokumentere, omarbeide og utveksle opplysingar. Vidare inneber det å kommunisere skriftleg og profesjonelt med ulike mottakarar og å utarbeide brev, planar, rapportar og dokumentasjon etter gjeldande krav."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 service- og administrasjonsfaget inneber å anvende leseteknikk og å finne, forstå, tolke og vurdere informasjon. Det inneber òg å forstå fagspråk, å referere til og bruke faglitteratur i yrkesutøvinga og å vere kjeldekritisk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 service- og administrasjonsfaget inneber å hente inn, omarbeide, analysere og vurdere talmateriale og å presentere desse i relevante oppsett. Vidare inneber det å bruke budsjett og lese rekneskapar og å utføre økonomiske berekningar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 service- og administrasjonsfaget inneber å bruke digitale ressursar i tråd med den teknologiske utviklinga. Det inneber òg å hente inn, registrere, lagre og anvende informasjon. Digitale ferdigheiter inneber vidare å handtere personopplysningar og vurdere etiske spørsmål knytte til personvern og behovet for openheit. Dessutan inneber det å vise digital dømmekraft i arbeidet og vurdere kjelder kritisk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 service- og administrasjonsfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å byggje profesjonelle relasjonar i kommunikasjon og samhandling med ulike menneske. I dette ligg det å kunne handsame reaksjonar, setje grenser og respektere andre sine grenser i ulike relasjonar og arbeidssituasjonar. Vidare handlar det om å ha kunnskap om og vise respekt for ulike kulturar og individ. Folkehelse og livsmeistring handlar òg om å sikre god fysisk og psykisk helse gjennom kunnskap om helse, miljø og sikkerheit og om pliktene og rettane arbeidstakaren og arbeidsgivaren har i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 service- og administrasjonsfaget handlar det tverrfaglege temaet berekraftig utvikling om å reflektere over kva ein berekraftig ressursbruk inneber i stillingar innanfor service og administrasjon. Det handlar om å oppfylle miljøkrav, vurdere kostnader og bruke ressursar effektivt og med vekt på berekraft for å unngå tap av verdiar og belastningar på klimaet. Vidare handlar det tverrfaglege temaet om å reflektere over etiske dilemma knytte til personvern og behov for openheit."
+   ]
+  }
  ]
 }

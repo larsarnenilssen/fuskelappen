@@ -100,5 +100,45 @@
     "Opplæringen i vg3 industrimontørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 industrimontørfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å forstå og bruke fagterminologi og faglige uttrykksmåter og å drøfte og reflektere over fagrelaterte emner og problemstillinger. Det innebærer også å kommunisere og tilpasse tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industrimontørfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å fylle ut rapporter, avviksskjemaer, sikkerhetspapirer og annen dokumentasjon."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industrimontørfaget innebærer å finne og vurdere innhold i tekster spesifikasjoner, arbeidsbeskrivelser, tegninger, flytskjemaer, rapporter og dokumentasjon. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå og følge lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 industrimontørfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, vurdere måleresultater og beregne materialer, dimensjoner, maskininnstillinger og tidsforbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 industrimontørfaget innebærer å bruke digitale ressurser for planlegging, dokumentasjon og testing og i bruk av produksjonsstyringssystemer. Det innebærer også å bruke digitale ressurser for måleutstyr og kalibrering av utstyr knyttet til produksjon. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industrimontørfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere over arbeidet og å handle etisk og ta miljøbevisste valg i utførelsen. Det handler også om kritisk tenkning, gjenbruk, kontinuerlig forbedringsarbeid og respekt når det gjelder bruk av ressurser. Videre handler det om bruk av smøremidler, rengjøringsprodukter og materialer med lavt miljøavtrykk innenfor montasje."
+   ]
+  }
  ]
 }

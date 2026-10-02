@@ -105,5 +105,57 @@
     "Vg3 naturforvaltning: Privatisten skal opp til ein skriftleg og ein munnleg eksamen. Eksamenane blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 naturforvaltning inneber å forklare og grunngi val, argumentere for eit standpunkt og delta i diskusjonar. Det inneber òg å lytte aktivt til andre og å presentere fagkunnskap munnleg på ein presis måte tilpassa mottakar og formål. Vidare inneber det å bruke fagspråk i drøfting av og refleksjon over faglege emne."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 naturforvaltning inneber å dokumentere eit utført arbeid og strukturere og skrive rapportar. Det inneber òg å bruke fagspråk i skriftlege saksframstillingar og å tilpasse tekstar til mottakar og formål. Vidare inneber det å utforske og reflektere over faglege emne og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 naturforvaltning inneber å hente inn informasjon frå saksdokument, fagstoff, regelverk og kart. Vidare inneber det å følgje og vurdere debattar om fagfeltet i ulike medium. Det inneber òg å kritisk vurdere kjelder og informasjon og å vurdere ulike perspektiv i og formål med tekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 naturforvaltning inneber å finne, observere, måle og vurdere biologiske, fysiske og kjemiske parametrar. Å kunne rekne inneber òg å tolke tabellar, diagram og statistikk og å behandle og presentere talmateriale i tabellar og grafiske framstillingar på ein formålstenleg måte."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 naturforvaltning inneber å samle inn og registrere data, analysere og handtere resultata og presentere dei digitalt. Vidare inneber det å bruke digitale ressursar, databasar og informasjonssystem, medrekna geografiske informasjonssystem, til å samle informasjon, og å vere kritisk til kjeldene informasjonen kjem frå. Det inneber òg å bruke digitale verktøy til kommunikasjon og informasjonshandtering i forvaltningsprosessar. Det å utvikle etisk medvit og vise digital dømmekraft inngår òg i digitale ferdigheiter."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 naturforvaltning handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis aktivitetar og opplevingar i naturen kan vere ein ressurs for fysisk og psykisk helse. Det handlar om bruk av naturen til jakt, fiske og sanking og om verdien slik bruk av naturen har for folkehelse og livskvalitet. Vidare handlar det om korleis vi kan ta vare på og utvikle areal- og naturressursar som ei kjelde til folkehelse og livsmeistring på kort og lang sikt, og samstundes ta omsyn til den eigenverdien naturen har."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 naturforvaltning handlar det tverrfaglege temaet demokrati og medborgarskap om korleis vi forvaltar naturen gjennom demokratiske prosessar. Det handlar om lover, avtalar og tradisjonar som gir individ og grupper rettar og plikter knytte til bruken av dei felles naturressursane våre både lokalt og globalt. Det tverrfaglege temaet handlar vidare om deltaking i politiske forum og om å fremje eigne synspunkt, respektere usemje og handtere meiningsbrytingar."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 naturforvaltning handlar det tverrfaglege temaet berekraftig utvikling om å verne om livet på jorda og å dekkje behova til menneska som lever i dag, utan at det går ut over moglegheitene dei kommande generasjonane har til å dekkje sine behov. Det handlar om økologisk og økonomisk berekraft i naturbasert næringsdrift, om korleis klimaet og miljøet blir påverka av utviklingstrekk i samfunnet, og om korleis bruk av teknologi gir både moglegheiter og utfordringar i eit naturforvaltningsperspektiv. Vidare handlar det om å gi elevane grunnlag for å gjere etiske vurderingar og handle miljøbevisst."
+   ]
+  }
  ]
 }

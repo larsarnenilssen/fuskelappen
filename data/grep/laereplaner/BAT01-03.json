@@ -178,5 +178,51 @@
     "Arbeidsmiljø og dokumentasjon og praktisk yrkesutøvelse: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få førberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 bygg- og anleggsteknikk innebærer å kunne bruke faguttrykk og kommunisere forståelig med kollegaer og samarbeidspartnere. Det innebærer å tilpasse eget språk til mottaker, innhold og formål og å lytte til og vise respekt for den som snakker."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 bygg- og anleggsteknikk innebærer å kunne planlegge og dokumentere arbeidsprosesser. Det innebærer å kunne ytre seg forståelig om byggfaglige temaer. Videre handler det om å kunne bruke et presist fagspråk og tilpasse tekster til ulike formål, mottakere og medier. Det innebærer også å kunne bruke og kombinere ulike uttrykksformer som tekst, bilde og symboler i beskrivelser og arbeidstegninger."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 bygg- og anleggsteknikk innebærer å kunne tilegne seg ny kunnskap og innsikt. Videre handler det om å forstå faglitteratur, forskrifter, spesifikasjoner, produktbeskrivelser og arbeidsbeskrivelser knyttet til bygg- og anleggsteknikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 bygg- og anleggsteknikk innebærer å kunne beregne tid, pris, vekt, volum, mengde, størrelser og masser. Videre vil det si å kunne bruke målestokk, måle og beregne vinkler knyttet til konstruksjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 bygg- og anleggsteknikk innebærer å kunne bruke digitale ressurser hensiktsmessig og forsvarlig. Videre vil det si å kunne bruke digitale ressurser og kommunisere og samhandle med andre. Det innebærer også å vurdere informasjon fra digitale kilder kritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 bygg- og anleggsteknikk handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle kunnskap og forståelse av kulturarven og ulike byggetradisjoner. Å kunne samarbeide på tvers av fag og yrkesgrupper og å forstå de demokratiske prosessene i arbeidslivet inngår også i temaet demokrati og medborgerskap. Videre innebærer det å utvikle en identitet og et bevisst forhold til hvilke forventninger samfunnet har til en yrkesutøver."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 bygg- og anleggsteknikk handler det tverrfaglige temaet bærekraftig utvikling om å velge bærekraftige løsninger som gir lite miljøavtrykk. Det innebærer videre å velge materialer ut fra miljøhensyn og ta i bruk materialer som gir energieffektive konstruksjoner. Videre handler bærekraftig utvikling om klima- og miljøavtrykk ved bruk av maskiner og utstyr. Vedlikehold, ombruk og resirkulering av materialer, maskiner og redskaper inngår også i temaet bærekraftig utvikling."
+   ]
+  }
  ]
 }

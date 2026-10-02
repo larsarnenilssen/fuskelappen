@@ -112,5 +112,45 @@
     "Opplæringen i vg3 boreoperatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 boreoperatørfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi og forstå uttrykksmåter og å drøfte og reflektere over risikovurderinger og problemstillinger. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 boreoperatørfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å utarbeide rapporter og planlegge arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 boreoperatørfaget innebærer å finne og vurdere informasjon i tekster, prosedyrer, arbeidsbeskrivelser og regelverk. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 boreoperatørfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon til å forstå og vise sammenhenger og utføre beregninger i forbindelse med bore- og vedlikeholdsaktiviteter. Det innebærer også å måle og registrere i henhold til tegninger, tabeller og standarder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 boreoperatørfaget innebærer å bruke digitale ressurser for planlegging, styring, dokumentasjon og rapportering. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 boreoperatørfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om å kritisk vurdere konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel, og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

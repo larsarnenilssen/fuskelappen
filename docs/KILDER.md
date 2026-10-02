@@ -52,6 +52,7 @@ Kildene appen bygger på. Kildejobben (`.github/workflows/kilder.yml`) sjekker d
 - **udir-regbok-vmm:** Hvordan vitnemålsmerknader registreres: kodene gis av Udir gjennom Grep, standardteksten ligger i SAS og VIGO, og VMM17, VMM18, VMM19, VMM29, VMM31, VMM32 og VMM33 krever utfyllende tekst. B18 VMM-kode står på https://regbok.udir.no/felt/?Id=1015038. Avgjørelse 028.
 - **vigo-kodeverk:** Hentes hver uke med npm run hent:vigo til data/vigo/ (avgjørelse 026). Kodebasen er felles kodeverk for videregående opplæring i VIGO og er åpen for oppslag. Eier 01.10.2026: informasjonen er offentlig og kan brukes. Stemmer testene med de nye dataene, tas de inn automatisk. Oversikt over tabellene og mulig bruk i docs/VIGO-KODEVERK.md.
 - **udir-lk20:** Fagsidene lenker til læreplanene her. Teksten i appen hentes fra Grep (udir-grep), og endringer i læreplanene kommer i den ukentlige kontrollsaken derfra. Siden sjekkes derfor ikke for seg.
+- **udir-overordnet-del:** Teksten hentes hver uke på bokmål og nynorsk med npm run hent:overordnet til data/udir/overordnet-del.json og vises uendret i Læreplanverket (avgjørelse 037). Endringer står til orientering i kontrollsaken. Lovdata har forskriften bare som datasett, som ikke kan hentes fra utviklingsmiljøet, og uten nynorsk.
 - **vlfk-forskrift-inntak:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
 - **vlfk-skulereglar:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
 - **vlfk-sider:** Hvilke sider som sjekkes, bestemmes når kilden aktiveres.

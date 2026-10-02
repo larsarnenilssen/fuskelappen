@@ -90,5 +90,51 @@
     "Grafisk design: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i grafisk design inneber å gjere greie for idear, prosessar og designval i eigne visuelle uttrykk med bruk av fagterminologi. Vidare inneber det å samtale med brukarane for å vurdere behova deira."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i grafisk design inneber å kommunisere gjennom teikn, symbol og bilete i visuelle uttrykk. Dette inneber òg å formidle bodskapar tilpassa ulike målgrupper, sjangrar og mediekanalar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i grafisk design inneber å forstå og bruke og reflektere over teikn, symbol, bilete og kombinasjonar av desse i ulike visuelle medium. Dette inneber òg å utøve kjeldekritikk av grafiske designproduksjonar som ein sjølv og andre står bak."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i grafisk design inneber å ha kunnskap om flater, målestokk, oppløysing og tabellar og bruke dette i eigne grafiske designproduksjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i grafisk design inneber å produsere, tilpasse og publisere ved hjelp av relevante digitale ressursar. Vidare inneber det å finne informasjon og inspirasjon og å anvende eksisterande designelement føremålstenleg. Det inneber òg å følgje gjeldande reglar for opphavsrett, personvern og publisering."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I grafisk design handlar det tverrfaglege temaet demokrati og medborgarskap om korleis elevane kan medverke til auka samfunnsdeltaking gjennom grafiske designløysingar. Vidare handlar det om å utvikle design som tek omsyn til rettane og behova til både fleirtalet og mindre grupper i samfunnet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I grafisk design handlar det tverrfaglege temaet berekraftig utvikling om at elevane får kompetanse til å gjere etiske val, og om at dei vel og bruker materiale og teknologi som i minst mogleg grad skader miljøet. Faget skal utvikle medvit om korleis grafiske designløysingar og visuelle medieuttrykk påverkar forbruksmønster."
+   ]
+  }
  ]
 }

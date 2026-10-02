@@ -70,5 +70,45 @@
     "Drama og samfunn: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i drama og samfunn innebærer å bruke verbalt og nonverbalt språk i ledelses- og formidlingssituasjoner. Det innebærer muntlig presentasjon og bruk av fagspråk i refleksjon over eget og andres arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i drama og samfunn innebærer å dokumentere og drøfte problemstillinger i eget arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i drama og samfunn innebærer å forstå ulike typer tekster, både verbale og nonverbale, og å bruke kilder på en kritisk måte i arbeid med fagstoff."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i drama og samfunn innebærer å bruke ulike audiovisuelle ressurser og å vise digital dømmekraft. Det innebærer også å følge regler for opphavsrett og personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I faget drama og samfunn handler det tverrfaglige temaet folkehelse og livsmestring om å legge til rette for skaperglede, engasjement og utforskertrang i møte med ulike samfunnsgrupper. Det innebærer å arbeide med verdivalg, betydningen av mening i livet og mellommenneskelige relasjoner på en åpen, kreativ og konstruktiv måte."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I faget drama og samfunn handler det tverrfaglige temaet demokrati og medborgerskap om kulturelt mangfold i skapende arbeid og mulighetene som ligger i å utforske ulike perspektiver gjennom drama og teater. Det innebærer å forstå dilemmaer og anerkjenne både flertallets rett og mindretallets rettigheter. Videre handler det om å tenke kritisk og å øve seg i å håndtere meningsbrytninger og respektere uenighet i ulike ledelses- og formidlingssituasjoner."
+   ]
+  }
  ]
 }

@@ -192,5 +192,51 @@
     "Teknologi og forskningslære X: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeknologi og forskningslære 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeknologi og forskningslære 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i teknologi og forskningslære innebærer å delta i fagsamtaler, å beskrive, dele og utvikle kunnskap og å bruke presise formuleringer, fagterminologi og matematiske uttrykksformer. Videre innebærer det å samtale om utvikling av hypoteser, framgangsmåter og resultater fra forskningsarbeid og å diskutere andres arbeider ved å gi konstruktive tilbakemeldinger. Muntlige ferdigheter innebærer også å ha en dialog rundt faglig informasjon fra tabeller, grafer og figurer."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i teknologi og forskningslære innebærer å utvikle spørsmål og hypoteser, ta notater og utforme fagtekster tilpasset mottaker og formål. Det innebærer også å kunne uttrykke seg med presise formuleringer og fagterminologi. Videre innebærer det å benytte tabeller, grafer, figurer og matematisk symbolspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teknologi og forskningslære innebærer å trekke ut, tolke og reflektere over informasjon i tekster om teknologi og naturvitenskap. Det innebærer også å kunne følge bruksanvisninger og oppskrifter og å bruke programmer. Videre innebærer det å tolke og bruke informasjon fra tabeller, diagrammer og gjenkjenne symboler. Det innebærer også å kritisk vurdere fagtekster, vitenskapelige artikler og rapporter og populærvitenskapelige tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i teknologi og forskningslære innebærer å innhente tallmateriale for å registrere og behandle resultater fra observasjoner og målinger, og å framstille disse i form av tabeller og diagrammer. Videre innebærer det å omregne enheter, bruke formler, vurdere grafiske data, foreta usikkerhetsberegninger og bruke matematiske modeller. Å kunne regne innebærer også å forstå bearbeidet tallmateriale, og å bruke det i en faglig argumentasjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i teknologi og forskningslære innebærer å bruke digitale ressurser og programmering til å utføre og kontrollere eksperimenter og simuleringer, og til å samle inn data. Det innebærer også å bearbeide data, og å kommunisere og samhandle med andre. Videre innebærer det kildekritikk, digital dømmekraft og etisk bevissthet."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I teknologi og forskningslære handler det tverrfaglige temaet demokrati og medborgerskap om å bruke kunnskap om hvordan forskning skal gjennomføres, til å kritisk vurdere påstander og resonnementer. Det handler også om å kunne skille mellom kunnskap basert på vitenskapelige metoder og alternative forklaringer. Videre gir faget grunnlag for å kunne reflektere over hvordan forskning og teknologiutvikling bidrar til endringer i samfunnet, og etiske problemstillinger knyttet til dette."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I teknologi og forskningslære handler det tverrfaglige temaet bærekraftig utvikling om hvordan teknologien har bidratt til både fordeler og ulemper for en bærekraftig utvikling, og hvordan bærekraftsmålene påvirker teknologiutviklingen. Det handler videre om å utforske og kritisk reflektere over tiltak som iverksettes for å nå bærekraftsmål."
+   ]
+  }
  ]
 }

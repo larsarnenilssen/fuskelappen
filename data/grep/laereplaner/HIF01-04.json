@@ -174,5 +174,51 @@
     "Historie og filosofi 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i historie og filosofi innebærer å utvikle og formulere egne synspunkter presist og nyansert. Muntlige ferdigheter innebærer å forme fortellinger, delta i filosofisk samtale og bruke fagspråk i drøfting og refleksjon over faglige emner. Sentralt i den filosofiske samtalen er å argumentere logisk og relevant, lytte aktivt og gjøre rede for begreper og begrepsnyanser. Å begrunne og vurdere egne og andres synspunkter i møte med ulike oppfatninger og perspektiver er også en del av de muntlige ferdighetene. Muntlige ferdigheter innebærer også å tilpasse muntlig tekst til mottaker og formål, og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i historie og filosofi innebærer å bruke varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det innebærer å bruke fagspråk i egne arbeider, presentere faglige emner klart og konsist med et variert ordforråd og uttrykke, begrunne og argumentere for standpunkt. Å kunne skrive innebærer også å utforme faglige problemstillinger og drøfte dem ved å bruke ulike typer historisk og filosofisk materiale på en kritisk måte som lar seg etterprøve. Å drøfte, vurdere og revidere egne tekster inngår også i ferdigheten."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i historie og filosofi innebærer å bruke forskjellige lesestrategier til å bli kjent med sentrale historiske og filosofiske spørsmål og å vurdere eksplisitt og implisitt informasjon i tekster. Det vil si å forklare meningsinnholdet i tekster og historisk materiale, vurdere hva som er rimelige og urimelige tolkninger av en tekst og å vurdere ulike perspektiv og formål med tekster. Å kunne lese innebærer å sammenligne historiske framstillinger av et emne og å lese historiske framstillinger spørrende og kritisk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i historie og filosofi innebærer å søke etter og innhente informasjon, å vurdere den kritisk og å bearbeide og bruke informasjonen selvstendig. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft, å lage egne faglige framstillinger og å kommunisere og samarbeide med andre ved hjelp av digitale ressurser. Det innebærer videre å vise til kilder på en måte som lar seg etterprøve."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I historie og filosofi handler det tverrfaglige temaet folkehelse og livsmestring om å øve opp selvstendig tenkning og forståelse. Gjennom filosofisk dialog og kritisk bearbeiding av ulike tekster og kilder, dannes et grunnlag for å ta ansvarlige livsvalg og mestre livet. I arbeid med faget utforskes grunnleggende verdier som autonomi, ansvar og det gode liv. Det tverrfaglige temaet handler også om å utvikle bevissthet om hvordan vi mennesker både er historieskapt og historieskapende."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I historie og filosofi handler det tverrfaglige temaet demokrati og medborgerskap om å utforske de historiske prosessene og de filosofiske ideene bak demokratiet. Det handler også om å identifisere og vurdere hva som har begrenset og begrenser menneskers livsutfoldelse og deltakelse i samfunnet. Utforskende og åpen dialog skal stimulere til engasjement og legge grunnlag for å bli aktive og kritiske borgere."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I historie og filosofi handler det tverrfaglige temaet bærekraftig utvikling om å erkjenne hvor avhengige vi er av hverandre og naturen, og hvordan synet på natur og samfunn har endret seg. Det dreier seg om å utvikle en etisk bevissthet om rettferdig fordeling og en forståelse av hvilke historiske prosesser og tenkemåter som ligger til grunn for dagens skjevfordeling og overforbruk. Gjennom kunnskap om hindringer og muligheter for å skape endring skal faget bidra til engasjement og legge grunnlag for å handle rettferdig og ta ansvarlige og miljøbevisste valg."
+   ]
+  }
  ]
 }

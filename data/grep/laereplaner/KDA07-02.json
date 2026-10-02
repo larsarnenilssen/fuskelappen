@@ -98,5 +98,57 @@
     "Sámi visuála kultuvra: Oahppit galget čađahit njálmmálaš-praktihkalaš eksámena. Eksámen ráhkaduvvo ja sensurerejuvvo báikkálaččat. Fylkkasuohkan mearrida galget go privatisttat oažžut ráhkkananoasi eksámenis mii báikkálaččat lea mearriduvvon."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Njálmmálaš gálggat sámi visuála kultuvrras mearkkaša guldalit ja addit responsa spontána ságastallamiidda ja ságastallamiidda maidda lea ráhkkanan. Dat mearkkaša geavahit fágaterminologiija go bargá dujiin ja sámi visuála kulturalbmanahttimiin. Go geavahit fágaterminologiija giela ságastallamiin, ovdanbuktimiin ja ságaskuššamiin, ovdánahttet oahppit njálmmálaš gálggaid válddahit, árvvoštallat ja reflekteret iežas ja earáid bargguid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Máhttit čállit sámi visuála kultuvrras mearkkaša hábmet teavsttaid mat leat heivehuvvon vuostáiváldái ja ulbmilii. Dat mearkkaša gulahallat teavstta ja symbolaid bokte visuála albmanahttimiin. Dasa gullá maid ahte máhttit dokumenteret bargoproseassaid ja reflekteret iežaset bargguid ektui ja geavahit gálduid kritihkalaččat luohtehahtti vugiin."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Máhttit lohkat sámi visuála kultuvrras mearkkaša gávdnat ja árvvoštallat eksplisihtta ja implisihtta dieđuid duojis ja eará gálduin. Dat mearkkaša maid buohtastahttit, dulkot ja systematiseret dieđuid iešguđet teavsttain go fágalaš mearrádusaid dahká."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Máhttit rehkenastit sámi visuála kultuvrras mearkkaša ahte máhttet atnit mihttoláva ja sámi árbevirolaš mihtidanvugiid bargguid plánedettiin ja čađahettiin."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitála gálggat sámi visuála kultuvrras mearkkaša geavahit digitála resurssaid go duddjo, visualisere, dokumentere ja ovdanbuktá barggu. Digitála galggat lea maid árvvoštallat ja reflekteret iešguđet gálduid, čájehit digitála árvvoštallannávcca, čuovvot dahkkivuoigatvuođa njuolggadusaid ja čujuhit gálduide luohtehahtti vugiin."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "Sámi visuála kultuvrafágas fágaidrasttildeaddji fáttás álbmotdearvvašvuohta ja eallimis birgen lea sáhka das ahte identitehta ja ipmárdus sámi kultuvras nannejuvvo duddjoma ja visuála hutkkálaš albmanahttima bokte. Hutkkálaš bargguin ja visuála albmanahttimiin ovdánahttet oahppit iežaset málliid movt ovddidit iežaset ideaid, oaiviliid ja dovdduid."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "Sámi visuála kultuvrafágas fágaidrasttildeaddji fáttás demokratiija ja mielborgárvuohta lea sáhka ipmirdit movt visuála albmanahttimiiguin sáhttá čalmmustahttet áigeguovdilis áššiid servodagas. Fáddái gullá maid gealbu searvat almmolaš digaštallamiidda duoji ja sámi visuála kultuvrra birra."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "Sámi visuála kultuvrafágas fágaidrasttildeaddji fáttás guoddevaš ovdáneapmi lea sáhka das ahte oahppit ožžot ipmárdusa movt sii sáhttet váldit vára resurssain, luonddus ja birrasis go reflekterejit ávnnasgeavaheami ja buvttadanvugiid birra. Dat mearkkaša maiddái reflekteret ja váldit ehtalaš ja guoddevaš válljejumiid iežas hutkkálaš bargguin. Fáddái gullá maid ipmárdus das ahte duodji ja dáidda lea oassi sámi kultuvrralaš guoddevašvuođas."
+   ]
+  }
  ]
 }

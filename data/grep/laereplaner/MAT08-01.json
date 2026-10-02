@@ -536,5 +536,51 @@
     "Matematikk 1P-Y: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i matematikk P inneber å skape meining gjennom å samtale i og om matematikk. Det vil seie å kommunisere idear og drøfte matematiske problem, strategiar og løysingar med andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i matematikk P inneber å beskrive og forklare samanhengar, oppdagingar og idear ved hjelp av formålstenlege representasjonar. Å kunne skrive i matematikk P er ein reiskap for å utvikle eigne tankar og eiga læring. Det inneber å kunne løyse problem og presentere løysingar som er tilpassa mottakaren og situasjonen."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i matematikk P inneber å skape meining både i tekstar frå samfunnet og arbeidslivet og i matematiske tekstar. Å kunne lese i matematikk P vil seie å sortere informasjon, analysere og vurdere form og innhald og samanfatte informasjon i samansette tekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i matematikk P vil seie å bruke matematiske representasjonar, omgrep og framgangsmåtar til å gjere utrekningar og vurdere om løysingar er gyldige. Det inneber å kjenne att problem som kan løysast med matematikk, og formulere spørsmål om desse. Matematikk har eit særleg ansvar for opplæringa i å kunne rekne."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i matematikk P inneber å kunne bruke grafteiknar, rekneark, CAS, dynamisk geometriprogram og programmering til å utforske og løyse matematiske problem. Vidare inneber det å finne, analysere, behandle og presentere informasjon ved hjelp av digitale verktøy."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I matematikk P handlar det tverrfaglege temaet folkehelse og livsmeistring om å gi elevane kompetanse i personleg økonomi. Gjennom faget skal elevane få forståing for matematiske representasjonar og modellar. Det vil hjelpe dei til å gjere ansvarlege livsval."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I matematikk P handlar det tverrfaglege temaet demokrati og medborgarskap om å gi elevane høve til å utforske, modellere og analysere reelle datasett og talmateriale knytte til samfunnsliv."
+   ]
+  }
  ]
 }

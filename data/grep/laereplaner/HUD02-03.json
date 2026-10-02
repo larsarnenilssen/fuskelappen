@@ -218,5 +218,57 @@
     "Helsefremmende arbeid, kommunikasjon og samhandling og yrkesliv i hudpleiefag: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 hudpleie innebærer å kommunisere med og veilede kunder. Videre innebærer det å snakke presist og entydig, å skille mellom begrepsbruk i dagligtalen og fagterminologi og å tilpasse språket til samtalepartneren. Det innebærer også å lytte til kundene og følge opp med oppklarende spørsmål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 hudpleie innebærer å utarbeide planer og dokumentasjon og føre journal. Videre handler det om å korrespondere med kunder, leverandører og samarbeidspartnere og om skriftlig markedsføring."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 hudpleie innebærer å kunne forstå faglitteratur, brukerveiledninger, journaler, statistikk, lovtekster og planer. Videre innebærer det å kunne lese og forstå instrukser og manualer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 hudpleie innebærer å bruke statistikk og tabeller, gjøre prisoverslag og regne ut pris ved kjøp og salg. Det innebærer også å beregne avanse på produkter og behandlinger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 hudpleie innebærer å bruke digitale ressurser for å finne fagrelevant informasjon og å vurdere kilder kritisk og bruke digital dømmekraft. Videre innebærer det å bruke digitale ressurser ved journalføring, ved kommunikasjon med kunder og ved kjøp og salg."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 hudpleie handler det tverrfaglige temaet folkehelse og livsmestring om hvordan fysisk og psykisk helse påvirker hud og kropp. Det innebærer å ha kunnskaper om hvordan kosthold og fysisk aktivitet påvirker huden og om å veilede mennesker til å gjøre valg som fremmer hudhelsen."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 hudpleie handler det tverrfaglige temaet demokrati og medborgerskap om å vise respekt for kunder og kolleger. Det handler om å ivareta verdiene i vårt demokratiske samfunn som grunnlag for profesjonell yrkesutøvelse og om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 hudpleie handler det tverrfaglige temaet bærekraftig utvikling om hvordan bruk av hudpleieprodukter påvirker miljøet. Videre handler det om å velge miljøvennlige materialer, produkter, metoder, emballasje og utstyr."
+   ]
+  }
  ]
 }

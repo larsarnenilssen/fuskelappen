@@ -8,9 +8,9 @@ test.describe('ingen horisontal overflyt i 320–430 px', () => {
     for (const rute of ruter) {
       test(`${rute} (${tema})`, async ({ page }, info) => {
         test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
-        // Fagsøket og tilbudene i Opplæringsløp åpner mange grupper og lister i fem bredder (opptil 100 trykk). Det tar
+        // Fagsøket, tilbudene i Opplæringsløp og overordnet del åpner mange grupper og lister i fem bredder (opptil 100 trykk). Det tar
         // nær 30 sekunder i WebKit i CI, så testen får mer tid.
-        test.slow(rute === '#/fag' || rute.startsWith('#/opplaeringslop/'), 'Siden åpner mange grupper i fem bredder');
+        test.slow(rute === '#/fag' || rute.startsWith('#/opplaeringslop/') || rute.startsWith('#/laereplanverket'), 'Siden åpner mange grupper i fem bredder');
         await settLagret(page, { tema, fylke: '46', favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
         for (const bredde of bredder) {
           await page.setViewportSize({ width: bredde, height: 740 });

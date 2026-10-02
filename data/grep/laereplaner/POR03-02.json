@@ -148,5 +148,57 @@
     "Opplæringen i vg3 portørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på to til fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 portørfaget innebærer å samhandle i team, kommunisere i stressede situasjoner og gi systematiske og relevante rapporter. Videre innebærer det å bruke faguttrykk og uttrykke egne observasjoner på en systematisk måte. Det innebærer videre å kommunisere forståelig med kolleger og med mennesker fra ulike kulturer og i ulike livssituasjoner. I dette ligger å tilpasse språket sitt til mottakeren og lytte til den man snakker med."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 portørfaget innebærer og informere andre på en korrekt og hensiktsmessig måte og å bruke et presist fagspråk. Det innebærer også å utarbeide rapporter og planer for arbeidet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 portørfaget innebærer å lese pasient- og brukerdokumentasjon, lovverk og prosedyrer. Det innebærer også å forstå og sette seg inn i faglitteratur for å holde seg faglig oppdatert."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg3 portørfaget innebærer å beregne og vurdere kostnader knyttet til ulike arbeidsoppgaver. Videre innebærer det å vurdere mengder, mål og vekt innenfor portørfagets arbeidsfelt."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 portørfaget innebærer å samhandle og utveksle informasjon og dokumentasjon digitalt og å kommunisere med kolleger og annet helse- og innsatspersonell. Det innebærer også å vurdere kilder kritisk og utvikle god digital dømmekraft. Videre handler det om å dokumentere og nyttiggjøre seg elektronisk informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 portørfaget handler det tverrfaglige temaet folkehelse og livsmestring om å forstå pasientenes og brukernes behov for trygg, sikker og omsorgsfull behandling og transport. Det handler også om sammenhengen mellom yrkesutøvelsen og egen psykisk og fysisk helse. I dette ligger det å kunne sette grenser og å respektere andres grenser i ulike relasjoner og arbeidssituasjoner. Det innebærer også å bearbeide reaksjoner etter opprivende hendelser."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 portørfaget handler det tverrfaglige temaet demokrati og medborgerskap om pasient- og brukermedvirkning under transport og forflytning. Det handler om å kunne møte utfordringer i tråd med demokratiske prinsipper. Videre handler det om å tenke kritisk, håndtere meningsbrytninger og respektere uenighet. Det handler også om at arbeidslivet skal bygge på ansvar, tillit, trygghet og medbestemmelse og om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 portørfaget handler det tverrfaglige temaet bærekraftig utvikling om bevisst bruk av menneskelige og materielle ressurser. Videre handler det om å være miljø- og kostnadsbevisst ved planlegging av transportoppdrag og anskaffelser og ved håndtering av avfall."
+   ]
+  }
  ]
 }

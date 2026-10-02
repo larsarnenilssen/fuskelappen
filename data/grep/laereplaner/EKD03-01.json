@@ -177,5 +177,51 @@
     "Produksjon og konseptutvikling: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nBedriftskultur og markedsføring: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nProduksjon og konseptutvikling og bedriftskultur og markedsføring: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 eksponeringsdesign innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk i kommunikasjon med kunder, samarbeidspartnere og leverandører gjennom å reflektere over og drøfte mulige valg og løsninger for ulike arrangementer og konsepter og tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 eksponeringsdesign innebærer å bruke tekst, bilder, tegn, symboler og tegninger til å kommunisere skriftlig med kunder og samarbeidspartnere. Videre innebærer det å bruke fagspråk og varierte skrivestrategier og tilpasse tekster til ulike formål og mottakere. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Å kunne skrive innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 eksponeringsdesign innebærer å innhente, tolke, forstå og bruke fagressurser med tekst, bilder, tegn, symboler og arbeidstegninger. Videre innebærer det å bruke lesestrategier for å tolke og systematisere informasjon i ulike tekster, trekke faglige slutninger og bruke kilder på en kritisk måte som kan etterprøves."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 eksponeringsdesign innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke målestokk, gjøre oppmålinger, lage overslag og estimere tids- og materialforbruk i praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 eksponeringsdesign innebærer å bruke digitale ressurser til å framstille og bearbeide design og produkter. Videre innebærer det å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer også å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 eksponeringsdesign handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle gode arbeidsrutiner og strategier for å møte og mestre forventninger fra kunder. Videre handler folkehelse og livsmestring om å bli trygg i møte med medelever, kunder og andre aktører i faget og om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn. Det handler også om å reflektere kritisk over hvordan man påvirkes av visuelle uttrykk i offentlige rom og sosiale medier."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 eksponeringsdesign handler det tverrfaglige temaet bærekraftig utvikling om å ivareta helse, miljø og sikkerhet i valg og bruk av ulike materialer, maskiner og teknikker. Det innebærer å reflektere over faglige valg som påvirker miljø, i forbindelse med bruk av råmateriale, utstyr og kjemikalier som brukes til å framstille, montere og resirkulere egen produksjon."
+   ]
+  }
  ]
 }

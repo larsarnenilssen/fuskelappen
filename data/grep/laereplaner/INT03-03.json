@@ -145,5 +145,51 @@
     "Prosess og prosjektering: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nKunde og kommunikasjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nProsess og prosjektering og kunde og kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 interiør innebærer å bruke fagspråk til å presentere ideer og konsepter. Videre innebærer det å lytte til og gi respons i spontan og forberedt samtale med kunder, kolleger og samarbeidspartnere om tjenester og bestillinger. Elevene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 interiør innebærer å bruke tekst, bilder, tegn, symboler og fagtegninger til å visualisere og kommunisere skriftlig med kunder og samarbeidspartnere. Videre innebærer det å bruke fagspråk og varierte skrivestrategier og tilpasse tekster til ulike formål og mottakere. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Å kunne skrive innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 interiør innebærer å innhente, tolke, analysere og bruke fagressurser med tekst, bilder, tegn, symboler og fagtegninger. Videre innebærer det å bruke lesestrategier for å tolke og systematisere informasjon i ulike tekster, trekke faglige slutninger og bruke kilder på en kritisk måte som kan etterprøves."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 interiør innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke målestokk, gjøre oppmålinger og beregne tids- og materialforbruk i praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 interiør handler om å utforske og bruke digitale ressurser til å produsere og dokumentere interiørløsninger. Videre innebærer det å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer også å vurdere, bearbeide og sammenstille informasjon, være kildekritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 interiør handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle gode arbeidsrutiner og strategier for å møte og mestre forventninger fra kunder. Videre handler folkehelse og livsmestring om å bli trygg i møte med medelever, kunder og andre aktører i faget og om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn. Det handler også om å kritisk reflektere over hvordan man påvirkes av stemninger og visuell støy, og reflektere over hvordan bruk av universell utforming kan ivareta brukerne."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 interiør handler det tverrfaglige temaet bærekraftig utvikling om å ivareta helse, miljø og sikkerhet i valg og bruk av ulike materialer, maskiner og teknikker i produkter og i designprosesser. Det innebærer å innhente informasjon fra produsenter om materialer og produkters kvalitet, produksjon og egenskaper."
+   ]
+  }
  ]
 }

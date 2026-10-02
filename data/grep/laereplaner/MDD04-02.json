@@ -73,5 +73,33 @@
     "Danseteknikker: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i danseteknikker innebærer å kommunisere muntlig med medelever og lærere. Videre innebærer det å bruke egne ord og relevant fagterminologi for å diskutere egne opplevelser og erfaringer og egen utvikling i dans."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i danseteknikker handler om å lese fagtekster om danseteknikk som supplerer og fordyper den erfaringsbaserte kunnskapen. Å lese i faget handler videre om å oppleve dansekunst."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i danseteknikker innebærer å bruke digitale verktøy i øving, utforsking og dokumentasjon av dans. Det innebærer også å forholde seg kritisk og etisk til bruk av sosiale medier og å ha kjennskap til opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I danseteknikker handler det tverrfaglige temaet folkehelse og livsmestring om at elevene skal øve på å uttrykke seg gjennom dans og utforske sin egen danseriske identitet. Dessuten handler det om at elevene skal oppleve danseglede. Gjennom arbeid med faget får elevene et grunnlag for å utvikle et positivt selvbilde, utvide egne handlingsmuligheter i dans, lære å sette grenser for seg selv og respektere andres grenser. Faget skal gi elevene kompetanse som gjør dem i stand til å håndtere tanker og følelser knyttet til egen utvikling i dans."
+   ]
+  }
  ]
 }

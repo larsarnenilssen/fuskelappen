@@ -204,5 +204,57 @@
     "Helsefremjande arbeid, kommunikasjon og samhandling og yrkesliv i helse- og oppvekstfag: Privatisten skal opp til éin tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg1 helse- og oppvekstfag inneber å kunne kommunisere forståeleg med kollegaer og med menneske frå ulike kulturar og i ulike livssituasjonar. Det inneber òg å tilpasse språket sitt til mottakar, innhald og formål og å lytte til og vise respekt for den ein snakkar med. Vidare inneber det å kunne bruke relevante faguttrykk og uttrykkje eigne observasjonar på ein systematisk måte."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 helse- og oppvekstfag inneber å kunne ytre seg forståeleg om helse- og oppvekstrelaterte tema. Det handlar òg om å bruke eit presist fagspråk og tilpasse tekstar til ulike formål, mottakarar og medium. Vidare handlar det om å planleggje og dokumentere faglege aktivitetar og om å bruke og kombinere ulike uttrykksformer som tekst, bilete og symbol på ein formålstenleg måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 helse- og oppvekstfag inneber å kunne tileigne seg ny kunnskap og innsikt. Vidare inneber det å finne fram til relevant informasjon, forstå faguttrykk og vurdere innhaldet i tekstar ut frå fagkunnskap og å forstå det ein leser i faglitteratur, statistikk, lovtekstar og planar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg1 helse- og oppvekstfag inneber å kunne resonnere, bruke rekneverktøy og gjere økonomiske berekningar, vidare å hente informasjon frå tabellar, statistikk og diagram. Det inneber òg å bruke ulike rekneartar og måleiningar i arbeidet med helse, ernæring og kosthald."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg1 helse- og oppvekstfag inneber å kunne bruke digitale ressursar på ein formålstenleg og forsvarleg måte. Det vil seie å vere kreativ i bruken av digitale ressursar i kommunikasjon og samhandling med andre og vidare kunne vurdere informasjon frå digitale kjelder kritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 helse- og oppvekstfag handlar det tverrfaglege temaet folkehelse og livsmeistring om å vise forståing, respekt og toleranse overfor andre menneske. Det handlar òg om kva som gir menneske eit godt liv, og korleis ein som yrkesutøvar kan rettleie brukarane når det gjeld å ta gode helseval. Folkehelse og livsmeistring skal vidare bidra til kunnskap om mennesket i ulike livsfasar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 helse- og oppvekstfag handlar det tverrfaglege temaet demokrati og medborgarskap om å tenkje kritisk, handtere meiningsbryting og respektere usemje. Temaet skal òg bidra til brukarmedverknad og til at individuelle rettar og plikter i yrkesutøvinga blir tekne vare på."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 helse- og oppvekstfag handlar det tverrfaglege temaet berekraftig utvikling om korleis forbruk og aktivitetar påverkar miljøet. Det handlar òg om å ta miljømedvitne val i yrkesutøvinga."
+   ]
+  }
  ]
 }

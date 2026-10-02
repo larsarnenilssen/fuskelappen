@@ -210,5 +210,51 @@
     "Produksjon og tjenester, kjemisk teknologi og analyse, dokumentasjon og kvalitet: Privatisten skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 kjemiprosess- og laboratoriefag innebærer å kunne kommunisere med medelever og lærere og diskutere arbeidsoppgaver, problemstillinger og faglige løsninger. Det innebærer å bruke riktige faguttrykk, utvikle et presist språk og kommunisere godt. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 kjemiprosess- og laboratoriefag innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, og å kunne planlegge, utforme og dokumentere arbeidsoppgaver. Videre innebærer det å utarbeide risikovurderinger og rapporter."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 kjemiprosess- og laboratoriefag innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner og å bruke kilder på en kritisk måte som lar seg etterprøve. Å kunne lese innebærer også å forstå gjeldende lovverk og arbeidsbeskrivelser, prosedyrer, datablader, faglitteratur, håndbøker og forskrifter og dessuten regelverk for helse, miljø og sikkerhet. Videre innebærer det å sette seg inn i nødvendig informasjon for å kunne delta aktivt i skole- og arbeidsmiljøet og tilegne seg ny kompetanse."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 kjemiprosess- og laboratoriefag innebærer å kunne gjøre beregninger innenfor kjemi og fysikk. Det innebærer videre å kunne kjenne igjen og beskrive situasjoner der matematikk inngår, og bruke matematiske metoder til å behandle problemstillinger. Å kunne regne betyr også å kunne gjøre økonomiske vurderinger knyttet til tids- og materialbruk"
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 kjemiprosess- og laboratoriefag innebærer å bruke digitale ressurser til utforsking, kommunikasjon, planlegging, visualisering og presentasjon. Videre innebærer det å feilsøke og bruke instrumenter, maskiner, verktøy og utstyr. Digitale ferdigheter innebærer dessuten å holde seg oppdatert på ny teknologi og å vise digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 kjemiprosess- og laboratoriefag handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsglede og trygghet til å ta hensiktsmessige valg som er viktige i et langt arbeidsliv. Det tverrfaglige temaet handler også om å forberede elevene på å møte fysiske og psykososiale utfordringer i et arbeidsmiljø. Det handler også om kontinuitet og aktiv tilstedeværelse, som bidrar til kompetanseheving, mestring og motivasjon"
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 kjemiprosess- og laboratoriefag handler det tverrfaglige temaet bærekraftig utvikling om å kunne velge og handle miljøbevisst. Fagene skal bevisstgjøre elevene til å se sammenhengene mellom teknologi, prosesser og begrensede ressurser, der målet bidrar til samfunnsutvikling i et miljø- og bærekraftperspektiv."
+   ]
+  }
  ]
 }

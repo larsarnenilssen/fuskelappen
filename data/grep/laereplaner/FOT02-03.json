@@ -182,5 +182,57 @@
     "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapi og ortopediteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 fotterapi og ortopediteknikk innebærer å bruke fagspråk og tilpasse språket til den man kommuniserer med. Det innebærer også å innhente pasientopplysninger, veilede og gi råd til pasienter. Videre handler det om å gjennomføre muntlige presentasjoner for kolleger og andre samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 fotterapi og ortopediteknikk innebærer å skrive logg og refleksjonsnotater, føre journal og vurdere eget arbeid. Det innebærer også å bruke et presist fagspråk. Videre handler det om å dokumentere eget arbeid i tråd med gjeldende regelverk for helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 fotterapi og ortopediteknikk innebærer å forstå og sette seg inn i og tolke relevant faglitteratur, regelverk, produktbeskrivelser, datablad, arbeidsordrer, journaler og henvisninger fra annet helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 fotterapi og ortopediteknikk innebærer å utføre enkle utregninger og lage prisoverslag ved utvikling av hjelpemidler og behandling."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 fotterapi og ortopediteknikk innebærer å bruke digitale ressurser for å finne informasjon om faget og vurdere kritisk de kildene som brukes. Videre handler det om å bruke digitale ressurser som verktøy i eget arbeid og i tverrfaglig samarbeid. Det innebærer også digital dømmekraft og gode strategier for nettbruk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 fotterapi og ortopediteknikk handler det tverrfaglige temaet folkehelse og livsmestring om å forstå individets bevegelsesevne og funksjon. Temaet skal bidra til å utvikle forståelse for hvordan fysisk og psykisk helse påvirker pasientenes mestringsfølelse. Videre handler det om å vise respekt og toleranse for pasientenes egne helsevalg. Det handler også om å utvikle mellommenneskelige relasjoner som grunnlag for en tilpasset behandling."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 fotterapi og ortopediteknikk handler det tverrfaglige temaet demokrati og medborgerskap om holdninger, verdier og respekt for ulike menneskers liv og kulturer. Temaet handler også om det å være arbeidstaker med forståelse av hva som kreves i et inkluderende arbeidsliv. Videre handler det om rettigheter og plikter i demokratiske prosesser og praktiseringen av dette i yrkesutøvelsen. Det handler også om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 fotterapi og ortopediteknikk handler det tverrfaglige temaet bærekraftig utvikling om å redusere bruk av engangsmateriale til et minimum. Videre handler det om å velge utstyr, materialer og komponenter som sikrer at hjelpemidlene er trygge og bestandige."
+   ]
+  }
  ]
 }

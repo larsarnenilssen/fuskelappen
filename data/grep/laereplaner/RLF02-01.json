@@ -206,5 +206,45 @@
     "Bransjelære, sanitærteknikk og varmeteknikk: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i Vg2 røyrleggjar inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og å tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg2 røyrleggjar inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg2 røyrleggjar inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar og regelverk. Det inneber òg å samanlikne og tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i Vg2 røyrleggjar inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal, volum og effektar i samband med arbeidsoperasjonen. Vidare inneber det å bruke målestokk og fall og å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i Vg2 røyrleggjar inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over si eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg2 røyrleggjar handlar det tverrfaglege temaet berekraftig utvikling om å velje produksjonsmetodar og materiale som gir energieffektive og berekraftige produkt med lite miljøavtrykk. Det handlar vidare om å levere reint drikkevatn til bygg og om å handtere avløpsvatnet slik at det ikkje forureinar. Det handlar òg om å handtere overvatn som følgje av klimaendringar og om å finne miljøvennlege og innovative løysingar innanfor sanitærteknikk og varmeteknikk."
+   ]
+  }
  ]
 }

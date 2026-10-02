@@ -175,5 +175,51 @@
     "Samfunnsøkonomi 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nSamfunnsøkonomi 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i samfunnsøkonomi innebærer å uttrykke faglige meninger, lytte og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over økonomiske sammenhenger og problemstillinger og tilpasse muntlig tekst til mottaker og formål. Ferdigheten innebærer i tillegg å bruke kilder på en kritisk og etterprøvbar måte i muntlig sammenheng."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i samfunnsøkonomi innebærer å bruke fagspråk og varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det innebærer å gjøre rede for og reflektere over økonomiske sammenhenger og problemstillinger og bruke kilder på en kritisk og etterprøvbar måte. Det innebærer også å tegne, forklare og bruke grafiske modeller knyttet til samfunnsøkonomisk teori."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i samfunnsøkonomi innebærer å finne og kritisk vurdere eksplisitt og implisitt informasjon i tekster om økonomiske sammenhenger og problemstillinger. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster, tabeller og diagrammer og å analysere og vurdere ulike perspektiv og formål med tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i samfunnsøkonomi innebærer å hente ut, beskrive og tolke informasjon i tabeller, statistikk, diagrammer og andre grafiske framstillinger. Videre innebærer det å gjøre beregninger og å bruke og bearbeide informasjon til å forstå og vise sammenhenger, sammenligne og presentere resultater på ulike måter med utgangspunkt i tabeller og diagrammer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i samfunnsøkonomi innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, og å kommunisere og presentere eget arbeid. Digitale ferdigheter i samfunnsøkonomi innebærer å vurdere, bearbeide og sammenstille informasjon, og vise til kilder på en etterprøvbar måte. Det handler også om å utvikle etisk bevissthet og utvise digital dømmekraft ved å følge regler og normer. Videre handler det om å lage og bruke grafiske modeller knyttet til samfunnsøkonomisk teori."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I samfunnsøkonomi handler det tverrfaglige temaet demokrati og medborgerskap om innsikt i det økonomiske systemet og kunnskap om økonomisk politikk og ulike sentrale økonomiske sammenhenger. Det handler videre om kunnskap om hva demokratiet betyr for den økonomiske utviklingen og fordelingen av ressurser i landet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I samfunnsøkonomi handler det tverrfaglige temaet bærekraftig utvikling om sosiale, økonomiske og miljømessige forhold og hvordan disse påvirker hverandre. Det handler også om hvordan økonomisk aktivitet påvirker miljø og fordeling, og hvordan myndighetene kan legge til rette for økonomisk utvikling som tar miljø- og fordelingshensyn for å ivareta dagens og fremtidige generasjoners velferd."
+   ]
+  }
  ]
 }

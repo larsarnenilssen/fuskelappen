@@ -148,5 +148,45 @@
     "Opplæringen i vg3 brønnfaget, elektriske kabeloperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som normalt skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 brønnfaget, elektriske kabeloperasjoner innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse innhold til mottaker og formål. Det innebærer å kommunisere om risikovurderinger og faglige løsninger ved hjelp av faguttrykk med kolleger og andre involverte."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 brønnfaget, elektriske kabeloperasjoner innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utarbeide rapporter og å planlegge og dokumentere arbeidet. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 brønnfaget, elektriske kabeloperasjoner innebærer å finne og vurdere innhold i tekster og å bruke og forstå prosedyrer, arbeidsbeskrivelser og regelverk. Det innebærer også å forstå tegninger, tabeller og brønndata. Videre innebærer det å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 brønnfaget, elektriske kabeloperasjoner innebærer å hente ut, beskrive og tolke tallmateriale og å foreta beregninger knyttet til elektriske verdier, krefter og trykk på brønnutstyr. Det innebærer også å måle, registrere og forstå tekniske spesifikasjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 brønnfaget, elektriske kabeloperasjoner innebærer å bruke digitale styrings- og dokumentasjonssystemer og digitale ressurser for å planlegge og gjennomføre arbeidsoperasjoner. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 brønnfaget, elektriske kabeloperasjoner handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om å kritisk vurdere konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel, og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

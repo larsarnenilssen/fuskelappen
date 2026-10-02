@@ -190,5 +190,51 @@
     "Konstruksjoner og klimaskall, vinduer, dører og innvendig arbeid og materialegenskaper, varmeisolering og tetting: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 tømrer innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 tømrer innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 tømrer innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 tømrer innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne lengde, areal, volum og vekt knyttet til arbeidsoperasjonen. Det innebærer også å beregne radier, vinkler og fall og å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 tømrer innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer digitale ferdigheter å søke etter og innhente informasjon og å vurdere troverdigheten av informasjonen. Digitale ferdigheter innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 tømrer handler det tverrfaglige temaet folkehelse og livsmestring om å bygge, vedlikeholde og rehabilitere bygninger og konstruksjoner med tanke på helsefremmende inneklima. Faget bidrar til å bygge konstruksjoner for brukere i ulike livssituasjoner og fremmer folkehelse i et livslangt perspektiv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 tømrer handler det tverrfaglige temaet bærekraftig utvikling om materialer og produksjonsmetoder som gir energieffektive og varige konstruksjoner. Videre handler det om å bruke utstyr med tanke på å ivareta det indre og ytre miljøet. Det handler også om å gjenbruke materialer og håndtere avfall på en måte som minimerer belastningen på miljøet."
+   ]
+  }
  ]
 }

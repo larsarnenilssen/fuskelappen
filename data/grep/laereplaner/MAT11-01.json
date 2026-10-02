@@ -118,5 +118,45 @@
     "Statistikk: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt. Eksamen skal ikkje ha førebuingsdel."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i statistikk inneber å skape meining gjennom å samtale om statistikk. Det vil seie å vere med i samtalar, kommunisere idear og drøfte statistiske metodar, modellar, resultat og representasjonar med andre. Det handlar òg om å beskrive og diskutere statistiske omgrep."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i statistikk inneber å beskrive og forklare statistiske samanhengar, modellar og resultat ved hjelp av formålstenlege representasjonar. Å kunne skrive i statistikk er òg ein reiskap i eiga læring og for å utvikle eiga statistisk tenking."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i statistikk inneber å forstå data, representasjon av data og statistiske tekstar. Lesing i statistikk inneber å sortere informasjon, å analysere og vurdere form og innhald og å samanfatte informasjon frå samansette tekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i statistikk inneber å bruke tal og variablar, statistisk symbolspråk og statistiske omgrep og metodar til å utføre utrekningar og vurdere om statistiske modellar og resultat er gyldige."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i statistikk inneber å bruke digitale verktøy til å utforske, formulere og løyse statistiske problem. Vidare vil det seie å finne, behandle, analysere og presentere informasjon med digitale verktøy. I faget er digitale verktøy som rekneark og dynamisk matematikkprogramvare sentrale hjelpemiddel."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I statistikk handlar det tverrfaglege temaet demokrati og medborgarskap om korleis statistikk kan brukast som argument i samfunnsdebatten og som grunngiving for avgjerder, og om korleis statistikk kan misforståast og misbrukast. Dette inkluderer tolking av forskingsresultat og forholdet mellom korrelasjon og årsakssamanheng."
+   ]
+  }
  ]
 }

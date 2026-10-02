@@ -82,5 +82,57 @@
     "Design og berekraft: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i design og berekraft inneber å kunne samtale om og formidle kva som er ideen bak eit produkt, og å gjere greie for korleis livsløpet til eit produkt påverkar miljøet. Munnlege ferdigheiter inneber òg å bruke fagspråk i presentasjonar for brukargrupper og argumentere fagleg for eige og andre sitt arbeid i ein større kontekst."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i design og berekraft inneber å formidle eigne meiningar, fakta, prosessar, idear og haldningar på ein fagleg måte. Å skrive øver opp evna til å reflektere og vurdere eige arbeid og læring i faget. Gjennom teikning kan elevane utvikle, formulere og kommunisere idear visuelt. Vidare omfattar skriveferdigheitene i faget å kombinere teikn, tekst og bilete i arbeid med layout, informasjonsgrafikk og andre visuelle uttrykk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i design og berekraft inneber å lese, analysere og kritisk vurdere aktuelle fagressursar. Det inneber òg å lese arbeidsteikningar og tolke og forstå visuelle verkemiddel, symbol, tekst og bilete."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i design og berekraft inneber å ha kunnskapar om volum, flate og målestokk knytte til geometri, tabellar, perspektivteikning og aksonometri. Videre inneber det å bruke dette i teikningar, modellar og prototypar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i design og berekraft inneber å kunne velje og bruke digitale program og ressursar i arbeidet med å modellere, visualisere og presentere eigne arbeid. Det inneber òg å finne informasjon, bruke kjelder, utøve dømmekraft og handtere ein brukar- og delingskultur i ulike digitale forum."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I design og berekraft handlar det tverrfaglege temaet folkehelse og livsmeistring om å sette seg inn i og har forståing for eigne og andre sine behov, og designe nye, brukarvennlege løysingar. Folkehelse og livsmeistring handlar òg om å utvikle skaparglede, handlingskraft og samarbeidsevne gjennom ulike designprosessar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I design og berekraft handlar det tverrfaglege temaet demokrati og medborgarskap om å utvikle design som ikkje berre er tilpassa store brukargrupper, men som òg tek omsyn til behova til mindre grupper, både lokalt og globalt."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I design og berekraft handlar det tverrfaglege temaet berekraftig utvikling om å finne fram til og utforske miljøvennlege materiale og metodar. Ein ser på korleis teknologi både kan løyse og skape problem, arbeidar med å forstå dei miljømessige konsekvensane av levesett og ressursbruk, og korleis velje og bruke formålstenlege materiale som ikkje skader livet på jorda."
+   ]
+  }
  ]
 }

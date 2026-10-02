@@ -137,5 +137,57 @@
     "Musikk i perspektiv 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i musikk i perspektiv innebærer å bruke fagspråk i drøfting og refleksjon rundt musikalske praksiser, i analyser og i formidling av egne musikkopplevelser. Det innebærer også å formidle musikk etter gehør."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i faget musikk i perspektiv innebærer å bruke fagspråk i egne tekster til å gjøre rede for trekk ved musikalske praksiser, gjøre analyser og i formidling av egne musikkopplevelser. Det innebærer også å bruke ulike former for musikalsk notasjon."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i faget musikk i perspektiv innebærer å tolke ulike former for musikalsk notasjon, og bruke notasjon praktisk og teoretisk. Det innebærer også å utvikle lyttestrategier for å analysere klingende musikk, og å tilegne seg forståelse av musikk gjennom fagtekst. Videre innebærer det å reflektere over hvordan verdier og holdninger påvirker framstillingen av musikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i musikk i perspektiv innebærer å oppfatte og forstå matematiske og logiske dimensjoner ved rytmiske og tonale parametre. Videre innebærer det å forstå historiske tidslinjer i framstillinger av musikalske tradisjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i musikk i perspektiv innebærer å bruke programvare og digitale ressurser i arbeid med lytting og notasjon av musikk. Videre innebærer det å vise god digital dømmekraft gjennom å forholde seg kritisk og etisk til bruk av sosiale medier og ha kjennskap til opphavsrett og personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I musikk i perspektiv handler det tverrfaglige temaet folkehelse og livsmestring om å reflektere over og gi uttrykk for egne følelser, tanker og erfaringer i møte med ulike former for musikk. Det innebærer å anerkjenne egne og andres uttrykk og opplevelser, håndtere relasjoner og delta i sosiale fellesskap. Det tverrfaglige temaet handler også om hvordan erfaring med musikk fra ulike tradisjoner, kulturer og tider både kan bekrefte og utfordre elevenes musikalske ståsted, og bidra til identitetsutvikling og livsmestring."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I musikk i perspektiv handler det tverrfaglige temaet demokrati og medborgerskap om å bli kjent med musikk som uttrykksform i sosiale fellesskap gjennom tidene. Det innebærer arbeid med ulike musikalske praksiser som kan bidra til forståelse av musikkens rolle som politisk virkemiddel. Videre handler det om forståelse, toleranse og respekt i møte med et musikalsk mangfold i samfunnet, og om konstruktiv samhandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I musikk i perspektiv handler det tverrfaglige temaet bærekraftig utvikling om hvordan musikk og kulturelle uttrykk formes av natur, kultur og mennesker, både lokalt og globalt. Det handler om hvordan den sensibiliteten mennesker kan utvikle i møte med kunst, har likhetstrekk med menneskers møte med natur. Videre handler det om hvordan kulturell utvikling henger sammen med tilgang til og bruk av ressurser. Det omfatter også forståelse av interessekonflikter ved fordeling av ressurser når samfunnet endres i en mer bærekraftig retning, og betydningen musikkteknologi kan ha for menneske, miljø og samfunn."
+   ]
+  }
  ]
 }

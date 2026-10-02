@@ -124,5 +124,45 @@
     "Opplæringa i vg3 bilpleiefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 bilpleiefaget inneber å kommunisere med kundar og diskutere faglege løysingar med arbeidskollegaer. Det inneber òg å bruke fagspråk for å beskrive og forklare ulike arbeidsoppgåver, unngå feil og misforståingar og gjere seg forstått."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bilpleiefaget inneber å planleggje, utforme og leggje til rette arbeidsordrar, rapportar og dokumentasjon. Det inneber òg å forklare og kommunisere med kundar og kollegaer om kva som blir gjort under utføringa av faglege oppgåver."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bilpleiefaget inneber å finne fram i og følgje arbeidsbeskrivingar, regelverkprosedyrar, bruksrettleiingar og teikningar. Vidare inneber det å bruke datablad og faglitteratur for å utforske og reflektere over faglege emne og problemstillingar, og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 bilpleiefaget inneber å gjere utrekningar, kostnadsanalysar og kalkulasjonar knytte til arbeidsprosessane. Det inneber òg å berekne ressursbruk ved ulike materialval og areal og gjere målingar av overflater på køyretøy."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 bilpleiefaget inneber å bruke digitale ressursar for å hente inn aktuelle reparasjonsmanualar og produktbeskrivingar til planlegging, produksjon og dokumentasjon. Vidare inneber det å bruke diagnoseverktøy, kommunisere med kundar og kostnadsberekne oppdrag digitalt."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bilpleiefaget handlar det tverrfaglege temaet berekraftig utvikling om kunnskap om korleis material- og produktval og reparasjonsmetode påverkar klima, miljø og sosiale forhold. Det handlar òg om å ta medvitne miljøval ved avfallshandtering og resirkulering av materiale og produkt."
+   ]
+  }
  ]
 }

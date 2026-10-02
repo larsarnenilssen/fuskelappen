@@ -128,5 +128,45 @@
     "Opplæringen i vg3 brønnfaget, mekaniske kabeloperasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 brønnfaget, mekaniske kabeloperasjoner innebærer å kommunisere faglige forklaringer, begrunnelser, valg, løsninger og risikovurderinger med kolleger og andre faggrupper. Det omfatter også fagbegreper og -språk innenfor boring og brønn. Muntlige ferdigheter innebærer også å presentere god kultur ved kommunikasjon over radio."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 brønnfaget, mekaniske kabeloperasjoner innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det handler om å utarbeide dokumentasjon, rapporter, arbeidstillatelser og sikker jobb-analyseskjema."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 brønnfaget, mekaniske kabeloperasjoner innebærer å forstå og bruke prosedyrer, risikoanalyser, regelverk og standarder. Det innebærer også å forstå og tolke manualer, tegninger, tabeller, brønnskisser og kabelkjøringssimuleringer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 brønnfaget, mekaniske kabeloperasjoner innebærer å hente ut, beskrive og tolke tallmateriale, utføre beregninger og kontrollregne ved planlegging, forberedelse og gjennomføring av kabeloperasjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 brønnfaget, mekaniske kabeloperasjoner innebærer å bruke digitale applikasjoner som planlegging, og simuleringsverktøy, kontroll, logistikk, informasjon og styrings- og rapporteringssystemer. Det handler også om å bruke teknologi som gir mulighet for integrerte operasjoner, fjernoperering og autonome prosesser. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 brønnfaget, mekaniske kabeloperasjoner handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om å kritisk vurdere konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel, og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

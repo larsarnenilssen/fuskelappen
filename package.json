@@ -1,6 +1,6 @@
 {
   "name": "fuskelappen",
-  "version": "0.19.1",
+  "version": "0.20.0",
   "private": true,
   "type": "module",
   "description": "Installerbar nettapp for skoleledere og lærere i videregående opplæring.",
@@ -51,6 +51,7 @@
     "kobling:rapport": "tsx scripts/kobling/rapport.ts",
     "tilbud:rapport": "tsx scripts/tilbud/rapport.ts",
     "hent:udir": "tsx scripts/hent-udir.ts",
+    "hent:overordnet": "tsx scripts/hent-overordnet-del.ts",
     "hent:vigo": "tsx scripts/hent-vigo.ts"
   }
 }

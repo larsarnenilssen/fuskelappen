@@ -86,5 +86,57 @@
     "Kunst og skapende arbeid: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i kunst og skapande arbeid inneber å kunne presentere eigne idear og argumentere for eigne val. Det inneber òg å bruke fagomgrep i samtalar og diskusjonar om eige og andre sitt arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kunst og skapande arbeid inneber å bruke tekst, teikn, symbol og visuelt språk i dokumentasjon av prosessar og formidling av bodskapar tilpassa formål og mottakar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kunst og skapande arbeid inneber å forstå, undersøkje, bruke og reflektere over tekst og visuell informasjon. Det inneber òg å lese eit visuelt språk, som kan opne for større forståing og bidra til at eleven kan gjere kritiske vurderingar og trekkje eigne slutningar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i kunst og skapande arbeid inneber å oppfatte og berekne form, volum og proporsjonar i kunstnariske arbeid. Å kunne rekne inneber òg å beherske format, storleikar og måleiningar. Vidare inneber det å arbeide med oppløysing og filstorleikar i arbeid med digitale filer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i kunst og skapande arbeid inneber å kunne bruke digitale verktøy og ressursar til kunstnarisk arbeid, presentasjonar og dokumentasjon. Det inneber òg å hente inn og sortere informasjon og handtere ein brukar- og delingskultur i digitale og sosiale medium på ein etisk og reflektert måte. Vidare inneber det å følgje reglar for opphavsrett og personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kunst og skapande arbeid handlar det tverrfaglege temaet folkehelse og livsmeistring om arbeide med å uttrykkje og forstå meiningar, idear og kjensler. Videre handlar det om å utvikle både sjølvinnsikt og mot til å ytre seg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I kunst og skapande arbeid handlar det tverrfaglege temaet demokrati og medborgarskap om å utvikle evna til kritisk tenking og respekt for usemje gjennom arbeid med kunstnarlege uttrykk. Videre handlar det om å synleggjere, kommentere og setje spørsmålsteikn ved aktuelle hendingar og problemstillingar i samfunnet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I kunst og skapande arbeid handlar det tverrfaglege temaet berekraftig utvikling om å arbeide med skapande prosessar med tema som utforskar og vektlegg det etiske ansvaret vi har for å ta vare på naturen og miljøet. Materialbruk i eige arbeid vil gi grunnlag for diskusjonar som kan føre til auka medvit om fordeling og bruk av ressursar i samfunnet."
+   ]
+  }
  ]
 }

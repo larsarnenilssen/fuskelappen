@@ -100,5 +100,45 @@
     "Opplæringen i repslagerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i repslagerfaget innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale med kunder, fagfolk og samarbeidspartnere. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer produkter og metoder alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i repslagerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, som materialer, kvalitet og arbeidsprosesser. Det innebærer også å bygge opp argumentasjon og bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i repslagerfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i repslagerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å beregne og måle vekt, lengder, størrelser og styrke på tauverksmaterialer og produkter. Videre handler det om å gjøre økonomiske beregninger i forbindelse med tidsbruk og pristilbud. Det innebærer å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i repslagerfaget innebærer å bruke digitale ressurser til å innhente informasjon og å planlegge, kommunisere, presentere og markedsføre eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I repslagerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over ressursforvaltning, vedlikehold og produksjon av ulike rep og tauprodukter og hvordan ulike valg kan påvirke miljøavtrykket til hele produksjonsprosessen. Det handler også om hvordan ulike produksjonsmetoder og vedlikehold kan påvirke tauverkets levetid, holdbarhet og kvalitet. Faget er en del av arbeidet med å sikre verdens natur- og kulturarv og bidrar til å fremme lokal kultur og lokale produkter."
+   ]
+  }
  ]
 }

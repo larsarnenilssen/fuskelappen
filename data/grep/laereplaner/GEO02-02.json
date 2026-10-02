@@ -82,5 +82,45 @@
     "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon: Privatisten skal opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i geografi innebærer å kunne presentere eget arbeid med geografiske temaer og å kunne forklare og drøfte problemstillinger ved å argumentere, lytte og gi respons. Gjennom å delta i muntlige aktiviteter kan elevene sette ord på sin egen læringsprosess og kompetanse i geografifaget. I den samiske tradisjonen betyr det også å benytte seg av muntlig overføring av kunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å skrive i geografi innebærer å utforme og arbeide med faglige tekster tilpasset formålet, for å dele, formidle og presentere informasjon skriftlig. Ved å skrive i geografi kan elevene strukturere tanker, planlegge arbeid og dokumentere observasjoner. Å skrive i geografi innebærer også å utforske, beskrive, drøfte og vurdere geografiske forhold og å bruke og vise til kilder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å lese i geografi innebærer å utforske, tolke og reflektere over innholdet i ulike kilder som tekst, kart, bilder, figurer og statistikk. Videre innebærer det å finne informasjon og bevisst velge og velge bort ulike kilder, å kjenne igjen argumentasjon og å skille mellom meninger, fakta og påstander."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å regne i geografi innebærer å kunne innhente, arbeide med, tolke, sammenligne og vurdere tallmateriale, tabeller og grafiske framstillinger. Ved å regne i geografifaget kan elevene bedre forstå geografiske forhold og finne begrunnelser for geografiske sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i geografi innebærer å kunne bruke digitale ressurser til å finne, behandle og navigere i digitale kilder, utøve digital kildekritikk og velge ut informasjon i digitale kilder, inkludert digitale kart. De digitale ferdighetene innebærer også å kunne bruke digitale ressurser til å utforme faglige produkter og lage geografiske illustrasjoner for å presentere og utvikle faglig kompetanse."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I geografifaget handler det tverrfaglige temaet bærekraftig utvikling om at elevene skal utvikle kunnskap om årsaker til og konsekvenser av klimaendringer og fordeling og bruk av ressurser nå og i framtiden. Elevene skal lære om hvilke konsekvenser endringer i lokaliseringen av næringsliv, arealbruk, økt globalisering og teknologisk utvikling kan ha for natur og mennesker. Gjennom geografifaget skal elevene reflektere over problemstillinger som synliggjør at bærekraftig utvikling handler om å se sosiale, økonomiske og miljømessige forhold i sammenheng. Faget vil gi elevene innsikt i bærekraftig utvikling i lys av tradisjonell samisk naturbruk."
+   ]
+  }
  ]
 }

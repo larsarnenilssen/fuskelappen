@@ -159,5 +159,57 @@
     "Vg3 studieførebuande og yrkesfaglege utdanningsprogram i skule: Privatisten skal opp til ein munnleg-praktisk eksamen som blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i kroppsøving er å kunne lytte og kommunisere i bevegelsesaktivitetar, og å kunne forklare og uttrykkje eigne erfaringar og refleksjonar. Utviklinga av munnlege ferdigheiter i kroppsøving går frå språkleg utforsking i bevegelseserfaringar til vidare refleksjon og drøfting rundt sentralt innhald i faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kroppsøving er å planleggje, gi uttrykk for og vurdere eiga utvikling i faget. Det inneberer òg å utforme eigne treningsplanar. Utviklinga av skriveferdigheiter i kroppsøving går frå å bruke teikningar, bilete, figurar og planar til å kunne skrive meir fagspesifikke tekstar og illustrasjonar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kroppsøving er å finne, tolke og kritisk vurdere ulike former for tekstar og informasjon og å søkje kunnskap som er nødvendig for å utvikle kompetanse i faget. Utviklinga av leseferdigheiter i kroppsøving går frå å hente inn og reflektere over informasjon frå enkle instruksjonar, kart og tekstar til å kunne lese meir samansette og fagspesifikke tekstar, kart og bilete."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i kroppsøving er å bruke matematiske uttrykk for å planleggje, gjennomføre og reflektere over ulike forhold i mangfaldet av bevegelsesaktivitetar innanfor faget. Utviklinga av rekneferdigheiter i kroppsøving går frå å erfare avstand, aktivitetar, spel og leik til gjennom aukande kompleksitet, å kunne relatere bevegelsesaktivitetar til omgrep som vekt, fart, kraft, tid og mengd."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i kroppsøving er å kunne bruke digitale ressursar til å utforske, vere skapande og løyse praktiske utfordringar i faget. Det inneber òg å bruke digitale ressursar bevisst og kritisk til å utvikle ein trygg identitet, kroppsmedvit og eit positivt sjølvbilete. Utviklinga av digitale ferdigheiter i kroppsøving går frå å kunne følgje reglar for digital samhandling og personvern til å planleggje og vurdere eigentrening ved hjelp av digitale ressursar. For elevar på 1.-4. trinn skal bruken av digitale einingar vere særskild varsam, og ikkje dominere undervisninga."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kroppsøving handlar det tverrfaglege temaet folkehelse og livsmeistring om å fremje god psykisk og fysisk helse og gi elevane verktøy til å ta ansvarlege livsval. Faget skal fremje eit positivt sjølvbilete som kan gi elevane ein trygg identitet. Faget skal medverke til at elevane får kunnskap om ulike perspektiv på bevegelsesaktivitetar og helse. Elevane skal òg lære å forvalte helse som ressurs på ein måte som gagnar den enkelte, og lære å ta val som er gode for eiga og andre si helse gjennom livet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I kroppsøving handlar det tverrfaglege temaet demokrati og medborgarskap om å fremje evne til samspel i aktivitetar og refleksjon over kva eiga deltaking og eigen innsats inneber for samspel og læring i faget. Faget skal medverke til at elevane får kunnskap om og forståing av demokratiske verdiar og spelereglar gjennom medverknad og medansvar i deltaking og samarbeid. Faget skal òg gi rom for å øve opp kritisk tenking og lære å handtere meiningsbrytingar og respektere usemje."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I kroppsøving handlar det tverrfaglege temaet berekraftig utvikling om naturopplevingar med vekt på trygg og berekraftig ferdsel. Faget skal medverke til forståing for at vala den enkelte gjer, har betydning og konsekvensar for berekraftig utvikling og vern av livet på jorda både lokalt, regionalt og globalt."
+   ]
+  }
  ]
 }

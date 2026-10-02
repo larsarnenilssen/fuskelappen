@@ -148,5 +148,45 @@
     "Produksjon og vedlikehold og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 urmaker innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst i kommunikasjon om produkter eller arbeidsprosesser med samarbeidspartnere. Det innebærer å presentere og dokumentere eget arbeid visuelt og verbalt"
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 urmaker innebærer å bruke fagterminologi for å utforme tekster tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å lage tegninger og presise beskrivelser av arbeidsprosesser og revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 urmaker innebærer å bruke faglitteratur, faglige spesifikasjoner og bestillinger for å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner og å bruke kilder på en kritisk måte som kan etterprøves. Det innebærer videre å sammenligne, tolke og systematisere informasjon i ulike tekster, tegninger, tekniske beskrivelser og veiledninger med tegn og symboler for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 urmaker innebærer å beregne pris, vekt, volum, mengde, størrelser, styrkeforhold og tidsbruk. Det innebærer også hente ut, beskrive og tolke informasjon fra tallmateriale for å beregne pris, vekt, volum, mengde, former, styrkeforhold og tidsbruk. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 urmaker innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Videre handler det om å bruke digitale ressurser og aktuell teknologi i eget praktisk arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 urmaker handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk rundt materialvalg og produksjonsmetoder, bearbeiding og valg av materialer, verktøy og maskiner i utvikling av urprodukter. Videre handler det om praktisk problemløsing og nyutvikling. Gjennom lokal tilpassing og ressursforvaltning retter man oppmerksomhet mot gjenbruk, holdbar kvalitet, etisk produksjon og kortreiste produkter."
+   ]
+  }
  ]
 }

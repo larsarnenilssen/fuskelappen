@@ -124,5 +124,45 @@
     "Opplæringa i vg3 målar- og overflateteknikkfaget skal avsluttast med ein sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 målar- og overflateteknikkfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 målar- og overflateteknikkfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 målar- og overflateteknikkfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar, standarder og toleransestandarder og regelverk. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 målar- og overflateteknikkfaget inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Vidare inneber det å rekne ut radiusar, vinklar og fall og å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 målar- og overflateteknikkfaget inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter i faget å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 målar- og overflateteknikkfaget handlar det tverrfaglege temaet berekraftig utvikling om å velje materiale, verktøy og teknikkar som gir energieffektive og varige konstruksjonar. Vidare handlar det om å bruke maskiner og utstyr med tanke på det indre og ytre miljøet. Det handlar òg om å handtere avfall på ein måte som minimerer miljøavtrykket."
+   ]
+  }
  ]
 }

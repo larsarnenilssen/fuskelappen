@@ -140,5 +140,45 @@
     "Opplæringen i vg3 polymerkomposittfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 polymerkomposittfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer å bruke fagspråk i drøfting og refleksjon over faglige problemstillinger, framgangsmåter og prosedyrer. Det innebærer også å kommunisere, veilede og gi tilbakemeldinger til kunder og kolleger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 polymerkomposittfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, dokumentere prosesser og skrive risikoanalyser og rapporter. Videre innebærer det å utarbeide arbeidsbeskrivelser med materiallister, gjøre notater og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 polymerkomposittfaget innebærer å finne og vurdere informasjon i tekster, og å bruke informasjon i kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å lese og forstå tekniske data, sikkerhetsdatablader, instrukser og prosedyrer for kjemikaliehåndtering, bruk av produksjonsutstyr og tilvirkningsprosesser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 polymerkomposittfaget innebærer å regne ut blandingsforhold, vektforhold, krymp, friksjon, viskositet, trykk og temperatur. Det innebærer også å gjøre styrkeberegninger, momentberegninger og beregninger av geometri."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 polymerkomposittfaget innebærer å bruke standard dataverktøy for å loggføre og lage rapporter, og å lese digital informasjon som prosedyrer og tegninger. Det innebærer også å bruke programmering for å kunne endre innstillinger på maskiner. Videre innebærer det å håndtere data på en sikker måte, å forstå viktigheten av hemmelighold og å sikre profesjonell bruk av sosiale medier i jobbsammenheng."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 polymerkomposittfaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan substitusjonsplikt og sirkulærøkonomi er sentrale faktorer ved all materialutvikling. Videre handler det om tiltak for å gi produkt og utstyr lengre holdbarhet, minimere bruken av mikroplast og redusere produktenes vekt for å redusere miljøbelastningen under transport."
+   ]
+  }
  ]
 }

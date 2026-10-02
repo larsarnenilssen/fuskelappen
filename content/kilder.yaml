@@ -299,6 +299,10 @@ kilder:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4, 6]
+    merknad: >-
+      Teksten hentes hver uke på bokmål og nynorsk med npm run hent:overordnet til data/udir/overordnet-del.json og
+      vises uendret i Læreplanverket (avgjørelse 037). Endringer står til orientering i kontrollsaken. Lovdata har
+      forskriften bare som datasett, som ikke kan hentes fra utviklingsmiljøet, og uten nynorsk.
 
   - id: vlfk-forskrift-inntak
     navn: Lokal forskrift om inntak til vidaregåande opplæring, Vestland fylkeskommune

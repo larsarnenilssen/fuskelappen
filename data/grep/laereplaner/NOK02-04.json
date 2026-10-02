@@ -151,5 +151,45 @@
     "Økonomistyring: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt.\nØkonomi og ledelse: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i næringslivsøkonomi innebærer å uttrykke egne faglige meninger, og å lytte til og gi respons i spontan og forberedte faglige samtaler. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner, bygge opp argumentasjon og tilpasse innholdet til mottaker og formål. Ferdigheten innebærer i tillegg å bruke kilder på en kritisk og etterprøvbar måte i muntlig sammenheng."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i næringslivsøkonomi innebærer å bruke varierte skrivestrategier for å utforme fagtekster tilpasset mottaker og formål. Det innebærer videre å utforske og reflektere over faglige emner, problemstillinger og tallmateriale, bygge opp argumentasjon og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i næringslivsøkonomi innebærer å bruke forskjellige lesestrategier for å finne og kritisk vurdere eksplisitt og implisitt informasjon i tekster og tallmateriale om kjente og ukjente emner og problemstillinger. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster, inkludert ulike presentasjoner av tallmateriale, for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i næringslivsøkonomi innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i økonomiske rapporter, tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjon og utføre økonomiske beregninger for å forstå og vise sammenhenger, sammenligne, vurdere og presentere svar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i næringslivsøkonomi innebærer å bruke digitale ressurser til å søke etter, innhente og behandle informasjon. Videre handler det om å kommunisere og presentere eget arbeid og om å vurdere, bearbeide og sammenstille informasjon, og vise til kilder på en etterprøvbar måte. Det handler også om å utvikle etisk bevissthet, vise digital dømmekraft ved å følge regler og normer og å bruke ulike modeller for økonomiske beregninger."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I næringslivsøkonomi handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvordan virksomheter skal ta ansvarlige økonomiske valg og handle etisk og miljøbevisst. Det handler også om hvordan innovasjoner og nye forretningsmodeller kan bidra til bærekraftige virksomheter, og over at ny teknologi kan løse problemer, men også skape nye. Bærekraftig utvikling handler også om hvordan økonomiske beslutninger i virksomheten påvirker sosiale og miljømessige forhold i samfunnet."
+   ]
+  }
  ]
 }

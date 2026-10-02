@@ -336,5 +336,45 @@
     "Opplæringa i vg3 snikkarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 snikkarfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kunne bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte moglege val og løysingar og tilpasse kommunikasjonen til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 snikkarfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakaren og formålet. Det inneber å kunne utforske og reflektere over faglege emne og problemstillingar og rapportere om og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 snikkarfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, bruksrettleiingar, standardar og toleransestandardar og regelverk. Det inneber òg å kunne samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 snikkarfaget inneber å kunne hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å kunne berekne lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Det inneber òg å kunne berekne radiusar, vinklar og prosentar og å bruke målestokk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 snikkarfaget inneber å kunne bruke digitale ressursar til å rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å kunne søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å kunne vurdere eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 snikkarfaget handlar det tverrfaglege temaet berekraftig utvikling om å reflektere rundt materialval og energieffektive løysingar og ut frå miljøomsyn. Vidare handlar det om berekraft gjennom avfallshandtering og gjenbruk. Det handlar òg om å utvikle medvit om dei økonomiske, miljømessige og sosiale dimensjonane knytte til berekraftig utvikling gjennom ei kritisk vurdering av produkt, materialar og konstruksjonar."
+   ]
+  }
  ]
 }

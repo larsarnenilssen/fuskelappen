@@ -222,5 +222,45 @@
     "Sikkerhetsopplæring for masseforflytningsmaskiner, grunnarbeider og drift og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 anleggsteknikk innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 anleggsteknikk innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 anleggsteknikk innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 anleggsteknikk innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne lengde, areal, volum og vekt knyttet til arbeidsoperasjonen. Det innebærer videre å beregne radier, vinkler og fall og foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 anleggsteknikk innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer digitale ferdigheter å søke etter og innhente informasjon og vurdere troverdigheten av informasjonen. Det innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 anleggsteknikk handler det tverrfaglige temaet bærekraftig utvikling om å velge materialer og produksjonsmetoder som gir energieffektive og varige konstruksjoner. Videre handler det om å bruke maskiner og utstyr med tanke på å ivareta det indre og ytre miljøet. Bærekraftig utvikling handler også om å resirkulere og håndtere avfall for å minimere belastningen på miljøet."
+   ]
+  }
  ]
 }

@@ -224,5 +224,45 @@
     "Opplæringen i fiske og fangst - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i fiske og fangst (FFA03‑03). Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på én–to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 fiske og fangst innebærer å forklare og begrunne arbeidsprosesser om bord på et fiskefartøy og å diskutere ulike forslag og løsninger. Videre innebærer det å forklare og beskrive prosesser og produkter og å bruke fagspråk i drøfting og refleksjon over faglige emner. Det innebærer også å tilpasse kommunikasjon til mottaker og formål og å kommunisere gjennom maritim radio."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 fiske og fangst innebærer å rapportere og dokumentere ulike arbeidsoperasjoner, gjennomføre risikovurdering og utføre avviksrapportering om bord på et fiskefartøy. Det innebærer også digital kommunikasjon og informasjonsutveksling og å rapportere og melde inn fangst. Det innebærer videre å utforske og reflektere over faglige emner og å tilpasse faglige tekster til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 fiske og fangst innebærer å bruke og vurdere informasjon i bruksanvisninger, beredskapsplaner, brann- og sikkerhetsplaner, risikovurderinger og sikkerhetsdatablad om bord på et fiskefartøy. Videre innebærer det å finne fram i og bruke gjeldende regelverk og reguleringer. Det innebærer også å hente inn meteorologiske observasjoner for planlegging av fiske."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 fiske og fangst innebærer å anslå mengde og snittvekt av fangst. Videre innebærer det å gjøre overslag og regne ut maskestørrelse, lengde, areal og volum i forbindelse med vedlikehold og reparasjon av fiskeredskaper. Det innebærer også å gjøre utregninger til navigasjon, stabilitet og å gjøre overslag av fangstverdi og lott. Videre innebærer det å gjøre målinger og å sette opp og tolke tabeller, diagrammer og enkel statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 fiske og fangst innebærer å formidle, presentere, kalkulere, hente inn og utveksle informasjon digitalt. Det innebærer å bruke digitale instrumenter til fiskeleting, fangsting, måling, kartlegging og kommunikasjon og å bruke elektroniske kart til navigasjon. Det innebærer også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 fiske og fangst handler det tverrfaglige temaet bærekraftig utvikling om å høste marine ressurser på en bærekraftig måte og å vurdere konsekvenser av ulike driftsformer og beskatning av ulike arter og bestander. Det handler også om hvordan tilgjengelig teknologi kan bidra til drift som ivaretar marine økosystemer."
+   ]
+  }
  ]
 }

@@ -124,5 +124,45 @@
     "Opplæringen i vg3 bilskadefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 bilskadefaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke faguttrykk i kommunikasjon med kunder og kolleger og i drøfting og refleksjon over faglige emner, ulike krav til yrkesutøvelse og lovverk, og argumentasjon for valgt arbeidsmetode."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bilskadefaget innebærer å utforme tekster, forklare og begrunne faglige oppgaver ved hjelp av faguttrykk og tilpasse innhold til mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon, kommunisere skriftlig med kolleger og samarbeidspartnere og utarbeide arbeidsordrer, rapporter og dokumentasjon. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bilskadefaget innebærer å finne og vurdere teknisk informasjon i tekster og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å tolke og bruke skjemaer, tegninger og fabrikantenes reparasjonsprosedyrer og produkt- og sikkerhetsdatablader."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 bilskadefaget innebærer å kunne beregne og analysere kostnader i forbindelse med arbeidsprosesser og å drøfte lønnsomhet ved valg av metode. Videre handler det om å gjennomføre målinger og registreringer i henhold til målebrev. Det innebærer også å forstå og tolke data fra kalibreringer og justeringer og å regne ut avvik."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 bilskadefaget innebærer å bruke digitale ressurser til å søke etter, kommunisere og innhente informasjon fra reparasjonsmanualer og tekniske data. Videre innebærer digitale ferdigheter å vurdere informasjon og å bruke digitale diagnoseverktøy. Det innebærer også å utvikle etisk bevissthet på digitale plattformer ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bilskadefaget handler det tverrfaglige temaet bærekraftig utvikling om forståelse av hvordan materialer, kjemikalier og metoder kan bidra til å forebygge ressursforbruk, utslipp og avfall, og om å gjøre miljøbevisste valg knyttet til arbeidsoppdrag. Det handler også om den økonomiske og miljømessige betydningen av å gjenbruke deler der det er forsvarlig og hensiktsmessig. Videre handler det om å utvikle en forståelse av at reparasjon og vedlikehold av kjøretøy har betydning for miljøet lokalt og globalt."
+   ]
+  }
  ]
 }

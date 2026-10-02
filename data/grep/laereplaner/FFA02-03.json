@@ -209,5 +209,45 @@
     "Fartøy og reiskapar og fangst og kvalitet: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 fiske og fangst inneber å forklare og grunngi arbeidsprosessar i fiske og fangst og å diskutere ulike framlegg og løysingar. Vidare inneber det å forklare og beskrive prosessar og produkt og å bruke fagspråk i drøfting og refleksjon over faglege emne. Det inneber òg å tilpasse kommunikasjon til mottakar og formål og å kommunisere på fagspråk gjennom maritim radio."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 fiske og fangst inneber å rapportere og dokumentere ulike arbeidsoperasjonar på fiskefartøy og å presentere prosessar og produkt. Det inneber å utforske og reflektere over faglege emne og problemstillingar og å utforme tekstar tilpassa mottakar og formål. Det inneber vidare digital kommunikasjon og informasjonsutveksling."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 fiske og fangst inneber å tileigne seg kompetanse i faget gjennom å finne og vurdere informasjon i bruksrettleiingar, datablad, fagstoff og andre faglege kjelder. Det vil seie å orientere seg i og tolke gjeldande regelverk og reguleringar for fiske. Vidare inneber det å hente inn og tolke meteorologiske observasjonar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 fiske og fangst inneber å bruke tal og utrekningar for å finne volum, areal, lengd, vekt, fart, tid og distanse. Det vil seie å gjere utrekningar til navigasjon og i stabilitet og å gjere overslag av fangstverdi. Vidare inneber det å gjere målingar og å setje opp og tolke tabellar, diagram og enkel statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 fiske og fangst inneber å kunne formidle, presentere, kalkulere, hente inn og utveksle informasjon digitalt. Det vil seie å nytte digitale instrument til fiskeleiting, fangsting, måling, kartlegging og kommunikasjon og å bruke elektroniske kart til navigasjon. Det inneber òg å utvikle etisk medvit og utvise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 fiske og fangst handlar det tverrfaglege temaet berekraftig utvikling om å hauste marine ressursar på ein berekraftig måte. Det inneber å utforske og drøfte konsekvensane av eigen aktivitet, uttak av ressursar og bruk av teknologi i marine økosystem."
+   ]
+  }
  ]
 }

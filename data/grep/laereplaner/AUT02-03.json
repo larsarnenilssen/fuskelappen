@@ -188,5 +188,57 @@
     "Automatiseringssystemer og elenergisystemer: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 automatisering innebærer å kommunisere forståelig i faglige diskusjoner ved å bruke et presist og mottakertilpasset språk. Det innebærer også å kunne delta i diskusjoner om sikkerhet og valg av faglige løsninger i automatiserte anlegg."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 automatisering innebærer å beskrive valg av faglige løsninger og lage korrekt dokumentasjon ved planlegging og gjennomføring av arbeidet. Det innebærer at bruk av språk, bilder og symboler skal være faglige, og at tekstene skal være presise og tilpasset leseren."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 automatisering innebærer å tilegne seg ny kompetanse, finne fram til relevant informasjon, tolke fagtekster og bruke gjeldende regelverk og anbefalinger. Det innebærer også å kunne lese faglige termer og symboler i utførelsen av ulike arbeidsoppgaver."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 automatisering innebærer å gjøre matematiske beregninger og vurdere måleresultater mot forventede verdier. Det innebærer også å kunne hente informasjon fra tabeller, statistikk og diagrammer og bruke symboler og prefikser riktig i oppgaveløsning. Videre handler det om å gjøre økonomiske vurderinger av tid og materialbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 automatisering innebærer å etablere digital kommunikasjon, utføre feilsøking og simulere og programmere ved hjelp av digitale verktøy. Digitale ferdigheter innebærer også å kunne produsere tegninger og tekniske underlag og å være kildekritisk ved informasjonssøk. Digitale ferdigheter innebærer å holde seg oppdatert på ny teknologi og å vise digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 automatisering handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsfølelse og stolthet over eget arbeid og å ha tiltro til egne ressurser. Videre handler det om gode arbeidsteknikker som forebygger helseutfordringer. Det handler også om hvordan elektrisitet og digitalisering bidrar til menneskers livskvalitet og velferd."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 automatisering handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap og forståelse for et organisert og mer likestilt arbeidsliv, og hvordan arbeidslivet er bygd opp, inkludert trepartssamarbeidet og arbeidslivsorganisasjonenes roller i arbeidslivet. Det handler videre om hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 automatisering handler det tverrfaglige temaet bærekraftig utvikling om å foreta etiske og ansvarlige valg av produkter og tekniske løsninger. Videre handler det om energieffektive tiltak og alternative energikilder og ulike dilemmaer dette kan medføre. Det handler også om hvordan valgte løsninger og elektriske produkter påvirker miljøet. Håndtering av avfall på en miljøvennlig og bærekraftig måte inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

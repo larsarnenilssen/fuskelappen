@@ -128,5 +128,51 @@
     "Treningsledelse 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i treningsledelse innebærer å formulere spørsmål, å delta i meningsutvekslinger og diskusjoner og å kunne gi klare og tydelige tilbakemeldinger i forbindelse med instruksjon og ledelse. Det innebærer også å forklare, instruere, veilede og oppmuntre i tillegg til å gjøre muntlige henvendelser og forespørsler."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i treningsledelse innebærer å utarbeide skriftlige planer til gjennomføring av aktiviteter, trening og arrangementer. Det innebærer også å utforme skriftlige forespørsler, henvendelser, innbydelser og program."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i treningsledelse innebærer å finne, velge ut og forstå relevant faglitteratur. Utviklingen går fra å kunne tilegne seg overordnet kunnskap om de ulike elementene i treningsledelse til å kunne bruke denne kunnskapen til å løse ulike utfordringer knyttet til ledelse."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i treningsledelse innebærer å lage kampoppsett og resultatlister og å gjøre poengberegninger og sette opp tabeller. Det vil også si å beregne inntekter og utgifter i et arrangement."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i treningsledelse innebærer å bruke digitale hjelpemidler, program og applikasjoner til å tilegne seg kunnskap og utføre praktiske oppgaver. I arrangementer vil det si å bruke tidtakersystemer, resultatservice, videopptak og digitale bilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I treningsledelse handler det tverrfaglige temaet folkehelse og livsmestring om at elevene skal få kompetanse i å lede treningsgrupper og gi dem kunnskap om idrett, folkehelse og livsmestring. Det skal bidra til at elevene utvikler et positivt selvbilde og en trygg identitet, og til at de lærer å gjøre trygge handlingsvalg. Slik skal de bli i stand til å håndtere ulike utfordringer de møter, på en best mulig måte for seg selv og andre."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I treningsledelse handler det tverrfaglige temaet demokrati og medborgerskap om å øve opp evnen til å tenke kritisk over demokratisk og inkluderende ledelse av aktivitet og trening. Faget skal gi elevene en forståelse av samfunnsansvaret som ligger i rollen som leder og instruktør for individer og grupper. Gjennom arbeidet med faget skal elevene få innsikt i hvordan de kan håndtere utfordringer og meningsbrytninger i læringsfellesskap, og de skal ta del i refleksjon om samhandling, likeverd og respekt, uavhengig av forutsetninger."
+   ]
+  }
  ]
 }

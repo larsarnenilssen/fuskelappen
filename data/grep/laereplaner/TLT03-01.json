@@ -442,5 +442,45 @@
     "Opplæringa i vg3 trelast- og limtreproduksjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast på minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 trelast- og limtreproduksjonsfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kunne bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte moglege val og løysingar og tilpasse kommunikasjonen til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 trelast- og limtreproduksjonsfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å kunne utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 trelast- og limtreproduksjonsfaget inneber å kunne finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, bruksrettleiingar, regelverk, standardar og toleransestandardar. Det inneber òg å kunne samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 trelast- og limtreproduksjonsfaget inneber å kunne å hente ut, beskrive og tolke informasjon frå talmateriale. Vidare inneber det å kunne berekne lengd, areal, volum og vekt knytte til arbeidsoperasjonen. Det inneber òg å kunne berekne radiusar, vinklar og prosentar og å bruke målestokk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 trelast- og limtreproduksjonsfaget inneber å bruke digitale ressursar til å rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere si eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 trelast- og limtreproduksjonsfaget handlar det tverrfaglege temaet berekraftig utvikling om energieffektiv produksjon og om å velje råstoff ut frå miljøomsyn og berekraftig ressursutnytting. Vidare handlar det om å medverke til berekraft gjennom å utnytte biprodukt, handtere avfall og vurdere gjenbruk av produkt. Det handlar òg om å vurdere produkt, materiale og prosessar kritisk ut frå økonomiske, miljømessige og sosiale konsekvensar knytte til berekraftig utvikling."
+   ]
+  }
  ]
 }

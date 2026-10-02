@@ -164,5 +164,51 @@
     "Instrument, kor, samspill 2: Privatisten skal opp til en muntlig-praktisk eksamen i fordypningsinstrument og bruksinstrument. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Privatistene må dokumentere aktivitet i kor og samspill."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i instrument, kor, samspill innebærer å tilegne seg musikk ved å lytte, improvisere og bruke språk og stemme i formidling av musikk. Det innebærer også å bruke relevant fagspråk til å drøfte musikalske problemstillinger og løsninger. Videre innebærer muntlige ferdigheter i faget å lytte til andres ideer, å gi respons på og videreutvikle innspill fra andre og å fremme egne meninger i spontane og forberedte fagsamtaler."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i instrument, kor, samspill innebærer å bruke notasjon, symboler og tekst til å uttrykke musikalske ideer. Det innebærer også å planlegge, bearbeide og notere musikalske forløp. Videre innebærer det å planlegge og dokumentere eget øvingsarbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i instrument, kor, samspill innebærer å tolke og utføre musikalske ideer uttrykt gjennom notasjon, symboler og tekst. Det innebærer også å ta egne musikalske valg i arbeidet med notert musikk. Videre innebærer det å avkode klingende musikk og å tilegne seg forståelse av musikk gjennom fagtekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i instrument, kor, samspill innebærer å fornemme og forstå form og struktur i musikk. Det innebærer også å gjenkjenne, utføre og beskrive rytmer, taktarter og tonale mønstre."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i instrument, kor, samspill innebærer å bruke digitale ressurser til å planlegge, organisere og gjennomføre musikkaktiviteter. Det innebærer også å kunne bruke digitale ressurser i utøvende og skapende arbeid med musikk. Videre innebærer digitale ferdigheter i faget å dokumentere, formidle og evaluere musikalske aktiviteter ved hjelp av lyd- og videoopptak og å vise digital dømmekraft i spørsmål om publisering og opphavsrettigheter."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I instrument, kor, samspill handler det tverrfaglige temaet folkehelse og livsmestring om å bygge et positivt selvbilde og en trygg identitet i arbeid med individuelle og kollektive utøvende prosesser. Gjennom aktiviteter som deltakelse i ulike kor- og samspillsaktiviteter bygges mellommenneskelige relasjoner. Ved å ta ansvar for langsiktig øving alene og i fellesskap får elevene mulighet til å oppleve mestringsfølelse og tro på at innsats har betydning for egen utvikling. Videre omfatter det tverrfaglige temaet bevissthet om fysisk og psykisk musikerhelse. Dette utvikles ved at elevene tilegner seg sunne arbeidsfysiologiske vaner knyttet til utøving på fordypningsinstrument og strategier for å håndtere mentale sider ved det å prestere i forberedelse til og i formidlingssituasjoner."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I instrument, kor, samspill handler det tverrfaglige temaet demokrati og medborgerskap om å ivareta uttrykksmangfold som et demokratisk prinsipp, gjennom erfaring med å utøve, formidle og oppleve musikk. Gjennom deltakelse i ulike kor- og samspillsaktiviteter og kollektive kreative prosesser utvikler elevene fellesskapsfølelse og evne til å håndtere meningsbrytninger, respektere uenighet og arbeide sammen mot et felles mål. Videre utvikler elevene forståelse av hvordan deltakelse i musikk som uttrykksform bidrar til medborgerskap."
+   ]
+  }
  ]
 }

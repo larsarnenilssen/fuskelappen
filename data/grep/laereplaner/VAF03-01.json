@@ -108,5 +108,45 @@
     "Opplæringen i vg3 vaskerifaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på to til tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 vaskerifaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi og forstå uttrykksmåter og å drøfte og reflektere over fagrelaterte emner og problemstillinger. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg3 vaskerifaget innebærer å utforme tekster tilpasset mottaker og formål, dokumentere prosesser og utarbeide miljø- og avviksrapporter. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 vaskerifaget innebærer å finne og vurdere innhold i tekster, håndbøker for maskiner og utstyr, regelverk, prosedyrer, produktdatablader, standarder og retningslinjer. Det innebærer også å sammenligne, tolke og systematisere informasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg3 vaskerifaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale og å beregne maskinkapasitet, vaskeresepter og tidsbruk. Det innebærer også å beregne kostnader knyttet til ressursbruk og metodevalg."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg3 vaskerifaget innebærer å betjene maskiner og ha kjennskap til styrings- og sporingssystemer og bedriftens interne IT-systemer, Videre innebærer det å bruke systemer for registrering av kunder, merking av tøy og innkjøp. Det handler også om å utvikle etisk bevissthet og utvise digital dømmekraft ved å følge normer og regler."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 vaskerifaget handler det tverrfaglige temaet bærekraftig utvikling om grønn produksjon gjennom å identifisere overforbruk av energi og vann og utføre tiltak. Det handler også om å identifisere og utføre tiltak for å forlenge levetiden på tekstiler og produksjonsutstyr."
+   ]
+  }
  ]
 }

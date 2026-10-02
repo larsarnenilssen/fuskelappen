@@ -132,5 +132,51 @@
     "Opplæringen i vg3 grafisk produksjonsteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 grafisk produksjonsteknikkfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å diskutere produksjonsplaner, sikkerhet, kvalitet og valg av faglige løsninger med kolleger, leverandører og kunder. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 grafisk produksjonsteknikkfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige problemstillinger og å bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å skrive bestillinger og arbeids-, ordre- og avviksrapporter og å kommunisere med kunder og underleverandører."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 grafisk produksjonsteknikkfaget innebærer å forstå produksjonsplaner, ordreskjemaer, sikkerhetsdatablader, maskindokumentasjon og håndbøker. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 grafisk produksjonsteknikkfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger. Videre handler det om å beregne formater, materialvalg, opplag og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 grafisk produksjonsteknikkfaget innebærer å bruke digitale ressurser for å hente inn og bearbeide informasjon. Det handler også om bruk av produksjons- og kvalitetsstyringssystemer. Det innebærer også å utvikle digital dømmekraft og etisk bevissthet ved å følge normer og regler."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 grafisk produksjonsteknikkfaget handler det tverrfaglige temaet demokrati og medborgerskap om fagets betydning innenfor mediekommunikasjon, budskapsformidling og ytringsfrihet. Det tverrfaglige temaet handler også om hvordan samfunnet påvirkes av budskap formidlet på trykte medier. Videre handler det om rettigheter og plikter i arbeidslivet, og hvordan bransjen kan påvirke samfunnet gjennom formidling av det trykte ord."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 grafisk produksjonsteknikkfaget handler det tverrfaglige temaet bærekraftig utvikling om å velge materialer og produksjonsløsninger ut fra miljøhensyn og sirkulærøkonomi. Videre handler det om å ivareta miljøet gjennom å gjenvinne materialer, å forskriftmessig håndtere avfall og å redusere utslipp."
+   ]
+  }
  ]
 }

@@ -124,5 +124,45 @@
     "Privatister i teaterproduksjon 2 får godskrevet programfaget teaterproduksjon 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlig ferdigheter i teaterproduksjon innebærer å drøfte, diskutere og dele egne observasjoner og tolkninger ved å bruke fagspråk. Videre innebærer det å formidle scenisk tekst presist og artikulert i ulike sceniske sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i teaterproduksjon innebærer å produsere og bearbeide sceniske tekster, dokumentere arbeidsprosesser og skrive kreative tekster. Det innebærer også å bruke fagspråk i refleksjon over erfaringer, tolkninger og valg."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teaterproduksjon innebærer å analysere, tolke og forstå ulike tekster innenfor ulike sjangre. Det innebærer videre å bruke teaterfaglig metodikk til å dekode tekst og arbeide med tekstforståelse."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i teaterproduksjon innebærer å bruke digitale ressurser i kreative og skapende prosesser og å ta i bruk stadig nye digitale muligheter i teaterarbeid. Det innebærer også å vise etisk bevissthet og god dømmekraft i bruk av digitale ressurser og sosiale medier i teaterfaglig arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I teaterproduksjon handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mellommenneskelige relasjoner gjennom kollektive prosesser og om å forstå og respektere egne og andres grenser. I faget bidrar det tverrfaglige temaet til å belyse grensen mellom det private og det personlige og hva det vil si å ta etisk ansvar i en teaterproduksjon."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I teaterproduksjon handler det tverrfaglige temaet demokrati og medborgerskap om den kollektive og sosiale dimensjonen av teater som kunstart og som demokratisk uttrykksform. Det innebærer å forstå teaterets opphav i menneskets sosiale, rituelle og estetiske væremåte og hvordan det performative og relasjonelle henger sammen med utviklingen av teaterkunsten. Videre handler det om teateret som kulturell praksis og om forståelse av mangfold, ytringsfrihet og ytringsfrihetens grenser."
+   ]
+  }
  ]
 }

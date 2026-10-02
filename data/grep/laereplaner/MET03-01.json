@@ -84,5 +84,45 @@
     "Opplæringa i vg3 medieteknikkfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 medieteknikkfaget inneber å fremje og argumentere for eigne meiningar, val og løysingar. Vidare inneber det å bruke presis fagterminologi for å utveksle erfaringar med kollegaer. Det omfattar òg å reflektere over innspel frå oppdragsgivarar, brukarar og andre fagfolk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 medieteknikkfaget inneber å formidle og presentere medietekniske løysingar til ulike mottakarar. Vidare inneber det å dokumentere arbeidsprosessen og beskrive og reflektere over eige arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 medieteknikkfaget inneber å forstå oppdragsbeskrivingar og retningslinjer. Vidare inneber det å samanlikne og systematisere informasjon i ulike fagbøker, manualar, databasar og andre faglege tekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 medieteknikkfaget inneber å analysere innhaldet i tekstar og tabellar og vurdere om resultatet er rimeleg. Vidare inneber det å lage budsjett, berekne tidsbruk, lage kostnadsoverslag og lage pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 medieteknikkfaget inneber å velje digitale ressursar ut frå arbeidsforma og behovet til oppdragsgivaren. Vidare inneber det å bruke digitale verktøy til programmering, konfigurering og feilsøking."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 medieteknikkfaget handlar det tverrfaglege temaet berekraftig utvikling om forståing av miljøavtrykket som følgjer med ein produksjon, og korleis dette kan reduserast gjennom kunnskap om grøn energi og straumsparande tiltak."
+   ]
+  }
  ]
 }

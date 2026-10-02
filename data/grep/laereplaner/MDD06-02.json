@@ -77,5 +77,39 @@
     "Teaterensemble: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i teaterensemble innebærer å bruke stemmen i sceniske rom. Det innebærer også å kunne bruke fagterminologi i arbeid med og refleksjon over sceniske prosesser og produkter."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i teaterensemble vil si å bearbeide tekst i scenisk sammenheng og å skrive i refleksjonsarbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teaterensemble innebærer å lese manus og andre tekster som er relevante i praktisk arbeid med scenekunst."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i teaterensemble innebærer å bruke digitale verktøy i kreative og skapende prosesser og å ta i bruk stadig nye digitale muligheter innenfor teater. Det handler også om å vise etisk bevissthet og god dømmekraft i bruk av digitale og sosiale medier i teaterfaglig arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I teaterensemble handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal få mulighet til å uttrykke seg gjennom arbeid med teater, øve seg i å tenke kritisk og lære seg å håndtere meningsbrytninger og respektere uenighet. Gjennom arbeid med faget får elevene innsikt i at demokratiet har ulike former og uttrykk, i teaterets samfunnskritiske funksjon og i prinsipper for ytringsfriheten og dens grenser."
+   ]
+  }
  ]
 }

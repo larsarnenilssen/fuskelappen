@@ -82,5 +82,45 @@
     "Lyd: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i lyddesign inneber å uttrykkje seg auditivt og å samtale om, drøfte og analysere ulike lyduttrykk med bruk av relevant fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i lyddesign inneber å gjere greie for og drøfte problemstillingar knytte til eigne og andre sine medieprodukt. Vidare inneber det å produsere og presentere tekstar i ulike sjangrar i lydproduksjon."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i lyddesign inneber å tolke, analysere og forstå korleis lyd kommuniserer og skaper meining i ulike medieprodukt."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i lyddesign inneber å bruke kunnskap om lyd som fenomen i tekniske prosessar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i lyddesign inneber å lage, behandle, lagre og publisere lydproduksjonar ved hjelp av digitale ressursar. Det inneber òg å følgje gjeldande reglar for opphavsrett, personvern og publisering."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I lyddesign handlar det tverrfaglege temaet demokrati og medborgarskap om korleis auditive uttrykk kan påverke haldningane og handlingane våre. Gjennom arbeid med faget utviklar elevane kunnskap om lydproduksjon som berar av meiningar og kulturelle uttrykk."
+   ]
+  }
  ]
 }

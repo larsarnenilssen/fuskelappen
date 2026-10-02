@@ -120,5 +120,45 @@
     "Opplæringen i vg3 hjulutrustningsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 hjulutrustningsfaget innebærer å beskrive, forklare og dokumentere ulike arbeidsoppgaver for kunder og kolleger ved å bruke et presist språk. Det innebærer å bruke ulike uttrykksmåter og å fremme egne synspunkter og drøfte problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 hjulutrustningsfaget innebærer å utforme og bearbeide tekster, gjøre notater og fylle ut servicehistorikk. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 hjulutrustningsfaget innebærer å lese og forstå lovverk, arbeidsbeskrivelser, prosedyrer og håndbøker. Det innebærer å sammenligne, tolke og forstå symboler og tegn, systematisere informasjon og forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 hjulutrustningsfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger. Videre innebærer det å stille inn og korrigere utstyr og maskiner og å utføre beregninger. Det innebærer også økonomistyring knyttet til materialvalg, utstyrsvalg, forbruk og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 hjulutrustningsfaget innebærer å bruke digitale verktøy ved kommunikasjon, planlegging, produksjon og dokumentasjon av arbeidsoppdrag. Det innebærer også å bruke digitale hjelpemidler til å diagnostisere, kalibrere, feilsøke og bruke maskiner, verktøy og utstyr."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 hjulutrustningsfaget handler det tverrfaglige temaet bærekraftig utvikling om ulike materialer og sammensettinger i hjul for å redusere kjøretøyenes miljøavtrykk. Videre handler det om å reflektere over behovet for returordninger for brukte dekk og regenerering av dekk for å skille materialene til granulat og andre materialer til ombruk og gjenvinning."
+   ]
+  }
  ]
 }

@@ -104,5 +104,57 @@
     "Idrett og samfunn: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i idrett og samfunn innebærer å skape mening gjennom samtaler, debatter og diskusjoner. Det innebærer også å formulere spørsmål, gjengi fakta, reflektere, forklare årsakssammenhenger og drøfte sentrale problemstillinger i faget. Utviklingen av muntlige ferdigheter går fra å kunne gjøre rede for enkle temaer til å kunne drøfte og vurdere ulike problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i idrett og samfunn innebærer å kunne skrive ulike tekster til ulike formål. I dette inngår det å kunne skape og belyse ulike typer problemstillinger skriftlig. Det innebærer også å kunne framstille klare og sammenhengende tekster som formidler synspunkter og kunnskap."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i idrett og samfunn innebærer å forstå og tolke ulike former for faglitteratur, skjønnlitteratur, massemedier, offentlige dokumenter, andre skriftlige kilder og informasjon som handler om fagområdene innenfor idrett og samfunn."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i idrett og samfunn innebærer å kunne tolke tabeller, diagrammer og grafiske framstillinger og å kunne bruke dette i egne framstillinger og presentasjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i idrett og samfunn innebærer å innhente, vurdere og bruke informasjon kritisk og etterrettelig, slik at eksterne kilder tilfører læringsprosessen en verdifull dimensjon. Dette innebærer å reflektere kritisk og vise dømmekraft i bruk av digitale medier og ressurser, og å følge regler for opphavsrett og personvern. Det vil også si å bruke digitale ressurser for å produsere verktøy og hjelpemidler til undersøkelser og innhenting av informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I idrett og samfunn handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes forståelse av hvilken betydning fysisk aktivitet har for individet og for samfunnet. Faget kan bidra til å utvikle elevenes forståelse av gode verdivalg og av medienes påvirkning, og det kan bidra til at elevene ser verdien av et samfunn der har vi kroppsidealer med rom for menneskelig mangfold. Med utgangspunkt i idretten skal elevene få kunnskap om hvem de er, og hvordan de kan mestre eget liv og egen helse."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I idrett og samfunn handler det tverrfaglige temaet demokrati og medborgerskap om evnen til kritisk tenkning og evnen til å håndtere meningsbrytninger og respektere uenighet. Faget skal utvikle elevenes forståelse av temaet ved å stimulere elevene til å reflektere over idrettens oppbygning i lag og organisasjoner på alle nivåer. Faget kan gi kunnskap om og forståelse av hvilken virkning individets engasjement kan ha på utvikling i eget idrettslag, i idrettsorganisasjoner generelt, i Norges idrettsforbund og olympiske og paralympiske komité spesielt, de samiske idrettsorganisasjonene, og i samfunnet for øvrig."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I idrett og samfunn handler det tverrfaglige temaet bærekraftig utvikling om å reflektere over idrettens forbruk på flere områder i samfunnet både lokalt, nasjonalt og globalt. Samfunnet vårt er avhengig av dugnad, og faget idrett og samfunn kan gi elevene den kunnskapen og den forståelsen de trenger for å delta i lokalt dugnadsbasert arbeid som er til nytte for samfunnet og i samsvar med grunnlaget for naturressurser. Faget kan bidra til at elevene ser sammenhengen mellom sosiale, økonomiske og miljømessige forhold og hvordan menneskers levesett og ressursbruk har konsekvenser lokalt, regionalt og globalt."
+   ]
+  }
  ]
 }

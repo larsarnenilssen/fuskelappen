@@ -152,5 +152,45 @@
     "Karosseri- og lakkteknikk og dokumentasjon og kvalitet: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 bilskade, lakk og karosseri innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk og å sette ord på, forklare og begrunne hva som gjøres under utførelsen av faglige oppgaver, drøfte og reflektere over faglige emner og tilpasse muntlig tekst til mottaker og formål. Det innebærer også å kommunisere i samarbeid med andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 bilskade, lakk og karosseri innebærer å utarbeide arbeidsordrer, rapporter og dokumentasjon og notater i tillegg til å utforme faglige tekster med bruk av fagspråk, tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 bilskade, lakk og karosseri innebærer å finne og vurdere eksplisitt og implisitt informasjon i ulike tekster og å følge, forstå og bruke arbeidsbeskrivelser, fabrikantens spesifikasjoner, prosedyrer, brukerveiledninger og tegninger. Videre innebærer det å bruke relevant regelverk og datablader og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 bilskade, lakk og karosseri innebærer å beregne, kalkulere og utføre kostnadsanalyser og å hente ut, beskrive, tolke og vurdere informasjon fra tallmateriale og beregninger. Det innebærer også å beregne ressursbruk og materialvalg og å gjøre målinger og registreringer i henhold til tegninger, blandingsforhold og målebrev. Det innebærer dessuten å bruke og bearbeide informasjon for å forstå og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 bilskade, lakk og karosseri innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, kommunisere og dokumentere og presentere eget arbeid. Det innebærer også å bruke måleverktøy, diagnoseutstyr og vekter. Digitale ferdigheter innebærer å vurdere, bearbeide og sammenstille informasjon, å utvikle etisk bevissthet og å utvise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 bilskade, lakk og karosseri handler det tverrfaglige temaet bærekraftig utvikling om sammenhengen mellom teknologien og de sosiale, økonomiske og miljømessige sidene ved bærekraftig utvikling. Det handler om å kunne ta etiske og miljøbevisste valg og reflektere over at valgene man tar, har betydning for forbrukere, ansatte og andre deltakere i samfunnet. Det handler også refleksjon og erfaring med miljøpåvirkningen som følge av metodene man bruker i arbeid med bilskader, lakk og karosseri, valg av og gjenbruk av materialer, og hvordan man håndterer avfall."
+   ]
+  }
  ]
 }

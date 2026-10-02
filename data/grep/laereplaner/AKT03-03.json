@@ -124,5 +124,57 @@
     "Opplæringa i vg3 aktivitørfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva som normalt skal gjennomførast innanfor ei tidsramme på to til tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 aktivitørfaget inneber å lytte til og samtale med brukarar. Det inneber òg å kommunisere munnleg med samarbeidspartnarar og å leie ulike grupper. Det vil òg seie å informere brukarar og kollegaer om aktiviseringsprosessar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 aktivitørfaget inneber å formidle meiningar skriftleg og å skrive vurderingar og dokumentasjon av arbeidsprosessar. Det inneber òg å skrive ulike rapportar, søknader og bestillingar, å bruke eit presist fagspråk og å bruke illustrasjonar, skisseteikningar og symbol."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 aktivitørfaget inneber å innhente informasjon om brukarar, å forstå faglitteratur, lovtekstar og plandokument og å finne litteratur som eignar seg til å lese saman med eller for brukarar. Det inneber òg å forstå symbol, illustrasjonar og kroppsspråk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 aktivitørfaget inneber å setje opp enkle budsjett, føre rekneskap, rekne ut vekt, volum og mengd, kalkulere pris og forstå statistikk og diagram."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 aktivitørfaget inneber å kommunisere, formidle og innhente informasjon digitalt til bruk i faglege nettverk og å dokumentere eige arbeid. Det inneber òg å bruke digitale ressursar i aktiviseringsarbeidet. Vidare inneber det å bruke digital dømmekraft, følgje reglar for personvern og vise nettvett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 aktivitørfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å førebyggje einsemd, og rettleie og motivere brukarar til å vere i aktivitet og ha eit sunt kosthald. Det tverrfaglege temaet handlar òg om å leggje til rette for aktivitetar som medverkar til meistring og innhald i livet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 aktivitørfaget handlar det tverrfaglege temaet demokrati og medborgarskap om å vise respekt for ulikskapar hos brukarane. Vidare handlar det om brukarmedverknad og medbestemming. Det handlar òg om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 aktivitørfaget handlar det tverrfaglege temaet berekraftig utvikling om å gjere miljøbevisste val ved bruk av materiale og andre ressursar. Det handlar òg om korleis forbruk, gjenbruk og aktivitetar påverkar miljøet."
+   ]
+  }
  ]
 }

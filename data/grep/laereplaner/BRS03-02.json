@@ -92,5 +92,45 @@
     "Opplæringen i vg3 brønnfaget, sementering skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 brønnfaget, sementering innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å utforske og reflektere over faglige emner og problemstillinger og å kommunisere om risikovurderinger og faglige løsninger på fagspråk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 brønnfaget, sementering innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforme og bruke rapporter, gjeldende regelverk og prosedyrer på fagspråk i planlegging og gjennomføring av arbeidsoppgaver."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 brønnfaget, sementering innebærer å finne og vurdere eksplisitt og implisitt innhold i tekster, og å bruke og forstå prosedyrer, arbeidsbeskrivelser, bedriftens kvalitetssikringssystemer og gjeldende lover og regelverk. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 brønnfaget, sementering innebærer å hente ut, beskrive og tolke tallmateriell og å utføre relevante beregninger. Det innebærer også å foreta målinger og registreringer i henhold til tegninger, tabeller og standarder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 brønnfaget, sementering innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere. Det innebærer også å bruke digitale produksjons- og styringssystemer og å innhente dokumentasjon fra bedriftens datasystemer. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 brønnfaget, sementering handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om å gjennomføre tiltak for å hindre utslipp av hydrokarboner og kjemikalier i ytre miljø. Det handler også om å kritisk vurdere konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel, og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

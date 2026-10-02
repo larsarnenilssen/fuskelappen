@@ -124,5 +124,57 @@
     "Privatister i teaterproduksjon fordypning 2 får godskrevet programfaget teaterproduksjon fordypning 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlig ferdigheter i teaterproduksjon fordypning innebærer å kommunisere om prosjekter og i forestillingsarbeid ved å bruke fagspråk. Videre innebærer det å formidle scenisk tekst presist og artikulert i ulike sceniske sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i faget teaterproduksjon fordypning innebærer å produsere egne tekster og bearbeide ulike tekster i forestillingsarbeid. Det handler også om å bruke fagspråk og å formidle ideer og skisser."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teaterproduksjon fordypning innebærer å analysere, tolke, reflektere over og formidle ulike tekster i scenisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i teaterproduksjon fordypning innebærer å bruke matematiske framgangsmåter og tenkning for å planlegge og gjennomføre ulike teaterproduksjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i teaterproduksjon fordypning innebærer å være kjent med digitale ressurser og de teknologiske mulighetene teateret har, og å bruke disse i produksjonsarbeid. Videre handler det om å utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I teaterproduksjon handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mellommenneskelige relasjoner gjennom kollektive prosesser og om å forstå og respektere egne og andres grenser. I faget bidrar det tverrfaglige temaet til å belyse grensen mellom det private og det personlige og hva det vil si å ta etisk ansvar i en teaterproduksjon. Det innebærer også forståelse av teaterets rolle og muligheter i formidling og utforsking av egne og andres tanker, følelser og meninger."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I faget teaterproduksjon fordypning handler det tverrfaglige temaet demokrati og medborgerskap om å gi ensemblets individer en stemme i det kunstneriske arbeidet. Gjennom arbeid med kollektive og kreative prosesser utvikler elevene forståelse av dilemmaer ved å anerkjenne både flertallets rett og mindretallets rettigheter."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I faget teaterproduksjon fordypning handler det tverrfaglige temaet bærekraftig utvikling om å stimulere til kritisk tenkning rundt bærekraftig utvikling på teaterfeltet. Temaet innebærer å tilegne seg kunnskap om både positive og negative miljømessige, økonomiske og sosiale konsekvenser ved bruk av teknologi i skapende arbeid. Det omfatter å reflektere over hvordan digitale ressurser kan bidra til å styrke en bærekraftig utvikling og skape nye former for fellesskap. Det handler også om å tenke kritisk om forbruk og gjenbruk av elektronisk utstyr og ressurskrevende teknologi i skapende arbeid."
+   ]
+  }
  ]
 }

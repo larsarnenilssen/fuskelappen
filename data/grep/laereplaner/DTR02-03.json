@@ -182,5 +182,51 @@
     "Produksjon, materialkunnskap og arbeidsplanlegging og tegning Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 trearbeid innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk i drøfting og refleksjon over faglige emner. Videre innebærer det å tilpasse muntlig tekst i presentasjon av eget arbeid og i samtale med leverandører, kunder, kolleger og andre samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 trearbeid innebærer å bruke fagspråk for å utforme tekster, tegninger og arbeidsdokumenter tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 trearbeid innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster, bilder, manualer og arbeidstegninger og bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 trearbeid innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale for å beregne areal- og volumenheter, kostnader og material- og timeforbruk forbundet med produksjonen. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 trearbeid innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Videre innebærer det å arbeide digitalt med tegning, beregning og dokumentasjon og å bruke aktuelle digitale ressurser i utviklingen av produkter. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 trearbeid handler det tverrfaglige temaet folkehelse og livsmestring om å anvende kunnskaper og ferdigheter for å løse faglige problemer gjennom praktisk arbeid. Videre handler det om å utvikle identitet og ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med ulike trearbeidsoppgaver. Folkehelse og livsmestring handler videre om å reflektere kritisk over hvordan arbeid med helse, miljø og sikkerhet i programfagene i trearbeid påvirker og reduserer risikoen for skader og faremomenter i det praktiske arbeidet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 trearbeid handler det tverrfaglige temaet bærekraftig utvikling om kritisk refleksjon rundt bruk av trematerialer som en fornybar ressurs. Videre handler det om å se sammenhenger mellom utvikling av nye produkter, resirkulering, holdbarhet og kvalitet. Det betyr å reflektere over sammenhenger mellom produksjonsteknikker, hvor materialene kommer fra, valg av maskiner og verktøy og hvordan dette påvirker miljøavtrykket til hele produksjonsprosessen. Videre handler det om faget som en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

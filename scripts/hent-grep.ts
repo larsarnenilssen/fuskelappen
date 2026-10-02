@@ -19,7 +19,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Regelsett } from '../src/core/regler/skjema.ts';
 import { fagindeksSkjema, laereplanSkjema, type Fagindeks, type Laereplan } from '../src/modules/fag/skjema.ts';
-import { byggFagindeks, byggLaereplan, erPublisert, laereplankoder, paSpraak, type Grepelement, type Raadata } from './grep/bygg.ts';
+import { byggFagindeks, byggLaereplan, byggLaereplanverket, erPublisert, laereplankoder, paSpraak, type Grepelement, type Raadata } from './grep/bygg.ts';
 import { lesFil } from './innhold/last.ts';
 import { antallEndringer, grepsammendrag, sammenlignGrep, type Fagspor, type Grepdata, type Programomradespor } from './kilder/grep.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
@@ -206,13 +206,20 @@ export function validerFagdata(indeks: Fagindeks, planer: ReadonlyMap<string, La
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const start = Date.now();
-  const [utdanningsprogram, programliste, fagliste, oppliste, planliste] = await Promise.all([
+  const [utdanningsprogram, programliste, fagliste, oppliste, planliste, ferdighetsliste, temaliste] = await Promise.all([
     hent('utdanningsprogram'),
     hent('programomraader'),
     hent('fagkoder'),
     hent('opplaeringsfag'),
     hent('laereplaner-lk20'),
+    hent('grunnleggende-ferdigheter-lk20'),
+    hent('tverrfaglige-temaer-lk20'),
   ]);
+  // Grunnleggende ferdigheter og tverrfaglige temaer (pakke 6, avgjørelse 037).
+  const laereplanverket = byggLaereplanverket(ferdighetsliste, temaliste);
+  if (laereplanverket.ferdigheter.length < 5 || laereplanverket.temaer.length < 3) {
+    throw new Error(`Fikk ${laereplanverket.ferdigheter.length} grunnleggende ferdigheter og ${laereplanverket.temaer.length} tverrfaglige temaer fra Grep. Beholder forrige fil.`);
+  }
 
   // Fase 1-dataene (fagsøket i kalkulatorene).
   const programomrader = grupperProgramomrader(programliste);
@@ -280,6 +287,10 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     rmSync(join(rot, 'data/grep/laereplaner'), { recursive: true, force: true });
     renameSync(ny2, join(rot, 'data/grep/laereplaner'));
   }
+  // Ferdighetene og temaene skrives når de er endret, uavhengig av resten.
+  const lvFil = join(rot, 'data/grep/laereplanverket.json');
+  const lvTekst = `${JSON.stringify({ kilde: 'udir-grep', lisens: 'NLOD 2.0', ...laereplanverket }, null, 1)}\n`;
+  if (!existsSync(lvFil) || readFileSync(lvFil, 'utf8') !== lvTekst) writeFileSync(lvFil, lvTekst);
   mkdirSync(join(rot, '.generert'), { recursive: true });
   writeFileSync(join(rot, '.generert/grep-endringer.json'), `${JSON.stringify({ endret, endringer }, null, 2)}\n`);
   const sek = Math.round((Date.now() - start) / 1000);

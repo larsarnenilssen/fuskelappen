@@ -144,5 +144,45 @@
     "Opplæringen i vg3 bilfaget, tunge kjøretøy skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 bilfaget, tunge kjøretøy innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og diskutere løsninger i ulike situasjoner og sammenhenger med kunder, kolleger og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bilfaget, tunge kjøretøy innebærer å planlegge og dokumentere utført arbeid. Videre innebærer det å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bilfaget, tunge kjøretøy innebærer å forstå og tolke regelverk, arbeidsbeskrivelser, prosedyrer og håndbøker i arbeidet. Videre innebærer det å bruke datablader og faglitteratur for å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å tolke og forstå symboler og tegn."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg3 bilfaget, tunge kjøretøy innebærer å lese av og tolke måleenheter, og å gjøre omregninger av og regne ut mål, krefter, elektriske størrelser og tiltrekkingsmomenter. Videre innebærer det å utarbeide kostnadsanalyser og beregninger og å hente ut, beskrive, tolke og vurdere informasjonen fra tallmateriale og beregninger. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 bilfaget, tunge kjøretøy innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere, planlegge, feilsøke og dokumentere arbeidsoppdrag. Videre innebærer det å vise digital dømmekraft og kildekritikk og å reflektere over innhentet informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bilfaget, tunge kjøretøy handler det tverrfaglige temaet bærekraftig utvikling om bruken av returordninger for komponenter, oljer og væsker og gjenvinning av metaller og om å reflektere over hvordan dette kan bidra til å redusere bransjens miljøavtrykk. Det handler også om å være bevisst på sammenhengen mellom samfunnets krav til og utvikling av kjøretøy med eksosrensing, hybride teknologier og alternative drivlinjer og betydningen dette har hatt for å skape en mer miljøvennlig bilpark."
+   ]
+  }
  ]
 }

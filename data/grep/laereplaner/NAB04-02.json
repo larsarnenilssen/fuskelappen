@@ -105,5 +105,51 @@
     "Vg3 bruk og vern av natur: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 bruk og vern av natur innebærer å beskrive observasjoner og problemstillinger, diskutere miljøfaglige utfordringer og foreslå løsninger. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og problemstillinger. Videre innebærer det å lytte til andre og å formidle egne og andres synspunkter, tilpasset mottaker og formål. I tillegg innebærer det å analysere og presentere planprosesser, delta i debatter og argumentere for en sak."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bruk og vern av natur innebærer å utforske og reflektere over faglige emner og problemstillinger og å bruke sentrale begreper innenfor økologi, naturvern og forvaltning i ulike presentasjoner. Videre innebærer det å utarbeide faglige rapporter og skriftlige underlag for drøfting av saker. Det betyr å formulere og publisere kommentarer og innlegg knyttet til saker og debatter om natur og miljø, tilpasset mottaker og formål. Videre innebærer det å utarbeide enkle forvaltningsplaner for natur."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bruk og vern av natur innebærer å forstå sentrale begreper innenfor økologi, naturvern og forvaltning og å innhente informasjon fra ulike faglige kilder, sosiale medier, saksdokumenter, regelverk og kart. Videre innebærer det å orientere seg i debatter om fagfeltet i ulike medier. Det innebærer også å vurdere kilder og informasjon kritisk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 bruk og vern av natur innebærer å registrere og vurdere biologiske faktorer og andre faktorer knyttet til kartlegging av naturområde og miljøtilstand eller som grunnlag for planlegging. Regneferdigheter innebærer også å tolke tabeller, diagrammer og statistikk innenfor disse fagområdene. Videre vil det si å bearbeide og gjøre informasjonen forståelig for målgrupper med ulik kjennskap til naturfaglige og matematiske begreper."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 bruk og vern av natur innebærer å bruke databaser, informasjonssystemer, planleggingsverktøy og digitalt utstyr ved registreringer og analyser knyttet til naturforvaltning. Videre innebærer det å bearbeide og presentere innsamlet materiale. Det innebærer også digital håndtering av informasjon og kommunikasjon i forvaltningsprosesser og å følge regelverk for personvern. Å utvikle etisk bevissthet, utvise digital dømmekraft og være kildekritisk inngår også i digitale ferdigheter."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 bruk og vern av natur handler det tverrfaglige temaet demokrati og medborgerskap om de politiske og demokratiske prosessene som ligger til grunn for forvaltning av natur. Faget skal stimulere til kritisk tenkning og inspirere til deltakelse i samfunnsdebatten. Demokrati og medborgerskap handler om å vurdere interessekonflikter og å håndtere ulike syn og respektere andres meninger. Fagets skal også legge til rette for refleksjon over urfolks spesielle rettigheter og kulturarv. Det tverrfaglige temaet handler videre om å bli kjent med viktigheten av gode avtaleverk og at individet har både rettigheter og plikter knyttet til bærekraftig naturforvaltning."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bruk og vern av natur handler det tverrfaglige temaet bærekraftig utvikling om å utforske hvordan mennesker påvirker miljøet på jorden, og utvikle forståelse for at det er livsnødvendig for oss å arbeide på lag med naturen, ikke mot den. Faget legger vekt på kompetanse som kan bidra til å finne løsninger på miljøproblemer. Det tverrfaglige temaet handler også om å påvirke beslutninger i samfunnet gjennom aktiv deltakelse. I dette ligger forståelse av at innsats er viktig for å bidra til en bærekraftig forvaltning av natur som egenverdi og som grunnlag for menneskelig eksistens og velferd."
+   ]
+  }
  ]
 }

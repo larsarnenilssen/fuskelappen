@@ -166,5 +166,45 @@
     "Matematikk S2: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha forberedelsesdel."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i matematikk S innebærer å skape mening gjennom å samtale i og om matematikk. Det vil si å være med i samtaler, kommunisere ideer og drøfte matematiske problemer, strategier og løsninger med andre. Det handler også om å beskrive og diskutere abstrakte matematiske begreper."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i matematikk S innebærer å beskrive og forklare sammenhenger, oppdagelser og ideer ved hjelp av hensiktsmessige representasjoner. Å kunne skrive i matematikk S er et redskap i egen læring og for å utvikle egne tanker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i matematikk S innebærer å skape mening i matematiske, samfunnsfaglige og økonomiske tekster. Å kunne lese i matematikk S innebærer å sortere informasjon, å analysere og vurdere form og innhold og å sammenfatte informasjon fra sammensatte tekster. Det innebærer også å finne og bruke informasjon i komplekse tekster med avansert symbolspråk og begrepsbruk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i matematikk S betyr å bruke symbolspråk og matematiske begreper og framgangsmåter til å gjøre utregninger og vurdere om løsninger er gyldige. Dette innebærer å gjenkjenne problemer som kan løses med matematikk, og formulere spørsmål om disse. Det innebærer også å analysere og løse ulike komplekse problemer med effektive og hensiktsmessige strategier, begreper, symboler og metoder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i matematikk S innebærer å bruke digitale verktøy til å utforske, formulere og løse matematiske problemer. Videre vil det si å finne, analysere, behandle og presentere informasjon med digitale verktøy."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I matematikk S handler det tverrfaglige temaet demokrati og medborgerskap om hvordan statistikk kan brukes som argumenter i samfunnsdebatten og som begrunnelse for beslutninger, og om hvordan statistikk kan misforstås og misbrukes."
+   ]
+  }
  ]
 }

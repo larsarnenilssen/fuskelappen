@@ -160,5 +160,51 @@
     "Smedhåndverk og design og produktutvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 smed innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Elevene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 smed innebærer å bruke fagspråk og tilpasse tekster til ulike formål og mottakere. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 smed innebærer å innhente, tolke, forstå og bruke fagressurser med tekst, bilder, tegn, symboler og arbeidstegninger. Det innebærer å tolke og systematisere informasjon i ulike tekster, tegninger, bilder og illustrasjoner for å trekke faglige slutninger og bruke kilder på en kritisk måte som kan etterprøves. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 smed innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller og grafiske framstillinger. Det innebærer også å beregne vekt, volum, mengde, vinkler, størrelser og styrkeforhold og å estimere tids- og materialforbruk i praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 smed innebærer å bruke digitale ressurser til å produsere og bearbeide modeller og produkter. Videre innebærer det å bruke digitale ressurser til å innhente informasjon, kommunisere, tegne og å presentere og dokumentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 smed handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med ulike smedfaglige oppgaver."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 smed handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over gjenbruk av materialer og det å framstille håndverksprodukter på en slik måte at miljøet belastes minst mulig. Det handler om å velge og bruke metallprodukter med lang levetid, å vurdere miljøeffekten av ulike materialer, kjemikalier og produksjonsmetoder og å behandle avfall på en bærekraftig måte. Videre handler det om faget som en del av arbeidet med å styrke innsatsen for å verne og sikre verdens kultur- og naturarv og som bidrag i arbeidet med å sikre og skape arbeidsplasser og fremme lokale kulturer og produkter."
+   ]
+  }
  ]
 }

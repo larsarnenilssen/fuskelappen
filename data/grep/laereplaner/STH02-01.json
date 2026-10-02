@@ -156,5 +156,57 @@
     "Design og produktutvikling og produksjon og materialer: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 søm og tekstilhåndverk innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale om faglige emner. Videre innebærer det å bygge opp argumentasjon, bruke fagspråk og tilpasse muntlig tekst til presentasjon av eget arbeid og i samtale med kunder, kolleger, leverandører og andre samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 søm og tekstilhåndverk innebærer å bruke fagspråk og gjøre rede for arbeidsprosesser, produkter og tjenester. Videre betyr det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å kvalitetssikre egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 søm og tekstilhåndverk innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster, bilder, illustrasjoner, arbeidstegninger og mønstre på en kritisk måte som lar seg etterprøve. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 søm og tekstilhåndverk innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale i arbeid med mønsterkonstruksjon og oppskrifter og til beregning av budsjetter, materialforbruk og pris på produkter og tjenester. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 søm og tekstilhåndverk innebærer å bruke digitale ressurser til å innhente informasjon om design, produktutvikling, produksjon og markedsføring. Videre innebærer det å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 søm og tekstilhåndverk handler det tverrfaglige temaet folkehelse og livsmestring om å ta ansvarlige valg i eget liv og bruke kunnskaper og ferdigheter til å løse faglige problemer gjennom praktisk og skapende arbeid. Videre handler det om å utvikle identitet gjennom mestring og skaperglede og som en del av et praksisfellesskap i de tekstile håndverksfagene. Folkehelse og livsmestring handler også om å reflektere kritisk over hvordan arbeid med helse, miljø og sikkerhet i programfagene i søm og tekstilhåndverk påvirker og reduserer risikoen for skader og faremomenter i det praktiske arbeidet"
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 søm og tekstilhåndverk handler det tverrfaglige temaet demokrati og medborgerskap om å se sammenhengen mellom kunnskap om og forståelse av ulike kulturer og tradisjoner lokalt, nasjonalt og internasjonalt og hvordan dette kommer til uttrykk i håndverkstradisjoner. Videre handler det om toleranse, respekt og evne til å reflektere kritisk over kulturarv, tradisjon og design og å gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn. Det handler også om forståelse for arbeidslivets parter og om rettigheter og plikter i arbeidslivet som kan bidra til å styrke elevenes evne til å delta aktivt i samfunnsliv og demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 søm og tekstilhåndverk handler det tverrfaglige temaet bærekraftig utvikling om kritisk refleksjon rundt bruk av skinn og tekstile materialer som en fornybar ressurs. Videre handler det om sammenhengen mellom produktutvikling, ressursutnyttelse, resirkulering, naturarv, holdbarhet og kvalitet. Det handler også om sammenhengen mellom valg av materialer, verktøy og maskiner, produksjonsteknikker, materialbearbeiding og produktets helhetlige miljøavtrykk."
+   ]
+  }
  ]
 }

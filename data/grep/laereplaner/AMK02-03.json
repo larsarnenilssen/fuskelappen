@@ -172,5 +172,45 @@
     "Planlegging og kommunikasjon og reparasjon og vedlikehold: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 arbeidsmaskiner innebærer videre å lytte til å gi respons i spontan og forberedt samtale. Videre innebærer det å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse muntlig tekst til mottaker og formål. Det innebærer å samtale om og drøfte arbeidsoppdrag. Det innebærer også å kommunisere egne rapporter og risikovurderinger muntlig."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 arbeidsmaskiner innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å utarbeide rapporter og dokumentere prosedyrer, arbeidsoppdrag og risikovurderinger. Videre innebærer det å utarbeide risikovurderinger og rapporter"
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 arbeidsmaskiner innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer å forstå og følge fabrikantenes tekniske dokumentasjon, arbeidsbeskrivelser, tegninger og skjemaer. Videre innebærer det å sammenligne og systematisere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 arbeidsmaskiner innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å bruke og bearbeide informasjon og å utføre beregninger knyttet til trykk, temperatur, elektriske størrelser og blandingsforhold i væsker. Det innebærer også å beregne kostnader knyttet til ressursbruk og metodevalg. Videre innebærer det å gjennomføre målinger og registreringer etter tegninger, skjemaer og standarder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 arbeidsmaskiner innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Det innebærer også å bruke digitale ressurser til å planlegge arbeidsoppgaver knyttet til reparasjon, ettersyn og vedlikehold og å dokumentere oppgaver og oppdrag. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 arbeidsmaskiner handler det tverrfaglige temaet bærekraftig utvikling om å minske lokale utslipp og forstå verdien av vedlikehold, ettersyn og reparasjoner for å forlenge levetiden på arbeidsmaskiner og utstyr og på den måten unngå unødig ressursbruk lokalt og globalt. Det handler videre om å forstå sammenhenger mellom teknologi og sosiale, økonomiske og miljømessige forhold og hvordan bransjen kan påvirke disse sammenhengene."
+   ]
+  }
  ]
 }

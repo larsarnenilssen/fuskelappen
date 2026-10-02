@@ -242,5 +242,57 @@
     "Opplæringen i helsearbeiderfaget - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 helsearbeiderfaget (HEA03‑03). Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme på to til tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 helsearbeiderfaget innebærer å kommunisere gjennom dialog, presentasjoner og rapporter. Det innebærer å kunne kommunisere med kolleger og mennesker i ulike livssituasjoner og fra ulike kulturer. Det innebærer også å kunne tilpasse eget språk til mottaker, innhold og formål og å lytte til og vise respekt for den man snakker med. Videre innebærer det å kunne bruke relevante faguttrykk og sikre at informasjon ikke bare blir gitt, men også forstått av mottakeren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 helsearbeiderfaget innebærer å dokumentere relevante opplysninger, skrive rapporter og utarbeide planer og dokumentasjon i henhold til gjeldende krav. Det innebærer også å bruke et presist fagspråk og tilpasse tekster til ulike formål, mottakere og medier og å utveksle informasjon og bruke kildekritikk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 helsearbeiderfaget innebærer å forstå og tilegne seg ny kunnskap og innsikt. Det innebærer å forstå faglitteratur, lovtekster, pasientopplysninger og planer. Det innebærer også å kjenne til og bruke relevant fagspråk i yrkesutøvelsen og kritisk vurdere relevans og troverdighet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 helsearbeiderfaget innebærer å sette opp budsjett, føre regnskap og beregne forbruk av tid og materiell. Det innebærer å bruke regnearter og måleenheter i arbeidet med helse, ernæring og kosthold. Videre handler det om enkel medikamentregning."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 helsearbeiderfaget innebærer å bruke digitale ressurser for å finne, håndtere og dokumentere relevant informasjon om pasienter og brukere. Videre innebærer det å bruke faglig informasjon, kritisk vurdere kildene som brukes og vise digital dømmekraft. Det handler også om å bruke digitale ressurser som verktøy i eget arbeid og i tverrfaglig samarbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 helsearbeiderfaget handler det tverrfaglige temaet folkehelse og livsmestring om helsefremmende arbeid ved å legge til rette for at pasienter og brukere kan mestre utfordringer, oppleve mening og livsglede og ha tiltro til egne ressurser. Det handler videre om å veilede pasienter og brukere til å ta gode helsevalg i tråd med anbefalinger fra helsemyndighetene og om å identifisere sykdomstegn og forhindre, utsette og forebygge konsekvenser av sykdom."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 helsearbeiderfaget handler det tverrfaglige temaet demokrati og medborgerskap om pasient- og brukermedvirkning i helsearbeidet. Det handler om å respektere andres meninger og synspunkter i møte med pasienter og brukere og andre samarbeidspartnere. Demokrati og medborgerskap handler videre om å ivareta verdiene i vårt demokratiske samfunn som grunnlag for profesjonell yrkesutøvelse. Det handler også om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 helsearbeiderfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere rundt og ta miljøbevisste valg i yrkesutøvelsen. Å ta miljøbevisste valg innebærer blant annet å kildesortere, å redusere bruk av engangsutstyr og å begrense matsvinn."
+   ]
+  }
  ]
 }

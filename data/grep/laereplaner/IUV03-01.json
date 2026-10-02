@@ -116,5 +116,51 @@
     "Opplæringen i vg3 IT-utviklerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over sju virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 IT-utviklerfaget innebærer å gi uttrykk for meninger og ideer i dialog med aktuelle målgrupper. Det innebærer også å lytte til og gi respons i spontan og forberedt samtale. Det omfatter dessuten å bruke fagterminologi i kommunikasjon med andre, å reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål. Videre innebærer det å gi teknisk støtte og veiledning til kunder og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 IT-utviklerfaget innebærer å skrive kode, algoritmer og datamodeller og å argumentere for valg som er gjort underveis. Videre innebærer det å dokumentere og beskrive problemer, løsninger og systemer for ulike formål og tilpasset ulike mottakere. Det omfatter også å utforske og reflektere over faglige emner og problemstillinger og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 IT-utviklerfaget innebærer å lese spesifikasjoner, kode, oppdragsbeskrivelser og veiledninger. Videre innebærer det å lese ulike tabeller og datamodeller og å forstå relevant fagterminologi. Det omfatter også å sammenligne og tolke informasjon og å trekke faglige slutninger ut fra fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 IT-utviklerfaget innebærer å forstå ulike verdier, størrelser og tekniske beregninger i systemene man jobber med. Det innebærer også å utføre beregninger i kode og uttrekk i rapporter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 IT-utviklerfaget innebærer å velge og bruke modeller og rammeverk til ulike formål. Videre innebærer det å vurdere ulike teknologier og å forvalte opphavsrett til kode."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 IT-utviklerfaget handler det tverrfaglige temaet demokrati og medborgerskap om hvordan ulike tjenester og algoritmer påvirker informasjonsflyten, og hvordan teknologi kan brukes og misbrukes. Det handler også om hvordan troverdig informasjon er en forutsetning for demokratiet. Videre handler det om å sikre tilgangen, påliteligheten og tilgjengeligheten til informasjon."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 IT-utvikling handler det tverrfaglige temaet bærekraftig utvikling om å forstå mulighetene teknologier kan gi for å utvikle løsninger som har positive konsekvenser for miljøet."
+   ]
+  }
  ]
 }

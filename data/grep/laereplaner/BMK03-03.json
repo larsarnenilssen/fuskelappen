@@ -120,5 +120,45 @@
     "Opplæringen i vg3 bilfaget, lette kjøretøy skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 bilfaget, lette kjøretøy innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og faguttrykk i dialog med kunder og kolleger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bilfaget, lette kjøretøy innebærer å planlegge og dokumentere utført arbeid. Det innebærer også å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bilfaget, lette kjøretøy innebærer å forstå og tolke regelverk, arbeidsbeskrivelser, prosedyrer og håndbøker i arbeidet. Videre innebærer det å bruke datablader og faglitteratur for å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 bilfaget, lette kjøretøy innebærer å lese av måleenheter og å gjøre omregninger av og regne ut mål, krefter, elektriske størrelser og tiltrekkingsmomenter. Videre innebærer det å utarbeide kostnadsanalyser og beregninger og å hente ut, beskrive, tolke og vurdere informasjonen fra tallmateriale og beregninger. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 bilfaget, lette kjøretøy innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere, planlegge, feilsøke og dokumentere arbeidsoppdrag. Videre innebærer det å vise digital dømmekraft og kildekritikk og å reflektere over innhentet informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bilfaget, lette kjøretøy handler det tverrfaglige temaet bærekraftig utvikling om å følge bransjens returordninger for ulike typer komponenter, oljer, væsker og gasser, og å reflektere over hvordan bransjens miljøavtrykk kan bli mindre. Videre handler det om å bruke byttekomponenter for å redusere mengden avfall og følge fabrikantenes anvisninger for retur av komponenter, væsker og gasser for gjenvinning eller destruksjon."
+   ]
+  }
  ]
 }

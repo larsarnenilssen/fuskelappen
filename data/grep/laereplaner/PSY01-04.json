@@ -170,5 +170,57 @@
     "Psykologi 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i psykologi innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner, og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Elevene utvikler muntlige ferdigheter i psykologi når de drøfter, reflekterer og presenterer saker alene og i fellesskap. Muntlige ferdigheter innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i psykologi innebærer å bruke fagspråk og varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i psykologi innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner. Det innebærer også å lese tekster med forskjellige perspektiver som introduserer elevene for ulike tenkemåter og argumenter og hjelper dem å forstå helhet og kompleksitet i psykologiske tenkemåter. Videre innebærer det å sammenligne, tolke og systematisere informasjon i ulike tekster og å vurdere ulike perspektiv og formål med tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i psykologi innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger, sammenligne, vurdere og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i psykologi innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer også å vurdere, bearbeide og sammenstille informasjon og vise til kilder på en måte som lar seg etterprøve. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I psykologi handler det tverrfaglige temaet folkehelse og livsmestring om hva som kan hemme og fremme god psykisk helse. Det handler også om å forstå sammenhengen mellom faktorer som kan påvirke livskvalitet og muligheter til å ta helsefremmende og sykdomsforebyggende valg. Det handler også om hvilke konsekvenser utenforskap kan ha for psykisk helse og hvilke faktorer som påvirker menneskers identitet og oppfatning av seg selv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I psykologi handler det tverrfaglige temaet demokrati og medborgerskap om grunnlaget for å møte utfordringer som oppstår i samhandling med andre, og for å kunne forstå utfordringer og potensial som ligger i å anerkjenne og samtidig imøtegå andres meninger. Dette grunnlaget skal bidra til å skape rom for samarbeid og meningsbrytning og øke muligheten for deltakelse."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I psykologi handler det tverrfaglige temaet bærekraftig utvikling om at man blir bevisst egne holdninger, handlinger og behov, og grunnlaget for disse. Å lære hva som påvirker og endrer holdninger, verdier, kognisjon og atferd gir innsikt i hvilke faktorer som påvirker mennesker til å ta, og unnlate å ta, bærekraftige valg."
+   ]
+  }
  ]
 }

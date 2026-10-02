@@ -82,5 +82,39 @@
     "Tekst: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i tekst innebærer å lytte til og snakke om forskjellige former for sammensatte tekster. Videre innebærer det å formidle ideer om egen tekstproduksjon og reflektere over problemstillinger knyttet til egne og andres tekster."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i tekst innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i tekst innebærer å tolke, vurdere og navigere i ulike teksttyper. Videre innebærer det å utøve kildekritikk i egen og andres tekstproduksjon. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i tekst innebærer å kunne produsere, bearbeide og publisere sammensatte tekster ved hjelp av digitale ressurser. Det handler om å forstå verdien av og vise digital dømmekraft i egen og andres tekstproduksjon. Videre innebærer det å bruke og vurdere digitale formkrav i egne og andres tekster."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I tekst handler det tverrfaglige temaet demokrati og medborgerskap om å gi elevene større bevissthet omkring ulike tekster og deres funksjon og verdi i et demokratisk samfunn. Arbeid med tekstlige uttrykk skal gi kunnskap og ferdigheter som gjør elevene i stand til å delta aktivt i demokratiske prosesser. Gjennom arbeid med temaet skal elevene utvikle forståelse av hvorfor offentlig diskurs er et sunnhetstegn i et demokratisk samfunn."
+   ]
+  }
  ]
 }

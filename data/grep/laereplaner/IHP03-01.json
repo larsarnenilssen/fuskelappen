@@ -108,5 +108,45 @@
     "Opplæringa i vg3 innhaldsproduksjonsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 innhaldsproduksjonsfaget inneber å presentere, instruere og gjere greie for planar for korleis ein produksjon skal gjennomførast. Det inneber òg å tilpasse språket til ulike mottakarar. Det inneber òg å lytte og gi respons i spontan og førebudd samtale. Det omfattar vidare å bruke fagterminologi i kommunikasjon med andre og å reflektere over og drøfte moglege val og løysingar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 innhaldsproduksjonsfaget inneber å formidle ei historie, ein bodskap, planar, idear og løysingar i eit språk som er tilpassa ulike mottakarar. Det inneberer vidare å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål og til å planleggje og dokumentere arbeid i ein prosess. Det omfattar òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 innhaldsproduksjonsfaget inneber å bruke tekstar som strategidokument, publiseringsplanar, regelverk og retningslinjer til å finne informasjon om korleis eit oppdrag eller ei oppgåve skal løysast. Det inneber òg å samanlikne og tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 innhaldsproduksjonsfaget inneber å forstå og lage budsjett og å analysere brukardata og -statistikk for vidareutvikling og rapportering."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 innhaldsproduksjonsfaget inneber å nytte digitale kommunikasjonsplattformer og å bruke digitale produksjonsverktøy for å gjennomføre oppgåver og planar."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 innhaldsproduksjonsfaget handlar det tverrfaglege temaet demokrati og medborgarskap om å forstå korleis ulike innhaldsproduksjonar er med på å påverke samfunnsdebatten. Vidare handlar det om å forstå kor viktig det er med ytringsfridom, og kor viktig det er å følgje etiske retningslinjer i arbeidet med innhaldsproduksjon."
+   ]
+  }
  ]
 }

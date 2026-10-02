@@ -120,5 +120,51 @@
     "Opplæringa i vg3 hestefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 hestefaget inneber å lytte, gi respons, rettleie andre, grunngi val fagleg og diskutere forslag og løysingar. Vidare inneber det å bruke fagspråk i samarbeid med kollegaer, kundar og andre yrkesgrupper, og tilpasse kommunikasjonen til mottakar og formål. Refleksjon over eige arbeid og presentasjon av arbeidet for ulike målgrupper inngår òg."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 hestefaget inneber å rapportere og dokumentere arbeid med hest, og føre oversikt over planlagt og utført arbeid. Vidare inneber det å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Det inneber òg å lage kvalitetssystem og rutinebeskrivingar, og å kommunisere skriftleg med andre."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 hestefaget inneber å lese og forstå språket og åtferda til hesten, og å lese og forstå ulike fagtekstar, instruksar og regelverk. Vidare inneber det å hente inn informasjon på ein effektiv måte, bruke kjelder på ein kritisk måte som lar seg etterprøve, og å tileigne seg fagkunnskap i debattar om næringa og næringsinteresser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 hestefaget inneber å setje opp, bruke og behandle tal og utrekningar i drifts- og økonomistyring, ulike tabellar, diagram og enkel statistikk. Vidare inneber det å velje framgangsmåtar og å stille inn og tilpasse utstyr. Det inneber òg å setje opp trenings- og framdriftsplan, fôrplan og oversikt over fôrbehov, berekne arealbehov og materialforbruk, rekne med ulike parametrar og vurdere utforming av bygningar, anlegg og uteområde til hest."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 hestefaget inneber å bruke digitale ressursar i arbeid med hest, dagleg drift og kommunikasjon med kundar og andre. Vidare inneber det å søkje etter og hente inn informasjon og å utvikle etisk medvit og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 hestefaget handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis stallen som arena for menneske i alle aldrar på tvers av kjønn, livssituasjon og funksjonsevne øver opp evna til samarbeid og samhandling. Det handlar vidare om å handtere relasjonar mellom menneske og mellom menneske og dyr, og om å setje grenser og respektere andre. Det handlar òg om korleis omgang med hest kan bidra til folkehelsa gjennom fysisk aktivitet og fellesskap, og til utvikling av sjølvstende og sjølvbilete for den enkelte."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 hestefaget handlar det tverrfaglege temaet berekraftig utvikling om korleis hald og bruk av hest påverkar miljøet. Det handlar òg om utfordringar knytte til bruk av matjord og ressursar til areal, beite og produksjon av hestefôr, og om korleis hesten bidreg til å ta vare på kulturlandskapet og utnyttar område som ikkje er eigna for dyrking."
+   ]
+  }
  ]
 }

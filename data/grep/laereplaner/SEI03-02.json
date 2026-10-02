@@ -104,5 +104,45 @@
     "Opplæringen i seilmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i seilmakerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Videre innebærer det å bruke fagspråk i kommunikasjon med andre og å reflektere over og drøfte mulige valg og løsninger. Det innebærer også å kommunisere om estetikk, design og arbeidsprosesser med kunder, kolleger, leverandører og andre samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i seilmakerfaget innebærer å utforske og reflektere over faglige emner og problemstillinger. Videre betyr det å kunne rapportere og dokumentere arbeid, og å bruke fagspråk til utforming av tekster som handler om arbeidsprosesser eller formidling."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i seilmakerfaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i seilmakerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne arealer og bruke algebra og geometri tilpasset ulike produkter. Regneferdigheter i seilmakerfaget handler også om å gjøre økonomiske beregninger i forbindelse med materialforbruk, tidsbruk og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i seilmakerfaget innebærer å kunne bruke digitale ressurser til å innhente informasjon, bearbeide data og å kommunisere og presentere eget arbeid. Videre innebærer det å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og å vise god digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I seilmakerfaget handler det tverrfaglige temaet bærekraftig utvikling om kritisk refleksjon rundt valg og bruk av tradisjonelle naturmaterialer og ulike vevde polyesterduker i produksjonen og hvordan dette kan påvirke utslipp og miljøavtrykk. Det innebærer å legge vekt på produksjon av holdbare produkter der vedlikehold og reparasjon av enkeltdeler er mulig. Det innebærer også å rette oppmerksomheten mot utfordringer i den moderne komposittbaserte seilproduksjonen knyttet til resirkulering og produksjonsmetoder. Bærekraftig utvikling handler også om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

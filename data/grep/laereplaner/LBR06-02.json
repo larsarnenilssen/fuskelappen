@@ -97,5 +97,45 @@
     "Vg3 økologisk landbruk: Privatisten skal opp til ein skriftleg og ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 økologisk landbruk inneber å delta aktivt i faglege diskusjonar, lytte, forklare og grunngi prinsipp for økologisk landbruksproduksjon og beskrive produksjonsmetodar for ulike målgrupper. Det inneber å bruke fagomgrep i drøfting av og refleksjon over faglege emne, å grunngi val av produksjonsmetode og å tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 økologisk landbruk inneber å utarbeide planar og dokumentasjon for garden og for enkeltproduksjonar. Det inneber òg å presentere prosessar og produkt skriftleg og å dokumentere i samband med kvalitetssystem for landbruket og for økologisk landbruk spesielt. Vidare inneber det å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 økologisk landbruk inneber å bruke og forstå planar, arbeidsinstruksar, brukarrettleiingar og regelverk knytte til produksjonen. Det inneber òg å finne og vurdere faglitteratur og tileigne seg kunnskap om faget i offentlege debattar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 økologisk landbruk inneber å bruke tal og utrekningar til driftsplanlegging og analyse av produksjonar. Vidare inneber det å rekne ut næringsbalanse og utarbeide og forstå tabellar, diagram og statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 økologisk landbruk inneber å bruke digitale ressursar for å finne fagstoff og tolke og vurdere dette. Vidare inneber det å presentere produkt og produksjonsprosessar, leggje til rette for rekneskapsføring og hente inn og utveksle informasjon. Det inneber òg å bruke programvare for å følgje opp husdyrbesetninga, å hente vêrobservasjonar og å bruke digitale kart og instrument for å planleggje optimal produksjon. I tillegg inneber det å utvikle etisk medvit og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 økologisk landbruk handlar det tverrfaglege temaet berekraftig utvikling om at drifta i størst mogleg grad skal baserast på fornybare ressursar og innsatsmiddel som ikkje skadar livsmiljøet. Berekraftig utvikling handlar òg om å ha ei føre-var-haldning i alle delar av drifta. Vidare handlar berekraftig utvikling om kunnskapsutvikling når det gjeld å forvalte ressursgrunnlaget for kommande generasjonar. Temaet omfattar både dei økologiske, dei økonomiske og dei sosiale sidene av landbruksproduksjon i eit lokalt og eit globalt perspektiv. Det handlar om å tryggje produksjonsgrunnlaget og sikre rettferdig fordeling av maten til verdas befolkning."
+   ]
+  }
  ]
 }

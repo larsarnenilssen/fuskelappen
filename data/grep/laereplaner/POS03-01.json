@@ -102,5 +102,51 @@
     "Samfunnsgeografi: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i samfunnsgeografi innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner, bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Det innebærer videre å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i samfunnsgeografi innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer videre å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i samfunnsgeografi innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger. Å kunne lese innebærer videre å vurdere ulike perspektiv og formål med tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i samfunnsgeografi innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne, vurdere og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i samfunnsgeografi innebærer å bruke digitale ressurser til å søke etter og innhente samfunnsgeografisk informasjon og til å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og bruke kilder på en måte som lar seg etterprøve. Det innebærer også å være bevisst på eierforhold og bruk og deling av egne og andres data og å utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I samfunnsgeografi handler det tverrfaglige temaet demokrati og medborgerskap om hvordan vi forvalter fellesskapets ressurser på en måte som ivaretar både flertallets og mindretallets rettigheter. Det handler om å håndtere meningsbrytninger og ulike verdisyn og interesser både i lokale spørsmål, i forholdet mellom urfolk og storsamfunn og i maktbalansen mellom stater, internasjonale selskap og organisasjoner."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I samfunnsgeografi handler det tverrfaglige temaet bærekraftig utvikling om å forvalte menneskelige ressurser og naturressursene for å ivareta behovene til dagens og framtidens samfunn. Det handler også om å utforske hvordan bærekraftig utvikling kan skje i samspillet mellom sosiale, økonomiske og miljømessige forhold. Bærekraftig utvikling i samfunnsgeografi handler videre om å forstå at menneskers handlingsvalg, levemåte og ressursbruk har konsekvenser lokalt, regionalt og globalt."
+   ]
+  }
  ]
 }

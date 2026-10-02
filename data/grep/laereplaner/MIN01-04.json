@@ -178,5 +178,51 @@
     "Medie- og informasjonskunnskap 2: Privatisten skal opp til ein skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i medie- og informasjonskunnskap inneber å utvikle debattkultur. I dette ligg å argumentere for eigne synspunkt og lytte til, vurdere og gi respons på innspel frå andre. Det inneber òg å presentere og analysere eigne og andre sine medietekstar ved hjelp av fagspråk tilpassa mottakar og formål. Vidare inneber det å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i medie- og informasjonskunnskap inneber å bruke varierte skrivestrategiar for å utforme ulike typar skriftlege tekstar med fagspråk tilpassa formål og mottakar. Det inneber òg å diskutere eit fagleg emne presist og sjølvstendig og bruke relevante faglege teoriar, omgrep og kunnskapar i sjølvstendige skriftlege arbeid. Vidare inneber det å bruke kjelder kritisk og på ein måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i medie- og informasjonskunnskap inneber å analysere og forstå ulike medietekstar. Det inneber òg å finne og vurdere implisitt og eksplisitt informasjon i tekstar om kjende og ukjende emne. Vidare inneber det å lese medietekstar med eit kritisk blikk, vurdere ulike perspektiv og vurdere og tolke formålet og motivet til avsendaren i ein kontekst."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i medie- og informasjonskunnskap inneber å hente ut, tolke og bruke ulike typar statistikk som utgangspunkt for analyse og argumentasjon. Det inneber òg å rekne ut tidsbruk i samband med eigne medieproduksjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i medie- og informasjonskunnskap inneber å bruke digitale ressursar i eigen medieproduksjon. Det inneber òg å bruke digitale ressursar til å kommunisere og til å søkje etter, vurdere og bruke informasjon kritisk og etterretteleg. Vidare inneber det å utøve digital dømmekraft, juridisk og etisk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I medie- og informasjonskunnskap handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis medium fyller ulike behov i livet til ulike menneske. Faget skal fremje generell folkehelse gjennom å tydeleggjere kva slags påverknad media kan ha på menneske. Faget skal òg fremje respekt for ulikskapar mellom menneske og styrkje evna til kritisk tenking i møte med medietekstar om helse og ulike måtar å leve på."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I medie- og informasjonskunnskap handlar det tverrfaglege temaet demokrati og medborgarskap om den rolla media speler i demokratiseringa og i eit fungerande demokrati. Det handlar òg om korleis den enkelte kan kommunisere i det offentlege rommet, og korleis misbruk av ytringsfridommen kan medverke til auka polarisering og fleire konfliktar og vere eit hinder for deltaking og integrasjon i samfunnet."
+   ]
+  }
  ]
 }

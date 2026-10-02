@@ -96,5 +96,45 @@
     "Opplæringen i vg3 skogfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på to–tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Å uttrykke seg muntlig i vg3 skogfaget innebærer å bruke fagspråk i drøfting og refleksjon over faglige emner, å diskutere og begrunne faglige valg og løsninger og å kommunisere for å ivareta helse, miljø og sikkerhet i arbeidet. Det innebærer også å lytte, kommunisere og samarbeide med kolleger, andre yrkesutøvere, rettighetshavere og interessegrupper i forbindelse med arbeid i skog."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 skogfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å planlegge, rapportere, dokumentere og evaluere arbeid i henhold til gjeldende krav og helse, miljø og sikkerhet. Det innebærer videre å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder i kommunikasjon og informasjonsutveksling på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 skogfaget innebærer å bruke og forstå arbeidsbeskrivelser, regelverk, bransjestandarder og fagrelatert informasjon. Det innebærer også å finne og vurdere informasjon for å tilegne seg fagkunnskap gjennom ulike medier."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 skogfaget innebærer å utføre ulike målinger og beregninger. Det innebærer å kalkulere driftspriser, sette mål og evaluere arbeid knyttet til økonomisk planlegging og drift. Å kunne regne innebærer også å tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger, og å forstå og vurdere prislister for å oppnå optimal virkesutnytting."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 skogfaget innebærer å bruke digitale ressurser under planlegging, gjennomføring, dokumentasjon og evaluering av arbeid i skogen. Det innebærer også å håndtere digital informasjon mellom datasystemer og å kontrollere og kalibrere produksjonsutstyr. Videre innebærer digitale ferdigheter å samle inn nødvendige data og oppdatert kompetanse fra digitale ressurser og faglitteratur på en kildekritisk måte. Det innebærer også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 skogfaget handler det tverrfaglige temaet bærekraftig utvikling om miljøbevissthet og om klimaendringer, forurensning og tap av biologisk mangfold, som framtidens skogbrukere skal bidra til å motvirke. Videre dreier det seg om å vurdere skogbrukets miljøutfordringer opp mot globale og lokale klima- og naturhensyn. Det handler også om å utforske og ta i bruk relevant teknologi for å bidra til en bærekraftig utvikling av skogens fornybare ressurser. Det handler videre om å kunne forstå hva som påvirker næringsutøvelsen i skogen, om å delta i samfunnsdebatten og om å vise ansvar i bruk av skogen som ressurs."
+   ]
+  }
  ]
 }

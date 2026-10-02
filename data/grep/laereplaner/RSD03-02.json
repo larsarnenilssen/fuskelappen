@@ -128,5 +128,45 @@
     "Opplæringen i vg3 reservedelsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 reservedelsfaget innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og å diskutere løsninger i ulike situasjoner og sammenhenger med kunder, kolleger og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 reservedelsfaget innebærer å dokumentere og planlegge innkjøp og håndtere returer og reklamasjoner. Videre innebærer det å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å dokumentere utført arbeid og utforme rapporter ved bruk av bedriftens systemer og rutiner."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 reservedelsfaget innebærer å finne og bruke tekniske opplysninger og spesifikasjoner og å forstå og bruke delekataloger og helse-, miljø- og sikkerhetsdatablader. Det innebærer også å tolke informasjon fra kunder, leverandører og kolleger og å forstå regelverk. Videre innebærer det å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 reservedelsfaget innebærer å regne ut varens verdi, kostpris, fortjeneste og salg. Videre innebærer det å beregne kostnader i forbindelse med feilbestillinger, returer, reklamasjoner, avhending, lønn og drift, og å bearbeide informasjon for å vise sammenhenger. Det innebærer også økonomisk styring av lager."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 reservedelsfaget innebærer å bruke digitale ressurser til å søke fram kataloger, dokumenter, forskrifter og tekniske data. Videre innebærer det å bruke digitale ressurser og styringssystemer for betaling, valg av deler, bestillinger, lager, innkjøp og dokumentasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 reservedelsfaget handler det tverrfaglige temaet bærekraftig utvikling om håndtering og resirkulering av emballasje, farlig avfall og komponenter som håndteres i daglige arbeidsoppgaver. Det handler også om å velge reservedeler, ekstrautstyr og tilbehør for å redusere avfall og bidra til å forlenge kjøretøyets levetid. Videre handler det om refleksjon over og tiltak for å minimere bruk av kjemikalier og kildesortere avfall for å begrense miljøavtrykket."
+   ]
+  }
  ]
 }

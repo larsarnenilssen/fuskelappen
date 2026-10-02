@@ -218,5 +218,51 @@
     "Forretningsdrift, innovasjon og marknadsføring og kultur og kommunikasjon: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 sal og reiseliv inneber å kunne kommunisere med kollegaer, kundar og gjester frå ulike kulturar og i ulike livssituasjonar. Dette inneber å tilpasse kommunikasjonen til mottakaren, innhaldet og formålet og å lytte til og vise respekt for den som snakkar. Vidare inneber det å kunne bruke relevante faguttrykk og sikre at informasjonen ikkje berre blir gitt, men òg forstått av mottakaren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 sal og reiseliv inneber å kunne kommunisere skriftleg og profesjonelt med ulike mottakarar. Dette inneber å tilpasse tekstar til ulike formål, sjangrar og medium for å nå fram med ein bodskap til kundar, gjester og andre mottakarar. Det inneber òg å utveksle informasjon og vere kjeldekritisk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 sal og reiseliv inneber å kunne forstå, tolke og vurdere informasjon frå ulike kjelder og marknader og frå relevant lovverk. Det inneber vidare å kunne bruke innhald frå faglege tekstar i kommunikasjonen og samhandlinga med kollegaer, kundar og gjester. I tillegg inneber det å vere kjeldekritisk i vurderinga av økonomiske, marknadsmessige og berekraftige forhold i sals- og reiselivsnæringa."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 sal og reiseliv inneber å kunne hente inn, omarbeide, analysere og vurdere talmateriale og presentere desse i relevante oppsett. Dette inneber å kunne utføre enkle valutaoverslag, priskalkulasjonar og økonomiske berekningar. Vidare inneber det å kunne lese rekneskapar og bruke budsjett og nøkkeltal for ei bedrift."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 sal og reiseliv inneber å kunne hente inn, omarbeide, formidle og presentere informasjon gjennom bruk av digitale verktøy. Vidare inneber det å kunne bruke samhandlingsverktøy og ulike plattformer for å løyse oppgåver og samarbeide digitalt. Det inneber òg å kunne følgje reglar og normer for nettbasert kommunikasjon, vere kjeldekritisk og vurdere etiske spørsmål som gjeld personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 sal og reiseliv handlar det tverrfaglege temaet folkehelse om livsmeistring om å byggje profesjonelle relasjonar i kommunikasjon og samhandling med ulike menneske. I dette ligg det å kunne handsame reaksjonar, setje grenser og respektere andre sine grenser i ulike relasjonar og arbeidssituasjonar. Vidare handlar det om å utvikle kunnskap og respekt for ulike grupper, fellesskap og kulturar i servicearbeidet. Folkehelse og livsmeistring handlar òg om kva nettverk har å seie, og om korleis nettverk kan brukast som støtte for fagleg og profesjonell utvikling. I tillegg handlar folkehelse og livsmeistring om å sikre god fysisk og psykisk helse i løpet av arbeidsdagen gjennom kunnskap om helse, miljø og sikkerheit."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 sal og reiseliv handlar det tverrfaglege temaet berekraftig utvikling om å ta ansvarlege, etiske og miljøbevisste val i formidling og utvikling av varer og tenester. Vidare handlar det om å kunne gjere greie for avgjerdene som er tekne gjennom heile verdikjeda, og vurdere desse i lys av ei berekraftig utvikling. Dette handlar òg om å reflektere over korleis sals- og reiselivsnæringa opererer globalt, og korleis forhold som klima og etikk kan stå i kontrast til etterspurnad og økonomi."
+   ]
+  }
  ]
 }

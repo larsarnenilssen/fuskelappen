@@ -96,5 +96,51 @@
     "Opplæringa i vg3 bøkkarfaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 bøkkarfaget inneber å kunne bruke fagspråk i samtale og annan kommunikasjon med kollegaer, kundar, leverandørar og andre samarbeidspartnarar. Det inneber òg å kunne bruke faguttrykk i presentasjon av praktisk arbeid. Gjennom å formidle, presentere og drøfte handverket og historia kring dette utviklar lærlingane munnlege ferdigheiter."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bøkkarfaget inneber å kunne bruke fagspråk i kommunikasjon med kollegaer, kundar, leverandørar og andre samarbeidspartnarar. Vidare inneber det å kunne planleggje arbeidet og dokumentere utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bøkkarfaget inneber å vurdere skriftleg informasjon og dokumentasjon. Vidare inneber det å bruke faguttrykk, arbeidsteikningar, manualar, brukarrettleiingar, faglitteratur og beskrivingar av arbeidet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 bøkkarfaget inneber å forstå og tolke ulike måleeiningar. Vidare inneber det å kunne rekne ut vekt, volum, mengd, vinklar, storleikar, styrkeforhold og tidsbruk. Det inneber òg å kunne vurdere forhold mellom ulike volum og former. I tillegg inneber det å gjere økonomiske berekningar av produksjonskostnader og inntening ved sal av produkt."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 bøkkarfaget inneber å kunne bruke ulike digitale ressursar. Det inneber òg å kunne hente informasjon, bruke digitale hjelpemiddel og utvikle produkt. Vidare inneber det å kunne delta i faglege nettverk og dokumentere eige arbeid. I tillegg inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 bøkkarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle handlag, gode arbeidsrutinar og evne til problemløysing, og om å utvikle identitet og å ta ansvarlege val i eige liv og i skapande arbeid. Det handlar òg om korleis ein kan gi uttrykk for eigne opplevingar, tankar og meiningar i samarbeid med andre og i arbeidet med oppgåver innanfor bøkkarfaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bøkkarfaget handlar det tverrfaglege temaet berekraftig utvikling om kritisk refleksjon rundt det å ta vare på kunnskapen som ligg i det å produsere og halde ved like tradisjonelle bøkkarprodukt som vert brukte i tradisjonell matproduksjon. Vidare handlar det om å produsere og kunne behandle trematerialar på ein berekraftig måte og å reparere og halde dei ved like. Det omfattar å leggje vekt på produksjon av varige produkt der vedlikehald og produksjon er mogleg. Berekraftig utvikling handlar òg om å vere medviten om at avfall frå produksjonen ikkje blir til skade for miljøet og omgivnadene, og om gjenbruk av materialar i nye produkt. I tillegg handlar berekraftig utvikling om at faget er ein del av arbeidet med å sikre natur- og kulturarv i verda."
+   ]
+  }
  ]
 }

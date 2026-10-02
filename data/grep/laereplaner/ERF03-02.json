@@ -124,5 +124,57 @@
     "Opplæringa i elektroreparatørfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst 6 vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 elektroreparatørfaget inneber å lytte og gi respons i samtale med involverte partar i arbeid med elektrisk og gassdrive utstyr. Det inneber å bruke fagterminologi og å tilpasse kommunikasjonen til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 elektroreparatørfaget inneber å bruke fagterminologi, symbol og prefiks ved planlegging og utarbeiding av dokumentasjon. Det inneber òg å kommunisere skriftleg tilpassa mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 elektroreparatørfaget inneber å søkje og vurdere informasjon i fagtekstar, teknisk dokumentasjon, gjeldande regelverk og instruksar. Det inneber òg å samanlikne og tolke informasjon, å trekkje faglege slutningar og å halde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 elektroreparatørfaget inneber å utføre matematiske berekningar i planlegging og dimensjonering og å vurdere måleresultat opp mot berekna verdiar. Det inneber òg å tolke informasjon frå tabellar og diagram. Vidare inneber det å berekne elektriske verdiar og å bruke symbol og prefiks. Det inneber òg å gjere økonomiske berekningar i samband med prisoverslag."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 elektroreparatørfaget inneber å bruke digitale ressursar og tenester til å planleggje, utføre og verifisere arbeidsoppdrag. Vidare inneber det å søkje etter og innhente informasjon og å vurdere kor truverdig informasjonen er. Det inneber òg å vurdere si eiga rolle på nettet og å utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 elektroreparatørfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om kva det betyr for god psykisk helse å oppleve meistring og stoltheit over eige arbeid på elektrisk og gassdrive utstyr. Folkehelse og livsmeistring handlar òg om verdien av å oppleve tilhøyrsel og tryggleik i eit arbeidsmiljø prega av samarbeid med andre, uavhengig av kjønn og kultur. Det handlar dessutan om val av arbeidsmetodar og bruk av verneutstyr for å unngå sjukdom og helsemessige utfordringar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 elektroreparatørfaget handlar det tverrfaglege temaet demokrati og medborgarskap om å delta i bedriftsdemokratiet og utvikle kunnskap om føresetnader, verdiar og reglar i det organiserte arbeidslivet. Det handlar òg om å utvikle kunnskap om pliktene og rettane til arbeidstakaren og korleis trepartssamarbeidet er med på å utvikle arbeidslivet. Vidare handlar det om korleis eit regulert arbeidsliv bidreg til å motverke arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 elektroreparatørfaget handlar det tverrfaglege temaet berekraftig utvikling om å tileigne seg kunnskap for å kunne gjere etiske og ansvarlege val i arbeid med elektriske og gassdrivne apparat og løysingar. Det handlar òg om å utvikle kompetanse til å handtere avfall på ein miljøvennleg og berekraftig måte og handlar om kva miljømessige konsekvensar ressursbruken i elektroreparatørfaget har lokalt, regionalt og globalt. Vidare handlar det om å utvikle kompetanse på energieffektiviserande tiltak og alternative kjelder til energi og kompetanse på kva dilemma som kan oppstå ved utbygging og bruk av teknologi, og korleis desse dilemma kan handterast."
+   ]
+  }
  ]
 }

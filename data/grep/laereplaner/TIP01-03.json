@@ -212,5 +212,51 @@
     "Produksjon og tjenester, konstruksjons- og styringsteknikk og produktivitet og kvalitetsstyring: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 teknologi- og industrifag innebærer å kunne kommunisere med bruk av relevant fagterminologi og å forstå uttrykksmåter, argumentere for egne synspunkter og drøfte problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 teknologi- og industrifag innebærer å kunne utarbeide planer, utforme og bearbeide tekster og gjøre notater. Videre innebærer det å kunne bruke uttrykksformer som bilder, figurer og symboler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 teknologi- og industrifag innebærer å kunne innhente, reflektere over, tolke, forstå og bruke aktuelle fagressurser. Videre handler det om å lese og forstå bruksanvisninger, arbeids- og sikkerhetsinstrukser, arbeidstegninger og andre yrkesrelevante beskrivelser med tegn og symboler."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 teknologi- og industrifag innebærer å kunne lese av, innstille og korrigere utstyr og maskiner i tillegg til å beregne og bruke tekniske tabeller som er relevante for faget. Det handler også om å kjenne til aktuelle enheter og begreper for økonomistyring knyttet til materialvalg, utstyrsvalg, forbruk og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 teknologi- og industrifag innebærer å kunne bruke digitale ressurser til å kommunisere, planlegge, produsere og dokumentere arbeidsoppdrag. Videre innebærer det å kunne bruke digitale ferdigheter ved feilsøking og bruk av maskiner, verktøy og utstyr. I digitale ferdigheter inngår også digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 teknologi- og industrifag handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene kompetanse som fremmer god psykisk og fysisk helse, og som setter dem i stand til å ta ansvarlige valg, enten det er hjemme, på skolen eller i arbeidslivet. Det tverrfaglige temaet handler også om å håndtere medgang og motgang, om å sette egne grenser, respektere andres grenser og vise samarbeidsvilje."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 teknologi- og industrifag handler det tverrfaglige temaet bærekraftig utvikling om å gi elevene teknologisk kompetanse og kunnskap om sammenhengen mellom teknologi og de sosiale, økonomiske og miljømessige sidene ved en bærekraftig utvikling. Det tverrfaglige temaet handler også om å kunne ta ansvarlige valg og handle etisk og miljøbevisst. Videre handler det om at elevene skal få kunnskap om at handlingene og valgene den enkelte tar, har betydning for bærekraftig utvikling."
+   ]
+  }
  ]
 }

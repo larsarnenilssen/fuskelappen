@@ -219,5 +219,57 @@
     "Mediesamfunnet 3: Privatisten skal opp til skriftlig eksamen og praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i mediesamfunnet innebærer å redegjøre for mediefaglige temaer og problemstillinger i presentasjoner og muntlige sjangre. Det innebærer også å kunne delta i diskusjoner og samtaler, kommunisere ideer og argumentere for egne meninger ved hjelp av fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i mediesamfunnet innebærer å redegjøre skriftlig for mediefaglige temaer og problemstillinger og forklare prosessen bak en medieproduksjon ved å bruke relevant fagterminologi. Videre innebærer det å kunne uttrykke seg skriftlig i ulike informerende, argumenterende, underholdene og journalistiske sjangre."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i mediesamfunnet innebærer å sette seg inn i nyhetsbilder av ulik kompleksitet og forstå meningsutveksling i den offentlige debatten. Det innebærer også å kunne kritisk vurdere sammensatte tekster, og å drøfte deres funksjon og betydning i relasjon til andre tekster og samfunnet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i mediesamfunnet innebærer å kunne tolke, vurdere og bearbeide tallmateriale og vurdere visuelle framstillinger av statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i mediesamfunnet innebærer å utvikle digital dømmekraft gjennom gode strategier for nettsøk og annen nettbruk. Det innebærer også å utforske, produsere og publisere medieprodukter ved hjelp av digitale verktøy."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I mediesamfunnet handler det tverrfaglige temaet folkehelse og livsmestring om å vise etisk bevissthet rundt egen og andres mediebruk og om å kommunisere ansvarlig i sosiale medier. Videre handler det om hvordan ytringer, framstillinger og representasjon i medier og kommunikasjon påvirker mellommenneskelige relasjoner, holdninger og oppfatninger i samfunnet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I mediesamfunnet handler det tverrfaglige temaet demokrati og medborgerskap om kunnskap som kan gi elevene grunnlag for å bli velinformerte og aktive medborgere i en lokal, nasjonal og global medievirkelighet. Videre handler det om etisk bevissthet, samfunnsansvar og sentrale demokratiske verdier som ytringsfrihet og pressefrihet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I mediesamfunnet handler det tverrfaglige temaet bærekraftig utvikling om sammenhenger mellom sosiale, økonomiske og miljømessige forhold i utvikling og bruk av moderne medieteknologi. Videre handler det om hvordan digitale skiller er med på å hemme eller fremme deltakelse på sentrale arenaer."
+   ]
+  }
  ]
 }

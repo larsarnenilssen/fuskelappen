@@ -176,5 +176,51 @@
     "Kommunikasjon, klipp og frisyreforming og hår, farge og strukturendring: Privatisten skal opp til en tverrfaglig praktisk eksamen der de felles programfagene inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 frisør innebærer å uttrykke egne meninger og å lytte til og gi respons i spontan og forberedt samtale. Det betyr også å bruke fagterminologi i drøfting og refleksjon over faglige emner og å bygge opp argumentasjon og tilpasse kommunikasjonen til mottaker og formål. Elevene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 frisør innebærer å bruke fagterminologi og varierte skrivemåter for å utforme tekster tilpasset mottaker og formål. Videre betyr det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk og etterprøvbar måte. Det innebærer også å utforske og bruke bilder, illustrasjoner og arbeidsbeskrivelser som dokumentasjon og i kommunikasjon med kunder og kolleger."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 frisør innebærer å bruke faglitteratur for å finne og vurdere informasjon om produkter, framgangsmåter og avtaler og å bruke kilder på en kritisk og etterprøvbar måte. Det betyr også å analysere skriftlig og visuelt språk i frisørfaget for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 frisør innebærer å beskrive og bruke geometri, måleenheter, blandingsforhold og tabeller, utføre beregninger og begrunne valg ved ulike behandlinger. Det betyr også å tolke og presentere resultater som påvirker kostnader knyttet til tjenester og produkter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 frisør innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Videre vil det si å vurdere, bearbeide og sammenstille informasjon, utøve kildekritikk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 frisør handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle gode arbeidsrutiner og strategier for å møte og mestre forventninger fra kunder. Videre handler det om å bli trygg i møte med medelever, kunder og andre aktører i faget. Det handler også om å reflektere over hvordan man påvirkes av moter, trender og visuelle uttrykk, og hvordan man kan gi uttrykk for egne tanker og meninger i et flerkulturelt samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 frisør handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over materialer og produkter og bruk av disse. Det innebærer informasjon om kjemiske stoffer i behandling av hår og å vurdere valg og bruk av dette og nødvendige beskyttelses- og hygienetiltak. Videre handler det om å reflektere kritisk rundt forbruk, avfallshåndtering og miljøpåvirkning av materialer og produkter og å vurdere ressursutnyttelse med tanke på miljø og økonomi."
+   ]
+  }
  ]
 }

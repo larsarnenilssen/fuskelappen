@@ -230,5 +230,57 @@
     "Helse og sjukdom, kommunikasjon og samhandling og yrkesliv i helseservicefag: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 helseservicefag inneber å kommunisere tydeleg og forståeleg i møte med menneske frå ulike kulturar og i ulike livssituasjonar. Det inneber òg å tilpasse språket til mottakaren og å lytte til og vise respekt for den ein snakkar med. Vidare inneber det å bruke relevante faguttrykk og å formidle fagkunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 helseservicefag inneber å utarbeide dokumentasjon og bruke grunnleggjande faguttrykk og fagterminologi. Det inneber dessutan å kommunisere skriftleg med pasientar, brukarar og samarbeidspartnarar og å tilpasse tekstar til innhald, formål og mottakar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 helseservicefag inneber å tileigne seg ny fagkunnskap og innsikt. Det inneber òg å forstå faglitteratur, lovtekstar, statistikk og planar. Vidare inneber det å omsetje skriftleg informasjon til konkrete tiltak i møte med pasientar, brukarar og kundar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 helseservicefag inneber å ha tal- og mengdeforståing for å kunne bruke rekneartar ved rettleiing om kosthald og ernæring. Vidare handlar det om å berekne kostnader og handtere betaling og oppgjer for pasientbehandling."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 helseservicefag inneber å bruke digitale ressursar til å finne fagrelevant informasjon. Å utøve kjeldekritikk og utvikle digital dømmekraft står sentralt. Digitale ferdigheiter inneber òg å dokumentere og nyttiggjere seg elektronisk pasientinformasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 helseservicefag handlar det tverrfaglege temaet folkehelse og livsmeistring om å vise forståing, respekt og toleranse i møte med kundar, pasientar og pårørande. Det handlar òg om å rettleie om gode helseval og tiltak som kan vere med på å fremje god psykisk og fysisk helse."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 helseservicefag handlar det tverrfaglege temaet demokrati og medborgarskap om brukarmedverknad og om å ivareta dei individuelle rettane til pasientane. Det handlar òg om å tenkje kritisk og å respektere usemje. Vidare handlar det om arbeidstakarens rettar og plikter og om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 helseservicefag handlar det tverrfaglege temaet berekraftig utvikling om å ta miljøbevisste val i yrkesutøvinga. Det inneber mellom anna å kjeldesortere og redusere bruk av eingongsutstyr og å vurdere korleis bruk av ulike ressursar i yrkesutøvinga kan påverke miljøet."
+   ]
+  }
  ]
 }

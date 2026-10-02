@@ -104,5 +104,45 @@
     "Opplæringen i vg3 billakkererfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 billakkererfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å forklare og begrunne hva man gjør under utførelsen av faglige oppgaver. Videre innebærer det å diskutere faglige løsninger med kolleger og kunder og å drøfte og reflektere over faglige emner og problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 billakkererfaget innebærer å utforme tekster, beskrive og begrunne faglige oppgaver og tilpasse innhold til formål og mottaker. Videre innebærer det å kommunisere med kolleger og kunder og å utarbeide arbeidsordrer, rapporter og dokumentasjoner."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 billakkererfaget innebærer å finne og vurdere informasjon i tekster og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å tolke, bruke og følge arbeidsbeskrivelser, prosedyrer, brukerveiledninger og tegninger. Videre innebærer det å finne, forstå og bruke relevant regelverk og datablader."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 billakkererfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale og å utføre kostnadsanalyser knyttet til arbeidsprosessene. Det innebærer også å beregne ressursbruk og materialvalg og å gjøre målinger og registreringer i henhold til arbeidsbeskrivelser, mengder og blandingsforhold."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 billakkererfaget innebærer å bruke digitale måleverktøy, diagnoseutstyr og vekter. Det innebærer også å finne fram i faglige databaser og bruke digitale verktøy til kommunikasjon og dokumentasjon. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 billakkererfaget handler temaet bærekraftig utvikling om refleksjon over hvordan valg av reparasjonsmetoder og materialer påvirker miljøet og klimaet. Videre handler det om etisk bevissthet og kunnskap om utviklingen i faget og om de stadig strengere kravene for å redusere påvirkningen på miljøet. Det handler også om å ta bevisste miljøvalg ved avfallshåndtering og resirkulering av materialer og produkter."
+   ]
+  }
  ]
 }

@@ -96,5 +96,45 @@
     "Opplæringen i vg3 industriell overflatebehandling skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 industriell overflatebehandling innebærer å lytte og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi og forstå uttrykksmåter og å drøfte og reflektere over fagrelaterte emner og problemstillinger. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industriell overflatebehandling innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å utarbeide rapporter og sluttdokumentasjon på planlagt og utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industriell overflatebehandling innebærer å finne og vurdere informasjon i tekster, arbeidsbeskrivelser, prosedyrer og sikkerhetsdatablad. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 industriell overflatebehandling innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger. Videre innebærer det å stille inn og korrigere prosessparametre innenfor behandlingstider, strømtetthet og kjemikaliekonsentrasjoner. Det innebærer også å forstå statistisk prosesstyring knyttet til en repeterbar og stabil produksjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 industriell overflatebehandling innebærer å bruke digitale ressurser i planlegging, dokumentasjon og prosedyrer. Det innebærer også å bruke digitale ressurser til å programmere og styre automatiserte anlegg og bruke måle- og analyseverktøy for prosesskontroll og kvalitetskontroll. Videre innebærer det å utvikle etisk bevissthet og digital dømmekraft ved å følge normer og regler."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industriell overflatebehandling handler det tverrfaglige temaet bærekraftig utvikling om hvordan overflatebehandlingsprosesser kan drives med minst mulig klimaavtrykk. Det handler også om å ta hensyn til natur og miljø i samsvar med gjeldende regler og krav. Videre handler det om å velge metoder, stoffer og væsker som ivaretar det ytre miljøet, og som bidrar til å gi materialene lengre levetid."
+   ]
+  }
  ]
 }

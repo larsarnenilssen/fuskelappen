@@ -177,5 +177,57 @@
     "Produktutvikling og skapende prosesser og materialer og teknikker: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 håndverk, design og produktutvikling vil si å kunne bruke fagspråket, formidle egne meninger, vurderinger og refleksjoner og delta i faglige diskusjoner. Videre innebærer det å kunne forklare og vise kunder og oppdragsgivere egne prosesser eller eget arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 håndverk, design og produktutvikling innebærer å kunne planlegge, vurdere, reflektere over og dokumentere arbeidsprosesser gjennom tekst, bilder, illustrasjoner og arbeidstegninger. Det betyr også å kunne bruke fagspråk og fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 håndverk, design og produktutvikling innebærer å forstå og bruke faglitteratur, anvisninger, bilder, illustrasjoner og arbeidstegninger i arbeid med håndverksprodukter. Videre betyr det å kunne forstå og lese mønstre og maler og reflektere kritisk over visuelle virkemidler og kulturelle referanser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 håndverk, design og produktutvikling innebærer å kunne gjøre beregninger i håndverksprosesser og idéutvikling, det vil si å bruke matematiske framgangsmåter ved konstruksjon av former, volum, vinkler og størrelser. Videre handler det om å kunne beregne materialkostnader og pris på produkter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 håndverk, design og produktutvikling innebærer å kunne bruke digitale ressurser formålstjenlig og forsvarlig. Det innebærer å være kreativ og skapende med digitale ressurser for å løse praktiske og håndverksfaglige oppgaver. Det handler også om å kunne samhandle med andre, vurdere informasjon fra digitale kilder kritisk, bruke nettvett og utvikle digital dømmekraft i prosessen med å framstille håndverksprodukter."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I Vg1 håndverk, design og produktutvikling handler folkehelse og livsmestring om å utvikle kunnskaper og ferdigheter for å løse faglige problemer gjennom praktisk, skapende arbeid. Videre handler det om å utvikle identitet gjennom mestrings- og skaperglede og som en del av et praksisfellesskap i håndverksfagene."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 håndverk, design og produktutvikling handler demokrati og medborgerskap om den aktive håndverksutøveren i et arbeidslivsperspektiv. Videre handler det om å se sammenheng mellom demokratiske prosesser i ulike kulturer og hvordan dette kommer til uttrykk i håndverkstradisjoner. Det betyr å reflektere kritisk over kulturarv, tradisjon og design og å gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 håndverk, design og produktutvikling handler bærekraftig utvikling om kritisk refleksjon rundt produksjonsmetoder, bearbeiding og valg av materialer, verktøy og maskiner i utvikling av håndverksprodukter. Videre handler det om praktisk problemløsing, nyutvikling og entreprenørskap hvor man gjennom en lokal tilpasning og ressursforvaltning retter oppmerksomhet mot gjenbruk, holdbar kvalitet, etisk produksjon, naturarv og kortreiste produkter."
+   ]
+  }
  ]
 }

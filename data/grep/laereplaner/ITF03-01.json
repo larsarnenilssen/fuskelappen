@@ -472,5 +472,45 @@
     "Opplæringa i vg3 industritekstilfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på to til tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 industritekstilfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kunne bruke fagterminologi og å forstå uttrykksmåtar og kunne drøfte og reflektere over faglege emne og problemstillingar. Vidare inneber det å kunne kommunisere og tilpasse munnleg tekst til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industritekstilfaget inneber å kunne bruke fagspråk til å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å kunne reflektere over faglege emne og problemstillingar, byggje opp argumentasjon og bruke faglege kjelder på ein kritisk måte som lar seg etterprøve. Vidare inneber det å kunne utarbeide rapportar og sluttdokumentasjon på planlagt og utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industritekstilfaget inneber å kunne finne og vurdere informasjon i tekstar, arbeidsbeskrivingar og prosedyrar. Det inneber òg å kunne samanlikne, tolke og systematisere informasjon og illustrasjonar og å vise kjeldekritikk"
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 industritekstilfaget inneber å kunne hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å kunne bruke og leggje til rette informasjon for å forstå og vise samanhengar og å kunne utføre avlesingar og innstillingar og korrigere maskiner og utstyr. Vidare inneber det å kunne utføre utrekningar knytte til materialval, forbruk og tidsbruk"
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 industritekstilfaget inneber å kunne bruke digitale ressursar til planlegging, samhandling, kommunikasjon, produksjon og dokumentasjon av oppgåver. Det inneber vidare å kunne overvake og styre produksjonsprosessar. Det inneber òg å utvikle etisk medvit og vise digital dømmekraft ved å følgje normer og reglar"
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industritekstilfaget handlar det tverrfaglege temaet berekraftig utvikling om planlegging og bruk av ressursar, miljøbelastninga bransjen har på samfunnet og energiforbruk knytt til produksjon av ulike tekstilar. Det handlar òg om innovasjon innanfor miljøvennlege løysingar, om å bruke framtidsretta teknologi, resirkulering og ombruk av ulike tekstile materiale. Det handlar vidare om miljøvennleg transport knytte til utsending av ferdige produkt"
+   ]
+  }
  ]
 }

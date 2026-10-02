@@ -200,5 +200,51 @@
     "Bransjeteknikk, transport, logistikk og løfteoperasjoner og bransjelære: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 transport og logistikk innebærer å kunne fremme ulike synspunkter, begrunne valg og drøfte problemstillinger ved bruk av et tydelig språk og bransjerelaterte fagbegreper og uttrykksmåter. Muntlige ferdigheter innebærer videre å lytte til å gi respons i spontan og forberedt samtale. Videre innebærer det å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse muntlig tekst til mottaker og formål. Det innebærer å samtale om og drøfte arbeidsoppdrag. Det innebærer også å kommunisere egne rapporter og risikovurderinger muntlig."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 transport og logistikk innebærer å utforme fagtekster og rapporter, svare på henvendelser, utarbeide skriftlige planer og dokumentere arbeidsprosesser. Det omfatter å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over aktivitetene som inngår i faget, og å bruke faglige uttrykksformer som bilder, figurer og symboler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 transport og logistikk innebærer å lese og tolke relevant lov- og regelverk, arbeidsbeskrivelser, prosedyrer, håndbøker, diagrammer og tabeller. Det innebærer også å sette seg inn i nødvendig informasjon, faglitteratur og å bruke kilder på en kritisk måte som lar seg etterprøve for å kunne delta aktivt i skole, arbeidsliv og samfunnsdebatter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 transport og logistikk innebærer å utføre beregninger og å bruke tekniske tabeller. Det innebærer å regne med tallstørrelser knyttet til lengde, volum og vekt og å foreta fraktberegning. Videre innebærer det å beregne transporttid og avstand, å utarbeide enkle kalkyler for prisfastsettelse av transport- og løfteoppdrag og å forstå nøkkeltall i bedriftens regnskap."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 transport og logistikk innebærer å bruke digitale systemer i kommunikasjon, planlegging, produksjon og dokumentasjon av arbeidsoppdrag. Det innebærer videre å vise digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 transport og logistikk handler det tverrfaglige temaet folkehelse og livsmestring om å danne grunnlag for en helsefremmende livsstil i en bransje tidvis påvirket av tidspress og stress. Temaet skal bidra til kunnskap om ergonomisk bruk og håndtering av arbeidsutstyr og hjelpemidler og hvordan man forebygger belastningsskader. Det handler også om yrkesrelaterte helseutfordringer og hvordan helsen kan påvirkes av søvn, kosthold og fysisk aktivitet. Videre skal temaet bidra til forståelse av langtidseffektene av valg og hvordan psykisk og fysisk helse kan påvirke deltakelsen i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 transport og logistikk handler det tverrfaglige temaet bærekraftig utvikling om å minimere energibruken og miljøbelastningen gjennom riktig valg av emballasje, optimal kjøring og god drift. Det handler om å se sammenhenger mellom ulike prosesser i faget og medvirke til effektive løsninger for å redusere ledetiden. Videre handler det om kunnskap om ulike framdriftsmetoder for kjøretøy og arbeidsutstyr for å ta bevisste valg for å redusere utslipp og unngå tomgangskjøring."
+   ]
+  }
  ]
 }

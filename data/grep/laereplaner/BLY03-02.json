@@ -108,5 +108,45 @@
     "Opplæringen i blyglasshåndverkerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i blyglasshåndverkerfaget innebærer å beskrive, dele og utvikle kunnskap med faglig innhold. Muntlige ferdigheter innebærer også å uttrykke egne meninger, lytte og gi respons. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon tilpasset mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i blyglasshåndverkerfaget innebærer å dokumentere arbeid og kommunisere med kunder og andre samarbeidspartnere. Det innebærer også å skrive tekster for å synliggjøre ideer, valg og meninger i det praktiske arbeidet. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i blyglasshåndverkfaget innebærer å bruke faglitteratur, faglige spesifikasjoner og bestillinger for å finne og vurdere informasjon i tekster om faglige emner og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer videre å sammenligne, tolke og systematisere informasjon i ulike tekster, tegninger, tekniske beskrivelser og veiledninger med tegn og symboler for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i blyglasshåndverkerfaget innebærer å beregne pris, ta mål og beregne målestokk, volum og proporsjoner og å konstruere mønster, form og rom. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i blyglasshåndverkfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I blyglasshåndverkerfaget handler bærekraftig utvikling om praktisk problemløsing for å håndtere de miljøskadelige materialene som brukes i faget. Det innebærer å reflektere kritisk over hvordan utøvelsen i faget kan tilpasses gjeldende regelverk for miljøfarlige materialer, samtidig som man ivaretar det tradisjonelle håndverket. Bærekraftig utvikling handler også om holdbar kvalitet og gjenbruk i forbindelse med å utføre og restaurere blyglassarbeid. Videre handler det om faget som en del av arbeidet med å sikre verdens kulturarv og å fremme regionale og lokale kulturer, tradisjoner og produkter."
+   ]
+  }
  ]
 }

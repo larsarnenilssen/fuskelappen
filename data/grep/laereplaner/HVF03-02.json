@@ -112,5 +112,51 @@
     "Opplæringen i vg3 håndveverfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst seks virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 håndveverfaget innebærer å uttrykke seg om prosessen fra tråd til vevd tekstil. Det innebærer også å beskrive materialer og kvaliteter, form og funksjon. Videre innebærer det å bruke fagspråk til å presentere eget arbeid og kommunisere med kunder, leverandører, kollegaer og andre samarbeidspartnere. Lærlingen utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer vevnader og arbeidsmetoder."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 håndveverfaget innebærer å bruke fagspråk til å uttrykke seg skriftlig og visuelt om prosess, planlegging, dokumentasjon og ferdig tekstil tilpasset ulike målgrupper. Det betyr å utforske og reflektere over vevfaglige problemstillinger, bygge opp argumentasjon og justere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 håndveverfaget innebærer å forstå og bruke bindingslære, vevoppskrifter, faglitteratur, arbeidsbeskrivelser og illustrasjoner. Det innebærer også å forstå og vurdere informasjon fra leverandører og tekst om regelverk. Videre handler det om å tolke vevde tekstiler for å få innsikt i tradisjonelle og moderne vevde uttrykk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 håndveverfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det betyr å bruke og bearbeide tallmaterialet i planlegging og produksjon av egne vevnader. Det handler også om å beregne material- og tidsbruk og å gjøre økonomiske beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 håndveverfaget innebærer å bruke digitale ressurser til å kommunisere og presentere eget arbeid i ulike nettverk. Det betyr å innhente, bearbeide og sammenstille informasjon og å vise digital dømmekraft ved å være kildekritisk og vise til kilder. Videre innebærer digitale ferdigheter å bruke digitale ressurser som redskap for idéutvikling og veving og som verktøy i virksomheten."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 håndveverfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle håndlag, gode arbeidsrutiner og evne til problemløsing og om å utvikle identitet og ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt arbeidsmiljø og nettverk i samarbeid med andre og i arbeid med oppgaver innenfor håndveverfaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 håndveverfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over materialvalg, funksjon og kvalitet. Det handler også om å vurdere produktets verdikjede fra råvare til montert og etterbehandlet tekstil for å skape produkter som er holdbare og kan repareres. Videre handler det om å utforske nye og miljøvennlige materialer og ny teknologi. Bærekraftig utvikling handler også om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

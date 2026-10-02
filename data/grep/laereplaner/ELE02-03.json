@@ -224,5 +224,57 @@
     "Elenergi og styresystemer og elektronisk kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen. Den tverrfaglige praktiske eksamenen skal blant annet inneholde prøving av kompetansemål om elsikkerhet. Eksamen blir utarbeidet og sensurert lokalt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 elenergi og ekom innebærer å kommunisere forståelig i faglige diskusjoner ved å bruke et presist og mottakertilpasset språk. Videre innebærer det å kunne delta i diskusjoner om sikkerhet og valg av faglige løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 elenergi og ekom innebærer å uttrykke seg skriftlig i gjennomføringen av yrkesoppgaver. Det betyr at språk, bilder og symboler skal være faglig korrekte, og at tekstene skal være presise og forståelige for mottakeren."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 elenergi og ekom innebærer å finne frem til relevant informasjon, tolke fagtekster og tilegne seg kunnskap som bidrar til at arbeidet blir utført i tråd med gjeldende regelverk, anbefalinger og behov. Videre innebærer det å finne og bruke fagstoff og å være kildekritisk ved informasjonssøk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 elenergi og ekom innebærer å gjøre matematiske beregninger ved planlegging, gjennomføring, kontroll og dokumentasjon av yrkesoppgaver. Videre innebærer det å kunne hente informasjon fra tabeller og diagrammer og å bruke symboler og prefikser riktig i oppgaveløsning. Det handler også om økonomiske beregninger knyttet til tid, energi og materialbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 elenergi og ekom innebærer å konfigurere og programmere utstyr og å etablere elektronisk kommunikasjon. Videre innebærer det å bruke digitale hjelpemidler og å kunne reflektere over personvern og datasikkerhet. Det handler også om å bruke digitale verktøy ved planlegging, gjennomføring, kontroll og dokumentasjon av yrkesoppgaver."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 elenergi og ekom handler det tverrfaglige temaet folkehelse og livsmestring om å mestre egne yrkesoppgaver og utvikle stolthet over eget arbeid. Videre handler det om å lære gode arbeidsteknikker for å forebygge helseutfordringer og om hvordan arbeidslivets lover og avtaler ivaretar alle ansatte. Det handler også om hvordan bruk av elektronisk kommunikasjon og elektrisitet kan bidra til velferd i menneskers liv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 elenergi og ekom handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap og forståelse for å oppnå et organisert og mer likestilt arbeidsliv, og om hvordan arbeidslivet er bygd opp, inkludert trepartssamarbeidet og arbeidslivsorganisasjonenes roller i arbeidslivet. Videre handler det om hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 elenergi og ekom handler det tverrfaglige temaet bærekraftig utvikling om å velge produkter og tekniske løsninger ut fra etiske og ansvarlige hensyn. Videre handler det om energieffektive tiltak og alternative energikilder og om ulike dilemmaer dette kan føre til. Det handler også om hvordan ulike elektriske løsninger og produkter påvirker miljøet. Håndtering av avfall på en miljøvennlig og bærekraftig måte inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

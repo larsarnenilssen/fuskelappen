@@ -172,5 +172,51 @@
     "Produktutvikling og kvalitetssikring og produksjon: Privatisten skal opp til ein tverrfaglig eksamen praktisk eksamen i desse felles programfaga. Eksamen blir utarbeid og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 børsemakar inneber å bruke og forstå fagspråk og å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å drøfte og reflektere over faglege emne og våpentekniske spørsmål og å kommunisere om våpen og våpenbruk med oppdragsgivarar, medelevar og andre samarbeidspartnarar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 børsemakar inneber å bruke fagspråk og faglitteratur for å utforme tekstar tilpassa mottakar og formål. Det inneber vidare å utforske og reflektere over faglege emne og problemstillingar og å gjere seg forstått skriftleg i kommunikasjon med oppdragsgivarar, leverandørar, medelevar og andre. Det inneber òg å kunne planleggje og dokumentere eige arbeid som eit ledd i kvalitetssikringa."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 børsemakar inneber å finne, reflektere over og kritisk vurdere informasjon i faglitteratur. Det inneber òg å tolke både skriftleg og visuelt fagspråk og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Vidare inneber det å forstå og bruke tilvisingar og spesifikasjonar frå fabrikantane. Det inneber dessutan å forstå og kunne bruke arbeidsteikningar med teikn og symbol."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 børsemakar inneber å hente ut og tolke informasjon i talmateriale og bruke informasjonen for å forstå og vise samanhengar og å samanlikne resultat. Det inneber òg å berekne lengder, mengder og vinklar og rekne ut kulebane, flygetid og energi i den praktiske utøvinga av faget."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 børsemakar inneber å bruke digitale ressursar i planlegging og presentasjon av eige arbeid. Vidare inneber det å søkje etter og hente inn informasjon knytt til produktutvikling og dokumentasjon av eige arbeid og eigen kompetanse. Det inneber òg å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 børsemakar handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle elevar med forståing for samanhengen mellom eit positivt sjølvbilete og trygg omgang med skytevåpen. Temaet skal bidra til forståing av betydninga av å kunne handtere medgang og motgang for å meistre eige liv, og sjå det i samanheng med framtidig yrkesutøving. Temaet handlar òg om å kunne gi uttrykk for eigne tankar, meiningar og idear knytte til forvaltning og bruk av våpen. Vidare handlar det om å sjå samanhengen mellom bruk og regulering av våpen og kva dette har å seie for samfunnstryggleiken."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 børsemakar handlar det tverrfaglege temaet berekraftig utvikling om å reflektere over betydninga av å halde ved like og ta vare på eksisterande skytevåpen, i eit økonomisk og miljømessig perspektiv. Gjennom arbeid med temaet skal elevane utvikle kompetanse til å ta miljøbevisste val med omsyn til materiale og handtering av avfall."
+   ]
+  }
  ]
 }

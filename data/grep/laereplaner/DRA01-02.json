@@ -116,5 +116,39 @@
     "Privatister i teater og bevegelse 2 får godskrevet programfaget teater og bevegelse 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i teater og bevegelse innebærer å drøfte, diskutere og dele egen forståelse, tolkninger og observasjoner. Det innebærer å være med i samtaler, lytte til andres meninger og ideer, og å kommunisere sine egne. Videre innebærer det å drøfte skapende arbeidsmetoder, strategier og løsninger med andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i teater og bevegelse innebærer å drøfte, reflektere og analysere egne og andres bevegelsespraksiser. Det innebærer også å bruke fagspråk, skrift og symboler som verktøy for og dokumentasjon av egne arbeidsprosesser."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teater og bevegelse innebærer å se, tolke og analysere varierte bevegelser, kroppslige uttrykksformer og ulike tekster. Det innebærer også å forstå fagspråk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I teater og bevegelse handler det tverrfaglige temaet folkehelse og livsmestring om å forstå sammenhenger mellom trening og god helse, både fysisk og psykisk. Det innebærer å forstå hvordan helse og livsstil kan være avgjørende i skapende og utøvende arbeid, og om å ta gode livsvalg som har betydning for mestring og opplevelse av mening i eget liv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I teater og bevegelse handler det tverrfaglige temaet demokrati og medborgerskap om kommunikative verktøy, og om erfaring med å delta i kollektive og demokratiske prosesser. Videre handler om innsikt i at demokrati har ulike former og uttrykk. Det innebærer også å utvikle evne til å uttrykke egne meninger gjennom teatralt formspråk og fysiske utrykk, til å tenke kritisk og å respektere ulikhet."
+   ]
+  }
  ]
 }

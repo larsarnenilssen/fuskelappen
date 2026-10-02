@@ -108,5 +108,45 @@
     "Opplæringen i vg3 akvakulturfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én–to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 akvakulturfaget innebærer å kommunisere med andre ansatte i bedriften og forklare og begrunne valg under arbeidsoperasjoner og prosesser. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse kommunikasjon til mottaker og formål. Videre innebærer det å presentere produkter og prosesser for samarbeidspartnere og myndigheter."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 akvakulturfaget innebærer å dokumentere og rapportere produksjonsrelaterte data og å dokumentere og framstille informasjon om hendelser innad i bedriften og til relevante myndigheter. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 akvakulturfaget innebærer å forstå og anvende regelverk, prosedyrer og bruksanvisninger. Videre innebærer det å finne og vurdere informasjon for å trekke faglige slutninger og å tilegne seg informasjon om næringen gjennom ulike medier."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 akvakulturfaget innebærer å utføre beregninger knyttet til produksjonsplanlegging og vurdere tallmateriale i tabeller, statistikk og grafiske framstillinger. I tillegg innebærer det å forstå sammenhenger mellom budsjett og regnskap og å vurdere innsatsfaktorer med hensyn til bedriftens økonomiske mål og resultater."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 akvakulturfaget innebærer å bruke digitale ressurser i planlegging, gjennomføring og dokumentasjon av produksjonsprosesser i akvakulturanlegg og å tilegne seg kompetanse for å ta i bruk nye digitale verktøy. Det innebærer også å utøve kildekritikk, utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 akvakultur handler det tverrfaglige temaet bærekraftig utvikling om å ivareta det lokale og globale naturgrunnlaget. Videre handler det om å forstå hvordan bruk av naturressurser i næringsaktivitet påvirker det omkringliggende miljøet. Det handler også om trygg matproduksjon og hvordan bærekraftig drift og forvaltning av naturressurser kan bidra til å trygge og utvikle lokalt næringsliv."
+   ]
+  }
  ]
 }

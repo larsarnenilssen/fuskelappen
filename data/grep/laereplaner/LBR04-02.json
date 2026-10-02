@@ -101,5 +101,45 @@
     "Vg3 maskiner og teknologi i landbruk: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 maskiner og teknologi i landbruk innebærer å veilede og instruere andre, drøfte utførelsen av arbeidsoppgaver, diskutere fordeler og ulemper ved bruk av ulike teknologiske løsninger og lytte til andres argumenter. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 maskiner og teknologi i landbruk innebærer å rapportere og dokumentere produksjonsaktiviteter ved hjelp av analoge og digitale verktøy og å utforme tekster tilpasset mottaker og formål. Det innebærer også å innhente skriftlige tilbud på utstyr og maskiner og dokumentere vedlikehold og opplæring. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 maskiner og teknologi i landbruk innebærer å forstå, bruke og reflektere over innholdet i brukerhåndbøker, internkontrolldokumentasjon og faglitteratur. Det innebærer også å sammenligne og systematisere informasjon i ulike faglige tekster og vurdere om kildene er troverdige."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 maskiner og teknologi i landbruk innebærer å beregne arealer, doseringer, drivstofforbruk, kostnader ved vedlikehold og andre innsatsfaktorer som har betydning for produksjonen. Videre innebærer det å foreta enkle investeringsberegninger og sammenligne forskjellige anskaffelsesmetoder som kjøp eller leasing."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 maskiner og teknologi i landbruk innebærer å bruke og programmere digitale hjelpemidler som er benyttet i produksjonen, digitalt kontroll- og måleutstyr, hjelpemidler for presisjonsjordbruk, klimastyring, og forskjellige former for innendørsmekanisering. Det innebærer også å bruke digitale kommunikasjonsverktøy, innhente digital informasjon og vise kildekritikk. Videre innebærer det å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 maskiner og teknologi i landbruk handler det tverrfaglige temaet bærekraftig utvikling hvordan profesjonell matproduksjon påvirker natur, miljø og klima. Det handler også om å ta bevisste valg ved anskaffelse og bruk av maskiner, redskaper og teknologi for å kunne begrense påvirkningen på natur, miljø og klima. Videre handler det om vedlikehold, gjenbruk og gjenvinning av maskiner og utstyr."
+   ]
+  }
  ]
 }

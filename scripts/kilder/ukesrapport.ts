@@ -33,6 +33,8 @@ export interface Ukesgrunnlag {
   udir?: { endringer: string[]; nyVersjon: string | null } | null;
   /** Nye fag uten kobling til årsramme og nye avvik i koblingen (.generert/kobling-endringer.json). */
   kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
+  /** Endrede deler i overordnet del fra udir.no (.generert/overordnet-endringer.json). */
+  overordnet?: { endringer: string[] } | null;
   /** Navn i rundskrivet uten nynorsk eller utskrevet navn i appen (.generert/tilbud-navn.json). */
   navn?: { linjer: string[]; ordninger: string[] } | null;
 }
@@ -240,6 +242,20 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       );
     }
     deler.push(['## Kobling fra fagkode til årsramme', '', ...linjer, '', `Hele rapporten: ${lenke}.`, '']);
+  }
+
+  // Overordnet del (avgjørelse 037): teksten vises uendret i appen og oppdateres hver uke. Endringer til orientering.
+  const overordnet = g.overordnet?.endringer ?? [];
+  if (overordnet.length > 0) {
+    orientering += 1;
+    deler.push([
+      '## Overordnet del',
+      '',
+      `- Teksten i overordnet del er endret på udir.no, og appen viser den nye teksten. Endret: ${overordnet.length === 1 ? 'én del' : `${overordnet.length} deler`}.`,
+      ...overordnet.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`),
+      ...(overordnet.length > MAKS_DETALJER ? [`  - … og ${overordnet.length - MAKS_DETALJER} til.`] : []),
+      '',
+    ]);
   }
 
   // Navn i rundskrivet som appen ikke kjenner, vises som i rundskrivet til Claude har lagt dem inn (eier 02.10.2026).

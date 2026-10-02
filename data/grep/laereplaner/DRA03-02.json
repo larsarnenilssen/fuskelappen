@@ -107,5 +107,39 @@
     "Teater i perspektiv 1: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nTeater i perspektiv 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i teater i perspektiv innebærer å lytte, formidle, kommunisere, drøfte og diskutere. Muntlige ferdigheter innebærer også å gjøre fagstoffet levende gjennom muntlig form."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i teater i perspektiv innebærer å drøfte og reflektere over ulike problemstillinger. Det innebærer også å uttrykke egne standpunkt og meninger ved å bruke fagspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i teater i perspektiv innebærer å se, tolke og oppleve teater. Det innebærer også å analysere og utforske ulike tekstlige kilder og å forstå strukturer innenfor et utvidet tekstbegrep."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I teater i perspektiv handler det tverrfaglige temaet demokrati og medborgerskap om hvordan ulike kulturelle, rituelle og estetiske praksiser kan påvirke og endre samfunnet. Det tverrfaglige temaet handler også om hvordan teater kan brukes som uttrykksform i et demokratisk samfunn. Videre handler det om å innta en aktiv og bevisst rolle i demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I teater i perspektiv handler det tverrfaglige temaet bærekraftig utvikling om å undersøke, utforske og reflektere over etiske dilemmaer og utviklingstrekk i samfunnet. Videre handler det om hvordan kunstneriske prosjekter kan belyse og problematisere menneskers levesett og ressursbruk, og hvordan teaterprosjekter kan bidra til å initiere egne løsninger og valg for en bærekraftig framtid."
+   ]
+  }
  ]
 }

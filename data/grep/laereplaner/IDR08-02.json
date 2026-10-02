@@ -148,5 +148,51 @@
     "Lederutvikling 2: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i lederutvikling innebærer å formulere spørsmål, delta i meningsutvekslinger og diskusjoner, og gi klare og tydelige tilbakemeldinger i forbindelse med instruksjon, ledelse og dommerrollen. Det innebærer også å forklare, instruere, veilede, oppmuntre og gjøre muntlige henvendelser og forespørsler i lederoppdrag."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i lederutvikling innebærer å utarbeide skriftlige planer til gjennomføring og evaluering av ulike arrangementer og prosjekter. Det omfatter også å utforme skriftlige forespørsler, henvendelser, tilbakemeldinger, innbydelser og program. Det vil også være sentralt å uttrykke seg skriftlig i planlegging og evaluering av instruksjons-, ledelses- og dommerrollen."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i lederutvikling innebærer å finne, velge ut og forstå relevant faglitteratur. Utviklingen går fra å kunne tilegne seg overordnet kunnskap om de ulike elementene i lederutvikling til å kunne bruke denne kunnskapen til å løse ulike utfordringer knyttet til ledelse."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i lederutvikling innebærer å behandle tallmateriale og gjøre økonomiske beregninger i prosjekter og arrangementer. Det omfatter også å lage kampoppsett, håndtere tidtaking og beregne poeng."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i lederutvikling innebærer å benytte digitale og tekniske hjelpemidler, program og applikasjoner til å kommunisere og samhandle og til å tilegne seg kunnskap og utføre praktiske oppgaver i faget. I arrangementer og prosjekter vil det si å produsere og bearbeide gjennom bruk av sosiale medier, tidtakersystem, resultatservice, videopptak og digitale bilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I lederutvikling handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene ledelseskompetanse for å fremme god psykisk og fysisk helse. I faget skal elevene skape relasjoner og samarbeide for å løse oppgaver i kjente og ukjente situasjoner. Elevene får kompetanse til å takle medgang og motgang, samtidig som de blir utfordret på å respektere andres ideer, meninger og følelser. Faget øker muligheten for at elevene tar ansvarlige livsvalg til beste for dem selv og samfunnet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I lederutvikling handler det tverrfaglige temaet demokrati og medborgerskap om å gjøre elevene i stand til å samarbeide, vise lojalitet og ta ansvar for å bli trygge ledere. Faget skal gi kompetanse i å utvikle inkluderende lederegenskaper og gode samhandlingsevner. Faget skal også gjøre elevene bevisste på hvilke verdier og etiske retningslinjer man må forholde seg til i organisasjonsarbeid. Videre skal faget gi elevene kunnskap om å tenke kritisk, og det skal bidra til at de lærer seg å håndtere meningsbrytninger og respektere uenighet. Ved å gi elevene slik kunnskap og kompetanse vil faget stimulere elevene til å bli aktive samfunnsborgere."
+   ]
+  }
  ]
 }

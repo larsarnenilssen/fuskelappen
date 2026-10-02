@@ -211,5 +211,57 @@
     "Design og arkitektur 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i design og arkitektur inneber å kunne samtale om og formidle kva som er ideen bak eit konsept, produkt eller ei teneste. Det inneber òg å kunne bruke fagspråk i presentasjonar og argumentere for sitt eige arbeid og arbeidet til andre i ulike kontekstar. Vidare handlar det om å bruke munnlege ferdigheiter til å gjere seg opp ei meining, byggje relasjonar, skape effektiv kommunikasjon og formidle ein bodskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i design og arkitektur inneber å kunne kommunisere og formidle eigne konsept, produkt og idear. Det inneber å kunne skissere løysingar og ta val under det praktiske prosessarbeidet ved hjelp av tekst og illustrasjonar. Videre omfattar det å kunne kombinere teikn, tekst og bilete i arbeid med layout og andre visuelle uttrykk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i design og arkitektur inneber å kunne finne og bruke fagressursar, tekstar, teikningar og annan visuell representasjon og informasjon. Det inneber å kunne lese teikningar, tolke og forstå visuelle verkemiddel og kombinasjonar av former, strukturer, symbol, tekst og bilde."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i design og arkitektur inneber å kunne bruke kunnskap om enkle berekningar, proporsjonar, volum, flate, areal og geometriske storleikar i det praktiske arbeidet. Vidare inneber det å kunne velje riktig målestokk og bruke ulike måleiningar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i design og arkitektur inneber å kunne velje og bruke digitale program og verktøy når ein arbeider i to eller tre dimensjonar med å modellere objekt, visualisere og presentere eige arbeid og organisere bilete og tekst. Vidare inneber det å kunne finne informasjon, bruke kjelder, vise dømmekraft og handtere ein brukar- og delingskultur etter gjeldande regelverk for opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I design og arkitektur handlar det tverrfaglege temaet folkehelse og livsmeistring om utforming av fysiske omgivnader, produkt og teknologi og korleis dette kan påverke helse og livskvalitet. Gjennom kritisk refleksjon og praktiske prosessar utviklar elevane forståing, empati og interesse for å designe nye og brukarvennlege løysingar og evne til å meistre utfordringar. Ved å delta aktivt i designprosesser saman med andre kan elevane styrkje identiteten sin og sjølvbiletet sitt."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I design og arkitektur handlar det tverrfaglege temaet demokrati og medborgarskap om korleis brukarorientering og inkluderande løysingar påverkar og utviklar samfunnet. Faget gir kunnskap om korleis universell utforming av fysiske og digitale omgivnader, produkt og tenester kan sikre at individet får høve til å delta aktivt i samfunnet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I design og arkitektur handlar det tverrfaglege temaet berekraftig utvikling om det etiske ansvaret vi har for å ta vare på naturen og miljøet, og om korleis ressursar blir forvalta i samfunnet. Vidare handlar det om å vurdere materialbruk, å leggje vekt på utvikling og å velje berekraftige og formålstenlege løysingar."
+   ]
+  }
  ]
 }

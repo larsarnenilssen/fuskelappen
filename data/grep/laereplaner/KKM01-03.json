@@ -222,5 +222,45 @@
     "Kommunikasjon og kultur 3: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i kommunikasjon og kultur innebærer å lytte og å formulere egen kommunikasjon i en rekke situasjoner. Det innebærer å forstå teori om hvordan man velger form og innhold ut fra formålet, men også å forstå ståstedet til den man lytter til, særlig de kulturelle elementene som er relevante. Muntlige ferdigheter innebærer å beherske verbal og ikke-verbal kommunikasjon, og å bruke fagspråk i drøfting og refleksjon over faglige emner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kommunikasjon og kultur innebærer å kunne formulere sammenhengende drøftinger og analyser med utgangspunkt i kjente og ukjente tekster. Det innebærer å bruke fagbegreper og teorier for å utforme tekster tilpasset mottaker og formål. Det innebærer også å kunne skape tekster som effektivt og kreativt utnytter mulighetene ulike modaliteter og teksttyper tilbyr."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kommunikasjon og kultur innebærer å forstå hvilke elementer tekster er satt sammen av, sammenhengen mellom dem og funksjonen de har i kommunikasjonssituasjonen de står i. Det innebærer å kunne lese varierte typer tekster, fra et rikt utvalg av kontekster og medier, og å kunne forstå et bredt spekter av krevende og komplekse tekster ved hjelp av egnet teori."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i kommunikasjon og kultur innebærer å velge og bruke digitale verktøy, medier og ressurser for å tilegne seg kunnskap og for å kommunisere i mange ulike situasjoner på en selvstendig, kritisk og ansvarlig måte. Det innebærer også å bruke digital dømmekraft i bruken av ulike kilder og i innhenting av informasjon som grunnlag for egen kommunikasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kommunikasjon og kultur handler det tverrfaglige temaet folkehelse og livsmestring om å bruke kompetanse i kommunikasjon til å forstå og håndtere mellommenneskelige relasjoner. Videre handler det om å bli bevisst medienes påvirkningskraft på en måte som gjør elevene bedre i stand til å reflektere over og håndtere sin egen mediebruk. Det handler også om å utvikle kritisk tenkning i møte med en kompleks og dynamisk medievirkelighet. Videre handler det om hvilke kulturelle uttrykk som er sentrale for å utvikle og uttrykke identitet og gi en trygg plattform for å kunne ta egne valg og samhandle."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I kommunikasjon og kultur handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle redskaper for kommunikasjon for å delta konstruktivt i dialog og meningsbrytning. Kunnskap om interkulturell kommunikasjon utvikler forståelse for andres perspektiver, holdninger og livsanskuelser. Videre handler det om å bli kjent med kulturelle brytninger i minoritets- og majoritetsperspektiv og dermed utvikle bevissthet om å verne om mindretallets rettigheter."
+   ]
+  }
  ]
 }

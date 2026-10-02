@@ -152,5 +152,51 @@
     "Opplæringa i vg3 tømrarfaget skal avsluttast med ein sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 tømrarfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kommunisere med andre og reflektere over og drøfte moglege val og løysingar, og tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 tømrarfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 tømrarfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar, standarar og toleransestandarar og regelverk. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 tømrarfaget inneber å hente ut, beskrive og tolke informasjon frå produksjonsunderlag. Det inneber òg å rekne ut masse, lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Vidare inneber det å bruke målestokk, rekne ut radiusar, vinklar og fall og å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 tømrarfaget inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter i faget å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 tømrarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å byggje, halde ved like og rehabilitere bygningar og konstruksjonar med tanke på å oppnå eit helsefremjande innemiljø. Det handlar òg om å leggje til rette for å følgje ulike krav til tilgjengelegheit som fremjar folkehelse i eit livslangt perspektiv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 tømrarfaget handlar det tverrfaglege temaet berekraftig utvikling om å velje energieffektive konstruksjonar og løysingar og velje materiale ut frå miljøomsyn. Vidare handlar det om berekraft gjennom avfallshandtering og gjenbruk. Det handlar òg om å utvikle medvitet rundt dei økonomiske, miljømessige og sosiale dimensjonane knytte til berekraftig utvikling gjennom kritisk vurdering av produkt, materiale og konstruksjonar."
+   ]
+  }
  ]
 }

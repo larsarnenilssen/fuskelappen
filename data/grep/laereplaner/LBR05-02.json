@@ -105,5 +105,45 @@
     "Vg3 økonomi og driftsledelse: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 økonomi og driftsledelse innebærer å begrunne økonomiske og driftsmessige valg og å presentere landbruksbedriften, produksjoner og produksjonsmetoder for arbeidstakere og myndigheter. Det innebærer videre å lytte til og ta imot råd om temaet og gi instruksjoner om arbeidsoppgaver til medarbeidere og ansatte. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 økonomi og driftsledelse innebærer å framstille dokumentasjon for kunder og myndigheter. Det innebærer å utarbeide planer og å utforme avtaler og kontrakter. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 økonomi og driftsledelse innebærer å forstå økonomiske begreper knyttet til regelverk, eierskap, landbruksdrift og ansettelsesforhold. Det innebærer å tolke og forstå avtaler, kontrakter, offentlige dokumenter og enkle regnskap, og å finne, vurdere og bruke faglitteratur og informasjonskilder."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 økonomi og driftsledelse innebærer å bruke tall og beregninger i planlegging, gjennomføring, dokumentasjon og analyse av ulike typer produksjoner. Det innebærer også å utarbeide og forstå tabeller, diagrammer, enkel statistikk og enkle regnskapsoppstillinger. Å kunne regne innebærer å gjøre overslag over medgåtte innsatsfaktorer og vurdere forbrukt volum eller vekt etter ulike planer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 økonomi og driftsledelse innebærer å bruke og navigere i digitale ressurser, og tilegne seg, behandle og tolke og vurdere informasjon fra digitale kilder. Det innebærer videre å tilføre nødvendige rådata til digitale verktøy, å kommunisere og samhandle i landbruket via digitale løsninger og å finne og vurdere informasjon for å planlegge og optimalisere produksjon. Det innebærer også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 økonomi og driftsledelse handler det tverrfaglige temaet bærekraftig utvikling om hvordan landbruksvirksomheten påvirker natur, miljø og klima. Det handler om hvordan man planlegger og gjennomfører en produksjon slik at man ivaretar bærekraftperspektivet både knyttet til natur og økonomi."
+   ]
+  }
  ]
 }

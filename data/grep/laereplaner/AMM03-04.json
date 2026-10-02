@@ -169,5 +169,45 @@
     "Opplæringen i vg3 anleggsmaskinmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 anleggsmaskinmekanikerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi og å forstå uttrykksmåter og drøfte og reflektere over fagrelaterte emner og problemstillinger. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 anleggsmaskinmekanikerfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å utarbeide rapporter og sluttdokumentasjon på planlagt og utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 anleggsmaskinmekanikerfaget innebærer å finne og vurdere informasjon i tekster, arbeidsbeskrivelser, prosedyrer, sikkerhetsdatablad, teknisk litteratur, veiledninger, fabrikantenes spesifikasjoner og standarder. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 anleggsmaskinmekanikerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, beregne trykk, væskemengde, temperatur, elektriske størrelser og blandingsforhold i væsker. Det innebærer også å beregne økonomiske konsekvenser av ressursbruk og metodevalg."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 anleggsmaskinmekanikerfaget innebærer å bruke digitale ressurser for planlegging, dokumentasjon, feilsøking, reparasjon og testing. Det innebærer også å bruke digitale ressurser for diagnostisering, måling, beregning og overvåking. Videre innebærer det å søke etter og innhente informasjon og å kommunisere digitalt. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 anleggsmaskinmekanikerfaget handler det tverrfaglige temaet bærekraftig utvikling om refleksjon over og bruk av teknologi og alternative energikilder. Det handler også om miljøbevisste valg ved reparasjon og vedlikehold av anleggsmaskiner og utstyr og om bruk av kjemikalier, oljer og væsker med redusert miljøavtrykk. Videre handler det om bruk av returordninger for metall og komponenter og om kildesortering."
+   ]
+  }
  ]
 }

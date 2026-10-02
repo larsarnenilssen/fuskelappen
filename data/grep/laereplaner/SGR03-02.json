@@ -92,5 +92,45 @@
     "Opplæringen i vg3 serigrafifaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 serigrafifaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å diskutere produksjonsplaner, sikkerhet, kvalitet og valg av faglige løsninger med kolleger, leverandører og kunder. Videre innebærer det å kommunisere og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 serigrafifaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige problemstillinger og å bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å utarbeide planer og rapporter og å kommunisere med kolleger, leverandører og kunder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 serigrafifaget innebærer å finne og vurdere informasjon i tekster, forstå produksjonsplaner, ordreskjemaer, sikkerhetsdatablader, maskindokumentasjon og håndbøker. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 serigrafifaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å vise sammenhenger. Videre innebærer det å beregne materialbehov, trykkeopplag og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 serigrafifaget innebærer å bruke digitale verktøy og systemer for produksjon og kvalitetsstyring og å hente inn informasjon og drive feilsøking og feilretting. Det innebærer også å verifisere digitale produksjonsgrunnlag, utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 serigrafifaget handler det tverrfaglige temaet bærekraftig utvikling om å velge materialer og produksjonsløsninger ut fra miljøhensyn og sirkulærøkonomi. Videre handler det om å velge materialer som er resirkulerbare, produksjonsløsninger som begrenser utslipp i natur, og forskriftsmessig håndtering av avfall."
+   ]
+  }
  ]
 }

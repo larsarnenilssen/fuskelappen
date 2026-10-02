@@ -380,5 +380,51 @@
     "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til eksamen i tekstskaping. Eksamen skal ha forberedelsesdel. Eksamen i tekstskaping blir utarbeidet og sensurert sentralt. Privatisten skal også opp til eksamen i muntlig samhandling. Eksamen i muntlig samhandling blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i norsk tegnspråk er å kunne samhandle med andre gjennom å avlese og uttrykke seg og samtale gjennom tegnspråk. Det innebærer å uttrykke seg hensiktsmessig i ulike spontane og forberedte muntlige samhandlingssituasjoner tilpasset mottakerne. Norsk tegnspråk har et særlig ansvar for utviklingen av å kunne samhandle ved bruk av tegnspråk. Utviklingen av muntlige ferdigheter i norsk tegnspråk går fra den tidlige samhandlingen i lek og faglige aktiviteter til å bruke tegnspråket stadig mer presist og nyansert i ulike tegnspråkfaglige samtaler og presentasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i norsk tegnspråk er å kunne uttrykke seg i ulike skjønnlitterære og sakpregede sjangre. Det innebærer å utvikle personlige uttrykksmåter og å beherske tegnspråkets grammatikk og oppbygging for å kunne skape og produsere tegnspråktekster. Norsk tegnspråk har et særlig ansvar for opplæringen i å kunne bruke tegnspråk i tekstskaping. Utviklingen av å kunne skape tegnspråktekster går fra den grunnleggende tegnopplæringen til å planlegge, utforme og bearbeide stadig mer komplekse tegnspråktekster i ulike sjangre og tilpasset formål, medium og mottaker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne avlese i norsk tegnspråk er å skape mening ut fra tegnspråktekster. Avlesing i norsk tegnspråk innebærer å avlese både i direkte kommunikasjon, gjennom digitale medier og i opptak. Det inkluderer også avlesing av sammensatte tekster som kan inneholde bilder, tegninger, tall og andre uttrykksmåter. Norsk tegnspråk har et særlig ansvar for opplæringen i å kunne avlese tegnspråk. Utviklingen av å kunne avlese i norsk tegnspråk går fra den grunnleggende avkodingen og forståelsen til å avlese, tolke og reflektere over tegnspråktekster i ulike sjangre, for ulike formål og av ulik lengde og kompleksitet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i faget norsk tegnspråk er å bruke digitale ressurser for å innhente og behandle informasjon. Det innebærer også å skape og redigere ulike typer tegnspråktekster og å kommunisere med andre gjennom digitale medier. Utviklingen av digitale ferdigheter i norsk tegnspråk går fra å lage enkle sammensatte tekster til å planlegge, utvikle og redigere sammensatte tekster basert på kunnskap om hvordan de forskjellige uttrykksformene virker sammen. Utviklingen innebærer også å vise en stadig større grad av selvstendighet og dømmekraft i valg og bruk av digitale kilder og en etisk bevissthet om å framstille seg selv og andre digitalt. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I norsk tegnspråk handler det tverrfaglige temaet folkehelse og livsmestring om at elevene utvikler et positivt selvbilde og en trygg identitet som tegnspråklig i et flerspråklig og flerkulturelt samfunn. Å kunne avlese og reflektere over skjønnlitteratur og sakprosa kan både bekrefte og utfordre elevenes selvbilde og dermed bidra til deres identitetsutvikling og livsmestring. Dette kan bidra til at elevene både kan håndtere medgang og motgang og personlige og praktiske utfordringer. Verdivalg og betydningen av å sette grenser og å respektere andres hører med i faget og i temaet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I norsk tegnspråk handler det tverrfaglige temaet demokrati og medborgerskap om å gi elevene forutsetninger for å delta aktivt i samfunnsliv og i demokratiske prosesser. Elevene skal øve opp evnen til kritisk tenkning gjennom arbeid med tekster og ytringer, og de skal lære seg å håndtere meningsbrytninger gjennom refleksjon, dialog og diskusjon. Gjennom arbeid med faget skal elevene utvikle retoriske ferdigheter slik at de kan gi uttrykk for egne tanker og meninger som medborgere i samfunnet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I norsk tegnspråk handler det tverrfaglige temaet bærekraftig utvikling om at elevene utvikler kunnskap om hvordan tekster framstiller natur, miljø og livsbetingelser, lokalt og globalt. Gjennom aktiv bruk av norsk tegnspråk utvikler elevene evnen til å forstå og håndtere meningsmotsetninger og interessekonflikter som kan oppstå når samfunnet endres i en mer bærekraftig retning. Norsk tegnspråk bidrar til å ruste elevene til å handle og påvirke samfunnet gjennom språket."
+   ]
+  }
  ]
 }

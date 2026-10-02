@@ -124,5 +124,51 @@
     "Opplæringa i vg3 blomsterdekoratørfaget skal avsluttast med ein fagprøve. Alle skal opp til fagprøven, som skal gjennomførast innanfor ei tidsramme på tolv til fjorten vyrkedagar"
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 blomsterdekoratørfaget inneber å uttrykkje eigne meiningar og å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagspråk i drøfting og refleksjon over faglege emne, byggje opp argumentasjon og tilpasse munnleg tekst til mottakar og formål. Lærlingane utviklar munnlege ferdigheiter når dei drøftar, reflekterer og presenterer saker åleine og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 blomsterdekoratørfaget inneber å kommunisere skriftleg gjennom tekst, bilete, illustrasjonar og arbeidsteikningar med kundar, leverandørar og samarbeidspartnarar. Det inneber vidare å skrive leselege handskrivne og digitale ordrar, bruke fagspråk og uttrykkje og grunngi arbeidsbeskrivingar, idear og løysingar i ulike arbeidsoppdrag."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 blomsterdekoratørfaget inneber å innhente, reflektere over, tolke, forstå og bruke aktuelle fagressursar. Vidare inneber det å lese og forstå brukarrettleiingar, arbeids- og sikkerheitsinstruksar, arbeidsteikningar og andre yrkesrelevante beskrivingar med teikn og symbol."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 blomsterdekoratørfaget inneber å berekne tid, materialmengder, økonomisk forteneste og kostnader knytte til tenester. Det inneber òg å utforme arbeidsbeskrivingar ved hjelp av mål og proporsjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 blomsterdekoratørfaget inneber å bruke digitale ressursar til å innhente informasjon, til å kommunisere og til å presentere eige arbeid. Det inneber òg å vurdere, omarbeide og stille saman informasjon, og å utøve kjeldekritikk og vise til kjelder. Vidare inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 blomsterdekoratørfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle identitet og om å gjere ansvarlege val i eige liv og i skapande arbeid. Det handlar òg om å utvikle strategiar for å møte og meistre forventningar frå kundar og eit arbeidsmiljø med tydelege tidsfristar og gitte krav. Vidare handlar folkehelse og livsmeistring om å bli trygg i møte med kundar og andre aktørar i faget, og om å handtere eigne tankar og kjensler som oppstår i møte med kundar i ulike livssituasjonar som treng rettleiing om blomsterfaglege produkt. I tillegg handlar det om refleksjon over korleis ein blir påverka av motar, trendar og visuelle uttrykk."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 blomsterdekoratørfaget handlar det tverrfaglege temaet berekraftig utvikling om å nytte kunnskapen om berekraftig ressursforvaltning. Det handlar om etisk refleksjon rundt ressursutnytting, gjenbruk og avfallshandtering av materiale. Vidare handlar det om kritisk å vurdere berekraftig drift og produksjon for å kunne ta etiske og miljømedvitne val ved bruk av botaniske materiale og støttemateriell, og om å forstå konsekvensane av vala i eit lokalt, nasjonalt og globalt perspektiv."
+   ]
+  }
  ]
 }

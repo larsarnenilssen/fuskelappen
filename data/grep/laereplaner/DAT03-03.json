@@ -173,5 +173,57 @@
     "Før fagprøva må alle som ikkje har følgt normalt opplæringsløp, i tillegg ha bestått ein tverrfagleg skriftleg eksamen laga ut frå læreplanen i programfaga på vg2 datateknologi og elektronikk. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 dataelektronikarfaget inneber å lytte til og gi respons i samtale med involverte partar i arbeid med elektronisk utstyr, elektroniske installasjonar og infrastruktur. Det inneber òg å bruke fagterminologi og tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 dataelektronikarfaget inneber å bruke fagterminologi, symbol og prefiks ved planlegging og utarbeiding av dokumentasjon. Det inneber òg å kommunisere skriftleg tilpassa mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 dataelektronikarfaget inneber å søkje og vurdere informasjon i fagtekstar, teknisk dokumentasjon, datablad, gjeldande regelverk og instruksar. Det inneber òg å samanlikne og tolke informasjon, trekkje faglege slutningar og å halde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 dataelektronikarfaget inneber å utføre matematiske berekningar i planlegging og feilsøking og vurdere måleresultat opp mot berekna verdiar. Det inneber å tolke informasjon frå tabellar og diagram. Vidare inneber det å berekne elektriske verdiar og bruke symbol og prefiks. I tillegg inneber det å gjere økonomiske berekningar i samband med pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 dataelektronikarfaget inneber å anvende digitale verktøy og tenester til å planleggje, utføre og verifisere arbeidsoppdrag. Vidare inneber det å søkje etter og innhente informasjon og å vurdere kor truverdig informasjonen er. Det inneber òg å vurdere eiga rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 dataelektronikarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om betydninga av å oppleve meistring og stoltheit over eige arbeid på elektronisk utstyr, elektroniske installasjonar og infrastruktur som grunnlag for god psykisk helse. Det handlar òg om verdien av å oppleve tilhøyrsel og tryggleik i eit arbeidsmiljø prega av samarbeid med andre, uavhengig av kjønn og kultur. Vidare handlar det om val av arbeidsmetodar og bruk av verneutstyr for å unngå sjukdom og helsemessige utfordringar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 dataelektronikarfaget handlar det tverrfaglege temaet demokrati og medborgarskap om å delta i bedriftsdemokratiet og utvikle kunnskap om føresetnadene, verdiane og reglane i det organiserte arbeidslivet. Det handlar òg om å utvikle kunnskap om kva pliktar og rettar arbeidstakaren har, og om korleis trepartssamarbeidet er med på å utvikle arbeidslivet. Vidare handlar det om korleis eit regulert arbeidsliv bidreg til å motverke arbeidslivskriminalitet, diskriminering og forskjellsbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 dataelektronikarfaget handlar det tverrfaglege temaet berekraftig utvikling om kunnskap til å foreta etiske og ansvarlege val av elektriske produkt og løysingar i arbeidsoppdraga. Det handlar vidare om å utvikle kompetanse til å handtere avfall på ein miljøvennleg og berekraftig måte og om kva miljømessige konsekvensar ressursbruken i vg3 dataelektronikarfaget har lokalt, regionalt og globalt. Vidare handlar det om å utvikle kompetanse på reparasjon og gjenbruk og om kva dilemma som kan oppstå ved utbygging og bruk av teknologi og korleis desse kan handterast."
+   ]
+  }
  ]
 }

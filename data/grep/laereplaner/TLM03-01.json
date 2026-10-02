@@ -136,5 +136,45 @@
     "Opplæringa i vg3 truck- og liftmekanikarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som normalt skal gjennomførast på minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 truck- og liftmekanikarfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagterminologi og forstå uttrykksmåtar og drøfte og reflektere over fagrelaterte emne og problemstillingar. Vidare inneber det å kommunisere og tilpasse munnleg tekst til mottakar og føremål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 truck- og liftmekanikarfaget inneber å kunne bruke fagspråk for å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å reflektere over faglege emne og problemstillingar, byggje opp argumentasjon og bruke kjelder på ein kritisk måte som lar seg etterprøve. Vidare inneber det å utarbeide rapportar og sluttdokumentasjon på planlagt og utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 truck- og liftmekanikarfaget inneber å finne og vurdere informasjon i tekstar, arbeidsbeskrivingar, prosedyrar, sikkerheitsdatablad, teknisk litteratur, rettleiingar, fabrikantspesifikasjonar og standardar. Det inneber òg å samanlikne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 truck- og liftmekanikarfaget inneber å utføre utrekningar knytte til trykk, temperatur, elektriske storleikar og blandingsforhold i væsker. Det inneber òg økonomiske berekningar. Vidare inneber det å kunne måle og registrere i samsvar med beskrivingar, skjema og standardar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 truck- og liftmekanikarfaget inneber å bruke digitale ressursar til å planleggje og dokumentere arbeidsoppdrag, kontrollere og feilsøkje maskiner, teste komponent og dokumentere arbeidsoppdrag. Vidare inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 truck- og liftmekanikarfaget handlar det tverrfaglege temaet berekraftig utvikling om alternative energikjelder og miljømedvitne val innanfor reparasjon og vedlikehald av truck og lift med tilhøyrande utstyr. Vidare handlar det om kjemikaliebehandling, reinhald, kjeldesortering og sirkulærøkonomi ved gjenbruk av komponentar."
+   ]
+  }
  ]
 }
