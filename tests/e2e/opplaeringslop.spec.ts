@@ -102,9 +102,13 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('main h1')).toHaveText('Helsearbeiderfag');
   });
 
-  test('avvik mellom rundskrivet og Grep står som merknad, og linjenavnene står på nynorsk (eier 02.10.2026)', async ({ page }) => {
+  test('avvik mellom rundskrivet og Grep står som merknad (eier 02.10.2026)', async ({ page }) => {
     await page.goto('./#/opplaeringslop/EL/ELROM3');
     await expect(page.locator('[data-rubrikk$="-felles_programfag"] .tilbud-avvik')).toContainText('Rundskrivet har 925 timer. Fagene i Grep har til sammen 700.');
+  });
+
+  test('linjenavnene fra rundskrivet står på nynorsk (eier 02.10.2026)', async ({ page }) => {
+    // Målformen settes før siden lastes. En ny adresse med bare annen # laster ikke siden på nytt.
     await settLagret(page, { malform: 'nn' });
     await page.goto('./#/opplaeringslop/ST/STSSA2');
     await expect(page.locator('[data-rubrikk$="-fellesfag"] .fagrad', { hasText: 'Framandspråk' })).toHaveCount(1);

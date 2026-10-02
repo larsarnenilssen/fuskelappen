@@ -13,6 +13,9 @@
  * sidefargen på .skall.
  */
 html {
+  /* Elementer som rulles fram (fokus, ankre) havner ikke bak toppfeltet eller bunnmenyen (WCAG 2.4.11). */
+  scroll-padding-top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top));
+  scroll-padding-bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-3));
   background-color: var(--farge-topplinje);
   background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
   color: var(--farge-tekst);
