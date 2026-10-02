@@ -21,9 +21,9 @@ import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
 import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
-import { fullKode, kortKode, type Tilbudsdata } from '../data.ts';
+import { fullKode, kortKode, skoleForst, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
-import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, skoleForst, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
 
 type Kategori = Tilbudsdel['kategori'];
 type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;

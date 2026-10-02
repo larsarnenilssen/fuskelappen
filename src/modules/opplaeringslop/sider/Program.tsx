@@ -10,8 +10,8 @@ import { erVariant } from '../../fag/tilbud/modell.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
-import { kortKode, type Tilbudene } from '../data.ts';
-import { Brodsmuler, Lasting, Rubrikk, skoleForst, Tilbudslenke, useTilbudsdata } from './felles.tsx';
+import { kortKode, skoleForst, type Tilbudene } from '../data.ts';
+import { Brodsmuler, Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './felles.tsx';
 
 /**
  * Et tilbud med en knapp som viser tilbudene det fører videre til i samme program. `sett` hindrer at et tilbud

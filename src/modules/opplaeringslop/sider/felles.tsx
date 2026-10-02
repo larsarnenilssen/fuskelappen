@@ -42,15 +42,6 @@ export function Lasting({ data, provIgjen }: { data: 'laster' | 'feil'; provIgje
 }
 
 /** «Vg2 Helsearbeiderfag»: trinnet og navnet på programområdet. */
-/**
- * Tilbud i skole før opplæring i bedrift, ellers i samme rekkefølge. Etter vg1 i yrkesfag kan det være mange tilbud
- * videre, og vg2 i skole skal stå øverst (eier 02.10.2026).
- */
-export function skoleForst(koder: readonly string[], indeks: Fagindeks): string[] {
-  const iBedrift = (k: string) => (indeks.programomrader[k]?.sted === 'bedrift' ? 1 : 0);
-  return [...koder].sort((a, b) => iBedrift(a) - iBedrift(b));
-}
-
 export function tilbudsnavn(t: T, indeks: Fagindeks, kode: string, malform: 'nb' | 'nn'): string {
   const po = indeks.programomrader[kode];
   if (!po) return kortKode(kode);
