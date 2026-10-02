@@ -61,7 +61,7 @@ function nokkeltallNavn(t: ReturnType<typeof useTekst>['t'], id: NokkeltallId, i
     reduksjon: 'arbeidstid.livsfase.redusert',
     beskjeftigelse: 'arbeidstid.resultat.samletBeskjeftigelse',
     differanse: 'arbeidstid.arbeidsplan.sammenligning.differanse',
-    planfestet: 'arbeidstid.arbeidsplan.sammenligning.planfestetIAlt',
+    planfestet: 'arbeidstid.fordeling.planfestetIAlt',
     lonn: iPeriode ? 'arbeidstid.arbeidsplan.lonnIPerioden' : 'arbeidstid.arbeidsplan.lonnIAlt',
   };
   return t(navn[id as Exclude<NokkeltallId, `del_${string}` | 'arsverk'>]);

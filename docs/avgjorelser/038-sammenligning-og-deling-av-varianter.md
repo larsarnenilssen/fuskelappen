@@ -9,7 +9,7 @@
   - Variantene er merket 1 (blått) og 2 (gult) ved valgene og over kolonnene. Enheten står i gruppeoverskriften, så tallene står uten enhet. Delene av arbeidstiden har fargemerket fra diagrammet.
   - Endrede rader er uthevet, og endringen står i en gul lapp med pil opp eller ned. Uendrede rader er dempet. «Vis bare det som er endret» skjuler dem.
   - På smale skjermer står bare merkene over kolonnene. Endringen står på samme linje som tallene (eier 02.10.2026), med mindre lapp og tettere kolonner. Lange ord deles med bindestrek, også i Safari (`-webkit-hyphens`). På de smaleste skjermene (under 360 px) er navnene og tallene i liten skrift. Da får tabellen plass på 320 px.
-  - Arbeidstiden står i denne rekkefølgen: de planfestede delene, «Planfestet tid i alt», selvdisponert tid og «Årsverk i alt» (eier 02.10.2026). Summene har strek over og fet skrift, så det er tydelig at selvdisponert tid ikke er en del av planfestet tid.
+  - Arbeidstiden står i denne rekkefølgen: de planfestede delene, «Planfestet tid i alt», selvdisponert tid og «Årsverk i alt» (eier 02.10.2026). Summene har strek over og fet skrift, så det er tydelig at selvdisponert tid ikke er en del av planfestet tid. Fordelingstabellen under diagrammet har fått samme rekkefølge og samme navn, «Planfestet tid i alt».
   - Korte navn (eier 02.10.2026): «Over/under stillingen» i stedet for «Over (+) eller under (−) stillingen». På smale skjermer står «Funksjoner» i stedet for «Funksjoner og andre oppgaver». Skjermlesere får hele navnet.
   - For en periode gjelder tallene perioden, og det står en merknad om det under tabellen.
   - Komponenten er felles for kalkulatorene, men bare Arbeidsplan bruker sammenligningen og delingen foreløpig.

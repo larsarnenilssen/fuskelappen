@@ -18,6 +18,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Fordelingen av arbeidstiden i Arbeidsplan:** Tabellen viser de planfestede delene og «Planfestet tid i alt» først, og så selvdisponert tid og årsverket i alt, i samme rekkefølge som i diagrammet. Da er det tydelig at selvdisponert tid ikke er en del av planfestet tid.
 - **Arbeidsplan har nytt ikon:** en stolpe delt i deler, med strek for stillingen, som diagrammet i Arbeidsplan.
 - **Lagrede varianter:**
   - Hver variant står på to linjer: navnet med «Gi nytt navn» og «Slett» og resultatet øverst, og tidspunktet, «Hent» og «Del» og forskjellen fra nå under.

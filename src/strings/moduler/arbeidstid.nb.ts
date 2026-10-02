@@ -184,6 +184,7 @@ export const arbeidstidNb = {
     andel: 'Andel',
     perUke: 'Per uke',
     sum: 'Årsverk i alt',
+    planfestetIAlt: 'Planfestet tid i alt',
     perUkeForklaring: 'Per uke er timene delt på {uker} skoleuker. Planleggingsdagene ({planlegging} timer) er holdt utenfor.',
     perUkeUtvidet:
       'Planfestet tid blir mer enn {maksUke} timer per uke i snitt. Da utvides arbeidsåret med {dager} dager (SFS 2213 punkt 5.3), og per uke er timene utenom planleggingsdagene ({planlegging} timer) delt på {uker} uker.',
@@ -253,7 +254,6 @@ export const arbeidstidNb = {
       arbeidstidPeriode: 'Arbeidstiden, timer i perioden',
       lonn: 'Lønn, kroner',
       differanse: 'Over/under stillingen',
-      planfestetIAlt: 'Planfestet tid i alt',
       funksjonerKort: 'Funksjoner',
       periode: 'Tallene for en arbeidsplan som gjelder en periode, gjelder perioden.',
     },

@@ -97,6 +97,10 @@ export function Fordelingstabell({ deler, totalt, uker, planlegging = 0 }: { del
       <td class="tall">{formaterTall(totalt > 0 ? (timer / totalt) * 100 : 0, 1, 1)} %</td>
     </tr>
   );
+  const delrader = (planfestet: boolean) =>
+    deler
+      .filter((d) => d.planfestet === planfestet)
+      .map((d) => rad(d.id, t(`arbeidstid.fordeling.deler.${d.id}` as Tekstnokkel), d.timer, undefined, d.id === 'planleggingsdager' ? null : d.timer));
   return (
     <table class="fordeling-tabell">
       <caption class="skjult-visuelt">{t('arbeidstid.fordeling.tabell')}</caption>
@@ -115,8 +119,11 @@ export function Fordelingstabell({ deler, totalt, uker, planlegging = 0 }: { del
         </tr>
       </thead>
       <tbody>
-        {deler.map((d) => rad(d.id, t(`arbeidstid.fordeling.deler.${d.id}` as Tekstnokkel), d.timer, undefined, d.id === 'planleggingsdager' ? null : d.timer))}
-        {rad('sum-planfestet', t('arbeidstid.fordeling.planfestet'), sum(true), 'sumrad', sum(true) - planlegging)}
+        {/* De planfestede delene og summen av dem først, så tiden læreren disponerer selv, og til slutt årsverket.
+            Da er det tydelig at selvdisponert tid ikke er en del av planfestet tid (eier 02.10.2026). */}
+        {delrader(true)}
+        {rad('sum-planfestet', t('arbeidstid.fordeling.planfestetIAlt'), sum(true), 'sumrad', sum(true) - planlegging)}
+        {delrader(false)}
         {rad('sum-alt', t('arbeidstid.fordeling.sum'), totalt, 'sumrad', totalt - planlegging)}
       </tbody>
     </table>

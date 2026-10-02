@@ -184,6 +184,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     andel: 'Del',
     perUke: 'Per veke',
     sum: 'Årsverk i alt',
+    planfestetIAlt: 'Planfesta tid i alt',
     perUkeForklaring: 'Per veke er timane delte på {uker} skuleveker. Planleggingsdagane ({planlegging} timar) er haldne utanfor.',
     perUkeUtvidet:
       'Planfesta tid blir meir enn {maksUke} timar per veke i snitt. Då blir arbeidsåret utvida med {dager} dagar (SFS 2213 punkt 5.3), og per veke er timane utanom planleggingsdagane ({planlegging} timar) delte på {uker} veker.',
@@ -252,7 +253,6 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
       arbeidstidPeriode: 'Arbeidstida, timar i perioden',
       lonn: 'Løn, kroner',
       differanse: 'Over/under stillinga',
-      planfestetIAlt: 'Planfesta tid i alt',
       funksjonerKort: 'Funksjonar',
       periode: 'Tala for ein arbeidsplan som gjeld ein periode, gjeld perioden.',
     },
