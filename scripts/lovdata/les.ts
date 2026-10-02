@@ -46,6 +46,17 @@ function rydd(segmenter: Segment[]): Segment[] {
 }
 
 /**
+ * En lenke hos Lovdata i samme form som i datasettene («lov/2023-06-09-30/§5-1»). Sidene hos Lovdata lenker med full
+ * adresse («https://lovdata.no/dokument/NL/lov/2023-06-09-30/§5-1» eller «/dokument/NL/…»).
+ */
+export function lovdatalenke(href: string): string {
+  return href
+    .replace(/^https?:\/\/(?:www\.)?lovdata\.no\//, '')
+    .replace(/^\//, '')
+    .replace(/^dokument\/[A-Z]+\/((?:lov|forskrift)\/)/, '$1');
+}
+
+/**
  * Teksten i et element som segmenter: tekst, lenker og fotnotehenvisninger. Elementene i `hopp` (lister og tekst
  * etter lister) leses for seg og hoppes over her.
  */
@@ -61,7 +72,7 @@ function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => fa
     if (t === 'a') {
       const href = n.getAttribute('href');
       const tekst = n.text.replace(/\s+/g, ' ');
-      if (href && !href.startsWith('#') && tekst.trim()) ut.push({ t: tekst, l: href });
+      if (href && !href.startsWith('#') && tekst.trim()) ut.push({ t: tekst, l: lovdatalenke(href) });
       else ut.push(tekst);
     } else if (t === 'sup' && klasse(n, 'footnotereference')) {
       ut.push({ f: n.text.trim() });
@@ -226,6 +237,10 @@ export interface Leseoppsett {
   /** Kapitlene som tas med (utskrevet, uten spenn), eller null for hele dokumentet. */
   kapitler: readonly string[] | null;
   korttittel?: string | undefined;
+  /** Målformen, når filen ikke oppgir den (sidene for lokale forskrifter). */
+  malform?: 'nb' | 'nn' | undefined;
+  /** Adressen hos Lovdata («forskrift/2020-09-29-3380»), når filen ikke oppgir den. */
+  refid?: string | undefined;
   gyldighet: Lovdokument['gyldighet'];
   hentet: string;
 }
@@ -233,10 +248,15 @@ export interface Leseoppsett {
 /** Leser et dokument fra Lovdata. Kaster en feil når noe ikke kan leses, eller når et kapittel i utvalget mangler. */
 export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument {
   const rot = parse(html);
-  const hoved = rot.querySelector('main.documentBody');
-  if (!hoved) throw new Error(`${oppsett.id}: fant ikke <main class="documentBody">. Filen kan ha fått ny struktur.`);
-  const refid = hodefelt(rot, 'refid') ?? '';
-  const tittel = hodefelt(rot, 'title') ?? rot.querySelector('title')?.text.trim() ?? '';
+  // Datasettene har <main class="documentBody">. Sidene hos Lovdata (lokale forskrifter) kan ha et annet element.
+  const hoved = rot.querySelector('main.documentBody') ?? rot.querySelector('.documentBody') ?? rot.querySelector('#documentBody');
+  if (!hoved) throw new Error(`${oppsett.id}: fant ikke teksten (class="documentBody"). Filen kan ha fått ny struktur.`);
+  const refid = hodefelt(rot, 'refid') ?? oppsett.refid ?? '';
+  const tittel =
+    hodefelt(rot, 'title') ??
+    hoved.querySelector('h1')?.text.replace(/\s+/g, ' ').trim() ??
+    rot.querySelector('title')?.text.replace(/\s*[-–|]\s*Lovdata\s*$/, '').trim() ??
+    '';
   // «Forvaltningsloven – fvl» blir «Forvaltningsloven».
   const kort = hodefelt(rot, 'titleShort')?.split(' – ')[0]?.trim();
   const lang = rot.querySelector('html')?.getAttribute('lang');
@@ -275,10 +295,10 @@ export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument 
   return {
     id: oppsett.id,
     kilde: oppsett.kilde,
-    type: refid.startsWith('forskrift/') ? 'forskrift' : 'lov',
+    type: refid.includes('forskrift/') ? 'forskrift' : 'lov',
     tittel,
     korttittel: oppsett.korttittel ?? kort ?? tittel,
-    malform: lang === 'nn' ? 'nn' : 'nb',
+    malform: oppsett.malform ?? (lang === 'nn' ? 'nn' : 'nb'),
     refid,
     sistEndret: hodefelt(rot, 'lastChangeInForce'),
     hentet: oppsett.hentet,

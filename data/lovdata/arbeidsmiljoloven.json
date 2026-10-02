@@ -1,0 +1,2140 @@
+{
+ "id": "arbeidsmiljoloven",
+ "kilde": "arbeidsmiljoloven",
+ "type": "lov",
+ "tittel": "Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)",
+ "korttittel": "Arbeidsmiljøloven",
+ "malform": "nb",
+ "refid": "lov/2005-06-17-62",
+ "sistEndret": "2026-07-01",
+ "hentet": "2026-10-02",
+ "gyldighet": {
+  "niva": "nasjonal"
+ },
+ "utvalg": [
+  "4",
+  "10",
+  "12"
+ ],
+ "seksjoner": [
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Krav til arbeidsmiljøet",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4-1",
+     "visNr": "§ 4-1",
+     "tittel": "Generelle krav til arbeidsmiljøet",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsmiljøet i virksomheten skal være fullt forsvarlig ut fra en enkeltvis og samlet vurdering av faktorer i arbeidsmiljøet som kan innvirke på arbeidstakernes fysiske og psykiske helse og velferd. Standarden for sikkerhet, helse og arbeidsmiljø skal til enhver tid utvikles og forbedres i samsvar med utviklingen i samfunnet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved planlegging og utforming av arbeidet skal det legges vekt på å forebygge skader og sykdommer. Arbeidets organisering, tilrettelegging og ledelse, arbeidstidsordninger, lønnssystemer, herunder bruk av prestasjonslønn, teknologi mv. skal være slik at arbeidstakerne ikke utsettes for uheldige fysiske eller psykiske belastninger og slik at sikkerhetshensyn ivaretas."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Det skal vurderes om det er særlig risiko knyttet til alenearbeid i virksomheten. Tiltak som er nødvendig for å forebygge og redusere eventuell risiko ved alenearbeid skal iverksettes, slik at lovens krav til et fullt forsvarlig arbeidsmiljø ivaretas."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Virksomheten skal innrettes for arbeidstakere av begge kjønn."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Atkomstveier, sanitæranlegg, arbeidsutstyr mv. skal så langt det er mulig og rimelig være utformet og innrettet slik at arbeidstakere med nedsatt funksjonsevne kan arbeide i virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan gi forskrift om begrensning i adgangen til å sysselsette visse grupper arbeidstakere som i særlig grad kan være utsatt for ulykkes- eller helsefare og om omplassering av slike arbeidstakere."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Departementet kan gi forskrift"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "som pålegger bruk av HMS-kort for arbeidstakere innenfor bransjer der det er nødvendig eller hensiktsmessig for å ivareta arbeidstakernes helse, miljø og sikkerhet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "om oversiktslister over hvem som til enhver tid er sysselsatt på arbeidsplassen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "om at oppdragsgivere i kontrakt med oppdragstakere skal ta inn kontraktsvilkår som skal sikre at forskrifter om HMS-kort overholdes"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "om at oppdragsgivere skal kontrollere at oppdragstakere overholder forskrifter om HMS-kort"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "om at oppdragstakere skal utlevere den dokumentasjonen som er nødvendig for at en oppdragsgiver kan oppfylle kontrollplikten."
+           ]
+          }
+         ]
+        }
+       ],
+       "etter": [
+        [
+         "Etter pålegg fra departementet plikter offentlige myndigheter uten hinder av taushetsplikt å gi utsteder av HMS-kort alle opplysninger fra offentlige registre som er nødvendige for utstedelse av HMS-kort."
+        ]
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Når hensynet til helse, miljø og sikkerhet tilsier det, kan departementet i forskrift gi bestemmelser om at virksomheter som tilbyr renholdstjenester eller tjenester i forbindelse med vedlikehold og reparasjon av motorvogn, må godkjennes av Arbeidstilsynet, og om det nærmere innholdet i en slik godkjenningsordning. Når det stilles krav om slik godkjenning, vil det være ulovlig å benytte tjenester fra virksomheter uten godkjenning."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), 2 9 juni 2007 nr. 42 (ikr. 1 nov 2007 iflg. ",
+       {
+        "t": "res. 12 okt 2007 nr. 1140",
+        "l": "forskrift/2007-10-12-1140"
+       },
+       "), ",
+       {
+        "t": "20 juni 2008 nr. 42",
+        "l": "lov/2008-06-20-42"
+       },
+       " (ikr. 1 jan 2009 iflg. ",
+       {
+        "t": "res. 20 juni 2008 nr. 631",
+        "l": "forskrift/2008-06-20-631"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "16 des 2011 nr. 58",
+        "l": "lov/2011-12-16-58"
+       },
+       ", ",
+       {
+        "t": "18 des 2015 nr. 103",
+        "l": "lov/2015-12-18-103"
+       },
+       ", ",
+       {
+        "t": "11 juni 2021 nr. 59",
+        "l": "lov/2021-06-11-59"
+       },
+       " (ikr. 1 jan 2022 iflg. ",
+       {
+        "t": "res. 11 juni 2021 nr. 1872",
+        "l": "forskrift/2021-06-11-1872"
+       },
+       "), ",
+       {
+        "t": "19 juni 2026 nr. 33",
+        "l": "lov/2026-06-19-33"
+       },
+       " (i kraft 1 juli 2026 iflg. ",
+       {
+        "t": "res. 19 juni 2026 nr. 1139",
+        "l": "forskrift/2026-06-19-1139"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-2",
+     "visNr": "§ 4-2",
+     "tittel": "Krav til tilrettelegging, medvirkning og utvikling",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstakerne og deres tillitsvalgte skal holdes løpende informert om systemer som nyttes ved planlegging og gjennomføring av arbeidet. De skal gis nødvendig opplæring for å sette seg inn i systemene, og de skal medvirke ved utformingen av dem."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) I utformingen av den enkeltes arbeidssituasjon skal:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "det legges til rette for at arbeidstaker gis mulighet for faglig og personlig utvikling gjennom sitt arbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidet organiseres og tilrettelegges under hensyn til den enkelte arbeidstakers arbeidsevne, kyndighet, alder og øvrige forutsetninger,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "det legges vekt på å gi arbeidstaker mulighet til selvbestemmelse, innflytelse og faglig ansvar,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidstaker så langt som mulig gis mulighet til variasjon og for å se sammenheng mellom enkeltoppgaver,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "det gis tilstrekkelig informasjon og opplæring slik at arbeidstaker er i stand til å utføre arbeidet når det skjer endringer som berører vedkommendes arbeidssituasjon."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Under omstillingsprosesser som medfører endring av betydning for arbeidstakernes arbeidssituasjon, skal arbeidsgiver sørge for den informasjon, medvirkning og kompetanseutvikling som er nødvendig for å ivareta lovens krav til et fullt forsvarlig arbeidsmiljø."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Departementet kan i forskrift gi nærmere bestemmelser om gjennomføringen av kravene i denne paragraf."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-3",
+     "visNr": "§ 4-3",
+     "tittel": "Krav til det psykososiale arbeidsmiljøet",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidet skal organiseres, planlegges og gjennomføres slik at de psykososiale arbeidsmiljøfaktorene i virksomheten er fullt forsvarlige ut fra hensynet til arbeidstakernes helse, sikkerhet og velferd."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Psykososiale arbeidsmiljøfaktorer er i tillegg til forhold som nevnt i tredje til sjette ledd blant annet"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "uklare eller motstridende krav og forventninger i arbeidet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "emosjonelle krav og belastninger i arbeid med mennesker"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidsmengde og tidspress som innebærer ubalanse mellom arbeidet som skal utføres, og den tiden som er til rådighet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "støtte og hjelp i arbeidet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidet skal legges til rette slik at arbeidstakers integritet og verdighet ivaretas."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidet skal søkes utformet slik at det gir mulighet for kontakt og kommunikasjon med andre arbeidstakere i virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidstaker skal ikke utsettes for trakassering, herunder seksuell trakassering, eller annen utilbørlig opptreden. Med trakassering menes handlinger, unnlatelser eller ytringer som har som formål eller virkning å være krenkende, skremmende, fiendtlige, nedverdigende eller ydmykende. Med seksuell trakassering menes enhver form for uønsket seksuell oppmerksomhet som har som formål eller virkning å være krenkende, skremmende, fiendtlig, nedverdigende, ydmykende eller plagsom."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Arbeidstaker skal, så langt det er mulig, beskyttes mot vold, trusler og uheldige belastninger som følge av kontakt med andre."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Departementet kan i forskrift gi nærmere bestemmelser om gjennomføringen av kravene i denne paragraf."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "16 juni 2023 nr. 37",
+        "l": "lov/2023-06-16-37"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 16 juni 2023 nr. 943",
+        "l": "forskrift/2023-06-16-943"
+       },
+       "), ",
+       {
+        "t": "20 juni 2025 nr. 37",
+        "l": "lov/2025-06-20-37"
+       },
+       " (i kraft 1 jan 2026 iflg. ",
+       {
+        "t": "res. 20 juni 2025 nr. 1120",
+        "l": "forskrift/2025-06-20-1120"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-4",
+     "visNr": "§ 4-4",
+     "tittel": "Krav til det fysiske arbeidsmiljøet",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Fysiske arbeidsmiljøfaktorer som bygnings- og utstyrsmessige forhold, inneklima, lysforhold, støy, stråling o.l. skal være fullt forsvarlig ut fra hensynet til arbeidstakernes helse, miljø, sikkerhet og velferd."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidsplassen skal innredes og utformes slik at arbeidstaker unngår uheldige fysiske belastninger. Nødvendige hjelpemidler skal stilles til arbeidstakers disposisjon. Det skal legges til rette for variasjon i arbeidet og for å unngå tunge løft og ensformig gjentakelsesarbeid. Ved oppstilling og bruk av maskiner og annet arbeidsutstyr skal det sørges for at arbeidstaker ikke blir utsatt for uheldige belastninger ved vibrasjon, ubekvem arbeidsstilling o.l."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Maskiner og annet arbeidsutstyr skal være konstruert og ha nødvendige verneinnretninger slik at arbeidstaker er vernet mot skader."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Innkvartering som arbeidsgiver stiller til rådighet for arbeidstaker skal være forsvarlig utført, innredet og vedlikeholdt. Eventuelle husordensregler skal fastsettes i samråd med representanter for arbeidstakerne."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Departementet kan i forskrift gi nærmere bestemmelser om gjennomføringen av kravene i denne paragraf og kan herunder bestemme at reglene skal gjelde for utleiere av lokaler o.l."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-5",
+     "visNr": "§ 4-5",
+     "tittel": "Særlig om kjemisk og biologisk helsefare",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Ved håndtering av kjemikalier eller biologisk materiale skal arbeidsmiljøet være tilrettelagt slik at arbeidstaker er sikret mot ulykker, helseskader og særlig ubehag. Kjemikalier og biologisk materiale skal fremstilles, pakkes, brukes og oppbevares slik at arbeidstaker ikke utsettes for helsefare."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Kjemikalier og biologisk materiale som kan innebære helsefare, skal ikke brukes dersom de kan erstattes med andre eller med en annen prosess som er mindre farlig for arbeidstakerne."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Virksomheten skal ha nødvendige rutiner og utstyr for å hindre eller motvirke helseskader på grunn av kjemikalier eller biologisk materiale."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Virksomheten skal føre kartotek over farlige kjemikalier og biologisk materiale. Kartoteket skal blant annet opplyse om fysikalske, kjemiske og helseskadelige egenskaper, forebyggende vernetiltak og førstehjelpsbehandling. Beholdere og emballasje for kjemikalier og biologisk materiale skal være tydelig merket med navn, sammensetning og advarsel på norsk."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidstilsynet kan i det enkelte tilfelle helt eller delvis gjøre unntak fra reglene i denne paragraf i forbindelse med forsknings- og analysearbeid e.l."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan i forskrift gi nærmere bestemmelser om gjennomføringen av kravene i denne paragraf, og kan herunder bestemme at det skal føres register over arbeidstakere som eksponeres for bestemte kjemikalier eller biologisk materiale."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Departementet kan i forskrift gi nærmere bestemmelser om bruk, registrering, vurdering, godkjennelse, rapportering, informasjon, begrensning og annen behandling av kjemikalier."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "5 des 2008 nr. 82",
+        "l": "lov/2008-12-05-82"
+       },
+       " (ikr. 1 jan 2009 iflg. ",
+       {
+        "t": "res. 5 des 2008 nr. 1284",
+        "l": "forskrift/2008-12-05-1284"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-6",
+     "visNr": "§ 4-6",
+     "tittel": "Særlig om tilrettelegging for arbeidstakere med redusert arbeidsevne",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Hvis en arbeidstaker har fått redusert arbeidsevne som følge av ulykke, sykdom, slitasje e.l., skal arbeidsgiver, så langt det er mulig, iverksette nødvendige tiltak for at arbeidstaker skal kunne beholde eller få et passende arbeid. Arbeidstaker skal fortrinnsvis gis anledning til å fortsette i sitt vanlige arbeid, eventuelt etter særskilt tilrettelegging av arbeidet eller arbeidstiden, endringer i arbeidsutstyr, gjennomgått arbeidsrettede tiltak e.l."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Dersom det i medhold av første ledd er aktuelt å overføre en arbeidstaker til annet arbeid, skal arbeidstaker og arbeidstakers tillitsvalgte tas med på råd før saken avgjøres."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidsgiver skal i samråd med arbeidstaker utarbeide oppfølgingsplan for tilbakeføring til arbeid i forbindelse med ulykke, sykdom, slitasje eller lignende, med mindre dette er åpenbart unødvendig. Arbeidet med oppfølgingsplan skal starte så tidlig som mulig, og planen skal være utarbeidet senest når arbeidstaker har vært helt eller delvis borte fra arbeidet i fire uker. Oppfølgingsplanen skal inneholde en vurdering av arbeidstakers arbeidsoppgaver og arbeidsevne. Planen skal også inneholde aktuelle tiltak i arbeidsgivers regi, aktuelle tiltak med bistand fra myndighetene og plan for videre oppfølging. Arbeidsgiver skal sørge for at planen formidles til sykmelder så snart den er utarbeidet, og senest etter fire uker. Arbeidsgiver skal videre sørge for at oppdatert plan sendes til Arbeids- og velferdsetaten senest en uke før dialogmøter som Arbeids- og velferdsetaten innkaller til, jf. ",
+        {
+         "t": "folketrygdloven § 25-2",
+         "l": "lov/1997-02-28-19/§25-2"
+        },
+        " tredje ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidsgiver skal innkalle arbeidstaker til dialogmøte om innholdet i oppfølgingsplanen senest innen sju uker etter at arbeidstaker har vært helt borte fra arbeidet som følge av ulykke, sykdom, slitasje eller lignende, med mindre dette er åpenbart unødvendig. For arbeidstaker som av samme årsaker er delvis borte fra arbeidet, skal et slikt møte holdes når arbeidsgiver, arbeidstaker eller sykmelder anser det hensiktsmessig. Dersom både arbeidsgiver og arbeidstaker, eller arbeidstakeren alene, ønsker det, skal sykmelder innkalles til dialogmøtet. Dersom det foreligger ekstraordinære forhold knyttet til sykmelders arbeidssituasjon, kan sykmelder fritas fra plikten til å delta i dialogmøtet. Arbeids- og velferdsetaten, bedriftshelsetjenesten og andre relevante aktører kan innkalles dersom arbeidsgiver eller arbeidstaker ønsker det. Det samme gjelder andre relevante aktører, likevel slik at helsepersonell som behandler eller har behandlet arbeidstaker ikke kan kalles inn dersom arbeidstaker motsetter seg det."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidsgiver skal kunne dokumentere hvordan bestemmelsene om oppfølgingsplan og dialogmøte har vært fulgt opp, herunder hvem som har vært innkalt til og har deltatt i dialogmøte."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan i forskrift gi nærmere bestemmelser om gjennomføringen av kravene i denne paragraf."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "23 feb 2007 nr. 10",
+        "l": "lov/2007-02-23-10"
+       },
+       " (ikr. 1 mars 2007), ",
+       {
+        "t": "19 des 2008 nr. 106",
+        "l": "lov/2008-12-19-106"
+       },
+       " (ikr. 1 mars 2010 iflg. ",
+       {
+        "t": "res. 19 feb 2010 nr. 189",
+        "l": "forskrift/2010-02-19-189"
+       },
+       "), ",
+       {
+        "t": "24 juni 2011 nr. 18",
+        "l": "lov/2011-06-24-18"
+       },
+       " (ikr. 1 juli 2011), ",
+       {
+        "t": "20 juni 2014 nr. 26",
+        "l": "lov/2014-06-20-26"
+       },
+       " (ikr. 1 juli 2014 iflg. ",
+       {
+        "t": "res. 20 juni 2014 nr. 793",
+        "l": "forskrift/2014-06-20-793"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap10",
+   "type": "kapittel",
+   "nr": "10",
+   "overskrift": "Kapittel 10 Arbeidstid",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10-1",
+     "visNr": "§ 10-1",
+     "tittel": "Definisjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Med arbeidstid menes den tid arbeidstaker står til disposisjon for arbeidsgiver."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Med arbeidsfri menes den tid arbeidstaker ikke står til disposisjon for arbeidsgiver."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-2",
+     "visNr": "§ 10-2",
+     "tittel": "Arbeidstidsordninger",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstidsordninger skal være slik at arbeidstakerne ikke utsettes for uheldige fysiske eller psykiske belastninger, og slik at det er mulig å ivareta sikkerhetshensyn."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker som regelmessig arbeider om natten har rett til fritak fra den arbeidstidsordning som gjelder for arbeidstakergruppen, dersom vedkommende av helsemessige, sosiale eller andre vektige velferdsgrunner har behov for det og fritaket kan gjennomføres uten vesentlig ulempe for virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker har rett til fleksibel arbeidstid dersom dette kan gjennomføres uten vesentlig ulempe for virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidstaker som har fylt 62 år eller som av helsemessige, sosiale eller andre vektige velferdsgrunner har behov for det, har rett til å få redusert sin arbeidstid dersom arbeidstidsreduksjonen kan gjennomføres uten vesentlig ulempe for virksomheten. Når avtalt periode med redusert arbeidstid er over, har arbeidstaker rett til å gå tilbake til tidligere arbeidstid. Under ellers like forhold har arbeidstaker med redusert arbeidstid fortrinnsrett til å øke sin arbeidstid når stilling blir ledig i virksomheten, forutsatt at stillingen helt eller i det vesentlige er tillagt de samme arbeidsoppgavene. Fortrinnsrett etter ",
+        {
+         "t": "§§ 14-2",
+         "l": "lov/2005-06-17-62/§14-2"
+        },
+        " og ",
+        {
+         "t": "14-3",
+         "l": "lov/2005-06-17-62/§14-3"
+        },
+        " går foran fortrinnsrett etter bestemmelsen her."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "13 juni 2008 nr. 40",
+        "l": "lov/2008-06-13-40"
+       },
+       " (ikr. 1 juli 2008 iflg. ",
+       {
+        "t": "res. 13 juni 2008 nr. 585",
+        "l": "forskrift/2008-06-13-585"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-3",
+     "visNr": "§ 10-3",
+     "tittel": "Arbeidsplan",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom arbeidstakerne arbeider til ulike tider på døgnet, skal det utarbeides en arbeidsplan som viser hvilke uker, dager og tider den enkelte arbeidstaker skal arbeide. Arbeidsplanen skal utarbeides i samarbeid med arbeidstakernes tillitsvalgte. Dersom ikke annet fremgår av tariffavtale, skal arbeidsplanen drøftes med arbeidstakernes tillitsvalgte så tidlig som mulig og senest to uker før iverksettelsen. Arbeidsplanen skal være lett tilgjengelig for arbeidstakerne."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-4",
+     "visNr": "§ 10-4",
+     "tittel": "Alminnelig arbeidstid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Den alminnelige arbeidstid må ikke overstige ni timer i løpet av 24 timer og 40 timer i løpet av sju dager."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) For arbeid som helt eller i det vesentlige er av passiv karakter, kan arbeidstiden forlenges med inntil halvparten av de passive periodene, men ikke med mer enn to timer i løpet av 24 timer og ti timer i løpet av sju dager. Arbeidstilsynet kan når arbeidet er særlig passivt, gi samtykke til at arbeidstiden forlenges utover det som er fastsatt i første punktum, men slik at arbeidstiden ikke overstiger 13 timer i løpet av 24 timer. Den alminnelige arbeidstiden må ikke overstige 48 timer i løpet av sju dager."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) For beredskapsvakt utenfor arbeidsstedet skal som hovedregel minst 1/7 av vakten regnes med i den alminnelige arbeidstid, avhengig av hvor belastende vaktordningen er. Arbeidsgiver og arbeidstakernes tillitsvalgte i virksomhet som er bundet av tariffavtale, kan ved skriftlig avtale fravike bestemmelsen i første punktum. Arbeidstilsynet kan etter krav fra arbeidsgiver eller arbeidstakernes tillitsvalgte fastsette en annen beregningsmåte dersom beregningen av arbeidstiden etter første punktum vil virke urimelig."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Den alminnelige arbeidstid må ikke overstige ni timer i løpet av 24 timer og 38 timer i løpet av sju dager for:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "døgnkontinuerlig skiftarbeid og sammenlignbart turnusarbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeid på to skift som regelmessig drives på søn- og helgedager, og sammenlignbart turnusarbeid som regelmessig drives på søn- og helgedager,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeid som innebærer at den enkelte arbeidstaker må arbeide minst hver tredje søndag,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeid som hovedsakelig drives om natten."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Den alminnelige arbeidstid må ikke overstige ni timer i løpet av 24 timer og 36 timer i løpet av sju dager for:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "helkontinuerlig skiftarbeid og sammenlignbart turnusarbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeid under jord i gruver, tunneldrift og utsprengning av bergrom under jord."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(6) For tredelt skift- og turnusarbeid som ikke faller inn under fjerde eller femte ledd og som innebærer at den enkelte arbeidstaker må arbeide minst hver tredje søndag, reduseres den alminnelige arbeidstiden etter første ledd ved at hver time arbeidet på søn- og helgedag, jf. ",
+        {
+         "t": "§ 10-10",
+         "l": "lov/2005-06-17-62/§10-10",
+         "a": "arbeidsmiljoloven/10-10"
+        },
+        " første ledd, regnes lik 1 time og 10 minutter, og hver time arbeidet om natten, jf. ",
+        {
+         "t": "§ 10-11",
+         "l": "lov/2005-06-17-62/§10-11",
+         "a": "arbeidsmiljoloven/10-11"
+        },
+        " første ledd, regnes lik 1 time og 15 minutter, ned til 36 timer i løpet av sju dager. Den alminnelige arbeidstid må uansett ikke overstige ni timer i løpet av 24 timer og 38 timer i løpet av sju dager."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "15 juni 2007 nr. 21",
+        "l": "lov/2007-06-15-21"
+       },
+       ", ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-5",
+     "visNr": "§ 10-5",
+     "tittel": "Gjennomsnittsberegning av den alminnelige arbeidstid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsgiver og arbeidstaker kan skriftlig avtale at den alminnelige arbeidstid kan ordnes slik at den i løpet av en periode på høyst 52 uker i gjennomsnitt ikke blir lenger enn foreskrevet i ",
+        {
+         "t": "§ 10-4",
+         "l": "lov/2005-06-17-62/§10-4",
+         "a": "arbeidsmiljoloven/10-4"
+        },
+        ", men slik at den alminnelige arbeidstiden ikke overstiger ti timer i løpet av 24 timer og 48 timer i løpet av sju dager. Grensen på 48 timer i løpet av sju dager kan gjennomsnittsberegnes over en periode på åtte uker, likevel slik at den alminnelige arbeidstiden ikke overstiger 50 timer i noen enkelt uke."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidsgiver og arbeidstakernes tillitsvalgte i virksomhet som er bundet av tariffavtale, kan skriftlig avtale at den alminnelige arbeidstiden skal ordnes slik at den i løpet av en periode på høyst 52 uker i gjennomsnitt ikke blir lenger enn foreskrevet i ",
+        {
+         "t": "§ 10-4",
+         "l": "lov/2005-06-17-62/§10-4",
+         "a": "arbeidsmiljoloven/10-4"
+        },
+        ", men slik at den alminnelige arbeidstiden ikke overstiger 12,5 timer i løpet av 24 timer og 48 timer i løpet av sju dager. Grensen på 48 timer i løpet av sju dager kan gjennomsnittsberegnes over en periode på åtte uker, likevel slik at den alminnelige arbeidstiden ikke overstiger 54 timer i noen enkelt uke. Ved inngåelse av avtale som innebærer at den alminnelige arbeidstiden overstiger 10 timer i løpet av 24 timer, skal det legges særlig vekt på hensynet til arbeidstakernes helse og velferd."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstilsynet kan samtykke i at den alminnelige arbeidstiden i løpet av en periode på høyst 26 uker i gjennomsnitt ikke blir lenger enn foreskrevet i ",
+        {
+         "t": "§ 10-4",
+         "l": "lov/2005-06-17-62/§10-4",
+         "a": "arbeidsmiljoloven/10-4"
+        },
+        ", men slik at den samlede arbeidstiden ikke overstiger 13 timer i løpet av 24 timer og 48 timer i løpet av sju dager. Grensen på 48 timer kan gjennomsnittsberegnes over en periode på åtte uker. Før Arbeidstilsynet treffer sin avgjørelse, skal ordningen av arbeidstiden drøftes med arbeidstakernes tillitsvalgte. Referat fra drøftingene samt utkast til arbeidsplan skal vedlegges søknaden. Arbeidstilsynet skal ved sin avgjørelse legge særlig vekt på hensynet til arbeidstakernes helse og velferd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       "), ",
+       {
+        "t": "18 mars 2022 nr. 10",
+        "l": "lov/2022-03-18-10"
+       },
+       " (i kraft 1 juli 2022 iflg. ",
+       {
+        "t": "res. 18 mars 2022 nr. 412",
+        "l": "forskrift/2022-03-18-412"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-6",
+     "visNr": "§ 10-6",
+     "tittel": "Overtid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeid utover avtalt arbeidstid må ikke gjennomføres uten at det foreligger et særlig og tidsavgrenset behov for det."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Varer arbeidet for noen arbeidstaker ut over lovens grense for den alminnelige arbeidstid regnes det overskytende som overtidsarbeid."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Før arbeid som nevnt i denne paragraf iverksettes skal arbeidsgiver, dersom det er mulig, drøfte nødvendigheten av det med arbeidstakernes tillitsvalgte."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Overtidsarbeidet må ikke overstige ti timer i løpet av sju dager, 25 timer i fire sammenhengende uker og 200 timer innenfor en periode på 52 uker."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidsgiver og arbeidstakernes tillitsvalgte i virksomhet som er bundet av tariffavtale, kan skriftlig avtale overtidsarbeid inntil 20 timer i løpet av sju dager, men slik at samlet overtidsarbeid ikke overstiger 50 timer i fire sammenhengende uker. Overtidsarbeidet må ikke overstige 300 timer innenfor en periode på 52 uker."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Arbeidstilsynet kan etter søknad i særlige tilfeller tillate samlet overtidsarbeid inntil 25 timer i løpet av sju dager og 200 timer i løpet av en periode på 26 uker. Referat fra drøftingene, jf. tredje ledd, skal vedlegges søknaden. Fremmer virksomheten søknad om overtid innenfor rammen i femte ledd, skal årsaken til at saken ikke er løst ved avtale med de tillitsvalgte alltid oppgis. Arbeidstilsynet skal ved sin avgjørelse legge særlig vekt på hensynet til arbeidstakernes helse og velferd."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Overtidsarbeid utover rammen i fjerde ledd kan bare pålegges arbeidstakere som i det enkelte tilfellet har sagt seg villig til det."
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Samlet arbeidstid må ikke overstige 13 timer i løpet av 24 timer eller 48 timer i løpet av sju dager. Grensen på 48 timer i løpet av sju dager kan gjennomsnittsberegnes over en periode på åtte uker, likevel slik at den samlede arbeidstiden etter ",
+        {
+         "t": "§ 10-5",
+         "l": "lov/2005-06-17-62/§10-5",
+         "a": "arbeidsmiljoloven/10-5"
+        },
+        " andre ledd og ",
+        {
+         "t": "§ 10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        " femte ledd ikke overstiger 69 timer i noen enkelt uke."
+       ]
+      },
+      {
+       "tekst": [
+        "(9) Arbeidsgiver og arbeidstakernes tillitsvalgte i virksomhet som er bundet av tariffavtale, kan skriftlig avtale unntak fra grensen på 13 timer i åttende ledd, men slik at den samlede arbeidstid ikke overstiger 16 timer i løpet av 24 timer. Arbeidstaker skal i så fall sikres tilsvarende kompenserende hvileperioder eller, der dette ikke er mulig, annet passende vern."
+       ]
+      },
+      {
+       "tekst": [
+        "(10) Arbeidstaker har rett til å bli fritatt fra å utføre arbeid utover avtalt arbeidstid når vedkommende av helsemessige eller vektige sosiale grunner ber om det. Arbeidsgiver plikter også ellers å frita arbeidstaker som ber om det, når arbeidet uten skade kan utsettes eller utføres av andre."
+       ]
+      },
+      {
+       "tekst": [
+        "(11) For overtidsarbeid skal det betales et tillegg til den lønn arbeidstakeren har for tilsvarende arbeid i den alminnelige arbeidstiden. Tillegget skal være minst 40 prosent."
+       ]
+      },
+      {
+       "tekst": [
+        "(12) Arbeidsgiver og arbeidstaker kan skriftlig avtale at overtidstimer helt eller delvis skal tas ut i form av arbeidsfri på et avtalt tidspunkt."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-7",
+     "visNr": "§ 10-7",
+     "tittel": "Oversikt over arbeidstiden",
+     "ledd": [
+      {
+       "tekst": [
+        "Det skal foreligge en oversikt som viser hvor mye den enkelte arbeidstaker har arbeidet. Oversikten skal være tilgjengelig for Arbeidstilsynet og arbeidstakernes tillitsvalgte."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-8",
+     "visNr": "§ 10-8",
+     "tittel": "Daglig og ukentlig arbeidsfri",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker skal ha minst 11 timer sammenhengende arbeidsfri i løpet av 24 timer. Den arbeidsfrie perioden skal plasseres mellom to hovedarbeidsperioder."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker skal ha en sammenhengende arbeidsfri periode på 35 timer i løpet av sju dager."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidsgiver og arbeidstakernes tillitsvalgte i virksomhet som er bundet av tariffavtale, kan skriftlig avtale unntak fra bestemmelsene i første og andre ledd. Slik avtale kan bare inngås dersom arbeidstaker sikres tilsvarende kompenserende hvileperioder eller, der dette ikke er mulig, annet passende vern. Det kan ikke avtales kortere arbeidsfri periode enn 8 timer i løpet av 24 timer eller 28 timer i løpet av sju dager. Grensen på 8 timer gjelder ikke når arbeid utover avtalt arbeidstid (jf. ",
+        {
+         "t": "§ 10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        " første ledd) eller arbeid ved utkalling under beredskapsvakt utenfor arbeidsstedet er nødvendig for å unngå alvorlige driftsforstyrrelser. Ved virksomhet som ikke er bundet av tariffavtale, kan arbeidsgiver og arbeidstakernes representanter på samme vilkår skriftlig avtale arbeid i den arbeidsfrie perioden, når dette er nødvendig for å unngå alvorlige driftsforstyrrelser."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidsfri som nevnt i andre ledd skal så vidt mulig omfatte søndag. Arbeidstaker som har utført søn- og helgedagsarbeid, skal ha arbeidsfri følgende søn- og helgedagsdøgn. Arbeidsgiver og arbeidstaker kan skriftlig avtale en arbeidstidsordning som i gjennomsnitt gir arbeidstaker arbeidsfri annenhver søn- og helgedag over en periode på 26 uker, likevel slik at det ukentlige fridøgn minst hver fjerde uke faller på en søn- eller helgedag."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Departementet kan i forskrift fastsette en fordeling av fridøgnene som avviker fra reglene i fjerde ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-9",
+     "visNr": "§ 10-9",
+     "tittel": "Pauser",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker skal ha minst en pause dersom den daglige arbeidstiden overstiger fem og en halv time. Pausene skal til sammen være minst en halv time hvis den daglige arbeidstid er minst åtte timer. Dersom arbeidstaker ikke fritt kan forlate arbeidsplassen under pausen eller der det ikke finnes tilfredsstillende pauserom, skal pausen regnes som en del av arbeidstiden. Når forholdene gjør det nødvendig, kan pausen forskyves."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Når arbeidstaker arbeider mer enn to timer etter at den alminnelige arbeidstid er avviklet, skal arbeidstaker gis en pause på minst en halv time. Pausen regnes som en del av arbeidstiden. Pause som legges etter alminnelig arbeidstids slutt, godtgjøres som overtidsarbeid, men regnes ikke med i det antall timer det er tillatt å arbeide overtid etter ",
+        {
+         "t": "§ 10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        ". Når forholdene gjør det nødvendig, kan pausen kortes ned eller forskyves."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-10",
+     "visNr": "§ 10-10",
+     "tittel": "Søndagsarbeid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Det skal være arbeidsfri fra kl. 1800 dagen før en søn- eller helgedag og til kl. 2200 dagen før neste virkedag. Jul-, påske- og pinseaften skal det være arbeidsfri fra kl. 1500 til kl. 2200 dagen før neste virkedag. Arbeid innenfor disse tidsrom regnes som søn- og helgedagsarbeid."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeid på søn- og helgedager er ikke tillatt med mindre arbeidets art gjør det nødvendig."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidsgiver skal drøfte behovet for søn- og helgedagsarbeid med arbeidstakernes tillitsvalgte før det iverksettes."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) I virksomhet som er bundet av tariffavtale kan arbeidsgiver og arbeidstakerens tillitsvalgte inngå skriftlig avtale om arbeid på søn- og helgedager dersom det foreligger et særlig og tidsavgrenset behov for dette."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidsgiver og arbeidstaker kan slutte skriftlig avtale om arbeid på søn- og helgedager utenom de tilfeller som er nevnt i denne paragraf, mot tilsvarende fri på andre dager som i henhold til arbeidstakerens religion er helge- eller høytidsdag. Slik avtale kan inngås uten hensyn til bestemmelsene i ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " fjerde ledd."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-11",
+     "visNr": "§ 10-11",
+     "tittel": "Nattarbeid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeid mellom kl. 2100 og kl. 0600 er nattarbeid. Arbeidsgiver og arbeidstakers tillitsvalgte ved virksomhet som er bundet av tariffavtale, kan skriftlig fastsette et annet tidsrom på minst åtte timer som omfatter tiden mellom kl. 0000 og kl. 0600. Som nattarbeid regnes ikke arbeid på to skift som legges mellom kl. 0600 og kl. 0000."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Nattarbeid er ikke tillatt med mindre arbeidets art gjør det nødvendig."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidsgiver og arbeidstaker kan inngå skriftlig avtale om at arbeidstaker, på eget initiativ, kan utføre arbeid mellom kl. 2100 og kl. 2300."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Ved virksomhet som er bundet av tariffavtale kan arbeidsgiver og arbeidstakers tillitsvalgte inngå skriftlig avtale om nattarbeid dersom det foreligger et særlig og tidsavgrenset behov for dette."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidsgiver skal drøfte nødvendigheten av nattarbeid med arbeidstakers tillitsvalgte før det iverksettes."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Den alminnelige arbeidstiden for arbeidstaker som jevnlig arbeider mer enn tre timer om natten, skal i gjennomsnitt ikke overstige åtte timer i løpet av 24 timer. Gjennomsnittet skal beregnes over fire uker. Minimumsperioden for ukentlig arbeidsfri i ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " andre ledd skal ikke tas med ved beregning av gjennomsnittet."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Arbeidstiden for arbeidstaker som arbeider mer enn tre timer om natten skal ikke overstige åtte timer i løpet av 24 timer dersom arbeidet innebærer en særlig risiko eller betydelige fysiske eller psykiske belastninger."
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Arbeidstaker som hovedsakelig utfører arbeid om natten, skal gis tilbud om helsekontroll før tiltredelse og deretter med jevne mellomrom."
+       ]
+      },
+      {
+       "tekst": [
+        "(9) Arbeidsgiver og arbeidstakers tillitsvalgte ved virksomheter som er bundet av tariffavtale, kan skriftlig avtale at bestemmelsene i sjette og sjuende ledd skal fravikes. Arbeidstakerne skal i så fall sikres tilsvarende kompenserende hvileperioder eller, der dette ikke er mulig, annet passende vern."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "16 juni 2017 nr. 42",
+        "l": "lov/2017-06-16-42"
+       },
+       " (ikr. 1 juli 2017 iflg. ",
+       {
+        "t": "res. 16 juni 2017 nr. 752",
+        "l": "forskrift/2017-06-16-752"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "10-12",
+     "visNr": "§ 10-12",
+     "tittel": "Unntak",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Bestemmelsene i dette kapittel kommer ikke til anvendelse for arbeidstaker i ledende stilling, med unntak av ",
+        {
+         "t": "§ 10-2",
+         "l": "lov/2005-06-17-62/§10-2",
+         "a": "arbeidsmiljoloven/10-2"
+        },
+        " første, andre og fjerde ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Bestemmelsene i dette kapitlet kommer ikke til anvendelse for arbeidstakere i særlig uavhengig stilling, med unntak av ",
+        {
+         "t": "§ 10-2",
+         "l": "lov/2005-06-17-62/§10-2",
+         "a": "arbeidsmiljoloven/10-2"
+        },
+        " første, andre og fjerde ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Bestemmelsene i dette kapittel kan fravikes for arbeid som på grunn av naturhendelser, ulykke eller andre uforutsette begivenheter må foretas for å avverge fare for eller skade på liv eller eiendom. I så fall skal arbeidstakerne sikres tilsvarende kompenserende hvileperioder eller, der dette ikke er mulig, annet passende vern."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Fagforening med innstillingsrett etter arbeidstvistloven eller tjenestetvistloven kan, med unntak av ",
+        {
+         "t": "§ 10-2",
+         "l": "lov/2005-06-17-62/§10-2",
+         "a": "arbeidsmiljoloven/10-2"
+        },
+        " første, andre og fjerde ledd, og ",
+        {
+         "t": "§ 10-11",
+         "l": "lov/2005-06-17-62/§10-11",
+         "a": "arbeidsmiljoloven/10-11"
+        },
+        " åttende ledd, inngå tariffavtale som fraviker bestemmelsene i dette kapittel. Unntak fra ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " første og andre ledd og ",
+        {
+         "t": "§ 10-11",
+         "l": "lov/2005-06-17-62/§10-11",
+         "a": "arbeidsmiljoloven/10-11"
+        },
+        " sjette og sjuende ledd forutsetter at arbeidstakerne sikres tilsvarende kompenserende hvileperioder, eller der dette ikke er mulig, annet passende vern. For bruk av overtid etter slik tariffavtale gjelder vilkårene i ",
+        {
+         "t": "§ 10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        " første ledd. Arbeidstaker må i det enkelte tilfelle samtykke til overtidsarbeidet. Kravet til individuelt samtykke gjelder tilsvarende der det inngås tariffavtale om en samlet gjennomsnittlig arbeidstid på over 48 timer i løpet av sju dager i løpet av ett år."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Dersom det er inngått avtale som nevnt i ",
+        {
+         "t": "§§ 10-5",
+         "l": "lov/2005-06-17-62/§10-5",
+         "a": "arbeidsmiljoloven/10-5"
+        },
+        " andre ledd, ",
+        {
+         "t": "10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        ", ",
+        {
+         "t": "10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " tredje ledd, ",
+        {
+         "t": "10-10",
+         "l": "lov/2005-06-17-62/§10-10",
+         "a": "arbeidsmiljoloven/10-10"
+        },
+        ", ",
+        {
+         "t": "10-11",
+         "l": "lov/2005-06-17-62/§10-11",
+         "a": "arbeidsmiljoloven/10-11"
+        },
+        " første, fjerde eller niende ledd eller ",
+        {
+         "t": "§ 10-12",
+         "l": "lov/2005-06-17-62/§10-12",
+         "a": "arbeidsmiljoloven/10-12"
+        },
+        " fjerde ledd, og et flertall av arbeidstakerne er bundet av avtalen, kan arbeidsgiver gjøre avtalens bestemmelser om arbeidstid gjeldende for alle arbeidstakere som utfører arbeid av den art avtalen omfatter."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Arbeidstilsynet kan gi samtykke til arbeidstidsordninger som fraviker ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " og ",
+        {
+         "t": "§ 10-10",
+         "l": "lov/2005-06-17-62/§10-10",
+         "a": "arbeidsmiljoloven/10-10"
+        },
+        " andre ledd når det er lang avstand mellom arbeidsstedet og arbeidstakers bosted. Slikt samtykke kan bare gis dersom det har sikkerhetsmessig betydning å legge til rette for en helhetlig regulering av arbeidstidsordningene på arbeidsplassen. Fravik fra ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " første og andre ledd forutsetter at arbeidstakerne sikres kompenserende hvile eller, der dette ikke er mulig, annet passende vern."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Arbeidstilsynet kan gi samtykke til arbeidstidsordninger som fraviker ",
+        {
+         "t": "§ 10-8",
+         "l": "lov/2005-06-17-62/§10-8",
+         "a": "arbeidsmiljoloven/10-8"
+        },
+        " første og andre ledd og grensen på 13 timer i ",
+        {
+         "t": "§ 10-5",
+         "l": "lov/2005-06-17-62/§10-5",
+         "a": "arbeidsmiljoloven/10-5"
+        },
+        " tredje ledd for helse- og omsorgsarbeid samt vakt- og overvåkningsarbeid der arbeidet helt eller delvis er av passiv karakter (jf. ",
+        {
+         "t": "§ 10-4",
+         "l": "lov/2005-06-17-62/§10-4",
+         "a": "arbeidsmiljoloven/10-4"
+        },
+        " andre ledd). Slikt samtykke kan bare gis dersom arbeidstakerne sikres kompenserende hvile eller, der dette ikke er mulig, annet passende vern."
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Dersom arbeidet er av så særegen art at det vanskelig lar seg tilpasse bestemmelsene i kapitlet her, kan departementet i forskrift gi særlige regler og fastsette unntak fra disse bestemmelsene."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       "), ",
+       {
+        "t": "16 juni 2017 nr. 42",
+        "l": "lov/2017-06-16-42"
+       },
+       " (ikr. 1 juli 2017 iflg. ",
+       {
+        "t": "res. 16 juni 2017 nr. 752",
+        "l": "forskrift/2017-06-16-752"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": [
+      {
+       "nr": "1",
+       "tekst": [
+        "Sjette (nå åttende) ledd ikr. 1 juli 2005, første, andre og fjerde ledd ikr. 1 jan 2006."
+       ]
+      }
+     ]
+    },
+    {
+     "nr": "10-13",
+     "visNr": "§ 10-13",
+     "tittel": "Tvisteløsning",
+     "ledd": [
+      {
+       "tekst": [
+        "Tvist mellom arbeidsgiver og arbeidstaker om anvendelsen av bestemmelsene i ",
+        {
+         "t": "§ 10-2",
+         "l": "lov/2005-06-17-62/§10-2",
+         "a": "arbeidsmiljoloven/10-2"
+        },
+        " andre, tredje og fjerde ledd og ",
+        {
+         "t": "§ 10-6",
+         "l": "lov/2005-06-17-62/§10-6",
+         "a": "arbeidsmiljoloven/10-6"
+        },
+        " tiende ledd avgjøres av tvisteløsningsnemnda, jf. ",
+        {
+         "t": "§ 17-2",
+         "l": "lov/2005-06-17-62/§17-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap12",
+   "type": "kapittel",
+   "nr": "12",
+   "overskrift": "Kapittel 12 Rett til permisjon",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "12-1",
+     "visNr": "§ 12-1",
+     "tittel": "Svangerskapskontroll",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidstaker som er gravid har rett til fri fra arbeidet med lønn i forbindelse med svangerskapskontroll dersom slike undersøkelser ikke med rimelighet kan finne sted utenfor arbeidstiden."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-2",
+     "visNr": "§ 12-2",
+     "tittel": "Svangerskapspermisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidstaker som er gravid har rett til permisjon i inntil tolv uker under svangerskapet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-3",
+     "visNr": "§ 12-3",
+     "tittel": "Omsorgspermisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) I forbindelse med fødselen har faren rett til to ukers permisjon for å bistå moren. Hvis foreldrene ikke bor sammen, kan retten til permisjon utøves av en annen som bistår moren."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Adoptivforeldre og fosterforeldre har rett til to ukers permisjon i forbindelse med at omsorgen for barnet overtas. Dette gjelder ikke ved stebarnsadopsjon eller hvis barnet er over 15 år."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-4",
+     "visNr": "§ 12-4",
+     "tittel": "Fødselspermisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "Etter fødselen skal mor ha permisjon de første seks uker, med mindre hun fremlegger legeattest om at det er bedre for henne å komme i arbeid."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-5",
+     "visNr": "§ 12-5",
+     "tittel": "Foreldrepermisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Foreldrene har rett til permisjon etter reglene i paragrafen her og i ",
+        {
+         "t": "§§ 12-2",
+         "l": "lov/2005-06-17-62/§12-2",
+         "a": "arbeidsmiljoloven/12-2"
+        },
+        " og ",
+        {
+         "t": "12-4",
+         "l": "lov/2005-06-17-62/§12-4",
+         "a": "arbeidsmiljoloven/12-4"
+        },
+        " i til sammen tolv måneder. Foreldrene har uansett rett til permisjon når det ytes foreldrepenger fra folketrygden."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Hver av foreldrene har i tillegg til permisjon etter første ledd, rett til permisjon i inntil tolv måneder for hver fødsel. Denne permisjonen må tas ut umiddelbart etter foreldrenes permisjon etter første ledd. Arbeidstaker som har delvis permisjon etter ",
+        {
+         "t": "§ 12-6",
+         "l": "lov/2005-06-17-62/§12-6",
+         "a": "arbeidsmiljoloven/12-6"
+        },
+        " har likevel ikke rett til permisjon etter leddet her."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Med mindre begge foreldrene har omsorgen for barnet, kan retten til permisjon etter første ledd utøves av en annen som har omsorg for barnet. Arbeidstaker som er alene om omsorgen for barnet har rett til inntil to års permisjon etter andre ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Adoptivforeldre og fosterforeldre har rett til permisjon etter paragrafen her når omsorgen for barnet overtas. Det samme gjelder arbeidstaker som har eller får tildelt foreldreansvar når den andre av foreldrene dør, og som har hatt mindre enn vanlig samvær med barnet. Retten til permisjon gjelder ikke ved stebarnsadopsjon eller hvis barnet er over 15 år."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 apr 2006 nr. 10",
+        "l": "lov/2006-04-21-10"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 21 apr 2006 nr. 428",
+        "l": "forskrift/2006-04-21-428"
+       },
+       "), ",
+       {
+        "t": "15 juni 2007 nr. 22",
+        "l": "lov/2007-06-15-22"
+       },
+       " (ikr. 15 juni 2007 iflg. ",
+       {
+        "t": "res. 15 juni 2007 nr. 629",
+        "l": "forskrift/2007-06-15-629"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-6",
+     "visNr": "§ 12-6",
+     "tittel": "Delvis permisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Permisjon etter ",
+        {
+         "t": "§§ 12-2",
+         "l": "lov/2005-06-17-62/§12-2",
+         "a": "arbeidsmiljoloven/12-2"
+        },
+        ", ",
+        {
+         "t": "12-4",
+         "l": "lov/2005-06-17-62/§12-4",
+         "a": "arbeidsmiljoloven/12-4"
+        },
+        " og ",
+        {
+         "t": "12-5",
+         "l": "lov/2005-06-17-62/§12-5",
+         "a": "arbeidsmiljoloven/12-5"
+        },
+        " første ledd kan tas ut som delvis permisjon."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Delvis permisjon baseres på avtale mellom arbeidsgiver og arbeidstaker. Arbeidstakers ønske om hvordan uttaket av delvis permisjon skal gjennomføres, skal oppfylles med mindre dette medfører vesentlige ulemper for virksomheten. Arbeidstaker har rett til å la seg bistå av en tillitsvalgt eller annen representant. Avtale om delvis permisjon kan endres eller opphøre når særlige grunner gjør det nødvendig."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Delvis permisjon må tas ut innenfor en tidsramme på tre år."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-7",
+     "visNr": "§ 12-7",
+     "tittel": "Varslingsplikt",
+     "ledd": [
+      {
+       "tekst": [
+        "Permisjon etter ",
+        {
+         "t": "§§ 12-2",
+         "l": "lov/2005-06-17-62/§12-2",
+         "a": "arbeidsmiljoloven/12-2"
+        },
+        " til ",
+        {
+         "t": "12-6",
+         "l": "lov/2005-06-17-62/§12-6",
+         "a": "arbeidsmiljoloven/12-6"
+        },
+        " skal varsles arbeidsgiver snarest mulig og senest en uke i forveien ved fravær utover to uker, senest fire uker i forveien ved fravær utover tolv uker og senest tolv uker i forveien ved fravær utover ett år. Oversittelse av fristene medfører ikke at arbeidstaker må utsette permisjonen dersom permisjon er nødvendig på grunn av forhold som arbeidstakeren ikke hadde kjennskap til ved fristens utløp."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-8",
+     "visNr": "§ 12-8",
+     "tittel": "Ammefri",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Kvinne som ammer sitt barn kan kreve den fri hun av den grunn trenger. Fritiden kan for eksempel tas ut i minst en halv time to ganger daglig eller som redusert arbeidstid med inntil én time hver dag."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Kvinne som har ammefri etter første ledd, har i barnets første leveår rett til lønn inntil én time på arbeidsdager med avtalt arbeidstid sju timer eller mer."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "7 juni 2013 nr. 27",
+        "l": "lov/2013-06-07-27"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 7 juni 2013 nr. 590",
+        "l": "forskrift/2013-06-07-590"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-9",
+     "visNr": "§ 12-9",
+     "tittel": "Barns og barnepassers sykdom",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som har omsorg for barn har rett til permisjon:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "for nødvendig tilsyn med barnet når det er sykt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvis barnet skal følges til legeundersøkelse eller annen oppfølging i forbindelse med sykdom, eller"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvis den som har det daglige barnetilsynet er syk eller har permisjon etter denne paragraf på grunn av et annet barn."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Retten til permisjon etter paragrafen her gjelder til og med det kalenderåret barnet fyller 12 år. Arbeidstaker har rett til permisjon inntil 10 dager hvert kalenderår eller inntil 15 dager dersom arbeidstaker har omsorg for mer enn to barn."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom barnet har kronisk sykdom, langvarig sykdom eller har nedsatt funksjonsevne og det derfor er en markert økning av risikoen for at arbeidstaker får fravær fra arbeidet, har arbeidstaker rett til fri etter første ledd i inntil 20 dager hvert kalenderår. Retten til permisjon gjelder til og med det kalenderåret barnet fyller 18 år. Arbeidstaker har i tillegg rett til permisjon for å delta i opplæring ved godkjent helseinstitusjon eller offentlig kompetansesenter for å kunne ta seg av og behandle barnet."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidstaker som har omsorg for barn har rett til permisjon dersom:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "barnet blir innlagt i helseinstitusjon og arbeidstaker oppholder seg ved helseinstitusjonen,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "barnet er utskrevet fra helseinstitusjon og arbeidstaker må være hjemme fordi barnet trenger kontinuerlig tilsyn og pleie, eller"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "barnet har livstruende eller annen svært alvorlig sykdom eller skade."
+           ]
+          }
+         ]
+        }
+       ],
+       "etter": [
+        [
+         "Ved permisjon etter bokstavene a og b gjelder aldersgrensene i andre og tredje ledd. Rett til permisjon etter bokstav c gjelder til og med det kalenderåret barnet fyller 18 år, men uten hensyn til alder hvis barnet er psykisk utviklingshemmet."
+        ]
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidstaker har uansett rett til permisjon når det ytes omsorgspenger, pleiepenger eller opplæringspenger fra folketrygden."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Arbeidstaker som er alene om omsorgen for barn har rett til dobbelt så mange permisjonsdager som etter andre og tredje ledd. Det samme gjelder hvis det er to om omsorgen, men en av dem er langvarig avskåret fra tilsynet med barnet på grunn av nedsatt funksjonsevne, innleggelse i helseinstitusjon som langtidspasient, er i fengsel, avtjener verneplikt eller tilsvarende forhold. Retten til permisjon kan overføres med inntil halvparten av dagene hvert kalenderår til mor eller far med samværsrett eller til den som arbeidstaker bor sammen med og som ikke har omsorg for egne barn."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "20 juni 2008 nr. 42",
+        "l": "lov/2008-06-20-42"
+       },
+       " (ikr. 1 jan 2009 iflg. ",
+       {
+        "t": "res. 20 juni 2008 nr. 631",
+        "l": "forskrift/2008-06-20-631"
+       },
+       "), ",
+       {
+        "t": "11 mai 2017 nr. 25",
+        "l": "lov/2017-05-11-25"
+       },
+       " (ikr. 1 okt 2017), ",
+       {
+        "t": "20 des 2022 nr. 98",
+        "l": "lov/2022-12-20-98"
+       },
+       " (i kraft 1 jan 2023 iflg. ",
+       {
+        "t": "res. 20 des 2022 nr. 2309",
+        "l": "forskrift/2022-12-20-2309"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-10",
+     "visNr": "§ 12-10",
+     "tittel": "Omsorg for og pleie av nærstående",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidstaker som pleier nærstående i hjemmet i livets sluttfase har rett til permisjon i 60 dager for pleie av den enkelte nærstående."
+       ]
+      },
+      {
+       "tekst": [
+        "Arbeidstaker har rett til permisjon i inntil 10 dager hvert kalenderår for å gi nødvendig omsorg til foreldre, ektefelle, samboer eller registrert partner. Det samme gjelder ved nødvendig omsorg for funksjonshemmet eller kronisk sykt barn fra og med kalenderåret etter at barnet fylte 18 år når arbeidstakeren har hatt slik omsorg for barnet som nevnt i ",
+        {
+         "t": "§ 12-9",
+         "l": "lov/2005-06-17-62/§12-9",
+         "a": "arbeidsmiljoloven/12-9"
+        },
+        " tredje ledd. Departementet kan gi forskrift om dokumentasjon av nødvendig omsorg."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "9 apr 2010 nr. 11",
+        "l": "lov/2010-04-09-11"
+       },
+       " (ikr. 1 juli 2010 iflg. ",
+       {
+        "t": "res. 9 apr 2010 nr. 499",
+        "l": "forskrift/2010-04-09-499"
+       },
+       "), ",
+       {
+        "t": "19 okt 2012 nr. 68",
+        "l": "lov/2012-10-19-68"
+       },
+       " (ikr. 1 jan 2013 iflg. ",
+       {
+        "t": "res. 19 okt 2012 nr. 978",
+        "l": "forskrift/2012-10-19-978"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-11",
+     "visNr": "§ 12-11",
+     "tittel": "Utdanningspermisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som har vært i arbeidslivet i minst tre år og som har vært ansatt hos arbeidsgiveren de siste to år, har rett til hel eller delvis permisjon i inntil tre år for å delta i organiserte utdanningstilbud. Utdanning ut over grunnskole eller videregående opplæringsnivå må være yrkesrelatert for å gi rett til permisjon. Yrkesrelatert utdanning omfatter alle typer arbeidsmarkedsrelevant etter- og videreutdanning."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Permisjon kan likevel ikke kreves når det vil være til hinder for arbeidsgivers forsvarlige planlegging av drift og personaldisponeringer."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker som har hatt utdanningspermisjon, har ikke rett til ny utdanningspermisjon før det har gått"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "dobbelt så lang tid som varigheten av den foregående permisjonen og"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "minst ett år fra den foregående permisjonen tok til, unntatt ved utdanningspermisjon for kurs under én måneds varighet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidstaker som vil bruke retten til utdanningspermisjon, må gi arbeidsgiver skriftlig varsel om dette. Varslet skal inneholde opplysninger om utdanningens faglige innhold, varighet og eventuelt opptak ved utdanningsinstitusjon. Dersom det gjelder utdanning ut over grunnskole eller videregående opplæringsnivå, må yrkesrelevans begrunnes."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidsgiver som vil gjøre gjeldende at vilkårene for utdanningspermisjon ikke er oppfylt, skal snarest mulig og senest innen seks måneder skriftlig underrette arbeidstaker om dette. Dersom varslet permisjon er kortere enn seks måneder, skal slik underretning foreligge innen tre måneder etter at varsel er mottatt, men innen to måneder når varslet permisjon er kortere enn én måned. Arbeidsgiver skal fram til svar gis, på forespørsel orientere arbeidstaker om hva som gjøres for om mulig å legge til rette for permisjonen."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan i forskrift helt eller delvis unnta virksomheter fra bestemmelsene i denne paragraf."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "22 juni 2018 nr. 45",
+        "l": "lov/2018-06-22-45"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 945",
+        "l": "forskrift/2018-06-22-945"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-12",
+     "visNr": "§ 12-12",
+     "tittel": "Militærtjeneste mv.",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker har rett til permisjon ved pliktig eller frivillig militærtjeneste eller lignende allmenn vernetjeneste. Det samme gjelder ved frivillig tjenestegjøring av til sammen 24 måneders varighet i styrker organisert av norske myndigheter for deltakelse i internasjonale fredsoperasjoner, hvis arbeidstaker snarest mulig etter å ha inngått bindende avtale om tjenestegjøring i slike styrker varsler arbeidsgiver om dette."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker som ønsker å fortsette i stillingen etter tjenestegjøringen, skal varsle arbeidsgiver før tjenesten begynner. Arbeidsgiver plikter ikke å ta arbeidstaker tilbake i arbeid før en måned etter mottak av varsel om fra hvilken dag arbeidstaker kan gjenoppta arbeidet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-13",
+     "visNr": "§ 12-13",
+     "tittel": "Offentlige verv",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidstaker har rett til permisjon fra arbeid i det omfang det er nødvendig for å oppfylle lovbestemt møteplikt i offentlige organer."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-14",
+     "visNr": "§ 12-14",
+     "tittel": "Tvisteløsning",
+     "ledd": [
+      {
+       "tekst": [
+        "Tvist om rett til permisjon etter dette kapittel avgjøres av tvisteløsningsnemnda, jf. ",
+        {
+         "t": "§ 17-2",
+         "l": "lov/2005-06-17-62/§17-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-15",
+     "visNr": "§ 12-15",
+     "tittel": "Religiøse høytider",
+     "ledd": [
+      {
+       "tekst": [
+        "Rett til permisjon ved religiøse høytider for arbeidstaker som har andre religiøse høytidsdager enn de offentlige helligdagene, reguleres av ",
+        {
+         "t": "trossamfunnsloven § 18",
+         "l": "lov/2020-04-24-31/§18"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), endret ved lov ",
+       {
+        "t": "23 juni 2020 nr. 97",
+        "l": "lov/2020-06-23-97"
+       },
+       " (ikr. 30 des 2020 iflg. ",
+       {
+        "t": "res. 27 nov 2020 nr. 2486",
+        "l": "forskrift/2020-11-27-2486"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "12-16",
+     "visNr": "§ 12-16",
+     "tittel": "Forskrifter ved utbrudd eller fare for utbrudd av allmennfarlig smittsom sykdom",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved utbrudd eller fare for utbrudd av allmennfarlig smittsom sykdom kan departementet gi forskrift om rett til permisjon som avviker fra bestemmelsene i dette kapitlet. Slik forskrift kan gis virkning så lenge utbruddet eller faren for utbrudd er til stede."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "20 mars 2020 nr. 8",
+        "l": "lov/2020-03-20-8"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

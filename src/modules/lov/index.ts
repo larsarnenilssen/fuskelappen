@@ -23,7 +23,9 @@ export const manifest: Modulmanifest = {
   ],
   async sokeoppforinger() {
     const { dokumenter } = await lastOversikt();
-    const lastet = (await Promise.all(dokumenter.map((d) => lastDokument(d.id)))).filter((d) => d !== null);
+    // Lokale forskrifter vises bare for dem som har valgt fylket, og tas derfor ikke med i søket på forsiden.
+    const nasjonale = dokumenter.filter((d) => d.gyldighet.niva === 'nasjonal');
+    const lastet = (await Promise.all(nasjonale.map((d) => lastDokument(d.id)))).filter((d) => d !== null);
     // Søket på forsiden finner dokumentene på navn og paragrafene på nummer («§ 11-1», «11-1») og tittel.
     // Teksten i paragrafene søkes det i inne i modulen, så søkeindeksen blir ikke stor.
     return lastet.flatMap((d) => [

@@ -350,6 +350,38 @@ kilder:
       Kilde for at læreplanverket består av tre deler: overordnet del, fag- og timefordelingen og læreplanene for
       fag (eier 02.10.2026). Sjekken følger med på ingressen på siden. Endres den, står det i kontrollsaken.
 
+  - id: vestland-forskrift-inntak
+    navn: Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
+    utgiver: Lovdata
+    url: https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3, 5]
+    merknad: >-
+      Lokal forskrift om inntak (opplæringsforskrifta § 4-5), sist endret med virkning fra 01.08.2026. Lokale
+      forskrifter er ikke i Lovdatas gratis datasett. Teksten hentes fra siden hos Lovdata hver 13. uke (eier
+      02.10.2026, avgjørelse 039).
+
+  - id: vestland-forskrift-skulereglar
+    navn: Forskrift om skulereglar, Vestland fylkeskommune
+    utgiver: Lovdata
+    url: https://lovdata.no/dokument/LF/forskrift/2026-06-16-1587
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Forskriftstekst, ikke vernet etter åndsverkloven § 14
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3, 7]
+    merknad: >-
+      Skolereglar (opplæringslova § 10-7), i kraft 01.08.2026. Hentes som inntaksforskriften (avgjørelse 039).
+
   - id: udir-lokale-forskrifter
     navn: Lokale forskrifter etter opplæringsloven
     utgiver: Utdanningsdirektoratet

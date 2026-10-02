@@ -3,13 +3,18 @@
 // fra GitHub Actions, ikke fra utviklingsmiljøet.
 //
 // - Datasettene (gjeldende lover og gjeldende sentrale forskrifter) lastes ned én gang og pakkes ut med systemets tar.
+// - Lokale forskrifter (f.eks. Vestland fylkeskommune) finnes ikke i datasettene. De hentes fra siden hos Lovdata, én side
+//   per forskrift, og bare hver 13. uke (intervall_uker i content/lovverk.yaml), av hensyn til Lovdata (eier 02.10.2026).
+//   Mellom hentingene beholdes forrige henting. Første gang, og med --alle, hentes de uansett.
 // - Hvert dokument leses med scripts/lovdata/les.ts og valideres. Feiler et dokument, beholdes forrige fil for det,
 //   og de andre hentes som vanlig. Skriptet avslutter da med feil, så kildesjekken sier fra.
 // - Endrede, nye og fjernede paragrafer lagres i .generert/lovdata-endringer.json, som kildesjekken tar med i
 //   kontrollsaken. Teksten er lov- og forskriftstekst og vises uendret i appen.
 //
-// Bruk: npm run hent:lovdata [-- --fra=<mappe>]
-//   --fra leser filene fra en mappe i stedet for å laste ned (filnavn som i datasettet, f.eks. nl-20230609-030.xml).
+// Bruk: npm run hent:lovdata [-- --fra=<mappe>] [-- --alle]
+//   --fra leser filene fra en mappe i stedet for å laste ned (filnavn som i datasettet, f.eks. nl-20230609-030.xml,
+//         og for lokale forskrifter lf-20200929-3380.html).
+//   --alle henter også de lokale forskriftene som ikke skal hentes denne uken.
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -58,6 +63,42 @@ async function hentDatasett(url: string): Promise<string> {
     } catch (e) {
       feil = e;
       await new Promise((r) => setTimeout(r, 5000 * forsok));
+    }
+  }
+  throw feil;
+}
+
+/** Standard for intervall_uker: lokale forskrifter hentes i uke 13, 26, 39 og 52. */
+const INTERVALL_UKER = 13;
+
+/** Ukenummeret etter ISO 8601 (uke 1 er uken med årets første torsdag). */
+export function ukenummer(dato: Date): number {
+  const d = new Date(Date.UTC(dato.getUTCFullYear(), dato.getUTCMonth(), dato.getUTCDate()));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const forste = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil(((d.getTime() - forste.getTime()) / 86_400_000 + 1) / 7);
+}
+
+/**
+ * En lokal forskrift hos Lovdata: «https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380» gir adressen
+ * «forskrift/2020-09-29-3380» og filnavnet «lf-20200929-3380.html». Andre adresser gir null (de står i datasettene).
+ */
+export function lokalForskrift(url: string): { refid: string; fil: string } | null {
+  const m = /lovdata\.no\/dokument\/LF\/forskrift\/((\d{4})-(\d{2})-(\d{2})-(\d+))\/?$/.exec(url);
+  return m ? { refid: `forskrift/${m[1]}`, fil: `lf-${m[2]}${m[3]}${m[4]}-${m[5]}.html` } : null;
+}
+
+/** Henter siden til en lokal forskrift hos Lovdata. Ett nytt forsøk etter et halvt minutt. */
+async function hentSide(url: string): Promise<string> {
+  let feil: unknown;
+  for (let forsok = 1; forsok <= 2; forsok++) {
+    try {
+      const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' }, signal: AbortSignal.timeout(60_000) });
+      if (!svar.ok) throw new Error(`${url} svarte ${svar.status} ${svar.statusText}`);
+      return await svar.text();
+    } catch (e) {
+      feil = e;
+      if (forsok < 2) await new Promise((r) => setTimeout(r, 30_000));
     }
   }
   throw feil;
@@ -173,6 +214,8 @@ function lesForrige(id: string): Lovdokument | null {
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const fra = process.argv.find((a) => a.startsWith('--fra='))?.slice('--fra='.length) ?? null;
+  const alle = process.argv.includes('--alle');
+  const uke = ukenummer(new Date());
   const utvalg = lesFil(rot, join(rot, 'content/lovverk.yaml')) as Lovutvalg;
   const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
   const idag = new Date().toISOString().slice(0, 10);
@@ -180,14 +223,16 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const oppgaver = utvalg.dokumenter.map((d) => {
     const kilde = register.kilder.find((k) => k.id === d.kilde);
     if (!kilde) throw new Error(`${d.id}: kilden ${d.kilde} finnes ikke i content/kilder.yaml.`);
+    const lokal = lokalForskrift(kilde.url);
+    if (lokal) return { d, url: kilde.url, lokal, navn: lokal.fil, type: 'lokal' as const };
     const navn = datasettnavn(kilde.url);
-    return { d, navn, type: navn.startsWith('nl-') ? ('lov' as const) : ('forskrift' as const) };
+    return { d, url: kilde.url, lokal: null, navn, type: navn.startsWith('nl-') ? ('lov' as const) : ('forskrift' as const) };
   });
 
   // Datasettene lastes ned bare når de trengs, og bare én gang.
   const mapper: Partial<Record<'lov' | 'forskrift', string>> = {};
   const datasettfeil: Partial<Record<'lov' | 'forskrift', string>> = {};
-  for (const type of new Set(oppgaver.map((o) => o.type))) {
+  for (const type of new Set(oppgaver.flatMap((o) => (o.type === 'lokal' ? [] : [o.type])))) {
     try {
       mapper[type] = fra ?? (await hentDatasett(DATASETT[type]));
     } catch (e) {
@@ -197,19 +242,42 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
 
   const resultater: { id: string; kilde: string; endringer: string[]; feil: string | null; forste: boolean }[] = [];
   const dokumenter: Lovdokument[] = [];
-  for (const { d, navn, type } of oppgaver) {
+  for (const { d, url, lokal, navn, type } of oppgaver) {
     const forrige = lesForrige(d.id);
+    // Lokale forskrifter hentes bare hver intervall_uker. Uken imellom beholdes forrige henting uten å spørre Lovdata.
+    if (lokal && forrige && !alle && !fra && uke % (d.intervall_uker ?? INTERVALL_UKER) !== 0) {
+      dokumenter.push(forrige);
+      resultater.push({ id: d.id, kilde: d.kilde, endringer: [], feil: null, forste: false });
+      console.log(`${d.id}: hentes ikke denne uken (uke ${uke}). Forrige henting beholdes.`);
+      continue;
+    }
     try {
-      const mappe = mapper[type];
-      if (!mappe) throw new Error(datasettfeil[type] ?? 'Datasettet mangler.');
-      const fil = finnFil(mappe, navn);
-      if (!fil) throw new Error(`Fant ikke ${navn} i datasettet. Er adressen i kilderegisteret riktig?`);
+      let html: string;
+      if (lokal) {
+        if (fra) {
+          const fil = finnFil(fra, navn.replace(/\.html$/, ''));
+          if (!fil) throw new Error(`Fant ikke ${navn} i ${fra}.`);
+          html = readFileSync(fil, 'utf8');
+        } else html = await hentSide(url);
+        if (process.env.LOVDATA_SIDER) {
+          mkdirSync(process.env.LOVDATA_SIDER, { recursive: true });
+          writeFileSync(join(process.env.LOVDATA_SIDER, navn), html);
+        }
+      } else {
+        const mappe = mapper[type as 'lov' | 'forskrift'];
+        if (!mappe) throw new Error(datasettfeil[type as 'lov' | 'forskrift'] ?? 'Datasettet mangler.');
+        const fil = finnFil(mappe, navn);
+        if (!fil) throw new Error(`Fant ikke ${navn} i datasettet. Er adressen i kilderegisteret riktig?`);
+        html = readFileSync(fil, 'utf8');
+      }
       const ny = lovdokumentSkjema.parse(
-        lesLovdokument(readFileSync(fil, 'utf8'), {
+        lesLovdokument(html, {
           id: d.id,
           kilde: d.kilde,
           kapitler: d.kapitler ? kapittelliste(d.kapitler) : null,
           korttittel: d.korttittel,
+          malform: d.malform,
+          refid: lokal?.refid,
           gyldighet: d.gyldighet,
           hentet: idag,
         }),

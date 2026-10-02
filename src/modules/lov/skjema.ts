@@ -32,6 +32,13 @@ export const lovutvalgSkjema = z
             /** Kapitlene som tas med. Mangler den, tas hele dokumentet med. */
             kapitler: z.array(kapittel).min(1).optional(),
             gyldighet: gyldighet.default({ niva: 'nasjonal' }),
+            /** Målformen dokumentet er fastsatt på, når Lovdata ikke oppgir den (lokale forskrifter). */
+            malform: z.enum(['nb', 'nn']).optional(),
+            /**
+             * Lokale forskrifter hentes fra siden hos Lovdata, ikke fra et datasett, og sjeldnere enn hver uke: i uker
+             * der ukenummeret går opp i dette tallet (13 gir uke 13, 26, 39 og 52). Standard er 13 (eier 02.10.2026).
+             */
+            intervall_uker: z.number().int().min(1).max(52).optional(),
             /** Hvorfor dokumentet og utvalget er med (til dokumentasjonen, vises ikke i appen). */
             merknad: z.string().optional(),
           })

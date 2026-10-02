@@ -3,6 +3,7 @@
 // overskrifter mellom rubrikkene, og avsnitt inni et kapittel som mellomoverskrifter. En adresse til en paragraf
 // (#/lov/opplaeringslova/11-1) åpner kapitlet og paragrafen og ruller dit. Teksten vises uendret, på målformen den er
 // fastsatt på.
+import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
@@ -97,6 +98,7 @@ export default function Dokument({ parametre }: SideProps) {
           <p class="dempet">
             <span lang={data.malform}>{data.tittel}</span>. {t('lov.fastsatt', { malform: t(`lov.malform.${data.malform}`) })}.{' '}
             {data.utvalg ? t('lov.utvalgEnkel', { liste: t('lov.kapitler', { liste: utvalgstekst(data.utvalg, t('lov.og')) }) }) : t('lov.heleDokumentet')}
+            {data.gyldighet.niva === 'fylke' && ` ${t('lov.gjelderFylke', { fylke: fylkesnavn(data.gyldighet.fylke) ?? data.gyldighet.fylke })}`}
           </p>
           {nokkel && !mal && (
             <p class="merknad" role="alert">

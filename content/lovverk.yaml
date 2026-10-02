@@ -7,7 +7,12 @@
 #   2. Legg en oppføring her med id (adressen i appen), kilde og eventuelt kapitlene som skal med.
 #   3. Kjør kildesjekken (eller hent:lovdata i Actions). Det trengs ingen kodeendring.
 # Kapitler skrives som i teksten: «11», «IV», eller et spenn med arabiske tall: «5-21».
-# Lokale forskrifter (f.eks. fra fylkeskommunen) er ikke med i Lovdatas gratis datasett.
+#
+# Lokale forskrifter (f.eks. fra fylkeskommunen) er ikke med i Lovdatas gratis datasett. De legges til på samme måte,
+# men kilden får type side, niva fylke, fylkesnummer og adressen til siden hos Lovdata
+# (https://lovdata.no/dokument/LF/forskrift/ÅÅÅÅ-MM-DD-nr). Her får oppføringen gyldighet med fylket og malform.
+# Siden hentes bare hver 13. uke (intervall_uker), av hensyn til Lovdata (eier 02.10.2026). Dokumentet vises bare
+# for dem som har valgt fylket.
 dokumenter:
   - id: opplaeringslova
     kilde: opplaeringslova
@@ -36,3 +41,26 @@ dokumenter:
     merknad: >-
       Valgt ut fra Udirs rundskriv om skolemiljø (det fysiske skolemiljøet, opplæringslova § 12-7), godkjent av
       eier 02.10.2026. Hele forskriften.
+
+  - id: arbeidsmiljoloven
+    kilde: arbeidsmiljoloven
+    kapitler: ['4', '10', '12']
+    merknad: >-
+      Vurdert av Claude etter spørsmål fra eier 02.10.2026, venter på eiers svar: krav til arbeidsmiljøet (kap. 4),
+      arbeidstid (kap. 10, som SFS 2213 bygger på) og permisjoner (kap. 12).
+
+  - id: vestland-inntak
+    kilde: vestland-forskrift-inntak
+    korttittel: Inntak og formidling i Vestland
+    malform: nn
+    gyldighet: { niva: fylke, fylke: "46" }
+    merknad: >-
+      Lokal forskrift om inntak og formidling til læreplass i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
+
+  - id: vestland-skulereglar
+    kilde: vestland-forskrift-skulereglar
+    korttittel: Skulereglar i Vestland
+    malform: nn
+    gyldighet: { niva: fylke, fylke: "46" }
+    merknad: >-
+      Skulereglane for dei vidaregåande skolane i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
