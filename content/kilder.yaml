@@ -272,6 +272,25 @@ kilder:
       Fagsidene lenker til læreplanene her. Teksten i appen hentes fra Grep (udir-grep), og endringer i
       læreplanene kommer i den ukentlige kontrollsaken derfra. Siden sjekkes derfor ikke for seg.
 
+  - id: udir-lareplanverket
+    navn: Læreplanverket (udir.no)
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/laring-og-trivsel/lareplanverket/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      # Bare ingressen. Sjekken feiler hvis setningen om de tre delene blir borte eller endret.
+      selektor: .page-header__ingress
+      inneholder: Læreplanverket består av overordnet del, fag- og timefordelingen og læreplaner for fag
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Kilde for at læreplanverket består av tre deler: overordnet del, fag- og timefordelingen og læreplanene for
+      fag (eier 02.10.2026). Sjekken følger med på ingressen på siden. Endres den, står det i kontrollsaken.
+
   - id: udir-veileder-tilpasset-opplaering
     navn: Veileder om tilpasset opplæring og individuell tilrettelegging
     utgiver: Utdanningsdirektoratet

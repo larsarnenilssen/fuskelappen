@@ -19,7 +19,8 @@
   - Adressen `#/laereplanverket/overordnet-del/2.5.1` åpner delen og boksene rundt den og ruller dit. Koden til en ferdighet eller et tema (`…/TT1`) finner delen ut fra navnet, ikke fra faste numre.
 - **Fagarket:** «Grunnleggende ferdigheter og tverrfaglige temaer» viser teksten fra læreplanen, uoversatt, med lenke til omtalen i overordnet del.
 - **Begreper og søk:**
-  - Seks nye begreper med kilder og kontrollspørsmål: læreplanverket, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter og tverrfaglige temaer. Modulen og fagarket lenker til dem.
+  - Sju nye begreper med kilder og kontrollspørsmål: læreplanverket, fag- og timefordelingen, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter og tverrfaglige temaer. Modulen og fagarket lenker til dem.
+  - Læreplanverket har tre deler: overordnet del, fag- og timefordelingen og læreplanene for fag (eier 02.10.2026). Kilden er ingressen på udir.no/laring-og-trivsel/lareplanverket (`udir-lareplanverket`), som sjekkes hver uke med selektor og tekst, så kontrollsaken sier fra om setningen endres. Punkt 1.1 i Udir-1 sier at både læreplanene og tabellene med fag- og timefordelingen er forskrifter.
   - Søket finner delene i overordnet del på tittel, kapittelnummer og ingress, og ferdighetene og temaene på navn.
   - Nye synonymer gjør at nynorske ord som «grunnleggjande» og «berekraftig» også gir treff.
 - **Sitater:** Formålsparagrafen og definisjonen av kompetanse står som sitater på udir.no og vises som sitater. Står det noe annet i teksten enn avsnitt, lister og sitater (f.eks. en tabell), stopper hentingen, så ingen tekst forsvinner uten at det merkes.
