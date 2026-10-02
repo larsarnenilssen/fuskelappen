@@ -141,6 +141,38 @@ function sjekkVigo(): Sjekkresultat {
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i VIGO Kodeverksbase.` : null };
 }
 
+/** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
+interface Lovdataresultat {
+  id: string;
+  kilde: string;
+  endringer: string[];
+  feil: string | null;
+  forste: boolean;
+}
+
+/**
+ * Lov- og forskriftstekst fra Lovdata (avgjørelse 039) hentes i samme steg som Grep (npm run hent:lovdata), og vises
+ * uendret. Endringer tas inn automatisk og står til orientering i kontrollsaken. Feiler hentingen, beholdes forrige tekst.
+ */
+function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
+  const endringsfil = join(generert, 'lovdata-endringer.json');
+  if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av lov- og forskriftstekst kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling og overordnet del».' };
+  const mine = (JSON.parse(readFileSync(endringsfil, 'utf8')) as { dokumenter: Lovdataresultat[] }).dokumenter.filter((d) => d.kilde === kilde.id);
+  if (mine.length === 0) return { status: 'feilet', fingeravtrykk: null, melding: 'Kilden er ikke med i content/lovverk.yaml.' };
+  const filer = mine.map((d) => join(rot, 'data/lovdata', `${d.id}.json`)).filter((f) => existsSync(f));
+  const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8')).join('\n')) : null;
+  const endringer = mine.flatMap((d) => d.endringer);
+  rapport.push(
+    `### ${kilde.navn}`,
+    ...mine.map((d) => (d.feil ? `- ${d.id}: ${d.feil}` : d.forste ? `- ${d.id}: første henting.` : `- ${d.id}: ${d.endringer.length === 0 ? 'ingen endringer' : `${d.endringer.length} endringer`}.`)),
+    ...endringer.slice(0, 60).map((l) => `  - ${l}`),
+    '',
+  );
+  const feil = mine.find((d) => d.feil);
+  if (feil) return { status: 'feilet', fingeravtrykk, melding: `${feil.feil} Appen viser forrige henting.` };
+  return { status: 'ok', fingeravtrykk, melding: endringer.length > 0 ? `Tatt inn automatisk: ${endringer.length === 1 ? 'én endring' : `${endringer.length} endringer`} i teksten.` : null };
+}
+
 async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   if (kilde.id === simulertFeil) {
     tekster[kilde.id] = { feil: 'Simulert feil.' };
@@ -159,6 +191,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkGrep();
       case 'udir-fagfordeling':
         return sjekkUdir();
+      case 'lovtekst':
+        return sjekkLovtekst(kilde);
       case 'vigo-kodeverk':
         return sjekkVigo();
       case 'fil': {

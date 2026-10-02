@@ -50,16 +50,17 @@ jobs:
         run: npx playwright install chromium
       # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
       # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
-      - name: Hent Grep, fag- og timefordeling og overordnet del
+      - name: Hent Grep, fag- og timefordeling, overordnet del og lovtekst
         id: grep
         continue-on-error: true
-        # Fag- og timefordelingen (Udir-1) og VIGO Kodeverksbase hentes selv om Grep feiler, og omvendt
-        # (avgjørelse 024 og 026).
+        # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase og lov- og forskriftstekst fra Lovdata hentes selv om
+        # Grep feiler, og omvendt (avgjørelse 024, 026 og 039).
         run: |
           status=0
           npm run hent:grep || status=1
           npm run hent:udir || status=1
           npm run hent:overordnet || status=1
+          npm run hent:lovdata || status=1
           npm run hent:vigo || status=1
           exit $status
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen
@@ -101,7 +102,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/skoler/vgs.json data/grep data/udir data/vigo docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/skoler/vgs.json data/grep data/udir data/vigo data/lovdata docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

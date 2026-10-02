@@ -1,6 +1,6 @@
 # Kilderegister. docs/KILDER.md genereres fra denne filen (npm run kilder:dokumenter).
 #
-# sjekkmetode:  side | kf-infoserie | fil | lovdata | grep | udir-fagfordeling | vigo-kodeverk | nsr | ingen
+# sjekkmetode:  side | kf-infoserie | fil | lovdata | lovtekst | grep | udir-fagfordeling | vigo-kodeverk | nsr | ingen
 # aktiv:        true når kildejobben skal sjekke kilden. Kilder aktiveres i fasen der de tas i bruk.
 # uttrekk:      for sjekkmetode «side»: hvilken del av siden som sammenlignes.
 # godkjent_fingeravtrykk: settes bare av eier, eller etter eksplisitt beskjed fra eier.
@@ -97,23 +97,59 @@ kilder:
     type: lovdata-datasett
     niva: nasjonal
     lisens: NLOD 2.0
-    sjekkmetode: lovdata
-    aktiv: false
+    sjekkmetode: lovtekst
+    aktiv: true
     godkjent_fingeravtrykk: null
-    faser: [4, 5, 6, 7, 8]
+    faser: [3, 4, 5, 6, 7, 8]
+    merknad: >-
+      Utvalget av kapitler står i content/lovverk.yaml. Teksten hentes hver uke med npm run hent:lovdata til
+      data/lovdata/ og vises uendret i Lov og forskrift (avgjørelse 039). Endrede paragrafer står til orientering i
+      kontrollsaken.
 
   - id: opplaeringsforskrifta
-    navn: Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta), med vurderingsreglane
+    navn: Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
     utgiver: Lovdata
-    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/
+    url: https://lovdata.no/forskrift/2024-06-03-900
     type: lovdata-datasett
     niva: nasjonal
     lisens: NLOD 2.0
-    sjekkmetode: lovdata
-    aktiv: false
+    sjekkmetode: lovtekst
+    aktiv: true
     godkjent_fingeravtrykk: null
-    faser: [4, 5, 6, 7, 8]
-    merknad: Lenken går foreløpig til Udirs gjengivelse. Lovdata-adressen settes når kilden aktiveres.
+    faser: [3, 4, 5, 6, 7, 8]
+    merknad: >-
+      Med vurderingsreglane. Utvalget av kapitler står i content/lovverk.yaml, og teksten hentes som for
+      opplæringslova (avgjørelse 039).
+
+  - id: forvaltningsloven
+    navn: Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/1967-02-10
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3, 4, 5, 6, 7]
+    merknad: >-
+      Kapittel II–VI: habilitet, alminnelige regler, saksforberedelse ved enkeltvedtak, vedtaket og klage. Valgt ut
+      fra Udirs regelverkssider (eier 02.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
+
+  - id: forskrift-helse-miljo-skoler
+    navn: Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger
+    utgiver: Lovdata
+    url: https://lovdata.no/forskrift/2023-03-28-449
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3, 7]
+    merknad: >-
+      Det fysiske skolemiljøet (opplæringslova § 12-7). Valgt ut fra Udirs rundskriv om skolemiljø (eier 02.10.2026).
+      Teksten hentes som for opplæringslova (avgjørelse 039).
 
   - id: udir-grep
     navn: Grep – fag, læreplaner, vurderingsordninger og årstimetall

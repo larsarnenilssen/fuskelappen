@@ -35,6 +35,8 @@ export interface Ukesgrunnlag {
   kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
   /** Endrede deler i overordnet del fra udir.no (.generert/overordnet-endringer.json). */
   overordnet?: { endringer: string[] } | null;
+  /** Endrede paragrafer i lov- og forskriftsteksten fra Lovdata (.generert/lovdata-endringer.json, avgjørelse 039). */
+  lovdata?: { dokumenter: { id: string; endringer: string[] }[] } | null;
   /** Navn i rundskrivet uten nynorsk eller utskrevet navn i appen (.generert/tilbud-navn.json). */
   navn?: { linjer: string[]; ordninger: string[] } | null;
 }
@@ -254,6 +256,20 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       `- Teksten i overordnet del er endret på udir.no, og appen viser den nye teksten. Endret: ${overordnet.length === 1 ? 'én del' : `${overordnet.length} deler`}.`,
       ...overordnet.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`),
       ...(overordnet.length > MAKS_DETALJER ? [`  - … og ${overordnet.length - MAKS_DETALJER} til.`] : []),
+      '',
+    ]);
+  }
+
+  // Lov og forskrift (avgjørelse 039): teksten vises uendret i appen og oppdateres hver uke. Endringer til orientering.
+  const lov = (g.lovdata?.dokumenter ?? []).flatMap((d) => d.endringer.map((l) => `${d.id}: ${l}`));
+  if (lov.length > 0) {
+    orientering += 1;
+    deler.push([
+      '## Lov og forskrift',
+      '',
+      `- Teksten hos Lovdata er endret, og appen viser den nye teksten. Endret: ${lov.length === 1 ? 'én paragraf eller overskrift' : `${lov.length} paragrafer og overskrifter`}.`,
+      ...lov.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`),
+      ...(lov.length > MAKS_DETALJER ? [`  - … og ${lov.length - MAKS_DETALJER} til.`] : []),
       '',
     ]);
   }
