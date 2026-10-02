@@ -1,0 +1,112 @@
+{
+ "dokumenter": [
+  {
+   "id": "opplaeringslova",
+   "type": "lov",
+   "tittel": "Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)",
+   "korttittel": "Opplæringslova",
+   "malform": "nn",
+   "refid": "lov/2023-06-09-30",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": [
+    "1",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "23",
+    "24",
+    "25",
+    "27",
+    "28",
+    "29",
+    "30"
+   ],
+   "antallKapitler": 25,
+   "antallParagrafer": 173
+  },
+  {
+   "id": "opplaeringsforskrifta",
+   "type": "forskrift",
+   "tittel": "Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)",
+   "korttittel": "Opplæringsforskrifta",
+   "malform": "nn",
+   "refid": "forskrift/2024-06-03-900",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": [
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "22",
+    "23"
+   ],
+   "antallKapitler": 19,
+   "antallParagrafer": 262
+  },
+  {
+   "id": "forvaltningsloven",
+   "type": "lov",
+   "tittel": "Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)",
+   "korttittel": "Forvaltningsloven",
+   "malform": "nb",
+   "refid": "lov/1967-02-10",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": [
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI"
+   ],
+   "antallKapitler": 5,
+   "antallParagrafer": 50
+  },
+  {
+   "id": "helse-og-miljo",
+   "type": "forskrift",
+   "tittel": "Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger",
+   "korttittel": "Forskrift om helse og miljø i skoler",
+   "malform": "nb",
+   "refid": "forskrift/2023-03-28-449",
+   "gyldighet": {
+    "niva": "nasjonal"
+   },
+   "utvalg": null,
+   "antallKapitler": 3,
+   "antallParagrafer": 24
+  }
+ ]
+}
