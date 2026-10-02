@@ -17,7 +17,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
-- **Lagrede varianter:** Hver variant står på to linjer: navnet med «Gi nytt navn» og «Slett» og resultatet øverst, og tidspunktet, «Hent» og «Del» og forskjellen fra nå under.
+- **Lagrede varianter:**
+  - Hver variant står på to linjer: navnet med «Gi nytt navn» og «Slett» og resultatet øverst, og tidspunktet, «Hent» og «Del» og forskjellen fra nå under.
+  - En slettet variant kan hentes tilbake: «Angre» står der varianten sto i noen sekunder.
 
 ## [0.20.1] – 2026-10-02
 

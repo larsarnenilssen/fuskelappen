@@ -850,8 +850,17 @@ test.describe('arbeidstid', () => {
     await venterPaaSide(page);
     await expect(page.locator('.variantliste li')).toHaveCount(1);
     await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    // Sletting kan angres: «Angre» står der varianten sto, og legger den tilbake.
     await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
-    await expect(page.locator('.variantliste li')).toHaveCount(0);
+    await expect(page.locator('.variantliste .variant-slettet')).toContainText('«Uten kontaktlærer» er slettet.');
+    await expect(page.getByRole('button', { name: /^Angre/ })).toBeFocused();
+    await page.getByRole('button', { name: /^Angre/ }).click();
+    await expect(page.locator('.variantliste li')).toHaveCount(1);
+    await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    // Uten angring forsvinner merknaden etter noen sekunder, og varianten er borte.
+    await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
+    await expect(page.locator('.variantliste li:not(.variant-slettet)')).toHaveCount(0);
+    await expect(page.locator('.variant-slettet')).toHaveCount(0, { timeout: 12_000 });
   });
 
   test('to varianter sammenlignes side om side, med og uten kontaktlærer', async ({ page }, info) => {

@@ -16,6 +16,8 @@ import { medEnhet, tallTekst } from './Utregning.tsx';
 
 /** Høyst så mange varianter per kalkulator. */
 const MAKS = 3;
+/** Så lenge «Angre» står der varianten sto, etter at den er slettet. */
+const ANGRE_MS = 8000;
 /** Høyst så mange tegn i navnet på en variant. */
 const MAKS_NAVN = 40;
 
@@ -259,7 +261,7 @@ function Sammenligningstabell({ a, b, navnA, navnB, bareEndret }: { a: Sammenlig
               .map(({ x, y }) => {
                 const d = endring(x.verdi, y);
                 const endret = erEndret(d);
-                // Endringen står i egen kolonne, eller under navnet på smale skjermer (der kolonnen er skjult).
+                // Endringen står i egen kolonne, på samme linje som tallene, også på smale skjermer.
                 const endringstekst =
                   d === null ? (
                     '–'
@@ -282,7 +284,6 @@ function Sammenligningstabell({ a, b, navnA, navnB, bareEndret }: { a: Sammenlig
                         {x.farge && <span class={`fordeling-farge fordeling-del-${x.farge}`} aria-hidden="true" />}
                         <span>{x.navn}</span>
                       </span>
-                      {endret && <span class="sammenligning-endring-under">{endringstekst}</span>}
                     </th>
                     <td class="tall">{x.verdi === null ? '–' : tallTekst(x.verdi, x.desimaler)}</td>
                     <td class="tall">{y === null ? '–' : tallTekst(y, x.desimaler)}</td>
@@ -457,8 +458,43 @@ export function Varianter<T extends object>({
     settRedigerer(null);
   };
 
+  // Sletting kan angres: varianten fjernes med en gang, og «Angre» står der den sto i noen sekunder.
+  // Høyden beholdes, så listen ikke hopper. Angre legger varianten tilbake på samme plass.
+  const [slettet, settSlettet] = useState<{ v: Variant; indeks: number; navn: string; hoyde: number } | null>(null);
+  const angreKnapp = useRef<HTMLButtonElement>(null);
+  const lagreKnapp = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!slettet) return;
+    angreKnapp.current?.focus();
+    const tid = setTimeout(() => {
+      // Står fokus på «Angre» når den forsvinner, flyttes fokus til «Lagre variant».
+      if (document.activeElement === angreKnapp.current) lagreKnapp.current?.focus();
+      settSlettet(null);
+    }, ANGRE_MS);
+    return () => clearTimeout(tid);
+  }, [slettet]);
+  const slett = (v: Variant, i: number, rad: HTMLElement | null) => {
+    skrivVarianter(
+      id,
+      liste.filter((x) => x.lagret !== v.lagret),
+    );
+    settSlettet({ v, indeks: i, navn: visningsnavn(v, i), hoyde: rad?.offsetHeight ?? 0 });
+  };
+  const angre = () => {
+    if (!slettet) return;
+    const ny = [...liste];
+    ny.splice(Math.min(slettet.indeks, ny.length), 0, slettet.v);
+    skrivVarianter(id, ny.slice(-MAKS));
+    settSlettet(null);
+    lagreKnapp.current?.focus();
+  };
+  // Listen slik den vises: variantene, og plassen der en variant nettopp ble slettet (null).
+  const visning: ({ v: Variant; i: number } | null)[] = liste.map((v, i) => ({ v, i }));
+  if (slettet) visning.splice(Math.min(slettet.indeks, visning.length), 0, null);
+
   const lagre = () => {
     if (!resultat) return;
+    settSlettet(null);
     // Den eldste varianten erstattes når listen er full. Navnefeltet åpnes, så varianten kan få et navn med en gang.
     const lagret = lagreVariant(id, skjema, resultat);
     settUtkast('');
@@ -498,6 +534,64 @@ export function Varianter<T extends object>({
   const kanSammenligne = !!onSammenlign && kanSammenlignes(liste.length, resultat !== null);
   const idLenke = useId();
 
+  /** Én variant i listen: navnet med blyant og slett, og resultatet; under tidspunktet, Hent og Del, og forskjellen fra nå. */
+  const variantrad = (v: Variant, i: number) => (
+    <li key={v.lagret}>
+      {/* Linje 1: navnet med blyant og slett, og resultatet. Linje 2: tidspunktet, Hent og Del, og forskjellen fra nå. */}
+      {redigerer === v.lagret ? (
+        <span class="variant-navn">
+          <input
+            ref={felt}
+            class="tekstfelt variant-navnfelt"
+            type="text"
+            autoComplete="off"
+            maxLength={MAKS_NAVN}
+            aria-label={t('arbeidstid.varianter.navn', { nr: i + 1 })}
+            placeholder={t('arbeidstid.varianter.variant', { nr: i + 1 })}
+            value={utkast}
+            onInput={(e) => settUtkast(e.currentTarget.value)}
+            onBlur={lagreNavn}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') lagreNavn();
+              if (e.key === 'Escape') settRedigerer(null);
+            }}
+          />
+        </span>
+      ) : (
+        <span class="variant-navn">
+          <span class="variant-tittel">{visningsnavn(v, i)}</span>
+          <button type="button" class="ikonknapp variant-navnknapp" aria-label={t('arbeidstid.varianter.endreNavn', { navn: visningsnavn(v, i) })} onClick={() => startNavn(v)}>
+            <Ikon navn="blyant" class="ikon-liten" />
+          </button>
+          <button
+            type="button"
+            class="ikonknapp variant-navnknapp"
+            aria-label={t('arbeidstid.varianter.slett', { navn: visningsnavn(v, i) })}
+            onClick={(e) => slett(v, i, e.currentTarget.closest('li'))}
+          >
+            <Ikon navn="lukk" class="ikon-liten" />
+          </button>
+        </span>
+      )}
+      <span class="variant-verdi tall">{medEnhet(t, v.resultat.verdi, v.resultat.enhet)}</span>
+      <span class="variant-under variant-dato">{kortTidspunkt(v.lagret, malform)}</span>
+      <span class="variant-knapper">
+        <button type="button" class="lenkeknapp liten" onClick={() => onHent({ ...skjema, ...(v.skjema as Partial<T>) })}>
+          {t('arbeidstid.varianter.hent')}
+          <span class="skjult-visuelt"> {visningsnavn(v, i)}</span>
+        </button>
+        {sti && (
+          <button type="button" class="ikonknapp" aria-label={t('arbeidstid.varianter.del', { navn: visningsnavn(v, i) })} title={t('arbeidstid.varianter.delKort')} onClick={() => void del(v, visningsnavn(v, i))}>
+            <Ikon navn="del" class="ikon-liten" />
+          </button>
+        )}
+      </span>
+      <span class="variant-under variant-naa tall">
+        {resultat && resultat.enhet === v.resultat.enhet && t('arbeidstid.varianter.naa', { differanse: differanse(t, resultat.verdi, v.resultat.verdi, v.resultat.enhet) })}
+      </span>
+    </li>
+  );
+
   return (
     <section class="varianter" aria-label={t('arbeidstid.varianter.tittel')}>
       <div class="med-hjelp">
@@ -506,64 +600,21 @@ export function Varianter<T extends object>({
           <p class="felt-hjelp">{t('arbeidstid.varianter.hjelp', { maks: MAKS })}</p>
         </Hjelp>
       </div>
-      {liste.length > 0 && (
+      {visning.length > 0 && (
         <ol class="variantliste">
-          {liste.map((v, i) => (
-            <li key={v.lagret}>
-              {/* Linje 1: navnet med blyant og slett, og resultatet. Linje 2: tidspunktet, Hent og Del, og forskjellen fra nå. */}
-              {redigerer === v.lagret ? (
-                <span class="variant-navn">
-                  <input
-                    ref={felt}
-                    class="tekstfelt variant-navnfelt"
-                    type="text"
-                    autoComplete="off"
-                    maxLength={MAKS_NAVN}
-                    aria-label={t('arbeidstid.varianter.navn', { nr: i + 1 })}
-                    placeholder={t('arbeidstid.varianter.variant', { nr: i + 1 })}
-                    value={utkast}
-                    onInput={(e) => settUtkast(e.currentTarget.value)}
-                    onBlur={lagreNavn}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') lagreNavn();
-                      if (e.key === 'Escape') settRedigerer(null);
-                    }}
-                  />
-                </span>
-              ) : (
-                <span class="variant-navn">
-                  <span class="variant-tittel">{visningsnavn(v, i)}</span>
-                  <button type="button" class="ikonknapp variant-navnknapp" aria-label={t('arbeidstid.varianter.endreNavn', { navn: visningsnavn(v, i) })} onClick={() => startNavn(v)}>
-                    <Ikon navn="blyant" class="ikon-liten" />
-                  </button>
-                  <button
-                    type="button"
-                    class="ikonknapp variant-navnknapp"
-                    aria-label={t('arbeidstid.varianter.slett', { navn: visningsnavn(v, i) })}
-                    onClick={() => skrivVarianter(id, liste.filter((x) => x.lagret !== v.lagret))}
-                  >
-                    <Ikon navn="lukk" class="ikon-liten" />
-                  </button>
-                </span>
-              )}
-              <span class="variant-verdi tall">{medEnhet(t, v.resultat.verdi, v.resultat.enhet)}</span>
-              <span class="variant-under variant-dato">{kortTidspunkt(v.lagret, malform)}</span>
-              <span class="variant-knapper">
-                <button type="button" class="lenkeknapp liten" onClick={() => onHent({ ...skjema, ...(v.skjema as Partial<T>) })}>
-                  {t('arbeidstid.varianter.hent')}
-                  <span class="skjult-visuelt"> {visningsnavn(v, i)}</span>
+          {visning.map((x) =>
+            x === null ? (
+              <li key="slettet" class="variant-slettet" style={slettet?.hoyde ? { minHeight: `${slettet.hoyde}px` } : undefined}>
+                <span role="status">{t('arbeidstid.varianter.slettet', { navn: slettet?.navn ?? '' })}</span>
+                <button ref={angreKnapp} type="button" class="knapp knapp-sekundaer knapp-liten" onClick={angre}>
+                  {t('arbeidstid.varianter.angre')}
+                  <span class="skjult-visuelt"> {t('arbeidstid.varianter.angreSletting', { navn: slettet?.navn ?? '' })}</span>
                 </button>
-                {sti && (
-                  <button type="button" class="ikonknapp" aria-label={t('arbeidstid.varianter.del', { navn: visningsnavn(v, i) })} title={t('arbeidstid.varianter.delKort')} onClick={() => void del(v, visningsnavn(v, i))}>
-                    <Ikon navn="del" class="ikon-liten" />
-                  </button>
-                )}
-              </span>
-              <span class="variant-under variant-naa tall">
-                {resultat && resultat.enhet === v.resultat.enhet && t('arbeidstid.varianter.naa', { differanse: differanse(t, resultat.verdi, v.resultat.verdi, v.resultat.enhet) })}
-              </span>
-            </li>
-          ))}
+              </li>
+            ) : (
+              variantrad(x.v, x.i)
+            ),
+          )}
         </ol>
       )}
       {deling && liste.some((v) => v.lagret === deling.lagret) && (
@@ -579,7 +630,7 @@ export function Varianter<T extends object>({
         </div>
       )}
       <div class="variant-handlinger">
-        <button type="button" class="knapp knapp-sekundaer knapp-liten" disabled={!resultat} onClick={lagre}>
+        <button ref={lagreKnapp} type="button" class="knapp knapp-sekundaer knapp-liten" disabled={!resultat} onClick={lagre}>
           <Ikon navn="pluss" class="ikon-liten" />
           {t('arbeidstid.varianter.lagre')}
         </button>

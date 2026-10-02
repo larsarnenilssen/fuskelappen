@@ -2162,13 +2162,10 @@ p.fagkort-tittel {
   display: flex;
   align-items: baseline;
   gap: var(--rom-2);
-  /* Lange ord som «beskjeftigelse» deles, så tallene får plass på smale skjermer. */
+  /* Lange ord som «beskjeftigelse» deles, så tallene får plass på smale skjermer. Safari trenger prefikset. */
+  -webkit-hyphens: auto;
   hyphens: auto;
   overflow-wrap: break-word;
-}
-
-.sammenligning-endring-under {
-  display: none;
 }
 
 /* Navnekolonnen tar resten av bredden, så tallene står samlet til høyre på store skjermer. */
@@ -2231,14 +2228,41 @@ p.fagkort-tittel {
     padding-left: var(--rom-2);
   }
 
-  /* Endringen står under navnet i stedet for i egen kolonne, så tallene får plass. */
-  .sammenligning .sammenligning-endring {
-    display: none;
+  /* Endringen står på samme linje som tallene: mindre lapp og tettere kolonner, så alt får plass på 320 px. */
+  .sammenligning-pil {
+    gap: 0;
+    padding: 0 var(--rom-1) 0 0;
+    font-size: var(--str-xs);
   }
 
-  .sammenligning-endring-under {
-    display: block;
-    margin-top: var(--rom-1);
+  .sammenligning-pil .ikon-liten {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+}
+
+/* På de smaleste skjermene står tallene i liten skrift, så navnene får plass. */
+@media (max-width: 22.5rem) {
+  .sammenligning td.tall {
+    padding-left: var(--rom-1);
+    font-size: var(--str-xs);
+  }
+
+  .sammenligning thead th {
+    padding-left: var(--rom-1);
+  }
+
+  .sammenligning tbody th[scope='row'] {
+    font-size: var(--str-xs);
+  }
+
+  .sammenligning-radnavn {
+    gap: var(--rom-1);
+  }
+
+  .sammenligning-radnavn .fordeling-farge {
+    width: 0.6rem;
+    height: 0.6rem;
   }
 }
 
@@ -2273,6 +2297,16 @@ p.fagkort-tittel {
 
 .variant-dato {
   grid-area: dato;
+}
+
+/* Plassen der en variant nettopp ble slettet, med «Angre» i noen sekunder. Høyden er den samme som variantens. */
+.variantliste li.variant-slettet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
 }
 
 .variant-naa {
