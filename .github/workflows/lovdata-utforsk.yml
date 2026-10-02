@@ -1,0 +1,33 @@
+# Midlertidig (fase 3): kartlegger Lovdatas datasett fra Actions og lagrer utdrag på grenen.
+# Utviklingsmiljøet når ikke Lovdata. Fjernes når leseren for Lov og forskrift er på plass.
+name: Utforsk Lovdata
+
+on:
+  push:
+    branches: ['claude/fase-3-lov-og-forskrift']
+    paths:
+      - scripts/lovdata/utforsk.ts
+      - .github/workflows/lovdata-utforsk.yml
+
+permissions:
+  contents: write
+
+jobs:
+  utforsk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npx tsx scripts/lovdata/utforsk.ts
+      - name: Lagre utdragene på grenen
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/lovdata/utforsk
+          git commit -m "Utforsk Lovdata: utdrag og struktur" || echo "Ingen endring."
+          git push
