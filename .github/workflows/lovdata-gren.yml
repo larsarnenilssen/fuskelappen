@@ -27,11 +27,8 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      # --alle henter også de lokale forskriftene. Sidene lagres i .lovdata-sider, så strukturen kan kontrolleres.
+      # --alle henter også de lokale forskriftene (to sider hos Lovdata).
       - run: npm run hent:lovdata -- --alle
-        continue-on-error: true
-        env:
-          LOVDATA_SIDER: .lovdata-sider
       - name: Endringer
         if: always()
         run: cat .generert/lovdata-endringer.json || true
@@ -40,6 +37,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/lovdata
-          git add -f .lovdata-sider || true
           git commit -m "Lovtekst fra Lovdata $(date -u +%F)" || echo "Ingen endring."
           git push

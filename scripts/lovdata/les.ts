@@ -14,21 +14,21 @@
 import { type HTMLElement, type Node, NodeType, parse } from 'node-html-parser';
 import type { Ledd, Lovdokument, Paragraf, Punkt, Seksjon, Segment } from '../../src/modules/lov/typer.ts';
 
-const klasse = (el: HTMLElement, k: string) => (el.getAttribute('class') ?? '').split(/\s+/).includes(k);
-const tag = (el: HTMLElement) => el.tagName.toLowerCase();
-const erElement = (n: Node): n is HTMLElement => n.nodeType === NodeType.ELEMENT_NODE;
+export const klasse = (el: HTMLElement, k: string) => (el.getAttribute('class') ?? '').split(/\s+/).includes(k);
+export const tag = (el: HTMLElement) => el.tagName.toLowerCase();
+export const erElement = (n: Node): n is HTMLElement => n.nodeType === NodeType.ELEMENT_NODE;
 const overskrift = /^h[1-6]$/;
 
 /** Beskrivelse av et element til feilmeldinger: «table», «div.noe». */
-function beskriv(el: HTMLElement): string {
+export function beskriv(el: HTMLElement): string {
   const k = el.getAttribute('class');
   return `${tag(el)}${k ? `.${k.split(/\s+/).join('.')}` : ''}`;
 }
 
-class Ukjent extends Error {}
+export class Ukjent extends Error {}
 
 /** Slår sammen tekst ved siden av hverandre og fjerner overflødige mellomrom. */
-function rydd(segmenter: Segment[]): Segment[] {
+export function rydd(segmenter: Segment[]): Segment[] {
   const ut: Segment[] = [];
   for (const s of segmenter) {
     const forrige = ut[ut.length - 1];
@@ -50,7 +50,13 @@ function rydd(segmenter: Segment[]): Segment[] {
  * adresse («https://lovdata.no/dokument/NL/lov/2023-06-09-30/§5-1» eller «/dokument/NL/…»).
  */
 export function lovdatalenke(href: string): string {
-  return href
+  let h = href;
+  try {
+    h = decodeURI(href);
+  } catch {
+    // Beholdes som den er.
+  }
+  return h
     .replace(/^https?:\/\/(?:www\.)?lovdata\.no\//, '')
     .replace(/^\//, '')
     .replace(/^dokument\/[A-Z]+\/((?:lov|forskrift)\/)/, '$1');
@@ -60,7 +66,7 @@ export function lovdatalenke(href: string): string {
  * Teksten i et element som segmenter: tekst, lenker og fotnotehenvisninger. Elementene i `hopp` (lister og tekst
  * etter lister) leses for seg og hoppes over her.
  */
-function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => false): Segment[] {
+export function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => false): Segment[] {
   const ut: Segment[] = [];
   for (const n of el.childNodes) {
     if (n.nodeType === NodeType.TEXT_NODE) {
@@ -70,7 +76,9 @@ function segmenter(el: HTMLElement, hopp: (e: HTMLElement) => boolean = () => fa
     if (!erElement(n) || hopp(n)) continue;
     const t = tag(n);
     if (t === 'a') {
-      const href = n.getAttribute('href');
+      // Sidene hos Lovdata har adressen i samme form som datasettene i data-id («lov/2023-06-09-30/§10-7»).
+      const dataId = n.getAttribute('data-id');
+      const href = dataId && /^(?:lov|forskrift)\//.test(dataId) ? dataId : n.getAttribute('href');
       const tekst = n.text.replace(/\s+/g, ' ');
       if (href && !href.startsWith('#') && tekst.trim()) ut.push({ t: tekst, l: lovdatalenke(href) });
       else ut.push(tekst);

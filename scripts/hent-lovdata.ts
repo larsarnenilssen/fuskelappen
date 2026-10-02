@@ -38,6 +38,7 @@ import {
 import { lesFil } from './innhold/last.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 import { datasettnavn, lesLovdokument } from './lovdata/les.ts';
+import { lesLovdataside } from './lovdata/side.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const MAPPE = join(rot, 'data/lovdata');
@@ -271,7 +272,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
         html = readFileSync(fil, 'utf8');
       }
       const ny = lovdokumentSkjema.parse(
-        lesLovdokument(html, {
+        (lokal ? lesLovdataside : lesLovdokument)(html, {
           id: d.id,
           kilde: d.kilde,
           kapitler: d.kapitler ? kapittelliste(d.kapitler) : null,

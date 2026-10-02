@@ -1,7 +1,8 @@
 // Ordformer for søk i tekst som står på én målform, som lov og forskrift (avgjørelse 039). Et søk på bokmål skal finne
 // nynorsk tekst og omvendt, så hvert ord i søket gjøres om til noen få former som letes etter i teksten:
 // - parene i content/sok/synonymer.yaml begge veier («skole» → «skule», «ikkje» → «ikke»)
-// - vanlige endelser byttet («personlig» ↔ «personleg», «rettighet» ↔ «rettigheit», «krenkelse» ↔ «krenking»)
+// - vanlige endelser byttet («personlig» ↔ «personleg», «rettighet» ↔ «rettigheit», «krenkelse» ↔ «krenking»,
+//   «bortvisning» ↔ «bortvising»)
 // - stammen uten bøyningsendelse («opplæringen» → «opplæring», som også står i «opplæringa»)
 // Et ord passer når en av formene står i teksten. Det gir noen ekstra treff, men sjelden at noe viktig mangler.
 import type { Synonymer } from '../innhold/skjema.ts';
@@ -15,6 +16,7 @@ const BYTT: readonly (readonly [string, string])[] = [
   ['lig', 'leg'],
   ['het', 'heit'],
   ['else', 'ing'],
+  ['sning', 'sing'],
 ];
 
 function stamme(ord: string): string {
