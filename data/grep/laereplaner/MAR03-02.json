@@ -339,5 +339,45 @@
     "Skipstekniske tjenester, dokumentasjon og kvalitet og valgfritt programfag: Privatisten skal opp til en tverrfaglig praktisk eksamen der både de felles programfagene og ett valgfritt programfag inngår. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 maritime fag innebærer å kommunisere, forklare og begrunne handlinger og valg, og å bruke fagspråk i samtale om ulike oppgaver om bord på fartøy og flyttbare innretninger. Videre innebærer det å drøfte faglige løsninger med elever, lærere og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 maritime fag innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å formulere skriftlige rapporter og risikovurderinger med relevant fagspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 maritime fag innebærer å forstå og følge arbeidsbeskrivelser, prosedyrer, håndbøker, standarder og regelverk på flere språk. Videre innebærer det å forstå relevant regelverk. Å kunne lese innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å sammenligne og systematisere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 maritime fag innebærer å beregne innstillinger på maskiner og beregne trykk, temperatur og blandingsforhold i væsker og gasser. Det innebærer også å beregne tids- og ressursbruk og utføre grunnleggende stabilitetsberegninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 maritime fag innebærer å bruke digitale ressurser og applikasjoner i planlegging, drift og operasjon, dokumentasjon og kommunikasjon. Det innebærer også å overvåke, feilsøke og stille inn maskiner og utstyr."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 maritime fag handler det tverrfaglige temaet bærekraftig utvikling om kunnskap om materialer og produkter som er energieffektive og miljøvennlige. Det handler også om å ivareta brukerens helse og minimere ressursbruk og miljøpåvirkning. Videre handler det om kunnskap om hvordan fartøy og flyttbare innretninger påvirker det marine miljøet."
+   ]
+  }
  ]
 }

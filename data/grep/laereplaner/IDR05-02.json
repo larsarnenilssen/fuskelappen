@@ -201,5 +201,45 @@
     "Toppidrett 3: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i toppidrett innebærer å beskrive og forklare teknikker, ferdigheter og treningsmetoder i, og opplevelser og erfaringer fra, ulike treningsformer. Videre innebærer det å oppmuntre sin egen og andres idrettsutvikling i trening og konkurranse. Utviklingen går fra å kunne bruke hverdagsspråk til å kunne bruke gradvis mer presist idrettsvitenskapelig språk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i toppidrett innebærer å utarbeide treningsplaner og mål, å skrive treningsdagbok og å vurdere eget treningsarbeid. Utviklingen består i å kunne utarbeide stadig mer omfattende og velstrukturerte planer og tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i toppidrett innebærer å forstå ulike former for faglitteratur, avistekster, offentlige dokumenter, andre skriftlige kilder og databasert informasjon som handler om fagområder innenfor toppidrett. Utviklingen består i å kunne hente ut informasjon fra gradvis mer kompliserte tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i toppidrett innebærer å måle og beregne data. Det kan for eksempel dreie seg om å bruke regning i treningsplanlegging. Utviklingen går fra å kunne gjøre enkle utregninger i treningsarbeidet til å kunne gjøre mer komplekse beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i toppidrett innebærer å bruke digitale hjelpemidler i arbeidet med faget. Dette omfatter å bruke ulike digitale verktøy, medier og ressurser til å skape, analysere, vurdere, søke, navigere og sortere."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I toppidrett handler det tverrfaglige temaet folkehelse og livsmestring om hva som skaper god psykisk og fysisk helse. Videre handler det om å utvikle et positivt selvbilde, en trygg identitet og andre egenskaper som har betydning for mestringen av eget liv i en toppidrettshverdag."
+   ]
+  }
  ]
 }

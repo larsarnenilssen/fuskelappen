@@ -124,5 +124,57 @@
     "Jo3 boazodoallofága oahpahus galgá loahpahuvvot fágaiskosiin. Buohkat galget čađahit fágaiskosa, mii galgá čađahuvvot golmma bargobeaivvis."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Njálmmálaš gálggat jo3 boazodoallofágas mearkkaša máhttit gulahallat, čilget ja vuođuštit iežas daguid. Viidáseappot mearkkaša dat ahte geavahit fágagiela ságastallamis ja ságaškuššat iešguđet ealáhusgulli bargguid birra. Dat mearkkaša maiddái čilget ja ovdanbuktit boazodoalu beroštumiid eará beroštusjoavkkuide."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Máhttit čállit jo3 boazodoallofágas mearkkaša dokumenteret ja raporteret bargguid ja spiehkastemiid. Dat mearkkaša maiddái gulahallat ja dieđuid lonuhit sihke boazodoalus siskkáldasat ja maiddái earáiguin. Viidáseappot gullá dasa suokkardit ja reflekteret čálalaččat fágalaš fáttáid ja čuolmmaid birra, ja čájehit ipmárdusa das movt dálkkádatrievdamat váikkuhit boazodoalu doaimmaheami. Mearkkaša maid geavahit gálduid kritihkalaččat luohtehahtti vugiin."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Máhttit lohkat jo3 boazodoallofágas mearkkaša geavahit geavahanneavvagiid ja buvttaválddahusaid, lohkat kárttaid ja ipmirdit fágateavsttaid. Mearkkaša maiddái orienteret guoskevaš lágain ja njuolggadusain. Viidáseappot mearkkaša dat ahte čađat háhkat ođđa dieđuid fágas ja háhkat alcces máhtu digaštallamiin ealáhusa ja ealáhusberoštumiid birra, ja geavahit gálduid kritihkalaččat dárkkistahtti vugiin."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Máhttit rehkenastit jo3 boazodoallofágas mearkkaša geavahit loguid, kalkulašuvnnaid ja meroštallamiid, go pláne, čađaha ja dokumentere doaimmaid ja buvttadeami. Dat mearkkaša maiddái ipmirdit guoskevaš tabeallaid, diagrámmaid, statistihka ja rehketdoalu ja dulkot bohtosiid guhkit áiggis."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitála gálggat jo3 boazodoallofágas mearkkaša geavahit digitála resurssaid čađahit meroštallamiid, ja lonohallat dieđuid doalus ja gulahaladettiin earáin. Viidáseappot mearkkaša dat geavahit digitála reaidduid, kárttaid ja neavvuid ja dulkot bohtosiid ja variašuvnnaid guhkit áigge badjel."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "Jo3 boazodoallofága fágaidrasttideaddji fáttás álbmotdearvvašvuohta ja eallimis birgen lea sáhka seailluhit ja viidáset ovdánahttit árbevirolašmáhtu ja ahte oahpahallit geavahit dán gealbbu ovdánahttit positiiva iešgova ja oadjebas identitehta boazobargin."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "Jo3 boazodoallofága fágaidrasttideaddji fáttás demokratiija ja mielborgárvuohta lea sáhka gulahallamis, ipmirdeamis ja searvamis demokráhtalaš, politihkalaš ja servodatekonomalaš proseassaide mat stivrejit ealáhusdoaimmaheami. Das lea maiddái sáhka dahkat oahpahalliid diehtomielalažžan iežaset rollii álgoálbmotealáhusa ealáhusbargin báikkálaččat, našuvnnalaččat ja sirkumpoláralaččat."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "Jo3 boazodoallofága fágaidrasttideaddji fáttás guoddevaš ovdáneapmi lea sáhka árbevirolašmáhtu ja bargovugiid árvvoštallamis ja implementeremis vai sáhttá doaimmahit ja ovdánahttit guoddevaš boazodoalu ja háhkat birgejumi. Dat fátmmasta maid gealbbu árvvoštallat ekonomiija, birrasa ja kultuvrra beliid hálddašeamis ja doaimmaheamis. Das lea maiddái sáhka reflekteret vejolaš dálkkádatrievdadan váikkuhusaid boazodollui."
+   ]
+  }
  ]
 }

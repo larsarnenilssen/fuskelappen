@@ -131,5 +131,45 @@
     "Før fagprøva må alle ha bestått ein skriftleg eksamen laga ut frå læreplanen i faget. Eksamen blir utarbeidd sentralt og sensurert lokalt. Eksamen skal ikkje ha førebuingsdel.\nOpplæringa i hovslagarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over to vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i hovslagarfaget inneber å tileigne seg kunnskapar ved å lytte til andre og diskutere fagleg innhald knytt til observasjonar og erfaringar. Det inneber å samarbeide med hestehaldarar og å hente inn relevant informasjon før verking og skoing. Vidare inneber det å bruke fagspråk i samarbeid med kollegaer, veterinærar og andre yrkesgrupper, å tilpasse kommunikasjonen til mottakar og formål, å grunngi val fagleg og å diskutere forslag og løysingar. Refleksjon over eige arbeid og presentasjon av arbeidet for ulike målgrupper inngår òg."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i hovslagarfaget inneber å rapportere og dokumentere verking og skoing og å føre journal og oversikt over planlagt og utført arbeid. Det inneber å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Det inneber òg å lage arbeidsteikningar og arbeidsinstruksar og å kommunisere skriftleg med andre."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i hovslagarfaget inneber å reflektere over og vurdere ulike fagtekstar, og å tolke og vurdere journalar, bilete og annan informasjon i samband med diagnostisering. Vidare inneber det å følgje arbeidsteikningar og arbeidsinstruksar, å finne fram til og forstå gjeldande lovverk, og å følgje med i debattar om næringa og næringsinteresser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i hovslagarfaget inneber å forstå fysiske lover og biomekanikk i samband med verking og skoing. Det inneber å berekne materiale til skoing og å forstå kva eigenskapar og effekt verkinga, beslaget og ulike materiale har. Vidare inneber det å velje framgangsmåtar og å stille inn og tilpasse verktøy og utstyr. Dessutan inneber det å kunne setje opp, bruke og behandle tal og utrekningar i drifts- og økonomistyring, ulike tabellar, diagram og enkel statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i hovslagarfaget inneber å bruke digitale ressursar til verking og skoing og i dagleg drift. Vidare inneber det å bruke digitale ressursar i kommunikasjon med kundar og andre, og å bruke system for drifts- og økonomistyring og kundeoppfølging. Det inneber òg å bruke digitale ressursar til å søkje etter og innhente informasjon og å utvikle etisk medvit og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I hovslagarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å samarbeide med andre aktørar kring hesten. Det handlar òg om å yte kundeservice og å handtere relasjonar mellom menneske og mellom menneske og dyr. Det handlar vidare om korleis faget kan bidra til folkehelse gjennom å vere ein del av ein tenesteytande bransje i ein marknad for næring, sport og fritid."
+   ]
+  }
  ]
 }

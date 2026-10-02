@@ -190,5 +190,57 @@
     "Eksamen blir utarbeidet og sensurert lokalt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i Vg2 flyfag innebærer å kommunisere forståelig i faglige diskusjoner ved å bruke et presist og mottakertilpasset språk. Det innebærer å kunne delta i diskusjoner om grunnleggende flyfaglige temaer på en slik måte at misforståelser og farlige situasjoner unngås."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg2 flyfag innebærer å uttrykke seg forståelig om flyfaglige temaer. Det innebærer å bruke et presist fagspråk og uttrykke seg tydelig, slik at misforståelser og farlige situasjoner unngås. Det betyr at rapporter, logger og arbeidsbeskrivelser, skal være presise og forståelige for leseren."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg2 flyfag innebærer å tolke ulike fagtekster som sikrer at arbeidet til enhver tid utføres i tråd med gjeldende regelverk. Slike tekster kan være håndbøker, utstyrsmanualer, monteringsveiledninger, lover, forskrifter, arbeidsbeskrivelser, datablad og prosedyrer for helse, miljø og sikkerhet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg2 flyfag innebærer å utføre beregninger, ta beslutninger ut fra måleresultater og beskrive flytekniske funksjoner på grunnlag av kjente matematiske formler og uttrykk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg2 flyfag innebærer å bruke digitale verktøy og tjenester til å planlegge, utføre og verifisere arbeidsoppdrag. Dette innebærer informasjonsinnhenting, kildekritikk og valg og bruk av programvare for programmering, konfigurering, simulering, optimalisering, kalibrering og feilsøking."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I Vg2 flyfag handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsfølelse og stolthet over eget arbeid og å ha tiltro til egne ressurser. Videre handler det om gode arbeidsteknikker som forebygger helseutfordringer. Det tverrfaglige temaet handler også om hvordan flytekniske løsninger bidrar til at mennesker transporteres trygt, og hvordan denne teknologien gir effektive redningstjenester."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I Vg2 flyfag handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap og forståelse for et organisert og mer likestilt arbeidsliv, og hvordan arbeidslivet er bygd opp, inkludert trepartssamarbeidet og arbeidslivsorganisasjonenes roller i arbeidslivet. Det handler videre om hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg2 flyfag handler det tverrfaglige temaet bærekraftig utvikling om å foreta etiske og ansvarlige valg av produkter og tekniske løsninger. Videre handler det om energieffektive tiltak og alternative energikilder og ulike dilemmaer dette kan medføre. Det handler også om hvordan valgte løsninger og elektriske produkter påvirker miljøet. Håndtering av avfall på en miljøvennlig og bærekraftig måte inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

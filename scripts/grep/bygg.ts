@@ -283,5 +283,30 @@ export function byggLaereplan(plan: Grepelement, sett: ReadonlyMap<string, Grepe
       overskrift: paSpraak(objekt(v.overskrift)?.tekst, spraak) ?? '',
       tekst: htmlTilAvsnitt(paSpraak(objekt(v.beskrivelse)?.tekst, spraak)),
     })),
+    // Grunnleggende ferdigheter og tverrfaglige temaer i faget, med koden fra Grep (GF1–GF5, TT1–TT3), så fagarket
+    // kan lenke til overordnet del (pakke 6, avgjørelse 037).
+    ferdigheter: omFaget(plan, 'grunnleggende-ferdigheter-i-faget', 'grunnleggende-ferdigheter', spraak),
+    temaer: omFaget(plan, 'tverrfaglige-temaer-i-faget', 'tverrfaglige-temaer', spraak),
   };
+}
+
+/** Ferdighetene eller temaene i «Om faget», med koden og teksten på målformen planen er fastsatt i. */
+function omFaget(plan: Grepelement, kapittel: string, felt: string, spraak: string): { kode: string; tekst: string[] }[] {
+  const del = objekt(objekt(plan['om-faget-kapittel'])?.[kapittel]);
+  return liste(del?.[felt]).flatMap((x) => {
+    const kode = objekt(x.referanse)?.kode;
+    if (typeof kode !== 'string') return [];
+    return [{ kode, tekst: htmlTilAvsnitt(paSpraak(objekt(x.beskrivelse)?.tekst, spraak)) }];
+  });
+}
+
+/** Grunnleggende ferdigheter og tverrfaglige temaer i læreplanverket, med navn på bokmål og nynorsk. */
+export function byggLaereplanverket(ferdigheter: readonly Grepelement[], temaer: readonly Grepelement[]) {
+  const element = (e: Grepelement) => ({
+    kode: e.kode,
+    navn: { nb: paSpraak(e.tittel, 'nob') ?? e.kode, nn: paSpraak(e.tittel, 'nno') ?? paSpraak(e.tittel, 'nob') ?? e.kode },
+  });
+  // Listene i Grep har ikke status for ferdighetene og temaene, men rekkefølgen.
+  const sorter = (l: readonly Grepelement[]) => [...l].sort((a, b) => Number(a.rekkefoelge ?? 0) - Number(b.rekkefoelge ?? 0) || a.kode.localeCompare(b.kode, 'nb', { numeric: true }));
+  return { ferdigheter: sorter(ferdigheter).map(element), temaer: sorter(temaer).map(element) };
 }

@@ -156,5 +156,51 @@
     "Friluftsliv 2: Det er ingen privatistordning."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i friluftsliv innebærer å beskrive og reflektere over kunnskaper, ferdigheter, erfaringer og opplevelser. Det innebærer også å spørre, veilede, oppmuntre og gi tilbakemeldinger i ulike situasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i friluftsliv innebærer å beskrive erfaringer og opplevelser i naturen. Utarbeiding av turplaner, beredskapsplaner og risikoanalyser er sentralt."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i friluftsliv innebærer å forstå og bruke ulike former for faglitteratur, bruksanvisninger, instruksjoner, andre skriftlige kilder og kart på en hensiktsmessig måte."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i friluftsliv innebærer å måle, beregne og disponere avstander, høyder, tidsbruk, vekt og ernæring."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i friluftsliv innebærer å bruke digitale hjelpemidler i arbeid med faget. Det innebærer også å innhente, bruke, navigere i og tolke digital informasjon på en hensiktsmessig og kritisk måte."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I friluftsliv handler det tverrfaglige temaet folkehelse og livsmestring om at ferdsel og opphold i naturen bidrar til og påvirker den fysiske helsen positivt. Gjennom å delta i friluftsliv kan elevene utvikle et sosialt fellesskap hvor de kan mestre utfordringer i naturen alene og sammen. Det kan igjen bidra til at de utvikler et positivt selvbilde og får styrket psykisk helse."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I friluftsliv handler det tverrfaglige temaet bærekraftig utvikling om at elevene skal utvikle bevissthet om hvordan menneskets levesett påvirker naturen og klimaet. Det handler også om å reflektere over ulike former for utmarksbruk i friluftsliv, og hvordan dette kan påvirke utøvelsen av lokalt friluftsliv, også knyttet til samisk kultur. Friluftsliv skal bidra til at elevene utvikler evne og vilje til å ta vare på miljøet, og det skal legge til rette for at elevene kan ferdes i naturen på en bærekraftig måte."
+   ]
+  }
  ]
 }

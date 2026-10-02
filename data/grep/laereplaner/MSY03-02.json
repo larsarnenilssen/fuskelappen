@@ -132,5 +132,45 @@
     "Opplæringen i vg3 motorsykkelfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 motorsykkelfaget innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og diskutere løsninger i ulike situasjoner og sammenhenger med kunder, kolleger og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 motorsykkelfaget innebærer å planlegge og dokumentere utført arbeid. Det innebærer videre å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å ta notater i forbindelse med slitasjemålinger i arbeidsoppdrag og å fylle ut garantiskjemaer og servicehistorikk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 motorsykkelfaget innebærer å forstå og tolke regelverk, arbeidsbeskrivelser, prosedyrer og håndbøker i arbeidet. Videre innebærer det å bruke datablader og faglitteratur for å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å tolke og forstå symboler og tegn."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 motorsykkelfaget innebærer å lese av og tolke måleenheter, og å gjøre omregninger av og regne ut mål, krefter, elektriske størrelser og tiltrekkingsmomenter. Videre innebærer det å utarbeide kostnadsanalyser og beregninger og å hente ut, beskrive, tolke og vurdere informasjonen fra tallmateriale og beregninger. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 motorsykkelfaget innebærer å bruke digitale verktøy til kommunikasjon, planlegging og dokumentasjon av arbeidsoppdrag. Det innebærer også å programmerere og reprogrammere ulike styresystemer og startsperresystemer. Videre innebærer det å vise digital dømmekraft og utøve kildekritikk og å reflektere over innhentet informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 motorsykkelfaget handler det tverrfaglige temaet bærekraftig utvikling om å etterleve bransjens returordninger for ulike typer komponenter, oljer, væsker og gasser for å redusere bransjens miljøavtrykk. Videre handler det om å benytte byttekomponenter for å redusere mengden avfall, og følge fabrikantenes anvisninger for retur av komponenter og væsker til gjenvinning."
+   ]
+  }
  ]
 }

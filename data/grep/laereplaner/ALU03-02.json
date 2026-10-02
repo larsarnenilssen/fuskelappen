@@ -116,5 +116,45 @@
     "Opplæringen i vg3 aluminiumskonstruksjonsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 aluminiumskonstruksjonsfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å reflektere over, beskrive og forklare ulike arbeidsoppgaver. Videre innebærer det å forstå faglige uttrykksmåter og fremme egne synspunkter og drøfte problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 aluminiumskonstruksjonsfaget innebærer å planlegge, utforme og bearbeide tekster, gjøre notater og tilpasse tekster til mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger. Videre innebærer det å uttrykke seg skriftlig ved å bruke tekst og andre uttrykksformer som bilder, figurer og symboler og bruke kilder på en kritisk og reflektert måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 aluminiumskonstruksjonsfaget innebærer å finne og vurdere informasjon i ulike fagtekster, arbeidsbeskrivelser, prosedyrer, veiledninger og å forstå regelverk. Det innebærer også å sammenligne, tolke og systematisere informasjon og å bruke kilder på en kritisk måte."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 aluminiumskonstruksjonsfaget innebærer å hente ut, beskrive, tolke og presentere informasjon fra tallmateriale. Det innebærer også å bruke, beregne og sammenligne tallmateriale for å foreta innstillinger og korrigeringer på utstyr og maskiner. Videre innebærer det å utføre beregninger knyttet til arbeidsoppdrag, materialforbruk, materialvalg, utstyrsvalg, tidsbruk og økonomistyring."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 aluminiumskonstruksjonsfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, kommunisere, planlegge, og dokumentere og presentere arbeidsoppdrag. Digitale ferdigheter innebærer også å bruke digital dømmekraft og etisk refleksjon ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 aluminiumskonstruksjonsfaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan innovativ bruk og optimal utnyttelse av aluminium kan gjøre produksjonen mer miljøvennlig. Det handler også om hvordan forskjellige typer aluminiumslegeringer blir brukt for å gjøre ulike prosesser og produksjonsmetoder mer bærekraftig."
+   ]
+  }
  ]
 }

@@ -255,5 +255,57 @@
     "Planteproduksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nHusdyrproduksjon: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.Økonomi og gårdsdrift: Privatisten skal opp til en skriftlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nPlanteproduksjon, husdyrproduksjon og økonomi og gårdsdrift: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 landbruk - opplæring i skole innebærer å begrunne valg og presentere produksjonsmåter, tjenester og produkter for kunder og myndigheter. Det innebærer å lytte til instruksjoner som blir gitt, delta i diskusjoner som omhandler faget, beskrive arbeidsoppgaver og instruere andre. Videre innebærer det å begrunne egne standpunkter og å bruke fagspråk i drøfting og refleksjon i faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 landbruk - opplæring i skole innebærer å presentere og dokumentere aktiviteter, prosesser, produkter og tjenester, og å utforme tekster tilpasset mottaker og formål. Å kunne skrive innebærer også å utarbeide dokumentasjon i henhold til internkontrollsystemer og kvalitetssystemer for en produksjon eller tjeneste. Videre innebærer det å være med på å utarbeide planer og å utforme avtaler og kontrakter."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 landbruk - opplæring i skole innebærer å forstå, bruke og reflektere over innholdet i arbeidsinstrukser, brukerhåndbøker, internkontrolldokumentasjon, regelverk og kvalitetskriterier. Å kunne lese innebærer også å finne og vurdere faglig informasjon for å holde seg oppdatert om landbruksproduksjoner, relaterte temaer og utvikling av rammebetingelser for landbruk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 landbruk - opplæring i skole innebærer å bruke tall og beregninger i planlegging, gjennomføring, dokumentasjon og analyse av ulike typer produksjoner og tjenester. Det innebærer å gjøre overslag over innsatsfaktorer og sammenligne forbrukt volum eller vekt med planer. Å kunne regne innebærer videre å beregne arealer, doseringer, drivstofforbruk, kostnader ved vedlikehold og andre innsatsfaktorer som har betydning for produksjonen. Det innebærer å forstå tabeller, diagrammer, enkel statistikk og enkle budsjett- og regnskapsoppstillinger, samt foreta enkle investeringsberegninger og sammenligne forskjellige anskaffelsesmetoder som kjøp eller leasing."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 landbruk - opplæring i skole innebærer å bruke digitalt produksjonsutstyr som kontroll- og måleutstyr, hjelpemidler for presisjonsjordbruk, klimastyring og forskjellige former for innendørsmekanisering. Digitale ferdigheter innebærer også å navigere på digitale flater og bruke digitale kommunikasjonsverktøy. Det innebærer å tilføre nødvendige rådata til digitale verktøy og å innhente, vurdere og tolke digital informasjon. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 landbruk - opplæring i skole handler det tverrfaglige temaet folkehelse og livsmestring om å kunne ta vare på seg selv i arbeidshverdagen, av hensyn både til egen fysisk og psykisk helse og til hvordan dyrenes helse og velferd påvirkes av røkterens trivsel. Videre handler temaet om å gjøre eleven bevisst på risikoer og beskyttelsesfaktorer for fysisk og psykisk helse som er særlig relevante i landbruket."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 landbruk - opplæring i skole handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle forståelse av organisasjoner i landbruket og om samvirkeprinsipper og muligheten til å påvirke gjennom disse demokratiske organisasjonene. Videre handler det om å kjenne til hvordan landbruket som næring forholder seg til gjeldende rammebetingelser. Det handler også om hvordan arbeidslivet er organisert for å ivareta arbeidstakere og arbeidstakeres rettigheter og plikter. Demokrati og medborgerskap handler dessuten om å forholde seg til vedtak og rammebetingelser og kunne arbeide for å påvirke og endre disse i samsvar med demokratiske spilleregler."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 landbruk - opplæring i skole handler det tverrfaglige temaet bærekraftig utvikling om hvordan landbruket påvirker og påvirkes av naturen, miljøet og klimaet. Det handler om hvordan landbruket bidrar til verdiskaping i samfunnet, og hvilket ansvar landbruket har for å forvalte ressursgrunnlaget for kommende generasjoner. Bærekraftig utvikling handler også om hvordan prinsipper og praksis for bærekraft kan ivaretas i landbruksproduksjoner og i forvaltningen."
+   ]
+  }
  ]
 }

@@ -188,5 +188,45 @@
     "Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i Vg2 overflateteknikk inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og å tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg2 overflateteknikk inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg2 overflateteknikk inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar og regelverk. Det inneber òg å samanlikne og tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i Vg2 overflateteknikk inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Vidare inneber det å rekne ut radiusar, vinklar og fall og å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i Vg2 overflateteknikk inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og rflektere over si eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg2 overflateteknikk handlar berekraftig utvikling om å velje materiale som tek omsyn til miljøet på lengre sikt, og som forlengjer levetida til bygg og anlegg. Berekraftig utvikling handlar vidare om å resirkulere, kjeldesortere og handtere avfall for å minimere miljøavtrykket. Det handlar òg om å vurdere økonomiske og miljømessige aspekt ved metodar og materialval."
+   ]
+  }
  ]
 }

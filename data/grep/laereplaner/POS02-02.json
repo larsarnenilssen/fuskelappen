@@ -98,5 +98,51 @@
     "Sosialkunnskap: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i sosialkunnskap innebærer å lytte til andres meninger, argumentere for sine egne meninger i meningsbrytning med andre og tilpasse muntlig tekst til mottaker og formål. Muntlige ferdigheter innebærer også å uttrykke seg presist og å bruke fagspråk i drøfting og refleksjon over faglige emner og problemstillinger. Ferdigheten innebærer videre å argumentere for ulike perspektiver og forståelser, bygge videre på innspill fra andre og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i sosialkunnskap innebærer å bruke fagspråk og varierte skrivestrategier for å bygge opp en samfunnsvitenskapelig fagtekst som presenterer saklige argumenter fra ulike perspektiver og ståsteder. Det innebærer også å bygge opp tekster presist, strukturert og selvstendig og å utforme tekster tilpasset mottaker og formål. Videre innebærer det å vurdere, sitere og henvise til relevante kilder på en måte som lar seg etterprøve. Å kunne skrive i sosialkunnskap innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i sosialkunnskap innebærer å hente ut meningsinnhold og vurdere eksplisitt og implisitt informasjon i faglitteratur og andre kilder. Det innebærer også å forstå, bruke og reflektere over et variert tekstutvalg og å analysere ulike perspektiver og formål med tekster. Lesing i sosialkunnskap innebærer videre å velge ulike lesestrategier for å tilegne seg kompetanse i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i sosialkunnskap innebærer å hente ut informasjon og tolke og forstå tabeller. Det innebærer videre å bruke og bearbeide informasjonen og vise statistiske sammenhenger ved hjelp av tall. Å kunne regne innebærer også å diskutere og sammenligne resultater og vurdere gyldigheten av disse."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i sosialkunnskap innebærer å bruke digitale ressurser til å søke, finne, behandle og navigere i digitale kilder. Digitale ferdigheter i faget handler om også om å finne fram til og vurdere informasjon og å kommunisere og presentere eget arbeid. Digital dømmekraft innebærer å vise kunnskaper om etikk og personvern og å tolke og gjengi relevant informasjon på en måte som lar seg etterprøve."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I sosialkunnskap handler det tverrfaglige temaet folkehelse og livsmestring om å drøfte velferdsforskjeller, utenforskap, identitet, behovsdekning, oppvekstmiljø og samfunnsendringer. Det handler også om å utvikle kompetanse om sosiale problemer og ulike perspektiver på forebygging og håndtering av disse. Videre handler det om etisk bevissthet og å kunne reflektere kritisk over hva som trengs for å møte samfunnsutfordringer i framtiden."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I sosialkunnskap handler det tverrfaglige temaet demokrati og medborgerskap om samfunnsvitenskapelige perspektiver og kritisk tenkning. Kunnskap om sammenhengen mellom menneskerettighetene og velferdssamfunnet inngår også. Videre handler det om demokratiske prosesser i samfunnet og å se sammenhengen mellom rettigheter og plikter, og om å drøfte og argumentere i meningsbrytning med andre."
+   ]
+  }
  ]
 }

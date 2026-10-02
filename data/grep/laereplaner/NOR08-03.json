@@ -271,5 +271,45 @@
     "Morsmålsopplæring er en form for særskilt språkopplæring (jf. Opplæringslovens §2-8 og §3-12) som om nødvendig kan tilbys elever i grunnskolen og videregående opplæring med annet morsmål enn norsk eller samisk. Læreplan i morsmål for språklige minoriteter er en nivåbasert overgangsplan som kan benyttes i tillegg til særskilt norskopplæring til elevene har tilstrekkelige ferdigheter i norsk til å følge den vanlige opplæringen i skolen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i faget morsmål for språklige minoriteter er å kommunisere på morsmålet i forskjellige situasjoner og å utvikle et faglig ordforråd og benytte det i arbeid med ulike emner og i ulike kommunikasjonssituasjoner. Morsmål for språklige minoriteter har ansvar for elevenes utvikling av muntlige ferdigheter på sitt eget morsmål. Utviklingen av muntlige ferdigheter i faget går fra å vise trygghet i enkle kommunikasjonssituasjoner til å bruke det muntlige språket stadig mer presist i ulike faglige situasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i faget morsmål for språklige minoriteter er å kommunisere, utforske, ytre seg og utrykke seg kreativt. Elevene skal utvide ordforrådet sitt og utvikle kompetanse i rettskriving og tekstoppbygging, og de skal utvikle kompetanse i å skrive tekster i ulike sjangre. Elevene skal bruke relevant teknologi, og de skal bearbeide tekster etter tilbakemelding. Morsmål for språklige minoriteter har ansvar for elevenes utvikling av skriftlige ferdigheter på sitt eget morsmål. Utviklingen av å kunne skrive i faget går fra den grunnleggende skriveopplæringen til å kunne uttrykke seg skriftlig med stadig større språklig sikkerhet i tekster i ulike sjangre."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i faget morsmål for språklige minoriteter er å øve opp grunnleggende lesekompetanse på morsmålet og å lese for å lære, oppleve og reflektere. Minoritetsspråklige elever skal lære seg å lese på det språket de behersker best. Leseferdigheter på morsmålet bidrar til å styrke elevenes forutsetninger for å beherske det norske språket. Morsmål for språklige minoriteter har ansvar for elevenes utvikling av leseferdigheter på sitt eget morsmål. Utviklingen av å kunne lese på morsmål går fra den grunnleggende avkodingen og forståelsen av enkle tekster til å lese tekster i ulike sjangre og med ulike formål."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i faget morsmål for språklige minoriteter innebærer både å bruke flerspråklige digitale ressurser for å utvikle ordforråd og begrepsapparat, og å bruke digitale verktøy, medier og ressurser for å innhente informasjon, skape og redigere tekster og kommunisere med andre. Utviklingen av digitale ferdigheter går fra å utforske ulike digitale ressurser til å bruke og vurdere digitale ressurser i kommunikasjon og læringsarbeid. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I morsmål for språklige minoriteter handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes evne til å uttrykke egne følelser, erfaringer og meninger, noe som er viktig for å håndtere relasjoner og delta i et sosialt fellesskap. Arbeid med skjønnlitteratur vil gi elevene mulighet til å sette seg inn i andre menneskers livssituasjon og kjenne seg igjen i andres tanker og handlinger. Dette kan gi dem et grunnlag for å kunne gi og oppleve anerkjennelse. Arbeid med språk og språkbruk kan gi elevene nye perspektiver på språklig identitet. Å videreutvikle sine ferdigheter på eget morsmål kan bidra til et positivt selvbilde og en trygg identitet, og det kan fremme flerspråklighet som en verdi i seg selv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I morsmål for språklige minoriteter handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal utvikle ferdigheter som gjør det mulig å holde seg informert, formidle egne meninger og delta aktivt i det flerkulturelle sosiale fellesskapet. Deltakelse i flerkulturelle fellesskap og arbeid med utvalgte tekster kan styrke elevenes interkulturelle forståelse og evne til refleksjon og kritisk tenkning, noe som styrker grunnlaget for å delta i et demokratisk samfunn."
+   ]
+  }
  ]
 }

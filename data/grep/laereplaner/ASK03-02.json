@@ -143,5 +143,45 @@
     "Latin 1: Privatistene skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt.\nLatin 2: Privatistene skal opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel for privatister."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i latin innebærer å samtale og uttrykke seg på latin på en enkel måte og ta i bruk kjente sitater. Muntlige ferdigheter innebærer også å lytte til, forstå og svare på spørsmål i spontane og forberedte samtaler. I tillegg innebærer det å beskrive, samtale om og presentere historiske, kulturelle og språklige emner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i latin innebærer å ta i bruk ulike skrivestrategier både for å lære og vise kompetanse. Videre innebærer det å ta i bruk ordforråd og grammatiske strukturer i egne tekster. Det innebærer også å oversette tekster med stadig høyere vanskelighetsgrad til og fra latin."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i latin innebærer å velge og bruke relevante lesestrategier tilpasset tekstenes formål og stadig høyere vanskelighetsgrad. Videre innebærer det å utforske og finne informasjon i ulike kilder og reflektere over ulike teksters form og innhold. Det innebærer også å bruke ordbok."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i latin innebærer å finne fram, vurdere og behandle informasjon fra digitale kilder med ulike fremstillinger av antikkens språk, historie og kultur. Digitale ferdigheter handler også om å ta i bruk egnede ressurser, samhandle med andre og produsere og bearbeide tekster. Videre handler digitale ferdigheter om å vise digital dømmekraft og følge regler for personvern og etterrettelighet i å oppgi kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I latin handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle språklig bevissthet gjennom å sammenligne språk og å få kjennskap til opprinnelsen til ord og uttrykk. Med dette grunnlaget kan elevene mer presist og lettere sette ord på egne tanker og følelser. Gjennom å møte tanker og problemstillinger fra antikken kan elevene se seg selv i en større historisk sammenheng, utvikle identitet og selvbilde og reflektere rundt eksistensielle spørsmål som grunnlag for å ta ansvarlige livsvalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I latin handler det tverrfaglige temaet demokrati og medborgerskap om å bidra til elevenes språklige bevissthet og retoriske kompetanse. Det bidrar til å ruste elevene til aktiv deltakelse i samfunnsliv og demokratiske prosesser. Demokrati og medborgerskap handler også om innsikt i noen av de første demokratiene og rettsstatene i Europas historie og gjennom dette bevissthet om forutsetninger for og verdien av demokratiet."
+   ]
+  }
  ]
 }

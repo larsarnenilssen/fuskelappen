@@ -226,5 +226,57 @@
     "Sikkerheit, administrasjon og berekraftig drift og kommunikasjon og yrkesutøving: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 service, sikkerheit og administrasjon inneber å kunne kommunisere med kollegaer og menneske frå ulike kulturar og i ulike livssituasjonar. Dette inneber å tilpasse sitt eige språk til mottakaren og situasjonen og å lytte til og vise respekt for den som snakkar. Vidare inneber det å kunne bruke relevante faguttrykk og sikre at informasjonen ikkje berre blir gitt, men òg forstått av mottakaren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 service, sikkerheit og administrasjon inneber å kunne dokumentere, omarbeide og utveksle relevante opplysingar og relevant informasjon. Vidare inneber det å kommunisere skriftleg og profesjonelt med ulike mottakarar og å utarbeide planar, rapportar og dokumentasjon i tråd med gjeldande krav."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 service, sikkerheit og administrasjon inneber å kunne finne, forstå, tolke og vurdere informasjon. Det inneber òg å kjenne til og bruke relevant fagspråk i yrkesutøvinga og å vere kjeldekritisk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 service, sikkerheit og administrasjon inneber å kunne hente inn, omarbeide, analysere og vurdere talmateriale og presentere desse i relevante oppsett. Vidare inneber det å kunne lese rekneskapar, bruke budsjett og å utføre økonomiske berekningar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 service, sikkerheit og administrasjon inneber å kunne hente inn, registrere, lagre og bruke informasjon. Dette inneber å kunne handtere personopplysningar og vurdere etiske spørsmål knytte til personvern og opphavsrett. Vidare handlar digitale ferdigheiter om å vise digital dømmekraft i arbeidet og vurdere kjelder kritisk. Digitale ferdigheiter handlar òg om å kunne bruke digitale verktøy i tråd med den teknologiske utviklinga både i eige og i tverrfagleg arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 service, sikkerheit og administrasjon handlar det tverrfaglege temaet folkehelse og livsmeistring om å byggje profesjonelle relasjonar i kommunikasjon og samhandling med ulike menneske. I dette ligg det å kunne handsame reaksjonar, setje grenser og respektere andre sine grenser i ulike relasjonar og arbeidssituasjonar. Vidare handlar det om å utvikle kunnskap om rus, forståing for ulike livssituasjonar og respekt for ulike grupper, fellesskap og kulturar i arbeidet. Folkehelse og livsmeistring handlar òg om å sikre god fysisk og psykisk helse i løpet av arbeidsdagen gjennom kunnskap om helse, miljø og sikkerheit."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 service, sikkerheit og administrasjon handlar det tverrfaglege temaet demokrati og medborgarskap om å sikre at verdiane og spelereglane i demokratiet blir tatt vare på i sikkerheitsarbeidet og i administrativt arbeid. Gjennom konfliktførebygging, beredskap og risikovurdering av samfunnssikkerheita skal faget bidra inn i det sivile samfunn. Elevane skal gjennom refleksjon og utforsking øve opp evna til å tenke kritisk, lære seg å handtere meiningsbrytingar og respektere ueinigheit. Vidare skal elevane reflektere over ulike maktforhold i møte med andre menneske og korleis utøve yrkesrolla i tråd med demokratiske prinsipp. Demokrati og medborgarskap handlar vidare om å delta aktivt i arbeidslivet og om arbeidsgivaren og arbeidstakaren sine rettar og plikter."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 service, sikkerheit og administrasjon handlar det tverrfaglege temaet berekraftig utvikling om å ta ansvarlege, etiske og miljøbevisste val i formidlinga og utføringa av ulike arbeidsoppgåver. Vidare handlar det om å bruke ressursar effektivt og med vekt på berekraft for å unngå tap av verdiar og belastningar på klima og miljø."
+   ]
+  }
  ]
 }

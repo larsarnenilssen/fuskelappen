@@ -120,5 +120,45 @@
     "Opplæringen i vg3 havbruksteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på én–to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 havbruksteknikkfaget innebærer å kommunisere med kunder, samarbeidspartnere og arbeidskolleger og forklare og begrunne valg under arbeidsoperasjoner og prosesser. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse kommunikasjon til mottaker og formål. Videre innebærer det å presentere problemstillinger og ulike forslag til løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 havbruksteknikkfaget innebærer å dokumentere og rapportere arbeidsoperasjoner og prosesser og å dokumentere og framstille informasjon om hendelser innad i bedriften og til relevante myndigheter. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 havbruksteknikkfaget innebærer å forstå og anvende regelverk, prosedyrer og bruksanvisninger. Videre innebærer det å finne og vurdere informasjon for å trekke faglige slutninger og å tilegne seg informasjon om næringen gjennom ulike medier."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 havbruksteknikkfaget innebærer å utføre beregninger i forbindelse med planlegging og gjennomføring av arbeidsoperasjoner og å vurdere tallmateriale i tabeller, statistikk og grafiske framstillinger. I tillegg innebærer det å vurdere innsatsfaktorer med hensyn til bedriftens økonomiske mål og resultater."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 havbruksteknikkfaget innebærer å bruke digitale ressurser i planlegging, gjennomføring og dokumentasjon av arbeidsoperasjoner og prosesser. Det innebærer også å utøve kildekritikk, utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 havbruksteknikkfaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan bruk av teknologi kan bidra til å ivareta det lokale og globale naturgrunnlaget. Det handler videre om å forstå hvordan det omkringliggende miljøet påvirkes av ulike arbeidsoperasjoner, og hvordan miljøpåvirkning fra akvakulturanlegg kan minimeres."
+   ]
+  }
  ]
 }

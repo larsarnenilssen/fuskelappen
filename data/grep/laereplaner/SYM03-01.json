@@ -92,5 +92,45 @@
     "Opplæringen i vg3 sykkelmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 sykkelmekanikerfaget innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk i dialog med kunder og kolleger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 sykkelmekanikerfaget innebærer å planlegge og dokumentere utført arbeid. Det innebærer også å utforme faglige tekster med bruk av fagspråk tilpasset mottaker og formål. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 sykkelmekanikerfaget innebærer å forstå og tolke regelverk, arbeidsbeskrivelser, prosedyrer, teknisk informasjon og håndbøker i arbeidet. Videre innebærer det å bruke datablader og faglitteratur for å utforske og reflektere over faglige emner og problemstillinger og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 sykkelmekanikerfaget innebærer å lese av måleenheter og å gjøre omregninger av og regne ut mål, krefter, elektriske størrelser og tiltrekkingsmomenter. Videre innebærer det å utarbeide kostnadsanalyser og beregninger og å hente ut, beskrive, tolke og vurdere informasjonen fra tallmateriale og beregninger"
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 sykkelmekanikerfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og til å kommunisere, planlegge, feilsøke og dokumentere arbeidsoppdrag. Videre innebærer det å utøve digital dømmekraft og kildekritikk og å reflektere over innhentet informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 sykkelmekanikerfaget handler det tverrfaglige temaet bærekraftig utvikling om å velge løsninger og materialer av hensyn til kostnadseffektivitet, miljø og sikker drift.. Videre handler det om å håndtere avfall på en måte som gjør belastningen på miljøet så liten som mulig. Det handler også om å forlenge syklers livsløp."
+   ]
+  }
  ]
 }

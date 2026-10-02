@@ -106,5 +106,45 @@
     "Før oppmelding til fagprøven må kandidaten dokumentere gyldig yrkessjåførkompetanse i samsvar med yrkessjåførforskriften. Kandidater i førerkortklasse C og CE skal i tillegg ha dokumentert sikkerhetsopplæring for truck klasse T1, bestått sertifisert sikkerhetsopplæring for truck i klasse T2 og T4, og dokumentere gyldig kompetansebevis i henhold til ADR-grunnopplæring."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 yrkessjåførfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi og forstå uttrykksmåter og å drøfte og reflektere over fagrelaterte emner og problemstillinger. Videre innebærer det å formidle informasjon til og ha dialog med kunder og kolleger for å kunne yte service, gi kundebehandling og gjennomføre arbeidsprosesser og beredskapsplaner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 yrkessjåførfaget innebærer å bruke fagspråk i tekster tilpasset mottaker og formål, utforme rapporter og skriftlige planer og dokumentere egne arbeidsprosesser. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 yrkessjåførfaget innebærer å finne og vurdere informasjon i tekster, arbeidsbeskrivelser, prosedyrer, sikkerhetsdatablader, teknisk litteratur og veiledninger. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 yrkessjåførfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger. Videre innebærer det å beregne, forstå og bruke tall knyttet til tid, volum, vekt, kostnader og inntjening som inngår i et transportoppdrag."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 yrkessjåførfaget innebærer å bruke digitale ressurser i henhold til gjeldende regelverk for planlegging, produksjon, dokumentasjon, kvalitetssikring og kommunikasjon i aktuelle kjøretøy. Det innebærer også å søke etter og innhente informasjon og å kommunisere digitalt. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 yrkessjåførfaget handler det tverrfaglige temaet bærekraftig utvikling om å vurdere miljøvennlige og økonomiske alternativer knyttet til bedriftens produksjon. Det handler også om hvordan miljøkrav og ny teknologi gir muligheter for alternativt drivstoff og nye teknologiske løsninger for kjøretøy. Videre handler det om hvordan ulike typer energibærere i kjøretøyet innvirker på samfunn og miljø."
+   ]
+  }
  ]
 }

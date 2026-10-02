@@ -419,5 +419,51 @@
     "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen i norsk. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt.Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i faget norsk for språklige minoriteter med kort botid i Norge er å kunne samhandle med andre gjennom å lytte, fortelle og samtale og å kunne uttrykke seg hensiktsmessig i ulike kommunikasjonssituasjoner. Norsk for språklige minoriteter med kort botid i Norge har et særlig ansvar for utviklingen av muntlige ferdigheter på norsk. Utviklingen av muntlige ferdigheter går fra å vise trygghet i enkle kommunikasjonssituasjoner til å bruke det muntlige språket stadig mer presist og nyansert i ulike faglige samtaler og presentasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i faget norsk for språklige minoriteter med kort botid i Norge er å utvikle skrivekompetanse på norsk, og å kunne skrive for å kommunisere, utforske, lære, ytre seg og uttrykke seg kreativt. Norsk for språklige minoriteter med kort botid i Norge har et særlig ansvar for opplæringen i å kunne skrive på norsk. Utviklingen av det å kunne skrive i faget går fra å skrive enkle tekster i ulike sjangre til å uttrykke seg med stadig større språklig sikkerhet på hovedmål i tekster som er tilpasset formål, medium og mottaker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i faget norsk for språklige minoriteter med kort botid i Norge er å skape mening i et bredt utvalg av egnede tekster fra nåtid og fortid. Lesing i norsk innebærer også å lese sammenhengende tekster på papir og digitalt, som kan inneholde skrift, bilder, tegninger, tall og andre uttrykksformer. Norsk for språklige minoriteter med kort botid i Norge har et særlig ansvar for opplæringen i å kunne lese på norsk. Utviklingen av det å kunne lese i faget går fra å forstå enkle tekster til å lese, tolke og reflektere over tekster i ulike sjangre, for ulike formål og av ulik lengde og kompleksitet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i faget norsk for språklige minoriteter med kort botid i Norge er å vurdere digitale kilder og å bruke digitale ressurser i språklæring, informasjonsinnhenting, lesing, tekstskaping og kommunikasjon. Faget skal bidra til at elevene utvikler kritisk og etisk bevissthet om hvordan de framstiller seg selv og andre digitalt. Utviklingen av digitale ferdigheter i norsk for språklige minoriteter med kort botid i Norge går fra informasjonsinnhenting til å planlegge, utvikle og redigere sammensatte tekster med bevissthet om hvordan de forskjellige uttrykksformene virker sammen. Utviklingen innebærer også en stadig større grad av selvstendighet og dømmekraft i valg og bruk av digitale kilder og medier."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I faget norsk for språklige minoriteter med kort botid i Norge handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes evne til å uttrykke seg skriftlig og muntlig på norsk. Dette gir elevene grunnlag for å kunne gi uttrykk for egne følelser, tanker og erfaringer, noe som er viktig for å håndtere relasjoner og delta i et sosialt fellesskap. Lesing av litteratur kan både bekrefte og utfordre elevenes selvbilde og dermed bidra til deres identitetsutvikling. Arbeid med språk og språkbruk kan gi elevene nye perspektiver på språklig identitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I faget norsk for språklige minoriteter med kort botid i Norge handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes leseferdigheter og muntlige og skriftlige ferdigheter på norsk. Dette gjør det mulig for elevene å holde seg informert, gjøre seg opp egne tanker og meninger og å forstå og delta i samtaler, diskusjoner og samfunnsliv. Lesing av skjønnlitteratur og sakprosa gir elevene innblikk i andre menneskers livssituasjon og utfordringer. Dette kan bidra til forståelse, toleranse og respekt for andre menneskers synspunkter og perspektiver og legge grunnlag for konstruktiv samhandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I norsk for språklige minoriteter med kort botid i Norge handler det tverrfaglige temaet bærekraftig utvikling om at elevene utvikler kunnskap om hvordan tekster framstiller natur, miljø og livsbetingelser, lokalt og globalt. Gjennom fagets tekstmangfold, kritisk lesing og dialog utvikler elevene evnen til å forstå og håndtere meningsmotsetninger og interessekonflikter som oppstår når samfunnet endres i en mer bærekraftig retning. Norsk for språklige minoriteter med kort botid i Norge bidrar til å bevisstgjøre elevene og ruste dem til å handle og påvirke samfunnet gjennom språket."
+   ]
+  }
  ]
 }

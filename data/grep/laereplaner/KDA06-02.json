@@ -143,5 +143,57 @@
     "Foto og grafikk 1: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nFoto og grafikk 2: Privatisten skal opp til ein praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i foto og grafikk inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagspråk i arbeid i verkstad og studio, og å bruke fagomgrep i samtalar, presentasjonar og diskusjonar om eige og andre sine arbeid"
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i foto og grafikk inneber å bruke fagspråk for å utforme arbeid tilpassa mottakar og formål. Det inneber òg å bruke skrift, teikn, bilete og symbol i visuelle uttrykk. Vidare inneber det å utarbeide faglege tekstar for presentasjonar, og å bruke kjelder på ein kritisk måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i foto og grafikk inneber å tolke og reflektere over innhald, bodskap og verkemiddel i visuelle uttrykk. Det handlar òg om å sjå samanhengar mellom idé og uttrykk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i foto og grafikk inneber å tolke informasjon frå talmateriale, og å berekne proporsjonar og format i eigne arbeid, både under planlegging, arbeidsprosess og presentasjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i foto og grafikk inneber å bruke digitale ressursar til å søkje etter, innhente og behandle biletuttrykk, og å skape ulike visuelle uttrykk gjennom digitale flater og verktøy. Det handlar òg om å vere medviten om reglar for opphavsrett og personvern i ein brukar- og delingskultur i digitale og sosiale medium."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I foto og grafikk handlar det tverrfaglege temaet folkehelse og livsmeistring om å undersøkje identitet og eksistens i den kvardagen ein er ein del av. Vidare handlar det om å arbeide med å uttrykkje eigen identitet og utvikle meiningar, idear og kjensler. Det handlar òg om å problematisere den posisjonen bilete har i det private og det offentlege."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I foto og grafikk handlar det tverrfaglege temaet demokrati og medborgarskap om kunnskap om ytringsfridom og om korleis bilete på eiga hand eller saman med tekst kan bidra til å fremje, problematisere og påverke aktuelle tema i samtida. Vidare inneber det å navigere blant ulike uttrykksformer og respektere usemje, der biletuttrykk er éin måte å sjå og forstå verda på."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I foto og grafikk handlar det tverrfaglege temaet berekraftig utvikling om utforsking av og auka forståing av miljø- og samfunnsmessige problemstillingar gjennom visuelle ytringar. Det handlar òg om å være medviten om ressursbruk i eigen produksjon, og om å vurdere materiale, teknikkar og løysingar som ikkje skader miljøet."
+   ]
+  }
  ]
 }

@@ -158,5 +158,57 @@
     "Produksjon og tjenesteyting og naturbasert næringsaktivitet: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 naturbruk innebærer å kunne forklare, begrunne synspunkter og kommunisere forståelig med kollegaer. Det innebærer også å kunne lytte til, presentere saker for og instruere ulike målgrupper. Muntlige ferdigheter handler dessuten om å kunne bruke fagspråk og samtale om og drøfte produksjoner og løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 naturbruk innebærer å kunne tilpasse tekster til ulike formål, sjangre, mottakere og medier. Det innebærer å kunne beskrive produkter og tjenester for kollegaer, brukere og kunder ved hjelp av fagspråk. Det vil også si å kunne dokumentere hva man gjør, og hva man har lært."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 naturbruk innebærer å kunne tilegne seg informasjon i trykte og digitale ressurser og bruke dette i praktisk arbeid, tjenesteyting eller produksjonsprosesser. Å kunne lese vil også si å kunne bruke fagspråk og utøve kildekritikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 naturbruk innebærer å kunne velge framgangsmåter, stille inn verktøy og apparater, beregne innsatsfaktorer og utbytte av prosesser. Det innebærer også å kunne finne, måle og vurdere økonomiske, biologiske, fysiske og kjemiske parametre. Videre vil det si å kunne sette opp og tolke tabeller og diagrammer. Å kunne gjøre overslag og bruke tallmateriale i faglig argumentasjon inngår også."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 naturbruk innebærer å kunne bruke digitale ressurser og hjelpemidler i en produksjon eller aktivitet. Det innebærer også å kunne samle data, være kritisk til kilder og bruke ulike analoge og digitale verktøy i diskusjoner og informasjonsutveksling. Videre innebærer det å kunne bruke digitale ressurser i navigasjon, styring av driftsprosesser og dokumentasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 naturbruk handler det tverrfaglige temaet folkehelse og livsmestring om menneskets møte med naturen, om lokale næringer, tradisjon og kultur og hvordan dette bidrar til utvikling av identitet. Videre handler det om å gjøre valg som ivaretar helse og sikkerhet i ulike arbeidsoperasjoner, og om å bidra til folkehelsen gjennom helsefremmende produkter og tjenester fra naturbruksnæringene."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 naturbruk handler det tverrfaglige temaet demokrati og medborgerskap om å kunne møte et arbeids- og yrkesfellesskap og å kunne forstå og delta i samfunnsdebatten om natur, ressursbruk og forvaltning. Videre handler det om å øve opp evnen til å tenke kritisk og håndtere meningsbrytninger og å vise respekt og toleranse i møte med andre mennesker, kulturer og praksiser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 naturbruk handler det tverrfaglige temaet bærekraftig utvikling om miljøbevissthet og om klimaendringer, forurensning og tap av biologisk mangfold, som framtidens naturbrukere skal bidra til å motvirke. Videre dreier det seg om å vurdere miljøutfordringer i samarbeid med ulike næringsaktører. Det handler også om å utforske og ta i bruk relevant teknologi for å bidra til en bærekraftig utvikling."
+   ]
+  }
  ]
 }

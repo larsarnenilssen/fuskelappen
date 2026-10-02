@@ -234,5 +234,57 @@
     "Helsefremjande arbeid, kommunikasjon og samhandling og yrkesliv i hudterapifaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 hudterapi inneber å kommunisere med og rettleie kundar. Vidare inneber det å snakke presist og eintydig, å skilje mellom bruk av omgrep i daglegtalen og fagterminologi og å tilpasse språket til samtalepartnaren. Det inneber òg å lytte til kundane og følgje opp med oppklarande spørsmål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 hudterapi inneber å utarbeide planar, dokumentere skriftleg og føre journal. Vidare handlar det om å korrespondere med kundar, leverandørar og samarbeidspartnarar og om skriftleg marknadsføring."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 hudterapi inneber å forstå faglitteratur, brukarrettleiingar, journalar, statistikk, lovtekstar og planar. Vidare inneber det å lese og forstå instruksar og manualar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 hudterapi inneber å bruke statistikk og tabellar, gjere prisoverslag og rekne ut pris ved kjøp og sal av hudpleieprodukt. Det inneber òg å berekne avanse på produkt og behandlingar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 hudterapi inneber å bruke digitale ressursar for å finne fagrelevant informasjon og å vurdere kjelder kritisk og å bruke digital dømmekraft. Vidare inneber det å bruke digitale ressursar ved journalføring, ved kommunikasjon med kundar og ved kjøp og sal."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 hudterapi handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis fysisk og psykisk helse påverkar hud og kropp. Det inneber å ha kunnskapar om korleis kosthald og fysisk aktivitet påverkar huda og om å rettleie menneske til å gjere gode val som fremjar hudhelsa."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 hudterapi handlar det tverrfaglege temaet demokrati og medborgarskap om å vise respekt for kundar og kollegaer. Det handlar om å ta vare på verdiane i vårt demokratiske samfunn som grunnlag for profesjonell yrkesutøving òg om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 hudterapi handlar det tverrfaglege temaet berekraftig utvikling om korleis bruk av hudpleieprodukt påverkar miljøet. Vidare handlar det om å velje miljøvennlege materiale, produkt, metodar, emballasje og utstyr."
+   ]
+  }
  ]
 }

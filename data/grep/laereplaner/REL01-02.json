@@ -101,5 +101,57 @@
     "Vg3 studieforberedende utdanningsprogram: Privatisten skal opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i religion og etikk er å gjøre rede for og drøfte faglige emner gjennom presist språk og riktig bruk av fagbegreper. Det innebærer å føre dialog om grunnleggende verdier og eksistensielle spørsmål. Videre innebærer det å håndtere meningsbrytninger om religions-, livssyns- og verdispørsmål på en måte som ivaretar den enkeltes integritet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i religion og etikk er å kunne gjøre rede for og drøfte faglige emner tilpasset ulike oppgaver innen religion, livssyn og etikk. Videre innebærer det å kunne problematisere faglige begreper og temaer, og å kunne bygge opp en helhetlig etisk argumentasjon. Å kunne skrive i religion og etikk innebærer dessuten å kunne bruke kilder på en kritisk og etterprøvbar måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i religion og etikk er å kunne reflektere over utvalgte religiøse tekster og forstå hvordan ulike måter å tolke slike tekster på henger sammen med religioners indre mangfold. Det innebærer også å kunne vurdere kilder med tanke på relevans, formål og avsender- og mottakerperspektiv. Videre innebærer det å vise utholdenhet i lesing av lengre fagtekster, og å forstå bruken av fagbegreper i disse, og det innebærer å kunne orientere seg i et tekstmangfold."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i religion og etikk er å kunne lese og diskutere statistisk materiale som omhandler religioner, livssyn og etikk og å vurdere hvilken relevans dette har for å forstå religioners og livssyns plass i samfunnet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i religion og etikk er å finne fram til og reflektere over hvordan digitale arenaer blir brukt til informasjon og påvirkning innen religions- og livssynsfeltet. Det innebærer også å finne, tolke og vurdere ulike kilder i arbeidet med fagstoff om religion, livssyn og etikk. Videre innebærer det å ha kunnskap om og forståelse av etiske sider ved digital kommunikasjon. Til sist innebærer ferdigheten å kunne håndtere problemstillinger knyttet til egen og andres digitale identitet."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I religion og etikk handler det tverrfaglige temaet folkehelse og livsmestring om å reise spørsmål om forholdet til egen identitet og hva som er et godt liv. Faget gir rom for å reflektere over verdien av gjensidig forståelse og betydningen av å sette egne grenser. Arbeid med etiske og eksistensielle spørsmål gir evne til å håndtere utfordrende spørsmål i eget liv, inkludert spørsmål som likestilling, kjønn og seksualitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I religion og etikk handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal utvikle evne til å ta andres perspektiv gjennom kunnskap om religioner og livssyn. Ved å invitere elevene til å drøfte utfordringer knyttet til ytringsfrihet og kommunikasjon i et mangfoldig samfunn bidrar faget til demokrati og medborgerskap. Gjennom å delta i etisk refleksjon blir elevene i stand til å problematisere makt og utenforskap og til å stille spørsmål ved gjengse normer."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I religion og etikk handler det tverrfaglige temaet bærekraftig utvikling om at elevene skal utforske eksistensielle spørsmål og delta i etisk refleksjon over naturen og menneskets plass i den. Dette omfatter temaer som menneskehetens framtid og ressursbruk og hvilke perspektiver religioner og livssyn har på dette."
+   ]
+  }
  ]
 }

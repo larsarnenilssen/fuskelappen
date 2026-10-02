@@ -92,5 +92,45 @@
     "Opplæringen i vg3 industrioppmålingsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fire til fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 industrioppmålingsfaget innebærer å lytte til og gi respons til spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer å kommunisere ved bruk av fagterminologi, forstå faglige uttrykksmåter og reflektere over og drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industrioppmålingsfaget innebærer å bruke fagspråk for å utforme ulike tekster tilpasset formål og mottaker. Det innebærer å utarbeide planer, rapporter, måleresultater og avviksbeskrivelser. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, og å bruke kilder på en kritisk og reflektert måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industrioppmålingsfaget innebærer å finne og vurdere eksplisitt og implisitt informasjon i ulike tekster, å forstå gjeldende prosedyrer og retningslinjer og å forstå arbeidsordre. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 industrioppmålingsfaget innebærer å hente ut, beskrive og tolke informasjon i tallmateriale for å forstå beregninger i geometriske og trigonometriske kalkulasjoner. Videre innebærer det å bruke og bearbeide informasjon for å vise sammenhenger, og å beregne lønnsomhet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 industrioppmålingsfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere. Det innebærer også å bruke digitalt oppmålingsutstyr og databaserte verktøy til planlegging, gjennomføring, registrering, vurdering, dokumentasjon og kommunikasjon. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industrioppmålingsfaget handler det tverrfaglige temaet bærekraftig utvikling om å bidra med utvikling av miljøvennlige løsninger innenfor produksjonsindustrien til lands og til havs. Det handler også om å medvirke til å sikre rett kvalitet og nøyaktighet, redusere unødig forbruk og bidra til en bærekraftig produksjon."
+   ]
+  }
  ]
 }

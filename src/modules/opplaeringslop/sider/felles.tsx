@@ -3,7 +3,7 @@ import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
 import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
+export { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { lastFagindeks } from '../../fag/data.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import { trinnTekst } from '../../fag/visning.ts';
@@ -92,47 +92,6 @@ function utenGruppenavn(navn: string, gruppe: string): string {
   if (!navn.toLowerCase().startsWith(gruppe.toLowerCase())) return navn;
   const rest = navn.slice(gruppe.length).replace(/^[\s,–-]+/, '');
   return rest || navn;
-}
-
-/**
- * En rubrikk som kan legges sammen, med antall eller timer i overskriften. Hvilke rubrikker som er lagt sammen,
- * huskes i historikken for siden (som de andre kortene). `farge` gir kanten fargen til en fagtype.
- */
-export function Rubrikk({
-  nokkel,
-  tittel,
-  hoyre,
-  lukket: standard = false,
-  farge,
-  children,
-}: {
-  nokkel: string;
-  tittel: string;
-  hoyre?: string | null;
-  lukket?: boolean;
-  farge?: string;
-  children: ComponentChildren;
-}) {
-  const [lukket, veksle] = useSammenlagt(nokkel, standard);
-  const id = useId();
-  return (
-    <section class="rubrikk" data-fagtype={farge} data-rubrikk={nokkel}>
-      <h2 class="rubrikk-tittel">
-        <button type="button" class="kortknapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-          <span class="kortknapp-tekst">
-            <span>{tittel}</span>
-            {/* Mellomrommet skiller tittelen og tallet for skjermlesere. Det vises ikke i flex. */}
-            {hoyre && ' '}
-            {hoyre && <span class="rubrikk-hoyre tall">{hoyre}</span>}
-          </span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten kortknapp-pil" />
-        </button>
-      </h2>
-      <div id={id} class="rubrikk-innhold" hidden={lukket}>
-        {children}
-      </div>
-    </section>
-  );
 }
 
 /** Fagene gruppert etter læreplan, sortert etter navnet på læreplanen. */

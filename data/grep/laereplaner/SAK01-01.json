@@ -117,5 +117,57 @@
     "Vg2 yrkesfaglege utdanningsprogram: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i samfunnskunnskap inneber å kunne formulere og fremje eigne meiningar og argument. Å lytte til, vurdere, gi respons på og vidareutvikle innspel frå andre bidreg til større forståing og respekt for meiningsmangfald. Elevane utviklar munnlege ferdigheiter i samfunnskunnskap når dei drøftar, reflekterer og presenterer åleine og i fellesskap. Gjennom å delta i munnlege aktivitetar kan elevane setje ord på sin eigen læreprosess og kompetanse i faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i samfunnskunnskap inneber å strukturere tankar og å utforme og arbeide med tekstar som er tilpassa formålet. Det inneber òg å drøfte, dele og formidle informasjon skriftleg med digitale verktøy. Elevane tileignar seg fagkompetanse ved å skrive tekstar der dei bruker fagomgrep, faglege metodar og ulike perspektiv og kjelder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i samfunnskunnskap inneberer å utforske, tolke, samanlikne informasjon og kritisk vurdere forskjellige kjelder. Vidare inneber det å bruke varierte kjelder for å setje seg inn i faglege og dagsaktuelle tema. Lesing i samfunnskunnskap handlar òg om å reflektere over korleis tekstar med forskjellige perspektiv kan uttrykke ulike tenkjemåtar og argument."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i samfunnskunnskap er å innhente, arbeide med, tolke og analysere data og vurdere informasjon og statistikk som er framstilt i tabellar og grafar. Ved å rekne i samfunnskunnskap kan elevane betre forstå og finne argument for faglege forhold og samanhengar. Elevane må òg kunne rekne for å forvalte pengebruk og få oversikt over personleg økonomi."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i samfunnskunnskap inneber å kunne bruke digitale verktøy til å finne, behandle og navigere i digitale kjelder og å velje ut informasjon og argument. Det inneber òg å kunne utøve digital kjeldekritikk og vise til kjelder på ein påliteleg måte. Elevane skal kunne bruke forskjellige medietypar til å skape digitale produkt og til å vurdere og forbetre sine eigne produkt. Dei skal kunne forstå korleis algoritmar påverkar informasjonssøk, utvikle digital dømmekraft og følgje reglar og normer for digital samhandling og kommunikasjon, personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I samfunnskunnskap handlar det tverrfaglege temaet folkehelse og livsmeistring om at elevane utviklar kunnskap om kva og kven som påverkar identiteten, sjølvkjensla, tryggleiken og tilhøyrsla deira. I faget møter elevane tema som kjønn, seksualitet, grensesetjing, rus, digitale spor og personleg økonomi. Dette kan bidra til at dei gjer gode livsval og får forståing og respekt for mangfald og for andre sine verdiar og livsval."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I samfunnskunnskap handlar det tverrfaglege temaet demokrati og medborgarskap om å auke det kritiske medvitet om samfunnet som elevane er deltakarar i. Elevane skal utforske korleis dei kan påverke samfunnet rundt seg i dag og i framtida. Det inneber at dei skal lytte til og la seg utfordre av menneske med andre synspunkt enn dei sjølve har. Gjennom faget skal elevane kunne identifisere område der menneskeverdet blir utfordra, til dømes i samband med menneskehandel og undertrykking. I tillegg skal faget gi dei kunnskap om nasjonale og internasjonale institusjonar og avtalar, inkludert kva internasjonale konvensjonar har å seie for rettigheiter til urfolk. Forståing om samanhengane mellom rettane og pliktene til individet, slik at dei kan bli aktive medborgarar, inngår også i dette."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I samfunnskunnskap handlar det tverrfaglege temaet berekraftig utvikling om korleis elevane kan bidra til ei berekraftig samfunnsutvikling gjennom å vere aktive medborgarar. Dette inneber å forstå samanhengar mellom individuelle val, samfunnsstrukturar og tolegrensene i naturen. Vidare skal elevane reflektere over korleis politikk, konfliktar, økonomi, teknologi og ressursbruk verkar saman og påverkar grupper i samfunnet. Berekraftige løysingar inneber òg å ta vare på verdiar som likeverd og mangfald."
+   ]
+  }
  ]
 }

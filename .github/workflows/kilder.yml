@@ -50,7 +50,7 @@ jobs:
         run: npx playwright install chromium
       # Grep (avgjørelse 018): hentes hver uke. Stemmer testene med de nye dataene, tas de inn og publiseres.
       # Feiler testene, legges de gamle dataene tilbake, og kontrollsaken sier fra.
-      - name: Hent Grep og fag- og timefordeling
+      - name: Hent Grep, fag- og timefordeling og overordnet del
         id: grep
         continue-on-error: true
         # Fag- og timefordelingen (Udir-1) og VIGO Kodeverksbase hentes selv om Grep feiler, og omvendt
@@ -59,6 +59,7 @@ jobs:
           status=0
           npm run hent:grep || status=1
           npm run hent:udir || status=1
+          npm run hent:overordnet || status=1
           npm run hent:vigo || status=1
           exit $status
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen

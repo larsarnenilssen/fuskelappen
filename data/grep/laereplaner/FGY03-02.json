@@ -96,5 +96,51 @@
     "Opplæringen i forgyllerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i forgyllerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale om estetikk, design og arbeidsprosesser rundt en planlagt forgylt overflate. Det innebærer også å bruke fagspråk i drøfting og refleksjon over forgyllingsfaglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i forgyllerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og å presentere og dokumentere arbeidsprosesser gjennom tekst og visualiseringer til kunder, kolleger, leverandører og tverrfaglige samarbeidspartnere. Det betyr å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i forgyllerfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer å bruke kilder på en kritisk måte som lar seg etterprøve. Videre handler det om å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger og anvende dette i en arbeidsprosess i forgyllerfaget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i forgyllerfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller og grafiske framstillinger i forbindelse med å beregne størrelse på forgylte overflater, materialmengde og styrkeforhold under blanding av materialer. Videre handler det om å gjøre økonomiske beregninger i forbindelse med tidsbruk og pristilbud. Det innebærer å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i forgyllerfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I forgyllerfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet gjennom mestringsglede og å ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med ulike forgylleroppgaver."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I forgyllerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over og løse praktiske problemer rundt bruk av helse- og miljøskadelige produkter, og samtidig ivareta tradisjonelle forgyllerteknikker. Det handler om valg og kvalitet i forgyllerarbeidet og restaurering for å bidra til holdbarhet og gjenbruk. Videre handler det om faget som en del av arbeidet med å sikre verdens kulturarv."
+   ]
+  }
  ]
 }

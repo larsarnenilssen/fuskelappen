@@ -225,5 +225,51 @@
     "Boring, komplettering og brønnservice og prosedyrar og praksis: Privatisten skal opp til ein tverrfagleg skriftleg eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 brønnteknikk inneber å kunne beskrive, forklare og dokumentere kva som blir gjort når ein utfører faglege oppgåver. Det inneber å lytte til og gi klar og presis rapportering av arbeidsprosessane, bruke faguttrykk presist, fremje eigne meiningar og reflektere over utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 brønnteknikk inneber å kunne utforme tekstar tilpassa mottakar og føremål, og å kunne bruke fagspråk i planlegginga, analyseringa og rapporteringa av arbeidsoperasjonar. Det inneber videre å kunne bruke både digitale og analoge verktøy til tekst og bilde og bruke desse på ein kritisk og reflektert måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 brønnteknikk inneber å kunne finne og vurdere informasjon i tekstar, og og bruke kjelder på ein kritisk og etterprøvbar måte. Det inneber og å forstå regelverk, prosedyrar, fagtekstar og arbeidsforklaringar som blir nytta i faget"
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 brønnteknikk inneber å kjenne til relevante måleeiningar, og kunne måle, uttrykkje og rekne med fysiske storleikar. Det inneber å bruke matematiske metodar og ulike hjelpemiddel til å behandle problemstillingar og vise samanhenger i utrekningar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 brønnteknikk inneber å kunne bruke digitale ressursar til utforsking, kommunikasjon, visualisering og presentasjon. Det handlar òg om å kjenne til og bruke passande digitale verktøy til å planleggje, utføre og dokumentere arbeidsoppgåver. Digitale ferdigheiter inneber òg å sammenstille informasjon og å utvikle etisk medvit og utvise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 brønnteknikk handlar det tverrfaglege temaet folkehelse og livsmestring om å være bevisst dei krav og utfordringar som ligg i det å arbeide offshore. Vidare handlar det om å fremmje god fysisk og psykisk helse som gjer moglegheit til å ta ansvarlige livsval."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 brønnteknikk handlar det tverrfaglege temaet berekraftig utvikling om dei utfordringar og konsekvenser som ligg i å utvinne og bruke fossile energikjelder. Det handlar også om at historiske endringar i sikkerheitskulturen har medverka til betre vern av menneske og miljø. Vidare handlar det om å utforske dei mogelegheitar som teknologien gir til berekraftig utvikling."
+   ]
+  }
  ]
 }

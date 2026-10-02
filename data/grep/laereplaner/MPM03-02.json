@@ -124,5 +124,51 @@
     "Opplæringen i maskør- og parykkmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på 10–14 virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i maskør- og parykkmakerfaget innebærer å uttrykke egne ideer, lytte og formidle fagkunnskap til medarbeidere, oppdragsgivere og andre aktører. Det innebærer også å delta i faglige samtaler, bruke fagspråk i drøfting av ulike problemstillinger og å reflektere over hvordan ulike uttrykksmåter formidler budskapet. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i maskør- og parykkmakerfaget innebærer å tegne, planlegge, dokumentere og kommunisere skriftlig ved å bruke fagspråk. Videre innebærer det å bruke varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i maskør- og parykkmakerfaget innebærer å bruke forskjellige lesestrategier, vurdere og tolke faglig innhold i et manuskript og å lese skriftlig kommunikasjon og arbeidsplaner. Videre innebærer det å bruke, tolke og forstå tegn og symboler i produktinformasjon, datablader og oppskrifter og å bruke oppslagsverk og faglitteratur på en kritisk måte som lar seg etterprøve. Det handler også om å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i maskør- og parykkmakerfaget innebærer å kunne å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne tid, vekt, måleenheter og volum knyttet til arbeidsoppgaven. Det handler også om å gjøre økonomiske beregninger i forbindelse med budsjett og pristilbud og å bearbeide informasjon for å sammenligne, vise sammenhenger og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i maskør- og parykkmakerfaget innebærer å søke etter informasjon og inspirasjon ved å bruke digitale ressurser. Videre innebærer det å kommunisere, presentere ideer og dokumentere arbeid digitalt. Det handler også om å utvikle etisk bevissthet, vurdere egen rolle på nett og å utvise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I maskør- og parykkmakerfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle strategier for å møte og mestre forventninger fra oppdragsgivere. Videre handler folkehelse og livsmestring om å bli trygg i møte med kolleger, kunstnere og andre aktører i faget. Det handler også om å reflektere over hvordan man påvirkes av moter, trender og visuelle uttrykk innenfor maskør- og parykkmakerfaget. I tillegg handler det om å reflektere over hvordan man kan håndtere aktører i forskjellige livssituasjoner og med ulik kulturell bakgrunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I maskør- og parykkmakerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk rundt valg ut fra etiske og miljøbevisste retningslinjer. Det innebærer å kritisk vurdere hvordan arbeidsprosesser og kjemiske produkter kan påvirke egen og andres helse, og å bruke relevant beskyttelse og verneutstyr. Videre handler bærekraftig utvikling om å innhente informasjon om bruk av kjente virkestoffer og deres egenskaper i ulike kosmetiske produkter og om hvordan stoffene påvirker det indre og ytre miljøet. Det handler også om ressursbruk og hvordan man kan forvalte, utnytte og gjenbruke materialer, og oppbevare og vedlikeholde verktøy. Maskør- og parykkmakerfaget viderefører tradisjonell håndverkskunnskap og skal kunne bidra til å utvikle produkter med utgangspunkt i bærekraft, kvalitet, kultur og historie."
+   ]
+  }
  ]
 }

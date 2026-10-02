@@ -323,5 +323,51 @@
     "Elever i grunnskolen og i videregående opplæring med annet morsmål enn norsk og samisk har rett til særskilt norskopplæring til de har tilstrekkelige ferdigheter i norsk til å følge vanlig opplæring i skolen. Kommunen eller fylkeskommunen skal kartlegge hvilke ferdigheter elevene har i norsk før det blir gjort vedtak om særskilt norskopplæring. Slik kartlegging skal også utføres underveis i opplæringen for elever som får særskilt språkopplæring etter forskriften, som grunnlag for å vurdere om elevene har tilstrekkelige ferdigheter i norsk til å følge den vanlige opplæringen i skolen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i grunnleggende norsk for språklige minoriteter er å øve opp grunnleggende kommunikativ kompetanse som gjør det mulig å samhandle og delta, å bruke samtale for å utforske og få innsikt, å mestre ulike muntlige sjangre, og å reflektere over muntlig språkbruk. Grunnleggende norsk for språklige minoriteter har et særlig ansvar for utviklingen av muntlige ferdigheter på norsk. Utviklingen av muntlige ferdigheter går fra grunnleggende lytte- og uttaleferdigheter, og enkle samtaler og språkhandlinger, til forståelig uttale og mestring av et stadig mer presist språk og mer komplekse muntlige sjangre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i grunnleggende norsk for språklige minoriteter er å øve opp grunnleggende skrivekompetanse på norsk for å kommunisere, utforske, lære, ytre seg og uttrykke seg kreativt. Skrivingen skal være tilpasset innhold, form og formål. Grunnleggende norsk for språklige minoriteter har et særlig ansvar for opplæringen i å kunne skrive på norsk. Utviklingen av å kunne skrive går fra grunnleggende bokstav- og tekstkunnskap til planlegging, utforming og bearbeiding av mer komplekse tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i grunnleggende norsk for språklige minoriteter er å øve opp grunnleggende lesekompetanse på norsk, å lese for læring, opplevelse og innlevelse, å øve opp gode lesestrategier, og å reflektere over teksters innhold, form og formål. Grunnleggende norsk for språklige minoriteter har et særlig ansvar for opplæringen i å kunne lese på norsk. Utviklingen av å kunne lese går fra grunnleggende avkoding og forståelse av enkle tekster til lesing av og refleksjon over mer komplekse tekster i ulike sjangre. Elevene skal også lese og forstå tall, tabeller og diagrammer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i grunnleggende norsk for språklige minoriteter er å utvikle grunnleggende digitale ferdigheter, og å bruke digitale ressurser i språklæring, informasjonsinnhenting, lesing, tekstskaping og kommunikasjon. Utviklingen av digitale ferdigheter går fra å utforske ulike digitale ressurser til bruk og vurdering av digitale verktøy og ressurser i kommunikasjon og læringsarbeid. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I grunnleggende norsk for språklige minoriteter handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes evne til å uttrykke seg muntlig og skriftlig på norsk. Dette gir mulighet til å utforske og uttrykke egne tanker, erfaringer og følelser, og til å håndtere mellommenneskelige relasjoner i språklige og kulturelt sammensatte fellesskap. Arbeid med tekster kan både bekrefte og utfordre elevenes selvbilde og dermed bidra til deres identitetsutvikling. Arbeid med språk og språkbruk kan gi elevene nye perspektiver på språklig identitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I grunnleggende norsk for språklige minoriteter handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes evne til å uttrykke seg muntlig og skriftlig på norsk. Dette gjør det mulig for elevene å holde seg informert, gjøre seg opp sine egne tanker og meninger og å forstå og delta i samtaler, diskusjoner og samfunnsliv. Arbeid med tekster kan gi elevene innblikk i andre menneskers livssituasjon og perspektiver, noe som kan legge grunnlag for forståelse, toleranse og konstruktiv samhandling med andre mennesker."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I grunnleggende norsk for språklige minoriteter handler det tverrfaglige temaet bærekraftig utvikling om å utvikle elevenes språkferdigheter slik at de kan handle og påvirke samfunnet gjennom språket. Arbeid med tekster bidrar til å bevisstgjøre elevene og gi dem kunnskaper og ferdigheter som gjør dem i stand til å reflektere over hvordan mennesker kan påvirke natur og miljø."
+   ]
+  }
  ]
 }

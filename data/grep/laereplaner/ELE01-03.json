@@ -181,5 +181,57 @@
     "Elektroniske kretser og nettverk og energi- og styresystemer: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i Vg1 elektro og datateknologi innebærer å kunne bruke fagterminologi, kommunisere forståelig, lytte til og vise respekt for den som snakker. Å kunne delta i diskusjoner om sikkerhet, energiløsninger og faglige løsninger er også en av ferdighetene."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg1 elektro og datateknologi innebærer å kunne uttrykke seg forståelig om elektrofaglige temaer. Det innebærer å bruke presist fagspråk for å beskrive valg av faglige løsninger og dokumentere faglige aktiviteter. Det betyr at språk, bilder og symboler skal være faglig korrekt uttrykt, og tekstene skal være presise og forståelige for leseren."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg1 elektro og datateknologi innebærer å kunne tilegne seg ny kunnskap og innsikt, finne fram til relevant informasjon og tolke fagtekster som bidrar til at arbeidet blir utført i tråd med gjeldende regelverk og anbefalinger. Det innebærer også kunnskap om faglige termer og symboler som er aktuelle ved utførelse av ulike arbeidsoppgaver."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg1 elektro og datateknologi innebærer å kunne utføre matematiske beregninger på elektriske og elektroniske kretser og vurdere resultatet opp mot målte verdier. Det innebærer også å kunne hente informasjon fra tabeller, statistikk og diagrammer og bruke symboler og prefikser riktig i oppgaveløsning."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg1 elektro og datateknologi innebærer å etablere digital kommunikasjon, utføre feilsøking og simulere og programmere ved hjelp av digitale verktøy. Digitale ferdigheter innebærer også å kunne produsere tegninger og tekniske underlag og å være kildekritisk ved informasjonssøk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I Vg1 elektro og datateknologi handler det tverrfaglige temaet folkehelse og livsmestring om gode og trygge arbeidsstillinger og om å mestre krav som stilles i arbeidslivet. Det tverrfaglige temaet handler også om hvordan tekniske løsninger bidrar til et godt innemiljø, og hvordan teknologi kan bidra til menneskers livskvalitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I Vg1 elektro og datateknologi handler det tverrfaglige temaet demokrati og medborgerskap om å kunne samarbeide for å løse elektrofaglige oppgaver. Det tverrfaglige temaet handler også om samarbeid for å utvikle et organisert og mer likestilt arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg1 elektro og datateknologi handler det tverrfaglige temaet bærekraftig utvikling om hvordan energiløsninger og teknologi kan bidra til å redusere klima- og miljøbelastninger. Det tverrfaglige temaet handler også om forståelse for hvordan egne handlinger og valg har betydning for en bærekraftig utvikling."
+   ]
+  }
  ]
 }

@@ -140,5 +140,57 @@
     "Opplæringen i vg3 servitørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 servitørfaget innebærer å begrunne faglige valg, bruke faguttrykk og kommunisere presist og forståelig. Videre innebærer det å tilpasse språket til mottaker, innhold og formål og lytte til og vise respekt for kolleger, gjester og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 servitørfaget innebærer å bruke faguttrykk i arbeid med menyer, planer og i dokumentasjon av eget arbeid. Videre innebærer det å dokumentere utført kvalitetskontroll og avviksbehandling. Det innebærer også å bruke kilder på en måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 servitørfaget innebærer å sette seg inn i og forstå faglitteratur, bestillinger, oppskrifter, menyer, drikkekart, deklarasjoner og bruksanvisninger. Det innebærer også å forstå regelverk, prosedyrer, instrukser og rutiner i kvalitetssystemer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 servitørfaget innebærer å beregne plassbehov, bordoppsetting, mengder og priser og å kontrollere omsetning og oppgjør. Det innebærer også å utføre økonomiske utregninger og håndtere kjøps- og salgssituasjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 servitørfaget innebærer å bruke digitale ressurser og systemer, maskiner og utstyr i hele produksjonskjeden. Videre innebærer det å bruke og beskytte digital informasjon ved kontakt med eksterne i tråd med virksomhetens rutiner. Det innebærer også digital dømmekraft og respekt for opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 servitørfaget handler det tverrfaglige temaet folkehelse og livsmestring om å reflektere over sammenhengen mellom kosthold, folkehelse og alkoholkonsum. Videre handler det om å utvikle en yrkesidentitet som bidrar til et positivt selvbilde gjennom mestring og deltakelse i et faglig og kollegialt yrkesfellesskap."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 servitørfaget handler det tverrfaglige temaet demokrati og medborgerskap om respekt for ulike religioner, kulturer og mattradisjoner. Videre handler det om plikter og rettigheter i trepartssamarbeidet der arbeidsgiver, arbeidstaker og lovgivende myndighet jobber sammen om å utvikle et bedre arbeidsliv. Demokrati og medborgerskap handler også om å motvirke arbeidslivskriminalitet, diskriminering og forskjellsbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 servitørfaget handler det tverrfaglige temaet bærekraftig utvikling om en verden i endring som trenger et mer tilpasset forbruk av mat og drikke. Gjennom kunnskap om råvaretilgang og ressursutnytting, teknologiutvikling, avfallshåndtering, gjenbruk og resirkulering skal lærlingene forstå hvordan miljøet påvirkes lokalt og globalt."
+   ]
+  }
  ]
 }

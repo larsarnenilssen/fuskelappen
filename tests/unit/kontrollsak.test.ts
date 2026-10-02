@@ -160,6 +160,14 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('https://github.com/eier/protokollen/blob/main/docs/KOBLING.md');
   });
 
+  it('tar med endringer i overordnet del til orientering (avgjørelse 037)', () => {
+    const r = lagUkesrapport(grunnlag({ overordnet: { endringer: ['Endret tekst: 1.1 Menneskeverdet'] } }));
+    expect(r.punkter).toBe(0);
+    expect(r.aapen).toBe(true);
+    expect(r.tekst).toContain('## Overordnet del');
+    expect(r.tekst).toContain('  - Endret tekst: 1.1 Menneskeverdet');
+  });
+
   it('melder nye navn i fag- og timefordelingen som appen ikke har nynorsk for (eier 02.10.2026)', () => {
     expect(lagUkesrapport(grunnlag({ navn: { linjer: [], ordninger: [] } }))).toMatchObject({ aapen: false, punkter: 0 });
     const r = lagUkesrapport(grunnlag({ navn: { linjer: ['Programfag fra nytt område'], ordninger: ['Med påbygg vg2'] } }));

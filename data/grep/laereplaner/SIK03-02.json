@@ -144,5 +144,51 @@
     "Opplæringen i vg3 sikkerhetsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 sikkerhetsfaget innebærer å kommunisere med kolleger og andre fra ulike kulturer og i ulike livssituasjoner. Det handler om å lytte til og vise respekt for mottakeren og tilpasse eget språk og innhold til formålet. Videre innebærer det å kunne bruke faguttrykk og sikre at informasjonen ikke bare blir gitt, men også forstått av mottakeren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 sikkerhetsfaget innebærer å dokumentere, omarbeide og utveksle relevante opplysninger og relevant informasjon. Videre innebærer det å kommunisere skriftlig og profesjonelt med ulike mottakere og å utarbeide rapporter, tilbud, kontrakter, analyser, planer og instrukser for kolleger, kunder og andre mottakere."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 sikkerhetsfaget innebærer å finne, forstå, tolke og vurdere informasjon og tilegne seg ny kunnskap fra sikkerhetsrapporter, analyser, planer og instrukser. Det innebærer også å utøve kildekritikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg3 sikkerhetsfaget innebærer å hente inn, bearbeide, analysere og vurdere tallmateriale og å presentere dette i passende oppsett."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 sikkerhetsfaget innebærer å innhente, registrere, lagre og bruke informasjon i tråd med personvern. Videre innebærer det å anvende faglig informasjon og vise digital dømmekraft i vurdering av kilder. Det handler også om å bruke digitale ressurser på en trygg måte, i tråd med den teknologiske utviklingen både i eget arbeid og i tverrfaglig arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 sikkerhetsfaget handler det tverrfaglige temaet folkehelse og livsmestring om å ruste lærlingene til å ta ansvarlige og helsefremmende valg i risikoutsatte situasjoner. Dette innebærer å ha kunnskap om rus og å kunne håndtere ruspåvirkede personer. Videre handler det om å kunne bygge og håndtere profesjonelle relasjoner med servicemottakere i ulike livssituasjoner. I dette ligger også å bearbeide reaksjoner, sette grenser og respektere andres grenser i ulike relasjoner og arbeidssituasjoner. Videre handler folkehelse og livsmestring om å sikre god fysisk og psykisk helse gjennom kunnskap om helse, miljø og sikkerhet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 sikkerhetsfaget handler det tverrfaglige temaet demokrati og medborgerskap om å sikre at verdiene og spillereglene i demokratiet blir tatt vare på i sikkerhetsarbeidet. Gjennom konfliktforebygging, beredskap og risikovurdering av samfunnssikkerheten skal faget bidra i det sivile samfunn. Lærlingene skal gjennom refleksjon og utforsking øve opp evnen til å tenke kritisk, håndtere meningsbrytinger og respektere uenighet. Videre skal lærlingene reflektere over ulike maktforhold i møte med andre mennesker og hvordan utøve yrkesrollen i tråd med demokratiske prinsipper. Demokrati og medborgerskap handler videre om aktiv deltakelse i arbeidslivet og om arbeidsgiverens og arbeidstakerens rettigheter og plikter."
+   ]
+  }
  ]
 }

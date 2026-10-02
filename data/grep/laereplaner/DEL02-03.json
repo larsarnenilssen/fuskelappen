@@ -176,5 +176,57 @@
     "Elektroniske kretser og utstyr, og data- og informasjonsteknologi: Privatisten skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i Vg2 datateknologi og elektronikk innebærer å bruke fagterminologi og utrykke seg presist i samarbeid om faglige løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg2 datateknologi og elektronikk innebærer å dokumentere arbeidsprosessen og de valgte løsningene. Videre handler det om å bruke fagterminologi og faglige symboler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg2 datateknologi og elektronikk innebærer å tolke faglige symboler, elektroniske skjemategninger og spesifikasjoner av elektroniske og mekaniske komponenter. Det innebærer også å tyde måleresultater, arbeidsbeskrivelser, rutiner, prosedyrer og produktveiledninger. Videre handler det om gjeldende regelverk og normer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg2 datateknologi og elektronikk innebærer å gjøre matematiske beregninger i forbindelse med planlegging og gjennomføring av yrkesoppgaver. Det handler også om å beregne forventede måleresultater i forbindelse med systematisk feilsøking."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg2 datateknologi og elektronikk innebærer å bruke digitale verktøy i produksjon av teknisk underlag. Videre handler det om å bruke integrerte utviklingsmiljøer ved programmering av mikrokontrollerbaserte systemer. Det handler også om å bruke digitale verktøy under arbeid med simuleringer, konfigurering, målinger, og systematisk feilsøking. Være kildekritisk ved informasjonssøk"
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I Vg2 datateknologi og elektronikk handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsfølelse og stolthet over eget arbeid og å ha tiltro til egne ressurser. Videre handler det om gode arbeidsteknikker som forebygger helseutfordringer. Det handler også om hvordan elektronisk kommunikasjon og digitalisering bidrar til menneskers livskvalitet og velferd."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I Vg2 datateknologi og elektronikk handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap og forståelse for et organisert og mer likestilt arbeidsliv, og hvordan arbeidslivet er bygd opp, inkludert trepartssamarbeidet og arbeidslivsorganisasjonenes roller i arbeidslivet. Det handler videre om hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg2 datateknologi og elektronikk handler det tverrfaglige temaet bærekraftig utvikling om å foreta etiske og ansvarlige valg av produkter og tekniske løsninger. Videre handler det om energieffektive tiltak og alternative energikilder og ulike dilemmaer dette kan medføre. Det handler også om hvordan valgte løsninger og elektriske produkter påvirker miljøet. Håndtering av avfall på en miljøvennlig og bærekraftig måte inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

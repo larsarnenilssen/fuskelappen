@@ -77,5 +77,45 @@
     "Musikk, dans og drama: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i musikk, dans og drama innebærer å bruke språk, kropp og stemme i formidling av kunstneriske uttrykk og faglig innhold. Det innebærer også å kritisk vurdere og reflektere over kunstneriske prosesser og produkter ved bruk av relevant fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i musikk, dans og drama betyr å kunne nedtegne kunstneriske ideer under skapende prosesser for overlevering og lagring, og å kunne skape sammensatte tekster. Det innebærer å kunne uttrykke egne erfaringer og egen utvikling ved bruk av relevant fagterminologi og relevante kilder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i musikk, dans og drama innebærer å kunne tolke og tilegne seg nedskrevne kunstneriske ideer til bruk i utøving og framføring. Det innebærer også å lese fagspesifikke tekster og å tolke og vurdere sceniske uttrykk som sammensatte tekster."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i musikk, dans og drama innebærer å kunne håndtere produksjonssider ved scenekunst gjennom strategisk bruk av digitale og teknologiske verktøy. Digitale ferdigheter betyr også å inkludere hensiktsmessige digitale ressurser i kreative og skapende prosesser og samtidig vise god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I musikk, dans og drama handler det tverrfaglige temaet folkehelse og livsmestring om at elevene skal få eksponere seg, bli sett og oppleve anerkjennelse, og at de skal få erfaring med å inngå i et faglig fellesskap. Faget gir elevene mulighet til å utvikle bevissthet om egne uttrykksmuligheter og til å utvikle trygghet i kollektive sammenhenger. Gjennom arbeid med scenisk trygghet i kunstneriske samspillsprosesser blir elevene stimulert til å utvikle empati, de får trent på å bygge fruktbare relasjoner, og de utvikler evne til å utfordre og sette grenser. Dette kan bidra til at elevene utvikler evne til positiv selvhevdelse, og at de får en positiv identitetsutvikleing."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I musikk, dans og drama handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal øve seg i å arbeide sammen mot felles mål, gi og ta plass, utfordre stereotype rolleforventninger og anerkjenne ulike livserfaringer og uttrykk. Gjennom arbeid med å integrere kunstformene musikk, dans og drama får elevene erfaring med å forhandle mellom ulike kunstneriske språk og uttrykk som konkurrerer om plass. Slik legger faget til rette for at elevene kan utvikle evne til å håndtere meningsbrytninger og respektere uenighet. Faget gir også elevene mulighet til å ta i bruk kunstneriske uttrykk som demokratisk ytringsform, og å utvikle bevissthet om ytringsfrihetens muligheter og begrensninger."
+   ]
+  }
  ]
 }

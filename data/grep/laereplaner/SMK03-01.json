@@ -108,5 +108,51 @@
     "Opplæringen i vg3 skipsmotormekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager. Fagprøven skal gjennomføres i henhold til kravene i forskrift om kvalifikasjoner og sertifikater for sjøfolk."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 skipsmotormekanikerfaget innebærer å kommunisere og å tilpasse muntlig tekst til mannskap og passasjerer i ulike situasjoner. Videre innebærer det å fremme egne synspunkter og å drøfte faglige problemstillinger. Det innebærer også å bruke et tydelig fagspråk og maritime uttrykk for å unngå feil og misforståelser."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 skipsmotormekanikerfaget innebærer å beskrive, forklare og dokumentere arbeidsoppgaver på relevant fagspråk og med bruk av standard maritime uttrykk. Det innebærer også å formulere skriftlige risikovurderinger og avviksrapporter. Videre innebærer det å bruke et presist skriftlig fagspråk for å unngå feil og misforståelser."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 skipsmotormekanikerfaget innebærer å forstå og følge arbeidsbeskrivelser, prosedyrer, håndbøker og standarder på relevant fagspråk. Det innebærer videre å tolke og systematisere informasjon og å forstå regelverk og instrukser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 skipsmotormekanikerfaget innebærer å hente ut, beskrive og tolke informasjon fra datablader og tabeller. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, og å utføre beregninger av trykk, temperatur, blandingsforhold i væsker og oljer og fartøyets stabilitet. Videre innebærer det også å justere parametre og beregne tids- og ressursbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 skipsmotormekanikerfaget innebærer å bruke digitale ressurser for kommunikasjon, planlegging, dokumentasjon og drift til å effektivisere og trygge oppgavene i den daglige driften. Det innebærer også å bruke digitale ressurser om bord til overvåking, feilsøking og innstillinger av maskiner. Videre innebærer det å bruke og regulere automatiseringssystemer om bord. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 skipsmotormekanikerfaget handler det tverrfaglige temaet folkehelse og livsmestring om hvordan ivareta egen helse og oppfylle helsekrav for skipsarbeideren. Det handler også om hvordan man møter fysiske og psykososiale utfordringer i arbeidslivet til sjøs."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 skipsmotormekanikersfaget handler det tverrfaglige temaet om å velge materialer og produkter som er energieffektive og arbeids- og miljøvennlige. Temaet handler om kritisk og reflektert vurdering i planlegging av vedlikehold av fartøy og utstyr for å redusere kostnader og bransjens miljøavtrykk. Det handler om hvordan arbeidsoppgaver og rutiner om bord i et fartøy kan bidra til en mer bærekraftig utvikling."
+   ]
+  }
  ]
 }

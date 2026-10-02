@@ -155,5 +155,51 @@
     "Reiseliv og språk 1: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.\nReiseliv og språk 2: Privatisten skal opp til en skriftlig eksamen og en muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i reiseliv og språk innebærer å kommunisere muntlig i ulike sammenhenger og på tvers av kulturer. Videre innebærer det å lytte og uttrykke seg, utvikle meninger, drøfte problemstillinger og tilpasse språket til formål og mottaker. Utvikling av muntlige ferdigheter i reiseliv og språk innebærer også å forstå og drøfte forskjellige emner og problemstillinger for å tilegne seg fagkunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i reiseliv og språk innebærer å skape tekster i ulike sjangre og som formidler synspunkter og kunnskap. Det innebærer å bruke fagbegrep i forbindelse med å skrive om reiselivsrelaterte emner og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i reiseliv og språk innebærer å bruke ulike lesestrategier for å innhente, tolke, velge ut og bruke skriftlig informasjon. Det betyr også å holde seg orientert om reiselivsfaglige temaer gjennom medier, faglitteratur og andre kilder."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i reiseliv og språk innebærer å hente inn, bearbeide, analysere og vurdere tallmateriale og å bruke dette i ulike sammenhenger. Det innebærer også å utføre beregninger og hente informasjon fra tabeller og diagrammer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i reiseliv og språk innebærer å innhente informasjon, utarbeide presentasjoner, kommunisere og samarbeide digitalt i ulike medier. Det innebærer også å følge regler og normer for nettbasert kommunikasjon, utøve kildekritikk, vise digital dømmekraft og vurdere etiske spørsmål knyttet til personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I reiseliv og språk handler det tverrfaglige temaet demokrati og medborgerskap om å delta i mellommenneskelige relasjoner som skaper respekt for andres kultur og livssituasjon som en viktig demokratisk forutsetning. Det innebærer også å forstå sammenhengen mellom ulike reiselivsaktørers rettigheter og plikter i et demokratisk samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I reiseliv og språk handler det tverrfaglige temaet bærekraftig utvikling om bevissthet om hvordan beslutninger og aktiviteter i reiselivssammenhenger påvirker samfunnet sosialt, økonomisk og miljømessig. Det innebærer å vurdere hvordan reiselivsutvikling kan bidra til ansvarlig bruk av fellesgoder og naturressurser."
+   ]
+  }
  ]
 }

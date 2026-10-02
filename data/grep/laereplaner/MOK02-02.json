@@ -192,5 +192,45 @@
     "Medieuttrykk 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i medieuttrykk innebærer å uttrykke og vurdere meninger, ideer og følelser i dialog med andre i tilknytning til produksjonsprosesser og medieprodukter. Det innebærer også å bruke og reflektere over fagterminologi i møte med fagmiljøer og når man presenterer egne og andres arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i medieuttrykk innebærer å produsere og kommunisere gjennom ulike sjangre. Videre innebærer det å dokumentere, presentere og vurdere egne og andres produkter ved hjelp av fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i medieuttrykk innebærer å lese og forstå spesifikasjoner, oppdragsbeskrivelser og retningslinjer for å kunne utføre et arbeid. Videre innebærer det å vurdere kommunikasjon og hvordan virkemidler og fortellerteknikk blir benyttet for å få fram et budskap."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i medieuttrykk innebærer å kunne beregne kostnader og priser ved produksjon og å forstå ulike verdier som beskriver form, proporsjoner, volum og dimensjoner i design."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i medieuttrykk innebærer å utforske, kommunisere, produsere og publisere medieprodukter og kommunikasjonsverktøy ved hjelp av digitale ressurser. Det innebærer å kunne bruke samhandlingsverktøy for å tilegne seg faglig kunnskap og å uttrykke egen kompetanse. Videre innebærer det å vise dømmekraft i valg og bruk av digitale ressurser"
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I medieuttrykk handler det tverrfaglige temaet demokrati og medborgerskap om å tenke kritisk og å utvise medborgerskap i arbeid med ulike medieuttrykk og mottakere. Det handler også om å håndtere meningsbrytninger og å respektere uenighet i medieproduksjoner. Videre handler det om at produksjon av medieuttrykk kan bidra til mediemangfold og kommunikasjon i samfunnet."
+   ]
+  }
  ]
 }

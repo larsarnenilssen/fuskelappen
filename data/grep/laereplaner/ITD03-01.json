@@ -92,5 +92,51 @@
     "Opplæringen i vg3 IT-driftsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over sju virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 IT-driftsfaget innebærer å gi uttrykk for meninger og ideer i dialog med aktuelle målgrupper, og lytte og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i kommunikasjon med andre, å reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål. Videre innebærer det å utøve brukerstøtte og veilede brukere og kunder."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 IT-driftsfaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål og til å planlegge og dokumentere IT-løsninger. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å rapportere og dokumentere arbeid. Å kunne skrive innebærer videre å lage kode, skjemaer, tabeller og modeller etter kjente standarder til en målgruppe og å bruke skriftlig dialog i kommunikasjon med brukerne."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 IT-driftsfaget innebærer å lese og forstå dokumentasjon og spesifikasjoner og å lese og forstå relevante lovverk og veiledninger i eget arbeid. Det innebærer også å sammenligne og tolke informasjon og å trekke faglige slutninger ut fra fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 IT-driftsfaget innebærer å forstå ulike verdier, størrelser og tekniske beregninger i systemene man jobber med. Det innebærer også å beregne kostnader og priser ved virksomhetens produksjon og IT-tjenester."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 IT-driftsfaget innebærer å velge og bruke digitale ressurser til å løse en oppgave. Det innebærer også å produsere og kommunisere ved hjelp av digitale ressurser. Digitale ferdigheter innebærer videre å vurdere troverdigheten til informasjon og å utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 IT-driftsfaget handler det tverrfaglige temaet demokrati og medborgerskap om hvordan datasikkerhet er en forutsetning for å ivareta trygg og sikker håndtering av data for individet, samfunnet og arbeidslivet. Videre handler det om forståelse for hvordan sikkerhetsbrudd kan skade personer og samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 IT-driftsfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvordan bærekraftige valg og handlinger i design og drift av IT-løsninger kan bidra positivt til lokale og globale miljø- og klimautfordringer. Det handler også om kunnskap om livsløpet til IT-utstyr og produksjon av IT-tjenester for å finne løsninger som kan redusere klimaproblemer."
+   ]
+  }
  ]
 }

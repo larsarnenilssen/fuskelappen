@@ -175,5 +175,45 @@
     "Markedsføring og ledelse 1: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen.\nMarkedsføring og ledelse 2: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i markedsføring og ledelse innebærer å uttrykke egne meninger, lytte og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagspråk i drøfting av faglige emner og problemstillinger, bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Ferdigheten innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i markedsføring og ledelse innebærer å bruke varierte skrivestrategier for å utforme fagtekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon, og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i markedsføring og ledelse innebærer å finne og kritisk vurdere eksplisitt og implisitt informasjon i tekster om kjente og ukjente emner. Det innebærer å sammenligne og tolke informasjon i ulike tekster, trekke faglige slutninger ut fra innholdet og å analysere og vurdere ulike perspektiv og formål med tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i markedsføring og ledelse innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og diagrammer. Det innebærer å bruke og bearbeide informasjon for å forstå og vise sammenhenger, sammenligne og presentere resultater av undersøkelser og analyser."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i markedsføring og ledelse innebærer å navigere og bruke digitale ressurser til å søke etter og behandle informasjon, kommunisere, og å presentere arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, og å vise til kilder slik at informasjonen lar seg etterprøve. Det innebærer også å utarbeide markedsføringsmateriell og å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer for nettbasert kommunikasjon, personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I markedsføring og ledelse handler det tverrfaglige temaet bærekraftig utvikling om å vurdere etiske og ansvarlige valg for virksomheter med tanke på sosiale, økonomiske og miljømessige forhold i samfunnet. Dette innebærer at virksomheter har et ansvar for å bidra til bærekraftig utvikling gjennom visjoner, forretningsidéer og overordnede mål og ved valg av tiltak og strategier i de ulike prosessene i markedsføringen."
+   ]
+  }
  ]
 }

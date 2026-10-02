@@ -219,5 +219,39 @@
     "10. trinn: Se gjeldende ordning for grunnskoleopplæring for voksne.\nVg2 yrkesfaglige utdanningsprogram: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsesdel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Privatisten skal også opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nVg3 studieforberedende utdanningsprogram: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsedel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nVg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen. Eksamen skal ha forberedelsedel. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i kvensk eller finsk som andrespråk er å kommunisere og samhandle med andre ved å lytte, forstå og delta i samtaler tilpasset eget språknivå. Utvikling av muntlige ferdigheter i kvensk eller finsk som andrespråk går fra å kunne leke og eksperimentere med språklyder og enkeltord til å bruke ferdighetene i stadig mer komplekse situasjoner. Dette innebærer å ta i bruk et gradvis bredere ordforråd og flere språklige strukturer, og å sette ord på og reflektere over opplevelser."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kvensk eller finsk som andrespråk er å kunne kommunisere skriftlig på en hensiktsmessig og forståelig måte. Utvikling av å kunne skrive i kvensk eller finsk som andrespråk går fra å kunne skrive enkeltord og fraser til å kunne produsere stadig mer komplekse tekster om faglige emner. Dette innebærer å beherske språkets formverk i stadig økende grad og å bruke et gradvis bredere ordforråd og flere språklige strukturer. Dette innebærer også å bruke hjelpemidler på en hensiktsmessig måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kvensk eller finsk som andrespråk er å forstå ulike typer tekster med ulike formål, både på papir og digitalt. Utvikling av å kunne lese i kvensk eller finsk som andrespråk går fra å kunne lese og forstå enkeltord og fraser til å kunne forstå stadig mer komplekse tekster om ulike emner. Dette innebærer å forstå stadig flere ord, uttrykk og språklige strukturer, og å kunne bruke hjelpemidler og kilder på en hensiktsmessig måte. Lesing i kvensk eller finsk som andrespråk skal gi rom for læring, opplevelse og tolkning."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i kvensk eller finsk som andrespråk er å kommunisere og samhandle med andre i digitale omgivelser, utvikle digital dømmekraft og bruke hensiktsmessige digitale verktøy. Utvikling av digitale ferdigheter i kvensk eller finsk som andrespråk går fra å kunne leke og eksperimentere med digitale ressurser til i økende grad å kunne bruke digitale ressurser selvstendig for å kommunisere muntlig og skriftlig, innhente kunnskap, utforske kultur og lage sammensatte produkter. Dette innebærer å utvikle kritisk dømmekraft i bruk av digitale medier og ressurser. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kvensk eller finsk som andrespråk handler det tverrfaglige temaet folkehelse og livsmestring om at elevene skal utvikle et positivt selvbilde og en trygg identitet som flerspråklige. Opplæringen i faget skal gi elevene en forståelse av språklig og kulturelt mangfold. Gjennom faget skal elevene få erfare at flerspråklighet er en ressurs både i skolen og ellers i samfunnet."
+   ]
+  }
  ]
 }

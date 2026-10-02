@@ -206,5 +206,57 @@
     "Smittevern, tannanatomi og fysiologi, kommunikasjon og samhandling og yrkesliv i tannhelsesekretærfaget: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 tannhelsesekretær innebærer å kommunisere tydelig og forståelig i møte med mennesker fra ulike kulturer og i ulike livssituasjoner. Det innebærer å tilpasse språket sitt til mottakeren og lytte til og vise respekt for den man snakker med. Videre innebærer det å bruke relevante faguttrykk og formidle fagkunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 tannhelsesekretær innebærer å skrive tydelig og forståelig ved journalføring og utarbeide planer, referater og presentasjoner. Det innebærer også å bruke fagterminologi i arbeidet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 tannhelsesekretær innebærer å forstå journaltekster, faglitteratur, lovtekster og statistikk. Det innebærer også å tilegne seg ny fagkunnskap og bruke denne i yrkesutøvelsen."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 tannhelsesekretær innebærer å beregne kostnader, fakturere og ta imot betaling etter pasientbehandling. Det handler videre om å føre regnskap og gjøre økonomiske beregninger i forbindelse med dagsoppgjør, månedsoppgjør og årsoppgjør."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 tannhelsesekretær innebærer å bruke digitale ressurser og elektroniske pasientjournalsystemer. Det innebærer også å finne fagrelevant informasjon, vurdere kilder kritisk og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 tannhelsesekretær handler det tverrfaglige temaet folkehelse og livsmestring om tann- og munnhelse. Videre handler det om sammenhengen mellom tann- og munnhelse og fysisk og psykisk helse. Det handler også om å veilede pasienter og brukere om sunne mat- og drikkevaner, egenomsorg og gode helsevalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 tannhelsesekretær handler det tverrfaglige temaet demokrati og medborgerskap om brukermedvirkning og om å ivareta pasientenes individuelle rettigheter. Videre handler det om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 tannhelsesekretær handler det tverrfaglige temaet bærekraftig utvikling om å ta miljøhensyn ved valg og bruk av materialer og utstyr og ved avfallshåndtering."
+   ]
+  }
  ]
 }

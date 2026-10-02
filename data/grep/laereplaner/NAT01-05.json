@@ -658,5 +658,57 @@
     "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i naturfag er å kunne delta i fagsamtaler og dele og utvikle kunnskap med naturfaglig innhold basert på observasjoner, erfaringer og faglig informasjon. Muntlige ferdigheter i naturfag innebærer også å bruke naturfaglige begreper for å beskrive, vise forståelse, formidle kunnskap, utvikle spørsmål, argumentere, forklare, reflektere og begrunne egne holdninger og valg. Utviklingen av muntlige ferdigheter i naturfag går fra å kunne lytte og samtale om opplevelser og observasjoner til å kunne presentere og diskutere stadig mer komplekse sammenhenger i faget og å kunne benytte seg av et stadig mer presist naturfaglig språk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i naturfag er å formulere spørsmål og hypoteser og skrive naturfaglige forklaringer basert på evidens og kilder. Det innebærer også å beskrive observasjoner og erfaringer og å formulere og argumentere for synspunkter. Utviklingen av skriveferdigheter i naturfag går fra å bruke tegninger og tekst til gradvis å ta i bruk mer presist naturfaglig språk, inkludert figurer og symboler. Dette innebærer å kunne skrive stadig mer komplekse tekster og benytte ulike teksttyper som bygger på kritisk og variert kildebruk tilpasset formål og mottaker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i naturfag er å kunne forstå naturfaglige begreper, symboler, figurer og argumenter gjennom arbeid med naturfaglige tekster. Lesing i naturfag innebærer også å utforske, identifisere, tolke og bruke informasjon fra ulike teksttyper og vurdere kritisk hvordan naturvitenskapelig informasjon framstilles og brukes i argumenter. Utviklingen av å lese i naturfag går fra å finne og bruke informasjon i tekster til å forstå tekster med stadig flere fagbegreper, symboler, figurer, tabeller og implisitt informasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i naturfag er å kunne innhente, bearbeide og framstille relevant tallmateriale. Regning i naturfag innebærer å bruke begreper og velge passende måleinstrumenter, måleenheter og formler for å løse naturfaglige problemstillinger. Regning i naturfag er også å kunne sammenligne, vurdere og argumentere for om beregninger, resultater og framstillinger er gyldige eller ikke. Utviklingen av å regne i naturfag går fra å bruke enkle metoder for å telle opp, sortere og klassifisere til å kunne vurdere valg av metoder, begreper, formler og måleinstrumenter. Elevene utvikler også regneferdigheter ved å lage mer avanserte framstillinger og ved å bruke regning i faglig argumentasjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i naturfag er å kunne bruke digitale verktøy til å utforske, registrere, beregne, visualisere, programmere, modellere, dokumentere og publisere data fra forsøk, feltarbeid og andres studier. Digitale ferdigheter er også å bruke søkeverktøy, beherske søkestrategier, kritisk vurdere kilder og velge ut relevant informasjon om naturfaglige emner. Utviklingen av digitale ferdigheter i naturfag går fra å kunne bruke enkle digitale verktøy til å i økende grad utvise selvstendighet og dømmekraft i valg og bruk av digitale verktøy og kilder. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I naturfag handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene kompetanse til å forstå sin egen kropp og ivareta sin egen fysiske og psykiske helse. Elevene skal kunne forholde seg kritisk til og bruke helserelatert informasjon til å ta gode og ansvarlige valg knyttet til helse, sikkerhet og miljø i både hverdags- og arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I naturfag handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal få grunnlag for å skille mellom vitenskapelig basert kunnskap og kunnskap som ikke er basert på vitenskap. Naturfag skal samtidig bidra til åpenhet for den erfaringsbaserte og tradisjonelle kunnskapen som samer har om naturen. Kompetanse i naturfag gir grunnlag for å forstå og være kritisk til argumentasjonen i samfunnsdebatten, og er viktig for at elevene skal kunne være aktive medborgere og bidra til en teknologisk og bærekraftig utvikling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I naturfag handler det tverrfaglige temaet bærekraftig utvikling om at elevene skal få kompetanse til å gjøre miljøbevisste valg og handlinger, og se disse i sammenheng med lokale og globale miljø- og klimautfordringer. Kunnskap om sammenhenger i naturen er nødvendig for å forstå hvordan vi mennesker er med på å påvirke den. Naturfaglig kompetanse kan bidra til at vi finner løsninger for å begrense klimautfordringene, bevare biologisk mangfold og forvalte jordas naturressurser på en bærekraftig måte."
+   ]
+  }
  ]
 }

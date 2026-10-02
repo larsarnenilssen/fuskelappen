@@ -112,5 +112,57 @@
     "Opplæringen i vg3 ortopediteknikkfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres innenfor en tidsramme over fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 ortopediteknikkfaget innebærer å drøfte faglige emner og prosesser. Det innebærer også å bruke fagterminologi og kommunisere og samhandle med pasienter og annet helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 ortopediteknikkfaget innebærer å føre journaler og dokumentere arbeid. Det innebærer også å skrive pasientnotater, epikriser og henvisninger til annet helsepersonell. Videre handler det om å kommunisere skriftlig med pasienter og kolleger. Det handler også om å bruke et presist fagspråk og å skrive fagtekster til fagblad eller tidsskrifter."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 ortopediteknikkfaget innebærer å sette seg inn i og å forstå faglitteratur, regelverk, prosedyrer, produktbeskrivelser og henvisninger fra annet helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 ortopediteknikkfaget innebærer å beregne dimensjon, tyngde og kraft ut fra aktivitetsnivå ved produksjon av ortopediske hjelpemidler. Videre handler det om å beregne forbruk av materialer, materialkostnader og tidsforbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 ortopediteknikkfaget innebærer å bruke digitale ressurser som verktøy i eget arbeid og i samarbeid med kolleger og annet helsepersonell. Det innebærer også å finne fagrelevant informasjon, vurdere kilder kritisk og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 ortopediteknikkfaget handler det tverrfaglige temaet folkehelse og livsmestring om at ortopediske hjelpemidler kan gjøre det lettere for pasienter og brukere å mestre eget liv og å kunne delta i samfunns- og yrkesliv."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 ortopediteknikkfaget handler det tverrfaglige temaet demokrati og medborgerskap om demokratiske rettigheter og likeverd for mennesker med nedsatt funksjonsevne. Det handler også om å utvikle demokratiske holdninger og verdier som gir godt samarbeid og forståelse på tvers av fagfelt i helsevesenet. Videre handler det om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 ortopediteknikkfaget handler det tverrfaglige temaet bærekraftig utvikling om å vurdere bruken av ressurser i framstilling av ortopediske hjelpemidler. Det handler om valg av materialer og komponenter som er miljøvennlige, og som reduserer forbruk. Videre handler bærekraftig utvikling om å forebygge skader hos brukere av ortopediske hjelpemidler og ivareta sikkerheten under produksjon av ulike produkter."
+   ]
+  }
  ]
 }

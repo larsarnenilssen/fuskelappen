@@ -104,5 +104,51 @@
     "Opplæringen i håndbokbinderfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i håndbokbinderfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i håndbokbinderfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og dokumentere arbeidsprosesser gjennom tekst og visualiseringer. Det handler videre om rettskriving og nøyaktig korrektur ved preging og forgylling av titler på bøker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i håndbokbinderfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder, illustrasjoner og ordre- og prosessbeskrivelser. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i håndbokbinderfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne materialforbruk, balanse, kontraster og avstander mellom de ulike elementene på bøker og esker. Det innebærer også å gjøre økonomiske beregninger i forbindelse med pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i håndbokbinderfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer. Videre handler det om å bruke digitale ressurser for å lage skisser og arbeidstegninger og løse praktiske og håndverksfaglige oppgaver."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I håndbokbinderfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle håndlag, gode arbeidsrutiner, evne til problemløsing og om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med oppgaver innenfor håndbokbinderfaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I håndbokbinderfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over produksjonsmetoder og miljøbevisst bruk av materialer og verktøy. Videre handler det om å utføre reparasjoner og å videreutvikle og skape nye håndbokbinderprodukter med god og varig kvalitet. Det handler også om at faget er en del av arbeidet med å sikre verdens kulturarv."
+   ]
+  }
  ]
 }

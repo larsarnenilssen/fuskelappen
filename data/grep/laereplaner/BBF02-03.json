@@ -164,5 +164,51 @@
     "Produksjon og materialer og konstruksjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 båtbygger innebærer å bruke fagspråk til å formidle egne ideer, løsninger og faglige vurderinger. Videre innebærer det å lytte til og gi respons i spontan og forberedt samtale med kunder, kolleger og andre samarbeidspartnere om tjenester og bestillinger. Elevene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 båtbygger innebærer å bruke tekst, bilder, tegn, symboler og tegninger til å kommunisere skriftlig med kunder og samarbeidspartnere. Det innebærer videre å bruke fagspråk og tilpasse tekster til ulike formål og mottakere. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 båtbygger innebærer å innhente, tolke, forstå og bruke fagressurser med tekst, bilder, tegn, symboler og arbeidstegninger. Det innebærer å tolke og systematisere informasjon i ulike tekster, tegninger, bilder og illustrasjoner for å trekke faglige slutninger og bruke kilder på en kritisk måte som kan etterprøves."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 båtbygger innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller og grafiske framstillinger. Det innebærer også å beregne areal og volumenheter bruke målestokk, og estimere tids- og materialforbruk i praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 båtbygger innebærer å bruke digitale ressurser til å produsere og bearbeide modeller og produkter. Videre innebærer det å bruke digitale ressurser til å innhente informasjon, kommunisere, tegne og å presentere og dokumentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 båtbygger handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med ulike båtbyggeroppgaver."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 båtbygger handler det tverrfaglige temaet bærekraftig utvikling om kritisk refleksjon rundt valg og bruk av materialer og produksjonsmetoder. Videre handler det om hvordan båtbygging kan påvirke miljøet under produksjon, når båten er i bruk, og gjennom båtens funksjon og holdbarhet. Det handler også om praktisk problemløsing og nyutvikling hvor man gjennom lokal tilpassing og ressursforvaltning retter oppmerksomhet mot gjenbruk, holdbar kvalitet, naturarv og kortreiste produkter. Det omfatter også resirkulering av materialer brukt i båtbygging og hvordan båtene kondemneres."
+   ]
+  }
  ]
 }

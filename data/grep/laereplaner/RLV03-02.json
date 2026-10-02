@@ -120,5 +120,51 @@
     "Opplæringa i vg3 reiselivsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 reiselivsfaget inneber å kunne kommunisere i ulike samanhengar og på tvers av kulturar. Det inneber å tilpasse sitt eige språk til mottakaren, innhaldet og formålet og å lytte til og vise respekt for andre. Vidare inneber det å bruke forteljarkunst og relevante faguttrykk i presentasjonen og formidlinga av produkt."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 reiselivsfaget inneber å uttrykkje seg skriftleg for å skape ulike tekstar som formidlar kunnskap om og ulike synspunkt på reiselivsrelaterte emne. Det inneber òg å utveksle informasjon og vere kjeldekritisk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 reiselivsfaget inneber å bruke kjeldekritikk og ulike lesestrategiar for å hente inn, tolke, velje ut og bruke skriftleg informasjon. Det inneber å halde seg orientert om reiselivsfaglege tema gjennom media, faglitteratur og andre relevante kjelder. Vidare inneber det å hente inn informasjon om økonomiske, marknadsmessige og andre forhold som gir grunnlag for berekraftige løysingar og utvikling i verksemda."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 reiselivsfaget inneber å hente inn, omarbeide, analysere og vurdere talmateriale og presentere desse i relevante oppsett. Vidare inneber det å utføre valutaberekningar og priskalkulasjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 reiselivsfaget inneber å hente inn, omarbeide, formidle og presentere informasjon om reiselivsprodukt gjennom bruk av digitale ressursar. Vidare inneber det å bruke kunde- og bookingsystem, samhandlingsverktøy og ulike plattformer for å løyse oppgåver og samarbeide digitalt. Det inneber òg å følgje reglar og normer for nettbasert kommunikasjon, vere kjeldekritisk og vurdere etiske spørsmål som gjeld personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 reiselivsfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å kunne byggje og handtere profesjonelle relasjonar med ulike gjester, kundar og kollegaer. Dette inneber kunnskap om ulike kulturar og evne til å setje grenser og respektere andre sine grenser i ulike arbeidssituasjonar. Vidare handlar folkehelse og livsmeistring om å sikre god fysisk og psykisk helse gjennom kunnskap om helse, miljø og sikkerheit og om pliktene og rettane arbeidstakaren og arbeidsgivaren har i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 reiselivsfaget handlar det tverrfaglege temaet berekraftig utvikling om korleis reiselivsnæringa kan bidra til eit meir berekraftig samfunn. I dette ligg det å reflektere over potensielle dilemma knytte til lønnsemd og berekraft på både kort og lang sikt. Vidare handlar det om å utforske reiselivsbransjen som ein global aktør og om korleis reiselivsverksemda kan bidra til ei berekraftig utvikling på verdsbasis."
+   ]
+  }
  ]
 }

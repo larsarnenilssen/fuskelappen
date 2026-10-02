@@ -116,5 +116,45 @@
     "Opplæringen i glassliperfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i glassliperfaget innebærer å bruke fagspråk i kommunikasjon med kolleger, kunder, formgivere og andre samarbeidspartnere. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og å bygge opp argumentasjon tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i glassliperfaget innebærer å kunne dokumentere arbeid og planlegge produksjonsprosesser tilpasset mottakeren, formgivere og samarbeidspartnere. Det innebærer å skrive tekster som kan synliggjøre ideer, valg og meninger i det praktiske arbeidet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i glassliperfaget innebærer å bruke faglitteratur, faglige spesifikasjoner og bestillinger for arbeidet og forstå faguttrykk og faglige framstillinger. Det innebærer også å lese og forstå visuelle fremstillinger som design og arbeidstegninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i glassliperfaget innebærer å kunne beskrive og tolke informasjon fra tallmateriale og å kunne kalkulere pris, vekt, volum og mengde. Det innebærer også å kunne utarbeide maler, stille inn maskiner og gjennomføre målinger og registreringer i samsvar med tegninger, skjemaer og standarder. Det innebærer også å kunne analysere lønnsomhet knyttet til arbeidsprosesser."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i glassliperfaget handler å bruke digitale ressurser til å designe produkter, innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I glassliperfaget handler det tverrfaglige temaet bærekraftig utvikling om å ta miljøbevisste valg i produksjonsprosessen. Videre handler det om valg av produksjonsmetoder og materialer som sikrer en energiøkonomiserende og bærekraftig produksjon av glassprodukter. Det innebærer kritisk tenkning knyttet til holdbarhet, reparasjon, vedlikehold og kunnskap om verdien av produktene i samfunnet."
+   ]
+  }
  ]
 }

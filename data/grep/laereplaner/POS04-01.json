@@ -114,5 +114,57 @@
     "Sosiologi og sosialantropologi: Privatisten skal opp til en muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i sosiologi og sosialantropologi innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner, og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Muntlige ferdigheter innebærer i tillegg å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i sosiologi og sosialantropologi innebærer å bruke fagspråk og varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det innebærer videre å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i sosiologi og sosialantropologi innebærer å finne og kritisk vurdere eksplisitt og implisitt informasjon i tekster. Det innebærer også å sammenligne, tolke og systematisere informasjon ut fra ulike tekster for å reflektere, vurdere og trekke faglige slutninger. Det innebærer videre å vurdere ulike perspektiv og formål med tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i sosiologi og sosialantropologi innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne, vurdere og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i sosiologi og sosialantropologi innebærer å bruke digitale ressurser til å søke etter, innhente og behandle informasjon, og å kommunisere og presentere eget arbeid på ulike måter. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, utøve kildekritikk og vise til kilder på en måte som lar seg etterprøve. Det handler også om å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I sosiologi og sosialantropologi handler det tverrfaglige temaet folkehelse og livsmestring om sammenhenger mellom identitetsdanning, sosialt samspill og kommunikasjon. Det handler om hvordan sosial bakgrunn og sosialiseringsprosesser påvirker identitet, levemåte og egen velferd. Det handler også om å reflektere over egne muligheter til å medvirke i og påvirke samfunnet gjennom ulike sosialiseringsprosesser."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I sosiologi og sosialantropologi handler det tverrfaglige temaet demokrati og medborgerskap om demokratiske verdier og demokratiske spilleregler i et mangfoldig samfunn, lokalt, nasjonalt og globalt. Det handler om også om sosiale strukturer og sosiale prosesser som fører til et aktivt medborgerskap og motvirker utenforskap, og å utvikle et aktivt og kritisk blikk på eksisterende sosiale strukturer."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I sosiologi og sosialantropologi handler det tverrfaglige temaet bærekraftig utvikling om hvordan sosiale handlinger har innvirkninger på og konsekvenser for livsgrunnlaget og sosiale omgivelser nå og i framtiden. Det handler også om sammenhengen mellom sosiale, teknologiske og økonomiske forskjeller og hvordan disse sammenhengene påvirker menneskers muligheter til å skape bærekraftige samfunn."
+   ]
+  }
  ]
 }

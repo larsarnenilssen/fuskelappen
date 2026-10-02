@@ -109,5 +109,51 @@
     "For å kunne meldes opp til fagprøven, skal kandidatene ha dokumentert sikkerhetsopplæring for truck klasse T1 og bestått sertifisert sikkerhetsopplæring for truck klasse T2 og T4"
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 logistikkfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og å beskrive og forklare ulike typer arbeidsoppgaver. Det innebærer også å bruke fagspråk og faguttrykk, fremme egne synspunkter og drøfte problemstillinger. Videre innebærer det å kommunisere med andre og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 logistikkfaget innebærer å bruke fagspråk i tekster tilpasset mottaker og formål. Det innebærer også å gjøre notater og planlegge, utforme og bearbeide tekster. Videre innebærer det å utforme rapporter og dokumentere logistikkoperasjoner i tråd med bransjens prosedyrer og krav."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg3 logistikkfaget innebærer å finne, tolke og sammenligne informasjon. Det innebærer også å sette seg inn i og bruke nasjonal og internasjonal fraktdokumentasjon og instruksjoner fra kunder og eksterne aktører. Videre innebærer det å forstå og kritisk vurdere faglig informasjon om varenes og godsets egenart og hvordan dette skal håndteres."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 logistikkfaget innebærer å tolke og forstå informasjon om vekt, volum, mål og tid og å utføre beregninger knyttet til transport og håndtering av gods. Det innebærer også å forstå og bruke nøkkeltall og lønnsomhetsvurderinger i bedriftens regnskap."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 logistikkfaget innebærer å bruke digitale og automatiserte systemer, applikasjoner og håndverktøy til å søke etter og innhente informasjon og å kommunisere med kunder, eksterne aktører og kolleger. Videre innebærer det å planlegge, produsere og dokumentere arbeidsoppgaver. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 logistikkfaget handler det tverrfaglige temaet folkehelse og livsmestring om kompetanse til å gjøre gode, langsiktige valg for å kunne håndtere psykososiale utfordringer og arbeide i faget over tid. Det handler også om hvordan skiftarbeid, fysisk krevende arbeid og stillesittende arbeid påvirker oss, og hvordan trening, gode søvnrutiner og et sunt kosthold kan fremme fysisk og psykisk helse."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 logistikkfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå og reflektere over hvordan ulike valg i forbindelse med person-, vare- og godstransport påvirker miljøet. Det handler også om å bruke grønn logistikk og å velge transport, emballasje og avfallshåndtering som reduserer miljøavtrykket til bedriften."
+   ]
+  }
  ]
 }

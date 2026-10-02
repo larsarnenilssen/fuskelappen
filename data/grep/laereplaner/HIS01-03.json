@@ -377,5 +377,51 @@
     "Vg3 påbygging til generell studiekompetanse for elever med samisk første- eller andrespråk eller kvensk eller finsk som andrespråk: Privatisten skal opp til muntlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i historiefaget er å kunne framstille et faglig emne presist og selvstendig og å bruke faglige begreper i egen argumentasjon. Det innebærer også å lytte til, vurdere og gi respons på andres innspill i faglige samtaler. Det betyr å kunne reflektere over meningsinnhold i tekster, bilder og film, å innta ulike perspektiver og å kunne gjøre rede for og sammenligne synspunkter i historisk materiale og litteratur."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i historiefaget er å kunne planlegge og utforme tekster med et fagspråk tilpasset formål og mottaker. Det betyr å kunne presentere et faglig emne presist og selvstendig og å kunne bruke faglige kunnskaper og begreper i selvstendige refleksjoner om forhold i fortiden. Å skrive er også en måte å utvikle og strukturere tanker på og en metode for å lære i faget. Å kunne skrive innebærer videre å bruke ulike kilder på en etterrettelig måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i historiefaget innebærer å utforske, tolke og reflektere over innholdet i historiefaglige tekster. Det innebærer også å tolke historisk materiale av ulik art, av ulikt opphav og fra ulike perioder. Å lese handler videre om å reflektere over hvordan verdier, holdninger og ståsted påvirker framstillingen av fortiden, og hvordan denne framstillingen brukes."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i historiefaget innebærer å kunne bruke digitale verktøy til å tilegne seg kunnskap og utvikle kompetanse i faget. Det innebærer å søke etter, vurdere og bruke informasjon kritisk og etterrettelig. Det innebærer også å bruke digitale kommunikasjons- og samarbeidsverktøy på en kreativ og hensiktsmessig måte og samtidig vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I historiefaget handler det tverrfaglige temaet folkehelse og livsmestring om å gi elevene forståelse av at de er historieskapt og historieskapende. Dette skal bidra til at elevene kan forstå, påvirke og mestre sitt eget liv. Elevene skal se at fortiden og hvordan den blir framstilt, er med på å forme hvordan mennesker og samfunn oppfatter seg selv og andre. Dette har betydning for utviklingen av en trygg identitet. Innsikt i hvordan mennesker har vært med på å skape historie, gir elevene forståelse av at også de kan være med på å forme sin samtid og framtid. En slik forståelse kan være med på å gi mening til livet og motivere til gode verdivalg. Historiefaget handler om hvordan mennesker i fortiden håndterte sine livsbetingelser, og elevene skal utvikle historisk empati. Dette skal gi elevene et grunnlag for å utvikle respekt for andre og for å ta ansvarlige livsvalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I historiefaget handler det tverrfaglige temaet demokrati og medborgerskap om å gi elevene forståelse av demokratiets opprinnelse og utvikling. Faget gir også elevene forståelse av hva som gjør demokratier levedyktige. Elevene skal kunne se at demokratiet ikke har vært og ikke er en selvfølge, men en følge av valg mennesker har tatt, tar og vil ta i framtiden. Gjennom historiefaget trenes elevene til å se et mangfold av perspektiver og til å forstå at mennesker har ulike prioriteringer, holdninger og verdier i ulike kontekster. Historiefaget bidrar dermed til å gjøre elevene bevisste på hvilke muligheter de har til å være aktive medborgere."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I historiefaget handler det tverrfaglige temaet bærekraftig utvikling om å gi elevene forståelse av samspillet mellom mennesket og naturen. Faget viser hvordan mennesket har forholdt seg til naturen, forvaltet og brukt ressurser. Historiefaget belyser også hvordan menneskelig aktivitet har endret livsvilkårene på jorda, samtidig som mennesket også har hatt evne til å løse problemer som har oppstått. Historiebevissthet gir elevene forståelse av at konsekvensene av egne valg blir andres historie. Dermed kan de også bli bevisste på sine egne muligheter til å bidra til et mer bærekraftig samfunn."
+   ]
+  }
  ]
 }

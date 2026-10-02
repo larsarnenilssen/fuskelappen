@@ -168,5 +168,51 @@
     "Produktutvikling, bransjelære og kommunikasjon, og produksjon og arbeidsliv: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 blomsterdekoratør inneber å uttrykkje eigne meiningar og å lytte til og gi respons i spontan og førebudd samtale. Det inneber å bruke fagspråk i drøfting og refleksjon over faglege emne, å byggje opp argumentasjon og å tilpasse munnleg tekst til mottakar og formål. Elevane utviklar munnlege ferdigheiter når dei drøftar, reflekterer og presenterer saker åleine og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 blomsterdekoratør inneber å kommunisere skriftleg gjennom tekst, bilete, illustrasjonar og arbeidsteikningar med kundar og samarbeidspartnarar. Det inneber vidare å skrive leselege handskrivne og digitale ordrar, å bruke fagspråk og å uttrykkje og grunngi arbeidsbeskrivingar, idear og løysingar i ulike arbeidsoppdrag."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 blomsterdekoratør inneber å innhente, reflektere over, tolke, forstå og bruke aktuelle fagressursar. Vidare inneber det å lese og forstå brukarrettleiingar, arbeids- og sikkerheitsinstruksar, arbeidsteikningar og andre yrkesrelevante beskrivingar med teikn og symbol."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 blomsterdekoratør inneber å berekne materialmengder, økonomisk forteneste og kostnader knytte til tenester. Det inneber òg å utforme arbeidsbeskrivingar ved hjelp av mål og proporsjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 blomsterdekoratør inneber å bruke digitale ressursar til å innhente informasjon, til å kommunisere og til å presentere eige arbeid. Det inneber òg å vurdere, omarbeide og stille saman informasjon, å utøve kjeldekritikk og å vise til kjelder. Vidare inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 blomsterdekoratør handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle identitet og om å gjere ansvarlege val i eige liv og i skapande arbeid. Det handlar vidare om å utvikle strategiar for å møte og meistre forventningar frå kundar. I tillegg handlar folkehelse og livsmeistring om å bli trygg i møte med medelevar, kundar og andre aktørar i faget, og om å handtere eigne tankar og kjensler som oppstår i møte med kundar i ulike livssituasjonar som treng rettleiing om blomsterfaglege produkt."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 blomsterdekoratør handlar det tverrfaglege temaet berekraftig utvikling om å gjere etiske og miljøbevisste val ved innkjøp og import av botaniske materiale og produkt, ved vedlikehald av verktøy og ved skapande arbeid. Det handlar òg om å forvalte, utnytte og gjenbruke ressursar i produksjon og om å reflektere over korleis berekraftige val kan påverke økonomien, samfunnet og naturen."
+   ]
+  }
  ]
 }

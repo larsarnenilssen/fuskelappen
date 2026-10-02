@@ -3472,3 +3472,99 @@ p.fagkort-tittel {
   border: 0;
   border-radius: 0;
 }
+
+/* ---------- Læreplanverket (avgjørelse 037) ---------- */
+/* Innholdsregisteret: hver del er en lenke, delene inni står innrykket med en strek. */
+.innholdsregister {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.innholdsregister a {
+  display: block;
+  padding: var(--rom-2) 0;
+  min-height: var(--trykkflate);
+  box-sizing: border-box;
+}
+
+.innholdsregister > li + li {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.innholdsregister .innholdsregister {
+  margin: 0 0 var(--rom-2) var(--rom-1);
+  padding-left: var(--rom-3);
+  border-left: 2px solid var(--farge-linje);
+  font-size: var(--str-s);
+}
+
+.innholdsregister .innholdsregister > li + li {
+  border-top: 0;
+}
+
+.innholdsregister .innholdsregister a {
+  padding: var(--rom-1) 0;
+  min-height: 0;
+}
+
+.lv-sok {
+  margin-bottom: var(--rom-2);
+}
+
+.lv-treff mark {
+  background: var(--farge-flate-2);
+  color: inherit;
+  font-weight: 650;
+}
+
+/* Overordnet del: ingressen litt større, delene inni som rader som åpnes. */
+.od-ingress {
+  font-size: var(--str-m);
+  font-weight: 600;
+}
+
+.od-sitat {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-2) var(--rom-3);
+  border-left: 4px solid var(--farge-merke);
+  background: var(--farge-flate-2);
+  font-style: italic;
+}
+
+.od-underdel {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.od-underdel-tittel {
+  margin: 0;
+  font-size: var(--str-m);
+}
+
+.od-underdel-knapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--rom-3);
+  width: 100%;
+  min-height: var(--trykkflate);
+  margin: 0;
+  padding: var(--rom-2) 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst);
+  font: inherit;
+  font-weight: 650;
+  text-align: left;
+  cursor: pointer;
+}
+
+.od-underdel-innhold {
+  margin: 0 0 var(--rom-3) var(--rom-1);
+  padding-left: var(--rom-3);
+  border-left: 2px solid var(--farge-linje);
+}
+
+.od-underdel .od-underdel-tittel {
+  font-size: var(--str-s);
+}

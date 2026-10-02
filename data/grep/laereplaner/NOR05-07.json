@@ -366,5 +366,51 @@
     "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i norsk for elever med tegnspråk er å kunne samhandle med andre gjennom å lytte/avlese, uttrykke seg og samtale, og å kunne kommunisere hensiktsmessig i ulike spontane og forberedte muntlige kommunikasjonssituasjoner gjennom tale og/eller tegn. Utviklingen av muntlige ferdigheter i norsk for elever med tegnspråk går fra den tidlige samhandlingen i lek og faglige aktiviteter til å uttrykke seg stadig mer presist i ulike norskfaglige samtaler og presentasjoner gjennom tale og/eller tegn."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i norsk for elever med tegnspråk er å kunne uttrykke seg i skjønnlitterære og sakpregede sjangre. Det innebærer å utvikle personlige skriftlige uttrykksformer og å beherske skrivestrategier, rettskriving og oppbygging av tekster. Å skrive er også en måte å utvikle og strukturere tanker på og en metode for å lære. Norsk for elever med tegnspråk har et særlig ansvar for opplæringen i å kunne skrive på norsk. Utviklingen av å kunne skrive i norsk for elever med tegnspråk går fra den grunnleggende skriveopplæringen til å planlegge, utforme og bearbeide tekster i ulike sjangre og tilpasset formål, medium og mottaker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i norsk for elever med tegnspråk innebærer å lese både på papir og digitalt. Det innebærer å kunne lese skjønnlitterære tekster, å beherske lesestrategier tilpasset formålet med lesingen og å kunne vurdere tekster kritisk. Lesing i norsk for elever med tegnspråk innebærer også å lese sammensatte tekster som kan inneholde skrift, bilder, tegninger, tall og andre uttrykksformer. Norsk for elever med tegnspråk har et særlig ansvar for opplæringen i å kunne lese på norsk. Utviklingen av å kunne lese i norsk for elever med tegnspråk går fra den grunnleggende avkodingen til å lese, tolke og reflektere over tekster i ulike sjangre, for ulike formål og av ulik lengde og kompleksitet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i norsk for elever med tegnspråk er å kunne finne, vurdere og bruke digitale ressurser i arbeid med tekst. Det innebærer å bruke digitale ressurser kreativt til å skape sammensatte tekster og å utvikle kritisk og etisk bevissthet om det å framstille seg selv og andre digitalt. Utviklingen av digitale ferdigheter i norsk for elever med tegnspråk går fra å lage enkle sammensatte tekster til å planlegge, utvikle og redigere sammensatte tekster basert på kunnskaper om hvordan de forskjellige uttrykksformene virker sammen. Utviklingen innebærer også å vise en stadig større grad av selvstendighet og dømmekraft i valg og bruk av digitale kilder. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I norsk for elever med tegnspråk handler det tverrfaglige temaet folkehelse og livsmestring om at elevene utvikler et positivt selvbilde og en trygg identitet som tospråklig i et flerspråklig og flerkulturelt samfunn. Å lese og reflektere over skjønnlitteratur og sakprosa kan både bekrefte og utfordre elevenes selvbilde og dermed bidra til deres identitetsutvikling og livsmestring. Dette kan bidra til at elevene både kan håndtere medgang og motgang og personlige og praktiske utfordringer. Verdivalg og betydningen av å sette grenser og å respektere andres hører med i faget og i temaet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I norsk for elever med tegnspråk handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes muntlige og skriftlige retoriske ferdigheter slik at de kan gi uttrykk for egne tanker og meninger og delta i samfunnsliv og demokratiske prosesser. Elevene skal øve opp evnen til kritisk tenkning gjennom arbeid med tekster og ytringer, og de skal lære seg å håndtere meningsbrytninger gjennom refleksjon, dialog og diskusjon. Lesing av skjønnlitteratur og sakprosa gir elevene innblikk i andre menneskers livssituasjon og utfordringer. Dette kan bidra til at de utvikler respekt for andre menneskers synspunkter og perspektiver, og det kan legge grunnlag for konstruktiv samhandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I norsk for elever med tegnspråk handler det tverrfaglige temaet bærekraftig utvikling om at elevene utvikler kunnskap om hvordan tekster framstiller natur, miljø og livsbetingelser, lokalt og globalt. Gjennom å møte fagets tekstmangfold, lese kritisk og delta i dialog kan elevene utvikle evne til å forstå og håndtere meningsmotsetninger og interessekonflikter som kan oppstå når samfunnet endres i en mer bærekraftig retning. Norsk for elever med tegnspråk skal bidra til å ruste elevene til å handle og påvirke samfunnet gjennom språket."
+   ]
+  }
  ]
 }

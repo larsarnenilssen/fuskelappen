@@ -112,5 +112,45 @@
     "Opplæringen i vg3 brønnfaget, havbunnsinstallasjoner skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 brønnfaget, havbunnsinstallasjoner innebærer å lytte til og å gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det handler om å kunne kommunisere om risikovurderinger og faglige løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 brønnfaget, havbunnsinstallasjoner innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det handler også om å utarbeide rapporter og prosedyrer på fagspråk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 brønnfaget, havbunnsinstallasjoner innebærer å finne og vurdere innholdet i tekster, og å forstå og bruke arbeidsbeskrivelser, prosedyrer og regelverk. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 brønnfaget, havbunnsinstallasjoner innebærer å hente ut, beskrive og tolke tallmateriale og å regne om enheter for dimensjoner, trykk og moment. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 brønnfaget, havbunnsinstallasjoner innebærer å bruke digitale styringssystemer, innhente dokumentasjon og kommunisere på nettet. Videre handler det om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 brønnfaget, havbunnsinstallasjoner handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvilke dilemmaer som kan oppstå i bruk av teknologi og utnyttelse og etisk drift av naturens ressurser. Det handler også om kritisk vurdering av konsekvenser av utvinning og bruk av fossile energikilder og å reflektere over driften av olje- og gassutvinning på norsk sokkel og hva som kan bidra til å oppnå en bærekraftig utvikling i bransjen."
+   ]
+  }
  ]
 }

@@ -154,5 +154,39 @@
     "Engelsk 2: Privatisten skal opp til skriftlig og muntlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i engelsk programfag innebærer å skape mening gjennom å lytte, tale og samtale ved å bruke det engelske språket på et avansert nivå. Det handler om å videreformidle informasjon, tilpasse språket til formål, mottaker og situasjon og å velge egnede strategier. Utviklingen av muntlige ferdigheter i engelsk handler om å bruke det muntlige språket mer presist og nyansert til å kommunisere om forskjellige emner, i formelle og uformelle situasjoner og til ulike mottakere med ulik språklig bakgrunn. Dette innebærer også å lytte til, forstå og drøfte forskjellige emner og problemstillinger for å tilegne seg fagkunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i engelsk programfag innebærer å kunne uttrykke ideer og meninger på en tilpasset og hensiktsmessig måte i ulike typer tekster, på papir og digitalt. Å skrive handler om å planlegge, utforme og bearbeide tekster som kommuniserer, og å tilpasse språket til formål, mottaker og situasjon og velge egnede skrivestrategier. Det innebærer også å bruke ulike setningsstrukturer, variert ordforråd og egnet tekstbinding. Skriveferdigheter i engelsk programfag handler om å skape ulike typer klare, velstrukturerte og detaljerte tekster om komplekse emner som formidler synspunkter og kunnskap. Det innebærer også å bruke ulike typer kilder på en kritisk og etterrettelig måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i engelsk programfag innebærer å skape mening i ulike typer autentiske og oversatte, skjønnlitterære og fagspesifikke tekster. Det innebærer å lese varierte typer tekster og å kunne forstå et bredt spekter av krevende og komplekse tekster ved hjelp av egnede lesestrategier. Det innebærer også å hente ut og tolke ulike typer av eksplisitt og implisitt informasjon. Leseferdigheter i engelsk programfag innebærer å lese varierte og komplekse tekster med flyt og forståelse og i stadig større grad kunne reflektere over og vurdere ulike typer tekster kritisk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i engelsk programfag innebærer å kunne bruke digitale medier og ressurser for å styrke språklæringen, tilegne seg relevant kunnskap i engelskfaget, og skape ulike typer tekster. Det innebærer å opptre kritisk og reflektert i engelskspråklige digitale uttrykksformer og i kommunikasjon med andre. Digitale ferdigheter innebærer å tilegne seg kunnskap ved å innhente, utforske og kritisk vurdere informasjon fra ulike engelskspråklige kilder på en selvstendig måte."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I engelsk programfag handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes forståelse for at deres oppfatning av verden er kulturavhengig. Ved å lære engelsk kan elevene møte ulike samfunn og kulturer gjennom å kommunisere med andre over hele verden, uavhengig av språklig og kulturell bakgrunn. Dette kan bidra til å åpne for flere måter å tolke verden på og være med på å skape nysgjerrighet og engasjement, og medvirke til å forebygge fordommer."
+   ]
+  }
  ]
 }

@@ -116,5 +116,57 @@
     "Det er ikke sluttvurdering i modul norsk og samfunnskunnskap for spårklige minoriteter."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i norsk og samfunnskunnskap for språklige minoriteter innebærer å kunne samhandle med andre gjennom å lytte aktivt og uttrykke seg hensiktsmessig og presist i ulike kommunikasjonssituasjoner. Slik samhandling innebærer å videreutvikle innspill fra andre og å formulere og fremme egne meninger. Muntlige ferdigheter er også å drøfte og utforske problemstillinger gjennom samtaler med andre. Den grunnleggende ferdigheten innebærer også å bruke språket til å reflektere over egne læringsprosesser. Faget norsk og samfunnskunnskap for språklige minoriteter har et særlig ansvar for utviklingen av muntlige ferdigheter på norsk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i norsk og samfunnskunnskap for språklige minoriteter innebærer å kommunisere skriftlig i ulike sjangre. Det innebærer å utvikle skrivestrategier, rettskriving og bruk av fagbegreper. Det innebærer også å utforme tekster tilpasset mottaker, innhold og formål. Å kunne skrive betyr også å bruke kilder på en kritisk og etterprøvbar måte. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger. Skriving er også et redskap for å skape mening, videreutvikle egne tanker og vurdere egen læring. Faget norsk og samfunnskunnskap for språklige minoriteter har et særlig ansvar for utviklingen av skriftlige ferdigheter på norsk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i norsk og samfunnskunnskap for språklige minoriteter innebærer å lese, forstå og reflektere over tekster i ulike sjangre for læring og opplevelse. Det innebærer å bruke forskjellige lesestrategier for å finne og vurdere eksplisitt og implisitt informasjon i ulike tekster og å bruke kilder på en kritisk og etterprøvbar måte. Videre innebærer ferdigheten å sammenligne, tolke og systematisere informasjon i ulike tekster for å trekke faglige slutninger. Faget norsk og samfunnskunnskap for språklige minoriteter har et særlig ansvar for utviklingen av å kunne lese på norsk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i norsk og samfunnskunnskap for språklige minoriteter innebærer å innhente, tolke og analysere data og å vurdere informasjon som er fremstilt i tabeller, diagrammer og grafer. Det innebærer også å bruke og bearbeide tall og statistikk for å forstå og vise sammenhenger i økonomi og forbruk og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i norsk og samfunnskunnskap for språklige minoriteter innebærer å bruke digitale ressurser for å kommunisere, innhente og sammenstille informasjon. Videre innebærer ferdigheten å bruke digitale ressurser til å utvikle språket og til å planlegge og bearbeide egne tekster. Den grunnleggende ferdigheten er også å utvise kildekritikk og digital dømmekraft, ved å følge regler for personvern, opphavsrett og nettvett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I norsk og samfunnskunnskap for språklige minoriteter handler det tverrfaglige temaet folkehelse og livsmestring om språk for å utforske og uttrykke egne tanker, erfaringer og følelser. Temaet innebærer mestring av mellommenneskelige relasjoner i språklig og kulturelt sammensatte fellesskap. Videre handler det om å ta valg som bidrar til god psykisk og fysisk helse. Slike valg innebærer refleksjoner knyttet til blant annet kjønn og seksualitet, personlig økonomi og digital dømmekraft. Folkehelse og livsmestring innebærer også kunnskap om egen og andres sikkerhet og miljø i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I norsk og samfunnskunnskap for språklige minoriteter handler det tverrfaglige temaet demokrati og medborgerskap om innsikt i og kunnskap om demokratiets forutsetninger og verdier. Videre handler det om deltakelse i demokratiske prosesser i samfunn- og arbeidsliv. Å delta i demokratiet innebærer respekt for at andre har ulike meninger, verdier og livsvalg, og samtidig å kunne ta selvstendige og kritiske avgjørelser. Demokrati og medborgerskap innebærer også forståelse av sammenhengen mellom rettigheter og plikter, både som medborger og som arbeidstaker."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I norsk og samfunnskunnskap for språklige minoriteter handler det tverrfaglige temaet bærekraftig utvikling om forståelse av sosiale, økonomiske og miljømessige forhold i et lokalt og globalt perspektiv. Temaet skal gi innsikt i sammenhenger og utviklingstrekk knyttet til bærekraft i arbeidslivet og samfunnet ellers. Videre handler det om å forstå sammenhenger mellom individuelle valg, samfunnsstrukturer og tålegrensene i naturen, for å bidra til en mer bærekraftig samfunnsutvikling."
+   ]
+  }
  ]
 }

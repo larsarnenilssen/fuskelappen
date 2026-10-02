@@ -112,5 +112,57 @@
     "Opplæringen i vg3 togelektrikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 togelektrikerfaget innebærer å lytte til og gi respons i samtale med involverte parter i arbeid med drift og vedlikehold på elektriske og elektroniske anlegg og utstyr på skinnegående materiell. Det innebærer å bruke fagterminologi og tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 togelektrikerfaget innebærer å bruke fagterminologi, symboler og prefikser i planlegging og utarbeidelse av dokumentasjon. Det innebærer også å kommunisere skriftlig tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 togelektrikerfaget innebærer å søke og vurdere informasjon i fagtekster, teknisk dokumentasjon, gjeldende regelverk og instrukser. Det innebærer også å sammenligne og tolke informasjon, trekke faglige slutninger og å holde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 togelektrikerfaget innebærer å utføre matematiske beregninger i planlegging og dimensjonering, og vurdere måleresultater opp mot beregnede verdier. Det innebærer også å tolke informasjon fra tabeller og diagrammer. Videre innebærer det å beregne ulike verdier og bruke symboler og prefikser. Det innebærer også å foreta økonomiske beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 togelektrikerfaget innebærer å anvende digitale ressurser og tjenester til å planlegge, utføre og verifisere arbeidsoppdrag. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og vise god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 togelektrikerfaget handler det tverrfaglige temaet folkehelse og livsmestring om betydningen av å oppleve mestring og stolthet over eget arbeid med drift og vedlikehold på elektriske og elektroniske anlegg og utstyr på skinnegående materiell som grunnlag for god psykisk helse. Det handler også om verdien av å oppleve tilhørighet og trygghet i et arbeidsmiljø preget av samarbeid med andre, uavhengig av kjønn og kultur. Det handler også om valg av arbeidsmetoder og bruk av verneutstyr for å unngå sykdom og helsemessige utfordringer."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 togelektrikerfaget handler det tverrfaglige temaet demokrati og medborgerskap om å delta i bedriftsdemokratiet og utvikle kunnskap om det organiserte arbeidslivets forutsetninger, verdier og regler. Det handler også om å utvikle kunnskap om arbeidstakers plikter og rettigheter og hvordan trepartssamarbeidet er med på å utvikle arbeidslivet. Videre handler det om hvordan et regulert arbeidsliv bidrar til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 togelektrikerfaget handler det tverrfaglige temaet bærekraftig utvikling om kunnskap til å foreta etiske og ansvarlige valg av produkter og løsninger i arbeidsoppdragene. Det handler videre om å utvikle kompetanse til å håndtere avfall på en miljøvennlig og bærekraftig måte. Det handler også om hvilke miljømessige konsekvenser ressursbruken i togelektrikerfaget har lokalt, regionalt og globalt, hvilke dilemmaer som kan oppstå ved utbygging og bruk av teknologi, og hvordan disse kan håndteres."
+   ]
+  }
  ]
 }

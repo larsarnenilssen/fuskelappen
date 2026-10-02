@@ -145,5 +145,57 @@
     "Musikk fordypning 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i musikk fordypning innebærer å beskrive, formidle og drøfte kunstneriske intensjoner til andre i egenarrangert og -komponert musikk, ved bruk av relevant fagspråk. Det handler også om å bruke gehør og stemme for å gjengi et musikalsk forløp og i utprøving av egen musikk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i musikk fordypning innebærer å gjengi musikalske elementer og virkemidler ved hjelp av notasjon. Det innebærer også å bruke notasjon for å lagre og formidle musikalske ideer og egenarrangert og -komponert musikk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i musikk fordypning innebærer å tilegne seg musikk ved hjelp av notasjon og å utvikle lyttestrategier for å oppfatte og gjenkjenne musikalske elementer og virkemidler i klingende musikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i musikk fordypning innebærer å oppfatte, forstå og bruke form, rytmiske mønstre og tonale strukturer i kreativt arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i musikk fordypning innebærer å bruke digitale ressurser i skapende arbeid og å gjøre opptak av musikk. Videre handler digitale ferdigheter om å utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I musikk fordypning handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og selvbestemmelse gjennom kreative prosesser. Fagets vektlegging av skapende aktivitet gir elevene mulighet til å utvikle selvtillit og mot til å eksperimentere og å stå for egne ideer. Slik legger faget til rette for at elevenes ulike musikalske identiteter anerkjennes, og gir mulighet til å reflektere over hvordan egen skapende virksomhet kan bidra til økt livskvalitet for seg selv og andre. Arbeid med folkehelse og livsmestring i faget legger til rette for skaperglede, engasjement og utforskertrang. Gjennom å skape musikk alene og sammen med andre kan elevene få mulighet til å utforske hvordan musikk kan uttrykke og bearbeide følelser."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I musikk fordypning handler det tverrfaglige temaet demokrati og medborgerskap om at elevene arbeider sammen mot felles mål i kollektive skapende prosesser, der de må øve seg i å gi og ta plass. Arbeid med demokrati og medborgerskap i faget gir rom for individuelle uttrykksmåter, stemmer og erfaringer, og det legger til rette for å utvikle respekt for mangfold og ulike meninger. Musikk fordypning stimulerer til å utfordre stereotypiske holdninger og rolleforventninger, og utvikle forståelse for demokratiske prosesser, samspill og samskaping."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I musikk fordypning handler det tverrfaglige temaet bærekraftig utvikling om å stimulere til kritisk tenkning rundt bærekraftig utvikling på musikkfeltet. Temaet innebærer å tilegne seg kunnskap om både positive og negative miljø- og klimamessige, økonomiske og sosiale konsekvenser ved bruk av musikkteknologi i skapende arbeid. Det omfatter å reflektere over hvordan digitale ressurser kan bidra til å styrke en bærekraftig utvikling og skape nye former for fellesskap. Det handler også om å tenke kritisk om forbruk og gjenbruk av elektronisk utstyr og ressurskrevende teknologi i skapende arbeid."
+   ]
+  }
  ]
 }

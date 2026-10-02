@@ -124,5 +124,45 @@
     "Opplæringa i vg3 røyrleggjarfaget skal avsluttast med ein sveineprøve. Alle skal opp til sveineprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 røyrleggjarfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 røyrleggjarfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 røyrleggjarfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar, standarar og toleransestandarar og regelverk. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 røyrleggjarfaget inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Vidare inneber det måltaking og utrekning av volum og dimensjonar. Å gjere økonomiske berekningar i samband med drift og pristilbod er òg ei grunnleggjande ferdigheit."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 røyrleggjarfaget inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter i faget å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 røyrleggjarfaget handlar det tverrfaglege temaet berekraftig utvikling om å utnytte restenergi og bruke framtidsretta tekniske løysingar for å redusere vass- og energiforbruket. Det handlar òg om å velje energisparande tiltak ut frå miljøomsyn og ta i bruk materiale som gir energieffektive konstruksjonar. Ved å utdanne yrkesutøvarar som skaper bustader med livsløpsstandard, bidreg faget òg til ei berekraftig utvikling."
+   ]
+  }
  ]
 }

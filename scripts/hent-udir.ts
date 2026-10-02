@@ -6,6 +6,10 @@
 //   2026–2027. Hvert skoleår får egen fil, så appen kan bruke riktig fordeling for datoen.
 // - Hentingen ser også etter rundskrivet for neste år (f.eks. Udir-1-2027). Finnes det, står det i kontrollsaken,
 //   og adressen oppdateres i kilderegisteret. Da legges det nye skoleåret ved siden av det gamle.
+// - Får et nytt rundskriv et annet navn eller en annen adresse, finner ikke sjekken over det. Men Udir flytter det
+//   gamle til «tidligere rundskriv». Sender udir.no hentingen videre dit, står det i kontrollsaken (flyttetTil).
+// - Teksten øverst i rundskrivet («Dette rundskrivet erstatter …») og datoen det sist ble endret, sjekkes som egen
+//   kilde (udir-fag-og-timefordeling-forside). Den må ha samme adresse som denne (forsideAvvik).
 // - Feiler hentingen, eller mangler tabeller, kastes en feil før noe skrives, og forrige fil blir stående.
 // Endringene lagres i .generert/udir-endringer.json, som kildesjekken tar med i rapporten.
 // Bruk: npm run hent:udir
@@ -20,6 +24,7 @@ import { lesTabeller, validerFagfordeling } from './udir/fagfordeling.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 export const KILDE = 'udir-fag-og-timefordeling';
+export const FORSIDE = 'udir-fag-og-timefordeling-forside';
 
 /** Sidene i vedlegg 1 med tabellene for videregående, relativt til adressen til rundskrivet. */
 export const SIDER = ['vedlegg-1/3vgo/3.3studieforberedende/', 'vedlegg-1/3vgo/3.4-yrkesfaglig/', 'vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/'];
@@ -32,13 +37,35 @@ export function rundskrivFraAdresse(url: string): { rundskriv: string; aar: numb
   return { rundskriv: `Udir-1-${aar}`, aar, skolear: `${aar}-${aar + 1}` };
 }
 
-async function hentSide(url: string): Promise<string> {
+/**
+ * Adressen udir.no sendte hentingen videre til, eller null om siden lå der den skulle. Når et nytt rundskriv kommer,
+ * flytter Udir det gamle til …/tidligere-rundskriv/udir-1-ÅÅÅÅ/. Innholdet står der uendret, så uten denne sjekken
+ * ville hentingen gå uten feil og melde «ingen endringer».
+ */
+export function flyttetTil(adresse: string, endelig: string): string | null {
+  const sti = (u: string) => new URL(u).pathname.replace(/\/+$/, '').toLowerCase();
+  return sti(adresse) === sti(endelig) ? null : endelig;
+}
+
+/** Melding hvis forsiden av rundskrivet sjekkes på en annen adresse enn tabellene hentes fra. */
+export function forsideAvvik(kilder: readonly { id: string; url: string }[]): string | null {
+  const tabeller = kilder.find((k) => k.id === KILDE);
+  const forside = kilder.find((k) => k.id === FORSIDE);
+  if (!tabeller) return null;
+  if (!forside) return `Kilden ${FORSIDE} mangler i kilderegisteret, så teksten øverst i rundskrivet sjekkes ikke.`;
+  const sti = (u: string) => new URL(u).pathname.replace(/\/+$/, '').toLowerCase();
+  return sti(forside.url) === sti(tabeller.url)
+    ? null
+    : `Teksten øverst i rundskrivet sjekkes på ${forside.url}, men tabellene hentes fra ${tabeller.url}. Adressen til ${FORSIDE} må oppdateres.`;
+}
+
+async function hentSide(url: string): Promise<{ html: string; url: string }> {
   let feil: unknown;
   for (let forsok = 1; forsok <= 3; forsok++) {
     try {
       const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' }, signal: AbortSignal.timeout(60_000) });
       if (!svar.ok) throw new Error(`${url} svarte ${svar.status}`);
-      return await svar.text();
+      return { html: await svar.text(), url: svar.url || url };
     } catch (e) {
       feil = e;
       await new Promise((r) => setTimeout(r, 2000 * forsok));
@@ -82,7 +109,15 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const base = kilde.url.endsWith('/') ? kilde.url : `${kilde.url}/`;
   const { rundskriv, aar, skolear } = rundskrivFraAdresse(base);
   const sider = SIDER.map((s) => new URL(s, base).toString());
-  const tabeller = (await Promise.all(sider.map(hentSide))).flatMap(lesTabeller);
+  const adresser = [base, ...sider];
+  const svar = await Promise.all(adresser.map(hentSide));
+  const tabeller = svar.slice(1).flatMap((h) => lesTabeller(h.html));
+  // Er rundskrivet flyttet (f.eks. til «tidligere rundskriv»)? Forsiden og tabellsidene sjekkes.
+  const flyttet = svar.map((h, i) => flyttetTil(adresser[i] ?? base, h.url)).find((u) => u !== null) ?? null;
+  const varsler = [
+    ...(flyttet ? [`${rundskriv} ligger ikke lenger på adressen i kilderegisteret. udir.no sender videre til ${flyttet}. Det betyr som regel at et nytt rundskriv har erstattet det, også om det har fått et annet navn. Det nye må finnes og legges inn.`] : []),
+    ...[forsideAvvik(register.kilder)].filter((m): m is string => m !== null),
+  ];
   const ny: Fagfordeling = { kilde: KILDE, rundskriv, skolear, hentet: new Date().toISOString(), lisens: 'NLOD 2.0', sider, tabeller, merknader: [] };
   ny.merknader = validerFagfordeling(ny);
   fagfordelingSkjema.parse(ny);
@@ -104,6 +139,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     writeFileSync(fil, fagfordelingJson(ny));
   }
   mkdirSync(join(rot, '.generert'), { recursive: true });
-  writeFileSync(join(rot, '.generert/udir-endringer.json'), `${JSON.stringify({ rundskriv, skolear, endret, forste: !forrige, endringer, nyVersjon }, null, 2)}\n`);
-  console.log(`${rundskriv} (${skolear}): ${tabeller.length} tabeller, ${ny.merknader.length} merknader. ${forrige ? `${endringer.length} endringer.` : 'Første henting.'}${nyVersjon ? ` Nytt rundskriv finnes: ${nyVersjon}.` : ''}`);
+  writeFileSync(join(rot, '.generert/udir-endringer.json'), `${JSON.stringify({ rundskriv, skolear, endret, forste: !forrige, endringer, nyVersjon, varsler }, null, 2)}\n`);
+  console.log(`${rundskriv} (${skolear}): ${tabeller.length} tabeller, ${ny.merknader.length} merknader. ${forrige ? `${endringer.length} endringer.` : 'Første henting.'}${nyVersjon ? ` Nytt rundskriv finnes: ${nyVersjon}.` : ''}${varsler.map((v) => ` ${v}`).join('')}`);
 }

@@ -201,5 +201,45 @@
     "Opplæringen i produksjonsteknikkfaget - modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 produksjonsteknikkfaget (PRT03-02). Alle skal opp til fagprøven som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 produksjonsteknikkfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer å kommunisere ved bruk av fagterminologi, forstå uttrykksmåter og reflektere over og drøfte faglige problemstillinger og helse-, miljø- og sikkerhetsrisiko med kolleger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 produksjonsteknikkfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å planlegge, dokumentere og rapportere arbeidsoppdrag, og å utforme planer, rapporter, måleresultater og avviksbeskrivelser i forbindelse med produksjonsarbeidet. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve"
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 produksjonsteknikkfaget innebærer å finne og vurdere informasjon i ulike tekster, og forstå skriftlig og visuell informasjon. Det innebærer også å forstå gjeldende prosedyrer og reglement for bedriften, forstå arbeidsordrer, produksjons- og vedlikeholdsplaner."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 produksjonsteknikkfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale for å foreta beregninger av kvalitet, materialforbruk og produksjonskostnader og å vurdere måleresultater. Det innebærer også å bruke og bearbeide informasjon og å vise sammenhenger knyttet til beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 produksjonsteknikkfaget innebærer å bruke digitale ressurser for planlegging, dokumentasjon, kommunikasjon og for å styre maskiner i produksjonen. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 produksjonsteknikkfaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan bruk av teknologi og industrielle prosesser påvirker bærekraften i et samfunn. Videre handler det om kunnskap om og forståelse for hvordan ulike prosesser og nye måter å bruke ulike materialer på kan endre hvor bærekraftig produksjonen er. Det handler også om hvordan valg av energi fra ulike kilder kan påvirke både prosesser og produksjonsmetoder, avhengig av materialvalg og i hvilken grad begrensede ressurser utnyttes på en bærekraftig måte."
+   ]
+  }
  ]
 }

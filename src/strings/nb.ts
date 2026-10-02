@@ -2,6 +2,7 @@
 // Plassholdere skrives {navn} og fylles inn av t().
 import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
+import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 
 export const nb = {
@@ -39,7 +40,7 @@ export const nb = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Læreplanverk og opplæringsløp',
+    fag: 'Læreplanverket',
     elev: 'Elever og opplæring',
     skolemiljo: 'Skolemiljø',
     felles: 'Oppslag',
@@ -62,6 +63,7 @@ export const nb = {
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbud',
+      laereplanverk: 'Overordnet del',
       side: 'Side',
     },
   },
@@ -247,9 +249,13 @@ export const nb = {
     offlineKlar: 'Appen kan nå brukes uten nett.',
   },
   moduler: {
+    laereplanverket: {
+      navn: 'Overordnet del',
+      beskrivelse: 'Verdier og prinsipper, grunnleggende ferdigheter og tverrfaglige temaer.',
+    },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Utdanningsprogram, tilbud på hvert trinn, og fag og timer i hvert tilbud.',
+      beskrivelse: 'Fag- og timefordelingen og tilbudsstrukturen: utdanningsprogram, tilbud på hvert trinn, og fag og timer.',
     },
     begreper: {
       navn: 'Begreper',
@@ -257,7 +263,7 @@ export const nb = {
     },
     fag: {
       navn: 'Fag og læreplaner',
-      beskrivelse: 'Fagkoder, kompetansemål, vurdering og årstimetall.',
+      beskrivelse: 'Læreplanene for fag: fagkoder, kompetansemål, vurdering og årstimetall.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
@@ -267,6 +273,7 @@ export const nb = {
   arbeidstid: arbeidstidNb,
   fag: fagNb,
   opplaeringslop: opplaeringslopNb,
+  laereplanverket: laereplanverketNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',

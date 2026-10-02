@@ -362,5 +362,51 @@
     "Vg3 påbygging til generell studiekompetanse: Privatisten skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i norsk for elever med samisk som førstespråk er å kunne samhandle med andre gjennom å lytte og forstå, fortelle og samtale. Det innebærer å bruke retoriske ferdigheter og å uttrykke seg hensiktsmessig i ulike spontane og forberedte kommunikasjonssituasjoner, inkludert å kunne planlegge og framføre ulike typer muntlige presentasjoner tilpasset mottakerne. Norsk for elever med samisk som førstespråk har et særlig ansvar for utviklingen av muntlige ferdigheter på norsk. Utviklingen av muntlige ferdigheter handler om å mestre de norske språklydene og går fra å kunne bruke språket til å fortelle om dagligdagse opplevelser til å uttrykke egne meninger og til å kunne uttrykke seg med et variert ordforråd om komplekse faglige emner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i norsk for elever med samisk som førstespråk er å kunne uttrykke seg i skjønnlitterære og sakpregede sjangre og å kunne planlegge, utforme og bearbeide tekster. Det innebærer å beherske skrivestrategier, rettskriving og oppbygging av tekster. Å skrive er også en måte å utvikle og strukturere tanker på og en metode for å lære. Norsk for elever med samisk som førstespråk har et særlig ansvar for opplæringen i å kunne skrive på norsk. Utviklingen av det å kunne skrive i norsk for elever med samisk som førstespråk går fra å lære lyder og bokstaver som er annerledes på norsk, til å planlegge, utforme og bearbeide tekster i ulike sjangre og tilpasset formål, medium og mottaker. Skriving i norsk for elever med samisk som førstespråk innebærer å uttrykke seg med et stadig større ordforråd og språklig sikkerhet på norsk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i norsk for elever med samisk som førstespråk innebærer å lese på både papir og digitalt. Det innebærer å kunne lese skjønnlitteratur og sakprosa, å beherske lesestrategier tilpasset formålet med lesingen og å kunne vurdere tekster kritisk. Videre innebærer det å lese sammensatte tekster som kan inneholde skrift, bilder, tegninger, tall og andre uttrykksformer. Norsk for elever med samisk som førstespråk har et særlig ansvar for opplæring i å kunne lese på norsk. Utviklingen av å kunne lese i norsk for elever med samisk som førstespråk handler om å overføre avkodingsferdigheter fra førstespråket, og går fra å kunne lese ord, setninger og korte tekster til å kunne lese, tolke og reflektere over mer komplekse tekster, i ulike sjangre og for ulike formål."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i norsk for elever med samisk som førstespråk er å kunne finne, vurdere og bruke digitale kilder i arbeid med tekst. Det innebærer å bruke digitale ressurser kreativt for å skape sammensatte tekster og å utvikle kritisk og etisk bevissthet om det å framstille seg selv og andre digitalt. Utviklingen av digitale ferdigheter i norsk for elever med samisk som førstespråk går fra å lage enkle sammensatte tekster til å planlegge, utvikle og redigere sammensatte tekster basert på kunnskap om hvordan de forskjellige uttrykksformene virker sammen. Utviklingen innebærer også å vise en stadig større grad av selvstendighet og dømmekraft i valg og bruk av digitale kilder. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I norsk for elever med samisk som førstespråk handler det tverrfaglige temaet folkehelse og livsmestring om at elevene skal utvikle et positivt selvbilde og en trygg identitet som flerspråklige. I samtaler og i diskusjoner skal elevene reflektere over hvordan de ser på seg selv som en del av et større urfolksfellesskap. Gjennom arbeid med faget skal elevene utvikle kompetanse i å uttrykke seg skriftlig og muntlig på norsk. Dette gir dem grunnlag for å kunne gi uttrykk for egne følelser, erfaringer og meninger i storsamfunnet. Faget skal gi elevene erfaringer som både kan bekrefte og utfordre selvbildet deres og dermed bidra til identitetsutvikling og livsmestring."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I norsk for elever med samisk som førstespråk handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes muntlige og skriftlige retoriske ferdigheter på norsk slik at de kan gi uttrykk for egne tanker og meninger og delta aktivt i både det samiske og det norske samfunnet. I norsk for elever med samisk som førstespråk arbeider elevene kritisk med tekster og ytringer og lærer seg å håndtere meningsbrytninger gjennom refleksjon, dialog og diskusjon. Lesing av skjønnlitteratur og sakprosa gir elevene innblikk i andre menneskers livssituasjon og utfordringer. Dette kan bidra til at elevene utvikler forståelse av og respekt for andre menneskers synspunkter og perspektiver, og det kan legge grunnlag for konstruktiv samhandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I norsk for elever med samisk som førstespråk handler det tverrfaglige temaet bærekraftig utvikling om at elevene skal utvikle kunnskap om hvordan tekster framstiller natur, miljø og livsbetingelser, lokalt og globalt. Gjennom kritisk arbeid med tekst, i samtaler og i diskusjoner bidrar faget til at elevene reflekterer over hvordan man kan styrke og opprettholde samisk kultur. Gjennom å møte fagets tekstmangfold, lese kritisk og delta i dialog kan elevene utvikle forståelse av grunnleggende dilemmaer og utviklingstrekk i samfunnet."
+   ]
+  }
  ]
 }

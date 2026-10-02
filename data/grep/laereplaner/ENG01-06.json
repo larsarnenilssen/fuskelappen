@@ -204,5 +204,45 @@
     "Etter Vg1 studieforberedende utdanningsprogram / yrkesfaglige utdanningsprogram: Privatisten skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. I tillegg skal privatisten opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i engelsk er å skape mening gjennom å lytte, tale og samtale. Det handler om å videreformidle informasjon, tilpasse språket til formål, mottaker og situasjon og å velge egnede strategier. Utviklingen av muntlige ferdigheter i engelsk handler om å bruke det muntlige språket gradvis mer presist og nyansert til å kommunisere om forskjellige emner, i formelle og uformelle situasjoner til ulike mottakere med ulik språklig bakgrunn."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i engelsk er å kunne uttrykke ideer og meninger på en forståelig og hensiktsmessig måte i ulike typer tekster, på papir og digitalt. Å skrive handler om å planlegge, utforme og bearbeide tekster som kommuniserer, og å tilpasse språket til formål, mottaker og situasjon og velge egnede skrivestrategier. Utviklingen av skriveferdigheter i engelsk går fra å lære enkeltord og fraser til å skape ulike typer sammenhengende tekster som formidler synspunkter og kunnskap. Det innebærer også å bruke ulike typer kilder på en kritisk og etterrettelig måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i engelsk er å forstå og reflektere over innhold i ulike typer tekster på papir og digitalt og skal bidra til leseglede og tilegnelse av språk. Det innebærer å lese og finne informasjon i sammensatte tekster med konkurrerende budskap og å bruke lesestrategier til å forstå eksplisitt og implisitt informasjon. Utviklingen av leseferdigheter i engelsk går fra å eksperimentere med språklyder, stavemønstre og stavelser til å lese varierte og komplekse tekster med flyt og forståelse og i stadig større grad kunne reflektere over og vurdere ulike typer tekster kritisk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i engelsk er å kunne bruke digitale medier og ressurser for å styrke språklæringen, for å møte autentiske språkmodeller og samtalepartnere på engelsk og for å tilegne seg relevant kunnskap i engelskfaget. Det innebærer å opptre kritisk og reflektert i engelskspråklige digitale uttrykksformer og i kommunikasjon med andre. Utviklingen av digitale ferdigheter i engelsk går fra å utforske språket til å kunne samhandle med andre, skape tekster og tilegne seg kunnskap ved å innhente, utforske og kritisk vurdere informasjon fra ulike engelskspråklige kilder. For elever på 1.-4. trinn skal bruken av digitale enheter være særskilt varsom, og ikke dominere undervisningen."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I engelsk handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle elevenes evne til å uttrykke seg skriftlig og muntlig på engelsk. Dette legger grunnlag for å kunne gi uttrykk for egne følelser, tanker, erfaringer og meninger. Opplæringen kan gi nye perspektiver på ulike tenkesett og kommunikasjonsmønstre, og på egen og andres levemåte og livssituasjon. Å håndtere situasjoner som krever språk- og kulturkompetanse kan gi elevene mestringsfølelse og bidra til at de utvikler et positivt selvbilde og en trygg identitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I engelsk handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle elevenes forståelse for at deres oppfatning av verden er kulturavhengig. Ved å lære engelsk kan elevene møte ulike samfunn og kulturer gjennom å kommunisere med andre over hele verden, uavhengig av språklig og kulturell bakgrunn. Dette kan bidra til å åpne for flere måter å tolke verden på og være med på å skape nysgjerrighet og engasjement, og medvirke til å forebygge fordommer."
+   ]
+  }
  ]
 }

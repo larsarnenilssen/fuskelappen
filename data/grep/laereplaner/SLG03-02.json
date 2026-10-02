@@ -112,5 +112,51 @@
     "Opplæringen i vg3 salgsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 salgsfaget innebærer å kommunisere med kunder og leverandører og videre presentere produkter gjennom salgs- og markedsaktiviteter. Det handler også om å kunne samhandle gjennom å lytte, reflektere, presentere, samtale og argumentere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 salgsfaget innebærer å kommunisere skriftlig og profesjonelt med ulike mottakere. Det innebærer å tilpasse tekster til ulike formål, sjangre og medium for å nå fram med budskapet til kunder og andre mottakere. Videre innebærer det å lage og dokumentere arbeidsoppgaver i bedriftens kvalitetssikringsarbeid og å utøve kildekritikk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 salgsfaget innebærer å forstå, tolke og vurdere informasjon fra ulike kilder, markeder og regelverk. Det innebærer å bruke faglige tekster som grunnlag for å kommunisere og samhandle med kunder, kolleger og ledere. Videre handler det om å innhente informasjon om økonomiske, markedsmessige og andre forhold som gir grunnlag for utvikling, innovasjon og bærekraftige løsninger i bedriften."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 salgsfaget innebærer å hente inn, bearbeide, analysere og vurdere tallmateriale og videre presentere dette i relevante oppsett. Det innebærer å utføre enkle valutaoverslag, priskalkulasjoner og økonomiske beregninger. Videre innebærer det å lese regnskap og bruke bedriftens budsjett og nøkkeltall."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 salgsfaget innebærer å hente inn, bearbeide, kommunisere og presentere informasjon gjennom digitale verktøy. Videre innebærer det å bruke ulike plattformer for å løse oppgaver, selge produkter og samarbeide digitalt. Det innebærer også å følge regler og normer for nettbasert kommunikasjon, vise kildekritikk og vurdere etiske spørsmål ved personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 salgsfaget handler det tverrfaglige temaet folkehelse og livsmestring om å bygge og håndtere profesjonelle relasjoner med ulike kunder, kolleger og arbeidsledere. Dette innebærer å kunne sette grenser og respektere andres grenser i ulike arbeidssituasjoner. Videre handler folkehelse og livsmestring om å sikre god fysisk og psykisk helse gjennom kunnskap om helse, miljø og sikkerhet og om arbeidstakerens og arbeidsgiverens plikter og rettigheter i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 salgsfaget handler det tverrfaglige temaet bærekraftig utvikling om å ta ansvarlige, etiske og miljøbevisste valg i formidlingen, utviklingen og markedsføringen av produkter. Dette handler om å vurdere bærekraftperspektivet gjennom hele verdikjeden og reflektere over potensielle dilemmaer."
+   ]
+  }
  ]
 }

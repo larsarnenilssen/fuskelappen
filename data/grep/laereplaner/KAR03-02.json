@@ -104,5 +104,45 @@
     "Opplæringa i vg3 chassispåbyggjarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 chassispåbyggjarfaget inneber å beskrive, forklare og dokumentere ulike arbeidsoppgåver, arbeidstilhøve og metodar. Det inneber òg å forstå uttrykksmåtar, fremje eigne synspunkt og drøfte problemstillingar, og å gjere seg forstått med eit presist språk for å unngå feil og misforståingar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 chassispåbyggjarfaget inneber å planleggje, utforme og omarbeide tekstar og notat. Det inneber vidare å forme faglege tekstar tilpassa mottakar og føremål. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve. I tillegg inneber det å forstå og bruke andre uttrykksformer som bilete, figurar og symbol."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 chassispåbyggjarfaget inneber å forstå og tolke regelverk, arbeidsbeskrivingar, prosedyrar og handbøker. Det inneber òg å setje seg inn i skriftlege avtalar, arbeidsbeskrivingar og reglar og lovverk innanfor arbeidslivet. Vidare inneber det å bruke datablad og faglitteratur for å løyse og reflektere over faglege emne og problemstillingar, og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 chassispåbyggjarfaget inneber avlesing av måleeiningar, og omrekning og utrekning av mål, styrke, lengd og tjukne ut frå arbeidsteikninga. Det inneber òg å stille inn og korrigere utstyr og maskiner, og økonomistyring knytt til materialval, utstyrsval og tidsforbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 chassispåbyggjarfaget inneber å bruke digitale ressursar ved planlegging, produksjon, dokumentasjon og kommunikasjon. Det inneber òg å feilsøkje, lese av, diagnostisere og oppdatere produkt og bruke maskiner, verktøy og anna utstyr. Digitale ferdigheiter inneber vidare digital dømmekraft, refleksjon og etisk medvit om bruk av dei forskjellige sosiale media som finst i dagens samfunn."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 chassispåbyggjarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis oppbygging og tilpassing av køyretøy kan bidra til at menneske kan meistre sitt eige liv og handtere praktiske utfordringar. Det handlar òg om behovet for tilpassa køyretøy som tek vare på helsa og arbeidsbehovet og bidreg til livsglede hos andre. Vidare handlar det om å tilverke driftssikre køyretøy og påbygg, om gjenbruk av komponentar, utstyr og materiale og om å bruke returavtalar for metall."
+   ]
+  }
  ]
 }

@@ -117,5 +117,45 @@
     "Før sveineprøva må alle som ikkje har følgt normalt opplæringsløp, i tillegg ha bestått ein tverrfagleg skriftleg eksamen laga ut frå læreplanen i vg2 børsemakar. Eksamen blir utarbeidd sentralt og sensurert lokalt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 børsemakarfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å reflektere over faglege emne og problemstillingar og tilpasse munnleg tekst til mottakaren og formålet. Vidare inneber det å uttrykkje seg munnleg om våpentekniske spørsmål og kommunisere om våpen og våpenbruk med kundar, kollegaer og andre samarbeidspartnarar. Munnlege ferdigheiter inneber òg å bruke fagspråk og fagterminologi for å ta del i faglege diskusjonar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 børsemakarfaget inneber å utforme fagtekstar tilpassa mottakaren og formålet. Det inneber òg å kommunisere skriftleg med kundar, kollegaer og leverandørar og å planleggje og dokumentere eige arbeid skriftleg som ein del av kvalitetssikringa og som dokumentasjon for kundane."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 børsemakarfaget inneber å finne, forstå, reflektere over og kritisk vurdere ulike fagtekstar. Vidare inneber det å kunne tolke både skriftleg og visuelt fagspråk. Å kunne lese inneber òg å forstå og bruke arbeidsteikningar med teikn og symbol."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 børsemakarfaget inneber å hente ut, beskrive og tolke informasjon frå talmateriale og rekne ut tidsforbruk, kostnader og pris. Det inneber òg å bruke og leggje til rette informasjon for å forstå og vise samanhengar, samanlikne og presentere resultat på ulike måtar. Vidare inneber det å rekne ut masse, fart, anslagsenergi, volum, trykk og styrkeforhold. Det inneber og å rekne ut lengder, mengder og vinklar, og å rekne ut kulebane, flygetid og luftmotstand i den praktiske utøvinga av faget."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 børsemakarfaget inneber å bruke digitale ressursar til å søkje etter og innhente informasjon, kommunisere og presentere eige arbeid knytt til produktutvikling og dokumentasjon av eigen kompetanse. Det inneber òg å bruke digitale ressursar i tilrettelegging, planlegging, utrekning og rapportering."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 børsemakarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om samanhengen mellom eit positivt sjølvbilete og trygg omgang med skytevåpen. Vidare handlar det om forståing for kor naudsynt våpenkontroll og etisk refleksjon er for den enkelte og for samfunnet."
+   ]
+  }
  ]
 }

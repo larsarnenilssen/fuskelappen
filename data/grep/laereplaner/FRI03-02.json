@@ -124,5 +124,51 @@
     "Opplæringen i vg3 frisørfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på åtte til ti virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 frisørfaget innebærer å uttrykke egne meninger og å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i drøfting og refleksjon over faglige emner og å bygge opp argumentasjon og tilpasse kommunikasjonen til mottaker og formål. Lærlingene bruker muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 frisørfaget innebærer å bruke fagterminologi og varierte skrivemåter for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og bruke bilder, illustrasjoner og arbeidsbeskrivelser som dokumentasjon og i kommunikasjon med kunder og kolleger. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 frisørfaget innebærer å bruke faglitteratur for å finne og vurdere informasjon om produkter, bruksanvisninger, pakningsvedlegg og ingredienslister. Det innebærer også å lese framgangsmåter og avtaler og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å analysere skriftlig og visuelt språk i frisørfaget for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 frisørfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne tid, vekt, måleenheter og volum knyttet til arbeidsoppgaven. Det innebærer også å gjøre økonomiske beregninger i forbindelse med budsjett og pris og å bearbeide informasjon for å sammenligne, vise sammenhenger og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 frisørfaget innebærer å bruke digitale ressurser til dokumentasjon, inspirasjon, presentasjon, kundekontakt og markedsføring. Det innebærer også å bruke digitale ressurser kreativt, og kritisk vurdere informasjon fra digitale kilder, ta etiske valg og bruke digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 frisør handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet som frisør og å ta ansvarlige valg i eget liv og i skapende arbeidsprosesser. Det innebærer å bruke strategier for å møte og mestre forventninger fra kunder. Videre handler folkehelse og livsmestring om å bli trygg i møte med kolleger, kunder og andre aktører i faget. Det handler også om å reflektere over hvilken påvirkning moter, trender og visuelle uttrykk har innenfor frisørfaget, og hvordan man kan gi uttrykk for egne tanker og meninger i et flerkulturelt samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 frisørfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk rundt valg og bruk av materialer, produkter og forbruk, oppbevaring og vedlikehold av disse, med tanke på økonomi, miljøpåvirkning og ressursutnyttelse. Videre handler bærekraftig utvikling om å innhente informasjon om kjente virkestoffer og deres egenskaper i ulike produkter, om hvordan stoffene påvirker det indre og ytre miljøet og om å bruke kunnskapen om miljøsertifiseringer, innhenting av informasjonsmateriell. Det handler også om å reflektere kritisk over bærekraftig ressursforvaltning, yrkesetikk og helse, miljø og sikkerhet."
+   ]
+  }
  ]
 }

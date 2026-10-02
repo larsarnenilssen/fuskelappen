@@ -86,5 +86,51 @@
     "Instruksjon og ledelse: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i instruksjon og ledelse innebærer å uttrykke seg verbalt om musikalske ideer og intensjoner. Det innebærer videre å instruere ved bruk av fagspråk og å legge til rette for og bidra til respektfull dialog med dem man skal lede. Det innebærer også å demonstrere musikalske elementer vokalt."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i instruksjon og ledelse innebærer å bruke egnet musikknotasjon og fagspråk og å skrive planer, søknader, budsjetter og regnskap. Det innebærer også å reflektere skriftlig rundt musikkfaglig arbeid og å kommunisere skriftlig til presse i forbindelse med markedsføring."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i instruksjon og ledelse innebærer å tilegne seg musikk via notasjon og fagspråk og å bruke dette som kilde til musikalsk interpretasjon og i formidling av musikalske uttrykk. Det innebærer også å orientere seg i og å ta ansvar for å følge lover og regler."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i instruksjon og ledelse innebærer å arbeide med ulike taktarter, rytmer og form. Det innebærer også regnskap- og budsjettarbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i instruksjon og ledelse innebærer å bruke digitale ressurser i planlegging, gjennomføring og dokumentasjon av produksjoner. Videre innebærer det å vise god digital dømmekraft når det gjelder kommunikasjon, samhandling og kildebruk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I instruksjon og ledelse handler det tverrfaglige temaet folkehelse og livsmestring om å ta ansvar som leder for å skape fellesskap der alle opplever seg respekterte og opplever mestring. Det handler også om å ta ansvar for lydmiljø og -nivå når man arbeider med produksjoner, og å være bevisst på hvordan regulering av disse faktorene kan bidra til stressmestring og forebygge hørselsproblemer."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I instruksjon og ledelse handler det tverrfaglige temaet demokrati og medborgerskap om å ta ansvar som leder for å styrke samhandling og medarbeiderskap i en gruppe. Slik kan faget styrke forståelsen av både rettferdig utøving av lederskap og av hvordan dette er en forutsetning for demokrati. Det innebærer å lytte til innspill, respektere ulikheter og løse uenighet og konflikt gjennom forhandling og kunstnerisk lederskap."
+   ]
+  }
  ]
 }

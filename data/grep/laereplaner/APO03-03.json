@@ -198,5 +198,57 @@
     "Helseveiledning i apotek, kommunikasjon og samhandling og yrkesliv i apotekteknikkfaget: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 apotekteknikk innebærer å kommunisere med kunder og helsepersonell om apotekrelaterte emner. Det innebærer også å lytte til kundenes framstilling og følge opp med avklarende spørsmål. Videre innebærer det å snakke presist, skille mellom hverdagslige og apotekfaglige begreper og tilpasse språket til samtalepartneren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 apotekteknikk innebærer å uttrykke seg forståelig og på en hensiktsmessig måte. Videre innebærer det å bruke presise apotekfaglige begreper. Det innebærer også å kommunisere skriftlig med kunder og samarbeidspartnere og tilpasse teksten til mottaker, innhold og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 apotekteknikk innebærer å tilegne seg ny fagkunnskap og innsikt. Videre innebærer det å forstå resepter, rekvisisjoner og apotekfaglig informasjon. Det innebærer dessuten å forstå og bruke relevante regelverk, prosedyrer og instrukser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 apotekteknikk innebærer å beherske regneferdigheter knyttet til salg, refusjonsordninger og legemiddelbruk. Det innebærer også å kunne bruke måleinstrumenter og måleenheter og beregne volum, vekt og styrke."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 apotekteknikk innebærer å benytte e-helse og aktuell programvare i apotek. Det handler også om å kunne veilede kunder om bruk av relevante digitale hjelpemidler. Videre innebærer det å vise digital dømmekraft ved håndtering av pasientinformasjon, og bruke digitale ressurser i apotek."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 apotekteknikk handler det tverrfaglige temaet folkehelse og livsmestring om å forstå og respektere apotekkundenes helseplager og legemiddelbruk. Det handler også om trygg kundeveiledning og apotekets plass i helsetjenesten."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 apotekteknikk handler det tverrfaglige temaet demokrati og medborgerskap om kundemedvirkning i apoteket. Det handler også om å tenke kritisk og å respektere uenighet. Videre handler det om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 apotekteknikk handler det tverrfaglige temaet bærekraftig utvikling om å bidra til lavest mulig legemiddelkostnader for den enkelte kunde og for samfunnet. Videre handler det om apotekteknikerens medansvar for miljøet ved håndtering av legemidler og andre apotekvarer."
+   ]
+  }
  ]
 }

@@ -78,5 +78,45 @@
     "Programmering og modellering X: Privatistane skal opp til munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel til lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i programmering og modellering X inneber å kunne bruke relevant fagterminologi til å formidle og diskutere modelleringsprosessar, algoritmar og programkode. Det inneber òg å uttrykkje samanhengar og logikk i eigen og andre sin programkode på ein klar og strukturert måte. Vidare inneber det å drøfte og vurdere ulike strategiar for problemløysing."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i programmering og modellering X inneber å kunne omsetje tenkjemåtar og prosessar til ein godt strukturert og lesbar programkode. Vidare inneber det å skildre og formidle algoritmar, prosessar og resultat med eit presist fagspråk. Det inneber òg å gjere greie for, vurdere og drøfte premissar og avgrensingar for modellar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i programmering og modellering X inneber å analysere resultat frå program. Det inneber òg å tolke grafiske visualiseringar og resultat for å vurdere om ein modell er gyldig. Vidare inneber det å setje seg inn i og forstå programkode som er skriven av andre."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i programmering og modellering X inneber å utvikle eit grunnlag av verktøy og strategiar for å løyse problem med og utan digitale verktøy. Det inneber å bruke programmering til å skildre matematiske samanhengar og gjennomføre utrekningar. Vidare inneber det å nytte numeriske løysingsmetodar der det er formålstenleg eller nødvendig for den problemstillinga som skal utforskast."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i programmering og modellering X inneber å kunne bruke programmering til problemløysing, utforsking og kreativt arbeid med matematiske modellar. Det inneber òg å bruke digitale ressursar til å strukturere, dokumentere, kvalitetssikre og dele arbeid."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I programmering og modellering X handlar det tverrfaglege temaet demokrati og medborgarskap om korleis vi bruker modellar og simuleringar til å trekkje konklusjonar om samfunnet og verda omkring oss. Det handlar òg om medvit om korleis vitskapen systematiserer og formidlar verkelegheita. Vidare handlar det om kritisk vurderingsevne og kompetanse til å argumentere sakleg, slik at ein kan forstå og delta i aktuelle debattar i samfunnet."
+   ]
+  }
  ]
 }

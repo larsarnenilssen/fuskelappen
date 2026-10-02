@@ -198,5 +198,51 @@
     "Opplæringa i vg3 bunadtilverkarfaget - modulstrukturert opplæring for vaksne skal avsluttast med ei sveineprøve. Sveineprøva lagast ut frå læreplanen i vg3 bunadtilverkarfaget (BUN05-01). Alle skal opp til sveineprøva, som skal gjennomførast innanfor ei tidsramme på 8–10 vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 bunadtilverkarfaget inneber å delta i samtaler med fagleg innhald. Det inneber å kunne bruke fagterminologi i kommunikasjon med kundar, leverandørar, kollegaer og andre samarbeidspartnarar. Lærlingane utviklar munnlege ferdigheiter og fagleg forståing gjennom å diskutere og reflektere over arbeidsmetodar og fagkunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bunadtilverkarfaget inneber å kunne bruke fagterminologi i skriftleg kommunikasjon med kundar, kollegaer, leverandørar og andre samarbeidspartnarar om bunadstradisjonar, estetikk, arbeidsprosessar og historiske kjelder. Det inneber òg å kunne delta i faglege diskusjonar, å kunne dokumentere eige arbeid og å kunne utarbeide syrettleiingar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bunadtilverkarfaget inneber å finne og vurdere informasjon i faglitteratur, ulike tekstar, arbeidsbeskrivingar, syrettleiing, teikingar, bilete og illustrasjonar. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff. Vidare inneber det å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 bunadtilverkarfaget inneber å bruke informasjon frå eit måleskjema. Det inneber òg å rekne ut storleik, tilpasse mønster og materialforbruk og berekne tidsbruk. I tillegg inneber det å gjere økonomiske berekningar i samband med pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 bunadtilverkarfaget inneber å kunne innhente opplysningar om bunader og folkedrakter. Vidare inneber det å kunne delta i digitale nettverk og å kunne presentere eige arbeid. Digitale ferdigheiter inneber òg kunnskap om kjeldebruk og sitat, digital dømmekraft og medvit om kritisk kjeldebruk."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 bunadtilverkarfaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle handlag, gode arbeidsrutinar og evne til problemløysing og om å utvikle identitet og å ta ansvarlege val i skapande arbeid og i eige liv. Det handlar òg om korleis ein kan gi uttrykk for eigne opplevingar, tankar og meiningar i samarbeid med andre og i arbeidet med oppgåver innanfor bunadtilverkarfaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bunadtilverkarfaget handlar det tverrfaglege temaet berekraftig utvikling om medviten refleksjon rundt val av materiale, produksjonsmetodar og verktøy i ein etisk og berekraftig tilverking. Vidare handlar det om å tilverke bunader og tilbehøyr med god og varig kvalitet der vedlikehald og reparasjon er mogleg. Berekraftig utvikling handlar òg om å ta vare på og utvikle ein levande kulturarv med lokal og nasjonal forankring."
+   ]
+  }
  ]
 }

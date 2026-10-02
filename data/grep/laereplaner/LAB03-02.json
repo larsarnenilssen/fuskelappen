@@ -96,5 +96,51 @@
     "Opplæringen i vg3 laboratoriefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over to til tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 laboratoriefaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å kommunisere og å tilpasse muntlig tekst til mottaker og formål, forstå og bruke faguttrykk, og forklare arbeidsoppgaver og resultater. Videre innebærer det å forklare, presentere og vurdere muligheter, risikoer og utfordringer i arbeidet med faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 laboratoriefaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å planlegge, utforme, bearbeide og dokumentere arbeidsoppgaver for å gjøre resultatene synlige og sporbare."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 laboratoriefaget innebærer å finne og vurdere innhold i tekster, og å forstå og følge arbeidsbeskrivelser. Det innebærer og å sammenligne, tolke og systematisere informasjon, prosedyrer, datablader, faglitteratur, håndbøker, forskrifter og regelverk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 laboratoriefaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger og å utføre beregninger innenfor kjemi, fysikk og statistisk analyse."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 laboratoriefaget innebærer å bruke digitale verktøy for kommunikasjon, planlegging, praktisk utøvelse og rapportering av arbeidsoppdrag. Det innebærer også å utvikle etisk bevissthet og digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 laboratoriefaget handler det tverrfaglige temaet folkehelse og livsmestring om hvordan ta vare på seg selv og kolleger i møte med krevende arbeidsoppgaver, og om å bruke kompetansen sin innenfor sikkert laboratoriearbeid for å bidra til folkehelse i et samfunnsperspektiv. Det handler også om å kontinuitet og aktiv tilstedeværelse på laboratoriet, som bidrar til kompetanse, mestring og motivasjon."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 laboratoriefaget handler det tverrfaglige temaet bærekraftig utvikling om å gjøre risikovurderinger og miljøbevisste valg i arbeidet. Det handler også om laboratoriets rolle for å optimalisere prosesser, utvikle metodikk og målemetoder for utslippsreduksjon, velge riktige råvarer og evaluere avfallshåndtering for en bærekraftig utvikling."
+   ]
+  }
  ]
 }

@@ -181,5 +181,45 @@
     "Breddeidrett 3: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i breddeidrett innebærer å beskrive og forklare teknikker, taktikk, ferdigheter og treningsmetoder i aktiviteter man har drevet med. Videre innebærer det å reflektere, veilede, oppmuntre, gi tilbakemelding, gi muntlige beskjeder og gjøre muntlige henvendelser og forespørsler. Utviklingen av ferdigheten går fra å kunne beskrive til å kunne drøfte sentrale elementer i faget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i breddeidrett innebærer å utarbeide treningsplaner og vurdere eget treningsarbeid i tilknytning til en aktivitet. Videre innebærer det å svare skriftlig på ulike oppgaver og å bruke kilder kritisk i utformingen av svarene."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i breddeidrett innebærer å forstå ulike former for faglitteratur, avistekster, offentlige dokumenter, andre skriftlige kilder og databasert informasjon som handler om fagområder innenfor breddeidrett. Utviklingen av ferdigheten består i å kunne hente ut informasjon fra gradvis mer kompliserte tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i breddeidrett innebærer å måle og beregne intensitet og avstander. Utviklingen av ferdigheten går fra å kunne gjøre enkle utregninger til å kunne gjøre mer sammensatte beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i breddeidrett innebærer å bruke digitale verktøy i arbeidet med faget. Utviklingen av ferdigheten går fra å kunne bruke digitale verktøy til å kunne tolke og behandle digital informasjon på en hensiktsmessig og kritisk måte."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I breddeidrett handler det tverrfaglige temaet folkehelse og livsmestring om å fremme god psykisk og fysisk helse. Faget skal bidra til at elevene utvikler et positivt selvbilde og en trygg identitet. Breddeidrett skal utvikle elevenes evne til å gjøre reflekterte valg som har betydning for egen og andres helse."
+   ]
+  }
  ]
 }

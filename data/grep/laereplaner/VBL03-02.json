@@ -132,5 +132,45 @@
     "Opplæringen i Vg3 ventilasjon- og blikkenslagerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i Vg3 ventilasjons- og blikkenslagerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i kommunikasjon med andre, å reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg3 ventilasjons- og blikkenslagerfaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg3 ventilasjons- og blikkenslagerfaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger, standarder og toleransestandarder og regelverk. Det innebærer også å sammenligne og tolke informasjon og å trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg3 ventilasjons- og blikkenslagerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne lengde, areal, volum og vekt knyttet til arbeidsoperasjonen. Det innebærer også å beregne radier, vinkler og fall og å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg3 ventilasjons- og blikkenslagerfaget innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg3 ventilasjons- og blikkenslagerfaget handler det tverrfaglige temaet bærekraftig utvikling om å velge produkter og løsninger med lavt energiforbruk gjennom konstruksjonens livsløpsfase. Det handler om å velge materialer ut fra et langsiktig miljøhensyn som gir energieffektiv og energioptimalisert drift. Videre handler det om å ta vare på energi gjennom å bekle tak, fasader og interiør, og om å velge og bruke verktøy og utstyr som er framtidsrettet og miljøvennlig."
+   ]
+  }
  ]
 }

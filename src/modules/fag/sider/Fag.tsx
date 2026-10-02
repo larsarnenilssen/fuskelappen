@@ -19,6 +19,7 @@ import { overforSkjema } from '../../arbeidstid/kontekst.ts';
 import { hentBegreper } from '../../begreper/innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { FerdigheterOgTemaer } from '../../laereplanverket/komponenter/IFaget.tsx';
 import { lastTilbud, type Tilbudene, tilbudRute } from '../../opplaeringslop/data.ts';
 import { type Fagrolle, fagITilbud } from '../../opplaeringslop/grupper.ts';
 import type { SideProps } from '../../typer.ts';
@@ -495,6 +496,13 @@ export default function Fagside({ parametre }: SideProps) {
         )}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
       </Seksjon>
+
+      {/* Grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del (avgjørelse 037). */}
+      {plan && typeof plan === 'object' && plan.ferdigheter.length + plan.temaer.length > 0 && (
+        <Seksjon id="laereplanverket" lukket tittel={t('laereplanverket.fagark.tittel')}>
+          <FerdigheterOgTemaer plan={plan} lang={htmlSpraak(plan.spraak)} />
+        </Seksjon>
+      )}
 
       {fag.po.length > 0 && (
         <Seksjon id="programomrader" lukket tittel={t('fag.side.programomrader', { antall: fag.po.length })}>

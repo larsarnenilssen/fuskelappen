@@ -125,5 +125,45 @@
     "Dans i perspektiv 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i dans i perspektiv innebærer å delta i faglige samtaler om dans i et kunst- og kulturhistorisk perspektiv og i skapende aktivitet. Muntlige ferdigheter innebærer også å kommunisere egne meninger og ideer, og å drøfte dansehistorie og skapende arbeidsmetoder."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i dans i perspektiv innebærer å kommunisere om og reflektere over dans som kunst- og kulturuttrykk. Det innebærer også å utforme, planlegge og bearbeide varierte tekster om dans, og å bruke fysiske tegn, former og symboler for å formidle kunstneriske ideer i koreografi."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i dans i perspektiv innebærer å tolke og forstå multimodale tekster om dans. Det innebærer også å analysere tekster i lys av historisk kontekst og perspektiver på historieskriving. Videre innebærer det å se, oppleve og analysere dans i ulike kontekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i dans i perspektiv innebærer å forstå de dynamiske komponentene tid, rom, kraft og flyt, og å bruke disse bevisst for å underbygge intensjoner i koreografisk arbeid. Det innebærer også å bruke rom bevisst i koreografi gjennom å identifisere og bruke bevegelser av ulike størrelser og nivåer, former, relasjoner og plasseringer i rommet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i dans i perspektiv innebærer å ta i bruk digitale ressurser i skapende arbeid og visning av dans. Digitale ferdigheter innebærer også etisk bevissthet og kunnskap om digital publisering, opphavsrett og digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I dans i perspektiv handler det tverrfaglige temaet demokrati og medborgerskap om å håndtere meningsbrytninger og respektere uenigheter i kreative prosesser i dans, og om å lytte og samhandle med andre med gjensidig respekt. Gjennom reell innflytelse på kunstneriske valg i faget, bidrar arbeid med det tverrfaglige temaet til økt kunnskap om demokrati i praksis. I dans i perspektiv handler demokrati og medborgerskap også om hvordan dansekunst kan speile, kritisere og sette søkelys på aktuelle temaer i samtiden, og om å respektere ulike uttrykk på tvers av kulturelle, sosiale og individuelle forskjeller."
+   ]
+  }
  ]
 }

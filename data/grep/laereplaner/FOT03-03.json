@@ -198,5 +198,57 @@
     "Helse, funksjon og bevegelse, kommunikasjon og samhandling og yrkesliv i fotterapifaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 fotterapi inneber å reflektere over faglege emne og prosessar og formidle dette til andre. Vidare inneber det å bruke fagterminologi og å kommunisere og samhandle med brukarar og helsepersonell. Det inneber òg å halde presentasjonar tilpassa mottakar og formål og marknadsføre eigen praksis."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 fotterapi inneber å føre journal, dokumentere arbeid og marknadsføre eiga bedrift. Det inneber òg å skrive pasientnotat, epikrisar og tilvisingar til anna helsepersonell. Vidare inneber det å gi råd og rettleiing skriftleg i samband med behandling og å skrive fagtekstar til fagblad eller tidsskrift."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 fotterapi inneber å setje seg inn i og tolke budsjett og prisoverslag og å forstå faglitteratur, lovverk, produktbeskrivingar, datablad, journalar og tilvisingar frå helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 fotterapi inneber å utarbeide budsjett og prisoverslag for å kunne etablere og drifte eiga verksemd. Vidare inneber det å kalkulere pris for tenester og å berekne materialkostnader."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 fotterapi inneber å bruke digitale ressursar for å finne, behandle og dokumentere informasjon om faget og kritisk vurdere dei kjeldene ein bruker. Vidare inneber det å bruke digitale ressursar som verktøy i eige arbeid og ved tverrfagleg samarbeid. Å samhandle med helsepersonell og brukarar ved bruk av elektroniske journalsystem og å vise digital dømmekraft inngår òg."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 fotterapi handlar det tverrfaglege temaet folkehelse og livsmeistring om å forstå kor mykje rørsleevna har å seie for den einskildes livskvalitet. Det handlar òg om faktorar som påverkar fothelsa, og som stimulerer til fysisk aktivitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 fotterapi handlar det tverrfaglege temaet demokrati og medborgarskap om retten den enkelte brukaren og pasienten har til likeverdig og tilrettelagd behandling, og om å vise respekt for ulikskap. Det handlar om å tenkje kritisk, handtere meiningsbrytningar og å respektere usemje. Vidare handlar det om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv og om arbeidsgjevaren og arbeidstakaren sine rettar og pliktar."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 fotterapi handlar det tverrfaglege temaet berekraftig utvikling om å ta omsyn til miljø og økonomi ved val av materiell og metodar i behandlinga. Det handlar òg om korleis teknologien kan effektivisere arbeidsprosessar. Gjenbruk og reparasjon av materiale og maskiner inngår òg."
+   ]
+  }
  ]
 }

@@ -104,5 +104,45 @@
     "Opplæringa i vg3 bilfaget, demontering av køyretøy skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 bilfaget, demontering av køyretøy inneber å forstå uttrykksmåtar, fremje eigne synspunkt og drøfte problemstillingar i ulike situasjonar og samanhengar. Det inneber også å bruke fagspråk og faguttrykk i dialog med kundar og kollegaer."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 bilfaget, demontering av køyretøy inneber å planleggje og dokumentere utført arbeid. Det inneber også å forme ut faglege tekstar med bruk av fagspråk tilpassa mottakar og formål. Vidare inneber det å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 bilfaget, demontering av køyretøy inneber å forstå og tolke regelverk, arbeidsbeskrivingar, prosedyrar og handbøker. Vidare inneber det å bruke datablad og faglitteratur for å utforske og reflektere over faglege emne og problemstillingar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 bilfaget, demontering av køyretøy inneber å tolke informasjon for å utføre berekningar som er relevante i faget. Det inneber også å forstå og vise samanhengar mellom materialval, utstyrsval, forbruk og tidsbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 bilfaget, demontering av køyretøy inneber å bruke digitale ressursar til å søkje etter og hente inn informasjon og å kommunisere, planleggje, feilsøkje og dokumentere arbeidsoppdrag. Vidare inneber det å bruke digitale hjelpemiddel og å kunne reflektere over personvern og datasikkerheit. Det handlar også om å utvikle etisk medvit og å vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 bilfaget, demontering av køyretøy handlar det tverrfaglege temaet berekraftig utvikling om å følgje krava bransjen og fabrikanten stiller til returordningar for ulike typar komponentar, oljar, væsker og gassar. Det tverrfaglege temaet handlar også om å vurdere og sortere materiale for gjenbruk og reflektere over korleis miljøavtrykket til bransjen kan bli mindre. Berekraftig utvikling skal bidra til gjenbruk av delar, slik at det blir eit konkurransedyktig alternativ."
+   ]
+  }
  ]
 }

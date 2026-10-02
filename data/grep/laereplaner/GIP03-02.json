@@ -116,5 +116,45 @@
     "Opplæringen i gipsmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst sju virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i gipsmakerfaget innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i gipsmakerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og dokumentere arbeidsprosesser gjennom tekst og visualiseringer. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i gipsmakerfaget innebærer å finne og vurdere informasjon i faglitteratur, stilhistorie, ulike tekster, arbeidsbeskrivelser, tegninger, bilder, illustrasjoner, produktdatablad, lover og forskrifter. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i gipsmakerfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale, å bruke og bearbeide informasjonen for å forstå og å vise sammenhenger, sammenligne og presentere resultater på ulike måter. Det innebærer også å beregne måle- og volumenheter. Det innebærer også å gjøre økonomiske beregninger i forbindelse med pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i gipsmakerfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I gipsmakerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over valg av materialer i forbindelse med framstilling og montering av gipsprodukter, om hvordan ulike produkter påvirker og optimaliserer holdbarheten, om avfallshåndtering og om hvordan bruk av kjemiske stoffer under produksjonen kan påvirke miljøet. Videre handler det om faget som en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

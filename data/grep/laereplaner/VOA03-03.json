@@ -132,5 +132,45 @@
     "Opplæringa i vg3 veg- og anleggsfaget skal avsluttast med ein fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 veg- og anleggsfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 veg- og anleggsfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 veg- og anleggsfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar, standarder og toleransestandarder og regelverk. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 veg- og anleggsfaget inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal, volum og vekt i samband med arbeidsoperasjonen. Vidare inneber det å bruke målestokk, rekne ut radiusar, vinklar og fall og å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 veg- og anleggsfaget inneber å bruke digitale ressursar til å drifte prosjekt, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter i faget å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 veg- og anleggsfaget handlar det tverrfaglege temaet berekraftig utvikling om å leggje til rette for ein energieffektiv og varig infrastruktur. Vidare handlar det om å bruke maskiner og utstyr med tanke på det indre og ytre miljøet. Berekraftig utvikling handlar òg om å kjeldesortere og handtere avfall på ein måte som minimerer belastninga på miljøet."
+   ]
+  }
  ]
 }

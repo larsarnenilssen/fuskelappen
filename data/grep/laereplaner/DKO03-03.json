@@ -100,5 +100,38 @@
     "Opplæringen i vg3 dimensjonskontrollfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst åtte virkedager."
    ]
   }
- ]
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 dimensjonskontrollfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å tilpasse muntlig tekst til mottaker og formål og å presentere og drøfte måleresultater med kolleger og oppdragsgivere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 dimensjonskontrollfaget innebærer å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, og utarbeide og skrive rapporter, dokumentasjon, kvalitetsavvik, helse-, miljø- og sikkerhetsavvik og referater fra møter. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å lese i vg3 dimensjonskontrollfaget innebærer å finne og vurdere informasjon i tegninger, spesifikasjoner, standarder, prosedyrer og instruksjoner. Det innebærer også å sammenligne, tolke og systematisere informasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å regne i vg3 dimensjonskontrollfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller og grafiske framstillinger for å forstå toleranser og utføre geometriske og trigonometriske beregninger. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 dimensjonskontrollfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon. Videre innebærer det å programmere koordinatmålemaskiner og bruke produksjonsstyringssystemer. Det innebærer også å dokumentere og å melde og behandle avviksmeldinger digitalt."
+   ]
+  }
+ ],
+ "temaer": []
 }

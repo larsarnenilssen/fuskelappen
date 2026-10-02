@@ -124,5 +124,51 @@
     "Opplæringen i vg3 tredreierfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøve, som skal gjennomføres over minst åtte virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 tredreierfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i kommunikasjon med kunder, leverandører, kolleger og andre samarbeidspartnere og å tilpasse kommunikasjonen til mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer produkter og metoder alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 tredreierfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å lage arbeidsbeskrivelser og å presentere og dokumentere arbeidsprosesser gjennom tekst og visualiseringer til kunder, kolleger, leverandører og andre samarbeidspartnere. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 tredreierfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Videre innebærer det å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 tredreierfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter. Videre innebærer det å måle opp, beregne størrelser, konstruere geometriske grunnfigurer og beregne hastighet på roterende emner. Det innebærer også å gjøre økonomiske beregninger i forbindelse med pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 tredreierfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 tredreierfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle håndlag, gode arbeidsrutiner og evne til problemløsing og om å utvikle identitet og ta ansvarlige valg i eget liv og i skapende arbeid. Det handler også om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i samarbeid med andre og i arbeidet med oppgaver innenfor tredreierfaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 tredreierfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk rundt valg av materialer, produksjonsmetoder, verktøy og maskiner i en etisk og bærekraftig produksjon og hvordan dette kan påvirke utslipp og miljøavtrykk. Det innebærer å legge vekt på produksjon av holdbare produkter der vedlikehold og reparasjon er mulig, og å videreutvikle og skape nye tredreide produkter med god og varig kvalitet. Bærekraftig utvikling handler også om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

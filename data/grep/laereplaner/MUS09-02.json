@@ -75,5 +75,45 @@
     "Sámi musihkka ja lávdi: Privatista gessojuvvo njálmmálaš-geavatlaš eksámenii, ráhkkananosiin. Eksámen ráhkaduvvo ja árvvoštallojuvvo báikkálaččat. Fylkkasuohkan mearrida galget go privatisttain leat ráhkkananoassi báikkalaš árvvoštallon eksámenis."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Njálmmálaš gálggat fágas Sámi musihkka ja lávdi mearkkaša geavahit giela ja jiena juoigamis, lávlumis ja teakstagaskkusteamis iešguđetge ovdanbuktindiliin. Dat mearkkaša maiddái guldalit ja digaštallat dáiddalaš proseassaid ja bohtosiid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Máhttit čállit fágas sámi musihkka ja lávdi mearkkaša muitalanteavsttaid hábmet ovdanbuktimii, čájálmasaide ja konsearttaide, ja čállit logga ja reflekšuvdnanotáhtaid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Máhttit lohkat fágas Sámi musihkka ja lávdi mearkkaša dulkot teavsttaid ja háhkat máhtu teavsttain, ovdanbuktimiin, čállojuvvon komposišuvnnain ja dáiddalaš ideain ságastallamiidda ja analyseremiidda, doaimmaheami ja ovdanbuktima várás."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Máhttit rehkenastit fágas sámi musihkka ja lávdi mearkkaša ipmirdit ja máhttit geavahit dakkár vuođđoelemeanttaid go tonalitehta, váibmoravkima, ritmma ja iešguđetlágan távttaid sihke musihka, lihkadeami, teavstta ja luođi ovdanbuktimis."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitála gálggat fágas sámi musihkka ja lávdi mearkkašit máhttit ávkkástallat prográmmagálvvuiguin musihkka-, jietna-, čuovga- ja teakstasuorggis dasa ahte ráhkadit ja ovdanbuktit dáiddalaš buvttademiid ja fágalaš bargguid, seammás go čájeha buori digitála árvvoštallannávcca. Dat mearkkaša maiddái čuovvut njuolggadusaid mat gusket dahkkivuoigatvuhtii ja persovdnasuodjalussii."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "Sámi musihkka ja lávdi fágarasttildeaddji fáddái álbmotdearvvašvuohta ja eallima hálddašeapmi gullá dat mo olbmos luđiin, musihkain, muitalusaiguin, lávlagiiguin ja lihkademiin lea mielde addimin positiiva iešgova ja nannemin identitehta. Dasa gullá maid gaskavuođaid ovddideapmi ja dáiddu ovttasbargat oktasaš mihttomeriid ollašuhttimiin ovttasdoaibmandiliin."
+   ]
+  }
  ]
 }

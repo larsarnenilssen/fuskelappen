@@ -234,5 +234,57 @@
     "Økonomi og administrasjon, kommunikasjon og marknadsføring og helse, miljø og sikkerheit: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamenAdministrasjon og økonomi, marknadsføring og kommunikasjon og sikkerheit"
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 sal, service og reiseliv inneber å kunne kommunisere med kollegaer, kundar, gjester og brukarar frå ulike kulturar og i ulike livssituasjonar. Dette inneber å tilpasse sitt eige språk og innhald til mottakaren og situasjonen, samt lytte til og vise respekt for den som snakkar. Vidare inneber det å kunne bruke relevante faguttrykk og sikre at informasjonen ikkje berre blir gitt, men også forstått av mottakaren."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 sal, service og reiseliv inneber å kunne kommunisere skriftleg og profesjonelt med ulike mottakarar og å kunne dokumentere, omarbeide og utveksle relevante opplysningar og relevant informasjon. Dette inneber å tilpasse tekstar til ulike føremål, sjangrar og medium for å nå fram med ein bodskap til kollegaer, kundar, gjester, brukarar og andre mottakarar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 sal, service og reiseliv inneber å kunne finne, forstå, tolke og vurdere informasjon frå ulike kjelder, marknader og lovverk. Det inneber vidare å kunne bruke innhald frå faglege tekstar i kommunikasjonen og samhandlinga med kollegaer, kundar, gjester og brukarar. I tillegg inneber det å vere kjeldekritisk i vurderinga av økonomiske, marknadsmessige og berekraftige forhold i yrkesutøvinga."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 sal, service og reiseliv inneber å hente inn, omarbeide, analysere og vurdere talmateriale og presentere det i eigna oppsett. Dette inneber å kunne utføre enkle valutaoverslag, priskalkulasjonar og økonomiske berekningar. Vidare inneber det å kunne lese rekneskap, bruke budsjett og nøkkeltal for ei verksemd og utføre økonomiske berekningar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 sal, service og reiseliv inneber å kunne hente inn, registrere, omarbeide, lagre, formidle og presentere informasjon ved hjelp av digitale verktøy. Vidare inneber det å kunne bruke samhandlingsverktøy og ulike plattformer og kanalar for å løyse oppgåver. I tillegg handlar digitale ferdigheiter om å vise digital dømmekraft i arbeidet og vurdere kjelder kritisk. Dette inneber å kunne handtere personopplysningar og vurdere etiske spørsmål som har med personvern og opphavsrett å gjere. Digitale ferdigheiter handlar òg om å kunne bruke digitale verktøy og å kunne bruke kunstig intelligens i eige arbeid og i tverrfaglege samanhengar."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 sal, service og reiseliv handlar det tverrfaglege temaet folkehelse og livsmeistring om å byggje profesjonelle relasjonar i kommunikasjon og samhandling med ulike menneske. I dette ligg det å kunne handtere reaksjonar, setje grenser og respektere andre sine grenser i ulike relasjonar og arbeidssituasjonar. Vidare handlar det om å utvikle kunnskap om og forståing for ulike livssituasjonar og å utvikle respekt for ulike grupper, fellesskap og kulturar i arbeidet. Folkehelse og livsmeistring handlar òg om å sikre god fysisk og psykisk helse i arbeidskvardagen gjennom kunnskap om helse, miljø og sikkerheit."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 sal, service og reiseliv handlar det tverrfaglege temaet demokrati og medborgarskap om å sikre at yrkesutøvinga skjer i tråd med demokratiske verdiar og spelereglar. Gjennom konfliktførebygging, beredskap og risikovurdering skal faget bidra til samfunnssikkerheita. Elevane skal gjennom refleksjon og utforsking øve opp evna til å tenke kritisk, lære seg å handtere meiningsbrytingar og respektere ueinigheit. Vidare skal elevane reflektere over ulike maktforhold i møte med andre menneske og kulturar og over korleis dei kan utøve yrkesrolla i tråd med demokratiske prinsipp. Demokrati og medborgarskap handlar vidare om å delta aktivt i arbeidslivet og om arbeidsgivaren og arbeidstakaren sine rettar og plikter."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 sal, service og reiseliv handlar det tverrfaglege temaet berekraftig utvikling om å ta ansvarlege, etiske og miljømedvitne val i formidlinga og utføringa av ulike arbeidsoppgåver. Vidare handlar det om å bruke ressursar effektivt for å unngå tap av verdiar og uheldige påverknader på klima og miljø. Elevane skal utvikle evna til å reflektere over korleis økonomisk styring, sosiale forhold og miljøomsyn heng saman, og korleis desse påverkar samfunnet."
+   ]
+  }
  ]
 }

@@ -164,5 +164,51 @@
     "Design, teknologi og produksjon og kunde og kommunikasjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 interiør og eksponeringsdesign innebærer å bruke fagspråk til å formidle egne ideer, løsninger og faglige vurderinger. Videre innebærer det å lytte til og gi respons i spontan og forberedt samtale med kunder, kolleger og andre samarbeidspartnere om tjenester og bestillinger. Elevene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 interiør og eksponeringsdesign innebærer å bruke tekst, bilder, tegn, symboler og tegninger til å kommunisere skriftlig med kunder og samarbeidspartnere. Videre innebærer det å bruke fagspråk og varierte skrivestrategier og tilpasse tekster til ulike formål og mottakere. Det betyr å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Å kunne skrive innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 interiør og eksponeringsdesign innebærer å innhente, tolke, forstå og bruke fagressurser med tekst, bilder, tegn, symboler og arbeidstegninger. Videre innebærer det å bruke lesestrategier for å tolke og systematisere informasjon i ulike tekster, trekke faglige slutninger og bruke kilder på en kritisk måte som kan etterprøves."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 interiør og eksponeringsdesign innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke målestokk, gjøre oppmålinger og estimere tids- og materialforbruk i praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 interiør og eksponeringsdesign innebærer å bruke digitale ressurser til å produsere og bearbeide modeller og produkter. Videre innebærer det å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil også si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 interiør- og eksponeringsdesign handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle gode arbeidsrutiner og strategier for å møte og mestre forventninger fra kunder. Videre handler folkehelse og livsmestring om å bli trygg i møte med medelever, kunder og andre aktører i faget og om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 interiør og eksponeringsdesign handler bærekraftig utvikling om å reflektere over forbruk og gjenbruk av materialer og produkters varighet, livssyklus og miljøpåvirkning. Videre handler det om å reflektere over lønnsomheten i å utnytte ressurser."
+   ]
+  }
  ]
 }

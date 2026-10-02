@@ -151,5 +151,39 @@
     "Rettslære 1: Privatisten skal opp til ein munnleg eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nRettslære 2: Privatisten skal opp til ein skriftleg eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i rettslære inneber å lytte til og gi respons i spontan og førebudd samtale om rettslege forhold og problemstillingar. Det inneber òg å bruke juridisk metode og fagspråk i arbeid med rettslege emne og å byggje opp argumentasjon og tilpasse munnleg tekst til mottakar og formål. Munnlege ferdigheiter inneber i tillegg å bruke rettskjelder og andre kjelder på ein kritisk og etterprøvbar måte i munnleg samanheng."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i rettslære inneber å bruke varierte skrivestrategiar til å utforme tekstar og presentere rettslege løysingar og forhold i samfunnet. Det inneber òg å bruke fagspråk og juridisk metode i arbeid med juridiske problemstillingar og å byggje opp argumentasjon for å komme fram til rettsleg løysing. Det inneber òg å bruke rettskjelder og andre kjelder på ein kritisk og etterprøvbar måte. Dessutan inneber det å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i rettslære inneber å finne og kritisk vurdere eksplisitt og implisitt informasjon i tekstar om kjende og ukjende emne. Det inneber òg å systematisere informasjon i rettskjelder og andre kjelder for å trekkje faglege slutningar. Dessutan inneber det å kritisk vurdere perspektivet i og formålet med ulike kjelder."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i rettslære inneber å bruke digitale ressursar til å søkje etter og innhente informasjon og å kommunisere og presentere eige arbeid. Det inneber òg å vurdere, behandle og stille saman informasjon og å vise til rettskjelder og andre kjelder på ein etterprøvbar måte. Vidare inneber det å utvikle etisk medvit og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I rettslære handlar det tverrfaglege temaet demokrati og medborgarskap om rettsreglar som bidreg til å fremje demokratiet og dei demokratiske verdiane og spelereglane. Det handlar vidare om rettane og pliktene til enkeltpersonar og om korleis desse rettane og pliktene er ein føresetnad for eit fungerande demokrati. Dessutan handlar det om samanhengen mellom demokrati og sentrale menneskerettar."
+   ]
+  }
  ]
 }

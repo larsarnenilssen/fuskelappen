@@ -171,5 +171,45 @@
     "Entreprenørskap og bedriftsutvikling 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nEntreprenørskap og bedriftsutvikling 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i entreprenørskap og bedriftsutvikling innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og problemstillinger og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Muntlige ferdigheter innebærer og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i entreprenørskap og bedriftsutvikling innebærer å bruke fagspråk og varierte skrivestrategier for å utforme tekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon, å vurdere og begrunne valg av løsninger og anbefalinger, og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i entreprenørskap og bedriftsutvikling innebærer å bruke ulike kilder for å innhente informasjon om næringsliv og dagsaktuelle temaer for virksomheter. Det innebærer å sette seg inn i kjente og ukjente emner knyttet til oppstart og videreutvikling av virksomheter, og å finne, tolke, systematisere og kritisk vurdere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i entreprenørskap og bedriftsutvikling innebærer å hente ut, beskrive, tolke og analysere tallmateriale i tabeller og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, og sammenligne og presentere resultater på ulike måter på bakgrunn av grunnleggende økonomiske beregninger, modeller og statistikk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i entreprenørskap og bedriftsutvikling innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer videre å vurdere, bearbeide og sammenstille informasjon, være kildekritisk, og å vise til kilder slik at informasjonen lar seg etterprøve. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I entreprenørskap og bedriftsutvikling handler det tverrfaglige temaet bærekraftig utvikling om virksomheters ansvar i et sosialt, økonomisk og miljømessig perspektiv. Bærekraftig utvikling handler også om å reflektere over hvordan innovasjoner og utvikling av virksomheter påvirker samfunnet og bidrar til bærekraftig utvikling lokalt og globalt."
+   ]
+  }
  ]
 }

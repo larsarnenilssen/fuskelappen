@@ -180,5 +180,51 @@
     "Råvare, produksjon, salg og service og bransje og arbeidsliv: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 kokk- og servitørfag innebærer å kommunisere med kolleger, leverandører, kunder, gjester og brukere. Det innebærer også å tilpasse språket til mottaker, innhold og formål, og å lytte til og vise respekt for dem man snakker med. Videre innebærer det å bruke relevante faguttrykk, fremme egne synspunkter, drøfte problemstillinger og begrunne faglige valg."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 kokk- og servitørfag innebærer å utarbeide fagtekster, informasjonsmateriell, skriftlige planer og å dokumentere eget arbeid. Det innebærer videre å reflektere, bruke kilder kritisk og bruke faguttrykk ved skriving av tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 kokk- og servitørfag innebærer å forstå faglitteratur, lovtekster, oppskrifter, varedeklarasjoner og bruksanvisninger til maskiner og utstyr. Det innebærer også å forstå og følge kvalitetssystemer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 kokk- og servitørfag innebærer å bruke nøyaktige måleenheter og å regne om mellom dem. Videre innebærer det å regne om oppskrifter til ønsket mengde og å utføre enkle økonomiske utregninger og beregne næringsinnhold, pris og svinn."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 kokk- og servitørfag innebærer å bruke digitale ressurser i planlegging, produksjon, salg og dokumentasjon av arbeidsoppgaver. Videre innebærer det bruk av digitale løsninger til merking og bruk av digitale bestillings- og betalingssystemer. Det innebærer også å orientere seg i og finne fagstoff på nettet og å vise digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 kokk- og servitørfag handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet gjennom yrkesvalg og tilhørighet i et arbeids- og læringsfellesskap. Temaet handler videre om å kunne tilby produkter som er framstilt i tråd med kostrådene fra helsemyndighetene. Det handler også om å være bevisst på hvordan matens næringsinnhold og sammensetning påvirker helse. Dessuten handler det om å være bevisst på bransjens rolle som leverandør av trygg mat og gode matopplevelser."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 kokk- og servitørfag handler det tverrfaglige temaet demokrati og medborgerskap om å respektere andres synspunkter og å håndtere meningsforskjeller. Temaet handler videre om å ivareta verdiene i det demokratiske samfunnet vårt som grunnlag for profesjonell yrkesutøvelse og om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  }
  ]
 }

@@ -230,5 +230,57 @@
     "Elenergi og automatisering, kulde- og varmepumpeteknikk, og ventilasjonsteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk, handler om å bruke fagterminologi i samtale med andre og delta i faglige diskusjoner. Å drøfte sikkerhet og faglige løsninger inngår i ferdighetene. Det innebærer å utvikle et språk som er presist, og å uttrykke seg tydelig, slik at misforståelser og farlige situasjoner unngås."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk innebærer å uttrykke seg presist om ventilasjon og kuldetekniske temaer. Det innebærer å bruke et presist fagspråk for å beskrive valg av faglige løsninger. Det betyr også å lage dokumentasjon ved planlegging, gjennomføring og vurdering av arbeidet som beskriver arbeidet tydelig. Det betyr at språk, bilder og symboler skal være i henhold til standarder for varmepumpe og ventilasjons- og kuldeanlegg."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk innebærer å tilegne seg ny kunnskap og innsikt, finne fram til relevant informasjon og tolke fagtekster som bidrar til at arbeid på varmepumpe og ventilasjons- og kuldeanlegg blir utført i tråd med gjeldende regelverk, anbefalinger og produsentens tekniske dokumentasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk innebærer å gjøre matematiske beregninger på varmepumpe og ventilasjon- og kuldeanlegg og vurdere resultatet opp mot målte verdier. Å kunne regne på fysiske størrelser som temperatur, trykk, effekt og energi er også en del av ferdighetene. Det innebærer også å kunne hente informasjon om fysiske størrelser ut av tabeller og diagrammer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i Vg2 kulde-, varmepumpe- og ventilasjonsteknikk innebærer å innhente produktinformasjon, rapportere og foreta funksjonskontroll av systemer og enheter. Det innebærer også å programmere utstyr og komponenter som inngår i anleggene. Å utarbeide anleggsdokumentasjon digitalt inngår i ferdighetene."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I Vg2 kulde-, varmepumpe- og ventilasjonsteknikk handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsfølelse og stolthet over eget arbeid og å ha tiltro til egne ressurser. Videre handler det om gode arbeidsteknikker som forebygger helseutfordringer. Det handler også om hvordan elektrisitet og digitalisering bidrar til menneskers livskvalitet og velferd."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I Vg2 kulde-, varmepumpe- og ventilasjonsteknikk handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap og forståelse for et organisert og mer likestilt arbeidsliv, og hvordan arbeidslivet er bygd opp, inkludert trepartssamarbeidet og arbeidslivsorganisasjonenes roller i arbeidslivet. Det handler videre om hvordan elektronisk kommunikasjon og informasjonsspredning både kan støtte og true demokratiske prosesser."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I Vg2 kulde-, varmepumpe- og ventilasjonsteknikk handler det tverrfaglige temaet bærekraftig utvikling om å foreta etiske og ansvarlige valg av produkter og tekniske løsninger. Videre handler det om energieffektive tiltak og alternative energikilder og ulike dilemmaer dette kan medføre. Det handler også om hvordan valgte løsninger og elektriske produkter påvirker miljøet. Håndtering av avfall på en miljøvennlig og bærekraftig måte inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

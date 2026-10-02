@@ -117,5 +117,57 @@
     "Vg2 yrkesfaglige utdanningsprogram: Privatisten skal opp til muntlig eksamen. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i samfunnskunnskap innebærer å kunne formulere og fremme egne meninger og argumenter. Å lytte til, vurdere, gi respons på og videreutvikle innspill fra andre bidrar til større forståelse og respekt for meningsmangfold. Elevene utvikler muntlige ferdigheter i samfunnskunnskap når de drøfter, reflekterer og presenterer alene og i fellesskap. Gjennom å delta i muntlige aktiviteter kan elevene sette ord på sin egen læringsprosess og kompetanse i faget. I den samiske tradisjonen betyr det også å benytte seg av muntlig overføring av kunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i samfunnskunnskap innebærer å strukturere tanker og å utforme og arbeide med tekster tilpasset formålet. Det innebærer også å drøfte, dele og formidle informasjon skriftlig med digitale verktøy. Elevene tilegner seg fagkompetanse ved å skrive tekster der de bruker fagbegreper, faglige metoder og ulike perspektiver og kilder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i samfunnskunnskap innebærer å utforske, tolke, sammenligne informasjon og kritisk vurdere forskjellige kilder. Videre innebærer det å bruke varierte kilder for å sette seg inn i faglige og dagsaktuelle temaer. Lesing i samfunnskunnskap handler også om å reflektere over hvordan tekster med forskjellige perspektiver kan uttrykke ulike tenkemåter og argumenter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i samfunnskunnskap er å innhente, arbeide med, tolke og analysere data og vurdere informasjon og statistikk som er framstilt i tabeller og grafer. Ved å regne i samfunnskunnskap kan elevene bedre forstå og finne argumenter for faglige forhold og sammenhenger. Elevene må også kunne regne for å forvalte pengebruk og få oversikt over personlig økonomi."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i samfunnskunnskap innebærer å kunne bruke digitale verktøy til å finne, behandle og navigere i digitale kilder og å velge ut informasjon og argumenter. Det innebærer også å kunne utøve digital kildekritikk og vise til kilder på en pålitelig måte. Elevene skal kunne bruke forskjellige medietyper til å skape digitale produkter og til å vurdere og forbedre sine egne produkter. De skal kunne forstå hvordan algoritmer påvirker informasjonssøk, utvikle digital dømmekraft og følge regler og normer for digital samhandling og kommunikasjon, personvern og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I samfunnskunnskap handler det tverrfaglige temaet folkehelse og livsmestring om at elevene utvikler kunnskap om hva og hvem som påvirker identiteten, selvfølelsen, tryggheten og tilhørigheten deres. I faget møter elevene temaer som kjønn, seksualitet, grensesetting, rus, digitale spor og personlig økonomi. Dette kan bidra til at de gjør gode livsvalg og får forståelse og respekt for mangfold og for andres verdier og livsvalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I samfunnskunnskap handler det tverrfaglige temaet demokrati og medborgerskap om å øke elevenes kritiske bevissthet om samfunnet de er deltakere i. Elevene skal utforske hvordan de kan påvirke samfunnet rundt seg i dag og i framtiden. Det innebærer at de skal lytte til og la seg utfordre av mennesker med andre synspunkter enn de selv har. Gjennom faget skal elevene kunne identifisere områder der menneskeverdet blir utfordret, for eksempel i forbindelse med menneskehandel og undertrykkelse. I tillegg skal faget gi dem kunnskap om nasjonale og internasjonale institusjoner og avtaler, inkludert hva internasjonale konvensjoner har å si for rettighetene til urfolk. Forståelse om sammenhengene mellom individets rettigheter og plikter, slik at de kan bli aktive medborgere, inngår også i dette."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I samfunnskunnskap handler det tverrfaglige temaet bærekraftig utvikling om hvordan elevene kan bidra til en bærekraftig samfunnsutvikling gjennom å være aktive medborgere. Dette innebærer å forstå sammenhenger mellom individuelle valg, samfunnsstrukturer og naturens tålegrenser. Videre skal elevene reflektere over hvordan politikk, konflikter, økonomi, teknologi og ressursbruk virker sammen og påvirker grupper i samfunnet. Bærekraftige løsninger innebærer også å ivareta verdier som likeverd og mangfold."
+   ]
+  }
  ]
 }

@@ -108,5 +108,45 @@
     "Opplæringen i vg3 sveisefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 sveisefaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer også å bruke faglige uttrykksmåter, fremme egne synspunkter, drøfte problemstillinger og bruke et presist språk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 sveisefaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Videre innebærer det å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å bruke uttrykksformer som bilder, figurer og symboler og behandle dokumenter på en kritisk og reflektert måte."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 sveisefaget innebærer å finne og vurdereinnhold i tekster og å forstå lovverk, forskrifter og arbeidsbeskrivelser, prosedyrer, håndbøker og bedriftsintern informasjon. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og forskrifter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 sveisefaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, utføre beregninger for materialvalg, forbruk og tidsbruk som grunnlag for innstillinger på og korrigeringer av utstyr og maskiner. Videre innebærer det økonomistyring knyttet til materialvalg, utstyrsvalg og valg av sveisemetode."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 sveisefaget innebærer å bruke digitale ressurser til kommunikasjon, planlegging, produksjon og dokumentasjon av sveiseoppdrag. Det innebærer også feilsøking og bruk av maskiner, verktøy og utstyr. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 sveisefaget handler det tverrfaglige temaet bærekraftig utvikling om hvordan bruk av teknologi og industrielle prosesser kan bidra til et mer bærekraftig samfunn. Videre handler det om hvordan kunnskap om og forståelse for ulike prosesser og hvordan man bruker ulike materialer i nytenkende og kvalitetsbevisst produksjon, påvirker miljøavtrykket. Det handler også om å utnytte begrensede ressurser og ulike energikilder på en bærekraftig måte."
+   ]
+  }
  ]
 }

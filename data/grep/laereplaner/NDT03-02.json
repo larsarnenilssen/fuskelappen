@@ -112,5 +112,38 @@
     "Opplæringen i vg3 NDT-kontrollørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på tre til fire virkedager."
    ]
   }
- ]
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 NDT-kontrollørfaget innebærer å lytte til og gi respons i spontan og forberedt samtale, og å tilpasse tekst til mottaker og formål. Videre innebærer det å forstå og bruke fagterminologi og bruke et presist språk."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 NDT-kontrollørfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforme rapporter, og presentere testresultater og risikovurderinger. Videre innebærer det å drøfte tiltak og problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 NDT-kontrollørfaget innebærer å finne og vurdere informasjon i tekster, og å bruke informasjon i kilder på en kritisk måte som lar seg etterprøve. Det innebærer å forstå og bruke regelverk, spesifikasjoner, tekniske tegninger, instrukser, standarder og arbeidsprosedyrer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 NDT-kontrollørfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne mengder, tid, strøm, hastighet, trigonometri og avstand. Videre innebærer det å kalibrere og justere utstyr."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 NDT-kontrollørfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon. Det innebærer også å bruke systemer for å planlegge, registrere, dokumentere, rapportere og kommunisere. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": []
 }

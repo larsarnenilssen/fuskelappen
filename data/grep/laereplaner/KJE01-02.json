@@ -198,5 +198,57 @@
     "Kjemi 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Skriftlig eksamen skal ikke ha forberedelsesdel. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i kjemi innebærer å delta i fagsamtaler og dele og utvikle kompetanse med kjemifaglig innhold basert på observasjoner, erfaringer og informasjon. Det innebærer også å bruke kjemifaglige begreper og terminologi for å beskrive, forklare og drøfte kjemifaglige problemstillinger og begrunne egne holdninger og valg."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kjemi innebærer å produsere og bearbeide tekster tilpasset mottaker, innhold og formål, og bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å bruke kjemifaglige argumenter, terminologi, reaksjonsligninger, ulike typer illustrasjoner, formler og symboler på en hensiktsmessig måte. Videre innebærer det å bruke observasjoner, erfaringer og informasjon til å strukturere og formulere tekster om eksperimenter og forsøk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kjemi innebærer å identifisere, tolke og kritisk vurdere kjemifaglig informasjon fra ulike typer tekster. Det innebærer også å følge kjemifaglige resonnementer og argumenter og å forstå faglige begreper, terminologi, reaksjonsligninger, symboler, modeller, grafer og figurer. Å kunne lese i kjemi innebærer å følge, forstå og vurdere forsøksbeskrivelser."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i kjemi innebærer å innhente, bearbeide, tolke og presentere ulike typer data. Det innebærer også å gjøre støkiometriske beregninger, velge hensiktsmessige metoder og måleutstyr og vurdere gyldighet, pålitelighet og usikkerhet i resultater og framstillinger. Videre innebærer å regne i kjemi å forstå og bruke bearbeidet tallmateriale i faglig argumentasjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i kjemi innebærer å bruke digitale ressurser til å utforske, illustrere og utdype kjemifaglig stoff. Det innebærer også å bruke digitale ressurser til å samle inn og bearbeide data, å gjøre beregninger og lage visualiseringer og å presentere resultater fra eget og andres arbeid. Videre innebærer digitale ferdigheter å bruke modellering for å utforske kjemiske fenomener."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kjemi handler det tverrfaglige temaet folkehelse og livsmestring om å forstå hvordan og hvorfor helsen vår blir påvirket av både levevanene våre og stoffer i miljøet rundt oss. Videre handler temaet om kjemiens betydning for forskning og teknologiutvikling knyttet til helserelaterte problemstillinger."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I kjemi handler det tverrfaglige temaet demokrati og medborgerskap om å bruke kompetanse i kjemi til kritisk å vurdere påstander og resonnementer i samfunnsdebatten. Det handler også om å kunne bruke kjemikompetanse i diskusjoner om hvordan samfunnet kan finne løsninger på lokale og globale problemer knyttet til klimaendringer, vann- og matsikkerhet, helse og energi."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I kjemi handler det tverrfaglige temaet bærekraftig utvikling om å forstå kjemiske prosesser som har betydning for miljøet og klimaet, og kompetanse til å gjøre bærekraftige valg. Bærekraftig utvikling i kjemi handler også om å finne løsninger for å forvalte og gjenbruke jordas naturressurser på en bærekraftig måte."
+   ]
+  }
  ]
 }

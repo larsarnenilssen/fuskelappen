@@ -212,5 +212,57 @@
     "Kunst og visuelle verkemiddel 3: Privatisten skal opp til praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i kunst og visuelle verkemiddel inneber å kunne samtale om og formidle innhald og tankar knytte til idé og prosess. Det inneber òg å bruke fagspråk i presentasjonar og diskusjonar for å analysere, tolke, vurdere og uttale seg om kunstuttrykk og visuelle uttrykk. Vidare inneber det å kunne skildre opplevingar og meiningar og forsvare eigne val."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kunst og visuelle verkemiddel inneber å kunne kommunisere eigne idear og haldningar i ulike visuelle uttrykk. Det inneber òg å kunne visualisere informasjon og byggje opp tekstar ved hjelp av fagomgrep og visuelle verkemiddel. Vidare inneber det å kunne kombinere tekst, teikn, bilete og symbol i arbeid med layout og å utforme fagleg visuelt materiale."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kunst og visuelle verkemiddel inneber å kunne forstå, undersøkje, bruke og reflektere over tekst og visuell informasjon. Vidare inneber det å kunne lese visuelle verkemiddel og kombinasjonar av former, strukturar, symbol, tekst og bilete."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i kunst og visuelle verkemiddel inneber å kunne definere form, proporsjonar og volum og å kunne bruke dette i det praktiske arbeidet. Det inneber vidare å arbeide med komposisjon, skala, målestokk og geometri."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i kunst og visuelle verkemiddel inneber å kunne bruke eigna programvare og teknologi til å produsere sjølvstendige kunstnariske arbeid, visualiseringar, presentasjonar og dokumentasjon. Det inneber òg å kunne innhente og sortere informasjon og handtere ein brukar- og delingskultur i digitale og sosiale medium. Vidare inneber det å vise dømmekraft og vere bevisst på reglar for opphavsrett og personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I kunst og visuelle verkemiddel handlar det tverrfaglege temaet folkehelse og livsmeistring om korleis visuelle uttrykk, visuelle medium og visuell kunst blir brukte for å uttrykkje kjensler, meiningar og idear. Når elevane får tolke og vurdere sine eigne og andre sine meiningar og visuelle ytringar, kan det bidra til å styrkje sjølvbiletet deira."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I kunst og visuelle verkemiddel handlar det tverrfaglege temaet demokrati og medborgarskap om å bruke, forstå og respektere visuelle meiningsuttrykk på tvers av kulturelle, sosiale og individuelle forskjellar. Vidare handlar det om korleis kunst kan spegle, kritisere og setje søkjelys på aktuelle tema i samtida."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I kunst og visuelle verkemiddel handlar det tverrfaglege temaet berekraftig utvikling om det etiske ansvaret vi har for å ta vare på ressursar, naturen og miljøet. Vidare handlar det om å vurdere materialbruk, og velje berekraftige og formålstenlege løysingar."
+   ]
+  }
  ]
 }

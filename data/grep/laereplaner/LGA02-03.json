@@ -160,5 +160,51 @@
     "Produksjon og tjenesteyting og forvaltning og drift: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 landbruk og gartnernæring innebærer å presentere og forklare produkter, tjenester og produksjonsmetoder for ulike målgrupper. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og tilpasse kommunikasjon til mottaker og formål. Det betyr også å lytte og ta del i faglige diskusjoner, å beskrive arbeidsoppgaver og å veilede andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 landbruk og gartnernæring innebærer å planlegge og presentere prosesser, produkter og tjenester og å dokumentere og evaluere disse. Å kunne skrive betyr å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å kommunisere med kunder og leverandører og andre aktuelle grupper og å oppfylle kravene til dokumentasjon som ligger i de ulike kontrollsystemene."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 landbruk og gartnernæring innebærer å lese og forstå arbeidsinstrukser, planer, kart, bruksanvisninger og faglitteratur. Det betyr også å sette seg inn i og forstå regelverk og kvalitetskriterier. Å kunne lese betyr å tolke dokumenter og avtaler som er gjort med kunder, leverandører og andre aktuelle grupper. Videre betyr det å følge med og tilegne seg informasjon i debatter knyttet til faget og næringen i ulike medier."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 landbruk og gartnernæring innebærer å bruke tall og beregninger for å gjennomføre og dokumentere en aktuell produksjon eller tjeneste. Det betyr å beregne areal og gjøre omregninger mellom volum og masse. Videre innebærer det å gjøre overslagsregning og prosentregning for å kunne gjennomføre innkjøp og salg. Det innebærer også å utarbeide og forstå tabeller, diagrammer og statistikk samt å sette opp budsjett og regnskap."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 landbruk og gartnernæring innebærer å bruke og navigere i relevante digitale ressurser og å tilegne seg, behandle og vurdere informasjon fra digitale kilder. Digitale ferdigheter handler også om å tilføre nødvendig rådata til digitale verktøy, å kommunisere og samhandle via digitale løsninger, å formidle og presentere produkter og tjenester og å skaffe til veie relevant informasjon for å planlegge og optimalisere produksjonen. Det innebærer også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 landbruk og gartnernæring handler demokrati og medborgerskap om å ha kunnskap om fagorganisasjonene og samvirketankegangen i næringen og om muligheten til å påvirke gjennom demokratiske prosesser. Det handler også om å ha kjennskap til rettigheter og plikter i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 landbruk og gartnernæring handler det tverrfaglige temaet bærekraftig utvikling om å være bevisst hvordan profesjonell landbruks- og gartnervirksomhet påvirker naturen, miljøet, klimaet og samfunnet rundt oss. Det handler videre om hvordan man kan sikre en bærekraftig produksjon og forvaltning av ressursgrunnlaget for kommende generasjoner."
+   ]
+  }
  ]
 }

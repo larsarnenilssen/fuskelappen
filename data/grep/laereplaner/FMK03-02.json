@@ -124,5 +124,45 @@
     "Opplæringen i vg3 finmekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 finmekanikerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og å kommunisere og diskutere faglige løsninger med kunder, kolleger og leverandører. Det innebærer også å drøfte og reflektere over faglige emner og bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 finmekanikerfaget innebærer å utforme tekster tilpasset mottaker og formål og å rapportere til kunder, kolleger og leverandører. Det innebærer også å fylle ut avviksskjemaer og målerapporter, å utarbeide rapporter knyttet til planlegging, utførelse og kontroll av arbeidet, og å dokumentere ulike arbeidsoppgaver."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 finmekanikerfaget innebærer å finne og vurdere informasjon i tekster og å bruke kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å sammenligne, tolke og systematisere informasjon. Videre innebærer det å forstå og bruke arbeidsbeskrivelser, instrukser, tegninger, håndbøker, prosedyrer og standarder, og å forstå tekniske underlag."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 finmekanikerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å benytte formler og beregninger i produksjonsprosessen. Videre innebærer det å beregne toleranser, innstillinger av maskiner og bedriftens produksjonskostnader."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 finmekanikerfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer også å bruke styringssystemer til planlegging, produksjon, dokumentasjon og kommunikasjon. Videre innebærer det å programmere og styre maskiner. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 finmekanikerfaget handler det tverrfaglige temaet bærekraftig utvikling om bærekraftige hensyn knyttet til valg og bearbeiding av materialer. Det handler også om hvordan valg av materialer, kjemikalier og metoder kan bidra til å forebygge og redusere ressursforbruk, utslipp og avfall. Videre handler det om bruk av nasjonale og internasjonale standarder for bærekraftig utvikling."
+   ]
+  }
  ]
 }

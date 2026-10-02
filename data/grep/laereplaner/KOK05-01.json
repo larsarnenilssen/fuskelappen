@@ -210,5 +210,57 @@
     "Opplæringen i kokkfaget – modulstrukturert opplæring for voksne skal avsluttes med en fagprøve. Fagprøven lages ut fra læreplanen i vg3 kokkfaget (KOK03‑02). Alle skal opp til fagprøven som skal gjennomføres over to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 kokkfaget innebærer å begrunne faglige valg, bruke faguttrykk og kommunisere presist og forståelig. Videre innebærer det å tilpasse språket til mottaker, innhold og formål og lytte til og vise respekt for kolleger, gjester og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 kokkfaget innebærer å bruke faguttrykk i arbeid med menyer, planer og i dokumentasjon av eget arbeid. Videre innebærer det å dokumentere utført kvalitetskontroll og avviksbehandling. Det innebærer også å anvende kilder på en måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 kokkfaget innebærer å sette seg inn i og forstå faglitteratur, bestillinger, oppskrifter, framgangsmåter, deklarasjoner og bruksanvisninger. Det innebærer også å forstå regelverk, prosedyrer, instrukser og rutiner i kvalitetssystemer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 kokkfaget innebærer å velge og bruke nøyaktige og hensiktsmessige måleenheter. Videre innebærer det å regne ut mengder og bruke prosentregning i utvikling og endring av oppskrifter. Å kunne regne innebærer også å utføre kalkulasjon og næringsberegning."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 kokkfaget innebærer å bruke digitale ressurser og systemer, maskiner og utstyr i hele produksjonskjeden. Videre innebærer det å bruke og beskytte digital informasjon ved kontakt med eksterne i tråd med virksomhetens rutiner. Det innebærer også digital dømmekraft og respekt for opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 kokkfaget handler det tverrfaglige temaet folkehelse og livsmestring om å reflektere over sammenhengen mellom kosthold og folkehelse. Videre handler det om å utvikle en yrkesidentitet som bidrar til et positivt selvbilde gjennom mestring og deltakelse i et faglig og kollegialt yrkesfellesskap."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 kokkfaget handler det tverrfaglige temaet demokrati og medborgerskap om respekt for ulike religioner, kulturer og mattradisjoner. Videre handler det om plikter og rettigheter i trepartssamarbeidet der arbeidsgiver, arbeidstaker og lovgivende myndighet jobber sammen om å utvikle et bedre arbeidsliv. Demokrati og medborgerskap handler også om å motvirke arbeidslivskriminalitet, diskriminering og forskjellsbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 kokkfaget handler det tverrfaglige temaet bærekraftig utvikling om en verden i endring som trenger et mer tilpasset forbruk av mat og drikke. Gjennom kunnskap om råvaretilgang og ressursutnytting, teknologiutvikling, avfallshåndtering, gjenbruk og resirkulering skal lærlingene forstå hvordan miljøet påvirkes lokalt og globalt."
+   ]
+  }
  ]
 }

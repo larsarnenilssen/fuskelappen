@@ -108,5 +108,45 @@
     "Opplæringen i brannforebyggerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i brannforebyggerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger knyttet til brannforbygging og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i brannforebyggerfaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i brannforebyggerfaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne og tolke informasjon, og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i brannforebyggerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer videre å beregne mengder og størrelser knyttet til fyringsteknikk. Det innebærer å kunne ta mål, anvende målestokk etter målsatte tegninger og foreta beregninger knyttet til fyringsteknikk og ulike branntekniske løsninger. Det innebærer også å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i brannforebyggerfaget innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer digitale ferdigheter å søke etter og innhente informasjon og å vurdere troverdigheten av informasjonen. Det innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I brannforebyggerfaget handler det tverrfaglige temaet bærekraftig utvikling om å kartlegge brannårsaker og miljøutslipp ved bruk av fyringsanlegg og om å feie skorsteiner for å sikre bygg mot brann og minimere byggenes belastning på miljøet. Det handler videre om å vurdere risikoen ved oppvarming av bygg og boliger for å sikre det indre og ytre miljøet."
+   ]
+  }
  ]
 }

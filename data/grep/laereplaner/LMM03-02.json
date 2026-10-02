@@ -136,5 +136,45 @@
     "Opplæringa i vg3 landbruksmaskinmekanikarfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 landbruksmaskinmekanikarfaget inneber å kunne lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å kunne bruke fagterminologi og forstå uttrykksmåtar og å kunne drøfte og reflektere over fagrelaterte emne og problemstillingar. Vidare inneber det å kunne kommunisere og tilpasse munnleg tekst til mottakaren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 landbruksmaskinmekanikarfaget inneber å kunne bruke fagspråk for å utforme tekstar tilpassa mottakaren og formålet. Det inneber òg å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Vidare inneber det å kunne utarbeide rapportar og sluttdokumentasjon på utført arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 landbruksmaskinmekanikarfaget inneber å kunne finne og vurdere informasjon i tekstar, arbeidsbeskrivingar, prosedyrar, sikkerheitsdatablad, teknisk litteratur, rettleiingar, spesifikasjonar frå fabrikant og standardar. Det inneber òg å kunne samanlikne, tolke og systematisere informasjon, å forstå lover og forskrifter og å forstå og kunne følgje arbeidsbeskrivingar, prosedyrar, teknisk dokumentasjon og standardar. Vidare inneber det å kunne lese informasjon for å vere i stand til å delta aktivt i arbeidsmiljøet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 landbruksmaskinmekanikarfaget inneber å kunne utføre utrekningar knytte til trykk, temperatur, elektriske storleikar, blandingsforhold i væsker og økonomiske konsekvensar av ressursbruk og metodeval. Det inneber òg å kunne gjennomføre målingar og registreringar i samsvar med teikningar, skjema og standardar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 landbruksmaskinmekanikarfaget inneber å kunne bruke digitale ressursar til planlegging, dokumentasjon, feilsøking, reparasjon og testing. Det inneber òg å kunne bruke digitale ressursar til diagnostisering, måling, kalibrering, berekning og overvaking. Vidare inneber det å kunne søkje etter og innhente informasjon og kommunisere digitalt. I tillegg inneber det å utvikle etisk medvit og vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 landbruksmaskinmekanikarfaget handlar det tverrfaglege temaet berekraftig utvikling om refleksjon over og bruk av teknologi og alternative energikjelder. Det handlar òg om miljømedvitne val ved reparasjon og vedlikehald av landbruksmaskiner og utstyr og om bruk av kjemikaliar, oljar og væsker med redusert miljøavtrykk. Vidare handlar det om bruk av returordningar for metall og komponentar og om kjeldesortering."
+   ]
+  }
  ]
 }

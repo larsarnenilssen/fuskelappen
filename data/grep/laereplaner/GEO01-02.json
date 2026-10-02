@@ -82,5 +82,45 @@
     "Vg2 utdanningsprogram for idrettsfag, musikk, dans og drama, kunst, design og arkitektur og medier og kommunikasjon: Privatisten skal opp til munnleg eksamen. Munnleg eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i geografi inneber å kunne presentere eige arbeid med geografiske tema og å kunne forklare og drøfte problemstillingar ved å argumentere, lytte og gi respons. Gjennom å delta i munnlege aktivitetar kan elevane setje ord på sin eigen læringsprosess og kompetanse i geografifaget."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å skrive i geografi inneber å utforme og arbeide med faglege tekstar tilpassa formålet, for å dele, formidle og presentere informasjon skriftleg. Ved å skrive i geografi kan elevane strukturere tankar, planleggje arbeid og dokumentere observasjonar. Å skrive i geografi inneber òg å utforske, beskrive, drøfte og vurdere geografiske forhold og å bruke og vise til kjelder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å lese i geografi inneber å utforske, tolke og reflektere over innhaldet i ulike kjelder som tekst, kart, bilete, figurar og statistikk. Vidare inneber det å finne informasjon og bevisst velje og velje bort ulike kjelder, å kjenne att argumentasjon og å skilje mellom meiningar, fakta og påstandar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å rekne i geografi inneber å kunne innhente, arbeide med, tolke, samanlikne og vurdere talmateriale, tabellar og grafiske framstillingar. Ved å rekne i geografifaget kan elevane betre forstå geografiske forhold og finne grunngjevingar for geografiske samanhengar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i geografi inneber å kunne bruke digitale ressursar til å finne, behandle og navigere i digitale kjelder, utøve digital kjeldekritikk og velje ut informasjon i digitale kjelder, inkludert digitale kart. Dei digitale ferdigheitene inneber òg å kunne bruke digitale ressursar til å utforme faglege produkt og lage geografiske illustrasjonar for å presentere og utvikle fagleg kompetanse."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I geografifaget handlar det tverrfaglege temaet berekraftig utvikling om at elevane skal utvikle kunnskap om årsaker til og konsekvensar av klimaendringar og fordeling og bruk av ressursar no og i framtida. Elevane skal lære om kva konsekvensar endringar i lokaliseringa av næringsliv, arealbruk, auka globalisering og teknologisk utvikling kan ha for natur og menneske. Gjennom geografifaget skal elevane reflektere over problemstillingar som synleggjer at berekraftig utvikling handlar om å sjå sosiale, økonomiske og miljømessige forhold i samanheng."
+   ]
+  }
  ]
 }

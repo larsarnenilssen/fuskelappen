@@ -413,8 +413,16 @@ Eier har gitt innspill til «Fag og vurdering» og fase 1, og svart på B1–B6.
    - Overordnet del har mye tekst og skal være lett å navigere: innholdsregister med lenker, søk, og tekstene i bokser som er lukket til brukeren åpner dem, med nye lukkede bokser inni.
    - Fagarket viser grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del.
    - Kilder: Grep har grunnleggende ferdigheter og tverrfaglige temaer (koder og titler). Teksten i overordnet del hentes fra Lovdatas datasett (forskrift) eller fra udir.no. Det avgjøres i pakken.
+7. **Lov og forskrift** (eier 02.10.2026, gjøres før fase 4)
+   - Ny modul «Lov og forskrift» under «Oppslag», ved siden av Begreper: opplæringslova og opplæringsforskrifta med innholdsregister (kapitler og paragrafer), søk i hele teksten og bokser som er lukket til brukeren åpner dem, som i overordnet del.
+   - Teksten hentes hver uke fra Lovdatas gratis datasett (NLOD 2.0) i kildesjekken, valideres og vises uendret. Opplæringslova og forskriften er fastsatt på nynorsk og vises uoversatt, merket med målform. Endringer per paragraf står i kontrollsaken, som for overordnet del.
+   - Hver paragraf har egen adresse, så begreper, fagark og modulene i fase 4–8 kan lenke rett til den, og en lenke til Lovdata.
+   - Søket på forsiden finner paragrafene på nummer («§ 11-1», «11-1») og tittel. Nye begreper der det trengs, f.eks. lov, forskrift og paragraf/ledd.
+   - Kildene `opplaeringslova` og `opplaeringsforskrifta` slås på i kilderegisteret. Lovdata kan ikke nås fra utviklingsmiljøet, bare fra GitHub Actions. Leseren lages derfor mot et lite utdrag i testene, og første ekte henting kjøres i Actions før modulen publiseres.
+   - Omfang (eier 02.10.2026): delene som gjelder videregående opplæring og fagopplæring, tolket vidt. Formål og andre generelle bestemmelser som også gjelder videregående (f.eks. skolemiljø, vurdering, tilpasset opplæring og individuell tilrettelegging), tas med. Kapitler som bare gjelder grunnskolen, tas ikke med. Utvalget legges fram for eier som en liste over kapitler før modulen bygges.
+   - Andre forskrifter kan være aktuelle, f.eks. om inntak. Hvilke som finnes og hva de dekker, kartlegges i pakken og legges fram for eier som forslag. De kan tas inn med samme henting og visning.
 
-Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) pakke 3 i 0.13.0 (avgjørelse 031) og pakke 4 i 0.14.0, 01.10.2026. Eier ba 01.10.2026 i tillegg om dempede diagramfarger i mørk visning, egen bakgrunn i «Flere kalkulatorer», punktum i oppsummeringen og periodebeskjeftigelse i teksten om Arbeidsplan. Det kom med i pakke 4. Nytt design for fagarket og fagtypefarger i fagsøket kom i 0.15.0 (avgjørelse 032). Etter tre prototyper fikk alle fire kalkulatorene skjemaet i fargede deler i 0.16.0 (avgjørelse 033), før pakke 5. Appen fikk navnet Fuskelappen, ny logo og en roligere forside i 0.17.0 (avgjørelse 034). Pakke 5 (Opplæringsløp) kom i 0.18.0 (avgjørelse 035). Etter eiers gjennomgang fikk Opplæringsløp bedre oversikt, sortering etter kildene, «Inngår i tilbud» på fagarket, navn på nynorsk og merknader om avvik i 0.19.0 (avgjørelse 036). Neste er pakke 6 (Læreplanverket).
+Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) pakke 3 i 0.13.0 (avgjørelse 031) og pakke 4 i 0.14.0, 01.10.2026. Eier ba 01.10.2026 i tillegg om dempede diagramfarger i mørk visning, egen bakgrunn i «Flere kalkulatorer», punktum i oppsummeringen og periodebeskjeftigelse i teksten om Arbeidsplan. Det kom med i pakke 4. Nytt design for fagarket og fagtypefarger i fagsøket kom i 0.15.0 (avgjørelse 032). Etter tre prototyper fikk alle fire kalkulatorene skjemaet i fargede deler i 0.16.0 (avgjørelse 033), før pakke 5. Appen fikk navnet Fuskelappen, ny logo og en roligere forside i 0.17.0 (avgjørelse 034). Pakke 5 (Opplæringsløp) kom i 0.18.0 (avgjørelse 035). Etter eiers gjennomgang fikk Opplæringsløp bedre oversikt, sortering etter kildene, «Inngår i tilbud» på fagarket, navn på nynorsk og merknader om avvik i 0.19.0 og 0.19.1 (avgjørelse 036). Pakke 6 (Læreplanverket) kom i 0.20.0 (avgjørelse 037), med overordnet del fra udir.no. Samtidig fikk overskriften navnet «Læreplanverket», med boksene Overordnet del, Opplæringsløp og Fag og læreplaner, som Udirs tre deler (eier 02.10.2026).
 
 Begrepsbanken utvides der det passer i hver pakke. Nytt og endret innhold får `kontrollert: null` og kontrollspørsmål med kilder. Fasittestene endres ikke.
 
@@ -435,6 +443,8 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 **Kontrollpunkt:** Eier vurderer om illustrasjonen er riktig og pedagogisk nyttig.
 
 ### Fase 4 – Tilpasset opplæring og individuell tilrettelegging
+
+Bygger på pakke 7 i fase 2 (Lov og forskrift): forklaringene lenker til paragrafene der.
 
 **Leveranser**
 
@@ -511,8 +521,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 | SFS 2213 med vedlegg 1 og protokoller (KS) | nasjonal | side | 1–3 |
 | KS-hovedtariffavtalen | nasjonal | side | 1, 3 |
 | Arbeidsmiljøloven | nasjonal | Lovdata-datasett | 1, 3 |
-| Opplæringslova | nasjonal | Lovdata-datasett | 4–8 |
-| Forskrift til opplæringslova, inkludert vurderingsbestemmelsene | nasjonal | Lovdata-datasett | 4–8 |
+| Opplæringslova | nasjonal | Lovdata-datasett | 2 (pakke 7), 4–8 |
+| Forskrift til opplæringslova, inkludert vurderingsbestemmelsene | nasjonal | Lovdata-datasett | 2 (pakke 7), 4–8 |
 | Grep: fag, læreplaner, vurderingsordninger, årstimetall (Udir, NLOD) | nasjonal | grep | 2, 3, 6 |
 | Udirs veileder om tilpasset opplæring og individuell tilrettelegging | nasjonal | side | 4 |
 | Overordnet del av læreplanverket (Udir) | nasjonal | side | 2, 4, 6 |

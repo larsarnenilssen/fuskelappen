@@ -455,5 +455,57 @@
     "Romteknologi og satellitteknikk, romfysikk og elektronikk og kommunikasjonsteknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 romteknologi innebærer å lytte og gi respons i samtale med involverte parter i arbeid med kommunikasjonsteknologi, satellitteknologi og telemetrisystemer. Det innebærer å bruke fagterminologi og tilpasse kommunikasjonen til mottakeren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 romteknologi innebærer å bruke fagterminologi, symboler og prefikser ved planlegging og utarbeidelse av dokumentasjon. Det innebærer også å kommunisere skriftlig tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 romteknologi innebærer å søke etter og vurdere informasjon i fagtekster, teknisk dokumentasjon, gjeldende regelverk og instrukser. Det innebærer også å sammenligne og tolke informasjon, trekke faglige slutninger og å holde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 romteknologi innebærer å utføre matematiske beregninger i planlegging og dimensjonering og å vurdere måleresultater opp mot beregnede verdier. Det innebærer også å hente og tolke informasjon fra tabeller og diagrammer. Videre innebærer det å beregne aktuelle verdier og bruke symboler og prefikser."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 romteknologi innebærer å anvende digitale verktøy og tjenester til å planlegge, utføre, og verifisere oppgaver. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "Folkehelse og livsmestring I vg3 romteknologi handler det tverrfaglige temaet folkehelse og livsmestring om betydningen av å oppleve mestring og stolthet over eget arbeid på kommunikasjonsteknologi, satellitteknologi og telemetrisystemer som grunnlag for god psykisk helse. Det handler også om verdien av å oppleve tilhørighet og trygghet i et arbeidsmiljø preget av samarbeid med andre, uavhengig av kjønn og kultur. Videre handler det om valg av arbeidsmetoder og bruk av verneutstyr for å unngå sykdom og helsemessige utfordringer."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 romteknologi handler det tverrfaglige temaet demokrati og medborgerskap om å delta i demokratiet og utvikle kunnskap om det organiserte arbeidslivets forutsetninger, verdier og regler. Det handler også om å utvikle kunnskap om arbeidstakers plikter og rettigheter og hvordan trepartssamarbeidet er med på å utvikle arbeidslivet. Videre handler det om hvordan et regulert arbeidsliv bidrar til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 romteknologi handler det tverrfaglige temaet bærekraftig utvikling om kunnskap til å foreta etiske og ansvarlige valg av kommunikasjonsteknologi, satellitteknologi og telemetrisystemer i yrkesoppgavene. Det handler videre om å utvikle kompetanse til å håndtere avfall på en miljøvennlig og bærekraftig måte og om hvilke miljømessige konsekvenser ressursbruken i romteknologi har lokalt, regionalt og globalt. Videre handler det om å utvikle kompetanse på alternative kilder til elektrisk energi og hvilke dilemmaer som kan oppstå ved utbygging og bruk av teknologi, og hvordan disse kan håndteres."
+   ]
+  }
  ]
 }

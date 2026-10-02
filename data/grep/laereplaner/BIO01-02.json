@@ -155,5 +155,51 @@
     "Biologi 1: Privatisten skal opp til ein munnleg-praktisk eksamen. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen.\nBiologi 2: Privatisten skal opp til ein skriftleg eksamen og ein munnleg-praktisk eksamen. Skriftleg eksamen blir utarbeidd og sensurert sentralt. Munnleg-praktisk eksamen blir utarbeidd og sensurert lokalt. Skriftleg eksamen skal ikkje ha førebuingsdel. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i biologi inneber å lytte og gi respons i samtalar om biologiske samanhengar og prosessar. Vidare handlar det om å bruke fagleg omgrepsapparat i drøfting og refleksjon over problemstillingar, bygge opp argumentasjon og grunngi eigne val munnleg, og å tilpasse munnleg tekst til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i biologi inneber å produsere og bearbeide ulike typar tekstar tilpassa mottakar, innhald og formål, og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Det inneber òg å formulere spørsmål og hypotesar som det er mogleg å argumentere for og drøfte i tilknyting til faget. Vidare inneber det å bruke biologifaglege omgrep til å strukturere og formulere tekstar for å skildre eigne observasjonar, erfaringar, resultat og undersøkingar knytte til feltarbeid og forsøk."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i biologi inneber å identifisere og tolke fagleg informasjon og å forstå omgrep, symbol og modellar i ulike fagtekstar. Å kunne lese i biologi inneber òg å følgje, forstå og vurdere forsøksbeskrivingar. Det inneber vidare å innhente, vurdere og bruke kjelder på ein kritisk måte."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i biologi inneber å behandle og tolke informasjon frå innsamla datamateriale, forsøk og feltarbeid, og å vurdere pålitelegheit, trendar og avvik. Å rekne i biologi inneber òg å velje formålstenlege metodar og måleutstyr for å samle inn data på ein vitskapleg måte. Det inneber vidare å utarbeide og framstille eigne resultat, gjennomføre enkle statistiske berekningar for å teste hypotesar, og bruke talmateriale i fagleg argumentasjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i biologi inneber å bruke digitale ressursar til å utforske, illustrere, programmere, modellere og simulere biologiske system og prosessar. Det inneber òg å søkje etter, analysere, behandle og presentere biologisk informasjon digitalt. Det inneber vidare å utvikle etisk medvit og utvise digital dømmekraft ved å følgje normer og reglar."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I biologi handlar det tverrfaglege temaet folkehelse og livsmeistring om få kunnskap om fysisk helse og kompetanse til å gjere kunnskapsbaserte val knytte til eiga helse. Det handlar òg om korleis sjukdommar og andre helseutfordringar i samfunnet kan førebyggjast og behandlast. Vidare handlar det om dei moglegheitene genteknologi og bioteknologi kan gi for folkehelsa. Dessutan handlar folkehelse og livsmeistring i biologi om at naturopplevingar òg har betydning for folkehelsa."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I biologi handlar det tverrfaglege temaet berekraftig utvikling om korleis klimaendringar og bruk av naturressursar påverkar økosystem og endrar livsvilkåra for organismane. Vidare handlar det om etiske dilemma knytta til korleis menneskeleg aktivitet påverkar det biologiske mangfaldet, og om korleis biologisk kompetanse kan bidra til ei meir berekraftig forvalting av naturen og naturressursane."
+   ]
+  }
  ]
 }

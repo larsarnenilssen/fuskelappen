@@ -124,5 +124,45 @@
     "Opplæringen i vg3 plastfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fire virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 plastfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer å bruke fagspråk i drøfting og refleksjon over faglige problemstillinger, framgangsmåter og prosedyrer og å kommunisere, veilede og gi tilbakemeldinger til kunder."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 plastfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, dokumentere prosesser og skrive risikoanalyser og rapporter. Videre innebærer det å utarbeide arbeidsbeskrivelser med materiallister, gjøre notater og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 plastfaget innebærer å finne og vurdere informasjon i tekster og å bruke informasjon i kilder på en kritisk måte som lar seg etterprøve. Det innebærer også å tolke tekniske tegninger, sikkerhetsdatablad og veiledninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 plastfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger og å regne ut materialforbruk, svinn, sveiseparametre for termoplastsveising, krymp og blandingsforhold. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger og å gjøre vurderinger av og utarbeide prisestimater for mengde, materialvalg, utstyrsvalg og tidsforbruk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 plastfaget innebærer å bruke digitale ressurser til å søke etter, innhente informasjon, kommunisere, rapportere og føre avviksrapportering. Det innebærer også å programmere og feilsøke maskiner og utstyr. Videre innebærer det å sikre konfidensiell informasjon og konfidensialitetsavtaler og å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 plastfaget handler det tverrfaglige temaet bærekraftig utvikling om å forstå dilemmaer og utviklingstrekk i samfunnet og hvordan kompetanse og innovasjon i plastfaget kan bidra til å håndtere utfordringer lokalt og globalt. Det handler også om sosiale, økonomiske og miljømessige konsekvenser av produksjon, gjenbruk og bruk av plast i samfunnet. Videre handler det om å forstå hvordan ny teknologi og nye produksjonsmetoder kan bidra til bærekraftig utvikling."
+   ]
+  }
  ]
 }

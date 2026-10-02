@@ -96,5 +96,57 @@
     "Opplæringen i droneoperatørfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst seks virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 droneoperatørfaget innebærer å forstå uttrykksmåter, fremme egne synspunkter og drøfte problemstillinger i ulike situasjoner og sammenhenger. Det innebærer også å bruke fagspråk og diskutere løsninger i ulike situasjoner og sammenhenger med kunder, kolleger og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 droneoperatørfaget innebærer å bruke fagterminologi, symboler og prefikser i planlegging og utarbeidelse av dokumentasjon. Det innebærer også å kommunisere skriftlig tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 droneoperatørfaget innebærer å søke og vurdere informasjon i fagtekster, teknisk dokumentasjon, gjeldende regelverk og instrukser. Det innebærer også å sammenligne og tolke informasjon, trekke faglige slutninger og å holde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 droneoperatørfaget innebærer å utføre matematiske beregninger i planlegging og dimensjonering og vurdere måleresultater opp mot beregnede verdier. Det innebærer å tolke informasjon fra tabeller og diagrammer. Videre innebærer det å beregne ulike verdier og bruke symboler og prefikser. Det innebærer også å foreta økonomiske beregninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 droneoperatørfaget innebærer å anvende digitale ressurser og tjenester til å planlegge, utføre og dokumentere arbeidsoppdrag. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og vise god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 droneoperatørfaget handler det tverrfaglige temaet folkehelse og livsmestring om betydningen av å oppleve mestring og stolthet over eget arbeid som grunnlag for god psykisk helse. Det handler også om verdien av å oppleve tilhørighet og trygghet i et arbeidsmiljø preget av samarbeid med andre, uavhengig av kjønn og kultur. Videre handler det om valg av arbeidsmetoder og bruk av verneutstyr for å unngå sykdom og helsemessige utfordringer."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 droneoperatørfaget handler det tverrfaglige temaet demokrati og medborgerskap om å delta i bedriftsdemokratiet og utvikle kunnskap om det organiserte arbeidslivets forutsetninger, verdier og regler. Det handler også om å utvikle kunnskap om arbeidstakers plikter og rettigheter og hvordan trepartssamarbeidet er med på å utvikle arbeidslivet. Videre handler det om hvordan et regulert arbeidsliv bidrar til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 droneoperatørfaget handler det tverrfaglige temaet bærekraftig utvikling om kunnskap til å ta etiske og ansvarlige valg i arbeidsoppdragene i forbindelse med operasjoner med ubemannede farkoster, drift, vedlikehold, bruk av sensorer og nyttelast og innhenting og bearbeiding av data. Det handler også om å utvikle kompetanse til å håndtere avfall på en miljøvennlig og bærekraftig måte og om hvilke miljømessige konsekvenser operasjoner med ubemannede farkoster kan ha lokalt, regionalt og globalt. Videre handler det om å utvikle kompetanse til å avdekke miljøfarlige forhold og til å redusere miljøbelastninger. Det handler også om hvilke dilemmaer som kan oppstå ved installasjon, igangsettelse av virksomhet, utbygging og bruk av teknologi, og om hvordan disse kan håndteres."
+   ]
+  }
  ]
 }

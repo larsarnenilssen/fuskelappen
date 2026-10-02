@@ -140,5 +140,57 @@
     "Operasjon og sikkerhet og nyttelast, sensorer og bearbeiding av data: Privatisten skal opp til en tverrfaglig praktisk eksamen hvor de felles programfagene inngår Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 drone innebærer å kommunisere forståelig i dronefaglige diskusjoner ved å bruke et presist og mottakertilpasset språk. Det innebærer å kunne delta i diskusjoner om grunnleggende faglige temaer på en måte som hindrer misforståelser og farlige situasjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 drone innebærer å uttrykke seg forståelig om dronefaglige temaer. Det innebærer å bruke et presist fagspråk og uttrykke seg tydelig, slik at man unngår misforståelser og farlige situasjoner. Det betyr at rapporter, logger og arbeidsbeskrivelser skal være presise og forståelige for leseren."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 drone innebærer å tolke ulike fagtekster for å sikre at arbeidet til enhver tid utføres i tråd med gjeldende regelverk. Slike tekster kan være håndbøker, utstyrsmanualer, monteringsveiledninger, lover, forskrifter, arbeidsbeskrivelser, datablad og prosedyrer for helse, miljø og sikkerhet."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 drone innebærer å utføre beregninger, ta beslutninger ut fra måleresultater og beskrive dronetekniske funksjoner på grunnlag av kjente matematiske formler og uttrykk."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 drone innebærer å bruke digitale verktøy og tjenester til å planlegge, utføre og verifisere arbeidsoppdrag. Det innebærer informasjonsinnhenting, kildekritikk og valg og bruk av programvare for programmering, konfigurering, simulering, optimalisering, kalibrering og feilsøking."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 drone handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle mestringsfølelse og stolthet over eget arbeid og om å ha tiltro til egne ressurser. Videre handler det om å utvikle gode arbeidsteknikker. Det tverrfaglige temaet handler også om hvordan dronetekniske løsninger bidrar til å utvikle nyttige samfunns- og forretningsmessige tjenester både under og over vann."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 drone handler det tverrfaglige temaet demokrati og medborgerskap om aktiv elevmedvirkning med kunnskap om og forståelse av et organisert og mer likestilt arbeidsliv. Det handler også om hvordan arbeidslivet er bygd opp, hvordan trepartssamarbeidet fungerer, og hvilke roller arbeidslivsorganisasjonene har i arbeidslivet."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 drone handler det tverrfaglige temaet bærekraftig utvikling om å velge produkter og tekniske løsninger ut fra etiske og ansvarlige hensyn. Videre handler det om alternative energikilder og ulike dilemmaer disse kan medføre. Det handler også om hvordan løsningene og de elektriske produktene man velger påvirker miljøet. Miljøvennlig og bærekraftig håndtering av avfall inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

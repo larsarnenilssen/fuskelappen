@@ -136,5 +136,57 @@
     "Opplæringen i vg3 barne- og ungdomsarbeiderfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven som skal gjennomføres over tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 barne- og ungdomsarbeiderfaget innebærer å kommunisere gjennom kroppsspråk, samtaler og ulike typer presentasjoner. Det innebærer å tilpasse eget språk til mottaker, innhold og formål og å kunne lytte til og vise respekt for den en snakker med. Videre innebærer det å bruke relevante faguttrykk og uttrykke egne observasjoner presist."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 barne- og ungdomsarbeiderfaget innebærer å skrive planer, referater og dokumentasjon. Det handler også om å skrive egne tekster til ulike formål, mottakere og medier."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 barne- og ungdomsarbeiderfaget innebærer å forstå og sette seg inn i faglitteratur og å vurdere kilder kritisk. Videre innebærer det å forstå planer og relevant regelverk. Det handler også om å anvende barne- og ungdomslitteratur i yrkesutøvelsen."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 barne- og ungdomsarbeiderfaget innebærer å bruke regneverktøy, statistikk og diagrammer og utføre økonomiske beregninger. Det innebærer også å bruke regnearter i det pedagogiske arbeidet og måleenheter i arbeidet med ernæring og kosthold for barn og unge."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 barne- og ungdomsarbeiderfaget innebærer å innhente og behandle informasjon og fagstoff. Videre innebærer det å vurdere, organisere og bruke informasjon fra digitale kilder hensiktsmessig og følge regler for opphavsrett. Det handler også om å anvende digitale samhandlingsprosesser i det pedagogiske arbeidet. Digitale ferdigheter innebærer dessuten å utvikle digital dømmekraft og å vurdere egen rolle på internett og i sosiale medier."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 barne- og ungdomsarbeiderfaget handler det tverrfaglige temaet folkehelse og livsmestring om å ta i bruk praktisk-pedagogiske metoder som fremmer barn og unges livsutfoldelse, utforskertrang og skaperglede. Det handler også om å veilede barn, unge og foresatte til å gjøre gode helhetlige helsevalg."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 barne- og ungdomsarbeiderfaget handler det tverrfaglige temaet demokrati og medborgerskap om å respektere andres meninger og synspunkter. Det handler også om medvirkning i det praktisk-pedagogiske arbeidet. Temaet handler videre om å ivareta verdiene i vårt demokratiske samfunn som grunnlag for profesjonell yrkesutøvelse og om hvordan partene i arbeidslivet samarbeider for å utvikle et bedre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 barne- og ungdomsarbeiderfaget handler det tverrfaglige temaet bærekraftig utvikling om å ta miljøbevisste valg i det praktisk-pedagogiske arbeidet. Det handler også om hvordan levemåte, sosiale forhold, ressursbruk og teknologi påvirker miljøet."
+   ]
+  }
  ]
 }

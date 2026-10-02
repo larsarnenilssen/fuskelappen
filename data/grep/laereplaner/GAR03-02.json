@@ -132,5 +132,45 @@
     "Opplæringen i vg3 gartnerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst tre virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 gartnerfaget innebærer å presentere gartnernæringens produkter og plantefaglige kompetanse for ulike målgrupper. Muntlige ferdigheter er å veilede og samarbeide med kunder og samarbeidspartnere. Det innebærer også å bruke fagspråk og å reflektere over faglige emner og å forklare og begrunne valg i forbindelse med produksjonsprosesser. Det innebærer videre å lytte og ta del i diskusjoner om metoder, beskrive arbeidsoppgaver og å instruere andre."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 gartnerfaget innebærer å presentere prosesser og produkter og å dokumentere ulike typer produksjon og plantebruk, og egen aktivitet knyttet til dette. Det innebærer også å kommunisere skriftlig med kunder og leverandører og tilpasse tekstene til mottaker og formål. Å kunne skrive innebærer videre å bruke kilder på en kritisk måte som lar seg etterprøve, og å dokumentere i henhold til ulike kontrollsystemer."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 gartnerfaget innebærer å vurdere og forstå arbeidsinstrukser, planer, bruksanvisninger og faglitteratur. Det innebærer også å sette seg inn i og forstå regelverk og kvalitetskriterier og å tolke dokumenter og avtaler som er gjort med kunder og leverandører. Videre innebærer det å følge med på og vurdere debatter om faget og næringen i ulike medier."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 gartnerfaget innebærer å gjøre kostnadsberegninger for å planlegge innkjøp, produksjon og salg, å beregne mengde jord, gjødsel, planter og frø, og å beregne plantenes plassbehov etter hvert som de vokser til. Det innebærer også å analysere ulike typer tilbud, produkter og produksjoner. Videre handler det om å utarbeide og forstå tabeller, diagrammer og enkel statistikk og å utføre kalkulasjoner knyttet til produksjon, tilbud og produkter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 gartnerfaget innebærer å bruke digitale ressurser, navigere på digitale plattformer og å tilegne seg, behandle, tolke og kritisk vurdere informasjon fra digitale kilder. Digitale ferdigheter innebærer også å tilføre nødvendige rådata til digitale ressurser, å kommunisere og samhandle via digitale løsninger og å skaffe seg informasjon for å planlegge og optimalisere produktene og tjenestene."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 gartnerfaget handler det tverrfaglige temaet bærekraftig utvikling om å være bevisst på hvordan profesjonell mat- og planteproduksjon påvirker natur, miljø, klima og helse. Det handler også om hvordan gartnerfaget bidrar til bærekraftig verdiskaping i samfunnet, og gartnerfagets ansvar for å forvalte ressursgrunnlaget for kommende generasjoner og i tråd med gjeldende lover og regler."
+   ]
+  }
  ]
 }

@@ -100,5 +100,45 @@
     "Opplæringen i steinfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i steinfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i Vg3 steinfaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i steinfaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i steinfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det omfatter å beregne lengde, areal, volum og vekt og føre logg knyttet til arbeidsoperasjonen. Det innebærer også å beregne radier, vinkler og fall og å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i steinfaget innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer digitale ferdigheter å søke etter og innhente informasjon og å vurdere troverdigheten av informasjonen. Det innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I steinfaget handler det tverrfaglige temaet bærekraftig utvikling om å velge bergarter og produksjonsmetoder som gir energieffektive og varige konstruksjoner. Videre innebærer faget å bruke maskiner og utstyr med tanke på å ivareta det indre og ytre miljøet. Bærekraftig utvikling i steinfaget handler også om å utvinne bergarter på en måte som minimerer belastningen på miljøet. Videre innebærer faget å gjenbruke stein med hensyn til miljøbesparing og ressursutnytting."
+   ]
+  }
  ]
 }

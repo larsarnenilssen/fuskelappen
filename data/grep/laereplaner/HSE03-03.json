@@ -210,5 +210,57 @@
     "Helse og sjukdom, kommunikasjon og samhandling og yrkesliv i helsesekretærfaget: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 helsesekretær inneber å rettleie og samhandle, lytte og gjere seg forstått i møte med pasientar og pårørande. Det inneber òg å bruke relevant fagterminologi i samhandling med anna helsepersonell."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 helsesekretær inneber å utarbeide dokumentasjon og bruke grunnleggjande fagterminologi. Det inneber òg å kommunisere skriftleg med brukarar og samarbeidspartnarar og å tilpasse tekstar til innhald, formål og mottakar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 helsesekretær inneber å tileigne seg ny kunnskap ved å lese faglitteratur, statistikk, lovtekstar og planar. Det inneber òg å forstå innhaldet i bruksrettleiingar, medisinske dokument, skjema, prosedyrar og andre fagdokument."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 helsesekretær inneber å løyse likningar og rekne ut prosentar til bruk ved fortynning og omrekning. Det inneber å kjenne til måleiningar innanfor laboratoriearbeid og å ha mengdeforståing ved bruk av medikament og væsker. Vidare inneber det å lese og lage diagram og statistikk, og å lese og forstå budsjett og rekneskapar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 helsesekretær inneber å bruke administrative system, journalsystem og medisinsk-tekniske system i yrkesutøvinga. Det inneber òg å bruke digitale ressursar for å finne og dokumentere informasjon om pasientar. Vidare inneber det å følgje normar for nettbasert kommunikasjon, vurdere kjelder kritisk og vurdere etiske spørsmål knytte til personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 helsesekretær handlar det tverrfaglege temaet folkehelse og livsmeistring om å rettleie pasientar om kva som fremjar god fysisk og psykisk helse. Vidare handlar det om å informere om samanhengen mellom levevanar, rusmiddelbruk og helse."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 helsesekretær handlar det tverrfaglege temaet demokrati og medborgarskap om brukarmedverknad og om å vareta dei individuelle rettane til pasientane. Det handlar òg om å tenkje kritisk og respektere usemje. Vidare handlar det om rettar og plikter i yrkesutøvinga og om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 helsesekretær handlar det tverrfaglege temaet berekraftig utvikling om å gjere ansvarlege val og handle etisk og miljøbevisst. I dette ligg det å følgje retningslinjer for arbeid med biologisk og kjemisk materiale og handtering av avfall. Det handlar òg om samanhengen og potensielle dilemma mellom økonomi, miljøforhold og krav til kvalitet og sikkerheit. Temaet handlar dessutan om korleis levemåte og ressursbruk påverkar miljøet."
+   ]
+  }
  ]
 }

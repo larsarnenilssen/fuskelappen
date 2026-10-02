@@ -205,5 +205,51 @@
     "Aktivitetslære 3: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i aktivitetslære innebærer at elevene diskuterer og kommuniserer med andre i lek, trening og aktiviteter. Når elevene planlegger, gjennomfører og reflekterer over egen aktivitet i idrett og friluftsliv, vil bruk av muntlige ferdigheter være viktig for å utvikle ferdigheter og kunnskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i aktivitetslære innebærer skriftlig planlegging og refleksjon knyttet til aktivitet, trening og friluftsliv."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i aktivitetslære innebærer å tilegne seg kunnskap om trening, aktiviteter og idretter gjennom lesing av fagstoff. Innenfor friluftsliv er kartlære, turlitteratur og annen faglitteratur en viktig del av det å forberede og gjennomføre turer."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i aktivitetslære innebærer å beregne og analysere belastning, prestasjoner og resultater i forbindelse med ulike former for trening og konkurranse. Å kunne beregne ulike forhold på kart og i naturen er også sentralt."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i aktivitetslære innebærer å kunne bruke digitale hjelpemidler i forbindelse med planlegging, gjennomføring og vurdering av trening og friluftsliv. Når elevene skal bruke fagstoff og tilegne seg ny kunnskap, vil kritisk lesing og bevissthet rundt digitale kilder være viktig."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I aktivitetslære handler det tverrfaglige temaet folkehelse og livsmestring om å fremme god fysisk, psykisk og sosial helse. Faget skal bidra til at elevene utvikler interesse for og opplever gleder over fysisk aktivitet, idrett og friluftsliv. Faget skal også bidra til at elevene opplever mestring og utvikler et positivt selvbilde. Gjennom faget skal elevene tilegne seg kunnskap og erfaring som kan bidra til at de ivaretar en god helse i framtiden."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I aktivitetslære handler det tverrfaglige temaet bærekraftig utvikling om å fremme en bærekraftig livsstil gjennom ulike aktiviteter, opphold og turer i naturen. Elevene får utviklet naturglede, respekt for naturen og miljøbevissthet."
+   ]
+  }
  ]
 }

@@ -118,5 +118,45 @@
     "Privatisten i scenisk dans fordypning 2 får godskrevet programfaget scenisk dans fordypning 1."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i scenisk dans fordypning innebærer å snakke om, formidle og kritisk diskutere ulike danseuttrykk, knyttet til kunstneriske prosesser og tolkninger av koreografisk materiale."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i scenisk dans fordypning innebærer å bruke symboler og tekst til å dokumentere og bearbeide den kroppslige læringen i faget. Å kunne skrive innebærer også å bruke fagspråk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i scenisk dans fordypning innebærer å forstå rytme, puls, takt og dynamikk og å uttrykke disse kroppslig. Videre innebærer det å formidle størrelser og former i rom og bevegelse og i relasjon til meddansere."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i scenisk dans fordypning innebærer å tilegne seg og tolke informasjon fra digitale kilder. Videre handler digitale ferdigheter om å ta i bruk digitale ressurser i kunstneriske og utøvende prosesser og å vise dømmekraft når det gjelder sosiale medier og opphavsrett."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I scenisk dans fordypning handler det tverrfaglige temaet folkehelse og livsmestring om fysisk utfoldelse og bevegelsesglede. Det handler også om personlig bevegelsesuttrykk og medskaping i kunstneriske prosesser, om å utvikle et positivt selvbilde og en trygg identitet, og det gir trening i å håndtere mellommenneskelige relasjoner."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I scenisk dans fordypning handler det tverrfaglige temaet demokrati og medborgerskap om å bidra til valg og avgjørelser i kunstneriske prosesser. Det omfatter å tenke kritisk, og å respektere og inkludere ulike perspektiver og uttrykk. I scenisk dans fordypning handler demokrati og medborgerskap også om demokratiske arbeidsprosesser knyttet til danseutøvelse og forståelse av at den enkelte deltar og engasjerer seg i en gruppe."
+   ]
+  }
  ]
 }

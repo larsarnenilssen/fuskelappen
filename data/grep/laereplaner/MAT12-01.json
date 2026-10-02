@@ -110,5 +110,45 @@
     "Matematikk for økonomi: Privatisten skal opp til skriftleg eksamen. Eksamen blir utarbeidd og sensurert sentralt. Eksamen skal ikkje ha førebuingsdel."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i matematikk for økonomi inneber å skape meining gjennom å samtale om bruk av matematikk innanfor økonomi. Det vil seie å vere med i samtalar, kommunisere idear og drøfte økonomiske problem, strategiar og løysingar med andre. Det handlar òg om å beskrive og diskutere abstrakte økonomiske omgrep."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i matematikk for økonomi inneber å beskrive og forklare økonomiske samanhengar, oppdagingar og idear ved hjelp av formålstenlege representasjonar. Å kunne skrive i matematikk for økonomi er ein reiskap i eiga læring og for å utvikle eigne tankar om korleis økonomi fungerer i samfunnet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i matematikk for økonomi inneber å forstå samfunnsfaglege og økonomiske tekstar. Det inneber å sortere, analysere, vurdere og samanfatte informasjon frå samansette tekstar og tekstar som nyttar økonomisk symbolspråk og fagomgrep."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i matematikk for økonomi inneber å bruke symbolspråk og matematiske omgrep og framgangsmåtar til å gjere berekningar og vurdere om løysingar er gyldige. Dette inneber å kjenne igjen økonomiske problem som kan løysast med matematikk, og å formulere spørsmål om desse. Det inneber òg å analysere og løyse ulike komplekse problem med effektive og formålstenlege strategiar og metodar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i matematikk for økonomi inneber å bruke digitale verktøy til å utforske, formulere og løyse økonomiske problem. Vidare vil det seie å finne, analysere, behandle og presentere informasjon ved hjelp av digitale verktøy. I faget er digitale verktøy som rekneark og dynamisk matematikkprogramvare sentrale hjelpemiddel."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I matematikk for økonomi handlar det tverrfaglege temaet folkehelse og livsmeistring om å gi elevane kompetanse i personleg økonomi. Gjennom faget skal elevane få innsikt i korleis økonomi er nyttig for å forstå samfunnet dei lever i."
+   ]
+  }
  ]
 }

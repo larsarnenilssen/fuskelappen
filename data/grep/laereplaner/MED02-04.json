@@ -214,5 +214,45 @@
     "Teknologi og produksjon, konseptutvikling og kommunikasjon og design og visualisering: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 medieproduksjon inneber å gjere verbalt greie for eigne konsept og val i ein arbeidsprosess. Det inneber òg å kommunisere med oppdragsgivarar og brukarar og om å kunne bruke fagterminologi og tilpasse språket til målgrupper med ulik fagleg kompetanse."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 medieproduksjon inneber å formulere idear, å dokumentere prosessar og å kommunisere gjennom koding av bodskapar i ulike sjangrar. Vidare inneber det å kunne bruke prinsippa for klart språk for å sikre brukarvennleg kommunikasjon som er tilpassa ei gitt målgruppe."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 medieproduksjon inneber å tolke oppdragsbeskrivingar og statistikk og å forstå fagterminologi på norsk eller samisk og engelsk, designuttrykk, retningslinjer og lovverk. Det inneber òg å setje seg inn i sjangrar som gjeld for medietekstar, og å kunne analysere eigne og andre sine tekstar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 medieproduksjon inneber å samanfatte eige og andre sitt datamateriale som grunnlag for nye idear og løysingar. Vidare inneber det å budsjettere og berekne tidsbruk i planlegging og gjennomføring av medieproduksjonar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 medieproduksjon inneber å omarbeide informasjon og produsere og publisere ved hjelp av teknologi. Det inneber òg å kombinere ulike medium og teknologiar i utforminga av kommunikasjon og å samhandle med andre i digitale rom. Vidare inneber det å vurdere kor truverdig informasjon er, og å utøve etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 medieproduksjon handlar det tverrfaglege temaet demokrati og medborgarskap om kunnskap om makta media har til å påverke meiningane våre og korleis vi oppfattar andre, og korleis andre oppfattar oss. Vidare handlar det om å uttrykkje eigne meiningar, idear og kjensler i dialog med andre og om å utøve kritisk tenking i møte med medium og teknologi."
+   ]
+  }
  ]
 }

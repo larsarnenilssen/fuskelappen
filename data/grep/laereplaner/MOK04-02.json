@@ -82,5 +82,45 @@
     "Bilde: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i bilde innebærer å beskrive, reflektere over, samtale om, analysere og vurdere egne og andres bilder sammen med andre og ved hjelp av fagterminologi."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i bilde innebærer å kommunisere og produsere innhold i ulike billedprodukter tilpasset formål og mottaker. Det innebærer også å skrive logg og ulike prosessbeskrivelser."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i bilde innebærer å tolke, analysere og forstå hvordan bilder kommuniserer og skaper innhold i ulike medieprodukter."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i bilde innebærer å forstå og bruke riktige filformater og prinsipp for billedoppløsning, filstørrelser og kompresjonsteknikker."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i bilde innebærer å produsere og publisere billedframstillinger ved hjelp av digitale ressurser. Det innebærer også å følge gjeldende regler for opphavsrett, personvern og publisering."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I faget bilde handler det tverrfaglige temaet demokrati og medborgerskap om hvordan billedframstillinger kan påvirke meningene og holdningene våre. Kommunikasjon og historiefortelling gjennom bilder gir elevene verktøy til å uttrykke meninger, ideer og følelser i dialog med andre."
+   ]
+  }
  ]
 }

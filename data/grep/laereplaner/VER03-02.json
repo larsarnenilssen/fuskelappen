@@ -128,5 +128,45 @@
     "Opplæringen i vg3 verktøymakerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst ti virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 verktøymakerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer også å bruke fagspråk og fagterminologi, fremme egne synspunkter og drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 verktøymakerfaget innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å lage arbeidsbeskrivelser, fylle ut avviksskjemaer og målerapporter, å utarbeide rapporter knyttet til planlegging, utførelse, kontroll og sikker jobb-analyse av arbeidet. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 verktøymakerfaget innebærer å forstå og bruke arbeidstegninger, dokumentasjon, instruksjoner, rapporter, og tekniske standarder. Det innebærer også å sammenligne, tolke og systematisere informasjon og å forstå lover og regler."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 verktøymakerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å bruke og bearbeide informasjon for å forstå og vise sammenhenger, benytte formler og matematiske beregninger i produksjonsprosessen og å beregne materialforbruk, produktets livsløp, kostnader og vekt."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 verktøymakerfaget innebærer å bruke digitale produksjonssystemer for planlegging, 2D- og 3D-konstruksjon, produksjon, programmering, dokumentasjon og kommunikasjon. Det innebærer også å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 verktøymakerfaget handler det tverrfaglige temaet bærekraftig utvikling om miljøbevisste valg og handlinger knyttet til foredling av materialer for å redusere ressursforbruk, utslipp og avfall. Digitalisering og additive metoder kan bidra til en mer bærekraftig utvikling. Det handler også om kunnskaper til å gjøre valg for å redusere og erstatte miljøfiendtlige kjemikalier og å bruke nasjonale og internasjonale standarder for å imøtekomme krav til utslipp."
+   ]
+  }
  ]
 }

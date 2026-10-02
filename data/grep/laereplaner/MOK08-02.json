@@ -77,5 +77,45 @@
     "Mediespesialisering: Privatisten skal opp til en praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i mediespesialisering innebærer å formulere og presentere ideer og prosesser ved hjelp av fagterminologi. Det innebærer også å utveksle erfaringer og kunnskap og bidra med faglige tilbakemeldinger i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i mediespesialisering innebærer å formulere tekster tilpasset ulike sjangre og målgrupper."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i mediespesialisering innebærer å vurdere, tolke og forstå kommunikasjon og virkemidler i ulike medieuttrykk og ulike sjangre."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i mediespesialisering innebærer å beregne økonomiske rammer for medieproduksjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i mediespesialisering innebærer å bruke digitale ressurser til å produsere og publisere medieprodukter i henhold til regler for opphavsrett, personvern og publisering."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I mediespesialisering handler det tverrfaglige temaet demokrati og medborgerskap om hvordan dramaturgi og fortellerteknikker former innhold og forteller historier. Utvikling av et selvstendig uttrykk gir et grunnlag for å legge fram meninger, ideer og følelser."
+   ]
+  }
  ]
 }

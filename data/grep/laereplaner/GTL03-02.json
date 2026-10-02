@@ -100,5 +100,45 @@
     "Opplæringen i gjørtlerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager"
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i gjørtlerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i gjørtlerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å planlegge og dokumentere arbeid gjennom tekst og visualiseringer."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i gjørtlerfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder, illustrasjoner, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i gjørtlerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne materialforbruk, volum, form og størrelser til arbeidsoperasjonen. Det innebærer også å gjøre økonomiske beregninger i forbindelse med pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i gjørtlerfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer. Videre handler det om å bruke digitale ressurser for å framstille produkter og løse praktiske og håndverksfaglige oppgaver."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I gjørtlerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over hvordan miljøavtrykket fra produksjonen kan minimeres. Det innebærer å følge regler for utslipp og avfallshåndtering og å resirkulere og gjenbruke metaller. Videre handler det om å tilvirke varige gjenstander i kobberlegeringer og å vedlikeholde og reparere nye og eldre gjenstander. Det handler også om at faget er en del av arbeidet med å sikre verdens kulturarv og å fremme regionale og lokale kulturer, tradisjoner og produkter."
+   ]
+  }
  ]
 }

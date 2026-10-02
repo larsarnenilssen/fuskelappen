@@ -80,5 +80,38 @@
     "Opplæringa i vg3 mediedesignfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på seks–åtte vyrkedagar."
    ]
   }
- ]
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 mediedesignfaget inneber å kommunisere fagleg og bruke fagterminologi. Det inneber vidare å presentere strategiar, idear og designløysingar for ein oppdragsgivar. Det handlar òg om å lytte og gi respons i spontan og førebudd samtale. Det omfattar vidare å bruke fagterminologi i kommunikasjon med andre og å reflektere over og drøfte moglege val og løysingar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 mediedesignfaget inneber å kommunisere med kollegaer, samarbeidspartnarar, oppdragsgivarar og ulike målgrupper. Det handlar om å bruke fagterminologi og eit presist språk for ulike problemstillingar og for ulike mottakarar. Det omfattar òg å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 mediedesignfaget inneber å tolke og forstå skriftlege tekstar, symbol og bilete og å trekkje ut relevant informasjon. Det inneber òg å samanlikne, systematisere, vurdere og analysere informasjon og å utvise kjeldekritikk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 mediedesignfaget inneber å berekne kostnader og tidsbruk ved ein produksjon, lage pristilbod og bruke fagspesifikke utrekningar i gjennomføringa av arbeidet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 mediedesignfaget inneber å bruke digitale verktøy, teknikkar og kommunikasjonsflater i planlegging, utforming og publisering av design."
+   ]
+  }
+ ],
+ "temaer": []
 }

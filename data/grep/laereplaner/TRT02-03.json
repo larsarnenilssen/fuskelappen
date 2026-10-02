@@ -172,5 +172,45 @@
     "Tegning og materialvalg og produksjon: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 treteknikk innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 treteknikk innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 treteknikk innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 treteknikk innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne styrke, vekt, volum, mengder, størrelser og vinkler knyttet til arbeidsoperasjonen. Det innebærer også å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 treteknikk innebærer å bruke digitale ressurser til å drive arbeidsprosesser, rapportere, dokumentere og kommunisere. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten av informasjonen. Det innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 treteknikk handler det tverrfaglige temaet bærekraftig utvikling om å velge materialer og produksjonsmetoder som gir energieffektive og bærekraftige produkter med lite miljøavtrykk. Videre handler det om å behandle og utnytte råmaterialenes hoved- og biprodukter, og om å kildesortere og gjenbruke trevarer. Bærekraftig utvikling handler også om å beskytte sårbare økosystemer og å bevare og frede skog."
+   ]
+  }
  ]
 }

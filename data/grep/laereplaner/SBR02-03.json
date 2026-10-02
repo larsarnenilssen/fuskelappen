@@ -176,5 +176,45 @@
     "Skogsdrift og maskinlære og skogskjøtsel, klima og næring: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 skogbruk innebærer å bruke skogbrukets fagbegreper, lytte og å gi respons. Det innebærer også å forklare og presentere skogfaglige tema for ulike målgrupper, og å kommunisere for å ivareta helse, miljø og sikkerhet i arbeidet. Videre innebærer det å samtale, drøfte og diskutere forskjellige produksjoner og løsninger i skogbruket for at elevene skal utvikle evne til refleksjon og forståelse."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 skogbruk innebærer å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger og å uttrykke skogfaglig kompetanse gjennom fagspråk. Videre omfatter det å planlegge og dokumentere arbeid i henhold til gjeldende krav og helse, miljø og sikkerhet. Det innebærer også å kunne delta kildekritisk i digital kommunikasjon og informasjonsutveksling."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 skogbruk innebærer å finne og vurdere informasjon og å kunne tilegne seg oppdatert kunnskap om skogbruk gjennom ulike medier. Leseferdigheten innebærer også å lære seg skogfaglig fagspråk som brukes i praktiske og teoretiske sammenhenger og å sammenligne og tolke informasjon for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 skogbruk innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale i ulike framstillinger. Det innebærer videre å bruke tall og beregninger til å gjøre faglige beregninger og overslag i praktisk arbeid. Videre innebærer det å beregne lønnsomhet, lage enkle kalkyler og vurdere resultater for å forstå prislister og oppnå optimal virkesutnytting."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 skogbruk innebærer å bruke yrkesrelevante digitale ressurser under planlegging, gjennomføring, dokumentasjon og evaluering av arbeid i skogen. Dette inkluderer å håndtere digital informasjon mellom datasystemer og å kontrollere og kalibrere produksjonsutstyr. Digitale ferdigheter er også å samle inn nødvendige data og oppdatert kompetanse fra digitale ressurser og faglitteratur på en kildekritisk måte."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 skogbruk handler det tverrfaglige temaet bærekraftig utvikling om å utøve skog- og utmarksnæring på en langsiktig og bærekraftig måte, med hensyn til lokale og globale klimautfordringer. Fagene skal gi kompetanse til å opptre ansvarlig og forsvarlig i arbeidsliv og bosetting, og i samfunnet ellers. Fagene skal framheve skog som fornybar ressurs og bruk av skogen på en bærekraftig måte."
+   ]
+  }
  ]
 }

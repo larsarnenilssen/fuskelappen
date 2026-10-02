@@ -99,6 +99,10 @@ export const laereplanSkjema = z
     gyldigFra: z.string().nullable(),
     kompetansemaalsett: z.array(kompetansemalsettSkjema),
     vurderingsordning: z.array(z.object({ overskrift: z.string(), tekst: avsnitt }).strict()),
+    /** Grunnleggende ferdigheter i faget (GF1–GF5 i Grep), med teksten fra læreplanen. */
+    ferdigheter: z.array(z.object({ kode: z.string().min(1), tekst: avsnitt }).strict()),
+    /** Tverrfaglige temaer i faget (TT1–TT3 i Grep), med teksten fra læreplanen. */
+    temaer: z.array(z.object({ kode: z.string().min(1), tekst: avsnitt }).strict()),
   })
   .strict();
 

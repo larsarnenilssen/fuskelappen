@@ -124,5 +124,51 @@
     "Opplæringen i vg3 profileringsdesignfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 profileringsdesignfaget innebærer å bruke fagspråk i kommunikasjon med kunder, samarbeidspartnere og leverandører. Videre innebærer det å lytte til og gi respons i spontan og forberedt samtale. Lærlingen utvikler muntlige ferdigheter gjennom å reflektere over, drøfte og presentere mulige valg og løsninger for design og produkt tilpasset mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 profileringsdesignfaget innebærer å bruke fagspråk og å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og dokumentere arbeidsprosesser gjennom tekst og visualiseringer. Det handler videre om rettskriving og nøyaktig korrektur i skilt- og kommunikasjonsløsninger."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 profileringsdesignfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Videre innebærer det å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 profileringsdesignfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer å gjøre oppmålinger og beregne materialforbruk. Det innebærer også å gjøre økonomiske beregninger i forbindelse med tidsbruk og pristilbud. Videre handler det om å beregne og vurdere størrelser og proporsjoner."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 profileringsdesignfaget innebærer å bruke digitale ressurser til å designe og framstille produkter og løsninger. Videre innebærer det å bruke digitale ressurser til å søke etter og innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter innebærer også å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 profileringsdesignfaget handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og å ta ansvarlige valg i eget liv og i skapende arbeid. Det innebærer å utvikle gode arbeidsrutiner og strategier for å møte og mestre forventninger fra kunder. Videre handler folkehelse og livsmestring om å bli trygg i møte med kolleger, kunder og andre aktører i faget og om hvordan man kan gi uttrykk for egne opplevelser, tanker og meninger i et flerkulturelt samfunn.Det handler også om å kritisk reflektere over hvordan man påvirkes av stemninger og visuell støy, og reflektere over hvordan bruk av universell utforming kan ivareta brukerne."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 profileringsdesignfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over valg av materialer i forbindelse med framstilling og montering av profileringsprodukter, om hvordan ulike produkter påvirker holdbarheten, om avfallshåndtering og om hvordan bruk av ulike materialer under produksjonen kan påvirke miljøet. Videre handler det om å reflektere over lønnsomheten i å utnytte ressurser."
+   ]
+  }
  ]
 }

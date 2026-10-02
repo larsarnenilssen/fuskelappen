@@ -132,5 +132,45 @@
     "Opplæringen i byggmontasjefaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i byggmontasjefaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i kommunikasjon med andre å reflektere over og drøfte mulige valg og løsninger, og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i byggmontasjefaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer også å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i byggmontasjefaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger, standarder og toleransestandarder og regelverk. Det innebærer også å sammenligne og tolke informasjon og å trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i byggmontasjefaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne lengde, areal, volum og vekt i forbindelse med arbeidsoperasjonen. Det innebærer også å beregne radier, vinkler og fall og å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i byggmontasjefaget innebærer å bruke digitale ressurser til å drifte prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Det innebærer også å vurdere egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I byggmontasjefaget handler det tverrfaglige temaet bærekraftig utvikling om å velge energieffektive arbeidsmetoder, om materialer og verktøy, om å håndtere avfall på en sikker måte som tar hensyn til miljøet, og om gjenbruk av bygningsdeler. Gjennom å vurdere produkter, materialer og konstruksjoner kritisk blir lærlingene bevisst på de økonomiske, miljømessige og sosiale dimensjonene ved bærekraftig utvikling"
+   ]
+  }
  ]
 }

@@ -1,0 +1,64 @@
+{
+ "kilde": "udir-grep",
+ "lisens": "NLOD 2.0",
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "navn": {
+    "nb": "Muntlige ferdigheter",
+    "nn": "Munnlege ferdigheiter"
+   }
+  },
+  {
+   "kode": "GF2",
+   "navn": {
+    "nb": "Å kunne skrive",
+    "nn": "Å kunne skrive"
+   }
+  },
+  {
+   "kode": "GF3",
+   "navn": {
+    "nb": "Å kunne lese",
+    "nn": "Å kunne lese"
+   }
+  },
+  {
+   "kode": "GF4",
+   "navn": {
+    "nb": "Å kunne regne",
+    "nn": "Å kunne rekne"
+   }
+  },
+  {
+   "kode": "GF5",
+   "navn": {
+    "nb": "Digitale ferdigheter",
+    "nn": "Digitale ferdigheiter"
+   }
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "navn": {
+    "nb": "Folkehelse og livsmestring",
+    "nn": "Folkehelse og livsmeistring"
+   }
+  },
+  {
+   "kode": "TT2",
+   "navn": {
+    "nb": "Demokrati og medborgerskap",
+    "nn": "Demokrati og medborgarskap"
+   }
+  },
+  {
+   "kode": "TT3",
+   "navn": {
+    "nb": "Bærekraftig utvikling",
+    "nn": "Berekraftig utvikling"
+   }
+  }
+ ]
+}

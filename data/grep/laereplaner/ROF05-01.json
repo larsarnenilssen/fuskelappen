@@ -214,5 +214,45 @@
     "Opplæringa i reinhaldsoperatørfaget – modulstrukturert opplæring for vaksne skal avsluttast med ei fagprøve. Fagprøva lagast ut frå læreplanen i vg3 reinhaldsoperatørfaget (ROF03-01). Alle skal opp til fagprøva som skal gjennomførast over minst tre vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i reinhaldsoperatørfaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber å bruke fagterminologi i kommunikasjon med andre og reflektere over og drøfte moglege val og løysingar, og å tilpasse kommunikasjonen til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i reinhaldsoperatørfaget inneber å bruke fagterminologi til å utforme tekstar tilpassa mottakar og formål. Det inneber å utforske og reflektere over faglege emne og problemstillingar, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i reinhaldsoperatørfaget inneber å finne og vurdere informasjon i ulike tekstar, arbeidsbeskrivingar, teikningar, brukarrettleiingar og regelverk. Det inneber òg å samanlikne og tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i reinhaldsoperatørfaget inneber å hente ut, beskrive og tolke informasjon frå talmateriale. Det inneber òg å rekne ut lengd, areal og volum i samband med arbeidsoperasjonen. Vidare inneber det å gjere økonomiske utrekningar i samband med drift og pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i reinhaldsoperatørfaget inneber å bruke digitale ressursar til å planleggje og produsere, rapportere, dokumentere og kommunisere. Vidare inneber digitale ferdigheiter å søkje etter og innhente informasjon og vurdere kor truverdig informasjonen er. Det inneber òg å vurdere og reflektere over si eiga rolle på nettet og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I reinhaldsoperatørfaget handlar det tverrfaglege temaet berekraftig utvikling om å velje reinhaldsprodukt, maskiner og utstyr som gir kostnadseffektivt reinhald og minimerer miljøavtrykket. Faget handlar om å utvikle forståing av dei økonomiske, miljømessige og sosiale dimensjonane knytte til berekraftig utvikling gjennom ei kritisk vurdering av kjemikalium, utstyr og arbeidsmetodar."
+   ]
+  }
  ]
 }

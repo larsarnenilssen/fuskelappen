@@ -158,5 +158,57 @@
     "Alle må også dokumentere gjennomført opplæring i samsvar med Sjøfartsdirektoratets krav om grunnleggende og videregående sikkerhetsopplæring."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i maritim elektrikerfaget innebærer å lytte til og gi respons i samtale med involverte parter i arbeid med maritime og tilhørende landbaserte elektriske installasjoner, anlegg og utstyr. Muntlige ferdigheter innebærer også å bruke fagterminologi og tilpasse kommunikasjonen til mottakeren og formålet."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i maritim elektrikerfaget innebærer å formulere seg fagmessig presist og forståelig i dokumentasjon av elektriske anlegg. Å kunne skriver innebærer også å tilpasse den skriftlige kommunikasjonen til mottakeren og formålet."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i maritim elektrikerfaget innebærer å bruke ulike fagtekster som sikrer at arbeidet til enhver tid utføres i tråd med gjeldende regelverk, anbefalinger og kundens behov. Å kunne lese innebærer også å sammenligne og tolke informasjon, trekke faglige slutninger og å holde seg oppdatert i faget."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i maritim elektrikerfaget innebærer å utføre matematiske beregninger i planlegging og dimensjonering, å vurdere måleresultater opp mot beregnede verdier og å bruke symboler og prefikser. Å kunne regne innebærer også å foreta økonomiske beregninger i forbindelse med drift- og vedlikeholdskostnader."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i maritim elektrikerfaget innebærer å foreta informasjonssøk, å utføre beregninger og å produsere dokumentasjon og tekniske og økonomiske underlag for systemer og enheter. Digitale ferdigheter innebærer også å søke etter og innhente informasjon og å vurdere troverdigheten til informasjonen. Videre innebærer digitale ferdigheter å vurdere sin egen rolle på nett og vise god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 maritim elektriker – opplæring i bedrift handler det tverrfaglige temaet folkehelse og livsmestring om betydningen av å oppleve mestring og stolthet over arbeid på maritime og tilhørende landbaserte elektriske installasjoner, anlegg og utstyr. Det tverrfaglige temaet handler også om verdien av å oppleve tilhørighet og trygghet i et arbeidsmiljø preget av samarbeid, uavhengig av kjønn og kultur. Videre handler det tverrfaglige temaet om valg av arbeidsmetoder og bruk av verneutstyr for å unngå sykdom og helsemessige utfordringer."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg3 maritim elektriker – opplæring i bedrift handler det tverrfaglige temaet demokrati og medborgerskap om å utvikle kunnskap om det organiserte arbeidslivets forutsetninger, verdier og regler. Det tverrfaglige temaet handler også om å utvikle kunnskap om arbeidstakers plikter og rettigheter og hvordan trepartssamarbeidet er med på å utvikle arbeidslivet. Videre handler det tverrfaglige temaet om hvordan et regulert arbeidsliv bidrar til å motvirke arbeidslivskriminalitet, diskriminering og forskjellbehandling."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 maritim elektriker – opplæring i bedrift handler det tverrfaglige temaet bærekraftig utvikling om å få et faglig grunnlag for å ta informerte og gode valg i forbindelse med produkters miljøbelastning, livsløp og reparerbarhet. Det handler også om avfallshåndtering og resirkulering av miljøbelastende materialer samt energisparingstiltak og energioptimalisering. En bevissthet rundt motsetninger mellom en bærekraftig utvikling og forbrukersamfunnet ved valg av produkter, materialer og løsninger inngår også i det tverrfaglige temaet."
+   ]
+  }
  ]
 }

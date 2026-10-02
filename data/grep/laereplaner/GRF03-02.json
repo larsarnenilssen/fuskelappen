@@ -96,5 +96,45 @@
     "Opplæringen i gravørfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på fem til syv virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i gravørfaget innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner og bygge opp argumentasjon og tilpasse kommunikasjonen til mottaker og formål. Det innebærer å presentere muligheter og begrensninger ved oppdraget og anbefale løsninger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i gravørfaget innebærer å bruke fagspråk og formidle beskrivelser av arbeidsoppgaver tilpasset mottaker og formål. Videre handler det om å være nøye med rettskrivning slik at inngravering og andre oppdrag blir riktig utført."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i gravørfaget innebærer å bruke faglitteratur og å finne og vurdere innhold i arbeidsoppgaver og instruksjoner. Det innebærer videre å sammenligne, tolke og systematisere informasjon i ulike tekster, tegninger, tekniske beskrivelser og veiledninger med tegn og symboler for å trekke faglige slutninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i gravørfaget innebærer å beregne pris, tidsbruk og materialkostnader. Det innebærer også å beregne linjehøyde, avstand, størrelse og plassering på større inskripsjoner over flere linjer og størrelser på sjablonger i forhold til det ferdige produktet. Videre handler det om å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i gravørfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer. Digitale ferdigheter i gravørfaget handler videre om å bruke digitale måleverktøy og arbeide med digitalt styrte maskiner."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I gravørfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over valg av materialer i arbeidet med gravering og hvordan dette kan påvirke ressursbruk og kvalitet i produksjonen. Videre handler det om å videreutvikle og skape nye håndverksprodukter med hensyn til god ressursforvaltning, kvalitet og framstilling av gjenstander med varig verdi. Videre handler det om faget som en del av arbeidet med å sikre verdens kultur- og naturarv."
+   ]
+  }
  ]
 }

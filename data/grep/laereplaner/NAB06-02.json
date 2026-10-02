@@ -125,5 +125,45 @@
     "Vg3 naturbasert næringsutvikling: Privatisten skal opp til en skriftlig eksamen og en muntlig eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 naturbasert næringsutvikling innebærer å lytte etter informasjon og skille mellom meninger og fakta og om å formidle fagkunnskap, alternativer og årsakssammenhenger på en tydelig og forståelig måte overfor aktuelle målgrupper. Det innebærer også å presentere eget arbeid, grunngi sine valg, argumentere for egne synspunkter, ta ulike perspektiver og delta i diskusjoner."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 naturbasert næringsutvikling innebærer å bruke kilder på en kritisk måte som lar seg etterprøve, å vurdere tekster og å bearbeide tekster på bakgrunn av tilbakemelding. Det innebærer også å skrive strukturerte tekster og å utforske og reflektere over faglige emner med et presist fagspråk tilpasset tema, situasjon og mottaker."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 naturbasert næringsutvikling innebærer å lese og forstå faglige tekster og debattinnlegg og å skille mellom personlige synspunkter og faktabaserte fagtekster. Det innebærer også å sammenligne og systematisere informasjon i ulike faglige tekster og vurdere om kildene er troverdige. Det innebærer videre å lese og tolke økonomiske oversikter, figurer og statistikk, lovverk, regelverk og kart, og å gjøre seg nytte av dem i faglige sammenhenger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 naturbasert næringsutvikling innebærer å lage budsjetter, føre enkle regnskaper og begrunne og fastsette pris på et produkt eller en tjeneste. Det innebærer også forstå og bruke statistisk materiale og presentere tallmateriale som tabeller, diagrammer og figurer. Videre innebærer det å vurdere hva resultatene betyr, foreslå hvordan de kan brukes, drøfte feilkilder og gjøre eventuelle justeringer."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 naturbasert næringsutvikling innebærer å vurdere, velge og bruke programvare til markedsføring, fakturering, budsjettering og analyse. Det innebærer også å søke etter, lese, tolke og sammenstille digital informasjon og å vurdere kildene kritisk. Videre innebærer det å bruke informasjon fra digitale kilder på en hensiktsmessig måte, utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 naturbasert næringsutvikling handler det tverrfaglige temaet bærekraftig utvikling om hvordan man kan skape naturbasert næring innenfor rammene av bærekraftig utvikling. Det omfatter også sosiale, økonomiske og miljømessige konsekvenser av ulike former for næringsdrift og om hvordan våre valg kan bidra til å gjøre næringer bærekraftige."
+   ]
+  }
  ]
 }

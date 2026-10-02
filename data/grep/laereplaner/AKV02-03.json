@@ -186,5 +186,45 @@
     "Drift og produksjon, biologi og miljø og anlegg og teknikk: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 akvakultur innebærer å kommunisere med andre for å oppnå sikre og effektive prosesser. Det vil si å forklare, begrunne, lytte til og delta i diskusjoner om ulike forslag og løsninger, og å bruke fagspråk i drøfting og refleksjon over faglige emner. Det innebærer også å forklare og beskrive akvakulturprosesser og -produkter og å tilpasse kommunikasjon til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 akvakultur innebærer å rapportere og dokumentere produksjon, presentere prosesser og produkter og å utforme tekster tilpasset mottaker og formål. Det betyr videre å utforske og reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å informere om relevante hendelser innad i bedriften, til myndighetene og til andre."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 akvakultur innebærer å finne og vurdere informasjon i brukerhåndbøker, prosedyrer og sikkerhetsdatablad. Det innebærer videre å orientere seg i aktuelt regelverk, tilegne seg informasjon om næringen gjennom ulike medier og å bruke kilder på en kritisk og etterprøvbar måte."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 akvakultur innebærer å beregne ulike produksjonsparametre. I tillegg innebærer det å foreta målinger av fysiske og kjemiske parametre og å bruke og bearbeide informasjonen. Videre innebærer det å sette opp og tolke tabeller, diagrammer og enkel statistikk. Det innebærer også å forstå enkle budsjetter og regnskap."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 akvakultur innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, og å kommunisere og presentere eget arbeid. Det innebærer også å tilegne seg ny kompetanse for å kunne bruke nye digitale verktøy som blir tilgjengelige. Det betyr også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 akvakultur handler det tverrfaglige temaet bærekraftig utvikling om å forstå hvordan akvakulturvirksomhet og økosystemer, samfunn og økonomiske forhold gjensidig påvirker hverandre. Det handler også om å ivareta det lokale og globale naturgrunnlaget og drifte på bakgrunn av kunnskap om miljøfaktorer og på naturens premisser. Det handler videre om en bærekraftig og trygg matproduksjon."
+   ]
+  }
  ]
 }

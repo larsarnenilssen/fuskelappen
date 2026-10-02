@@ -1,8 +1,14 @@
 // Leseren for tabellene i rundskrivet Udir-1 (scripts/udir/fagfordeling.ts) og endringsrapporten for dem.
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
-import { rundskrivFraAdresse, sammenlignFagfordeling } from '../../scripts/hent-udir.ts';
+import { flyttetTil, forsideAvvik, rundskrivFraAdresse, sammenlignFagfordeling } from '../../scripts/hent-udir.ts';
+import { lesFil } from '../../scripts/innhold/last.ts';
 import { lesTabeller, lesTimer, validerFagfordeling } from '../../scripts/udir/fagfordeling.ts';
+import type { Kilderegister } from '../../src/core/innhold/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
+
+const rot = fileURLToPath(new URL('../..', import.meta.url));
 
 const fordeling = `<table><caption>Tabell 17a Fag- og timefordeling på vg1</caption><tbody>
 <tr><th>Omfang i timer</th><th colspan="2">vg1&nbsp;</th></tr>
@@ -75,5 +81,31 @@ describe('rundskrivet og skoleåret', () => {
       'Fjernet: Tabell 17a (vg1) · Engelsk · Samisk (var 140)',
       'Endret: Tabell 17a (vg1) · Norsk · Ordinær: – → 113',
     ]);
+  });
+});
+
+describe('nytt eller flyttet rundskriv', () => {
+  const base = 'https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/';
+
+  it('ser ingen flytting når siden ligger der den skal', () => {
+    expect(flyttetTil(base, base)).toBeNull();
+    expect(flyttetTil(base, base.replace(/\/$/, ''))).toBeNull();
+    expect(flyttetTil(`${base}vedlegg-1/3vgo/3.3studieforberedende/`, `${base}vedlegg-1/3vgo/3.3studieforberedende/#3.3.1`)).toBeNull();
+  });
+
+  it('melder fra når udir.no sender videre til «tidligere rundskriv»', () => {
+    const arkiv = 'https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/tidligere-rundskriv/udir-1-2026/';
+    expect(flyttetTil(base, arkiv)).toBe(arkiv);
+  });
+
+  it('melder fra når forsiden sjekkes på en annen adresse enn tabellene', () => {
+    expect(forsideAvvik([{ id: 'udir-fag-og-timefordeling', url: base }, { id: 'udir-fag-og-timefordeling-forside', url: base }])).toBeNull();
+    expect(forsideAvvik([{ id: 'udir-fag-og-timefordeling', url: base.replace('2026', '2027') }, { id: 'udir-fag-og-timefordeling-forside', url: base }])).toMatch(/må oppdateres/);
+    expect(forsideAvvik([{ id: 'udir-fag-og-timefordeling', url: base }])).toMatch(/mangler/);
+  });
+
+  it('kilderegisteret sjekker forsiden på samme adresse som tabellene hentes fra', () => {
+    const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
+    expect(forsideAvvik(register.kilder)).toBeNull();
   });
 });

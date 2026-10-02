@@ -222,5 +222,51 @@
     "Driftsstøtte, brukerstøtte og utvikling: Privatisten skal opp til en tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg2 informasjonsteknologi innebærer å bruke fagterminologi i møte med fagmiljøer og å tilpasse uttrykksformen i veiledning og opplæring etter samtalepartnerens kjennskap til faget. Det innebærer å forstå problembeskrivelser, vurdere løsninger og kommunisere valg til brukere og fagmiljøer."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 informasjonsteknologi innebærer å skrive veiledninger og utforme informasjon til bruk i en virksomhet. Det innebærer å beskrive problemer, løsninger eller systemer for ulike formål og tilpasset ulike mottakere. Videre innebærer det å lage kode, skjemaer, tabeller og modeller etter kjente standarder."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 informasjonsteknologi innebærer å lese spesifikasjoner, kode, oppdragsbeskrivelser og veiledninger for å utføre arbeid. Det innebærer også å lese og forstå fagterminologi og å hente ut informasjon fra ulike skjemaer, tabeller og tegninger."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg2 informasjonsteknologi innebærer å gjenkjenne og beskrive ulike verdier, størrelser og tekniske avgrensinger i systemene man arbeider med, og å kunne bruke disse i eget arbeid. Det innebærer også å sette opp enkle budsjetter for og kostnadsberegninger av utvikling og drift av tjenester."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg2 informasjonsteknologi innebærer å bruke digitale ressurser til å søke etter og utveksle informasjon. Det innebærer også å vurdere informasjonskvalitet, å velge og vurdere kilder og å håndtere opphavsrett og personvern. Videre innebærer det å velge og tilpasse verktøy som passer i ulike situasjoner."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 informasjonsteknologi handler det tverrfaglige temaet demokrati og medborgerskap om hvordan datasikkerhet er en forutsetning for en åpen samfunnsdebatt og tillit til demokratiet. Videre handler det om forståelse av hvordan ulike tjenester og algoritmer påvirker informasjonen vi har tilgjengelig, og hvordan teknologi kan brukes og misbrukes."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg2 informasjonsteknologi handler det tverrfaglige temaet bærekraftig utvikling om bevissthet om dataindustriens miljøavtrykk og hvordan IT-løsninger kan bidra til bærekraftig utvikling i samfunnet. Videre handler det om hvordan informasjonsteknologi gjennom hele livssyklusen påvirker miljøet."
+   ]
+  }
  ]
 }

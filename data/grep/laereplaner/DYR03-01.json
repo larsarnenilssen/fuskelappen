@@ -124,5 +124,51 @@
     "Opplæringa i vg3 dyrefaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på tre–fem vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 dyrefaget inneber å lytte, forstå, formidle og rettleie og å tilpasse språket til målgruppe og situasjon. Det inneber å nytte fagomgrep i drøfting av og refleksjon over faglege emne og å kommunisere med kollegaer, samarbeidspartnarar, oppdragsgivarar og kundar. Vidare inneber det å tileigne seg og formidle kompetanse, å forklare og grunngi val, å diskutere forslag og løysingar og å reflektere over og vurdere eige arbeid."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 dyrefaget inneber å planleggje, presentere og utveksle informasjon, å rapportere og dokumentere arbeid og å meistre sjangrar som blir nytta i yrkesutøvinga. Det inneber vidare å utforske og reflektere over faglege emne og problemstillingar og å bruke kjelder på ein kritisk måte som lar seg etterprøve. Det inneber òg å bruke fagspråk for å utforme tekstar tilpassa målgruppa."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 dyrefaget inneber å finne, vurdere og tileigne seg informasjon i trykte og digitale ressursar og å bruke denne informasjonen i praktisk arbeid, tenesteyting eller produksjonsprosessar. Dette inneber å tolke, forstå og bruke brukarrettleiingar, kvalitetssystem, faglitteratur, diagnostiske verktøy og journalar på ein sjølvstendig måte. Det inneber òg å orientere seg i gjeldande regelverk og å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 dyrefaget inneber å hente inn informasjon i form av tal og tekst, strukturere informasjonen og nytte han i utrekningar og drifts- og økonomistyring. Det inneber å måle økonomiske, biologiske, kjemiske og fysiske parametrar. Vidare inneber det å tolke nøkkeltal, å rekne med ulike måleiningar og å bruke ulike grunnleggjande rekneoperasjonar. Det inneber òg å tolke statistisk materiale, diagram og tabellar og å lage enkle statistiske framstillingar."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 dyrefaget inneber å nytte digitale ressursar i yrkesutøvinga til å presentere, dokumentere, kommunisere, planleggje, hente inn og utveksle informasjon. Det inneber òg å vurdere personvern og datasikkerheit. Vidare inneber det å bruke relevant teknologisk utstyr til drift, verdiskaping og næringsutvikling. Dessutan inneber det å vurdere kjelder kritisk, utvikle etisk medvit og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 dyrefaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å handtere og meistre relasjonar mellom menneske, og mellom menneske og dyr. Det handlar om å kommunisere med kundar, kollegaer og andre yrkesgrupper. Det handlar òg om å vareta sikkerheita for seg sjølv og andre gjennom kunnskap om smittevern, risikovurdering og sikker handtering av dyr."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 dyrefaget handlar det tverrfaglege temaet berekraftig utvikling om kompetanse til å gjere ansvarlege, etiske og miljøbevisste val av tenester, produkt og aktivitetar knytte til dyr. Vidare handlar det om å reflektere over ressursbruk og om natur- og klimaavtrykket av eigen næringspraksis."
+   ]
+  }
  ]
 }

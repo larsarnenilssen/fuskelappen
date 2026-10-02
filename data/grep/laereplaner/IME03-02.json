@@ -116,5 +116,45 @@
     "Opplæringen i vg3 industrimekanikerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fem til åtte virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 industrimekanikerfaget innebærer å lytte til og gi respons i planlagt og i uforberedt samtale og å tilpasse informasjonen til mottaker og formål. Det innebærer også å forstå og kommunisere ved bruk av fagterminologi og uttrykksmåter og å reflektere over og drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industrimekanikerfaget innebærer å bruke fagspråk for å utforme ulike tekster tilpasset formål og målgruppe. Det innebærer å planlegge, dokumentere og rapportere arbeidsoppdrag. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industrimekanikerfaget innebærer å finne og vurdere uttrykt og underforstått informasjon i ulike tekster og å forstå skriftlig og visuell informasjon som beskriver tilstand og historikk. Det handler også om å tolke tegninger og finne fram i oppslagsverk."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 industrimekanikerfaget handler om å beregne manuelle og digitale maskininnstillinger og å gjøre økonomiske beregninger i valg av produksjonsmetoder og materialbruk. Det handler også om å beregne tidsbruk, mengder og mål."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 industrimekanikerfaget innebærer å bruke digitale ressurser til å søke etter og innhente informasjon, å rapportere og å kommunisere. Det innebærer også å bruke digitale verktøy som er aktuelle i bedriften, til å utføre målinger, overvåke prosesser og gjennomføre korrigerende tiltak. Videre innebærer det å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industrimekanikerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere over valg av ressurser, materialer og metoder. Det handler også om å velge væsker, smøremidler og kjemikalier i tilvirkingsprosesser som bidrar til å redusere bransjens miljøavtrykk. Videre handler det om å gjøre sirkulærøkonomiske valg under produksjonsprosesser."
+   ]
+  }
  ]
 }

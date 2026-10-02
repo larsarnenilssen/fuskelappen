@@ -214,5 +214,51 @@
     "Geofag 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsedel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i geofag innebærer å delta i faglige samtaler og dele og utvikle kunnskap om geofaglige sammenhenger og prosesser. Det innebærer også å lytte til og vurdere geofaglig informasjon kritisk, ta stilling til innholdet og argumentere for egne vurderinger. Videre innebærer det å drøfte geofaglige emner med bruk av fagterminologi og bygge opp en helhetlig argumentasjon."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i geofag innebærer å produsere og bearbeide ulike typer tekster, bruke geofaglig fagterminologi og bruke kilder på en kritisk og etterprøvbar måte. Det innebærer også å skrive for å utforske og problematisere geofaglige emner og bygge opp en helhetlig geofaglig argumentasjon.Videre innebærer det å bruke ulike modeller, illustrasjoner og andre representasjoner i sammensatte geofaglige tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i geofag innebærer å finne og vurdere eksplisitt og implisitt informasjon i tekster, simuleringer, kart og andre representasjoner. Å lese i geofag innebærer også å systematisere informasjon, trekke slutninger og å se faglige og samfunnsmessige sammenhenger. Å lese i geofag innebærer videre å forstå fagterminologi, og forholde seg kritisk til og vurdere kilder, innhold og representasjoner."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i geofag innebærer å identifisere og sammenligne størrelser og uttrykke sammenhengen mellom dem. Det innebærer også å samle, bearbeide og tolke informasjon fra innsamlet datamateriale og vurdere pålitelighet, trender og avvik. Å kunne regne innebærer videre å velge hensiktsmessige måleenheter og matematiske metoder, og om å lage og tolke grafiske framstillinger av innsamlet datamateriale."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i geofag innebærer å bruke digitale ressurser til å posisjonsbestemme, visualisere, programmere, modellere og presentere resultater fra feltarbeid og andre studier. Det innebærer også å bruke søkeverktøy og søkestrategier, å vurdere kilder kritisk og å velge ut relevant informasjon. Videre innebærer det å bruke digitale plattformer til å kommunisere og samhandle med andre. Digitale ferdigheter handler også om å vise god digital dømmekraft og etisk bevissthet i bruk av digitale ressurser."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I geofag handler det tverrfaglige temaet demokrati og medborgerskap om å gjøre geofaglige vurderinger om ressursforvaltning, klimaendringer og aktuelle naturfarer lokalt og globalt. Det handler videre om å kunne delta med faglige argumenter i diskusjoner om geofaglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I geofag handler det tverrfaglige temaet bærekraftig utvikling om å forstå at jordsystemene er grunnlaget for naturressursene som menneskene er helt avhengige av. Det handler også om hvordan menneskeskapte og naturlige endringer i jordsystemene kan føre til klimaendringer, naturfarer og endringer i geologisk mangfold, og hvordan samfunnet kan forebygge og tilpasse seg disse. Videre handler det om å finne løsninger for en mer bærekraftig ressursutnyttelse nå og i framtiden."
+   ]
+  }
  ]
 }

@@ -172,5 +172,51 @@
     "Råvare, produksjon og kvalitet og bransje og arbeidsliv: Privatisten skal opp til ein tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg2 matproduksjon inneber å kommunisere med kollegaer, leverandørar og kundar. Det inneber òg å tilpasse språket til mottakar, innhald og formål, og å lytte til og vise respekt for den ein snakkar med. Vidare inneber det å bruke relevante faguttrykk, fremje eigne synspunkt, drøfte problemstillingar og grunngi faglege val."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg2 matproduksjon inneber å utarbeide fagtekstar og skriftlege planar og å dokumentere eige arbeid. Det inneber vidare å reflektere, bruke kjelder kritisk og nytte faguttrykk ved skriving av tekstar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg2 matproduksjon inneber å forstå faglitteratur, lovtekstar, reseptar, prosessbeskrivingar, produktspesifikasjonar, varedeklarasjonar og brukarrettleiingar til maskiner og utstyr. Det inneber òg å forstå og følgje kvalitetssystem."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg2 matproduksjon inneber å bruke nøyaktige måleiningar og å rekne om mellom dei. Vidare inneber det å rekne om reseptar til ønskte mengder og å utføre enkle økonomiske utrekningar for å berekne næringsinnhald, pris og svinn."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg2 matproduksjon inneber å bruke digitale ressursar i planlegging, produksjon og dokumentasjon av arbeidsoppgåver. Vidare inneber det å nytte digitale løysingar ved bruk av maskiner, verktøy og utstyr. Det inneber òg å orientere seg i og finne fagstoff på nettet, og å vise digital dømmekraft og etisk refleksjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg2 matproduksjon handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle identitet gjennom yrkesval og tilhøyrsle i eit arbeids- og læringsfellesskap. Temaet handlar vidare om å kunne tilby produkt som er framstilte i tråd med kostråda frå helsemyndigheitene. Det handlar òg om å vere bevisst på korleis næringsinnhaldet i og samansetjinga av maten påverkar helse. Dessutan handlar det om å vere bevisst på den rolla bransjen speler som leverandør av trygg mat og matopplevingar."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg2 matproduksjon handlar det tverrfaglege temaet demokrati og medborgarskap om å respektere synspunkta til andre og å handtere meiningsforskjellar. Temaet handlar vidare om å vareta verdiane i det demokratiske samfunnet vårt som grunnlag for profesjonell yrkesutøving og om korleis partane i arbeidslivet samarbeider for å utvikle eit betre arbeidsliv."
+   ]
+  }
  ]
 }

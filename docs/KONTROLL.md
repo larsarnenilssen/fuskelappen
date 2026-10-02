@@ -2,7 +2,7 @@
 
 <!-- Generert av `npm run kontroll:rapport`. Kildesjekken lager den på nytt hver uke. Ikke rediger for hånd. -->
 
-Oppdatert 01.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
+Oppdatert 02.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
 
 Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.
 
@@ -15,8 +15,8 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 85 |
-| Praksis og tolkninger som bør bekreftes | 13 av 13 |
+| Ikke kontrollert | 92 |
+| Praksis og tolkninger som bør bekreftes | 14 av 14 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -50,6 +50,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Utvidet arbeidsår** | Regnes utvidelsen av arbeidsåret fortsatt som timene over 37,5 × 38 + 45 = 1470 planfestede timer, delt på 7,5 timer per dag? | Eier 30.09.2026. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.3, punkt 5.1, punkt 5.2, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Tillegg for funksjoner** | Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner? | Appens valg, med utgangspunkt i SFS 2213 punkt 9.1. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | ikke bekreftet |
+| **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
 
 ## Per kilde
 
@@ -191,6 +192,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Grunnleggende ferdigheter (`grunnleggende-ferdigheter`) | begrep | Grunnleggende ferdigheter (GF1–GF5) i læreplanene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Tverrfaglige temaer (`tverrfaglige-temaer`) | begrep | Tverrfaglige temaer (TT1–TT3) i læreplanene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 | Programområde (`programomrade`) | begrep | Programområder | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Programfag og valgfrie programfag (`programfag`) | begrep | Fagtype | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 
@@ -202,6 +205,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Læreplanverket (`laereplanverket`) | begrep | Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet, Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 | Utdanningsprogram (`utdanningsprogram`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur, Vedlegg 1, 3.5 Studieforberedende tilbud innenfor yrkesfaglige utdanningsprogram | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Programområde (`programomrade`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Vg1, vg2 og vg3 (`trinn-vg`) | begrep | Vedlegg 1, 3.1 Tilbudsstruktur, Vedlegg 1, 3.4 og 3.4.3 Særløp | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
@@ -212,6 +217,16 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Lærefag og opplæring i bedrift (`opplaering-i-bedrift`) | begrep | Vedlegg 1, 3.1, 3.4.3, 3.4.4 og 3.4.5 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Påbygging til generell studiekompetanse (`pabygging`) | begrep | Vedlegg 1, 3.5.2 og 3.5.3 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Kryssløp (`krysslop`) | begrep | Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+
+### Udir-1-2026, teksten øverst i rundskrivet
+
+`udir-fag-og-timefordeling-forside` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Teksten øverst: «Dette rundskrivet erstatter Rundskriv Udir-1-2025.» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 
 ### Registreringshåndboken, A03 Programområdekode
 
@@ -276,6 +291,32 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
 | Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | Vitnemålsmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+
+### Læreplanverket (udir.no)
+
+`udir-lareplanverket` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/laring-og-trivsel/lareplanverket/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Læreplanverket (`laereplanverket`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+
+### Overordnet del – verdier og prinsipper for grunnopplæringen
+
+`udir-overordnet-del` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/lk20/overordnet-del/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Læreplanverket (`laereplanverket`) | begrep | Om overordnet del | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Overordnet del (`overordnet-del`) | begrep | Om overordnet del | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Formålsparagrafen (`formalsparagrafen`) | begrep | Formålet med opplæringen | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Kompetanse (`kompetanse`) | begrep | 2.2 Kompetanse i fagene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Grunnleggende ferdigheter (`grunnleggende-ferdigheter`) | begrep | 2.3 Grunnleggende ferdigheter | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Tverrfaglige temaer (`tverrfaglige-temaer`) | begrep | 2.5 Tverrfaglige temaer | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 
 ### Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)
 
@@ -567,6 +608,18 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 
 Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 5.5
 
+**Grunnleggende ferdigheter** (`grunnleggende-ferdigheter`, begrep, ikke kontrollert)
+
+- Er «fagene har ulikt ansvar for dem» en dekkende gjengivelse av at enkelte fag har større ansvar enn andre?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/grunnleggende-ferdigheter/): punkt 2.3 Grunnleggende ferdigheter; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Grunnleggende ferdigheter (GF1–GF5) i læreplanene
+
+**Tverrfaglige temaer** (`tverrfaglige-temaer`, begrep, ikke kontrollert)
+
+- Er det riktig å si at temaene «ikke er med i alle fag», ut fra at målene står i kompetansemål i fagene der det er relevant?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/tverrfaglige-temaer/): punkt 2.5 Tverrfaglige temaer; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Tverrfaglige temaer (TT1–TT3) i læreplanene
+
 **Programområde** (`programomrade`, begrep, ikke kontrollert)
 
 - Er «et tilbud på ett trinn i et utdanningsprogram» en dekkende forklaring av programområde?
@@ -578,6 +631,19 @@ Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapslø
 - Er det riktig å si at fylkeskommunen bestemmer hvilke valgfrie programfag skolen tilbyr?
 
 Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag); [Yrkesfaglig fordypning for de yrkesfaglige utdanningsprogrammene (YFF), forskrift fastsatt av Utdanningsdirektoratet 3.11.2020](https://www.udir.no/utdanningslopet/videregaende-opplaring/felles-for-fagopplaringen/yrkesfagleg-fordjuping/yrkesfaglig-fordypning-for-de-yrkesfaglige-utdanningsprogrammene-yff/): punkt 3.1.3; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Fagtype
+
+**Læreplanverket** (`laereplanverket`, begrep, ikke kontrollert)
+
+- Er «Revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20» riktig formulert (eier 02.10.2026)?
+
+Kilder å sjekke mot: [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
+
+**Fag- og timefordelingen** (`fag-og-timefordeling`, begrep, ikke kontrollert)
+
+- Udir skriver i punkt 1.1 at tabellene med fag- og timefordelingen er forskrifter, men det finnes ingen egen forskrift i Lovdata (eier 02.10.2026). I Udir-1-2025 varslet Udir at en forskrift om fag- og timefordeling og tilbudsstruktur skulle sendes på høring i 2026. Er det greit å gjengi det som «Udir skriver i rundskrivet at …» til en slik forskrift eventuelt kommer?
+- Det kommer som regel endringer hvert år, men det er usikkert om Udir må gi ut et nytt rundskriv hvert år (eier 02.10.2026). Er «Udir gir den ut som rundskriv» og navnet på rundskrivet som gjelder nå, nok?
+
+Kilder å sjekke mot: [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur; [Udir-1-2026, teksten øverst i rundskrivet](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/): Teksten øverst: «Dette rundskrivet erstatter Rundskriv Udir-1-2025.»
 
 **Utdanningsprogram** (`utdanningsprogram`, begrep, ikke kontrollert)
 
@@ -634,4 +700,22 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 - Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
 Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader](https://kodeverk.vigo.no/): Vitnemålsmerknader
+
+**Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
+
+- Er «alle som arbeider i opplæringen, skal la den prege planleggingen og gjennomføringen» en dekkende gjengivelse av hvem overordnet del retter seg mot?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
+
+**Formålsparagrafen** (`formalsparagrafen`, begrep, ikke kontrollert)
+
+- Er oppsummeringen av hva formålsparagrafen sier, dekkende uten å bli for lang?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/formalet-med-opplaringen/): Formålet med opplæringen
+
+**Kompetanse** (`kompetanse`, begrep, ikke kontrollert)
+
+- Er det nyttig å nevne at kompetansebegrepet skal ligge til grunn for vurderingen av elevenes faglige kompetanse?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/kompetanse-i-fagene/): punkt 2.2 Kompetanse i fagene
 

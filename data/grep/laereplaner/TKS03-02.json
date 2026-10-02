@@ -124,5 +124,45 @@
     "Opplæringen i taksidermistfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på fire til fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i taksidermistfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i taksidermistfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser og dokumentere arbeidsprosesser gjennom tekst og visualiseringer."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i taksidermistfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder, illustrasjoner og piktogrammer. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i taksidermistfaget innebærer å hente ut, beskrive og tolke informasjon fra tallmateriale i tabeller, statistikk og grafiske framstillinger. Det innebærer også å bruke og bearbeide informasjonen for å forstå og vise sammenhenger, beregne blandingsforhold og gjøre økonomiske beregninger i forbindelse med pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i taksidermistfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere og presentere eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I taksidermistfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over ressursbruk, ressursutnyttelse, miljøavtrykk og resirkulering. Videre handler det om krav til kvalitet ved bruk av verktøy, maskiner og materialer. Det handler også om artskunnskap og etiske holdninger og arbeidsmetoder. Videre handler det om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv."
+   ]
+  }
  ]
 }

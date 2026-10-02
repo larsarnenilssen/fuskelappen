@@ -104,5 +104,45 @@
     "Opplæringen i vg3 industrirørleggerfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres innenfor en tidsramme på fire til seks virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 industrirørleggerfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer å bruke fagterminologi og å forstå og bruke faguttrykk, uttrykke egne synspunkter og å drøfte ulike faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 industrirørleggerfaget innebærer å utarbeide arbeidsbeskrivelser, fylle ut avviksskjemaer og målerapporter og sikker jobb-analyse. Videre innebærer det å lage dokumentasjon på utført arbeid og tilpasse innhold til formål og mottaker. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 industrirørleggerfaget innebærer å lese og forstå prosedyrer, håndbøker, forskrifter og regelverk. Videre innebærer det å finne og vurdere informasjon i tekster og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 industrirørleggerfaget innebærer å regne ut kapplengder på rør og grader på bend og å beregne vekter på rørstrekk. Det innebærer også å hente ut, beskrive og tolke informasjon fra tallmateriale og å beregne økonomien knyttet til material- og utstyrsvalg og tidsbruk i produksjonen."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 industrirørleggerfaget innebærer å anvende digitale ressurser for å effektivisere produksjonen. Det innebærer også å bruke digitale ressurser til å søke etter, kommunisere og innhente informasjon, og å utvikle etisk bevissthet og digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 industrirørleggerfaget handler det tverrfaglige temaet bærekraftig utvikling om å gjenbruke materialer og å kildesortere avfall. Videre handler det om å hindre at rørinstallasjoner og produksjonsanlegg slipper ut farlige og skadelige produkter i miljøet. Det handler også om å følge substitusjonsprinsippet, som innebærer å erstatte miljøskadelige stoffer med mindre skadelige."
+   ]
+  }
  ]
 }

@@ -100,5 +100,45 @@
     "Opplæringen i vg3 tekstilrensfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 tekstilrensfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å kommunisere og tilpasse muntlig tekst til mottaker og formål. Videre innebærer det å beskrive og begrunne arbeidsprosesser, kommunisere med kunder, kolleger, samarbeidspartnere, leverandører og reparatører. Det innebærer også å fremme egne synspunkter og å drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 tekstilrensfaget innebærer å utforme tekster tilpasset mottaker og formål, registrere ordrer, dokumentere avtaler og utarbeide avviksrapporter. Det innebærer også å reflektere over faglige emner og problemstillinger, bygge opp argumentasjon og bruke faglige kilder på en kritisk måte som lar seg etterprøve. Videre innebærer det å bruke uttrykksformer som bilder og symboler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 tekstilrensfaget innebærer å finne og vurdere innhold i tekster, arbeidsbeskrivelser, håndbøker, regelverk, produktdatablader, vedlikeholdsmerking og retningslinjer. Det innebærer også å sammenligne, tolke og systematisere informasjon."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 tekstilrensfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale og å beregne maskinkapasitet, blandingsforhold og tidsbruk. Det innebærer også å beregne pris på oppdrag og kostnader ved ressursbruk og metodevalg."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 tekstilrensfaget innebærer innstilling av maskiner og utstyr, og innhenting av opplysninger. Det innebærer også å bruke systemer for registrering av kunder, kommunikasjon med kunder og kolleger, merking av tøy og innkjøp. Videre innebærer det å utvikle etisk bevissthet og digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 tekstilrensfaget handler det tverrfaglige tema bærekraftig utvikling om kritisk refleksjon rundt valg av rengjøringsmetoder og om bevissthet om hvordan disse påvirker klima- og miljøspørsmål. Videre handler det om å identifisere og utføre tiltak for å redusere energi-, vann- og kjemiforbruk, og bidra til løsninger for å forlenge levetiden på tekstiler og maskiner. Det handler også om å håndtere avfall for å begrense innvirkningen på miljøet og omgivelsene. Kunnskaper om miljø, sosiale forhold, helse og sikkerhet kan bidra til å ta ansvarlige valg innen tekstilrens og fremme etisk og miljøbevisst handel."
+   ]
+  }
  ]
 }

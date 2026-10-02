@@ -224,5 +224,45 @@
     "Produksjon og historiefortelling, teknologiforståelse og konseptutvikling og programmering: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 informasjonsteknologi og medieproduksjon innebærer å gi uttrykk for meninger, ideer og følelser i dialog med andre. Videre innebærer det å bruke relevant fagterminologi til å formidle faglig innhold i møte med fagmiljø og brukere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 informasjonsteknologi og medieproduksjon innebærer å kommunisere ved hjelp av ulike sjangre. Videre innebærer det å bruke relevant fagterminologi til å dokumentere løsninger, presentere faglig innhold og vurdere egne og andres produkter."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 informasjonsteknologi og medieproduksjon innebærer å lese og forstå dokumentasjon, spesifikasjoner, relevant lovverk og rettledninger for å utføre arbeid. Videre innebærer det å vurdere kommunikasjon og hvordan virkemidler og fortelleteknikker blir brukt."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 informasjonsteknologi og medieproduksjon innebærer å forstå ulike verdier, størrelser og kapasiteter i systemene man jobber med. Videre innebærer det å beregne kostnader og priser ved produksjon."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 informasjonsteknologi og medieproduksjon innebærer å produsere og kommunisere ved hjelp av digitale ressurser. Videre innebærer det å utøve etisk refleksjon og å vurdere troverdigheten til informasjon."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 informasjonsteknologi og medieproduksjon handler det tverrfaglige temaet demokrati og medborgerskap om hvordan mediene kan påvirke meningene våre, hvordan vi oppfatter andre, og hvordan andre oppfatter oss. Det handler også om å utvikle verktøy til å uttrykke egne meninger, ideer og følelser i dialog med andre. Programfagene skal bidra til å utvikle en etisk bevissthet om og forståelse for at teknologi og sikkerhet kan påvirke åpne og demokratiske prosesser."
+   ]
+  }
  ]
 }

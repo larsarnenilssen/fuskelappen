@@ -128,5 +128,51 @@
     "Opplæringa i vg3 strikkefaget skal avsluttast med ei sveineprøve. Alle skal opp til sveineprøva, som normalt skal gjennomførast innanfor ei tidsramme på 7–10 vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 strikkefaget inneber å lytte til og gi respons i spontan og førebudd samtale. Det inneber òg å bruke fagspråk i kommunikasjon med kundar, leverandørar, kollegaer og andre samarbeidspartnarar og å tilpasse kommunikasjonen til mottakar og formål. Lærlingane utviklar munnlege ferdigheiter når dei drøftar, reflekterer og presenterer produkt og metodar åleine og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 strikkefaget inneber å bruke fagspråk til å utforme tekstar tilpassa mottakar og formål. Det inneber òg å lage oppskrifter og å presentere og dokumentere arbeidsprosessar gjennom tekst og visualiseringar til kundar, kollegaer, leverandørar og andre samarbeidspartnerar. Vidare inneber det å utforske og reflektere over faglege emne og problemstillingar, byggje opp argumentasjon og revidere eigne tekstar."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 strikkefaget inneber å finne og vurdere informasjon i faglitteratur, ulike tekstar, arbeidsbeskrivingar, teikningar, bilete og illustrasjonar. Det inneber òg å samanlikne, tolke informasjon og trekkje faglege slutningar ut frå kjent og ukjent fagstoff. Vidare inneber det å bruke kjelder på ein kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 strikkefaget inneber å hente ut, beskrive og tolke informasjon frå eit talmateriale. Det inneber òg å bruke og arbeide med informasjonen for å forstå og vise samanhenger og å samanlikne og presentere resultat på ulike måtar. Det inneber vidare å ta mål, rekne ut strikkefastleik, berekne storleikar og konstruere mønster. I tillegg inneber det å gjere økonomiske berekningar i samband med pristilbod."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 strikkefaget inneber å bruke digitale ressursar til å innhente informasjon og å kommunisere og presentere eige arbeid. Digitale ferdigheiter inneber vidare å vurdere, arbeide med og samanstille informasjon, vere kjeldekritisk og vise til kjelder. Det inneber òg å utvikle etisk medvit og å vise digital dømmekraft ved å følgje reglar og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg3 strikkefaget handlar det tverrfaglege temaet folkehelse og livsmeistring om å utvikle handlag, gode arbeidsrutinar, førebygging av belastningsskadar, evne til problemløysing og om å utvikle identitet og å ta ansvarlege val i eige liv og i skapande arbeid. Det handlar òg om korleis ein kan gi uttrykk for eigne opplevingar, tankar og meiningar i samarbeid med andre og i arbeidet med oppgåver innanfor strikkefaget."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 strikkefaget handlar det tverrfaglege temaet berekraftig utvikling om kritisk refleksjon rundt val av materiale, produksjonsmetodar, verktøy og maskiner i ein etisk og berekraftig produksjon, og korleis dette kan påverke miljøet. Vidare handlar det om å leggje vekt på produksjon av haldbare produkt der vedlikehald og reparasjon er mogleg, og å vidareutvikle og skape nye strikkeprodukt med god og varig kvalitet. Berekraftig utvikling handlar òg om at faget er ein del av arbeidet med å sikre natur- og kulturarven i verda."
+   ]
+  }
  ]
 }

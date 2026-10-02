@@ -171,5 +171,45 @@
     "Treningslære 2: Privatisten skal opp til en skriftlig eksamen. Eksamen blir utarbeidet og sensurert sentralt. Eksamen skal ikke ha foreberedelsesdel."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i treningslære innebærer å presentere fakta og forklare årsakssammenhenger, å formulere spørsmål og å delta i meningsutveksling, debatter og diskusjoner. Videre innebærer det å beskrive og forklare teknikker, ferdigheter, treningsformer, treningsmetoder og øvelser i idrettsaktivitet. Utviklingen av ferdigheten går fra å kunne beskrive og forklare ulike teknikker, metoder og øvelser til å kunne vurdere og tolke ulike sammenhenger mellom disse."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i treningslære innebærer å utarbeide treningsplaner og vurdere eget treningsarbeid i tilknytning til idrettsaktiviteter. Videre innebærer det å bruke kilder kritisk i utforming av tekst. Utviklingen går fra å kunne lage enkle planer og svare på oppgaver til å kunne bruke kompetansen sin til å vurdere eget og andres treningsarbeid. Utviklingen av kritisk kildebruk og kritisk tenkning er en viktig del av dette."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i treningslære innebærer å forstå ulike former for faglitteratur, avistekster, offentlige dokumenter, andre skriftlige kilder og databasert informasjon som handler om fagområder innenfor treningslære. Utviklingen går fra å kunne tilegne seg overordnet kunnskap om de ulike elementene i treningslæren til å kunne bruke denne kunnskapen til å løse ulike utfordringer knyttet til trening og helse."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i treningslære innebærer å måle og beregne intensitet og å lage tabeller, diagrammer og grafiske framstillinger for å visualisere innhentet data fra trening, konkurranser og animasjoner. Det omfatter også å tolke tabeller og figurer og bruke disse i presentasjoner. I bevegelseslære kan det innebære å beregne enkle mekaniske og organiske forhold. Utviklingen av å kunne regne i treningslære går fra å lage tabeller, diagrammer og grafiske framstillinger til å tolke disse og reflektere over og vurdere ulike løsninger."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i treningslære innebærer å søke etter, sortere, kategorisere og tolke informasjon om treningslære hensiktsmessig og kritisk. Å bruke digitale hjelpemidler på hensiktsmessige måter i arbeidet er sentralt. Det omfatter også å forstå og vurdere informasjon innhentet gjennom digitale verktøy, medier og ressurser. Utviklingen av digitale ferdigheter går fra å kunne innhente informasjon til å kunne analysere, vurdere og tolke."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I treningslære handler det tverrfaglige temaet folkehelse og livsmestring om å tilegne seg kunnskap om fysiske og psykiske egenskaper og om ernæring. Kunnskap om fysisk og psykisk helse gir muligheter til å ta ansvarlige livsvalg. Gjennom arbeid med faget får elevene kunnskap om rusmidler og doping og om effekten disse stoffene har på folkehelsen."
+   ]
+  }
  ]
 }

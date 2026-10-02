@@ -82,5 +82,39 @@
     "Medieutvikling: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatistene skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i medieutvikling innebærer å uttrykke egne meninger og å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagspråk i drøfting og refleksjon over faglige emner, bygge opp argumentasjon og tilpasse muntlig tekst til mottaker og formål. Det innebærer videre å drøfte, reflektere over og presentere saker alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i medieutvikling innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det betyr å utforske og reflektere over faglige emner og problemstillinger, å bygge opp argumentasjon og å bruke kilder på en kritisk måte som lar seg etterprøve. Å skrive innebærer også å revidere egne tekster."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i medieutvikling innebærer å nyttiggjøre seg ulike kilder for å bidra til inspirasjon og skaperglede i eget arbeid. Dette krever kildekritiske og analytiske ferdigheter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i medieutvikling innebærer å utforske og bruke ny teknologi og å reflektere over nye bruksområder for ny teknologi. Det betyr også å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I medieutvikling handler det tverrfaglige temaet bærekraftig utvikling om å gi elevene kompetanse i å se sammenhengen mellom sosiale, økonomiske og miljømessige forhold. Gjennom arbeid med temaet ser elevene på betydningen ny teknologi og digitalisering kan ha på mennesker, miljø og samfunn. Faget skal gi elevene innsikt i hvordan medieutvikling kan bidra til å løse problemer knyttet til bærekraft. Faget skal også gi elevene kunnskap og forståelse av hvilke dilemmaer som kan oppstå, og hvordan de kan gjøre veloverveide valg."
+   ]
+  }
  ]
 }

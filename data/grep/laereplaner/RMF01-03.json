@@ -153,5 +153,57 @@
     "Råvare, produksjon og kvalitet og bransje og arbeidsliv: Privatisten skal opp til éin tverrfagleg praktisk eksamen i desse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg1 restaurant- og matfag inneber å kunne kommunisere med andre gjennom samtalar og presentasjonar og å kunne bruke relevante faguttrykk i daglegtalen. Det inneber òg å kunne gjere greie for, reflektere over og setje ord på eigne erfaringar i arbeid med fag."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 restaurant- og matfag inneber å kunne ytre seg forståeleg om restaurant- og matfagrelaterte tema. Vidare inneber det å kunne bruke eit presist fagspråk og tilpasse tekstar til ulike formål, mottakarar og medium."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 restaurant- og matfag inneber å kunne lese og forstå reseptar og oppskrifter, ulike fagtekstar, og arbeidsbeskrivingar for maskiner og utstyr og kvalitetssikringssystem."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg1 restaurant- og matfag inneber å kunne bruke passande måleiningar for vekt, volum, væskemål og temperatur. Det handlar òg om å kunne rekne ut mengder ut frå oppskrifter og reseptar. Vidare inneber det å kunne utføre enkle økonomiske utrekningar og gjennomføre kjøp og sal."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg1 restaurant- og matfag inneber å kunne bruke digitale ressursar for å styre produksjonsprosessar, merkje varer, setje saman produkt og måltid ut frå ønskt næringsinnhald og rekne ut prisar. Det vil òg seie å kunne bruke ulike medium til kommunikasjon og samhandling med samarbeidspartnarar, kollegaer og gjester. Vidare inneber det å vurdere informasjon frå digitale kjelder kritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 restaurant- og matfag handlar det tverrfaglege temaet folkehelse og livsmeistring om at elevane skal utvikle identitet gjennom yrkesval som medverkar til at dei får eit positivt sjølvbilete gjennom å høyre til eit fellesskap. Temaet handlar òg om å utvikle forståing av næringssamansetjinga i kosthaldet og kostråda frå helsestyresmaktene og om å reflektere over samanhengen mellom kosthald og livskvalitet."
+   ]
+  },
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I vg1 restaurant- og matfag handlar det tverrfaglege temaet demokrati og medborgarskap om å auke kunnskapen om ulike matvanar og vise respekt for ulike kultur- og mattradisjonar. Vidare handlar det om at mat og drikke speler ei rolle i sosiale samanhengar. Å kunne samarbeide på tvers av fag og yrkesgrupper og forstå dei demokratiske prosessane i arbeidslivet inngår òg i temaet demokrati og medborgarskap."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 restaurant- og matfag handlar det tverrfaglege temaet berekraftig utvikling om at eit samfunn i utvikling krev eit tilpassa forbruk. Det handlar òg om medvit om korleis bransjen påverkar miljøet, og korleis vi best mogleg kan utnytte dei ressursane som finst lokalt, regionalt og globalt."
+   ]
+  }
  ]
 }

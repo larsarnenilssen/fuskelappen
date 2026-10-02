@@ -2,6 +2,7 @@
 import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
+import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 
 export const nn: Tekster = {
@@ -39,7 +40,7 @@ export const nn: Tekster = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Læreplanverk og opplæringsløp',
+    fag: 'Læreplanverket',
     elev: 'Elevar og opplæring',
     skolemiljo: 'Skulemiljø',
     felles: 'Oppslag',
@@ -62,6 +63,7 @@ export const nn: Tekster = {
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbod',
+      laereplanverk: 'Overordna del',
       side: 'Side',
     },
   },
@@ -247,9 +249,13 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    laereplanverket: {
+      navn: 'Overordna del',
+      beskrivelse: 'Verdiar og prinsipp, grunnleggjande ferdigheiter og tverrfaglege tema.',
+    },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Utdanningsprogram, tilbod på kvart trinn, og fag og timar i kvart tilbod.',
+      beskrivelse: 'Fag- og timefordelinga og tilbodsstrukturen: utdanningsprogram, tilbod på kvart trinn, og fag og timar.',
     },
     begreper: {
       navn: 'Omgrep',
@@ -257,7 +263,7 @@ export const nn: Tekster = {
     },
     fag: {
       navn: 'Fag og læreplanar',
-      beskrivelse: 'Fagkodar, kompetansemål, vurdering og årstimetal.',
+      beskrivelse: 'Læreplanane for fag: fagkodar, kompetansemål, vurdering og årstimetal.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
@@ -267,6 +273,7 @@ export const nn: Tekster = {
   arbeidstid: arbeidstidNn,
   fag: fagNn,
   opplaeringslop: opplaeringslopNn,
+  laereplanverket: laereplanverketNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

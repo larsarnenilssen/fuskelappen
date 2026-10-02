@@ -171,5 +171,51 @@
     "Fysikk 1: Privatisten skal opp til en muntlig-praktisk eksamen. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen.\nFysikk 2: Privatisten skal opp til en skriftlig eksamen og en muntlig-praktisk eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Skriftlig eksamen skal ikke ha forberedelsesdel. Muntlig-praktisk eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i fysikk innebærer å beskrive egne erfaringer med og observasjoner av den fysiske verden. Videre innebærer det å bruke fysikkfaglige begreper til å formulere spørsmål og hypoteser, drøfte problemstillinger, formidle resonnementer og argumentere for vurderinger i dialog med andre. Det innebærer også å forstå forskjellen mellom allmennhetens og fysikkfagets bruk av de samme begrepene."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i fysikk innebærer å formidle faglig innhold skriftlig på en strukturert og tydelig måte med bruk av fagterminologi, symboler og vitenskapelig notasjon. Det innebærer også å bruke et matematisk språk for å formulere lovmessigheter i naturen, formidle resonnementer og angi kvantitative sammenhenger. Videre innebærer det å veksle mellom ulike representasjoner, for eksempel figurer, tekst, grafer, tabeller og matematiske formler."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i fysikk innebærer å trekke ut, tolke og reflektere over informasjon i tekster som inneholder fysikkfaglige begreper, symboler, matematiske uttrykk, figurer, grafer og programmeringskoder. Det innebærer også å følge og forstå fysikkfaglige resonnementer og argumenter i skriftlig tekst."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i fysikk innebærer å bruke matematiske metoder og verktøy for å løse fysiske problemer og beregne kvantitative størrelser. Videre innebærer det å analysere måledata, beregne usikkerhet og lage og tolke matematiske modeller. Det innebærer også å bruke tall på standardform, bruke prefikser og å omforme enheter på en hensiktsmessig måte. Å kunne regne innebærer også å gjøre overslag og vurdere rimeligheten av et resultat."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i fysikk innebærer å bruke digitale ressurser til å registrere, bearbeide, analysere, modellere og presentere data. Det innebærer også å innhente relevant informasjon for å studere fysikkfaglige fenomener og problemstillinger. Videre innebærer det å bruke programmering og dynamiske verktøy til å utforske fysiske problemstillinger."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I fysikk handler det tverrfaglige temaet demokrati og medborgerskap om evnen til å vurdere resonnementer og påstander kritisk, og å gi dem kompetansen som kreves for å skille mellom kunnskap basert på vitenskapelige metoder og alternative forklaringsmodeller. Videre handler det om hvordan kunnskaper i fysikk gir innsikt i argumentasjon, slik at elevene kan bidra til at naturvitenskapelige argumenter blir forstått i samfunnsdebatten."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I fysikk handler det tverrfaglige temaet bærekraftig utvikling om forståelse av fysiske sammenhenger som er sentrale for å forstå klimautfordringene. Videre handler det om hvordan innsikt i fysiske prinsipper kan bidra til løsninger som kan bedre klimasituasjonen og møte framtidens behov for bærekraftig energi."
+   ]
+  }
  ]
 }

@@ -99,5 +99,51 @@
     "Politikk og menneskerettigheter: Privatisten skal opp til en skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i politikk og menneskerettigheter innebærer å bruke fagspråk og statsvitenskapelige teorier og modeller til å presentere aktuelle temaer og problemstillinger. Det innebærer også å lytte til, vurdere og gi respons på andres synspunkter i faglige samtaler og diskusjoner. Det innebærer videre å tilpasse muntlig tekst til mottaker og formål og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i politikk og menneskerettigheter innebærer å bruke varierte skrivestrategier for å utforme fagtekster tilpasset mottaker og formål. Det vil si å bruke statsvitenskapelige teorier og fagspråk i arbeid med fagtekster om aktuelle temaer og problemstillinger. Å kunne skrive innebærer også å revidere egne tekster og å innhente, vurdere og bruke kilder på en måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i politikk og menneskerettigheter innebærer å bruke varierte kilder til å lære om politikk og aktuelle politiske temaer. Å kunne lese innebærer også å innhente og vurdere eksplisitt og implisitt informasjon i tekster. Det innebærer videre å vurdere ulike innfallsvinkler, perspektiv og formål med tekster. Å kunne lese innebærer videre å sammenligne, tolke og systematisere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i politikk og menneskerettigheter innebærer å kunne innhente informasjon fra aktuelle tabeller og grafer. Det innebærer også å beskrive, analysere og tolke innholdet i disse og innarbeide denne informasjonen i skriftlig og muntlig arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i politikk og menneskerettigheter innebærer å bruke digitale ressurser til å innhente, vurdere og bruke informasjon på en hensiktsmessig og kritisk måte som lar seg etterprøve. Det innebærer også å bruke digitale ressurser til å kommunisere og presentere eget arbeid. Det innebærer videre å utvikle etisk bevissthet og vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I politikk og menneskerettigheter handler det tverrfaglige temaet demokrati og medborgerskap om at demokratiet ikke kan tas for gitt, men må vedlikeholdes og utvikles. Det handler videre om hvordan ulik fordeling av politiske ressurser gir ulik grad av innflytelse og deltakelse. Faget skal bidra til bevisstgjøring om vår rolle som medborgere i samfunnet og vårt ansvar for å utvikle demokratiet i dialog med mennesker som har andre meninger. Det tverrfaglige temaet handler også om at likeverdighet, slik dette kommer til uttrykk i menneskerettighetene, er en viktig og sentral verdi i demokratiske samfunn."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I politikk og menneskerettigheter handler det tverrfaglige temaet bærekraftig utvikling om å utforske problemstillinger knyttet til miljø og klima, verdiskaping, fattigdom og fordeling. Det handler videre om å utforske hvordan ulike politiske virkemidler kan skape spenninger mellom rike og fattige stater, mellom regioner og mellom samfunnsklasser."
+   ]
+  }
  ]
 }

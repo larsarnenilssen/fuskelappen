@@ -92,5 +92,45 @@
     "Opplæringa i vg3 fiskeri- og akvakulturreiskapsfaget skal avsluttast med ei fagprøve. Alle skal opp til fagprøva, som skal gjennomførast innanfor ei tidsramme på éin til to vyrkedagar."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg3 fiskeri- og akvakulturreiskapsfaget inneber å forklare og grunngi arbeidsprosessar på arbeidsplassen og å diskutere ulike forslag og løysingar. Vidare inneber det å forklare og beskrive prosessar og produkt og å bruke fagspråk i drøfting og refleksjon over faglege emne. Det inneber også å tilpasse kommunikasjon til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg3 fiskeri- og akvakulturreiskapsfaget inneber å rapportere og dokumentere ulike arbeidsoperasjonar, gjennomføre risikovurdering og utføre avviksrapportering på arbeidsplassen. Det inneber også digital kommunikasjon og informasjonsutveksling. Det inneber vidare å utforske og reflektere over faglege emne og å tilpasse faglege tekstar til mottakar og formål."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 fiskeri- og akvakulturreiskapsfaget inneber å bruke og vurdere informasjon i bruksrettleiingar, beredskapsplanar, brann- og sikkerheitsplanar, risikovurderingar og sikkerheitsdatablad på arbeidsplassen. Vidare inneber det å finne fram i og bruke gjeldande regelverk og reguleringar og å kunne forstå ulike tekstar med fagleg innhald."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg3 fiskeri- og akvakulturreiskapsfaget inneber å kunne berekne volum, areal, lengd og vekt, og å kunne gjere enkle målingar av fysiske og kjemiske parametrar og setje opp og tolke tabellar, diagram og enkel statistikk. Vidare inneber det å ha grunnleggjande forståing av økonomien i bedrifta og vurdere korleis eige arbeid påverkar resultatet til bedrifta"
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg3 fiskeri- og akvakulturreiskapsfaget inneber å formidle, presentere, kalkulere, hente inn og utveksle informasjon digitalt. Det inneber å bruke digitale instrument til måling, kartlegging og kommunikasjon. Det inneber også å utvikle etisk medvit og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 fiskeri- og akvakulturreiskapsfaget handlar det tverrfaglege temaet berekraftig utvikling om å reflektere over kva miljøpåverknader arbeid med fiskeri- og akvakulturreiskapar kan medføre. Val av reiskapstypar og materiale skal skje med tanke på å beskytte marint miljø og utnytte naturressursar på ein berekraftig måte. Vidare handlar det om korleis stadig utvikling i teknologi kan bidra til drift som varetek marine økosystem."
+   ]
+  }
  ]
 }

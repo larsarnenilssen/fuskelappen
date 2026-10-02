@@ -161,5 +161,51 @@
     "Produktutvikling og produksjon og kommunikasjon, kunde og arbeidsliv: Privatisten skal opp til én tverrfaglig praktisk eksamen i disse felles programfagene. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg1 frisør, blomster, interiør og eksponeringsdesign innebærer å kunne bruke og forstå fagspråk. Videre handler det om å lytte til og kommunisere faglig med kunder, kollegaer og samarbeidspartnere."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 frisør, blomster, interiør og eksponeringsdesign innebærer å kunne kommunisere skriftlig gjennom tekst, bilder, illustrasjoner og arbeidstegninger med kunder og samarbeidspartnere. Det innebærer videre å kunne bruke fagspråk og tilpasse tekster til ulike formål, mottakere og medier og å kunne planlegge, utforme og dokumentere faglig arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 frisør, blomster, interiør og eksponeringsdesign innebærer å kunne innhente, reflektere over, tolke, forstå og bruke aktuelle fagressurser. Videre handler det om å kunne lese og forstå bruksanvisninger, arbeids- og sikkerhetsinstrukser, arbeidstegninger og andre yrkesrelevante beskrivelser med tegn og symboler."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg1 frisør, blomster, interiør og eksponeringsdesign innebærer å kunne bruke geometriske former, måleenheter, målestokk, tabeller, økonomi og kostnadsoverslag i eget praktisk arbeid."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg1 frisør, blomster, interiør og eksponeringsdesign innebærer å kunne velge og bruke digitale ressurser. Videre innebærer det å kunne bruke digitale ressurser til å utvikle, dokumentere, eksponere og eksperimentere med form, farge og komposisjon. Det innebærer også å kunne vurdere informasjon fra digitale kilder kritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 frisør, blomster, interiør og eksponeringsdesign handler det tverrfaglige temaet folkehelse og livsmestring om å utvikle identitet og kritisk refleksjon over arbeidsmetoder i en skapende prosess, både alene og sammen med andre. Videre handler det om å utvikle strategier for å møte og mestre forventninger fra kunder og et arbeidsmiljø med tydelige tidsfrister. Det handler også om refleksjon over hvordan man påvirkes av moter, trender og visuelle uttrykk."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 frisør, blomster, interiør og eksponeringsdesign handler det tverrfaglige temaet bærekraftig utvikling om å ta etiske og miljøbevisste valg gjennom kunnskap om produkter, materialer, vedlikehold av verktøy og skapende arbeid. Det handler også om å forvalte, utnytte og gjenbruke ressurser i produksjon og å reflektere over hvordan bærekraftige valg kan påvirke samfunnet og naturen."
+   ]
+  }
  ]
 }

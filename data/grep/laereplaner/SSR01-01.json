@@ -188,5 +188,51 @@
     "Forretningsdrift, marknadsføring og innovasjon og kultur og samhandling: Privatisten skal opp til éin tverrfagleg praktisk eksamen i disse felles programfaga. Eksamen blir utarbeidd og sensurert lokalt. Fylkeskommunen avgjer om privatistar skal få førebuingsdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Munnlege ferdigheiter i vg1 sal, service og reiseliv inneber å kunne formidle ein bodskap og samhandle med kundar og samarbeidspartnarar. Det inneber å tilpasse språket til mottakar, innhald og formål og å lytte til og vise respekt for den som snakkar. Vidare inneber det å reflektere, presentere saker, samtale og argumentere i faglege samanhengar."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i vg1 sal, service og reiseliv inneber å kunne utvikle bodskapar tilpassa ulike formål, medium og målgrupper. Vidare inneber det å kunne kommunisere skriftleg med kundar og samarbeidspartnarar. Det vil òg seie å kunne planleggje og dokumentere faglege aktivitetar og å kunne bruke og kombinere ulike uttrykksformer som tekst, bilete og symbol formålstenleg."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg1 sal, service og reiseliv inneber å forstå faguttrykk og å kunne finne og bruke relevant informasjon på ein kritisk og etterprøvbar måte. Vidare inneber det å kunne vurdere innhaldet i tekstar ut frå fagkunnskap. Det inngår òg å forstå faglitteratur, statistikk, lovtekstar og planar."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne rekne i vg1 sal, service og reiseliv inneber å kunne gjennomføre økonomiske berekningar og hente informasjon frå tabellar, statistikk og diagram. Det inneber òg å kunne analysere, omarbeide og vurdere talmateriale."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheiter i vg1 sal, service og reiseliv inneber å kunne vere kreativ og skapande med digitale ressursar og kommunisere og samhandle med andre. Vidare inneber det å kunne bruke digitale ressursar formålstenleg og forsvarleg, vurdere informasjon frå digitale kjelder kritisk, bruke nettvett og utvikle digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT1",
+   "tekst": [
+    "I vg1 sal, service og reiseliv handlar det tverrfaglege temaet folkehelse og livsmeistring om å etablere og ta vare på mellommenneskelege relasjonar i samhandling med kundar og kollegaer. Vidare handlar det om å sikre god fysisk og psykisk helse i arbeidslivet gjennom kunnskap om helse, miljø og tryggleik."
+   ]
+  },
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg1 sal, service og reiseliv handlar det tverrfaglege temaet berekraftig utvikling om sosiale, kulturelle, økonomiske og miljømessige utfordringar i servicenæringa og kva verkemiddel som kan fremje etiske og berekraftige val."
+   ]
+  }
  ]
 }

@@ -104,5 +104,45 @@
     "Opplæringen i kurvmakerfaget skal avsluttes med en svenneprøve. Alle skal opp til svenneprøven, som skal gjennomføres innenfor en tidsramme på ti til tolv virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i kurvmakerfaget innebærer å uttrykke egne meninger, lytte til og gi respons i spontan og forberedt samtale med kunder, fagfolk og samarbeidspartnere. Det innebærer å bruke fagspråk i drøfting og refleksjon over faglige emner, å bygge opp argumentasjon og å tilpasse muntlig tekst til mottaker og formål. Lærlingene utvikler muntlige ferdigheter når de drøfter, reflekterer og presenterer produkter og metoder alene og i fellesskap."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i kurvmakerfaget innebærer å bruke fagspråk til å utforme tekster tilpasset mottaker og formål. Det innebærer å lage arbeidsbeskrivelser, presentere og dokumentere arbeidsprosesser gjennom tekst og visualiseringer."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i kurvmakerfaget innebærer å finne og vurdere informasjon i faglitteratur, ulike tekster, arbeidsbeskrivelser, tegninger, bilder og illustrasjoner. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff. Det innebærer også å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i kurvmakerfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Det innebærer også å beregne vekt, mengde, antall og størrelse og å analysere konstruksjon og proporsjon på ulike flettverksprodukter. Videre handler det om å gjøre økonomiske beregninger i forbindelse med tidsbruk og pristilbud. Det innebærer å bruke og bearbeide informasjonen for å forstå og vise sammenhenger og å sammenligne og presentere resultater på ulike måter."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i kurvmakerfaget innebærer å bruke digitale ressurser til å innhente informasjon og å kommunisere, presentere og markedsføre eget arbeid. Digitale ferdigheter vil videre si å vurdere, bearbeide og sammenstille informasjon, være kildekritisk og vise til kilder. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I kurvmakerfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere kritisk over ressursbruk og kvalitet i produksjonen. Det innebærer å vurdere hvordan valg av materialer med ulike verdikjeder påvirker produksjonen, lokalsamfunnet og sluttproduktet. Det innebærer å utarbeide gode rutiner og praksiser rundt håndtering av avfall fra nedbrytbare materialer og hvordan ulike valg kan påvirke miljøet. Videre handler det om hvordan materialene kan høstes og bearbeides på en miljøvennlig måte, og hvordan dette påvirker produktenes kvalitet og holdbarhet. Videre handler det om at faget er en del av arbeidet med å sikre verdens natur- og kulturarv, og fremme regionale og lokale kulturer og produkter."
+   ]
+  }
  ]
 }

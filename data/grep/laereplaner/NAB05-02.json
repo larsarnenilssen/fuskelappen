@@ -97,5 +97,45 @@
     "Vg3 feltarbeid i naturbruk: Privatisten skal opp til en praktisk eksamen i programfaget. Eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Å kunne uttrykke seg muntlig i vg3 feltarbeid i naturbruk innebærer å bruke fagspråk i drøfting og refleksjon over faglige emner, innsamlede data, observasjoner og konklusjoner. Det innebærer å beskrive fenomener i naturen og å presentere resultater. Det innebærer også å uttrykke egne meninger, lytte til og gi respons i kommunikasjon med samarbeidspartnere, oppdragsgivere og eksterne aktører."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne uttrykke seg skriftlig i vg3 feltarbeid i naturbruk innebærer å bruke fagspråk for å utforme tekster tilpasset mottaker og formål. Det innebærer også å skrive rapporter, lage utstyrslister, ta systematiske notater og dokumentere arbeidet. Videre innebærer det å utforske og reflektere over faglige emner og å bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 feltarbeid i naturbruk innebærer å forstå bruksanvisninger og å hente og tolke informasjon fra faglitteratur, lovverk og saksutredninger. I ferdigheten inngår også det å vurdere troverdighet og faglig tyngde i de ulike kildene og i eget arbeid."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 feltarbeid i naturbruk innebærer å bearbeide numeriske data og gjøre matematiske beregninger. Det innebærer også å tolke tabeller og statistiske framstillinger og å bruke og bearbeide informasjonen for å vise sammenhenger og presentere resultater."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 feltarbeid i naturbruk innebærer å bruke digitalt måle- og registreringsutstyr og presentere utført arbeid ved hjelp av digitale ressurser. Det innebærer også å finne fram til og bruke informasjonssystemer og databaser tilknyttet fagområdet. Videre innebærer det å bearbeide innsamlet datamateriale og visualisere resultater, å utvikle etisk bevissthet og å vise digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 feltarbeid i naturbruk handler det tverrfaglige temaet bærekraftig utvikling om å styrke forståelsen av sammenhenger i naturen. Det handler om hvordan økologiske prosesser og menneskenes bruk av naturen griper inn i hverandre og danner forutsetningene for framtiden. Temaet handler også om å frembringe kunnskap som kan bidra til bærekraftige beslutninger i demokratiske prosesser."
+   ]
+  }
  ]
 }

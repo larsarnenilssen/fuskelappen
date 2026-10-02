@@ -148,5 +148,45 @@
     "Opplæringen i byggdrifterfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst to virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i byggdrifterfaget innebærer å lytte til og gi respons i spontan og forberedt samtale. Det innebærer også å bruke fagterminologi i kommunikasjon med andre, reflektere over og drøfte mulige valg og løsninger og å tilpasse kommunikasjonen til mottaker og formål."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i byggdrifterfaget innebærer å bruke fagterminologi til å utforme tekster tilpasset mottaker og formål. Det innebærer å utforske og reflektere over faglige emner og problemstillinger, og å rapportere og dokumentere arbeid."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i byggdrifterfaget innebærer å finne og vurdere informasjon i ulike tekster, arbeidsbeskrivelser, tegninger, bruksanvisninger og regelverk. Det innebærer også å sammenligne, tolke informasjon og trekke faglige slutninger ut fra kjent og ukjent fagstoff."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i byggdrifterfaget innebærer å hente ut, beskrive og tolke informasjon fra et tallmateriale. Videre innebærer det å beregne lengde, areal, volum og vekt knyttet til arbeidsoperasjonen. Det innebærer å foreta økonomiske beregninger i forbindelse med drift og pristilbud."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i byggdrifterfaget innebærer å bruke digitale ressurser til å drive prosjekter, rapportere, dokumentere og kommunisere. Videre innebærer det å søke etter og innhente informasjon og å vurdere troverdigheten av informasjonen. Digitale ferdigheter innebærer også å vurdere og reflektere over egen rolle på nett og utøve god digital dømmekraft."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I byggdrifterfaget handler det tverrfaglige temaet bærekraftig utvikling om å velge materialer og verktøy som bidrar til energioptimalisert drift av bygg. Videre handler det om å velge arbeidsmetoder med hensyn til det indre og ytre miljøet. Det handler også om å håndtere avfall på en måte som minimerer belastningen på miljøet."
+   ]
+  }
  ]
 }

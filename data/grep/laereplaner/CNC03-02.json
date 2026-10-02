@@ -116,5 +116,45 @@
     "Opplæringen i vg3 CNC-maskineringsfaget skal avsluttes med en fagprøve. Alle skal opp til fagprøven, som skal gjennomføres over minst fem virkedager."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i vg3 CNC-maskineringsfaget innebærer å lytte til og gi respons i spontan og forberedt samtale og tilpasse muntlig tekst til mottaker og formål. Det innebærer å kommunisere ved bruk av fagterminologi, forstå faglige uttrykksmåter og reflektere over og drøfte faglige problemstillinger."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne uttrykke seg skriftlig i vg3 CNC-maskineringsfaget innebærer å bruke fagspråk for å utforme ulike tekster tilpasset formål og målgruppe. Det innebærer også å utarbeide planer, rapporter, måleresultater og avviksbeskrivelser i forbindelse med produksjonsarbeidet. Videre innebærer det å utforske og reflektere over faglige emner og problemstillinger og bruke kilder på en kritisk måte som lar seg etterprøve."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i vg3 CNC-maskineringsfaget innebærer å finne og vurdere informasjon i ulike tekster og å forstå gjeldende prosedyrer, retningslinjer og arbeidsordrer. Det innebærer også å sammenligne, tolke og systematisere informasjon i ulike tekster."
+   ]
+  },
+  {
+   "kode": "GF4",
+   "tekst": [
+    "Å kunne regne i vg3 CNC-maskineringsfaget innebærer å hente ut, beskrive og tolke informasjon i tallmateriale for å forstå toleranser og beregninger i forbindelse med programmering. Videre innebærer det å bruke og bearbeide informasjon for å forstå og vise sammenhenger og å beregne lønnsomhet."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i vg3 CNC-maskineringsfaget innebærer å bruke digitale ressurser til å søke etter, innhente informasjon og kommunisere. Det innebærer å programmere, utføre simulering, melde og behandle avviksmeldinger, behandle verktøydata og dokumentere utført arbeid digitalt. Det handler også om å utvikle etisk bevissthet og vise digital dømmekraft ved å følge regler og normer."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT3",
+   "tekst": [
+    "I vg3 CNC-maskineringsfaget handler det tverrfaglige temaet bærekraftig utvikling om å reflektere over hvilken betydning valg og bruk av materialer og metoder har for miljø, sosiale forhold og økonomi. Det handler også om å gjenbruke materialer, kildesortere og å følge gjeldende standarder og retningslinjer med hensyn til miljø og bærekraft."
+   ]
+  }
  ]
 }

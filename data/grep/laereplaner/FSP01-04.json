@@ -154,5 +154,39 @@
     "Etter vg2/vg3: Privatisten skal opp til skriftlig eksamen. Skriftlig eksamen blir utarbeidet og sensurert sentralt. Privatisten skal også opp til muntlig eksamen. Skriftlig eksamen gjennomføres digitalt ved bruk av det enkelte språks tastatur. Muntlig eksamen blir utarbeidet og sensurert lokalt. Fylkeskommunen avgjør om privatister skal få forberedelsesdel ved lokalt gitt eksamen."
    ]
   }
+ ],
+ "ferdigheter": [
+  {
+   "kode": "GF1",
+   "tekst": [
+    "Muntlige ferdigheter i fremmedspråk er å skape mening gjennom å lytte, snakke og samtale i ulike kommunikasjonssituasjoner. Utviklingen av muntlige ferdigheter i fremmedspråk går fra å bruke ferdighetene i dagligdagse sammenhenger til å bruke dem i stadig mer komplekse situasjoner. Dette innebærer å ta i bruk et gradvis bredere ordforråd og flere språklige strukturer."
+   ]
+  },
+  {
+   "kode": "GF2",
+   "tekst": [
+    "Å kunne skrive i fremmedspråk er å skape ulike typer tekster som kommuniserer et innhold. Utviklingen av skriveferdigheter i fremmedspråk går fra å skrive enkle tekster om dagligdagse emner til å produsere stadig mer komplekse tekster om faglige emner. Dette innebærer også å tilegne seg et gradvis bredere ordforråd, å ta i bruk flere språklige strukturer, og å bruke hjelpemidler på en hensiktsmessig måte. Å bruke tastatur med språkets tegn og å skrive fremmedspråket digitalt er en viktig del av det å kunne skrive og å formidle kompetanse i faget."
+   ]
+  },
+  {
+   "kode": "GF3",
+   "tekst": [
+    "Å kunne lese i fremmedspråk er å forstå innholdet i ulike typer tekster, både på papir og digitalt. Utviklingen av leseferdigheter i fremmedspråk går fra å forstå hovedinnhold i enklere tekster til å forstå stadig mer innhold i komplekse tekster i ulike sjangre. Dette innebærer å forstå stadig flere ord, uttrykk og språklige strukturer, og å bruke strategier, hjelpemidler og kilder på en hensiktsmessig måte slik at det å lese bidrar til språklæring og interkulturell kompetanse."
+   ]
+  },
+  {
+   "kode": "GF5",
+   "tekst": [
+    "Digitale ferdigheter i fremmedspråk er å bruke digitale ressurser og medier til å utvide læringsarenaen og tilføre læringsprosessen verdifulle dimensjoner. Utviklingen av digitale ferdigheter i fremmedspråk går fra å bruke disse ressursene til språklæring og møte med autentisk språk, til i økende grad å bruke dem selvstendig for å kommunisere muntlig og skriftlig, innhente kunnskap, utforske kultur og geografi og lage sammensatte produkter. Dette innebærer å utvikle en bevisst og kritisk holdning til bruk av digitale kilder, å vise dømmekraft i bruk av digitale medier og ressurser, og å følge regler for digital samhandling og personvern."
+   ]
+  }
+ ],
+ "temaer": [
+  {
+   "kode": "TT2",
+   "tekst": [
+    "I fremmedspråk handler det tverrfaglige temaet demokrati og medborgerskap om at elevene skal øve opp evnen til å tenke kritisk, og at de skal lære seg å håndtere meningsbrytninger og respektere uenigheter. Dette kan åpne for flere måter å tolke verden på, bidra til å skape nysgjerrighet og engasjement og medvirke til å forebygge fordommer."
+   ]
+  }
  ]
 }
