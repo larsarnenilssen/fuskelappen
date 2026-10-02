@@ -10,7 +10,7 @@ on:
       - .github/workflows/lovdata-utforsk.yml
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   utforsk:
@@ -24,10 +24,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npx tsx scripts/lovdata/utforsk.ts
-      - name: Lagre utdragene på grenen
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/lovdata/utforsk
-          git commit -m "Utforsk Lovdata: utdrag og struktur" || echo "Ingen endring."
-          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lovdata-utforsk
+          path: .generert/lovdata-utforsk
+          retention-days: 3

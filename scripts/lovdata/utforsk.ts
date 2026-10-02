@@ -7,7 +7,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 
 const UA = 'Fuskelappen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/fuskelappen)';
-const ut = 'data/lovdata/utforsk';
+const ut = '.generert/lovdata-utforsk';
 mkdirSync(ut, { recursive: true });
 
 async function hent(url: string): Promise<Response> {
@@ -21,11 +21,11 @@ writeFileSync(join(ut, 'liste.json'), liste);
 console.log(liste.slice(0, 3000));
 
 const sok: Record<string, RegExp> = {
-  opplaeringslova: /2023-06-09-30|20230609-030/,
-  forvaltningsloven: /1967-02-10\b|19670210-000/,
-  opplaeringsforskrifta: /opplæringsforskrifta/i,
-  helsemiljo: /2023-03-28-449|20230328-449/,
-  vestland: /Vestland/i,
+  opplaeringslova: /nl-20230609-030/,
+  forvaltningsloven: /nl-19670210-000/,
+  opplaeringsforskrifta: /sf-20240603-0900/,
+  helsemiljo: /sf-20230328-0449/,
+  arbeidsmiljoloven: /nl-20050617-062/,
 };
 
 for (const navn of ['gjeldende-lover.tar.bz2', 'gjeldende-sentrale-forskrifter.tar.bz2']) {
@@ -47,9 +47,9 @@ for (const navn of ['gjeldende-lover.tar.bz2', 'gjeldende-sentrale-forskrifter.t
     const innhold = readFileSync(join(mappe, f), 'utf8');
     const tittel = /<title>([^<]*)<\/title>/i.exec(innhold)?.[1] ?? '';
     for (const [id, re] of Object.entries(sok)) {
-      if (id === 'vestland' ? re.test(tittel) : re.test(f) || re.test(tittel)) {
+      if (re.test(f)) {
         const trygt = f.replace(/[^a-z0-9.-]/gi, '_');
-        writeFileSync(join(ut, `${id}--${trygt}.utdrag.html`), innhold.slice(0, 15000));
+        writeFileSync(join(ut, `${id}--${trygt}.html`), innhold);
         // Strukturen: tagger med klasse, og hvor mange det er av hver.
         const telling = new Map<string, number>();
         for (const m of innhold.matchAll(/<([a-z0-9]+)((?:\s+[a-z-]+="[^"]*")*)\s*\/?>/gi)) {
