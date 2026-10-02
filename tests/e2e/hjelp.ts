@@ -72,6 +72,11 @@ export const ruter = [
   '#/opplaeringslop/PB/PBPBY3?via=HSHEA2',
   '#/laereplanverket',
   '#/laereplanverket/overordnet-del/2.5.1',
+  '#/lov',
+  '#/lov/vestland-skulereglar/8',
+  '#/lov/forvaltningsloven',
+  '#/lov/hovedtariffavtalen/hta-ansettelse',
+  '#/lov/sfs2213',
   '#/finnes-ikke',
 ];
 

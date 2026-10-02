@@ -39,6 +39,8 @@ const baner = {
   arbeidsplan: 'M3 7.5h18v9H3zM9.5 7.5v9M14.5 7.5v9M18 4.5v15',
   // Sammenlign: to stolper med ulik høyde.
   sammenlign: 'M3.5 20h17M6.5 20v-8h4v8M13.5 20V6h4v14',
+  // Paragraf: paragraftegnet, for Lov og forskrift.
+  paragraf: 'M15.5 6.8c-.6-1.4-1.9-2.3-3.5-2.3-2 0-3.5 1.2-3.5 2.8 0 3.8 7.5 2.6 7.5 6.6 0 1.3-1 2.4-2.6 2.8M8.5 17.2c.6 1.4 1.9 2.3 3.5 2.3 2 0 3.5-1.2 3.5-2.8 0-3.8-7.5-2.6-7.5-6.6 0-1.3 1-2.4 2.6-2.8',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;

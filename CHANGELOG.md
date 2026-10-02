@@ -4,6 +4,21 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.22.0] – 2026-10-02
+
+### Lagt til
+
+- **Regelverk** under «Oppslag»: lover, forskrifter og avtaler som gjelder videregående opplæring.
+  - **Lover og forskrifter:** opplæringslova, opplæringsforskrifta, forvaltningsloven, arbeidsmiljøloven og forskrift om helse og miljø i skoler, med kapitlene som gjelder videregående. Teksten hentes fra Lovdata og vises slik den er fastsatt, på bokmål eller nynorsk.
+  - **Lokale forskrifter** vises når du har valgt fylke. For Vestland: inntak og formidling, og skulereglar.
+  - **Avtaler:** Hovedtariffavtalen og SFS 2213, skrevet med egne ord, med lenke til punktet i avtaleteksten.
+  - Søk i hele regelverket øverst, også med bokmålsord i nynorsk tekst («individuelt tilrettelagt» finner «tilrettelagd»).
+  - Kapitlene står i rubrikker og paragrafene i bokser som er lukket til du åpner dem. Hver paragraf har egen adresse, og henvisninger i teksten går til paragrafen i appen.
+  - Gruppene lover, forskrifter, lokale forskrifter og avtaler kan legges sammen.
+- **Søket på forsiden** finner paragrafene på nummer («§ 11-1») og tittel, og bestemmelsene i avtalene.
+- **Kilder** som viser til en paragraf hos Lovdata, har også «Les i appen».
+- **Nye begreper:** lov, forskrift, lokal forskrift, paragraf og ledd, enkeltvedtak, tariffavtale og særavtale, garantilønn, stillingskode, lønnsansiennitet, konstituering, tidsressurspott, midlertidig ansettelse, oppsigelse og avskjed, klage på enkeltvedtak, habilitet, forhåndsvarsel, aktivitetsplikt, bortvisning og skoleregler.
+
 ## [0.21.1] – 2026-10-02
 
 ### Rettet

@@ -1,0 +1,360 @@
+# Hovedtariffavtalen i KS-området med egne ord (fase 3, avgjørelse 039). Vises i Regelverk under «Avtaler», i
+# rekkefølgen i content/lovverk.yaml. Avtaleteksten kopieres ikke (rettighetene er ikke avklart, eier 02.10.2026).
+# Hvert element viser til punktet i avtalen med side i PDF-en (#page=). Når kildejobben ser at PDF-en er endret,
+# viser kontrollsaken punktene som er endret, og elementene her som kan være berørt, med kontrollspørsmålene.
+- id: hta-virkeomrade
+  type: forklaring
+  tittel: { nb: "§ 1 Hvem avtalen gjelder for", nn: "§ 1 Kven avtalen gjeld for" }
+  tekst:
+    nb: |
+      Hovedtariffavtalen gjelder for arbeidstakere med et fast og forpliktende arbeidsforhold og en fastsatt arbeidstid per uke, med de unntakene som står i de enkelte paragrafene. Deltidsansatte har de samme rettighetene som heltidsansatte, med mindre noe annet står i bestemmelsen.
+
+      «Undervisningspersonale» i avtalen er undervisningsstillinger og lederstillinger ved skolene som før lå på det statlige avtaleområdet. For dem gjelder også egne bestemmelser, blant annet om arbeidstid i [SFS 2213](#/lov/sfs2213).
+    nn: |
+      Hovudtariffavtalen gjeld for arbeidstakarar med eit fast og forpliktande arbeidsforhold og ei fastsett arbeidstid per veke, med dei unntaka som står i dei enkelte paragrafane. Deltidstilsette har dei same rettane som heiltidstilsette, med mindre noko anna står i føresegna.
+
+      «Undervisningspersonale» i avtalen er undervisningsstillingar og leiarstillingar ved skulane som før låg på det statlege avtaleområdet. For dei gjeld også eigne føresegner, mellom anna om arbeidstid i [SFS 2213](#/lov/sfs2213).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 1 og merknaden", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er merknaden om undervisningspersonale (stillinger som var på statlig avtaleområde) gjengitt riktig og forståelig?"
+  stikkord: [hta, hovedtariffavtalen, deltid, undervisningspersonale]
+
+- id: hta-ansettelse
+  type: forklaring
+  tittel: { nb: "§ 2 Ansettelse", nn: "§ 2 Tilsetjing" }
+  tekst:
+    nb: |
+      Ansettelse skal være skriftlig. Ved ansettelse og opprykk skal kvalifikasjonene veie tyngst: utdanning, praksis og hvor skikket søkeren er. Står søkerne likt, kan søkeren av det underrepresenterte kjønnet foretrekkes når det er i tråd med likestillings- og diskrimineringsloven, og ellers den som har lengst tjeneste i kommunen eller fylkeskommunen.
+
+      Hovedregelen er heltid. Deltidsansatte har fortrinnsrett til utvidet stilling (se [arbeidsmiljøloven § 14-3](#/lov/arbeidsmiljoloven/14-3)). Arbeidsgiveren skal jevnlig informere og drøfte med de tillitsvalgte om bruken av deltid, midlertidige ansettelser og innleie, og det skal lages lokale retningslinjer for å øke andelen heltidsansatte.
+
+      For undervisningspersonale regnes en ansettelse fra dato til dato. En ansettelse for et skolehalvår regnes likevel fra 1.8. til 31.12. eller 1.1. til 31.7., og en ansettelse for et skoleår fra 1.8. til 31.7., med ferien.
+    nn: |
+      Tilsetjing skal vere skriftleg. Ved tilsetjing og opprykk skal kvalifikasjonane vege tyngst: utdanning, praksis og kor skikka søkjaren er. Står søkjarane likt, kan søkjaren av det underrepresenterte kjønnet bli føretrekt når det er i tråd med likestillings- og diskrimineringslova, og elles den som har lengst teneste i kommunen eller fylkeskommunen.
+
+      Hovudregelen er heiltid. Deltidstilsette har fortrinnsrett til utvida stilling (sjå [arbeidsmiljøloven § 14-3](#/lov/arbeidsmiljoloven/14-3)). Arbeidsgivaren skal jamleg informere og drøfte med dei tillitsvalde om bruken av deltid, mellombelse tilsetjingar og innleige, og det skal lagast lokale retningslinjer for å auke delen heiltidstilsette.
+
+      For undervisningspersonale blir ei tilsetjing rekna frå dato til dato. Ei tilsetjing for eit skulehalvår blir likevel rekna frå 1.8. til 31.12. eller 1.1. til 31.7., og ei tilsetjing for eit skuleår frå 1.8. til 31.7., med ferien.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 2 (2.1–2.5)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at informasjon og drøfting om deltid skal skje minst én gang i året, og om midlertidige ansettelser og innleie minst to ganger i året. Teksten sier bare «jevnlig». Er det godt nok, eller bør hyppigheten stå?"
+    - "Er regelen om at ansettelser for undervisningspersonale regnes fra 1.8. eller 1.1. gjengitt riktig?"
+  stikkord: [ansettelse, heltid, deltid, fortrinnsrett, midlertidig ansettelse, kvalifikasjonsprinsippet]
+
+- id: hta-oppsigelse
+  type: forklaring
+  tittel: { nb: "§ 3 Oppsigelse og omplassering", nn: "§ 3 Oppseiing og omplassering" }
+  tekst:
+    nb: |
+      Oppsigelse skal være skriftlig. Den vanlige oppsigelsesfristen er tre måneder for begge parter. Kortere frister gjelder ved prøvetid, for kortvarig arbeid av forbigående art og når en midlertidig ansettelse sies opp før den løper ut. For eldre arbeidstakere gjelder også fristene i [arbeidsmiljøloven § 15-3](#/lov/arbeidsmiljoloven/15-3).
+
+      Ved nedbemanning skal de med kortest tjeneste innenfor arbeidsområdet som hovedregel sies opp først, når forholdene ellers er like (se [arbeidsmiljøloven § 15-7](#/lov/arbeidsmiljoloven/15-7)). Undervisningspersonale med særskilt stillingsvern fra før 1.8.1999 er unntatt fra denne rangeringen.
+
+      Blir noen flyttet til en lavere lønnet stilling av grunner som ikke skyldes dem selv, for eksempel omorganisering eller sykdom, beholder de lønnen sin som en personlig ordning.
+    nn: |
+      Oppseiing skal vere skriftleg. Den vanlege oppseiingsfristen er tre månader for begge partar. Kortare fristar gjeld ved prøvetid, for kortvarig arbeid av forbigåande art og når ei mellombels tilsetjing blir sagd opp før ho går ut. For eldre arbeidstakarar gjeld også fristane i [arbeidsmiljøloven § 15-3](#/lov/arbeidsmiljoloven/15-3).
+
+      Ved nedbemanning skal dei med kortast teneste innanfor arbeidsområdet som hovudregel bli sagde opp først, når tilhøva elles er like (sjå [arbeidsmiljøloven § 15-7](#/lov/arbeidsmiljoloven/15-7)). Undervisningspersonale med særskilt stillingsvern frå før 1.8.1999 er unnateke frå denne rangeringa.
+
+      Blir nokon flytta til ei lågare lønt stilling av grunnar som ikkje kjem av dei sjølve, til dømes omorganisering eller sjukdom, held dei på lønna si som ei personleg ordning.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 3 (3.1–3.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teksten nevner ikke de korte fristene i tall (14 dager ved prøvetid, én måned ved oppsigelse av midlertidig ansettelse). Bør tallene stå?"
+    - "Er unntaket for undervisningspersonale med stillingsvern fra før 1.8.1999 relevant nok til å stå med?"
+  stikkord: [oppsigelse, oppsigelsesfrist, nedbemanning, ansiennitetsprinsippet, omplassering]
+
+- id: hta-arbeidstid
+  type: forklaring
+  tittel: { nb: "§ 4 Arbeidstid", nn: "§ 4 Arbeidstid" }
+  tekst:
+    nb: |
+      Arbeidstid er tiden arbeidstakeren står til disposisjon for arbeidsgiveren. Den ordinære arbeidstiden er i gjennomsnitt høyst 37,5 timer i uken, med kortere tid for noen skift- og turnusordninger.
+
+      For undervisningspersonale gjelder egne bestemmelser om arbeidstid i særavtalen [SFS 2213](#/lov/sfs2213). Bestemmelsene i § 4 gjelder derfor særlig for andre ansatte på skolen, for eksempel i administrasjonen.
+    nn: |
+      Arbeidstid er tida arbeidstakaren står til disposisjon for arbeidsgivaren. Den ordinære arbeidstida er i gjennomsnitt høgst 37,5 timar i veka, med kortare tid for nokre skift- og turnusordningar.
+
+      For undervisningspersonale gjeld eigne føresegner om arbeidstid i særavtalen [SFS 2213](#/lov/sfs2213). Føresegnene i § 4 gjeld derfor særleg for andre tilsette på skulen, til dømes i administrasjonen.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 4 (4.1–4.2)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=12" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at § 4 «særlig» gjelder for andre ansatte enn undervisningspersonalet, eller gjelder deler av § 4 også for lærere (for eksempel tjenestereiser, punkt 4.7)?"
+  stikkord: [arbeidstid, "37,5 timer", administrasjon]
+
+- id: hta-overtid
+  type: forklaring
+  tittel: { nb: "§ 6 Overtid", nn: "§ 6 Overtid" }
+  tekst:
+    nb: |
+      Pålagt arbeid ut over den ordinære arbeidstiden er overtid, og overtid skal begrenses mest mulig. For undervisningspersonalet gjelder egne bestemmelser i [SFS 2213](#/lov/sfs2213) punkt 5.2. Overtidstillegget for undervisning regnes ut fra timelønnen for undervisning (§ 12.4).
+
+      Ledere med lønn etter kapittel 3.4 og ansatte i særlig uavhengige stillinger etter arbeidsmiljøloven § 10-12 er unntatt fra overtidsbestemmelsene. Arbeidsgiveren skal vurdere konkret hvilke ledere dette gjelder. Den som har møteplikt eller andre særlige belastninger utenfor arbeidstiden uten rett til overtidsbetaling, kan få inntil ti fridager.
+
+      Overtid for undervisning kan regnes ut i [Overtid over 100 %](#/arbeidstid/overtid).
+    nn: |
+      Pålagt arbeid ut over den ordinære arbeidstida er overtid, og overtid skal avgrensast mest mogleg. For undervisningspersonalet gjeld eigne føresegner i [SFS 2213](#/lov/sfs2213) punkt 5.2. Overtidstillegget for undervisning blir rekna ut frå timelønna for undervisning (§ 12.4).
+
+      Leiarar med lønn etter kapittel 3.4 og tilsette i særleg uavhengige stillingar etter arbeidsmiljøloven § 10-12 er unnatekne frå overtidsføresegnene. Arbeidsgivaren skal vurdere konkret kva leiarar dette gjeld. Den som har møteplikt eller andre særlege belastningar utanfor arbeidstida utan rett til overtidsbetaling, kan få inntil ti fridagar.
+
+      Overtid for undervisning kan reknast ut i [Overtid over 100 %](#/arbeidstid/overtid).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 6 (6.1–6.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=20" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen nevner arbeidsmiljøloven § 10-12 og HTA kap. 3 punkt 3.4, og at arbeidsgiver vurderer ledere i 3.4.2 og 3.4.3 konkret. Er unntaket for ledere riktig gjengitt?"
+    - "Teksten nevner ikke prosenttilleggene i 6.5. Gjelder de også for overtid i undervisning, eller bare satsene i SFS 2213 og § 12.4?"
+  stikkord: [overtid, overtidstillegg, ledere, fridager]
+
+- id: hta-ferie
+  type: forklaring
+  tittel: { nb: "§ 7 Ferie", nn: "§ 7 Ferie" }
+  tekst:
+    nb: |
+      Avtalen kommer i tillegg til ferieloven. Undervisningspersonale tar hele ferien, fem uker, sammenhengende fram til siste virkedag i juli, med mindre noe annet er bestemt etter drøftinger med den enkelte.
+
+      Den som er syk i ferien i minst én virkedag og har legeattest, får tilsvarende ferie erstattet. Feriepengene er 12 prosent, og 14,3 prosent for arbeidstakere over 60 år. Undervisningspersonale får full lønn i ferien det første yrkesåret når opptjente feriepenger ville gitt mindre, og det samme gjelder etter studiepermisjon.
+    nn: |
+      Avtalen kjem i tillegg til ferielova. Undervisningspersonale tek heile ferien, fem veker, samanhengande fram til siste yrkedag i juli, med mindre noko anna er bestemt etter drøftingar med den enkelte.
+
+      Den som er sjuk i ferien i minst éin yrkedag og har legeattest, får tilsvarande ferie erstatta. Feriepengane er 12 prosent, og 14,3 prosent for arbeidstakarar over 60 år. Undervisningspersonale får full lønn i ferien det første yrkesåret når opptente feriepengar ville gitt mindre, og det same gjeld etter studiepermisjon.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 7 (7.1–7.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=23" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at ferien avsluttes siste virkedag i juli. Teksten sier «fram til siste virkedag i juli». Er det riktig forstått?"
+    - "Er vilkårene for full lønn i ferien første yrkesår og etter studiepermisjon forenklet på en måte som kan misforstås?"
+  stikkord: [ferie, feriepenger, femte ferieuke, avtalefestet ferie]
+
+- id: hta-sykdom
+  type: forklaring
+  tittel: { nb: "§ 8 Lønn under sykdom og foreldrepermisjon", nn: "§ 8 Lønn under sjukdom og foreldrepermisjon" }
+  tekst:
+    nb: |
+      Arbeidsgiveren betaler sykelønn og foreldrepenger så lenge den ansatte har rett til det etter folketrygdloven, og får refusjonen fra NAV. Den ansatte har rett til full lønn under sykdom i 50 uker, i tillegg til arbeidsgiverperioden. Har den ansatte fått lønn under sykdom i til sammen 50 uker de siste tre årene, faller retten bort til han eller hun har vært helt i arbeid i 26 uker.
+
+      Fravær må dokumenteres med egenmelding eller sykmelding. Kontrollordninger for sykefravær skal drøftes med de tillitsvalgte først. For undervisningspersonale kan gjeninntreden etter permisjon skje i sommermånedene utenom ferien.
+    nn: |
+      Arbeidsgivaren betaler sjukeløn og foreldrepengar så lenge den tilsette har rett til det etter folketrygdlova, og får refusjonen frå NAV. Den tilsette har rett til full lønn under sjukdom i 50 veker, i tillegg til arbeidsgivarperioden. Har den tilsette fått lønn under sjukdom i til saman 50 veker dei siste tre åra, fell retten bort til han eller ho har vore heilt i arbeid i 26 veker.
+
+      Fråvær må dokumenterast med eigenmelding eller sjukmelding. Kontrollordningar for sjukefråvær skal drøftast med dei tillitsvalde først. For undervisningspersonale kan gjeninntreden etter permisjon skje i sommarmånadene utanom ferien.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 8 (innledningen og 8.1–8.2)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er regelen om 50 uker de siste tre årene og ny rett etter 26 uker i arbeid gjengitt riktig?"
+    - "Er det dekkende å si at refusjonen kommer fra NAV, når avtalen sier at refusjonsbeløpet tilfaller arbeidsgiver?"
+  stikkord: [sykelønn, sykdom, foreldrepenger, egenmelding]
+
+- id: hta-ansiennitet
+  type: forklaring
+  tittel: { nb: "§ 12 Ansiennitet, deltid og vikarer", nn: "§ 12 Ansiennitet, deltid og vikarar" }
+  tekst:
+    nb: |
+      Lønnsansiennitet fastsettes ved ansettelse og regnes tidligst fra fylte 18 år. All tidligere tjeneste, privat og offentlig, teller med. Omsorg for barn eller syke og eldre teller med inntil tre år, og verneplikt teller. Ulønnet foreldrepermisjon og videreutdanning teller med inntil to år til sammen.
+
+      Lønn for deltid regnes forholdsmessig av lønnen for full stilling. Vikarer lønnes etter bestemmelsene for stillingen. For undervisningspersonale har avtalen en egen formel for timelønn, som bruker årslønnen og årsrammen for faget.
+
+      Timelønnen for undervisning kan regnes ut i [Vikartimer](#/arbeidstid/vikar).
+    nn: |
+      Lønnsansiennitet blir fastsett ved tilsetjing og blir rekna tidlegast frå fylte 18 år. All tidlegare teneste, privat og offentleg, tel med. Omsorg for born eller sjuke og eldre tel med inntil tre år, og verneplikt tel. Ulønt foreldrepermisjon og vidareutdanning tel med inntil to år til saman.
+
+      Lønn for deltid blir rekna forholdsmessig av lønna for full stilling. Vikarar blir lønte etter føresegnene for stillinga. For undervisningspersonale har avtalen ein eigen formel for timelønn, som brukar årsløna og årsramma for faget.
+
+      Timelønna for undervisning kan reknast ut i [Vikartimer](#/arbeidstid/vikar).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 12 (12.1–12.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teksten nevner ikke at arbeid i hjemmet kan telle med inntil seks år ved ansettelse i stilling uten krav om utdanning. Er det greit å utelate for skoleledere?"
+    - "Er det riktig at timelønnen for undervisning regnes ut i kalkulatoren Vikartimer?"
+  stikkord: [lønnsansiennitet, ansiennitet, deltid, vikar, timelønn]
+
+- id: hta-stedfortreder
+  type: forklaring
+  tittel: { nb: "§ 13 Stedfortreder og konstituering", nn: "§ 13 Stedfortredar og konstituering" }
+  tekst:
+    nb: |
+      Alle ansatte har plikt til å være stedfortreder. Den som pålegges å være stedfortreder i en høyere lønnet stilling sammenhengende i mer enn en uke, og overtar hele arbeids- og ansvarsområdet, får lønnen for stillingen fra første dag. Overtas bare deler av oppgavene, kan det avtales en passende godtgjøring etter drøfting med de tillitsvalgte. Ferievikariat gir ikke stedfortredertillegg.
+
+      Ved konstituering i en høyere lønnet stilling får den konstituerte lønnen for stillingen fra første dag. Står en stilling ledig i mer enn en måned, for eksempel på grunn av sykdom eller permisjon, skal det som hovedregel konstitueres.
+    nn: |
+      Alle tilsette har plikt til å vere stedfortredar. Den som blir pålagd å vere stedfortredar i ei høgare lønt stilling samanhengande i meir enn ei veke, og tek over heile arbeids- og ansvarsområdet, får lønna for stillinga frå første dag. Blir berre delar av oppgåvene tekne over, kan det avtalast ei passande godtgjering etter drøfting med dei tillitsvalde. Ferievikariat gir ikkje stedfortredartillegg.
+
+      Ved konstituering i ei høgare lønt stilling får den konstituerte lønna for stillinga frå første dag. Står ei stilling ledig i meir enn ein månad, til dømes på grunn av sjukdom eller permisjon, skal det som hovudregel konstituerast.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 13 (13.1–13.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=33" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at konstituering gir den lønnen vedkommende «ville fått ved opprykk til stillingen». Er «lønnen for stillingen» en god nok forenkling?"
+  stikkord: [stedfortreder, konstituering, fungerende rektor, ledig stilling]
+
+- id: hta-permisjon
+  type: forklaring
+  tittel: { nb: "§ 14 Permisjon", nn: "§ 14 Permisjon" }
+  tekst:
+    nb: |
+      Den som er pålagt et offentlig verv, får permisjon og kan søke om å beholde lønnen. Ved viktige velferdsgrunner kan det gis velferdspermisjon med lønn i inntil 12 arbeidsdager i året.
+
+      Retten til utdanningspermisjon følger av [arbeidsmiljøloven § 12-11](#/lov/arbeidsmiljoloven/12-11). Er utdanningen til nytte for både den ansatte og arbeidsgiveren, skal permisjon gis med mindre særlige grunner taler mot. Krever arbeidsgiveren kompetansen for å løse oppgavene, gis permisjon med lønn og dekning av utgifter. Bindingstid kan avtales når arbeidsgiveren gir vesentlig økonomisk støtte, men høyst for to år.
+
+      Ved eksamen gis permisjon med lønn på eksamensdagen og to lesedager før, når faget har betydning for arbeidsgiveren.
+    nn: |
+      Den som er pålagd eit offentleg verv, får permisjon og kan søkje om å halde på lønna. Ved viktige velferdsgrunnar kan det givast velferdspermisjon med lønn i inntil 12 arbeidsdagar i året.
+
+      Retten til utdanningspermisjon følgjer av [arbeidsmiljøloven § 12-11](#/lov/arbeidsmiljoloven/12-11). Er utdanninga til nytte for både den tilsette og arbeidsgivaren, skal permisjon givast med mindre særlege grunnar talar mot. Krev arbeidsgivaren kompetansen for å løyse oppgåvene, blir det gitt permisjon med lønn og dekning av utgifter. Bindingstid kan avtalast når arbeidsgivaren gir vesentleg økonomisk støtte, men høgst for to år.
+
+      Ved eksamen blir det gitt permisjon med lønn på eksamensdagen og to lesedagar før, når faget har betydning for arbeidsgivaren.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 1 § 14 (14.1–14.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=34" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen setter som vilkår for lesedager at den ansatte ville hatt ordinært arbeid de to dagene før eksamen. Bør vilkåret stå?"
+    - "Er det tydelig at velferdspermisjon med lønn er noe som «kan» gis, ikke en rett?"
+  stikkord: [permisjon, velferdspermisjon, utdanningspermisjon, bindingstid, lesedager]
+
+- id: hta-laerlinger
+  type: forklaring
+  tittel: { nb: "Kapittel 2 Lærlinger", nn: "Kapittel 2 Lærlingar" }
+  tekst:
+    nb: |
+      Kapitlet gjelder lærlinger, praksisbrevkandidater og lærekandidater som har kontrakt med kommunen eller fylkeskommunen. Læretiden består av opplæringstid og verdiskapingstid, og det betales bare lønn for verdiskapingen. Lønnen er en prosentandel av garantilønnen for fagarbeider, og andelen øker for hvert halvår i læretiden. Partene lokalt kan avtale en annen fordeling innenfor samme samlede ramme.
+
+      Lønn for praksisbrevkandidater og lærekandidater fastsettes lokalt etter drøftinger. Det skal settes av tid i arbeidstiden til opplæringsboken og veiledning, og arbeidsgiveren betaler lønn når lærlingen tar prøven. Lærlinger under 18 år kan ikke pålegges overtid. Partene lokalt skal hvert år drøfte hvor mange læreplasser arbeidsgiveren skal ha.
+    nn: |
+      Kapittelet gjeld lærlingar, praksisbrevkandidatar og lærekandidatar som har kontrakt med kommunen eller fylkeskommunen. Læretida består av opplæringstid og verdiskapingstid, og det blir berre betalt lønn for verdiskapinga. Lønna er ein prosentdel av garantiløna for fagarbeidar, og delen aukar for kvart halvår i læretida. Partane lokalt kan avtale ei anna fordeling innanfor den same samla ramma.
+
+      Lønn for praksisbrevkandidatar og lærekandidatar blir fastsett lokalt etter drøftingar. Det skal setjast av tid i arbeidstida til opplæringsboka og rettleiing, og arbeidsgivaren betaler lønn når lærlingen tek prøva. Lærlingar under 18 år kan ikkje påleggjast overtid. Partane lokalt skal kvart år drøfte kor mange læreplassar arbeidsgivaren skal ha.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 2 (2.1)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=36" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Prosentsatsene per halvår står ikke i teksten. Bør appen vise dem (for eksempel 30, 40, 50 og 80 prosent i hovedmodellen), eller er det best å lenke til avtalen?"
+  stikkord: [lærling, lærlinglønn, lærekandidat, praksisbrevkandidat, læreplass, verdiskaping]
+
+- id: hta-lonnspolitikk
+  type: forklaring
+  tittel: { nb: "3.2 Lokal lønnspolitikk", nn: "3.2 Lokal lønnspolitikk" }
+  tekst:
+    nb: |
+      Arbeidsgiveren skal ha en lokal lønnspolitikk som er kjent for alle ansatte. Den utformes etter drøftinger med organisasjonene og skal blant annet motivere til kompetanseutvikling og heltid, bidra til å beholde og rekruttere ansatte og sikre likelønn. Hvert år holdes lønnspolitiske drøftingsmøter, og arbeidsgiveren legger fram lønnsstatistikk, blant annet fordelt på kjønn.
+
+      En ansatt som ber om en lønnsutviklingssamtale, skal få det, med møte innen 14 dager og rett til å ha med tillitsvalgt. Partene skal også drøfte en livsfasepolitikk, og har gjensidig plikt til å forhandle etter skriftlig krav.
+    nn: |
+      Arbeidsgivaren skal ha ein lokal lønnspolitikk som er kjend for alle tilsette. Han blir utforma etter drøftingar med organisasjonane og skal mellom anna motivere til kompetanseutvikling og heiltid, bidra til å halde på og rekruttere tilsette og sikre likeløn. Kvart år blir det halde lønnspolitiske drøftingsmøte, og arbeidsgivaren legg fram lønnsstatistikk, mellom anna fordelt på kjønn.
+
+      Ein tilsett som ber om ein lønnsutviklingssamtale, skal få det, med møte innan 14 dagar og rett til å ha med tillitsvald. Partane skal også drøfte ein livsfasepolitikk, og har gjensidig plikt til å forhandle etter skriftleg krav.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 3 punkt 3.2 (3.2.1–3.2.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=40" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at møtetidspunktet for lønnsutviklingssamtalen skal avtales innen 14 dager, ikke at møtet skal holdes innen 14 dager. Teksten sier «med møte innen 14 dager». Bør den endres?"
+  stikkord: [lønnspolitikk, lønnsutviklingssamtale, likelønn, drøftingsmøte, livsfasepolitikk]
+
+- id: hta-kompetanse
+  type: forklaring
+  tittel: { nb: "3.3 Kompetanse", nn: "3.3 Kompetanse" }
+  tekst:
+    nb: |
+      Arbeidsgiveren har ansvar for å kartlegge de ansattes kompetanse og analysere hvilken kompetanse virksomheten trenger. Etter drøftinger med de tillitsvalgte skal det lages en plan for kompetansehevende tiltak, og den overordnede planen skal være tilgjengelig for alle ansatte. Arbeidsgiveren og den ansatte har hver for seg og sammen ansvar for kompetanseutviklingen.
+    nn: |
+      Arbeidsgivaren har ansvar for å kartleggje kompetansen til dei tilsette og analysere kva kompetanse verksemda treng. Etter drøftingar med dei tillitsvalde skal det lagast ein plan for kompetansehevande tiltak, og den overordna planen skal vere tilgjengeleg for alle tilsette. Arbeidsgivaren og den tilsette har kvar for seg og saman ansvar for kompetanseutviklinga.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 3 punkt 3.3", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=42" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig for skoleledere at dette punktet står med, eller blir det for generelt?"
+  stikkord: [kompetanseplan, kompetanseutvikling, etterutdanning, videreutdanning]
+
+- id: hta-ledere
+  type: forklaring
+  tittel: { nb: "3.4 Ledere", nn: "3.4 Leiarar" }
+  tekst:
+    nb: |
+      Lederstrukturen og lønnen til ledere fastsettes lokalt. Partene lokalt avtaler hvilke lederstillinger som hører til 3.4.2 (virksomhetsledere med delegert budsjett-, økonomi- og personalansvar) og 3.4.3 (ledere med delegert budsjett-, økonomi- eller personalansvar). Ved uenighet bestemmer arbeidsgiveren ut fra organisasjonsstrukturen.
+
+      Lønnen til disse lederne forhandles lokalt én gang i året, helst mellom 1. mai og 1. oktober, med virkning fra 1. mai om ikke annet avtales. For skoleledere sier [SFS 2213 punkt 8.2](#/lov/sfs2213/sfs-skoleledelse) at lederen skal ha minst den lønnen han eller hun ville vært garantert i en undervisningsstilling.
+    nn: |
+      Leiarstrukturen og lønna til leiarar blir fastsett lokalt. Partane lokalt avtaler kva leiarstillingar som høyrer til 3.4.2 (verksemdsleiarar med delegert budsjett-, økonomi- og personalansvar) og 3.4.3 (leiarar med delegert budsjett-, økonomi- eller personalansvar). Ved usemje bestemmer arbeidsgivaren ut frå organisasjonsstrukturen.
+
+      Lønna til desse leiarane blir forhandla lokalt éin gong i året, helst mellom 1. mai og 1. oktober, med verknad frå 1. mai om ikkje anna blir avtalt. For skuleleiarar seier [SFS 2213 punkt 8.2](#/lov/sfs2213/sfs-skoleledelse) at leiaren skal ha minst den løna han eller ho ville vore garantert i ei undervisningsstilling.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 3 punkt 3.4 (3.4.0–3.4.4)", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=43" }
+    - { id: ks-sfs2213-avtaletekst, punkt: "8.2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er forskjellen mellom 3.4.2 («og») og 3.4.3 («eller») tydelig nok?"
+    - "Teksten sier ikke hvilket kapittel skoleledere får lønn etter. Er det riktig at rektor og andre skoleledere vanligvis får lønn etter 3.4.2 eller 3.4.3, eller kan de også ligge i kapittel 4?"
+  stikkord: [ledere, lederlønn, rektor, avdelingsleder, lønnsforhandlinger]
+
+- id: hta-sentral-lonn
+  type: forklaring
+  tittel: { nb: "4.0–4.1 Sentrale lønnsbestemmelser og garantilønn", nn: "4.0–4.1 Sentrale lønnsføresegner og garantiløn" }
+  tekst:
+    nb: |
+      Lærere og de fleste andre stillinger på skolen får lønn etter kapittel 4. Avtalen har en tabell med garantilønn for hver stillingsgruppe, ut fra utdanningskravet, og tillegg etter 6, 8, 10 og 16 års ansiennitet. Garantilønnen er minstelønnen, og lønnen fastsettes lokalt ved ansettelse.
+
+      For undervisningsstillinger følger stillingskoden av utdanningen (se vedlegg 2). Ved lønnsfastsettingen skal det blant annet tas hensyn til kompetanse, ansvar, innsats og resultater. Ledere med vesentlige arbeidsgiverfunksjoner skal som hovedregel ha høyere lønn enn dem de leder.
+
+      Garantilønnen brukes i [Vikartimer](#/arbeidstid/vikar).
+    nn: |
+      Lærarar og dei fleste andre stillingane på skulen får lønn etter kapittel 4. Avtalen har ein tabell med garantiløn for kvar stillingsgruppe, ut frå utdanningskravet, og tillegg etter 6, 8, 10 og 16 års ansiennitet. Garantiløna er minsteløna, og løna blir fastsett lokalt ved tilsetjing.
+
+      For undervisningsstillingar følgjer stillingskoden av utdanninga (sjå vedlegg 2). Ved lønnsfastsetjinga skal det mellom anna takast omsyn til kompetanse, ansvar, innsats og resultat. Leiarar med vesentlege arbeidsgivarfunksjonar skal som hovudregel ha høgare lønn enn dei dei leier.
+
+      Garantiløna blir brukt i [Vikartimer](#/arbeidstid/vikar).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 4 punkt 4.0–4.1", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Noen stillinger ligger i kapittel 5 eller 3.4. Er det riktig å si at «de fleste andre stillinger på skolen» får lønn etter kapittel 4?"
+  stikkord: [garantilønn, minstelønn, kapittel 4, stillingsgruppe, lønnsansiennitet]
+
+- id: hta-forhandlinger
+  type: forklaring
+  tittel: { nb: "4.2 og kapittel 5 Lokale forhandlinger", nn: "4.2 og kapittel 5 Lokale forhandlingar" }
+  tekst:
+    nb: |
+      For ansatte i kapittel 4 kan partene sentralt sette av en del av lønnsoppgjøret til lokale forhandlinger (4.2.1). Partene lokalt kan også forhandle når en stilling har endret seg vesentlig eller den ansatte har fullført relevant etter- eller videreutdanning (4.2.2 og 4.2.4), og når det er vanskelig å beholde eller rekruttere (4.2.3). Ved noen av disse forhandlingene gjelder arbeidsgiverens siste tilbud hvis partene ikke blir enige.
+
+      Stillinger i kapittel 5 får lønnen fastsatt helt lokalt, med årlige forhandlinger, helst mellom 1. mai og 1. oktober. Se også begrepet [lokale forhandlinger](#/begreper/lokale-forhandlinger).
+    nn: |
+      For tilsette i kapittel 4 kan partane sentralt setje av ein del av lønnsoppgjeret til lokale forhandlingar (4.2.1). Partane lokalt kan også forhandle når ei stilling har endra seg vesentleg eller den tilsette har fullført relevant etter- eller vidareutdanning (4.2.2 og 4.2.4), og når det er vanskeleg å halde på eller rekruttere (4.2.3). Ved nokre av desse forhandlingane gjeld det siste tilbodet frå arbeidsgivaren dersom partane ikkje blir samde.
+
+      Stillingar i kapittel 5 får løna fastsett heilt lokalt, med årlege forhandlingar, helst mellom 1. mai og 1. oktober. Sjå også omgrepet [lokale forhandlingar](#/begreper/lokale-forhandlinger).
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Kap. 4 punkt 4.2 og kap. 5", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=50" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Arbeidsgiverens siste tilbud gjelder ved uenighet etter 4.2.3 og 4.2.4, men ikke etter 4.2.1 og 4.2.2 (der kan tvisten ankes). Er «ved noen av disse forhandlingene» tydelig nok?"
+  stikkord: [lokale forhandlinger, lønnsforhandlinger, "4.2.1", "4.2.4", videreutdanning, rekruttering]
+
+- id: hta-vedlegg2
+  type: forklaring
+  tittel: { nb: "Vedlegg 2 Lønn og stillingskode for undervisningspersonale", nn: "Vedlegg 2 Lønn og stillingskode for undervisningspersonale" }
+  tekst:
+    nb: |
+      Lærere plasseres i stillingskode etter normert studietid med fullført faglig og pedagogisk utdanning: lærer (3 år), adjunkt (4 år), adjunkt med tilleggsutdanning (5 år), lektor (mastergrad) og lektor med tilleggsutdanning (6 år eller mer med mastergrad). Det er utdanningsinstitusjonen som godkjenner studiepoengene. Praktisk-pedagogisk utdanning teller med minst 30 studiepoeng.
+
+      Den som underviser uten pedagogisk utdanning, plasseres i stillingskode 7960. Den som fyller de faglige kravene, får minstelønn som om utdanningen var fullført.
+
+      Faglærere i yrkesfag med fagbrev, yrkespraksis og pedagogisk utdanning plasseres som adjunkt etter egne regler, og som adjunkt med tilleggsutdanning med et ekstra fagbrev. Etter videreutdanning gis ny stillingskode fra 1.8. eller 1.1., ut fra når eksamen ble tatt.
+    nn: |
+      Lærarar blir plasserte i stillingskode etter normert studietid med fullført fagleg og pedagogisk utdanning: lærar (3 år), adjunkt (4 år), adjunkt med tilleggsutdanning (5 år), lektor (mastergrad) og lektor med tilleggsutdanning (6 år eller meir med mastergrad). Det er utdanningsinstitusjonen som godkjenner studiepoenga. Praktisk-pedagogisk utdanning tel med minst 30 studiepoeng.
+
+      Den som underviser utan pedagogisk utdanning, blir plassert i stillingskode 7960. Den som fyller dei faglege krava, får minsteløn som om utdanninga var fullført.
+
+      Faglærarar i yrkesfag med fagbrev, yrkespraksis og pedagogisk utdanning blir plasserte som adjunkt etter eigne reglar, og som adjunkt med tilleggsutdanning med eit ekstra fagbrev. Etter vidareutdanning blir ny stillingskode gitt frå 1.8. eller 1.1., ut frå når eksamen vart teken.
+  kilder:
+    - { id: ks-hovedtariffavtalen, punkt: "Vedlegg 2", url: "https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=64" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen har to veier til adjunkt for faglærere i yrkesfag (med 2-årig yrkesteoretisk utdanning og PPU, eller med 3-årig yrkesfaglærerutdanning), begge med fire års yrkespraksis. Er kravene forenklet for mye?"
+    - "Er det riktig at minstelønn «som om utdanningen var fullført» gjelder dem som fyller de faglige kravene og har fag i læreplanen?"
+  stikkord: [stillingskode, lektor, adjunkt, lærer, "7960", "7965", faglærer, PPU, kompetanselønn]

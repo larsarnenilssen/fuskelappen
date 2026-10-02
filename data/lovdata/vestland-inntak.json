@@ -1,0 +1,1862 @@
+{
+ "id": "vestland-inntak",
+ "kilde": "vestland-forskrift-inntak",
+ "type": "forskrift",
+ "tittel": "Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune",
+ "korttittel": "Inntak og formidling i Vestland",
+ "malform": "nn",
+ "refid": "forskrift/2020-09-29-3380",
+ "sistEndret": "2026-08-01",
+ "hentet": "2026-10-02",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "46"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Innleiande føresegn",
+   "merknader": [
+    [
+     "Overskrifta endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1-1",
+     "visNr": "§ 1-1",
+     "tittel": "Formål og verkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Denne forskrifta gjeld inntak til alle offentlege vidaregåande skular og formidling av lærlingar, praksisbrevkandidatar og lærekandidatar i Vestland fylkeskommune. Forskrifta gir utfyllande reglar og kjem i tillegg til ",
+        {
+         "t": "forskrift til opplæringslova kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        ", ",
+        {
+         "t": "7",
+         "l": "forskrift/2024-06-03-900/kap7"
+        },
+        " og ",
+        {
+         "t": "13",
+         "l": "forskrift/2024-06-03-900/kap13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 1)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Inntak",
+   "merknader": [
+    [
+     "Overskrifta endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "2-1",
+     "visNr": "§ 2-1",
+     "tittel": "Inntak etter inntaksområde",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) I Vestland fylkeskommune er inntaket geografisk styrt etter inntaksområde. Dette inneber at ein søkar får inntaksområdepoeng til sitt inntaksområde ut ifrå folkeregistrert adresse."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Inntaksområdepoeng blir som hovudregel fordelt etter folkeregistrert adresse. Fylkeskommunen gir utfyllande reglar om kva skular og kommunar som inngår i kva inntaksområde."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Fylkeskommunen kan gi utfyllande reglar om kva tilbod som ikkje inngår i inntaksområda."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) For søkarar til programområde som fylkeskommunen ikkje tilbyr kan fylkeskommunen kjøpe skuleplassar i andre fylke. Dette gjeld berre søkarar med ungdomsrett. Søkaren må ha det aktuelle programområdet som sitt førsteønske."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Søkarar busette i enkelte grenseområde med andre fylke blir behandla i høve til eigne avtalar mellom fylkeskommunane."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 2)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-2",
+     "visNr": "§ 2-2",
+     "tittel": "Inntak til Vg1",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søkarar må prioritere tre utdanningsprogram ved innsøking til Vg1. Innanfor kvart utdanningsprogram kan det prioriterast inntil seks skular."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Inntaket blir gjennomført med grunnlag i karakterane frå grunnskulen (karakterpoeng), og eventuelle inntaksområdepoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom ein søker eit utdanningsprogram/programområde som det ikkje er tilbod om i sitt inntaksområde får søkaren inntaksområdepoeng til alle skulane i fylket."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Dersom det er ledige plassar etter at søkarar med inntaksområdepoeng har fått plass, konkurrerer søkarar utan inntaksområdepoeng etter karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Dersom søkaren ikkje har nok karakterpoeng til å kome inn på nokon av ønska sine, vil søkaren få tilbod om plass ved andre skular som tilbyr dei ønska utdanningsprogramma."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Søkarar som ikkje fører opp tre ulike utdanningsprogram kan bli plassert på andre utdanningsprogram."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Søkarar til eit fullstendig utdanningsprogram (fulltidselevar) skal takast inn før andre søkarar (deltidselevar)."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 3)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-3",
+     "visNr": "§ 2-3",
+     "tittel": "Inntak til Vg2 og Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søkarar kan prioritere programområde på Vg2 og Vg3 som søkaren er kvalifisert til. Innanfor kvart programområde kan det prioriterast inntil seks skular."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Inntaket blir gjort på bakgrunn av karakterpoeng for kompetansegivande kurs. Ved innsøking til Vg2 blir karakterar frå Vg1 lagt til grunn, og ved innsøking til Vg3 blir karakterar frå Vg2 lagt til grunn."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søkarar som ikkje har tilstrekkelege karakterpoeng til å kome inn på prioriterte programområde og skular, vil bli vurdert til andre programområde som søkaren er kvalifisert til, men som ikkje er prioritert i søknaden."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 4)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-4",
+     "visNr": "§ 2-4",
+     "tittel": "Oppflytting Vg2 og Vg3 studieførebuande utdanningsprogram",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søkarar til Vg2 studieførebuande utdanningsprogram har rett til å halde fram på same skule der Vg1 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg1 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år og at det er nok ledige plassar. Det blir teke atterhald om eventuelle endringar i tilbodsstrukturen."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar til Vg3 studieførebuande utdanningsprogram har rett til å halde fram på same skule der Vg2 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg2 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, endring endra ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2499",
+        "l": "forskrift/2023-06-13-2499"
+       },
+       "), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 5)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-5",
+     "visNr": "§ 2-5",
+     "tittel": "Oppflytting til Vg2 og Vg3 – treårig helse- og oppvekstfag med studiekompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søkarar til Vg2 treårig helse- og oppvekstfag med studiekompetanse har rett til å halde fram på same skule der Vg1 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg1 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar til Vg3 treårig helse- og oppvekstfag med studiekompetanse har rett til å halde fram på same skule der Vg2 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg2 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrift ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 6)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-6",
+     "visNr": "§ 2-6",
+     "tittel": "Oppflytting til Vg2 og Vg3 – treårig elektrofag med spesiell studiekompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søkarar til Vg2 treårig elektrofag med spesiell studiekompetanse har rett til å halde fram på same skule der Vg1 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg1 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar til Vg3 treårig elektrofag med spesiell studiekompetanse har rett til å halde fram på same skule der Vg2 er fullført, dersom søkaren har bestått i alle faga som er fastsette i læreplanverket på Vg2 og har søkt som fulltidselev. Føresetnaden er at det blir søkt om inntak påfølgande år."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrift ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 7)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-7",
+     "visNr": "§ 2-7",
+     "tittel": "Inntak til Vg1 musikk, dans og drama",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Inntil 50 % av plassane i utdanningsprogrammet kan tildelast på grunnlag av ei ferdigheitsprøve (inntaksprøve), i tillegg til karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Skala for tilleggspoeng blir fastsett av fylkeskommunen. Søkaren får 3 tilleggspoeng om søkaren viser dugleik utover gjennomsnittet. Søkaren får 6 tilleggspoeng om søkaren viser dugleik som vidarekomen og har eit stort potensiale. Søkaren får 9 tilleggspoeng om søkaren viser framifrå dugleik og har eit uvanleg stort potensiale."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Det er berre søkarar som har Vg1 musikk, dans og drama som sitt førsteønske som kan framstille seg til ferdigheitsprøve. Ferdigheitsprøver blir berre arrangert når det er mange søkarar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 6), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 8)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-8",
+     "visNr": "§ 2-8",
+     "tittel": "Inntak til Vg1 idrettsfag",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Inntil 50 % av plassane i utdanningsprogrammet kan tildelast på grunnlag av dokumenterte ferdigheiter (idrettslege kriterium), i tillegg til karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Skala for tilleggspoeng, på bakgrunn av dokumentasjon frå særkrins/klubb, blir fastsett av fylkeskommunen. Søkarar på regionalt nivå får 3 tilleggspoeng, søkarar på landslagsnivå får 6 tilleggspoeng, og søkarar på internasjonalt nivå får 9 tilleggspoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søkarar som ønsker tilleggspoeng må sende inn dokumentasjon frå særkrins/klubb som stadfestar dei idrettslege prestasjonane. Dokumentasjonen skal sendast skulen søkaren har som førsteønske."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 7), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 9)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-9",
+     "visNr": "§ 2-9",
+     "tittel": "Inntak til landslinjer og landsdekkande tilbod",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar til landslinjer og landsdekkande tilbod skal registrere søknaden i heimfylket. Søkarar frå heile landet konkurrerer likt ved inntak til landslinjer og landsdekkande tilbod. Inntaket skjer på grunnlag av karakterpoeng."
+       ]
+      },
+      {
+       "tekst": [
+        "Søkarar til vg2 Smed kan også søke direkte til Odda vidaregåande skule. Rektor gjennomfører inntaket frå etter 1. mars. Inntaket skjer på grunnlag av karakterpoeng frå 1. termin."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 8), ",
+       {
+        "t": "9 des 2025 nr. 2567",
+        "l": "forskrift/2025-12-09-2567"
+       },
+       " (i kraft 1 jan 2026), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 10)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-10",
+     "visNr": "§ 2-10",
+     "tittel": "Inntak til statlege vidaregåande skular",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar frå Vestland kan søke statlege vidaregåande skular på linje med søkarar frå andre fylke. Inntaket blir gjennomført på bakgrunn av karakterpoeng."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 9), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 11)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-11",
+     "visNr": "§ 2-11",
+     "tittel": "Inntak til yrkesfaglege utdanningsløp som leier fram til yrkes- og studiekompetanse",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaket blir gjort på bakgrunn av intervju i bedrift og karakterpoeng. Søkarar må ha avtale med skulen om læreplass i bedrift og ha tilbodet som sitt førsteønske. Fylkeskommunen kan gi utfyllande reglar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 10), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 12)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-12",
+     "visNr": "§ 2-12",
+     "tittel": "Permisjon frå vidaregåande opplæring",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Elevar som har tatt imot skuleplass, men må seie ifrå seg plassen i løpet av skuleåret pga. t.d. langvarig sjukdom, svangerskap, militærteneste eller andre sosiale grunnar, kan søke om permisjon frå vidaregåande opplæring. Eleven vil kunne få reservert skuleplassen til året etter ved same skule og tilbod. Eleven må på vanleg måte søke om inntak for etterfølgande skuleår. Det blir tatt atterhald om endringar i tilbodsstrukturen."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Denne føresegna gjeld for offentlege skular og gjeld ikkje for gjesteelevar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 12), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 13)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-13",
+     "visNr": "§ 2-13",
+     "tittel": "Inntak av norske utvekslingselevar",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Norske søkarar med ungdomsrett som er utvekslingselevar ved ein skule i utlandet, skal takast inn på individuelt grunnlag."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Fylkeskommunen kan gi utfyllande reglar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 13), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 14)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-14",
+     "visNr": "§ 2-14",
+     "tittel": "Inntak av deltidselevar til Vg2/Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Elevar som ikkje oppfyller vilkåra i ",
+        {
+         "t": "forskrift til opplæringslova",
+         "l": "forskrift/2024-06-03-900"
+        },
+        " for å takast inn til eit fullstendig programområde (fulltidselevar), kan i særskilde tilfelle likevel takast inn til neste trinn til mindre enn eit fullstendig programområde (deltidselevar)."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Fylkeskommunen tar inn deltidselevar."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Inntak av deltidselevar skjer etter at fulltidselever er tatt inn."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Deltidselevar med ungdomsrett vil bli tatt inn før deltidselevar utan ungdomsrett."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 14), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 15)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-15",
+     "visNr": "§ 2-15",
+     "tittel": "Omval og å ta fag på nytt",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Elevar som har tatt omval etter ",
+        {
+         "t": "opplæringslova § 5-5",
+         "l": "lov/2023-06-09-30/§5-5",
+         "a": "opplaeringslova/5-5"
+        },
+        " og har halvårsvurdering i fellesfag, kan avtale med skulen at dei ikkje vil ta faget på Vg1 på nytt. For å kvalifisere til vitnemål, må dei ta faget på Vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Elevar som har tatt omval etter ",
+        {
+         "t": "opplæringslova § 5-5",
+         "l": "lov/2023-06-09-30/§5-5",
+         "a": "opplaeringslova/5-5"
+        },
+        " og har standpunktkarakterar i fellesfag, kan søke om å få faget godkjent etter ",
+        {
+         "t": "forskrift til opplæringslova § 5-11",
+         "l": "forskrift/2024-06-03-900/§5-11",
+         "a": "opplaeringsforskrifta/5-11"
+        },
+        " dersom dei vil behalde standpunktkarakteren og ikkje ta faget på nytt."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Elevar som har tatt omval etter ",
+        {
+         "t": "opplæringslova § 5-5",
+         "l": "lov/2023-06-09-30/§5-5",
+         "a": "opplaeringslova/5-5"
+        },
+        " og har standpunktkarakter i fellesfag, kan velje å ta faget på nytt, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 9-52",
+         "l": "forskrift/2024-06-03-900/§9-52",
+         "a": "opplaeringsforskrifta/9-52"
+        },
+        " fjerde avsnitt. Tar eleven faget på nytt skal den siste beståtte karakteren førast på vitnemålet eller kompetansebeviset, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 9-52",
+         "l": "forskrift/2024-06-03-900/§9-52",
+         "a": "opplaeringsforskrifta/9-52"
+        },
+        " fjerde avsnitt. Dersom eleven ombestemmer seg i løpet av skuleåret, må eleven slutte i faget før 1. november for å behalde standpunktkarakteren."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 15), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 16)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-16",
+     "visNr": "§ 2-16",
+     "tittel": "Søknadsfrist",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søknadsfristen er 1. februar for søkarar som fell under ",
+        {
+         "t": "forskrift til opplæringslova § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " andre avsnitt, og 1. mars for elevar som søker seg inn i det ordinære inntaket, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " første avsnitt."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søknader som kjem inn etter søknadsfristen, vil berre bli behandla i den utstrekning det er mogleg, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-9",
+         "l": "forskrift/2024-06-03-900/§4-9",
+         "a": "opplaeringsforskrifta/4-9"
+        },
+        " tredje avsnitt. Det er fylkeskommunen som avgjer dette. I den utstrekning det ikkje er mogleg å behandle søknaden, vil søknaden bli avvist og melding sendt søkaren."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Inntak i samarbeid med oppfølgingstenesta kan skje uavhengig av fristane ovanfor. Det same gjeld for dei som tidlegare har fått «ikkje bestått» på fag- eller sveineprøva."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 16), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 17)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-17",
+     "visNr": "§ 2-17",
+     "tittel": "Flytting",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) For å bli vurdert for rett til inntak til vidaregåande opplæring i Vestland fylkeskommune må søkarar i utgangspunktet vere folkeregistrert i fylket når søknaden blir send."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar som ikkje er folkeregistrert i fylket når søknaden blir send, og som planlegg å flytte til Vestland fylkeskommune, kan bli vurdert for inntak om dei dokumenterer at den planlagde flyttinga er reell. Dokumentasjon om planlagd flytting må vere motteke av fylkeskommunen innan 23. juni og søkaren folkeregistrert ved skulestart. Fylkeskommunen kan gi utfyllande reglar om krav til dokumentasjon."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søkarar som omfattast av overeinskomst om nordisk utdanningsfellesskap treng ikkje vere folkeregistrert i Vestland fylke når søknaden blir send. Desse må likevel vere folkeregistrert ved skulestart."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 17), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 18)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-18",
+     "visNr": "§ 2-18",
+     "tittel": "Frammøte første skuledag",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Elevar må møte på skulen første skuledag."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Elev er plikta til å gi beskjed til skulen snarast mogleg og seinast innan oppmøtetidspunkt, dersom vedkommande ikkje kan møte til første skuledag. Fråværet må dokumenterast."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom eleven ikkje møter og ikkje har gyldig grunn som sjukdom eller andre tvingande grunnar, vil vedkommande miste skuleplassen sin."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 19), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 20), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 19)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-19",
+     "visNr": "§ 2-19",
+     "tittel": "Rektor sin rett til inntak av elevar",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Rektor har ikkje rett til å ta inn elevar før det sentrale inntaksarbeidet er avslutta, eller at dette på annan måte er delegert."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Etter at det sentrale inntaksarbeidet er avslutta blir ansvaret for vidare inntak delegert til rektor. Rektor skal følge ventelistene som er utarbeidd sentralt fram til utgangen av august. Frå 1. september blir inntaket rekna som avslutta."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Når alle søkarar med ungdomsrett på venteliste har fått tilbod om skuleplass, kan rektor gi tilbod til søkarar etter følgande prioritering:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkarar med ungdomsrett som ikkje står på venteliste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkarar med vaksenrett som står på venteliste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkarar med vaksenrett som ikkje står på venteliste"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "Søkarar utan rett som er busett i Vestland fylke kan takast inn etter alle søkarar med rett til utdanning har fått tilbod, og det framleis er ledige plassar."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 20), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 21), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 20)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-20",
+     "visNr": "§ 2-20",
+     "tittel": "Inntak av søkarar busette i andre fylke",
+     "ledd": [
+      {
+       "tekst": [
+        "Inntaket av søkarar med ungdomsrett busette i andre fylke følger ",
+        {
+         "t": "forskrift til opplæringslova § 4-14",
+         "l": "forskrift/2024-06-03-900/§4-14",
+         "a": "opplaeringsforskrifta/4-14"
+        },
+        " tredje avsnitt. Fylkeskommunen skal gi tilbod ved ledig kapasitet, jf. ",
+        {
+         "t": "opplæringslova § 28-2",
+         "l": "lov/2023-06-09-30/§28-2",
+         "a": "opplaeringslova/28-2"
+        },
+        " tredje avsnitt, etter at søkarar busette i Vestland fylkeskommune er prioritert."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 22), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 21)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-21",
+     "visNr": "§ 2-21",
+     "tittel": "Vilkår for inntak til Vg1 studiespesialiserande med førebuande IB (pre-IB)",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Vilkår for inntak til pre-IB er at søkaren har fullført norsk grunnskule eller tilsvarande. Sjå ",
+        {
+         "t": "forskrift til opplæringslova § 4-1",
+         "l": "forskrift/2024-06-03-900/§4-1",
+         "a": "opplaeringsforskrifta/4-1"
+        },
+        " for kva som kan reknast som tilsvarande og korleis det kan dokumenterast."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkaren bør minst ha karakteren 4 i matematikk og engelsk, i tillegg til gjennomsnittskarakter på minst 4,5. Søkaren bør òg ha tilstrekkeleg norskkompetanse til å kunne følge undervisninga."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 21), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 23), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 22)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "2-22",
+     "visNr": "§ 2-22",
+     "tittel": "Rekkefølge ved inntak til Vg1 studiespesialiserande med førebuande IB (pre-IB)",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom det melder seg fleire søkarar enn det er plassar, fordelast plassane etter poengsum utrekna på grunnlag av ",
+        {
+         "t": "forskrift til opplæringslova § 4-19",
+         "l": "forskrift/2024-06-03-900/§4-19",
+         "a": "opplaeringsforskrifta/4-19"
+        },
+        ". Karakterar frå andre utdanningssystem med annan karakterskala blir rekna om etter ei lineær omrekning, der karakterane frå andre utdanningssystem blir vekta mot norsk karakterskala."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 22), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 24), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 23)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Inntak til IB",
+   "merknader": [
+    [
+     "Overskrifta endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "3-1",
+     "visNr": "§ 3-1",
+     "tittel": "Inntak til IB Diploma Programme (IB) – 2IB",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Vilkår for inntak til 2IB er at søkaren har bestått Vg1 studiespesialiserande med førebuande IB (pre-IB), Vg1 studiespesialiserande, MYP 5/Grade 10 frå IB eller tilsvarande. Søkaren må ha minimum 10 års skulegang og ikkje allereie ha fullført vidaregåande opplæring."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) For å kvalifisere til inntak bør søkaren ha minst karakteren 4 i matematikk og 5 i engelsk. Søkaren må i tillegg ha gjennomsnittskarakter på minst 4."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søkaren kan bli bedd om å ta ein opptaksprøve eller stille til intervju om det er uklart at søkaren er kvalifisert."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Dersom det er fleire kvalifiserte søkarar enn plassar, konkurrerer søkarane etter karakterpoeng. Karakterar frå andre utdanningssystem med annan karakterskala blir rekna om etter ei lineær omrekning, der karakterane frå andre utdanningssystem blir vekta mot norsk karakterskala."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 23), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 25), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 24)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-2",
+     "visNr": "§ 3-2",
+     "tittel": "Inntak til IB Diploma Programme (IB) – 3IB",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Vilkår for inntak til 3IB er at søkaren har bestått 2IB med minimum 20 poeng."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Inntak av søkarar frå andre IB-tilbod («transfer students») blir vurdert individuelt. Karakternivå og fagsamansetning er sentrale moment."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom det er fleire kvalifiserte søkarar enn plassar, konkurrerer søkarane etter poeng frå 2IB. Kvalifiserte søkarar som har fullført 2IB i Vestland fylkeskommune, kjem føre andre søkarar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 24), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 26), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 25)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "3-3",
+     "visNr": "§ 3-3",
+     "tittel": "Søknadsfrist, prosess og flytting",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Søknadsfristen er 1. mars, og søkarar må i utgangspunktet då vere folkeregistrert i Vestland."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar som flyttar til Vestland etter 1. mars saman med føresette kan òg søke. Skuleplassen vil ikkje vere sikra før søkaren har dokumentert at hen har flytta til fylket saman med føresette. Dette gjeld både søkarar busette i andre fylke og i andre land."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søknad sendast gjennom VIGO. Søkarar som ikkje kan søke gjennom VIGO, nyttar eiget søknadsskjema frå skulen."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Fylkeskommunen kan gi utfyllande retningslinjer om inntaksprosess og vilkår for inntak."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 27), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 26)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Inntak til vidaregåande opplæring for vaksne",
+   "merknader": [
+    [
+     "Overskrifta endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4-1",
+     "visNr": "§ 4-1",
+     "tittel": "Søknadsprosess og krav til søknaden",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Det er ikkje søknadsfrist for inntaket. Søkaren bør likevel registrere søknaden innan 1. mars for tilbod med oppstart haustsemesteret og innan 1. oktober for tilbod med oppstart vårsemesteret. Søkaren må føre opp tre sluttkompetansar og prioritere desse."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved manglande dokumentasjon i søknad vil søkar bli bedt om å ettersende dette. Viss fylkeskommunen ikkje har motteke etterspurd dokumentasjon innan 4 veker frå purringa blir søknaden avvist."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søkarar som ikkje har gyldig opphaldsløyve på oppstartstidspunkt, vil ikkje kunne få eit tilbod om vidaregåande opplæring for vaksne. Ved fornying av opphaldsløyve undervegs i opplæringa, må søkaren dokumentere at det er sendt søknad om fornying og ettersende vedtak. Ved eventuelt vedtak om avslag på fornying av opphaldsløyve, kan tilbodet bli trekt tilbake."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Søkaren må svare på tilbodet om plass innan gitt frist for å ikkje miste tilbodet."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Søkaren skal sende søknaden til den fylkeskommunen der dei er folkeregistrert. Søkarar som kan dokumentere at dei skal flytte, sender søknaden til den fylkeskommunen dei skal flytte til. Dokumentasjonen sendast saman med søknaden, og seinast 4 veker frå purring om ettersending. Søkaren må vere folkeregistrert i Vestland fylke ved skulestart."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 28), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 27)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-2",
+     "visNr": "§ 4-2",
+     "tittel": "Inntaksrekkefølge",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Om det er knapt om plassar følger inntaksrekkefølga forskrift om ",
+        {
+         "t": "opplæringslova § 13-4",
+         "l": "lov/2023-06-09-30/§13-4",
+         "a": "opplaeringslova/13-4"
+        },
+        ". Innanfor kvar kategori blir søkarar prioritert etter søknadsdato."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søkarar under 19 år som søker vidaregåande opplæring for vaksne etter ",
+        {
+         "t": "opplæringslova § 5-1 fjerde avsnitt",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        " følger same inntaksrekkefølge som vaksne søkarar."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom det ikkje er ledige plassar til 1. prioriterte sluttkompetanse etter at alle innanfor same rettskategori har fått tilbod, vil søkarane fortløpende få tilbod om 2. eller 3. prioriterte sluttkompetanse."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Deltakarar som har vore i permisjon blir prioriterte framfor alle andre søkarar."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 29), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 28)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-3",
+     "visNr": "§ 4-3",
+     "tittel": "Permisjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Deltakarar som treng eit lengre opphald i opplæringsløpet av ulike grunnar (t.d. pga. langvarig sjukdom, svangerskap, militærteneste eller andre sosiale grunnar), kan søke om permisjon."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Deltakaren vil kunne få reservert plass ved same skule og tilbod inntil eitt år etter godkjent permisjon. Deltakaren må på vanleg måte søke om inntak for påfølgande skuleår. Det blir teke atterhald om endringar i tilbodsstrukturen."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 30), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 29)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4-4",
+     "visNr": "§ 4-4",
+     "tittel": "",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Deltakaren er plikta til å gi beskjed til opplæringsstaden snarast mogleg og seinast innan oppmøtetidspunkt, dersom vedkommande ikkje kan møte til oppstartsdatoen for tilbodet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Dersom deltakar ikkje møter og ikkje har gyldig grunn som sjukdom eller andre tvingande grunnar, vil vedkommande miste plassen sin."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Tilbod om spissa toppidrett",
+   "merknader": [
+    [
+     "Kapitlet tilføyd ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "5-1",
+     "visNr": "§ 5-1",
+     "tittel": "Tilbod om spissa toppidrett i samarbeid med Olympiatoppen Vest (OLTV) – prosess",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Inntaket blir gjennomført på ordinær måte, ved at søkaren konkurrerer seg inn på utdanningsprogrammet ved ønskt skule. Søkaren må ha den aktuelle skulen som førsteønske. I søknaden om skuleplass må det kome fram at ein søker spissa toppidrett. Søkaren fyller òg ut eige søknadsskjema og sender til OLTV innan 1. mars."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) OLTV vurderer dei idrettsfaglege prestasjonane til søkarane i samsvar med fylkeskommunale retningslinjer. OLTV gir ei anbefaling om kvalifiserte søkarar."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Fylkeskommunen avgjer kven som får tilbod om spissa toppidrett, forutsett at søkaren får skuleplass ved skulen."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 31), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 30)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5-2",
+     "visNr": "§ 5-2",
+     "tittel": "Omprioritering av søknad",
+     "ledd": [
+      {
+       "tekst": [
+        "Søkarar som ikkje får tilbod om spissa toppidrett får moglegheit til å omprioritere søknaden om skuleplass."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved forskrift ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024), endra ved forskrifter ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 32), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 31)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap6",
+   "type": "kapittel",
+   "nr": "6",
+   "overskrift": "Kapittel 6 Formidling",
+   "merknader": [
+    [
+     "Kapitlet endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024, tidlegare kapittel 3)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6-1",
+     "visNr": "§ 6-1",
+     "tittel": "Søknad om formidling til læreplass",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Fristen for å søke formidling til læreplass er 1. februar for lærekandidatar og 1. mars for lærlingar, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 7-5",
+         "l": "forskrift/2024-06-03-900/§7-5",
+         "a": "opplaeringsforskrifta/7-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Søknader vil etter søknadsfristen bli behandla manuelt så langt råd er. Søknaden skal grunngivast. I den utstrekning det ikkje er mogleg å behandle søknaden, vil søknaden bli avvist og melding sendt søkar."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Søknader frå søkarar utan rett blir ikkje behandla av fylkeskommunen etter søknadsfristen. Søkaren skal ha skriftleg melding om å kontakte aktuelle bedrifter direkte."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Formidling i samarbeid med oppfølgingstenesta kan skje uavhengig av fristane ovanfor. Det same gjeld formidling av dei som tidlegare har fått «ikkje bestått» på fag- eller sveineprøva."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 27), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 33), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 32)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-2",
+     "visNr": "§ 6-2",
+     "tittel": "Formidling",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Alle søkarar blir formidla til lærebedrifter når søknadsfristen har gått ut. Etter 1. august blir søkarar som ikkje har ungdomsrett og søkarar med ungdomsrett som ikkje er kvalifiserte, tatt ut av formidlingslistene."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) For å vere kvalifisert må søkarar oppfylle vilkåra i ",
+        {
+         "t": "forskrift til opplæringslova § 7-3",
+         "l": "forskrift/2024-06-03-900/§7-3",
+         "a": "opplaeringsforskrifta/7-3"
+        },
+        " andre, tredje eller fjerde avsnitt. Søkarar til læreplass som lærling har i tillegg normalt faglege føresetnader for inntak til neste trinn når fellesfaga og programfaga på Vg1 og Vg2 er bestått, eller søkaren har karakteren 1 i inntil to fellesfag, jf. ",
+        {
+         "t": "forskrift til opplæringslova § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "9 nov 2022 nr. 2091",
+        "l": "forskrift/2022-11-09-2091"
+       },
+       ", ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 28), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidligere § 34), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 33)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap7",
+   "type": "kapittel",
+   "nr": "7",
+   "overskrift": "Kapittel 7 Felles føresegner",
+   "merknader": [
+    [
+     "Kapitlet endra ved forskrift ",
+     {
+      "t": "13 juni 2023 nr. 2022",
+      "l": "forskrift/2023-06-13-2022"
+     },
+     " (i kraft 1 jan 2024, tidlegare kapittel 4)."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "7-1",
+     "visNr": "§ 7-1",
+     "tittel": "Mindre endringar i forskrifta",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Fylkesdirektøren har rett til å gjennomføre mindre endringar i forskrifta."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Dersom endringane er av ein slik art at dei påverkar elevane sine vilkår for inntak til bestemte tilbod, skal likevel endringane behandlast politisk."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 31), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 38), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 35)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-2",
+     "visNr": "§ 7-2",
+     "tittel": "Delegering av ansvar",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkesdirektøren har mynde til å delegere ansvar i denne forskrifta."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 32), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 39), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 36)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-3",
+     "visNr": "§ 7-3",
+     "tittel": "Ikraftsetjing",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskrifta tar til å gjelde 1. januar 2021. Samtidig blir ",
+        {
+         "t": "forskrift 23. mai 2019 nr. 2152 om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune",
+         "l": "forskrift/2019-05-23-2152"
+        },
+        " oppheva."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endra ved forskrifter ",
+       {
+        "t": "13 juni 2023 nr. 2022",
+        "l": "forskrift/2023-06-13-2022"
+       },
+       " (i kraft 1 jan 2024, tidlegare § 33), ",
+       {
+        "t": "30 sep 2024 nr. 2939",
+        "l": "forskrift/2024-09-30-2939"
+       },
+       " (i kraft 1 jan 2025, tidlegare § 40), ",
+       {
+        "t": "16 juni 2026 nr. 1344",
+        "l": "forskrift/2026-06-16-1344"
+       },
+       " (i kraft 1 aug 2026, tidlegare § 37)."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

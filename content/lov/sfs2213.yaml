@@ -1,0 +1,222 @@
+# SFS 2213 Arbeidstid for undervisningspersonalet med egne ord (fase 3, avgjørelse 039). Vises i Regelverk under
+# «Avtaler», i rekkefølgen i content/lovverk.yaml. Avtaleteksten kopieres ikke (rettighetene er ikke avklart, eier
+# 02.10.2026). Hvert element viser til punktet i avtalen. Når kildejobben ser at avtaleteksten er endret, viser
+# kontrollsaken punktene som er endret, og elementene her som kan være berørt, med kontrollspørsmålene.
+# Teksten gjelder videregående opplæring. Bestemmelsene for grunnskolen er bare nevnt.
+- id: sfs-omfang
+  type: forklaring
+  tittel: { nb: "Punkt 1–3 Hva avtalen gjelder", nn: "Punkt 1–3 Kva avtalen gjeld" }
+  tekst:
+    nb: |
+      SFS 2213 er en særavtale om arbeidstiden for undervisningsstillinger i grunnskolen, videregående opplæring og voksenopplæring. Hovedtariffavtalen og andre sentrale særavtaler gjelder så langt ikke noe annet står i SFS 2213.
+
+      Avtalen skal gi lærerne tid til å forberede undervisningen, alene og sammen med andre. Hvor og når arbeidet utenom undervisningen gjøres, avhenger av oppgavene og hva som passer for skolen. Et godt samarbeid mellom ledelsen og de tillitsvalgte beskrives som nøkkelen til god praktisering av avtalen.
+
+      Tallene fra avtalen brukes i kalkulatorene under [Arbeidstid](#/arbeidstid).
+    nn: |
+      SFS 2213 er ein særavtale om arbeidstida for undervisningsstillingar i grunnskulen, vidaregåande opplæring og vaksenopplæring. Hovudtariffavtalen og andre sentrale særavtalar gjeld så langt ikkje noko anna står i SFS 2213.
+
+      Avtalen skal gi lærarane tid til å førebu undervisninga, åleine og saman med andre. Kvar og når arbeidet utanom undervisninga blir gjort, avheng av oppgåvene og kva som passar for skulen. Eit godt samarbeid mellom leiinga og dei tillitsvalde blir skildra som nøkkelen til god praktisering av avtalen.
+
+      Tala frå avtalen blir brukte i kalkulatorane under [Arbeidstid](#/arbeidstid).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "1–3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at hovedtariffavtalen og andre sentrale særavtaler gjelder så langt SFS 2213 ikke sier noe annet (punkt 1)?"
+  stikkord: [sfs 2213, særavtale, arbeidstidsavtalen]
+
+- id: sfs-arbeidsaret
+  type: forklaring
+  tittel: { nb: "Punkt 4 Arbeidsåret", nn: "Punkt 4 Arbeidsåret" }
+  tekst:
+    nb: |
+      Alle oppgavene til læreren skal gjøres innenfor et [årsverk](#/begreper/arsverk) på 1687,5 timer, eller 1650 timer for lærere som er 60 år eller eldre. [Arbeidsåret](#/begreper/arbeidsar) er elevenes skoleår og seks dager til kompetanseutvikling og planlegging.
+
+      Partene lokalt kan avtale flere [planleggingsdager](#/begreper/planleggingsdager). Innholdet i planleggingsdagene skal drøftes lokalt.
+    nn: |
+      Alle oppgåvene til læraren skal gjerast innanfor eit [årsverk](#/begreper/arsverk) på 1687,5 timar, eller 1650 timar for lærarar som er 60 år eller eldre. [Arbeidsåret](#/begreper/arbeidsar) er skuleåret til elevane og seks dagar til kompetanseutvikling og planlegging.
+
+      Partane lokalt kan avtale fleire [planleggingsdagar](#/begreper/planleggingsdager). Innhaldet i planleggingsdagane skal drøftast lokalt.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at flere dager kan avtales «på kommune-/fylkeskommunenivå eller på den enkelte skole». Bør nivåene stå i teksten?"
+  stikkord: [årsverk, arbeidsår, "1687,5", planleggingsdager]
+
+- id: sfs-arbeidstid
+  type: forklaring
+  tittel: { nb: "Punkt 5.1 Organisering av arbeidstiden", nn: "Punkt 5.1 Organisering av arbeidstida" }
+  tekst:
+    nb: |
+      [Planfestet arbeidstid](#/begreper/planfestet-arbeidstid) kan være høyst 9 timer per dag og 37,5 timer per uke. I videregående skole er den 1150 timer i året, hvis ikke noe annet er forhandlet. Partene på skolen kan bli enige om å endre den, eller om en mer fleksibel ordning.
+
+      Den planfestede tiden brukes først og fremst til undervisning, annet elevrettet arbeid, for- og etterarbeid, faglig ajourføring alene og sammen med kolleger, og kontakt med foresatte og samarbeidspartnere. Ledelsen har ansvar for å legge til rette for samarbeidet.
+
+      Fordelingen kan vises i [Arbeidsplan](#/arbeidstid/arbeidsplan).
+    nn: |
+      [Planfesta arbeidstid](#/begreper/planfestet-arbeidstid) kan vere høgst 9 timar per dag og 37,5 timar per veke. I vidaregåande skule er ho 1150 timar i året, dersom ikkje noko anna er forhandla. Partane på skulen kan bli samde om å endre ho, eller om ei meir fleksibel ordning.
+
+      Den planfesta tida blir først og fremst brukt til undervisning, anna elevretta arbeid, før- og etterarbeid, fagleg ajourføring åleine og saman med kollegaer, og kontakt med føresette og samarbeidspartnarar. Leiinga har ansvar for å leggje til rette for samarbeidet.
+
+      Fordelinga kan visast i [Arbeidsplan](#/arbeidstid/arbeidsplan).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «partene på skolen» riktig nivå for endring av den planfestede arbeidstiden (avtalen sier «ved partsenighet på den enkelte skole»)?"
+  stikkord: [planfestet arbeidstid, "1150 timer", tilstedeværelse, "37,5 timer"]
+
+- id: sfs-oversikt
+  type: forklaring
+  tittel: { nb: "Punkt 5.2 Oversikt over arbeidstiden", nn: "Punkt 5.2 Oversikt over arbeidstida" }
+  tekst:
+    nb: |
+      Hver lærer skal ha en oversikt over den planfestede arbeidstiden hver dag, med undervisningstiden og faste møter. Rektor setter opp oversikten etter en samtale med læreren, som kan ha med en tillitsvalgt. Oversikten bør gjelde et halvår av gangen. Start og slutt på dagen kan endres med minst to ukers varsel, hvis ikke kortere frist er avtalt.
+
+      Undervisningen legges etter [årsrammene](#/begreper/arsramme) for fagene i vedlegg 1. Spisepause og nødvendige pauser ligger innenfor den planfestede tiden. Resten av årsverket er [selvdisponert tid](#/begreper/selvdisponert-tid) til for- og etterarbeid og faglig ajourføring.
+
+      [Fast overtid](#/begreper/fast-overtid) kan avtales ved at årsrammen for undervisning økes. Pålagt arbeid ut over oversikten, eller en oversikt som går ut over grensene for tilstedeværelse, gir overtidsbetaling.
+    nn: |
+      Kvar lærar skal ha ei oversikt over den planfesta arbeidstida kvar dag, med undervisningstida og faste møte. Rektor set opp oversikta etter ein samtale med læraren, som kan ha med ein tillitsvald. Oversikta bør gjelde eit halvår om gongen. Start og slutt på dagen kan endrast med minst to vekers varsel, dersom ikkje kortare frist er avtalt.
+
+      Undervisninga blir lagd etter [årsrammene](#/begreper/arsramme) for faga i vedlegg 1. Matpause og nødvendige pausar ligg innanfor den planfesta tida. Resten av årsverket er [sjølvdisponert tid](#/begreper/selvdisponert-tid) til før- og etterarbeid og fagleg ajourføring.
+
+      [Fast overtid](#/begreper/fast-overtid) kan avtalast ved at årsramma for undervisning blir auka. Pålagt arbeid ut over oversikta, eller ei oversikt som går ut over grensene for tilstadeværing, gir overtidsbetaling.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at den kortere fristen kan avtales med tillitsvalgte eller med den enkelte lærer. Bør det stå?"
+  stikkord: [oversikt, arbeidsplan, varsel, fast overtid, selvdisponert tid]
+
+- id: sfs-andre-oppgaver
+  type: forklaring
+  tittel: { nb: "Punkt 5.3 Andre arbeidsoppgaver", nn: "Punkt 5.3 Andre arbeidsoppgåver" }
+  tekst:
+    nb: |
+      Rektor og læreren kan avtale at undervisningen reduseres, så læreren kan gjøre [andre arbeidsoppgaver](#/begreper/andre-arbeidsoppgaver) knyttet til undervisningen. Da reduseres den selvdisponerte tiden med samme prosent som undervisningen, og den planfestede tiden økes tilsvarende. Blir grensen for planfestet tid per uke overskredet, utvides arbeidsåret for læreren.
+    nn: |
+      Rektor og læraren kan avtale at undervisninga blir redusert, så læraren kan gjere [andre arbeidsoppgåver](#/begreper/andre-arbeidsoppgaver) knytte til undervisninga. Då blir den sjølvdisponerte tida redusert med same prosent som undervisninga, og den planfesta tida blir auka tilsvarande. Blir grensa for planfesta tid per veke overskriden, blir arbeidsåret utvida for læraren.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "5.3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er regelen om at selvdisponert tid reduseres med samme prosent som undervisningen, gjengitt riktig?"
+  stikkord: [andre arbeidsoppgaver, funksjonstid, redusert undervisning]
+
+- id: sfs-livsfasetiltak
+  type: forklaring
+  tittel: { nb: "Punkt 6 Livsfasetiltak", nn: "Punkt 6 Livsfasetiltak" }
+  tekst:
+    nb: |
+      Lærere har rett til redusert undervisning fra skoleårets begynnelse: inntil 6 prosent det første yrkesåret etter fullført utdanning, inntil 6 prosent fra det kalenderåret de fyller 57, og inntil 12,5 prosent fra det kalenderåret de fyller 60. Nyutdannede og lærere over 60 bruker den frigjorte tiden til for- og etterarbeid og faglig ajourføring i den planfestede tiden, hvis ikke noe annet avtales.
+
+      Se også [livsfasetiltak](#/begreper/livsfasetiltak). Reduksjonen kan legges inn i [Arbeidsplan](#/arbeidstid/arbeidsplan).
+    nn: |
+      Lærarar har rett til redusert undervisning frå byrjinga av skuleåret: inntil 6 prosent det første yrkesåret etter fullført utdanning, inntil 6 prosent frå det kalenderåret dei fyller 57, og inntil 12,5 prosent frå det kalenderåret dei fyller 60. Nyutdanna og lærarar over 60 brukar den frigjorde tida til før- og etterarbeid og fagleg ajourføring i den planfesta tida, dersom ikkje noko anna blir avtalt.
+
+      Sjå også [livsfasetiltak](#/begreper/livsfasetiltak). Reduksjonen kan leggjast inn i [Arbeidsplan](#/arbeidstid/arbeidsplan).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder 6 prosent fra 57 år og 12,5 prosent fra 60 år hver for seg, slik teksten kan leses, eller erstatter 12,5 prosent de 6 prosentene?"
+  stikkord: [livsfasetiltak, seniortiltak, nyutdannet, redusert undervisning]
+
+- id: sfs-tidsressurser
+  type: forklaring
+  tittel: { nb: "Punkt 7.3 Tidsressurser i videregående", nn: "Punkt 7.3 Tidsressursar i vidaregåande" }
+  tekst:
+    nb: |
+      Hver skole har en tidsressurspott til lærere og skoleledere med en byrdefull undervisningssituasjon. Potten er et fast antall årsrammetimer per elev. Fordelingen drøftes på skolen, og ressursen brukes som hovedregel til å redusere undervisningen. Ved enighet i fylkeskommunen kan ressursen flyttes mellom skoler.
+
+      [Kontaktlærere](#/begreper/kontaktlaerer) får årsrammen for undervisning redusert med minst 28,5 timer (38 skoletimer à 45 minutter). Til rådgivning settes det av minst 28,5 timer per påbegynte 25 elever, og i tillegg 5 prosent av et årsverk. Krav om nye eller endrede årsrammer i fag forhandles, vanligvis når læreplanene endres.
+    nn: |
+      Kvar skule har ein tidsressurspott til lærarar og skuleleiarar med ein byrdefull undervisningssituasjon. Potten er eit fast tal årsrammetimar per elev. Fordelinga blir drøfta på skulen, og ressursen blir som hovudregel brukt til å redusere undervisninga. Ved semje i fylkeskommunen kan ressursen flyttast mellom skular.
+
+      [Kontaktlærarar](#/begreper/kontaktlaerer) får årsramma for undervisning redusert med minst 28,5 timar (38 skuletimar à 45 minutt). Til rådgiving blir det sett av minst 28,5 timar per påbyrja 25 elevar, og i tillegg 5 prosent av eit årsverk. Krav om nye eller endra årsrammer i fag blir forhandla, vanlegvis når læreplanane blir endra.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "7.3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er tallene for kontaktlærer og rådgiver riktig forklart som 60-minutters timer (28,5) og 45-minutters timer (38)?"
+    - "Bør størrelsen på tidsressurspotten (2¼/3 årsrammetimer per elev) stå i teksten?"
+  stikkord: [tidsressurspott, kontaktlærer, rådgiver, årsrammetimer]
+
+- id: sfs-skoleledelse
+  type: forklaring
+  tittel: { nb: "Punkt 8 Skoleledelse", nn: "Punkt 8 Skuleleiing" }
+  tekst:
+    nb: |
+      Skoleledere har et årsverk på 1687,5 timer, med 37,5 timer per uke i 45 uker. Undervisning som er en del av lederstillingen, legges inn i den ordinære arbeidstiden. Fordelingen av ledelsesoppgaver og undervisning drøftes på skolen.
+
+      Fylkeskommunen fastsetter den samlede ledelsesressursen ved hver skole etter drøfting. Ressursen fra året før er utgangspunktet og et minimum for neste år. Skoleledere skal minst ha den årslønnen de ville vært garantert i en undervisningsstilling. Se også [3.4 Ledere](#/lov/hovedtariffavtalen/hta-ledere) i hovedtariffavtalen.
+    nn: |
+      Skuleleiarar har eit årsverk på 1687,5 timar, med 37,5 timar per veke i 45 veker. Undervisning som er ein del av leiarstillinga, blir lagd inn i den ordinære arbeidstida. Fordelinga av leiingsoppgåver og undervisning blir drøfta på skulen.
+
+      Fylkeskommunen fastset den samla leiingsressursen ved kvar skule etter drøfting. Ressursen frå året før er utgangspunktet og eit minimum for neste år. Skuleleiarar skal minst ha den årsløna dei ville vore garanterte i ei undervisningsstilling. Sjå også [3.4 Leiarar](#/lov/hovedtariffavtalen/hta-ledere) i hovudtariffavtalen.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Avtalen sier at ressursen fra foregående år «må sees som et minimum», men at nye skoler og store endringer vurderes mot sammenlignbare skoler. Er «et minimum for neste år» for bastant?"
+  stikkord: [skoleleder, ledelsesressurs, rektor, avdelingsleder]
+
+- id: sfs-funksjoner
+  type: forklaring
+  tittel: { nb: "Punkt 9.1 Godtgjøring for funksjoner", nn: "Punkt 9.1 Godtgjering for funksjonar" }
+  tekst:
+    nb: |
+      Lærere som får midlertidige funksjoner, kan få et kronetillegg så lenge de har funksjonen. Tillegget forhandles, og forhandlingene kan delegeres til skolene. Kontaktlærere og rådgivere skal ha minst 12 000 kroner i året. Godtgjøring for lokale funksjoner fastsettes lokalt.
+
+      Ved uenighet om nye eller endrede funksjoner gjelder arbeidsgiverens siste tilbud. Bytter funksjonen innehaver uten andre endringer, videreføres godtgjøringen. Tilleggene er pensjonsgivende. Se også [funksjonsgodtgjøring](#/begreper/funksjonsgodtgjoring).
+    nn: |
+      Lærarar som får mellombelse funksjonar, kan få eit kronetillegg så lenge dei har funksjonen. Tillegget blir forhandla, og forhandlingane kan delegerast til skulane. Kontaktlærarar og rådgivarar skal ha minst 12 000 kroner i året. Godtgjering for lokale funksjonar blir fastsett lokalt.
+
+      Ved usemje om nye eller endra funksjonar gjeld det siste tilbodet frå arbeidsgivaren. Byter funksjonen innehavar utan andre endringar, blir godtgjeringa vidareført. Tillegga er pensjonsgivande. Sjå også [funksjonsgodtgjering](#/begreper/funksjonsgodtgjoring).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "9.1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teksten nevner ikke regelen om at tillegg fra lokale forhandlinger regnes inn i grunnlønnen når en funksjon legges ned. Bør den stå?"
+  stikkord: [funksjonstillegg, kontaktlærertillegg, rådgiver, 12 000 kroner]
+
+- id: sfs-diverse
+  type: forklaring
+  tittel: { nb: "Punkt 9.2–9.4 Stillingsvern, lønn og trekk", nn: "Punkt 9.2–9.4 Stillingsvern, lønn og trekk" }
+  tekst:
+    nb: |
+      Ansatte i videregående som hadde uoppsigelig stilling 1.8.1999, kan ikke sies opp, men må gå over i en annen stilling hvis skolen legges ned eller omorganiseres. De beholder lønnen.
+
+      Lønnen utbetales den 12. i måneden, hvis ikke noe annet er bestemt. Den som er ansatt i en måned eller mindre, får timelønn. Den som er ansatt lenger, får månedslønn. Ved fravær trekkes lønn ut fra stillingsstørrelsen og antall dager, og ved kortere fravær trekkes timelønn for tiden i arbeidsplanen.
+    nn: |
+      Tilsette i vidaregåande som hadde uoppseieleg stilling 1.8.1999, kan ikkje seiast opp, men må gå over i ei anna stilling dersom skulen blir lagd ned eller omorganisert. Dei held på lønna.
+
+      Lønna blir utbetalt den 12. i månaden, dersom ikkje noko anna er bestemt. Den som er tilsett i ein månad eller mindre, får timelønn. Den som er tilsett lenger, får månadsløn. Ved fråvær blir det trekt lønn ut frå stillingsstorleiken og talet på dagar, og ved kortare fråvær blir det trekt timelønn for tida i arbeidsplanen.
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "9.2–9.4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det fortsatt nyttig å nevne stillingsvernet fra 1999, eller gjelder det så få at det kan tas ut?"
+  stikkord: [stillingsvern, lønnsutbetaling, timelønn, lønnstrekk]
+
+- id: sfs-arsrammer
+  type: forklaring
+  tittel: { nb: "Vedlegg 1 Årsrammer for undervisning", nn: "Vedlegg 1 Årsrammer for undervisning" }
+  tekst:
+    nb: |
+      Vedlegg 1 har [årsrammene](#/begreper/arsramme) for undervisning per fag og trinn, i 60- og 45-minutters enheter. Årsrammen er antall timer undervisning i faget som utgjør en full stilling. Årsrammene kan endres ved partsenighet.
+
+      Årsrammene for videregående brukes i [Beskjeftigelse](#/arbeidstid/beskjeftigelse) og [Arbeidsplan](#/arbeidstid/arbeidsplan), og står for hvert fag i [Fag og læreplaner](#/fag).
+    nn: |
+      Vedlegg 1 har [årsrammene](#/begreper/arsramme) for undervisning per fag og trinn, i 60- og 45-minutts einingar. Årsramma er talet på timar undervisning i faget som utgjer ei full stilling. Årsrammene kan endrast ved partssemje.
+
+      Årsrammene for vidaregåande blir brukte i [Beskjeftigelse](#/arbeidstid/beskjeftigelse) og [Arbeidsplan](#/arbeidstid/arbeidsplan), og står for kvart fag i [Fag og læreplanar](#/fag).
+  kilder:
+    - { id: ks-sfs2213-avtaletekst, punkt: "Vedlegg 1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står årsrammen for hvert fag på fagarket i Fag og læreplaner, slik teksten sier?"
+  stikkord: [årsramme, vedlegg 1, undervisningstid, beskjeftigelse]

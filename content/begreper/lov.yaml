@@ -1,0 +1,84 @@
+# Begreper om lov og forskrift: lov, forskrift, lokal forskrift, paragraf og ledd og enkeltvedtak (fase 3,
+# avgjørelse 039). Bygger på forvaltningsloven § 2, opplæringslova og Udirs side om lokale forskrifter. Egne ord.
+- id: lov
+  type: begrep
+  tittel: { nb: Lov, nn: Lov }
+  tekst:
+    nb: En lov er regler som Stortinget har vedtatt. Opplæringslova og forvaltningsloven er lover. Lovene gir de viktigste rettighetene og pliktene, og gir ofte departementet eller Kongen myndighet til å gi mer detaljerte regler i forskrift, for eksempel om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitlene som gjelder videregående opplæring.
+    nn: Ei lov er reglar som Stortinget har vedteke. Opplæringslova og forvaltningsloven er lover. Lovene gir dei viktigaste rettane og pliktene, og gir ofte departementet eller Kongen mynde til å gi meir detaljerte reglar i forskrift, til dømes om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitla som gjeld vidaregåande opplæring.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 1-6 Fag- og timefordeling og tilbodsstruktur (døme på at departementet gir forskrift)", url: "https://lovdata.no/lov/2023-06-09-30/§1-6" }
+    - { id: opplaeringslova, punkt: "§ 5-4 Innhald, vurdering og dokumentasjon i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§5-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Lovene gir de viktigste rettighetene og pliktene» en dekkende og ikke misvisende forenkling av forholdet mellom lov og forskrift?"
+    - "Bør begrepet nevne Grunnloven, eller er det unødvendig for brukerne av appen?"
+  stikkord: [Stortinget, opplæringslova, opplæringsloven, forvaltningsloven, hjemmel, heimel]
+  relatert: [forskrift, paragraf, lokal-forskrift]
+
+- id: forskrift
+  type: begrep
+  tittel: { nb: Forskrift, nn: Forskrift }
+  tekst:
+    nb: En forskrift er regler som et forvaltningsorgan gir med hjemmel i en lov, og som gjelder for et ubestemt antall personer, for eksempel alle elever i videregående opplæring. Forvaltningsloven § 2 definerer forskrift. Opplæringsforskrifta er gitt av Kunnskapsdepartementet med hjemmel i opplæringslova, og har blant annet reglene om inntak, vurdering og eksamen. Læreplanverket har også status som forskrift. Sentrale forskrifter gjelder i hele landet, mens lokale forskrifter gjelder i en kommune eller et fylke.
+    nn: Ei forskrift er reglar som eit forvaltningsorgan gir med heimel i ei lov, og som gjeld for eit ubestemt tal personar, til dømes alle elevar i vidaregåande opplæring. Forvaltningsloven § 2 definerer forskrift. Opplæringsforskrifta er gitt av Kunnskapsdepartementet med heimel i opplæringslova, og har mellom anna reglane om inntak, vurdering og eksamen. Læreplanverket har også status som forskrift. Sentrale forskrifter gjeld i heile landet, medan lokale forskrifter gjeld i ein kommune eller eit fylke.
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 2 første ledd bokstav c (forskrift)", url: "https://lovdata.no/lov/1967-02-10/§2" }
+    - { id: opplaeringsforskrifta, punkt: "Innleiinga (heimel og kven som har fastsett forskrifta)", url: "https://lovdata.no/forskrift/2024-06-03-900" }
+    - { id: udir-lokale-forskrifter, punkt: "Hva er en lokal forskrift?", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at opplæringsforskrifta er gitt av Kunnskapsdepartementet, eller bør det stå at den er fastsatt ved kongelig resolusjon eller av departementet etter delegering?"
+    - "Er «for et ubestemt antall personer» en forståelig omskriving av «et ubestemt antall eller en ubestemt krets av personer» i forvaltningsloven § 2?"
+  stikkord: [opplæringsforskrifta, opplæringsforskriften, sentral forskrift, hjemmel, heimel, Lovdata]
+  relatert: [lov, lokal-forskrift, laereplanverket, paragraf]
+
+- id: lokal-forskrift
+  type: begrep
+  tittel: { nb: Lokal forskrift, nn: Lokal forskrift }
+  tekst:
+    nb: En lokal forskrift er en forskrift som en kommune eller fylkeskommune gir, og som gjelder der. Fylkeskommunen skal blant annet gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjøres i Norsk Lovtidend og står på Lovdata, men de er ikke med i Lovdatas gratis datasett. Appen henter dem derfor fra siden hos Lovdata og viser dem under Regelverk for dem som har valgt fylket.
+    nn: Ei lokal forskrift er ei forskrift som ein kommune eller fylkeskommune gir, og som gjeld der. Fylkeskommunen skal mellom anna gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjerast i Norsk Lovtidend og står på Lovdata, men dei er ikkje med i det gratis datasettet til Lovdata. Appen hentar dei difor frå sida hos Lovdata og viser dei under Regelverk for dei som har valt fylket.
+  kilder:
+    - { id: udir-lokale-forskrifter, punkt: "På hvilke områder må kommunene og fylkeskommunene fastsette forskrift?", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/" }
+    - { id: opplaeringslova, punkt: "§ 10-7 Skolereglar", url: "https://lovdata.no/lov/2023-06-09-30/§10-7" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-5 Lokal forskrift om inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir nevner også hovedmål for hver skole. Er listen over lokale forskrifter fylkeskommunen skal gi (skolereglar, skolerute, inntak og formidling), dekkende for videregående opplæring?"
+    - "Er det greit at lokale forskrifter bare vises for dem som har valgt fylket, og at de hentes fra Lovdata fire ganger i året?"
+  stikkord: [skolereglar, skoleregler, inntaksforskrift, ordensreglement, Lovtidend, kunngjøring]
+  relatert: [forskrift, lov]
+
+- id: paragraf
+  type: begrep
+  tittel: { nb: Paragraf og ledd, nn: Paragraf og ledd }
+  tekst:
+    nb: Lover og forskrifter er delt i kapitler og paragrafer, skrevet med tegnet §. I opplæringslova og opplæringsforskrifta har paragrafene kapittelnummeret først, så § 11-1 er første paragraf i kapittel 11. Et ledd er et avsnitt i en paragraf, og leddene telles ovenfra, så «§ 5-1 første ledd» er første avsnitt i § 5-1. Lister i et ledd har bokstaver eller tall, for eksempel «bokstav a». Det samme nummeret kan finnes i både loven og forskriften, så det er lurt å skrive hvilken av dem man viser til.
+    nn: Lover og forskrifter er delte i kapittel og paragrafar, skrivne med teiknet §. I opplæringslova og opplæringsforskrifta har paragrafane kapittelnummeret først, så § 11-1 er første paragraf i kapittel 11. Eit ledd er eit avsnitt i ein paragraf, og ledda blir talde ovanfrå, så «§ 5-1 første ledd» er første avsnitt i § 5-1. Lister i eit ledd har bokstavar eller tal, til dømes «bokstav a». Same nummeret kan finnast i både lova og forskrifta, så det er lurt å skrive kva for ei av dei ein viser til.
+  kilder:
+    - { id: opplaeringslova, punkt: "Kapittel 11 Tilpassa opplæring og individuell tilrettelegging (§ 11-1)", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-1 Kven som har rett til vidaregåande opplæring (ledd og bokstavar)", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er forklaringen av hvordan ledd telles (avsnittene i paragrafen, ovenfra) riktig også når et ledd har en liste?"
+  stikkord: [§, paragraftegn, ledd, bokstav, kapittel, nummer]
+  relatert: [lov, forskrift]
+
+- id: enkeltvedtak
+  type: begrep
+  tittel: { nb: Enkeltvedtak, nn: Enkeltvedtak }
+  tekst:
+    nb: Et enkeltvedtak er en avgjørelse som gjelder rettighetene eller pliktene til en eller flere bestemte personer, for eksempel et vedtak om individuelt tilrettelagt opplæring, inntak, fritak eller bortvisning. Forvaltningsloven gir regler for hvordan saken skal forberedes, hvordan vedtaket skal grunngis, og retten til å klage. Klagefristen er som hovedregel tre uker fra eleven og foreldrene fikk vite om vedtaket. Opplæringslova og opplæringsforskrifta har egne regler i tillegg for noen saker, for eksempel klage på karakterer.
+    nn: Eit enkeltvedtak er ei avgjerd som gjeld rettane eller pliktene til ein eller fleire bestemte personar, til dømes eit vedtak om individuelt tilrettelagd opplæring, inntak, fritak eller bortvising. Forvaltningsloven gir reglar for korleis saka skal førebuast, korleis vedtaket skal grunngivast, og retten til å klage. Klagefristen er som hovudregel tre veker frå eleven og foreldra fekk vite om vedtaket. Opplæringslova og opplæringsforskrifta har eigne reglar i tillegg for nokre saker, til dømes klage på karakterar.
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 2 første ledd bokstav b (enkeltvedtak)", url: "https://lovdata.no/lov/1967-02-10/§2" }
+    - { id: forvaltningsloven, punkt: "§ 28 og § 29 (klage og klagefrist)", url: "https://lovdata.no/lov/1967-02-10/§29" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "Klage på vedtaket", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/" }
+    - { id: opplaeringsforskrifta, punkt: "Kapittel 10 Klage på sluttvurderingar", url: "https://lovdata.no/forskrift/2024-06-03-900/kap10" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene (individuelt tilrettelagt opplæring, inntak, fritak og bortvisning) riktige og nyttige for videregående?"
+    - "Er «tre uker fra eleven og foreldrene fikk vite om vedtaket» riktig gjengitt for elever over 18 år, der foreldrene ikke er part?"
+  stikkord: [vedtak, klage, klagefrist, forvaltningsloven, partsrettigheter, grunngiving]
+  relatert: [lov, forskrift]

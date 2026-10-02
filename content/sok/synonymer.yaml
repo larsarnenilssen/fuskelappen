@@ -47,3 +47,15 @@ grupper:
   - { kanonisk: livsmestring, varianter: [livsmeistring] }
   - { kanonisk: bærekraftig, varianter: [berekraftig] }
   - { kanonisk: medborgerskap, varianter: [medborgarskap] }
+  # Lov og forskrift (fase 3, avgjørelse 039). Endelser som -lig/-leg og -het/-heit byttes av søket selv.
+  - { kanonisk: hva, varianter: [kva] }
+  - { kanonisk: hvem, varianter: [kven] }
+  - { kanonisk: noen, varianter: [nokon] }
+  - { kanonisk: sammen, varianter: [saman] }
+  - { kanonisk: mye, varianter: [mykje] }
+  - { kanonisk: eier, varianter: [eigar] }
+  - { kanonisk: muntlig, varianter: [munnleg] }
+  - { kanonisk: tjeneste, varianter: [teneste] }
+  - { kanonisk: taushetsplikt, varianter: [teieplikt] }
+  - { kanonisk: begrunnelse, varianter: [grunngiving] }
+  - { kanonisk: bolig, varianter: [bustad] }

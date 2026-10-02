@@ -2,7 +2,7 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import type { Flerspraak, Synonymer } from '../innhold/skjema.ts';
 
-export type Sokeoppforingstype = 'modul' | 'funksjon' | 'begrep' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'side';
+export type Sokeoppforingstype = 'modul' | 'funksjon' | 'begrep' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'lov' | 'side';
 
 export interface Sokeoppforing {
   id: string;

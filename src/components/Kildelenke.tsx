@@ -2,6 +2,7 @@
 import kilderegister from '../../content/kilder.yaml';
 import { type T, useTekst } from '../app/tilstand.ts';
 import type { KildeRef, Kilderegister } from '../core/innhold/skjema.ts';
+import { useLovlenke } from '../modules/lov/lenker.ts';
 import { Ikon } from './Ikon.tsx';
 
 const kilder = new Map((kilderegister as Kilderegister).kilder.map((k) => [k.id, k]));
@@ -21,6 +22,8 @@ export function kildeTekst(t: T, kilde: KildeRef): { navn: string; punkt: string
 export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   const { t } = useTekst();
   const { navn, punkt, url } = kildeTekst(t, kilde);
+  // En paragraf hos Lovdata som også står i Lov og forskrift, får en lenke dit i tillegg (eier 02.10.2026).
+  const iAppen = useLovlenke(url);
   if (!url) {
     return (
       <span class="kildelenke">
@@ -31,12 +34,22 @@ export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   }
   const nettsted = new URL(url).hostname.replace(/^www\./, '');
   return (
-    <a class="kildelenke" href={url} target="_blank" rel="noopener noreferrer">
-      {navn}
-      {punkt}
-      <Ikon navn="ekstern" class="ikon-liten" />
-      <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted })}</span>
-    </a>
+    <>
+      <a class="kildelenke" href={url} target="_blank" rel="noopener noreferrer">
+        {navn}
+        {punkt}
+        <Ikon navn="ekstern" class="ikon-liten" />
+        <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted })}</span>
+      </a>
+      {iAppen && (
+        <>
+          {' · '}
+          <a class="kildelenke" href={`#${iAppen}`}>
+            {t('komponenter.kilde.iAppen')}
+          </a>
+        </>
+      )}
+    </>
   );
 }
 

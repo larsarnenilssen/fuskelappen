@@ -1,0 +1,313 @@
+// Henter lovene og forskriftene i content/lovverk.yaml fra Lovdatas gratis datasett (NLOD 2.0) til data/lovdata/
+// (fase 3, avgjørelse 039). Kjøres hver uke av kildesjekken, sammen med Grep og overordnet del. Lovdata kan bare nås
+// fra GitHub Actions, ikke fra utviklingsmiljøet.
+//
+// - Datasettene (gjeldende lover og gjeldende sentrale forskrifter) lastes ned én gang og pakkes ut med systemets tar.
+// - Lokale forskrifter (f.eks. Vestland fylkeskommune) finnes ikke i datasettene. De hentes fra siden hos Lovdata, én side
+//   per forskrift, og bare hver 13. uke (intervall_uker i content/lovverk.yaml), av hensyn til Lovdata (eier 02.10.2026).
+//   Mellom hentingene beholdes forrige henting. Første gang, og med --alle, hentes de uansett.
+// - Hvert dokument leses med scripts/lovdata/les.ts og valideres. Feiler et dokument, beholdes forrige fil for det,
+//   og de andre hentes som vanlig. Skriptet avslutter da med feil, så kildesjekken sier fra.
+// - Endrede, nye og fjernede paragrafer lagres i .generert/lovdata-endringer.json, som kildesjekken tar med i
+//   kontrollsaken. Teksten er lov- og forskriftstekst og vises uendret i appen.
+//
+// Bruk: npm run hent:lovdata [-- --fra=<mappe>] [-- --alle]
+//   --fra leser filene fra en mappe i stedet for å laste ned (filnavn som i datasettet, f.eks. nl-20230609-030.xml,
+//         og for lokale forskrifter lf-20200929-3380.html).
+//   --alle henter også de lokale forskriftene som ikke skal hentes denne uken.
+import { execFileSync } from 'node:child_process';
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import type { Kilderegister } from '../src/core/innhold/skjema.ts';
+import {
+  alleParagrafer,
+  alleSeksjoner,
+  kapittelliste,
+  type Ledd,
+  type Lovdokument,
+  lovdokumentSkjema,
+  type Lovoversikt,
+  lovoversiktSkjema,
+  type Lovutvalg,
+  type Paragraf,
+  type Seksjon,
+  type Segment,
+} from '../src/modules/lov/skjema.ts';
+import { lesFil } from './innhold/last.ts';
+import { USER_AGENT } from './kilder/metoder.ts';
+import { datasettnavn, lesLovdokument } from './lovdata/les.ts';
+import { lesLovdataside } from './lovdata/side.ts';
+
+const rot = fileURLToPath(new URL('..', import.meta.url));
+const MAPPE = join(rot, 'data/lovdata');
+const DATASETT = {
+  lov: 'https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2',
+  forskrift: 'https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2',
+} as const;
+/** Faller antallet paragrafer i et dokument med mer enn dette, beholdes forrige henting (noe kan ha gått galt). */
+const MAKS_FALL = 0.2;
+
+/** Laster ned og pakker ut et datasett. Gir mappen filene ligger i. */
+async function hentDatasett(url: string): Promise<string> {
+  let feil: unknown;
+  for (let forsok = 1; forsok <= 3; forsok++) {
+    try {
+      const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(300_000) });
+      if (!svar.ok) throw new Error(`${url} svarte ${svar.status} ${svar.statusText}`);
+      const mappe = mkdtempSync(join(tmpdir(), 'lovdata-'));
+      const fil = join(mappe, 'datasett.tar.bz2');
+      writeFileSync(fil, Buffer.from(await svar.arrayBuffer()));
+      execFileSync('tar', ['-xjf', fil, '-C', mappe], { maxBuffer: 256 * 1024 * 1024 });
+      return mappe;
+    } catch (e) {
+      feil = e;
+      await new Promise((r) => setTimeout(r, 5000 * forsok));
+    }
+  }
+  throw feil;
+}
+
+/** Standard for intervall_uker: lokale forskrifter hentes i uke 13, 26, 39 og 52. */
+const INTERVALL_UKER = 13;
+
+/** Ukenummeret etter ISO 8601 (uke 1 er uken med årets første torsdag). */
+export function ukenummer(dato: Date): number {
+  const d = new Date(Date.UTC(dato.getUTCFullYear(), dato.getUTCMonth(), dato.getUTCDate()));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  const forste = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  return Math.ceil(((d.getTime() - forste.getTime()) / 86_400_000 + 1) / 7);
+}
+
+/**
+ * En lokal forskrift hos Lovdata: «https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380» gir adressen
+ * «forskrift/2020-09-29-3380» og filnavnet «lf-20200929-3380.html». Andre adresser gir null (de står i datasettene).
+ */
+export function lokalForskrift(url: string): { refid: string; fil: string } | null {
+  const m = /lovdata\.no\/dokument\/LF\/forskrift\/((\d{4})-(\d{2})-(\d{2})-(\d+))\/?$/.exec(url);
+  return m ? { refid: `forskrift/${m[1]}`, fil: `lf-${m[2]}${m[3]}${m[4]}-${m[5]}.html` } : null;
+}
+
+/** Henter siden til en lokal forskrift hos Lovdata. Ett nytt forsøk etter et halvt minutt. */
+async function hentSide(url: string): Promise<string> {
+  let feil: unknown;
+  for (let forsok = 1; forsok <= 2; forsok++) {
+    try {
+      const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' }, signal: AbortSignal.timeout(60_000) });
+      if (!svar.ok) throw new Error(`${url} svarte ${svar.status} ${svar.statusText}`);
+      return await svar.text();
+    } catch (e) {
+      feil = e;
+      if (forsok < 2) await new Promise((r) => setTimeout(r, 30_000));
+    }
+  }
+  throw feil;
+}
+
+/** Finner filen til et dokument (f.eks. nl-20230609-030.xml) i en mappe med undermapper. */
+function finnFil(mappe: string, navn: string): string | null {
+  for (const n of readdirSync(mappe, { withFileTypes: true })) {
+    const sti = join(mappe, n.name);
+    if (n.isDirectory()) {
+      const treff = finnFil(sti, navn);
+      if (treff) return treff;
+    } else if (n.name === `${navn}.xml` || n.name.startsWith(`${navn}.`)) return sti;
+  }
+  return null;
+}
+
+/** JSON uten lenkene i appen, til sammenligning av tekst. */
+const utenAppLenker = (json: string) => json.replace(/,"a":"[^"]*"/g, '');
+
+const paragrafnavn = (p: Paragraf) => `${p.visNr}${p.tittel ? ` ${p.tittel}` : ''}`;
+
+/** Endringene i et dokument mellom to hentinger, én linje per paragraf. */
+export function sammenlignLovdokument(gammel: Lovdokument, ny: Lovdokument): string[] {
+  const g = new Map(alleParagrafer(gammel.seksjoner).map(({ paragraf }) => [paragraf.nr, paragraf]));
+  const n = new Map(alleParagrafer(ny.seksjoner).map(({ paragraf }) => [paragraf.nr, paragraf]));
+  // Lenkene i appen (`a`) settes av hentingen og er ikke en endring i teksten.
+  const innhold = (p: Paragraf) => utenAppLenker(JSON.stringify([p.tittel, p.ledd, p.fotnoter]));
+  const kapitler = (d: Lovdokument) => alleSeksjoner(d.seksjoner).map((s) => s.overskrift);
+  const gk = new Set(kapitler(gammel));
+  const nk = new Set(kapitler(ny));
+  return [
+    ...[...nk].filter((k) => !gk.has(k)).map((k) => `Ny eller endret overskrift: ${k}`),
+    ...[...gk].filter((k) => !nk.has(k)).map((k) => `Overskrift fjernet eller endret: ${k}`),
+    ...[...n.values()].filter((p) => !g.has(p.nr)).map((p) => `Ny paragraf: ${paragrafnavn(p)}`),
+    ...[...g.values()].filter((p) => !n.has(p.nr)).map((p) => `Paragraf fjernet: ${paragrafnavn(p)}`),
+    ...[...n.values()].filter((p) => g.has(p.nr) && innhold(g.get(p.nr) as Paragraf) !== innhold(p)).map((p) => `Endret: ${paragrafnavn(p)}`),
+  ];
+}
+
+/** Sjekker at et dokument er fullstendig nok til å erstatte forrige henting. */
+export function validerLovdokument(ny: Lovdokument, forrige: Lovdokument | null): string[] {
+  const feil: string[] = [];
+  const antall = alleParagrafer(ny.seksjoner).length;
+  if (antall === 0) feil.push('Ingen paragrafer.');
+  if (!ny.refid) feil.push('Mangler adressen hos Lovdata (refid).');
+  const tomme = alleParagrafer(ny.seksjoner).filter(({ paragraf: p }) => p.ledd.length === 0 && p.endringer.length === 0 && !/oppheva|opphevet/i.test(p.tittel));
+  if (tomme.length > 0) feil.push(`Paragrafer uten tekst: ${tomme.map(({ paragraf: p }) => p.visNr).join(', ')}.`);
+  if (forrige) {
+    const fra = alleParagrafer(forrige.seksjoner).length;
+    if (fra > 0 && antall < fra * (1 - MAKS_FALL)) feil.push(`Antallet paragrafer falt fra ${fra} til ${antall}.`);
+  }
+  return feil;
+}
+
+/**
+ * Lenker i teksten som peker på en paragraf i et dokument appen viser, får adressen i appen (`a`), f.eks. fra
+ * opplæringsforskrifta til «opplæringslova § 5-1». Andre lenker går til Lovdata.
+ */
+export function lenkInternt(dokumenter: readonly Lovdokument[]): Lovdokument[] {
+  const paragrafer = new Map(dokumenter.map((d) => [d.refid, { id: d.id, nr: new Set(alleParagrafer(d.seksjoner).map(({ paragraf }) => paragraf.nr)) }]));
+  const lenk = (tekst: Segment[]): Segment[] =>
+    tekst.map((s) => {
+      if (typeof s === 'string' || !('l' in s)) return s;
+      const m = /^((?:lov|forskrift)\/\d{4}-\d{2}-\d{2}(?:-\d+)?)\/§([^/]+)/.exec(s.l);
+      const mal = m ? paragrafer.get(m[1] as string) : undefined;
+      const nr = m?.[2];
+      return mal && nr && mal.nr.has(nr) ? { t: s.t, l: s.l, a: `${mal.id}/${nr}` } : { t: s.t, l: s.l };
+    });
+  const ledd = (l: Ledd): Ledd => ({
+    ...l,
+    tekst: lenk(l.tekst),
+    ...(l.liste ? { liste: l.liste.map((p) => ({ ...p, ledd: p.ledd.map(ledd) })) } : {}),
+    ...(l.etter ? { etter: l.etter.map(lenk) } : {}),
+  });
+  const seksjon = (s: Seksjon): Seksjon => ({
+    ...s,
+    merknader: s.merknader.map(lenk),
+    seksjoner: s.seksjoner.map(seksjon),
+    paragrafer: s.paragrafer.map((p) => ({ ...p, ledd: p.ledd.map(ledd), endringer: p.endringer.map(lenk), fotnoter: p.fotnoter.map((f) => ({ ...f, tekst: lenk(f.tekst) })) })),
+  });
+  return dokumenter.map((d) => ({ ...d, seksjoner: d.seksjoner.map(seksjon) }));
+}
+
+export function lagOversikt(dokumenter: readonly Lovdokument[]): Lovoversikt {
+  return {
+    dokumenter: dokumenter.map((d) => ({
+      id: d.id,
+      kilde: d.kilde,
+      type: d.type,
+      tittel: d.tittel,
+      korttittel: d.korttittel,
+      malform: d.malform,
+      refid: d.refid,
+      gyldighet: d.gyldighet,
+      utvalg: d.utvalg,
+      antallKapitler: alleSeksjoner(d.seksjoner).filter((s) => s.type === 'kapittel').length,
+      antallParagrafer: alleParagrafer(d.seksjoner).length,
+      paragrafer: alleParagrafer(d.seksjoner).map(({ paragraf }) => paragraf.nr),
+    })),
+  };
+}
+
+function lesForrige(id: string): Lovdokument | null {
+  const fil = join(MAPPE, `${id}.json`);
+  if (!existsSync(fil)) return null;
+  try {
+    return lovdokumentSkjema.parse(JSON.parse(readFileSync(fil, 'utf8')));
+  } catch {
+    return null;
+  }
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  const fra = process.argv.find((a) => a.startsWith('--fra='))?.slice('--fra='.length) ?? null;
+  const alle = process.argv.includes('--alle');
+  const uke = ukenummer(new Date());
+  const utvalg = lesFil(rot, join(rot, 'content/lovverk.yaml')) as Lovutvalg;
+  const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
+  const idag = new Date().toISOString().slice(0, 10);
+
+  const oppgaver = utvalg.dokumenter.map((d) => {
+    const kilde = register.kilder.find((k) => k.id === d.kilde);
+    if (!kilde) throw new Error(`${d.id}: kilden ${d.kilde} finnes ikke i content/kilder.yaml.`);
+    const lokal = lokalForskrift(kilde.url);
+    if (lokal) return { d, url: kilde.url, lokal, navn: lokal.fil, type: 'lokal' as const };
+    const navn = datasettnavn(kilde.url);
+    return { d, url: kilde.url, lokal: null, navn, type: navn.startsWith('nl-') ? ('lov' as const) : ('forskrift' as const) };
+  });
+
+  // Datasettene lastes ned bare når de trengs, og bare én gang.
+  const mapper: Partial<Record<'lov' | 'forskrift', string>> = {};
+  const datasettfeil: Partial<Record<'lov' | 'forskrift', string>> = {};
+  for (const type of new Set(oppgaver.flatMap((o) => (o.type === 'lokal' ? [] : [o.type])))) {
+    try {
+      mapper[type] = fra ?? (await hentDatasett(DATASETT[type]));
+    } catch (e) {
+      datasettfeil[type] = `Kunne ikke hente datasettet med ${type === 'lov' ? 'lover' : 'forskrifter'}: ${e instanceof Error ? e.message : String(e)}`;
+    }
+  }
+
+  const resultater: { id: string; kilde: string; endringer: string[]; feil: string | null; forste: boolean }[] = [];
+  const dokumenter: Lovdokument[] = [];
+  for (const { d, url, lokal, navn, type } of oppgaver) {
+    const forrige = lesForrige(d.id);
+    // Lokale forskrifter hentes bare hver intervall_uker. Uken imellom beholdes forrige henting uten å spørre Lovdata.
+    if (lokal && forrige && !alle && !fra && uke % (d.intervall_uker ?? INTERVALL_UKER) !== 0) {
+      dokumenter.push(forrige);
+      resultater.push({ id: d.id, kilde: d.kilde, endringer: [], feil: null, forste: false });
+      console.log(`${d.id}: hentes ikke denne uken (uke ${uke}). Forrige henting beholdes.`);
+      continue;
+    }
+    try {
+      let html: string;
+      if (lokal) {
+        if (fra) {
+          const fil = finnFil(fra, navn.replace(/\.html$/, ''));
+          if (!fil) throw new Error(`Fant ikke ${navn} i ${fra}.`);
+          html = readFileSync(fil, 'utf8');
+        } else html = await hentSide(url);
+        if (process.env.LOVDATA_SIDER) {
+          mkdirSync(process.env.LOVDATA_SIDER, { recursive: true });
+          writeFileSync(join(process.env.LOVDATA_SIDER, navn), html);
+        }
+      } else {
+        const mappe = mapper[type as 'lov' | 'forskrift'];
+        if (!mappe) throw new Error(datasettfeil[type as 'lov' | 'forskrift'] ?? 'Datasettet mangler.');
+        const fil = finnFil(mappe, navn);
+        if (!fil) throw new Error(`Fant ikke ${navn} i datasettet. Er adressen i kilderegisteret riktig?`);
+        html = readFileSync(fil, 'utf8');
+      }
+      const ny = lovdokumentSkjema.parse(
+        (lokal ? lesLovdataside : lesLovdokument)(html, {
+          id: d.id,
+          kilde: d.kilde,
+          kapitler: d.kapitler ? kapittelliste(d.kapitler) : null,
+          korttittel: d.korttittel,
+          malform: d.malform,
+          refid: lokal?.refid,
+          gyldighet: d.gyldighet,
+          hentet: idag,
+        }),
+      );
+      const feil = validerLovdokument(ny, forrige);
+      if (feil.length > 0) throw new Error(`Teksten ser ufullstendig ut, og forrige henting beholdes. ${feil.join(' ')}`);
+      const endringer = forrige ? sammenlignLovdokument(forrige, ny) : [];
+      // Dato for henting endres bare når teksten er endret, så filen ikke endres hver uke.
+      const ut = forrige && endringer.length === 0 && utenAppLenker(JSON.stringify({ ...forrige, hentet: '' })) === utenAppLenker(JSON.stringify({ ...ny, hentet: '' })) ? forrige : ny;
+      dokumenter.push(ut);
+      resultater.push({ id: d.id, kilde: d.kilde, endringer, feil: null, forste: !forrige });
+      console.log(`${d.id}: ${alleParagrafer(ut.seksjoner).length} paragrafer. ${forrige ? `${endringer.length} endringer.` : 'Første henting.'}`);
+    } catch (e) {
+      const melding = e instanceof Error ? e.message : String(e);
+      console.error(`${d.id}: ${melding}`);
+      resultater.push({ id: d.id, kilde: d.kilde, endringer: [], feil: melding, forste: !forrige });
+      if (forrige) dokumenter.push(forrige);
+    }
+  }
+
+  mkdirSync(MAPPE, { recursive: true });
+  for (const d of lenkInternt(dokumenter)) writeFileSync(join(MAPPE, `${d.id}.json`), `${JSON.stringify(d, null, 1)}\n`);
+  // Dokumenter som er tatt ut av utvalget, fjernes.
+  const ider = new Set(utvalg.dokumenter.map((d) => d.id));
+  for (const f of readdirSync(MAPPE)) {
+    if (f.endsWith('.json') && f !== 'oversikt.json' && !ider.has(f.replace(/\.json$/, ''))) rmSync(join(MAPPE, f));
+  }
+  writeFileSync(join(MAPPE, 'oversikt.json'), `${JSON.stringify(lovoversiktSkjema.parse(lagOversikt(dokumenter)), null, 1)}\n`);
+  mkdirSync(join(rot, '.generert'), { recursive: true });
+  writeFileSync(join(rot, '.generert/lovdata-endringer.json'), `${JSON.stringify({ dokumenter: resultater }, null, 2)}\n`);
+  if (resultater.some((r) => r.feil)) process.exit(1);
+}

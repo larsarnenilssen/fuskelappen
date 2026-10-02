@@ -37,7 +37,8 @@ test.describe('modulregister og søk', () => {
     await page.goto('./#/sok');
     const felt = page.getByRole('searchbox');
     await felt.fill('skulebibliotek');
-    await expect(page.getByRole('link', { name: /Skolebibliotek/ })).toBeVisible();
+    // Regelverk har også paragrafer om skolebibliotek, så det er flere treff (0.22.0).
+    await expect(page.getByRole('link', { name: /Skolebibliotek/ }).first()).toBeVisible();
     await felt.fill('skoleskyss');
     await expect(page.getByRole('link', { name: /Skuleskyss/ })).toBeVisible();
   });
@@ -61,7 +62,8 @@ test.describe('modulregister og søk', () => {
     await expect(page.getByRole('link', { name: /Innstillinger/ }).first()).toBeVisible();
     // Også etter at brukeren har skrevet selv: tilbake til det første søket.
     await felt.fill('skolebibliotek');
-    await expect(page.getByRole('link', { name: /Skolebibliotek/ })).toBeVisible();
+    // Regelverk har også paragrafer om skolebibliotek, så det er flere treff (0.22.0).
+    await expect(page.getByRole('link', { name: /Skolebibliotek/ }).first()).toBeVisible();
     await page.goBack();
     await expect(felt).toHaveValue('skule');
     await expect(page.getByRole('link', { name: /Skuleskyss/ })).toBeVisible();

@@ -1,0 +1,104 @@
+# Lov og forskrift (fase 3, avgjørelse 039): dokumentene appen viser, i rekkefølgen på oversikten.
+#
+# Teksten hentes hver uke fra Lovdatas gratis datasett (NLOD 2.0) med npm run hent:lovdata og vises uendret.
+# En ny lov eller sentral forskrift legges til slik:
+#   1. Legg kilden i content/kilder.yaml med type lovdata-datasett, sjekkmetode lovtekst og adressen hos Lovdata
+#      (https://lovdata.no/lov/ÅÅÅÅ-MM-DD-nr eller https://lovdata.no/forskrift/ÅÅÅÅ-MM-DD-nr).
+#   2. Legg en oppføring her med id (adressen i appen), kilde og eventuelt kapitlene som skal med.
+#   3. Kjør kildesjekken (eller hent:lovdata i Actions). Det trengs ingen kodeendring.
+# Kapitler skrives som i teksten: «11», «IV», eller et spenn med arabiske tall: «5-21».
+#
+# Lokale forskrifter (f.eks. fra fylkeskommunen) er ikke med i Lovdatas gratis datasett. De legges til på samme måte,
+# men kilden får type side, niva fylke, fylkesnummer og adressen til siden hos Lovdata
+# (https://lovdata.no/dokument/LF/forskrift/ÅÅÅÅ-MM-DD-nr). Her får oppføringen gyldighet med fylket og malform.
+# Siden hentes bare hver 13. uke (intervall_uker), av hensyn til Lovdata (eier 02.10.2026). Dokumentet vises bare
+# for dem som har valgt fylket.
+dokumenter:
+  - id: opplaeringslova
+    kilde: opplaeringslova
+    kapitler: ['1', '5-21', '23-25', '27-30']
+    merknad: >-
+      Utvalg godkjent av eier 02.10.2026: delene som gjelder videregående opplæring og fagopplæring, tolket vidt.
+      Ikke med: 2–4 (grunnskolen), 22 (privat opplæring) og 26 (kulturskole).
+
+  - id: opplaeringsforskrifta
+    kilde: opplaeringsforskrifta
+    kapitler: ['4-20', '22', '23']
+    merknad: >-
+      Utvalg godkjent av eier 02.10.2026. Ikke med: 1–3 (grunnskolen), 21 (kommunens økonomiske ansvar),
+      24 (iverksetjing) og vedleggene.
+
+  - id: forvaltningsloven
+    kilde: forvaltningsloven
+    kapitler: ['II', 'III', 'IV', 'V', 'VI']
+    merknad: >-
+      Valgt ut fra Udirs regelverkssider, godkjent av eier 02.10.2026: habilitet, alminnelige regler,
+      saksforberedelse ved enkeltvedtak, vedtaket og klage.
+
+  - id: helse-og-miljo
+    kilde: forskrift-helse-miljo-skoler
+    korttittel: Helse og miljø i skoler
+    merknad: >-
+      Valgt ut fra Udirs rundskriv om skolemiljø (det fysiske skolemiljøet, opplæringslova § 12-7), godkjent av
+      eier 02.10.2026. Hele forskriften.
+
+  - id: arbeidsmiljoloven
+    kilde: arbeidsmiljoloven
+    kapitler: ['4', '10', '12', '14', '15']
+    merknad: >-
+      Godkjent av eier 02.10.2026: krav til arbeidsmiljøet (kap. 4), arbeidstid (kap. 10, som SFS 2213 bygger på),
+      permisjoner (kap. 12), ansettelse (kap. 14) og opphør av arbeidsforhold (kap. 15).
+
+  - id: vestland-inntak
+    kilde: vestland-forskrift-inntak
+    korttittel: Inntak og formidling i Vestland
+    malform: nn
+    gyldighet: { niva: fylke, fylke: "46" }
+    merknad: >-
+      Lokal forskrift om inntak og formidling til læreplass i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
+
+  - id: vestland-skulereglar
+    kilde: vestland-forskrift-skulereglar
+    korttittel: Skulereglar i Vestland
+    malform: nn
+    gyldighet: { niva: fylke, fylke: "46" }
+    merknad: >-
+      Skulereglane for dei vidaregåande skolane i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
+
+# Avtaler (eier 02.10.2026): bestemmelsene er skrevet med egne ord i content/lov/, fordi rettighetene til
+# avtaleteksten ikke er avklart. Her står hvilke elementer som hører til hvilket kapittel. Kildejobben sjekker
+# avtaleteksten hver uke, og kontrollsaken viser hvilke elementer en endring kan berøre.
+avtaler:
+  - id: hovedtariffavtalen
+    kilde: ks-hovedtariffavtalen
+    korttittel: { nb: Hovedtariffavtalen, nn: Hovudtariffavtalen }
+    tittel: { nb: Hovedtariffavtalen i KS-området 1.5.2026–30.4.2028, nn: Hovudtariffavtalen i KS-området 1.5.2026–30.4.2028 }
+    kapitler:
+      - overskrift: { nb: Kapittel 1 Fellesbestemmelser, nn: Kapittel 1 Fellesføresegner }
+        elementer: [hta-virkeomrade, hta-ansettelse, hta-oppsigelse, hta-arbeidstid, hta-overtid, hta-ferie, hta-sykdom, hta-ansiennitet, hta-stedfortreder, hta-permisjon]
+      - overskrift: { nb: Kapittel 2 Lærlinger, nn: Kapittel 2 Lærlingar }
+        elementer: [hta-laerlinger]
+      - overskrift: { nb: Kapittel 3 Generelle lønns- og stillingsbestemmelser, nn: Kapittel 3 Generelle lønns- og stillingsføresegner }
+        elementer: [hta-lonnspolitikk, hta-kompetanse, hta-ledere]
+      - overskrift: { nb: Kapittel 4 og 5 Lønnsbestemmelser og forhandlinger, nn: Kapittel 4 og 5 Lønnsføresegner og forhandlingar }
+        elementer: [hta-sentral-lonn, hta-forhandlinger]
+      - overskrift: { nb: Vedlegg 2 Undervisningspersonalet, nn: Vedlegg 2 Undervisningspersonalet }
+        elementer: [hta-vedlegg2]
+    merknad: >-
+      Valgt av eier 02.10.2026. Bestemmelsene som gjelder skoleledere og lærere i videregående.
+
+  - id: sfs2213
+    kilde: ks-sfs2213-avtaletekst
+    korttittel: { nb: SFS 2213 Arbeidstid for lærere, nn: SFS 2213 Arbeidstid for lærarar }
+    tittel: { nb: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, nn: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet }
+    kapitler:
+      - overskrift: { nb: Arbeidsåret og arbeidstiden, nn: Arbeidsåret og arbeidstida }
+        elementer: [sfs-omfang, sfs-arbeidsaret, sfs-arbeidstid, sfs-oversikt, sfs-andre-oppgaver]
+      - overskrift: { nb: Livsfasetiltak og tidsressurser, nn: Livsfasetiltak og tidsressursar }
+        elementer: [sfs-livsfasetiltak, sfs-tidsressurser]
+      - overskrift: { nb: Skoleledelse og andre bestemmelser, nn: Skuleleiing og andre føresegner }
+        elementer: [sfs-skoleledelse, sfs-funksjoner, sfs-diverse]
+      - overskrift: { nb: Vedlegg 1 Årsrammer, nn: Vedlegg 1 Årsrammer }
+        elementer: [sfs-arsrammer]
+    merknad: >-
+      Valgt av eier 02.10.2026. Bestemmelsene for videregående opplæring.

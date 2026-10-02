@@ -14,7 +14,7 @@ function yamlFiler(mappe: string): string[] {
   });
 }
 
-const SPESIELLE = new Set(['content/kilder.yaml', 'content/fylker.yaml', 'content/sok/synonymer.yaml', 'content/kontroll/praksis.yaml']);
+const SPESIELLE = new Set(['content/kilder.yaml', 'content/fylker.yaml', 'content/sok/synonymer.yaml', 'content/kontroll/praksis.yaml', 'content/lovverk.yaml']);
 
 /** Alle regelsett under rules/, med delene slått sammen. */
 export function lesRegelsett(rot: string): Regelsett[] {

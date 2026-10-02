@@ -3,6 +3,7 @@
 import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
+import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 
 export const nb = {
@@ -64,6 +65,7 @@ export const nb = {
       fag: 'Fag',
       tilbud: 'Tilbud',
       laereplanverk: 'Overordnet del',
+      lov: 'Regelverk',
       side: 'Side',
     },
   },
@@ -240,6 +242,7 @@ export const nb = {
     kilde: {
       punkt: 'punkt {punkt}',
       ukjent: 'Ukjent kilde',
+      iAppen: 'Les i appen',
     },
   },
   oppdatering: {
@@ -261,6 +264,10 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper.',
     },
+    lov: {
+      navn: 'Regelverk',
+      beskrivelse: 'Lov, forskrift og avtaler.',
+    },
     fag: {
       navn: 'Fag og læreplaner',
       beskrivelse: 'Kompetansemål, vurdering og timer.',
@@ -274,6 +281,7 @@ export const nb = {
   fag: fagNb,
   opplaeringslop: opplaeringslopNb,
   laereplanverket: laereplanverketNb,
+  lov: lovNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',

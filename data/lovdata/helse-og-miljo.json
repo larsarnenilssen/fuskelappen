@@ -1,0 +1,687 @@
+{
+ "id": "helse-og-miljo",
+ "kilde": "forskrift-helse-miljo-skoler",
+ "type": "forskrift",
+ "tittel": "Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger",
+ "korttittel": "Helse og miljø i skoler",
+ "malform": "nb",
+ "refid": "forskrift/2023-03-28-449",
+ "sistEndret": null,
+ "hentet": "2026-10-02",
+ "gyldighet": {
+  "niva": "nasjonal"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Innledende bestemmelser",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å bidra til at miljøet i barnehager, på skoler, skolefritidsordninger og leksehjelpordninger fremmer barns og elevers helse, trivsel, lek og læring, samt at sykdom, skade og alvorlige hendelser forebygges."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for planlegging, tilrettelegging og drift av"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "barnehager"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "grunnskoler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "videregående skoler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "skolefritidsordninger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "leksehjelpordninger i tilknytning til skolevirksomhet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "andre virksomheter, herunder barnepassvirksomheter og barneparker, som mot godtgjøring gir tilsyn med og omsorg for barn under skolepliktig alder, når virksomheten er regelmessig og tilbyr en ukentlig oppholdstid på mer enn ti timer og der tre eller flere barn er til stede samtidig."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Ansvar for virksomhetens plikter etter forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomhetens eier har ansvar for at kravene i forskriften blir oppfylt, herunder å stille til rådighet de ressursene som er nødvendige for at kravene skal kunne oppfylles. For skoler godkjent etter ",
+        {
+         "t": "privatskoleloven",
+         "l": "lov/2003-07-04-84"
+        },
+        " er det skolens styre som har ansvaret etter første punktum. For private grunnskoler godkjent etter ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " er det skolens ledelse som har ansvaret."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Miljø- og helsekrav til virksomheter",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Helsemessig tilfredsstillende virksomhet",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal drives på en helsemessig tilfredsstillende måte. Virksomhetens fysiske miljø skal være forsvarlig ut fra en vurdering av faktorer i miljøet som kan påvirke barns og elevers helse, trivsel, lek og læring. Dersom forhold knyttet til enkeltfaktorer i miljøet avviker fra faglige normer må virksomheten kunne dokumentere at det fysiske miljøet likevel er tilfredsstillende."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens lokaler og uteområder skal være utformet slik at de fremmer helse, trivsel, lek og læring for alle barn og elever. Behovene til barn og elever med funksjonsnedsettelse skal ivaretas. Lokaler og uteområder skal kunne dekke behov for aktivitet og hvile, og forebygge sykdom, skader, ulykker, overgrep og andre alvorlige hendelser."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Beliggenhet",
+     "ledd": [
+      {
+       "tekst": [
+        "Den som planlegger drift av virksomhet omfattet av forskriftens virkeområde skal ved valg av beliggenhet for virksomheten ta hensyn til risikoforhold som blant annet trafikk, luftforurensning, støy, klima og områdets utforming slik at virksomhetens miljø til enhver tid er helsemessig forsvarlig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Inneklima",
+     "ledd": [
+      {
+       "tekst": [
+        "Inneklimaet, herunder temperatur, fuktighet, trekk, luftkvalitet, lukt, stråling og beskyttelse mot giftige eller helsefarlige stoffer, skal være helsemessig tilfredsstillende."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Lysforhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomhetens lokaler skal ha helsemessig tilfredsstillende dagslys og utsyn, med mindre det for deler av lokalene av åpenbare grunner ikke er ønskelig eller nødvendig."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens lokaler og uteområder skal ha en tilfredsstillende belysning som er tilpasset planlagt bruk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Lydforhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomhetens lokaler og uteområder skal være helsemessig tilfredsstillende utformet og innredet slik at barn og elever er beskyttet mot støy og slik at deres oppmerksomhet ikke svekkes eller samtale vanskeliggjøres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Måltider og spisetid",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal sørge for gode rammer for måltider som ivaretar måltidets sosiale funksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomheten skal sørge for at barn og elever får tilstrekkelig tid og ro til å spise. Spisetiden bør være minimum på 30 minutter i barnehagen og minimum 20 minutter i skolen og skolefritidsordninger."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Drikkevann",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal være tilkoblet et vannforsyningssystem som leverer drikkevann i samsvar med ",
+        {
+         "t": "drikkevannsforskriftens",
+         "l": "forskrift/2016-12-22-1868"
+        },
+        " krav."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Sanitære anlegg",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomhetens sanitære anlegg skal ha tilfredsstillende standard, utforming, og kapasitet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "12",
+     "visNr": "§ 12",
+     "tittel": "Rengjøring og avfallshåndtering",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomhetens utforming og innredning skal være tilrettelagt for tilfredsstillende renhold og avfallshåndtering."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens lokaler, uteområder og tekniske anlegg skal ha forsvarlig renhold. Områder som ikke er tilgjengelige for daglig renhold skal rengjøres jevnlig og ved behov."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens avfall skal håndteres og oppbevares slik at smittespredning og sjenerende lukt unngås."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "13",
+     "visNr": "§ 13",
+     "tittel": "Smittevern",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal planlegges, tilrettelegges og drives slik at risikoen for spredning av smittsomme sykdommer er så liten som praktisk mulig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14",
+     "visNr": "§ 14",
+     "tittel": "Beredskap, førstehjelp og sikkerhetsutstyr",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal ha planer og rutiner for å forebygge og håndtere skader, ulykker, overgrep og andre alvorlige hendelser. Rutinene skal være kjent for virksomhetens ansatte, barn og elever."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens ansatte skal ha tilstrekkelig opplæring i og kunnskap om hvordan førstehjelp ytes."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomheten skal ha førstehjelpsutstyr og annet sikkerhetsutstyr for håndtering av ulykkes- og faresituasjoner. Utstyret skal være forsvarlig plassert."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomhetens ansatte, barn og elever skal være kjent med hvor førstehjelps- og sikkerhetsutstyret er plassert og skal ha tilpasset opplæring i bruk av utstyret."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Godkjenning, internkontroll, tilsyn og klage mv.",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "15",
+     "visNr": "§ 15",
+     "tittel": "Godkjenning av virksomhet",
+     "ledd": [
+      {
+       "tekst": [
+        "Før oppstart av driften skal virksomheten være godkjent av kommunen. Søknad skal fremlegges for kommunen når det foreligger plan for etablering, utvidelse eller endring av virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "Godkjenningssøknad skal inneholde dokumentasjon på hvordan virksomheten skal etableres, bygges og drives i samsvar med forskriften."
+       ]
+      },
+      {
+       "tekst": [
+        "For søknad om godkjenning av private virksomheter uten offentlig støtte, skal saksbehandlingsfrist som nevnt i ",
+        {
+         "t": "tjenesteloven § 11",
+         "l": "lov/2009-06-19-103/§11"
+        },
+        " første ledd første punktum, være fire måneder. ",
+        {
+         "t": "Tjenesteloven § 11",
+         "l": "lov/2009-06-19-103/§11"
+        },
+        " annet ledd om at tillatelse anses gitt når saksbehandlingsfristen er utløpt, gjelder ikke for godkjenning etter denne forskriften."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "16",
+     "visNr": "§ 16",
+     "tittel": "Vedlikeholdsplan",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal ha en oppdatert og langsiktig vedlikeholdsplan som sikrer at virksomhetens lokaler og uteområder vedlikeholdes på en helsemessig tilfredsstillende måte."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "17",
+     "visNr": "§ 17",
+     "tittel": "Informasjonsplikt",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal informere barn, elever og foreldre om forskriftens krav til det fysiske miljøet i skoler og barnehager, og om muligheten til å henvende seg til kommunen etter ",
+        {
+         "t": "§ 20",
+         "l": "forskrift/2023-03-28-449/§20",
+         "a": "helse-og-miljo/20"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomheten skal gi barn, elever og foreldre relevant informasjon om forhold ved virksomheten som kan ha negativ innvirkning på helsen, herunder om tiltak som iverksettes eller vurderes iverksatt. Dersom virksomheten blir kjent med at noe ved miljøet kan skade helsen til barna og elevene, skal barn, elever og foreldre snarest mulig varsles om det."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomheten skal gi tilsynsmyndigheten opplysninger om forhold ved eiendommen eller virksomheten som åpenbart kan ha negativ innvirkning på helsen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "18",
+     "visNr": "§ 18",
+     "tittel": "Internkontroll",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheten skal ha internkontroll for å sikre at kravene i forskriften etterleves."
+       ]
+      },
+      {
+       "tekst": [
+        "Internkontrollen skal være systematisk og tilpasset virksomhetens størrelse, egenart, aktiviteter og risikoforhold."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved internkontroll etter denne paragrafen skal virksomheten"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "utarbeide en beskrivelse av virksomhetens hovedoppgaver, mål og organisering,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha nødvendige rutiner og prosedyrer,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "avdekke og følge opp avvik og risiko for avvik,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentere internkontrollen i den form og det omfang som er nødvendig, og"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "evaluere og ved behov forbedre skriftlige prosedyrer og andre tiltak for internkontroll."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "19",
+     "visNr": "§ 19",
+     "tittel": "Kommunalt tilsyn",
+     "ledd": [
+      {
+       "tekst": [
+        "Kommunen fører tilsyn med at virksomhetene oppfyller kravene i forskriften. Kommunen skal prioritere sin tilsynsvirksomhet etter en vurdering av helserisiko."
+       ]
+      },
+      {
+       "tekst": [
+        "Virksomheten skal legge frem nødvendige opplysninger for kommunen. Kommunens rett til opplysninger gjelder uavhengig av taushetsplikt."
+       ]
+      },
+      {
+       "tekst": [
+        "Kommunen kan foreta gransking, retting, stansing, og ilegge tvangsmulkt eller overtredelsesgebyr i samsvar med ",
+        {
+         "t": "folkehelseloven § 13",
+         "l": "lov/2011-06-24-29/§13"
+        },
+        " til ",
+        {
+         "t": "§ 17",
+         "l": "lov/2011-06-24-29/§17"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "20",
+     "visNr": "§ 20",
+     "tittel": "Kommunens oppfølging av henvendelser",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom barn, elever eller foreldre mener at forskriftens krav ikke oppfylles, skal de henvende seg til barnehagen eller skolen. Har ikke barnehagen eller skolen fulgt opp henvendelsen innen rimelig tid, kan eleven eller foreldrene henvende seg til kommunen som tilsynsmyndighet. Kommunen skal vurdere å følge opp forholdet ved tilsyn."
+       ]
+      },
+      {
+       "tekst": [
+        "Kommer kommunen til at krav i forskriften ikke er oppfylt, kan kommunen fatte vedtak i samsvar med ",
+        {
+         "t": "folkehelseloven § 13",
+         "l": "lov/2011-06-24-29/§13"
+        },
+        " til ",
+        {
+         "t": "§ 17",
+         "l": "lov/2011-06-24-29/§17"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "21",
+     "visNr": "§ 21",
+     "tittel": "Klage",
+     "ledd": [
+      {
+       "tekst": [
+        "Kommunens enkeltvedtak etter ",
+        {
+         "t": "§ 19",
+         "l": "forskrift/2023-03-28-449/§19",
+         "a": "helse-og-miljo/19"
+        },
+        " og ",
+        {
+         "t": "§ 20",
+         "l": "forskrift/2023-03-28-449/§20",
+         "a": "helse-og-miljo/20"
+        },
+        " kan påklages til statsforvalteren etter ",
+        {
+         "t": "folkehelseloven § 19",
+         "l": "lov/2011-06-24-29/§19"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven eller foreldrene kan påklage kommunens avgjørelse etter ",
+        {
+         "t": "§ 20",
+         "l": "forskrift/2023-03-28-449/§20",
+         "a": "helse-og-miljo/20"
+        },
+        " første ledd tredje punktum til statsforvalteren etter reglene i ",
+        {
+         "t": "forvaltningsloven kapittel VI",
+         "l": "lov/1967-02-10/kapVI"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "22",
+     "visNr": "§ 22",
+     "tittel": "Straff",
+     "ledd": [
+      {
+       "tekst": [
+        "Overtredelse av forskriften eller av vedtak truffet med hjemmel i forskriften straffes i samsvar med ",
+        {
+         "t": "folkehelseloven § 18",
+         "l": "lov/2011-06-24-29/§18"
+        },
+        ", dersom ikke strengere straffebestemmelse kommer til anvendelse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "23",
+     "visNr": "§ 23",
+     "tittel": "Overgangsbestemmelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Virksomheter som skal være godkjent før oppstart etter bestemmelsene i ",
+        {
+         "t": "§ 15",
+         "l": "forskrift/2023-03-28-449/§15",
+         "a": "helse-og-miljo/15"
+        },
+        " og som ikke er godkjent etter tidligere ",
+        {
+         "t": "forskrift 1. desember 1995 nr. 928 om miljørettet helsevern i barnehager og skoler mv",
+         "l": "forskrift/1995-12-01-928"
+        },
+        "., skal legge frem godkjenningssøknad for kommunen innen 1. januar 2024."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "24",
+     "visNr": "§ 24",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. juli 2023. Fra samme tidspunkt oppheves ",
+        {
+         "t": "forskrift 1. desember 1995 nr. 928 om miljørettet helsevern i barnehager og skoler m.v",
+         "l": "forskrift/1995-12-01-928"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}
