@@ -105,7 +105,7 @@ Regelverdier med `grunnlag: praksis` må stå i listen. Det testes.
 | `id`, `navn`, `utgiver`, `url` | identifikasjon |
 | `type` | `side`, `lovdata-datasett`, `grep`, `data` |
 | `niva`, `fylke` | `nasjonal`, `fylke` eller `skole`. Lokale kilder har fylke |
-| `lisens` | f.eks. `NLOD 2.0`, eller «Opphavsrett … Lenkes, kopieres ikke.» |
+| `lisens` | f.eks. `NLOD 2.0`, eller «Opphavsrett … Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.» når vilkårene ikke er undersøkt (eier 02.10.2026) |
 | `sjekkmetode` | `side`, `kf-infoserie`, `fil`, `lovdata`, `grep`, `nsr` eller `ingen` |
 | `aktiv` | om kildejobben sjekker kilden nå. Kilder aktiveres i fasen der de tas i bruk |
 | `uttrekk` | for `side` og `lovdata`: `selektor` (CSS), valgfritt `inneholder` (tekst treffet må ha) og `fjern` (selektorer som fjernes først) |

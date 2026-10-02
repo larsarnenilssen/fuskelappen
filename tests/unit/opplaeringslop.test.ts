@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { tilbudPlugin } from '../../scripts/vite/plugins.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import { fullKode, kortKode, type Tilbudene, tilbudRute } from '../../src/modules/opplaeringslop/data.ts';
+import { fullKode, kortKode, skoleForst, type Tilbudene, tilbudRute } from '../../src/modules/opplaeringslop/data.ts';
 import { fagITilbud, programomradegrupper } from '../../src/modules/opplaeringslop/grupper.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
@@ -53,5 +53,17 @@ describe('fag i tilbud og grupper (eier 02.10.2026)', () => {
     expect(grupper?.find(([n]) => n === 'Realfag')?.[1]).toContain('REA3056');
     // Hører alle fagene til samme programområde, blir det ingen grupper.
     expect(programomradegrupper(['SPR3022'], indeks, 'Vg2', 'nb', 'Andre fag')).toBeNull();
+  });
+});
+
+describe('rekkefølgen på tilbudene videre (eier 02.10.2026)', () => {
+  it('setter tilbud i skole før opplæring i bedrift, ellers i samme rekkefølge', () => {
+    const programomrader = {
+      A: { sted: 'bedrift' },
+      B: { sted: 'skole' },
+      C: { sted: 'bedrift' },
+      D: { sted: 'skole' },
+    } as unknown as Fagindeks['programomrader'];
+    expect(skoleForst(['A', 'B', 'C', 'D', 'X'], { programomrader })).toEqual(['B', 'D', 'X', 'A', 'C']);
   });
 });

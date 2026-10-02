@@ -19,6 +19,14 @@ test.describe('modulregister og søk', () => {
     await expect(kategori.getByRole('link', { name: 'Testkalkulator' })).toBeVisible();
   });
 
+  test('teksten i søkefeltet på forsiden har annen farge enn feltet (0.21.1)', async ({ page }) => {
+    await page.goto('./');
+    const felt = page.getByRole('searchbox');
+    await felt.fill('arbeidstid');
+    const { farge, bakgrunn } = await felt.evaluate((e) => ({ farge: getComputedStyle(e).color, bakgrunn: getComputedStyle(e).backgroundColor }));
+    expect(farge).not.toBe(bakgrunn);
+  });
+
   test('testmodulen finnes i søket', async ({ page }) => {
     await page.goto('./');
     await page.getByRole('searchbox').fill('testmodul');

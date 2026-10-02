@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.21.1] – 2026-10-02
+
+### Rettet
+
+- **Søket på forsiden:** Teksten du skriver i søkefeltet er synlig igjen. Den var hvit på hvit bakgrunn.
+- **«Åpne i nytt vindu»** i kalkulatorene vises nå også i smalere vinduer på PC og Mac (fra 640 punkter), for eksempel i installert app. Før måtte vinduet være minst 1024 punkter bredt.
+- **Lærefag i Opplæringsløp:** Under felles programfag står bare lærefaget. Grunnleggende norsk, morsmål og norsk og samfunnskunnskap for voksne, som Grep knytter til mange lærefag, står nederst som «Alternativer for særskilte grupper», som på vg1 og vg2. Fordypningsområder i lærefaget står som «Fag til valg». «0 timer» står ikke lenger i overskriften.
+
+### Endret
+
+- **Opplæringsløp:** Tilbud i skole står før opplæring i bedrift, både i løpet for hvert utdanningsprogram og under «Fører videre til». Etter vg1 i yrkesfag står vg2 øverst.
+
 ## [0.21.0] – 2026-10-02
 
 ### Lagt til

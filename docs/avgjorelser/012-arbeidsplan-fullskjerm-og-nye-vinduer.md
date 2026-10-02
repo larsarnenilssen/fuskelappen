@@ -8,3 +8,5 @@
 - **Nytt vindu:** `window.open` med et eget vindusnavn per vindu. Det nye vinduet leser skjemaet fra vinduet som åpnet det (samme opphav), og har deretter sin egen tilstand. Ingenting lagres eller sendes ut av enheten. Knappen vises bare på bred skjerm med mus (`hover: hover` og `pointer: fine`).
 
 **Konsekvens:** Ingen nye avhengigheter. Ender id-en en gang, må favoritter og varianter migreres.
+
+**Tillegg (0.21.1):** Knappen for nytt vindu vises fra 40rem (640 punkter) bredde, ikke 64rem. Installert app og nettleservinduer på bærbar PC med skalering var ofte smalere enn 64rem, og da så eier ikke knappen (eier 02.10.2026). Kravet om mus (`hover: hover` og `pointer: fine`) står fast, så knappen vises ikke på telefon og nettbrett.

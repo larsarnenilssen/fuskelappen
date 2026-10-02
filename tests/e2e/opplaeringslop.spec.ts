@@ -121,6 +121,23 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('[data-rubrikk$="-fellesfag"] .fagrad', { hasText: 'Framandspråk' })).toHaveCount(1);
   });
 
+  test('lærefaget i bedrift står alene, med fellesfag som alternativer (eier 02.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/BA/BABDR3');
+    const rubrikk = page.locator('[data-rubrikk$="-felles_programfag"]');
+    await expect(rubrikk.getByRole('link', { name: /Byggdrifterfaget/ }).first()).toBeVisible();
+    await expect(rubrikk.getByRole('button', { name: /Alternativer for særskilte grupper/ })).toBeVisible();
+    await expect(rubrikk.locator('.fagrad:not([data-dempet])', { hasText: 'Grunnleggende norsk' })).toHaveCount(0);
+  });
+
+  test('tilbud i skole står før opplæring i bedrift (eier 02.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/DT');
+    await page.locator('.lop-knapp').first().click();
+    const tekster = await page.locator('.lop > li > .lop-videre > li > .lop-kort').allInnerTexts();
+    const forsteBedrift = tekster.findIndex((t) => /I bedrift/.test(t));
+    expect(forsteBedrift).toBeGreaterThan(0);
+    expect(tekster.slice(forsteBedrift).every((t) => /I bedrift/.test(t))).toBe(true);
+  });
+
   test('søket finner tilbud', async ({ page }) => {
     await page.goto('./#/sok?q=helsearbeiderfag');
     await expect(page.getByRole('link', { name: /Helsearbeiderfag/ }).first()).toBeVisible();

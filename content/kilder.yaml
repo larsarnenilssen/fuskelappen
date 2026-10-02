@@ -11,7 +11,7 @@ kilder:
     url: https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/
     type: side
     niva: nasjonal
-    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
     aktiv: true
     uttrekk:
@@ -29,7 +29,7 @@ kilder:
     url: https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e
     type: side
     niva: nasjonal
-    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: kf-infoserie
     aktiv: true
     # Godkjent av eier 2026-09-29.
@@ -45,7 +45,7 @@ kilder:
     url: https://www.utdanningsforbundet.no/lonn-og-arbeidsvilkar/tariffavtaler/ks/ks-tariffavtaler/sfs-2213/
     type: side
     niva: nasjonal
-    lisens: Opphavsrett Utdanningsforbundet. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
@@ -60,7 +60,7 @@ kilder:
     url: https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf
     type: side
     niva: nasjonal
-    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: fil
     aktiv: true
     # Godkjent av eier 2026-09-29.
@@ -381,7 +381,7 @@ kilder:
     type: side
     niva: fylke
     fylke: "46"
-    lisens: Opphavsrett Vestland fylkeskommune. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
     aktiv: false
     uttrekk:
@@ -396,7 +396,7 @@ kilder:
     url: https://www.ks.no/contentassets/fe673f1aa4254bc0b9e2f49f00434251/erfaringer-med-sfs2213_rapport.pdf
     type: side
     niva: nasjonal
-    lisens: Opphavsrett KS. Lenkes, kopieres ikke.
+    lisens: Opphavsrett KS. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
@@ -409,7 +409,7 @@ kilder:
     url: https://www.ks.no/contentassets/8241bae38e5a49c385d5f549a05a33ef/utdanningsforbundet.pdf
     type: side
     niva: nasjonal
-    lisens: Opphavsrett Utdanningsforbundet. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Utdanningsforbundet. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
@@ -422,7 +422,7 @@ kilder:
     url: https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer
     type: side
     niva: nasjonal
-    lisens: Opphavsrett Visma. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
@@ -435,7 +435,7 @@ kilder:
     url: https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet
     type: side
     niva: nasjonal
-    lisens: Opphavsrett Visma. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
@@ -448,7 +448,7 @@ kilder:
     url: https://inschool.zendesk.com/hc/no/articles/19452863757970
     type: side
     niva: nasjonal
-    lisens: Opphavsrett Visma. Lenkes, kopieres ikke.
+    lisens: Opphavsrett Visma. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: ingen
     aktiv: false
     godkjent_fingeravtrykk: null
