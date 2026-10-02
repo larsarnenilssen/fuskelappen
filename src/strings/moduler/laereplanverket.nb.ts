@@ -19,6 +19,11 @@ export const laereplanverketNb = {
   ikkeFunnet: 'Fant ikke delen i overordnet del.',
   hentet: 'Teksten er hentet fra udir.no {dato}.',
   innholdet: 'Innhold',
+  omBegrep: {
+    overordnetDel: 'Om begrepet overordnet del',
+    ferdigheter: 'Om begrepet grunnleggende ferdigheter',
+    temaer: 'Om begrepet tverrfaglige temaer',
+  },
   fagark: {
     tittel: 'Grunnleggende ferdigheter og tverrfaglige temaer',
     ferdigheter: 'Grunnleggende ferdigheter i faget',

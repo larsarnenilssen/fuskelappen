@@ -736,6 +736,10 @@
         "tekst": "Faglig læring er en sentral del av både dannings- og utdanningsoppdraget til grunnopplæringen. Læreplanene for fag angir innholdet i de ulike fagene og bygger på følgende definisjon av kompetanse:"
        },
        {
+        "type": "sitat",
+        "tekst": "Kompetanse er å kunne tilegne seg og anvende kunnskaper og ferdigheter til å mestre utfordringer og løse oppgaver i kjente og ukjente sammenhenger og situasjoner. Kompetanse innebærer forståelse og evne til refleksjon og kritisk tenkning."
+       },
+       {
         "type": "avsnitt",
         "tekst": "Forståelse av kompetansebegrepet må ligge til grunn for skolens arbeid med læreplaner og vurdering av elevenes faglige kompetanse. Fagenes kompetansemål må ses i sammenheng med hverandre i og på tvers av fag. Kompetansemålene må også forstås i lys av formålsparagrafen og de øvrige delene av læreplanverket."
        },
@@ -756,6 +760,10 @@
        {
         "type": "avsnitt",
         "tekst": "Fagleg læring er ein sentral del av både dannings- og utdanningsoppdraget til grunnopplæringa. Faglæreplanane fastslår innhaldet i dei ulike faga og byggjer på følgjande definisjon av kompetanse:"
+       },
+       {
+        "type": "sitat",
+        "tekst": "Kompetanse er å kunne tileigne seg og nytte kunnskapar og ferdigheiter til å meistre utfordringar og løyse oppgåver i kjende og ukjende samanhengar og situasjonar. Kompetanse inneber forståing og evne til refleksjon og kritisk tenking."
        },
        {
         "type": "avsnitt",

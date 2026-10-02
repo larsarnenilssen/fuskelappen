@@ -48,6 +48,9 @@ export function FerdigheterOgTemaer({ plan, lang }: { plan: Laereplan; lang: str
       {plan.ferdigheter.length > 0 && (
         <>
           <p class="liten-overskrift">{t('laereplanverket.fagark.ferdigheter')}</p>
+          <p class="liten">
+            <a href="#/begreper/grunnleggende-ferdigheter">{t('laereplanverket.omBegrep.ferdigheter')}</a>
+          </p>
           {plan.ferdigheter.map((o) => (
             // Ferdighetene er omtalt samlet i overordnet del.
             <Rad key={o.kode} omtale={o} navn={navn(lv?.ferdigheter, o.kode)} lenke={t('laereplanverket.ferdigheter')} lang={lang} plan={plan.kode} />
@@ -57,6 +60,9 @@ export function FerdigheterOgTemaer({ plan, lang }: { plan: Laereplan; lang: str
       {plan.temaer.length > 0 && (
         <>
           <p class="liten-overskrift">{t('laereplanverket.fagark.temaer')}</p>
+          <p class="liten">
+            <a href="#/begreper/tverrfaglige-temaer">{t('laereplanverket.omBegrep.temaer')}</a>
+          </p>
           {plan.temaer.map((o) => (
             <Rad key={o.kode} omtale={o} navn={navn(lv?.temaer, o.kode)} lenke={navn(lv?.temaer, o.kode)} lang={lang} plan={plan.kode} />
           ))}

@@ -3524,6 +3524,14 @@ p.fagkort-tittel {
   font-weight: 600;
 }
 
+.od-sitat {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-2) var(--rom-3);
+  border-left: 4px solid var(--farge-merke);
+  background: var(--farge-flate-2);
+  font-style: italic;
+}
+
 .od-underdel {
   border-top: var(--strek) solid var(--farge-linje);
 }

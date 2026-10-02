@@ -18,6 +18,11 @@
   - Overordnet del vises i bokser som er lukket. Delene inni er nye lukkede bokser, og de lukkede boksene er selve innholdsregisteret.
   - Adressen `#/laereplanverket/overordnet-del/2.5.1` åpner delen og boksene rundt den og ruller dit. Koden til en ferdighet eller et tema (`…/TT1`) finner delen ut fra navnet, ikke fra faste numre.
 - **Fagarket:** «Grunnleggende ferdigheter og tverrfaglige temaer» viser teksten fra læreplanen, uoversatt, med lenke til omtalen i overordnet del.
+- **Begreper og søk:**
+  - Seks nye begreper med kilder og kontrollspørsmål: læreplanverket, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter og tverrfaglige temaer. Modulen og fagarket lenker til dem.
+  - Søket finner delene i overordnet del på tittel, kapittelnummer og ingress, og ferdighetene og temaene på navn.
+  - Nye synonymer gjør at nynorske ord som «grunnleggjande» og «berekraftig» også gir treff.
+- **Sitater:** Formålsparagrafen og definisjonen av kompetanse står som sitater på udir.no og vises som sitater. Står det noe annet i teksten enn avsnitt, lister og sitater (f.eks. en tabell), stopper hentingen, så ingen tekst forsvinner uten at det merkes.
 - **Data i appen:** Overordnet del og listene er egne JS-biter, om lag 24 kB komprimert. De lastes når de trengs og følger med når appen installeres. Søket finner delene på tittel, nummer og ingress.
 
 **Konsekvens:** Teksten følger udir.no hver uke uten manuelt arbeid. Endrer Udir adressene eller sidene, stopper valideringen hentingen før noe skrives, og kontrollsaken sier fra. Rubrikken fra Opplæringsløp er flyttet til felles komponenter, så begge modulene bruker den.

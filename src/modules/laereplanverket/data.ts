@@ -66,7 +66,7 @@ export function sti(deler: readonly Del[], mal: Del): Del[] {
   return [];
 }
 
-const tekstAv = (b: Blokk) => (b.type === 'avsnitt' ? b.tekst : b.punkter.join(' '));
+const tekstAv = (b: Blokk) => (b.type === 'liste' ? b.punkter.join(' ') : b.tekst);
 
 export interface Treff {
   del: Del;

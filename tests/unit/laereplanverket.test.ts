@@ -2,7 +2,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { sammenlignOverordnetDel, validerOverordnetDel } from '../../scripts/hent-overordnet-del.ts';
-import { lagTre, lesMeny, lesTekst, lesTittel } from '../../scripts/udir/overordnet.ts';
+import { lagTre, lesMeny, lesTekst, lesTittel, ukjenteElementer } from '../../scripts/udir/overordnet.ts';
 import { finnDel, type Laereplanverket, sokIDeler, sti } from '../../src/modules/laereplanverket/data.ts';
 import { alleDeler, overordnetDelSkjema } from '../../src/modules/laereplanverket/skjema.ts';
 import { laereplanSkjema } from '../../src/modules/fag/skjema.ts';
@@ -33,16 +33,22 @@ describe('lesing av overordnet del fra udir.no', () => {
   it('leser tittel, ingress og tekst, uten ressurslenker og navigasjon', () => {
     const side = `<h1><span>Overordnet del <br/></span><span>Menneskeverdet</span></h1>
       <div class="curriculum-general-article__ingress"><p>Skolen skal&nbsp;sørge for menneskeverdet.</p></div>
-      <div class="curriculum-general-article__body"><p>Første avsnitt med <em>vekt</em>.</p><ul><li>Ett</li><li>To</li></ul>
+      <div class="curriculum-general-article__body"><p>Første avsnitt med <em>vekt</em>.</p><blockquote><em>Kompetanse er å kunne.</em></blockquote><ul><li>Ett</li><li>To</li></ul>
       <div class="accordion"><p>Ressurser</p></div></div><nav><p>Neste</p></nav>`;
     expect(lesTittel(side)).toBe('Menneskeverdet');
     expect(lesTekst(side)).toEqual({
       ingress: [{ type: 'avsnitt', tekst: 'Skolen skal sørge for menneskeverdet.' }],
       tekst: [
         { type: 'avsnitt', tekst: 'Første avsnitt med vekt.' },
+        { type: 'sitat', tekst: 'Kompetanse er å kunne.' },
         { type: 'liste', punkter: ['Ett', 'To'] },
       ],
     });
+  });
+
+  it('finner innhold appen ikke leser, f.eks. tabeller', () => {
+    expect(ukjenteElementer('<div class="curriculum-general-article__body"><p>Tekst</p><table><tr><td>1</td></tr></table></div>')).toEqual(['table', 'td', 'tr']);
+    expect(ukjenteElementer('<div class="curriculum-general-article__body"><p>Tekst <em>uthevet</em></p></div>')).toEqual([]);
   });
 
   it('melder nye, fjernede og endrede deler', () => {

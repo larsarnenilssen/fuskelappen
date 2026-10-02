@@ -55,15 +55,21 @@ export default function Oversikt() {
       ) : (
         <Sok od={data.od}>
           <Rubrikk nokkel="lv-overordnet" tittel={t('laereplanverket.overordnetDel')}>
-            <p class="liten dempet">{t('laereplanverket.overordnetHjelp')}</p>
+            <p class="liten dempet">
+              {t('laereplanverket.overordnetHjelp')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
+            </p>
             <Innholdsregister deler={data.od.deler} />
           </Rubrikk>
           <Rubrikk nokkel="lv-ferdigheter" tittel={t('laereplanverket.ferdigheter')} hoyre={formaterTall(data.lv.ferdigheter.length)}>
-            <p class="liten dempet">{t('laereplanverket.ferdigheterHjelp')}</p>
+            <p class="liten dempet">
+              {t('laereplanverket.ferdigheterHjelp')} <a href="#/begreper/grunnleggende-ferdigheter">{t('laereplanverket.omBegrep.ferdigheter')}</a>
+            </p>
             <Elementliste elementer={data.lv.ferdigheter} />
           </Rubrikk>
           <Rubrikk nokkel="lv-temaer" tittel={t('laereplanverket.temaer')} hoyre={formaterTall(data.lv.temaer.length)}>
-            <p class="liten dempet">{t('laereplanverket.temaerHjelp')}</p>
+            <p class="liten dempet">
+              {t('laereplanverket.temaerHjelp')} <a href="#/begreper/tverrfaglige-temaer">{t('laereplanverket.omBegrep.temaer')}</a>
+            </p>
             <Elementliste elementer={data.lv.temaer} />
           </Rubrikk>
         </Sok>

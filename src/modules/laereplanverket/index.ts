@@ -20,7 +20,7 @@ export const manifest: Modulmanifest = {
     const [od, lv] = await Promise.all([lastOverordnetDel(), lastLaereplanverket()]);
     // Søket finner delene i overordnet del på tittel, nummer og ingress, og ferdighetene og temaene på navn.
     const ingress = (d: (typeof od.deler)[number], m: 'nb' | 'nn') =>
-      d.ingress[m].map((b) => (b.type === 'avsnitt' ? b.tekst : b.punkter.join(' '))).join(' ');
+      d.ingress[m].map((b) => (b.type === 'liste' ? b.punkter.join(' ') : b.tekst)).join(' ');
     return [
       ...alleDeler(od.deler).map((d) => ({
         id: `laereplanverket:${d.nr ?? d.id}`,

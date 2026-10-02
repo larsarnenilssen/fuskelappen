@@ -32,6 +32,7 @@ test.describe('læreplanverket', () => {
     await page.goto('./#/fag/HEA2005');
     await page.getByRole('button', { name: /^Grunnleggende ferdigheter og tverrfaglige temaer/ }).click();
     const seksjon = page.locator('[data-seksjon="laereplanverket"]');
+    await expect(seksjon.getByRole('link', { name: 'Om begrepet grunnleggende ferdigheter' })).toHaveAttribute('href', '#/begreper/grunnleggende-ferdigheter');
     await seksjon.getByRole('button', { name: 'Folkehelse og livsmestring' }).click();
     await seksjon.getByRole('link', { name: 'Folkehelse og livsmestring i overordnet del' }).click();
     await expect(page).toHaveURL(/overordnet-del\/TT1$/);
@@ -50,8 +51,24 @@ test.describe('læreplanverket', () => {
     await expect(page.getByRole('alert')).toHaveText('Fant ikke delen i overordnet del.');
   });
 
-  test('søket på forsiden finner delene i overordnet del', async ({ page }) => {
+  test('søket finner overskriftene i overordnet del, stikkordene og de nye begrepene', async ({ page }) => {
     await page.goto('./#/sok?q=menneskeverdet');
     await expect(page.getByRole('link', { name: /Menneskeverdet/ }).first()).toBeVisible();
+    // Kapittelnummer og stikkord.
+    await page.goto('./#/sok?q=2.5.3');
+    await expect(page.getByRole('link', { name: /Bærekraftig utvikling/ }).first()).toBeVisible();
+    await page.goto('./#/sok?q=LK20');
+    await expect(page.getByRole('link', { name: /^Læreplanverket/ }).first()).toBeVisible();
+    // Begrepene i oppslagsverket.
+    await page.goto('./#/sok?q=formålsparagrafen');
+    await expect(page.getByRole('link', { name: /Formålsparagrafen/ }).first()).toHaveAttribute('href', '#/begreper/formalsparagrafen');
+    await page.goto('./#/begreper/grunnleggende-ferdigheter');
+    await expect(page.locator('main h1')).toHaveText('Grunnleggende ferdigheter');
+  });
+
+  test('søket på nynorsk finner overskriftene', async ({ page }) => {
+    await settLagret(page, { malform: 'nn' });
+    await page.goto('./#/sok?q=grunnleggjande ferdigheiter');
+    await expect(page.getByRole('link', { name: /Grunnleggjande ferdigheiter/ }).first()).toBeVisible();
   });
 });

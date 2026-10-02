@@ -2,7 +2,7 @@
 
 <!-- Generert av `npm run kontroll:rapport`. Kildesjekken lager den på nytt hver uke. Ikke rediger for hånd. -->
 
-Oppdatert 01.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
+Oppdatert 02.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
 
 Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.
 
@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 85 |
+| Ikke kontrollert | 91 |
 | Praksis og tolkninger som bør bekreftes | 13 av 13 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -191,6 +191,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Grunnleggende ferdigheter (`grunnleggende-ferdigheter`) | begrep | Grunnleggende ferdigheter (GF1–GF5) i læreplanene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Tverrfaglige temaer (`tverrfaglige-temaer`) | begrep | Tverrfaglige temaer (TT1–TT3) i læreplanene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 | Programområde (`programomrade`) | begrep | Programområder | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Programfag og valgfrie programfag (`programfag`) | begrep | Fagtype | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 
@@ -276,6 +278,21 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Fagmerknader (FAM-koder) (`fagmerknader`) | begrep | Fagmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
 | Vitnemålsmerknader (VMM-koder) (`vitnemalsmerknader`) | begrep | Vitnemålsmerknader | `content/begreper/dokumentasjon.yaml` | ikke kontrollert |
+
+### Overordnet del – verdier og prinsipper for grunnopplæringen
+
+`udir-overordnet-del` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/lk20/overordnet-del/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Læreplanverket (`laereplanverket`) | begrep | Om overordnet del | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Overordnet del (`overordnet-del`) | begrep | Om overordnet del | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Formålsparagrafen (`formalsparagrafen`) | begrep | Formålet med opplæringen | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Kompetanse (`kompetanse`) | begrep | 2.2 Kompetanse i fagene | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Grunnleggende ferdigheter (`grunnleggende-ferdigheter`) | begrep | 2.3 Grunnleggende ferdigheter | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+| Tverrfaglige temaer (`tverrfaglige-temaer`) | begrep | 2.5 Tverrfaglige temaer | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 
 ### Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)
 
@@ -567,6 +584,18 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 
 Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 5.5
 
+**Grunnleggende ferdigheter** (`grunnleggende-ferdigheter`, begrep, ikke kontrollert)
+
+- Er «fagene har ulikt ansvar for dem» en dekkende gjengivelse av at enkelte fag har større ansvar enn andre?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/grunnleggende-ferdigheter/): punkt 2.3 Grunnleggende ferdigheter; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Grunnleggende ferdigheter (GF1–GF5) i læreplanene
+
+**Tverrfaglige temaer** (`tverrfaglige-temaer`, begrep, ikke kontrollert)
+
+- Er det riktig å si at temaene «ikke er med i alle fag», ut fra at målene står i kompetansemål i fagene der det er relevant?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/tverrfaglige-temaer/): punkt 2.5 Tverrfaglige temaer; [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/): Tverrfaglige temaer (TT1–TT3) i læreplanene
+
 **Programområde** (`programomrade`, begrep, ikke kontrollert)
 
 - Er «et tilbud på ett trinn i et utdanningsprogram» en dekkende forklaring av programområde?
@@ -634,4 +663,29 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 - Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
 Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader](https://kodeverk.vigo.no/): Vitnemålsmerknader
+
+**Læreplanverket** (`laereplanverket`, begrep, ikke kontrollert)
+
+- Kilden appen bruker for overordnet del, nevner bare overordnet del og læreplanene for fag. Bør fag- og timefordelingen også nevnes som en del av læreplanverket?
+- Er det riktig å kalle læreplanverket som gjelder nå, Kunnskapsløftet 2020 (LK20), når overordnet del ble fastsatt på nytt i 2026?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
+
+**Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
+
+- Er «alle som arbeider i opplæringen, skal la den prege planleggingen og gjennomføringen» en dekkende gjengivelse av hvem overordnet del retter seg mot?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
+
+**Formålsparagrafen** (`formalsparagrafen`, begrep, ikke kontrollert)
+
+- Overordnet del på udir.no oppgir formålsparagrafen som opplæringsloven § 1-3. Stemmer paragrafnummeret med opplæringsloven som gjelder fra 1.8.2024, og bør det stå i begrepet?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/formalet-med-opplaringen/): Formålet med opplæringen
+
+**Kompetanse** (`kompetanse`, begrep, ikke kontrollert)
+
+- Er det nyttig å nevne at kompetansebegrepet skal ligge til grunn for vurderingen av elevenes faglige kompetanse?
+
+Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/kompetanse-i-fagene/): punkt 2.2 Kompetanse i fagene
 

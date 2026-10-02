@@ -47,18 +47,32 @@ export function lesTittel(html: string): string {
 function blokker(el: HTMLElement | null): Blokk[] {
   if (!el) return [];
   const ut: Blokk[] = [];
-  for (const n of el.querySelectorAll('p, ul, ol')) {
-    // Avsnitt inne i lister tas med i listen.
-    if (n.tagName === 'P' && n.closest('li')) continue;
-    if (n.tagName === 'P') {
+  for (const n of el.querySelectorAll('p, ul, ol, blockquote')) {
+    // Avsnitt inne i lister og sitater tas med der.
+    if (n.tagName === 'P' && (n.closest('li') || n.closest('blockquote'))) continue;
+    if (n.tagName === 'BLOCKQUOTE') {
+      const tekst = rydd(n.text);
+      if (tekst) ut.push({ type: 'sitat', tekst });
+    } else if (n.tagName === 'P') {
       const tekst = rydd(n.text);
       if (tekst) ut.push({ type: 'avsnitt', tekst });
-    } else if (!n.parentNode?.closest('li')) {
+    } else if (!n.parentNode?.closest('li') && !n.closest('blockquote')) {
       const punkter = n.querySelectorAll(':scope > li').map((li) => rydd(li.text)).filter(Boolean);
       if (punkter.length > 0) ut.push({ type: 'liste', punkter });
     }
   }
   return ut;
+}
+
+/** Elementene i teksten som ikke blir lest (alt utenom avsnitt, lister, sitater og tekstformatering). */
+export function ukjenteElementer(html: string): string[] {
+  const rot = parse(html);
+  const kjente = new Set(['P', 'UL', 'OL', 'LI', 'BLOCKQUOTE', 'EM', 'STRONG', 'I', 'B', 'A', 'BR', 'SPAN', 'DIV', 'SUP', 'SUB']);
+  const ut = new Set<string>();
+  for (const del of rot.querySelectorAll('.curriculum-general-article__ingress, .curriculum-general-article__body')) {
+    for (const n of del.querySelectorAll('*')) if (!kjente.has(n.tagName) && !n.closest('.accordion')) ut.add(n.tagName.toLowerCase());
+  }
+  return [...ut].sort();
 }
 
 /** Ingressen og teksten på en side. Ressurslenker og navigasjon er ikke med. */

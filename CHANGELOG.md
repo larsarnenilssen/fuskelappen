@@ -14,6 +14,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - De fem grunnleggende ferdighetene og de tre tverrfaglige temaene, med lenke til omtalen i overordnet del.
   - Søket på forsiden finner delene i overordnet del.
 - **Fagarket:** «Grunnleggende ferdigheter og tverrfaglige temaer» viser hva læreplanen sier om hver ferdighet og hvert tema i faget, med lenke til overordnet del.
+- **Begreper:** læreplanverket, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter og tverrfaglige temaer.
+- **Søket** finner overskriftene og kapittelnumrene i overordnet del, ferdighetene og temaene, og stikkord som «LK20», også på nynorsk.
 
 ## [0.19.1] – 2026-10-02
 

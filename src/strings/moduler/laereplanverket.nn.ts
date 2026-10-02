@@ -19,6 +19,11 @@ export const laereplanverketNn = {
   ikkeFunnet: 'Fann ikkje delen i overordna del.',
   hentet: 'Teksten er henta frå udir.no {dato}.',
   innholdet: 'Innhald',
+  omBegrep: {
+    overordnetDel: 'Om omgrepet overordna del',
+    ferdigheter: 'Om omgrepet grunnleggjande ferdigheiter',
+    temaer: 'Om omgrepet tverrfaglege tema',
+  },
   fagark: {
     tittel: 'Grunnleggjande ferdigheiter og tverrfaglege tema',
     ferdigheter: 'Grunnleggjande ferdigheiter i faget',

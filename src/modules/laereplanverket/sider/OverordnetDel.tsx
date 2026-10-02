@@ -73,7 +73,9 @@ export default function OverordnetDel({ parametre }: SideProps) {
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
         <>
-          <p class="liten dempet">{t('laereplanverket.overordnetHjelp')}</p>
+          <p class="liten dempet">
+            {t('laereplanverket.overordnetHjelp')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
+          </p>
           {nokkel && !mal && (
             <p class="merknad" role="alert">
               {t('laereplanverket.ikkeFunnet')}

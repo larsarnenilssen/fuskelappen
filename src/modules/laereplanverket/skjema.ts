@@ -6,10 +6,11 @@ import type { Blokk, Del, OverordnetDel } from './typer.ts';
 
 const begge = z.object({ nb: z.string().min(1), nn: z.string().min(1) }).strict();
 
-/** Et avsnitt eller en punktliste. */
+/** Et avsnitt, en punktliste eller et sitat. */
 export const blokkSkjema: z.ZodType<Blokk> = z.union([
   z.object({ type: z.literal('avsnitt'), tekst: z.string().min(1) }).strict(),
   z.object({ type: z.literal('liste'), punkter: z.array(z.string().min(1)).min(1) }).strict(),
+  z.object({ type: z.literal('sitat'), tekst: z.string().min(1) }).strict(),
 ]);
 
 const tekster = z.object({ nb: z.array(blokkSkjema), nn: z.array(blokkSkjema) }).strict();

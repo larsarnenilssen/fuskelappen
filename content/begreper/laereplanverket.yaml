@@ -1,0 +1,88 @@
+# Begreper om læreplanverket: læreplanverket, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter
+# og tverrfaglige temaer (pakke 6, avgjørelse 037). Bygger på overordnet del på udir.no. Egne ord, ikke kopiert.
+- id: laereplanverket
+  type: begrep
+  tittel: { nb: Læreplanverket, nn: Læreplanverket }
+  tekst:
+    nb: Læreplanverket er grunnlaget for opplæringen i grunnskolen og videregående opplæring. Det består blant annet av overordnet del og læreplanene for fagene. Overordnet del gir retning for opplæringen i alle fag, mens læreplanene beskriver innholdet og målene i hvert fag. Delene henger sammen og skal brukes sammen. Læreplanverket har status som forskrift. Læreplanverket som gjelder nå, kalles ofte Kunnskapsløftet 2020 (LK20).
+    nn: Læreplanverket er grunnlaget for opplæringa i grunnskulen og vidaregåande opplæring. Det består mellom anna av overordna del og læreplanane for faga. Overordna del gir retning for opplæringa i alle fag, medan læreplanane beskriv innhaldet og måla i kvart fag. Delane heng saman og skal brukast saman. Læreplanverket har status som forskrift. Læreplanverket som gjeld no, blir ofte kalla Kunnskapsløftet 2020 (LK20).
+  kilder:
+    - { id: udir-overordnet-del, punkt: Om overordnet del, url: "https://www.udir.no/lk20/overordnet-del/om-overordnet-del/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kilden appen bruker for overordnet del, nevner bare overordnet del og læreplanene for fag. Bør fag- og timefordelingen også nevnes som en del av læreplanverket?"
+    - "Er det riktig å kalle læreplanverket som gjelder nå, Kunnskapsløftet 2020 (LK20), når overordnet del ble fastsatt på nytt i 2026?"
+  stikkord: [LK20, Kunnskapsløftet, læreplan, forskrift]
+  relatert: [overordnet-del, kompetanse, grunnleggende-ferdigheter, tverrfaglige-temaer]
+
+- id: overordnet-del
+  type: begrep
+  tittel: { nb: Overordnet del, nn: Overordna del }
+  tekst:
+    nb: Overordnet del – verdier og prinsipper for grunnopplæringen – er den delen av læreplanverket som utdyper verdigrunnlaget i formålsparagrafen og prinsippene for opplæringen. Den har tre kapitler om verdigrunnlaget, om læring, utvikling og danning og om skolens praksis. Overordnet del gjelder hele grunnopplæringen, også opplæring i lærebedrift, og alle som arbeider i opplæringen, skal la den prege planleggingen og gjennomføringen. Den er fastsatt ved kongelig resolusjon med hjemmel i opplæringsloven § 1-4.
+    nn: Overordna del – verdiar og prinsipp for grunnopplæringa – er den delen av læreplanverket som utdjupar verdigrunnlaget i formålsparagrafen og prinsippa for opplæringa. Ho har tre kapittel om verdigrunnlaget, om læring, utvikling og danning og om praksisen i skolen. Overordna del gjeld heile grunnopplæringa, også opplæring i lærebedrift, og alle som arbeider i opplæringa, skal la henne prege planlegginga og gjennomføringa. Ho er fastsett ved kongeleg resolusjon med heimel i opplæringslova § 1-4.
+  kilder:
+    - { id: udir-overordnet-del, punkt: Om overordnet del, url: "https://www.udir.no/lk20/overordnet-del/om-overordnet-del/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «alle som arbeider i opplæringen, skal la den prege planleggingen og gjennomføringen» en dekkende gjengivelse av hvem overordnet del retter seg mot?"
+  stikkord: [verdier og prinsipper, verdigrunnlag, generell del, forskrift, kongelig resolusjon]
+  relatert: [laereplanverket, formalsparagrafen, grunnleggende-ferdigheter, tverrfaglige-temaer]
+
+- id: formalsparagrafen
+  type: begrep
+  tittel: { nb: Formålsparagrafen, nn: Formålsparagrafen }
+  tekst:
+    nb: Formålsparagrafen er bestemmelsen i opplæringsloven som sier hva opplæringen i skole og lærebedrift skal bidra til, blant annet verdier, kulturforståelse, demokrati, kritisk tenkning, medvirkning og at elever og lærlinger skal kunne mestre livene sine. Overordnet del utdyper verdigrunnlaget i formålsparagrafen og gjengir den i sin helhet.
+    nn: Formålsparagrafen er føresegna i opplæringslova som seier kva opplæringa i skule og lærebedrift skal bidra til, mellom anna verdiar, kulturforståing, demokrati, kritisk tenking, medverknad og at elevar og lærlingar skal kunne meistre liva sine. Overordna del utdjupar verdigrunnlaget i formålsparagrafen og gjengir han i heilskap.
+  kilder:
+    - { id: udir-overordnet-del, punkt: Formålet med opplæringen, url: "https://www.udir.no/lk20/overordnet-del/formalet-med-opplaringen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Overordnet del på udir.no oppgir formålsparagrafen som opplæringsloven § 1-3. Stemmer paragrafnummeret med opplæringsloven som gjelder fra 1.8.2024, og bør det stå i begrepet?"
+  stikkord: [formål, verdier, opplæringsloven, danning]
+  relatert: [overordnet-del, laereplanverket]
+
+- id: kompetanse
+  type: begrep
+  tittel: { nb: Kompetanse, nn: Kompetanse }
+  tekst:
+    nb: Læreplanene for fag bygger på en felles definisjon av kompetanse i overordnet del. Kompetanse er å kunne tilegne seg og bruke kunnskaper og ferdigheter til å mestre utfordringer og løse oppgaver, både i kjente og ukjente sammenhenger. Kompetanse innebærer også forståelse og evne til refleksjon og kritisk tenkning. Forståelsen av kompetanse skal ligge til grunn for arbeidet med læreplanene og for vurderingen av elevenes faglige kompetanse.
+    nn: Læreplanane for fag byggjer på ein felles definisjon av kompetanse i overordna del. Kompetanse er å kunne tileigne seg og bruke kunnskapar og ferdigheiter til å meistre utfordringar og løyse oppgåver, både i kjende og ukjende samanhengar. Kompetanse inneber også forståing og evne til refleksjon og kritisk tenking. Forståinga av kompetanse skal liggje til grunn for arbeidet med læreplanane og for vurderinga av den faglege kompetansen til elevane.
+  kilder:
+    - { id: udir-overordnet-del, punkt: "2.2 Kompetanse i fagene", url: "https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/kompetanse-i-fagene/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig å nevne at kompetansebegrepet skal ligge til grunn for vurderingen av elevenes faglige kompetanse?"
+  stikkord: [kompetansemål, kunnskap, dybdelæring, vurdering, refleksjon, kritisk tenkning]
+  relatert: [laereplanverket, grunnleggende-ferdigheter]
+
+- id: grunnleggende-ferdigheter
+  type: begrep
+  tittel: { nb: Grunnleggende ferdigheter, nn: Grunnleggjande ferdigheiter }
+  tekst:
+    nb: Læreplanverket har fem grunnleggende ferdigheter – lesing, skriving, regning, muntlige ferdigheter og digitale ferdigheter. De er en del av den faglige kompetansen og redskaper for å lære. Ferdighetene hører hjemme i alle fag, men fagene har ulikt ansvar for dem. Læreplanen i hvert fag beskriver hva ferdighetene innebærer i faget, og lærere i alle fag skal støtte elevene i arbeidet med dem. Fagarket i appen viser teksten fra læreplanen.
+    nn: Læreplanverket har fem grunnleggjande ferdigheiter – lesing, skriving, rekning, munnlege ferdigheiter og digitale ferdigheiter. Dei er ein del av den faglege kompetansen og reiskapar for å lære. Ferdigheitene høyrer heime i alle fag, men faga har ulikt ansvar for dei. Læreplanen i kvart fag beskriv kva ferdigheitene inneber i faget, og lærarar i alle fag skal støtte elevane i arbeidet med dei. Fagarket i appen viser teksten frå læreplanen.
+  kilder:
+    - { id: udir-overordnet-del, punkt: "2.3 Grunnleggende ferdigheter", url: "https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/grunnleggende-ferdigheter/" }
+    - { id: udir-grep, punkt: "Grunnleggende ferdigheter (GF1–GF5) i læreplanene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «fagene har ulikt ansvar for dem» en dekkende gjengivelse av at enkelte fag har større ansvar enn andre?"
+  stikkord: [lesing, skriving, regning, muntlige ferdigheter, digitale ferdigheter, lese, skrive, regne]
+  relatert: [kompetanse, tverrfaglige-temaer, laereplanverket]
+
+- id: tverrfaglige-temaer
+  type: begrep
+  tittel: { nb: Tverrfaglige temaer, nn: Tverrfaglege tema }
+  tekst:
+    nb: Læreplanverket har tre tverrfaglige temaer – folkehelse og livsmestring, demokrati og medborgerskap, og bærekraftig utvikling. Temaene tar utgangspunkt i aktuelle samfunnsutfordringer, og elevene skal arbeide med dem gjennom problemstillinger fra ulike fag. I motsetning til de grunnleggende ferdighetene er temaene ikke med i alle fag. Målene står i kompetansemål i fagene der temaene er relevante, og læreplanen beskriver hva temaet innebærer i faget.
+    nn: Læreplanverket har tre tverrfaglege tema – folkehelse og livsmeistring, demokrati og medborgarskap, og berekraftig utvikling. Temaa tek utgangspunkt i aktuelle samfunnsutfordringar, og elevane skal arbeide med dei gjennom problemstillingar frå ulike fag. I motsetnad til dei grunnleggjande ferdigheitene er temaa ikkje med i alle fag. Måla står i kompetansemål i faga der temaa er relevante, og læreplanen beskriv kva temaet inneber i faget.
+  kilder:
+    - { id: udir-overordnet-del, punkt: "2.5 Tverrfaglige temaer", url: "https://www.udir.no/lk20/overordnet-del/prinsipper-for-laring-utvikling-og-danning/tverrfaglige-temaer/" }
+    - { id: udir-grep, punkt: "Tverrfaglige temaer (TT1–TT3) i læreplanene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at temaene «ikke er med i alle fag», ut fra at målene står i kompetansemål i fagene der det er relevant?"
+  stikkord: [folkehelse, livsmestring, demokrati, medborgerskap, bærekraftig utvikling, bærekraft]
+  relatert: [grunnleggende-ferdigheter, overordnet-del, laereplanverket]

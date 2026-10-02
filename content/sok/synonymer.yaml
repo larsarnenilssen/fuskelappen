@@ -39,3 +39,11 @@ grupper:
   - { kanonisk: veiledning, varianter: [rettleiing] }
   - { kanonisk: veileder, varianter: [rettleiar] }
   - { kanonisk: sakkyndig, varianter: [sakkunnig] }
+  # Læreplanverket (pakke 6, avgjørelse 037).
+  - { kanonisk: overordnet, varianter: [overordna] }
+  - { kanonisk: grunnleggende, varianter: [grunnleggjande] }
+  - { kanonisk: ferdighet, varianter: [ferdigheit] }
+  - { kanonisk: tverrfaglig, varianter: [tverrfagleg] }
+  - { kanonisk: livsmestring, varianter: [livsmeistring] }
+  - { kanonisk: bærekraftig, varianter: [berekraftig] }
+  - { kanonisk: medborgerskap, varianter: [medborgarskap] }

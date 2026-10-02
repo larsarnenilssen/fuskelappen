@@ -11,7 +11,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { alleDeler, type Del, type OverordnetDel, overordnetDelSkjema } from '../src/modules/laereplanverket/skjema.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
-import { lagTre, lesMeny, lesTekst, lesTittel, type Tre, type Menypunkt } from './udir/overordnet.ts';
+import { lagTre, lesMeny, lesTekst, lesTittel, type Tre, type Menypunkt, ukjenteElementer } from './udir/overordnet.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const UDIR = 'https://www.udir.no';
@@ -36,6 +36,10 @@ async function hentSide(url: string): Promise<string> {
 async function lagDel(p: Tre<Menypunkt>): Promise<Del> {
   const url = `${UDIR}${p.href}`;
   const [nb, nn] = await Promise.all([hentSide(url), hentSide(`${url}?lang=nno`)]);
+  // Står det noe annet enn avsnitt, lister og sitater i teksten (f.eks. tabeller), stopper hentingen, så ingen
+  // tekst blir borte uten at det merkes.
+  const ukjente = [...new Set([...ukjenteElementer(nb), ...ukjenteElementer(nn)])];
+  if (ukjente.length > 0) throw new Error(`${url} har innhold appen ikke leser: ${ukjente.join(', ')}. Forrige henting beholdes.`);
   const tb = lesTekst(nb);
   const tn = lesTekst(nn);
   const deler: Del[] = [];

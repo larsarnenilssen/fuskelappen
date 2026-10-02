@@ -48,6 +48,10 @@ export function Blokker({ blokker, klasse }: { blokker: readonly Blokk[]; klasse
           <p key={i} class={klasse}>
             {b.tekst}
           </p>
+        ) : b.type === 'sitat' ? (
+          <blockquote key={i} class="od-sitat">
+            {b.tekst}
+          </blockquote>
         ) : (
           <ul key={i} class={klasse}>
             {b.punkter.map((p, j) => (
