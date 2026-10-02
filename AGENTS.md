@@ -38,6 +38,7 @@ En endring er ikke ferdig før alle er grønne.
 ## Arbeidsmåte
 
 - Følg fasene i `OPPDRAG.md`. Stopp ved hvert kontrollpunkt med en kort oppsummering: hva er bygget, hva må eier kontrollere, hva er åpent.
+- Hver fase startes i en ny samtale med arbeidsordren i `docs/arbeidsordrer/fase-N.md` (eier 02.10.2026). Når en fase er levert, skrives arbeidsordren for neste fase.
 - Arbeid på en egen gren per fase eller oppgave, og slå sammen til `main` via PR med grønn CI.
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
 - Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
