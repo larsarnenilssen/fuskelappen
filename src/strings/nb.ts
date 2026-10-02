@@ -263,7 +263,7 @@ export const nb = {
     },
     fag: {
       navn: 'Fag og læreplaner',
-      beskrivelse: 'Læreplaner, kompetansemål og vurdering.',
+      beskrivelse: 'Kompetansemål, vurdering og timer.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',

@@ -22,7 +22,7 @@ function Lenke({ inngang, modul }: { inngang: Inngang; modul: string }) {
   );
 }
 
-function Flere({ modul, tittel, liste }: { modul: Modulmanifest; tittel: string; liste: Inngang[] }) {
+function Flere({ modul, tittel, under, liste }: { modul: Modulmanifest; tittel: string; under?: string; liste: Inngang[] }) {
   const { malform } = useTekst();
   const [lukket, veksle] = useSammenlagt(`forside-flere-${modul.id}`, true);
   const id = useId();
@@ -33,7 +33,7 @@ function Flere({ modul, tittel, liste }: { modul: Modulmanifest; tittel: string;
         <Ikon navn={liste[0]?.ikon ?? modul.ikon} />
         <span class="listelenke-tekst">
           <span class="listelenke-tittel">{tittel}</span>
-          <span class="listelenke-under">{`${navn.join(', ')}.`}</span>
+          <span class="listelenke-under">{under ?? `${navn.join(', ')}.`}</span>
         </span>
         <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
       </button>
@@ -64,7 +64,7 @@ export function Innganger({ moduler }: { moduler: readonly Modulmanifest[] }) {
             </li>
           )),
           ...(flere.length > 0
-            ? [<Flere key={`${m.id}-flere`} modul={m} tittel={m.flereTittel ? visTekst(m.flereTittel, malform) : t('forside.flere')} liste={flere} />]
+            ? [<Flere key={`${m.id}-flere`} modul={m} tittel={m.flereTittel ? visTekst(m.flereTittel, malform) : t('forside.flere')} under={m.flereUnder ? visTekst(m.flereUnder, malform) : undefined} liste={flere} />]
             : []),
         ];
       })}

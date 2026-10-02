@@ -15,10 +15,12 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
   kalkulatorer: {
     tittel: 'Kalkulatorar',
     flere: 'Fleire kalkulatorar',
+    flereUnder: 'Sysselsetjing, vikar og overtid.',
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      forside: 'Fag, funksjonar, periodesysselsetjing, fordeling av arbeidstida og løn.',
+      // Den mjuke bindestreken (\u00ad) deler ordet på smale skjermar.
+      forside: 'Fag, funksjonar, periode\u00adsysselsetjing, fordeling av arbeidstida og løn.',
       beskrivelse: 'Fag og funksjonar mot stillingsprosenten for heile skuleåret eller ein periode (periodesysselsetjing), med fordelinga av arbeidstida og løn.',
     },
     beskjeftigelse: {

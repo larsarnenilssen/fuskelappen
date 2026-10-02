@@ -263,7 +263,7 @@ export const nn: Tekster = {
     },
     fag: {
       navn: 'Fag og læreplanar',
-      beskrivelse: 'Læreplanar, kompetansemål og vurdering.',
+      beskrivelse: 'Kompetansemål, vurdering og timar.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
