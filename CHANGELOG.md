@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.16.1] – 2026-10-02
+
+### Endret
+
+- **Fagarket:** Når årsrammen varierer med program og trinn, står årsrammen for hvert program i en utvidelse av ruten «Årsramme». Den er lukket til du trykker på «Se alle».
+
+### Rettet
+
+- **Nye versjoner:** Appen ser etter en ny versjon også når du går tilbake til den, og hver time mens den er åpen, ikke bare når den starter. En installert app som har ligget i bakgrunnen, viser da «Ny versjon er klar». Har du lukket varselet, kommer det igjen neste gang du går tilbake til appen.
+
 ## [0.16.0] – 2026-10-02
 
 ### Endret

@@ -211,6 +211,8 @@ function regnUtIArbeidsplan(kode: string, fag: Fag, r: Koblingsresultat) {
 function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag; r: Koblingsresultat | null; indeks: Fagindeks; malform: Malform }) {
   const { t } = useTekst();
   const kjent = r !== null && r.status !== 'ukoblet';
+  const [visRader, settVisRader] = useState(false);
+  const raderId = useId();
   return (
     <section class="nokkeltall-kort" aria-label={t('fag.side.nokkeltall')}>
       <div class="nokkeltall">
@@ -230,27 +232,30 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
                 <span class="nokkeltall-enhet">{t('fag.side.arsrammeEnhet', { t45: formaterTall(r.kandidat.rad.t45) })}</span>
               </>
             ) : (
-              <>
+              // Rutene for hvert program står i en utvidelse av ruten, lukket til brukeren åpner den (eier 02.10.2026).
+              <button type="button" class="nokkeltall-utvid" aria-expanded={visRader} aria-controls={raderId} onClick={() => settVisRader(!visRader)}>
                 <span class="nokkeltall-verdi">{t('fag.side.arsrammeVarierer')}</span>
                 <span class="nokkeltall-enhet">{t('fag.side.arsrammeAvhenger')}</span>
-              </>
+                <span class="nokkeltall-vis">
+                  {t('fag.side.arsrammeVis', { antall: formaterTall(r.kandidater.length) })}
+                  <Ikon navn={visRader ? 'opp' : 'ned'} class="ikon-liten" />
+                </span>
+              </button>
             )}
           </div>
         )}
       </div>
       {kjent && r.status === 'flertydig' && (
-        <ul class="tett nokkeltall-rader">
+        <dl id={raderId} class="nokkeltall-rader" hidden={!visRader}>
           {r.kandidater.map((k) => (
-            <li key={`${k.program}-${k.trinn}-${k.rad.nr}`}>
-              {t('fag.side.arsrammeRad', {
-                program: programTekst(indeks, k.program, malform),
-                trinn: trinnTekst(t, k.trinn as Fag['trinn'][number]),
-                t60: formaterTall(k.rad.t60),
-                t45: formaterTall(k.rad.t45),
-              })}
-            </li>
+            <div key={`${k.program}-${k.trinn}-${k.rad.nr}`}>
+              <dt>
+                {programTekst(indeks, k.program, malform)} {trinnTekst(t, k.trinn as Fag['trinn'][number])}
+              </dt>
+              <dd class="tall">{t('fag.side.arsrammeProgramVerdi', { t60: formaterTall(k.rad.t60), t45: formaterTall(k.rad.t45) })}</dd>
+            </div>
           ))}
-        </ul>
+        </dl>
       )}
       {kjent && (
         <div class="nokkeltall-bunn">
