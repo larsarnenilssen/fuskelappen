@@ -4,6 +4,29 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.19.0] – 2026-10-02
+
+### Endret
+
+- **Opplæringsløp er lettere å få oversikt over:**
+  - Løpet i et program viser vg1 først. Vg2 og vg3 åpnes med en knapp, og strekene i treet ender ved siste tilbud.
+  - Tilbudet viser timene i alt med en stolpe som viser fordelingen. Fellesfag, felles programfag og programfag til valg har hver sin rubrikk med timene i overskriften.
+  - Hvert fag står på én linje med lenken i navnet. Tverrfaglig eksamen og muntlige koder står nederst i rubrikken.
+  - Alle rubrikker kan legges sammen, også «Videre», «For særskilte skoler» og «Andre programområder i programmet».
+  - Lange lister med fag å velge blant har søk og står i grupper: programfag til valg etter programområde (f.eks. Realfag, Idrettsfag), og så etter læreplan.
+  - «Tilpassede ordninger» viser fagene som ikke er med, som kommer til og som har andre timer.
+  - Navnene fra rundskrivet står på nynorsk når du har valgt nynorsk.
+  - Der rundskrivet og Grep ikke stemmer overens, står det en kort merknad.
+- **Arbeidsplan:** «Funksjon 1» vises først når du trykker «Legg til funksjon».
+
+### Lagt til
+
+- **Opplæringsløp:**
+  - Søk etter tilbud på oversikten.
+  - Sti tilbake til programmet øverst på tilbudet.
+  - «Regn ut i Arbeidsplan» legger fagene i tilbudet inn i en ny arbeidsplan.
+- **Fagarket:** «Inngår i tilbud» viser hvordan faget inngår i hvert tilbud, med timene.
+
 ## [0.18.0] – 2026-10-02
 
 ### Lagt til

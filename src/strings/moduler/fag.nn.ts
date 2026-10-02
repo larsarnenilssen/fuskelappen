@@ -99,7 +99,7 @@ export const fagNn: Skjema<typeof fagNb> = {
     omProgramomrade: 'Kva er eit programområde?',
     arstimerMangler: 'Ikkje oppgitt i Grep',
     program: 'Utdanningsprogram',
-    programomrader: 'Programområde ({antall})',
+    programomrader: 'Inngår i tilbod ({antall})',
     vurdering: 'Vurderingsordning',
     vurderingIngress: 'Vurderingsordninga i læreplanen står nedanfor.',
     elev: 'Elevar',

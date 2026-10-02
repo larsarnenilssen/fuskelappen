@@ -92,7 +92,7 @@ test.describe('fag og læreplaner', () => {
     // Delene kan lukkes: kompetansemål og vurdering er åpne, programområdene lukket.
     await expect(page.getByRole('button', { name: /^Kompetansemål og læreplan/ })).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByRole('button', { name: 'Vurderingsordning', exact: true })).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.getByRole('button', { name: /^Programområder/ })).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.getByRole('button', { name: /^Inngår i tilbud/ })).toHaveAttribute('aria-expanded', 'false');
     await expect(page.getByRole('link', { name: 'Om begrepet felles programfag' })).toHaveAttribute('href', '#/begreper/felles-programfag');
     await ramme.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
     await expect(page.locator('main h1')).toHaveText('Arbeidsplan');

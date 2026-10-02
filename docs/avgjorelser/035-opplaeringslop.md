@@ -15,3 +15,5 @@
 - Linjenavnene i tabellen («Norsk», «Felles programfag fra eget programområde») er rundskrivets tekst og vises uoversatt på bokmål.
 
 **Konsekvens:** Tilbudene følger Grep og rundskrivet hver gang appen bygges, uten egne datafiler. Avvik mellom rundskrivet og Grep vises ikke i appen. De står i `docs/TILBUDSSTRUKTUR.md` til eiers kontroll.
+
+**Endret:** Avgjørelse 036 (0.19.0) viser avvikene i appen og linjenavnene på nynorsk.

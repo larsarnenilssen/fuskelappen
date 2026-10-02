@@ -245,6 +245,7 @@ export const arbeidstidNn: Skjema<typeof arbeidstidNb> = {
     fordelingPeriode: 'Timane gjeld perioden: {dager} av {skolear} undervisningsdagar.',
     lonnIAlt: 'Løn i året',
     tilleggNavn: 'Tillegg',
+    funksjonerIngen: 'Ingen lagde inn',
     funksjonerOppsummering: '{antall} lagde inn, {prosent} %',
     moterOppsummering: 'møte {timer} t per veke',
     lonnOppsummering: 'løn blir rekna ut',

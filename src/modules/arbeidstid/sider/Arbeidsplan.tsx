@@ -14,7 +14,7 @@ import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, 
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Periodelinje, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
 import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
-import { Funksjoner, type Livsfase, Livsfasekort, livsfaseregler, nyFunksjon, reserverFunksjonsider, tilFunksjon, tilleggsforslag, utvider } from '../komponenter/Funksjoner.tsx';
+import { Funksjoner, type Funksjonstilstand, type Livsfase, Livsfasekort, livsfaseregler, reserverFunksjonsider, tilFunksjon, tilleggsforslag, utvider } from '../komponenter/Funksjoner.tsx';
 import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
@@ -59,7 +59,8 @@ export default function Arbeidsplan() {
     () => ({
       stilling: 100 as number | null,
       grupper: [nyGruppe()],
-      funksjoner: [nyFunksjon()],
+      // Ingen funksjon før brukeren trykker «Legg til funksjon» (eier 02.10.2026).
+      funksjoner: [] as Funksjonstilstand[],
       timerIGruppe: null as number | null,
       moter: null as number | null,
       visLonn: false,
@@ -516,7 +517,11 @@ export default function Arbeidsplan() {
         del="funksjoner"
         tittel={t('arbeidstid.arbeidsplan.funksjoner')}
         sum={resultat && resultat.funksjon.verdi > 0 ? `${tallTekst(vis(resultat.funksjon.verdi))} %` : null}
-        oppsummering={t('arbeidstid.arbeidsplan.funksjonerOppsummering', { antall: s.funksjoner.length, prosent: tallTekst(prosenter.reduce((sum, p) => sum + p, 0)) })}
+        oppsummering={
+          s.funksjoner.length === 0
+            ? t('arbeidstid.arbeidsplan.funksjonerIngen')
+            : t('arbeidstid.arbeidsplan.funksjonerOppsummering', { antall: s.funksjoner.length, prosent: tallTekst(prosenter.reduce((sum, p) => sum + p, 0)) })
+        }
       >
         <Funksjoner
           funksjoner={s.funksjoner}

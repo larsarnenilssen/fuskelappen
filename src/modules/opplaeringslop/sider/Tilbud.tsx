@@ -1,142 +1,407 @@
-// Et tilbud (programområde): fag og timer etter rundskrivet Udir-1, plassene for valgfrie fag og yrkesfaglig
-// fordypning, hva tilbudet bygger på og fører videre til, og lenker til Vilbli for skolene som har det (avgjørelse 027).
-// Linjenavnene («Norsk», «Felles programfag fra eget utdanningsprogram») er rundskrivets tekst og vises uoversatt.
-import { useId, useState } from 'preact/hooks';
+// Et tilbud (programområde): timene og hvordan de fordeler seg, fagene i rubrikker for fellesfag, felles programfag,
+// programfag til valg og yrkesfaglig fordypning, hva tilbudet bygger på og fører videre til, og lenker til Vilbli for
+// skolene som har det (avgjørelse 027). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
+// Linjenavnene fra rundskrivet («Norsk», «Fremmedspråk») står på valgt målform (navn.ts). Avvik mellom rundskrivet og
+// Grep vises som en nøytral merknad der de gjelder (eier 02.10.2026).
+import { useEffect, useState } from 'preact/hooks';
+import { naviger } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
+import { finnKobling } from '../../arbeidstid/beregning/index.ts';
+import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
+import { nyGruppe, useKoblingsdata } from '../../arbeidstid/komponenter/Skjema.tsx';
+import { overforSkjema } from '../../arbeidstid/kontekst.ts';
+import { lastFagroller } from '../../fag/data.ts';
+import { fellesStart } from '../../fag/klasser.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
-import type { Tilbudsdel } from '../../fag/tilbud/modell.ts';
+import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
 import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, type Tilbudsdata } from '../data.ts';
-import { Faglenke, Fagkoder, Lasting, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { linjenavn, ordning } from '../navn.ts';
+import { Brodsmuler, Faglenke, Fagkoder, Fagvalg, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
 
-/** Så mange fagkoder vises med en gang. Flere står i en liste som brukeren åpner. */
+type Kategori = Tilbudsdel['kategori'];
+type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;
+type Plassdel = Extract<Tilbudsdel, { type: 'plass' }>;
+
+/** Rekkefølgen på rubrikkene, og fargen til fagtypen hver rubrikk har (som i fagsøket og på fagarket). */
+const KATEGORIER: readonly { kategori: Kategori; farge: string }[] = [
+  { kategori: 'fellesfag', farge: 'fellesfag' },
+  { kategori: 'felles_programfag', farge: 'felles_programfag' },
+  { kategori: 'fordypning', farge: 'valgfritt_programfag' },
+  { kategori: 'valgfritt', farge: 'valgfritt_programfag' },
+  { kategori: 'yff', farge: 'yrkesfaglig_fordypning' },
+  { kategori: 'opphenting', farge: 'andre' },
+];
+
+/** Så mange fagkoder vises med en gang. Flere står i en liste med søk. */
 const FAA = 4;
+/** Så mange tilbud vises med rubrikken åpen. Flere (f.eks. kryssløp fra vg1 studiespesialisering) er lukket. */
+const MANGE_TILBUD = 6;
 
-function Fagdel({ del, indeks }: { del: Extract<Tilbudsdel, { type: 'fag' }>; indeks: Fagindeks }) {
+/** «Norsk/norsk for elever med samisk/…» → «Norsk». Resten står i rundskrivet og gjelder tilpassede ordninger. */
+const kortLinje = (linje: string, malform: 'nb' | 'nn') => {
+  const tekst = linjenavn(linje, malform).tekst;
+  return tekst.split('/')[0]?.trim() ?? tekst;
+};
+
+/** Ett fag på én linje: navnet er lenken til fagarket, timene står til høyre. */
+function Fagrad({ navn, timer, href, under }: { navn: string; timer: number | null; href?: string | null; under?: preact.ComponentChildren }) {
+  return (
+    <li class="fagrad">
+      <div class="fagrad-topp">
+        {href ? (
+          <a class="fagrad-navn" href={href}>
+            {navn}
+          </a>
+        ) : (
+          <span class="fagrad-navn">{navn}</span>
+        )}
+        <span class="fagrad-timer tall">{timer === null ? '' : formaterTall(timer)}</span>
+      </div>
+      {under}
+    </li>
+  );
+}
+
+function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>> }) {
   const { t, malform } = useTekst();
-  // Felles programfag tas alle, med timene for hvert fag. I fellesfag velger eleven ett av fagene (f.eks. 1P eller 1T).
-  const alle = del.kategori === 'felles_programfag';
+  const en = del.koder.length === 1 ? del.koder[0] : null;
+  // «Matematikk 1P» og «Matematikk 1T» blir «1P» og «1T»: det navnene har felles, står alt i linjen.
+  const felles = fellesStart(del.koder.map((k) => indeks.fag[k]?.navn[malform] ?? k));
+  const kortnavn = (navn: string) => navn.slice(felles.length).trim() || navn;
+  return (
+    <Fagrad
+      navn={kortLinje(del.linje, malform)}
+      timer={del.timer}
+      href={en ? `#/fag/${en}` : null}
+      under={
+        del.koder.length > 1 &&
+        (del.koder.length > FAA ? (
+          <Fagvalg indeks={indeks} koder={del.koder} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.velgEn', { antall: formaterTall(del.koder.length) })} />
+        ) : (
+          <p class="fagrad-valg">
+            {t('opplaeringslop.tilbud.velgEnKort')}{' '}
+            {del.koder.map((k, i) => (
+              <span key={k}>
+                {i > 0 && ' · '}
+                <a href={`#/fag/${k}`}>{kortnavn(indeks.fag[k]?.navn[malform] ?? k)}</a>
+              </span>
+            ))}
+          </p>
+        ))
+      }
+    />
+  );
+}
+
+/** Felles programfag: hvert fag med timene sine. Utvalg over flere trinn eller blant fag i samme læreplan står under. */
+function Programfag({ del, indeks }: { del: Fagdel; indeks: Fagindeks }) {
+  const { t, malform } = useTekst();
   return (
     <>
-      {alle ? (
-        <ul class="tett tilbud-fagliste">
-          {del.koder.map((k) => (
-            <li key={k}>
-              <Faglenke indeks={indeks} kode={k} timer />
-            </li>
-          ))}
-        </ul>
-      ) : del.koder.length > 1 && del.koder.length > FAA ? (
-        <Fagkoder indeks={indeks} koder={del.koder} tittel={t('opplaeringslop.tilbud.velgEn', { antall: formaterTall(del.koder.length) })} />
-      ) : (
-        <>
-          {del.koder.length > 1 && <p class="tilbud-merknad">{t('opplaeringslop.tilbud.velgEn', { antall: formaterTall(del.koder.length) })}</p>}
-          <ul class="tett tilbud-fagliste">
-            {del.koder.map((k) => (
-              <li key={k}>
-                <Faglenke indeks={indeks} kode={k} />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      {del.koder.map((k) => (
+        <Fagrad key={k} navn={indeks.fag[k]?.navn[malform] ?? k} timer={indeks.fag[k]?.timer ?? null} href={`#/fag/${k}`} />
+      ))}
       {del.utvalg && (
-        <div class="tilbud-utvalg">
-          <p class="tilbud-merknad">
-            {del.utvalg.grunn === 'flere_trinn'
-              ? t('opplaeringslop.tilbud.utvalgFlereTrinn', { timer: formaterTall(del.utvalg.timer) })
+        <Fagrad
+          navn={
+            del.utvalg.grunn === 'flere_trinn'
+              ? t('opplaeringslop.tilbud.utvalgFlereTrinnKort')
               : del.utvalg.antall
-                ? t('opplaeringslop.tilbud.utvalgValg', { timer: formaterTall(del.utvalg.timer), antall: formaterTall(del.utvalg.antall) })
-                : t('opplaeringslop.tilbud.utvalgValgFritt', { timer: formaterTall(del.utvalg.timer) })}
-          </p>
-          <ul class="tett tilbud-fagliste">
-            {del.utvalg.koder.map((k) => (
-              <li key={k}>
-                <Faglenke indeks={indeks} kode={k} timer />
-              </li>
-            ))}
-          </ul>
-          {del.utvalg.rekker.length > 0 && (
-            <p class="tilbud-merknad">
-              {t('opplaeringslop.tilbud.rekkefolge')}: {del.utvalg.rekker.map((r) => r.join(' → ')).join('; ')}
-            </p>
-          )}
-        </div>
+                ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(del.utvalg.antall) })
+                : t('opplaeringslop.tilbud.utvalgValgKort')
+          }
+          timer={del.utvalg.timer}
+          under={
+            <>
+              <ul class="tett tilbud-fagliste">
+                {del.utvalg.koder.map((k) => (
+                  <li key={k}>
+                    <Faglenke indeks={indeks} kode={k} timer />
+                  </li>
+                ))}
+              </ul>
+              {del.utvalg.rekker.length > 0 && (
+                <p class="fagrad-valg">
+                  {t('opplaeringslop.tilbud.rekkefolge')}: {del.utvalg.rekker.map((r) => r.join(' → ')).join('; ')}
+                </p>
+              )}
+            </>
+          }
+        />
       )}
-      {del.vurdering.length > 0 && (
-        <Fagkoder indeks={indeks} koder={del.vurdering} tittel={`${t('opplaeringslop.tilbud.vurdering')} (${formaterTall(del.vurdering.length)})`} />
-      )}
-      {del.alternativer.length > 0 && (
-        <Fagkoder indeks={indeks} koder={del.alternativer} tittel={t('opplaeringslop.tilbud.alternativer', { antall: formaterTall(del.alternativer.length) })} />
-      )}
-      {del.lantFra && (
-        <p class="tilbud-merknad dempet">{t('opplaeringslop.tilbud.lantFra', { tilbud: tilbudsnavn(t, indeks, del.lantFra, malform) })}</p>
-      )}
+      {del.lantFra && <p class="fagrad-valg dempet">{t('opplaeringslop.tilbud.lantFra', { tilbud: tilbudsnavn(t, indeks, del.lantFra, malform) })}</p>}
     </>
   );
 }
 
-function Plassdel({ del, indeks }: { del: Extract<Tilbudsdel, { type: 'plass' }>; indeks: Fagindeks }) {
-  const { t } = useTekst();
-  const kandidater = formaterTall(del.kandidater.length);
+function Plass({ del, indeks, laereplaner, trinn }: { del: Plassdel; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>>; trinn: string }) {
+  const { t, malform } = useTekst();
   if (del.kategori === 'yff') {
     const andre = del.kandidater.filter((k) => k !== del.anbefalt);
     return (
-      <>
-        {del.anbefalt && (
-          <>
-            <p class="tilbud-merknad">{t('opplaeringslop.tilbud.anbefalt')}:</p>
-            <ul class="tett tilbud-fagliste">
-              <li>
-                <Faglenke indeks={indeks} kode={del.anbefalt} />
-              </li>
-            </ul>
-          </>
-        )}
-        <Fagkoder indeks={indeks} koder={andre} tittel={t('opplaeringslop.tilbud.andreKoder', { antall: formaterTall(andre.length) })} />
-      </>
+      <Fagrad
+        navn={del.anbefalt ? (indeks.fag[del.anbefalt]?.navn[malform] ?? del.anbefalt) : kortLinje(del.linje, malform)}
+        timer={del.timer}
+        href={del.anbefalt ? `#/fag/${del.anbefalt}` : null}
+        under={<Fagkoder indeks={indeks} koder={andre} tittel={t('opplaeringslop.tilbud.andreKoder', { antall: formaterTall(andre.length) })} />}
+      />
     );
   }
-  const tekst = del.antall
-    ? t(del.kategori === 'fordypning' ? 'opplaeringslop.tilbud.plassFordypning' : 'opplaeringslop.tilbud.plassValgfritt', { antall: formaterTall(del.antall), kandidater })
-    : t('opplaeringslop.tilbud.plassUtenAntall', { kandidater });
-  return <Fagkoder indeks={indeks} koder={del.kandidater} tittel={tekst} />;
+  return (
+    <Fagrad
+      navn={del.antall ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(del.antall) }) : kortLinje(del.linje, malform)}
+      timer={del.timer}
+      under={
+        <Fagvalg
+          indeks={indeks}
+          koder={del.kandidater}
+          laereplaner={laereplaner}
+          // Programfag til valg kan tas fra hele utdanningsprogrammet. De grupperes etter programområde.
+          {...(del.kategori === 'valgfritt' ? { trinn } : {})}
+          tittel={t('opplaeringslop.tilbud.blantFag', { antall: formaterTall(del.kandidater.length) })}
+        />
+      }
+    />
+  );
 }
 
-/** Så mange tilbud vises med en gang. Flere (f.eks. kryssløp fra vg1 studiespesialisering) står i en liste som brukeren åpner. */
-const MANGE_TILBUD = 6;
+/**
+ * En tilpasset ordning (en kolonne i rundskrivet) med fagene delt i tre: fag som ikke er med, fag som kommer til,
+ * og fag med andre timer enn i den ordinære fordelingen. «–» i rundskrivet betyr at faget ikke er med (eier 02.10.2026).
+ * Linjenavnene står på valgt målform når de er oversatt (se navn.ts).
+ */
+function Tilpasningen({ tilpasning, ordinart }: { tilpasning: Tilpasning; ordinart: number | null }) {
+  const { t, malform } = useTekst();
+  const navn = ordning(tilpasning.navn);
+  const ln = (l: Tilpasning['linjer'][number]) => linjenavn(l.linje, malform).tekst;
+  const med = (n: number | null) => n !== null && n > 0;
+  const grupper = [
+    { nokkel: 'ikkeMed', linjer: tilpasning.linjer.filter((l) => med(l.ordinar) && !med(l.timer)), tekst: (l: Tilpasning['linjer'][number]) => t('opplaeringslop.tilbud.tilpasningFag', { linje: ln(l), timer: formaterTall(l.ordinar ?? 0) }) },
+    { nokkel: 'kommerTil', linjer: tilpasning.linjer.filter((l) => !med(l.ordinar) && med(l.timer)), tekst: (l: Tilpasning['linjer'][number]) => t('opplaeringslop.tilbud.tilpasningFag', { linje: ln(l), timer: formaterTall(l.timer ?? 0) }) },
+    {
+      nokkel: 'endret',
+      linjer: tilpasning.linjer.filter((l) => med(l.ordinar) && med(l.timer)),
+      tekst: (l: Tilpasning['linjer'][number]) => t('opplaeringslop.tilbud.tilpasningEndret', { linje: ln(l), fra: formaterTall(l.ordinar ?? 0), til: formaterTall(l.timer ?? 0) }),
+    },
+  ] as const;
+  return (
+    <section class="tilpasning">
+      <h3 class="tilpasning-tittel">
+        {navn ? <span>{t(`opplaeringslop.tilbud.tilpasningNavn.${navn}`)}</span> : <span lang="nb">{tilpasning.navn}</span>}
+        {tilpasning.total !== null && (
+          <span class="tilpasning-total tall">
+            {ordinart !== null && ordinart !== tilpasning.total
+              ? t('opplaeringslop.tilbud.tilpasningTotalOrdinart', { timer: formaterTall(tilpasning.total), ordinart: formaterTall(ordinart) })
+              : t('opplaeringslop.tilbud.tilpasningTotal', { timer: formaterTall(tilpasning.total) })}
+          </span>
+        )}
+      </h3>
+      <dl class="tilpasning-grupper">
+        {grupper.map(
+          (g) =>
+            g.linjer.length > 0 && (
+              <div key={g.nokkel}>
+                <dt>{t(`opplaeringslop.tilbud.tilpasningGruppe.${g.nokkel}`)}</dt>
+                {g.linjer.map((l) => (
+                  <dd key={l.linje} {...(linjenavn(l.linje, malform).kilde ? { lang: 'nb' } : {})}>
+                    {g.tekst(l)}
+                  </dd>
+                ))}
+              </div>
+            ),
+        )}
+      </dl>
+    </section>
+  );
+}
 
-/** Tilbudene under en overskrift, f.eks. «Videre» eller «Bygger på». */
-function Tilbudsliste({ tittel, koder, indeks, via }: { tittel: string; koder: readonly string[]; indeks: Fagindeks; via?: string }) {
-  const [vis, settVis] = useState(koder.length <= MANGE_TILBUD);
-  const id = useId();
+/** Avvik mellom rundskrivet og Grep som en nøytral merknad (eier 02.10.2026). Teksten følger dataene. */
+function Avviksmerknad({ avvik }: { avvik: readonly Avvik[] }) {
+  const { t, malform } = useTekst();
+  const tekster = avvik.flatMap((a) => {
+    switch (a.type) {
+      case 'fellesfagTimer':
+        return [t('opplaeringslop.tilbud.avvik.fellesfagTimer', { linje: linjenavn(a.linje, malform).tekst, rundskriv: formaterTall(a.rundskriv), grep: a.grep.map((n) => formaterTall(n)).join(', ') })];
+      case 'ingenFagkode':
+        return [t('opplaeringslop.tilbud.avvik.ingenFagkode', { linje: linjenavn(a.linje, malform).tekst })];
+      case 'ingenProgramfag':
+        return [t('opplaeringslop.tilbud.avvik.ingenProgramfag')];
+      case 'programfagTimer':
+        return [t('opplaeringslop.tilbud.avvik.programfagTimer', { rundskriv: formaterTall(a.rundskriv), grep: formaterTall(a.grep) })];
+      // Når kodene er hentet fra et annet tilbud, står det allerede under fagene.
+      case 'ingenFellesfag':
+        return a.lant ? [] : [t('opplaeringslop.tilbud.avvik.ingenFellesfag')];
+      case 'sum':
+        return [t('opplaeringslop.tilbud.avvik.sum', { sum: formaterTall(a.sum), totalt: formaterTall(a.totalt) })];
+      // Ukjente linjer fanges av testene og kontrollsaken.
+      case 'ukjentLinje':
+        return [];
+    }
+  });
+  if (tekster.length === 0) return null;
+  return (
+    <div class="merknad tilbud-avvik">
+      {tekster.map((tekst) => (
+        <p key={tekst}>{tekst}</p>
+      ))}
+    </div>
+  );
+}
+
+/** Fordelingen av timene som en stolpe i fargene til fagtypene, med tallene i en forklaring under. */
+function Sammensetning({ tb }: { tb: Tilbudsdata }) {
+  const { t } = useTekst();
+  const deler = KATEGORIER.map((k) => ({ ...k, timer: tb.deler.filter((d) => d.kategori === k.kategori).reduce((s, d) => s + d.timer, 0) })).filter((k) => k.timer > 0);
+  if (tb.sum <= 0) return null;
+  const tekst = deler.map((d) => `${t(`opplaeringslop.tilbud.kategori.${d.kategori}`)} ${formaterTall(d.timer)}`).join(', ');
+  return (
+    <section class="nokkeltall-kort tilbud-sammensetning" aria-label={t('opplaeringslop.tilbud.sammensetning')}>
+      <div class="tilbud-totalt">
+        <span class="nokkeltall-verdi tall">{formaterTall(tb.sum)}</span>
+        <span class="nokkeltall-enhet">{t('opplaeringslop.tilbud.timerHjelp')}</span>
+      </div>
+      <div class="tilbud-stolpe" role="img" aria-label={tekst}>
+        {deler.map((d) => (
+          <span key={d.kategori} data-fagtype={d.farge} style={{ flexGrow: d.timer }} />
+        ))}
+      </div>
+      <ul class="tilbud-forklaring">
+        {deler.map((d) => (
+          <li key={d.kategori} data-fagtype={d.farge}>
+            <span class="tilbud-forklaring-farge" aria-hidden="true" />
+            {t(`opplaeringslop.tilbud.kategori.${d.kategori}`)} <span class="tall">{formaterTall(d.timer)}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/** Fagene i rubrikker per kategori. Vurderingskoder (muntlig, tverrfaglig eksamen) og alternativer står nederst i rubrikken. */
+function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Tilbudsdata; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>> }) {
+  const { t } = useTekst();
+  return (
+    <>
+      {KATEGORIER.map(({ kategori, farge }) => {
+        const deler = tb.deler.filter((d) => d.kategori === kategori);
+        if (deler.length === 0) return null;
+        const timer = deler.reduce((s, d) => s + d.timer, 0);
+        const fagdeler = deler.filter((d): d is Fagdel => d.type === 'fag');
+        const vurdering = fagdeler.flatMap((d) => d.vurdering);
+        const alternativer = fagdeler.flatMap((d) => d.alternativer);
+        return (
+          <Rubrikk
+            key={kategori}
+            nokkel={`lop-${kortKode(kode)}-${kategori}`}
+            tittel={t(`opplaeringslop.tilbud.kategori.${kategori}`)}
+            hoyre={t('opplaeringslop.tilbud.timer', { timer: formaterTall(timer) })}
+            farge={farge}
+          >
+            <Avviksmerknad avvik={fagdeler.flatMap((d) => d.avvik)} />
+            <ul class="fagrader">
+              {deler.map((d, i) =>
+                d.type === 'plass' ? (
+                  <Plass key={i} del={d} indeks={indeks} laereplaner={laereplaner} trinn={indeks.programomrader[kode]?.trinn ?? ''} />
+                ) : kategori === 'fellesfag' ? (
+                  <Fellesfag key={i} del={d} indeks={indeks} laereplaner={laereplaner} />
+                ) : (
+                  <Programfag key={i} del={d} indeks={indeks} />
+                ),
+              )}
+            </ul>
+            {vurdering.length > 0 &&
+              (kategori === 'felles_programfag' ? (
+                // Tverrfaglig eksamen og muntlige koder for programfagene står nederst i rubrikken (eier 02.10.2026).
+                <div class="rubrikk-bunn">
+                  <p class="liten-overskrift">{t('opplaeringslop.tilbud.eksamen')}</p>
+                  <ul class="tett tilbud-fagliste">
+                    {vurdering.map((k) => (
+                      <li key={k}>
+                        <Faglenke indeks={indeks} kode={k} />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : (
+                <div class="rubrikk-bunn">
+                  <Fagvalg indeks={indeks} koder={vurdering} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.vurderingskoder', { antall: formaterTall(vurdering.length) })} />
+                </div>
+              ))}
+            {alternativer.length > 0 && (
+              <div class="rubrikk-bunn">
+                <Fagvalg indeks={indeks} koder={alternativer} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.alternativer', { antall: formaterTall(alternativer.length) })} />
+              </div>
+            )}
+          </Rubrikk>
+        );
+      })}
+    </>
+  );
+}
+
+/**
+ * Fagene med fast fagkode (fellesfag uten valg og felles programfag) til en ny, ulagret arbeidsplan, hvert fag som
+ * egen gruppe med årstimene. Fag eleven velger, må brukeren legge inn selv (eier 02.10.2026).
+ */
+function faglinjerTilArbeidsplan(tb: Tilbudsdata, kode: string, indeks: Fagindeks, koblingsdata: NonNullable<ReturnType<typeof useKoblingsdata>>) {
+  const po = indeks.programomrader[kode];
+  const faste = tb.deler.flatMap((d) => {
+    if (d.type !== 'fag') return [];
+    if (d.kategori === 'fellesfag') return d.koder.length === 1 && d.koder[0] ? [{ kode: d.koder[0], timer: d.timer }] : [];
+    return d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
+  });
+  return faste.flatMap(({ kode: k, timer }) => {
+    const fag = indeks.fag[k];
+    if (!fag) return [];
+    const valg = po ? { program: po.program, trinn: po.trinn } : {};
+    const r = finnKobling(k, indeks, koblingsdata.tabeller, koblingsdata.rader, valg);
+    return [{ ...nyGruppe(), arsrammer: [fagvalgFraKobling(k, fag.navn, timer, r)], arstimer: timer, arstimerAuto: timer !== null }];
+  });
+}
+
+function TilArbeidsplan({ kode, tb, indeks }: { kode: string; tb: Tilbudsdata; indeks: Fagindeks }) {
+  const { t } = useTekst();
+  const koblingsdata = useKoblingsdata();
+  if (!koblingsdata || !tb.deler.some((d) => d.type === 'fag')) return null;
+  return (
+    <div class="tilbud-arbeidsplan">
+      <a
+        class="knapp knapp-sekundaer knapp-liten"
+        href="#/arbeidstid/arbeidsplan"
+        onClick={(e) => {
+          e.preventDefault();
+          overforSkjema('arbeidsplan', { grupper: faglinjerTilArbeidsplan(tb, kode, indeks, koblingsdata) });
+          naviger('/arbeidstid/arbeidsplan');
+        }}
+      >
+        <Ikon navn="kalkulator" class="ikon-liten" />
+        {t('opplaeringslop.tilbud.tilArbeidsplan')}
+      </a>
+      <p class="liten dempet">{t('opplaeringslop.tilbud.tilArbeidsplanHjelp')}</p>
+    </div>
+  );
+}
+
+/** Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. */
+function Tilbudsliste({ nokkel, tittel, koder, indeks, via }: { nokkel: string; tittel: string; koder: readonly string[]; indeks: Fagindeks; via?: string }) {
   if (koder.length === 0) return null;
   return (
-    <section class="tilbud-lop">
-      <h2 class="liten-overskrift">
-        {koder.length > MANGE_TILBUD ? (
-          <button type="button" class="kortknapp" aria-expanded={vis} aria-controls={id} onClick={() => settVis(!vis)}>
-            <span class="kortknapp-tekst">{`${tittel} (${formaterTall(koder.length)})`}</span>
-            <Ikon navn={vis ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
-          </button>
-        ) : (
-          tittel
-        )}
-      </h2>
-      <ul id={id} class="liste" hidden={!vis}>
+    <Rubrikk nokkel={nokkel} tittel={tittel} hoyre={formaterTall(koder.length)} lukket={koder.length > MANGE_TILBUD}>
+      <ul class="liste">
         {koder.map((k) => (
           <li key={k}>
             <Tilbudslenke indeks={indeks} kode={k} {...(via ? { via } : {})} />
           </li>
         ))}
       </ul>
-    </section>
+    </Rubrikk>
   );
 }
 
@@ -148,59 +413,36 @@ function Vilbli({ kode, indeks, via }: { kode: string; indeks: Fagindeks; via: s
   const fordeling = vilbliLenke(kode, indeks, { side: 'p2', via });
   if (!skoler) return null;
   return (
-    <section class="tilbud-vilbli">
-      <h2 class="liten-overskrift">{t('opplaeringslop.tilbud.vilbliOverskrift')}</h2>
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={t('opplaeringslop.tilbud.vilbliOverskrift')}>
       <p>
-        <a href={skoler} target="_blank" rel="noopener noreferrer">
+        <a class="ekstern-lenke" href={skoler} target="_blank" rel="noopener noreferrer">
           {fylke ? t('opplaeringslop.tilbud.vilbliFylke', { fylke }) : t('opplaeringslop.tilbud.vilbli')}
           <Ikon navn="ekstern" class="ikon-liten" />
         </a>
       </p>
       {fordeling && (
         <p>
-          <a href={fordeling} target="_blank" rel="noopener noreferrer">
+          <a class="ekstern-lenke" href={fordeling} target="_blank" rel="noopener noreferrer">
             {t('opplaeringslop.tilbud.vilbliFordeling')}
             <Ikon navn="ekstern" class="ikon-liten" />
           </a>
         </p>
       )}
       <p class="liten dempet">{t('opplaeringslop.tilbud.vilbliHjelp')}</p>
-    </section>
-  );
-}
-
-function Delene({ tb, indeks }: { tb: Tilbudsdata; indeks: Fagindeks }) {
-  const { t } = useTekst();
-  return (
-    <section class="tilbud-deler" aria-labelledby="tilbud-fag">
-      <h2 id="tilbud-fag" class="liten-overskrift">
-        {t('opplaeringslop.tilbud.fagOgTimer')}
-      </h2>
-      <ol class="tilbud-delliste">
-        {tb.deler.map((d, i) => (
-          <li key={i} class="tilbud-del" data-kategori={d.kategori}>
-            <div class="tilbud-del-topp">
-              <span class="tilbud-linje" lang="nb">
-                {d.linje}
-              </span>
-              <span class="tilbud-timer tall">{formaterTall(d.timer)}</span>
-            </div>
-            {d.type === 'fag' ? <Fagdel del={d} indeks={indeks} /> : <Plassdel del={d} indeks={indeks} />}
-          </li>
-        ))}
-      </ol>
-      <div class="tilbud-del-topp tilbud-sum">
-        <span>{t('opplaeringslop.tilbud.sum')}</span>
-        <span class="tall">{formaterTall(tb.sum)}</span>
-      </div>
-      <p class="liten dempet">{t('opplaeringslop.tilbud.timerHjelp')}</p>
-    </section>
+    </Rubrikk>
   );
 }
 
 export default function Tilbud({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const [data, provIgjen] = useTilbudsdata();
+  const [laereplaner, settLaereplaner] = useState<Readonly<Record<string, string>>>({});
+  useEffect(() => {
+    lastFagroller().then(
+      (r) => settLaereplaner(r.laereplaner),
+      () => undefined,
+    );
+  }, []);
   const kode = fullKode(parametre.tilbud ?? '');
   const via = sporring.get('via');
   const viaKode = via ? fullKode(via) : null;
@@ -222,62 +464,58 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       </div>
     );
   }
+  const k = kortKode(kode);
+  // Påbygging står under programmet brukeren kom fra.
+  const program = (viaKode && indeks.programomrader[viaKode]?.program) || po.program;
   return (
     <article class="side tilbudsside" data-sted={po.sted}>
+      <Brodsmuler
+        ledd={[
+          { tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' },
+          { tekst: indeks.utdanningsprogram[program]?.[malform] ?? program, href: `#/opplaeringslop/${program}` },
+        ]}
+      />
       <h1 tabIndex={-1}>{po.navn[malform]}</h1>
       <ul class="merker fagark-merker" aria-label={t('opplaeringslop.tittel')}>
-        <li class="merke merke-kode">{kortKode(kode)}</li>
+        <li class="merke merke-kode">{k}</li>
         <li class="merke">{trinnTekst(t, po.trinn)}</li>
         <li class="merke">{t(`opplaeringslop.sted.${po.sted}`)}</li>
-        <li>
-          <a class="merke" href={`#/opplaeringslop/${po.program}`}>
-            {indeks.utdanningsprogram[po.program]?.[malform] ?? po.program}
-          </a>
-        </li>
       </ul>
-      <p class="liten">
-        <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
-      </p>
-
-      <Tilbudsliste tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} />
-      <Tilbudsliste tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
 
       {tb.deler.length > 0 ? (
-        <Delene tb={tb} indeks={indeks} />
+        <>
+          <Sammensetning tb={tb} />
+          <Avviksmerknad avvik={tb.avvik.filter((a) => a.type === 'ingenFellesfag' || a.type === 'sum')} />
+          <Fagrubrikker kode={kode} tb={tb} indeks={indeks} laereplaner={laereplaner} />
+          <TilArbeidsplan kode={kode} tb={tb} indeks={indeks} />
+        </>
       ) : (
         <p class="merknad">{po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')}</p>
       )}
 
       {tb.tilpasninger.length > 0 && (
-        <details class="tilbud-tilpasninger">
-          <summary>{t('opplaeringslop.tilbud.tilpasninger', { antall: formaterTall(tb.tilpasninger.length) })}</summary>
-          <ul>
-            {tb.tilpasninger.map((p) => (
-              <li key={p.navn}>
-                <strong lang="nb">{p.navn}</strong>
-                {p.total !== null && ` · ${t('opplaeringslop.tilbud.tilpasningTotal', { timer: formaterTall(p.total) })}`}
-                <ul class="tett">
-                  {p.linjer.map((l) => (
-                    <li key={l.linje} lang="nb">
-                      {t('opplaeringslop.tilbud.tilpasningLinje', { linje: l.linje, fra: l.ordinar === null ? '–' : formaterTall(l.ordinar), til: l.timer === null ? '–' : formaterTall(l.timer) })}
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ))}
-          </ul>
-        </details>
+        <Rubrikk nokkel={`lop-${k}-tilpasninger`} tittel={t('opplaeringslop.tilbud.tilpasningerTittel')} hoyre={formaterTall(tb.tilpasninger.length)} lukket>
+          <p class="liten dempet">{t('opplaeringslop.tilbud.tilpasningHjelp')}</p>
+          {tb.tilpasninger.map((p) => (
+            <Tilpasningen key={p.navn} tilpasning={p} ordinart={tb.totalt} />
+          ))}
+        </Rubrikk>
       )}
 
-      <Tilbudsliste tittel={t('opplaeringslop.tilbud.videre')} koder={tb.videre} indeks={indeks} />
-      <Tilbudsliste tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
-      <Tilbudsliste tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={tb.videre} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
+      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />
 
       <Vilbli kode={kode} indeks={indeks} via={viaKode} />
 
+      <p class="liten">
+        <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
+      </p>
       <Kildeliste
         kilder={[
-          { id: 'udir-grep', punkt: kortKode(kode) },
+          { id: 'udir-grep', punkt: k },
           ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
         ]}
       />

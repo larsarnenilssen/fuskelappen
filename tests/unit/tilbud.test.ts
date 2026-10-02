@@ -1,7 +1,7 @@
 // Tilbudsmodellen (src/modules/fag/tilbud/modell.ts) med små testdata (avgjørelse 024).
 import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
-import { byggerPaa, byggStruktur, byggTilbud, erVariant, rekker, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import { avvikTekst, byggerPaa, byggStruktur, byggTilbud, erVariant, rekker, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
 import { kontrollenker, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
@@ -145,7 +145,9 @@ describe('tilbudet for et programområde', () => {
   it('gir lærefaget i bedrift uten tabell, og melder avvik når summen ikke stemmer', () => {
     expect(byggTilbud('HSHEA3----', indeks, ff)).toMatchObject({ tabell: null, deler: [{ linje: 'Opplæring i bedrift', koder: ['HEA3004'] }] });
     const feil = { ...ff, tabeller: ff.tabeller.map((t) => (t.nr === '17a' && t.type === 'fordeling' ? { ...t, rader: t.rader.map((r) => (r.linje === 'Totalt omfang' ? { ...r, timer: [900, 898, 898] } : r)) } : t)) };
-    expect(byggTilbud('HSHEA2----', indeks, feil).avvik).toContain('Summen av delene er 898 timer, rundskrivet sier 900.');
+    const avvik = byggTilbud('HSHEA2----', indeks, feil).avvik;
+    expect(avvik).toContainEqual({ type: 'sum', sum: 898, totalt: 900 });
+    expect(avvik.map(avvikTekst)).toContain('Summen av delene er 898 timer, rundskrivet sier 900.');
   });
 });
 
@@ -175,7 +177,9 @@ describe('felles programfag som Grep knytter til programområdet', () => {
     const i = lag({ IDR1: fag_('Treningslære vg2', 'felles_programfag', 197, 'IDR2'), IDR2: over('Aktivitetslære 1', 140), IDR3: over('Aktivitetslære 2', 140), IDR4: over('Aktivitetslære 3', 140) });
     expect(programfag(i)).toMatchObject({ koder: ['IDR1'], utvalg: { grunn: 'flere_trinn', timer: 280, antall: null, koder: ['IDR2', 'IDR3', 'IDR4'] }, avvik: [] });
     const for_ = lag({ ROM1: fag_('Romfysikk', 'felles_programfag', 140, 'ROM') });
-    expect(programfag(for_)).toMatchObject({ avvik: ['Felles programfag fra eget programområde: rundskrivet har 477 timer, fagene i Grep har til sammen 140.'] });
+    expect(programfag(for_)).toMatchObject({ avvik: [{ type: 'programfagTimer', linje: 'Felles programfag fra eget programområde', rundskriv: 477, grep: 140 }] });
+    const d = programfag(for_);
+    expect(d?.type === 'fag' ? d.avvik.map(avvikTekst) : []).toEqual(['Felles programfag fra eget programområde: rundskrivet har 477 timer, fagene i Grep har til sammen 140.']);
   });
 });
 
@@ -224,7 +228,8 @@ describe('fellesfag som mangler i Grep, og vg4 påbygging', () => {
     const f: Fagfordeling = { ...ff, tabeller: [fordeling('vg2', 'Tabell 17a Fag- og timefordeling på vg1 og vg2 i yrkesfaglige utdanningsprogram', ['Ordinær'], [['Norsk', 112], ['Felles programfag fra eget programområde', 300], ['Totalt omfang', 412]])] };
     const t = byggTilbud('ELDRF2----', i, f);
     expect(t.deler[0]).toMatchObject({ linje: 'Norsk', koder: ['NOR1262'], lantFra: 'ELAUT2----', avvik: [] });
-    expect(t.avvik).toEqual(['Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.']);
+    expect(t.avvik).toEqual([{ type: 'ingenFellesfag', lant: true }]);
+    expect(t.avvik.map(avvikTekst)).toEqual(['Grep kobler ingen fellesfag til programområdet. Kodene er hentet fra et annet programområde.']);
     // Varianter for særskilte skoler får ikke lånte koder.
     expect(byggTilbud('ELDRF2RS--', i, f).deler[0]).toMatchObject({ koder: [], lantFra: null });
   });

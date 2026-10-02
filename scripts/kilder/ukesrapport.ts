@@ -33,6 +33,8 @@ export interface Ukesgrunnlag {
   udir?: { endringer: string[]; nyVersjon: string | null } | null;
   /** Nye fag uten kobling til årsramme og nye avvik i koblingen (.generert/kobling-endringer.json). */
   kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
+  /** Navn i rundskrivet uten nynorsk eller utskrevet navn i appen (.generert/tilbud-navn.json). */
+  navn?: { linjer: string[]; ordninger: string[] } | null;
 }
 
 /** Endrede læreplaner og fag fra Grep, til orientering i kontrollsaken (avgjørelse 022). */
@@ -238,6 +240,17 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       );
     }
     deler.push(['## Kobling fra fagkode til årsramme', '', ...linjer, '', `Hele rapporten: ${lenke}.`, '']);
+  }
+
+  // Navn i rundskrivet som appen ikke kjenner, vises som i rundskrivet til Claude har lagt dem inn (eier 02.10.2026).
+  const navn = g.navn;
+  if (navn && (navn.linjer.length > 0 || navn.ordninger.length > 0)) {
+    const linjer = [
+      ...navn.linjer.map((l) => `- [ ] Linjenavn uten nynorsk: «${l}». Vises på bokmål til Claude har lagt det inn. <!-- navn:${createHash('sha1').update(l).digest('hex').slice(0, 12)} -->`),
+      ...navn.ordninger.map((o) => `- [ ] Ny tilpasset ordning i rundskrivet: «${o}». Vises som i rundskrivet til Claude har skrevet navnet ut. <!-- navn:${createHash('sha1').update(o).digest('hex').slice(0, 12)} -->`),
+    ];
+    punkter += linjer.length;
+    deler.push(['## Nye navn i fag- og timefordelingen', '', ...linjer.slice(0, MAKS_DETALJER), ...(linjer.length > MAKS_DETALJER ? [`- … og ${linjer.length - MAKS_DETALJER} til.`] : []), '']);
   }
 
   const feilet = Object.entries(g.kildestatus.kilder).filter(([, p]) => p.status === 'feilet');
