@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.19.1] – 2026-10-02
+
+### Endret
+
+- **Opplæringsløp:**
+  - Oversikten åpner med gruppene lukket. Antallet står midt på linjen, og ingressen er kortere.
+  - Knappen til neste trinn er bunnen av tilbudskortet: «Vis 7 tilbud på vg2».
+  - Fagene i et tilbud står i rader med lik høyde og avstand. Valg står dempet på linjen med faget, for eksempel «Fremmedspråk · velg én av 101».
+  - Vurderingskoder og alternativer for særskilte grupper står som dempede rader nederst i rubrikken.
+  - Lister som åpnes, er innrykket. Gruppene har roligere overskrifter, og antallet står som «3 fag».
+
 ## [0.19.0] – 2026-10-02
 
 ### Endret

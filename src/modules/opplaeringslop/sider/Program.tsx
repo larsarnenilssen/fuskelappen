@@ -23,24 +23,36 @@ function Gren({ kode, indeks, tilbud, sett }: { kode: string; indeks: Fagindeks;
   const neste = new Set([...sett, kode]);
   const [lukket, veksle] = useSammenlagt(`lop-gren-${kortKode(kode)}`, true);
   const id = useId();
-  // «Vg2 (7)»: trinnet til tilbudene videre, når alle er på samme trinn.
+  // «Vis 7 tilbud på vg2»: trinnet til tilbudene videre, når alle er på samme trinn.
   const trinn = [...new Set(videre.map((k) => indeks.programomrader[k]?.trinn))];
-  const etikett = trinn.length === 1 && trinn[0] ? trinnTekst(t, trinn[0]) : t('opplaeringslop.program.videreKort');
+  // «Bedrift» er ikke et trinn i setningen. Da står det «Vis 2 tilbud videre».
+  const paTrinn = trinn.length === 1 && trinn[0] && trinn[0] !== 'Bedrift' ? trinnTekst(t, trinn[0]).toLowerCase() : null;
+  const tekst = lukket
+    ? paTrinn
+      ? t('opplaeringslop.program.visVidere', { antall: formaterTall(videre.length), trinn: paTrinn })
+      : t('opplaeringslop.program.visVidereBlandet', { antall: formaterTall(videre.length) })
+    : paTrinn
+      ? t('opplaeringslop.program.skjulVidere', { trinn: paTrinn })
+      : t('opplaeringslop.program.skjulVidereBlandet');
+  const po = indeks.programomrader[kode];
   return (
     <li>
-      <Tilbudslenke indeks={indeks} kode={kode} />
-      {videre.length > 0 && (
-        <>
+      {/* Tilbudet og knappen til neste trinn er ett kort, så det er tydelig hva knappen åpner (eier 02.10.2026). */}
+      <div class="lop-kort" data-sted={po?.sted}>
+        <Tilbudslenke indeks={indeks} kode={kode} />
+        {videre.length > 0 && (
           <button type="button" class="lop-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-            {`${etikett} (${formaterTall(videre.length)})`}
+            <span>{tekst}</span>
             <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
           </button>
-          <ul id={id} class="lop-videre" hidden={lukket}>
-            {videre.map((k) => (
-              <Gren key={k} kode={k} indeks={indeks} tilbud={tilbud} sett={neste} />
-            ))}
-          </ul>
-        </>
+        )}
+      </div>
+      {videre.length > 0 && (
+        <ul id={id} class="lop-videre" hidden={lukket}>
+          {videre.map((k) => (
+            <Gren key={k} kode={k} indeks={indeks} tilbud={tilbud} sett={neste} />
+          ))}
+        </ul>
       )}
     </li>
   );

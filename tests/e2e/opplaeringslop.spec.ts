@@ -7,15 +7,21 @@ test.describe('opplæringsløp', () => {
     await page.goto('./');
     await page.getByRole('link', { name: /Opplæringsløp/ }).first().click();
     await expect(page.locator('main h1')).toHaveText('Opplæringsløp');
+    // Gruppene er lukket fra start (eier 02.10.2026).
+    const yrkesfag = page.getByRole('button', { name: /^Yrkesfaglige utdanningsprogram/ });
+    await expect(yrkesfag).toHaveAttribute('aria-expanded', 'false');
+    await yrkesfag.click();
     await page.getByRole('link', { name: /Helse- og oppvekstfag/ }).click();
     await expect(page.locator('main h1')).toHaveText('Helse- og oppvekstfag');
     // Løpet går fra vg1 videre til vg2 og lærefag. Grenene er lukket til brukeren åpner dem (eier 02.10.2026).
-    await expect(page.locator('.lop > li > .tilbudslenke').first()).toContainText('Vg1 Helse- og oppvekstfag');
-    const vg2 = page.locator('.lop > li > .lop-knapp').first();
-    await expect(vg2).toHaveText(/^Vg2 \(\d+\)/);
+    // Knappen til neste trinn er bunnen av kortet: «Vis 7 tilbud på vg2».
+    await expect(page.locator('.lop > li > .lop-kort > .tilbudslenke').first()).toContainText('Vg1 Helse- og oppvekstfag');
+    const vg2 = page.locator('.lop > li > .lop-kort > .lop-knapp').first();
+    await expect(vg2).toHaveText(/^Vis \d+ tilbud på vg2/);
     await expect(vg2).toHaveAttribute('aria-expanded', 'false');
     await expect(page.locator('.lop-videre .tilbudslenke', { hasText: 'Vg2 Helsearbeiderfag' })).toBeHidden();
     await vg2.click();
+    await expect(vg2).toHaveText(/^Skjul tilbudene på vg2/);
     await page.locator('.lop-videre .tilbudslenke', { hasText: 'Vg2 Helsearbeiderfag' }).click();
     await expect(page.locator('main h1')).toHaveText('Helsearbeiderfag');
     await expect(page).toHaveURL(/#\/opplaeringslop\/HS\/HSHEA2$/);
@@ -25,7 +31,8 @@ test.describe('opplæringsløp', () => {
     await expect(programfag.getByRole('button')).toHaveAccessibleName(/Felles programfag 477 timer/);
     await expect(programfag.locator('.fagrad', { hasText: 'Helsefremmende arbeid' })).toContainText('197');
     await expect(programfag).not.toContainText('Velg');
-    await expect(programfag.locator('.rubrikk-bunn')).toContainText('Tverrfaglig eksamen');
+    // Tverrfaglig eksamen står som dempet rad nederst, med koden.
+    await expect(programfag.locator('.fagrad[data-dempet]').last()).toContainText('Tverrfaglig eksamen');
     // Rubrikken kan legges sammen.
     await programfag.getByRole('button').click();
     await expect(programfag.locator('.fagrad').first()).toBeHidden();
@@ -72,17 +79,17 @@ test.describe('opplæringsløp', () => {
     await expect(kryss).toHaveAttribute('aria-expanded', 'false');
     await kryss.click();
     await expect(page.locator('[data-rubrikk$="-kryss"]').getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
-    const sprak = page.getByRole('button', { name: /Velg én av \d+/ }).first();
+    const sprak = page.getByRole('button', { name: /^Fremmedspråk · velg én av \d+/ }).first();
     await expect(sprak).toHaveAttribute('aria-expanded', 'false');
     await sprak.click();
     await expect(page.locator('.tilbud-fagliste').filter({ hasText: 'Fransk' }).first()).toBeVisible();
 
     await page.goto('./#/opplaeringslop/ST/STSSA2');
     const valg = page.locator('[data-rubrikk$="-valgfritt"]');
-    await valg.getByRole('button', { name: /Velges blant \d+ fag/ }).click();
+    await valg.getByRole('button', { name: /^Velg 1 fag · blant \d+ fag/ }).click();
     // Fagene står i grupper etter læreplan, som er lukket til brukeren åpner dem eller søker.
     // Programfag til valg står først i grupper etter programområde i Grep, så etter læreplan.
-    const realfag = valg.getByRole('button', { name: /^Realfag \(\d+\)/ });
+    const realfag = valg.getByRole('button', { name: /^Realfag \d+ fag/ });
     await expect(realfag).toHaveAttribute('aria-expanded', 'false');
     await realfag.click();
     const gruppe = valg.getByRole('button', { name: /^Matematikk for realfag/ });
