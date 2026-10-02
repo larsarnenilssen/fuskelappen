@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.20.1] – 2026-10-02
+
+### Endret
+
+- **Overordnet del:**
+  - Hele overordnet del står nå i rubrikker på første side, under søket, med delene inni som nye bokser. Grunnleggende ferdigheter og tverrfaglige temaer står til slutt. Alt er lukket til du åpner det.
+  - En lenke til en del åpner delen og ruller dit med overskriften synlig under toppfeltet.
+  - Knappen «Til toppen» vises når du har rullet langt ned.
+- **Fagarket:** «Grunnleggende ferdigheter og tverrfaglige temaer» står før kompetansemålene. Kompetansemål, vurdering, ferdigheter og temaer og «Inngår i tilbud» er lukket til du åpner dem.
+- **Forsiden:** Boksene er like høye, og undertekstene er kortere. Arbeidsplan og «Flere kalkulatorer» er til sammen like høye som to bokser, fordelt 2/3 og 1/3. «Periodebeskjeftigelse» deles med bindestrek på smale skjermer.
+
 ## [0.20.0] – 2026-10-02
 
 ### Endret

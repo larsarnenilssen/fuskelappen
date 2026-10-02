@@ -251,19 +251,19 @@ export const nb = {
   moduler: {
     laereplanverket: {
       navn: 'Overordnet del',
-      beskrivelse: 'Verdier og prinsipper, grunnleggende ferdigheter og tverrfaglige temaer.',
+      beskrivelse: 'Verdier, prinsipper, ferdigheter og temaer.',
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Fag- og timefordelingen og tilbudsstrukturen: utdanningsprogram, tilbud på hvert trinn, og fag og timer.',
+      beskrivelse: 'Fag- og timefordelingen: tilbud og timer.',
     },
     begreper: {
       navn: 'Begreper',
-      beskrivelse: 'Forklaringer av sentrale begreper i regelverket.',
+      beskrivelse: 'Forklaringer av sentrale begreper.',
     },
     fag: {
       navn: 'Fag og læreplaner',
-      beskrivelse: 'Læreplanene for fag: fagkoder, kompetansemål, vurdering og årstimetall.',
+      beskrivelse: 'Kompetansemål, vurdering og timer.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',

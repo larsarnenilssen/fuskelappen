@@ -2950,6 +2950,41 @@ p.fagkort-tittel {
 }
 
 /* Kategorioverskriftene er roligere: ikke store bokstaver. */
+/* Like høye bokser på forsiden (eier 02.10.2026). Undertekstene har plass til to linjer i vanlige bokser, tre i
+   Arbeidsplan og én i «Flere kalkulatorer». Arbeidsplan og «Flere» er til sammen like høye som to vanlige bokser,
+   fordelt 2/3 og 1/3. Høyden er en minstehøyde i rem, så boksene vokser med større tekst i stedet for å klippe den.
+   5,625rem er tittel og to linjer undertekst; da får Arbeidsplan (7,5rem) plass til tre linjer og «Flere» (3,75rem)
+   til én. */
+.forside .kategori {
+  --modul-hoyde: 5.625rem;
+}
+
+.forside .kategori > .liste > li > .listelenke {
+  min-height: var(--modul-hoyde);
+}
+
+.forside .kategori[data-kategori='arbeidstid'] > .liste > li > a.listelenke {
+  min-height: calc(var(--modul-hoyde) * 4 / 3);
+}
+
+.forside .kategori > .liste > li > .flere-knapp {
+  min-height: calc(var(--modul-hoyde) * 2 / 3);
+  padding-block: var(--rom-1);
+}
+
+.forside .kategori > .liste > li > .flere-knapp .listelenke-under {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* På de smaleste skjermene får ikke undertittelen plass på én linje. Da står bare tittelen. */
+@media (max-width: 23.4rem) {
+  .forside .kategori > .liste > li > .flere-knapp .listelenke-under {
+    display: none;
+  }
+}
+
 .forside .kategori h3 {
   text-transform: none;
   letter-spacing: 0;
@@ -3474,38 +3509,9 @@ p.fagkort-tittel {
 }
 
 /* ---------- Læreplanverket (avgjørelse 037) ---------- */
-/* Innholdsregisteret: hver del er en lenke, delene inni står innrykket med en strek. */
-.innholdsregister {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.innholdsregister a {
-  display: block;
-  padding: var(--rom-2) 0;
-  min-height: var(--trykkflate);
-  box-sizing: border-box;
-}
-
-.innholdsregister > li + li {
-  border-top: var(--strek) solid var(--farge-linje);
-}
-
-.innholdsregister .innholdsregister {
-  margin: 0 0 var(--rom-2) var(--rom-1);
-  padding-left: var(--rom-3);
-  border-left: 2px solid var(--farge-linje);
-  font-size: var(--str-s);
-}
-
-.innholdsregister .innholdsregister > li + li {
-  border-top: 0;
-}
-
-.innholdsregister .innholdsregister a {
-  padding: var(--rom-1) 0;
-  min-height: 0;
+/* Delen adressen peker på, rulles fram med litt luft over overskriften, under toppfeltet (eier 02.10.2026). */
+[data-rubrikk^='od-'] {
+  scroll-margin-top: var(--rom-3);
 }
 
 .lv-sok {

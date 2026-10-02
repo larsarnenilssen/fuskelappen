@@ -66,6 +66,8 @@ export interface Modulmanifest {
   innganger?: Inngang[];
   /** Tittelen på den sammenleggbare boksen med innganger merket `flere`. */
   flereTittel?: Tekstverdi;
+  /** Undertittelen i boksen med innganger merket `flere`. Uten den står navnene på inngangene. */
+  flereUnder?: Tekstverdi;
   /** Kilde-id-er fra content/kilder.yaml. */
   kilder: string[];
   /** Moduler fra senere faser er skjult til de er godkjent. */

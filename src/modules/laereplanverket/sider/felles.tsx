@@ -66,7 +66,7 @@ export function Blokker({ blokker, klasse }: { blokker: readonly Blokk[]; klasse
 
 /**
  * Søket i overordnet del: feltet og, når det er søkt, delene som passer med et utdrag. `barn` vises når det ikke er
- * søkt (innholdsregisteret eller boksene).
+ * søkt (rubrikkene).
  */
 export function Sok({ od, children }: { od: OverordnetDel; children: preact.ComponentChildren }) {
   const { t, malform } = useTekst();

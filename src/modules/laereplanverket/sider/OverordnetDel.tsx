@@ -1,5 +1,6 @@
-// Overordnet del (pakke 6, avgjørelse 037): hele teksten i bokser som er lukket til brukeren åpner dem, med delene
-// inni som nye lukkede bokser. De lukkede boksene er innholdsregisteret. En adresse til en del (f.eks. «2.5.1» eller
+// Overordnet del (pakke 6, avgjørelse 037): søket øverst, så hele teksten i rubrikker som er lukket til brukeren
+// åpner dem, med delene inni som nye lukkede bokser, og til slutt de grunnleggende ferdighetene og de tverrfaglige
+// temaene (eier 02.10.2026). De lukkede rubrikkene er innholdsregisteret. En adresse til en del (f.eks. «2.5.1» eller
 // koden til et tverrfaglig tema) åpner delen og boksene rundt den, og ruller dit. Teksten er forskriftstekst fra
 // udir.no og vises uendret, på valgt målform.
 import { useEffect, useId } from 'preact/hooks';
@@ -8,10 +9,10 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
-import { formaterDato } from '../../../core/i18n/tekst.ts';
+import { TilToppen } from '../../../components/TilToppen.tsx';
+import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { Brodsmuler } from '../../opplaeringslop/sider/felles.tsx';
-import { finnDel, sti } from '../data.ts';
+import { type Element, elementRute, finnDel, sti } from '../data.ts';
 import type { Del } from '../typer.ts';
 import { Blokker, Lasting, Sok, delnavn, useLaereplanverket } from './felles.tsx';
 
@@ -54,28 +55,61 @@ function Underdel({ del, apne }: { del: Del; apne: ReadonlySet<string> }) {
   );
 }
 
+/** Ferdighetene eller temaene, med lenke til omtalen i overordnet del. */
+function Elementliste({ elementer }: { elementer: readonly Element[] }) {
+  const { malform } = useTekst();
+  return (
+    <ul class="liste">
+      {elementer.map((e) => (
+        <li key={e.kode}>
+          <a class="listelenke" href={`#${elementRute(e.kode)}`}>
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">{e.navn[malform]}</span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/**
+ * Ruller til delen adressen peker på, så overskriften står synlig under toppfeltet. Det rulles på nytt når
+ * skriftene er lastet, siden teksten over kan bryte annerledes da, men bare hvis brukeren ikke har rullet selv.
+ */
+function useRullTil(id: string | undefined) {
+  useEffect(() => {
+    if (!id) return;
+    let rullet: number | null = null;
+    const rull = () => {
+      if (rullet !== null && Math.abs(window.scrollY - rullet) > 2) return;
+      document.querySelector(`[data-rubrikk="od-${id}"]`)?.scrollIntoView({ block: 'start' });
+      rullet = window.scrollY;
+    };
+    const ramme = requestAnimationFrame(rull);
+    void document.fonts?.ready.then(() => requestAnimationFrame(rull));
+    return () => cancelAnimationFrame(ramme);
+  }, [id]);
+}
+
 export default function OverordnetDel({ parametre }: SideProps) {
   const { t, malform } = useTekst();
   const [data, provIgjen] = useLaereplanverket();
   const nokkel = parametre.del ?? null;
   const mal = typeof data !== 'string' && nokkel ? finnDel(data.od.deler, nokkel, data.lv) : null;
   const apne = new Set(typeof data !== 'string' && mal ? sti(data.od.deler, mal).map((d) => d.id) : []);
-  // Rull til delen adressen peker på, når teksten er lastet.
-  useEffect(() => {
-    if (!mal) return;
-    document.querySelector(`[data-rubrikk="od-${mal.id}"]`)?.scrollIntoView({ block: 'start' });
-  }, [mal?.id]);
+  useRullTil(mal?.id);
   return (
     <div class="side">
-      <Brodsmuler ledd={[{ tekst: t('laereplanverket.tittel'), href: '#/laereplanverket' }]} />
-      <h1 tabIndex={-1}>{t('laereplanverket.overordnetDel')}</h1>
+      <h1 tabIndex={-1}>{t('laereplanverket.tittel')}</h1>
+      <p class="dempet">
+        {t('laereplanverket.innledning')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
+      </p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
         <>
-          <p class="liten dempet">
-            {t('laereplanverket.overordnetHjelp')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
-          </p>
           {nokkel && !mal && (
             <p class="merknad" role="alert">
               {t('laereplanverket.ikkeFunnet')}
@@ -87,11 +121,24 @@ export default function OverordnetDel({ parametre }: SideProps) {
                 <Innhold del={d} apne={apne} />
               </Rubrikk>
             ))}
+            <Rubrikk nokkel="lv-ferdigheter" tittel={t('laereplanverket.ferdigheter')} hoyre={formaterTall(data.lv.ferdigheter.length)} lukket>
+              <p class="liten dempet">
+                {t('laereplanverket.ferdigheterHjelp')} <a href="#/begreper/grunnleggende-ferdigheter">{t('laereplanverket.omBegrep.ferdigheter')}</a>
+              </p>
+              <Elementliste elementer={data.lv.ferdigheter} />
+            </Rubrikk>
+            <Rubrikk nokkel="lv-temaer" tittel={t('laereplanverket.temaer')} hoyre={formaterTall(data.lv.temaer.length)} lukket>
+              <p class="liten dempet">
+                {t('laereplanverket.temaerHjelp')} <a href="#/begreper/tverrfaglige-temaer">{t('laereplanverket.omBegrep.temaer')}</a>
+              </p>
+              <Elementliste elementer={data.lv.temaer} />
+            </Rubrikk>
           </Sok>
           <p class="liten dempet">{t('laereplanverket.hentet', { dato: formaterDato(data.od.hentet, malform) })}</p>
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-overordnet-del' }]} />
+      <TilToppen />
+      <Kildeliste kilder={[{ id: 'udir-overordnet-del' }, { id: 'udir-grep' }]} />
     </div>
   );
 }

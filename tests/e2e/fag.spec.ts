@@ -71,6 +71,8 @@ test.describe('fag og læreplaner', () => {
     await expect(timer.locator('.nokkeltall-verdi')).toHaveText('197');
     await expect(timer.locator('.nokkeltall-enhet')).toHaveText('timer à 60 minutter');
     await expect(page.locator('.merke-fagtype')).toContainText('Felles programfag');
+    // Kompetansemålene er lukket til brukeren åpner dem (eier 02.10.2026).
+    await page.getByRole('button', { name: /^Kompetansemål og læreplan/ }).click();
     await expect(page.getByText('Fastsatt på bokmål. Teksten fra læreplanen er gjengitt uoversatt.')).toBeVisible();
     await expect(page.locator('.kompetansemaal li').first()).toBeVisible();
     await expect(page.getByRole('link', { name: /Læreplanen på udir.no \(KV366\)/ })).toHaveAttribute('href', 'https://www.udir.no/lk20/hea02-04/kompetansemaal-og-vurdering/kv366');
@@ -89,10 +91,13 @@ test.describe('fag og læreplaner', () => {
     await expect(ramme.locator('.nokkeltall-rute').first()).toContainText('197');
     await expect(ramme).toContainText('607,5');
     await expect(ramme).toContainText('appens tolkning av vedlegg 1');
-    // Delene kan lukkes: kompetansemål og vurdering er åpne, programområdene lukket.
-    await expect(page.getByRole('button', { name: /^Kompetansemål og læreplan/ })).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.getByRole('button', { name: 'Vurderingsordning', exact: true })).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.getByRole('button', { name: /^Inngår i tilbud/ })).toHaveAttribute('aria-expanded', 'false');
+    // Alle delene er lukket til brukeren åpner dem, og ferdighetene og temaene står før kompetansemålene (eier 02.10.2026).
+    const deler = ['laereplanverket', 'kompetansemaal', 'vurdering', 'programomrader'];
+    await expect(page.locator('[data-seksjon]')).toHaveCount(deler.length);
+    expect(await page.locator('[data-seksjon]').evaluateAll((e) => e.map((x) => x.getAttribute('data-seksjon')))).toEqual(deler);
+    for (const navn of [/^Grunnleggende ferdigheter og tverrfaglige temaer/, /^Kompetansemål og læreplan/, /^Vurderingsordning$/, /^Inngår i tilbud/]) {
+      await expect(page.getByRole('button', { name: navn })).toHaveAttribute('aria-expanded', 'false');
+    }
     await expect(page.getByRole('link', { name: 'Om begrepet felles programfag' })).toHaveAttribute('href', '#/begreper/felles-programfag');
     await ramme.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
     await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
@@ -124,16 +129,18 @@ test.describe('fag og læreplaner', () => {
 
   test('læreplaner fastsatt på nynorsk vises på nynorsk også når appen er på bokmål', async ({ page }) => {
     await page.goto('./#/fag/AKT2004');
+    await page.getByRole('button', { name: /^Kompetansemål og læreplan/ }).click();
     await expect(page.getByText('Fastsatt på nynorsk.', { exact: false })).toBeVisible();
-    await expect(page.locator('main [lang="nn"]').first()).toBeVisible();
+    await expect(page.locator('main [lang="nn"]:visible').first()).toBeVisible();
   });
 
   test('appen på nynorsk viser egne tekster på nynorsk og læreplanen uoversatt', async ({ page }) => {
     await settLagret(page, { malform: 'nn' });
     await page.goto('./#/fag/HEA2005');
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Helsefremjande arbeid');
+    await page.getByRole('button', { name: /^Kompetansemål og læreplan/ }).click();
     await expect(page.getByText('Fastsett på bokmål. Teksten frå læreplanen er gjengitt utan omsetjing.')).toBeVisible();
-    await expect(page.locator('main [lang="nb"]').first()).toBeVisible();
+    await expect(page.locator('main [lang="nb"]:visible').first()).toBeVisible();
   });
 
   test('fag kan legges til som favoritt', async ({ page }) => {

@@ -28,4 +28,6 @@
 
 - **Navn på forsiden (eier 02.10.2026):** Overskriften heter nå «Læreplanverket», og de tre boksene følger Udirs tre deler i Udirs rekkefølge: «Overordnet del» (denne modulen, som før het Læreplanverket), «Opplæringsløp» (fag- og timefordelingen og tilbudsstrukturen) og «Fag og læreplaner» (læreplanene for fag). Adressene er de samme, så favoritter og lenker virker som før.
 
+- **Én side (eier 02.10.2026, 0.20.1):** Overordnet del er én side: søket øverst, så hele teksten i rubrikker med delene inni som lukkede bokser (samme nivåer som før), og til slutt ferdighetene og temaene. Innholdsregisteret med lenker og den egne siden for teksten er tatt bort, fordi de lukkede rubrikkene gjør samme jobb. Adressene `/laereplanverket/overordnet-del/<del>` virker fortsatt og åpner delen. Rullingen har litt luft over overskriften og gjentas når skriftene er lastet, så overskriften ikke havner bak toppfeltet.
+
 **Konsekvens:** Teksten følger udir.no hver uke uten manuelt arbeid. Endrer Udir adressene eller sidene, stopper valideringen hentingen før noe skrives, og kontrollsaken sier fra. Rubrikken fra Opplæringsløp er flyttet til felles komponenter, så begge modulene bruker den.

@@ -50,6 +50,7 @@ export const manifest: Modulmanifest = {
     flere: i > 0,
   })),
   flereTittel: 'arbeidstid.kalkulatorer.flere',
+  flereUnder: 'arbeidstid.kalkulatorer.flereUnder',
   kilder: ['ks-sfs2213-avtaletekst', 'ks-hovedtariffavtalen', 'arbeidsmiljoloven', 'opplaeringslova'],
   status: 'aktiv',
 };

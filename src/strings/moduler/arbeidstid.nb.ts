@@ -14,10 +14,13 @@ export const arbeidstidNb = {
   kalkulatorer: {
     tittel: 'Kalkulatorer',
     flere: 'Flere kalkulatorer',
+    // Kort nok til én linje i boksen på forsiden (eier 02.10.2026).
+    flereUnder: 'Beskjeftigelse, vikar og overtid.',
     arbeidsplan: {
       tittel: 'Arbeidsplan',
       kort: 'Arbeidsplan',
-      forside: 'Fag, funksjoner, periodebeskjeftigelse, fordeling av arbeidstiden og lønn.',
+      // Den myke bindestreken (\u00ad) deler ordet på smale skjermer, så første linje blir fylt (eier 02.10.2026).
+      forside: 'Fag, funksjoner, periode\u00adbeskjeftigelse, fordeling av arbeidstiden og lønn.',
       beskrivelse: 'Fag og funksjoner mot stillingsprosenten for hele skoleåret eller en periode (periodebeskjeftigelse), med fordelingen av arbeidstiden og lønn.',
     },
     beskjeftigelse: {
