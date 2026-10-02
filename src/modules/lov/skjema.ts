@@ -1,6 +1,7 @@
 // Lov og forskrift som data (fase 3, avgjørelse 039): skjema for utvalget i content/lovverk.yaml og for tekstene i
 // data/lovdata/. Brukes av hentingen og testene. Appen bruker bare typene (typer.ts), så zod ikke kommer i startpakken.
 import { z } from 'zod';
+import { flerspraak } from '../../core/innhold/skjema.ts';
 import type { Gyldighet, Ledd, Lovdokument, Lovoversikt, Paragraf, Punkt, Seksjon, Segment } from './typer.ts';
 
 const id = z.string().regex(/^[a-z0-9-]+$/);
@@ -45,9 +46,32 @@ export const lovutvalgSkjema = z
           .strict(),
       )
       .min(1),
+    /**
+     * Avtaler (Hovedtariffavtalen, SFS 2213): bestemmelsene er skrevet med egne ord som innholdselementer i
+     * content/lov/, og her står hvilke elementer som hører til hvilket kapittel (eier 02.10.2026, avgjørelse 039).
+     */
+    avtaler: z
+      .array(
+        z
+          .object({
+            /** Adressen i appen: #/lov/<id>. */
+            id,
+            /** Kilden i content/kilder.yaml (avtaleteksten). */
+            kilde: id,
+            korttittel: flerspraak,
+            tittel: flerspraak,
+            gyldighet: gyldighet.default({ niva: 'nasjonal' }),
+            kapitler: z.array(z.object({ overskrift: flerspraak, elementer: z.array(id).min(1) }).strict()).min(1),
+            merknad: z.string().optional(),
+          })
+          .strict(),
+      )
+      .default([]),
   })
   .strict()
-  .refine((u) => new Set(u.dokumenter.map((d) => d.id)).size === u.dokumenter.length, { message: 'Dokument-id-er må være unike' });
+  .refine((u) => new Set([...u.dokumenter, ...u.avtaler].map((d) => d.id)).size === u.dokumenter.length + u.avtaler.length, {
+    message: 'Id-ene til dokumenter og avtaler må være unike',
+  });
 
 export type Lovutvalg = z.infer<typeof lovutvalgSkjema>;
 
@@ -109,7 +133,7 @@ export const lovdokumentSkjema: z.ZodType<Lovdokument> = z
   .object({
     id,
     kilde: id,
-    type: z.enum(['lov', 'forskrift']),
+    type: z.enum(['lov', 'forskrift', 'avtale']),
     tittel: z.string().min(1),
     korttittel: z.string().min(1),
     malform: z.enum(['nb', 'nn']),
@@ -129,7 +153,7 @@ export const lovoversiktSkjema: z.ZodType<Lovoversikt> = z
         .object({
           id,
           kilde: id,
-          type: z.enum(['lov', 'forskrift']),
+          type: z.enum(['lov', 'forskrift', 'avtale']),
           tittel: z.string().min(1),
           korttittel: z.string().min(1),
           malform: z.enum(['nb', 'nn']),

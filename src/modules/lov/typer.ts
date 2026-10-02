@@ -57,7 +57,8 @@ export interface Lovdokument {
   id: string;
   /** Kilden i kilderegisteret. */
   kilde: string;
-  type: 'lov' | 'forskrift';
+  /** «avtale» er en avtale med egne ord (avtaler.ts), som vises og søkes i som dokumentene fra Lovdata. */
+  type: 'lov' | 'forskrift' | 'avtale';
   tittel: string;
   korttittel: string;
   /** Målformen dokumentet er fastsatt på. Teksten vises uoversatt. */

@@ -64,3 +64,41 @@ dokumenter:
     gyldighet: { niva: fylke, fylke: "46" }
     merknad: >-
       Skulereglane for dei vidaregåande skolane i Vestland, valgt av eier 02.10.2026. Hele forskrifta.
+
+# Avtaler (eier 02.10.2026): bestemmelsene er skrevet med egne ord i content/lov/, fordi rettighetene til
+# avtaleteksten ikke er avklart. Her står hvilke elementer som hører til hvilket kapittel. Kildejobben sjekker
+# avtaleteksten hver uke, og kontrollsaken viser hvilke elementer en endring kan berøre.
+avtaler:
+  - id: hovedtariffavtalen
+    kilde: ks-hovedtariffavtalen
+    korttittel: { nb: Hovedtariffavtalen, nn: Hovudtariffavtalen }
+    tittel: { nb: Hovedtariffavtalen i KS-området 1.5.2026–30.4.2028, nn: Hovudtariffavtalen i KS-området 1.5.2026–30.4.2028 }
+    kapitler:
+      - overskrift: { nb: Kapittel 1 Fellesbestemmelser, nn: Kapittel 1 Fellesføresegner }
+        elementer: [hta-virkeomrade, hta-ansettelse, hta-oppsigelse, hta-arbeidstid, hta-overtid, hta-ferie, hta-sykdom, hta-ansiennitet, hta-stedfortreder, hta-permisjon]
+      - overskrift: { nb: Kapittel 2 Lærlinger, nn: Kapittel 2 Lærlingar }
+        elementer: [hta-laerlinger]
+      - overskrift: { nb: Kapittel 3 Generelle lønns- og stillingsbestemmelser, nn: Kapittel 3 Generelle lønns- og stillingsføresegner }
+        elementer: [hta-lonnspolitikk, hta-kompetanse, hta-ledere]
+      - overskrift: { nb: Kapittel 4 og 5 Lønnsbestemmelser og forhandlinger, nn: Kapittel 4 og 5 Lønnsføresegner og forhandlingar }
+        elementer: [hta-sentral-lonn, hta-forhandlinger]
+      - overskrift: { nb: Vedlegg 2 Undervisningspersonalet, nn: Vedlegg 2 Undervisningspersonalet }
+        elementer: [hta-vedlegg2]
+    merknad: >-
+      Valgt av eier 02.10.2026. Bestemmelsene som gjelder skoleledere og lærere i videregående.
+
+  - id: sfs2213
+    kilde: ks-sfs2213-avtaletekst
+    korttittel: { nb: SFS 2213 Arbeidstid for lærere, nn: SFS 2213 Arbeidstid for lærarar }
+    tittel: { nb: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, nn: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet }
+    kapitler:
+      - overskrift: { nb: Arbeidsåret og arbeidstiden, nn: Arbeidsåret og arbeidstida }
+        elementer: [sfs-omfang, sfs-arbeidsaret, sfs-arbeidstid, sfs-oversikt, sfs-andre-oppgaver]
+      - overskrift: { nb: Livsfasetiltak og tidsressurser, nn: Livsfasetiltak og tidsressursar }
+        elementer: [sfs-livsfasetiltak, sfs-tidsressurser]
+      - overskrift: { nb: Skoleledelse og andre bestemmelser, nn: Skuleleiing og andre føresegner }
+        elementer: [sfs-skoleledelse, sfs-funksjoner, sfs-diverse]
+      - overskrift: { nb: Vedlegg 1 Årsrammer, nn: Vedlegg 1 Årsrammer }
+        elementer: [sfs-arsrammer]
+    merknad: >-
+      Valgt av eier 02.10.2026. Bestemmelsene for videregående opplæring.

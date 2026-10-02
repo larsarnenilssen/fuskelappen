@@ -3944,3 +3944,14 @@ p.fagkort-tittel {
 .lov-tekst {
   overflow-wrap: anywhere;
 }
+
+/* Lenkene til punktet i avtaleteksten under hver bestemmelse i en avtale. */
+.lov-avtalekilder {
+  margin: var(--rom-2) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lov-avtalekilder li + li {
+  margin-top: var(--rom-1);
+}

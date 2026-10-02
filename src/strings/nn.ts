@@ -65,7 +65,7 @@ export const nn: Tekster = {
       fag: 'Fag',
       tilbud: 'Tilbod',
       laereplanverk: 'Overordna del',
-      lov: 'Lov og forskrift',
+      lov: 'Regelverk',
       side: 'Side',
     },
   },
@@ -265,8 +265,8 @@ export const nn: Tekster = {
       beskrivelse: 'Forklaringar av sentrale omgrep.',
     },
     lov: {
-      navn: 'Lov og forskrift',
-      beskrivelse: 'Opplæringslova, forskrifta og andre reglar.',
+      navn: 'Regelverk',
+      beskrivelse: 'Lov, forskrift og avtalar.',
     },
     fag: {
       navn: 'Fag og læreplanar',

@@ -1,13 +1,42 @@
-// Lov og forskrift (fase 3, avgjørelse 039): opplæringslova, opplæringsforskrifta og andre regler fra Lovdatas gratis
-// datasett, med søk i hele teksten, kapitlene i rubrikker og paragrafene i bokser. Hver paragraf har egen adresse, så
-// begreper og andre moduler kan lenke rett til den. Dokumentene og utvalget står i content/lovverk.yaml.
+// Regelverk (fase 3, avgjørelse 039): opplæringslova, opplæringsforskrifta og andre regler fra Lovdata, med søk i hele
+// teksten, kapitlene i rubrikker og paragrafene i bokser, og avtaler (Hovedtariffavtalen, SFS 2213) med egne ord. Hver
+// paragraf og bestemmelse har egen adresse, så begreper og andre moduler kan lenke rett til den. Dokumentene og
+// utvalget står i content/lovverk.yaml.
 import utvalgFil from '../../../content/lovverk.yaml';
 import type { Modulmanifest } from '../typer.ts';
+import { avtaler, lastBestemmelser } from './avtaler.ts';
 import { dokumentRute, lastDokument, lastOversikt, paragrafRute } from './data.ts';
 import { alleParagrafer } from './typer.ts';
 
 /** Kildene følger utvalget i content/lovverk.yaml, så et nytt dokument ikke krever kodeendring. */
-const utvalg = utvalgFil as { dokumenter: { kilde: string }[] };
+const utvalg = utvalgFil as { dokumenter: { kilde: string }[]; avtaler?: { kilde: string }[] };
+
+/** Avtalene og bestemmelsene i søket på forsiden, med tittel og tekst på begge målformer. Bare nasjonale avtaler. */
+async function avtaleoppforinger() {
+  const bestemmelser = await lastBestemmelser();
+  return avtaler
+    .filter((a) => a.gyldighet.niva === 'nasjonal')
+    .flatMap((a) => [
+      { id: `lov:${a.id}`, type: 'lov' as const, tittel: a.korttittel, tekst: a.tittel, stikkord: ['avtale', 'tariffavtale'], rute: dokumentRute(a.id), modul: 'lov' },
+      ...a.kapitler.flatMap((k) =>
+        k.elementer.flatMap((id) => {
+          const e = bestemmelser.get(id);
+          if (!e) return [];
+          return [
+            {
+              id: `lov:${a.id}:${id}`,
+              type: 'lov' as const,
+              tittel: { nb: `${e.tittel.nb} (${a.korttittel.nb})`, nn: `${e.tittel.nn} (${a.korttittel.nn})` },
+              tekst: e.tekst,
+              stikkord: e.stikkord,
+              rute: paragrafRute(a.id, id),
+              modul: 'lov',
+            },
+          ];
+        }),
+      ),
+    ]);
+}
 
 export const manifest: Modulmanifest = {
   id: 'lov',
@@ -49,7 +78,7 @@ export const manifest: Modulmanifest = {
           modul: 'lov',
         };
       }),
-    ]);
+    ]).concat(await avtaleoppforinger());
   },
   async favorittbare() {
     return [];
@@ -57,6 +86,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: [...new Set(utvalg.dokumenter.map((d) => d.kilde))],
+  kilder: [...new Set([...utvalg.dokumenter, ...(utvalg.avtaler ?? [])].map((d) => d.kilde))],
   status: 'aktiv',
 };

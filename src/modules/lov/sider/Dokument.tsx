@@ -13,6 +13,8 @@ import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
 import { finnParagraf, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
 import { alleParagrafer, type Lovdokument, type Seksjon } from '../typer.ts';
+import { finnAvtale } from '../avtaler.ts';
+import { Avtale } from './Avtale.tsx';
 import { Lasting, Paragrafboks, Sok, Tekst, useLast, useRullTil } from './felles.tsx';
 
 /** Et kapittel eller avsnitt: merknadene under overskriften, avsnittene inni og paragrafene. */
@@ -65,7 +67,7 @@ function Seksjoner({ dokument, seksjoner, apne }: { dokument: Lovdokument; seksj
   );
 }
 
-export default function Dokument({ parametre }: SideProps) {
+function Lovside({ parametre }: SideProps) {
   const { t, malform } = useTekst();
   const id = parametre.dokument ?? '';
   const [data, provIgjen] = useLast(() => lastDokument(id), id);
@@ -126,4 +128,10 @@ export default function Dokument({ parametre }: SideProps) {
       <TilToppen />
     </div>
   );
+}
+
+/** En lov eller forskrift fra Lovdata, eller en avtale med egne ord (avtaler.ts). Adressene har samme form. */
+export default function Dokument(props: SideProps) {
+  const avtale = finnAvtale(props.parametre.dokument ?? '');
+  return avtale ? <Avtale key={avtale.id} avtale={avtale} nokkel={props.parametre.paragraf ?? null} /> : <Lovside {...props} />;
 }

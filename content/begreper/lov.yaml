@@ -4,8 +4,8 @@
   type: begrep
   tittel: { nb: Lov, nn: Lov }
   tekst:
-    nb: En lov er regler som Stortinget har vedtatt. Opplæringslova og forvaltningsloven er lover. Lovene gir de viktigste rettighetene og pliktene, og gir ofte departementet eller Kongen myndighet til å gi mer detaljerte regler i forskrift, for eksempel om inntak og vurdering. I Lov og forskrift i appen står opplæringslova og forvaltningsloven med kapitlene som gjelder videregående opplæring.
-    nn: Ei lov er reglar som Stortinget har vedteke. Opplæringslova og forvaltningsloven er lover. Lovene gir dei viktigaste rettane og pliktene, og gir ofte departementet eller Kongen mynde til å gi meir detaljerte reglar i forskrift, til dømes om inntak og vurdering. I Lov og forskrift i appen står opplæringslova og forvaltningsloven med kapitla som gjeld vidaregåande opplæring.
+    nb: En lov er regler som Stortinget har vedtatt. Opplæringslova og forvaltningsloven er lover. Lovene gir de viktigste rettighetene og pliktene, og gir ofte departementet eller Kongen myndighet til å gi mer detaljerte regler i forskrift, for eksempel om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitlene som gjelder videregående opplæring.
+    nn: Ei lov er reglar som Stortinget har vedteke. Opplæringslova og forvaltningsloven er lover. Lovene gir dei viktigaste rettane og pliktene, og gir ofte departementet eller Kongen mynde til å gi meir detaljerte reglar i forskrift, til dømes om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitla som gjeld vidaregåande opplæring.
   kilder:
     - { id: opplaeringslova, punkt: "§ 1-6 Fag- og timefordeling og tilbodsstruktur (døme på at departementet gir forskrift)", url: "https://lovdata.no/lov/2023-06-09-30/§1-6" }
     - { id: opplaeringslova, punkt: "§ 5-4 Innhald, vurdering og dokumentasjon i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§5-4" }

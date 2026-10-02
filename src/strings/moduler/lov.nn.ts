@@ -1,16 +1,22 @@
-// UI-tekstar for modulen Lov og forskrift på nynorsk. Same nøklar som lov.nb.ts.
+// UI-tekstar for modulen Regelverk (lov, forskrift og avtalar) på nynorsk. Same nøklar som lov.nb.ts.
 import type { lovNb } from './lov.nb.ts';
 
 export const lovNn: typeof lovNb = {
-  tittel: 'Lov og forskrift',
-  innledning: 'Opplæringslova, opplæringsforskrifta og andre reglar som gjeld vidaregåande opplæring, med søk i heile teksten. Teksten er henta frå Lovdata og blir vist slik han er fastsett.',
-  sokAlle: 'Søk i lov og forskrift',
+  tittel: 'Regelverk',
+  innledning: 'Lover, forskrifter og avtalar som gjeld vidaregåande opplæring, med søk i heile teksten. Lov- og forskriftsteksten er henta frå Lovdata og blir vist slik han er fastsett. Avtalane er skrivne med eigne ord, med lenke til avtaleteksten.',
+  sokAlle: 'Søk i regelverket',
   sok: 'Søk i {navn}',
-  antallTreff: '{antall} paragrafar passar med søket.',
-  ettTreff: 'Éin paragraf passar med søket.',
-  ingenTreff: 'Ingen paragrafar passar med søket.',
+  antallTreff: '{antall} treff.',
+  ettTreff: 'Eitt treff.',
+  ingenTreff: 'Ingen treff.',
   flereTreff: 'Viser dei {antall} første. Skriv fleire ord for å finne færre.',
   lover: 'Lover',
+  avtaler: 'Avtalar',
+  egneOrd: 'Skrive med eigne ord',
+  antallBestemmelser: '{antall} føresegner',
+  avtaleMerknad: 'Føresegnene er skrivne med eigne ord og er ikkje avtaleteksten. Avtalen gjeld i KS-området. Les avtaleteksten før du brukar ei føresegn.',
+  lesAvtalen: 'Les avtaleteksten hos KS',
+  bestemmelseIkkeFunnet: 'Fann ikkje føresegna i {navn}.',
   forskrifter: 'Forskrifter',
   lokale: 'Lokale forskrifter i {fylke}',
   lokaleUtenFylke: 'Lokale forskrifter',

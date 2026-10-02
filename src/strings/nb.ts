@@ -65,7 +65,7 @@ export const nb = {
       fag: 'Fag',
       tilbud: 'Tilbud',
       laereplanverk: 'Overordnet del',
-      lov: 'Lov og forskrift',
+      lov: 'Regelverk',
       side: 'Side',
     },
   },
@@ -265,8 +265,8 @@ export const nb = {
       beskrivelse: 'Forklaringer av sentrale begreper.',
     },
     lov: {
-      navn: 'Lov og forskrift',
-      beskrivelse: 'Opplæringslova, forskriften og andre regler.',
+      navn: 'Regelverk',
+      beskrivelse: 'Lov, forskrift og avtaler.',
     },
     fag: {
       navn: 'Fag og læreplaner',

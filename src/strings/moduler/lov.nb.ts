@@ -1,15 +1,21 @@
-// UI-tekster for modulen Lov og forskrift på bokmål. lov.nn.ts må ha de samme nøklene.
+// UI-tekster for modulen Regelverk (lov, forskrift og avtaler) på bokmål. lov.nn.ts må ha de samme nøklene.
 
 export const lovNb = {
-  tittel: 'Lov og forskrift',
-  innledning: 'Opplæringslova, opplæringsforskrifta og andre regler som gjelder videregående opplæring, med søk i hele teksten. Teksten er hentet fra Lovdata og vises slik den er fastsatt.',
-  sokAlle: 'Søk i lov og forskrift',
+  tittel: 'Regelverk',
+  innledning: 'Lover, forskrifter og avtaler som gjelder videregående opplæring, med søk i hele teksten. Lov- og forskriftsteksten er hentet fra Lovdata og vises slik den er fastsatt. Avtalene er skrevet med egne ord, med lenke til avtaleteksten.',
+  sokAlle: 'Søk i regelverket',
   sok: 'Søk i {navn}',
-  antallTreff: '{antall} paragrafer passer søket.',
-  ettTreff: 'Én paragraf passer søket.',
-  ingenTreff: 'Ingen paragrafer passer søket.',
+  antallTreff: '{antall} treff.',
+  ettTreff: 'Ett treff.',
+  ingenTreff: 'Ingen treff.',
   flereTreff: 'Viser de {antall} første. Skriv flere ord for å finne færre.',
   lover: 'Lover',
+  avtaler: 'Avtaler',
+  egneOrd: 'Skrevet med egne ord',
+  antallBestemmelser: '{antall} bestemmelser',
+  avtaleMerknad: 'Bestemmelsene er skrevet med egne ord og er ikke avtaleteksten. Avtalen gjelder i KS-området. Les avtaleteksten før du bruker en bestemmelse.',
+  lesAvtalen: 'Les avtaleteksten hos KS',
+  bestemmelseIkkeFunnet: 'Fant ikke bestemmelsen i {navn}.',
   forskrifter: 'Forskrifter',
   lokale: 'Lokale forskrifter i {fylke}',
   lokaleUtenFylke: 'Lokale forskrifter',
