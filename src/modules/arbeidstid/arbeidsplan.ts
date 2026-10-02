@@ -337,9 +337,10 @@ export type NokkeltallId =
   | 'differanse'
   | `del_${FordelingsdelId}`
   | 'planfestet'
+  | 'arsverk'
   | 'lonn';
 
-/** Rekkefølgen på delene av arbeidstiden i sammenligningen, som i diagrammet. */
+/** Rekkefølgen på delene av arbeidstiden i sammenligningen, som i diagrammet. Selvdisponert tid er ikke planfestet. */
 const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'planleggingsdager', 'funksjonstid', 'selvdisponert'];
 
 /**
@@ -349,9 +350,14 @@ const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_pl
 export function nokkeltallForArbeidsplan(
   b: Arbeidsplanberegning,
   s: Arbeidsplanskjema,
-): { id: NokkeltallId; verdi: number | null; enhet: 'prosent' | 'timer' | 'kroner'; gruppe: 'stillingen' | 'arbeidstid' | 'lonn'; farge?: FordelingsdelId; valgfri?: boolean }[] {
+): { id: NokkeltallId; verdi: number | null; enhet: 'prosent' | 'timer' | 'kroner'; gruppe: 'stillingen' | 'arbeidstid' | 'lonn'; farge?: FordelingsdelId; valgfri?: boolean; sum?: boolean }[] {
   const r = b.resultat;
-  const del = (id: FordelingsdelId) => b.fordeling?.deler.find((d) => d.id === id)?.timer ?? null;
+  const f = b.fordeling;
+  const del = (id: FordelingsdelId) => f?.deler.find((d) => d.id === id)?.timer ?? null;
+  const sum = (planfestet: boolean | null) => (f ? f.deler.filter((d) => planfestet === null || d.planfestet === planfestet).reduce((s, d) => s + d.timer, 0) : null);
+  // Arbeidstiden: de planfestede delene og summen av dem, så tiden læreren disponerer selv, og til slutt årsverket.
+  // Selvdisponert tid står etter summen, så det er tydelig at den ikke er en del av planfestet tid.
+  const delrad = (id: FordelingsdelId) => ({ id: `del_${id}` as const, verdi: del(id), enhet: 'timer' as const, gruppe: 'arbeidstid' as const, farge: id });
   return [
     { id: 'stilling', verdi: s.stilling, enhet: 'prosent', gruppe: 'stillingen' },
     { id: 'undervisning', verdi: r?.undervisning.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen', farge: 'undervisning' },
@@ -359,8 +365,10 @@ export function nokkeltallForArbeidsplan(
     { id: 'reduksjon', verdi: r ? (r.reduksjon?.verdi ?? 0) : null, enhet: 'prosent', gruppe: 'stillingen', valgfri: true },
     { id: 'beskjeftigelse', verdi: r?.beskjeftigelse.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
     { id: 'differanse', verdi: r?.differanse.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
-    ...fordelingsdeler.map((id) => ({ id: `del_${id}` as const, verdi: del(id), enhet: 'timer' as const, gruppe: 'arbeidstid' as const, farge: id })),
-    { id: 'planfestet', verdi: b.fordeling ? b.fordeling.deler.filter((d) => d.planfestet).reduce((sum, d) => sum + d.timer, 0) : null, enhet: 'timer', gruppe: 'arbeidstid' },
+    ...fordelingsdeler.filter((id) => id !== 'selvdisponert').map(delrad),
+    { id: 'planfestet', verdi: sum(true), enhet: 'timer', gruppe: 'arbeidstid', sum: true },
+    delrad('selvdisponert'),
+    { id: 'arsverk', verdi: sum(null), enhet: 'timer', gruppe: 'arbeidstid', sum: true },
     { id: 'lonn', verdi: b.lonn?.resultat?.samlet.verdi ?? null, enhet: 'kroner', gruppe: 'lonn', valgfri: true },
   ];
 }

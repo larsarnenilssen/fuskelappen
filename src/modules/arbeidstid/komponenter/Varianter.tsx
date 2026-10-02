@@ -194,6 +194,10 @@ export interface Nokkeltall {
   valgfri?: boolean;
   /** Desimaler i visningen (2 når det ikke er oppgitt). */
   desimaler?: number;
+  /** En sum av tallene over, f.eks. planfestet tid i alt. Står med strek over og fet skrift. */
+  sum?: boolean;
+  /** Kortere navn på smale skjermer, f.eks. «Funksjoner» for «Funksjoner og andre oppgaver». Skjermlesere får hele navnet. */
+  kortNavn?: string;
 }
 
 export interface Sammenligning {
@@ -278,11 +282,20 @@ function Sammenligningstabell({ a, b, navnA, navnB, bareEndret }: { a: Sammenlig
                     </span>
                   );
                 return (
-                  <tr key={x.id} class={endret ? 'endret' : 'uendret'} data-nokkeltall={x.id}>
+                  <tr key={x.id} class={`${endret ? 'endret' : 'uendret'}${x.sum ? ' sammenligning-sum' : ''}`} data-nokkeltall={x.id}>
                     <th scope="row">
                       <span class="sammenligning-radnavn">
                         {x.farge && <span class={`fordeling-farge fordeling-del-${x.farge}`} aria-hidden="true" />}
-                        <span>{x.navn}</span>
+                        {x.kortNavn ? (
+                          <span>
+                            <span class="sammenligning-langt-navn">{x.navn}</span>
+                            <span class="sammenligning-kort-navn" aria-hidden="true">
+                              {x.kortNavn}
+                            </span>
+                          </span>
+                        ) : (
+                          <span>{x.navn}</span>
+                        )}
                       </span>
                     </th>
                     <td class="tall">{x.verdi === null ? '–' : tallTekst(x.verdi, x.desimaler)}</td>
@@ -636,7 +649,7 @@ export function Varianter<T extends object>({
         </button>
         {kanSammenligne && (
           <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={onSammenlign}>
-            <Ikon navn="kategori" class="ikon-liten" />
+            <Ikon navn="sammenlign" class="ikon-liten" />
             {t('arbeidstid.varianter.sammenlign')}
           </button>
         )}

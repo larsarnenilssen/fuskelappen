@@ -53,17 +53,18 @@ const STI = '/arbeidstid/arbeidsplan';
 /** Navnet på et nøkkeltall i sammenligningen av to varianter. */
 function nokkeltallNavn(t: ReturnType<typeof useTekst>['t'], id: NokkeltallId, iPeriode: boolean): string {
   if (id.startsWith('del_')) return t(`arbeidstid.fordeling.deler.${id.slice(4)}` as Tekstnokkel);
-  const navn: Record<Exclude<NokkeltallId, `del_${string}`>, Tekstnokkel> = {
+  if (id === 'arsverk') return t('arbeidstid.fordeling.sum');
+  const navn: Record<Exclude<NokkeltallId, `del_${string}` | 'arsverk'>, Tekstnokkel> = {
     stilling: 'arbeidstid.resultat.stillingsprosent',
     undervisning: 'arbeidstid.resultat.undervisning',
     funksjoner: 'arbeidstid.resultat.funksjoner',
     reduksjon: 'arbeidstid.livsfase.redusert',
     beskjeftigelse: 'arbeidstid.resultat.samletBeskjeftigelse',
     differanse: 'arbeidstid.arbeidsplan.sammenligning.differanse',
-    planfestet: 'arbeidstid.fordeling.planfestet',
+    planfestet: 'arbeidstid.arbeidsplan.sammenligning.planfestetIAlt',
     lonn: iPeriode ? 'arbeidstid.arbeidsplan.lonnIPerioden' : 'arbeidstid.arbeidsplan.lonnIAlt',
   };
-  return t(navn[id as Exclude<NokkeltallId, `del_${string}`>]);
+  return t(navn[id as Exclude<NokkeltallId, `del_${string}` | 'arsverk'>]);
 }
 
 export default function Arbeidsplan({ sporring }: SideProps) {
@@ -144,6 +145,9 @@ export default function Arbeidsplan({ sporring }: SideProps) {
         gruppe: grupper[n.gruppe],
         ...(n.farge ? { farge: n.farge } : {}),
         ...(n.valgfri ? { valgfri: true } : {}),
+        ...(n.sum ? { sum: true } : {}),
+        // Kort navn på smale skjermer, så raden får plass på to linjer.
+        ...(n.id === 'del_funksjonstid' ? { kortNavn: t('arbeidstid.arbeidsplan.sammenligning.funksjonerKort') } : {}),
         // Timer med én desimal, som i fordelingstabellen, og hele kroner.
         desimaler: n.enhet === 'timer' ? 1 : n.enhet === 'kroner' ? 0 : 2,
       })),

@@ -2187,6 +2187,22 @@ p.fagkort-tittel {
   border-bottom: var(--strek) solid var(--farge-linje);
 }
 
+/* Summer (planfestet tid i alt, årsverk i alt) har strek over og fet skrift, som i fordelingstabellen.
+   Selvdisponert tid står etter summen for planfestet tid, så den ikke ser ut som en del av den. */
+.sammenligning tr.sammenligning-sum th,
+.sammenligning tr.sammenligning-sum td {
+  border-top: calc(var(--strek) * 2) solid var(--farge-kant);
+  font-weight: 700;
+}
+
+.sammenligning tr.sammenligning-sum {
+  color: var(--farge-tekst);
+}
+
+.sammenligning-kort-navn {
+  display: none;
+}
+
 /* Uendret: dempet. Endret: endringen står i en gul lapp med pil opp eller ned. */
 .sammenligning tr.uendret {
   color: var(--farge-tekst-dempet);
@@ -2228,6 +2244,20 @@ p.fagkort-tittel {
     padding-left: var(--rom-2);
   }
 
+  /* Kortere navn på smale skjermer, f.eks. «Funksjoner». Hele navnet er der for skjermlesere. */
+  .sammenligning-langt-navn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .sammenligning-kort-navn {
+    display: inline;
+  }
+
   /* Endringen står på samme linje som tallene: mindre lapp og tettere kolonner, så alt får plass på 320 px. */
   .sammenligning-pil {
     gap: 0;
@@ -2241,8 +2271,8 @@ p.fagkort-tittel {
   }
 }
 
-/* På de smaleste skjermene står tallene i liten skrift, så navnene får plass. */
-@media (max-width: 22.5rem) {
+/* På de smaleste skjermene (til og med 375 px) står tallene i liten skrift, så navnene får plass. */
+@media (max-width: 24.5rem) {
   .sammenligning td.tall {
     padding-left: var(--rom-1);
     font-size: var(--str-xs);
@@ -2263,6 +2293,11 @@ p.fagkort-tittel {
   .sammenligning-radnavn .fordeling-farge {
     width: 0.6rem;
     height: 0.6rem;
+  }
+
+  .sammenligning-kort {
+    padding-left: var(--rom-2);
+    padding-right: var(--rom-2);
   }
 }
 

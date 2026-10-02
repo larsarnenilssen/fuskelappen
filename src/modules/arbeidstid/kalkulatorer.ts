@@ -13,7 +13,7 @@ export interface Kalkulator {
 }
 
 const ider: { id: KalkulatorId; ikon: Ikonnavn }[] = [
-  { id: 'arbeidsplan', ikon: 'kategori' },
+  { id: 'arbeidsplan', ikon: 'arbeidsplan' },
   { id: 'beskjeftigelse', ikon: 'kalkulator' },
   { id: 'vikar', ikon: 'kalkulator' },
   { id: 'overtid', ikon: 'kalkulator' },
