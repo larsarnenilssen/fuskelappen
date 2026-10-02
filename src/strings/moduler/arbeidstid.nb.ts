@@ -245,6 +245,7 @@ export const arbeidstidNb = {
     fordelingPeriode: 'Timene gjelder perioden: {dager} av {skolear} undervisningsdager.',
     lonnIAlt: 'Lønn i året',
     tilleggNavn: 'Tillegg',
+    funksjonerIngen: 'Ingen lagt inn',
     funksjonerOppsummering: '{antall} lagt inn, {prosent} %',
     moterOppsummering: 'møter {timer} t per uke',
     lonnOppsummering: 'lønn regnes ut',

@@ -97,7 +97,7 @@ export const fagNb = {
     omProgramomrade: 'Hva er et programområde?',
     arstimerMangler: 'Ikke oppgitt i Grep',
     program: 'Utdanningsprogram',
-    programomrader: 'Programområder ({antall})',
+    programomrader: 'Inngår i tilbud ({antall})',
     vurdering: 'Vurderingsordning',
     vurderingIngress: 'Vurderingsordningen i læreplanen står nedenfor.',
     elev: 'Elever',

@@ -30,7 +30,7 @@ describe('tilbudsstrukturen', () => {
   });
 
   it('alle linjer i rundskrivet blir gjenkjent', () => {
-    expect(tilbud.flatMap((t) => t.avvik.filter((a) => a.startsWith('Linjen')))).toEqual([]);
+    expect(tilbud.flatMap((t) => t.avvik.filter((a) => a.type === 'ukjentLinje'))).toEqual([]);
   });
 
   it('yrkesfaglig fordypning er en obligatorisk plass med en anbefalt kode på vg1 og vg2 i yrkesfag', () => {

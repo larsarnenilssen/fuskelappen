@@ -4,13 +4,14 @@
 // fagkodene fra Grep, årsrammen fra koblingen (avgjørelse 023), valgfrie plasser, alternativer, tilpassede
 // ordninger og avvik. Kildesjekken lager den på nytt hver uke etter at Grep og Udir-1 er hentet.
 // Kjør: npm run tilbud:rapport
-import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Arsrammerad } from '../../src/modules/arbeidstid/beregning/arsrammer.ts';
 import { finnKobling, type Koblingstabeller } from '../../src/modules/arbeidstid/beregning/kobling.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import { byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
+import { ukjenteNavn } from '../../src/modules/opplaeringslop/navn.ts';
+import { avvikTekst, byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
@@ -154,7 +155,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     }
     if (t.avvik.length > 0) {
       ut.push('Avvik:', '');
-      for (const a of t.avvik) ut.push(`- ⚠ ${a}`);
+      for (const a of t.avvik) ut.push(`- ⚠ ${avvikTekst(a)}`);
       ut.push('');
     }
     if (t.andreFag.length > 0) ut.push(`Andre fag i Grep for programområdet: ${faglister(t.andreFag)}.`, '');
@@ -192,7 +193,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
   const medTabell = iSkole.filter((t) => t.tabell);
   const stemmer = medTabell.filter((t) => t.sum === t.totalt);
   const avvik = new Map<string, string[]>();
-  for (const t of alle) for (const a of t.avvik) avvik.set(a, [...(avvik.get(a) ?? []), t.kode]);
+  for (const t of alle) for (const a of t.avvik.map(avvikTekst)) avvik.set(a, [...(avvik.get(a) ?? []), t.kode]);
 
   ut.push(
     '# Tilbudsstrukturen i videregående',
@@ -261,7 +262,7 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
         const t = tilbud.get(k);
         if (!t) continue;
         vist.add(k);
-        ut.push(`- ${t.programomrade.trinn} ${ponavn(k)}${t.tabell ? ` · tabell ${t.tabell.nr}` : ''}${t.fra.length > 0 ? ` · bygger på ${t.fra.map(kort).join(', ')}` : ''}${t.avvik.length > 0 ? ` · ⚠ ${t.avvik.length === 1 ? t.avvik[0] : `${t.avvik.length} avvik, bl.a. ${t.avvik[0]}`}` : ''}`);
+        ut.push(`- ${t.programomrade.trinn} ${ponavn(k)}${t.tabell ? ` · tabell ${t.tabell.nr}` : ''}${t.fra.length > 0 ? ` · bygger på ${t.fra.map(kort).join(', ')}` : ''}${t.avvik[0] ? ` · ⚠ ${t.avvik.length === 1 ? avvikTekst(t.avvik[0]) : `${t.avvik.length} avvik, bl.a. ${avvikTekst(t.avvik[0])}`}` : ''}`);
       }
       ut.push('');
     }
@@ -303,9 +304,26 @@ export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().s
   return lagTilbudsrapport(g.indeks, fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot));
 }
 
+/**
+ * Linjenavn og kolonnenavn i rundskrivet (dette og neste skoleår) som appen ikke har nynorsk eller utskrevet navn
+ * for. De vises som i rundskrivet til de er lagt inn i src/strings/linjenavn.ts eller navn.ts, og kildesjekken melder
+ * dem i kontrollsaken (eier 02.10.2026).
+ */
+export function ukjenteNavnFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): { linjer: string[]; ordninger: string[] } {
+  const g = lesKoblingsgrunnlag(rot);
+  const { fordeling, neste } = lesFordelinger(rot, dato);
+  const bygger = lesFagBygger(rot);
+  const tilbud = [fordeling, neste].flatMap((f) => (f ? Object.keys(g.indeks.programomrader).map((k) => byggTilbud(k, g.indeks, f, bygger)) : []));
+  return ukjenteNavn(tilbud);
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const rot = fileURLToPath(new URL('../..', import.meta.url));
   const tekst = lagRapportFraRepo(rot);
   writeFileSync(join(rot, 'docs/TILBUDSSTRUKTUR.md'), tekst);
   console.log(`docs/TILBUDSSTRUKTUR.md: ${tekst.split('\n').length} linjer.`);
+  const navn = ukjenteNavnFraRepo(rot);
+  mkdirSync(join(rot, '.generert'), { recursive: true });
+  writeFileSync(join(rot, '.generert/tilbud-navn.json'), `${JSON.stringify(navn, null, 2)}\n`);
+  console.log(`Navn uten oversettelse: ${navn.linjer.length} linjer, ${navn.ordninger.length} ordninger.`);
 }

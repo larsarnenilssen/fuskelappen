@@ -112,6 +112,7 @@ test.describe('arbeidstid', () => {
 
   test('det utfylte huskes når brukeren går tilbake', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('20');
     const planfestet = page.locator('.fordeling-tabell').getByRole('row', { name: /^Planfestet tid/ });
     await expect(planfestet).toContainText(/1\s257,5/);
@@ -135,6 +136,7 @@ test.describe('arbeidstid', () => {
   test('planfestet tid utvider arbeidsåret over 37,5 timer i uka', async ({ page }) => {
     // 80 % funksjon i hel stilling: 1150 × 0,2 + 1687,5 × 0,8 = 1580 timer planfestet tid, som punkt 5.3.
     await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('80');
     await expect(page.locator('.fordeling-tabell').getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s580,0/);
     await expect(page.getByText(/utvides arbeidsåret med 14,7 dager/)).toBeVisible();
@@ -176,6 +178,7 @@ test.describe('arbeidstid', () => {
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await expect(page.getByLabel('Antall timer i perioden')).toHaveValue('');
     await page.getByLabel('Antall timer i perioden').fill('262,5');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('10');
     const kort = page.locator('.resultatkort').first();
     await expect(resultat(page)).toContainText('110');
@@ -242,6 +245,7 @@ test.describe('arbeidstid', () => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('20');
     await page.getByLabel('Møtetid per uke (timer)').fill('2');
     await expect(page.getByRole('img', { name: /Stolpediagram over årsverket på 1\s687,5 timer/ })).toBeVisible();
@@ -254,6 +258,7 @@ test.describe('arbeidstid', () => {
   test('fordelingen virker for en stilling med bare funksjon', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('textbox', { name: 'Stillingsprosent' }).fill('10');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('10');
     await page.getByLabel('Møtetid per uke (timer)').fill('3');
     await expect(page.locator('.merknad-advarsel')).toHaveCount(0);
@@ -268,6 +273,7 @@ test.describe('arbeidstid', () => {
 
   test('arbeidsåret utvides når planfestet tid går over 37,5 timer per uke', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('100');
     const tabell = page.locator('.fordeling-tabell');
     await expect(tabell.getByRole('columnheader', { name: /Per uke/ })).toBeVisible();
@@ -410,6 +416,7 @@ test.describe('arbeidstid', () => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('20');
     await expect(page.locator('.arbeidsplan-differanse')).toHaveAttribute('data-differanse', 'balanse');
     await expect(page.getByRole('img', { name: /Stolpediagram over årsverket på 1\s687,5 timer/ })).toBeVisible();
@@ -486,8 +493,8 @@ test.describe('arbeidstid', () => {
     // Funksjoner og møter og lønn.
     const funksjoner = page.getByRole('button', { name: /^Funksjoner(?! og)/ });
     await funksjoner.click();
-    await expect(page.getByLabel('Funksjon 1: Prosent')).toBeHidden();
-    await expect(funksjoner).toContainText('1 lagt inn, 0 %');
+    await expect(page.getByRole('button', { name: 'Legg til funksjon' })).toBeHidden();
+    await expect(funksjoner).toContainText('Ingen lagt inn');
 
     // Det som er lagt sammen, huskes når brukeren går til en annen side og tilbake.
     await aapne(page, '/arbeidstid/beskjeftigelse');
@@ -508,6 +515,7 @@ test.describe('arbeidstid', () => {
     const tabell = page.locator('.fordeling-tabell');
 
     // Funksjon 1: bare tillegg (0 %). Tillegget kommer i lønnen, men tiden endres ikke.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Rådgiver');
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
     await expect(lonn).toContainText(/Tillegg: Rådgiver\s*12\s000/);
@@ -536,6 +544,7 @@ test.describe('arbeidstid', () => {
 
   test('funksjoner kan oppgis i årsrammetimer, med forslag for kontaktlærer', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
     await expect(page.getByText(/Kontaktlærer: minst 28,5 årsrammetimer \(SFS 2213 punkt 7\.3 b\)/)).toBeVisible();
     await page.getByRole('button', { name: 'Bruk 28,5 timer' }).click();
@@ -610,6 +619,7 @@ test.describe('arbeidstid', () => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('420');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('30');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('radio', { name: 'Egen årslønn' }).check();
@@ -664,6 +674,7 @@ test.describe('arbeidstid', () => {
         throw new Error(`Gruppe ${nr} ble ikke regnet ut. Fagkortene: ${JSON.stringify(kort)}`, { cause: feil });
       }
     }
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByPlaceholder('F.eks. kontaktlærer').fill('Kontaktlærer');
     await page.getByLabel('Funksjon 1: Prosent').fill('25');
     await expect(resultat(page)).toContainText('97,23');
@@ -684,6 +695,7 @@ test.describe('arbeidstid', () => {
   test('fjern-knappen står på rammen over navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
     const midt = async (l: Locator) => {
       const b = await l.boundingBox();
@@ -704,6 +716,7 @@ test.describe('arbeidstid', () => {
   test('teksten ved vippen for tillegg deles ikke inne i et ord, heller ikke med stor skrift', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
     for (const skrift of ['100%', '150%', '200%']) {
       await page.addStyleTag({ content: `html { font-size: ${skrift} !important; }` });
@@ -754,6 +767,7 @@ test.describe('arbeidstid', () => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await velgFag(page, 'norsk stud vg1', 'Norsk · Studiespesialisering Vg1');
     await page.getByLabel('Antall årstimer').fill('452');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('12');
     const differanse = page.locator('.arbeidsplan-differanse');
     await expect(differanse).toHaveAttribute('data-differanse', 'overtid');

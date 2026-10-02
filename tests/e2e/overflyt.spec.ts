@@ -43,6 +43,7 @@ test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ p
   await page.getByLabel('Fag', { exact: true }).fill('engelsk stud vg1');
   await page.locator('.fagtreff button').first().click();
   await page.getByLabel('Antall årstimer').fill('420');
+  await page.getByRole('button', { name: 'Legg til funksjon' }).click();
   await page.getByLabel('Funksjon 1: Prosent').fill('20');
   await page.getByLabel('Møtetid per uke (timer)').fill('2');
   await page.getByRole('switch', { name: 'Regn ut lønn' }).check();

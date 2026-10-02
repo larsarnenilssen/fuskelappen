@@ -19,7 +19,8 @@ import { overforSkjema } from '../../arbeidstid/kontekst.ts';
 import { hentBegreper } from '../../begreper/innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { tilbudRute } from '../../opplaeringslop/data.ts';
+import { lastTilbud, type Tilbudene, tilbudRute } from '../../opplaeringslop/data.ts';
+import { type Fagrolle, fagITilbud } from '../../opplaeringslop/grupper.ts';
 import type { SideProps } from '../../typer.ts';
 import { lastFagindeks, lastFagrelasjoner, lastLaereplan } from '../data.ts';
 import { htmlSpraak, programmerFor, programSammendrag, udirLenke } from '../oppslag.ts';
@@ -302,6 +303,13 @@ function YffForklaring({ malform }: { malform: Malform }) {
   );
 }
 
+/** «Felles programfag · 197 timer» eller «Fellesfag, ett av flere valg · 112 timer». */
+function rolletekst(t: T, r: Fagrolle): string {
+  const navn = t(`opplaeringslop.tilbud.kategori.${r.kategori}`);
+  const del = r.valg ? t('opplaeringslop.tilbud.rolleValg', { kategori: navn }) : navn;
+  return r.timer !== null ? `${del} · ${t('opplaeringslop.tilbud.timer', { timer: formaterTall(r.timer) })}` : del;
+}
+
 export default function Fagside({ parametre }: SideProps) {
   const { t, malform } = useTekst();
   const kode = parametre.kode ?? '';
@@ -310,9 +318,12 @@ export default function Fagside({ parametre }: SideProps) {
   const [forsok, settForsok] = useState(0);
   const [rel, settRel] = useState<Fagrelasjoner | null>(null);
   const koblingsdata = useKoblingsdata();
+  const [tilbud, settTilbud] = useState<Tilbudene | null>(null);
 
   useEffect(() => {
     void lastFagindeks().then(settIndeks);
+    // Tilbudene viser hvordan faget inngår i hvert programområde. Siden virker også uten.
+    lastTilbud().then(settTilbud, () => undefined);
     // Erstatninger og fag som brukes sammen, fra VIGO Kodeverksbase. Siden virker også uten.
     lastFagrelasjoner().then(settRel, () => undefined);
   }, []);
@@ -490,13 +501,17 @@ export default function Fagside({ parametre }: SideProps) {
           <p class="liten">
             <a href="#/begreper/programomrade">{t('fag.side.omProgramomrade')}</a>
           </p>
-          {/* Hvert programområde lenker til tilbudet i Opplæringsløp (pakke 5, avgjørelse 035). */}
-          <ul>
+          {/* Hvert programområde lenker til tilbudet i Opplæringsløp (pakke 5, avgjørelse 035), med hvordan faget
+              inngår i tilbudet og timene (eier 02.10.2026). */}
+          <ul class="inngar-liste">
             {fag.po.map((p) => {
               const po = indeks.programomrader[p];
+              const tb = tilbud?.tilbud[p];
+              const rolle = tb ? fagITilbud(tb, kode, indeks) : null;
               return (
                 <li key={p}>
                   {po ? <a href={`#${tilbudRute(po.program, p)}`}>{`${po.navn[malform]} (${p.replace(/-+$/, '')}, ${trinnTekst(t, po.trinn)})`}</a> : p}
+                  {rolle && <span class="inngar-rolle">{rolletekst(t, rolle)}</span>}
                 </li>
               );
             })}

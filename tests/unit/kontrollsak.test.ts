@@ -160,6 +160,15 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('https://github.com/eier/protokollen/blob/main/docs/KOBLING.md');
   });
 
+  it('melder nye navn i fag- og timefordelingen som appen ikke har nynorsk for (eier 02.10.2026)', () => {
+    expect(lagUkesrapport(grunnlag({ navn: { linjer: [], ordninger: [] } }))).toMatchObject({ aapen: false, punkter: 0 });
+    const r = lagUkesrapport(grunnlag({ navn: { linjer: ['Programfag fra nytt område'], ordninger: ['Med påbygg vg2'] } }));
+    expect(r.punkter).toBe(2);
+    expect(r.tekst).toContain('## Nye navn i fag- og timefordelingen');
+    expect(r.tekst).toContain('- [ ] Linjenavn uten nynorsk: «Programfag fra nytt område».');
+    expect(r.tekst).toContain('- [ ] Ny tilpasset ordning i rundskrivet: «Med påbygg vg2».');
+  });
+
   it('viser endringen, hva den kan berøre, avvik i tall og kilder som feilet', () => {
     const r = lagUkesrapport(
       grunnlag({
