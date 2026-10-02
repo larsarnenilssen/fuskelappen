@@ -463,9 +463,18 @@ export default function Fagside({ parametre }: SideProps) {
       {nyPlan && lp && <p class="merknad">{t('fag.side.nyLaereplan', { gammel: lp, ny: nyPlan })}</p>}
       {erYff && <YffForklaring malform={malform} />}
 
+      {/* Grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del (avgjørelse 037). Står før
+          kompetansemålene, og alle delene er lukket til brukeren åpner dem (eier 02.10.2026). */}
+      {plan && typeof plan === 'object' && plan.ferdigheter.length + plan.temaer.length > 0 && (
+        <Seksjon id="laereplanverket" lukket tittel={t('laereplanverket.fagark.tittel')}>
+          <FerdigheterOgTemaer plan={plan} lang={htmlSpraak(plan.spraak)} />
+        </Seksjon>
+      )}
+
       {!erYff && (
         <Seksjon
           id="kompetansemaal"
+          lukket
           tittel={antallMaal !== null ? `${t('fag.side.kompetansemaalSeksjon')} (${formaterTall(antallMaal)})` : t('fag.side.kompetansemaalSeksjon')}
         >
           {!lp ? (
@@ -485,7 +494,7 @@ export default function Fagside({ parametre }: SideProps) {
         </Seksjon>
       )}
 
-      <Seksjon id="vurdering" tittel={t('fag.side.vurdering')}>
+      <Seksjon id="vurdering" lukket tittel={t('fag.side.vurdering')}>
         {fag.elev || fag.privatist ? (
           <div class="fag-vurderinger">
             {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}
@@ -496,13 +505,6 @@ export default function Fagside({ parametre }: SideProps) {
         )}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
       </Seksjon>
-
-      {/* Grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del (avgjørelse 037). */}
-      {plan && typeof plan === 'object' && plan.ferdigheter.length + plan.temaer.length > 0 && (
-        <Seksjon id="laereplanverket" lukket tittel={t('laereplanverket.fagark.tittel')}>
-          <FerdigheterOgTemaer plan={plan} lang={htmlSpraak(plan.spraak)} />
-        </Seksjon>
-      )}
 
       {fag.po.length > 0 && (
         <Seksjon id="programomrader" lukket tittel={t('fag.side.programomrader', { antall: fag.po.length })}>

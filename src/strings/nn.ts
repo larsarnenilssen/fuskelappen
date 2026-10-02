@@ -251,19 +251,19 @@ export const nn: Tekster = {
   moduler: {
     laereplanverket: {
       navn: 'Overordna del',
-      beskrivelse: 'Verdiar og prinsipp, grunnleggjande ferdigheiter og tverrfaglege tema.',
+      beskrivelse: 'Verdiar, prinsipp, ferdigheiter og tema.',
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Fag- og timefordelinga og tilbodsstrukturen: utdanningsprogram, tilbod på kvart trinn, og fag og timar.',
+      beskrivelse: 'Fag- og timefordelinga: tilbod og timar.',
     },
     begreper: {
       navn: 'Omgrep',
-      beskrivelse: 'Forklaringar av sentrale omgrep i regelverket.',
+      beskrivelse: 'Forklaringar av sentrale omgrep.',
     },
     fag: {
       navn: 'Fag og læreplanar',
-      beskrivelse: 'Læreplanane for fag: fagkodar, kompetansemål, vurdering og årstimetal.',
+      beskrivelse: 'Læreplanar, kompetansemål og vurdering.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',
