@@ -142,6 +142,22 @@ describe('tilbudet for et programområde', () => {
     expect(ssa.sum).toBe(476);
   });
 
+  it('gir lærefaget i bedrift alene, med fellesfag som alternativer og valgfrie programfag til valg (eier 02.10.2026)', () => {
+    const medFlere: Fagindeks = {
+      ...indeks,
+      fag: {
+        ...indeks.fag,
+        NOR1152: fag('Grunnleggende norsk for språklige minoriteter, nivå 1', 'fellesfag', ['HSHEA3----'], 56),
+        HEA3101: fag('Helsearbeiderfaget, fordypningsområde', 'valgfritt_programfag', ['HSHEA3----'], null),
+      },
+    };
+    const t = byggTilbud('HSHEA3----', medFlere, ff);
+    expect(t.deler).toHaveLength(1);
+    expect(t.deler[0]).toMatchObject({ kategori: 'felles_programfag', koder: ['HEA3004'], alternativer: ['NOR1152'], utvalg: { grunn: 'valg', koder: ['HEA3101'] } });
+    expect(t.alternativer).toEqual([]);
+    expect(fagroller([t]).get('NOR1152')).toBe('alternativ');
+  });
+
   it('gir lærefaget i bedrift uten tabell, og melder avvik når summen ikke stemmer', () => {
     expect(byggTilbud('HSHEA3----', indeks, ff)).toMatchObject({ tabell: null, deler: [{ linje: 'Opplæring i bedrift', koder: ['HEA3004'] }] });
     const feil = { ...ff, tabeller: ff.tabeller.map((t) => (t.nr === '17a' && t.type === 'fordeling' ? { ...t, rader: t.rader.map((r) => (r.linje === 'Totalt omfang' ? { ...r, timer: [900, 898, 898] } : r)) } : t)) };

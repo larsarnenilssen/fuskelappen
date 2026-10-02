@@ -174,8 +174,8 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
       for (const b of bedrift) {
         vist.add(b);
         const tb = tilbud.get(b);
-        // Lærefagets egne koder først, så fellesfag og andre koder (f.eks. norsk og samfunnskunnskap for voksne).
-        const koder = (tb?.deler.flatMap((d) => (d.type === 'fag' ? d.koder : [])) ?? []).sort((x, y) => Number(indeks.fag[x]?.type !== 'felles_programfag') - Number(indeks.fag[y]?.type !== 'felles_programfag') || x.localeCompare(y));
+        // Lærefagets egne koder og fordypningsområdene (fag til valg). Fellesfag for særskilte grupper står ikke her.
+        const koder = (tb?.deler.flatMap((d) => (d.type === 'fag' ? [...d.koder, ...(d.utvalg?.koder ?? [])] : [])) ?? []).sort((x, y) => Number(indeks.fag[x]?.type !== 'felles_programfag') - Number(indeks.fag[y]?.type !== 'felles_programfag') || x.localeCompare(y));
         const lenke = vilbliLenke(b, indeks, { side: 'p5', via: kode });
         ut.push(`- ${ponavn(b)}${koder.length > 0 ? `: ${faglister(koder, 3)}` : ''}${tb && tb.fra.length > 1 ? ` (også etter ${tb.fra.filter((f) => f !== kode).map(kort).join(', ')})` : ''}${tb?.fraAvledet ? ' (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06)' : ''}${lenke ? ` · [Vilbli](${lenke})` : ''}`);
       }

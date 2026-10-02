@@ -645,13 +645,13 @@ Kryssløp til: Trearbeid (DTDTR2), Gipsmakerfaget (DTGIP3).
 
 Lærefag etter Bygg- og anleggsteknikk (BABAT1):
 
-- Byggdrifterfaget (BABDR3): 8 koder, f.eks. BDR3004 Byggdrifterfaget - særløp, BDR3103 Byggdrifterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babdr3----/p5)
+- Byggdrifterfaget (BABDR3): BDR3004 Byggdrifterfaget - særløp, BDR3103 Byggdrifterfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babdr3----/p5)
 - Brannforebygger (BABFB3): BFB3004 Brannforebyggerfaget – særløp, BFB3103 Brannforebyggerfaget- skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babfb3----/p5)
 - Byggmontasjefaget (BABYM3): BYM3001 Byggmontasjefaget – særløp, BYM3103 Byggmontasjefaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babym3----/p5)
-- Glassfaget (BAGLA3): 8 koder, f.eks. GLA3004 Glassfaget - særløp, GLA3103 Glassfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bagla3----/p5)
-- Renholdsoperatørfaget (BAROF3): 8 koder, f.eks. ROF3004 Renholdsoperatørfaget - særløp, ROF3103 Renholdsoperatørfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barof3----/p5)
+- Glassfaget (BAGLA3): GLA3004 Glassfaget - særløp, GLA3103 Glassfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bagla3----/p5)
+- Renholdsoperatørfaget (BAROF3): 6 koder, f.eks. ROF3004 Renholdsoperatørfaget - særløp, ROF3103 Renholdsoperatørfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barof3----/p5)
 - Stillasbyggerfaget (BASBF3): SBF3001 Stillasbyggerfaget - særløp, SBF3103 Stillasbyggerfaget - skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.basbf3----/p5)
-- Steinfaget (BASTE3): 8 koder, f.eks. STE3004 Steinfaget - særløp, STE3103 Steinfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baste3----/p5)
+- Steinfaget (BASTE3): STE3004 Steinfaget - særløp, STE3103 Steinfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baste3----/p5)
 
 ##### Vg2 Anleggsgartner (BAANG2) · 982 timer ✓
 
@@ -746,7 +746,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Betong og mur (BABMO2):
 
-- Betongfaget (BABET3): 8 koder, f.eks. BET3004 Betongfaget, BET3103 Betongfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babet3----/p5)
+- Betongfaget (BABET3): 6 koder, f.eks. BET3004 Betongfaget, BET3103 Betongfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babet3----/p5)
 - Murer- og flisleggerfaget (BAMFF3): MFF3001 Murer- og flisleggerfaget, MFF3103 Murer- og flisleggerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bamff3----/p5)
 
 ##### Vg2 Klima, energi og miljøteknikk (BAKEM2) · 982 timer ✓
@@ -777,7 +777,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 Lærefag etter Klima, energi og miljøteknikk (BAKEM2):
 
 - Isolatørfaget (BAISL3): ISL3001 Isolatørfaget, ISL3103 Isolatørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baisl3----/p5)
-- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BARLF2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
+- Rørleggerfaget (BARLF3): 7 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BARLF2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
 - Tak- og membrantekkerfaget (BATAK3): TAK3004 Tak- og membrantekkerfaget, TAK3103 Tak- og membrantekkerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batak3----/p5)
 - Ventilasjons- og blikkenslagerfaget (BAVBL3): VBL3004 Ventilasjons- og blikkenslagerfaget, VBL3103 Ventilasjons- og blikkenslagerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bavbl3----/p5)
 
@@ -809,7 +809,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 Lærefag etter Overflateteknikk (BAOFT2):
 
 - Industrimalerfaget (BAIMF3): IMF3004 Industrimalerfaget, IMF3103 Industrimalerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baimf3----/p5)
-- Maler- og overflateteknikkfaget (BAMOT3): 9 koder, f.eks. MOT3001 Maler- og overflateteknikkfaget, MOT3103 Maler- og overflateteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bamot3----/p5)
+- Maler- og overflateteknikkfaget (BAMOT3): 7 koder, f.eks. MOT3001 Maler- og overflateteknikkfaget, MOT3103 Maler- og overflateteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bamot3----/p5)
 
 ##### Vg2 Rørlegger (BARLF2) · 982 timer ✓
 
@@ -838,7 +838,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Rørlegger (BARLF2):
 
-- Rørleggerfaget (BARLF3): 9 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BAKEM2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
+- Rørleggerfaget (BARLF3): 7 koder, f.eks. RLF3004 Rørleggerfaget, RLF3103 Rørleggerfaget, skriftlig (også etter BAKEM2) · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf3----/p5)
 
 ##### Vg2 Treteknikk (BATRT2) · 982 timer ✓
 
@@ -869,7 +869,7 @@ Kryssløp til: Industrisnekkerfaget (TPISN3).
 
 Lærefag etter Treteknikk (BATRT2):
 
-- Snekkerfaget (BASNE3): 14 koder, f.eks. SNEV100 Planlegging, SNEV101 Produksjon og overflatebehandling · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.basne3----/p5)
+- Snekkerfaget (BASNE3): 12 koder, f.eks. SNEV100 Planlegging, SNEV101 Produksjon og overflatebehandling · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.basne3----/p5)
 - Trelast- og limtreproduksjonsfaget (BATLT3): 8 koder, f.eks. TLT3001 Trelast- og limtreproduksjonsfaget, fordypningsområde høvellastproduksjon, TLT3004 Trelast- og limtreproduksjonsfaget, fordypningsområde skurlastproduksjon · [Vilbli](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batlt3----/p5)
 
 ##### Vg2 Tømrer (BATMF2) · 982 timer ✓
@@ -1432,7 +1432,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 Lærefag etter Ambulansefag (HSAMB2):
 
 - Ambulansefaget (HSAMB3): AMB3004 Ambulansefaget, AMB3103 Ambulansefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb3----/p5)
-- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
+- Helsearbeiderfaget (HSHEA3): 6 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSHEA2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
 - Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSHEA2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hspor3----/p5)
 
 ##### Vg2 Barne- og ungdomsarbeiderfag (HSBUA2) · 982 timer ✓
@@ -1532,7 +1532,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Helsearbeiderfag (HSHEA2):
 
-- Helsearbeiderfaget (HSHEA3): 8 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSAMB2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
+- Helsearbeiderfaget (HSHEA3): 6 koder, f.eks. HEA3004 Helsearbeiderfaget, HEA3103 Helsearbeiderfaget, skriftlig (også etter HSAMB2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea3----/p5)
 - Portørfaget (HSPOR3): POR3004 Portørfaget, POR3103 Portørfaget, skriftlig (også etter HSAMB2, HSHES2) · [Vilbli](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hspor3----/p5)
 
 ##### Vg2 Helseservicefag (HSHES2) · 982 timer ✓
@@ -2118,7 +2118,7 @@ Kryssløp til: Sjømatproduksjon (RMSMP3).
 
 Lærefag etter Fiske og fangst (NAFFA2):
 
-- Fiske og fangst (NAFFA3): 8 koder, f.eks. FFA3004 Fiske og fangst, FFA3103 Fiske og fangst, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa3----/p5)
+- Fiske og fangst (NAFFA3): 6 koder, f.eks. FFA3004 Fiske og fangst, FFA3103 Fiske og fangst, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa3----/p5)
 - Fiskeri- og akvakulturredskapsfaget (NAFIR3): FIR3004 Fiskeri- og akvakulturredskapsfaget, FIR3103 Fiskeri- og akvakulturredskapsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nafir3----/p5)
 
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
@@ -2359,9 +2359,9 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 
 Lærefag etter Kokk- og servitørfag (RMKOS2):
 
-- Ernæringskokkfaget (RMEKF3): 8 koder, f.eks. EKF3001 Ernæringskokkfaget, EKF3103 Ernæringskokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmekf3----/p5)
+- Ernæringskokkfaget (RMEKF3): 6 koder, f.eks. EKF3001 Ernæringskokkfaget, EKF3103 Ernæringskokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmekf3----/p5)
 - Ferskvarehandlerfaget (RMFVF3): FVF3001 Ferskvarehandlerfaget, FVF3103 Ferskvarehandlerfaget, skriftlig (også etter RMBAK2, RMMPR2) · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmfvf3----/p5)
-- Kokkfaget (RMKOK3): 8 koder, f.eks. KOK3004 Kokkfaget, KOK3103 Kokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkok3----/p5)
+- Kokkfaget (RMKOK3): 6 koder, f.eks. KOK3004 Kokkfaget, KOK3103 Kokkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkok3----/p5)
 - Servitørfaget (RMSER3): SER3004 Servitørfaget, SER3103 Servitørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmser3----/p5)
 
 ##### Vg2 Matproduksjon (RMMPR2) · 982 timer ✓
@@ -2455,7 +2455,7 @@ Lærefag etter Salg, service og reiseliv (SRSSR2):
 
 - Reiselivsfaget (SRRLV3): RLV3004 Reiselivsfaget, RLV3103 Reiselivsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srrlv3----/p5)
 - Sikkerhetsfaget (SRSIK3): SIK3004 Sikkerhetsfaget, SIK3103 Sikkerhetsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsik3----/p5)
-- Salgsfaget (SRSLG3): 8 koder, f.eks. SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5)
+- Salgsfaget (SRSLG3): 6 koder, f.eks. SLG3004 Salgsfaget, SLG3103 Salgsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srslg3----/p5)
 - Service- og administrasjonsfaget (SRSOA3): SOA3001 Service- og administrasjonsfaget, SOA3103 Service- og administrasjonsfaget, skriftlig (Grep mangler «bygger på»; eneste vg2 i programmet, se udir.no/kl06) · [Vilbli](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srsoa3----/p5)
 
 ### Teknologi- og industrifag (TP)
@@ -2660,7 +2660,7 @@ Lærefag etter Industriteknologi (TPPIN2):
 - Dimensjonskontrollfaget (TPDKO3): DKO3004 Dimensjonskontrollfaget, DKO3103 Dimensjonskontrollfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpdko3----/p5)
 - Finmekanikerfaget (TPFMK3): FMK3004 Finmekanikerfaget, FMK3103 Finmekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpfmk3----/p5)
 - Grafisk produksjonsteknikk (TPGPT3): GPT3004 Grafisk produksjonsteknikkfaget, GPT3103 Grafisk produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpgpt3----/p5)
-- Gjenvinningsfaget (TPGVF3): 9 koder, f.eks. GVF3004 Gjenvinningsfaget, GVF3103 Gjenvinningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpgvf3----/p5)
+- Gjenvinningsfaget (TPGVF3): 7 koder, f.eks. GVF3004 Gjenvinningsfaget, GVF3103 Gjenvinningsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpgvf3----/p5)
 - Industrimekanikerfaget (TPIME3): IME3004 Industrimekanikerfaget, IME3103 Industrimekanikerfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpime3----/p5)
 - Industrimontørfaget (TPIMO3): IMO3004 Industrimontørfaget, IMO3103 Industrimontørfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpimo3----/p5)
 - Industrioppmålingsfaget (TPIOM3): IOM3004 Industrioppmålingsfaget, IOM3103 Industrioppmålingsfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpiom3----/p5)
@@ -2676,7 +2676,7 @@ Lærefag etter Industriteknologi (TPPIN2):
 - Platearbeiderfaget (TPPLA3): PLA3004 Platearbeiderfaget, PLA3103 Platearbeiderfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppla3----/p5)
 - Plastfaget (TPPLF3): PLF3001 Plastfaget, PLF3103 Plastfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpplf3----/p5)
 - Polymerkomposittfaget (TPPOM3): POM3004 Polymerkomposittfaget, POM3103 Polymerkomposittfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppom3----/p5)
-- Produksjonsteknikkfaget (TPPRT3): 9 koder, f.eks. PRT3004 Produksjonsteknikkfaget, PRT3103 Produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpprt3----/p5)
+- Produksjonsteknikkfaget (TPPRT3): 7 koder, f.eks. PRT3004 Produksjonsteknikkfaget, PRT3103 Produksjonsteknikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpprt3----/p5)
 - Serigrafifaget (TPSGR3): SGR3004 Serigrafifaget, SGR3103 Serigrafifaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsgr3----/p5)
 - Sveisefaget (TPSVE3): SVE3004 Sveisefaget, SVE3103 Sveisefaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpsve3----/p5)
 - Tekstilrensfaget (TPTSR3): TSR3001 Tekstilrensfaget, TSR3103 Tekstilrensfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptsr3----/p5)
@@ -2813,7 +2813,7 @@ Påbygging: Vg3 påbygging til generell studiekompetanse for yrkesfaglige utdann
 Lærefag etter Transport og logistikk (TPTOL2):
 
 - Kran- og løfteoperasjonsfaget (TPKLO3): KLO3004 Kran- og løfteoperasjonsfaget, KLO3103 Kran- og løfteoperasjonsfaget, skriftlig (også etter TPPIN2) · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpklo3----/p5)
-- Logistikkfaget (TPLOG3): 8 koder, f.eks. LOG3004 Logistikkfaget, LOG3103 Logistikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplog3----/p5)
+- Logistikkfaget (TPLOG3): 6 koder, f.eks. LOG3004 Logistikkfaget, LOG3103 Logistikkfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tplog3----/p5)
 - Yrkessjåførfaget (TPYRK3): YRK3004 Yrkessjåførfaget, YRK3103 Yrkessjåførfaget, skriftlig · [Vilbli](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpyrk3----/p5)
 
 ##### Vg3 Yrkessjåførkurs for voksne (TPYSL3)

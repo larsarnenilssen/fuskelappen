@@ -26,3 +26,7 @@
 **Konsekvens:** Det eneste som må vedlikeholdes for hånd, er nynorsk for nye linjenavn og utskrift av nye ordninger. Kontrollsaken melder dem, og til det er gjort vises rundskrivets tekst. Endres tilbudsstrukturen, følger grupperingen, avvikene og timene kildene ved neste bygg. Avgjørelse 035 sier at avvik ikke vises og at linjenavn vises uoversatt. Det gjelder ikke lenger.
 
 **Tillegg (0.19.1):** Etter eiers gjennomgang er fagene i et tilbud rader med lik høyde. Valg og koder står dempet på samme linje som navnet, og lister som åpnes er innrykket med en strek. Knappen til neste trinn i løpet er bunnen av tilbudskortet («Vis 7 tilbud på vg2»), fordi en løs lenke under kortet ikke var tydelig nok.
+
+**Tillegg (0.21.1, eier 02.10.2026):**
+- **Lærefag:** Opplæring i bedrift har ingen tabell i rundskrivet. Fagene Grep knytter til lærefaget, deles nå etter fagtype i Grep: felles programfag er lærefaget, valgfrie programfag er fordypningsområder lærlingen velger blant, og fellesfag (grunnleggende norsk, morsmål, norsk og samfunnskunnskap for voksne) er alternativer for særskilte grupper. Før sto alle under felles programfag. En lærling har normalt bare lærefaget.
+- **Rekkefølge:** Tilbudene videre står med tilbud i skole først og opplæring i bedrift etterpå, ellers i samme rekkefølge (`skoleForst`).

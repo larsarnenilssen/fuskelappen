@@ -689,6 +689,8 @@ main {
   border: var(--strek) solid var(--farge-tekst-dempet);
   border-radius: var(--radius-s);
   background: var(--farge-flate);
+  /* Feltene arver ellers tekstfargen rundt seg, og søket på forsiden står på den mørke toppflaten (hvit tekst). */
+  color: var(--farge-tekst);
   font-size: max(16px, 1rem);
 }
 
@@ -1760,12 +1762,16 @@ p.fagkort-tittel {
   margin-left: 0;
 }
 
-/* «Åpne i nytt vindu» gir bare mening på skrivebordet, der flere vinduer kan stå ved siden av hverandre. */
+/*
+ * «Åpne i nytt vindu» gir bare mening på skrivebordet, der flere vinduer kan stå ved siden av hverandre: med mus og
+ * i et vindu som ikke er smalt. Grensen var 64rem, men installert app og nettleservinduer på bærbar PC med skalering er
+ * ofte smalere, og da var knappen borte (eier 02.10.2026).
+ */
 .nytt-vindu {
   display: none;
 }
 
-@media (min-width: 64rem) and (hover: hover) and (pointer: fine) {
+@media (min-width: 40rem) and (hover: hover) and (pointer: fine) {
   .nytt-vindu {
     display: inline-flex;
   }
