@@ -23,7 +23,7 @@ import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
-import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, skoleForst, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
 
 type Kategori = Tilbudsdel['kategori'];
 type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;
@@ -129,7 +129,7 @@ function Programfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Faginde
                 : t('opplaeringslop.tilbud.utvalgValgKort')
           }
           under={t('opplaeringslop.tilbud.blantFag', { antall: formaterTall(u.koder.length) })}
-          hoyre={formaterTall(u.timer)}
+          hoyre={u.timer > 0 ? formaterTall(u.timer) : undefined}
         >
           {u.rekker.length > 0 && (
             <p class="fagrad-merknad">
@@ -301,7 +301,8 @@ function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Til
             key={kategori}
             nokkel={`lop-${kortKode(kode)}-${kategori}`}
             tittel={t(`opplaeringslop.tilbud.kategori.${kategori}`)}
-            hoyre={t('opplaeringslop.tilbud.timer', { timer: formaterTall(timer) })}
+            // Opplæring i bedrift har ikke timer i rundskrivet. Da står det ingenting i stedet for «0 timer».
+            hoyre={timer > 0 ? t('opplaeringslop.tilbud.timer', { timer: formaterTall(timer) }) : undefined}
             farge={farge}
           >
             <Avviksmerknad avvik={fagdeler.flatMap((d) => d.avvik)} />
@@ -489,7 +490,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       )}
 
       <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={tb.videre} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} />
       <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
       <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
       <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />

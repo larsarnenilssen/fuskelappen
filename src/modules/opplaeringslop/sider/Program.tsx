@@ -11,7 +11,7 @@ import type { Fagindeks } from '../../fag/skjema.ts';
 import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { kortKode, type Tilbudene } from '../data.ts';
-import { Brodsmuler, Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Lasting, Rubrikk, skoleForst, Tilbudslenke, useTilbudsdata } from './felles.tsx';
 
 /**
  * Et tilbud med en knapp som viser tilbudene det fører videre til i samme program. `sett` hindrer at et tilbud
@@ -19,7 +19,7 @@ import { Brodsmuler, Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './fe
  */
 function Gren({ kode, indeks, tilbud, sett }: { kode: string; indeks: Fagindeks; tilbud: Tilbudene; sett: ReadonlySet<string> }) {
   const { t } = useTekst();
-  const videre = (tilbud.tilbud[kode]?.videre ?? []).filter((k) => !sett.has(k));
+  const videre = skoleForst((tilbud.tilbud[kode]?.videre ?? []).filter((k) => !sett.has(k)), indeks);
   const neste = new Set([...sett, kode]);
   const [lukket, veksle] = useSammenlagt(`lop-gren-${kortKode(kode)}`, true);
   const id = useId();

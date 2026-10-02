@@ -438,11 +438,32 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
       tilpasninger.push({ navn: k.navn, linjer, total: tot });
     });
   } else if (po.sted === 'bedrift') {
-    const koder = Object.entries(indeks.fag)
-      .filter(([, f]) => harPo(f, kode))
-      .map(([k]) => k)
-      .sort();
-    if (koder.length > 0) deler.push({ type: 'fag', linje: 'Opplæring i bedrift', kategori: 'felles_programfag', timer: 0, koder, vurdering: [], alternativer: [], utvalg: null, lantFra: null, avvik: [] });
+    // En lærling har normalt bare lærefaget (eier 02.10.2026). Fellesfag Grep knytter til lærefaget (grunnleggende
+    // norsk, morsmål, norsk og samfunnskunnskap for voksne) er alternativer for særskilte grupper, som på vg1 og vg2.
+    // Valgfrie programfag er fordypningsområder i lærefaget, og lærlingen velger blant dem.
+    const fag = Object.entries(indeks.fag).filter(([, f]) => harPo(f, kode));
+    const av = (type: string) =>
+      fag
+        .filter(([, f]) => f.type === type)
+        .map(([k]) => k)
+        .sort();
+    const koder = av('felles_programfag');
+    const valg = av('valgfritt_programfag');
+    const alternativer = av('fellesfag');
+    if (koder.length + valg.length + alternativer.length > 0) {
+      deler.push({
+        type: 'fag',
+        linje: 'Opplæring i bedrift',
+        kategori: 'felles_programfag',
+        timer: 0,
+        koder,
+        vurdering: [],
+        alternativer,
+        utvalg: valg.length > 0 ? { grunn: 'valg', timer: 0, antall: null, koder: valg, rekker: [] } : null,
+        lantFra: null,
+        avvik: [],
+      });
+    }
   }
   const sum = deler.reduce((s, d) => s + d.timer, 0);
   if (tabell && totalt !== null && sum !== totalt) avvik.push({ type: 'sum', sum, totalt });
