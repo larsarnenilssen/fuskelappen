@@ -4,6 +4,26 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.21.0] – 2026-10-02
+
+### Lagt til
+
+- **Arbeidsplan:**
+  - **Sammenlign to varianter side om side**, f.eks. med og uten kontaktlærer. Velg to lagrede varianter, eller én variant og det som er fylt ut nå. Sammenligningen står i full bredde under kalkulatoren.
+    - Tabellen viser stillingen, undervisningen, funksjonene, beskjeftigelsen og om planen går over eller under stillingen. Den viser også arbeidstiden i timer for hver del og lønnen når den er regnet ut.
+    - Variantene er merket 1 og 2, og enheten står i overskriften over tallene. Delene av arbeidstiden har samme farge som i diagrammet.
+    - Det som er endret, er uthevet med en gul lapp og pil opp eller ned. «Vis bare det som er endret» skjuler resten.
+    - Arbeidstiden viser de planfestede delene og «Planfestet tid i alt» først, og så selvdisponert tid og årsverket i alt. Da er det tydelig at selvdisponert tid ikke er en del av planfestet tid.
+  - **Del en variant som lenke.** Lenken har det som er fylt ut og navnet på varianten. Den som åpner lenken, får Arbeidsplan ferdig utfylt og kan lagre den som egen variant. Ingenting sendes noe sted: alt står i lenken.
+
+### Endret
+
+- **Fordelingen av arbeidstiden i Arbeidsplan:** Tabellen viser de planfestede delene og «Planfestet tid i alt» først, og så selvdisponert tid og årsverket i alt, i samme rekkefølge som i diagrammet. Da er det tydelig at selvdisponert tid ikke er en del av planfestet tid.
+- **Arbeidsplan har nytt ikon:** en stolpe delt i deler, med strek for stillingen, som diagrammet i Arbeidsplan.
+- **Lagrede varianter:**
+  - Hver variant står på to linjer: navnet med «Gi nytt navn» og «Slett» og resultatet øverst, og tidspunktet, «Hent» og «Del» og forskjellen fra nå under.
+  - En slettet variant kan hentes tilbake: «Angre» står der varianten sto i noen sekunder.
+
 ## [0.20.1] – 2026-10-02
 
 ### Endret

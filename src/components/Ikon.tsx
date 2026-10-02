@@ -28,12 +28,17 @@ const baner = {
   pluss: 'M12 5v14M5 12h14',
   sporsmal: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM9.6 9.4a2.5 2.5 0 1 1 3.4 2.4c-.6.3-1 .8-1 1.5v.5M12 16.8h.01',
   kopier: 'M9 9h10.5v11.5H9zM5.5 15V4H15',
+  del: 'M15.5 5.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0M3.5 12a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0M15.5 18.5a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0-5 0M8.2 10.8l7.6-4.1M8.2 13.2l7.6 4.1',
   blyant: 'M4 20h4L19.5 8.5l-4-4L4 16v4ZM13.5 6.5l4 4',
   skriv: 'M7 8V3.5h10V8M7 17H4.5V9.5h15V17H17M7 13.5h10V20.5H7z',
   utvid: 'M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5',
   forminsk: 'M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5',
   // Veiviser: en stolpe med to skilt, for opplæringsløp.
   veiviser: 'M12 3v18M12 5h7l2 2.5-2 2.5h-7M12 12H5l-2 2.5L5 17h7M9 21h6',
+  // Arbeidsplan: stillingen som en stolpe delt i deler, med strek for stillingsprosenten (eier 02.10.2026).
+  arbeidsplan: 'M3 7.5h18v9H3zM9.5 7.5v9M14.5 7.5v9M18 4.5v15',
+  // Sammenlign: to stolper med ulik høyde.
+  sammenlign: 'M3.5 20h17M6.5 20v-8h4v8M13.5 20V6h4v14',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;

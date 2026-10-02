@@ -1,3 +1,4 @@
+import AxeBuilder from '@axe-core/playwright';
 import { expect, type Locator, type Page, test } from '@playwright/test';
 import { settLagret, venterPaaSide } from './hjelp.ts';
 
@@ -849,8 +850,115 @@ test.describe('arbeidstid', () => {
     await venterPaaSide(page);
     await expect(page.locator('.variantliste li')).toHaveCount(1);
     await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    // Sletting kan angres: «Angre» står der varianten sto, og legger den tilbake.
     await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
-    await expect(page.locator('.variantliste li')).toHaveCount(0);
+    await expect(page.locator('.variantliste .variant-slettet')).toContainText('«Uten kontaktlærer» er slettet.');
+    await expect(page.getByRole('button', { name: /^Angre/ })).toBeFocused();
+    await page.getByRole('button', { name: /^Angre/ }).click();
+    await expect(page.locator('.variantliste li')).toHaveCount(1);
+    await expect(page.locator('.variantliste')).toContainText('Uten kontaktlærer');
+    // Uten angring forsvinner merknaden etter noen sekunder, og varianten er borte.
+    await page.getByRole('button', { name: 'Slett Uten kontaktlærer' }).click();
+    await expect(page.locator('.variantliste li:not(.variant-slettet)')).toHaveCount(0);
+    await expect(page.locator('.variant-slettet')).toHaveCount(0, { timeout: 12_000 });
+  });
+
+  test('to varianter sammenlignes side om side, med og uten kontaktlærer', async ({ page }, info) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await expect(page.getByLabel('Antall årstimer')).toHaveValue('140');
+    await page.getByRole('button', { name: 'Lagre variant' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('Uten kontaktlærer');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    // Med én variant kan den sammenlignes med det som er fylt ut nå.
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByLabel('Funksjon 1: Prosent').fill('5');
+    await page.getByRole('button', { name: 'Sammenlign' }).click();
+    // Sammenligningen står i full bredde under kalkulatoren. Merkene 1 og 2 står foran etikettene.
+    const kort = page.locator('.sammenligning-kort');
+    await expect(kort.getByRole('heading', { name: 'Sammenlign to varianter' })).toBeVisible();
+    const forste = kort.getByLabel(/Første$/);
+    const andre = kort.getByLabel(/Andre$/);
+    await expect(forste.locator('option:checked')).toHaveText('Uten kontaktlærer');
+    await expect(andre.locator('option:checked')).toHaveText('Fylt ut nå');
+    const tabell = page.locator('table.sammenligning');
+    await expect(tabell.locator('thead')).toContainText('Uten kontaktlærer');
+    await expect(tabell.locator('thead')).toContainText('Fylt ut nå');
+    // Enheten står i gruppeoverskriften. Endrede rader er uthevet, og uendrede er dempet.
+    await expect(tabell).toContainText('Stillingen, prosent');
+    const funksjoner = tabell.locator('[data-nokkeltall="funksjoner"]');
+    await expect(funksjoner).toHaveClass(/endret/);
+    await expect(funksjoner.locator('td').nth(0)).toHaveText('0');
+    await expect(funksjoner.locator('td').nth(1)).toHaveText('5');
+    await expect(funksjoner.locator('.sammenligning-pil').first()).toContainText('5');
+    await expect(tabell.locator('[data-nokkeltall="stilling"]')).toHaveClass(/uendret/);
+    // Arbeidstiden i timer: funksjonstiden kommer med kontaktlærerfunksjonen.
+    await expect(tabell).toContainText('Arbeidstiden, timer per år');
+    await expect(tabell.locator('[data-nokkeltall="del_funksjonstid"] td').first()).toHaveText('0');
+    // «Vis bare det som er endret» skjuler radene uten endring.
+    await kort.getByRole('switch', { name: 'Vis bare det som er endret' }).check();
+    await expect(tabell.locator('[data-nokkeltall="stilling"]')).toHaveCount(0);
+    await expect(funksjoner).toBeVisible();
+    await kort.getByRole('switch', { name: 'Vis bare det som er endret' }).uncheck();
+    // Lønn står bare når den er regnet ut.
+    await expect(tabell.locator('[data-nokkeltall="lonn"]')).toHaveCount(0);
+    // Samme valg to ganger gir ingen tabell.
+    await andre.selectOption({ label: 'Uten kontaktlærer' });
+    await expect(page.getByText('Velg to forskjellige.')).toBeVisible();
+    await andre.selectOption({ label: 'Fylt ut nå' });
+    // Ingen horisontal overflyt, og ingen alvorlige funn i axe.
+    const bredde = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(bredde).toBeLessThanOrEqual(0);
+    if (info.project.name.endsWith('-mobil')) {
+      const axe = await new AxeBuilder({ page }).include('.varianter').include('.sammenligning-kort').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      expect(axe.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical').map((v) => v.id)).toEqual([]);
+    }
+    // Sammenligningen kan lukkes.
+    await kort.getByRole('button', { name: 'Lukk sammenligningen' }).click();
+    await expect(kort).toHaveCount(0);
+  });
+
+  test('en variant deles som lenke og åpnes ferdig utfylt', async ({ page, context }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan');
+    await velgFag(page, 'engelsk stud vg1', 'Engelsk · Studiespesialisering Vg1');
+    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
+    await page.getByLabel('Funksjon 1: Prosent').fill('5');
+    await expect(resultat(page)).toContainText('31,67');
+    const beskjeftigelse = (await resultat(page).textContent()) ?? '';
+    await page.getByRole('button', { name: 'Lagre variant' }).click();
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).fill('Med kontaktlærer');
+    await page.getByRole('textbox', { name: 'Navn på variant 1' }).press('Enter');
+    await page.getByRole('button', { name: 'Del Med kontaktlærer som lenke' }).click();
+    const felt = page.getByLabel('Lenke til Med kontaktlærer');
+    await expect(felt).toHaveValue(/#\/arbeidstid\/arbeidsplan\?del=z[A-Za-z0-9_-]+$/);
+    const lenke = await felt.inputValue();
+    expect(lenke.length).toBeLessThan(2000);
+
+    // En annen nettleser uten lagrede varianter åpner lenken.
+    const ny = await context.browser()?.newPage({ viewport: page.viewportSize() });
+    if (!ny) throw new Error('fikk ikke åpnet ny side');
+    await ny.goto(lenke);
+    await venterPaaSide(ny);
+    await expect(ny.getByRole('status').filter({ hasText: 'Åpnet fra en delt lenke: «Med kontaktlærer»' })).toBeVisible();
+    await expect(ny.getByLabel('Antall årstimer')).toHaveValue('140');
+    await expect(ny.getByLabel('Funksjon 1: Prosent')).toHaveValue('5');
+    await expect(resultat(ny)).toHaveText(beskjeftigelse);
+    // Parameteren er tatt bort, så skjemaet ikke fylles ut på nytt.
+    expect(ny.url()).not.toContain('del=');
+    await expect(ny.locator('.variantliste li')).toHaveCount(0);
+    await ny.getByRole('button', { name: 'Lagre som variant' }).click();
+    await expect(ny.locator('.variantliste li')).toHaveCount(1);
+    await expect(ny.locator('.variantliste')).toContainText('Med kontaktlærer');
+    await expect(ny.getByText('Lagret som variant på denne enheten.')).toBeVisible();
+    await ny.close();
+  });
+
+  test('en ødelagt lenke gir en merknad og et tomt skjema', async ({ page }) => {
+    await aapne(page, '/arbeidstid/arbeidsplan?del=zødelagt');
+    await expect(page.getByRole('alert').filter({ hasText: 'Lenken kunne ikke leses' })).toBeVisible();
+    await expect(page.getByLabel('Stillingsprosent', { exact: true })).toHaveValue('100');
+    await page.getByRole('button', { name: 'Lukk merknaden' }).click();
+    await expect(page.getByText('Lenken kunne ikke leses')).toHaveCount(0);
   });
 
   test('på bred skjerm står resultatet ved siden av skjemaet', async ({ page }, info) => {
