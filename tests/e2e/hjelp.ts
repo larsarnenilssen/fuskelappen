@@ -26,7 +26,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
   };
   await side.addInitScript((d) => {
     if (!sessionStorage.getItem('oppsett-satt')) {
-      localStorage.setItem('protokollen', JSON.stringify(d));
+      localStorage.setItem('fuskelappen', JSON.stringify(d));
       sessionStorage.setItem('oppsett-satt', '1');
     }
   }, data);

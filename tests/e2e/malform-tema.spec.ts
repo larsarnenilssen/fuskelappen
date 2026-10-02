@@ -39,7 +39,7 @@ test.describe('målform og tema', () => {
   test('følger systemets mørke tema', async ({ browser }) => {
     const kontekst = await browser.newContext({ colorScheme: 'dark' });
     const side = await kontekst.newPage();
-    await side.goto('http://localhost:4173/protokollen/');
+    await side.goto('http://localhost:4173/fuskelappen/');
     const bakgrunn = await side.evaluate(() => getComputedStyle(document.querySelector('.skall') as Element).backgroundColor);
     const lys = await side.evaluate(() => {
       document.documentElement.dataset.tema = 'lys';

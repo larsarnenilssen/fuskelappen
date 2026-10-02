@@ -51,13 +51,13 @@ let teller = 0;
 let dybde = 0;
 
 interface Historietilstand {
-  protokollenId: string;
+  appId: string;
   dybde: number;
 }
 
 function gjeldende(): Historietilstand | null {
   const s = history.state as Partial<Historietilstand> | null;
-  return s && typeof s.protokollenId === 'string' && typeof s.dybde === 'number' ? (s as Historietilstand) : null;
+  return s && typeof s.appId === 'string' && typeof s.dybde === 'number' ? (s as Historietilstand) : null;
 }
 
 function nyId(): string {
@@ -79,7 +79,7 @@ export function startRuting(): void {
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
   const naa = gjeldende();
   if (naa) dybde = naa.dybde;
-  else history.replaceState({ protokollenId: nyId(), dybde: 0 }, '');
+  else history.replaceState({ appId: nyId(), dybde: 0 }, '');
   let ventende = false;
   window.addEventListener(
     'scroll',
@@ -89,7 +89,7 @@ export function startRuting(): void {
       requestAnimationFrame(() => {
         ventende = false;
         const id = gjeldende();
-        if (id) scrollPosisjoner.set(id.protokollenId, window.scrollY);
+        if (id) scrollPosisjoner.set(id.appId, window.scrollY);
       });
     },
     { passive: true },
@@ -119,11 +119,11 @@ export function usePlassering(): Plassering & { type: Navigasjonstype } {
       } else {
         // Ny oppføring laget av en lenke eller naviger(): gi den id og start øverst.
         dybde += 1;
-        history.replaceState({ protokollenId: nyId(), dybde }, '');
+        history.replaceState({ appId: nyId(), dybde }, '');
         type = 'ny';
       }
       const id = gjeldende();
-      oensketScroll = type === 'ny' || !id ? 0 : (scrollPosisjoner.get(id.protokollenId) ?? 0);
+      oensketScroll = type === 'ny' || !id ? 0 : (scrollPosisjoner.get(id.appId) ?? 0);
       settPlassering({ ...lesHash(location.hash), type });
     };
     window.addEventListener('hashchange', vedEndring);

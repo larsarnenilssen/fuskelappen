@@ -38,7 +38,7 @@ function taOverforing(nokkel: string): Record<string, unknown> | undefined {
 }
 
 /** Navnet på vinduer som er åpnet med «Åpne i nytt vindu». Hvert vindu får et eget navn, så de ikke erstatter hverandre. */
-const VINDU = 'protokollen-vindu-';
+const VINDU = 'fuskelappen-vindu-';
 
 /**
  * Åpner siden i et eget vindu, så flere kalkulatorer kan være åpne samtidig på skrivebordet.

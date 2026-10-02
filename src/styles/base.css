@@ -2900,23 +2900,18 @@ p.fagkort-tittel {
 }
 
 /* ---------- Fuskelappen: forside, bunnmeny og detaljer (avgjørelse 034) ---------- */
-/* Forsiden: toppfeltet fortsetter ned rundt slagordet og søket, med runde hjørner nederst. */
+/* Forsiden: toppfeltet fortsetter ned rundt søket, med runde hjørner nederst. */
 .forside {
   padding-top: 0;
 }
 
 .forside-topp {
   margin: 0 calc(-1 * (var(--rom-4) + env(safe-area-inset-right))) var(--rom-4) calc(-1 * (var(--rom-4) + env(safe-area-inset-left)));
-  padding: var(--rom-1) calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-3) calc(var(--rom-4) + env(safe-area-inset-left));
+  /* Litt luft over søket, men lavt, så forsiden ikke bruker mer høyde enn nødvendig (eier 02.10.2026). */
+  padding: var(--rom-2) calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-3) calc(var(--rom-4) + env(safe-area-inset-left));
   border-radius: 0 0 var(--radius-l) var(--radius-l);
   background: var(--farge-topplinje);
   color: var(--farge-topplinje-tekst);
-}
-
-.forside-slagord {
-  margin: 0 0 var(--rom-3);
-  font-size: var(--str-s);
-  opacity: 0.85;
 }
 
 .forside-topp .sokeboks {

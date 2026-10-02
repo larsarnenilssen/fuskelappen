@@ -10,7 +10,7 @@ import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
   return {
-    name: 'protokollen:innhold',
+    name: 'fuskelappen:innhold',
     enforce: 'pre',
     load(id) {
       const [sti] = id.split('?');
@@ -37,7 +37,7 @@ export function lesToken(rot: string, navn: string): string {
 /** Setter inn appnavn fra app.ts og temafarger fra tokens.css i index.html. */
 export function htmlPlugin(rot: string, navn: string, kortnavn: string): Plugin {
   return {
-    name: 'protokollen:html',
+    name: 'fuskelappen:html',
     transformIndexHtml(html) {
       return html
         .replaceAll('%APP_NAVN%', navn)
@@ -56,7 +56,7 @@ export function testoppsettPlugin(mode: string): Plugin {
   const id = 'virtual:testoppsett';
   const medTest = mode !== 'production';
   return {
-    name: 'protokollen:testoppsett',
+    name: 'fuskelappen:testoppsett',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -83,7 +83,7 @@ export function testoppsettPlugin(mode: string): Plugin {
 export function fagrollerPlugin(rot: string): Plugin {
   const id = 'virtual:fagroller';
   return {
-    name: 'protokollen:fagroller',
+    name: 'fuskelappen:fagroller',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -132,7 +132,7 @@ export function dataPlugin(rot: string, mode: string): Plugin {
   }
   let base = '/';
   return {
-    name: 'protokollen:data',
+    name: 'fuskelappen:data',
     configResolved(config) {
       base = config.base;
     },

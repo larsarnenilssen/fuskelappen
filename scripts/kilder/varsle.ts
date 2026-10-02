@@ -29,7 +29,7 @@ const idag = kildestatus.kjort.slice(0, 10);
 const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), kildestatus.kilder, verdistatus, idag);
 
 const token = process.env.GITHUB_TOKEN;
-const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/protokollen';
+const repo = process.env.GITHUB_REPOSITORY ?? 'larsarnenilssen/fuskelappen';
 const api = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 
 const forslag = (lesJson(join(rot, '.generert/forslag.json')) ?? undefined) as { verdier: string | null; grep: string | null } | undefined;

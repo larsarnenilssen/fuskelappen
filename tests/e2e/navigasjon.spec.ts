@@ -30,7 +30,7 @@ test.describe('navigasjon', () => {
     await page.getByRole('link', { name: 'Om appen' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Om appen' })).toBeVisible();
     await page.getByRole('button', { name: 'Tilbake' }).click();
-    await expect(page).toHaveURL(/\/protokollen\/(#\/)?$/);
+    await expect(page).toHaveURL(/\/fuskelappen\/(#\/)?$/);
     await expect(page.getByRole('searchbox')).toBeVisible();
   });
 

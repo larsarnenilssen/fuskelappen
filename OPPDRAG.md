@@ -5,7 +5,7 @@
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
 
-> Appen heter *Fuskelappen* (fra 0.17.0, eier 02.10.2026, før *Protokollen*), også som kortnavn på hjemskjermen. Adressen, repoet og lagringsnøkkelen beholder det gamle navnet (avgjørelse 034). Navnet defineres ett sted (`src/config/app.ts`) og hentes derfra til manifest, sidetittel og README.
+> Appen heter *Fuskelappen* (fra 0.17.0, eier 02.10.2026, før *Protokollen*), også som kortnavn på hjemskjermen. Adressen, repoet og lagringsnøkkelen har også fått det nye navnet (avgjørelse 034). Navnet defineres ett sted (`src/config/app.ts`) og hentes derfra til manifest, sidetittel og README.
 
 ---
 

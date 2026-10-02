@@ -22,7 +22,6 @@ export default function Forside() {
         {t('forside.tittel')}
       </h1>
       <div class="forside-topp">
-        <p class="forside-slagord">{t('forside.slagord')}</p>
         <Sokeboks etikett={t('forside.sokEtikett', { app: app.navn })} plassholder={t('forside.sokPlassholder')} onEndring={settSporring} />
       </div>
 
@@ -38,12 +37,8 @@ export default function Forside() {
                 <span>{t('forside.ingenFavoritter')}</span>
               </p>
             ) : (
-              <>
-                <Favorittliste kompakt />
-                <p>
-                  <a href="#/favoritter">{t('forside.alleFavoritter')}</a>
-                </p>
-              </>
+              // Ingen lenke til alle favoritter: favorittknappen i bunnmenyen gjør det samme (eier 02.10.2026).
+              <Favorittliste kompakt />
             )}
           </section>
 
