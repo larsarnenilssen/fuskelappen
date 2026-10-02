@@ -3870,3 +3870,77 @@ p.fagkort-tittel {
 .od-underdel .od-underdel-tittel {
   font-size: var(--str-s);
 }
+
+/* ---------- Lov og forskrift (avgjørelse 039) ---------- */
+/* Som overordnet del: paragrafen adressen peker på, rulles fram under toppfeltet. */
+[data-rubrikk^='lov-'] {
+  scroll-margin-top: var(--rom-3);
+}
+
+/* Delene («Tredje del – …») står som overskrifter mellom kapittelrubrikkene. */
+.lov-del + .lov-del,
+.lov-del-tittel {
+  margin-top: var(--rom-5);
+}
+
+.lov-del-tittel {
+  margin-bottom: var(--rom-2);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-m);
+  font-weight: 650;
+}
+
+.lov-avsnitt-tittel {
+  margin: var(--rom-4) 0 var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 650;
+}
+
+.lov-nr {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.lov-tekst p {
+  margin: 0 0 var(--rom-2);
+}
+
+.lov-ledd {
+  margin-bottom: var(--rom-3);
+}
+
+/* Listepunktene med bokstaven eller tallet fra lovteksten («a)», «1.») i en egen kolonne. */
+.lov-liste {
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+  list-style: none;
+}
+
+.lov-liste > li {
+  display: flex;
+  gap: var(--rom-2);
+}
+
+.lov-merke {
+  flex: 0 0 auto;
+  min-width: 1.5em;
+}
+
+.lov-punkt {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.lov-punkt p {
+  margin-bottom: var(--rom-1);
+}
+
+.lov-fotnoter {
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+  list-style: none;
+}
+
+.lov-tekst {
+  overflow-wrap: anywhere;
+}

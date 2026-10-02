@@ -78,6 +78,7 @@ export interface Lovdokument {
 export interface Lovoversikt {
   dokumenter: {
     id: string;
+    kilde: string;
     type: Lovdokument['type'];
     tittel: string;
     korttittel: string;

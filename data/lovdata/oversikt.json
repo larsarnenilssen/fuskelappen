@@ -2,6 +2,7 @@
  "dokumenter": [
   {
    "id": "opplaeringslova",
+   "kilde": "opplaeringslova",
    "type": "lov",
    "tittel": "Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)",
    "korttittel": "Opplæringslova",
@@ -42,6 +43,7 @@
   },
   {
    "id": "opplaeringsforskrifta",
+   "kilde": "opplaeringsforskrifta",
    "type": "forskrift",
    "tittel": "Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)",
    "korttittel": "Opplæringsforskrifta",
@@ -76,6 +78,7 @@
   },
   {
    "id": "forvaltningsloven",
+   "kilde": "forvaltningsloven",
    "type": "lov",
    "tittel": "Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)",
    "korttittel": "Forvaltningsloven",
@@ -96,6 +99,7 @@
   },
   {
    "id": "helse-og-miljo",
+   "kilde": "forskrift-helse-miljo-skoler",
    "type": "forskrift",
    "tittel": "Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger",
    "korttittel": "Forskrift om helse og miljø i skoler",

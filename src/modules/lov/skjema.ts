@@ -121,6 +121,7 @@ export const lovoversiktSkjema: z.ZodType<Lovoversikt> = z
       z
         .object({
           id,
+          kilde: id,
           type: z.enum(['lov', 'forskrift']),
           tittel: z.string().min(1),
           korttittel: z.string().min(1),

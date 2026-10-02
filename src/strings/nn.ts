@@ -3,6 +3,7 @@ import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
+import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 
 export const nn: Tekster = {
@@ -64,6 +65,7 @@ export const nn: Tekster = {
       fag: 'Fag',
       tilbud: 'Tilbod',
       laereplanverk: 'Overordna del',
+      lov: 'Lov og forskrift',
       side: 'Side',
     },
   },
@@ -261,6 +263,10 @@ export const nn: Tekster = {
       navn: 'Omgrep',
       beskrivelse: 'Forklaringar av sentrale omgrep.',
     },
+    lov: {
+      navn: 'Lov og forskrift',
+      beskrivelse: 'Opplæringslova, forskrifta og andre reglar.',
+    },
     fag: {
       navn: 'Fag og læreplanar',
       beskrivelse: 'Kompetansemål, vurdering og timar.',
@@ -274,6 +280,7 @@ export const nn: Tekster = {
   fag: fagNn,
   opplaeringslop: opplaeringslopNn,
   laereplanverket: laereplanverketNn,
+  lov: lovNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

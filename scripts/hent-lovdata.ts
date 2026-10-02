@@ -75,13 +75,17 @@ function finnFil(mappe: string, navn: string): string | null {
   return null;
 }
 
+/** JSON uten lenkene i appen, til sammenligning av tekst. */
+const utenAppLenker = (json: string) => json.replace(/,"a":"[^"]*"/g, '');
+
 const paragrafnavn = (p: Paragraf) => `${p.visNr}${p.tittel ? ` ${p.tittel}` : ''}`;
 
 /** Endringene i et dokument mellom to hentinger, én linje per paragraf. */
 export function sammenlignLovdokument(gammel: Lovdokument, ny: Lovdokument): string[] {
   const g = new Map(alleParagrafer(gammel.seksjoner).map(({ paragraf }) => [paragraf.nr, paragraf]));
   const n = new Map(alleParagrafer(ny.seksjoner).map(({ paragraf }) => [paragraf.nr, paragraf]));
-  const innhold = (p: Paragraf) => JSON.stringify([p.tittel, p.ledd, p.fotnoter]);
+  // Lenkene i appen (`a`) settes av hentingen og er ikke en endring i teksten.
+  const innhold = (p: Paragraf) => utenAppLenker(JSON.stringify([p.tittel, p.ledd, p.fotnoter]));
   const kapitler = (d: Lovdokument) => alleSeksjoner(d.seksjoner).map((s) => s.overskrift);
   const gk = new Set(kapitler(gammel));
   const nk = new Set(kapitler(ny));
@@ -142,6 +146,7 @@ export function lagOversikt(dokumenter: readonly Lovdokument[]): Lovoversikt {
   return {
     dokumenter: dokumenter.map((d) => ({
       id: d.id,
+      kilde: d.kilde,
       type: d.type,
       tittel: d.tittel,
       korttittel: d.korttittel,
@@ -212,7 +217,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
       if (feil.length > 0) throw new Error(`Teksten ser ufullstendig ut, og forrige henting beholdes. ${feil.join(' ')}`);
       const endringer = forrige ? sammenlignLovdokument(forrige, ny) : [];
       // Dato for henting endres bare når teksten er endret, så filen ikke endres hver uke.
-      const ut = forrige && endringer.length === 0 && JSON.stringify({ ...forrige, hentet: '' }) === JSON.stringify({ ...ny, hentet: '' }) ? forrige : ny;
+      const ut = forrige && endringer.length === 0 && utenAppLenker(JSON.stringify({ ...forrige, hentet: '' })) === utenAppLenker(JSON.stringify({ ...ny, hentet: '' })) ? forrige : ny;
       dokumenter.push(ut);
       resultater.push({ id: d.id, kilde: d.kilde, endringer, feil: null, forste: !forrige });
       console.log(`${d.id}: ${alleParagrafer(ut.seksjoner).length} paragrafer. ${forrige ? `${endringer.length} endringer.` : 'Første henting.'}`);
