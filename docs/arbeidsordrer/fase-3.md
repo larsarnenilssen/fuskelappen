@@ -34,6 +34,6 @@ Vi starter fase 3 i Fuskelappen (repo `larsarnenilssen/fuskelappen`). Skriv til 
 
 **Praktisk:**
 - Playwright: `CI=1 PLAYWRIGHT_BROWSERS_PATH=/root/pw163 npx playwright test`. Hele runden tar omtrent 11 minutter, så gi en kjøring i bakgrunnen minst 60 minutters tidsgrense.
-- Bruk ikke `pkill -f`. Det kan treffe ditt eget skall. Finn prosessen med `ps` og stopp den med `kill`.
+- Bruk ikke `pkill -f` eller `ps | grep` med kommandoteksten. Begge kan treffe ditt eget skall. Finn en server med `ss -ltnp` (porten) og stopp den med `kill`, eller stopp bakgrunnsoppgaven.
 - Repoet har flyttet fra `protokollen` til `fuskelappen`. Bruk det nye navnet i GitHub-verktøyene.
 - Kontrollsaker godkjennes med `/godkjent`. Sett aldri `kontrollert`, `bekreftet` eller `godkjent_fingeravtrykk` selv.
