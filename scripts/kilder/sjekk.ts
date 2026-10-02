@@ -103,7 +103,8 @@ function sjekkGrep(): Sjekkresultat {
 function sjekkUdir(): Sjekkresultat {
   const endringsfil = join(generert, 'udir-endringer.json');
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av fag- og timefordelingen feilet. Se loggen for steget «Hent Grep og fag- og timefordeling».' };
-  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { rundskriv: string; skolear: string; forste: boolean; endringer: string[]; nyVersjon: string | null };
+  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { rundskriv: string; skolear: string; forste: boolean; endringer: string[]; nyVersjon: string | null; varsler?: string[] };
+  const varsler = e.varsler ?? [];
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
   const fil = join(rot, 'data/udir', `fagfordeling-${e.skolear}.json`);
   const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(JSON.stringify((JSON.parse(readFileSync(fil, 'utf8')) as { tabeller: unknown }).tabeller)) : null;
@@ -112,13 +113,15 @@ function sjekkUdir(): Sjekkresultat {
     e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
     ...e.endringer.slice(0, 60).map((l) => `- ${l}`),
     ...(e.nyVersjon ? [`- Nytt rundskriv er publisert: ${e.nyVersjon}.`] : []),
+    ...varsler.map((v) => `- ${v}`),
     '',
   );
-  const nytt = e.nyVersjon ? ` Nytt rundskriv er publisert: ${e.nyVersjon}.` : '';
+  const nytt = `${e.nyVersjon ? ` Nytt rundskriv er publisert: ${e.nyVersjon}.` : ''}${varsler.map((v) => ` ${v}`).join('')}`;
   if (tester === 'feilet' && e.endringer.length > 0) {
     return { status: 'endret', fingeravtrykk, melding: `Fag- og timefordelingen er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).${nytt}` };
   }
-  if (e.nyVersjon) return { status: 'endret', fingeravtrykk, melding: `Nytt rundskriv om fag- og timefordeling er publisert: ${e.nyVersjon}. Det nye skoleåret må legges inn.` };
+  if (e.nyVersjon) return { status: 'endret', fingeravtrykk, melding: `Nytt rundskriv om fag- og timefordeling er publisert: ${e.nyVersjon}. Det nye skoleåret må legges inn.${varsler.map((v) => ` ${v}`).join('')}` };
+  if (varsler.length > 0) return { status: 'endret', fingeravtrykk, melding: varsler.join(' ') };
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i fag- og timefordelingen.` : null };
 }
 

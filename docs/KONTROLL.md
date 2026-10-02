@@ -218,6 +218,16 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Påbygging til generell studiekompetanse (`pabygging`) | begrep | Vedlegg 1, 3.5.2 og 3.5.3 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Kryssløp (`krysslop`) | begrep | Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 
+### Udir-1-2026, teksten øverst i rundskrivet
+
+`udir-fag-og-timefordeling-forside` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Teksten øverst: «Dette rundskrivet erstatter Rundskriv Udir-1-2025.» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+
 ### Registreringshåndboken, A03 Programområdekode
 
 `udir-regbok-programomradekode` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://regbok.udir.no/felt/?Id=1014307)
@@ -624,17 +634,16 @@ Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapslø
 
 **Læreplanverket** (`laereplanverket`, begrep, ikke kontrollert)
 
-- Er «fag- og timefordelingen viser hvilke fag elevene skal ha og hvor mange timer» en dekkende beskrivelse av denne delen?
 - Er «Revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20» riktig formulert (eier 02.10.2026)?
 
 Kilder å sjekke mot: [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
 
 **Fag- og timefordelingen** (`fag-og-timefordeling`, begrep, ikke kontrollert)
 
-- Er «Tabellene med fag- og timefordelingen er forskrifter, på samme måte som læreplanene» riktig gjengitt fra punkt 1.1?
-- Er det dekkende å si at Udir gir ut fag- og timefordelingen som rundskriv for hvert skoleår?
+- Udir skriver i punkt 1.1 at tabellene med fag- og timefordelingen er forskrifter, men det finnes ingen egen forskrift i Lovdata (eier 02.10.2026). I Udir-1-2025 varslet Udir at en forskrift om fag- og timefordeling og tilbudsstruktur skulle sendes på høring i 2026. Er det greit å gjengi det som «Udir skriver i rundskrivet at …» til en slik forskrift eventuelt kommer?
+- Det kommer som regel endringer hvert år, men det er usikkert om Udir må gi ut et nytt rundskriv hvert år (eier 02.10.2026). Er «Udir gir den ut som rundskriv» og navnet på rundskrivet som gjelder nå, nok?
 
-Kilder å sjekke mot: [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur
+Kilder å sjekke mot: [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur; [Udir-1-2026, teksten øverst i rundskrivet](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/): Teksten øverst: «Dette rundskrivet erstatter Rundskriv Udir-1-2025.»
 
 **Utdanningsprogram** (`utdanningsprogram`, begrep, ikke kontrollert)
 

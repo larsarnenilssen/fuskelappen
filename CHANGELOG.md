@@ -16,6 +16,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Fagarket:** «Grunnleggende ferdigheter og tverrfaglige temaer» viser hva læreplanen sier om hver ferdighet og hvert tema i faget, med lenke til overordnet del.
 - **Begreper:** læreplanverket, fag- og timefordelingen, overordnet del, formålsparagrafen, kompetanse, grunnleggende ferdigheter og tverrfaglige temaer. Læreplanverket beskrives med sine tre deler: overordnet del, fag- og timefordelingen og læreplanene for fag.
 - **Kildesjekk:** Udirs side om læreplanverket sjekkes hver uke. Endres setningen om de tre delene, står det i kontrollsaken.
+- **Kildesjekk for fag- og timefordelingen:** Kontrollsaken sier nå også fra når Udir flytter rundskrivet til «tidligere rundskriv», eller når teksten øverst i rundskrivet eller datoen det sist ble endret, endres. Slik fanges et nytt rundskriv opp også om det får et annet navn eller en annen adresse.
 - **Søket** finner overskriftene og kapittelnumrene i overordnet del, ferdighetene og temaene, og stikkord som «LK20», også på nynorsk.
 
 ## [0.19.1] – 2026-10-02

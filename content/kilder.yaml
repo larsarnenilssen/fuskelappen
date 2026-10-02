@@ -149,6 +149,29 @@ kilder:
       rundskrivet for neste år, står det i kontrollsaken, og adressen her oppdateres. Fingeravtrykket godkjennes
       ikke, fordi dataene oppdateres automatisk når testene består.
 
+      Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskriv», står det også i
+      kontrollsaken. Det fanger opp et nytt rundskriv med et annet navn eller en annen adresse (eier 02.10.2026).
+
+  - id: udir-fag-og-timefordeling-forside
+    navn: Udir-1-2026, teksten øverst i rundskrivet
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      # Ingressen («Dette rundskrivet erstatter …») og «Sist endra». Ingressen i Udir-1-2025 varslet blant
+      # annet en egen forskrift om fag- og timefordeling.
+      selektor: .abstract-block__lead, .byline__updated
+    godkjent_fingeravtrykk: null
+    faser: [2, 3, 6]
+    merknad: >-
+      Sjekkes hver uke, så kontrollsaken sier fra når Udir endrer teksten øverst i rundskrivet eller datoen det
+      sist ble endret (eier 02.10.2026). Adressen må være den samme som for udir-fag-og-timefordeling, og
+      oppdateres sammen med den når det kommer et nytt rundskriv. Hentingen sier fra hvis de er ulike.
+
   - id: udir-regbok-programomradekode
     navn: Registreringshåndboken, A03 Programområdekode
     utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe

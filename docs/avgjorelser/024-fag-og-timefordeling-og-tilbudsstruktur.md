@@ -26,6 +26,10 @@
   - «Bygger på» gir forrige trinn i samme program, kryssløp fra andre program, videre løp, påbygging og kryssløp videre.
   - Summen av delene sammenlignes med «Totalt omfang». Avvik mot Grep meldes, men stopper ikke noe.
 - **Skoleår:** Fordelingen som gjelder, velges etter datoen (skoleåret begynner 1. august). Når neste års fordeling er hentet, viser rapporten hvilke tilbud som endres.
+- **Nytt rundskriv (eier 02.10.2026):** Tre sjekker skal fange opp et nytt rundskriv:
+  - Hentingen spør hver uke etter neste års adresse (Udir-1-ÅÅÅÅ+1).
+  - Udir flytter et erstattet rundskriv til «tidligere rundskriv». Sender udir.no hentingen videre til en annen adresse, står det i kontrollsaken. Dette fanger også opp et nytt rundskriv med et annet navn eller en annen adresse.
+  - Teksten øverst i rundskrivet («Dette rundskrivet erstatter …») og «Sist endra» sjekkes som egen kilde (`udir-fag-og-timefordeling-forside`). Endres de, står det i kontrollsaken til eier godkjenner den nye teksten. Ingressen i Udir-1-2025 varslet blant annet en egen forskrift om fag- og timefordeling. Hentingen sier fra hvis de to kildene har ulike adresser.
 - **Rapporten** `docs/TILBUDSSTRUKTUR.md` (`npm run tilbud:rapport`) er ordnet som eier ba om. Den viser sammendrag, summer i rundskrivet som ikke stemmer, programområder uten tabell eller uten forbindelse til inngangen, avvik mellom rundskrivet og Grep, og hvert tilbud med fag, timer, fagkoder, årsramme fra koblingen (avgjørelse 023), plasser, alternativer, tilpasninger og videre løp. Varianter for særskilte skoler (Steiner, Montessori, tysk skole) står samlet nederst under hvert program.
 - **Tester:** Modellen testes med små data. På de ekte dataene testes det at rapporten er oppdatert, at summen stemmer for alle tilbud med tabell, at alle linjer blir gjenkjent, at YFF har en anbefalt kode på vg1 og vg2, at ingen kode er både ordinær og alternativ, og at kryssløp aldri er hovedløpet.
 
