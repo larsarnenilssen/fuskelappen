@@ -100,6 +100,16 @@ test.describe('fag og læreplaner', () => {
     await expect(page.getByLabel('Antall årstimer')).toHaveValue('197');
   });
 
+  test('årsrammen som varierer med program, står i en utvidelse av ruten som er lukket (eier 02.10.2026)', async ({ page }) => {
+    await page.goto('./#/fag/YFF4105');
+    const knapp = page.getByRole('button', { name: /Varierer/ });
+    await expect(knapp).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator('.nokkeltall-rader')).toBeHidden();
+    await knapp.click();
+    await expect(knapp).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('.nokkeltall-rader div', { hasText: 'Helse- og oppvekstfag Vg1' })).toContainText('607,5 (810)');
+  });
+
   test('fagarket for yrkesfaglig fordypning forklarer faget og samler programmene', async ({ page }) => {
     await page.goto('./#/fag/YFF4106');
     await expect(page.getByText('Alle yrkesfaglige utdanningsprogram')).toBeVisible();

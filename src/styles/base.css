@@ -2387,9 +2387,60 @@ p.fagkort-tittel {
   color: var(--farge-tekst-dempet);
 }
 
+/* «Varierer»: resten av ruten er en knapp som viser årsrammen for hvert program (eier 02.10.2026). */
+.nokkeltall-utvid {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.nokkeltall-vis {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  margin-top: var(--rom-1);
+  color: var(--farge-lenke);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
 .nokkeltall-rader {
+  display: grid;
+  gap: 0;
   margin: var(--rom-2) 0 0;
   font-size: var(--str-s);
+}
+
+.nokkeltall-rader[hidden] {
+  display: none;
+}
+
+.nokkeltall-rader > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+  padding: var(--rom-1) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.nokkeltall-rader dt {
+  min-width: 0;
+}
+
+.nokkeltall-rader dd {
+  margin: 0 0 0 auto;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .nokkeltall-bunn {
