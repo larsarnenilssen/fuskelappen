@@ -44,10 +44,10 @@ dokumenter:
 
   - id: arbeidsmiljoloven
     kilde: arbeidsmiljoloven
-    kapitler: ['4', '10', '12']
+    kapitler: ['4', '10', '12', '14', '15']
     merknad: >-
-      Vurdert av Claude etter spørsmål fra eier 02.10.2026, venter på eiers svar: krav til arbeidsmiljøet (kap. 4),
-      arbeidstid (kap. 10, som SFS 2213 bygger på) og permisjoner (kap. 12).
+      Godkjent av eier 02.10.2026: krav til arbeidsmiljøet (kap. 4), arbeidstid (kap. 10, som SFS 2213 bygger på),
+      permisjoner (kap. 12), ansettelse (kap. 14) og opphør av arbeidsforhold (kap. 15).
 
   - id: vestland-inntak
     kilde: vestland-forskrift-inntak

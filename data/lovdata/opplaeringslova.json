@@ -880,12 +880,14 @@
           "Dei første seks månadene av arbeidsforholdet kan arbeidsavtalen likevel seiast opp etter reglane i ",
           {
            "t": "arbeidsmiljøloven §§ 15-3",
-           "l": "lov/2005-06-17-62/§15-3"
+           "l": "lov/2005-06-17-62/§15-3",
+           "a": "arbeidsmiljoloven/15-3"
           },
           " og ",
           {
            "t": "15-6",
-           "l": "lov/2005-06-17-62/§15-6"
+           "l": "lov/2005-06-17-62/§15-6",
+           "a": "arbeidsmiljoloven/15-6"
           },
           " dersom det er inngått kontrakt om full opplæring i bedrift. Kontrakten om opplæring fell bort dersom arbeidsavtalen blir oppsagd."
          ]

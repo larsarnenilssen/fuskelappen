@@ -14,7 +14,9 @@
  "utvalg": [
   "4",
   "10",
-  "12"
+  "12",
+  "14",
+  "15"
  ],
  "seksjoner": [
   {
@@ -619,12 +621,14 @@
         "(4) Arbeidstaker som har fylt 62 år eller som av helsemessige, sosiale eller andre vektige velferdsgrunner har behov for det, har rett til å få redusert sin arbeidstid dersom arbeidstidsreduksjonen kan gjennomføres uten vesentlig ulempe for virksomheten. Når avtalt periode med redusert arbeidstid er over, har arbeidstaker rett til å gå tilbake til tidligere arbeidstid. Under ellers like forhold har arbeidstaker med redusert arbeidstid fortrinnsrett til å øke sin arbeidstid når stilling blir ledig i virksomheten, forutsatt at stillingen helt eller i det vesentlige er tillagt de samme arbeidsoppgavene. Fortrinnsrett etter ",
         {
          "t": "§§ 14-2",
-         "l": "lov/2005-06-17-62/§14-2"
+         "l": "lov/2005-06-17-62/§14-2",
+         "a": "arbeidsmiljoloven/14-2"
         },
         " og ",
         {
          "t": "14-3",
-         "l": "lov/2005-06-17-62/§14-3"
+         "l": "lov/2005-06-17-62/§14-3",
+         "a": "arbeidsmiljoloven/14-3"
         },
         " går foran fortrinnsrett etter bestemmelsen her."
        ]
@@ -2130,6 +2134,3213 @@
         "l": "lov/2020-03-20-8"
        },
        "."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap14",
+   "type": "kapittel",
+   "nr": "14",
+   "overskrift": "Kapittel 14 Ansettelse mv.",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "14-1",
+     "visNr": "§ 14-1",
+     "tittel": "Informasjon om ledige stillinger i virksomheten",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidsgiver skal informere arbeidstakerne om ledige stillinger i virksomheten. Innleid arbeidstaker skal informeres på tilsvarende måte."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "22 juni 2012 nr. 33",
+        "l": "lov/2012-06-22-33"
+       },
+       " (ikr. 1 jan 2013 iflg. ",
+       {
+        "t": "res. 22 juni 2012 nr. 607",
+        "l": "forskrift/2012-06-22-607"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-1a",
+     "visNr": "§ 14-1 a",
+     "tittel": "Opphevet",
+     "ledd": [],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "14 juni 2013 nr. 32",
+        "l": "lov/2013-06-14-32"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 14 juni 2013 nr. 617",
+        "l": "forskrift/2013-06-14-617"
+       },
+       "), opphevet ved lov ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-1b",
+     "visNr": "§ 14-1 b",
+     "tittel": "Ansettelse på heltid og deltid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker skal som hovedregel ansettes på heltid."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Før arbeidsgiver fatter beslutning om ansettelse i deltidsstilling, skal arbeidsgiver skriftlig dokumentere behovet for deltidsansettelse. Dokumentasjonen skal være tilgjengelig for tillitsvalgte, og spørsmålet om deltidsansettelse skal drøftes med de tillitsvalgte."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "9 des 2022 nr. 88",
+        "l": "lov/2022-12-09-88"
+       },
+       " (i kraft 1 jan 2023 iflg. res. ",
+       {
+        "t": "9 des 2022 nr. 2109",
+        "l": "forskrift/2022-12-09-2109"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-2",
+     "visNr": "§ 14-2",
+     "tittel": "Fortrinnsrett til ny ansettelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som er sagt opp på grunn av virksomhetens forhold, har fortrinnsrett til ny ansettelse i samme virksomhet, med mindre det gjelder en stilling arbeidstakeren ikke er kvalifisert for. Tilhører arbeidsgiver et konsern, jf. ",
+        {
+         "t": "§ 8-4",
+         "l": "lov/2005-06-17-62/§8-4"
+        },
+        " fjerde ledd, har arbeidstaker i tillegg fortrinnsrett til ny ansettelse i andre virksomheter i konsernet, med mindre det gjelder en stilling arbeidstakeren ikke er kvalifisert for. Fortrinnsretten etter andre punktum bortfaller hvis arbeidstaker ikke aksepterer et tilbud om annet passende arbeid etter ",
+        {
+         "t": "§ 15-7",
+         "l": "lov/2005-06-17-62/§15-7",
+         "a": "arbeidsmiljoloven/15-7"
+        },
+        " tredje ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Fortrinnsretten gjelder også arbeidstaker som er midlertidig ansatt og som på grunn av virksomhetens forhold ikke får fortsatt ansettelse. Dette gjelder likevel ikke arbeidstaker som er midlertidig ansatt i vikariat etter ",
+        {
+         "t": "§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " andre ledd bokstav b. Fortrinnsretten gjelder dessuten for arbeidstaker som har akseptert tilbud om redusert stilling i stedet for oppsigelse."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Fortrinnsretten gjelder for arbeidstaker som har vært ansatt i virksomheten i til sammen minst 12 måneder i de to siste år."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Fortrinnsretten gjelder fra oppsigelsestidspunktet og i ett år fra oppsigelsesfristens utløp, men fra oppsigelsestidspunktet og i to år fra oppsigelsesfristens utløp dersom arbeidsforholdet avvikles i perioden fra 1. juli 2021 til og med 31. desember 2021 på grunn av virkninger av covid-19-pandemien."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Fortrinnsretten faller bort dersom arbeidstaker ikke har akseptert et tilbud om ansettelse i en passende stilling senest 14 dager etter at tilbudet ble mottatt. Arbeidstaker som ikke har akseptert et tilbud om ansettelse i passende stilling etter første ledd andre punktum, har likevel fortrinnsrett etter første ledd første punktum."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Er det flere fortrinnsberettigede til en stilling, plikter arbeidsgiver å følge de samme regler for utvelgelse som de som gjelder ved oppsigelser på grunn av driftsinnskrenkning eller rasjonaliseringstiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Reglene i denne paragraf gjelder tilsvarende for arbeidstaker som er sagt opp i forbindelse med at virksomheten går konkurs. Dette gjelder bare når virksomheten fortsetter eller gjenopptas og den under hensyn til sted, art, omfang og lignende må anses som en fortsettelse av den opprinnelige virksomhet."
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Sjette ledd gjelder ikke ved konkurs, offentlig skifte av insolvent dødsbo eller ved overdragelse av virksomhet etter at det er åpnet gjeldsforhandlinger."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       "), ",
+       {
+        "t": "18 juni 2021 nr. 93",
+        "l": "lov/2021-06-18-93"
+       },
+       " (ikr. 1 juli 2021 iflg. ",
+       {
+        "t": "res. 18 juni 2021 nr. 1973",
+        "l": "forskrift/2021-06-18-1973"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       "). Endres ved lov ",
+       {
+        "t": "19 juni 2026 nr. 48",
+        "l": "lov/2026-06-19-48"
+       },
+       " (i kraft fra den tid Kongen bestemmer)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-3",
+     "visNr": "§ 14-3",
+     "tittel": "Fortrinnsrett for deltidsansatte",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Deltidsansatte har fortrinnsrett til utvidet stilling fremfor at arbeidsgiver foretar ny ansettelse eller innleie i virksomheten. Fortrinnsretten kan også gjelde en del av en stilling."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Deltidsansatte har fortrinnsrett til ekstravakter og lignende i virksomheten fremfor at arbeidsgiver ansetter eller leier inn arbeidstakere til dette arbeidet. Arbeidsgiver kan etter drøftinger med tillitsvalgte avgrense virkeområdet for utøvelse av fortrinnsretten etter dette leddet til en eller flere enheter med til sammen minst 30 ansatte. Etter avtale med tillitsvalgte kan det fastsettes et annet eller snevrere virkeområde. Fortrinnsretten etter dette leddet gjelder også for midlertidig deltidsansatte."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Fortrinnsrett etter denne paragrafen er betinget av at arbeidstaker er kvalifisert og at utøvelse av fortrinnsretten ikke vil innebære vesentlige ulemper for virksomheten."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Før arbeidsgiver fatter beslutning om ansettelse i stilling som arbeidstaker krever fortrinnsrett til etter første ledd, skal spørsmålet så langt det er praktisk mulig drøftes med arbeidstaker, med mindre arbeidstaker selv ikke ønsker det."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Fortrinnsrett etter ",
+        {
+         "t": "§ 14-2",
+         "l": "lov/2005-06-17-62/§14-2",
+         "a": "arbeidsmiljoloven/14-2"
+        },
+        ", med unntak av ",
+        {
+         "t": "§ 14-2",
+         "l": "lov/2005-06-17-62/§14-2",
+         "a": "arbeidsmiljoloven/14-2"
+        },
+        " første ledd andre punktum og andre ledd første punktum, går foran fortrinnsrett for deltidsansatte."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Tvist om fortrinnsrett for deltidsansatte etter første ledd avgjøres av tvisteløsningsnemnda, jf. ",
+        {
+         "t": "§ 17-2",
+         "l": "lov/2005-06-17-62/§17-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "14 juni 2013 nr. 32",
+        "l": "lov/2013-06-14-32"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 14 juni 2013 nr. 617",
+        "l": "forskrift/2013-06-14-617"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 45",
+        "l": "lov/2018-06-22-45"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 945",
+        "l": "forskrift/2018-06-22-945"
+       },
+       "), ",
+       {
+        "t": "9 des 2022 nr. 88",
+        "l": "lov/2022-12-09-88"
+       },
+       " (i kraft 1 jan 2023 iflg. res. ",
+       {
+        "t": "9 des 2022 nr. 2109",
+        "l": "forskrift/2022-12-09-2109"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-4",
+     "visNr": "§ 14-4",
+     "tittel": "Virkninger av brudd på reglene om fortrinnsrett",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom retten kommer til at en fortrinnsberettiget skulle vært ansatt i en bestemt stilling, skal retten etter påstand fra den fortrinnsberettigede avsi dom for ansettelse i stillingen, med mindre dette finnes urimelig."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved brudd på reglene om fortrinnsrett kan arbeidstaker kreve erstatning. Erstatningen fastsettes i samsvar med ",
+        {
+         "t": "§ 15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " andre ledd."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-4a",
+     "visNr": "§ 14-4 a",
+     "tittel": "Rett til stilling for deltidsansatte tilsvarende faktisk arbeidstid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Deltidsansatte som de siste 12 måneder jevnlig har arbeidet utover avtalt arbeidstid, har rett til stilling tilsvarende faktisk arbeidstid i denne perioden, med mindre arbeidsgiver kan dokumentere at behovet for merarbeidet ikke lenger foreligger. Tolvmånedersperioden skal beregnes med utgangspunkt i det tidspunkt arbeidstaker fremmet sitt krav."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Tvist om rett etter denne bestemmelsen avgjøres av tvisteløsningsnemnda, jf. ",
+        {
+         "t": "§ 17-2",
+         "l": "lov/2005-06-17-62/§17-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "14 juni 2013 nr. 32",
+        "l": "lov/2013-06-14-32"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 14 juni 2013 nr. 617",
+        "l": "forskrift/2013-06-14-617"
+       },
+       ", se endringslovens VI nr. 3)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-4b",
+     "visNr": "§ 14-4 b",
+     "tittel": "Virkninger av brudd på deltidsansattes rett til stilling tilsvarende faktisk arbeidstid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom retten kommer til at en deltidsansatt har rett til stilling tilsvarende faktisk arbeidstid etter bestemmelsen i ",
+        {
+         "t": "§ 14-4 a",
+         "l": "lov/2005-06-17-62/§14-4a",
+         "a": "arbeidsmiljoloven/14-4a"
+        },
+        ", skal retten etter påstand fra den deltidsansatte avsi dom for ansettelse i slik stilling."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved brudd på bestemmelsen om rett til stilling tilsvarende faktisk arbeidstid etter ",
+        {
+         "t": "§ 14-4 a",
+         "l": "lov/2005-06-17-62/§14-4a",
+         "a": "arbeidsmiljoloven/14-4a"
+        },
+        " kan arbeidstaker kreve erstatning."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "14 juni 2013 nr. 32",
+        "l": "lov/2013-06-14-32"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 14 juni 2013 nr. 617",
+        "l": "forskrift/2013-06-14-617"
+       },
+       ", se endringslovens VI nr. 3)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-5",
+     "visNr": "§ 14-5",
+     "tittel": "Krav om skriftlig arbeidsavtale",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Det skal inngås skriftlig arbeidsavtale i alle arbeidsforhold. Arbeidsgiver skal utforme et utkast til arbeidsavtale i samsvar med ",
+        {
+         "t": "§ 14-6",
+         "l": "lov/2005-06-17-62/§14-6",
+         "a": "arbeidsmiljoloven/14-6"
+        },
+        ". Arbeidstaker har rett til å la seg bistå av en tillitsvalgt eller annen representant både ved utarbeidelse og ved endringer i arbeidsavtalen."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) I arbeidsforhold med en samlet varighet av mer enn en måned skal skriftlig arbeidsavtale foreligge snarest mulig og senest sju dager etter at arbeidsforholdet begynte."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) I arbeidsforhold med kortere varighet enn en måned eller ved utleie av arbeidskraft, skal det umiddelbart inngås skriftlig arbeidsavtale."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-6",
+     "visNr": "§ 14-6",
+     "tittel": "Minimumskrav til innholdet i den skriftlige arbeidsavtalen",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsavtalen skal inneholde opplysninger om forhold av vesentlig betydning i arbeidsforholdet, herunder:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "partenes identitet,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidsplassen. Dersom det ikke eksisterer noen fast arbeidsplass eller hovedarbeidsplass skal arbeidsavtalen gi opplysning om at arbeidstakeren arbeider på forskjellige steder eller fritt kan bestemme sitt arbeidssted, og oppgi forretningsadressen eller eventuelt hjemstedet til arbeidsgiver,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "en beskrivelse av arbeidet eller arbeidstakerens tittel, stilling eller arbeidskategori,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "tidspunktet for arbeidsforholdets begynnelse,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "forventet varighet dersom arbeidsforholdet er midlertidig, samt grunnlaget for ansettelsen, jf. ",
+            {
+             "t": "§ 14-9",
+             "l": "lov/2005-06-17-62/§14-9",
+             "a": "arbeidsmiljoloven/14-9"
+            },
+            ","
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "eventuelle prøvetidsbestemmelser, jf. ",
+            {
+             "t": "§ 15-3 sjuende ledd",
+             "l": "lov/2005-06-17-62/§15-3/ledd/7",
+             "a": "arbeidsmiljoloven/15-3"
+            },
+            " og ",
+            {
+             "t": "§ 15-6",
+             "l": "lov/2005-06-17-62/§15-6",
+             "a": "arbeidsmiljoloven/15-6"
+            },
+            ","
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidstakerens rett til ferie og feriepenger, reglene for fastsettelse av ferietidspunktet og eventuell rett til annet fravær betalt av arbeidsgiver,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidstakerens og arbeidsgiverens oppsigelsesfrister og fremgangsmåte ved opphør av arbeidsforholdet,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "i.",
+         "ledd": [
+          {
+           "tekst": [
+            "den gjeldende eller avtalte lønnen ved arbeidsforholdets begynnelse, eventuelle tillegg og andre godtgjøringer som ikke inngår i lønnen, for eksempel pensjonsinnbetalinger og kost- eller nattgodtgjørelse, utbetalingsmåte og tidspunkt for lønnsutbetaling. De ulike elementene skal angis særskilt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "j.",
+         "ledd": [
+          {
+           "tekst": [
+            "lengde og plassering av den daglige og ukentlige arbeidstid. Dersom arbeidet skal utføres periodevis eller den daglige og ukentlige arbeidstiden vil variere, skal arbeidsavtalen opplyse om dette og fastsette eller gi grunnlag for å beregne når arbeidet skal utføres,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "k.",
+         "ledd": [
+          {
+           "tekst": [
+            "lengde av pauser,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "l.",
+         "ledd": [
+          {
+           "tekst": [
+            "avtale om særlig arbeidstidsordning, jf. ",
+            {
+             "t": "§ 10-2 andre",
+             "l": "lov/2005-06-17-62/§10-2/ledd/2",
+             "a": "arbeidsmiljoloven/10-2"
+            },
+            ", ",
+            {
+             "t": "tredje",
+             "l": "lov/2005-06-17-62/§10-2/ledd/3",
+             "a": "arbeidsmiljoloven/10-2"
+            },
+            " og ",
+            {
+             "t": "fjerde ledd",
+             "l": "lov/2005-06-17-62/§10-2/ledd/4",
+             "a": "arbeidsmiljoloven/10-2"
+            },
+            ","
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "m.",
+         "ledd": [
+          {
+           "tekst": [
+            "ordninger for vaktendringer, jf. ",
+            {
+             "t": "§ 10-3",
+             "l": "lov/2005-06-17-62/§10-3",
+             "a": "arbeidsmiljoloven/10-3"
+            },
+            ", samt ordninger for arbeid utover avtalt arbeidstid, herunder betaling for slikt arbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "n.",
+         "ledd": [
+          {
+           "tekst": [
+            "opplysninger om eventuelle tariffavtaler som regulerer arbeidsforholdet. Dersom avtale er inngått av parter utenfor virksomheten skal arbeidsavtalen inneholde opplysninger om hvem tariffpartene er,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "o.",
+         "ledd": [
+          {
+           "tekst": [
+            "innleiers identitet dersom arbeidstaker leies ut fra bemanningsforetak. Opplysningen skal gis så snart innleiers identitet er kjent,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "p.",
+         "ledd": [
+          {
+           "tekst": [
+            "rett til kompetanseutvikling som arbeidsgiver eventuelt tilbyr,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "q.",
+         "ledd": [
+          {
+           "tekst": [
+            "ytelser i regi av arbeidsgiver til sosial trygghet samt navn på institusjoner som mottar innbetalinger fra arbeidsgiver i denne forbindelse."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Informasjon nevnt i første ledd bokstavene g til k samt m, p og q, kan gis ved å henvise til lover, forskrifter eller tariffavtaler som regulerer disse forholdene."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom arbeidsgiver ikke har opplyst om at arbeidsforholdet er midlertidig, jf. første ledd bokstav e og ",
+        {
+         "t": "§ 14-5",
+         "l": "lov/2005-06-17-62/§14-5",
+         "a": "arbeidsmiljoloven/14-5"
+        },
+        ", skal det legges til grunn at arbeidstakeren har fast ansettelse dersom ikke noe annet gjøres overveiende sannsynlig."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Dersom arbeidsgiver ikke har opplyst om stillingens omfang, jf. første ledd bokstav j og ",
+        {
+         "t": "§ 14-5",
+         "l": "lov/2005-06-17-62/§14-5",
+         "a": "arbeidsmiljoloven/14-5"
+        },
+        ", skal arbeidstakers påstand om stillingsomfang legges til grunn dersom ikke noe annet gjøres overveiende sannsynlig."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "24 apr 2015 nr. 20",
+        "l": "lov/2015-04-24-20"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 399",
+        "l": "forskrift/2015-04-24-399"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       "), ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ", se endringslovens del III for overgangsregel)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-7",
+     "visNr": "§ 14-7",
+     "tittel": "Arbeidstaker som sendes til utlandet",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom arbeidstaker skal arbeide i utlandet i mer enn fire sammenhengende uker, skal skriftlig arbeidsavtale inngås før avreise. I tillegg til informasjon som nevnt i ",
+        {
+         "t": "§ 14-6",
+         "l": "lov/2005-06-17-62/§14-6",
+         "a": "arbeidsmiljoloven/14-6"
+        },
+        " skal avtalen minst regulere følgende:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvilke land arbeidet skal utføres i, og varigheten av arbeidet som skal utføres i utlandet,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "valutaen vederlaget skal utbetales i,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "eventuelle kontant- og naturalytelser som er knyttet til utenlandsarbeidet,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "vilkårene for arbeidstakerens hjemreise, herunder utgiftsdekning."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Når en norsk virksomhet i forbindelse med tjenesteyting sender ut en arbeidstaker til et annet land innenfor EØS-området, skal informasjonen nevnt i første ledd i tillegg omfatte følgende:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "den lønnen arbeidstaker har krav på etter gjeldende rett i vertslandet,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "eventuelle ytelser som spesifikt vedrører utsendelsen, og eventuelle ordninger for godtgjørelse av utgifter til reise, kost og losji der dette er relevant,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "lenke til det sentrale offisielle nasjonale nettstedet som er etablert i vertslandet etter direktiv ",
+            {
+             "t": "2014/67/EU",
+             "l": "eu/32014l0067"
+            },
+            " artikkel 5 andre ledd."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Informasjon som nevnt i første ledd bokstav b og andre ledd bokstav a kan gis i form av en henvisning til lover, forskrifter eller tariffavtaler som regulerer disse forholdene."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ", se endringslovens del III for overgangsregel)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-8",
+     "visNr": "§ 14-8",
+     "tittel": "Endringer i arbeidsforholdet",
+     "ledd": [
+      {
+       "tekst": [
+        "Endringer i arbeidsforholdet som nevnt i ",
+        {
+         "t": "§§ 14-6",
+         "l": "lov/2005-06-17-62/§14-6",
+         "a": "arbeidsmiljoloven/14-6"
+        },
+        " og ",
+        {
+         "t": "14-7",
+         "l": "lov/2005-06-17-62/§14-7",
+         "a": "arbeidsmiljoloven/14-7"
+        },
+        " skal tas inn i arbeidsavtalen tidligst mulig og senest den dagen endringen trer i kraft. Dette gjelder likevel ikke dersom endringene i arbeidsforholdet skyldes endringer i lover, forskrifter eller tariffavtaler, jf. ",
+        {
+         "t": "§ 14-6 andre ledd",
+         "l": "lov/2005-06-17-62/§14-6/ledd/2",
+         "a": "arbeidsmiljoloven/14-6"
+        },
+        " og ",
+        {
+         "t": "§ 14-7 tredje ledd",
+         "l": "lov/2005-06-17-62/§14-7/ledd/3",
+         "a": "arbeidsmiljoloven/14-7"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-8a",
+     "visNr": "§ 14-8 a",
+     "tittel": "Forespørsel om mer forutsigbare og trygge arbeidsvilkår",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom en arbeidstaker som arbeider deltid eller er midlertidig ansatt, ber om en ansettelsesform med mer forutsigbare og trygge arbeidsvilkår, skal arbeidsgiver gi et skriftlig og begrunnet svar innen en måned etter at forespørselen fant sted."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Retten til skriftlig svar etter denne bestemmelsen gjelder for arbeidstaker som har vært ansatt i virksomheten i mer enn seks måneder, og som er ferdig med eventuell prøvetid. Retten gjelder ikke hvis det er gått mindre enn seks måneder siden arbeidstakers forrige forespørsel etter bestemmelsen."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-9",
+     "visNr": "§ 14-9",
+     "tittel": "Fast og midlertidig ansettelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker skal ansettes fast. Med fast ansettelse menes i denne lov at ansettelsen er løpende og tidsubegrenset, at lovens regler om opphør av arbeidsforhold gjelder, og at arbeidstaker sikres forutsigbarhet for arbeid i form av et reelt stillingsomfang."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Avtale om midlertidig ansettelse kan likevel inngås"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "når arbeidet er av midlertidig karakter"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "for arbeid i stedet for en annen eller andre (vikariat)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "for praksisarbeid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "med deltaker i arbeidsmarkedstiltak i regi av eller i samarbeid med arbeids- og velferdsetaten"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "med idrettsutøvere, idrettstrenere, dommere og andre ledere innen den organiserte idretten"
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Departementet kan i forskrift gi nærmere bestemmelser om midlertidig ansettelse for praksisarbeid og om hvilke typer arbeidsmarkedstiltak som omfattes av andre ledd bokstav d."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Landsomfattende arbeidstakerorganisasjon kan inngå tariffavtale med en arbeidsgiver eller en arbeidsgiverforening om adgang til midlertidig ansettelse innenfor en nærmere angitt arbeidstakergruppe som skal utføre kunstnerisk arbeid, forskningsarbeid eller arbeid i forbindelse med idrett. Dersom tariffavtalen er bindende for et flertall av arbeidstakerne innenfor en nærmere angitt arbeidstakergruppe i virksomheten, kan arbeidsgiver på samme vilkår inngå midlertidig arbeidsavtale med andre arbeidstakere som skal utføre tilsvarende arbeid."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidstaker som har vært ansatt i mer enn ett år, har krav på skriftlig varsel om tidspunktet for fratreden senest en måned før fratredelsestidspunktet. Dette gjelder likevel ikke deltaker i arbeidsmarkedstiltak som omfattes av tredje ledd, jf. andre ledd bokstav d. Varselet skal anses for å være gitt når det er kommet fram til arbeidstakeren. Dersom fristen ikke overholdes, kan arbeidsgiver ikke kreve at arbeidstakeren fratrer før en måned etter at varsel er gitt."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Midlertidige arbeidsavtaler opphører ved det avtalte tidsrommets utløp, eller når det bestemte arbeidet er avsluttet, med mindre noe annet er skriftlig avtalt eller fastsatt i tariffavtale. I avtaleperioden gjelder lovens regler om opphør av arbeidsforhold."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Arbeidstaker som har vært sammenhengende midlertidig ansatt i mer enn tre år etter andre ledd bokstav a, b, tidligere f eller noen av disse i kombinasjon, skal anses som fast ansatt slik at reglene om oppsigelse av arbeidsforhold kommer til anvendelse. Ved beregning av ansettelsestid skal det ikke gjøres fradrag for arbeidstakers fravær."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "16 juni 2006 nr. 20",
+        "l": "lov/2006-06-16-20"
+       },
+       " (ikr. 1 juli 2006 iflg. ",
+       {
+        "t": "res. 16 juni 2006 nr. 631",
+        "l": "forskrift/2006-06-16-631"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "25 juni 2010 nr. 31",
+        "l": "lov/2010-06-25-31"
+       },
+       " (ikr. 1 juli 2010 iflg. ",
+       {
+        "t": "res. 25 juni 2010 nr. 976",
+        "l": "forskrift/2010-06-25-976"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 20",
+        "l": "lov/2015-04-24-20"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 399",
+        "l": "forskrift/2015-04-24-399"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       "), ",
+       {
+        "t": "20 des 2018 nr. 98",
+        "l": "lov/2018-12-20-98"
+       },
+       " (ikr. 1 jan 2019), ",
+       {
+        "t": "21 juni 2019 nr. 25",
+        "l": "lov/2019-06-21-25"
+       },
+       " (ikr. 1 juli 2019 iflg. ",
+       {
+        "t": "res. 21 juni 2019 nr. 781",
+        "l": "forskrift/2019-06-21-781"
+       },
+       "), ",
+       {
+        "t": "18 mars 2022 nr. 10",
+        "l": "lov/2022-03-18-10"
+       },
+       " (i kraft 1 juli 2022 iflg. ",
+       {
+        "t": "res. 18 mars 2022 nr. 412",
+        "l": "forskrift/2022-03-18-412"
+       },
+       ", endring endret ved lov ",
+       {
+        "t": "17 juni 2022 nr. 42",
+        "l": "lov/2022-06-17-42"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-10",
+     "visNr": "§ 14-10",
+     "tittel": "Åremål",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Øverste leder i en virksomhet kan ansettes på åremål."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ansettelse på åremål kan avtales når dette anses nødvendig som følge av overenskomst med fremmed stat eller internasjonal organisasjon."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-11",
+     "visNr": "§ 14-11",
+     "tittel": "Virkninger av brudd på reglene om fast og midlertidig ansettelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom det foreligger brudd på bestemmelsene i ",
+        {
+         "t": "§§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " eller ",
+        {
+         "t": "14-10",
+         "l": "lov/2005-06-17-62/§14-10",
+         "a": "arbeidsmiljoloven/14-10"
+        },
+        ", skal retten etter påstand fra arbeidstaker avsi dom for at det foreligger et fast arbeidsforhold eller at arbeidsforholdet fortsetter, i samsvar med ",
+        {
+         "t": "§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " første ledd. I særlige tilfeller kan retten likevel, etter påstand fra arbeidsgiver, bestemme at arbeidsforholdet skal opphøre dersom den etter en avveining av partenes interesser finner at det vil være åpenbart urimelig at arbeidsforholdet fortsetter."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved brudd på bestemmelsene i ",
+        {
+         "t": "§§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " eller ",
+        {
+         "t": "14-10",
+         "l": "lov/2005-06-17-62/§14-10",
+         "a": "arbeidsmiljoloven/14-10"
+        },
+        " kan arbeidstakeren kreve erstatning. Erstatningen fastsettes i samsvar med ",
+        {
+         "t": "§ 15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " andre ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "24 apr 2015 nr. 20",
+        "l": "lov/2015-04-24-20"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 399",
+        "l": "forskrift/2015-04-24-399"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       "), ",
+       {
+        "t": "18 mars 2022 nr. 10",
+        "l": "lov/2022-03-18-10"
+       },
+       " (i kraft 1 juli 2022 iflg. ",
+       {
+        "t": "res. 18 mars 2022 nr. 412",
+        "l": "forskrift/2022-03-18-412"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-12",
+     "visNr": "§ 14-12",
+     "tittel": "Innleie fra virksomhet som har til formål å drive utleie (bemanningsforetak)",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Innleie av arbeidstaker fra virksomhet som har til formål å drive utleie, er tillatt i samme utstrekning som det kan avtales midlertidig ansettelse etter ",
+        {
+         "t": "§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " andre ledd bokstav b til e."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) I virksomhet som er bundet av tariffavtale inngått med fagforening med innstillingsrett etter arbeidstvistloven kan arbeidsgiver og tillitsvalgte som til sammen representerer et flertall av den arbeidstakerkategori innleien gjelder, inngå skriftlig avtale om tidsbegrenset innleie uten hinder av det som er bestemt i første ledd. Virksomheten og bemanningsforetaket skal på forespørsel fra Arbeidstilsynet fremlegge dokumentasjon på at innleievirksomheten er bundet av tariffavtale inngått med fagforening med innstillingsrett og at det er inngått avtale med de tillitsvalgte som nevnt i første punktum."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker som har vært sammenhengende innleid etter denne paragraf i mer enn tre år, har rett til fast ansettelse hos innleier slik at reglene om oppsigelse av arbeidsforhold kommer til anvendelse. Ved beregningen skal det ikke gjøres fradrag for arbeidstakers fravær."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Ved vurderingen av om en oppdragsavtale mellom to virksomheter innebærer innleie, skal det særlig legges vekt på om oppdragsgiver har ledelsen av arbeidet og ansvar for resultatet. Andre relevante forhold er blant annet om det i hovedsak skal leveres arbeidskraft, om arbeidet skjer i nær tilknytning til oppdragsgivers virksomhet, om arbeidet dekker et vedvarende arbeidskraftbehov hos oppdragsgiver og om arbeidet skjer innenfor oppdragsgivers kjerne- eller hovedaktivitet."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Departementet kan i forskrift forby innleie av visse arbeidstakergrupper eller på visse områder når viktige samfunnshensyn tilsier det."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan i forskrift gi regler om tidsbegrenset innleie av helsepersonell for å sikre forsvarlig drift av helse- og omsorgstjenesten, og om tidsbegrenset innleie av spesialkompetanse, som avviker fra bestemmelsen i første ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "22 juni 2012 nr. 33",
+        "l": "lov/2012-06-22-33"
+       },
+       " (ikr. 1 jan 2013 iflg. ",
+       {
+        "t": "res. 22 juni 2012 nr. 607",
+        "l": "forskrift/2012-06-22-607"
+       },
+       "), ",
+       {
+        "t": "14 juni 2013 nr. 32",
+        "l": "lov/2013-06-14-32"
+       },
+       " (ikr. 1 jan 2014 iflg. ",
+       {
+        "t": "res. 14 juni 2013 nr. 617",
+        "l": "forskrift/2013-06-14-617"
+       },
+       "), ",
+       {
+        "t": "24 apr 2015 nr. 20",
+        "l": "lov/2015-04-24-20"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 399",
+        "l": "forskrift/2015-04-24-399"
+       },
+       "), ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       ", endringen i annet ledd gis virkning fra 1 juli 2019 når det gjelder konkrete innleieforhold som allerede eksisterer ved ikrafttredelsen), ",
+       {
+        "t": "20 des 2022 nr. 99",
+        "l": "lov/2022-12-20-99"
+       },
+       " (i kraft 1 apr 2023 iflg. ",
+       {
+        "t": "res. 20 des 2022 nr. 2300",
+        "l": "forskrift/2022-12-20-2300"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-12a",
+     "visNr": "§ 14-12 a",
+     "tittel": "Likebehandling av lønns- og arbeidsvilkår ved utleie fra bemanningsforetak",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Bemanningsforetaket skal sørge for at utleid arbeidstaker minst sikres de vilkår som ville kommet til anvendelse dersom arbeidstaker hadde vært ansatt hos innleier for å utføre samme arbeid, når det gjelder:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidstidens lengde og plassering,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "overtidsarbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "varighet og plassering av pauser og hvileperioder,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "nattarbeid,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "feriefritid, feriepenger, fridager og godtgjøring på slike dager, og"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "lønn og utgiftsdekning."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker som blir leid ut, skal ha samme tilgang til felles goder og tjenester hos innleier som virksomhetens egne arbeidstakere, med mindre objektive grunner tilsier noe annet."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Departementet kan i forskrift bestemme om og i hvilken utstrekning bestemmelsene om likebehandling kan fravikes ved tariffavtale. Den generelle beskyttelse av arbeidstakerne må i alle tilfelle respekteres."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "22 juni 2012 nr. 33",
+        "l": "lov/2012-06-22-33"
+       },
+       " (ikr. 1 jan 2013 iflg. ",
+       {
+        "t": "res. 22 juni 2012 nr. 607",
+        "l": "forskrift/2012-06-22-607"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-12b",
+     "visNr": "§ 14-12 b",
+     "tittel": "Opplysningsplikt og innsynsrett ved leie av arbeidstaker fra bemanningsforetak",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Ved leie av arbeidstaker skal innleier gi bemanningsforetaket de opplysninger som er nødvendige for at bemanningsforetaket skal kunne ivareta kravet om likebehandling i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Bemanningsforetaket skal, når arbeidstaker ber om det, gi de opplysninger som er nødvendige for at arbeidstaker skal kunne vurdere om egne lønns- og arbeidsvilkår oppfyller kravet om likebehandling i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Bemanningsforetaket skal, når innleier ber om det, dokumentere hvilke lønns- og arbeidsvilkår som er avtalt med arbeidstaker som leies ut til innleier."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Innleier skal, når tillitsvalgte hos innleier ber om det, dokumentere hvilke lønns- og arbeidsvilkår som er avtalt mellom innleid arbeidstaker og dennes arbeidsgiver."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Plikten til å gi opplysninger etter tredje og fjerde ledd gjelder bare vilkår som nevnt i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        " første ledd. Bemanningsforetak, innleier og tillitsvalgte som mottar opplysninger i medhold av bestemmelsen her, har taushetsplikt om opplysningene. Opplysningene kan bare benyttes til å sikre eller undersøke overholdelse av kravet om likebehandling i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        " eller til å oppfylle plikter etter bestemmelsen her."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan i forskrift gi nærmere regler om innsynsrett, opplysningsplikt og taushetsplikt etter denne paragraf, samt om taushetsplikt for innleide arbeidstakere. Departementet kan i forskrift også gi regler om eventuell bruk av rådgivere og taushetsplikt for disse."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "22 juni 2012 nr. 33",
+        "l": "lov/2012-06-22-33"
+       },
+       " (ikr. 1 jan 2013 iflg. ",
+       {
+        "t": "res. 22 juni 2012 nr. 607",
+        "l": "forskrift/2012-06-22-607"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-12c",
+     "visNr": "§ 14-12 c",
+     "tittel": "Solidaransvar for innleier",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Virksomheter som leier inn arbeidstaker etter ",
+        {
+         "t": "§ 14-12",
+         "l": "lov/2005-06-17-62/§14-12",
+         "a": "arbeidsmiljoloven/14-12"
+        },
+        ", hefter på samme måte som en selvskyldnerkausjonist for utbetaling av lønn, feriepenger og eventuell annen godtgjøring etter kravet om likebehandling i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        ", inkludert krav som følger av tariffavtale som nevnt i ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        " tredje ledd. Ved solidaransvar etter første punktum hefter solidaransvarlig også for feriepenger opptjent i tilknytning til kravet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker må fremme skriftlig krav overfor innleievirksomheten senest innen tre måneder etter kravets forfallsdato. Solidaransvarlig skal betale kravet innen tre uker etter at kravet er kommet frem."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Solidaransvarlig kan nekte å dekke kravet dersom arbeidstakeren visste at forutsetningen for arbeidsoppdraget var at lønn mv. helt eller delvis skal dekkes av den solidaransvarlige."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Solidaransvaret gjelder ikke når det er åpnet konkurs i bemanningsforetaket."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "22 juni 2012 nr. 33",
+        "l": "lov/2012-06-22-33"
+       },
+       " (ikr. 1 juli 2013 iflg. ",
+       {
+        "t": "res. 22 juni 2012 nr. 607",
+        "l": "forskrift/2012-06-22-607"
+       },
+       "), endret ved lov ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-13",
+     "visNr": "§ 14-13",
+     "tittel": "Innleie fra virksomhet som ikke har til formål å drive utleie",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Innleie fra virksomhet som ikke har til formål å drive utleie, er tillatt når den innleide arbeidstaker er fast ansatt hos utleier. For at virksomheten skal sies ikke å ha til formål å drive utleie, er det et vilkår at utleie skjer innenfor de samme fagområder som utgjør utleierens hovedbeskjeftigelse og at utleieaktiviteten ikke omfatter mer enn 50 prosent av de fast ansatte hos utleier. Innleier skal foreta drøftelser med tillitsvalgte som til sammen representerer et flertall av den arbeidstakerkategori innleien gjelder, før beslutning om innleie foretas."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) For innleie som overstiger 10 prosent av de ansatte hos innleier, likevel ikke færre enn tre personer, eller som har en varighet ut over ett år, skal det inngås skriftlig avtale med tillitsvalgte som til sammen representerer et flertall av den arbeidstakerkategori innleien gjelder. Dette gjelder ikke for innleie innenfor samme konsern."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Etter krav fra tillitsvalgte som representerer den arbeidstakerkategori innleien gjelder, skal arbeidsgiver dokumentere at vilkårene for innleie etter første ledd er oppfylt."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Departementet kan i forskrift forby innleie av visse arbeidstakergrupper eller på visse områder når viktige samfunnshensyn tilsier det."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) ",
+        {
+         "t": "§ 14-12",
+         "l": "lov/2005-06-17-62/§14-12",
+         "a": "arbeidsmiljoloven/14-12"
+        },
+        " fjerde ledd gjelder tilsvarende."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "29 juni 2007 nr. 42",
+        "l": "lov/2007-06-29-42"
+       },
+       " (ikr. 1 juli 2008 iflg. ",
+       {
+        "t": "res. 29 feb 2008 nr. 200",
+        "l": "forskrift/2008-02-29-200"
+       },
+       ", endring endret ved lov ",
+       {
+        "t": "21 des 2007 nr. 118",
+        "l": "lov/2007-12-21-118"
+       },
+       "), ",
+       {
+        "t": "20 des 2022 nr. 99",
+        "l": "lov/2022-12-20-99"
+       },
+       " (i kraft 1 apr 2023 iflg. ",
+       {
+        "t": "res. 20 des 2022 nr. 2300",
+        "l": "forskrift/2022-12-20-2300"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-13a",
+     "visNr": "§ 14-13 a",
+     "tittel": "Innleie av avløser fra avløserlag",
+     "ledd": [
+      {
+       "tekst": [
+        "Departementet kan gi forskrift om at reglene om innleie fra bemanningsforetak ikke skal gjelde når jordbruksforetak leier inn avløser fra avløserlag, og om særregler ved slik innleie."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "20 juni 2025 nr. 36",
+        "l": "lov/2025-06-20-36"
+       },
+       " (i kraft 1 juli 2025 iflg. ",
+       {
+        "t": "res. 20 juni 2025 nr. 1118",
+        "l": "forskrift/2025-06-20-1118"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-14",
+     "visNr": "§ 14-14",
+     "tittel": "Virkninger av ulovlig innleie av arbeidstaker",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom det foreligger brudd på bestemmelsene i ",
+        {
+         "t": "§ 14-12",
+         "l": "lov/2005-06-17-62/§14-12",
+         "a": "arbeidsmiljoloven/14-12"
+        },
+        ", skal retten etter påstand fra den innleide arbeidstakeren avsi dom for at den innleide har et fast arbeidsforhold hos innleier i samsvar med ",
+        {
+         "t": "§ 14-9",
+         "l": "lov/2005-06-17-62/§14-9",
+         "a": "arbeidsmiljoloven/14-9"
+        },
+        " første ledd. I særlige tilfeller kan retten likevel, etter påstand fra innleier, bestemme at den innleide arbeidstakeren ikke har et fast arbeidsforhold dersom den etter en avveining av partenes interesser finner at dette vil være åpenbart urimelig."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved brudd på bestemmelsene i ",
+        {
+         "t": "§ 14-12",
+         "l": "lov/2005-06-17-62/§14-12",
+         "a": "arbeidsmiljoloven/14-12"
+        },
+        " kan den innleide arbeidstaker kreve erstatning fra innleier. Erstatningen fastsettes i samsvar med ",
+        {
+         "t": "§ 15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " andre ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "22 juni 2018 nr. 46",
+        "l": "lov/2018-06-22-46"
+       },
+       " (ikr. 1 jan 2019 iflg. ",
+       {
+        "t": "res. 22 juni 2018 nr. 944",
+        "l": "forskrift/2018-06-22-944"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-14a",
+     "visNr": "§ 14-14 a",
+     "tittel": "Drøfting om ansettelse mv.",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidsgiver skal minst én gang i året, eller når en av partene krever det, drøfte med de tillitsvalgte bruken av deltid, midlertidig ansettelse, innleie, selvstendige oppdragstakere og tjenestekjøp fra andre virksomheter som har betydning for bemanningen. I drøftingen skal blant annet grunnlaget, omfanget og konsekvensene for arbeidsmiljøet inngå. Ved innleie fra bemanningsforetak skal også praktiseringen av kravet om likebehandling drøftes, jf. ",
+        {
+         "t": "§ 14-12 a",
+         "l": "lov/2005-06-17-62/§14-12a",
+         "a": "arbeidsmiljoloven/14-12a"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-15",
+     "visNr": "§ 14-15",
+     "tittel": "Utbetaling av lønn og feriepenger",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Hvis ikke annet er avtalt skal det foretas lønnsutbetaling minst to ganger i måneden. Utbetalingstiden for feriepenger reguleres av ferieloven."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Lønn i penger, herunder feriepenger og annen godtgjøring i penger, skal utbetales fra arbeidsgiver via bank eller foretak med rett til å drive betalingsformidling til arbeidstakers konto. Første punktum gjelder likevel ikke dersom slik betalingsmåte er umulig eller svært byrdefull for arbeidstaker eller arbeidsgiver."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Trekk i lønn og feriepenger kan ikke gjøres unntatt:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "når det er hjemlet i lov,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "for arbeidstakers egenandel til tjenestepensjonsordninger som er omfattet av foretakspensjonsloven, innskuddspensjonsloven eller offentlige tjenestepensjonsordninger."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "når det på forhånd er fastsatt ved skriftlig avtale,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "når det ved tariffavtale er fastsatt regler om lønnstrekk for fagforeningskontingent, herunder premie til kollektiv forsikring som er knyttet til medlemskap i fagforening, eller avgift til opplysnings- og utviklingsfond, eller til lavtlønnsfond,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "når det gjelder erstatning for skade eller tap som arbeidstaker i forbindelse med arbeidet forsettlig eller ved grov uaktsomhet har påført virksomheten, og arbeidstaker skriftlig erkjenner erstatningsansvar, eller dette er fastslått ved dom, eller arbeidstaker rettsstridig fratrer sin stilling,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "når det på grunn av gjeldende rutiner for beregning og utbetaling av lønn ikke har vært praktisk mulig å ta hensyn til fravær på grunn av arbeidsnedleggelse eller arbeidsstengning i avregningsperioden."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Trekk i lønn eller feriepenger etter tredje ledd bokstav c, e og f skal begrenses til den del av kravet som overstiger det arbeidstaker med rimelighet trenger til underhold for seg og sin husstand."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Før trekk etter tredje ledd bokstav e foretas, skal arbeidsgiver drøfte grunnlaget for trekket og beløpets størrelse med arbeidstaker og med arbeidstakers tillitsvalgte med mindre arbeidstaker selv ikke ønsker det."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Ved utbetalingen eller straks etter denne skal arbeidstaker ha skriftlig oppgave over beregningsmåten for lønn, beregningsgrunnlaget for feriepenger og trekk som er foretatt."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "11 juni 2021 nr. 59",
+        "l": "lov/2021-06-11-59"
+       },
+       " (ikr. 1 jan 2022 iflg. ",
+       {
+        "t": "res. 11 juni 2021 nr. 1872",
+        "l": "forskrift/2021-06-11-1872"
+       },
+       "), ",
+       {
+        "t": "8 april 2022 nr. 19",
+        "l": "lov/2022-04-08-19"
+       },
+       " (i kraft 1 juli 2022 iflg. ",
+       {
+        "t": "res. 8 april 2022 nr. 550",
+        "l": "forskrift/2022-04-08-550"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-16",
+     "visNr": "§ 14-16",
+     "tittel": "Arbeidsreglement",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Ved industriell virksomhet og ved handels- og kontorvirksomhet, som sysselsetter mer enn 10 arbeidstakere, skal det for de arbeidstakere som ikke har en ledende eller kontrollerende stilling, være arbeidsreglement. Departementet kan bestemme at arbeidsreglement skal utarbeides i andre virksomheter for andre arbeidstakere enn nevnt foran. Reglementet skal inneholde de ordensregler som trengs og regler for arbeidsordningen. Reglementet må ikke inneholde bestemmelser som er i strid med loven."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) I arbeidsreglementet kan ikke fastsettes bøter for forseelser mot reglementet. Ved virksomhet som ikke kommer inn under første ledd kan det fastsettes arbeidsreglement. ",
+        {
+         "t": "§§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " til ",
+        {
+         "t": "14-20",
+         "l": "lov/2005-06-17-62/§14-20",
+         "a": "arbeidsmiljoloven/14-20"
+        },
+        " skal i tilfelle gjelde tilsvarende."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-17",
+     "visNr": "§ 14-17",
+     "tittel": "Fastsettelse av arbeidsreglement",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Ved virksomhet som er bundet av tariffavtale, kan arbeidsgiveren og arbeidstakernes tillitsvalgte fastsette arbeidsreglement ved skriftlig avtale. Er avtalen bindende for et flertall av arbeidstakerne, kan arbeidsgiveren gjøre reglementet gjeldende for alle arbeidstakere innenfor de arbeidsområder avtalen gjelder for."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Når ikke bestemmelsene i første ledd får anvendelse, må arbeidsreglementet for å bli gyldig, godkjennes av Arbeidstilsynet. Utkast til reglement skal utarbeides av arbeidsgiveren som skal forhandle med representanter for arbeidstakerne om reglementets bestemmelser. Er virksomheten bundet av tariffavtale, skal arbeidsgiveren forhandle med arbeidstakernes tillitsvalgte. Ellers skal arbeidstakerne velge fem representanter som arbeidsgiveren skal forhandle med. Setter arbeidstakernes representanter fram avvikende forslag til reglement, skal dette vedlegges når arbeidsgiveren sender inn utkastet til godkjenning. Unnlater arbeidstakernes representanter å forhandle om reglementet, skal arbeidsgiveren opplyse om dette når utkastet sendes inn til godkjenning."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Reglementet skal slås opp på ett eller flere iøynefallende steder i virksomheten og deles ut til hver arbeidstaker som reglementet gjelder for."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-18",
+     "visNr": "§ 14-18",
+     "tittel": "Frist for innsendelse av arbeidsreglement",
+     "ledd": [
+      {
+       "tekst": [
+        "Arbeidsgiveren skal ta initiativ til å få fastsatt reglement ved avtale etter ",
+        {
+         "t": "§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " første ledd eller sørge for å utarbeide utkast etter ",
+        {
+         "t": "§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " andre ledd så snart som mulig. Reglementsutkast etter ",
+        {
+         "t": "§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " andre ledd skal sendes Arbeidstilsynet senest tre måneder etter at virksomheten er satt i gang."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-19",
+     "visNr": "§ 14-19",
+     "tittel": "Arbeidsreglementets gyldighet",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsreglementet er bare gyldig når det er istandbrakt på lovlig måte og når det ikke inneholder bestemmelser som strider mot loven."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Dersom utkast etter ",
+        {
+         "t": "§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " andre ledd inneholder bestemmelser som strider mot loven eller er ubillige overfor arbeidstakerne, eller dersom utkastet ikke er istandbrakt på lovlig måte, skal Arbeidstilsynet nekte å godkjenne det."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom et reglement fastsatt ved avtale etter ",
+        {
+         "t": "§ 14-17",
+         "l": "lov/2005-06-17-62/§14-17",
+         "a": "arbeidsmiljoloven/14-17"
+        },
+        " første ledd inneholder bestemmelser som strider mot loven, skal Arbeidstilsynet gjøre partene i avtalen oppmerksom på dette, og påse at bestemmelsene blir rettet."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "14-20",
+     "visNr": "§ 14-20",
+     "tittel": "Endringer i arbeidsreglement",
+     "ledd": [
+      {
+       "tekst": [
+        "Reglene i ",
+        {
+         "t": "§§ 14-16",
+         "l": "lov/2005-06-17-62/§14-16",
+         "a": "arbeidsmiljoloven/14-16"
+        },
+        " til ",
+        {
+         "t": "14-19",
+         "l": "lov/2005-06-17-62/§14-19",
+         "a": "arbeidsmiljoloven/14-19"
+        },
+        " gjelder tilsvarende når det skal gjøres endring i eller tillegg til arbeidsreglement."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap15",
+   "type": "kapittel",
+   "nr": "15",
+   "overskrift": "Kapittel 15 Opphør av arbeidsforhold",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "15-1",
+     "visNr": "§ 15-1",
+     "tittel": "Drøfting før beslutning om oppsigelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Før arbeidsgiver fatter beslutning om oppsigelse, skal spørsmålet så langt det er praktisk mulig drøftes med arbeidstaker og med arbeidstakers tillitsvalgte, med mindre arbeidstaker selv ikke ønsker det. Både grunnlaget for oppsigelsen og eventuell utvelgelse mellom flere ansatte av hvem som skal sies opp, skal drøftes."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-2",
+     "visNr": "§ 15-2",
+     "tittel": "Informasjon og drøfting ved masseoppsigelser",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Med masseoppsigelser menes oppsigelser som foretas overfor minst 10 arbeidstakere innenfor et tidsrom på 30 dager, uten at oppsigelsene er begrunnet i de enkelte arbeidstakeres forhold. Andre former for opphør av arbeidskontrakter som ikke er begrunnet i de enkelte arbeidstakeres forhold, skal tas med i beregningen såfremt minst fem sies opp."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidsgiver som vurderer å gå til masseoppsigelser, skal så tidlig som mulig innlede drøftinger med arbeidstakernes tillitsvalgte med sikte på å komme fram til en avtale for å unngå masseoppsigelser eller for å redusere antall oppsagte. Vurderer arbeidsgiver å legge ned virksomheten eller en selvstendig del av denne, og nedleggelsen innebærer en masseoppsigelse, skal også muligheten for videre drift drøftes, herunder om mulighetene for de ansattes overtakelse av virksomheten. Dersom oppsigelser ikke kan unngås, skal de uheldige sidene ved dem søkes redusert. Drøftingene skal omfatte mulige sosiale tiltak med sikte på blant annet støtte til omplassering eller omskolering av de oppsagte. Arbeidstakernes tillitsvalgte kan la seg bistå av sakkyndige. Arbeidsgiver har plikt til å innlede drøftinger selv om de planlagte oppsigelsene skyldes andre enn arbeidsgiver og som har beslutningsmyndighet overfor denne, f.eks. en konsernledelse."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidsgiver har plikt til å gi tillitsvalgte alle relevante opplysninger, herunder skriftlig melding om:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "grunnene til eventuelle oppsigelser,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "antall arbeidstakere som vil kunne bli oppsagt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvilke arbeidsgrupper de tilhører,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "antall arbeidstakere som normalt er ansatt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvilke arbeidstakergrupper som normalt er sysselsatt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "over hvilken periode oppsigelsene vil kunne bli foretatt,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "forslag til kriterier for utvelgelse av de som eventuelt skal sies opp,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "forslag til kriterier for beregning av eventuelle ekstraordinære sluttvederlag."
+           ]
+          }
+         ]
+        }
+       ],
+       "etter": [
+        [
+         "Meldingen skal gis tidligst mulig og senest samtidig med at arbeidsgiver innkaller til drøftinger. Tilsvarende melding skal også gis til Arbeids- og velferdsetaten, jf. ",
+         {
+          "t": "arbeidsmarkedsloven § 8",
+          "l": "lov/2004-12-10-76/§8"
+         },
+         "."
+        ]
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidstakernes tillitsvalgte kan kommentere meldingen direkte overfor Arbeids- og velferdsetaten."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Planlagte masseoppsigelser får tidligst virkning 30 dager etter at Arbeids- og velferdsetaten er underrettet. Arbeids- og velferdsetaten kan forlenge fristen i henhold til ",
+        {
+         "t": "arbeidsmarkedsloven § 8",
+         "l": "lov/2004-12-10-76/§8"
+        },
+        " tredje ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "16 juni 2006 nr. 20",
+        "l": "lov/2006-06-16-20"
+       },
+       " (ikr. 1 juli 2006 iflg. ",
+       {
+        "t": "res. 16 juni 2006 nr. 631",
+        "l": "forskrift/2006-06-16-631"
+       },
+       "), ",
+       {
+        "t": "6 juni 2008 nr. 38",
+        "l": "lov/2008-06-06-38"
+       },
+       " (ikr. 1 juli 2008 iflg. ",
+       {
+        "t": "res. 6 juni 2008 nr. 542",
+        "l": "forskrift/2008-06-06-542"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-3",
+     "visNr": "§ 15-3",
+     "tittel": "Oppsigelsesfrister",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Hvis ikke annet er skriftlig avtalt eller fastsatt i tariffavtale, gjelder en gjensidig oppsigelsesfrist på én måned. Før oppsigelse har funnet sted, kan avtale om kortere oppsigelsesfrist bare inngås mellom arbeidsgiveren og tillitsvalgte ved virksomhet som er bundet av tariffavtale. Departementet kan gi forskrift om kortere oppsigelsesfrist for deltakere i arbeidsmarkedstiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) For arbeidstaker som har vært ansatt i minst fem år sammenhengende i samme virksomhet når oppsigelsen gis, gjelder en gjensidig oppsigelsesfrist på minst to måneder. Har arbeidstakeren vært ansatt i minst 10 år sammenhengende i samme virksomhet, er den gjensidige oppsigelsesfristen minst tre måneder."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Blir arbeidstaker sagt opp etter minst 10 års sammenhengende ansettelse i samme virksomhet, skal oppsigelsesfristen være minst fire måneder dersom den finner sted etter at arbeidstakeren er fylt 50 år, minst fem måneder etter fylte 55 år og minst seks måneder etter fylte 60 år. Arbeidstakeren kan si opp arbeidsavtalen med en oppsigelsesfrist på minst tre måneder."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Oppsigelsesfrister som er fastsatt i første til tredje ledd løper fra og med første dag i måneden etter at oppsigelsen fant sted."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Den sammenhengende ansettelse som kreves i andre og tredje ledd avbrytes ikke ved midlertidig fratreden i henhold til oppsigelse på grunn av lovlig arbeidskamp. Den tid arbeidstakeren er fraværende skal likevel ikke medregnes, med mindre noe annet avtales ved arbeidskampens avslutning."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Ved beregning av ansettelsestid etter denne paragraf skal medregnes den tid arbeidstakeren har vært ansatt i annen virksomhet innenfor konsern som arbeidsgiver tilhører eller innenfor annen gruppe av virksomheter som er knyttet sammen gjennom eierinteresser eller felles ledelse på en slik måte at det er naturlig å se ansettelsesforholdene i sammenheng. Har virksomheten eller del av den blitt overdratt eller leiet ut til ny arbeidsgiver, skal også medregnes den tid arbeidstakeren har vært ansatt hos den tidligere arbeidsgiver eller i virksomhet innenfor konsern eller gruppe av virksomheter som den tidligere arbeidsgiver tilhørte."
+       ]
+      },
+      {
+       "tekst": [
+        "(7) Ved arbeidsavtaler der arbeidstaker skriftlig er ansatt på en bestemt prøvetid, gjelder en gjensidig oppsigelsesfrist på 14 dager, med mindre noe annet er skriftlig avtalt eller fastsatt i tariffavtale."
+       ]
+      },
+      {
+       "tekst": [
+        "(8) Partene kan ikke ved tariffavtale eller annen avtale fravike oppsigelsesfristene i andre eller tredje ledd før oppsigelse har funnet sted, eller bestemme at oppsigelsesfristen ved oppsigelse fra arbeidstakerens side skal være lenger enn ved oppsigelse fra arbeidsgiverens side."
+       ]
+      },
+      {
+       "tekst": [
+        "(9) Arbeidstaker som er permittert uten lønn i forbindelse med driftsinnskrenkning eller driftsstans, kan gå til oppsigelse med en oppsigelsesfrist på 14 dager regnet fra den dag oppsigelsen blir mottatt av arbeidsgiver. Dette gjelder uansett hvilken oppsigelsesfrist som følger av loven eller avtale."
+       ]
+      },
+      {
+       "tekst": [
+        "(10) Dersom ulykker, naturhendelser eller andre uforutsette hendelser gjør det nødvendig helt eller delvis å innstille driften, og arbeidstaker derfor sies opp, kan oppsigelsesfristen overfor arbeidstakere ved det arbeid som må innstilles, settes ned til 14 dager regnet fra hendelsen. Er gjeldende oppsigelsesfrist kortere enn 14 dager, gjelder denne. Oppsigelsesfristen kan ikke settes ned etter dette ledd ved arbeidsgivers død eller konkurs, og heller ikke ved arbeidsstans som skyldes at arbeidsrom, maskiner, redskap, arbeidsmaterialer eller andre hjelpemidler som arbeidsgiver skal stille til rådighet, ikke kan brukes, med mindre arbeidstakeren selv er skyld i arbeidsstansen."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 juni 2007 nr. 21",
+        "l": "lov/2007-06-15-21"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-4",
+     "visNr": "§ 15-4",
+     "tittel": "Formkrav ved oppsigelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Oppsigelse skal skje skriftlig."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Oppsigelse fra arbeidsgivers side skal leveres til arbeidstaker personlig eller sendes i rekommandert brev til arbeidstakers oppgitte adresse. Oppsigelsen skal anses for å ha funnet sted når den er kommet fram til arbeidstaker. Oppsigelsen skal inneholde opplysninger om"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "arbeidstakers rett til å kreve forhandling og reise søksmål,"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "retten til å fortsette i stillingen etter bestemmelsene i ",
+            {
+             "t": "§§ 17-3",
+             "l": "lov/2005-06-17-62/§17-3"
+            },
+            ", ",
+            {
+             "t": "17-4",
+             "l": "lov/2005-06-17-62/§17-4"
+            },
+            " og ",
+            {
+             "t": "15-11",
+             "l": "lov/2005-06-17-62/§15-11",
+             "a": "arbeidsmiljoloven/15-11"
+            },
+            ","
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "de frister som gjelder for å kreve forhandling, reise søksmål og for å fortsette i stillingen, og"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "hvem som er arbeidsgiver og rett saksøkt i en eventuell tvist."
+           ]
+          }
+         ]
+        }
+       ],
+       "etter": [
+        [
+         "Er oppsigelsen begrunnet i virksomhetens forhold, skal den inneholde opplysninger om fortrinnsrett etter ",
+         {
+          "t": "§ 14-2",
+          "l": "lov/2005-06-17-62/§14-2",
+          "a": "arbeidsmiljoloven/14-2"
+         },
+         ". Tilhører arbeidsgiver et konsern, skal oppsigelsen også opplyse om hvilke foretak som inngår i konsernet på oppsigelsestidspunktet."
+        ]
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom arbeidstaker krever det, skal arbeidsgiver oppgi de omstendigheter som påberopes som grunn for oppsigelsen. Arbeidstaker kan kreve å få opplysningene skriftlig."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "15 des 2006 nr. 69",
+        "l": "lov/2006-12-15-69"
+       },
+       " (ikr. 1 jan 2007 iflg. ",
+       {
+        "t": "res. 15 des 2006 nr. 1406",
+        "l": "forskrift/2006-12-15-1406"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-5",
+     "visNr": "§ 15-5",
+     "tittel": "Virkninger av formfeil ved oppsigelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom arbeidsgivers oppsigelse ikke er gitt skriftlig eller ikke inneholder opplysninger som nevnt i ",
+        {
+         "t": "§ 15-4",
+         "l": "lov/2005-06-17-62/§15-4",
+         "a": "arbeidsmiljoloven/15-4"
+        },
+        " og arbeidstaker går til søksmål innen 4 måneder etter at oppsigelsen fant sted, skal oppsigelsen kjennes ugyldig, med mindre særlige omstendigheter gjør dette åpenbart urimelig."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Er oppsigelsen ugyldig, kan arbeidstaker kreve erstatning. Det samme gjelder dersom oppsigelsen er mangelfull, men arbeidstaker ikke krever dom for ugyldighet eller det ikke blir avsagt dom for ugyldighet fordi særlige omstendigheter gjør dette åpenbart urimelig, jf. første ledd. Erstatningen fastsettes i samsvar med ",
+        {
+         "t": "§ 15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " andre ledd."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-6",
+     "visNr": "§ 15-6",
+     "tittel": "Oppsigelsesvern i arbeidsavtaler med bestemt prøvetid",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Blir arbeidstaker som skriftlig er ansatt på en bestemt prøvetid, sagt opp, må oppsigelsen være begrunnet i arbeidstakers tilpasning til arbeidet, faglige dyktighet eller pålitelighet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Bestemmelsene i paragrafen her innskrenker ikke arbeidsgivers rett til å si opp arbeidstaker etter ",
+        {
+         "t": "§ 15-7",
+         "l": "lov/2005-06-17-62/§15-7",
+         "a": "arbeidsmiljoloven/15-7"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Bestemmelsene i paragrafen her gjelder bare dersom oppsigelsen blir gitt innen utløpet av den avtalte prøvetiden. Prøvetid kan avtales for en periode på inntil seks måneder. Ved midlertidig ansettelse kan prøvetiden ikke overstige halvparten av ansettelsesforholdets varighet. Prøvetiden etter dette leddet kan likevel forlenges etter fjerde ledd."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Dersom arbeidstaker har vært fraværende fra arbeidet i prøvetiden, kan arbeidsgiver forlenge den avtalte prøvetiden med en periode som tilsvarer lengden av fraværet. Forlengelse kan bare skje når arbeidstaker ved ansettelsen er skriftlig orientert om adgangen til dette og arbeidsgiver skriftlig har orientert arbeidstaker om forlengelsen innen utløpet av prøvetiden. Det er ikke adgang til forlengelse ved fravær som er forårsaket av arbeidsgiver."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Det kan ikke avtales ny prøvetid dersom arbeidstaker skal fortsette i samme stilling eller i en stilling som i det vesentlige er likeartet stillingen arbeidstakeren har hatt i samme virksomhet. Ved fast ansettelse kan ny prøvetid likevel avtales dersom arbeidstakerens tidligere ansettelsestid og ny prøvetid samlet ikke overstiger seks måneder."
+       ]
+      },
+      {
+       "tekst": [
+        "(6) Departementet kan gi forskrift om adgang til å avtale lengre prøvetid enn seks måneder for visse arbeidstakergrupper."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 des 2023 nr. 88",
+        "l": "lov/2023-12-15-88"
+       },
+       " (i kraft 1 juli 2024 iflg. ",
+       {
+        "t": "res. 15 des 2023 nr. 2066",
+        "l": "forskrift/2023-12-15-2066"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-7",
+     "visNr": "§ 15-7",
+     "tittel": "Vern mot usaklig oppsigelse",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker kan ikke sies opp uten at det er saklig begrunnet i virksomhetens, arbeidsgivers eller arbeidstakers forhold."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Skyldes oppsigelsen driftsinnskrenkning eller rasjonaliseringstiltak, er den ikke saklig begrunnet dersom arbeidsgiver har et annet passende arbeid i virksomheten å tilby arbeidstaker. Ved avgjørelse av om en oppsigelse har saklig grunn i driftsinnskrenkning eller rasjonaliseringstiltak, skal det foretas en avveining mellom virksomhetens behov og de ulemper oppsigelsen påfører den enkelte arbeidstaker."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Tilhører arbeidsgiver et konsern, jf. ",
+        {
+         "t": "§ 8-4",
+         "l": "lov/2005-06-17-62/§8-4"
+        },
+        " fjerde ledd, er ikke oppsigelsen saklig begrunnet dersom det er annet passende arbeid å tilby arbeidstaker i andre virksomheter i konsernet."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) En oppsigelse som skyldes at arbeidsgiver setter ut eller tar sikte på å sette ut virksomhetens drift på oppdrag ved bruk av selvstendige oppdragstakere, er ikke saklig med mindre det er nødvendig av hensyn til virksomhetens fortsatte drift."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), ",
+       {
+        "t": "17 mars 2023 nr. 3",
+        "l": "lov/2023-03-17-3"
+       },
+       " (i kraft 1 jan 2024 iflg. ",
+       {
+        "t": "res. 17 mars 2023 nr. 341",
+        "l": "forskrift/2023-03-17-341"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-8",
+     "visNr": "§ 15-8",
+     "tittel": "Oppsigelsesvern ved sykdom",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som helt eller delvis er borte fra arbeidet på grunn av ulykke eller sykdom kan ikke av denne grunn sies opp de første 12 månedene etter at arbeidsuførheten inntrådte."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Oppsigelse som finner sted innenfor det tidsrom arbeidstaker er vernet mot oppsigelse etter denne paragraf, skal anses å ha sin grunn i sykefraværet dersom ikke noe annet gjøres overveiende sannsynlig."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker som påberoper seg oppsigelsesvern etter denne paragraf, må ved legeattest eller på annen måte innen rimelig tid gi varsel om grunnen til fraværet. Om arbeidsgiver krever det, må det samlede sykefravær godtgjøres ved legeattest."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-9",
+     "visNr": "§ 15-9",
+     "tittel": "Oppsigelsesvern ved svangerskap, og etter fødsel eller adopsjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som er gravid kan ikke av den grunn sies opp. Oppsigelse som finner sted i denne perioden, skal anses å ha sin grunn i dette forhold dersom ikke noe annet gjøres overveiende sannsynlig. Graviditeten må dokumenteres ved legeattest dersom arbeidsgiver krever det."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker som har permisjon etter ",
+        {
+         "t": "§§ 12-2",
+         "l": "lov/2005-06-17-62/§12-2",
+         "a": "arbeidsmiljoloven/12-2"
+        },
+        ", ",
+        {
+         "t": "12-3",
+         "l": "lov/2005-06-17-62/§12-3",
+         "a": "arbeidsmiljoloven/12-3"
+        },
+        ", ",
+        {
+         "t": "12-4",
+         "l": "lov/2005-06-17-62/§12-4",
+         "a": "arbeidsmiljoloven/12-4"
+        },
+        " eller ",
+        {
+         "t": "12-5",
+         "l": "lov/2005-06-17-62/§12-5",
+         "a": "arbeidsmiljoloven/12-5"
+        },
+        " første ledd i inntil ett år, må ikke sies opp med virkning i fraværsperioden når arbeidsgiver er klar over at fraværet skyldes disse grunner eller arbeidstaker uten unødig opphold gir beskjed om at dette er grunnen for fraværet. Er arbeidstaker lovlig sagt opp til fratreden på et tidspunkt som faller innenfor dette tidsrommet, er oppsigelsen gyldig, men oppsigelsen forlenges med et tilsvarende tidsrom."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) For arbeidstaker som har permisjon etter ",
+        {
+         "t": "§§ 12-5",
+         "l": "lov/2005-06-17-62/§12-5",
+         "a": "arbeidsmiljoloven/12-5"
+        },
+        " andre ledd eller ",
+        {
+         "t": "12-6",
+         "l": "lov/2005-06-17-62/§12-6",
+         "a": "arbeidsmiljoloven/12-6"
+        },
+        " utover ett år, gjelder første ledd første og andre punktum tilsvarende."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-10",
+     "visNr": "§ 15-10",
+     "tittel": "Oppsigelsesvern ved militærtjeneste mv.",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker kan ikke sies opp på grunn av permisjon etter ",
+        {
+         "t": "§ 12-12",
+         "l": "lov/2005-06-17-62/§12-12",
+         "a": "arbeidsmiljoloven/12-12"
+        },
+        ". Ved permisjon etter ",
+        {
+         "t": "§ 12-12",
+         "l": "lov/2005-06-17-62/§12-12",
+         "a": "arbeidsmiljoloven/12-12"
+        },
+        " første ledd andre punktum omfatter oppsigelsesvernet også perioder hvor arbeidstaker ikke er fraværende fra arbeidet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Oppsigelse som finner sted umiddelbart før eller innenfor det tidsrom arbeidstaker er fraværende fra arbeidet på grunn av permisjon etter ",
+        {
+         "t": "§ 12-12",
+         "l": "lov/2005-06-17-62/§12-12",
+         "a": "arbeidsmiljoloven/12-12"
+        },
+        ", skal anses å ha sin grunn i dette forholdet, dersom ikke noe annet gjøres overveiende sannsynlig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-11",
+     "visNr": "§ 15-11",
+     "tittel": "Retten til å fortsette i stillingen",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Ved tvist om et arbeidsforhold lovlig er brakt til opphør etter reglene i ",
+        {
+         "t": "§ 15-7",
+         "l": "lov/2005-06-17-62/§15-7",
+         "a": "arbeidsmiljoloven/15-7"
+        },
+        " kan arbeidstaker fortsette i stillingen så lenge forhandlinger pågår etter ",
+        {
+         "t": "§ 17-3",
+         "l": "lov/2005-06-17-62/§17-3"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Dersom søksmål reises innen de frister som følger av ",
+        {
+         "t": "§ 17-4",
+         "l": "lov/2005-06-17-62/§17-4"
+        },
+        ", kan arbeidstaker fortsette i stillingen. Etter krav fra arbeidsgiver kan retten likevel bestemme at arbeidstaker skal fratre under sakens behandling dersom retten finner det urimelig at arbeidsforholdet opprettholdes under sakens behandling. Dette gjelder også ved hel eller delvis nedleggelse av virksomheten. Retten fastsetter samtidig fristen for arbeidstakers fratreden."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Retten til å fortsette i stillingen gjelder ikke ved tvist om avskjed, oppsigelse i prøvetiden, for innleid arbeidstaker eller midlertidig ansatt. Etter krav fra arbeidstaker kan retten likevel bestemme at arbeidsforholdet skal fortsette inntil saken er rettskraftig avgjort, dersom søksmål reises innen fristene i ",
+        {
+         "t": "§ 17-4",
+         "l": "lov/2005-06-17-62/§17-4"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Retten til å fortsette i stillingen gjelder ikke for deltakere i arbeidsmarkedstiltak i regi av eller i samarbeid med Arbeids- og velferdsetaten som sies opp fordi vedkommende skaffes ordinært arbeid, overføres til annet tiltak eller tiltaket avsluttes."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Retten kan bestemme at arbeidstaker som er urettmessig utestengt fra arbeidsplassen etter at oppsigelsesfristen eller tidsrommet for arbeidsavtalen er utløpt, har rett til å gjeninntre i stillingen dersom arbeidstaker ber om dette innen fire uker fra utestengningen."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lover ",
+       {
+        "t": "21 des 2005 nr. 121",
+        "l": "lov/2005-12-21-121"
+       },
+       " (ikr. 1 jan 2006), ",
+       {
+        "t": "16 juni 2006 nr. 20",
+        "l": "lov/2006-06-16-20"
+       },
+       " (ikr. 1 juli 2006 iflg. ",
+       {
+        "t": "res. 16 juni 2006 nr. 631",
+        "l": "forskrift/2006-06-16-631"
+       },
+       "), ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       ")."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-12",
+     "visNr": "§ 15-12",
+     "tittel": "Virkninger av usaklig oppsigelse mv.",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom oppsigelsen er i strid med ",
+        {
+         "t": "§§ 15-6",
+         "l": "lov/2005-06-17-62/§15-6",
+         "a": "arbeidsmiljoloven/15-6"
+        },
+        " til ",
+        {
+         "t": "15-10",
+         "l": "lov/2005-06-17-62/§15-10",
+         "a": "arbeidsmiljoloven/15-10"
+        },
+        ", skal retten, etter påstand fra arbeidstaker, kjenne oppsigelsen ugyldig. I særlige tilfeller kan retten, etter påstand fra arbeidsgiver, bestemme at arbeidsforholdet skal opphøre dersom den etter avveining av partenes interesser finner at det vil være åpenbart urimelig at arbeidsforholdet fortsetter."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Arbeidstaker kan kreve erstatning dersom oppsigelsen er i strid med ",
+        {
+         "t": "§§ 15-6",
+         "l": "lov/2005-06-17-62/§15-6",
+         "a": "arbeidsmiljoloven/15-6"
+        },
+        " til ",
+        {
+         "t": "15-11",
+         "l": "lov/2005-06-17-62/§15-11",
+         "a": "arbeidsmiljoloven/15-11"
+        },
+        ". Erstatningen fastsettes til det beløp som retten finner rimelig under hensyn til det økonomiske tap, arbeidsgivers og arbeidstakers forhold og omstendighetene for øvrig."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-13",
+     "visNr": "§ 15-13",
+     "tittel": "Suspensjon",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Dersom det er grunn til å anta at en arbeidstaker har gjort seg skyldig i forhold som kan medføre avskjed etter ",
+        {
+         "t": "§ 15-14",
+         "l": "lov/2005-06-17-62/§15-14",
+         "a": "arbeidsmiljoloven/15-14"
+        },
+        " og virksomhetens behov tilsier det, kan arbeidsgiver pålegge arbeidstaker å fratre arbeidsforholdet mens saken undersøkes."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Det skal vurderes fortløpende om vilkårene etter første ledd er oppfylt. Dersom dette ikke er tilfelle, skal suspensjonen straks oppheves. Suspensjon utover tre måneder må være begrunnet i forholdets særlige art."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker beholder den lønn vedkommende hadde på suspensjonstidspunktet frem til suspensjonen opphører."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Ved suspensjon gjelder bestemmelsene i ",
+        {
+         "t": "§§ 15-1",
+         "l": "lov/2005-06-17-62/§15-1",
+         "a": "arbeidsmiljoloven/15-1"
+        },
+        ", ",
+        {
+         "t": "15-4",
+         "l": "lov/2005-06-17-62/§15-4",
+         "a": "arbeidsmiljoloven/15-4"
+        },
+        " og ",
+        {
+         "t": "15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " tilsvarende så langt de passer."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-13a",
+     "visNr": "§ 15-13 a",
+     "tittel": "Opphør av arbeidsforhold grunnet alder",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsforholdet kan bringes til opphør når arbeidstaker fyller 72 år."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Lavere aldersgrense kan fastsettes der det er nødvendig av hensyn til helse eller sikkerhet. Den lavere aldersgrensen skal være saklig begrunnet og ikke uforholdsmessig inngripende, jf. ",
+        {
+         "t": "§ 13-3 andre ledd",
+         "l": "lov/2005-06-17-62/§13-3/ledd/2"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker har krav på skriftlig varsel om tidspunktet for fratreden. Fratreden kan tidligst kreves seks måneder etter den første dag i måneden etter at varslet er kommet frem til arbeidstaker."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Før varsel gis skal arbeidsgiver så langt det er mulig innkalle arbeidstaker til en samtale, med mindre arbeidstaker selv ikke ønsker det."
+       ]
+      },
+      {
+       "tekst": [
+        "(5) Arbeidstaker som ønsker å fratre, har en tilsvarende varslingsfrist på en måned, likevel slik at kravet til skriftlighet ikke gjelder."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Tilføyd ved lov ",
+       {
+        "t": "19 juni 2009 nr. 39",
+        "l": "lov/2009-06-19-39"
+       },
+       " (ikr. 1 jan 2010 iflg. ",
+       {
+        "t": "res. 19 juni 2009 nr. 822",
+        "l": "forskrift/2009-06-19-822"
+       },
+       "), endret ved lover ",
+       {
+        "t": "24 apr 2015 nr. 21",
+        "l": "lov/2015-04-24-21"
+       },
+       " (ikr. 1 juli 2015 iflg. ",
+       {
+        "t": "res. 24 apr 2015 nr. 398",
+        "l": "forskrift/2015-04-24-398"
+       },
+       "), ",
+       {
+        "t": "27 mai 2025 nr. 17",
+        "l": "lov/2025-05-27-17"
+       },
+       " (i kraft 1 jan 2026 iflg. ",
+       {
+        "t": "res. 27. mai 2025 nr. 856",
+        "l": "forskrift/2025-05-27-856"
+       },
+       ", se endringsloven for overgangsregel)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-14",
+     "visNr": "§ 15-14",
+     "tittel": "Avskjed",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsgiver kan avskjedige en arbeidstaker med påbud om øyeblikkelig fratreden dersom denne har gjort seg skyldig i grovt pliktbrudd eller annet vesentlig mislighold av arbeidsavtalen."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Ved avskjed gjelder bestemmelsene i ",
+        {
+         "t": "§§ 15-1",
+         "l": "lov/2005-06-17-62/§15-1",
+         "a": "arbeidsmiljoloven/15-1"
+        },
+        " og ",
+        {
+         "t": "15-4",
+         "l": "lov/2005-06-17-62/§15-4",
+         "a": "arbeidsmiljoloven/15-4"
+        },
+        " tilsvarende."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Dersom avskjeden er urettmessig, skal retten kjenne den ugyldig etter påstand fra arbeidstaker. I særlige tilfeller kan retten likevel, etter påstand fra arbeidsgiver, bestemme at arbeidsforholdet skal opphøre dersom den etter avveining av partenes interesser finner at det vil være åpenbart urimelig at arbeidsforholdet fortsetter. Retten kan også bestemme at arbeidsforholdet skal opphøre når den finner at vilkårene for saklig oppsigelse er til stede."
+       ]
+      },
+      {
+       "tekst": [
+        "(4) Arbeidstaker kan kreve erstatning dersom avskjeden er urettmessig. Erstatningen fastsettes i samsvar med ",
+        {
+         "t": "§ 15-12",
+         "l": "lov/2005-06-17-62/§15-12",
+         "a": "arbeidsmiljoloven/15-12"
+        },
+        " andre ledd."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "15 juni 2007 nr. 21",
+        "l": "lov/2007-06-15-21"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-15",
+     "visNr": "§ 15-15",
+     "tittel": "Attest",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidstaker som fratrer etter lovlig oppsigelse har krav på skriftlig attest av arbeidsgiver. Attesten skal inneholde opplysninger om arbeidstakers navn, fødselsdato, hva arbeidet har bestått i og om arbeidsforholdets varighet."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Denne bestemmelse begrenser ikke arbeidstakers rett til å kreve en mer utførlig attest i arbeidsforhold hvor dette er sedvane og ikke annet er fastsatt i tariffavtale."
+       ]
+      },
+      {
+       "tekst": [
+        "(3) Arbeidstaker som blir avskjediget har også krav på attest, men arbeidsgiver kan uten nærmere angivelse av grunnen opplyse i attesten at arbeidstakeren er avskjediget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-16",
+     "visNr": "§ 15-16",
+     "tittel": "Virksomhetens øverste leder",
+     "ledd": [
+      {
+       "tekst": [
+        "(1) Arbeidsgiver kan inngå skriftlig avtale med virksomhetens øverste leder om at tvister i forbindelse med opphør av arbeidsforholdet skal løses ved voldgift."
+       ]
+      },
+      {
+       "tekst": [
+        "(2) Reglene om oppsigelse i dette kapittel gjelder ikke for virksomhetens øverste leder dersom vedkommende i forhåndsavtale har sagt fra seg slike rettigheter mot etterlønn ved fratreden."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "15-17",
+     "visNr": "§ 15-17",
+     "tittel": "Oppsigelse ved arbeidskonflikt",
+     "ledd": [
+      {
+       "tekst": [
+        "Bestemmelsene i dette kapittel gjelder ikke ved oppsigelse etter ",
+        {
+         "t": "arbeidstvistloven § 15",
+         "l": "lov/2012-01-27-9/§15"
+        },
+        " eller ",
+        {
+         "t": "tjenestetvistloven § 22",
+         "l": "lov/1958-07-18-2/§22"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved lov ",
+       {
+        "t": "27 jan 2012 nr. 9",
+        "l": "lov/2012-01-27-9"
+       },
+       " (ikr. 1 mars 2012 iflg. ",
+       {
+        "t": "res. 27 jan 2012 nr. 71",
+        "l": "forskrift/2012-01-27-71"
+       },
+       ")."
       ]
      ],
      "fotnoter": []
