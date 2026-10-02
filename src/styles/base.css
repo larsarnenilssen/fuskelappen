@@ -2950,18 +2950,13 @@ p.fagkort-tittel {
 }
 
 /* Kategorioverskriftene er roligere: ikke store bokstaver. */
-/* Like høye bokser på forsiden (eier 02.10.2026). Arbeidsplan og «Flere kalkulatorer» er til sammen like høye som
-   to andre bokser, fordelt 2/3 og 1/3. Høyden er en minstehøyde i rem, så boksene vokser med større tekst i stedet
-   for å klippe den. Undertekstene er korte nok til to linjer på vanlige telefoner, og undertittelen i «Flere» står
-   på én linje, så boksen får plass i sin tredjedel. */
+/* Like høye bokser på forsiden (eier 02.10.2026). Undertekstene har plass til to linjer i vanlige bokser, tre i
+   Arbeidsplan og én i «Flere kalkulatorer». Arbeidsplan og «Flere» er til sammen like høye som to vanlige bokser,
+   fordelt 2/3 og 1/3. Høyden er en minstehøyde i rem, så boksene vokser med større tekst i stedet for å klippe den.
+   5,625rem er tittel og to linjer undertekst; da får Arbeidsplan (7,5rem) plass til tre linjer og «Flere» (3,75rem)
+   til én. */
 .forside .kategori {
-  --modul-hoyde: 6rem;
-}
-
-@media (min-width: 40rem) {
-  .forside .kategori {
-    --modul-hoyde: 5rem;
-  }
+  --modul-hoyde: 5.625rem;
 }
 
 .forside .kategori > .liste > li > .listelenke {
