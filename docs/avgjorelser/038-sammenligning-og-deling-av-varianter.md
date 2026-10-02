@@ -25,6 +25,6 @@
 - **Åpning:** Skjemaet fylles ut, og parameteren fjernes fra adressen uten ny oppføring i historikken. Da fylles skjemaet ikke ut på nytt når siden lastes igjen. Øverst i skjemaet står en merknad med knappen «Lagre som variant». Ingenting lagres før brukeren trykker på den.
 - **Deling:** På telefon brukes telefonens egen deling (`navigator.share`). Ellers kopieres lenken. Lenken står også i et felt, så den kan kopieres selv om kopieringen ikke virker.
 
-- **Ikoner (eier 02.10.2026):** Arbeidsplan har fått eget ikon, en kalender med planlagte oppgaver, i stedet for de fire rutene. «Sammenlign» har to stolper med ulik høyde.
+- **Ikoner (eier 02.10.2026):** Arbeidsplan har fått eget ikon, en stolpe delt i deler med strek for stillingen (som stolpen for beskjeftigelse), i stedet for de fire rutene. «Sammenlign» har to stolper med ulik høyde.
 
 **Konsekvens:** Endres skjemaet i Arbeidsplan, må kontrollen i `lesDeltArbeidsplan` følge med. Testene sjekker at et skjema fra appen godtas. Må eldre lenker leses annerledes, økes `v`. Lenken inneholder ingen personopplysninger utover det brukeren selv skriver i navnet eller i navnet på en funksjon.

@@ -18,7 +18,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
-- **Arbeidsplan har nytt ikon:** en kalender med planlagte oppgaver.
+- **Arbeidsplan har nytt ikon:** en stolpe delt i deler, med strek for stillingen, som diagrammet i Arbeidsplan.
 - **Lagrede varianter:**
   - Hver variant står på to linjer: navnet med «Gi nytt navn» og «Slett» og resultatet øverst, og tidspunktet, «Hent» og «Del» og forskjellen fra nå under.
   - En slettet variant kan hentes tilbake: «Angre» står der varianten sto i noen sekunder.

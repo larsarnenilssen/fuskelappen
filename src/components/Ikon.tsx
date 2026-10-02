@@ -35,8 +35,8 @@ const baner = {
   forminsk: 'M9 4v5H4M20 9h-5V4M15 20v-5h5M4 15h5v5',
   // Veiviser: en stolpe med to skilt, for opplæringsløp.
   veiviser: 'M12 3v18M12 5h7l2 2.5-2 2.5h-7M12 12H5l-2 2.5L5 17h7M9 21h6',
-  // Arbeidsplan: en kalender med planlagte oppgaver.
-  arbeidsplan: 'M4 5.5h16v14.5H4zM4 9.5h16M8.5 3.5v4M15.5 3.5v4M7.5 13h4.5M7.5 16.5h7.5M15 13h1.5',
+  // Arbeidsplan: stillingen som en stolpe delt i deler, med strek for stillingsprosenten (eier 02.10.2026).
+  arbeidsplan: 'M3.5 9h17v6h-17zM9.5 9v6M14 9v6M17.5 5.5v13',
   // Sammenlign: to stolper med ulik høyde.
   sammenlign: 'M3.5 20h17M6.5 20v-8h4v8M13.5 20V6h4v14',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
