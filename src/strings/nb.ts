@@ -242,6 +242,7 @@ export const nb = {
     kilde: {
       punkt: 'punkt {punkt}',
       ukjent: 'Ukjent kilde',
+      iAppen: 'Les i appen',
     },
   },
   oppdatering: {

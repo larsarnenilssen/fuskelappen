@@ -113,13 +113,40 @@ function lesListe(el: HTMLElement): Punkt[] {
   });
 }
 
+/** Punktum til slutt i en tittel fjernes, men ikke etter forkortelser som «mv.», «m.m.» og «osv.». */
+function utenSluttpunktum(t: string): string {
+  return /(?:^|[\s(])(?:mv|m\.\s?m|m\.\s?v|bl\.\s?a|o\.\s?l|osb|osv|jf|nr|kap|pkt|bokst)\.$/i.test(t) ? t : t.replace(/\.$/, '');
+}
+
+/**
+ * Paragraftittelen slik appen viser den, så alle dokumentene ser like ut (eier 02.10.2026). Eldre lover har tittelen i
+ * parentes med punktum etter («(habilitetskrav).»). Da fjernes parentesen, og første bokstav blir stor
+ * («Habilitetskrav»). Punktum til slutt fjernes, men ikke etter forkortelser («Opplæring i punktskrift m.m.»).
+ */
+export function ryddTittel(tekst: string): string {
+  const t = tekst.replace(/\s+/g, ' ').trim();
+  const m = /^\(([^()]*(?:\([^()]*\)[^()]*)*)\)\.?$/.exec(t);
+  if (!m) return utenSluttpunktum(t);
+  const inni = utenSluttpunktum((m[1] as string).trim());
+  return inni.charAt(0).toLocaleUpperCase('nb') + inni.slice(1);
+}
+
+/**
+ * Overskriften på et kapittel eller avsnitt slik appen viser den: «Kapittel II. Om ugildhet.» blir «Kapittel II Om
+ * ugildhet», som i opplæringslova. Avsnitt som «I. Fellesreglar» beholder punktumet etter nummeret.
+ */
+export function ryddOverskrift(tekst: string): string {
+  const t = tekst.replace(/\s+/g, ' ').trim().replace(/^(Kapittel\s+(?:\d+(?:\s?[A-Z])?|[IVXLC]+))\.\s+/, '$1 ');
+  return utenSluttpunktum(t);
+}
+
 function lesParagraf(el: HTMLElement): Paragraf {
   const navn = el.getAttribute('data-name') ?? '';
   const hode = el.childNodes.filter(erElement).find((e) => klasse(e, 'legalArticleHeader'));
   const p: Paragraf = {
     nr: navn.replace(/^§\s*/, ''),
     visNr: (hode?.querySelector('.legalArticleValue')?.text ?? navn).replace(/\s+/g, ' ').trim(),
-    tittel: (hode?.querySelector('.legalArticleTitle')?.text ?? '').replace(/\s+/g, ' ').trim(),
+    tittel: ryddTittel(hode?.querySelector('.legalArticleTitle')?.text ?? ''),
     ledd: [],
     endringer: [],
     fotnoter: [],
@@ -162,7 +189,7 @@ function lesSeksjon(el: HTMLElement, utvalg: ReadonlySet<string> | null, funnet:
   const id = el.getAttribute('data-name') ?? el.getAttribute('id') ?? '';
   const barn = el.childNodes.filter(erElement);
   const hode = barn.find((e) => overskrift.test(tag(e)));
-  const tekst = (hode?.text ?? '').replace(/\s+/g, ' ').trim();
+  const tekst = ryddOverskrift(hode?.text ?? '');
   const { type, nr } = tolkOverskrift(id, tekst);
   if (type === 'kapittel' && nr !== null) funnet.add(nr);
   const med = utvalg === null || iUtvalg || (type === 'kapittel' && nr !== null && utvalg.has(nr));

@@ -23,7 +23,7 @@
    "id": "kapII",
    "type": "kapittel",
    "nr": "II",
-   "overskrift": "Kapittel II. Om ugildhet.",
+   "overskrift": "Kapittel II Om ugildhet",
    "merknader": [
     [
      "Overskriften endret ved lov ",
@@ -44,7 +44,7 @@
     {
      "nr": "6",
      "visNr": "§ 6",
-     "tittel": "(habilitetskrav).",
+     "tittel": "Habilitetskrav",
      "ledd": [
       {
        "tekst": [
@@ -191,7 +191,7 @@
     {
      "nr": "7",
      "visNr": "§ 7",
-     "tittel": "(foreløpig avgjørelse).",
+     "tittel": "Foreløpig avgjørelse",
      "ledd": [
       {
        "tekst": [
@@ -205,7 +205,7 @@
     {
      "nr": "8",
      "visNr": "§ 8",
-     "tittel": "(avgjørelse av habilitetsspørsmålet).",
+     "tittel": "Avgjørelse av habilitetsspørsmålet",
      "ledd": [
       {
        "tekst": [
@@ -243,7 +243,7 @@
     {
      "nr": "9",
      "visNr": "§ 9",
-     "tittel": "(oppnevning av stedfortreder).",
+     "tittel": "Oppnevning av stedfortreder",
      "ledd": [
       {
        "tekst": [
@@ -271,7 +271,7 @@
     {
      "nr": "10",
      "visNr": "§ 10",
-     "tittel": "(hvem habilitetsbestemmelsene gjelder for).",
+     "tittel": "Hvem habilitetsbestemmelsene gjelder for",
      "ledd": [
       {
        "tekst": [
@@ -312,14 +312,14 @@
    "id": "kapIII",
    "type": "kapittel",
    "nr": "III",
-   "overskrift": "Kapittel III. Almindelige regler om saksbehandlingen.",
+   "overskrift": "Kapittel III Almindelige regler om saksbehandlingen",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
     {
      "nr": "11",
      "visNr": "§ 11",
-     "tittel": "(veiledningsplikt).",
+     "tittel": "Veiledningsplikt",
      "ledd": [
       {
        "tekst": [
@@ -389,7 +389,7 @@
     {
      "nr": "11a",
      "visNr": "§ 11 a",
-     "tittel": "(saksbehandlingstid, foreløpig svar).",
+     "tittel": "Saksbehandlingstid, foreløpig svar",
      "ledd": [
       {
        "tekst": [
@@ -432,7 +432,7 @@
     {
      "nr": "11b",
      "visNr": "§ 11 b",
-     "tittel": "(adgang for Kongen til å fastsette frister)",
+     "tittel": "Adgang for Kongen til å fastsette frister",
      "ledd": [
       {
        "tekst": [
@@ -460,7 +460,7 @@
     {
      "nr": "11c",
      "visNr": "§ 11 c",
-     "tittel": "(adgang for Kongen til å gi regler om nemnder).",
+     "tittel": "Adgang for Kongen til å gi regler om nemnder",
      "ledd": [
       {
        "tekst": [
@@ -508,7 +508,7 @@
     {
      "nr": "11d",
      "visNr": "§ 11 d",
-     "tittel": "(muntlige konferanser og nedtegning av opplysninger).",
+     "tittel": "Muntlige konferanser og nedtegning av opplysninger",
      "ledd": [
       {
        "tekst": [
@@ -556,7 +556,7 @@
     {
      "nr": "11e",
      "visNr": "§ 11 e",
-     "tittel": "(Opphevet)",
+     "tittel": "Opphevet",
      "ledd": [],
      "endringer": [
       [
@@ -588,7 +588,7 @@
     {
      "nr": "12",
      "visNr": "§ 12",
-     "tittel": "(advokat eller annen fullmektig).",
+     "tittel": "Advokat eller annen fullmektig",
      "ledd": [
       {
        "tekst": [
@@ -646,7 +646,7 @@
     {
      "nr": "13",
      "visNr": "§ 13",
-     "tittel": "(taushetsplikt).",
+     "tittel": "Taushetsplikt",
      "ledd": [
       {
        "tekst": [
@@ -711,7 +711,7 @@
     {
      "nr": "13a",
      "visNr": "§ 13 a",
-     "tittel": "(begrensninger i taushetsplikten når det ikke er behov for beskyttelse).",
+     "tittel": "Begrensninger i taushetsplikten når det ikke er behov for beskyttelse",
      "ledd": [
       {
        "tekst": [
@@ -797,7 +797,7 @@
     {
      "nr": "13b",
      "visNr": "§ 13 b",
-     "tittel": "(begrensninger av taushetsplikten ut fra private eller offentlige interesser).",
+     "tittel": "Begrensninger av taushetsplikten ut fra private eller offentlige interesser",
      "ledd": [
       {
        "tekst": [
@@ -973,7 +973,7 @@
     {
      "nr": "13c",
      "visNr": "§ 13 c",
-     "tittel": "(informasjon om taushetsplikt, oppbevaring av opplysninger undergitt taushetsplikt).",
+     "tittel": "Informasjon om taushetsplikt, oppbevaring av opplysninger undergitt taushetsplikt",
      "ledd": [
       {
        "tekst": [
@@ -1011,7 +1011,7 @@
     {
      "nr": "13d",
      "visNr": "§ 13 d",
-     "tittel": "(opplysninger til bruk for forsking).",
+     "tittel": "Opplysninger til bruk for forsking",
      "ledd": [
       {
        "tekst": [
@@ -1055,7 +1055,7 @@
     {
      "nr": "13e",
      "visNr": "§ 13 e",
-     "tittel": "(forskeres taushetsplikt).",
+     "tittel": "Forskeres taushetsplikt",
      "ledd": [
       {
        "tekst": [
@@ -1159,7 +1159,7 @@
     {
      "nr": "13f",
      "visNr": "§ 13 f",
-     "tittel": "(bestemmelser om taushets- og opplysningsplikt m.m. i andre lover).",
+     "tittel": "Bestemmelser om taushets- og opplysningsplikt m.m. i andre lover",
      "ledd": [
       {
        "tekst": [
@@ -1197,7 +1197,7 @@
     {
      "nr": "13g",
      "visNr": "§ 13 g",
-     "tittel": "(Forskrift om adgang til informasjonsdeling og annen behandling av taushetsbelagte opplysninger)",
+     "tittel": "Forskrift om adgang til informasjonsdeling og annen behandling av taushetsbelagte opplysninger",
      "ledd": [
       {
        "tekst": [
@@ -1237,7 +1237,7 @@
     {
      "nr": "14",
      "visNr": "§ 14",
-     "tittel": "(saksforberedelse og klage ved pålegg om å gi opplysninger).",
+     "tittel": "Saksforberedelse og klage ved pålegg om å gi opplysninger",
      "ledd": [
       {
        "tekst": [
@@ -1270,7 +1270,7 @@
     {
      "nr": "15",
      "visNr": "§ 15",
-     "tittel": "(fremgangsmåten ved gransking o.l.).",
+     "tittel": "Fremgangsmåten ved gransking o.l.",
      "ledd": [
       {
        "tekst": [
@@ -1323,7 +1323,7 @@
     {
      "nr": "15a",
      "visNr": "§ 15 a",
-     "tittel": "(elektronisk kommunikasjon)",
+     "tittel": "Elektronisk kommunikasjon",
      "ledd": [
       {
        "tekst": [
@@ -1452,14 +1452,14 @@
    "id": "kapIV",
    "type": "kapittel",
    "nr": "IV",
-   "overskrift": "Kapittel IV. Om saksforberedelse ved enkeltvedtak.",
+   "overskrift": "Kapittel IV Om saksforberedelse ved enkeltvedtak",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
     {
      "nr": "16",
      "visNr": "§ 16",
-     "tittel": "(forhåndsvarsling).",
+     "tittel": "Forhåndsvarsling",
      "ledd": [
       {
        "tekst": [
@@ -1564,7 +1564,7 @@
     {
      "nr": "17",
      "visNr": "§ 17",
-     "tittel": "(forvaltningsorganets utrednings- og informasjonsplikt).",
+     "tittel": "Forvaltningsorganets utrednings- og informasjonsplikt",
      "ledd": [
       {
        "tekst": [
@@ -1695,7 +1695,7 @@
     {
      "nr": "18",
      "visNr": "§ 18",
-     "tittel": "(partenes adgang til å gjøre seg kjent med sakens dokumenter).",
+     "tittel": "Partenes adgang til å gjøre seg kjent med sakens dokumenter",
      "ledd": [
       {
        "tekst": [
@@ -1785,7 +1785,7 @@
     {
      "nr": "18a",
      "visNr": "§ 18 a",
-     "tittel": "(dokument utarbeidet for egen saksforberedelse).",
+     "tittel": "Dokument utarbeidet for egen saksforberedelse",
      "ledd": [
       {
        "tekst": [
@@ -1818,7 +1818,7 @@
     {
      "nr": "18b",
      "visNr": "§ 18 b",
-     "tittel": "(dokumenter innhentet utenfra for den interne saksforberedelsen).",
+     "tittel": "Dokumenter innhentet utenfra for den interne saksforberedelsen",
      "ledd": [
       {
        "tekst": [
@@ -1856,7 +1856,7 @@
     {
      "nr": "18c",
      "visNr": "§ 18 c",
-     "tittel": "(innsyn i faktiske opplysninger mv.).",
+     "tittel": "Innsyn i faktiske opplysninger mv.",
      "ledd": [
       {
        "tekst": [
@@ -1896,7 +1896,7 @@
     {
      "nr": "18d",
      "visNr": "§ 18 d",
-     "tittel": "(innsyn i interne dokumenter hos kommunene og fylkeskommunene).",
+     "tittel": "Innsyn i interne dokumenter hos kommunene og fylkeskommunene",
      "ledd": [
       {
        "tekst": [
@@ -2037,7 +2037,7 @@
     {
      "nr": "19",
      "visNr": "§ 19",
-     "tittel": "(innskrenket adgang til visse slags opplysninger).",
+     "tittel": "Innskrenket adgang til visse slags opplysninger",
      "ledd": [
       {
        "tekst": [
@@ -2186,7 +2186,7 @@
     {
      "nr": "20",
      "visNr": "§ 20",
-     "tittel": "(gjennomsyn og utlån av saksdokumenter).",
+     "tittel": "Gjennomsyn og utlån av saksdokumenter",
      "ledd": [
       {
        "tekst": [
@@ -2296,7 +2296,7 @@
     {
      "nr": "21",
      "visNr": "§ 21",
-     "tittel": "(klage over avslag på krav om å få gjøre seg kjent med et dokument).",
+     "tittel": "Klage over avslag på krav om å få gjøre seg kjent med et dokument",
      "ledd": [
       {
        "tekst": [
@@ -2370,7 +2370,7 @@
     {
      "nr": "22",
      "visNr": "§ 22",
-     "tittel": "(Opphevet)",
+     "tittel": "Opphevet",
      "ledd": [],
      "endringer": [
       [
@@ -2390,14 +2390,14 @@
    "id": "kapV",
    "type": "kapittel",
    "nr": "V",
-   "overskrift": "Kapittel V. Om vedtaket.",
+   "overskrift": "Kapittel V Om vedtaket",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
     {
      "nr": "23",
      "visNr": "§ 23",
-     "tittel": "(formene for enkeltvedtak).",
+     "tittel": "Formene for enkeltvedtak",
      "ledd": [
       {
        "tekst": [
@@ -2411,7 +2411,7 @@
     {
      "nr": "24",
      "visNr": "§ 24",
-     "tittel": "(når enkeltvedtak skal grunngis).",
+     "tittel": "Når enkeltvedtak skal grunngis",
      "ledd": [
       {
        "tekst": [
@@ -2504,7 +2504,7 @@
     {
      "nr": "25",
      "visNr": "§ 25",
-     "tittel": "(begrunnelsens innhold).",
+     "tittel": "Begrunnelsens innhold",
      "ledd": [
       {
        "tekst": [
@@ -2547,7 +2547,7 @@
     {
      "nr": "26",
      "visNr": "§ 26",
-     "tittel": "(Opphevet)",
+     "tittel": "Opphevet",
      "ledd": [],
      "endringer": [
       [
@@ -2564,7 +2564,7 @@
     {
      "nr": "27",
      "visNr": "§ 27",
-     "tittel": "(underretning om vedtaket).",
+     "tittel": "Underretning om vedtaket",
      "ledd": [
       {
        "tekst": [
@@ -2768,7 +2768,7 @@
     {
      "nr": "27b",
      "visNr": "§ 27 b",
-     "tittel": "(vilkår for å reise sak for domstolene om vedtaket).",
+     "tittel": "Vilkår for å reise sak for domstolene om vedtaket",
      "ledd": [
       {
        "tekst": [
@@ -2804,14 +2804,14 @@
    "id": "kapVI",
    "type": "kapittel",
    "nr": "VI",
-   "overskrift": "Kapittel VI. Om klage og omgjøring.",
+   "overskrift": "Kapittel VI Om klage og omgjøring",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
     {
      "nr": "28",
      "visNr": "§ 28",
-     "tittel": "(vedtak som kan påklages, klageinstans).",
+     "tittel": "Vedtak som kan påklages, klageinstans",
      "ledd": [
       {
        "tekst": [
@@ -2946,7 +2946,7 @@
     {
      "nr": "29",
      "visNr": "§ 29",
-     "tittel": "(klagefrist).",
+     "tittel": "Klagefrist",
      "ledd": [
       {
        "tekst": [
@@ -2981,7 +2981,7 @@
     {
      "nr": "30",
      "visNr": "§ 30",
-     "tittel": "(når klagen må være fremsatt).",
+     "tittel": "Når klagen må være fremsatt",
      "ledd": [
       {
        "tekst": [
@@ -3044,7 +3044,7 @@
     {
      "nr": "31",
      "visNr": "§ 31",
-     "tittel": "(oversitting av klagefristen).",
+     "tittel": "Oversitting av klagefristen",
      "ledd": [
       {
        "tekst": [
@@ -3104,7 +3104,7 @@
     {
      "nr": "32",
      "visNr": "§ 32",
-     "tittel": "(klagens adressat, form og innhold).",
+     "tittel": "Klagens adressat, form og innhold",
      "ledd": [
       {
        "tekst": [
@@ -3200,7 +3200,7 @@
     {
      "nr": "33",
      "visNr": "§ 33",
-     "tittel": "(saksforberedelsen i klagesak).",
+     "tittel": "Saksforberedelsen i klagesak",
      "ledd": [
       {
        "tekst": [
@@ -3277,7 +3277,7 @@
     {
      "nr": "34",
      "visNr": "§ 34",
-     "tittel": "(klageinstansens kompetanse).",
+     "tittel": "Klageinstansens kompetanse",
      "ledd": [
       {
        "tekst": [
@@ -3351,7 +3351,7 @@
     {
      "nr": "35",
      "visNr": "§ 35",
-     "tittel": "(omgjøring av vedtak uten klage).",
+     "tittel": "Omgjøring av vedtak uten klage",
      "ledd": [
       {
        "tekst": [
@@ -3447,7 +3447,7 @@
     {
      "nr": "36",
      "visNr": "§ 36",
-     "tittel": "(sakskostnader).",
+     "tittel": "Sakskostnader",
      "ledd": [
       {
        "tekst": [

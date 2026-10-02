@@ -1,6 +1,9 @@
 // Dataene til Lov og forskrift (fase 3, avgjørelse 039): én JS-bit per dokument, som lastes første gang den trengs
 // og følger med når appen installeres, og en liten oversikt. Nye dokumenter i data/lovdata/ kommer med av seg selv.
 // Rene funksjoner for oppslag og søk står her, så de kan testes.
+import synonymerFil from '../../../content/sok/synonymer.yaml';
+import type { Synonymer } from '../../core/innhold/skjema.ts';
+import { lagOrdformer } from '../../core/sok/ordformer.ts';
 import { alleParagrafer, type Lovdokument, type Lovoversikt, type Paragraf, rentekst, type Seksjon } from './typer.ts';
 
 const filer = import.meta.glob<Lovdokument>('../../../data/lovdata/*.json', { import: 'default' });
@@ -59,13 +62,31 @@ export interface Treff {
 
 const soketekster = new WeakMap<Paragraf, string>();
 
+/** Formene et ord i søket letes etter med, så bokmål finner nynorsk og omvendt (src/core/sok/ordformer.ts). */
+const standardformer = lagOrdformer(synonymerFil as Synonymer);
+
+/** Første sted en av formene står i teksten, og hvor langt treffet går (til slutten av ordet). */
+function forsteTreff(tekst: string, former: readonly string[]): { start: number; slutt: number } | null {
+  let beste: { start: number; slutt: number } | null = null;
+  for (const f of former) {
+    const i = tekst.indexOf(f);
+    if (i < 0 || (beste && i >= beste.start)) continue;
+    let slutt = i + f.length;
+    while (slutt < tekst.length && /[\p{L}\p{N}]/u.test(tekst[slutt] as string)) slutt++;
+    beste = { start: i, slutt };
+  }
+  return beste;
+}
+
 /**
  * Paragrafene der alle ordene i søket står i nummeret, tittelen eller teksten, med et utdrag rundt det første treffet.
- * «§ 11-1» og «11-1» finner paragrafen med det nummeret først.
+ * Hvert ord letes etter i flere former, så et søk på bokmål finner nynorsk tekst og omvendt. «§ 11-1» og «11-1» finner
+ * paragrafen med det nummeret først.
  */
-export function sokIDokumenter(dokumenter: readonly Lovdokument[], sok: string): Treff[] {
+export function sokIDokumenter(dokumenter: readonly Lovdokument[], sok: string, ordformer: (ord: string) => string[] = standardformer): Treff[] {
   const ord = sok.toLowerCase().replace(/§/g, ' ').split(/\s+/).filter(Boolean);
   if (ord.length === 0) return [];
+  const former = ord.map(ordformer);
   const nummer = /^§?\s*(\d+[a-z]?(?:-\d+\s?[a-z]?)?)$/i.exec(sok.trim())?.[1]?.replace(/\s+/g, '').toLowerCase() ?? null;
   const eksakte: Treff[] = [];
   const andre: Treff[] = [];
@@ -76,18 +97,19 @@ export function sokIDokumenter(dokumenter: readonly Lovdokument[], sok: string):
         tekst = paragraftekst(paragraf);
         soketekster.set(paragraf, tekst);
       }
-      const alt = `${paragraf.visNr} ${paragraf.tittel} ${tekst}`.toLowerCase();
-      if (!ord.every((o) => alt.includes(o))) continue;
-      const forste = ord[0] as string;
-      const i = tekst.toLowerCase().indexOf(forste);
+      const hode = `${paragraf.visNr} ${paragraf.tittel}`.toLowerCase();
+      const liten = tekst.toLowerCase();
+      if (!former.every((f) => f.some((x) => hode.includes(x) || liten.includes(x)))) continue;
+      const forste = former[0] as string[];
+      const treff = forste.some((x) => hode.includes(x)) ? null : forsteTreff(liten, forste);
       let utdrag: Treff['utdrag'] = null;
-      if (i >= 0 && !`${paragraf.visNr} ${paragraf.tittel}`.toLowerCase().includes(forste)) {
-        const start = Math.max(0, tekst.lastIndexOf(' ', Math.max(0, i - 70)) + 1);
-        const slutt = Math.min(tekst.length, i + forste.length + 90);
+      if (treff) {
+        const start = Math.max(0, tekst.lastIndexOf(' ', Math.max(0, treff.start - 70)) + 1);
+        const slutt = Math.min(tekst.length, treff.slutt + 90);
         utdrag = {
-          for: `${start > 0 ? '…' : ''}${tekst.slice(start, i)}`,
-          treff: tekst.slice(i, i + forste.length),
-          etter: `${tekst.slice(i + forste.length, slutt)}${slutt < tekst.length ? '…' : ''}`,
+          for: `${start > 0 ? '…' : ''}${tekst.slice(start, treff.start)}`,
+          treff: tekst.slice(treff.start, treff.slutt),
+          etter: `${tekst.slice(treff.slutt, slutt)}${slutt < tekst.length ? '…' : ''}`,
         };
       }
       (nummer !== null && paragraf.nr.toLowerCase() === nummer ? eksakte : andre).push({ dokument, paragraf, seksjoner, utdrag });

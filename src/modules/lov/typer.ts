@@ -88,6 +88,8 @@ export interface Lovoversikt {
     utvalg: string[] | null;
     antallKapitler: number;
     antallParagrafer: number;
+    /** Numrene på paragrafene, så lenker til Lovdata andre steder i appen kan få en lenke til paragrafen i appen. */
+    paragrafer: string[];
   }[];
 }
 

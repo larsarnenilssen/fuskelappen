@@ -3,7 +3,7 @@
  "kilde": "forskrift-helse-miljo-skoler",
  "type": "forskrift",
  "tittel": "Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger",
- "korttittel": "Forskrift om helse og miljø i skoler",
+ "korttittel": "Helse og miljø i skoler",
  "malform": "nb",
  "refid": "forskrift/2023-03-28-449",
  "sistEndret": null,
@@ -17,7 +17,7 @@
    "id": "kap1",
    "type": "kapittel",
    "nr": "1",
-   "overskrift": "Kapittel 1. Innledende bestemmelser",
+   "overskrift": "Kapittel 1 Innledende bestemmelser",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
@@ -141,7 +141,7 @@
    "id": "kap2",
    "type": "kapittel",
    "nr": "2",
-   "overskrift": "Kapittel 2. Miljø- og helsekrav til virksomheter",
+   "overskrift": "Kapittel 2 Miljø- og helsekrav til virksomheter",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [
@@ -350,7 +350,7 @@
    "id": "kap3",
    "type": "kapittel",
    "nr": "3",
-   "overskrift": "Kapittel 3. Godkjenning, internkontroll, tilsyn og klage mv.",
+   "overskrift": "Kapittel 3 Godkjenning, internkontroll, tilsyn og klage mv.",
    "merknader": [],
    "seksjoner": [],
    "paragrafer": [

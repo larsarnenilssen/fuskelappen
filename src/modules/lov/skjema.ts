@@ -131,6 +131,7 @@ export const lovoversiktSkjema: z.ZodType<Lovoversikt> = z
           utvalg: z.array(z.string()).nullable(),
           antallKapitler: z.number().int().min(0),
           antallParagrafer: z.number().int().min(1),
+          paragrafer: z.array(z.string().min(1)),
         })
         .strict(),
     ),

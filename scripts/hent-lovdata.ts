@@ -156,6 +156,7 @@ export function lagOversikt(dokumenter: readonly Lovdokument[]): Lovoversikt {
       utvalg: d.utvalg,
       antallKapitler: alleSeksjoner(d.seksjoner).filter((s) => s.type === 'kapittel').length,
       antallParagrafer: alleParagrafer(d.seksjoner).length,
+      paragrafer: alleParagrafer(d.seksjoner).map(({ paragraf }) => paragraf.nr),
     })),
   };
 }
