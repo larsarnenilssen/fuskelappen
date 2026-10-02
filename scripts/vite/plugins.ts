@@ -3,7 +3,8 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
 import { Innholdsfeil, lesFil } from '../innhold/last.ts';
-import { beregnFagroller, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import { beregnFagroller, byggStruktur, byggTilbud, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 
@@ -89,14 +90,8 @@ export function fagrollerPlugin(rot: string): Plugin {
     },
     load(lastId) {
       if (lastId !== '\0' + id) return null;
-      const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
-      const mappe = join(rot, 'data/udir');
-      const fordelinger = existsSync(mappe)
-        ? readdirSync(mappe)
-            .filter((f) => /^fagfordeling-\d{4}-\d{4}\.json$/.test(f))
-            .map((f) => JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Fagfordeling)
-        : [];
-      const fordeling = velgFordeling(fordelinger, new Date().toISOString().slice(0, 10));
+      const indeks = lesFagindeks(rot);
+      const fordeling = lesFordeling(rot);
       const roller = Object.fromEntries([...beregnFagroller(indeks, fordeling)].sort(([a], [b]) => a.localeCompare(b)));
       // Titlene på læreplanene, til grupperingen i fagsøket. «Læreplan i fremmedspråk» → «Fremmedspråk».
       const planer = join(rot, 'data/grep/laereplaner');
@@ -111,6 +106,49 @@ export function fagrollerPlugin(rot: string): Plugin {
         }
       }
       return `export default ${JSON.stringify(roller)};\nexport const laereplaner = ${JSON.stringify(titler)};`;
+    },
+  };
+}
+
+const lesFagindeks = (rot: string) => JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
+
+/** Fag- og timefordelingen (Udir-1) som gjelder når appen bygges. */
+function lesFordeling(rot: string): Fagfordeling | null {
+  const mappe = join(rot, 'data/udir');
+  const fordelinger = existsSync(mappe)
+    ? readdirSync(mappe)
+        .filter((f) => /^fagfordeling-\d{4}-\d{4}\.json$/.test(f))
+        .map((f) => JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Fagfordeling)
+    : [];
+  return velgFordeling(fordelinger, new Date().toISOString().slice(0, 10));
+}
+
+/**
+ * Tilbudene i videregående til modulen Opplæringsløp (pakke 5, avgjørelse 035): programmene med inngang, og hvert
+ * programområde med fag, timer og plasser etter rundskrivet Udir-1. Regnes ut når appen bygges, fordi det tar om
+ * lag ett sekund. Appen laster modulen når brukeren åpner Opplæringsløp eller et fagark.
+ */
+export function tilbudPlugin(rot: string): Plugin {
+  const id = 'virtual:tilbud';
+  return {
+    name: 'fuskelappen:tilbud',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const indeks = lesFagindeks(rot);
+      const fordeling = lesFordeling(rot);
+      const relasjoner = join(rot, 'data/vigo/fagrelasjoner.json');
+      const fagBygger = existsSync(relasjoner) ? (JSON.parse(readFileSync(relasjoner, 'utf8')) as Fagrelasjoner).byggerPaa : {};
+      const tilbud: Record<string, unknown> = {};
+      for (const kode of Object.keys(indeks.programomrader).sort()) {
+        // Programområdet står i fagindeksen, som appen har fra før.
+        const { programomrade: _po, ...resten } = byggTilbud(kode, indeks, fordeling, fagBygger);
+        tilbud[kode] = resten;
+      }
+      const data = { skolear: fordeling?.skolear ?? null, struktur: byggStruktur(indeks), tilbud };
+      return `export default ${JSON.stringify(data)};`;
     },
   };
 }

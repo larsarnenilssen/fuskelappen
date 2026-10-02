@@ -19,6 +19,7 @@ import { overforSkjema } from '../../arbeidstid/kontekst.ts';
 import { hentBegreper } from '../../begreper/innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import { tilbudRute } from '../../opplaeringslop/data.ts';
 import type { SideProps } from '../../typer.ts';
 import { lastFagindeks, lastFagrelasjoner, lastLaereplan } from '../data.ts';
 import { htmlSpraak, programmerFor, programSammendrag, udirLenke } from '../oppslag.ts';
@@ -489,10 +490,15 @@ export default function Fagside({ parametre }: SideProps) {
           <p class="liten">
             <a href="#/begreper/programomrade">{t('fag.side.omProgramomrade')}</a>
           </p>
+          {/* Hvert programområde lenker til tilbudet i Opplæringsløp (pakke 5, avgjørelse 035). */}
           <ul>
             {fag.po.map((p) => {
               const po = indeks.programomrader[p];
-              return <li key={p}>{po ? `${po.navn[malform]} (${p.replace(/-+$/, '')}, ${trinnTekst(t, po.trinn)})` : p}</li>;
+              return (
+                <li key={p}>
+                  {po ? <a href={`#${tilbudRute(po.program, p)}`}>{`${po.navn[malform]} (${p.replace(/-+$/, '')}, ${trinnTekst(t, po.trinn)})`}</a> : p}
+                </li>
+              );
             })}
           </ul>
         </Seksjon>

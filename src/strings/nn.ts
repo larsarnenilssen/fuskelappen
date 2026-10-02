@@ -2,6 +2,7 @@
 import type { Tekster } from './typer.ts';
 import { arbeidstidNn } from './moduler/arbeidstid.nn.ts';
 import { fagNn } from './moduler/fag.nn.ts';
+import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 
 export const nn: Tekster = {
   app: {
@@ -60,6 +61,7 @@ export const nn: Tekster = {
       begrep: 'Omgrep',
       regel: 'Regel',
       fag: 'Fag',
+      tilbud: 'Tilbod',
       side: 'Side',
     },
   },
@@ -245,6 +247,10 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    opplaeringslop: {
+      navn: 'Opplæringsløp',
+      beskrivelse: 'Utdanningsprogram, tilbod på kvart trinn, og fag og timar i kvart tilbod.',
+    },
     begreper: {
       navn: 'Omgrep',
       beskrivelse: 'Forklaringar av sentrale omgrep i regelverket.',
@@ -260,6 +266,7 @@ export const nn: Tekster = {
   },
   arbeidstid: arbeidstidNn,
   fag: fagNn,
+  opplaeringslop: opplaeringslopNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

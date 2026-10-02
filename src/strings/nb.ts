@@ -2,6 +2,7 @@
 // Plassholdere skrives {navn} og fylles inn av t().
 import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
+import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 
 export const nb = {
   app: {
@@ -60,6 +61,7 @@ export const nb = {
       begrep: 'Begrep',
       regel: 'Regel',
       fag: 'Fag',
+      tilbud: 'Tilbud',
       side: 'Side',
     },
   },
@@ -245,6 +247,10 @@ export const nb = {
     offlineKlar: 'Appen kan nå brukes uten nett.',
   },
   moduler: {
+    opplaeringslop: {
+      navn: 'Opplæringsløp',
+      beskrivelse: 'Utdanningsprogram, tilbud på hvert trinn, og fag og timer i hvert tilbud.',
+    },
     begreper: {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper i regelverket.',
@@ -260,6 +266,7 @@ export const nb = {
   },
   arbeidstid: arbeidstidNb,
   fag: fagNb,
+  opplaeringslop: opplaeringslopNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',
