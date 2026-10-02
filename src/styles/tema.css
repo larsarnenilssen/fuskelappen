@@ -11,6 +11,7 @@
   --farge-tekst: var(--p-blekk);
   --farge-tekst-dempet: var(--p-blekk-dempet);
   --farge-linje: var(--p-linje-lys);
+  --farge-kant: var(--p-linje-lys);
   --farge-merke: var(--p-blaa-700);
   --farge-merke-tekst: var(--p-hvit);
   --farge-lenke: var(--p-blaa-700);
@@ -34,6 +35,12 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-700);
   --diagram-over: var(--p-roed-700);
+  --diagram-tekst-undervisning: var(--p-blaa-700);
+  --diagram-tekst-annen: var(--p-groenn-700);
+  --diagram-tekst-motetid: var(--p-rav-700);
+  --diagram-tekst-planlegging: var(--p-turkis-700);
+  --diagram-tekst-funksjon: var(--p-lilla-700);
+  --diagram-tekst-selv: var(--p-graa-600);
   --fagtype-fellesfag: var(--p-blaa-700);
   --fagtype-felles: var(--p-groenn-700);
   --fagtype-valgfritt: var(--p-lilla-700);
@@ -49,6 +56,7 @@
   --farge-tekst: var(--p-maane);
   --farge-tekst-dempet: var(--p-maane-dempet);
   --farge-linje: var(--p-linje-mork);
+  --farge-kant: var(--p-kant-mork);
   --farge-merke: var(--p-blaa-300);
   --farge-merke-tekst: var(--p-blaa-950);
   --farge-lenke: var(--p-blaa-300);
@@ -72,6 +80,12 @@
   --diagram-etikett: var(--p-hvit);
   --diagram-variabel: var(--p-rav-500);
   --diagram-over: var(--p-roed-500);
+  --diagram-tekst-undervisning: var(--p-blaa-300);
+  --diagram-tekst-annen: var(--p-groenn-300);
+  --diagram-tekst-motetid: var(--p-rav-300);
+  --diagram-tekst-planlegging: var(--p-turkis-300);
+  --diagram-tekst-funksjon: var(--p-lilla-300);
+  --diagram-tekst-selv: var(--p-graa-400);
   --fagtype-fellesfag: var(--p-blaa-300);
   --fagtype-felles: var(--p-groenn-300);
   --fagtype-valgfritt: var(--p-lilla-300);
@@ -88,6 +102,7 @@
     --farge-tekst: var(--p-maane);
     --farge-tekst-dempet: var(--p-maane-dempet);
     --farge-linje: var(--p-linje-mork);
+    --farge-kant: var(--p-kant-mork);
     --farge-merke: var(--p-blaa-300);
     --farge-merke-tekst: var(--p-blaa-950);
     --farge-lenke: var(--p-blaa-300);
@@ -111,6 +126,12 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-500);
     --diagram-over: var(--p-roed-500);
+    --diagram-tekst-undervisning: var(--p-blaa-300);
+    --diagram-tekst-annen: var(--p-groenn-300);
+    --diagram-tekst-motetid: var(--p-rav-300);
+    --diagram-tekst-planlegging: var(--p-turkis-300);
+    --diagram-tekst-funksjon: var(--p-lilla-300);
+    --diagram-tekst-selv: var(--p-graa-400);
     --fagtype-fellesfag: var(--p-blaa-300);
     --fagtype-felles: var(--p-groenn-300);
     --fagtype-valgfritt: var(--p-lilla-300);
@@ -131,6 +152,7 @@
     --farge-tekst: var(--p-blekk);
     --farge-tekst-dempet: var(--p-blekk-dempet);
     --farge-linje: var(--p-linje-lys);
+    --farge-kant: var(--p-linje-lys);
     --farge-merke: var(--p-blaa-700);
     --farge-merke-tekst: var(--p-hvit);
     --farge-lenke: var(--p-blaa-700);
@@ -154,6 +176,12 @@
     --diagram-etikett: var(--p-hvit);
     --diagram-variabel: var(--p-rav-700);
     --diagram-over: var(--p-roed-700);
+    --diagram-tekst-undervisning: var(--p-blaa-700);
+    --diagram-tekst-annen: var(--p-groenn-700);
+    --diagram-tekst-motetid: var(--p-rav-700);
+    --diagram-tekst-planlegging: var(--p-turkis-700);
+    --diagram-tekst-funksjon: var(--p-lilla-700);
+    --diagram-tekst-selv: var(--p-graa-600);
     --fagtype-fellesfag: var(--p-blaa-700);
     --fagtype-felles: var(--p-groenn-700);
     --fagtype-valgfritt: var(--p-lilla-700);

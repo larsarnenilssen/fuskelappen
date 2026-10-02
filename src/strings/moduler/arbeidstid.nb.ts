@@ -4,6 +4,13 @@
 
 export const arbeidstidNb = {
   tittel: 'Arbeidstid',
+  skjema: {
+    stilling: 'Stilling',
+    vikariat: 'Vikariat',
+    undervisning: 'Undervisning',
+    tid: 'Tid på skolen',
+    lonn: 'Lønn',
+  },
   kalkulatorer: {
     tittel: 'Kalkulatorer',
     flere: 'Flere kalkulatorer',
@@ -34,7 +41,6 @@ export const arbeidstidNb = {
     skrivUt: 'Skriv ut {navn} eller lagre som PDF',
     skrivUtKort: 'Skriv ut eller lagre som PDF',
     ukerHalvaar: 'F.eks. for fag som bare går et halvår.',
-    kortLonn: 'Lønn og feriepenger',
     nyttVindu: 'Åpne {navn} i nytt vindu',
     nyttVinduKort: 'Åpne i nytt vindu',
     gruppe: 'Fag {nr}',

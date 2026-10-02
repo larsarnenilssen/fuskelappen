@@ -42,13 +42,14 @@ test.describe('arbeidstid', () => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     const kort = page.locator('[data-gruppe="1"]');
     const manuell = kort.getByRole('button', { name: 'Skriv inn årsramme selv' });
-    const for_ = await manuell.boundingBox();
+    // Målt fra toppen av kortet, så det ikke spiller inn om siden ruller når feltet får fokus.
+    const fraKort = async (l: Locator) => ((await l.boundingBox())?.y ?? 0) - ((await kort.boundingBox())?.y ?? 0);
+    const for_ = await fraKort(manuell);
     await manuell.click();
     const tilbake = kort.getByRole('button', { name: 'Søk i vedlegg 1' });
     // Knappen står på linjen med etiketten, til høyre, som «Skriv inn årsramme selv».
     await expect(kort.locator('.etikettrad', { has: page.getByRole('button', { name: 'Søk i vedlegg 1' }) })).toContainText('Årsramme (60 min)');
-    const etter = await tilbake.boundingBox();
-    expect(Math.abs((etter?.y ?? 0) - (for_?.y ?? 0))).toBeLessThan(8);
+    expect(Math.abs((await fraKort(tilbake)) - for_)).toBeLessThan(8);
     await tilbake.click();
     await expect(kort.getByRole('button', { name: 'Skriv inn årsramme selv' })).toBeVisible();
   });
@@ -680,7 +681,7 @@ test.describe('arbeidstid', () => {
     await expect(page.getByRole('img', { name: /Kontaktlærer 25 %.*stillingen på 100 %/ })).toBeVisible();
   });
 
-  test('fjern-knappen står på linjen med navnet, og tillegget på linjen med vippen', async ({ page }) => {
+  test('fjern-knappen står på rammen over navnet, som på fagkortet, og tillegget på linjen med vippen', async ({ page }) => {
     await aapne(page, '/arbeidstid/arbeidsplan');
     await page.getByRole('switch', { name: 'Regn ut lønn' }).check();
     await page.getByRole('switch', { name: 'Funksjon 1: Tillegg i lønnen' }).check();
@@ -688,9 +689,10 @@ test.describe('arbeidstid', () => {
       const b = await l.boundingBox();
       return b ? b.y + b.height / 2 : NaN;
     };
-    const navn = await midt(page.getByLabel('Funksjon 1: Navn'));
+    // Funksjonen er et kort som fagene (eier 02.10.2026): fjern-knappen står på rammen, over navnet.
+    const navn = await page.getByLabel('Funksjon 1: Navn').boundingBox();
     const fjern = await midt(page.getByRole('button', { name: 'Fjern funksjon 1' }));
-    expect(Math.abs(navn - fjern)).toBeLessThan(4);
+    expect(fjern).toBeLessThan(navn?.y ?? 0);
     const vippe = await midt(page.locator('.funksjon-tillegg .vippe'));
     const belop = page.getByLabel('Tillegg per år, funksjon 1');
     expect(Math.abs(vippe - (await midt(belop)))).toBeLessThan(12);

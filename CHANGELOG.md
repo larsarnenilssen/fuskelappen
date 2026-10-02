@@ -4,6 +4,27 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.16.0] – 2026-10-02
+
+### Endret
+
+- **Nytt design for kalkulatorene:** Arbeidsplan, Beskjeftigelse, Vikar og Overtid har skjemaet i deler, f.eks. Stilling, Undervisning, Funksjoner, Tid på skolen og Lønn.
+  - Hver del har kant og overskrift i fargen den har i diagrammet, og summen står i overskriften.
+  - Delene kan legges sammen.
+  - Fag og funksjoner er egne små kort med luft mellom. Fagene har fargen de har i stolpen for beskjeftigelse.
+  - «Legg til funksjon» er en knapp som «Legg til fag».
+- **Arbeidsplan:** Livsfasetiltaket står under Stilling, og «Regn ut lønn» står i overskriften på delen Lønn, ikke sammen med møtetid og planleggingsdager.
+- **Mørk visning:** Kantene på kortene er tydeligere mot bakgrunnen.
+- **Fagsøket:**
+  - Hele overskriftsraden åpner og lukker en gruppe, ikke bare teksten.
+  - Når du har rullet langt ned, kommer knappen «Til toppen» nede til høyre.
+
+### Rettet
+
+- **Stor skrift på smal skjerm:** Tekst og beløp går ikke lenger utenfor kortene. Etiketten står under bryteren når det er trangt, og beløpet får hele linjen.
+- **Fagarket:** Det er like mye luft mellom «Privatister» og «Vurderingsordning i læreplanen» som mellom «Elever» og «Privatister».
+- **Fagarket for yrkesfaglig fordypning:** Forklaringen viste HTML-kode (`<p>`). Nå står den som vanlig tekst i avsnitt, og det er luft før «Vurderingsordning».
+
 ## [0.15.0] – 2026-10-01
 
 ### Endret

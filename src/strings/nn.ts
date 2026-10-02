@@ -11,6 +11,7 @@ export const nn: Tekster = {
     lasterInn: 'Lastar inn …',
     lastefeil: 'Sida kunne ikkje lastast. Sjekk nettsambandet og prøv igjen.',
     provIgjen: 'Prøv igjen',
+    tilToppen: 'Til toppen',
     tittelMal: '{side} – {app}',
   },
   nav: {
