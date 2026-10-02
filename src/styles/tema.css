@@ -12,6 +12,8 @@
   --farge-tekst-dempet: var(--p-blekk-dempet);
   --farge-linje: var(--p-linje-lys);
   --farge-kant: var(--p-linje-lys);
+  --farge-aksent: var(--p-lapp-gul);
+  --farge-aksent-tekst: var(--p-blaa-900);
   --farge-merke: var(--p-blaa-700);
   --farge-merke-tekst: var(--p-hvit);
   --farge-lenke: var(--p-blaa-700);
@@ -57,6 +59,8 @@
   --farge-tekst-dempet: var(--p-maane-dempet);
   --farge-linje: var(--p-linje-mork);
   --farge-kant: var(--p-kant-mork);
+  --farge-aksent: var(--p-lapp-gul);
+  --farge-aksent-tekst: var(--p-blaa-900);
   --farge-merke: var(--p-blaa-300);
   --farge-merke-tekst: var(--p-blaa-950);
   --farge-lenke: var(--p-blaa-300);
@@ -103,6 +107,8 @@
     --farge-tekst-dempet: var(--p-maane-dempet);
     --farge-linje: var(--p-linje-mork);
     --farge-kant: var(--p-kant-mork);
+    --farge-aksent: var(--p-lapp-gul);
+    --farge-aksent-tekst: var(--p-blaa-900);
     --farge-merke: var(--p-blaa-300);
     --farge-merke-tekst: var(--p-blaa-950);
     --farge-lenke: var(--p-blaa-300);
@@ -153,6 +159,8 @@
     --farge-tekst-dempet: var(--p-blekk-dempet);
     --farge-linje: var(--p-linje-lys);
     --farge-kant: var(--p-linje-lys);
+    --farge-aksent: var(--p-lapp-gul);
+    --farge-aksent-tekst: var(--p-blaa-900);
     --farge-merke: var(--p-blaa-700);
     --farge-merke-tekst: var(--p-hvit);
     --farge-lenke: var(--p-blaa-700);

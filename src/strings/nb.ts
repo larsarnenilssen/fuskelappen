@@ -21,6 +21,7 @@ export const nb = {
     innstillinger: 'Innstillinger',
   },
   forside: {
+    slagord: 'Arbeidstid, fag og regelverk i videregående – regnet ut og forklart.',
     tittel: 'Forside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, begrep eller fag',

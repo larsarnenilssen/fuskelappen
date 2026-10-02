@@ -1,4 +1,4 @@
-# Protokollen
+# Fuskelappen
 
 Installerbar nettapp (PWA) for skoleledere og lærere i videregående opplæring. Den regner ut, forklarer og viser kildene for regelverket rundt lærerstillinger og skolens drift: arbeidstid etter SFS 2213, fag og læreplaner, inntak, tilpasset opplæring, vurdering, skolemiljø og frister.
 

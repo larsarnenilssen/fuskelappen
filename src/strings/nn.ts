@@ -21,6 +21,7 @@ export const nn: Tekster = {
     innstillinger: 'Innstillingar',
   },
   forside: {
+    slagord: 'Arbeidstid, fag og regelverk i vidaregåande – rekna ut og forklart.',
     tittel: 'Framside',
     sokEtikett: 'Søk i {app}',
     sokPlassholder: 'Søk etter tema, omgrep eller fag',

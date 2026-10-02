@@ -1,12 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Plassholder: innbundet protokollbok med paragraftegn. Motivet holder seg innenfor midtre 80 %
-       slik at samme fil kan brukes som maskable-ikon. Bakgrunnen har id="bakgrunn" og fjernes i logoen
-       i topplinjen. Bytt filen og kjør «npm run lag:ikoner». -->
-  <rect id="bakgrunn" width="512" height="512" fill="#17324f"/>
-  <rect x="172" y="128" width="196" height="268" rx="16" fill="#b9b3a5"/>
-  <rect x="160" y="118" width="196" height="268" rx="16" fill="#f6f4ef"/>
-  <path d="M176 118h22v268h-22a16 16 0 0 1-16-16V134a16 16 0 0 1 16-16Z" fill="#c8a86b"/>
-  <rect x="222" y="150" width="112" height="6" rx="3" fill="#17324f" opacity="0.35"/>
-  <text x="266" y="310" text-anchor="middle" font-family="Georgia, 'DejaVu Serif', 'Times New Roman', serif" font-size="150" font-weight="700" fill="#17324f">§</text>
-  <path d="M300 386v54l16-13 16 13v-54Z" fill="#d99a2b"/>
+  <!-- Fuskelappen: hvit lapp med brettet hjørne og gul hake (eier 02.10.2026, forslag C). Motivet holder seg innenfor
+       midtre 80 %, så samme fil kan brukes som maskable-ikon. Bytt filen og kjør «npm run lag:ikoner». -->
+  <rect id="bakgrunn" width="512" height="512" fill="#f6f4ef"/>
+  <g transform="rotate(-8 256 256)">
+    <rect x="132" y="116" width="248" height="290" rx="10" fill="#17324f" opacity="0.15" transform="translate(10 12)"/>
+    <path d="M132 116h248v222l-68 68H132Z" fill="#ffffff" stroke="#17324f" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M380 338h-52a16 16 0 0 0-16 16v52" fill="#e3ecf5" stroke="#17324f" stroke-width="10" stroke-linejoin="round"/>
+    <rect x="164" y="160" width="130" height="14" rx="7" fill="#1f4e79"/>
+    <rect x="164" y="198" width="180" height="12" rx="6" fill="#17324f" opacity="0.3"/>
+    <rect x="164" y="232" width="160" height="12" rx="6" fill="#17324f" opacity="0.3"/>
+    <rect x="164" y="266" width="120" height="12" rx="6" fill="#17324f" opacity="0.3"/>
+    <circle cx="200" cy="330" r="34" fill="#f2c94c"/>
+    <path d="M184 330l12 12 22-24" fill="none" stroke="#17324f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

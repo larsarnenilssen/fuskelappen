@@ -157,7 +157,6 @@ export function Skall() {
             </button>
           )}
           <a class="appnavn" href="#/">
-            <img class="applogo" src={`${import.meta.env.BASE_URL}ikoner/logo.svg`} alt="" width="28" height="28" />
             <span class="appnavn-tekst">{app.navn}</span>
           </a>
           <KildestatusIndikator />
