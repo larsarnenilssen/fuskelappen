@@ -23,7 +23,7 @@ import { trinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
-import { Brodsmuler, Faglenke, Fagkoder, Fagvalg, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
 
 type Kategori = Tilbudsdel['kategori'];
 type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;
@@ -50,21 +50,20 @@ const kortLinje = (linje: string, malform: 'nb' | 'nn') => {
   return tekst.split('/')[0]?.trim() ?? tekst;
 };
 
-/** Ett fag på én linje: navnet er lenken til fagarket, timene står til høyre. */
-function Fagrad({ navn, timer, href, under }: { navn: string; timer: number | null; href?: string | null; under?: preact.ComponentChildren }) {
+/**
+ * Ett fag på én linje: navnet er lenken til fagarket, timene står til høyre. Alle radene i en rubrikk har samme
+ * høyde og avstand til skillelinjene. Valg (f.eks. «velg én: 1P · 1T») står dempet etter navnet (eier 02.10.2026).
+ */
+function Fagrad({ navn, timer, href, under, dempet = false }: { navn: string; timer: number | null; href?: string | null; under?: preact.ComponentChildren; dempet?: boolean }) {
   return (
-    <li class="fagrad">
+    <li class="fagrad" data-dempet={dempet || undefined}>
       <div class="fagrad-topp">
-        {href ? (
-          <a class="fagrad-navn" href={href}>
-            {navn}
-          </a>
-        ) : (
-          <span class="fagrad-navn">{navn}</span>
-        )}
-        <span class="fagrad-timer tall">{timer === null ? '' : formaterTall(timer)}</span>
+        <span class="fagrad-navn">
+          {href ? <a href={href}>{navn}</a> : navn}
+          {under && <span class="fagrad-under"> · {under}</span>}
+        </span>
+        {timer !== null && <span class="fagrad-timer tall">{formaterTall(timer)}</span>}
       </div>
-      {under}
     </li>
   );
 }
@@ -72,6 +71,17 @@ function Fagrad({ navn, timer, href, under }: { navn: string; timer: number | nu
 function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>> }) {
   const { t, malform } = useTekst();
   const en = del.koder.length === 1 ? del.koder[0] : null;
+  if (del.koder.length > FAA)
+    return (
+      <Fagvalgrad
+        indeks={indeks}
+        koder={del.koder}
+        laereplaner={laereplaner}
+        tittel={kortLinje(del.linje, malform)}
+        under={t('opplaeringslop.tilbud.velgEn', { antall: formaterTall(del.koder.length) })}
+        hoyre={formaterTall(del.timer)}
+      />
+    );
   // «Matematikk 1P» og «Matematikk 1T» blir «1P» og «1T»: det navnene har felles, står alt i linjen.
   const felles = fellesStart(del.koder.map((k) => indeks.fag[k]?.navn[malform] ?? k));
   const kortnavn = (navn: string) => navn.slice(felles.length).trim() || navn;
@@ -81,11 +91,8 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
       timer={del.timer}
       href={en ? `#/fag/${en}` : null}
       under={
-        del.koder.length > 1 &&
-        (del.koder.length > FAA ? (
-          <Fagvalg indeks={indeks} koder={del.koder} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.velgEn', { antall: formaterTall(del.koder.length) })} />
-        ) : (
-          <p class="fagrad-valg">
+        del.koder.length > 1 && (
+          <>
             {t('opplaeringslop.tilbud.velgEnKort')}{' '}
             {del.koder.map((k, i) => (
               <span key={k}>
@@ -93,50 +100,45 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
                 <a href={`#/fag/${k}`}>{kortnavn(indeks.fag[k]?.navn[malform] ?? k)}</a>
               </span>
             ))}
-          </p>
-        ))
+          </>
+        )
       }
     />
   );
 }
 
-/** Felles programfag: hvert fag med timene sine. Utvalg over flere trinn eller blant fag i samme læreplan står under. */
-function Programfag({ del, indeks }: { del: Fagdel; indeks: Fagindeks }) {
+/** Felles programfag: hvert fag med timene sine. Utvalg over flere trinn eller blant fag i samme læreplan er en rad som åpnes. */
+function Programfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>> }) {
   const { t, malform } = useTekst();
+  const u = del.utvalg;
   return (
     <>
       {del.koder.map((k) => (
         <Fagrad key={k} navn={indeks.fag[k]?.navn[malform] ?? k} timer={indeks.fag[k]?.timer ?? null} href={`#/fag/${k}`} />
       ))}
-      {del.utvalg && (
-        <Fagrad
-          navn={
-            del.utvalg.grunn === 'flere_trinn'
+      {u && (
+        <Fagvalgrad
+          indeks={indeks}
+          koder={u.koder}
+          laereplaner={laereplaner}
+          tittel={
+            u.grunn === 'flere_trinn'
               ? t('opplaeringslop.tilbud.utvalgFlereTrinnKort')
-              : del.utvalg.antall
-                ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(del.utvalg.antall) })
+              : u.antall
+                ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(u.antall) })
                 : t('opplaeringslop.tilbud.utvalgValgKort')
           }
-          timer={del.utvalg.timer}
-          under={
-            <>
-              <ul class="tett tilbud-fagliste">
-                {del.utvalg.koder.map((k) => (
-                  <li key={k}>
-                    <Faglenke indeks={indeks} kode={k} timer />
-                  </li>
-                ))}
-              </ul>
-              {del.utvalg.rekker.length > 0 && (
-                <p class="fagrad-valg">
-                  {t('opplaeringslop.tilbud.rekkefolge')}: {del.utvalg.rekker.map((r) => r.join(' → ')).join('; ')}
-                </p>
-              )}
-            </>
-          }
-        />
+          under={t('opplaeringslop.tilbud.blantFag', { antall: formaterTall(u.koder.length) })}
+          hoyre={formaterTall(u.timer)}
+        >
+          {u.rekker.length > 0 && (
+            <p class="fagrad-merknad">
+              {t('opplaeringslop.tilbud.rekkefolge')}: {u.rekker.map((r) => r.join(' → ')).join('; ')}
+            </p>
+          )}
+        </Fagvalgrad>
       )}
-      {del.lantFra && <p class="fagrad-valg dempet">{t('opplaeringslop.tilbud.lantFra', { tilbud: tilbudsnavn(t, indeks, del.lantFra, malform) })}</p>}
+      {del.lantFra && <li class="fagrad fagrad-merknad">{t('opplaeringslop.tilbud.lantFra', { tilbud: tilbudsnavn(t, indeks, del.lantFra, malform) })}</li>}
     </>
   );
 }
@@ -146,28 +148,26 @@ function Plass({ del, indeks, laereplaner, trinn }: { del: Plassdel; indeks: Fag
   if (del.kategori === 'yff') {
     const andre = del.kandidater.filter((k) => k !== del.anbefalt);
     return (
-      <Fagrad
-        navn={del.anbefalt ? (indeks.fag[del.anbefalt]?.navn[malform] ?? del.anbefalt) : kortLinje(del.linje, malform)}
-        timer={del.timer}
-        href={del.anbefalt ? `#/fag/${del.anbefalt}` : null}
-        under={<Fagkoder indeks={indeks} koder={andre} tittel={t('opplaeringslop.tilbud.andreKoder', { antall: formaterTall(andre.length) })} />}
-      />
+      <>
+        <Fagrad
+          navn={del.anbefalt ? (indeks.fag[del.anbefalt]?.navn[malform] ?? del.anbefalt) : kortLinje(del.linje, malform)}
+          timer={del.timer}
+          href={del.anbefalt ? `#/fag/${del.anbefalt}` : null}
+        />
+        <Fagvalgrad indeks={indeks} koder={andre} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.andreKoder')} hoyre={formaterTall(andre.length)} dempet />
+      </>
     );
   }
   return (
-    <Fagrad
-      navn={del.antall ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(del.antall) }) : kortLinje(del.linje, malform)}
-      timer={del.timer}
-      under={
-        <Fagvalg
-          indeks={indeks}
-          koder={del.kandidater}
-          laereplaner={laereplaner}
-          // Programfag til valg kan tas fra hele utdanningsprogrammet. De grupperes etter programområde.
-          {...(del.kategori === 'valgfritt' ? { trinn } : {})}
-          tittel={t('opplaeringslop.tilbud.blantFag', { antall: formaterTall(del.kandidater.length) })}
-        />
-      }
+    <Fagvalgrad
+      indeks={indeks}
+      koder={del.kandidater}
+      laereplaner={laereplaner}
+      // Programfag til valg kan tas fra hele utdanningsprogrammet. De grupperes etter programområde.
+      {...(del.kategori === 'valgfritt' ? { trinn } : {})}
+      tittel={del.antall ? t('opplaeringslop.tilbud.velgAntall', { antall: formaterTall(del.antall) }) : kortLinje(del.linje, malform)}
+      under={t('opplaeringslop.tilbud.blantFag', { antall: formaterTall(del.kandidater.length) })}
+      hoyre={formaterTall(del.timer)}
     />
   );
 }
@@ -286,7 +286,7 @@ function Sammensetning({ tb }: { tb: Tilbudsdata }) {
 
 /** Fagene i rubrikker per kategori. Vurderingskoder (muntlig, tverrfaglig eksamen) og alternativer står nederst i rubrikken. */
 function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Tilbudsdata; indeks: Fagindeks; laereplaner: Readonly<Record<string, string>> }) {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   return (
     <>
       {KATEGORIER.map(({ kategori, farge }) => {
@@ -312,33 +312,19 @@ function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Til
                 ) : kategori === 'fellesfag' ? (
                   <Fellesfag key={i} del={d} indeks={indeks} laereplaner={laereplaner} />
                 ) : (
-                  <Programfag key={i} del={d} indeks={indeks} />
+                  <Programfag key={i} del={d} indeks={indeks} laereplaner={laereplaner} />
                 ),
               )}
+              {/* Tverrfaglig eksamen og muntlige koder står dempet nederst, som egne rader: få vises med en gang. */}
+              {kategori === 'felles_programfag' && vurdering.length <= 3
+                ? vurdering.map((k) => <Fagrad key={k} navn={indeks.fag[k]?.navn[malform] ?? k} timer={null} href={`#/fag/${k}`} under={k} dempet />)
+                : vurdering.length > 0 && (
+                    <Fagvalgrad indeks={indeks} koder={vurdering} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.vurderingskoder')} hoyre={formaterTall(vurdering.length)} dempet />
+                  )}
+              {alternativer.length > 0 && (
+                <Fagvalgrad indeks={indeks} koder={alternativer} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.alternativer')} hoyre={formaterTall(alternativer.length)} dempet />
+              )}
             </ul>
-            {vurdering.length > 0 &&
-              (kategori === 'felles_programfag' ? (
-                // Tverrfaglig eksamen og muntlige koder for programfagene står nederst i rubrikken (eier 02.10.2026).
-                <div class="rubrikk-bunn">
-                  <p class="liten-overskrift">{t('opplaeringslop.tilbud.eksamen')}</p>
-                  <ul class="tett tilbud-fagliste">
-                    {vurdering.map((k) => (
-                      <li key={k}>
-                        <Faglenke indeks={indeks} kode={k} />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : (
-                <div class="rubrikk-bunn">
-                  <Fagvalg indeks={indeks} koder={vurdering} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.vurderingskoder', { antall: formaterTall(vurdering.length) })} />
-                </div>
-              ))}
-            {alternativer.length > 0 && (
-              <div class="rubrikk-bunn">
-                <Fagvalg indeks={indeks} koder={alternativer} laereplaner={laereplaner} tittel={t('opplaeringslop.tilbud.alternativer', { antall: formaterTall(alternativer.length) })} />
-              </div>
-            )}
           </Rubrikk>
         );
       })}

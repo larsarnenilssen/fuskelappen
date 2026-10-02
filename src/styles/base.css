@@ -3032,13 +3032,21 @@ p.fagkort-tittel {
 .rubrikk-tittel .kortknapp-tekst {
   display: flex;
   flex: 1;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 0 var(--rom-3);
+  /* Tallet står midt på når tittelen går over to linjer (eier 02.10.2026). */
+  align-items: center;
+  gap: var(--rom-3);
+  padding: var(--rom-2) 0;
   text-align: left;
 }
 
+/* Tallet står alltid på linjen med tittelen. En lang tittel brytes selv (eier 02.10.2026). */
+.rubrikk-tittel .kortknapp-tekst > :first-child {
+  min-width: 0;
+}
+
 .rubrikk-hoyre {
+  flex: none;
   font-weight: 700;
 }
 
@@ -3050,17 +3058,10 @@ p.fagkort-tittel {
   margin: 0;
 }
 
-.rubrikk-bunn {
-  margin-top: var(--rom-2);
-  padding-top: var(--rom-2);
-  border-top: var(--strek) solid var(--farge-linje);
-}
-
-.rubrikk-bunn .liten-overskrift {
-  margin: 0 0 var(--rom-1);
-}
-
-/* Fagene i et tilbud: én lav rad per fag, navnet er lenken og timene står til høyre. */
+/*
+ * Fagene i et tilbud: én rad per fag med samme høyde og avstand til skillelinjene. Navnet står til venstre (lenke
+ * eller knapp), timene til høyre. Valg og koder står dempet etter navnet (eier 02.10.2026, avgjørelse 036).
+ */
 .fagrader {
   margin: 0;
   padding: 0;
@@ -3068,7 +3069,6 @@ p.fagkort-tittel {
 }
 
 .fagrad {
-  padding: var(--rom-1) 0;
   border-top: var(--strek) solid var(--farge-linje);
 }
 
@@ -3076,13 +3076,30 @@ p.fagkort-tittel {
   border-top: 0;
 }
 
-.fagrad-topp {
+.fagrad-topp,
+.fagrad-knapp {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: var(--rom-3);
-  min-height: 2rem;
-  align-items: center;
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) 0;
+  box-sizing: border-box;
+}
+
+.fagrad-knapp {
+  margin: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fagrad-knapp .fagrad-navn {
+  color: var(--farge-lenke);
 }
 
 .fagrad-navn {
@@ -3090,13 +3107,42 @@ p.fagkort-tittel {
   overflow-wrap: anywhere;
 }
 
+.fagrad-under {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fagrad-pil {
+  margin-left: var(--rom-1);
+  vertical-align: -0.15em;
+}
+
 .fagrad-timer {
   flex: none;
   font-weight: 650;
 }
 
-.fagrad-valg {
-  margin: 0 0 var(--rom-1);
+/* Vurderingskoder, alternativer og andre koder står dempet nederst i rubrikken. */
+.fagrad[data-dempet] {
+  font-size: var(--str-s);
+}
+
+.fagrad[data-dempet] .fagrad-timer {
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+}
+
+/* Listen som åpnes fra en rad, står innrykket med en strek, som gruppene i den. */
+.fagrad-innhold {
+  margin: 0 0 var(--rom-2) var(--rom-1);
+  padding-left: var(--rom-3);
+  border-left: 2px solid var(--farge-linje);
+}
+
+.fagrad-merknad {
+  margin: var(--rom-1) 0 0;
+  padding: var(--rom-2) 0;
+  color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
 }
 
@@ -3153,36 +3199,8 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-3);
 }
 
-/* Lister med fagkoder og søk blant mange fag. */
-.tilbud-fagliste {
-  margin: var(--rom-1) 0 0;
-  padding: 0;
-  list-style: none;
-  font-size: var(--str-s);
-}
-
-.tilbud-fagliste li {
-  padding: 2px 0;
-}
-
-.tilbud-fagkode {
-  font-variant-numeric: tabular-nums;
-  font-weight: 650;
-}
-
-.tilbud-koder-knapp {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  min-height: var(--trykkflate);
-  text-align: left;
-}
-
-.fagvalg-sok {
-  width: 100%;
-  margin: var(--rom-1) 0 var(--rom-2);
-}
-
+/* Lister med fag (åpnes fra en rad): navnet er lenken, koden dempet etter, timene til høyre. */
+.tilbud-fagliste,
 .fagvalg-grupper {
   margin: 0;
   padding: 0;
@@ -3190,30 +3208,70 @@ p.fagkort-tittel {
   font-size: var(--str-s);
 }
 
-.fagvalg-grupper > li {
+.tilbud-fagliste > li,
+.fagliste-rad {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--rom-3);
   padding: var(--rom-1) 0;
+}
+
+.fagvalg-grupper > li + li {
   border-top: var(--strek) solid var(--farge-linje);
 }
 
+.fagliste-navn {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.fagliste-kode {
+  color: var(--farge-tekst-dempet);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.fagliste-timer {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+.fagvalg-sok {
+  width: 100%;
+  margin: 0 0 var(--rom-2);
+}
+
+/* Gruppene (læreplan, programområde) er rader som åpnes. Fagene står innrykket med en strek til venstre. */
 .faggruppe-valg-knapp {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: var(--rom-3);
   width: 100%;
-  min-height: 2rem;
+  min-height: 2.5rem;
+  margin: 0;
+  padding: var(--rom-2) 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faggruppe-innhold {
+  margin: 0 0 var(--rom-2) var(--rom-1);
+  padding-left: var(--rom-3);
+  border-left: 2px solid var(--farge-linje);
+}
+
+.faggruppe-valg[data-niva='omrade'] > .faggruppe-valg-knapp {
   font-weight: 650;
 }
 
-.faggruppe-valg .tilbud-fagliste {
-  margin: 0 0 var(--rom-2) var(--rom-3);
-}
-
-/* Læreplanene inne i et programområde står innrykket under området. */
-.faggruppe-valg[data-niva='omrade'] > .faggruppe-innhold {
-  margin-left: var(--rom-3);
-}
-
-.faggruppe-valg[data-niva='omrade'] > .kortknapp {
-  font-size: var(--str-m);
+.faggruppe-valg-knapp .fagliste-timer {
+  font-weight: 400;
 }
 
 .inngar-liste > li + li {
@@ -3300,6 +3358,20 @@ p.fagkort-tittel {
 }
 
 /* Løpet i et program som et tre. Streken går fra knappen ned til det siste tilbudet og ender der (eier 02.10.2026). */
+/* Oversikten: skoleåret står midt mellom søket og den første gruppen (eier 02.10.2026). */
+.lop-oversikt .sokeboks {
+  margin-bottom: 0;
+}
+
+.lop-oversikt .sokestatus:empty {
+  min-height: 0;
+  margin: 0;
+}
+
+.lop-skolear {
+  margin: var(--rom-3) 0;
+}
+
 .lop,
 .lop-videre {
   margin: 0;
@@ -3311,20 +3383,45 @@ p.fagkort-tittel {
   margin: 0 0 var(--rom-3);
 }
 
-.lop-knapp {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  min-height: var(--trykkflate);
-  margin: 0 0 0 var(--rom-3);
-  padding: 0 var(--rom-2);
+.lop-kort {
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  overflow: hidden;
+}
+
+.lop-kort[data-sted='bedrift'] {
+  border-style: dashed;
+}
+
+.lop-kort > .tilbudslenke {
   border: 0;
-  background: none;
+  border-radius: 0;
+}
+
+/* Knappen til neste trinn er bunnen av kortet: hele bredden, med pil til høyre. */
+.lop-knapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  margin: 0;
+  padding: var(--rom-2) var(--rom-4);
+  border: 0;
+  border-top: var(--strek) solid var(--farge-linje);
+  background: var(--farge-flate-2);
   color: var(--farge-lenke);
   font: inherit;
   font-size: var(--str-s);
   font-weight: 650;
+  text-align: left;
   cursor: pointer;
+}
+
+.lop-knapp[aria-expanded='true'] {
+  background: var(--farge-flate);
 }
 
 .lop-videre {

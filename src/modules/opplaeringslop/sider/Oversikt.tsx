@@ -1,5 +1,5 @@
 // Utdanningsprogrammene, gruppert i studieforberedende, yrkesfaglige og påbygging, med søk etter program og tilbud
-// (eier 02.10.2026). Hvert program fører til løpet. Gruppene kan legges sammen.
+// (eier 02.10.2026). Hvert program fører til løpet. Gruppene er lukket fra start.
 import { useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -33,7 +33,7 @@ export default function Oversikt() {
   const aktivt = sok.trim().length >= 2;
   const treff = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
   return (
-    <div class="side">
+    <div class="side lop-oversikt">
       <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
       <p class="dempet">{t('opplaeringslop.innledning')}</p>
       {typeof data === 'string' ? (
@@ -66,12 +66,12 @@ export default function Oversikt() {
             </ul>
           ) : (
             <>
-              {data.tilbud.skolear && <p class="liten dempet">{t('opplaeringslop.skolear', { skolear: data.tilbud.skolear.replace('-', '–') })}</p>}
+              {data.tilbud.skolear && <p class="liten dempet lop-skolear">{t('opplaeringslop.skolear', { skolear: data.tilbud.skolear.replace('-', '–') })}</p>}
               {GRUPPER.map((g) => {
                 const programmer = data.tilbud.struktur.filter((p) => p.gruppe === g);
                 if (programmer.length === 0) return null;
                 return (
-                  <Rubrikk key={g} nokkel={`lop-gruppe-${g}`} tittel={t(`opplaeringslop.gruppe.${g}`)} hoyre={formaterTall(programmer.length)}>
+                  <Rubrikk key={g} nokkel={`lop-gruppe-${g}`} tittel={t(`opplaeringslop.gruppe.${g}`)} hoyre={formaterTall(programmer.length)} lukket>
                     <ul class="liste">
                       {programmer.map((p) => (
                         <li key={p.program}>

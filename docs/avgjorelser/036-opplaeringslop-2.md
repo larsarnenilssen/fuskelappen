@@ -24,3 +24,5 @@
 - **Avvik:** Avvik mellom rundskrivet og Grep lagres som data (`Avvik`) og vises som nøytral merknad der de gjelder, f.eks. «Rundskrivet har 925 timer. Fagene i Grep har til sammen 700.» Rapporten bruker `avvikTekst` og er uendret.
 
 **Konsekvens:** Det eneste som må vedlikeholdes for hånd, er nynorsk for nye linjenavn og utskrift av nye ordninger. Kontrollsaken melder dem, og til det er gjort vises rundskrivets tekst. Endres tilbudsstrukturen, følger grupperingen, avvikene og timene kildene ved neste bygg. Avgjørelse 035 sier at avvik ikke vises og at linjenavn vises uoversatt. Det gjelder ikke lenger.
+
+**Tillegg (0.19.1):** Etter eiers gjennomgang er fagene i et tilbud rader med lik høyde. Valg og koder står dempet på samme linje som navnet, og lister som åpnes er innrykket med en strek. Knappen til neste trinn i løpet er bunnen av tilbudskortet («Vis 7 tilbud på vg2»), fordi en løs lenke under kortet ikke var tydelig nok.
