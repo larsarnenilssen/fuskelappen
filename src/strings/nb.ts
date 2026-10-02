@@ -11,6 +11,7 @@ export const nb = {
     lasterInn: 'Laster inn …',
     lastefeil: 'Siden kunne ikke lastes. Sjekk nettforbindelsen og prøv igjen.',
     provIgjen: 'Prøv igjen',
+    tilToppen: 'Til toppen',
     tittelMal: '{side} – {app}',
   },
   nav: {

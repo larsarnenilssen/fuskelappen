@@ -34,6 +34,14 @@ test.describe('fag og læreplaner', () => {
     // Yrkesfaglig fordypning står først på et yrkesfaglig program.
     await expect(grupper.first()).toContainText('Yrkesfaglig fordypning');
     await expect(page.getByRole('button', { name: /^Felles programfag \(\d+\)/ })).toHaveAttribute('aria-expanded', 'true');
+    // Hele overskriftsraden åpner og lukker gruppen, også til høyre for teksten (eier 02.10.2026).
+    const felles = page.getByRole('button', { name: /^Felles programfag \(\d+\)/ });
+    await felles.scrollIntoViewIfNeeded();
+    const rad = await felles.boundingBox();
+    await page.mouse.click((rad?.x ?? 0) + (rad?.width ?? 0) - 40, (rad?.y ?? 0) + (rad?.height ?? 0) / 2);
+    await expect(felles).toHaveAttribute('aria-expanded', 'false');
+    await felles.click();
+    await expect(felles).toHaveAttribute('aria-expanded', 'true');
     await expect(page.getByText(/Kvensk/)).toHaveCount(0);
     // «Vis også» er lukket til brukeren åpner den.
     const visOgsaa = page.getByRole('button', { name: /Vis også/ });
@@ -97,6 +105,11 @@ test.describe('fag og læreplaner', () => {
     await expect(page.getByText('Alle yrkesfaglige utdanningsprogram')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Om yrkesfaglig fordypning' })).toBeVisible();
     await expect(page.locator('.merknad')).toContainText('lokale læreplaner');
+    // Teksten står som avsnitt, ikke som HTML-kode, og det er luft før neste kort (eier 02.10.2026).
+    await expect(page.locator('.fagark-yff')).not.toContainText('<p>');
+    expect(await page.locator('.fagark-yff .brodtekst p').count()).toBeGreaterThan(1);
+    const [yff, neste] = await Promise.all([page.locator('.fagark-yff').boundingBox(), page.locator('.fagark-yff + *').boundingBox()]);
+    expect((neste?.y ?? 0) - ((yff?.y ?? 0) + (yff?.height ?? 0))).toBeGreaterThan(8);
   });
 
   test('læreplaner fastsatt på nynorsk vises på nynorsk også når appen er på bokmål', async ({ page }) => {
@@ -145,5 +158,18 @@ test.describe('fag og læreplaner', () => {
   test('det samlede søket finner fag på navn og kode', async ({ page }) => {
     await page.goto('./#/sok?q=HEA2005');
     await expect(page.getByRole('link', { name: /Helsefremmende arbeid/ }).first()).toBeVisible();
+  });
+
+  test('«Til toppen» vises når brukeren har rullet langt ned i fagsøket, og fører til toppen (eier 02.10.2026)', async ({ page }) => {
+    await page.goto('./#/fag?program=HS&vis=variant,bedrift,andre');
+    await expect(page.locator('.faggruppe-2').first()).toBeVisible();
+    const knapp = page.getByRole('button', { name: 'Til toppen' });
+    await expect(knapp).toHaveCount(0);
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await expect(knapp).toBeVisible();
+    await knapp.click();
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeLessThan(5);
+    await expect(page.locator('main h1')).toBeFocused();
+    await expect(knapp).toHaveCount(0);
   });
 });

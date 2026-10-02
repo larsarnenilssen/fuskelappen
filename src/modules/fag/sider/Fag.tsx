@@ -285,9 +285,10 @@ function YffForklaring({ malform }: { malform: Malform }) {
   }, []);
   if (!begrep) return null;
   return (
-    <div class="merknad">
+    <div class="merknad fagark-yff">
       <h2 class="liten-overskrift">{t('fag.side.yffOverskrift')}</h2>
-      <p>{begrep.tekst[malform]}</p>
+      {/* Teksten er HTML fra begrepsbanken, laget av innholdet i content/ ved bygging, som på begrepssiden. */}
+      <div class="brodtekst" dangerouslySetInnerHTML={{ __html: begrep.tekst[malform] }} />
       <p class="liten">
         <a href="#/begreper/yrkesfaglig-fordypning">{t('fag.side.lesMer')}</a>
       </p>

@@ -94,6 +94,9 @@
   --bunnmeny-hoyde: 3.75rem;
   --trykkflate: 2.75rem;
 
+  /* Skygge under knapper som flyter over innholdet, f.eks. «Til toppen». */
+  --skygge-flytende: 0 2px 8px rgb(0 0 0 / 25%);
+
   /* Bevegelse */
   --varighet: 160ms;
 }

@@ -2489,6 +2489,15 @@ p.fagkort-tittel {
   background: var(--fagtype);
 }
 
+/* Forklaringen av yrkesfaglig fordypning har samme luft under seg som kortene på fagarket (eier 02.10.2026). */
+.fagark .fagark-yff {
+  margin: 0 0 var(--rom-3);
+}
+
+.fagark-yff .brodtekst p:last-child {
+  margin-bottom: var(--rom-2);
+}
+
 /* Like mye luft under boksene som mellom dem, før «Vurderingsordning i læreplanen» (eier 02.10.2026). */
 .fagark .fag-vurderinger {
   display: grid;
@@ -2820,4 +2829,34 @@ p.fagkort-tittel {
     display: flex;
     margin: 0 0 var(--rom-1) auto;
   }
+}
+
+/* «Til toppen» i lange lister (eier 02.10.2026). Står nede til høyre, over bunnmenyen. */
+.til-toppen {
+  position: fixed;
+  right: calc(var(--rom-3) + env(safe-area-inset-right));
+  bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-3));
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-4);
+  border: 0;
+  border-radius: 999px;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font: inherit;
+  font-weight: 600;
+  box-shadow: var(--skygge-flytende);
+  cursor: pointer;
+}
+
+/* Hele overskriftsraden i fagsøket åpner og lukker gruppen, ikke bare teksten (eier 02.10.2026). */
+.faggruppe-tittel .kortknapp {
+  display: flex;
+  width: 100%;
+  min-height: var(--trykkflate);
+  justify-content: space-between;
+  text-align: left;
 }
