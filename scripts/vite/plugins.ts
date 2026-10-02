@@ -144,7 +144,8 @@ export function tilbudPlugin(rot: string): Plugin {
       const tilbud: Record<string, unknown> = {};
       for (const kode of Object.keys(indeks.programomrader).sort()) {
         // Programområdet står i fagindeksen, som appen har fra før.
-        const { programomrade: _po, ...resten } = byggTilbud(kode, indeks, fordeling, fagBygger);
+        const resten: Record<string, unknown> = { ...byggTilbud(kode, indeks, fordeling, fagBygger) };
+        delete resten.programomrade;
         tilbud[kode] = resten;
       }
       const data = { skolear: fordeling?.skolear ?? null, struktur: byggStruktur(indeks), tilbud };
