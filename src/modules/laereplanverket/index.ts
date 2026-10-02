@@ -10,7 +10,7 @@ export const manifest: Modulmanifest = {
   beskrivelse: 'moduler.laereplanverket.beskrivelse',
   ikon: 'lag',
   kategori: 'fag',
-  rekkefolge: 30,
+  rekkefolge: 10,
   ruter: [
     { sti: '/laereplanverket', tittel: 'laereplanverket.tittel', side: () => import('./sider/Oversikt.tsx') },
     { sti: '/laereplanverket/overordnet-del', tittel: 'laereplanverket.overordnetDel', side: () => import('./sider/OverordnetDel.tsx') },

@@ -1,8 +1,8 @@
 // UI-tekster for modulen Læreplanverket på bokmål. laereplanverket.nn.ts må ha de samme nøklene.
 
 export const laereplanverketNb = {
-  tittel: 'Læreplanverket',
-  innledning: 'Overordnet del, grunnleggende ferdigheter og tverrfaglige temaer i læreplanverket for Kunnskapsløftet 2020.',
+  tittel: 'Overordnet del',
+  innledning: 'Verdier og prinsipper for grunnopplæringen, med de grunnleggende ferdighetene og de tverrfaglige temaene. Overordnet del er én av tre deler i læreplanverket for Kunnskapsløftet 2020.',
   sok: 'Søk i overordnet del',
   antallTreff: '{antall} deler passer søket.',
   ettTreff: 'Én del passer søket.',
@@ -15,7 +15,7 @@ export const laereplanverketNb = {
   temaerHjelp: 'Temaene tas opp i fagene der de er relevante. Fagarket viser hva temaet innebærer i faget.',
   lesIOverordnet: 'Les i overordnet del',
   udir: 'Les på udir.no',
-  lasterFeil: 'Klarte ikke å laste læreplanverket.',
+  lasterFeil: 'Klarte ikke å laste overordnet del.',
   ikkeFunnet: 'Fant ikke delen i overordnet del.',
   hentet: 'Teksten er hentet fra udir.no {dato}.',
   innholdet: 'Innhold',

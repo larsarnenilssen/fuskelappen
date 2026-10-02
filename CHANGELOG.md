@@ -6,9 +6,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [0.20.0] – 2026-10-02
 
+### Endret
+
+- **Forsiden:** Overskriften «Læreplanverk og opplæringsløp» heter nå «Læreplanverket». Boksene følger læreplanverkets tre deler: Overordnet del, Opplæringsløp (fag- og timefordelingen) og Fag og læreplaner.
+
 ### Lagt til
 
-- **Læreplanverket:** ny del under «Læreplanverk og opplæringsløp».
+- **Overordnet del:** ny del under «Læreplanverket».
   - Overordnet del på bokmål og nynorsk, i bokser som er lukket til du åpner dem, med delene inni som nye bokser.
   - Innholdsregister med lenke til hver del, og søk i hele teksten med utdrag rundt treffet.
   - De fem grunnleggende ferdighetene og de tre tverrfaglige temaene, med lenke til omtalen i overordnet del.

@@ -10,7 +10,7 @@ export const manifest: Modulmanifest = {
   beskrivelse: 'moduler.fag.beskrivelse',
   ikon: 'skole',
   kategori: 'fag',
-  rekkefolge: 10,
+  rekkefolge: 30,
   ruter: [
     { sti: '/fag', tittel: 'fag.tittel', side: () => import('./sider/Liste.tsx') },
     { sti: '/fag/:kode', tittel: 'fag.tittel', side: () => import('./sider/Fag.tsx') },

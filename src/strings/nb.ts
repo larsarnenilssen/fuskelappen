@@ -40,7 +40,7 @@ export const nb = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Læreplanverk og opplæringsløp',
+    fag: 'Læreplanverket',
     elev: 'Elever og opplæring',
     skolemiljo: 'Skolemiljø',
     felles: 'Oppslag',
@@ -63,7 +63,7 @@ export const nb = {
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbud',
-      laereplanverk: 'Læreplanverket',
+      laereplanverk: 'Overordnet del',
       side: 'Side',
     },
   },
@@ -250,12 +250,12 @@ export const nb = {
   },
   moduler: {
     laereplanverket: {
-      navn: 'Læreplanverket',
-      beskrivelse: 'Overordnet del, grunnleggende ferdigheter og tverrfaglige temaer.',
+      navn: 'Overordnet del',
+      beskrivelse: 'Verdier og prinsipper, grunnleggende ferdigheter og tverrfaglige temaer.',
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Utdanningsprogram, tilbud på hvert trinn, og fag og timer i hvert tilbud.',
+      beskrivelse: 'Fag- og timefordelingen og tilbudsstrukturen: utdanningsprogram, tilbud på hvert trinn, og fag og timer.',
     },
     begreper: {
       navn: 'Begreper',
@@ -263,7 +263,7 @@ export const nb = {
     },
     fag: {
       navn: 'Fag og læreplaner',
-      beskrivelse: 'Fagkoder, kompetansemål, vurdering og årstimetall.',
+      beskrivelse: 'Læreplanene for fag: fagkoder, kompetansemål, vurdering og årstimetall.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',

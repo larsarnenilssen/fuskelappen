@@ -40,7 +40,7 @@ export const nn: Tekster = {
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
-    fag: 'Læreplanverk og opplæringsløp',
+    fag: 'Læreplanverket',
     elev: 'Elevar og opplæring',
     skolemiljo: 'Skulemiljø',
     felles: 'Oppslag',
@@ -63,7 +63,7 @@ export const nn: Tekster = {
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbod',
-      laereplanverk: 'Læreplanverket',
+      laereplanverk: 'Overordna del',
       side: 'Side',
     },
   },
@@ -250,12 +250,12 @@ export const nn: Tekster = {
   },
   moduler: {
     laereplanverket: {
-      navn: 'Læreplanverket',
-      beskrivelse: 'Overordna del, grunnleggjande ferdigheiter og tverrfaglege tema.',
+      navn: 'Overordna del',
+      beskrivelse: 'Verdiar og prinsipp, grunnleggjande ferdigheiter og tverrfaglege tema.',
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Utdanningsprogram, tilbod på kvart trinn, og fag og timar i kvart tilbod.',
+      beskrivelse: 'Fag- og timefordelinga og tilbodsstrukturen: utdanningsprogram, tilbod på kvart trinn, og fag og timar.',
     },
     begreper: {
       navn: 'Omgrep',
@@ -263,7 +263,7 @@ export const nn: Tekster = {
     },
     fag: {
       navn: 'Fag og læreplanar',
-      beskrivelse: 'Fagkodar, kompetansemål, vurdering og årstimetal.',
+      beskrivelse: 'Læreplanane for fag: fagkodar, kompetansemål, vurdering og årstimetal.',
     },
     arbeidstid: {
       navn: 'Arbeidstid (SFS 2213)',

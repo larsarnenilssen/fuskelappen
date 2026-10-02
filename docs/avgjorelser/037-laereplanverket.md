@@ -26,4 +26,6 @@
 - **Sitater:** Formålsparagrafen og definisjonen av kompetanse står som sitater på udir.no og vises som sitater. Står det noe annet i teksten enn avsnitt, lister og sitater (f.eks. en tabell), stopper hentingen, så ingen tekst forsvinner uten at det merkes.
 - **Data i appen:** Overordnet del og listene er egne JS-biter, om lag 24 kB komprimert. De lastes når de trengs og følger med når appen installeres. Søket finner delene på tittel, nummer og ingress.
 
+- **Navn på forsiden (eier 02.10.2026):** Overskriften heter nå «Læreplanverket», og de tre boksene følger Udirs tre deler i Udirs rekkefølge: «Overordnet del» (denne modulen, som før het Læreplanverket), «Opplæringsløp» (fag- og timefordelingen og tilbudsstrukturen) og «Fag og læreplaner» (læreplanene for fag). Adressene er de samme, så favoritter og lenker virker som før.
+
 **Konsekvens:** Teksten følger udir.no hver uke uten manuelt arbeid. Endrer Udir adressene eller sidene, stopper valideringen hentingen før noe skrives, og kontrollsaken sier fra. Rubrikken fra Opplæringsløp er flyttet til felles komponenter, så begge modulene bruker den.

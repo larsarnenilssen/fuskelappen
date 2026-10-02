@@ -54,7 +54,7 @@ export default function Oversikt() {
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
         <Sok od={data.od}>
-          <Rubrikk nokkel="lv-overordnet" tittel={t('laereplanverket.overordnetDel')}>
+          <Rubrikk nokkel="lv-overordnet" tittel={t('laereplanverket.innholdet')}>
             <p class="liten dempet">
               {t('laereplanverket.overordnetHjelp')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
             </p>

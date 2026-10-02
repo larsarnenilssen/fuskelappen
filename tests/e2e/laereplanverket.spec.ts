@@ -6,8 +6,12 @@ import { settLagret } from './hjelp.ts';
 test.describe('læreplanverket', () => {
   test('fra forsiden til innholdsregisteret og en del i overordnet del', async ({ page }) => {
     await page.goto('./');
-    await page.getByRole('link', { name: /^Læreplanverket/ }).click();
-    await expect(page.locator('main h1')).toHaveText('Læreplanverket');
+    // Overskriften på forsiden er «Læreplanverket», med Overordnet del, Opplæringsløp og Fag og læreplaner i den rekkefølgen.
+    const kategori = page.locator('[data-kategori="fag"]');
+    await expect(kategori.locator('h3')).toHaveText('Læreplanverket');
+    await expect(kategori.locator('a.listelenke .listelenke-tittel')).toHaveText(['Overordnet del', 'Opplæringsløp', 'Fag og læreplaner']);
+    await page.getByRole('link', { name: /^Overordnet del/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Overordnet del');
     // Innholdsregisteret lenker til hver del. Delen åpnes, og boksene rundt den.
     await page.locator('.innholdsregister').getByRole('link', { name: '2.5.1 Folkehelse og livsmestring' }).click();
     await expect(page).toHaveURL(/#\/laereplanverket\/overordnet-del\/2\.5\.1$/);
