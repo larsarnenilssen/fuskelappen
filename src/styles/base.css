@@ -2126,6 +2126,103 @@ p.fagkort-tittel {
   gap: var(--rom-1);
 }
 
+/* På smale skjermer står knappene på egen linje under navnet, så navnet ikke deles midt i ordene. */
+@media (max-width: 400px) {
+  .variantliste li {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .variant-knapper {
+    grid-column: 1 / -1;
+    justify-self: end;
+  }
+}
+
+.variant-handlinger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+}
+
+/* Lenken til en delt variant står i et felt, så den kan kopieres selv om kopieringen ikke virket. */
+.delt-lenke {
+  margin: 0 0 var(--rom-3);
+}
+
+.delt-lenke .tekstfelt {
+  width: 100%;
+  min-width: 0;
+}
+
+/* Merknaden øverst i skjemaet når det er fylt ut fra en delt lenke. */
+.delt-merknad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+}
+
+.delt-merknad p {
+  margin: 0 0 var(--rom-2);
+  overflow-wrap: anywhere;
+}
+
+.delt-tittel {
+  font-weight: 600;
+}
+
+/* Sammenligning av to varianter: navnet på en egen linje over tallene, så tabellen får plass på smale skjermer. */
+.sammenligning-boks {
+  margin: var(--rom-3) 0 0;
+}
+
+.sammenligning-boks .liten-overskrift {
+  margin: 0;
+}
+
+.sammenligning {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: var(--str-s);
+}
+
+.sammenligning thead th {
+  padding: var(--rom-1) 0 var(--rom-1) var(--rom-2);
+  text-align: right;
+  font-size: var(--str-xs);
+  font-weight: 600;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  vertical-align: bottom;
+}
+
+.sammenligning-gruppe th {
+  padding: var(--rom-3) 0 var(--rom-1);
+  text-align: left;
+  font-weight: 700;
+  border-bottom: var(--strek) solid var(--farge-kant);
+}
+
+.sammenligning-navn th {
+  padding: var(--rom-2) 0 0;
+  text-align: left;
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+}
+
+.sammenligning-tall td {
+  padding: 0 0 var(--rom-1) var(--rom-2);
+  text-align: right;
+  border-bottom: var(--strek) solid var(--farge-linje);
+  overflow-wrap: break-word;
+}
+
+.sammenligning-forskjell {
+  font-weight: 700;
+}
+
 /* ---------- Utskrift og PDF ----------
    Bare kalkulatoren skrives ut: menyer, knapper og faste linjer skjules, og innhold i lukkede kort og utregningen vises. */
 
@@ -2606,6 +2703,7 @@ p.fagkort-tittel {
   .tittelrad .ikonknapp,
   .hjelpknapp,
   .varianter,
+  .delt-merknad,
   .resultatkort-knapper,
   .fordeling-topp .lenkeknapp,
   .kort-oppsummering,

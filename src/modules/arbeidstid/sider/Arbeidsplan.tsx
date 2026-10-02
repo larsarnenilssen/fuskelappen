@@ -4,24 +4,26 @@
 // Arbeidsplanen kan gjelde hele skoleåret eller en periode (eier 30.09.2026). I en periode er fagene timer i perioden,
 // og stillingen og funksjonene gjelder perioden. Prosentene kan vises for perioden eller på årsbasis
 // (prosent × periodenøkkel). Timer og kroner er de samme i begge visningene.
-import { useId, useState } from 'preact/hooks';
+import { useId, useMemo, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
-import { beregnFordeling, beregnLonn, beregnStillingsplan, differanseIHvertFag, unikeFag, type FordelingsdelId, type Funksjon, funksjonsprosentFor, type Gruppe, lonnsperiode, type Operand, periodenokkel } from '../beregning/index.ts';
+import type { SideProps } from '../../typer.ts';
+import { type Arbeidsplanskjema, beregnArbeidsplan, lesDeltArbeidsplan, nokkeltallForArbeidsplan, type NokkeltallId, nyttArbeidsplanskjema, tilleggssatser } from '../arbeidsplan.ts';
+import { differanseIHvertFag, unikeFag, type FordelingsdelId, type Operand } from '../beregning/index.ts';
 import { Fordelingsvisning } from '../komponenter/Fordelingsdiagram.tsx';
 import { Belopsstolpe, Periodelinje, Stillingsmaaler, type Stolpedel } from '../komponenter/Grafikk.tsx';
-import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, prov, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
-import { Funksjoner, type Funksjonstilstand, type Livsfase, Livsfasekort, livsfaseregler, reserverFunksjonsider, tilFunksjon, tilleggsforslag, utvider } from '../komponenter/Funksjoner.tsx';
-import { Lonnsskjema, nyLonnstilstand, tilLonnsgrunnlag } from '../komponenter/Lonnsskjema.tsx';
+import { Advarsler, Feilmelding, Kalkulatorside, ManglerInndata, useArsrammer, useArstimer, useRegeltall } from '../komponenter/Kalkulatorside.tsx';
+import { Funksjoner, Livsfasekort, livsfaseregler, reserverFunksjonsider } from '../komponenter/Funksjoner.tsx';
+import { Lonnsskjema } from '../komponenter/Lonnsskjema.tsx';
 import { Innholdstekst, useArbeidstidElement } from '../komponenter/Metode.tsx';
 import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Skjemadel } from '../komponenter/Skjemadel.tsx';
-import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, nyGruppe, radTekst, reserverIder, tilGruppe, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
+import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, radTekst, reserverIder, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
-import { Varianter } from '../komponenter/Varianter.tsx';
+import { DeltMerknad, DELT_PARAMETER, type Sammenligning, useDeltVariant, Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'planleggingsdager', 'funksjonstid', 'selvdisponert'];
@@ -45,7 +47,26 @@ function fagnavn(g: Gruppetilstand, indeks: Fagindeks, reserve: string, malform:
   return reserve;
 }
 
-export default function Arbeidsplan() {
+/** Adressen til Arbeidsplan, også i delte lenker. */
+const STI = '/arbeidstid/arbeidsplan';
+
+/** Navnet på et nøkkeltall i sammenligningen av to varianter. */
+function nokkeltallNavn(t: ReturnType<typeof useTekst>['t'], id: NokkeltallId, iPeriode: boolean): string {
+  if (id.startsWith('del_')) return t(`arbeidstid.fordeling.deler.${id.slice(4)}` as Tekstnokkel);
+  const navn: Record<Exclude<NokkeltallId, `del_${string}`>, Tekstnokkel> = {
+    stilling: 'arbeidstid.resultat.stillingsprosent',
+    undervisning: 'arbeidstid.resultat.undervisning',
+    funksjoner: 'arbeidstid.resultat.funksjoner',
+    reduksjon: 'arbeidstid.livsfase.redusert',
+    beskjeftigelse: 'arbeidstid.resultat.samletBeskjeftigelse',
+    differanse: 'arbeidstid.arbeidsplan.sammenligning.differanse',
+    planfestet: 'arbeidstid.fordeling.planfestet',
+    lonn: iPeriode ? 'arbeidstid.arbeidsplan.lonnIPerioden' : 'arbeidstid.arbeidsplan.lonnIAlt',
+  };
+  return t(navn[id as Exclude<NokkeltallId, `del_${string}`>]);
+}
+
+export default function Arbeidsplan({ sporring }: SideProps) {
   const { t, malform } = useTekst();
   const hent = useHent();
   const rader = useArsrammer(hent);
@@ -54,45 +75,16 @@ export default function Arbeidsplan() {
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const idTimer = useId();
   const [visHvertFag, settVisHvertFag] = useState(false);
-  const [s, sett, endre] = useSkjematilstand(
-    'arbeidsplan',
-    () => ({
-      stilling: 100 as number | null,
-      grupper: [nyGruppe()],
-      // Ingen funksjon før brukeren trykker «Legg til funksjon» (eier 02.10.2026).
-      funksjoner: [] as Funksjonstilstand[],
-      timerIGruppe: null as number | null,
-      moter: null as number | null,
-      visLonn: false,
-      lonn: nyLonnstilstand(),
-      over60: false,
-      livsfase: 'ingen' as Livsfase,
-      /** Redusert undervisning i prosent, eller null for den største reduksjonen i tiltaket. */
-      livsfaseProsent: null as number | null,
-      /** Arbeidsplanen gjelder en periode av skoleåret. Mangler i skjema lagret før 0.7.0. */
-      periode: false as boolean | undefined,
-      dager: null as number | null | undefined,
-      dagerSkolear: null as number | null | undefined,
-      /** Vis prosentene på årsbasis i stedet for i perioden. */
-      arsbasis: false as boolean | undefined,
-      /** Timer på planleggingsdager, eller null for 6 dager × 7,5 timer (som for hel stilling). */
-      planlegging: null as number | null | undefined,
-      /** Første og siste dag i perioden (ÅÅÅÅ-MM-DD), til lønnen for perioden. */
-      fraDato: '' as string | undefined,
-      tilDato: '' as string | undefined,
-    }),
-    (lagret) => {
-      reserverIder(lagret.grupper);
-      reserverFunksjonsider(lagret.funksjoner);
-    },
-  );
+  const [s, sett, endre] = useSkjematilstand('arbeidsplan', nyttArbeidsplanskjema, (lagret) => {
+    reserverIder(lagret.grupper);
+    reserverFunksjonsider(lagret.funksjoner);
+  });
 
-  // Bare utfylte grupper regnes med. Hver har med seg tilstanden, så navn og valg følger riktig gruppe.
-  const iPeriode = s.periode === true;
+  const b = beregnArbeidsplan(hent, rader, s);
+  const { iPeriode, nokkel, fylte, valgtIndeks, prosenter, reduksjon, over60, resultat, feil, utenUtvidelse, fordeling, lonnPeriode, datoFeil, lonn, overtidUtenFag } = b;
   const skolearDager = useRegeltall(hent, 'sfs2213.skolear_dager') ?? 0;
   const dagerPerUke = useRegeltall(hent, 'sfs2213.arbeidsdager_per_uke');
   const dager = s.dager ?? null;
-  const periode = iPeriode && dager !== null && dager > 0 ? { dagerIPerioden: dager, dagerISkolearet: s.dagerSkolear ?? null } : undefined;
   // Uker i perioden for økter per uke: dagene i perioden ÷ skoledager per uke, med mindre brukeren skriver inn antallet.
   const ukerFraDager = dager !== null && dager > 0 && dagerPerUke ? dager / dagerPerUke : 0;
   const ukerHjelp =
@@ -102,73 +94,23 @@ export default function Arbeidsplan() {
   // Årstimer fylt inn fra Grep gjelder et helt år. De tømmes når arbeidsplanen gjøres om til en periode.
   const settPeriode = (pa: boolean) =>
     sett((gammel) => ({ ...gammel, periode: pa, grupper: pa ? gammel.grupper.map((g) => (g.arstimerAuto ? { ...g, arstimer: null, arstimerAuto: false } : g)) : gammel.grupper }));
-  const fylte = s.grupper.map((g) => ({ g, inn: tilGruppe(g, rader, iPeriode) })).filter((x): x is { g: Gruppetilstand; inn: Gruppe } => x.inn !== null);
-  const valgtIndeks = Math.max(0, fylte.findIndex((x) => x.g.id === s.timerIGruppe));
-  // Prosenten for hver funksjon, også dem som er oppgitt i årsrammetimer.
-  const prosenter = s.funksjoner.map((f) => {
-    const inn = tilFunksjon(f);
-    return inn ? (prov(() => funksjonsprosentFor(hent, inn)).resultat ?? 0) : 0;
-  });
-  const funksjoner = s.funksjoner.map(tilFunksjon).filter((f): f is Funksjon => f !== null);
-  // Redusert undervisning etter punkt 6: skrevet inn, eller den største reduksjonen i tiltaket.
   const livsfasesatser = {
     nyutdannet: useRegeltall(hent, livsfaseregler.nyutdannet),
     fra57: useRegeltall(hent, livsfaseregler.fra57),
     fra60: useRegeltall(hent, livsfaseregler.fra60),
   };
-  const livsfaseMaks = s.livsfase === 'ingen' ? null : livsfasesatser[s.livsfase];
-  const reduksjon = s.livsfase === 'ingen' ? 0 : (s.livsfaseProsent ?? livsfaseMaks ?? 0);
-  const over60 = s.livsfase === 'fra60';
-  // I en periode trengs dagene før noe kan regnes ut.
-  const periodeKlar = !iPeriode || periode !== undefined;
-  const nokkel = periode ? (prov(() => periodenokkel(hent, periode)).resultat?.resultat ?? null) : null;
+  const livsfaseMaks = b.livsfaseMaks;
   // Prosentene vises i perioden, eller på årsbasis (× periodenøkkelen) når brukeren velger det.
   const paArsbasis = iPeriode && s.arsbasis === true && nokkel !== null;
   const vis = (prosent: number) => (paArsbasis && nokkel ? prosent * nokkel.verdi : prosent);
-  const { resultat, feil } = prov(() =>
-    periodeKlar && s.stilling !== null && s.stilling > 0 && (fylte.length > 0 || prosenter.some((p) => p > 0) || reduksjon > 0)
-      ? beregnStillingsplan(hent, {
-          stilling: s.stilling,
-          grupper: fylte.map((x) => x.inn),
-          funksjoner,
-          timerIGruppe: fylte.length > 0 ? valgtIndeks : null,
-          reduksjon,
-          ...(periode ? { periode } : {}),
-        })
-      : null,
-  );
-  // Fordelingen av arbeidstiden i stillingen vises alltid, også før noe er lagt inn: fagene, funksjonene og
-  // den delen av stillingen som ikke er fylt ennå. Funksjonene som ikke utvider planfestet tid, fordeles som undervisningen.
-  const sumFunksjoner = (utvid: boolean) => s.funksjoner.reduce((sum, f, i) => sum + (utvider(f) === utvid ? (prosenter[i] ?? 0) : 0), 0);
-  // Redusert undervisning utvider ikke planfestet tid: den frigjorte tiden erstatter undervisning i planfestet tid.
-  const utenUtvidelse = sumFunksjoner(false) + reduksjon;
-  const harStilling = s.stilling !== null && s.stilling > 0;
-  const fordeling =
-    periodeKlar && (resultat || harStilling)
-    ? prov(() =>
-        beregnFordeling(hent, {
-          grupper: fylte.map((x) => x.inn),
-          ...(harStilling ? { stilling: s.stilling ?? 0 } : {}),
-          funksjon: { type: 'prosent', prosent: sumFunksjoner(true) },
-          funksjonUtenUtvidelse: utenUtvidelse,
-          moterPerUke: s.moter ?? 0,
-          planleggingstimer: s.planlegging ?? null,
-          over60,
-          ...(periode ? { periode } : {}),
-        }),
-      ).resultat
-    : null;
+  const harStilling = b.harStilling;
   const maksUke = useRegeltall(hent, 'sfs2213.planfestet_maks_uke');
   const maksDag = useRegeltall(hent, 'sfs2213.planfestet_maks_dag');
   // Timer på planleggingsdager for en lærer i hel stilling: 6 dager × 7,5 timer (samme tall for alle, som i InSchool).
   const planleggingStandard = (useRegeltall(hent, 'sfs2213.arbeidsaar_tillegg_dager') ?? 0) * (useRegeltall(hent, 'sfs2213.timer_per_dag') ?? 0);
   const ukegrenser = maksUke !== null && maksDag !== null && dagerPerUke !== null ? { maksUke, maksDag, dagerPerUke } : null;
   const ikkeFylt = fordeling?.trinn.find((tr) => tr.id === 'ikke_fordelt')?.resultat.verdi ?? 0;
-  // Tillegg per funksjon. Forslaget er minstegodtgjøringen i SFS 2213 punkt 9.1 for funksjonen som er kjent igjen på
-  // navnet, eller for kontaktlærer, som er den vanligste, når navnet ikke kjennes igjen. Brukeren kan skrive inn et annet beløp.
-  const kontaktlaerer = useRegeltall(hent, 'sfs2213.godtgjoring_kontaktlaerer');
-  const radgiver = useRegeltall(hent, 'sfs2213.godtgjoring_radgiver');
-  const satser: Record<string, number | null> = { 'sfs2213.godtgjoring_kontaktlaerer': kontaktlaerer, 'sfs2213.godtgjoring_radgiver': radgiver };
+  const satser = useMemo(() => tilleggssatser(hent), [hent]);
   const kontaktlaererTimer = useRegeltall(hent, 'sfs2213.kontaktlaerer_reduksjon');
   const arsrammeFunksjon = useRegeltall(hent, 'sfs2213.arsramme_funksjon');
   const arsverk60 = useRegeltall(hent, 'sfs2213.arsverk_timer_60_ar');
@@ -176,35 +118,28 @@ export default function Arbeidsplan() {
   const timerPerDag = useRegeltall(hent, 'sfs2213.timer_per_dag');
   // Fra 60 år er årsverket kortere. Forskjellen er arbeidsdager med ekstra ferie (punkt 4, eier 30.09.2026).
   const feriedager60 = arsverk !== null && arsverk60 !== null && timerPerDag ? (arsverk - arsverk60) / timerPerDag : null;
-  const tilleggene = s.funksjoner
-    .map((f, i) => ({ f, i }))
-    .filter(({ f }) => f.tillegg === true)
-    .map(({ f, i }) => ({ navn: f.navn.trim() || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), kr: f.tilleggKr ?? tilleggsforslag(f, satser).verdi }));
-  const tillegg = tilleggene.length > 0 ? tilleggene.reduce((sum, x) => sum + x.kr, 0) : null;
-
-  const lonnsgrunnlag = s.visLonn ? tilLonnsgrunnlag(s.lonn) : null;
-  // I en periode regnes lønnen fra datoene: hele måneder, og arbeidsdager ÷ 21,67 i brutte måneder (som i lønnssystemet).
-  const lonnPeriode = iPeriode && s.fraDato && s.tilDato ? (prov(() => lonnsperiode(hent, s.fraDato ?? '', s.tilDato ?? '')).resultat ?? null) : null;
-  const datoFeil = iPeriode && !!s.fraDato && !!s.tilDato && lonnPeriode === null;
-  // Variabel lønn og overtidsbetaling regnes som i overtidskalkulatoren, med faget som er valgt for årsrammetimer.
-  const overtidsfag = fylte[valgtIndeks]?.inn;
-  const lonn =
-    lonnsgrunnlag && harStilling && periodeKlar && (!iPeriode || lonnPeriode)
-      ? prov(() =>
-          beregnLonn(hent, {
-            lonn: lonnsgrunnlag,
-            stilling: s.stilling ?? 0,
-            tillegg,
-            overtid:
-              resultat && overtidsfag ? { beskjeftigelse: resultat.beskjeftigelse.verdi, arsrammer: overtidsfag.arsrammer, elever: overtidsfag.elever } : null,
-            over60: s.over60 || over60,
-            periodenokkel: nokkel,
-            lonnsandel: lonnPeriode?.andel ?? null,
-          }),
-        )
-      : null;
-  // Variabel lønn og overtid regnes om med et fag. Uten fag sier vi fra.
-  const overtidUtenFag = s.visLonn && resultat !== null && (resultat.variabel.verdi > 0 || resultat.beskjeftigelse.verdi > 100) && !overtidsfag;
+  const hentVariant = (v: Arbeidsplanskjema) => {
+    reserverIder(v.grupper);
+    reserverFunksjonsider(v.funksjoner);
+    sett(v);
+  };
+  // En delt lenke (#/arbeidstid/arbeidsplan?del=…) fyller ut skjemaet. Merknaden øverst sier fra.
+  const [delt, settDelt] = useDeltVariant(STI, sporring.get(DELT_PARAMETER), lesDeltArbeidsplan, hentVariant);
+  // Sammenligning av to varianter: nøkkeltallene regnes ut på samme måte som på siden.
+  const sammenlign = (skjema: Arbeidsplanskjema): Sammenligning => {
+    const fullt = { ...nyttArbeidsplanskjema(), ...skjema };
+    const x = beregnArbeidsplan(hent, rader, fullt);
+    const grupper = {
+      stillingen: t('arbeidstid.arbeidsplan.sammenligning.stillingen'),
+      arbeidstid: t('arbeidstid.arbeidsplan.sammenligning.arbeidstid'),
+      lonn: t('arbeidstid.arbeidsplan.sammenligning.lonn'),
+    };
+    return {
+      tall: nokkeltallForArbeidsplan(x, fullt).map((n) => ({ ...n, navn: nokkeltallNavn(t, n.id, x.iPeriode), gruppe: grupper[n.gruppe] })),
+      merknad: x.iPeriode ? t('arbeidstid.arbeidsplan.sammenligning.periode') : null,
+    };
+  };
+  const tilleggene = b.tilleggene.map(({ i, kr }) => ({ navn: s.funksjoner[i]?.navn.trim() || t('arbeidstid.arbeidsplan.funksjonNr', { nr: i + 1 }), kr }));
   let j = 0;
   const delresultater = s.grupper.map((g) => (fylte.some((x) => x.g.id === g.id) ? (resultat?.grupper[j++]?.beskjeftigelse.verdi ?? null) : null));
   const fagIGruppe = fylte.map((x, i) => fagnavn(x.g, indeks, `${t('arbeidstid.felles.manuellEtikett')} ${formaterTall(resultat?.grupper[i]?.arsramme.verdi ?? 0)}`, malform));
@@ -251,12 +186,6 @@ export default function Arbeidsplan() {
                 tall: medTimer(diff, resultat.differanseTimer),
               },
             ];
-
-  const hentVariant = (v: typeof s) => {
-    reserverIder(v.grupper);
-    reserverFunksjonsider(v.funksjoner);
-    sett(v);
-  };
 
   return (
     <Kalkulatorside
@@ -433,6 +362,8 @@ export default function Arbeidsplan() {
             skjema={s}
             resultat={resultat ? { tittel: t('arbeidstid.resultat.samletBeskjeftigelse'), verdi: resultat.beskjeftigelse.verdi, enhet: 'prosent' } : null}
             onHent={hentVariant}
+            sammenlign={sammenlign}
+            sti={STI}
           />
         </>
       }
@@ -445,6 +376,13 @@ export default function Arbeidsplan() {
         </>
       }
     >
+      <DeltMerknad
+        id="arbeidsplan"
+        delt={delt}
+        settDelt={settDelt}
+        skjema={s}
+        resultat={resultat ? { tittel: t('arbeidstid.resultat.samletBeskjeftigelse'), verdi: resultat.beskjeftigelse.verdi, enhet: 'prosent' } : null}
+      />
       <p class="merknad merknad-liten">{t('arbeidstid.arbeidsplan.illustrasjon')}</p>
       {/* Skjemaet i fem deler (avgjørelse 033): stilling, undervisning, funksjoner, tid på skolen og lønn. */}
       <Skjemadel del="stilling" tittel={t('arbeidstid.skjema.stilling')} sum={s.stilling !== null ? `${tallTekst(s.stilling)} %` : null}>

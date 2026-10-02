@@ -431,6 +431,8 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 - Sammenligning av to varianter side om side, f.eks. med og uten kontaktlærerfunksjon.
 - Varianter kan deles som lenke (komprimert tilstand i adressen).
 
+*Status 02.10.2026:* Fagvalg fra Grep, «Regn ut i Arbeidsplan» fra fagarket og Opplæringsløp og videreføring fra Beskjeftigelse fantes fra før. Vikar og Overtid føres ikke over, fordi de regner ut enkeltoppdrag og ikke en stilling. Sammenligning og deling er bygd i 0.21.0 (avgjørelse 038). Lenken har med navnet på varianten (eier 02.10.2026).
+
 **Lov og forskrift** (eier 02.10.2026: flyttet fra fase 2 til fase 3, så den er klar før fase 4)
 
 - Ny modul «Lov og forskrift» under «Oppslag», ved siden av Begreper: opplæringslova og opplæringsforskrifta med innholdsregister (kapitler og paragrafer), søk i hele teksten og bokser som er lukket til brukeren åpner dem, som i overordnet del.
@@ -440,8 +442,15 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 - Kildene `opplaeringslova` og `opplaeringsforskrifta` slås på i kilderegisteret. Lovdata kan ikke nås fra utviklingsmiljøet, bare fra GitHub Actions. Leseren lages derfor mot et lite utdrag i testene, og første ekte henting kjøres i Actions før modulen publiseres.
 - Omfang (eier 02.10.2026): delene som gjelder videregående opplæring og fagopplæring, tolket vidt. Formål og andre generelle bestemmelser som også gjelder videregående (f.eks. skolemiljø, vurdering, tilpasset opplæring og individuell tilrettelegging), tas med. Kapitler som bare gjelder grunnskolen, tas ikke med. Utvalget legges fram for eier som en liste over kapitler før modulen bygges.
 - Andre forskrifter kan være aktuelle, f.eks. om inntak. Hvilke som finnes og hva de dekker, kartlegges i fasen og legges fram for eier som forslag. De kan tas inn med samme henting og visning.
+- *Utvalg godkjent av eier 02.10.2026:*
+  - Opplæringslova: kapittel 1, 5–21, 23–25 og 27–30. Ikke med: 2–4 (grunnskolen), 22 (privat opplæring) og 26 (kulturskole).
+  - Opplæringsforskrifta: kapittel 4–20, 22 og 23. Ikke med: 1–3 (grunnskolen), 21 (kommunens økonomiske ansvar), 24 (iverksetjing) og vedlegg 1–2.
+  - Hele kapitler tas med, også paragrafer i dem som bare gjelder grunnskolen, så teksten står som i kilden.
+  - Eier ba om at Udirs regelverkssider brukes til å avgjøre om flere lover og forskrifter er aktuelle (02.10.2026). Forslaget fra den kartleggingen legges fram før pakken Lov og forskrift bygges.
 
 **Kontrollpunkt:** Eier vurderer om illustrasjonen er riktig og pedagogisk nyttig, og godkjenner utvalget av kapitler og forskrifter før modulen Lov og forskrift bygges.
+
+*Avklart 02.10.2026:* Det lages ikke `npm run test:endret`, og CI fortsetter å kjøre på main etter fletting (eier).
 
 ### Fase 4 – Tilpasset opplæring og individuell tilrettelegging
 

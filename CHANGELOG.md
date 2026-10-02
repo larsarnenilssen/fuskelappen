@@ -4,6 +4,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.21.0] – 2026-10-02
+
+### Lagt til
+
+- **Arbeidsplan:**
+  - **Sammenlign to varianter side om side**, f.eks. med og uten kontaktlærer. Velg to lagrede varianter, eller én variant og det som er fylt ut nå. Tabellen viser stillingen, undervisningen, funksjonene, beskjeftigelsen og om planen går over eller under stillingen. Den viser også arbeidstiden i timer for hver del og lønnen når den er regnet ut, med forskjellen for hvert tall.
+  - **Del en variant som lenke.** Lenken har det som er fylt ut og navnet på varianten. Den som åpner lenken, får Arbeidsplan ferdig utfylt og kan lagre den som egen variant. Ingenting sendes noe sted: alt står i lenken.
+
+### Endret
+
+- **Lagrede varianter:** På smale skjermer står knappene på egen linje under navnet.
+
 ## [0.20.1] – 2026-10-02
 
 ### Endret
