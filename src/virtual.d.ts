@@ -19,6 +19,12 @@ declare module 'virtual:fagroller' {
   export const laereplaner: Record<string, string>;
 }
 
+declare module 'virtual:tilbud' {
+  /** Tilbudene i videregående, regnet ut når appen bygges (avgjørelse 035). Se src/modules/opplaeringslop/data.ts. */
+  const data: unknown;
+  export default data;
+}
+
 declare const __APP_VERSJON__: string;
 
 declare module '*.yaml' {

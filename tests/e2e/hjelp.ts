@@ -65,6 +65,11 @@ export const ruter = [
   '#/fag/LBR3018',
   '#/fag/LBR3004',
   '#/fag/FINNES0',
+  '#/opplaeringslop',
+  '#/opplaeringslop/HS',
+  '#/opplaeringslop/HS/HSHEA2',
+  '#/opplaeringslop/ST/STUSP1',
+  '#/opplaeringslop/PB/PBPBY3?via=HSHEA2',
   '#/finnes-ikke',
 ];
 

@@ -2998,3 +2998,148 @@ p.fagkort-tittel {
   margin-top: 0.1rem;
   color: var(--farge-advarsel);
 }
+
+/* ---------- Opplæringsløp (avgjørelse 035) ---------- */
+/* Løpet i et program som et tre: hvert tilbud med tilbudene det fører videre til, rykket inn med en strek. */
+.lop,
+.lop-videre {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lop > li {
+  margin: 0 0 var(--rom-2);
+}
+
+.lop-videre {
+  margin: var(--rom-1) 0 0 var(--rom-3);
+  padding-left: var(--rom-3);
+  border-left: 2px solid var(--farge-kant);
+}
+
+.lop-videre > li {
+  margin: var(--rom-1) 0;
+}
+
+.tilbudslenke {
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.tilbudslenke[data-sted='bedrift'] {
+  border-style: dashed;
+}
+
+.liste .tilbudslenke {
+  border: 0;
+  border-radius: 0;
+}
+
+/* Fag og timer i et tilbud: en rad per del, med timene til høyre og fagene under. */
+.tilbud-delliste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.tilbud-del {
+  padding: var(--rom-2) var(--rom-3);
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.tilbud-del:first-child {
+  border-top: 0;
+}
+
+.tilbud-del-topp {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--rom-3);
+  font-weight: 650;
+}
+
+.tilbud-linje {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.tilbud-timer {
+  flex: none;
+}
+
+.tilbud-sum {
+  margin: var(--rom-2) 0 var(--rom-1);
+  padding: 0 var(--rom-3);
+}
+
+.tilbud-fagliste {
+  margin: var(--rom-1) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.tilbud-fagliste li {
+  padding: 2px 0;
+}
+
+.tilbud-fagkode {
+  font-variant-numeric: tabular-nums;
+  font-weight: 650;
+}
+
+.tilbud-merknad {
+  margin: var(--rom-1) 0 0;
+  font-size: var(--str-s);
+}
+
+.tilbud-koder {
+  margin: var(--rom-1) 0 0;
+}
+
+.tilbud-koder-knapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  text-align: left;
+}
+
+.tilbud-utvalg {
+  margin-top: var(--rom-1);
+}
+
+.tilbud-lop,
+.tilbud-vilbli,
+.tilbud-deler {
+  margin: var(--rom-4) 0;
+}
+
+.tilbud-vilbli a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.tilbud-tilpasninger {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  font-size: var(--str-s);
+}
+
+.tilbud-tilpasninger summary {
+  min-height: var(--trykkflate);
+  display: flex;
+  align-items: center;
+  font-weight: 650;
+  cursor: pointer;
+}

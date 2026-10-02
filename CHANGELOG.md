@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.18.0] – 2026-10-02
+
+### Lagt til
+
+- **Opplæringsløp:** ny del under «Læreplanverk og opplæringsløp».
+  - Alle utdanningsprogram, og løpet i hvert program fra vg1 til vg2 og vg3 eller lærefag.
+  - Hvert tilbud viser fagene og timene etter Udirs fag- og timefordeling, valgfrie programfag og yrkesfaglig fordypning, hva det bygger på og fører videre til, påbygging og kryssløp.
+  - Lenker til Vilbli viser skolene og lærebedriftene som har tilbudet, i fylket du har valgt.
+  - Fagene lenker til fagarket, og programområdene på fagarket lenker til tilbudene.
+  - Søket finner utdanningsprogram og tilbud.
+
 ## [0.17.0] – 2026-10-02
 
 ### Endret
