@@ -4,9 +4,10 @@
 
 /**
  * En bit tekst: ren tekst, en lenke (`l` er adressen hos Lovdata, f.eks. «lov/2023-06-09-30/§11-1») eller en
- * fotnotehenvisning (`f`).
+ * fotnotehenvisning (`f`). Peker lenken på en paragraf som står i appen, har den også `a` («opplaeringslova/11-1»),
+ * og appen lenker dit i stedet for til Lovdata. Hentingen setter `a`.
  */
-export type Segment = string | { t: string; l: string } | { f: string };
+export type Segment = string | { t: string; l: string; a?: string } | { f: string };
 
 /** Et ledd i en paragraf, med en liste og tekst etter listen når leddet har det. */
 export interface Ledd {

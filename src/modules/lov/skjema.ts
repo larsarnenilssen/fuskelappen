@@ -57,7 +57,7 @@ export function kapittelliste(kapitler: readonly string[]): string[] {
 
 const segment: z.ZodType<Segment> = z.union([
   z.string(),
-  z.object({ t: z.string().min(1), l: z.string().min(1) }).strict(),
+  z.object({ t: z.string().min(1), l: z.string().min(1), a: z.string().regex(/^[a-z0-9-]+\/[^/]+$/).optional() }).strict(),
   z.object({ f: z.string().min(1) }).strict(),
 ]);
 const tekst = z.array(segment);

@@ -16,7 +16,20 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Kilderegister } from '../src/core/innhold/skjema.ts';
-import { alleParagrafer, alleSeksjoner, kapittelliste, type Lovdokument, lovdokumentSkjema, type Lovoversikt, lovoversiktSkjema, type Lovutvalg, type Paragraf } from '../src/modules/lov/skjema.ts';
+import {
+  alleParagrafer,
+  alleSeksjoner,
+  kapittelliste,
+  type Ledd,
+  type Lovdokument,
+  lovdokumentSkjema,
+  type Lovoversikt,
+  lovoversiktSkjema,
+  type Lovutvalg,
+  type Paragraf,
+  type Seksjon,
+  type Segment,
+} from '../src/modules/lov/skjema.ts';
 import { lesFil } from './innhold/last.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 import { datasettnavn, lesLovdokument } from './lovdata/les.ts';
@@ -94,6 +107,35 @@ export function validerLovdokument(ny: Lovdokument, forrige: Lovdokument | null)
     if (fra > 0 && antall < fra * (1 - MAKS_FALL)) feil.push(`Antallet paragrafer falt fra ${fra} til ${antall}.`);
   }
   return feil;
+}
+
+/**
+ * Lenker i teksten som peker på en paragraf i et dokument appen viser, får adressen i appen (`a`), f.eks. fra
+ * opplæringsforskrifta til «opplæringslova § 5-1». Andre lenker går til Lovdata.
+ */
+export function lenkInternt(dokumenter: readonly Lovdokument[]): Lovdokument[] {
+  const paragrafer = new Map(dokumenter.map((d) => [d.refid, { id: d.id, nr: new Set(alleParagrafer(d.seksjoner).map(({ paragraf }) => paragraf.nr)) }]));
+  const lenk = (tekst: Segment[]): Segment[] =>
+    tekst.map((s) => {
+      if (typeof s === 'string' || !('l' in s)) return s;
+      const m = /^((?:lov|forskrift)\/\d{4}-\d{2}-\d{2}(?:-\d+)?)\/§([^/]+)/.exec(s.l);
+      const mal = m ? paragrafer.get(m[1] as string) : undefined;
+      const nr = m?.[2];
+      return mal && nr && mal.nr.has(nr) ? { t: s.t, l: s.l, a: `${mal.id}/${nr}` } : { t: s.t, l: s.l };
+    });
+  const ledd = (l: Ledd): Ledd => ({
+    ...l,
+    tekst: lenk(l.tekst),
+    ...(l.liste ? { liste: l.liste.map((p) => ({ ...p, ledd: p.ledd.map(ledd) })) } : {}),
+    ...(l.etter ? { etter: l.etter.map(lenk) } : {}),
+  });
+  const seksjon = (s: Seksjon): Seksjon => ({
+    ...s,
+    merknader: s.merknader.map(lenk),
+    seksjoner: s.seksjoner.map(seksjon),
+    paragrafer: s.paragrafer.map((p) => ({ ...p, ledd: p.ledd.map(ledd), endringer: p.endringer.map(lenk), fotnoter: p.fotnoter.map((f) => ({ ...f, tekst: lenk(f.tekst) })) })),
+  });
+  return dokumenter.map((d) => ({ ...d, seksjoner: d.seksjoner.map(seksjon) }));
 }
 
 export function lagOversikt(dokumenter: readonly Lovdokument[]): Lovoversikt {
@@ -183,7 +225,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   }
 
   mkdirSync(MAPPE, { recursive: true });
-  for (const d of dokumenter) writeFileSync(join(MAPPE, `${d.id}.json`), `${JSON.stringify(d, null, 1)}\n`);
+  for (const d of lenkInternt(dokumenter)) writeFileSync(join(MAPPE, `${d.id}.json`), `${JSON.stringify(d, null, 1)}\n`);
   // Dokumenter som er tatt ut av utvalget, fjernes.
   const ider = new Set(utvalg.dokumenter.map((d) => d.id));
   for (const f of readdirSync(MAPPE)) {
