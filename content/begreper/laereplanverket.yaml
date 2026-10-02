@@ -4,15 +4,15 @@
   type: begrep
   tittel: { nb: Læreplanverket, nn: Læreplanverket }
   tekst:
-    nb: Læreplanverket er grunnlaget for opplæringen i grunnskolen og videregående opplæring. Det består blant annet av overordnet del og læreplanene for fagene. Overordnet del gir retning for opplæringen i alle fag, mens læreplanene beskriver innholdet og målene i hvert fag. Delene henger sammen og skal brukes sammen. Læreplanverket har status som forskrift. Læreplanverket som gjelder nå, kalles ofte Kunnskapsløftet 2020 (LK20).
-    nn: Læreplanverket er grunnlaget for opplæringa i grunnskulen og vidaregåande opplæring. Det består mellom anna av overordna del og læreplanane for faga. Overordna del gir retning for opplæringa i alle fag, medan læreplanane beskriv innhaldet og måla i kvart fag. Delane heng saman og skal brukast saman. Læreplanverket har status som forskrift. Læreplanverket som gjeld no, blir ofte kalla Kunnskapsløftet 2020 (LK20).
+    nb: Læreplanverket er grunnlaget for opplæringen i grunnskolen og videregående opplæring. Det består blant annet av overordnet del og læreplanene for fagene. Overordnet del gir retning for opplæringen i alle fag, mens læreplanene beskriver innholdet og målene i hvert fag. Delene henger sammen og skal brukes sammen. Læreplanverket har status som forskrift. Læreplanverket som gjelder nå, heter Kunnskapsløftet 2020 (LK20). Revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20.
+    nn: Læreplanverket er grunnlaget for opplæringa i grunnskulen og vidaregåande opplæring. Det består mellom anna av overordna del og læreplanane for faga. Overordna del gir retning for opplæringa i alle fag, medan læreplanane beskriv innhaldet og måla i kvart fag. Delane heng saman og skal brukast saman. Læreplanverket har status som forskrift. Læreplanverket som gjeld no, heiter Kunnskapsløftet 2020 (LK20). Revisjonen som blir innført no, heiter fagfornyinga og vidarefører LK20.
   kilder:
     - { id: udir-overordnet-del, punkt: Om overordnet del, url: "https://www.udir.no/lk20/overordnet-del/om-overordnet-del/" }
   kontrollert: null
   kontrollsporsmal:
     - "Kilden appen bruker for overordnet del, nevner bare overordnet del og læreplanene for fag. Bør fag- og timefordelingen også nevnes som en del av læreplanverket?"
-    - "Er det riktig å kalle læreplanverket som gjelder nå, Kunnskapsløftet 2020 (LK20), når overordnet del ble fastsatt på nytt i 2026?"
-  stikkord: [LK20, Kunnskapsløftet, læreplan, forskrift]
+    - "Er «Revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20» riktig formulert (eier 02.10.2026)?"
+  stikkord: [LK20, Kunnskapsløftet, fagfornyelsen, læreplan, forskrift]
   relatert: [overordnet-del, kompetanse, grunnleggende-ferdigheter, tverrfaglige-temaer]
 
 - id: overordnet-del
@@ -33,14 +33,14 @@
   type: begrep
   tittel: { nb: Formålsparagrafen, nn: Formålsparagrafen }
   tekst:
-    nb: Formålsparagrafen er bestemmelsen i opplæringsloven som sier hva opplæringen i skole og lærebedrift skal bidra til, blant annet verdier, kulturforståelse, demokrati, kritisk tenkning, medvirkning og at elever og lærlinger skal kunne mestre livene sine. Overordnet del utdyper verdigrunnlaget i formålsparagrafen og gjengir den i sin helhet.
-    nn: Formålsparagrafen er føresegna i opplæringslova som seier kva opplæringa i skule og lærebedrift skal bidra til, mellom anna verdiar, kulturforståing, demokrati, kritisk tenking, medverknad og at elevar og lærlingar skal kunne meistre liva sine. Overordna del utdjupar verdigrunnlaget i formålsparagrafen og gjengir han i heilskap.
+    nb: Formålsparagrafen er opplæringsloven § 1-3, som sier hva opplæringen i skole og lærebedrift skal bidra til, blant annet verdier, kulturforståelse, demokrati, kritisk tenkning, medvirkning og at elever og lærlinger skal kunne mestre livene sine. Overordnet del utdyper verdigrunnlaget i formålsparagrafen og gjengir den i sin helhet.
+    nn: Formålsparagrafen er opplæringslova § 1-3, som seier kva opplæringa i skule og lærebedrift skal bidra til, mellom anna verdiar, kulturforståing, demokrati, kritisk tenking, medverknad og at elevar og lærlingar skal kunne meistre liva sine. Overordna del utdjupar verdigrunnlaget i formålsparagrafen og gjengir han i heilskap.
   kilder:
     - { id: udir-overordnet-del, punkt: Formålet med opplæringen, url: "https://www.udir.no/lk20/overordnet-del/formalet-med-opplaringen/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Overordnet del på udir.no oppgir formålsparagrafen som opplæringsloven § 1-3. Stemmer paragrafnummeret med opplæringsloven som gjelder fra 1.8.2024, og bør det stå i begrepet?"
-  stikkord: [formål, verdier, opplæringsloven, danning]
+    - "Er oppsummeringen av hva formålsparagrafen sier, dekkende uten å bli for lang?"
+  stikkord: [formål, verdier, opplæringsloven, § 1-3, danning]
   relatert: [overordnet-del, laereplanverket]
 
 - id: kompetanse

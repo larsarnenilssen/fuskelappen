@@ -16,7 +16,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
 | Ikke kontrollert | 91 |
-| Praksis og tolkninger som bør bekreftes | 13 av 13 |
+| Praksis og tolkninger som bør bekreftes | 14 av 14 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -50,6 +50,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Utvidet arbeidsår** | Regnes utvidelsen av arbeidsåret fortsatt som timene over 37,5 × 38 + 45 = 1470 planfestede timer, delt på 7,5 timer per dag? | Eier 30.09.2026. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.3, punkt 5.1, punkt 5.2, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Tillegg for funksjoner** | Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner? | Appens valg, med utgangspunkt i SFS 2213 punkt 9.1. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | ikke bekreftet |
+| **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
 
 ## Per kilde
 
@@ -667,7 +668,7 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 **Læreplanverket** (`laereplanverket`, begrep, ikke kontrollert)
 
 - Kilden appen bruker for overordnet del, nevner bare overordnet del og læreplanene for fag. Bør fag- og timefordelingen også nevnes som en del av læreplanverket?
-- Er det riktig å kalle læreplanverket som gjelder nå, Kunnskapsløftet 2020 (LK20), når overordnet del ble fastsatt på nytt i 2026?
+- Er «Revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20» riktig formulert (eier 02.10.2026)?
 
 Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del
 
@@ -679,7 +680,7 @@ Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplær
 
 **Formålsparagrafen** (`formalsparagrafen`, begrep, ikke kontrollert)
 
-- Overordnet del på udir.no oppgir formålsparagrafen som opplæringsloven § 1-3. Stemmer paragrafnummeret med opplæringsloven som gjelder fra 1.8.2024, og bør det stå i begrepet?
+- Er oppsummeringen av hva formålsparagrafen sier, dekkende uten å bli for lang?
 
 Kilder å sjekke mot: [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/formalet-med-opplaringen/): Formålet med opplæringen
 

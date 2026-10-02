@@ -105,3 +105,11 @@ praksis:
     grunnlag: Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020.
     berorer: [sfs2213-2026-2027/kobling_yff]
     bekreftet: null
+
+  - id: fagfornyelsen
+    tittel: Fagfornyelsen og LK20
+    sporsmal: Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20?
+    appen: Begrepet «læreplanverket» sier at læreplanverket som gjelder nå, heter Kunnskapsløftet 2020 (LK20), og at revisjonen som innføres nå, heter fagfornyelsen og viderefører LK20.
+    grunnlag: Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde.
+    berorer: [laereplanverket]
+    bekreftet: null
