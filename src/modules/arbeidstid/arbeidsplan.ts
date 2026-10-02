@@ -349,17 +349,17 @@ const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_pl
 export function nokkeltallForArbeidsplan(
   b: Arbeidsplanberegning,
   s: Arbeidsplanskjema,
-): { id: NokkeltallId; verdi: number | null; enhet: 'prosent' | 'timer' | 'kroner'; gruppe: 'stillingen' | 'arbeidstid' | 'lonn'; valgfri?: boolean }[] {
+): { id: NokkeltallId; verdi: number | null; enhet: 'prosent' | 'timer' | 'kroner'; gruppe: 'stillingen' | 'arbeidstid' | 'lonn'; farge?: FordelingsdelId; valgfri?: boolean }[] {
   const r = b.resultat;
   const del = (id: FordelingsdelId) => b.fordeling?.deler.find((d) => d.id === id)?.timer ?? null;
   return [
     { id: 'stilling', verdi: s.stilling, enhet: 'prosent', gruppe: 'stillingen' },
-    { id: 'undervisning', verdi: r?.undervisning.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
-    { id: 'funksjoner', verdi: r?.funksjon.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
+    { id: 'undervisning', verdi: r?.undervisning.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen', farge: 'undervisning' },
+    { id: 'funksjoner', verdi: r?.funksjon.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen', farge: 'funksjonstid' },
     { id: 'reduksjon', verdi: r ? (r.reduksjon?.verdi ?? 0) : null, enhet: 'prosent', gruppe: 'stillingen', valgfri: true },
     { id: 'beskjeftigelse', verdi: r?.beskjeftigelse.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
     { id: 'differanse', verdi: r?.differanse.verdi ?? null, enhet: 'prosent', gruppe: 'stillingen' },
-    ...fordelingsdeler.map((id) => ({ id: `del_${id}` as const, verdi: del(id), enhet: 'timer' as const, gruppe: 'arbeidstid' as const })),
+    ...fordelingsdeler.map((id) => ({ id: `del_${id}` as const, verdi: del(id), enhet: 'timer' as const, gruppe: 'arbeidstid' as const, farge: id })),
     { id: 'planfestet', verdi: b.fordeling ? b.fordeling.deler.filter((d) => d.planfestet).reduce((sum, d) => sum + d.timer, 0) : null, enhet: 'timer', gruppe: 'arbeidstid' },
     { id: 'lonn', verdi: b.lonn?.resultat?.samlet.verdi ?? null, enhet: 'kroner', gruppe: 'lonn', valgfri: true },
   ];

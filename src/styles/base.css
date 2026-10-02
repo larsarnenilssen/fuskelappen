@@ -2072,15 +2072,190 @@ p.fagkort-tittel {
   margin: 0;
 }
 
+/* ---------- Sammenligning av to varianter ----------
+   Full bredde under kalkulatoren. Én rad per tall med begge verdiene og endringen. Enheten står i gruppeoverskriften,
+   så tallene får plass på én linje også på 320 px. Merkene 1 og 2 knytter kolonnene til valgene over. */
+
+.sammenligning-kort {
+  scroll-margin-top: var(--rom-3);
+}
+
+.sammenligning-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+}
+
+.sammenligning-valg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0 var(--rom-4);
+}
+
+.sammenligning-valg select {
+  width: 100%;
+}
+
+.sammenligning-merke {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 var(--rom-1);
+  border-radius: 999px;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.sammenligning-merke-1 {
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+}
+
+.sammenligning-merke-2 {
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+.sammenligning {
+  width: 100%;
+  margin-top: var(--rom-2);
+  border-collapse: collapse;
+  font-size: var(--str-s);
+}
+
+.sammenligning thead th {
+  padding: 0 0 var(--rom-2) var(--rom-3);
+  text-align: right;
+  font-size: var(--str-xs);
+  font-weight: 600;
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+.sammenligning-kolonnenavn {
+  margin-left: var(--rom-1);
+  white-space: normal;
+}
+
+.sammenligning-gruppe th {
+  padding: var(--rom-4) 0 var(--rom-1);
+  text-align: left;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--farge-tekst-dempet);
+  border-bottom: calc(var(--strek) * 2) solid var(--farge-kant);
+}
+
+.sammenligning tbody th[scope='row'] {
+  padding: var(--rom-2) var(--rom-2) var(--rom-2) 0;
+  text-align: left;
+  font-weight: 400;
+}
+
+.sammenligning-radnavn {
+  display: flex;
+  align-items: baseline;
+  gap: var(--rom-2);
+  /* Lange ord som «beskjeftigelse» deles, så tallene får plass på smale skjermer. */
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.sammenligning-endring-under {
+  display: none;
+}
+
+/* Navnekolonnen tar resten av bredden, så tallene står samlet til høyre på store skjermer. */
+.sammenligning thead td:first-child {
+  width: 100%;
+}
+
+.sammenligning-radnavn .fordeling-farge {
+  flex: none;
+}
+
+.sammenligning td.tall {
+  padding: var(--rom-2) 0 var(--rom-2) var(--rom-3);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.sammenligning tbody tr:not(.sammenligning-gruppe) {
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+/* Uendret: dempet. Endret: endringen står i en gul lapp med pil opp eller ned. */
+.sammenligning tr.uendret {
+  color: var(--farge-tekst-dempet);
+}
+
+.sammenligning tr.endret th[scope='row'] {
+  font-weight: 600;
+}
+
+.sammenligning-pil {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.1rem;
+  padding: 0.05rem var(--rom-2) 0.05rem var(--rom-1);
+  border-radius: 999px;
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+  font-weight: 700;
+}
+
+/* På smale skjermer står bare merkene 1 og 2 over kolonnene. Navnene står i valgene over tabellen. */
+@media (max-width: 36rem) {
+  .sammenligning-kort {
+    padding-left: var(--rom-3);
+    padding-right: var(--rom-3);
+  }
+
+  .sammenligning-kolonnenavn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .sammenligning td.tall,
+  .sammenligning thead th {
+    padding-left: var(--rom-2);
+  }
+
+  /* Endringen står under navnet i stedet for i egen kolonne, så tallene får plass. */
+  .sammenligning .sammenligning-endring {
+    display: none;
+  }
+
+  .sammenligning-endring-under {
+    display: block;
+    margin-top: var(--rom-1);
+  }
+}
+
 .variantliste {
   list-style: none;
   margin: 0 0 var(--rom-2);
   padding: 0;
 }
 
+/* Hver variant har to linjer: navnet med blyant og slett, og resultatet øverst; tidspunktet, Hent og Del, og
+   forskjellen fra det som er fylt ut nå under (eier 02.10.2026). */
 .variantliste li {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-areas:
+    'navn navn verdi'
+    'dato knapper naa';
   align-items: center;
   gap: 0 var(--rom-3);
   padding: var(--rom-1) 0;
@@ -2088,12 +2263,26 @@ p.fagkort-tittel {
 }
 
 .variant-navn {
+  grid-area: navn;
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
   min-width: 0;
   font-weight: 600;
 }
 
+.variant-dato {
+  grid-area: dato;
+}
+
+.variant-naa {
+  grid-area: naa;
+  text-align: right;
+}
+
 .variant-tittel {
-  overflow-wrap: anywhere;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .variant-navnknapp {
@@ -2108,6 +2297,7 @@ p.fagkort-tittel {
 }
 
 .variant-verdi {
+  grid-area: verdi;
   font-weight: 700;
   text-align: right;
 }
@@ -2121,21 +2311,10 @@ p.fagkort-tittel {
 }
 
 .variant-knapper {
+  grid-area: knapper;
   display: inline-flex;
   align-items: center;
   gap: var(--rom-1);
-}
-
-/* På smale skjermer står knappene på egen linje under navnet, så navnet ikke deles midt i ordene. */
-@media (max-width: 400px) {
-  .variantliste li {
-    grid-template-columns: minmax(0, 1fr) auto;
-  }
-
-  .variant-knapper {
-    grid-column: 1 / -1;
-    justify-self: end;
-  }
 }
 
 .variant-handlinger {
@@ -2172,56 +2351,6 @@ p.fagkort-tittel {
   font-weight: 600;
 }
 
-/* Sammenligning av to varianter: navnet på en egen linje over tallene, så tabellen får plass på smale skjermer. */
-.sammenligning-boks {
-  margin: var(--rom-3) 0 0;
-}
-
-.sammenligning-boks .liten-overskrift {
-  margin: 0;
-}
-
-.sammenligning {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;
-  font-size: var(--str-s);
-}
-
-.sammenligning thead th {
-  padding: var(--rom-1) 0 var(--rom-1) var(--rom-2);
-  text-align: right;
-  font-size: var(--str-xs);
-  font-weight: 600;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  vertical-align: bottom;
-}
-
-.sammenligning-gruppe th {
-  padding: var(--rom-3) 0 var(--rom-1);
-  text-align: left;
-  font-weight: 700;
-  border-bottom: var(--strek) solid var(--farge-kant);
-}
-
-.sammenligning-navn th {
-  padding: var(--rom-2) 0 0;
-  text-align: left;
-  font-weight: 400;
-  color: var(--farge-tekst-dempet);
-}
-
-.sammenligning-tall td {
-  padding: 0 0 var(--rom-1) var(--rom-2);
-  text-align: right;
-  border-bottom: var(--strek) solid var(--farge-linje);
-  overflow-wrap: break-word;
-}
-
-.sammenligning-forskjell {
-  font-weight: 700;
-}
 
 /* ---------- Utskrift og PDF ----------
    Bare kalkulatoren skrives ut: menyer, knapper og faste linjer skjules, og innhold i lukkede kort og utregningen vises. */

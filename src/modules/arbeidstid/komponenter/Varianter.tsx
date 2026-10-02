@@ -11,6 +11,7 @@ import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import type { Enhet } from '../beregning/index.ts';
 import type { KalkulatorId } from './Kalkulatorside.tsx';
+import { Vippe } from './Skjema.tsx';
 import { medEnhet, tallTekst } from './Utregning.tsx';
 
 /** Høyst så mange varianter per kalkulator. */
@@ -183,11 +184,14 @@ export interface Nokkeltall {
   id: string;
   navn: string;
   verdi: number | null;
-  enhet: Enhet;
-  /** Overskriften over tallene som hører sammen, f.eks. «Arbeidstiden i timer». */
+  /** Overskriften over tallene som hører sammen, med enheten, f.eks. «Arbeidstiden, timer per år». */
   gruppe: string;
+  /** Fargen tallet har i diagrammene (en del av arbeidstiden), som et lite merke foran navnet. */
+  farge?: string;
   /** Vises bare når minst én av variantene har et tall som ikke er 0. */
   valgfri?: boolean;
+  /** Desimaler i visningen (2 når det ikke er oppgitt). */
+  desimaler?: number;
 }
 
 export interface Sammenligning {
@@ -196,76 +200,98 @@ export interface Sammenligning {
   merknad?: string | null;
 }
 
-/** Sammenligning av to varianter side om side, med forskjellen (den andre minus den første). */
-function Sammenligningstabell({ a, b, navnA, navnB }: { a: Sammenligning; b: Sammenligning; navnA: string; navnB: string }) {
+/** Merket for den første (1) og den andre (2) varianten i sammenligningen. */
+function Merke({ nr }: { nr: 1 | 2 }) {
+  return (
+    <span class={`sammenligning-merke sammenligning-merke-${nr}`} aria-hidden="true">
+      {nr}
+    </span>
+  );
+}
+
+/**
+ * Sammenligning av to varianter: én rad per tall med begge verdiene og endringen (den andre minus den første).
+ * Enheten står i gruppeoverskriften, så tallene får plass på smale skjermer. Rader som er endret, er uthevet,
+ * og endringen har pil opp eller ned. Rader uten endring er dempet.
+ */
+function Sammenligningstabell({ a, b, navnA, navnB, bareEndret }: { a: Sammenligning; b: Sammenligning; navnA: string; navnB: string; bareEndret: boolean }) {
   const { t } = useTekst();
-  const id = useId();
   const tallB = new Map(b.tall.map((x) => [x.id, x]));
+  const endring = (x: number | null, y: number | null) => (x === null || y === null ? null : y - x);
+  const erEndret = (d: number | null) => d !== null && Math.abs(d) >= 0.005;
   const rader = a.tall
-    .map((x) => ({ x, y: tallB.get(x.id) }))
-    .filter(({ x, y }) => (x.verdi !== null || (y?.verdi ?? null) !== null) && (!x.valgfri || Math.abs(x.verdi ?? 0) > 0.005 || Math.abs(y?.verdi ?? 0) > 0.005));
+    .map((x) => ({ x, y: tallB.get(x.id)?.verdi ?? null }))
+    .filter(({ x, y }) => x.verdi !== null || y !== null)
+    .filter(({ x, y }) => !x.valgfri || Math.abs(x.verdi ?? 0) >= 0.005 || Math.abs(y ?? 0) >= 0.005)
+    .filter(({ x, y }) => !bareEndret || erEndret(endring(x.verdi, y)));
+  const grupper = [...new Set(rader.map((r) => r.x.gruppe))];
   const merknader = [...new Set([a.merknad, b.merknad].filter((m): m is string => !!m))];
-  let gruppe = '';
-  // Timene står uten enhet, fordi gruppen sier «i timer». Da får tallene plass på én linje på smale skjermer.
-  const vis = (verdi: number, enhet: Enhet) => (enhet === 'timer' ? tallTekst(verdi) : medEnhet(t, verdi, enhet));
-  const forskjell = (b: number, a: number, enhet: Enhet) => {
-    if (enhet !== 'timer') return differanse(t, b, a, enhet);
-    const d = b - a;
-    return Math.abs(d) < 0.005 ? '±0' : `${d > 0 ? '+' : '−'}${tallTekst(Math.abs(d))}`;
-  };
+  if (rader.length === 0) return <p class="felt-hjelp">{t('arbeidstid.varianter.ingenEndring')}</p>;
   return (
     <>
       <table class="sammenligning">
         <caption class="skjult-visuelt">{t('arbeidstid.varianter.sammenlignTittel')}</caption>
         <thead>
           <tr>
-            <th scope="col" id={`${id}-a`}>
-              {navnA}
+            <td />
+            <th scope="col">
+              <Merke nr={1} />
+              <span class="sammenligning-kolonnenavn">{navnA}</span>
             </th>
-            <th scope="col" id={`${id}-b`}>
-              {navnB}
+            <th scope="col">
+              <Merke nr={2} />
+              <span class="sammenligning-kolonnenavn">{navnB}</span>
             </th>
-            <th scope="col" id={`${id}-d`}>
-              {t('arbeidstid.varianter.forskjell')}
+            <th scope="col" class="sammenligning-endring">
+              {t('arbeidstid.varianter.endring')}
             </th>
           </tr>
         </thead>
-        <tbody>
-          {rader.flatMap(({ x, y }, i) => {
-            const ut = [];
-            if (x.gruppe !== gruppe) {
-              gruppe = x.gruppe;
-              ut.push(
-                <tr key={`g${i}`} class="sammenligning-gruppe">
-                  <th colSpan={3} scope="colgroup">
-                    {x.gruppe}
-                  </th>
-                </tr>,
-              );
-            }
-            const navnId = `${id}-${x.id}`;
-            const vb = y?.verdi ?? null;
-            ut.push(
-              <tr key={`n${i}`} class="sammenligning-navn">
-                <th colSpan={3} scope="colgroup" id={navnId}>
-                  {x.navn}
-                </th>
-              </tr>,
-              <tr key={`t${i}`} class="sammenligning-tall" data-nokkeltall={x.id}>
-                <td class="tall" headers={`${navnId} ${id}-a`}>
-                  {x.verdi === null ? '–' : vis(x.verdi, x.enhet)}
-                </td>
-                <td class="tall" headers={`${navnId} ${id}-b`}>
-                  {vb === null ? '–' : vis(vb, x.enhet)}
-                </td>
-                <td class="tall sammenligning-forskjell" headers={`${navnId} ${id}-d`}>
-                  {x.verdi === null || vb === null ? '–' : forskjell(vb, x.verdi, x.enhet)}
-                </td>
-              </tr>,
-            );
-            return ut;
-          })}
-        </tbody>
+        {grupper.map((g) => (
+          <tbody key={g}>
+            <tr class="sammenligning-gruppe">
+              <th colSpan={4} scope="colgroup">
+                {g}
+              </th>
+            </tr>
+            {rader
+              .filter((r) => r.x.gruppe === g)
+              .map(({ x, y }) => {
+                const d = endring(x.verdi, y);
+                const endret = erEndret(d);
+                // Endringen står i egen kolonne, eller under navnet på smale skjermer (der kolonnen er skjult).
+                const endringstekst =
+                  d === null ? (
+                    '–'
+                  ) : endret ? (
+                    <span class="sammenligning-pil">
+                      <Ikon navn={d > 0 ? 'opp' : 'ned'} class="ikon-liten" />
+                      <span class="skjult-visuelt">{d > 0 ? t('arbeidstid.varianter.okning') : t('arbeidstid.varianter.reduksjon')} </span>
+                      {tallTekst(Math.abs(d), x.desimaler)}
+                    </span>
+                  ) : (
+                    <span title={t('arbeidstid.varianter.likt')}>
+                      <span aria-hidden="true">=</span>
+                      <span class="skjult-visuelt">{t('arbeidstid.varianter.likt')}</span>
+                    </span>
+                  );
+                return (
+                  <tr key={x.id} class={endret ? 'endret' : 'uendret'} data-nokkeltall={x.id}>
+                    <th scope="row">
+                      <span class="sammenligning-radnavn">
+                        {x.farge && <span class={`fordeling-farge fordeling-del-${x.farge}`} aria-hidden="true" />}
+                        <span>{x.navn}</span>
+                      </span>
+                      {endret && <span class="sammenligning-endring-under">{endringstekst}</span>}
+                    </th>
+                    <td class="tall">{x.verdi === null ? '–' : tallTekst(x.verdi, x.desimaler)}</td>
+                    <td class="tall">{y === null ? '–' : tallTekst(y, x.desimaler)}</td>
+                    <td class="tall sammenligning-endring">{endringstekst}</td>
+                  </tr>
+                );
+              })}
+          </tbody>
+        ))}
       </table>
       {merknader.map((m) => (
         <p key={m} class="felt-hjelp">
@@ -276,6 +302,103 @@ function Sammenligningstabell({ a, b, navnA, navnB }: { a: Sammenligning; b: Sam
   );
 }
 
+/** Valget «det som er fylt ut nå» i sammenligningen. */
+const NAA = 'naa';
+
+/** Navnet på en variant i listen og i sammenligningen: navnet brukeren har gitt den, eller «Variant 1» osv. */
+function useVisningsnavn() {
+  const { t } = useTekst();
+  return (v: Variant, i: number) => v.navn?.trim() || t('arbeidstid.varianter.variant', { nr: i + 1 });
+}
+
+/** Kan to varianter sammenlignes: minst to lagrede, eller én lagret og et utfylt skjema som kan regnes ut. */
+function kanSammenlignes(antall: number, harResultat: boolean): boolean {
+  return antall + (harResultat ? 1 : 0) >= 2;
+}
+
+/**
+ * Sammenligningen av to varianter, i full bredde under kalkulatoren. Brukeren velger to av variantene eller det som er
+ * fylt ut nå. Åpnes med «Sammenlign» under lagrede varianter.
+ */
+export function Sammenligningsvisning<T extends object>({
+  id,
+  skjema,
+  harResultat,
+  sammenlign,
+  aapen,
+  onLukk,
+}: {
+  id: KalkulatorId;
+  skjema: T;
+  /** Sann når det som er fylt ut nå, kan regnes ut. Da kan det velges i sammenligningen. */
+  harResultat: boolean;
+  sammenlign: (skjema: T) => Sammenligning;
+  aapen: boolean;
+  onLukk: () => void;
+}) {
+  const { t } = useTekst();
+  const { scenarier } = useTilstand();
+  const liste = lesVarianter(scenarier, id);
+  const visningsnavn = useVisningsnavn();
+  const valg = [
+    ...liste.map((v, i) => ({ nokkel: v.lagret, navn: visningsnavn(v, i), skjema: { ...skjema, ...(v.skjema as Partial<T>) } as T })),
+    ...(harResultat ? [{ nokkel: NAA, navn: t('arbeidstid.varianter.fyltUtNaa'), skjema }] : []),
+  ];
+  const [valgA, settValgA] = useState<string | null>(null);
+  const [valgB, settValgB] = useState<string | null>(null);
+  const [bareEndret, settBareEndret] = useState(false);
+  const a = valg.find((x) => x.nokkel === valgA) ?? valg[0];
+  const b = valg.find((x) => x.nokkel === valgB) ?? valg.find((x) => x.nokkel === NAA && x !== a) ?? valg.find((x) => x !== a);
+  const idA = useId();
+  const idB = useId();
+  const idTittel = useId();
+  const boks = useRef<HTMLElement>(null);
+  // Når sammenligningen åpnes, rulles den fram med overskriften synlig.
+  useEffect(() => {
+    if (aapen) requestAnimationFrame(() => boks.current?.scrollIntoView({ block: 'start' }));
+  }, [aapen]);
+  if (!aapen || !a || !b || !kanSammenlignes(liste.length, harResultat)) return null;
+  const velger = (nr: 1 | 2, idValg: string, verdi: string, sett: (v: string) => void) => (
+    <div class="felt felt-liten">
+      <label for={idValg}>
+        <Merke nr={nr} /> {nr === 1 ? t('arbeidstid.varianter.forste') : t('arbeidstid.varianter.andre')}
+      </label>
+      <select id={idValg} value={verdi} onChange={(e) => sett(e.currentTarget.value)}>
+        {valg.map((x) => (
+          <option key={x.nokkel} value={x.nokkel}>
+            {x.navn}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+  return (
+    <section class="kort sammenligning-kort" ref={boks} aria-labelledby={idTittel}>
+      <div class="sammenligning-topp">
+        <h2 id={idTittel} class="liten-overskrift">
+          {t('arbeidstid.varianter.sammenlignTittel')}
+        </h2>
+        <button type="button" class="ikonknapp" aria-label={t('arbeidstid.varianter.lukkSammenligning')} onClick={onLukk}>
+          <Ikon navn="lukk" class="ikon-liten" />
+        </button>
+      </div>
+      <p class="felt-hjelp">{t('arbeidstid.varianter.sammenlignHjelp')}</p>
+      <div class="sammenligning-valg">
+        {velger(1, idA, a.nokkel, settValgA)}
+        {velger(2, idB, b.nokkel, settValgB)}
+      </div>
+      {a.nokkel === b.nokkel ? (
+        <p class="felt-hjelp">{t('arbeidstid.varianter.likeValg')}</p>
+      ) : (
+        <>
+          <Vippe tekst={t('arbeidstid.varianter.bareEndret')} pa={bareEndret} onEndring={settBareEndret} />
+          <Sammenligningstabell a={sammenlign(a.skjema)} b={sammenlign(b.skjema)} navnA={a.navn} navnB={b.navn} bareEndret={bareEndret} />
+        </>
+      )}
+    </section>
+  );
+}
+
 /** Differansen mot en lagret variant, med fortegn: «+2,77 %». */
 function differanse(t: ReturnType<typeof useTekst>['t'], naa: number, da: number, enhet: Enhet): string {
   const d = naa - da;
@@ -283,15 +406,12 @@ function differanse(t: ReturnType<typeof useTekst>['t'], naa: number, da: number
   return `${d > 0 ? '+' : '−'}${medEnhet(t, Math.abs(d), enhet)}`;
 }
 
-/** Valget «det som er fylt ut nå» i sammenligningen. */
-const NAA = 'naa';
-
 export function Varianter<T extends object>({
   id,
   skjema,
   resultat,
   onHent,
-  sammenlign,
+  onSammenlign,
   sti,
 }: {
   id: KalkulatorId;
@@ -300,8 +420,8 @@ export function Varianter<T extends object>({
   resultat: Hovedresultat | null;
   /** Fyller ut skjemaet med en lagret variant. */
   onHent: (skjema: T) => void;
-  /** Nøkkeltallene for et skjema. Med den kan to varianter sammenlignes side om side. */
-  sammenlign?: (skjema: T) => Sammenligning;
+  /** Åpner sammenligningen av to varianter (Sammenligningsvisning). Uten den vises ikke knappen «Sammenlign». */
+  onSammenlign?: () => void;
   /** Adressen til kalkulatoren. Med den kan en variant deles som lenke. */
   sti?: string;
 }) {
@@ -316,7 +436,7 @@ export function Varianter<T extends object>({
     if (redigerer) felt.current?.focus();
   }, [redigerer]);
 
-  const visningsnavn = (v: Variant, i: number) => v.navn?.trim() || t('arbeidstid.varianter.variant', { nr: i + 1 });
+  const visningsnavn = useVisningsnavn();
   const startNavn = (v: Variant) => {
     settUtkast(v.navn ?? '');
     settRedigerer(v.lagret);
@@ -375,16 +495,8 @@ export function Varianter<T extends object>({
     if (deling?.status === 'vis') lenkefelt.current?.select();
   }, [deling]);
 
-  // Sammenligning: to valg blant variantene og det som er fylt ut nå.
-  const [visSammenligning, settVisSammenligning] = useState(false);
-  const valg = [...liste.map((v, i) => ({ nokkel: v.lagret, navn: visningsnavn(v, i), skjema: { ...skjema, ...(v.skjema as Partial<T>) } as T })), ...(resultat ? [{ nokkel: NAA, navn: t('arbeidstid.varianter.fyltUtNaa'), skjema }] : [])];
-  const [valgA, settValgA] = useState<string | null>(null);
-  const [valgB, settValgB] = useState<string | null>(null);
-  const a = valg.find((x) => x.nokkel === valgA) ?? valg[0];
-  const b = valg.find((x) => x.nokkel === valgB) ?? valg.find((x) => x.nokkel === NAA && x !== a) ?? valg.find((x) => x !== a);
-  const kanSammenligne = !!sammenlign && valg.length >= 2;
-  const idA = useId();
-  const idB = useId();
+  const kanSammenligne = !!onSammenlign && kanSammenlignes(liste.length, resultat !== null);
+  const idLenke = useId();
 
   return (
     <section class="varianter" aria-label={t('arbeidstid.varianter.tittel')}>
@@ -398,6 +510,7 @@ export function Varianter<T extends object>({
         <ol class="variantliste">
           {liste.map((v, i) => (
             <li key={v.lagret}>
+              {/* Linje 1: navnet med blyant og slett, og resultatet. Linje 2: tidspunktet, Hent og Del, og forskjellen fra nå. */}
               {redigerer === v.lagret ? (
                 <span class="variant-navn">
                   <input
@@ -416,7 +529,6 @@ export function Varianter<T extends object>({
                       if (e.key === 'Escape') settRedigerer(null);
                     }}
                   />
-                  <span class="variant-under"> {kortTidspunkt(v.lagret, malform)}</span>
                 </span>
               ) : (
                 <span class="variant-navn">
@@ -424,15 +536,18 @@ export function Varianter<T extends object>({
                   <button type="button" class="ikonknapp variant-navnknapp" aria-label={t('arbeidstid.varianter.endreNavn', { navn: visningsnavn(v, i) })} onClick={() => startNavn(v)}>
                     <Ikon navn="blyant" class="ikon-liten" />
                   </button>
-                  <span class="variant-under"> {kortTidspunkt(v.lagret, malform)}</span>
+                  <button
+                    type="button"
+                    class="ikonknapp variant-navnknapp"
+                    aria-label={t('arbeidstid.varianter.slett', { navn: visningsnavn(v, i) })}
+                    onClick={() => skrivVarianter(id, liste.filter((x) => x.lagret !== v.lagret))}
+                  >
+                    <Ikon navn="lukk" class="ikon-liten" />
+                  </button>
                 </span>
               )}
-              <span class="variant-verdi tall">
-                {medEnhet(t, v.resultat.verdi, v.resultat.enhet)}
-                {resultat && resultat.enhet === v.resultat.enhet && (
-                  <span class="variant-under"> {t('arbeidstid.varianter.naa', { differanse: differanse(t, resultat.verdi, v.resultat.verdi, v.resultat.enhet) })}</span>
-                )}
-              </span>
+              <span class="variant-verdi tall">{medEnhet(t, v.resultat.verdi, v.resultat.enhet)}</span>
+              <span class="variant-under variant-dato">{kortTidspunkt(v.lagret, malform)}</span>
               <span class="variant-knapper">
                 <button type="button" class="lenkeknapp liten" onClick={() => onHent({ ...skjema, ...(v.skjema as Partial<T>) })}>
                   {t('arbeidstid.varianter.hent')}
@@ -443,14 +558,9 @@ export function Varianter<T extends object>({
                     <Ikon navn="del" class="ikon-liten" />
                   </button>
                 )}
-                <button
-                  type="button"
-                  class="ikonknapp"
-                  aria-label={t('arbeidstid.varianter.slett', { navn: visningsnavn(v, i) })}
-                  onClick={() => skrivVarianter(id, liste.filter((x) => x.lagret !== v.lagret))}
-                >
-                  <Ikon navn="lukk" class="ikon-liten" />
-                </button>
+              </span>
+              <span class="variant-under variant-naa tall">
+                {resultat && resultat.enhet === v.resultat.enhet && t('arbeidstid.varianter.naa', { differanse: differanse(t, resultat.verdi, v.resultat.verdi, v.resultat.enhet) })}
               </span>
             </li>
           ))}
@@ -458,10 +568,10 @@ export function Varianter<T extends object>({
       )}
       {deling && liste.some((v) => v.lagret === deling.lagret) && (
         <div class="delt-lenke">
-          <label for={`${idA}-lenke`} class="liten">
+          <label for={idLenke} class="liten">
             {t('arbeidstid.varianter.lenke', { navn: deling.navn })}
           </label>
-          <input ref={lenkefelt} id={`${idA}-lenke`} class="tekstfelt" type="url" readOnly value={deling.lenke} onFocus={(e) => e.currentTarget.select()} />
+          <input ref={lenkefelt} id={idLenke} class="tekstfelt" type="url" readOnly value={deling.lenke} onFocus={(e) => e.currentTarget.select()} />
           <p class="felt-hjelp" role="status">
             {deling.status === 'kopiert' ? t('arbeidstid.varianter.kopiert') : deling.status === 'delt' ? t('arbeidstid.varianter.delt') : t('arbeidstid.varianter.kopierSelv')}{' '}
             {t('arbeidstid.varianter.delHjelp')}
@@ -474,45 +584,12 @@ export function Varianter<T extends object>({
           {t('arbeidstid.varianter.lagre')}
         </button>
         {kanSammenligne && (
-          <button type="button" class="knapp knapp-sekundaer knapp-liten" aria-expanded={visSammenligning} onClick={() => settVisSammenligning(!visSammenligning)}>
-            <Ikon navn={visSammenligning ? 'opp' : 'ned'} class="ikon-liten" />
+          <button type="button" class="knapp knapp-sekundaer knapp-liten" onClick={onSammenlign}>
+            <Ikon navn="kategori" class="ikon-liten" />
             {t('arbeidstid.varianter.sammenlign')}
           </button>
         )}
       </div>
-      {kanSammenligne && visSammenligning && a && b && sammenlign && (
-        <div class="sammenligning-boks">
-          <h3 class="liten-overskrift">{t('arbeidstid.varianter.sammenlignTittel')}</h3>
-          <p class="felt-hjelp">{t('arbeidstid.varianter.sammenlignHjelp')}</p>
-          <div class="feltrad">
-            <div class="felt felt-liten">
-              <label for={idA}>{t('arbeidstid.varianter.forste')}</label>
-              <select id={idA} value={a.nokkel} onChange={(e) => settValgA(e.currentTarget.value)}>
-                {valg.map((x) => (
-                  <option key={x.nokkel} value={x.nokkel}>
-                    {x.navn}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div class="felt felt-liten">
-              <label for={idB}>{t('arbeidstid.varianter.andre')}</label>
-              <select id={idB} value={b.nokkel} onChange={(e) => settValgB(e.currentTarget.value)}>
-                {valg.map((x) => (
-                  <option key={x.nokkel} value={x.nokkel}>
-                    {x.navn}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-          {a.nokkel === b.nokkel ? (
-            <p class="felt-hjelp">{t('arbeidstid.varianter.likeValg')}</p>
-          ) : (
-            <Sammenligningstabell a={sammenlign(a.skjema)} b={sammenlign(b.skjema)} navnA={a.navn} navnB={b.navn} />
-          )}
-        </div>
-      )}
     </section>
   );
 }

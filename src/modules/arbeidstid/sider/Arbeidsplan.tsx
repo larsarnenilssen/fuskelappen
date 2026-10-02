@@ -23,7 +23,7 @@ import { Oversiktsliste } from '../komponenter/Oversikt.tsx';
 import { Skjemadel } from '../komponenter/Skjemadel.tsx';
 import { Bryter, type Fagindeks, type Gruppetilstand, Grupper, radTekst, reserverIder, useFagindeks, Vippe } from '../komponenter/Skjema.tsx';
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
-import { DeltMerknad, DELT_PARAMETER, type Sammenligning, useDeltVariant, Varianter } from '../komponenter/Varianter.tsx';
+import { DeltMerknad, DELT_PARAMETER, type Sammenligning, Sammenligningsvisning, useDeltVariant, Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
 
 const fordelingsdeler: FordelingsdelId[] = ['undervisning', 'motetid', 'annen_planfestet', 'planleggingsdager', 'funksjonstid', 'selvdisponert'];
@@ -75,6 +75,7 @@ export default function Arbeidsplan({ sporring }: SideProps) {
   const uker = useRegeltall(hent, 'sfs2213.skolear_uker') ?? 0;
   const idTimer = useId();
   const [visHvertFag, settVisHvertFag] = useState(false);
+  const [visSammenligning, settVisSammenligning] = useState(false);
   const [s, sett, endre] = useSkjematilstand('arbeidsplan', nyttArbeidsplanskjema, (lagret) => {
     reserverIder(lagret.grupper);
     reserverFunksjonsider(lagret.funksjoner);
@@ -129,13 +130,23 @@ export default function Arbeidsplan({ sporring }: SideProps) {
   const sammenlign = (skjema: Arbeidsplanskjema): Sammenligning => {
     const fullt = { ...nyttArbeidsplanskjema(), ...skjema };
     const x = beregnArbeidsplan(hent, rader, fullt);
+    // Enheten står i gruppeoverskriften, så tallene i tabellen kan stå uten enhet.
     const grupper = {
       stillingen: t('arbeidstid.arbeidsplan.sammenligning.stillingen'),
-      arbeidstid: t('arbeidstid.arbeidsplan.sammenligning.arbeidstid'),
+      arbeidstid: x.iPeriode ? t('arbeidstid.arbeidsplan.sammenligning.arbeidstidPeriode') : t('arbeidstid.arbeidsplan.sammenligning.arbeidstid'),
       lonn: t('arbeidstid.arbeidsplan.sammenligning.lonn'),
     };
     return {
-      tall: nokkeltallForArbeidsplan(x, fullt).map((n) => ({ ...n, navn: nokkeltallNavn(t, n.id, x.iPeriode), gruppe: grupper[n.gruppe] })),
+      tall: nokkeltallForArbeidsplan(x, fullt).map((n) => ({
+        id: n.id,
+        verdi: n.verdi,
+        navn: nokkeltallNavn(t, n.id, x.iPeriode),
+        gruppe: grupper[n.gruppe],
+        ...(n.farge ? { farge: n.farge } : {}),
+        ...(n.valgfri ? { valgfri: true } : {}),
+        // Timer med én desimal, som i fordelingstabellen, og hele kroner.
+        desimaler: n.enhet === 'timer' ? 1 : n.enhet === 'kroner' ? 0 : 2,
+      })),
       merknad: x.iPeriode ? t('arbeidstid.arbeidsplan.sammenligning.periode') : null,
     };
   };
@@ -362,13 +373,15 @@ export default function Arbeidsplan({ sporring }: SideProps) {
             skjema={s}
             resultat={resultat ? { tittel: t('arbeidstid.resultat.samletBeskjeftigelse'), verdi: resultat.beskjeftigelse.verdi, enhet: 'prosent' } : null}
             onHent={hentVariant}
-            sammenlign={sammenlign}
+            onSammenlign={() => settVisSammenligning(true)}
             sti={STI}
           />
         </>
       }
       etter={
         <>
+          {/* Sammenligningen står i full bredde under skjemaet og resultatet. */}
+          <Sammenligningsvisning id="arbeidsplan" skjema={s} harResultat={resultat !== null} sammenlign={sammenlign} aapen={visSammenligning} onLukk={() => settVisSammenligning(false)} />
           <h2 class="liten-overskrift">{t('arbeidstid.fordeling.brukAvTiden')}</h2>
           {fordelingsdeler.map((d) => (
             <BrukAvDel key={d} id={d} />

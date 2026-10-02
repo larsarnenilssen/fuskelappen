@@ -865,31 +865,48 @@ test.describe('arbeidstid', () => {
     await page.getByRole('button', { name: 'Legg til funksjon' }).click();
     await page.getByLabel('Funksjon 1: Prosent').fill('5');
     await page.getByRole('button', { name: 'Sammenlign' }).click();
-    await expect(page.getByLabel('Første', { exact: true })).toHaveValue(/.+/);
-    await expect(page.getByLabel('Første', { exact: true }).locator('option:checked')).toHaveText('Uten kontaktlærer');
-    await expect(page.getByLabel('Andre', { exact: true }).locator('option:checked')).toHaveText('Fylt ut nå');
+    // Sammenligningen står i full bredde under kalkulatoren. Merkene 1 og 2 står foran etikettene.
+    const kort = page.locator('.sammenligning-kort');
+    await expect(kort.getByRole('heading', { name: 'Sammenlign to varianter' })).toBeVisible();
+    const forste = kort.getByLabel(/Første$/);
+    const andre = kort.getByLabel(/Andre$/);
+    await expect(forste.locator('option:checked')).toHaveText('Uten kontaktlærer');
+    await expect(andre.locator('option:checked')).toHaveText('Fylt ut nå');
     const tabell = page.locator('table.sammenligning');
     await expect(tabell.locator('thead')).toContainText('Uten kontaktlærer');
     await expect(tabell.locator('thead')).toContainText('Fylt ut nå');
-    await expect(tabell.locator('[data-nokkeltall="funksjoner"]')).toHaveText(/0 %\s*5 %\s*\+5 %/);
-    await expect(tabell.locator('[data-nokkeltall="stilling"]')).toHaveText(/100 %\s*100 %\s*±0/);
-    await expect(tabell.getByRole('cell', { name: /\+5 %/ }).first()).toBeVisible();
+    // Enheten står i gruppeoverskriften. Endrede rader er uthevet, og uendrede er dempet.
+    await expect(tabell).toContainText('Stillingen, prosent');
+    const funksjoner = tabell.locator('[data-nokkeltall="funksjoner"]');
+    await expect(funksjoner).toHaveClass(/endret/);
+    await expect(funksjoner.locator('td').nth(0)).toHaveText('0');
+    await expect(funksjoner.locator('td').nth(1)).toHaveText('5');
+    await expect(funksjoner.locator('.sammenligning-pil').first()).toContainText('5');
+    await expect(tabell.locator('[data-nokkeltall="stilling"]')).toHaveClass(/uendret/);
     // Arbeidstiden i timer: funksjonstiden kommer med kontaktlærerfunksjonen.
-    await expect(tabell).toContainText('Arbeidstiden i timer');
+    await expect(tabell).toContainText('Arbeidstiden, timer per år');
     await expect(tabell.locator('[data-nokkeltall="del_funksjonstid"] td').first()).toHaveText('0');
+    // «Vis bare det som er endret» skjuler radene uten endring.
+    await kort.getByRole('switch', { name: 'Vis bare det som er endret' }).check();
+    await expect(tabell.locator('[data-nokkeltall="stilling"]')).toHaveCount(0);
+    await expect(funksjoner).toBeVisible();
+    await kort.getByRole('switch', { name: 'Vis bare det som er endret' }).uncheck();
     // Lønn står bare når den er regnet ut.
     await expect(tabell.locator('[data-nokkeltall="lonn"]')).toHaveCount(0);
     // Samme valg to ganger gir ingen tabell.
-    await page.getByLabel('Andre', { exact: true }).selectOption({ label: 'Uten kontaktlærer' });
+    await andre.selectOption({ label: 'Uten kontaktlærer' });
     await expect(page.getByText('Velg to forskjellige.')).toBeVisible();
-    await page.getByLabel('Andre', { exact: true }).selectOption({ label: 'Fylt ut nå' });
+    await andre.selectOption({ label: 'Fylt ut nå' });
     // Ingen horisontal overflyt, og ingen alvorlige funn i axe.
     const bredde = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
     expect(bredde).toBeLessThanOrEqual(0);
     if (info.project.name.endsWith('-mobil')) {
-      const axe = await new AxeBuilder({ page }).include('.varianter').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+      const axe = await new AxeBuilder({ page }).include('.varianter').include('.sammenligning-kort').withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
       expect(axe.violations.filter((v) => v.impact === 'serious' || v.impact === 'critical').map((v) => v.id)).toEqual([]);
     }
+    // Sammenligningen kan lukkes.
+    await kort.getByRole('button', { name: 'Lukk sammenligningen' }).click();
+    await expect(kort).toHaveCount(0);
   });
 
   test('en variant deles som lenke og åpnes ferdig utfylt', async ({ page, context }) => {

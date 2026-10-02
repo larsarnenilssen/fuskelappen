@@ -4,10 +4,14 @@
 
 **Valg:**
 - **Samme utregning overalt:** Utregningen i Arbeidsplan er flyttet ut av siden til `beregnArbeidsplan` (`src/modules/arbeidstid/arbeidsplan.ts`). Siden og sammenligningen bruker den samme funksjonen, så tallene alltid er like.
-- **Sammenligning:** Under «Lagrede varianter» velger brukeren to av variantene eller «Fylt ut nå». Tabellen viser stillingen, undervisningen, funksjonene, redusert undervisning, beskjeftigelsen og forskjellen mot stillingen i prosent. Den viser også de seks delene av arbeidstiden og planfestet tid i timer, og lønnen når den er regnet ut. Forskjellen er den andre minus den første.
-  - Navnet på hvert tall står på egen linje over tallene, så tabellen får plass på 320 px. Timene står uten enhet, fordi gruppen heter «Arbeidstiden i timer».
+- **Sammenligning (eier 02.10.2026):** «Sammenlign» under lagrede varianter åpner en egen del i full bredde under kalkulatoren, ikke i resultatkolonnen. Der velger brukeren to av variantene eller «Fylt ut nå». Den står på samme side, så «Fylt ut nå» følger skjemaet.
+  - Tabellen har én rad per tall: stillingen, undervisningen, funksjonene, redusert undervisning, beskjeftigelsen og forskjellen mot stillingen i prosent. Den har også de seks delene av arbeidstiden og planfestet tid i timer, og lønnen når den er regnet ut. Endringen er fra 1 til 2.
+  - Variantene er merket 1 (blått) og 2 (gult) ved valgene og over kolonnene. Enheten står i gruppeoverskriften, så tallene står uten enhet. Delene av arbeidstiden har fargemerket fra diagrammet.
+  - Endrede rader er uthevet, og endringen står i en gul lapp med pil opp eller ned. Uendrede rader er dempet. «Vis bare det som er endret» skjuler dem.
+  - På smale skjermer står bare merkene over kolonnene, og endringen står under navnet på raden i stedet for i egen kolonne. Lange ord deles med bindestrek. Da får tabellen plass på 320 px.
   - For en periode gjelder tallene perioden, og det står en merknad om det under tabellen.
   - Komponenten er felles for kalkulatorene, men bare Arbeidsplan bruker sammenligningen og delingen foreløpig.
+- **Variantlisten (eier 02.10.2026):** Hver variant står på to linjer. Øverst står navnet med blyant og kryss, og resultatet. Under står tidspunktet, «Hent» og «Del», og forskjellen fra nå.
 - **Lenke:** `#/arbeidstid/arbeidsplan?del=…`. Innholdet er `{ v: 1, navn, skjema }`, gjort om til JSON og komprimert med nettleserens innebygde `CompressionStream('deflate-raw')` som base64url (`src/core/deling.ts`).
   - Det trengs ingen ny avhengighet. En vanlig arbeidsplan gir en lenke på om lag 500 tegn.
   - Første tegn sier hvordan innholdet er pakket: `z` er komprimert, og `j` er ukomprimert (nettlesere uten CompressionStream).
