@@ -20,12 +20,12 @@ test.describe('regelverk', () => {
 
   test('en adresse til en paragraf åpner kapitlet og paragrafen, og henvisninger går til appen', async ({ page }) => {
     await page.goto('./#/lov/opplaeringsforskrifta/15-3');
-    const knapp = page.getByRole('button', { name: /§ 15-3/ });
+    const knapp = page.getByRole('button', { name: /^§ 15-3 / });
     await expect(knapp).toHaveAttribute('aria-expanded', 'true');
     await expect(knapp).toBeInViewport();
     await page.locator('[data-rubrikk="lov-15-3"]').getByRole('link', { name: '§ 9-3' }).click();
     await expect(page).toHaveURL(/#\/lov\/opplaeringsforskrifta\/9-3$/);
-    await expect(page.getByRole('button', { name: /§ 9-3/ })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: /^§ 9-3 / })).toHaveAttribute('aria-expanded', 'true');
   });
 
   test('søket finner paragrafen med nummeret, og nynorsk tekst med bokmål', async ({ page }) => {
@@ -60,7 +60,7 @@ test.describe('regelverk', () => {
     await expect(boks.getByRole('button', { name: '§ 2 Ansettelse' })).toHaveAttribute('aria-expanded', 'true');
     await expect(boks.getByRole('link', { name: /Kap\. 1 § 2/ })).toHaveAttribute('href', /#page=8$/);
     await boks.getByRole('link', { name: 'arbeidsmiljøloven § 14-3' }).click();
-    await expect(page.getByRole('button', { name: /§ 14-3/ })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: /^§ 14-3 / })).toHaveAttribute('aria-expanded', 'true');
   });
 
   test('kilder til en paragraf hos Lovdata får også en lenke til paragrafen i appen', async ({ page }) => {
