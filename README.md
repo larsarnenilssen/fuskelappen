@@ -1,8 +1,8 @@
-# Protokollen
+# Fuskelappen
 
 Installerbar nettapp (PWA) for skoleledere og lærere i videregående opplæring. Den regner ut, forklarer og viser kildene for regelverket rundt lærerstillinger og skolens drift: arbeidstid etter SFS 2213, fag og læreplaner, inntak, tilpasset opplæring, vurdering, skolemiljø og frister.
 
-Appen er en statisk side på GitHub Pages: **https://larsarnenilssen.github.io/protokollen/**. Den har ingen server, ingen innlogging og ingen sporing. All brukerdata lagres på enheten.
+Appen er en statisk side på GitHub Pages: **https://larsarnenilssen.github.io/fuskelappen/**. Den har ingen server, ingen innlogging og ingen sporing. All brukerdata lagres på enheten.
 
 Appnavnet er definert i `src/config/app.ts` og hentes derfra til manifest og sidetittel.
 
@@ -13,7 +13,7 @@ Krever Node 22 (se `.nvmrc`).
 | Kommando | Gjør |
 |---|---|
 | `npm ci` | installerer avhengigheter |
-| `npm run dev` | starter utviklingsserver på http://localhost:5173/protokollen/ |
+| `npm run dev` | starter utviklingsserver på http://localhost:5173/fuskelappen/ |
 | `npm run build` | typesjekk, søkeindeks, produksjonsbygg og sjekk av startpakkens størrelse |
 | `npm run lint` | lint |
 | `npm run typecheck` | typesjekk |

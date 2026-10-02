@@ -5,7 +5,7 @@ import type { Kilde } from '../../src/core/innhold/skjema.ts';
 import { lagFingeravtrykk, normaliserTekst } from './logikk.ts';
 import { pdfTekst } from './pdf.ts';
 
-export const USER_AGENT = 'Protokollen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/protokollen)';
+export const USER_AGENT = 'Fuskelappen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/protokollen)';
 
 async function hent(url: string): Promise<Response> {
   const svar = await fetch(url, {

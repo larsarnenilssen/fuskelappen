@@ -27,7 +27,6 @@ export const nb = {
     sokKnapp: 'Søk',
     favoritter: 'Favoritter',
     ingenFavoritter: 'Du har ingen favoritter ennå. Trykk på stjernen ved en funksjon eller et begrep for å legge den til her.',
-    alleFavoritter: 'Alle favoritter',
     flere: 'Flere',
     moduler: 'Innhold',
     seAlle: 'Se alle i {kategori}',

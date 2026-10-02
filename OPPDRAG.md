@@ -1,11 +1,11 @@
-# OPPDRAG – Protokollen
+# OPPDRAG – Fuskelappen
 
 **Versjon:** 1.4 · 01.10.2026 (1.0 → 1.1: appnavn bestemt, utviklingsmiljø lagt til. 1.1 → 1.2: Arbeidsplan bygd i fase 1, kalkulatorene for fordeling og planfestet tid slått sammen med den, fase 3 justert. 1.2 → 1.3: fase 2 uten InSchool-data. 1.3 → 1.4 (01.10.2026): videre arbeid i fase 2 etter eiers innspill, ny forside)
 **Eier:** Lars Arne
 **Utfører:** Claude
 **Status:** Plan godkjent, klar for fase 0
 
-> Appen heter *Protokollen*, også som kortnavn på hjemskjermen. Navnet defineres ett sted (`src/config/app.ts`) og hentes derfra til manifest, sidetittel og README.
+> Appen heter *Fuskelappen* (fra 0.17.0, eier 02.10.2026, før *Protokollen*), også som kortnavn på hjemskjermen. Adressen, repoet og lagringsnøkkelen har også fått det nye navnet (avgjørelse 034). Navnet defineres ett sted (`src/config/app.ts`) og hentes derfra til manifest, sidetittel og README.
 
 ---
 
@@ -414,7 +414,7 @@ Eier har gitt innspill til «Fag og vurdering» og fase 1, og svart på B1–B6.
    - Fagarket viser grunnleggende ferdigheter og tverrfaglige temaer i faget, med lenke til overordnet del.
    - Kilder: Grep har grunnleggende ferdigheter og tverrfaglige temaer (koder og titler). Teksten i overordnet del hentes fra Lovdatas datasett (forskrift) eller fra udir.no. Det avgjøres i pakken.
 
-Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) pakke 3 i 0.13.0 (avgjørelse 031) og pakke 4 i 0.14.0, 01.10.2026. Eier ba 01.10.2026 i tillegg om dempede diagramfarger i mørk visning, egen bakgrunn i «Flere kalkulatorer», punktum i oppsummeringen og periodebeskjeftigelse i teksten om Arbeidsplan. Det kom med i pakke 4. Nytt design for fagarket og fagtypefarger i fagsøket kom i 0.15.0 (avgjørelse 032). Etter tre prototyper fikk alle fire kalkulatorene skjemaet i fargede deler i 0.16.0 (avgjørelse 033), før pakke 5.
+Levert: pakke 1 i 0.11.0, pakke 2 i 0.12.0 (avgjørelse 030) pakke 3 i 0.13.0 (avgjørelse 031) og pakke 4 i 0.14.0, 01.10.2026. Eier ba 01.10.2026 i tillegg om dempede diagramfarger i mørk visning, egen bakgrunn i «Flere kalkulatorer», punktum i oppsummeringen og periodebeskjeftigelse i teksten om Arbeidsplan. Det kom med i pakke 4. Nytt design for fagarket og fagtypefarger i fagsøket kom i 0.15.0 (avgjørelse 032). Etter tre prototyper fikk alle fire kalkulatorene skjemaet i fargede deler i 0.16.0 (avgjørelse 033), før pakke 5. Appen fikk navnet Fuskelappen, ny logo og en roligere forside i 0.17.0 (avgjørelse 034).
 
 Begrepsbanken utvides der det passer i hver pakke. Nytt og endret innhold får `kontrollert: null` og kontrollspørsmål med kilder. Fasittestene endres ikke.
 

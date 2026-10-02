@@ -27,7 +27,6 @@ export const nn: Tekster = {
     sokKnapp: 'Søk',
     favoritter: 'Favorittar',
     ingenFavoritter: 'Du har ingen favorittar enno. Trykk på stjerna ved ein funksjon eller eit omgrep for å leggje han til her.',
-    alleFavoritter: 'Alle favorittar',
     flere: 'Fleire',
     moduler: 'Innhald',
     seAlle: 'Sjå alle i {kategori}',

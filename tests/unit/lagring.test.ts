@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
+  GAMMEL_LAGRINGSNOKKEL,
   LAGRINGSNOKKEL,
   eksportfilnavn,
   lagEksport,
@@ -76,6 +77,17 @@ describe('lagring', () => {
     expect(lesLagret(lager)).toMatchObject({ status: 'ok', data: { skjemaversjon: 2, favoritter: ['a'] } });
   });
 
+  it('leser data lagret før appen het Fuskelappen, og skriver under den nye nøkkelen (avgjørelse 034)', () => {
+    const lager = new MinneLager();
+    const gammel = { ...standard(), favoritter: ['a'] };
+    lager.setItem(GAMMEL_LAGRINGSNOKKEL, JSON.stringify(gammel));
+    expect(lesLagret(lager)).toEqual({ data: gammel, status: 'ok' });
+    const ny = { ...gammel, favoritter: ['b'] };
+    skrivLagret(lager, ny);
+    expect(lager.getItem(LAGRINGSNOKKEL)).toBe(JSON.stringify(ny));
+    expect(lesLagret(lager).data.favoritter).toEqual(['b']);
+  });
+
   it('avviser data fra en nyere skjemaversjon', () => {
     expect(migrer({ ...standard(), skjemaversjon: 99 })).toBeNull();
     expect(migrer({ ...standard(), skjemaversjon: 0 })).toBeNull();
@@ -87,8 +99,10 @@ describe('lagring', () => {
     const tekst = lagEksport(data, '0.1.0', new Date('2026-09-29T10:00:00Z'));
     expect(lesEksport(tekst)).toEqual(data);
     expect(lesEksport('{"app":"annen"}')).toBeNull();
+    // Filer eksportert før appen het Fuskelappen, kan fortsatt importeres.
+    expect(lesEksport(JSON.stringify({ app: 'protokollen', eksportert: '', appversjon: '0.16.1', data }))).toEqual(data);
     expect(lesEksport('ikke json')).toBeNull();
-    expect(eksportfilnavn(new Date('2026-09-29T10:00:00Z'))).toBe('protokollen-2026-09-29.json');
+    expect(eksportfilnavn(new Date('2026-09-29T10:00:00Z'))).toBe('fuskelappen-2026-09-29.json');
   });
 
   it('nullstiller skolen når fylket byttes', () => {

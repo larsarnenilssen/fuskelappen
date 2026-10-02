@@ -18,7 +18,7 @@
     <script>
       // Setter tema og målform før første tegning, slik at skjermen ikke blinker.
       try {
-        var lagret = JSON.parse(localStorage.getItem('protokollen') || 'null');
+        var lagret = JSON.parse(localStorage.getItem('fuskelappen') || localStorage.getItem('protokollen') || 'null');
         var inn = lagret && lagret.innstillinger;
         if (inn && (inn.tema === 'lys' || inn.tema === 'mork')) document.documentElement.dataset.tema = inn.tema;
         if (inn && inn.malform === 'nn') document.documentElement.lang = 'nn';

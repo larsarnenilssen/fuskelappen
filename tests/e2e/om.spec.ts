@@ -8,7 +8,7 @@ test('«Om» viser versjon, brukserklæring, personvern og kreditering', async (
   await expect(page.getByTestId('versjon')).toHaveText(`Versjon ${versjon}`);
   await expect(page.getByRole('heading', { name: 'Brukserklæring' })).toBeVisible();
   const erklaering = page.getByTestId('brukserklaering');
-  await expect(erklaering).toContainText('Protokollen er utviklet privat.');
+  await expect(erklaering).toContainText('Fuskelappen er utviklet privat.');
   await expect(erklaering).toContainText('Appen gir ingen garantier.');
   await expect(erklaering).toContainText('KI-assistent');
   await expect(erklaering).toContainText('god tro, som et redskap og et hjelpemiddel');
@@ -30,7 +30,7 @@ test('«Om» har teknisk informasjon som er skjult til den åpnes', async ({ pag
 
 test('forsiden sier at appen er utviklet privat og kan ha feil, og lenker til «Om»', async ({ page }) => {
   await page.goto('./#/');
-  await expect(page.getByTestId('forbehold')).toHaveText('Protokollen er utviklet privat, og opplysningene i appen kan være uriktige.');
+  await expect(page.getByTestId('forbehold')).toHaveText('Fuskelappen er utviklet privat, og opplysningene i appen kan være uriktige.');
   await page.locator('.bunntekst').getByRole('link', { name: 'Om appen' }).click();
   await expect(page.getByRole('heading', { name: 'Brukserklæring' })).toBeVisible();
 });

@@ -14,7 +14,7 @@ import {
 function finnLager(): Lager | null {
   try {
     const lager = window.localStorage;
-    const test = 'protokollen-test';
+    const test = 'fuskelappen-test';
     lager.setItem(test, '1');
     lager.removeItem(test);
     return lager;

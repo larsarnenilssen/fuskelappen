@@ -7,7 +7,7 @@ test.describe('navigasjon', () => {
     await expect(page.getByRole('searchbox')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Favoritter' })).toBeVisible();
     await expect(page.getByRole('navigation', { name: 'Hovedmeny' })).toBeVisible();
-    await expect(page).toHaveTitle('Protokollen');
+    await expect(page).toHaveTitle('Fuskelappen');
   });
 
   test('bunnmenyen og nettleserens tilbake virker', async ({ page }) => {
@@ -16,7 +16,7 @@ test.describe('navigasjon', () => {
     await meny.getByRole('link', { name: 'Innstillinger' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
     await expect(meny.getByRole('link', { name: 'Innstillinger' })).toHaveAttribute('aria-current', 'page');
-    await expect(page).toHaveTitle('Innstillinger – Protokollen');
+    await expect(page).toHaveTitle('Innstillinger – Fuskelappen');
     await meny.getByRole('link', { name: 'Favoritter' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Favoritter' })).toBeVisible();
     await page.goBack();
@@ -30,7 +30,7 @@ test.describe('navigasjon', () => {
     await page.getByRole('link', { name: 'Om appen' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Om appen' })).toBeVisible();
     await page.getByRole('button', { name: 'Tilbake' }).click();
-    await expect(page).toHaveURL(/\/protokollen\/(#\/)?$/);
+    await expect(page).toHaveURL(/\/fuskelappen\/(#\/)?$/);
     await expect(page.getByRole('searchbox')).toBeVisible();
   });
 
@@ -74,12 +74,10 @@ test.describe('navigasjon', () => {
     expect(viewport).not.toMatch(/user-scalable\s*=\s*no|maximum-scale\s*=\s*1(\.0)?\b/);
   });
 
-  test('topplinjen viser logo og appnavn', async ({ page }) => {
+  test('topplinjen viser appnavnet uten logo (eier 02.10.2026)', async ({ page }) => {
     await page.goto('./');
-    const logo = page.locator('.topplinje .applogo');
-    await expect(logo).toBeVisible();
-    expect(await logo.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0)).toBe(true);
-    await expect(page.locator('.topplinje .appnavn')).toHaveText('Protokollen');
+    await expect(page.locator('.topplinje .appnavn')).toHaveText('Fuskelappen');
+    await expect(page.locator('.topplinje img')).toHaveCount(0);
   });
 
   test('overskriften får fokus uten synlig ramme ved navigasjon', async ({ page }) => {

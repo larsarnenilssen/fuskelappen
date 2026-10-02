@@ -2,7 +2,9 @@
 // All brukerdata ligger på enheten. Ingenting sendes noe sted.
 import * as z from 'zod/mini';
 
-export const LAGRINGSNOKKEL = 'protokollen';
+export const LAGRINGSNOKKEL = 'fuskelappen';
+/** Nøkkelen før appen het Fuskelappen (0.17.0). Data der leses når det ikke finnes noe under den nye nøkkelen. */
+export const GAMMEL_LAGRINGSNOKKEL = 'protokollen';
 export const SKJEMAVERSJON = 2;
 
 const skoleSkjema = z.strictObject({ id: z.nullable(z.string()), navn: z.string().check(z.minLength(1)) });
@@ -73,7 +75,7 @@ export function lesLagret(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): { d
   if (!lager) return { data: standard(malform), status: 'utilgjengelig' };
   let tekst: string | null;
   try {
-    tekst = lager.getItem(LAGRINGSNOKKEL);
+    tekst = lager.getItem(LAGRINGSNOKKEL) ?? lager.getItem(GAMMEL_LAGRINGSNOKKEL);
   } catch {
     return { data: standard(malform), status: 'utilgjengelig' };
   }
@@ -106,22 +108,23 @@ export function slettLagret(lager: Lager | null): void {
 }
 
 export interface Eksportfil {
-  app: 'protokollen';
+  app: 'fuskelappen';
   eksportert: string;
   appversjon: string;
   data: Lagret;
 }
 
 export function lagEksport(data: Lagret, appversjon: string, naa: Date): string {
-  const fil: Eksportfil = { app: 'protokollen', eksportert: naa.toISOString(), appversjon, data };
+  const fil: Eksportfil = { app: 'fuskelappen', eksportert: naa.toISOString(), appversjon, data };
   return JSON.stringify(fil, null, 2);
 }
 
 /** Leser en eksportfil. Returnerer null hvis filen ikke er gyldig. */
 export function lesEksport(tekst: string): Lagret | null {
   try {
-    const fil = JSON.parse(tekst) as Partial<Eksportfil> | null;
-    if (!fil || fil.app !== 'protokollen') return null;
+    const fil = JSON.parse(tekst) as { app?: unknown; data?: unknown } | null;
+    // Filer eksportert før appen het Fuskelappen, har app: 'protokollen'.
+    if (!fil || (fil.app !== 'fuskelappen' && fil.app !== GAMMEL_LAGRINGSNOKKEL)) return null;
     return migrer(fil.data);
   } catch {
     return null;
@@ -129,7 +132,7 @@ export function lesEksport(tekst: string): Lagret | null {
 }
 
 export function eksportfilnavn(naa: Date): string {
-  return `protokollen-${naa.toISOString().slice(0, 10)}.json`;
+  return `fuskelappen-${naa.toISOString().slice(0, 10)}.json`;
 }
 
 /** Nytt fylke nullstiller skolen hvis skolen ikke hører til fylket. */

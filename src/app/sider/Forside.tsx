@@ -3,6 +3,7 @@ import { app } from '../../config/app.ts';
 import { useState } from 'preact/hooks';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
+import { Ikon } from '../../components/Ikon.tsx';
 import { Favorittliste } from '../Favorittliste.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
@@ -20,7 +21,9 @@ export default function Forside() {
       <h1 class="skjult-visuelt" tabIndex={-1}>
         {t('forside.tittel')}
       </h1>
-      <Sokeboks etikett={t('forside.sokEtikett', { app: app.navn })} plassholder={t('forside.sokPlassholder')} onEndring={settSporring} />
+      <div class="forside-topp">
+        <Sokeboks etikett={t('forside.sokEtikett', { app: app.navn })} plassholder={t('forside.sokPlassholder')} onEndring={settSporring} />
+      </div>
 
       {!erAktivtSok(sporring) && (
         <>
@@ -29,14 +32,13 @@ export default function Forside() {
           <section aria-labelledby="forside-favoritter">
             <h2 id="forside-favoritter">{t('forside.favoritter')}</h2>
             {favoritter.length === 0 ? (
-              <p class="dempet">{t('forside.ingenFavoritter')}</p>
+              <p class="tom-favoritter">
+                <Ikon navn="stjerne" class="ikon-liten" />
+                <span>{t('forside.ingenFavoritter')}</span>
+              </p>
             ) : (
-              <>
-                <Favorittliste kompakt />
-                <p>
-                  <a href="#/favoritter">{t('forside.alleFavoritter')}</a>
-                </p>
-              </>
+              // Ingen lenke til alle favoritter: favorittknappen i bunnmenyen gjør det samme (eier 02.10.2026).
+              <Favorittliste kompakt />
             )}
           </section>
 

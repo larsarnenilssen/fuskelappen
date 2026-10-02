@@ -4,6 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.17.0] – 2026-10-02
+
+### Endret
+
+- **Nytt navn:** Appen heter nå **Fuskelappen**.
+  - Nytt ikon: en hvit lapp med brettet hjørne og gul hake.
+  - Toppfeltet viser bare navnet, uten logo.
+  - Ny adresse: https://larsarnenilssen.github.io/fuskelappen/. Legg appen til på hjemskjermen på nytt derfra. Innstillinger, favoritter og lagrede varianter følger med, og eksportfiler fra før kan importeres.
+- **Forsiden:**
+  - Det mørkeblå toppfeltet fortsetter ned rundt søket.
+  - Lenken «Alle favoritter» er fjernet. Bruk favorittknappen i bunnmenyen.
+  - Modulene har ikonet i en farget sirkel, og overskriftene er roligere.
+  - Merknaden om nasjonalt innhold har et ikon, og valgt fylke og skole står som én kort linje.
+  - Har du ingen favoritter ennå, står det i et lite kort med en stjerne.
+- **Bunnmenyen:** Fanen du står på, har en gul markering bak ikonet.
+
 ## [0.16.1] – 2026-10-02
 
 ### Endret

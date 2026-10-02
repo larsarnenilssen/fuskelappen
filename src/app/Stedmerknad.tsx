@@ -1,6 +1,7 @@
 // Merknad om hvilket nivå innholdet gjelder for (nasjonalt, fylke, skole).
 import fylkerFil from '../../content/fylker.yaml';
 import type { Fylker } from '../core/innhold/skjema.ts';
+import { Ikon } from '../components/Ikon.tsx';
 import { useTekst, useTilstand } from './tilstand.ts';
 
 export const fylker = (fylkerFil as Fylker).fylker;
@@ -15,11 +16,20 @@ export function Stedmerknad() {
   const fylke = fylkesnavn(innstillinger.fylke);
   if (!fylke) {
     return (
-      <p class="merknad">
-        {t('forside.stedMerknad')} <a href="#/innstillinger">{t('forside.velgSted')}</a>
+      <p class="merknad merknad-ikon">
+        <Ikon navn="info" class="ikon-liten" />
+        <span>
+          {t('forside.stedMerknad')} <a href="#/innstillinger">{t('forside.velgSted')}</a>
+        </span>
       </p>
     );
   }
   const sted = innstillinger.skole ? `${innstillinger.skole.navn}, ${fylke}` : fylke;
-  return <p class="merknad merknad-stille">{t('forside.stedValgt', { sted })}</p>;
+  // Valgt sted står som en kort linje, ikke som en boks (eier 02.10.2026).
+  return (
+    <p class="sted-valgt">
+      <Ikon navn="skole" class="ikon-liten" />
+      <a href="#/innstillinger">{t('forside.stedValgt', { sted })}</a>
+    </p>
+  );
 }
