@@ -66,6 +66,7 @@ export const fagNb = {
     Vg1: 'Vg1',
     Vg2: 'Vg2',
     Vg3: 'Vg3',
+    Vg4: 'Vg4',
     Bedrift: 'Opplæring i bedrift',
   },
   side: {

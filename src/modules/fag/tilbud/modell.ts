@@ -225,6 +225,14 @@ export interface Tilbud {
   videre: string[];
   pabygging: string[];
   kryssTil: string[];
+  /**
+   * Overgang fra et studieforberedende Vg1 til et yrkesfaglig Vg2 med et opphentingsfag (se opphentingsfag): `til` er
+   * slike Vg2 fra dette tilbudet (ikke med i kryssTil), `fra` er slike Vg1 dette tilbudet bygger på (ikke med i
+   * kryssFra), og `fag` er opphentingsfagene.
+   */
+  opphenting: { fag: string[]; til: string[]; fra: string[] };
+  /** Noe av «bygger på» eller «videre» kommer fra grunnlaget for inntak i VIGO (medGrunnlagFraVigo). */
+  fraVigo: boolean;
   avvik: Avvik[];
 }
 
@@ -235,6 +243,41 @@ const trinnFraOmfang = (omfang: string): Trinn | null => {
 
 /** Er programområdet en variant for særskilte skoler (kode som STUSP1RS--, STREA2MO--, STUSP1TY--)? */
 export const erVariant = (kode: string) => /^[A-Z]{5}\d[A-Z]{2}/.test(kode);
+
+/**
+ * Fagindeksen med grunnlaget for inntak fra VIGO (data/vigo/fagrelasjoner.json, `grunnlag`) for påbygging: et
+ * programområde i påbygging (PB) som Grep ikke oppgir hva bygger på, får det fra VIGO. Det gir Vg4 påbygging
+ * (PBPBY4) etter lærefagene (eier 03.10.2026). Ellers gjelder Grep. Ren funksjon; dataene i Grep endres ikke.
+ */
+export function medGrunnlagFraVigo(indeks: Fagindeks, grunnlag: Readonly<Record<string, readonly string[]>>): Fagindeks {
+  const fraVigo = new Map<string, string[]>();
+  for (const [fra, tiler] of Object.entries(grunnlag)) {
+    for (const til of tiler) {
+      const po = indeks.programomrader[til];
+      if (!po || po.program !== 'PB' || po.bygger.length > 0 || !indeks.programomrader[fra]) continue;
+      fraVigo.set(til, [...(fraVigo.get(til) ?? []), fra]);
+    }
+  }
+  if (fraVigo.size === 0) return indeks;
+  const programomrader = { ...indeks.programomrader };
+  for (const [til, fra] of fraVigo) {
+    const po = programomrader[til];
+    if (po) programomrader[til] = { ...po, bygger: [...fra].sort(), byggerFraVigo: true };
+  }
+  return { ...indeks, programomrader };
+}
+
+/**
+ * Fag som lar en elev gå over til et annet utdanningsprogram: felles programfag i Grep som brukes i minst tre
+ * utdanningsprogram, f.eks. Yrkesfaglig opphenting (YFO2002), som gjør at elever fra Vg1 studiespesialisering kan
+ * begynne på Vg2 i et yrkesfaglig utdanningsprogram (eier 03.10.2026).
+ */
+export function opphentingsfag(indeks: Fagindeks): string[] {
+  return Object.entries(indeks.fag)
+    .filter(([, f]) => f.type === 'felles_programfag' && new Set(f.po.map((p) => indeks.programomrader[p]?.program).filter(Boolean)).size >= 3)
+    .map(([k]) => k)
+    .sort();
+}
 
 /**
  * Hva et programområde bygger på. Mangler «bygger på» i Grep for et lærefag (vg3 i bedrift), og har programmet
@@ -480,6 +523,13 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
   const fra = bygger.koder.filter((b) => indeks.programomrader[b]?.program === po.program);
   const kryssFra = bygger.koder.filter((b) => indeks.programomrader[b]?.program !== po.program);
   const barn = alle.filter(([k]) => byggerPaa(k, indeks).koder.includes(kode)).map(([k]) => k);
+  const oppfag = opphentingsfag(indeks);
+  const harOpphenting = (k: string) => oppfag.some((f) => indeks.fag[f]?.po.includes(k));
+  const studieforberedende = (k: string) => programgruppe(indeks.programomrader[k]?.program ?? '') === 'studieforberedende';
+  const kryssTil = barn.filter((b) => !['PB', po.program].includes(indeks.programomrader[b]?.program ?? '')).sort();
+  const oppTil = studieforberedende(kode) ? kryssTil.filter(harOpphenting) : [];
+  const oppFra = harOpphenting(kode) ? kryssFra.filter(studieforberedende) : [];
+  const pabygging = barn.filter((b) => indeks.programomrader[b]?.program === 'PB').sort();
   return {
     kode,
     programomrade: po,
@@ -493,11 +543,13 @@ export function byggTilbud(kode: string, indeks: Fagindeks, fordeling: Fagfordel
     alternativer,
     andreFag,
     fra,
-    kryssFra,
+    kryssFra: kryssFra.filter((b) => !oppFra.includes(b)),
     fraAvledet: bygger.avledet,
     videre: barn.filter((b) => indeks.programomrader[b]?.program === po.program).sort(),
-    pabygging: barn.filter((b) => indeks.programomrader[b]?.program === 'PB').sort(),
-    kryssTil: barn.filter((b) => !['PB', po.program].includes(indeks.programomrader[b]?.program ?? '')).sort(),
+    pabygging,
+    kryssTil: kryssTil.filter((b) => !oppTil.includes(b)),
+    opphenting: { fag: oppfag.filter((f) => [...oppTil, ...(oppFra.length > 0 ? [kode] : [])].some((k) => indeks.fag[f]?.po.includes(k))), til: oppTil, fra: oppFra },
+    fraVigo: po.byggerFraVigo === true || pabygging.some((b) => indeks.programomrader[b]?.byggerFraVigo === true),
     avvik,
   };
 }

@@ -16,6 +16,7 @@ import { finnKobling, lesArsrammer, lesKoblinger, type Arsrammerad, type Arsramm
 import { lagFagindeks, sokFag } from '../fagsok.ts';
 import { type Oppdater, useHent } from '../kontekst.ts';
 import { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode } from '../fagvalg.ts';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 export { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode };
 
@@ -92,7 +93,7 @@ export function Vippe({
       </label>
       {hjelp && (
         <Hjelp tema={tekst}>
-          <p class="felt-hjelp">{hjelp}</p>
+          <p class="felt-hjelp"><Begrepstekst tekst={hjelp} /></p>
         </Hjelp>
       )}
     </div>
@@ -400,7 +401,7 @@ export function Fagvelger({
         <div class="etikettrad med-hjelp">
           <label for={id}>{etikett}</label>
           <Hjelp tema={etikett}>
-            <p class="felt-hjelp">{t('arbeidstid.felles.fagSokHjelp')}</p>
+            <p class="felt-hjelp"><Begrepstekst tekst={t('arbeidstid.felles.fagSokHjelp')} /></p>
           </Hjelp>
           {manuellKnapp}
         </div>

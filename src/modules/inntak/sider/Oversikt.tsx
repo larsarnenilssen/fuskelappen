@@ -7,6 +7,7 @@ import { iDag } from '../../../data/skolear.ts';
 import { fristerRute, hentInnhold, poengRute, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
 import { nesteFrist, tidspunkt } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 export default function Oversikt() {
   const { t, malform } = useTekst();
@@ -20,7 +21,7 @@ export default function Oversikt() {
   return (
     <div class="side">
       <h1 tabIndex={-1}>{t('inntak.tittel')}</h1>
-      <p class="ingress">{t('inntak.innledning')}</p>
+      <p class="ingress"><Begrepstekst tekst={t('inntak.innledning')} /></p>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (

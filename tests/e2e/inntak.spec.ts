@@ -58,7 +58,7 @@ test.describe('inntak', () => {
     await boks.getByText('Inntaksområde, skoler og tilleggspoeng').click();
     await expect(lenke).toHaveAttribute('href', /#\/lov\/vestland-inntak\/2-1/);
     // Kildene til Vestland-boksen er med i kildene til steget.
-    await expect(page.getByText(/Kilder \(7\)/)).toBeVisible();
+    await expect(page.locator('.veiviser-steg').first().getByText(/Kilder \(7\)/)).toBeVisible();
     // Vestland-innholdet er ikke et eget steg i kartet.
     await expect(page.locator('.prosesskart-punkt', { hasText: 'Inntaksområde' })).toHaveCount(0);
   });

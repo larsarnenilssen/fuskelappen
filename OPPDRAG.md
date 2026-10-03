@@ -503,7 +503,8 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Pakke 2 er levert i 0.27.0: **Søknad og frister gjennom året**, en tidslinje over inntaksåret med filter og Vestland-frister (avgjørelse 046). Datoene for svar og andre inntak står på Vilbli, som appen lenker til.
 - Pakke 3 er levert i 0.28.0: **Poengberegning** til Vg1, Vg2 og Vg3 med regler i `rules/inntak/`, fasittestene F1–F9 og F7b, og tilleggspoeng i Vestland (avgjørelse 047). VIGOs felt «teller for poeng» brukes ikke, fordi det ikke stemmer med § 4-25 bokstav b.
 - Med 0.28.0 er kildekontrollen og fylkesinnholdet gått gjennom i hele appen (avgjørelse 048), og dataene fra kildene er samlet i et felles datalag (avgjørelse 049).
-- Venter på vestlandfylke.no: antall inntaksområdepoeng og Vestlands klagenemnd.
+- 0.29.0: begrepene karakterpoeng, privatist og tilleggspoeng, lenker til begrepsbanken i brødtekst (avgjørelse 050), status på søkerønsker, Vg4 påbygging og yrkesfaglig opphenting fra VIGO og Grep (avgjørelse 051). Kontrollpunktet for fase 5 er utsatt etter ønske fra eier.
+- Spørsmålene til vestlandfylke.no (inntaksområdepoeng og klagenemnd) tas med til senere faser til sidene svarer.
 
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.
 

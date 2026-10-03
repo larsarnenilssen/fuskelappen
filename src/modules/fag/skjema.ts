@@ -53,6 +53,8 @@ export const programomradeSkjema = z
     timer: z.number().positive().nullable(),
     /** Merkelapper i Grep, f.eks. «paabygg» (påbygg til generell studiekompetanse) på studieforberedende vg3 i naturbruk. */
     merkelapper: z.array(z.string()),
+    /** «Bygger på» kommer fra grunnlaget for inntak i VIGO, ikke fra Grep (medGrunnlagFraVigo). Står ikke i dataene. */
+    byggerFraVigo: z.boolean().optional(),
   })
   .strict();
 

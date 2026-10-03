@@ -1,7 +1,7 @@
 // Dataene fra VIGO Kodeverksbase: bygging, kontroll og sammenligning (scripts/vigo/bygg.ts) og oppslag
 // (src/modules/fag/vigo/oppslag.ts), med små testdata (avgjørelse 026).
 import { describe, expect, it } from 'vitest';
-import { byggFagrelasjoner, byggMerknader, erOpplaeringsfagkode, lesMerknad, sammenlignVigo, validerVigo } from '../../scripts/vigo/bygg.ts';
+import { byggFagrelasjoner, byggMerknader, erOpplaeringsfagkode, lesMerknad, lesSokerstatus, sammenlignVigo, validerVigo } from '../../scripts/vigo/bygg.ts';
 import { brukesSammenMed, erstatterKoder, gjeldendeKoder, nyLaereplan, sokMerknader } from '../../src/modules/fag/vigo/oppslag.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 
@@ -24,6 +24,15 @@ const brukesSammen = [
   { code1: 'LBR3020', code2: 'LBR3017', grepCourse1: { name: 'Tverrfaglig eksamen landbruk' }, grepCourse2: { name: 'Planteproduksjon' } },
 ];
 
+// «entry-requirements»: bare nasjonalt (99) og bare programområder i fagindeksen.
+const grunnlag = [
+  { countyNr: 99, programAreaCode: 'HSHEA3----', providesCompetenceCode: 'PBPBY4----' },
+  { countyNr: 99, programAreaCode: 'HSHEA3----', providesCompetenceCode: 'PBPBY4YK--' },
+  { countyNr: 46, programAreaCode: 'HSHSF1----', providesCompetenceCode: 'HSHEA2----' },
+  { countyNr: 99, programAreaCode: 'HSHSF1----', providesCompetenceCode: 'HSHEA2----' },
+];
+const programomrader = new Set(['HSHEA3----', 'PBPBY4----', 'HSHSF1----', 'HSHEA2----']);
+
 const paabygning = [
   { code1: 'DRA2011', code2: 'DRA2010' },
   { code1: 'DRA2011', code2: 'DRA2001' },
@@ -31,7 +40,7 @@ const paabygning = [
 ];
 
 describe('bygging av fagrelasjonene', () => {
-  const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, '2026-10-01T00:00:00Z');
+  const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, '2026-10-01T00:00:00Z', programomrader);
 
   it('gir erstatninger med navn og sluttdato, også når en kode er delt opp', () => {
     expect(data.erstatninger.LBR3004).toEqual({ ny: ['LBR3012'], navn: 'Traktor og maskiner', utgatt: '2022-07-31' });
@@ -45,6 +54,10 @@ describe('bygging av fagrelasjonene', () => {
     expect(data.laereplaner).toEqual({ 'MAT01-05': 'MAT01-06' });
     expect(data.brukesSammen).toEqual({ LBR3020: ['LBR3017', 'LBR3018'] });
     expect(data.navn.LBR3020).toBe('Tverrfaglig eksamen landbruk');
+  });
+
+  it('gir grunnlaget for inntak, bare nasjonalt og for programområder i fagindeksen', () => {
+    expect(data.grunnlag).toEqual({ 'HSHEA3----': ['PBPBY4----'], 'HSHSF1----': ['HSHEA2----'] });
   });
 
   it('gir fag som bygger på andre fag, uten VIGOs egne koder', () => {
@@ -74,6 +87,11 @@ describe('merknadene', () => {
     {
       fag: [rad('FAM10', 'Ti', 'Ti'), rad('FAM02', 'Fritatt fra vurdering med karakter', 'Friteken frå vurdering med karakter'), rad('FAM06', '1. termin', '1. termin', { expired: 'Ja', validTo: '2011-11-01T00:00:00' })],
       vitnemal: [rad('VMM01', 'Fulgt opplæringen fra <ddmmåå>.', 'Følgt opplæringa frå <ddmmåå>.', { vitnemal: null, kompBevis: null })],
+      sokerstatuser: [
+        { code: 'INNTO', number: 18, type: 'S', text: 'Inntatt ordinært. Svart ja til tilbud om plass.' },
+        { code: 'SBEHA', number: 3, type: 'S', text: 'Ønske til skole, ikke behandlet' },
+        { code: 'STOPP', number: 77, type: 'SL', text: 'Søknaden er stoppet (satt i passiv).' },
+      ],
     },
     '2026-10-01T00:00:00Z',
   );
@@ -86,6 +104,13 @@ describe('merknadene', () => {
     expect(lesMerknad({ code: 'FAM99' })).toBeNull();
   });
 
+  it('statusene på søkerønsker står i rekkefølgen VIGO nummererer dem, med elevplass og læreplass', () => {
+    expect(m.sokerstatuser.map((x) => x.kode)).toEqual(['SBEHA', 'INNTO', 'STOPP']);
+    expect(m.sokerstatuser[2]).toMatchObject({ nr: 77, videregaende: true, fagopplaering: true, nn: 'Søknaden er stoppet (satt i passiv).' });
+    expect(m.sokerstatuser[0]).toMatchObject({ videregaende: true, fagopplaering: false });
+    expect(lesSokerstatus({ code: 'X', text: 'Uten nummer' })).toBeNull();
+  });
+
   it('kan søkes i på kode og tekst', () => {
     expect(sokMerknader(m.fagmerknader, 'fam02').map((x) => x.kode)).toEqual(['FAM02']);
     expect(sokMerknader(m.fagmerknader, 'friteken vurdering').map((x) => x.kode)).toEqual(['FAM02']);
@@ -93,15 +118,17 @@ describe('merknadene', () => {
   });
 
   it('kontrolleres, og endringer meldes', () => {
-    const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, 'x');
-    expect(validerVigo(data, m)).toHaveLength(5);
-    const ny: Fagrelasjoner = { ...data, erstatninger: { ...data.erstatninger, NYA1001: { ny: ['NYA1002'], navn: 'Ny', utgatt: null } }, brukesSammen: { LBR3020: ['LBR3017'] }, byggerPaa: { DRA2011: ['DRA2010'], DRA2013: ['DRA2012'] } };
+    const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, 'x', programomrader);
+    expect(validerVigo(data, m)).toHaveLength(7);
+    const ny: Fagrelasjoner = { ...data, grunnlag: { 'HSHEA3----': ['PBPBY4----', 'PBPBY4YK--'] }, erstatninger: { ...data.erstatninger, NYA1001: { ny: ['NYA1002'], navn: 'Ny', utgatt: null } }, brukesSammen: { LBR3020: ['LBR3017'] }, byggerPaa: { DRA2011: ['DRA2010'], DRA2013: ['DRA2012'] } };
     const m2 = { ...m, fagmerknader: [...m.fagmerknader.map((x) => (x.kode === 'FAM10' ? { ...x, nb: 'Ti, endret' } : x)), { ...m.fagmerknader[0], kode: 'FAM70', nb: 'Ny merknad' } as (typeof m.fagmerknader)[number]] };
     expect(sammenlignVigo({ rel: data, m }, { rel: ny, m: m2 })).toEqual([
       'Ny erstatning: NYA1001 Ny → NYA1002',
       'Brukes sammen, fjernede koblinger (1): LBR3020 + LBR3018',
       'Bygger på, nye koblinger (1): DRA2013 på DRA2012',
       'Bygger på, fjernede koblinger (1): DRA2011 på DRA2001',
+      'Grunnlag for inntak, nye koblinger (1): HSHEA3---- → PBPBY4YK--',
+      'Grunnlag for inntak, fjernede koblinger (1): HSHSF1---- → HSHEA2----',
       'Endret fagmerknad FAM10: Ti, endret',
       'Ny fagmerknad FAM70: Ny merknad',
     ]);

@@ -4,12 +4,13 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
-import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import { byggStruktur, byggTilbud, erVariant } from '../../src/modules/fag/tilbud/modell.ts';
+import { byggStruktur, byggTilbud, erVariant, opphentingsfag } from '../../src/modules/fag/tilbud/modell.ts';
+import { lesTilbudsindeks } from '../../scripts/data/les.ts';
 import { fordelingOgNeste, lagRapportFraRepo, lesFagBygger } from '../../scripts/tilbud/rapport.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
-const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
+// Som appen: Grep, med grunnlaget for inntak fra VIGO for påbygging (medGrunnlagFraVigo).
+const indeks = lesTilbudsindeks(rot);
 const { fordeling } = fordelingOgNeste(rot, new Date().toISOString().slice(0, 10));
 const tilbud = Object.keys(indeks.programomrader).map((k) => byggTilbud(k, indeks, fordeling, lesFagBygger(rot)));
 const hoved = tilbud.filter((t) => !t.variant);
@@ -57,5 +58,21 @@ describe('tilbudsstrukturen', () => {
       for (const k of s.inngang) expect(indeks.programomrader[k]?.program).toBe(s.program);
     }
     for (const t of tilbud) for (const k of t.videre) expect(indeks.programomrader[k]?.program).toBe(t.programomrade.program);
+  });
+
+  it('lærefagene kan føre videre til Vg4 påbygging, fra grunnlaget for inntak i VIGO (eier 03.10.2026)', () => {
+    const vg4 = Object.keys(indeks.programomrader).find((k) => k.startsWith('PBPBY4') && indeks.programomrader[k]?.byggerFraVigo);
+    expect(vg4).toBeDefined();
+    const laerefag = tilbud.filter((t) => t.programomrade.sted === 'bedrift' && !t.variant);
+    const medVg4 = laerefag.filter((t) => t.pabygging.includes(vg4 ?? ''));
+    expect(medVg4.length / laerefag.length).toBeGreaterThan(0.5);
+    for (const t of medVg4) expect(t.fraVigo, t.kode).toBe(true);
+  });
+
+  it('Vg1 studiespesialisering viser Vg2 på yrkesfag med opphentingsfaget for seg, ikke som kryssløp (eier 03.10.2026)', () => {
+    expect(opphentingsfag(indeks).length).toBeGreaterThan(0);
+    const st = tilbud.find((t) => t.kode === 'STUSP1----');
+    expect(st?.opphenting.til.length).toBeGreaterThan(20);
+    expect(st?.kryssTil.filter((k) => indeks.programomrader[k]?.trinn === 'Vg2' && !['ST', 'PB'].includes(indeks.programomrader[k]?.program ?? ''))).toEqual([]);
   });
 });

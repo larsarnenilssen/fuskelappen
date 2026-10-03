@@ -1,4 +1,5 @@
-// Kodelisten under et begrep: fagmerknader (FAM) eller vitnemålsmerknader (VMM) fra VIGO Kodeverksbase, med søk
+// Kodelisten under et begrep: fagmerknader (FAM), vitnemålsmerknader (VMM) eller status på søkerønsker fra VIGO
+// Kodeverksbase, med søk
 // på kode og tekst. Søket står i adressen (?q=FAM01), så treff fra det samlede søket åpner listen med koden
 // (avgjørelse 026). Tekstene er VIGOs egne, på bokmål eller nynorsk etter appens målform.
 import { useEffect, useId, useState } from 'preact/hooks';
@@ -11,7 +12,10 @@ import { sokMerknader } from '../fag/vigo/oppslag.ts';
 import type { Merknad, Merknader, Merknadsliste } from '../fag/vigo/skjema.ts';
 import { lastMerknader } from './merknader.ts';
 
-function bruk(t: T, m: Merknad): string {
+function bruk(t: T, m: Merknad, liste: Merknadsliste): string {
+  if (liste === 'sokerstatuser') {
+    return [m.videregaende ? t('begreper.kodeliste.elevplass') : null, m.fagopplaering ? t('begreper.kodeliste.laereplass') : null].filter(Boolean).join(' · ');
+  }
   return [
     m.grunnskole ? t('begreper.kodeliste.grunnskole') : null,
     m.videregaende ? t('begreper.kodeliste.videregaende') : null,
@@ -24,16 +28,20 @@ function bruk(t: T, m: Merknad): string {
     .join(' · ');
 }
 
-function Koder({ liste, t, malform }: { liste: readonly Merknad[]; t: T; malform: Malform }) {
+function Koder({ koder, liste, t, malform }: { koder: readonly Merknad[]; liste: Merknadsliste; t: T; malform: Malform }) {
   return (
     <ul class="kodeliste">
-      {liste.map((m) => (
+      {koder.map((m) => (
         <li key={m.kode} id={`kode-${m.kode}`}>
-          <span class="kodeliste-kode">{m.kode}</span>
-          <span class="kodeliste-tekst" lang={malform}>
+          <span class="kodeliste-kode">
+            {m.kode}
+            {m.nr !== undefined && <span class="kodeliste-nr">{String(m.nr).padStart(2, '0')}</span>}
+          </span>
+          {/* Uten egen tekst på nynorsk står bokmålsteksten fra VIGO, merket som bokmål. */}
+          <span class="kodeliste-tekst" lang={m[malform] === m.nb ? 'nb' : malform}>
             {m[malform]}
           </span>
-          {bruk(t, m) && <span class="kodeliste-bruk">{bruk(t, m)}</span>}
+          {bruk(t, m, liste) && <span class="kodeliste-bruk">{bruk(t, m, liste)}</span>}
         </li>
       ))}
     </ul>
@@ -78,10 +86,10 @@ export function Kodeliste({ liste, sti, sporring }: { liste: Merknadsliste; sti:
       <p role="status" class="dempet liten">
         {gjeldende.length === 0 ? t('begreper.kodeliste.ingenTreff') : t('begreper.kodeliste.antall', { antall: formaterTall(gjeldende.length) })}
       </p>
-      {gjeldende.length > 0 && <Koder liste={gjeldende} t={t} malform={malform} />}
+      {gjeldende.length > 0 && <Koder koder={gjeldende} liste={liste} t={t} malform={malform} />}
       {utgatte.length > 0 && (
         <Forklaring tittel={t('begreper.kodeliste.utgatte', { antall: formaterTall(utgatte.length) })}>
-          <Koder liste={utgatte} t={t} malform={malform} />
+          <Koder koder={utgatte} liste={liste} t={t} malform={malform} />
         </Forklaring>
       )}
       <p class="dempet liten">{t('begreper.kodeliste.fraVigo', { dato: formaterDato(data.hentet, malform) })}</p>

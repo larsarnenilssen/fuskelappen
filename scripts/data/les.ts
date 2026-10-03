@@ -3,6 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { velgFordeling } from '../../src/data/skolear.ts';
+import { medGrunnlagFraVigo } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
@@ -29,4 +30,12 @@ export function lesFordeling(rot: string, dato = new Date().toISOString().slice(
 export function lesFagrelasjoner(rot: string): Fagrelasjoner | null {
   const fil = join(rot, 'data/vigo/fagrelasjoner.json');
   return existsSync(fil) ? json<Fagrelasjoner>(fil) : null;
+}
+
+/**
+ * Fagindeksen til tilbudsstrukturen: Grep, med grunnlaget for inntak fra VIGO der Grep ikke sier hva påbygging
+ * bygger på (Vg4 påbygging etter lærefag, medGrunnlagFraVigo).
+ */
+export function lesTilbudsindeks(rot: string): Fagindeks {
+  return medGrunnlagFraVigo(lesFagindeks(rot), lesFagrelasjoner(rot)?.grunnlag ?? {});
 }

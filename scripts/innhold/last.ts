@@ -1,7 +1,7 @@
 // Leser og validerer YAML-filer fra content/, rules/ og testdata.
 // Brukes av Vite-pluginen (bygg og tester) og av skriptene.
-import { readFileSync } from 'node:fs';
-import { relative, sep } from 'node:path';
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
+import { join, relative, sep } from 'node:path';
 import { Marked } from 'marked';
 import { parse } from 'yaml';
 import type { ZodType } from 'zod';
@@ -15,6 +15,7 @@ import {
 } from '../../src/core/innhold/skjema.ts';
 import { regelsettSkjema } from '../../src/core/regler/skjema.ts';
 import { lovutvalgSkjema } from '../../src/modules/lov/skjema.ts';
+import { byggBegrepsord, type Begrepsord, lenkBegreper } from '../../src/core/innhold/begrepslenker.ts';
 
 type Filtype = 'kilderegister' | 'fylker' | 'synonymer' | 'praksis' | 'lovutvalg' | 'innhold' | 'regelsett';
 
@@ -53,8 +54,26 @@ function formaterFeil(sti: string, feil: { issues: { path: PropertyKey[]; messag
   return `Ugyldig innhold i ${sti}:\n${linjer.join('\n')}`;
 }
 
+/** Fylket et element gjelder for, eller null for nasjonalt innhold. */
+function fylkeFor(e: Innholdselement): string | null {
+  return e.gyldighet.niva === 'nasjonal' ? null : e.gyldighet.fylke;
+}
+
+/** Teksten som HTML, med lenker til begrepsbanken (avgjørelse 050) når begrepene er kjent. */
+function medLenker(e: Innholdselement, begrepsord: readonly Begrepsord[] | null) {
+  return (tekst: { nb: string; nn: string }) => {
+    const html = { nb: tilHtml(tekst.nb), nn: tilHtml(tekst.nn) };
+    if (!begrepsord) return html;
+    const valg = { egenId: e.type === 'begrep' ? e.id : undefined, fylke: fylkeFor(e) };
+    return {
+      nb: lenkBegreper(html.nb, begrepsord, { ...valg, malform: 'nb' }),
+      nn: lenkBegreper(html.nn, begrepsord, { ...valg, malform: 'nn' }),
+    };
+  };
+}
+
 /** Parser og validerer en fil. Kaster Innholdsfeil med lesbar melding ved feil. */
-export function validerTekst(relSti: string, tekst: string, medHtml = true): unknown {
+export function validerTekst(relSti: string, tekst: string, medHtml = true, begrepsord: readonly Begrepsord[] | null = null): unknown {
   const type = filtype(relSti);
   if (type === null) throw new Innholdsfeil(`Ukjent innholdsfil: ${relSti}`);
   let data: unknown;
@@ -66,15 +85,38 @@ export function validerTekst(relSti: string, tekst: string, medHtml = true): unk
   const resultat = skjemaer[type].safeParse(data);
   if (!resultat.success) throw new Innholdsfeil(formaterFeil(relSti, resultat.error));
   if (type === 'innhold' && medHtml) {
-    return (resultat.data as Innholdselement[]).map((e) => ({
-      ...e,
-      tekst: { nb: tilHtml(e.tekst.nb), nn: tilHtml(e.tekst.nn) },
-      ...(e.type === 'steg' && e.forklaring ? { forklaring: { nb: tilHtml(e.forklaring.nb), nn: tilHtml(e.forklaring.nn) } } : {}),
-    }));
+    return (resultat.data as Innholdselement[]).map((e) => {
+      const html = medLenker(e, begrepsord);
+      return {
+        ...e,
+        tekst: html(e.tekst),
+        ...(e.type === 'steg' && e.forklaring ? { forklaring: html(e.forklaring) } : {}),
+      };
+    });
   }
   return resultat.data;
 }
 
+const begrepscache = new Map<string, { nokkel: string; ord: Begrepsord[] }>();
+
+/**
+ * Lenkeordene til begrepene i content/begreper/, som appen viser i begrepsbanken. Lest på nytt når en fil der er
+ * endret, så nye begreper får lenker uten omstart.
+ */
+export function lesBegrepsord(rot: string): Begrepsord[] {
+  const mappe = join(rot, 'content/begreper');
+  if (!existsSync(mappe)) return [];
+  const filer = readdirSync(mappe).filter((f) => f.endsWith('.yaml')).sort().map((f) => join(mappe, f));
+  const nokkel = filer.map((f) => `${f}:${statSync(f).mtimeMs}`).join('|');
+  const lagret = begrepscache.get(rot);
+  if (lagret?.nokkel === nokkel) return lagret.ord;
+  const ord = byggBegrepsord(filer.flatMap((f) => validerTekst(relative(rot, f), readFileSync(f, 'utf8'), false) as Innholdselement[]));
+  begrepscache.set(rot, { nokkel, ord });
+  return ord;
+}
+
 export function lesFil(rot: string, absSti: string, medHtml = true): unknown {
-  return validerTekst(relative(rot, absSti), readFileSync(absSti, 'utf8'), medHtml);
+  const rel = relative(rot, absSti);
+  const begrepsord = medHtml && filtype(rel) === 'innhold' ? lesBegrepsord(rot) : null;
+  return validerTekst(rel, readFileSync(absSti, 'utf8'), medHtml, begrepsord);
 }

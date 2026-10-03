@@ -4,6 +4,19 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.29.0] – 2026-10-03
+
+### Lagt til
+
+- **Tre nye begreper i Inntak:** karakterpoeng, privatist og tilleggspoeng (Vestland, vises når fylket er valgt).
+- **Status på søkerønsker:** Oppslag i begrepsbanken over statuskodene i inntaket fra VIGO, med søk. Fristen for svar og veiviseren lenker dit.
+- **Opplæringsløp: Vg4 påbygging** står som påbygging etter lærefagene, fra VIGO.
+- **Opplæringsløp: Vg2 på yrkesfag etter Vg1 studiespesialisering** med yrkesfaglig opphenting står i en egen boks med søk, i stedet for som en lang liste.
+
+### Endret
+
+- **Begreper i teksten lenker til begrepsbanken:** Første gang et begrep står i en tekst, kan du trykke på ordet for å lese hva det betyr. Lenken har en tynn, stiplet strek under, så teksten ikke fylles med blå lenker. Gjelder alle tekster, innledninger og hjelpetekster, og nye begreper får lenker av seg selv.
+
 ## [0.28.0] – 2026-10-03
 
 ### Lagt til

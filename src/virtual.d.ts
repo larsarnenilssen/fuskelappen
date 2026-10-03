@@ -44,3 +44,9 @@ declare module '*.yaml' {
   const data: unknown;
   export default data;
 }
+
+declare module 'virtual:begrepsord' {
+  /** Lenkeordene til de nasjonale begrepene, til lenker i innledninger og hjelpetekster (avgjørelse 050). */
+  const ord: { id: string; fylke: string | null; ord: { nb: string[]; nn: string[] } }[];
+  export default ord;
+}

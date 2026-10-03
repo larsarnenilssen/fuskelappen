@@ -2,11 +2,11 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
-import { Innholdsfeil, lesFil } from '../innhold/last.ts';
+import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
-import { lesFagindeks, lesFagrelasjoner, lesFordeling } from '../data/les.ts';
+import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesTilbudsindeks } from '../data/les.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -142,7 +142,7 @@ export function tilbudPlugin(rot: string): Plugin {
     },
     load(lastId) {
       if (lastId !== '\0' + id) return null;
-      const indeks = lesFagindeks(rot);
+      const indeks = lesTilbudsindeks(rot);
       const fordeling = lesFordeling(rot);
       const fagBygger = lesFagrelasjoner(rot)?.byggerPaa ?? {};
       const tilbud: Record<string, unknown> = {};
@@ -198,6 +198,26 @@ export function dataPlugin(rot: string, mode: string): Plugin {
         }
         this.emitFile({ type: 'asset', fileName: navn, source: readFileSync(fil) });
       }
+    },
+  };
+}
+
+/**
+ * Lenkeordene til de nasjonale begrepene, så innledninger og hjelpetekster i appen får lenker til begrepsbanken på
+ * samme måte som teksten i content/ (avgjørelse 050). Lages fra content/begreper/ når appen bygges.
+ */
+export function begrepsordPlugin(rot: string): Plugin {
+  const id = 'virtual:begrepsord';
+  return {
+    name: 'fuskelappen:begrepsord',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const mappe = join(rot, 'content/begreper');
+      if (existsSync(mappe)) for (const f of readdirSync(mappe)) if (f.endsWith('.yaml')) this.addWatchFile(join(mappe, f));
+      return `export default ${JSON.stringify(lesBegrepsord(rot).filter((b) => b.fylke === null))};`;
     },
   };
 }

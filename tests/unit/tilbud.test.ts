@@ -1,7 +1,7 @@
 // Tilbudsmodellen (src/modules/fag/tilbud/modell.ts) med små testdata (avgjørelse 024).
 import { describe, expect, it } from 'vitest';
 import type { Fag, Fagindeks, Programomrade } from '../../src/modules/fag/skjema.ts';
-import { avvikTekst, byggerPaa, byggStruktur, byggTilbud, erVariant, rekker, fagroller, linjetype, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
+import { avvikTekst, byggerPaa, byggStruktur, byggTilbud, erVariant, rekker, fagroller, linjetype, medGrunnlagFraVigo, opphentingsfag, programgruppe, skolearFor, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling, Fordelingstabell } from '../../src/modules/fag/tilbud/skjema.ts';
 import { kontrollenker, vilbliLenke, vilbliTekst } from '../../src/modules/fag/tilbud/vilbli.ts';
 
@@ -133,6 +133,44 @@ describe('tilbudet for et programområde', () => {
     expect(hea.kryssFra).toEqual(['STUSP1----']);
     expect(hea.videre).toEqual(['HSHEA3----']);
     expect(byggTilbud('STUSP1----', indeks, ff).kryssTil).toEqual(['HSHEA2----']);
+  });
+
+  it('Vg2 på yrkesfag fra studieforberedende Vg1 med et opphentingsfag står for seg, ikke som kryssløp (eier 03.10.2026)', () => {
+    // YFO2002 er opphentingsfag når det er felles programfag i minst tre utdanningsprogram.
+    const med: Fagindeks = {
+      ...indeks,
+      programomrader: { ...indeks.programomrader, 'BATMF2----': po('Tømrer', 'BA', 'Vg2', ['STUSP1----']), 'ELELE2----': po('Elenergi', 'EL', 'Vg2', ['STUSP1----']) },
+      fag: { ...indeks.fag, YFO2002: fag('Yrkesfaglig opphenting', 'felles_programfag', ['HSHEA2----', 'BATMF2----', 'ELELE2----'], 196) },
+    };
+    expect(opphentingsfag(indeks)).toEqual([]);
+    expect(opphentingsfag(med)).toEqual(['YFO2002']);
+    const st = byggTilbud('STUSP1----', med, ff);
+    expect(st.kryssTil).toEqual([]);
+    expect(st.opphenting).toEqual({ fag: ['YFO2002'], til: ['BATMF2----', 'ELELE2----', 'HSHEA2----'], fra: [] });
+    const hea2 = byggTilbud('HSHEA2----', med, ff);
+    expect(hea2.kryssFra).toEqual([]);
+    expect(hea2.opphenting).toEqual({ fag: ['YFO2002'], til: [], fra: ['STUSP1----'] });
+  });
+
+  it('Vg4 påbygging etter lærefag kommer fra grunnlaget for inntak i VIGO når Grep ikke sier noe (eier 03.10.2026)', () => {
+    const med: Fagindeks = {
+      ...indeks,
+      utdanningsprogram: { ...indeks.utdanningsprogram, PB: { nb: 'Påbygging', nn: 'Påbygging' } },
+      programomrader: { ...indeks.programomrader, 'PBPBY4----': po('Fag for studiekompetanse', 'PB', 'Vg3'), 'PBPBY3----': po('Påbygging', 'PB', 'Vg3', ['HSHEA2----']) },
+    };
+    const grunnlag = { 'HSHEA3----': ['PBPBY4----'], 'HSHSF1----': ['PBPBY3----', 'HSHEA2----'], 'UKJENT----': ['PBPBY4----'] };
+    const vigo = medGrunnlagFraVigo(med, grunnlag);
+    // Bare påbygging som Grep ikke sier hva bygger på, og bare kjente programområder.
+    expect(vigo.programomrader['PBPBY4----']).toMatchObject({ bygger: ['HSHEA3----'], byggerFraVigo: true });
+    expect(vigo.programomrader['PBPBY3----']?.bygger).toEqual(['HSHEA2----']);
+    expect(vigo.programomrader['HSHEA2----']?.bygger).toEqual(['HSHSF1----', 'STUSP1----']);
+    expect(med.programomrader['PBPBY4----']?.bygger).toEqual([]);
+    const hea3 = byggTilbud('HSHEA3----', vigo, ff);
+    expect(hea3).toMatchObject({ pabygging: ['PBPBY4----'], fraVigo: true });
+    expect(byggTilbud('HSHEA2----', vigo, ff).fraVigo).toBe(false);
+    expect(byggTilbud('PBPBY4----', vigo, ff)).toMatchObject({ kryssFra: ['HSHEA3----'], fraVigo: true });
+    // Vilbli viser påbyggingen under programmet brukeren kom fra.
+    expect(vilbliLenke('PBPBY4----', med, { side: 'p5', via: 'HSHEA3----', bygger: ['HSHEA3----'] })).toContain('/v.hs/v.pbpby4----/');
   });
 
   it('gir plasser for fordypning og valgfrie programfag med antall fag', () => {

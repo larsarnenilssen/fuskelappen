@@ -17,7 +17,6 @@ export const laereplanverketNb = {
   ikkeFunnet: 'Fant ikke delen i overordnet del.',
   hentet: 'Teksten er hentet fra udir.no {dato}.',
   omBegrep: {
-    overordnetDel: 'Om begrepet overordnet del',
     ferdigheter: 'Om begrepet grunnleggende ferdigheter',
     temaer: 'Om begrepet tverrfaglige temaer',
   },

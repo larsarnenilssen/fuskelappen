@@ -31,6 +31,84 @@ Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst u
 
 - Studiespesialisering: Realfag vg2 tyske skole (STREA2TY), Realfag vg3 tyske skole (STREA3TY)
 
+### Grunnlag for inntak i VIGO og «bygger på» i Grep
+
+VIGO Kodeverksbase har 580 koblinger for programområdene i Grep. 191 brukes for påbygging som Grep ikke sier hva bygger på (Vg4 påbygging etter lærefag). 383 er de samme som i Grep.
+
+Bare i VIGO (6, ikke brukt):
+
+- Salg, service og reiseliv (SRSSR2) → Reiselivsfaget (SRRLV3)
+- Salg, service og reiseliv (SRSSR2) → Sikkerhetsfaget (SRSIK3)
+- Salg, service og reiseliv (SRSSR2) → Salgsfaget (SRSLG3)
+- Salg, service og reiseliv (SRSSR2) → Service- og administrasjonsfaget (SRSOA3)
+- Realfag vg2 tyske skole (STREA2TY) → Realfag vg3 tyske skole (STREA3TY)
+- Studiespesialisering vg1 tyske skole (STUSP1TY) → Realfag vg2 tyske skole (STREA2TY)
+
+Bare i Grep (62):
+
+- Bygg- og anleggsteknikk (BABAT1) → Gipsmakerfaget (DTGIP3)
+- Klima, energi og miljøteknikk (BAKEM2) → Rørleggerfaget (BARLF3)
+- Håndverk, design og produktutvikling (DTDTH1) → Treteknikk (BATRT2)
+- Akvakultur (NAAKV2) → Sjømatproduksjon (RMSMP3)
+- Fiske og fangst (NAFFA2) → Sjømatproduksjon (RMSMP3)
+- Naturbruk (NANAB1) → Byggdrifterfaget (BABDR3)
+- Restaurant- og matfag (RMRMF1) → Fiske og fangst (NAFFA2)
+- Studiespesialisering (STUSP1) → Anleggsgartner (BAANG2)
+- Studiespesialisering (STUSP1) → Anleggsteknikk (BAANL2)
+- Studiespesialisering (STUSP1) → Betong og mur (BABMO2)
+- Studiespesialisering (STUSP1) → Klima, energi og miljøteknikk (BAKEM2)
+- Studiespesialisering (STUSP1) → Overflateteknikk (BAOFT2)
+- Studiespesialisering (STUSP1) → Rørlegger (BARLF2)
+- Studiespesialisering (STUSP1) → Tømrer (BATMF2)
+- Studiespesialisering (STUSP1) → Treteknikk (BATRT2)
+- Studiespesialisering (STUSP1) → Båtbygger (DTBBF2)
+- Studiespesialisering (STUSP1) → Duodji (DTDDU2)
+- Studiespesialisering (STUSP1) → Gull- og sølvsmedhåndverk (DTDGH2)
+- Studiespesialisering (STUSP1) → Trearbeid (DTDTR2)
+- Studiespesialisering (STUSP1) → Smed (DTSME2)
+- Studiespesialisering (STUSP1) → Søm og tekstilhåndverk (DTSTH2)
+- Studiespesialisering (STUSP1) → Urmaker (DTUIM2)
+- Studiespesialisering (STUSP1) → Automatisering (ELAUT2)
+- Studiespesialisering (STUSP1) → Datateknologi og elektronikk (ELDEL2)
+- Studiespesialisering (STUSP1) → Elenergi og ekom (ELELE2)
+- Studiespesialisering (STUSP1) → Flyfag (ELFLY2)
+- Studiespesialisering (STUSP1) → Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2)
+- Studiespesialisering (STUSP1) → Blomsterdekoratør (FDBLD2)
+- Studiespesialisering (STUSP1) → Frisør (FDFRI2)
+- Studiespesialisering (STUSP1) → Interiør og eksponeringsdesign (FDIED2)
+- Studiespesialisering (STUSP1) → Aktivitør (HSAKT2)
+- Studiespesialisering (STUSP1) → Ambulansefag (HSAMB2)
+- Studiespesialisering (STUSP1) → Barne- og ungdomsarbeiderfag (HSBUA2)
+- Studiespesialisering (STUSP1) → Fotterapi og ortopediteknikk (HSFOT2)
+- Studiespesialisering (STUSP1) → Helsearbeiderfag (HSHEA2)
+- Studiespesialisering (STUSP1) → Helseservicefag (HSHES2)
+- Studiespesialisering (STUSP1) → Hudpleie (HSHUD2)
+- Studiespesialisering (STUSP1) → Informasjonsteknologi (IMITK2)
+- Studiespesialisering (STUSP1) → Medieproduksjon (IMMED2)
+- Studiespesialisering (STUSP1) → Akvakultur (NAAKV2)
+- Studiespesialisering (STUSP1) → Fiske og fangst (NAFFA2)
+- Studiespesialisering (STUSP1) → Heste- og dyrefag (NAHDF2)
+- Studiespesialisering (STUSP1) → Landbruk og gartnernæring (NALGA2)
+- Studiespesialisering (STUSP1) → Reindrift (NAREI2)
+- Studiespesialisering (STUSP1) → Skogbruk (NASBR2)
+- Studiespesialisering (STUSP1) → Baker og konditor (RMBAK2)
+- Studiespesialisering (STUSP1) → Kokk- og servitørfag (RMKOS2)
+- Studiespesialisering (STUSP1) → Matproduksjon (RMMPR2)
+- Studiespesialisering (STUSP1) → Salg, service og reiseliv (SRSSR2)
+- Studiespesialisering (STUSP1) → Arbeidsmaskiner (TPAMK2)
+- Studiespesialisering (STUSP1) → Bilskade, lakk og karosseri (TPBLK2)
+- Studiespesialisering (STUSP1) → Børsemaker (TPBMF2)
+- Studiespesialisering (STUSP1) → Brønnteknikk (TPBRT2)
+- Studiespesialisering (STUSP1) → Kjøretøy (TPKJT2)
+- Studiespesialisering (STUSP1) → Kjemiprosess- og laboratoriefag (TPKPL2)
+- Studiespesialisering (STUSP1) → Maritime fag (TPMAR2)
+- Studiespesialisering (STUSP1) → Industriteknologi (TPPIN2)
+- Studiespesialisering (STUSP1) → Transport og logistikk (TPTOL2)
+- Industriteknologi (TPPIN2) → Kran- og løfteoperasjonsfaget (TPKLO3)
+- Teknologi- og industrifag (TPTIP1) → Duodji (DTDDU2)
+- Teknologi- og industrifag (TPTIP1) → Trearbeid (DTDTR2)
+- Teknologi- og industrifag (TPTIP1) → Yrkessjåførkurs for voksne (TPYSL3)
+
 ### Avvik mellom rundskrivet og Grep
 
 - Grep kobler ingen fellesfag til programområdet. (32: KDKDA1RS, KDKDA2RS, KDKDA3RS, MDDRA1RS, MDDRA2RS …)
@@ -493,7 +571,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 - Samisk, 822 timer: Norsk 113 → –; Førstespråk samisk – → 103; Andrespråk norsk – → 103; Fremmedspråk 113 → –
 - Elever med tegnspråk, 804 timer: Norsk 113 → –; Norsk for elever med tegnspråk – → 113; Norsk tegnspråk – → 75; Fremmedspråk 113 → –
 
-Kryssløp til: 51 programområder: BA 8, DT 7, EL 5, FD 3, HS 7, IM 2, NA 6, RM 3, SR 1, TP 9.
+Vg2 på yrkesfag med YFO2002 Yrkesfaglig opphenting: 51 programområder (vises med søk, ikke som liste).
 
 ##### Vg2 Realfag vg2 (STREA2) · 840 timer ✓
 
@@ -655,7 +733,7 @@ Lærefag etter Bygg- og anleggsteknikk (BABAT1):
 
 ##### Vg2 Anleggsgartner (BAANG2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Naturbruk (NANAB1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baang2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baang2----/p2)
 
@@ -684,7 +762,7 @@ Lærefag etter Anleggsgartner (BAANG2):
 
 ##### Vg2 Anleggsteknikk (BAANL2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baanl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baanl2----/p2)
 
@@ -721,7 +799,7 @@ Lærefag etter Anleggsteknikk (BAANL2):
 
 ##### Vg2 Betong og mur (BABMO2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babmo2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.babmo2----/p2)
 
@@ -751,7 +829,7 @@ Lærefag etter Betong og mur (BABMO2):
 
 ##### Vg2 Klima, energi og miljøteknikk (BAKEM2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bakem2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.bakem2----/p2)
 
@@ -783,7 +861,7 @@ Lærefag etter Klima, energi og miljøteknikk (BAKEM2):
 
 ##### Vg2 Overflateteknikk (BAOFT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baoft2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.baoft2----/p2)
 
@@ -813,7 +891,7 @@ Lærefag etter Overflateteknikk (BAOFT2):
 
 ##### Vg2 Rørlegger (BARLF2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.barlf2----/p2)
 
@@ -842,7 +920,7 @@ Lærefag etter Rørlegger (BARLF2):
 
 ##### Vg2 Treteknikk (BATRT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Håndverk, design og produktutvikling (DTDTH1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Håndverk, design og produktutvikling (DTDTH1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batrt2----/p2)
 
@@ -874,7 +952,7 @@ Lærefag etter Treteknikk (BATRT2):
 
 ##### Vg2 Tømrer (BATMF2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Bygg- og anleggsteknikk (BABAT1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.batmf2----/p2)
 
@@ -931,7 +1009,7 @@ Kryssløp til: 7 programområder: DT 1, TP 6.
 
 ##### Vg2 Automatisering (ELAUT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elaut2----/p2)
 
@@ -975,7 +1053,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-dat
 
 ##### Vg2 Datateknologi og elektronikk (ELDEL2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldel2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.eldel2----/p2)
 
@@ -1032,6 +1110,8 @@ Avvik:
 
 - ⚠ Felles programfag fra eget programområde: rundskrivet har 925 timer, fagene i Grep har til sammen 700.
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ##### Vg2 Dronefag (ELDRF2) · 982 timer ✓
 
 Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1).
@@ -1067,7 +1147,7 @@ Lærefag etter Dronefag (ELDRF2):
 
 ##### Vg2 Elenergi og ekom (ELELE2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elele2----/p2)
 
@@ -1121,7 +1201,7 @@ Lærefag etter Maritim elektrikerfaget vg3 i skole (ELMEL3):
 
 ##### Vg2 Flyfag (ELFLY2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elfly2----/p2)
 
@@ -1180,7 +1260,7 @@ Lærefag etter Flytekniske fag (ELFLY3):
 
 ##### Vg2 Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Elektro og datateknologi (ELELE1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elkvv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/elektro-og-datateknologi/program/v.el/v.elkvv2----/p2)
 
@@ -1240,7 +1320,7 @@ Lærefag etter Frisør, blomster, interiør og eksponeringsdesign (FDFBI1):
 
 ##### Vg2 Blomsterdekoratør (FDBLD2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdbld2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdbld2----/p2)
 
@@ -1269,7 +1349,7 @@ Lærefag etter Blomsterdekoratør (FDBLD2):
 
 ##### Vg2 Frisør (FDFRI2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfri2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdfri2----/p2)
 
@@ -1298,7 +1378,7 @@ Lærefag etter Frisør (FDFRI2):
 
 ##### Vg2 Interiør og eksponeringsdesign (FDIED2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Frisør, blomster, interiør og eksponeringsdesign (FDFBI1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdied2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/frisor-blomster-interior-og-eksponeringsdesign/program/v.fd/v.fdied2----/p2)
 
@@ -1337,6 +1417,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomste
 | Felles programfag fra eget programområde | 925 | EKD3001 Produksjon og konseptutvikling (660)<br>EKD3002 Bedriftskultur og markedsføring (265)<br>vurdering: EKD3003 Tverrfaglig eksamen eksponeringsdesign | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ###### Vg3 Interiør (FDINT3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Interiør og eksponeringsdesign (FDIED2).
@@ -1348,6 +1430,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/frisor-blomste
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | INT3004 Prosess og prosjektering (660)<br>INT3005 Kunde og kommunikasjon (265)<br>vurdering: INT3006 Tverrfaglig eksamen interiør | 635 |
 | **Sum** | **981** | Rundskrivet: 981 | |
+
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
 
 ### Helse- og oppvekstfag (HS)
 
@@ -1377,7 +1461,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 ##### Vg2 Aktivitør (HSAKT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsakt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsakt2----/p2)
 
@@ -1406,7 +1490,7 @@ Lærefag etter Aktivitør (HSAKT2):
 
 ##### Vg2 Ambulansefag (HSAMB2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsamb2----/p2)
 
@@ -1437,7 +1521,7 @@ Lærefag etter Ambulansefag (HSAMB2):
 
 ##### Vg2 Barne- og ungdomsarbeiderfag (HSBUA2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsbua2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsbua2----/p2)
 
@@ -1466,7 +1550,7 @@ Lærefag etter Barne- og ungdomsarbeiderfag (HSBUA2):
 
 ##### Vg2 Fotterapi og ortopediteknikk (HSFOT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hsfot2----/p2)
 
@@ -1505,9 +1589,11 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 | Felles programfag fra eget programområde | 925 | FOT3005 Helse, funksjon og bevegelse (250)<br>FOT3006 Kommunikasjon og samhandling (250)<br>FOT3007 Yrkesliv i fotterapifaget (425)<br>vurdering: FOT3008 Tverrfaglig eksamen fotterapi | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ##### Vg2 Helsearbeiderfag (HSHEA2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshea2----/p2)
 
@@ -1537,7 +1623,7 @@ Lærefag etter Helsearbeiderfag (HSHEA2):
 
 ##### Vg2 Helseservicefag (HSHES2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshes2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshes2----/p2)
 
@@ -1576,6 +1662,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 | Felles programfag fra eget programområde | 925 | APO3005 Helseveiledning i apotek (371)<br>APO3006 Kommunikasjon og samhandling (139)<br>APO3007 Yrkesliv i apotekteknikkfaget (415)<br>vurdering: APO3008 Tverrfaglig eksamen, apotekteknikk | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ###### Vg3 Helsesekretær (HSHSE3) · 981 timer ✓
 
 Tabell 21 (Vg3) i Udir-1-2026. Bygger på Helseservicefag (HSHES2).
@@ -1587,6 +1675,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | HSE3005 Helse og sykdom (371)<br>HSE3006 Kommunikasjon og samhandling (184)<br>HSE3007 Yrkesliv i helsesekretærfaget (370)<br>vurdering: HSE3008 Tverrfaglig eksamen, helsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
+
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
 
 ###### Vg3 Tannhelsesekretær (HSTAN3) · 981 timer ✓
 
@@ -1600,9 +1690,11 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 | Felles programfag fra eget programområde | 925 | TAN3005 Smittevern, tannanatomi og fysiologi (250)<br>TAN3006 Kommunikasjon og samhandling (250)<br>TAN3007 Yrkesliv i tannhelsesekretærfaget (425)<br>vurdering: TAN3008 Tverrfaglig eksamen, tannhelsesekretær | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ##### Vg2 Hudpleie (HSHUD2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Helse- og oppvekstfag (HSHSF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/helse-og-oppvekstfag/program/v.hs/v.hshud2----/p2)
 
@@ -1636,6 +1728,8 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/helse-og-oppve
 | Kroppsøving | 56 | KRO1019 Kroppsøving Vg3 | 635 |
 | Felles programfag fra eget programområde | 925 | HUD3009 Helsefremmende arbeid (250)<br>HUD3010 Kommunikasjon og samhandling (250)<br>HUD3011 Yrkesliv i hudterapifaget (425)<br>vurdering: HUD3012 Tverrfaglig eksamen, hudterapifaget | 607.5 |
 | **Sum** | **981** | Rundskrivet: 981 | |
+
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
 
 ### Håndverk, design og produktutvikling (DT)
 
@@ -1685,7 +1779,7 @@ Lærefag etter Håndverk, design og produktutvikling (DTDTH1):
 
 ##### Vg2 Båtbygger (DTBBF2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbbf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtbbf2----/p2)
 
@@ -1715,7 +1809,7 @@ Lærefag etter Båtbygger (DTBBF2):
 
 ##### Vg2 Duodji (DTDDU2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtddu2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtddu2----/p2)
 
@@ -1748,7 +1842,7 @@ Lærefag etter Duodji (DTDDU2):
 
 ##### Vg2 Gull- og sølvsmedhåndverk (DTDGH2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdgh2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdgh2----/p2)
 
@@ -1779,7 +1873,7 @@ Lærefag etter Gull- og sølvsmedhåndverk (DTDGH2):
 
 ##### Vg2 Smed (DTSME2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsme2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsme2----/p2)
 
@@ -1808,7 +1902,7 @@ Lærefag etter Smed (DTSME2):
 
 ##### Vg2 Søm og tekstilhåndverk (DTSTH2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsth2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtsth2----/p2)
 
@@ -1849,7 +1943,7 @@ Lærefag etter Søm og tekstilhåndverk (DTSTH2):
 
 ##### Vg2 Trearbeid (DTDTR2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Bygg- og anleggsteknikk (BABAT1), Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Bygg- og anleggsteknikk (BABAT1), Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdtr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtdtr2----/p2)
 
@@ -1882,7 +1976,7 @@ Lærefag etter Trearbeid (DTDTR2):
 
 ##### Vg2 Urmaker (DTUIM2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1), Teknologi- og industrifag (TPTIP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Håndverk, design og produktutvikling (DTDTH1). Kryssløp fra Elektro og datateknologi (ELELE1), Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtuim2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/handverk-design-og-produktutvikling/program/v.dt/v.dtuim2----/p2)
 
@@ -1937,7 +2031,7 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 ##### Vg2 Informasjonsteknologi (IMITK2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imitk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.imitk2----/p2)
 
@@ -1967,7 +2061,7 @@ Lærefag etter Informasjonsteknologi (IMITK2):
 
 ##### Vg2 Medieproduksjon (IMMED2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Informasjonsteknologi og medieproduksjon (IMIKM1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immed2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/informasjonsteknologi-og-medieproduksjon/program/v.im/v.immed2----/p2)
 
@@ -2033,7 +2127,7 @@ Lærefag etter Naturbruk (NANAB1):
 
 ##### Vg2 Akvakultur (NAAKV2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naakv2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naakv2----/p2)
 
@@ -2091,7 +2185,7 @@ Andre fag i Grep for programområdet: YFF4301 Yrkesfaglig fordypning vg3.
 
 ##### Vg2 Fiske og fangst (NAFFA2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Restaurant- og matfag (RMRMF1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Restaurant- og matfag (RMRMF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.naffa2----/p2)
 
@@ -2127,7 +2221,7 @@ Se over.
 
 ##### Vg2 Heste- og dyrefag (NAHDF2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahdf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nahdf2----/p2)
 
@@ -2161,7 +2255,7 @@ Se over.
 
 ##### Vg2 Landbruk og gartnernæring (NALGA2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalga2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nalga2----/p2)
 
@@ -2203,13 +2297,15 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/prog
 
 Andre fag i Grep for programområdet: LBR3009 Plante- og husdyrproduksjon, LBR3010 Utmark og kulturlandskap, LBR3011 Gårdsdrift, LBR3016 Tverrfaglig eksamen, landbruk.
 
+Påbygging: Fag for studiekompetanse (PBPBY4) (fra VIGO).
+
 ###### Vg3 Studieforberedende vg3 innen naturbruk (NANAB3)
 
 Se over.
 
 ##### Vg2 Reindrift (NAREI2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.narei2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.narei2----/p2)
 
@@ -2242,7 +2338,7 @@ Se over.
 
 ##### Vg2 Skogbruk (NASBR2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Naturbruk (NANAB1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nasbr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/naturbruk/program/v.na/v.nasbr2----/p2)
 
@@ -2303,7 +2399,7 @@ Kryssløp til: Fiske og fangst (NAFFA2).
 
 ##### Vg2 Baker og konditor (RMBAK2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmbak2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmbak2----/p2)
 
@@ -2334,7 +2430,7 @@ Lærefag etter Baker og konditor (RMBAK2):
 
 ##### Vg2 Kokk- og servitørfag (RMKOS2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkos2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmkos2----/p2)
 
@@ -2366,7 +2462,7 @@ Lærefag etter Kokk- og servitørfag (RMKOS2):
 
 ##### Vg2 Matproduksjon (RMMPR2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Restaurant- og matfag (RMRMF1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmmpr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/restaurant-og-matfag/program/v.rm/v.rmmpr2----/p2)
 
@@ -2428,7 +2524,7 @@ Kryssløp til: Transport og logistikk (TPTOL2).
 
 ##### Vg2 Salg, service og reiseliv (SRSSR2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Salg, service og reiseliv (SRSSR1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Salg, service og reiseliv (SRSSR1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/salg-service-og-reiseliv/program/v.sr/v.srssr2----/p2)
 
@@ -2488,7 +2584,7 @@ Kryssløp til: 10 programområder: BA 1, DT 6, EL 3.
 
 ##### Vg2 Arbeidsmaskiner (TPAMK2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpamk2----/p2)
 
@@ -2531,7 +2627,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-i
 
 ##### Vg2 Bilskade, lakk og karosseri (TPBLK2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpblk2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpblk2----/p2)
 
@@ -2564,7 +2660,7 @@ Lærefag etter Bilskade, lakk og karosseri (TPBLK2):
 
 ##### Vg2 Brønnteknikk (TPBRT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbrt2----/p2)
 
@@ -2599,7 +2695,7 @@ Lærefag etter Brønnteknikk (TPBRT2):
 
 ##### Vg2 Børsemaker (TPBMF2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmf2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpbmf2----/p2)
 
@@ -2628,7 +2724,7 @@ Lærefag etter Børsemaker (TPBMF2):
 
 ##### Vg2 Industriteknologi (TPPIN2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppin2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tppin2----/p2)
 
@@ -2685,7 +2781,7 @@ Lærefag etter Industriteknologi (TPPIN2):
 
 ##### Vg2 Kjemiprosess- og laboratoriefag (TPKPL2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkpl2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkpl2----/p2)
 
@@ -2715,7 +2811,7 @@ Lærefag etter Kjemiprosess- og laboratoriefag (TPKPL2):
 
 ##### Vg2 Kjøretøy (TPKJT2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkjt2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpkjt2----/p2)
 
@@ -2757,7 +2853,7 @@ Se over.
 
 ##### Vg2 Maritime fag (TPMAR2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Elektro og datateknologi (ELELE1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmar2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tpmar2----/p2)
 
@@ -2787,7 +2883,7 @@ Lærefag etter Maritime fag (TPMAR2):
 
 ##### Vg2 Transport og logistikk (TPTOL2) · 982 timer ✓
 
-Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Salg, service og reiseliv (SRSSR1), Studiespesialisering (STUSP1).
+Tabell 17a (vg2) i Udir-1-2026. Bygger på Teknologi- og industrifag (TPTIP1). Kryssløp fra Salg, service og reiseliv (SRSSR1).
 
 Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptol2----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/teknologi-og-industrifag/program/v.tp/v.tptol2----/p2)
 
@@ -2854,7 +2950,9 @@ Tilpassede ordninger (kolonner i rundskrivet):
 
 #### Vg3 Fag for studiekompetanse (PBPBY4) · 645 timer ✓
 
-Tabell 27 (Vg4 påbygging) i Udir-1-2026.
+Tabell 27 (Vg4 påbygging) i Udir-1-2026. Bygger på 191 programområder: BA 28, DT 41, EL 22, FD 6, HS 11, IM 5, NA 10, RM 11, SR 4, TP 53.
+
+Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby4----/p5) · [fag- og timefordeling](https://www.vilbli.no/nb/nb/no/bygg-og-anleggsteknikk/program/v.ba/v.pbpby4----/p2)
 
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|

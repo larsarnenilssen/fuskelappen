@@ -3,7 +3,7 @@
 // skolene som har det (avgjørelse 027). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
 // Linjenavnene fra rundskrivet («Norsk», «Fremmedspråk») står på valgt målform (navn.ts). Avvik mellom rundskrivet og
 // Grep vises som en nøytral merknad der de gjelder (eier 02.10.2026).
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useId, useState } from 'preact/hooks';
 import { naviger } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
@@ -16,10 +16,11 @@ import { nyGruppe, useKoblingsdata } from '../../arbeidstid/komponenter/Skjema.t
 import { overforSkjema } from '../../arbeidstid/kontekst.ts';
 import { lastFagroller } from '../../fag/data.ts';
 import { fellesStart } from '../../fag/klasser.ts';
+import { normaliser } from '../../fag/oppslag.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
-import { trinnTekst } from '../../fag/visning.ts';
+import { visningstrinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, skoleForst, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
@@ -392,12 +393,73 @@ function Tilbudsliste({ nokkel, tittel, koder, indeks, via }: { nokkel: string; 
   );
 }
 
-function Vilbli({ kode, indeks, via }: { kode: string; indeks: Fagindeks; via: string | null }) {
+/** Høyst så mange treff i søket etter Vg2 med opphentingsfag. */
+const MAKS_TREFF = 8;
+
+/**
+ * Overgang fra et studieforberedende Vg1 til Vg2 på yrkesfag med et opphentingsfag (Yrkesfaglig opphenting, eier
+ * 03.10.2026). Mange Vg2 kan følge, så de står ikke som liste, men kan søkes fram.
+ */
+function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; via: string }) {
+  const { t, malform } = useTekst();
+  const id = useId();
+  const [sok, settSok] = useState('');
+  if (tb.opphenting.til.length === 0) return null;
+  const ord = normaliser(sok).split(' ').filter(Boolean);
+  const treff =
+    ord.length === 0
+      ? []
+      : tb.opphenting.til.filter((k) => {
+          const tekst = normaliser(`${tilbudsnavn(t, indeks, k, malform)} ${indeks.utdanningsprogram[indeks.programomrader[k]?.program ?? '']?.[malform] ?? ''} ${kortKode(k)}`);
+          return ord.every((o) => tekst.includes(o));
+        });
+  return (
+    <section class="merknad opphenting" aria-labelledby={`${id}-tittel`}>
+      <h2 id={`${id}-tittel`} class="liten-overskrift">
+        {t('opplaeringslop.tilbud.opphenting.tittel')}
+      </h2>
+      <p>
+        {t('opplaeringslop.tilbud.opphenting.tekst', { antall: formaterTall(tb.opphenting.til.length) })}{' '}
+        {tb.opphenting.fag.map((f, i) => (
+          <span key={f}>
+            {i > 0 && ', '}
+            <a href={`#/fag/${f}`}>{indeks.fag[f]?.navn[malform] ?? f}</a>
+          </span>
+        ))}
+        .
+      </p>
+      <div class="felt">
+        <label for={id}>{t('opplaeringslop.tilbud.opphenting.sok')}</label>
+        <div class="sokefelt">
+          <Ikon navn="sok" class="sokefelt-ikon" />
+          <input id={id} type="search" autoComplete="off" enterKeyHint="search" value={sok} onInput={(e) => settSok(e.currentTarget.value)} />
+        </div>
+      </div>
+      {ord.length > 0 && (
+        <p role="status" class="dempet liten">
+          {treff.length === 0 ? t('opplaeringslop.tilbud.opphenting.ingenTreff') : t('opplaeringslop.tilbud.opphenting.antall', { antall: formaterTall(treff.length) })}
+        </p>
+      )}
+      {treff.length > 0 && (
+        <ul class="liste">
+          {treff.slice(0, MAKS_TREFF).map((k) => (
+            <li key={k}>
+              <Tilbudslenke indeks={indeks} kode={k} via={via} />
+            </li>
+          ))}
+        </ul>
+      )}
+      {treff.length > MAKS_TREFF && <p class="dempet liten">{t('opplaeringslop.tilbud.opphenting.flere', { antall: formaterTall(treff.length - MAKS_TREFF) })}</p>}
+    </section>
+  );
+}
+
+function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[] }) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const fylke = fylkesnavn(innstillinger.fylke);
-  const skoler = vilbliLenke(kode, indeks, { side: 'p5', fylke, via });
-  const fordeling = vilbliLenke(kode, indeks, { side: 'p2', via });
+  const skoler = vilbliLenke(kode, indeks, { side: 'p5', fylke, via, bygger });
+  const fordeling = vilbliLenke(kode, indeks, { side: 'p2', via, bygger });
   if (!skoler) return null;
   return (
     <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={t('opplaeringslop.tilbud.vilbliOverskrift')}>
@@ -465,7 +527,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       <h1 tabIndex={-1}>{po.navn[malform]}</h1>
       <ul class="merker fagark-merker" aria-label={t('opplaeringslop.tittel')}>
         <li class="merke merke-kode">{k}</li>
-        <li class="merke">{trinnTekst(t, po.trinn)}</li>
+        <li class="merke">{visningstrinnTekst(t, kode, po.trinn)}</li>
         <li class="merke">{t(`opplaeringslop.sted.${po.sted}`)}</li>
       </ul>
 
@@ -494,8 +556,15 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
       <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
       <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />
+      <Tilbudsliste
+        nokkel={`lop-${k}-opphenting-fra`}
+        tittel={t('opplaeringslop.tilbud.opphenting.fra', { fag: tb.opphenting.fag.map((f) => indeks.fag[f]?.navn[malform] ?? f).join(', ') })}
+        koder={tb.opphenting.fra}
+        indeks={indeks}
+      />
+      <Opphenting tb={tb} indeks={indeks} via={kode} />
 
-      <Vilbli kode={kode} indeks={indeks} via={viaKode} />
+      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} />
 
       <p class="liten">
         <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
@@ -504,6 +573,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         kilder={[
           { id: 'udir-grep', punkt: k },
           ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
+          ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
         ]}
       />
     </article>

@@ -9,6 +9,7 @@ import type { Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { type AdvarselId, type Arsrammerad, type Arstimerad, type Hent, lesArsrammer, lesArstimer } from '../beregning/index.ts';
 import { Metode } from './Metode.tsx';
 import { aapneINyttVindu } from '../kontekst.ts';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 export type KalkulatorId = 'arbeidsplan' | 'beskjeftigelse' | 'vikar' | 'overtid';
 
@@ -35,7 +36,7 @@ export function Kalkulatorside({
       <div class="tittelrad med-hjelp">
         <h1 tabIndex={-1}>{tittel}</h1>
         <Hjelp tema={tittel}>
-          <p class="ingress-liten">{t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)}</p>
+          <p class="ingress-liten"><Begrepstekst tekst={t(`arbeidstid.kalkulatorer.${id}.beskrivelse` as Tekstnokkel)} /></p>
         </Hjelp>
         <FavorittKnapp id={`arbeidstid:${id}`} navn={tittel} />
         <button type="button" class="ikonknapp skriv-ut" aria-label={t('arbeidstid.felles.skrivUt', { navn: tittel })} title={t('arbeidstid.felles.skrivUtKort')} onClick={() => window.print()}>

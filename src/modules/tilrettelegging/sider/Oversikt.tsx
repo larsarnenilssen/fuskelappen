@@ -3,6 +3,7 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, veiviserRute, type Veiviserinnhold } from '../innhold.ts';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 /**
  * Figur: individuell tilrettelegging er en del av tilpasset opplæring. Den indre boksen (noen elever) står inne i
@@ -55,7 +56,7 @@ export default function Oversikt() {
   return (
     <div class="side">
       <h1 tabIndex={-1}>{t('tilrettelegging.tittel')}</h1>
-      <p class="ingress">{t('tilrettelegging.innledning')}</p>
+      <p class="ingress"><Begrepstekst tekst={t('tilrettelegging.innledning')} /></p>
       <Figur />
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>

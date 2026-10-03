@@ -12,6 +12,14 @@ export function trinnTekst(t: T, trinn: Trinn): string {
   return t(`fag.trinn.${trinn}`);
 }
 
+/**
+ * Trinnet slik det vises for et programområde. Fag for studiekompetanse (PBPBY4) er Vg4 påbygging, men Grep oppgir
+ * Vg3 (eier 01.10.2026, se finnTabell i tilbud/modell.ts).
+ */
+export function visningstrinnTekst(t: T, kode: string, trinn: Trinn): string {
+  return kode.startsWith('PBPBY4') ? t('fag.trinn.Vg4') : trinnTekst(t, trinn);
+}
+
 export function programTekst(indeks: Fagindeks, program: string, malform: Malform): string {
   return indeks.utdanningsprogram[program]?.[malform] ?? program;
 }

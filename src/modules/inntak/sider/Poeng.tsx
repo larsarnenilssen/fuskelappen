@@ -25,6 +25,7 @@ import { lastFagfordeling } from '../../../data/fagfordeling.ts';
 import { hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
 import type { Fagfordeling } from '../../fag/tilbud/skjema.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 type Trinn = 'vg1' | 'vg2' | 'vg3';
 const TRINN: readonly Trinn[] = ['vg1', 'vg2', 'vg3'];
@@ -190,7 +191,7 @@ export default function Poeng({ sporring }: SideProps) {
         <h1 tabIndex={-1}>{tittel}</h1>
         <FavorittKnapp id="inntak:poeng" navn={tittel} />
       </div>
-      <p class="ingress">{t('inntak.poeng.innledning')}</p>
+      <p class="ingress"><Begrepstekst tekst={t('inntak.poeng.innledning')} /></p>
       {innhold && <Lokalmerknad innhold={innhold} />}
 
       <nav class="frist-filter poeng-trinn" aria-label={t('inntak.poeng.sokerTil')}>

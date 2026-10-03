@@ -44,9 +44,4 @@ export const lovNn: typeof lovNb = {
   endringer: 'Endringar',
   fotnoter: 'Fotnotar',
   fotnote: 'Fotnote {nr}',
-  omBegrep: {
-    lov: 'Om omgrepet lov',
-    forskrift: 'Om omgrepet forskrift',
-    paragraf: 'Om paragraf og ledd',
-  },
 };

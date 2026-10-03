@@ -14,7 +14,7 @@ import { ukjenteNavn } from '../../src/modules/opplaeringslop/navn.ts';
 import { avvikTekst, byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
-import { lesFagrelasjoner, lesFordelinger } from '../data/les.ts';
+import { lesFagrelasjoner, lesFordelinger, lesTilbudsindeks } from '../data/les.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
 
 export interface Kobling {
@@ -39,7 +39,14 @@ const KATEGORI: Record<Exclude<Tilbudsdel['kategori'], 'fellesfag' | 'felles_pro
 const kort = (kode: string) => kode.replace(/-+$/, '');
 const celle = (t: string) => t.replace(/\|/g, '\\|');
 
-export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | null, kobling: Kobling, neste: Fagfordeling | null = null, fagBygger: FagBygger = {}): string {
+export function lagTilbudsrapport(
+  indeks: Fagindeks,
+  fordeling: Fagfordeling | null,
+  kobling: Kobling,
+  neste: Fagfordeling | null = null,
+  fagBygger: FagBygger = {},
+  grunnlag: Readonly<Record<string, readonly string[]>> = {},
+): string {
   const tilbud = new Map(Object.keys(indeks.programomrader).map((k) => [k, byggTilbud(k, indeks, fordeling, fagBygger)]));
   const struktur = byggStruktur(indeks);
   const fagnavn = (k: string) => `${k} ${indeks.fag[k]?.navn.nb ?? '(ukjent)'}`;
@@ -159,8 +166,9 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
       ut.push('');
     }
     if (t.andreFag.length > 0) ut.push(`Andre fag i Grep for programområdet: ${faglister(t.andreFag)}.`, '');
-    if (t.pabygging.length > 0) ut.push(`Påbygging: ${t.pabygging.map(ponavn).join(', ')}.`, '');
+    if (t.pabygging.length > 0) ut.push(`Påbygging: ${t.pabygging.map((p) => `${ponavn(p)}${indeks.programomrader[p]?.byggerFraVigo ? ' (fra VIGO)' : ''}`).join(', ')}.`, '');
     if (t.kryssTil.length > 0) ut.push(`Kryssløp til: ${polister(t.kryssTil)}.`, '');
+    if (t.opphenting.til.length > 0) ut.push(`Vg2 på yrkesfag med ${t.opphenting.fag.map(fagnavn).join(', ')}: ${t.opphenting.til.length} programområder (vises med søk, ikke som liste).`, '');
   };
 
   /** Videre løp i samme program: vg2-retninger og vg3 i skole med egne avsnitt, lærefag som liste. */
@@ -221,6 +229,24 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
     ut.push('### Programområder som ikke nås fra inngangen', '', 'Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst under programmet.', '');
     for (const s of utenfor) ut.push(`- ${s.navn.nb}: ${s.utenfor.map(ponavn).join(', ')}`);
     ut.push('');
+  }
+  // Grunnlaget for inntak i VIGO sammenlignet med «bygger på» i Grep (eier 03.10.2026). VIGO brukes bare for
+  // påbygging der Grep ikke sier noe (medGrunnlagFraVigo); resten er til kontroll.
+  if (Object.keys(grunnlag).length > 0) {
+    const grep = new Set(Object.entries(indeks.programomrader).flatMap(([k, p]) => (p.byggerFraVigo ? [] : p.bygger.map((b) => `${b}>${k}`))));
+    const vigo = new Set(Object.entries(grunnlag).flatMap(([fra, til]) => til.map((t) => `${fra}>${t}`)));
+    const brukt = [...vigo].filter((x) => indeks.programomrader[x.split('>')[1] ?? '']?.byggerFraVigo);
+    const bareVigo = [...vigo].filter((x) => !grep.has(x) && !brukt.includes(x));
+    const bareGrep = [...grep].filter((x) => !vigo.has(x));
+    const vis = (x: string) => x.split('>').map((k) => ponavn(k)).join(' → ');
+    ut.push(
+      '### Grunnlag for inntak i VIGO og «bygger på» i Grep',
+      '',
+      `VIGO Kodeverksbase har ${vigo.size} koblinger for programområdene i Grep. ${brukt.length} brukes for påbygging som Grep ikke sier hva bygger på (Vg4 påbygging etter lærefag). ${[...vigo].filter((x) => grep.has(x)).length} er de samme som i Grep.`,
+      '',
+    );
+    if (bareVigo.length > 0) ut.push(`Bare i VIGO (${bareVigo.length}, ikke brukt):`, '', ...bareVigo.sort().map((x) => `- ${vis(x)}`), '');
+    if (bareGrep.length > 0) ut.push(`Bare i Grep (${bareGrep.length}):`, '', ...bareGrep.sort().map((x) => `- ${vis(x)}`), '');
   }
   if (avvik.size > 0) {
     ut.push('### Avvik mellom rundskrivet og Grep', '');
@@ -300,7 +326,7 @@ export function lesFagBygger(rot: string): FagBygger {
 export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): string {
   const g = lesKoblingsgrunnlag(rot);
   const { fordeling, neste } = fordelingOgNeste(rot, dato);
-  return lagTilbudsrapport(g.indeks, fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot));
+  return lagTilbudsrapport(lesTilbudsindeks(rot), fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot), lesFagrelasjoner(rot)?.grunnlag ?? {});
 }
 
 /**
@@ -309,10 +335,10 @@ export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().s
  * dem i kontrollsaken (eier 02.10.2026).
  */
 export function ukjenteNavnFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): { linjer: string[]; ordninger: string[] } {
-  const g = lesKoblingsgrunnlag(rot);
   const { fordeling, neste } = fordelingOgNeste(rot, dato);
   const bygger = lesFagBygger(rot);
-  const tilbud = [fordeling, neste].flatMap((f) => (f ? Object.keys(g.indeks.programomrader).map((k) => byggTilbud(k, g.indeks, f, bygger)) : []));
+  const indeks = lesTilbudsindeks(rot);
+  const tilbud = [fordeling, neste].flatMap((f) => (f ? Object.keys(indeks.programomrader).map((k) => byggTilbud(k, indeks, f, bygger)) : []));
   return ukjenteNavn(tilbud);
 }
 

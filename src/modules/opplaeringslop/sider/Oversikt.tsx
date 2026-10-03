@@ -9,6 +9,7 @@ import type { Fagindeks } from '../../fag/skjema.ts';
 import { erVariant, type Programgruppe } from '../../fag/tilbud/modell.ts';
 import { kortKode } from '../data.ts';
 import { Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './felles.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 const GRUPPER: readonly Programgruppe[] = ['studieforberedende', 'yrkesfaglig', 'pabygging'];
 const MAKS_TREFF = 40;
@@ -35,7 +36,7 @@ export default function Oversikt() {
   return (
     <div class="side lop-oversikt">
       <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
-      <p class="dempet">{t('opplaeringslop.innledning')}</p>
+      <p class="dempet"><Begrepstekst tekst={t('opplaeringslop.innledning')} /></p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (

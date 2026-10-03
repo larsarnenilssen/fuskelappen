@@ -4,6 +4,7 @@
 - id: minoritetsspraklig-elev
   type: begrep
   tittel: { nb: Minoritetsspråklig elev, nn: Minoritetsspråkleg elev }
+  lenkeord: { nb: ["minoritetsspråklig elev", "minoritetsspråklige elev"], nn: ["minoritetsspråkleg elev", "minoritetsspråklege elev"] }
   tekst:
     nb: En minoritetsspråklig elev har et annet morsmål enn norsk og samisk. Eleven kan være født i Norge eller ha bodd her lenge og likevel være minoritetsspråklig. Ikke alle minoritetsspråklige elever trenger særskilt språkopplæring. Det avhenger av om eleven kan norsk godt nok til å følge den vanlige opplæringen.
     nn: Ein minoritetsspråkleg elev har eit anna morsmål enn norsk og samisk. Eleven kan vere fødd i Noreg eller ha budd her lenge og likevel vere minoritetsspråkleg. Ikkje alle minoritetsspråklege elevar treng særskild språkopplæring. Det kjem an på om eleven kan norsk godt nok til å følgje den vanlege opplæringa.

@@ -359,6 +359,7 @@ export const nb = {
       tittel: {
         fagmerknader: 'FAM-kodene',
         vitnemalsmerknader: 'VMM-kodene',
+        sokerstatuser: 'Statuskodene',
       },
       sok: 'Søk på kode eller tekst',
       antall: '{antall} koder',
@@ -369,6 +370,8 @@ export const nb = {
       fagopplaering: 'Fagopplæring',
       vitnemal: 'Vitnemål',
       kompetansebevis: 'Kompetansebevis',
+      elevplass: 'Elevplass',
+      laereplass: 'Læreplass',
       vedlegg: 'Krever vedlegg',
       fraVigo: 'Kodene og tekstene er fra VIGO Kodeverksbase, hentet {dato}.',
       lasterFeil: 'Kodene kunne ikke lastes. Sjekk nettforbindelsen og prøv igjen.',

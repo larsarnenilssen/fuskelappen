@@ -2,7 +2,10 @@
 // - fagrelasjoner.json: utgåtte fagkoder og koden som erstatter dem, nye versjoner av læreplaner, og fag som brukes
 //   sammen (f.eks. tverrfaglig eksamen og fagene den gjelder), og fag som bygger på andre fag (rekkefølgen på fag
 //   over flere trinn). Brukes på fagsiden, i fagsøket og i tilbudsstrukturen.
-// - merknader.json: fagmerknader (FAM-koder) og vitnemålsmerknader (VMM-koder). Brukes i begrepsbanken.
+//   Og hva et programområde gir grunnlag for å søke videre på (f.eks. lærefag → Vg4 påbygging), brukt i
+//   tilbudsstrukturen.
+// - merknader.json: fagmerknader (FAM-koder), vitnemålsmerknader (VMM-koder) og status på søkerønsker. Brukes i
+//   begrepsbanken.
 // Kjøres hver uke av kildesjekken, sammen med Grep og Udir-1 (avgjørelse 026). Kodebasen er offentlig og åpen for
 // oppslag (eier 01.10.2026). Den har ikke dokumentert API; vi bruker det nettsiden selv bruker.
 // Feiler hentingen, eller ser dataene feil ut, kastes en feil før noe skrives, og forrige filer blir stående.
@@ -13,6 +16,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fagrelasjonerSkjema, merknaderSkjema, type Fagrelasjoner, type Merknader } from '../src/modules/fag/vigo/skjema.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
+import { lesFagindeks } from './data/les.ts';
 import { byggFagrelasjoner, byggMerknader, sammenlignVigo, validerVigo, type Vigorad } from './vigo/bygg.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
@@ -63,16 +67,20 @@ const utenTid = <T extends { hentet: string }>(d: T) => vigoJson({ ...d, hentet:
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const hentet = new Date().toISOString();
-  const [erstatter, erstattesAv, brukesSammen, paabygning, fag, vitnemal] = await Promise.all([
+  const [erstatter, erstattesAv, brukesSammen, paabygning, fag, vitnemal, sokerstatuser, grunnlag] = await Promise.all([
     hentAlle('/relation/element-replaces-element'),
     hentAlle('/relation/replaced-by'),
     hentAlle('/relation/course-used-together-with'),
     hentAlle('/relation/course-paabygning'),
     hentAlle('/course-remarks'),
     hentAlle('/diploma-remarks'),
+    hentAlle('/wish-statuses'),
+    hentAlle('/entry-requirements'),
   ]);
-  const { data: rel, merknader: relmerknader } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning }, hentet);
-  const m = byggMerknader({ fag, vitnemal }, hentet);
+  // Grunnlaget for inntak tas bare med for programområdene i fagindeksen, som hentes fra Grep i samme steg.
+  const programomrader = new Set(Object.keys(lesFagindeks(rot).programomrader));
+  const { data: rel, merknader: relmerknader } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, hentet, programomrader);
+  const m = byggMerknader({ fag, vitnemal, sokerstatuser }, hentet);
   fagrelasjonerSkjema.parse(rel);
   merknaderSkjema.parse(m);
   const feil = validerVigo(rel, m);
@@ -94,6 +102,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   mkdirSync(join(rot, '.generert'), { recursive: true });
   writeFileSync(join(rot, '.generert/vigo-endringer.json'), `${JSON.stringify({ endret, forste, endringer, merknader: relmerknader }, null, 2)}\n`);
   console.log(
-    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${Object.keys(rel.byggerPaa).length} fag som bygger på andre, ${m.fagmerknader.length} fagmerknader og ${m.vitnemalsmerknader.length} vitnemålsmerknader. ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
+    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${Object.keys(rel.byggerPaa).length} fag som bygger på andre, ${m.fagmerknader.length} fagmerknader, ${m.vitnemalsmerknader.length} vitnemålsmerknader, ${m.sokerstatuser.length} statuser på søkerønsker og ${Object.values(rel.grunnlag).flat().length} koblinger i grunnlaget for inntak. ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
   );
 }

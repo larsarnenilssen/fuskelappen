@@ -74,11 +74,13 @@ test.describe('opplæringsløp', () => {
   });
 
   test('lange lister er lukket, og mange fag å velge blant kan søkes i og står i grupper', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/HS/HSHSF1');
+    const videre = page.getByRole('button', { name: /^Videre \d+/ });
+    await expect(videre).toHaveAttribute('aria-expanded', 'false');
+    await videre.click();
+    await expect(page.locator('[data-rubrikk$="-videre"]').getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
+
     await page.goto('./#/opplaeringslop/ST/STUSP1');
-    const kryss = page.getByRole('button', { name: /^Kryssløp til \d+/ });
-    await expect(kryss).toHaveAttribute('aria-expanded', 'false');
-    await kryss.click();
-    await expect(page.locator('[data-rubrikk$="-kryss"]').getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
     const sprak = page.getByRole('button', { name: /^Fremmedspråk · velg én av \d+/ }).first();
     await expect(sprak).toHaveAttribute('aria-expanded', 'false');
     await sprak.click();
@@ -146,5 +148,24 @@ test.describe('opplæringsløp', () => {
   test('ukjent tilbud gir en melding', async ({ page }) => {
     await page.goto('./#/opplaeringslop/HS/FINNES');
     await expect(page.locator('main h1')).toHaveText('Fant ikke tilbudet.');
+  });
+
+  test('Vg2 på yrkesfag etter Vg1 studiespesialisering står i en boks med søk, ikke som liste (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/ST/STUSP1');
+    await expect(page.getByRole('button', { name: /^Kryssløp til/ })).toHaveCount(0);
+    const boks = page.locator('.opphenting');
+    await expect(boks.getByRole('link', { name: 'Yrkesfaglig opphenting' })).toHaveAttribute('href', '#/fag/YFO2002');
+    await expect(boks.locator('.tilbudslenke')).toHaveCount(0);
+    await boks.getByLabel('Søk etter Vg2 på yrkesfag').fill('helsearbeider');
+    await boks.getByRole('link', { name: /Vg2 Helsearbeiderfag/ }).click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Helsearbeiderfag/);
+    await expect(page.getByRole('button', { name: /^Fra studieforberedende Vg1 med Yrkesfaglig opphenting 1/ })).toBeVisible();
+  });
+
+  test('lærefagene fører videre til Vg4 påbygging (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/HS/HSHEA3');
+    await page.locator('[data-rubrikk$="-pabygging"]').getByRole('link', { name: /Vg4 Fag for studiekompetanse/ }).click();
+    await expect(page.locator('.merke').filter({ hasText: /^Vg4$/ })).toBeVisible();
+    await expect(page.getByRole('link', { name: /VIGO Kodeverksbase/ }).first()).toBeVisible();
   });
 });

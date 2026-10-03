@@ -12,10 +12,15 @@ const dato = (v: unknown): string | null => tekst(v)?.slice(0, 10) ?? null;
 export const erOpplaeringsfagkode = (kode: string) => /^.{3}Z|^.{4}Z/.test(kode);
 const jaNei = (v: unknown): boolean | null => (v === 'J' || v === true ? true : v === 'N' || v === false ? false : null);
 
-/** Erstatninger, nye læreplaner, fag som brukes sammen og fag som bygger på andre fag, fra fire koblinger i kodebasen. */
+/**
+ * Erstatninger, nye læreplaner, fag som brukes sammen og fag som bygger på andre fag, fra fire koblinger i kodebasen,
+ * og hva et programområde gir grunnlag for å søke videre på. Grunnlaget tas bare med for programområdene i
+ * fagindeksen fra Grep (`programomrader`) og bare nasjonalt (fylke 99).
+ */
 export function byggFagrelasjoner(
-  rader: { erstatter: readonly Vigorad[]; erstattesAv: readonly Vigorad[]; brukesSammen: readonly Vigorad[]; paabygning: readonly Vigorad[] },
+  rader: { erstatter: readonly Vigorad[]; erstattesAv: readonly Vigorad[]; brukesSammen: readonly Vigorad[]; paabygning: readonly Vigorad[]; grunnlag: readonly Vigorad[] },
   hentet: string,
+  programomrader: ReadonlySet<string>,
 ): { data: Fagrelasjoner; merknader: string[] } {
   const merknader: string[] = [];
   const erstatninger: Fagrelasjoner['erstatninger'] = {};
@@ -59,6 +64,14 @@ export function byggFagrelasjoner(
     if (!a || !b || a === b || erOpplaeringsfagkode(a) || erOpplaeringsfagkode(b)) continue;
     (byggerPaa[a] ??= new Set()).add(b);
   }
+  // «entry-requirements»: programAreaCode gir grunnlag for providesCompetenceCode.
+  const grunnlag: Record<string, Set<string>> = {};
+  for (const r of rader.grunnlag) {
+    const fra = tekst(r.programAreaCode);
+    const til = tekst(r.providesCompetenceCode);
+    if (!fra || !til || fra === til || r.countyNr !== 99 || !programomrader.has(fra) || !programomrader.has(til)) continue;
+    (grunnlag[fra] ??= new Set()).add(til);
+  }
   const sortert = <V>(o: Record<string, V>) => Object.fromEntries(Object.entries(o).sort(([x], [y]) => x.localeCompare(y)));
   return {
     data: {
@@ -69,6 +82,7 @@ export function byggFagrelasjoner(
       brukesSammen: sortert(Object.fromEntries(Object.entries(brukesSammen).map(([k, v]) => [k, [...v].sort()]))),
       byggerPaa: sortert(Object.fromEntries(Object.entries(byggerPaa).map(([k, v]) => [k, [...v].sort()]))),
       navn: sortert(navn),
+      grunnlag: sortert(Object.fromEntries(Object.entries(grunnlag).map(([k, v]) => [k, [...v].sort()]))),
     },
     merknader,
   };
@@ -95,11 +109,42 @@ export function lesMerknad(r: Vigorad): Merknad | null {
   };
 }
 
+/**
+ * En status på et søkerønske fra kodebasen («wish-statuses»). Typen er S (elevplass), L (læreplass) eller SL (begge).
+ * Teksten finnes bare på bokmål.
+ */
+export function lesSokerstatus(r: Vigorad): Merknad | null {
+  const kode = tekst(r.code);
+  const nb = tekst(r.text);
+  const nr = typeof r.number === 'number' ? r.number : null;
+  if (!kode || !nb || nr === null) return null;
+  const type = tekst(r.type) ?? '';
+  return {
+    kode,
+    nb,
+    nn: nb,
+    se: null,
+    en: null,
+    grunnskole: false,
+    videregaende: type.includes('S'),
+    fagopplaering: type.includes('L'),
+    kreverVedlegg: false,
+    vitnemal: null,
+    kompetansebevis: null,
+    utgatt: dato(r.validTo),
+    nr,
+  };
+}
+
 const kodeorden = (a: Merknad, b: Merknad) => a.kode.localeCompare(b.kode, 'nb', { numeric: true });
 
-export function byggMerknader(rader: { fag: readonly Vigorad[]; vitnemal: readonly Vigorad[] }, hentet: string): Merknader {
+export function byggMerknader(rader: { fag: readonly Vigorad[]; vitnemal: readonly Vigorad[]; sokerstatuser: readonly Vigorad[] }, hentet: string): Merknader {
   const les = (liste: readonly Vigorad[]) => liste.map(lesMerknad).filter((m): m is Merknad => m !== null).sort(kodeorden);
-  return { kilde: 'vigo-kodeverk', hentet, fagmerknader: les(rader.fag), vitnemalsmerknader: les(rader.vitnemal) };
+  const statuser = rader.sokerstatuser
+    .map(lesSokerstatus)
+    .filter((m): m is Merknad => m !== null)
+    .sort((a, b) => (a.nr ?? 0) - (b.nr ?? 0));
+  return { kilde: 'vigo-kodeverk', hentet, fagmerknader: les(rader.fag), vitnemalsmerknader: les(rader.vitnemal), sokerstatuser: statuser };
 }
 
 /** Feil som gjør at de nye dataene ikke tas inn (forrige fil blir stående). */
@@ -111,6 +156,9 @@ export function validerVigo(rel: Fagrelasjoner, m: Merknader): string[] {
   if (antall(rel.byggerPaa) < 30) feil.push(`Fant bare ${antall(rel.byggerPaa)} fag som bygger på andre fag.`);
   if (m.fagmerknader.length < 30 || m.fagmerknader.some((x) => !/^FAM\d+$/.test(x.kode))) feil.push(`Fagmerknadene ser ikke ut som ventet (${m.fagmerknader.length}).`);
   if (m.vitnemalsmerknader.length < 20 || m.vitnemalsmerknader.some((x) => !/^VMM\d+$/.test(x.kode))) feil.push(`Vitnemålsmerknadene ser ikke ut som ventet (${m.vitnemalsmerknader.length}).`);
+  if (m.sokerstatuser.length < 40 || m.sokerstatuser.some((x) => !/^[A-ZÆØÅ][A-ZÆØÅ0-9]+$/.test(x.kode))) feil.push(`Statusene på søkerønsker ser ikke ut som ventet (${m.sokerstatuser.length}).`);
+  const grunnlag = Object.values(rel.grunnlag).flat().length;
+  if (grunnlag < 300) feil.push(`Fant bare ${grunnlag} koblinger i grunnlaget for inntak.`);
   return feil;
 }
 
@@ -139,11 +187,19 @@ export function sammenlignVigo(gammel: { rel: Fagrelasjoner; m: Merknader } | nu
   const fjernedeBp = [...gb].filter((p) => !nb.has(p));
   if (nyeBp.length > 0) ut.push(`Bygger på, nye koblinger (${nyeBp.length}): ${nyeBp.slice(0, 10).join(', ')}${nyeBp.length > 10 ? ' …' : ''}`);
   if (fjernedeBp.length > 0) ut.push(`Bygger på, fjernede koblinger (${fjernedeBp.length}): ${fjernedeBp.slice(0, 10).join(', ')}${fjernedeBp.length > 10 ? ' …' : ''}`);
+  const gl = (r: Fagrelasjoner) => new Set(Object.entries(r.grunnlag ?? {}).flatMap(([a, l]) => l.map((b) => `${a} → ${b}`)));
+  const gg = gl(gammel.rel);
+  const ng = gl(ny.rel);
+  const nyeG = [...ng].filter((p) => !gg.has(p));
+  const fjernedeG = [...gg].filter((p) => !ng.has(p));
+  if (nyeG.length > 0) ut.push(`Grunnlag for inntak, nye koblinger (${nyeG.length}): ${nyeG.slice(0, 10).join(', ')}${nyeG.length > 10 ? ' …' : ''}`);
+  if (fjernedeG.length > 0) ut.push(`Grunnlag for inntak, fjernede koblinger (${fjernedeG.length}): ${fjernedeG.slice(0, 10).join(', ')}${fjernedeG.length > 10 ? ' …' : ''}`);
   for (const [liste, navn] of [
     ['fagmerknader', 'fagmerknad'],
     ['vitnemalsmerknader', 'vitnemålsmerknad'],
+    ['sokerstatuser', 'status på søkerønske'],
   ] as const) {
-    const g = new Map(gammel.m[liste].map((x) => [x.kode, x]));
+    const g = new Map((gammel.m[liste] ?? []).map((x) => [x.kode, x]));
     for (const x of ny.m[liste]) {
       const f = g.get(x.kode);
       if (!f) ut.push(`Ny ${navn} ${x.kode}: ${x.nb}`);

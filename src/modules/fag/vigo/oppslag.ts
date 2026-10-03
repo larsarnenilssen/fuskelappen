@@ -55,7 +55,7 @@ export function sokMerknader(liste: readonly Merknad[], sok: string): Merknad[] 
   const ord = normaliser(sok).split(' ').filter(Boolean);
   if (ord.length === 0) return [...liste];
   return liste.filter((m) => {
-    const tekst = normaliser(`${m.kode} ${m.nb} ${m.nn}`);
+    const tekst = normaliser(`${m.nr ?? ''} ${m.nr === undefined ? '' : String(m.nr).padStart(2, '0')} ${m.kode} ${m.nb} ${m.nn}`);
     return ord.every((o) => tekst.includes(o));
   });
 }
