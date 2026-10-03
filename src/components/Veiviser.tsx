@@ -13,6 +13,7 @@ import { erUtfall, fasestatus, finnVei, korstesteVei, lagKart, lesSvar, stegIRek
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kildeliste } from './Kildelenke.tsx';
+import { Laereplanboks } from './Laereplanboks.tsx';
 import { delParagrafRef, Paragraflenker } from './Paragraflenker.tsx';
 
 interface Props {
@@ -388,6 +389,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                 {node.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={node.frist[malform]} />}
               </dl>
             )}
+            <Laereplanboks laereplaner={node.laereplaner} />
             <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
             <div class="veiviser-mer">
               {node.forklaring && (

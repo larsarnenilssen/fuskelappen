@@ -84,6 +84,9 @@ export const vanligElement = z
 /** Paragraf i Regelverk: «dokument/nummer», f.eks. «opplaeringslova/11-1» eller «forvaltningsloven/11a». */
 export const paragrafRef = z.string().regex(/^[a-z0-9-]+\/[0-9a-z-]+$/, 'Paragraf skrives «dokument/nummer», f.eks. «opplaeringslova/11-1»');
 
+/** Læreplankode i Grep, f.eks. «NOR09-05». */
+export const laereplanKode = z.string().regex(/^[A-Z]{3}\d{2}-\d{2}$/, 'Læreplankoden skrives som i Grep, f.eks. «NOR09-05»');
+
 /**
  * Et steg i en veiviser (avgjørelse 041). `tekst` er hva som skal skje. Steget går videre til `neste`, eller
  * stiller et spørsmål der hvert svar har sitt neste steg. Et steg uten `neste` og `sporsmal` er et utfall.
@@ -104,6 +107,13 @@ export const stegElement = z
     forklaring: flerspraak.optional(),
     /** Paragrafer i Regelverk som steget bygger på. Vises som lenker til paragrafen i appen. */
     paragrafer: z.array(paragrafRef).default([]),
+    /**
+     * Læreplaner fra Grep som steget viser i en egen boks med fagkodene, og om læreplanen er kompetansegivende
+     * (eier 03.10.2026). `merknad` er en kort setning med egne ord om hva læreplanen brukes til.
+     */
+    laereplaner: z
+      .array(z.object({ kode: laereplanKode, kompetansegivende: z.boolean(), merknad: flerspraak }).strict())
+      .default([]),
     neste: idSkjema.optional(),
     sporsmal: z
       .object({

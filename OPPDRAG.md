@@ -506,6 +506,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Fraværskalkulator per fag: årstimetall fra Grep → hvor mange timer som tilsvarer fraværsgrensen, med forklaring av unntak etter gjeldende regler.
 - Se `docs/VIGO-KODEVERK.md` for data fra VIGO Kodeverksbase som kan brukes: vurderingsordning per fagkode, karakterkoder og fagmerknader knyttet til fag. Fagmerknadene og vitnemålsmerknadene er alt i begrepsbanken (avgjørelse 026).
 - Veivisere for grunnlag for vurdering og for klagegangen.
+- Kobling begge veier mellom vurdering og eksamen og de to veiviserne i Tilrettelegging (eier 03.10.2026): for eksempel individuelt tilrettelagt opplæring uten vurdering med karakter, fritak fra vurdering med karakter i innføringsopplæring, og læreplanene i særskilt språkopplæring som ikke gir karakter.
 
 Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på fase 2.
 

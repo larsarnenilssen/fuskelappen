@@ -1,11 +1,12 @@
 // Veiviserne i content/ (avgjørelse 041): kartet henger sammen, stegene hører til en veiviser som finnes, fasene
-// finnes, og paragrafene finnes i Regelverk.
+// finnes, paragrafene finnes i Regelverk, og læreplanene finnes i Grep og stemmer med vurderingsordningen.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { lesInnhold } from '../../scripts/innhold/alt.ts';
 import type { Stegelement, Veiviserelement } from '../../src/core/innhold/skjema.ts';
 import { finnFeil, lagKart } from '../../src/core/veiviser/veiviser.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { alleParagrafer, type Lovdokument } from '../../src/modules/lov/typer.ts';
 
 const rot = join(__dirname, '../..');
@@ -26,6 +27,8 @@ function finnes(ref: string): boolean {
   }
   return paragrafer.get(dok)?.has(nr) ?? false;
 }
+
+const fagindeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
 
 describe('veivisere', () => {
   it('det finnes minst én veiviser', () => {
@@ -52,6 +55,19 @@ describe('veivisere', () => {
 
       it('paragrafene finnes i Regelverk', () => {
         for (const s of egne) for (const p of s.paragrafer) expect(finnes(p), `${s.id}: ${p}`).toBe(true);
+      });
+
+      // «Kompetansegivende» i innholdet skal stemme med Grep: læreplanen har fag med tallkarakter for elevene. Endrer
+      // Grep vurderingsordningen, feiler testen, og innholdet må kontrolleres på nytt.
+      it('læreplanene finnes i Grep, og kompetansegivende stemmer med vurderingsuttrykket', () => {
+        for (const s of egne) {
+          for (const lp of s.laereplaner) {
+            const fag = Object.values(fagindeks.fag).filter((f) => f.lp === lp.kode);
+            expect(fag.length, `${s.id}: ${lp.kode} har ingen fag i fagindeksen`).toBeGreaterThan(0);
+            const karakter = fag.some((f) => f.elev?.uttrykk === 'vurderingsuttrykk_tall');
+            expect(karakter, `${s.id}: ${lp.kode}`).toBe(lp.kompetansegivende);
+          }
+        }
       });
     });
   }

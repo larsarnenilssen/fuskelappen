@@ -4254,6 +4254,63 @@ p.fagkort-tittel {
   margin: 0;
 }
 
+/* Læreplanene til et steg: en boks som åpnes, med én rad per læreplan og fagkodene lukket under. */
+.laereplanboks .forklaring {
+  margin: var(--rom-3) 0;
+}
+
+.laereplanboks-liste {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.laereplanboks-liste > li {
+  padding: var(--rom-3) 0 var(--rom-1);
+}
+
+.laereplanboks-liste > li + li {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.laereplanboks-tittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-m);
+  line-height: 1.3;
+}
+
+.laereplanboks-tittel .fagliste-kode {
+  font-size: var(--str-s);
+  font-weight: 400;
+}
+
+.laereplanboks-merker {
+  margin-bottom: var(--rom-2);
+}
+
+.laereplanboks-merker .merke {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.merke-kompetansegivende {
+  background: var(--farge-ok-flate);
+  border-color: var(--farge-ok);
+}
+
+.laereplanboks-merknad {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.laereplanboks-trinnnavn {
+  margin: var(--rom-2) 0 0;
+  font-size: var(--str-xs);
+  font-weight: 650;
+  color: var(--farge-tekst-dempet);
+}
+
 /* Veien videre: spørsmålet og svarene under kortet, på linjen. Et trykk gir neste kort her. */
 .veiviser-videre {
   position: relative;

@@ -2,16 +2,18 @@
 import type { ComponentChildren } from 'preact';
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
-import { Ikon } from './Ikon.tsx';
+import { Ikon, type Ikonnavn } from './Ikon.tsx';
 
 interface Props {
   tittel: string;
   children: ComponentChildren;
   /** Åpen fra start. Standard er lukket. */
   aapen?: boolean;
+  /** Ikonet foran tittelen. Standard er «info». */
+  ikon?: Ikonnavn;
 }
 
-export function Forklaring({ tittel, children, aapen = false }: Props) {
+export function Forklaring({ tittel, children, aapen = false, ikon = 'info' }: Props) {
   const { t } = useTekst();
   const [erAapen, settAapen] = useState(aapen);
   const id = useId();
@@ -24,7 +26,7 @@ export function Forklaring({ tittel, children, aapen = false }: Props) {
         aria-controls={id}
         onClick={() => settAapen(!erAapen)}
       >
-        <Ikon navn="info" />
+        <Ikon navn={ikon} />
         <span>{tittel}</span>
         <span class="skjult-visuelt">{erAapen ? t('komponenter.forklaring.skjul') : t('komponenter.forklaring.vis')}</span>
         <Ikon navn={erAapen ? 'opp' : 'ned'} class="forklaring-pil" />

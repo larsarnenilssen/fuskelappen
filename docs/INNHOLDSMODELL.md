@@ -23,7 +23,7 @@ En fil kan inneholde ett element eller en liste.
 
 Frister (`type: frist`) har i tillegg `modul`, `malgruppe` (`skoleleder`, `laerer`) og enten `dato` eller `regel` (`{ type: arlig, dag, maned }`).
 
-Veivisere (avgjørelse 041): en veiviser (`type: veiviser`) har i tillegg `start` (id til første steg) og `faser` (`{ id, tittel }`). Et steg (`type: steg`) har `veiviser` (id) og kan ha `fase`, `ansvar`, `dokumentasjon`, `frist`, `fristKort` (to–tre ord til merket i kartet), `forklaring` (Markdown, skjult til den åpnes), `paragrafer` (`dokument/nummer` i Regelverk) og enten `neste` (id) eller `sporsmal` (`{ tekst, svar: [{ id, tekst, neste }] }`). Et steg uten `neste` og `sporsmal` er et utfall, der veien ender. Testene sjekker at alle steg kan nås, at ingen peker på steg som ikke finnes, og at paragrafene finnes.
+Veivisere (avgjørelse 041): en veiviser (`type: veiviser`) har i tillegg `start` (id til første steg) og `faser` (`{ id, tittel }`). Et steg (`type: steg`) har `veiviser` (id) og kan ha `fase`, `ansvar`, `dokumentasjon`, `frist`, `fristKort` (to–tre ord til merket i kartet), `forklaring` (Markdown, skjult til den åpnes), `paragrafer` (`dokument/nummer` i Regelverk), `laereplaner` (`[{ kode, kompetansegivende, merknad }]`, vises i en boks med fagkodene fra Grep) og enten `neste` (id) eller `sporsmal` (`{ tekst, svar: [{ id, tekst, neste }] }`). Et steg uten `neste` og `sporsmal` er et utfall, der veien ender. Testene sjekker at alle steg kan nås, at ingen peker på steg som ikke finnes, at paragrafene finnes, og at læreplanene finnes i Grep og er kompetansegivende bare når fagene har tallkarakter.
 
 Samme `id` kan finnes på flere nivåer. Da erstatter det mest lokale elementet det mer generelle (`forhold: erstatter`).
 

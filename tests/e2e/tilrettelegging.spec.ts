@@ -138,6 +138,23 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Oppfølging/);
   });
 
+  test('læreplanene står i en boks med kompetansegivende, vurdering og fagkodene', async ({ page }) => {
+    await page.goto(`${SPRAK}?steg=sp-laereplan&svar=ja.nei.nei`);
+    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Læreplanene i særskilt språkopplæring');
+    const boks = page.locator('.laereplanboks');
+    await boks.getByRole('button', { name: /Læreplanene \(3\)/ }).click();
+    const planer = boks.locator('.laereplanboks-liste > li');
+    await expect(planer).toHaveCount(3);
+    await expect(planer.nth(0)).toContainText('NOR07-03');
+    await expect(planer.nth(0)).toContainText('Ikke kompetansegivende');
+    await expect(planer.nth(1)).toContainText('NOR09-05');
+    await expect(planer.nth(1).locator('.merke-kompetansegivende')).toHaveText('Kompetansegivende');
+    await expect(planer.nth(1)).toContainText('Vurdering: Tallkarakter');
+    await planer.nth(1).getByRole('button', { name: /Fagkodene \(10\)/ }).click();
+    await planer.nth(1).getByRole('link', { name: /Vg1 studieforberedende utdanningsprogram, skriftlig/ }).click();
+    await expect(page).toHaveURL(/#\/fag\/NOR1412$/);
+  });
+
   test('elever med norsk eller samisk som morsmål får en lenke til tilpasset opplæring', async ({ page }) => {
     await page.goto(SPRAK);
     await page.getByRole('link', { name: /^Nei, eleven har norsk eller samisk/ }).click();
