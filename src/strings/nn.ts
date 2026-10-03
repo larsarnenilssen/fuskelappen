@@ -10,6 +10,7 @@ import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 export const nn: Tekster = {
   app: {
     hoppTilInnhold: 'Hopp til innhald',
+    testversjon: 'Testversjon. Han er ikkje publisert, og innstillingane her blir lagra for seg.',
     tilbake: 'Tilbake',
     hovedmeny: 'Hovudmeny',
     lasterInn: 'Lastar inn …',

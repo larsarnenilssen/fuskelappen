@@ -185,6 +185,7 @@ export function Skall() {
           <KildestatusIndikator />
         </div>
       </header>
+      {__TESTVERSJON__ && <p class="testversjon">{t('app.testversjon')}</p>}
       <main id="innhold" tabIndex={-1}>
         {treff ? (
           <Side

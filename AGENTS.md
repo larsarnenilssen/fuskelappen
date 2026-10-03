@@ -13,6 +13,7 @@ Installerbar nettapp (PWA) for skoleledere og lærere i videregående: arbeidsti
 | `npm ci` | installerer avhengigheter |
 | `npm run dev` | starter utviklingsserver |
 | `npm run build` | lager produksjonsbygg |
+| `npm run build:test` | lager testversjonen som publiseres under `test/` (avgjørelse 045) |
 | `npm run lint` | lint |
 | `npm run typecheck` | typesjekk |
 | `npm test` | enhets-, innholds- og fasittester |
@@ -41,6 +42,7 @@ En endring er ikke ferdig før alle er grønne.
 - Hver fase startes i en ny samtale med arbeidsordren i `docs/arbeidsordrer/fase-N.md` (eier 02.10.2026). Når en fase er levert, skrives arbeidsordren for neste fase.
 - Arbeid på en egen gren per fase eller oppgave, og slå sammen til `main` via PR med grønn CI.
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
+- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `…/fuskelappen/test/` (avgjørelse 045).
 - Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
 - Oppdater `CHANGELOG.md` for alt brukeren merker.
 - Tekniske valg av betydning dokumenteres i `docs/avgjorelser/NNN-tittel.md`: kontekst, valg og konsekvens, noen få linjer.
