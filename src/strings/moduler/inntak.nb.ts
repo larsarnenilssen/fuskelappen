@@ -70,7 +70,7 @@ export const inntakNb = {
     annenEtikett: 'Annen karakter {nr}, privatist eller annet løp',
     annenHjelp: 'Privatist eller annet løp. Den beste teller.',
     fjernAnnen: 'Fjern annen karakter {nr}',
-    erstattet: 'Samme fag har halvår på Vg2',
+    erstattet: 'Samme fag har ny vurdering på Vg2',
     flereRader: 'Flere karakterer',
     tilleggIngen: 'Ingen tilleggspoeng',
     /** Navnet på gruppen i nøkkelen tilleggspoeng_<gruppe>_<nr> i fylkets regelfil. Grupper uten navn her får «Tilleggspoeng». */

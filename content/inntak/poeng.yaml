@@ -36,7 +36,7 @@
       Standpunktkarakterer, eksamenskarakterer og halvårsvurderinger med karakter fra Vg1, og til Vg3 også fra Vg2. Poengsummen regnes ut som til Vg1.
 
       - **Halvårsvurdering** teller bare i fag der læreplanen sier at det skal gis halvårsvurdering med karakter.
-      - **Til Vg3:** I fag der standpunkt settes etter Vg3, for eksempel norsk, teller bare halvårsvurderingen fra Vg2, ikke den fra Vg1.
+      - **Til Vg3:** I fag som fortsetter, gjelder den siste vurderingen. Har faget en ny vurdering på Vg2 (halvår eller standpunkt), teller ikke halvårsvurderingen fra Vg1. Det gjelder for eksempel norsk, og kroppsøving på yrkesfag. Standpunkt står.
       - **IV og IM** teller med verdien null.
 
       Velger du **løp**, fylles fagene inn med typen karakter: standpunkt på trinnet der læreplanen sier det, ellers halvår, fordi et fag som fortsetter neste år, får halvårsvurdering med karakter ved slutten av skoleåret.
@@ -44,7 +44,7 @@
       Standpunktkarakterar, eksamenskarakterar og halvårsvurderingar med karakter frå Vg1, og til Vg3 også frå Vg2. Poengsummen blir rekna ut som til Vg1.
 
       - **Halvårsvurdering** tel berre i fag der læreplanen seier at det skal givast halvårsvurdering med karakter.
-      - **Til Vg3:** I fag der standpunkt blir sett etter Vg3, til dømes norsk, tel berre halvårsvurderinga frå Vg2, ikkje den frå Vg1.
+      - **Til Vg3:** I fag som held fram, gjeld den siste vurderinga. Har faget ei ny vurdering på Vg2 (halvår eller standpunkt), tel ikkje halvårsvurderinga frå Vg1. Det gjeld til dømes norsk, og kroppsøving på yrkesfag. Standpunkt står.
       - **IV og IM** tel med verdien null.
 
       Vel du **løp**, blir faga fylte inn med typen karakter: standpunkt på trinnet der læreplanen seier det, elles halvår, fordi eit fag som held fram neste år, får halvårsvurdering med karakter ved slutten av skoleåret.

@@ -47,6 +47,17 @@ describe('poengberegning ved inntak', () => {
     expect(beregnVg2Vg3(hent, { trinn: 'Vg2', rader: rader.slice(0, 1) }).sum).toBe(3);
   });
 
+  it('til Vg3 gjelder den siste vurderingen i fag som fortsetter, og standpunkt står (eier 03.10.2026)', () => {
+    const rader = [
+      { trinn: 'Vg1' as const, type: 'halvar' as const, fag: 'kroppsoving', vurdering: 3 as const },
+      { trinn: 'Vg2' as const, type: 'standpunkt' as const, fag: 'kroppsoving', vurdering: 5 as const },
+      { trinn: 'Vg1' as const, type: 'standpunkt' as const, fag: 'engelsk', vurdering: 4 as const },
+    ];
+    const r = beregnVg2Vg3(hent, { trinn: 'Vg3', rader });
+    expect(r.teller).toEqual([5, 4]);
+    expect(r.steg.find((s) => s.id === 'utelatt')?.utelatt).toEqual({ halvar_erstattet: 1 });
+  });
+
   it('har trinnene i utregningen med kilde', () => {
     const r = beregnVg1(hent, { standpunkt: [5, 4, 'IV'], eksamen: [4], valgfag: [5] });
     expect(r.steg.map((s) => s.id)).toEqual(['karakterer', 'null', 'valgfag', 'snitt', 'avrunding', 'poeng']);

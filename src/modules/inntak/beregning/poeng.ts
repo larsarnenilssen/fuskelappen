@@ -32,7 +32,7 @@ export interface Karakterrad {
   /** Faget, når det har betydning for utregningen: halvårsvurdering i samme fag over flere trinn. */
   fag?: string;
   trinn?: 'Vg1' | 'Vg2';
-  /** Halvårsvurdering fra Vg1 som erstattes av halvårsvurderingen i samme fag på Vg2 (inntak til Vg3). */
+  /** Halvårsvurdering fra Vg1 som erstattes av en ny vurdering i samme fag på Vg2 (inntak til Vg3). */
   erstattet?: boolean;
 }
 
@@ -179,11 +179,12 @@ export interface Vg2Vg3Input {
 }
 
 /**
- * Halvårsvurdering i samme fag på Vg1 og Vg2: bare den fra Vg2 teller (Udirs merknader til § 4-25, f.eks. norsk,
- * der standpunkt settes etter Vg3). Rader uten fag regnes som ulike fag, med mindre raden er merket «erstattet».
+ * I et fag som fortsetter, gjelder den siste vurderingen: en halvårsvurdering fra Vg1 teller ikke når samme fag har
+ * en ny vurdering på Vg2, halvår eller standpunkt. Standpunkt står (eier 03.10.2026, Udirs merknader til § 4-25,
+ * f.eks. norsk og kroppsøving). Rader uten fag regnes som ulike fag, med mindre raden er merket «erstattet».
  */
 function sisteHalvar(rader: readonly Karakterrad[]): { rader: Karakterrad[]; erstattet: number } {
-  const vg2 = new Set(rader.filter((r) => r.type === 'halvar' && r.trinn === 'Vg2' && r.fag).map((r) => r.fag));
+  const vg2 = new Set(rader.filter((r) => (r.type === 'halvar' || r.type === 'standpunkt') && r.trinn === 'Vg2' && r.fag).map((r) => r.fag));
   const beholdt = rader.filter((r) => !(r.type === 'halvar' && r.trinn === 'Vg1' && (r.erstattet || (r.fag && vg2.has(r.fag)))));
   return { rader: beholdt, erstattet: rader.length - beholdt.length };
 }

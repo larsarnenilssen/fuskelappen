@@ -71,7 +71,7 @@ export const inntakNn: typeof inntakNb = {
     annenEtikett: 'Annan karakter {nr}, privatist eller anna løp',
     annenHjelp: 'Privatist eller anna løp. Den beste tel.',
     fjernAnnen: 'Fjern annan karakter {nr}',
-    erstattet: 'Same fag har halvår på Vg2',
+    erstattet: 'Same fag har ny vurdering på Vg2',
     flereRader: 'Fleire karakterar',
     tilleggIngen: 'Ingen tilleggspoeng',
     /** Navnet på gruppen i nøkkelen tilleggspoeng_<gruppe>_<nr> i fylkets regelfil. Grupper uten navn her får «Tilleggspoeng». */

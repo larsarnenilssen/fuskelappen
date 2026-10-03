@@ -166,16 +166,16 @@ praksis:
     bekreftet: null
 
   - id: poeng-halvar-vg1-standpunkt-vg2
-    tittel: Halvår på Vg1 og standpunkt på Vg2 i samme fag, ved inntak til Vg3
+    tittel: Den siste vurderingen gjelder i fag som fortsetter, ved inntak til Vg3
     sporsmal: >-
-      Teller halvårsvurderingen fra Vg1 ved inntak til Vg3 når faget har standpunkt på Vg2, f.eks. kroppsøving på
-      yrkesfag og fremmedspråk på studieforberedende?
+      Gjelder det fortsatt at bare den siste vurderingen teller i et fag som fortsetter, slik at halvårsvurderingen
+      fra Vg1 ikke teller når faget har halvår eller standpunkt på Vg2, mens standpunkt står?
     appen: >-
-      Kalkulatoren lar begge telle, som ordlyden i § 4-25 («alle ... halvårsvurderingar med karakter i faga på vg1
-      og eventuelt vg2»). Bare når faget også har halvår på Vg2 (f.eks. norsk og kroppsøving på studieforberedende),
-      teller halvåret fra Vg1 ikke, som Udirs merknad sier.
+      Poengberegningen til Vg3 tar bort halvårsvurderingen fra Vg1 når samme fag har en ny vurdering på Vg2 (halvår
+      eller standpunkt), f.eks. norsk, kroppsøving og fremmedspråk. Standpunktkarakterer tas aldri bort.
     grunnlag: >-
-      Udirs merknad til § 4-25 nevner bare fag der standpunkt settes etter Vg3. Om et standpunkt på Vg2 også
-      erstatter halvåret fra Vg1, står ikke i kildene.
+      Eier 03.10.2026: «Siste halvårsvurdering i sammenhengende fag gjelder … halvårsvurderingene ‹overskriver›
+      hverandre etter hvert som nye kommer. Standpunkt står.» Udirs merknad til § 4-25 nevner norsk. Ordlyden i
+      § 4-25 sier ikke noe om fag som fortsetter.
     berorer: [po-vg2-vg3]
     bekreftet: null
