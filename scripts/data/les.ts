@@ -8,7 +8,10 @@ import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 import type { Lopskilder } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
-import type { Utdanningslop } from '../../src/modules/fag/utdanning/skjema.ts';
+import type { Skoler, Utdanningslop, Yrker } from '../../src/modules/fag/utdanning/skjema.ts';
+import type { Skolenummer } from '../../src/modules/fag/vigo/skjema.ts';
+import type { Ndla } from '../../src/modules/fag/ndla/skjema.ts';
+import type { Opplaeringskontorer } from '../../src/modules/opplaeringslop/nor/skjema.ts';
 
 const json = <T>(fil: string): T => JSON.parse(readFileSync(fil, 'utf8')) as T;
 
@@ -52,3 +55,20 @@ export function lesUtdanningslop(rot: string): Utdanningslop | null {
 export function lesLopskilder(rot: string): Lopskilder {
   return { grep: lesFagindeks(rot), vigo: lesFagrelasjoner(rot)?.grunnlag ?? {}, utdanning: lesUtdanningslop(rot) };
 }
+
+const valgfri = <T>(rot: string, fil: string): T | null => (existsSync(join(rot, fil)) ? json<T>(join(rot, fil)) : null);
+
+/** Skolene og tilbudene deres fra utdanning.no (avgjørelse 053), eller null hvis filen mangler. */
+export const lesSkoler = (rot: string) => valgfri<Skoler>(rot, 'data/utdanning/skoler.json');
+
+/** Yrkene for programområdene fra utdanning.no (avgjørelse 053), eller null hvis filen mangler. */
+export const lesYrker = (rot: string) => valgfri<Yrker>(rot, 'data/utdanning/yrker.json');
+
+/** Skolenummer → organisasjonsnummer fra VIGO (avgjørelse 053), eller null hvis filen mangler. */
+export const lesSkolenummer = (rot: string) => valgfri<Skolenummer>(rot, 'data/vigo/skolenummer.json');
+
+/** Fagene på NDLA per fagkode (avgjørelse 053), eller null hvis filen mangler. */
+export const lesNdla = (rot: string) => valgfri<Ndla>(rot, 'data/ndla/fag.json');
+
+/** Opplæringskontorene fra NOR (avgjørelse 053), eller null hvis filen mangler. */
+export const lesOpplaeringskontor = (rot: string) => valgfri<Opplaeringskontorer>(rot, 'data/udir/opplaeringskontor.json');

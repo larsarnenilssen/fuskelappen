@@ -9,12 +9,14 @@ av skriptene i `scripts/` (kildesjekken, avgjørelse 018) og endres bare av dem.
 |---|---|---|---|
 | `grep.ts` | Grep (udir-grep) | fagindeksen, læreplanene, grunnleggende ferdigheter og tverrfaglige temaer, rollene til fagkodene | `lastFagindeks`, `lastLaereplan`, `lastLaereplanverket`, `lastFagroller` |
 | `fagfordeling.ts` | Udir-1 | fag- og timefordelingen for skoleåret | `lastFagfordeling` |
-| `udir.ts` | udir.no | overordnet del, tilbudene (Grep og Udir-1) | `lastOverordnetDel`, `lastTilbud` |
+| `udir.ts` | udir.no, NOR | overordnet del, tilbudene (Grep og Udir-1), opplæringskontorene | `lastOverordnetDel`, `lastTilbud`, `lastOpplaeringskontor` |
+| `utdanning.ts` | utdanning.no, VIGO | skolene og tilbudene deres (med organisasjonsnummer fra VIGO), yrkene | `lastSkoler`, `lastYrker` |
+| `ndla.ts` | NDLA | fagene på NDLA per fagkode | `lastNdla` |
 | `vigo.ts` | VIGO Kodeverksbase | fagrelasjoner, fagmerknader og vitnemålsmerknader | `lastFagrelasjoner`, `lastMerknader` |
 | `skolear.ts` | – | skoleåret og valget av fag- og timefordeling etter dato | `iDag`, `skolearFor`, `velgFordeling`, `fordelingsfil` |
 
 Det som regnes ut når appen bygges (Vite-pluginene i `scripts/vite/plugins.ts`), leser de samme filene med
-`scripts/data/les.ts`: `virtual:fagsok` (fagsøket i kalkulatorene), `virtual:tilbud` og `virtual:fagroller`.
+`scripts/data/les.ts`: `virtual:fagsok` (fagsøket i kalkulatorene), `virtual:tilbud`, `virtual:skoler` og `virtual:fagroller`.
 Lov- og forskriftstekst (`data/lovdata/`) lastes av modulen Lov og forskrift (`src/modules/lov/data.ts`), og
 skolelisten (`data/skoler/`) av innstillingene.
 

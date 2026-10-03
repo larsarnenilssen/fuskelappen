@@ -1,7 +1,9 @@
 // Felles for sidene i Opplæringsløp: lasting av fagindeksen og tilbudene, og lenker til fag og tilbud.
 import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
-import { type T, useTekst } from '../../../app/tilstand.ts';
+import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { lastSkoler, type Skoleregister } from '../../../data/utdanning.ts';
+import { type Skoleoppforing, valgtSkole } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 export { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { lastFagindeks } from '../../fag/data.ts';
@@ -27,6 +29,40 @@ export function useTilbudsdata(): [Lastet, () => void] {
   return [data, () => settForsok((n) => n + 1)];
 }
 
+/** Skolene og tilbudene deres (avgjørelse 053), lastet første gang de trengs. null mens de lastes eller ved feil. */
+export function useSkoler(): Skoleregister | null {
+  const [data, settData] = useState<Skoleregister | null>(null);
+  useEffect(() => {
+    lastSkoler().then(settData, () => undefined);
+  }, []);
+  return data;
+}
+
+/**
+ * Skolen brukeren har valgt under Innstillinger, med tilbudene den har etter utdanning.no. Skolene lastes bare når
+ * brukeren har valgt en skole fra skoleregisteret. null når ingen skole er valgt, eller skolen ikke finnes.
+ */
+export function useValgtSkole(): Skoleoppforing | null {
+  const { innstillinger } = useTilstand();
+  const orgnr = innstillinger.skole?.id ?? null;
+  const [skole, settSkole] = useState<Skoleoppforing | null>(null);
+  useEffect(() => {
+    if (!orgnr) {
+      settSkole(null);
+      return;
+    }
+    let aktiv = true;
+    lastSkoler().then(
+      (r) => aktiv && settSkole(valgtSkole(r.skoler, orgnr)),
+      () => undefined,
+    );
+    return () => {
+      aktiv = false;
+    };
+  }, [orgnr]);
+  return skole;
+}
+
 /** Laster inn, eller feilmelding med «Prøv igjen». */
 export function Lasting({ data, provIgjen }: { data: 'laster' | 'feil'; provIgjen: () => void }) {
   const { t } = useTekst();
@@ -50,9 +86,25 @@ export function tilbudsnavn(t: T, indeks: Fagindeks, kode: string, malform: 'nb'
   return po.navn[malform].toLowerCase().startsWith(trinn.toLowerCase()) ? po.navn[malform] : `${trinn} ${po.navn[malform]}`;
 }
 
-/** Lenke til et tilbud. `via` er tilbudet brukeren kom fra; det avgjør programmet påbygging står under. */
-export function Tilbudslenke({ indeks, kode, via, under }: { indeks: Fagindeks; kode: string; via?: string | null; under?: ComponentChildren }) {
+/** Merket for tilbud ved skolen brukeren har valgt. */
+export function DinSkole() {
+  const { t } = useTekst();
+  return (
+    <span class="lop-dinskole">
+      <Ikon navn="hake" class="ikon-liten" />
+      {t('opplaeringslop.dinSkole')}
+    </span>
+  );
+}
+
+/**
+ * Lenke til et tilbud. `via` er tilbudet brukeren kom fra; det avgjør programmet påbygging står under. `merk` gir
+ * merket for tilbud ved skolen brukeren har valgt (av i skoleregisteret, der skolen står over).
+ */
+export function Tilbudslenke({ indeks, kode, via, under, merk = true }: { indeks: Fagindeks; kode: string; via?: string | null; under?: ComponentChildren; merk?: boolean }) {
   const { t, malform } = useTekst();
+  // Tilbud ved skolen brukeren har valgt, merkes (avgjørelse 053).
+  const skole = useValgtSkole();
   const po = indeks.programomrader[kode];
   if (!po) return <span>{kortKode(kode)}</span>;
   return (
@@ -63,6 +115,7 @@ export function Tilbudslenke({ indeks, kode, via, under }: { indeks: Fagindeks; 
           {kortKode(kode)}
           {po.sted === 'bedrift' && ` · ${t('opplaeringslop.sted.bedrift')}`}
           {under}
+          {merk && skole?.tilbud.includes(kode) && <DinSkole />}
         </span>
       </span>
       <Ikon navn="hoyre" class="ikon-liten" />

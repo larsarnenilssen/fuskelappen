@@ -1,5 +1,6 @@
 // Opplæringsløp: tilbudsstrukturen i videregående i appen (pakke 5, avgjørelse 035). Program → tilbud → fag og timer,
-// med lenker til fagarkene og til Vilbli for skolene som har tilbudet (avgjørelse 027).
+// med lenker til fagarkene og til Vilbli for skolene som har tilbudet (avgjørelse 027). Skoleregisteret og
+// opplæringskontorene (avgjørelse 053).
 import { lastFagindeks } from '../fag/data.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { kortKode, tilbudRute } from './data.ts';
@@ -13,6 +14,9 @@ export const manifest: Modulmanifest = {
   rekkefolge: 20,
   ruter: [
     { sti: '/opplaeringslop', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Oversikt.tsx') },
+    // Registrene står før /:program, så adressene ikke leses som et utdanningsprogram (avgjørelse 053).
+    { sti: '/opplaeringslop/skoler', tittel: 'opplaeringslop.skoler.tittel', side: () => import('./sider/Skoler.tsx') },
+    { sti: '/opplaeringslop/opplaeringskontor', tittel: 'opplaeringslop.kontor.tittel', side: () => import('./sider/Kontor.tsx') },
     { sti: '/opplaeringslop/:program', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Program.tsx') },
     { sti: '/opplaeringslop/:program/:tilbud', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Tilbud.tsx') },
   ],
@@ -46,6 +50,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return [];
   },
-  kilder: ['udir-grep', 'udir-fag-og-timefordeling'],
+  kilder: ['udir-grep', 'udir-fag-og-timefordeling', 'utdanning-no', 'udir-nor'],
   status: 'aktiv',
 };

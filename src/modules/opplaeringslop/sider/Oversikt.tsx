@@ -8,7 +8,8 @@ import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import { erVariant, type Programgruppe } from '../../fag/tilbud/modell.ts';
 import { kortKode } from '../data.ts';
-import { Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './felles.tsx';
+import { Lasting, Rubrikk, Tilbudslenke, useTilbudsdata, useValgtSkole } from './felles.tsx';
+import { lenke } from '../../../app/ruter.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 const GRUPPER: readonly Programgruppe[] = ['studieforberedende', 'yrkesfaglig', 'pabygging'];
@@ -25,6 +26,34 @@ function sokTilbud(indeks: Fagindeks, sok: string, malform: 'nb' | 'nn'): string
     })
     .map(([k]) => k)
     .sort((a, b) => rang(a) - rang(b) || (indeks.programomrader[a]?.trinn ?? '').localeCompare(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
+}
+
+/** Lenker til skoleregisteret og opplæringskontorene, og til tilbudene ved skolen brukeren har valgt (avgjørelse 053). */
+function Registre() {
+  const { t } = useTekst();
+  const skole = useValgtSkole();
+  const lenker = [
+    ...(skole?.nr ? [{ href: lenke('/opplaeringslop/skoler', { fylke: 'alle', skole: skole.nr }), tittel: t('opplaeringslop.tilbudVedSkolen', { skole: skole.navn }) }] : []),
+    { href: '#/opplaeringslop/skoler', tittel: t('opplaeringslop.skoler.tittel') },
+    { href: '#/opplaeringslop/opplaeringskontor', tittel: t('opplaeringslop.kontor.tittel') },
+  ];
+  return (
+    <section class="lop-registre" aria-label={t('opplaeringslop.registre')}>
+      <h2 class="liten-overskrift">{t('opplaeringslop.registre')}</h2>
+      <ul class="liste">
+        {lenker.map((l) => (
+          <li key={l.href}>
+            <a class="listelenke" href={l.href}>
+              <span class="listelenke-tekst">
+                <span class="listelenke-tittel">{l.tittel}</span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
 }
 
 export default function Oversikt() {
@@ -89,11 +118,12 @@ export default function Oversikt() {
                   </Rubrikk>
                 );
               })}
+              <Registre />
             </>
           )}
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-grep' }, { id: 'udir-fag-og-timefordeling' }]} />
+      <Kildeliste kilder={[{ id: 'udir-grep' }, { id: 'udir-fag-og-timefordeling' }, { id: 'utdanning-no', punkt: 'Skoler' }, { id: 'udir-nor' }]} />
     </div>
   );
 }

@@ -125,6 +125,8 @@ export const fagNb = {
     erstatter: 'Erstatter',
     utgattDato: 'utgått {dato}',
     utgatt: 'utgått',
+    ndla: 'På NDLA',
+    ndlaHjelp: 'Læringsressurser for faget hos Nasjonal digital læringsarena.',
     brukesSammen: 'Brukes sammen med',
     nyLaereplan: 'Læreplanen {gammel} er erstattet av {ny}.',
     utgattKode: 'Fagkoden {kode} er utgått.',

@@ -538,6 +538,100 @@ main {
   color: var(--farge-advarsel);
 }
 
+/* Skolene, yrkene og opplæringskontorene i Opplæringsløp (avgjørelse 053). */
+.lop-dinskole {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: var(--rom-2);
+  color: var(--farge-ok);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lop-skolestatus {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+}
+
+.lop-skolestatus .ikon {
+  flex: none;
+  margin-top: 0.2em;
+}
+
+.lop-skolestatus-ja .ikon {
+  color: var(--farge-ok);
+}
+
+.lop-yrker {
+  margin: 0 0 var(--rom-3);
+  padding-left: var(--rom-4);
+}
+
+.lop-yrker li + li {
+  margin-top: var(--rom-1);
+}
+
+.lop-registre {
+  margin-top: var(--rom-5);
+}
+
+.skolefilter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  column-gap: var(--rom-3);
+}
+
+.skolefilter .felt select {
+  width: 100%;
+  min-width: 0;
+}
+
+.skolefilter-tilbud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.skoleliste {
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.skoleliste > li + li {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.skoleliste .skolekort-knapp {
+  display: flex;
+  width: 100%;
+  gap: var(--rom-3);
+  min-height: 3.25rem;
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.skolekort-innhold {
+  padding: 0 var(--rom-4) var(--rom-2);
+}
+
+.kontorliste .kontor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.kontorliste .listelenke-tekst {
+  flex: 1 1 12rem;
+}
+
 /* Vg2 på yrkesfag med opphentingsfag (Opplæringsløp): boks med søk, ikke en lang liste. */
 .opphenting {
   margin: 0 0 var(--rom-4);

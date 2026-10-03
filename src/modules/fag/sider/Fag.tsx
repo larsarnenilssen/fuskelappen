@@ -24,6 +24,8 @@ import { lastTilbud, type Tilbudene, tilbudRute } from '../../opplaeringslop/dat
 import { type Fagrolle, fagITilbud } from '../../opplaeringslop/grupper.ts';
 import type { SideProps } from '../../typer.ts';
 import { lastFagindeks, lastFagrelasjoner, lastLaereplan } from '../data.ts';
+import { lastNdla } from '../../../data/ndla.ts';
+import type { Ndla } from '../ndla/skjema.ts';
 import { htmlSpraak, programmerFor, programSammendrag, udirLenke } from '../oppslag.ts';
 import type { Fag, Fagindeks, Fagtype, Laereplan, Vurdering } from '../skjema.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
@@ -34,6 +36,9 @@ import type { Fagrelasjoner } from '../vigo/skjema.ts';
 function navnFor(kode: string, indeks: Fagindeks, rel: Fagrelasjoner, malform: Malform): string {
   return indeks.fag[kode]?.navn[malform] ?? rel.navn[kode] ?? rel.erstatninger[kode]?.navn ?? '';
 }
+
+/** Nettstedet til NDLA. Stiene til fagene står i data/ndla/fag.json. */
+const NDLA = 'https://ndla.no';
 
 /** Lenke til fagsiden når koden finnes i fagindeksen, ellers bare kode og navn. */
 function Faglenke({ kode, indeks, rel, malform }: { kode: string; indeks: Fagindeks; rel: Fagrelasjoner; malform: Malform }) {
@@ -320,8 +325,11 @@ export default function Fagside({ parametre }: SideProps) {
   const [rel, settRel] = useState<Fagrelasjoner | null>(null);
   const koblingsdata = useKoblingsdata();
   const [tilbud, settTilbud] = useState<Tilbudene | null>(null);
+  const [ndla, settNdla] = useState<Ndla | null>(null);
 
   useEffect(() => {
+    // Faget på NDLA (avgjørelse 053). Siden virker også uten.
+    lastNdla().then(settNdla, () => undefined);
     void lastFagindeks().then(settIndeks);
     // Tilbudene viser hvordan faget inngår i hvert programområde. Siden virker også uten.
     lastTilbud().then(settTilbud, () => undefined);
@@ -382,12 +390,14 @@ export default function Fagside({ parametre }: SideProps) {
   const medVigo = erstatter.length > 0 || sammen.length > 0 || nyPlan !== null;
   const erYff = fag.type === 'yrkesfaglig_fordypning';
   const typeBegrep = BEGREP_FOR_TYPE[fag.type];
+  const ndlafag = ndla?.fag[kode] ?? [];
   const kilder = [
     ...(lp ? [{ id: 'udir-lk20', punkt: lp, url: udirLenke(lp) }] : []),
     { id: 'udir-grep', punkt: kode },
     ...(kobling && kobling.status !== 'ukoblet' ? [{ id: 'ks-sfs2213-avtaletekst', punkt: 'Vedlegg 1' }] : []),
     ...(erYff ? [{ id: 'udir-yff-forskrift' }] : []),
     ...(medVigo ? [{ id: 'vigo-kodeverk', punkt: kode }] : []),
+    ...(ndlafag.length > 0 ? [{ id: 'ndla', punkt: kode }] : []),
   ];
   const antallMaal =
     plan && typeof plan === 'object' ? plan.kompetansemaalsett.filter((x) => fag.km.includes(x.kode)).reduce((sum, x) => sum + x.maal.length, 0) : null;
@@ -441,6 +451,25 @@ export default function Fagside({ parametre }: SideProps) {
                   </li>
                 ))}
               </ul>
+            </dd>
+          </div>
+        )}
+        {ndlafag.length > 0 && (
+          <div class="fagark-ndla">
+            <dt>{t('fag.side.ndla')}</dt>
+            <dd>
+              <ul class="tett">
+                {ndlafag.map((f) => (
+                  <li key={f.sti}>
+                    <a class="ekstern-lenke" href={`${NDLA}${f.sti}`} target="_blank" rel="noopener noreferrer">
+                      {f.navn[malform]}
+                      <Ikon navn="ekstern" class="ikon-liten" />
+                      <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted: 'ndla.no' })}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p class="liten dempet">{t('fag.side.ndlaHjelp')}</p>
             </dd>
           </div>
         )}

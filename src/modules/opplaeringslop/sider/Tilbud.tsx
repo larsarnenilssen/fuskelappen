@@ -1,10 +1,11 @@
 // Et tilbud (programområde): timene og hvordan de fordeler seg, fagene i rubrikker for fellesfag, felles programfag,
 // programfag til valg og yrkesfaglig fordypning, hva tilbudet bygger på og fører videre til, og lenker til Vilbli for
-// skolene som har det (avgjørelse 027). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
+// skolene som har det (avgjørelse 027). Skolene med tilbudet, yrkene etter lærefaget og opplæringskontorene i
+// fylket kommer fra utdanning.no og NOR (avgjørelse 053). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
 // Linjenavnene fra rundskrivet («Norsk», «Fremmedspråk») står på valgt målform (navn.ts). Avvik mellom rundskrivet og
 // Grep vises som en nøytral merknad der de gjelder (eier 02.10.2026).
 import { useEffect, useId, useState } from 'preact/hooks';
-import { naviger } from '../../../app/ruter.ts';
+import { lenke, naviger } from '../../../app/ruter.ts';
 import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
@@ -26,7 +27,12 @@ import { visningstrinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, skoleForst, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
-import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
+import { lastYrker } from '../../../data/utdanning.ts';
+import { lastOpplaeringskontor } from '../../../data/udir.ts';
+import type { Yrker } from '../../fag/utdanning/skjema.ts';
+import type { Opplaeringskontorer } from '../nor/skjema.ts';
+import { antallMedTilbud, valgtSkole } from '../skoler.ts';
 
 type Kategori = Tilbudsdel['kategori'];
 type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;
@@ -486,6 +492,135 @@ function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; v
   );
 }
 
+/**
+ * Skolene med tilbudet etter utdanning.no: om skolen brukeren har valgt, har det, og lenker til skoleregisteret for
+ * fylket og hele landet (avgjørelse 053).
+ */
+function Skoler({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const register = useSkoler();
+  if (!register || register.skoler.length === 0) return null;
+  const fylke = fylkesnavn(innstillinger.fylke) ? innstillinger.fylke : null;
+  const valgt = valgtSkole(register.skoler, innstillinger.skole?.id);
+  const iFylket = fylke ? antallMedTilbud(register.skoler, kode, fylke) : null;
+  const iLandet = antallMedTilbud(register.skoler, kode, null);
+  const k = kortKode(kode);
+  const fylkenavn = fylkesnavn(fylke) ?? '';
+  const har = valgt?.tilbud.includes(kode) ?? false;
+  return (
+    <Rubrikk nokkel={`lop-${k}-skoler`} tittel={t('opplaeringslop.tilbud.skolerOverskrift')} hoyre={formaterTall(iFylket ?? iLandet)}>
+      {valgt && (
+        <p class={`lop-skolestatus${har ? ' lop-skolestatus-ja' : ''}`}>
+          <Ikon navn={har ? 'hake' : 'info'} class="ikon-liten" />
+          {t(har ? 'opplaeringslop.tilbud.dinSkoleHar' : 'opplaeringslop.tilbud.dinSkoleHarIkke', { skole: valgt.navn })}
+        </p>
+      )}
+      {iLandet === 0 ? (
+        <p>{t('opplaeringslop.tilbud.ingenSkoler')}</p>
+      ) : (
+        <ul class="liste">
+          {fylke && iFylket === 0 && (
+            <li>
+              <p class="dempet">{t('opplaeringslop.tilbud.ingenSkolerFylke', { fylke: fylkenavn })}</p>
+            </li>
+          )}
+          {fylke && iFylket !== null && iFylket > 0 && (
+            <li>
+              <a class="listelenke" href={lenke('/opplaeringslop/skoler', { tilbud: k, fylke })}>
+                <span class="listelenke-tekst">
+                  <span class="listelenke-tittel">
+                    {iFylket === 1 ? t('opplaeringslop.tilbud.skolerFylkeEn', { fylke: fylkenavn }) : t('opplaeringslop.tilbud.skolerFylke', { antall: formaterTall(iFylket), fylke: fylkenavn })}
+                  </span>
+                </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
+              </a>
+            </li>
+          )}
+          <li>
+            <a class="listelenke" href={lenke('/opplaeringslop/skoler', { tilbud: k })}>
+              <span class="listelenke-tekst">
+                <span class="listelenke-tittel">
+                  {iLandet === 1 ? t('opplaeringslop.tilbud.skolerLandetEn') : t('opplaeringslop.tilbud.skolerLandet', { antall: formaterTall(iLandet) })}
+                </span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        </ul>
+      )}
+      <p class="liten dempet">{t('opplaeringslop.tilbud.skolerHjelp')}</p>
+    </Rubrikk>
+  );
+}
+
+/** Yrkene utdanning.no knytter til tilbudet, med den korte teksten om sluttkompetansen (avgjørelse 053). */
+function Yrkene({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const [yrker, settYrker] = useState<Yrker | null>(null);
+  useEffect(() => {
+    lastYrker().then(settYrker, () => undefined);
+  }, []);
+  const u = yrker?.programomrader[kode];
+  if (!u) return null;
+  return (
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-yrker`} tittel={t('opplaeringslop.tilbud.yrkerOverskrift')} hoyre={formaterTall(u.yrker.length)}>
+      {/* Teksten er fra utdanning.no og finnes bare på bokmål. */}
+      {u.tekst && <p lang="nb">{u.tekst}</p>}
+      <ul class="lop-yrker">
+        {u.yrker.map((y) => (
+          <li key={y.sti}>
+            <a class="ekstern-lenke" href={`${UTDANNING}${y.sti}`} target="_blank" rel="noopener noreferrer" lang="nb">
+              {y.tittel}
+              <Ikon navn="ekstern" class="ikon-liten" />
+              <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted: 'utdanning.no' })}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a class="ekstern-lenke" href={`${UTDANNING}${u.sti}`} target="_blank" rel="noopener noreferrer">
+          {t('opplaeringslop.tilbud.utdanningsbeskrivelse', { tittel: u.tittel })}
+          <Ikon navn="ekstern" class="ikon-liten" />
+        </a>
+      </p>
+      <p class="liten dempet">{t('opplaeringslop.tilbud.yrkerHjelp')}</p>
+    </Rubrikk>
+  );
+}
+
+/** Opplæringskontorene i fylket brukeren har valgt, eller i hele landet, etter NOR (avgjørelse 053). */
+function Kontorene({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const [data, settData] = useState<Opplaeringskontorer | null>(null);
+  useEffect(() => {
+    lastOpplaeringskontor().then(settData, () => undefined);
+  }, []);
+  if (!data) return null;
+  const fylke = fylkesnavn(innstillinger.fylke) ? innstillinger.fylke : null;
+  const antall = fylke ? data.kontor.filter((k) => k.godkjentI.includes(fylke)).length : data.kontor.length;
+  return (
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-kontor`} tittel={t('opplaeringslop.tilbud.kontorOverskrift')} hoyre={formaterTall(antall)} lukket>
+      <ul class="liste">
+        <li>
+          <a class="listelenke" href={lenke('/opplaeringslop/opplaeringskontor', fylke ? { fylke } : undefined)}>
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">
+                {fylke ? t('opplaeringslop.tilbud.kontorFylke', { antall: formaterTall(antall), fylke: fylkesnavn(fylke) ?? '' }) : t('opplaeringslop.tilbud.kontorLandet', { antall: formaterTall(antall) })}
+              </span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
+      <p class="liten dempet">{t('opplaeringslop.tilbud.kontorHjelp')}</p>
+    </Rubrikk>
+  );
+}
+
+const UTDANNING = 'https://utdanning.no';
+
 function Vilbli({ kode, indeks, via, bygger, utdanning }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[]; utdanning: string | null }) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
@@ -511,7 +646,7 @@ function Vilbli({ kode, indeks, via, bygger, utdanning }: { kode: string; indeks
       )}
       {utdanning && (
         <p>
-          <a class="ekstern-lenke" href={`https://utdanning.no/utdanning/vgs/${encodeURIComponent(utdanning)}`} target="_blank" rel="noopener noreferrer">
+          <a class="ekstern-lenke" href={`${UTDANNING}/utdanning/vgs/${encodeURIComponent(utdanning)}`} target="_blank" rel="noopener noreferrer">
             {t('opplaeringslop.tilbud.utdanningLenke')}
             <Ikon navn="ekstern" class="ikon-liten" />
           </a>
@@ -609,6 +744,17 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         </Forklaring>
       )}
 
+      {po.sted === 'bedrift' ? (
+        <>
+          <Yrkene kode={kode} />
+          <Kontorene kode={kode} />
+        </>
+      ) : (
+        <>
+          <Skoler kode={kode} />
+          <Yrkene kode={kode} />
+        </>
+      )}
       <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} utdanning={tb.utdanning} />
 
       <p class="liten">
@@ -619,6 +765,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           { id: 'udir-grep', punkt: k },
           ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
           ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
+          po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
         ]}
       />
     </article>

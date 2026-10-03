@@ -71,7 +71,7 @@ async function lagPr(gren: string, tittel: string, endre: () => void, beskrivels
   try {
     endre();
     const feilet = feiledeTester();
-    git('add', '-A', 'rules', 'data/grep', 'data/udir', 'data/vigo', 'data/utdanning', 'docs/KOBLING.md', 'docs/TILBUDSSTRUKTUR.md', 'data/status/kobling.json', 'data/status/lopsamsvar.json');
+    git('add', '-A', 'rules', 'data/grep', 'data/udir', 'data/vigo', 'data/utdanning', 'data/ndla', 'docs/KOBLING.md', 'docs/TILBUDSSTRUKTUR.md', 'data/status/kobling.json', 'data/status/lopsamsvar.json');
     git('commit', '-m', tittel);
     git('push', '--force', 'origin', gren);
     const eier = repo?.split('/')[0] ?? '';
@@ -141,6 +141,8 @@ if (grepTester === 'feilet' && existsSync(grepNy)) {
         if (existsSync(vigoNy)) cpSync(vigoNy, join(rot, 'data/vigo'), { recursive: true });
         const utdanningNy = join(generert, 'utdanning-ny');
         if (existsSync(utdanningNy)) cpSync(utdanningNy, join(rot, 'data/utdanning'), { recursive: true });
+        const ndlaNy = join(generert, 'ndla-ny');
+        if (existsSync(ndlaNy)) cpSync(ndlaNy, join(rot, 'data/ndla'), { recursive: true });
         // Rapportene over koblingen (docs/KOBLING.md) og tilbudsstrukturen (docs/TILBUDSSTRUKTUR.md) lages med de
         // nye dataene, så PR-en viser nye ukoblede fag og endrede tilbud.
         execFileSync('npx', ['tsx', 'scripts/kobling/rapport.ts'], { cwd: rot, stdio: 'inherit' });

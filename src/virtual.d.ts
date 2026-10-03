@@ -50,3 +50,9 @@ declare module 'virtual:begrepsord' {
   const ord: { id: string; fylke: string | null; ord: { nb: string[]; nn: string[] } }[];
   export default ord;
 }
+
+declare module 'virtual:skoler' {
+  /** Skolene og tilbudene deres, med organisasjonsnummeret fra VIGO (avgjørelse 053). Se src/data/utdanning.ts. */
+  const data: unknown;
+  export default data;
+}

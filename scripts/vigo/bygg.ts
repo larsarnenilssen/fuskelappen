@@ -1,6 +1,6 @@
 // Bygger dataene i data/vigo/ fra radene i VIGO Kodeverksbase, kontrollerer dem og finner endringene siden forrige
 // henting. Rene funksjoner, testes i tests/unit/vigo.test.ts (avgjørelse 026).
-import type { Fagrelasjoner, Merknad, Merknader } from '../../src/modules/fag/vigo/skjema.ts';
+import type { Fagrelasjoner, Merknad, Merknader, Skolenummer } from '../../src/modules/fag/vigo/skjema.ts';
 
 /** En rad fra API-et. Bare feltene som brukes, er beskrevet. */
 export type Vigorad = Record<string, unknown>;
@@ -210,4 +210,20 @@ export function sammenlignVigo(gammel: { rel: Fagrelasjoner; m: Merknader } | nu
     for (const k of g.keys()) if (!n.has(k)) ut.push(`Fjernet ${navn} ${k}`);
   }
   return ut;
+}
+
+/**
+ * Skolenummer (fem sifre) → organisasjonsnummer for skolene i VIGO som har begge og ikke er avsluttet. Bare numrene
+ * leses; radene har også navn og kontaktinformasjon til skoleledere, som ikke skal lagres (avgjørelse 053).
+ */
+export function byggSkolenummer(rader: readonly Vigorad[], hentet: string, idag = hentet.slice(0, 10)): Skolenummer {
+  const orgnr: Record<string, string> = {};
+  for (const r of rader) {
+    const nr = typeof r.number === 'number' || typeof r.number === 'string' ? String(r.number).padStart(5, '0') : '';
+    const org = typeof r.orgNr === 'string' ? r.orgNr.trim() : '';
+    const slutt = typeof r.validTo === 'string' ? r.validTo.slice(0, 10) : null;
+    if (!/^\d{5}$/.test(nr) || !/^\d{9}$/.test(org) || (slutt && slutt < idag)) continue;
+    orgnr[nr] = org;
+  }
+  return { kilde: 'vigo-kodeverk', hentet, orgnr: Object.fromEntries(Object.entries(orgnr).sort(([a], [b]) => a.localeCompare(b))) };
 }
