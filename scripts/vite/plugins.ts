@@ -7,6 +7,8 @@ import { beregnFagroller, byggStruktur, byggTilbud, velgFordeling } from '../../
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
+import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
+import { lesRegelsett } from '../innhold/alt.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -121,6 +123,24 @@ function lesFordeling(rot: string): Fagfordeling | null {
         .map((f) => JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Fagfordeling)
     : [];
   return velgFordeling(fordelinger, new Date().toISOString().slice(0, 10));
+}
+
+/**
+ * Dataene til fagsøket i kalkulatorene (programområder, fagkoder og årstimer), laget fra fagindeksen når appen
+ * bygges, så fagene bare står ett sted (avgjørelse 049). Arbeidsplan og de andre kalkulatorene laster dem med en gang.
+ */
+export function fagsokPlugin(rot: string): Plugin {
+  const id = 'virtual:fagsok';
+  return {
+    name: 'fuskelappen:fagsok',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      return `export default ${JSON.stringify(byggFagsokdata(lesFagindeks(rot), fagsokgrunnlag(lesRegelsett(rot))))};`;
+    },
+  };
 }
 
 /**

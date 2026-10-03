@@ -118,4 +118,4 @@ Regelverdier med `grunnlag: praksis` må stå i listen. Det testes.
 
 - `content/fylker.yaml`: fylkene (nummer og navn) med kilde.
 - `content/sok/synonymer.yaml`: par av nynorsk variant og bokmålsform for søket.
-- `data/`: genererte data (`status/kildestatus.json`, `skoler/vgs.json`, `grep/programomrader.json`, `grep/fagkoder.json`). Endres bare av skript.
+- `data/`: genererte data (`status/kildestatus.json`, `skoler/vgs.json`, `grep/fagindeks.json`, `grep/laereplaner/`). Endres bare av skript.

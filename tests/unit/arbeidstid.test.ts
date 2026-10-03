@@ -365,13 +365,23 @@ describe('stillingsplan', () => {
 describe('årstimer fra Grep', () => {
   it('stemmer med omfanget for fagkodene i Grep og peker på rader i vedlegg 1', async () => {
     const { lesArstimer } = await import('../../src/modules/arbeidstid/beregning/index.ts');
-    const grep = JSON.parse(readFileSync(join(rot, 'data/grep/arstimer.json'), 'utf8')) as { arstimer: Record<string, number | null> };
+    // Årstimene i fagindeksen fra Grep, som appen får dem (virtual:fagsok, avgjørelse 049).
+    const { byggFagsokdata, fagsokgrunnlag } = await import('../../src/modules/arbeidstid/fagsokdata.ts');
+    const { lesRegelsett } = await import('../../scripts/innhold/alt.ts');
+    const grep = byggFagsokdata(JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')), fagsokgrunnlag(lesRegelsett(rot)));
     const tabell = lesArstimer(hent);
     expect(tabell.size).toBeGreaterThan(80);
+    const utenGrep: string[] = [];
     for (const [nr, rad] of tabell) {
       expect(rader.some((r) => r.nr === nr), `rad ${nr} finnes i vedlegg 1`).toBe(true);
-      for (const kode of rad.fagkoder) expect(grep.arstimer[kode], `${kode} (rad ${nr})`).toBe(rad.arstimer);
+      for (const kode of rad.fagkoder) {
+        if (grep.arstimer[kode] === null) utenGrep.push(kode);
+        else expect(grep.arstimer[kode], `${kode} (rad ${nr})`).toBe(rad.arstimer);
+      }
     }
+    // Fagkoder i årstimetabellen som ikke lenger er med i Grep (utgått). Da brukes årstimetallet i tabellen. Kommer
+    // det nye her, må tabellen sjekkes. Gresk 1 og latin 1 (SPR3023, SPR3024) er utgått i Grep fra 2026.
+    expect(utenGrep.sort()).toEqual(['SPR3023', 'SPR3024']);
     // Eksemplene fra eier: kroppsøving 56 og engelsk vg1 studieforberedende 140.
     expect(tabell.get(rad('Kroppsøv.', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(56);
     expect(tabell.get(rad('Engelsk', 'Stud.spes', 'Vg1').rad.nr)?.arstimer).toBe(140);

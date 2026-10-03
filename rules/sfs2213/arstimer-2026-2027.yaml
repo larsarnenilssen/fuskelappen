@@ -7,7 +7,7 @@
 # Latin 1 og Gresk 1 står under Latin/Gresk (rad 114), ikke Antikkens språk og kultur (eier 01.10.2026: 496).
 # Ikke med: samisk, fremmedspråk på påbygging, programfag på yrkesfag og forkortelser som ikke kan bekreftes
 # i Grep (Info.tekn. samf., Nær.øk, Pol/samf).
-# npm run hent:grep henter omfanget for fagkodene på nytt (data/grep/arstimer.json), og en test sammenligner.
+# npm run hent:grep henter fagindeksen på nytt (data/grep/fagindeks.json), og en test sammenligner årstimene (avgjørelse 049).
 id: sfs2213-2026-2027
 regelverk: sfs2213
 del: arstimer

@@ -85,11 +85,9 @@ function sjekkGrep(): Sjekkresultat {
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».' };
   const { endringer } = JSON.parse(readFileSync(endringsfil, 'utf8')) as { endret: boolean; endringer: Grependringer | null };
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
-  const data = ['programomrader', 'fagkoder', 'arstimer'].map((n) => {
-    const innhold = JSON.parse(readFileSync(join(rot, 'data/grep', `${n}.json`), 'utf8')) as Record<string, unknown>;
-    return JSON.stringify(innhold[n]);
-  });
-  const fingeravtrykk = lagFingeravtrykk(data.join('\n'));
+  // Fingeravtrykket er fagindeksen uten tidspunktet for hentingen (avgjørelse 049).
+  const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Record<string, unknown>;
+  const fingeravtrykk = lagFingeravtrykk(JSON.stringify({ ...indeks, hentet: '' }));
   rapport.push('### Grep', endringer ? grepsammendrag(endringer) : 'Første henting.', ...(endringer ? grepdetaljer(endringer).map((l) => `- ${l}`) : []), '');
   if (tester === 'feilet') {
     return { status: 'endret', fingeravtrykk, melding: `Grep er endret slik at testene feiler, og dataene er ikke tatt inn: ${endringer ? grepsammendrag(endringer) : ''}`.trim() };
