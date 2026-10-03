@@ -15,6 +15,8 @@ export interface Sokeoppforing {
   modul: string;
   /** Ganges med treffpoengene. Under 1 gir oppføringen lavere plass, f.eks. fag utenom de vanlige (avgjørelse 031). */
   vekt?: number;
+  /** Fylket oppføringen bare gjelder for (fylkesinnhold uten nasjonal versjon). Vises bare med det fylket valgt. */
+  fylke?: string;
 }
 
 interface Dokument {
@@ -28,6 +30,7 @@ interface Dokument {
   rute: string;
   modul: string;
   vekt: number;
+  fylke: string;
 }
 
 export interface Sokeresultat {
@@ -37,6 +40,13 @@ export interface Sokeresultat {
   rute: string;
   modul: string;
   score: number;
+  /** Fylket treffet bare gjelder for, eller null. */
+  fylke: string | null;
+}
+
+/** Treffene som gjelder for brukeren: nasjonale, og fylkesinnhold bare for det valgte fylket. */
+export function synligeTreff(treff: readonly Sokeresultat[], fylke: string | null): Sokeresultat[] {
+  return treff.filter((t) => t.fylke === null || t.fylke === fylke);
 }
 
 /**
@@ -77,6 +87,7 @@ function tilDokument(o: Sokeoppforing): Dokument {
     rute: o.rute,
     modul: o.modul,
     vekt: o.vekt ?? 1,
+    fylke: o.fylke ?? '',
   };
 }
 
@@ -86,7 +97,7 @@ function valg(synonymer: Synonymer): Options<Dokument> {
   const normaliser = lagNormaliserer(synonymer);
   return {
     fields: ['tittel', 'stikkord', 'tekst'],
-    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul', 'vekt'],
+    storeFields: ['type', 'tittelNb', 'tittelNn', 'rute', 'modul', 'vekt', 'fylke'],
     tokenize: (tekst) => tekst.split(TEGN).filter(Boolean),
     processTerm: (term) => {
       const t = normaliser(term);
@@ -129,5 +140,6 @@ export function sok(indeks: MiniSearch<Dokument>, sporring: string, grense = 50)
     rute: t.rute as string,
     modul: t.modul as string,
     score: t.score,
+    fylke: typeof t.fylke === 'string' && t.fylke !== '' ? t.fylke : null,
   }));
 }

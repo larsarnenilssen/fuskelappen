@@ -1,11 +1,12 @@
 // Fristene i content/ (avgjørelse 046): paragrafene finnes i Regelverk, gruppene er de filtrene tidslinjen kjenner, og
 // fylkets frister supplerer de nasjonale.
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { lesInnhold } from '../../scripts/innhold/alt.ts';
 import type { Frist } from '../../src/core/innhold/skjema.ts';
-import { alleParagrafer, type Lovdokument } from '../../src/modules/lov/typer.ts';
+import { alleParagrafer, type Lovdokument, paragraftekst } from '../../src/modules/lov/typer.ts';
+import { normaliserTekst } from '../../src/core/kontroll/tekst.ts';
 import { FILTRE } from '../../src/modules/inntak/tidslinje.ts';
 
 const rot = join(__dirname, '../..');
@@ -44,4 +45,27 @@ describe('frister', () => {
     for (const f of lokale) expect(f.gyldighet, f.id).toMatchObject({ niva: 'fylke', forhold: 'supplerer' });
     expect(new Set(inntak.map((f) => f.id)).size).toBe(inntak.length);
   });
+});
+
+describe('fristdatoene står i paragrafene', () => {
+  const MANEDER = ['januar', 'februar', 'mars', 'april', 'mai', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'desember'];
+  const tekster = new Map<string, string>();
+  for (const fil of readdirSync(join(rot, 'data/lovdata')).filter((f) => f.endsWith('.json'))) {
+    const dok = JSON.parse(readFileSync(join(rot, 'data/lovdata', fil), 'utf8')) as Partial<Lovdokument>;
+    // Oversiktsfilen har ingen paragrafer.
+    if (!dok.seksjoner) continue;
+    for (const { paragraf } of alleParagrafer(dok.seksjoner)) tekster.set(`${dok.id}/${paragraf.nr}`, normaliserTekst(paragraftekst(paragraf)));
+  }
+
+  // Bare frister med fast dato og uten tidspunkt med ord. Datoen må stå i en av paragrafene fristen viser til, så en
+  // endring i lov eller forskrift (hentes hver uke) gir en feilende test i stedet for en gammel dato i appen.
+  const medDato = frister.filter((f) => f.regel?.type === 'arlig' && !f.naar && f.paragrafer.length > 0);
+  it('det finnes frister å sjekke', () => expect(medDato.length).toBeGreaterThan(0));
+  for (const f of medDato) {
+    it(f.id, () => {
+      const r = f.regel as { dag: number; maned: number };
+      const dato = `${r.dag}. ${MANEDER[r.maned - 1]}`;
+      expect(f.paragrafer.some((p) => (tekster.get(p) ?? '').includes(dato)), `${dato} i ${f.paragrafer.join(', ')}`).toBe(true);
+    });
+  }
 });

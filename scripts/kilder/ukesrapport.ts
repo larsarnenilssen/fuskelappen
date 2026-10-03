@@ -36,7 +36,9 @@ export interface Ukesgrunnlag {
   /** Endrede deler i overordnet del fra udir.no (.generert/overordnet-endringer.json). */
   overordnet?: { endringer: string[] } | null;
   /** Endrede paragrafer i lov- og forskriftsteksten fra Lovdata (.generert/lovdata-endringer.json, avgjørelse 039). */
-  lovdata?: { dokumenter: { id: string; endringer: string[] }[] } | null;
+  lovdata?: { dokumenter: { id: string; kilde?: string; endringer: string[] }[] } | null;
+  /** Nasjonale regelverk der siste periode snart går ut (regelverkSomGarUt). */
+  utlop?: Utlop[];
   /** Navn i rundskrivet uten nynorsk eller utskrevet navn i appen (.generert/tilbud-navn.json). */
   navn?: { linjer: string[]; ordninger: string[] } | null;
 }
@@ -130,6 +132,48 @@ function kildeseksjon(g: Ukesgrunnlag, id: string, navn: string, url: string, en
   }
   linjer.push(`- [ ] Jeg har sett på endringene i ${navn}, og det nye fingeravtrykket kan godkjennes. <!-- godkjenn-kilde:${id}:${fingeravtrykk ?? '-'} -->`, '');
   return linjer;
+}
+
+export interface Utlop {
+  regelverk: string;
+  regelsett: string;
+  gyldigTil: string;
+}
+
+/**
+ * Nasjonale regelverk der den siste perioden går ut innen `dager` dager etter idag, og ingen ny periode er lagt inn.
+ * Da må en ny regelfil lages før datoen, ellers slutter kalkulatorene å regne (rules/README.md).
+ */
+export function regelverkSomGarUt(regelsett: readonly { id: string; regelverk: string; gyldig_til: string; gyldighet: { niva: string } }[], idag: string, dager = 180): Utlop[] {
+  const grense = new Date(Date.parse(`${idag}T00:00:00Z`) + dager * 86_400_000).toISOString().slice(0, 10);
+  const siste = new Map<string, { id: string; gyldig_til: string }>();
+  for (const r of regelsett) {
+    if (r.gyldighet.niva !== 'nasjonal') continue;
+    const f = siste.get(r.regelverk);
+    if (!f || r.gyldig_til > f.gyldig_til) siste.set(r.regelverk, r);
+  }
+  return [...siste.entries()].filter(([, r]) => r.gyldig_til < grense).map(([regelverk, r]) => ({ regelverk, regelsett: r.id, gyldigTil: r.gyldig_til }));
+}
+
+/**
+ * Innhold og regelverdier som viser til paragrafer som er endret hos Lovdata: punktet i kilden («§ 4-19 første
+ * ledd») eller lenken til Regelverk («opplaeringsforskrifta/4-19»). Heller for mye enn for lite, som punktTreff.
+ */
+export function lovBerort(g: Pick<Ukesgrunnlag, 'indeks' | 'lovdata'>): string[] {
+  const ut = new Set<string>();
+  const alleInnhold = g.indeks.flatMap((k) => k.innhold);
+  for (const d of g.lovdata?.dokumenter ?? []) {
+    const kontroll = d.kilde ? g.indeks.find((k) => k.kilde === d.kilde) : undefined;
+    for (const linje of d.endringer) {
+      const nr = /§\s?([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)/i.exec(linje)?.[1];
+      if (!nr) continue;
+      const endret = `§ ${nr}`;
+      for (const v of kontroll?.verdier ?? []) if (v.punkt && punktTreff(endret, v.punkt)) ut.add(`regelverdien \`${v.nokkel}\` (${d.id} ${endret})`);
+      for (const i of kontroll?.innhold ?? []) if (i.punkter.some((p) => punktTreff(endret, p))) ut.add(`«${i.tittel}» (${i.elementtype}, ${d.id} ${endret})`);
+      for (const i of alleInnhold) if ((i.paragrafer ?? []).includes(`${d.id}/${nr}`)) ut.add(`«${i.tittel}» (${i.elementtype}, ${d.id} ${endret})`);
+    }
+  }
+  return [...ut].sort();
 }
 
 export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
@@ -260,10 +304,26 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
     ]);
   }
 
+  // Regelverk som snart går ut: en ny periode må legges inn før datoen (rules/README.md).
+  if ((g.utlop ?? []).length > 0) {
+    punkter += 1;
+    deler.push([
+      '## Regelverk som snart går ut',
+      '',
+      ...(g.utlop ?? []).map((u) => `- ${u.regelverk}: siste periode (${u.regelsett}) gjelder til ${dato(u.gyldigTil)}. Ny periode må legges inn i rules/${u.regelverk}/, med nye fasittester.`),
+      '',
+      '- [ ] Ny periode er lagt inn, eller jeg har sjekket at den ikke trengs ennå.',
+      '',
+    ]);
+  }
+
   // Lov og forskrift (avgjørelse 039): teksten vises uendret i appen og oppdateres hver uke. Endringer til orientering.
   const lov = (g.lovdata?.dokumenter ?? []).flatMap((d) => d.endringer.map((l) => `${d.id}: ${l}`));
   if (lov.length > 0) {
-    orientering += 1;
+    // Teksten vises uendret i appen, men egne tekster og tall som bygger på paragrafene, må sjekkes (eier 03.10.2026).
+    const berort = lovBerort(g);
+    if (berort.length > 0) punkter += 1;
+    else orientering += 1;
     deler.push([
       '## Lov og forskrift',
       '',
@@ -271,6 +331,17 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       ...lov.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`),
       ...(lov.length > MAKS_DETALJER ? [`  - … og ${lov.length - MAKS_DETALJER} til.`] : []),
       '',
+      ...(berort.length > 0
+        ? [
+            'Kan berøre innhold og tall i appen som viser til de endrede paragrafene:',
+            '',
+            ...berort.slice(0, MAKS_DETALJER).map((b) => `- ${b}`),
+            ...(berort.length > MAKS_DETALJER ? [`- … og ${berort.length - MAKS_DETALJER} til.`] : []),
+            '',
+            '- [ ] Jeg har sett på innholdet og tallene som viser til de endrede paragrafene.',
+            '',
+          ]
+        : []),
     ]);
   }
 

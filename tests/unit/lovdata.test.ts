@@ -175,4 +175,36 @@ describe('hentingen', () => {
     } as unknown as Parameters<typeof lagUkesrapport>[0]);
     expect(JSON.stringify(rapport)).toContain('opplaeringslova: Endret: § 11-1 Tilpassa opplæring');
   });
+
+  it('varsler når siste periode for et regelverk går ut innen et halvt år', async () => {
+    const { regelverkSomGarUt } = await import('../../scripts/kilder/ukesrapport.ts');
+    const r = (id: string, regelverk: string, gyldig_til: string, niva = 'nasjonal') => ({ id, regelverk, gyldig_til, gyldighet: { niva } });
+    const sett = [r('sfs-a', 'sfs', '2026-12-31'), r('sfs-b', 'sfs', '2027-12-31'), r('hta-a', 'hta', '2026-12-31'), r('lokal', 'hta', '2030-01-01', 'fylke')];
+    expect(regelverkSomGarUt(sett, '2026-10-05')).toEqual([{ regelverk: 'hta', regelsett: 'hta-a', gyldigTil: '2026-12-31' }]);
+    expect(regelverkSomGarUt(sett, '2027-08-01').map((u) => u.regelverk).sort()).toEqual(['hta', 'sfs']);
+  });
+
+  it('kontrollsaken sier hvilket innhold og hvilke tall som viser til en endret paragraf, med et punkt å krysse av', async () => {
+    const { lagUkesrapport, lovBerort } = await import('../../scripts/kilder/ukesrapport.ts');
+    const { lagKontrollindeks } = await import('../../src/core/kontroll/indeks.ts');
+    const { lesInnhold, lesRegelsett } = await import('../../scripts/innhold/alt.ts');
+    const register = kilderegisterSkjema.parse(lesFil(rot, join(rot, 'content/kilder.yaml')));
+    const indeks = lagKontrollindeks(register.kilder, lesRegelsett(rot), lesInnhold(rot), {}, null, '2026-10-05');
+    const lovdata = { dokumenter: [{ id: 'opplaeringsforskrifta', kilde: 'opplaeringsforskrifta', endringer: ['Endret: § 4-19 Poengutrekning ved fordeling av plassar til vidaregåande trinn 1'] }] };
+    const berort = lovBerort({ indeks, lovdata });
+    // Regelverdien med § 4-19 som punkt, og innhold som viser til paragrafen (regelen «Til Vg1»).
+    expect(berort.some((b) => b.includes('snitt_desimaler'))).toBe(true);
+    expect(berort.some((b) => b.includes('«Til Vg1»'))).toBe(true);
+    const rapport = lagUkesrapport({
+      register,
+      kildestatus: { kjort: '2026-10-05T04:17:00Z', kilder: {} },
+      verdistatus: null,
+      endringer: {},
+      indeks,
+      repo: 'larsarnenilssen/fuskelappen',
+      lovdata,
+    } as unknown as Parameters<typeof lagUkesrapport>[0]);
+    expect(rapport.tekst).toContain('- [ ] Jeg har sett på innholdet og tallene');
+    expect(rapport.punkter).toBeGreaterThan(0);
+  });
 });

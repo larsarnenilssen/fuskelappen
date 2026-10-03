@@ -15,6 +15,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Søket viser fylkesinnhold bare for valgt fylke:** Begreper som bare gjelder ett fylke (f.eks. inntaksområde i Vestland), vises i søket bare når det fylket er valgt.
 - **Kortere kilder i utregningen** i alle kalkulatorene: f.eks. «Opplæringsforskrifta § 4-19 første ledd bokstav a» og «SFS 2213 Vedlegg 1» i stedet for de fulle navnene, med lenke rett til paragrafen i appen når den finnes der. Kopien av utregningen har fortsatt de fulle navnene.
 
 ## [0.27.0] – 2026-10-03

@@ -403,7 +403,7 @@ kilder:
     niva: nasjonal
     lisens: NLOD 2.0
     sjekkmetode: side
-    aktiv: false
+    aktiv: true
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null

@@ -9,6 +9,7 @@ import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../..
 import { lesVerdistatus, medTabellstatus, sjekkbareVerdier, sjekkVerdier, verdinokkel, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tabellrad } from '../../src/core/regler/skjema.ts';
 import { dokumenttekst, type Lovdokument } from '../../src/modules/lov/typer.ts';
+import { velgPeriode } from '../../src/core/regler/motor.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { delIBiter, finnEndringer, lesKildetekst, type Kildetekstfil, type Tekstendring } from './avsnitt.ts';
@@ -251,7 +252,10 @@ let verdistatus: Verdistatusfil = sjekkVerdier(sjekkbareVerdier(regelsett), teks
 // i hovedtariffavtalen.
 function tabellsjekk(regelsettId: string, nokkel: string, kildeId: string, sjekk: (rader: Tabellrad[]) => Tabellresultat): void {
   const verdi = regelsett.find((r) => r.id === regelsettId)?.verdier[nokkel];
-  if (!verdi || verdi.kilde.id !== kildeId || !Array.isArray(verdi.verdi)) return;
+  if (!verdi || verdi.kilde.id !== kildeId || !Array.isArray(verdi.verdi)) {
+    rapport.push(`- Tabellsjekken fant ikke ${nokkel} med kilden ${kildeId} i ${regelsettId}.`, '');
+    return;
+  }
   let resultat: Tabellresultat | { feil: string };
   try {
     resultat = sjekk(verdi.verdi as Tabellrad[]);
@@ -266,14 +270,29 @@ function kildetekst(id: string): string {
   if ('feil' in t) throw new Error(`Kilden kunne ikke leses: ${t.feil}`);
   return t.tekst;
 }
-tabellsjekk('sfs2213-2026-2027', 'arsrammer', 'ks-sfs2213-avtaletekst', (rader) => {
-  kildetekst('ks-sfs2213-avtaletekst');
-  return sammenlignVedlegg1(rader, lesVedlegg1(html['ks-sfs2213-avtaletekst'] ?? ''));
-});
-tabellsjekk('hta-2026-2028', 'garantilonn', 'ks-hovedtariffavtalen', (rader) => {
-  const trinn = regelsett.find((r) => r.id === 'hta-2026-2028')?.verdier.garantilonn_ansiennitet?.verdi as number[];
-  return sjekkGarantilonn(rader, trinn, kildetekst('ks-hovedtariffavtalen'));
-});
+// Regelsettet som gjelder i dag for et regelverk, så tabellsjekken følger med når en ny periode legges inn.
+function gjeldende(regelverk: string): string | null {
+  try {
+    return velgPeriode(regelsett, regelverk, { dato: naa.slice(0, 10) }).id;
+  } catch (e) {
+    rapport.push(`- Tabellsjekken for ${regelverk} ble ikke kjørt: ${e instanceof Error ? e.message : String(e)}`, '');
+    return null;
+  }
+}
+const sfs = gjeldende('sfs2213');
+if (sfs) {
+  tabellsjekk(sfs, 'arsrammer', 'ks-sfs2213-avtaletekst', (rader) => {
+    kildetekst('ks-sfs2213-avtaletekst');
+    return sammenlignVedlegg1(rader, lesVedlegg1(html['ks-sfs2213-avtaletekst'] ?? ''));
+  });
+}
+const hta = gjeldende('hta');
+if (hta) {
+  tabellsjekk(hta, 'garantilonn', 'ks-hovedtariffavtalen', (rader) => {
+    const trinn = regelsett.find((r) => r.id === hta)?.verdier.garantilonn_ansiennitet?.verdi as number[];
+    return sjekkGarantilonn(rader, trinn, kildetekst('ks-hovedtariffavtalen'));
+  });
+}
 writeFileSync(verdistatusfil, `${JSON.stringify(verdistatus, null, 2)}\n`);
 const verdiposter = Object.entries(verdistatus.verdier);
 const antall = (s: string) => verdiposter.filter(([, p]) => p.status === s).length;

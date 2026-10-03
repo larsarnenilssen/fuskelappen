@@ -141,14 +141,16 @@ verdier:
   skolear_uker:
     verdi: 38
     enhet: uker
-    kilde: { id: opplaeringslova }
+    kilde: { id: opplaeringslova, punkt: "§ 14-1 første ledd" }
     kontrollert: null
+    sitat: "Opplæringa skal strekkje seg over minst 38 skoleveker"
     merknad: Elevenes skoleår i uker (190 dager). Brukes når timer per uke gjøres om til årstimer.
   skolear_dager:
     verdi: 190
     enhet: dager
-    kilde: { id: opplaeringslova }
+    kilde: { id: opplaeringslova, punkt: "§ 14-1 første ledd" }
     kontrollert: null
+    grunnlag: avledet
     merknad: >-
-      Elevenes skoleår. Paragrafen legges inn når Lovdata-kilden er tatt i bruk. Skoleruta kan variere lokalt,
-      og periodekalkulatoren lar brukeren skrive inn antallet undervisningsdager.
+      Elevenes skoleår: 38 skoleuker (§ 14-1) × 5 dager. Skoleruta kan variere lokalt, og periodekalkulatoren lar
+      brukeren skrive inn antallet undervisningsdager.

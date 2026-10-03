@@ -43,6 +43,8 @@ export interface Kontrollinnhold {
   sporsmal: string[];
   /** Alle kildene elementet viser til, med punkt. Eier sjekker kontrollspørsmålene mot dem. */
   kilder: Kontrollkilde[];
+  /** Paragrafene i Regelverk elementet lenker til («opplaeringsforskrifta/4-19»), for steg og frister. */
+  paragrafer?: string[];
 }
 
 export interface Kildekontroll {
@@ -110,6 +112,7 @@ export function lagKontrollindeks(
           kontrollert: element.kontrollert?.dato ?? null,
           sporsmal: element.kontrollsporsmal ?? [],
           kilder: element.kilder.map((r) => ({ id: r.id, punkt: r.punkt ?? null, url: r.url ?? null })),
+          paragrafer: 'paragrafer' in element ? [...element.paragrafer] : [],
         };
         liste.push(post);
       }

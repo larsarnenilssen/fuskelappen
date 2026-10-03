@@ -17,7 +17,8 @@ const regelsett = lesRegelsett(rot);
 const kilder = new Map(register.kilder.map((k) => [k.id, k]));
 
 // Kilder der kildejobben leser teksten, så verdisjekken kan se etter sitatet.
-const LESBARE = new Set(['side', 'kf-infoserie', 'fil', 'lovdata']);
+// lovtekst: kildesjekken gir teksten fra data/lovdata til verdisjekken (avgjørelse 047).
+const LESBARE = new Set(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst']);
 
 function sett(id: string): Regelsett {
   const r = regelsett.find((x) => x.id === id);
