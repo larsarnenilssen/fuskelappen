@@ -9,6 +9,7 @@ import { lenke, naviger } from '../../../app/ruter.ts';
 import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -109,11 +110,13 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
   const iStedetMerknad =
     iStedet.length > 0 && timerIStedet.length === 1 ? (
       <span class="fagrad-merknad">
-        {t('opplaeringslop.tilbud.iStedet', {
-          fag: iStedetNavn.map((n) => n.slice(iStedetFelles.length).trim() || n).join(` ${t('opplaeringslop.tilbud.eller')} `),
-          timer: formaterTall(timerIStedet[0] ?? 0),
-          linjetimer: formaterTall(del.timer),
-        })}
+        <Begrepstekst
+          tekst={t('opplaeringslop.tilbud.iStedet', {
+            fag: iStedetNavn.map((n) => n.slice(iStedetFelles.length).trim() || n).join(` ${t('opplaeringslop.tilbud.eller')} `),
+            timer: formaterTall(timerIStedet[0] ?? 0),
+            linjetimer: formaterTall(del.timer),
+          })}
+        />
       </span>
     ) : null;
   return (
@@ -136,11 +139,13 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
             {erstatning.length > 0 && timerErstatning.length === 1 && (
               <span class="fagrad-merknad">
                 {' '}
-                {t('opplaeringslop.tilbud.erstatning', {
-                  fag: erstatning.map(kortnavn).join(` ${t('opplaeringslop.tilbud.og')} `),
-                  timer: formaterTall(timerErstatning[0] ?? 0),
-                  fellesfag: fellesfag.map(kortnavn).join(', '),
-                })}
+                <Begrepstekst
+                  tekst={t('opplaeringslop.tilbud.erstatning', {
+                    fag: erstatning.map(kortnavn).join(` ${t('opplaeringslop.tilbud.og')} `),
+                    timer: formaterTall(timerErstatning[0] ?? 0),
+                    fellesfag: fellesfag.map(kortnavn).join(', '),
+                  })}
+                />
               </span>
             )}
           </>
@@ -497,7 +502,7 @@ function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; v
         {t('opplaeringslop.tilbud.opphenting.tittel')}
       </h2>
       <p>
-        {t('opplaeringslop.tilbud.opphenting.tekst', { antall: formaterTall(tb.opphenting.til.length) })}{' '}
+        <Begrepstekst tekst={t('opplaeringslop.tilbud.opphenting.tekst', { antall: formaterTall(tb.opphenting.til.length) })} />{' '}
         {tb.opphenting.fag.map((f, i) => (
           <span key={f}>
             {i > 0 && ', '}
@@ -654,7 +659,9 @@ function Kontorene({ kode }: { kode: string }) {
           </a>
         </li>
       </ul>
-      <p class="liten dempet">{t('opplaeringslop.tilbud.kontorHjelp')}</p>
+      <p class="liten dempet">
+        <Begrepstekst tekst={t('opplaeringslop.tilbud.kontorHjelp')} />
+      </p>
     </Rubrikk>
   );
 }
@@ -755,7 +762,9 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           <TilArbeidsplan kode={kode} tb={tb} indeks={indeks} />
         </>
       ) : (
-        <p class="merknad">{po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')}</p>
+        <p class="merknad">
+          <Begrepstekst tekst={po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')} />
+        </p>
       )}
 
       {tb.tilpasninger.length > 0 && (

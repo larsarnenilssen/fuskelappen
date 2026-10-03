@@ -5,6 +5,7 @@ import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylker, fylkesnavn } from '../../../app/Stedmerknad.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
@@ -203,7 +204,9 @@ export default function Skoler({ sporring }: SideProps) {
     <div class="side skoleregister">
       <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
       <h1 tabIndex={-1}>{t('opplaeringslop.skoler.tittel')}</h1>
-      <p class="dempet">{t('opplaeringslop.skoler.innledning')}</p>
+      <p class="dempet">
+        <Begrepstekst tekst={t('opplaeringslop.skoler.innledning')} />
+      </p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : !register ? (

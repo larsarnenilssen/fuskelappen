@@ -6,6 +6,7 @@ import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylker, fylkesnavn } from '../../../app/Stedmerknad.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
@@ -48,7 +49,9 @@ export default function Kontor({ sporring }: SideProps) {
     <div class="side kontorregister">
       <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
       <h1 tabIndex={-1}>{t('opplaeringslop.kontor.tittel')}</h1>
-      <p class="dempet">{t('opplaeringslop.kontor.innledning')}</p>
+      <p class="dempet">
+        <Begrepstekst tekst={t('opplaeringslop.kontor.innledning')} />
+      </p>
       {data === 'laster' ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : data === 'feil' ? (
@@ -73,7 +76,9 @@ export default function Kontor({ sporring }: SideProps) {
               ))}
             </select>
           </div>
-          <p class="liten dempet">{t('opplaeringslop.kontor.hjelp')}</p>
+          <p class="liten dempet">
+            <Begrepstekst tekst={t('opplaeringslop.kontor.hjelp')} />
+          </p>
           <p role="status" class="dempet liten kontor-status">
             <span>
               {treff.length === 0
