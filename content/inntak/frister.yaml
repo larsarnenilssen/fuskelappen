@@ -71,14 +71,32 @@
     nb: Søknadsfrist for noen grupper
     nn: Søknadsfrist for nokre grupper
   tekst:
-    nb: Fortrinnsrett, individuell tilrettelegging, særskilt språkopplæring, nylig kommet til Norge, tegnspråk og individuell behandling av tungtveiende grunner. Se [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for hvem som har denne fristen.
-    nn: Fortrinnsrett, individuell tilrettelegging, særskild språkopplæring, nyleg komen til Noreg, teiknspråk og individuell behandling av tungtvegande grunnar. Sjå [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for kven som har denne fristen.
+    nb: |
+      Søknadsfristen er 1. februar for søkere som
+
+      - har vedtak om individuell tilrettelegging og søker med fortrinnsrett, eller etter § 4-13 andre ledd bokstav a eller b eller § 4-20 første ledd bokstav a
+      - har vedtak om særskilt språkopplæring
+      - nylig har kommet til Norge
+      - har rett til opplæring i og på norsk tegnspråk
+      - søker om individuell behandling etter § 4-20 tredje ledd eller § 4-26 første ledd bokstav c
+
+      Se [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for mer om hver gruppe.
+    nn: |
+      Søknadsfristen er 1. februar for søkjarar som
+
+      - har vedtak om individuell tilrettelegging og søkjer med fortrinnsrett, eller etter § 4-13 andre ledd bokstav a eller b eller § 4-20 første ledd bokstav a
+      - har vedtak om særskild språkopplæring
+      - nyleg har komme til Noreg
+      - har rett til opplæring i og på norsk teiknspråk
+      - søkjer om individuell behandling etter § 4-20 tredje ledd eller § 4-26 første ledd bokstav c
+
+      Sjå [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for meir om kvar gruppe.
   paragrafer: [opplaeringsforskrifta/4-9]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er den korte oppramsingen av hvem som har frist 1. februar forståelig nok, når detaljene står i veiviseren?"
+    - "Er listen over hvem som har frist 1. februar en riktig og forståelig gjengivelse av § 4-9 andre ledd bokstav a–e?"
 
 - id: fr-soknad-mars
   type: frist
@@ -90,8 +108,18 @@
     nb: Søknadsfrist
     nn: Søknadsfrist
   tekst:
-    nb: Søknadsfristen for alle andre søkere. Det er også siste frist for å gjøre så mange omvalg man vil, det året søkeren fyller 19. Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter.
-    nn: Søknadsfristen for alle andre søkjarar. Det er også siste frist for å gjere så mange omval ein vil, det året søkjaren fyller 19. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter.
+    nb: |
+      Søknadsfristen for alle andre søkere.
+
+      Det er også siste frist for å gjøre så mange omvalg man vil, det året søkeren fyller 19.
+
+      Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter.
+    nn: |
+      Søknadsfristen for alle andre søkjarar.
+
+      Det er også siste frist for å gjere så mange omval ein vil, det året søkjaren fyller 19.
+
+      Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter.
   paragrafer: [opplaeringsforskrifta/4-9, opplaeringslova/5-5]
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-9 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
@@ -174,8 +202,20 @@
     nb: Klage på vedtaket om inntak
     nn: Klage på vedtaket om inntak
   tekst:
-    nb: Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen utdanningsprogram, programområde eller skole, avgjør fylkeskommunens klageorgan. Andre klager på inntak avgjør statsforvalteren.
-    nn: Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga utdanningsprogram, programområde eller skole, avgjer klageorganet i fylkeskommunen. Andre klager på inntak avgjer statsforvaltaren.
+    nb: |
+      Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
+
+      Hvem avgjør klagen:
+
+      - **fylkeskommunens klageorgan** når klagen gjelder utdanningsprogram, programområde eller skole
+      - **statsforvalteren** i andre klager på inntak
+    nn: |
+      Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen.
+
+      Kven som avgjer klaga:
+
+      - **klageorganet i fylkeskommunen** når klaga gjeld utdanningsprogram, programområde eller skule
+      - **statsforvaltaren** i andre klager på inntak
   paragrafer: [forvaltningsloven/29, forvaltningsloven/32, opplaeringslova/29-1]
   kilder:
     - { id: forvaltningsloven, punkt: "§ 29 Klagefrist", url: "https://lovdata.no/lov/1967-02-10/§29" }

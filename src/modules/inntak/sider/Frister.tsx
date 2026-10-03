@@ -193,9 +193,28 @@ function Fristkort({ frist: f }: { frist: Frist }) {
         <Ikon navn="ned" class="forklaring-pil" />
       </summary>
       <div class="frist-kort-innhold">
-        <div class="brodtekst" dangerouslySetInnerHTML={{ __html: f.tekst[malform] }} />
-        {f.paragrafer.length > 0 && <Paragraflenker paragrafer={f.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />}
-        <Kildeliste kilder={f.kilder} niva={3} />
+        <div class="brodtekst frist-kort-tekst" dangerouslySetInnerHTML={{ __html: f.tekst[malform] }} />
+        {/* Paragrafene og kildene står i lukkede rader, med samme utseende som i veiviserne (eier 03.10.2026). */}
+        <div class="frist-kort-mer">
+          {f.paragrafer.length > 0 && (
+            <details class="veiviser-kilder veiviser-regelverk">
+              <summary class="forklaring-knapp">
+                <Ikon navn="paragraf" />
+                <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(f.paragrafer.length) })}</span>
+                <Ikon navn="ned" class="forklaring-pil" />
+              </summary>
+              <Paragraflenker paragrafer={f.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
+            </details>
+          )}
+          <details class="veiviser-kilder">
+            <summary class="forklaring-knapp">
+              <Ikon navn="bok" />
+              <span>{t('komponenter.veiviser.kilder', { antall: String(f.kilder.length) })}</span>
+              <Ikon navn="ned" class="forklaring-pil" />
+            </summary>
+            <Kildeliste kilder={f.kilder} niva={3} utenOverskrift />
+          </details>
+        </div>
       </div>
     </details>
   );

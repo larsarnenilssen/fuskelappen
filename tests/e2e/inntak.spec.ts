@@ -92,8 +92,11 @@ test.describe('frister ved inntak', () => {
     // Fristen er lukket til den åpnes.
     const mars = page.locator('.frist-kort', { hasText: 'Søknadsfrist' }).filter({ hasText: '1. mars' });
     await expect(mars.locator('.frist-kort-innhold')).toBeHidden();
-    await mars.locator('summary').click();
+    await mars.locator('.frist-kort-topp').click();
     await expect(mars.locator('.frist-kort-innhold')).toContainText('første virkedag');
+    // Regelverket og kildene er lukket til de åpnes, som i veiviserne.
+    await expect(mars.getByRole('link', { name: /§ 4-9/ })).toBeHidden();
+    await mars.getByText(/I regelverket \(2\)/).click();
     await expect(mars.getByRole('link', { name: /§ 4-9/ })).toBeVisible();
     // Filteret for voksne viser bare frister for voksne og frister som gjelder alle.
     await page.getByRole('link', { name: 'Voksne', exact: true }).click();

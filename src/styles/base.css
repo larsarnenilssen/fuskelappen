@@ -5062,14 +5062,14 @@ button.frist-stripe-celle:hover {
 
 /* Månedene med fristene. Overskriften havner under topplinjen når stripen ruller til den. */
 .frist-maned {
-  margin: 0 0 var(--rom-5);
+  margin: 0 0 var(--rom-6);
 }
 
 .frist-maned-tittel {
   display: flex;
   align-items: center;
   gap: var(--rom-2);
-  margin: 0 0 var(--rom-2);
+  margin: 0 0 var(--rom-3);
   font-size: var(--str-l);
   scroll-margin-top: calc(var(--topplinje-hoyde) + var(--rom-4));
 }
@@ -5084,7 +5084,7 @@ button.frist-stripe-celle:hover {
 .frist-liste {
   display: flex;
   flex-direction: column;
-  gap: var(--rom-2);
+  gap: var(--rom-3);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -5105,8 +5105,8 @@ button.frist-stripe-celle:hover {
 .frist-kort-topp {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: var(--rom-1) var(--rom-2);
-  padding: var(--rom-2) var(--rom-3);
+  gap: var(--rom-2) var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
   cursor: pointer;
   list-style: none;
 }
@@ -5160,8 +5160,26 @@ button.frist-stripe-celle:hover {
 }
 
 .frist-kort-innhold {
-  padding: 0 var(--rom-3) var(--rom-3);
   border-top: var(--strek) solid var(--farge-linje);
+}
+
+.frist-kort-tekst {
+  padding: var(--rom-3) var(--rom-4) var(--rom-2);
+}
+
+.frist-kort-tekst ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+}
+
+/* Regelverket og kildene: lukkede rader med strek mellom, som nederst i stegene i veiviserne. */
+.frist-kort-mer > .veiviser-kilder {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.frist-kort-mer .forklaring-knapp {
+  padding-inline: var(--rom-4);
 }
 
 /* Kortet på oversiktssiden: lenke til tidslinjen med den neste fristen. */

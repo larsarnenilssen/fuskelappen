@@ -11,6 +11,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Med: melding om fortrinnsrett 1. oktober, kunngjøring, søknadsfristene 1. februar og 1. mars, søknader til skoler med tegnspråk, mer opplæring i fag som ikke er bestått, svar og andre inntak (datoene står på Vilbli), klage, og at voksne søker når som helst.
   - **Vestland:** Når Vestland er valgt, kommer fristene fra den lokale forskriften med: når voksne bør søke, flytting, møte første skoledag, ventelister, når inntaket er avsluttet og omvalg.
   - Oversikten over Inntak viser den neste fristen.
+  - Hvem som har søknadsfrist 1. februar, og hvem som avgjør en klage, står som lister. «I regelverket» og «Kilder» er lukkede rader under hver frist, som i veiviserne.
 
 ## [0.26.0] – 2026-10-03
 
