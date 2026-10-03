@@ -151,7 +151,7 @@ Karakterene er oppdiktet. «Grunnlaget» er de 14 karakterene 5, 4, 4, 3, 4, 5, 
 | F5 | Vg1 idrettsfag i Vestland, grunnlaget og 6 tilleggspoeng | 44,3 + 6 | **50,3** |
 | F6 | Vg2, ti karakterer fra Vg1 (4, 5, 3, 4, 5, 4, 4, 5, 5, 4) og én halvårsvurdering 3 | 46 / 11 = 4,1818 → 4,18 × 10 | **41,8** |
 | F7 | Vg3, karakter 3 i et fag på Vg2, men 5 som privatist | Beste utvalg: 5 brukes | etter svar på spørsmål 3 |
-| F8 | Vg2 etter omvalg, to Vg1 som begge gir grunnlag | Beste utvalg av karakterene | etter svar på spørsmål 3 |
+| F8 | Vg2 etter omvalg, to Vg1 som begge gir grunnlag. Fellesfagene tatt i begge løp: første løp 3, 4, 4, 5, andre løp 4, 3, 4, 5. Programfagene i løpet søkeren søker videre fra: 5, 4, 4 | Fag for fag (eier 03.10.2026): beste karakter i hvert fellesfag gir 4, 4, 4, 5. (17 + 13) / 7 = 4,2857 → 4,29 × 10 | **42,9** |
 
 ---
 
