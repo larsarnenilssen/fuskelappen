@@ -238,7 +238,8 @@ export const nn: Tekster = {
       kompetansegivende: 'Kompetansegivande',
       ikkeKompetansegivende: 'Ikkje kompetansegivande',
       vurdering: 'Vurdering: {uttrykk}',
-      fagkodene: 'Fagkodane ({antall})',
+      fagkodene: 'Fagkodane',
+      antallFag: '{antall} fag',
     },
     forklaring: {
       vis: 'Vis forklaring',

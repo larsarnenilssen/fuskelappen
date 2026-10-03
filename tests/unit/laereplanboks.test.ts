@@ -16,12 +16,11 @@ const indeks = {
 } as unknown as Fagindeks;
 
 describe('læreplanboksen', () => {
-  it('grupperer fagkodene til læreplanen etter trinn, i rekkefølge', () => {
+  it('grupperer fagkodene til læreplanen per trinn, i rekkefølge, og fag på flere trinn under hvert av dem', () => {
     expect(fagPerTrinn(indeks, 'AAA01-01')).toEqual([
-      [['Vg1'], ['A1', 'B1']],
-      [['Vg2'], ['A2']],
-      [['Vg2', 'Vg3'], ['B2']],
-      [['Vg3'], ['A3']],
+      ['Vg1', ['A1', 'B1']],
+      ['Vg2', ['A2', 'B2']],
+      ['Vg3', ['A3', 'B2']],
     ]);
     expect(fagPerTrinn(indeks, 'CCC01-01')).toEqual([]);
   });

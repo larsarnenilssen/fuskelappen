@@ -150,7 +150,11 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     await expect(planer.nth(1)).toContainText('NOR09-05');
     await expect(planer.nth(1).locator('.merke-kompetansegivende')).toHaveText('Kompetansegivende');
     await expect(planer.nth(1)).toContainText('Vurdering: Tallkarakter');
-    await planer.nth(1).getByRole('button', { name: /Fagkodene \(10\)/ }).click();
+    // Trinnene er lukket til brukeren åpner dem.
+    const vg1 = planer.nth(1).getByRole('button', { name: /^Vg1/ });
+    await expect(vg1).toHaveAttribute('aria-expanded', 'false');
+    await expect(planer.nth(1).getByRole('button', { name: /^Vg/ })).toHaveCount(3);
+    await vg1.click();
     await planer.nth(1).getByRole('link', { name: /Vg1 studieforberedende utdanningsprogram, skriftlig/ }).click();
     await expect(page).toHaveURL(/#\/fag\/NOR1412$/);
   });

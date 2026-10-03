@@ -238,7 +238,8 @@ export const nb = {
       kompetansegivende: 'Kompetansegivende',
       ikkeKompetansegivende: 'Ikke kompetansegivende',
       vurdering: 'Vurdering: {uttrykk}',
-      fagkodene: 'Fagkodene ({antall})',
+      fagkodene: 'Fagkodene',
+      antallFag: '{antall} fag',
     },
     forklaring: {
       vis: 'Vis forklaring',
