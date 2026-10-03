@@ -505,6 +505,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Med 0.28.0 er kildekontrollen og fylkesinnholdet gått gjennom i hele appen (avgjørelse 048), og dataene fra kildene er samlet i et felles datalag (avgjørelse 049).
 - 0.29.0: begrepene karakterpoeng, privatist og tilleggspoeng, lenker til begrepsbanken i brødtekst (avgjørelse 050), status på søkerønsker, Vg4 påbygging og yrkesfaglig opphenting fra VIGO og Grep (avgjørelse 051). Kontrollpunktet for fase 5 er utsatt etter ønske fra eier.
 - Spørsmålene til vestlandfylke.no (inntaksområdepoeng og klagenemnd) tas med til senere faser til sidene svarer.
+- Arbeidsordren for fase 6 står i `docs/arbeidsordrer/fase-6.md`.
 
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.
 
