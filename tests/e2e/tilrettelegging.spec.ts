@@ -170,9 +170,13 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     // Steget med læreplanene står over spørsmålet om jevnlig vurdering, og er lukket på mobil.
     await aapneSteg(page.locator('.veiviser-steg').first());
     const boks = page.locator('.laereplanboks');
-    await boks.getByRole('button', { name: /Læreplanene \(3\)/ }).click();
+    await boks.getByRole('button', { name: /Læreplanene \(4\)/ }).click();
     const planer = boks.locator('.laereplanboks-liste > li');
-    await expect(planer).toHaveCount(3);
+    await expect(planer).toHaveCount(4);
+    // Læreplanen for voksne står sist, i en egen gruppe og uten merke for kompetansegivende.
+    await expect(boks.locator('.laereplanboks-gruppe')).toHaveText(['For elever', 'For voksne']);
+    await expect(planer.nth(3)).toContainText('GNS02-01');
+    await expect(planer.nth(3).locator('.merke-kompetansegivende, .merke-ikke-kompetansegivende')).toHaveCount(0);
     await expect(planer.nth(0)).toContainText('NOR07-03');
     await expect(planer.nth(0)).toContainText('Ikke kompetansegivende');
     await expect(planer.nth(1)).toContainText('NOR09-05');

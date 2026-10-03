@@ -1,6 +1,8 @@
 // Læreplanene til et steg i en veiviser, i en boks som er lukket til brukeren åpner den (eier 03.10.2026). Hver
 // læreplan har tittel og kode, om den er kompetansegivende, vurderingsuttrykket fra Grep og en kort merknad. Fagkodene
-// står under hver læreplan i én lukket rad per trinn, med lenke til fagarket.
+// står under hver læreplan i én lukket rad per trinn, med lenke til fagarket. Læreplaner for voksne står i en egen
+// gruppe nederst (eier 03.10.2026).
+import { Fragment } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
@@ -13,6 +15,14 @@ import { Forklaring } from './Forklaring.tsx';
 import { Ikon } from './Ikon.tsx';
 
 type Laereplan = Stegelement['laereplaner'][number];
+type Malgruppe = Laereplan['malgruppe'];
+
+const MALGRUPPER: readonly Malgruppe[] = ['elever', 'voksne'];
+
+/** Læreplanene gruppert etter målgruppe, elever først. Grupper uten læreplaner er utelatt. */
+export function laereplanerPerMalgruppe(laereplaner: readonly Laereplan[]): [Malgruppe, Laereplan[]][] {
+  return MALGRUPPER.map((m): [Malgruppe, Laereplan[]] => [m, laereplaner.filter((lp) => lp.malgruppe === m)]).filter(([, l]) => l.length > 0);
+}
 
 const TRINN: readonly Trinn[] = ['Vg1', 'Vg2', 'Vg3', 'Bedrift'];
 
@@ -53,22 +63,38 @@ export function Laereplanboks({ laereplaner }: { laereplaner: readonly Laereplan
     };
   }, []);
   if (laereplaner.length === 0) return null;
+  const grupper = laereplanerPerMalgruppe(laereplaner);
+  // Overskrifter for målgruppene trengs bare når det er mer enn én.
+  const medGrupper = grupper.length > 1;
   return (
     <div class="laereplanboks">
       <Forklaring tittel={t('komponenter.veiviser.laereplaner', { antall: String(laereplaner.length) })} ikon="bok">
-        <ul class="laereplanboks-liste">
-          {laereplaner.map((lp) => (
-            <li key={lp.kode}>
-              <Laereplanrad laereplan={lp} data={data} />
-            </li>
-          ))}
-        </ul>
+        {grupper.map(([malgruppe, planer]) => (
+          <Fragment key={malgruppe}>
+            {medGrupper && <h3 class="laereplanboks-gruppe">{t(`komponenter.veiviser.malgruppe.${malgruppe}`)}</h3>}
+            <ul class="laereplanboks-liste">
+              {planer.map((lp) => (
+                <li key={lp.kode}>
+                  <Laereplanrad laereplan={lp} data={data} nivaa={medGrupper ? 4 : 3} />
+                </li>
+              ))}
+            </ul>
+          </Fragment>
+        ))}
       </Forklaring>
     </div>
   );
 }
 
-function Laereplanrad({ laereplan, data }: { laereplan: Laereplan; data: { indeks: Fagindeks; titler: Readonly<Record<string, string>> } | null }) {
+function Laereplanrad({
+  laereplan,
+  data,
+  nivaa,
+}: {
+  laereplan: Laereplan;
+  data: { indeks: Fagindeks; titler: Readonly<Record<string, string>> } | null;
+  nivaa: 3 | 4;
+}) {
   const { t, malform } = useTekst();
   const grupper = data ? fagPerTrinn(data.indeks, laereplan.kode) : [];
   const koder = [...new Set(grupper.flatMap(([, k]) => k))];
@@ -76,16 +102,19 @@ function Laereplanrad({ laereplan, data }: { laereplan: Laereplan; data: { indek
   const uttrykk = data
     ? [...new Set(koder.flatMap((k) => (data.indeks.fag[k]?.elev?.uttrykk ? [koTekst(t, data.indeks, 'uttrykk', data.indeks.fag[k]?.elev?.uttrykk ?? '')] : [])))]
     : [];
+  const Tittel = nivaa === 4 ? 'h4' : 'h3';
   return (
     <>
-      <h3 class="laereplanboks-tittel">
+      <Tittel class="laereplanboks-tittel">
         {data?.titler[laereplan.kode] ?? laereplan.kode} <span class="fagliste-kode">{laereplan.kode}</span>
-      </h3>
+      </Tittel>
       <p class="merker laereplanboks-merker">
-        <span class={`merke ${laereplan.kompetansegivende ? 'merke-kompetansegivende' : 'merke-ikke-kompetansegivende'}`}>
-          {laereplan.kompetansegivende && <Ikon navn="ok" class="ikon-liten" />}
-          {laereplan.kompetansegivende ? t('komponenter.veiviser.kompetansegivende') : t('komponenter.veiviser.ikkeKompetansegivende')}
-        </span>
+        {laereplan.kompetansegivende !== undefined && (
+          <span class={`merke ${laereplan.kompetansegivende ? 'merke-kompetansegivende' : 'merke-ikke-kompetansegivende'}`}>
+            {laereplan.kompetansegivende && <Ikon navn="ok" class="ikon-liten" />}
+            {laereplan.kompetansegivende ? t('komponenter.veiviser.kompetansegivende') : t('komponenter.veiviser.ikkeKompetansegivende')}
+          </span>
+        )}
         {uttrykk.length > 0 && <span class="merke">{t('komponenter.veiviser.vurdering', { uttrykk: uttrykk.join(' / ') })}</span>}
       </p>
       <p class="laereplanboks-merknad">{laereplan.merknad[malform]}</p>

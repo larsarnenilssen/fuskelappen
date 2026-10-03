@@ -253,6 +253,7 @@ export const nn: Tekster = {
       tilToppen: 'Til toppen',
       faseliste: 'Fasane: {faser}',
       antallFaser: '{antall} fasar',
+      malgruppe: { elever: 'For elevar', voksne: 'For vaksne' },
     },
     forklaring: {
       vis: 'Vis forklaring',

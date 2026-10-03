@@ -70,7 +70,8 @@ describe('veivisere', () => {
             const fag = Object.values(fagindeks.fag).filter((f) => f.lp === lp.kode);
             expect(fag.length, `${s.id}: ${lp.kode} har ingen fag i fagindeksen`).toBeGreaterThan(0);
             const karakter = fag.some((f) => f.elev?.uttrykk === 'vurderingsuttrykk_tall');
-            expect(karakter, `${s.id}: ${lp.kode}`).toBe(lp.kompetansegivende);
+            // Uten merke (GNS02-01, eier 03.10.2026) skal læreplanen heller ikke gi tallkarakter.
+            expect(karakter, `${s.id}: ${lp.kode}`).toBe(lp.kompetansegivende ?? false);
           }
         }
       });

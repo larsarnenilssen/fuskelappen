@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.26.0] – 2026-10-03
+
 ### Lagt til
 
 - **Inntak** under «Elever og opplæring»: veiviseren **Rett, inntak og søknad**, steg for steg etter opplæringslova kapittel 5 og 18, opplæringsforskrifta kapittel 4 og 13 og Udirs merknader til forskriften.
@@ -13,6 +15,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - **Vestland:** Når Vestland er valgt, står reglene fra den lokale forskriften i egne bokser i stegene: inntaksområde og tilleggspoeng, retten til å fortsette på samme skole, deltidselever, flytting, ventelister og voksne. Uten valgt fylke sier en merknad at bare de nasjonale reglene vises.
   - Lenker begge veier mellom grunnopplæring i utlandet og steget om kort botid i veiviseren for særskilt språkopplæring.
 - **Nye begreper:** ungdomsrett, voksenrett, sluttkompetanse, fortrinnsrett, individuell behandling, omvalg, realkompetansevurdering, landslinje og gjesteelev, og for Vestland inntaksområde og deltidselev.
+- **Særskilt språkopplæring:** Læreplanboksen har fått læreplanen i norsk og samfunnskunnskap for språklige minoriteter (GNS02-01), for voksne i modulstrukturert opplæring. Den står i en egen gruppe «For voksne» nederst i boksen, uten merke for kompetansegivende, med vurderingen godkjent / ikke godkjent og fagkoden.
 
 ### Endret
 

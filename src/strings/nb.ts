@@ -253,6 +253,7 @@ export const nb = {
       tilToppen: 'Til toppen',
       faseliste: 'Fasene: {faser}',
       antallFaser: '{antall} faser',
+      malgruppe: { elever: 'For elever', voksne: 'For voksne' },
     },
     forklaring: {
       vis: 'Vis forklaring',
