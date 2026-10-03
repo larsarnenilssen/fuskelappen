@@ -1,0 +1,19 @@
+id: inntak-010
+beskrivelse: "F9: Avrunding ved nøyaktig halv, Vg2 med karakterene 4, 4, 4, 4, 4, 4, 4, 5."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg2
+  rader:
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 5 }
+forventet:
+  snitt: 4.13
+  poeng: 41.3
+begrunnelse: 33 ÷ 8 = 4,125 → 4,13 (vanlig avrunding) × 10 = 41,3.

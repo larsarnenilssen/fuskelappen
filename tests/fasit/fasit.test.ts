@@ -4,7 +4,7 @@ import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import { describe, expect, it } from 'vitest';
-import { finnVerdi, slaaSammen } from '../../src/core/regler/motor.ts';
+import { finnSupplerende, finnVerdi, slaaSammen } from '../../src/core/regler/motor.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import {
   type Arsrammevalg,
@@ -24,6 +24,7 @@ import {
   type Reduksjon,
   rund,
 } from '../../src/modules/arbeidstid/beregning/index.ts';
+import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Vurdering } from '../../src/modules/inntak/beregning/poeng.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
 const mappe = __dirname;
@@ -82,6 +83,15 @@ interface Fasitinput {
   redusert_undervisning?: number;
   tillegg?: number | null;
   overtid?: { beskjeftigelse: number; arsrammer: Radsok[]; elever?: number | null } | null;
+  // Poengberegning ved inntak (tests/fasit/inntak).
+  trinn?: 'Vg1' | 'Vg2' | 'Vg3';
+  standpunkt?: Vurdering[];
+  eksamen?: Vurdering[];
+  valgfag?: Vurdering[];
+  rader?: Karakterrad[];
+  fylke?: string;
+  /** Nøkkelen til tilleggspoengene i fylkets regelsett, f.eks. tilleggspoeng_idrett_2. */
+  tilleggspoeng?: string;
 }
 
 function krev<T>(verdi: T | undefined, navn: string): T {
@@ -224,6 +234,19 @@ function regn(f: Fasit): Record<string, number> {
         over60: i.over60 ?? false,
       });
       return { arslonn: r.arslonn.verdi, variabel: r.variabel?.verdi ?? 0, overtid: r.overtid?.verdi ?? 0, samlet: r.samlet.verdi, feriepenger: r.feriepenger.verdi };
+    }
+    case 'poeng': {
+      const dato = i.dato ?? f.godkjent.dato;
+      const trinn = krev(i.trinn, 'trinn');
+      const tillegg = i.tilleggspoeng
+        ? (finnSupplerende(regelsett, `inntak.${i.tilleggspoeng}`, { dato, fylke: krev(i.fylke, 'fylke') }).fylke[0] ?? null)
+        : null;
+      if (i.tilleggspoeng && !tillegg) throw new Error(`Fant ikke ${i.tilleggspoeng} for fylke ${i.fylke}`);
+      const r =
+        trinn === 'Vg1'
+          ? beregnVg1(hent, { standpunkt: i.standpunkt ?? [], eksamen: i.eksamen ?? [], valgfag: i.valgfag ?? [], tillegg })
+          : beregnVg2Vg3(hent, { trinn, rader: krev(i.rader, 'rader') });
+      return { snitt: r.snittAvrundet, poeng: r.poeng, samlet: r.samlet };
     }
     default:
       throw new Error(`Ukjent kalkulator i ${f.id}: ${f.kalkulator}`);

@@ -37,9 +37,26 @@ export function verdinokkel(regelsettId: string, nokkel: string): string {
   return `${regelsettId}/${nokkel}`;
 }
 
-/** Første tall i sitatet som er lik verdien, eller null hvis sitatet ikke inneholder verdien. */
+/**
+ * Tall skrevet med ord, som lov- og forskriftstekst ofte gjør («med to desimalar, multiplisert med ti», «med
+ * talverdien null»). «En», «ein» og «ett» er ikke med, fordi de oftere er ubestemt artikkel enn tall.
+ */
+const TALLORD: Readonly<Record<string, number>> = { null: 0, to: 2, tre: 3, fire: 4, fem: 5, seks: 6, sju: 7, åtte: 8, ni: 9, ti: 10 };
+
+/**
+ * Første tall i sitatet som er lik verdien, eller null hvis sitatet ikke inneholder verdien. Tall med sifre
+ * prøves først, deretter tall skrevet med ord.
+ */
 export function verdiISitat(sitat: string, verdi: number): { tekst: string; start: number; slutt: number } | null {
-  return finnTall(normaliserTekst(sitat)).find((t) => likeTall(t.verdi, verdi)) ?? null;
+  const tekst = normaliserTekst(sitat);
+  const medSifre = finnTall(tekst).find((t) => likeTall(t.verdi, verdi));
+  if (medSifre) return medSifre;
+  for (const [ord, tall] of Object.entries(TALLORD)) {
+    if (!likeTall(tall, verdi)) continue;
+    const m = new RegExp(`(?<!\\p{L})${ord}(?!\\p{L})`, 'iu').exec(tekst);
+    if (m) return { tekst: m[0], start: m.index, slutt: m.index + m[0].length };
+  }
+  return null;
 }
 
 function escape(tekst: string): string {

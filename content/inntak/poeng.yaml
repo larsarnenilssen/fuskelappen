@@ -1,0 +1,189 @@
+# Reglene for poengberegningen ved inntak (fase 5, pakke 3, avgjørelse 047). Vises under kalkulatoren som «Slik
+# regnes poengene», lukket til brukeren åpner dem. Egne ord. Tallene står i rules/inntak/.
+- id: po-vg1
+  type: regel
+  tittel:
+    nb: Til Vg1
+    nn: Til Vg1
+  tekst:
+    nb: |
+      Alle standpunkt- og eksamenskarakterer fra grunnskolen teller like mye. Poengsummen er gjennomsnittet, avrundet til to desimaler, ganget med ti.
+
+      - **Valgfag:** Gjennomsnittet av valgfagene, med to desimaler, teller som én karakter. Har søkeren hatt samme valgfag i flere år, teller bare karakteren fra det høyeste trinnet.
+      - **Fag fra videregående i stedet for valgfag** på alle trinn: Da teller ikke valgfag.
+      - **IV og IM** teller med verdien null.
+    nn: |
+      Alle standpunkt- og eksamenskarakterar frå grunnskolen tel like mykje. Poengsummen er gjennomsnittet, avrunda til to desimalar, gonga med ti.
+
+      - **Valfag:** Gjennomsnittet av valfaga, med to desimalar, tel som éin karakter. Har søkjaren hatt same valfag i fleire år, tel berre karakteren frå det høgaste trinnet.
+      - **Fag frå vidaregåande i staden for valfag** på alle trinn: Då tel ikkje valfag.
+      - **IV og IM** tel med verdien null.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav a, b og e", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
+    - { id: udir-merknader-ofo, punkt: "Merknad til § 4-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at bare karakteren fra det høyeste trinnet teller når søkeren har hatt samme valgfag i flere år?"
+    - "Er det riktig at valgfag ikke teller når søkeren har tatt fag fra videregående i stedet for valgfag på alle trinn?"
+
+- id: po-vg2-vg3
+  type: regel
+  tittel:
+    nb: Til Vg2 og Vg3
+    nn: Til Vg2 og Vg3
+  tekst:
+    nb: |
+      Standpunktkarakterer, eksamenskarakterer og halvårsvurderinger med karakter fra Vg1, og til Vg3 også fra Vg2. Poengsummen regnes ut som til Vg1.
+
+      - **Halvårsvurdering** teller bare i fag der læreplanen sier at det skal gis halvårsvurdering med karakter.
+      - **Til Vg3:** I fag der standpunkt settes etter Vg3, for eksempel norsk, teller bare halvårsvurderingen fra Vg2, ikke den fra Vg1.
+      - **IV og IM** teller med verdien null.
+    nn: |
+      Standpunktkarakterar, eksamenskarakterar og halvårsvurderingar med karakter frå Vg1, og til Vg3 også frå Vg2. Poengsummen blir rekna ut som til Vg1.
+
+      - **Halvårsvurdering** tel berre i fag der læreplanen seier at det skal givast halvårsvurdering med karakter.
+      - **Til Vg3:** I fag der standpunkt blir sett etter Vg3, til dømes norsk, tel berre halvårsvurderinga frå Vg2, ikkje den frå Vg1.
+      - **IV og IM** tel med verdien null.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-25 første ledd bokstav a og d", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+    - { id: udir-merknader-ofo, punkt: "Merknad til § 4-25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er norsk et godt eksempel på et fag der bare halvårsvurderingen fra Vg2 teller ved inntak til Vg3?"
+
+- id: po-teller-ikke
+  type: regel
+  tittel:
+    nb: Dette teller ikke
+    nn: Dette tel ikkje
+  tekst:
+    nb: |
+      - Fag med **«deltatt»** eller **«bestått»**, og fag uten vurderingsuttrykk, for eksempel utdanningsvalg og grunnleggende norsk for språklige minoriteter.
+      - Fag med **fritak** fra opplæring eller fra vurdering med karakter, også fritak i en del av et fag, for eksempel skriftlig sidemål.
+      - Orden og oppførsel.
+    nn: |
+      - Fag med **«deltatt»** eller **«bestått»**, og fag utan vurderingsuttrykk, til dømes utdanningsval og grunnleggjande norsk for språklege minoritetar.
+      - Fag med **fritak** frå opplæring eller frå vurdering med karakter, også fritak i ein del av eit fag, til dømes skriftleg sidemål.
+      - Orden og åtferd.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-19 første ledd bokstav c og d, § 4-25 første ledd bokstav b og c", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
+    - { id: udir-merknader-ofo, punkt: "Merknad til § 4-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over fag som ikke teller, riktig og fullstendig nok for brukerne?"
+
+- id: po-beste
+  type: regel
+  tittel:
+    nb: Privatist og omvalg
+    nn: Privatist og omval
+  tekst:
+    nb: |
+      Har søkeren tatt et fag på nytt som privatist, teller den beste karakteren. Har søkeren gått flere utdanningsprogram på Vg1 eller programområder på Vg2 som alle gir grunnlag for trinnet søkeren søker til, teller den beste karakteren fag for fag. Bare fag som er relevante for det søkeren søker på, teller.
+
+      I kalkulatoren legger du inn den andre karakteren med **«Annen karakter»** på raden.
+    nn: |
+      Har søkjaren teke eit fag på nytt som privatist, tel den beste karakteren. Har søkjaren gått fleire utdanningsprogram på Vg1 eller programområde på Vg2 som alle gir grunnlag for trinnet søkjaren søkjer til, tel den beste karakteren fag for fag. Berre fag som er relevante for det søkjaren søkjer på, tel.
+
+      I kalkulatoren legg du inn den andre karakteren med **«Annan karakter»** på rada.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-25 første ledd bokstav e og f", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+    - { id: udir-merknader-ofo, punkt: "Merknad til § 4-25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «den beste karakteren fag for fag» en riktig beskrivelse av «det beste utvalet av karakterar» ved omvalg?"
+
+- id: po-individuell
+  type: regel
+  tittel:
+    nb: Individuell behandling i stedet for poeng
+    nn: Individuell behandling i staden for poeng
+  tekst:
+    nb: |
+      Søkeren konkurrerer ikke på poeng, men behandles individuelt, når
+
+      - søkeren til Vg1 mangler karakter i mer enn halvparten av fagene på vitnemålet fra grunnskolen. Fritak og IV regnes sammen.
+      - søkeren til Vg2 eller Vg3 ikke har bokstav- eller tallkarakterer, eller ikke har et sammenlignbart karaktergrunnlag.
+
+      Kalkulatoren sier fra i stedet for å regne ut poengene.
+    nn: |
+      Søkjaren konkurrerer ikkje på poeng, men blir behandla individuelt, når
+
+      - søkjaren til Vg1 manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskolen. Fritak og IV blir rekna saman.
+      - søkjaren til Vg2 eller Vg3 ikkje har bokstav- eller talkarakterar, eller ikkje har eit samanliknbart karaktergrunnlag.
+
+      Kalkulatoren seier frå i staden for å rekne ut poenga.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-20 første ledd bokstav a og § 4-26 første ledd bokstav a", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
+    - { id: udir-merknader-ofo, punkt: "Merknad til § 4-20" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Teller valgfagene med blant fagene på vitnemålet når kalkulatoren sjekker om mer enn halvparten mangler karakter?"
+
+- id: po-loddtrekning
+  type: regel
+  tittel:
+    nb: Like poeng
+    nn: Like poeng
+  tekst:
+    nb: Står søkere likt i konkurransen om de siste plassene, avgjøres rekkefølgen ved loddtrekning.
+    nn: Står søkjarar likt i konkurransen om dei siste plassane, blir rekkjefølgja avgjord ved loddtrekning.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-18 og § 4-24", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-18" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig å ha med loddtrekning, eller er det selvsagt for brukerne?"
+
+- id: po-vl-tillegg
+  type: regel
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Tilleggspoeng på musikk, dans og drama og idrettsfag
+    nn: Tilleggspoeng på musikk, dans og drama og idrettsfag
+  tekst:
+    nb: |
+      Inntil halvparten av plassene på Vg1 kan fordeles med tilleggspoeng i tillegg til karakterpoengene.
+
+      - **Musikk, dans og drama:** 3, 6 eller 9 poeng etter en ferdighetsprøve. Bare for søkere med Vg1 musikk, dans og drama som førsteønske.
+      - **Idrettsfag:** 3 poeng for regionalt nivå, 6 for landslagsnivå og 9 for internasjonalt nivå, med dokumentasjon fra særkrets eller klubb.
+    nn: |
+      Inntil halvparten av plassane på Vg1 kan fordelast med tilleggspoeng i tillegg til karakterpoenga.
+
+      - **Musikk, dans og drama:** 3, 6 eller 9 poeng etter ei ferdigheitsprøve. Berre for søkjarar med Vg1 musikk, dans og drama som førsteønske.
+      - **Idrettsfag:** 3 poeng for regionalt nivå, 6 for landslagsnivå og 9 for internasjonalt nivå, med dokumentasjon frå særkrins eller klubb.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-7 og § 2-8", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at tilleggspoengene legges til karakterpoengene, slik kalkulatoren gjør?"
+
+- id: po-vl-inntaksomrade
+  type: regel
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Inntaksområdepoeng
+    nn: Inntaksområdepoeng
+  tekst:
+    nb: Søkere får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse. Hvor mange poeng det er, står ikke i forskriften, så kalkulatoren tar dem ikke med.
+    nn: Søkjarar får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse. Kor mange poeng det er, står ikkje i forskrifta, så kalkulatoren tek dei ikkje med.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-1 første og andre ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kan tallet på inntaksområdepoeng legges inn når vestlandfylke.no svarer igjen?"
+
+- id: po-vl-vg3
+  type: regel
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Vg3 i Vestland
+    nn: Vg3 i Vestland
+  tekst:
+    nb: Den lokale forskriften nevner bare karakterene fra Vg2 ved inntak til Vg3. Kalkulatoren bruker karakterene fra både Vg1 og Vg2, som opplæringsforskrifta.
+    nn: Den lokale forskrifta nemner berre karakterane frå Vg2 ved inntak til Vg3. Kalkulatoren brukar karakterane frå både Vg1 og Vg2, som opplæringsforskrifta.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-3 andre ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-25 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder det fortsatt at karakterene fra både Vg1 og Vg2 teller ved inntak til Vg3 i Vestland?"

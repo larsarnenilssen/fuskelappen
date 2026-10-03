@@ -1,0 +1,15 @@
+id: inntak-002
+beskrivelse: "F2: Som F1, med valgfagene 5, 4 og 4."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg1
+  standpunkt: [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5]
+  eksamen: [4, 5]
+  valgfag: [5, 4, 4]
+forventet:
+  snitt: 4.42
+  poeng: 44.2
+begrunnelse: >-
+  Valgfagene: 13 ÷ 3 = 4,33 (to desimaler), som teller som én karakter. (62 + 4,33) ÷ 15 = 4,422 → 4,42 × 10 = 44,2.
+  § 4-19 første ledd bokstav b. Eier 03.10.2026: følg forskriften.

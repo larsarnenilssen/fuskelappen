@@ -1,0 +1,24 @@
+id: inntak-007
+beskrivelse: "F7: Vg3 studieforberedende, med halvårsvurdering i norsk på Vg1 og Vg2, og et fag tatt på nytt som privatist."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg3
+  rader:
+    - { trinn: Vg1, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 3 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg1, type: halvar, fag: norsk, vurdering: 3 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 3, annen: 5 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg2, type: halvar, fag: norsk, vurdering: 4 }
+forventet:
+  snitt: 4.3
+  poeng: 43
+begrunnelse: >-
+  Halvårsvurderingen i norsk fra Vg1 teller ikke, fordi norsk har standpunkt etter Vg3 (Udirs merknad til § 4-25).
+  Den beste karakteren brukes for faget tatt som privatist (§ 4-25 første ledd bokstav e). (21 + 18 + 4) ÷ 10 = 4,30 × 10 = 43,0.
