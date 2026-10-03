@@ -1,5 +1,7 @@
 // Opplæringskontorene som er godkjent i et fylke, etter NOR (avgjørelse 053). NOR sier ikke hvilke lærefag kontorene
 // har, så listen er per fylke, med søk i navn og kommune. Fylket står i adressen (#/opplaeringslop/opplaeringskontor?fylke=46).
+// Uten fylke i adressen brukes fylket brukeren har valgt, og søket kan utvides til hele landet med én knapp (eier
+// 03.10.2026). Hvert kontor lenker til nettsiden og til siden om kontoret på utdanning.no.
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
@@ -36,10 +38,11 @@ export default function Kontor({ sporring }: SideProps) {
     settAntall(PER_SIDE);
     erstattAdresse('/opplaeringslop/opplaeringskontor', Object.fromEntries(Object.entries({ fylke: f || 'alle', q }).filter(([, v]) => v)));
   };
-  const treff = useMemo(() => {
-    if (typeof data === 'string') return [];
+  const { treff, iLandet } = useMemo(() => {
+    if (typeof data === 'string') return { treff: [], iLandet: 0 };
     const ord = normaliser(sok).split(/\s+/).filter(Boolean);
-    return data.kontor.filter((k) => (!fylke || k.godkjentI.includes(fylke)) && ord.every((o) => normaliser(`${k.navn} ${k.kommune}`).includes(o)));
+    const sokt = data.kontor.filter((k) => ord.every((o) => normaliser(`${k.navn} ${k.kommune}`).includes(o)));
+    return { treff: sokt.filter((k) => !fylke || k.godkjentI.includes(fylke)), iLandet: sokt.length };
   }, [data, fylke, sok]);
   return (
     <div class="side kontorregister">
@@ -71,8 +74,19 @@ export default function Kontor({ sporring }: SideProps) {
             </select>
           </div>
           <p class="liten dempet">{t('opplaeringslop.kontor.hjelp')}</p>
-          <p role="status" class="dempet liten">
-            {treff.length === 0 ? t('opplaeringslop.kontor.ingen') : t('opplaeringslop.kontor.antall', { antall: formaterTall(treff.length) })}
+          <p role="status" class="dempet liten kontor-status">
+            <span>
+              {treff.length === 0
+                ? t('opplaeringslop.kontor.ingen')
+                : fylke
+                  ? t('opplaeringslop.kontor.iFylket', { antall: formaterTall(treff.length), fylke: fylkesnavn(fylke) ?? fylke })
+                  : t('opplaeringslop.kontor.antall', { antall: formaterTall(treff.length) })}
+            </span>
+            {fylke && iLandet > treff.length && (
+              <button type="button" class="lenkeknapp" onClick={() => oppdater('', sok)}>
+                {t('opplaeringslop.kontor.heleLandet', { antall: formaterTall(iLandet) })}
+              </button>
+            )}
           </p>
           <ul class="liste kontorliste">
             {treff.slice(0, antall).map((k) => (
@@ -83,12 +97,18 @@ export default function Kontor({ sporring }: SideProps) {
                     {[k.kommune, k.laerlinger !== null ? t('opplaeringslop.kontor.laerlinger', { antall: formaterTall(k.laerlinger) }) : null].filter(Boolean).join(' · ')}
                   </span>
                 </span>
-                {k.nettside && (
-                  <a class="ekstern-lenke liten" href={k.nettside} target="_blank" rel="noopener noreferrer">
-                    {t('opplaeringslop.kontor.nettside')}
+                <span class="kontor-lenker">
+                  {k.nettside && (
+                    <a class="ekstern-lenke liten" href={k.nettside} target="_blank" rel="noopener noreferrer">
+                      {t('opplaeringslop.kontor.nettside')}
+                      <Ikon navn="ekstern" class="ikon-liten" />
+                    </a>
+                  )}
+                  <a class="ekstern-lenke liten" href={`https://utdanning.no/finnlarebedrift/bedrift/${k.orgnr}/`} target="_blank" rel="noopener noreferrer">
+                    {t('opplaeringslop.kontor.utdanning')}
                     <Ikon navn="ekstern" class="ikon-liten" />
                   </a>
-                )}
+                </span>
               </li>
             ))}
           </ul>

@@ -104,13 +104,14 @@ export default function Skoler({ sporring }: SideProps) {
     erstattAdresse('/opplaeringslop/skoler', filterTilAdresse(ny));
   };
   const minSkole = innstillinger.skole?.id ?? null;
-  const treff = useMemo(() => {
-    if (!register || typeof data === 'string') return [];
-    const ut = filtrerSkoler(register.skoler, { fylke: filter.fylke || null, tilbud: filter.tilbud || null, sok: filter.sok }).filter(
+  const { treff, iLandet } = useMemo(() => {
+    if (!register || typeof data === 'string') return { treff: [], iLandet: 0 };
+    const alle = filtrerSkoler(register.skoler, { fylke: null, tilbud: filter.tilbud || null, sok: filter.sok }).filter(
       (s) => (!filter.skole || s.nr === filter.skole) && (!filter.program || s.tilbud.some((k) => data.indeks.programomrader[k]?.program === filter.program)),
     );
+    const ut = alle.filter((s) => !filter.fylke || s.fylke === filter.fylke);
     // Skolen brukeren har valgt, står først.
-    return [...ut.filter((s) => s.orgnr === minSkole), ...ut.filter((s) => s.orgnr !== minSkole)];
+    return { treff: [...ut.filter((s) => s.orgnr === minSkole), ...ut.filter((s) => s.orgnr !== minSkole)], iLandet: alle.length };
   }, [register, data, filter, minSkole]);
 
   return (
@@ -171,8 +172,13 @@ export default function Skoler({ sporring }: SideProps) {
               </button>
             </p>
           )}
-          <p role="status" class="dempet liten">
-            {treff.length === 0 ? t('opplaeringslop.skoler.ingen') : treff.length === 1 ? t('opplaeringslop.skoler.en') : t('opplaeringslop.skoler.antall', { antall: formaterTall(treff.length) })}
+          <p role="status" class="dempet liten kontor-status">
+            <span>{treff.length === 0 ? t('opplaeringslop.skoler.ingen') : treff.length === 1 ? t('opplaeringslop.skoler.en') : t('opplaeringslop.skoler.antall', { antall: formaterTall(treff.length) })}</span>
+            {filter.fylke && iLandet > treff.length && (
+              <button type="button" class="lenkeknapp" onClick={() => sett({ fylke: '' })}>
+                {t('opplaeringslop.skoler.heleLandet', { antall: formaterTall(iLandet) })}
+              </button>
+            )}
           </p>
           <ul class="skoleliste">
             {treff.slice(0, antall).map((s) => (

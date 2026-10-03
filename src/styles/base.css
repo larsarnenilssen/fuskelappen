@@ -544,7 +544,7 @@ main {
   align-items: center;
   gap: 0.15rem;
   margin-left: var(--rom-2);
-  color: var(--farge-ok);
+  color: var(--farge-skole);
   font-weight: 600;
   white-space: nowrap;
 }
@@ -561,7 +561,7 @@ main {
 }
 
 .lop-skolestatus-ja .ikon {
-  color: var(--farge-ok);
+  color: var(--farge-skole);
 }
 
 .lop-yrker {
@@ -626,6 +626,19 @@ main {
   align-items: center;
   gap: var(--rom-1) var(--rom-3);
   padding: var(--rom-3) var(--rom-4);
+}
+
+.kontor-lenker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+}
+
+.kontor-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--rom-1) var(--rom-3);
 }
 
 .kontorliste .listelenke-tekst {
@@ -3898,6 +3911,43 @@ p.fagkort-tittel {
 
 .lop-knapp[aria-expanded='true'] {
   background: var(--farge-flate);
+}
+
+/* Tilbud ved skolen brukeren har valgt (avgjørelse 053): kort i skolefargen, og knappen til neste trinn i en mørkere
+   tone når løpet videre har tilbud ved skolen (samme tone som kortet når den er åpen). Merket «✓ Din skole» og
+   teksten på knappen sier det samme uten farge. */
+.lop-kort[data-skole='ja'] {
+  border: 2px solid var(--farge-skole);
+  background: var(--farge-skole-flate);
+}
+
+.lop-knapp[data-skole='ja'] {
+  background: var(--farge-skole-knapp);
+}
+
+.lop-knapp[data-skole='ja'][aria-expanded='true'] {
+  background: var(--farge-skole-flate);
+}
+
+.lop-knapp-skole {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.lop-skolevalg {
+  margin: var(--rom-3) 0 var(--rom-4);
+}
+
+.lop-skolevalg .bryter {
+  margin-bottom: var(--rom-2);
+}
+
+.lop-skolevalg-linje {
+  margin: 0;
+}
+
+.lop-skoleprogram {
+  margin-top: var(--rom-4);
 }
 
 .lop-videre {

@@ -8,9 +8,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Opplæringsløp: Lenke til utdanning.no** fra hvert tilbud utdanning.no har en side for.
 - **Opplæringsløp: Skoler og tilbud.** Et søkbart oppslag over skolene i videregående og tilbudene de har, etter utdanning.no, med filter for fylke og utdanningsprogram. Hvert tilbud lenker til skolene som har det, i fylket du har valgt og i hele landet.
-- **Opplæringsløp: Din skole.** Har du valgt skole under Innstillinger, er tilbudene ved skolen merket, og tilbudssiden sier om skolen har tilbudet.
+- **Opplæringsløp: Min skole.** Har du valgt skole under Innstillinger, viser Opplæringsløp først utdanningsprogrammene og løpene ved skolen. Bryteren «Min skole» / «Alle» øverst bytter visning, og valget huskes. Tilbudene ved skolen har egen farge og merket «✓ Din skole», og knappen til neste trinn sier hvor mange av tilbudene videre som er ved skolen. Uten valgt skole står en merknad om å velge skole.
 - **Opplæringsløp: Yrker.** Lærefagene viser yrkene utdanning.no knytter til faget, med lenker.
-- **Opplæringsløp: Opplæringskontorer.** Oppslag over opplæringskontorene som er godkjent i fylket, fra registeret til Udir (NOR), med lenke fra lærefagene.
+- **Opplæringsløp: Opplæringskontorer.** Oppslag over opplæringskontorene som er godkjent i fylket, fra registeret til Udir (NOR), med søk, lenke til nettsiden og til kontoret på utdanning.no. Oppslaget viser fylket du har valgt, og kan utvides til hele landet med ett trykk. Lærefagene lenker dit.
 - **Fag: Faget på NDLA.** Fagarket lenker til faget på NDLA når NDLA har det.
 - **Opplæringsløp: Løp kildene ikke er enige om, er merket.** Står et løp i Grep, men ikke i VIGO eller på utdanning.no (eller omvendt), står det ved løpet, med en forklaring.
 

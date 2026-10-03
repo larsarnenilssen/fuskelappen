@@ -1,7 +1,8 @@
 // Felles for sidene i Opplæringsløp: lasting av fagindeksen og tilbudene, og lenker til fag og tilbud.
 import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
-import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { type T, tilstand, useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { Bryter } from '../../../components/Bryter.tsx';
 import { lastSkoler, type Skoleregister } from '../../../data/utdanning.ts';
 import { type Skoleoppforing, valgtSkole } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -61,6 +62,88 @@ export function useValgtSkole(): Skoleoppforing | null {
     };
   }, [orgnr]);
   return skole;
+}
+
+export type Lopvisning = 'skole' | 'alle';
+
+// Valget «Min skole» eller «Alle» deles av sidene i Opplæringsløp og huskes på enheten (avgjørelse 053).
+let lopvisning: Lopvisning = tilstand.lesValg('lopvisning') === 'alle' ? 'alle' : 'skole';
+const visningslyttere = new Set<(v: Lopvisning) => void>();
+
+function useLopvisning(): [Lopvisning, (v: Lopvisning) => void] {
+  const [v, settV] = useState(lopvisning);
+  useEffect(() => {
+    visningslyttere.add(settV);
+    return () => {
+      visningslyttere.delete(settV);
+    };
+  }, []);
+  const sett = (ny: Lopvisning) => {
+    lopvisning = ny;
+    tilstand.skrivValg('lopvisning', ny);
+    for (const l of visningslyttere) l(ny);
+  };
+  return [v, sett];
+}
+
+export interface Skolevisning {
+  /** Skolen brukeren har valgt, når utdanning.no har tilbudene ved den. */
+  skole: Skoleoppforing | null;
+  /** Sann når bare tilbudene ved skolen vises først («Min skole»). */
+  aktiv: boolean;
+  visning: Lopvisning;
+  settVisning: (v: Lopvisning) => void;
+}
+
+/** Skolen brukeren har valgt og valget «Min skole» eller «Alle». «Min skole» er standard når skolen er kjent. */
+export function useSkolevisning(): Skolevisning {
+  const skole = useValgtSkole();
+  const [visning, settVisning] = useLopvisning();
+  return { skole, aktiv: skole !== null && visning === 'skole', visning, settVisning };
+}
+
+/**
+ * Øverst i Opplæringsløp: bryteren «Min skole» / «Alle» når skolen er kjent, og ellers en merknad om å velge skole
+ * (som på forsiden). Valgt skole står som en kort linje, ikke som en boks (eier 02.10.2026).
+ */
+export function Skolevalg({ visning }: { visning: Skolevisning }) {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const navn = innstillinger.skole?.navn ?? null;
+  const [lastet, settLastet] = useState(false);
+  useEffect(() => {
+    lastSkoler().then(
+      () => settLastet(true),
+      () => settLastet(true),
+    );
+  }, []);
+  if (!lastet) return null;
+  if (!visning.skole) {
+    return (
+      <p class="merknad merknad-ikon lop-skolevalg">
+        <Ikon navn="info" class="ikon-liten" />
+        <span>
+          {navn && innstillinger.skole?.id ? t('opplaeringslop.visning.ukjentSkole', { skole: navn }) : t('opplaeringslop.visning.velgSkole')}{' '}
+          <a href="#/innstillinger">{t('opplaeringslop.visning.velgSkoleLenke')}</a>
+        </span>
+      </p>
+    );
+  }
+  return (
+    <div class="lop-skolevalg">
+      <Bryter
+        legend={t('opplaeringslop.visning.etikett')}
+        skjultLegend
+        verdi={visning.visning}
+        valg={[
+          { verdi: 'skole', tekst: t('opplaeringslop.visning.skole') },
+          { verdi: 'alle', tekst: t('opplaeringslop.visning.alle') },
+        ]}
+        onEndring={visning.settVisning}
+      />
+      {visning.aktiv && <p class="liten dempet lop-skolevalg-linje">{t('opplaeringslop.visning.viser', { skole: visning.skole.navn })}</p>}
+    </div>
+  );
 }
 
 /** Laster inn, eller feilmelding med «Prøv igjen». */

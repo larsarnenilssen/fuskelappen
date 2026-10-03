@@ -1,5 +1,7 @@
 // Utdanningsprogrammene, gruppert i studieforberedende, yrkesfaglige og påbygging, med søk etter program og tilbud
-// (eier 02.10.2026). Hvert program fører til løpet. Gruppene er lukket fra start.
+// (eier 02.10.2026). Hvert program fører til løpet. Gruppene er lukket fra start. Har brukeren valgt en skole som
+// utdanning.no har tilbudene til, viser siden først programmene ved skolen, med bryteren «Min skole» / «Alle»
+// (avgjørelse 053).
 import { useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -8,8 +10,8 @@ import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import { erVariant, type Programgruppe } from '../../fag/tilbud/modell.ts';
 import { kortKode } from '../data.ts';
-import { Lasting, Rubrikk, Tilbudslenke, useTilbudsdata, useValgtSkole } from './felles.tsx';
-import { lenke } from '../../../app/ruter.ts';
+import { Lasting, Rubrikk, Skolevalg, Tilbudslenke, useSkolevisning, useTilbudsdata } from './felles.tsx';
+import type { Skoleoppforing } from '../skoler.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 const GRUPPER: readonly Programgruppe[] = ['studieforberedende', 'yrkesfaglig', 'pabygging'];
@@ -28,12 +30,10 @@ function sokTilbud(indeks: Fagindeks, sok: string, malform: 'nb' | 'nn'): string
     .sort((a, b) => rang(a) - rang(b) || (indeks.programomrader[a]?.trinn ?? '').localeCompare(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
 }
 
-/** Lenker til skoleregisteret og opplæringskontorene, og til tilbudene ved skolen brukeren har valgt (avgjørelse 053). */
+/** Lenker til skoleregisteret og opplæringskontorene (avgjørelse 053). */
 function Registre() {
   const { t } = useTekst();
-  const skole = useValgtSkole();
   const lenker = [
-    ...(skole?.nr ? [{ href: lenke('/opplaeringslop/skoler', { fylke: 'alle', skole: skole.nr }), tittel: t('opplaeringslop.tilbudVedSkolen', { skole: skole.navn }) }] : []),
     { href: '#/opplaeringslop/skoler', tittel: t('opplaeringslop.skoler.tittel') },
     { href: '#/opplaeringslop/opplaeringskontor', tittel: t('opplaeringslop.kontor.tittel') },
   ];
@@ -56,16 +56,51 @@ function Registre() {
   );
 }
 
+/** Antall tilbud ved skolen i hvert utdanningsprogram. */
+function tilbudPerProgram(indeks: Fagindeks, skole: Skoleoppforing | null): Map<string, number> {
+  const ut = new Map<string, number>();
+  for (const k of skole?.tilbud ?? []) {
+    const p = indeks.programomrader[k]?.program;
+    if (p) ut.set(p, (ut.get(p) ?? 0) + 1);
+  }
+  return ut;
+}
+
+/** Et utdanningsprogram i listen, med antall tilbud ved skolen brukeren har valgt. */
+function Programlenke({ program, navn, antall }: { program: string; navn: string; antall: number }) {
+  const { t } = useTekst();
+  return (
+    <a class="listelenke" href={`#/opplaeringslop/${program}`} data-skole={antall > 0 ? 'ja' : undefined}>
+      <span class="listelenke-tekst">
+        <span class="listelenke-tittel">{navn}</span>
+        <span class="listelenke-under">
+          {program}
+          {antall > 0 && (
+            <span class="lop-dinskole">
+              <Ikon navn="hake" class="ikon-liten" />
+              {antall === 1 ? t('opplaeringslop.visning.etVedSkolen') : t('opplaeringslop.visning.antallVedSkolen', { antall: formaterTall(antall) })}
+            </span>
+          )}
+        </span>
+      </span>
+      <Ikon navn="hoyre" class="ikon-liten" />
+    </a>
+  );
+}
+
 export default function Oversikt() {
   const { t, malform } = useTekst();
   const [data, provIgjen] = useTilbudsdata();
   const [sok, settSok] = useState('');
   const aktivt = sok.trim().length >= 2;
   const treff = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
+  const visning = useSkolevisning();
+  const perProgram = typeof data !== 'string' ? tilbudPerProgram(data.indeks, visning.skole) : new Map<string, number>();
   return (
     <div class="side lop-oversikt">
       <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
       <p class="dempet"><Begrepstekst tekst={t('opplaeringslop.innledning')} /></p>
+      <Skolevalg visning={visning} />
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
@@ -97,7 +132,21 @@ export default function Oversikt() {
           ) : (
             <>
               {data.tilbud.skolear && <p class="liten dempet lop-skolear">{t('opplaeringslop.skolear', { skolear: data.tilbud.skolear.replace('-', '–') })}</p>}
-              {GRUPPER.map((g) => {
+              {visning.aktiv ? (
+                <section class="lop-skoleprogram">
+                  <h2 class="liten-overskrift">{t('opplaeringslop.visning.programmerTittel')}</h2>
+                  <ul class="liste">
+                    {data.tilbud.struktur
+                      .filter((p) => (perProgram.get(p.program) ?? 0) > 0)
+                      .map((p) => (
+                        <li key={p.program}>
+                          <Programlenke program={p.program} navn={p.navn[malform]} antall={perProgram.get(p.program) ?? 0} />
+                        </li>
+                      ))}
+                  </ul>
+                </section>
+              ) : (
+              GRUPPER.map((g) => {
                 const programmer = data.tilbud.struktur.filter((p) => p.gruppe === g);
                 if (programmer.length === 0) return null;
                 return (
@@ -105,19 +154,14 @@ export default function Oversikt() {
                     <ul class="liste">
                       {programmer.map((p) => (
                         <li key={p.program}>
-                          <a class="listelenke" href={`#/opplaeringslop/${p.program}`}>
-                            <span class="listelenke-tekst">
-                              <span class="listelenke-tittel">{p.navn[malform]}</span>
-                              <span class="listelenke-under">{p.program}</span>
-                            </span>
-                            <Ikon navn="hoyre" class="ikon-liten" />
-                          </a>
+                          <Programlenke program={p.program} navn={p.navn[malform]} antall={perProgram.get(p.program) ?? 0} />
                         </li>
                       ))}
                     </ul>
                   </Rubrikk>
                 );
-              })}
+              })
+              )}
               <Registre />
             </>
           )}
