@@ -13,7 +13,7 @@ import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Resultatkort, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
-import { hentSupplerende, type Oppslag } from '../../../core/regler/index.ts';
+import { hentLokaleNokler, hentSupplerende, type Oppslag } from '../../../core/regler/index.ts';
 import { Skjemadel } from '../../arbeidstid/komponenter/Skjemadel.tsx';
 import { useHent, useRegelkontekst, useSkjematilstand } from '../../arbeidstid/kontekst.ts';
 import type { SideProps } from '../../typer.ts';
@@ -25,8 +25,11 @@ import { Lokalmerknad } from './Lokalmerknad.tsx';
 type Trinn = 'vg1' | 'vg2' | 'vg3';
 const TRINN: readonly Trinn[] = ['vg1', 'vg2', 'vg3'];
 
-/** Tilleggspoengene i fylkets regelsett (Vestland § 2-7 og § 2-8), i rekkefølgen de vises. */
-const TILLEGG = ['tilleggspoeng_mdd_1', 'tilleggspoeng_mdd_2', 'tilleggspoeng_mdd_3', 'tilleggspoeng_idrett_1', 'tilleggspoeng_idrett_2', 'tilleggspoeng_idrett_3'] as const;
+/**
+ * Tilleggspoengene står som tilleggspoeng_<gruppe>_<nr> i fylkets regelfil (Vestland: rules/inntak/vestland-2024.yaml).
+ * Kalkulatoren finner dem selv, så et nytt fylke trenger bare en regelfil.
+ */
+const TILLEGG_PREFIKS = 'inntak.tilleggspoeng_';
 
 /** En karakter i skjemaet: '' er tomt, ellers «1»–«6», «IV», «IM», «fritak» eller «deltatt». */
 type Felt = string;
@@ -111,14 +114,17 @@ export default function Poeng({ sporring }: SideProps) {
   // Tilleggspoengene finnes bare i fylker som har dem (Vestland), og bare til Vg1.
   const tillegg = useMemo(
     () =>
-      TILLEGG.flatMap((nokkel) => {
+      (() => {
         try {
-          const o = hentSupplerende(`inntak.${nokkel}`, kontekst).fylke[0];
-          return o ? [{ nokkel, oppslag: o }] : [];
+          return hentLokaleNokler(TILLEGG_PREFIKS, kontekst).flatMap((full) => {
+            const g = hentSupplerende(full, kontekst);
+            const o = g.skole[0] ?? g.fylke[0];
+            return o ? [{ nokkel: full.slice('inntak.'.length), oppslag: o }] : [];
+          });
         } catch {
           return [];
         }
-      }),
+      })(),
     [kontekst],
   );
   const valgtTillegg: Oppslag | null = tillegg.find((x) => x.nokkel === s.tillegg)?.oppslag ?? null;
@@ -299,11 +305,13 @@ function Vg1Skjema({ s, endre, tillegg }: { s: Skjema; endre: (d: Partial<Skjema
   );
 }
 
+/** «Idrettsfag: 6 poeng». Grupper uten navn i strings får «Tilleggspoeng: 6 poeng». */
 function tilleggsnavn(t: T, nokkel: string, o: Oppslag): string {
   const poeng = String(o.verdi);
-  if (nokkel.includes('_mdd_')) return t('inntak.poeng.tilleggMdd', { poeng });
-  const niva = nokkel.slice(-1) as '1' | '2' | '3';
-  return t('inntak.poeng.tilleggIdrett', { poeng, niva: t(`inntak.poeng.idrettNiva.${niva}`) });
+  const gruppe = nokkel.replace(/^tilleggspoeng_/, '').replace(/_\d+$/, '');
+  const tekstnokkel = `inntak.poeng.tilleggsgruppe.${gruppe}` as Tekstnokkel;
+  const navn = t(tekstnokkel);
+  return navn === tekstnokkel ? t('inntak.poeng.tilleggGenerell', { poeng }) : t('inntak.poeng.tilleggValg', { gruppe: navn, poeng });
 }
 
 function Radliste({

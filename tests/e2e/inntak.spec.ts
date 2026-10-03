@@ -157,7 +157,7 @@ test.describe('poengberegning ved inntak', () => {
     // Til Vg1 i Vestland kan søkeren få tilleggspoeng.
     await page.getByRole('link', { name: 'Vg1', exact: true }).click();
     await page.locator('.skjemadel').first().locator('select.poeng-velger').first().selectOption('4');
-    await page.locator('.skjemadel[data-del="lonn"] select').selectOption({ label: 'Idrettsfag, landslagsnivå: 6 poeng' });
+    await page.locator('.skjemadel[data-del="lonn"] select').selectOption('tilleggspoeng_idrett_2');
     await expect(page.locator('.resultatkort-verdi')).toHaveText('46,0');
   });
 });

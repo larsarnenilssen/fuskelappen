@@ -8,6 +8,7 @@ import type { Fylker, Kilde, Kilderegister } from '../../src/core/innhold/skjema
 import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../../src/core/kildestatus/kildestatus.ts';
 import { lesVerdistatus, medTabellstatus, sjekkbareVerdier, sjekkVerdier, verdinokkel, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tabellrad } from '../../src/core/regler/skjema.ts';
+import { dokumenttekst, type Lovdokument } from '../../src/modules/lov/typer.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { delIBiter, finnEndringer, lesKildetekst, type Kildetekstfil, type Tekstendring } from './avsnitt.ts';
@@ -161,6 +162,8 @@ function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
   if (mine.length === 0) return { status: 'feilet', fingeravtrykk: null, melding: 'Kilden er ikke med i content/lovverk.yaml.' };
   const filer = mine.map((d) => join(rot, 'data/lovdata', `${d.id}.json`)).filter((f) => existsSync(f));
   const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8')).join('\n')) : null;
+  // Teksten i dokumentene, så verdisjekken kan se etter sitatene (f.eks. tallene for poengberegningen i rules/inntak).
+  if (filer.length > 0) tekster[kilde.id] = { tekst: filer.map((f) => dokumenttekst(JSON.parse(readFileSync(f, 'utf8')) as Lovdokument)).join('\n') };
   const endringer = mine.flatMap((d) => d.endringer);
   rapport.push(
     `### ${kilde.navn}`,

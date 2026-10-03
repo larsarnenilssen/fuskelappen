@@ -1,6 +1,6 @@
 // Kontrollgrunnlaget i regelsettene: sitater som gir verdisjekken noe å sjekke, og tall som henger sammen.
 // Sammenhengstestene fanger en feil i én verdi selv om kilden er uendret (docs/avgjorelser/017).
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Kilderegister, Praksisfil } from '../../src/core/innhold/skjema.ts';
@@ -8,6 +8,8 @@ import { lesVerdistatus, verdiISitat, verdinokkel } from '../../src/core/kontrol
 import type { Regelsett, Tabellrad } from '../../src/core/regler/skjema.ts';
 import { lesInnhold, lesRegelsett } from '../../scripts/innhold/alt.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
+import { dokumenttekst, type Lovdokument } from '../../src/modules/lov/typer.ts';
+import { normaliserTekst } from '../../src/core/kontroll/tekst.ts';
 
 const rot = join(__dirname, '../..');
 const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
@@ -55,6 +57,19 @@ describe('sitater på regelverdiene', () => {
       })
       .map(({ id }) => id);
     expect(mangler).toEqual([]);
+  });
+
+  it('sitater fra lov- og forskriftstekst står ordrett i teksten fra Lovdata (data/lovdata)', () => {
+    // Samme tekst som kildesjekken ser etter sitatene i hver uke. Testen fanger et sitat som er skrevet feil.
+    const tekster = new Map<string, string>();
+    for (const fil of readdirSync(join(rot, 'data/lovdata')).filter((f) => f.endsWith('.json'))) {
+      const dok = JSON.parse(readFileSync(join(rot, 'data/lovdata', fil), 'utf8')) as Lovdokument & { kilde?: string };
+      if (dok.kilde) tekster.set(dok.kilde, `${tekster.get(dok.kilde) ?? ''}\n${normaliserTekst(dokumenttekst(dok))}`);
+    }
+    const lovverdier = alleVerdier.filter(({ v }) => v.sitat !== undefined && kilder.get(v.kilde.id)?.sjekkmetode === 'lovtekst');
+    expect(lovverdier.length).toBeGreaterThan(0);
+    const feil = lovverdier.filter(({ v }) => !(tekster.get(v.kilde.id) ?? '').includes(normaliserTekst(v.sitat as string))).map(({ id }) => id);
+    expect(feil).toEqual([]);
   });
 
   it('verdier som er avledet eller bygger på praksis, har en merknad som forklarer det, og ikke sitat', () => {

@@ -1,7 +1,7 @@
 // Regelsettene i rules/ lastes ved bygg. All lesing av regelverdier går gjennom hentVerdi().
 // I utvikling og testing kommer testregelsettene i tests/fixtures/regler i tillegg (lokale testverdier).
 import { ekstraRegelsett } from 'virtual:testoppsett';
-import { finnSupplerende, finnVerdi, slaaSammen, type Oppslag, type Regelkontekst } from './motor.ts';
+import { finnLokaleNokler, finnSupplerende, finnVerdi, slaaSammen, type Oppslag, type Regelkontekst } from './motor.ts';
 import type { Regelsett } from './skjema.ts';
 
 const filer = import.meta.glob<Regelsett>('/rules/**/*.yaml', { eager: true, import: 'default' });
@@ -15,6 +15,11 @@ export function hentVerdi(nokkel: string, kontekst: Regelkontekst): Oppslag {
 
 export function hentSupplerende(nokkel: string, kontekst: Regelkontekst) {
   return finnSupplerende(regelsett, nokkel, kontekst);
+}
+
+/** Lokale verdier med et prefiks, f.eks. hentLokaleNokler('inntak.tilleggspoeng_', kontekst). Se finnLokaleNokler. */
+export function hentLokaleNokler(prefiks: string, kontekst: Regelkontekst): string[] {
+  return finnLokaleNokler(regelsett, prefiks, kontekst);
 }
 
 export type { Oppslag, Regelkontekst };

@@ -5396,3 +5396,8 @@ button.frist-stripe-celle:hover {
     top: calc(var(--topplinje-hoyde) + var(--rom-4));
   }
 }
+
+/* Kildene i utregningen står med kortnavn, i liten skrift (eier 03.10.2026). */
+.kildelenke-kort {
+  font-size: var(--str-xs);
+}

@@ -162,14 +162,14 @@ export function beregnVg1(hent: Hent, input: Vg1Input): Poengresultat {
 
   const r = regnUt(hent, t.teller, valgfagsnitt ?? 0, valgfagsnitt === null ? 0 : 1);
   steg.push({ id: 'karakterer', verdier: { antall: t.teller.length, sum: t.teller.reduce((a, b) => a + b, 0) }, kilder: [forskrift('§ 4-19 første ledd bokstav a')] });
-  if (t.nuller > 0) steg.push({ id: 'null', verdier: { antall: t.nuller }, kilder: [hent('inntak.iv_im_verdi').kilde] });
+  if (t.nuller > 0) steg.push({ id: 'null', verdier: { antall: t.nuller }, kilder: [forskrift('§ 4-19 første ledd bokstav e')] });
   if (Object.keys(t.utelatt).length > 0) {
     steg.push({ id: 'utelatt', verdier: {}, utelatt: t.utelatt, kilder: [forskrift('§ 4-19 første ledd bokstav c og d'), MERKNADER] });
   }
   if (valgfagsnitt !== null) {
     steg.push({ id: 'valgfag', verdier: { antall: valgfag.length, sum: valgfag.reduce((a, b) => a + b, 0), snitt: valgfagsnitt }, kilder: [valgfagDesimaler.kilde] });
   }
-  return avslutt(r, t.teller, valgfagsnitt, input.tillegg ?? null, individuell, steg);
+  return avslutt(r, t.teller, valgfagsnitt, input.tillegg ?? null, individuell, steg, forskrift('§ 4-19 første ledd bokstav a'));
 }
 
 export interface Vg2Vg3Input {
@@ -199,12 +199,12 @@ export function beregnVg2Vg3(hent: Hent, input: Vg2Vg3Input): Poengresultat {
   const utfylt = rader.filter((x) => x.vurdering !== null);
   const individuell = utfylt.length > 0 && t.teller.length === t.nuller;
   steg.push({ id: 'karakterer', verdier: { antall: t.teller.length, sum: r.sum }, kilder: [forskrift('§ 4-25 første ledd bokstav a')] });
-  if (t.nuller > 0) steg.push({ id: 'null', verdier: { antall: t.nuller }, kilder: [hent('inntak.iv_im_verdi').kilde] });
+  if (t.nuller > 0) steg.push({ id: 'null', verdier: { antall: t.nuller }, kilder: [forskrift('§ 4-25 første ledd bokstav d')] });
   if (t.bedre > 0) steg.push({ id: 'beste', verdier: { antall: t.bedre }, kilder: [forskrift('§ 4-25 første ledd bokstav e og f'), MERKNADER] });
   if (Object.keys(t.utelatt).length > 0) {
     steg.push({ id: 'utelatt', verdier: {}, utelatt: t.utelatt, kilder: [forskrift('§ 4-25 første ledd bokstav b og c'), MERKNADER] });
   }
-  return avslutt(r, t.teller, null, null, individuell, steg);
+  return avslutt(r, t.teller, null, null, individuell, steg, forskrift('§ 4-25 første ledd bokstav a'));
 }
 
 function avslutt(
@@ -214,10 +214,13 @@ function avslutt(
   tillegg: Oppslag | null,
   individuell: boolean,
   steg: Poengsteg[],
+  /** Bokstaven i forskriften om gjennomsnitt, to desimaler og ganger ti for trinnet (§ 4-19 eller § 4-25). */
+  regel: KildeRef,
 ): Poengresultat {
   steg.push({ id: 'snitt', verdier: { sum: r.sum, antall: r.antall, snitt: r.snitt }, kilder: [] });
-  steg.push({ id: 'avrunding', verdier: { snitt: r.snitt, desimaler: somTall(r.desimaler), avrundet: r.snittAvrundet }, kilder: [r.desimaler.kilde, MERKNADER] });
-  steg.push({ id: 'poeng', verdier: { avrundet: r.snittAvrundet, faktor: somTall(r.faktor), poeng: r.poeng }, kilder: [r.faktor.kilde] });
+  // Verdiene står i rules/inntak med begge paragrafene som kilde. Trinnet viser paragrafen for trinnet søkeren søker til.
+  steg.push({ id: 'avrunding', verdier: { snitt: r.snitt, desimaler: somTall(r.desimaler), avrundet: r.snittAvrundet }, kilder: [regel, MERKNADER] });
+  steg.push({ id: 'poeng', verdier: { avrundet: r.snittAvrundet, faktor: somTall(r.faktor), poeng: r.poeng }, kilder: [regel] });
   const t = tillegg ? somTall(tillegg) : 0;
   const samlet = avrund(r.poeng + t, 2);
   if (tillegg) {

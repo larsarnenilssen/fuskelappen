@@ -1,6 +1,8 @@
 // Resultatkort med «vis utregning» og «kopier». Viser nivå der verdien er lokal.
 // Utregningen er kompakt: én linje per trinn med tallene satt inn, formelen med navn i liten skrift,
-// og kildene samlet nederst. Hovedresultatet kan også vises i en fast linje nederst på skjermen.
+// og kildene samlet nederst. Kildene står med kortnavn (f.eks. «Opplæringsforskrifta § 4-19»), så de ikke tar
+// mer plass enn utregningen. Kopien har de fulle navnene. Hovedresultatet kan også vises i en fast linje
+// nederst på skjermen.
 import type { ComponentChildren } from 'preact';
 import { useId, useRef, useState } from 'preact/hooks';
 import { type T, useTekst } from '../app/tilstand.ts';
@@ -143,7 +145,7 @@ export function Resultatkort(props: Props) {
                 {s.formel && <span class="utregning-formel">{s.formel}</span>}
                 {s.kilde && (
                   <span class="utregning-kilde">
-                    <Kildelenke kilde={s.kilde} />
+                    <Kildelenke kilde={s.kilde} kort />
                   </span>
                 )}
               </li>
@@ -155,7 +157,7 @@ export function Resultatkort(props: Props) {
               <ul>
                 {kilder.map((k) => (
                   <li key={`${k.kilde.id}-${k.kilde.punkt ?? ''}-${k.niva}`}>
-                    <Kildelenke kilde={k.kilde} />
+                    <Kildelenke kilde={k.kilde} kort />
                     {k.niva !== 'nasjonal' && <Nivamerke niva={k.niva} />}
                     {k.rad && <span class="dempet"> {k.rad}</span>}
                   </li>

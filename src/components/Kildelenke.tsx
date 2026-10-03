@@ -11,22 +11,43 @@ export function finnKilde(id: string) {
   return kilder.get(id);
 }
 
-/** Navn, punkt og adresse for en kilde, slik den vises og kopieres. */
-export function kildeTekst(t: T, kilde: KildeRef): { navn: string; punkt: string; url: string | undefined } {
+/** «§ 4-19 første ledd» → «4-19», når punktet begynner med en paragraf. */
+const PARAGRAF = /^§\s?([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)/i;
+
+/**
+ * Navn, punkt og adresse for en kilde, slik den vises og kopieres. Med `kort` brukes kortnavnet fra kilderegisteret.
+ * Peker punktet på en paragraf i en lov eller forskrift hos Lovdata, går adressen til paragrafen.
+ */
+export function kildeTekst(t: T, kilde: KildeRef, kort = false): { navn: string; punkt: string; url: string | undefined } {
   const k = kilder.get(kilde.id);
   // «punkt 5.2», men «Vedlegg 1» og «Kap. 1 § 12.4» uten «punkt» foran.
-  const punkt = kilde.punkt ? `, ${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
-  return { navn: k?.navn ?? t('komponenter.kilde.ukjent'), punkt, url: kilde.url ?? k?.url };
+  const punkt = kilde.punkt ? `${kort ? ' ' : ', '}${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
+  const navn = (kort ? k?.kortnavn : undefined) ?? k?.navn ?? t('komponenter.kilde.ukjent');
+  const paragraf = kilde.punkt ? PARAGRAF.exec(kilde.punkt)?.[1] : undefined;
+  const url = kilde.url ?? (paragraf && k?.url.startsWith('https://lovdata.no/') ? `${k.url}/§${paragraf}` : k?.url);
+  return { navn, punkt, url };
 }
 
-export function Kildelenke({ kilde }: { kilde: KildeRef }) {
+/**
+ * Lenke til kilden. `kort` gir en kompakt lenke til utregningene: kortnavnet og punktet, og bare én lenke, til
+ * paragrafen i appen når den finnes der, ellers til kilden.
+ */
+export function Kildelenke({ kilde, kort = false }: { kilde: KildeRef; kort?: boolean }) {
   const { t } = useTekst();
-  const { navn, punkt, url } = kildeTekst(t, kilde);
+  const { navn, punkt, url } = kildeTekst(t, kilde, kort);
   // En paragraf hos Lovdata som også står i Lov og forskrift, får en lenke dit i tillegg (eier 02.10.2026).
   const iAppen = useLovlenke(url);
+  if (kort && iAppen) {
+    return (
+      <a class="kildelenke kildelenke-kort" href={`#${iAppen}`} title={kildeTekst(t, kilde).navn}>
+        {navn}
+        {punkt}
+      </a>
+    );
+  }
   if (!url) {
     return (
-      <span class="kildelenke">
+      <span class={`kildelenke${kort ? ' kildelenke-kort' : ''}`}>
         {navn}
         {punkt}
       </span>
@@ -35,13 +56,13 @@ export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   const nettsted = new URL(url).hostname.replace(/^www\./, '');
   return (
     <>
-      <a class="kildelenke" href={url} target="_blank" rel="noopener noreferrer">
+      <a class={`kildelenke${kort ? ' kildelenke-kort' : ''}`} href={url} target="_blank" rel="noopener noreferrer" title={kort ? kildeTekst(t, kilde).navn : undefined}>
         {navn}
         {punkt}
         <Ikon navn="ekstern" class="ikon-liten" />
         <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted })}</span>
       </a>
-      {iAppen && (
+      {iAppen && !kort && (
         <>
           {' · '}
           <a class="kildelenke" href={`#${iAppen}`}>

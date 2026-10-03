@@ -73,10 +73,11 @@ export const inntakNb = {
     erstattet: 'Samme fag har halvår på Vg2',
     flereRader: 'Flere karakterer',
     tilleggIngen: 'Ingen tilleggspoeng',
-    tilleggMdd: 'Musikk, dans og drama: {poeng} poeng',
-    tilleggIdrett: 'Idrettsfag, {niva}: {poeng} poeng',
-    idrettNiva: { '1': 'regionalt nivå', '2': 'landslagsnivå', '3': 'internasjonalt nivå' },
-    tilleggHjelp: 'Bare Vg1 musikk, dans og drama og Vg1 idrettsfag.',
+    /** Navnet på gruppen i nøkkelen tilleggspoeng_<gruppe>_<nr> i fylkets regelfil. Grupper uten navn her får «Tilleggspoeng». */
+    tilleggsgruppe: { mdd: 'Musikk, dans og drama', idrett: 'Idrettsfag' },
+    tilleggValg: '{gruppe}: {poeng} poeng',
+    tilleggGenerell: 'Tilleggspoeng: {poeng} poeng',
+    tilleggHjelp: 'Bare for noen utdanningsprogram på Vg1. Se reglene under.',
     resultat: {
       tittel: 'Poengsum',
       samlet: 'Poengsum med tilleggspoeng',
