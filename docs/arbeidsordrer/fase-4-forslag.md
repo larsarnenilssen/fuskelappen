@@ -97,10 +97,14 @@ Tilpasset opplæring, tilfredsstillende utbytte, individuell tilrettelegging, in
 
 Finnes fra før og brukes: enkeltvedtak, klage, forhåndsvarsel, forskrift og lokal forskrift.
 
-## Spørsmål til eier
+## Eiers svar (03.10.2026)
 
-1. **Ukraina-unntaket i ol. § 6-6:** Udir skriver at unntaket fra samtykke gjaldt ut juli 2026. Lovteksten fra Lovdata (hentet 02.10.2026) har det fortsatt. Skal veiviseren nevne det?
-2. **Avslutning av særskilt språkopplæring:** Må fylkeskommunen fatte et nytt vedtak når eleven kan nok norsk, eller faller vedtaket bort? Kildene sier det ikke klart.
-3. **Henvisning til PP-tjenesten:** Skal veiviseren si at henvisningen og samtykket bør være skriftlig? Veilederen krever samtykke, men sier ikke noe om formen.
-4. **Foreløpig svar (fvl. § 11 a):** Skal fristen på én måned for foreløpig svar stå i steg 7, eller bare «uten ugrunnet opphold» for PP-tjenesten, som i veilederen?
-5. **Modul og navn:** Én modul «Tilrettelegging» i kategorien «Elev» med begge veiviserne?
+Forslaget er godkjent. Kort botid er viktig å ha med. Eier vil at appen gir bedre og raskere oversikt enn kildene, med visualisering, illustrasjoner og diagrammer der det passer. Det er viktigere enn å gjengi kildene ord for ord.
+
+1. Ukraina-unntaket i ol. § 6-6 nevnes ikke.
+2. Veiviseren sier ikke noe om nytt vedtak når særskilt språkopplæring avsluttes.
+3. Formen på samtykke og henvisning presiseres ikke.
+4. Fristen for foreløpig svar (fvl. § 11 a) står i vedtakssteget.
+5. Én modul «Tilrettelegging» i kategorien «Elev» med begge veiviserne, til å begynne med.
+
+Navnet Fuskelappen beholdes inntil videre. CI deles på flere jobber (avgjørelse 040). Lange testkjøringer venter til eier og Claude er enige om en versjon som skal testes. Skjermbilder kommer først.

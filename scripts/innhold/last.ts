@@ -69,6 +69,7 @@ export function validerTekst(relSti: string, tekst: string, medHtml = true): unk
     return (resultat.data as Innholdselement[]).map((e) => ({
       ...e,
       tekst: { nb: tilHtml(e.tekst.nb), nn: tilHtml(e.tekst.nn) },
+      ...(e.type === 'steg' && e.forklaring ? { forklaring: { nb: tilHtml(e.forklaring.nb), nn: tilHtml(e.forklaring.nn) } } : {}),
     }));
   }
   return resultat.data;

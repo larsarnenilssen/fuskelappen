@@ -16,15 +16,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
-    name: Test og bygg
+  sjekk:
+    name: Lint, typesjekk, tester og bygg
     runs-on: ubuntu-latest
-    # Playwrights eget bilde har nettleserne og alle systempakkene de trenger. Da slipper vi å installere dem
-    # fra Ubuntu-speilet, som av og til er svært tregt. Versjonen må være den samme som @playwright/test i
-    # package-lock.json (det testes i tests/unit/arbeidsflyter.test.ts).
-    container:
-      image: mcr.microsoft.com/playwright:v1.63.0-noble
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -37,11 +32,46 @@ jobs:
       - run: npm test
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
+
+  # Ende-til-ende-testene deles på fire jobber som kjører samtidig (avgjørelse 040). Hver jobb bygger appen selv
+  # og kjører en firedel av testene med to workers, som før.
+  e2e:
+    name: Ende-til-ende (${{ matrix.del }}/4)
+    runs-on: ubuntu-latest
+    # Playwrights eget bilde har nettleserne og alle systempakkene de trenger. Da slipper vi å installere dem
+    # fra Ubuntu-speilet, som av og til er svært tregt. Versjonen må være den samme som @playwright/test i
+    # package-lock.json (det testes i tests/unit/arbeidsflyter.test.ts).
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        del: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
       - name: Ende-til-ende-tester (Chromium og WebKit)
-        run: npm run test:e2e
+        run: npm run test:e2e -- --shard=${{ matrix.del }}/4
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: playwright-report
+          name: playwright-report-${{ matrix.del }}
           path: playwright-report/
           retention-days: 14
+
+  # Samlet resultat med samme navn som før, så en regel om påkrevd sjekk på main fortsatt virker.
+  test:
+    name: Test og bygg
+    needs: [sjekk, e2e]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Alle jobbene må være grønne
+        run: |
+          test "${{ needs.sjekk.result }}" = success
+          test "${{ needs.e2e.result }}" = success

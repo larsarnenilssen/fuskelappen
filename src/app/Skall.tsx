@@ -1,6 +1,6 @@
 // Appskallet: fast topplinje, ett scrollområde (dokumentet) og fast bunnmeny.
 import type { ComponentType } from 'preact';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../config/app.ts';
 import { visTekst } from '../core/i18n/tekst.ts';
 import { visningsstatus, type Visningsstatus } from '../core/kildestatus/kildestatus.ts';
@@ -63,12 +63,35 @@ function Side({ rute, props, type }: { rute: Rute; props: SideProps; type: Navig
     };
   }, [rute, forsok]);
 
+  // Sidetittelen får fokus én gang når en ny side er tegnet. Endres bare spørringen i adressen (f.eks. et nytt steg
+  // i en veiviser), er det samme side, og siden styrer fokus selv.
+  // Sider som laster data først, får tittelen litt senere. Da venter vi på den.
+  const fokusert = useRef(false);
+  const venter = useRef<MutationObserver | null>(null);
+  useEffect(() => () => venter.current?.disconnect(), []);
   useEffect(() => {
     if (!modul) return;
     utforScroll();
-    if (type !== 'forste') {
-      document.querySelector<HTMLElement>('main h1')?.focus({ preventScroll: true });
+    if (type !== 'forste' && !fokusert.current) {
+      const tittel = () => document.querySelector<HTMLElement>('main h1');
+      const h1 = tittel();
+      if (h1) h1.focus({ preventScroll: true });
+      else {
+        const main = document.querySelector('main');
+        if (main) {
+          const observator = new MutationObserver(() => {
+            const h = tittel();
+            if (!h) return;
+            h.focus({ preventScroll: true });
+            observator.disconnect();
+          });
+          observator.observe(main, { childList: true, subtree: true });
+          venter.current = observator;
+          setTimeout(() => observator.disconnect(), 3000);
+        }
+      }
     }
+    fokusert.current = true;
   }, [modul, rute, props.parametre, type]);
 
   if (feil) {

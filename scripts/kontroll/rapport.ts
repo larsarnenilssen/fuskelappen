@@ -91,6 +91,7 @@ const TYPENAVN: Record<Kontrollinnhold['elementtype'], string> = {
   regel: 'regel',
   forklaring: 'forklaring',
   steg: 'steg',
+  veiviser: 'veiviser',
   frist: 'frist',
   kildeomtale: 'kildeomtale',
 };

@@ -5,6 +5,7 @@ import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
+import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 
 export const nn: Tekster = {
   app: {
@@ -202,6 +203,32 @@ export const nn: Tekster = {
     aapneKilde: 'Opne kjelda',
   },
   komponenter: {
+    veiviser: {
+      faser: 'Fasane i prosessen',
+      faseFerdig: 'ferdig',
+      faseGjeldende: 'du er her',
+      faseSenere: 'seinare',
+      steg: 'Steg {nr}',
+      utfall: 'Resultat',
+      veienHit: 'Vegen hit',
+      tilbakeTil: 'Gå tilbake til «{steg}»',
+      ansvar: 'Ansvar',
+      dokumentasjon: 'Dokumentasjon',
+      frist: 'Frist',
+      regelverk: 'I regelverket',
+      merOm: 'Meir om dette steget',
+      neste: 'Neste',
+      svar: 'Svar',
+      dittSvar: 'Svar: {svar}',
+      startPaaNytt: 'Start på nytt',
+      korrigert: 'Lenkja passa ikkje heilt med vegvisaren. Du står på det siste steget lenkja førte fram til.',
+      oppsummering: 'Oppsummering',
+      kopier: 'Kopier oppsummeringa',
+      kopiert: 'Kopiert',
+      kopierFeilet: 'Kunne ikkje kopiere. Merk teksten og kopier han sjølv.',
+      kopiOverskrift: '{tittel} – oppsummering',
+      kopiLaget: 'Laga med {app} {dato}. Sjekk kjeldene før du brukar oppsummeringa.',
+    },
     forklaring: {
       vis: 'Vis forklaring',
       skjul: 'Skjul forklaring',
@@ -252,6 +279,10 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    tilrettelegging: {
+      navn: 'Tilrettelegging',
+      beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
+    },
     laereplanverket: {
       navn: 'Overordna del',
       beskrivelse: 'Verdiar, prinsipp, ferdigheiter og tema.',
@@ -282,6 +313,7 @@ export const nn: Tekster = {
   opplaeringslop: opplaeringslopNn,
   laereplanverket: laereplanverketNn,
   lov: lovNn,
+  tilrettelegging: tilretteleggingNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

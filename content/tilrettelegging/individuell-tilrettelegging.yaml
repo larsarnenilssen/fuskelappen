@@ -1,0 +1,184 @@
+# Veiviser: fra tilpasset opplæring til individuell tilrettelegging (fase 4, avgjørelse 041). Egne ord.
+# Bygger på opplæringslova kapittel 11 og Udirs veileder om tilpasset opplæring og individuell tilrettelegging.
+# Pakke 1 har de fire første stegene som eksempel. Resten av prosessen kommer i pakke 2.
+- id: individuell-tilrettelegging
+  type: veiviser
+  tittel:
+    nb: Fra tilpasset opplæring til individuell tilrettelegging
+    nn: Frå tilpassa opplæring til individuell tilrettelegging
+  tekst:
+    nb: Hva skolen skal gjøre når en elev ikke får godt nok utbytte av opplæringen, steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
+    nn: Kva skolen skal gjere når ein elev ikkje får godt nok utbytte av opplæringa, steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
+  start: ti-tilpasset
+  faser:
+    - { id: ordinar, tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring } }
+    - { id: utredning, tittel: { nb: Utredning, nn: Utgreiing } }
+    - { id: vedtak, tittel: { nb: Vedtak, nn: Vedtak } }
+    - { id: oppfolging, tittel: { nb: Oppfølging, nn: Oppfølging } }
+  kilder:
+    - { id: opplaeringslova, punkt: "Kapittel 11 Tilpassa opplæring og individuell tilrettelegging", url: "https://lovdata.no/lov/2023-06-09-30/kap11" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?"
+  stikkord: [veiviser, spesialundervisning, tilpasset opplæring, individuell tilrettelegging]
+
+- id: ti-tilpasset
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: ordinar
+  tittel:
+    nb: Tilpasset opplæring for alle
+    nn: Tilpassa opplæring for alle
+  tekst:
+    nb: Skolen skal legge opp opplæringen slik at alle elevene får et tilfredsstillende utbytte, uansett forutsetninger. Tilpasningene skjer i hovedsak i fellesskapet, i klassen. Det er en plikt for skolen, ikke en rett for den enkelte eleven, og det fattes ikke vedtak om tilpasset opplæring.
+    nn: Skolen skal leggje opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Tilpassingane skjer i hovudsak i fellesskapet, i klassen. Det er ei plikt for skolen, ikkje ein rett for den enkelte eleven, og det blir ikkje gjort vedtak om tilpassa opplæring.
+  ansvar:
+    nb: Skolen og lærerne. Lærebedriften for dem som har læretid i bedrift.
+    nn: Skolen og lærarane. Lærebedrifta for dei som har læretid i bedrift.
+  dokumentasjon:
+    nb: Ingen egen dokumentasjon.
+    nn: Ingen eigen dokumentasjon.
+  forklaring:
+    nb: Tilpasset opplæring gjelder også elever som har vedtak om individuell tilrettelegging, og elever med stort læringspotensial. Jo bedre skolen tilpasser opplæringen i fellesskapet, jo færre elever trenger individuell tilrettelegging.
+    nn: Tilpassa opplæring gjeld også elevar som har vedtak om individuell tilrettelegging, og elevar med stort læringspotensial. Jo betre skolen tilpassar opplæringa i fellesskapet, jo færre elevar treng individuell tilrettelegging.
+  paragrafer: [opplaeringslova/11-1]
+  neste: ti-folge-med
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "2.1 Skolen skal tilpasse opplæringen til alle elevene", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilpasset-opplaring/#skolen-skal-tilpasse-opplaringen-til-alle-elevene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Stemmer «Ingen egen dokumentasjon» for tilpasset opplæring, eller forventer Udir eller fylket at skolen dokumenterer noe her?"
+    - "Er «skolen og lærerne» riktig ansvar, eller bør fylkeskommunen som skoleeier stå først?"
+
+- id: ti-folge-med
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: ordinar
+  tittel:
+    nb: Følge med og melde fra
+    nn: Følgje med og melde frå
+  tekst:
+    nb: Lærerne følger med på utviklingen til hver elev. Er det tvil om at en elev får tilfredsstillende utbytte av opplæringen, skal læreren melde fra til rektor. Hva som er tilfredsstillende, er en faglig vurdering av mestring, forutsetninger og utvikling sett opp mot kompetansemålene.
+    nn: Lærarane følgjer med på utviklinga til kvar elev. Er det tvil om at ein elev får tilfredsstillande utbytte av opplæringa, skal læraren melde frå til rektor. Kva som er tilfredsstillande, er ei fagleg vurdering av meistring, føresetnader og utvikling sett opp mot kompetansemåla.
+  ansvar:
+    nb: Lærerne følger med og melder fra. Rektor tar imot meldingen.
+    nn: Lærarane følgjer med og melder frå. Rektor tek imot meldinga.
+  dokumentasjon:
+    nb: Lovens krav er at læreren melder fra. Underveisvurdering, elevsamtaler og kartlegging gir grunnlaget.
+    nn: Lova krev at læraren melder frå. Undervegsvurdering, elevsamtalar og kartlegging gir grunnlaget.
+  forklaring:
+    nb: Det er sjelden at en elev har fullt utbytte eller ikke noe utbytte i det hele tatt. Spørsmålet er om utbyttet er godt nok, og det vurderer skolen ut fra flere kilder, for eksempel underveisvurdering, elevsamtaler, samarbeid med hjemmet og observasjon.
+    nn: Det er sjeldan at ein elev har fullt utbytte eller ikkje noko utbytte i det heile. Spørsmålet er om utbyttet er godt nok, og det vurderer skolen ut frå fleire kjelder, til dømes undervegsvurdering, elevsamtalar, samarbeid med heimen og observasjon.
+  paragrafer: [opplaeringslova/11-2]
+  sporsmal:
+    tekst:
+      nb: Er det tvil om at eleven får tilfredsstillende utbytte av opplæringen?
+      nn: Er det tvil om at eleven får tilfredsstillande utbytte av opplæringa?
+    svar:
+      - { id: nei, tekst: { nb: "Nei, utbyttet er godt nok", nn: "Nei, utbyttet er godt nok" }, neste: ti-fortsett }
+      - { id: tvil, tekst: { nb: "Ja, det er tvil", nn: "Ja, det er tvil" }, neste: ti-tiltak }
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "3.2 Verktøy og metoder for å følge med", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#verktoy-metoder-folge-med" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at loven bare krever at læreren melder fra, og ikke noen skriftlig dokumentasjon på dette steget?"
+    - "Bør steget si hvordan meldingen til rektor bør gis (muntlig eller skriftlig), eller er det skolens sak?"
+
+- id: ti-tiltak
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: ordinar
+  tittel:
+    nb: Egnede tiltak i den ordinære opplæringen
+    nn: Eigna tiltak i den ordinære opplæringa
+  tekst:
+    nb: Skolen setter inn tiltak som kan gi eleven et tilfredsstillende utbytte, innenfor den ordinære opplæringen. Det er elevens behov og elevens beste som avgjør hvilke tiltak skolen velger. Tiltakene krever ikke vedtak.
+    nn: Skolen set inn tiltak som kan gi eleven eit tilfredsstillande utbytte, innanfor den ordinære opplæringa. Det er behova til eleven og det beste for eleven som avgjer kva for tiltak skolen vel. Tiltaka krev ikkje vedtak.
+  ansvar:
+    nb: Skolen. PP-tjenesten kan veilede, og skolen kan samarbeide med for eksempel skolehelsetjenesten.
+    nn: Skolen. PP-tenesta kan rettleie, og skolen kan samarbeide med til dømes skolehelsetenesta.
+  frist:
+    nb: Ingen fast frist. Skolen vurderer tiltakene løpende.
+    nn: Ingen fast frist. Skolen vurderer tiltaka løpande.
+  forklaring:
+    nb: |-
+      Eksempler på tiltak er annen organisering, andre arbeidsmåter og læremidler, eller at eleven får opplæring i en mindre gruppe i en kort periode. Elevene kan deles i grupper etter faglig nivå bare i særskilte og avgrensede deler av opplæringen, når det er nødvendig for at eleven skal få tilfredsstillende utbytte (§ 14-2).
+
+      Har eleven et åpenbart behov for individuelt tilrettelagt opplæring, trenger ikke skolen å prøve tiltak først. Da kan skolen henvise til PP-tjenesten med en gang.
+    nn: |-
+      Døme på tiltak er anna organisering, andre arbeidsmåtar og læremiddel, eller at eleven får opplæring i ei mindre gruppe i ein kort periode. Elevane kan delast i grupper etter fagleg nivå berre i særskilde og avgrensa delar av opplæringa, når det er nødvendig for at eleven skal få tilfredsstillande utbytte (§ 14-2).
+
+      Har eleven eit openbert behov for individuelt tilrettelagd opplæring, treng ikkje skolen å prøve tiltak først. Då kan skolen vise vidare til PP-tenesta med ein gong.
+  paragrafer: [opplaeringslova/11-2, opplaeringslova/11-13, opplaeringslova/14-2]
+  neste: ti-nok
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "4.1 Skolen skal sette inn egnede tiltak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#skolen-skal-sette-inn-egnede-tiltak" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "4.3 Elever med et åpenbart behov for individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#elever-med-apenbart-behov-individuell-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på tiltak (annen organisering, arbeidsmåter, læremidler, kort periode i mindre gruppe) riktige for videregående, og innenfor det skolen kan gjøre uten vedtak?"
+    - "Er nivådeling etter § 14-2 tredje ledd riktig gjengitt?"
+
+- id: ti-nok
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: ordinar
+  tittel:
+    nb: Er tiltakene nok?
+    nn: Er tiltaka nok?
+  tekst:
+    nb: Skolen vurderer om tiltakene gir eleven et tilfredsstillende utbytte, eller om eleven kan trenge individuell tilrettelegging. Mener eleven eller foreldrene at eleven trenger individuell tilrettelegging, må det fattes et vedtak, også om svaret er nei.
+    nn: Skolen vurderer om tiltaka gir eleven eit tilfredsstillande utbytte, eller om eleven kan trenge individuell tilrettelegging. Meiner eleven eller foreldra at eleven treng individuell tilrettelegging, må det gjerast eit vedtak, også om svaret er nei.
+  ansvar:
+    nb: Skolen vurderer. Fylkeskommunen avgjør i et vedtak om eleven har rett til individuell tilrettelegging.
+    nn: Skolen vurderer. Fylkeskommunen avgjer i eit vedtak om eleven har rett til individuell tilrettelegging.
+  paragrafer: [opplaeringslova/11-2]
+  sporsmal:
+    tekst:
+      nb: Får eleven tilfredsstillende utbytte med tiltakene?
+      nn: Får eleven tilfredsstillande utbytte med tiltaka?
+    svar:
+      - { id: ja, tekst: { nb: "Ja, tiltakene er nok", nn: "Ja, tiltaka er nok" }, neste: ti-folge-med }
+      - { id: nei, tekst: { nb: "Nei, eller eleven eller foreldrene ber om individuell tilrettelegging", nn: "Nei, eller eleven eller foreldra ber om individuell tilrettelegging" }, neste: ti-vurder-individuell }
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at en forespørsel fra eleven eller foreldrene alltid skal gi et vedtak, også når skolen mener eleven ikke trenger individuell tilrettelegging?"
+
+- id: ti-fortsett
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: ordinar
+  tittel:
+    nb: Fortsett den tilpassede opplæringen
+    nn: Hald fram med den tilpassa opplæringa
+  tekst:
+    nb: Eleven får godt nok utbytte av opplæringen. Lærerne fortsetter å følge med, og melder fra til rektor hvis det blir tvil.
+    nn: Eleven får godt nok utbytte av opplæringa. Lærarane held fram med å følgje med, og melder frå til rektor dersom det blir tvil.
+  paragrafer: [opplaeringslova/11-1, opplaeringslova/11-2]
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er utfallet formulert slik at det ikke kan leses som at skolen er ferdig med eleven?"
+
+- id: ti-vurder-individuell
+  type: steg
+  veiviser: individuell-tilrettelegging
+  fase: utredning
+  tittel:
+    nb: Eleven kan trenge individuell tilrettelegging
+    nn: Eleven kan trenge individuell tilrettelegging
+  tekst:
+    nb: Tiltakene i den ordinære opplæringen er ikke nok. Neste steg er å finne ut hva eleven trenger. Faglig tilrettelegging (individuelt tilrettelagt opplæring) krever samtykke og en sakkyndig vurdering fra PP-tjenesten før vedtak. Personlig assistanse og fysisk tilrettelegging krever ikke sakkyndig vurdering.
+    nn: Tiltaka i den ordinære opplæringa er ikkje nok. Neste steg er å finne ut kva eleven treng. Fagleg tilrettelegging (individuelt tilrettelagd opplæring) krev samtykke og ei sakkunnig vurdering frå PP-tenesta før vedtak. Personleg assistanse og fysisk tilrettelegging krev ikkje sakkunnig vurdering.
+  paragrafer: [opplaeringslova/11-2, opplaeringslova/11-4, opplaeringslova/11-5, opplaeringslova/11-6, opplaeringslova/11-7]
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er skillet mellom individuelt tilrettelagt opplæring (krever sakkyndig vurdering) og personlig assistanse og fysisk tilrettelegging (krever det ikke) riktig og tydelig nok?"

@@ -407,11 +407,14 @@ kilder:
     niva: nasjonal
     lisens: NLOD 2.0
     sjekkmetode: side
-    aktiv: false
+    aktiv: true
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
-    faser: [4]
+    faser: [3, 4]
+    merknad: >-
+      Slått på i fase 4. Veiviseren «Fra tilpasset opplæring til individuell tilrettelegging» bygger på kapittel 1–9 og
+      12, og hvert steg viser til avsnittet med egen adresse.
 
   - id: udir-overordnet-del
     navn: Overordnet del – verdier og prinsipper for grunnopplæringen

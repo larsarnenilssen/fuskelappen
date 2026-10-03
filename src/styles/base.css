@@ -3961,3 +3961,276 @@ p.fagkort-tittel {
 .lov-avtalekilder li + li {
   margin-top: var(--rom-1);
 }
+
+/* Veiviser (avgjørelse 041): fasestolpe, veien hit som en linje med punkter, og det gjeldende steget som kort. */
+.veiviser {
+  margin-top: var(--rom-4);
+}
+
+.veiviser-faser {
+  display: flex;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-fase {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: var(--str-xs);
+  line-height: 1.3;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-fase-strek {
+  display: block;
+  height: 0.375rem;
+  margin-bottom: var(--rom-1);
+  border-radius: 999px;
+  background: var(--farge-linje);
+}
+
+.veiviser-fase-navn {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.15rem;
+  overflow-wrap: anywhere;
+}
+
+.veiviser-fase-navn .ikon {
+  flex: none;
+}
+
+.veiviser-fase-ferdig .veiviser-fase-strek {
+  background: var(--farge-ok);
+}
+
+.veiviser-fase-ferdig .veiviser-fase-navn {
+  color: var(--farge-ok);
+}
+
+.veiviser-fase-gjeldende .veiviser-fase-strek {
+  height: 0.5rem;
+  margin-top: -0.0625rem;
+  background: var(--farge-merke);
+}
+
+.veiviser-fase-gjeldende .veiviser-fase-navn {
+  color: var(--farge-tekst);
+  font-weight: 700;
+}
+
+/* Linjen til venstre binder veien hit og det gjeldende steget sammen. */
+.veiviser-lop {
+  position: relative;
+  padding-left: var(--rom-5);
+}
+
+.veiviser-lop::before {
+  content: '';
+  position: absolute;
+  top: var(--rom-2);
+  bottom: var(--rom-4);
+  left: 0.4375rem;
+  border-left: 2px solid var(--farge-linje);
+}
+
+.veiviser-vei {
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-vei-punkt {
+  position: relative;
+  padding: var(--rom-1) 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+.veiviser-vei-punkt::before {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  left: calc(-1 * var(--rom-5) + 0.1875rem);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--farge-ok);
+}
+
+.veiviser-vei-punkt a {
+  font-weight: 600;
+}
+
+.veiviser-svar-valgt {
+  display: block;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-oppsummering {
+  margin-top: var(--rom-4);
+}
+
+.veiviser-oppsummering p[role='status'] {
+  min-height: 1.5em;
+  margin: var(--rom-1) 0 0;
+}
+
+.veiviser-kilder {
+  margin-top: var(--rom-4);
+  font-size: var(--str-s);
+}
+
+.veiviser-kilder .liten-overskrift {
+  margin-top: 0;
+  font-size: var(--str-s);
+}
+
+.veiviser-steg {
+  position: relative;
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.veiviser-steg::before {
+  content: '';
+  position: absolute;
+  top: var(--rom-4);
+  left: calc(-1 * var(--rom-5) - var(--strek));
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid var(--farge-merke);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
+.veiviser-steg-utfall {
+  border: 2px solid var(--farge-ok);
+}
+
+.veiviser-steg-utfall::before {
+  border-color: var(--farge-ok);
+  background: var(--farge-ok);
+}
+
+.veiviser-stegnr {
+  margin: 0;
+  font-size: var(--str-xs);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-stegtittel {
+  margin: var(--rom-1) 0 var(--rom-2);
+  font-size: var(--str-xl);
+  line-height: 1.25;
+}
+
+.veiviser-fakta {
+  display: grid;
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0;
+}
+
+.veiviser-fakta-rad {
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+}
+
+.veiviser-fakta-rad dt {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.veiviser-fakta-rad dd {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.paragraflenker-dokument ul {
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+  list-style: none;
+}
+
+.paragraflenker-dokument li {
+  padding: var(--rom-1) 0;
+  font-size: var(--str-s);
+}
+
+.paragraflenker-navn {
+  margin: 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.paragraflenker-nr {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.veiviser-sporsmal {
+  margin-top: var(--rom-4);
+}
+
+.veiviser-sporsmal-tekst {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-l);
+  font-weight: 700;
+}
+
+.veiviser-svarliste {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-svarknapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3) var(--rom-2) var(--rom-4);
+  border: 2px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-lenke);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.veiviser-svarknapp:hover {
+  background: var(--farge-flate-2);
+}
+
+.veiviser-svarknapp .ikon {
+  flex: none;
+}
+
+.veiviser-neste {
+  margin-top: var(--rom-4);
+  text-decoration: none;
+}
+
+.veiviser-inngang-faser {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1);
+  margin-top: var(--rom-1);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-inngang-faser span:not(:last-child)::after {
+  content: ' →';
+}

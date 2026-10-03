@@ -53,11 +53,12 @@ export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   );
 }
 
-export function Kildeliste({ kilder: liste }: { kilder: readonly KildeRef[] }) {
+export function Kildeliste({ kilder: liste, niva = 2 }: { kilder: readonly KildeRef[]; niva?: 2 | 3 }) {
   const { t } = useTekst();
+  const Overskrift = niva === 3 ? 'h3' : 'h2';
   return (
     <div class="kildeliste">
-      <h2 class="liten-overskrift">{t('felles.kilder')}</h2>
+      <Overskrift class="liten-overskrift">{t('felles.kilder')}</Overskrift>
       <ul>
         {liste.map((k) => (
           <li key={`${k.id}-${k.punkt ?? ''}`}>
