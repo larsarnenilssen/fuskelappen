@@ -86,8 +86,8 @@ export const ruter = [
   '#/tilrettelegging/sprak-og-kort-botid?steg=sp-innforing&svar=ja.nei.ja',
   '#/tilrettelegging/sprak-og-kort-botid?steg=sp-laereplan&svar=ja.nei.nei',
   '#/inntak',
-  '#/inntak/sokerkategori',
-  '#/inntak/sokerkategori?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng',
+  '#/inntak/rett-inntak-soknad',
+  '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng',
   '#/finnes-ikke',
 ];
 

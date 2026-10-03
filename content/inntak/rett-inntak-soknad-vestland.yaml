@@ -1,9 +1,9 @@
-# Vestland i veiviseren «Hvilken søkerkategori?» (fase 5, pakke 1). Fylkesinnhold som supplerer de nasjonale stegene
+# Vestland i veiviseren «Rett, inntak og søknad» (fase 5, pakke 1). Fylkesinnhold som supplerer de nasjonale stegene
 # med samme id, og vises bare når Vestland er valgt. Bygger på den lokale forskriften om inntak og formidling i
 # Vestland (vestland-inntak). vestlandfylke.no svarte ikke 03.10.2026, så sidene til fylkeskommunen er ikke brukt.
 - id: sk-poeng
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   tittel:
     nb: Inntaksområde, skoler og tilleggspoeng
@@ -28,7 +28,7 @@
 
 - id: sk-vilkar-vg23
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   tittel:
     nb: Fortsette på samme skole og deltid
@@ -52,7 +52,7 @@
 
 - id: sk-bosted
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   tittel:
     nb: Flytting til Vestland og søkere fra andre fylker
@@ -73,7 +73,7 @@
 
 - id: sk-soknad
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   tittel:
     nb: Etter inntaket i Vestland
@@ -92,7 +92,7 @@
 
 - id: sk-voksenrett
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   tittel:
     nb: Voksne i Vestland

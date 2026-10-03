@@ -1,12 +1,13 @@
-# Veiviser: hvilken søkerkategori? (fase 5, pakke 1, avgjørelse 041). Egne ord.
+# Veiviser: rett, inntak og søknad (fase 5, pakke 1, avgjørelse 041). Navnet er valgt av eier 03.10.2026, før «Hvilken
+# søkerkategori?», fordi veiviseren dekker mer enn søkerkategorien. Egne ord.
 # Bygger på opplæringslova kapittel 5 og 18, opplæringsforskrifta kapittel 4 og 13, Udirs merknader til forskriften,
 # Udirs sider om retten til videregående opplæring og Udirs oversikt over klageinstanser.
-# Vestland-innholdet står i sokerkategori-vestland.yaml og vises bare når Vestland er valgt.
-- id: sokerkategori
+# Vestland-innholdet står i rett-inntak-soknad-vestland.yaml og vises bare når Vestland er valgt.
+- id: rett-inntak-soknad
   type: veiviser
   tittel:
-    nb: Hvilken søkerkategori?
-    nn: Kva søkjarkategori?
+    nb: Rett, inntak og søknad
+    nn: Rett, inntak og søknad
   tekst:
     nb: Finn ut om søkeren har rett til videregående opplæring som ungdom eller voksen, hvordan søkeren tas inn, og hvilken søknadsfrist som gjelder.
     nn: Finn ut om søkjaren har rett til vidaregåande opplæring som ungdom eller vaksen, korleis søkjaren blir teken inn, og kva søknadsfrist som gjeld.
@@ -24,11 +25,11 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er de tre fasene (rett, inntaksmåte, søknad) en dekkende inndeling av hvordan en søker til videregående tas inn?"
-  stikkord: [veiviser, inntak, søker, ungdomsrett, voksenrett, fortrinnsrett, søknadsfrist, søkjar]
+  stikkord: [veiviser, inntak, søkerkategori, søkjarkategori, søker, ungdomsrett, voksenrett, fortrinnsrett, søknadsfrist, søkjar]
 
 - id: sk-grunnskole
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Grunnskolen
@@ -67,7 +68,7 @@
 
 - id: sk-utland
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Grunnopplæring i utlandet
@@ -96,7 +97,7 @@
 
 - id: sk-ikke-grunnskole
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Ikke rett til videregående ennå
@@ -114,7 +115,7 @@
 
 - id: sk-opphold
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Opphold i Norge
@@ -140,7 +141,7 @@
 
 - id: sk-venter-opphold
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Venter på oppholdstillatelse
@@ -158,7 +159,7 @@
 
 - id: sk-ikke-opphold
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Ikke rett
@@ -175,7 +176,7 @@
 
 - id: sk-kompetanse
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Kompetanse fra før
@@ -201,7 +202,7 @@
 
 - id: sk-utland-vgo
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Videregående fra utlandet
@@ -219,7 +220,7 @@
 
 - id: sk-pabygging
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Påbygging eller rekvalifisering
@@ -243,7 +244,7 @@
 
 - id: sk-rekvalifisering
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Rekvalifisering eller uten rett
@@ -267,7 +268,7 @@
 
 - id: sk-alder
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Alder
@@ -293,7 +294,7 @@
 
 - id: sk-ungdom-eller-voksen
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Ungdom eller voksen
@@ -318,7 +319,7 @@
 
 - id: sk-ungdomsrett
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: rett
   tittel:
     nb: Ungdomsrett
@@ -351,7 +352,7 @@
 
 - id: sk-vilkar-vg23
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: Vilkår for Vg2 og Vg3
@@ -380,7 +381,7 @@
 
 - id: sk-inntaksmate
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: Inntaksmåte
@@ -430,7 +431,7 @@
 
 - id: sk-fortrinn-program
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: "Fortrinnsrett: særlig utdanningsprogram"
@@ -460,7 +461,7 @@
 
 - id: sk-fortrinn-skole
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: "Fortrinnsrett: tilrettelagt skole"
@@ -492,7 +493,7 @@
 
 - id: sk-fortrinn-tegnsprak
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: "Fortrinnsrett: tegnspråk"
@@ -515,7 +516,7 @@
 
 - id: sk-individuell-behandling
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: Individuell behandling
@@ -542,7 +543,7 @@
 
 - id: sk-poeng
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: inntak
   tittel:
     nb: Konkurrerer på poeng
@@ -575,7 +576,7 @@
 
 - id: sk-bosted
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: soknad
   tittel:
     nb: Hvor søknaden sendes
@@ -600,7 +601,7 @@
 
 - id: sk-soknad
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: soknad
   tittel:
     nb: Søknad, svar og klage
@@ -632,7 +633,7 @@
 
 - id: sk-voksenrett
   type: steg
-  veiviser: sokerkategori
+  veiviser: rett-inntak-soknad
   fase: soknad
   tittel:
     nb: Voksenrett

@@ -1,6 +1,6 @@
 # 043 – Inntak: ny modul, lokale steg som bokser og felles veiviserkort
 
-**Kontekst:** Fase 5, pakke 1. Eier godkjente forslaget i `docs/arbeidsordrer/fase-5-forslag.md` (03.10.2026): søkerkategorier og rettigheter ved inntak, med veiviseren «Hvilken søkerkategori?». Innholdet fra Vestlands lokale forskrift om inntak skal bare vises når Vestland er valgt, og uten valgt fylke står bare de nasjonale reglene, med en merknad.
+**Kontekst:** Fase 5, pakke 1. Eier godkjente forslaget i `docs/arbeidsordrer/fase-5-forslag.md` (03.10.2026): søkerkategorier og rettigheter ved inntak, med veiviseren «Rett, inntak og søknad». Innholdet fra Vestlands lokale forskrift om inntak skal bare vises når Vestland er valgt, og uten valgt fylke står bare de nasjonale reglene, med en merknad.
 
 **Valg:**
 - **Ny modul `inntak`** under «Elever og opplæring», før Tilrettelegging. Inntak er et eget emne i oppdraget og får egne frister til årshjulet (fase 8). Tidslinjen (pakke 2) og poengberegningen (pakke 3) kommer i samme modul.
@@ -12,3 +12,5 @@
 - **Nye kilder:** Udirs sider om retten til videregående opplæring, Udirs merknader til opplæringsforskrifta kapittel 4 og Udirs oversikt over klageinstanser.
 
 **Konsekvens:** Nye fylker får inntaksregler ved å legge lokale steg med samme id i `content/inntak/`, uten kodeendring. Lokale steg som skal erstatte et nasjonalt steg, bruker fortsatt `forhold: erstatter`.
+
+**Navn (eier 03.10.2026):** Veiviseren het først «Hvilken søkerkategori?». Den heter «Rett, inntak og søknad» etter de tre fasene, fordi den dekker mer enn søkerkategorien. Adressen er `#/inntak/rett-inntak-soknad`.

@@ -1,6 +1,6 @@
 # 044 – Veiviseren: én side per valg, og mindre rulling
 
-**Kontekst:** Eier så 03.10.2026 at veiviserne hadde mange steg uten valg, der brukeren bare trykket «Neste». I «Hvilken søkerkategori?» hadde 13 av 29 steg bare «Neste», og den vanligste veien hadde 12 kort. Eier ba om at informasjonen ble samlet der det ikke er valg, at løsningen skulle gjelde alle veiviserne, og at tiltak mot lang rulling skulle vurderes for veiviserne generelt, så de forblir like.
+**Kontekst:** Eier så 03.10.2026 at veiviserne hadde mange steg uten valg, der brukeren bare trykket «Neste». I «Rett, inntak og søknad» hadde 13 av 29 steg bare «Neste», og den vanligste veien hadde 12 kort. Eier ba om at informasjonen ble samlet der det ikke er valg, at løsningen skulle gjelde alle veiviserne, og at tiltak mot lang rulling skulle vurderes for veiviserne generelt, så de forblir like.
 
 **Valg:**
 - **Én side per valg.** Steg uten spørsmål står på samme side som spørsmålet eller utfallet de fører til (`finnSide` i `src/core/veiviser/veiviser.ts`). Brukeren trykker bare der det er et valg, og «Neste»-knappen er borte. Adressen peker på det første steget på siden. En adresse som peker på et annet steg på siden, gir samme side, så gamle lenker og kartet virker.
@@ -12,7 +12,8 @@
   - «Veien hit» viser de to siste valgene. Resten vises med «Vis hele veien».
   - Under knappene står «Tilbake til …», med lenke til forrige valg, og nederst «Til toppen».
 - **Lukkede steg på mobil (eier 03.10.2026):** På en side med flere steg er stegene uten valg lukket på mobil. Rammen viser tittelen, den første setningen som smakebit, fristen og ansvaret, og om det finnes lokale regler. «Les hele steget» åpner rammen. Steget med spørsmålet eller utfallet er alltid åpent. Fra 64rem, der prosessen står i egen kolonne, er alle steg åpne.
+- **Svarknappene** står under hverandre også på stor skjerm, og har tekst i størrelse `--str-m` med halvfet skrift (eier 03.10.2026). Side om side ble knappene ulikt høye.
 - **«Til spørsmålet»** (eller «Til der veien ender») øverst på en side med flere steg går rett til spørsmålet, med fokus på det.
 - **Vurdert, men ikke valgt:** en egen fast verktøylinje med fram og tilbake. Nettleserens tilbakeknapp og lenken under knappene dekker det samme, og en ekstra fast linje tar plass på små skjermer. Å lukke teksten i stegene uten valg er heller ikke valgt, fordi teksten er det brukeren trenger.
 
-**Konsekvens:** Alle veiviserne har færre sider uten nye tekster. «Hvilken søkerkategori?» har 23 steg. Den vanligste veien er 7 sider med 6 trykk, og siden der veien ender, er omtrent tre skjermhøyder på mobil med Vestland valgt. Før var det fem.
+**Konsekvens:** Alle veiviserne har færre sider uten nye tekster. «Rett, inntak og søknad» har 23 steg. Den vanligste veien er 7 sider med 6 trykk, og siden der veien ender, er omtrent tre skjermhøyder på mobil med Vestland valgt. Før var det fem.

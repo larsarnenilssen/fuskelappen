@@ -1,16 +1,16 @@
-// Inntak (fase 5, pakke 1): veiviseren «Hvilken søkerkategori?» med de nasjonale reglene, Vestland-innholdet som
+// Inntak (fase 5, pakke 1): veiviseren «Rett, inntak og søknad» med de nasjonale reglene, Vestland-innholdet som
 // egne bokser når Vestland er valgt, merknaden om lokale regler og lenkene begge veier til særskilt språkopplæring.
 import { expect, test } from '@playwright/test';
 import { aapneSteg, erMobil, settLagret } from './hjelp.ts';
 
-const VEIVISER = './#/inntak/sokerkategori';
+const VEIVISER = './#/inntak/rett-inntak-soknad';
 
 test.describe('inntak', () => {
   test('fra oversikten gjennom rett og inntaksmåte til søknadsfristen', async ({ page }, info) => {
     await page.goto('./#/inntak');
     // Uten valgt fylke står bare de nasjonale reglene, med merknad.
     await expect(page.getByText('Viser de nasjonale reglene. Fylket kan ha lokale regler om inntak.')).toBeVisible();
-    await page.getByRole('link', { name: /Hvilken søkerkategori\?/ }).click();
+    await page.getByRole('link', { name: /Rett, inntak og søknad/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
     await expect(steg).toHaveText('Grunnskolen');
 
@@ -67,7 +67,7 @@ test.describe('inntak', () => {
     await page.locator('.veiviser-steg').getByRole('link', { name: 'særskilt språkopplæring og kort botid' }).click();
     await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Elever med kort botid');
     await page.locator('.veiviser-steg').last().getByRole('button', { name: 'Mer om dette steget' }).click();
-    await page.getByRole('link', { name: 'Hvilken søkerkategori?' }).click();
+    await page.getByRole('link', { name: 'Rett, inntak og søknad' }).click();
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Grunnopplæring i utlandet');
   });
 });
