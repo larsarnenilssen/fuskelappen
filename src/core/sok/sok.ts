@@ -44,11 +44,6 @@ export interface Sokeresultat {
   fylke: string | null;
 }
 
-/** Treffene som gjelder for brukeren: nasjonale, og fylkesinnhold bare for det valgte fylket. */
-export function synligeTreff(treff: readonly Sokeresultat[], fylke: string | null): Sokeresultat[] {
-  return treff.filter((t) => t.fylke === null || t.fylke === fylke);
-}
-
 /**
  * Lager en funksjon som gjør nynorske og bokmålske former like, slik at
  * «skule» og «skole» blir samme term. Varianter byttes ut også inne i

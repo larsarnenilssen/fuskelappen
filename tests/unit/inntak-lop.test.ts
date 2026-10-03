@@ -9,7 +9,7 @@ import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { STUDIEFORBEREDENDE } from '../../src/modules/fag/tilbud/modell.ts';
 import { inntakNb } from '../../src/strings/moduler/inntak.nb.ts';
 import { inntakNn } from '../../src/strings/moduler/inntak.nn.ts';
-import { fordelingsfil } from '../../src/modules/inntak/innhold.ts';
+import { fordelingsfil } from '../../src/modules/inntak/fordeling.ts';
 
 const mappe = join(__dirname, '../../data/udir');
 // Samme valg som appen: filen for skoleåret i dag.
