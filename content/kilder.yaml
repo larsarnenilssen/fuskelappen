@@ -498,6 +498,24 @@ kilder:
       yrkesfaglig rekvalifisering. Kildesjekken leser oversiktssiden. Stegene i veiviseren «Rett, inntak og søknad»
       viser til undersidene.
 
+  - id: udir-fag-og-timefordeling-grunnskole
+    navn: Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2)
+    kortnavn: Udir-1-2026, grunnskolen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/2.-grunnskolen/2.2ordinar-fag-og-timefordeling/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Fagene på vitnemålet fra grunnskolen i poengberegningen til Vg1 (src/modules/inntak/beregning/grunnskolefag.ts).
+      Endres tabellen, lager kildesjekken en kontrollsak, og listen må sjekkes. Neste rundskriv har ny adresse.
+
   - id: udir-merknader-ofo
     navn: Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
     kortnavn: Udirs merknader til opplæringsforskrifta

@@ -13,6 +13,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - **Vestland:** tilleggspoeng på Vg1 musikk, dans og drama og Vg1 idrettsfag.
   - «Slik regnes poengene» forklarer reglene, med kilder.
 
+### Endret
+
+- **Kortere kilder i utregningen** i alle kalkulatorene: f.eks. «Opplæringsforskrifta § 4-19 første ledd bokstav a» og «SFS 2213 Vedlegg 1» i stedet for de fulle navnene, med lenke rett til paragrafen i appen når den finnes der. Kopien av utregningen har fortsatt de fulle navnene.
+
 ## [0.27.0] – 2026-10-03
 
 ### Lagt til

@@ -62,6 +62,6 @@ export const manifest: Modulmanifest = {
   async frister() {
     return (await hentInnhold()).frister;
   },
-  kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'udir-retten-til-vgo', 'udir-merknader-ofo', 'udir-klageinstanser', 'vestland-forskrift-inntak', 'udir-fag-og-timefordeling'],
+  kilder: ['opplaeringslova', 'opplaeringsforskrifta', 'udir-retten-til-vgo', 'udir-merknader-ofo', 'udir-klageinstanser', 'vestland-forskrift-inntak', 'udir-fag-og-timefordeling-grunnskole', 'vilbli'],
   status: 'aktiv',
 };
