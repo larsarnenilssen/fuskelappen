@@ -77,6 +77,10 @@ export const ruter = [
   '#/lov/forvaltningsloven',
   '#/lov/hovedtariffavtalen/hta-ansettelse',
   '#/lov/sfs2213',
+  '#/tilrettelegging',
+  '#/tilrettelegging/individuell-tilrettelegging',
+  '#/tilrettelegging/individuell-tilrettelegging?steg=ti-tiltak&svar=tvil',
+  '#/tilrettelegging/individuell-tilrettelegging?steg=ti-vurder-individuell&svar=tvil.nei',
   '#/finnes-ikke',
 ];
 
@@ -111,4 +115,6 @@ export async function finnOverflyt(side: Page): Promise<string[]> {
 export async function aapneAlt(side: Page, omraade = 'main'): Promise<void> {
   const lukket = side.locator(`${omraade} button[aria-expanded="false"]`);
   for (let i = 0; i < 20 && (await lukket.count()) > 0; i++) await lukket.first().click();
+  // Lukkede <details>, f.eks. kildene i en veiviser.
+  await side.locator(`${omraade} details:not([open])`).evaluateAll((liste) => liste.forEach((d) => ((d as HTMLDetailsElement).open = true)));
 }
