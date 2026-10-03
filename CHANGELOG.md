@@ -6,6 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Tilrettelegging:** Ingressen og figuren sier «noen» elever i stedet for «noen få», og utfallet «Eleven trenger ikke lenger tilrettelegging» sier ikke lenger at det ikke trengs nytt vedtak. Det står åpent.
 - **Begreper:** Øverst på hvert begrep står «Begreper» som lenke til begrepsbanken, så det er tydelig hvor du er når du har kommet dit via en lenke fra en annen del av appen.
 
 ## [0.23.0] – 2026-10-03

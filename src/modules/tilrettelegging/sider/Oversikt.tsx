@@ -5,7 +5,7 @@ import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, veiviserRute, type Veiviserinnhold } from '../innhold.ts';
 
 /**
- * Figur: individuell tilrettelegging er en del av tilpasset opplæring. Den indre boksen (noen få elever) står inne i
+ * Figur: individuell tilrettelegging er en del av tilpasset opplæring. Den indre boksen (noen elever) står inne i
  * den ytre (alle elever), fordi også elever med vedtak skal ha tilpasset opplæring. Navnene lenker til begrepene.
  */
 function Figur() {

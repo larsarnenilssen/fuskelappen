@@ -121,11 +121,3 @@ praksis:
     grunnlag: Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen.
     berorer: [ti-vedtak]
     bekreftet: null
-
-  - id: avslutte-tilrettelegging-uten-vedtak
-    tittel: Avslutte tilrettelegging uten nytt vedtak
-    sporsmal: Avsluttes individuell tilrettelegging uten nytt vedtak når eleven ikke lenger trenger den?
-    appen: Utfallet «Eleven trenger ikke lenger tilrettelegging» i veiviseren sier at det ikke trengs noe nytt vedtak for å avslutte tilretteleggingen.
-    grunnlag: Eier 03.10.2026. Veilederen punkt 9.2.2 sier ikke noe uttrykkelig om vedtak.
-    berorer: [ti-avsluttet]
-    bekreftet: null
