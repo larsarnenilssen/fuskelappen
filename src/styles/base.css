@@ -5252,3 +5252,169 @@ button.frist-stripe-celle:hover {
   align-items: center;
   gap: var(--rom-1);
 }
+
+/* ---------- Poengberegning ved inntak (avgjørelse 047) ---------- */
+
+.poeng-trinn {
+  margin-bottom: var(--rom-2);
+}
+
+.poeng-fagliste,
+.poeng-rader {
+  margin: 0;
+  padding: 0 var(--rom-3) var(--rom-2);
+  list-style: none;
+}
+
+/* Ett fag per rad: navnet til venstre, karakteren til høyre, med strek mellom radene. */
+.poeng-fag {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5rem;
+  align-items: center;
+  gap: var(--rom-2);
+  padding: var(--rom-1) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.poeng-fag:last-child {
+  border-bottom: 0;
+}
+
+.poeng-fagnavn {
+  font-size: var(--str-m);
+  line-height: 1.3;
+}
+
+.poeng-velger,
+.poeng-type {
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-2);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-s);
+  background: var(--farge-bakgrunn);
+  color: var(--farge-tekst);
+  font: inherit;
+}
+
+.poeng-velger {
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Vg2 og Vg3: type og karakter på én linje, og en knapp for en annen karakter i samme fag. */
+.poeng-rad {
+  padding: var(--rom-2) 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+}
+
+.poeng-rad:last-child {
+  border-bottom: 0;
+}
+
+.poeng-rad-topp {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5rem var(--trykkflate);
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+.poeng-annen-knapp {
+  color: var(--farge-lenke);
+}
+
+.poeng-annen {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 6.5rem var(--trykkflate);
+  align-items: center;
+  gap: var(--rom-2);
+  margin-top: var(--rom-2);
+}
+
+.poeng-annen-tekst {
+  font-size: var(--str-s);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+  text-align: right;
+}
+
+.poeng-avkryssing {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.poeng-rad .poeng-avkryssing {
+  padding: 0;
+}
+
+.poeng-avkryssing input {
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--farge-aksent);
+}
+
+.poeng-legg-til {
+  margin: 0 var(--rom-3) var(--rom-2);
+}
+
+.poeng-kilder {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.poeng-kilder .forklaring-knapp {
+  padding-inline: var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.poeng .skjemadel .felt {
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+.poeng-tomt {
+  padding: var(--rom-4);
+  border: var(--strek) dashed var(--farge-kant);
+  border-radius: var(--radius-m);
+  text-align: center;
+}
+
+.poeng-regler {
+  margin-top: var(--rom-5);
+}
+
+.poeng-regler .forklaring {
+  margin-bottom: var(--rom-2);
+}
+
+/* På bred skjerm følger resultatet med når skjemaet rulles, så poengsummen alltid er synlig. */
+@media (min-width: 64rem) {
+  .poeng .kalkulator-resultat {
+    position: sticky;
+    top: calc(var(--topplinje-hoyde) + var(--rom-4));
+  }
+}
+
+/* Kildene i utregningen står med kortnavn, i liten skrift (eier 03.10.2026). */
+.kildelenke-kort {
+  font-size: var(--str-xs);
+}
+
+/* Valget av løp og navnet på faget over raden (Vg2 og Vg3). */
+.poeng .poeng-lop {
+  padding-bottom: var(--rom-2);
+}
+
+.poeng-lop-hjelp {
+  margin: 0;
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+.poeng-rad-navn {
+  display: block;
+  margin-bottom: var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+}

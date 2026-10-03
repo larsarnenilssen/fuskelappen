@@ -4,7 +4,7 @@
 // fagkodene fra Grep, årsrammen fra koblingen (avgjørelse 023), valgfrie plasser, alternativer, tilpassede
 // ordninger og avvik. Kildesjekken lager den på nytt hver uke etter at Grep og Udir-1 er hentet.
 // Kjør: npm run tilbud:rapport
-import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Arsrammerad } from '../../src/modules/arbeidstid/beregning/arsrammer.ts';
@@ -14,7 +14,7 @@ import { ukjenteNavn } from '../../src/modules/opplaeringslop/navn.ts';
 import { avvikTekst, byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
-import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
+import { lesFagrelasjoner, lesFordelinger } from '../data/les.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
 
 export interface Kobling {
@@ -283,10 +283,9 @@ export function lagTilbudsrapport(indeks: Fagindeks, fordeling: Fagfordeling | n
   return `${ut.join('\n').trimEnd()}\n`;
 }
 
-/** Leser fag- og timefordelingene i data/udir/ og velger den som gjelder på datoen, og eventuelt den neste. */
-export function lesFordelinger(rot: string, dato: string): { fordeling: Fagfordeling | null; neste: Fagfordeling | null } {
-  const filer = readdirSync(join(rot, 'data/udir')).filter((f) => /^fagfordeling-\d{4}-\d{4}\.json$/.test(f));
-  const alle = filer.map((f) => JSON.parse(readFileSync(join(rot, 'data/udir', f), 'utf8')) as Fagfordeling);
+/** Fag- og timefordelingen som gjelder på datoen, og eventuelt den neste. */
+export function fordelingOgNeste(rot: string, dato: string): { fordeling: Fagfordeling | null; neste: Fagfordeling | null } {
+  const alle = lesFordelinger(rot);
   const fordeling = velgFordeling(alle, dato);
   const neste = alle.filter((f) => f.skolear > (fordeling?.skolear ?? skolearFor(dato))).sort((a, b) => a.skolear.localeCompare(b.skolear))[0] ?? null;
   return { fordeling, neste };
@@ -294,13 +293,13 @@ export function lesFordelinger(rot: string, dato: string): { fordeling: Fagforde
 
 /** Fag som bygger på andre fag, fra VIGO (data/vigo/fagrelasjoner.json). */
 export function lesFagBygger(rot: string): FagBygger {
-  return (JSON.parse(readFileSync(join(rot, 'data/vigo/fagrelasjoner.json'), 'utf8')) as Fagrelasjoner).byggerPaa;
+  return lesFagrelasjoner(rot)?.byggerPaa ?? {};
 }
 
 /** Lager rapporten med dataene i repoet. */
 export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): string {
   const g = lesKoblingsgrunnlag(rot);
-  const { fordeling, neste } = lesFordelinger(rot, dato);
+  const { fordeling, neste } = fordelingOgNeste(rot, dato);
   return lagTilbudsrapport(g.indeks, fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot));
 }
 
@@ -311,7 +310,7 @@ export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().s
  */
 export function ukjenteNavnFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): { linjer: string[]; ordninger: string[] } {
   const g = lesKoblingsgrunnlag(rot);
-  const { fordeling, neste } = lesFordelinger(rot, dato);
+  const { fordeling, neste } = fordelingOgNeste(rot, dato);
   const bygger = lesFagBygger(rot);
   const tilbud = [fordeling, neste].flatMap((f) => (f ? Object.keys(g.indeks.programomrader).map((k) => byggTilbud(k, g.indeks, f, bygger)) : []));
   return ukjenteNavn(tilbud);

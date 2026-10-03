@@ -2,7 +2,7 @@
 import { describe, expect, it } from 'vitest';
 import { lagKontrollindeks, tellKontroll } from '../../src/core/kontroll/indeks.ts';
 import { finnTall, lesTall } from '../../src/core/kontroll/tekst.ts';
-import { sjekkbareVerdier, sjekkSitat, sjekkVerdier } from '../../src/core/kontroll/verdisjekk.ts';
+import { sjekkbareVerdier, sjekkSitat, sjekkVerdier, verdiISitat } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Innholdselement } from '../../src/core/innhold/skjema.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import { lagKontrollrapport } from '../../scripts/kontroll/rapport.ts';
@@ -14,6 +14,16 @@ describe('tall på norsk', () => {
     expect(finnTall('minimum kr. 12 000 pr. år').map((t) => t.verdi)).toEqual([12000]);
     expect(finnTall('årsramme 607,5/810 og 1-15 elever').map((t) => t.verdi)).toEqual([607.5, 810, 1, 15]);
     expect(lesTall('12,0')).toBe(12);
+  });
+
+  it('finner verdien i sitatet, også når tallet er skrevet med ord', () => {
+    const forskrift = 'eit utrekna gjennomsnitt, med to desimalar, multiplisert med ti';
+    expect(verdiISitat(forskrift, 2)?.tekst).toBe('to');
+    expect(verdiISitat(forskrift, 10)?.tekst).toBe('ti');
+    expect(verdiISitat('vere med i utrekninga med talverdien null', 0)?.tekst).toBe('null');
+    expect(verdiISitat('Søkaren får 3 tilleggspoeng', 3)?.tekst).toBe('3');
+    // Bare hele ord: «ti» i «tilleggspoeng» er ikke et tall.
+    expect(verdiISitat('Søkaren får tilleggspoeng', 10)).toBeNull();
   });
 
   it('tar bare første ledd i punktnumre og datoer', () => {

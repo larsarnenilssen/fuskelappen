@@ -3,12 +3,8 @@
 import type { Sokeoppforing } from '../../core/sok/sok.ts';
 import type { Merknader, Merknadsliste } from '../fag/vigo/skjema.ts';
 
-let merknader: Promise<Merknader> | null = null;
-
-export function lastMerknader(): Promise<Merknader> {
-  merknader ??= import('../../../data/vigo/merknader.json').then((m) => m.default as unknown as Merknader);
-  return merknader;
-}
+// Lastingen står i datalaget (avgjørelse 049).
+export { lastMerknader } from '../../data/vigo.ts';
 
 /** Begrepet som viser hver kodeliste. */
 export const BEGREP_FOR: Record<Merknadsliste, string> = { fagmerknader: 'fagmerknader', vitnemalsmerknader: 'vitnemalsmerknader' };

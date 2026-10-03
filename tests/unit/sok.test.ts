@@ -2,6 +2,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Synonymer } from '../../src/core/innhold/skjema.ts';
 import { byggIndeks, lagNormaliserer, lastIndeks, serialiser, sok, type Sokeoppforing } from '../../src/core/sok/sok.ts';
+import { synligeTreff } from '../../src/core/sok/synlige.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
 const rot = join(__dirname, '../..');
@@ -63,5 +64,24 @@ describe('søk', () => {
     const lastet = lastIndeks(serialiser(indeks), synonymer);
     expect(sok(lastet, 'skule').map((r) => r.id)).toEqual(ider('skule'));
     expect(sok(lastet, 'skule')[0]?.tittel).toEqual({ nb: 'Skolemiljø', nn: 'Skulemiljø' });
+  });
+});
+
+describe('fylkesinnhold i søket', () => {
+  const indeks = byggIndeks(
+    [
+      { id: 'begrep:arsramme', type: 'begrep', tittel: { nb: 'Årsramme', nn: 'Årsramme' }, rute: '/begreper/arsramme', modul: 'begreper' },
+      { id: 'begrep:inntaksomrade', type: 'begrep', tittel: { nb: 'Inntaksområde', nn: 'Inntaksområde' }, rute: '/begreper/inntaksomrade', modul: 'begreper', fylke: '46' },
+    ],
+    synonymer,
+  );
+
+  it('treff som bare gjelder et fylke, vises bare når det fylket er valgt', () => {
+    const treff = sok(indeks, 'inntaksområde');
+    expect(treff.map((t) => t.fylke)).toEqual(['46']);
+    expect(synligeTreff(treff, '46')).toHaveLength(1);
+    expect(synligeTreff(treff, null)).toHaveLength(0);
+    expect(synligeTreff(treff, '03')).toHaveLength(0);
+    expect(synligeTreff(sok(indeks, 'årsramme'), null)).toHaveLength(1);
   });
 });

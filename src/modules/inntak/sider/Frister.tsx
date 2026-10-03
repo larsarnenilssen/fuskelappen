@@ -12,7 +12,7 @@ import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Paragraflenker } from '../../../components/Paragraflenker.tsx';
 import type { Frist } from '../../../core/innhold/skjema.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
-import { iDag } from '../../arbeidstid/kontekst.ts';
+import { iDag } from '../../../data/skolear.ts';
 import type { SideProps } from '../../typer.ts';
 import { fristerRute, hentInnhold, type Inntaksinnhold } from '../innhold.ts';
 import { FILTRE, gjelder, heleAret, kortManed, lesFilter, manedsnavn, manedsoverskrift, perManed, sorter, tidspunkt, type Filter } from '../tidslinje.ts';

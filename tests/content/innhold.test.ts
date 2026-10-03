@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest';
 import type { Fylker, Innholdselement, Kilderegister, Synonymer } from '../../src/core/innhold/skjema.ts';
 import { finnOverlapp, slaaSammen } from '../../src/core/regler/motor.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
-import { lesInnhold } from '../../scripts/innhold/alt.ts';
+import { lesInnhold, lesRegelsett } from '../../scripts/innhold/alt.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 import { lagKilderMd } from '../../scripts/lag-kilder-md.ts';
 
@@ -150,5 +150,26 @@ describe('annet elevrettet arbeid', () => {
       expect(avsnitt).toBeTruthy();
       expect(begrep?.[m]).toContain(avsnitt);
     }
+  });
+});
+
+describe('fylkene i innholdet', () => {
+  const fylker = new Set((lesFil(rot, join(rot, 'content/fylker.yaml')) as { fylker: { nummer: string }[] }).fylker.map((f) => f.nummer));
+  const lovverk = lesFil(rot, join(rot, 'content/lovverk.yaml')) as { dokumenter?: { id: string; gyldighet?: { fylke?: string } }[] };
+
+  it('alle fylkesnumre i innhold, regler, lovverk og kilder finnes i fylkeslisten', () => {
+    const brukt = [
+      ...lesInnhold(rot).flatMap(({ element: e }) => (e.gyldighet.niva === 'nasjonal' ? [] : [`${e.id}: ${e.gyldighet.fylke}`])),
+      ...lesRegelsett(rot).flatMap((r) => (r.gyldighet.niva === 'nasjonal' ? [] : [`${r.id}: ${r.gyldighet.fylke}`])),
+      ...(lovverk.dokumenter ?? []).flatMap((d) => (d.gyldighet?.fylke ? [`${d.id}: ${d.gyldighet.fylke}`] : [])),
+      ...register.kilder.flatMap((k) => (k.fylke ? [`${k.id}: ${k.fylke}`] : [])),
+    ];
+    expect(brukt.length).toBeGreaterThan(0);
+    expect(brukt.filter((b) => !fylker.has(b.slice(-2)))).toEqual([]);
+  });
+
+  it('alle fylkene i skolelisten (NSR) finnes i fylkeslisten', () => {
+    const skoler = JSON.parse(readFileSync(join(rot, 'data/skoler/vgs.json'), 'utf8')) as { skoler: { fylke: string }[] };
+    expect([...new Set(skoler.skoler.map((s) => s.fylke))].filter((f) => !fylker.has(f))).toEqual([]);
   });
 });

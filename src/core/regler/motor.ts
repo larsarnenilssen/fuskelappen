@@ -124,6 +124,23 @@ export function finnSupplerende(alle: readonly Regelsett[], nokkel: string, kont
 }
 
 /**
+ * Nøklene til verdier som bare finnes lokalt for brukerens fylke eller skole og supplerer de nasjonale, med et
+ * gitt prefiks, f.eks. «inntak.tilleggspoeng_». Slik kan et fylke få nye verdier (f.eks. tilleggspoeng) med bare
+ * en regelfil. Gir fulle nøkler («inntak.tilleggspoeng_idrett_2»), sortert.
+ */
+export function finnLokaleNokler(alle: readonly Regelsett[], prefiks: string, kontekst: Regelkontekst): string[] {
+  const [regelverk, navn] = delNokkel(prefiks);
+  const periode = velgPeriode(alle, regelverk, kontekst);
+  const { skole, fylke } = lokale(alle, regelverk, referansedato(periode, kontekst), kontekst);
+  const nokler = new Set<string>();
+  for (const r of [...fylke, ...skole]) {
+    if (r.gyldighet.niva === 'nasjonal' || r.gyldighet.forhold !== 'supplerer') continue;
+    for (const n of Object.keys(r.verdier)) if (n.startsWith(navn)) nokler.add(`${regelverk}.${n}`);
+  }
+  return [...nokler].sort();
+}
+
+/**
  * Slår sammen regelsett som er delt på flere filer (samme id, ulik «del»).
  * Delene må ha samme regelverk, periode og gyldighet, og ingen verdinøkkel kan stå i to deler.
  */

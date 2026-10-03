@@ -4,6 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.28.0] – 2026-10-03
+
+### Lagt til
+
+- **Inntak: Poengberegning** til Vg1, Vg2 og Vg3 etter opplæringsforskrifta § 4-19 og § 4-25, med utregningen trinn for trinn og kilden til hver regel.
+  - **Vg1:** Fagene med standpunkt på vitnemålet fra grunnskolen står ferdig, med eksamen og valgfag (snittet av valgfagene teller som én karakter).
+  - **Vg2 og Vg3:** Velg løpet søkeren har gått, så fylles fagene inn med standpunkt eller halvår, også de felles programfagene på yrkesfag. Du kan endre radene, legge til flere eller starte med blankt ark. «Annen karakter» gir den beste av to karakterer i samme fag, ved privatisteksamen eller omvalg.
+  - IV og IM teller med null, fritak og «deltatt» teller ikke, og kalkulatoren sier fra når søkeren skal behandles individuelt.
+  - **Vestland:** tilleggspoeng på Vg1 musikk, dans og drama og Vg1 idrettsfag.
+  - «Slik regnes poengene» forklarer reglene, med kilder.
+
+### Endret
+
+- **Søket viser fylkesinnhold bare for valgt fylke:** Begreper som bare gjelder ett fylke (f.eks. inntaksområde i Vestland), vises i søket bare når det fylket er valgt.
+- **Kortere kilder i utregningen** i alle kalkulatorene: f.eks. «Opplæringsforskrifta § 4-19 første ledd bokstav a» og «SFS 2213 Vedlegg 1» i stedet for de fulle navnene, med lenke rett til paragrafen i appen når den finnes der. Kopien av utregningen har fortsatt de fulle navnene.
+
 ## [0.27.0] – 2026-10-03
 
 ### Lagt til

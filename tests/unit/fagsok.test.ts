@@ -6,6 +6,8 @@ import { finnVerdi, slaaSammen, somTabell } from '../../src/core/regler/motor.ts
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import { lesArsrammer, radNavn } from '../../src/modules/arbeidstid/beregning/index.ts';
 import { lagFagindeks, normaliser, sokFag } from '../../src/modules/arbeidstid/fagsok.ts';
+import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
 const rot = join(__dirname, '../..');
@@ -17,14 +19,14 @@ const regler = slaaSammen(
 );
 const hent = (n: string) => finnVerdi(regler, n, { dato: '2026-09-29' });
 const rader = lesArsrammer(hent('sfs2213.arsrammer'));
-const grep = JSON.parse(readFileSync(join(rot, 'data/grep/programomrader.json'), 'utf8')) as { programomrader: Record<string, Record<string, [string, string][]>> };
-const fagkoder = JSON.parse(readFileSync(join(rot, 'data/grep/fagkoder.json'), 'utf8')) as { fagkoder: Record<string, [string, string][]> };
+// Samme data som appen får fra virtual:fagsok: bygget fra fagindeksen (avgjørelse 049).
+const fagsok = byggFagsokdata(JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks, fagsokgrunnlag(regler));
 const indeks = lagFagindeks(rader, {
   programnavn: somTabell(hent('sfs2213.programnavn')),
   fagnavn: somTabell(hent('sfs2213.fagnavn')),
   kallenavn: somTabell(hent('sfs2213.kallenavn')),
-  programomrader: grep.programomrader,
-  fagkoder: fagkoder.fagkoder,
+  programomrader: fagsok.programomrader,
+  fagkoder: fagsok.fagkoder,
 });
 const forste = (s: string) => {
   const t = sokFag(indeks, s)[0];

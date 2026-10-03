@@ -145,3 +145,37 @@ praksis:
     grunnlag: Eier 03.10.2026. Forvaltningsloven § 32 første ledd bokstav a sier at klagen settes fram for organet som har truffet vedtaket. At det vanligvis er inntakskontoret, står ikke i kildene.
     berorer: [sk-soknad]
     bekreftet: null
+
+  - id: poeng-avrunding
+    tittel: Avrunding i poengberegningen ved inntak
+    sporsmal: Regnes gjennomsnittet først med to desimaler (vanlig avrunding) og så ganges med ti, slik at 62 ÷ 14 gir 44,3 poeng?
+    appen: Poengberegningen avrunder gjennomsnittet til to desimaler etter vanlige regler (4,428… blir 4,43, og 4,125 blir 4,13) og ganger så med ti.
+    grunnlag: >-
+      Eier 03.10.2026 (44,3 i F1). Forskriften (§ 4-19 og § 4-25) sier gjennomsnitt med to desimaler, ganget med ti.
+      Udirs merknad sier «vanlige avrundingsregler», men beskriver rekkefølgen som sum × 10 ÷ antall fag, som gir 44,29
+      for F1. Appen følger forskriften.
+    berorer: [inntak-2024/snitt_desimaler, inntak-2024/poeng_faktor, po-vg1]
+    bekreftet: null
+
+  - id: poeng-vg3-vestland
+    tittel: Karakterene som teller ved inntak til Vg3 i Vestland
+    sporsmal: Teller karakterene fra både Vg1 og Vg2 ved inntak til Vg3 i Vestland, selv om den lokale forskriften bare nevner Vg2?
+    appen: Poengberegningen bruker karakterene fra Vg1 og Vg2 til Vg3, også når Vestland er valgt.
+    grunnlag: Eier 03.10.2026. Opplæringsforskrifta § 4-25 sier Vg1 og eventuelt Vg2. Vestlands forskrift § 2-3 andre ledd nevner bare Vg2.
+    berorer: [po-vl-vg3]
+    bekreftet: null
+
+  - id: poeng-halvar-vg1-standpunkt-vg2
+    tittel: Den siste vurderingen gjelder i fag som fortsetter, ved inntak til Vg3
+    sporsmal: >-
+      Gjelder det fortsatt at bare den siste vurderingen teller i et fag som fortsetter, slik at halvårsvurderingen
+      fra Vg1 ikke teller når faget har halvår eller standpunkt på Vg2, mens standpunkt står?
+    appen: >-
+      Poengberegningen til Vg3 tar bort halvårsvurderingen fra Vg1 når samme fag har en ny vurdering på Vg2 (halvår
+      eller standpunkt), f.eks. norsk, kroppsøving og fremmedspråk. Standpunktkarakterer tas aldri bort.
+    grunnlag: >-
+      Eier 03.10.2026: «Siste halvårsvurdering i sammenhengende fag gjelder … halvårsvurderingene ‹overskriver›
+      hverandre etter hvert som nye kommer. Standpunkt står.» Udirs merknad til § 4-25 nevner norsk. Ordlyden i
+      § 4-25 sier ikke noe om fag som fortsetter.
+    berorer: [po-vg2-vg3]
+    bekreftet: null

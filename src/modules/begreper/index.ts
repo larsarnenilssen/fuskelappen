@@ -8,6 +8,7 @@ import { lastMerknader, merknadsoppforinger } from './merknader.ts';
 /**
  * Ett begrep per id. Samme id kan finnes på flere nivåer (nasjonal, fylke, skole); siden velger riktig
  * nivå for brukeren, så søk og favoritter trenger bare én oppføring. Den nasjonale teksten brukes når den finnes.
+ * Et begrep som bare finnes for et fylke, får fylket i søket og vises bare når det fylket er valgt.
  */
 async function unikeBegreper(): Promise<Innholdselement[]> {
   const perId = new Map<string, Innholdselement>();
@@ -40,6 +41,7 @@ export const manifest: Modulmanifest = {
       stikkord: b.stikkord,
       rute: `/begreper/${b.id}`,
       modul: 'begreper',
+      ...(b.gyldighet.niva === 'nasjonal' ? {} : { fylke: b.gyldighet.fylke }),
     }));
     return [...begreper, ...koder];
   },

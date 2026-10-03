@@ -1,0 +1,14 @@
+id: inntak-005
+beskrivelse: "F5: Vg1 idrettsfag i Vestland, karakterene i F1 og 6 tilleggspoeng (landslagsnivå)."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg1
+  fylke: "46"
+  tilleggspoeng: tilleggspoeng_idrett_2
+  standpunkt: [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5]
+  eksamen: [4, 5]
+forventet:
+  poeng: 44.3
+  samlet: 50.3
+begrunnelse: 44,3 + 6 = 50,3. Forskrift om inntak i Vestland § 2-8 andre ledd.

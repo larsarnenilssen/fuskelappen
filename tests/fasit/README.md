@@ -36,3 +36,12 @@ elever fra ulike program eller nivåer i samme time (laveste årsramme brukes).
 | `lonn` | `lonn` (som `timevikar`), `stilling`, `tillegg`, `overtid: { beskjeftigelse, arsrammer, elever }`, `over60` | `arslonn` (i stillingen), `variabel` (variabel lønn), `overtid`, `samlet`, `feriepenger` |
 
 Bare nøklene som står under `forventet`, sjekkes.
+
+## Input og forventet: poengberegning ved inntak (`tests/fasit/inntak/`)
+
+Kalkulatoren heter `poeng`. Karakterene er tall (1–6) eller `IV`, `IM`, `fritak` og `deltatt`.
+
+| trinn | input | forventet |
+|---|---|---|
+| `Vg1` | `standpunkt`, `eksamen`, `valgfag` (lister med karakterer), og for tilleggspoeng `fylke` og `tilleggspoeng` (nøkkelen i fylkets regelsett, f.eks. `tilleggspoeng_idrett_2`) | `snitt` (avrundet til to desimaler), `poeng`, `samlet` (med tilleggspoeng) |
+| `Vg2`, `Vg3` | `rader: [{ type: standpunkt \| eksamen \| halvar, vurdering, annen, fag, trinn }]`. `annen` er en annen karakter i samme fag (privatist eller omvalg), og den beste teller. `fag` og `trinn` brukes for halvårsvurdering i samme fag på Vg1 og Vg2 | `snitt`, `poeng` |

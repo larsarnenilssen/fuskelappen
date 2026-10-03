@@ -1,0 +1,22 @@
+id: inntak-008
+beskrivelse: "F7b: Som F7, uten privatisteksamen."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg3
+  rader:
+    - { trinn: Vg1, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 3 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg1, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg1, type: halvar, fag: norsk, vurdering: 3 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 3 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 5 }
+    - { trinn: Vg2, type: standpunkt, vurdering: 4 }
+    - { trinn: Vg2, type: halvar, fag: norsk, vurdering: 4 }
+forventet:
+  snitt: 4.1
+  poeng: 41
+begrunnelse: (21 + 16 + 4) ÷ 10 = 4,10 × 10 = 41,0. Som F7.

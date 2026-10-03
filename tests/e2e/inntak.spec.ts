@@ -78,8 +78,9 @@ test.describe('inntak', () => {
 test.describe('frister ved inntak', () => {
   test('fra oversikten til tidslinjen, med filter og en frist som åpnes', async ({ page }) => {
     await page.goto('./#/inntak');
-    await expect(page.locator('.frist-inngang')).toContainText('Neste frist');
-    await page.locator('.frist-inngang').click();
+    const kort = page.locator('.frist-inngang', { hasText: 'Neste frist' });
+    await expect(kort).toBeVisible();
+    await kort.click();
     await expect(page.getByRole('heading', { level: 1 })).toHaveText('Søknad og frister gjennom året');
     // Stripen har alle tolv månedene, fra oktober.
     await expect(page.locator('.frist-stripe > li')).toHaveCount(12);
@@ -115,5 +116,63 @@ test.describe('frister ved inntak', () => {
     ]);
     await expect(page.locator('.frist-kort-lokal')).toHaveCount(2);
     await expect(page.locator('.frist-tegn')).toContainText('Vestland');
+  });
+});
+
+// Fase 5, pakke 3: poengberegningen (avgjørelse 047). Karakterene er fra fasittest F1.
+test.describe('poengberegning ved inntak', () => {
+  test('Vg1: fagene fra grunnskolen gir poengsummen med utregningen', async ({ page }) => {
+    await page.goto('./#/inntak');
+    await page.locator('.frist-inngang', { hasText: 'Poengberegning' }).click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Poengberegning');
+    await expect(page.locator('.poeng-tomt')).toBeVisible();
+    const karakterer = [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5];
+    const fag = page.locator('.skjemadel').first().locator('select.poeng-velger');
+    await expect(fag).toHaveCount(13);
+    for (const [i, k] of karakterer.entries()) await fag.nth(i).selectOption(String(k));
+    const eksamen = page.locator('.skjemadel').nth(1).locator('select.poeng-velger');
+    await eksamen.nth(0).selectOption('4');
+    await eksamen.nth(1).selectOption('5');
+    await expect(page.locator('.resultatkort-verdi')).toHaveText('44,3');
+    await page.getByRole('button', { name: 'Vis utregning' }).click();
+    await expect(page.locator('.utregning')).toContainText('14, sum 62');
+    await expect(page.locator('.utregning')).toContainText('4,43');
+    // Uten valgt fylke er det ingen tilleggspoeng.
+    await expect(page.locator('.skjemadel[data-del="lonn"]')).toHaveCount(0);
+    // Fritak i mer enn halvparten av fagene: individuell behandling i stedet for poeng.
+    for (let i = 0; i < 7; i++) await fag.nth(i).selectOption('fritak');
+    await expect(page.locator('.kalkulator-resultat .merknad')).toContainText('§ 4-20');
+  });
+
+  test('Vg3: den beste av to karakterer teller, og Vestland gir tilleggspoeng til Vg1', async ({ page }) => {
+    await settLagret(page, { fylke: '46' });
+    await page.goto('./#/inntak/poeng?trinn=vg3');
+    const rader = page.locator('.poeng-rad');
+    await rader.nth(0).locator('select.poeng-velger').selectOption('4');
+    await rader.nth(1).locator('select.poeng-velger').selectOption('3');
+    await expect(page.locator('.resultatkort-verdi')).toHaveText('35,0');
+    await rader.nth(1).locator('.poeng-annen-knapp').click();
+    await rader.nth(1).locator('.poeng-annen select').selectOption('5');
+    await expect(page.locator('.resultatkort-verdi')).toHaveText('45,0');
+    // Til Vg1 i Vestland kan søkeren få tilleggspoeng.
+    await page.getByRole('link', { name: 'Vg1', exact: true }).click();
+    await page.locator('.skjemadel').first().locator('select.poeng-velger').first().selectOption('4');
+    await page.locator('.skjemadel[data-del="lonn"] select').selectOption('tilleggspoeng_idrett_2');
+    await expect(page.locator('.resultatkort-verdi')).toHaveText('46,0');
+  });
+
+  test('Vg3: et løp fyller inn fagene med standpunkt og halvår, og blankt ark tømmer radene', async ({ page }) => {
+    await page.goto('./#/inntak/poeng?trinn=vg3');
+    await expect(page.locator('#poeng-lop1')).toBeEnabled();
+    await page.locator('#poeng-lop1').selectOption('HS');
+    await page.locator('#poeng-lop2').selectOption('Helsearbeiderfag');
+    const navn = page.locator('.poeng-rad-navn');
+    await expect(navn.first()).toHaveText('Matematikk');
+    await expect(navn).toContainText(['Kroppsøving', 'Helsefremmende arbeid', 'Yrkesliv i helsearbeiderfag']);
+    // Kroppsøving på Vg1 yrkesfag fortsetter på Vg2 og har halvår.
+    const kroppsoving = page.locator('.poeng-rad', { has: page.locator('.poeng-rad-navn', { hasText: 'Kroppsøving' }) }).first();
+    await expect(kroppsoving.locator('select.poeng-type')).toHaveValue('halvar');
+    await page.locator('#poeng-lop1').selectOption('');
+    await expect(navn).toHaveCount(0);
   });
 });

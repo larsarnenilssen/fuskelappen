@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { app } from './src/config/app.ts';
-import { dataPlugin, fagrollerPlugin, tilbudPlugin, innholdPlugin, lesToken, testoppsettPlugin, htmlPlugin } from './scripts/vite/plugins.ts';
+import { dataPlugin, fagrollerPlugin, fagsokPlugin, tilbudPlugin, innholdPlugin, lesToken, testoppsettPlugin, htmlPlugin } from './scripts/vite/plugins.ts';
 
 const rot = fileURLToPath(new URL('.', import.meta.url));
 const pakke = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
@@ -36,6 +36,7 @@ export default defineConfig(({ mode }) => ({
     dataPlugin(rot, mode),
     fagrollerPlugin(rot),
     tilbudPlugin(rot),
+    fagsokPlugin(rot),
     VitePWA({
       registerType: 'prompt',
       injectRegister: false,

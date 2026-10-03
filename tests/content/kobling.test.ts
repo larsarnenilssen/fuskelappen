@@ -1,4 +1,4 @@
-// Koblingen fra fagkode til årsramme på de ekte dataene (rules/sfs2213/kobling-fagkode.yaml og data/grep/).
+// Koblingen fra fagkode til årsramme på de ekte dataene (rules/sfs2213/kobling-fagkode-<periode>.yaml og data/grep/).
 // Kjøres også på nye Grep-data hver uke (kilder.yml lager rapporten på nytt først).
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';

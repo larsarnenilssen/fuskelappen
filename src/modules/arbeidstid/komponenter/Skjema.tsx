@@ -1,9 +1,7 @@
 // Skjemadeler for kalkulatorene: brytere, fagsøk med årsramme fra vedlegg 1, og kort for hvert fag.
 import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
-import grepArstimer from '../../../../data/grep/arstimer.json';
-import fagkoder from '../../../../data/grep/fagkoder.json';
-import programomrader from '../../../../data/grep/programomrader.json';
+import fagsok from 'virtual:fagsok';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -15,7 +13,7 @@ import { lastFagindeks } from '../../fag/data.ts';
 import { filtrerFag, tomtFilter } from '../../fag/oppslag.ts';
 import type { Fagindeks as Grepindeks } from '../../fag/skjema.ts';
 import { finnKobling, lesArsrammer, lesKoblinger, type Arsrammerad, type Arsrammevalg, type Arstimerad, type Gruppe, type Hent, type Koblingstabeller } from '../beregning/index.ts';
-import { type Fagkoder, lagFagindeks, type Programomrader, sokFag } from '../fagsok.ts';
+import { lagFagindeks, sokFag } from '../fagsok.ts';
 import { type Oppdater, useHent } from '../kontekst.ts';
 import { type Arsrammeplass, fagvalgFraKobling, type Grepfag, koblingsmetode } from '../fagvalg.ts';
 
@@ -103,12 +101,12 @@ export function Vippe({
 
 
 
-const arstimerForFagkode = (grepArstimer as unknown as { arstimer: Record<string, number | null> }).arstimer;
+const arstimerForFagkode = fagsok.arstimer;
 let fagkodenavn: Map<string, string> | null = null;
 
 /** Navnet på en fagkode i Grep, f.eks. «Helsefremmende arbeid» for HEA2005. */
 export function navnForFagkode(kode: string): string | undefined {
-  fagkodenavn ??= new Map(Object.values((fagkoder as unknown as { fagkoder: Fagkoder }).fagkoder).flat());
+  fagkodenavn ??= new Map(Object.values(fagsok.fagkoder).flat());
   return fagkodenavn.get(kode);
 }
 
@@ -160,8 +158,8 @@ export function useFagindeks(hent: Hent, rader: readonly Arsrammerad[]) {
       programnavn: tabell('sfs2213.programnavn'),
       fagnavn: tabell('sfs2213.fagnavn'),
       kallenavn: tabell('sfs2213.kallenavn'),
-      programomrader: (programomrader as unknown as { programomrader: Programomrader }).programomrader,
-      fagkoder: (fagkoder as unknown as { fagkoder: Fagkoder }).fagkoder,
+      programomrader: fagsok.programomrader,
+      fagkoder: fagsok.fagkoder,
     });
   }, [hent, rader]);
 }

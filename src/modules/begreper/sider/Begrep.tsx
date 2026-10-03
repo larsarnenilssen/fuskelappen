@@ -36,8 +36,10 @@ export default function Begrep({ parametre, sporring }: SideProps) {
   }
   const statuser = kildestatus.tilstand === 'ok' ? kildestatus.data.kilder : {};
   const status = beregnStatus(begrep, statuser, new Date().toISOString().slice(0, 10));
+  // Relaterte begreper på brukerens nivå. Et begrep som bare gjelder et annet fylke, vises ikke.
+  const synlige = velgSynlige(alle, sted);
   const relaterte = begrep.relatert
-    .map((id) => alle.find((b) => b.id === id))
+    .map((id) => synlige.find((b) => b.id === id))
     .filter((b): b is Innholdselement => b !== undefined);
 
   return (

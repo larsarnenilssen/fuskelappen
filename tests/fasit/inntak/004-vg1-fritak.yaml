@@ -1,0 +1,12 @@
+id: inntak-004
+beskrivelse: "F4: Som F1, men fritak i ett fag med 4."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg1
+  standpunkt: [5, fritak, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5]
+  eksamen: [4, 5]
+forventet:
+  snitt: 4.46
+  poeng: 44.6
+begrunnelse: Faget med fritak regnes ikke med. 58 ÷ 13 = 4,4615 → 4,46 × 10 = 44,6. § 4-19 første ledd bokstav d.

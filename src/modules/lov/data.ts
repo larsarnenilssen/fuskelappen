@@ -4,7 +4,7 @@
 import synonymerFil from '../../../content/sok/synonymer.yaml';
 import type { Synonymer } from '../../core/innhold/skjema.ts';
 import { lagOrdformer } from '../../core/sok/ordformer.ts';
-import { alleParagrafer, type Lovdokument, type Lovoversikt, type Paragraf, rentekst, type Seksjon } from './typer.ts';
+import { alleParagrafer, type Lovdokument, type Lovoversikt, type Paragraf, paragraftekst, type Seksjon } from './typer.ts';
 
 const filer = import.meta.glob<Lovdokument>('../../../data/lovdata/*.json', { import: 'default' });
 
@@ -45,12 +45,6 @@ export function finnParagraf(dok: Lovdokument, nokkel: string): { paragraf: Para
   return alleParagrafer(dok.seksjoner).find(({ paragraf }) => paragraf.nr.toLowerCase() === nr) ?? null;
 }
 
-/** Hele teksten i en paragraf som ren tekst, til søket. */
-export function paragraftekst(p: Paragraf): string {
-  const ledd = (l: Paragraf['ledd'][number]): string =>
-    [rentekst(l.tekst), ...(l.liste ?? []).flatMap((x) => [x.merke, ...x.ledd.map(ledd)]), ...(l.etter ?? []).map(rentekst)].join(' ');
-  return p.ledd.map(ledd).join(' ');
-}
 
 export interface Treff {
   dokument: Lovdokument;

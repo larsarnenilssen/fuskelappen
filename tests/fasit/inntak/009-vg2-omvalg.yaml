@@ -1,0 +1,20 @@
+id: inntak-009
+beskrivelse: "F8: Vg2 etter omvalg, med fellesfagene tatt i to Vg1 som begge gir grunnlag."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg2
+  rader:
+    - { type: standpunkt, vurdering: 3, annen: 4 }
+    - { type: standpunkt, vurdering: 4, annen: 3 }
+    - { type: standpunkt, vurdering: 4, annen: 4 }
+    - { type: standpunkt, vurdering: 5, annen: 5 }
+    - { type: standpunkt, vurdering: 5 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+forventet:
+  snitt: 4.29
+  poeng: 42.9
+begrunnelse: >-
+  Beste karakter fag for fag (eier 03.10.2026, Udirs merknad til § 4-25 første ledd bokstav f): 4, 4, 4, 5. Med
+  programfagene 5, 4, 4: 30 ÷ 7 = 4,2857 → 4,29 × 10 = 42,9.

@@ -87,7 +87,7 @@ Nye avhengigheter utover disse krever avgjørelsesnotat.
 │   └── sfs2213/
 │       ├── 2026-2027.yaml
 │       ├── arsrammer-2026-2027.yaml
-│       └── kobling-fagkode.yaml
+│       └── kobling-fagkode-2026-2027.yaml
 ├── data/                     genererte data, sjekkes inn
 │   ├── grep/
 │   └── status/kildestatus.json
@@ -359,7 +359,7 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Grep-jobb i `kilder.yml` med validering, snapshot, endringsrapport og tilbakefall ved feil.
 - Oppslag: søk og filter på fagnavn, fagkode, utdanningsprogram, trinn, vurderingsordning, eksamensform og årstimetall. Fagside med kompetansemål, vurderingsordning, underveisvurdering og lenke til udir.no. Fag kan favorittmerkes.
 - Læreplantekster vises i målformen de er fastsatt i, merket og uoversatt.
-- Kobling fagkode → årsramme i `rules/sfs2213/kobling-fagkode.yaml`:
+- Kobling fagkode → årsramme i `rules/sfs2213/kobling-fagkode-2026-2027.yaml`:
   - **Fellesfag** kobles alltid eksplisitt per kombinasjon av fagkode, utdanningsprogram og trinn. Fellesfag som norsk har ulik årsramme på tvers av trinn og program, så prefiksregler brukes aldri for fellesfag.
   - **Programfag og felles programfag** kan kobles med regler på fagkodeprefiks + utdanningsprogram + trinn, med eksplisitte unntak.
   - En tabell kobler programnavnene i vedlegg 1 til utdanningsprogrammene i Grep.
@@ -501,6 +501,8 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Forslaget med søkerkategorier, frister, poengregler og fasittester F1–F9 er godkjent av eier (`docs/arbeidsordrer/fase-5-forslag.md`). Udirs merknader til opplæringsforskrifta er ny kilde for poengberegningen.
 - Pakke 1 er levert i 0.26.0: modulen **Inntak** med veiviseren «Rett, inntak og søknad» (navnet valgt av eier) og Vestland-innhold i egne bokser (avgjørelse 043). Alle veiviserne har fått én side per valg, lukkede steg på mobil og mindre rulling (avgjørelse 044). Eier kan teste en gren under `test/` (avgjørelse 045). GNS02-01 er med i læreplanboksen for særskilt språkopplæring, i en egen gruppe for voksne.
 - Pakke 2 er levert i 0.27.0: **Søknad og frister gjennom året**, en tidslinje over inntaksåret med filter og Vestland-frister (avgjørelse 046). Datoene for svar og andre inntak står på Vilbli, som appen lenker til.
+- Pakke 3 er levert i 0.28.0: **Poengberegning** til Vg1, Vg2 og Vg3 med regler i `rules/inntak/`, fasittestene F1–F9 og F7b, og tilleggspoeng i Vestland (avgjørelse 047). VIGOs felt «teller for poeng» brukes ikke, fordi det ikke stemmer med § 4-25 bokstav b.
+- Med 0.28.0 er kildekontrollen og fylkesinnholdet gått gjennom i hele appen (avgjørelse 048), og dataene fra kildene er samlet i et felles datalag (avgjørelse 049).
 - Venter på vestlandfylke.no: antall inntaksområdepoeng og Vestlands klagenemnd.
 
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.

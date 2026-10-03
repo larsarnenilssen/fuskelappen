@@ -2,8 +2,9 @@
 import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
 import type { Sokeresultat } from '../core/sok/sok.ts';
+import { synligeTreff } from '../core/sok/synlige.ts';
 import { hentSok } from './sokeklient.ts';
-import { useTekst } from './tilstand.ts';
+import { useTekst, useTilstand } from './tilstand.ts';
 
 interface Props {
   etikett: string;
@@ -17,6 +18,7 @@ type Indekstilstand = 'ikke-lastet' | 'laster' | 'klar' | 'feil';
 
 export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = false, onEndring }: Props) {
   const { t, malform } = useTekst();
+  const { innstillinger } = useTilstand();
   const id = useId();
   const felt = useRef<HTMLInputElement>(null);
   const [sporring, settSporring] = useState(startverdi);
@@ -41,8 +43,9 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
   }, []);
 
   useEffect(() => {
-    if (indeks === 'klar' && sokRef.current) settTreff(sokRef.current(sporring));
-  }, [sporring, indeks]);
+    // Fylkesinnhold (f.eks. begreper som bare gjelder Vestland) vises bare når fylket er valgt.
+    if (indeks === 'klar' && sokRef.current) settTreff(synligeTreff(sokRef.current(sporring), innstillinger.fylke));
+  }, [sporring, indeks, innstillinger.fylke]);
 
   const aktiv = sporring.trim().length >= 2;
   const status = !aktiv

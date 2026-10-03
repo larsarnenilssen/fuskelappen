@@ -1,8 +1,8 @@
 # Søkeord for årsrammene i vedlegg 1: fulle navn, utdanningsprogram og fagkoder i Grep, og kallenavn.
 # Del av regelsettet sfs2213-2026-2027. Brukes bare til å finne riktig rad i fagsøket; beregningene bruker
 # årsrammen i raden brukeren velger. Programområdene (BAT, HEA …) hentes fra Grep med npm run hent:grep
-# (data/grep/programomrader.json). Kallenavn og fagkoder er tatt med bare når Grep har et fag med det navnet.
-# Tabellen over programnavn står i kobling-fagkode.yaml (fase 2). Forkortelser som ikke kan bekreftes
+# (data/grep/fagindeks.json, avgjørelse 049). Kallenavn og fagkoder er tatt med bare når Grep har et fag med det navnet.
+# Tabellen over programnavn står i kobling-fagkode-2026-2027.yaml (fase 2). Forkortelser som ikke kan bekreftes
 # i Grep (Pol/samf, Nær.øk, Info.tekn. samf.), står som i vedlegget.
 id: sfs2213-2026-2027
 regelverk: sfs2213

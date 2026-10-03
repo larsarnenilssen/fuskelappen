@@ -1,0 +1,22 @@
+id: inntak-006
+beskrivelse: "F6: Vg2 med ti karakterer fra Vg1 og én halvårsvurdering."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg2
+  rader:
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 5 }
+    - { type: standpunkt, vurdering: 3 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 5 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: standpunkt, vurdering: 5 }
+    - { type: standpunkt, vurdering: 5 }
+    - { type: standpunkt, vurdering: 4 }
+    - { type: halvar, vurdering: 3 }
+forventet:
+  snitt: 4.18
+  poeng: 41.8
+begrunnelse: 46 ÷ 11 = 4,1818 → 4,18 × 10 = 41,8. Opplæringsforskrifta § 4-25 første ledd bokstav a.

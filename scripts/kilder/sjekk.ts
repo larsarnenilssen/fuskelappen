@@ -8,6 +8,8 @@ import type { Fylker, Kilde, Kilderegister } from '../../src/core/innhold/skjema
 import { lesKildestatus, type Kildestatusfil, type KildestatusPost } from '../../src/core/kildestatus/kildestatus.ts';
 import { lesVerdistatus, medTabellstatus, sjekkbareVerdier, sjekkVerdier, verdinokkel, type Verdistatusfil } from '../../src/core/kontroll/verdisjekk.ts';
 import type { Tabellrad } from '../../src/core/regler/skjema.ts';
+import { dokumenttekst, type Lovdokument } from '../../src/modules/lov/typer.ts';
+import { velgPeriode } from '../../src/core/regler/motor.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
 import { lesFil } from '../innhold/last.ts';
 import { delIBiter, finnEndringer, lesKildetekst, type Kildetekstfil, type Tekstendring } from './avsnitt.ts';
@@ -83,11 +85,9 @@ function sjekkGrep(): Sjekkresultat {
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra Grep feilet. Se loggen for steget «Hent Grep».' };
   const { endringer } = JSON.parse(readFileSync(endringsfil, 'utf8')) as { endret: boolean; endringer: Grependringer | null };
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
-  const data = ['programomrader', 'fagkoder', 'arstimer'].map((n) => {
-    const innhold = JSON.parse(readFileSync(join(rot, 'data/grep', `${n}.json`), 'utf8')) as Record<string, unknown>;
-    return JSON.stringify(innhold[n]);
-  });
-  const fingeravtrykk = lagFingeravtrykk(data.join('\n'));
+  // Fingeravtrykket er fagindeksen uten tidspunktet for hentingen (avgjørelse 049).
+  const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Record<string, unknown>;
+  const fingeravtrykk = lagFingeravtrykk(JSON.stringify({ ...indeks, hentet: '' }));
   rapport.push('### Grep', endringer ? grepsammendrag(endringer) : 'Første henting.', ...(endringer ? grepdetaljer(endringer).map((l) => `- ${l}`) : []), '');
   if (tester === 'feilet') {
     return { status: 'endret', fingeravtrykk, melding: `Grep er endret slik at testene feiler, og dataene er ikke tatt inn: ${endringer ? grepsammendrag(endringer) : ''}`.trim() };
@@ -161,6 +161,8 @@ function sjekkLovtekst(kilde: Kilde): Sjekkresultat {
   if (mine.length === 0) return { status: 'feilet', fingeravtrykk: null, melding: 'Kilden er ikke med i content/lovverk.yaml.' };
   const filer = mine.map((d) => join(rot, 'data/lovdata', `${d.id}.json`)).filter((f) => existsSync(f));
   const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8')).join('\n')) : null;
+  // Teksten i dokumentene, så verdisjekken kan se etter sitatene (f.eks. tallene for poengberegningen i rules/inntak).
+  if (filer.length > 0) tekster[kilde.id] = { tekst: filer.map((f) => dokumenttekst(JSON.parse(readFileSync(f, 'utf8')) as Lovdokument)).join('\n') };
   const endringer = mine.flatMap((d) => d.endringer);
   rapport.push(
     `### ${kilde.navn}`,
@@ -248,7 +250,10 @@ let verdistatus: Verdistatusfil = sjekkVerdier(sjekkbareVerdier(regelsett), teks
 // i hovedtariffavtalen.
 function tabellsjekk(regelsettId: string, nokkel: string, kildeId: string, sjekk: (rader: Tabellrad[]) => Tabellresultat): void {
   const verdi = regelsett.find((r) => r.id === regelsettId)?.verdier[nokkel];
-  if (!verdi || verdi.kilde.id !== kildeId || !Array.isArray(verdi.verdi)) return;
+  if (!verdi || verdi.kilde.id !== kildeId || !Array.isArray(verdi.verdi)) {
+    rapport.push(`- Tabellsjekken fant ikke ${nokkel} med kilden ${kildeId} i ${regelsettId}.`, '');
+    return;
+  }
   let resultat: Tabellresultat | { feil: string };
   try {
     resultat = sjekk(verdi.verdi as Tabellrad[]);
@@ -263,14 +268,29 @@ function kildetekst(id: string): string {
   if ('feil' in t) throw new Error(`Kilden kunne ikke leses: ${t.feil}`);
   return t.tekst;
 }
-tabellsjekk('sfs2213-2026-2027', 'arsrammer', 'ks-sfs2213-avtaletekst', (rader) => {
-  kildetekst('ks-sfs2213-avtaletekst');
-  return sammenlignVedlegg1(rader, lesVedlegg1(html['ks-sfs2213-avtaletekst'] ?? ''));
-});
-tabellsjekk('hta-2026-2028', 'garantilonn', 'ks-hovedtariffavtalen', (rader) => {
-  const trinn = regelsett.find((r) => r.id === 'hta-2026-2028')?.verdier.garantilonn_ansiennitet?.verdi as number[];
-  return sjekkGarantilonn(rader, trinn, kildetekst('ks-hovedtariffavtalen'));
-});
+// Regelsettet som gjelder i dag for et regelverk, så tabellsjekken følger med når en ny periode legges inn.
+function gjeldende(regelverk: string): string | null {
+  try {
+    return velgPeriode(regelsett, regelverk, { dato: naa.slice(0, 10) }).id;
+  } catch (e) {
+    rapport.push(`- Tabellsjekken for ${regelverk} ble ikke kjørt: ${e instanceof Error ? e.message : String(e)}`, '');
+    return null;
+  }
+}
+const sfs = gjeldende('sfs2213');
+if (sfs) {
+  tabellsjekk(sfs, 'arsrammer', 'ks-sfs2213-avtaletekst', (rader) => {
+    kildetekst('ks-sfs2213-avtaletekst');
+    return sammenlignVedlegg1(rader, lesVedlegg1(html['ks-sfs2213-avtaletekst'] ?? ''));
+  });
+}
+const hta = gjeldende('hta');
+if (hta) {
+  tabellsjekk(hta, 'garantilonn', 'ks-hovedtariffavtalen', (rader) => {
+    const trinn = regelsett.find((r) => r.id === hta)?.verdier.garantilonn_ansiennitet?.verdi as number[];
+    return sjekkGarantilonn(rader, trinn, kildetekst('ks-hovedtariffavtalen'));
+  });
+}
 writeFileSync(verdistatusfil, `${JSON.stringify(verdistatus, null, 2)}\n`);
 const verdiposter = Object.entries(verdistatus.verdier);
 const antall = (s: string) => verdiposter.filter(([, p]) => p.status === s).length;

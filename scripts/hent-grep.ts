@@ -6,8 +6,8 @@
 // - data/grep/laereplaner/<kode>.json: én fil per læreplan med kompetansemål, underveisvurdering og
 //   vurderingsordning, på målformen planen er fastsatt i. Lastes når brukeren åpner et fag.
 //
-// Fase 1: programområdene og fagnavnene fagsøket i kalkulatorene bruker (programomrader.json og fagkoder.json),
-// og årstimetallet for fagkodene i rules/sfs2213/arstimer-*.yaml og fagsøket (arstimer.json).
+// Fase 1: programområdene, fagnavnene og årstimetallet fagsøket i kalkulatorene bruker, lages fra fagindeksen når
+// appen bygges (virtual:fagsok, avgjørelse 049). Før sto de i programomrader.json, fagkoder.json og arstimer.json.
 //
 // Validering og tilbakefall: Feiler en henting, eller er dataene for små eller i feil form, kastes en feil før
 // noe skrives, og forrige snapshot blir stående. Filene skrives bare når innholdet er endret. Endringene lagres
@@ -17,10 +17,10 @@ import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import type { Regelsett } from '../src/core/regler/skjema.ts';
 import { fagindeksSkjema, laereplanSkjema, type Fagindeks, type Laereplan } from '../src/modules/fag/skjema.ts';
 import { byggFagindeks, byggLaereplan, byggLaereplanverket, erPublisert, laereplankoder, paSpraak, type Grepelement, type Raadata } from './grep/bygg.ts';
-import { lesFil } from './innhold/last.ts';
+import { byggFagsokdata, fagsokgrunnlag } from '../src/modules/arbeidstid/fagsokdata.ts';
+import { lesRegelsett } from './innhold/alt.ts';
 import { antallEndringer, grepsammendrag, sammenlignGrep, type Fagspor, type Grepdata, type Programomradespor } from './kilder/grep.ts';
 import { USER_AGENT } from './kilder/metoder.ts';
 
@@ -91,28 +91,8 @@ export function grupperFagkoder(liste: readonly Grepelement[], prefikser: Readon
   return Object.fromEntries(Object.entries(ut).sort(([a], [b]) => a.localeCompare(b)));
 }
 
-/** Fagkodene i årstimetabellen (rules/sfs2213/arstimer-*.yaml). */
-function arstimeFagkoder(): string[] {
-  const r = lesFil(rot, join(rot, 'rules/sfs2213/arstimer-2026-2027.yaml')) as Regelsett;
-  const rader = (r.verdier.arstimer?.verdi ?? []) as { fagkoder?: string[] }[];
-  return [...new Set(rader.flatMap((rad) => rad.fagkoder ?? []))].sort();
-}
-
-/** Fellesfagprefiksene i søketabellen (rules/sfs2213/fagsok-*.yaml) som bare ett fag bruker. */
-function fellesfagprefikser(): string[] {
-  const fil = join(rot, 'rules/sfs2213/fagsok-2026-2027.yaml');
-  const r = lesFil(rot, fil) as Regelsett;
-  const rader = (r.verdier.fagnavn?.verdi ?? []) as { prefikser?: string[] }[];
-  const antall = new Map<string, number>();
-  for (const rad of rader) for (const p of rad.prefikser ?? []) antall.set(p, (antall.get(p) ?? 0) + 1);
-  return [...antall].filter(([, n]) => n === 1).map(([p]) => p);
-}
-
-/** Omfanget (årstimer) for en fagkode, eller null hvis Grep ikke oppgir det. */
-function omfang(fk: Grepelement | undefined): number | null {
-  const tall = Number(fk?.['omfang-totalt']);
-  return Number.isFinite(tall) && tall > 0 ? tall : null;
-}
+/** Fagkodene i årstimetabellen og fellesfagprefiksene i søketabellen, fra regelsettene for SFS 2213 (alle perioder). */
+const grunnlag = () => fagsokgrunnlag(lesRegelsett(rot));
 
 const fingeravtrykk = (tekst: string) => createHash('sha256').update(tekst).digest('hex').slice(0, 16);
 
@@ -145,24 +125,14 @@ export function fagindeksJson(indeks: Fagindeks): string {
   return `{\n${topp.join(',\n')},\n  "fag": {\n${linjer.join(',\n')}\n  }\n}\n`;
 }
 
-/** Leser dataene fra forrige henting, eller null hvis en fil mangler. */
+/** Leser dataene fra forrige henting (fagindeksen og læreplanene), eller null hvis fagindeksen mangler. */
 function lesForrige(): Grepdata | null {
-  const les = <T>(navn: string, felt: string): T | null => {
-    const fil = join(rot, 'data/grep', navn);
-    return existsSync(fil) ? ((JSON.parse(readFileSync(fil, 'utf8')) as Record<string, unknown>)[felt] as T) : null;
-  };
-  const programomrader = les<Grepdata['programomrader']>('programomrader.json', 'programomrader');
-  const fagkoder = les<Grepdata['fagkoder']>('fagkoder.json', 'fagkoder');
-  const arstimer = les<Grepdata['arstimer']>('arstimer.json', 'arstimer');
-  if (!programomrader || !fagkoder || !arstimer) return null;
-  const data: Grepdata = { programomrader, fagkoder, arstimer };
   const indeksfil = join(rot, 'data/grep/fagindeks.json');
-  if (existsSync(indeksfil)) {
-    const forrige = JSON.parse(readFileSync(indeksfil, 'utf8')) as Fagindeks;
-    data.fag = fagspor(forrige);
-    // Programområdene fikk «bygger på» og timer i oktober 2026. Eldre data sammenlignes ikke for tilbudsstrukturen.
-    if (Object.values(forrige.programomrader).every((p) => Array.isArray(p.bygger))) data.tilbud = tilbudspor(forrige);
-  }
+  if (!existsSync(indeksfil)) return null;
+  const forrige = JSON.parse(readFileSync(indeksfil, 'utf8')) as Fagindeks;
+  const data: Grepdata = { ...byggFagsokdata(forrige, grunnlag()), fag: fagspor(forrige) };
+  // Programområdene fikk «bygger på» og timer i oktober 2026. Eldre data sammenlignes ikke for tilbudsstrukturen.
+  if (Object.values(forrige.programomrader).every((p) => Array.isArray(p.bygger))) data.tilbud = tilbudspor(forrige);
   const mappe = join(rot, 'data/grep/laereplaner');
   if (existsSync(mappe)) {
     data.laereplaner = Object.fromEntries(
@@ -172,14 +142,6 @@ function lesForrige(): Grepdata | null {
     );
   }
   return data;
-}
-
-/** Skriver en av fase 1-filene, men bare når dataene i den er endret (ikke bare tidspunktet for hentingen). */
-function skriv(navn: string, felt: string, data: Record<string, unknown>, hode: string): void {
-  const fil = join(rot, 'data/grep', navn);
-  if (existsSync(fil) && JSON.stringify((JSON.parse(readFileSync(fil, 'utf8')) as Record<string, unknown>)[felt]) === JSON.stringify(data)) return;
-  const linjer = Object.entries(data).map(([k, v]) => `    ${JSON.stringify(k)}: ${JSON.stringify(v)}`);
-  writeFileSync(join(rot, 'data/grep', navn), `{\n  ${hode},\n  ${JSON.stringify(felt)}: {\n${linjer.join(',\n')}\n  }\n}\n`);
 }
 
 /**
@@ -225,7 +187,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const programomrader = grupperProgramomrader(programliste);
   const antall = Object.values(programomrader).reduce((s, p) => s + Object.values(p).reduce((t, l) => t + l.length, 0), 0);
   if (antall < 100) throw new Error(`Fikk bare ${antall} programområder fra Grep. Beholder forrige fil.`);
-  const prefikser = new Set([...Object.values(programomrader).flatMap((p) => Object.values(p).flatMap((l) => l.map(([k]) => k))), ...fellesfagprefikser()]);
+  const prefikser = new Set([...Object.values(programomrader).flatMap((p) => Object.values(p).flatMap((l) => l.map(([k]) => k))), ...grunnlag().fellesfagprefikser]);
   const fagkoder = grupperFagkoder(fagliste, prefikser);
   const antallFag = Object.values(fagkoder).reduce((s, l) => s + l.length, 0);
   if (antallFag < 300) throw new Error(`Fikk bare ${antallFag} fagkoder fra Grep. Beholder forrige fil.`);
@@ -238,7 +200,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const referanser = (o: Grepelement, felt: string) => ((o[felt] ?? []) as { kode: string; status: string }[]).filter(erPublisert).map((r) => r.kode);
   const planerIBruk = [...new Set(vgs.flatMap((o) => ((o['laereplan-referanse'] ?? []) as { kode: string; 'url-data'?: string }[]).filter((l) => l['url-data']?.includes('/laereplaner-lk20/')).map((l) => l.kode)))];
   const kjentePlaner = new Set(planliste.map((p) => p.kode));
-  const fagkodeliste = [...new Set([...vgs.flatMap((o) => referanser(o, 'fagkode-referanser')), ...arstimeFagkoder(), ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
+  const fagkodeliste = [...new Set([...vgs.flatMap((o) => referanser(o, 'fagkode-referanser')), ...grunnlag().arstimeKoder, ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
   const fagdetaljer = await hentAlle('fagkoder', fagkodeliste);
   const planer = await hentAlle('laereplaner-lk20', planerIBruk.filter((k) => kjentePlaner.has(k)).sort());
 
@@ -256,15 +218,14 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const laereplaner = new Map(laereplankoder(indeks).laereplaner.map((k) => [k, byggLaereplan(planer.get(k) as Grepelement, raa.kompetansemaalsett)]));
   validerFagdata(indeks, laereplaner);
 
-  // Årstimer for fagkodene i årstimetabellen og for alle fagkodene fagsøket kjenner (programfag på yrkesfag o.l.).
-  const koder = [...new Set([...arstimeFagkoder(), ...Object.values(fagkoder).flatMap((l) => l.map(([k]) => k))])].sort();
-  const arstimer: Record<string, number | null> = Object.fromEntries(koder.map((k) => [k, omfang(fagdetaljer.get(k))]));
-  const medTall = Object.values(arstimer).filter((v) => v !== null).length;
-  // Eksamenskoder og fag i læretiden har ikke årstimer i Grep, så omtrent halvparten mangler tall.
-  if (medTall < 300) throw new Error(`Fikk årstimer for bare ${medTall} av ${koder.length} fagkoder. Beholder forrige fil.`);
+  // Fagsøket i kalkulatorene bygges fra fagindeksen (virtual:fagsok). Årstimene sjekkes her, så en henting uten
+  // tall ikke tas inn. Eksamenskoder og fag i læretiden har ikke årstimer i Grep, så omtrent halvparten mangler tall.
+  const fagsok = byggFagsokdata(indeks, grunnlag());
+  const medTall = Object.values(fagsok.arstimer).filter((v) => v !== null).length;
+  if (medTall < 300) throw new Error(`Fikk årstimer for bare ${medTall} av ${Object.keys(fagsok.arstimer).length} fagkoder. Beholder forrige fil.`);
 
   const planfiler = new Map([...laereplaner].map(([k, p]) => [k, laereplanJson(p)]));
-  const ny: Grepdata = { programomrader, fagkoder, arstimer, fag: fagspor(indeks), tilbud: tilbudspor(indeks), laereplaner: Object.fromEntries([...planfiler].map(([k, t]) => [k, fingeravtrykk(t)])) };
+  const ny: Grepdata = { ...fagsok, fag: fagspor(indeks), tilbud: tilbudspor(indeks), laereplaner: Object.fromEntries([...planfiler].map(([k, t]) => [k, fingeravtrykk(t)])) };
   const forrige = lesForrige();
   const endringer = forrige ? sammenlignGrep(forrige, ny) : null;
   // Også endringer som ikke står i rapporten (f.eks. navn på programområder), gir nye filer.
@@ -274,10 +235,6 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const endret = endringer === null || antallEndringer(endringer) > 0 || indeksEndret;
   if (endret) {
     mkdirSync(join(rot, 'data/grep'), { recursive: true });
-    const hode = `"kilde": "udir-grep", "hentet": ${JSON.stringify(hentet)}, "lisens": "NLOD 2.0"`;
-    skriv('programomrader.json', 'programomrader', programomrader, hode);
-    skriv('fagkoder.json', 'fagkoder', fagkoder, hode);
-    skriv('arstimer.json', 'arstimer', arstimer, hode);
     if (indeksEndret) writeFileSync(indeksfil, fagindeksJson(indeks));
     // Læreplanene skrives til en ny mappe som så erstatter den gamle, så fjernede planer forsvinner.
     const ny2 = join(rot, 'data/grep/laereplaner.ny');

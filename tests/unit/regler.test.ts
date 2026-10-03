@@ -1,7 +1,7 @@
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { finnOverlapp, finnSupplerende, finnVerdi, Regelfeil, slaaSammen, somTabell, somTall, velgPeriode } from '../../src/core/regler/motor.ts';
+import { finnLokaleNokler, finnOverlapp, finnSupplerende, finnVerdi, Regelfeil, slaaSammen, somTabell, somTall, velgPeriode } from '../../src/core/regler/motor.ts';
 import type { Regelsett } from '../../src/core/regler/skjema.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
@@ -68,6 +68,13 @@ describe('regelmotor', () => {
     expect(g.fylke).toEqual([]);
     const utenSkole = finnSupplerende(alle, 'testregelverk.regler', { dato: '2026-09-01' });
     expect(utenSkole.skole).toEqual([]);
+  });
+
+  it('finner lokale verdier som supplerer, med et prefiks, bare for brukerens fylke og skole', () => {
+    expect(finnLokaleNokler(alle, 'testregelverk.reg', { dato: '2026-09-01', fylke: '46', skole: '999999999' })).toEqual(['testregelverk.regler']);
+    // Fylkesverdier som erstatter (uker), er ikke med.
+    expect(finnLokaleNokler(alle, 'testregelverk.uk', { dato: '2026-09-01', fylke: '46' })).toEqual([]);
+    expect(finnLokaleNokler(alle, 'testregelverk.reg', { dato: '2026-09-01' })).toEqual([]);
   });
 
   it('feiler tydelig for ukjent nøkkel', () => {

@@ -1,14 +1,12 @@
 // Regelkontekst for kalkulatorene: dagens dato og brukerens fylke og skole.
+import { iDag } from '../../data/skolear.ts';
 import { useCallback, useMemo, useRef, useState } from 'preact/hooks';
 import { useTilstand } from '../../app/tilstand.ts';
 import { hentVerdi, type Regelkontekst } from '../../core/regler/index.ts';
 import type { Hent } from './beregning/index.ts';
 
-export function iDag(): string {
-  const d = new Date();
-  const to = (n: number) => String(n).padStart(2, '0');
-  return `${d.getFullYear()}-${to(d.getMonth() + 1)}-${to(d.getDate())}`;
-}
+// Dagens dato står i datalaget (avgjørelse 049).
+export { iDag };
 
 export function useRegelkontekst(): Regelkontekst {
   const { innstillinger } = useTilstand();

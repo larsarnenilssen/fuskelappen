@@ -1,0 +1,12 @@
+id: inntak-003
+beskrivelse: "F3: Som F1, men IV i faget med 3."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg1
+  standpunkt: [5, 4, 4, IV, 4, 5, 5, 4, 5, 5, 4, 5]
+  eksamen: [4, 5]
+forventet:
+  snitt: 4.21
+  poeng: 42.1
+begrunnelse: IV teller med verdien null. 59 ÷ 14 = 4,214 → 4,21 × 10 = 42,1. § 4-19 første ledd bokstav e.

@@ -1,0 +1,14 @@
+id: inntak-001
+beskrivelse: "F1: Vg1 med tolv standpunktkarakterer og to eksamenskarakterer (oppdiktet)."
+godkjent: { av: eier, dato: 2026-10-03 }
+kalkulator: poeng
+input:
+  trinn: Vg1
+  standpunkt: [5, 4, 4, 3, 4, 5, 5, 4, 5, 5, 4, 5]
+  eksamen: [4, 5]
+forventet:
+  snitt: 4.43
+  poeng: 44.3
+begrunnelse: >-
+  62 ÷ 14 = 4,428… → 4,43 (gjennomsnitt med to desimaler, vanlig avrunding) × 10 = 44,3. Opplæringsforskrifta
+  § 4-19 første ledd bokstav a, Udirs merknad om avrunding. Eier 03.10.2026: 44,3.

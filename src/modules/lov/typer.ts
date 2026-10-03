@@ -106,3 +106,17 @@ export function alleSeksjoner(seksjoner: readonly Seksjon[]): Seksjon[] {
 
 /** Teksten i en liste med segmenter, uten lenker og fotnoter. */
 export const rentekst = (segmenter: readonly Segment[]) => segmenter.map((s) => (typeof s === 'string' ? s : 't' in s ? s.t : '')).join('');
+
+/** Hele teksten i en paragraf som ren tekst, til søket og sitatsjekken. */
+export function paragraftekst(p: Paragraf): string {
+  const ledd = (l: Paragraf['ledd'][number]): string =>
+    [rentekst(l.tekst), ...(l.liste ?? []).flatMap((x) => [x.merke, ...x.ledd.map(ledd)]), ...(l.etter ?? []).map(rentekst)].join(' ');
+  return p.ledd.map(ledd).join(' ');
+}
+
+/** Hele teksten i et dokument som ren tekst, paragraf for paragraf. Kildesjekken ser etter sitatene her. */
+export function dokumenttekst(dok: Lovdokument): string {
+  return alleParagrafer(dok.seksjoner)
+    .map(({ paragraf }) => paragraftekst(paragraf))
+    .join('\n');
+}

@@ -1,0 +1,40 @@
+# Tilleggspoeng ved inntak til Vg1 i Vestland (forskrift om inntak og formidling i Vestland § 2-7 og § 2-8).
+# Supplerer de nasjonale reglene og brukes bare når Vestland er valgt. Inntaksområdepoeng (§ 2-1) er ikke med:
+# forskriften sier ikke hvor mange poeng det er (eier 03.10.2026).
+id: inntak-vestland-2024
+regelverk: inntak
+gyldig_fra: "2024-08-01"
+gyldig_til: "2099-12-31"
+kilde: vestland-forskrift-inntak
+gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+verdier:
+  tilleggspoeng_mdd_1:
+    verdi: 3
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-7 andre ledd" }
+    kontrollert: null
+    sitat: "Søkaren får 3 tilleggspoeng om søkaren viser dugleik utover gjennomsnittet."
+  tilleggspoeng_mdd_2:
+    verdi: 6
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-7 andre ledd" }
+    kontrollert: null
+    sitat: "Søkaren får 6 tilleggspoeng om søkaren viser dugleik som vidarekomen og har eit stort potensiale."
+  tilleggspoeng_mdd_3:
+    verdi: 9
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-7 andre ledd" }
+    kontrollert: null
+    sitat: "Søkaren får 9 tilleggspoeng om søkaren viser framifrå dugleik og har eit uvanleg stort potensiale."
+  tilleggspoeng_idrett_1:
+    verdi: 3
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-8 andre ledd" }
+    kontrollert: null
+    sitat: "Søkarar på regionalt nivå får 3 tilleggspoeng"
+  tilleggspoeng_idrett_2:
+    verdi: 6
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-8 andre ledd" }
+    kontrollert: null
+    sitat: "søkarar på landslagsnivå får 6 tilleggspoeng"
+  tilleggspoeng_idrett_3:
+    verdi: 9
+    kilde: { id: vestland-forskrift-inntak, punkt: "§ 2-8 andre ledd" }
+    kontrollert: null
+    sitat: "søkarar på internasjonalt nivå får 9 tilleggspoeng."

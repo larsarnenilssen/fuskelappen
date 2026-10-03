@@ -204,6 +204,8 @@ export const kildeSkjema = z
   .object({
     id: idSkjema,
     navn: z.string().min(1),
+    /** Kort navn til utregningene i kalkulatorene, f.eks. «Opplæringsforskrifta». Uten kortnavn brukes navnet. */
+    kortnavn: z.string().min(1).optional(),
     utgiver: z.string().min(1),
     url: z.url(),
     type: z.enum(['side', 'lovdata-datasett', 'grep', 'data']),

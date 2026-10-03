@@ -19,6 +19,16 @@ declare module 'virtual:fagroller' {
   export const laereplaner: Record<string, string>;
 }
 
+declare module 'virtual:fagsok' {
+  /** Programområdene, fagkodene og årstimene til fagsøket i kalkulatorene, fra fagindeksen (avgjørelse 049). */
+  const data: {
+    programomrader: Record<string, Record<string, [string, string][]>>;
+    fagkoder: Record<string, [string, string][]>;
+    arstimer: Record<string, number | null>;
+  };
+  export default data;
+}
+
 declare module 'virtual:tilbud' {
   /** Tilbudene i videregående, regnet ut når appen bygges (avgjørelse 035). Se src/modules/opplaeringslop/data.ts. */
   const data: unknown;

@@ -3,10 +3,12 @@
 # sjekkmetode:  side | kf-infoserie | fil | lovdata | lovtekst | grep | udir-fagfordeling | vigo-kodeverk | nsr | ingen
 # aktiv:        true når kildejobben skal sjekke kilden. Kilder aktiveres i fasen der de tas i bruk.
 # uttrekk:      for sjekkmetode «side»: hvilken del av siden som sammenlignes.
+# kortnavn:     valgfritt kort navn til utregningene i kalkulatorene, f.eks. «Opplæringsforskrifta».
 # godkjent_fingeravtrykk: settes bare av eier, eller etter eksplisitt beskjed fra eier.
 kilder:
   - id: ks-sfs2213
     navn: SFS 2213 Arbeidstidsavtalen for undervisningspersonalet, med vedlegg og protokoller
+    kortnavn: SFS 2213
     utgiver: KS
     url: https://www.ks.no/fagomrader/lonn-og-tariff/saravtaler/
     type: side
@@ -25,6 +27,7 @@ kilder:
 
   - id: ks-sfs2213-avtaletekst
     navn: SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)
+    kortnavn: SFS 2213
     utgiver: KS (KF Infoserie)
     url: https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e
     type: side
@@ -41,6 +44,7 @@ kilder:
 
   - id: udf-sfs2213
     navn: SFS 2213 Arbeidstid skole – avtaleteksten gjengitt av Utdanningsforbundet
+    kortnavn: SFS 2213 (Utdanningsforbundet)
     utgiver: Utdanningsforbundet
     url: https://www.utdanningsforbundet.no/lonn-og-arbeidsvilkar/tariffavtaler/ks/ks-tariffavtaler/sfs-2213/
     type: side
@@ -56,6 +60,7 @@ kilder:
 
   - id: ks-hovedtariffavtalen
     navn: Hovedtariffavtalen 1.5.2026–30.4.2028
+    kortnavn: Hovedtariffavtalen
     utgiver: KS
     url: https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf
     type: side
@@ -73,6 +78,7 @@ kilder:
 
   - id: arbeidsmiljoloven
     navn: Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)
+    kortnavn: Arbeidsmiljøloven
     utgiver: Lovdata
     url: https://lovdata.no/lov/2005-06-17-62
     type: lovdata-datasett
@@ -92,6 +98,7 @@ kilder:
 
   - id: opplaeringslova
     navn: Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)
+    kortnavn: Opplæringslova
     utgiver: Lovdata
     url: https://lovdata.no/lov/2023-06-09-30
     type: lovdata-datasett
@@ -108,6 +115,7 @@ kilder:
 
   - id: opplaeringsforskrifta
     navn: Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
+    kortnavn: Opplæringsforskrifta
     utgiver: Lovdata
     url: https://lovdata.no/forskrift/2024-06-03-900
     type: lovdata-datasett
@@ -123,6 +131,7 @@ kilder:
 
   - id: forvaltningsloven
     navn: Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
+    kortnavn: Forvaltningsloven
     utgiver: Lovdata
     url: https://lovdata.no/lov/1967-02-10
     type: lovdata-datasett
@@ -153,6 +162,7 @@ kilder:
 
   - id: udir-grep
     navn: Grep – fag, læreplaner, vurderingsordninger og årstimetall
+    kortnavn: Grep
     utgiver: Utdanningsdirektoratet
     url: https://data.udir.no/kl06/v201906/
     type: grep
@@ -170,6 +180,7 @@ kilder:
 
   - id: udir-fag-og-timefordeling
     navn: Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)
+    kortnavn: Udir-1-2026
     utgiver: Utdanningsdirektoratet
     url: https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/
     type: side
@@ -301,6 +312,7 @@ kilder:
 
   - id: vigo-kodeverk
     navn: VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader
+    kortnavn: VIGO Kodeverksbase
     utgiver: Novari IKS for fylkeskommunene
     url: https://kodeverk.vigo.no/
     type: data
@@ -352,6 +364,7 @@ kilder:
 
   - id: vestland-forskrift-inntak
     navn: Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
+    kortnavn: Inntaksforskrifta i Vestland
     utgiver: Lovdata
     url: https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380
     type: side
@@ -390,7 +403,7 @@ kilder:
     niva: nasjonal
     lisens: NLOD 2.0
     sjekkmetode: side
-    aktiv: false
+    aktiv: true
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
@@ -485,8 +498,27 @@ kilder:
       yrkesfaglig rekvalifisering. Kildesjekken leser oversiktssiden. Stegene i veiviseren «Rett, inntak og søknad»
       viser til undersidene.
 
+  - id: udir-fag-og-timefordeling-grunnskole
+    navn: Fag- og timefordeling i grunnskolen (Udir-1-2026, vedlegg 1, punkt 2.2)
+    kortnavn: Udir-1-2026, grunnskolen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/2.-grunnskolen/2.2ordinar-fag-og-timefordeling/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Fagene på vitnemålet fra grunnskolen i poengberegningen til Vg1 (src/modules/inntak/beregning/grunnskolefag.ts).
+      Endres tabellen, lager kildesjekken en kontrollsak, og listen må sjekkes. Neste rundskriv har ny adresse.
+
   - id: udir-merknader-ofo
     navn: Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
+    kortnavn: Udirs merknader til opplæringsforskrifta
     utgiver: Utdanningsdirektoratet
     url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/
     type: side
