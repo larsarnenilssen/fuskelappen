@@ -263,15 +263,15 @@
   type: begrep
   tittel: { nb: Generell studiekompetanse, nn: Generell studiekompetanse }
   tekst:
-    nb: Generell studiekompetanse er det vanlige grunnlaget for opptak til høyere utdanning. Kravene omfatter disse fagene fra videregående opplæring, med timer per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elever på yrkesfag betyr det normalt norsk 280 timer, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2, slik Vg3 påbygging gir. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skoleåret som begynner det året en fyller 24 år, og deretter etter reglene for voksne.
-    nn: Generell studiekompetanse er det vanlege grunnlaget for opptak til høgare utdanning. Krava omfattar desse faga frå vidaregåande opplæring, med timar per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elevar på yrkesfag betyr det normalt norsk 280 timar, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2, slik Vg3 påbygging gir. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skuleåret som tek til det året ein fyller 24 år, og deretter etter reglane for vaksne.
+    nb: Generell studiekompetanse er det vanlige grunnlaget for opptak til høyere utdanning. Kravene omfatter disse fagene fra videregående opplæring, med timer per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elever på yrkesfag betyr det normalt norsk 280 timer, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skoleåret som begynner det året en fyller 24 år, og deretter etter reglene for voksne.
+    nn: Generell studiekompetanse er det vanlege grunnlaget for opptak til høgare utdanning. Krava omfattar desse faga frå vidaregåande opplæring, med timar per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elevar på yrkesfag betyr det normalt norsk 280 timar, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skuleåret som tek til det året ein fyller 24 år, og deretter etter reglane for vaksne.
   kilder:
     - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.4 Generell studiekompetanse", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
     - { id: opplaeringslova, punkt: "§ 5-7 Påbygging til generell studiekompetanse", url: "https://lovdata.no/lov/2023-06-09-30/§5-7" }
   kontrollert: null
   kontrollsporsmal:
     - "Udir-1 punkt 3.5.4 sier at disse fagene «inngår i kravene». Er listen fullstendig, eller bør begrepet si «blant annet»?"
-    - "Er det riktig å knytte timene for elever på yrkesfag til det Vg3 påbygging gir?"
+    - "Er timene for elever på yrkesfag (norsk 280, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2) riktig gjengitt etter Udir-1 punkt 3.5.4?"
   stikkord: [studiekompetanse, høyere utdanning, opptak, påbygging, 24 år]
   relatert: [pabygging, sluttkompetanse, utdanningsprogram]
 

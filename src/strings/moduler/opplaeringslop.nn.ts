@@ -47,6 +47,8 @@ export const opplaeringslopNn = {
     visFlere: 'Vis fleire skular',
     hentet: 'Etter utdanning.no, henta {dato}. Skulen du har valt under Innstillingar, er kopla med skulenummeret i VIGO.',
     utenTilbud: 'utdanning.no viser ingen tilbod ved skulen.',
+    alleVedSkolen: 'Vis alle tilboda ved skulen ({antall})',
+    bareLopet: 'Vis berre løpet for {tilbud}',
     heleLandet: 'Søk i heile landet ({antall})',
   },
   kontor: {

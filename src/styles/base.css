@@ -624,13 +624,27 @@ main {
   gap: var(--rom-2);
 }
 
+/*
+ * Hver skole er et eget kort med luft mellom, så det er lett å se hvor en skole slutter når listen rulles. En åpnet
+ * skole får en annen flate, og navnet blir stående øverst mens tilbudene rulles forbi (eier 03.10.2026).
+ */
 .skoleliste {
+  display: grid;
+  gap: var(--rom-2);
   list-style: none;
   margin: 0 0 var(--rom-4);
   padding: 0;
+}
+
+.skoleliste > li {
   background: var(--farge-flate);
   border: var(--strek) solid var(--farge-kant);
   border-radius: var(--radius-m);
+}
+
+.skoleliste > li.apen {
+  background: var(--farge-flate-2);
+  border-color: var(--farge-merke);
 }
 
 .skoletilbud {
@@ -641,20 +655,45 @@ main {
   margin: 0 0 var(--rom-2);
 }
 
-.skoleliste > li + li {
-  border-top: var(--strek) solid var(--farge-linje);
-}
-
 .skoleliste .skolekort-knapp {
   display: flex;
   width: 100%;
   gap: var(--rom-3);
   min-height: 3.25rem;
   padding: var(--rom-3) var(--rom-4);
+  border-radius: var(--radius-m);
+}
+
+@media (display-mode: standalone) and (pointer: coarse) {
+  .skoleliste {
+    --topplinje-luft: var(--topplinje-luft-installert);
+  }
+}
+
+.skoleliste > li.apen .skolekort-knapp {
+  position: sticky;
+  top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--topplinje-luft, 0px));
+  z-index: 1;
+  background: var(--farge-flate-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
 }
 
 .skolekort-innhold {
-  padding: 0 var(--rom-4) var(--rom-2);
+  padding: var(--rom-3) var(--rom-4) var(--rom-2);
+}
+
+.skolekort-innhold > :first-child {
+  margin-top: 0;
+}
+
+/* Tilbudet det er søkt på, i treet til en skole. */
+.lop-kort[data-valgt='ja'] {
+  border: 2px solid var(--farge-merke);
+}
+
+.skolekort-alle {
+  margin: var(--rom-3) 0 0;
 }
 
 .kontorliste .kontor {
