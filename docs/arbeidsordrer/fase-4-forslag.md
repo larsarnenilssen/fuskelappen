@@ -110,3 +110,5 @@ Forslaget er godkjent. Kort botid er viktig å ha med. Eier vil at appen gir bed
 Navnet Fuskelappen beholdes inntil videre. CI deles på flere jobber (avgjørelse 040). Lange testkjøringer venter til eier og Claude er enige om en versjon som skal testes. Skjermbilder kommer først.
 
 **Versjon (eier 03.10.2026):** Pakke 1 (veiviseren) flettes inn i main uten egen versjon, fordi modulen er skjult. 0.23.0 kommer med pakke 2, og da blir modulen synlig med hele veiviser 1.
+
+**Vestland (03.10.2026):** vestlandfylke.no svarer ikke, heller ikke for eier. Uløst punkt i OPPDRAG.md. Vestland-innholdet venter til sidene svarer igjen.

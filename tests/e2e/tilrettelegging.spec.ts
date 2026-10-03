@@ -13,7 +13,7 @@ test.describe('veiviser', () => {
     const steg = page.locator('.veiviser-stegtittel');
     await expect(steg).toHaveText('Velg hvor du starter');
 
-    await page.getByRole('link', { name: 'I den ordinære opplæringen' }).click();
+    await page.getByRole('link', { name: 'I den ordinære opplæringen', exact: true }).click();
     await expect(page).toHaveURL(/steg=ti-tilpasset&svar=ordinar$/);
     await expect(steg).toHaveText('Tilpasset opplæring for alle');
     // Fokus flyttes til overskriften i det nye steget, så skjermlesere leser det.

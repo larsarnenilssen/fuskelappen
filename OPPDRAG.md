@@ -474,6 +474,14 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - VLFK-innhold der det er relevant, merket som fylkesinnhold.
 - Oppsummeringene skrives under utviklingen som utkast, og eier kontrollerer dem.
 
+*Status 03.10.2026:*
+- Pakke 1 (veiviseren som felles komponent, avgjørelse 041) ble flettet uten egen versjon, fordi modulen var skjult (eier).
+- Pakke 2 er levert i 0.23.0 som modulen **Tilrettelegging** med veiviseren «Tilpasset opplæring og individuell tilrettelegging» (navnet valgt av eier, fordi alle elever skal ha tilpasset opplæring), kartet over hele prosessen og elleve nye begreper.
+- Eiers svar 03.10.2026: Fristen for foreløpig svar regnes fra den sakkyndige vurderingen er mottatt, og tilrettelegging avsluttes uten nytt vedtak. Begge står i praksislisten til bekreftelse.
+- Ende-til-ende-testene i CI er delt på seks jobber (avgjørelse 040).
+
+**Uløst:** vestlandfylke.no svarer ikke, verken fra utviklingsmiljøet, fra GitHub Actions eller for eier (03.10.2026). Vestland-innhold i veiviserne (Rettleiingstenesta, midlertidig vedtak ved inntak, særskild språkopplæring og innføringskurs) venter til sidene svarer igjen, eventuelt til en senere fase. Kilden `vlfk-sider` har fortsatt adressen vlfk.no og må få vestlandfylke.no når sidene kan leses.
+
 **Kontrollpunkt:** Eier kontrollerer prosess, begrepsbruk og kildehenvisninger.
 
 ### Fase 5 – Inntak
