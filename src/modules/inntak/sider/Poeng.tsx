@@ -21,7 +21,8 @@ import type { SideProps } from '../../typer.ts';
 import { GRUNNSKOLEFAG, GRUNNSKOLEFAG_KILDER, type Grunnskolefag } from '../beregning/grunnskolefag.ts';
 import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Karaktertype, type Poengresultat, type Poengsteg, type Vurdering } from '../beregning/poeng.ts';
 import { type Fellesfag, lopsrader, type Lopsrad, programomraderVg2, UTDANNINGSPROGRAM } from '../beregning/lop.ts';
-import { hentFagfordeling, hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
+import { hentFagfordeling } from '../fordeling.ts';
+import { hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
 import type { Fagfordeling } from '../../fag/tilbud/skjema.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
 

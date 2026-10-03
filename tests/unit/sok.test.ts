@@ -1,7 +1,8 @@
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import type { Synonymer } from '../../src/core/innhold/skjema.ts';
-import { byggIndeks, lagNormaliserer, lastIndeks, serialiser, sok, synligeTreff, type Sokeoppforing } from '../../src/core/sok/sok.ts';
+import { byggIndeks, lagNormaliserer, lastIndeks, serialiser, sok, type Sokeoppforing } from '../../src/core/sok/sok.ts';
+import { synligeTreff } from '../../src/core/sok/synlige.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
 
 const rot = join(__dirname, '../..');

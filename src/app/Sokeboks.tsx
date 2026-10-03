@@ -1,7 +1,8 @@
 // Søkefelt med resultater. Brukes på forsiden og på søkesiden.
 import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
-import { type Sokeresultat, synligeTreff } from '../core/sok/sok.ts';
+import type { Sokeresultat } from '../core/sok/sok.ts';
+import { synligeTreff } from '../core/sok/synlige.ts';
 import { hentSok } from './sokeklient.ts';
 import { useTekst, useTilstand } from './tilstand.ts';
 
