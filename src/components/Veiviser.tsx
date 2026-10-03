@@ -75,22 +75,31 @@ function Fasestolpe({ veiviser, gjeldende }: { veiviser: Veiviserelement; gjelde
     gjeldende?.fase,
   );
   const statustekst = { ferdig: t('komponenter.veiviser.faseFerdig'), gjeldende: t('komponenter.veiviser.faseGjeldende'), senere: t('komponenter.veiviser.faseSenere') };
+  const naa = veiviser.faser.findIndex((f) => f.id === gjeldende?.fase);
   return (
-    <ol class="veiviser-faser" aria-label={t('komponenter.veiviser.faser')}>
-      {veiviser.faser.map((f, i) => {
-        const s = status[i] ?? 'senere';
-        return (
-          <li key={f.id} class={`veiviser-fase veiviser-fase-${s}`} aria-current={s === 'gjeldende' ? 'step' : undefined}>
-            <span class="veiviser-fase-strek" aria-hidden="true" />
-            <span class="veiviser-fase-navn">
-              {s === 'ferdig' && <Ikon navn="ok" class="ikon-liten" />}
-              {f.tittel[malform]}
-            </span>
-            <span class="skjult-visuelt"> ({statustekst[s]})</span>
-          </li>
-        );
-      })}
-    </ol>
+    <>
+      <ol class="veiviser-faser" aria-label={t('komponenter.veiviser.faser')}>
+        {veiviser.faser.map((f, i) => {
+          const s = status[i] ?? 'senere';
+          return (
+            <li key={f.id} class={`veiviser-fase veiviser-fase-${s}`} aria-current={s === 'gjeldende' ? 'step' : undefined}>
+              <span class="veiviser-fase-strek" aria-hidden="true" />
+              <span class="veiviser-fase-navn">
+                {s === 'ferdig' && <Ikon navn="ok" class="ikon-liten" />}
+                {f.tittel[malform]}
+              </span>
+              <span class="skjult-visuelt"> ({statustekst[s]})</span>
+            </li>
+          );
+        })}
+      </ol>
+      {/* På svært smal skjerm er det ikke plass til navnene under stolpen. Da står fasen her i stedet. */}
+      {naa >= 0 && (
+        <p class="veiviser-fase-tekst" aria-hidden="true">
+          {t('komponenter.veiviser.faseAv', { nr: String(naa + 1), antall: String(veiviser.faser.length), fase: veiviser.faser[naa]?.tittel[malform] ?? '' })}
+        </p>
+      )}
+    </>
   );
 }
 

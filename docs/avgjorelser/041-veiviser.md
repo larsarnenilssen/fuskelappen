@@ -16,3 +16,8 @@
 - På stor skjerm (fra 64rem) står prosessen i en kolonne til venstre som følger med ved rulling: fasene som punkter på en linje, med stegene på veien under hver fase og det gjeldende steget markert. Kortet og knappene står til høyre, og svarknappene står side om side.
 
 **Konsekvens:** En ny veiviser i fase 5–7 er bare innhold i YAML og en side som viser komponenten. Ingressen står bare på starten, så stegene kommer høyt opp på skjermen.
+
+**Tillegg i pakke 2 (03.10.2026):**
+- **Kartet «Hele prosessen»** under knappene viser stegene i hver fase med fristene som merker («Klage: 3 uker», «Hvert år»). Det er åpent på første steg, så brukeren ser hele løpet med en gang. Hvert steg er en lenke dit, med den korteste veien fra starten (`korstesteVei`). Steget kan ha `fristKort` til merket.
+- **Utfall:** Eier forsto ikke de grønne «Resultat»-merkene (foreløpig, ønsket eller eneste mulighet?). Et utfall er der veien ender, avhengig av svarene. Kortet heter nå «Her ender veien» og har nøytral kant og et flagg. I kartet står utfallene for seg sist i hver fase under «Veien kan ende her», med stiplet linje og flagg. Grønt brukes bare om steg brukeren har gått gjennom.
+- **Navn:** Veiviseren heter «Tilpasset opplæring og individuell tilrettelegging», fordi alle elever skal ha tilpasset opplæring og bare noen få trenger individuell tilrettelegging (eier 03.10.2026).

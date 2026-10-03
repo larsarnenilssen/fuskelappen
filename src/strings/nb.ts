@@ -208,6 +208,7 @@ export const nb = {
       heleProsessen: 'Hele prosessen',
       kartHjelp: 'Stegene i hver fase, og hvor veien kan ende, avhengig av svarene. Velg et steg for å gå rett dit. Steg med frist har et merke med klokke.',
       kilder: 'Kilder ({antall})',
+      faseAv: 'Fase {nr} av {antall}: {fase}',
       faser: 'Fasene i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',

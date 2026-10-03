@@ -4027,6 +4027,33 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
+.veiviser-fase-tekst {
+  display: none;
+}
+
+/* Svært smal skjerm: navnene under stolpen skjules (men leses fortsatt av skjermlesere), og fasen står under. */
+@media (max-width: 24rem) {
+  .veiviser-fase-navn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .veiviser-faser {
+    margin-bottom: var(--rom-1);
+  }
+
+  .veiviser-fase-tekst {
+    display: block;
+    margin: 0 0 var(--rom-4);
+    font-size: var(--str-xs);
+    font-weight: 700;
+  }
+}
+
 /* Linjen til venstre binder veien hit, kortet og veien videre sammen. */
 .veiviser-lop {
   position: relative;
@@ -4328,6 +4355,75 @@ p.fagkort-tittel {
 
 .veiviser-inngang-faser span:not(:last-child)::after {
   content: ' →';
+}
+
+/* Figuren på oversikten i Tilrettelegging: «noen få» står inne i «alle», fordi også de skal ha tilpasset opplæring. */
+.tl-figur {
+  margin: var(--rom-4) 0 var(--rom-5);
+}
+
+.tl-figur .liten-overskrift {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.tl-lag {
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+  border-radius: var(--radius-m);
+}
+
+.tl-alle {
+  border: var(--strek) solid var(--farge-kant);
+  background: var(--farge-flate-2);
+}
+
+.tl-noen {
+  margin: var(--rom-3) 0 0 var(--rom-5);
+  border: 2px solid var(--farge-merke);
+  background: var(--farge-flate);
+}
+
+.tl-hvem {
+  margin: 0;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
+.tl-navn {
+  display: inline-block;
+  margin: 0.125rem 0 var(--rom-1);
+  font-size: var(--str-l);
+  font-weight: 700;
+}
+
+.tl-tekst {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.tl-retter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.tl-retter a {
+  display: inline-block;
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-flate-2);
+}
+
+@media (min-width: 40rem) {
+  .tl-noen {
+    margin-left: 25%;
+  }
 }
 
 /* Kartet over hele prosessen: én blokk per fase med nummer, stegene på en linje under, og fristene som merker. */

@@ -208,6 +208,7 @@ export const nn: Tekster = {
       heleProsessen: 'Heile prosessen',
       kartHjelp: 'Stega i kvar fase, og kvar vegen kan ende, avhengig av svara. Vel eit steg for å gå rett dit. Steg med frist har eit merke med klokke.',
       kilder: 'Kjelder ({antall})',
+      faseAv: 'Fase {nr} av {antall}: {fase}',
       faser: 'Fasane i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',
