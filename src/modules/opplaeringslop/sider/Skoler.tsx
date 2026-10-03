@@ -10,7 +10,7 @@ import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
 import type { SideProps } from '../../typer.ts';
-import { fullKode, kortKode } from '../data.ts';
+import { fullKode, kortKode, type Tilbudene } from '../data.ts';
 import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
 import { Brodsmuler, DinSkole, Lasting, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
 
@@ -30,15 +30,64 @@ function filterTilAdresse(f: Filter): Record<string, string> {
   return Object.fromEntries(Object.entries({ fylke: f.fylke || 'alle', program: f.program, tilbud: f.tilbud ? kortKode(f.tilbud) : '', skole: f.skole, q: f.sok }).filter(([, v]) => v));
 }
 
+/**
+ * Tilbudene ved skolen i ett utdanningsprogram som et løp, som i Opplæringsløp: hvert tilbud med tilbudene ved skolen
+ * som bygger på det, under seg (eier 03.10.2026). `sett` hindrer at et tilbud står to ganger i samme gren.
+ */
+function Skolegren({ kode, ved, indeks, tilbud, sett }: { kode: string; ved: readonly string[]; indeks: Fagindeks; tilbud: Tilbudene; sett: ReadonlySet<string> }) {
+  const neste = new Set([...sett, kode]);
+  const videre = ved.filter((k) => !neste.has(k) && (tilbud.tilbud[k]?.fra ?? []).includes(kode));
+  return (
+    <li>
+      <div class="lop-kort" data-sted={indeks.programomrader[kode]?.sted}>
+        <Tilbudslenke indeks={indeks} kode={kode} merk={false} />
+      </div>
+      {videre.length > 0 && (
+        <ul class="lop-videre">
+          {videre.map((k) => (
+            <Skolegren key={k} kode={k} ved={ved} indeks={indeks} tilbud={tilbud} sett={neste} />
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+}
+
+/** Tilbudene ved skolen, gruppert etter utdanningsprogram i samme rekkefølge som Opplæringsløp, hvert som et løp. */
+function Skoletilbud({ skole, indeks, tilbud }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene }) {
+  const { malform } = useTekst();
+  const kjente = skole.tilbud.filter((k) => indeks.programomrader[k]);
+  const sorter = (koder: string[]) =>
+    koder.sort((a, b) => TRINN.indexOf(indeks.programomrader[a]?.trinn ?? '') - TRINN.indexOf(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
+  return (
+    <>
+      {tilbud.struktur.map((p) => {
+        const ved = sorter(kjente.filter((k) => indeks.programomrader[k]?.program === p.program));
+        if (ved.length === 0) return null;
+        // Løpet starter fra tilbudene som ikke bygger på et annet tilbud ved skolen i programmet.
+        const start = ved.filter((k) => !(tilbud.tilbud[k]?.fra ?? []).some((f) => ved.includes(f)));
+        return (
+          <section key={p.program} class="skoletilbud">
+            <h3 class="liten-overskrift">{p.navn[malform]}</h3>
+            <ul class="lop">
+              {start.map((k) => (
+                <Skolegren key={k} kode={k} ved={ved} indeks={indeks} tilbud={tilbud} sett={new Set()} />
+              ))}
+            </ul>
+          </section>
+        );
+      })}
+    </>
+  );
+}
+
 /** Én skole: navnet og stedet, og tilbudene når den er åpnet. */
-function Skolekort({ skole, indeks, dinSkole, apen }: { skole: Skoleoppforing; indeks: Fagindeks; dinSkole: boolean; apen: boolean }) {
+function Skolekort({ skole, indeks, tilbud, dinSkole, apen }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; dinSkole: boolean; apen: boolean }) {
   const { t } = useTekst();
   const [vist, settVist] = useState(apen);
   const id = useId();
-  const tilbud = skole.tilbud
-    .filter((k) => indeks.programomrader[k])
-    .sort((a, b) => TRINN.indexOf(indeks.programomrader[a]?.trinn ?? '') - TRINN.indexOf(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
-  const under = [skole.sted, fylkesnavn(skole.fylke), skole.privat ? t('opplaeringslop.skoler.privat') : null, t('opplaeringslop.skoler.antallTilbud', { antall: formaterTall(tilbud.length) })].filter(Boolean).join(' · ');
+  const antall = skole.tilbud.filter((k) => indeks.programomrader[k]).length;
+  const under = [skole.sted, fylkesnavn(skole.fylke), skole.privat ? t('opplaeringslop.skoler.privat') : null, t('opplaeringslop.skoler.antallTilbud', { antall: formaterTall(antall) })].filter(Boolean).join(' · ');
   return (
     <li class="skolekort" data-skole={skole.nr ?? undefined}>
       <button type="button" class="kortknapp skolekort-knapp" aria-expanded={vist} aria-controls={id} onClick={() => settVist(!vist)}>
@@ -52,18 +101,7 @@ function Skolekort({ skole, indeks, dinSkole, apen }: { skole: Skoleoppforing; i
         <Ikon navn={vist ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
       </button>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
-        {vist &&
-          (tilbud.length === 0 ? (
-            <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p>
-          ) : (
-            <ul class="liste">
-              {tilbud.map((k) => (
-                <li key={k}>
-                  <Tilbudslenke indeks={indeks} kode={k} merk={false} />
-                </li>
-              ))}
-            </ul>
-          ))}
+        {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud skole={skole} indeks={indeks} tilbud={tilbud} />)}
         {vist && skole.nettside && (
           <p>
             <a class="ekstern-lenke" href={skole.nettside} target="_blank" rel="noopener noreferrer">
@@ -182,7 +220,7 @@ export default function Skoler({ sporring }: SideProps) {
           </p>
           <ul class="skoleliste">
             {treff.slice(0, antall).map((s) => (
-              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}`} skole={s} indeks={data.indeks} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} />
+              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}`} skole={s} indeks={data.indeks} tilbud={data.tilbud} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} />
             ))}
           </ul>
           {treff.length > antall && (

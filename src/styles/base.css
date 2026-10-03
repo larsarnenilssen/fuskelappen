@@ -604,6 +604,14 @@ main {
   border-radius: var(--radius-m);
 }
 
+.skoletilbud {
+  margin: var(--rom-3) 0;
+}
+
+.skoletilbud .liten-overskrift {
+  margin: 0 0 var(--rom-2);
+}
+
 .skoleliste > li + li {
   border-top: var(--strek) solid var(--farge-linje);
 }
@@ -3599,6 +3607,12 @@ p.fagkort-tittel {
 .fagrad-under {
   color: var(--farge-tekst-dempet);
   font-size: var(--str-s);
+}
+
+/* Merknad under et fellesfag med valg, f.eks. at S1 og R1 er programfag (Udir-1 punkt 3.3.1.4). */
+.fagrad-merknad {
+  display: block;
+  margin-top: var(--rom-1);
 }
 
 .fagrad-pil {

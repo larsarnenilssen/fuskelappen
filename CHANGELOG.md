@@ -11,8 +11,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Opplæringsløp: Min skole.** Har du valgt skole under Innstillinger, viser Opplæringsløp først utdanningsprogrammene og løpene ved skolen. Bryteren «Min skole» / «Alle» øverst bytter visning, og valget huskes. Tilbudene ved skolen har egen farge og merket «✓ Din skole», og knappen til neste trinn sier hvor mange av tilbudene videre som er ved skolen. Uten valgt skole står en merknad om å velge skole.
 - **Opplæringsløp: Yrker.** Lærefagene viser yrkene utdanning.no knytter til faget, med lenker.
 - **Opplæringsløp: Opplæringskontorer.** Oppslag over opplæringskontorene som er godkjent i fylket, fra registeret til Udir (NOR), med søk, lenke til nettsiden og til kontoret på utdanning.no, og fylkene kontoret er godkjent i. Oppslaget viser fylket du har valgt, og kan utvides til hele landet med ett trykk. Lærefagene lenker dit.
+- **Opplæringsløp: Tilbudene ved hver skole som løp.** I oppslaget over skoler står tilbudene ved skolen per utdanningsprogram, med Vg2 under Vg1 og Vg3 under Vg2, som i Opplæringsløp.
 - **Fag: Faget på NDLA.** Fagarket lenker til faget på NDLA når NDLA har det.
 - **Opplæringsløp: Løp kildene ikke er enige om, er merket.** Står et løp i Grep, men ikke i VIGO eller på utdanning.no (eller omvendt), står det ved løpet, med en forklaring.
+
+### Rettet
+
+- **Matematikk på Vg2 studieforberedende:** Eleven velger 2P, R1 eller S1 (Udir-1, punkt 3.3.1.4). Tilbudene viste bare 2P. Nå står de tre som «velg én», med en merknad om at R1 og S1 er programfag og krever et ekstra programfag.
+- **Regn ut i Arbeidsplan:** Fellesfag der eleven velger ett av noen få fag (f.eks. 1P eller 1T), ble ikke tatt med. Nå legges det første inn.
 
 ## [0.29.0] – 2026-10-03
 

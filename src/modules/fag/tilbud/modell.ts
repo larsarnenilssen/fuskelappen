@@ -126,6 +126,11 @@ export type Tilbudsdel =
       lantFra: string | null;
       /** Avvik mellom rundskrivet og Grep, f.eks. ulike timer. */
       avvik: Avvik[];
+      /**
+       * Programfag eleven kan velge i stedet for fellesfaget (FELLESFAGVALG). De står også i `koder`, etter
+       * fellesfaget, så eleven velger ett av dem.
+       */
+      erstatning?: string[];
     }
   | {
       type: 'plass';
@@ -313,6 +318,33 @@ export function finnTabell(f: Fagfordeling, kode: string, po: Programomrade, pro
 }
 
 const harPo = (fag: Fag, kode: string) => fag.po.includes(kode);
+
+/**
+ * Programfag eleven kan velge i stedet for et fellesfag, som Grep ikke knytter til fellesfaglinjen. På vg2 i de
+ * studieforberedende utdanningsprogrammene velger eleven ett av tre matematikkfag: fellesfaget 2P eller programfaget
+ * S1 eller R1 (Udir-1 punkt 3.3.1.4). S1 og R1 står i Grep som programfag og finnes med navnet.
+ */
+const FELLESFAGVALG: readonly { linje: RegExp; gjelder: (po: Programomrade) => boolean; fag: RegExp }[] = [
+  { linje: /^matematikk/i, gjelder: (po) => programgruppe(po.program) === 'studieforberedende' && po.trinn === 'Vg2', fag: /^Matematikk (S1|R1)$/ },
+];
+
+/** Programfagene som kan erstatte fellesfaget på linjen, og vurderingskodene deres. */
+function fellesfagvalg(linje: string, kode: string, indeks: Fagindeks): { koder: string[]; vurdering: string[] } {
+  const po = indeks.programomrader[kode];
+  const regel = po ? FELLESFAGVALG.find((r) => r.linje.test(linje) && r.gjelder(po)) : undefined;
+  if (!regel) return { koder: [], vurdering: [] };
+  const koder = Object.entries(indeks.fag)
+    .filter(([, f]) => f.type !== 'fellesfag' && f.timer !== null && regel.fag.test(f.navn.nb))
+    .map(([k]) => k)
+    .sort();
+  // Vurderingskodene (f.eks. «Matematikk R1, muntlig») har samme læreplan og begynner med navnet på faget.
+  const navn = koder.map((k) => ({ lp: indeks.fag[k]?.lp, navn: `${indeks.fag[k]?.navn.nb ?? k},` }));
+  const vurdering = Object.entries(indeks.fag)
+    .filter(([, f]) => f.type !== 'fellesfag' && f.timer === null && navn.some((n) => n.lp === f.lp && f.navn.nb.startsWith(n.navn)))
+    .map(([k]) => k)
+    .sort();
+  return { koder, vurdering };
+}
 const erOpphenting = (fag: Fag) => /opphenting/i.test(fag.navn.nb);
 
 function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagindeks, reserve: readonly string[] = []): Tilbudsdel | null {
@@ -343,7 +375,21 @@ function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagind
   // Vurderingskoder: ordinære koder uten timer, med samme læreplan som en av kodene.
   const lp = new Set(koder.map((k) => indeks.fag[k]?.lp));
   const vurdering = ordinare.filter(([, f]) => f.timer === null && lp.has(f.lp)).map(([k]) => k);
-  return { type: 'fag', linje, kategori: 'fellesfag', timer, koder: koder.sort(), vurdering: vurdering.sort(), alternativer: alternativer.sort(), utvalg: null, lantFra: null, avvik };
+  // Programfag eleven kan velge i stedet, står etter fellesfaget (Udir-1 punkt 3.3.1.4).
+  const valg = koder.length > 0 ? fellesfagvalg(linje, kode, indeks) : { koder: [], vurdering: [] };
+  const del: Tilbudsdel = {
+    type: 'fag',
+    linje,
+    kategori: 'fellesfag',
+    timer,
+    koder: [...koder.sort(), ...valg.koder],
+    vurdering: [...vurdering, ...valg.vurdering].sort(),
+    alternativer: alternativer.sort(),
+    utvalg: null,
+    lantFra: null,
+    avvik,
+  };
+  return valg.koder.length > 0 ? { ...del, erstatning: valg.koder } : del;
 }
 
 const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((s, k) => s + (indeks.fag[k]?.timer ?? 0), 0);

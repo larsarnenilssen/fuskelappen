@@ -93,7 +93,14 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
     );
   // «Matematikk 1P» og «Matematikk 1T» blir «1P» og «1T»: det navnene har felles, står alt i linjen.
   const felles = fellesStart(del.koder.map((k) => indeks.fag[k]?.navn[malform] ?? k));
-  const kortnavn = (navn: string) => navn.slice(felles.length).trim() || navn;
+  const kortnavn = (k: string) => {
+    const navn = indeks.fag[k]?.navn[malform] ?? k;
+    return navn.slice(felles.length).trim() || navn;
+  };
+  // Programfag eleven kan velge i stedet for fellesfaget, f.eks. S1 og R1 i stedet for 2P (Udir-1 punkt 3.3.1.4).
+  const erstatning = del.erstatning ?? [];
+  const fellesfag = del.koder.filter((k) => !erstatning.includes(k));
+  const timerErstatning = [...new Set(erstatning.map((k) => indeks.fag[k]?.timer).filter((x): x is number => typeof x === 'number'))];
   return (
     <Fagrad
       navn={kortLinje(del.linje, malform)}
@@ -106,9 +113,19 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
             {del.koder.map((k, i) => (
               <span key={k}>
                 {i > 0 && ' · '}
-                <a href={`#/fag/${k}`}>{kortnavn(indeks.fag[k]?.navn[malform] ?? k)}</a>
+                <a href={`#/fag/${k}`}>{kortnavn(k)}</a>
               </span>
             ))}
+            {erstatning.length > 0 && timerErstatning.length === 1 && (
+              <span class="fagrad-merknad">
+                {' '}
+                {t('opplaeringslop.tilbud.erstatning', {
+                  fag: erstatning.map(kortnavn).join(` ${t('opplaeringslop.tilbud.og')} `),
+                  timer: formaterTall(timerErstatning[0] ?? 0),
+                  fellesfag: fellesfag.map(kortnavn).join(', '),
+                })}
+              </span>
+            )}
           </>
         )
       }
@@ -343,14 +360,15 @@ function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Til
 }
 
 /**
- * Fagene med fast fagkode (fellesfag uten valg og felles programfag) til en ny, ulagret arbeidsplan, hvert fag som
- * egen gruppe med årstimene. Fag eleven velger, må brukeren legge inn selv (eier 02.10.2026).
+ * Fagene med fast fagkode (fellesfag og felles programfag) til en ny, ulagret arbeidsplan, hvert fag som egen gruppe
+ * med årstimene. Velger eleven ett av noen få fag (f.eks. 1P eller 1T, eller 2P, R1 eller S1), legges bare det første
+ * inn (eier 03.10.2026). Fremmedspråk og andre fag eleven velger, må brukeren legge inn selv (eier 02.10.2026).
  */
 function faglinjerTilArbeidsplan(tb: Tilbudsdata, kode: string, indeks: Fagindeks, koblingsdata: NonNullable<ReturnType<typeof useKoblingsdata>>) {
   const po = indeks.programomrader[kode];
   const faste = tb.deler.flatMap((d) => {
     if (d.type !== 'fag') return [];
-    if (d.kategori === 'fellesfag') return d.koder.length === 1 && d.koder[0] ? [{ kode: d.koder[0], timer: d.timer }] : [];
+    if (d.kategori === 'fellesfag') return d.koder.length <= FAA && d.koder[0] ? [{ kode: d.koder[0], timer: d.koder.length === 1 ? d.timer : (indeks.fag[d.koder[0]]?.timer ?? d.timer) }] : [];
     return d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
   });
   return faste.flatMap(({ kode: k, timer }) => {

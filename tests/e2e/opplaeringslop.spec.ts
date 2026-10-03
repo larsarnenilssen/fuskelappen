@@ -58,6 +58,17 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('.fagkort', { hasText: 'Kroppsøving' })).toHaveCount(1);
   });
 
+  test('matematikk på vg2 studieforberedende er «velg én» av 2P, R1 og S1, og bare det første går til Arbeidsplan (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/ST/STREA2');
+    const fellesfag = page.locator('[data-rubrikk$="-fellesfag"]');
+    await expect(fellesfag).toContainText(/velg én:\s*2P · R1 · S1/);
+    await expect(fellesfag).toContainText('R1 og S1 er programfag på 140 timer');
+    await page.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+    await expect(page.locator('.fagkort', { hasText: 'Matematikk 2P' })).toHaveCount(1);
+    await expect(page.locator('.fagkort', { hasText: /Matematikk (R1|S1)/ })).toHaveCount(0);
+  });
+
   test('Vilbli-lenken bruker fylket fra innstillingene, og påbygging står under programmet brukeren kom fra', async ({ page }) => {
     await settLagret(page, { fylke: '46' });
     await page.goto('./#/opplaeringslop/HS/HSHEA2');
@@ -218,9 +229,12 @@ test.describe('opplæringsløp', () => {
     const antall = await page.locator('.skoleliste > li').count();
     await page.getByRole('button', { name: /Søk i hele landet/ }).click();
     await expect.poll(() => page.locator('.skoleliste > li').count()).toBeGreaterThan(antall);
-    // En skole viser tilbudene sine når den åpnes.
+    // En skole viser tilbudene sine når den åpnes, per utdanningsprogram og som et løp: Vg2 under Vg1 (eier 03.10.2026).
     await page.locator('.skolekort-knapp').first().click();
-    await expect(page.locator('.skolekort-innhold').first().getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
+    const innhold = page.locator('.skolekort-innhold').first();
+    const hs = innhold.locator('.skoletilbud', { has: page.getByRole('heading', { name: 'Helse- og oppvekstfag' }) });
+    await expect(hs.locator('.lop > li > .lop-kort')).toContainText(['Vg1 Helse- og oppvekstfag']);
+    await expect(hs.locator('.lop > li > .lop-videre').getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
   });
 
   test('lærefaget har yrker og lenke til opplæringskontorene i fylket (avgjørelse 053)', async ({ page }) => {

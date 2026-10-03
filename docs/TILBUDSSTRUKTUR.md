@@ -166,7 +166,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/idrettsfag/pro
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -240,7 +240,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/kunst-design-o
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -324,7 +324,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/medier-og-komm
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -408,7 +408,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -456,7 +456,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -504,7 +504,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/musikk-dans-og
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496, flertydig |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Samfunnskunnskap | 84 | SAK1001 Samfunnskunnskap | 554* |
 | Geografi | 56 | GEO1003 Geografi | 554 |
@@ -595,7 +595,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesiali
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496 |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
@@ -643,7 +643,7 @@ Vilbli: [skoler og lærebedrifter](https://www.vilbli.no/nb/nb/no/studiespesiali
 | Del | Timer | Fagkoder | Årsramme |
 |---|--:|---|---|
 | Norsk | 112 | NOR1264 Norsk, vg2 studieforberedende utdanningsprogram, skriftlig<br>vurdering: NOR1265 Norsk, vg2 studieforberedende utdanningsprogram, muntlig | 466.5* |
-| Matematikk | 84 | MAT1023 Matematikk 2P<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk | 496 |
+| Matematikk | 84 | velg én: MAT1023 Matematikk 2P, REA3056 Matematikk R1, REA3060 Matematikk S1<br>vurdering: MAT1024 Matematikk 2P, muntlig-praktisk, REA3057 Matematikk R1, muntlig, REA3061 Matematikk S1, muntlig | 496 |
 | Fremmedspråk | 112 | velg én av 113: FSP6139 Finsk I, FSP6142 Finsk II, FSP6149 Fransk I …<br>vurdering: 100 koder | 496 |
 | Historie | 56 | HIS1009 Historie vg2 studieforberedende utdanningsprogram | 554 |
 | Kroppsøving | 56 | KRO1018 Kroppsøving vg2 | 635 |
