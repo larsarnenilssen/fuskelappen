@@ -28,8 +28,8 @@
   type: steg
   veiviser: tilpasset-og-individuell
   tittel:
-    nb: Velg hvor du starter
-    nn: Vel kvar du startar
+    nb: Hvor saken starter
+    nn: Kvar saka startar
   tekst:
     nb: Vanligvis starter saken i den ordinære opplæringen. Noen saker starter med et vedtak fra grunnskolen, eller med at eleven eller foreldrene ber om tilrettelegging. Hele prosessen står i kartet under.
     nn: Vanlegvis startar saka i den ordinære opplæringa. Nokre saker startar med eit vedtak frå grunnskolen, eller med at eleven eller foreldra ber om tilrettelegging. Heile prosessen står i kartet under.
@@ -154,8 +154,8 @@
   veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
-    nb: Er tiltakene nok?
-    nn: Er tiltaka nok?
+    nb: Vurdere tiltakene
+    nn: Vurdere tiltaka
   tekst:
     nb: Skolen vurderer om tiltakene gir eleven et tilfredsstillende utbytte, eller om eleven kan trenge individuell tilrettelegging. Mener eleven eller foreldrene at eleven trenger individuell tilrettelegging, må det fattes et vedtak, også om svaret er nei.
     nn: Skolen vurderer om tiltaka gir eleven eit tilfredsstillande utbytte, eller om eleven kan trenge individuell tilrettelegging. Meiner eleven eller foreldra at eleven treng individuell tilrettelegging, må det gjerast eit vedtak, også om svaret er nei.
@@ -227,8 +227,8 @@
   veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
-    nb: Hva kan eleven trenge?
-    nn: Kva kan eleven trenge?
+    nb: Elevens behov
+    nn: Behova til eleven
   tekst:
     nb: |-
       Individuell tilrettelegging er tre rettigheter:

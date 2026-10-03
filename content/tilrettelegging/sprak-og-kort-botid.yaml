@@ -32,8 +32,8 @@
   veiviser: sprak-og-kort-botid
   fase: vurdering
   tittel:
-    nb: Hvem har rett?
-    nn: Kven har rett?
+    nb: Hvem som har rett
+    nn: Kven som har rett
   tekst:
     nb: Retten til særskilt språkopplæring gjelder elever som har et annet morsmål enn norsk og samisk, og som ikke kan norsk godt nok til å følge den vanlige opplæringen. En elev kan være født i Norge og likevel være [minoritetsspråklig](#/begreper/minoritetsspraklig-elev).
     nn: Retten til særskild språkopplæring gjeld elevar som har eit anna morsmål enn norsk og samisk, og som ikkje kan norsk godt nok til å følgje den vanlege opplæringa. Ein elev kan vere fødd i Noreg og likevel vere [minoritetsspråkleg](#/begreper/minoritetsspraklig-elev).
@@ -169,8 +169,8 @@
   veiviser: sprak-og-kort-botid
   fase: opplaering
   tittel:
-    nb: Kort botid?
-    nn: Kort butid?
+    nb: Elever med kort botid
+    nn: Elevar med kort butid
   tekst:
     nb: Det er ingen fast grense for hvor lenge en elev må ha bodd i Norge for å regnes som nyankommet. Fylkeskommunen ser på norskferdighetene, hva som er best for eleven, og hensynet til integrering. Elever som har bodd kort tid i Norge, kan få innføringsopplæring.
     nn: Det er inga fast grense for kor lenge ein elev må ha budd i Noreg for å reknast som nykomen. Fylkeskommunen ser på norskdugleiken, kva som er best for eleven, og omsynet til integrering. Elevar som har budd kort tid i Noreg, kan få innføringsopplæring.

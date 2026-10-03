@@ -71,7 +71,7 @@
   kontrollsporsmal:
     - "Bør steget også nevne unntaket for søkere i det nordiske utdanningsfellesskapet (VL § 2-17 tredje ledd)?"
 
-- id: sk-februar
+- id: sk-soknad
   type: steg
   veiviser: sokerkategori
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
@@ -88,26 +88,9 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig å si at rektor «tar over» etter det sentrale inntaket, når VL § 2-19 sier at ansvaret blir delegert til rektor?"
-
-- id: sk-mars
-  type: steg
-  veiviser: sokerkategori
-  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
-  tittel:
-    nb: Etter inntaket i Vestland
-    nn: Etter inntaket i Vestland
-  tekst:
-    nb: Når det sentrale inntaket er ferdig, tar rektor over og følger ventelistene til utgangen av august. Fra 1. september regnes inntaket som avsluttet. Eleven må møte første skoledag, eller melde fra og dokumentere fraværet. Uten gyldig grunn mister eleven plassen.
-    nn: Når det sentrale inntaket er ferdig, tek rektor over og følgjer ventelistene til utgangen av august. Frå 1. september blir inntaket rekna som avslutta. Eleven må møte første skuledag, eller melde frå og dokumentere fråværet. Utan gyldig grunn mistar eleven plassen.
-  paragrafer: [vestland-inntak/2-16, vestland-inntak/2-18, vestland-inntak/2-19]
-  kilder:
-    - { id: vestland-forskrift-inntak, punkt: "§ 2-16 Søknadsfrist", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-16" }
-    - { id: vestland-forskrift-inntak, punkt: "§ 2-18 Frammøte første skuledag og § 2-19 Rektor sin rett til inntak av elevar", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-19" }
-  kontrollert: null
-  kontrollsporsmal:
     - "VL § 2-19 tredje ledd har en rekkefølge for søkere rektor tar inn etter ventelistene. Bør den stå her?"
 
-- id: sk-voksen-soknad
+- id: sk-voksenrett
   type: steg
   veiviser: sokerkategori
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }

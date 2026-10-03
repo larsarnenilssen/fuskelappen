@@ -11,49 +11,48 @@ test.describe('veiviser', () => {
     await page.goto('./#/tilrettelegging');
     await page.getByRole('link', { name: /Tilpasset opplæring og individuell tilrettelegging/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
-    await expect(steg).toHaveText('Velg hvor du starter');
+    await expect(steg).toHaveText('Hvor saken starter');
 
     await page.getByRole('link', { name: 'I den ordinære opplæringen', exact: true }).click();
     await expect(page).toHaveURL(/steg=ti-tilpasset&svar=ordinar$/);
-    await expect(steg).toHaveText('Tilpasset opplæring for alle');
-    // Fokus flyttes til overskriften i det nye steget, så skjermlesere leser det.
-    await expect(steg).toBeFocused();
+    // Steg uten valg står på samme side som spørsmålet etter dem, så brukeren trykker bare der det er et valg.
+    await expect(steg).toHaveText(['Tilpasset opplæring for alle', 'Følge med og melde fra']);
+    // Fokus flyttes til den første overskriften på den nye siden, så skjermlesere leser den.
+    await expect(steg.first()).toBeFocused();
+    await expect(page.getByRole('link', { name: /^Neste/ })).toHaveCount(0);
 
-    await page.getByRole('link', { name: /Neste\s*Følge med og melde fra/ }).click();
     await page.getByRole('link', { name: 'Ja, det er tvil' }).click();
     await expect(page).toHaveURL(/steg=ti-tiltak&svar=ordinar\.tvil$/);
-    await expect(steg).toHaveText('Egnede tiltak i den ordinære opplæringen');
+    await expect(steg).toHaveText(['Egnede tiltak i den ordinære opplæringen', 'Vurdere tiltakene']);
 
-    await page.getByRole('link', { name: /Neste\s*Er tiltakene nok\?/ }).click();
     await page.getByRole('link', { name: /^Nei, eller eleven eller foreldrene/ }).click();
     await page.getByRole('link', { name: 'Bare personlig assistanse eller fysisk tilrettelegging' }).click();
-    await page.getByRole('link', { name: /Neste\s*Vedtak om individuell tilrettelegging/ }).click();
     await page.getByRole('link', { name: 'Avslag' }).click();
     await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Vedtak/);
     await expect(page.getByRole('button', { name: 'Kopier oppsummeringen' })).toBeVisible();
 
-    // Tilbake i nettleseren går ett steg tilbake.
+    // Tilbake i nettleseren går én side tilbake, og lenken under knappene går til forrige valg.
     await page.goBack();
-    await expect(steg).toHaveText('Vedtak om individuell tilrettelegging');
-    await page.goBack();
-    await expect(steg).toHaveText('Opplyse saken om assistanse eller fysisk tilrettelegging');
+    await expect(steg).toHaveText(['Opplyse saken om assistanse eller fysisk tilrettelegging', 'Vedtak om individuell tilrettelegging']);
+    await page.getByRole('link', { name: 'Tilbake til «Elevens behov»' }).click();
+    await expect(steg).toHaveText('Elevens behov');
   });
 
   test('en delt adresse åpner samme steg med veien hit, og et tidligere steg kan velges', async ({ page }, info) => {
     await page.goto(`${VEIVISER}?steg=ti-nok&svar=ordinar.tvil`);
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Er tiltakene nok?');
-    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Steg 5/);
+    await expect(page.locator('.veiviser-stegtittel')).toHaveText(['Egnede tiltak i den ordinære opplæringen', 'Vurdere tiltakene']);
+    await expect(page.locator('.veiviser-stegnr').first()).toHaveText(/^Steg 3/);
     // Veien hit står som linje på mobil og i prosessen til venstre på stor skjerm.
     const vei = erMobil(info) ? page.locator('.veiviser-vei') : page.locator('.veiviser-prosess');
     await expect(vei.getByText('Ja, det er tvil')).toBeVisible();
     await vei.getByRole('link', { name: 'Følge med og melde fra' }).click();
     await expect(page).toHaveURL(/steg=ti-folge-med&svar=ordinar$/);
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Følge med og melde fra');
+    await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Følge med og melde fra');
   });
 
   test('en adresse som ikke stemmer, gir det siste steget den fører fram til, med en merknad', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-nok&svar=ordinar.ukjent`);
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Følge med og melde fra');
+    await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Følge med og melde fra');
     await expect(page.getByText('Lenken passet ikke helt med veiviseren')).toBeVisible();
   });
 
@@ -68,11 +67,11 @@ test.describe('veiviser', () => {
 
   test('kildene er lukket til de åpnes, og paragrafene lenker til Regelverk', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-tilpasset&svar=ordinar`);
-    const kilder = page.locator('details.veiviser-kilder');
+    const kilder = page.locator('details.veiviser-kilder').first();
     await expect(kilder.getByRole('link', { name: /punkt 1\.1/ })).toBeHidden();
     await kilder.getByText('Kilder (2)').click();
     await expect(kilder.getByRole('link', { name: /punkt 1\.1/ })).toBeVisible();
-    await page.getByRole('link', { name: /§ 11-1 Tilpassa opplæring/ }).click();
+    await page.getByRole('link', { name: /§ 11-1 Tilpassa opplæring/ }).first().click();
     await expect(page).toHaveURL(/#\/lov\/opplaeringslova\/11-1$/);
   });
 
@@ -84,7 +83,7 @@ test.describe('veiviser', () => {
     await expect(kart.locator('.prosesskart-fasenavn')).toHaveText([/Tilpasset opplæring/, /Utredning/, /Vedtak/, /Oppfølging/]);
     await expect(kart.locator('.prosesskart-punkt', { hasText: 'Klage på vedtaket' }).locator('.prosesskart-frist')).toHaveText(/3 uker/);
     await kart.getByRole('link', { name: 'Individuell opplæringsplan (IOP)' }).click();
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Individuell opplæringsplan (IOP)');
+    await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Individuell opplæringsplan (IOP)');
   });
 
   test('fasene: på mobil som stolpe over steget, på stor skjerm som prosess i egen kolonne', async ({ page }, info) => {
@@ -97,13 +96,13 @@ test.describe('veiviser', () => {
       test.skip((page.viewportSize()?.width ?? 0) < 1024, 'Prosessen står i egen kolonne fra 64rem');
       await expect(page.locator('.veiviser-prosess')).toBeVisible();
       await expect(page.locator('.veiviser-faser')).toBeHidden();
-      await expect(page.locator('.veiviser-prosess [aria-current="step"]')).toHaveText('Vedtak om individuell tilrettelegging');
+      await expect(page.locator('.veiviser-prosess [aria-current="step"]').last()).toHaveText('Vedtak om individuell tilrettelegging');
     }
   });
 
   test('et begrep åpnet fra veiviseren viser at brukeren er i begrepsbanken', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
-    await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).click();
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).first().click();
     await expect(page).toHaveURL(/#\/begreper\/sakkyndig-vurdering$/);
     const sti = page.getByRole('navigation', { name: 'Plassering' });
     await sti.getByRole('link', { name: 'Begreper' }).click();
@@ -118,17 +117,17 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     await page.goto('./#/tilrettelegging');
     await page.getByRole('link', { name: /Særskilt språkopplæring og kort botid/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
-    await expect(steg).toHaveText('Hvem har rett?');
+    await expect(steg).toHaveText('Hvem som har rett');
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await expect(steg).toHaveText('Vurdere norskferdighetene');
     await page.getByRole('link', { name: 'Nei', exact: true }).click();
-    await expect(steg).toHaveText('Vedtak om særskilt språkopplæring');
-    await page.getByRole('link', { name: /Neste\s*Kort botid\?/ }).click();
+    // Vedtaket står på samme side som spørsmålet om kort botid.
+    await expect(steg).toHaveText(['Vedtak om særskilt språkopplæring', 'Elever med kort botid']);
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await expect(steg).toHaveText('Innføringsopplæring');
     await expect(page.locator('.veiviser-fakta')).toContainText('høyst to år');
     await page.getByRole('link', { name: 'Ja, eleven samtykker' }).click();
-    await page.getByRole('link', { name: /Neste\s*Jevnlig vurdering/ }).click();
+    await expect(steg).toHaveText(['Læreplanene i særskilt språkopplæring', 'Jevnlig vurdering']);
     // Et svar kan føre til samme steg igjen, og veien husker begge.
     await page.getByRole('link', { name: /^Nei, eleven trenger fortsatt/ }).click();
     await expect(steg).toHaveText('Jevnlig vurdering');
@@ -140,7 +139,7 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
 
   test('læreplanene står i en boks med kompetansegivende, vurdering og fagkodene', async ({ page }) => {
     await page.goto(`${SPRAK}?steg=sp-laereplan&svar=ja.nei.nei`);
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Læreplanene i særskilt språkopplæring');
+    await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Læreplanene i særskilt språkopplæring');
     const boks = page.locator('.laereplanboks');
     await boks.getByRole('button', { name: /Læreplanene \(3\)/ }).click();
     const planer = boks.locator('.laereplanboks-liste > li');

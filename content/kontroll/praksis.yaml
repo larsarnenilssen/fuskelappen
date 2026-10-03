@@ -141,7 +141,7 @@ praksis:
   - id: klage-inntak-inntakskontoret
     tittel: Hvem klagen på inntak sendes til
     sporsmal: Sendes klagen på et vedtak om inntak vanligvis til inntakskontoret i fylkeskommunen?
-    appen: Utfallene «Søknadsfrist 1. februar» og «Søknadsfrist 1. mars» i veiviseren «Hvilken søkerkategori?» sier at klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
+    appen: Steget «Søknad, svar og klage» i veiviseren «Hvilken søkerkategori?» sier at klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
     grunnlag: Eier 03.10.2026. Forvaltningsloven § 32 første ledd bokstav a sier at klagen settes fram for organet som har truffet vedtaket. At det vanligvis er inntakskontoret, står ikke i kildene.
-    berorer: [sk-februar, sk-mars]
+    berorer: [sk-soknad]
     bekreftet: null

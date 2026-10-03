@@ -9,10 +9,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Inntak** under «Elever og opplæring»: veiviseren **Hvilken søkerkategori?**, steg for steg etter opplæringslova kapittel 5 og 18, opplæringsforskrifta kapittel 4 og 13 og Udirs merknader til forskriften.
   - **Rett:** fullført grunnskole eller tilsvarende, opphold i Norge, studie- eller yrkeskompetanse fra før, og om søkeren har ungdomsrett eller voksenrett. Veien kan ende i påbygging, yrkesfaglig rekvalifisering eller ingen rett.
   - **Inntaksmåte:** trinn, vilkår for Vg2 og Vg3, de tre grunnlagene for fortrinnsrett, individuell behandling og poeng.
-  - **Søknad:** hvor søknaden sendes, søknadsfristen (1. februar eller 1. mars), svar og hvem som avgjør en klage. Voksne søker fortløpende.
+  - **Søknad:** hvor søknaden sendes, søknadsfristen (1. februar eller 1. mars) i hver kategori, svar og hvem som avgjør en klage. Voksne søker fortløpende, og alt om voksne står på én side.
   - **Vestland:** Når Vestland er valgt, står reglene fra den lokale forskriften i egne bokser i stegene: inntaksområde og tilleggspoeng, retten til å fortsette på samme skole, deltidselever, flytting, ventelister og voksne. Uten valgt fylke sier en merknad at bare de nasjonale reglene vises.
-  - Lenker begge veier mellom grunnopplæring i utlandet og steget «Kort botid?» i veiviseren for særskilt språkopplæring.
+  - Lenker begge veier mellom grunnopplæring i utlandet og steget om kort botid i veiviseren for særskilt språkopplæring.
 - **Nye begreper:** ungdomsrett, voksenrett, sluttkompetanse, fortrinnsrett, individuell behandling, omvalg, realkompetansevurdering, landslinje og gjesteelev, og for Vestland inntaksområde og deltidselev.
+
+### Endret
+
+- **Alle veiviserne har én side per valg:** Steg uten valg står på samme side som spørsmålet eller utfallet de fører til, så du trykker bare der det er et valg. «Neste»-knappen er borte.
+- **Mindre rulling i veiviserne:** Paragrafene står kompakt med numrene side om side, lokale regler («I Vestland») er lukket til du åpner dem, «Veien hit» viser de to siste valgene med «Vis hele veien», og under knappene står «Tilbake til …» og nederst «Til toppen».
+- **Veiviserne:** Titlene på steg med valg er et emne og ikke et spørsmål, for eksempel «Elever med kort botid» i stedet for «Kort botid?», fordi spørsmålet står over knappene.
 
 ## [0.25.0] – 2026-10-03
 

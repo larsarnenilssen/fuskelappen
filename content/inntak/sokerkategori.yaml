@@ -31,8 +31,8 @@
   veiviser: sokerkategori
   fase: rett
   tittel:
-    nb: Fullført grunnskole?
-    nn: Fullført grunnskole?
+    nb: Grunnskolen
+    nn: Grunnskolen
   tekst:
     nb: |-
       For å ha rett til videregående opplæring må søkeren ha fullført grunnskolen eller tilsvarende opplæring. Tilsvarende opplæring er:
@@ -178,8 +178,8 @@
   veiviser: sokerkategori
   fase: rett
   tittel:
-    nb: Fullført videregående fra før?
-    nn: Fullført vidaregåande frå før?
+    nb: Kompetanse fra før
+    nn: Kompetanse frå før
   tekst:
     nb: Retten til videregående opplæring varer til søkeren har studie- eller yrkeskompetanse. Studiekompetanse er vitnemål med generell studiekompetanse. Yrkeskompetanse er fag- eller svennebrev eller bestått yrkeskompetanse. Den som har en sluttkompetanse på et lavere nivå, for eksempel praksisbrev, har fortsatt retten.
     nn: Retten til vidaregåande opplæring varer til søkjaren har studie- eller yrkeskompetanse. Studiekompetanse er vitnemål med generell studiekompetanse. Yrkeskompetanse er fag- eller sveinebrev eller bestått yrkeskompetanse. Den som har ein sluttkompetanse på eit lågare nivå, til dømes praksisbrev, har framleis retten.
@@ -270,8 +270,8 @@
   veiviser: sokerkategori
   fase: rett
   tittel:
-    nb: Ungdom eller voksen?
-    nn: Ungdom eller vaksen?
+    nb: Alder
+    nn: Alder
   tekst:
     nb: Retten til videregående opplæring som ungdom varer ut skoleåret som starter det året søkeren fyller 24. Etter det har søkeren rett til opplæring for voksne. Fra skoleåret som starter det året søkeren fyller 19, kan søkeren velge mellom opplæring som ungdom og som voksen.
     nn: Retten til vidaregåande opplæring som ungdom varer ut skoleåret som tek til det året søkjaren fyller 24. Etter det har søkjaren rett til opplæring for vaksne. Frå skoleåret som tek til det året søkjaren fyller 19, kan søkjaren velje mellom opplæring som ungdom og som vaksen.
@@ -296,8 +296,8 @@
   veiviser: sokerkategori
   fase: rett
   tittel:
-    nb: Velge som ungdom eller voksen
-    nn: Velje som ungdom eller vaksen
+    nb: Ungdom eller voksen
+    nn: Ungdom eller vaksen
   tekst:
     nb: Søkeren har rett til videregående opplæring som ungdom, men kan velge opplæring for voksne i stedet. Opplæringen for voksne er tilpasset voksne og fører fram til en av tre sluttkompetanser søkeren har søkt på.
     nn: Søkjaren har rett til vidaregåande opplæring som ungdom, men kan velje opplæring for vaksne i staden. Opplæringa for vaksne er tilpassa vaksne og fører fram til ein av tre sluttkompetansar søkjaren har søkt på.
@@ -325,45 +325,28 @@
     nn: Ungdomsrett
   tekst:
     nb: |-
-      Søkeren har rett til videregående opplæring som ungdom. Søkeren skal komme inn på ett av tre utdanningsprogram på Vg1 som søkeren har søkt på, og deretter på Vg2 og Vg3 når vilkårene er oppfylt. Trinnene skal bygge på hverandre.
+      Søkeren har rett til videregående opplæring som ungdom. Søkeren skal komme inn på ett av tre utdanningsprogram på Vg1 som søkeren har søkt på, og deretter på Vg2 og Vg3 når vilkårene er oppfylt. Søkere til Vg1 fører opp tre utdanningsprogram, og søkere til Vg2 og Vg3 programområder som bygger på det de har gjennomført. Søkeren tas inn til et fullstendig utdanningsprogram eller programområde.
 
       Retten gjelder ikke fag som allerede er bestått. Søkeren kan gjøre så mange [omvalg](#/begreper/omvalg) som søkeren vil, fram til søknadsfristen det året søkeren fyller 19, og ett omvalg senere.
     nn: |-
-      Søkjaren har rett til vidaregåande opplæring som ungdom. Søkjaren skal kome inn på eitt av tre utdanningsprogram på Vg1 som søkjaren har søkt på, og deretter på Vg2 og Vg3 når vilkåra er oppfylte. Trinna skal byggje på kvarandre.
+      Søkjaren har rett til vidaregåande opplæring som ungdom. Søkjaren skal kome inn på eitt av tre utdanningsprogram på Vg1 som søkjaren har søkt på, og deretter på Vg2 og Vg3 når vilkåra er oppfylte. Søkjarar til Vg1 fører opp tre utdanningsprogram, og søkjarar til Vg2 og Vg3 programområde som byggjer på det dei har gjennomført. Søkjaren blir teken inn til eit fullstendig utdanningsprogram eller programområde.
 
       Retten gjeld ikkje fag som allereie er bestått. Søkjaren kan gjere så mange [omval](#/begreper/omvalg) som søkjaren vil, fram til søknadsfristen det året søkjaren fyller 19, og eitt omval seinare.
-  paragrafer: [opplaeringslova/5-1, opplaeringslova/5-5]
-  neste: sk-trinn
-  kilder:
-    - { id: opplaeringslova, punkt: "§ 5-1 femte og sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
-    - { id: opplaeringslova, punkt: "§ 5-5 Rett til omval", url: "https://lovdata.no/lov/2023-06-09-30/§5-5" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Bør steget også nevne at søkere med ungdomsrett før 19 år kan søke om opplæring for voksne når det er særlige grunner (§ 5-1 fjerde ledd)?"
-
-- id: sk-trinn
-  type: steg
-  veiviser: sokerkategori
-  fase: inntak
-  tittel:
-    nb: Hvilket trinn?
-    nn: Kva trinn?
-  tekst:
-    nb: Søkere tas inn til et fullstendig utdanningsprogram på Vg1 eller et fullstendig programområde på Vg2 eller Vg3. Søkere til Vg1 fører opp tre utdanningsprogram. Søkere til Vg2 og Vg3 fører opp ett eller flere programområder som bygger på det de har gjennomført.
-    nn: Søkjarar blir tekne inn til eit fullstendig utdanningsprogram på Vg1 eller eit fullstendig programområde på Vg2 eller Vg3. Søkjarar til Vg1 fører opp tre utdanningsprogram. Søkjarar til Vg2 og Vg3 fører opp eitt eller fleire programområde som byggjer på det dei har gjennomført.
-  paragrafer: [opplaeringsforskrifta/4-2, opplaeringsforskrifta/4-7, opplaeringsforskrifta/4-12]
+  paragrafer: [opplaeringslova/5-1, opplaeringslova/5-5, opplaeringsforskrifta/4-2, opplaeringsforskrifta/4-7, opplaeringsforskrifta/4-12]
   sporsmal:
     tekst:
       nb: Hvilket trinn søker søkeren til?
       nn: Kva trinn søkjer søkjaren til?
     svar:
-      - { id: vg1, tekst: { nb: "Vg1", nn: "Vg1" }, neste: sk-fortrinnsrett }
+      - { id: vg1, tekst: { nb: "Vg1", nn: "Vg1" }, neste: sk-inntaksmate }
       - { id: vg2vg3, tekst: { nb: "Vg2 eller Vg3", nn: "Vg2 eller Vg3" }, neste: sk-vilkar-vg23 }
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-2 Inntak til utdanningsprogram og programområde", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-2" }
-    - { id: opplaeringsforskrifta, punkt: "§ 4-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-7" }
+    - { id: opplaeringslova, punkt: "§ 5-1 femte og sjette ledd", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: opplaeringslova, punkt: "§ 5-5 Rett til omval", url: "https://lovdata.no/lov/2023-06-09-30/§5-5" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-2 Inntak til utdanningsprogram og programområde og § 4-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-2" }
   kontrollert: null
   kontrollsporsmal:
+    - "Bør steget også nevne at søkere med ungdomsrett før 19 år kan søke om opplæring for voksne når det er særlige grunner (§ 5-1 fjerde ledd)?"
     - "Er det greit at veiviseren ikke skiller mellom Vg2 og Vg3, når reglene for fortrinnsrett og individuell behandling er de samme?"
 
 - id: sk-vilkar-vg23
@@ -386,7 +369,7 @@
     nb: Fylkeskommunen vurderer.
     nn: Fylkeskommunen vurderer.
   paragrafer: [opplaeringsforskrifta/4-13]
-  neste: sk-fortrinnsrett
+  neste: sk-inntaksmate
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-13 Vilkår for inntak til vidaregåande trinn 2 og vidaregåande trinn 3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-13" }
     - { id: udir-merknader-ofo, punkt: "Merknader til § 4-13", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iii.-vilkara-for-og-rekkjefolgja-ved-inntak-til-vidaregaande-opplaring-trinn-1-til-trinn-3/-4-13-vilkar-for-inntak-til-vidaregaande-trinn-2-og-vidaregaande-trinn-3/" }
@@ -395,31 +378,55 @@
     - "Er de tre gruppene i § 4-13 andre ledd gjengitt riktig og kort nok?"
     - "Bør steget nevne femte og sjette ledd (dokumentasjon uten karakterer, og tungtveiende grunner)?"
 
-- id: sk-fortrinnsrett
+- id: sk-inntaksmate
   type: steg
   veiviser: sokerkategori
   fase: inntak
   tittel:
-    nb: Fortrinnsrett?
-    nn: Fortrinnsrett?
+    nb: Inntaksmåte
+    nn: Inntaksmåte
   tekst:
-    nb: Søkere med fortrinnsrett tas inn før søkerne som konkurrerer på poeng. Det er tre grunnlag for fortrinnsrett.
-    nn: Søkjarar med fortrinnsrett blir tekne inn før søkjarane som konkurrerer på poeng. Det er tre grunnlag for fortrinnsrett.
-  paragrafer: [opplaeringsforskrifta/4-14]
+    nb: |-
+      Søkere med fortrinnsrett tas inn først. Det er tre grunnlag for fortrinnsrett. De andre konkurrerer på poeng, eller behandles individuelt når de ikke kan rangeres etter poeng. Det gjelder:
+
+      - søkere som mangler karakter i mer enn halvparten av fagene på vitnemålet fra grunnskolen
+      - søkere med vitnemål eller dokumentasjon uten tall- eller bokstavkarakterer
+      - andre søkere uten sammenlignbart karaktergrunnlag
+      - søkere som har fått godkjent mer enn halvparten av fagene gjennom realkompetansevurdering (Vg1)
+      - søkere som tas inn til Vg2 eller Vg3 etter en samlet vurdering eller av tungtveiende grunner
+
+      Fylkeskommunen kan også behandle søkere individuelt når det er tungtveiende grunner og et særlig behov.
+    nn: |-
+      Søkjarar med fortrinnsrett blir tekne inn først. Det er tre grunnlag for fortrinnsrett. Dei andre konkurrerer på poeng, eller blir behandla individuelt når dei ikkje kan rangerast etter poeng. Det gjeld:
+
+      - søkjarar som manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskolen
+      - søkjarar med vitnemål eller dokumentasjon utan tal- eller bokstavkarakterar
+      - andre søkjarar utan samanliknbart karaktergrunnlag
+      - søkjarar som har fått godkjent meir enn halvparten av faga gjennom realkompetansevurdering (Vg1)
+      - søkjarar som blir tekne inn til Vg2 eller Vg3 etter ei samla vurdering eller av tungtvegande grunnar
+
+      Fylkeskommunen kan også behandle søkjarar individuelt når det er tungtvegande grunnar og eit særleg behov.
+  paragrafer: [opplaeringsforskrifta/4-14, opplaeringsforskrifta/4-20, opplaeringsforskrifta/4-26]
   sporsmal:
     tekst:
-      nb: Har søkeren grunnlag for fortrinnsrett?
-      nn: Har søkjaren grunnlag for fortrinnsrett?
+      nb: Hvordan tas søkeren inn?
+      nn: Korleis blir søkjaren teken inn?
     svar:
-      - { id: program, tekst: { nb: "Omfattende behov for individuell tilrettelegging, og valget av utdanningsprogram er avgjørende (bare Vg1)", nn: "Omfattande behov for individuell tilrettelegging, og valet av utdanningsprogram er avgjerande (berre Vg1)" }, neste: sk-fortrinn-program }
-      - { id: skole, tekst: { nb: "Sterkt nedsatt funksjonsevne og særlig behov for en tilrettelagt skole", nn: "Sterkt nedsett funksjonsevne og særleg behov for ein tilrettelagd skole" }, neste: sk-fortrinn-skole }
-      - { id: tegnsprak, tekst: { nb: "Rett til opplæring i og på norsk tegnspråk", nn: "Rett til opplæring i og på norsk teiknspråk" }, neste: sk-fortrinn-tegnsprak }
-      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sk-individuell }
+      - { id: program, tekst: { nb: "Fortrinnsrett: omfattende behov for individuell tilrettelegging, og valget av utdanningsprogram er avgjørende (bare Vg1)", nn: "Fortrinnsrett: omfattande behov for individuell tilrettelegging, og valet av utdanningsprogram er avgjerande (berre Vg1)" }, neste: sk-fortrinn-program }
+      - { id: skole, tekst: { nb: "Fortrinnsrett: sterkt nedsatt funksjonsevne og særlig behov for en tilrettelagt skole", nn: "Fortrinnsrett: sterkt nedsett funksjonsevne og særleg behov for ein tilrettelagd skole" }, neste: sk-fortrinn-skole }
+      - { id: tegnsprak, tekst: { nb: "Fortrinnsrett: rett til opplæring i og på norsk tegnspråk", nn: "Fortrinnsrett: rett til opplæring i og på norsk teiknspråk" }, neste: sk-fortrinn-tegnsprak }
+      - { id: individuell, tekst: { nb: "Individuell behandling (listen over)", nn: "Individuell behandling (lista over)" }, neste: sk-individuell-behandling }
+      - { id: poeng, tekst: { nb: "Ingen av delene: konkurrerer på poeng", nn: "Ingen av delane: konkurrerer på poeng" }, neste: sk-poeng }
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-14 første ledd bokstav a", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-14 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-26 Individuell behandling ved fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-26" }
+    - { id: udir-merknader-ofo, punkt: "Merknader til § 4-19 første ledd bokstav d og e", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-19-poengutrekning-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er svaralternativene korte nok, og likevel dekkende for vilkårene i § 4-21, § 4-22 og § 4-23?"
+    - "Er svaralternativene for fortrinnsrett korte nok, og likevel dekkende for vilkårene i § 4-21, § 4-22 og § 4-23?"
+    - "Er listen en riktig sammenslåing av § 4-20 (Vg1) og § 4-26 (Vg2 og Vg3)?"
+    - "Udirs merknader sier at fritak og IV til sammen i mer enn halvparten av fagene også gir individuell behandling. Bør det stå i listen?"
 
 - id: sk-fortrinn-program
   type: steg
@@ -506,51 +513,6 @@
   kontrollsporsmal:
     - "Er «skal normalt kunne fullføre der» en riktig gjengivelse av § 4-17?"
 
-- id: sk-individuell
-  type: steg
-  veiviser: sokerkategori
-  fase: inntak
-  tittel:
-    nb: Individuell behandling?
-    nn: Individuell behandling?
-  tekst:
-    nb: |-
-      Noen søkere kan ikke rangeres etter poeng, og skal behandles individuelt:
-
-      - søkere som mangler karakter i mer enn halvparten av fagene på vitnemålet fra grunnskolen
-      - søkere med vitnemål eller dokumentasjon uten tall- eller bokstavkarakterer
-      - andre søkere uten sammenlignbart karaktergrunnlag
-      - søkere som har fått godkjent mer enn halvparten av fagene gjennom realkompetansevurdering (Vg1)
-      - søkere som tas inn til Vg2 eller Vg3 etter en samlet vurdering eller av tungtveiende grunner
-
-      Fylkeskommunen kan også behandle søkere individuelt når det er tungtveiende grunner og et særlig behov.
-    nn: |-
-      Nokre søkjarar kan ikkje rangerast etter poeng, og skal behandlast individuelt:
-
-      - søkjarar som manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskolen
-      - søkjarar med vitnemål eller dokumentasjon utan tal- eller bokstavkarakterar
-      - andre søkjarar utan samanliknbart karaktergrunnlag
-      - søkjarar som har fått godkjent meir enn halvparten av faga gjennom realkompetansevurdering (Vg1)
-      - søkjarar som blir tekne inn til Vg2 eller Vg3 etter ei samla vurdering eller av tungtvegande grunnar
-
-      Fylkeskommunen kan også behandle søkjarar individuelt når det er tungtvegande grunnar og eit særleg behov.
-  paragrafer: [opplaeringsforskrifta/4-20, opplaeringsforskrifta/4-26]
-  sporsmal:
-    tekst:
-      nb: Gjelder noe av dette søkeren?
-      nn: Gjeld noko av dette søkjaren?
-    svar:
-      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sk-individuell-behandling }
-      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sk-poeng }
-  kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
-    - { id: opplaeringsforskrifta, punkt: "§ 4-26 Individuell behandling ved fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-26" }
-    - { id: udir-merknader-ofo, punkt: "Merknader til § 4-19 første ledd bokstav d og e", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-19-poengutrekning-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er listen en riktig sammenslåing av § 4-20 (Vg1) og § 4-26 (Vg2 og Vg3)?"
-    - "Udirs merknader sier at fritak og IV til sammen i mer enn halvparten av fagene også gir individuell behandling. Bør det stå i listen?"
-
 - id: sk-individuell-behandling
   type: steg
   veiviser: sokerkategori
@@ -594,9 +556,14 @@
       Er det fleire søkjarar enn plassar, blir plassane fordelte etter poengsum. Poengsummen er gjennomsnittet av karakterane med to desimalar, gonga med ti. Til Vg1 tel karakterane frå grunnskolen, og til Vg2 og Vg3 karakterane frå Vg1 og eventuelt Vg2. Står søkjarar likt om dei siste plassane, blir det avgjort ved loddtrekning.
 
       Søkjarar med rett skal likevel kome inn på eitt av tre utdanningsprogram dei har søkt på. På musikk, dans og drama og idrettsfag kan fylkeskommunen fordele opptil halvparten av plassane på Vg1 etter ferdigheiter eller opptaksprøve i tillegg til poeng.
-  paragrafer: [opplaeringsforskrifta/4-18, opplaeringsforskrifta/4-19, opplaeringsforskrifta/4-24, opplaeringsforskrifta/4-25, opplaeringsforskrifta/4-6]
+  frist:
+    nb: 1. mars. 1. februar for søkere med vedtak om særskilt språkopplæring, og for søkere som nylig har kommet til Norge.
+    nn: 1. mars. 1. februar for søkjarar med vedtak om særskild språkopplæring, og for søkjarar som nyleg har kome til Noreg.
+  fristKort: { nb: "1. mars eller 1. feb.", nn: "1. mars eller 1. feb." }
+  paragrafer: [opplaeringsforskrifta/4-9, opplaeringsforskrifta/4-18, opplaeringsforskrifta/4-19, opplaeringsforskrifta/4-24, opplaeringsforskrifta/4-25, opplaeringsforskrifta/4-6]
   neste: sk-bosted
   kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre ledd bokstav b og c", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-18 og § 4-19", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-24 og § 4-25", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-6 Inntak til einskilde utdanningsprogram", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-6" }
@@ -604,6 +571,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er den korte beskrivelsen av poengsummen riktig nok her, når detaljene kommer i poengberegningen (pakke 3)?"
+    - "Er de to gruppene med frist 1. februar (særskilt språkopplæring og nylig kommet til Norge) de eneste som kan gjelde søkere som konkurrerer på poeng (§ 4-9 andre ledd)?"
 
 - id: sk-bosted
   type: steg
@@ -622,7 +590,7 @@
 
       Fylkeskommunen tek først inn søkjarar som er folkeregistrerte i fylket. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå.
   paragrafer: [opplaeringsforskrifta/4-8, opplaeringsforskrifta/4-14]
-  neste: sk-frist
+  neste: sk-soknad
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-8 Kvar søknaden om inntak skal sendast", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-8" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
@@ -630,68 +598,29 @@
   kontrollsporsmal:
     - "Bør steget nevne at søkere fra andre fylker med særlige pedagogiske eller sosiale grunner, eller rett til samisk, tas inn først blant dem (§ 4-14 tredje ledd)?"
 
-- id: sk-frist
+- id: sk-soknad
   type: steg
   veiviser: sokerkategori
   fase: soknad
   tittel:
-    nb: Søknadsfrist
-    nn: Søknadsfrist
+    nb: Søknad, svar og klage
+    nn: Søknad, svar og klage
   tekst:
     nb: |-
-      Søknadsfristen er 1. mars. Disse søkerne har frist 1. februar:
+      Søknadsfristen står i steget over: 1. mars, eller 1. februar for søkere med fortrinnsrett, individuell tilrettelegging, særskilt språkopplæring, tegnspråk eller kort tid i Norge. Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter. Søknader som kommer for sent, behandles så langt det er mulig.
 
-      - søkere med vedtak om individuell tilrettelegging som søker på grunnlag av fortrinnsrett eller skal behandles individuelt
-      - søkere med vedtak om særskilt språkopplæring
-      - søkere som nylig har kommet til Norge
-      - søkere med rett til opplæring i og på norsk tegnspråk
-      - søkere som ber om individuell behandling av tungtveiende grunner
+      Datoene for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen hvilket utdanningsprogram, programområde eller skole søkeren kom inn på, avgjør fylkeskommunens klageorgan. Andre klager på inntak, for eksempel at søkeren ikke fikk ett av sine tre ønsker, avgjør statsforvalteren.
     nn: |-
-      Søknadsfristen er 1. mars. Desse søkjarane har frist 1. februar:
+      Søknadsfristen står i steget over: 1. mars, eller 1. februar for søkjarar med fortrinnsrett, individuell tilrettelegging, særskild språkopplæring, teiknspråk eller kort tid i Noreg. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter. Søknader som kjem for seint, blir behandla så langt det er mogleg.
 
-      - søkjarar med vedtak om individuell tilrettelegging som søkjer på grunnlag av fortrinnsrett eller skal behandlast individuelt
-      - søkjarar med vedtak om særskild språkopplæring
-      - søkjarar som nyleg har kome til Noreg
-      - søkjarar med rett til opplæring i og på norsk teiknspråk
-      - søkjarar som ber om individuell behandling av tungtvegande grunnar
-  paragrafer: [opplaeringsforskrifta/4-9]
-  sporsmal:
-    tekst:
-      nb: Gjelder noe av dette søkeren?
-      nn: Gjeld noko av dette søkjaren?
-    svar:
-      - { id: ja, tekst: { nb: "Ja, frist 1. februar", nn: "Ja, frist 1. februar" }, neste: sk-februar }
-      - { id: nei, tekst: { nb: "Nei, frist 1. mars", nn: "Nei, frist 1. mars" }, neste: sk-mars }
-  kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-9 Fristar for å søkje om inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
-    - { id: udir-retten-til-vgo, punkt: "Vilkår for inntak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling/#vilkr-for-inntak" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er listen over søkere med frist 1. februar en riktig og forståelig gjengivelse av § 4-9 andre ledd bokstav a–e?"
-
-- id: sk-februar
-  type: steg
-  veiviser: sokerkategori
-  fase: soknad
-  tittel:
-    nb: Søknadsfrist 1. februar
-    nn: Søknadsfrist 1. februar
-  tekst:
-    nb: |-
-      Søknaden må være sendt innen 1. februar. Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter. Søknader som kommer for sent, behandles så langt det er mulig.
-
-      **Svar og klage:** Datoene for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen hvilket utdanningsprogram, programområde eller skole søkeren kom inn på, avgjør fylkeskommunens klageorgan. Andre klager på inntak, for eksempel at søkeren ikke fikk ett av sine tre ønsker, avgjør statsforvalteren.
-    nn: |-
-      Søknaden må vere send innan 1. februar. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter. Søknader som kjem for seint, blir behandla så langt det er mogleg.
-
-      **Svar og klage:** Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
+      Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
   frist:
-    nb: 1. februar. Klage innen tre uker etter svaret.
-    nn: 1. februar. Klage innan tre veker etter svaret.
-  fristKort: { nb: "1. feb.", nn: "1. feb." }
+    nb: Klage innen tre uker etter svaret.
+    nn: Klage innan tre veker etter svaret.
+  fristKort: { nb: "Klage: 3 uker", nn: "Klage: 3 veker" }
   paragrafer: [opplaeringsforskrifta/4-9, opplaeringslova/29-1, forvaltningsloven/28, forvaltningsloven/29, forvaltningsloven/32]
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 Fristar for å søkje om inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
     - { id: udir-klageinstanser, punkt: "Kapittel 4 Inntak til vidaregåande opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen" }
     - { id: opplaeringslova, punkt: "§ 29-1 Klageinstans for enkeltvedtak", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
     - { id: forvaltningsloven, punkt: "§ 29 Klagefrist og § 32 Klagens adressat, form og innhold", url: "https://lovdata.no/lov/1967-02-10/§29" }
@@ -699,114 +628,44 @@
   kontrollsporsmal:
     - "Er klageinstansene riktig og forståelig beskrevet, etter Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?»?"
     - "Er «vanligvis inntakskontoret i fylkeskommunen» et godt navn på den som fatter vedtaket om inntak?"
-
-- id: sk-mars
-  type: steg
-  veiviser: sokerkategori
-  fase: soknad
-  tittel:
-    nb: Søknadsfrist 1. mars
-    nn: Søknadsfrist 1. mars
-  tekst:
-    nb: |-
-      Søknaden må være sendt innen 1. mars. Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter. Søknader som kommer for sent, behandles så langt det er mulig. Søkere som skal gjøre omvalg, må søke innen denne fristen det året de fyller 19 for å beholde retten til flere omvalg.
-
-      **Svar og klage:** Datoene for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen hvilket utdanningsprogram, programområde eller skole søkeren kom inn på, avgjør fylkeskommunens klageorgan. Andre klager på inntak, for eksempel at søkeren ikke fikk ett av sine tre ønsker, avgjør statsforvalteren.
-    nn: |-
-      Søknaden må vere send innan 1. mars. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter. Søknader som kjem for seint, blir behandla så langt det er mogleg. Søkjarar som skal gjere omval, må søkje innan denne fristen det året dei fyller 19 for å halde på retten til fleire omval.
-
-      **Svar og klage:** Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
-  frist:
-    nb: 1. mars. Klage innen tre uker etter svaret.
-    nn: 1. mars. Klage innan tre veker etter svaret.
-  fristKort: { nb: "1. mars", nn: "1. mars" }
-  paragrafer: [opplaeringsforskrifta/4-9, opplaeringslova/5-5, opplaeringslova/29-1, forvaltningsloven/28, forvaltningsloven/29, forvaltningsloven/32]
-  kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 4-9 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
-    - { id: udir-klageinstanser, punkt: "Kapittel 4 Inntak til vidaregåande opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen" }
-    - { id: opplaeringslova, punkt: "§ 29-1 Klageinstans for enkeltvedtak", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
-    - { id: forvaltningsloven, punkt: "§ 29 Klagefrist og § 32 Klagens adressat, form og innhold", url: "https://lovdata.no/lov/1967-02-10/§29" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er setningen om omvalg («for å beholde retten til flere omvalg») en riktig lesning av opplæringslova § 5-5?"
+    - "Er den korte oppsummeringen av hvem som har frist 1. februar riktig nok, når detaljene står i stegene over (§ 4-9 andre ledd)?"
 
 - id: sk-voksenrett
   type: steg
   veiviser: sokerkategori
-  fase: rett
+  fase: soknad
   tittel:
     nb: Voksenrett
     nn: Vaksenrett
   tekst:
-    nb: Søkeren har rett til videregående opplæring for voksne. Søkeren skal komme inn på et opplæringstilbud som fører fram til en av tre sluttkompetanser søkeren har søkt på, innenfor det fylkeskommunen tilbyr. Søkeren har rett til å få realkompetansen sin vurdert, og skal ikke få opplæring i fag søkeren får godkjent.
-    nn: Søkjaren har rett til vidaregåande opplæring for vaksne. Søkjaren skal kome inn på eit opplæringstilbod som fører fram til ein av tre sluttkompetansar søkjaren har søkt på, innanfor det fylkeskommunen tilbyr. Søkjaren har rett til å få realkompetansen sin vurdert, og skal ikkje få opplæring i fag søkjaren får godkjende.
-  paragrafer: [opplaeringslova/18-3, opplaeringslova/18-8, opplaeringsforskrifta/13-2]
-  neste: sk-voksen-inntak
-  kilder:
-    - { id: opplaeringslova, punkt: "§ 18-3 Rett til vidaregåande opplæring for vaksne", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
-    - { id: udir-retten-til-vgo, punkt: "Inntak og formidling for voksne", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er «innenfor det fylkeskommunen tilbyr» (Udirs side) riktig å ta med her?"
-
-- id: sk-voksen-inntak
-  type: steg
-  veiviser: sokerkategori
-  fase: inntak
-  tittel:
-    nb: Inntak av voksne
-    nn: Inntak av vaksne
-  tekst:
     nb: |-
-      Fylkeskommunen behandler søknadene fortløpende, vurderer realkompetansen og skal gi et tilbud innen rimelig tid. Fylkeskommunen kan ikke ha ventelister. Er det ikke plass til alle, tas søkerne inn i denne rekkefølgen:
+      Søkeren har rett til videregående opplæring for voksne. Søkeren skal komme inn på et opplæringstilbud som fører fram til en av tre sluttkompetanser søkeren har søkt på, innenfor det fylkeskommunen tilbyr. Søkeren har rett til å få realkompetansen sin vurdert, og skal ikke få opplæring i fag søkeren får godkjent.
 
-      1. søkere med rett til videregående opplæring for voksne
-      2. søkere med rett til yrkesfaglig rekvalifisering
-      3. søkere med rett til påbygging til generell studiekompetanse
-      4. søkere uten rett
-    nn: |-
-      Fylkeskommunen behandlar søknadene fortløpande, vurderer realkompetansen og skal gi eit tilbod innan rimeleg tid. Fylkeskommunen kan ikkje ha ventelister. Er det ikkje plass til alle, blir søkjarane tekne inn i denne rekkjefølgja:
+      **Søknad:** Voksne kan søke fortløpende. Det er ingen nasjonal søknadsfrist. Søkeren fører opp tre sluttkompetanser i prioritert rekkefølge, og sender søknaden til fylkeskommunen der søkeren er folkeregistrert, eller til fylket søkeren skal flytte til.
 
-      1. søkjarar med rett til vidaregåande opplæring for vaksne
-      2. søkjarar med rett til yrkesfagleg rekvalifisering
-      3. søkjarar med rett til påbygging til generell studiekompetanse
-      4. søkjarar utan rett
-  ansvar:
-    nb: Fylkeskommunen.
-    nn: Fylkeskommunen.
-  paragrafer: [opplaeringsforskrifta/13-4, opplaeringsforskrifta/13-5]
-  neste: sk-voksen-soknad
-  kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 13-4 Behandling av søknader om vidaregåande opplæring for vaksne", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-4" }
-    - { id: opplaeringsforskrifta, punkt: "§ 13-5 Realkompetansevurdering ved inntaket", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-5" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er rekkefølgen i § 13-4 andre og tredje ledd riktig gjengitt?"
-
-- id: sk-voksen-soknad
-  type: steg
-  veiviser: sokerkategori
-  fase: soknad
-  tittel:
-    nb: Søknad for voksne
-    nn: Søknad for vaksne
-  tekst:
-    nb: |-
-      Voksne kan søke fortløpende. Det er ingen nasjonal søknadsfrist. Søkeren fører opp tre sluttkompetanser i prioritert rekkefølge, og sender søknaden til fylkeskommunen der søkeren er folkeregistrert, eller til fylket søkeren skal flytte til.
+      **Inntak:** Fylkeskommunen behandler søknadene fortløpende og skal gi et tilbud innen rimelig tid. Den kan ikke ha ventelister. Er det ikke plass til alle, tas søkerne inn i denne rekkefølgen: søkere med rett til videregående opplæring for voksne, søkere med rett til yrkesfaglig rekvalifisering, søkere med rett til påbygging, og til slutt søkere uten rett.
 
       **Klage:** Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket.
     nn: |-
-      Vaksne kan søkje fortløpande. Det er inga nasjonal søknadsfrist. Søkjaren fører opp tre sluttkompetansar i prioritert rekkjefølgje, og sender søknaden til fylkeskommunen der søkjaren er folkeregistrert, eller til fylket søkjaren skal flytte til.
+      Søkjaren har rett til vidaregåande opplæring for vaksne. Søkjaren skal kome inn på eit opplæringstilbod som fører fram til ein av tre sluttkompetansar søkjaren har søkt på, innanfor det fylkeskommunen tilbyr. Søkjaren har rett til å få realkompetansen sin vurdert, og skal ikkje få opplæring i fag søkjaren får godkjende.
+
+      **Søknad:** Vaksne kan søkje fortløpande. Det er inga nasjonal søknadsfrist. Søkjaren fører opp tre sluttkompetansar i prioritert rekkjefølgje, og sender søknaden til fylkeskommunen der søkjaren er folkeregistrert, eller til fylket søkjaren skal flytte til.
+
+      **Inntak:** Fylkeskommunen behandlar søknadene fortløpande og skal gi eit tilbod innan rimeleg tid. Han kan ikkje ha ventelister. Er det ikkje plass til alle, blir søkjarane tekne inn i denne rekkjefølgja: søkjarar med rett til vidaregåande opplæring for vaksne, søkjarar med rett til yrkesfagleg rekvalifisering, søkjarar med rett til påbygging, og til slutt søkjarar utan rett.
 
       **Klage:** Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket.
   frist:
-    nb: Ingen nasjonal frist. Klage innen tre uker etter svaret.
-    nn: Inga nasjonal frist. Klage innan tre veker etter svaret.
+    nb: Ingen nasjonal søknadsfrist. Klage innen tre uker etter svaret.
+    nn: Inga nasjonal søknadsfrist. Klage innan tre veker etter svaret.
   fristKort: { nb: "Fortløpende", nn: "Fortløpande" }
-  paragrafer: [opplaeringsforskrifta/13-3, forvaltningsloven/29, forvaltningsloven/32]
+  paragrafer: [opplaeringslova/18-3, opplaeringslova/18-8, opplaeringsforskrifta/13-2, opplaeringsforskrifta/13-3, opplaeringsforskrifta/13-4, opplaeringsforskrifta/13-5, forvaltningsloven/29, forvaltningsloven/32]
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 13-3 Søknad om inntak til vidaregåande opplæring for vaksne", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-3" }
+    - { id: opplaeringslova, punkt: "§ 18-3 Rett til vidaregåande opplæring for vaksne", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: udir-retten-til-vgo, punkt: "Inntak og formidling for voksne", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 13-3 til § 13-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-4" }
     - { id: forvaltningsloven, punkt: "§ 29 Klagefrist og § 32 Klagens adressat, form og innhold", url: "https://lovdata.no/lov/1967-02-10/§29" }
   kontrollert: null
   kontrollsporsmal:
+    - "Er «innenfor det fylkeskommunen tilbyr» (Udirs side) riktig å ta med her?"
+    - "Er rekkefølgen i § 13-4 andre og tredje ledd riktig gjengitt?"
     - "Udirs oversikt over klageinstanser er ikke lest for kapittel 13. Skal veiviseren si hvem som er klageinstans for voksne?"
