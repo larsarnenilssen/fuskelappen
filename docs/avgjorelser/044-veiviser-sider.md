@@ -13,6 +13,7 @@
   - Under knappene står «Tilbake til …», med lenke til forrige valg, og nederst «Til toppen».
 - **Lukkede steg på mobil (eier 03.10.2026):** På en side med flere steg er stegene uten valg lukket på mobil. Rammen viser tittelen, den første setningen som smakebit, fristen og ansvaret, og om det finnes lokale regler. «Les hele steget» åpner rammen. Steget med spørsmålet eller utfallet er alltid åpent. Fra 64rem, der prosessen står i egen kolonne, er alle steg åpne.
 - **Svarknappene** står under hverandre også på stor skjerm, og har tekst i størrelse `--str-m` med halvfet skrift (eier 03.10.2026). Side om side ble knappene ulikt høye.
+- **Grupper av svar:** Et svar kan ha `gruppe`, og svar etter hverandre med samme gruppe står under en felles overskrift, for eksempel «Fortrinnsrett» og «Uten fortrinnsrett» (eier 03.10.2026). Da kan knappetekstene være korte.
 - **«Til spørsmålet»** (eller «Til der veien ender») øverst på en side med flere steg går rett til spørsmålet, med fokus på det.
 - **Vurdert, men ikke valgt:** en egen fast verktøylinje med fram og tilbake. Nettleserens tilbakeknapp og lenken under knappene dekker det samme, og en ekstra fast linje tar plass på små skjermer. Å lukke teksten i stegene uten valg er heller ikke valgt, fordi teksten er det brukeren trenger.
 

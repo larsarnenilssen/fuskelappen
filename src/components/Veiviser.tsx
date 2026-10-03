@@ -60,6 +60,20 @@ export function forsteSetning(html: string, maks = 160): string {
   return setning.length > maks ? `${setning.slice(0, maks - 1).replace(/\s+\S*$/, '')} …` : setning;
 }
 
+type Svar = NonNullable<Stegelement['sporsmal']>['svar'][number];
+
+/** Svarene gruppert etter `gruppe`: svar etter hverandre med samme gruppe står under samme overskrift. */
+export function svargrupper(svar: readonly Svar[], malform: Malform): { tittel: string | null; svar: Svar[] }[] {
+  const grupper: { tittel: string | null; svar: Svar[] }[] = [];
+  for (const a of svar) {
+    const tittel = a.gruppe?.[malform] ?? null;
+    const siste = grupper.at(-1);
+    if (siste && siste.tittel === tittel) siste.svar.push(a);
+    else grupper.push({ tittel, svar: [a] });
+  }
+  return grupper;
+}
+
 /** Stor skjerm, der prosessen står i egen kolonne. Der står alle steg åpne (eier 03.10.2026). */
 const storSkjerm = () => typeof matchMedia === 'function' && matchMedia('(min-width: 64rem)').matches;
 
@@ -631,16 +645,30 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                 <h3 id={sporsmalId} ref={sporsmalRef} tabIndex={-1} class="veiviser-sporsmal-tekst">
                   {node.sporsmal.tekst[malform]}
                 </h3>
-                <ul class="veiviser-svarliste">
-                  {node.sporsmal.svar.map((a) => (
-                    <li key={a.id}>
-                      <a class="veiviser-svarknapp" href={href(videre(kart, slutt, a.id))} onClick={beholdRullingVedNesteNavigasjon}>
-                        <span>{a.tekst[malform]}</span>
-                        <Ikon navn="hoyre" />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
+                {svargrupper(node.sporsmal.svar, malform).map((g, i) => {
+                  const liste = (
+                    <ul class="veiviser-svarliste">
+                      {g.svar.map((a) => (
+                        <li key={a.id}>
+                          <a class="veiviser-svarknapp" href={href(videre(kart, slutt, a.id))} onClick={beholdRullingVedNesteNavigasjon}>
+                            <span>{a.tekst[malform]}</span>
+                            <Ikon navn="hoyre" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                  return g.tittel ? (
+                    <div key={i} class="veiviser-svargruppe" role="group" aria-labelledby={`${sporsmalId}-${i}`}>
+                      <h4 id={`${sporsmalId}-${i}`} class="veiviser-svargruppe-tittel">
+                        {g.tittel}
+                      </h4>
+                      {liste}
+                    </div>
+                  ) : (
+                    <div key={i}>{liste}</div>
+                  );
+                })}
               </div>
             )}
             {forrigeValg?.href && (

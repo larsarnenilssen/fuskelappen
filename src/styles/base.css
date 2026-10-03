@@ -4483,6 +4483,20 @@ p.fagkort-tittel {
   list-style: none;
 }
 
+/* Overskrift over svar som hører sammen, f.eks. «Fortrinnsrett». */
+.veiviser-svargruppe + .veiviser-svargruppe,
+.veiviser-svargruppe + div,
+div + .veiviser-svargruppe {
+  margin-top: var(--rom-3);
+}
+
+.veiviser-svargruppe-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
 .veiviser-svarknapp {
   display: flex;
   align-items: center;

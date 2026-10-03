@@ -21,7 +21,9 @@ test.describe('inntak', () => {
     await expect(steg).toHaveText('Ungdomsrett');
     await page.getByRole('link', { name: 'Vg1', exact: true }).click();
     await expect(steg).toHaveText('Inntaksmåte');
-    await page.getByRole('link', { name: 'Ingen av delene: konkurrerer på poeng' }).click();
+    // Svarene står under overskriftene «Fortrinnsrett» og «Uten fortrinnsrett».
+    await expect(page.locator('.veiviser-svargruppe-tittel')).toHaveText(['Fortrinnsrett', 'Uten fortrinnsrett']);
+    await page.getByRole('group', { name: 'Uten fortrinnsrett' }).getByRole('link', { name: 'Konkurrerer på poeng' }).click();
     // Poeng, hvor søknaden sendes, og søknad, svar og klage står på samme side, der veien ender.
     await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.under19\.vg1\.poeng$/);
     await expect(steg).toHaveText(['Konkurrerer på poeng', 'Hvor søknaden sendes', 'Søknad, svar og klage']);

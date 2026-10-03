@@ -118,8 +118,12 @@ export const stegElement = z
     sporsmal: z
       .object({
         tekst: flerspraak,
+        /**
+         * Svarene. `gruppe` gir en overskrift over svar som hører sammen, f.eks. «Fortrinnsrett» (eier 03.10.2026).
+         * Svar etter hverandre med samme gruppe står under samme overskrift.
+         */
         svar: z
-          .array(z.object({ id: idSkjema, tekst: flerspraak, neste: idSkjema }).strict())
+          .array(z.object({ id: idSkjema, tekst: flerspraak, neste: idSkjema, gruppe: flerspraak.optional() }).strict())
           .min(2, 'Et spørsmål må ha minst to svar'),
       })
       .strict()

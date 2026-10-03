@@ -388,7 +388,7 @@
     nn: Inntaksmåte
   tekst:
     nb: |-
-      Søkere med fortrinnsrett tas inn først. Det er tre grunnlag for fortrinnsrett. De andre konkurrerer på poeng, eller behandles individuelt når de ikke kan rangeres etter poeng. Det gjelder:
+      Søkere med fortrinnsrett tas inn først. Det er tre grunnlag for fortrinnsrett: omfattende behov for individuell tilrettelegging, sterkt nedsatt funksjonsevne og rett til opplæring i og på tegnspråk. Søkere uten fortrinnsrett konkurrerer på poeng, eller behandles individuelt når de ikke kan rangeres etter poeng. Det gjelder:
 
       - søkere som mangler karakter i mer enn halvparten av fagene på vitnemålet fra grunnskolen
       - søkere med vitnemål eller dokumentasjon uten tall- eller bokstavkarakterer
@@ -398,7 +398,7 @@
 
       Fylkeskommunen kan også behandle søkere individuelt når det er tungtveiende grunner og et særlig behov.
     nn: |-
-      Søkjarar med fortrinnsrett blir tekne inn først. Det er tre grunnlag for fortrinnsrett. Dei andre konkurrerer på poeng, eller blir behandla individuelt når dei ikkje kan rangerast etter poeng. Det gjeld:
+      Søkjarar med fortrinnsrett blir tekne inn først. Det er tre grunnlag for fortrinnsrett: omfattande behov for individuell tilrettelegging, sterkt nedsett funksjonsevne og rett til opplæring i og på teiknspråk. Søkjarar utan fortrinnsrett konkurrerer på poeng, eller blir behandla individuelt når dei ikkje kan rangerast etter poeng. Det gjeld:
 
       - søkjarar som manglar karakter i meir enn halvparten av faga på vitnemålet frå grunnskolen
       - søkjarar med vitnemål eller dokumentasjon utan tal- eller bokstavkarakterar
@@ -413,11 +413,11 @@
       nb: Hvordan tas søkeren inn?
       nn: Korleis blir søkjaren teken inn?
     svar:
-      - { id: program, tekst: { nb: "Fortrinnsrett: omfattende behov for individuell tilrettelegging, og valget av utdanningsprogram er avgjørende (bare Vg1)", nn: "Fortrinnsrett: omfattande behov for individuell tilrettelegging, og valet av utdanningsprogram er avgjerande (berre Vg1)" }, neste: sk-fortrinn-program }
-      - { id: skole, tekst: { nb: "Fortrinnsrett: sterkt nedsatt funksjonsevne og særlig behov for en tilrettelagt skole", nn: "Fortrinnsrett: sterkt nedsett funksjonsevne og særleg behov for ein tilrettelagd skole" }, neste: sk-fortrinn-skole }
-      - { id: tegnsprak, tekst: { nb: "Fortrinnsrett: rett til opplæring i og på norsk tegnspråk", nn: "Fortrinnsrett: rett til opplæring i og på norsk teiknspråk" }, neste: sk-fortrinn-tegnsprak }
-      - { id: individuell, tekst: { nb: "Individuell behandling (listen over)", nn: "Individuell behandling (lista over)" }, neste: sk-individuell-behandling }
-      - { id: poeng, tekst: { nb: "Ingen av delene: konkurrerer på poeng", nn: "Ingen av delane: konkurrerer på poeng" }, neste: sk-poeng }
+      - { id: program, gruppe: { nb: Fortrinnsrett, nn: Fortrinnsrett }, tekst: { nb: "Omfattende behov for individuell tilrettelegging (bare Vg1)", nn: "Omfattande behov for individuell tilrettelegging (berre Vg1)" }, neste: sk-fortrinn-program }
+      - { id: skole, gruppe: { nb: Fortrinnsrett, nn: Fortrinnsrett }, tekst: { nb: "Sterkt nedsatt funksjonsevne", nn: "Sterkt nedsett funksjonsevne" }, neste: sk-fortrinn-skole }
+      - { id: tegnsprak, gruppe: { nb: Fortrinnsrett, nn: Fortrinnsrett }, tekst: { nb: "Rett til opplæring i og på tegnspråk", nn: "Rett til opplæring i og på teiknspråk" }, neste: sk-fortrinn-tegnsprak }
+      - { id: individuell, gruppe: { nb: Uten fortrinnsrett, nn: Utan fortrinnsrett }, tekst: { nb: "Individuell behandling", nn: "Individuell behandling" }, neste: sk-individuell-behandling }
+      - { id: poeng, gruppe: { nb: Uten fortrinnsrett, nn: Utan fortrinnsrett }, tekst: { nb: "Konkurrerer på poeng", nn: "Konkurrerer på poeng" }, neste: sk-poeng }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-14 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
     - { id: opplaeringsforskrifta, punkt: "§ 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
