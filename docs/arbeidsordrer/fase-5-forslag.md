@@ -215,3 +215,42 @@ Klagefristen er tre uker fra søkeren fikk vedtaket (fvl. § 29).
 | F7 | Vg3: de elleve karakterene fra Vg1 i F6 (sum 46) og fem fra Vg2: 4, 3, 5, 4, 4. Faget med 3 er tatt på nytt som privatist med 5 | Beste utvalg: 5 i stedet for 3. (46 + 22) / 16 = 4,25 × 10 | **42,5** |
 | F7b | Som F7, uten privatisteksamen | (46 + 20) / 16 = 4,125 → 4,13 × 10 | **41,3** (prøver avrundingen ved nøyaktig halv) |
 | F8 | Vg2 etter omvalg: to Vg1 som begge gir grunnlag | «Det beste utvalet av karakterar» (ofo. § 4-25 første ledd bokstav f) | *Må avklares:* er det beste av de to løpene som helhet, eller beste karakter fag for fag (f.eks. fellesfag tatt to ganger)? |
+
+---
+
+## Nye kilder for poengberegningen (03.10.2026)
+
+Eier ba om kilder med veiledning, så færre spørsmål må avgjøres av eier. Disse er funnet og lest:
+
+| Kilde | Hva den sier | Status |
+|---|---|---|
+| **Udirs merknader til opplæringsforskrifta** (ny kilde `udir-merknader-ofo`), én side per paragraf: `https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/…` | Merknader til hver paragraf i kapittel 4, også § 4-19 (oppdatert 16.10.2025) og § 4-25 | Gjeldende. Hovedkilden ved siden av forskriften |
+| **Udirs oversikt over klageinstanser** (`udir-klageinstanser`) | Se over | Gjeldende |
+| **Udirs sider om retten til videregående** (`udir-retten-til-vgo`) | Rett, inntak, omvalg, påbygging | Gjeldende |
+| Udir-2-2021, rundskriv om inntak etter den gamle forskriften (§ 6-21 og § 6-34) | Samme regler med flere eksempler. Merknadene til den nye forskriften sier at § 4-19 og § 4-25 «viderefører» § 6-20, § 6-21, § 6-33 og § 6-34 | Utgått. Bare bakgrunn (AGENTS.md) |
+| Vilbli: «Inntaksregler og poengberegning» | Fylkeskommunenes forklaring til søkerne | Kan ikke leses maskinelt (avgjørelse 027). Lenke i appen |
+
+### Hva merknadene avklarer
+
+| Spørsmål | Svar i merknadene til § 4-19 og § 4-25 | Endring i forslaget |
+|---|---|---|
+| Avrunding | «Siste desimal skal avrundes etter vanlige avrundingsregler.» | Bekrefter eiers svar: 44,3 (F1) |
+| Valgfag | Hvert valgfag får standpunktkarakter. Samme valgfag over flere år: bare karakteren fra høyeste trinn. Har eleven tatt fag fra videregående i stedet for valgfag på alle trinn, teller ikke valgfag. Udir-2-2021: «det er denne gjennomsnittskarakteren som legges til» | Bekrefter F2 = 44,2. Kalkulatoren får valget «fag fra videregående i stedet for valgfag» |
+| Fag som ikke teller | Orden og oppførsel. Utdanningsvalg (deltatt). Grunnleggende norsk for språklige minoriteter (uten vurderingsuttrykk). Fritak i en del av et fag, f.eks. skriftlig sidemål | Står i listen over fag i kalkulatoren |
+| Halvårsvurdering ved inntak til Vg3 | Teller bare i fag der læreplanen sier det, mest fellesfag. I fag der standpunkt settes etter Vg3, f.eks. norsk, teller bare halvårsvurderingen fra Vg2, ikke den fra Vg1 | **F7 er endret** (under) |
+| Privatist | Den beste karakteren | Uendret |
+| Omvalg (F8) | «De beste karakterene legges til grunn.» Karakterene må være relevante for programområdet. Til Vg2 på yrkesfag teller bare karakterer fra samme utdanningsprogram, eller fra et utdanningsprogram det er krysløp mellom | Bekrefter fag for fag, og at bare programfagene som er relevante for det søkeren søker på, teller (F8) |
+| IV på Vg1 eller Vg2 | Søkeren oppfyller ikke vilkårene for neste trinn. Tas søkeren likevel inn (§ 4-13 andre ledd bokstav c), regnes poengsummen med null for faget | Kalkulatoren sier fra |
+| Mer enn halvparten uten karakter | Individuell behandling (§ 4-20, § 4-26), også når det skyldes fritak og IV sammen | Kalkulatoren sier fra i stedet for å regne |
+
+**Én forskjell å vite om:** Merknaden sier at karakterene «legges sammen og multipliseres med 10 og deles på antall fag», og at siste desimal avrundes. Forskriften sier at gjennomsnittet regnes med to desimaler og så ganges med ti. For F1 gir forskriften 44,30 og merknadens rekkefølge 44,29. Vilbli beskriver det som forskriften. Forslag: forskriften følges (44,3), og forskjellen står i praksislisten til bekreftelse.
+
+### Fasittestene etter de nye kildene
+
+F1–F6 og F8 er uendret. F7 er endret, og F9 er ny:
+
+| # | Tilfelle | Utregning | Poeng |
+|---|---|---|---|
+| F7 | Vg3, studieforberedende. Vg1: standpunkt 4, 5, 3, 4, 5 og halvårsvurdering i norsk 3. Vg2: standpunkt 4, 3, 5, 4 og halvårsvurdering i norsk 4. Faget med 3 på Vg2 er tatt på nytt som privatist med 5 | Halvårsvurderingen i norsk fra Vg1 teller ikke. Privatistkarakteren 5 brukes. (21 + 18 + 4) / 10 = 4,30 × 10 | **43,0** |
+| F7b | Som F7, uten privatisteksamen | (21 + 16 + 4) / 10 = 4,10 × 10 | **41,0** |
+| F9 | Avrunding ved nøyaktig halv: Vg2 med karakterene 4, 4, 4, 4, 4, 4, 4, 5 | 33 / 8 = 4,125 → 4,13 × 10 | **41,3** |
