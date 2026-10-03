@@ -170,3 +170,26 @@ ungdomsrett, voksenrett, sluttkompetanse, fortrinnsrett, individuell behandling,
 5. **Valgfag:** Teller gjennomsnittet av valgfagene som én karakter i gjennomsnittet (F2)?
 6. **Klageinstans:** Vedtak om utdanningsprogram, programområde og skole følger forvaltningsloven § 28 (fylkeskommunens klageorgan), mens vedtak om rett til opplæring går til departementet, i praksis statsforvalteren (ol. § 29-1). Er det riktig forstått?
 7. **Fagene på vitnemålet fra grunnskolen:** Skal kalkulatoren ha en ferdig liste over fagene (med kilde i fag- og timefordelingen for grunnskolen), eller bare felt for karakterene?
+
+---
+
+## Svar fra eier (03.10.2026)
+
+1. **Avrunding:** 4,428… blir 4,43, altså 44,3 poeng (F1). Føres i praksislisten.
+2. **Inntaksområdepoeng:** Venter til vestlandfylke.no svarer igjen. Kalkulatoren tar dem ikke med, men forklarer at de finnes (VL § 2-1).
+3. **Vg3 i Vestland:** Karakterene fra både Vg1 og Vg2 teller, som i ofo. § 4-25. Føres i praksislisten, fordi VL § 2-3 andre ledd bare nevner Vg2.
+4. **Svar, svarfrist og andre inntak:** Lenke til Vilbli. Datoene hentes derfra hvert år hvis det er mulig. *Ikke mulig maskinelt:* Vilbli svarer alle automatiske forespørsler med «Human Verification» (avgjørelse 027). Forslag: datoene står i en fil per inntaksår med `grunnlag: praksis` og lenke til Vilbli, og kontrollrunden i mai minner om å legge inn neste års datoer.
+5. **Valgfag:** Eier: «Alle standpunktkarakterer, eksamenskarakterer og eventuelle halvårsvurderinger teller like mye i snittet.» *Må avklares:* ofo. § 4-19 første ledd bokstav b sier at det regnes ut et gjennomsnitt av valgfagkarakterene. Skal hver valgfagkarakter telle for seg (F2 = 44,1), eller snittet av valgfagene som én karakter (F2 = 44,2)?
+6. **Klageinstans:** Se under.
+7. **Fagene på vitnemålet fra grunnskolen:** Ferdig liste, med kilde i fag- og timefordelingen for grunnskolen.
+
+### Klageinstansene i forslaget
+
+| Vedtak | Klageinstans | Kilde |
+|---|---|---|
+| Hvilket utdanningsprogram, programområde eller skole søkeren tas inn på | Fylkestinget, eller fylkesutvalget eller en særskilt klagenemnd som fylkestinget har oppnevnt | ol. § 29-1 andre ledd, fvl. § 28 andre ledd |
+| Inntak av gjesteelever (søkere fra andre fylker) | Samme | ol. § 29-1 andre ledd |
+| Andre enkeltvedtak etter opplæringslova, f.eks. om søkeren har rett til videregående opplæring | Departementet | ol. § 29-1 første ledd |
+| Klagefrist | Tre uker fra søkeren fikk vedtaket | fvl. § 29 |
+
+*Usikkert:* «i praksis statsforvalteren» står ikke i kildene. Det bygger på at departementet har delegert myndigheten, og må enten få en kilde eller tas ut. Det er heller ikke klart om avslag på fortrinnsrett (ofo. § 4-21–§ 4-23) er et vedtak om «kva for utdanningsprogram … ein søkjar skal takast inn på» (klagenemnda) eller et annet vedtak (departementet).
