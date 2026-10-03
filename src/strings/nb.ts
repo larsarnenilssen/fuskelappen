@@ -361,6 +361,7 @@ export const nb = {
     en: 'engelsk',
   },
   felles: {
+    plassering: 'Plassering',
     kilder: 'Kilder',
     lukk: 'Lukk',
     eksternLenke: '(åpnes på {nettsted})',

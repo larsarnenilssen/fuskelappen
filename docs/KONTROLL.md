@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 168 |
+| Ikke kontrollert | 186 |
 | Praksis og tolkninger som bør bekreftes | 16 av 16 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -52,7 +52,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | ikke bekreftet |
 | **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
 | **Foreløpig svar i saker om individuelt tilrettelagt opplæring** | Regnes fristen på én måned for foreløpig svar (forvaltningsloven § 11 a tredje ledd) fra den sakkyndige vurderingen er mottatt? | Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter | ikke bekreftet |
-| **Avslutte tilrettelegging uten nytt vedtak** | Avsluttes individuell tilrettelegging uten nytt vedtak når eleven ikke lenger trenger den? | Eier 03.10.2026. Veilederen punkt 9.2.2 sier ikke noe uttrykkelig om vedtak. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring): punkt 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring | ikke bekreftet |
+| **Samtykke til innføringsopplæring** | Samtykker eleven selv til innføringsopplæring så lenge eleven er samtykkekompetent, og ellers foreldrene? | Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene». | [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring | ikke bekreftet |
 
 ## Per kilde
 
@@ -222,6 +222,10 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Morsmålsopplæring (`morsmalsopplaering`) | begrep | § 6-5 tredje ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Innføringsopplæring (`innforingsopplaering`) | begrep | § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Forsterket opplæring i norsk (`forsterket-opplaering-i-norsk`) | begrep | § 6-5 første ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Tilpasset opplæring (`tilpasset-opplaering`) | begrep | § 11-1 Tilpassa opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Tilfredsstillende utbytte (`tilfredsstillende-utbytte`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Individuell tilrettelegging (`individuell-tilrettelegging`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
@@ -233,6 +237,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Individuell opplæringsplan (IOP) (`individuell-opplaeringsplan`) | begrep | § 11-10 Individuell opplæringsplan, § 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Elevens beste og medvirkning (`elevens-beste`) | begrep | § 10-1 Det beste for eleven, § 10-2 Elevane sin rett til medverknad | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Ikke særskilt språkopplæring (`sp-ikke-rett`) | steg | Kapittel 6 Val av skriftspråk og særskilde språkrettar i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 
 ### Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
@@ -247,6 +253,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Lokal forskrift (`lokal-forskrift`) | begrep | § 4-5 Lokal forskrift om inntak | `content/begreper/lov.yaml` | ikke kontrollert |
 | Paragraf og ledd (`paragraf`) | begrep | § 4-1 Kven som har rett til vidaregåande opplæring (ledd og bokstavar) | `content/begreper/lov.yaml` | ikke kontrollert |
 | Enkeltvedtak (`enkeltvedtak`) | begrep | Kapittel 10 Klage på sluttvurderingar | `content/begreper/lov.yaml` | ikke kontrollert |
+| Kort botid (`kort-botid`) | begrep | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Læreplan i norsk for elever med kort botid (`sp-laereplan`) | steg | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 
 ### Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
 
@@ -443,6 +451,54 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Eleven trenger ikke lenger tilrettelegging (`ti-avsluttet`) | steg | 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Avslag (`ti-avslag`) | steg | 7.3 Krav til innholdet i vedtaket, 7.9 Klage på vedtaket | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Klage på vedtaket eller gjennomføringen (`ti-klage`) | steg | 7.9 Klage på vedtaket, 8.4 Avvik mellom opplæringen eleven har fått og vedtaket | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+
+### Særskilt språkopplæring
+
+`udir-sarskilt-sprakopplaring` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | Ingressen og «Krav til vedtak» | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Morsmålsopplæring (`morsmalsopplaering`) | begrep | Morsmålsopplæring | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Tospråklig opplæring i fag (`tospraklig-fagopplaering`) | begrep | Tospråklig opplæring i fag | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Forsterket opplæring i norsk (`forsterket-opplaering-i-norsk`) | begrep | Forsterket opplæring i norsk | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Hvem har rett? (`sp-morsmal`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Vurdere norskferdighetene (`sp-vurdere`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Vanlig opplæring (`sp-vanlig`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Vedtak om særskilt språkopplæring (`sp-vedtak`) | steg | Krav til vedtak, Forsterket opplæring i norsk, Tospråklig opplæring i fag, Morsmålsopplæring, Fjernundervisning | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Læreplan i norsk for elever med kort botid (`sp-laereplan`) | steg | Læreplaner for særskilt språkopplæring | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Jevnlig vurdering (`sp-oppfolging`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+
+### Innføringsopplæring
+
+`udir-innforingsopplaring` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Innføringsopplæring (`innforingsopplaering`) | begrep | Varighet på inntil to år | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Kort botid (`kort-botid`) | begrep | Ingressen | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Kort botid? (`sp-kort-botid`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Innføringsopplæring (`sp-innforing`) | steg | Varighet på inntil to år, Eleven eller foreldrene må samtykke, Avvik fra læreplaner i fag og fra fag- og timefordelingen, Fritak fra vurdering for elever i innføringsopplæring | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Jevnlig vurdering (`sp-oppfolging`) | steg | Vurdering av elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Over til vanlig opplæring (`sp-over`) | steg | Varighet på inntil to år | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+
+### Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever
+
+`udir-minoritetsspraklige` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Minoritetsspråklig elev (`minoritetsspraklig-elev`) | begrep | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Hvem har rett? (`sp-morsmal`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Vurdere norskferdighetene (`sp-vurdere`) | steg | Vurdere elevens norskferdigheter | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Kort botid? (`sp-kort-botid`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 
 ### Overordnet del – verdier og prinsipper for grunnopplæringen
 
@@ -1016,6 +1072,30 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
 
+**Særskilt språkopplæring** (`sarskilt-sprakopplaering`, begrep, ikke kontrollert)
+
+- Er det dekkende å si at særskilt språkopplæring alltid består av forsterket opplæring i norsk?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-5): § 6-5 Særskild språkopplæring i den vidaregåande opplæringa; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak): Ingressen og «Krav til vedtak»
+
+**Morsmålsopplæring** (`morsmalsopplaering`, begrep, ikke kontrollert)
+
+- Er det riktig at morsmålsopplæring i videregående kommer i tillegg til det vanlige timetallet?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering): Morsmålsopplæring; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-5): § 6-5 tredje ledd
+
+**Innføringsopplæring** (`innforingsopplaering`, begrep, ikke kontrollert)
+
+- Bør begrepet nevne at fylkene kaller tilbudet ulike ting, for eksempel innføringsklasse eller innføringskurs?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-6): § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år
+
+**Forsterket opplæring i norsk** (`forsterket-opplaering-i-norsk`, begrep, ikke kontrollert)
+
+- Bør begrepet si noe om forholdet til læreplanen i norsk for språklige minoriteter med kort botid, eller er det best å holde dem adskilt?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk): Forsterket opplæring i norsk; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-5): § 6-5 første ledd
+
 **Tilpasset opplæring** (`tilpasset-opplaering`, begrep, ikke kontrollert)
 
 - Er «en plikt for skolen, men ikke en rett for den enkelte eleven» en riktig og ikke misvisende forenkling?
@@ -1083,6 +1163,18 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-1): § 10-1 Det beste for eleven; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-2): § 10-2 Elevane sin rett til medverknad; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#elevens-beste-retten-bli-hort): punkt 1.4 Elevens beste og retten til å bli hørt
 
+**Særskilt språkopplæring og kort botid** (`sprak-og-kort-botid`, veiviser, ikke kontrollert)
+
+- Er de fire fasene (vurdering, vedtak, opplæring, oppfølging) en dekkende inndeling av særskilt språkopplæring i videregående?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-5): § 6-5 Særskild språkopplæring i den vidaregåande opplæringa; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Ingressen
+
+**Ikke særskilt språkopplæring** (`sp-ikke-rett`, steg, ikke kontrollert)
+
+- Er det greit å nevne samisk, tegnspråk og punktskrift som «andre språkrettigheter» uten å si hvem de gjelder for, med lenke til paragrafene?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/kap6): Kapittel 6 Val av skriftspråk og særskilde språkrettar i den vidaregåande opplæringa
+
 **Tilpasset opplæring og individuell tilrettelegging** (`tilpasset-og-individuell`, veiviser, ikke kontrollert)
 
 - Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?
@@ -1102,6 +1194,18 @@ Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltning
 - Er «tre uker fra eleven og foreldrene fikk vite om vedtaket» riktig gjengitt for elever over 18 år, der foreldrene ikke er part?
 
 Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§2): § 2 første ledd bokstav b (enkeltvedtak); [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 28 og § 29 (klage og klagefrist); [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/): Klage på vedtaket; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/kap10): Kapittel 10 Klage på sluttvurderingar
+
+**Kort botid** (`kort-botid`, begrep, ikke kontrollert)
+
+- Er vilkåret for læreplanen i norsk for kort botid (høyst fire års opplæring fra 5. trinn) riktig gjengitt, og bør vilkåret om særskilt språkopplæring også stå her?
+
+Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/): Ingressen; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg
+
+**Læreplan i norsk for elever med kort botid** (`sp-laereplan`, steg, ikke kontrollert)
+
+- Er det nyttig å lenke til NOR1412 som eksempel, eller bør steget vise alle fagkodene for kort botid?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring
 
 **Klage på enkeltvedtak** (`klage`, begrep, ikke kontrollert)
 
@@ -1310,7 +1414,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 **Eleven trenger ikke lenger tilrettelegging** (`ti-avsluttet`, steg, ikke kontrollert)
 
-- Er «Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen» formulert slik at det ikke kan misforstås, for eksempel når vedtaket fortsatt gjelder en periode?
+- Bør utfallet si noe om hvordan tilretteleggingen avsluttes, for eksempel om det trengs et nytt vedtak, eller er det bedre at det står åpent?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring): punkt 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring
 
@@ -1325,6 +1429,70 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 - Er «Klage på gjennomføringen har ingen frist» en riktig og ikke misvisende forenkling av veilederens «løpende rett til å klage»?
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#klage-vedtaket): punkt 7.9 Klage på vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#avvik-mellom-opplaringen-vedtaket): punkt 8.4 Avvik mellom opplæringen eleven har fått og vedtaket
+
+**Tospråklig opplæring i fag** (`tospraklig-fagopplaering`, begrep, ikke kontrollert)
+
+- Er eksemplene på fag (matematikk og naturfag) passende for videregående?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag): Tospråklig opplæring i fag
+
+**Hvem har rett?** (`sp-morsmal`, steg, ikke kontrollert)
+
+- Er det riktig å skrive at en elev kan være født i Norge og likevel være minoritetsspråklig, slik Udir skriver om minoritetsspråklige elever?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Ingressen; [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene): Hvem er de minoritetsspråklige og nyankomne elevene?
+
+**Vurdere norskferdighetene** (`sp-vurdere`, steg, ikke kontrollert)
+
+- Er «I praksis gjør skolen vurderingen» riktig for videregående, eller gjør fylkeskommunen den sentralt noen steder?
+- Er det riktig å nevne at en oppstartsamtale kan være nok når eleven ikke kan noe norsk?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk; [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#vurdere-elevens-norskferdigheter): Vurdere elevens norskferdigheter
+
+**Vanlig opplæring** (`sp-vanlig`, steg, ikke kontrollert)
+
+- Er utfallet tydelig nok på at eleven fortsatt skal ha tilpasset opplæring, selv om eleven ikke har rett til særskilt språkopplæring?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk
+
+**Vedtak om særskilt språkopplæring** (`sp-vedtak`, steg, ikke kontrollert)
+
+- Er «på norsk og morsmålet eller et annet språk eleven kan godt» en riktig gjengivelse av tospråklig opplæring i fag?
+- Er det riktig at morsmålsopplæring kommer i tillegg til det vanlige timetallet i videregående?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak): Krav til vedtak; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk): Forsterket opplæring i norsk; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag): Tospråklig opplæring i fag; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering): Morsmålsopplæring; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#fjernundervisning): Fjernundervisning
+
+**Jevnlig vurdering** (`sp-oppfolging`, steg, ikke kontrollert)
+
+- Er «Hvor ofte, vurderes for hver elev» en riktig gjengivelse av at hyppigheten «må vurderes konkret»?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#vurdering-av-elevens-ferdigheter-i-norsk): Vurdering av elevens ferdigheter i norsk
+
+**Kort botid?** (`sp-kort-botid`, steg, ikke kontrollert)
+
+- Er forklaringen om rett til videregående for elever med kort botid riktig og forsiktig nok, når inntak kommer i fase 5?
+- Fører «Nei» riktig videre til læreplanen i norsk for kort botid, som også kan gjelde elever som ikke regnes som nyankomne?
+
+Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/): Ingressen; [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene): Hvem er de minoritetsspråklige og nyankomne elevene?
+
+**Innføringsopplæring** (`sp-innforing`, steg, ikke kontrollert)
+
+- Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?
+- Er «Eleven samtykker selv når eleven er i stand til det, ellers foreldrene» en god gjengivelse av at eleven samtykker selv så lenge eleven er samtykkekompetent?
+
+Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring
+
+**Over til vanlig opplæring** (`sp-over`, steg, ikke kontrollert)
+
+- Bør utfallet si noe om hvordan særskilt språkopplæring avsluttes, eller er det bedre at det står åpent (som i veiviseren om tilrettelegging)?
+
+Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år
+
+**Minoritetsspråklig elev** (`minoritetsspraklig-elev`, begrep, ikke kontrollert)
+
+- Er definisjonen (annet morsmål enn norsk og samisk) riktig, når Udir også nevner at kvensk, romani og andre nasjonale minoritetsspråk har egne regler?
+
+Kilder å sjekke mot: [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene): Hvem er de minoritetsspråklige og nyankomne elevene?
 
 **Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
 

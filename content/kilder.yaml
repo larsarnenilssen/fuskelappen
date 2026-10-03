@@ -416,6 +416,57 @@ kilder:
       Slått på i fase 4. Veiviseren «Tilpasset opplæring og individuell tilrettelegging» bygger på kapittel 1–9 og
       12, og hvert steg viser til avsnittet med egen adresse.
 
+  - id: udir-sarskilt-sprakopplaring
+    navn: Særskilt språkopplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Regelverket om særskilt språkopplæring, vurdering av norskferdigheter og krav til vedtak. Brukt i veiviseren
+      «Særskilt språkopplæring og kort botid» og begrepene om språkopplæring (fase 4).
+
+  - id: udir-innforingsopplaring
+    navn: Innføringsopplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Innføringsopplæring for elever med kort botid: varighet, samtykke, avvik fra læreplaner og fritak fra vurdering.
+      Brukt i veiviseren «Særskilt språkopplæring og kort botid» (fase 4).
+
+  - id: udir-minoritetsspraklige
+    navn: Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Hvem som er minoritetsspråklige og nyankomne elever, og hvordan norskferdighetene kan vurderes. Brukt i veiviseren
+      «Særskilt språkopplæring og kort botid» og begrepene om språkopplæring (fase 4).
+
   - id: udir-overordnet-del
     navn: Overordnet del – verdier og prinsipper for grunnopplæringen
     utgiver: Utdanningsdirektoratet

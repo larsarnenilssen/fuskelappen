@@ -122,10 +122,10 @@ praksis:
     berorer: [ti-vedtak]
     bekreftet: null
 
-  - id: avslutte-tilrettelegging-uten-vedtak
-    tittel: Avslutte tilrettelegging uten nytt vedtak
-    sporsmal: Avsluttes individuell tilrettelegging uten nytt vedtak når eleven ikke lenger trenger den?
-    appen: Utfallet «Eleven trenger ikke lenger tilrettelegging» i veiviseren sier at det ikke trengs noe nytt vedtak for å avslutte tilretteleggingen.
-    grunnlag: Eier 03.10.2026. Veilederen punkt 9.2.2 sier ikke noe uttrykkelig om vedtak.
-    berorer: [ti-avsluttet]
+  - id: samtykke-innforingsopplaering
+    tittel: Samtykke til innføringsopplæring
+    sporsmal: Samtykker eleven selv til innføringsopplæring så lenge eleven er samtykkekompetent, og ellers foreldrene?
+    appen: Steget «Innføringsopplæring» sier at eleven samtykker selv når eleven er i stand til det, ellers foreldrene.
+    grunnlag: Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene».
+    berorer: [sp-innforing]
     bekreftet: null

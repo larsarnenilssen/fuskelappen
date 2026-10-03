@@ -10,7 +10,7 @@ export const tilretteleggingNb = {
     alle: 'Alle elever',
     tilpasset: 'Tilpasset opplæring',
     alleTekst: 'Skolen tilpasser opplæringen i fellesskapet. Det fattes ikke vedtak.',
-    noen: 'Noen få elever i tillegg',
+    noen: 'Noen elever i tillegg',
     individuell: 'Individuell tilrettelegging',
     noenTekst: 'Rettigheter etter vedtak fra fylkeskommunen:',
     ito: 'Individuelt tilrettelagt opplæring',

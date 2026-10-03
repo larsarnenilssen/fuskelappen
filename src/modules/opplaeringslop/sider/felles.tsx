@@ -244,18 +244,4 @@ function Faggruppe({ navn, antall, aapen, niva = 'laereplan', children }: { navn
   );
 }
 
-/** Stien tilbake: «Opplæringsløp › Helse- og oppvekstfag». Siste ledd er siden over den brukeren står på. */
-export function Brodsmuler({ ledd }: { ledd: readonly { tekst: string; href: string }[] }) {
-  const { t } = useTekst();
-  return (
-    <nav class="brodsmuler" aria-label={t('opplaeringslop.brodsmuler')}>
-      <ol>
-        {ledd.map((l) => (
-          <li key={l.href}>
-            <a href={l.href}>{l.tekst}</a>
-          </li>
-        ))}
-      </ol>
-    </nav>
-  );
-}
+export { Brodsmuler } from '../../../components/Brodsmuler.tsx';

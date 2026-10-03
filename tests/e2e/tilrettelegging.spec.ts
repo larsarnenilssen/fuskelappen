@@ -100,4 +100,49 @@ test.describe('veiviser', () => {
       await expect(page.locator('.veiviser-prosess [aria-current="step"]')).toHaveText('Vedtak om individuell tilrettelegging');
     }
   });
+
+  test('et begrep åpnet fra veiviseren viser at brukeren er i begrepsbanken', async ({ page }) => {
+    await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).click();
+    await expect(page).toHaveURL(/#\/begreper\/sakkyndig-vurdering$/);
+    const sti = page.getByRole('navigation', { name: 'Plassering' });
+    await sti.getByRole('link', { name: 'Begreper' }).click();
+    await expect(page).toHaveURL(/#\/begreper$/);
+  });
+});
+
+test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
+  const SPRAK = './#/tilrettelegging/sprak-og-kort-botid';
+
+  test('fra morsmål via vedtak og innføringsopplæring til vanlig opplæring', async ({ page }) => {
+    await page.goto('./#/tilrettelegging');
+    await page.getByRole('link', { name: /Særskilt språkopplæring og kort botid/ }).click();
+    const steg = page.locator('.veiviser-stegtittel');
+    await expect(steg).toHaveText('Hvem har rett?');
+    await page.getByRole('link', { name: 'Ja', exact: true }).click();
+    await expect(steg).toHaveText('Vurdere norskferdighetene');
+    await page.getByRole('link', { name: 'Nei', exact: true }).click();
+    await expect(steg).toHaveText('Vedtak om særskilt språkopplæring');
+    await page.getByRole('link', { name: /Neste\s*Kort botid\?/ }).click();
+    await page.getByRole('link', { name: 'Ja', exact: true }).click();
+    await expect(steg).toHaveText('Innføringsopplæring');
+    await expect(page.locator('.veiviser-fakta')).toContainText('høyst to år');
+    await page.getByRole('link', { name: 'Ja, eleven samtykker' }).click();
+    await page.getByRole('link', { name: /Neste\s*Jevnlig vurdering/ }).click();
+    // Et svar kan føre til samme steg igjen, og veien husker begge.
+    await page.getByRole('link', { name: /^Nei, eleven trenger fortsatt/ }).click();
+    await expect(steg).toHaveText('Jevnlig vurdering');
+    await expect(page).toHaveURL(/steg=sp-oppfolging&svar=ja\.nei\.ja\.ja\.nei$/);
+    await page.getByRole('link', { name: 'Ja', exact: true }).click();
+    await expect(steg).toHaveText('Over til vanlig opplæring');
+    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Oppfølging/);
+  });
+
+  test('elever med norsk eller samisk som morsmål får en lenke til tilpasset opplæring', async ({ page }) => {
+    await page.goto(SPRAK);
+    await page.getByRole('link', { name: /^Nei, eleven har norsk eller samisk/ }).click();
+    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Ikke særskilt språkopplæring');
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'tilpasset opplæring' }).click();
+    await expect(page.locator('main h1')).toHaveText('Tilpasset opplæring og individuell tilrettelegging');
+  });
 });

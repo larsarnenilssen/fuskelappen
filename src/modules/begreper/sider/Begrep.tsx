@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useKildestatus } from '../../../app/kildestatus.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Nivamerke, Statusmerke } from '../../../components/Merker.tsx';
@@ -41,6 +42,8 @@ export default function Begrep({ parametre, sporring }: SideProps) {
 
   return (
     <article class="side">
+      {/* Begrepene åpnes ofte via lenker fra andre moduler. Stien viser at brukeren er i begrepsbanken. */}
+      <Brodsmuler ledd={[{ tekst: t('begreper.tittel'), href: '#/begreper' }]} />
       <div class="tittelrad">
         <h1 tabIndex={-1}>{begrep.tittel[malform]}</h1>
         <FavorittKnapp id={`begreper:${begrep.id}`} navn={begrep.tittel[malform]} />

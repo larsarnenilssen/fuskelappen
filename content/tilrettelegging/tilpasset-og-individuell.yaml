@@ -6,8 +6,8 @@
     nb: Tilpasset opplæring og individuell tilrettelegging
     nn: Tilpassa opplæring og individuell tilrettelegging
   tekst:
-    nb: Alle elever skal ha tilpasset opplæring. Noen få trenger i tillegg individuell tilrettelegging. Her er hva skolen gjør steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
-    nn: Alle elevar skal ha tilpassa opplæring. Nokre få treng i tillegg individuell tilrettelegging. Her er kva skolen gjer steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
+    nb: Alle elever skal ha tilpasset opplæring. Noen trenger i tillegg individuell tilrettelegging. Her er hva skolen gjør steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
+    nn: Alle elevar skal ha tilpassa opplæring. Nokre treng i tillegg individuell tilrettelegging. Her er kva skolen gjer steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
   start: ti-start
   faser:
     - { id: ordinar, tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring } }
@@ -491,14 +491,14 @@
     nb: Eleven trenger ikke lenger tilrettelegging
     nn: Eleven treng ikkje lenger tilrettelegging
   tekst:
-    nb: Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen. Eleven får tilpasset opplæring innenfor den ordinære opplæringen, som alle andre. Lærerne følger med på utviklingen som før, og melder fra til rektor hvis det blir tvil om utbyttet.
-    nn: Det trengst ikkje noko nytt vedtak for å avslutte tilrettelegginga. Eleven får tilpassa opplæring innanfor den ordinære opplæringa, som alle andre. Lærarane følgjer med på utviklinga som før, og melder frå til rektor dersom det blir tvil om utbyttet.
+    nb: Eleven får tilpasset opplæring innenfor den ordinære opplæringen, som alle andre. Lærerne følger med på utviklingen som før, og melder fra til rektor hvis det blir tvil om utbyttet.
+    nn: Eleven får tilpassa opplæring innanfor den ordinære opplæringa, som alle andre. Lærarane følgjer med på utviklinga som før, og melder frå til rektor dersom det blir tvil om utbyttet.
   paragrafer: [opplaeringslova/11-1, opplaeringslova/11-2]
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er «Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen» formulert slik at det ikke kan misforstås, for eksempel når vedtaket fortsatt gjelder en periode?"
+    - "Bør utfallet si noe om hvordan tilretteleggingen avsluttes, for eksempel om det trengs et nytt vedtak, eller er det bedre at det står åpent?"
 
 - id: ti-avslag
   type: steg
