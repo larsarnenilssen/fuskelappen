@@ -1,12 +1,12 @@
 // Inntak (fase 5, pakke 1): veiviseren «Hvilken søkerkategori?» med de nasjonale reglene, Vestland-innholdet som
 // egne bokser når Vestland er valgt, merknaden om lokale regler og lenkene begge veier til særskilt språkopplæring.
 import { expect, test } from '@playwright/test';
-import { aapneSteg, settLagret } from './hjelp.ts';
+import { aapneSteg, erMobil, settLagret } from './hjelp.ts';
 
 const VEIVISER = './#/inntak/sokerkategori';
 
 test.describe('inntak', () => {
-  test('fra oversikten gjennom rett og inntaksmåte til søknadsfristen', async ({ page }) => {
+  test('fra oversikten gjennom rett og inntaksmåte til søknadsfristen', async ({ page }, info) => {
     await page.goto('./#/inntak');
     // Uten valgt fylke står bare de nasjonale reglene, med merknad.
     await expect(page.getByText('Viser de nasjonale reglene. Fylket kan ha lokale regler om inntak.')).toBeVisible();
@@ -29,9 +29,11 @@ test.describe('inntak', () => {
     // Hvert steg står i sin egen ramme på siden.
     await expect(page.locator('.veiviser-side > .veiviser-steg')).toHaveCount(3);
     await expect(page.locator('.veiviser-steg').last()).toContainText('statsforvalteren');
-    // «Veien hit» viser de siste valgene, og resten bak en knapp.
-    await page.getByRole('button', { name: /Vis hele veien/ }).click();
-    await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);
+    // På mobil viser «Veien hit» de siste valgene, og resten bak en knapp. På stor skjerm står veien i prosessen.
+    if (erMobil(info)) {
+      await page.getByRole('button', { name: /Vis hele veien/ }).click();
+      await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);
+    }
     await expect(page.getByRole('link', { name: 'Tilbake til «Inntaksmåte»' })).toBeVisible();
     // Uten valgt fylke er det ingen Vestland-bokser.
     await expect(page.locator('.veiviser-tillegg')).toHaveCount(0);
@@ -64,7 +66,7 @@ test.describe('inntak', () => {
     await aapneSteg(page.locator('.veiviser-steg').first());
     await page.locator('.veiviser-steg').getByRole('link', { name: 'særskilt språkopplæring og kort botid' }).click();
     await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Elever med kort botid');
-    await page.locator('.veiviser-del').last().getByRole('button', { name: 'Mer om dette steget' }).click();
+    await page.locator('.veiviser-steg').last().getByRole('button', { name: 'Mer om dette steget' }).click();
     await page.getByRole('link', { name: 'Hvilken søkerkategori?' }).click();
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Grunnopplæring i utlandet');
   });

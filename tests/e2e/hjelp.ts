@@ -130,6 +130,15 @@ export async function aapneAlt(side: Page, omraade = 'main'): Promise<void> {
  * Åpner et steg i en veiviser hvis det er lukket. Steg uten valg over spørsmålet er lukket på mobil (avgjørelse 044).
  */
 export async function aapneSteg(steg: Locator): Promise<void> {
+  // Vent til steget er tegnet, så knappen finnes hvis steget er lukket.
+  await steg.locator('.veiviser-stegtittel').waitFor();
   const knapp = steg.getByRole('button', { name: 'Les hele steget' });
-  if (await knapp.isVisible()) await knapp.click();
+  if ((await knapp.count()) > 0) await knapp.click();
+}
+
+/** Åpner alle lukkede steg på siden i en veiviser. */
+export async function aapneAlleSteg(side: Page): Promise<void> {
+  await side.locator('.veiviser-side .veiviser-stegtittel').first().waitFor();
+  const knapper = side.getByRole('button', { name: 'Les hele steget' });
+  while ((await knapper.count()) > 0) await knapper.first().click();
 }

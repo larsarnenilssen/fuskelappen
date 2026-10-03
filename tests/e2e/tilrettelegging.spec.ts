@@ -2,7 +2,7 @@
 // det nye steget, kildene i en lukket boks, lenker til Regelverk, kartet over hele prosessen og prosessen i egen
 // kolonne på stor skjerm.
 import { expect, test } from '@playwright/test';
-import { aapneSteg, erMobil } from './hjelp.ts';
+import { aapneAlleSteg, aapneSteg, erMobil } from './hjelp.ts';
 
 const VEIVISER = './#/tilrettelegging/tilpasset-og-individuell';
 
@@ -128,7 +128,7 @@ test.describe('veiviser', () => {
 
   test('et begrep åpnet fra veiviseren viser at brukeren er i begrepsbanken', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
-    await aapneSteg(page.locator('.veiviser-steg').first());
+    await aapneAlleSteg(page);
     await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).first().click();
     await expect(page).toHaveURL(/#\/begreper\/sakkyndig-vurdering$/);
     const sti = page.getByRole('navigation', { name: 'Plassering' });
@@ -167,6 +167,8 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
   test('læreplanene står i en boks med kompetansegivende, vurdering og fagkodene', async ({ page }) => {
     await page.goto(`${SPRAK}?steg=sp-laereplan&svar=ja.nei.nei`);
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Læreplanene i særskilt språkopplæring');
+    // Steget med læreplanene står over spørsmålet om jevnlig vurdering, og er lukket på mobil.
+    await aapneSteg(page.locator('.veiviser-steg').first());
     const boks = page.locator('.laereplanboks');
     await boks.getByRole('button', { name: /Læreplanene \(3\)/ }).click();
     const planer = boks.locator('.laereplanboks-liste > li');
