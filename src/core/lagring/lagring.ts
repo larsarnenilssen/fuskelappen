@@ -2,7 +2,8 @@
 // All brukerdata ligger på enheten. Ingenting sendes noe sted.
 import * as z from 'zod/mini';
 
-export const LAGRINGSNOKKEL = 'fuskelappen';
+/** Testversjonen har egen nøkkel, så testing ikke endrer innstillingene og favorittene i appen (avgjørelse 045). */
+export const LAGRINGSNOKKEL = __TESTVERSJON__ ? 'fuskelappen-test' : 'fuskelappen';
 /** Nøkkelen før appen het Fuskelappen (0.17.0). Data der leses når det ikke finnes noe under den nye nøkkelen. */
 export const GAMMEL_LAGRINGSNOKKEL = 'protokollen';
 export const SKJEMAVERSJON = 2;

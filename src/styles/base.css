@@ -4798,3 +4798,14 @@ p.fagkort-tittel {
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   }
 }
+
+/* Testversjonen under test/ (avgjørelse 045): en tydelig linje under topplinjen. */
+.testversjon {
+  margin: 0;
+  padding: var(--rom-1) var(--rom-4);
+  background: var(--farge-advarsel-flate);
+  border-bottom: var(--strek) solid var(--farge-advarsel);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-align: center;
+}
