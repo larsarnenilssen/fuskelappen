@@ -1,0 +1,22 @@
+# Publiserer testversjonen (avgjørelse 045). En push til grenen «test» starter «Publiser» fra main, som bygger den
+# siste versjonen av appen og testversjonen fra grenen under test/. Appen selv endres ikke.
+name: Testversjon
+
+on:
+  push:
+    branches: [test]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publiser:
+    name: Start publisering med testversjon
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - run: gh workflow run deploy.yml --repo "$GITHUB_REPOSITORY" --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

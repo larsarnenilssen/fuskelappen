@@ -11,6 +11,10 @@
 # slik at de oppdateres hver uke (avgjørelse 018). Består ikke taggens tester med registerdataene fra main,
 # brukes taggens egne registerdata.
 # Selve publiseringen kjører fra main, fordi GitHub Pages som standard bare tillater publisering derfra.
+#
+# Testversjonen (avgjørelse 045): Finnes grenen «test», bygges den også, og legges under test/ ved siden av appen.
+# Arbeidsflyten «Testversjon» starter publiseringen når noen pusher til grenen. Feiler bygget av testversjonen,
+# publiseres appen likevel, uten testversjon. Slett grenen og publiser på nytt for å fjerne testversjonen.
 name: Publiser
 
 on:
@@ -113,6 +117,21 @@ jobs:
           fi
       - if: steps.versjon.outputs.tag != ''
         run: npm run build
+      - name: Bygg testversjonen fra grenen test, hvis den finnes
+        if: steps.versjon.outputs.tag != ''
+        run: |
+          if ! git fetch --quiet origin test 2>/dev/null; then
+            echo "Ingen gren som heter test. Publiserer uten testversjon."
+            exit 0
+          fi
+          COMMIT=$(git rev-parse --short FETCH_HEAD)
+          git worktree add --quiet --detach "$RUNNER_TEMP/test" FETCH_HEAD
+          if (cd "$RUNNER_TEMP/test" && npm ci && npm run build:test); then
+            cp -r "$RUNNER_TEMP/test/dist-test" dist/test
+            echo "::notice::Testversjonen fra $COMMIT ligger under test/."
+          else
+            echo "::warning::Testversjonen fra $COMMIT kunne ikke bygges. Publiserer uten testversjon."
+          fi
       - uses: actions/upload-pages-artifact@v4
         if: steps.versjon.outputs.tag != ''
         with:

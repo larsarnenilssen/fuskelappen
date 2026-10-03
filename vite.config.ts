@@ -7,11 +7,16 @@ import { dataPlugin, fagrollerPlugin, tilbudPlugin, innholdPlugin, lesToken, tes
 
 const rot = fileURLToPath(new URL('.', import.meta.url));
 const pakke = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8')) as { version: string };
+// Testversjonen (avgjørelse 045) bygges med FUSKELAPPEN_TEST=1 og publiseres under test/ ved siden av appen.
+const test = process.env.FUSKELAPPEN_TEST === '1';
+const base = test ? `${app.base}test/` : app.base;
+const navn = test ? app.testnavn : app.navn;
 
 export default defineConfig(({ mode }) => ({
-  base: app.base,
+  base,
   define: {
     __APP_VERSJON__: JSON.stringify(pakke.version),
+    __TESTVERSJON__: JSON.stringify(test),
   },
   oxc: {
     jsx: { runtime: 'automatic', importSource: 'preact' },
@@ -26,7 +31,7 @@ export default defineConfig(({ mode }) => ({
   preview: { port: 4173 },
   plugins: [
     innholdPlugin(rot),
-    htmlPlugin(rot, app.navn, app.kortnavn),
+    htmlPlugin(rot, navn, test ? app.testnavn : app.kortnavn),
     testoppsettPlugin(mode),
     dataPlugin(rot, mode),
     fagrollerPlugin(rot),
@@ -36,9 +41,9 @@ export default defineConfig(({ mode }) => ({
       injectRegister: false,
       includeAssets: ['ikoner/favicon.svg', 'ikoner/logo.svg', 'ikoner/apple-touch-icon.png'],
       manifest: {
-        id: app.base,
-        name: app.navn,
-        short_name: app.kortnavn,
+        id: base,
+        name: navn,
+        short_name: test ? app.testnavn : app.kortnavn,
         description: app.beskrivelse.nb,
         lang: 'nb',
         start_url: './',

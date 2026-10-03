@@ -34,6 +34,7 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run typecheck && tsx scripts/bygg-sokeindeks.ts && vite build && tsx scripts/sjekk-storrelse.ts",
+    "build:test": "tsx scripts/bygg-sokeindeks.ts && FUSKELAPPEN_TEST=1 vite build --outDir dist-test",
     "build:e2e": "tsx scripts/bygg-sokeindeks.ts --mode e2e && vite build --mode e2e --outDir dist-e2e",
     "preview": "vite preview",
     "lint": "eslint .",

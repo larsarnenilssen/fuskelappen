@@ -26,6 +26,8 @@ declare module 'virtual:tilbud' {
 }
 
 declare const __APP_VERSJON__: string;
+/** Sann i testversjonen som publiseres under test/ (avgjørelse 045). */
+declare const __TESTVERSJON__: boolean;
 
 declare module '*.yaml' {
   /** Validert innhold fra content/ eller rules/ (se scripts/vite/plugins.ts). */

@@ -4,6 +4,8 @@
 export const app = {
   navn: 'Fuskelappen',
   kortnavn: 'Fuskelappen',
+  // Navnet på testversjonen under test/ (avgjørelse 045).
+  testnavn: 'Fuskelappen test',
   beskrivelse: {
     nb: 'Regelverk for lærerstillinger og skolens drift i videregående opplæring – regnet ut, forklart og med kilder.',
     nn: 'Regelverk for lærarstillingar og drifta av skulen i vidaregåande opplæring – rekna ut, forklart og med kjelder.',

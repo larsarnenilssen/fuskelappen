@@ -11,6 +11,7 @@ import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
 export const nb = {
   app: {
     hoppTilInnhold: 'Hopp til innhold',
+    testversjon: 'Testversjon. Den er ikke publisert, og innstillingene her lagres for seg.',
     tilbake: 'Tilbake',
     hovedmeny: 'Hovedmeny',
     lasterInn: 'Laster inn …',
