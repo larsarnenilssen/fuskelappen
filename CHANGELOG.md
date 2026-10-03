@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.27.0] – 2026-10-03
+
 ### Lagt til
 
 - **Inntak: Søknad og frister gjennom året.** Fristene ved inntak fra oktober til september, med en stripe over året øverst, så du ser med ett blikk hvilke måneder som har frister. Trykk på en måned for å gå dit, og på en frist for å lese mer, med paragrafene og kildene.
