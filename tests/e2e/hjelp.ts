@@ -82,6 +82,8 @@ export const ruter = [
   '#/tilrettelegging/tilpasset-og-individuell?steg=ti-tiltak&svar=ordinar.tvil',
   '#/tilrettelegging/tilpasset-og-individuell?steg=ti-vedtak&svar=foresporsel.faglig',
   '#/tilrettelegging/tilpasset-og-individuell?steg=ti-avslag&svar=foresporsel.faglig.avslag',
+  '#/tilrettelegging/sprak-og-kort-botid',
+  '#/tilrettelegging/sprak-og-kort-botid?steg=sp-innforing&svar=ja.nei.ja',
   '#/finnes-ikke',
 ];
 

@@ -1,0 +1,305 @@
+# Veiviser: særskilt språkopplæring og kort botid (fase 4, pakke 3, avgjørelse 041). Egne ord.
+# Bygger på opplæringslova § 6-5 og § 6-6, opplæringsforskrifta § 5-12 og § 9-20, og Udirs sider om særskilt
+# språkopplæring, innføringsopplæring og minoritetsspråklige og nyankomne elever.
+# Eier 03.10.2026: unntaket fra samtykke for elever fra Ukraina nevnes ikke, og veiviseren sier ikke noe om vedtak når
+# særskilt språkopplæring avsluttes.
+- id: sprak-og-kort-botid
+  type: veiviser
+  tittel:
+    nb: Særskilt språkopplæring og kort botid
+    nn: Særskild språkopplæring og kort butid
+  tekst:
+    nb: Elever med et annet morsmål enn norsk og samisk har rett til særskilt språkopplæring til de kan norsk godt nok til å følge den vanlige opplæringen. Her er hva fylkeskommunen og skolen gjør steg for steg, også for elever som har bodd kort tid i Norge.
+    nn: Elevar med eit anna morsmål enn norsk og samisk har rett til særskild språkopplæring til dei kan norsk godt nok til å følgje den vanlege opplæringa. Her er kva fylkeskommunen og skolen gjer steg for steg, også for elevar som har budd kort tid i Noreg.
+  start: sp-morsmal
+  faser:
+    - { id: vurdering, tittel: { nb: Vurdering, nn: Vurdering } }
+    - { id: vedtak, tittel: { nb: Vedtak, nn: Vedtak } }
+    - { id: opplaering, tittel: { nb: Opplæring, nn: Opplæring } }
+    - { id: oppfolging, tittel: { nb: Oppfølging, nn: Oppfølging } }
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 6-5 Særskild språkopplæring i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§6-5" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire fasene (vurdering, vedtak, opplæring, oppfølging) en dekkende inndeling av særskilt språkopplæring i videregående?"
+  stikkord: [veiviser, minoritetsspråklige, nyankomne, morsmål, innføringsklasse, særskild språkopplæring, kort butid]
+
+- id: sp-morsmal
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: vurdering
+  tittel:
+    nb: Hvem har rett?
+    nn: Kven har rett?
+  tekst:
+    nb: Retten til særskilt språkopplæring gjelder elever som har et annet morsmål enn norsk og samisk, og som ikke kan norsk godt nok til å følge den vanlige opplæringen. En elev kan være født i Norge og likevel være [minoritetsspråklig](#/begreper/minoritetsspraklig-elev).
+    nn: Retten til særskild språkopplæring gjeld elevar som har eit anna morsmål enn norsk og samisk, og som ikkje kan norsk godt nok til å følgje den vanlege opplæringa. Ein elev kan vere fødd i Noreg og likevel vere [minoritetsspråkleg](#/begreper/minoritetsspraklig-elev).
+  paragrafer: [opplaeringslova/6-5]
+  sporsmal:
+    tekst:
+      nb: Har eleven et annet morsmål enn norsk og samisk?
+      nn: Har eleven eit anna morsmål enn norsk og samisk?
+    svar:
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sp-vurdere }
+      - { id: nei, tekst: { nb: "Nei, eleven har norsk eller samisk som morsmål", nn: "Nei, eleven har norsk eller samisk som morsmål" }, neste: sp-ikke-rett }
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
+    - { id: udir-minoritetsspraklige, punkt: "Hvem er de minoritetsspråklige og nyankomne elevene?", url: "https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at en elev kan være født i Norge og likevel være minoritetsspråklig, slik Udir skriver om minoritetsspråklige elever?"
+
+- id: sp-ikke-rett
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: vurdering
+  tittel:
+    nb: Ikke særskilt språkopplæring
+    nn: Ikkje særskild språkopplæring
+  tekst:
+    nb: Elever med norsk eller samisk som morsmål har ikke rett til særskilt språkopplæring. Andre språkrettigheter kan gjelde, for eksempel opplæring i samisk, i og på norsk tegnspråk eller i punktskrift. Alle elever skal ha [tilpasset opplæring](#/tilrettelegging/tilpasset-og-individuell).
+    nn: Elevar med norsk eller samisk som morsmål har ikkje rett til særskild språkopplæring. Andre språkrettar kan gjelde, til dømes opplæring i samisk, i og på norsk teiknspråk eller i punktskrift. Alle elevar skal ha [tilpassa opplæring](#/tilrettelegging/tilpasset-og-individuell).
+  paragrafer: [opplaeringslova/6-2, opplaeringslova/6-3, opplaeringslova/6-4, opplaeringslova/11-1]
+  kilder:
+    - { id: opplaeringslova, punkt: "Kapittel 6 Val av skriftspråk og særskilde språkrettar i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/kap6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å nevne samisk, tegnspråk og punktskrift som «andre språkrettigheter» uten å si hvem de gjelder for, med lenke til paragrafene?"
+
+- id: sp-vurdere
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: vurdering
+  tittel:
+    nb: Vurdere norskferdighetene
+    nn: Vurdere norskdugleiken
+  tekst:
+    nb: Fylkeskommunen vurderer om eleven kan norsk godt nok til å følge den vanlige opplæringen. Vurderingen må bygge på et faglig grunnlag, men det er ingen nasjonale krav til metode eller verktøy. Udir har et frivillig kartleggingsverktøy i grunnleggende norsk. Kan eleven ikke noe norsk, kan en oppstartsamtale være nok.
+    nn: Fylkeskommunen vurderer om eleven kan norsk godt nok til å følgje den vanlege opplæringa. Vurderinga må byggje på eit fagleg grunnlag, men det er ingen nasjonale krav til metode eller verktøy. Udir har eit frivillig kartleggingsverktøy i grunnleggjande norsk. Kan eleven ikkje noko norsk, kan ein oppstartsamtale vere nok.
+  ansvar:
+    nb: Fylkeskommunen. I praksis gjør skolen vurderingen.
+    nn: Fylkeskommunen. I praksis gjer skolen vurderinga.
+  dokumentasjon:
+    nb: Vurderingen av norskferdighetene, som grunnlag for vedtaket.
+    nn: Vurderinga av norskdugleiken, som grunnlag for vedtaket.
+  paragrafer: [opplaeringslova/6-5]
+  sporsmal:
+    tekst:
+      nb: Kan eleven norsk godt nok til å følge den vanlige opplæringen?
+      nn: Kan eleven norsk godt nok til å følgje den vanlege opplæringa?
+    svar:
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sp-vedtak }
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sp-vanlig }
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Vurdere elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk" }
+    - { id: udir-minoritetsspraklige, punkt: "Vurdere elevens norskferdigheter", url: "https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#vurdere-elevens-norskferdigheter" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «I praksis gjør skolen vurderingen» riktig for videregående, eller gjør fylkeskommunen den sentralt noen steder?"
+    - "Er det riktig å nevne at en oppstartsamtale kan være nok når eleven ikke kan noe norsk?"
+
+- id: sp-vanlig
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: vurdering
+  tittel:
+    nb: Vanlig opplæring
+    nn: Vanleg opplæring
+  tekst:
+    nb: Eleven kan norsk godt nok til å følge den vanlige opplæringen, og har ikke rett til særskilt språkopplæring. Eleven skal ha [tilpasset opplæring](#/tilrettelegging/tilpasset-og-individuell) som alle andre.
+    nn: Eleven kan norsk godt nok til å følgje den vanlege opplæringa, og har ikkje rett til særskild språkopplæring. Eleven skal ha [tilpassa opplæring](#/tilrettelegging/tilpasset-og-individuell) som alle andre.
+  paragrafer: [opplaeringslova/6-5, opplaeringslova/11-1]
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Vurdere elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Skal det fattes vedtak også når fylkeskommunen mener eleven ikke har rett til særskilt språkopplæring, og bør utfallet i så fall si det?"
+
+- id: sp-vedtak
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: vedtak
+  tittel:
+    nb: Vedtak om særskilt språkopplæring
+    nn: Vedtak om særskild språkopplæring
+  tekst:
+    nb: |-
+      Fylkeskommunen fatter et [enkeltvedtak](#/begreper/enkeltvedtak) om hva eleven skal få:
+
+      - **Forsterket opplæring i norsk:** alltid.
+      - **Morsmålsopplæring:** ved behov.
+      - **Tospråklig opplæring i fag:** ved behov, på norsk og morsmålet eller et annet språk eleven kan godt.
+
+      Saken skal være godt nok opplyst, elevens beste skal være et grunnleggende hensyn, og eleven har rett til å bli hørt.
+    nn: |-
+      Fylkeskommunen gjer eit [enkeltvedtak](#/begreper/enkeltvedtak) om kva eleven skal få:
+
+      - **Forsterka opplæring i norsk:** alltid.
+      - **Morsmålsopplæring:** ved behov.
+      - **Tospråkleg opplæring i fag:** ved behov, på norsk og morsmålet eller eit anna språk eleven kan godt.
+
+      Saka skal vere godt nok opplyst, det beste for eleven skal vere eit grunnleggjande omsyn, og eleven har rett til å bli høyrd.
+  ansvar:
+    nb: Fylkeskommunen.
+    nn: Fylkeskommunen.
+  dokumentasjon:
+    nb: Skriftlig enkeltvedtak med opplæringen eleven skal få.
+    nn: Skriftleg enkeltvedtak med opplæringa eleven skal få.
+  forklaring:
+    nb: Morsmålsopplæring kommer i tillegg til det vanlige timetallet og kan gis ved en annen skole. Tospråklig opplæring i fag gis ved skolen eleven går på. Har skolen ikke egnede lærere, kan begge deler gis som fjernundervisning.
+    nn: Morsmålsopplæring kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skole. Tospråkleg opplæring i fag blir gitt ved skolen eleven går på. Har ikkje skolen eigna lærarar, kan begge delar givast som fjernundervisning.
+  paragrafer: [opplaeringslova/6-5, opplaeringslova/10-1, opplaeringslova/10-2, forvaltningsloven/17]
+  neste: sp-kort-botid
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Krav til vedtak", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Forsterket opplæring i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Tospråklig opplæring i fag", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Morsmålsopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Fjernundervisning", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#fjernundervisning" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «på norsk og morsmålet eller et annet språk eleven kan godt» en riktig gjengivelse av tospråklig opplæring i fag?"
+    - "Er det riktig at morsmålsopplæring kommer i tillegg til det vanlige timetallet i videregående?"
+
+- id: sp-kort-botid
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: opplaering
+  tittel:
+    nb: Kort botid?
+    nn: Kort butid?
+  tekst:
+    nb: Det er ingen fast grense for hvor lenge en elev må ha bodd i Norge for å regnes som nyankommet. Fylkeskommunen ser på norskferdighetene, hva som er best for eleven, og hensynet til integrering. Elever som har bodd kort tid i Norge, kan få innføringsopplæring.
+    nn: Det er inga fast grense for kor lenge ein elev må ha budd i Noreg for å reknast som nykomen. Fylkeskommunen ser på norskdugleiken, kva som er best for eleven, og omsynet til integrering. Elevar som har budd kort tid i Noreg, kan få innføringsopplæring.
+  forklaring:
+    nb: For å ha rett til videregående opplæring må eleven ha fullført grunnskolen eller tilsvarende, for eksempel ni års grunnopplæring i utlandet, og ha lovlig opphold. Fylkeskommunen skal ha et tilbud til dem som har rett til videregående, men mangler språklige forutsetninger for å gjennomføre den, og kan tilby mer grunnskoleopplæring.
+    nn: For å ha rett til vidaregåande opplæring må eleven ha fullført grunnskolen eller tilsvarande, til dømes ni års grunnopplæring i utlandet, og ha lovleg opphald. Fylkeskommunen skal ha eit tilbod til dei som har rett til vidaregåande, men manglar språklege føresetnader for å gjennomføre ho, og kan tilby meir grunnskoleopplæring.
+  paragrafer: [opplaeringslova/6-6, opplaeringslova/5-1, opplaeringslova/5-9, opplaeringslova/9-6, opplaeringslova/9-7, opplaeringsforskrifta/4-1]
+  sporsmal:
+    tekst:
+      nb: Har eleven bodd kort tid i Norge?
+      nn: Har eleven budd kort tid i Noreg?
+    svar:
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sp-innforing }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: sp-laereplan }
+  kilder:
+    - { id: udir-innforingsopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/" }
+    - { id: udir-minoritetsspraklige, punkt: "Hvem er de minoritetsspråklige og nyankomne elevene?", url: "https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er forklaringen om rett til videregående for elever med kort botid riktig og forsiktig nok, når inntak kommer i fase 5?"
+    - "Fører «Nei» riktig videre til læreplanen i norsk for kort botid, som også kan gjelde elever som ikke regnes som nyankomne?"
+
+- id: sp-innforing
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: opplaering
+  tittel:
+    nb: Innføringsopplæring
+    nn: Innføringsopplæring
+  tekst:
+    nb: Fylkeskommunen kan gi elever med kort botid og vedtak om særskilt språkopplæring hele eller deler av opplæringen i egne grupper, klasser eller skoler. Det er et frivillig overgangstilbud for å lære norsk raskt. Vedtaket kan gjøre unntak fra læreplanene i fag og fra fag- og timefordelingen. Så lenge eleven får innføringsopplæring, har eleven rett til fritak fra vurdering med karakter, men ikke fra standpunktkarakter.
+    nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skolar. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter.
+  ansvar:
+    nb: Fylkeskommunen. Eleven eller foreldrene samtykker.
+    nn: Fylkeskommunen. Eleven eller foreldra samtykkjer.
+  dokumentasjon:
+    nb: Samtykke og vedtak om innføringsopplæring.
+    nn: Samtykke og vedtak om innføringsopplæring.
+  frist:
+    nb: Vedtak for høyst ett år om gangen, og til sammen høyst to år.
+    nn: Vedtak for høgst eitt år om gongen, og til saman høgst to år.
+  fristKort: { nb: "Høyst 2 år", nn: "Høgst 2 år" }
+  forklaring:
+    nb: Når eleven går over til vanlig klasse, kan eleven fortsatt ha rett til særskilt språkopplæring der. Skolen skal vurdere norskferdighetene underveis, for å se når eleven kan gå over.
+    nn: Når eleven går over til vanleg klasse, kan eleven framleis ha rett til særskild språkopplæring der. Skolen skal vurdere norskdugleiken undervegs, for å sjå når eleven kan gå over.
+  paragrafer: [opplaeringslova/6-6, opplaeringslova/14-2, opplaeringsforskrifta/9-20]
+  sporsmal:
+    tekst:
+      nb: Ønsker eleven innføringsopplæring?
+      nn: Ønskjer eleven innføringsopplæring?
+    svar:
+      - { id: ja, tekst: { nb: "Ja, eleven samtykker", nn: "Ja, eleven samtykkjer" }, neste: sp-laereplan }
+      - { id: nei, tekst: { nb: "Nei, eleven går i vanlig klasse", nn: "Nei, eleven går i vanleg klasse" }, neste: sp-laereplan }
+  kilder:
+    - { id: udir-innforingsopplaring, punkt: "Varighet på inntil to år", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r" }
+    - { id: udir-innforingsopplaring, punkt: "Eleven eller foreldrene må samtykke", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke" }
+    - { id: udir-innforingsopplaring, punkt: "Avvik fra læreplaner i fag og fra fag- og timefordelingen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen" }
+    - { id: udir-innforingsopplaring, punkt: "Fritak fra vurdering for elever i innføringsopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?"
+    - "Samtykker eleven selv fra 15 år også her (opplæringslova § 24-5), eller bør teksten si «eleven eller foreldrene» som Udir?"
+
+- id: sp-laereplan
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: opplaering
+  tittel:
+    nb: Læreplan i norsk for elever med kort botid
+    nn: Læreplan i norsk for elevar med kort butid
+  tekst:
+    nb: Elever med særskilt språkopplæring kan velge å følge læreplanen i norsk for språklige minoriteter med kort botid, hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv. Fagene står i appen, for eksempel [NOR1412 på vg1](#/fag/NOR1412).
+    nn: Elevar med særskild språkopplæring kan velje å følgje læreplanen i norsk for språklege minoritetar med kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv. Faga står i appen, til dømes [NOR1412 på vg1](#/fag/NOR1412).
+  ansvar:
+    nb: Eleven velger.
+    nn: Eleven vel.
+  paragrafer: [opplaeringsforskrifta/5-12]
+  neste: sp-oppfolging
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Læreplaner for særskilt språkopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir lenker til læreplanen NOR09-04, mens Grep har fagene på NOR09-05. Er NOR09-05 gjeldende læreplan?"
+    - "Er det nyttig å lenke til NOR1412 som eksempel, eller bør steget vise alle fagkodene for kort botid?"
+
+- id: sp-oppfolging
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: oppfolging
+  tittel:
+    nb: Jevnlig vurdering
+    nn: Jamleg vurdering
+  tekst:
+    nb: Fylkeskommunen skal jevnlig vurdere om eleven kan norsk godt nok til å følge den vanlige opplæringen. Hvor ofte, vurderes for hver elev. Skolen tilpasser opplæringen også mens eleven får særskilt språkopplæring.
+    nn: Fylkeskommunen skal jamleg vurdere om eleven kan norsk godt nok til å følgje den vanlege opplæringa. Kor ofte, blir vurdert for kvar elev. Skolen tilpassar opplæringa også medan eleven får særskild språkopplæring.
+  ansvar:
+    nb: Fylkeskommunen. I praksis vurderer skolen.
+    nn: Fylkeskommunen. I praksis vurderer skolen.
+  frist:
+    nb: Jevnlig. Ingen fast frist.
+    nn: Jamleg. Inga fast frist.
+  fristKort: { nb: "Jevnlig", nn: "Jamleg" }
+  paragrafer: [opplaeringslova/6-5]
+  sporsmal:
+    tekst:
+      nb: Kan eleven nå norsk godt nok til å følge den vanlige opplæringen?
+      nn: Kan eleven no norsk godt nok til å følgje den vanlege opplæringa?
+    svar:
+      - { id: nei, tekst: { nb: "Nei, eleven trenger fortsatt særskilt språkopplæring", nn: "Nei, eleven treng framleis særskild språkopplæring" }, neste: sp-oppfolging }
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: sp-over }
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Vurdere elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk" }
+    - { id: udir-innforingsopplaring, punkt: "Vurdering av elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#vurdering-av-elevens-ferdigheter-i-norsk" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Hvor ofte, vurderes for hver elev» en riktig gjengivelse av at hyppigheten «må vurderes konkret»?"
+
+- id: sp-over
+  type: steg
+  veiviser: sprak-og-kort-botid
+  fase: oppfolging
+  tittel:
+    nb: Over til vanlig opplæring
+    nn: Over til vanleg opplæring
+  tekst:
+    nb: Eleven kan norsk godt nok til å følge den vanlige opplæringen, og får [tilpasset opplæring](#/tilrettelegging/tilpasset-og-individuell) som alle andre.
+    nn: Eleven kan norsk godt nok til å følgje den vanlege opplæringa, og får [tilpassa opplæring](#/tilrettelegging/tilpasset-og-individuell) som alle andre.
+  paragrafer: [opplaeringslova/6-5, opplaeringslova/11-1]
+  kilder:
+    - { id: udir-innforingsopplaring, punkt: "Varighet på inntil to år", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør utfallet si noe om hvordan særskilt språkopplæring avsluttes, eller er det bedre at det står åpent (som i veiviseren om tilrettelegging)?"

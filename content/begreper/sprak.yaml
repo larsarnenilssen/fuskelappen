@@ -1,0 +1,90 @@
+# Begreper om særskilt språkopplæring og kort botid (fase 4, pakke 3). Bygger på opplæringslova § 6-5 og § 6-6,
+# opplæringsforskrifta § 5-12 og § 9-20, og Udirs sider om særskilt språkopplæring, innføringsopplæring og
+# minoritetsspråklige og nyankomne elever. Egne ord.
+- id: minoritetsspraklig-elev
+  type: begrep
+  tittel: { nb: Minoritetsspråklig elev, nn: Minoritetsspråkleg elev }
+  tekst:
+    nb: En minoritetsspråklig elev har et annet morsmål enn norsk og samisk. Eleven kan være født i Norge eller ha bodd her lenge og likevel være minoritetsspråklig. Ikke alle minoritetsspråklige elever trenger særskilt språkopplæring. Det avhenger av om eleven kan norsk godt nok til å følge den vanlige opplæringen.
+    nn: Ein minoritetsspråkleg elev har eit anna morsmål enn norsk og samisk. Eleven kan vere fødd i Noreg eller ha budd her lenge og likevel vere minoritetsspråkleg. Ikkje alle minoritetsspråklege elevar treng særskild språkopplæring. Det kjem an på om eleven kan norsk godt nok til å følgje den vanlege opplæringa.
+  kilder:
+    - { id: udir-minoritetsspraklige, punkt: "Hvem er de minoritetsspråklige og nyankomne elevene?", url: "https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen (annet morsmål enn norsk og samisk) riktig, når Udir også nevner at kvensk, romani og andre nasjonale minoritetsspråk har egne regler?"
+  stikkord: [minoritetsspråkleg, flerspråklig, fleirspråkleg, morsmål, andrespråk]
+  relatert: [sarskilt-sprakopplaering, kort-botid]
+
+- id: sarskilt-sprakopplaering
+  type: begrep
+  tittel: { nb: Særskilt språkopplæring, nn: Særskild språkopplæring }
+  tekst:
+    nb: Særskilt språkopplæring er en rett for elever med et annet morsmål enn norsk og samisk, til de kan norsk godt nok til å følge den vanlige opplæringen. Den består alltid av forsterket opplæring i norsk, og ved behov også morsmålsopplæring, tospråklig opplæring i fag eller begge deler. Fylkeskommunen fatter vedtak og skal jevnlig vurdere om eleven fortsatt trenger den.
+    nn: Særskild språkopplæring er ein rett for elevar med eit anna morsmål enn norsk og samisk, til dei kan norsk godt nok til å følgje den vanlege opplæringa. Ho består alltid av forsterka opplæring i norsk, og ved behov også morsmålsopplæring, tospråkleg opplæring i fag eller begge delar. Fylkeskommunen gjer vedtak og skal jamleg vurdere om eleven framleis treng ho.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 6-5 Særskild språkopplæring i den vidaregåande opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§6-5" }
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Ingressen og «Krav til vedtak»", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#krav-til-vedtak" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å si at særskilt språkopplæring alltid består av forsterket opplæring i norsk?"
+  stikkord: [særskild språkopplæring, forsterket norsk, forsterka norsk, språkopplæring, minoritetsspråklige]
+  relatert: [minoritetsspraklig-elev, morsmalsopplaering, tospraklig-fagopplaering, innforingsopplaering]
+
+- id: morsmalsopplaering
+  type: begrep
+  tittel: { nb: Morsmålsopplæring, nn: Morsmålsopplæring }
+  tekst:
+    nb: Morsmålsopplæring er opplæring i elevens morsmål, som en del av særskilt språkopplæring når eleven trenger det. Den skal styrke forutsetningene for å lære norsk og for å lære i fagene. Den kommer i tillegg til det vanlige timetallet og kan gis ved en annen skole eller som fjernundervisning.
+    nn: Morsmålsopplæring er opplæring i morsmålet til eleven, som ein del av særskild språkopplæring når eleven treng det. Ho skal styrkje føresetnadene for å lære norsk og for å lære i faga. Ho kjem i tillegg til det vanlege timetalet og kan givast ved ein annan skole eller som fjernundervisning.
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Morsmålsopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#morsmaalsopplaering" }
+    - { id: opplaeringslova, punkt: "§ 6-5 tredje ledd", url: "https://lovdata.no/lov/2023-06-09-30/§6-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at morsmålsopplæring i videregående kommer i tillegg til det vanlige timetallet?"
+  stikkord: [morsmål, morsmålslærer, morsmålslærar]
+  relatert: [sarskilt-sprakopplaering, tospraklig-fagopplaering]
+
+- id: tospraklig-fagopplaering
+  type: begrep
+  tittel: { nb: Tospråklig opplæring i fag, nn: Tospråkleg opplæring i fag }
+  tekst:
+    nb: Tospråklig opplæring i fag betyr at eleven får opplæring i ett eller flere fag både på norsk og på morsmålet eller et annet språk eleven kan godt, for eksempel i matematikk eller naturfag. Målet er faglig framgang mens eleven lærer norsk. Den er en del av særskilt språkopplæring og gis ved skolen eleven går på.
+    nn: Tospråkleg opplæring i fag tyder at eleven får opplæring i eitt eller fleire fag både på norsk og på morsmålet eller eit anna språk eleven kan godt, til dømes i matematikk eller naturfag. Målet er fagleg framgang medan eleven lærer norsk. Ho er ein del av særskild språkopplæring og blir gitt ved skolen eleven går på.
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Tospråklig opplæring i fag", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på fag (matematikk og naturfag) passende for videregående?"
+  stikkord: [tospråklig, tospråkleg, tospråklig lærer, fagopplæring på morsmål]
+  relatert: [sarskilt-sprakopplaering, morsmalsopplaering]
+
+- id: innforingsopplaering
+  type: begrep
+  tittel: { nb: Innføringsopplæring, nn: Innføringsopplæring }
+  tekst:
+    nb: Innføringsopplæring er opplæring i egne grupper, klasser eller skoler for elever med kort botid og vedtak om særskilt språkopplæring, for å lære norsk raskt. Den er frivillig og krever samtykke. Vedtaket gjelder høyst ett år om gangen og til sammen høyst to år, og kan gjøre unntak fra læreplanene og fag- og timefordelingen.
+    nn: Innføringsopplæring er opplæring i eigne grupper, klassar eller skolar for elevar med kort butid og vedtak om særskild språkopplæring, for å lære norsk raskt. Ho er frivillig og krev samtykke. Vedtaket gjeld høgst eitt år om gongen og til saman høgst to år, og kan gjere unntak frå læreplanane og fag- og timefordelinga.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg", url: "https://lovdata.no/lov/2023-06-09-30/§6-6" }
+    - { id: udir-innforingsopplaring, punkt: "Varighet på inntil to år", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet nevne at fylkene kaller tilbudet ulike ting, for eksempel innføringsklasse eller innføringskurs?"
+  stikkord: [innføringsklasse, innføringskurs, innføringsgruppe, nyankomne, nykomne]
+  relatert: [kort-botid, sarskilt-sprakopplaering]
+
+- id: kort-botid
+  type: begrep
+  tittel: { nb: Kort botid, nn: Kort butid }
+  tekst:
+    nb: Kort botid betyr at eleven ikke har bodd lenge i Norge. Det er ingen fast grense, men fylkeskommunen ser på norskferdighetene, hva som er best for eleven, og hensynet til integrering. Elever med kort botid kan få innføringsopplæring, og kan velge læreplanen i norsk for språklige minoriteter med kort botid hvis de har hatt høyst fire års opplæring fra 5. trinn i norsk grunnskole.
+    nn: Kort butid tyder at eleven ikkje har budd lenge i Noreg. Det er inga fast grense, men fylkeskommunen ser på norskdugleiken, kva som er best for eleven, og omsynet til integrering. Elevar med kort butid kan få innføringsopplæring, og kan velje læreplanen i norsk for språklege minoritetar med kort butid dersom dei har hatt høgst fire års opplæring frå 5. trinn i norsk grunnskole.
+  kilder:
+    - { id: udir-innforingsopplaring, punkt: "Ingressen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vilkåret for læreplanen i norsk for kort botid (høyst fire års opplæring fra 5. trinn) riktig gjengitt, og bør vilkåret om særskilt språkopplæring også stå her?"
+  stikkord: [kort butid, nyankommen, nykomen, botid, butid]
+  relatert: [innforingsopplaering, minoritetsspraklig-elev]
