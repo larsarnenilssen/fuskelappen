@@ -533,6 +533,194 @@ main {
   background: var(--farge-advarsel-flate);
 }
 
+/* Løp som Grep, VIGO og utdanning.no ikke er enige om (avgjørelse 052): merknad i ravfarge etter koden. */
+.lop-uenig {
+  color: var(--farge-advarsel);
+}
+
+/* Skolene, yrkene og opplæringskontorene i Opplæringsløp (avgjørelse 053). */
+.lop-dinskole {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-left: var(--rom-2);
+  color: var(--farge-skole);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lop-skolestatus {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+}
+
+.lop-skolestatus .ikon {
+  flex: none;
+  margin-top: 0.2em;
+}
+
+.lop-skolestatus-ja .ikon {
+  color: var(--farge-skole);
+}
+
+.lop-yrker {
+  margin: 0 0 var(--rom-3);
+  padding-left: var(--rom-4);
+}
+
+.lop-yrker li + li {
+  margin-top: var(--rom-1);
+}
+
+/* Landingssiden for Opplæringsløp: to likestilte deler, utdanningsprogram og løp, og skoler og opplæringskontorer. */
+.lop-del {
+  margin-top: var(--rom-5);
+}
+
+.lop-innganger {
+  display: grid;
+  gap: var(--rom-3);
+}
+
+@media (min-width: 40rem) {
+  .lop-innganger {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.lop-sok-skoler {
+  margin-top: var(--rom-4);
+}
+
+.tilbudsok-treff {
+  margin-top: var(--rom-2);
+}
+
+.tilbudsok-valg {
+  width: 100%;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.skolefilter {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  column-gap: var(--rom-3);
+}
+
+.skolefilter .felt select {
+  width: 100%;
+  min-width: 0;
+}
+
+.skolefilter-tilbud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-2);
+}
+
+/*
+ * Hver skole er et eget kort med luft mellom, så det er lett å se hvor en skole slutter når listen rulles. En åpnet
+ * skole får en annen flate, og navnet blir stående øverst mens tilbudene rulles forbi (eier 03.10.2026).
+ */
+.skoleliste {
+  display: grid;
+  gap: var(--rom-2);
+  list-style: none;
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+}
+
+.skoleliste > li {
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.skoleliste > li.apen {
+  background: var(--farge-flate-2);
+  border-color: var(--farge-merke);
+}
+
+.skoletilbud {
+  margin: var(--rom-3) 0;
+}
+
+.skoletilbud .liten-overskrift {
+  margin: 0 0 var(--rom-2);
+}
+
+.skoleliste .skolekort-knapp {
+  display: flex;
+  width: 100%;
+  gap: var(--rom-3);
+  min-height: 3.25rem;
+  padding: var(--rom-3) var(--rom-4);
+  border-radius: var(--radius-m);
+}
+
+@media (display-mode: standalone) and (pointer: coarse) {
+  .skoleliste {
+    --topplinje-luft: var(--topplinje-luft-installert);
+  }
+}
+
+.skoleliste > li.apen .skolekort-knapp {
+  position: sticky;
+  top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--topplinje-luft, 0px));
+  z-index: 1;
+  background: var(--farge-flate-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  border-radius: var(--radius-m) var(--radius-m) 0 0;
+}
+
+.skolekort-innhold {
+  padding: var(--rom-3) var(--rom-4) var(--rom-2);
+}
+
+.skolekort-innhold > :first-child {
+  margin-top: 0;
+}
+
+/* Tilbudet det er søkt på, i treet til en skole. */
+.lop-kort[data-valgt='ja'] {
+  border: 2px solid var(--farge-merke);
+}
+
+.skolekort-alle {
+  margin: var(--rom-3) 0 0;
+}
+
+.kontorliste .kontor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--rom-1) var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+}
+
+.kontor-lenker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+}
+
+.kontor-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--rom-1) var(--rom-3);
+}
+
+.kontorliste .listelenke-tekst {
+  flex: 1 1 12rem;
+}
+
 /* Vg2 på yrkesfag med opphentingsfag (Opplæringsløp): boks med søk, ikke en lang liste. */
 .opphenting {
   margin: 0 0 var(--rom-4);
@@ -3489,6 +3677,12 @@ p.fagkort-tittel {
   font-size: var(--str-s);
 }
 
+/* Merknad under et fellesfag med valg, f.eks. at S1 og R1 er programfag (Udir-1 punkt 3.3.1.4). */
+.fagrad-merknad {
+  display: block;
+  margin-top: var(--rom-1);
+}
+
 .fagrad-pil {
   margin-left: var(--rom-1);
   vertical-align: -0.15em;
@@ -3799,6 +3993,43 @@ p.fagkort-tittel {
 
 .lop-knapp[aria-expanded='true'] {
   background: var(--farge-flate);
+}
+
+/* Tilbud ved skolen brukeren har valgt (avgjørelse 053): kort i skolefargen, og knappen til neste trinn i en mørkere
+   tone når løpet videre har tilbud ved skolen (samme tone som kortet når den er åpen). Merket «✓ Din skole» og
+   teksten på knappen sier det samme uten farge. */
+.lop-kort[data-skole='ja'] {
+  border: 2px solid var(--farge-skole);
+  background: var(--farge-skole-flate);
+}
+
+.lop-knapp[data-skole='ja'] {
+  background: var(--farge-skole-knapp);
+}
+
+.lop-knapp[data-skole='ja'][aria-expanded='true'] {
+  background: var(--farge-skole-flate);
+}
+
+.lop-knapp-skole {
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.lop-skolevalg {
+  margin: var(--rom-3) 0 var(--rom-4);
+}
+
+.lop-skolevalg .bryter {
+  margin-bottom: var(--rom-2);
+}
+
+.lop-skolevalg-linje {
+  margin: 0;
+}
+
+.lop-skoleprogram {
+  margin-top: var(--rom-4);
 }
 
 .lop-videre {

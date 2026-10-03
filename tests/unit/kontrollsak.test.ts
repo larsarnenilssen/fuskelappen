@@ -160,6 +160,15 @@ describe('den ukentlige kontrollsaken', () => {
     expect(r.tekst).toContain('https://github.com/eier/protokollen/blob/main/docs/KOBLING.md');
   });
 
+  it('tar med nye uenigheter om løpene som punkter, og uenigheter som er borte, til orientering (avgjørelse 052)', () => {
+    const r = lagUkesrapport(grunnlag({ lopsamsvar: { nye: ['BAKEM2---- → BARLF3----: står i grep, ikke i vigo, utdanning'], borte: ['SRSSR2---- → SRSLG3----: står i vigo, ikke i utdanning'] } }));
+    expect(r.punkter).toBe(1);
+    expect(r.tekst).toContain('## Løpene i Grep, VIGO og utdanning.no');
+    expect(r.tekst).toContain('- [ ] Ny uenighet om løpet BAKEM2---- → BARLF3----');
+    expect(r.tekst).toContain('- Én uenighet er borte, fordi kildene nå er enige:');
+    expect(lagUkesrapport(grunnlag({ lopsamsvar: { nye: [], borte: [] } }))).toMatchObject({ aapen: false, punkter: 0 });
+  });
+
   it('tar med endringer i overordnet del til orientering (avgjørelse 037)', () => {
     const r = lagUkesrapport(grunnlag({ overordnet: { endringer: ['Endret tekst: 1.1 Menneskeverdet'] } }));
     expect(r.punkter).toBe(0);

@@ -127,6 +127,8 @@ export const fagNn: Skjema<typeof fagNb> = {
     erstatter: 'Erstattar',
     utgattDato: 'gått ut {dato}',
     utgatt: 'gått ut',
+    ndla: 'På NDLA',
+    ndlaHjelp: 'Læringsressursar for faget hos Nasjonal digital læringsarena.',
     brukesSammen: 'Blir brukt saman med',
     nyLaereplan: 'Læreplanen {gammel} er erstatta av {ny}.',
     utgattKode: 'Fagkoden {kode} har gått ut.',

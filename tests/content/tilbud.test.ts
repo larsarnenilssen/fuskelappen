@@ -6,7 +6,10 @@ import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
 import { byggStruktur, byggTilbud, erVariant, opphentingsfag } from '../../src/modules/fag/tilbud/modell.ts';
 import { lesTilbudsindeks } from '../../scripts/data/les.ts';
-import { fordelingOgNeste, lagRapportFraRepo, lesFagBygger } from '../../scripts/tilbud/rapport.ts';
+import { fordelingOgNeste, lagRapportFraRepo, lesFagBygger, uenigheterFraRepo } from '../../scripts/tilbud/rapport.ts';
+import { lesLopskilder } from '../../scripts/data/les.ts';
+import { manglerI } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
+import { utdanningslopSkjema } from '../../src/modules/fag/utdanning/skjema.ts';
 
 const rot = fileURLToPath(new URL('../..', import.meta.url));
 // Som appen: Grep, med grunnlaget for inntak fra VIGO for påbygging (medGrunnlagFraVigo).
@@ -74,5 +77,18 @@ describe('tilbudsstrukturen', () => {
     const st = tilbud.find((t) => t.kode === 'STUSP1----');
     expect(st?.opphenting.til.length).toBeGreaterThan(20);
     expect(st?.kryssTil.filter((k) => indeks.programomrader[k]?.trinn === 'Vg2' && !['ST', 'PB'].includes(indeks.programomrader[k]?.program ?? ''))).toEqual([]);
+  });
+
+  it('data/status/lopsamsvar.json er oppdatert (kjør «npm run tilbud:rapport»)', () => {
+    expect(JSON.parse(readFileSync(join(rot, 'data/status/lopsamsvar.json'), 'utf8')).uenige).toEqual(uenigheterFraRepo(rot));
+  });
+
+  it('løpene fra utdanning.no er gyldige, og kildesamsvaret gir det eier har sett (avgjørelse 052)', () => {
+    const k = lesLopskilder(rot);
+    expect(utdanningslopSkjema.safeParse(k.utdanning).success).toBe(true);
+    // Vg4 påbygging etter lærefag: VIGO og utdanning.no er enige, Grep sier ikke noe.
+    expect(manglerI('HSHEA3----', 'PBPBY4----', k)).toEqual([]);
+    // Et kryssløp bare Grep har (03.10.2026).
+    expect(manglerI('BAKEM2----', 'BARLF3----', k)).toEqual(['vigo', 'utdanning']);
   });
 });

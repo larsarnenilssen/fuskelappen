@@ -23,6 +23,8 @@
   --p-lilla-100: #eee8f7;
   --p-turkis-700: #0e6a73;
   --p-turkis-100: #dcf0f1;
+  /* Mørkere flate for knappen under et tilbud ved brukerens skole (avgjørelse 053). */
+  --p-turkis-200: #b9e0e3;
   --p-graa-600: #5f6673;
 
   /* Palett – mørk */
@@ -49,6 +51,7 @@
   --p-lilla-900: #2b2340;
   --p-turkis-300: #86d0d6;
   --p-turkis-900: #10302f;
+  --p-turkis-800: #1b4a4b;
   --p-graa-400: #9ba3b0;
   /* Dempede mellomtoner for diagrammer i mørk visning: hvit tekst gir minst 4,5:1, flaten minst 3:1. */
   --p-blaa-500: #3f6fa6;

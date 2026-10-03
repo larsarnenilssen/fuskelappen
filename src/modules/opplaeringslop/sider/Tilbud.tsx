@@ -1,12 +1,15 @@
 // Et tilbud (programområde): timene og hvordan de fordeler seg, fagene i rubrikker for fellesfag, felles programfag,
 // programfag til valg og yrkesfaglig fordypning, hva tilbudet bygger på og fører videre til, og lenker til Vilbli for
-// skolene som har det (avgjørelse 027). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
+// skolene som har det (avgjørelse 027). Skolene med tilbudet, yrkene etter lærefaget og opplæringskontorene i
+// fylket kommer fra utdanning.no og NOR (avgjørelse 053). Alt kan legges sammen (eier 02.10.2026, avgjørelse 036).
 // Linjenavnene fra rundskrivet («Norsk», «Fremmedspråk») står på valgt målform (navn.ts). Avvik mellom rundskrivet og
 // Grep vises som en nøytral merknad der de gjelder (eier 02.10.2026).
 import { useEffect, useId, useState } from 'preact/hooks';
-import { naviger } from '../../../app/ruter.ts';
-import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { lenke, naviger } from '../../../app/ruter.ts';
+import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
+import { Forklaring } from '../../../components/Forklaring.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -18,13 +21,19 @@ import { lastFagroller } from '../../fag/data.ts';
 import { fellesStart } from '../../fag/klasser.ts';
 import { normaliser } from '../../fag/oppslag.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
+import type { Lopkilde } from '../../fag/tilbud/kildesamsvar.ts';
 import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
 import { visningstrinnTekst } from '../../fag/visning.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, skoleForst, type Tilbudsdata } from '../data.ts';
 import { linjenavn, ordning } from '../navn.ts';
-import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useTilbudsdata } from './felles.tsx';
+import { Brodsmuler, Fagvalgrad, Lasting, Rubrikk, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
+import { lastYrker } from '../../../data/utdanning.ts';
+import { lastOpplaeringskontor } from '../../../data/udir.ts';
+import type { Yrker } from '../../fag/utdanning/skjema.ts';
+import type { Opplaeringskontorer } from '../nor/skjema.ts';
+import { antallMedTilbud, valgtSkole } from '../skoler.ts';
 
 type Kategori = Tilbudsdel['kategori'];
 type Fagdel = Extract<Tilbudsdel, { type: 'fag' }>;
@@ -85,22 +94,60 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
     );
   // «Matematikk 1P» og «Matematikk 1T» blir «1P» og «1T»: det navnene har felles, står alt i linjen.
   const felles = fellesStart(del.koder.map((k) => indeks.fag[k]?.navn[malform] ?? k));
-  const kortnavn = (navn: string) => navn.slice(felles.length).trim() || navn;
+  const kortnavn = (k: string) => {
+    const navn = indeks.fag[k]?.navn[malform] ?? k;
+    return navn.slice(felles.length).trim() || navn;
+  };
+  // Programfag eleven kan velge i stedet for fellesfaget, f.eks. S1 og R1 i stedet for 2P (Udir-1 punkt 3.3.1.4).
+  const erstatning = del.erstatning ?? [];
+  const fellesfag = del.koder.filter((k) => !erstatning.includes(k));
+  const timerErstatning = [...new Set(erstatning.map((k) => indeks.fag[k]?.timer).filter((x): x is number => typeof x === 'number'))];
+  // Fellesfag eleven kan velge i stedet, med et annet timetall (f.eks. 1P eller 1T på yrkesfag, Udir-1 punkt 3.5).
+  const iStedet = del.iStedet ?? [];
+  const iStedetNavn = iStedet.map((k) => indeks.fag[k]?.navn[malform] ?? k);
+  const iStedetFelles = fellesStart(iStedetNavn);
+  const timerIStedet = [...new Set(iStedet.map((k) => indeks.fag[k]?.timer).filter((x): x is number => typeof x === 'number'))];
+  const iStedetMerknad =
+    iStedet.length > 0 && timerIStedet.length === 1 ? (
+      <span class="fagrad-merknad">
+        <Begrepstekst
+          tekst={t('opplaeringslop.tilbud.iStedet', {
+            fag: iStedetNavn.map((n) => n.slice(iStedetFelles.length).trim() || n).join(` ${t('opplaeringslop.tilbud.eller')} `),
+            timer: formaterTall(timerIStedet[0] ?? 0),
+            linjetimer: formaterTall(del.timer),
+          })}
+        />
+      </span>
+    ) : null;
   return (
     <Fagrad
       navn={kortLinje(del.linje, malform)}
       timer={del.timer}
       href={en ? `#/fag/${en}` : null}
       under={
-        del.koder.length > 1 && (
+        (del.koder.length > 1 || iStedetMerknad) && (
           <>
-            {t('opplaeringslop.tilbud.velgEnKort')}{' '}
-            {del.koder.map((k, i) => (
-              <span key={k}>
-                {i > 0 && ' · '}
-                <a href={`#/fag/${k}`}>{kortnavn(indeks.fag[k]?.navn[malform] ?? k)}</a>
+            {del.koder.length > 1 && t('opplaeringslop.tilbud.velgEnKort')}{' '}
+            {del.koder.length > 1 &&
+              del.koder.map((k, i) => (
+                <span key={k}>
+                  {i > 0 && ' · '}
+                  <a href={`#/fag/${k}`}>{kortnavn(k)}</a>
+                </span>
+              ))}
+            {iStedetMerknad}
+            {erstatning.length > 0 && timerErstatning.length === 1 && (
+              <span class="fagrad-merknad">
+                {' '}
+                <Begrepstekst
+                  tekst={t('opplaeringslop.tilbud.erstatning', {
+                    fag: erstatning.map(kortnavn).join(` ${t('opplaeringslop.tilbud.og')} `),
+                    timer: formaterTall(timerErstatning[0] ?? 0),
+                    fellesfag: fellesfag.map(kortnavn).join(', '),
+                  })}
+                />
               </span>
-            ))}
+            )}
           </>
         )
       }
@@ -335,15 +382,21 @@ function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Til
 }
 
 /**
- * Fagene med fast fagkode (fellesfag uten valg og felles programfag) til en ny, ulagret arbeidsplan, hvert fag som
- * egen gruppe med årstimene. Fag eleven velger, må brukeren legge inn selv (eier 02.10.2026).
+ * Fagene i fellesfagene og felles programfag til en ny, ulagret arbeidsplan, hvert fag som egen gruppe med årstimene.
+ * Velger eleven mellom fag (f.eks. 1P eller 1T, 2P, R1 eller S1, et fremmedspråk, eller dekk eller maskin), legges
+ * bare det første inn, på alle trinn (eier 03.10.2026). Programfag til fordypning og valg, og fag over flere trinn,
+ * legger brukeren inn selv (eier 02.10.2026).
  */
 function faglinjerTilArbeidsplan(tb: Tilbudsdata, kode: string, indeks: Fagindeks, koblingsdata: NonNullable<ReturnType<typeof useKoblingsdata>>) {
   const po = indeks.programomrader[kode];
   const faste = tb.deler.flatMap((d) => {
     if (d.type !== 'fag') return [];
-    if (d.kategori === 'fellesfag') return d.koder.length === 1 && d.koder[0] ? [{ kode: d.koder[0], timer: d.timer }] : [];
-    return d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
+    if (d.kategori === 'fellesfag') return d.koder[0] ? [{ kode: d.koder[0], timer: d.koder.length === 1 ? d.timer : (indeks.fag[d.koder[0]]?.timer ?? d.timer) }] : [];
+    const faste = d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
+    // Valg mellom fag i samme læreplan (f.eks. dekk eller maskin): de første, så mange som skal velges.
+    const u = d.utvalg;
+    const valgte = u && u.grunn === 'valg' && u.timer > 0 ? u.koder.slice(0, u.antall ?? 1).map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null })) : [];
+    return [...faste, ...valgte];
   });
   return faste.flatMap(({ kode: k, timer }) => {
     const fag = indeks.fag[k];
@@ -377,15 +430,45 @@ function TilArbeidsplan({ kode, tb, indeks }: { kode: string; tb: Tilbudsdata; i
   );
 }
 
-/** Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. */
-function Tilbudsliste({ nokkel, tittel, koder, indeks, via }: { nokkel: string; tittel: string; koder: readonly string[]; indeks: Fagindeks; via?: string }) {
+/** Kildene som mangler et løp, som tekst: «Står ikke i VIGO og utdanning.no» (avgjørelse 052). */
+function ikkeI(t: T, kilder: readonly Lopkilde[]): string {
+  const navn = kilder.map((k) => t(`opplaeringslop.tilbud.lopkilde.${k}`));
+  const liste = navn.length > 1 ? `${navn.slice(0, -1).join(', ')} ${t('opplaeringslop.tilbud.og')} ${navn.at(-1)}` : (navn[0] ?? '');
+  return t('opplaeringslop.tilbud.ikkeI', { kilder: liste });
+}
+
+/**
+ * Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. Et løp som
+ * Grep, VIGO og utdanning.no ikke er enige om, får en merknad om hvilke kilder som mangler det (avgjørelse 052).
+ */
+function Tilbudsliste({
+  nokkel,
+  tittel,
+  koder,
+  indeks,
+  via,
+  uenig = {},
+}: {
+  nokkel: string;
+  tittel: string;
+  koder: readonly string[];
+  indeks: Fagindeks;
+  via?: string;
+  uenig?: Readonly<Record<string, readonly Lopkilde[]>>;
+}) {
+  const { t } = useTekst();
   if (koder.length === 0) return null;
   return (
     <Rubrikk nokkel={nokkel} tittel={tittel} hoyre={formaterTall(koder.length)} lukket={koder.length > MANGE_TILBUD}>
       <ul class="liste">
         {koder.map((k) => (
           <li key={k}>
-            <Tilbudslenke indeks={indeks} kode={k} {...(via ? { via } : {})} />
+            <Tilbudslenke
+              indeks={indeks}
+              kode={k}
+              {...(via ? { via } : {})}
+              {...(uenig[k] ? { under: <span class="lop-uenig"> · {ikkeI(t, uenig[k] ?? [])}</span> } : {})}
+            />
           </li>
         ))}
       </ul>
@@ -419,7 +502,7 @@ function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; v
         {t('opplaeringslop.tilbud.opphenting.tittel')}
       </h2>
       <p>
-        {t('opplaeringslop.tilbud.opphenting.tekst', { antall: formaterTall(tb.opphenting.til.length) })}{' '}
+        <Begrepstekst tekst={t('opplaeringslop.tilbud.opphenting.tekst', { antall: formaterTall(tb.opphenting.til.length) })} />{' '}
         {tb.opphenting.fag.map((f, i) => (
           <span key={f}>
             {i > 0 && ', '}
@@ -454,7 +537,138 @@ function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; v
   );
 }
 
-function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[] }) {
+/**
+ * Skolene med tilbudet etter utdanning.no: om skolen brukeren har valgt, har det, og lenker til skoleregisteret for
+ * fylket og hele landet (avgjørelse 053).
+ */
+function Skoler({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const register = useSkoler();
+  if (!register || register.skoler.length === 0) return null;
+  const fylke = fylkesnavn(innstillinger.fylke) ? innstillinger.fylke : null;
+  const valgt = valgtSkole(register.skoler, innstillinger.skole?.id);
+  const iFylket = fylke ? antallMedTilbud(register.skoler, kode, fylke) : null;
+  const iLandet = antallMedTilbud(register.skoler, kode, null);
+  const k = kortKode(kode);
+  const fylkenavn = fylkesnavn(fylke) ?? '';
+  const har = valgt?.tilbud.includes(kode) ?? false;
+  return (
+    <Rubrikk nokkel={`lop-${k}-skoler`} tittel={t('opplaeringslop.tilbud.skolerOverskrift')} hoyre={formaterTall(iFylket ?? iLandet)}>
+      {valgt && (
+        <p class={`lop-skolestatus${har ? ' lop-skolestatus-ja' : ''}`}>
+          <Ikon navn={har ? 'hake' : 'info'} class="ikon-liten" />
+          {t(har ? 'opplaeringslop.tilbud.dinSkoleHar' : 'opplaeringslop.tilbud.dinSkoleHarIkke', { skole: valgt.navn })}
+        </p>
+      )}
+      {iLandet === 0 ? (
+        <p>{t('opplaeringslop.tilbud.ingenSkoler')}</p>
+      ) : (
+        <ul class="liste">
+          {fylke && iFylket === 0 && (
+            <li>
+              <p class="dempet">{t('opplaeringslop.tilbud.ingenSkolerFylke', { fylke: fylkenavn })}</p>
+            </li>
+          )}
+          {fylke && iFylket !== null && iFylket > 0 && (
+            <li>
+              <a class="listelenke" href={lenke('/opplaeringslop/skoler', { tilbud: k, fylke })}>
+                <span class="listelenke-tekst">
+                  <span class="listelenke-tittel">
+                    {iFylket === 1 ? t('opplaeringslop.tilbud.skolerFylkeEn', { fylke: fylkenavn }) : t('opplaeringslop.tilbud.skolerFylke', { antall: formaterTall(iFylket), fylke: fylkenavn })}
+                  </span>
+                </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
+              </a>
+            </li>
+          )}
+          <li>
+            <a class="listelenke" href={lenke('/opplaeringslop/skoler', { tilbud: k })}>
+              <span class="listelenke-tekst">
+                <span class="listelenke-tittel">
+                  {iLandet === 1 ? t('opplaeringslop.tilbud.skolerLandetEn') : t('opplaeringslop.tilbud.skolerLandet', { antall: formaterTall(iLandet) })}
+                </span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        </ul>
+      )}
+      <p class="liten dempet">{t('opplaeringslop.tilbud.skolerHjelp')}</p>
+    </Rubrikk>
+  );
+}
+
+/** Yrkene utdanning.no knytter til tilbudet, med den korte teksten om sluttkompetansen (avgjørelse 053). */
+function Yrkene({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const [yrker, settYrker] = useState<Yrker | null>(null);
+  useEffect(() => {
+    lastYrker().then(settYrker, () => undefined);
+  }, []);
+  const u = yrker?.programomrader[kode];
+  if (!u) return null;
+  return (
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-yrker`} tittel={t('opplaeringslop.tilbud.yrkerOverskrift')} hoyre={formaterTall(u.yrker.length)}>
+      {/* Teksten er fra utdanning.no og finnes bare på bokmål. */}
+      {u.tekst && <p lang="nb">{u.tekst}</p>}
+      <ul class="lop-yrker">
+        {u.yrker.map((y) => (
+          <li key={y.sti}>
+            <a class="ekstern-lenke" href={`${UTDANNING}${y.sti}`} target="_blank" rel="noopener noreferrer" lang="nb">
+              {y.tittel}
+              <Ikon navn="ekstern" class="ikon-liten" />
+              <span class="skjult-visuelt"> {t('felles.eksternLenke', { nettsted: 'utdanning.no' })}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a class="ekstern-lenke" href={`${UTDANNING}${u.sti}`} target="_blank" rel="noopener noreferrer">
+          {t('opplaeringslop.tilbud.utdanningsbeskrivelse', { tittel: u.tittel })}
+          <Ikon navn="ekstern" class="ikon-liten" />
+        </a>
+      </p>
+      <p class="liten dempet">{t('opplaeringslop.tilbud.yrkerHjelp')}</p>
+    </Rubrikk>
+  );
+}
+
+/** Opplæringskontorene i fylket brukeren har valgt, eller i hele landet, etter NOR (avgjørelse 053). */
+function Kontorene({ kode }: { kode: string }) {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const [data, settData] = useState<Opplaeringskontorer | null>(null);
+  useEffect(() => {
+    lastOpplaeringskontor().then(settData, () => undefined);
+  }, []);
+  if (!data) return null;
+  const fylke = fylkesnavn(innstillinger.fylke) ? innstillinger.fylke : null;
+  const antall = fylke ? data.kontor.filter((k) => k.godkjentI.includes(fylke)).length : data.kontor.length;
+  return (
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-kontor`} tittel={t('opplaeringslop.tilbud.kontorOverskrift')} hoyre={formaterTall(antall)} lukket>
+      <ul class="liste">
+        <li>
+          <a class="listelenke" href={lenke('/opplaeringslop/opplaeringskontor', fylke ? { fylke } : undefined)}>
+            <span class="listelenke-tekst">
+              <span class="listelenke-tittel">
+                {fylke ? t('opplaeringslop.tilbud.kontorFylke', { antall: formaterTall(antall), fylke: fylkesnavn(fylke) ?? '' }) : t('opplaeringslop.tilbud.kontorLandet', { antall: formaterTall(antall) })}
+              </span>
+            </span>
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
+      <p class="liten dempet">
+        <Begrepstekst tekst={t('opplaeringslop.tilbud.kontorHjelp')} />
+      </p>
+    </Rubrikk>
+  );
+}
+
+const UTDANNING = 'https://utdanning.no';
+
+function Vilbli({ kode, indeks, via, bygger, utdanning }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[]; utdanning: string | null }) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const fylke = fylkesnavn(innstillinger.fylke);
@@ -462,7 +676,7 @@ function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks
   const fordeling = vilbliLenke(kode, indeks, { side: 'p2', via, bygger });
   if (!skoler) return null;
   return (
-    <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={t('opplaeringslop.tilbud.vilbliOverskrift')}>
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={utdanning ? t('opplaeringslop.tilbud.vilbliUtdanningOverskrift') : t('opplaeringslop.tilbud.vilbliOverskrift')}>
       <p>
         <a class="ekstern-lenke" href={skoler} target="_blank" rel="noopener noreferrer">
           {fylke ? t('opplaeringslop.tilbud.vilbliFylke', { fylke }) : t('opplaeringslop.tilbud.vilbli')}
@@ -473,6 +687,14 @@ function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks
         <p>
           <a class="ekstern-lenke" href={fordeling} target="_blank" rel="noopener noreferrer">
             {t('opplaeringslop.tilbud.vilbliFordeling')}
+            <Ikon navn="ekstern" class="ikon-liten" />
+          </a>
+        </p>
+      )}
+      {utdanning && (
+        <p>
+          <a class="ekstern-lenke" href={`${UTDANNING}/utdanning/vgs/${encodeURIComponent(utdanning)}`} target="_blank" rel="noopener noreferrer">
+            {t('opplaeringslop.tilbud.utdanningLenke')}
             <Ikon navn="ekstern" class="ikon-liten" />
           </a>
         </p>
@@ -521,6 +743,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       <Brodsmuler
         ledd={[
           { tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' },
+          { tekst: t('opplaeringslop.lop.tittel'), href: '#/opplaeringslop/lop' },
           { tekst: indeks.utdanningsprogram[program]?.[malform] ?? program, href: `#/opplaeringslop/${program}` },
         ]}
       />
@@ -539,7 +762,9 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           <TilArbeidsplan kode={kode} tb={tb} indeks={indeks} />
         </>
       ) : (
-        <p class="merknad">{po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')}</p>
+        <p class="merknad">
+          <Begrepstekst tekst={po.sted === 'bedrift' ? t('opplaeringslop.tilbud.bedrift') : t('opplaeringslop.tilbud.utenTabell')} />
+        </p>
       )}
 
       {tb.tilpasninger.length > 0 && (
@@ -551,11 +776,11 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         </Rubrikk>
       )}
 
-      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
-      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} uenig={tb.uenig} />
       <Tilbudsliste
         nokkel={`lop-${k}-opphenting-fra`}
         tittel={t('opplaeringslop.tilbud.opphenting.fra', { fag: tb.opphenting.fag.map((f) => indeks.fag[f]?.navn[malform] ?? f).join(', ') })}
@@ -563,8 +788,24 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         indeks={indeks}
       />
       <Opphenting tb={tb} indeks={indeks} via={kode} />
+      {Object.keys(tb.uenig).length > 0 && (
+        <Forklaring tittel={t('opplaeringslop.tilbud.uenigTittel')}>
+          <p>{t('opplaeringslop.tilbud.uenigTekst')}</p>
+        </Forklaring>
+      )}
 
-      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} />
+      {po.sted === 'bedrift' ? (
+        <>
+          <Yrkene kode={kode} />
+          <Kontorene kode={kode} />
+        </>
+      ) : (
+        <>
+          <Skoler kode={kode} />
+          <Yrkene kode={kode} />
+        </>
+      )}
+      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} utdanning={tb.utdanning} />
 
       <p class="liten">
         <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>
@@ -574,6 +815,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           { id: 'udir-grep', punkt: k },
           ...(tb.tabell ? [{ id: 'udir-fag-og-timefordeling', punkt: `Tabell ${tb.tabell.nr}` }] : []),
           ...(tb.fraVigo ? [{ id: 'vigo-kodeverk', punkt: 'Grunnlag for inntak (entry-requirements)' }] : []),
+          po.sted === 'bedrift' ? { id: 'udir-nor' } : { id: 'utdanning-no', punkt: 'Skoler' },
         ]}
       />
     </article>

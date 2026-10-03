@@ -70,6 +70,7 @@ export const nb = {
       laereplanverk: 'Overordnet del',
       lov: 'Regelverk',
       side: 'Side',
+      skole: 'Skole',
     },
   },
   favoritter: {
@@ -152,6 +153,9 @@ export const nb = {
       tittel: 'Kreditering',
       tekst:
         'Appen inneholder data fra Utdanningsdirektoratet og Lovdata, tilgjengeliggjort under Norsk lisens for offentlige data (NLOD) 2.0.',
+      utdanning: 'Yrkene og utdanningsbeskrivelsene i Opplæringstilbud er basert på åpne data fra utdanning.no og er underlagt Norsk lisens for offentlige data (NLOD). Teksten vedlikeholdes på utdanning.no.',
+      ndla: 'Navnene på fagene på NDLA er fra Nasjonal digital læringsarena (NDLA), lisensiert under Creative Commons Navngivelse 4.0 (CC BY 4.0).',
+      ccby: 'Les CC BY 4.0',
       nlod: 'Les NLOD 2.0',
     },
     kilder: {
@@ -318,8 +322,8 @@ export const nb = {
       beskrivelse: 'Verdier, prinsipper, ferdigheter og temaer.',
     },
     opplaeringslop: {
-      navn: 'Opplæringsløp',
-      beskrivelse: 'Fag- og timefordelingen: tilbud og timer.',
+      navn: 'Opplæringstilbud',
+      beskrivelse: 'Utdanningsprogram og løp, skoler og opplæringskontorer.',
     },
     begreper: {
       navn: 'Begreper',

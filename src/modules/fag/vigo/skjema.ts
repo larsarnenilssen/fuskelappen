@@ -78,3 +78,18 @@ export type Fagrelasjoner = z.infer<typeof fagrelasjonerSkjema>;
 export type Merknad = z.infer<typeof merknadSkjema>;
 export type Merknader = z.infer<typeof merknaderSkjema>;
 export type Merknadsliste = 'fagmerknader' | 'vitnemalsmerknader' | 'sokerstatuser';
+
+/**
+ * Skolenummeret i VIGO og organisasjonsnummeret i skoleregisteret (NSR) for skolene, i data/vigo/skolenummer.json
+ * (avgjørelse 053). Kobler skolene på utdanning.no (skolenummer) til skolen brukeren har valgt (organisasjonsnummer).
+ * Bare de to numrene lagres; VIGO har også navn og kontaktinformasjon til skoleledere, som ikke tas med.
+ */
+export const skolenummerSkjema = z
+  .object({
+    kilde: z.literal('vigo-kodeverk'),
+    hentet: z.string(),
+    orgnr: z.record(z.string().regex(/^\d{5}$/), z.string().regex(/^\d{9}$/)),
+  })
+  .strict();
+
+export type Skolenummer = z.infer<typeof skolenummerSkjema>;

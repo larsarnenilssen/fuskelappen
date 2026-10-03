@@ -3,6 +3,9 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import { hentTekst, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
 import {
   lesLagret,
+  lesValg,
+  skrivValg,
+  type Valg,
   skrivLagret,
   slettLagret,
   standard,
@@ -63,6 +66,15 @@ class Tilstand {
 
   oppdaterInnstillinger(endring: Partial<Innstillinger>): void {
     this.oppdater((d) => ({ ...d, innstillinger: { ...d.innstillinger, ...endring } }));
+  }
+
+  /** Et lite valg i visningen, lagret for seg (lesValg i lagringsmodulen). */
+  lesValg(valg: Valg): string | null {
+    return lesValg(this.lager, valg);
+  }
+
+  skrivValg(valg: Valg, verdi: string): void {
+    skrivValg(this.lager, valg, verdi);
   }
 
   slettAlt(): void {

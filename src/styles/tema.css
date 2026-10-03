@@ -21,6 +21,10 @@
   --farge-topplinje-tekst: var(--p-hvit);
   --farge-ok: var(--p-groenn-700);
   --farge-ok-flate: var(--p-groenn-100);
+  /* Tilbud ved skolen brukeren har valgt (avgjørelse 053). */
+  --farge-skole: var(--p-turkis-700);
+  --farge-skole-flate: var(--p-turkis-100);
+  --farge-skole-knapp: var(--p-turkis-200);
   --farge-advarsel: var(--p-rav-700);
   --farge-advarsel-flate: var(--p-rav-100);
   --farge-feil: var(--p-roed-700);
@@ -68,6 +72,9 @@
   --farge-topplinje-tekst: var(--p-maane);
   --farge-ok: var(--p-groenn-300);
   --farge-ok-flate: var(--p-groenn-900);
+  --farge-skole: var(--p-turkis-300);
+  --farge-skole-flate: var(--p-turkis-900);
+  --farge-skole-knapp: var(--p-turkis-800);
   --farge-advarsel: var(--p-rav-300);
   --farge-advarsel-flate: var(--p-rav-900);
   --farge-feil: var(--p-roed-300);
@@ -116,6 +123,9 @@
     --farge-topplinje-tekst: var(--p-maane);
     --farge-ok: var(--p-groenn-300);
     --farge-ok-flate: var(--p-groenn-900);
+    --farge-skole: var(--p-turkis-300);
+    --farge-skole-flate: var(--p-turkis-900);
+    --farge-skole-knapp: var(--p-turkis-800);
     --farge-advarsel: var(--p-rav-300);
     --farge-advarsel-flate: var(--p-rav-900);
     --farge-feil: var(--p-roed-300);
@@ -168,6 +178,9 @@
     --farge-topplinje-tekst: var(--p-hvit);
     --farge-ok: var(--p-groenn-700);
     --farge-ok-flate: var(--p-groenn-100);
+    --farge-skole: var(--p-turkis-700);
+    --farge-skole-flate: var(--p-turkis-100);
+    --farge-skole-knapp: var(--p-turkis-200);
     --farge-advarsel: var(--p-rav-700);
     --farge-advarsel-flate: var(--p-rav-100);
     --farge-feil: var(--p-roed-700);

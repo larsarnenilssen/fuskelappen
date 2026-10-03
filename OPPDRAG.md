@@ -506,6 +506,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - 0.29.0: begrepene karakterpoeng, privatist og tilleggspoeng, lenker til begrepsbanken i brødtekst (avgjørelse 050), status på søkerønsker, Vg4 påbygging og yrkesfaglig opphenting fra VIGO og Grep (avgjørelse 051). Kontrollpunktet for fase 5 er utsatt etter ønske fra eier.
 - Spørsmålene til vestlandfylke.no (inntaksområdepoeng og klagenemnd) tas med til senere faser til sidene svarer.
 - Arbeidsordren for fase 6 står i `docs/arbeidsordrer/fase-6.md`.
+- 0.30.0: utdanning.no som kontrollkilde for løpene, med merking der Grep, VIGO og utdanning.no er uenige (avgjørelse 052). Modulen Opplæringsløp heter nå **Opplæringstilbud**, med Opplæringsløp som underside, oppslag over skolene og tilbudene deres fra utdanning.no, «Min skole» / «Alle», yrkene for lærefagene, oppslag over opplæringskontorene fra NOR, lenker fra fagarket til NDLA og seks nye begreper (avgjørelse 053).
 
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.
 
@@ -530,6 +531,7 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Aktivitetsplikten trinn for trinn: plikten til å følge med, gripe inn, varsle, undersøke og sette inn tiltak, skjerpet aktivitetsplikt, aktivitetsplan og dokumentasjon, og elevens mulighet til å melde saken til statsforvalteren.
 - VLFKs skulereglar: reaksjoner og saksbehandling (fylkesinnhold).
 - Plass til skolens egne regler som `supplerer` (skoleinnhold).
+- Resultater fra Elevundersøkelsen (Udirs statistikkbank, åpent API, NLOD) for valgt skole og fylke, sammenlignet med landet: hentes automatisk og kontrolleres som de andre dataene (avgjørelse 049 og 053). Hvilke spørsmål og indekser som tas med, og hvordan små grupper og skjulte tall vises, legges fram for eier før det bygges. Ingen tall om enkeltelever.
 
 **Kontrollpunkt:** Eier kontrollerer innholdet.
 
@@ -572,6 +574,10 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 | vlfk.no: relevante sider om inntak, tilrettelegging og språk | fylke | side | 4, 5 |
 | Nasjonalt skoleregister (Udir) | – | data | innstillinger |
 | VIGO Kodeverksbase (Novari IKS): erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader. Se `docs/VIGO-KODEVERK.md`. | nasjonal | data | 2, 6 |
+| utdanning.no (HK-dir): løpene, skolene og tilbudene deres, yrkene (avgjørelse 052 og 053) | nasjonal | data | 2, 5 |
+| NOR (Udir, NLOD): opplæringskontorene | nasjonal | data | 5, 6 |
+| NDLA (CC BY 4.0): fagene per fagkode | nasjonal | data | 2 |
+| Elevundersøkelsen i Udirs statistikkbank (NLOD) | skole, fylke | data | 7 |
 
 Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger, opplæringsmateriell for Visma InSchool) brukes som bakgrunn og kan lenkes til, men kopieres ikke inn. Materiale basert på opplæringsloven fra 1998 brukes bare når det er kontrollert mot gjeldende lov, som trådte i kraft 1.8.2024.
 
@@ -595,7 +601,7 @@ Sekundærkilder (partenes tolkninger, B-rundskriv, organisasjonenes veiledninger
 | InSchool-data for årsramme og årstimetall, tabell over programnavn | fase 2 | Fase 2 uten InSchool-data (eier 30.09.2026). Tabellen over programnavn er godkjent (eier 01.10.2026). |
 | Fordelingstabellen i Arbeidsplan går utenfor skjermen ved skriftstørrelse på 150 % eller mer (kjent begrensning, README) | senere | Venter, etter eiers ønske |
 | Poengberegning ved inntak i Vestland | fase 5 | Venter |
-| Oversikt over tilbudene ved hver skole | fase 2 | Utgår til en åpen kilde finnes (eier 01.10.2026). Lenker til Vilbli brukes. |
+| Oversikt over tilbudene ved hver skole | fase 2 | Avklart. Skolene og tilbudene deres hentes fra utdanning.no (eier 03.10.2026, avgjørelse 053). |
 
 ## 8. Ferdig når
 

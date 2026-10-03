@@ -18,6 +18,8 @@ export function fagITilbud(tb: Tilbudsdata, kode: string, indeks: Pick<Fagindeks
   const timer = indeks.fag[kode]?.timer ?? null;
   for (const d of tb.deler) {
     if (d.type === 'fag') {
+      // Et programfag som også kan erstatte et fellesfag (f.eks. R1 i stedet for 2P), står med rollen som programfag.
+      if (d.erstatning?.includes(kode)) continue;
       if (d.koder.includes(kode)) return { kategori: d.kategori, timer: d.kategori === 'fellesfag' ? d.timer : timer, valg: d.kategori === 'fellesfag' && d.koder.length > 1 };
       if (d.utvalg?.koder.includes(kode)) return { kategori: d.kategori, timer, valg: true };
     } else if (d.kandidater.includes(kode)) {
@@ -25,6 +27,8 @@ export function fagITilbud(tb: Tilbudsdata, kode: string, indeks: Pick<Fagindeks
     }
   }
   const fagdeler = tb.deler.filter((d): d is Extract<Tilbudsdel, { type: 'fag' }> => d.type === 'fag');
+  const erstatter = fagdeler.find((d) => d.erstatning?.includes(kode));
+  if (erstatter) return { kategori: erstatter.kategori, timer, valg: true };
   if (fagdeler.some((d) => d.vurdering.includes(kode))) return { kategori: 'vurdering', timer: null, valg: false };
   if (fagdeler.some((d) => d.alternativer.includes(kode))) return { kategori: 'alternativ', timer, valg: false };
   return null;

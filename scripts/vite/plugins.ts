@@ -6,7 +6,9 @@ import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
-import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesTilbudsindeks } from '../data/les.ts';
+import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesLopskilder, lesSkoler, lesSkolenummer, lesTilbudsindeks, lesUtdanningslop } from '../data/les.ts';
+import { kobleSkoler } from '../../src/modules/opplaeringslop/skoler.ts';
+import { uenigheter } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -145,14 +147,38 @@ export function tilbudPlugin(rot: string): Plugin {
       const indeks = lesTilbudsindeks(rot);
       const fordeling = lesFordeling(rot);
       const fagBygger = lesFagrelasjoner(rot)?.byggerPaa ?? {};
+      const kilder = lesLopskilder(rot);
+      const utdanning = lesUtdanningslop(rot) ?? { noder: {} };
       const tilbud: Record<string, unknown> = {};
       for (const kode of Object.keys(indeks.programomrader).sort()) {
         // Programområdet står i fagindeksen, som appen har fra før.
-        const resten: Record<string, unknown> = { ...byggTilbud(kode, indeks, fordeling, fagBygger) };
+        const t = byggTilbud(kode, indeks, fordeling, fagBygger);
+        // Løp der Grep, VIGO og utdanning.no er uenige, og koden på utdanning.no til lenken (avgjørelse 052).
+        const resten: Record<string, unknown> = { ...t, uenig: uenigheter(t, kilder), utdanning: kilder.utdanning && kode in utdanning.noder ? kode : null };
         delete resten.programomrade;
         tilbud[kode] = resten;
       }
       const data = { skolear: fordeling?.skolear ?? null, struktur: byggStruktur(indeks), tilbud };
+      return `export default ${JSON.stringify(data)};`;
+    },
+  };
+}
+
+/**
+ * Skolene og tilbudene deres fra utdanning.no, med organisasjonsnummeret fra VIGO, så appen kan merke tilbudene ved
+ * skolen brukeren har valgt (avgjørelse 053). Koblingen lages når appen bygges, så appen laster én fil.
+ */
+export function skolerPlugin(rot: string): Plugin {
+  const id = 'virtual:skoler';
+  return {
+    name: 'fuskelappen:skoler',
+    resolveId(kilde) {
+      return kilde === id ? '\0' + id : null;
+    },
+    load(lastId) {
+      if (lastId !== '\0' + id) return null;
+      const skoler = lesSkoler(rot);
+      const data = { hentet: skoler?.hentet ?? null, skoler: kobleSkoler(skoler?.skoler ?? [], lesSkolenummer(rot)?.orgnr ?? {}) };
       return `export default ${JSON.stringify(data)};`;
     },
   };

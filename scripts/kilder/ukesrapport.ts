@@ -33,6 +33,8 @@ export interface Ukesgrunnlag {
   udir?: { endringer: string[]; nyVersjon: string | null } | null;
   /** Nye fag uten kobling til årsramme og nye avvik i koblingen (.generert/kobling-endringer.json). */
   kobling?: { nyeUkoblede: string[]; nyeAvvik: string[] } | null;
+  /** Uenigheter mellom Grep, VIGO og utdanning.no om løpene, nye og borte siden sist (.generert/lopsamsvar-endringer.json). */
+  lopsamsvar?: { nye: string[]; borte: string[] } | null;
   /** Endrede deler i overordnet del fra udir.no (.generert/overordnet-endringer.json). */
   overordnet?: { endringer: string[] } | null;
   /** Endrede paragrafer i lov- og forskriftsteksten fra Lovdata (.generert/lovdata-endringer.json, avgjørelse 039). */
@@ -288,6 +290,24 @@ export function lagUkesrapport(g: Ukesgrunnlag): Ukesrapport {
       );
     }
     deler.push(['## Kobling fra fagkode til årsramme', '', ...linjer, '', `Hele rapporten: ${lenke}.`, '']);
+  }
+
+  // Løpene (avgjørelse 052): appen merker løp som Grep, VIGO og utdanning.no ikke er enige om. Nye uenigheter er
+  // punkter å se på; uenigheter som er borte, står til orientering.
+  const lop = g.lopsamsvar;
+  if (lop && (lop.nye.length > 0 || lop.borte.length > 0)) {
+    const lenke = `[docs/TILBUDSSTRUKTUR.md](https://github.com/${g.repo}/blob/main/docs/TILBUDSSTRUKTUR.md)`;
+    const linjer: string[] = [];
+    for (const u of lop.nye.slice(0, MAKS_DETALJER)) {
+      punkter += 1;
+      linjer.push(`- [ ] Ny uenighet om løpet ${u} <!-- lop:${createHash('sha1').update(u).digest('hex').slice(0, 12)} -->`);
+    }
+    if (lop.nye.length > MAKS_DETALJER) linjer.push(`- … og ${lop.nye.length - MAKS_DETALJER} til.`);
+    if (lop.borte.length > 0) {
+      orientering += 1;
+      linjer.push(`- ${lop.borte.length === 1 ? 'Én uenighet er borte' : `${lop.borte.length} uenigheter er borte`}, fordi kildene nå er enige:`, ...lop.borte.slice(0, MAKS_DETALJER).map((l) => `  - ${l}`));
+    }
+    deler.push(['## Løpene i Grep, VIGO og utdanning.no', '', 'Appen merker løp kildene ikke er enige om (avgjørelse 052).', '', ...linjer, '', `Hele oversikten: ${lenke}.`, '']);
   }
 
   // Overordnet del (avgjørelse 037): teksten vises uendret i appen og oppdateres hver uke. Endringer til orientering.

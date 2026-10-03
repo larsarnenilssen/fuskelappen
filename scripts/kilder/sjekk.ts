@@ -134,11 +134,56 @@ function sjekkVigo(): Sjekkresultat {
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra VIGO Kodeverksbase feilet. Se loggen for steget «Hent Grep og fag- og timefordeling».' };
   const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { forste: boolean; endringer: string[] };
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
-  const filer = ['fagrelasjoner', 'merknader'].map((f) => join(rot, 'data/vigo', `${f}.json`)).filter(existsSync);
+  const filer = ['fagrelasjoner', 'merknader', 'skolenummer'].map((f) => join(rot, 'data/vigo', `${f}.json`)).filter(existsSync);
   const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8').replace(/"hentet": "[^"]*"/, '')).join('\n')) : null;
   rapport.push('### VIGO Kodeverksbase', e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`, ...e.endringer.slice(0, 60).map((l) => `- ${l}`), '');
   if (tester === 'feilet' && e.endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Dataene fra VIGO Kodeverksbase er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).` };
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i VIGO Kodeverksbase.` : null };
+}
+
+/** Endringene fra en henting (.generert/<navn>-endringer.json), del for del. */
+interface Delendring {
+  endret?: boolean;
+  forste: boolean;
+  endringer: string[];
+  feil?: string | null;
+}
+
+/**
+ * En datakilde som hentes i samme steg som Grep og testes med de nye dataene (utdanning.no, NDLA og NOR, avgjørelse
+ * 052 og 053). Stemmer testene, tas endringene inn automatisk og står til orientering i kontrollsaken. Feiler
+ * hentingen av en del, blir forrige versjon stående.
+ */
+function sjekkHentet(tittel: string, endringsfil: string, deler: { navn: string; fil: string; hent: (e: Record<string, unknown>) => Delendring | undefined }[]): Sjekkresultat {
+  const sti = join(generert, endringsfil);
+  if (!existsSync(sti)) return { status: 'feilet', fingeravtrykk: null, melding: `Hentingen fra ${tittel} kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling, overordnet del og lovtekst».` };
+  const e = JSON.parse(readFileSync(sti, 'utf8')) as Record<string, unknown>;
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const resultater = deler.map((d) => ({ ...d, r: d.hent(e) }));
+  const filer = resultater.map((d) => join(rot, d.fil)).filter((f) => existsSync(f));
+  const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8').replace(/"hentet": "[^"]*"/, '')).join('\n')) : null;
+  rapport.push(`### ${tittel}`);
+  for (const d of resultater) {
+    const r = d.r;
+    const linje = !r ? 'ikke hentet.' : r.feil ? r.feil : r.forste ? 'første henting.' : r.endringer.length === 0 ? 'ingen endringer.' : `${r.endringer.length} endringer:`;
+    rapport.push(`- ${d.navn}: ${linje}`, ...(r && !r.feil ? r.endringer.slice(0, 30).map((l) => `  - ${l}`) : []));
+  }
+  rapport.push('');
+  const feil = resultater.find((d) => !d.r || d.r.feil);
+  const antall = resultater.reduce((n, d) => n + (d.r && !d.r.feil ? d.r.endringer.length : 0), 0);
+  if (feil) return { status: 'feilet', fingeravtrykk, melding: `${feil.navn}: ${feil.r?.feil ?? 'ikke hentet'}. Appen viser forrige henting.` };
+  if (tester === 'feilet' && antall > 0) return { status: 'endret', fingeravtrykk, melding: `${tittel} er endret slik at testene feiler, og endringene er ikke tatt inn (${antall} endringer).` };
+  return { status: 'ok', fingeravtrykk, melding: antall > 0 ? `Tatt inn automatisk: ${antall} endringer fra ${tittel}.` : null };
+}
+
+const del = (nokkel: string | null) => (e: Record<string, unknown>) => (nokkel ? (e[nokkel] as Delendring | undefined) : (e as unknown as Delendring));
+
+function sjekkUtdanning(kilde: Kilde): Sjekkresultat {
+  if (kilde.id === 'utdanning-no-beskrivelser') return sjekkHentet('utdanning.no (beskrivelser)', 'utdanning-endringer.json', [{ navn: 'Yrkene', fil: 'data/utdanning/yrker.json', hent: del('yrker') }]);
+  return sjekkHentet('utdanning.no', 'utdanning-endringer.json', [
+    { navn: 'Løpene', fil: 'data/utdanning/lop.json', hent: del(null) },
+    { navn: 'Skolene', fil: 'data/utdanning/skoler.json', hent: del('skoler') },
+  ]);
 }
 
 /** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
@@ -197,6 +242,12 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkLovtekst(kilde);
       case 'vigo-kodeverk':
         return sjekkVigo();
+      case 'utdanning-no':
+        return sjekkUtdanning(kilde);
+      case 'ndla':
+        return sjekkHentet('NDLA', 'ndla-endringer.json', [{ navn: 'Fagene', fil: 'data/ndla/fag.json', hent: del(null) }]);
+      case 'nor':
+        return sjekkHentet('NOR', 'nor-endringer.json', [{ navn: 'Opplæringskontorene', fil: 'data/udir/opplaeringskontor.json', hent: del(null) }]);
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };

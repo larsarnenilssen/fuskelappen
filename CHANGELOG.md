@@ -4,6 +4,31 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.30.0] – 2026-10-03
+
+### Lagt til
+
+- **Opplæringstilbud:** Modulen Opplæringsløp heter nå Opplæringstilbud. Landingssiden har to likestilte deler med kort: «Utdanningsprogram og løp» (Opplæringsløp) og «Skoler og opplæringskontorer», med antall i fylket ditt. Søket finner både tilbud og skoler.
+- **Opplæringsløp** er en egen side under Opplæringstilbud, med «Min skole» / «Alle» og utdanningsprogrammene.
+- **Min skole.** Har du valgt skole under Innstillinger, viser Opplæringsløp først utdanningsprogrammene og løpene ved skolen. Bryteren «Min skole» / «Alle» bytter visning, og valget huskes. Tilbudene ved skolen har egen farge og merket «✓ Din skole», og knappen til neste trinn sier hvor mange av tilbudene videre som er ved skolen. Uten valgt skole står en merknad om å velge skole.
+- **Skoler og tilbud.** Et søkbart oppslag over skolene i videregående og tilbudene de har, etter utdanning.no, med filter for fylke og utdanningsprogram og søk på tilbud («Finn skolene som har et tilbud»). Hvert tilbud lenker til skolene som har det, i fylket du har valgt og i hele landet.
+  - Hver skole er et eget kort. En åpen skole har egen flate, og navnet blir stående øverst mens tilbudene rulles forbi.
+  - Tilbudene ved skolen står per utdanningsprogram som løp, med Vg2 under Vg1 og Vg3 under Vg2.
+  - Har du søkt på et tilbud, viser skolen bare løpet til det tilbudet, og tilbudet er merket. Har du valgt et utdanningsprogram, viser skolen bare det programmet. «Vis alle tilbudene ved skolen» gir resten.
+- **Opplæringskontorer.** Oppslag over opplæringskontorene som er godkjent i fylket, fra registeret til Udir (NOR), med søk, lenke til nettsiden og til kontoret på utdanning.no, og fylkene kontoret er godkjent i. Oppslaget viser fylket du har valgt, og kan utvides til hele landet med ett trykk. Lærefagene lenker dit.
+- **Yrker.** Lærefagene viser yrkene utdanning.no knytter til faget, med lenker.
+- **Lenke til utdanning.no** fra hvert tilbud utdanning.no har en side for.
+- **Løp kildene ikke er enige om, er merket.** Står et løp i Grep, men ikke i VIGO eller på utdanning.no (eller omvendt), står det ved løpet, med en forklaring.
+- **Seks nye begreper:** opplæringskontor, lærebedrift, lærling, kontrakt om opplæring, generell studiekompetanse og yrkesfaglig opphenting.
+- **Søk: Skolene kan søkes** fra forsiden og søkesiden.
+- **Fag: Faget på NDLA.** Fagarket lenker til faget på NDLA når NDLA har det.
+
+### Rettet
+
+- **Matematikk på Vg2 studieforberedende:** Eleven velger 2P, R1 eller S1 (Udir-1, punkt 3.3.1.4). Tilbudene viste bare 2P. Nå står de tre som «velg én», med en merknad om at R1 og S1 er programfag og krever et ekstra programfag.
+- **Matematikk på Vg1 yrkesfag:** En merknad sier at eleven kan velge det studieforberedende tilbudet (1P eller 1T) i stedet, med et annet timetall (Udir-1, punkt 3.5).
+- **Regn ut i Arbeidsplan:** Fag der eleven velger mellom flere (f.eks. 1P eller 1T, 2P, R1 eller S1, et fremmedspråk, eller dekk eller maskin), ble ikke tatt med. Nå legges det første valget inn, på alle trinn.
+
 ## [0.29.0] – 2026-10-03
 
 ### Lagt til

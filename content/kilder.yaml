@@ -328,6 +328,76 @@ kilder:
       brukes. Stemmer testene med de nye dataene, tas de inn automatisk. Oversikt over tabellene og mulig bruk i
       docs/VIGO-KODEVERK.md.
 
+  - id: utdanning-no
+    navn: utdanning.no – løpene i videregående og skolene med tilbudene sine
+    kortnavn: utdanning.no
+    utgiver: Direktoratet for høyere utdanning og kompetanse (HK-dir)
+    url: https://utdanning.no/utdanning/vgs
+    type: data
+    niva: nasjonal
+    lisens: Ikke oppgitt. API-et er «åpent api for interne tjenester på utdanning.no», ikke versjonert og kan endres uten forvarsel.
+    sjekkmetode: utdanning-no
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [2, 5]
+    merknad: >-
+      Hentes hver uke med npm run hent:utdanning til data/utdanning/ (avgjørelse 052 og 053), fra
+      https://v3.api.utdanning.no/vgs/lop og /vgs/skole. Løpene brukes bare til kontroll mot Grep og VIGO (merking av
+      løp kildene ikke er enige om) og til lenker til utdanning.no. Skolene og programområdene de tilbyr, vises i
+      Opplæringsløp etter beskjed fra eier 03.10.2026.
+
+  - id: utdanning-no-beskrivelser
+    navn: Utdanningsbeskrivelser og yrkesbeskrivelser fra utdanning.no
+    kortnavn: utdanning.no (beskrivelser)
+    utgiver: Direktoratet for høyere utdanning og kompetanse (HK-dir)
+    url: https://data.norge.no/datasets?q=utdanning.no
+    type: data
+    niva: nasjonal
+    lisens: NLOD
+    sjekkmetode: utdanning-no
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Yrkene og den korte teksten om sluttkompetansen for lærefagene og andre programområder som gir
+      yrkeskompetanse. Hentes hver uke med npm run hent:utdanning til data/utdanning/yrker.json (avgjørelse 053),
+      fra https://v3.api.utdanning.no/vgs/programomrade_info. Beskrivelsene er åpne data (NLOD) og krediteres under
+      «Om»: «… er basert på åpne data fra utdanning.no og er underlagt Norsk lisens for offentlige data (NLOD).
+      Teksten vedlikeholdes på utdanning.no.»
+
+  - id: udir-nor
+    navn: Nasjonalt organisasjonsregister for fag- og yrkesopplæring (NOR) – opplæringskontorene
+    kortnavn: NOR
+    utgiver: Utdanningsdirektoratet
+    url: https://data-nor.udir.no/swagger/index.html
+    type: data
+    niva: nasjonal
+    lisens: NLOD
+    sjekkmetode: nor
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Hentes hver uke med npm run hent:nor til data/udir/opplaeringskontor.json (avgjørelse 053), fra
+      https://data-nor.udir.no/v4. Aktive opplæringskontorer med kommune, nettside, antall lærlinger og fylkene de er
+      godkjent i. NOR sier ikke hvilke lærefag et kontor har.
+
+  - id: ndla
+    navn: Nasjonal digital læringsarena (NDLA) – fagene
+    kortnavn: NDLA
+    utgiver: Nasjonal digital læringsarena (fylkeskommunene)
+    url: https://ndla.no/
+    type: data
+    niva: nasjonal
+    lisens: CC BY 4.0
+    sjekkmetode: ndla
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [2]
+    merknad: >-
+      Hentes hver uke med npm run hent:ndla til data/ndla/fag.json (avgjørelse 053), fra taksonomien på
+      https://api.ndla.no/taxonomy/v1/nodes. Fagene på NDLA som oppgir en fagkode i Grep. Fagarket lenker til faget.
+
   - id: udir-lk20
     navn: Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no
     utgiver: Utdanningsdirektoratet

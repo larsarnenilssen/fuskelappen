@@ -48,6 +48,13 @@ export default function Om() {
             {t('om.kreditering.nlod')}
           </a>
         </p>
+        <p>{t('om.kreditering.utdanning')}</p>
+        <p>
+          {t('om.kreditering.ndla')}{' '}
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.no" target="_blank" rel="noopener noreferrer">
+            {t('om.kreditering.ccby')}
+          </a>
+        </p>
       </section>
 
       <Forklaring tittel={t('om.teknisk.tittel')}>

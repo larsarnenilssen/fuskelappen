@@ -100,8 +100,32 @@ export function skrivLagret(lager: Lager | null, data: Lagret): boolean {
   }
 }
 
+/**
+ * Små valg i visningen som huskes på enheten, under egne nøkler, så hovedlagringen og skjemaversjonen ikke endres
+ * (f.eks. «Min skole» eller «Alle» i Opplæringsløp, avgjørelse 053). Slettes med resten ved «Slett alt».
+ */
+export const VALGNOKLER = { lopvisning: `${LAGRINGSNOKKEL}-lopvisning` } as const;
+export type Valg = keyof typeof VALGNOKLER;
+
+export function lesValg(lager: Lager | null, valg: Valg): string | null {
+  try {
+    return lager?.getItem(VALGNOKLER[valg]) ?? null;
+  } catch {
+    return null;
+  }
+}
+
+export function skrivValg(lager: Lager | null, valg: Valg, verdi: string): void {
+  try {
+    lager?.setItem(VALGNOKLER[valg], verdi);
+  } catch {
+    // Valget gjelder da bare til siden lastes på nytt.
+  }
+}
+
 export function slettLagret(lager: Lager | null): void {
   try {
+    for (const n of Object.values(VALGNOKLER)) lager?.removeItem(n);
     lager?.removeItem(LAGRINGSNOKKEL);
   } catch {
     // Ingenting å gjøre; data i minnet nullstilles av kalleren.

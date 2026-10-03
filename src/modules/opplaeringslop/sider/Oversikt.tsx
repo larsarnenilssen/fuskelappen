@@ -1,46 +1,131 @@
-// Utdanningsprogrammene, gruppert i studieforberedende, yrkesfaglige og påbygging, med søk etter program og tilbud
-// (eier 02.10.2026). Hvert program fører til løpet. Gruppene er lukket fra start.
-import { useState } from 'preact/hooks';
-import { useTekst } from '../../../app/tilstand.ts';
+// Landingssiden for Opplæringstilbud (eier 03.10.2026): søk etter tilbud og skoler, og to likestilte deler med kort,
+// «Utdanningsprogram og løp» (undersiden Opplæringsløp) og «Skoler og opplæringskontorer» (avgjørelse 053).
+import { useEffect, useState } from 'preact/hooks';
+import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { lenke } from '../../../app/ruter.ts';
+import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
+import { lastOpplaeringskontor } from '../../../data/udir.ts';
+import type { Opplaeringskontorer } from '../nor/skjema.ts';
+import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import type { Fagindeks } from '../../fag/skjema.ts';
-import { erVariant, type Programgruppe } from '../../fag/tilbud/modell.ts';
-import { kortKode } from '../data.ts';
-import { Lasting, Rubrikk, Tilbudslenke, useTilbudsdata } from './felles.tsx';
+import { sokTilbud } from '../sok.ts';
+import { Lasting, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
+import { tilbudPerProgram } from './Lop.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
-const GRUPPER: readonly Programgruppe[] = ['studieforberedende', 'yrkesfaglig', 'pabygging'];
 const MAKS_TREFF = 40;
 
-/** Tilbudene som passer søket: navn eller kode. Tilbud i skole først, så lærefag, og varianter for særskilte skoler sist. */
-function sokTilbud(indeks: Fagindeks, sok: string, malform: 'nb' | 'nn'): string[] {
-  const ord = sok.toLowerCase().split(/\s+/).filter(Boolean);
-  const rang = (k: string) => (erVariant(k) ? 2 : indeks.programomrader[k]?.sted === 'bedrift' ? 1 : 0);
-  return Object.entries(indeks.programomrader)
-    .filter(([k, po]) => {
-      const tekst = `${po.navn[malform]} ${po.navn.nb} ${kortKode(k)} ${po.trinn}`.toLowerCase();
-      return ord.every((o) => tekst.includes(o));
-    })
-    .map(([k]) => k)
-    .sort((a, b) => rang(a) - rang(b) || (indeks.programomrader[a]?.trinn ?? '').localeCompare(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
+
+/**
+ * Den andre delen av modulen: skoleoppslaget og opplæringskontorene, som kort med det viktigste tallet, på samme måte
+ * som innngangene på landingssiden for Inntak (eier 03.10.2026).
+ */
+function Innganger() {
+  const { t } = useTekst();
+  const { innstillinger } = useTilstand();
+  const register = useSkoler();
+  const [kontor, settKontor] = useState<Opplaeringskontorer | null>(null);
+  useEffect(() => {
+    lastOpplaeringskontor().then(settKontor, () => undefined);
+  }, []);
+  const fylke = fylkesnavn(innstillinger.fylke) ? innstillinger.fylke : null;
+  const iFylket = (liste: readonly { fylke: string }[]) => (fylke ? liste.filter((x) => x.fylke === fylke).length : liste.length);
+  const kontorer = kontor ? (fylke ? kontor.kontor.filter((k) => k.godkjentI.includes(fylke)).length : kontor.kontor.length) : null;
+  const sted = fylke ? (fylkesnavn(fylke) ?? '') : null;
+  return (
+    <section class="lop-del" aria-labelledby="lop-del-skoler">
+      <h2 class="liten-overskrift" id="lop-del-skoler">
+        {t('opplaeringslop.registre')}
+      </h2>
+      <div class="lop-innganger">
+        <a class="frist-inngang" href="#/opplaeringslop/skoler">
+          <span class="frist-inngang-tittel">
+            <Ikon navn="skole" />
+            {t('opplaeringslop.skoler.tittel')}
+          </span>
+          <span class="frist-inngang-neste">
+            {register && <span class="frist-inngang-tid">{sted ? t('opplaeringslop.inngang.skolerFylke', { antall: formaterTall(iFylket(register.skoler)), fylke: sted }) : t('opplaeringslop.inngang.skoler', { antall: formaterTall(register.skoler.length) })}</span>}
+            <span>{t('opplaeringslop.inngang.skolerTekst')}</span>
+          </span>
+          <Ikon navn="hoyre" class="frist-inngang-pil" />
+        </a>
+        <a class="frist-inngang" href="#/opplaeringslop/opplaeringskontor">
+          <span class="frist-inngang-tittel">
+            <Ikon navn="kontor" />
+            {t('opplaeringslop.kontor.tittel')}
+          </span>
+          <span class="frist-inngang-neste">
+            {kontorer !== null && <span class="frist-inngang-tid">{sted ? t('opplaeringslop.tilbud.kontorFylke', { antall: formaterTall(kontorer), fylke: sted }) : t('opplaeringslop.tilbud.kontorLandet', { antall: formaterTall(kontorer) })}</span>}
+            <span>{t('opplaeringslop.inngang.kontorTekst')}</span>
+          </span>
+          <Ikon navn="hoyre" class="frist-inngang-pil" />
+        </a>
+      </div>
+    </section>
+  );
 }
+
+/** Skolene som passer søket på landingssiden: navn eller sted (eier 03.10.2026). */
+function Skoletreff({ sok, treff }: { sok: string; treff: readonly Skoleoppforing[] }) {
+  const { t } = useTekst();
+  if (treff.length === 0) return null;
+  return (
+    <section class="lop-sok-skoler">
+      <h2 class="liten-overskrift">{t('opplaeringslop.oversikt.skoler', { antall: formaterTall(treff.length) })}</h2>
+      <ul class="liste">
+        {treff.slice(0, MAKS_SKOLER).map((s) => (
+          <li key={s.nr ?? s.navn}>
+            <a class="listelenke" href={lenke('/opplaeringslop/skoler', s.nr ? { fylke: 'alle', skole: s.nr } : { fylke: 'alle', q: s.navn })}>
+              <span class="listelenke-tekst">
+                <span class="listelenke-tittel">{s.navn}</span>
+                <span class="listelenke-under">{[s.sted, fylkesnavn(s.fylke)].filter(Boolean).join(' · ')}</span>
+              </span>
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        ))}
+      </ul>
+      {treff.length > MAKS_SKOLER && (
+        <p class="liten">
+          <a href={lenke('/opplaeringslop/skoler', { fylke: 'alle', q: sok })}>{t('opplaeringslop.oversikt.alleSkoler', { antall: formaterTall(treff.length) })}</a>
+        </p>
+      )}
+    </section>
+  );
+}
+
+const MAKS_SKOLER = 5;
 
 export default function Oversikt() {
   const { t, malform } = useTekst();
   const [data, provIgjen] = useTilbudsdata();
   const [sok, settSok] = useState('');
   const aktivt = sok.trim().length >= 2;
-  const treff = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
+  const visning = useSkolevisning();
+  // Søketreff ved skolen brukeren har valgt, står først.
+  const sokt = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
+  const vedSkolen = new Set(visning.skole?.tilbud ?? []);
+  const treff = [...sokt.filter((k) => vedSkolen.has(k)), ...sokt.filter((k) => !vedSkolen.has(k))];
+  const register = useSkoler();
+  const skoletreff = aktivt && register ? filtrerSkoler(register.skoler, { fylke: null, tilbud: null, sok }) : [];
+  const status = !aktivt
+    ? ''
+    : treff.length + skoletreff.length === 0
+      ? t('opplaeringslop.oversikt.ingenTreff')
+      : t('opplaeringslop.oversikt.antallTreffBegge', { tilbud: formaterTall(treff.length), skoler: formaterTall(skoletreff.length) });
   return (
     <div class="side lop-oversikt">
       <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
-      <p class="dempet"><Begrepstekst tekst={t('opplaeringslop.innledning')} /></p>
+      <p class="ingress">
+        <Begrepstekst tekst={t('opplaeringslop.innledning')} />
+      </p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
         <>
+          {/* Ett søk for begge delene av modulen: tilbud og skoler (eier 03.10.2026). */}
           <div class="sokeboks">
             <div class="sokefelt">
               <input
@@ -54,46 +139,51 @@ export default function Oversikt() {
               <Ikon navn="sok" class="sokefelt-ikon" />
             </div>
             <p class="sokestatus" role="status" aria-live="polite">
-              {aktivt ? (treff.length === 0 ? t('opplaeringslop.oversikt.ingenTreff') : t('opplaeringslop.oversikt.antallTreff', { antall: formaterTall(treff.length) })) : ''}
+              {status}
             </p>
           </div>
           {aktivt ? (
-            <ul class="liste">
-              {treff.slice(0, MAKS_TREFF).map((k) => (
-                <li key={k}>
-                  <Tilbudslenke indeks={data.indeks} kode={k} />
-                </li>
-              ))}
-            </ul>
+            <>
+              {treff.length > 0 && (
+                <ul class="liste">
+                  {treff.slice(0, MAKS_TREFF).map((k) => (
+                    <li key={k}>
+                      <Tilbudslenke indeks={data.indeks} kode={k} />
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <Skoletreff sok={sok} treff={skoletreff} />
+            </>
           ) : (
             <>
-              {data.tilbud.skolear && <p class="liten dempet lop-skolear">{t('opplaeringslop.skolear', { skolear: data.tilbud.skolear.replace('-', '–') })}</p>}
-              {GRUPPER.map((g) => {
-                const programmer = data.tilbud.struktur.filter((p) => p.gruppe === g);
-                if (programmer.length === 0) return null;
-                return (
-                  <Rubrikk key={g} nokkel={`lop-gruppe-${g}`} tittel={t(`opplaeringslop.gruppe.${g}`)} hoyre={formaterTall(programmer.length)} lukket>
-                    <ul class="liste">
-                      {programmer.map((p) => (
-                        <li key={p.program}>
-                          <a class="listelenke" href={`#/opplaeringslop/${p.program}`}>
-                            <span class="listelenke-tekst">
-                              <span class="listelenke-tittel">{p.navn[malform]}</span>
-                              <span class="listelenke-under">{p.program}</span>
-                            </span>
-                            <Ikon navn="hoyre" class="ikon-liten" />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </Rubrikk>
-                );
-              })}
+              <section class="lop-del" aria-labelledby="lop-del-program">
+                <h2 class="liten-overskrift" id="lop-del-program">
+                  {t('opplaeringslop.oversikt.program')}
+                </h2>
+                {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
+                <a class="frist-inngang" href="#/opplaeringslop/lop">
+                  <span class="frist-inngang-tittel">
+                    <Ikon navn="veiviser" />
+                    {t('opplaeringslop.lop.tittel')}
+                  </span>
+                  <span class="frist-inngang-neste">
+                    <span class="frist-inngang-tid">
+                      {visning.skole
+                        ? t('opplaeringslop.inngang.programSkole', { antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size), skole: visning.skole.navn })
+                        : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+                    </span>
+                    <span>{t('opplaeringslop.inngang.programTekst')}</span>
+                  </span>
+                  <Ikon navn="hoyre" class="frist-inngang-pil" />
+                </a>
+              </section>
+              <Innganger />
             </>
           )}
         </>
       )}
-      <Kildeliste kilder={[{ id: 'udir-grep' }, { id: 'udir-fag-og-timefordeling' }]} />
+      <Kildeliste kilder={[{ id: 'udir-grep' }, { id: 'udir-fag-og-timefordeling' }, { id: 'utdanning-no', punkt: 'Skoler' }, { id: 'udir-nor' }]} />
     </div>
   );
 }
