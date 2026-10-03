@@ -197,3 +197,72 @@
     --fagtype-andre: var(--p-graa-600);
   }
 }
+
+/*
+ * Fargene til veiviserne (avgjørelse 042). Hver veiviser har sin farge, som brukes på kortet på oversikten og i hele
+ * veiviseren: stolpen, kartet, knappene, lenkene og flatene. Blå er standard. Nye veivisere tar neste ledige farge.
+ */
+[data-veiviserfarge='lilla'] {
+  --farge-merke: var(--p-lilla-700);
+  --farge-lenke: var(--p-lilla-700);
+  --farge-flate-2: var(--p-lilla-100);
+  --farge-info-flate: var(--p-lilla-100);
+}
+
+[data-veiviserfarge='turkis'] {
+  --farge-merke: var(--p-turkis-700);
+  --farge-lenke: var(--p-turkis-700);
+  --farge-flate-2: var(--p-turkis-100);
+  --farge-info-flate: var(--p-turkis-100);
+}
+
+[data-veiviserfarge='rav'] {
+  --farge-merke: var(--p-rav-700);
+  --farge-lenke: var(--p-rav-700);
+  --farge-flate-2: var(--p-rav-100);
+  --farge-info-flate: var(--p-rav-100);
+}
+
+:root[data-tema='mork'] [data-veiviserfarge='lilla'] {
+  --farge-merke: var(--p-lilla-300);
+  --farge-lenke: var(--p-lilla-300);
+  --farge-flate-2: var(--p-lilla-900);
+  --farge-info-flate: var(--p-lilla-900);
+}
+
+:root[data-tema='mork'] [data-veiviserfarge='turkis'] {
+  --farge-merke: var(--p-turkis-300);
+  --farge-lenke: var(--p-turkis-300);
+  --farge-flate-2: var(--p-turkis-900);
+  --farge-info-flate: var(--p-turkis-900);
+}
+
+:root[data-tema='mork'] [data-veiviserfarge='rav'] {
+  --farge-merke: var(--p-rav-300);
+  --farge-lenke: var(--p-rav-300);
+  --farge-flate-2: var(--p-rav-900);
+  --farge-info-flate: var(--p-rav-900);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-tema='lys']) [data-veiviserfarge='lilla'] {
+    --farge-merke: var(--p-lilla-300);
+    --farge-lenke: var(--p-lilla-300);
+    --farge-flate-2: var(--p-lilla-900);
+    --farge-info-flate: var(--p-lilla-900);
+  }
+
+  :root:not([data-tema='lys']) [data-veiviserfarge='turkis'] {
+    --farge-merke: var(--p-turkis-300);
+    --farge-lenke: var(--p-turkis-300);
+    --farge-flate-2: var(--p-turkis-900);
+    --farge-info-flate: var(--p-turkis-900);
+  }
+
+  :root:not([data-tema='lys']) [data-veiviserfarge='rav'] {
+    --farge-merke: var(--p-rav-300);
+    --farge-lenke: var(--p-rav-300);
+    --farge-flate-2: var(--p-rav-900);
+    --farge-info-flate: var(--p-rav-900);
+  }
+}

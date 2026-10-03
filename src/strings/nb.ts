@@ -234,6 +234,12 @@ export const nb = {
       kopierFeilet: 'Kunne ikke kopiere. Marker teksten og kopier den selv.',
       kopiOverskrift: '{tittel} – oppsummering',
       kopiLaget: 'Laget med {app} {dato}. Sjekk kildene før du bruker oppsummeringen.',
+      laereplaner: 'Læreplanene ({antall})',
+      kompetansegivende: 'Kompetansegivende',
+      ikkeKompetansegivende: 'Ikke kompetansegivende',
+      vurdering: 'Vurdering: {uttrykk}',
+      fagkodene: 'Fagkodene',
+      antallFag: '{antall} fag',
     },
     forklaring: {
       vis: 'Vis forklaring',

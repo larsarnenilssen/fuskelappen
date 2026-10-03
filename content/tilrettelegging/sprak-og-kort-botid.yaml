@@ -12,6 +12,8 @@
     nb: Elever med et annet morsmål enn norsk og samisk har rett til særskilt språkopplæring til de kan norsk godt nok til å følge den vanlige opplæringen. Her er hva fylkeskommunen og skolen gjør steg for steg, også for elever som har bodd kort tid i Norge.
     nn: Elevar med eit anna morsmål enn norsk og samisk har rett til særskild språkopplæring til dei kan norsk godt nok til å følgje den vanlege opplæringa. Her er kva fylkeskommunen og skolen gjer steg for steg, også for elevar som har budd kort tid i Noreg.
   start: sp-morsmal
+  farge: lilla
+  rekkefolge: 2
   faser:
     - { id: vurdering, tittel: { nb: Vurdering, nn: Vurdering } }
     - { id: vedtak, tittel: { nb: Vedtak, nn: Vedtak } }
@@ -189,7 +191,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er forklaringen om rett til videregående for elever med kort botid riktig og forsiktig nok, når inntak kommer i fase 5?"
-    - "Fører «Nei» riktig videre til læreplanen i norsk for kort botid, som også kan gjelde elever som ikke regnes som nyankomne?"
+    - "Fører «Nei» riktig videre til læreplanene, der læreplanen for kort botid også kan gjelde elever som ikke regnes som nyankomne?"
 
 - id: sp-innforing
   type: steg
@@ -237,22 +239,51 @@
   veiviser: sprak-og-kort-botid
   fase: opplaering
   tittel:
-    nb: Læreplan i norsk for elever med kort botid
-    nn: Læreplan i norsk for elevar med kort butid
+    nb: Læreplanene i særskilt språkopplæring
+    nn: Læreplanane i særskild språkopplæring
   tekst:
-    nb: Elever med særskilt språkopplæring kan velge å følge læreplanen i norsk for språklige minoriteter med kort botid (NOR09-05), hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv. Fagene står i appen, for eksempel [NOR1412 på vg1](#/fag/NOR1412).
-    nn: Elevar med særskild språkopplæring kan velje å følgje læreplanen i norsk for språklege minoritetar med kort butid (NOR09-05), dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv. Faga står i appen, til dømes [NOR1412 på vg1](#/fag/NOR1412).
+    nb: |-
+      Det er tre læreplaner for særskilt språkopplæring. Grunnleggende norsk og morsmål for språklige minoriteter gir ikke karakter, og er ikke kompetansegivende. Norsk for språklige minoriteter med kort botid (NOR09-05) gir karakter, og er kompetansegivende.
+
+      Elever med særskilt språkopplæring kan velge å følge læreplanen for kort botid, hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv.
+    nn: |-
+      Det er tre læreplanar for særskild språkopplæring. Grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje karakter, og er ikkje kompetansegivande. Norsk for språklege minoritetar med kort butid (NOR09-05) gir karakter, og er kompetansegivande.
+
+      Elevar med særskild språkopplæring kan velje å følgje læreplanen for kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv.
   ansvar:
-    nb: Eleven velger.
-    nn: Eleven vel.
+    nb: Eleven velger selv om eleven vil følge læreplanen for kort botid.
+    nn: Eleven vel sjølv om eleven vil følgje læreplanen for kort butid.
   paragrafer: [opplaeringsforskrifta/5-12]
+  # Rekkefølgen er den samme som i Udirs liste over læreplaner for særskilt språkopplæring.
+  laereplaner:
+    - kode: NOR07-03
+      kompetansegivende: false
+      merknad:
+        nb: Gir ikke karakter. Brukes i særskilt språkopplæring til eleven kan norsk godt nok til å følge den vanlige opplæringen.
+        nn: Gir ikkje karakter. Blir brukt i særskild språkopplæring til eleven kan norsk godt nok til å følgje den vanlege opplæringa.
+    - kode: NOR09-05
+      kompetansegivende: true
+      merknad:
+        nb: Gir standpunktkarakter, og eleven kan komme opp til eksamen. Eleven kan følge den i stedet for den vanlige læreplanen i norsk.
+        nn: Gir standpunktkarakter, og eleven kan kome opp til eksamen. Eleven kan følgje han i staden for den vanlege læreplanen i norsk.
+    - kode: NOR08-03
+      kompetansegivende: false
+      merknad:
+        nb: Gir ikke karakter. Brukes i morsmålsopplæring, i tillegg til opplæringen i norsk, til eleven kan norsk godt nok til å følge den vanlige opplæringen.
+        nn: Gir ikkje karakter. Blir brukt i morsmålsopplæring, i tillegg til opplæringa i norsk, til eleven kan norsk godt nok til å følgje den vanlege opplæringa.
   neste: sp-oppfolging
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }
     - { id: udir-sarskilt-sprakopplaring, punkt: "Læreplaner for særskilt språkopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-12" }
+    - { id: udir-lk20, punkt: "Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering", url: "https://www.udir.no/lk20/nor07-03/om-faget/vurdering" }
+    - { id: udir-lk20, punkt: "Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering", url: "https://www.udir.no/lk20/nor09-05/om-faget/vurdering" }
+    - { id: udir-lk20, punkt: "Morsmål for språklige minoriteter (NOR08-03), Vurdering", url: "https://www.udir.no/lk20/nor08-03/om-faget/vurdering" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det nyttig å lenke til NOR1412 som eksempel, eller bør steget vise alle fagkodene for kort botid?"
+    - "Er det riktig å kalle grunnleggende norsk og morsmål for språklige minoriteter «ikke kompetansegivende» fordi de ikke gir karakter («Det gis ikke vurdering med karakter …» i vurderingsordningen)?"
+    - "Er det riktig at læreplanen for kort botid er kompetansegivende, og at eleven kan følge den i stedet for den vanlige læreplanen i norsk?"
+    - "Er «Brukes i særskilt språkopplæring til eleven kan norsk godt nok til å følge den vanlige opplæringen» en riktig beskrivelse av grunnleggende norsk i videregående?"
+    - "Står læreplanene på rett sted i veiviseren (etter vedtak og innføringsopplæring), eller bør de også vises i vedtakssteget?"
 
 - id: sp-oppfolging
   type: steg

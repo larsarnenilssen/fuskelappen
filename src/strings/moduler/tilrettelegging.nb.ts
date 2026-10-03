@@ -4,6 +4,8 @@ export const tilretteleggingNb = {
   tittel: 'Tilrettelegging',
   innledning: 'Veivisere for tilpasset opplæring, individuell tilrettelegging og særskilt språkopplæring i videregående opplæring. Hvert steg viser hvem som har ansvaret, hva som skal dokumenteres, fristene og paragrafene i regelverket.',
   veivisere: 'Veivisere',
+  faser: 'Fasene: {faser}',
+  antallFaser: '{antall} faser',
   antallSteg: '{antall} steg',
   figur: {
     tittel: 'Hvem får hva',

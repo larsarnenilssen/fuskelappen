@@ -480,6 +480,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Eiers svar 03.10.2026: Fristen for foreløpig svar regnes fra den sakkyndige vurderingen er mottatt, og står i praksislisten til bekreftelse. Om det trengs nytt vedtak for å avslutte tilrettelegging, står åpent i veiviseren (eier 03.10.2026).
 - Ende-til-ende-testene i CI er delt på seks jobber (avgjørelse 040).
 - Pakke 3 er levert i 0.24.0: veiviseren «Særskilt språkopplæring og kort botid» og sju nye begreper. Eier 03.10.2026: Ukraina-unntaket nevnes ikke, veiviseren sier ikke noe om vedtak når språkopplæringen avsluttes eller når eleven ikke har rett, NOR09-05 er gjeldende læreplan, og eleven samtykker selv til innføringsopplæring så lenge eleven er samtykkekompetent (praksislisten). Begrepsarket har fått «Begreper» som sti øverst.
+- 0.25.0 (03.10.2026): læreplanene for særskilt språkopplæring i en boks i veiviseren, med kompetansegivende og fagkodene per trinn (eier: plassering godkjent, trinnene lukket). Veiviserne står som like høye kort med fasestolpe, og hver veiviser har sin farge (avgjørelse 042).
 
 **Uløst:** vestlandfylke.no svarer ikke, verken fra utviklingsmiljøet, fra GitHub Actions eller for eier (03.10.2026). Vestland-innhold i veiviserne (Rettleiingstenesta, midlertidig vedtak ved inntak, særskild språkopplæring og innføringskurs) venter til sidene svarer igjen, eventuelt til en senere fase. Kilden `vlfk-sider` har fortsatt adressen vlfk.no og må få vestlandfylke.no når sidene kan leses.
 
@@ -506,6 +507,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Fraværskalkulator per fag: årstimetall fra Grep → hvor mange timer som tilsvarer fraværsgrensen, med forklaring av unntak etter gjeldende regler.
 - Se `docs/VIGO-KODEVERK.md` for data fra VIGO Kodeverksbase som kan brukes: vurderingsordning per fagkode, karakterkoder og fagmerknader knyttet til fag. Fagmerknadene og vitnemålsmerknadene er alt i begrepsbanken (avgjørelse 026).
 - Veivisere for grunnlag for vurdering og for klagegangen.
+- Kobling begge veier mellom vurdering og eksamen og de to veiviserne i Tilrettelegging (eier 03.10.2026): for eksempel individuelt tilrettelagt opplæring uten vurdering med karakter, fritak fra vurdering med karakter i innføringsopplæring, og læreplanene i særskilt språkopplæring som ikke gir karakter.
 
 Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på fase 2.
 

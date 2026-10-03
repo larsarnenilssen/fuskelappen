@@ -129,3 +129,11 @@ praksis:
     grunnlag: Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene».
     berorer: [sp-innforing]
     bekreftet: null
+
+  - id: kompetansegivende-laereplaner
+    tittel: Kompetansegivende læreplaner i særskilt språkopplæring
+    sporsmal: Er en læreplan kompetansegivende når den gir karakter, og ikke kompetansegivende når det ikke gis vurdering med karakter?
+    appen: Steget «Læreplanene i særskilt språkopplæring» merker grunnleggende norsk og morsmål for språklige minoriteter som ikke kompetansegivende, og norsk for kort botid som kompetansegivende.
+    grunnlag: Eier 03.10.2026 ba om at det står om læreplanene er kompetansegivende. Ordet står ikke i kildene. Vurderingsordningene i Grep sier at det ikke gis karakter etter NOR07-03 og NOR08-03, og at NOR09-05 gir standpunktkarakter.
+    berorer: [sp-laereplan]
+    bekreftet: null
