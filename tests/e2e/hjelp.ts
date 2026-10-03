@@ -88,6 +88,8 @@ export const ruter = [
   '#/inntak',
   '#/inntak/frister',
   '#/inntak/frister?vis=voksne',
+  '#/inntak/poeng',
+  '#/inntak/poeng?trinn=vg3',
   '#/inntak/rett-inntak-soknad',
   '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng',
   '#/finnes-ikke',

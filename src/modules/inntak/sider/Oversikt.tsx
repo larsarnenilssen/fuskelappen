@@ -4,7 +4,7 @@ import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { iDag } from '../../arbeidstid/kontekst.ts';
-import { fristerRute, hentInnhold, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
+import { fristerRute, hentInnhold, poengRute, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
 import { nesteFrist, tidspunkt } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
 
@@ -45,6 +45,18 @@ export default function Oversikt() {
                   <span>{neste.tittel[malform]}</span>
                 </span>
               )}
+              <Ikon navn="hoyre" class="frist-inngang-pil" />
+            </a>
+          </section>
+          <section>
+            <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
+            {/* Samme kort som tidslinjen over, med beskrivelsen i stedet for den neste fristen. */}
+            <a class="frist-inngang" href={`#${poengRute}`}>
+              <span class="frist-inngang-tittel">
+                <Ikon navn="kalkulator" />
+                {t('inntak.poeng.kort')}
+              </span>
+              <span class="frist-inngang-neste">{t('inntak.poeng.beskrivelse')}</span>
               <Ikon navn="hoyre" class="frist-inngang-pil" />
             </a>
           </section>
