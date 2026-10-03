@@ -4,13 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.25.0] – 2026-10-03
+
 ### Lagt til
 
 - **Særskilt språkopplæring:** Steget om læreplaner viser nå alle tre læreplanene for særskilt språkopplæring i en boks som kan åpnes: grunnleggende norsk, norsk for kort botid og morsmål for språklige minoriteter. Hver læreplan har merke for om den er kompetansegivende, vurderingsuttrykket og alle fagkodene i én lukket rad per trinn (Vg1, Vg2, Vg3), med lenke til fagene.
 
 ### Endret
 
-- **Tilrettelegging:** Veiviserne på oversikten står som like høye kort med en liten fasestolpe og fasene under, som stolpen øverst i veiviseren. På stor skjerm står kortene side om side.
+- **Tilrettelegging:** Veiviserne på oversikten står som like høye kort med en liten fasestolpe og fasene under, som stolpen øverst i veiviseren. På stor skjerm står kortene side om side. «Tilpasset opplæring og individuell tilrettelegging» står først.
+- **Veiviserne har hver sin farge:** Særskilt språkopplæring er lilla, både på kortet og i hele veiviseren (stolpen, kartet, knappene, lenkene og feltene). Tilpasset opplæring er fortsatt blå.
 
 ## [0.24.0] – 2026-10-03
 

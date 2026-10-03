@@ -31,7 +31,7 @@ export default function Veiviserside({ parametre, sporring }: SideProps) {
     sted,
   );
   return (
-    <div class="side">
+    <div class="side" data-veiviserfarge={veiviser.farge}>
       <div class="tittelrad">
         <h1 tabIndex={-1}>{veiviser.tittel[malform]}</h1>
         <FavorittKnapp id={`tilrettelegging:${veiviser.id}`} navn={veiviser.tittel[malform]} />

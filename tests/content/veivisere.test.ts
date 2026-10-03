@@ -40,6 +40,11 @@ describe('veivisere', () => {
     for (const s of steg) expect(ider.has(s.veiviser), `${s.id} → ${s.veiviser}`).toBe(true);
   });
 
+  it('hver veiviser har sin egen farge og sin egen plass på oversikten (avgjørelse 042)', () => {
+    expect(new Set(veivisere.map((v) => v.farge)).size).toBe(veivisere.length);
+    expect(new Set(veivisere.map((v) => v.rekkefolge)).size).toBe(veivisere.length);
+  });
+
   for (const v of veivisere) {
     describe(v.id, () => {
       const egne = steg.filter((s) => s.veiviser === v.id && s.gyldighet.niva === 'nasjonal');

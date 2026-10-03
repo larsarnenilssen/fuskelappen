@@ -131,12 +131,19 @@ export const stegElement = z
     message: 'Svarene i et spørsmål må ha unike id-er',
   });
 
+/** Fargene en veiviser kan ha (avgjørelse 042). Hver farge er definert for lyst og mørkt tema i tema.css. */
+export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav']);
+
 /** En veiviser (avgjørelse 041): tittel, ingress (`tekst`), første steg og fasene stegene grupperes i. */
 export const veiviserElement = z
   .object({
     ...felles,
     type: z.literal('veiviser'),
     start: idSkjema,
+    /** Fargen til veiviseren på oversikten og i hele veiviseren (avgjørelse 042). Blå er standard. */
+    farge: veiviserfarge.default('blaa'),
+    /** Plassen på oversikten. Lavest står først. */
+    rekkefolge: z.number().int().default(100),
     faser: z.array(z.object({ id: idSkjema, tittel: flerspraak }).strict()).default([]),
   })
   .strict();

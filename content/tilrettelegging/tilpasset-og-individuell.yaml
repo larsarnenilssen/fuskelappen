@@ -9,6 +9,8 @@
     nb: Alle elever skal ha tilpasset opplæring. Noen trenger i tillegg individuell tilrettelegging. Her er hva skolen gjør steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
     nn: Alle elevar skal ha tilpassa opplæring. Nokre treng i tillegg individuell tilrettelegging. Her er kva skolen gjer steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
   start: ti-start
+  farge: blaa
+  rekkefolge: 1
   faser:
     - { id: ordinar, tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring } }
     - { id: utredning, tittel: { nb: Utredning, nn: Utgreiing } }

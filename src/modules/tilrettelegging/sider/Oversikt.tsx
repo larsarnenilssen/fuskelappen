@@ -64,9 +64,11 @@ export default function Oversikt() {
           <h2 class="liten-overskrift">{t('tilrettelegging.veivisere')}</h2>
           {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
           <ul class="veiviser-innganger">
-            {velgSynlige(innhold.veivisere, sted).map((v) => (
+            {velgSynlige(innhold.veivisere, sted)
+              .sort((x, y) => x.rekkefolge - y.rekkefolge)
+              .map((v) => (
               <li key={v.id}>
-                <a class="veiviser-inngang" href={`#${veiviserRute(v.id)}`}>
+                <a class="veiviser-inngang" href={`#${veiviserRute(v.id)}`} data-veiviserfarge={v.farge}>
                   <span class="veiviser-inngang-topp">
                     <span class="veiviser-inngang-tittel">{v.tittel[malform]}</span>
                     <Ikon navn="hoyre" />
