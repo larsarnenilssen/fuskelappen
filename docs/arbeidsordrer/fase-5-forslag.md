@@ -239,7 +239,7 @@ Eier ba om kilder med veiledning, så færre spørsmål må avgjøres av eier. D
 | Fag som ikke teller | Orden og oppførsel. Utdanningsvalg (deltatt). Grunnleggende norsk for språklige minoriteter (uten vurderingsuttrykk). Fritak i en del av et fag, f.eks. skriftlig sidemål | Står i listen over fag i kalkulatoren |
 | Halvårsvurdering ved inntak til Vg3 | Teller bare i fag der læreplanen sier det, mest fellesfag. I fag der standpunkt settes etter Vg3, f.eks. norsk, teller bare halvårsvurderingen fra Vg2, ikke den fra Vg1 | **F7 er endret** (under) |
 | Privatist | Den beste karakteren | Uendret |
-| Omvalg (F8) | «De beste karakterene legges til grunn.» Karakterene må være relevante for programområdet. Til Vg2 på yrkesfag teller bare karakterer fra samme utdanningsprogram, eller fra et utdanningsprogram det er krysløp mellom | Bekrefter fag for fag, og at bare programfagene som er relevante for det søkeren søker på, teller (F8) |
+| Omvalg (F8) | «De beste karakterene legges til grunn.» Karakterene må være relevante for programområdet. Til Vg2 på yrkesfag teller bare karakterer fra samme utdanningsprogram, eller fra et utdanningsprogram det er kryssløp mellom | Bekrefter fag for fag, og at bare programfagene som er relevante for det søkeren søker på, teller (F8) |
 | IV på Vg1 eller Vg2 | Søkeren oppfyller ikke vilkårene for neste trinn. Tas søkeren likevel inn (§ 4-13 andre ledd bokstav c), regnes poengsummen med null for faget | Kalkulatoren sier fra |
 | Mer enn halvparten uten karakter | Individuell behandling (§ 4-20, § 4-26), også når det skyldes fritak og IV sammen | Kalkulatoren sier fra i stedet for å regne |
 
