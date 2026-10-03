@@ -4202,15 +4202,6 @@ p.fagkort-tittel {
 }
 
 .veiviser-kilder > summary {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
-  min-height: var(--trykkflate);
-  padding: var(--rom-2) var(--rom-4);
-  color: var(--farge-lenke);
-  font-size: var(--str-s);
-  font-weight: 600;
-  cursor: pointer;
   list-style: none;
 }
 
@@ -4218,18 +4209,9 @@ p.fagkort-tittel {
   display: none;
 }
 
-.veiviser-kilder > summary::after {
-  content: '';
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-left: auto;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: translateY(-0.15rem) rotate(45deg);
-}
-
-.veiviser-kilder[open] > summary::after {
-  transform: translateY(0.1rem) rotate(-135deg);
+/* Pilen peker opp når kildene er åpne, som i Forklaring. */
+.veiviser-kilder[open] > summary .forklaring-pil {
+  transform: rotate(180deg);
 }
 
 .veiviser-kilder .kildeliste {
@@ -4469,8 +4451,7 @@ p.fagkort-tittel {
     margin-inline: calc(-1 * var(--rom-5));
   }
 
-  .veiviser-med-faser .veiviser-mer .forklaring-knapp,
-  .veiviser-med-faser .veiviser-kilder > summary {
+  .veiviser-med-faser .veiviser-mer .forklaring-knapp {
     padding-inline: var(--rom-5);
   }
 

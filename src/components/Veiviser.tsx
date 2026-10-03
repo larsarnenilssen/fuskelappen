@@ -305,9 +305,11 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                 </Forklaring>
               )}
               <details class="veiviser-kilder">
-                <summary>
-                  <Ikon navn="bok" class="ikon-liten" />
-                  {t('komponenter.veiviser.kilder', { antall: String(node.kilder.length) })}
+                {/* Samme utseende som knappen i Forklaring rett over. */}
+                <summary class="forklaring-knapp">
+                  <Ikon navn="bok" />
+                  <span>{t('komponenter.veiviser.kilder', { antall: String(node.kilder.length) })}</span>
+                  <Ikon navn="ned" class="forklaring-pil" />
                 </summary>
                 <Kildeliste kilder={node.kilder} niva={3} utenOverskrift />
               </details>
