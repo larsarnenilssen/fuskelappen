@@ -4269,6 +4269,21 @@ p.fagkort-tittel {
   padding: var(--rom-3) 0 var(--rom-1);
 }
 
+.laereplanboks-gruppe {
+  margin: var(--rom-4) 0 0;
+  padding-bottom: var(--rom-1);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-xs);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--farge-tekst-dempet);
+}
+
+.laereplanboks-gruppe:first-child {
+  margin-top: 0;
+}
+
 .laereplanboks-liste > li + li {
   border-top: var(--strek) solid var(--farge-linje);
 }

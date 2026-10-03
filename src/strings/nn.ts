@@ -240,6 +240,7 @@ export const nn: Tekster = {
       vurdering: 'Vurdering: {uttrykk}',
       fagkodene: 'Fagkodane',
       antallFag: '{antall} fag',
+      malgruppe: { elever: 'For elevar', voksne: 'For vaksne' },
     },
     forklaring: {
       vis: 'Vis forklaring',

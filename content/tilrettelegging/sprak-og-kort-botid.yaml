@@ -246,10 +246,14 @@
       Det er tre læreplaner for særskilt språkopplæring. Grunnleggende norsk og morsmål for språklige minoriteter gir ikke karakter, og er ikke kompetansegivende. Norsk for språklige minoriteter med kort botid (NOR09-05) gir karakter, og er kompetansegivende.
 
       Elever med særskilt språkopplæring kan velge å følge læreplanen for kort botid, hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv.
+
+      For voksne i modulstrukturert opplæring er det en egen læreplan i norsk og samfunnskunnskap for språklige minoriteter (GNS02-01).
     nn: |-
       Det er tre læreplanar for særskild språkopplæring. Grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje karakter, og er ikkje kompetansegivande. Norsk for språklege minoritetar med kort butid (NOR09-05) gir karakter, og er kompetansegivande.
 
       Elevar med særskild språkopplæring kan velje å følgje læreplanen for kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv.
+
+      For vaksne i modulstrukturert opplæring er det ein eigen læreplan i norsk og samfunnskunnskap for språklege minoritetar (GNS02-01).
   ansvar:
     nb: Eleven velger selv om eleven vil følge læreplanen for kort botid.
     nn: Eleven vel sjølv om eleven vil følgje læreplanen for kort butid.
@@ -271,6 +275,12 @@
       merknad:
         nb: Gir ikke karakter. Brukes i morsmålsopplæring, i tillegg til opplæringen i norsk, til eleven kan norsk godt nok til å følge den vanlige opplæringen.
         nn: Gir ikkje karakter. Blir brukt i morsmålsopplæring, i tillegg til opplæringa i norsk, til eleven kan norsk godt nok til å følgje den vanlege opplæringa.
+    # For voksne, i en egen gruppe og uten merke for kompetansegivende (eier 03.10.2026).
+    - kode: GNS02-01
+      malgruppe: voksne
+      merknad:
+        nb: For voksne i modulstrukturert opplæring. Læreplanen har ingen sluttvurdering. Når modulen er ferdig, får lærlingen en midtveisvurdering med godkjent eller ikke godkjent.
+        nn: For vaksne i modulstrukturert opplæring. Læreplanen har inga sluttvurdering. Når modulen er ferdig, får lærlingen ei midtvegsvurdering med godkjent eller ikkje godkjent.
   neste: sp-oppfolging
   kilder:
     - { id: udir-sarskilt-sprakopplaring, punkt: "Læreplaner for særskilt språkopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
@@ -278,12 +288,15 @@
     - { id: udir-lk20, punkt: "Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering", url: "https://www.udir.no/lk20/nor07-03/om-faget/vurdering" }
     - { id: udir-lk20, punkt: "Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering", url: "https://www.udir.no/lk20/nor09-05/om-faget/vurdering" }
     - { id: udir-lk20, punkt: "Morsmål for språklige minoriteter (NOR08-03), Vurdering", url: "https://www.udir.no/lk20/nor08-03/om-faget/vurdering" }
+    - { id: udir-lk20, punkt: "Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Kompetansemål og vurdering", url: "https://www.udir.no/lk20/gns02-01/kompetansemaal-og-vurdering/kv852" }
+    - { id: udir-lk20, punkt: "Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Vurderingsordning", url: "https://www.udir.no/lk20/gns02-01/vurderingsordning" }
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig å kalle grunnleggende norsk og morsmål for språklige minoriteter «ikke kompetansegivende» fordi de ikke gir karakter («Det gis ikke vurdering med karakter …» i vurderingsordningen)?"
     - "Er det riktig at læreplanen for kort botid er kompetansegivende, og at eleven kan følge den i stedet for den vanlige læreplanen i norsk?"
     - "Er «Brukes i særskilt språkopplæring til eleven kan norsk godt nok til å følge den vanlige opplæringen» en riktig beskrivelse av grunnleggende norsk i videregående?"
     - "Står læreplanene på rett sted i veiviseren (etter vedtak og innføringsopplæring), eller bør de også vises i vedtakssteget?"
+    - "GNS02-01 står ikke i Udirs liste over læreplaner for særskilt språkopplæring. Er merknaden riktig: for voksne i modulstrukturert opplæring, ingen sluttvurdering, og en midtveisvurdering med godkjent eller ikke godkjent når modulen er ferdig?"
 
 - id: sp-oppfolging
   type: steg

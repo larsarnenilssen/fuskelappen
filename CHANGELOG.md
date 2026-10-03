@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Særskilt språkopplæring:** Læreplanboksen har fått læreplanen i norsk og samfunnskunnskap for språklige minoriteter (GNS02-01), for voksne i modulstrukturert opplæring. Den står i en egen gruppe «For voksne» nederst i boksen, uten merke for kompetansegivende, med vurderingen godkjent / ikke godkjent og fagkoden.
+
 ## [0.25.0] – 2026-10-03
 
 ### Lagt til
