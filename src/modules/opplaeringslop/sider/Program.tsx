@@ -96,9 +96,11 @@ export default function Program({ parametre }: SideProps) {
       </div>
     );
   }
-  const hoved = struktur.inngang.filter((k) => !erVariant(k));
-  const varianter = struktur.inngang.filter((k) => erVariant(k));
   const skole = new Set(visning.skole?.tilbud ?? []);
+  // Tilbudene ved skolen står først, også med «Alle» (eier 03.10.2026).
+  const skoleforst = (koder: readonly string[]) => [...koder.filter((k) => skole.has(k)), ...koder.filter((k) => !skole.has(k))];
+  const hoved = skoleforst(struktur.inngang.filter((k) => !erVariant(k)));
+  const varianter = skoleforst(struktur.inngang.filter((k) => erVariant(k)));
   // Med «Min skole» starter løpet fra tilbudene ved skolen i programmet som ikke bygger på et annet tilbud ved skolen.
   const vedSkolen = [...skole].filter((k) => data.indeks.programomrader[k]?.program === program);
   const skolestart = vedSkolen

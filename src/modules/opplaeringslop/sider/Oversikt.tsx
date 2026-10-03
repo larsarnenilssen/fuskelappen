@@ -93,8 +93,11 @@ export default function Oversikt() {
   const [data, provIgjen] = useTilbudsdata();
   const [sok, settSok] = useState('');
   const aktivt = sok.trim().length >= 2;
-  const treff = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
   const visning = useSkolevisning();
+  // Søketreff ved skolen brukeren har valgt, står først.
+  const sokt = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
+  const vedSkolen = new Set(visning.skole?.tilbud ?? []);
+  const treff = [...sokt.filter((k) => vedSkolen.has(k)), ...sokt.filter((k) => !vedSkolen.has(k))];
   const perProgram = typeof data !== 'string' ? tilbudPerProgram(data.indeks, visning.skole) : new Map<string, number>();
   return (
     <div class="side lop-oversikt">
