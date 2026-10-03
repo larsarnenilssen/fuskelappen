@@ -52,7 +52,7 @@ export const kildetekstSkjema = z
   })
   .strict();
 
-export const elementtype = z.enum(['begrep', 'regel', 'forklaring', 'steg', 'frist', 'kildeomtale']);
+export const elementtype = z.enum(['begrep', 'regel', 'forklaring', 'steg', 'frist', 'kildeomtale', 'veiviser']);
 export const malgruppe = z.enum(['skoleleder', 'laerer']);
 
 const felles = {
@@ -78,7 +78,55 @@ const felles = {
 };
 
 export const vanligElement = z
-  .object({ ...felles, type: elementtype.exclude(['frist']) })
+  .object({ ...felles, type: elementtype.exclude(['frist', 'steg', 'veiviser']) })
+  .strict();
+
+/** Paragraf i Regelverk: «dokument/nummer», f.eks. «opplaeringslova/11-1» eller «forvaltningsloven/11a». */
+export const paragrafRef = z.string().regex(/^[a-z0-9-]+\/[0-9a-z-]+$/, 'Paragraf skrives «dokument/nummer», f.eks. «opplaeringslova/11-1»');
+
+/**
+ * Et steg i en veiviser (avgjørelse 041). `tekst` er hva som skal skje. Steget går videre til `neste`, eller
+ * stiller et spørsmål der hvert svar har sitt neste steg. Et steg uten `neste` og `sporsmal` er et utfall.
+ */
+export const stegElement = z
+  .object({
+    ...felles,
+    type: z.literal('steg'),
+    veiviser: idSkjema,
+    /** Fasen i prosessen steget hører til (id fra veiviseren). Vises i fasestolpen. */
+    fase: idSkjema.optional(),
+    ansvar: flerspraak.optional(),
+    dokumentasjon: flerspraak.optional(),
+    frist: flerspraak.optional(),
+    /** Utdyping som er skjult til brukeren åpner den. Markdown. */
+    forklaring: flerspraak.optional(),
+    /** Paragrafer i Regelverk som steget bygger på. Vises som lenker til paragrafen i appen. */
+    paragrafer: z.array(paragrafRef).default([]),
+    neste: idSkjema.optional(),
+    sporsmal: z
+      .object({
+        tekst: flerspraak,
+        svar: z
+          .array(z.object({ id: idSkjema, tekst: flerspraak, neste: idSkjema }).strict())
+          .min(2, 'Et spørsmål må ha minst to svar'),
+      })
+      .strict()
+      .optional(),
+  })
+  .strict()
+  .refine((s) => s.neste === undefined || s.sporsmal === undefined, { message: 'Et steg har enten neste eller sporsmal' })
+  .refine((s) => !s.sporsmal || new Set(s.sporsmal.svar.map((v) => v.id)).size === s.sporsmal.svar.length, {
+    message: 'Svarene i et spørsmål må ha unike id-er',
+  });
+
+/** En veiviser (avgjørelse 041): tittel, ingress (`tekst`), første steg og fasene stegene grupperes i. */
+export const veiviserElement = z
+  .object({
+    ...felles,
+    type: z.literal('veiviser'),
+    start: idSkjema,
+    faser: z.array(z.object({ id: idSkjema, tittel: flerspraak }).strict()).default([]),
+  })
   .strict();
 
 export const fristElement = z
@@ -98,7 +146,7 @@ export const fristElement = z
     message: 'En frist må ha enten dato eller regel',
   });
 
-export const innholdselement = z.union([fristElement, vanligElement]);
+export const innholdselement = z.union([fristElement, stegElement, veiviserElement, vanligElement]);
 
 // En innholdsfil kan inneholde ett element eller en liste.
 export const innholdsfil = z.union([innholdselement, z.array(innholdselement)]).transform((v) => (Array.isArray(v) ? v : [v]));
@@ -198,6 +246,8 @@ export type Niva = z.infer<typeof nivaSkjema>;
 export type Forhold = z.infer<typeof forholdSkjema>;
 export type Kontrollert = z.infer<typeof kontrollertSkjema>;
 export type Innholdselement = z.infer<typeof innholdselement>;
+export type Stegelement = z.infer<typeof stegElement>;
+export type Veiviserelement = z.infer<typeof veiviserElement>;
 export type Frist = z.infer<typeof fristElement>;
 export type Kilde = z.infer<typeof kildeSkjema>;
 export type Kilderegister = z.infer<typeof kilderegisterSkjema>;

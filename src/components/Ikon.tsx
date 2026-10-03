@@ -41,6 +41,10 @@ const baner = {
   sammenlign: 'M3.5 20h17M6.5 20v-8h4v8M13.5 20V6h4v14',
   // Paragraf: paragraftegnet, for Lov og forskrift.
   paragraf: 'M15.5 6.8c-.6-1.4-1.9-2.3-3.5-2.3-2 0-3.5 1.2-3.5 2.8 0 3.8 7.5 2.6 7.5 6.6 0 1.3-1 2.4-2.6 2.8M8.5 17.2c.6 1.4 1.9 2.3 3.5 2.3 2 0 3.5-1.2 3.5-2.8 0-3.8-7.5-2.6-7.5-6.6 0-1.3 1-2.4 2.6-2.8',
+  // Person: hode og skuldre, for hvem som har ansvaret i et steg.
+  person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20.5c.8-3.6 3.8-5.5 7.5-5.5s6.7 1.9 7.5 5.5',
+  // Trapp: trinn for trinn, for veiviserne i Tilrettelegging.
+  trapp: 'M3.5 20h4.5v-4.5h4.5V11h4.5V6.5h3.5',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;

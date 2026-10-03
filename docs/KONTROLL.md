@@ -2,7 +2,7 @@
 
 <!-- Generert av `npm run kontroll:rapport`. Kildesjekken lager den på nytt hver uke. Ikke rediger for hånd. -->
 
-Oppdatert 02.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
+Oppdatert 03.10.2026. Kildesjekken kjørte sist 30.09.2026, verdisjekken 30.09.2026.
 
 Oversikten viser hva som bygger på hver kilde, og hvor langt kontrollen er kommet. «Automatisk sjekk» betyr at sitatet med tallet fortsatt står i kilden. Det er ikke det samme som din kontroll. Se `docs/EIER.md`, punkt 10–12.
 
@@ -15,7 +15,7 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 92 |
+| Ikke kontrollert | 146 |
 | Praksis og tolkninger som bør bekreftes | 14 av 14 |
 
 | Automatisk sjekk av regelverdier | Antall |
@@ -119,6 +119,20 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Kontaktlærer (`kontaktlaerer`) | begrep | 7.3 b, 9.1, Vedlegg 1 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Godtgjøring for funksjoner (`funksjonsgodtgjoring`) | begrep | 9.1 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Fellesfag (`fellesfag`) | begrep | Vedlegg 1 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Tariffavtale og særavtale (`tariffavtale`) | begrep | 1 | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Tidsressurspott (`tidsressurspott`) | begrep | 7.3 a | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| 3.4 Ledere (`hta-ledere`) | forklaring | 8.2 | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| Punkt 1–3 Hva avtalen gjelder (`sfs-omfang`) | forklaring | 1–3 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 4 Arbeidsåret (`sfs-arbeidsaret`) | forklaring | 4 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 5.1 Organisering av arbeidstiden (`sfs-arbeidstid`) | forklaring | 5.1 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 5.2 Oversikt over arbeidstiden (`sfs-oversikt`) | forklaring | 5.2 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 5.3 Andre arbeidsoppgaver (`sfs-andre-oppgaver`) | forklaring | 5.3 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 6 Livsfasetiltak (`sfs-livsfasetiltak`) | forklaring | 6 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 7.3 Tidsressurser i videregående (`sfs-tidsressurser`) | forklaring | 7.3 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 8 Skoleledelse (`sfs-skoleledelse`) | forklaring | 8 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 9.1 Godtgjøring for funksjoner (`sfs-funksjoner`) | forklaring | 9.1 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Punkt 9.2–9.4 Stillingsvern, lønn og trekk (`sfs-diverse`) | forklaring | 9.2–9.4 | `content/lov/sfs2213.yaml` | ikke kontrollert |
+| Vedlegg 1 Årsrammer for undervisning (`sfs-arsrammer`) | forklaring | Vedlegg 1 | `content/lov/sfs2213.yaml` | ikke kontrollert |
 
 ### Hovedtariffavtalen 1.5.2026–30.4.2028
 
@@ -149,6 +163,29 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Fast overtid (`fast-overtid`) | begrep | Kap. 1 § 6 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Variabel lønn (`variabel-lonn`) | begrep | Kap. 1 § 6.2, Kap. 1 § 12.4 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
 | Delt dagsverk (`delt-dagsverk`) | begrep | Kap. 1 § 5.5 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
+| Tariffavtale og særavtale (`tariffavtale`) | begrep | Kap. 1 § 1 | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Garantilønn (`garantilonn`) | begrep | Kap. 4 punkt 4.1 | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Stillingskode (`stillingskode`) | begrep | Vedlegg 2 | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Lønnsansiennitet (`lonnsansiennitet`) | begrep | Kap. 1 § 12 og kap. 4 punkt 4.0 | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Konstituering (`konstituering`) | begrep | Kap. 1 § 13 (13.4) | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Midlertidig ansettelse (`midlertidig-ansettelse`) | begrep | Kap. 1 § 2 (2.3.2) | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| § 1 Hvem avtalen gjelder for (`hta-virkeomrade`) | forklaring | Kap. 1 § 1 og merknaden | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 2 Ansettelse (`hta-ansettelse`) | forklaring | Kap. 1 § 2 (2.1–2.5) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 3 Oppsigelse og omplassering (`hta-oppsigelse`) | forklaring | Kap. 1 § 3 (3.1–3.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 4 Arbeidstid (`hta-arbeidstid`) | forklaring | Kap. 1 § 4 (4.1–4.2) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 6 Overtid (`hta-overtid`) | forklaring | Kap. 1 § 6 (6.1–6.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 7 Ferie (`hta-ferie`) | forklaring | Kap. 1 § 7 (7.1–7.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 8 Lønn under sykdom og foreldrepermisjon (`hta-sykdom`) | forklaring | Kap. 1 § 8 (innledningen og 8.1–8.2) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 12 Ansiennitet, deltid og vikarer (`hta-ansiennitet`) | forklaring | Kap. 1 § 12 (12.1–12.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 13 Stedfortreder og konstituering (`hta-stedfortreder`) | forklaring | Kap. 1 § 13 (13.1–13.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| § 14 Permisjon (`hta-permisjon`) | forklaring | Kap. 1 § 14 (14.1–14.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| Kapittel 2 Lærlinger (`hta-laerlinger`) | forklaring | Kap. 2 (2.1) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| 3.2 Lokal lønnspolitikk (`hta-lonnspolitikk`) | forklaring | Kap. 3 punkt 3.2 (3.2.1–3.2.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| 3.3 Kompetanse (`hta-kompetanse`) | forklaring | Kap. 3 punkt 3.3 | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| 3.4 Ledere (`hta-ledere`) | forklaring | Kap. 3 punkt 3.4 (3.4.0–3.4.4) | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| 4.0–4.1 Sentrale lønnsbestemmelser og garantilønn (`hta-sentral-lonn`) | forklaring | Kap. 4 punkt 4.0–4.1 | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| 4.2 og kapittel 5 Lokale forhandlinger (`hta-forhandlinger`) | forklaring | Kap. 4 punkt 4.2 og kap. 5 | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
+| Vedlegg 2 Lønn og stillingskode for undervisningspersonale (`hta-vedlegg2`) | forklaring | Vedlegg 2 | `content/lov/hovedtariffavtalen.yaml` | ikke kontrollert |
 
 ### Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)
 
@@ -159,6 +196,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Arbeidstid (`arbeidstid`) | begrep | Kapittel 10 | `content/begreper/arbeidstid.yaml` | ikke kontrollert |
+| Midlertidig ansettelse (`midlertidig-ansettelse`) | begrep | § 14-9 Fast og midlertidig ansettelse | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Oppsigelse og avskjed (`oppsigelse-og-avskjed`) | begrep | § 15-7 Vern mot usaklig oppsigelse, § 15-14 Avskjed | `content/begreper/regelverk.yaml` | ikke kontrollert |
 
 ### Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)
 
@@ -170,6 +209,45 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | `skolear_uker` (sfs2213-2026-2027) | – | 38 uker | mangler sitat | ikke kontrollert |
 | `skolear_dager` (sfs2213-2026-2027) | – | 190 dager | mangler sitat | ikke kontrollert |
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Lov (`lov`) | begrep | § 1-6 Fag- og timefordeling og tilbodsstruktur (døme på at departementet gir forskrift), § 5-4 Innhald, vurdering og dokumentasjon i den vidaregåande opplæringa | `content/begreper/lov.yaml` | ikke kontrollert |
+| Lokal forskrift (`lokal-forskrift`) | begrep | § 10-7 Skolereglar | `content/begreper/lov.yaml` | ikke kontrollert |
+| Paragraf og ledd (`paragraf`) | begrep | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging (§ 11-1) | `content/begreper/lov.yaml` | ikke kontrollert |
+| Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Fra tilpasset opplæring til individuell tilrettelegging (`individuell-tilrettelegging`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+
+### Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
+
+`opplaeringsforskrifta` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://lovdata.no/forskrift/2024-06-03-900)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Forskrift (`forskrift`) | begrep | Innleiinga (heimel og kven som har fastsett forskrifta) | `content/begreper/lov.yaml` | ikke kontrollert |
+| Lokal forskrift (`lokal-forskrift`) | begrep | § 4-5 Lokal forskrift om inntak | `content/begreper/lov.yaml` | ikke kontrollert |
+| Paragraf og ledd (`paragraf`) | begrep | § 4-1 Kven som har rett til vidaregåande opplæring (ledd og bokstavar) | `content/begreper/lov.yaml` | ikke kontrollert |
+| Enkeltvedtak (`enkeltvedtak`) | begrep | Kapittel 10 Klage på sluttvurderingar | `content/begreper/lov.yaml` | ikke kontrollert |
+
+### Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
+
+`forvaltningsloven` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://lovdata.no/lov/1967-02-10)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Forskrift (`forskrift`) | begrep | § 2 første ledd bokstav c (forskrift) | `content/begreper/lov.yaml` | ikke kontrollert |
+| Enkeltvedtak (`enkeltvedtak`) | begrep | § 2 første ledd bokstav b (enkeltvedtak), § 28 og § 29 (klage og klagefrist) | `content/begreper/lov.yaml` | ikke kontrollert |
+| Klage på enkeltvedtak (`klage`) | begrep | § 28 Vedtak som kan påklages, klageinstans, § 29 Klagefrist, § 32 og § 33 (klagen sendes til underinstansen) | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Habilitet (`habilitet`) | begrep | § 6 Habilitetskrav | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Forhåndsvarsel (`forhandsvarsel`) | begrep | § 16 Forhåndsvarsling | `content/begreper/regelverk.yaml` | ikke kontrollert |
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
@@ -302,6 +380,34 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Læreplanverket (`laereplanverket`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 | Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+
+### Lokale forskrifter etter opplæringsloven
+
+`udir-lokale-forskrifter` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Forskrift (`forskrift`) | begrep | Hva er en lokal forskrift? | `content/begreper/lov.yaml` | ikke kontrollert |
+| Lokal forskrift (`lokal-forskrift`) | begrep | På hvilke områder må kommunene og fylkeskommunene fastsette forskrift? | `content/begreper/lov.yaml` | ikke kontrollert |
+
+### Veileder om tilpasset opplæring og individuell tilrettelegging
+
+`udir-veileder-tilpasset-opplaering` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Enkeltvedtak (`enkeltvedtak`) | begrep | Klage på vedtaket | `content/begreper/lov.yaml` | ikke kontrollert |
+| Fra tilpasset opplæring til individuell tilrettelegging (`individuell-tilrettelegging`) | veiviser | 1.1 Tilpassing og tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Tilpasset opplæring for alle (`ti-tilpasset`) | steg | 1.1 Tilpassing og tilrettelegging, 2.1 Skolen skal tilpasse opplæringen til alle elevene | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Følge med og melde fra (`ti-folge-med`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen, 3.2 Verktøy og metoder for å følge med | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Egnede tiltak i den ordinære opplæringen (`ti-tiltak`) | steg | 4.1 Skolen skal sette inn egnede tiltak, 4.3 Elever med et åpenbart behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Er tiltakene nok? (`ti-nok`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Fortsett den tilpassede opplæringen (`ti-fortsett`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Eleven kan trenge individuell tilrettelegging (`ti-vurder-individuell`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
 
 ### Overordnet del – verdier og prinsipper for grunnopplæringen
 
@@ -588,6 +694,93 @@ Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](http
 
 Kilder å sjekke mot: [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.1-tilbudsstruktur/): Vedlegg 1, 3.1 Tilbudsstruktur (Fellesfag, felles programfag og programfag); [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/): Vedlegg 1, 3.4.1 Fellesfag; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1
 
+**Tariffavtale og særavtale** (`tariffavtale`, begrep, ikke kontrollert)
+
+- Er det riktig og presist nok å si at Hovedtariffavtalen gjelder «i hele KS-området» for fylkeskommunene?
+- Er det riktig at hovedtariffavtalen gjelder så langt særavtalen ikke sier noe annet (SFS 2213 punkt 1)?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8): Kap. 1 § 1; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 1
+
+**Tidsressurspott** (`tidsressurspott`, begrep, ikke kontrollert)
+
+- Er det dekkende å si at potten også kan brukes til å øke lærertettheten?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 7.3 a
+
+**3.4 Ledere** (`hta-ledere`, forklaring, ikke kontrollert)
+
+- Er forskjellen mellom 3.4.2 («og») og 3.4.3 («eller») tydelig nok?
+- Teksten sier ikke hvilket kapittel skoleledere får lønn etter. Er det riktig at rektor og andre skoleledere vanligvis får lønn etter 3.4.2 eller 3.4.3, eller kan de også ligge i kapittel 4?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=43): Kap. 3 punkt 3.4 (3.4.0–3.4.4); [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 8.2
+
+**Punkt 1–3 Hva avtalen gjelder** (`sfs-omfang`, forklaring, ikke kontrollert)
+
+- Er det riktig at hovedtariffavtalen og andre sentrale særavtaler gjelder så langt SFS 2213 ikke sier noe annet (punkt 1)?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 1–3
+
+**Punkt 4 Arbeidsåret** (`sfs-arbeidsaret`, forklaring, ikke kontrollert)
+
+- Avtalen sier at flere dager kan avtales «på kommune-/fylkeskommunenivå eller på den enkelte skole». Bør nivåene stå i teksten?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4
+
+**Punkt 5.1 Organisering av arbeidstiden** (`sfs-arbeidstid`, forklaring, ikke kontrollert)
+
+- Er «partene på skolen» riktig nivå for endring av den planfestede arbeidstiden (avtalen sier «ved partsenighet på den enkelte skole»)?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1
+
+**Punkt 5.2 Oversikt over arbeidstiden** (`sfs-oversikt`, forklaring, ikke kontrollert)
+
+- Avtalen sier at den kortere fristen kan avtales med tillitsvalgte eller med den enkelte lærer. Bør det stå?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.2
+
+**Punkt 5.3 Andre arbeidsoppgaver** (`sfs-andre-oppgaver`, forklaring, ikke kontrollert)
+
+- Er regelen om at selvdisponert tid reduseres med samme prosent som undervisningen, gjengitt riktig?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.3
+
+**Punkt 6 Livsfasetiltak** (`sfs-livsfasetiltak`, forklaring, ikke kontrollert)
+
+- Gjelder 6 prosent fra 57 år og 12,5 prosent fra 60 år hver for seg, slik teksten kan leses, eller erstatter 12,5 prosent de 6 prosentene?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 6
+
+**Punkt 7.3 Tidsressurser i videregående** (`sfs-tidsressurser`, forklaring, ikke kontrollert)
+
+- Er tallene for kontaktlærer og rådgiver riktig forklart som 60-minutters timer (28,5) og 45-minutters timer (38)?
+- Bør størrelsen på tidsressurspotten (2¼/3 årsrammetimer per elev) stå i teksten?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 7.3
+
+**Punkt 8 Skoleledelse** (`sfs-skoleledelse`, forklaring, ikke kontrollert)
+
+- Avtalen sier at ressursen fra foregående år «må sees som et minimum», men at nye skoler og store endringer vurderes mot sammenlignbare skoler. Er «et minimum for neste år» for bastant?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 8
+
+**Punkt 9.1 Godtgjøring for funksjoner** (`sfs-funksjoner`, forklaring, ikke kontrollert)
+
+- Teksten nevner ikke regelen om at tillegg fra lokale forhandlinger regnes inn i grunnlønnen når en funksjon legges ned. Bør den stå?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.1
+
+**Punkt 9.2–9.4 Stillingsvern, lønn og trekk** (`sfs-diverse`, forklaring, ikke kontrollert)
+
+- Er det fortsatt nyttig å nevne stillingsvernet fra 1999, eller gjelder det så få at det kan tas ut?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.2–9.4
+
+**Vedlegg 1 Årsrammer for undervisning** (`sfs-arsrammer`, forklaring, ikke kontrollert)
+
+- Står årsrammen for hvert fag på fagarket i Fag og læreplaner, slik teksten sier?
+
+Kilder å sjekke mot: [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1
+
 **Kalkulert tid** (`kalkulert-tid`, begrep, ikke kontrollert)
 
 - Er «kalkulert tid» et begrep som brukes i Visma InSchool eller lønnssystemet, eller bør det stå at det er appens navn?
@@ -607,6 +800,224 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 - Er delt dagsverk (arbeidsdagen strekker seg over 9 timer eller mer) beskrevet riktig etter hovedtariffavtalen § 5.5?
 
 Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 5.5
+
+**Garantilønn** (`garantilonn`, begrep, ikke kontrollert)
+
+- Er det riktig at tilleggene gis ved 6, 8, 10 og 16 års ansiennitet i tabellen per 1.5.2026?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=49): Kap. 4 punkt 4.1
+
+**Stillingskode** (`stillingskode`, begrep, ikke kontrollert)
+
+- Er listen over stillingskoder for undervisningsstillinger fullstendig for videregående?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=64): Vedlegg 2
+
+**Lønnsansiennitet** (`lonnsansiennitet`, begrep, ikke kontrollert)
+
+- Avtalen sier at ansienniteten beholdes ved ny stilling hos samme arbeidsgiver «med mindre det er enighet om annet». Bør forbeholdet stå?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=32): Kap. 1 § 12 og kap. 4 punkt 4.0
+
+**Konstituering** (`konstituering`, begrep, ikke kontrollert)
+
+- Er det riktig å skille konstituering fra stedfortredertjeneste på denne måten, eller kan det misforstås?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=34): Kap. 1 § 13 (13.4)
+
+**Midlertidig ansettelse** (`midlertidig-ansettelse`, begrep, ikke kontrollert)
+
+- Gjelder det særregler for midlertidig ansettelse av lærere uten godkjent utdanning i opplæringslova, som bør nevnes her?
+
+Kilder å sjekke mot: [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62/§14-9): § 14-9 Fast og midlertidig ansettelse; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=9): Kap. 1 § 2 (2.3.2)
+
+**§ 1 Hvem avtalen gjelder for** (`hta-virkeomrade`, forklaring, ikke kontrollert)
+
+- Er merknaden om undervisningspersonale (stillinger som var på statlig avtaleområde) gjengitt riktig og forståelig?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8): Kap. 1 § 1 og merknaden
+
+**§ 2 Ansettelse** (`hta-ansettelse`, forklaring, ikke kontrollert)
+
+- Avtalen sier at informasjon og drøfting om deltid skal skje minst én gang i året, og om midlertidige ansettelser og innleie minst to ganger i året. Teksten sier bare «jevnlig». Er det godt nok, eller bør hyppigheten stå?
+- Er regelen om at ansettelser for undervisningspersonale regnes fra 1.8. eller 1.1. gjengitt riktig?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=8): Kap. 1 § 2 (2.1–2.5)
+
+**§ 3 Oppsigelse og omplassering** (`hta-oppsigelse`, forklaring, ikke kontrollert)
+
+- Teksten nevner ikke de korte fristene i tall (14 dager ved prøvetid, én måned ved oppsigelse av midlertidig ansettelse). Bør tallene stå?
+- Er unntaket for undervisningspersonale med stillingsvern fra før 1.8.1999 relevant nok til å stå med?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=10): Kap. 1 § 3 (3.1–3.4)
+
+**§ 4 Arbeidstid** (`hta-arbeidstid`, forklaring, ikke kontrollert)
+
+- Er det riktig å si at § 4 «særlig» gjelder for andre ansatte enn undervisningspersonalet, eller gjelder deler av § 4 også for lærere (for eksempel tjenestereiser, punkt 4.7)?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=12): Kap. 1 § 4 (4.1–4.2)
+
+**§ 6 Overtid** (`hta-overtid`, forklaring, ikke kontrollert)
+
+- Avtalen nevner arbeidsmiljøloven § 10-12 og HTA kap. 3 punkt 3.4, og at arbeidsgiver vurderer ledere i 3.4.2 og 3.4.3 konkret. Er unntaket for ledere riktig gjengitt?
+- Teksten nevner ikke prosenttilleggene i 6.5. Gjelder de også for overtid i undervisning, eller bare satsene i SFS 2213 og § 12.4?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=20): Kap. 1 § 6 (6.1–6.4)
+
+**§ 7 Ferie** (`hta-ferie`, forklaring, ikke kontrollert)
+
+- Avtalen sier at ferien avsluttes siste virkedag i juli. Teksten sier «fram til siste virkedag i juli». Er det riktig forstått?
+- Er vilkårene for full lønn i ferien første yrkesår og etter studiepermisjon forenklet på en måte som kan misforstås?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=23): Kap. 1 § 7 (7.1–7.4)
+
+**§ 8 Lønn under sykdom og foreldrepermisjon** (`hta-sykdom`, forklaring, ikke kontrollert)
+
+- Er regelen om 50 uker de siste tre årene og ny rett etter 26 uker i arbeid gjengitt riktig?
+- Er det dekkende å si at refusjonen kommer fra NAV, når avtalen sier at refusjonsbeløpet tilfaller arbeidsgiver?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=25): Kap. 1 § 8 (innledningen og 8.1–8.2)
+
+**§ 12 Ansiennitet, deltid og vikarer** (`hta-ansiennitet`, forklaring, ikke kontrollert)
+
+- Teksten nevner ikke at arbeid i hjemmet kan telle med inntil seks år ved ansettelse i stilling uten krav om utdanning. Er det greit å utelate for skoleledere?
+- Er det riktig at timelønnen for undervisning regnes ut i kalkulatoren Vikartimer?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=32): Kap. 1 § 12 (12.1–12.4)
+
+**§ 13 Stedfortreder og konstituering** (`hta-stedfortreder`, forklaring, ikke kontrollert)
+
+- Avtalen sier at konstituering gir den lønnen vedkommende «ville fått ved opprykk til stillingen». Er «lønnen for stillingen» en god nok forenkling?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=33): Kap. 1 § 13 (13.1–13.4)
+
+**§ 14 Permisjon** (`hta-permisjon`, forklaring, ikke kontrollert)
+
+- Avtalen setter som vilkår for lesedager at den ansatte ville hatt ordinært arbeid de to dagene før eksamen. Bør vilkåret stå?
+- Er det tydelig at velferdspermisjon med lønn er noe som «kan» gis, ikke en rett?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=34): Kap. 1 § 14 (14.1–14.4)
+
+**Kapittel 2 Lærlinger** (`hta-laerlinger`, forklaring, ikke kontrollert)
+
+- Prosentsatsene per halvår står ikke i teksten. Bør appen vise dem (for eksempel 30, 40, 50 og 80 prosent i hovedmodellen), eller er det best å lenke til avtalen?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=36): Kap. 2 (2.1)
+
+**3.2 Lokal lønnspolitikk** (`hta-lonnspolitikk`, forklaring, ikke kontrollert)
+
+- Avtalen sier at møtetidspunktet for lønnsutviklingssamtalen skal avtales innen 14 dager, ikke at møtet skal holdes innen 14 dager. Teksten sier «med møte innen 14 dager». Bør den endres?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=40): Kap. 3 punkt 3.2 (3.2.1–3.2.4)
+
+**3.3 Kompetanse** (`hta-kompetanse`, forklaring, ikke kontrollert)
+
+- Er det nyttig for skoleledere at dette punktet står med, eller blir det for generelt?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=42): Kap. 3 punkt 3.3
+
+**4.0–4.1 Sentrale lønnsbestemmelser og garantilønn** (`hta-sentral-lonn`, forklaring, ikke kontrollert)
+
+- Noen stillinger ligger i kapittel 5 eller 3.4. Er det riktig å si at «de fleste andre stillinger på skolen» får lønn etter kapittel 4?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=48): Kap. 4 punkt 4.0–4.1
+
+**4.2 og kapittel 5 Lokale forhandlinger** (`hta-forhandlinger`, forklaring, ikke kontrollert)
+
+- Arbeidsgiverens siste tilbud gjelder ved uenighet etter 4.2.3 og 4.2.4, men ikke etter 4.2.1 og 4.2.2 (der kan tvisten ankes). Er «ved noen av disse forhandlingene» tydelig nok?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=50): Kap. 4 punkt 4.2 og kap. 5
+
+**Vedlegg 2 Lønn og stillingskode for undervisningspersonale** (`hta-vedlegg2`, forklaring, ikke kontrollert)
+
+- Avtalen har to veier til adjunkt for faglærere i yrkesfag (med 2-årig yrkesteoretisk utdanning og PPU, eller med 3-årig yrkesfaglærerutdanning), begge med fire års yrkespraksis. Er kravene forenklet for mye?
+- Er det riktig at minstelønn «som om utdanningen var fullført» gjelder dem som fyller de faglige kravene og har fag i læreplanen?
+
+Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf#page=64): Vedlegg 2
+
+**Oppsigelse og avskjed** (`oppsigelse-og-avskjed`, begrep, ikke kontrollert)
+
+- Er «avskil» riktig nynorsk for avskjed i denne sammenhengen?
+- Bør forklaringen nevne at oppsigelsesfristen etter Hovedtariffavtalen som hovedregel er tre måneder?
+
+Kilder å sjekke mot: [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62/§15-7): § 15-7 Vern mot usaklig oppsigelse; [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62/§15-14): § 15-14 Avskjed
+
+**Lov** (`lov`, begrep, ikke kontrollert)
+
+- Er «Lovene gir de viktigste rettighetene og pliktene» en dekkende og ikke misvisende forenkling av forholdet mellom lov og forskrift?
+- Bør begrepet nevne Grunnloven, eller er det unødvendig for brukerne av appen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§1-6): § 1-6 Fag- og timefordeling og tilbodsstruktur (døme på at departementet gir forskrift); [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-4): § 5-4 Innhald, vurdering og dokumentasjon i den vidaregåande opplæringa
+
+**Lokal forskrift** (`lokal-forskrift`, begrep, ikke kontrollert)
+
+- Udir nevner også hovedmål for hver skole. Er listen over lokale forskrifter fylkeskommunen skal gi (skolereglar, skolerute, inntak og formidling), dekkende for videregående opplæring?
+- Er det greit at lokale forskrifter bare vises for dem som har valgt fylket, og at de hentes fra Lovdata fire ganger i året?
+
+Kilder å sjekke mot: [Lokale forskrifter etter opplæringsloven](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/): På hvilke områder må kommunene og fylkeskommunene fastsette forskrift?; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-5): § 4-5 Lokal forskrift om inntak
+
+**Paragraf og ledd** (`paragraf`, begrep, ikke kontrollert)
+
+- Er forklaringen av hvordan ledd telles (avsnittene i paragrafen, ovenfra) riktig også når et ledd har en liste?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-1): Kapittel 11 Tilpassa opplæring og individuell tilrettelegging (§ 11-1); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-1): § 4-1 Kven som har rett til vidaregåande opplæring (ledd og bokstavar)
+
+**Aktivitetsplikt** (`aktivitetsplikt`, begrep, ikke kontrollert)
+
+- Bør forklaringen nevne at rektor skal melde fra til fylkeskommunen i alvorlige tilfeller?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§12-4): § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø
+
+**Bortvisning** (`bortvising`, begrep, ikke kontrollert)
+
+- Loven sier at en elev ikke kan vises bort dersom mindre inngripende tiltak er tilstrekkelige. Er «må være prøvd eller ikke være nok» en riktig gjengivelse, eller strengere enn loven?
+- Er det riktig at bortvisning for resten av skoleåret ikke kan delegeres til skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§13-1): § 13-1 Bortvising
+
+**Skoleregler** (`skoleregler`, begrep, ikke kontrollert)
+
+- Er det riktig at skolereglene er en forskrift fra fylkeskommunen, og ikke fra den enkelte skolen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
+
+**Fra tilpasset opplæring til individuell tilrettelegging** (`individuell-tilrettelegging`, veiviser, ikke kontrollert)
+
+- Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/kap11): Kapittel 11 Tilpassa opplæring og individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging
+
+**Forskrift** (`forskrift`, begrep, ikke kontrollert)
+
+- Er det riktig å skrive at opplæringsforskrifta er gitt av Kunnskapsdepartementet, eller bør det stå at den er fastsatt ved kongelig resolusjon eller av departementet etter delegering?
+- Er «for et ubestemt antall personer» en forståelig omskriving av «et ubestemt antall eller en ubestemt krets av personer» i forvaltningsloven § 2?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§2): § 2 første ledd bokstav c (forskrift); [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900): Innleiinga (heimel og kven som har fastsett forskrifta); [Lokale forskrifter etter opplæringsloven](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/lokale-forskrifter-etter-ny-opplaringslov/): Hva er en lokal forskrift?
+
+**Enkeltvedtak** (`enkeltvedtak`, begrep, ikke kontrollert)
+
+- Er eksemplene (individuelt tilrettelagt opplæring, inntak, fritak og bortvisning) riktige og nyttige for videregående?
+- Er «tre uker fra eleven og foreldrene fikk vite om vedtaket» riktig gjengitt for elever over 18 år, der foreldrene ikke er part?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§2): § 2 første ledd bokstav b (enkeltvedtak); [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 28 og § 29 (klage og klagefrist); [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/): Klage på vedtaket; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/kap10): Kapittel 10 Klage på sluttvurderingar
+
+**Klage på enkeltvedtak** (`klage`, begrep, ikke kontrollert)
+
+- Opplæringslova har egne regler om klageinstans for noen vedtak (for eksempel statsforvalteren). Bør forklaringen si at klageinstansen kan følge av opplæringslova?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§28): § 28 Vedtak som kan påklages, klageinstans; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§33): § 32 og § 33 (klagen sendes til underinstansen)
+
+**Habilitet** (`habilitet`, begrep, ikke kontrollert)
+
+- Er eksemplet om vedtak som gjelder egne barn eller nære slektninger et godt og riktig eksempel fra skolen?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§6): § 6 Habilitetskrav
+
+**Forhåndsvarsel** (`forhandsvarsel`, begrep, ikke kontrollert)
+
+- Loven sier «representert av verge». Er «representert av foreldre» en riktig forenkling for elever under 18 år?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§16): § 16 Forhåndsvarsling
 
 **Grunnleggende ferdigheter** (`grunnleggende-ferdigheter`, begrep, ikke kontrollert)
 
@@ -700,6 +1111,45 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 - Er teksten, som nå bygger på kapittel 3 i Udirs skriv om føring av vitnemål og kompetansebevis, riktig og dekkende?
 
 Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader](https://kodeverk.vigo.no/): Vitnemålsmerknader
+
+**Tilpasset opplæring for alle** (`ti-tilpasset`, steg, ikke kontrollert)
+
+- Stemmer «Ingen egen dokumentasjon» for tilpasset opplæring, eller forventer Udir eller fylket at skolen dokumenterer noe her?
+- Er «skolen og lærerne» riktig ansvar, eller bør fylkeskommunen som skoleeier stå først?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilpasset-opplaring/#skolen-skal-tilpasse-opplaringen-til-alle-elevene): punkt 2.1 Skolen skal tilpasse opplæringen til alle elevene
+
+**Følge med og melde fra** (`ti-folge-med`, steg, ikke kontrollert)
+
+- Er det riktig å skrive at loven bare krever at læreren melder fra, og ikke noen skriftlig dokumentasjon på dette steget?
+- Bør steget si hvordan meldingen til rektor bør gis (muntlig eller skriftlig), eller er det skolens sak?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen): punkt 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#verktoy-metoder-folge-med): punkt 3.2 Verktøy og metoder for å følge med
+
+**Egnede tiltak i den ordinære opplæringen** (`ti-tiltak`, steg, ikke kontrollert)
+
+- Er eksemplene på tiltak (annen organisering, arbeidsmåter, læremidler, kort periode i mindre gruppe) riktige for videregående, og innenfor det skolen kan gjøre uten vedtak?
+- Er nivådeling etter § 14-2 tredje ledd riktig gjengitt?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#skolen-skal-sette-inn-egnede-tiltak): punkt 4.1 Skolen skal sette inn egnede tiltak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#elever-med-apenbart-behov-individuell-tilrettelegging): punkt 4.3 Elever med et åpenbart behov for individuell tilrettelegging
+
+**Er tiltakene nok?** (`ti-nok`, steg, ikke kontrollert)
+
+- Er det riktig at en forespørsel fra eleven eller foreldrene alltid skal gi et vedtak, også når skolen mener eleven ikke trenger individuell tilrettelegging?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging
+
+**Fortsett den tilpassede opplæringen** (`ti-fortsett`, steg, ikke kontrollert)
+
+- Er utfallet formulert slik at det ikke kan leses som at skolen er ferdig med eleven?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen): punkt 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen
+
+**Eleven kan trenge individuell tilrettelegging** (`ti-vurder-individuell`, steg, ikke kontrollert)
+
+- Er skillet mellom individuelt tilrettelagt opplæring (krever sakkyndig vurdering) og personlig assistanse og fysisk tilrettelegging (krever det ikke) riktig og tydelig nok?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging
 
 **Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
 

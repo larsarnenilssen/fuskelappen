@@ -3961,3 +3961,501 @@ p.fagkort-tittel {
 .lov-avtalekilder li + li {
   margin-top: var(--rom-1);
 }
+
+/* Veiviser (avgjørelse 041). Mobil: fasestolpe, veien hit som en linje med punkter, det gjeldende steget som kort på
+   linjen, og veien videre (spørsmål og knapper) under kortet. Stor skjerm: prosessen med fasene og stegene i en
+   kolonne til venstre, kortet og knappene til høyre. */
+.veiviser {
+  margin-top: var(--rom-4);
+}
+
+.veiviser-sidekolonne {
+  display: none;
+}
+
+.veiviser-faser {
+  display: flex;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-fase {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: var(--str-xs);
+  line-height: 1.3;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-fase-strek {
+  display: block;
+  height: 0.375rem;
+  margin-bottom: var(--rom-1);
+  border-radius: 999px;
+  background: var(--farge-linje);
+}
+
+.veiviser-fase-navn {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.15rem;
+  overflow-wrap: anywhere;
+}
+
+.veiviser-fase-navn .ikon {
+  flex: none;
+}
+
+.veiviser-fase-ferdig .veiviser-fase-strek {
+  background: var(--farge-ok);
+}
+
+.veiviser-fase-ferdig .veiviser-fase-navn {
+  color: var(--farge-ok);
+}
+
+.veiviser-fase-gjeldende .veiviser-fase-strek {
+  height: 0.5rem;
+  margin-top: -0.0625rem;
+  background: var(--farge-merke);
+}
+
+.veiviser-fase-gjeldende .veiviser-fase-navn {
+  color: var(--farge-tekst);
+  font-weight: 700;
+}
+
+/* Linjen til venstre binder veien hit, kortet og veien videre sammen. */
+.veiviser-lop {
+  position: relative;
+  padding-left: var(--rom-5);
+}
+
+.veiviser-lop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.4375rem;
+  border-left: 2px solid var(--farge-linje);
+}
+
+.veiviser-vei-nav::before {
+  top: var(--rom-3);
+}
+
+.veiviser-vei {
+  margin: 0;
+  padding: 0 0 var(--rom-3);
+  list-style: none;
+}
+
+.veiviser-vei-punkt {
+  position: relative;
+  padding: var(--rom-1) 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+.veiviser-vei-punkt::before {
+  content: '';
+  position: absolute;
+  top: 0.6rem;
+  left: calc(-1 * var(--rom-5) + 0.1875rem);
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--farge-ok);
+}
+
+.veiviser-vei-punkt a {
+  font-weight: 600;
+}
+
+.veiviser-svar-valgt {
+  display: block;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-steg {
+  position: relative;
+  /* Toppfeltet er alt med i scroll-padding. Luften over viser det siste punktet på veien, med svaret som ble valgt. */
+  scroll-margin-top: 4.5rem;
+  padding: var(--rom-3) var(--rom-4) 0;
+  background: var(--farge-flate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+}
+
+.veiviser-steg::before {
+  content: '';
+  position: absolute;
+  top: var(--rom-4);
+  left: calc(-1 * var(--rom-5) - var(--strek));
+  width: 1rem;
+  height: 1rem;
+  border: 3px solid var(--farge-merke);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
+.veiviser-steg-utfall {
+  border: 2px solid var(--farge-ok);
+}
+
+.veiviser-steg-utfall::before {
+  border-color: var(--farge-ok);
+  background: var(--farge-ok);
+}
+
+.veiviser-stegnr {
+  margin: 0;
+  font-size: var(--str-xs);
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-stegtittel {
+  margin: var(--rom-1) 0 var(--rom-2);
+  font-size: var(--str-xl);
+  line-height: 1.25;
+}
+
+.veiviser-steg .brodtekst > :last-child {
+  margin-bottom: 0;
+}
+
+.veiviser-fakta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0;
+}
+
+.veiviser-fakta-rad {
+  padding: var(--rom-2) var(--rom-3);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+}
+
+.veiviser-fakta-rad dt {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.veiviser-fakta-rad dd {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.paragraflenker .liten-overskrift {
+  margin: var(--rom-3) 0 var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.paragraflenker-dokument ul {
+  margin: 0 0 var(--rom-1);
+  padding: 0;
+  list-style: none;
+}
+
+.paragraflenker-dokument li {
+  padding: 0.125rem 0;
+  font-size: var(--str-s);
+}
+
+.paragraflenker-navn {
+  margin: 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.paragraflenker-nr {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* «Mer om dette steget» og «Kilder» som to lave rader nederst i kortet, adskilt med strek. */
+.veiviser-mer {
+  margin: var(--rom-3) calc(-1 * var(--rom-4)) 0;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.veiviser-mer .forklaring {
+  margin: 0;
+  border: 0;
+  border-bottom: var(--strek) solid var(--farge-linje);
+  border-radius: 0;
+  background: none;
+}
+
+.veiviser-mer .forklaring-knapp {
+  padding-inline: var(--rom-4);
+}
+
+.veiviser-mer .forklaring-innhold {
+  padding: 0 var(--rom-4) var(--rom-3);
+}
+
+.veiviser-kilder > summary {
+  list-style: none;
+}
+
+.veiviser-kilder > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Pilen peker opp når kildene er åpne, som i Forklaring. */
+.veiviser-kilder[open] > summary .forklaring-pil {
+  transform: rotate(180deg);
+}
+
+.veiviser-kilder .kildeliste {
+  padding: 0 var(--rom-4) var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.veiviser-kilder .kildeliste ul {
+  margin: 0;
+}
+
+/* Veien videre: spørsmålet og svarene under kortet, på linjen. Et trykk gir neste kort her. */
+.veiviser-videre {
+  position: relative;
+  padding: var(--rom-5) 0 var(--rom-2);
+}
+
+.veiviser-videre::before {
+  content: '';
+  position: absolute;
+  top: calc(var(--rom-5) + 0.35rem);
+  left: calc(-1 * var(--rom-5) + 0.1875rem);
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 2px solid var(--farge-merke);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
+.veiviser-videre-slutt::before {
+  display: none;
+}
+
+.veiviser-sporsmal-tekst {
+  margin: 0 0 var(--rom-3);
+  font-size: var(--str-l);
+  line-height: 1.35;
+}
+
+.veiviser-svarliste {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-svarknapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  min-height: 3.25rem;
+  padding: var(--rom-3) var(--rom-3) var(--rom-3) var(--rom-4);
+  border: 2px solid var(--farge-merke);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-lenke);
+  font-size: var(--str-l);
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: none;
+  box-shadow: var(--skygge-knapp);
+  transition: background var(--varighet);
+}
+
+.veiviser-svarknapp:hover {
+  background: var(--farge-flate-2);
+}
+
+.veiviser-svarknapp .ikon {
+  flex: none;
+}
+
+/* Steg uten spørsmål: én fylt knapp til neste steg. */
+.veiviser-neste {
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+}
+
+.veiviser-neste:hover {
+  background: var(--farge-merke);
+  filter: brightness(1.1);
+}
+
+.veiviser-neste-etikett {
+  display: block;
+  font-size: var(--str-xs);
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.veiviser-oppsummering .knapp {
+  text-decoration: none;
+}
+
+.veiviser-oppsummering p[role='status'] {
+  min-height: 1.5em;
+  margin: var(--rom-1) 0 0;
+}
+
+.veiviser-inngang-faser {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1);
+  margin-top: var(--rom-1);
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-inngang-faser span:not(:last-child)::after {
+  content: ' →';
+}
+
+/* Prosessen i sidekolonnen på stor skjerm: fasene som punkter på en linje, med stegene på veien under hver fase. */
+.veiviser-prosess-faser,
+.veiviser-prosess-steg {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.veiviser-prosess-fase {
+  position: relative;
+  padding: 0 0 var(--rom-4) var(--rom-6);
+}
+
+.veiviser-prosess-fase:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: 1.5rem;
+  bottom: 0.25rem;
+  left: 0.6875rem;
+  border-left: 2px solid var(--farge-linje);
+}
+
+.veiviser-prosess-ferdig:not(:last-child)::before {
+  border-color: var(--farge-ok);
+}
+
+.veiviser-prosess-fasenavn {
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.veiviser-prosess-merke {
+  position: absolute;
+  top: 0.125rem;
+  left: calc(-1 * var(--rom-6));
+  display: grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 0.125rem;
+  border: 2px solid var(--farge-linje);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
+.veiviser-prosess-ferdig .veiviser-prosess-merke {
+  border: 0;
+  color: var(--farge-ok);
+}
+
+.veiviser-prosess-ferdig .veiviser-prosess-merke .ikon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.veiviser-prosess-gjeldende .veiviser-prosess-merke {
+  border: 4px solid var(--farge-merke);
+}
+
+.veiviser-prosess-senere .veiviser-prosess-fasenavn {
+  font-weight: 600;
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-prosess-steg {
+  margin-top: var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.veiviser-prosess-steg li {
+  padding: var(--rom-1) var(--rom-2);
+  border-left: 3px solid transparent;
+}
+
+.veiviser-prosess-steg .veiviser-prosess-naa {
+  border-left-color: var(--farge-merke);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  background: var(--farge-flate-2);
+  font-weight: 700;
+}
+
+@media (min-width: 64rem) {
+  main:has(.veiviser-med-faser) {
+    max-width: 66rem;
+  }
+
+  .veiviser-med-faser {
+    display: grid;
+    grid-template-columns: 17rem minmax(0, 1fr);
+    align-items: start;
+    gap: var(--rom-6);
+  }
+
+  .veiviser-med-faser .veiviser-sidekolonne {
+    display: block;
+    position: sticky;
+    top: calc(var(--topplinje-hoyde) + var(--rom-5));
+  }
+
+  .veiviser-med-faser .veiviser-hoved > .veiviser-faser,
+  .veiviser-med-faser .veiviser-vei-nav {
+    display: none;
+  }
+
+  /* Linjen og punktene står i sidekolonnen, så de trengs ikke ved kortet. */
+  .veiviser-med-faser .veiviser-lop {
+    padding-left: 0;
+  }
+
+  .veiviser-med-faser .veiviser-lop::before,
+  .veiviser-med-faser .veiviser-steg::before,
+  .veiviser-med-faser .veiviser-videre::before {
+    display: none;
+  }
+
+  .veiviser-med-faser .veiviser-steg {
+    padding: var(--rom-4) var(--rom-5) 0;
+  }
+
+  .veiviser-med-faser .veiviser-mer {
+    margin-inline: calc(-1 * var(--rom-5));
+  }
+
+  .veiviser-med-faser .veiviser-mer .forklaring-knapp {
+    padding-inline: var(--rom-5);
+  }
+
+  .veiviser-svarliste {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}

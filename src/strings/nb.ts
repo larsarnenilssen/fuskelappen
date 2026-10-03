@@ -5,6 +5,7 @@ import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
 import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
+import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
 
 export const nb = {
   app: {
@@ -202,6 +203,34 @@ export const nb = {
     aapneKilde: 'Åpne kilden',
   },
   komponenter: {
+    veiviser: {
+      prosessen: 'Prosessen',
+      kilder: 'Kilder ({antall})',
+      faser: 'Fasene i prosessen',
+      faseFerdig: 'ferdig',
+      faseGjeldende: 'du er her',
+      faseSenere: 'senere',
+      steg: 'Steg {nr}',
+      utfall: 'Resultat',
+      veienHit: 'Veien hit',
+      tilbakeTil: 'Gå tilbake til «{steg}»',
+      ansvar: 'Ansvar',
+      dokumentasjon: 'Dokumentasjon',
+      frist: 'Frist',
+      regelverk: 'I regelverket',
+      merOm: 'Mer om dette steget',
+      neste: 'Neste',
+      svar: 'Svar',
+      dittSvar: 'Svar: {svar}',
+      startPaaNytt: 'Start på nytt',
+      korrigert: 'Lenken passet ikke helt med veiviseren. Du står på det siste steget lenken førte fram til.',
+      oppsummering: 'Oppsummering',
+      kopier: 'Kopier oppsummeringen',
+      kopiert: 'Kopiert',
+      kopierFeilet: 'Kunne ikke kopiere. Marker teksten og kopier den selv.',
+      kopiOverskrift: '{tittel} – oppsummering',
+      kopiLaget: 'Laget med {app} {dato}. Sjekk kildene før du bruker oppsummeringen.',
+    },
     forklaring: {
       vis: 'Vis forklaring',
       skjul: 'Skjul forklaring',
@@ -252,6 +281,10 @@ export const nb = {
     offlineKlar: 'Appen kan nå brukes uten nett.',
   },
   moduler: {
+    tilrettelegging: {
+      navn: 'Tilrettelegging',
+      beskrivelse: 'Tilpasset opplæring, individuell tilrettelegging og språkopplæring.',
+    },
     laereplanverket: {
       navn: 'Overordnet del',
       beskrivelse: 'Verdier, prinsipper, ferdigheter og temaer.',
@@ -282,6 +315,7 @@ export const nb = {
   opplaeringslop: opplaeringslopNb,
   laereplanverket: laereplanverketNb,
   lov: lovNb,
+  tilrettelegging: tilretteleggingNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',
