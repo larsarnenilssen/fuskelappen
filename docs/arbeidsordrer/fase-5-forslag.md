@@ -254,3 +254,7 @@ F1–F6 og F8 er uendret. F7 er endret, og F9 er ny:
 | F7 | Vg3, studieforberedende. Vg1: standpunkt 4, 5, 3, 4, 5 og halvårsvurdering i norsk 3. Vg2: standpunkt 4, 3, 5, 4 og halvårsvurdering i norsk 4. Faget med 3 på Vg2 er tatt på nytt som privatist med 5 | Halvårsvurderingen i norsk fra Vg1 teller ikke. Privatistkarakteren 5 brukes. (21 + 18 + 4) / 10 = 4,30 × 10 | **43,0** |
 | F7b | Som F7, uten privatisteksamen | (21 + 16 + 4) / 10 = 4,10 × 10 | **41,0** |
 | F9 | Avrunding ved nøyaktig halv: Vg2 med karakterene 4, 4, 4, 4, 4, 4, 4, 5 | 33 / 8 = 4,125 → 4,13 × 10 | **41,3** |
+
+### Godkjenning (eier 03.10.2026)
+
+Eier godkjente fasittestene F1–F9 med F7b, «så lenge de er kildebekreftet eller matematiske». Alle bygger på ordlyden i ofo. § 4-19 og § 4-25 og Udirs merknader til dem (F1–F8), eller på avrundingsregelen alene (F9). De legges inn i `tests/fasit/` i pakke 3. Pakke 1 starter.
