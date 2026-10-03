@@ -28,7 +28,8 @@ test.describe('veiviser', () => {
     await page.getByRole('link', { name: /^Nei, eller eleven eller foreldrene/ }).click();
     await page.getByRole('link', { name: 'Bare personlig assistanse eller fysisk tilrettelegging' }).click();
     await page.getByRole('link', { name: 'Avslag' }).click();
-    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Vedtak/);
+    // Listeform: venter til den forrige siden er borte, så det bare står ett steg (Chromium mobil, 03.10.2026).
+    await expect(page.locator('.veiviser-stegnr')).toHaveText([/^Her ender veien · Vedtak/]);
     await expect(page.getByRole('button', { name: 'Kopier oppsummeringen' })).toBeVisible();
 
     // Tilbake i nettleseren går én side tilbake, og lenken under knappene går til forrige valg.
@@ -161,7 +162,7 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     await expect(page).toHaveURL(/steg=sp-oppfolging&svar=ja\.nei\.ja\.ja\.nei$/);
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await expect(steg).toHaveText(['Over til vanlig opplæring']);
-    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Oppfølging/);
+    await expect(page.locator('.veiviser-stegnr')).toHaveText([/^Her ender veien · Oppfølging/]);
   });
 
   test('læreplanene står i en boks med kompetansegivende, vurdering og fagkodene', async ({ page }) => {
