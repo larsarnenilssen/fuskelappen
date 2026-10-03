@@ -194,3 +194,99 @@
     - "Teksten er skrevet om etter eiers svar 01.10.2026: kryssløp krever ikke yrkesfaglig opphenting, som er for elever som bytter fra vg1 studiespesialisering til et vg2 som ikke er et kryssløp. Er den nå riktig?"
   stikkord: [kryssløp, yrkesfaglig opphenting, YFO, studiespesialisering]
   relatert: [programomrade, utdanningsprogram]
+
+# Begreper om skoler, læretid i bedrift og opplæringskontorer (eier 03.10.2026, avgjørelse 053). Bygger på
+# opplæringslova kapittel 5 og 7 og Udir-1-2026. Egne ord, ikke kopiert.
+- id: opplaeringskontor
+  type: begrep
+  tittel: { nb: Opplæringskontor, nn: Opplæringskontor }
+  tekst:
+    nb: Et opplæringskontor er et samarbeidsorgan for lærebedrifter. Lærebedrifter som er knyttet til et opplæringskontor, kan avtale at kontoret inngår lærekontrakten og tar imot tilskuddet til opplæringen på vegne av bedriften. Udirs register for fag- og yrkesopplæring (NOR) viser hvilke fylker hvert opplæringskontor er godkjent i.
+    nn: Eit opplæringskontor er eit samarbeidsorgan for lærebedrifter. Lærebedrifter som er knytte til eit opplæringskontor, kan avtale at kontoret inngår lærekontrakten og tek imot tilskotet til opplæringa på vegner av bedrifta. Registeret til Udir for fag- og yrkesopplæring (NOR) viser kva fylke kvart opplæringskontor er godkjent i.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-12 Samarbeidsorgan for lærebedrifter (opplæringskontor)", url: "https://lovdata.no/lov/2023-06-09-30/§7-12" }
+    - { id: udir-nor, punkt: "Relasjonen «Godkjent i fylker struktur»" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Når opplæringskontoret har inngått lærekontrakten (§ 7-12), hvem har da ansvaret for opplæringen etter § 7-6 første ledd: kontoret eller bedriften der lærlingen arbeider? Bør begrepet si noe om det?"
+    - "Bør begrepet si hva opplæringskontorene vanligvis gjør, for eksempel følger opp lærlinger og instruktører? Det står ikke i loven."
+  stikkord: [opplæringskontoret, samarbeidsorgan, lærekontrakt, tilskudd, NOR]
+  relatert: [laerebedrift, kontrakt-om-opplaering, laerling]
+
+- id: laerebedrift
+  type: begrep
+  tittel: { nb: Lærebedrift, nn: Lærebedrift }
+  tekst:
+    nb: En lærebedrift er en bedrift som fylkeskommunen har godkjent til å gi opplæring i bedrift. Før fylkeskommunen godkjenner bedriften, må yrkesopplæringsnemnda vurdere den faglig, og fylkeskommunen skal legge avgjørende vekt på den vurderingen. Lærebedriften skal gi opplæring etter læreplanene i lærefaget og ha minst én faglig kvalifisert person med ansvar for opplæringen og én eller flere instruktører. Den kan avtale at deler av opplæringen skjer i en annen lærebedrift, men ansvaret ligger hos lærebedriften som kontrakten om opplæring er inngått med.
+    nn: Ei lærebedrift er ei bedrift som fylkeskommunen har godkjent til å gi opplæring i bedrift. Før fylkeskommunen godkjenner bedrifta, må yrkesopplæringsnemnda vurdere ho fagleg, og fylkeskommunen skal leggje avgjerande vekt på den vurderinga. Lærebedrifta skal gi opplæring etter læreplanane i lærefaget og ha minst éin fagleg kvalifisert person med ansvar for opplæringa og éin eller fleire instruktørar. Ho kan avtale at delar av opplæringa skjer i ei anna lærebedrift, men ansvaret ligg hos lærebedrifta som kontrakten om opplæring er inngått med.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-5 Godkjenning av lærebedrifter", url: "https://lovdata.no/lov/2023-06-09-30/§7-5" }
+    - { id: opplaeringslova, punkt: "§ 7-6 Krav til lærebedrifter", url: "https://lovdata.no/lov/2023-06-09-30/§7-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Godkjennes en lærebedrift for bestemte lærefag? § 7-5 sier det ikke direkte, så begrepet nevner det ikke. Bør det stå?"
+  stikkord: [lærebedrifta, godkjenning, yrkesopplæringsnemnd, instruktør, faglig leder]
+  relatert: [opplaeringskontor, kontrakt-om-opplaering, laerling, opplaering-i-bedrift]
+
+- id: laerling
+  type: begrep
+  tittel: { nb: Lærling, nn: Lærling }
+  tekst:
+    nb: En lærling har skrevet en lærekontrakt med sikte på fagprøve eller svenneprøve i et fag med læretid. Opplæringslova har fire grupper som har læretid i bedrift. I tillegg til lærlingen er det praksisbrevkandidaten, som har en opplæringskontrakt med sikte på praksisbrevprøve, lærekandidaten, som har en opplæringskontrakt med sikte på en mindre omfattende prøve enn fag- eller svenneprøve, og kandidaten for fagbrev på jobb, som har en kontrakt om opplæring på grunnlag av allsidig praksis og realkompetanse, med sikte på fag- eller svenneprøve. Når fylkeskommunen har ansvaret for opplæringen, gjelder reglene for elever også for lærlinger, praksisbrevkandidater og lærekandidater.
+    nn: Ein lærling har skrive ein lærekontrakt med sikte på fagprøve eller sveineprøve i eit fag med læretid. Opplæringslova har fire grupper som har læretid i bedrift. I tillegg til lærlingen er det praksisbrevkandidaten, som har ein opplæringskontrakt med sikte på praksisbrevprøve, lærekandidaten, som har ein opplæringskontrakt med sikte på ei mindre omfattande prøve enn fag- eller sveineprøve, og kandidaten for fagbrev på jobb, som har ein kontrakt om opplæring på grunnlag av allsidig praksis og realkompetanse, med sikte på fag- eller sveineprøve. Når fylkeskommunen har ansvaret for opplæringa, gjeld reglane for elevar også for lærlingar, praksisbrevkandidatar og lærekandidatar.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 andre, tredje og fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Loven (på nynorsk) skriver «sveineprøve». Er «svenneprøve» riktig på bokmål i appen?"
+    - "Er setningen om at reglene for elever gjelder for lærlinger, praksisbrevkandidater og lærekandidater når fylkeskommunen har ansvaret (§ 7-1 tredje ledd), forståelig uten mer forklaring?"
+  stikkord: [lærlinger, lærekandidat, praksisbrevkandidat, fagbrev på jobb, læretid, fagprøve, svenneprøve]
+  relatert: [kontrakt-om-opplaering, laerebedrift, opplaering-i-bedrift, sluttkompetanse]
+
+- id: kontrakt-om-opplaering
+  type: begrep
+  tittel: { nb: Kontrakt om opplæring, nn: Kontrakt om opplæring }
+  lenkeord: { nb: [lærekontrakt, opplæringskontrakt], nn: [lærekontrakt, opplæringskontrakt] }
+  tekst:
+    nb: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med en lærebedrift før opplæringen begynner. For lærlingen heter den lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten sier hva som er målet for opplæringen og hvem som har ansvaret for de ulike delene av den, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og den kan bare endres når fylkeskommunen samtykker. Kontrakten gjelder fra opplæringen begynner, selv om godkjenningen kommer senere. Fylkeskommunen kan godkjenne kontrakter som avviker fra det fastsatte opplæringsløpet.
+    nn: Den som skal ha læretid i bedrift, skal skrive kontrakt om opplæring med ei lærebedrift før opplæringa tek til. For lærlingen heiter han lærekontrakt, og for praksisbrevkandidaten og lærekandidaten opplæringskontrakt. Kontrakten seier kva som er målet for opplæringa og kven som har ansvaret for dei ulike delane av ho, og viser til arbeidsavtalen. Fylkeskommunen skal godkjenne kontrakten, og han kan berre endrast når fylkeskommunen samtykkjer. Kontrakten gjeld frå opplæringa tek til, sjølv om godkjenninga kjem seinare. Fylkeskommunen kan godkjenne kontraktar som avvik frå det fastsette opplæringsløpet.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 7-1 fjerde ledd", url: "https://lovdata.no/lov/2023-06-09-30/§7-1" }
+    - { id: opplaeringslova, punkt: "§ 7-2 Inngåing og endring av kontrakt om opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§7-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det dekkende å si at kontrakten heter lærekontrakt for lærlinger og opplæringskontrakt for praksisbrevkandidater og lærekandidater (§ 7-1 fjerde ledd)?"
+  stikkord: [lærekontrakt, opplæringskontrakt, kontrakt, godkjenning, arbeidsavtale]
+  relatert: [laerling, laerebedrift, opplaeringskontor]
+
+- id: generell-studiekompetanse
+  type: begrep
+  tittel: { nb: Generell studiekompetanse, nn: Generell studiekompetanse }
+  tekst:
+    nb: Generell studiekompetanse er det vanlige grunnlaget for opptak til høyere utdanning. Kravene omfatter disse fagene fra videregående opplæring, med timer per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elever på yrkesfag betyr det normalt norsk 280 timer, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2, slik Vg3 påbygging gir. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skoleåret som begynner det året en fyller 24 år, og deretter etter reglene for voksne.
+    nn: Generell studiekompetanse er det vanlege grunnlaget for opptak til høgare utdanning. Krava omfattar desse faga frå vidaregåande opplæring, med timar per fag, norsk (393), engelsk (140), matematikk (224), naturfag (140), samfunnskunnskap (84) og historie (140). For elevar på yrkesfag betyr det normalt norsk 280 timar, matematikk 140, naturfag 84 og historie 140 i tillegg til vg1 og vg2, slik Vg3 påbygging gir. Den som har bestått fag- og yrkesopplæring, har rett til påbygging ut skuleåret som tek til det året ein fyller 24 år, og deretter etter reglane for vaksne.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.5.4 Generell studiekompetanse", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.5studieforberedende-i-yrkesfag/" }
+    - { id: opplaeringslova, punkt: "§ 5-7 Påbygging til generell studiekompetanse", url: "https://lovdata.no/lov/2023-06-09-30/§5-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Udir-1 punkt 3.5.4 sier at disse fagene «inngår i kravene». Er listen fullstendig, eller bør begrepet si «blant annet»?"
+    - "Er det riktig å knytte timene for elever på yrkesfag til det Vg3 påbygging gir?"
+  stikkord: [studiekompetanse, høyere utdanning, opptak, påbygging, 24 år]
+  relatert: [pabygging, sluttkompetanse, utdanningsprogram]
+
+- id: yrkesfaglig-opphenting
+  type: begrep
+  tittel: { nb: Yrkesfaglig opphenting, nn: Yrkesfagleg opphenting }
+  lenkeord: { nb: [yrkesfaglig opphenting, opphentingsfag], nn: [yrkesfagleg opphenting, opphentingsfag] }
+  tekst:
+    nb: Yrkesfaglig opphenting er et fag på 196 timer på vg2 yrkesfag for elever som kommer fra vg1 studiespesialisering. Disse elevene har allerede hatt alle fellesfagene yrkesfagelevene har på vg2, unntatt kroppsøving, og bruker timene til yrkesfaglig opphenting i stedet. Over de to årene skal omfanget være minst 1 824 timer. Opplæringsløp viser hvilke vg2 yrkesfag elevene kan begynne på etter vg1 studiespesialisering.
+    nn: Yrkesfagleg opphenting er eit fag på 196 timar på vg2 yrkesfag for elevar som kjem frå vg1 studiespesialisering. Desse elevane har alt hatt alle fellesfaga yrkesfagelevane har på vg2, unnateke kroppsøving, og bruker timane til yrkesfagleg opphenting i staden. Over dei to åra skal omfanget vere minst 1 824 timar. Opplæringsløp viser kva vg2 yrkesfag elevane kan byrje på etter vg1 studiespesialisering.
+  kilder:
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, 3.4.2 Vg1 og vg2 i skole", url: "https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/3vgo/3.4-yrkesfaglig/" }
+    - { id: udir-grep, punkt: "YFO2002 Yrkesfaglig opphenting" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder yrkesfaglig opphenting alle vg2 yrkesfag eleven kan tas inn til fra vg1 studiespesialisering etter tilbudsstrukturen?"
+  stikkord: [opphenting, opphentingsfag, YFO2002, studiespesialisering, vg2, kryssløp]
+  relatert: [krysslop, felles-programfag, programomrade]

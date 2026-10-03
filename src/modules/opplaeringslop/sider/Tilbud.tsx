@@ -736,6 +736,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
       <Brodsmuler
         ledd={[
           { tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' },
+          { tekst: t('opplaeringslop.lop.tittel'), href: '#/opplaeringslop/lop' },
           { tekst: indeks.utdanningsprogram[program]?.[malform] ?? program, href: `#/opplaeringslop/${program}` },
         ]}
       />

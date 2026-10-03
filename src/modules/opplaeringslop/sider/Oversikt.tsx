@@ -1,7 +1,5 @@
-// Utdanningsprogrammene, gruppert i studieforberedende, yrkesfaglige og påbygging, med søk etter program og tilbud
-// (eier 02.10.2026). Hvert program fører til løpet. Gruppene er lukket fra start. Har brukeren valgt en skole som
-// utdanning.no har tilbudene til, viser siden først programmene ved skolen, med bryteren «Min skole» / «Alle»
-// (avgjørelse 053).
+// Landingssiden for Opplæringstilbud (eier 03.10.2026): søk etter tilbud og skoler, og to likestilte deler med kort,
+// «Utdanningsprogram og løp» (undersiden Opplæringsløp) og «Skoler og opplæringskontorer» (avgjørelse 053).
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { lenke } from '../../../app/ruter.ts';
@@ -12,13 +10,11 @@ import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import type { Fagindeks } from '../../fag/skjema.ts';
-import type { Programgruppe } from '../../fag/tilbud/modell.ts';
 import { sokTilbud } from '../sok.ts';
-import { Lasting, Rubrikk, Skolevalg, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
+import { Lasting, Tilbudslenke, useSkoler, useSkolevisning, useTilbudsdata } from './felles.tsx';
+import { tilbudPerProgram } from './Lop.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
-const GRUPPER: readonly Programgruppe[] = ['studieforberedende', 'yrkesfaglig', 'pabygging'];
 const MAKS_TREFF = 40;
 
 
@@ -102,38 +98,6 @@ function Skoletreff({ sok, treff }: { sok: string; treff: readonly Skoleoppforin
 
 const MAKS_SKOLER = 5;
 
-/** Antall tilbud ved skolen i hvert utdanningsprogram. */
-function tilbudPerProgram(indeks: Fagindeks, skole: Skoleoppforing | null): Map<string, number> {
-  const ut = new Map<string, number>();
-  for (const k of skole?.tilbud ?? []) {
-    const p = indeks.programomrader[k]?.program;
-    if (p) ut.set(p, (ut.get(p) ?? 0) + 1);
-  }
-  return ut;
-}
-
-/** Et utdanningsprogram i listen, med antall tilbud ved skolen brukeren har valgt. */
-function Programlenke({ program, navn, antall }: { program: string; navn: string; antall: number }) {
-  const { t } = useTekst();
-  return (
-    <a class="listelenke" href={`#/opplaeringslop/${program}`} data-skole={antall > 0 ? 'ja' : undefined}>
-      <span class="listelenke-tekst">
-        <span class="listelenke-tittel">{navn}</span>
-        <span class="listelenke-under">
-          {program}
-          {antall > 0 && (
-            <span class="lop-dinskole">
-              <Ikon navn="hake" class="ikon-liten" />
-              {antall === 1 ? t('opplaeringslop.visning.etVedSkolen') : t('opplaeringslop.visning.antallVedSkolen', { antall: formaterTall(antall) })}
-            </span>
-          )}
-        </span>
-      </span>
-      <Ikon navn="hoyre" class="ikon-liten" />
-    </a>
-  );
-}
-
 export default function Oversikt() {
   const { t, malform } = useTekst();
   const [data, provIgjen] = useTilbudsdata();
@@ -144,7 +108,6 @@ export default function Oversikt() {
   const sokt = typeof data !== 'string' && aktivt ? sokTilbud(data.indeks, sok, malform) : [];
   const vedSkolen = new Set(visning.skole?.tilbud ?? []);
   const treff = [...sokt.filter((k) => vedSkolen.has(k)), ...sokt.filter((k) => !vedSkolen.has(k))];
-  const perProgram = typeof data !== 'string' ? tilbudPerProgram(data.indeks, visning.skole) : new Map<string, number>();
   const register = useSkoler();
   const skoletreff = aktivt && register ? filtrerSkoler(register.skoler, { fylke: null, tilbud: null, sok }) : [];
   const status = !aktivt
@@ -155,7 +118,9 @@ export default function Oversikt() {
   return (
     <div class="side lop-oversikt">
       <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
-      <p class="ingress"><Begrepstekst tekst={t('opplaeringslop.innledning')} /></p>
+      <p class="ingress">
+        <Begrepstekst tekst={t('opplaeringslop.innledning')} />
+      </p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />
       ) : (
@@ -196,35 +161,22 @@ export default function Oversikt() {
                 <h2 class="liten-overskrift" id="lop-del-program">
                   {t('opplaeringslop.oversikt.program')}
                 </h2>
-                <Skolevalg visning={visning} />
-                {visning.aktiv ? (
-                  <ul class="liste">
-                    {data.tilbud.struktur
-                      .filter((p) => (perProgram.get(p.program) ?? 0) > 0)
-                      .map((p) => (
-                        <li key={p.program}>
-                          <Programlenke program={p.program} navn={p.navn[malform]} antall={perProgram.get(p.program) ?? 0} />
-                        </li>
-                      ))}
-                  </ul>
-                ) : (
-                  GRUPPER.map((g) => {
-                    const programmer = data.tilbud.struktur.filter((p) => p.gruppe === g);
-                    if (programmer.length === 0) return null;
-                    return (
-                      <Rubrikk key={g} nokkel={`lop-gruppe-${g}`} tittel={t(`opplaeringslop.gruppe.${g}`)} hoyre={formaterTall(programmer.length)} lukket>
-                        <ul class="liste">
-                          {programmer.map((p) => (
-                            <li key={p.program}>
-                              <Programlenke program={p.program} navn={p.navn[malform]} antall={perProgram.get(p.program) ?? 0} />
-                            </li>
-                          ))}
-                        </ul>
-                      </Rubrikk>
-                    );
-                  })
-                )}
-                {data.tilbud.skolear && <p class="liten dempet lop-skolear">{t('opplaeringslop.skolear', { skolear: data.tilbud.skolear.replace('-', '–') })}</p>}
+                {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
+                <a class="frist-inngang" href="#/opplaeringslop/lop">
+                  <span class="frist-inngang-tittel">
+                    <Ikon navn="veiviser" />
+                    {t('opplaeringslop.lop.tittel')}
+                  </span>
+                  <span class="frist-inngang-neste">
+                    <span class="frist-inngang-tid">
+                      {visning.skole
+                        ? t('opplaeringslop.inngang.programSkole', { antall: formaterTall(tilbudPerProgram(data.indeks, visning.skole).size), skole: visning.skole.navn })
+                        : t('opplaeringslop.inngang.program', { antall: formaterTall(data.tilbud.struktur.length) })}
+                    </span>
+                    <span>{t('opplaeringslop.inngang.programTekst')}</span>
+                  </span>
+                  <Ikon navn="hoyre" class="frist-inngang-pil" />
+                </a>
               </section>
               <Innganger />
             </>

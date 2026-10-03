@@ -108,7 +108,12 @@ export default function Program({ parametre }: SideProps) {
     .sort((a, b) => (data.indeks.programomrader[a]?.trinn ?? '').localeCompare(data.indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
   return (
     <div class="side">
-      <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
+      <Brodsmuler
+        ledd={[
+          { tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' },
+          { tekst: t('opplaeringslop.lop.tittel'), href: '#/opplaeringslop/lop' },
+        ]}
+      />
       <h1 tabIndex={-1}>{struktur.navn[malform]}</h1>
       <p class="dempet">{t(`opplaeringslop.gruppe.${struktur.gruppe}`)}</p>
       <Skolevalg visning={visning} />

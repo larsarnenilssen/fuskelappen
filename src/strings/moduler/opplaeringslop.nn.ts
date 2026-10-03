@@ -1,8 +1,8 @@
-// UI-tekster for modulen Opplæringsløp på nynorsk. Må ha dei same nøklane som opplaeringslop.nb.ts.
+// UI-tekster for modulen Opplæringstilbud (id opplaeringslop) på nynorsk. Må ha dei same nøklane som opplaeringslop.nb.ts.
 
 export const opplaeringslopNn = {
-  tittel: 'Opplæringsløp',
-  innledning: 'Utdanningsprogramma og løpa i vidaregåande, med fag og timar i kvart tilbod etter fag- og timefordelinga til Udir. Finn òg skulane som har eit tilbod, og opplæringskontora i fylket.',
+  tittel: 'Opplæringstilbod',
+  innledning: 'Opplæringstilbodet i vidaregåande: utdanningsprogramma og løpa vidare, skulane og tilboda deira, og opplæringskontora i fylket.',
   skolear: 'Fag og timar for skuleåret {skolear}.',
   lasterFeil: 'Tilboda kunne ikkje lastast. Prøv igjen.',
   ikkeFunnet: 'Fann ikkje tilbodet.',
@@ -66,7 +66,14 @@ export const opplaeringslopNn = {
     nettside: 'Nettsida til kontoret',
     hentet: 'Etter NOR (Udir), henta {dato}.',
   },
+  lop: {
+    tittel: 'Opplæringsløp',
+    innledning: 'Utdanningsprogramma, tilboda på kvart trinn og faga og timane i kvart tilbod, etter fag- og timefordelinga til Udir. Vel eit program for å sjå løpet frå Vg1 til Vg3 og lærefag.',
+  },
   inngang: {
+    program: '{antall} utdanningsprogram',
+    programSkole: '{antall} utdanningsprogram ved {skole}',
+    programTekst: 'Løpet frå Vg1 til Vg3 og lærefag, med fag og timar i kvart tilbod.',
     skoler: '{antall} skular',
     skolerFylke: '{antall} skular i {fylke}',
     skolerTekst: 'Finn skulane som har eit tilbod, og tilboda ved kvar skule.',
