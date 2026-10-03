@@ -1,6 +1,7 @@
 # Begreper om inntak til videregående opplæring (fase 5, pakke 1). Bygger på opplæringslova kapittel 5 og 18,
 # opplæringsforskrifta kapittel 4 og 13, Udirs sider om retten til videregående opplæring og Udirs merknader til
-# forskriften. Inntaksområde og deltidselev er fylkesinnhold for Vestland. Egne ord.
+# forskriften. Inntaksområde, deltidselev og tilleggspoeng er fylkesinnhold for Vestland. Egne ord. Karakterpoeng,
+# privatist og tilleggspoeng er lagt til 03.10.2026 (forslaget til fase 5).
 - id: ungdomsrett
   type: begrep
   tittel: { nb: Ungdomsrett, nn: Ungdomsrett }
@@ -89,7 +90,7 @@
   kontrollsporsmal:
     - "Er «bytte til et annet utdanningsprogram eller programområde» en god forklaring på omvalg, når loven ikke definerer ordet?"
   stikkord: [omval, bytte utdanningsprogram, byte utdanningsprogram, velge om igjen]
-  relatert: [ungdomsrett, utdanningsprogram, programomrade]
+  relatert: [ungdomsrett, utdanningsprogram, programomrade, privatist]
 
 - id: realkompetansevurdering
   type: begrep
@@ -149,7 +150,7 @@
   kontrollsporsmal:
     - "Er «konkurrerer med dem ved skolene der» en riktig beskrivelse av hva inntaksområdepoeng betyr i praksis?"
   stikkord: [inntaksområdepoeng, Vestland, nærskole]
-  relatert: [ungdomsrett]
+  relatert: [ungdomsrett, karakterpoeng, tilleggspoeng]
 
 - id: deltidselev
   type: begrep
@@ -166,3 +167,57 @@
     - "VL § 2-2 sjuende ledd bruker også «deltidselevar» om Vg1. Bør begrepet nevne det?"
   stikkord: [deltid, fulltidselev, Vestland]
   relatert: [ungdomsrett]
+
+- id: karakterpoeng
+  type: begrep
+  tittel: { nb: Karakterpoeng, nn: Karakterpoeng }
+  tekst:
+    nb: Karakterpoeng er poengsummen søkerne konkurrerer med når det er flere søkere enn plasser. Til Vg1 regnes den ut fra standpunkt- og eksamenskarakterene fra grunnskolen, og til Vg2 og Vg3 fra standpunkt, eksamen og halvårsvurderinger med karakter fra Vg1 og eventuelt Vg2. Poengsummen er gjennomsnittet med to desimaler, ganget med ti. Står søkerne likt om de siste plassene, avgjør loddtrekning. Søkere med fortrinnsrett eller som skal behandles individuelt, tas inn uten å konkurrere på poeng. Forskriften kaller det «poengsum». Vestlands forskrift og rapporteringen til Udir bruker «karakterpoeng».
+    nn: Karakterpoeng er poengsummen søkjarane konkurrerer med når det er fleire søkjarar enn plassar. Til Vg1 blir han rekna ut frå standpunkt- og eksamenskarakterane frå grunnskolen, og til Vg2 og Vg3 frå standpunkt, eksamen og halvårsvurderingar med karakter frå Vg1 og eventuelt Vg2. Poengsummen er gjennomsnittet med to desimalar, gonga med ti. Står søkjarane likt om dei siste plassane, avgjer loddtrekning. Søkjarar med fortrinnsrett eller som skal behandlast individuelt, blir tekne inn utan å konkurrere på poeng. Forskrifta kallar det «poengsum». Forskrifta i Vestland og rapporteringa til Udir bruker «karakterpoeng».
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-18 Fordeling av plassar til vidaregåande trinn 1", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-18" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-19 bokstav a", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-19" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-24 Fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-24" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-25 bokstav a", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+    - { id: opplaeringsforskrifta, punkt: "§ 19-2 bokstav c", url: "https://lovdata.no/forskrift/2024-06-03-900/§19-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften sier «poengsum», mens Vestlands forskrift sier «karakterpoeng». Er «karakterpoeng» det ordet skolene bruker, så det passer som navn på begrepet?"
+    - "Er det riktig forstått av § 4-18 og § 4-24 at søkere med fortrinnsrett eller individuell behandling tas inn uten å konkurrere på poeng?"
+  stikkord: [poengsum, poeng, inntakspoeng, gjennomsnitt, loddtrekning, poengberegning, poengutrekning, § 4-19, § 4-25]
+  relatert: [fortrinnsrett, individuell-behandling, privatist, omvalg]
+
+- id: privatist
+  type: begrep
+  tittel: { nb: Privatist, nn: Privatist }
+  tekst:
+    nb: En privatist er en som melder seg til eksamen uten å delta i opplæringen i faget. I grunnskolen kan bare de som ville hatt rett til opplæring for voksne, være privatister. Privatisten melder seg opp selv, der fylkeskommunen bestemmer og bare ett sted for samme eksamen, og betaler en prøveavgift. Utsatt og ny eksamen er gratis. På vitnemålet får privatisten bare eksamenskarakterer, og tidligere standpunkt- og eksamenskarakterer i faget faller bort når den nye karakteren føres. En elev kan søke om å slippe opplæringen i et fag for å ta eksamen som privatist, og fylkeskommunen kan si ja når det er tungtveiende grunner. Har søkeren tatt fag som privatist, brukes det beste utvalget av karakterer ved inntak til Vg2 og Vg3.
+    nn: Ein privatist er ein som melder seg til eksamen utan å delta i opplæringa i faget. I grunnskolen kan berre dei som ville hatt rett til opplæring for vaksne, vere privatistar. Privatisten melder seg opp sjølv, der fylkeskommunen bestemmer og berre éin stad for same eksamen, og betaler ei prøveavgift. Utsett og ny eksamen er gratis. På vitnemålet får privatisten berre eksamenskarakterar, og tidlegare standpunkt- og eksamenskarakterar i faget fell bort når den nye karakteren blir ført. Ein elev kan søkje om å sleppe opplæringa i eit fag for å ta eksamen som privatist, og fylkeskommunen kan seie ja når det ligg føre tungtvegande grunnar. Har søkjaren teke fag som privatist, blir det beste utvalet av karakterar brukt ved inntak til Vg2 og Vg3.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 23-1 Privatistar", url: "https://lovdata.no/lov/2023-06-09-30/§23-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27 Oppmelding til eksamen", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-52 Føring av karakterar i fag på vitnemål og kompetansebevis", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-52" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-2 Inntak til utdanningsprogram og programområde", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-25 bokstav e", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "§ 9-52 sier at tidligere standpunkt- og eksamenskarakterer «fell bort» når privatisten får eksamenskarakteren ført. Stemmer det at dette gjelder også når den nye karakteren er lavere?"
+    - "Skal begrepet si hvor privatister melder seg opp i Vestland, eller holder det med «der fylkeskommunen bestemmer»?"
+  stikkord: [privatisteksamen, eksamen som privatist, prøveavgift, oppmelding, forbedring av karakter, § 23-1]
+  relatert: [karakterpoeng, omvalg, voksenrett]
+
+- id: tilleggspoeng
+  type: begrep
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel: { nb: Tilleggspoeng, nn: Tilleggspoeng }
+  tekst:
+    nb: I Vestland kan inntil halvparten av plassene på Vg1 musikk, dans og drama og Vg1 idrettsfag fordeles med tilleggspoeng i tillegg til karakterpoengene. På musikk, dans og drama gis 3, 6 eller 9 poeng etter en ferdighetsprøve (inntaksprøve). Bare søkere med programmet som førsteønske kan ta prøven, og den holdes bare når det er mange søkere. På idrettsfag gis 3 poeng for regionalt nivå, 6 for landslagsnivå og 9 for internasjonalt nivå. Søkeren sender dokumentasjon fra særkrets eller klubb til skolen som er førsteønsket.
+    nn: I Vestland kan inntil halvparten av plassane på Vg1 musikk, dans og drama og Vg1 idrettsfag fordelast med tilleggspoeng i tillegg til karakterpoenga. På musikk, dans og drama blir det gitt 3, 6 eller 9 poeng etter ei ferdigheitsprøve (inntaksprøve). Berre søkjarar med programmet som førsteønske kan ta prøva, og ho blir berre halden når det er mange søkjarar. På idrettsfag blir det gitt 3 poeng for regionalt nivå, 6 for landslagsnivå og 9 for internasjonalt nivå. Søkjaren sender dokumentasjon frå særkrins eller klubb til skulen som er førsteønsket.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-7 Inntak til Vg1 musikk, dans og drama", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-7" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-8 Inntak til Vg1 idrettsfag", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forskriften sier at «inntil 50 % av plassane» kan fordeles med tilleggspoeng. Fordeles resten av plassene bare etter karakterpoeng, eller kan søkere med tilleggspoeng også konkurrere om dem med karakterpoengene alene?"
+  stikkord: [inntaksprøve, ferdighetsprøve, ferdigheitsprøve, idrettslege kriterium, musikk dans og drama, idrettsfag, Vestland]
+  relatert: [karakterpoeng, inntaksomrade]

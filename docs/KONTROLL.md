@@ -15,15 +15,15 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 186 |
-| Praksis og tolkninger som bør bekreftes | 17 av 17 |
+| Ikke kontrollert | 259 |
+| Praksis og tolkninger som bør bekreftes | 21 av 21 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
 | Samsvarer med kilden | 27 |
 | Avvik fra kilden | 0 |
 | Ikke sjekket (kilden kunne ikke leses eller sjekkes ikke) | 0 |
-| Enkeltverdier fra kilden uten sitat | 2 |
+| Enkeltverdier fra kilden uten sitat | 0 |
 
 **Kobling fra fagkode til årsramme** (fase 2): 1208 av 1978 fagkoder er koblet, 770 er ikke koblet, og det er 0 avvik. Se [docs/KOBLING.md](KOBLING.md) for avviksrapporten, tabellen over programnavn, et utvalg koblinger til kontroll og listen over ukoblede fag.
 
@@ -42,7 +42,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Variabel lønn for timevikarer** | Får timevikarer fortsatt vikartimene utbetalt som variabel lønn, med timelønn etter kalkulert tid? | Eier 01.10.2026. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.2 og Kap. 1 § 12.4; [Visma InSchool – 3.25 Beregning av lønn for vikartimer](https://inschool.zendesk.com/hc/no/articles/4417711337105-3-25-Beregning-av-l%C3%B8nn-for-vikartimer): Kalkulert tid | ikke bekreftet |
 | **Overtidsbetaling for undervisning** | Betales overtid for undervisning fortsatt som kalkulert tid × timelønn × 1,5? | Eier 29.09.2026. Hovedtariffavtalen § 6.4 og § 6.5.3. | [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 1 § 6.5.3, Kap. 1 § 6.4, Kap. 1 § 7.4.2, Kap. 1 § 12.4 og Kap. 4 punkt 4.1; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.2, punkt 4, punkt 5.1, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Planleggingsdager** | Brukes fortsatt 45 timer planleggingsdager for alle, tatt fra annen planfestet tid, slik Visma InSchool gjør? | Eier 30.09.2026. Visma InSchool. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4 a, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
-| **Skoleåret og timer per uke** | Er elevenes skoleår fortsatt 190 dager og 38 uker, og skal timene per uke fordeles på 38 skoleuker? | Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk. | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30); [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1, punkt 5.2, punkt 4, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
+| **Skoleåret og timer per uke** | Er elevenes skoleår fortsatt 190 dager og 38 uker, og skal timene per uke fordeles på 38 skoleuker? | Opplæringslova. Paragrafen er ikke lagt inn i kilderegisteret ennå, så tallene sjekkes ikke automatisk. | [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30): § 14-1 første ledd; [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 5.1, punkt 5.2, punkt 4, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Planfestet tid fra 60 år** | Regnes planfestet tid for lærere som er 60 år og eldre fortsatt som samme andel av årsverket (1150 × 1650 ÷ 1687,5 = 1124,44 timer)? | Eier 30.09.2026. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Periodenøkkel** | Regnes periodebeskjeftigelse fortsatt med undervisningsdager i perioden ÷ undervisningsdager i skoleåret, slik Visma InSchool gjør? | Eier 30.09.2026. Visma InSchool. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): Vedlegg 1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og punkt 9.1; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Frigjort tid for 57-åringer** | Skal redusert undervisning for lærere som har fylt 57 år, fortsatt regnes som for nyutdannede og lærere over 60 år, selv om avtaleteksten ikke sier det uttrykkelig? | Eier 30.09.2026. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 4, punkt 6, punkt 5.1, punkt 5.2, punkt 5.3, punkt 7.3 b, punkt 9.1 og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
@@ -53,7 +53,11 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
 | **Foreløpig svar i saker om individuelt tilrettelagt opplæring** | Regnes fristen på én måned for foreløpig svar (forvaltningsloven § 11 a tredje ledd) fra den sakkyndige vurderingen er mottatt? | Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter | ikke bekreftet |
 | **Samtykke til innføringsopplæring** | Samtykker eleven selv til innføringsopplæring så lenge eleven er samtykkekompetent, og ellers foreldrene? | Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene». | [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring | ikke bekreftet |
-| **Kompetansegivende læreplaner i særskilt språkopplæring** | Er en læreplan kompetansegivende når den gir karakter, og ikke kompetansegivende når det ikke gis vurdering med karakter? | Eier 03.10.2026 ba om at det står om læreplanene er kompetansegivende. Ordet står ikke i kildene. Vurderingsordningene i Grep sier at det ikke gis karakter etter NOR07-03 og NOR08-03, og at NOR09-05 gir standpunktkarakter. | [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor07-03/om-faget/vurdering): Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor09-05/om-faget/vurdering): Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor08-03/om-faget/vurdering): Morsmål for språklige minoriteter (NOR08-03), Vurdering | ikke bekreftet |
+| **Kompetansegivende læreplaner i særskilt språkopplæring** | Er en læreplan kompetansegivende når den gir karakter, og ikke kompetansegivende når det ikke gis vurdering med karakter? | Eier 03.10.2026 ba om at det står om læreplanene er kompetansegivende. Ordet står ikke i kildene. Vurderingsordningene i Grep sier at det ikke gis karakter etter NOR07-03 og NOR08-03, og at NOR09-05 gir standpunktkarakter. GNS02-01 har bare en midtveisvurdering med godkjent eller ikke godkjent, og eier valgte 03.10.2026 at den står uten merke. | [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor07-03/om-faget/vurdering): Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor09-05/om-faget/vurdering): Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor08-03/om-faget/vurdering): Morsmål for språklige minoriteter (NOR08-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/kompetansemaal-og-vurdering/kv852): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Kompetansemål og vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/vurderingsordning): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Vurderingsordning | ikke bekreftet |
+| **Hvem klagen på inntak sendes til** | Sendes klagen på et vedtak om inntak vanligvis til inntakskontoret i fylkeskommunen? | Eier 03.10.2026. Forvaltningsloven § 32 første ledd bokstav a sier at klagen settes fram for organet som har truffet vedtaket. At det vanligvis er inntakskontoret, står ikke i kildene. | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 Fristar for å søkje om inntak; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen): Kapittel 4 Inntak til vidaregåande opplæring; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 Klageinstans for enkeltvedtak; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist og § 32 Klagens adressat, form og innhold; [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-16): § 2-16 Søknadsfrist; [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-19): § 2-18 Frammøte første skuledag og § 2-19 Rektor sin rett til inntak av elevar | ikke bekreftet |
+| **Avrunding i poengberegningen ved inntak** | Regnes gjennomsnittet først med to desimaler (vanlig avrunding) og så ganges med ti, slik at 62 ÷ 14 gir 44,3 poeng? | Eier 03.10.2026 (44,3 i F1). Forskriften (§ 4-19 og § 4-25) sier gjennomsnitt med to desimaler, ganget med ti. Udirs merknad sier «vanlige avrundingsregler», men beskriver rekkefølgen som sum × 10 ÷ antall fag, som gir 44,29 for F1. Appen følger forskriften. | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900): § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-19 første ledd bokstav a, b og e; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-19 | ikke bekreftet |
+| **Karakterene som teller ved inntak til Vg3 i Vestland** | Teller karakterene fra både Vg1 og Vg2 ved inntak til Vg3 i Vestland, selv om den lokale forskriften bare nevner Vg2? | Eier 03.10.2026. Opplæringsforskrifta § 4-25 sier Vg1 og eventuelt Vg2. Vestlands forskrift § 2-3 andre ledd nevner bare Vg2. | [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-3): § 2-3 andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 første ledd | ikke bekreftet |
+| **Den siste vurderingen gjelder i fag som fortsetter, ved inntak til Vg3** | Gjelder det fortsatt at bare den siste vurderingen teller i et fag som fortsetter, slik at halvårsvurderingen fra Vg1 ikke teller når faget har halvår eller standpunkt på Vg2, mens standpunkt står? | Eier 03.10.2026: «Siste halvårsvurdering i sammenhengende fag gjelder … halvårsvurderingene ‹overskriver› hverandre etter hvert som nye kommer. Standpunkt står.» Udirs merknad til § 4-25 nevner norsk. Ordlyden i § 4-25 sier ikke noe om fag som fortsetter. | [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 første ledd bokstav a og d; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje ledd; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/): Vedlegg 1, kapittel 3 Videregående opplæring; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-25 | ikke bekreftet |
 
 ## Per kilde
 
@@ -210,13 +214,19 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
 |---|---|---|---|---|
-| `skolear_uker` (sfs2213-2026-2027) | – | 38 uker | mangler sitat | ikke kontrollert |
-| `skolear_dager` (sfs2213-2026-2027) | – | 190 dager | mangler sitat | ikke kontrollert |
+| `skolear_uker` (sfs2213-2026-2027) | § 14-1 første ledd | 38 uker | ikke sjekket ennå | ikke kontrollert |
+| `skolear_dager` (sfs2213-2026-2027) | § 14-1 første ledd | 190 dager | avledet av andre verdier | ikke kontrollert |
 
 **Innhold som bygger på kilden**
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Ungdomsrett (`ungdomsrett`) | begrep | § 5-1 Rett til vidaregåande opplæring | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Voksenrett (`voksenrett`) | begrep | § 18-3 Rett til vidaregåande opplæring for vaksne | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Omvalg (`omvalg`) | begrep | § 5-5 Rett til omval | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Realkompetansevurdering (`realkompetansevurdering`) | begrep | § 18-8 Realkompetansevurdering | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Gjesteelev (`gjesteelev`) | begrep | § 29-1 andre ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Privatist (`privatist`) | begrep | § 23-1 Privatistar | `content/begreper/inntak.yaml` | ikke kontrollert |
 | Lov (`lov`) | begrep | § 1-6 Fag- og timefordeling og tilbodsstruktur (døme på at departementet gir forskrift), § 5-4 Innhald, vurdering og dokumentasjon i den vidaregåande opplæringa | `content/begreper/lov.yaml` | ikke kontrollert |
 | Lokal forskrift (`lokal-forskrift`) | begrep | § 10-7 Skolereglar | `content/begreper/lov.yaml` | ikke kontrollert |
 | Paragraf og ledd (`paragraf`) | begrep | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging (§ 11-1) | `content/begreper/lov.yaml` | ikke kontrollert |
@@ -238,6 +248,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Individuell opplæringsplan (IOP) (`individuell-opplaeringsplan`) | begrep | § 11-10 Individuell opplæringsplan, § 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Elevens beste og medvirkning (`elevens-beste`) | begrep | § 10-1 Det beste for eleven, § 10-2 Elevane sin rett til medverknad | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Søknadsfrist (`fr-soknad-mars`) | frist | § 5-5 Rett til omval | `content/inntak/frister.yaml` | ikke kontrollert |
+| Rett, inntak og søknad (`rett-inntak-soknad`) | veiviser | § 5-1 Rett til vidaregåande opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ikke rett til videregående ennå (`sk-ikke-grunnskole`) | steg | § 18-2 Rett til førebuande opplæring for vaksne, § 18-5 andre ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Opphold i Norge (`sk-opphold`) | steg | § 5-1 første ledd tredje punktum, § 5-9 Rett til vidaregåande opplæring for dei som ikkje har opphaldsløyve | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Venter på oppholdstillatelse (`sk-venter-opphold`) | steg | § 5-9 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ikke rett (`sk-ikke-opphold`) | steg | § 5-1 første ledd og § 5-9 første ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Videregående fra utlandet (`sk-utland-vgo`) | steg | § 5-1 første ledd andre punktum og fjerde ledd andre punktum | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Alder (`sk-alder`) | steg | § 5-1 andre og tredje ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ungdom eller voksen (`sk-ungdom-eller-voksen`) | steg | § 5-1 tredje ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ungdomsrett (`sk-ungdomsrett`) | steg | § 5-1 femte og sjette ledd, § 5-5 Rett til omval | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Søknad, svar og klage (`sk-soknad`) | steg | § 29-1 Klageinstans for enkeltvedtak | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Voksenrett (`sk-voksenrett`) | steg | § 18-3 Rett til vidaregåande opplæring for vaksne | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
 | Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Ikke særskilt språkopplæring (`sp-ikke-rett`) | steg | Kapittel 6 Val av skriftspråk og særskilde språkrettar i den vidaregåande opplæringa | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
@@ -246,15 +268,63 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 `opplaeringsforskrifta` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://lovdata.no/forskrift/2024-06-03-900)
 
+**Regelverdier**
+
+| Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
+|---|---|---|---|---|
+| `snitt_desimaler` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 2 | ikke sjekket ennå | ikke kontrollert |
+| `poeng_faktor` (inntak-2024) | § 4-19 første ledd bokstav a og § 4-25 første ledd bokstav a | 10 | ikke sjekket ennå | ikke kontrollert |
+| `valgfag_desimaler` (inntak-2024) | § 4-19 første ledd bokstav b | 2 | ikke sjekket ennå | ikke kontrollert |
+| `iv_im_verdi` (inntak-2024) | § 4-19 første ledd bokstav e og § 4-25 første ledd bokstav d | 0 | ikke sjekket ennå | ikke kontrollert |
+
 **Innhold som bygger på kilden**
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
+| Sluttkompetanse (`sluttkompetanse`) | begrep | § 13-3 Søknad om inntak til vidaregåande opplæring for vaksne | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Fortrinnsrett ved inntak (`fortrinnsrett`) | begrep | § 4-21 til § 4-23 og § 4-27 til § 4-28, § 4-14 Rekkjefølgja ved inntak | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Individuell behandling ved inntak (`individuell-behandling`) | begrep | § 4-20 og § 4-26 | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Omvalg (`omvalg`) | begrep | § 4-2 første ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Realkompetansevurdering (`realkompetansevurdering`) | begrep | § 13-2 og § 13-5 | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Landslinje (`landslinje`) | begrep | § 4-5 første ledd bokstav d og § 4-16, § 4-8 tredje ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Gjesteelev (`gjesteelev`) | begrep | § 4-14 tredje ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Deltidselev (`deltidselev`) | begrep | § 4-13 fjerde ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Karakterpoeng (`karakterpoeng`) | begrep | § 4-18 Fordeling av plassar til vidaregåande trinn 1, § 4-19 bokstav a, § 4-24 Fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3, § 4-25 bokstav a, § 19-2 bokstav c | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Privatist (`privatist`) | begrep | § 9-27 Oppmelding til eksamen, § 9-52 Føring av karakterar i fag på vitnemål og kompetansebevis, § 4-2 Inntak til utdanningsprogram og programområde, § 4-25 bokstav e | `content/begreper/inntak.yaml` | ikke kontrollert |
 | Forskrift (`forskrift`) | begrep | Innleiinga (heimel og kven som har fastsett forskrifta) | `content/begreper/lov.yaml` | ikke kontrollert |
 | Lokal forskrift (`lokal-forskrift`) | begrep | § 4-5 Lokal forskrift om inntak | `content/begreper/lov.yaml` | ikke kontrollert |
 | Paragraf og ledd (`paragraf`) | begrep | § 4-1 Kven som har rett til vidaregåande opplæring (ledd og bokstavar) | `content/begreper/lov.yaml` | ikke kontrollert |
 | Enkeltvedtak (`enkeltvedtak`) | begrep | Kapittel 10 Klage på sluttvurderingar | `content/begreper/lov.yaml` | ikke kontrollert |
 | Kort botid (`kort-botid`) | begrep | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Voksne søker når som helst (`fr-voksne-lopende`) | frist | § 13-3 Søknad om inntak til vidaregåande opplæring for vaksne | `content/inntak/frister.yaml` | ikke kontrollert |
+| Kommunen melder elever som kan ha fortrinnsrett (`fr-melding-fortrinn`) | frist | § 4-21 tredje ledd og § 4-22 tredje ledd | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknadsfristen kunngjøres (`fr-kunngjoring`) | frist | § 4-9 fjerde ledd | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknadsfrist for noen grupper (`fr-soknad-februar`) | frist | § 4-9 andre ledd | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknadsfrist (`fr-soknad-mars`) | frist | § 4-9 første og tredje ledd | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknader til skoler med tegnspråk sendes videre (`fr-tegnsprak`) | frist | § 4-11 | `content/inntak/frister.yaml` | ikke kontrollert |
+| Melde seg til mer opplæring i fag som ikke er bestått (`fr-mer-opplaering`) | frist | § 4-3 Meir opplæring for elevar i fag som er gjennomført, men ikkje bestått | `content/inntak/frister.yaml` | ikke kontrollert |
+| Til Vg1 (`po-vg1`) | regel | § 4-19 første ledd bokstav a, b og e | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Til Vg2 og Vg3 (`po-vg2-vg3`) | regel | § 4-25 første ledd bokstav a og d, § 9-13 tredje ledd | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Dette teller ikke (`po-teller-ikke`) | regel | § 4-19 første ledd bokstav c og d, § 4-25 første ledd bokstav b og c | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Privatist og omvalg (`po-beste`) | regel | § 4-25 første ledd bokstav e og f | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Individuell behandling i stedet for poeng (`po-individuell`) | regel | § 4-20 første ledd bokstav a og § 4-26 første ledd bokstav a | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Like poeng (`po-loddtrekning`) | regel | § 4-18 og § 4-24 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Vg3 i Vestland (`po-vl-vg3`) | regel | § 4-25 første ledd | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Rett, inntak og søknad (`rett-inntak-soknad`) | veiviser | Kapittel 4 Inntak til vidaregåande opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Grunnskolen (`sk-grunnskole`) | steg | § 4-1 Kven som har rett til vidaregåande opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Grunnopplæring i utlandet (`sk-utland`) | steg | § 4-1 andre og tredje ledd, § 4-9 andre ledd bokstav c | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Rekvalifisering eller uten rett (`sk-rekvalifisering`) | steg | § 13-4 tredje ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ungdomsrett (`sk-ungdomsrett`) | steg | § 4-2 Inntak til utdanningsprogram og programområde og § 4-7 andre ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Vilkår for Vg2 og Vg3 (`sk-vilkar-vg23`) | steg | § 4-13 Vilkår for inntak til vidaregåande trinn 2 og vidaregåande trinn 3 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Inntaksmåte (`sk-inntaksmate`) | steg | § 4-14 første ledd, § 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1, § 4-26 Individuell behandling ved fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Fortrinnsrett: særlig utdanningsprogram (`sk-fortrinn-program`) | steg | § 4-21 Fortrinnsrett til eit særleg utdanningsprogram ved inntak til vidaregåande trinn 1 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Fortrinnsrett: tilrettelagt skole (`sk-fortrinn-skole`) | steg | § 4-22 Fortrinnsrett til ein skole som er særskilt tilrettelagd ved inntak til vidaregåande trinn 1, § 4-27 Fortrinnsrett til ein skole som er særskilt tilrettelagd ved inntak til vidaregåande trinn 2 og vidaregåande trinn 3 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Fortrinnsrett: tegnspråk (`sk-fortrinn-tegnsprak`) | steg | § 4-23 og § 4-28 Fortrinnsrett for søkjarar med rett til opplæring i og på norsk teiknspråk, § 4-7 tredje ledd og § 4-11 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Individuell behandling (`sk-individuell-behandling`) | steg | § 4-20 andre ledd og § 4-26 andre ledd, § 4-9 andre ledd bokstav a og e | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Konkurrerer på poeng (`sk-poeng`) | steg | § 4-9 andre ledd bokstav b og c, § 4-18 og § 4-19, § 4-24 og § 4-25, § 4-6 Inntak til einskilde utdanningsprogram | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Hvor søknaden sendes (`sk-bosted`) | steg | § 4-8 Kvar søknaden om inntak skal sendast, § 4-14 første og tredje ledd | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Søknad, svar og klage (`sk-soknad`) | steg | § 4-9 Fristar for å søkje om inntak | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Voksenrett (`sk-voksenrett`) | steg | § 13-3 til § 13-5 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
 | Læreplanene i særskilt språkopplæring (`sp-laereplan`) | steg | § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 
 ### Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)
@@ -270,6 +340,9 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Klage på enkeltvedtak (`klage`) | begrep | § 28 Vedtak som kan påklages, klageinstans, § 29 Klagefrist, § 32 og § 33 (klagen sendes til underinstansen) | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Habilitet (`habilitet`) | begrep | § 6 Habilitetskrav | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Forhåndsvarsel (`forhandsvarsel`) | begrep | § 16 Forhåndsvarsling | `content/begreper/regelverk.yaml` | ikke kontrollert |
+| Klage på vedtaket om inntak (`fr-klage`) | frist | § 29 Klagefrist | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknad, svar og klage (`sk-soknad`) | steg | § 29 Klagefrist og § 32 Klagens adressat, form og innhold | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Voksenrett (`sk-voksenrett`) | steg | § 29 Klagefrist og § 32 Klagens adressat, form og innhold | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
 
 ### Grep – fag, læreplaner, vurderingsordninger og årstimetall
 
@@ -317,6 +390,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Lærefag og opplæring i bedrift (`opplaering-i-bedrift`) | begrep | Vedlegg 1, 3.1, 3.4.3, 3.4.4 og 3.4.5 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Påbygging til generell studiekompetanse (`pabygging`) | begrep | Vedlegg 1, 3.5.2 og 3.5.3 | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
 | Kryssløp (`krysslop`) | begrep | Vedlegg 1, 3.1 og 3.4.2 Tilpassede ordninger | `content/begreper/opplaeringslop.yaml` | ikke kontrollert |
+| Til Vg2 og Vg3 (`po-vg2-vg3`) | regel | Vedlegg 1, kapittel 3 Videregående opplæring | `content/inntak/poeng.yaml` | ikke kontrollert |
 
 ### Udir-1-2026, teksten øverst i rundskrivet
 
@@ -400,7 +474,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
-| Læreplanene i særskilt språkopplæring (`sp-laereplan`) | steg | Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering, Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering, Morsmål for språklige minoriteter (NOR08-03), Vurdering | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Læreplanene i særskilt språkopplæring (`sp-laereplan`) | steg | Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering, Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering, Morsmål for språklige minoriteter (NOR08-03), Vurdering, Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Kompetansemål og vurdering, Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Vurderingsordning | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 
 ### Læreplanverket (udir.no)
 
@@ -412,6 +486,44 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Læreplanverket (`laereplanverket`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
 | Fag- og timefordelingen (`fag-og-timefordeling`) | begrep | Ingressen: «Læreplanverket består av …» | `content/begreper/laereplanverket.yaml` | ikke kontrollert |
+
+### Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune
+
+`vestland-forskrift-inntak` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://lovdata.no/dokument/LF/forskrift/2020-09-29-3380)
+
+**Regelverdier**
+
+| Verdi | Punkt | Tall | Automatisk sjekk | Din kontroll |
+|---|---|---|---|---|
+| `tilleggspoeng_mdd_1` (inntak-vestland-2024) | § 2-7 andre ledd | 3 | ikke sjekket ennå | ikke kontrollert |
+| `tilleggspoeng_mdd_2` (inntak-vestland-2024) | § 2-7 andre ledd | 6 | ikke sjekket ennå | ikke kontrollert |
+| `tilleggspoeng_mdd_3` (inntak-vestland-2024) | § 2-7 andre ledd | 9 | ikke sjekket ennå | ikke kontrollert |
+| `tilleggspoeng_idrett_1` (inntak-vestland-2024) | § 2-8 andre ledd | 3 | ikke sjekket ennå | ikke kontrollert |
+| `tilleggspoeng_idrett_2` (inntak-vestland-2024) | § 2-8 andre ledd | 6 | ikke sjekket ennå | ikke kontrollert |
+| `tilleggspoeng_idrett_3` (inntak-vestland-2024) | § 2-8 andre ledd | 9 | ikke sjekket ennå | ikke kontrollert |
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Inntaksområde (`inntaksomrade`) | begrep | § 2-1 Inntak etter inntaksområde og § 2-2 tredje ledd | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Deltidselev (`deltidselev`) | begrep | § 2-14 Inntak av deltidselevar til Vg2/Vg3 | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Tilleggspoeng (`tilleggspoeng`) | begrep | § 2-7 Inntak til Vg1 musikk, dans og drama, § 2-8 Inntak til Vg1 idrettsfag | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Voksne bør søke for oppstart om høsten (`fr-vl-voksne-host`) | frist | § 4-1 første ledd | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Dokumentasjon av flytting til Vestland (`fr-vl-flytting`) | frist | § 2-17 Flytting | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Rektor følger ventelistene (`fr-vl-ventelister`) | frist | § 2-19 Rektor sin rett til inntak av elevar | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Møte første skoledag (`fr-vl-forste-skoledag`) | frist | § 2-18 Frammøte første skuledag | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Inntaket er avsluttet (`fr-vl-inntak-avsluttet`) | frist | § 2-19 andre ledd | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Voksne bør søke for oppstart om våren (`fr-vl-voksne-var`) | frist | § 4-1 første ledd | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Slutte i et fag for å beholde standpunktkarakteren (`fr-vl-omvalg-fag`) | frist | § 2-15 tredje ledd | `content/inntak/frister-vestland.yaml` | ikke kontrollert |
+| Tilleggspoeng på musikk, dans og drama og idrettsfag (`po-vl-tillegg`) | regel | § 2-7 og § 2-8 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Inntaksområdepoeng (`po-vl-inntaksomrade`) | regel | § 2-1 første og andre ledd | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Vg3 i Vestland (`po-vl-vg3`) | regel | § 2-3 andre ledd | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Inntaksområde, skoler og tilleggspoeng (`sk-poeng`) | steg | § 2-1 Inntak etter inntaksområde og § 2-2 Inntak til Vg1, § 2-7 Inntak til Vg1 musikk, dans og drama og § 2-8 Inntak til Vg1 idrettsfag | `content/inntak/rett-inntak-soknad-vestland.yaml` | ikke kontrollert |
+| Fortsette på samme skole og deltid (`sk-vilkar-vg23`) | steg | § 2-4 til § 2-6 Oppflytting, § 2-14 Inntak av deltidselevar til Vg2/Vg3 | `content/inntak/rett-inntak-soknad-vestland.yaml` | ikke kontrollert |
+| Flytting til Vestland og søkere fra andre fylker (`sk-bosted`) | steg | § 2-17 Flytting, § 2-20 Inntak av søkarar busette i andre fylke | `content/inntak/rett-inntak-soknad-vestland.yaml` | ikke kontrollert |
+| Etter inntaket i Vestland (`sk-soknad`) | steg | § 2-16 Søknadsfrist, § 2-18 Frammøte første skuledag og § 2-19 Rektor sin rett til inntak av elevar | `content/inntak/rett-inntak-soknad-vestland.yaml` | ikke kontrollert |
+| Voksne i Vestland (`sk-voksenrett`) | steg | § 4-1 Søknadsprosess og krav til søknaden, § 4-2 Inntaksrekkefølge | `content/inntak/rett-inntak-soknad-vestland.yaml` | ikke kontrollert |
 
 ### Lokale forskrifter etter opplæringsloven
 
@@ -445,14 +557,14 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | 5.4 Individuelt tilrettelagt opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Elevens beste og medvirkning (`elevens-beste`) | begrep | 1.4 Elevens beste og retten til å bli hørt | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | 1.1 Tilpassing og tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
-| Velg hvor du starter (`ti-start`) | steg | 1.1 Tilpassing og tilrettelegging, 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Hvor saken starter (`ti-start`) | steg | 1.1 Tilpassing og tilrettelegging, 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Tilpasset opplæring for alle (`ti-tilpasset`) | steg | 1.1 Tilpassing og tilrettelegging, 2.1 Skolen skal tilpasse opplæringen til alle elevene | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Følge med og melde fra (`ti-folge-med`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen, 3.2 Verktøy og metoder for å følge med | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Egnede tiltak i den ordinære opplæringen (`ti-tiltak`) | steg | 4.1 Skolen skal sette inn egnede tiltak, 4.3 Elever med et åpenbart behov for individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
-| Er tiltakene nok? (`ti-nok`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Vurdere tiltakene (`ti-nok`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Fortsett den tilpassede opplæringen (`ti-fortsett`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Overgang fra grunnskolen (`ti-overgang`) | steg | 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
-| Hva kan eleven trenge? (`ti-behov`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 5.2 Personlig assistanse, 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet, 5.4 Individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Elevens behov (`ti-behov`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 5.2 Personlig assistanse, 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet, 5.4 Individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Opplyse saken om assistanse eller fysisk tilrettelegging (`ti-assistanse`) | steg | 5.2 Personlig assistanse, 5.5 Ansvaret for hjelpemidler, 6.1 Kommunen og fylkeskommunen må opplyse saken før de fatter vedtak | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Samtykke og henvisning til PP-tjenesten (`ti-samtykke`) | steg | 5.4 Individuelt tilrettelagt opplæring, 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 | Sakkyndig vurdering fra PP-tjenesten (`ti-sakkyndig`) | steg | 6.2.1 Krav til innholdet i den sakkyndige vurderingen, 6.2.3 Varigheten av den sakkyndige vurderingen, 6.2.4 Saksbehandlingstid, 6.3 Foreldrene kan hente inn en alternativ sakkyndig vurdering | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
@@ -476,7 +588,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Tospråklig opplæring i fag (`tospraklig-fagopplaering`) | begrep | Tospråklig opplæring i fag | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Forsterket opplæring i norsk (`forsterket-opplaering-i-norsk`) | begrep | Forsterket opplæring i norsk | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
-| Hvem har rett? (`sp-morsmal`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Hvem som har rett (`sp-morsmal`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Vurdere norskferdighetene (`sp-vurdere`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Vanlig opplæring (`sp-vanlig`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Vedtak om særskilt språkopplæring (`sp-vedtak`) | steg | Krav til vedtak, Forsterket opplæring i norsk, Tospråklig opplæring i fag, Morsmålsopplæring, Fjernundervisning | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
@@ -493,7 +605,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 |---|---|---|---|---|
 | Innføringsopplæring (`innforingsopplaering`) | begrep | Varighet på inntil to år | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Kort botid (`kort-botid`) | begrep | Ingressen | `content/begreper/sprak.yaml` | ikke kontrollert |
-| Kort botid? (`sp-kort-botid`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Elever med kort botid (`sp-kort-botid`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Innføringsopplæring (`sp-innforing`) | steg | Varighet på inntil to år, Eleven eller foreldrene må samtykke, Avvik fra læreplaner i fag og fra fag- og timefordelingen, Fritak fra vurdering for elever i innføringsopplæring | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Jevnlig vurdering (`sp-oppfolging`) | steg | Vurdering av elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Over til vanlig opplæring (`sp-over`) | steg | Varighet på inntil to år | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
@@ -507,9 +619,69 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Minoritetsspråklig elev (`minoritetsspraklig-elev`) | begrep | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/begreper/sprak.yaml` | ikke kontrollert |
-| Hvem har rett? (`sp-morsmal`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Hvem som har rett (`sp-morsmal`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Vurdere norskferdighetene (`sp-vurdere`) | steg | Vurdere elevens norskferdigheter | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
-| Kort botid? (`sp-kort-botid`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+| Elever med kort botid (`sp-kort-botid`) | steg | Hvem er de minoritetsspråklige og nyankomne elevene? | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
+
+### Retten til videregående opplæring
+
+`udir-retten-til-vgo` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Ungdomsrett (`ungdomsrett`) | begrep | Rett til videregående opplæring | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Voksenrett (`voksenrett`) | begrep | Inntak og formidling for voksne | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Sluttkompetanse (`sluttkompetanse`) | begrep | Frem til studie- eller yrkeskompetanse | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Rett, inntak og søknad (`rett-inntak-soknad`) | veiviser | Rett til videregående opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Kompetanse fra før (`sk-kompetanse`) | steg | Frem til studie- eller yrkeskompetanse | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Påbygging eller rekvalifisering (`sk-pabygging`) | steg | Rett til påbygging, Rett til yrkesfaglig rekvalifisering | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Rekvalifisering eller uten rett (`sk-rekvalifisering`) | steg | Rett til yrkesfaglig rekvalifisering | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Alder (`sk-alder`) | steg | Rett til videregående opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Ungdom eller voksen (`sk-ungdom-eller-voksen`) | steg | Velge mellom opplæring som elev eller voksen | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Voksenrett (`sk-voksenrett`) | steg | Inntak og formidling for voksne | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+
+### Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
+
+`udir-merknader-ofo` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Individuell behandling ved inntak (`individuell-behandling`) | begrep | Merknader til § 4-18 | `content/begreper/inntak.yaml` | ikke kontrollert |
+| Til Vg1 (`po-vg1`) | regel | Merknad til § 4-19 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Til Vg2 og Vg3 (`po-vg2-vg3`) | regel | Merknad til § 4-25 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Dette teller ikke (`po-teller-ikke`) | regel | Merknad til § 4-19 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Privatist og omvalg (`po-beste`) | regel | Merknad til § 4-25 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Individuell behandling i stedet for poeng (`po-individuell`) | regel | Merknad til § 4-20 | `content/inntak/poeng.yaml` | ikke kontrollert |
+| Grunnskolen (`sk-grunnskole`) | steg | Merknader til § 4-1 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Vilkår for Vg2 og Vg3 (`sk-vilkar-vg23`) | steg | Merknader til § 4-13 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Inntaksmåte (`sk-inntaksmate`) | steg | Merknader til § 4-19 første ledd bokstav d og e | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Fortrinnsrett: særlig utdanningsprogram (`sk-fortrinn-program`) | steg | Merknader til § 4-21 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+| Konkurrerer på poeng (`sk-poeng`) | steg | Merknader til § 4-19 | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+
+### Hvem er klageinstanser etter enkeltvedtak?
+
+`udir-klageinstanser` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Klage på vedtaket om inntak (`fr-klage`) | frist | Kapittel 4 Inntak til vidaregåande opplæring | `content/inntak/frister.yaml` | ikke kontrollert |
+| Søknad, svar og klage (`sk-soknad`) | steg | Kapittel 4 Inntak til vidaregåande opplæring | `content/inntak/rett-inntak-soknad.yaml` | ikke kontrollert |
+
+### Vilbli.no – inntak og frister
+
+`vilbli` · Kildesjekk: sjekkes ikke automatisk · [Åpne kilden](https://www.vilbli.no/)
+
+**Innhold som bygger på kilden**
+
+| Innhold | Type | Punkt | Fil | Din kontroll |
+|---|---|---|---|---|
+| Svar, svarfrist og andre inntak (`fr-svar`) | frist | Inntak og frister i fylket | `content/inntak/frister.yaml` | ikke kontrollert |
 
 ### Overordnet del – verdier og prinsipper for grunnopplæringen
 
@@ -1044,6 +1216,43 @@ Kilder å sjekke mot: [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.n
 
 Kilder å sjekke mot: [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62/§15-7): § 15-7 Vern mot usaklig oppsigelse; [Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven)](https://lovdata.no/lov/2005-06-17-62/§15-14): § 15-14 Avskjed
 
+**Ungdomsrett** (`ungdomsrett`, begrep, ikke kontrollert)
+
+- «Ungdomsrett» står ikke i loven, men brukes i Vestlands forskrift og i praksis. Er det greit å bruke ordet som navn på begrepet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 Rett til vidaregåande opplæring; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/): Rett til videregående opplæring
+
+**Voksenrett** (`voksenrett`, begrep, ikke kontrollert)
+
+- Er «mellom 19 og 24 år» en forståelig forenkling av «fra skoleåret som starter det året søkeren fyller 19, til og med skoleåret som starter det året søkeren fyller 24»?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§18-3): § 18-3 Rett til vidaregåande opplæring for vaksne; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/): Inntak og formidling for voksne
+
+**Omvalg** (`omvalg`, begrep, ikke kontrollert)
+
+- Er «bytte til et annet utdanningsprogram eller programområde» en god forklaring på omvalg, når loven ikke definerer ordet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-5): § 5-5 Rett til omval; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-2): § 4-2 første ledd
+
+**Realkompetansevurdering** (`realkompetansevurdering`, begrep, ikke kontrollert)
+
+- Er «det en voksen kan fra utdanning, arbeid og ellers» en forståelig gjengivelse av formell, uformell og ikke-formell kompetanse (§ 13-5)?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§18-8): § 18-8 Realkompetansevurdering; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§13-5): § 13-2 og § 13-5
+
+**Gjesteelev** (`gjesteelev`, begrep, ikke kontrollert)
+
+- Er det riktig å bruke «gjesteelev» om søkere fra andre fylker, slik opplæringslova § 29-1 gjør?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-14): § 4-14 tredje ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 andre ledd
+
+**Privatist** (`privatist`, begrep, ikke kontrollert)
+
+- § 9-52 sier at tidligere standpunkt- og eksamenskarakterer «fell bort» når privatisten får eksamenskarakteren ført. Stemmer det at dette gjelder også når den nye karakteren er lavere?
+- Skal begrepet si hvor privatister melder seg opp i Vestland, eller holder det med «der fylkeskommunen bestemmer»?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§23-1): § 23-1 Privatistar; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-27): § 9-27 Oppmelding til eksamen; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-52): § 9-52 Føring av karakterar i fag på vitnemål og kompetansebevis; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-2): § 4-2 Inntak til utdanningsprogram og programområde; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 bokstav e
+
 **Lov** (`lov`, begrep, ikke kontrollert)
 
 - Er «Lovene gir de viktigste rettighetene og pliktene» en dekkende og ikke misvisende forenkling av forholdet mellom lov og forskrift?
@@ -1174,6 +1383,83 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-1): § 10-1 Det beste for eleven; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-2): § 10-2 Elevane sin rett til medverknad; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#elevens-beste-retten-bli-hort): punkt 1.4 Elevens beste og retten til å bli hørt
 
+**Søknadsfrist** (`fr-soknad-mars`, frist, ikke kontrollert)
+
+- Er det riktig å knytte fristen for omvalg til søknadsfristen 1. mars (opplaeringslova § 5-5)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 første og tredje ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-5): § 5-5 Rett til omval
+
+**Rett, inntak og søknad** (`rett-inntak-soknad`, veiviser, ikke kontrollert)
+
+- Er de tre fasene (rett, inntaksmåte, søknad) en dekkende inndeling av hvordan en søker til videregående tas inn?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 Rett til vidaregåande opplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/kap4): Kapittel 4 Inntak til vidaregåande opplæring; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/): Rett til videregående opplæring
+
+**Ikke rett til videregående ennå** (`sk-ikke-grunnskole`, steg, ikke kontrollert)
+
+- Er «voksne» riktig ord for dem § 18-5 andre ledd gjelder («dei som er over opplæringspliktig alder»)?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§18-2): § 18-2 Rett til førebuande opplæring for vaksne; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§18-5): § 18-5 andre ledd
+
+**Opphold i Norge** (`sk-opphold`, steg, ikke kontrollert)
+
+- Er det riktig å stille spørsmålet om opphold så tidlig, før spørsmålet om søkeren har studie- eller yrkeskompetanse?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 første ledd tredje punktum; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-9): § 5-9 Rett til vidaregåande opplæring for dei som ikkje har opphaldsløyve
+
+**Venter på oppholdstillatelse** (`sk-venter-opphold`, steg, ikke kontrollert)
+
+- Søkere over 18 år som venter på oppholdstillatelse, går videre i veiviseren uten egen merknad. Bør veiviseren si noe mer om dem?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-9): § 5-9
+
+**Ikke rett** (`sk-ikke-opphold`, steg, ikke kontrollert)
+
+- Er det dekkende å si «ikke rett» her, uten å nevne at fylkeskommunen kan ha et tilbud likevel?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-9): § 5-1 første ledd og § 5-9 første ledd
+
+**Videregående fra utlandet** (`sk-utland-vgo`, steg, ikke kontrollert)
+
+- Er «uansett alder» en riktig lesning av § 5-1 fjerde ledd andre punktum, som ikke har aldersgrensen i første punktum?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 første ledd andre punktum og fjerde ledd andre punktum
+
+**Alder** (`sk-alder`, steg, ikke kontrollert)
+
+- Er svarene på alder («før skoleåret søkeren fyller 19», «fra … til og med skoleåret søkeren fyller 24», «senere») lette å forstå for en rådgiver?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 andre og tredje ledd; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/): Rett til videregående opplæring
+
+**Ungdom eller voksen** (`sk-ungdom-eller-voksen`, steg, ikke kontrollert)
+
+- Er «tilpasset voksne» en riktig kort beskrivelse av forskjellen på opplæring som ungdom og for voksne?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 tredje ledd; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/kan-jeg-fa-videregaende-opplaring/): Velge mellom opplæring som elev eller voksen
+
+**Ungdomsrett** (`sk-ungdomsrett`, steg, ikke kontrollert)
+
+- Bør steget også nevne at søkere med ungdomsrett før 19 år kan søke om opplæring for voksne når det er særlige grunner (§ 5-1 fjerde ledd)?
+- Er det greit at veiviseren ikke skiller mellom Vg2 og Vg3, når reglene for fortrinnsrett og individuell behandling er de samme?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-1): § 5-1 femte og sjette ledd; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§5-5): § 5-5 Rett til omval; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-2): § 4-2 Inntak til utdanningsprogram og programområde og § 4-7 andre ledd
+
+**Søknad, svar og klage** (`sk-soknad`, steg, ikke kontrollert)
+
+- Er klageinstansene riktig og forståelig beskrevet, etter Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?»?
+- Er «vanligvis inntakskontoret i fylkeskommunen» et godt navn på den som fatter vedtaket om inntak?
+- Er den korte oppsummeringen av hvem som har frist 1. februar riktig nok, når detaljene står i stegene over (§ 4-9 andre ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 Fristar for å søkje om inntak; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen): Kapittel 4 Inntak til vidaregåande opplæring; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§29-1): § 29-1 Klageinstans for enkeltvedtak; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist og § 32 Klagens adressat, form og innhold
+
+**Voksenrett** (`sk-voksenrett`, steg, ikke kontrollert)
+
+- Er «innenfor det fylkeskommunen tilbyr» (Udirs side) riktig å ta med her?
+- Er rekkefølgen i § 13-4 andre og tredje ledd riktig gjengitt?
+- Udirs oversikt over klageinstanser er ikke lest for kapittel 13. Skal veiviseren si hvem som er klageinstans for voksne?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§18-3): § 18-3 Rett til vidaregåande opplæring for vaksne; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/): Inntak og formidling for voksne; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§13-4): § 13-3 til § 13-5; [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist og § 32 Klagens adressat, form og innhold
+
 **Særskilt språkopplæring og kort botid** (`sprak-og-kort-botid`, veiviser, ikke kontrollert)
 
 - Er de fire fasene (vurdering, vedtak, opplæring, oppfølging) en dekkende inndeling av særskilt språkopplæring i videregående?
@@ -1191,6 +1477,43 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 - Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/kap11): Kapittel 11 Tilpassa opplæring og individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging
+
+**Sluttkompetanse** (`sluttkompetanse`, begrep, ikke kontrollert)
+
+- Er eksemplene på sluttkompetanser (studiekompetanse, yrkeskompetanse, praksisbrev) dekkende, eller bør kompetansebevis også nevnes?
+
+Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/#frem-til-studie--eller-yrkeskompetanse): Frem til studie- eller yrkeskompetanse; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§13-3): § 13-3 Søknad om inntak til vidaregåande opplæring for vaksne
+
+**Fortrinnsrett ved inntak** (`fortrinnsrett`, begrep, ikke kontrollert)
+
+- Er de tre grunnlagene for fortrinnsrett beskrevet riktig og kort nok?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-21): § 4-21 til § 4-23 og § 4-27 til § 4-28; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-14): § 4-14 Rekkjefølgja ved inntak
+
+**Individuell behandling ved inntak** (`individuell-behandling`, begrep, ikke kontrollert)
+
+- Er eksemplene representative for hvem som behandles individuelt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-20): § 4-20 og § 4-26; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-18-fordeling-av-plassar-til-vidaregaande-trinn-1/): Merknader til § 4-18
+
+**Landslinje** (`landslinje`, begrep, ikke kontrollert)
+
+- Er «åpent for søkere fra hele landet» riktig for alle landslinjer?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-16): § 4-5 første ledd bokstav d og § 4-16; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-8): § 4-8 tredje ledd
+
+**Deltidselev** (`deltidselev`, begrep, ikke kontrollert)
+
+- VL § 2-2 sjuende ledd bruker også «deltidselevar» om Vg1. Bør begrepet nevne det?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-14): § 2-14 Inntak av deltidselevar til Vg2/Vg3; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-13): § 4-13 fjerde ledd
+
+**Karakterpoeng** (`karakterpoeng`, begrep, ikke kontrollert)
+
+- Forskriften sier «poengsum», mens Vestlands forskrift sier «karakterpoeng». Er «karakterpoeng» det ordet skolene bruker, så det passer som navn på begrepet?
+- Er det riktig forstått av § 4-18 og § 4-24 at søkere med fortrinnsrett eller individuell behandling tas inn uten å konkurrere på poeng?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-18): § 4-18 Fordeling av plassar til vidaregåande trinn 1; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-19 bokstav a; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-24): § 4-24 Fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 bokstav a; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§19-2): § 19-2 bokstav c
 
 **Forskrift** (`forskrift`, begrep, ikke kontrollert)
 
@@ -1212,14 +1535,168 @@ Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltning
 
 Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/): Ingressen; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg
 
+**Voksne søker når som helst** (`fr-voksne-lopende`, frist, ikke kontrollert)
+
+- Er «når som helst» en god forenkling av «fortløpande» i § 13-3, når fylket kan ha datoer det anbefaler for oppstart?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§13-3): § 13-3 Søknad om inntak til vidaregåande opplæring for vaksne
+
+**Kommunen melder elever som kan ha fortrinnsrett** (`fr-melding-fortrinn`, frist, ikke kontrollert)
+
+- Er det riktig at 1. oktober gjelder året eleven fullfører grunnskolen, altså høsten i 10. trinn?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-21): § 4-21 tredje ledd og § 4-22 tredje ledd
+
+**Søknadsfristen kunngjøres** (`fr-kunngjoring`, frist, ikke kontrollert)
+
+- Kunngjøringen står i januar, fordi fristen 1. februar må kunngjøres innen 4. januar. Er det en god plassering?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 fjerde ledd
+
+**Søknadsfrist for noen grupper** (`fr-soknad-februar`, frist, ikke kontrollert)
+
+- Er listen over hvem som har frist 1. februar en riktig og forståelig gjengivelse av § 4-9 andre ledd bokstav a–e?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd
+
+**Søknader til skoler med tegnspråk sendes videre** (`fr-tegnsprak`, frist, ikke kontrollert)
+
+- Er det nyttig å ha med denne fristen, som er en frist for fylkeskommunen og ikke for søkeren?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-11): § 4-11
+
+**Melde seg til mer opplæring i fag som ikke er bestått** (`fr-mer-opplaering`, frist, ikke kontrollert)
+
+- Står fristen riktig i juni, eller bør den stå senere fordi sensuren for noen eksamener kommer senere?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-3): § 4-3 Meir opplæring for elevar i fag som er gjennomført, men ikkje bestått
+
+**Til Vg1** (`po-vg1`, regel, ikke kontrollert)
+
+- Er det riktig at bare karakteren fra det høyeste trinnet teller når søkeren har hatt samme valgfag i flere år?
+- Er det riktig at valgfag ikke teller når søkeren har tatt fag fra videregående i stedet for valgfag på alle trinn?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-19 første ledd bokstav a, b og e; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-19
+
+**Til Vg2 og Vg3** (`po-vg2-vg3`, regel, ikke kontrollert)
+
+- Er norsk et godt eksempel på et fag der bare halvårsvurderingen fra Vg2 teller ved inntak til Vg3?
+- Stemmer typen (standpunkt eller halvår) som fylles inn for fellesfagene når man velger løp, f.eks. halvår i norsk og kroppsøving på Vg1 studieforberedende?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 første ledd bokstav a og d; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§9-13): § 9-13 tredje ledd; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/): Vedlegg 1, kapittel 3 Videregående opplæring; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-25
+
+**Dette teller ikke** (`po-teller-ikke`, regel, ikke kontrollert)
+
+- Er listen over fag som ikke teller, riktig og fullstendig nok for brukerne?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-19 første ledd bokstav c og d, § 4-25 første ledd bokstav b og c; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-19
+
+**Privatist og omvalg** (`po-beste`, regel, ikke kontrollert)
+
+- Er «den beste karakteren fag for fag» en riktig beskrivelse av «det beste utvalet av karakterar» ved omvalg?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 første ledd bokstav e og f; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-25
+
+**Individuell behandling i stedet for poeng** (`po-individuell`, regel, ikke kontrollert)
+
+- Teller valgfagene med blant fagene på vitnemålet når kalkulatoren sjekker om mer enn halvparten mangler karakter?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-20): § 4-20 første ledd bokstav a og § 4-26 første ledd bokstav a; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/): Merknad til § 4-20
+
+**Like poeng** (`po-loddtrekning`, regel, ikke kontrollert)
+
+- Er det nyttig å ha med loddtrekning, eller er det selvsagt for brukerne?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-18): § 4-18 og § 4-24
+
+**Vg3 i Vestland** (`po-vl-vg3`, regel, ikke kontrollert)
+
+- Gjelder det fortsatt at karakterene fra både Vg1 og Vg2 teller ved inntak til Vg3 i Vestland?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-3): § 2-3 andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-25 første ledd
+
+**Grunnskolen** (`sk-grunnskole`, steg, ikke kontrollert)
+
+- Er «skrevet ut av grunnskolen før 10. trinn» en riktig og forståelig gjengivelse av ofo. § 4-1 første ledd bokstav a, som viser til opplæringslova § 2-2 tredje ledd?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-1): § 4-1 Kven som har rett til vidaregåande opplæring; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/i.-fellesreglar/-4-1-kven-som-har-rett-til-vidaregaande-opplaring/): Merknader til § 4-1
+
+**Grunnopplæring i utlandet** (`sk-utland`, steg, ikke kontrollert)
+
+- Lenken går til steget «Kort botid?» i veiviseren for særskilt språkopplæring. Er det riktig sted å lenke til fra inntak?
+- Er «Det avgjør kommunen» riktig for alle søkere, når fylkeskommunen har tilsvarende ansvar der den har ansvaret for forberedende opplæring (ofo. § 4-1 tredje ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-1): § 4-1 andre og tredje ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd bokstav c
+
+**Rekvalifisering eller uten rett** (`sk-rekvalifisering`, steg, ikke kontrollert)
+
+- Er «først etter søkerne med rett» riktig også for søkere uten rett som vil inn som ungdom, ikke bare som voksne?
+
+Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-yrkesfaglig-rekvalifisering/): Rett til yrkesfaglig rekvalifisering; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§13-4): § 13-4 tredje ledd
+
+**Vilkår for Vg2 og Vg3** (`sk-vilkar-vg23`, steg, ikke kontrollert)
+
+- Er de tre gruppene i § 4-13 andre ledd gjengitt riktig og kort nok?
+- Bør steget nevne femte og sjette ledd (dokumentasjon uten karakterer, og tungtveiende grunner)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-13): § 4-13 Vilkår for inntak til vidaregåande trinn 2 og vidaregåande trinn 3; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iii.-vilkara-for-og-rekkjefolgja-ved-inntak-til-vidaregaande-opplaring-trinn-1-til-trinn-3/-4-13-vilkar-for-inntak-til-vidaregaande-trinn-2-og-vidaregaande-trinn-3/): Merknader til § 4-13
+
+**Inntaksmåte** (`sk-inntaksmate`, steg, ikke kontrollert)
+
+- Er svaralternativene for fortrinnsrett korte nok, og likevel dekkende for vilkårene i § 4-21, § 4-22 og § 4-23?
+- Er listen en riktig sammenslåing av § 4-20 (Vg1) og § 4-26 (Vg2 og Vg3)?
+- Udirs merknader sier at fritak og IV til sammen i mer enn halvparten av fagene også gir individuell behandling. Bør det stå i listen?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-14): § 4-14 første ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-20): § 4-20 Individuell behandling ved fordeling av plassar til vidaregåande trinn 1; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-26): § 4-26 Individuell behandling ved fordeling av plassar til vidaregåande trinn 2 og vidaregåande trinn 3; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-19-poengutrekning-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/): Merknader til § 4-19 første ledd bokstav d og e
+
+**Fortrinnsrett: særlig utdanningsprogram** (`sk-fortrinn-program`, steg, ikke kontrollert)
+
+- Er «har svært mye å si for om de kan fullføre» en riktig gjengivelse av vilkåret i § 4-21 første ledd?
+- Udirs tolkning om at statsforvalteren er klageinstans for hele saken ved fortrinnsrett, gjaldt den gamle loven og er merket utgått. Hvem er klageinstans når søkeren mener fortrinnsretten ikke er oppfylt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-21): § 4-21 Fortrinnsrett til eit særleg utdanningsprogram ved inntak til vidaregåande trinn 1; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-21-fortrinnsrett-til-eit-sarleg-utdanningsprogram-ved-inntak-til-vidaregaande-trinn-1/): Merknader til § 4-21
+
+**Fortrinnsrett: tilrettelagt skole** (`sk-fortrinn-skole`, steg, ikke kontrollert)
+
+- Er forskjellen mellom Vg1 (kan søke, ikke rett til en bestemt skole) og Vg2/Vg3 (fortrinnsrett når behovet er dokumentert) riktig gjengitt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-22): § 4-22 Fortrinnsrett til ein skole som er særskilt tilrettelagd ved inntak til vidaregåande trinn 1; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-27): § 4-27 Fortrinnsrett til ein skole som er særskilt tilrettelagd ved inntak til vidaregåande trinn 2 og vidaregåande trinn 3
+
+**Fortrinnsrett: tegnspråk** (`sk-fortrinn-tegnsprak`, steg, ikke kontrollert)
+
+- Er «skal normalt kunne fullføre der» en riktig gjengivelse av § 4-17?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-23): § 4-23 og § 4-28 Fortrinnsrett for søkjarar med rett til opplæring i og på norsk teiknspråk; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-11): § 4-7 tredje ledd og § 4-11
+
+**Individuell behandling** (`sk-individuell-behandling`, steg, ikke kontrollert)
+
+- § 4-9 andre ledd bokstav a gir 1. februar bare for søkere med vedtak om individuell tilrettelegging som i tillegg faller inn under bestemte paragrafer. Er fristteksten her for enkel?
+- Er «Søkeren har fortsatt rett til ett av tre utdanningsprogram» riktig for alle som behandles individuelt?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-20): § 4-20 andre ledd og § 4-26 andre ledd; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd bokstav a og e
+
+**Konkurrerer på poeng** (`sk-poeng`, steg, ikke kontrollert)
+
+- Er den korte beskrivelsen av poengsummen riktig nok her, når detaljene kommer i poengberegningen (pakke 3)?
+- Er de to gruppene med frist 1. februar (særskilt språkopplæring og nylig kommet til Norge) de eneste som kan gjelde søkere som konkurrerer på poeng (§ 4-9 andre ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-9): § 4-9 andre ledd bokstav b og c; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-19): § 4-18 og § 4-19; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-25): § 4-24 og § 4-25; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-6): § 4-6 Inntak til einskilde utdanningsprogram; [Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring](https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-19-poengutrekning-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/): Merknader til § 4-19
+
+**Hvor søknaden sendes** (`sk-bosted`, steg, ikke kontrollert)
+
+- Bør steget nevne at søkere fra andre fylker med særlige pedagogiske eller sosiale grunner, eller rett til samisk, tas inn først blant dem (§ 4-14 tredje ledd)?
+
+Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-8): § 4-8 Kvar søknaden om inntak skal sendast; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§4-14): § 4-14 første og tredje ledd
+
 **Læreplanene i særskilt språkopplæring** (`sp-laereplan`, steg, ikke kontrollert)
 
 - Er det riktig å kalle grunnleggende norsk og morsmål for språklige minoriteter «ikke kompetansegivende» fordi de ikke gir karakter («Det gis ikke vurdering med karakter …» i vurderingsordningen)?
 - Er det riktig at læreplanen for kort botid er kompetansegivende, og at eleven kan følge den i stedet for den vanlige læreplanen i norsk?
 - Er «Brukes i særskilt språkopplæring til eleven kan norsk godt nok til å følge den vanlige opplæringen» en riktig beskrivelse av grunnleggende norsk i videregående?
 - Står læreplanene på rett sted i veiviseren (etter vedtak og innføringsopplæring), eller bør de også vises i vedtakssteget?
+- GNS02-01 står ikke i Udirs liste over læreplaner for særskilt språkopplæring. Er merknaden riktig: for voksne i modulstrukturert opplæring, ingen sluttvurdering, og en midtveisvurdering med godkjent eller ikke godkjent når modulen er ferdig?
 
-Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor07-03/om-faget/vurdering): Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor09-05/om-faget/vurdering): Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor08-03/om-faget/vurdering): Morsmål for språklige minoriteter (NOR08-03), Vurdering
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring; [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor07-03/om-faget/vurdering): Grunnleggende norsk for språklige minoriteter (NOR07-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor09-05/om-faget/vurdering): Norsk for språklige minoriteter med kort botid (NOR09-05), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/nor08-03/om-faget/vurdering): Morsmål for språklige minoriteter (NOR08-03), Vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/kompetansemaal-og-vurdering/kv852): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Kompetansemål og vurdering; [Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no](https://www.udir.no/lk20/gns02-01/vurderingsordning): Norsk og samfunnskunnskap for språklige minoriteter – modulstrukturert opplæring for voksne (GNS02-01), Vurderingsordning
 
 **Klage på enkeltvedtak** (`klage`, begrep, ikke kontrollert)
 
@@ -1238,6 +1715,12 @@ Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltning
 - Loven sier «representert av verge». Er «representert av foreldre» en riktig forenkling for elever under 18 år?
 
 Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§16): § 16 Forhåndsvarsling
+
+**Klage på vedtaket om inntak** (`fr-klage`, frist, ikke kontrollert)
+
+- Klagefristen gjelder alle søkere, også voksne. Er det riktig å vise den i alle filtrene?
+
+Kilder å sjekke mot: [Lov om behandlingsmåten i forvaltningssaker (forvaltningsloven)](https://lovdata.no/lov/1967-02-10/§29): § 29 Klagefrist; [Hvem er klageinstanser etter enkeltvedtak?](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen): Kapittel 4 Inntak til vidaregåande opplæring
 
 **Grunnleggende ferdigheter** (`grunnleggende-ferdigheter`, begrep, ikke kontrollert)
 
@@ -1332,7 +1815,73 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 
 Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader](https://kodeverk.vigo.no/): Vitnemålsmerknader
 
-**Velg hvor du starter** (`ti-start`, steg, ikke kontrollert)
+**Inntaksområde** (`inntaksomrade`, begrep, ikke kontrollert)
+
+- Er «konkurrerer med dem ved skolene der» en riktig beskrivelse av hva inntaksområdepoeng betyr i praksis?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-1): § 2-1 Inntak etter inntaksområde og § 2-2 tredje ledd
+
+**Tilleggspoeng** (`tilleggspoeng`, begrep, ikke kontrollert)
+
+- Forskriften sier at «inntil 50 % av plassane» kan fordeles med tilleggspoeng. Fordeles resten av plassene bare etter karakterpoeng, eller kan søkere med tilleggspoeng også konkurrere om dem med karakterpoengene alene?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-7): § 2-7 Inntak til Vg1 musikk, dans og drama; [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-8): § 2-8 Inntak til Vg1 idrettsfag
+
+**Voksne bør søke for oppstart om høsten** (`fr-vl-voksne-host`, frist, ikke kontrollert)
+
+- Er «bør søke innen» en riktig gjengivelse av VL § 4-1, som sier at søkeren «bør» registrere søknaden innen datoen?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§4-1): § 4-1 første ledd
+
+**Dokumentasjon av flytting til Vestland** (`fr-vl-flytting`, frist, ikke kontrollert)
+
+- Gjelder 23. juni bare søkere til videregående for ungdom, eller også voksne?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-17): § 2-17 Flytting
+
+**Rektor følger ventelistene** (`fr-vl-ventelister`, frist, ikke kontrollert)
+
+- Er rekkefølgen i VL § 2-19 tredje ledd riktig oppsummert som «en fast rekkefølge», eller bør den stå i sin helhet?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-19): § 2-19 Rektor sin rett til inntak av elevar
+
+**Møte første skoledag** (`fr-vl-forste-skoledag`, frist, ikke kontrollert)
+
+- Står første skoledag riktig i august, eller kan den variere med skoleruta?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-18): § 2-18 Frammøte første skuledag
+
+**Inntaket er avsluttet** (`fr-vl-inntak-avsluttet`, frist, ikke kontrollert)
+
+- Betyr «inntaket er avsluttet» at skolene ikke kan ta inn flere elever etter 1. september, eller bare at det sentrale inntaket er ferdig?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-19): § 2-19 andre ledd
+
+**Voksne bør søke for oppstart om våren** (`fr-vl-voksne-var`, frist, ikke kontrollert)
+
+- Er det riktig å plassere denne fristen i oktober, samme måned som kommunen melder elever med mulig fortrinnsrett?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§4-1): § 4-1 første ledd
+
+**Slutte i et fag for å beholde standpunktkarakteren** (`fr-vl-omvalg-fag`, frist, ikke kontrollert)
+
+- Er «før 1. november» riktig dato i tidslinjen, når fristen er at eleven må slutte før denne datoen?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-15): § 2-15 tredje ledd
+
+**Tilleggspoeng på musikk, dans og drama og idrettsfag** (`po-vl-tillegg`, regel, ikke kontrollert)
+
+- Er det riktig at tilleggspoengene legges til karakterpoengene, slik kalkulatoren gjør?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-7): § 2-7 og § 2-8
+
+**Inntaksområdepoeng** (`po-vl-inntaksomrade`, regel, ikke kontrollert)
+
+- Kan tallet på inntaksområdepoeng legges inn når vestlandfylke.no svarer igjen?
+
+Kilder å sjekke mot: [Forskrift om inntak til vidaregåande opplæring og formidling til læreplass i Vestland fylkeskommune](https://lovdata.no/forskrift/2020-09-29-3380/§2-1): § 2-1 første og andre ledd
+
+**Hvor saken starter** (`ti-start`, steg, ikke kontrollert)
 
 - Dekker de tre inngangene (ordinær opplæring, vedtak fra grunnskolen, forespørsel fra eleven eller foreldrene) de vanlige måtene en sak starter på i videregående?
 
@@ -1359,7 +1908,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#skolen-skal-sette-inn-egnede-tiltak): punkt 4.1 Skolen skal sette inn egnede tiltak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tiltak-innenfor-ordinar-opplaring/#elever-med-apenbart-behov-individuell-tilrettelegging): punkt 4.3 Elever med et åpenbart behov for individuell tilrettelegging
 
-**Er tiltakene nok?** (`ti-nok`, steg, ikke kontrollert)
+**Vurdere tiltakene** (`ti-nok`, steg, ikke kontrollert)
 
 - Er det riktig at en forespørsel fra eleven eller foreldrene alltid skal gi et vedtak, også når skolen mener eleven ikke trenger individuell tilrettelegging?
 
@@ -1378,7 +1927,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole): punkt 7.5 Overgang til nytt trinn og ny skole
 
-**Hva kan eleven trenge?** (`ti-behov`, steg, ikke kontrollert)
+**Elevens behov** (`ti-behov`, steg, ikke kontrollert)
 
 - Er eksemplene for hver av de tre rettighetene riktige og dekkende for videregående?
 - Veilederen nevner også opplæring i mobilitet for blinde og sterkt svaksynte. Bør den nevnes her, eller er det nok i forklaringen av fysisk tilrettelegging?
@@ -1450,7 +1999,7 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#tospraaklig-opplaering-i-fag): Tospråklig opplæring i fag
 
-**Hvem har rett?** (`sp-morsmal`, steg, ikke kontrollert)
+**Hvem som har rett** (`sp-morsmal`, steg, ikke kontrollert)
 
 - Er det riktig å skrive at en elev kan være født i Norge og likevel være minoritetsspråklig, slik Udir skriver om minoritetsspråklige elever?
 
@@ -1482,7 +2031,7 @@ Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#vurdering-av-elevens-ferdigheter-i-norsk): Vurdering av elevens ferdigheter i norsk
 
-**Kort botid?** (`sp-kort-botid`, steg, ikke kontrollert)
+**Elever med kort botid** (`sp-kort-botid`, steg, ikke kontrollert)
 
 - Er forklaringen om rett til videregående for elever med kort botid riktig og forsiktig nok, når inntak kommer i fase 5?
 - Fører «Nei» riktig videre til læreplanene, der læreplanen for kort botid også kan gjelde elever som ikke regnes som nyankomne?
@@ -1507,6 +2056,24 @@ Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-t
 - Er definisjonen (annet morsmål enn norsk og samisk) riktig, når Udir også nevner at kvensk, romani og andre nasjonale minoritetsspråk har egne regler?
 
 Kilder å sjekke mot: [Tilrettelegge opplæringen for minoritetsspråklige og nyankomne elever](https://www.udir.no/laring-og-trivsel/minoritetsspraklige-og-nyankomne/minoritetsspraklige/tilrettelegge-opplaringen-for-minoritetsspraklige-og-nyankomne-elever/#hvem-er-de-minoritetsspraaklige-og-nyankomne-elevene): Hvem er de minoritetsspråklige og nyankomne elevene?
+
+**Kompetanse fra før** (`sk-kompetanse`, steg, ikke kontrollert)
+
+- Er skillet mellom «fag- eller svennebrev» (påbygging) og «studiekompetanse eller annen yrkeskompetanse» (rekvalifisering) riktig og forståelig?
+
+Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/#frem-til-studie--eller-yrkeskompetanse): Frem til studie- eller yrkeskompetanse
+
+**Påbygging eller rekvalifisering** (`sk-pabygging`, steg, ikke kontrollert)
+
+- Er det riktig å si at søkere med fag- eller svennebrev har både rett til påbygging og rett til yrkesfaglig rekvalifisering?
+
+Kilder å sjekke mot: [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-pabygging/): Rett til påbygging; [Retten til videregående opplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-yrkesfaglig-rekvalifisering/): Rett til yrkesfaglig rekvalifisering
+
+**Svar, svarfrist og andre inntak** (`fr-svar`, frist, ikke kontrollert)
+
+- Er «andre inntak» og «venteliste» riktige ord for det som skjer etter det første svaret?
+
+Kilder å sjekke mot: [Vilbli.no – inntak og frister](https://www.vilbli.no/): Inntak og frister i fylket
 
 **Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
 
