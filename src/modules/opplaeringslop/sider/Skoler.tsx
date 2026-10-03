@@ -56,13 +56,25 @@ function Skolegren({ kode, ved, indeks, tilbud, sett, valgt }: { kode: string; v
 }
 
 /**
- * Tilbudene ved skolen, gruppert etter utdanningsprogram i samme rekkefølge som Opplæringsløp, hvert som et løp. Med
- * `valgt` vises bare løpet til det tilbudet, og det er merket.
+ * Tilbudene ved skolen som vises når skolen åpnes: med et tilbud i filteret bare løpet til det tilbudet, ellers med et
+ * utdanningsprogram i filteret bare det programmet (eier 03.10.2026). Tilbudet gjelder foran programmet.
  */
-function Skoletilbud({ skole, indeks, tilbud, valgt, bareValgt }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; valgt: string; bareValgt: boolean }) {
+function utvalgVedSkolen(vedSkolen: readonly string[], indeks: Fagindeks, tilbud: Tilbudene, valgt: string, program: string): readonly string[] {
+  if (valgt && vedSkolen.includes(valgt)) return lopetTil(valgt, vedSkolen, indeks, tilbud);
+  if (program) {
+    const iProgram = vedSkolen.filter((k) => indeks.programomrader[k]?.program === program);
+    if (iProgram.length > 0) return iProgram;
+  }
+  return vedSkolen;
+}
+
+/**
+ * Tilbudene ved skolen, gruppert etter utdanningsprogram i samme rekkefølge som Opplæringsløp, hvert som et løp.
+ * `koder` er tilbudene som vises; tilbudet i `valgt` er merket.
+ */
+function Skoletilbud({ koder, indeks, tilbud, valgt }: { koder: readonly string[]; indeks: Fagindeks; tilbud: Tilbudene; valgt: string }) {
   const { malform } = useTekst();
-  const vedSkolen = skole.tilbud.filter((k) => indeks.programomrader[k]);
-  const kjente = valgt && bareValgt && vedSkolen.includes(valgt) ? lopetTil(valgt, vedSkolen, indeks, tilbud) : vedSkolen;
+  const kjente = [...koder];
   const sorter = (koder: string[]) =>
     koder.sort((a, b) => TRINN.indexOf(indeks.programomrader[a]?.trinn ?? '') - TRINN.indexOf(indeks.programomrader[b]?.trinn ?? '') || a.localeCompare(b));
   return (
@@ -88,15 +100,20 @@ function Skoletilbud({ skole, indeks, tilbud, valgt, bareValgt }: { skole: Skole
 }
 
 /** Én skole: navnet og stedet, og tilbudene når den er åpnet. */
-function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; dinSkole: boolean; apen: boolean; valgt: string }) {
+function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { skole: Skoleoppforing; indeks: Fagindeks; tilbud: Tilbudene; dinSkole: boolean; apen: boolean; valgt: string; program: string }) {
   const { t, malform } = useTekst();
   const [vist, settVist] = useState(apen);
   const [alle, settAlle] = useState(false);
   const id = useId();
   const vedSkolen = skole.tilbud.filter((k) => indeks.programomrader[k]);
   const antall = vedSkolen.length;
-  // Knappen for alle tilbudene trengs bare når løpet til tilbudet det er søkt på, er en del av dem.
-  const delvis = !!valgt && vedSkolen.includes(valgt) && lopetTil(valgt, vedSkolen, indeks, tilbud).length < antall;
+  // Knappen for alle tilbudene trengs bare når utvalget etter filteret er en del av dem.
+  const utvalg = utvalgVedSkolen(vedSkolen, indeks, tilbud, valgt, program);
+  const delvis = utvalg.length < antall;
+  const bareTekst =
+    valgt && vedSkolen.includes(valgt)
+      ? t('opplaeringslop.skoler.bareLopet', { tilbud: tilbudsnavn(t, indeks, valgt, malform) })
+      : t('opplaeringslop.skoler.bareProgram', { program: tilbud.struktur.find((p) => p.program === program)?.navn[malform] ?? program });
   const under = [skole.sted, fylkesnavn(skole.fylke), skole.privat ? t('opplaeringslop.skoler.privat') : null, t('opplaeringslop.skoler.antallTilbud', { antall: formaterTall(antall) })].filter(Boolean).join(' · ');
   return (
     <li class={vist ? 'skolekort apen' : 'skolekort'} data-skole={skole.nr ?? undefined}>
@@ -114,11 +131,11 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt }: { skole: Sk
         {vist && delvis && (
           <p class="skolekort-alle">
             <button type="button" class="lenkeknapp liten" onClick={() => settAlle(!alle)}>
-              {alle ? t('opplaeringslop.skoler.bareLopet', { tilbud: tilbudsnavn(t, indeks, valgt, malform) }) : t('opplaeringslop.skoler.alleVedSkolen', { antall: formaterTall(antall) })}
+              {alle ? bareTekst : t('opplaeringslop.skoler.alleVedSkolen', { antall: formaterTall(antall) })}
             </button>
           </p>
         )}
-        {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud skole={skole} indeks={indeks} tilbud={tilbud} valgt={valgt} bareValgt={!alle} />)}
+        {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud koder={alle ? vedSkolen : utvalg} indeks={indeks} tilbud={tilbud} valgt={valgt} />)}
         {vist && skole.nettside && (
           <p>
             <a class="ekstern-lenke" href={skole.nettside} target="_blank" rel="noopener noreferrer">
@@ -296,7 +313,7 @@ export default function Skoler({ sporring }: SideProps) {
           </p>
           <ul class="skoleliste">
             {treff.slice(0, antall).map((s) => (
-              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}`} skole={s} indeks={data.indeks} tilbud={data.tilbud} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} valgt={filter.tilbud} />
+              <Skolekort key={`${s.nr ?? s.navn}-${filter.tilbud}-${filter.program}`} skole={s} indeks={data.indeks} tilbud={data.tilbud} dinSkole={!!minSkole && s.orgnr === minSkole} apen={treff.length === 1} valgt={filter.tilbud} program={filter.program} />
             ))}
           </ul>
           {treff.length > antall && (

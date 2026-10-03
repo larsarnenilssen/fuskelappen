@@ -506,7 +506,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - 0.29.0: begrepene karakterpoeng, privatist og tilleggspoeng, lenker til begrepsbanken i brødtekst (avgjørelse 050), status på søkerønsker, Vg4 påbygging og yrkesfaglig opphenting fra VIGO og Grep (avgjørelse 051). Kontrollpunktet for fase 5 er utsatt etter ønske fra eier.
 - Spørsmålene til vestlandfylke.no (inntaksområdepoeng og klagenemnd) tas med til senere faser til sidene svarer.
 - Arbeidsordren for fase 6 står i `docs/arbeidsordrer/fase-6.md`.
-- Etter 0.29.0: utdanning.no som kontrollkilde for løpene, med merking der Grep, VIGO og utdanning.no er uenige (avgjørelse 052). Skolene og tilbudene deres fra utdanning.no med «Min skole» / «Alle», yrkene for lærefagene, oppslag over opplæringskontorene fra NOR og lenker fra fagarket til NDLA (avgjørelse 053).
+- 0.30.0: utdanning.no som kontrollkilde for løpene, med merking der Grep, VIGO og utdanning.no er uenige (avgjørelse 052). Modulen Opplæringsløp heter nå **Opplæringstilbud**, med Opplæringsløp som underside, oppslag over skolene og tilbudene deres fra utdanning.no, «Min skole» / «Alle», yrkene for lærefagene, oppslag over opplæringskontorene fra NOR, lenker fra fagarket til NDLA og seks nye begreper (avgjørelse 053).
 
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.
 

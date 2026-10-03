@@ -66,6 +66,7 @@ export const ruter = [
   '#/fag/LBR3004',
   '#/fag/FINNES0',
   '#/opplaeringslop',
+  '#/opplaeringslop/lop',
   '#/opplaeringslop/HS',
   '#/opplaeringslop/HS/HSHEA2',
   '#/opplaeringslop/ST/STUSP1',

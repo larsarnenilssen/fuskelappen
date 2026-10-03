@@ -49,6 +49,7 @@ export const opplaeringslopNn = {
     utenTilbud: 'utdanning.no viser ingen tilbod ved skulen.',
     alleVedSkolen: 'Vis alle tilboda ved skulen ({antall})',
     bareLopet: 'Vis berre løpet for {tilbud}',
+    bareProgram: 'Vis berre {program}',
     heleLandet: 'Søk i heile landet ({antall})',
   },
   kontor: {

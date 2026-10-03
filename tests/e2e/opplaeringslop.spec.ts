@@ -5,8 +5,12 @@ import { settLagret } from './hjelp.ts';
 test.describe('opplæringsløp', () => {
   test('fra forsiden til programmet, tilbudet og fagarket', async ({ page }) => {
     await page.goto('./');
-    await page.getByRole('link', { name: /Opplæringsløp/ }).first().click();
+    // Modulen heter Opplæringstilbud, og Opplæringsløp er en underside (eier 03.10.2026).
+    await page.getByRole('link', { name: /Opplæringstilbud/ }).first().click();
+    await expect(page.locator('main h1')).toHaveText('Opplæringstilbud');
+    await page.getByRole('link', { name: /^Opplæringsløp/ }).click();
     await expect(page.locator('main h1')).toHaveText('Opplæringsløp');
+    await expect(page).toHaveURL(/#\/opplaeringslop\/lop$/);
     // Gruppene er lukket fra start (eier 02.10.2026).
     const yrkesfag = page.getByRole('button', { name: /^Yrkesfaglige utdanningsprogram/ });
     await expect(yrkesfag).toHaveAttribute('aria-expanded', 'false');
@@ -206,12 +210,16 @@ test.describe('opplæringsløp', () => {
   test('med valgt skole viser Opplæringsløp først skolens tilbud, og bryteren gir alle (avgjørelse 053)', async ({ page }) => {
     await settLagret(page, { fylke: '46', skole: { id: '974557479', navn: 'Åsane vidaregåande skule' } });
     await page.goto('./#/opplaeringslop');
-    await expect(page.getByRole('radio', { name: 'Min skole' })).toBeChecked();
-    await expect(page.getByText('Viser tilbudene ved Åsane vidaregåande skule.')).toBeVisible();
-    // To likestilte deler: utdanningsprogram og løp, og skoler og opplæringskontorer (eier 03.10.2026).
+    // Landingssiden har to likestilte deler: utdanningsprogram og løp, og skoler og opplæringskontorer (eier 03.10.2026).
+    await expect(page.locator('main h1')).toHaveText('Opplæringstilbud');
     await expect(page.getByRole('heading', { name: 'Utdanningsprogram og løp' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Skoler og opplæringskontorer' })).toBeVisible();
     await expect(page.getByRole('link', { name: /Skoler og tilbud.*skoler i Vestland/ })).toBeVisible();
+    await page.getByRole('link', { name: /^Opplæringsløp.*utdanningsprogram ved Åsane vidaregåande skule/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Opplæringsløp');
+    await expect(page.getByRole('navigation', { name: 'Plassering' }).getByRole('link', { name: 'Opplæringstilbud' })).toBeVisible();
+    await expect(page.getByRole('radio', { name: 'Min skole' })).toBeChecked();
+    await expect(page.getByText('Viser tilbudene ved Åsane vidaregåande skule.')).toBeVisible();
     await expect(page.getByRole('link', { name: /Helse- og oppvekstfag.*tilbud ved skolen/ })).toBeVisible();
     // Løpet starter fra skolens tilbud. Tilbudene ved skolen har egen farge, og knappen sier hvor mange som er ved skolen.
     await page.getByRole('link', { name: /Helse- og oppvekstfag/ }).click();
@@ -224,13 +232,13 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('.lop-videre > li > .lop-kort').first()).toHaveAttribute('data-skole', 'ja');
     // Valget huskes: «Alle» gjelder også når Opplæringsløp åpnes på nytt.
     await page.getByRole('radio', { name: 'Alle' }).check();
-    await page.goto('./#/opplaeringslop');
+    await page.goto('./#/opplaeringslop/lop');
     await expect(page.getByRole('radio', { name: 'Alle' })).toBeChecked();
     await expect(page.getByRole('button', { name: /^Yrkesfaglige utdanningsprogram/ })).toBeVisible();
   });
 
   test('uten valgt skole står en merknad om å velge skole (avgjørelse 053)', async ({ page }) => {
-    await page.goto('./#/opplaeringslop');
+    await page.goto('./#/opplaeringslop/lop');
     await expect(page.getByText('Velg skole under Innstillinger, så ser du tilbudene ved skolen din.')).toBeVisible();
     await expect(page.getByRole('radio', { name: 'Min skole' })).toHaveCount(0);
   });
@@ -248,11 +256,32 @@ test.describe('opplæringsløp', () => {
     await page.getByRole('button', { name: /Søk i hele landet/ }).click();
     await expect.poll(() => page.locator('.skoleliste > li').count()).toBeGreaterThan(antall);
     // En skole viser tilbudene sine når den åpnes, per utdanningsprogram og som et løp: Vg2 under Vg1 (eier 03.10.2026).
+    // Med et tilbud i filteret vises bare løpet til tilbudet, og tilbudet er merket. Den åpne skolen har egen flate.
     await page.locator('.skolekort-knapp').first().click();
+    await expect(page.locator('.skoleliste > li').first()).toHaveClass(/apen/);
     const innhold = page.locator('.skolekort-innhold').first();
     const hs = innhold.locator('.skoletilbud', { has: page.getByRole('heading', { name: 'Helse- og oppvekstfag' }) });
     await expect(hs.locator('.lop > li > .lop-kort')).toContainText(['Vg1 Helse- og oppvekstfag']);
     await expect(hs.locator('.lop > li > .lop-videre').getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
+    await expect(hs.locator('.lop-kort[data-valgt="ja"]')).toContainText('Vg2 Helsearbeiderfag');
+    await expect(innhold.locator('.skoletilbud')).toHaveCount(1);
+    // Knappen viser alle tilbudene ved skolen, og fører tilbake til løpet.
+    await innhold.getByRole('button', { name: /^Vis alle tilbudene ved skolen \(\d+\)$/ }).click();
+    await expect.poll(() => innhold.locator('.skoletilbud').count()).toBeGreaterThan(1);
+    await innhold.getByRole('button', { name: 'Vis bare løpet for Vg2 Helsearbeiderfag' }).click();
+    await expect(innhold.locator('.skoletilbud')).toHaveCount(1);
+  });
+
+  test('med et utdanningsprogram i filteret viser skolen bare det programmet, med knapp til alle tilbudene (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/skoler?fylke=46&program=HS&skole=46015');
+    await expect(page.locator('.skoleliste > li')).toHaveCount(1);
+    const innhold = page.locator('.skolekort-innhold').first();
+    await expect(innhold.locator('.skoletilbud')).toHaveCount(1);
+    await expect(innhold.getByRole('heading', { name: 'Helse- og oppvekstfag' })).toBeVisible();
+    await innhold.getByRole('button', { name: /^Vis alle tilbudene ved skolen/ }).click();
+    await expect.poll(() => innhold.locator('.skoletilbud').count()).toBeGreaterThan(1);
+    await innhold.getByRole('button', { name: 'Vis bare Helse- og oppvekstfag' }).click();
+    await expect(innhold.locator('.skoletilbud')).toHaveCount(1);
   });
 
   test('lærefaget har yrker og lenke til opplæringskontorene i fylket (avgjørelse 053)', async ({ page }) => {
@@ -283,7 +312,7 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('.fagark-ndla').getByRole('link', { name: /Samfunnskunnskap/ })).toHaveAttribute('href', /^https:\/\/ndla\.no\/f\//);
   });
 
-  test('søket på Opplæringsløp finner tilbud og skoler, og skoleoppslaget kan søkes på tilbud (eier 03.10.2026)', async ({ page }) => {
+  test('søket på Opplæringstilbud finner tilbud og skoler, og skoleoppslaget kan søkes på tilbud (eier 03.10.2026)', async ({ page }) => {
     await page.goto('./#/opplaeringslop');
     await page.getByRole('searchbox').fill('åsane');
     await expect(page.getByRole('heading', { name: 'Skoler (1)' })).toBeVisible();

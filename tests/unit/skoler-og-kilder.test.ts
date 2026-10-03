@@ -7,7 +7,9 @@ import { byggOpplaeringskontor, nettside, sammenlignOpplaeringskontor } from '..
 import { byggSkoler, byggYrker, grepkode, sammenlignSkoler, sammenlignYrker } from '../../scripts/utdanning/bygg.ts';
 import { byggSkolenummer } from '../../scripts/vigo/bygg.ts';
 import { lesValg, skrivValg, slettLagret, type Lager, VALGNOKLER, LAGRINGSNOKKEL } from '../../src/core/lagring/lagring.ts';
-import { antallMedTilbud, filtrerSkoler, kobleSkoler, valgtSkole } from '../../src/modules/opplaeringslop/skoler.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
+import type { Tilbudene } from '../../src/modules/opplaeringslop/data.ts';
+import { antallMedTilbud, filtrerSkoler, kobleSkoler, lopetTil, valgtSkole } from '../../src/modules/opplaeringslop/skoler.ts';
 
 const hentet = '2026-10-03T12:00:00.000Z';
 const grep = { 'STUSP1----': {}, 'HSHEA2----': {}, 'PBPBY4----': {} };
@@ -75,6 +77,30 @@ describe('koblingen til skolen brukeren har valgt', () => {
     expect(filtrerSkoler(skoler, { fylke: null, tilbud: null, sok: 'oslo' }).map((s) => s.nr)).toEqual(['03072']);
     expect(antallMedTilbud(skoler, 'STUSP1----', null)).toBe(2);
     expect(antallMedTilbud(skoler, 'STUSP1----', '46')).toBe(1);
+  });
+});
+
+describe('løpet til tilbudet det er søkt på', () => {
+  // Bare feltene lopetTil leser: programmet til hvert tilbud og tilbudene det bygger på.
+  const program = (p: string) => ({ program: p });
+  const indeks = {
+    programomrader: { BABAT1: program('BA'), BATMF2: program('BA'), BAANL2: program('BA'), BATMF3: program('BA'), PBPBY3: program('PB'), STUSP1: program('ST') },
+  } as unknown as Fagindeks;
+  const tilbud = {
+    tilbud: { BATMF2: { fra: ['BABAT1'] }, BAANL2: { fra: ['BABAT1'] }, BATMF3: { fra: ['BATMF2'] }, PBPBY3: { fra: ['BATMF2'] } },
+  } as unknown as Tilbudene;
+  const ved = ['BABAT1', 'BATMF2', 'BAANL2', 'BATMF3', 'PBPBY3', 'STUSP1'];
+
+  it('tar med tilbudene ved skolen det bygger på og som bygger på det, i samme utdanningsprogram', () => {
+    expect(lopetTil('BATMF2', ved, indeks, tilbud)).toEqual(['BABAT1', 'BATMF2', 'BATMF3']);
+  });
+
+  it('tar med hele treet under et Vg1-tilbud', () => {
+    expect(lopetTil('BABAT1', ved, indeks, tilbud)).toEqual(['BABAT1', 'BATMF2', 'BAANL2', 'BATMF3']);
+  });
+
+  it('tar bare med tilbud skolen har', () => {
+    expect(lopetTil('BATMF2', ['BATMF2', 'BAANL2'], indeks, tilbud)).toEqual(['BATMF2']);
   });
 });
 
