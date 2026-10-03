@@ -458,11 +458,13 @@ Mye av denne fasen er bygd i fase 1 (se «Endret underveis» der): Arbeidsplan m
 
 **Kontrollpunkt:** Eier vurderer om illustrasjonen er riktig og pedagogisk nyttig, og godkjenner utvalget av kapitler og forskrifter før modulen Lov og forskrift bygges.
 
+Levert: Arbeidsplan (sammenligning og deling) i 0.21.0 (avgjørelse 038), rettinger etter eiers innspill i 0.21.1, og Regelverk i 0.22.0 (avgjørelse 039). Fase 3 er levert (eier 03.10.2026). Kontrollpunktet tas i kontrollrundene: eier vurderer Arbeidsplan som illustrasjon og ser over det nye innholdet i Regelverk (avtalene med egne ord og de nye begrepene har `kontrollert: null` og kontrollspørsmål).
+
 *Avklart 02.10.2026:* Det lages ikke `npm run test:endret`, og CI fortsetter å kjøre på main etter fletting (eier).
 
 ### Fase 4 – Tilpasset opplæring og individuell tilrettelegging
 
-Bygger på Lov og forskrift i fase 3: forklaringene lenker til paragrafene der.
+Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragrafene der, f.eks. `#/lov/opplaeringslova/11-6`.
 
 **Leveranser**
 
