@@ -467,6 +467,58 @@ kilder:
       Hvem som er minoritetsspråklige og nyankomne elever, og hvordan norskferdighetene kan vurderes. Brukt i veiviseren
       «Særskilt språkopplæring og kort botid» og begrepene om språkopplæring (fase 4).
 
+  - id: udir-retten-til-vgo
+    navn: Retten til videregående opplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Udirs sider om rett til videregående opplæring, inntak og formidling, inntak av voksne, omvalg, påbygging og
+      yrkesfaglig rekvalifisering. Kildesjekken leser oversiktssiden. Stegene i veiviseren «Hvilken søkerkategori?»
+      viser til undersidene.
+
+  - id: udir-merknader-ofo
+    navn: Merknader til opplæringsforskrifta, kapittel 4 Inntak til vidaregåande opplæring
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Udirs merknader til hver paragraf i kapittel 4, også om poengberegningen (§ 4-19 og § 4-25). Funnet 03.10.2026
+      etter ønske fra eier om kilder med veiledning. Kildesjekken leser oversiktssiden for kapitlet. Stegene og
+      poengberegningen viser til merknaden til hver paragraf.
+
+  - id: udir-klageinstanser
+    navn: Hvem er klageinstanser etter enkeltvedtak?
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Oversikt over klageinstansen for hvert vedtak etter opplæringsforskrifta. Brukt om klage på inntak (fase 5).
+
   - id: udir-overordnet-del
     navn: Overordnet del – verdier og prinsipper for grunnopplæringen
     utgiver: Utdanningsdirektoratet

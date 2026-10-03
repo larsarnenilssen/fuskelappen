@@ -5,6 +5,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'preact/hooks';
 import { beholdRullingVedNesteNavigasjon, lenke } from '../app/ruter.ts';
 import { type T, useTekst } from '../app/tilstand.ts';
+import { fylkesnavn } from '../app/Stedmerknad.tsx';
 import { app } from '../config/app.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
 import { formaterDato } from '../core/i18n/tekst.ts';
@@ -18,12 +19,18 @@ import { delParagrafRef, Paragraflenker } from './Paragraflenker.tsx';
 
 interface Props {
   veiviser: Veiviserelement;
-  /** Stegene i veiviseren, allerede valgt for brukerens fylke og skole. */
+  /**
+   * Stegene i veiviseren, allerede valgt for brukerens fylke og skole. Et lokalt steg som supplerer et nasjonalt steg
+   * med samme id, vises som en egen boks i det nasjonale steget og er ikke et steg på veien.
+   */
   steg: readonly Stegelement[];
   /** Ruten til siden veiviseren står på, f.eks. «/tilrettelegging/individuell-tilrettelegging». */
   sti: string;
   sporring: URLSearchParams;
 }
+
+/** Lokalt steg som supplerer det nasjonale steget med samme id (fylkes- eller skoleinnhold). */
+export const erTillegg = (s: Stegelement) => s.gyldighet.niva !== 'nasjonal' && s.gyldighet.forhold === 'supplerer';
 
 const svartekst = (s: Stegelement, svarId: string | undefined, malform: Malform) =>
   s.sporsmal?.svar.find((a) => a.id === svarId)?.tekst[malform];
@@ -49,6 +56,7 @@ export function lagOppsummering(
   stegPaaVeien: { steg: Stegelement; svar?: string | undefined }[],
   adresse: string,
   dato: string,
+  tillegg: readonly Stegelement[] = [],
 ): string {
   const linjer = [t('komponenter.veiviser.kopiOverskrift', { tittel: veiviser.tittel[malform] }), ''];
   stegPaaVeien.forEach(({ steg, svar }, i) => {
@@ -60,6 +68,11 @@ export function lagOppsummering(
     if (steg.frist) linjer.push(`   ${t('komponenter.veiviser.frist')}: ${steg.frist[malform]}`);
     if (steg.paragrafer.length > 0) {
       linjer.push(`   ${t('komponenter.veiviser.regelverk')}: ${steg.paragrafer.map((r) => `${delParagrafRef(r).dokument} § ${delParagrafRef(r).nr}`).join(', ')}`);
+    }
+    for (const l of tillegg.filter((x) => x.id === steg.id)) {
+      const sted = l.gyldighet.niva === 'nasjonal' ? '' : (fylkesnavn(l.gyldighet.fylke) ?? '');
+      linjer.push(`   ${t('komponenter.veiviser.lokalt', { sted })}: ${l.tittel[malform]}`);
+      if (l.frist) linjer.push(`   ${t('komponenter.veiviser.frist')}: ${l.frist[malform]}`);
     }
   });
   const sisteSteg = stegPaaVeien.at(-1)?.steg;
@@ -152,6 +165,30 @@ function Oppsummering({ tekst, startPaaNytt }: { tekst: () => string; startPaaNy
         </>
       )}
     </div>
+  );
+}
+
+/** Fylkes- eller skoleinnhold som supplerer steget, i en egen boks merket med stedet. */
+function Tillegg({ steg }: { steg: Stegelement }) {
+  const { t, malform } = useTekst();
+  const sted = steg.gyldighet.niva === 'nasjonal' ? '' : (fylkesnavn(steg.gyldighet.fylke) ?? steg.gyldighet.fylke);
+  return (
+    <aside class="veiviser-tillegg" aria-label={t('komponenter.veiviser.lokalt', { sted })}>
+      <p class="veiviser-tillegg-sted">
+        <Ikon navn="skole" class="ikon-liten" />
+        {t('komponenter.veiviser.lokalt', { sted })}
+      </p>
+      <h3 class="veiviser-tillegg-tittel">{steg.tittel[malform]}</h3>
+      <div class="brodtekst" dangerouslySetInnerHTML={{ __html: steg.tekst[malform] }} />
+      {(steg.ansvar || steg.dokumentasjon || steg.frist) && (
+        <dl class="veiviser-fakta">
+          {steg.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={steg.ansvar[malform]} />}
+          {steg.dokumentasjon && <Fakta ikon="dokument" etikett={t('komponenter.veiviser.dokumentasjon')} tekst={steg.dokumentasjon[malform]} />}
+          {steg.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={steg.frist[malform]} />}
+        </dl>
+      )}
+      <Paragraflenker paragrafer={steg.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
+    </aside>
   );
 }
 
@@ -294,7 +331,15 @@ const redusertBevegelse = () => typeof matchMedia === 'function' && matchMedia('
 
 export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
   const { t, malform } = useTekst();
-  const kart = useMemo(() => lagKart(veiviser.start, steg), [veiviser.start, steg]);
+  const kart = useMemo(
+    () =>
+      lagKart(
+        veiviser.start,
+        steg.filter((s) => !erTillegg(s)),
+      ),
+    [veiviser.start, steg],
+  );
+  const tillegg = useMemo(() => steg.filter(erTillegg), [steg]);
   const vei: Vei = finnVei(kart, lesSvar(sporring.get('svar')), sporring.get('steg'));
   const node = kart.steg.get(vei.gjeldende);
   const overskrift = useRef<HTMLHeadingElement>(null);
@@ -326,6 +371,8 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
   const utfall = erUtfall(node);
   const fase = veiviser.faser.find((f) => f.id === node.fase);
   const nesteSteg = node.neste ? kart.steg.get(node.neste) : undefined;
+  const egneTillegg = tillegg.filter((s) => s.id === node.id);
+  const kilder = [...node.kilder, ...egneTillegg.flatMap((s) => s.kilder)];
   const stegPaaVeien: { steg: Stegelement; svar?: string | undefined }[] = [
     ...vei.bak.flatMap((p) => {
       const s = kart.steg.get(p.steg);
@@ -391,6 +438,9 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
             )}
             <Laereplanboks laereplaner={node.laereplaner} />
             <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
+            {egneTillegg.map((s) => (
+              <Tillegg key={`${s.gyldighet.niva}-${s.id}`} steg={s} />
+            ))}
             <div class="veiviser-mer">
               {node.forklaring && (
                 <Forklaring tittel={t('komponenter.veiviser.merOm')}>
@@ -401,10 +451,10 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                 {/* Samme utseende som knappen i Forklaring rett over. */}
                 <summary class="forklaring-knapp">
                   <Ikon navn="bok" />
-                  <span>{t('komponenter.veiviser.kilder', { antall: String(node.kilder.length) })}</span>
+                  <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length) })}</span>
                   <Ikon navn="ned" class="forklaring-pil" />
                 </summary>
-                <Kildeliste kilder={node.kilder} niva={3} utenOverskrift />
+                <Kildeliste kilder={kilder} niva={3} utenOverskrift />
               </details>
             </div>
           </section>
@@ -440,7 +490,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
             {utfall && (
               <Oppsummering
                 startPaaNytt={lenke(sti)}
-                tekst={() => lagOppsummering(t, malform, veiviser, stegPaaVeien, location.href, formaterDato(new Date().toISOString(), malform))}
+                tekst={() => lagOppsummering(t, malform, veiviser, stegPaaVeien, location.href, formaterDato(new Date().toISOString(), malform), tillegg)}
               />
             )}
           </div>

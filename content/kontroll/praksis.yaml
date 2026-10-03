@@ -137,3 +137,11 @@ praksis:
     grunnlag: Eier 03.10.2026 ba om at det står om læreplanene er kompetansegivende. Ordet står ikke i kildene. Vurderingsordningene i Grep sier at det ikke gis karakter etter NOR07-03 og NOR08-03, og at NOR09-05 gir standpunktkarakter.
     berorer: [sp-laereplan]
     bekreftet: null
+
+  - id: klage-inntak-inntakskontoret
+    tittel: Hvem klagen på inntak sendes til
+    sporsmal: Sendes klagen på et vedtak om inntak vanligvis til inntakskontoret i fylkeskommunen?
+    appen: Utfallene «Søknadsfrist 1. februar» og «Søknadsfrist 1. mars» i veiviseren «Hvilken søkerkategori?» sier at klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
+    grunnlag: Eier 03.10.2026. Forvaltningsloven § 32 første ledd bokstav a sier at klagen settes fram for organet som har truffet vedtaket. At det vanligvis er inntakskontoret, står ikke i kildene.
+    berorer: [sk-februar, sk-mars]
+    bekreftet: null

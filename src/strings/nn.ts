@@ -5,6 +5,7 @@ import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
+import { inntakNn } from './moduler/inntak.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 
 export const nn: Tekster = {
@@ -240,6 +241,9 @@ export const nn: Tekster = {
       vurdering: 'Vurdering: {uttrykk}',
       fagkodene: 'Fagkodane',
       antallFag: '{antall} fag',
+      lokalt: 'I {sted}',
+      faseliste: 'Fasane: {faser}',
+      antallFaser: '{antall} fasar',
     },
     forklaring: {
       vis: 'Vis forklaring',
@@ -291,6 +295,10 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    inntak: {
+      navn: 'Inntak',
+      beskrivelse: 'Søkjarkategoriar, rettar og fristar ved inntak.',
+    },
     tilrettelegging: {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
@@ -326,6 +334,7 @@ export const nn: Tekster = {
   laereplanverket: laereplanverketNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
+  inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

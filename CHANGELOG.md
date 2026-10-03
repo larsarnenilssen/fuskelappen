@@ -4,6 +4,16 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Inntak** under «Elever og opplæring»: veiviseren **Hvilken søkerkategori?**, steg for steg etter opplæringslova kapittel 5 og 18, opplæringsforskrifta kapittel 4 og 13 og Udirs merknader til forskriften.
+  - **Rett:** fullført grunnskole eller tilsvarende, opphold i Norge, studie- eller yrkeskompetanse fra før, og om søkeren har ungdomsrett eller voksenrett. Veien kan ende i påbygging, yrkesfaglig rekvalifisering eller ingen rett.
+  - **Inntaksmåte:** trinn, vilkår for Vg2 og Vg3, de tre grunnlagene for fortrinnsrett, individuell behandling og poeng.
+  - **Søknad:** hvor søknaden sendes, søknadsfristen (1. februar eller 1. mars), svar og hvem som avgjør en klage. Voksne søker fortløpende.
+  - **Vestland:** Når Vestland er valgt, står reglene fra den lokale forskriften i egne bokser i stegene: inntaksområde og tilleggspoeng, retten til å fortsette på samme skole, deltidselever, flytting, ventelister og voksne. Uten valgt fylke sier en merknad at bare de nasjonale reglene vises.
+  - Lenker begge veier mellom grunnopplæring i utlandet og steget «Kort botid?» i veiviseren for særskilt språkopplæring.
+- **Nye begreper:** ungdomsrett, voksenrett, sluttkompetanse, fortrinnsrett, individuell behandling, omvalg, realkompetansevurdering, landslinje og gjesteelev, og for Vestland inntaksområde og deltidselev.
+
 ## [0.25.0] – 2026-10-03
 
 ### Lagt til
