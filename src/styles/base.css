@@ -4027,6 +4027,33 @@ p.fagkort-tittel {
   font-weight: 700;
 }
 
+.veiviser-fase-tekst {
+  display: none;
+}
+
+/* Svært smal skjerm: navnene under stolpen skjules (men leses fortsatt av skjermlesere), og fasen står under. */
+@media (max-width: 24rem) {
+  .veiviser-fase-navn {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .veiviser-faser {
+    margin-bottom: var(--rom-1);
+  }
+
+  .veiviser-fase-tekst {
+    display: block;
+    margin: 0 0 var(--rom-4);
+    font-size: var(--str-xs);
+    font-weight: 700;
+  }
+}
+
 /* Linjen til venstre binder veien hit, kortet og veien videre sammen. */
 .veiviser-lop {
   position: relative;
@@ -4101,15 +4128,19 @@ p.fagkort-tittel {
 }
 
 .veiviser-steg-utfall {
-  border: 2px solid var(--farge-ok);
+  border: 2px solid var(--farge-tekst-dempet);
 }
 
 .veiviser-steg-utfall::before {
-  border-color: var(--farge-ok);
-  background: var(--farge-ok);
+  border-color: var(--farge-tekst-dempet);
+  border-radius: 2px;
+  background: var(--farge-tekst-dempet);
 }
 
 .veiviser-stegnr {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
   margin: 0;
   font-size: var(--str-xs);
   font-weight: 600;
@@ -4324,6 +4355,177 @@ p.fagkort-tittel {
 
 .veiviser-inngang-faser span:not(:last-child)::after {
   content: ' →';
+}
+
+/* Figuren på oversikten i Tilrettelegging: «noen få» står inne i «alle», fordi også de skal ha tilpasset opplæring. */
+.tl-figur {
+  margin: var(--rom-4) 0 var(--rom-5);
+}
+
+.tl-figur .liten-overskrift {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.tl-lag {
+  padding: var(--rom-3) var(--rom-4) var(--rom-4);
+  border-radius: var(--radius-m);
+}
+
+.tl-alle {
+  border: var(--strek) solid var(--farge-kant);
+  background: var(--farge-flate-2);
+}
+
+.tl-noen {
+  margin: var(--rom-3) 0 0 var(--rom-5);
+  border: 2px solid var(--farge-merke);
+  background: var(--farge-flate);
+}
+
+.tl-hvem {
+  margin: 0;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
+.tl-navn {
+  display: inline-block;
+  margin: 0.125rem 0 var(--rom-1);
+  font-size: var(--str-l);
+  font-weight: 700;
+}
+
+.tl-tekst {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.tl-retter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: var(--rom-2) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.tl-retter a {
+  display: inline-block;
+  padding: var(--rom-1) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-flate-2);
+}
+
+@media (min-width: 40rem) {
+  .tl-noen {
+    margin-left: 25%;
+  }
+}
+
+/* Kartet over hele prosessen: én blokk per fase med nummer, stegene på en linje under, og fristene som merker. */
+.veiviser-kart {
+  margin-top: var(--rom-3);
+}
+
+.prosesskart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--rom-4);
+  margin: var(--rom-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prosesskart-fasenavn {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-m);
+}
+
+.prosesskart-nr {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font-size: var(--str-xs);
+}
+
+.prosesskart-steg {
+  margin: 0 0 0 0.6875rem;
+  padding: 0;
+  border-left: 2px solid var(--farge-linje);
+  list-style: none;
+}
+
+.prosesskart-punkt {
+  display: grid;
+  justify-items: start;
+  gap: var(--rom-1);
+  padding: var(--rom-1) 0 var(--rom-1) var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.prosesskart-punkt a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--rom-1);
+}
+
+.prosesskart-besokt > a .ikon {
+  margin-top: 0.15rem;
+  color: var(--farge-ok);
+}
+
+.prosesskart-naa a {
+  margin-left: calc(-1 * var(--rom-2));
+  padding: 0.125rem var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  color: var(--farge-tekst);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Utfallene: der veien kan ende, avhengig av svarene. Nøytral farge, stiplet linje og flagg, så de ikke leses som
+   ønskede eller foreløpige resultater. */
+.prosesskart-ende {
+  margin: var(--rom-2) 0 0 0.6875rem;
+  padding-left: calc(var(--rom-3) + 2px);
+  font-size: var(--str-xs);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
+.prosesskart-utfall-liste {
+  border-left-style: dashed;
+}
+
+.prosesskart-utfall-liste .ikon {
+  margin-top: 0.15rem;
+  color: var(--farge-tekst-dempet);
+}
+
+.prosesskart-frist {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0 var(--rom-2);
+  border-radius: 999px;
+  background: var(--farge-advarsel-flate);
+  color: var(--farge-tekst);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 /* Prosessen i sidekolonnen på stor skjerm: fasene som punkter på en linje, med stegene på veien under hver fase. */

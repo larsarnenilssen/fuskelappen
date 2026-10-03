@@ -9,7 +9,7 @@ import { app } from '../config/app.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
 import { formaterDato } from '../core/i18n/tekst.ts';
 import type { Stegelement, Veiviserelement } from '../core/innhold/skjema.ts';
-import { erUtfall, fasestatus, finnVei, lagKart, lesSvar, tilbakeTil, videre, type Vei } from '../core/veiviser/veiviser.ts';
+import { erUtfall, fasestatus, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Vei, type Veiviserkart } from '../core/veiviser/veiviser.ts';
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kildeliste } from './Kildelenke.tsx';
@@ -75,22 +75,31 @@ function Fasestolpe({ veiviser, gjeldende }: { veiviser: Veiviserelement; gjelde
     gjeldende?.fase,
   );
   const statustekst = { ferdig: t('komponenter.veiviser.faseFerdig'), gjeldende: t('komponenter.veiviser.faseGjeldende'), senere: t('komponenter.veiviser.faseSenere') };
+  const naa = veiviser.faser.findIndex((f) => f.id === gjeldende?.fase);
   return (
-    <ol class="veiviser-faser" aria-label={t('komponenter.veiviser.faser')}>
-      {veiviser.faser.map((f, i) => {
-        const s = status[i] ?? 'senere';
-        return (
-          <li key={f.id} class={`veiviser-fase veiviser-fase-${s}`} aria-current={s === 'gjeldende' ? 'step' : undefined}>
-            <span class="veiviser-fase-strek" aria-hidden="true" />
-            <span class="veiviser-fase-navn">
-              {s === 'ferdig' && <Ikon navn="ok" class="ikon-liten" />}
-              {f.tittel[malform]}
-            </span>
-            <span class="skjult-visuelt"> ({statustekst[s]})</span>
-          </li>
-        );
-      })}
-    </ol>
+    <>
+      <ol class="veiviser-faser" aria-label={t('komponenter.veiviser.faser')}>
+        {veiviser.faser.map((f, i) => {
+          const s = status[i] ?? 'senere';
+          return (
+            <li key={f.id} class={`veiviser-fase veiviser-fase-${s}`} aria-current={s === 'gjeldende' ? 'step' : undefined}>
+              <span class="veiviser-fase-strek" aria-hidden="true" />
+              <span class="veiviser-fase-navn">
+                {s === 'ferdig' && <Ikon navn="ok" class="ikon-liten" />}
+                {f.tittel[malform]}
+              </span>
+              <span class="skjult-visuelt"> ({statustekst[s]})</span>
+            </li>
+          );
+        })}
+      </ol>
+      {/* På svært smal skjerm er det ikke plass til navnene under stolpen. Da står fasen her i stedet. */}
+      {naa >= 0 && (
+        <p class="veiviser-fase-tekst" aria-hidden="true">
+          {t('komponenter.veiviser.faseAv', { nr: String(naa + 1), antall: String(veiviser.faser.length), fase: veiviser.faser[naa]?.tittel[malform] ?? '' })}
+        </p>
+      )}
+    </>
   );
 }
 
@@ -199,6 +208,87 @@ function Prosessoversikt({
   );
 }
 
+/**
+ * Kartet over hele prosessen: stegene i hver fase, med fristene som merker. Stegene på veien er krysset av, og
+ * steget brukeren står på, er markert. Hvert steg er en lenke dit, med den korteste veien fra starten.
+ */
+function Prosesskart({
+  veiviser,
+  kart,
+  besokt,
+  gjeldende,
+  sti,
+  aapen,
+}: {
+  veiviser: Veiviserelement;
+  kart: Veiviserkart<Stegelement>;
+  besokt: ReadonlySet<string>;
+  gjeldende: string;
+  sti: string;
+  /** Åpent fra start, f.eks. på første steg, så brukeren ser hele prosessen med en gang. */
+  aapen: boolean;
+}) {
+  const { t, malform } = useTekst();
+  if (veiviser.faser.length === 0) return null;
+  // Stegene i den rekkefølgen de nås. Utfallene (der veien kan ende) står for seg sist i hver fase.
+  const iFase = stegIRekkefolge(kart).flatMap((id) => {
+    const s = kart.steg.get(id);
+    return s?.fase ? [s] : [];
+  });
+  const rekkefolge = [...iFase.filter((s) => !erUtfall(s)), ...iFase.filter((s) => erUtfall(s))];
+  const punkt = (s: Stegelement) => {
+    const vei = korstesteVei(kart, s.id);
+    const naa = s.id === gjeldende;
+    const klasse = ['prosesskart-punkt', besokt.has(s.id) ? 'prosesskart-besokt' : '', naa ? 'prosesskart-naa' : ''].filter(Boolean).join(' ');
+    return (
+      <li key={s.id} class={klasse}>
+        <a href={vei ? lenke(sti, tilstand(kart, vei.steg, vei.svar)) : undefined} aria-current={naa ? 'step' : undefined}>
+          {erUtfall(s) ? <Ikon navn="flagg" class="ikon-liten" /> : besokt.has(s.id) && !naa && <Ikon navn="ok" class="ikon-liten" />}
+          <span>{s.tittel[malform]}</span>
+        </a>
+        {s.fristKort && (
+          <span class="prosesskart-frist">
+            <Ikon navn="klokke" class="ikon-liten" />
+            {s.fristKort[malform]}
+          </span>
+        )}
+      </li>
+    );
+  };
+  return (
+    <div class="veiviser-kart">
+      <Forklaring tittel={t('komponenter.veiviser.heleProsessen')} aapen={aapen}>
+        <p class="liten dempet">{t('komponenter.veiviser.kartHjelp')}</p>
+        <ol class="prosesskart">
+          {veiviser.faser.map((f, i) => {
+            const egne = rekkefolge.filter((s) => s.fase === f.id);
+            if (egne.length === 0) return null;
+            return (
+              <li key={f.id} class="prosesskart-fase">
+                <h3 class="prosesskart-fasenavn">
+                  <span class="prosesskart-nr" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  {f.tittel[malform]}
+                </h3>
+                <ul class="prosesskart-steg">
+                  {egne.filter((s) => !erUtfall(s)).map((s) => punkt(s))}
+                </ul>
+                {egne.some((s) => erUtfall(s)) && (
+                  <>
+                    <p class="prosesskart-ende">{t('komponenter.veiviser.kanEnde')}</p>
+                    <ul class="prosesskart-steg prosesskart-utfall-liste">{egne.filter((s) => erUtfall(s)).map((s) => punkt(s))}</ul>
+                  </>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </Forklaring>
+    </div>
+  );
+}
+
 const redusertBevegelse = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
@@ -283,6 +373,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
         <div class="veiviser-lop">
           <section ref={kort} class={`veiviser-steg${utfall ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId}>
             <p class="veiviser-stegnr">
+              {utfall && <Ikon navn="flagg" class="ikon-liten" />}
               {utfall ? t('komponenter.veiviser.utfall') : t('komponenter.veiviser.steg', { nr: String(nr) })}
               {fase && <span class="veiviser-stegfase"> · {fase.tittel[malform]}</span>}
             </p>
@@ -351,6 +442,16 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
               />
             )}
           </div>
+          {/* Nøkkelen gir et nytt, lukket kart når brukeren går fra starten. */}
+          <Prosesskart
+            key={vei.bak.length === 0 ? 'start' : 'videre'}
+            veiviser={veiviser}
+            kart={kart}
+            besokt={new Set(vei.bak.map((p) => p.steg))}
+            gjeldende={vei.gjeldende}
+            sti={sti}
+            aapen={vei.bak.length === 0}
+          />
         </div>
       </div>
     </div>

@@ -1,6 +1,5 @@
 // Tilrettelegging (fase 4): veivisere for tilpasset opplæring, individuell tilrettelegging og særskilt
 // språkopplæring, bygd med den felles veiviseren (avgjørelse 041). Innholdet står i content/tilrettelegging/.
-// Skjult til fasen er godkjent.
 import type { Modulmanifest } from '../typer.ts';
 import { hentInnhold, veiviserRute } from './innhold.ts';
 
@@ -37,5 +36,5 @@ export const manifest: Modulmanifest = {
     return [];
   },
   kilder: ['udir-veileder-tilpasset-opplaering', 'opplaeringslova'],
-  status: 'skjult',
+  status: 'aktiv',
 };

@@ -4,6 +4,25 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.23.0] – 2026-10-03
+
+### Lagt til
+
+- **Tilrettelegging** under «Elever og opplæring»: veiviseren **Tilpasset opplæring og individuell tilrettelegging**, steg for steg etter opplæringslova kapittel 11, forvaltningsloven og Udirs veileder.
+  - Velg hvor saken starter: i den ordinære opplæringen, med vedtak fra grunnskolen, eller at eleven eller foreldrene ber om tilrettelegging.
+  - Hvert steg viser hvem som har ansvaret, hva som skal dokumenteres, fristene og paragrafene i Regelverk. Kildene og en utdyping er lukket til du åpner dem.
+  - Svarene står under steget, og neste steg kommer der du trykket. Veien du har gått, står som en linje med punkter, og du kan gå tilbake til et tidligere steg.
+  - **Hele prosessen:** et kart over alle stegene i hver fase, med fristene som merker («Klage: 3 uker», «Hvert år») og hvor veien kan ende. Velg et steg for å gå rett dit.
+  - Adressen viser steget og svarene, så et steg kan deles som lenke, og tilbakeknappen går ett steg tilbake.
+  - På stor skjerm står prosessen med fasene og stegene i en egen kolonne til venstre.
+  - På slutten kan du kopiere en oppsummering av veien, med ansvar, dokumentasjon, frister og paragrafer.
+  - Oversikten viser med en figur at alle elever skal ha tilpasset opplæring, og at noen få i tillegg har rett til individuell tilrettelegging.
+- **Nye begreper:** tilpasset opplæring, tilfredsstillende utbytte, individuell tilrettelegging, individuelt tilrettelagt opplæring, personlig assistanse, fysisk tilrettelegging og tekniske hjelpemidler, sakkyndig vurdering, PP-tjenesten, individuell opplæringsplan (IOP), selvråderett fra 15 år, og elevens beste og medvirkning.
+
+### Endret
+
+- **Skjermlesere:** Når bare en del av siden byttes ut, for eksempel et nytt steg i en veiviser, flyttes fokus til det nye innholdet og ikke til sidetittelen.
+
 ## [0.22.0] – 2026-10-02
 
 ### Lagt til

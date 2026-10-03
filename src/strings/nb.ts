@@ -205,13 +205,17 @@ export const nb = {
   komponenter: {
     veiviser: {
       prosessen: 'Prosessen',
+      heleProsessen: 'Hele prosessen',
+      kartHjelp: 'Stegene i hver fase, og hvor veien kan ende, avhengig av svarene. Velg et steg for å gå rett dit. Steg med frist har et merke med klokke.',
       kilder: 'Kilder ({antall})',
+      faseAv: 'Fase {nr} av {antall}: {fase}',
       faser: 'Fasene i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',
       faseSenere: 'senere',
       steg: 'Steg {nr}',
-      utfall: 'Resultat',
+      utfall: 'Her ender veien',
+      kanEnde: 'Veien kan ende her',
       veienHit: 'Veien hit',
       tilbakeTil: 'Gå tilbake til «{steg}»',
       ansvar: 'Ansvar',

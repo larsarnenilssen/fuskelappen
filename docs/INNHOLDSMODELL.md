@@ -9,7 +9,7 @@ En fil kan inneholde ett element eller en liste.
 | Felt | Påkrevd | Innhold |
 |---|---|---|
 | `id` | ja | små bokstaver a–z, tall og bindestrek |
-| `type` | ja | `begrep`, `regel`, `forklaring`, `steg`, `frist`, `kildeomtale` |
+| `type` | ja | `begrep`, `regel`, `forklaring`, `steg`, `frist`, `kildeomtale`, `veiviser` |
 | `tittel` | ja | `{ nb, nn }`, begge påkrevd |
 | `tekst` | ja | `{ nb, nn }`, begge påkrevd, Markdown tillatt |
 | `kildetekst` | nei | sitat fra kilden, uoversatt: `{ spraak: nb \| nn \| se \| en, tekst }` |
@@ -22,6 +22,8 @@ En fil kan inneholde ett element eller en liste.
 | `kodeliste` | nei | kodeliste fra VIGO Kodeverksbase som vises under teksten, med søk: `fagmerknader` eller `vitnemalsmerknader` (avgjørelse 026) |
 
 Frister (`type: frist`) har i tillegg `modul`, `malgruppe` (`skoleleder`, `laerer`) og enten `dato` eller `regel` (`{ type: arlig, dag, maned }`).
+
+Veivisere (avgjørelse 041): en veiviser (`type: veiviser`) har i tillegg `start` (id til første steg) og `faser` (`{ id, tittel }`). Et steg (`type: steg`) har `veiviser` (id) og kan ha `fase`, `ansvar`, `dokumentasjon`, `frist`, `fristKort` (to–tre ord til merket i kartet), `forklaring` (Markdown, skjult til den åpnes), `paragrafer` (`dokument/nummer` i Regelverk) og enten `neste` (id) eller `sporsmal` (`{ tekst, svar: [{ id, tekst, neste }] }`). Et steg uten `neste` og `sporsmal` er et utfall, der veien ender. Testene sjekker at alle steg kan nås, at ingen peker på steg som ikke finnes, og at paragrafene finnes.
 
 Samme `id` kan finnes på flere nivåer. Da erstatter det mest lokale elementet det mer generelle (`forhold: erstatter`).
 

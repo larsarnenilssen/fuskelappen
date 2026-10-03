@@ -9,3 +9,5 @@
 - Repoet er offentlig, så de ekstra jobbene koster ingenting.
 
 **Konsekvens:** CI bør ta om lag 5–6 minutter. Feiler en del, har rapporten delnummeret i navnet (`playwright-report-2`). Lokalt kan `--workers=4` brukes når maskinen har fire kjerner.
+
+**Endret (eier 03.10.2026):** Den første kjøringen tok 10 minutter, fordi delingen etter antall ga hver jobb nøyaktig ett nettleseroppsett. WebKit mobil har de tunge overflyt- og tilgjengelighetstestene (de kjøres bare i mobiloppsettene, i lys og mørk visning, og WebKit er tregest), og brukte 9 minutter. De andre brukte 1–3. Testene deles nå på seks jobber: Chromium mobil, WebKit mobil i tre deler (lys, mørk og resten, valgt med `--grep` på titlene som ender med «(lys)» og «(mork)»), Chromium skrivebord og WebKit skrivebord. Etter varighetene fra loggen har ingen jobb mer enn om lag fire minutter testtid med to workers, så CI bør ta om lag 5 minutter. Det er sjekket at de tre delene av WebKit mobil til sammen har alle testene (91 + 91 + 153 = 335).

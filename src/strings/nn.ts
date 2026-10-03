@@ -205,13 +205,17 @@ export const nn: Tekster = {
   komponenter: {
     veiviser: {
       prosessen: 'Prosessen',
+      heleProsessen: 'Heile prosessen',
+      kartHjelp: 'Stega i kvar fase, og kvar vegen kan ende, avhengig av svara. Vel eit steg for å gå rett dit. Steg med frist har eit merke med klokke.',
       kilder: 'Kjelder ({antall})',
+      faseAv: 'Fase {nr} av {antall}: {fase}',
       faser: 'Fasane i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',
       faseSenere: 'seinare',
       steg: 'Steg {nr}',
-      utfall: 'Resultat',
+      utfall: 'Her endar vegen',
+      kanEnde: 'Vegen kan ende her',
       veienHit: 'Vegen hit',
       tilbakeTil: 'Gå tilbake til «{steg}»',
       ansvar: 'Ansvar',

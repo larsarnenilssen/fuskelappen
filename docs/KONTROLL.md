@@ -15,8 +15,8 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 146 |
-| Praksis og tolkninger som bør bekreftes | 14 av 14 |
+| Ikke kontrollert | 168 |
+| Praksis og tolkninger som bør bekreftes | 16 av 16 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -51,6 +51,8 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Tillegg for funksjoner** | Er 12 000 kroner fortsatt riktig standardbeløp når navnet på en funksjon ikke kjennes igjen, og har fylket egne satser for andre funksjoner? | Appens valg, med utgangspunkt i SFS 2213 punkt 9.1. | [SFS 2213 med vedlegg 1 og protokoll (avtaleteksten)](https://www.kf-infoserie.no/a/h/931fe8f5-8cdf-47ab-a8fb-9e8dba6f8e66/250413?ticketId=be4f9bea-3190-4670-89e2-df98ec83dd5e): punkt 9.1, punkt 4, punkt 5.1, punkt 5.2, punkt 5.3, punkt 6, punkt 7.3 b og Vedlegg 1; [Hovedtariffavtalen 1.5.2026–30.4.2028](https://www.ks.no/globalassets/fagomrader/lonn-og-tariff/tariff-2024/hovedtariffavtalen-2026-2028---interaktiv-til-nettsiden.pdf): Kap. 4 punkt 4.1 og Kap. 1 § 7.4.2; [Visma InSchool – 2a.17 Periodebeskjeftigelse](https://inschool.zendesk.com/hc/no/articles/27581133712274-2a-17-Fag-og-timefordeling-Periodebeskjeftigelse-ny-funksjonalitet); [Visma InSchool – 3.13 Kontering og generering av fastlønn og faste tillegg](https://inschool.zendesk.com/hc/no/articles/19452863757970) | ikke bekreftet |
 | **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | ikke bekreftet |
 | **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
+| **Foreløpig svar i saker om individuelt tilrettelagt opplæring** | Regnes fristen på én måned for foreløpig svar (forvaltningsloven § 11 a tredje ledd) fra den sakkyndige vurderingen er mottatt? | Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter | ikke bekreftet |
+| **Avslutte tilrettelegging uten nytt vedtak** | Avsluttes individuell tilrettelegging uten nytt vedtak når eleven ikke lenger trenger den? | Eier 03.10.2026. Veilederen punkt 9.2.2 sier ikke noe uttrykkelig om vedtak. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring): punkt 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring | ikke bekreftet |
 
 ## Per kilde
 
@@ -220,7 +222,18 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Aktivitetsplikt (`aktivitetsplikt`) | begrep | § 12-4 Plikt til å sikre eit trygt og godt psykososialt skolemiljø | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Bortvisning (`bortvising`) | begrep | § 13-1 Bortvising | `content/begreper/regelverk.yaml` | ikke kontrollert |
 | Skoleregler (`skoleregler`) | begrep | § 10-7 Skolereglar | `content/begreper/regelverk.yaml` | ikke kontrollert |
-| Fra tilpasset opplæring til individuell tilrettelegging (`individuell-tilrettelegging`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Tilpasset opplæring (`tilpasset-opplaering`) | begrep | § 11-1 Tilpassa opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Tilfredsstillende utbytte (`tilfredsstillende-utbytte`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuell tilrettelegging (`individuell-tilrettelegging`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuelt tilrettelagt opplæring (`individuelt-tilrettelagt-opplaering`) | begrep | § 11-6 Individuelt tilrettelagd opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Personlig assistanse (`personlig-assistanse`) | begrep | § 11-4 Personleg assistanse | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Fysisk tilrettelegging og tekniske hjelpemidler (`fysisk-tilrettelegging`) | begrep | § 11-5 Fysisk tilrettelegging og tekniske hjelpemiddel | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Sakkyndig vurdering (`sakkyndig-vurdering`) | begrep | § 11-7 Vedtak om individuelt tilrettelagd opplæring og krav om sakkunnig vurdering, § 11-8 Kva den sakkunnige vurderinga skal innehalde | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| PP-tjenesten (`pp-tjenesten`) | begrep | § 11-13 Pedagogisk-psykologisk teneste | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuell opplæringsplan (IOP) (`individuell-opplaeringsplan`) | begrep | § 11-10 Individuell opplæringsplan, § 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | § 24-5 Sjølvråderett for dei som har fylt 15 år | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Elevens beste og medvirkning (`elevens-beste`) | begrep | § 10-1 Det beste for eleven, § 10-2 Elevane sin rett til medverknad | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | Kapittel 11 Tilpassa opplæring og individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 
 ### Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)
 
@@ -401,13 +414,35 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Innhold | Type | Punkt | Fil | Din kontroll |
 |---|---|---|---|---|
 | Enkeltvedtak (`enkeltvedtak`) | begrep | Klage på vedtaket | `content/begreper/lov.yaml` | ikke kontrollert |
-| Fra tilpasset opplæring til individuell tilrettelegging (`individuell-tilrettelegging`) | veiviser | 1.1 Tilpassing og tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Tilpasset opplæring for alle (`ti-tilpasset`) | steg | 1.1 Tilpassing og tilrettelegging, 2.1 Skolen skal tilpasse opplæringen til alle elevene | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Følge med og melde fra (`ti-folge-med`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen, 3.2 Verktøy og metoder for å følge med | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Egnede tiltak i den ordinære opplæringen (`ti-tiltak`) | steg | 4.1 Skolen skal sette inn egnede tiltak, 4.3 Elever med et åpenbart behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Er tiltakene nok? (`ti-nok`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Fortsett den tilpassede opplæringen (`ti-fortsett`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
-| Eleven kan trenge individuell tilrettelegging (`ti-vurder-individuell`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/individuell-tilrettelegging.yaml` | ikke kontrollert |
+| Tilpasset opplæring (`tilpasset-opplaering`) | begrep | 1.1 Tilpassing og tilrettelegging | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Tilfredsstillende utbytte (`tilfredsstillende-utbytte`) | begrep | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuell tilrettelegging (`individuell-tilrettelegging`) | begrep | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuelt tilrettelagt opplæring (`individuelt-tilrettelagt-opplaering`) | begrep | 5.4 Individuelt tilrettelagt opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Personlig assistanse (`personlig-assistanse`) | begrep | 5.2 Personlig assistanse | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Fysisk tilrettelegging og tekniske hjelpemidler (`fysisk-tilrettelegging`) | begrep | 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Sakkyndig vurdering (`sakkyndig-vurdering`) | begrep | 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| PP-tjenesten (`pp-tjenesten`) | begrep | 1.1 Tilpassing og tilrettelegging (Støtte fra PP-tjenesten) | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Individuell opplæringsplan (IOP) (`individuell-opplaeringsplan`) | begrep | 8.1 Skolen skal utarbeide en individuell opplæringsplan | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Selvråderett fra 15 år (`selvraderett-15-ar`) | begrep | 5.4 Individuelt tilrettelagt opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Elevens beste og medvirkning (`elevens-beste`) | begrep | 1.4 Elevens beste og retten til å bli hørt | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
+| Tilpasset opplæring og individuell tilrettelegging (`tilpasset-og-individuell`) | veiviser | 1.1 Tilpassing og tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Velg hvor du starter (`ti-start`) | steg | 1.1 Tilpassing og tilrettelegging, 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Tilpasset opplæring for alle (`ti-tilpasset`) | steg | 1.1 Tilpassing og tilrettelegging, 2.1 Skolen skal tilpasse opplæringen til alle elevene | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Følge med og melde fra (`ti-folge-med`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen, 3.2 Verktøy og metoder for å følge med | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Egnede tiltak i den ordinære opplæringen (`ti-tiltak`) | steg | 4.1 Skolen skal sette inn egnede tiltak, 4.3 Elever med et åpenbart behov for individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Er tiltakene nok? (`ti-nok`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Fortsett den tilpassede opplæringen (`ti-fortsett`) | steg | 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Overgang fra grunnskolen (`ti-overgang`) | steg | 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Hva kan eleven trenge? (`ti-behov`) | steg | 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging, 5.2 Personlig assistanse, 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet, 5.4 Individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Opplyse saken om assistanse eller fysisk tilrettelegging (`ti-assistanse`) | steg | 5.2 Personlig assistanse, 5.5 Ansvaret for hjelpemidler, 6.1 Kommunen og fylkeskommunen må opplyse saken før de fatter vedtak | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Samtykke og henvisning til PP-tjenesten (`ti-samtykke`) | steg | 5.4 Individuelt tilrettelagt opplæring, 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Sakkyndig vurdering fra PP-tjenesten (`ti-sakkyndig`) | steg | 6.2.1 Krav til innholdet i den sakkyndige vurderingen, 6.2.3 Varigheten av den sakkyndige vurderingen, 6.2.4 Saksbehandlingstid, 6.3 Foreldrene kan hente inn en alternativ sakkyndig vurdering | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Vedtak om individuell tilrettelegging (`ti-vedtak`) | steg | 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging, 7.2 Delegere oppgaven med å fatte vedtak, 7.3 Krav til innholdet i vedtaket, 7.4 Vedtakets varighet, 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Individuell opplæringsplan (IOP) (`ti-iop`) | steg | 8.1 Skolen skal utarbeide en individuell opplæringsplan, 8.3 Innholdet i en individuell opplæringsplan | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Gjennomføring og årlig evaluering (`ti-gjennomforing`) | steg | 8.4 Avvik mellom opplæringen eleven har fått og vedtaket, 9.1 Skolen skal evaluere utbyttet av den individuelt tilrettelagte opplæringen en gang i året, 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring, 7.5 Overgang til nytt trinn og ny skole | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Eleven trenger ikke lenger tilrettelegging (`ti-avsluttet`) | steg | 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Avslag (`ti-avslag`) | steg | 7.3 Krav til innholdet i vedtaket, 7.9 Klage på vedtaket | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
+| Klage på vedtaket eller gjennomføringen (`ti-klage`) | steg | 7.9 Klage på vedtaket, 8.4 Avvik mellom opplæringen eleven har fått og vedtaket | `content/tilrettelegging/tilpasset-og-individuell.yaml` | ikke kontrollert |
 
 ### Overordnet del – verdier og prinsipper for grunnopplæringen
 
@@ -981,7 +1016,74 @@ Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplær
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-7): § 10-7 Skolereglar
 
-**Fra tilpasset opplæring til individuell tilrettelegging** (`individuell-tilrettelegging`, veiviser, ikke kontrollert)
+**Tilpasset opplæring** (`tilpasset-opplaering`, begrep, ikke kontrollert)
+
+- Er «en plikt for skolen, men ikke en rett for den enkelte eleven» en riktig og ikke misvisende forenkling?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-1): § 11-1 Tilpassa opplæring; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging
+
+**Tilfredsstillende utbytte** (`tilfredsstillende-utbytte`, begrep, ikke kontrollert)
+
+- Er vurderingsgrunnlaget (mestring, forutsetninger og utvikling sett opp mot kompetansemålene) riktig gjengitt fra veilederen 3.1?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-2): § 11-2 Tilfredsstillande utbytte av opplæringa; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen): punkt 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen
+
+**Individuell tilrettelegging** (`individuell-tilrettelegging`, begrep, ikke kontrollert)
+
+- Er det riktig å telle tre rettigheter, når veilederen 1.1 deler fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet i flere punkter?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-2): § 11-2 Tilfredsstillande utbytte av opplæringa
+
+**Individuelt tilrettelagt opplæring** (`individuelt-tilrettelagt-opplaering`, begrep, ikke kontrollert)
+
+- Er det riktig og nyttig å skrive at dette het spesialundervisning før, eller kan det misforstås som at innholdet er det samme?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-6): § 11-6 Individuelt tilrettelagd opplæring; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring): punkt 5.4 Individuelt tilrettelagt opplæring
+
+**Personlig assistanse** (`personlig-assistanse`, begrep, ikke kontrollert)
+
+- Er eksemplene på personlig assistanse og avgrensningen mot helsehjelp riktig gjengitt?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-4): § 11-4 Personleg assistanse; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#personlig-assistanse): punkt 5.2 Personlig assistanse
+
+**Fysisk tilrettelegging og tekniske hjelpemidler** (`fysisk-tilrettelegging`, begrep, ikke kontrollert)
+
+- Er eksemplene riktige, og bør skillet mot NAVs ansvar for hjelpemidler nevnes i begrepet?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-5): § 11-5 Fysisk tilrettelegging og tekniske hjelpemiddel; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#fysisk-tilrettelegging-tekniske-hjelpemidler-opplaring-mobilitet): punkt 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet
+
+**Sakkyndig vurdering** (`sakkyndig-vurdering`, begrep, ikke kontrollert)
+
+- Er kravene til innholdet i § 11-8 riktig oppsummert i én setning?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-7): § 11-7 Vedtak om individuelt tilrettelagd opplæring og krav om sakkunnig vurdering; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-8): § 11-8 Kva den sakkunnige vurderinga skal innehalde; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-om-sakkyndig-vurdering-individuelt-tilrettelagt-opplaring): punkt 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring
+
+**PP-tjenesten** (`pp-tjenesten`, begrep, ikke kontrollert)
+
+- I Vestland er PP-tjenesten for videregående en del av Rettleiingstenesta. Bør begrepet ha en fylkesvariant som nevner det?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-13): § 11-13 Pedagogisk-psykologisk teneste; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging (Støtte fra PP-tjenesten)
+
+**Individuell opplæringsplan (IOP)** (`individuell-opplaeringsplan`, begrep, ikke kontrollert)
+
+- Er det riktig at IOP bare kreves ved individuelt tilrettelagt opplæring, og ikke ved personlig assistanse eller fysisk tilrettelegging alene?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-10): § 11-10 Individuell opplæringsplan; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§11-11): § 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#skolen-skal-utarbeide-individuell-opplaringsplan): punkt 8.1 Skolen skal utarbeide en individuell opplæringsplan
+
+**Selvråderett fra 15 år** (`selvraderett-15-ar`, begrep, ikke kontrollert)
+
+- Er det riktig at foreldre til elever mellom 15 og 18 år fortsatt skal få informasjon, og bør det stå hvilken paragraf det følger av?
+- Er «saker som gjelder valg av opplæring» en dekkende omskriving av § 24-5?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§24-5): § 24-5 Sjølvråderett for dei som har fylt 15 år; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring): punkt 5.4 Individuelt tilrettelagt opplæring
+
+**Elevens beste og medvirkning** (`elevens-beste`, begrep, ikke kontrollert)
+
+- Er det greit å samle elevens beste og medvirkning i ett begrep, eller bør de være to?
+
+Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-1): § 10-1 Det beste for eleven; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§10-2): § 10-2 Elevane sin rett til medverknad; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#elevens-beste-retten-bli-hort): punkt 1.4 Elevens beste og retten til å bli hørt
+
+**Tilpasset opplæring og individuell tilrettelegging** (`tilpasset-og-individuell`, veiviser, ikke kontrollert)
 
 - Er de fire fasene (tilpasset opplæring, utredning, vedtak, oppfølging) en dekkende og ikke misvisende inndeling av prosessen?
 
@@ -1112,6 +1214,12 @@ Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående
 
 Kilder å sjekke mot: [Føring av vitnemål og kompetansebevis for videregående opplæring, kapittel 3 Merknader til vitnemål og kompetansebevis](https://www.udir.no/eksamen-og-prover/dokumentasjon/vitnemal-og-kompetansebevis/foring-vitnemal-kompetansebevis-vgs-25/3-merknader-til-vitnemal-og-kompetansebevis/): punkt 3 Merknader til vitnemål og kompetansebevis, 3.2 og 3.3; [Registreringshåndboken, B18 VMM-kode og B19 VMM-merknad](https://regbok.udir.no/felt/?Id=1015039): B18 VMM-kode og B19 VMM-merknad; [VIGO Kodeverksbase – erstattede fag, fag som brukes sammen, fagmerknader og vitnemålsmerknader](https://kodeverk.vigo.no/): Vitnemålsmerknader
 
+**Velg hvor du starter** (`ti-start`, steg, ikke kontrollert)
+
+- Dekker de tre inngangene (ordinær opplæring, vedtak fra grunnskolen, forespørsel fra eleven eller foreldrene) de vanlige måtene en sak starter på i videregående?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging): punkt 1.1 Tilpassing og tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole): punkt 7.5 Overgang til nytt trinn og ny skole
+
 **Tilpasset opplæring for alle** (`ti-tilpasset`, steg, ikke kontrollert)
 
 - Stemmer «Ingen egen dokumentasjon» for tilpasset opplæring, eller forventer Udir eller fylket at skolen dokumenterer noe her?
@@ -1145,11 +1253,78 @@ Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettel
 
 Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen): punkt 3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen
 
-**Eleven kan trenge individuell tilrettelegging** (`ti-vurder-individuell`, steg, ikke kontrollert)
+**Overgang fra grunnskolen** (`ti-overgang`, steg, ikke kontrollert)
 
-- Er skillet mellom individuelt tilrettelagt opplæring (krever sakkyndig vurdering) og personlig assistanse og fysisk tilrettelegging (krever det ikke) riktig og tydelig nok?
+- Er det riktig at et vedtak fra grunnskolen aldri gjelder i videregående, og at fylkeskommunen alltid må fatte nytt vedtak?
+- Er «midlertidig vedtak som bygger på den sakkyndige vurderingen fra grunnskolen» en riktig gjengivelse av veilederen punkt 7.5?
 
-Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole): punkt 7.5 Overgang til nytt trinn og ny skole
+
+**Hva kan eleven trenge?** (`ti-behov`, steg, ikke kontrollert)
+
+- Er eksemplene for hver av de tre rettighetene riktige og dekkende for videregående?
+- Veilederen nevner også opplæring i mobilitet for blinde og sterkt svaksynte. Bør den nevnes her, eller er det nok i forklaringen av fysisk tilrettelegging?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging): punkt 5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#personlig-assistanse): punkt 5.2 Personlig assistanse; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#fysisk-tilrettelegging-tekniske-hjelpemidler-opplaring-mobilitet): punkt 5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring): punkt 5.4 Individuelt tilrettelagt opplæring
+
+**Opplyse saken om assistanse eller fysisk tilrettelegging** (`ti-assistanse`, steg, ikke kontrollert)
+
+- Er skillet mellom personlig assistanse og helsehjelp riktig og forsiktig nok formulert?
+- Er det riktig å skrive at pedagogiske hjelpemidler er fylkeskommunens ansvar, og at ansvaret ellers kan være uklart mellom fylkeskommunen og NAV?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#personlig-assistanse): punkt 5.2 Personlig assistanse; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#ansvaret-for-hjelpemidler): punkt 5.5 Ansvaret for hjelpemidler; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-ma-opplyse-saken-for-de-fatter-vedtak): punkt 6.1 Kommunen og fylkeskommunen må opplyse saken før de fatter vedtak
+
+**Samtykke og henvisning til PP-tjenesten** (`ti-samtykke`, steg, ikke kontrollert)
+
+- Er det riktig at det er skolen som innhenter samtykke og henviser til PP-tjenesten i videregående, eller gjør fylkeskommunen det på annen måte?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring): punkt 5.4 Individuelt tilrettelagt opplæring; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-om-sakkyndig-vurdering-individuelt-tilrettelagt-opplaring): punkt 6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring
+
+**Sakkyndig vurdering fra PP-tjenesten** (`ti-sakkyndig`, steg, ikke kontrollert)
+
+- Er «den må fylkeskommunen ta med i vurderingen» en riktig gjengivelse av hva en alternativ sakkyndig vurdering betyr (veilederen 6.3)?
+- Er de fem punktene i § 11-8 gjengitt riktig med egne ord?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-innhold-sakkyndig-vurdering): punkt 6.2.1 Krav til innholdet i den sakkyndige vurderingen; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#varighet-sakkyndig-vurdering): punkt 6.2.3 Varigheten av den sakkyndige vurderingen; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#saksbehandlingstid): punkt 6.2.4 Saksbehandlingstid; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#foreldrene-hente-alternativ-sakkyndig-vurdering): punkt 6.3 Foreldrene kan hente inn en alternativ sakkyndig vurdering
+
+**Vedtak om individuell tilrettelegging** (`ti-vedtak`, steg, ikke kontrollert)
+
+- Er det riktig at måneden for foreløpig svar regnes fra henvendelsen når det ikke kreves sakkyndig vurdering (personlig assistanse og fysisk tilrettelegging)?
+- Er det riktig at fritak fra vurdering med karakter i videregående bare gjelder sidemålet for elever med individuelt tilrettelagt opplæring?
+- Er «Oppgaven kan delegeres til rektor, men ansvaret ligger hos fylkeskommunen» dekkende for hvordan det gjøres i fylkene?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter
+
+**Individuell opplæringsplan (IOP)** (`ti-iop`, steg, ikke kontrollert)
+
+- Er det riktig å nevne kontaktlæreren og faglærerne under ansvar, eller bør ansvaret bare stå som «skolen»?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#skolen-skal-utarbeide-individuell-opplaringsplan): punkt 8.1 Skolen skal utarbeide en individuell opplæringsplan; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#innholdet-individuell-opplaringsplan): punkt 8.3 Innholdet i en individuell opplæringsplan
+
+**Gjennomføring og årlig evaluering** (`ti-gjennomforing`, steg, ikke kontrollert)
+
+- Er det riktig at den årlige evalueringen bare kreves for individuelt tilrettelagt opplæring, og ikke for personlig assistanse og fysisk tilrettelegging?
+- Fører «fortsatt behov» riktig tilbake til en ny vurdering av hva eleven trenger, med ny sakkyndig vurdering når den gamle går ut?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#avvik-mellom-opplaringen-vedtaket): punkt 8.4 Avvik mellom opplæringen eleven har fått og vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#skolen-skal-evaluere-utbyttet-individuelt-tilrettelagte-opplaringen-en-gang-aret): punkt 9.1 Skolen skal evaluere utbyttet av den individuelt tilrettelagte opplæringen en gang i året; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring): punkt 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#overgang-nytt-trinn-ny-skole): punkt 7.5 Overgang til nytt trinn og ny skole
+
+**Eleven trenger ikke lenger tilrettelegging** (`ti-avsluttet`, steg, ikke kontrollert)
+
+- Er «Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen» formulert slik at det ikke kan misforstås, for eksempel når vedtaket fortsatt gjelder en periode?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring): punkt 9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring
+
+**Avslag** (`ti-avslag`, steg, ikke kontrollert)
+
+- Er det riktig at klagefristen regnes fra eleven eller foreldrene fikk vedtaket (fvl. § 29: underretningen er kommet fram)?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#klage-vedtaket): punkt 7.9 Klage på vedtaket
+
+**Klage på vedtaket eller gjennomføringen** (`ti-klage`, steg, ikke kontrollert)
+
+- Er «Klage på gjennomføringen har ingen frist» en riktig og ikke misvisende forenkling av veilederens «løpende rett til å klage»?
+
+Kilder å sjekke mot: [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#klage-vedtaket): punkt 7.9 Klage på vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#avvik-mellom-opplaringen-vedtaket): punkt 8.4 Avvik mellom opplæringen eleven har fått og vedtaket
 
 **Overordnet del** (`overordnet-del`, begrep, ikke kontrollert)
 

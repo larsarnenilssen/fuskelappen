@@ -33,10 +33,11 @@ jobs:
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
 
-  # Ende-til-ende-testene deles på fire jobber som kjører samtidig (avgjørelse 040). Hver jobb bygger appen selv
-  # og kjører en firedel av testene med to workers, som før.
+  # Ende-til-ende-testene deles på seks jobber som kjører samtidig (avgjørelse 040). WebKit mobil har de tunge
+  # overflyt- og tilgjengelighetstestene i lys og mørk visning, og deles derfor etter tema. Hver jobb bygger appen
+  # selv og bruker to workers.
   e2e:
-    name: Ende-til-ende (${{ matrix.del }}/4)
+    name: Ende-til-ende (${{ matrix.navn }})
     runs-on: ubuntu-latest
     # Playwrights eget bilde har nettleserne og alle systempakkene de trenger. Da slipper vi å installere dem
     # fra Ubuntu-speilet, som av og til er svært tregt. Versjonen må være den samme som @playwright/test i
@@ -47,7 +48,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        del: [1, 2, 3, 4]
+        include:
+          - { navn: 'Chromium mobil', del: chromium-mobil, valg: '--project=chromium-mobil' }
+          - { navn: 'WebKit mobil, lys', del: webkit-mobil-lys, valg: '--project=webkit-mobil --grep "\\(lys\\)$"' }
+          - { navn: 'WebKit mobil, mørk', del: webkit-mobil-mork, valg: '--project=webkit-mobil --grep "\\(mork\\)$"' }
+          - { navn: 'WebKit mobil, resten', del: webkit-mobil-resten, valg: '--project=webkit-mobil --grep-invert "\\((lys|mork)\\)$"' }
+          - { navn: 'Chromium skrivebord', del: chromium-skrivebord, valg: '--project=chromium-skrivebord' }
+          - { navn: 'WebKit skrivebord', del: webkit-skrivebord, valg: '--project=webkit-skrivebord' }
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
@@ -55,8 +62,8 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
-      - name: Ende-til-ende-tester (Chromium og WebKit)
-        run: npm run test:e2e -- --shard=${{ matrix.del }}/4
+      - name: Ende-til-ende-tester
+        run: npm run test:e2e -- ${{ matrix.valg }}
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
