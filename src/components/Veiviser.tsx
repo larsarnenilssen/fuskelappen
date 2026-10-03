@@ -9,7 +9,7 @@ import { app } from '../config/app.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
 import { formaterDato } from '../core/i18n/tekst.ts';
 import type { Stegelement, Veiviserelement } from '../core/innhold/skjema.ts';
-import { erUtfall, fasestatus, finnVei, lagKart, lesSvar, tilbakeTil, videre, type Vei } from '../core/veiviser/veiviser.ts';
+import { erUtfall, fasestatus, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Vei, type Veiviserkart } from '../core/veiviser/veiviser.ts';
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
 import { Kildeliste } from './Kildelenke.tsx';
@@ -199,6 +199,85 @@ function Prosessoversikt({
   );
 }
 
+/**
+ * Kartet over hele prosessen: stegene i hver fase, med fristene som merker. Stegene på veien er krysset av, og
+ * steget brukeren står på, er markert. Hvert steg er en lenke dit, med den korteste veien fra starten.
+ */
+function Prosesskart({
+  veiviser,
+  kart,
+  besokt,
+  gjeldende,
+  sti,
+  aapen,
+}: {
+  veiviser: Veiviserelement;
+  kart: Veiviserkart<Stegelement>;
+  besokt: ReadonlySet<string>;
+  gjeldende: string;
+  sti: string;
+  /** Åpent fra start, f.eks. på første steg, så brukeren ser hele prosessen med en gang. */
+  aapen: boolean;
+}) {
+  const { t, malform } = useTekst();
+  if (veiviser.faser.length === 0) return null;
+  // Stegene i den rekkefølgen de nås, og resultatene sist i hver fase.
+  const iFase = stegIRekkefolge(kart).flatMap((id) => {
+    const s = kart.steg.get(id);
+    return s?.fase ? [s] : [];
+  });
+  const rekkefolge = [...iFase.filter((s) => !erUtfall(s)), ...iFase.filter((s) => erUtfall(s))];
+  return (
+    <div class="veiviser-kart">
+      <Forklaring tittel={t('komponenter.veiviser.heleProsessen')} aapen={aapen}>
+        <p class="liten dempet">{t('komponenter.veiviser.kartHjelp')}</p>
+        <ol class="prosesskart">
+          {veiviser.faser.map((f, i) => {
+            const egne = rekkefolge.filter((s) => s.fase === f.id);
+            if (egne.length === 0) return null;
+            return (
+              <li key={f.id} class="prosesskart-fase">
+                <h3 class="prosesskart-fasenavn">
+                  <span class="prosesskart-nr" aria-hidden="true">
+                    {i + 1}
+                  </span>
+                  {f.tittel[malform]}
+                </h3>
+                <ul class="prosesskart-steg">
+                  {egne.map((s) => {
+                    const vei = korstesteVei(kart, s.id);
+                    const naa = s.id === gjeldende;
+                    const klasse = ['prosesskart-punkt', erUtfall(s) ? 'prosesskart-utfall' : '', besokt.has(s.id) ? 'prosesskart-besokt' : '', naa ? 'prosesskart-naa' : '']
+                      .filter(Boolean)
+                      .join(' ');
+                    return (
+                      <li key={s.id} class={klasse}>
+                        <a href={vei ? lenke(sti, tilstand(kart, vei.steg, vei.svar)) : undefined} aria-current={naa ? 'step' : undefined}>
+                          {besokt.has(s.id) && !naa && <Ikon navn="ok" class="ikon-liten" />}
+                          <span>
+                            {erUtfall(s) && <span class="prosesskart-merke">{t('komponenter.veiviser.utfall')}</span>}
+                            {s.tittel[malform]}
+                          </span>
+                        </a>
+                        {s.fristKort && (
+                          <span class="prosesskart-frist">
+                            <Ikon navn="klokke" class="ikon-liten" />
+                            {s.fristKort[malform]}
+                          </span>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </li>
+            );
+          })}
+        </ol>
+      </Forklaring>
+    </div>
+  );
+}
+
 const redusertBevegelse = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
@@ -351,6 +430,16 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
               />
             )}
           </div>
+          {/* Nøkkelen gir et nytt, lukket kart når brukeren går fra starten. */}
+          <Prosesskart
+            key={vei.bak.length === 0 ? 'start' : 'videre'}
+            veiviser={veiviser}
+            kart={kart}
+            besokt={new Set(vei.bak.map((p) => p.steg))}
+            gjeldende={vei.gjeldende}
+            sti={sti}
+            aapen={vei.bak.length === 0}
+          />
         </div>
       </div>
     </div>

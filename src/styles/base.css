@@ -4326,6 +4326,96 @@ p.fagkort-tittel {
   content: ' →';
 }
 
+/* Kartet over hele prosessen: én blokk per fase med nummer, stegene på en linje under, og fristene som merker. */
+.veiviser-kart {
+  margin-top: var(--rom-3);
+}
+
+.prosesskart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--rom-4);
+  margin: var(--rom-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.prosesskart-fasenavn {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-m);
+}
+
+.prosesskart-nr {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font-size: var(--str-xs);
+}
+
+.prosesskart-steg {
+  margin: 0 0 0 0.6875rem;
+  padding: 0;
+  border-left: 2px solid var(--farge-linje);
+  list-style: none;
+}
+
+.prosesskart-punkt {
+  display: grid;
+  justify-items: start;
+  gap: var(--rom-1);
+  padding: var(--rom-1) 0 var(--rom-1) var(--rom-3);
+  font-size: var(--str-s);
+}
+
+.prosesskart-punkt a {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: var(--rom-1);
+}
+
+.prosesskart-besokt > a .ikon {
+  margin-top: 0.15rem;
+  color: var(--farge-ok);
+}
+
+.prosesskart-naa a {
+  margin-left: calc(-1 * var(--rom-2));
+  padding: 0.125rem var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  color: var(--farge-tekst);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.prosesskart-merke {
+  display: block;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  color: var(--farge-ok);
+}
+
+.prosesskart-frist {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0 var(--rom-2);
+  border-radius: 999px;
+  background: var(--farge-advarsel-flate);
+  color: var(--farge-tekst);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 /* Prosessen i sidekolonnen på stor skjerm: fasene som punkter på en linje, med stegene på veien under hver fase. */
 .veiviser-prosess-faser,
 .veiviser-prosess-steg {

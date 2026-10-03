@@ -1,0 +1,170 @@
+# Begreper om tilpasset opplæring og individuell tilrettelegging (fase 4). Bygger på opplæringslova kapittel 10, 11 og 24
+# og Udirs veileder om tilpasset opplæring og individuell tilrettelegging. Egne ord.
+- id: tilpasset-opplaering
+  type: begrep
+  tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring }
+  tekst:
+    nb: Tilpasset opplæring betyr at skolen legger opp opplæringen slik at alle elevene får et tilfredsstillende utbytte, uansett forutsetninger. Det er et prinsipp for all opplæring og skjer i hovedsak i fellesskapet. Det er en plikt for skolen, men ikke en rett for den enkelte eleven, så det fattes ikke vedtak om tilpasset opplæring.
+    nn: Tilpassa opplæring tyder at skolen legg opp opplæringa slik at alle elevane får eit tilfredsstillande utbytte, uansett føresetnader. Det er eit prinsipp for all opplæring og skjer i hovudsak i fellesskapet. Det er ei plikt for skolen, men ikkje ein rett for den enkelte eleven, så det blir ikkje gjort vedtak om tilpassa opplæring.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-1 Tilpassa opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-1" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «en plikt for skolen, men ikke en rett for den enkelte eleven» en riktig og ikke misvisende forenkling?"
+  stikkord: [tilpassa opplæring, tilpasning, differensiering, fellesskapet]
+  relatert: [tilfredsstillende-utbytte, individuell-tilrettelegging]
+
+- id: tilfredsstillende-utbytte
+  type: begrep
+  tittel: { nb: Tilfredsstillende utbytte, nn: Tilfredsstillande utbytte }
+  tekst:
+    nb: Tilfredsstillende utbytte er målestokken for om opplæringen er god nok for en elev. Skolen vurderer det faglig, ut fra elevens mestring, forutsetninger og utvikling sett opp mot kompetansemålene, eller målene i elevens IOP. Er det tvil om at en elev får tilfredsstillende utbytte, skal læreren melde fra til rektor, og skolen skal sette inn tiltak.
+    nn: Tilfredsstillande utbytte er målestokken for om opplæringa er god nok for ein elev. Skolen vurderer det fagleg, ut frå meistringa, føresetnadene og utviklinga til eleven sett opp mot kompetansemåla, eller måla i IOP-en til eleven. Er det tvil om at ein elev får tilfredsstillande utbytte, skal læraren melde frå til rektor, og skolen skal setje inn tiltak.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-2 Tilfredsstillande utbytte av opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-2" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "3.1 Skolen skal følge med på om elevene har tilfredsstillende utbytte av opplæringen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/tilfredsstillende-utbytte-opplaringen/#skolen-skal-folge-med-elevene-har-tilfredsstillende-utbytte-opplaringen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vurderingsgrunnlaget (mestring, forutsetninger og utvikling sett opp mot kompetansemålene) riktig gjengitt fra veilederen 3.1?"
+  stikkord: [tilfredsstillande utbytte, utbytte av opplæringen, melde fra til rektor]
+  relatert: [tilpasset-opplaering, individuell-tilrettelegging]
+
+- id: individuell-tilrettelegging
+  type: begrep
+  tittel: { nb: Individuell tilrettelegging, nn: Individuell tilrettelegging }
+  tekst:
+    nb: Individuell tilrettelegging er samlenavnet på rettighetene en elev kan ha når tilpasset opplæring ikke er nok, i opplæringslova kapittel 11. Det er tre rettigheter, individuelt tilrettelagt opplæring, personlig assistanse, og fysisk tilrettelegging med tekniske hjelpemidler. Eleven får individuell tilrettelegging bare etter et vedtak fra fylkeskommunen. Rettighetene ses i sammenheng og står som hovedregel i samme vedtak.
+    nn: Individuell tilrettelegging er samlenamnet på rettane ein elev kan ha når tilpassa opplæring ikkje er nok, i opplæringslova kapittel 11. Det er tre rettar, individuelt tilrettelagd opplæring, personleg assistanse, og fysisk tilrettelegging med tekniske hjelpemiddel. Eleven får individuell tilrettelegging berre etter eit vedtak frå fylkeskommunen. Rettane blir sett i samanheng og står som hovudregel i same vedtak.
+  kilder:
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.1 Skolen må vurdere tiltakene og om eleven kan ha behov for individuell tilrettelegging", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#5.1-skolen-ma-vurdere-tiltakene-og-om-eleven-kan-ha-behov-for-individuell-tilrettelegging" }
+    - { id: opplaeringslova, punkt: "§ 11-2 Tilfredsstillande utbytte av opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å telle tre rettigheter, når veilederen 1.1 deler fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet i flere punkter?"
+  stikkord: [spesialundervisning, spesialpedagogikk, tilrettelegging, kapittel 11]
+  relatert: [individuelt-tilrettelagt-opplaering, personlig-assistanse, fysisk-tilrettelegging, enkeltvedtak]
+
+- id: individuelt-tilrettelagt-opplaering
+  type: begrep
+  tittel: { nb: Individuelt tilrettelagt opplæring, nn: Individuelt tilrettelagd opplæring }
+  tekst:
+    nb: Individuelt tilrettelagt opplæring er faglig tilrettelegging for en elev som trenger det for å få tilfredsstillende utbytte, for eksempel andre kompetansemål, avvik fra målene eller annen organisering. Det het spesialundervisning før opplæringslova fra 2024. Det krever samtykke, en sakkyndig vurdering fra PP-tjenesten og et vedtak, og skolen lager en individuell opplæringsplan.
+    nn: Individuelt tilrettelagd opplæring er fagleg tilrettelegging for ein elev som treng det for å få tilfredsstillande utbytte, til dømes andre kompetansemål, avvik frå måla eller anna organisering. Det heitte spesialundervisning før opplæringslova frå 2024. Det krev samtykke, ei sakkunnig vurdering frå PP-tenesta og eit vedtak, og skolen lagar ein individuell opplæringsplan.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-6 Individuelt tilrettelagd opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§11-6" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.4 Individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig og nyttig å skrive at dette het spesialundervisning før, eller kan det misforstås som at innholdet er det samme?"
+  stikkord: [spesialundervisning, ITO, individuelt tilrettelagd opplæring, spesialpedagogisk hjelp]
+  relatert: [individuell-tilrettelegging, sakkyndig-vurdering, individuell-opplaeringsplan]
+
+- id: personlig-assistanse
+  type: begrep
+  tittel: { nb: Personlig assistanse, nn: Personleg assistanse }
+  tekst:
+    nb: Personlig assistanse er praktisk hjelp en elev trenger for å delta i opplæringen, for eksempel med å følge med, kommunikasjon, forflytning, måltider eller av- og påkledning. Den som hjelper, har ikke ansvar for opplæringen. Helsehjelp hører ikke inn under retten. Det krever et vedtak, men ikke sakkyndig vurdering.
+    nn: Personleg assistanse er praktisk hjelp ein elev treng for å delta i opplæringa, til dømes med å følgje med, kommunikasjon, forflytting, måltid eller av- og påkledning. Den som hjelper, har ikkje ansvar for opplæringa. Helsehjelp høyrer ikkje inn under retten. Det krev eit vedtak, men ikkje sakkunnig vurdering.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-4 Personleg assistanse", url: "https://lovdata.no/lov/2023-06-09-30/§11-4" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.2 Personlig assistanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#personlig-assistanse" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på personlig assistanse og avgrensningen mot helsehjelp riktig gjengitt?"
+  stikkord: [assistent, assistanse, praktisk hjelp, BPA]
+  relatert: [individuell-tilrettelegging, fysisk-tilrettelegging]
+
+- id: fysisk-tilrettelegging
+  type: begrep
+  tittel: { nb: Fysisk tilrettelegging og tekniske hjelpemidler, nn: Fysisk tilrettelegging og tekniske hjelpemiddel }
+  tekst:
+    nb: Elever har rett til den fysiske tilretteleggingen og de tekniske hjelpemidlene de trenger for å delta i opplæringen, og til opplæring i å bruke dem. Det kan være tilpasset klasserom, inventar, utstyr og programvare. Blinde og sterkt svaksynte elever har også rett til opplæring i mobilitet. Det krever et vedtak, men ikke sakkyndig vurdering.
+    nn: Elevar har rett til den fysiske tilrettelegginga og dei tekniske hjelpemidla dei treng for å delta i opplæringa, og til opplæring i å bruke dei. Det kan vere tilpassa klasserom, inventar, utstyr og programvare. Blinde og sterkt svaksynte elevar har også rett til opplæring i mobilitet. Det krev eit vedtak, men ikkje sakkunnig vurdering.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-5 Fysisk tilrettelegging og tekniske hjelpemiddel", url: "https://lovdata.no/lov/2023-06-09-30/§11-5" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.3 Fysisk tilrettelegging, tekniske hjelpemidler og opplæring i mobilitet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#fysisk-tilrettelegging-tekniske-hjelpemidler-opplaring-mobilitet" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene riktige, og bør skillet mot NAVs ansvar for hjelpemidler nevnes i begrepet?"
+  stikkord: [hjelpemidler, hjelpemiddel, mobilitet, universell utforming, tekniske hjelpemidler]
+  relatert: [individuell-tilrettelegging, personlig-assistanse]
+
+- id: sakkyndig-vurdering
+  type: begrep
+  tittel: { nb: Sakkyndig vurdering, nn: Sakkunnig vurdering }
+  tekst:
+    nb: En sakkyndig vurdering er PP-tjenestens skriftlige vurdering av om en elev trenger individuelt tilrettelagt opplæring, og hva som kan gi eleven tilfredsstillende utbytte. Den skal alltid si noe om utbyttet, årsakene, realistiske mål, tiltak og kompetansen til dem som skal gi opplæringen. Den krever samtykke. Fylkeskommunen kan bare fravike vurderingen i vedtaket hvis eleven kan få tilfredsstillende utbytte på en annen måte, og må grunngi det.
+    nn: Ei sakkunnig vurdering er den skriftlege vurderinga til PP-tenesta av om ein elev treng individuelt tilrettelagd opplæring, og kva som kan gi eleven tilfredsstillande utbytte. Ho skal alltid seie noko om utbyttet, årsakene, realistiske mål, tiltak og kompetansen til dei som skal gi opplæringa. Ho krev samtykke. Fylkeskommunen kan berre fråvike vurderinga i vedtaket dersom eleven kan få tilfredsstillande utbytte på ein annan måte, og må grunngi det.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-7 Vedtak om individuelt tilrettelagd opplæring og krav om sakkunnig vurdering", url: "https://lovdata.no/lov/2023-06-09-30/§11-7" }
+    - { id: opplaeringslova, punkt: "§ 11-8 Kva den sakkunnige vurderinga skal innehalde", url: "https://lovdata.no/lov/2023-06-09-30/§11-8" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "6.2 Krav om sakkyndig vurdering i saker om individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/opplyse-saken-vedtak-individuell-tilrettelegging/#krav-om-sakkyndig-vurdering-individuelt-tilrettelagt-opplaring" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er kravene til innholdet i § 11-8 riktig oppsummert i én setning?"
+  stikkord: [sakkunnig vurdering, PPT, utredning, sakkyndig]
+  relatert: [pp-tjenesten, individuelt-tilrettelagt-opplaering]
+
+- id: pp-tjenesten
+  type: begrep
+  tittel: { nb: PP-tjenesten, nn: PP-tenesta }
+  tekst:
+    nb: PP-tjenesten (pedagogisk-psykologisk tjeneste) skal støtte skolene i å gi et inkluderende opplæringstilbud og i å sette inn tiltak tidlig. Den lager de sakkyndige vurderingene loven krever, og er faglig uavhengig når den gjør det. Fylkeskommunen skal ha en PP-tjeneste for videregående opplæring.
+    nn: PP-tenesta (pedagogisk-psykologisk teneste) skal støtte skolane i å gi eit inkluderande opplæringstilbod og i å setje inn tiltak tidleg. Ho lagar dei sakkunnige vurderingane lova krev, og er fagleg uavhengig når ho gjer det. Fylkeskommunen skal ha ei PP-teneste for vidaregåande opplæring.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-13 Pedagogisk-psykologisk teneste", url: "https://lovdata.no/lov/2023-06-09-30/§11-13" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "1.1 Tilpassing og tilrettelegging (Støtte fra PP-tjenesten)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#tilpassing-tilrettelegging" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "I Vestland er PP-tjenesten for videregående en del av Rettleiingstenesta. Bør begrepet ha en fylkesvariant som nevner det?"
+  stikkord: [PPT, pedagogisk-psykologisk tjeneste, pedagogisk-psykologisk teneste, rettleiingstenesta]
+  relatert: [sakkyndig-vurdering, individuelt-tilrettelagt-opplaering]
+
+- id: individuell-opplaeringsplan
+  type: begrep
+  tittel: { nb: Individuell opplæringsplan (IOP), nn: Individuell opplæringsplan (IOP) }
+  tekst:
+    nb: En individuell opplæringsplan (IOP) er skolens plan for opplæringen til en elev med individuelt tilrettelagt opplæring. Den bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den gir ingen nye rettigheter. Skolen lager den så raskt som mulig etter vedtaket, sammen med eleven og foreldrene, og evaluerer utbyttet én gang i året.
+    nn: Ein individuell opplæringsplan (IOP) er planen til skolen for opplæringa til ein elev med individuelt tilrettelagd opplæring. Han byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han gir ingen nye rettar. Skolen lagar han så raskt som mogleg etter vedtaket, saman med eleven og foreldra, og evaluerer utbyttet éin gong i året.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 11-10 Individuell opplæringsplan", url: "https://lovdata.no/lov/2023-06-09-30/§11-10" }
+    - { id: opplaeringslova, punkt: "§ 11-11 Årleg evaluering av utbyttet av den individuelt tilrettelagde opplæringa", url: "https://lovdata.no/lov/2023-06-09-30/§11-11" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "8.1 Skolen skal utarbeide en individuell opplæringsplan", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-opplaringsplan-iop/#skolen-skal-utarbeide-individuell-opplaringsplan" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at IOP bare kreves ved individuelt tilrettelagt opplæring, og ikke ved personlig assistanse eller fysisk tilrettelegging alene?"
+  stikkord: [IOP, opplæringsplan, årlig evaluering, årsrapport]
+  relatert: [individuelt-tilrettelagt-opplaering]
+
+- id: selvraderett-15-ar
+  type: begrep
+  tittel: { nb: Selvråderett fra 15 år, nn: Sjølvråderett frå 15 år }
+  tekst:
+    nb: En elev som har fylt 15 år, bestemmer selv i saker etter opplæringslova som gjelder valg av opplæring, og samtykker selv, for eksempel til sakkyndig vurdering og vedtak om individuelt tilrettelagt opplæring. Det gjelder de fleste elevene i videregående. Foreldrene til elever under 18 år skal likevel fortsatt få informasjon.
+    nn: Ein elev som har fylt 15 år, avgjer sjølv i saker etter opplæringslova som gjeld val av opplæring, og samtykkjer sjølv, til dømes til sakkunnig vurdering og vedtak om individuelt tilrettelagd opplæring. Det gjeld dei fleste elevane i vidaregåande. Foreldra til elevar under 18 år skal likevel framleis få informasjon.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 24-5 Sjølvråderett for dei som har fylt 15 år", url: "https://lovdata.no/lov/2023-06-09-30/§24-5" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "5.4 Individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuell-tilrettelegging/#individuelt-tilrettelagt-opplaring" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at foreldre til elever mellom 15 og 18 år fortsatt skal få informasjon, og bør det stå hvilken paragraf det følger av?"
+    - "Er «saker som gjelder valg av opplæring» en dekkende omskriving av § 24-5?"
+  stikkord: [samtykke, 15 år, myndig, foreldre, sjølvråderett]
+  relatert: [sakkyndig-vurdering, individuelt-tilrettelagt-opplaering]
+
+- id: elevens-beste
+  type: begrep
+  tittel: { nb: Elevens beste og medvirkning, nn: Det beste for eleven og medverknad }
+  tekst:
+    nb: Ved handlinger og avgjørelser som gjelder elever, skal det som er best for eleven, være et grunnleggende hensyn. Elevene har også rett til å medvirke og bli hørt i alt som gjelder dem selv, og meningene deres skal vektlegges etter alder og modenhet. Begge deler gjelder når skolen vurderer tiltak og fylkeskommunen fatter vedtak.
+    nn: Ved handlingar og avgjerder som gjeld elevar, skal det som er best for eleven, vere eit grunnleggjande omsyn. Elevane har også rett til å medverke og bli høyrde i alt som gjeld dei sjølve, og meiningane deira skal vektleggjast etter alder og modning. Begge delar gjeld når skolen vurderer tiltak og fylkeskommunen gjer vedtak.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 10-1 Det beste for eleven", url: "https://lovdata.no/lov/2023-06-09-30/§10-1" }
+    - { id: opplaeringslova, punkt: "§ 10-2 Elevane sin rett til medverknad", url: "https://lovdata.no/lov/2023-06-09-30/§10-2" }
+    - { id: udir-veileder-tilpasset-opplaering, punkt: "1.4 Elevens beste og retten til å bli hørt", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/innledning/#elevens-beste-retten-bli-hort" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å samle elevens beste og medvirkning i ett begrep, eller bør de være to?"
+  stikkord: [barnets beste, det beste for eleven, medverknad, rett til å bli hørt, barnekonvensjonen]
+  relatert: [selvraderett-15-ar]

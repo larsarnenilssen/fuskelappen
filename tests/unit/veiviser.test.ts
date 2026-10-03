@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fasestatus, finnFeil, finnVei, lagKart, lesSvar, tilbakeTil, tilstand, videre, type Stegnode } from '../../src/core/veiviser/veiviser.ts';
+import { fasestatus, finnFeil, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Stegnode } from '../../src/core/veiviser/veiviser.ts';
 
 // Et lite eksempel med et spørsmål som kan føre tilbake (løkke via svar), og to utfall.
 const steg: Stegnode[] = [
@@ -79,5 +79,21 @@ describe('veiviser: faser', () => {
   it('fasene før er ferdige, og fasene etter kommer senere', () => {
     expect(fasestatus(['x', 'y', 'z'], 'y')).toEqual(['ferdig', 'gjeldende', 'senere']);
     expect(fasestatus(['x', 'y'], undefined)).toEqual(['senere', 'senere']);
+  });
+});
+
+describe('veiviser: kartet over hele prosessen', () => {
+  it('finner korteste vei til et steg, med svarene', () => {
+    expect(korstesteVei(kart, 'a')).toEqual({ steg: 'a', svar: [] });
+    expect(korstesteVei(kart, 'd')).toEqual({ steg: 'd', svar: ['ja'] });
+    expect(korstesteVei(kart, 'slutt')).toEqual({ steg: 'slutt', svar: ['ja', 'ikke'] });
+    expect(korstesteVei(kart, 'finnes-ikke')).toBeNull();
+    // Veien leses tilbake til samme steg.
+    const v = korstesteVei(kart, 'slutt');
+    expect(finnVei(kart, v?.svar ?? [], v?.steg).gjeldende).toBe('slutt');
+  });
+
+  it('gir stegene i rekkefølgen de nås fra starten', () => {
+    expect(stegIRekkefolge(kart)).toEqual(['a', 'b', 'ok', 'c', 'd', 'slutt']);
   });
 });

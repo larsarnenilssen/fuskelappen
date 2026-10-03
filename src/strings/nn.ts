@@ -205,6 +205,8 @@ export const nn: Tekster = {
   komponenter: {
     veiviser: {
       prosessen: 'Prosessen',
+      heleProsessen: 'Heile prosessen',
+      kartHjelp: 'Stega i kvar fase. Vel eit steg for å gå rett dit. Steg med frist har eit merke med klokke.',
       kilder: 'Kjelder ({antall})',
       faser: 'Fasane i prosessen',
       faseFerdig: 'ferdig',

@@ -98,6 +98,8 @@ export const stegElement = z
     ansvar: flerspraak.optional(),
     dokumentasjon: flerspraak.optional(),
     frist: flerspraak.optional(),
+    /** Fristen i to–tre ord, f.eks. «3 uker», til merket i kartet over hele prosessen. */
+    fristKort: flerspraak.optional(),
     /** Utdyping som er skjult til brukeren åpner den. Markdown. */
     forklaring: flerspraak.optional(),
     /** Paragrafer i Regelverk som steget bygger på. Vises som lenker til paragrafen i appen. */

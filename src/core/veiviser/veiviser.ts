@@ -160,3 +160,59 @@ export function fasestatus(faser: readonly string[], gjeldendeFase: string | und
   const i = gjeldendeFase === undefined ? -1 : faser.indexOf(gjeldendeFase);
   return faser.map((_, j) => (j < i ? 'ferdig' : j === i ? 'gjeldende' : 'senere'));
 }
+
+/**
+ * Korteste vei fra starten til et steg, med svarene på veien. Brukes når brukeren velger et steg i kartet over hele
+ * prosessen. Null når steget ikke kan nås.
+ */
+export function korstesteVei(kart: Veiviserkart, maal: string): { steg: string; svar: string[] } | null {
+  const forrige = new Map<string, { fra: string; svar?: string }>();
+  const sett = new Set([kart.start]);
+  const ko = [kart.start];
+  while (ko.length > 0) {
+    const id = ko.shift() as string;
+    if (id === maal) {
+      const svar: string[] = [];
+      for (let n = id; n !== kart.start; ) {
+        const p = forrige.get(n);
+        if (!p) break;
+        if (p.svar) svar.unshift(p.svar);
+        n = p.fra;
+      }
+      return { steg: maal, svar };
+    }
+    const node = kart.steg.get(id);
+    if (!node) continue;
+    const videre: { til: string; svar?: string }[] = node.sporsmal
+      ? node.sporsmal.svar.map((a) => ({ til: a.neste, svar: a.id }))
+      : node.neste
+        ? [{ til: node.neste }]
+        : [];
+    for (const v of videre) {
+      if (sett.has(v.til)) continue;
+      sett.add(v.til);
+      forrige.set(v.til, { fra: id, ...(v.svar ? { svar: v.svar } : {}) });
+      ko.push(v.til);
+    }
+  }
+  return null;
+}
+
+/** Stegene i den rekkefølgen de nås fra starten (bredde først). Brukes til kartet over hele prosessen. */
+export function stegIRekkefolge(kart: Veiviserkart): string[] {
+  const rekkefolge: string[] = [];
+  const sett = new Set([kart.start]);
+  const ko = [kart.start];
+  while (ko.length > 0) {
+    const id = ko.shift() as string;
+    rekkefolge.push(id);
+    const node = kart.steg.get(id);
+    const videre = [...(node?.sporsmal?.svar.map((a) => a.neste) ?? []), ...(node?.neste ? [node.neste] : [])];
+    for (const v of videre) {
+      if (sett.has(v)) continue;
+      sett.add(v);
+      ko.push(v);
+    }
+  }
+  return rekkefolge;
+}

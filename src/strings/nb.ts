@@ -205,6 +205,8 @@ export const nb = {
   komponenter: {
     veiviser: {
       prosessen: 'Prosessen',
+      heleProsessen: 'Hele prosessen',
+      kartHjelp: 'Stegene i hver fase. Velg et steg for å gå rett dit. Steg med frist har et merke med klokke.',
       kilder: 'Kilder ({antall})',
       faser: 'Fasene i prosessen',
       faseFerdig: 'ferdig',
