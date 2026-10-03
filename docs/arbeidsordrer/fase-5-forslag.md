@@ -183,13 +183,35 @@ ungdomsrett, voksenrett, sluttkompetanse, fortrinnsrett, individuell behandling,
 6. **Klageinstans:** Se under.
 7. **Fagene på vitnemålet fra grunnskolen:** Ferdig liste, med kilde i fag- og timefordelingen for grunnskolen.
 
-### Klageinstansene i forslaget
+### Klageinstansene (undersøkt 03.10.2026)
 
-| Vedtak | Klageinstans | Kilde |
+Eier 03.10.2026: Klagen sendes til den som fattet vedtaket, normalt inntakskontoret som gjør det på vegne av fylkeskommunen. Undersøk nærmere hvem som er klageinstans.
+
+Det stemmer med fvl. § 32 første ledd bokstav a: klagen settes fram for organet som har truffet vedtaket. Det vurderer klagen først og kan endre vedtaket (fvl. § 33 andre ledd). Hvis ikke, sendes klagen til klageinstansen. Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?» (sist endret 26.06.2025, ny kilde `udir-klageinstanser`) sier dette om kapittel 4 i opplæringsforskrifta:
+
+| Vedtak (fattes av fylkeskommunen) | Klageinstans | Kilde |
 |---|---|---|
-| Hvilket utdanningsprogram, programområde eller skole søkeren tas inn på | Fylkestinget, eller fylkesutvalget eller en særskilt klagenemnd som fylkestinget har oppnevnt | ol. § 29-1 andre ledd, fvl. § 28 andre ledd |
-| Inntak av gjesteelever (søkere fra andre fylker) | Samme | ol. § 29-1 andre ledd |
-| Andre enkeltvedtak etter opplæringslova, f.eks. om søkeren har rett til videregående opplæring | Departementet | ol. § 29-1 første ledd |
-| Klagefrist | Tre uker fra søkeren fikk vedtaket | fvl. § 29 |
+| Inntak, unntatt hvilket utdanningsprogram, programområde og skole, f.eks. om søkeren har rett og kommer inn på ett av tre ønsker | Statsforvalteren | ol. § 29-1 første ledd. Departementet har delegert til Udir, som har delegert videre til statsforvalteren |
+| Hvilket utdanningsprogram, programområde og skole søkeren tas inn på | Etter fvl. § 28: nærmeste overordnede organ, dvs. fylkestinget eller en klagenemnd fylkestinget har oppnevnt | ol. § 29-1 andre ledd andre punktum. fvl. § 28 andre ledd |
+| Inntak av gjesteelever | Samme | Samme |
+| Mer opplæring i fag som ikke er bestått (ofo. § 4-3) | Statsforvalteren | ol. § 29-1 første ledd |
+| Ikke delta i opplæringen for å ta eksamen som privatist (ofo. § 4-2) | Statsforvalteren | ol. § 29-1 første ledd |
 
-*Usikkert:* «i praksis statsforvalteren» står ikke i kildene. Det bygger på at departementet har delegert myndigheten, og må enten få en kilde eller tas ut. Det er heller ikke klart om avslag på fortrinnsrett (ofo. § 4-21–§ 4-23) er et vedtak om «kva for utdanningsprogram … ein søkjar skal takast inn på» (klagenemnda) eller et annet vedtak (departementet).
+Klagefristen er tre uker fra søkeren fikk vedtaket (fvl. § 29).
+
+**Fortsatt åpent – fortrinnsrett:** Etter den gamle loven var statsforvalteren klageinstans for hele saken når søkeren hadde rett til et særskilt utdanningsprogram på grunnlag av sakkyndig vurdering (Udirs tolkning 30.06.2021, merket utgått). Den nye § 29-1 har ikke det unntaket, og Udirs oversikt nevner ikke ofo. § 4-21. Veiviseren sier derfor bare det som står over, og kontrollspørsmålet spør om klage på fortrinnsrett.
+
+**Vestland:** Hvilket organ som er klagenemnd i Vestland, står ikke i den lokale forskriften. Det venter til vestlandfylke.no svarer.
+
+### Svar fra eier (03.10.2026, runde 2)
+
+- **Valgfag:** Følg forskriften. Gjennomsnittet av valgfagkarakterene teller som én karakter. F2 = **44,2**.
+- **Datoer:** Lenke til Vilbli og en fil per inntaksår med `grunnlag: praksis`, med påminnelse i kontrollrunden i mai.
+
+### Nye fasittester for Vg3
+
+| # | Tilfelle | Utregning | Poeng |
+|---|---|---|---|
+| F7 | Vg3: de elleve karakterene fra Vg1 i F6 (sum 46) og fem fra Vg2: 4, 3, 5, 4, 4. Faget med 3 er tatt på nytt som privatist med 5 | Beste utvalg: 5 i stedet for 3. (46 + 22) / 16 = 4,25 × 10 | **42,5** |
+| F7b | Som F7, uten privatisteksamen | (46 + 20) / 16 = 4,125 → 4,13 × 10 | **41,3** (prøver avrundingen ved nøyaktig halv) |
+| F8 | Vg2 etter omvalg: to Vg1 som begge gir grunnlag | «Det beste utvalet av karakterar» (ofo. § 4-25 første ledd bokstav f) | *Må avklares:* er det beste av de to løpene som helhet, eller beste karakter fag for fag (f.eks. fellesfag tatt to ganger)? |
