@@ -65,13 +65,17 @@ test.describe('veiviser', () => {
     await expect(page.locator('.veiviser-stegtittel')).toBeFocused();
   });
 
-  test('kildene er lukket til de åpnes, og paragrafene lenker til Regelverk', async ({ page }) => {
+  test('kildene og paragrafene er lukket til de åpnes, og paragrafene lenker til Regelverk', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-tilpasset&svar=ordinar`);
-    const kilder = page.locator('details.veiviser-kilder').first();
+    const forste = page.locator('.veiviser-steg').first();
+    const kilder = forste.locator('details.veiviser-kilder', { hasText: 'Kilder (2)' });
     await expect(kilder.getByRole('link', { name: /punkt 1\.1/ })).toBeHidden();
     await kilder.getByText('Kilder (2)').click();
     await expect(kilder.getByRole('link', { name: /punkt 1\.1/ })).toBeVisible();
-    await page.getByRole('link', { name: /§ 11-1 Tilpassa opplæring/ }).first().click();
+    const paragraf = forste.getByRole('link', { name: /§ 11-1 Tilpassa opplæring/ });
+    await expect(paragraf).toBeHidden();
+    await forste.getByText(/^I regelverket \(\d+\)$/).click();
+    await paragraf.click();
     await expect(page).toHaveURL(/#\/lov\/opplaeringslova\/11-1$/);
   });
 

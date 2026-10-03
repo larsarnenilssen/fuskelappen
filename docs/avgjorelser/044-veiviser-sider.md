@@ -4,10 +4,10 @@
 
 **Valg:**
 - **Én side per valg.** Steg uten spørsmål står på samme side som spørsmålet eller utfallet de fører til (`finnSide` i `src/core/veiviser/veiviser.ts`). Brukeren trykker bare der det er et valg, og «Neste»-knappen er borte. Adressen peker på det første steget på siden. En adresse som peker på et annet steg på siden, gir samme side, så gamle lenker og kartet virker.
-- **Hvert steg på siden** står som en egen del i samme kort, med tittel, tekst, felt for ansvar, dokumentasjon og frist, paragrafer og egne rader for «Mer om dette steget» og kildene. Den første delen har «Steg n», der n er nummeret på siden. Utfallet har flagget «Her ender veien».
+- **Hvert steg på siden** står i sin egen ramme, under hverandre på linjen (eier 03.10.2026), med tittel, tekst, felt for ansvar, dokumentasjon og frist, og egne rader for «I regelverket», «Mer om dette steget» og kildene. Det første steget har «Steg n», der n er nummeret på siden. Utfallet har flagget «Her ender veien».
 - **Titler på steg med valg er et emne** («Elever med kort botid»), fordi spørsmålet står over knappene.
 - **Mindre rulling:**
-  - Paragrafene står kompakt: numrene side om side under navnet på loven eller forskriften. Tittelen står i tipset og i navnet til lenken for skjermlesere.
+  - Paragrafene står med tittel i en lukket rad, «I regelverket (n)», som kildene. Først sto bare numrene side om side, men eier ville ha titlene tilbake (03.10.2026).
   - Lokale bokser («I Vestland») er lukket til brukeren åpner dem. Stedet og tittelen står alltid synlig.
   - «Veien hit» viser de to siste valgene. Resten vises med «Vis hele veien».
   - Under knappene står «Tilbake til …», med lenke til forrige valg, og nederst «Til toppen».

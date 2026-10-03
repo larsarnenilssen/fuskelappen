@@ -17,7 +17,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **Alle veiviserne har én side per valg:** Steg uten valg står på samme side som spørsmålet eller utfallet de fører til, så du trykker bare der det er et valg. «Neste»-knappen er borte.
-- **Mindre rulling i veiviserne:** Paragrafene står kompakt med numrene side om side, lokale regler («I Vestland») er lukket til du åpner dem, «Veien hit» viser de to siste valgene med «Vis hele veien», og under knappene står «Tilbake til …» og nederst «Til toppen».
+- **Mindre rulling i veiviserne:** Hvert steg står i sin egen ramme, paragrafene står i en lukket rad «I regelverket» som kildene, lokale regler («I Vestland») er lukket til du åpner dem, «Veien hit» viser de to siste valgene med «Vis hele veien», og under knappene står «Tilbake til …» og nederst «Til toppen».
 - **Veiviserne:** Titlene på steg med valg er et emne og ikke et spørsmål, for eksempel «Elever med kort botid» i stedet for «Kort botid?», fordi spørsmålet står over knappene.
 
 ## [0.25.0] – 2026-10-03

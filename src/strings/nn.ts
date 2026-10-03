@@ -241,6 +241,7 @@ export const nn: Tekster = {
       fagkodene: 'Fagkodane',
       antallFag: '{antall} fag',
       lokalt: 'I {sted}',
+      regelverkAntall: 'I regelverket ({antall})',
       visHeleVeien: 'Vis heile vegen ({antall} val til)',
       forrigeValg: 'Tilbake til «{steg}»',
       tilToppen: 'Til toppen',

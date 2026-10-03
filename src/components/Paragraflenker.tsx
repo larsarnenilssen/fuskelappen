@@ -36,11 +36,8 @@ async function lastLenker(refer: readonly string[]): Promise<Dokumentlenker[]> {
   );
 }
 
-/**
- * `kompakt` viser bare numrene, side om side under navnet på loven eller forskriften, med tittelen som tips og i
- * navnet til lenken. Brukes i veiviserne, der mange paragrafer ellers tar mye plass (eier 03.10.2026).
- */
-export function Paragraflenker({ paragrafer, overskrift, kompakt = false }: { paragrafer: readonly string[]; overskrift: string; kompakt?: boolean }) {
+/** `utenOverskrift` når lenkene står i en boks som allerede har overskriften, f.eks. «I regelverket» i veiviserne. */
+export function Paragraflenker({ paragrafer, overskrift, utenOverskrift = false }: { paragrafer: readonly string[]; overskrift: string; utenOverskrift?: boolean }) {
   const [lenker, settLenker] = useState<Dokumentlenker[] | null>(null);
   const nokkel = paragrafer.join(',');
   useEffect(() => {
@@ -63,28 +60,18 @@ export function Paragraflenker({ paragrafer, overskrift, kompakt = false }: { pa
       paragrafer: paragrafer.filter((r) => delParagrafRef(r).dokument === d).map((r) => ({ nr: delParagrafRef(r).nr, visNr: `§ ${delParagrafRef(r).nr}`, tittel: null })),
     }));
   return (
-    <div class={`paragraflenker${kompakt ? ' paragraflenker-kompakt' : ''}`}>
-      <h3 class="liten-overskrift">{overskrift}</h3>
+    <div class="paragraflenker">
+      {utenOverskrift ? <h3 class="skjult-visuelt">{overskrift}</h3> : <h3 class="liten-overskrift">{overskrift}</h3>}
       {vis.map((d) => (
         <div key={d.dokument} class="paragraflenker-dokument">
           {d.navn && <p class="paragraflenker-navn">{d.navn}</p>}
           <ul>
             {d.paragrafer.map((p) => (
               <li key={p.nr}>
-                {kompakt ? (
-                  <a
-                    href={`#${paragrafRute(d.dokument, p.nr)}`}
-                    title={p.tittel ?? undefined}
-                    aria-label={[d.navn, p.visNr, p.tittel].filter(Boolean).join(' ')}
-                  >
-                    {p.visNr}
-                  </a>
-                ) : (
-                  <a href={`#${paragrafRute(d.dokument, p.nr)}`}>
-                    <span class="paragraflenker-nr">{p.visNr}</span>
-                    {p.tittel && <span class="paragraflenker-tittel"> {p.tittel}</span>}
-                  </a>
-                )}
+                <a href={`#${paragrafRute(d.dokument, p.nr)}`}>
+                  <span class="paragraflenker-nr">{p.visNr}</span>
+                  {p.tittel && <span class="paragraflenker-tittel"> {p.tittel}</span>}
+                </a>
               </li>
             ))}
           </ul>

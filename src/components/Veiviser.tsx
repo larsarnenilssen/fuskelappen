@@ -193,7 +193,7 @@ function Tillegg({ steg }: { steg: Stegelement }) {
             {steg.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={steg.frist[malform]} />}
           </dl>
         )}
-        <Paragraflenker paragrafer={steg.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} kompakt />
+        <Paragraflenker paragrafer={steg.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
       </div>
     </details>
   );
@@ -361,12 +361,13 @@ function Stegdel({
   overskrift?: Ref<HTMLHeadingElement> | undefined;
 }) {
   const { t, malform } = useTekst();
+  const egenId = useId();
   const egne = tillegg.filter((s) => s.id === node.id);
   const kilder = [...node.kilder, ...egne.flatMap((s) => s.kilder)];
   return (
-    <div class={`veiviser-del${erUtfall(node) ? ' veiviser-del-utfall' : ''}`}>
+    <article class={`veiviser-steg${erUtfall(node) ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId ?? egenId}>
       <p class="veiviser-stegnr">{etikett}</p>
-      <h2 id={overskriftId} ref={overskrift} tabIndex={-1} class="veiviser-stegtittel">
+      <h2 id={overskriftId ?? egenId} ref={overskrift} tabIndex={-1} class="veiviser-stegtittel">
         {node.tittel[malform]}
       </h2>
       <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
@@ -378,11 +379,21 @@ function Stegdel({
         </dl>
       )}
       <Laereplanboks laereplaner={node.laereplaner} />
-      <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} kompakt />
       {egne.map((s) => (
         <Tillegg key={`${s.gyldighet.niva}-${s.id}`} steg={s} />
       ))}
       <div class="veiviser-mer">
+        {/* Paragrafene med titler, lukket til brukeren åpner dem (eier 03.10.2026). */}
+        {node.paragrafer.length > 0 && (
+          <details class="veiviser-kilder veiviser-regelverk">
+            <summary class="forklaring-knapp">
+              <Ikon navn="paragraf" />
+              <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(node.paragrafer.length) })}</span>
+              <Ikon navn="ned" class="forklaring-pil" />
+            </summary>
+            <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
+          </details>
+        )}
         {node.forklaring && (
           <Forklaring tittel={t('komponenter.veiviser.merOm')}>
             <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
@@ -398,7 +409,7 @@ function Stegdel({
           <Kildeliste kilder={kilder} niva={3} utenOverskrift />
         </details>
       </div>
-    </div>
+    </article>
   );
 }
 
@@ -511,7 +522,8 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
           </nav>
         )}
         <div class="veiviser-lop">
-          <section ref={kort} class={`veiviser-steg${utfall ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId}>
+          {/* Stegene på siden, hvert i sin ramme. Steg uten valg står over steget med spørsmålet eller utfallet. */}
+          <section ref={kort} class="veiviser-side" aria-labelledby={overskriftId}>
             {sidesteg.map((s, i) => {
               const fase = fasenavn(s);
               const slutten = erUtfall(s);

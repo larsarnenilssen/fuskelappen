@@ -26,7 +26,9 @@ test.describe('inntak', () => {
     await expect(page).toHaveURL(/steg=sk-poeng&svar=norsk\.ja\.nei\.under19\.vg1\.poeng$/);
     await expect(steg).toHaveText(['Konkurrerer på poeng', 'Hvor søknaden sendes', 'Søknad, svar og klage']);
     await expect(page.locator('.veiviser-stegnr').last()).toHaveText(/^Her ender veien · Søknad/);
-    await expect(page.locator('.veiviser-steg')).toContainText('statsforvalteren');
+    // Hvert steg står i sin egen ramme på siden.
+    await expect(page.locator('.veiviser-side > .veiviser-steg')).toHaveCount(3);
+    await expect(page.locator('.veiviser-steg').last()).toContainText('statsforvalteren');
     // «Veien hit» viser de siste valgene, og resten bak en knapp.
     await page.getByRole('button', { name: /Vis hele veien/ }).click();
     await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);

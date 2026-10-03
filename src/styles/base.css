@@ -4183,11 +4183,17 @@ p.fagkort-tittel {
   font-size: var(--str-s);
 }
 
-/* Flere steg på samme side: steg uten valg står over spørsmålet eller utfallet de fører til (eier 03.10.2026). */
-.veiviser-del + .veiviser-del {
-  margin-top: var(--rom-4);
-  padding-top: var(--rom-4);
-  border-top: var(--strek) solid var(--farge-linje);
+/* Flere steg på samme side, hvert i sin ramme: steg uten valg står over spørsmålet eller utfallet de fører til
+   (eier 03.10.2026). */
+.veiviser-side {
+  display: grid;
+  gap: var(--rom-3);
+  scroll-margin-top: 4.5rem;
+}
+
+/* «I regelverket» som lukket rad, som kildene. Lenkene står med luft på sidene inne i raden. */
+.veiviser-regelverk .paragraflenker {
+  padding: 0 var(--rom-4) var(--rom-2);
 }
 
 /* Fylkes- eller skoleinnhold som supplerer et steg: en egen boks med stiplet kant, merket med stedet. Den er lukket
@@ -4294,19 +4300,6 @@ p.fagkort-tittel {
 }
 
 .paragraflenker-nr {
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* Kompakt: numrene side om side under navnet på loven eller forskriften, med tittelen som tips. */
-.paragraflenker-kompakt .paragraflenker-dokument ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--rom-1) var(--rom-3);
-}
-
-.paragraflenker-kompakt .paragraflenker-dokument li {
-  padding: var(--rom-1) 0;
   font-weight: 700;
   white-space: nowrap;
 }

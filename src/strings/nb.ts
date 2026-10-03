@@ -241,6 +241,7 @@ export const nb = {
       fagkodene: 'Fagkodene',
       antallFag: '{antall} fag',
       lokalt: 'I {sted}',
+      regelverkAntall: 'I regelverket ({antall})',
       visHeleVeien: 'Vis hele veien ({antall} valg til)',
       forrigeValg: 'Tilbake til «{steg}»',
       tilToppen: 'Til toppen',
