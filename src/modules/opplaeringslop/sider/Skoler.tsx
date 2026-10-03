@@ -12,6 +12,7 @@ import type { Fagindeks } from '../../fag/skjema.ts';
 import type { SideProps } from '../../typer.ts';
 import { fullKode, kortKode, type Tilbudene } from '../data.ts';
 import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
+import { sokTilbud } from '../sok.ts';
 import { Brodsmuler, DinSkole, Lasting, Tilbudslenke, tilbudsnavn, useSkoler, useTilbudsdata } from './felles.tsx';
 
 const PER_SIDE = 30;
@@ -115,6 +116,48 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen }: { skole: Skoleoppf
   );
 }
 
+const MAKS_TILBUD = 8;
+
+/**
+ * Søk etter et tilbud, så oppslaget viser skolene som har det (eier 03.10.2026). Treffene er knapper; det valgte
+ * tilbudet står som filter over listen.
+ */
+function TilbudSok({ id, sok, settSok, treff, indeks, velg }: { id: string; sok: string; settSok: (s: string) => void; treff: string[]; indeks: Fagindeks; velg: (k: string) => void }) {
+  const { t, malform } = useTekst();
+  const aktivt = sok.trim().length >= 2;
+  return (
+    <div class="felt tilbudsok">
+      <label for={id}>{t('opplaeringslop.skoler.tilbudSok')}</label>
+      <div class="sokefelt">
+        <Ikon navn="sok" class="sokefelt-ikon" />
+        <input id={id} type="search" autoComplete="off" enterKeyHint="search" placeholder={t('opplaeringslop.skoler.tilbudPlassholder')} value={sok} onInput={(e) => settSok(e.currentTarget.value)} />
+      </div>
+      {aktivt && (
+        <>
+          <p class="liten dempet" role="status">
+            {treff.length === 0 ? t('opplaeringslop.skoler.tilbudIngen') : t('opplaeringslop.oversikt.antallTreff', { antall: formaterTall(treff.length) })}
+          </p>
+          {treff.length > 0 && (
+            <ul class="liste tilbudsok-treff">
+              {treff.slice(0, MAKS_TILBUD).map((k) => (
+                <li key={k}>
+                  <button type="button" class="listelenke tilbudsok-valg" onClick={() => velg(k)}>
+                    <span class="listelenke-tekst">
+                      <span class="listelenke-tittel">{tilbudsnavn(t, indeks, k, malform)}</span>
+                      <span class="listelenke-under">{kortKode(k)}</span>
+                    </span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+          {treff.length > MAKS_TILBUD && <p class="liten dempet">{t('opplaeringslop.tilbud.opphenting.flere', { antall: formaterTall(treff.length - MAKS_TILBUD) })}</p>}
+        </>
+      )}
+    </div>
+  );
+}
+
 export default function Skoler({ sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
@@ -123,6 +166,8 @@ export default function Skoler({ sporring }: SideProps) {
   const sokId = useId();
   const fylkeId = useId();
   const programId = useId();
+  const tilbudId = useId();
+  const [tilbudSok, settTilbudSok] = useState('');
   const [filter, settFilter] = useState<Filter>(() => {
     const f = sporring.get('fylke');
     return {
@@ -142,6 +187,8 @@ export default function Skoler({ sporring }: SideProps) {
     erstattAdresse('/opplaeringslop/skoler', filterTilAdresse(ny));
   };
   const minSkole = innstillinger.skole?.id ?? null;
+  // Tilbudssøket foreslår bare tilbud som minst én skole har.
+  const tilbudVedSkoler = useMemo(() => new Set(register?.skoler.flatMap((s) => s.tilbud) ?? []), [register]);
   const { treff, iLandet } = useMemo(() => {
     if (!register || typeof data === 'string') return { treff: [], iLandet: 0 };
     const alle = filtrerSkoler(register.skoler, { fylke: null, tilbud: filter.tilbud || null, sok: filter.sok }).filter(
@@ -170,6 +217,17 @@ export default function Skoler({ sporring }: SideProps) {
               <input id={sokId} type="search" autoComplete="off" enterKeyHint="search" value={filter.sok} onInput={(e) => sett({ sok: e.currentTarget.value })} />
             </div>
           </div>
+          <TilbudSok
+            id={tilbudId}
+            sok={tilbudSok}
+            settSok={settTilbudSok}
+            treff={tilbudSok.trim().length >= 2 ? sokTilbud(data.indeks, tilbudSok, malform).filter((k) => tilbudVedSkoler.has(k)) : []}
+            indeks={data.indeks}
+            velg={(k) => {
+              settTilbudSok('');
+              sett({ tilbud: k, skole: '' });
+            }}
+          />
           <div class="skolefilter">
             <div class="felt">
               <label for={fylkeId}>{t('opplaeringslop.skoler.fylke')}</label>

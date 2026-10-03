@@ -70,6 +70,7 @@ export const nn: Tekster = {
       laereplanverk: 'Overordna del',
       lov: 'Regelverk',
       side: 'Side',
+      skole: 'Skule',
     },
   },
   favoritter: {
@@ -322,7 +323,7 @@ export const nn: Tekster = {
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Fag- og timefordelinga: tilbod og timar.',
+      beskrivelse: 'Tilbod, fag og timar, skular og opplæringskontor.',
     },
     begreper: {
       navn: 'Omgrep',

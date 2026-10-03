@@ -19,6 +19,8 @@ const baner = {
   hake: 'M5 12.5l4.5 4.5L19 7.5',
   feil: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM9 9l6 6M15 9l-6 6',
   klokke: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7v5l3.5 2',
+  // Kontor: en mappe, for opplæringskontorene (avgjørelse 053).
+  kontor: 'M4 8h16v11H4zM9 8V5.5h6V8M4 12.5h16',
   skole: 'M3 9.5 12 5l9 4.5-9 4.5-9-4.5ZM6.5 11.5V16c1.5 1.5 3.5 2.2 5.5 2.2s4-.7 5.5-2.2v-4.5M21 9.5V15',
   dokument: 'M6 3.5h8l4 4v13H6v-17ZM14 3.5v4h4M9 12h6M9 15.5h6',
   ekstern: 'M14 4h6v6M20 4l-8.5 8.5M18 14v5.5H4.5V6H10',

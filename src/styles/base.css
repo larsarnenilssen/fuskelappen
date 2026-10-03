@@ -573,8 +573,37 @@ main {
   margin-top: var(--rom-1);
 }
 
-.lop-registre {
+/* Landingssiden for Opplæringsløp: to likestilte deler, utdanningsprogram og løp, og skoler og opplæringskontorer. */
+.lop-del {
   margin-top: var(--rom-5);
+}
+
+.lop-innganger {
+  display: grid;
+  gap: var(--rom-3);
+}
+
+@media (min-width: 40rem) {
+  .lop-innganger {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.lop-sok-skoler {
+  margin-top: var(--rom-4);
+}
+
+.tilbudsok-treff {
+  margin-top: var(--rom-2);
+}
+
+.tilbudsok-valg {
+  width: 100%;
+  border: 0;
+  background: none;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
 }
 
 .skolefilter {

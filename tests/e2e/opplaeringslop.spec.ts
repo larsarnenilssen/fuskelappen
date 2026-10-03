@@ -208,7 +208,10 @@ test.describe('opplæringsløp', () => {
     await page.goto('./#/opplaeringslop');
     await expect(page.getByRole('radio', { name: 'Min skole' })).toBeChecked();
     await expect(page.getByText('Viser tilbudene ved Åsane vidaregåande skule.')).toBeVisible();
-    await expect(page.getByRole('heading', { name: 'Utdanningsprogram ved skolen' })).toBeVisible();
+    // To likestilte deler: utdanningsprogram og løp, og skoler og opplæringskontorer (eier 03.10.2026).
+    await expect(page.getByRole('heading', { name: 'Utdanningsprogram og løp' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Skoler og opplæringskontorer' })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Skoler og tilbud.*skoler i Vestland/ })).toBeVisible();
     await expect(page.getByRole('link', { name: /Helse- og oppvekstfag.*tilbud ved skolen/ })).toBeVisible();
     // Løpet starter fra skolens tilbud. Tilbudene ved skolen har egen farge, og knappen sier hvor mange som er ved skolen.
     await page.getByRole('link', { name: /Helse- og oppvekstfag/ }).click();
@@ -279,5 +282,25 @@ test.describe('opplæringsløp', () => {
     await page.goto('./#/fag/SAK1001');
     await expect(page.locator('.fagark-ndla').getByRole('link', { name: /Samfunnskunnskap/ })).toHaveAttribute('href', /^https:\/\/ndla\.no\/f\//);
   });
-});
 
+  test('søket på Opplæringsløp finner tilbud og skoler, og skoleoppslaget kan søkes på tilbud (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop');
+    await page.getByRole('searchbox').fill('åsane');
+    await expect(page.getByRole('heading', { name: 'Skoler (1)' })).toBeVisible();
+    await page.getByRole('link', { name: /Åsane vidaregåande skule/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Skoler og tilbud');
+    await expect(page.locator('.skoleliste > li')).toHaveCount(1);
+    await page.goto('./#/opplaeringslop/skoler?fylke=alle');
+    await page.getByLabel('Finn skolene som har et tilbud').fill('helsearbeider');
+    await page.getByRole('button', { name: /Vg2 Helsearbeiderfag/ }).click();
+    await expect(page.getByText('Har Vg2 Helsearbeiderfag')).toBeVisible();
+    await expect(page.getByLabel('Finn skolene som har et tilbud')).toHaveValue('');
+  });
+
+  test('skolene kan søkes fra forsiden (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./');
+    await page.getByRole('searchbox').first().fill('åsane vidaregåande');
+    await page.getByRole('link', { name: /Åsane vidaregåande skule/ }).first().click();
+    await expect(page.locator('main h1')).toHaveText('Skoler og tilbud');
+  });
+});

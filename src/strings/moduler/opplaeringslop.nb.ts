@@ -2,7 +2,7 @@
 
 export const opplaeringslopNb = {
   tittel: 'Opplæringsløp',
-  innledning: 'Utdanningsprogrammene, tilbudene på hvert trinn og fagene og timene i hvert tilbud, etter Udirs fag- og timefordeling.',
+  innledning: 'Utdanningsprogrammene og løpene i videregående, med fag og timer i hvert tilbud etter Udirs fag- og timefordeling. Finn også skolene som har et tilbud, og opplæringskontorene i fylket.',
   skolear: 'Fag og timer for skoleåret {skolear}.',
   lasterFeil: 'Tilbudene kunne ikke lastes. Prøv igjen.',
   ikkeFunnet: 'Fant ikke tilbudet.',
@@ -28,6 +28,9 @@ export const opplaeringslopNb = {
   skoler: {
     tittel: 'Skoler og tilbud',
     innledning: 'Skolene i videregående og programområdene de tilbyr, etter utdanning.no.',
+    tilbudSok: 'Finn skolene som har et tilbud',
+    tilbudPlassholder: 'For eksempel «Vg2 realfag»',
+    tilbudIngen: 'Ingen skoler har et tilbud som passer søket.',
     sok: 'Søk etter skole eller sted',
     fylke: 'Fylke',
     alleFylker: 'Alle fylker',
@@ -63,10 +66,20 @@ export const opplaeringslopNb = {
     nettside: 'Nettsiden til kontoret',
     hentet: 'Etter NOR (Udir), hentet {dato}.',
   },
+  inngang: {
+    skoler: '{antall} skoler',
+    skolerFylke: '{antall} skoler i {fylke}',
+    skolerTekst: 'Finn skolene som har et tilbud, og tilbudene ved hver skole.',
+    kontorTekst: 'Med nettside og lenke til kontoret på utdanning.no.',
+  },
   oversikt: {
-    sok: 'Søk etter tilbud eller kode',
+    sok: 'Søk etter tilbud, kode eller skole',
+    antallTreffBegge: '{tilbud} tilbud og {skoler} skoler passer søket.',
     antallTreff: '{antall} tilbud passer søket.',
-    ingenTreff: 'Ingen tilbud passer søket.',
+    ingenTreff: 'Ingen tilbud eller skoler passer søket.',
+    program: 'Utdanningsprogram og løp',
+    skoler: 'Skoler ({antall})',
+    alleSkoler: 'Se alle {antall} skolene i oppslaget',
   },
   gruppe: {
     studieforberedende: 'Studieforberedende utdanningsprogram',

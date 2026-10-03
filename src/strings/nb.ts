@@ -70,6 +70,7 @@ export const nb = {
       laereplanverk: 'Overordnet del',
       lov: 'Regelverk',
       side: 'Side',
+      skole: 'Skole',
     },
   },
   favoritter: {
@@ -322,7 +323,7 @@ export const nb = {
     },
     opplaeringslop: {
       navn: 'Opplæringsløp',
-      beskrivelse: 'Fag- og timefordelingen: tilbud og timer.',
+      beskrivelse: 'Tilbud, fag og timer, skoler og opplæringskontorer.',
     },
     begreper: {
       navn: 'Begreper',

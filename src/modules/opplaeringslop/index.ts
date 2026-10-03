@@ -4,6 +4,8 @@
 import { lastFagindeks } from '../fag/data.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { kortKode, tilbudRute } from './data.ts';
+import { lastSkoler } from '../../data/utdanning.ts';
+import { fylker } from '../../app/Stedmerknad.tsx';
 
 export const manifest: Modulmanifest = {
   id: 'opplaeringslop',
@@ -23,7 +25,20 @@ export const manifest: Modulmanifest = {
   async sokeoppforinger() {
     // Søket trenger bare navnene, som står i fagindeksen. Tilbudene lastes først når et tilbud åpnes.
     const indeks = await lastFagindeks();
+    // Skolene kan søkes på navn, sted og fylke, og åpnes i skoleoppslaget (eier 03.10.2026).
+    const skoler = (await lastSkoler()).skoler;
+    const fylkenavn = (nr: string) => fylker.find((f) => f.nummer === nr)?.navn ?? '';
     return [
+      ...skoler.map((s) => ({
+        vekt: 0.6,
+        id: `skole:${s.nr ?? s.navn}`,
+        type: 'skole' as const,
+        tittel: { nb: s.navn, nn: s.navn },
+        tekst: { nb: [s.sted, fylkenavn(s.fylke)].filter(Boolean).join(', '), nn: [s.sted, fylkenavn(s.fylke)].filter(Boolean).join(', ') },
+        stikkord: [s.sted ?? '', fylkenavn(s.fylke)].filter(Boolean),
+        rute: s.nr ? `/opplaeringslop/skoler?fylke=alle&skole=${s.nr}` : `/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(s.navn)}`,
+        modul: 'opplaeringslop',
+      })),
       ...Object.entries(indeks.utdanningsprogram).map(([program, navn]) => ({
         id: `opplaeringslop:${program}`,
         type: 'tilbud' as const,

@@ -12,6 +12,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Opplæringsløp: Yrker.** Lærefagene viser yrkene utdanning.no knytter til faget, med lenker.
 - **Opplæringsløp: Opplæringskontorer.** Oppslag over opplæringskontorene som er godkjent i fylket, fra registeret til Udir (NOR), med søk, lenke til nettsiden og til kontoret på utdanning.no, og fylkene kontoret er godkjent i. Oppslaget viser fylket du har valgt, og kan utvides til hele landet med ett trykk. Lærefagene lenker dit.
 - **Opplæringsløp: Tilbudene ved hver skole som løp.** I oppslaget over skoler står tilbudene ved skolen per utdanningsprogram, med Vg2 under Vg1 og Vg3 under Vg2, som i Opplæringsløp.
+- **Opplæringsløp: Ny landingsside.** To likestilte deler: utdanningsprogram og løp, og skoler og opplæringskontorer, med antall i fylket ditt. Søket finner både tilbud og skoler.
+- **Skoler og tilbud: Søk på tilbud.** Finn skolene som har et tilbud, for eksempel «Vg2 helsearbeiderfag».
+- **Søk: Skolene kan søkes** fra forsiden og søkesiden.
 - **Fag: Faget på NDLA.** Fagarket lenker til faget på NDLA når NDLA har det.
 - **Opplæringsløp: Løp kildene ikke er enige om, er merket.** Står et løp i Grep, men ikke i VIGO eller på utdanning.no (eller omvendt), står det ved løpet, med en forklaring.
 
