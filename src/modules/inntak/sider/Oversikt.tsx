@@ -3,7 +3,7 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
-import { iDag } from '../../arbeidstid/kontekst.ts';
+import { iDag } from '../../../data/skolear.ts';
 import { fristerRute, hentInnhold, poengRute, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
 import { nesteFrist, tidspunkt } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';

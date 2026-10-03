@@ -87,7 +87,7 @@ Nye avhengigheter utover disse krever avgjørelsesnotat.
 │   └── sfs2213/
 │       ├── 2026-2027.yaml
 │       ├── arsrammer-2026-2027.yaml
-│       └── kobling-fagkode.yaml
+│       └── kobling-fagkode-2026-2027.yaml
 ├── data/                     genererte data, sjekkes inn
 │   ├── grep/
 │   └── status/kildestatus.json
@@ -359,7 +359,7 @@ Kreditering for NLOD-data (Udir, Lovdata) vises under «Om».
 - Grep-jobb i `kilder.yml` med validering, snapshot, endringsrapport og tilbakefall ved feil.
 - Oppslag: søk og filter på fagnavn, fagkode, utdanningsprogram, trinn, vurderingsordning, eksamensform og årstimetall. Fagside med kompetansemål, vurderingsordning, underveisvurdering og lenke til udir.no. Fag kan favorittmerkes.
 - Læreplantekster vises i målformen de er fastsatt i, merket og uoversatt.
-- Kobling fagkode → årsramme i `rules/sfs2213/kobling-fagkode.yaml`:
+- Kobling fagkode → årsramme i `rules/sfs2213/kobling-fagkode-2026-2027.yaml`:
   - **Fellesfag** kobles alltid eksplisitt per kombinasjon av fagkode, utdanningsprogram og trinn. Fellesfag som norsk har ulik årsramme på tvers av trinn og program, så prefiksregler brukes aldri for fellesfag.
   - **Programfag og felles programfag** kan kobles med regler på fagkodeprefiks + utdanningsprogram + trinn, med eksplisitte unntak.
   - En tabell kobler programnavnene i vedlegg 1 til utdanningsprogrammene i Grep.

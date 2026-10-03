@@ -2,7 +2,7 @@
 
 Laget automatisk (`npm run kobling:rapport`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet 2026-10-01.
 
-Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.
+Koblingen står i `rules/sfs2213/kobling-fagkode-<periode>.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.
 
 ## Sammendrag
 

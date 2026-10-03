@@ -21,7 +21,7 @@ import type { SideProps } from '../../typer.ts';
 import { GRUNNSKOLEFAG, GRUNNSKOLEFAG_KILDER, type Grunnskolefag } from '../beregning/grunnskolefag.ts';
 import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Karaktertype, type Poengresultat, type Poengsteg, type Vurdering } from '../beregning/poeng.ts';
 import { type Fellesfag, lopsrader, type Lopsrad, programomraderVg2, UTDANNINGSPROGRAM } from '../beregning/lop.ts';
-import { hentFagfordeling } from '../fordeling.ts';
+import { lastFagfordeling } from '../../../data/fagfordeling.ts';
 import { hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
 import type { Fagfordeling } from '../../fag/tilbud/skjema.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
@@ -135,7 +135,7 @@ export default function Poeng({ sporring }: SideProps) {
   // Fag- og timefordelingen lastes når kalkulatoren regner til Vg2 eller Vg3.
   const [fordeling, settFordeling] = useState<Fagfordeling | null>(null);
   useEffect(() => {
-    if (trinn !== 'vg1') void hentFagfordeling().then(settFordeling, () => undefined);
+    if (trinn !== 'vg1') void lastFagfordeling().then(settFordeling, () => undefined);
   }, [trinn]);
 
   // Tilleggspoengene finnes bare i fylker som har dem (Vestland), og bare til Vg1.

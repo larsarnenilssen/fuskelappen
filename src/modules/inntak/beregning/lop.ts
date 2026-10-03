@@ -16,30 +16,27 @@ type Retning = 'studieforberedende' | 'yrkesfag';
 export interface Utdanningsprogram {
   kode: string;
   retning: Retning;
-  /** Tabellen med fag- og timefordelingen i Udir-1. */
-  tabell: string;
-  /** Yrkesfag: navnet på gruppen i tabell 18 (felles programfag på Vg1) og tabellen med felles programfag på Vg2. */
-  programfagVg1?: string;
-  programfagVg2?: string;
+  /** Navnet i Grep. Tabellene i Udir-1 finnes med navnet i tittelen, ikke med tabellnummeret (avgjørelse 049). */
+  navn: string;
 }
 
-/** Utdanningsprogrammene, med tabellene i Udir-1-2026. Testene sjekker at tabellene og gruppene finnes i dataene. */
+/** Utdanningsprogrammene. Testene sjekker navnene mot Grep og at tabellene finnes i Udir-1. */
 export const UTDANNINGSPROGRAM: readonly Utdanningsprogram[] = [
-  { kode: 'ST', retning: 'studieforberedende', tabell: '4' },
-  { kode: 'ID', retning: 'studieforberedende', tabell: '7' },
-  { kode: 'MD', retning: 'studieforberedende', tabell: '9' },
-  { kode: 'KD', retning: 'studieforberedende', tabell: '13' },
-  { kode: 'ME', retning: 'studieforberedende', tabell: '15' },
-  { kode: 'BA', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Bygg- og anleggsteknikk', programfagVg2: '19a' },
-  { kode: 'EL', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Elektro og datateknologi', programfagVg2: '19b' },
-  { kode: 'FD', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Frisør, blomster, interiør og eksponeringsdesign', programfagVg2: '19c' },
-  { kode: 'HS', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Helse- og oppvekstfag', programfagVg2: '19d' },
-  { kode: 'DT', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Håndverk, design og produktutvikling', programfagVg2: '19e' },
-  { kode: 'IM', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Informasjonsteknologi og medieproduksjon', programfagVg2: '19f' },
-  { kode: 'NA', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Naturbruk', programfagVg2: '19g' },
-  { kode: 'RM', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Restaurant- og matfag', programfagVg2: '19h' },
-  { kode: 'SR', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Salg, service og reiseliv', programfagVg2: '19i' },
-  { kode: 'TP', retning: 'yrkesfag', tabell: '17a', programfagVg1: 'Teknologi og industrifag', programfagVg2: '19j' },
+  { kode: 'ST', retning: 'studieforberedende', navn: 'Studiespesialisering' },
+  { kode: 'ID', retning: 'studieforberedende', navn: 'Idrettsfag' },
+  { kode: 'MD', retning: 'studieforberedende', navn: 'Musikk, dans og drama' },
+  { kode: 'KD', retning: 'studieforberedende', navn: 'Kunst, design og arkitektur' },
+  { kode: 'ME', retning: 'studieforberedende', navn: 'Medier og kommunikasjon' },
+  { kode: 'BA', retning: 'yrkesfag', navn: 'Bygg- og anleggsteknikk' },
+  { kode: 'EL', retning: 'yrkesfag', navn: 'Elektro og datateknologi' },
+  { kode: 'FD', retning: 'yrkesfag', navn: 'Frisør, blomster, interiør og eksponeringsdesign' },
+  { kode: 'HS', retning: 'yrkesfag', navn: 'Helse- og oppvekstfag' },
+  { kode: 'DT', retning: 'yrkesfag', navn: 'Håndverk, design og produktutvikling' },
+  { kode: 'IM', retning: 'yrkesfag', navn: 'Informasjonsteknologi og medieproduksjon' },
+  { kode: 'NA', retning: 'yrkesfag', navn: 'Naturbruk' },
+  { kode: 'RM', retning: 'yrkesfag', navn: 'Restaurant- og matfag' },
+  { kode: 'SR', retning: 'yrkesfag', navn: 'Salg, service og reiseliv' },
+  { kode: 'TP', retning: 'yrkesfag', navn: 'Teknologi- og industrifag' },
 ];
 
 const grep = (lp: string): KildeRef => ({ id: 'udir-grep', punkt: `Vurderingsordning i ${lp}` });
@@ -112,30 +109,37 @@ export interface Lopsrad {
   kilde: KildeRef | null;
 }
 
-function fordeling(f: Fagfordeling, tabell: string, trinn: Trinn): Fordelingstabell | undefined {
-  return f.tabeller.find((t): t is Fordelingstabell => t.type === 'fordeling' && t.nr === tabell && t.omfang.toLowerCase() === trinn.toLowerCase());
+/** Små bokstaver uten bindestrek foran «og», så «Teknologi- og industrifag» og «Teknologi og industrifag» er like. */
+const norm = (s: string) => s.toLowerCase().replace(/-(?=\s)/g, '').replace(/\s+/g, ' ').trim();
+
+/** Fag- og timefordelingen for programmet på trinnet, funnet med tittelen på tabellen i Udir-1. */
+function fordeling(f: Fagfordeling, p: Utdanningsprogram, trinn: Trinn): Fordelingstabell | undefined {
+  const tittel = p.retning === 'studieforberedende' ? `utdanningsprogram for ${norm(p.navn)}` : 'på vg1 og vg2 i yrkesfaglige utdanningsprogram';
+  return f.tabeller.find((t): t is Fordelingstabell => t.type === 'fordeling' && norm(t.tittel).includes(tittel) && norm(t.omfang) === norm(trinn));
 }
 
-function fagliste(f: Fagfordeling, tabell: string): Fagliste | undefined {
-  return f.tabeller.find((t): t is Fagliste => t.type === 'fagliste' && t.nr === tabell);
+/** Felles programfag i yrkesfaglige program: på Vg1 én tabell for alle, på Vg2 én tabell per program. */
+function programfag(f: Fagfordeling, p: Utdanningsprogram, trinn: Trinn): Fagliste | undefined {
+  const tittel = trinn === 'Vg1' ? 'felles programfag på vg1 i yrkesfaglige utdanningsprogram' : `felles programfag på vg2 ${norm(p.navn)}`;
+  return f.tabeller.find((t): t is Fagliste => t.type === 'fagliste' && norm(t.tittel).endsWith(tittel));
 }
 
-/** Programområdene på Vg2 i et yrkesfaglig utdanningsprogram (gruppene i tabell 19), til valget av løp til Vg3. */
+/** Programområdene på Vg2 i et yrkesfaglig utdanningsprogram (gruppene i tabellen over felles programfag), til valget av løp til Vg3. */
 export function programomraderVg2(f: Fagfordeling, kode: string): string[] {
   const p = UTDANNINGSPROGRAM.find((x) => x.kode === kode);
-  const liste = p?.programfagVg2 ? fagliste(f, p.programfagVg2) : undefined;
+  const liste = p?.retning === 'yrkesfag' ? programfag(f, p, 'Vg2') : undefined;
   return [...new Set((liste?.rader ?? []).map((r) => r.gruppe))];
 }
 
 /**
  * Radene for et løp: fellesfagene med timer i den ordinære kolonnen på trinnet, med typen fra TYPER, og de felles
- * programfagene på yrkesfag (Vg1: tabell 18, Vg2: tabell 19 for programområdet). Studieforberedende programfag
+ * programfagene på yrkesfag (Vg1: gruppen for programmet, Vg2: gruppen for programområdet). Studieforberedende programfag
  * varierer fra elev til elev og legges inn på tomme rader.
  */
 export function lopsrader(f: Fagfordeling, kode: string, trinn: Trinn, programomrade: string | null = null): Lopsrad[] {
   const p = UTDANNINGSPROGRAM.find((x) => x.kode === kode);
   if (!p) return [];
-  const t = fordeling(f, p.tabell, trinn);
+  const t = fordeling(f, p, trinn);
   const rader: Lopsrad[] = [];
   for (const linje of t?.rader ?? []) {
     if (linje.timer[0] === null || linje.timer[0] === undefined) continue;
@@ -144,12 +148,11 @@ export function lopsrader(f: Fagfordeling, kode: string, trinn: Trinn, programom
     if (fag && type) rader.push({ fag, programfag: null, type: type.type, kilde: type.kilde });
   }
   if (p.retning === 'yrkesfag') {
-    const liste = trinn === 'Vg1' ? fagliste(f, '18') : p.programfagVg2 ? fagliste(f, p.programfagVg2) : undefined;
-    const gruppe = trinn === 'Vg1' ? p.programfagVg1 : programomrade;
-    const programfag = (liste?.rader ?? []).filter((r) => r.gruppe === gruppe).map((r) => r.fag);
+    const gruppe = trinn === 'Vg1' ? norm(p.navn) : programomrade === null ? null : norm(programomrade);
+    const navn = (programfag(f, p, trinn)?.rader ?? []).filter((r) => norm(r.gruppe) === gruppe).map((r) => r.fag);
     // Felles programfag i yrkesfag har standpunkt hvert år (vurderingsordningen i Grep, f.eks. HSF1006).
     const forYff = rader.findIndex((r) => r.fag === 'yff');
-    const nye = programfag.map((navn): Lopsrad => ({ fag: null, programfag: navn, type: 'standpunkt', kilde: grep('felles programfag') }));
+    const nye = navn.map((n): Lopsrad => ({ fag: null, programfag: n, type: 'standpunkt', kilde: grep('felles programfag') }));
     rader.splice(forYff < 0 ? rader.length : forYff, 0, ...nye);
   }
   return rader;

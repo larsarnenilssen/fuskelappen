@@ -9,7 +9,7 @@ import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { STUDIEFORBEREDENDE } from '../../src/modules/fag/tilbud/modell.ts';
 import { inntakNb } from '../../src/strings/moduler/inntak.nb.ts';
 import { inntakNn } from '../../src/strings/moduler/inntak.nn.ts';
-import { fordelingsfil } from '../../src/modules/inntak/fordeling.ts';
+import { fordelingsfil } from '../../src/data/skolear.ts';
 
 const mappe = join(__dirname, '../../data/udir');
 // Samme valg som appen: filen for skoleåret i dag.
@@ -117,6 +117,7 @@ describe('typen karakter i løpene stemmer med Grep', () => {
     for (const p of UTDANNINGSPROGRAM) {
       const grep = indeks.utdanningsprogram[p.kode];
       expect(grep, p.kode).toBeDefined();
+      expect(p.navn, p.kode).toBe(grep?.nb);
       expect(inntakNb.poeng.lop.program[p.kode as keyof typeof inntakNb.poeng.lop.program], p.kode).toBe(grep?.nb);
       expect(inntakNn.poeng.lop.program[p.kode as keyof typeof inntakNn.poeng.lop.program], p.kode).toBe(grep?.nn);
       expect(p.retning === 'studieforberedende', p.kode).toBe((STUDIEFORBEREDENDE as readonly string[]).includes(p.kode));

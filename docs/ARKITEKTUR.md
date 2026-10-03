@@ -15,6 +15,7 @@ src/
 │   ├── lagring/         localStorage med skjemaversjon, migrering, eksport og import
 │   ├── sok/             søkeindeks og normalisering mellom målformene
 │   └── kildestatus/     lesing av kildestatus og «utdatert»
+├── data/                lasting av data fra kildene (Grep, Udir-1, VIGO) og valg av skoleår, se data/README.md
 ├── components/          Forklaring, Tallfelt, Resultatkort, merker, kildelenker, ikoner
 ├── modules/             modulregister og én mappe per modul
 ├── strings/             nb.ts og nn.ts (alle UI-tekster)
@@ -23,6 +24,7 @@ src/
 
 - `core/` og `modules/<modul>/beregning/` er rene funksjoner med enhetstester.
 - Grensesnittet leser tekster med `t('nokkel')` og innhold med `tittel[malform]`.
+- Data fra kildene (`data/` i roten) lastes bare gjennom `src/data/`. Skriptene og Vite-pluginene leser dem med `scripts/data/les.ts` (avgjørelse 049).
 - Farger står bare i `tokens.css`. `tema.css` gir dem semantiske navn for lyst og mørkt tema. En test sjekker at ingen farger står andre steder.
 
 ## Appskall og navigasjon

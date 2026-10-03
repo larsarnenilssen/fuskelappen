@@ -11,6 +11,7 @@ import { lesArsrammer, type Arsrammerad } from '../../src/modules/arbeidstid/ber
 import { finnKobling, grepPar, koblingskandidater, lesKoblinger, ukobletGrunn, type Koblingstabeller, type Ukobletgrunn } from '../../src/modules/arbeidstid/beregning/kobling.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
+import { lesFagindeks } from '../data/les.ts';
 
 export interface Avvik {
   /** feil: tabellene motsier seg selv eller vedlegg 1 (testene feiler). advarsel: bør ses på. */
@@ -199,7 +200,7 @@ export function lagKoblingsrapport(
     '',
     `Laget automatisk (\`npm run kobling:rapport\`). Kildesjekken lager rapporten på nytt hver mandag etter at Grep er hentet. Grep hentet ${indeks.hentet.slice(0, 10)}.`,
     '',
-    'Koblingen står i `rules/sfs2213/kobling-fagkode.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.',
+    'Koblingen står i `rules/sfs2213/kobling-fagkode-<periode>.yaml`. Fellesfag kobles eksplisitt per fagkode, utdanningsprogram og trinn. Felles programfag kobles med regler på fagkodeprefiks, utdanningsprogram og trinn. Alt er et forslag som ikke er kontrollert ennå. Se avgjørelse 023.',
     '',
     '## Sammendrag',
     '',
@@ -299,7 +300,7 @@ export function lagKoblingsrapport(
 export function lesKoblingsgrunnlag(rot: string) {
   const regler = lesRegelsett(rot);
   const hent = (n: string) => finnVerdi(regler, n, { dato: new Date().toISOString().slice(0, 10) });
-  const indeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
+  const indeks = lesFagindeks(rot);
   const arstimer = somTabell(hent('sfs2213.arstimer')).map((r) => ({ nr: Number(r.nr), fagkoder: Array.isArray(r.fagkoder) ? r.fagkoder.map(String) : [] }));
   return { indeks, tabeller: lesKoblinger(hent), rader: lesArsrammer(hent('sfs2213.arsrammer')), arstimer };
 }

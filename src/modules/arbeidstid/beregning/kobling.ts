@@ -1,5 +1,5 @@
 // Kobling fra fagkode i Grep til årsramme i vedlegg 1 til SFS 2213 (fase 2, avgjørelse 023).
-// Rene funksjoner. Tabellene står i rules/sfs2213/kobling-fagkode.yaml, fagdataene i data/grep/fagindeks.json.
+// Rene funksjoner. Tabellene står i rules/sfs2213/kobling-fagkode-<periode>.yaml, fagdataene i data/grep/fagindeks.json.
 //
 // Rekkefølgen er:
 // 1. Eksplisitt: fagkoden står i kobling_fellesfag eller kobling_programfag for utdanningsprogrammet og trinnet.

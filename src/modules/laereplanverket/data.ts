@@ -1,36 +1,14 @@
 // Dataene til Læreplanverket (pakke 6, avgjørelse 037): overordnet del fra udir.no og grunnleggende ferdigheter og
 // tverrfaglige temaer fra Grep. Begge er egne JS-biter som lastes første gang de trengs, og som følger med når
 // appen installeres. Rene funksjoner for oppslag og søk står her, så de kan testes.
-import { alleDeler, type Blokk, type Del, type OverordnetDel } from './typer.ts';
+import type { Laereplanverket } from '../../data/grep.ts';
+import { alleDeler, type Blokk, type Del } from './typer.ts';
 
-export interface Element {
-  kode: string;
-  navn: { nb: string; nn: string };
-}
-
-export interface Laereplanverket {
-  ferdigheter: Element[];
-  temaer: Element[];
-}
-
-let overordnet: Promise<OverordnetDel> | null = null;
-let lv: Promise<Laereplanverket> | null = null;
-
-export function lastOverordnetDel(): Promise<OverordnetDel> {
-  overordnet ??= import('../../../data/udir/overordnet-del.json').then((m) => m.default as unknown as OverordnetDel);
-  overordnet.catch(() => {
-    overordnet = null;
-  });
-  return overordnet;
-}
-
-export function lastLaereplanverket(): Promise<Laereplanverket> {
-  lv ??= import('../../../data/grep/laereplanverket.json').then((m) => m.default as unknown as Laereplanverket);
-  lv.catch(() => {
-    lv = null;
-  });
-  return lv;
-}
+// Lastingen står i datalaget (avgjørelse 049).
+export { lastLaereplanverket } from '../../data/grep.ts';
+export { lastOverordnetDel } from '../../data/udir.ts';
+export type { Laereplanverket } from '../../data/grep.ts';
+export type Element = Laereplanverket['ferdigheter'][number];
 
 /** Adressen til en del i appen: kapittelnummeret når delen har det, ellers id-en fra udir.no. */
 export const delRute = (d: Pick<Del, 'nr' | 'id'>) => `/laereplanverket/overordnet-del/${d.nr ?? d.id}`;

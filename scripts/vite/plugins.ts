@@ -3,12 +3,10 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Plugin } from 'vite';
 import { Innholdsfeil, lesFil } from '../innhold/last.ts';
-import { beregnFagroller, byggStruktur, byggTilbud, velgFordeling } from '../../src/modules/fag/tilbud/modell.ts';
-import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
-import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
-import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
+import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
+import { lesFagindeks, lesFagrelasjoner, lesFordeling } from '../data/les.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -112,19 +110,6 @@ export function fagrollerPlugin(rot: string): Plugin {
   };
 }
 
-const lesFagindeks = (rot: string) => JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
-
-/** Fag- og timefordelingen (Udir-1) som gjelder når appen bygges. */
-function lesFordeling(rot: string): Fagfordeling | null {
-  const mappe = join(rot, 'data/udir');
-  const fordelinger = existsSync(mappe)
-    ? readdirSync(mappe)
-        .filter((f) => /^fagfordeling-\d{4}-\d{4}\.json$/.test(f))
-        .map((f) => JSON.parse(readFileSync(join(mappe, f), 'utf8')) as Fagfordeling)
-    : [];
-  return velgFordeling(fordelinger, new Date().toISOString().slice(0, 10));
-}
-
 /**
  * Dataene til fagsøket i kalkulatorene (programområder, fagkoder og årstimer), laget fra fagindeksen når appen
  * bygges, så fagene bare står ett sted (avgjørelse 049). Arbeidsplan og de andre kalkulatorene laster dem med en gang.
@@ -159,8 +144,7 @@ export function tilbudPlugin(rot: string): Plugin {
       if (lastId !== '\0' + id) return null;
       const indeks = lesFagindeks(rot);
       const fordeling = lesFordeling(rot);
-      const relasjoner = join(rot, 'data/vigo/fagrelasjoner.json');
-      const fagBygger = existsSync(relasjoner) ? (JSON.parse(readFileSync(relasjoner, 'utf8')) as Fagrelasjoner).byggerPaa : {};
+      const fagBygger = lesFagrelasjoner(rot)?.byggerPaa ?? {};
       const tilbud: Record<string, unknown> = {};
       for (const kode of Object.keys(indeks.programomrader).sort()) {
         // Programområdet står i fagindeksen, som appen har fra før.
