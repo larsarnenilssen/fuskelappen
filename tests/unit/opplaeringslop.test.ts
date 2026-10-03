@@ -54,6 +54,14 @@ describe('fag i tilbud og grupper (eier 02.10.2026)', () => {
     expect(data.tilbud['PBPBY3----']?.deler.find((d) => d.type === 'fag' && d.linje === 'Matematikk')).not.toHaveProperty('erstatning');
   });
 
+  it('på vg1 yrkesfag står 1P og 1T som merknad, ikke som valg (Udir-1 punkt 3.5, eier 03.10.2026)', () => {
+    const mat = data.tilbud['HSHSF1----']?.deler.find((d) => d.type === 'fag' && d.linje === 'Matematikk');
+    expect(mat).toMatchObject({ timer: 84, koder: ['MAT1117', 'MAT1137'], iStedet: ['MAT1019', 'MAT1021'] });
+    for (const kode of ['STUSP1----', 'PBPBY3----']) {
+      expect(data.tilbud[kode]?.deler.find((d) => d.type === 'fag' && d.linje === 'Matematikk'), kode).not.toHaveProperty('iStedet');
+    }
+  });
+
   it('grupperer programfag til valg etter programområdene i Grep, uten egen gruppe når alle hører til samme', () => {
     const valgfritt = ssa2.deler.find((d) => d.kategori === 'valgfritt');
     const kandidater = valgfritt?.type === 'plass' ? valgfritt.kandidater : [];

@@ -131,6 +131,11 @@ export type Tilbudsdel =
        * fellesfaget, så eleven velger ett av dem.
        */
       erstatning?: string[];
+      /**
+       * Fellesfag eleven kan velge i stedet, med et annet timetall (FELLESFAGMERKNAD). Står som merknad, ikke som
+       * valg, fordi det er sjelden aktuelt (eier 03.10.2026).
+       */
+      iStedet?: string[];
     }
   | {
       type: 'plass';
@@ -328,6 +333,25 @@ const FELLESFAGVALG: readonly { linje: RegExp; gjelder: (po: Programomrade) => b
   { linje: /^matematikk/i, gjelder: (po) => programgruppe(po.program) === 'studieforberedende' && po.trinn === 'Vg2', fag: /^Matematikk (S1|R1)$/ },
 ];
 
+/**
+ * Fellesfag eleven kan velge i stedet for fellesfaget på linjen, med et annet timetall. De står som merknad, ikke som
+ * valg, fordi det er sjelden aktuelt (eier 03.10.2026): elever på yrkesfag kan velge det studieforberedende tilbudet
+ * i matematikk, 1P eller 1T, i stedet for det yrkesfaglige (Udir-1 punkt 3.5).
+ */
+const FELLESFAGMERKNAD: readonly { linje: RegExp; gjelder: (po: Programomrade) => boolean; fag: RegExp }[] = [
+  { linje: /^matematikk/i, gjelder: (po) => programgruppe(po.program) === 'yrkesfaglig' && po.trinn === 'Vg1' && po.sted === 'skole', fag: /^Matematikk (1P|1T)$/ },
+];
+
+function fellesfagIStedet(linje: string, kode: string, indeks: Fagindeks): string[] {
+  const po = indeks.programomrader[kode];
+  const regel = po ? FELLESFAGMERKNAD.find((r) => r.linje.test(linje) && r.gjelder(po)) : undefined;
+  if (!regel) return [];
+  return Object.entries(indeks.fag)
+    .filter(([, f]) => f.type === 'fellesfag' && f.timer !== null && regel.fag.test(f.navn.nb))
+    .map(([k]) => k)
+    .sort();
+}
+
 /** Programfagene som kan erstatte fellesfaget på linjen, og vurderingskodene deres. */
 function fellesfagvalg(linje: string, kode: string, indeks: Fagindeks): { koder: string[]; vurdering: string[] } {
   const po = indeks.programomrader[kode];
@@ -389,7 +413,8 @@ function fellesfagdel(linje: string, timer: number, kode: string, indeks: Fagind
     lantFra: null,
     avvik,
   };
-  return valg.koder.length > 0 ? { ...del, erstatning: valg.koder } : del;
+  const iStedet = koder.length > 0 ? fellesfagIStedet(linje, kode, indeks) : [];
+  return { ...del, ...(valg.koder.length > 0 ? { erstatning: valg.koder } : {}), ...(iStedet.length > 0 ? { iStedet } : {}) };
 }
 
 const timerFor = (koder: readonly string[], indeks: Fagindeks) => koder.reduce((s, k) => s + (indeks.fag[k]?.timer ?? 0), 0);

@@ -101,21 +101,38 @@ function Fellesfag({ del, indeks, laereplaner }: { del: Fagdel; indeks: Fagindek
   const erstatning = del.erstatning ?? [];
   const fellesfag = del.koder.filter((k) => !erstatning.includes(k));
   const timerErstatning = [...new Set(erstatning.map((k) => indeks.fag[k]?.timer).filter((x): x is number => typeof x === 'number'))];
+  // Fellesfag eleven kan velge i stedet, med et annet timetall (f.eks. 1P eller 1T på yrkesfag, Udir-1 punkt 3.5).
+  const iStedet = del.iStedet ?? [];
+  const iStedetNavn = iStedet.map((k) => indeks.fag[k]?.navn[malform] ?? k);
+  const iStedetFelles = fellesStart(iStedetNavn);
+  const timerIStedet = [...new Set(iStedet.map((k) => indeks.fag[k]?.timer).filter((x): x is number => typeof x === 'number'))];
+  const iStedetMerknad =
+    iStedet.length > 0 && timerIStedet.length === 1 ? (
+      <span class="fagrad-merknad">
+        {t('opplaeringslop.tilbud.iStedet', {
+          fag: iStedetNavn.map((n) => n.slice(iStedetFelles.length).trim() || n).join(` ${t('opplaeringslop.tilbud.eller')} `),
+          timer: formaterTall(timerIStedet[0] ?? 0),
+          linjetimer: formaterTall(del.timer),
+        })}
+      </span>
+    ) : null;
   return (
     <Fagrad
       navn={kortLinje(del.linje, malform)}
       timer={del.timer}
       href={en ? `#/fag/${en}` : null}
       under={
-        del.koder.length > 1 && (
+        (del.koder.length > 1 || iStedetMerknad) && (
           <>
-            {t('opplaeringslop.tilbud.velgEnKort')}{' '}
-            {del.koder.map((k, i) => (
-              <span key={k}>
-                {i > 0 && ' · '}
-                <a href={`#/fag/${k}`}>{kortnavn(k)}</a>
-              </span>
-            ))}
+            {del.koder.length > 1 && t('opplaeringslop.tilbud.velgEnKort')}{' '}
+            {del.koder.length > 1 &&
+              del.koder.map((k, i) => (
+                <span key={k}>
+                  {i > 0 && ' · '}
+                  <a href={`#/fag/${k}`}>{kortnavn(k)}</a>
+                </span>
+              ))}
+            {iStedetMerknad}
             {erstatning.length > 0 && timerErstatning.length === 1 && (
               <span class="fagrad-merknad">
                 {' '}
@@ -360,16 +377,21 @@ function Fagrubrikker({ kode, tb, indeks, laereplaner }: { kode: string; tb: Til
 }
 
 /**
- * Fagene med fast fagkode (fellesfag og felles programfag) til en ny, ulagret arbeidsplan, hvert fag som egen gruppe
- * med årstimene. Velger eleven ett av noen få fag (f.eks. 1P eller 1T, eller 2P, R1 eller S1), legges bare det første
- * inn (eier 03.10.2026). Fremmedspråk og andre fag eleven velger, må brukeren legge inn selv (eier 02.10.2026).
+ * Fagene i fellesfagene og felles programfag til en ny, ulagret arbeidsplan, hvert fag som egen gruppe med årstimene.
+ * Velger eleven mellom fag (f.eks. 1P eller 1T, 2P, R1 eller S1, et fremmedspråk, eller dekk eller maskin), legges
+ * bare det første inn, på alle trinn (eier 03.10.2026). Programfag til fordypning og valg, og fag over flere trinn,
+ * legger brukeren inn selv (eier 02.10.2026).
  */
 function faglinjerTilArbeidsplan(tb: Tilbudsdata, kode: string, indeks: Fagindeks, koblingsdata: NonNullable<ReturnType<typeof useKoblingsdata>>) {
   const po = indeks.programomrader[kode];
   const faste = tb.deler.flatMap((d) => {
     if (d.type !== 'fag') return [];
-    if (d.kategori === 'fellesfag') return d.koder.length <= FAA && d.koder[0] ? [{ kode: d.koder[0], timer: d.koder.length === 1 ? d.timer : (indeks.fag[d.koder[0]]?.timer ?? d.timer) }] : [];
-    return d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
+    if (d.kategori === 'fellesfag') return d.koder[0] ? [{ kode: d.koder[0], timer: d.koder.length === 1 ? d.timer : (indeks.fag[d.koder[0]]?.timer ?? d.timer) }] : [];
+    const faste = d.koder.map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null }));
+    // Valg mellom fag i samme læreplan (f.eks. dekk eller maskin): de første, så mange som skal velges.
+    const u = d.utvalg;
+    const valgte = u && u.grunn === 'valg' && u.timer > 0 ? u.koder.slice(0, u.antall ?? 1).map((k) => ({ kode: k, timer: indeks.fag[k]?.timer ?? null })) : [];
+    return [...faste, ...valgte];
   });
   return faste.flatMap(({ kode: k, timer }) => {
     const fag = indeks.fag[k];

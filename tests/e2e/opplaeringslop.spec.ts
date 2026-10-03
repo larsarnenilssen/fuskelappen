@@ -67,6 +67,21 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
     await expect(page.locator('.fagkort', { hasText: 'Matematikk 2P' })).toHaveCount(1);
     await expect(page.locator('.fagkort', { hasText: /Matematikk (R1|S1)/ })).toHaveCount(0);
+    // Fremmedspråk: det første språket i listen følger med, ikke alle.
+    await expect(page.locator('.fagkort', { hasText: /FSP\d+/ })).toHaveCount(1);
+  });
+
+  test('på alle trinn følger ett av valgene med til Arbeidsplan: 1P eller 1T, og dekk eller maskin (eier 03.10.2026)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/ST/STUSP1');
+    await page.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
+    await expect(page.locator('.fagkort', { hasText: /MAT10(19|21)/ })).toHaveCount(1);
+    // Vg1 yrkesfag: 1P eller 1T står som merknad med timetallet.
+    await page.goto('./#/opplaeringslop/HS/HSHSF1');
+    await expect(page.locator('[data-rubrikk$="-fellesfag"]')).toContainText('Eleven kan i stedet velge det studieforberedende tilbudet, 1P eller 1T. Det har 140 timer i stedet for 84');
+    await page.goto('./#/opplaeringslop/TP/TPMAR2');
+    await page.getByRole('link', { name: 'Regn ut i Arbeidsplan' }).click();
+    await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
+    await expect(page.locator('.fagkort', { hasText: /Dekk|Maskin/ })).toHaveCount(1);
   });
 
   test('Vilbli-lenken bruker fylket fra innstillingene, og påbygging står under programmet brukeren kom fra', async ({ page }) => {

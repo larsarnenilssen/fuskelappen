@@ -104,6 +104,8 @@ export const opplaeringslopNb = {
       alternativ: 'Alternativ for særskilte grupper',
     },
     erstatning: '{fag} er programfag på {timer} timer. Velger eleven ett av dem i stedet for {fellesfag}, må eleven ta et ekstra programfag i tillegg (Udir-1, punkt 3.3.1.4).',
+    iStedet: 'Eleven kan i stedet velge det studieforberedende tilbudet, {fag}. Det har {timer} timer i stedet for {linjetimer} (Udir-1, punkt 3.5).',
+    eller: 'eller',
     velgEnKort: 'velg én:',
     velgAntall: 'Velg {antall} fag',
     blantFag: 'blant {antall} fag',
@@ -114,7 +116,7 @@ export const opplaeringslopNb = {
     andreFag: 'Andre fag',
     rolleValg: '{kategori}, ett av flere valg',
     tilArbeidsplan: 'Regn ut i Arbeidsplan',
-    tilArbeidsplanHjelp: 'Fellesfag og felles programfag med fast fagkode blir lagt inn med årstimene, hvert fag som egen gruppe. Der eleven velger ett av noen få fag (f.eks. 1P eller 1T), blir det første lagt inn. Fjern fagene du ikke underviser i, og legg inn eller bytt til fag eleven velger, selv.',
+    tilArbeidsplanHjelp: 'Fellesfag og felles programfag blir lagt inn med årstimene, hvert fag som egen gruppe. Der eleven velger mellom fag (f.eks. 1P eller 1T, et fremmedspråk, eller dekk eller maskin), blir det første lagt inn. Fjern fagene du ikke underviser i, bytt fag der det trengs, og legg inn programfag til fordypning og valg selv.',
     avvik: {
       fellesfagTimer: 'Rundskrivet har {rundskriv} timer i {linje}. Fagkodene i Grep har {grep} timer.',
       ingenFagkode: 'Grep har ingen fagkode for {linje} i dette tilbudet.',

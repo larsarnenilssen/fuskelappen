@@ -18,7 +18,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Rettet
 
 - **Matematikk på Vg2 studieforberedende:** Eleven velger 2P, R1 eller S1 (Udir-1, punkt 3.3.1.4). Tilbudene viste bare 2P. Nå står de tre som «velg én», med en merknad om at R1 og S1 er programfag og krever et ekstra programfag.
-- **Regn ut i Arbeidsplan:** Fellesfag der eleven velger ett av noen få fag (f.eks. 1P eller 1T), ble ikke tatt med. Nå legges det første inn.
+- **Matematikk på Vg1 yrkesfag:** En merknad sier at eleven kan velge det studieforberedende tilbudet (1P eller 1T) i stedet, med et annet timetall (Udir-1, punkt 3.5).
+- **Regn ut i Arbeidsplan:** Fag der eleven velger mellom flere (f.eks. 1P eller 1T, 2P, R1 eller S1, et fremmedspråk, eller dekk eller maskin), ble ikke tatt med. Nå legges det første valget inn, på alle trinn.
 
 ## [0.29.0] – 2026-10-03
 
