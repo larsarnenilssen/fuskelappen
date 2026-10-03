@@ -163,17 +163,30 @@ export const veiviserElement = z
   })
   .strict();
 
+/**
+ * En frist (fase 5, avgjørelse 046). `regel` er enten en fast dato hvert år (`arlig`), eller en måned når fristen ikke
+ * har en fast dato, f.eks. svar på søknaden i juli (`maned`), eller hele året (`lopende`), f.eks. søknad fra voksne. `naar` er tidspunktet med ord når det ikke er en dato
+ * («Etter sensur», «Minst fire uker før fristen»). `grupper` er hvem fristen gjelder, med id-er modulen bestemmer
+ * (f.eks. `ungdom`, `voksne`, `fortrinn` i Inntak), og brukes til filter.
+ */
 export const fristElement = z
   .object({
     ...felles,
     type: z.literal('frist'),
     dato: isoDato.optional(),
     regel: z
-      .object({ type: z.literal('arlig'), dag: z.number().int().min(1).max(31), maned: z.number().int().min(1).max(12) })
-      .strict()
+      .discriminatedUnion('type', [
+        z.object({ type: z.literal('arlig'), dag: z.number().int().min(1).max(31), maned: z.number().int().min(1).max(12) }).strict(),
+        z.object({ type: z.literal('maned'), maned: z.number().int().min(1).max(12) }).strict(),
+        z.object({ type: z.literal('lopende') }).strict(),
+      ])
       .optional(),
+    naar: flerspraak.optional(),
     modul: z.string().min(1),
     malgruppe: z.array(malgruppe).min(1),
+    grupper: z.array(idSkjema).default([]),
+    /** Paragrafer i Regelverk, som i stegene i veiviserne. */
+    paragrafer: z.array(paragrafRef).default([]),
   })
   .strict()
   .refine((f) => (f.dato === undefined) !== (f.regel === undefined), {
