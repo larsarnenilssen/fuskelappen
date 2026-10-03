@@ -4183,6 +4183,140 @@ p.fagkort-tittel {
   font-size: var(--str-s);
 }
 
+/* Flere steg på samme side, hvert i sin ramme: steg uten valg står over spørsmålet eller utfallet de fører til
+   (eier 03.10.2026). */
+.veiviser-side {
+  display: grid;
+  gap: var(--rom-3);
+  scroll-margin-top: 4.5rem;
+}
+
+/* Steg uten valg over spørsmålet er lukket på mobil: tittelen, en smakebit, fristen og ansvaret, og en knapp som
+   åpner hele steget (eier 03.10.2026). */
+.veiviser-smakebit {
+  margin: 0 0 var(--rom-2);
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-kortfakta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.veiviser-kortfakta li,
+.veiviser-kortfakta-lokalt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.veiviser-kortfakta-lokalt {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.veiviser-veksle {
+  width: 100%;
+}
+
+/* «Til spørsmålet» over en side med flere steg. */
+.veiviser-til-sporsmal {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
+/* «I regelverket» som lukket rad, som kildene. Lenkene står med luft på sidene inne i raden. */
+.veiviser-regelverk .paragraflenker {
+  padding: 0 var(--rom-4) var(--rom-2);
+}
+
+/* Fylkes- eller skoleinnhold som supplerer et steg: en egen boks med stiplet kant, merket med stedet. Den er lukket
+   til brukeren åpner den, så siden ikke blir lang (eier 03.10.2026). */
+.veiviser-tillegg {
+  margin: var(--rom-3) 0 var(--rom-2);
+  border: var(--strek) dashed var(--farge-merke);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+}
+
+.veiviser-tillegg-topp {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0 var(--rom-2);
+  padding: var(--rom-2) var(--rom-3);
+  cursor: pointer;
+  list-style: none;
+}
+
+.veiviser-tillegg-topp::-webkit-details-marker {
+  display: none;
+}
+
+.veiviser-tillegg-topp .forklaring-pil {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  color: var(--farge-lenke);
+}
+
+.veiviser-tillegg[open] .forklaring-pil {
+  transform: rotate(180deg);
+}
+
+.veiviser-tillegg-sted {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.veiviser-tillegg-tittel {
+  font-size: var(--str-m);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--farge-lenke);
+}
+
+.veiviser-tillegg-innhold {
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+.veiviser-tillegg .veiviser-fakta-rad {
+  background: var(--farge-flate-2);
+}
+
+/* «Vis hele veien», «Tilbake til …» og «Til toppen»: lave lenker, så brukeren slipper å rulle langt. */
+.veiviser-vei-vis {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+}
+
+.veiviser-forrige {
+  margin: var(--rom-3) 0 0;
+  font-size: var(--str-s);
+}
+
+.veiviser-forrige a,
+.veiviser-til-toppen .lenkeknapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  padding: var(--rom-1) 0;
+}
+
+.veiviser-til-toppen {
+  margin: var(--rom-4) 0 0;
+  text-align: right;
+  font-size: var(--str-s);
+}
+
 .paragraflenker .liten-overskrift {
   margin: var(--rom-3) 0 var(--rom-1);
   font-size: var(--str-s);
@@ -4269,6 +4403,21 @@ p.fagkort-tittel {
   padding: var(--rom-3) 0 var(--rom-1);
 }
 
+.laereplanboks-gruppe {
+  margin: var(--rom-4) 0 0;
+  padding-bottom: var(--rom-1);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  font-size: var(--str-xs);
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--farge-tekst-dempet);
+}
+
+.laereplanboks-gruppe:first-child {
+  margin-top: 0;
+}
+
 .laereplanboks-liste > li + li {
   border-top: var(--strek) solid var(--farge-linje);
 }
@@ -4339,6 +4488,8 @@ p.fagkort-tittel {
   line-height: 1.35;
 }
 
+/* Svarene står under hverandre på alle skjermer, så knappene får samme bredde og ikke står side om side med ulik
+   høyde (eier 03.10.2026). */
 .veiviser-svarliste {
   display: grid;
   gap: var(--rom-2);
@@ -4347,20 +4498,35 @@ p.fagkort-tittel {
   list-style: none;
 }
 
+/* Overskrift over svar som hører sammen, f.eks. «Fortrinnsrett». */
+.veiviser-svargruppe + .veiviser-svargruppe,
+.veiviser-svargruppe + div,
+div + .veiviser-svargruppe {
+  margin-top: var(--rom-3);
+}
+
+.veiviser-svargruppe-tittel {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
 .veiviser-svarknapp {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--rom-3);
-  min-height: 3.25rem;
-  padding: var(--rom-3) var(--rom-3) var(--rom-3) var(--rom-4);
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3) var(--rom-2) var(--rom-4);
   border: 2px solid var(--farge-merke);
   border-radius: var(--radius-m);
   background: var(--farge-flate);
   color: var(--farge-lenke);
-  font-size: var(--str-l);
-  font-weight: 700;
-  line-height: 1.3;
+  /* Mindre tekst, så knapper med mye tekst ikke blir så høye (eier 03.10.2026). */
+  font-size: var(--str-m);
+  font-weight: 600;
+  line-height: 1.35;
   text-decoration: none;
   box-shadow: var(--skygge-knapp);
   transition: background var(--varighet);
@@ -4372,24 +4538,6 @@ p.fagkort-tittel {
 
 .veiviser-svarknapp .ikon {
   flex: none;
-}
-
-/* Steg uten spørsmål: én fylt knapp til neste steg. */
-.veiviser-neste {
-  background: var(--farge-merke);
-  color: var(--farge-merke-tekst);
-}
-
-.veiviser-neste:hover {
-  background: var(--farge-merke);
-  filter: brightness(1.1);
-}
-
-.veiviser-neste-etikett {
-  display: block;
-  font-size: var(--str-xs);
-  font-weight: 600;
-  opacity: 0.9;
 }
 
 .veiviser-oppsummering .knapp {
@@ -4794,9 +4942,6 @@ p.fagkort-tittel {
     padding-inline: var(--rom-5);
   }
 
-  .veiviser-svarliste {
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  }
 }
 
 /* Testversjonen under test/ (avgjørelse 045): en tydelig linje under topplinjen. */

@@ -5,6 +5,7 @@ import { fagNn } from './moduler/fag.nn.ts';
 import { laereplanverketNn } from './moduler/laereplanverket.nn.ts';
 import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
+import { inntakNn } from './moduler/inntak.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
 
 export const nn: Tekster = {
@@ -224,7 +225,6 @@ export const nn: Tekster = {
       frist: 'Frist',
       regelverk: 'I regelverket',
       merOm: 'Meir om dette steget',
-      neste: 'Neste',
       svar: 'Svar',
       dittSvar: 'Svar: {svar}',
       startPaaNytt: 'Start på nytt',
@@ -241,6 +241,19 @@ export const nn: Tekster = {
       vurdering: 'Vurdering: {uttrykk}',
       fagkodene: 'Fagkodane',
       antallFag: '{antall} fag',
+      lokalt: 'I {sted}',
+      lesHele: 'Les heile steget',
+      visMindre: 'Vis mindre',
+      tilSporsmalet: 'Til spørsmålet',
+      tilSlutten: 'Til der vegen endar',
+      harLokalt: 'Har lokale reglar for {sted}',
+      regelverkAntall: 'I regelverket ({antall})',
+      visHeleVeien: 'Vis heile vegen ({antall} val til)',
+      forrigeValg: 'Tilbake til «{steg}»',
+      tilToppen: 'Til toppen',
+      faseliste: 'Fasane: {faser}',
+      antallFaser: '{antall} fasar',
+      malgruppe: { elever: 'For elevar', voksne: 'For vaksne' },
     },
     forklaring: {
       vis: 'Vis forklaring',
@@ -292,6 +305,10 @@ export const nn: Tekster = {
     offlineKlar: 'Appen kan no brukast utan nett.',
   },
   moduler: {
+    inntak: {
+      navn: 'Inntak',
+      beskrivelse: 'Søkjarkategoriar, rettar og fristar ved inntak.',
+    },
     tilrettelegging: {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
@@ -327,6 +344,7 @@ export const nn: Tekster = {
   laereplanverket: laereplanverketNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
+  inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',
     filtrer: 'Filtrer omgrep',

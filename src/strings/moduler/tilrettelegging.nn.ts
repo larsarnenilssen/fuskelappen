@@ -5,8 +5,6 @@ export const tilretteleggingNn: typeof tilretteleggingNb = {
   tittel: 'Tilrettelegging',
   innledning: 'Vegvisarar for tilpassa opplæring, individuell tilrettelegging og særskild språkopplæring i vidaregåande opplæring. Kvart steg viser kven som har ansvaret, kva som skal dokumenterast, fristane og paragrafane i regelverket.',
   veivisere: 'Vegvisarar',
-  faser: 'Fasane: {faser}',
-  antallFaser: '{antall} fasar',
   antallSteg: '{antall} steg',
   figur: {
     tittel: 'Kven får kva',

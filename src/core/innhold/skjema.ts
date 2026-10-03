@@ -109,17 +109,32 @@ export const stegElement = z
     paragrafer: z.array(paragrafRef).default([]),
     /**
      * Læreplaner fra Grep som steget viser i en egen boks med fagkodene, og om læreplanen er kompetansegivende
-     * (eier 03.10.2026). `merknad` er en kort setning med egne ord om hva læreplanen brukes til.
+     * (eier 03.10.2026). `merknad` er en kort setning med egne ord om hva læreplanen brukes til. Uten
+     * `kompetansegivende` får læreplanen ingen av merkene (eier 03.10.2026 for GNS02-01). `malgruppe: voksne` gir en
+     * egen gruppe «For voksne» nederst i boksen (eier 03.10.2026).
      */
     laereplaner: z
-      .array(z.object({ kode: laereplanKode, kompetansegivende: z.boolean(), merknad: flerspraak }).strict())
+      .array(
+        z
+          .object({
+            kode: laereplanKode,
+            kompetansegivende: z.boolean().optional(),
+            malgruppe: z.enum(['elever', 'voksne']).default('elever'),
+            merknad: flerspraak,
+          })
+          .strict(),
+      )
       .default([]),
     neste: idSkjema.optional(),
     sporsmal: z
       .object({
         tekst: flerspraak,
+        /**
+         * Svarene. `gruppe` gir en overskrift over svar som hører sammen, f.eks. «Fortrinnsrett» (eier 03.10.2026).
+         * Svar etter hverandre med samme gruppe står under samme overskrift.
+         */
         svar: z
-          .array(z.object({ id: idSkjema, tekst: flerspraak, neste: idSkjema }).strict())
+          .array(z.object({ id: idSkjema, tekst: flerspraak, neste: idSkjema, gruppe: flerspraak.optional() }).strict())
           .min(2, 'Et spørsmål må ha minst to svar'),
       })
       .strict()

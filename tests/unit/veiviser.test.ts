@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fasestatus, finnFeil, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Stegnode } from '../../src/core/veiviser/veiviser.ts';
+import { fasestatus, finnFeil, finnSide, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Stegnode } from '../../src/core/veiviser/veiviser.ts';
 
 // Et lite eksempel med et spørsmål som kan føre tilbake (løkke via svar), og to utfall.
 const steg: Stegnode[] = [
@@ -58,6 +58,32 @@ describe('veiviser: veien', () => {
     expect(finnVei(kart, lesSvar(t.svar ?? null), t.steg)).toEqual(vei);
     expect(lesSvar('a..b')).toEqual(['a', 'b']);
     expect(lesSvar(null)).toEqual([]);
+  });
+});
+
+describe('veiviser: sider', () => {
+  it('samler steg uten spørsmål med spørsmålet etter på samme side', () => {
+    const side = finnSide(kart, finnVei(kart, []));
+    expect(side.steg).toEqual(['a', 'b']);
+    expect(side.forSiden).toEqual([]);
+    expect(side.slutt).toMatchObject({ gjeldende: 'b', bak: [{ steg: 'a' }] });
+  });
+
+  it('gir samme side uansett hvilket steg på siden adressen peker på', () => {
+    const fraC = finnSide(kart, finnVei(kart, ['ja'], 'c'));
+    const fraD = finnSide(kart, finnVei(kart, ['ja'], 'd'));
+    expect(fraC.steg).toEqual(['c', 'd']);
+    expect(fraD).toEqual(fraC);
+    expect(fraC.forSiden).toEqual([{ steg: 'a' }, { steg: 'b', svar: 'ja' }]);
+  });
+
+  it('et utfall rett etter et svar er en side alene', () => {
+    expect(finnSide(kart, finnVei(kart, ['nei'], 'ok')).steg).toEqual(['ok']);
+  });
+
+  it('svaret på siden går videre fra det siste steget på siden', () => {
+    const side = finnSide(kart, finnVei(kart, ['ja'], 'c'));
+    expect(videre(kart, side.slutt, 'ikke')).toEqual({ steg: 'slutt', svar: 'ja.ikke' });
   });
 });
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
-import { Ikon } from '../../../components/Ikon.tsx';
+import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentInnhold, veiviserRute, type Veiviserinnhold } from '../innhold.ts';
 
@@ -45,7 +45,7 @@ function Figur() {
 }
 
 export default function Oversikt() {
-  const { t, malform } = useTekst();
+  const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const [innhold, settInnhold] = useState<Veiviserinnhold | null>(null);
   useEffect(() => {
@@ -63,37 +63,7 @@ export default function Oversikt() {
         <section>
           <h2 class="liten-overskrift">{t('tilrettelegging.veivisere')}</h2>
           {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
-          <ul class="veiviser-innganger">
-            {velgSynlige(innhold.veivisere, sted)
-              .sort((x, y) => x.rekkefolge - y.rekkefolge)
-              .map((v) => (
-              <li key={v.id}>
-                <a class="veiviser-inngang" href={`#${veiviserRute(v.id)}`} data-veiviserfarge={v.farge}>
-                  <span class="veiviser-inngang-topp">
-                    <span class="veiviser-inngang-tittel">{v.tittel[malform]}</span>
-                    <Ikon navn="hoyre" />
-                  </span>
-                  {v.faser.length > 0 && (
-                    <>
-                      <span class="skjult-visuelt">. {t('tilrettelegging.faser', { faser: v.faser.map((f) => f.tittel[malform]).join(', ') })}</span>
-                      <span class="veiviser-inngang-faser" aria-hidden="true">
-                        {v.faser.map((f) => (
-                          <span key={f.id} class="veiviser-inngang-fase">
-                            <span class="veiviser-inngang-strek" />
-                            <span class="veiviser-inngang-fasenavn">{f.tittel[malform]}</span>
-                          </span>
-                        ))}
-                      </span>
-                      {/* På svært smal skjerm er det ikke plass til navnene under stolpen. Da står antallet her. */}
-                      <span class="veiviser-inngang-antall" aria-hidden="true">
-                        {t('tilrettelegging.antallFaser', { antall: String(v.faser.length) })}
-                      </span>
-                    </>
-                  )}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
         </section>
       )}
     </div>

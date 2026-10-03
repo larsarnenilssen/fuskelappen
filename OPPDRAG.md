@@ -497,6 +497,11 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Poengberegning etter gjeldende inntaksregler, med utregning og kilde.
 - Uten valgt fylke vises bare nasjonale regler, med merknad.
 
+*Status 03.10.2026:*
+- Forslaget med søkerkategorier, frister, poengregler og fasittester F1–F9 er godkjent av eier (`docs/arbeidsordrer/fase-5-forslag.md`). Udirs merknader til opplæringsforskrifta er ny kilde for poengberegningen.
+- Pakke 1 er levert i 0.26.0: modulen **Inntak** med veiviseren «Rett, inntak og søknad» (navnet valgt av eier) og Vestland-innhold i egne bokser (avgjørelse 043). Alle veiviserne har fått én side per valg, lukkede steg på mobil og mindre rulling (avgjørelse 044). Eier kan teste en gren under `test/` (avgjørelse 045). GNS02-01 er med i læreplanboksen for særskilt språkopplæring, i en egen gruppe for voksne.
+- Venter på vestlandfylke.no: antall inntaksområdepoeng og Vestlands klagenemnd.
+
 **Kontrollpunkt:** Eier kontrollerer kategorier, flyt og poengberegning.
 
 ### Fase 6 – Vurdering, fravær og eksamen

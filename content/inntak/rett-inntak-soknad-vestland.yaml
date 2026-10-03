@@ -1,0 +1,112 @@
+# Vestland i veiviseren «Rett, inntak og søknad» (fase 5, pakke 1). Fylkesinnhold som supplerer de nasjonale stegene
+# med samme id, og vises bare når Vestland er valgt. Bygger på den lokale forskriften om inntak og formidling i
+# Vestland (vestland-inntak). vestlandfylke.no svarte ikke 03.10.2026, så sidene til fylkeskommunen er ikke brukt.
+- id: sk-poeng
+  type: steg
+  veiviser: rett-inntak-soknad
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Inntaksområde, skoler og tilleggspoeng
+    nn: Inntaksområde, skular og tilleggspoeng
+  tekst:
+    nb: |-
+      I Vestland styres inntaket etter inntaksområde. Søkeren får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse. Søkere uten inntaksområdepoeng konkurrerer etter karakterpoeng om plassene som er igjen. Søkeren kan føre opp inntil seks skoler innenfor hvert utdanningsprogram.
+
+      På Vg1 musikk, dans og drama og Vg1 idrettsfag kan inntil halvparten av plassene fordeles med tilleggspoeng: 3, 6 eller 9 poeng etter en ferdighetsprøve eller dokumenterte idrettslige prestasjoner. Ferdighetsprøven på musikk, dans og drama er bare for søkere med utdanningsprogrammet som førsteønske.
+    nn: |-
+      I Vestland er inntaket styrt etter inntaksområde. Søkjaren får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse. Søkjarar utan inntaksområdepoeng konkurrerer etter karakterpoeng om plassane som er att. Søkjaren kan føre opp inntil seks skular innanfor kvart utdanningsprogram.
+
+      På Vg1 musikk, dans og drama og Vg1 idrettsfag kan inntil halvparten av plassane fordelast med tilleggspoeng: 3, 6 eller 9 poeng etter ei ferdigheitsprøve eller dokumenterte idrettslege prestasjonar. Ferdigheitsprøva på musikk, dans og drama er berre for søkjarar med utdanningsprogrammet som førsteønske.
+  paragrafer: [vestland-inntak/2-1, vestland-inntak/2-2, vestland-inntak/2-3, vestland-inntak/2-7, vestland-inntak/2-8]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-1 Inntak etter inntaksområde og § 2-2 Inntak til Vg1", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-1" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-7 Inntak til Vg1 musikk, dans og drama og § 2-8 Inntak til Vg1 idrettsfag", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Tallet på inntaksområdepoeng står ikke i forskriften, og venter til vestlandfylke.no svarer (eier 03.10.2026). Er det greit at steget bare sier at poengene finnes?"
+    - "VL § 2-7 sier at ferdighetsprøver bare arrangeres når det er mange søkere. Bør det stå?"
+
+- id: sk-vilkar-vg23
+  type: steg
+  veiviser: rett-inntak-soknad
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Fortsette på samme skole og deltid
+    nn: Halde fram på same skule og deltid
+  tekst:
+    nb: |-
+      Søkere til Vg2 og Vg3 på studieforberedende, treårig helse- og oppvekstfag med studiekompetanse og treårig elektrofag med spesiell studiekompetanse har rett til å fortsette på samme skole når de har bestått alle fagene, har søkt som fulltidselev og søker året etter.
+
+      Søkere som ikke oppfyller vilkårene for et fullstendig programområde, kan i særskilte tilfeller tas inn som deltidselever. De tas inn etter fulltidselevene, og deltidselever med ungdomsrett tas inn før deltidselever uten.
+    nn: |-
+      Søkjarar til Vg2 og Vg3 på studieførebuande, treårig helse- og oppvekstfag med studiekompetanse og treårig elektrofag med spesiell studiekompetanse har rett til å halde fram på same skule når dei har bestått alle faga, har søkt som fulltidselev og søkjer året etter.
+
+      Søkjarar som ikkje oppfyller vilkåra for eit fullstendig programområde, kan i særskilde tilfelle takast inn som deltidselevar. Dei blir tekne inn etter fulltidselevane, og deltidselevar med ungdomsrett blir tekne inn før deltidselevar utan.
+  paragrafer: [vestland-inntak/2-4, vestland-inntak/2-5, vestland-inntak/2-6, vestland-inntak/2-14]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-4 til § 2-6 Oppflytting", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-4" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-14 Inntak av deltidselevar til Vg2/Vg3", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-14" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "VL § 2-4 første ledd har også vilkåret «at det blir nok ledige plassar» for Vg2 studieforberedende. Bør det stå?"
+
+- id: sk-bosted
+  type: steg
+  veiviser: rett-inntak-soknad
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Flytting til Vestland og søkere fra andre fylker
+    nn: Flytting til Vestland og søkjarar frå andre fylke
+  tekst:
+    nb: Søkere som planlegger å flytte til Vestland, må dokumentere at flyttingen er reell. Dokumentasjonen må være kommet fram innen 23. juni, og søkeren må være folkeregistrert i Vestland ved skolestart. Søkere fra andre fylker med ungdomsrett får tilbud ved ledig plass, etter søkerne som bor i Vestland.
+    nn: Søkjarar som planlegg å flytte til Vestland, må dokumentere at flyttinga er reell. Dokumentasjonen må vere komen fram innan 23. juni, og søkjaren må vere folkeregistrert i Vestland ved skulestart. Søkjarar frå andre fylke med ungdomsrett får tilbod ved ledig plass, etter søkjarane som bur i Vestland.
+  frist:
+    nb: Dokumentasjon av flytting innen 23. juni.
+    nn: Dokumentasjon av flytting innan 23. juni.
+  paragrafer: [vestland-inntak/2-17, vestland-inntak/2-20]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-17 Flytting", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-17" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-20 Inntak av søkarar busette i andre fylke", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-20" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør steget også nevne unntaket for søkere i det nordiske utdanningsfellesskapet (VL § 2-17 tredje ledd)?"
+
+- id: sk-soknad
+  type: steg
+  veiviser: rett-inntak-soknad
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Etter inntaket i Vestland
+    nn: Etter inntaket i Vestland
+  tekst:
+    nb: Når det sentrale inntaket er ferdig, tar rektor over og følger ventelistene til utgangen av august. Fra 1. september regnes inntaket som avsluttet. Eleven må møte første skoledag, eller melde fra og dokumentere fraværet. Uten gyldig grunn mister eleven plassen.
+    nn: Når det sentrale inntaket er ferdig, tek rektor over og følgjer ventelistene til utgangen av august. Frå 1. september blir inntaket rekna som avslutta. Eleven må møte første skuledag, eller melde frå og dokumentere fråværet. Utan gyldig grunn mistar eleven plassen.
+  paragrafer: [vestland-inntak/2-16, vestland-inntak/2-18, vestland-inntak/2-19]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-16 Søknadsfrist", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-16" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-18 Frammøte første skuledag og § 2-19 Rektor sin rett til inntak av elevar", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at rektor «tar over» etter det sentrale inntaket, når VL § 2-19 sier at ansvaret blir delegert til rektor?"
+    - "VL § 2-19 tredje ledd har en rekkefølge for søkere rektor tar inn etter ventelistene. Bør den stå her?"
+
+- id: sk-voksenrett
+  type: steg
+  veiviser: rett-inntak-soknad
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: Voksne i Vestland
+    nn: Vaksne i Vestland
+  tekst:
+    nb: Det er ingen søknadsfrist, men søkeren bør søke innen 1. mars for oppstart om høsten og innen 1. oktober for oppstart om våren. Mangler det dokumentasjon, blir søkeren bedt om å sende den, og søknaden avvises hvis den ikke er kommet innen fire uker. Søkeren må svare på tilbudet innen fristen, og må være folkeregistrert i Vestland ved skolestart. Er det få plasser, prioriteres søkerne innenfor hver gruppe etter søknadsdato.
+    nn: Det er ingen søknadsfrist, men søkjaren bør søkje innan 1. mars for oppstart om hausten og innan 1. oktober for oppstart om våren. Manglar det dokumentasjon, blir søkjaren beden om å sende han, og søknaden blir avvist dersom han ikkje er komen innan fire veker. Søkjaren må svare på tilbodet innan fristen, og må vere folkeregistrert i Vestland ved skulestart. Er det få plassar, blir søkjarane prioriterte innanfor kvar gruppe etter søknadsdato.
+  frist:
+    nb: Bør søke innen 1. mars (høst) eller 1. oktober (vår).
+    nn: Bør søkje innan 1. mars (haust) eller 1. oktober (vår).
+  paragrafer: [vestland-inntak/4-1, vestland-inntak/4-2]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 4-1 Søknadsprosess og krav til søknaden", url: "https://lovdata.no/forskrift/2020-09-29-3380/§4-1" }
+    - { id: vestland-forskrift-inntak, punkt: "§ 4-2 Inntaksrekkefølge", url: "https://lovdata.no/forskrift/2020-09-29-3380/§4-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at kapittel 4 i Vestlands forskrift gjelder alle voksne, også dem under 19 år som har valgt opplæring for voksne (VL § 4-2 andre ledd)?"

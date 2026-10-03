@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { fagPerTrinn, kortFagnavn } from '../../src/components/Laereplanboks.tsx';
+import { fagPerTrinn, kortFagnavn, laereplanerPerMalgruppe } from '../../src/components/Laereplanboks.tsx';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 
 const fag = (lp: string, trinn: string[]) => ({ navn: { nb: 'x', nn: 'x' }, type: 'fellesfag', trinn, timer: null, lp, elev: null });
@@ -30,5 +30,17 @@ describe('læreplanboksen', () => {
       'Nivå 1, vg1 studieforberedende utdanningsprogram',
     );
     expect(kortFagnavn('Norsk')).toBe('Norsk');
+  });
+
+  it('grupperer læreplanene etter målgruppe, elever først, og utelater tomme grupper', () => {
+    const lp = (kode: string, malgruppe: 'elever' | 'voksne') => ({ kode, malgruppe, merknad: { nb: 'x', nn: 'x' } });
+    const voksen = lp('GNS02-01', 'voksne');
+    const elev1 = lp('NOR07-03', 'elever');
+    const elev2 = lp('NOR09-05', 'elever');
+    expect(laereplanerPerMalgruppe([voksen, elev1, elev2])).toEqual([
+      ['elever', [elev1, elev2]],
+      ['voksne', [voksen]],
+    ]);
+    expect(laereplanerPerMalgruppe([elev1])).toEqual([['elever', [elev1]]]);
   });
 });

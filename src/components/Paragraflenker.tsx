@@ -36,7 +36,8 @@ async function lastLenker(refer: readonly string[]): Promise<Dokumentlenker[]> {
   );
 }
 
-export function Paragraflenker({ paragrafer, overskrift }: { paragrafer: readonly string[]; overskrift: string }) {
+/** `utenOverskrift` når lenkene står i en boks som allerede har overskriften, f.eks. «I regelverket» i veiviserne. */
+export function Paragraflenker({ paragrafer, overskrift, utenOverskrift = false }: { paragrafer: readonly string[]; overskrift: string; utenOverskrift?: boolean }) {
   const [lenker, settLenker] = useState<Dokumentlenker[] | null>(null);
   const nokkel = paragrafer.join(',');
   useEffect(() => {
@@ -60,7 +61,7 @@ export function Paragraflenker({ paragrafer, overskrift }: { paragrafer: readonl
     }));
   return (
     <div class="paragraflenker">
-      <h3 class="liten-overskrift">{overskrift}</h3>
+      {utenOverskrift ? <h3 class="skjult-visuelt">{overskrift}</h3> : <h3 class="liten-overskrift">{overskrift}</h3>}
       {vis.map((d) => (
         <div key={d.dokument} class="paragraflenker-dokument">
           {d.navn && <p class="paragraflenker-navn">{d.navn}</p>}

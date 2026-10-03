@@ -5,6 +5,7 @@ import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
 import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
+import { inntakNb } from './moduler/inntak.nb.ts';
 import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
 
 export const nb = {
@@ -224,7 +225,6 @@ export const nb = {
       frist: 'Frist',
       regelverk: 'I regelverket',
       merOm: 'Mer om dette steget',
-      neste: 'Neste',
       svar: 'Svar',
       dittSvar: 'Svar: {svar}',
       startPaaNytt: 'Start på nytt',
@@ -241,6 +241,19 @@ export const nb = {
       vurdering: 'Vurdering: {uttrykk}',
       fagkodene: 'Fagkodene',
       antallFag: '{antall} fag',
+      lokalt: 'I {sted}',
+      lesHele: 'Les hele steget',
+      visMindre: 'Vis mindre',
+      tilSporsmalet: 'Til spørsmålet',
+      tilSlutten: 'Til der veien ender',
+      harLokalt: 'Har lokale regler for {sted}',
+      regelverkAntall: 'I regelverket ({antall})',
+      visHeleVeien: 'Vis hele veien ({antall} valg til)',
+      forrigeValg: 'Tilbake til «{steg}»',
+      tilToppen: 'Til toppen',
+      faseliste: 'Fasene: {faser}',
+      antallFaser: '{antall} faser',
+      malgruppe: { elever: 'For elever', voksne: 'For voksne' },
     },
     forklaring: {
       vis: 'Vis forklaring',
@@ -292,6 +305,10 @@ export const nb = {
     offlineKlar: 'Appen kan nå brukes uten nett.',
   },
   moduler: {
+    inntak: {
+      navn: 'Inntak',
+      beskrivelse: 'Søkerkategorier, rettigheter og frister ved inntak.',
+    },
     tilrettelegging: {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpasset opplæring, individuell tilrettelegging og språkopplæring.',
@@ -327,6 +344,7 @@ export const nb = {
   laereplanverket: laereplanverketNb,
   lov: lovNb,
   tilrettelegging: tilretteleggingNb,
+  inntak: inntakNb,
   begreper: {
     tittel: 'Begreper',
     filtrer: 'Filtrer begreper',

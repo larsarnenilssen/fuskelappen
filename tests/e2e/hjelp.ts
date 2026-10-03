@@ -1,5 +1,5 @@
 // Hjelpefunksjoner for ende-til-ende-testene.
-import type { Page, TestInfo } from '@playwright/test';
+import type { Locator, Page, TestInfo } from '@playwright/test';
 
 export interface Oppsett {
   malform?: 'nb' | 'nn';
@@ -85,6 +85,9 @@ export const ruter = [
   '#/tilrettelegging/sprak-og-kort-botid',
   '#/tilrettelegging/sprak-og-kort-botid?steg=sp-innforing&svar=ja.nei.ja',
   '#/tilrettelegging/sprak-og-kort-botid?steg=sp-laereplan&svar=ja.nei.nei',
+  '#/inntak',
+  '#/inntak/rett-inntak-soknad',
+  '#/inntak/rett-inntak-soknad?steg=sk-poeng&svar=norsk.ja.nei.under19.vg1.poeng',
   '#/finnes-ikke',
 ];
 
@@ -121,4 +124,21 @@ export async function aapneAlt(side: Page, omraade = 'main'): Promise<void> {
   for (let i = 0; i < 20 && (await lukket.count()) > 0; i++) await lukket.first().click();
   // Lukkede <details>, f.eks. kildene i en veiviser.
   await side.locator(`${omraade} details:not([open])`).evaluateAll((liste) => liste.forEach((d) => ((d as HTMLDetailsElement).open = true)));
+}
+
+/**
+ * Åpner et steg i en veiviser hvis det er lukket. Steg uten valg over spørsmålet er lukket på mobil (avgjørelse 044).
+ */
+export async function aapneSteg(steg: Locator): Promise<void> {
+  // Vent til steget er tegnet, så knappen finnes hvis steget er lukket.
+  await steg.locator('.veiviser-stegtittel').waitFor();
+  const knapp = steg.getByRole('button', { name: 'Les hele steget' });
+  if ((await knapp.count()) > 0) await knapp.click();
+}
+
+/** Åpner alle lukkede steg på siden i en veiviser. */
+export async function aapneAlleSteg(side: Page): Promise<void> {
+  await side.locator('.veiviser-side .veiviser-stegtittel').first().waitFor();
+  const knapper = side.getByRole('button', { name: 'Les hele steget' });
+  while ((await knapper.count()) > 0) await knapper.first().click();
 }

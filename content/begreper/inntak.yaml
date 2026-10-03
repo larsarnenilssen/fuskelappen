@@ -1,0 +1,168 @@
+# Begreper om inntak til videregående opplæring (fase 5, pakke 1). Bygger på opplæringslova kapittel 5 og 18,
+# opplæringsforskrifta kapittel 4 og 13, Udirs sider om retten til videregående opplæring og Udirs merknader til
+# forskriften. Inntaksområde og deltidselev er fylkesinnhold for Vestland. Egne ord.
+- id: ungdomsrett
+  type: begrep
+  tittel: { nb: Ungdomsrett, nn: Ungdomsrett }
+  tekst:
+    nb: Ungdomsrett er det vanlige navnet på retten til videregående opplæring etter opplæringslova § 5-1. Den har alle som har fullført grunnskolen eller tilsvarende, og den varer til studie- eller yrkeskompetanse, men ikke lenger enn ut skoleåret som starter det året eleven fyller 24. Søkere med ungdomsrett skal komme inn på ett av tre utdanningsprogram på Vg1 som de har søkt på.
+    nn: Ungdomsrett er det vanlege namnet på retten til vidaregåande opplæring etter opplæringslova § 5-1. Han har alle som har fullført grunnskolen eller tilsvarande, og han varer til studie- eller yrkeskompetanse, men ikkje lenger enn ut skoleåret som tek til det året eleven fyller 24. Søkjarar med ungdomsrett skal kome inn på eitt av tre utdanningsprogram på Vg1 som dei har søkt på.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-1 Rett til vidaregåande opplæring", url: "https://lovdata.no/lov/2023-06-09-30/§5-1" }
+    - { id: udir-retten-til-vgo, punkt: "Rett til videregående opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«Ungdomsrett» står ikke i loven, men brukes i Vestlands forskrift og i praksis. Er det greit å bruke ordet som navn på begrepet?"
+  stikkord: [rett til videregående, rett til vidaregåande, § 5-1, søker, søkjar]
+  relatert: [voksenrett, omvalg, sluttkompetanse]
+
+- id: voksenrett
+  type: begrep
+  tittel: { nb: Voksenrett, nn: Vaksenrett }
+  tekst:
+    nb: Voksenrett er det vanlige navnet på retten til videregående opplæring for voksne etter opplæringslova § 18-3. Den har den som har fullført grunnskolen eller tilsvarende, men ikke har studie- eller yrkeskompetanse, fra skoleåret som starter det året søkeren fyller 19. Søkeren skal komme inn på et tilbud som fører fram til en av tre sluttkompetanser søkeren har søkt på, og har rett til å få realkompetansen vurdert. Mellom 19 og 24 år kan søkeren velge mellom ungdomsrett og voksenrett.
+    nn: Vaksenrett er det vanlege namnet på retten til vidaregåande opplæring for vaksne etter opplæringslova § 18-3. Han har den som har fullført grunnskolen eller tilsvarande, men ikkje har studie- eller yrkeskompetanse, frå skoleåret som tek til det året søkjaren fyller 19. Søkjaren skal kome inn på eit tilbod som fører fram til ein av tre sluttkompetansar søkjaren har søkt på, og har rett til å få realkompetansen vurdert. Mellom 19 og 24 år kan søkjaren velje mellom ungdomsrett og vaksenrett.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 18-3 Rett til vidaregåande opplæring for vaksne", url: "https://lovdata.no/lov/2023-06-09-30/§18-3" }
+    - { id: udir-retten-til-vgo, punkt: "Inntak og formidling for voksne", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/inntak-og-formidling-for-voksne/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «mellom 19 og 24 år» en forståelig forenkling av «fra skoleåret som starter det året søkeren fyller 19, til og med skoleåret som starter det året søkeren fyller 24»?"
+  stikkord: [vaksenrett, opplæring for voksne, vaksenopplæring, voksenopplæring, § 18-3]
+  relatert: [ungdomsrett, realkompetansevurdering, sluttkompetanse]
+
+- id: sluttkompetanse
+  type: begrep
+  tittel: { nb: Sluttkompetanse, nn: Sluttkompetanse }
+  tekst:
+    nb: Sluttkompetanse er kompetansen et opplæringsløp i videregående fører fram til, for eksempel studiekompetanse, yrkeskompetanse med fag- eller svennebrev, eller praksisbrev. Retten til videregående opplæring varer til søkeren har studie- eller yrkeskompetanse. Den som har en sluttkompetanse på et lavere nivå, som praksisbrev, har fortsatt retten. Voksne søker på tre sluttkompetanser i stedet for tre utdanningsprogram.
+    nn: Sluttkompetanse er kompetansen eit opplæringsløp i vidaregåande fører fram til, til dømes studiekompetanse, yrkeskompetanse med fag- eller sveinebrev, eller praksisbrev. Retten til vidaregåande opplæring varer til søkjaren har studie- eller yrkeskompetanse. Den som har ein sluttkompetanse på eit lågare nivå, som praksisbrev, har framleis retten. Vaksne søkjer på tre sluttkompetansar i staden for tre utdanningsprogram.
+  kilder:
+    - { id: udir-retten-til-vgo, punkt: "Frem til studie- eller yrkeskompetanse", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/retten-til-videregaende-opplaring/rett-til-videregaende-opplaring/#frem-til-studie--eller-yrkeskompetanse" }
+    - { id: opplaeringsforskrifta, punkt: "§ 13-3 Søknad om inntak til vidaregåande opplæring for vaksne", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på sluttkompetanser (studiekompetanse, yrkeskompetanse, praksisbrev) dekkende, eller bør kompetansebevis også nevnes?"
+  stikkord: [studiekompetanse, yrkeskompetanse, fagbrev, svennebrev, praksisbrev]
+  relatert: [ungdomsrett, voksenrett, pabygging]
+
+- id: fortrinnsrett
+  type: begrep
+  tittel: { nb: Fortrinnsrett ved inntak, nn: Fortrinnsrett ved inntak }
+  tekst:
+    nb: Søkere med fortrinnsrett tas inn før søkerne som konkurrerer på poeng. Det er tre grunnlag. Søkere med omfattende behov for individuell tilrettelegging kan ha fortrinnsrett til et bestemt utdanningsprogram på Vg1. Søkere med sterkt nedsatt funksjonsevne kan ha fortrinnsrett til en skole som er særskilt tilrettelagt. Søkere med rett til opplæring i og på norsk tegnspråk har fortrinnsrett til opplæring med tolk eller på en skole med tegnspråk. Søknadsfristen er 1. februar.
+    nn: Søkjarar med fortrinnsrett blir tekne inn før søkjarane som konkurrerer på poeng. Det er tre grunnlag. Søkjarar med omfattande behov for individuell tilrettelegging kan ha fortrinnsrett til eit bestemt utdanningsprogram på Vg1. Søkjarar med sterkt nedsett funksjonsevne kan ha fortrinnsrett til ein skole som er særskilt tilrettelagd. Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett til opplæring med tolk eller på ein skole med teiknspråk. Søknadsfristen er 1. februar.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-21 til § 4-23 og § 4-27 til § 4-28", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-21" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-14 Rekkjefølgja ved inntak", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de tre grunnlagene for fortrinnsrett beskrevet riktig og kort nok?"
+  stikkord: [fortrinn, særskilt tilrettelagt skole, tegnspråk, teiknspråk, sakkyndig vurdering]
+  relatert: [individuell-tilrettelegging, individuell-behandling, sakkyndig-vurdering]
+
+- id: individuell-behandling
+  type: begrep
+  tittel: { nb: Individuell behandling ved inntak, nn: Individuell behandling ved inntak }
+  tekst:
+    nb: Søkere som ikke kan rangeres etter poeng, behandles individuelt. Det gjelder for eksempel søkere som mangler karakter i mer enn halvparten av fagene, søkere med vitnemål uten karakterer og søkere uten sammenlignbart karaktergrunnlag. Fylkeskommunen vurderer søkeren i stedet for å regne poeng, og søkere uten karakterer rangeres etter uttalelser fra skolen de kommer fra.
+    nn: Søkjarar som ikkje kan rangerast etter poeng, blir behandla individuelt. Det gjeld til dømes søkjarar som manglar karakter i meir enn halvparten av faga, søkjarar med vitnemål utan karakterar og søkjarar utan samanliknbart karaktergrunnlag. Fylkeskommunen vurderer søkjaren i staden for å rekne poeng, og søkjarar utan karakterar blir rangerte etter fråsegner frå skolen dei kjem frå.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-20 og § 4-26", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-20" }
+    - { id: udir-merknader-ofo, punkt: "Merknader til § 4-18", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/andre-delen--vidaregaande-opplaring/kapittel-4-inntak-til-vidaregaande-opplaring/iv.-poengutrekning-individuell-behandling-og-fortrinnsrett-ved-fordeling-av-plassar-til-vidaregaande-trinn-1/-4-18-fordeling-av-plassar-til-vidaregaande-trinn-1/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene representative for hvem som behandles individuelt?"
+  stikkord: [individuelt inntak, inntak uten karakterer, uten karakter]
+  relatert: [fortrinnsrett, ungdomsrett]
+
+- id: omvalg
+  type: begrep
+  tittel: { nb: Omvalg, nn: Omval }
+  tekst:
+    nb: Omvalg er å bytte til et annet utdanningsprogram eller programområde enn det eleven har begynt på. Elever og de som har læretid i bedrift, kan gjøre så mange omvalg de vil fram til søknadsfristen for inntak det året de fyller 19, og ett omvalg etter det. Søkere som gjør omvalg, tas inn til et fullstendig utdanningsprogram eller programområde og har rett til opplæring også i fag de allerede har bestått.
+    nn: Omval er å byte til eit anna utdanningsprogram eller programområde enn det eleven har byrja på. Elevar og dei som har læretid i bedrift, kan gjere så mange omval dei vil fram til søknadsfristen for inntak det året dei fyller 19, og eitt omval etter det. Søkjarar som gjer omval, blir tekne inn til eit fullstendig utdanningsprogram eller programområde og har rett til opplæring også i fag dei allereie har bestått.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 5-5 Rett til omval", url: "https://lovdata.no/lov/2023-06-09-30/§5-5" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-2 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «bytte til et annet utdanningsprogram eller programområde» en god forklaring på omvalg, når loven ikke definerer ordet?"
+  stikkord: [omval, bytte utdanningsprogram, byte utdanningsprogram, velge om igjen]
+  relatert: [ungdomsrett, utdanningsprogram, programomrade]
+
+- id: realkompetansevurdering
+  type: begrep
+  tittel: { nb: Realkompetansevurdering, nn: Realkompetansevurdering }
+  tekst:
+    nb: Realkompetansevurdering er en vurdering av om det en voksen kan fra utdanning, arbeid og ellers, kan godkjennes som likeverdig med kompetansen fra videregående opplæring. Søkeren kan få godkjent hele eller deler av fag, moduler eller skoleår, og får ikke opplæring i det som er godkjent. Voksne med rett til opplæring har rett til realkompetansevurdering når de søker inntak.
+    nn: Realkompetansevurdering er ei vurdering av om det ein vaksen kan frå utdanning, arbeid og elles, kan godkjennast som likeverdig med kompetansen frå vidaregåande opplæring. Søkjaren kan få godkjent heile eller delar av fag, modular eller skoleår, og får ikkje opplæring i det som er godkjent. Vaksne med rett til opplæring har rett til realkompetansevurdering når dei søkjer inntak.
+  kilder:
+    - { id: opplaeringslova, punkt: "§ 18-8 Realkompetansevurdering", url: "https://lovdata.no/lov/2023-06-09-30/§18-8" }
+    - { id: opplaeringsforskrifta, punkt: "§ 13-2 og § 13-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «det en voksen kan fra utdanning, arbeid og ellers» en forståelig gjengivelse av formell, uformell og ikke-formell kompetanse (§ 13-5)?"
+  stikkord: [realkompetanse, godkjenning, voksne, vaksne]
+  relatert: [voksenrett]
+
+- id: landslinje
+  type: begrep
+  tittel: { nb: Landslinje, nn: Landslinje }
+  tekst:
+    nb: En landslinje er et tilbud ved en fylkeskommunal videregående skole som staten finansierer og godkjenner, og som er åpent for søkere fra hele landet. Søknaden sendes til fylket der skolen ligger, og det har ingen betydning hvor søkeren er folkeregistrert.
+    nn: Ei landslinje er eit tilbod ved ein fylkeskommunal vidaregåande skole som staten finansierer og godkjenner, og som er ope for søkjarar frå heile landet. Søknaden skal sendast til fylket der skolen ligg, og det har ikkje noko å seie kvar søkjaren er folkeregistrert.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-5 første ledd bokstav d og § 4-16", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-16" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-8 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «åpent for søkere fra hele landet» riktig for alle landslinjer?"
+  stikkord: [landsdekkende tilbud, landsdekkjande tilbod, statlig finansiert]
+  relatert: [ungdomsrett]
+
+- id: gjesteelev
+  type: begrep
+  tittel: { nb: Gjesteelev, nn: Gjesteelev }
+  tekst:
+    nb: En gjesteelev går på skole i et annet fylke enn der eleven er folkeregistrert. Fylkeskommunen tar først inn søkere fra eget fylke. Er det ledig plass, tas søkere fra andre fylker inn etterpå. Først kommer de med særlige pedagogiske eller sosiale grunner og de som må gå i et annet fylke for å få opplæring i eller på samisk. Klage på inntak av gjesteelever avgjøres av fylkeskommunens klageorgan.
+    nn: Ein gjesteelev går på skole i eit anna fylke enn der eleven er folkeregistrert. Fylkeskommunen tek først inn søkjarar frå eige fylke. Er det ledig plass, blir søkjarar frå andre fylke tekne inn etterpå. Først kjem dei med særlege pedagogiske eller sosiale grunnar og dei som må gå i eit anna fylke for å få opplæring i eller på samisk. Klage på inntak av gjesteelevar blir avgjord av klageorganet i fylkeskommunen.
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-14 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-14" }
+    - { id: opplaeringslova, punkt: "§ 29-1 andre ledd", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å bruke «gjesteelev» om søkere fra andre fylker, slik opplæringslova § 29-1 gjør?"
+  stikkord: [søker fra annet fylke, søkjar frå anna fylke, utenfylkes, utanfylkes]
+  relatert: [ungdomsrett, landslinje]
+
+- id: inntaksomrade
+  type: begrep
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel: { nb: Inntaksområde, nn: Inntaksområde }
+  tekst:
+    nb: I Vestland styres inntaket etter inntaksområder. Søkeren får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse, og konkurrerer med dem ved skolene der. Søker søkeren et tilbud som ikke finnes i inntaksområdet, får søkeren inntaksområdepoeng til alle skolene i fylket. Fylkeskommunen gir utfyllende regler om hvilke skoler og kommuner som hører til hvert inntaksområde.
+    nn: I Vestland er inntaket styrt etter inntaksområde. Søkjaren får inntaksområdepoeng til sitt inntaksområde etter folkeregistrert adresse, og konkurrerer med dei ved skulane der. Søkjer søkjaren eit tilbod som ikkje finst i inntaksområdet, får søkjaren inntaksområdepoeng til alle skulane i fylket. Fylkeskommunen gir utfyllande reglar om kva skular og kommunar som høyrer til kvart inntaksområde.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-1 Inntak etter inntaksområde og § 2-2 tredje ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «konkurrerer med dem ved skolene der» en riktig beskrivelse av hva inntaksområdepoeng betyr i praksis?"
+  stikkord: [inntaksområdepoeng, Vestland, nærskole]
+  relatert: [ungdomsrett]
+
+- id: deltidselev
+  type: begrep
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel: { nb: Deltidselev, nn: Deltidselev }
+  tekst:
+    nb: I Vestland er en deltidselev en elev som er tatt inn til mindre enn et fullstendig programområde på Vg2 eller Vg3, fordi eleven ikke oppfyller vilkårene for et fullstendig programområde. Det kan skje i særskilte tilfeller. Deltidselever tas inn etter fulltidselevene, og deltidselever med ungdomsrett før dem uten.
+    nn: I Vestland er ein deltidselev ein elev som er teken inn til mindre enn eit fullstendig programområde på Vg2 eller Vg3, fordi eleven ikkje oppfyller vilkåra for eit fullstendig programområde. Det kan skje i særskilde tilfelle. Deltidselevar blir tekne inn etter fulltidselevane, og deltidselevar med ungdomsrett før dei utan.
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-14 Inntak av deltidselevar til Vg2/Vg3", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-14" }
+    - { id: opplaeringsforskrifta, punkt: "§ 4-13 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-13" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "VL § 2-2 sjuende ledd bruker også «deltidselevar» om Vg1. Bør begrepet nevne det?"
+  stikkord: [deltid, fulltidselev, Vestland]
+  relatert: [ungdomsrett]

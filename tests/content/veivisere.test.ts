@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
 import { lesInnhold } from '../../scripts/innhold/alt.ts';
 import type { Stegelement, Veiviserelement } from '../../src/core/innhold/skjema.ts';
-import { finnFeil, lagKart } from '../../src/core/veiviser/veiviser.ts';
+import { finnFeil, finnVei, lagKart, lesSvar } from '../../src/core/veiviser/veiviser.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import { alleParagrafer, type Lovdokument } from '../../src/modules/lov/typer.ts';
 
@@ -70,10 +70,46 @@ describe('veivisere', () => {
             const fag = Object.values(fagindeks.fag).filter((f) => f.lp === lp.kode);
             expect(fag.length, `${s.id}: ${lp.kode} har ingen fag i fagindeksen`).toBeGreaterThan(0);
             const karakter = fag.some((f) => f.elev?.uttrykk === 'vurderingsuttrykk_tall');
-            expect(karakter, `${s.id}: ${lp.kode}`).toBe(lp.kompetansegivende);
+            // Uten merke (GNS02-01, eier 03.10.2026) skal læreplanen heller ikke gi tallkarakter.
+            expect(karakter, `${s.id}: ${lp.kode}`).toBe(lp.kompetansegivende ?? false);
           }
+        }
+      });
+
+      // Lokale steg som supplerer et nasjonalt steg, vises som en boks i det steget (fase 5). De er ikke selv steg på
+      // veien, så de kan ikke ha spørsmål eller neste steg.
+      it('lokale steg som supplerer, hører til et nasjonalt steg og har paragrafer som finnes', () => {
+        const lokale = steg.filter((s) => s.veiviser === v.id && s.gyldighet.niva !== 'nasjonal');
+        const nasjonale = new Set(egne.map((s) => s.id));
+        for (const s of lokale) {
+          expect(s.gyldighet.niva !== 'nasjonal' && s.gyldighet.forhold, s.id).toBe('supplerer');
+          expect(nasjonale.has(s.id), `${s.id} supplerer et steg som ikke finnes`).toBe(true);
+          expect(s.neste === undefined && s.sporsmal === undefined, `${s.id} har neste eller spørsmål`).toBe(true);
+          for (const p of s.paragrafer) expect(finnes(p), `${s.id}: ${p}`).toBe(true);
         }
       });
     });
   }
+
+  // Lenker i teksten til et steg i en veiviser, f.eks. fra inntak til særskilt språkopplæring, skal føre fram til
+  // steget uten at adressen må rettes.
+  it('lenker til steg i en veiviser fører fram til steget', () => {
+    const lenke = /\(#\/[a-z]+\/([a-z0-9-]+)\?steg=([a-z0-9-]+)&svar=([a-z0-9.-]*)\)/g;
+    let antall = 0;
+    for (const e of alle) {
+      const tekster = [e.tekst.nb, e.tekst.nn, ...('forklaring' in e && e.forklaring ? [e.forklaring.nb, e.forklaring.nn] : [])];
+      for (const tekst of tekster) {
+        for (const [, vid = '', stegId = '', svar = ''] of tekst.matchAll(lenke)) {
+          antall++;
+          const vv = veivisere.find((x) => x.id === vid);
+          expect(vv, `${e.id}: veiviseren ${vid} finnes ikke`).toBeDefined();
+          if (!vv) continue;
+          const kart = lagKart(vv.start, steg.filter((s) => s.veiviser === vid && s.gyldighet.niva === 'nasjonal'));
+          const vei = finnVei(kart, lesSvar(svar), stegId);
+          expect({ steg: vei.gjeldende, korrigert: vei.korrigert }, `${e.id} → ${vid}/${stegId}`).toEqual({ steg: stegId, korrigert: false });
+        }
+      }
+    }
+    expect(antall).toBeGreaterThan(0);
+  });
 });

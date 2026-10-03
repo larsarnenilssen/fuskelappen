@@ -88,6 +88,35 @@ export function finnVei(kart: Veiviserkart, svar: readonly string[], steg?: stri
   return { bak, gjeldende, svar: brukt, korrigert };
 }
 
+/**
+ * En side i veiviseren: steget brukeren står på, med stegene uten spørsmål rett før og etter, fram til neste
+ * spørsmål eller utfall (eier 03.10.2026). Brukeren trykker bare der det er et valg. `slutt` er veien til det siste
+ * steget på siden, som har spørsmålet eller er utfallet. `forSiden` er veien før det første steget på siden.
+ */
+export interface Side {
+  steg: string[];
+  forSiden: Veipunkt[];
+  slutt: Vei;
+}
+
+export function finnSide(kart: Veiviserkart, vei: Vei): Side {
+  // Bakover: steg uten svar rett før det gjeldende hører til samme side.
+  let i = vei.bak.length;
+  while (i > 0 && vei.bak[i - 1]?.svar === undefined) i--;
+  const steg = [...vei.bak.slice(i).map((p) => p.steg), vei.gjeldende];
+  const bak = [...vei.bak];
+  let gjeldende = vei.gjeldende;
+  let node = kart.steg.get(gjeldende);
+  // Framover: følg «neste» til et spørsmål eller et utfall. Løkker uten spørsmål stoppes (finnFeil melder dem).
+  while (node && !node.sporsmal && node.neste !== undefined && !steg.includes(node.neste) && steg.length < MAKS_STEG) {
+    bak.push({ steg: gjeldende });
+    gjeldende = node.neste;
+    steg.push(gjeldende);
+    node = kart.steg.get(gjeldende);
+  }
+  return { steg, forSiden: vei.bak.slice(0, i), slutt: { ...vei, bak, gjeldende } };
+}
+
 /** Adresseparametrene for et steg på veien: `steg` og svarene fram dit. Starten har ingen parametre. */
 export function tilstand(kart: Veiviserkart, steg: string, svar: readonly string[]): Record<string, string> {
   if (steg === kart.start && svar.length === 0) return {};
