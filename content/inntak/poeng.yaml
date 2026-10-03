@@ -38,18 +38,25 @@
       - **Halvårsvurdering** teller bare i fag der læreplanen sier at det skal gis halvårsvurdering med karakter.
       - **Til Vg3:** I fag der standpunkt settes etter Vg3, for eksempel norsk, teller bare halvårsvurderingen fra Vg2, ikke den fra Vg1.
       - **IV og IM** teller med verdien null.
+
+      Velger du **løp**, fylles fagene inn med typen karakter: standpunkt på trinnet der læreplanen sier det, ellers halvår, fordi et fag som fortsetter neste år, får halvårsvurdering med karakter ved slutten av skoleåret.
     nn: |
       Standpunktkarakterar, eksamenskarakterar og halvårsvurderingar med karakter frå Vg1, og til Vg3 også frå Vg2. Poengsummen blir rekna ut som til Vg1.
 
       - **Halvårsvurdering** tel berre i fag der læreplanen seier at det skal givast halvårsvurdering med karakter.
       - **Til Vg3:** I fag der standpunkt blir sett etter Vg3, til dømes norsk, tel berre halvårsvurderinga frå Vg2, ikkje den frå Vg1.
       - **IV og IM** tel med verdien null.
+
+      Vel du **løp**, blir faga fylte inn med typen karakter: standpunkt på trinnet der læreplanen seier det, elles halvår, fordi eit fag som held fram neste år, får halvårsvurdering med karakter ved slutten av skoleåret.
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 4-25 første ledd bokstav a og d", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-25" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: udir-fag-og-timefordeling, punkt: "Vedlegg 1, kapittel 3 Videregående opplæring" }
     - { id: udir-merknader-ofo, punkt: "Merknad til § 4-25" }
   kontrollert: null
   kontrollsporsmal:
     - "Er norsk et godt eksempel på et fag der bare halvårsvurderingen fra Vg2 teller ved inntak til Vg3?"
+    - "Stemmer typen (standpunkt eller halvår) som fylles inn for fellesfagene når man velger løp, f.eks. halvår i norsk og kroppsøving på Vg1 studieforberedende?"
 
 - id: po-teller-ikke
   type: regel

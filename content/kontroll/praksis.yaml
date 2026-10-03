@@ -164,3 +164,18 @@ praksis:
     grunnlag: Eier 03.10.2026. Opplæringsforskrifta § 4-25 sier Vg1 og eventuelt Vg2. Vestlands forskrift § 2-3 andre ledd nevner bare Vg2.
     berorer: [po-vl-vg3]
     bekreftet: null
+
+  - id: poeng-halvar-vg1-standpunkt-vg2
+    tittel: Halvår på Vg1 og standpunkt på Vg2 i samme fag, ved inntak til Vg3
+    sporsmal: >-
+      Teller halvårsvurderingen fra Vg1 ved inntak til Vg3 når faget har standpunkt på Vg2, f.eks. kroppsøving på
+      yrkesfag og fremmedspråk på studieforberedende?
+    appen: >-
+      Kalkulatoren lar begge telle, som ordlyden i § 4-25 («alle ... halvårsvurderingar med karakter i faga på vg1
+      og eventuelt vg2»). Bare når faget også har halvår på Vg2 (f.eks. norsk og kroppsøving på studieforberedende),
+      teller halvåret fra Vg1 ikke, som Udirs merknad sier.
+    grunnlag: >-
+      Udirs merknad til § 4-25 nevner bare fag der standpunkt settes etter Vg3. Om et standpunkt på Vg2 også
+      erstatter halvåret fra Vg1, står ikke i kildene.
+    berorer: [po-vg2-vg3]
+    bekreftet: null

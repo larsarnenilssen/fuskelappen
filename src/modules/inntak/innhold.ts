@@ -1,5 +1,6 @@
 // Laster veiviseren, stegene, fristene og reglene for poengberegningen fra content/inntak/ ved behov.
 import type { Frist, Innholdselement, Stegelement, Veiviserelement } from '../../core/innhold/skjema.ts';
+import type { Fagfordeling } from '../fag/tilbud/skjema.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/inntak/*.yaml', { import: 'default' });
 
@@ -27,6 +28,22 @@ export function hentInnhold(): Promise<Inntaksinnhold> {
     lopende = null;
   });
   return lopende;
+}
+
+// Fag- og timefordelingen fra Udir-1 (data/udir), til fagene i poengberegningen til Vg2 og Vg3. Den nyeste filen
+// brukes. Lastes første gang den trengs.
+const fordelinger = import.meta.glob<Fagfordeling>('/data/udir/fagfordeling-*.json', { import: 'default' });
+let fagfordeling: Promise<Fagfordeling> | null = null;
+
+export function hentFagfordeling(): Promise<Fagfordeling> {
+  const nyeste = Object.keys(fordelinger).sort().at(-1);
+  const last = nyeste ? fordelinger[nyeste] : undefined;
+  if (!last) return Promise.reject(new Error('Fant ikke fag- og timefordelingen.'));
+  fagfordeling ??= last();
+  fagfordeling.catch(() => {
+    fagfordeling = null;
+  });
+  return fagfordeling;
 }
 
 export const veiviserRute = (id: string) => `/inntak/${id}`;

@@ -8,7 +8,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Inntak: Poengberegning** til Vg1, Vg2 og Vg3 etter opplæringsforskrifta § 4-19 og § 4-25, med utregningen trinn for trinn og kilden til hver regel.
   - **Vg1:** Fagene med standpunkt på vitnemålet fra grunnskolen står ferdig, med eksamen og valgfag (snittet av valgfagene teller som én karakter).
-  - **Vg2 og Vg3:** Legg inn karakterene rad for rad, med standpunkt, eksamen og halvår. «Annen karakter» gir den beste av to karakterer i samme fag, ved privatisteksamen eller omvalg.
+  - **Vg2 og Vg3:** Velg løpet søkeren har gått, så fylles fagene inn med standpunkt eller halvår, også de felles programfagene på yrkesfag. Du kan endre radene, legge til flere eller starte med blankt ark. «Annen karakter» gir den beste av to karakterer i samme fag, ved privatisteksamen eller omvalg.
   - IV og IM teller med null, fritak og «deltatt» teller ikke, og kalkulatoren sier fra når søkeren skal behandles individuelt.
   - **Vestland:** tilleggspoeng på Vg1 musikk, dans og drama og Vg1 idrettsfag.
   - «Slik regnes poengene» forklarer reglene, med kilder.

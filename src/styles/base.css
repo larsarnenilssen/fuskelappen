@@ -5401,3 +5401,20 @@ button.frist-stripe-celle:hover {
 .kildelenke-kort {
   font-size: var(--str-xs);
 }
+
+/* Valget av løp og navnet på faget over raden (Vg2 og Vg3). */
+.poeng .poeng-lop {
+  padding-bottom: var(--rom-2);
+}
+
+.poeng-lop-hjelp {
+  margin: 0;
+  padding: 0 var(--rom-3) var(--rom-3);
+}
+
+.poeng-rad-navn {
+  display: block;
+  margin-bottom: var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+}

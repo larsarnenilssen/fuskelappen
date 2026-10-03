@@ -160,4 +160,19 @@ test.describe('poengberegning ved inntak', () => {
     await page.locator('.skjemadel[data-del="lonn"] select').selectOption('tilleggspoeng_idrett_2');
     await expect(page.locator('.resultatkort-verdi')).toHaveText('46,0');
   });
+
+  test('Vg3: et løp fyller inn fagene med standpunkt og halvår, og blankt ark tømmer radene', async ({ page }) => {
+    await page.goto('./#/inntak/poeng?trinn=vg3');
+    await expect(page.locator('#poeng-lop1')).toBeEnabled();
+    await page.locator('#poeng-lop1').selectOption('HS');
+    await page.locator('#poeng-lop2').selectOption('Helsearbeiderfag');
+    const navn = page.locator('.poeng-rad-navn');
+    await expect(navn.first()).toHaveText('Matematikk');
+    await expect(navn).toContainText(['Kroppsøving', 'Helsefremmende arbeid', 'Yrkesliv i helsearbeiderfag']);
+    // Kroppsøving på Vg1 yrkesfag fortsetter på Vg2 og har halvår.
+    const kroppsoving = page.locator('.poeng-rad', { has: page.locator('.poeng-rad-navn', { hasText: 'Kroppsøving' }) }).first();
+    await expect(kroppsoving.locator('select.poeng-type')).toHaveValue('halvar');
+    await page.locator('#poeng-lop1').selectOption('');
+    await expect(navn).toHaveCount(0);
+  });
 });

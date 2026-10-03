@@ -12,6 +12,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Resultatkort, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
+import type { KildeRef } from '../../../core/innhold/skjema.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentLokaleNokler, hentSupplerende, type Oppslag } from '../../../core/regler/index.ts';
 import { Skjemadel } from '../../arbeidstid/komponenter/Skjemadel.tsx';
@@ -19,7 +20,9 @@ import { useHent, useRegelkontekst, useSkjematilstand } from '../../arbeidstid/k
 import type { SideProps } from '../../typer.ts';
 import { GRUNNSKOLEFAG, GRUNNSKOLEFAG_KILDER, type Grunnskolefag } from '../beregning/grunnskolefag.ts';
 import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Karaktertype, type Poengresultat, type Poengsteg, type Vurdering } from '../beregning/poeng.ts';
-import { hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
+import { type Fellesfag, lopsrader, type Lopsrad, programomraderVg2, UTDANNINGSPROGRAM } from '../beregning/lop.ts';
+import { hentFagfordeling, hentInnhold, poengRute, type Inntaksinnhold } from '../innhold.ts';
+import type { Fagfordeling } from '../../fag/tilbud/skjema.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
 
 type Trinn = 'vg1' | 'vg2' | 'vg3';
@@ -40,6 +43,9 @@ interface Rad {
   /** Annen karakter i samme fag, eller null når den ikke er lagt til. */
   annen: Felt | null;
   erstattet: boolean;
+  /** Faget når raden er fylt inn fra et løp: et fellesfag (navnet står i strings) eller et programfag fra Udir-1. */
+  fellesfag?: Fellesfag | null;
+  programfag?: string | null;
 }
 
 interface Skjema {
@@ -50,6 +56,9 @@ interface Skjema {
   tillegg: string;
   vg1: Rad[];
   vg2: Rad[];
+  /** Utdanningsprogrammet på Vg1 (kode) og programområdet på Vg2 (yrkesfag), eller '' for blankt ark. */
+  lop1: string;
+  lop2: string;
 }
 
 const tomRad = (type: Karaktertype = 'standpunkt'): Rad => ({ type, v: '', annen: null, erstattet: false });
@@ -63,7 +72,15 @@ const start = (): Skjema => ({
   tillegg: '',
   vg1: nyeRader(8),
   vg2: nyeRader(8),
+  lop1: '',
+  lop2: '',
 });
+
+/** Radene for et løp, med tomme rader under til programfag og annet som ikke står i løpet. */
+const fraLop = (rader: readonly Lopsrad[]): Rad[] => [
+  ...rader.map((r): Rad => ({ ...tomRad(r.type), fellesfag: r.fag, programfag: r.programfag })),
+  ...nyeRader(3),
+];
 
 function lesFelt(f: Felt | null | undefined): Vurdering | null {
   if (!f) return null;
@@ -71,7 +88,11 @@ function lesFelt(f: Felt | null | undefined): Vurdering | null {
   return Number.isInteger(n) && n >= 1 && n <= 6 ? (n as Vurdering) : (f as Vurdering);
 }
 
-const tilRad = (r: Rad, trinn: 'Vg1' | 'Vg2'): Karakterrad => ({ type: r.type, vurdering: lesFelt(r.v), annen: lesFelt(r.annen), trinn, erstattet: r.erstattet });
+// Faget følger med, så halvårsvurderingen fra Vg1 i et fag med halvår også på Vg2 ikke teller til Vg3 (poeng.ts).
+const tilRad = (r: Rad, trinn: 'Vg1' | 'Vg2'): Karakterrad => {
+  const fag = r.fellesfag ?? r.programfag ?? null;
+  return { type: r.type, vurdering: lesFelt(r.v), annen: lesFelt(r.annen), trinn, erstattet: r.erstattet, ...(fag ? { fag } : {}) };
+};
 
 /** Valgene i en karaktervelger. Tallene først, så det som ikke er en karakter. */
 const VALG = {
@@ -110,6 +131,11 @@ export default function Poeng({ sporring }: SideProps) {
   const [s, sett] = useSkjematilstand<Skjema>('inntak-poeng', start);
   const endre = (del: Partial<Skjema>) => sett((g) => ({ ...g, ...del }));
   const trinn: Trinn = TRINN.includes(sporring.get('trinn') as Trinn) ? (sporring.get('trinn') as Trinn) : 'vg1';
+  // Fag- og timefordelingen lastes når kalkulatoren regner til Vg2 eller Vg3.
+  const [fordeling, settFordeling] = useState<Fagfordeling | null>(null);
+  useEffect(() => {
+    if (trinn !== 'vg1') void hentFagfordeling().then(settFordeling, () => undefined);
+  }, [trinn]);
 
   // Tilleggspoengene finnes bare i fylker som har dem (Vestland), og bare til Vg1.
   const tillegg = useMemo(
@@ -185,6 +211,7 @@ export default function Poeng({ sporring }: SideProps) {
             <Vg1Skjema s={s} endre={endre} tillegg={tillegg} />
           ) : (
             <>
+              <Lopvelger s={s} sett={sett} fordeling={fordeling} vg3={trinn === 'vg3'} />
               <Radliste
                 tittel={t('inntak.poeng.deler.vg1')}
                 del="undervisning"
@@ -314,6 +341,71 @@ function tilleggsnavn(t: T, nokkel: string, o: Oppslag): string {
   return navn === tekstnokkel ? t('inntak.poeng.tilleggGenerell', { poeng }) : t('inntak.poeng.tilleggValg', { gruppe: navn, poeng });
 }
 
+const LOP_KILDER: readonly KildeRef[] = [
+  { id: 'udir-fag-og-timefordeling', punkt: 'Vedlegg 1, kapittel 3 Videregående opplæring' },
+  { id: 'udir-grep', punkt: 'Vurderingsordningen i læreplanene for fellesfagene' },
+  { id: 'opplaeringsforskrifta', punkt: '§ 9-13 tredje ledd', url: 'https://lovdata.no/forskrift/2024-06-03-900/§9-13' },
+];
+
+/**
+ * Valget av løp: utdanningsprogrammet på Vg1, og til Vg3 i yrkesfag programområdet på Vg2. Valget fyller inn
+ * radene med fagene og typen karakter. «Blankt ark» gir tomme rader.
+ */
+function Lopvelger({ s, sett, fordeling, vg3 }: { s: Skjema; sett: (f: (g: Skjema) => Skjema) => void; fordeling: Fagfordeling | null; vg3: boolean }) {
+  const { t } = useTekst();
+  const program = UTDANNINGSPROGRAM.find((p) => p.kode === s.lop1);
+  const programomrader = fordeling && program?.retning === 'yrkesfag' ? programomraderVg2(fordeling, program.kode) : [];
+  const fyll = (lop1: string, lop2: string) =>
+    sett((g) => {
+      if (!fordeling || !lop1) return { ...g, lop1, lop2, vg1: nyeRader(8), vg2: nyeRader(8) };
+      const yrkesfag = UTDANNINGSPROGRAM.find((p) => p.kode === lop1)?.retning === 'yrkesfag';
+      return {
+        ...g,
+        lop1,
+        lop2,
+        vg1: fraLop(lopsrader(fordeling, lop1, 'Vg1')),
+        vg2: yrkesfag && !lop2 ? nyeRader(8) : fraLop(lopsrader(fordeling, lop1, 'Vg2', lop2 || null)),
+      };
+    });
+  return (
+    <Skjemadel tittel={t('inntak.poeng.lop.tittel')} del="stilling">
+      <div class="felt poeng-lop">
+        <label for="poeng-lop1">{t('inntak.poeng.lop.vg1')}</label>
+        <select id="poeng-lop1" value={s.lop1} disabled={!fordeling} onChange={(e) => fyll((e.target as HTMLSelectElement).value, '')}>
+          <option value="">{t('inntak.poeng.lop.blankt')}</option>
+          {UTDANNINGSPROGRAM.map((p) => (
+            <option key={p.kode} value={p.kode}>
+              {t(`inntak.poeng.lop.program.${p.kode as 'ST'}` as Tekstnokkel)}
+            </option>
+          ))}
+        </select>
+      </div>
+      {vg3 && programomrader.length > 0 && (
+        <div class="felt poeng-lop">
+          <label for="poeng-lop2">{t('inntak.poeng.lop.vg2')}</label>
+          <select id="poeng-lop2" value={s.lop2} onChange={(e) => fyll(s.lop1, (e.target as HTMLSelectElement).value)}>
+            <option value="">{t('inntak.poeng.lop.blankt')}</option>
+            {programomrader.map((po) => (
+              <option key={po} value={po}>
+                {po}
+              </option>
+            ))}
+          </select>
+        </div>
+      )}
+      <p class="felt-hjelp poeng-lop-hjelp">{t('inntak.poeng.lop.hjelp')}</p>
+      <details class="veiviser-kilder poeng-kilder">
+        <summary class="forklaring-knapp">
+          <Ikon navn="bok" />
+          <span>{t('inntak.poeng.lop.kilder')}</span>
+          <Ikon navn="ned" class="forklaring-pil" />
+        </summary>
+        <Kildeliste kilder={LOP_KILDER} niva={3} utenOverskrift />
+      </details>
+    </Skjemadel>
+  );
+}
+
 function Radliste({
   tittel,
   del,
@@ -338,6 +430,9 @@ function Radliste({
           const nr = String(i + 1);
           return (
             <li key={i} class="poeng-rad">
+              {(r.fellesfag || r.programfag) && (
+                <span class="poeng-rad-navn">{r.fellesfag ? t(`inntak.poeng.lop.fellesfag.${r.fellesfag}`) : r.programfag}</span>
+              )}
               <div class="poeng-rad-topp">
                 <select class="poeng-type" value={r.type} aria-label={t('inntak.poeng.typeEtikett', { nr })} onChange={(e) => settRad(i, { type: (e.target as HTMLSelectElement).value as Karaktertype })}>
                   {(['standpunkt', 'eksamen', 'halvar'] as const).map((x) => (
@@ -363,7 +458,8 @@ function Radliste({
                   <Karaktervelger verdi={r.annen} valg={VALG.vgs} etikett={t('inntak.poeng.annenEtikett', { nr })} onEndre={(annen) => settRad(i, { annen })} />
                 </div>
               )}
-              {vg3 && trinn === 'Vg1' && r.type === 'halvar' && (
+              {/* Rader med fag fra et løp håndteres av beregningen. Tomme rader kan merkes her. */}
+              {vg3 && trinn === 'Vg1' && r.type === 'halvar' && !r.fellesfag && !r.programfag && (
                 <label class="poeng-avkryssing">
                   <input type="checkbox" checked={r.erstattet} onChange={(e) => settRad(i, { erstattet: (e.target as HTMLInputElement).checked })} />
                   {t('inntak.poeng.erstattet')}
