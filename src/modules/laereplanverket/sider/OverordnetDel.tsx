@@ -15,6 +15,7 @@ import type { SideProps } from '../../typer.ts';
 import { type Element, elementRute, finnDel, sti } from '../data.ts';
 import type { Del } from '../typer.ts';
 import { Blokker, Lasting, Sok, delnavn, useLaereplanverket } from './felles.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 function Innhold({ del, apne }: { del: Del; apne: ReadonlySet<string> }) {
   const { t, malform } = useTekst();
@@ -104,7 +105,7 @@ export default function OverordnetDel({ parametre }: SideProps) {
     <div class="side">
       <h1 tabIndex={-1}>{t('laereplanverket.tittel')}</h1>
       <p class="dempet">
-        {t('laereplanverket.innledning')} <a href="#/begreper/overordnet-del">{t('laereplanverket.omBegrep.overordnetDel')}</a>
+        <Begrepstekst tekst={t('laereplanverket.innledning')} />
       </p>
       {typeof data === 'string' ? (
         <Lasting data={data} provIgjen={provIgjen} />

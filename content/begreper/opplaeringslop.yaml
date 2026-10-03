@@ -35,6 +35,7 @@
 - id: trinn-vg
   type: begrep
   tittel: { nb: "Vg1, vg2 og vg3", nn: "Vg1, vg2 og vg3" }
+  lenkeord: { nb: [], nn: [] }
   tekst:
     nb: Opplæringen i skole er normalt delt i videregående trinn 1, 2 og 3 (vg1, vg2 og vg3), og hvert trinn varer normalt ett skoleår. På yrkesfag er hovedmodellen to år i skole (vg1 og vg2) og to år i bedrift, der det ene året er opplæring og det andre verdiskaping. Noen løp avsluttes med vg3 i skole, og noen har bare vg1 i skole og tre års læretid (særløp).
     nn: Opplæringa i skule er normalt delt i vidaregåande trinn 1, 2 og 3 (vg1, vg2 og vg3), og kvart trinn varer normalt eitt skuleår. På yrkesfag er hovudmodellen to år i skule (vg1 og vg2) og to år i bedrift, der det eine året er opplæring og det andre verdiskaping. Nokre løp blir avslutta med vg3 i skule, og nokre har berre vg1 i skule og tre års læretid (særløp).
@@ -81,6 +82,7 @@
 - id: programfag
   type: begrep
   tittel: { nb: Programfag og valgfrie programfag, nn: Programfag og valfrie programfag }
+  lenkeord: { nb: ["programfag", "valgfrie programfag"], nn: ["programfag", "valfrie programfag"] }
   tekst:
     nb: Programfag er fag som hører til et bestemt utdanningsprogram. Valgfrie programfag er programfag elevene velger selv, for eksempel matematikk R1 eller biologi 1 på studiespesialisering. Hvilke fag skolen tilbyr, bestemmer fylkeskommunen. Elever på yrkesfag kan også ta programfag fra studieforberedende utdanningsprogram i yrkesfaglig fordypning.
     nn: Programfag er fag som høyrer til eit bestemt utdanningsprogram. Valfrie programfag er programfag elevane vel sjølve, til dømes matematikk R1 eller biologi 1 på studiespesialisering. Kva fag skulen tilbyr, avgjer fylkeskommunen. Elevar på yrkesfag kan også ta programfag frå studieførebuande utdanningsprogram i yrkesfagleg fordjuping.
@@ -97,6 +99,7 @@
 - id: yrkesfaglig-fordypning
   type: begrep
   tittel: { nb: Yrkesfaglig fordypning (YFF), nn: Yrkesfagleg fordjuping (YFF) }
+  lenkeord: { nb: ["yrkesfaglig fordypning"], nn: ["yrkesfagleg fordjuping"] }
   tekst:
     nb: >-
       Yrkesfaglig fordypning er et obligatorisk fag på vg1 og vg2 i de yrkesfaglige utdanningsprogrammene, ordinært
@@ -150,6 +153,7 @@
 - id: opplaering-i-bedrift
   type: begrep
   tittel: { nb: Lærefag og opplæring i bedrift, nn: Lærefag og opplæring i bedrift }
+  lenkeord: { nb: ["opplæring i bedrift", "lærefag"], nn: ["opplæring i bedrift", "lærefag"] }
   tekst:
     nb: Et lærefag fører fram til fag- eller svennebrev. I hovedmodellen har lærlingen to år i skole (vg1 og vg2) og deretter to års læretid i bedrift, der ett år er opplæring og ett år verdiskaping. Læreplanene for opplæring i bedrift har kompetansemål på vg3-nivå. Noen lærefag har bare vg1 i skole og tre års læretid (særløp), og noen har vg3 i skole før læretiden. Lærlinger som tar opplæring i bedrift som ellers gis i skole, kan være fritatt fra kroppsøving og yrkesfaglig fordypning.
     nn: Eit lærefag fører fram til fag- eller sveinebrev. I hovudmodellen har lærlingen to år i skule (vg1 og vg2) og deretter to års læretid i bedrift, der eitt år er opplæring og eitt år verdiskaping. Læreplanane for opplæring i bedrift har kompetansemål på vg3-nivå. Nokre lærefag har berre vg1 i skule og tre års læretid (særløp), og nokre har vg3 i skule før læretida. Lærlingar som tek opplæring i bedrift som elles blir gitt i skule, kan vere fritekne frå kroppsøving og yrkesfagleg fordjuping.
@@ -164,6 +168,7 @@
 - id: pabygging
   type: begrep
   tittel: { nb: Påbygging til generell studiekompetanse, nn: Påbygging til generell studiekompetanse }
+  lenkeord: { nb: ["påbygging"], nn: ["påbygging"] }
   tekst:
     nb: Vg3 påbygging til generell studiekompetanse er et år for elever som har fullført vg1 og vg2 på et yrkesfaglig utdanningsprogram. Det har ordinært minst 841 timer, med 701 timer fellesfag og 140 timer programfag fra studieforberedende utdanningsprogram. Har eleven brukt timer i yrkesfaglig fordypning til fellesfag eller programfag, endres fagene på vg3. Den som har fullført og bestått fag- og yrkesopplæring innen utgangen av året vedkommende fyller 24 år, har rett til ett års påbygging etter fag- eller svennebrevet (vg4).
     nn: Vg3 påbygging til generell studiekompetanse er eit år for elevar som har fullført vg1 og vg2 på eit yrkesfagleg utdanningsprogram. Det har ordinært minst 841 timar, med 701 timar fellesfag og 140 timar programfag frå studieførebuande utdanningsprogram. Har eleven brukt timar i yrkesfagleg fordjuping til fellesfag eller programfag, blir faga på vg3 endra. Den som har fullført og bestått fag- og yrkesopplæring innan utgangen av året vedkomande fyller 24 år, har rett til eitt års påbygging etter fag- eller sveinebrevet (vg4).

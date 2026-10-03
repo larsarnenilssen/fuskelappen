@@ -59,6 +59,7 @@
 - id: stjernefag
   type: begrep
   tittel: { nb: Fag merket *, nn: Fag merkte * }
+  lenkeord: { nb: [], nn: [] }
   tekst:
     nb: Noen fellesfag er merket * i vedlegg 1. Er det faktiske antallet elever i klassen 1–15, økes årsrammen i disse fagene med 52,5 timer (70 i 45-minutters enheter). For læreren betyr en større årsramme at hver undervisningstime i faget gir lavere beskjeftigelse enn når klassen har flere enn 15 elever, og læreren må undervise flere timer for å fylle stillingen. Eksempel – 140 årstimer i naturfag på vg1 studieforberedende (årsramme 554) gir 140 ÷ 554 × 100 = 25,27 % med 16 elever eller flere, og 140 ÷ 606,5 × 100 = 23,08 % med 15 eller færre.
     nn: Nokre fellesfag er merkte * i vedlegg 1. Er det faktiske talet på elevar i klassen 1–15, blir årsramma i desse faga auka med 52,5 timar (70 i 45-minutts einingar). For læraren tyder ei større årsramme at kvar undervisningstime i faget gir lågare sysselsetjing enn når klassen har fleire enn 15 elevar, og læraren må undervise fleire timar for å fylle stillinga. Døme – 140 årstimar i naturfag på vg1 studieførebuande (årsramme 554) gir 140 ÷ 554 × 100 = 25,27 % med 16 elevar eller fleire, og 140 ÷ 606,5 × 100 = 23,08 % med 15 eller færre.
@@ -73,6 +74,7 @@
 - id: minuttenheter
   type: begrep
   tittel: { nb: 60- og 45-minutters enheter, nn: 60- og 45-minutts einingar }
+  lenkeord: { nb: [], nn: [] }
   tekst:
     nb: Årsrammene oppgis både i 60-minutters timer og i 45-minutters enheter, for eksempel 525/700. En økt på 45 minutter er 0,75 time på 60 minutter. Kalkulatorene i appen regner i 60-minutters timer.
     nn: Årsrammene blir oppgitt både i 60-minutts timar og i 45-minutts einingar, til dømes 525/700. Ei økt på 45 minutt er 0,75 time på 60 minutt. Kalkulatorane i appen reknar i 60-minutts timar.
@@ -115,6 +117,7 @@
 - id: planfestet-arbeidstid
   type: begrep
   tittel: { nb: Planfestet arbeidstid, nn: Planfesta arbeidstid }
+  lenkeord: { nb: ["planfestet arbeidstid", "planfestede arbeidstid"], nn: ["planfesta arbeidstid"] }
   tekst:
     nb: Planfestet arbeidstid er den delen av årsverket som står i oversikten over lærerens arbeidstid. I videregående skole er den 1150 timer, med mindre partene på skolen blir enige om noe annet. Den kan være høyst 9 timer per dag og 37,5 timer per uke, og brukes først og fremst til undervisning, annet elevrettet arbeid, for- og etterarbeid, faglig ajourføring, samarbeid og kontakt med foresatte og samarbeidsinstanser.
     nn: Planfesta arbeidstid er den delen av årsverket som står i oversikta over arbeidstida til læraren. I vidaregåande skule er ho 1150 timar, om ikkje partane på skulen blir samde om noko anna. Ho kan vere høgst 9 timar per dag og 37,5 timar per veke, og blir først og fremst brukt til undervisning, anna elevretta arbeid, før- og etterarbeid, fagleg ajourføring, samarbeid og kontakt med føresette og samarbeidsinstansar.
@@ -130,6 +133,7 @@
 - id: selvdisponert-tid
   type: begrep
   tittel: { nb: Tid læreren disponerer selv, nn: Tid læraren disponerer sjølv }
+  lenkeord: { nb: ["selvdisponert tid", "tid læreren disponerer selv"], nn: ["sjølvdisponert tid", "tid læraren disponerer sjølv"] }
   tekst:
     nb: Den delen av årsverket som ikke er planfestet, disponerer læreren selv til for- og etterarbeid og faglig ajourføring. I videregående skole er det 1687,5 − 1150 = 537,5 timer i en hel stilling uten funksjoner. Den kalles ofte ikke-planfestet tid.
     nn: Den delen av årsverket som ikkje er planfesta, disponerer læraren sjølv til før- og etterarbeid og fagleg ajourføring. I vidaregåande skule er det 1687,5 − 1150 = 537,5 timar i ei heil stilling utan funksjonar. Ho blir ofte kalla ikkje-planfesta tid.
@@ -143,6 +147,7 @@
 - id: for-og-etterarbeid
   type: begrep
   tittel: { nb: For- og etterarbeid, nn: Før- og etterarbeid }
+  lenkeord: { nb: ["for- og etterarbeid"], nn: ["før- og etterarbeid"] }
   tekst:
     nb: For- og etterarbeid er arbeid med å forberede og følge opp undervisningen. Det gjøres både i planfestet tid, alene og sammen med kolleger, og i tiden læreren disponerer selv.
     nn: Før- og etterarbeid er arbeid med å førebu og følgje opp undervisninga. Det blir gjort både i planfesta tid, åleine og saman med kollegaer, og i tida læraren disponerer sjølv.
@@ -176,6 +181,7 @@
 - id: andre-arbeidsoppgaver
   type: begrep
   tittel: { nb: Funksjoner og andre arbeidsoppgaver, nn: Funksjonar og andre arbeidsoppgåver }
+  lenkeord: { nb: ["andre arbeidsoppgaver"], nn: ["andre arbeidsoppgåver"] }
   tekst:
     nb: Undervisningen kan reduseres etter avtale mellom læreren og rektor, slik at læreren kan gjøre andre oppgaver knyttet til undervisningen, for eksempel som kontaktlærer. Da reduseres tiden læreren disponerer selv med samme prosentandel, og planfestet tid øker tilsvarende. Går planfestet tid over 37,5 timer i uka, utvides arbeidsåret.
     nn: Undervisninga kan reduserast etter avtale mellom læraren og rektor, slik at læraren kan gjere andre oppgåver knytte til undervisninga, til dømes som kontaktlærar. Då blir tida læraren disponerer sjølv redusert med same prosentdel, og planfesta tid aukar tilsvarande. Går planfesta tid over 37,5 timar i veka, blir arbeidsåret utvida.
@@ -239,6 +245,7 @@
 - id: planleggingsdager
   type: begrep
   tittel: { nb: Planleggingsdager, nn: Planleggingsdagar }
+  lenkeord: { nb: ["planleggingsdag"], nn: ["planleggingsdag"] }
   tekst:
     nb: Arbeidsåret for lærere er elevenes skoleår og 6 dager, blant annet til planlegging og kompetanseutvikling. Disse dagene ligger utenom skoleukene og er planfestet tid. For en lærer i hel stilling er de 6 × 7,5 = 45 timer. Hvor mange timer en lærer i deltid eller i en periode skal ha, og hvor ferien for lærere over 60 år legges, avgjøres lokalt.
     nn: Arbeidsåret for lærarar er skuleåret til elevane og 6 dagar, mellom anna til planlegging og kompetanseutvikling. Desse dagane ligg utanom skulevekene og er planfesta tid. For ein lærar i heil stilling er dei 6 × 7,5 = 45 timar. Kor mange timar ein lærar i deltid eller i ein periode skal ha, og kvar ferien for lærarar over 60 år blir lagd, blir avgjort lokalt.
@@ -266,6 +273,7 @@
 - id: lokale-forhandlinger
   type: begrep
   tittel: { nb: Lokale forhandlinger om arbeidstid, nn: Lokale forhandlingar om arbeidstid }
+  lenkeord: { nb: ["lokale forhandlinger"], nn: ["lokale forhandlingar"] }
   tekst:
     nb: SFS 2213 gir rom for at partene på skolen eller i fylkeskommunen avtaler andre ordninger, for eksempel annen planfestet tid, flere dager i arbeidsåret, andre årsrammer eller en mer fleksibel arbeidstidsordning. Protokollen fra 2026 oppfordrer partene til å bruke dette handlingsrommet. Når fylke eller skole er valgt i appen, brukes lokale verdier der de er lagt inn, og de merkes med nivå.
     nn: SFS 2213 gir rom for at partane på skulen eller i fylkeskommunen avtaler andre ordningar, til dømes anna planfesta tid, fleire dagar i arbeidsåret, andre årsrammer eller ei meir fleksibel arbeidstidsordning. Protokollen frå 2026 oppmodar partane til å bruke dette handlingsrommet. Når fylke eller skule er vald i appen, blir lokale verdiar brukte der dei er lagde inn, og dei blir merkte med nivå.
@@ -282,6 +290,7 @@
 - id: drofting
   type: begrep
   tittel: { nb: Drøftinger, nn: Drøftingar }
+  lenkeord: { nb: ["drøfting"], nn: ["drøfting"] }
   tekst:
     nb: Drøftinger mellom arbeidsgiver og tillitsvalgte er regulert i hovedavtalen. SFS 2213 sier at innholdet i planleggingsdagene skal drøftes lokalt i tråd med hovedavtalen, og at fordelingen av tidsressurspotten drøftes på den enkelte skole.
     nn: Drøftingar mellom arbeidsgivar og tillitsvalde er regulerte i hovudavtalen. SFS 2213 seier at innhaldet i planleggingsdagane skal drøftast lokalt i tråd med hovudavtalen, og at fordelinga av tidsressurspotten blir drøfta på den enkelte skulen.
@@ -297,6 +306,7 @@
 - id: teknisk-undertid-overtid
   type: begrep
   tittel: { nb: Teknisk undertid og teknisk overtid, nn: Teknisk undertid og teknisk overtid }
+  lenkeord: { nb: ["teknisk undertid", "teknisk overtid"], nn: ["teknisk undertid", "teknisk overtid"] }
   tekst:
     nb: Når undervisning og funksjoner i stillingsplanen til sammen er mindre enn stillingsprosenten, har læreren teknisk undertid. Er de mer enn hel stilling, har læreren teknisk overtid for det som er over 100 %. Har læreren en stilling under 100 %, gir det som er over stillingen og opp til hel stilling variabel lønn. Differansen kan regnes om til årsrammetimer i et fag.
     nn: Når undervisning og funksjonar i stillingsplanen til saman er mindre enn stillingsprosenten, har læraren teknisk undertid. Er dei meir enn heil stilling, har læraren teknisk overtid for det som er over 100 %. Har læraren ei stilling under 100 %, gir det som er over stillinga og opp til heil stilling variabel løn. Differansen kan reknast om til årsrammetimar i eit fag.
@@ -311,6 +321,7 @@
 - id: livsfasetiltak
   type: begrep
   tittel: { nb: Livsfasetiltak (redusert undervisning), nn: Livsfasetiltak (redusert undervisning) }
+  lenkeord: { nb: ["livsfasetiltak"], nn: ["livsfasetiltak"] }
   tekst:
     nb: Lærere har rett til å få redusert undervisningen med inntil 6 % det første yrkesåret etter fullført faglig og pedagogisk utdanning, inntil 6 % fra det kalenderåret de fyller 57 år, og inntil 12,5 % fra det kalenderåret de fyller 60 år. For nyutdannede og lærere over 60 år legges den frigjorte tiden i planfestet tid til for- og etterarbeid og faglig ajourføring, med mindre partene blir enige om noe annet. For lærere som er 60 år og eldre er årsverket 1650 timer, og arbeidsåret fem dager kortere.
     nn: Lærarar har rett til å få redusert undervisninga med inntil 6 % det første yrkesåret etter fullført fagleg og pedagogisk utdanning, inntil 6 % frå det kalenderåret dei fyller 57 år, og inntil 12,5 % frå det kalenderåret dei fyller 60 år. For nyutdanna og lærarar over 60 år blir den frigjorde tida lagd i planfesta tid til før- og etterarbeid og fagleg ajourføring, om ikkje partane blir samde om noko anna. For lærarar som er 60 år og eldre er årsverket 1650 timar, og arbeidsåret fem dagar kortare.
@@ -342,6 +353,7 @@
 - id: funksjonsgodtgjoring
   type: begrep
   tittel: { nb: Godtgjøring for funksjoner, nn: Godtgjering for funksjonar }
+  lenkeord: { nb: ["funksjonsgodtgjøring", "godtgjøring for funksjoner"], nn: ["funksjonsgodtgjering", "godtgjering for funksjonar"] }
   tekst:
     nb: Lærere som har midlertidige funksjonsoppgaver, kan få et kronetillegg per år eller måned så lenge de har oppgavene. Tillegget kommer i tillegg til lønnen og er pensjonsgivende. Godtgjøringen fastsettes i forhandlinger. Avtalen setter minst 12 000 kroner i året for kontaktlærertjeneste og for rådgiver- eller sosiallærertjeneste. Godtgjøring for andre funksjoner fastsettes lokalt.
     nn: Lærarar som har mellombelse funksjonsoppgåver, kan få eit kronetillegg per år eller månad så lenge dei har oppgåvene. Tillegget kjem i tillegg til løna og er pensjonsgivande. Godtgjeringa blir fastsett i forhandlingar. Avtalen set minst 12 000 kroner i året for kontaktlærarteneste og for rådgivar- eller sosiallærarteneste. Godtgjering for andre funksjonar blir fastsett lokalt.

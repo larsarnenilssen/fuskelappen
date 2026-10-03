@@ -79,6 +79,28 @@ a {
   text-underline-offset: 0.15em;
 }
 
+/*
+ * Lenke til begrepsbanken i brødtekst (avgjørelse 050): i tekstfargen med tynn, stiplet, dempet strek, så teksten
+ * ikke blir full av blå lenker. Streken skiller lenken fra teksten uten farge (WCAG 1.4.1). Ved pek og fokus blir
+ * den heltrukket i lenkefargen.
+ */
+a.begrepslenke {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--farge-tekst-dempet);
+  text-decoration-thickness: 0.09em;
+  text-underline-offset: 0.22em;
+  text-decoration-skip-ink: none;
+}
+
+a.begrepslenke:hover,
+a.begrepslenke:focus-visible {
+  color: var(--farge-lenke);
+  text-decoration-style: solid;
+  text-decoration-color: currentColor;
+}
+
 :focus-visible {
   outline: var(--fokusring) solid var(--farge-fokus);
   outline-offset: 2px;

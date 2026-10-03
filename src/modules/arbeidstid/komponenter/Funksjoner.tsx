@@ -13,6 +13,7 @@ import type { Funksjon } from '../beregning/index.ts';
 import type { Oppdater } from '../kontekst.ts';
 import { Bryter, Vippe } from './Skjema.tsx';
 import { tallTekst } from './Utregning.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 export interface Funksjonstilstand {
   id: number;
@@ -111,7 +112,7 @@ export function Funksjoner({
           {t('arbeidstid.arbeidsplan.leggTilFunksjon')}
         </button>
         <Hjelp tema={t('arbeidstid.arbeidsplan.funksjoner')}>
-          <p class="felt-hjelp">{t('arbeidstid.arbeidsplan.funksjonerHjelp')}</p>
+          <p class="felt-hjelp"><Begrepstekst tekst={t('arbeidstid.arbeidsplan.funksjonerHjelp')} /></p>
         </Hjelp>
       </div>
     </>
@@ -298,15 +299,27 @@ export function Livsfasekort({
           <label for={id}>{t('arbeidstid.livsfase.velg')}</label>
           <Hjelp tema={t('arbeidstid.livsfase.tittel')}>
             <p class="felt-hjelp">
-              {t('arbeidstid.livsfase.hjelp', {
-                nyutdannet: tallTekst(satser.nyutdannet ?? 0),
-                fra57: tallTekst(satser.fra57 ?? 0),
-                fra60: tallTekst(satser.fra60 ?? 0),
-              })}
+              <Begrepstekst
+                tekst={t('arbeidstid.livsfase.hjelp', {
+                  nyutdannet: tallTekst(satser.nyutdannet ?? 0),
+                  fra57: tallTekst(satser.fra57 ?? 0),
+                  fra60: tallTekst(satser.fra60 ?? 0),
+                })}
+              />
             </p>
-            <p class="felt-hjelp">{t('arbeidstid.livsfase.planfestet')}</p>
-            {livsfase === 'fra57' && <p class="felt-hjelp">{t('arbeidstid.livsfase.fra57')}</p>}
-            {livsfase === 'fra60' && <p class="felt-hjelp">{t('arbeidstid.livsfase.fra60', { arsverk: tallTekst(arsverk60 ?? 0), dager: tallTekst(feriedager60 ?? 0) })}</p>}
+            <p class="felt-hjelp">
+              <Begrepstekst tekst={t('arbeidstid.livsfase.planfestet')} />
+            </p>
+            {livsfase === 'fra57' && (
+              <p class="felt-hjelp">
+                <Begrepstekst tekst={t('arbeidstid.livsfase.fra57')} />
+              </p>
+            )}
+            {livsfase === 'fra60' && (
+              <p class="felt-hjelp">
+                <Begrepstekst tekst={t('arbeidstid.livsfase.fra60', { arsverk: tallTekst(arsverk60 ?? 0), dager: tallTekst(feriedager60 ?? 0) })} />
+              </p>
+            )}
           </Hjelp>
         </div>
         <select id={id} value={livsfase} onChange={(e) => onEndring(e.currentTarget.value as Livsfase, null)}>

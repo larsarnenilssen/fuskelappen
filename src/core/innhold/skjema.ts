@@ -71,6 +71,11 @@ const felles = {
   stikkord: z.array(z.string()).default([]),
   relatert: z.array(z.string()).default([]),
   /**
+   * Bare for begreper: ordene som lenker til begrepet i brødteksten (avgjørelse 050), når tittelen ikke er ordet som
+   * står i teksten. Grunnform; vanlige bøyningsendelser kommer med. Tom liste: begrepet lenkes ikke automatisk.
+   */
+  lenkeord: z.object({ nb: z.array(z.string().trim().min(1)), nn: z.array(z.string().trim().min(1)) }).strict().optional(),
+  /**
    * Kodeliste fra VIGO Kodeverksbase som vises og kan søkes i under teksten (avgjørelse 026). Kodene kommer også
    * med i det samlede søket.
    */

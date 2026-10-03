@@ -50,6 +50,7 @@
 - id: fortrinnsrett
   type: begrep
   tittel: { nb: Fortrinnsrett ved inntak, nn: Fortrinnsrett ved inntak }
+  lenkeord: { nb: ["fortrinnsrett"], nn: ["fortrinnsrett"] }
   tekst:
     nb: Søkere med fortrinnsrett tas inn før søkerne som konkurrerer på poeng. Det er tre grunnlag. Søkere med omfattende behov for individuell tilrettelegging kan ha fortrinnsrett til et bestemt utdanningsprogram på Vg1. Søkere med sterkt nedsatt funksjonsevne kan ha fortrinnsrett til en skole som er særskilt tilrettelagt. Søkere med rett til opplæring i og på norsk tegnspråk har fortrinnsrett til opplæring med tolk eller på en skole med tegnspråk. Søknadsfristen er 1. februar.
     nn: Søkjarar med fortrinnsrett blir tekne inn før søkjarane som konkurrerer på poeng. Det er tre grunnlag. Søkjarar med omfattande behov for individuell tilrettelegging kan ha fortrinnsrett til eit bestemt utdanningsprogram på Vg1. Søkjarar med sterkt nedsett funksjonsevne kan ha fortrinnsrett til ein skole som er særskilt tilrettelagd. Søkjarar med rett til opplæring i og på norsk teiknspråk har fortrinnsrett til opplæring med tolk eller på ein skole med teiknspråk. Søknadsfristen er 1. februar.
@@ -65,6 +66,7 @@
 - id: individuell-behandling
   type: begrep
   tittel: { nb: Individuell behandling ved inntak, nn: Individuell behandling ved inntak }
+  lenkeord: { nb: ["individuell behandling"], nn: ["individuell behandling"] }
   tekst:
     nb: Søkere som ikke kan rangeres etter poeng, behandles individuelt. Det gjelder for eksempel søkere som mangler karakter i mer enn halvparten av fagene, søkere med vitnemål uten karakterer og søkere uten sammenlignbart karaktergrunnlag. Fylkeskommunen vurderer søkeren i stedet for å regne poeng, og søkere uten karakterer rangeres etter uttalelser fra skolen de kommer fra.
     nn: Søkjarar som ikkje kan rangerast etter poeng, blir behandla individuelt. Det gjeld til dømes søkjarar som manglar karakter i meir enn halvparten av faga, søkjarar med vitnemål utan karakterar og søkjarar utan samanliknbart karaktergrunnlag. Fylkeskommunen vurderer søkjaren i staden for å rekne poeng, og søkjarar utan karakterar blir rangerte etter fråsegner frå skolen dei kjem frå.

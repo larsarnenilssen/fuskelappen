@@ -17,6 +17,7 @@ import { programgruppe } from '../tilbud/modell.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
 import { gjeldendeKoder } from '../vigo/oppslag.ts';
 import type { Fagrelasjoner } from '../vigo/skjema.ts';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 /** Søket ser ut som én fagkode, f.eks. «psp5596». */
 const FAGKODE = /^[A-Za-z]{3}[A-Za-z0-9]{2}\d{2}$/;
@@ -293,7 +294,7 @@ export default function Liste({ sporring }: SideProps) {
     <div class="side">
       <TilToppen />
       <h1 tabIndex={-1}>{t('fag.tittel')}</h1>
-      <p class="dempet">{t('fag.innledning')}</p>
+      <p class="dempet"><Begrepstekst tekst={t('fag.innledning')} /></p>
       {feil ? (
         <p role="alert">{t('fag.lasterFeil')}</p>
       ) : indeks === null ? (

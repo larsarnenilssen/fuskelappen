@@ -78,6 +78,7 @@
 - id: fysisk-tilrettelegging
   type: begrep
   tittel: { nb: Fysisk tilrettelegging og tekniske hjelpemidler, nn: Fysisk tilrettelegging og tekniske hjelpemiddel }
+  lenkeord: { nb: ["fysisk tilrettelegging", "tekniske hjelpemidler"], nn: ["fysisk tilrettelegging", "tekniske hjelpemiddel"] }
   tekst:
     nb: Elever har rett til den fysiske tilretteleggingen og de tekniske hjelpemidlene de trenger for å delta i opplæringen, og til opplæring i å bruke dem. Det kan være tilpasset klasserom, inventar, utstyr og programvare. Blinde og sterkt svaksynte elever har også rett til opplæring i mobilitet. Det krever et vedtak, men ikke sakkyndig vurdering.
     nn: Elevar har rett til den fysiske tilrettelegginga og dei tekniske hjelpemidla dei treng for å delta i opplæringa, og til opplæring i å bruke dei. Det kan vere tilpassa klasserom, inventar, utstyr og programvare. Blinde og sterkt svaksynte elevar har også rett til opplæring i mobilitet. Det krev eit vedtak, men ikkje sakkunnig vurdering.
@@ -124,6 +125,7 @@
 - id: individuell-opplaeringsplan
   type: begrep
   tittel: { nb: Individuell opplæringsplan (IOP), nn: Individuell opplæringsplan (IOP) }
+  lenkeord: { nb: ["individuell opplæringsplan", "IOP"], nn: ["individuell opplæringsplan", "IOP"] }
   tekst:
     nb: En individuell opplæringsplan (IOP) er skolens plan for opplæringen til en elev med individuelt tilrettelagt opplæring. Den bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den gir ingen nye rettigheter. Skolen lager den så raskt som mulig etter vedtaket, sammen med eleven og foreldrene, og evaluerer utbyttet én gang i året.
     nn: Ein individuell opplæringsplan (IOP) er planen til skolen for opplæringa til ein elev med individuelt tilrettelagd opplæring. Han byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han gir ingen nye rettar. Skolen lagar han så raskt som mogleg etter vedtaket, saman med eleven og foreldra, og evaluerer utbyttet éin gong i året.
@@ -140,6 +142,7 @@
 - id: selvraderett-15-ar
   type: begrep
   tittel: { nb: Selvråderett fra 15 år, nn: Sjølvråderett frå 15 år }
+  lenkeord: { nb: ["selvråderett"], nn: ["sjølvråderett"] }
   tekst:
     nb: En elev som har fylt 15 år, bestemmer selv i saker etter opplæringslova som gjelder valg av opplæring, og samtykker selv, for eksempel til sakkyndig vurdering og vedtak om individuelt tilrettelagt opplæring. Det gjelder de fleste elevene i videregående. Foreldrene til elever under 18 år skal likevel fortsatt få informasjon.
     nn: Ein elev som har fylt 15 år, avgjer sjølv i saker etter opplæringslova som gjeld val av opplæring, og samtykkjer sjølv, til dømes til sakkunnig vurdering og vedtak om individuelt tilrettelagd opplæring. Det gjeld dei fleste elevane i vidaregåande. Foreldra til elevar under 18 år skal likevel framleis få informasjon.
@@ -156,6 +159,7 @@
 - id: elevens-beste
   type: begrep
   tittel: { nb: Elevens beste og medvirkning, nn: Det beste for eleven og medverknad }
+  lenkeord: { nb: ["elevens beste"], nn: ["det beste for eleven"] }
   tekst:
     nb: Ved handlinger og avgjørelser som gjelder elever, skal det som er best for eleven, være et grunnleggende hensyn. Elevene har også rett til å medvirke og bli hørt i alt som gjelder dem selv, og meningene deres skal vektlegges etter alder og modenhet. Begge deler gjelder når skolen vurderer tiltak og fylkeskommunen fatter vedtak.
     nn: Ved handlingar og avgjerder som gjeld elevar, skal det som er best for eleven, vere eit grunnleggjande omsyn. Elevane har også rett til å medverke og bli høyrde i alt som gjeld dei sjølve, og meiningane deira skal vektleggjast etter alder og modning. Begge delar gjeld når skolen vurderer tiltak og fylkeskommunen gjer vedtak.

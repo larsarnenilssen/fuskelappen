@@ -17,6 +17,7 @@ import type { SideProps } from '../../typer.ts';
 import { fristerRute, hentInnhold, type Inntaksinnhold } from '../innhold.ts';
 import { FILTRE, gjelder, heleAret, kortManed, lesFilter, manedsnavn, manedsoverskrift, perManed, sorter, tidspunkt, type Filter } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 const manedId = (m: number) => `frister-${m}`;
 
@@ -54,7 +55,7 @@ export default function Frister({ sporring }: SideProps) {
         <h1 tabIndex={-1}>{t('inntak.frister.tittel')}</h1>
         <FavorittKnapp id="inntak:frister" navn={t('inntak.frister.tittel')} />
       </div>
-      <p class="ingress">{t('inntak.frister.innledning')}</p>
+      <p class="ingress"><Begrepstekst tekst={t('inntak.frister.innledning')} /></p>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (

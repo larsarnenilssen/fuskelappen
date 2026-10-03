@@ -19,6 +19,7 @@
 - id: fag-og-timefordeling
   type: begrep
   tittel: { nb: Fag- og timefordelingen, nn: Fag- og timefordelinga }
+  lenkeord: { nb: ["fag- og timefordeling"], nn: ["fag- og timefordeling"] }
   tekst:
     nb: Fag- og timefordelingen er en av de tre delene av læreplanverket, sammen med overordnet del og læreplanene for fag. Den viser hvilke fag elevene skal ha, og hvor mange timer hvert fag har. Udir gir den ut som rundskriv. Rundskrivet som gjelder nå, er Udir-1-2026, som erstatter Udir-1-2025. For videregående opplæring viser rundskrivet også tilbudsstrukturen. Udir skriver i rundskrivet at både læreplanene og tabellene med fag- og timefordelingen er forskrifter. Opplæringsløp i appen viser fagene og timene i hvert tilbud.
     nn: Fag- og timefordelinga er ein av dei tre delane av læreplanverket, saman med overordna del og læreplanane for fag. Ho viser kva fag elevane skal ha, og kor mange timar kvart fag har. Udir gir henne ut som rundskriv. Rundskrivet som gjeld no, er Udir-1-2026, som erstattar Udir-1-2025. For vidaregåande opplæring viser rundskrivet også tilbodsstrukturen. Udir skriv i rundskrivet at både læreplanane og tabellane med fag- og timefordelinga er forskrifter. Opplæringsløp i appen viser faga og timane i kvart tilbod.
@@ -65,6 +66,7 @@
 - id: kompetanse
   type: begrep
   tittel: { nb: Kompetanse, nn: Kompetanse }
+  lenkeord: { nb: [], nn: [] }
   tekst:
     nb: Læreplanene for fag bygger på en felles definisjon av kompetanse i overordnet del. Kompetanse er å kunne tilegne seg og bruke kunnskaper og ferdigheter til å mestre utfordringer og løse oppgaver, både i kjente og ukjente sammenhenger. Kompetanse innebærer også forståelse og evne til refleksjon og kritisk tenkning. Forståelsen av kompetanse skal ligge til grunn for arbeidet med læreplanene og for vurderingen av elevenes faglige kompetanse.
     nn: Læreplanane for fag byggjer på ein felles definisjon av kompetanse i overordna del. Kompetanse er å kunne tileigne seg og bruke kunnskapar og ferdigheiter til å meistre utfordringar og løyse oppgåver, både i kjende og ukjende samanhengar. Kompetanse inneber også forståing og evne til refleksjon og kritisk tenking. Forståinga av kompetanse skal liggje til grunn for arbeidet med læreplanane og for vurderinga av den faglege kompetansen til elevane.
@@ -94,6 +96,7 @@
 - id: tverrfaglige-temaer
   type: begrep
   tittel: { nb: Tverrfaglige temaer, nn: Tverrfaglege tema }
+  lenkeord: { nb: ["tverrfaglige temaer", "tverrfaglig tema"], nn: ["tverrfaglege tema", "tverrfagleg tema"] }
   tekst:
     nb: Læreplanverket har tre tverrfaglige temaer – folkehelse og livsmestring, demokrati og medborgerskap, og bærekraftig utvikling. Temaene tar utgangspunkt i aktuelle samfunnsutfordringer, og elevene skal arbeide med dem gjennom problemstillinger fra ulike fag. I motsetning til de grunnleggende ferdighetene er temaene ikke med i alle fag. Målene står i kompetansemål i fagene der temaene er relevante, og læreplanen beskriver hva temaet innebærer i faget.
     nn: Læreplanverket har tre tverrfaglege tema – folkehelse og livsmeistring, demokrati og medborgarskap, og berekraftig utvikling. Temaa tek utgangspunkt i aktuelle samfunnsutfordringar, og elevane skal arbeide med dei gjennom problemstillingar frå ulike fag. I motsetnad til dei grunnleggjande ferdigheitene er temaa ikkje med i alle fag. Måla står i kompetansemål i faga der temaa er relevante, og læreplanen beskriv kva temaet inneber i faget.

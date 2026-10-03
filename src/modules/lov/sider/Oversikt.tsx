@@ -12,6 +12,7 @@ import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
 import { dokumentRute, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
 import type { Lovdokument, Lovoversikt } from '../typer.ts';
 import { Lasting, Sok, useLast } from './felles.tsx';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 type Dokumentinfo = Lovoversikt['dokumenter'][number];
 
@@ -76,7 +77,7 @@ export default function Oversikt() {
     <div class="side">
       <h1 tabIndex={-1}>{t('lov.tittel')}</h1>
       <p class="dempet">
-        {t('lov.innledning')} <a href="#/begreper/lov">{t('lov.omBegrep.lov')}</a>
+        <Begrepstekst tekst={t('lov.innledning')} />
       </p>
       {typeof data === 'string' ? (
         <Lasting feil={data === 'feil'} provIgjen={provIgjen} />

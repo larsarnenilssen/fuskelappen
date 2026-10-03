@@ -3,6 +3,7 @@
 - id: lov
   type: begrep
   tittel: { nb: Lov, nn: Lov }
+  lenkeord: { nb: ["lov", "loven", "lover", "lovene"], nn: ["lov", "lova", "lover", "lovene"] }
   tekst:
     nb: En lov er regler som Stortinget har vedtatt. Opplæringslova og forvaltningsloven er lover. Lovene gir de viktigste rettighetene og pliktene, og gir ofte departementet eller Kongen myndighet til å gi mer detaljerte regler i forskrift, for eksempel om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitlene som gjelder videregående opplæring.
     nn: Ei lov er reglar som Stortinget har vedteke. Opplæringslova og forvaltningsloven er lover. Lovene gir dei viktigaste rettane og pliktene, og gir ofte departementet eller Kongen mynde til å gi meir detaljerte reglar i forskrift, til dømes om inntak og vurdering. I Regelverk i appen står opplæringslova, forvaltningsloven og arbeidsmiljøloven med kapitla som gjeld vidaregåande opplæring.
@@ -36,6 +37,7 @@
 - id: lokal-forskrift
   type: begrep
   tittel: { nb: Lokal forskrift, nn: Lokal forskrift }
+  lenkeord: { nb: ["lokal forskrift", "lokale forskrift"], nn: ["lokal forskrift", "lokale forskrift"] }
   tekst:
     nb: En lokal forskrift er en forskrift som en kommune eller fylkeskommune gir, og som gjelder der. Fylkeskommunen skal blant annet gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjøres i Norsk Lovtidend og står på Lovdata, men de er ikke med i Lovdatas gratis datasett. Appen henter dem derfor fra siden hos Lovdata og viser dem under Regelverk for dem som har valgt fylket.
     nn: Ei lokal forskrift er ei forskrift som ein kommune eller fylkeskommune gir, og som gjeld der. Fylkeskommunen skal mellom anna gi forskrift om skolereglar (opplæringslova § 10-7), skolerute (§ 14-1) og inntak og formidling til læreplass (opplæringsforskrifta § 4-5 og § 7-2). Lokale forskrifter skal kunngjerast i Norsk Lovtidend og står på Lovdata, men dei er ikkje med i det gratis datasettet til Lovdata. Appen hentar dei difor frå sida hos Lovdata og viser dei under Regelverk for dei som har valt fylket.
@@ -53,6 +55,7 @@
 - id: paragraf
   type: begrep
   tittel: { nb: Paragraf og ledd, nn: Paragraf og ledd }
+  lenkeord: { nb: ["paragraf"], nn: ["paragraf"] }
   tekst:
     nb: Lover og forskrifter er delt i kapitler og paragrafer, skrevet med tegnet §. I opplæringslova og opplæringsforskrifta har paragrafene kapittelnummeret først, så § 11-1 er første paragraf i kapittel 11. Et ledd er et avsnitt i en paragraf, og leddene telles ovenfra, så «§ 5-1 første ledd» er første avsnitt i § 5-1. Lister i et ledd har bokstaver eller tall, for eksempel «bokstav a». Det samme nummeret kan finnes i både loven og forskriften, så det er lurt å skrive hvilken av dem man viser til.
     nn: Lover og forskrifter er delte i kapittel og paragrafar, skrivne med teiknet §. I opplæringslova og opplæringsforskrifta har paragrafane kapittelnummeret først, så § 11-1 er første paragraf i kapittel 11. Eit ledd er eit avsnitt i ein paragraf, og ledda blir talde ovanfrå, så «§ 5-1 første ledd» er første avsnitt i § 5-1. Lister i eit ledd har bokstavar eller tal, til dømes «bokstav a». Same nummeret kan finnast i både lova og forskrifta, så det er lurt å skrive kva for ei av dei ein viser til.

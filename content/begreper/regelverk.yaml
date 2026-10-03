@@ -4,6 +4,7 @@
 - id: tariffavtale
   type: begrep
   tittel: { nb: Tariffavtale og særavtale, nn: Tariffavtale og særavtale }
+  lenkeord: { nb: ["tariffavtale", "særavtale"], nn: ["tariffavtale", "særavtale"] }
   tekst:
     nb: >-
       En tariffavtale er en avtale mellom en arbeidsgiverorganisasjon og arbeidstakerorganisasjoner om lønn og arbeidsvilkår. For fylkeskommunene er KS arbeidsgiverorganisasjon, og [Hovedtariffavtalen](#/lov/hovedtariffavtalen) gjelder i hele KS-området. En særavtale regulerer et avgrenset tema mer i detalj. [SFS 2213](#/lov/sfs2213) er særavtalen om arbeidstid for undervisningspersonalet. Hovedtariffavtalen gjelder så langt særavtalen ikke sier noe annet.
@@ -119,6 +120,7 @@
 - id: oppsigelse-og-avskjed
   type: begrep
   tittel: { nb: Oppsigelse og avskjed, nn: Oppseiing og avskil }
+  lenkeord: { nb: ["oppsigelse", "avskjed"], nn: ["oppseiing", "avskil"] }
   tekst:
     nb: >-
       Ved oppsigelse slutter arbeidsforholdet etter en oppsigelsesfrist, og oppsigelsen må være saklig begrunnet i virksomhetens, arbeidsgiverens eller arbeidstakerens forhold. Avskjed betyr at arbeidstakeren må gå med en gang, og krever grovt pliktbrudd eller annet vesentlig mislighold av arbeidsavtalen. Begge deler skal være skriftlig. Se [arbeidsmiljøloven § 15-7](#/lov/arbeidsmiljoloven/15-7) og [§ 15-14](#/lov/arbeidsmiljoloven/15-14).
@@ -137,6 +139,7 @@
 - id: klage
   type: begrep
   tittel: { nb: Klage på enkeltvedtak, nn: Klage på enkeltvedtak }
+  lenkeord: { nb: ["klage"], nn: ["klage"] }
   tekst:
     nb: >-
       Et enkeltvedtak kan påklages av en part, eller andre med rettslig klageinteresse, til organet som er nærmest overordnet det som traff vedtaket. Klagefristen er tre uker fra parten fikk vite om vedtaket. Klagen sendes til den som traff vedtaket, som kan endre vedtaket selv før saken eventuelt sendes til klageinstansen. Se [forvaltningsloven § 28](#/lov/forvaltningsloven/28) og [§ 29](#/lov/forvaltningsloven/29).

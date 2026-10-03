@@ -13,6 +13,7 @@ import { Fagfelt, tilArsrammevalg, tomArsrammeplass, useFagindeks, Vippe } from 
 import { medEnhet, tallTekst, Utregningskort } from '../komponenter/Utregning.tsx';
 import { Varianter } from '../komponenter/Varianter.tsx';
 import { useHent, useSkjematilstand } from '../kontekst.ts';
+import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 
 function tallFraAdresse(navn: string): number | null {
   const verdi = Number(lesHash(location.hash).sporring.get(navn) ?? '');
@@ -73,7 +74,7 @@ export default function Overtid() {
                 <div class="med-hjelp liten">
                   <span class="dempet">{t('arbeidstid.overtid.forklaringTema')}</span>
                   <Hjelp tema={t('arbeidstid.overtid.forklaringTema')}>
-                    <p class="felt-hjelp">{t('arbeidstid.overtid.forklaring', { konstant: tallTekst(konstant), perProsent: tallTekst(konstant / 100) })}</p>
+                    <p class="felt-hjelp"><Begrepstekst tekst={t('arbeidstid.overtid.forklaring', { konstant: tallTekst(konstant), perProsent: tallTekst(konstant / 100) })} /></p>
                   </Hjelp>
                 </div>
               </Utregningskort>

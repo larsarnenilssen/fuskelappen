@@ -8,6 +8,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Tre nye begreper i Inntak:** karakterpoeng, privatist og tilleggspoeng (Vestland, vises når fylket er valgt).
 
+### Endret
+
+- **Begreper i teksten lenker til begrepsbanken:** Første gang et begrep står i en tekst, kan du trykke på ordet for å lese hva det betyr. Lenken har en tynn, stiplet strek under, så teksten ikke fylles med blå lenker. Gjelder alle tekster, innledninger og hjelpetekster, og nye begreper får lenker av seg selv.
+
 ## [0.28.0] – 2026-10-03
 
 ### Lagt til
