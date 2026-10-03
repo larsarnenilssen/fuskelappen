@@ -11,7 +11,7 @@ test.describe('veiviser', () => {
     await page.goto('./#/tilrettelegging');
     await page.getByRole('link', { name: /Tilpasset opplæring og individuell tilrettelegging/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
-    await expect(steg).toHaveText('Hvor saken starter');
+    await expect(steg).toHaveText(['Hvor saken starter']);
 
     await page.getByRole('link', { name: 'I den ordinære opplæringen', exact: true }).click();
     await expect(page).toHaveURL(/steg=ti-tilpasset&svar=ordinar$/);
@@ -35,7 +35,7 @@ test.describe('veiviser', () => {
     await page.goBack();
     await expect(steg).toHaveText(['Opplyse saken om assistanse eller fysisk tilrettelegging', 'Vedtak om individuell tilrettelegging']);
     await page.getByRole('link', { name: 'Tilbake til «Elevens behov»' }).click();
-    await expect(steg).toHaveText('Elevens behov');
+    await expect(steg).toHaveText(['Elevens behov']);
   });
 
   test('en delt adresse åpner samme steg med veien hit, og et tidligere steg kan velges', async ({ page }, info) => {
@@ -82,7 +82,7 @@ test.describe('veiviser', () => {
     const svar = page.getByRole('link', { name: 'Nei, utbyttet er godt nok' });
     await svar.focus();
     await page.keyboard.press('Enter');
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Fortsett den tilpassede opplæringen');
+    await expect(page.locator('.veiviser-stegtittel')).toHaveText(['Fortsett den tilpassede opplæringen']);
     await expect(page.locator('.veiviser-stegtittel')).toBeFocused();
   });
 
@@ -144,23 +144,23 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
     await page.goto('./#/tilrettelegging');
     await page.getByRole('link', { name: /Særskilt språkopplæring og kort botid/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
-    await expect(steg).toHaveText('Hvem som har rett');
+    await expect(steg).toHaveText(['Hvem som har rett']);
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
-    await expect(steg).toHaveText('Vurdere norskferdighetene');
+    await expect(steg).toHaveText(['Vurdere norskferdighetene']);
     await page.getByRole('link', { name: 'Nei', exact: true }).click();
     // Vedtaket står på samme side som spørsmålet om kort botid.
     await expect(steg).toHaveText(['Vedtak om særskilt språkopplæring', 'Elever med kort botid']);
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
-    await expect(steg).toHaveText('Innføringsopplæring');
+    await expect(steg).toHaveText(['Innføringsopplæring']);
     await expect(page.locator('.veiviser-fakta')).toContainText('høyst to år');
     await page.getByRole('link', { name: 'Ja, eleven samtykker' }).click();
     await expect(steg).toHaveText(['Læreplanene i særskilt språkopplæring', 'Jevnlig vurdering']);
     // Et svar kan føre til samme steg igjen, og veien husker begge.
     await page.getByRole('link', { name: /^Nei, eleven trenger fortsatt/ }).click();
-    await expect(steg).toHaveText('Jevnlig vurdering');
+    await expect(steg).toHaveText(['Jevnlig vurdering']);
     await expect(page).toHaveURL(/steg=sp-oppfolging&svar=ja\.nei\.ja\.ja\.nei$/);
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
-    await expect(steg).toHaveText('Over til vanlig opplæring');
+    await expect(steg).toHaveText(['Over til vanlig opplæring']);
     await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Oppfølging/);
   });
 
@@ -194,7 +194,7 @@ test.describe('veiviser: særskilt språkopplæring og kort botid', () => {
   test('elever med norsk eller samisk som morsmål får en lenke til tilpasset opplæring', async ({ page }) => {
     await page.goto(SPRAK);
     await page.getByRole('link', { name: /^Nei, eleven har norsk eller samisk/ }).click();
-    await expect(page.locator('.veiviser-stegtittel')).toHaveText('Ikke særskilt språkopplæring');
+    await expect(page.locator('.veiviser-stegtittel')).toHaveText(['Ikke særskilt språkopplæring']);
     await page.locator('.veiviser-steg').getByRole('link', { name: 'tilpasset opplæring' }).click();
     await expect(page.locator('main h1')).toHaveText('Tilpasset opplæring og individuell tilrettelegging');
   });

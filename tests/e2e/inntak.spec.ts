@@ -12,15 +12,15 @@ test.describe('inntak', () => {
     await expect(page.getByText('Viser de nasjonale reglene. Fylket kan ha lokale regler om inntak.')).toBeVisible();
     await page.getByRole('link', { name: /Rett, inntak og søknad/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
-    await expect(steg).toHaveText('Grunnskolen');
+    await expect(steg).toHaveText(['Grunnskolen']);
 
     await page.getByRole('link', { name: 'Ja, vitnemål fra norsk grunnskole' }).click();
     await page.getByRole('link', { name: 'Ja', exact: true }).click();
     await page.getByRole('link', { name: 'Nei', exact: true }).click();
     await page.getByRole('link', { name: 'Før skoleåret søkeren fyller 19' }).click();
-    await expect(steg).toHaveText('Ungdomsrett');
+    await expect(steg).toHaveText(['Ungdomsrett']);
     await page.getByRole('link', { name: 'Vg1', exact: true }).click();
-    await expect(steg).toHaveText('Inntaksmåte');
+    await expect(steg).toHaveText(['Inntaksmåte']);
     // Svarene står under overskriftene «Fortrinnsrett» og «Uten fortrinnsrett».
     await expect(page.locator('.veiviser-svargruppe-tittel')).toHaveText(['Fortrinnsrett', 'Uten fortrinnsrett']);
     await page.getByRole('group', { name: 'Uten fortrinnsrett' }).getByRole('link', { name: 'Konkurrerer på poeng' }).click();
