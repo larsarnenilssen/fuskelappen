@@ -8,6 +8,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Særskilt språkopplæring:** Steget om læreplaner viser nå alle tre læreplanene for særskilt språkopplæring i en boks som kan åpnes: grunnleggende norsk, norsk for kort botid og morsmål for språklige minoriteter. Hver læreplan har merke for om den er kompetansegivende, vurderingsuttrykket og alle fagkodene, gruppert etter trinn, med lenke til fagene.
 
+### Endret
+
+- **Tilrettelegging:** Veiviserne på oversikten står som like høye kort med en liten fasestolpe og fasene under, som stolpen øverst i veiviseren. På stor skjerm står kortene side om side.
+
 ## [0.24.0] – 2026-10-03
 
 ### Lagt til

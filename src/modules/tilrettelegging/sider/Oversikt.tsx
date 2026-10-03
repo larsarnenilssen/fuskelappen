@@ -62,21 +62,32 @@ export default function Oversikt() {
       ) : (
         <section>
           <h2 class="liten-overskrift">{t('tilrettelegging.veivisere')}</h2>
-          <ul class="liste">
+          {/* Like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren (eier 03.10.2026). */}
+          <ul class="veiviser-innganger">
             {velgSynlige(innhold.veivisere, sted).map((v) => (
               <li key={v.id}>
-                <a class="listelenke veiviser-inngang" href={`#${veiviserRute(v.id)}`}>
-                  <span class="listelenke-tekst">
-                    <span class="listelenke-tittel">{v.tittel[malform]}</span>
-                    {v.faser.length > 0 && (
+                <a class="veiviser-inngang" href={`#${veiviserRute(v.id)}`}>
+                  <span class="veiviser-inngang-topp">
+                    <span class="veiviser-inngang-tittel">{v.tittel[malform]}</span>
+                    <Ikon navn="hoyre" />
+                  </span>
+                  {v.faser.length > 0 && (
+                    <>
+                      <span class="skjult-visuelt">. {t('tilrettelegging.faser', { faser: v.faser.map((f) => f.tittel[malform]).join(', ') })}</span>
                       <span class="veiviser-inngang-faser" aria-hidden="true">
                         {v.faser.map((f) => (
-                          <span key={f.id}>{f.tittel[malform]}</span>
+                          <span key={f.id} class="veiviser-inngang-fase">
+                            <span class="veiviser-inngang-strek" />
+                            <span class="veiviser-inngang-fasenavn">{f.tittel[malform]}</span>
+                          </span>
                         ))}
                       </span>
-                    )}
-                  </span>
-                  <Ikon navn="hoyre" />
+                      {/* På svært smal skjerm er det ikke plass til navnene under stolpen. Da står antallet her. */}
+                      <span class="veiviser-inngang-antall" aria-hidden="true">
+                        {t('tilrettelegging.antallFaser', { antall: String(v.faser.length) })}
+                      </span>
+                    </>
+                  )}
                 </a>
               </li>
             ))}
