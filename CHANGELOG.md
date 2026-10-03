@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.28.0] – 2026-10-03
+
 ### Lagt til
 
 - **Inntak: Poengberegning** til Vg1, Vg2 og Vg3 etter opplæringsforskrifta § 4-19 og § 4-25, med utregningen trinn for trinn og kilden til hver regel.
