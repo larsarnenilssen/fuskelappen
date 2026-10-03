@@ -57,6 +57,8 @@ export const opplaeringslopNn = {
     antall: '{antall} opplæringskontor',
     ingen: 'Ingen opplæringskontor passar.',
     visFlere: 'Vis fleire kontor',
+    godkjentFylker: 'Godkjend i {antall} fylke',
+    godkjentFylke: 'Godkjend i {fylke}',
     laerlinger: '{antall} lærlingar',
     nettside: 'Nettsida til kontoret',
     hentet: 'Etter NOR (Udir), henta {dato}.',

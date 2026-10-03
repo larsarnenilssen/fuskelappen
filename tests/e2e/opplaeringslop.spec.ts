@@ -176,5 +176,79 @@ test.describe('opplæringsløp', () => {
     await expect(page.getByText('Merknaden sier bare at kildene er uenige')).toBeVisible();
     await expect(page.getByRole('link', { name: 'Tilbudet på utdanning.no' })).toHaveAttribute('href', 'https://utdanning.no/utdanning/vgs/BAKEM2----');
   });
+
+  test('med valgt skole viser Opplæringsløp først skolens tilbud, og bryteren gir alle (avgjørelse 053)', async ({ page }) => {
+    await settLagret(page, { fylke: '46', skole: { id: '974557479', navn: 'Åsane vidaregåande skule' } });
+    await page.goto('./#/opplaeringslop');
+    await expect(page.getByRole('radio', { name: 'Min skole' })).toBeChecked();
+    await expect(page.getByText('Viser tilbudene ved Åsane vidaregåande skule.')).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Utdanningsprogram ved skolen' })).toBeVisible();
+    await expect(page.getByRole('link', { name: /Helse- og oppvekstfag.*tilbud ved skolen/ })).toBeVisible();
+    // Løpet starter fra skolens tilbud. Tilbudene ved skolen har egen farge, og knappen sier hvor mange som er ved skolen.
+    await page.getByRole('link', { name: /Helse- og oppvekstfag/ }).click();
+    const kort = page.locator('.lop > li > .lop-kort').first();
+    await expect(kort).toHaveAttribute('data-skole', 'ja');
+    await expect(kort).toContainText('Din skole');
+    await expect(kort.locator('.lop-knapp')).toHaveText(/Vis \d+ tilbud på vg2 · \d+ ved skolen din/);
+    await kort.locator('.lop-knapp').click();
+    // Tilbudene ved skolen står først.
+    await expect(page.locator('.lop-videre > li > .lop-kort').first()).toHaveAttribute('data-skole', 'ja');
+    // Valget huskes: «Alle» gjelder også når Opplæringsløp åpnes på nytt.
+    await page.getByRole('radio', { name: 'Alle' }).check();
+    await page.goto('./#/opplaeringslop');
+    await expect(page.getByRole('radio', { name: 'Alle' })).toBeChecked();
+    await expect(page.getByRole('button', { name: /^Yrkesfaglige utdanningsprogram/ })).toBeVisible();
+  });
+
+  test('uten valgt skole står en merknad om å velge skole (avgjørelse 053)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop');
+    await expect(page.getByText('Velg skole under Innstillinger, så ser du tilbudene ved skolen din.')).toBeVisible();
+    await expect(page.getByRole('radio', { name: 'Min skole' })).toHaveCount(0);
+  });
+
+  test('tilbudet lenker til skolene i fylket, og oppslaget kan utvides til hele landet (avgjørelse 053)', async ({ page }) => {
+    await settLagret(page, { fylke: '46', skole: { id: '974557479', navn: 'Åsane vidaregåande skule' } });
+    await page.goto('./#/opplaeringslop/HS/HSHEA2');
+    const skoler = page.locator('[data-rubrikk="lop-HSHEA2-skoler"]');
+    await expect(skoler).toContainText('Åsane vidaregåande skule har tilbudet.');
+    await skoler.getByRole('link', { name: /skoler i Vestland/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Skoler og tilbud');
+    await expect(page.getByText('Har Vg2 Helsearbeiderfag')).toBeVisible();
+    await expect(page.locator('.skoleliste > li').first()).toContainText('Åsane vidaregåande skule');
+    const antall = await page.locator('.skoleliste > li').count();
+    await page.getByRole('button', { name: /Søk i hele landet/ }).click();
+    await expect.poll(() => page.locator('.skoleliste > li').count()).toBeGreaterThan(antall);
+    // En skole viser tilbudene sine når den åpnes.
+    await page.locator('.skolekort-knapp').first().click();
+    await expect(page.locator('.skolekort-innhold').first().getByRole('link', { name: /Vg2 Helsearbeiderfag/ })).toBeVisible();
+  });
+
+  test('lærefaget har yrker og lenke til opplæringskontorene i fylket (avgjørelse 053)', async ({ page }) => {
+    await settLagret(page, { fylke: '46' });
+    await page.goto('./#/opplaeringslop/HS/HSHEA3');
+    const yrker = page.locator('[data-rubrikk="lop-HSHEA3-yrker"]');
+    await expect(yrker).toContainText('Yrkestittel er helsefagarbeider.');
+    await expect(yrker.getByRole('link', { name: /Helsefagarbeider/ })).toHaveAttribute('href', 'https://utdanning.no/yrker/beskrivelse/helsefagarbeider');
+    await page.getByRole('button', { name: /^Opplæringskontorer/ }).click();
+    await page.getByRole('link', { name: /opplæringskontorer godkjent i Vestland/ }).click();
+    await expect(page.locator('main h1')).toHaveText('Opplæringskontorer');
+    await expect(page.getByLabel('Fylke')).toHaveValue('46');
+    await expect(page.locator('.kontor-status')).toContainText('i Vestland');
+    await page.getByLabel('Søk etter kontor eller kommune').fill('bilbransjens');
+    const kontor = page.locator('.kontor', { hasText: 'Bergen' }).first();
+    await expect(kontor).toContainText(/Godkjent i/);
+    await expect(kontor.getByRole('link', { name: /Kontoret på utdanning.no/ })).toHaveAttribute('href', /^https:\/\/utdanning\.no\/finnlarebedrift\/bedrift\/\d{9}\/$/);
+    // Et annet fylke kan velges, og søket kan utvides til hele landet.
+    await page.getByLabel('Søk etter kontor eller kommune').fill('');
+    await page.getByLabel('Fylke').selectOption('03');
+    await expect(page.locator('.kontor-status')).toContainText('i Oslo');
+    await page.getByRole('button', { name: /Søk i hele landet/ }).click();
+    await expect(page.getByLabel('Fylke')).toHaveValue('');
+  });
+
+  test('fagarket lenker til faget på NDLA (avgjørelse 053)', async ({ page }) => {
+    await page.goto('./#/fag/SAK1001');
+    await expect(page.locator('.fagark-ndla').getByRole('link', { name: /Samfunnskunnskap/ })).toHaveAttribute('href', /^https:\/\/ndla\.no\/f\//);
+  });
 });
 

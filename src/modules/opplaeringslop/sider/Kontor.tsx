@@ -95,6 +95,11 @@ export default function Kontor({ sporring }: SideProps) {
                   <span class="listelenke-tittel">{k.navn}</span>
                   <span class="listelenke-under">
                     {[k.kommune, k.laerlinger !== null ? t('opplaeringslop.kontor.laerlinger', { antall: formaterTall(k.laerlinger) }) : null].filter(Boolean).join(' · ')}
+                    <br />
+                    {/* Kommunen er der kontoret holder til. Fylkene det er godkjent i, kan være andre (eier 03.10.2026). */}
+                    {k.godkjentI.length === 1
+                      ? t('opplaeringslop.kontor.godkjentFylke', { fylke: fylkesnavn(k.godkjentI[0] ?? null) ?? k.godkjentI[0] ?? '' })
+                      : t('opplaeringslop.kontor.godkjentFylker', { antall: formaterTall(k.godkjentI.length) })}
                   </span>
                 </span>
                 <span class="kontor-lenker">
