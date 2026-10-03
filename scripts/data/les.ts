@@ -7,6 +7,8 @@ import { medGrunnlagFraVigo } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
+import type { Lopskilder } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
+import type { Utdanningslop } from '../../src/modules/fag/utdanning/skjema.ts';
 
 const json = <T>(fil: string): T => JSON.parse(readFileSync(fil, 'utf8')) as T;
 
@@ -38,4 +40,15 @@ export function lesFagrelasjoner(rot: string): Fagrelasjoner | null {
  */
 export function lesTilbudsindeks(rot: string): Fagindeks {
   return medGrunnlagFraVigo(lesFagindeks(rot), lesFagrelasjoner(rot)?.grunnlag ?? {});
+}
+
+/** Løpene fra utdanning.no (avgjørelse 052), eller null hvis filen mangler. */
+export function lesUtdanningslop(rot: string): Utdanningslop | null {
+  const fil = join(rot, 'data/utdanning/lop.json');
+  return existsSync(fil) ? json<Utdanningslop>(fil) : null;
+}
+
+/** Kildene for løpene: Grep slik det er hentet, grunnlaget for inntak i VIGO og løpene fra utdanning.no (avgjørelse 052). */
+export function lesLopskilder(rot: string): Lopskilder {
+  return { grep: lesFagindeks(rot), vigo: lesFagrelasjoner(rot)?.grunnlag ?? {}, utdanning: lesUtdanningslop(rot) };
 }

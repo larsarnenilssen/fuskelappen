@@ -328,6 +328,22 @@ kilder:
       brukes. Stemmer testene med de nye dataene, tas de inn automatisk. Oversikt over tabellene og mulig bruk i
       docs/VIGO-KODEVERK.md.
 
+  - id: utdanning-no
+    navn: utdanning.no – løpene i videregående (utdanningsløpet)
+    kortnavn: utdanning.no
+    utgiver: Direktoratet for høyere utdanning og kompetanse (HK-dir)
+    url: https://utdanning.no/utdanning/vgs
+    type: data
+    niva: nasjonal
+    lisens: Ikke oppgitt. API-et er «åpent api for interne tjenester på utdanning.no», ikke versjonert og kan endres uten forvarsel.
+    sjekkmetode: utdanning-no
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [2, 5]
+    merknad: >-
+      Hentes hver uke med npm run hent:utdanning til data/utdanning/ (avgjørelse 052), fra
+      https://v3.api.utdanning.no/vgs/lop. Uten lisens brukes løpene bare til kontroll mot Grep og VIGO (merking av
+      løp kildene ikke er enige om) og til lenker til utdanning.no. Innholdet vises ikke i appen.
   - id: udir-lk20
     navn: Læreplaner i Kunnskapsløftet 2020 (LK20) på udir.no
     utgiver: Utdanningsdirektoratet

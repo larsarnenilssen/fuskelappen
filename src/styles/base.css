@@ -533,6 +533,11 @@ main {
   background: var(--farge-advarsel-flate);
 }
 
+/* Løp som Grep, VIGO og utdanning.no ikke er enige om (avgjørelse 052): merknad i ravfarge etter koden. */
+.lop-uenig {
+  color: var(--farge-advarsel);
+}
+
 /* Vg2 på yrkesfag med opphentingsfag (Opplæringsløp): boks med søk, ikke en lang liste. */
 .opphenting {
   margin: 0 0 var(--rom-4);

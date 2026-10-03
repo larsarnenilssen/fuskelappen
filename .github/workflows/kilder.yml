@@ -53,8 +53,8 @@ jobs:
       - name: Hent Grep, fag- og timefordeling, overordnet del og lovtekst
         id: grep
         continue-on-error: true
-        # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase og lov- og forskriftstekst fra Lovdata hentes selv om
-        # Grep feiler, og omvendt (avgjørelse 024, 026 og 039).
+        # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase, løpene fra utdanning.no og lov- og forskriftstekst fra
+        # Lovdata hentes selv om Grep feiler, og omvendt (avgjørelse 024, 026, 039 og 052).
         run: |
           status=0
           npm run hent:grep || status=1
@@ -62,14 +62,15 @@ jobs:
           npm run hent:overordnet || status=1
           npm run hent:lovdata || status=1
           npm run hent:vigo || status=1
+          npm run hent:utdanning || status=1
           exit $status
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen
       # (avgjørelse 024) lages på nytt med de nye dataene, så nye fag og endrede tilbud står der før testene kjøres.
       # Begge lages også når dataene er uendret, fordi skoleåret og regelperioden følger datoen.
-      - name: Test de nye dataene fra Grep, Udir-1 og VIGO
+      - name: Test de nye dataene fra Grep, Udir-1, VIGO og utdanning.no
         run: |
           mkdir -p .generert
-          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo)" ]; then
+          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning)" ]; then
             echo uendret > .generert/grep-tester.txt
             npm run kobling:rapport
             npm run tilbud:rapport
@@ -81,7 +82,8 @@ jobs:
             mkdir -p .generert/grep-ny && cp -r data/grep/. .generert/grep-ny/
             mkdir -p .generert/udir-ny && cp -r data/udir/. .generert/udir-ny/
             mkdir -p .generert/vigo-ny && cp -r data/vigo/. .generert/vigo-ny/
-            git checkout -- data/grep data/udir data/vigo docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json && git clean -fdq -- data/grep data/udir data/vigo
+            mkdir -p .generert/utdanning-ny && cp -r data/utdanning/. .generert/utdanning-ny/
+            git checkout -- data/grep data/udir data/vigo data/utdanning docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning
             npm run kobling:rapport
             npm run tilbud:rapport
           fi
@@ -102,7 +104,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/skoler/vgs.json data/grep data/udir data/vigo data/lovdata docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/lovdata docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

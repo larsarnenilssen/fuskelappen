@@ -4,6 +4,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Opplæringsløp: Lenke til utdanning.no** fra hvert tilbud utdanning.no har en side for.
+- **Opplæringsløp: Løp kildene ikke er enige om, er merket.** Står et løp i Grep, men ikke i VIGO eller på utdanning.no (eller omvendt), står det ved løpet, med en forklaring.
+
 ## [0.29.0] – 2026-10-03
 
 ### Lagt til

@@ -5,8 +5,9 @@
 // Grep vises som en nøytral merknad der de gjelder (eier 02.10.2026).
 import { useEffect, useId, useState } from 'preact/hooks';
 import { naviger } from '../../../app/ruter.ts';
-import { useTekst, useTilstand } from '../../../app/tilstand.ts';
+import { type T, useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
+import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -18,6 +19,7 @@ import { lastFagroller } from '../../fag/data.ts';
 import { fellesStart } from '../../fag/klasser.ts';
 import { normaliser } from '../../fag/oppslag.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
+import type { Lopkilde } from '../../fag/tilbud/kildesamsvar.ts';
 import type { Avvik, Tilbudsdel, Tilpasning } from '../../fag/tilbud/modell.ts';
 import { vilbliLenke } from '../../fag/tilbud/vilbli.ts';
 import { visningstrinnTekst } from '../../fag/visning.ts';
@@ -377,15 +379,45 @@ function TilArbeidsplan({ kode, tb, indeks }: { kode: string; tb: Tilbudsdata; i
   );
 }
 
-/** Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. */
-function Tilbudsliste({ nokkel, tittel, koder, indeks, via }: { nokkel: string; tittel: string; koder: readonly string[]; indeks: Fagindeks; via?: string }) {
+/** Kildene som mangler et løp, som tekst: «Står ikke i VIGO og utdanning.no» (avgjørelse 052). */
+function ikkeI(t: T, kilder: readonly Lopkilde[]): string {
+  const navn = kilder.map((k) => t(`opplaeringslop.tilbud.lopkilde.${k}`));
+  const liste = navn.length > 1 ? `${navn.slice(0, -1).join(', ')} ${t('opplaeringslop.tilbud.og')} ${navn.at(-1)}` : (navn[0] ?? '');
+  return t('opplaeringslop.tilbud.ikkeI', { kilder: liste });
+}
+
+/**
+ * Tilbudene under en overskrift som kan legges sammen, f.eks. «Videre». Lange lister er lukket fra start. Et løp som
+ * Grep, VIGO og utdanning.no ikke er enige om, får en merknad om hvilke kilder som mangler det (avgjørelse 052).
+ */
+function Tilbudsliste({
+  nokkel,
+  tittel,
+  koder,
+  indeks,
+  via,
+  uenig = {},
+}: {
+  nokkel: string;
+  tittel: string;
+  koder: readonly string[];
+  indeks: Fagindeks;
+  via?: string;
+  uenig?: Readonly<Record<string, readonly Lopkilde[]>>;
+}) {
+  const { t } = useTekst();
   if (koder.length === 0) return null;
   return (
     <Rubrikk nokkel={nokkel} tittel={tittel} hoyre={formaterTall(koder.length)} lukket={koder.length > MANGE_TILBUD}>
       <ul class="liste">
         {koder.map((k) => (
           <li key={k}>
-            <Tilbudslenke indeks={indeks} kode={k} {...(via ? { via } : {})} />
+            <Tilbudslenke
+              indeks={indeks}
+              kode={k}
+              {...(via ? { via } : {})}
+              {...(uenig[k] ? { under: <span class="lop-uenig"> · {ikkeI(t, uenig[k] ?? [])}</span> } : {})}
+            />
           </li>
         ))}
       </ul>
@@ -454,7 +486,7 @@ function Opphenting({ tb, indeks, via }: { tb: Tilbudsdata; indeks: Fagindeks; v
   );
 }
 
-function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[] }) {
+function Vilbli({ kode, indeks, via, bygger, utdanning }: { kode: string; indeks: Fagindeks; via: string | null; bygger: readonly string[]; utdanning: string | null }) {
   const { t } = useTekst();
   const { innstillinger } = useTilstand();
   const fylke = fylkesnavn(innstillinger.fylke);
@@ -462,7 +494,7 @@ function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks
   const fordeling = vilbliLenke(kode, indeks, { side: 'p2', via, bygger });
   if (!skoler) return null;
   return (
-    <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={t('opplaeringslop.tilbud.vilbliOverskrift')}>
+    <Rubrikk nokkel={`lop-${kortKode(kode)}-vilbli`} tittel={utdanning ? t('opplaeringslop.tilbud.vilbliUtdanningOverskrift') : t('opplaeringslop.tilbud.vilbliOverskrift')}>
       <p>
         <a class="ekstern-lenke" href={skoler} target="_blank" rel="noopener noreferrer">
           {fylke ? t('opplaeringslop.tilbud.vilbliFylke', { fylke }) : t('opplaeringslop.tilbud.vilbli')}
@@ -473,6 +505,14 @@ function Vilbli({ kode, indeks, via, bygger }: { kode: string; indeks: Fagindeks
         <p>
           <a class="ekstern-lenke" href={fordeling} target="_blank" rel="noopener noreferrer">
             {t('opplaeringslop.tilbud.vilbliFordeling')}
+            <Ikon navn="ekstern" class="ikon-liten" />
+          </a>
+        </p>
+      )}
+      {utdanning && (
+        <p>
+          <a class="ekstern-lenke" href={`https://utdanning.no/utdanning/vgs/${encodeURIComponent(utdanning)}`} target="_blank" rel="noopener noreferrer">
+            {t('opplaeringslop.tilbud.utdanningLenke')}
             <Ikon navn="ekstern" class="ikon-liten" />
           </a>
         </p>
@@ -551,11 +591,11 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         </Rubrikk>
       )}
 
-      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} />
-      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} />
-      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} />
+      <Tilbudsliste nokkel={`lop-${k}-bygger`} tittel={t('opplaeringslop.tilbud.byggerPaa')} koder={tb.fra} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-videre`} tittel={t('opplaeringslop.tilbud.videre')} koder={skoleForst(tb.videre, indeks)} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-pabygging`} tittel={t('opplaeringslop.tilbud.pabygging')} koder={tb.pabygging} indeks={indeks} via={kode} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-kryssfra`} tittel={t('opplaeringslop.tilbud.kryssFra')} koder={tb.kryssFra} indeks={indeks} uenig={tb.uenig} />
+      <Tilbudsliste nokkel={`lop-${k}-kryss`} tittel={t('opplaeringslop.tilbud.kryssTil')} koder={tb.kryssTil} indeks={indeks} uenig={tb.uenig} />
       <Tilbudsliste
         nokkel={`lop-${k}-opphenting-fra`}
         tittel={t('opplaeringslop.tilbud.opphenting.fra', { fag: tb.opphenting.fag.map((f) => indeks.fag[f]?.navn[malform] ?? f).join(', ') })}
@@ -563,8 +603,13 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
         indeks={indeks}
       />
       <Opphenting tb={tb} indeks={indeks} via={kode} />
+      {Object.keys(tb.uenig).length > 0 && (
+        <Forklaring tittel={t('opplaeringslop.tilbud.uenigTittel')}>
+          <p>{t('opplaeringslop.tilbud.uenigTekst')}</p>
+        </Forklaring>
+      )}
 
-      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} />
+      <Vilbli kode={kode} indeks={indeks} via={viaKode} bygger={[...tb.fra, ...tb.kryssFra]} utdanning={tb.utdanning} />
 
       <p class="liten">
         <a href="#/begreper/programomrade">{t('opplaeringslop.tilbud.omProgramomrade')}</a>

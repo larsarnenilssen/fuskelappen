@@ -31,83 +31,96 @@ Grep oppgir ikke hva de bygger på i samme utdanningsprogram. De vises nederst u
 
 - Studiespesialisering: Realfag vg2 tyske skole (STREA2TY), Realfag vg3 tyske skole (STREA3TY)
 
-### Grunnlag for inntak i VIGO og «bygger på» i Grep
+### Løpene i Grep, VIGO og utdanning.no
 
-VIGO Kodeverksbase har 580 koblinger for programområdene i Grep. 191 brukes for påbygging som Grep ikke sier hva bygger på (Vg4 påbygging etter lærefag). 383 er de samme som i Grep.
+649 koblinger mellom programområdene i Grep står i minst én av kildene. 577 har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.
 
-Bare i VIGO (6, ikke brukt):
+Står i Grep, ikke i VIGO, utdanning.no (61):
 
-- Salg, service og reiseliv (SRSSR2) → Reiselivsfaget (SRRLV3)
-- Salg, service og reiseliv (SRSSR2) → Sikkerhetsfaget (SRSIK3)
-- Salg, service og reiseliv (SRSSR2) → Salgsfaget (SRSLG3)
-- Salg, service og reiseliv (SRSSR2) → Service- og administrasjonsfaget (SRSOA3)
-- Realfag vg2 tyske skole (STREA2TY) → Realfag vg3 tyske skole (STREA3TY)
-- Studiespesialisering vg1 tyske skole (STUSP1TY) → Realfag vg2 tyske skole (STREA2TY)
+- Klima, energi og miljøteknikk (BAKEM2) → Rørleggerfaget (BARLF3) · vist i appen, merket
+- Håndverk, design og produktutvikling (DTDTH1) → Treteknikk (BATRT2) · vist i appen, merket
+- Akvakultur (NAAKV2) → Sjømatproduksjon (RMSMP3) · vist i appen, merket
+- Fiske og fangst (NAFFA2) → Sjømatproduksjon (RMSMP3) · vist i appen, merket
+- Naturbruk (NANAB1) → Byggdrifterfaget (BABDR3) · vist i appen, merket
+- Restaurant- og matfag (RMRMF1) → Fiske og fangst (NAFFA2) · vist i appen, merket
+- Studiespesialisering (STUSP1) → Anleggsgartner (BAANG2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Anleggsteknikk (BAANL2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Betong og mur (BABMO2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Klima, energi og miljøteknikk (BAKEM2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Overflateteknikk (BAOFT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Rørlegger (BARLF2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Tømrer (BATMF2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Treteknikk (BATRT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Båtbygger (DTBBF2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Duodji (DTDDU2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Gull- og sølvsmedhåndverk (DTDGH2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Trearbeid (DTDTR2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Smed (DTSME2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Søm og tekstilhåndverk (DTSTH2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Urmaker (DTUIM2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Automatisering (ELAUT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Datateknologi og elektronikk (ELDEL2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Elenergi og ekom (ELELE2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Flyfag (ELFLY2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Blomsterdekoratør (FDBLD2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Frisør (FDFRI2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Interiør og eksponeringsdesign (FDIED2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Aktivitør (HSAKT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Ambulansefag (HSAMB2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Barne- og ungdomsarbeiderfag (HSBUA2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Fotterapi og ortopediteknikk (HSFOT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Helsearbeiderfag (HSHEA2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Helseservicefag (HSHES2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Hudpleie (HSHUD2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Informasjonsteknologi (IMITK2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Medieproduksjon (IMMED2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Akvakultur (NAAKV2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Fiske og fangst (NAFFA2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Heste- og dyrefag (NAHDF2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Landbruk og gartnernæring (NALGA2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Reindrift (NAREI2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Skogbruk (NASBR2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Baker og konditor (RMBAK2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Kokk- og servitørfag (RMKOS2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Matproduksjon (RMMPR2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Salg, service og reiseliv (SRSSR2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Arbeidsmaskiner (TPAMK2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Bilskade, lakk og karosseri (TPBLK2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Børsemaker (TPBMF2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Brønnteknikk (TPBRT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Kjøretøy (TPKJT2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Kjemiprosess- og laboratoriefag (TPKPL2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Maritime fag (TPMAR2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Industriteknologi (TPPIN2) · opphenting, ikke merket (avgjørelse 051)
+- Studiespesialisering (STUSP1) → Transport og logistikk (TPTOL2) · opphenting, ikke merket (avgjørelse 051)
+- Industriteknologi (TPPIN2) → Kran- og løfteoperasjonsfaget (TPKLO3) · vist i appen, merket
+- Teknologi- og industrifag (TPTIP1) → Duodji (DTDDU2) · vist i appen, merket
+- Teknologi- og industrifag (TPTIP1) → Trearbeid (DTDTR2) · vist i appen, merket
+- Teknologi- og industrifag (TPTIP1) → Yrkessjåførkurs for voksne (TPYSL3) · vist i appen, merket
 
-Bare i Grep (62):
+Står i Grep, VIGO, ikke i utdanning.no (7):
 
-- Bygg- og anleggsteknikk (BABAT1) → Gipsmakerfaget (DTGIP3)
-- Klima, energi og miljøteknikk (BAKEM2) → Rørleggerfaget (BARLF3)
-- Håndverk, design og produktutvikling (DTDTH1) → Treteknikk (BATRT2)
-- Akvakultur (NAAKV2) → Sjømatproduksjon (RMSMP3)
-- Fiske og fangst (NAFFA2) → Sjømatproduksjon (RMSMP3)
-- Naturbruk (NANAB1) → Byggdrifterfaget (BABDR3)
-- Restaurant- og matfag (RMRMF1) → Fiske og fangst (NAFFA2)
-- Studiespesialisering (STUSP1) → Anleggsgartner (BAANG2)
-- Studiespesialisering (STUSP1) → Anleggsteknikk (BAANL2)
-- Studiespesialisering (STUSP1) → Betong og mur (BABMO2)
-- Studiespesialisering (STUSP1) → Klima, energi og miljøteknikk (BAKEM2)
-- Studiespesialisering (STUSP1) → Overflateteknikk (BAOFT2)
-- Studiespesialisering (STUSP1) → Rørlegger (BARLF2)
-- Studiespesialisering (STUSP1) → Tømrer (BATMF2)
-- Studiespesialisering (STUSP1) → Treteknikk (BATRT2)
-- Studiespesialisering (STUSP1) → Båtbygger (DTBBF2)
-- Studiespesialisering (STUSP1) → Duodji (DTDDU2)
-- Studiespesialisering (STUSP1) → Gull- og sølvsmedhåndverk (DTDGH2)
-- Studiespesialisering (STUSP1) → Trearbeid (DTDTR2)
-- Studiespesialisering (STUSP1) → Smed (DTSME2)
-- Studiespesialisering (STUSP1) → Søm og tekstilhåndverk (DTSTH2)
-- Studiespesialisering (STUSP1) → Urmaker (DTUIM2)
-- Studiespesialisering (STUSP1) → Automatisering (ELAUT2)
-- Studiespesialisering (STUSP1) → Datateknologi og elektronikk (ELDEL2)
-- Studiespesialisering (STUSP1) → Elenergi og ekom (ELELE2)
-- Studiespesialisering (STUSP1) → Flyfag (ELFLY2)
-- Studiespesialisering (STUSP1) → Kulde-, varmepumpe- og ventilasjonsteknikk (ELKVV2)
-- Studiespesialisering (STUSP1) → Blomsterdekoratør (FDBLD2)
-- Studiespesialisering (STUSP1) → Frisør (FDFRI2)
-- Studiespesialisering (STUSP1) → Interiør og eksponeringsdesign (FDIED2)
-- Studiespesialisering (STUSP1) → Aktivitør (HSAKT2)
-- Studiespesialisering (STUSP1) → Ambulansefag (HSAMB2)
-- Studiespesialisering (STUSP1) → Barne- og ungdomsarbeiderfag (HSBUA2)
-- Studiespesialisering (STUSP1) → Fotterapi og ortopediteknikk (HSFOT2)
-- Studiespesialisering (STUSP1) → Helsearbeiderfag (HSHEA2)
-- Studiespesialisering (STUSP1) → Helseservicefag (HSHES2)
-- Studiespesialisering (STUSP1) → Hudpleie (HSHUD2)
-- Studiespesialisering (STUSP1) → Informasjonsteknologi (IMITK2)
-- Studiespesialisering (STUSP1) → Medieproduksjon (IMMED2)
-- Studiespesialisering (STUSP1) → Akvakultur (NAAKV2)
-- Studiespesialisering (STUSP1) → Fiske og fangst (NAFFA2)
-- Studiespesialisering (STUSP1) → Heste- og dyrefag (NAHDF2)
-- Studiespesialisering (STUSP1) → Landbruk og gartnernæring (NALGA2)
-- Studiespesialisering (STUSP1) → Reindrift (NAREI2)
-- Studiespesialisering (STUSP1) → Skogbruk (NASBR2)
-- Studiespesialisering (STUSP1) → Baker og konditor (RMBAK2)
-- Studiespesialisering (STUSP1) → Kokk- og servitørfag (RMKOS2)
-- Studiespesialisering (STUSP1) → Matproduksjon (RMMPR2)
-- Studiespesialisering (STUSP1) → Salg, service og reiseliv (SRSSR2)
-- Studiespesialisering (STUSP1) → Arbeidsmaskiner (TPAMK2)
-- Studiespesialisering (STUSP1) → Bilskade, lakk og karosseri (TPBLK2)
-- Studiespesialisering (STUSP1) → Børsemaker (TPBMF2)
-- Studiespesialisering (STUSP1) → Brønnteknikk (TPBRT2)
-- Studiespesialisering (STUSP1) → Kjøretøy (TPKJT2)
-- Studiespesialisering (STUSP1) → Kjemiprosess- og laboratoriefag (TPKPL2)
-- Studiespesialisering (STUSP1) → Maritime fag (TPMAR2)
-- Studiespesialisering (STUSP1) → Industriteknologi (TPPIN2)
-- Studiespesialisering (STUSP1) → Transport og logistikk (TPTOL2)
-- Industriteknologi (TPPIN2) → Kran- og løfteoperasjonsfaget (TPKLO3)
-- Teknologi- og industrifag (TPTIP1) → Duodji (DTDDU2)
-- Teknologi- og industrifag (TPTIP1) → Trearbeid (DTDTR2)
-- Teknologi- og industrifag (TPTIP1) → Yrkessjåførkurs for voksne (TPYSL3)
+- Medieproduksjon (IMMED2) → Profileringsdesignfaget (FDPFD3) · vist i appen, merket
+- Medieproduksjon (IMMED2) → Grafisk produksjonsteknikkfaget (IMGPT3) · vist i appen, merket
+- Kjøretøy (TPKJT2) → Anleggsmaskinmekanikerfaget (TPAMM3) · vist i appen, merket
+- Kjøretøy (TPKJT2) → Landbruksmaskinmekanikerfaget (TPLMM3) · vist i appen, merket
+- Kjøretøy (TPKJT2) → Sykkelmekanikerfaget (TPSYM3) · vist i appen, merket
+- Kjøretøy (TPKJT2) → Truck- og liftmekanikerfaget (TPTLM3) · vist i appen, merket
+- Industriteknologi (TPPIN2) → Grafisk produksjonsteknikkfaget (IMGPT3) · vist i appen, merket
+
+Står i VIGO, ikke i utdanning.no (2):
+
+- Salg, service og reiseliv (SRSSR2) → Sikkerhetsfaget (SRSIK3) · ikke vist i appen
+- Salg, service og reiseliv (SRSSR2) → Service- og administrasjonsfaget (SRSOA3) · ikke vist i appen
+
+Står i Grep, utdanning.no, ikke i VIGO (1):
+
+- Bygg- og anleggsteknikk (BABAT1) → Gipsmakerfaget (DTGIP3) · vist i appen, merket
+
+Står i utdanning.no, ikke i Grep, VIGO (1):
+
+- Medieproduksjon (IMMED2) → Grafisk produksjonsteknikk (TPGPT3) · ikke vist i appen
 
 ### Avvik mellom rundskrivet og Grep
 

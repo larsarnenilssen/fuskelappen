@@ -4,7 +4,7 @@
 // fagkodene fra Grep, årsrammen fra koblingen (avgjørelse 023), valgfrie plasser, alternativer, tilpassede
 // ordninger og avvik. Kildesjekken lager den på nytt hver uke etter at Grep og Udir-1 er hentet.
 // Kjør: npm run tilbud:rapport
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { Arsrammerad } from '../../src/modules/arbeidstid/beregning/arsrammer.ts';
@@ -14,7 +14,8 @@ import { ukjenteNavn } from '../../src/modules/opplaeringslop/navn.ts';
 import { avvikTekst, byggStruktur, byggTilbud, erVariant, erVoksenopplaering, skolearFor, velgFordeling, type FagBygger, type Programstruktur, type Tilbud, type Tilbudsdel } from '../../src/modules/fag/tilbud/modell.ts';
 import type { Fagfordeling } from '../../src/modules/fag/tilbud/skjema.ts';
 import { vilbliLenke } from '../../src/modules/fag/tilbud/vilbli.ts';
-import { lesFagrelasjoner, lesFordelinger, lesTilbudsindeks } from '../data/les.ts';
+import { lesFagrelasjoner, lesFordelinger, lesLopskilder, lesTilbudsindeks } from '../data/les.ts';
+import { alleKoblinger, type Lopkilde, type Lopskilder } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
 import { lesKoblingsgrunnlag } from '../kobling/rapport.ts';
 
 export interface Kobling {
@@ -39,13 +40,30 @@ const KATEGORI: Record<Exclude<Tilbudsdel['kategori'], 'fellesfag' | 'felles_pro
 const kort = (kode: string) => kode.replace(/-+$/, '');
 const celle = (t: string) => t.replace(/\|/g, '\\|');
 
+/**
+ * Alle koblinger mellom programområdene i Grep som minst én av Grep, VIGO og utdanning.no har, med kildene som har
+ * og mangler dem, og om løpet vises i appen (avgjørelse 052).
+ */
+export function lopssamsvar(indeks: Fagindeks, kilder: Lopskilder, tilbud: ReadonlyMap<string, Tilbud>) {
+  return alleKoblinger(kilder).map((l) => {
+    const vist = indeks.programomrader[l.til]?.bygger.includes(l.fra) ?? false;
+    const opphenting = tilbud.get(l.fra)?.opphenting.til.includes(l.til) ?? false;
+    return { ...l, status: opphenting ? ('opphenting' as const) : vist ? ('merket' as const) : ('ikkeVist' as const) };
+  });
+}
+
+/** Uenighetene som linjer med koder, til data/status/lopsamsvar.json og kontrollsaken (nye siden forrige uke). */
+export function uenighetslinjer(l: ReturnType<typeof lopssamsvar>): string[] {
+  return l.filter((x) => x.mangler.length > 0).map((x) => `${x.fra} → ${x.til}: står i ${x.har.join(', ')}, ikke i ${x.mangler.join(', ')}`);
+}
+
 export function lagTilbudsrapport(
   indeks: Fagindeks,
   fordeling: Fagfordeling | null,
   kobling: Kobling,
   neste: Fagfordeling | null = null,
   fagBygger: FagBygger = {},
-  grunnlag: Readonly<Record<string, readonly string[]>> = {},
+  kilder: Lopskilder | null = null,
 ): string {
   const tilbud = new Map(Object.keys(indeks.programomrader).map((k) => [k, byggTilbud(k, indeks, fordeling, fagBygger)]));
   const struktur = byggStruktur(indeks);
@@ -230,23 +248,28 @@ export function lagTilbudsrapport(
     for (const s of utenfor) ut.push(`- ${s.navn.nb}: ${s.utenfor.map(ponavn).join(', ')}`);
     ut.push('');
   }
-  // Grunnlaget for inntak i VIGO sammenlignet med «bygger på» i Grep (eier 03.10.2026). VIGO brukes bare for
-  // påbygging der Grep ikke sier noe (medGrunnlagFraVigo); resten er til kontroll.
-  if (Object.keys(grunnlag).length > 0) {
-    const grep = new Set(Object.entries(indeks.programomrader).flatMap(([k, p]) => (p.byggerFraVigo ? [] : p.bygger.map((b) => `${b}>${k}`))));
-    const vigo = new Set(Object.entries(grunnlag).flatMap(([fra, til]) => til.map((t) => `${fra}>${t}`)));
-    const brukt = [...vigo].filter((x) => indeks.programomrader[x.split('>')[1] ?? '']?.byggerFraVigo);
-    const bareVigo = [...vigo].filter((x) => !grep.has(x) && !brukt.includes(x));
-    const bareGrep = [...grep].filter((x) => !vigo.has(x));
-    const vis = (x: string) => x.split('>').map((k) => ponavn(k)).join(' → ');
+  // Løpene i Grep, VIGO og utdanning.no sammenlignet (avgjørelse 051 og 052). Appen viser Grep, med VIGO for
+  // påbygging der Grep ikke sier noe, og merker løp kildene ikke er enige om (kildesamsvar.ts).
+  if (kilder) {
+    const lop = lopssamsvar(indeks, kilder, tilbud);
+    const uenige = lop.filter((l) => l.mangler.length > 0);
+    const KILDE: Record<Lopkilde, string> = { grep: 'Grep', vigo: 'VIGO', utdanning: 'utdanning.no' };
+    const kildeliste = (k: readonly Lopkilde[]) => k.map((x) => KILDE[x]).join(', ');
+    const STATUS = { merket: 'vist i appen, merket', opphenting: 'opphenting, ikke merket (avgjørelse 051)', ikkeVist: 'ikke vist i appen' };
     ut.push(
-      '### Grunnlag for inntak i VIGO og «bygger på» i Grep',
+      '### Løpene i Grep, VIGO og utdanning.no',
       '',
-      `VIGO Kodeverksbase har ${vigo.size} koblinger for programområdene i Grep. ${brukt.length} brukes for påbygging som Grep ikke sier hva bygger på (Vg4 påbygging etter lærefag). ${[...vigo].filter((x) => grep.has(x)).length} er de samme som i Grep.`,
+      `${lop.length} koblinger mellom programområdene i Grep står i minst én av kildene. ${lop.length - uenige.length} har ingen kilde som er uenig. Hver kilde teller bare der den beskriver løpet (se avgjørelse 052). Uenigheter som er nye siden forrige uke, kommer i kontrollsaken.`,
       '',
     );
-    if (bareVigo.length > 0) ut.push(`Bare i VIGO (${bareVigo.length}, ikke brukt):`, '', ...bareVigo.sort().map((x) => `- ${vis(x)}`), '');
-    if (bareGrep.length > 0) ut.push(`Bare i Grep (${bareGrep.length}):`, '', ...bareGrep.sort().map((x) => `- ${vis(x)}`), '');
+    const grupper = new Map<string, typeof uenige>();
+    for (const l of uenige) {
+      const n = `Står i ${kildeliste(l.har)}, ikke i ${kildeliste(l.mangler)}`;
+      grupper.set(n, [...(grupper.get(n) ?? []), l]);
+    }
+    for (const [n, liste] of [...grupper].sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0], 'nb'))) {
+      ut.push(`${n} (${liste.length}):`, '', ...liste.map((l) => `- ${ponavn(l.fra)} → ${ponavn(l.til)} · ${STATUS[l.status]}`), '');
+    }
   }
   if (avvik.size > 0) {
     ut.push('### Avvik mellom rundskrivet og Grep', '');
@@ -326,7 +349,7 @@ export function lesFagBygger(rot: string): FagBygger {
 export function lagRapportFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): string {
   const g = lesKoblingsgrunnlag(rot);
   const { fordeling, neste } = fordelingOgNeste(rot, dato);
-  return lagTilbudsrapport(lesTilbudsindeks(rot), fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot), lesFagrelasjoner(rot)?.grunnlag ?? {});
+  return lagTilbudsrapport(lesTilbudsindeks(rot), fordeling, { tabeller: g.tabeller, rader: g.rader }, neste, lesFagBygger(rot), lesLopskilder(rot));
 }
 
 /**
@@ -342,6 +365,15 @@ export function ukjenteNavnFraRepo(rot: string, dato = new Date().toISOString().
   return ukjenteNavn(tilbud);
 }
 
+/** Uenighetene mellom Grep, VIGO og utdanning.no om løpene, med dataene i repoet (avgjørelse 052). */
+export function uenigheterFraRepo(rot: string, dato = new Date().toISOString().slice(0, 10)): string[] {
+  const indeks = lesTilbudsindeks(rot);
+  const { fordeling } = fordelingOgNeste(rot, dato);
+  const bygger = lesFagBygger(rot);
+  const tilbud = new Map(Object.keys(indeks.programomrader).map((k) => [k, byggTilbud(k, indeks, fordeling, bygger)]));
+  return uenighetslinjer(lopssamsvar(indeks, lesLopskilder(rot), tilbud));
+}
+
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const rot = fileURLToPath(new URL('../..', import.meta.url));
   const tekst = lagRapportFraRepo(rot);
@@ -351,4 +383,12 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   mkdirSync(join(rot, '.generert'), { recursive: true });
   writeFileSync(join(rot, '.generert/tilbud-navn.json'), `${JSON.stringify(navn, null, 2)}\n`);
   console.log(`Navn uten oversettelse: ${navn.linjer.length} linjer, ${navn.ordninger.length} ordninger.`);
+  // Til den ukentlige kontrollsaken: uenigheter om løpene som er nye eller borte siden forrige rapport.
+  const statusfil = join(rot, 'data/status/lopsamsvar.json');
+  const forrige = existsSync(statusfil) ? (JSON.parse(readFileSync(statusfil, 'utf8')) as { uenige: string[] }).uenige : null;
+  const uenige = uenigheterFraRepo(rot);
+  writeFileSync(statusfil, `${JSON.stringify({ uenige }, null, 1)}\n`);
+  const endringer = { nye: forrige ? uenige.filter((u) => !forrige.includes(u)) : [], borte: forrige ? forrige.filter((u) => !uenige.includes(u)) : [] };
+  writeFileSync(join(rot, '.generert/lopsamsvar-endringer.json'), `${JSON.stringify(endringer, null, 2)}\n`);
+  console.log(`Løpene: ${uenige.length} uenigheter mellom Grep, VIGO og utdanning.no (${endringer.nye.length} nye, ${endringer.borte.length} borte).`);
 }

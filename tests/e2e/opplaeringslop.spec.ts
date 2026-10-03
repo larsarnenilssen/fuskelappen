@@ -168,4 +168,13 @@ test.describe('opplæringsløp', () => {
     await expect(page.locator('.merke').filter({ hasText: /^Vg4$/ })).toBeVisible();
     await expect(page.getByRole('link', { name: /VIGO Kodeverksbase/ }).first()).toBeVisible();
   });
+
+  test('løp kildene ikke er enige om, er merket, og tilbudet lenker til utdanning.no (avgjørelse 052)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/BA/BAKEM2');
+    await expect(page.locator('[data-rubrikk$="-videre"]').getByRole('link', { name: /Rørleggerfaget.*Står ikke i VIGO og utdanning\.no/ })).toBeVisible();
+    await page.getByRole('button', { name: 'Kildene er ikke enige om alle løpene' }).click();
+    await expect(page.getByText('Merknaden sier bare at kildene er uenige')).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Tilbudet på utdanning.no' })).toHaveAttribute('href', 'https://utdanning.no/utdanning/vgs/BAKEM2----');
+  });
 });
+

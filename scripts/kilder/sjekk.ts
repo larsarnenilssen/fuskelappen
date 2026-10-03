@@ -141,6 +141,22 @@ function sjekkVigo(): Sjekkresultat {
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i VIGO Kodeverksbase.` : null };
 }
 
+/**
+ * Løpene fra utdanning.no hentes i samme steg som Grep (npm run hent:utdanning) og testes sammen med dem. De brukes
+ * bare til kontroll mot Grep og VIGO og til lenker (avgjørelse 052). Stemmer testene, tas de inn automatisk.
+ */
+function sjekkUtdanning(): Sjekkresultat {
+  const endringsfil = join(generert, 'utdanning-endringer.json');
+  if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra utdanning.no feilet. Se loggen for steget «Hent Grep, fag- og timefordeling, overordnet del og lovtekst».' };
+  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { forste: boolean; endringer: string[] };
+  const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const fil = join(rot, 'data/utdanning/lop.json');
+  const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(readFileSync(fil, 'utf8').replace(/"hentet": "[^"]*"/, '')) : null;
+  rapport.push('### utdanning.no', e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`, ...e.endringer.slice(0, 60).map((l) => `- ${l}`), '');
+  if (tester === 'feilet' && e.endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Løpene fra utdanning.no er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).` };
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i løpene fra utdanning.no.` : null };
+}
+
 /** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
 interface Lovdataresultat {
   id: string;
@@ -197,6 +213,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkLovtekst(kilde);
       case 'vigo-kodeverk':
         return sjekkVigo();
+      case 'utdanning-no':
+        return sjekkUtdanning();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };
