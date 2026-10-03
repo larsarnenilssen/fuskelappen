@@ -479,6 +479,7 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 - Pakke 2 er levert i 0.23.0 som modulen **Tilrettelegging** med veiviseren «Tilpasset opplæring og individuell tilrettelegging» (navnet valgt av eier, fordi alle elever skal ha tilpasset opplæring), kartet over hele prosessen og elleve nye begreper.
 - Eiers svar 03.10.2026: Fristen for foreløpig svar regnes fra den sakkyndige vurderingen er mottatt, og står i praksislisten til bekreftelse. Om det trengs nytt vedtak for å avslutte tilrettelegging, står åpent i veiviseren (eier 03.10.2026).
 - Ende-til-ende-testene i CI er delt på seks jobber (avgjørelse 040).
+- Pakke 3 er levert i 0.24.0: veiviseren «Særskilt språkopplæring og kort botid» og sju nye begreper. Eier 03.10.2026: Ukraina-unntaket nevnes ikke, veiviseren sier ikke noe om vedtak når språkopplæringen avsluttes eller når eleven ikke har rett, NOR09-05 er gjeldende læreplan, og eleven samtykker selv til innføringsopplæring så lenge eleven er samtykkekompetent (praksislisten). Begrepsarket har fått «Begreper» som sti øverst.
 
 **Uløst:** vestlandfylke.no svarer ikke, verken fra utviklingsmiljøet, fra GitHub Actions eller for eier (03.10.2026). Vestland-innhold i veiviserne (Rettleiingstenesta, midlertidig vedtak ved inntak, særskild språkopplæring og innføringskurs) venter til sidene svarer igjen, eventuelt til en senere fase. Kilden `vlfk-sider` har fortsatt adressen vlfk.no og må få vestlandfylke.no når sidene kan leses.
 

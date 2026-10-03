@@ -114,7 +114,7 @@
     - { id: udir-sarskilt-sprakopplaring, punkt: "Vurdere elevens ferdigheter i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk" }
   kontrollert: null
   kontrollsporsmal:
-    - "Skal det fattes vedtak også når fylkeskommunen mener eleven ikke har rett til særskilt språkopplæring, og bør utfallet i så fall si det?"
+    - "Er utfallet tydelig nok på at eleven fortsatt skal ha tilpasset opplæring, selv om eleven ikke har rett til særskilt språkopplæring?"
 
 - id: sp-vedtak
   type: steg
@@ -127,7 +127,7 @@
     nb: |-
       Fylkeskommunen fatter et [enkeltvedtak](#/begreper/enkeltvedtak) om hva eleven skal få:
 
-      - **Forsterket opplæring i norsk:** alltid.
+      - **[Forsterket opplæring i norsk](#/begreper/forsterket-opplaering-i-norsk):** alltid.
       - **Morsmålsopplæring:** ved behov.
       - **Tospråklig opplæring i fag:** ved behov, på norsk og morsmålet eller et annet språk eleven kan godt.
 
@@ -135,7 +135,7 @@
     nn: |-
       Fylkeskommunen gjer eit [enkeltvedtak](#/begreper/enkeltvedtak) om kva eleven skal få:
 
-      - **Forsterka opplæring i norsk:** alltid.
+      - **[Forsterka opplæring i norsk](#/begreper/forsterket-opplaering-i-norsk):** alltid.
       - **Morsmålsopplæring:** ved behov.
       - **Tospråkleg opplæring i fag:** ved behov, på norsk og morsmålet eller eit anna språk eleven kan godt.
 
@@ -202,8 +202,8 @@
     nb: Fylkeskommunen kan gi elever med kort botid og vedtak om særskilt språkopplæring hele eller deler av opplæringen i egne grupper, klasser eller skoler. Det er et frivillig overgangstilbud for å lære norsk raskt. Vedtaket kan gjøre unntak fra læreplanene i fag og fra fag- og timefordelingen. Så lenge eleven får innføringsopplæring, har eleven rett til fritak fra vurdering med karakter, men ikke fra standpunktkarakter.
     nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skolar. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter.
   ansvar:
-    nb: Fylkeskommunen. Eleven eller foreldrene samtykker.
-    nn: Fylkeskommunen. Eleven eller foreldra samtykkjer.
+    nb: Fylkeskommunen. Eleven samtykker selv når eleven er i stand til det, ellers foreldrene.
+    nn: Fylkeskommunen. Eleven samtykkjer sjølv når eleven er i stand til det, elles foreldra.
   dokumentasjon:
     nb: Samtykke og vedtak om innføringsopplæring.
     nn: Samtykke og vedtak om innføringsopplæring.
@@ -230,7 +230,7 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?"
-    - "Samtykker eleven selv fra 15 år også her (opplæringslova § 24-5), eller bør teksten si «eleven eller foreldrene» som Udir?"
+    - "Er «Eleven samtykker selv når eleven er i stand til det, ellers foreldrene» en god gjengivelse av at eleven samtykker selv så lenge eleven er samtykkekompetent?"
 
 - id: sp-laereplan
   type: steg
@@ -240,8 +240,8 @@
     nb: Læreplan i norsk for elever med kort botid
     nn: Læreplan i norsk for elevar med kort butid
   tekst:
-    nb: Elever med særskilt språkopplæring kan velge å følge læreplanen i norsk for språklige minoriteter med kort botid, hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv. Fagene står i appen, for eksempel [NOR1412 på vg1](#/fag/NOR1412).
-    nn: Elevar med særskild språkopplæring kan velje å følgje læreplanen i norsk for språklege minoritetar med kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv. Faga står i appen, til dømes [NOR1412 på vg1](#/fag/NOR1412).
+    nb: Elever med særskilt språkopplæring kan velge å følge læreplanen i norsk for språklige minoriteter med kort botid (NOR09-05), hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv. Fagene står i appen, for eksempel [NOR1412 på vg1](#/fag/NOR1412).
+    nn: Elevar med særskild språkopplæring kan velje å følgje læreplanen i norsk for språklege minoritetar med kort butid (NOR09-05), dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv. Faga står i appen, til dømes [NOR1412 på vg1](#/fag/NOR1412).
   ansvar:
     nb: Eleven velger.
     nn: Eleven vel.
@@ -252,7 +252,6 @@
     - { id: udir-sarskilt-sprakopplaring, punkt: "Læreplaner for særskilt språkopplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Udir lenker til læreplanen NOR09-04, mens Grep har fagene på NOR09-05. Er NOR09-05 gjeldende læreplan?"
     - "Er det nyttig å lenke til NOR1412 som eksempel, eller bør steget vise alle fagkodene for kort botid?"
 
 - id: sp-oppfolging

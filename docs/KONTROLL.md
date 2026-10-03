@@ -15,8 +15,8 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 | Kontrollert | 1 |
 | Kilden er endret etter kontrollen | 0 |
 | Bør kontrolleres på nytt (over 12 måneder) | 0 |
-| Ikke kontrollert | 185 |
-| Praksis og tolkninger som bør bekreftes | 15 av 15 |
+| Ikke kontrollert | 186 |
+| Praksis og tolkninger som bør bekreftes | 16 av 16 |
 
 | Automatisk sjekk av regelverdier | Antall |
 |---|---|
@@ -52,6 +52,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | **Årsramme for yrkesfaglig fordypning** | Skal yrkesfaglig fordypning (YFF) ha årsrammen for felles programfag på utdanningsprogrammet og trinnet, slik vedlegg 1 sier om prosjekt til fordypning? | Claude 30.09.2026, ut fra vedlegg 1 til SFS 2213 («Prosjekt til fordypning»). Prosjekt til fordypning ble yrkesfaglig fordypning med fagfornyelsen i 2020. | [Grep – fag, læreplaner, vurderingsordninger og årstimetall](https://data.udir.no/kl06/v201906/) | ikke bekreftet |
 | **Fagfornyelsen og LK20** | Heter revisjonen av læreplanverket som innføres nå, fortsatt fagfornyelsen, og viderefører den LK20? | Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde. | [Læreplanverket (udir.no)](https://www.udir.no/laring-og-trivsel/lareplanverket/): Ingressen: «Læreplanverket består av …»; [Fag- og timefordeling og tilbudsstruktur for Kunnskapsløftet (Udir-1-2026)](https://www.udir.no/regelverkstolkninger/opplaring/Innhold-i-opplaringen/udir-1-2026/vedlegg-1/1-hele-grunnopplaringen/1.1-lareplanverket/): Vedlegg 1, 1.1 Læreplanverket for Kunnskapsløftet; [Overordnet del – verdier og prinsipper for grunnopplæringen](https://www.udir.no/lk20/overordnet-del/om-overordnet-del/): Om overordnet del | ikke bekreftet |
 | **Foreløpig svar i saker om individuelt tilrettelagt opplæring** | Regnes fristen på én måned for foreløpig svar (forvaltningsloven § 11 a tredje ledd) fra den sakkyndige vurderingen er mottatt? | Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen. | [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#kommunen-og-fylkeskommunen-skal-fatte-vedtak-om-individuell-tilrettelegging): punkt 7.1 Kommunen og fylkeskommunen skal fatte vedtak om individuell tilrettelegging; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#delegere-oppgaven-fatte-vedtak): punkt 7.2 Delegere oppgaven med å fatte vedtak; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#krav-innholdet-vedtaket): punkt 7.3 Krav til innholdet i vedtaket; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/vedtak-om-individuell-tilrettelegging/#vedtakets-varighet): punkt 7.4 Vedtakets varighet; [Veileder om tilpasset opplæring og individuell tilrettelegging](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/): punkt 12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter | ikke bekreftet |
+| **Samtykke til innføringsopplæring** | Samtykker eleven selv til innføringsopplæring så lenge eleven er samtykkekompetent, og ellers foreldrene? | Eier 03.10.2026. Opplæringslova § 6-6 sier at eleven må samtykke, og Udir skriver «eleven eller foreldrene». | [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring | ikke bekreftet |
 
 ## Per kilde
 
@@ -224,6 +225,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | § 6-5 Særskild språkopplæring i den vidaregåande opplæringa | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Morsmålsopplæring (`morsmalsopplaering`) | begrep | § 6-5 tredje ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Innføringsopplæring (`innforingsopplaering`) | begrep | § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Forsterket opplæring i norsk (`forsterket-opplaering-i-norsk`) | begrep | § 6-5 første ledd | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Tilpasset opplæring (`tilpasset-opplaering`) | begrep | § 11-1 Tilpassa opplæring | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Tilfredsstillende utbytte (`tilfredsstillende-utbytte`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
 | Individuell tilrettelegging (`individuell-tilrettelegging`) | begrep | § 11-2 Tilfredsstillande utbytte av opplæringa | `content/begreper/tilrettelegging.yaml` | ikke kontrollert |
@@ -461,6 +463,7 @@ Dette bygger appen på uten at det står i kildene. Du bekrefter punktene i kont
 | Særskilt språkopplæring (`sarskilt-sprakopplaering`) | begrep | Ingressen og «Krav til vedtak» | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Morsmålsopplæring (`morsmalsopplaering`) | begrep | Morsmålsopplæring | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Tospråklig opplæring i fag (`tospraklig-fagopplaering`) | begrep | Tospråklig opplæring i fag | `content/begreper/sprak.yaml` | ikke kontrollert |
+| Forsterket opplæring i norsk (`forsterket-opplaering-i-norsk`) | begrep | Forsterket opplæring i norsk | `content/begreper/sprak.yaml` | ikke kontrollert |
 | Særskilt språkopplæring og kort botid (`sprak-og-kort-botid`) | veiviser | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Hvem har rett? (`sp-morsmal`) | steg | Ingressen | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
 | Vurdere norskferdighetene (`sp-vurdere`) | steg | Vurdere elevens ferdigheter i norsk | `content/tilrettelegging/sprak-og-kort-botid.yaml` | ikke kontrollert |
@@ -1087,6 +1090,12 @@ Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk
 
 Kilder å sjekke mot: [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-6): § 6-6 Innføringsopplæring for elevar i den vidaregåande opplæringa som har budd kort tid i Noreg; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år
 
+**Forsterket opplæring i norsk** (`forsterket-opplaering-i-norsk`, begrep, ikke kontrollert)
+
+- Bør begrepet si noe om forholdet til læreplanen i norsk for språklige minoriteter med kort botid, eller er det best å holde dem adskilt?
+
+Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk): Forsterket opplæring i norsk; [Lov om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringslova)](https://lovdata.no/lov/2023-06-09-30/§6-5): § 6-5 første ledd
+
 **Tilpasset opplæring** (`tilpasset-opplaering`, begrep, ikke kontrollert)
 
 - Er «en plikt for skolen, men ikke en rett for den enkelte eleven» en riktig og ikke misvisende forenkling?
@@ -1194,7 +1203,6 @@ Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-t
 
 **Læreplan i norsk for elever med kort botid** (`sp-laereplan`, steg, ikke kontrollert)
 
-- Udir lenker til læreplanen NOR09-04, mens Grep har fagene på NOR09-05. Er NOR09-05 gjeldende læreplan?
 - Er det nyttig å lenke til NOR1412 som eksempel, eller bør steget vise alle fagkodene for kort botid?
 
 Kilder å sjekke mot: [Forskrift om grunnskoleopplæringa og den vidaregåande opplæringa (opplæringsforskrifta)](https://lovdata.no/forskrift/2024-06-03-900/§5-12): § 5-12 Opplæring og eksamen etter læreplanen i norsk for språklege minoritetar med kort butid i Noreg; [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/): Læreplaner for særskilt språkopplæring
@@ -1443,7 +1451,7 @@ Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk
 
 **Vanlig opplæring** (`sp-vanlig`, steg, ikke kontrollert)
 
-- Skal det fattes vedtak også når fylkeskommunen mener eleven ikke har rett til særskilt språkopplæring, og bør utfallet i så fall si det?
+- Er utfallet tydelig nok på at eleven fortsatt skal ha tilpasset opplæring, selv om eleven ikke har rett til særskilt språkopplæring?
 
 Kilder å sjekke mot: [Særskilt språkopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#vurdere-elevens-ferdigheter-i-norsk): Vurdere elevens ferdigheter i norsk
 
@@ -1470,7 +1478,7 @@ Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-t
 **Innføringsopplæring** (`sp-innforing`, steg, ikke kontrollert)
 
 - Er «fritak fra vurdering med karakter, men ikke fra standpunktkarakter» en riktig og forståelig gjengivelse av opplæringsforskrifta § 9-20 andre ledd for videregående?
-- Samtykker eleven selv fra 15 år også her (opplæringslova § 24-5), eller bør teksten si «eleven eller foreldrene» som Udir?
+- Er «Eleven samtykker selv når eleven er i stand til det, ellers foreldrene» en god gjengivelse av at eleven samtykker selv så lenge eleven er samtykkekompetent?
 
 Kilder å sjekke mot: [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#varighet-p-inntil-to-r): Varighet på inntil to år; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#eleven-eller-foreldrene-m-samtykke): Eleven eller foreldrene må samtykke; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#avvik-fra-lreplaner-i-fag-og-fra-fag--og-timefordelingen): Avvik fra læreplaner i fag og fra fag- og timefordelingen; [Innføringsopplæring](https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/innforingsopplaring/#fritak-fra-vurdering-for-elever-i-innfringsopplring): Fritak fra vurdering for elever i innføringsopplæring
 

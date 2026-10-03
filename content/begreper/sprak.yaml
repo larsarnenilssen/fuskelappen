@@ -28,7 +28,7 @@
   kontrollsporsmal:
     - "Er det dekkende å si at særskilt språkopplæring alltid består av forsterket opplæring i norsk?"
   stikkord: [særskild språkopplæring, forsterket norsk, forsterka norsk, språkopplæring, minoritetsspråklige]
-  relatert: [minoritetsspraklig-elev, morsmalsopplaering, tospraklig-fagopplaering, innforingsopplaering]
+  relatert: [minoritetsspraklig-elev, forsterket-opplaering-i-norsk, morsmalsopplaering, tospraklig-fagopplaering, innforingsopplaering]
 
 - id: morsmalsopplaering
   type: begrep
@@ -88,3 +88,18 @@
     - "Er vilkåret for læreplanen i norsk for kort botid (høyst fire års opplæring fra 5. trinn) riktig gjengitt, og bør vilkåret om særskilt språkopplæring også stå her?"
   stikkord: [kort butid, nyankommen, nykomen, botid, butid]
   relatert: [innforingsopplaering, minoritetsspraklig-elev]
+
+- id: forsterket-opplaering-i-norsk
+  type: begrep
+  tittel: { nb: Forsterket opplæring i norsk, nn: Forsterka opplæring i norsk }
+  tekst:
+    nb: Forsterket opplæring i norsk er den delen av særskilt språkopplæring som alle elever med vedtak alltid får. Den skal hjelpe eleven å lære norsk godt nok til å følge den vanlige opplæringen. Den kan gis på ulike måter, i eller utenfor den vanlige klassen.
+    nn: Forsterka opplæring i norsk er den delen av særskild språkopplæring som alle elevar med vedtak alltid får. Ho skal hjelpe eleven å lære norsk godt nok til å følgje den vanlege opplæringa. Ho kan givast på ulike måtar, i eller utanfor den vanlege klassen.
+  kilder:
+    - { id: udir-sarskilt-sprakopplaring, punkt: "Forsterket opplæring i norsk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/sarskilt-sprakopplaring/#forsterket-opplaering-i-norsk" }
+    - { id: opplaeringslova, punkt: "§ 6-5 første ledd", url: "https://lovdata.no/lov/2023-06-09-30/§6-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet si noe om forholdet til læreplanen i norsk for språklige minoriteter med kort botid, eller er det best å holde dem adskilt?"
+  stikkord: [forsterka norsk, forsterket norskopplæring, norsk som andrespråk, særskilt norskopplæring]
+  relatert: [sarskilt-sprakopplaering, kort-botid]

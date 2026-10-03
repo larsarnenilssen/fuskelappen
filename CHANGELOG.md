@@ -4,6 +4,17 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.24.0] – 2026-10-03
+
+### Lagt til
+
+- **Tilrettelegging:** ny veiviser **Særskilt språkopplæring og kort botid**, steg for steg etter opplæringslova § 6-5 og § 6-6, opplæringsforskrifta og Udirs sider.
+  - Hvem som har rett, vurdering av norskferdighetene, vedtak om forsterket opplæring i norsk, morsmålsopplæring og tospråklig opplæring i fag.
+  - For elever med kort botid: innføringsopplæring (frivillig, høyst to år) og læreplanen i norsk for språklige minoriteter med kort botid, med lenke til fagene.
+  - Jevnlig vurdering til eleven kan følge den vanlige opplæringen. Veien viser hver runde.
+  - Kartet over hele prosessen og fasene virker som i veiviseren om tilpasset opplæring.
+- **Nye begreper:** minoritetsspråklig elev, særskilt språkopplæring, forsterket opplæring i norsk, morsmålsopplæring, tospråklig opplæring i fag, innføringsopplæring og kort botid.
+
 ### Endret
 
 - **Tilrettelegging:** Ingressen og figuren sier «noen» elever i stedet for «noen få», og utfallet «Eleven trenger ikke lenger tilrettelegging» sier ikke lenger at det ikke trengs nytt vedtak. Det står åpent.
