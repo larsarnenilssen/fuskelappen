@@ -113,3 +113,19 @@ praksis:
     grunnlag: Eier 02.10.2026. Står ikke i overordnet del på udir.no, som appen bruker som kilde.
     berorer: [laereplanverket]
     bekreftet: null
+
+  - id: forelopig-svar-sakkyndig
+    tittel: Foreløpig svar i saker om individuelt tilrettelagt opplæring
+    sporsmal: Regnes fristen på én måned for foreløpig svar (forvaltningsloven § 11 a tredje ledd) fra den sakkyndige vurderingen er mottatt?
+    appen: Vedtakssteget i veiviseren sier at eleven eller foreldrene skal få et foreløpig svar hvis det ikke er fattet vedtak innen en måned etter at den sakkyndige vurderingen er mottatt.
+    grunnlag: Eier 03.10.2026. Forvaltningsloven § 11 a sier «innen en måned etter at den er mottatt» om henvendelsen, ikke om den sakkyndige vurderingen.
+    berorer: [ti-vedtak]
+    bekreftet: null
+
+  - id: avslutte-tilrettelegging-uten-vedtak
+    tittel: Avslutte tilrettelegging uten nytt vedtak
+    sporsmal: Avsluttes individuell tilrettelegging uten nytt vedtak når eleven ikke lenger trenger den?
+    appen: Utfallet «Eleven trenger ikke lenger tilrettelegging» i veiviseren sier at det ikke trengs noe nytt vedtak for å avslutte tilretteleggingen.
+    grunnlag: Eier 03.10.2026. Veilederen punkt 9.2.2 sier ikke noe uttrykkelig om vedtak.
+    berorer: [ti-avsluttet]
+    bekreftet: null

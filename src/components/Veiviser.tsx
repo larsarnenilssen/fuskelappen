@@ -221,12 +221,31 @@ function Prosesskart({
 }) {
   const { t, malform } = useTekst();
   if (veiviser.faser.length === 0) return null;
-  // Stegene i den rekkefølgen de nås, og resultatene sist i hver fase.
+  // Stegene i den rekkefølgen de nås. Utfallene (der veien kan ende) står for seg sist i hver fase.
   const iFase = stegIRekkefolge(kart).flatMap((id) => {
     const s = kart.steg.get(id);
     return s?.fase ? [s] : [];
   });
   const rekkefolge = [...iFase.filter((s) => !erUtfall(s)), ...iFase.filter((s) => erUtfall(s))];
+  const punkt = (s: Stegelement) => {
+    const vei = korstesteVei(kart, s.id);
+    const naa = s.id === gjeldende;
+    const klasse = ['prosesskart-punkt', besokt.has(s.id) ? 'prosesskart-besokt' : '', naa ? 'prosesskart-naa' : ''].filter(Boolean).join(' ');
+    return (
+      <li key={s.id} class={klasse}>
+        <a href={vei ? lenke(sti, tilstand(kart, vei.steg, vei.svar)) : undefined} aria-current={naa ? 'step' : undefined}>
+          {erUtfall(s) ? <Ikon navn="flagg" class="ikon-liten" /> : besokt.has(s.id) && !naa && <Ikon navn="ok" class="ikon-liten" />}
+          <span>{s.tittel[malform]}</span>
+        </a>
+        {s.fristKort && (
+          <span class="prosesskart-frist">
+            <Ikon navn="klokke" class="ikon-liten" />
+            {s.fristKort[malform]}
+          </span>
+        )}
+      </li>
+    );
+  };
   return (
     <div class="veiviser-kart">
       <Forklaring tittel={t('komponenter.veiviser.heleProsessen')} aapen={aapen}>
@@ -244,31 +263,14 @@ function Prosesskart({
                   {f.tittel[malform]}
                 </h3>
                 <ul class="prosesskart-steg">
-                  {egne.map((s) => {
-                    const vei = korstesteVei(kart, s.id);
-                    const naa = s.id === gjeldende;
-                    const klasse = ['prosesskart-punkt', erUtfall(s) ? 'prosesskart-utfall' : '', besokt.has(s.id) ? 'prosesskart-besokt' : '', naa ? 'prosesskart-naa' : '']
-                      .filter(Boolean)
-                      .join(' ');
-                    return (
-                      <li key={s.id} class={klasse}>
-                        <a href={vei ? lenke(sti, tilstand(kart, vei.steg, vei.svar)) : undefined} aria-current={naa ? 'step' : undefined}>
-                          {besokt.has(s.id) && !naa && <Ikon navn="ok" class="ikon-liten" />}
-                          <span>
-                            {erUtfall(s) && <span class="prosesskart-merke">{t('komponenter.veiviser.utfall')}</span>}
-                            {s.tittel[malform]}
-                          </span>
-                        </a>
-                        {s.fristKort && (
-                          <span class="prosesskart-frist">
-                            <Ikon navn="klokke" class="ikon-liten" />
-                            {s.fristKort[malform]}
-                          </span>
-                        )}
-                      </li>
-                    );
-                  })}
+                  {egne.filter((s) => !erUtfall(s)).map((s) => punkt(s))}
                 </ul>
+                {egne.some((s) => erUtfall(s)) && (
+                  <>
+                    <p class="prosesskart-ende">{t('komponenter.veiviser.kanEnde')}</p>
+                    <ul class="prosesskart-steg prosesskart-utfall-liste">{egne.filter((s) => erUtfall(s)).map((s) => punkt(s))}</ul>
+                  </>
+                )}
               </li>
             );
           })}
@@ -362,6 +364,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
         <div class="veiviser-lop">
           <section ref={kort} class={`veiviser-steg${utfall ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId}>
             <p class="veiviser-stegnr">
+              {utfall && <Ikon navn="flagg" class="ikon-liten" />}
               {utfall ? t('komponenter.veiviser.utfall') : t('komponenter.veiviser.steg', { nr: String(nr) })}
               {fase && <span class="veiviser-stegfase"> · {fase.tittel[malform]}</span>}
             </p>

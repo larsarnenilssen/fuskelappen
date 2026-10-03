@@ -4,12 +4,12 @@
 import { expect, test } from '@playwright/test';
 import { erMobil } from './hjelp.ts';
 
-const VEIVISER = './#/tilrettelegging/fra-tilpasset-opplaering';
+const VEIVISER = './#/tilrettelegging/tilpasset-og-individuell';
 
 test.describe('veiviser', () => {
   test('fra oversikten gjennom stegene til et resultat, og tilbake med historikken', async ({ page }) => {
     await page.goto('./#/tilrettelegging');
-    await page.getByRole('link', { name: /Fra tilpasset opplæring til individuell tilrettelegging/ }).click();
+    await page.getByRole('link', { name: /Tilpasset opplæring og individuell tilrettelegging/ }).click();
     const steg = page.locator('.veiviser-stegtittel');
     await expect(steg).toHaveText('Velg hvor du starter');
 
@@ -29,7 +29,7 @@ test.describe('veiviser', () => {
     await page.getByRole('link', { name: 'Bare personlig assistanse eller fysisk tilrettelegging' }).click();
     await page.getByRole('link', { name: /Neste\s*Vedtak om individuell tilrettelegging/ }).click();
     await page.getByRole('link', { name: 'Avslag' }).click();
-    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Resultat · Vedtak/);
+    await expect(page.locator('.veiviser-stegnr')).toHaveText(/^Her ender veien · Vedtak/);
     await expect(page.getByRole('button', { name: 'Kopier oppsummeringen' })).toBeVisible();
 
     // Tilbake i nettleseren går ett steg tilbake.

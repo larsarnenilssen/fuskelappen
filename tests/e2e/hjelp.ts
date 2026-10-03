@@ -78,10 +78,10 @@ export const ruter = [
   '#/lov/hovedtariffavtalen/hta-ansettelse',
   '#/lov/sfs2213',
   '#/tilrettelegging',
-  '#/tilrettelegging/fra-tilpasset-opplaering',
-  '#/tilrettelegging/fra-tilpasset-opplaering?steg=ti-tiltak&svar=ordinar.tvil',
-  '#/tilrettelegging/fra-tilpasset-opplaering?steg=ti-vedtak&svar=foresporsel.faglig',
-  '#/tilrettelegging/fra-tilpasset-opplaering?steg=ti-avslag&svar=foresporsel.faglig.avslag',
+  '#/tilrettelegging/tilpasset-og-individuell',
+  '#/tilrettelegging/tilpasset-og-individuell?steg=ti-tiltak&svar=ordinar.tvil',
+  '#/tilrettelegging/tilpasset-og-individuell?steg=ti-vedtak&svar=foresporsel.faglig',
+  '#/tilrettelegging/tilpasset-og-individuell?steg=ti-avslag&svar=foresporsel.faglig.avslag',
   '#/finnes-ikke',
 ];
 

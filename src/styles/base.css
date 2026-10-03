@@ -4101,15 +4101,19 @@ p.fagkort-tittel {
 }
 
 .veiviser-steg-utfall {
-  border: 2px solid var(--farge-ok);
+  border: 2px solid var(--farge-tekst-dempet);
 }
 
 .veiviser-steg-utfall::before {
-  border-color: var(--farge-ok);
-  background: var(--farge-ok);
+  border-color: var(--farge-tekst-dempet);
+  border-radius: 2px;
+  background: var(--farge-tekst-dempet);
 }
 
 .veiviser-stegnr {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
   margin: 0;
   font-size: var(--str-xs);
   font-weight: 600;
@@ -4396,11 +4400,23 @@ p.fagkort-tittel {
   text-decoration: none;
 }
 
-.prosesskart-merke {
-  display: block;
+/* Utfallene: der veien kan ende, avhengig av svarene. Nøytral farge, stiplet linje og flagg, så de ikke leses som
+   ønskede eller foreløpige resultater. */
+.prosesskart-ende {
+  margin: var(--rom-2) 0 0 0.6875rem;
+  padding-left: calc(var(--rom-3) + 2px);
   font-size: var(--str-xs);
   font-weight: 700;
-  color: var(--farge-ok);
+  color: var(--farge-tekst-dempet);
+}
+
+.prosesskart-utfall-liste {
+  border-left-style: dashed;
+}
+
+.prosesskart-utfall-liste .ikon {
+  margin-top: 0.15rem;
+  color: var(--farge-tekst-dempet);
 }
 
 .prosesskart-frist {

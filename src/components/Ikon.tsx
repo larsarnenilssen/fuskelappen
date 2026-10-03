@@ -45,6 +45,8 @@ const baner = {
   person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20.5c.8-3.6 3.8-5.5 7.5-5.5s6.7 1.9 7.5 5.5',
   // Trapp: trinn for trinn, for veiviserne i Tilrettelegging.
   trapp: 'M3.5 20h4.5v-4.5h4.5V11h4.5V6.5h3.5',
+  // Flagg: der veien i en veiviser ender.
+  flagg: 'M5.5 21V3.5M5.5 4h12l-2.5 4.25L17.5 12.5h-12',
   // Lag: tre lag oppå hverandre, for læreplanverket (overordnet del, ferdigheter og temaer).
   lag: 'M12 4 3 8.5l9 4.5 9-4.5L12 4ZM3 12.5l9 4.5 9-4.5M3 16.5l9 4.5 9-4.5',
 } as const;

@@ -1,13 +1,13 @@
 # Veiviser: fra tilpasset opplæring til individuell tilrettelegging (fase 4, avgjørelse 041). Egne ord.
 # Bygger på opplæringslova kapittel 11 og Udirs veileder om tilpasset opplæring og individuell tilrettelegging.
-- id: fra-tilpasset-opplaering
+- id: tilpasset-og-individuell
   type: veiviser
   tittel:
-    nb: Fra tilpasset opplæring til individuell tilrettelegging
-    nn: Frå tilpassa opplæring til individuell tilrettelegging
+    nb: Tilpasset opplæring og individuell tilrettelegging
+    nn: Tilpassa opplæring og individuell tilrettelegging
   tekst:
-    nb: Hva skolen skal gjøre når en elev ikke får godt nok utbytte av opplæringen, steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
-    nn: Kva skolen skal gjere når ein elev ikkje får godt nok utbytte av opplæringa, steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
+    nb: Alle elever skal ha tilpasset opplæring. Noen få trenger i tillegg individuell tilrettelegging. Her er hva skolen gjør steg for steg, med hvem som har ansvaret, hva som skal dokumenteres, og fristene.
+    nn: Alle elevar skal ha tilpassa opplæring. Nokre få treng i tillegg individuell tilrettelegging. Her er kva skolen gjer steg for steg, med kven som har ansvaret, kva som skal dokumenterast, og fristane.
   start: ti-start
   faser:
     - { id: ordinar, tittel: { nb: Tilpasset opplæring, nn: Tilpassa opplæring } }
@@ -24,7 +24,7 @@
 
 - id: ti-start
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   tittel:
     nb: Velg hvor du starter
     nn: Vel kvar du startar
@@ -49,7 +49,7 @@
 
 - id: ti-tilpasset
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
     nb: Tilpasset opplæring for alle
@@ -78,7 +78,7 @@
 
 - id: ti-folge-med
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
     nb: Følge med og melde fra
@@ -114,7 +114,7 @@
 
 - id: ti-tiltak
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
     nb: Egnede tiltak i den ordinære opplæringen
@@ -149,7 +149,7 @@
 
 - id: ti-nok
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
     nb: Er tiltakene nok?
@@ -176,7 +176,7 @@
 
 - id: ti-fortsett
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: ordinar
   tittel:
     nb: Fortsett den tilpassede opplæringen
@@ -193,7 +193,7 @@
 
 - id: ti-overgang
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
     nb: Overgang fra grunnskolen
@@ -222,7 +222,7 @@
 
 - id: ti-behov
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
     nb: Hva kan eleven trenge?
@@ -268,7 +268,7 @@
 
 - id: ti-assistanse
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
     nb: Opplyse saken om assistanse eller fysisk tilrettelegging
@@ -298,7 +298,7 @@
 
 - id: ti-samtykke
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
     nb: Samtykke og henvisning til PP-tjenesten
@@ -323,7 +323,7 @@
 
 - id: ti-sakkyndig
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: utredning
   tittel:
     nb: Sakkyndig vurdering fra PP-tjenesten
@@ -372,7 +372,7 @@
 
 - id: ti-vedtak
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: vedtak
   tittel:
     nb: Vedtak om individuell tilrettelegging
@@ -387,8 +387,8 @@
     nb: Skriftlig vedtak med grunngiving, omfang, varighet og opplysning om klagerett.
     nn: Skriftleg vedtak med grunngiving, omfang, varigheit og opplysning om klagerett.
   frist:
-    nb: Uten ugrunnet opphold. Kan saken ikke avgjøres innen en måned etter at henvendelsen kom, skal eleven eller foreldrene få et foreløpig svar.
-    nn: Utan ugrunna opphald. Kan saka ikkje avgjerast innan ein månad etter at førespurnaden kom, skal eleven eller foreldra få eit førebels svar.
+    nb: Uten ugrunnet opphold. Er det ikke fattet vedtak innen en måned etter at den sakkyndige vurderingen er mottatt, skal eleven eller foreldrene få et foreløpig svar. Uten sakkyndig vurdering regnes måneden fra henvendelsen.
+    nn: Utan ugrunna opphald. Er det ikkje gjort vedtak innan ein månad etter at den sakkunnige vurderinga er motteken, skal eleven eller foreldra få eit førebels svar. Utan sakkunnig vurdering blir månaden rekna frå førespurnaden.
   fristKort: { nb: "Foreløpig svar: 1 måned", nn: "Førebels svar: 1 månad" }
   forklaring:
     nb: Vedtaket kan gjelde for mer enn ett år hvis behovet er stabilt. Varigheten må stå tydelig i vedtaket. Ber eleven eller foreldrene om fritak fra vurdering med karakter, gjelder det i videregående bare sidemålet.
@@ -411,13 +411,13 @@
     - { id: udir-veileder-tilpasset-opplaering, punkt: "12 Individuelt tilrettelagt opplæring og fritak fra vurdering med karakter", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/individuelt-tilrettelagt-opplaring-fritak-vurdering-karakter/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er fristen for foreløpig svar (fvl. § 11 a tredje ledd, én måned) riktig å bruke for søknader og forespørsler om individuell tilrettelegging, og regnes måneden fra henvendelsen eller fra den sakkyndige vurderingen er klar?"
+    - "Er det riktig at måneden for foreløpig svar regnes fra henvendelsen når det ikke kreves sakkyndig vurdering (personlig assistanse og fysisk tilrettelegging)?"
     - "Er det riktig at fritak fra vurdering med karakter i videregående bare gjelder sidemålet for elever med individuelt tilrettelagt opplæring?"
     - "Er «Oppgaven kan delegeres til rektor, men ansvaret ligger hos fylkeskommunen» dekkende for hvordan det gjøres i fylkene?"
 
 - id: ti-iop
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: oppfolging
   tittel:
     nb: Individuell opplæringsplan (IOP)
@@ -446,7 +446,7 @@
 
 - id: ti-gjennomforing
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: oppfolging
   tittel:
     nb: Gjennomføring og årlig evaluering
@@ -485,24 +485,24 @@
 
 - id: ti-avsluttet
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: oppfolging
   tittel:
     nb: Eleven trenger ikke lenger tilrettelegging
     nn: Eleven treng ikkje lenger tilrettelegging
   tekst:
-    nb: Eleven får igjen tilpasset opplæring innenfor den ordinære opplæringen. Lærerne følger med på utviklingen som før, og melder fra til rektor hvis det blir tvil om utbyttet.
-    nn: Eleven får igjen tilpassa opplæring innanfor den ordinære opplæringa. Lærarane følgjer med på utviklinga som før, og melder frå til rektor dersom det blir tvil om utbyttet.
+    nb: Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen. Eleven får tilpasset opplæring innenfor den ordinære opplæringen, som alle andre. Lærerne følger med på utviklingen som før, og melder fra til rektor hvis det blir tvil om utbyttet.
+    nn: Det trengst ikkje noko nytt vedtak for å avslutte tilrettelegginga. Eleven får tilpassa opplæring innanfor den ordinære opplæringa, som alle andre. Lærarane følgjer med på utviklinga som før, og melder frå til rektor dersom det blir tvil om utbyttet.
   paragrafer: [opplaeringslova/11-1, opplaeringslova/11-2]
   kilder:
     - { id: udir-veileder-tilpasset-opplaering, punkt: "9.2 Vurdere om eleven fortsatt har behov for individuelt tilrettelagt opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/veileder-for-tilpasset-opplaring-og-individuell-tilrettelegging/arlig-evaluering-av-utbyttet/#vurdere-eleven-fortsatt-behov-individuelt-tilrettelagt-opplaring" }
   kontrollert: null
   kontrollsporsmal:
-    - "Kreves det et nytt vedtak når eleven ikke lenger trenger individuelt tilrettelagt opplæring før vedtaket går ut, eller holder det at vedtaket ikke fornyes?"
+    - "Er «Det trengs ikke noe nytt vedtak for å avslutte tilretteleggingen» formulert slik at det ikke kan misforstås, for eksempel når vedtaket fortsatt gjelder en periode?"
 
 - id: ti-avslag
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: vedtak
   tittel:
     nb: Avslag
@@ -524,7 +524,7 @@
 
 - id: ti-klage
   type: steg
-  veiviser: fra-tilpasset-opplaering
+  veiviser: tilpasset-og-individuell
   fase: oppfolging
   tittel:
     nb: Klage på vedtaket eller gjennomføringen
