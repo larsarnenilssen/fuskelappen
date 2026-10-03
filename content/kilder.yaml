@@ -519,6 +519,22 @@ kilder:
     merknad: >-
       Oversikt over klageinstansen for hvert vedtak etter opplæringsforskrifta. Brukt om klage på inntak (fase 5).
 
+  - id: vilbli
+    navn: Vilbli.no – inntak og frister
+    utgiver: Fylkeskommunene
+    url: https://www.vilbli.no/
+    type: side
+    niva: nasjonal
+    lisens: Opphavsrett fylkeskommunene. Lenkes, kopieres ikke.
+    sjekkmetode: ingen
+    aktiv: false
+    godkjent_fingeravtrykk: null
+    faser: [2, 5]
+    merknad: >-
+      Fylkeskommunenes tjeneste for søkere, med datoene for svar, svarfrist og andre inntak i hvert fylke. Vilbli
+      stenger for maskinell henting (avgjørelse 027), så kilden kan ikke sjekkes automatisk. Tidslinjen for inntak
+      lenker hit (eier 03.10.2026).
+
   - id: udir-overordnet-del
     navn: Overordnet del – verdier og prinsipper for grunnopplæringen
     utgiver: Utdanningsdirektoratet

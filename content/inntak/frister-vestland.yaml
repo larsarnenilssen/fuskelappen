@@ -1,0 +1,147 @@
+# Fristene i Vestlands lokale forskrift om inntak (fase 5, pakke 2). Fylkesinnhold som vises bare når Vestland er
+# valgt. Egne ord.
+- id: fr-vl-voksne-host
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 1, maned: 3 }
+  grupper: [voksne]
+  tittel:
+    nb: Voksne bør søke for oppstart om høsten
+    nn: Vaksne bør søkje for oppstart om hausten
+  tekst:
+    nb: Det er ingen søknadsfrist for voksne, men søkeren bør søke innen 1. mars for tilbud som starter om høsten.
+    nn: Det er ingen søknadsfrist for vaksne, men søkjaren bør søkje innan 1. mars for tilbod som startar om hausten.
+  paragrafer: [vestland-inntak/4-1]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 4-1 første ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§4-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «bør søke innen» en riktig gjengivelse av VL § 4-1, som sier at søkeren «bør» registrere søknaden innen datoen?"
+
+- id: fr-vl-flytting
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 23, maned: 6 }
+  grupper: [ungdom]
+  tittel:
+    nb: Dokumentasjon av flytting til Vestland
+    nn: Dokumentasjon av flytting til Vestland
+  tekst:
+    nb: Søkere som planlegger å flytte til Vestland, må dokumentere at flyttingen er reell innen denne datoen, og være folkeregistrert i Vestland ved skolestart.
+    nn: Søkjarar som planlegg å flytte til Vestland, må dokumentere at flyttinga er reell innan denne datoen, og vere folkeregistrerte i Vestland ved skulestart.
+  paragrafer: [vestland-inntak/2-17]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-17 Flytting", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-17" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder 23. juni bare søkere til videregående for ungdom, eller også voksne?"
+
+- id: fr-vl-ventelister
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 31, maned: 8 }
+  grupper: [ungdom]
+  naar:
+    nb: Ut august
+    nn: Ut august
+  tittel:
+    nb: Rektor følger ventelistene
+    nn: Rektor følgjer ventelistene
+  tekst:
+    nb: Når det sentrale inntaket er ferdig, følger rektor ventelistene fra det sentrale inntaket ut august. Når alle med ungdomsrett på ventelisten har fått tilbud, kan rektor ta inn andre søkere i en fast rekkefølge.
+    nn: Når det sentrale inntaket er ferdig, følgjer rektor ventelistene frå det sentrale inntaket ut august. Når alle med ungdomsrett på ventelista har fått tilbod, kan rektor ta inn andre søkjarar i ei fast rekkjefølgje.
+  paragrafer: [vestland-inntak/2-19]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-19 Rektor sin rett til inntak av elevar", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er rekkefølgen i VL § 2-19 tredje ledd riktig oppsummert som «en fast rekkefølge», eller bør den stå i sin helhet?"
+
+- id: fr-vl-forste-skoledag
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: maned, maned: 8 }
+  grupper: [ungdom]
+  naar:
+    nb: Første skoledag
+    nn: Første skuledag
+  tittel:
+    nb: Møte første skoledag
+    nn: Møte første skuledag
+  tekst:
+    nb: Eleven må møte første skoledag, eller melde fra til skolen senest ved oppmøtetidspunktet og dokumentere fraværet. Uten gyldig grunn mister eleven plassen.
+    nn: Eleven må møte første skuledag, eller melde frå til skulen seinast ved oppmøtetidspunktet og dokumentere fråværet. Utan gyldig grunn mistar eleven plassen.
+  paragrafer: [vestland-inntak/2-18]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-18 Frammøte første skuledag", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-18" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står første skoledag riktig i august, eller kan den variere med skoleruta?"
+
+- id: fr-vl-inntak-avsluttet
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 1, maned: 9 }
+  grupper: [ungdom]
+  tittel:
+    nb: Inntaket er avsluttet
+    nn: Inntaket er avslutta
+  tekst:
+    nb: Fra 1. september regnes inntaket som avsluttet.
+    nn: Frå 1. september blir inntaket rekna som avslutta.
+  paragrafer: [vestland-inntak/2-19]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-19 andre ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-19" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Betyr «inntaket er avsluttet» at skolene ikke kan ta inn flere elever etter 1. september, eller bare at det sentrale inntaket er ferdig?"
+
+- id: fr-vl-voksne-var
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 1, maned: 10 }
+  grupper: [voksne]
+  tittel:
+    nb: Voksne bør søke for oppstart om våren
+    nn: Vaksne bør søkje for oppstart om våren
+  tekst:
+    nb: Det er ingen søknadsfrist for voksne, men søkeren bør søke innen 1. oktober for tilbud som starter om våren.
+    nn: Det er ingen søknadsfrist for vaksne, men søkjaren bør søkje innan 1. oktober for tilbod som startar om våren.
+  paragrafer: [vestland-inntak/4-1]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 4-1 første ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§4-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å plassere denne fristen i oktober, samme måned som kommunen melder elever med mulig fortrinnsrett?"
+
+- id: fr-vl-omvalg-fag
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  regel: { type: arlig, dag: 1, maned: 11 }
+  grupper: [ungdom]
+  tittel:
+    nb: Slutte i et fag for å beholde standpunktkarakteren
+    nn: Slutte i eit fag for å halde på standpunktkarakteren
+  tekst:
+    nb: Elever som har gjort omvalg og tar et fellesfag på nytt, men ombestemmer seg, må slutte i faget før 1. november for å beholde standpunktkarakteren de har.
+    nn: Elevar som har gjort omval og tek eit fellesfag på nytt, men ombestemmer seg, må slutte i faget før 1. november for å halde på standpunktkarakteren dei har.
+  paragrafer: [vestland-inntak/2-15]
+  kilder:
+    - { id: vestland-forskrift-inntak, punkt: "§ 2-15 tredje ledd", url: "https://lovdata.no/forskrift/2020-09-29-3380/§2-15" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «før 1. november» riktig dato i tidslinjen, når fristen er at eleven må slutte før denne datoen?"

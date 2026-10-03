@@ -4954,3 +4954,301 @@ div + .veiviser-svargruppe {
   font-weight: 600;
   text-align: center;
 }
+
+/* ---------- Frister ved inntak (avgjørelse 046) ---------- */
+
+/* Filteret: lave knapper som brytes over flere linjer på smal skjerm. */
+.frist-filter ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-4);
+  padding: 0;
+  list-style: none;
+}
+
+.frist-filter a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font-size: var(--str-s);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.frist-filter a[aria-current='page'] {
+  border-color: var(--farge-aksent);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+/* Året med ett blikk: tolv celler, seks i bredden på mobil og alle tolv på bred skjerm. */
+.frist-aar {
+  margin: 0 0 var(--rom-5);
+}
+
+.frist-stripe {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--rom-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.frist-stripe-celle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--rom-1);
+  width: 100%;
+  min-height: 3.25rem;
+  padding: var(--rom-2) 0;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  cursor: pointer;
+}
+
+button.frist-stripe-celle:hover {
+  border-color: var(--farge-merke);
+}
+
+.frist-stripe-tom {
+  border-style: dashed;
+  background: transparent;
+  color: var(--farge-tekst-dempet);
+  cursor: default;
+}
+
+.frist-stripe-naa .frist-stripe-celle {
+  border: 2px solid var(--farge-aksent);
+}
+
+.frist-stripe-navn {
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.frist-stripe-prikker {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  min-height: 0.5rem;
+}
+
+.frist-prikk {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--farge-aksent);
+}
+
+.frist-prikk-lokal {
+  background: transparent;
+  border: 2px solid var(--farge-merke);
+}
+
+/* Månedene med fristene. Overskriften havner under topplinjen når stripen ruller til den. */
+.frist-maned {
+  margin: 0 0 var(--rom-6);
+}
+
+.frist-maned-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  font-size: var(--str-l);
+  scroll-margin-top: calc(var(--topplinje-hoyde) + var(--rom-4));
+}
+
+
+.frist-naa {
+  border-color: var(--farge-aksent);
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+.frist-liste {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.frist-kort {
+  border: var(--strek) solid var(--farge-kant);
+  border-left: 4px solid var(--farge-aksent);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate);
+}
+
+.frist-kort-lokal {
+  border-style: dashed;
+  border-left: 4px solid var(--farge-merke);
+}
+
+.frist-kort-topp {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--rom-2) var(--rom-3);
+  padding: var(--rom-3) var(--rom-4);
+  cursor: pointer;
+  list-style: none;
+}
+
+.frist-kort-topp::-webkit-details-marker {
+  display: none;
+}
+
+.frist-kort-topp .forklaring-pil {
+  grid-row: 1 / span 3;
+  grid-column: 2;
+  align-self: center;
+  color: var(--farge-lenke);
+}
+
+.frist-kort[open] .forklaring-pil {
+  transform: rotate(180deg);
+}
+
+.frist-kort-tid {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-size: var(--str-s);
+  font-weight: 700;
+  color: var(--farge-tekst-dempet);
+}
+
+.frist-kort-tittel {
+  font-size: var(--str-m);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--farge-lenke);
+}
+
+.frist-kort-grupper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1);
+}
+
+.frist-kort-grupper:empty {
+  display: none;
+}
+
+.frist-kort-grupper .merke {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  font-weight: 600;
+}
+
+.frist-kort-innhold {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.frist-kort-tekst {
+  padding: var(--rom-3) var(--rom-4) var(--rom-2);
+}
+
+.frist-kort-tekst ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+}
+
+/* Regelverket og kildene: lukkede rader med strek mellom, som nederst i stegene i veiviserne. */
+.frist-kort-mer > .veiviser-kilder {
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.frist-kort-mer .forklaring-knapp {
+  padding-inline: var(--rom-4);
+}
+
+/* Kortet på oversiktssiden: lenke til tidslinjen med den neste fristen. */
+.frist-inngang {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--rom-2);
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  text-decoration: none;
+}
+
+.frist-inngang:hover {
+  border-color: var(--farge-merke);
+}
+
+.frist-inngang-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  font-weight: 700;
+  color: var(--farge-lenke);
+}
+
+.frist-inngang-neste {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  font-size: var(--str-s);
+}
+
+.frist-inngang-etikett {
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--farge-tekst-dempet);
+}
+
+.frist-inngang-tid {
+  font-weight: 700;
+}
+
+.frist-inngang-pil {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  color: var(--farge-lenke);
+}
+
+@media (min-width: 40rem) {
+  .frist-stripe {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+.frist-tegn {
+  display: flex;
+  gap: var(--rom-4);
+  margin: var(--rom-2) 0 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.frist-tegn > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}

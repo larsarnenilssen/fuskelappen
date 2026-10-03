@@ -1,0 +1,225 @@
+# Fristene ved inntak gjennom året (fase 5, pakke 2, avgjørelse 046). Egne ord. Godkjent i forslaget av eier
+# 03.10.2026 (docs/arbeidsordrer/fase-5-forslag.md). Vestland-fristene står i frister-vestland.yaml.
+# grupper: ungdom (søkere med ungdomsrett), voksne, fortrinn (fortrinnsrett og individuell behandling).
+- id: fr-voksne-lopende
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: lopende }
+  grupper: [voksne]
+  tittel:
+    nb: Voksne søker når som helst
+    nn: Vaksne søkjer når som helst
+  tekst:
+    nb: Søkere til videregående opplæring for voksne kan søke fortløpende, på skjemaet fylkeskommunen har bestemt. Søknaden sendes til fylket der søkeren er folkeregistrert, eller til fylket søkeren skal flytte til, hvis flyttingen kan dokumenteres.
+    nn: Søkjarar til vidaregåande opplæring for vaksne kan søkje fortløpande, på skjemaet fylkeskommunen har bestemt. Søknaden skal sendast til fylket der søkjaren er folkeregistrert, eller til fylket søkjaren skal flytte til, dersom flyttinga kan dokumenterast.
+  paragrafer: [opplaeringsforskrifta/13-3]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 13-3 Søknad om inntak til vidaregåande opplæring for vaksne", url: "https://lovdata.no/forskrift/2024-06-03-900/§13-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «når som helst» en god forenkling av «fortløpande» i § 13-3, når fylket kan ha datoer det anbefaler for oppstart?"
+
+- id: fr-melding-fortrinn
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder]
+  regel: { type: arlig, dag: 1, maned: 10 }
+  grupper: [fortrinn]
+  tittel:
+    nb: Kommunen melder elever som kan ha fortrinnsrett
+    nn: Kommunen melder elevar som kan ha fortrinnsrett
+  tekst:
+    nb: Kommunen melder elever med omfattende behov for individuell tilrettelegging eller sterkt nedsatt funksjonsevne til fylkeskommunen, det året de fullfører grunnskolen. Eleven må samtykke.
+    nn: Kommunen melder elevar med omfattande behov for individuell tilrettelegging eller sterkt nedsett funksjonsevne til fylkeskommunen, det året dei fullfører grunnskolen. Eleven må samtykkje.
+  paragrafer: [opplaeringsforskrifta/4-21, opplaeringsforskrifta/4-22]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-21 tredje ledd og § 4-22 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-21" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at 1. oktober gjelder året eleven fullfører grunnskolen, altså høsten i 10. trinn?"
+
+- id: fr-kunngjoring
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 1 }
+  grupper: [ungdom, fortrinn]
+  naar:
+    nb: Minst fire uker før fristen
+    nn: Minst fire veker før fristen
+  tittel:
+    nb: Søknadsfristen kunngjøres
+    nn: Søknadsfristen blir kunngjord
+  tekst:
+    nb: Fylkeskommunen kunngjør søknadsfristen minst fire uker før den går ut, med hvordan søknaden sendes og hva som skal være med.
+    nn: Fylkeskommunen kunngjer søknadsfristen minst fire veker før han går ut, med korleis søknaden skal sendast og kva som skal vere med.
+  paragrafer: [opplaeringsforskrifta/4-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kunngjøringen står i januar, fordi fristen 1. februar må kunngjøres innen 4. januar. Er det en god plassering?"
+
+- id: fr-soknad-februar
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: arlig, dag: 1, maned: 2 }
+  grupper: [fortrinn]
+  tittel:
+    nb: Søknadsfrist for noen grupper
+    nn: Søknadsfrist for nokre grupper
+  tekst:
+    nb: |
+      Søknadsfristen er 1. februar for søkere som
+
+      - har vedtak om individuell tilrettelegging og søker med fortrinnsrett, eller etter § 4-13 andre ledd bokstav a eller b eller § 4-20 første ledd bokstav a
+      - har vedtak om særskilt språkopplæring
+      - nylig har kommet til Norge
+      - har rett til opplæring i og på norsk tegnspråk
+      - søker om individuell behandling etter § 4-20 tredje ledd eller § 4-26 første ledd bokstav c
+
+      Se [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for mer om hver gruppe.
+    nn: |
+      Søknadsfristen er 1. februar for søkjarar som
+
+      - har vedtak om individuell tilrettelegging og søkjer med fortrinnsrett, eller etter § 4-13 andre ledd bokstav a eller b eller § 4-20 første ledd bokstav a
+      - har vedtak om særskild språkopplæring
+      - nyleg har komme til Noreg
+      - har rett til opplæring i og på norsk teiknspråk
+      - søkjer om individuell behandling etter § 4-20 tredje ledd eller § 4-26 første ledd bokstav c
+
+      Sjå [Rett, inntak og søknad](#/inntak/rett-inntak-soknad) for meir om kvar gruppe.
+  paragrafer: [opplaeringsforskrifta/4-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over hvem som har frist 1. februar en riktig og forståelig gjengivelse av § 4-9 andre ledd bokstav a–e?"
+
+- id: fr-soknad-mars
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: arlig, dag: 1, maned: 3 }
+  grupper: [ungdom]
+  tittel:
+    nb: Søknadsfrist
+    nn: Søknadsfrist
+  tekst:
+    nb: |
+      Søknadsfristen for alle andre søkere.
+
+      Det er også siste frist for å gjøre så mange omvalg man vil, det året søkeren fyller 19.
+
+      Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter.
+    nn: |
+      Søknadsfristen for alle andre søkjarar.
+
+      Det er også siste frist for å gjere så mange omval ein vil, det året søkjaren fyller 19.
+
+      Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter.
+  paragrafer: [opplaeringsforskrifta/4-9, opplaeringslova/5-5]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-9 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-9" }
+    - { id: opplaeringslova, punkt: "§ 5-5 Rett til omval", url: "https://lovdata.no/lov/2023-06-09-30/§5-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å knytte fristen for omvalg til søknadsfristen 1. mars (opplaeringslova § 5-5)?"
+
+- id: fr-tegnsprak
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder]
+  regel: { type: arlig, dag: 15, maned: 3 }
+  grupper: [fortrinn]
+  tittel:
+    nb: Søknader til skoler med tegnspråk sendes videre
+    nn: Søknader til skular med teiknspråk blir sende vidare
+  tekst:
+    nb: Fylkeskommunen sender søknaden til fylkeskommunen som eier skolen med opplæring i og på tegnspråk. Den melder tilbake om søkeren har fått plass.
+    nn: Fylkeskommunen sender søknaden til fylkeskommunen som eig skolen med opplæring i og på teiknspråk. Han melder tilbake om søkjaren har fått plass.
+  paragrafer: [opplaeringsforskrifta/4-11]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-11", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-11" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det nyttig å ha med denne fristen, som er en frist for fylkeskommunen og ikke for søkeren?"
+
+- id: fr-mer-opplaering
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 6 }
+  grupper: [ungdom]
+  naar:
+    nb: Etter standpunkt og sensur
+    nn: Etter standpunkt og sensur
+  tittel:
+    nb: Melde seg til mer opplæring i fag som ikke er bestått
+    nn: Melde seg til meir opplæring i fag som ikkje er bestått
+  tekst:
+    nb: Elever som ikke har bestått et fag, må melde fra hvis de vil ha mer opplæring i faget. Fylkeskommunen setter fristen, minst én uke etter standpunktkarakteren og sensuren i faget.
+    nn: Elevar som ikkje har bestått eit fag, må melde frå dersom dei vil ha meir opplæring i faget. Fylkeskommunen set fristen, minst éi veke etter standpunktkarakteren og sensuren i faget.
+  paragrafer: [opplaeringsforskrifta/4-3, opplaeringsforskrifta/5-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3 Meir opplæring for elevar i fag som er gjennomført, men ikkje bestått", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står fristen riktig i juni, eller bør den stå senere fordi sensuren for noen eksamener kommer senere?"
+
+- id: fr-svar
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 7 }
+  grupper: [ungdom, fortrinn]
+  naar:
+    nb: Juli – datoene står på Vilbli
+    nn: Juli – datoane står på Vilbli
+  tittel:
+    nb: Svar, svarfrist og andre inntak
+    nn: Svar, svarfrist og andre inntak
+  tekst:
+    nb: Søkerne får svar på søknaden, må svare på tilbudet innen svarfristen, og søkere som står på venteliste, kan få plass i andre inntak. Datoene settes av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/).
+    nn: Søkjarane får svar på søknaden, må svare på tilbodet innan svarfristen, og søkjarar som står på venteliste, kan få plass i andre inntak. Datoane blir sette av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/).
+  kilder:
+    - { id: vilbli, punkt: "Inntak og frister i fylket" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «andre inntak» og «venteliste» riktige ord for det som skjer etter det første svaret?"
+
+- id: fr-klage
+  type: frist
+  modul: inntak
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 7 }
+  naar:
+    nb: Tre uker etter svaret
+    nn: Tre veker etter svaret
+  tittel:
+    nb: Klage på vedtaket om inntak
+    nn: Klage på vedtaket om inntak
+  tekst:
+    nb: |
+      Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen.
+
+      Hvem avgjør klagen:
+
+      - **fylkeskommunens klageorgan** når klagen gjelder utdanningsprogram, programområde eller skole
+      - **statsforvalteren** i andre klager på inntak
+    nn: |
+      Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen.
+
+      Kven som avgjer klaga:
+
+      - **klageorganet i fylkeskommunen** når klaga gjeld utdanningsprogram, programområde eller skule
+      - **statsforvaltaren** i andre klager på inntak
+  paragrafer: [forvaltningsloven/29, forvaltningsloven/32, opplaeringslova/29-1]
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 29 Klagefrist", url: "https://lovdata.no/lov/1967-02-10/§29" }
+    - { id: udir-klageinstanser, punkt: "Kapittel 4 Inntak til vidaregåande opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Klagefristen gjelder alle søkere, også voksne. Er det riktig å vise den i alle filtrene?"

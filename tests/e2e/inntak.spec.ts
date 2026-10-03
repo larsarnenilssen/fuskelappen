@@ -73,3 +73,47 @@ test.describe('inntak', () => {
     await expect(page.locator('.veiviser-stegtittel').first()).toHaveText('Grunnopplæring i utlandet');
   });
 });
+
+// Fase 5, pakke 2: tidslinjen med fristene gjennom året (avgjørelse 046).
+test.describe('frister ved inntak', () => {
+  test('fra oversikten til tidslinjen, med filter og en frist som åpnes', async ({ page }) => {
+    await page.goto('./#/inntak');
+    await expect(page.locator('.frist-inngang')).toContainText('Neste frist');
+    await page.locator('.frist-inngang').click();
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Søknad og frister gjennom året');
+    // Stripen har alle tolv månedene, fra oktober.
+    await expect(page.locator('.frist-stripe > li')).toHaveCount(12);
+    await expect(page.locator('.frist-stripe-navn').first()).toHaveText(/okt/i);
+    // Uten valgt fylke er det ingen Vestland-frister.
+    await expect(page.locator('.frist-kort-lokal')).toHaveCount(0);
+    // Et trykk på mars går til måneden.
+    await page.locator('.frist-stripe-celle', { hasText: /mar/i }).click();
+    await expect(page.locator('#frister-3')).toBeFocused();
+    // Fristen er lukket til den åpnes.
+    const mars = page.locator('.frist-kort', { hasText: 'Søknadsfrist' }).filter({ hasText: '1. mars' });
+    await expect(mars.locator('.frist-kort-innhold')).toBeHidden();
+    await mars.locator('.frist-kort-topp').click();
+    await expect(mars.locator('.frist-kort-innhold')).toContainText('første virkedag');
+    // Regelverket og kildene er lukket til de åpnes, som i veiviserne.
+    await expect(mars.getByRole('link', { name: /§ 4-9/ })).toBeHidden();
+    await mars.getByText(/I regelverket \(2\)/).click();
+    await expect(mars.getByRole('link', { name: /§ 4-9/ })).toBeVisible();
+    // Filteret for voksne viser bare frister for voksne og frister som gjelder alle.
+    await page.getByRole('link', { name: 'Voksne', exact: true }).click();
+    await expect(page).toHaveURL(/vis=voksne$/);
+    await expect(page.locator('.frist-kort-tittel')).toHaveText(['Voksne søker når som helst', 'Klage på vedtaket om inntak']);
+  });
+
+  test('med Vestland valgt kommer fylkets frister med', async ({ page }) => {
+    await settLagret(page, { fylke: '46' });
+    await page.goto('./#/inntak/frister?vis=voksne');
+    await expect(page.locator('.frist-kort-tittel')).toHaveText([
+      'Voksne søker når som helst',
+      'Voksne bør søke for oppstart om våren',
+      'Voksne bør søke for oppstart om høsten',
+      'Klage på vedtaket om inntak',
+    ]);
+    await expect(page.locator('.frist-kort-lokal')).toHaveCount(2);
+    await expect(page.locator('.frist-tegn')).toContainText('Vestland');
+  });
+});
