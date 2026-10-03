@@ -361,6 +361,7 @@ export const nn: Tekster = {
     en: 'engelsk',
   },
   felles: {
+    plassering: 'Plassering',
     kilder: 'Kjelder',
     lukk: 'Lukk',
     eksternLenke: '(blir opna på {nettsted})',

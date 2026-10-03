@@ -100,4 +100,13 @@ test.describe('veiviser', () => {
       await expect(page.locator('.veiviser-prosess [aria-current="step"]')).toHaveText('Vedtak om individuell tilrettelegging');
     }
   });
+
+  test('et begrep åpnet fra veiviseren viser at brukeren er i begrepsbanken', async ({ page }) => {
+    await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
+    await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).click();
+    await expect(page).toHaveURL(/#\/begreper\/sakkyndig-vurdering$/);
+    const sti = page.getByRole('navigation', { name: 'Plassering' });
+    await sti.getByRole('link', { name: 'Begreper' }).click();
+    await expect(page).toHaveURL(/#\/begreper$/);
+  });
 });

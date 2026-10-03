@@ -6,7 +6,6 @@ export const opplaeringslopNn = {
   skolear: 'Fag og timar for skuleåret {skolear}.',
   lasterFeil: 'Tilboda kunne ikkje lastast. Prøv igjen.',
   ikkeFunnet: 'Fann ikkje tilbodet.',
-  brodsmuler: 'Plassering',
   oversikt: {
     sok: 'Søk etter tilbod eller kode',
     antallTreff: '{antall} tilbod passar søket.',

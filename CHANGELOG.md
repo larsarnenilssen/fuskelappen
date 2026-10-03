@@ -4,6 +4,10 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Begreper:** Øverst på hvert begrep står «Begreper» som lenke til begrepsbanken, så det er tydelig hvor du er når du har kommet dit via en lenke fra en annen del av appen.
+
 ## [0.23.0] – 2026-10-03
 
 ### Lagt til
