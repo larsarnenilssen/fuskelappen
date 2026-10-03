@@ -53,12 +53,21 @@ export function Kildelenke({ kilde }: { kilde: KildeRef }) {
   );
 }
 
-export function Kildeliste({ kilder: liste, niva = 2 }: { kilder: readonly KildeRef[]; niva?: 2 | 3 }) {
+export function Kildeliste({
+  kilder: liste,
+  niva = 2,
+  utenOverskrift = false,
+}: {
+  kilder: readonly KildeRef[];
+  niva?: 2 | 3;
+  /** Uten overskrift, f.eks. når listen står i en lukket boks som allerede heter «Kilder». */
+  utenOverskrift?: boolean;
+}) {
   const { t } = useTekst();
   const Overskrift = niva === 3 ? 'h3' : 'h2';
   return (
     <div class="kildeliste">
-      <Overskrift class="liten-overskrift">{t('felles.kilder')}</Overskrift>
+      {!utenOverskrift && <Overskrift class="liten-overskrift">{t('felles.kilder')}</Overskrift>}
       <ul>
         {liste.map((k) => (
           <li key={`${k.id}-${k.punkt ?? ''}`}>

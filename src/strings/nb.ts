@@ -204,6 +204,8 @@ export const nb = {
   },
   komponenter: {
     veiviser: {
+      prosessen: 'Prosessen',
+      kilder: 'Kilder ({antall})',
       faser: 'Fasene i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',

@@ -3,7 +3,7 @@
 // oppføring i historikken, så «tilbake» går ett steg tilbake og et steg kan deles som lenke.
 // Gangen gjennom veiviseren står i src/core/veiviser/veiviser.ts.
 import { useEffect, useId, useMemo, useRef, useState } from 'preact/hooks';
-import { lenke } from '../app/ruter.ts';
+import { beholdRullingVedNesteNavigasjon, lenke } from '../app/ruter.ts';
 import { type T, useTekst } from '../app/tilstand.ts';
 import { app } from '../config/app.ts';
 import type { Malform } from '../core/i18n/tekst.ts';
@@ -145,24 +145,89 @@ function Oppsummering({ tekst, startPaaNytt }: { tekst: () => string; startPaaNy
   );
 }
 
+/** Fasene med stegene på veien under hver fase, til venstre på stor skjerm. */
+function Prosessoversikt({
+  veiviser,
+  punkter,
+}: {
+  veiviser: Veiviserelement;
+  punkter: { steg: Stegelement; svar?: string | undefined; href?: string | undefined; gjeldende: boolean }[];
+}) {
+  const { t, malform } = useTekst();
+  const gjeldende = punkter.find((p) => p.gjeldende)?.steg;
+  const status = fasestatus(
+    veiviser.faser.map((f) => f.id),
+    gjeldende?.fase,
+  );
+  const statustekst = { ferdig: t('komponenter.veiviser.faseFerdig'), gjeldende: t('komponenter.veiviser.faseGjeldende'), senere: t('komponenter.veiviser.faseSenere') };
+  const grupper = veiviser.faser.length > 0 ? veiviser.faser.map((f) => ({ id: f.id, navn: f.tittel[malform] })) : [{ id: '', navn: '' }];
+  return (
+    <nav class="veiviser-prosess" aria-label={t('komponenter.veiviser.prosessen')}>
+      <ol class="veiviser-prosess-faser">
+        {grupper.map((g, i) => {
+          const s = veiviser.faser.length > 0 ? (status[i] ?? 'senere') : 'gjeldende';
+          const egne = punkter.filter((p) => veiviser.faser.length === 0 || p.steg.fase === g.id);
+          return (
+            <li key={g.id} class={`veiviser-prosess-fase veiviser-prosess-${s}`}>
+              {g.navn && (
+                <p class="veiviser-prosess-fasenavn">
+                  <span class="veiviser-prosess-merke" aria-hidden="true">
+                    {s === 'ferdig' ? <Ikon navn="ok" class="ikon-liten" /> : null}
+                  </span>
+                  {g.navn}
+                  <span class="skjult-visuelt"> ({statustekst[s]})</span>
+                </p>
+              )}
+              {egne.length > 0 && (
+                <ol class="veiviser-prosess-steg">
+                  {egne.map((p, j) => {
+                    const svar = svartekst(p.steg, p.svar, malform);
+                    return (
+                      <li key={j} class={p.gjeldende ? 'veiviser-prosess-naa' : undefined} aria-current={p.gjeldende ? 'step' : undefined}>
+                        {p.gjeldende || !p.href ? <span>{p.steg.tittel[malform]}</span> : <a href={p.href}>{p.steg.tittel[malform]}</a>}
+                        {svar && <span class="veiviser-svar-valgt">{svar}</span>}
+                      </li>
+                    );
+                  })}
+                </ol>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  );
+}
+
+const redusertBevegelse = () => typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
   const { t, malform } = useTekst();
   const kart = useMemo(() => lagKart(veiviser.start, steg), [veiviser.start, steg]);
   const vei: Vei = finnVei(kart, lesSvar(sporring.get('svar')), sporring.get('steg'));
   const node = kart.steg.get(vei.gjeldende);
   const overskrift = useRef<HTMLHeadingElement>(null);
-  const forrige = useRef<string | null>(null);
+  const kort = useRef<HTMLElement>(null);
+  const forrige = useRef<{ nokkel: string; lengde: number } | null>(null);
   const tilstandNokkel = `${vei.gjeldende}|${vei.svar.join('.')}`;
   const overskriftId = useId();
   const sporsmalId = useId();
   const veiId = useId();
 
-  // Nytt steg: fokus på overskriften i steget, så skjermlesere leser det nye steget. Ikke ved første visning,
-  // der siden selv får fokus.
+  // Nytt steg: fokus på overskriften i steget, så skjermlesere leser det nye steget. Ikke ved første visning, der
+  // siden selv får fokus. Går brukeren videre, rulles det nye kortet fram der knappene sto. Går brukeren tilbake,
+  // gjenoppretter historikken posisjonen.
   useEffect(() => {
-    if (forrige.current !== null && forrige.current !== tilstandNokkel) overskrift.current?.focus({ preventScroll: true });
-    forrige.current = tilstandNokkel;
-  }, [tilstandNokkel]);
+    const f = forrige.current;
+    if (f !== null && f.nokkel !== tilstandNokkel) {
+      overskrift.current?.focus({ preventScroll: true });
+      if (vei.bak.length > f.lengde) {
+        // Skallet ruller ikke til toppen (beholdRullingVedNesteNavigasjon), så kortet glir fram fra der knappene sto.
+        requestAnimationFrame(() => kort.current?.scrollIntoView({ block: 'start', behavior: redusertBevegelse() ? 'auto' : 'smooth' }));
+      }
+    }
+    forrige.current = { nokkel: tilstandNokkel, lengde: vei.bak.length };
+  }, [tilstandNokkel, vei.bak.length]);
 
   if (!node) return null;
   const href = (tilstand: Record<string, string> | null) => (tilstand ? lenke(sti, tilstand) : undefined);
@@ -177,30 +242,36 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
     }),
     { steg: node },
   ];
+  const punkter = stegPaaVeien.map((p, i) => ({
+    ...p,
+    gjeldende: i === stegPaaVeien.length - 1,
+    href: i < vei.bak.length ? href(tilbakeTil(kart, vei, i)) : undefined,
+  }));
 
   return (
-    <div class="veiviser">
-      <Fasestolpe veiviser={veiviser} gjeldende={node} />
-      {vei.korrigert && (
-        <p class="merknad merknad-advarsel" role="status">
-          {t('komponenter.veiviser.korrigert')}
-        </p>
-      )}
-      <div class="veiviser-lop">
+    <div class={`veiviser${veiviser.faser.length > 0 ? ' veiviser-med-faser' : ''}`}>
+      <div class="veiviser-sidekolonne">
+        <Prosessoversikt veiviser={veiviser} punkter={punkter} />
+      </div>
+      <div class="veiviser-hoved">
+        <Fasestolpe veiviser={veiviser} gjeldende={node} />
+        {vei.korrigert && (
+          <p class="merknad merknad-advarsel" role="status">
+            {t('komponenter.veiviser.korrigert')}
+          </p>
+        )}
         {vei.bak.length > 0 && (
-          <nav aria-labelledby={veiId}>
+          <nav aria-labelledby={veiId} class="veiviser-lop veiviser-vei-nav">
             <h2 id={veiId} class="skjult-visuelt">
               {t('komponenter.veiviser.veienHit')}
             </h2>
             <ol class="veiviser-vei">
-              {vei.bak.map((p, i) => {
-                const s = kart.steg.get(p.steg);
-                if (!s) return null;
-                const svar = svartekst(s, p.svar, malform);
+              {punkter.slice(0, -1).map((p, i) => {
+                const svar = svartekst(p.steg, p.svar, malform);
                 return (
                   <li key={i} class="veiviser-vei-punkt">
-                    <a href={href(tilbakeTil(kart, vei, i))} title={t('komponenter.veiviser.tilbakeTil', { steg: s.tittel[malform] })}>
-                      {s.tittel[malform]}
+                    <a href={p.href} title={t('komponenter.veiviser.tilbakeTil', { steg: p.steg.tittel[malform] })}>
+                      {p.steg.tittel[malform]}
                     </a>
                     {svar && <span class="veiviser-svar-valgt">{svar}</span>}
                   </li>
@@ -209,61 +280,76 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
             </ol>
           </nav>
         )}
-        <section class={`veiviser-steg${utfall ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId}>
-          <p class="veiviser-stegnr">
-            {utfall ? t('komponenter.veiviser.utfall') : t('komponenter.veiviser.steg', { nr: String(nr) })}
-            {fase && <span class="veiviser-stegfase"> · {fase.tittel[malform]}</span>}
-          </p>
-          <h2 id={overskriftId} ref={overskrift} tabIndex={-1} class="veiviser-stegtittel">
-            {node.tittel[malform]}
-          </h2>
-          <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
-          {(node.ansvar || node.dokumentasjon || node.frist) && (
-            <dl class="veiviser-fakta">
-              {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}
-              {node.dokumentasjon && <Fakta ikon="dokument" etikett={t('komponenter.veiviser.dokumentasjon')} tekst={node.dokumentasjon[malform]} />}
-              {node.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={node.frist[malform]} />}
-            </dl>
-          )}
-          <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
-          {node.forklaring && (
-            <Forklaring tittel={t('komponenter.veiviser.merOm')}>
-              <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
-            </Forklaring>
-          )}
-          {node.sporsmal && (
-            <div class="veiviser-sporsmal" role="group" aria-labelledby={sporsmalId}>
-              <p id={sporsmalId} class="veiviser-sporsmal-tekst">
-                {node.sporsmal.tekst[malform]}
-              </p>
-              <ul class="veiviser-svarliste">
-                {node.sporsmal.svar.map((a) => (
-                  <li key={a.id}>
-                    <a class="veiviser-svarknapp" href={href(videre(kart, vei, a.id))}>
-                      <span>{a.tekst[malform]}</span>
-                      <Ikon navn="hoyre" class="ikon-liten" />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+        <div class="veiviser-lop">
+          <section ref={kort} class={`veiviser-steg${utfall ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId}>
+            <p class="veiviser-stegnr">
+              {utfall ? t('komponenter.veiviser.utfall') : t('komponenter.veiviser.steg', { nr: String(nr) })}
+              {fase && <span class="veiviser-stegfase"> · {fase.tittel[malform]}</span>}
+            </p>
+            <h2 id={overskriftId} ref={overskrift} tabIndex={-1} class="veiviser-stegtittel">
+              {node.tittel[malform]}
+            </h2>
+            <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
+            {(node.ansvar || node.dokumentasjon || node.frist) && (
+              <dl class="veiviser-fakta">
+                {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}
+                {node.dokumentasjon && <Fakta ikon="dokument" etikett={t('komponenter.veiviser.dokumentasjon')} tekst={node.dokumentasjon[malform]} />}
+                {node.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={node.frist[malform]} />}
+              </dl>
+            )}
+            <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
+            <div class="veiviser-mer">
+              {node.forklaring && (
+                <Forklaring tittel={t('komponenter.veiviser.merOm')}>
+                  <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
+                </Forklaring>
+              )}
+              <details class="veiviser-kilder">
+                <summary>
+                  <Ikon navn="bok" class="ikon-liten" />
+                  {t('komponenter.veiviser.kilder', { antall: String(node.kilder.length) })}
+                </summary>
+                <Kildeliste kilder={node.kilder} niva={3} utenOverskrift />
+              </details>
             </div>
-          )}
-          {nesteSteg && (
-            <a class="knapp veiviser-neste" href={href(videre(kart, vei))}>
-              {t('komponenter.veiviser.neste')}: {nesteSteg.tittel[malform]}
-              <Ikon navn="hoyre" class="ikon-liten" />
-            </a>
-          )}
-          {utfall && (
-            <Oppsummering
-              startPaaNytt={lenke(sti)}
-              tekst={() => lagOppsummering(t, malform, veiviser, stegPaaVeien, location.href, formaterDato(new Date().toISOString(), malform))}
-            />
-          )}
-          <div class="veiviser-kilder">
-            <Kildeliste kilder={node.kilder} niva={3} />
+          </section>
+
+          {/* Veien videre står under kortet, så knappene er det første brukeren ser etter å ha lest steget. */}
+          <div class={`veiviser-videre${utfall ? ' veiviser-videre-slutt' : ''}`}>
+            {node.sporsmal && (
+              <div role="group" aria-labelledby={sporsmalId}>
+                <h3 id={sporsmalId} class="veiviser-sporsmal-tekst">
+                  {node.sporsmal.tekst[malform]}
+                </h3>
+                <ul class="veiviser-svarliste">
+                  {node.sporsmal.svar.map((a) => (
+                    <li key={a.id}>
+                      <a class="veiviser-svarknapp" href={href(videre(kart, vei, a.id))} onClick={beholdRullingVedNesteNavigasjon}>
+                        <span>{a.tekst[malform]}</span>
+                        <Ikon navn="hoyre" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {nesteSteg && (
+              <a class="veiviser-svarknapp veiviser-neste" href={href(videre(kart, vei))} onClick={beholdRullingVedNesteNavigasjon}>
+                <span>
+                  <span class="veiviser-neste-etikett">{t('komponenter.veiviser.neste')}</span>
+                  {nesteSteg.tittel[malform]}
+                </span>
+                <Ikon navn="hoyre" />
+              </a>
+            )}
+            {utfall && (
+              <Oppsummering
+                startPaaNytt={lenke(sti)}
+                tekst={() => lagOppsummering(t, malform, veiviser, stegPaaVeien, location.href, formaterDato(new Date().toISOString(), malform))}
+              />
+            )}
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );

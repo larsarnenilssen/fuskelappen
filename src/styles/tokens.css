@@ -98,6 +98,8 @@
 
   /* Skygge under knapper som flyter over innholdet, f.eks. «Til toppen». */
   --skygge-flytende: 0 2px 8px rgb(0 0 0 / 25%);
+  /* Svak skygge under knapper som ligger på flaten, f.eks. svarene i en veiviser. */
+  --skygge-knapp: 0 1px 2px rgb(0 0 0 / 8%);
 
   /* Bevegelse */
   --varighet: 160ms;

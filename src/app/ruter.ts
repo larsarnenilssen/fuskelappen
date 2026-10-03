@@ -97,6 +97,17 @@ export function startRuting(): void {
 }
 
 let oensketScroll: number | null = null;
+/** Neste navigasjon skal ikke rulle til toppen, fordi siden ruller selv (f.eks. til neste steg i en veiviser). */
+let beholdRulling = false;
+
+/** Kalles før en lenke følges når siden selv skal styre rullingen etter navigasjonen. */
+export function beholdRullingVedNesteNavigasjon(): void {
+  beholdRulling = true;
+  // Fører lenken ikke til en ny adresse, skal ikke neste navigasjon påvirkes.
+  setTimeout(() => {
+    beholdRulling = false;
+  }, 1000);
+}
 
 /** Kalles når en ny side er tegnet: ny side starter øverst, tilbake gjenoppretter posisjonen. */
 export function utforScroll(): void {
@@ -123,7 +134,8 @@ export function usePlassering(): Plassering & { type: Navigasjonstype } {
         type = 'ny';
       }
       const id = gjeldende();
-      oensketScroll = type === 'ny' || !id ? 0 : (scrollPosisjoner.get(id.appId) ?? 0);
+      oensketScroll = type === 'ny' && beholdRulling ? null : type === 'ny' || !id ? 0 : (scrollPosisjoner.get(id.appId) ?? 0);
+      beholdRulling = false;
       settPlassering({ ...lesHash(location.hash), type });
     };
     window.addEventListener('hashchange', vedEndring);

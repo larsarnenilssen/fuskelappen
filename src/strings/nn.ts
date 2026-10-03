@@ -204,6 +204,8 @@ export const nn: Tekster = {
   },
   komponenter: {
     veiviser: {
+      prosessen: 'Prosessen',
+      kilder: 'Kjelder ({antall})',
       faser: 'Fasane i prosessen',
       faseFerdig: 'ferdig',
       faseGjeldende: 'du er her',

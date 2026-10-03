@@ -9,4 +9,10 @@
 - **Visning:** Øverst står en fasestolpe med ferdige, gjeldende og senere faser. Under den står veien hit som en linje med punkter, der hvert punkt er en lenke tilbake og viser svaret som ble valgt. Det gjeldende steget står som et kort på samme linje. Ansvar, dokumentasjon og frist står i egne felt med ikon, så de kan leses med et blikk. Svarene er store lenkeknapper. Et utfall har grønn kant og en knapp som kopierer oppsummeringen av veien.
 - **Navigasjon:** Hvert svar og hvert «Neste» er en lenke og en ny oppføring i historikken, så «tilbake» virker som vanlig. Fokus flyttes til overskriften i det nye steget. Skallet gir nå sidetittelen fokus bare én gang per side, så det ikke tar fokus fra steget når bare spørringen i adressen endres. Sider som laster data, får fokus på tittelen når den kommer.
 
+**Tillegg etter eiers innspill (03.10.2026):** Kortene var høye, og knappene druknet nederst i kortet.
+- Kildene er lukket bak «Kilder (n)», og «Mer om dette steget» står som en lav rad over dem, nederst i kortet.
+- Spørsmålet og svarknappene står under kortet som veien videre, med større tekst. Et steg uten spørsmål har én fylt «Neste»-knapp.
+- Et trykk på et svar gir neste kort der knappene sto. Siden ruller ikke til toppen, men glir fram til det nye kortet, med det siste punktet på veien synlig over. Går brukeren tilbake, gjenoppretter historikken posisjonen.
+- På stor skjerm (fra 64rem) står prosessen i en kolonne til venstre som følger med ved rulling: fasene som punkter på en linje, med stegene på veien under hver fase og det gjeldende steget markert. Kortet og knappene står til høyre, og svarknappene står side om side.
+
 **Konsekvens:** En ny veiviser i fase 5–7 er bare innhold i YAML og en side som viser komponenten. Ingressen står bare på starten, så stegene kommer høyt opp på skjermen.
