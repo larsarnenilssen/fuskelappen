@@ -69,8 +69,8 @@ Sender udir.no hentingen videre til en annen adresse, f.eks. «tidligere rundskr
 - **vestland-forskrift-skulereglar:** Skolereglar (opplæringslova § 10-7), i kraft 01.08.2026. Hentes som inntaksforskriften (avgjørelse 039).
 - **udir-lokale-forskrifter:** Hvilke lokale forskrifter kommunen og fylkeskommunen skal og kan gi, og at de skal kunngjøres i Norsk Lovtidend. Brukt i begrepet lokal forskrift (fase 3). Lokale forskrifter er ikke med i Lovdatas gratis datasett.
 - **udir-overordnet-del:** Teksten hentes hver uke på bokmål og nynorsk med npm run hent:overordnet til data/udir/overordnet-del.json og vises uendret i Læreplanverket (avgjørelse 037). Endringer står til orientering i kontrollsaken. Lovdata har forskriften bare som datasett, som ikke kan hentes fra utviklingsmiljøet, og uten nynorsk.
-- **vlfk-forskrift-inntak:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
-- **vlfk-skulereglar:** Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
+- **vlfk-forskrift-inntak:** Erstattet i 0.22.0 av vestland-forskrift-inntak, som henter forskriften fra Lovdata til Regelverk (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 5 bruker vestland-forskrift-inntak.
+- **vlfk-skulereglar:** Erstattet i 0.22.0 av vestland-forskrift-skulereglar, som henter forskriften fra Lovdata til Regelverk (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 7 bruker vestland-forskrift-skulereglar.
 - **vlfk-sider:** Hvilke sider som sjekkes, bestemmes når kilden aktiveres.
 - **ks-fou-sfs2213:** Bakgrunn for forklaringen av «annet elevrettet arbeid». Endres ikke; sjekkes derfor ikke.
 - **udf-krav-sfs2213-2025:** Partens syn på «annet elevrettet arbeid». Bakgrunn, gjengis med egne ord.

@@ -443,7 +443,9 @@ kilder:
     aktiv: false
     godkjent_fingeravtrykk: null
     faser: [5]
-    merknad: Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 5.
+    merknad: >-
+      Erstattet i 0.22.0 av vestland-forskrift-inntak, som henter forskriften fra Lovdata til Regelverk
+      (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 5 bruker vestland-forskrift-inntak.
 
   - id: vlfk-skulereglar
     navn: Skulereglar for dei vidaregåande skulane i Vestland fylkeskommune
@@ -457,7 +459,9 @@ kilder:
     aktiv: false
     godkjent_fingeravtrykk: null
     faser: [7]
-    merknad: Adressen til forskriften på Lovdata settes når kilden aktiveres i fase 7.
+    merknad: >-
+      Erstattet i 0.22.0 av vestland-forskrift-skulereglar, som henter forskriften fra Lovdata til Regelverk
+      (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 7 bruker vestland-forskrift-skulereglar.
 
   - id: vlfk-sider
     navn: vlfk.no – sider om inntak, tilrettelegging og språkopplæring
