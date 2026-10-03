@@ -79,7 +79,7 @@ const felles = {
    * Kodeliste fra VIGO Kodeverksbase som vises og kan søkes i under teksten (avgjørelse 026). Kodene kommer også
    * med i det samlede søket.
    */
-  kodeliste: z.enum(['fagmerknader', 'vitnemalsmerknader']).optional(),
+  kodeliste: z.enum(['fagmerknader', 'vitnemalsmerknader', 'sokerstatuser']).optional(),
 };
 
 export const vanligElement = z

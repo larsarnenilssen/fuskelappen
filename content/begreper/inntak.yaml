@@ -1,7 +1,8 @@
 # Begreper om inntak til videregående opplæring (fase 5, pakke 1). Bygger på opplæringslova kapittel 5 og 18,
 # opplæringsforskrifta kapittel 4 og 13, Udirs sider om retten til videregående opplæring og Udirs merknader til
 # forskriften. Inntaksområde, deltidselev og tilleggspoeng er fylkesinnhold for Vestland. Egne ord. Karakterpoeng,
-# privatist og tilleggspoeng er lagt til 03.10.2026 (forslaget til fase 5).
+# privatist og tilleggspoeng er lagt til 03.10.2026 (forslaget til fase 5). Status på søkerønsker viser statuskodene
+# fra VIGO Kodeverksbase (eier 03.10.2026).
 - id: ungdomsrett
   type: begrep
   tittel: { nb: Ungdomsrett, nn: Ungdomsrett }
@@ -61,7 +62,7 @@
   kontrollsporsmal:
     - "Er de tre grunnlagene for fortrinnsrett beskrevet riktig og kort nok?"
   stikkord: [fortrinn, særskilt tilrettelagt skole, tegnspråk, teiknspråk, sakkyndig vurdering]
-  relatert: [individuell-tilrettelegging, individuell-behandling, sakkyndig-vurdering]
+  relatert: [individuell-tilrettelegging, individuell-behandling, sakkyndig-vurdering, status-sokeronsker]
 
 - id: individuell-behandling
   type: begrep
@@ -77,7 +78,7 @@
   kontrollsporsmal:
     - "Er eksemplene representative for hvem som behandles individuelt?"
   stikkord: [individuelt inntak, inntak uten karakterer, uten karakter]
-  relatert: [fortrinnsrett, ungdomsrett]
+  relatert: [fortrinnsrett, ungdomsrett, status-sokeronsker]
 
 - id: omvalg
   type: begrep
@@ -137,7 +138,7 @@
   kontrollsporsmal:
     - "Er det riktig å bruke «gjesteelev» om søkere fra andre fylker, slik opplæringslova § 29-1 gjør?"
   stikkord: [søker fra annet fylke, søkjar frå anna fylke, utenfylkes, utanfylkes]
-  relatert: [ungdomsrett, landslinje]
+  relatert: [ungdomsrett, landslinje, status-sokeronsker]
 
 - id: inntaksomrade
   type: begrep
@@ -187,7 +188,7 @@
     - "Forskriften sier «poengsum», mens Vestlands forskrift sier «karakterpoeng». Er «karakterpoeng» det ordet skolene bruker, så det passer som navn på begrepet?"
     - "Er det riktig forstått av § 4-18 og § 4-24 at søkere med fortrinnsrett eller individuell behandling tas inn uten å konkurrere på poeng?"
   stikkord: [poengsum, poeng, inntakspoeng, gjennomsnitt, loddtrekning, poengberegning, poengutrekning, § 4-19, § 4-25]
-  relatert: [fortrinnsrett, individuell-behandling, privatist, omvalg]
+  relatert: [fortrinnsrett, individuell-behandling, privatist, omvalg, status-sokeronsker]
 
 - id: privatist
   type: begrep
@@ -223,3 +224,20 @@
     - "Forskriften sier at «inntil 50 % av plassane» kan fordeles med tilleggspoeng. Fordeles resten av plassene bare etter karakterpoeng, eller kan søkere med tilleggspoeng også konkurrere om dem med karakterpoengene alene?"
   stikkord: [inntaksprøve, ferdighetsprøve, ferdigheitsprøve, idrettslege kriterium, musikk dans og drama, idrettsfag, Vestland]
   relatert: [karakterpoeng, inntaksomrade]
+
+- id: status-sokeronsker
+  type: begrep
+  tittel: { nb: Status på søkerønsker, nn: Status på søkjarønske }
+  lenkeord: { nb: ["søkerønske", "statuskode"], nn: ["søkjarønske", "statuskode"] }
+  tekst:
+    nb: Hvert søkerønske i inntaket har en status i VIGO. Statusen viser hvor ønsket er i inntaket, for eksempel at det ikke er behandlet, at søkeren har fått tilbud om plass eller ventelisteplass, er tatt inn eller har svart ja eller nei, eller at ønsket er strøket, for eksempel fordi søkeren ikke svarte, kom inn på et høyere ønske eller hadde for lav poengsum. Noen statuser gjelder elevplass, noen læreplass og noen begge. Listen viser kodene med nummer og tekst slik de står i VIGO, i nummerrekkefølge. Tekstene finnes bare på bokmål.
+    nn: Kvart søkjarønske i inntaket har ein status i VIGO. Statusen viser kvar ønsket er i inntaket, til dømes at det ikkje er behandla, at søkjaren har fått tilbod om plass eller ventelisteplass, er teken inn eller har svart ja eller nei, eller at ønsket er stroke, til dømes fordi søkjaren ikkje svarte, kom inn på eit høgare ønske eller hadde for låg poengsum. Nokre statusar gjeld elevplass, nokre læreplass og nokre begge. Lista viser kodane med nummer og tekst slik dei står i VIGO, i nummerrekkjefølgje. Tekstane finst berre på bokmål.
+  kilder:
+    - { id: vigo-kodeverk, punkt: "Status på søkerønsker (wish-statuses)" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «søkerønske» og «status» ordene skolene bruker om dette i VIGO, så begrepet blir funnet?"
+    - "Er det nyttig at listen står i VIGOs nummerrekkefølge, som følger gangen i inntaket, i stedet for sortert på kode?"
+  stikkord: [søkerstatus, statuskode, status, VIGO, inntak, tilbud, venteliste, strøket, inntatt]
+  relatert: [karakterpoeng, fortrinnsrett, individuell-behandling, gjesteelev]
+  kodeliste: sokerstatuser

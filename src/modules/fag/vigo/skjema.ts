@@ -28,6 +28,11 @@ export const fagrelasjonerSkjema = z
     byggerPaa: z.record(kode, z.array(kode)),
     /** Navn på kodene i «brukes sammen», til koder som ikke finnes i fagindeksen fra Grep. */
     navn: z.record(kode, z.string()),
+    /**
+     * Programområdene et programområde gir grunnlag for å søke videre på (tabellen «entry-requirements», nasjonalt),
+     * f.eks. et lærefag → Vg4 påbygging. Bare programområder som finnes i fagindeksen fra Grep.
+     */
+    grunnlag: z.record(kode, z.array(kode)),
   })
   .strict();
 
@@ -48,6 +53,8 @@ export const merknadSkjema = z
     kompetansebevis: z.boolean().nullable(),
     /** Sluttdato (ÅÅÅÅ-MM-DD) eller «ukjent» for utgåtte koder, ellers null. */
     utgatt: z.string().nullable(),
+    /** Nummeret VIGO gir koden (status på søkerønsker), i rekkefølgen gjennom inntaket. */
+    nr: z.number().int().optional(),
   })
   .strict();
 
@@ -59,10 +66,15 @@ export const merknaderSkjema = z
     fagmerknader: z.array(merknadSkjema),
     /** Vitnemålsmerknader (VMM-koder). */
     vitnemalsmerknader: z.array(merknadSkjema),
+    /**
+     * Status på søkerønsker i inntaket (tabellen «wish-statuses»), etter nummeret. `videregaende` er elevplass og
+     * `fagopplaering` læreplass. VIGO har bare tekst på bokmål.
+     */
+    sokerstatuser: z.array(merknadSkjema),
   })
   .strict();
 
 export type Fagrelasjoner = z.infer<typeof fagrelasjonerSkjema>;
 export type Merknad = z.infer<typeof merknadSkjema>;
 export type Merknader = z.infer<typeof merknaderSkjema>;
-export type Merknadsliste = 'fagmerknader' | 'vitnemalsmerknader';
+export type Merknadsliste = 'fagmerknader' | 'vitnemalsmerknader' | 'sokerstatuser';

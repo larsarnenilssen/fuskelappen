@@ -6,7 +6,7 @@ import { Innholdsfeil, lesBegrepsord, lesFil } from '../innhold/last.ts';
 import { beregnFagroller, byggStruktur, byggTilbud } from '../../src/modules/fag/tilbud/modell.ts';
 import { byggFagsokdata, fagsokgrunnlag } from '../../src/modules/arbeidstid/fagsokdata.ts';
 import { lesRegelsett } from '../innhold/alt.ts';
-import { lesFagindeks, lesFagrelasjoner, lesFordeling } from '../data/les.ts';
+import { lesFagindeks, lesFagrelasjoner, lesFordeling, lesTilbudsindeks } from '../data/les.ts';
 
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
@@ -142,7 +142,7 @@ export function tilbudPlugin(rot: string): Plugin {
     },
     load(lastId) {
       if (lastId !== '\0' + id) return null;
-      const indeks = lesFagindeks(rot);
+      const indeks = lesTilbudsindeks(rot);
       const fordeling = lesFordeling(rot);
       const fagBygger = lesFagrelasjoner(rot)?.byggerPaa ?? {};
       const tilbud: Record<string, unknown> = {};

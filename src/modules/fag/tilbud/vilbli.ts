@@ -31,19 +31,19 @@ export function vilbliTekst(tekst: string): string {
 
 /**
  * Lenke til et tilbud på Vilbli, for hele landet eller et fylke (fylkesnavnet, f.eks. «Vestland»). `via` er
- * programområdet brukeren kom fra; det avgjør programmet påbygging vises under.
+ * programområdet brukeren kom fra; det avgjør programmet påbygging vises under. `bygger` er hva tilbudet bygger på,
+ * når det ikke står i Grep (Vg4 påbygging fra VIGO, medGrunnlagFraVigo).
  */
 export function vilbliLenke(
   kode: string,
   indeks: Pick<Fagindeks, 'programomrader' | 'utdanningsprogram'>,
-  valg: { side: Vilblisside; fylke?: string | null; via?: string | null },
+  valg: { side: Vilblisside; fylke?: string | null; via?: string | null; bygger?: readonly string[] },
 ): string | null {
   const po = indeks.programomrader[kode];
   if (!po) return null;
+  const bygger = po.bygger.length > 0 ? po.bygger : (valg.bygger ?? []);
   const program =
-    po.program === 'PB'
-      ? (indeks.programomrader[valg.via && po.bygger.includes(valg.via) ? valg.via : ([...po.bygger].sort()[0] ?? '')]?.program ?? null)
-      : po.program;
+    po.program === 'PB' ? (indeks.programomrader[valg.via && bygger.includes(valg.via) ? valg.via : ([...bygger].sort()[0] ?? '')]?.program ?? null) : po.program;
   if (!program) return null;
   const programnavn = indeks.utdanningsprogram[program]?.nb ?? program;
   const sted = valg.fylke ? vilbliTekst(valg.fylke) : 'no';

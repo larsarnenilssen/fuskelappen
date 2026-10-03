@@ -610,11 +610,11 @@
     nb: |-
       Søknadsfristen står i steget over: 1. mars, eller 1. februar for søkere med fortrinnsrett, individuell tilrettelegging, særskilt språkopplæring, tegnspråk eller kort tid i Norge. Faller fristen på en lørdag eller søndag, er det nok at søknaden kommer første virkedag etter. Søknader som kommer for sent, behandles så langt det er mulig.
 
-      Datoene for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen hvilket utdanningsprogram, programområde eller skole søkeren kom inn på, avgjør fylkeskommunens klageorgan. Andre klager på inntak, for eksempel at søkeren ikke fikk ett av sine tre ønsker, avgjør statsforvalteren.
+      Datoene for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Hvert søkerønske har en status i VIGO, for eksempel tilbud om plass, venteliste eller strøket. Søkeren kan klage innen tre uker etter å ha fått svaret. Klagen sendes til den som fattet vedtaket, vanligvis inntakskontoret i fylkeskommunen. Gjelder klagen hvilket utdanningsprogram, programområde eller skole søkeren kom inn på, avgjør fylkeskommunens klageorgan. Andre klager på inntak, for eksempel at søkeren ikke fikk ett av sine tre ønsker, avgjør statsforvalteren.
     nn: |-
       Søknadsfristen står i steget over: 1. mars, eller 1. februar for søkjarar med fortrinnsrett, individuell tilrettelegging, særskild språkopplæring, teiknspråk eller kort tid i Noreg. Fell fristen på ein laurdag eller sundag, er det nok at søknaden kjem første yrkedag etter. Søknader som kjem for seint, blir behandla så langt det er mogleg.
 
-      Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
+      Datoane for svar og svarfrist står på [Vilbli](https://www.vilbli.no/). Kvart søkjarønske har ein status i VIGO, til dømes tilbod om plass, venteliste eller stroke. Søkjaren kan klage innan tre veker etter å ha fått svaret. Klaga skal sendast til den som gjorde vedtaket, vanlegvis inntakskontoret i fylkeskommunen. Gjeld klaga kva utdanningsprogram, programområde eller skole søkjaren kom inn på, avgjer klageorganet i fylkeskommunen. Andre klager på inntak, til dømes at søkjaren ikkje fekk eitt av dei tre ønska sine, avgjer statsforvaltaren.
   frist:
     nb: Klage innen tre uker etter svaret.
     nn: Klage innan tre veker etter svaret.
@@ -625,6 +625,7 @@
     - { id: udir-klageinstanser, punkt: "Kapittel 4 Inntak til vidaregåande opplæring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/#andre-delen" }
     - { id: opplaeringslova, punkt: "§ 29-1 Klageinstans for enkeltvedtak", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
     - { id: forvaltningsloven, punkt: "§ 29 Klagefrist og § 32 Klagens adressat, form og innhold", url: "https://lovdata.no/lov/1967-02-10/§29" }
+    - { id: vigo-kodeverk, punkt: "Status på søkerønsker (wish-statuses)" }
   kontrollert: null
   kontrollsporsmal:
     - "Er klageinstansene riktig og forståelig beskrevet, etter Udirs oversikt «Hvem er klageinstanser etter enkeltvedtak?»?"

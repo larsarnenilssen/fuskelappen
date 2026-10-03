@@ -533,6 +533,16 @@ main {
   background: var(--farge-advarsel-flate);
 }
 
+/* Vg2 på yrkesfag med opphentingsfag (Opplæringsløp): boks med søk, ikke en lang liste. */
+.opphenting {
+  margin: 0 0 var(--rom-4);
+  font-size: var(--str-m);
+}
+
+.opphenting > h2:first-child {
+  margin-top: 0;
+}
+
 .kort {
   padding: var(--rom-3) var(--rom-4);
   margin: 0 0 var(--rom-4);
@@ -2973,7 +2983,7 @@ p.fagkort-tittel {
 
 .kodeliste li {
   display: grid;
-  grid-template-columns: 4.5rem minmax(0, 1fr);
+  grid-template-columns: 5rem minmax(0, 1fr);
   column-gap: var(--rom-3);
 }
 
@@ -2984,6 +2994,14 @@ p.fagkort-tittel {
 
 .kodeliste-tekst {
   overflow-wrap: anywhere;
+}
+
+/* Nummeret VIGO gir statusen på et søkerønske, under koden. */
+.kodeliste-nr {
+  display: block;
+  font-weight: 400;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
 }
 
 .kodeliste-bruk {

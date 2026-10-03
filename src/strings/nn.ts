@@ -359,6 +359,7 @@ export const nn: Tekster = {
       tittel: {
         fagmerknader: 'FAM-kodane',
         vitnemalsmerknader: 'VMM-kodane',
+        sokerstatuser: 'Statuskodane',
       },
       sok: 'Søk på kode eller tekst',
       antall: '{antall} kodar',
@@ -369,6 +370,8 @@ export const nn: Tekster = {
       fagopplaering: 'Fagopplæring',
       vitnemal: 'Vitnemål',
       kompetansebevis: 'Kompetansebevis',
+      elevplass: 'Elevplass',
+      laereplass: 'Læreplass',
       vedlegg: 'Krev vedlegg',
       fraVigo: 'Kodane og tekstane er frå VIGO Kodeverksbase, henta {dato}.',
       lasterFeil: 'Kodane kunne ikkje lastast. Sjekk nettsambandet og prøv igjen.',

@@ -6,7 +6,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 export { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { lastFagindeks } from '../../fag/data.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
-import { trinnTekst } from '../../fag/visning.ts';
+import { visningstrinnTekst } from '../../fag/visning.ts';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { programomradegrupper } from '../grupper.ts';
 import { kortKode, lastTilbud, type Tilbudene, tilbudRute } from '../data.ts';
@@ -45,7 +45,7 @@ export function Lasting({ data, provIgjen }: { data: 'laster' | 'feil'; provIgje
 export function tilbudsnavn(t: T, indeks: Fagindeks, kode: string, malform: 'nb' | 'nn'): string {
   const po = indeks.programomrader[kode];
   if (!po) return kortKode(kode);
-  const trinn = trinnTekst(t, po.trinn);
+  const trinn = visningstrinnTekst(t, kode, po.trinn);
   // Noen navn har trinnet fra før, f.eks. «Vg3 påbygging til generell studiekompetanse».
   return po.navn[malform].toLowerCase().startsWith(trinn.toLowerCase()) ? po.navn[malform] : `${trinn} ${po.navn[malform]}`;
 }

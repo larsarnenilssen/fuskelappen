@@ -22,6 +22,8 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 | `relation/course-used-together-with` («fag_benyttessammenmed») | 1 761 | Fagsiden viser fag som brukes sammen, f.eks. tverrfaglig eksamen og fagene den gjelder. |
 | `course-remarks` (FAM-koder) | 63 | Oppslaget «Fagmerknader (FAM-koder)» i begrepsbanken, med søk. |
 | `diploma-remarks` (VMM-koder) | 45 | Oppslaget «Vitnemålsmerknader (VMM-koder)» i begrepsbanken, med søk. |
+| `wish-statuses` | 55 | Oppslaget «Status på søkerønsker» i begrepsbanken, med søk, i VIGOs nummerrekkefølge (avgjørelse 051). |
+| `entry-requirements` | 44 493 (580 for programområdene i Grep, alle nasjonale) | Vg4 påbygging etter lærefagene i Opplæringsløp, der Grep ikke sier hva påbyggingen bygger på. Resten sammenlignes med «bygger på» i Grep i docs/TILBUDSSTRUKTUR.md (avgjørelse 051). |
 | `relation/course-paabygning` («fag_paabygning») | 131 (49 fag etter at VIGOs egne koder er tatt bort) | Rekkefølgen på fag over flere trinn i tilbudsstrukturen, f.eks. Teater og bevegelse 1 → 2. Eier 01.10.2026: fagene tas i denne rekkefølgen. Aktivitetslære og treningsledelse på idrettsfag mangler i VIGO. |
 
 ## Mulig bruk senere
@@ -55,8 +57,6 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 
 | Tabell eller kobling | Antall | Innhold | Mulig bruk |
 |---|--:|---|---|
-| `entry-requirements` | 44 493 | Hva et programområde gir grunnlag for å søke videre på, per fylke (`countyNr`, 99 = nasjonalt) | Veiviser for søkere: «hva kan eleven søke på etter …?». Har også gamle koder fra før Kunnskapsløftet, så den må filtreres. |
-| `wish-statuses` | 55 | Status på søkerønsker (f.eks. «Ønske til skole, ikke behandlet») | Forklare kodene skolene ser i inntaket. |
 | `foreign-languages`, `mother-tongues` | 40 og 305 | Språkkoder | Inntak og særskilt språkopplæring (fase 4 og 5). |
 
 ### Læreplaner og kompetansemål

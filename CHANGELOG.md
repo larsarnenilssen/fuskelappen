@@ -7,6 +7,9 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Tre nye begreper i Inntak:** karakterpoeng, privatist og tilleggspoeng (Vestland, vises når fylket er valgt).
+- **Status på søkerønsker:** Oppslag i begrepsbanken over statuskodene i inntaket fra VIGO, med søk. Fristen for svar og veiviseren lenker dit.
+- **Opplæringsløp: Vg4 påbygging** står som påbygging etter lærefagene, fra VIGO.
+- **Opplæringsløp: Vg2 på yrkesfag etter Vg1 studiespesialisering** med yrkesfaglig opphenting står i en egen boks med søk, i stedet for som en lang liste.
 
 ### Endret
 

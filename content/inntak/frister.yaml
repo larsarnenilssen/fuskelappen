@@ -182,10 +182,11 @@
     nb: Svar, svarfrist og andre inntak
     nn: Svar, svarfrist og andre inntak
   tekst:
-    nb: Søkerne får svar på søknaden, må svare på tilbudet innen svarfristen, og søkere som står på venteliste, kan få plass i andre inntak. Datoene settes av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/).
-    nn: Søkjarane får svar på søknaden, må svare på tilbodet innan svarfristen, og søkjarar som står på venteliste, kan få plass i andre inntak. Datoane blir sette av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/).
+    nb: Søkerne får svar på søknaden, må svare på tilbudet innen svarfristen, og søkere som står på venteliste, kan få plass i andre inntak. Datoene settes av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/). Hvert søkerønske har en status i VIGO, for eksempel tilbud om plass, venteliste eller strøket.
+    nn: Søkjarane får svar på søknaden, må svare på tilbodet innan svarfristen, og søkjarar som står på venteliste, kan få plass i andre inntak. Datoane blir sette av fylkeskommunen og står på [Vilbli](https://www.vilbli.no/). Kvart søkjarønske har ein status i VIGO, til dømes tilbod om plass, venteliste eller stroke.
   kilder:
     - { id: vilbli, punkt: "Inntak og frister i fylket" }
+    - { id: vigo-kodeverk, punkt: "Status på søkerønsker (wish-statuses)" }
   kontrollert: null
   kontrollsporsmal:
     - "Er «andre inntak» og «venteliste» riktige ord for det som skjer etter det første svaret?"
