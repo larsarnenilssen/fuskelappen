@@ -18,6 +18,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Alle veiviserne har én side per valg:** Steg uten valg står på samme side som spørsmålet eller utfallet de fører til, så du trykker bare der det er et valg. «Neste»-knappen er borte.
 - **Mindre rulling i veiviserne:** Hvert steg står i sin egen ramme, paragrafene står i en lukket rad «I regelverket» som kildene, lokale regler («I Vestland») er lukket til du åpner dem, «Veien hit» viser de to siste valgene med «Vis hele veien», og under knappene står «Tilbake til …» og nederst «Til toppen».
+- **Lukkede steg på mobil:** Står flere steg på samme side, er stegene uten valg lukket på mobil, med den første setningen, fristen og ansvaret synlig og «Les hele steget». På PC er alt åpent. Øverst på siden går «Til spørsmålet» rett til knappene.
 - **Veiviserne:** Titlene på steg med valg er et emne og ikke et spørsmål, for eksempel «Elever med kort botid» i stedet for «Kort botid?», fordi spørsmålet står over knappene.
 
 ## [0.25.0] – 2026-10-03

@@ -2,7 +2,7 @@
 // det nye steget, kildene i en lukket boks, lenker til Regelverk, kartet over hele prosessen og prosessen i egen
 // kolonne på stor skjerm.
 import { expect, test } from '@playwright/test';
-import { erMobil } from './hjelp.ts';
+import { aapneSteg, erMobil } from './hjelp.ts';
 
 const VEIVISER = './#/tilrettelegging/tilpasset-og-individuell';
 
@@ -56,6 +56,27 @@ test.describe('veiviser', () => {
     await expect(page.getByText('Lenken passet ikke helt med veiviseren')).toBeVisible();
   });
 
+  test('steg uten valg over spørsmålet er lukket på mobil, med smakebit, og åpne på stor skjerm', async ({ page }, info) => {
+    await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
+    const kort = page.locator('.veiviser-side > .veiviser-steg');
+    await expect(kort).toHaveCount(3);
+    const forste = kort.first();
+    if (erMobil(info)) {
+      await expect(forste.locator('.veiviser-smakebit')).toBeVisible();
+      await expect(forste.locator('.brodtekst').first()).toBeHidden();
+      await forste.getByRole('button', { name: 'Les hele steget' }).click();
+      await expect(forste.locator('.brodtekst').first()).toBeVisible();
+      await expect(forste.getByRole('button', { name: 'Vis mindre' })).toHaveAttribute('aria-expanded', 'true');
+    } else {
+      test.skip((page.viewportSize()?.width ?? 0) < 1024, 'Alle steg er åpne fra 64rem');
+      await expect(forste.locator('.brodtekst').first()).toBeVisible();
+    }
+    // Steget med spørsmålet er alltid åpent, og «Til spørsmålet» går dit.
+    await expect(kort.last().locator('.veiviser-smakebit')).toHaveCount(0);
+    await page.getByRole('button', { name: 'Til spørsmålet' }).click();
+    await expect(page.locator('.veiviser-sporsmal-tekst')).toBeFocused();
+  });
+
   test('svarene kan velges med tastaturet', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-folge-med&svar=ordinar`);
     const svar = page.getByRole('link', { name: 'Nei, utbyttet er godt nok' });
@@ -68,6 +89,7 @@ test.describe('veiviser', () => {
   test('kildene og paragrafene er lukket til de åpnes, og paragrafene lenker til Regelverk', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-tilpasset&svar=ordinar`);
     const forste = page.locator('.veiviser-steg').first();
+    await aapneSteg(forste);
     const kilder = forste.locator('details.veiviser-kilder', { hasText: 'Kilder (2)' });
     await expect(kilder.getByRole('link', { name: /punkt 1\.1/ })).toBeHidden();
     await kilder.getByText('Kilder (2)').click();
@@ -106,6 +128,7 @@ test.describe('veiviser', () => {
 
   test('et begrep åpnet fra veiviseren viser at brukeren er i begrepsbanken', async ({ page }) => {
     await page.goto(`${VEIVISER}?steg=ti-samtykke&svar=foresporsel.faglig`);
+    await aapneSteg(page.locator('.veiviser-steg').first());
     await page.locator('.veiviser-steg').getByRole('link', { name: 'sakkyndig vurdering' }).first().click();
     await expect(page).toHaveURL(/#\/begreper\/sakkyndig-vurdering$/);
     const sti = page.getByRole('navigation', { name: 'Plassering' });

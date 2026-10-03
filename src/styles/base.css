@@ -4191,6 +4191,46 @@ p.fagkort-tittel {
   scroll-margin-top: 4.5rem;
 }
 
+/* Steg uten valg over spørsmålet er lukket på mobil: tittelen, en smakebit, fristen og ansvaret, og en knapp som
+   åpner hele steget (eier 03.10.2026). */
+.veiviser-smakebit {
+  margin: 0 0 var(--rom-2);
+  color: var(--farge-tekst-dempet);
+}
+
+.veiviser-kortfakta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-2);
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-s);
+}
+
+.veiviser-kortfakta li,
+.veiviser-kortfakta-lokalt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.veiviser-kortfakta-lokalt {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+  font-weight: 600;
+}
+
+.veiviser-veksle {
+  width: 100%;
+}
+
+/* «Til spørsmålet» over en side med flere steg. */
+.veiviser-til-sporsmal {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-s);
+}
+
 /* «I regelverket» som lukket rad, som kildene. Lenkene står med luft på sidene inne i raden. */
 .veiviser-regelverk .paragraflenker {
   padding: 0 var(--rom-4) var(--rom-2);

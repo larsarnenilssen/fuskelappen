@@ -1,5 +1,5 @@
 // Hjelpefunksjoner for ende-til-ende-testene.
-import type { Page, TestInfo } from '@playwright/test';
+import type { Locator, Page, TestInfo } from '@playwright/test';
 
 export interface Oppsett {
   malform?: 'nb' | 'nn';
@@ -124,4 +124,12 @@ export async function aapneAlt(side: Page, omraade = 'main'): Promise<void> {
   for (let i = 0; i < 20 && (await lukket.count()) > 0; i++) await lukket.first().click();
   // Lukkede <details>, f.eks. kildene i en veiviser.
   await side.locator(`${omraade} details:not([open])`).evaluateAll((liste) => liste.forEach((d) => ((d as HTMLDetailsElement).open = true)));
+}
+
+/**
+ * Åpner et steg i en veiviser hvis det er lukket. Steg uten valg over spørsmålet er lukket på mobil (avgjørelse 044).
+ */
+export async function aapneSteg(steg: Locator): Promise<void> {
+  const knapp = steg.getByRole('button', { name: 'Les hele steget' });
+  if (await knapp.isVisible()) await knapp.click();
 }

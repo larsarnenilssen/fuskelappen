@@ -49,6 +49,20 @@ function rentekst(html: string): string {
     .trim();
 }
 
+/**
+ * Den første setningen i teksten, som smakebit når steget er lukket. Punktum etter tall («1. februar») og
+ * forkortelser («f.eks.») avslutter ikke en setning. Lange setninger kortes med «…».
+ */
+export function forsteSetning(html: string, maks = 160): string {
+  const tekst = rentekst(html.replace(/<\/?(p|li|ul|ol|br)\b[^>]*>/g, ' ')).replace(/\s+/g, ' ').trim();
+  const slutt = /(?<!\d)(?<!\bf\.eks)(?<!\bbl\.a)[.!?:](?=\s+[A-ZÆØÅ«-]|$)/.exec(tekst);
+  const setning = slutt ? tekst.slice(0, slutt.index + 1) : tekst;
+  return setning.length > maks ? `${setning.slice(0, maks - 1).replace(/\s+\S*$/, '')} …` : setning;
+}
+
+/** Stor skjerm, der prosessen står i egen kolonne. Der står alle steg åpne (eier 03.10.2026). */
+const storSkjerm = () => typeof matchMedia === 'function' && matchMedia('(min-width: 64rem)').matches;
+
 /** Oppsummeringen som ren tekst: stegene, svarene, ansvar, dokumentasjon, frister og paragrafer, og lenken. */
 export function lagOppsummering(
   t: T,
@@ -353,61 +367,107 @@ function Stegdel({
   tillegg,
   overskriftId,
   overskrift,
+  lukkbar = false,
 }: {
   node: Stegelement;
   etikett: ComponentChildren;
   tillegg: readonly Stegelement[];
   overskriftId?: string | undefined;
   overskrift?: Ref<HTMLHeadingElement> | undefined;
+  /** Steg uten valg over spørsmålet: lukket på mobil, med en smakebit og fristen synlig (eier 03.10.2026). */
+  lukkbar?: boolean;
 }) {
   const { t, malform } = useTekst();
   const egenId = useId();
+  const innholdId = useId();
+  const [aapen, settAapen] = useState(() => !lukkbar || storSkjerm());
   const egne = tillegg.filter((s) => s.id === node.id);
   const kilder = [...node.kilder, ...egne.flatMap((s) => s.kilder)];
+  const sted = egne[0] && egne[0].gyldighet.niva !== 'nasjonal' ? (fylkesnavn(egne[0].gyldighet.fylke) ?? '') : '';
+  const veksle = lukkbar && (
+    <button type="button" class="forklaring-knapp veiviser-veksle" aria-expanded={aapen} aria-controls={innholdId} onClick={() => settAapen(!aapen)}>
+      <Ikon navn={aapen ? 'opp' : 'ned'} />
+      <span>{aapen ? t('komponenter.veiviser.visMindre') : t('komponenter.veiviser.lesHele')}</span>
+    </button>
+  );
   return (
-    <article class={`veiviser-steg${erUtfall(node) ? ' veiviser-steg-utfall' : ''}`} aria-labelledby={overskriftId ?? egenId}>
+    <article
+      class={`veiviser-steg${erUtfall(node) ? ' veiviser-steg-utfall' : ''}${aapen ? '' : ' veiviser-steg-lukket'}`}
+      aria-labelledby={overskriftId ?? egenId}
+    >
       <p class="veiviser-stegnr">{etikett}</p>
       <h2 id={overskriftId ?? egenId} ref={overskrift} tabIndex={-1} class="veiviser-stegtittel">
         {node.tittel[malform]}
       </h2>
-      <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
-      {(node.ansvar || node.dokumentasjon || node.frist) && (
-        <dl class="veiviser-fakta">
-          {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}
-          {node.dokumentasjon && <Fakta ikon="dokument" etikett={t('komponenter.veiviser.dokumentasjon')} tekst={node.dokumentasjon[malform]} />}
-          {node.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={node.frist[malform]} />}
-        </dl>
+      {!aapen && (
+        <>
+          <p class="veiviser-smakebit">{forsteSetning(node.tekst[malform])}</p>
+          {(node.frist || node.ansvar) && (
+            <ul class="veiviser-kortfakta">
+              {node.frist && (
+                <li>
+                  <Ikon navn="klokke" class="ikon-liten" />
+                  {t('komponenter.veiviser.frist')}: {node.fristKort?.[malform] ?? node.frist[malform]}
+                </li>
+              )}
+              {node.ansvar && (
+                <li>
+                  <Ikon navn="person" class="ikon-liten" />
+                  {t('komponenter.veiviser.ansvar')}: {node.ansvar[malform]}
+                </li>
+              )}
+            </ul>
+          )}
+          {sted && (
+            <p class="veiviser-kortfakta-lokalt">
+              <Ikon navn="skole" class="ikon-liten" />
+              {t('komponenter.veiviser.harLokalt', { sted })}
+            </p>
+          )}
+          <div class="veiviser-mer">{veksle}</div>
+        </>
       )}
-      <Laereplanboks laereplaner={node.laereplaner} />
-      {egne.map((s) => (
-        <Tillegg key={`${s.gyldighet.niva}-${s.id}`} steg={s} />
-      ))}
-      <div class="veiviser-mer">
-        {/* Paragrafene med titler, lukket til brukeren åpner dem (eier 03.10.2026). */}
-        {node.paragrafer.length > 0 && (
-          <details class="veiviser-kilder veiviser-regelverk">
+      <div id={innholdId} hidden={!aapen}>
+        <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.tekst[malform] }} />
+        {(node.ansvar || node.dokumentasjon || node.frist) && (
+          <dl class="veiviser-fakta">
+            {node.ansvar && <Fakta ikon="person" etikett={t('komponenter.veiviser.ansvar')} tekst={node.ansvar[malform]} />}
+            {node.dokumentasjon && <Fakta ikon="dokument" etikett={t('komponenter.veiviser.dokumentasjon')} tekst={node.dokumentasjon[malform]} />}
+            {node.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={node.frist[malform]} />}
+          </dl>
+        )}
+        <Laereplanboks laereplaner={node.laereplaner} />
+        {egne.map((s) => (
+          <Tillegg key={`${s.gyldighet.niva}-${s.id}`} steg={s} />
+        ))}
+        <div class="veiviser-mer">
+          {/* Paragrafene med titler, lukket til brukeren åpner dem (eier 03.10.2026). */}
+          {node.paragrafer.length > 0 && (
+            <details class="veiviser-kilder veiviser-regelverk">
+              <summary class="forklaring-knapp">
+                <Ikon navn="paragraf" />
+                <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(node.paragrafer.length) })}</span>
+                <Ikon navn="ned" class="forklaring-pil" />
+              </summary>
+              <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
+            </details>
+          )}
+          {node.forklaring && (
+            <Forklaring tittel={t('komponenter.veiviser.merOm')}>
+              <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
+            </Forklaring>
+          )}
+          <details class="veiviser-kilder">
+            {/* Samme utseende som knappen i Forklaring rett over. */}
             <summary class="forklaring-knapp">
-              <Ikon navn="paragraf" />
-              <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(node.paragrafer.length) })}</span>
+              <Ikon navn="bok" />
+              <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length) })}</span>
               <Ikon navn="ned" class="forklaring-pil" />
             </summary>
-            <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
+            <Kildeliste kilder={kilder} niva={3} utenOverskrift />
           </details>
-        )}
-        {node.forklaring && (
-          <Forklaring tittel={t('komponenter.veiviser.merOm')}>
-            <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
-          </Forklaring>
-        )}
-        <details class="veiviser-kilder">
-          {/* Samme utseende som knappen i Forklaring rett over. */}
-          <summary class="forklaring-knapp">
-            <Ikon navn="bok" />
-            <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length) })}</span>
-            <Ikon navn="ned" class="forklaring-pil" />
-          </summary>
-          <Kildeliste kilder={kilder} niva={3} utenOverskrift />
-        </details>
+          {aapen && veksle}
+        </div>
       </div>
     </article>
   );
@@ -437,6 +497,13 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
   const sporsmalId = useId();
   const veiId = useId();
   const [helVei, settHelVei] = useState(false);
+  const sporsmalRef = useRef<HTMLHeadingElement>(null);
+  // Til spørsmålet, eller til steget der veien ender, med fokus på overskriften.
+  const tilSlutten = () => {
+    const maal = sporsmalRef.current ?? kort.current?.querySelector<HTMLElement>('.veiviser-steg:last-child .veiviser-stegtittel') ?? null;
+    maal?.scrollIntoView({ block: 'start', behavior: redusertBevegelse() ? 'auto' : 'smooth' });
+    maal?.focus({ preventScroll: true });
+  };
 
   // Ny side: fokus på den første overskriften på siden, så skjermlesere leser den. Ikke ved første visning, der
   // siden selv får fokus. Går brukeren videre, rulles den nye siden fram der knappene sto. Går brukeren tilbake,
@@ -522,6 +589,15 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
           </nav>
         )}
         <div class="veiviser-lop">
+          {/* På en side med flere steg kan brukeren gå rett til spørsmålet eller til der veien ender. */}
+          {sidesteg.length > 1 && (
+            <p class="veiviser-til-sporsmal">
+              <button type="button" class="lenkeknapp" onClick={tilSlutten}>
+                <Ikon navn="ned" class="ikon-liten" />
+                {utfall ? t('komponenter.veiviser.tilSlutten') : t('komponenter.veiviser.tilSporsmalet')}
+              </button>
+            </p>
+          )}
           {/* Stegene på siden, hvert i sin ramme. Steg uten valg står over steget med spørsmålet eller utfallet. */}
           <section ref={kort} class="veiviser-side" aria-labelledby={overskriftId}>
             {sidesteg.map((s, i) => {
@@ -542,6 +618,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                   tillegg={tillegg}
                   overskriftId={i === 0 ? overskriftId : undefined}
                   overskrift={i === 0 ? overskrift : undefined}
+                  lukkbar={i < sidesteg.length - 1}
                 />
               );
             })}
@@ -551,7 +628,7 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
           <div class={`veiviser-videre${utfall ? ' veiviser-videre-slutt' : ''}`}>
             {node.sporsmal && (
               <div role="group" aria-labelledby={sporsmalId}>
-                <h3 id={sporsmalId} class="veiviser-sporsmal-tekst">
+                <h3 id={sporsmalId} ref={sporsmalRef} tabIndex={-1} class="veiviser-sporsmal-tekst">
                   {node.sporsmal.tekst[malform]}
                 </h3>
                 <ul class="veiviser-svarliste">
