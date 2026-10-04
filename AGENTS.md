@@ -43,7 +43,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 - Hver fase startes i en ny samtale med arbeidsordren i `docs/arbeidsordrer/fase-N.md` (eier 02.10.2026). Når en fase er levert, skrives arbeidsordren for neste fase.
 - Arbeid på en egen gren per fase eller oppgave, og slå sammen til `main` via PR med grønn CI.
 - Claude fletter PR-ene på eiers vegne når CI er grønn og det ikke er konflikter (eier 01.10.2026). Er CI rød, rettes feilen først.
-- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `…/fuskelappen/test/` (avgjørelse 045).
+- Eier kan teste en gren før versjonen avtales: push grenen til `test` (`git push origin <gren>:test --force`), så publiseres den under `…/jukselappen/test/` (avgjørelse 045).
 - Versjonstag settes bare når eier og Claude er enige om at en versjon skal publiseres, og hvilket nummer den får. Da setter Claude taggen og følger med til publiseringen er ferdig (eier 01.10.2026).
 - Oppdater `CHANGELOG.md` for alt brukeren merker.
 - Tekniske valg av betydning dokumenteres i `docs/avgjorelser/NNN-tittel.md`: kontekst, valg og konsekvens, noen få linjer.
@@ -90,7 +90,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 ## Legge til noe nytt
 
 - **Ny modul:** ny mappe i `src/modules/` med manifest, innhold i `content/<modul>/`, kilder i kilderegisteret, tester.
-- **Favoritter og ikoner:** Alt med stjerneknapp har en oppføring i modulens `favorittbare` (testes). En favoritt kan ha eget `ikon`. Uten får den ikonet til den nærmeste inngangen over (samme adresse eller adressen den ligger under), ellers modulens ikon (`ikonForFavoritt`, avgjørelse 056). Gi favoritten eget ikon når siden har et eget ikon på oversikten i modulen.
+- **Favoritter og ikoner:** Alle sider har stjernen ved overskriften (`Sidetopp`, testes for rutene i `tests/e2e/hjelp.ts`). Elementer uten egen side (en skole, en paragraf) får den diskré stjernen (`FavorittKnapp liten`) når de har en adresse favoritten kan åpne. Alt med stjerneknapp har en oppføring i modulens `favorittbare` (testes). En favoritt kan ha eget `ikon`. Uten får den ikonet til den nærmeste inngangen over: boksene på forsiden og lenkene med ikon på modulens oversiktssider (`undersider`), ellers modulens ikon (`ikonForFavoritt`, avgjørelse 056 og 058). En oversiktsside med egne ikoner henter dem fra `undersider`, så de ikke kan bli ulike.
 - **Ny regelperiode:** ny fil i `rules/<regelverk>/` og nye fasittester. Det skal ikke trengs kodeendringer.
 - **Nytt begrep:** lenkes automatisk i brødtekst med tittelen. Er ikke tittelen ordet som står i teksten, får begrepet `lenkeord` (avgjørelse 050).
 - **Ny fylkes- eller skoleprofil:** innhold og verdier med riktig `gyldighet`, og tester for oppslag på det nivået.

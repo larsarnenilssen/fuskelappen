@@ -2,9 +2,11 @@ import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { iDag } from '../../../data/skolear.ts';
-import { fristerRute, hentInnhold, poengRute, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
+import { hentInnhold, UNDERSIDER, veiviserRute, type Inntaksinnhold } from '../innhold.ts';
 import { nesteFrist, tidspunkt } from '../tidslinje.ts';
 import { Lokalmerknad } from './Lokalmerknad.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -20,7 +22,7 @@ export default function Oversikt() {
   const neste = innhold ? nesteFrist(velgSynlige(innhold.frister, sted), iDag()) : null;
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('inntak.tittel')}</h1>
+      <Sidetopp tittel={t('inntak.tittel')} favoritt={oversiktsid('inntak')} />
       <p class="ingress"><Begrepstekst tekst={t('inntak.innledning')} /></p>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
@@ -34,9 +36,9 @@ export default function Oversikt() {
           <section>
             <h2 class="liten-overskrift">{t('inntak.frister.kort')}</h2>
             {/* Kortet viser den neste fristen, så brukeren ser hva som kommer uten å åpne tidslinjen. */}
-            <a class="frist-inngang" href={`#${fristerRute}`}>
+            <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
               <span class="frist-inngang-tittel">
-                <Ikon navn="klokke" />
+                <Ikon navn={UNDERSIDER.frister.ikon} />
                 {t('inntak.frister.alle')}
               </span>
               {neste && (
@@ -52,9 +54,9 @@ export default function Oversikt() {
           <section>
             <h2 class="liten-overskrift">{t('inntak.poeng.kalkulator')}</h2>
             {/* Samme kort som tidslinjen over, med beskrivelsen i stedet for den neste fristen. */}
-            <a class="frist-inngang" href={`#${poengRute}`}>
+            <a class="frist-inngang" href={`#${UNDERSIDER.poeng.rute}`}>
               <span class="frist-inngang-tittel">
-                <Ikon navn="kalkulator" />
+                <Ikon navn={UNDERSIDER.poeng.ikon} />
                 {t('inntak.poeng.kort')}
               </span>
               <span class="frist-inngang-neste">{t('inntak.poeng.beskrivelse')}</span>

@@ -2,7 +2,9 @@
 // rubrikker, men bestemmelsene er skrevet med egne ord. Hver bestemmelse har lenke til punktet i avtaleteksten.
 import { useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
+import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { finnKilde, Kildelenke, Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
@@ -10,6 +12,7 @@ import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { type Avtaleinfo, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
+import { paragraffavoritt } from '../data.ts';
 import { Lasting, Sok, useLast, useRullTil } from './felles.tsx';
 
 /** En bestemmelse som en boks som er lukket til brukeren åpner den. Adressen til bestemmelsen åpner den. */
@@ -19,12 +22,15 @@ function Bestemmelse({ avtale, element, apen }: { avtale: Avtaleinfo; element: I
   const id = useId();
   return (
     <div class="od-underdel lov-paragraf" data-rubrikk={`lov-${element.id}`}>
-      <h3 class="od-underdel-tittel">
-        <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-          <span>{element.tittel[malform]}</span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
-        </button>
-      </h3>
+      <div class="med-stjerne">
+        <h3 class="od-underdel-tittel">
+          <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
+            <span>{element.tittel[malform]}</span>
+            <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
+          </button>
+        </h3>
+        <FavorittKnapp id={paragraffavoritt(avtale.id, element.id)} navn={`${element.tittel[malform]} (${avtale.korttittel[malform]})`} liten />
+      </div>
       <div id={id} class="od-underdel-innhold" hidden={lukket}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: element.tekst[malform] }} />
         <ul class="lov-avtalekilder liten">
@@ -49,7 +55,7 @@ export function Avtale({ avtale, nokkel }: { avtale: Avtaleinfo; nokkel: string 
   return (
     <div class="side">
       <Brodsmuler ledd={[{ tekst: t('lov.tittel'), href: '#/lov' }]} />
-      <h1 tabIndex={-1}>{avtale.korttittel[malform]}</h1>
+      <Sidetopp tittel={avtale.korttittel[malform]} favoritt={`lov:${avtale.id}`} />
       <p class="dempet">{avtale.tittel[malform]}</p>
       <p class="merknad">
         {t('lov.avtaleMerknad')}{' '}

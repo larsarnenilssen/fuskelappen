@@ -6,6 +6,7 @@
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
@@ -95,9 +96,7 @@ function Lovside({ parametre }: SideProps) {
         </>
       ) : (
         <>
-          <h1 tabIndex={-1} lang={data.malform}>
-            {data.korttittel}
-          </h1>
+          <Sidetopp tittel={data.korttittel} lang={data.malform} favoritt={`lov:${data.id}`} />
           <p class="dempet">
             <span lang={data.malform}>{data.tittel}</span>. {t('lov.fastsatt', { malform: t(`lov.malform.${data.malform}`) })}.{' '}
             {data.utvalg ? t('lov.utvalgEnkel', { liste: t('lov.kapitler', { liste: utvalgstekst(data.utvalg, t('lov.og')) }) }) : t('lov.heleDokumentet')}

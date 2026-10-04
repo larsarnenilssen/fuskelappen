@@ -78,6 +78,16 @@ export const nn: Tekster = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
+    visFlere: 'Vis fleire treff ({antall} til)',
+    filter: {
+      etikett: 'Vis treff frå',
+      alle: 'Alle',
+      sider: 'Sider',
+      regelverk: 'Regelverk',
+      fag: 'Fag',
+      begreper: 'Omgrep',
+      tilbud: 'Tilbod og skular',
+    },
     typer: {
       modul: 'Del av appen',
       veiviser: 'Vegvisar',

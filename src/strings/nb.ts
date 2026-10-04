@@ -78,6 +78,16 @@ export const nb = {
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
     tom: 'Tøm søket',
+    visFlere: 'Vis flere treff ({antall} til)',
+    filter: {
+      etikett: 'Vis treff fra',
+      alle: 'Alle',
+      sider: 'Sider',
+      regelverk: 'Regelverk',
+      fag: 'Fag',
+      begreper: 'Begreper',
+      tilbud: 'Tilbud og skoler',
+    },
     typer: {
       modul: 'Del av appen',
       veiviser: 'Veiviser',

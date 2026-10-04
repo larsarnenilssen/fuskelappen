@@ -2,6 +2,7 @@
 // språkopplæring, bygd med den felles veiviseren (avgjørelse 041). Innholdet står i content/tilrettelegging/.
 import type { Modulmanifest } from '../typer.ts';
 import { hentInnhold, veiviserRute } from './innhold.ts';
+import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
   id: 'tilrettelegging',
@@ -30,7 +31,7 @@ export const manifest: Modulmanifest = {
   },
   async favorittbare() {
     const { veivisere } = await hentInnhold();
-    return veivisere.map((v) => ({ id: `tilrettelegging:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) }));
+    return [oversiktsfavoritt(manifest), ...veivisere.map((v) => ({ id: `tilrettelegging:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) }))];
   },
   async frister() {
     return [];

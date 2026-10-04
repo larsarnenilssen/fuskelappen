@@ -2,7 +2,7 @@
 
 Denne veiledningen er for deg som eier appen. Den forutsetter ingen tekniske kunnskaper. Alt gjøres i nettleseren på github.com eller på telefonen. Du trenger aldri redigere filer selv: si fra til Claude med vanlige ord, så gjør Claude endringen og ber deg godkjenne den.
 
-Repoet ligger på **https://github.com/larsarnenilssen/fuskelappen**, og appen på **https://larsarnenilssen.github.io/fuskelappen/**.
+Repoet ligger på **https://github.com/larsarnenilssen/jukselappen**, og appen på **https://larsarnenilssen.github.io/jukselappen/**.
 
 Står en knapp ikke der veiledningen sier, eller GitHub spør om noe som ikke står her: stopp og spør Claude.
 
@@ -32,7 +32,7 @@ En ny versjon publiseres ved at den får et versjonsmerke (en «tag»), f.eks. `
 
 Fra 01.10.2026 setter Claude versjonsmerket når dere er enige om at en versjon skal publiseres, og hvilket nummer den får (det står også øverst i `CHANGELOG.md`). Claude øker versjonsnummeret i en egen PR. Når den flettes, setter arbeidsflyten **Sett versjonstag** merket og publiserer (avgjørelse 029). Arbeidsflyten lager også en utgivelse under **Releases** med teksten fra `CHANGELOG.md`. Claude følger med til publiseringen er ferdig og sier fra. Stegene under gjelder når du setter versjonsmerket selv.
 
-1. Åpne repoet og trykk **Releases** i høyre kolonne (eller gå til `…/fuskelappen/releases`).
+1. Åpne repoet og trykk **Releases** i høyre kolonne (eller gå til `…/jukselappen/releases`).
 2. Trykk **Draft a new release**.
 3. Trykk **Choose a tag**, skriv versjonen (f.eks. `v0.1.1`) og velg **Create new tag**. «Target» skal være `main`.
 4. Skriv gjerne en kort tittel, og trykk **Publish release**.
@@ -84,7 +84,7 @@ Innholdet i appen endres aldri automatisk. Unntaket er registerdataene fra Grep 
 
 ## 7. Installere appen
 
-- **iPhone og iPad:** Åpne https://larsarnenilssen.github.io/fuskelappen/ i **Safari** → trykk **Del**-knappen (firkant med pil opp) → **Legg til på Hjem-skjerm** → **Legg til**.
+- **iPhone og iPad:** Åpne https://larsarnenilssen.github.io/jukselappen/ i **Safari** → trykk **Del**-knappen (firkant med pil opp) → **Legg til på Hjem-skjerm** → **Legg til**.
 - **Android:** Åpne adressen i **Chrome** → trykk menyen **⋮** → **Installer app** (eller **Legg til på startsiden**).
 - **Mac og PC:** I Chrome eller Edge vises et installer-ikon i adressefeltet.
 

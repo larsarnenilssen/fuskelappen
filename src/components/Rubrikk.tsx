@@ -15,6 +15,7 @@ export function Rubrikk({
   hoyre,
   lukket: standard = false,
   farge,
+  stjerne,
   children,
 }: {
   nokkel: string;
@@ -22,23 +23,35 @@ export function Rubrikk({
   hoyre?: string | null;
   lukket?: boolean;
   farge?: string;
+  /** En diskré stjerneknapp til høyre for overskriften (avgjørelse 058). Står utenfor overskriften og knappen. */
+  stjerne?: ComponentChildren;
   children: ComponentChildren;
 }) {
   const [lukket, veksle] = useSammenlagt(nokkel, standard);
   const id = useId();
+  const overskrift = (
+    <h2 class="rubrikk-tittel">
+      <button type="button" class="kortknapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
+        <span class="kortknapp-tekst">
+          <span>{tittel}</span>
+          {/* Mellomrommet skiller tittelen og tallet for skjermlesere. Det vises ikke i flex. */}
+          {hoyre && ' '}
+          {hoyre && <span class="rubrikk-hoyre tall">{hoyre}</span>}
+        </span>
+        <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten kortknapp-pil" />
+      </button>
+    </h2>
+  );
   return (
     <section class="rubrikk" data-fagtype={farge} data-rubrikk={nokkel}>
-      <h2 class="rubrikk-tittel">
-        <button type="button" class="kortknapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-          <span class="kortknapp-tekst">
-            <span>{tittel}</span>
-            {/* Mellomrommet skiller tittelen og tallet for skjermlesere. Det vises ikke i flex. */}
-            {hoyre && ' '}
-            {hoyre && <span class="rubrikk-hoyre tall">{hoyre}</span>}
-          </span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten kortknapp-pil" />
-        </button>
-      </h2>
+      {stjerne ? (
+        <div class="med-stjerne">
+          {overskrift}
+          {stjerne}
+        </div>
+      ) : (
+        overskrift
+      )}
       <div id={id} class="rubrikk-innhold" hidden={lukket}>
         {children}
       </div>

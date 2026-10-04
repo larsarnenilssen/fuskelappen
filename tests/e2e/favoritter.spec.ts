@@ -1,7 +1,7 @@
 // Favorittene og forsiden (avgjørelse 056): favorittene står øverst på forsiden og sorteres der de står, gruppene kan
 // lukkes og sorteres, og forsiden kan vise bare favorittene under kategoriene sine.
 import { expect, test } from '@playwright/test';
-import { settLagret } from './hjelp.ts';
+import { ruter, settLagret, venterPaaSide } from './hjelp.ts';
 
 const TO = ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'];
 
@@ -85,4 +85,51 @@ test.describe('favoritter og forsiden', () => {
     await knapp.click();
     await expect(page.locator('.forside-topp').getByRole('searchbox')).toBeFocused();
   });
+
+  test('en skole i skoleregisteret får en diskré stjerne, og favoritten åpner skolen med ikonet til skoleregisteret (avgjørelse 058)', async ({ page }) => {
+    await page.goto('./#/opplaeringslop/skoler?fylke=46');
+    // Skoler uten skolenummer har ingen stjerne.
+    const kort = page.locator('.skolekort', { has: page.locator('.favorittknapp-liten') }).first();
+    const navn = (await kort.locator('.listelenke-tittel').textContent()) ?? '';
+    const stjerne = kort.locator('.favorittknapp-liten');
+    await expect(stjerne).toHaveAttribute('aria-pressed', 'false');
+    await stjerne.click();
+    await expect(stjerne).toHaveAttribute('aria-pressed', 'true');
+    // Stjernen åpner ikke kortet.
+    await expect(kort.locator('.skolekort-knapp')).toHaveAttribute('aria-expanded', 'false');
+    await page.goto('./');
+    const lenke = page.locator('.favorittliste').getByRole('link', { name: navn });
+    await expect(lenke).toBeVisible();
+    await expect(lenke.locator('.favorittikon > .ikon').first()).toHaveAttribute('data-ikon', 'skole');
+    await lenke.click();
+    await expect(page.locator('.skolekort')).toHaveCount(1);
+    await expect(page.locator('.skolekort-knapp .listelenke-tittel')).toHaveText(navn);
+  });
+
+  test('en paragraf og et opplæringskontor kan favorittmerkes med den diskré stjernen (avgjørelse 058)', async ({ page }) => {
+    await page.goto('./#/lov/opplaeringslova/11-1');
+    await page.locator('[data-rubrikk="lov-11-1"] .favorittknapp-liten').click();
+    await page.goto('./#/opplaeringslop/opplaeringskontor?fylke=46');
+    const kontor = page.locator('.kontorliste .kontor').first();
+    const navn = (await kontor.locator('.listelenke-tittel').textContent()) ?? '';
+    await kontor.locator('.favorittknapp-liten').click();
+    await page.goto('./');
+    await expect(page.locator('.favorittliste').getByRole('link', { name: /^§ 11-1/ })).toBeVisible();
+    await page.locator('.favorittliste').getByRole('link', { name: navn }).click();
+    await expect(page.locator('.kontorliste .kontor')).toHaveCount(1);
+    await expect(page.getByRole('button', { name: 'Fjern' })).toBeVisible();
+  });
+});
+
+// Alle sidene i appen har stjernen ved overskriften (avgjørelse 058), bortsett fra appens egne sider, sidene som
+// ikke finnes, og utgåtte fagkoder. En ny side i rutelisten blir sjekket her også.
+const UTEN_STJERNE = /^#\/(sok|innstillinger|om|kategori|utvikling|finnes-ikke)|^#\/$|^#\/fag\/(FINNES0|LBR3004)/;
+test.describe('alle sider kan stjernemerkes', () => {
+  for (const rute of ruter.filter((r) => !UTEN_STJERNE.test(r))) {
+    test(rute, async ({ page }) => {
+      await page.goto(`./${rute}`);
+      await venterPaaSide(page);
+      await expect(page.locator('main .tittelrad').first().locator('.favorittknapp:not(.favorittknapp-liten)')).toHaveCount(1);
+    });
+  }
 });

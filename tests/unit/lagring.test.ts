@@ -1,12 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import {
-  GAMMEL_LAGRINGSNOKKEL,
+  GAMLE_LAGRINGSNOKLER,
   LAGRINGSNOKKEL,
   eksportfilnavn,
   lagEksport,
   lesEksport,
   lesLagret,
+  lesValg,
   migrer,
+  slettLagret,
   skrivLagret,
   standard,
   velgFylke,
@@ -82,15 +84,31 @@ describe('lagring', () => {
     expect(migrer(v2)).toEqual({ ...v2, skjemaversjon: 3, forside: { rekkefolge: [], lukket: [], bareFavoritter: false } });
   });
 
-  it('leser data lagret før appen het Fuskelappen, og skriver under den nye nøkkelen (avgjørelse 034)', () => {
+  it('leser data lagret før appen het Jukselappen, og skriver under den nye nøkkelen (avgjørelse 034 og 058)', () => {
+    expect(LAGRINGSNOKKEL).toBe('jukselappen');
+    expect(GAMLE_LAGRINGSNOKLER).toEqual(['fuskelappen', 'protokollen']);
+    for (const gammelNokkel of GAMLE_LAGRINGSNOKLER) {
+      const lager = new MinneLager();
+      const gammel = { ...standard(), favoritter: ['a'] };
+      lager.setItem(gammelNokkel, JSON.stringify(gammel));
+      expect(lesLagret(lager)).toEqual({ data: gammel, status: 'ok' });
+      const ny = { ...gammel, favoritter: ['b'] };
+      skrivLagret(lager, ny);
+      expect(lager.getItem(LAGRINGSNOKKEL)).toBe(JSON.stringify(ny));
+      expect(lesLagret(lager).data.favoritter).toEqual(['b']);
+    }
+  });
+
+  it('foretrekker Fuskelappen foran Protokollen, og «Slett alt» sletter også de gamle nøklene (avgjørelse 058)', () => {
     const lager = new MinneLager();
-    const gammel = { ...standard(), favoritter: ['a'] };
-    lager.setItem(GAMMEL_LAGRINGSNOKKEL, JSON.stringify(gammel));
-    expect(lesLagret(lager)).toEqual({ data: gammel, status: 'ok' });
-    const ny = { ...gammel, favoritter: ['b'] };
-    skrivLagret(lager, ny);
-    expect(lager.getItem(LAGRINGSNOKKEL)).toBe(JSON.stringify(ny));
-    expect(lesLagret(lager).data.favoritter).toEqual(['b']);
+    lager.setItem('protokollen', JSON.stringify({ ...standard(), favoritter: ['eldst'] }));
+    lager.setItem('fuskelappen', JSON.stringify({ ...standard(), favoritter: ['nyere'] }));
+    lager.setItem('fuskelappen-lopvisning', 'alle');
+    expect(lesLagret(lager).data.favoritter).toEqual(['nyere']);
+    expect(lesValg(lager, 'lopvisning')).toBe('alle');
+    slettLagret(lager);
+    expect(lesLagret(lager).status).toBe('ny');
+    expect(lesValg(lager, 'lopvisning')).toBeNull();
   });
 
   it('avviser data fra en nyere skjemaversjon', () => {
@@ -104,10 +122,11 @@ describe('lagring', () => {
     const tekst = lagEksport(data, '0.1.0', new Date('2026-09-29T10:00:00Z'));
     expect(lesEksport(tekst)).toEqual(data);
     expect(lesEksport('{"app":"annen"}')).toBeNull();
-    // Filer eksportert før appen het Fuskelappen, kan fortsatt importeres.
+    // Filer eksportert før appen het Jukselappen, kan fortsatt importeres.
+    expect(lesEksport(JSON.stringify({ app: 'fuskelappen', eksportert: '', appversjon: '0.33.0', data }))).toEqual(data);
     expect(lesEksport(JSON.stringify({ app: 'protokollen', eksportert: '', appversjon: '0.16.1', data }))).toEqual(data);
     expect(lesEksport('ikke json')).toBeNull();
-    expect(eksportfilnavn(new Date('2026-09-29T10:00:00Z'))).toBe('fuskelappen-2026-09-29.json');
+    expect(eksportfilnavn(new Date('2026-09-29T10:00:00Z'))).toBe('jukselappen-2026-09-29.json');
   });
 
   it('nullstiller skolen når fylket byttes', () => {

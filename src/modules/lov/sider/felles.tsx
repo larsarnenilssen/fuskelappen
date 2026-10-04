@@ -2,10 +2,11 @@
 import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
+import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
-import { lovdataUrl, paragrafRute, sokIDokumenter, type Treff } from '../data.ts';
+import { lovdataUrl, paragraffavoritt, paragraffavorittnavn, paragrafRute, sokIDokumenter, type Treff } from '../data.ts';
 import type { Ledd, Lovdokument, Paragraf, Segment } from '../typer.ts';
 
 /** Laster inn, eller feilmelding med «Prøv igjen». */
@@ -141,14 +142,17 @@ export function Paragrafboks({ dokument, paragraf, apen }: { dokument: Lovdokume
   const id = useId();
   return (
     <div class="od-underdel lov-paragraf" data-rubrikk={`lov-${paragraf.nr}`}>
-      <h3 class="od-underdel-tittel">
-        <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-          <span lang={dokument.malform}>
-            <span class="lov-nr">{paragraf.visNr}</span> {paragraf.tittel}
-          </span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
-        </button>
-      </h3>
+      <div class="med-stjerne">
+        <h3 class="od-underdel-tittel">
+          <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
+            <span lang={dokument.malform}>
+              <span class="lov-nr">{paragraf.visNr}</span> {paragraf.tittel}
+            </span>
+            <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
+          </button>
+        </h3>
+        <FavorittKnapp id={paragraffavoritt(dokument.id, paragraf.nr)} navn={paragraffavorittnavn(dokument, paragraf)} liten />
+      </div>
       <div id={id} class="od-underdel-innhold" hidden={lukket}>
         <Paragraftekst dokument={dokument} paragraf={paragraf} />
       </div>

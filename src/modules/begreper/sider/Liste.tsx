@@ -1,6 +1,8 @@
 import { useEffect, useId, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import { hentBegreper } from '../innhold.ts';
@@ -24,7 +26,7 @@ export default function Liste() {
 
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('begreper.tittel')}</h1>
+      <Sidetopp tittel={t('begreper.tittel')} favoritt={oversiktsid('begreper')} />
       {begreper === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : begreper.length === 0 ? (

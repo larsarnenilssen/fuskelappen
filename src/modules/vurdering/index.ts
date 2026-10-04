@@ -3,7 +3,8 @@
 // og tallene for fraværsgrensen i rules/vurdering/. Eksamen og klage kommer i pakke 3 (docs/arbeidsordrer/fase-6-forslag.md).
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { fravaerRute, hentInnhold, ordenRute, underveisSluttRute, veiviserRute } from './innhold.ts';
+import { fravaerRute, hentInnhold, ordenRute, underveisSluttRute, UNDERSIDER, veiviserRute } from './innhold.ts';
+import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
   id: 'vurdering',
@@ -55,12 +56,15 @@ export const manifest: Modulmanifest = {
         .map((v) => ({ id: `vurdering:${v.id}`, type: 'veiviser' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'vurdering' })),
     ];
   },
+  undersider: Object.values(UNDERSIDER),
   async favorittbare() {
     const { veivisere } = await hentInnhold();
+    // Ikonene kommer fra kortene på oversikten (undersider, avgjørelse 058).
     return [
-      { id: 'vurdering:underveis-og-slutt', type: 'funksjon' as const, tittel: begge('vurdering.underveisSlutt.tittel'), rute: underveisSluttRute, ikon: 'bok' as const },
-      { id: 'vurdering:orden-og-oppforsel', type: 'funksjon' as const, tittel: begge('vurdering.orden.tittel'), rute: ordenRute, ikon: 'person' as const },
-      { id: 'vurdering:fravaer', type: 'funksjon' as const, tittel: begge('vurdering.fravaer.tittel'), rute: fravaerRute, ikon: 'klokke' as const },
+      oversiktsfavoritt(manifest),
+      { id: 'vurdering:underveis-og-slutt', type: 'funksjon' as const, tittel: begge('vurdering.underveisSlutt.tittel'), rute: underveisSluttRute },
+      { id: 'vurdering:orden-og-oppforsel', type: 'funksjon' as const, tittel: begge('vurdering.orden.tittel'), rute: ordenRute },
+      { id: 'vurdering:fravaer', type: 'funksjon' as const, tittel: begge('vurdering.fravaer.tittel'), rute: fravaerRute },
       ...veivisere.map((v) => ({ id: `vurdering:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },

@@ -1,6 +1,6 @@
 # Arkitektur
 
-Fuskelappen er en statisk nettapp (PWA) bygget med Vite, Preact og TypeScript (`strict`). Den publiseres på GitHub Pages og har ingen server. All henting fra kilder skjer i skript og GitHub Actions, ikke i appen.
+Jukselappen er en statisk nettapp (PWA) bygget med Vite, Preact og TypeScript (`strict`). Den publiseres på GitHub Pages og har ingen server. All henting fra kilder skjer i skript og GitHub Actions, ikke i appen.
 
 ## Lag
 

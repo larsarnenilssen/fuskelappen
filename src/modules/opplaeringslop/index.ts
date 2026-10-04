@@ -2,9 +2,12 @@
 // med lenker til fagarkene og til Vilbli for skolene som har tilbudet (avgjørelse 027). Skoleregisteret og
 // opplæringskontorene (avgjørelse 053).
 import { lastFagindeks } from '../fag/data.ts';
-import type { Modulmanifest } from '../typer.ts';
+import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
+import type { Favorittbar, Modulmanifest } from '../typer.ts';
+import { kontorfavoritt, kontorrute, skolefavoritt, skolerute, UNDERSIDER } from './favoritter.ts';
 import { kortKode, tilbudRute } from './data.ts';
 import { lastSkoler } from '../../data/utdanning.ts';
+import { lastOpplaeringskontor } from '../../data/udir.ts';
 import { begge } from '../../core/i18n/tekst.ts';
 import { fylker } from '../../app/Stedmerknad.tsx';
 
@@ -47,7 +50,7 @@ export const manifest: Modulmanifest = {
         tittel: { nb: s.navn, nn: s.navn },
         tekst: { nb: [s.sted, fylkenavn(s.fylke)].filter(Boolean).join(', '), nn: [s.sted, fylkenavn(s.fylke)].filter(Boolean).join(', ') },
         stikkord: [s.sted ?? '', fylkenavn(s.fylke)].filter(Boolean),
-        rute: s.nr ? `/opplaeringslop/skoler?fylke=alle&skole=${s.nr}` : `/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(s.navn)}`,
+        rute: s.nr ? skolerute(s.nr) : `/opplaeringslop/skoler?fylke=alle&q=${encodeURIComponent(s.navn)}`,
         modul: 'opplaeringslop',
       })),
       ...Object.entries(indeks.utdanningsprogram).map(([program, navn]) => ({
@@ -70,8 +73,37 @@ export const manifest: Modulmanifest = {
       })),
     ];
   },
-  async favorittbare() {
-    return [];
+  undersider: Object.values(UNDERSIDER),
+  async favorittbare(ider) {
+    // Oversikten, registrene og løpet, programmene og tilbudene, og skolene og kontorene (avgjørelse 058). Dataene
+    // lastes bare når brukeren har en favoritt som trenger dem.
+    const sider: Favorittbar[] = [
+      oversiktsfavoritt(manifest),
+      { id: 'opplaeringslop:lop', type: 'side', tittel: begge('opplaeringslop.lop.tittel'), rute: UNDERSIDER.lop.rute },
+      { id: 'opplaeringslop:skoler', type: 'side', tittel: begge('opplaeringslop.skoler.tittel'), rute: UNDERSIDER.skoler.rute },
+      { id: 'opplaeringslop:opplaeringskontor', type: 'side', tittel: begge('opplaeringslop.kontor.tittel'), rute: UNDERSIDER.kontor.rute },
+    ];
+    const egne = ider?.filter((id) => id.startsWith('opplaeringslop:') && !sider.some((f) => f.id === id));
+    if (egne?.length === 0) return bareSpurte(sider, ider);
+    const trengs = (prefiks: string) => !egne || egne.some((id) => id.startsWith(prefiks));
+    const skolerSpurt = trengs('opplaeringslop:skole:');
+    const kontorSpurt = trengs('opplaeringslop:kontor:');
+    const tilbudSpurt = !egne || egne.some((id) => !id.startsWith('opplaeringslop:skole:') && !id.startsWith('opplaeringslop:kontor:'));
+    const [indeks, skoler, kontor] = await Promise.all([
+      tilbudSpurt ? lastFagindeks() : null,
+      skolerSpurt ? lastSkoler() : null,
+      kontorSpurt ? lastOpplaeringskontor() : null,
+    ]);
+    const program: Favorittbar[] = Object.entries(indeks?.utdanningsprogram ?? {}).map(([kode, navn]) => ({ id: `opplaeringslop:${kode}`, type: 'side', tittel: navn, rute: `/opplaeringslop/${kode}` }));
+    const tilbud: Favorittbar[] = Object.entries(indeks?.programomrader ?? {}).map(([kode, po]) => ({
+      id: `opplaeringslop:${kortKode(kode)}`,
+      type: 'side',
+      tittel: { nb: `${po.navn.nb} (${kortKode(kode)})`, nn: `${po.navn.nn} (${kortKode(kode)})` },
+      rute: tilbudRute(po.program, kode),
+    }));
+    const skolefavoritter: Favorittbar[] = (skoler?.skoler ?? []).flatMap((s) => (s.nr ? [{ id: skolefavoritt(s.nr), type: 'element' as const, tittel: { nb: s.navn, nn: s.navn }, rute: skolerute(s.nr) }] : []));
+    const kontorfavoritter: Favorittbar[] = (kontor?.kontor ?? []).map((k) => ({ id: kontorfavoritt(k.orgnr), type: 'element', tittel: { nb: k.navn, nn: k.navn }, rute: kontorrute(k.orgnr) }));
+    return bareSpurte([...sider, ...program, ...tilbud, ...skolefavoritter, ...kontorfavoritter], ider);
   },
   async frister() {
     return [];

@@ -4,7 +4,8 @@
 // Vestland er valgt.
 import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
-import { fristerRute, hentInnhold, poengRute, veiviserRute } from './innhold.ts';
+import { fristerRute, hentInnhold, poengRute, UNDERSIDER, veiviserRute } from './innhold.ts';
+import { oversiktsfavoritt } from '../favoritter.ts';
 
 export const manifest: Modulmanifest = {
   id: 'inntak',
@@ -52,11 +53,14 @@ export const manifest: Modulmanifest = {
         modul: 'inntak',
       }))];
   },
+  undersider: Object.values(UNDERSIDER),
   async favorittbare() {
     const { veivisere } = await hentInnhold();
+    // Ikonene kommer fra kortene på oversikten (undersider, avgjørelse 058).
     return [
-      { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute, ikon: 'klokke' as const },
-      { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute, ikon: 'kalkulator' as const },
+      oversiktsfavoritt(manifest),
+      { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute },
+      { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute },
       ...veivisere.map((v) => ({ id: `inntak:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },

@@ -47,17 +47,24 @@ export function innganger(m: Modulmanifest): Inngang[] {
   return [{ id: `modul:${m.id}`, tittel: m.navn, ...(m.beskrivelse ? { beskrivelse: m.beskrivelse } : {}), rute: m.ruter[0]?.sti ?? '/', ikon: m.ikon }];
 }
 
+/** Adressen uten spørreparametre («/opplaeringslop/skoler?skole=1» → «/opplaeringslop/skoler»). */
+const sti = (rute: string): string => rute.split('?')[0] ?? rute;
+
 /**
- * Ikonet til en favoritt (avgjørelse 056): favorittens eget, ellers ikonet til den nærmeste inngangen over den
- * (samme adresse, eller den lengste adressen som favoritten ligger under), ellers modulens ikon.
+ * Ikonet til en favoritt (avgjørelse 056 og 058): favorittens eget, ellers ikonet til den nærmeste inngangen over den,
+ * ellers modulens ikon. Inngangene er boksene på forsiden og lenkene med ikon på modulens oversiktssider
+ * (`undersider`). Den nærmeste er den med samme adresse, eller den lengste adressen favoritten ligger under.
+ * Spørreparametre teller ikke, så en skole i skoleregisteret får ikonet til skoleregisteret.
  */
 export function ikonForFavoritt(id: string, favoritt: Favorittbar | undefined, moduler: readonly Modulmanifest[] = synligeModuler): Ikonnavn | null {
   if (favoritt?.ikon) return favoritt.ikon;
   const modul = moduler.find((m) => m.id === id.split(':')[0]);
   if (!modul) return null;
   if (favoritt) {
-    const over = innganger(modul)
-      .filter((i) => favoritt.rute === i.rute || favoritt.rute.startsWith(`${i.rute}/`))
+    const rute = sti(favoritt.rute);
+    const over = [...innganger(modul), ...(modul.undersider ?? [])]
+      .map((i) => ({ rute: sti(i.rute), ikon: i.ikon }))
+      .filter((i) => rute === i.rute || rute.startsWith(`${i.rute}/`))
       .sort((a, b) => b.rute.length - a.rute.length)[0];
     if (over) return over.ikon;
   }

@@ -13,7 +13,7 @@ import { uenigheter } from '../../src/modules/fag/tilbud/kildesamsvar.ts';
 /** Gjør YAML under content/, rules/ og testdata om til validerte moduler. */
 export function innholdPlugin(rot: string): Plugin {
   return {
-    name: 'fuskelappen:innhold',
+    name: 'jukselappen:innhold',
     enforce: 'pre',
     load(id) {
       const [sti] = id.split('?');
@@ -40,7 +40,7 @@ export function lesToken(rot: string, navn: string): string {
 /** Setter inn appnavn fra app.ts og temafarger fra tokens.css i index.html. */
 export function htmlPlugin(rot: string, navn: string, kortnavn: string): Plugin {
   return {
-    name: 'fuskelappen:html',
+    name: 'jukselappen:html',
     transformIndexHtml(html) {
       return html
         .replaceAll('%APP_NAVN%', navn)
@@ -59,7 +59,7 @@ export function testoppsettPlugin(mode: string): Plugin {
   const id = 'virtual:testoppsett';
   const medTest = mode !== 'production';
   return {
-    name: 'fuskelappen:testoppsett',
+    name: 'jukselappen:testoppsett',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -86,7 +86,7 @@ export function testoppsettPlugin(mode: string): Plugin {
 export function fagrollerPlugin(rot: string): Plugin {
   const id = 'virtual:fagroller';
   return {
-    name: 'fuskelappen:fagroller',
+    name: 'jukselappen:fagroller',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -119,7 +119,7 @@ export function fagrollerPlugin(rot: string): Plugin {
 export function fagsokPlugin(rot: string): Plugin {
   const id = 'virtual:fagsok';
   return {
-    name: 'fuskelappen:fagsok',
+    name: 'jukselappen:fagsok',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -138,7 +138,7 @@ export function fagsokPlugin(rot: string): Plugin {
 export function tilbudPlugin(rot: string): Plugin {
   const id = 'virtual:tilbud';
   return {
-    name: 'fuskelappen:tilbud',
+    name: 'jukselappen:tilbud',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -171,7 +171,7 @@ export function tilbudPlugin(rot: string): Plugin {
 export function skolerPlugin(rot: string): Plugin {
   const id = 'virtual:skoler';
   return {
-    name: 'fuskelappen:skoler',
+    name: 'jukselappen:skoler',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },
@@ -201,7 +201,7 @@ export function dataPlugin(rot: string, mode: string): Plugin {
   }
   let base = '/';
   return {
-    name: 'fuskelappen:data',
+    name: 'jukselappen:data',
     configResolved(config) {
       base = config.base;
     },
@@ -235,7 +235,7 @@ export function dataPlugin(rot: string, mode: string): Plugin {
 export function begrepsordPlugin(rot: string): Plugin {
   const id = 'virtual:begrepsord';
   return {
-    name: 'fuskelappen:begrepsord',
+    name: 'jukselappen:begrepsord',
     resolveId(kilde) {
       return kilde === id ? '\0' + id : null;
     },

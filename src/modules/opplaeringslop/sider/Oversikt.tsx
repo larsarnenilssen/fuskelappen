@@ -8,6 +8,9 @@ import { lastOpplaeringskontor } from '../../../data/udir.ts';
 import type { Opplaeringskontorer } from '../nor/skjema.ts';
 import { filtrerSkoler, type Skoleoppforing } from '../skoler.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
+import { UNDERSIDER } from '../favoritter.ts';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { sokTilbud } from '../sok.ts';
@@ -40,9 +43,9 @@ function Innganger() {
         {t('opplaeringslop.registre')}
       </h2>
       <div class="lop-innganger">
-        <a class="frist-inngang" href="#/opplaeringslop/skoler">
+        <a class="frist-inngang" href={`#${UNDERSIDER.skoler.rute}`}>
           <span class="frist-inngang-tittel">
-            <Ikon navn="skole" />
+            <Ikon navn={UNDERSIDER.skoler.ikon} />
             {t('opplaeringslop.skoler.tittel')}
           </span>
           <span class="frist-inngang-neste">
@@ -51,9 +54,9 @@ function Innganger() {
           </span>
           <Ikon navn="hoyre" class="frist-inngang-pil" />
         </a>
-        <a class="frist-inngang" href="#/opplaeringslop/opplaeringskontor">
+        <a class="frist-inngang" href={`#${UNDERSIDER.kontor.rute}`}>
           <span class="frist-inngang-tittel">
-            <Ikon navn="kontor" />
+            <Ikon navn={UNDERSIDER.kontor.ikon} />
             {t('opplaeringslop.kontor.tittel')}
           </span>
           <span class="frist-inngang-neste">
@@ -117,7 +120,7 @@ export default function Oversikt() {
       : t('opplaeringslop.oversikt.antallTreffBegge', { tilbud: formaterTall(treff.length), skoler: formaterTall(skoletreff.length) });
   return (
     <div class="side lop-oversikt">
-      <h1 tabIndex={-1}>{t('opplaeringslop.tittel')}</h1>
+      <Sidetopp tittel={t('opplaeringslop.tittel')} favoritt={oversiktsid('opplaeringslop')} />
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.innledning')} />
       </p>
@@ -162,9 +165,9 @@ export default function Oversikt() {
                   {t('opplaeringslop.oversikt.program')}
                 </h2>
                 {/* Opplæringsløpet er en egen underside, med «Min skole» / «Alle» og programmene (eier 03.10.2026). */}
-                <a class="frist-inngang" href="#/opplaeringslop/lop">
+                <a class="frist-inngang" href={`#${UNDERSIDER.lop.rute}`}>
                   <span class="frist-inngang-tittel">
-                    <Ikon navn="veiviser" />
+                    <Ikon navn={UNDERSIDER.lop.ikon} />
                     {t('opplaeringslop.lop.tittel')}
                   </span>
                   <span class="frist-inngang-neste">

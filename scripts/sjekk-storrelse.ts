@@ -8,7 +8,7 @@ const GRENSE_KB = 150;
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const mappe = join(rot, process.argv[2] ?? 'dist');
 const html = readFileSync(join(mappe, 'index.html'), 'utf8');
-const filer = [...html.matchAll(/(?:src|href)="\.?\/?([^"]+\.(?:js|css))"/g)].map((m) => (m[1] ?? '').replace(/^fuskelappen\//, ''));
+const filer = [...html.matchAll(/(?:src|href)="\.?\/?([^"]+\.(?:js|css))"/g)].map((m) => (m[1] ?? '').replace(/^[a-z-]+\/(?=assets\/)/, ''));
 
 let sum = gzipSync(html).length;
 for (const fil of new Set(filer)) {

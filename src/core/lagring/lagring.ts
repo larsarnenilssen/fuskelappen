@@ -3,9 +3,15 @@
 import * as z from 'zod/mini';
 
 /** Testversjonen har egen nøkkel, så testing ikke endrer innstillingene og favorittene i appen (avgjørelse 045). */
-export const LAGRINGSNOKKEL = __TESTVERSJON__ ? 'fuskelappen-test' : 'fuskelappen';
-/** Nøkkelen før appen het Fuskelappen (0.17.0). Data der leses når det ikke finnes noe under den nye nøkkelen. */
-export const GAMMEL_LAGRINGSNOKKEL = 'protokollen';
+export const LAGRINGSNOKKEL = __TESTVERSJON__ ? 'jukselappen-test' : 'jukselappen';
+/**
+ * Nøklene fra før appen het Jukselappen: Fuskelappen (0.17.0–0.33.0, avgjørelse 058) og Protokollen (før 0.17.0,
+ * avgjørelse 034). Finnes det ingenting under den nye nøkkelen, leses den første av disse som har data. Neste
+ * lagring skjer under den nye nøkkelen.
+ */
+export const GAMLE_LAGRINGSNOKLER: readonly string[] = __TESTVERSJON__ ? ['fuskelappen-test'] : ['fuskelappen', 'protokollen'];
+/** Appnavnene eksportfiler kan ha: det nye og de gamle. */
+const EKSPORTNAVN: readonly string[] = ['jukselappen', 'fuskelappen', 'protokollen'];
 export const SKJEMAVERSJON = 3;
 
 const skoleSkjema = z.strictObject({ id: z.nullable(z.string()), navn: z.string().check(z.minLength(1)) });
@@ -93,7 +99,8 @@ export function lesLagret(lager: Lager | null, malform: 'nb' | 'nn' = 'nb'): { d
   if (!lager) return { data: standard(malform), status: 'utilgjengelig' };
   let tekst: string | null;
   try {
-    tekst = lager.getItem(LAGRINGSNOKKEL) ?? lager.getItem(GAMMEL_LAGRINGSNOKKEL);
+    tekst = lager.getItem(LAGRINGSNOKKEL);
+    for (const gammel of GAMLE_LAGRINGSNOKLER) tekst ??= lager.getItem(gammel);
   } catch {
     return { data: standard(malform), status: 'utilgjengelig' };
   }
@@ -130,7 +137,10 @@ export type Valg = keyof typeof VALGNOKLER;
 
 export function lesValg(lager: Lager | null, valg: Valg): string | null {
   try {
-    return lager?.getItem(VALGNOKLER[valg]) ?? null;
+    let verdi = lager?.getItem(VALGNOKLER[valg]) ?? null;
+    // Valg lagret før appen het Jukselappen (avgjørelse 058).
+    for (const gammel of GAMLE_LAGRINGSNOKLER) verdi ??= lager?.getItem(`${gammel}-${valg}`) ?? null;
+    return verdi;
   } catch {
     return null;
   }
@@ -146,22 +156,25 @@ export function skrivValg(lager: Lager | null, valg: Valg, verdi: string): void 
 
 export function slettLagret(lager: Lager | null): void {
   try {
-    for (const n of Object.values(VALGNOKLER)) lager?.removeItem(n);
-    lager?.removeItem(LAGRINGSNOKKEL);
+    // De gamle nøklene slettes også, ellers ville data derfra bli lest igjen (avgjørelse 058).
+    for (const nokkel of [LAGRINGSNOKKEL, ...GAMLE_LAGRINGSNOKLER]) {
+      lager?.removeItem(nokkel);
+      for (const valg of Object.keys(VALGNOKLER)) lager?.removeItem(`${nokkel}-${valg}`);
+    }
   } catch {
     // Ingenting å gjøre; data i minnet nullstilles av kalleren.
   }
 }
 
 export interface Eksportfil {
-  app: 'fuskelappen';
+  app: 'jukselappen';
   eksportert: string;
   appversjon: string;
   data: Lagret;
 }
 
 export function lagEksport(data: Lagret, appversjon: string, naa: Date): string {
-  const fil: Eksportfil = { app: 'fuskelappen', eksportert: naa.toISOString(), appversjon, data };
+  const fil: Eksportfil = { app: 'jukselappen', eksportert: naa.toISOString(), appversjon, data };
   return JSON.stringify(fil, null, 2);
 }
 
@@ -169,8 +182,8 @@ export function lagEksport(data: Lagret, appversjon: string, naa: Date): string 
 export function lesEksport(tekst: string): Lagret | null {
   try {
     const fil = JSON.parse(tekst) as { app?: unknown; data?: unknown } | null;
-    // Filer eksportert før appen het Fuskelappen, har app: 'protokollen'.
-    if (!fil || (fil.app !== 'fuskelappen' && fil.app !== GAMMEL_LAGRINGSNOKKEL)) return null;
+    // Filer eksportert før appen het Jukselappen, har app: 'fuskelappen' eller 'protokollen'.
+    if (!fil || typeof fil.app !== 'string' || !EKSPORTNAVN.includes(fil.app)) return null;
     return migrer(fil.data);
   } catch {
     return null;
@@ -178,7 +191,7 @@ export function lesEksport(tekst: string): Lagret | null {
 }
 
 export function eksportfilnavn(naa: Date): string {
-  return `fuskelappen-${naa.toISOString().slice(0, 10)}.json`;
+  return `jukselappen-${naa.toISOString().slice(0, 10)}.json`;
 }
 
 /** Nytt fylke nullstiller skolen hvis skolen ikke hører til fylket. */

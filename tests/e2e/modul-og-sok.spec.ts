@@ -88,4 +88,24 @@ test.describe('modulregister og søk', () => {
     await page.getByRole('searchbox').fill('xqzwvy');
     await expect(page.getByText('Ingen treff på «xqzwvy».')).toBeVisible();
   });
+
+  test('treffene kan filtreres på gruppe, og filteret står når søket endres (avgjørelse 058)', async ({ page }) => {
+    await page.goto('./');
+    const felt = page.getByRole('searchbox');
+    await felt.fill('skule');
+    const filtre = page.getByRole('group', { name: 'Vis treff fra' });
+    await expect(filtre.getByRole('button', { name: /^Alle \d+$/ })).toHaveAttribute('aria-pressed', 'true');
+    const tilbud = filtre.getByRole('button', { name: /^Tilbud og skoler \d+$/ });
+    await tilbud.click();
+    await expect(tilbud).toHaveAttribute('aria-pressed', 'true');
+    const typer = page.locator('.sokeresultater .listelenke-under');
+    for (const type of await typer.allTextContents()) expect(['Skole', 'Tilbud']).toContain(type);
+    await felt.fill('skulen');
+    await expect(tilbud).toHaveAttribute('aria-pressed', 'true');
+    const regelverk = filtre.getByRole('button', { name: /^Regelverk \d+$/ });
+    await regelverk.click();
+    await expect(regelverk).toHaveAttribute('aria-pressed', 'true');
+    for (const type of await typer.allTextContents()) expect(type).toBe('Regelverk');
+  });
 });
+

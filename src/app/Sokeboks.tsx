@@ -1,6 +1,7 @@
 // Søkefelt med resultater. Brukes på forsiden og på søkesiden.
 import { useEffect, useId, useRef, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
+import { filtrerTreff, tellGrupper, type Sokegruppe } from '../core/sok/grupper.ts';
 import type { Sokeresultat } from '../core/sok/sok.ts';
 import { synligeTreff } from '../core/sok/synlige.ts';
 import { hentSok } from './sokeklient.ts';
@@ -16,6 +17,9 @@ interface Props {
 
 type Indekstilstand = 'ikke-lastet' | 'laster' | 'klar' | 'feil';
 
+/** Så mange treff vises om gangen. «Vis flere» viser like mange til. */
+const PER_SIDE = 50;
+
 export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = false, onEndring }: Props) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
@@ -24,6 +28,9 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
   const [sporring, settSporring] = useState(startverdi);
   const [indeks, settIndeks] = useState<Indekstilstand>('ikke-lastet');
   const [treff, settTreff] = useState<Sokeresultat[]>([]);
+  // Filteret på gruppe (avgjørelse 058). Det står til brukeren velger et annet, også når søket endres.
+  const [filter, settFilter] = useState<Sokegruppe | 'alle'>('alle');
+  const [antall, settAntall] = useState(PER_SIDE);
   const sokRef = useRef<((s: string) => Sokeresultat[]) | null>(null);
 
   const lastIndeks = () => {
@@ -45,7 +52,13 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
   useEffect(() => {
     // Fylkesinnhold (f.eks. begreper som bare gjelder Vestland) vises bare når fylket er valgt.
     if (indeks === 'klar' && sokRef.current) settTreff(synligeTreff(sokRef.current(sporring), innstillinger.fylke));
+    settAntall(PER_SIDE);
   }, [sporring, indeks, innstillinger.fylke]);
+
+  const grupper = tellGrupper(treff);
+  // Har ikke den valgte gruppen treff i dette søket, vises alle.
+  const gjeldende = filter !== 'alle' && grupper.some((g) => g.gruppe === filter) ? filter : 'alle';
+  const filtrert = filtrerTreff(treff, gjeldende);
 
   const aktiv = sporring.trim().length >= 2;
   const status = !aktiv
@@ -112,9 +125,28 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
       <p id={`${id}-status`} class="sokestatus" role="status" aria-live="polite">
         {status}
       </p>
-      {aktiv && indeks === 'klar' && treff.length > 0 && (
+      {/* Filtrene vises når treffene er fra minst to grupper (eier 04.10.2026, avgjørelse 058). */}
+      {aktiv && indeks === 'klar' && grupper.length > 1 && (
+        <div class="sokefilter" role="group" aria-label={t('sok.filter.etikett')}>
+          {[{ gruppe: 'alle' as const, antall: treff.length }, ...grupper].map((g) => (
+            <button
+              key={g.gruppe}
+              type="button"
+              class="sokefilter-valg"
+              aria-pressed={gjeldende === g.gruppe}
+              onClick={() => {
+                settFilter(g.gruppe);
+                settAntall(PER_SIDE);
+              }}
+            >
+              {t(`sok.filter.${g.gruppe}`)} <span class="sokefilter-antall tall">{g.antall}</span>
+            </button>
+          ))}
+        </div>
+      )}
+      {aktiv && indeks === 'klar' && filtrert.length > 0 && (
         <ul class="liste sokeresultater">
-          {treff.map((r) => (
+          {filtrert.slice(0, antall).map((r) => (
             <li key={r.id}>
               <a class="listelenke" href={`#${r.rute}`}>
                 <span class="listelenke-tekst">
@@ -126,6 +158,11 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
             </li>
           ))}
         </ul>
+      )}
+      {aktiv && indeks === 'klar' && filtrert.length > antall && (
+        <button type="button" class="knapp knapp-sekundaer knapp-liten sokeresultater-flere" onClick={() => settAntall(antall + PER_SIDE)}>
+          {t('sok.visFlere', { antall: String(filtrert.length - antall) })}
+        </button>
       )}
     </div>
   );

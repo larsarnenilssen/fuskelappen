@@ -1,6 +1,7 @@
 // Laster veiviseren, sidene om underveis- og sluttvurdering og orden og oppførsel (fase 6, pakke 1) og reglene for
 // fraværsgrensen (pakke 2) fra content/vurdering/ ved behov.
 import type { Innholdselement, Stegelement, Vanligelement, Veiviserelement } from '../../core/innhold/skjema.ts';
+import type { Underside } from '../typer.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/vurdering/*.yaml', { import: 'default' });
 
@@ -37,6 +38,13 @@ export const veiviserRute = (id: string) => `/vurdering/${id}`;
 export const underveisSluttRute = '/vurdering/underveis-og-sluttvurdering';
 export const ordenRute = '/vurdering/orden-og-oppforsel';
 export const fravaerRute = '/vurdering/fravaer';
+
+/** Kortene med ikon på oversikten. Oversikten og favorittene henter ikonet herfra (`undersider`, avgjørelse 058). */
+export const UNDERSIDER = {
+  underveisSlutt: { rute: underveisSluttRute, ikon: 'bok' },
+  fravaer: { rute: fravaerRute, ikon: 'klokke' },
+  orden: { rute: ordenRute, ikon: 'person' },
+} as const satisfies Record<string, Underside>;
 
 /** Elementene på en side, i rekkefølgen de står i filen: id-er som starter med prefikset. */
 export const medPrefiks = (liste: readonly Forklaringselement[], prefiks: string) => liste.filter((e) => e.id.startsWith(prefiks));

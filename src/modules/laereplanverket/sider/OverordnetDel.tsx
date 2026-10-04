@@ -12,7 +12,7 @@ import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
-import { type Element, elementRute, finnDel, sti } from '../data.ts';
+import { type Element, delfavoritt, elementRute, finnDel, sti } from '../data.ts';
 import type { Del } from '../typer.ts';
 import { Blokker, Lasting, Sok, delnavn, useLaereplanverket } from './felles.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
@@ -43,12 +43,15 @@ function Underdel({ del, apne }: { del: Del; apne: ReadonlySet<string> }) {
   const id = useId();
   return (
     <div class="od-underdel" data-rubrikk={`od-${del.id}`}>
-      <h3 class="od-underdel-tittel">
-        <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
-          <span>{delnavn(del, malform)}</span>
-          <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
-        </button>
-      </h3>
+      <div class="med-stjerne">
+        <h3 class="od-underdel-tittel">
+          <button type="button" class="od-underdel-knapp" aria-expanded={!lukket} aria-controls={id} onClick={veksle}>
+            <span>{delnavn(del, malform)}</span>
+            <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
+          </button>
+        </h3>
+        <FavorittKnapp id={delfavoritt(del)} navn={delnavn(del, malform)} liten />
+      </div>
       <div id={id} class="od-underdel-innhold" hidden={lukket}>
         <Innhold del={del} apne={apne} />
       </div>
@@ -121,7 +124,7 @@ export default function OverordnetDel({ parametre }: SideProps) {
           )}
           <Sok od={data.od}>
             {data.od.deler.map((d) => (
-              <Rubrikk key={d.id} nokkel={`od-${d.id}`} tittel={delnavn(d, malform)} lukket={!apne.has(d.id)}>
+              <Rubrikk key={d.id} nokkel={`od-${d.id}`} tittel={delnavn(d, malform)} lukket={!apne.has(d.id)} stjerne={<FavorittKnapp id={delfavoritt(d)} navn={delnavn(d, malform)} liten />}>
                 <Innhold del={d} apne={apne} />
               </Rubrikk>
             ))}

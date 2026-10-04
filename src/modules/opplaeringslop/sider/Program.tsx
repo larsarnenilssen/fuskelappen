@@ -5,6 +5,7 @@
 import { useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -114,7 +115,7 @@ export default function Program({ parametre }: SideProps) {
           { tekst: t('opplaeringslop.lop.tittel'), href: '#/opplaeringslop/lop' },
         ]}
       />
-      <h1 tabIndex={-1}>{struktur.navn[malform]}</h1>
+      <Sidetopp tittel={struktur.navn[malform]} favoritt={`opplaeringslop:${program}`} />
       <p class="dempet">{t(`opplaeringslop.gruppe.${struktur.gruppe}`)}</p>
       <Skolevalg visning={visning} />
       <p class="liten dempet">{t('opplaeringslop.program.lopHjelp')}</p>
