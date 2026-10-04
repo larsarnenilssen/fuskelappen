@@ -310,3 +310,12 @@ Eier ba om flere veier (påbygging, lærling før Vg1 eller etter Vg1, praksiska
 - **Fellesfag i veiene** som egen liste i «Sammenlign».
 - **Ikke funnet i nasjonale kilder:** fellesfag for lærekandidater (står i planen for kandidaten), fellesfag i TAF/YSK og vekslingsmodeller, uttrykkelig regel om godskriving når lærekandidat blir lærling, nedre aldersgrense for yrkesfaglig rekvalifisering, krav om grunnskole for praksiskandidater.
 - **Udirs kilder er uenige** noen steder: merknaden til § 7-6 om særløp (læreplass etter Vg3) mot Udir-1 (kontrakt etter Vg1); merknadene til § 6-3, § 6-4, § 7-1, § 7-3 og § 7-6 viser til «opplæringsloven § 7-7 tredje ledd»; § 9-64 viser til ol. § 7-4 sjette ledd om opplæringsmål; merknadene til § 9-46 og § 9-48 nevner et unntak for fremmedspråk som ikke står i paragrafen. Nasjonale rammer for yrkesfaglig opphenting (2018) har hjemmel i den gamle loven.
+
+### Svar fra eier (04.10.2026, runde 4)
+
+- Veiene og overgangene ser riktige ut. Eier savner lærekandidat som mulighet allerede etter grunnskolen eller Vg1 («en elev kan når som helst bli lærekandidat»).
+- «PB» var påbygging. Praksisbrev beholdes.
+- Alle forbedringene tas med, og veiene er lukket fra start.
+- Eier vil at VIGO også kontrollerer fagarkene, og at de nye modulene lenker til fagarkene og tilbudene (studieforberedende, yrkesfag, påbygging) der det passer.
+
+**Lærekandidat når som helst – dekning i kildene:** Udir «Hvordan bli lærekandidat» (sist endret 05.03.2026): fylkeskommunen kan godkjenne løp som avviker fra tilbudsstrukturen, «i lærebedrift, i skole eller i en kombinasjon av disse» (ol. § 7-2, ofo. § 6-3 første ledd bokstav c), og rådgivere på ungdomsskolen gir informasjon. ofo. § 7-3 tredje og fjerde ledd: formidling som lærekandidat etter bestått individuelt løp, og etter Vg1 eller Vg2 som ikke er bestått. ol. § 7-2 andre ledd: kontrakten kan endres med samtykke fra fylkeskommunen (lærling ↔ lærekandidat). «Når som helst» står ikke ordrett; appen sier «etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten», med disse kildene.
