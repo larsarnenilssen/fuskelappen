@@ -56,15 +56,15 @@ Når du har kontrollert noe, skriver du `/godkjent` og id-ene i en kommentar i k
 - **Fag- og svenneprøver:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk:** ⚠️ endret siden 04.10.2026, venter på godkjenning
 - **Registreringshåndboken, oversikt over alle feltene:** ⚠️ endret siden 04.10.2026, venter på godkjenning
-- **vestlandfylke.no – søknad og inntak:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – inntaksreglar og opplæringsrett:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – minoritetsspråklege:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – innføringskurs:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – tilrettelegging ved læringsutfordringar:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – eksamen og standpunkt:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – tid og stad for privatisteksamen:** ⚠️ sjekken feilet (04.10.2026): fetch failed
-- **vestlandfylke.no – fagprøven:** ⚠️ sjekken feilet (04.10.2026): fetch failed
+- **vestlandfylke.no – søknad og inntak:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – inntaksreglar og opplæringsrett:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – minoritetsspråklege:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – innføringskurs:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – tilrettelegging ved læringsutfordringar:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – eksamen og standpunkt:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – tid og stad for privatisteksamen:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
+- **vestlandfylke.no – fagprøven:** ⚠️ sjekken feilet (04.10.2026): fetch failed (ETIMEDOUT: ). Med nettleser: page.goto: Timeout 60000ms exceeded.
 
 ## Praksis og tolkninger
 
