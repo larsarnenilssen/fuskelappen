@@ -10,7 +10,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - **Sjekk fraværet** (valgfritt): udokumentert fravær, helsefravær og fravær dokumentert med andre grunner, og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Både fraværet som teller og alt fraværet står i økter og prosent. Helsefraværet deles i før og etter grensen bare når brukeren krysser av for det. Grunnene for dokumentert fravær kan åpnes under feltet. Er eleven over 15 prosent, står fagmerknaden med kode.
   - Under står reglene, lukket til de åpnes: fravær som teller, dokumentert fravær som ikke teller, det som ikke er fravær, rektors skjønn, årstimetallet og øktene, hvem grensen gjelder for, og forskjellen mot fraværet på vitnemålet.
 - **Fagarket** har boksen «Fravær og eksamen» ved siden av elever og privatister: fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt, og fagmerknadene som hører til faget, med lenkene til kalkulatoren og til underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller eksamen, står det i boksen.
-- **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren. Kalkulatoren lenker tilbake fra kortet «Varsel, vedtak og grunnlag for karakter», under utregningen på mobil og nederst i venstre spalte på stor skjerm.
+- **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren. Kalkulatoren lenker tilbake fra kortet «Varsel, vedtak og karakter», under utregningen på mobil og nederst i venstre spalte på stor skjerm.
 - **Søkefeltet** har et kryss som tømmer søket.
 - **Øktlengden huskes:** Kalkulatorene husker øktlengden brukeren sist valgte (Fraværsgrensen, Vikartimer, Beskjeftigelse og Arbeidsplan). Den lagres på enheten.
 

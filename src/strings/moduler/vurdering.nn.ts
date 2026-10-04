@@ -133,7 +133,7 @@ export const vurderingNn = {
       varsel: 'Eleven kan ikkje miste karakteren utan å ha fått skriftleg varsel på førehand.',
     },
     regler: 'Slik blir grensa rekna',
-    veiviserKort: 'Varsel, vedtak og grunnlag for karakter',
+    veiviserKort: 'Varsel, vedtak og karakter',
     veiviserKortTekst: 'Steg for steg i vegvisaren «Grunnlag for vurdering»',
   },
   iRegelverket: 'I regelverket ({antall})',
