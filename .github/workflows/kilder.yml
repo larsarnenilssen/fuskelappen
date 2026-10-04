@@ -28,7 +28,8 @@ jobs:
   sjekk:
     name: Sjekk kilder
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    # Grep kan være tregt (04.10.2026: over 20 minutter), så jobben får god tid. Grep-hentingen har egen grense under.
+    timeout-minutes: 50
     permissions:
       contents: write
       issues: write
@@ -58,7 +59,8 @@ jobs:
         # og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
         run: |
           status=0
-          npm run hent:grep || status=1
+          # Grep får høyst 20 minutter. Blir den ikke ferdig, beholdes forrige henting, og de andre kildene hentes likevel.
+          timeout -k 30s 20m npm run hent:grep || status=1
           npm run hent:udir || status=1
           npm run hent:overordnet || status=1
           npm run hent:lovdata || status=1

@@ -49,11 +49,15 @@ const hent = (sti: string) => hentJson<Grepelement[]>(sti);
 /** Henter detaljene for mange koder, noen om gangen. */
 async function hentAlle(type: string, koder: readonly string[]): Promise<Map<string, Grepelement>> {
   const ut = new Map<string, Grepelement>();
+  const start = Date.now();
   for (let i = 0; i < koder.length; i += SAMTIDIGE) {
     const bolk = koder.slice(i, i + SAMTIDIGE);
     const svar = await Promise.all(bolk.map((k) => hentJson<Grepelement>(`${type}/${k}`)));
     bolk.forEach((k, j) => ut.set(k, svar[j] as Grepelement));
+    // Fremdrift i loggen, så en treg henting kan skilles fra en som står (kildesjekken 04.10.2026).
+    if ((i / SAMTIDIGE) % 50 === 49) console.log(`Grep ${type}: ${ut.size} av ${koder.length} (${Math.round((Date.now() - start) / 1000)} s)`);
   }
+  console.log(`Grep ${type}: ${ut.size} hentet på ${Math.round((Date.now() - start) / 1000)} s`);
   return ut;
 }
 
