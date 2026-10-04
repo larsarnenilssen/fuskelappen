@@ -92,7 +92,7 @@ export const nn: Tekster = {
       modul: 'Del av appen',
       veiviser: 'Vegvisar',
       kalkulator: 'Kalkulator',
-      tidslinje: 'Tidslinje',
+      tidslinje: 'Kalender',
       begrep: 'Omgrep',
       fagmerknad: 'Fagmerknad',
       vitnemalsmerknad: 'Vitnemålsmerknad',

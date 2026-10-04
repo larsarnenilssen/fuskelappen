@@ -243,8 +243,8 @@
     nb: "Skolen, eller fylkeskommunen for privatister."
     nn: "Skolen, eller fylkeskommunen for privatistar."
   frist:
-    nb: "Ti kalenderdager fra karakteren er kjent. Datoene for klageperioden står på tidslinjen."
-    nn: "Ti kalenderdagar frå karakteren er kjend. Datoane for klageperioden står på tidslinja."
+    nb: "Ti kalenderdager fra karakteren er kjent. Datoene for klageperioden står i kalenderen."
+    nn: "Ti kalenderdagar frå karakteren er kjend. Datoane for klageperioden står i kalenderen."
   fristKort:
     nb: "10 dager"
     nn: "10 dagar"
@@ -265,8 +265,8 @@
     nb: "Klagenemnda avgjør"
     nn: "Klagenemnda avgjer"
   tekst:
-    nb: "En klagenemnd oppnevnt av statsforvalteren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikke klagen. Den kan avvise klagen, stadfeste karakteren eller sette den opp eller ned, og trenger ikke begrunne avgjørelsen. Datoen klagene er behandlet, står på [tidslinjen](#/vurdering/eksamen-og-klage)."
-    nn: "Ei klagenemnd oppnemnd av statsforvaltaren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikkje klaga. Ho kan avvise klaga, stadfeste karakteren eller setje han opp eller ned, og treng ikkje grunngi avgjerda. Datoen klagene er behandla, står på [tidslinja](#/vurdering/eksamen-og-klage)."
+    nb: "En klagenemnd oppnevnt av statsforvalteren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikke klagen. Den kan avvise klagen, stadfeste karakteren eller sette den opp eller ned, og trenger ikke begrunne avgjørelsen. Datoen klagene er behandlet, står i [kalenderen](#/vurdering/eksamen-og-klage)."
+    nn: "Ei klagenemnd oppnemnd av statsforvaltaren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikkje klaga. Ho kan avvise klaga, stadfeste karakteren eller setje han opp eller ned, og treng ikkje grunngi avgjerda. Datoen klagene er behandla, står i [kalenderen](#/vurdering/eksamen-og-klage)."
   ansvar:
     nb: "Klagenemnda."
     nn: "Klagenemnda."

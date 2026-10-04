@@ -136,7 +136,7 @@ test.describe('vurdering', () => {
   test('fagarket lenker til eksamen', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
     await page.getByText('Vurderingsordning', { exact: true }).first().click();
-    await page.getByRole('link', { name: 'Eksamen: trekk, oppmelding og klage' }).click();
+    await page.getByRole('link', { name: 'Eksamen og klage', exact: true }).click();
     await expect(page).toHaveURL(/#\/vurdering\/eksamen$/);
   });
 });

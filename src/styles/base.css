@@ -6874,26 +6874,61 @@ button.frist-stripe-celle:hover {
   margin-top: 0;
 }
 
+/*
+ * De blå boksene for prøvene (eier 04.10.2026): som boksene for elever og privatister på fagarket, med etiketten til
+ * venstre og verdien til høyre. På stor skjerm står radene på linje på tvers av boksene (subgrid).
+ */
 .tabell-bokser .tabell-kort-rad {
   border-color: transparent;
   background: var(--farge-flate-2);
 }
 
 .tabell-bokser .tabell-kort-tittel {
-  color: var(--farge-merke);
-}
-
-.samleboks {
-  margin: 0 0 var(--rom-3);
-  padding: var(--rom-4);
-  border: var(--strek) solid var(--farge-kant);
-  border-radius: var(--radius-m);
-  background: var(--farge-flate);
-}
-
-.samleboks-tittel {
-  margin: 0 0 var(--rom-2);
   font-size: var(--str-l);
+}
+
+.tabell-bokser dl > div {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: var(--rom-2);
+  margin-bottom: var(--rom-2);
+}
+
+.tabell-bokser dl > div:last-child {
+  margin-bottom: 0;
+}
+
+.tabell-bokser dt {
+  color: var(--farge-merke);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.tabell-bokser dd {
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (min-width: 48rem) {
+  .tabell-bokser .tabell-kort-rad {
+    display: grid;
+    grid-row: span var(--rader, 3);
+    grid-template-rows: subgrid;
+    row-gap: var(--rom-2);
+  }
+
+  .tabell-bokser .tabell-kort-tittel {
+    margin: 0;
+  }
+
+  .tabell-bokser dl {
+    display: contents;
+  }
+
+  .tabell-bokser dl > div {
+    margin: 0;
+  }
 }
 
 .samleboks .tabell-kort {

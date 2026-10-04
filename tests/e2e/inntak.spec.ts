@@ -85,7 +85,7 @@ test.describe('frister ved inntak', () => {
     const kort = page.locator('.frist-inngang', { hasText: 'Neste frist' });
     await expect(kort).toBeVisible();
     await kort.click();
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Søknad og frister gjennom året');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Kalender for inntak');
     // Stripen har alle tolv månedene, fra oktober.
     await expect(page.locator('.frist-stripe > li')).toHaveCount(12);
     await expect(page.locator('.frist-stripe-navn').first()).toHaveText(/okt/i);

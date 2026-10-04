@@ -100,7 +100,7 @@ export default function Eksamen({ sporring }: SideProps) {
           {utsatt && (
             <section>
               <h2 class="liten-overskrift">{t('vurdering.eksamen.ikkeBestatt')}</h2>
-              <Samleboks element={utsatt} tabell={utsatt.tabell} />
+              <Samleboks element={utsatt} tabell={utsatt.tabell} aapen={del === utsatt.id} />
             </section>
           )}
           <section>

@@ -11,7 +11,7 @@ export const inntakNn: typeof inntakNb = {
   lokaleMangler: 'Viser dei nasjonale reglane. Appen har ikkje lokale reglar om inntak for {fylke} enno. Sjå den lokale forskrifta om inntak i fylket.',
   ikkeFunnet: 'Fann ikkje vegvisaren.',
   frister: {
-    tittel: 'Søknad og fristar gjennom året',
+    tittel: 'Kalender for inntak',
     kort: 'Fristar',
     beskrivelse: 'Søknadsfristar, svar, ventelister og klage ved inntak til vidaregåande.',
     innledning: 'Fristane ved inntak til vidaregåande opplæring, frå oktober til september. Trykk på ein frist for å lese meir.',
@@ -26,7 +26,7 @@ export const inntakNn: typeof inntakNb = {
     nasjonal: 'Nasjonal',
     heleAret: 'Heile året',
     neste: 'Neste frist',
-    alle: 'Alle fristane gjennom året',
+    alle: 'Kalender for inntak',
     tomt: 'Ingen fristar for dette valet.',
   },
   poeng: {

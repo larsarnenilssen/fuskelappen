@@ -10,7 +10,7 @@ export const inntakNb = {
   lokaleMangler: 'Viser de nasjonale reglene. Appen har ikke lokale regler om inntak for {fylke} ennå. Se fylkets lokale forskrift om inntak.',
   ikkeFunnet: 'Fant ikke veiviseren.',
   frister: {
-    tittel: 'Søknad og frister gjennom året',
+    tittel: 'Kalender for inntak',
     kort: 'Frister',
     beskrivelse: 'Søknadsfrister, svar, ventelister og klage ved inntak til videregående.',
     innledning: 'Fristene ved inntak til videregående opplæring, fra oktober til september. Trykk på en frist for å lese mer.',
@@ -25,7 +25,7 @@ export const inntakNb = {
     nasjonal: 'Nasjonal',
     heleAret: 'Hele året',
     neste: 'Neste frist',
-    alle: 'Alle fristene gjennom året',
+    alle: 'Kalender for inntak',
     tomt: 'Ingen frister for dette valget.',
   },
   poeng: {
