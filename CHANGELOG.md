@@ -4,6 +4,15 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Endret
+
+- **Toppfeltet erstatter bunnmenyen:** tilbake, «Fuskelappen» (til forsiden), søk og innstillinger står øverst. Kildestatusen står under Innstillinger.
+- **Forsiden kan tilpasses:** gruppene lukkes og åpnes med overskriften, og lukkede grupper viser hva som er inni. «Tilpass» endrer rekkefølgen på gruppene, med dra og slipp eller piler. Valgene lagres på enheten.
+- **Favorittene** står øverst på forsiden, med ikonet sitt og et lite stjernemerke, og sorteres der de står med blyanten i overskriften. «Bare favoritter» viser favorittene under kategoriene sine. Favorittsiden er tatt bort, og gamle lenker går til forsiden.
+- **Søket** blir en knapp i toppfeltet når søkefeltet på forsiden er rullet bort. På søkesiden står markøren i søkefeltet med en gang.
+- **«Til toppen»** kommer på alle sider som er lange nok.
+- **Fylkesmerknaden** på forsiden er én linje, og forsiden har to spalter på stor skjerm.
+
 ### Lagt til
 
 - **Vurdering** under «Elever og opplæring», etter opplæringsforskrifta kapittel 9, Udirs merknader og rundskrivet om fraværsgrensen:

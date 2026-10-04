@@ -15,3 +15,5 @@
 **Tillegg 0.1.2:** Fargeovergangen i 0.1.1 rettet stripen nederst, men ikke toningen øverst. Årsaken var at iOS henter fargen bak statuslinjen fra bakgrunnsfargen (`background-color`) til `html` og `body`, ikke fra et bakgrunnsbilde. Begge har nå toppfeltets farge, og sidefargen ligger på `.skall`. Virker ikke dette, er neste steg `apple-mobile-web-app-status-bar-style: black`.
 
 **Tillegg 0.1.3:** Med mørk bakgrunnsfarge forsvant den grå toningen. iOS la likevel en uskarp, gjennomsiktig kant over øvre del av toppfeltet, så appnavnet så uklart ut. Eier valgte å flytte innholdet ned framfor å bruke svart statuslinje. I installert app på berøringsskjerm (`display-mode: standalone` og `pointer: coarse`) får toppfeltet `--topplinje-luft-installert` (1,5 rem) ekstra luft over innholdet. Verdien ligger i `tokens.css` og kan justeres.
+
+**Endret 04.10.2026 (avgjørelse 056):** Bunnmenyen er tatt bort. Toppfeltet har tilbake, appnavnet (til forsiden), søk og innstillinger, og favorittene står på forsiden. Lerretet har sidefargen nederst.

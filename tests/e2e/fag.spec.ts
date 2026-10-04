@@ -146,7 +146,7 @@ test.describe('fag og læreplaner', () => {
   test('fag kan legges til som favoritt', async ({ page }) => {
     await page.goto('./#/fag/HEA2005');
     await page.getByRole('button', { name: 'Legg til i favoritter: Helsefremmende arbeid' }).click();
-    await page.goto('./#/favoritter');
+    await page.goto('./');
     await expect(page.locator('.favorittliste').getByRole('link', { name: 'Helsefremmende arbeid (HEA2005)' })).toBeVisible();
   });
 

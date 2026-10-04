@@ -10,19 +10,30 @@ test.describe('navigasjon', () => {
     await expect(page).toHaveTitle('Fuskelappen');
   });
 
-  test('bunnmenyen og nettleserens tilbake virker', async ({ page }) => {
+  test('toppfeltet har søk og innstillinger, appnavnet fører hjem, og nettleserens tilbake virker (avgjørelse 056)', async ({ page }) => {
     await page.goto('./');
     const meny = page.getByRole('navigation', { name: 'Hovedmeny' });
+    // Søket står på forsiden, så toppfeltet har ikke søkeknappen der.
+    await expect(meny.getByRole('link', { name: 'Søk' })).toHaveCount(0);
     await meny.getByRole('link', { name: 'Innstillinger' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
     await expect(meny.getByRole('link', { name: 'Innstillinger' })).toHaveAttribute('aria-current', 'page');
     await expect(page).toHaveTitle('Innstillinger – Fuskelappen');
-    await meny.getByRole('link', { name: 'Favoritter' }).click();
-    await expect(page.getByRole('heading', { level: 1, name: 'Favoritter' })).toBeVisible();
+    await meny.getByRole('link', { name: 'Søk' }).click();
+    await expect(page.getByRole('heading', { level: 1, name: 'Søk' })).toBeVisible();
+    // Søkefeltet får fokus, så brukeren kan skrive med en gang.
+    await expect(page.getByRole('searchbox')).toBeFocused();
     await page.goBack();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
-    await page.goBack();
-    await expect(page.getByRole('searchbox')).toBeVisible();
+    await page.locator('.topplinje .appnavn').click();
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.locator('.bunnmeny')).toHaveCount(0);
+  });
+
+  test('gamle lenker til favorittsiden går til forsiden (avgjørelse 056)', async ({ page }) => {
+    await page.goto('./#/favoritter');
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.getByRole('heading', { level: 2, name: 'Favoritter' })).toBeVisible();
   });
 
   test('tilbakeknappen i topplinjen går tilbake', async ({ page }) => {
@@ -76,14 +87,14 @@ test.describe('navigasjon', () => {
 
   test('overskriften får fokus uten synlig ramme ved navigasjon', async ({ page }) => {
     await page.goto('./');
-    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Søk' }).click();
-    const h1 = page.getByRole('heading', { level: 1, name: 'Søk' });
+    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Innstillinger' }).click();
+    const h1 = page.getByRole('heading', { level: 1, name: 'Innstillinger' });
     await expect(h1).toBeFocused();
     expect(await h1.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe('none');
   });
 
   for (const tema of ['lys', 'mork'] as const) {
-    test(`lerretet har toppfarge bak statuslinjen og menyfarge nederst (${tema})`, async ({ page }) => {
+    test(`lerretet har toppfarge bak statuslinjen og sidefarge nederst (${tema})`, async ({ page }) => {
       await settLagret(page, { tema });
       await page.goto('./');
       const farger = await page.evaluate(() => {
@@ -94,13 +105,13 @@ test.describe('navigasjon', () => {
           bodyFarge: stil(document.body).backgroundColor,
           side: stil(document.querySelector('.skall') as Element).backgroundColor,
           topp: stil(document.querySelector('.topplinje') as Element).backgroundColor,
-          meny: stil(document.querySelector('.bunnmeny') as Element).backgroundColor,
         };
       });
       // iOS tar fargen bak statuslinjen fra bakgrunnsfargen til html og body.
       expect(farger.htmlFarge).toBe(farger.topp);
       expect(farger.bodyFarge).toBe(farger.topp);
-      expect(farger.htmlBilde).toContain(farger.meny);
+      // Nederst har lerretet sidefargen, siden bunnmenyen er tatt bort (avgjørelse 056).
+      expect(farger.htmlBilde).toContain(farger.side);
       expect(farger.side).not.toBe(farger.topp);
     });
   }

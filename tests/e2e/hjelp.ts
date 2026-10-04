@@ -43,7 +43,6 @@ export const ruter = [
   '#/',
   '#/sok',
   '#/sok?q=skule',
-  '#/favoritter',
   '#/innstillinger',
   '#/om',
   '#/om/kilder',
