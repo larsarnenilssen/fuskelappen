@@ -275,3 +275,19 @@ Forslag: oppslaget «Karakterer og vurderingsuttrykk» bygger på B26, B25 og B2
 ### Planen for forsiden (OPPDRAG.md 3.7, eier 04.10.2026)
 
 Forslaget er flyttet til grenen `claude/fase-6`, der forsiden har fått overskriften «Inntak og opplæringstilbud». Etter planen heter modulen **Vurdering** og står under «Elever og opplæring» sammen med Tilrettelegging (to hovedbokser). Mockupene er laget på nytt med det navnet. Med Opplæringstilbud under «Inntak og opplæringstilbud» passer mockup B (veiene til fag- og svennebrev i Opplæringstilbud) bedre enn før.
+
+### Eiers ønsker (04.10.2026, runde 3) og forslag
+
+Eier vil ha «Fag- og svennebrev» i Opplæringstilbud, mer vekt på vurderingspraksis i Vurdering, og at fag- og svennebrev bygges som klosser som kan kombineres og byttes mellom.
+
+**Delingen av innholdet** (hver opplysning står ett sted, med lenker begge veier):
+
+| Opplæringstilbud: «Fag- og svennebrev» | Vurdering: «Fag- og svenneprøven og de andre prøvene» |
+|---|---|
+| Veiene (løpene) mot fag- og svennebrev, praksisbrev og kompetansebevis | Prøven som sluttvurdering: krav før prøven, oppmelding og frister, prøvenemnda, vurdering og karakterer, særskilt tilrettelegging, ny og utsatt prøve |
+| Klossene: skole, kontrakt i bedrift (lærling, lærekandidat, praksisbrevkandidat, fagbrev på jobb), praksis i arbeidslivet | Klage på prøven (klageveiviseren) |
+| Bytte underveis, godskriving, fellesfag og unntak (§ 6-2–§ 6-12, § 9-48–§ 9-50, ol. kap. 7 og § 23-2) | Fristene på tidslinjen |
+
+**Fag- og svennebrev som klosser:** Hver kloss er et innholdselement med hva den er, hva den ender i, hvilke klosser man kommer fra, og hvilke man kan gå videre til, med kilde på hver overgang. Øverst velger brukeren mål (fag- eller svennebrev, praksisbrev, kompetansebevis) og kan filtrere på veier uten krav om fellesfag. Løpene står som rader av klosser, og et diagram viser byttene. Klossene og overgangene testes som veiviseren: alle kan nås, og ingen overgang mangler kilde. Før det bygges, leses Udirs sider om lærekandidatordningen, praksisbrevordningen, fagbrev på jobb og praksiskandidatordningen, og overgangene legges fram for eier.
+
+**Vurderingspraksis:** Ny side «Underveis- og sluttvurdering» øverst i Vurdering: skoleåret som stripe (underveis hele året, halvår, standpunkt, eksamen), forskjellen mellom underveis- og sluttvurdering side om side, prinsippene for å vurdere kompetansemålene (§ 9-1, § 9-11, § 9-13, § 9-16 med merknadene), og et søk på fag som viser vurderingsteksten i læreplanen fra Grep (underveis og standpunkt per kompetansemålsett). Ny kilde: Udirs sider «Standpunkt- og underveisvurdering».
