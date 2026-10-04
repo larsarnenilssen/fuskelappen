@@ -5792,20 +5792,6 @@ button.frist-stripe-celle:hover {
   text-align: left;
 }
 
-.sammenligning-lang {
-  display: none;
-}
-
-@media (min-width: 30rem) {
-  .sammenligning-kort {
-    display: none;
-  }
-
-  .sammenligning-lang {
-    display: inline;
-  }
-}
-
 .sammenligning-venstre {
   border-right: var(--strek) solid var(--farge-kant);
   color: var(--vurdering-halvaar);

@@ -418,8 +418,8 @@
     nb: "Varsel om fravær"
     nn: "Varsel om fråvær"
   tekst:
-    nb: "En elev kan ikke miste karakteren på grunn av fravær uten å ha fått skriftlig varsel i forkant. Varselet gis straks det er fare for at eleven ikke får karakter, for eksempel når fraværet nærmer seg 10 prosent, og til foreldrene også hvis eleven er under 18. Varselet skal si at faren gjelder fravær. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, selv om fraværsgrensen er overskredet."
-    nn: "Ein elev kan ikkje miste karakteren på grunn av fråvær utan å ha fått skriftleg varsel på førehand. Varselet blir gitt straks det er fare for at eleven ikkje får karakter, til dømes når fråværet nærmar seg 10 prosent, og til foreldra også dersom eleven er under 18. Varselet skal seie at faren gjeld fråvær. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sjølv om fråværsgrensa er overskriden."
+    nb: "En elev kan ikke miste karakteren på grunn av fravær uten å ha fått skriftlig varsel i forkant. Varselet gis straks det er fare for at eleven ikke får karakter, for eksempel når fraværet nærmer seg 10 prosent, og til foreldrene også hvis eleven er under 18. Varselet skal gi eleven mulighet til å få karakter. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, selv om fraværsgrensen er overskredet."
+    nn: "Ein elev kan ikkje miste karakteren på grunn av fråvær utan å ha fått skriftleg varsel på førehand. Varselet blir gitt straks det er fare for at eleven ikkje får karakter, til dømes når fråværet nærmar seg 10 prosent, og til foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sjølv om fråværsgrensa er overskriden."
   ansvar:
     nb: "Skolen, på vegne av fylkeskommunen."
     nn: "Skolen, på vegner av fylkeskommunen."
@@ -450,7 +450,6 @@
     - { id: udir-rundskriv-fravarsgrensen, punkt: "7. Hvordan bør skolene informere og følge opp elevene", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/7.-hvordan-bor-skolene-informere-og-folge-opp-elevene/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig at varselet skal si at faren gjelder fravær, og at et varsel om manglende grunnlag ikke er nok (eier 04.10.2026, praksislisten)?"
     - "Er «når fraværet nærmer seg 10 prosent» et godt eksempel på når varselet skal gis (rundskrivet punkt 6.1)?"
 
 - id: vu-varsel-grunnlag
@@ -461,8 +460,8 @@
     nb: "Varsel om manglende grunnlag"
     nn: "Varsel om manglande grunnlag"
   tekst:
-    nb: "Er det tvil om faglæreren har grunnlag for karakter, skal eleven varsles skriftlig straks, og foreldrene også hvis eleven er under 18. Varselet skal si at faren gjelder manglende grunnlag for vurdering, og gi eleven mulighet til å vise kompetansen sin før karakteren settes. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, satt på det grunnlaget faglæreren har."
-    nn: "Er det tvil om faglæraren har grunnlag for karakter, skal eleven varslast skriftleg straks, og foreldra også dersom eleven er under 18. Varselet skal seie at faren gjeld manglande grunnlag for vurdering, og gi eleven høve til å vise kompetansen sin før karakteren blir sett. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sett på det grunnlaget faglæraren har."
+    nb: "Er det tvil om faglæreren har grunnlag for karakter, skal eleven varsles skriftlig straks, og foreldrene også hvis eleven er under 18. Varselet skal gi eleven mulighet til å få karakter. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, satt på det grunnlaget faglæreren har."
+    nn: "Er det tvil om faglæraren har grunnlag for karakter, skal eleven varslast skriftleg straks, og foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sett på det grunnlaget faglæraren har."
   ansvar:
     nb: "Skolen, på vegne av fylkeskommunen."
     nn: "Skolen, på vegner av fylkeskommunen."
@@ -492,8 +491,7 @@
     - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig at varselet skal si at faren gjelder manglende grunnlag, og at et varsel om fravær ikke er nok (eier 04.10.2026, praksislisten)?"
-    - "Skal veiviseren også nevne at IV på grunn av manglende grunnlag føres med FAM21 «Ikke vurderingsgrunnlag» fra VIGO, slik FAM51 nevnes for fravær?"
+    - "Er det klart nok at varselet skal gi eleven mulighet til å få karakter, for eksempel ved å vise kompetansen sin før karakteren settes (§ 9-7 tredje ledd)?"
 
 - id: vu-uten-varsel
   type: steg
@@ -568,8 +566,8 @@
     nb: "Vedtak om IV"
     nn: "Vedtak om IV"
   tekst:
-    nb: "Rektor selv fatter vedtak om at eleven ikke får standpunktkarakter i faget. Det føres IV (ikke vurderingsgrunnlag), og ved overskredet fraværsgrense også FAM51. Har eleven hatt eksamen i faget, annulleres den. Eleven kan ha rett til mer opplæring i faget, eller ta det som privatist. Eleven kan klage innen 10 dager."
-    nn: "Rektor sjølv gjer vedtak om at eleven ikkje får standpunktkarakter i faget. Det blir ført IV (ikkje vurderingsgrunnlag), og ved overskriden fråværsgrense også FAM51. Har eleven hatt eksamen i faget, blir han annullert. Eleven kan ha rett til meir opplæring i faget, eller ta det som privatist. Eleven kan klage innan 10 dagar."
+    nb: "Rektor selv fatter vedtak om at eleven ikke får standpunktkarakter i faget. Det føres IV (ikke vurderingsgrunnlag). Har eleven hatt eksamen i faget, annulleres den. Eleven kan ha rett til mer opplæring i faget, eller ta det som privatist. Eleven kan klage innen 10 dager."
+    nn: "Rektor sjølv gjer vedtak om at eleven ikkje får standpunktkarakter i faget. Det blir ført IV (ikkje vurderingsgrunnlag). Har eleven hatt eksamen i faget, blir han annullert. Eleven kan ha rett til meir opplæring i faget, eller ta det som privatist. Eleven kan klage innan 10 dagar."
   ansvar:
     nb: "Rektor selv."
     nn: "Rektor sjølv."

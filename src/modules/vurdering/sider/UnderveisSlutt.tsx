@@ -39,7 +39,7 @@ function Skolearet() {
         <span class="skolear-felt skolear-felt-standpunkt" style={felt(9.85, 10.7)} />
       </div>
       <div class="skolear-rad skolear-rad-under" aria-hidden="true">
-        <span class="skolear-etikett skolear-halvaar" style={felt(3.5, 6.5)}>
+        <span class="skolear-etikett skolear-halvaar" style={felt(2.9, 7.1)}>
           {t('vurdering.underveisSlutt.halvaar')}
         </span>
         <span class="skolear-etikett skolear-eksamen" style={felt(7.9, 10.9)}>
@@ -216,8 +216,6 @@ export default function UnderveisSlutt({ sporring }: SideProps) {
               tittel={t('vurdering.underveisSlutt.forskjellen')}
               venstre={t('vurdering.underveisSlutt.venstre')}
               hoyre={t('vurdering.underveisSlutt.hoyre')}
-              venstreLang={t('vurdering.underveisSlutt.venstreLang')}
-              hoyreLang={t('vurdering.underveisSlutt.hoyreLang')}
               rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
             />
           </section>

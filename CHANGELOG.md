@@ -20,6 +20,11 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Forsiden:** Ny overskrift «Inntak og opplæringstilbud» med Inntak og Opplæringstilbud. Læreplanverket har nå Overordnet del og Fag og læreplaner. Inntak har fått et eget ikon.
 - **Regelverk og kilder** står som lukkede rader nederst i alle kort og bokser som har dem: i veiviserne, fristene i Inntak, reglene for poengberegningen, «Slik regnes det ut» i Arbeidstid og kortene i Vurdering.
 - **Stien tilbake** står nå øverst også i veiviserne, i lover, forskrifter og avtaler og på fagarket.
+- **Forsiden** følger elevens vei gjennom videregående: Inntak og opplæringstilbud, Læreplanverket, Elever og opplæring og Skolemiljø, deretter Arbeidstid og til slutt Oppslag.
+
+### Fikset
+
+- **Favoritter:** «Søknad og frister gjennom året» sto som «ikke lenger tilgjengelig» når den var lagt til som favoritt. En ny test sjekker at alle stjerneknappene i appen har en favoritt som finnes.
 
 ## [0.30.0] – 2026-10-03
 
