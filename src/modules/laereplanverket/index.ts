@@ -1,5 +1,6 @@
 // Læreplanverket (pakke 6, avgjørelse 037): overordnet del fra udir.no, med søk og tekstene i rubrikker og
 // bokser, og de grunnleggende ferdighetene og tverrfaglige temaene fra Grep. Fagarket lenker hit.
+import { begge } from '../../core/i18n/tekst.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { delRute, elementRute, lastLaereplanverket, lastOverordnetDel } from './data.ts';
 import { alleDeler } from './typer.ts';
@@ -43,7 +44,7 @@ export const manifest: Modulmanifest = {
     ];
   },
   async favorittbare() {
-    return [];
+    return [{ id: 'laereplanverket:overordnet-del', type: 'funksjon' as const, tittel: begge('laereplanverket.tittel'), rute: '/laereplanverket' }];
   },
   async frister() {
     return [];
