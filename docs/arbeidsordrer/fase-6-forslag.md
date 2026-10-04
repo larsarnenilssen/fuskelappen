@@ -255,3 +255,19 @@ Under figuren står **videre fra lærekandidat og praksisbrev** (godskriving ett
 **Under: det som er felles for prøvene**, som lukkede kort: krav før prøven (§ 9-57), oppmelding og frister (§ 9-56: senest to måneder før kontraktstiden er ute), når prøven holdes (§ 9-55: tidligst tre måneder før), prøvenemnda (§ 9-59–§ 9-61), særskilt tilrettelegging (§ 9-62), vurdering og karakterer (§ 9-5, § 9-63, § 9-64), ny og utsatt prøve (§ 9-66, § 9-67), og klage (lenke til klageveiviseren). Lenker til begrepene lærling, kontrakt om opplæring og lærebedrift og til oppslaget over opplæringskontorer.
 
 **I veiviseren «Grunnlag for vurdering»** blir steg L1 og L2 borte. Det første steget får svaret «Lærling, lærekandidat eller praksisbrevkandidat», som gir et utfall om halvårsvurdering i bedrift (§ 9-13 fjerde ledd, ingen fraværsgrense) med lenke til siden over.
+
+### Svar fra eier (04.10.2026, runde 2)
+
+- **Fasittestene FR1–FR8 er godkjent**, med svarene over (FR2: 18 økter innenfor, 19 over. FR8: 15 timer teller, rektor kan avgjøre).
+- **Spørsmål 6 og 9:** Eier vil se en mockup. «Fag- og svennebrev» passer ikke under «Eksamen og klage». Mockup A og B er vist som skjermbilder (under).
+- **Spørsmål 10:** Eier spør om andre kilder, f.eks. registreringshåndboken.
+
+### Karakterkodene: registreringshåndboken (spørsmål 10)
+
+Registreringshåndboken har kodene som egne felt (sist endret 08.04.2025):
+
+- **B26 Karakterer og andre vurderingsuttrykk:** 1–6, B/IB (bestått/ikke bestått), D (deltatt), F (fritatt), GK (godkjent), IV (ikke vurderingsgrunnlag), IM (ikke møtt), VO (vurdert etter individuell opplæringsplan), og IG (ikke godkjent) for voksne som er realkompetansevurdert. Med kommentarer: IM føres med FAM29 eller FAM39, IV ved bortvisning eller juks på eksamen, IB, IV og IM skal ikke stå på vitnemålet i fag som gir kompetansen, og D-fag uten grunnlag får stiplet linje.
+- **B25 Orden og oppførsel:** G, NG og LG. Teksten der («klare avvik») er ikke den samme som i forskriften § 9-4 («store negative avvik»). Appen bruker forskriften.
+- **B23 Karakterstatus:** E (feilføring), K (klage), S, N og U (særskilt, ny og utsatt eksamen).
+
+Forslag: oppslaget «Karakterer og vurderingsuttrykk» bygger på B26, B25 og B23, sammen med føringsskrivet punkt 5 og forskriften § 9-3–§ 9-5. Kildesjekken følger de tre feltene (som B16–B19). VIGO brukes bare som kontroll: alle kodene i B26 finnes i VIGO med typen V, så V er karakterene i videregående. Typene trenger da ikke forklares i appen.
