@@ -77,6 +77,7 @@ export function Ikon({ navn, fylt = false, class: klasse }: Props) {
       height="24"
       aria-hidden="true"
       focusable="false"
+      data-ikon={navn}
       fill={fylt ? 'currentColor' : 'none'}
       stroke="currentColor"
       stroke-width="1.8"

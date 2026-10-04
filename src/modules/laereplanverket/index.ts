@@ -1,8 +1,9 @@
 // Læreplanverket (pakke 6, avgjørelse 037): overordnet del fra udir.no, med søk og tekstene i rubrikker og
 // bokser, og de grunnleggende ferdighetene og tverrfaglige temaene fra Grep. Fagarket lenker hit.
 import { begge } from '../../core/i18n/tekst.ts';
-import type { Modulmanifest } from '../typer.ts';
-import { delRute, elementRute, lastLaereplanverket, lastOverordnetDel } from './data.ts';
+import { bareSpurte } from '../favoritter.ts';
+import type { Favorittbar, Modulmanifest } from '../typer.ts';
+import { delfavoritt, delRute, elementRute, lastLaereplanverket, lastOverordnetDel } from './data.ts';
 import { alleDeler } from './typer.ts';
 
 export const manifest: Modulmanifest = {
@@ -43,8 +44,16 @@ export const manifest: Modulmanifest = {
       })),
     ];
   },
-  async favorittbare() {
-    return [{ id: 'laereplanverket:overordnet-del', type: 'funksjon' as const, tittel: begge('laereplanverket.tittel'), rute: '/laereplanverket' }];
+  async favorittbare(ider) {
+    const side: Favorittbar = { id: 'laereplanverket:overordnet-del', type: 'funksjon', tittel: begge('laereplanverket.tittel'), rute: '/laereplanverket' };
+    // Delene av overordnet del kan favorittmerkes med den diskré stjernen (avgjørelse 058). Teksten lastes bare når
+    // brukeren har en slik favoritt.
+    const delerSpurt = !ider || ider.some((id) => id.startsWith('laereplanverket:') && id !== side.id);
+    if (!delerSpurt) return bareSpurte([side], ider);
+    const od = await lastOverordnetDel();
+    const navn = (d: (typeof od.deler)[number], m: 'nb' | 'nn') => (d.nr ? `${d.nr} ${d.tittel[m]}` : d.tittel[m]);
+    const deler: Favorittbar[] = alleDeler(od.deler).map((d) => ({ id: delfavoritt(d), type: 'element', tittel: { nb: navn(d, 'nb'), nn: navn(d, 'nn') }, rute: delRute(d) }));
+    return bareSpurte([side, ...deler], ider);
   },
   async frister() {
     return [];

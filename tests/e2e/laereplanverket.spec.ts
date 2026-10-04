@@ -22,15 +22,15 @@ test.describe('læreplanverket', () => {
     for (const navn of ['1 Opplæringens verdigrunnlag', '2 Prinsipper for læring, utvikling og danning', '3 Prinsipper for skolens praksis', 'Grunnleggende ferdigheter 5', 'Tverrfaglige temaer 3']) {
       await expect(page.getByRole('button', { name: navn, exact: true })).toHaveAttribute('aria-expanded', 'false');
     }
-    await page.getByRole('button', { name: '2 Prinsipper for læring, utvikling og danning' }).click();
-    await page.getByRole('button', { name: '2.5 Tverrfaglige temaer' }).click();
-    await page.getByRole('button', { name: '2.5.1 Folkehelse og livsmestring' }).click();
+    await page.getByRole('button', { name: '2 Prinsipper for læring, utvikling og danning', exact: true }).click();
+    await page.getByRole('button', { name: '2.5 Tverrfaglige temaer', exact: true }).click();
+    await page.getByRole('button', { name: '2.5.1 Folkehelse og livsmestring', exact: true }).click();
     await expect(page.getByText(/Folkehelse og livsmestring som tverrfaglig tema i skolen/)).toBeVisible();
     // En adresse til en del åpner delen og boksene rundt den, og overskriften står synlig under toppfeltet.
     await page.goto('./#/laereplanverket/overordnet-del/3.2');
-    const knapp = page.getByRole('button', { name: '3.2 Undervisning og tilpasset opplæring' });
+    const knapp = page.getByRole('button', { name: '3.2 Undervisning og tilpasset opplæring', exact: true });
     await expect(knapp).toHaveAttribute('aria-expanded', 'true');
-    await expect(page.getByRole('button', { name: '1 Opplæringens verdigrunnlag' })).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.getByRole('button', { name: '1 Opplæringens verdigrunnlag', exact: true })).toHaveAttribute('aria-expanded', 'false');
     await expect(knapp).toBeInViewport();
     const topp = await page.locator('.topplinje, header').first().evaluate((e) => e.getBoundingClientRect().bottom);
     expect((await knapp.boundingBox())?.y ?? 0).toBeGreaterThanOrEqual(topp);
@@ -42,7 +42,7 @@ test.describe('læreplanverket', () => {
     await expect(page.locator('main').getByRole('status')).toContainText(/\d+ deler passer søket/);
     await page.getByRole('link', { name: /3\.2 Undervisning og tilpasset opplæring/ }).click();
     await expect(page).toHaveURL(/overordnet-del\/3\.2$/);
-    await expect(page.getByRole('button', { name: '3.2 Undervisning og tilpasset opplæring' })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: '3.2 Undervisning og tilpasset opplæring', exact: true })).toHaveAttribute('aria-expanded', 'true');
   });
 
   test('fagarket viser ferdigheter og temaer i faget og lenker til overordnet del', async ({ page }) => {
@@ -53,7 +53,7 @@ test.describe('læreplanverket', () => {
     await seksjon.getByRole('button', { name: 'Folkehelse og livsmestring' }).click();
     await seksjon.getByRole('link', { name: 'Folkehelse og livsmestring i overordnet del' }).click();
     await expect(page).toHaveURL(/overordnet-del\/TT1$/);
-    await expect(page.getByRole('button', { name: '2.5.1 Folkehelse og livsmestring' })).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.getByRole('button', { name: '2.5.1 Folkehelse og livsmestring', exact: true })).toHaveAttribute('aria-expanded', 'true');
   });
 
   test('teksten står på nynorsk når nynorsk er valt', async ({ page }) => {

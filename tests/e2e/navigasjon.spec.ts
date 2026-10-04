@@ -7,7 +7,7 @@ test.describe('navigasjon', () => {
     await expect(page.getByRole('searchbox')).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Favoritter' })).toBeVisible();
     await expect(page.getByRole('navigation', { name: 'Hovedmeny' })).toBeVisible();
-    await expect(page).toHaveTitle('Fuskelappen');
+    await expect(page).toHaveTitle('Jukselappen');
   });
 
   test('toppfeltet har søk og innstillinger, appnavnet fører hjem, og nettleserens tilbake virker (avgjørelse 056)', async ({ page }) => {
@@ -18,7 +18,7 @@ test.describe('navigasjon', () => {
     await meny.getByRole('link', { name: 'Innstillinger' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
     await expect(meny.getByRole('link', { name: 'Innstillinger' })).toHaveAttribute('aria-current', 'page');
-    await expect(page).toHaveTitle('Innstillinger – Fuskelappen');
+    await expect(page).toHaveTitle('Innstillinger – Jukselappen');
     await meny.getByRole('link', { name: 'Søk' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Søk' })).toBeVisible();
     // Søkefeltet får fokus, så brukeren kan skrive med en gang.
@@ -41,7 +41,7 @@ test.describe('navigasjon', () => {
     await page.getByRole('link', { name: 'Om appen' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Om appen' })).toBeVisible();
     await page.getByRole('button', { name: 'Tilbake' }).click();
-    await expect(page).toHaveURL(/\/fuskelappen\/(#\/)?$/);
+    await expect(page).toHaveURL(/\/jukselappen\/(#\/)?$/);
     await expect(page.getByRole('searchbox')).toBeVisible();
   });
 
@@ -81,7 +81,7 @@ test.describe('navigasjon', () => {
 
   test('topplinjen viser appnavnet uten logo (eier 02.10.2026)', async ({ page }) => {
     await page.goto('./');
-    await expect(page.locator('.topplinje .appnavn')).toHaveText('Fuskelappen');
+    await expect(page.locator('.topplinje .appnavn')).toHaveText('Jukselappen');
     await expect(page.locator('.topplinje img')).toHaveCount(0);
   });
 

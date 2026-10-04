@@ -57,7 +57,7 @@ test.describe('regelverk', () => {
     await expect(page.locator('main h1')).toHaveText('Hovedtariffavtalen');
     await expect(page.getByText('Bestemmelsene er skrevet med egne ord')).toBeVisible();
     const boks = page.locator('[data-rubrikk="lov-hta-ansettelse"]');
-    await expect(boks.getByRole('button', { name: '§ 2 Ansettelse' })).toHaveAttribute('aria-expanded', 'true');
+    await expect(boks.getByRole('button', { name: '§ 2 Ansettelse', exact: true })).toHaveAttribute('aria-expanded', 'true');
     await expect(boks.getByRole('link', { name: /Kap\. 1 § 2/ })).toHaveAttribute('href', /#page=8$/);
     await boks.getByRole('link', { name: 'arbeidsmiljøloven § 14-3' }).click();
     await expect(page.getByRole('button', { name: /^§ 14-3 / })).toHaveAttribute('aria-expanded', 'true');

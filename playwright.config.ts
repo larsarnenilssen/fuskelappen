@@ -14,7 +14,7 @@ export default defineConfig({
   workers: ci ? 3 : undefined,
   reporter: ci ? [['list'], ['html', { open: 'never' }]] : 'list',
   use: {
-    baseURL: `http://localhost:${port}/fuskelappen/`,
+    baseURL: `http://localhost:${port}/jukselappen/`,
     // Service worker blokkeres i de fleste testene, slik at nettverket kan styres. PWA-testen slår den på.
     serviceWorkers: 'block',
     trace: 'retain-on-failure',
@@ -22,7 +22,7 @@ export default defineConfig({
   },
   webServer: {
     command: `${ferdigBygd ? '' : 'npm run build:e2e && '}npx vite preview --mode e2e --outDir dist-e2e --port ${port} --strictPort`,
-    url: `http://localhost:${port}/fuskelappen/`,
+    url: `http://localhost:${port}/jukselappen/`,
     reuseExistingServer: !ci,
     timeout: 180_000,
   },

@@ -4,9 +4,11 @@ import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
-import { fravaerRute, hentInnhold, ordenRute, underveisSluttRute, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
+import { hentInnhold, UNDERSIDER, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 
 function Inngang({ rute, ikon, tittel, tekst }: { rute: string; ikon: Ikonnavn; tittel: string; tekst: string }) {
   return (
@@ -31,7 +33,7 @@ export default function Oversikt() {
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('vurdering.tittel')}</h1>
+      <Sidetopp tittel={t('vurdering.tittel')} favoritt={oversiktsid('vurdering')} />
       <p class="ingress">
         <Begrepstekst tekst={t('vurdering.innledning')} />
       </p>
@@ -49,7 +51,7 @@ export default function Oversikt() {
             foran={[
               {
                 id: 'underveis',
-                kort: <Inngang rute={underveisSluttRute} ikon="bok" tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />,
+                kort: <Inngang {...UNDERSIDER.underveisSlutt} tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />,
               },
             ]}
           />
@@ -59,13 +61,13 @@ export default function Oversikt() {
         <h2 class="liten-overskrift" id="vu-del-fravaer">
           {t('vurdering.delFravaer')}
         </h2>
-        <Inngang rute={fravaerRute} ikon="klokke" tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
+        <Inngang {...UNDERSIDER.fravaer} tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
       </section>
       <section class="lop-del" aria-labelledby="vu-del-orden">
         <h2 class="liten-overskrift" id="vu-del-orden">
           {t('vurdering.delOrden')}
         </h2>
-        <Inngang rute={ordenRute} ikon="person" tittel={t('vurdering.orden.kort')} tekst={t('vurdering.orden.beskrivelse')} />
+        <Inngang {...UNDERSIDER.orden} tittel={t('vurdering.orden.kort')} tekst={t('vurdering.orden.beskrivelse')} />
       </section>
     </div>
   );

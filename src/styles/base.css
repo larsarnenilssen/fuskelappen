@@ -606,8 +606,21 @@ main {
   margin: 0 0 var(--rom-2);
 }
 
+/* Knappen og den diskré stjernen står i samme rad (avgjørelse 058). Raden er det som blir stående øverst. */
+.skolekort-hode {
+  display: flex;
+  align-items: center;
+  border-radius: var(--radius-m);
+}
+
+.skolekort-hode .favorittknapp-liten {
+  margin-right: var(--rom-2);
+}
+
 .skoleliste .skolekort-knapp {
   display: flex;
+  flex: 1;
+  min-width: 0;
   width: 100%;
   gap: var(--rom-3);
   min-height: 3.25rem;
@@ -621,7 +634,7 @@ main {
   }
 }
 
-.skoleliste > li.apen .skolekort-knapp {
+.skoleliste > li.apen .skolekort-hode {
   position: sticky;
   top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top) + var(--topplinje-luft, 0px));
   z-index: 1;
@@ -670,6 +683,19 @@ main {
 
 .kontorliste .listelenke-tekst {
   flex: 1 1 12rem;
+}
+
+.kontorliste .favorittknapp-liten {
+  align-self: flex-start;
+  margin: calc(-1 * var(--rom-2)) calc(-1 * var(--rom-2)) 0 0;
+}
+
+@media (min-width: 40rem) {
+  .kontorliste .favorittknapp-liten {
+    order: 3;
+    align-self: center;
+    margin: calc(-1 * var(--rom-2)) calc(-1 * var(--rom-2)) calc(-1 * var(--rom-2)) 0;
+  }
 }
 
 /* Vg2 på yrkesfag med opphentingsfag (Opplæringsløp): boks med søk, ikke en lang liste. */
@@ -3440,7 +3466,7 @@ p.fagkort-tittel {
   text-align: left;
 }
 
-/* ---------- Fuskelappen: forside og detaljer (avgjørelse 034 og 056) ---------- */
+/* ---------- Forside og detaljer (avgjørelse 034 og 056) ---------- */
 /* Forsiden: toppfeltet fortsetter ned rundt søket, med runde hjørner nederst. */
 .forside {
   padding-top: 0;
@@ -4828,18 +4854,13 @@ p.fagkort-tittel {
   background: var(--farge-flate-2);
 }
 
-/* «Vis hele veien», «Tilbake til …» og «Til toppen»: lave lenker, så brukeren slipper å rulle langt. */
+/* «Vis hele veien»: lav lenke, så brukeren slipper å rulle langt. Lenken til forrige valg under knappene er tatt bort;
+   veien hit lenker til hvert valg (eier 04.10.2026). */
 .veiviser-vei-vis {
   margin: 0 0 var(--rom-1);
   font-size: var(--str-s);
 }
 
-.veiviser-forrige {
-  margin: var(--rom-3) 0 0;
-  font-size: var(--str-s);
-}
-
-.veiviser-forrige a,
 .paragraflenker .liten-overskrift {
   margin: var(--rom-3) 0 var(--rom-1);
   font-size: var(--str-s);
@@ -6616,4 +6637,76 @@ button.frist-stripe-celle:hover {
 /* Merknaden på et begrep, f.eks. at årsrammene bygger på appens tolkning (eier 04.10.2026). */
 .begrep-merknad {
   margin: var(--rom-3) 0;
+}
+
+/* ---------- Diskré stjerne for elementer uten egen side (avgjørelse 058) ---------- */
+/* Overskriften (en knapp som åpner) og stjernen ved siden av, i paragrafene, bestemmelsene og delene. */
+.med-stjerne {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.med-stjerne > :first-child {
+  flex: 1;
+  min-width: 0;
+}
+
+.favorittknapp-liten {
+  width: 2.25rem;
+  height: 2.25rem;
+  color: var(--farge-tekst-dempet);
+}
+
+.favorittknapp-liten.valgt {
+  color: var(--farge-advarsel);
+}
+
+/* ---------- Filtrene i søket (avgjørelse 058) ---------- */
+/* Like mye luft mellom radene, mellom filtrene og under filtrene, før det første treffet (eier 04.10.2026). */
+.sokefilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-2);
+  margin: var(--rom-2) 0;
+}
+
+.sokefilter-valg {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: 2rem;
+  padding: 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 999px;
+  background: var(--farge-flate);
+  color: var(--farge-tekst);
+  font: inherit;
+  font-size: var(--str-s);
+  cursor: pointer;
+}
+
+.sokefilter-valg[aria-pressed='true'] {
+  border-color: var(--farge-merke);
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+}
+
+.sokefilter-antall {
+  opacity: 0.8;
+}
+
+.sokeresultater-flere {
+  margin: var(--rom-3) 0;
+}
+
+.forside-topp .sokefilter-valg {
+  border-color: var(--farge-topplinje-tekst);
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .sokefilter-valg[aria-pressed='true'] {
+  background: var(--farge-topplinje-tekst);
+  color: var(--farge-topplinje);
 }

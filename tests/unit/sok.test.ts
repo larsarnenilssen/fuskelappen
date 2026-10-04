@@ -85,3 +85,26 @@ describe('fylkesinnhold i søket', () => {
     expect(synligeTreff(sok(indeks, 'årsramme'), null)).toHaveLength(1);
   });
 });
+
+describe('filtrene i søket (avgjørelse 058)', () => {
+  it('teller treffene i hver gruppe, i fast rekkefølge, og filtrerer på gruppe', async () => {
+    const { filtrerTreff, tellGrupper } = await import('../../src/core/sok/grupper.ts');
+    const treff = [{ type: 'skole' as const }, { type: 'fag' as const }, { type: 'kalkulator' as const }, { type: 'tilbud' as const }, { type: 'lov' as const }];
+    expect(tellGrupper(treff)).toEqual([
+      { gruppe: 'sider', antall: 1 },
+      { gruppe: 'regelverk', antall: 1 },
+      { gruppe: 'fag', antall: 1 },
+      { gruppe: 'tilbud', antall: 2 },
+    ]);
+    expect(filtrerTreff(treff, 'tilbud')).toEqual([{ type: 'skole' }, { type: 'tilbud' }]);
+    expect(filtrerTreff(treff, 'alle')).toHaveLength(5);
+  });
+
+  it('alle gruppene har navn på begge målformer', async () => {
+    const { SOKEGRUPPER } = await import('../../src/core/sok/grupper.ts');
+    const { hentTekst } = await import('../../src/core/i18n/tekst.ts');
+    for (const m of ['nb', 'nn'] as const) {
+      for (const g of [...SOKEGRUPPER, 'alle', 'etikett'] as const) expect(hentTekst(m, `sok.filter.${g}`)).not.toMatch(/^sok\./);
+    }
+  });
+});

@@ -36,6 +36,13 @@ export function lastDokument(id: string): Promise<Lovdokument | null> {
 export const dokumentRute = (id: string) => `/lov/${id}`;
 export const paragrafRute = (id: string, nr: string) => `/lov/${id}/${encodeURIComponent(nr)}`;
 
+/** Favoritt-id-en til en paragraf eller bestemmelse, den samme som i søket (avgjørelse 058). */
+export const paragraffavoritt = (dokument: string, nr: string) => `lov:${dokument}:${nr}`;
+
+/** Navnet på en paragraf i søket og favorittene: «§ 11-1 Tilpassa opplæring (opplæringslova)». */
+export const paragraffavorittnavn = (dokument: Pick<Lovdokument, 'korttittel'>, paragraf: Pick<Paragraf, 'visNr' | 'tittel'>) =>
+  `${paragraf.visNr} ${paragraf.tittel} (${dokument.korttittel.toLowerCase()})`;
+
 /** Adressen hos Lovdata til et dokument eller en paragraf. */
 export const lovdataUrl = (refid: string, nr?: string) => `https://lovdata.no/${refid}${nr ? `/§${nr}` : ''}`;
 

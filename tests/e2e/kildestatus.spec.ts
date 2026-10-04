@@ -94,7 +94,7 @@ test.describe('kildestatus', () => {
     await expect(page.getByTestId('neste-kildesjekk')).toContainText(/Neste planlagte sjekk: mandag .* kl\. 0[56]:17\./);
     await expect(page.getByRole('link', { name: 'Kjør kildesjekken på GitHub' })).toHaveAttribute(
       'href',
-      'https://github.com/larsarnenilssen/fuskelappen/actions/workflows/kilder.yml',
+      'https://github.com/larsarnenilssen/jukselappen/actions/workflows/kilder.yml',
     );
   });
 });

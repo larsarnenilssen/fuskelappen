@@ -170,7 +170,7 @@ describe('hentingen', () => {
       verdistatus: null,
       endringer: {},
       indeks: [],
-      repo: 'larsarnenilssen/fuskelappen',
+      repo: 'larsarnenilssen/jukselappen',
       lovdata: { dokumenter: [{ id: 'opplaeringslova', endringer: ['Endret: § 11-1 Tilpassa opplæring'] }] },
     } as unknown as Parameters<typeof lagUkesrapport>[0]);
     expect(JSON.stringify(rapport)).toContain('opplaeringslova: Endret: § 11-1 Tilpassa opplæring');
@@ -201,7 +201,7 @@ describe('hentingen', () => {
       verdistatus: null,
       endringer: {},
       indeks,
-      repo: 'larsarnenilssen/fuskelappen',
+      repo: 'larsarnenilssen/jukselappen',
       lovdata,
     } as unknown as Parameters<typeof lagUkesrapport>[0]);
     expect(rapport.tekst).toContain('- [ ] Jeg har sett på innholdet og tallene');

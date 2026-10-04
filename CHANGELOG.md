@@ -4,6 +4,22 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Stjerne på alle sider:** Oversiktssidene i modulene, dokumentene og avtalene i Regelverk, og løpet, skoleregisteret, opplæringskontorene, utdanningsprogrammene og tilbudene i Opplæringsløp kan nå legges til i favorittene.
+- **Diskré stjerne for det som ikke har egen side:** skolene i skoleregisteret, opplæringskontorene, paragrafene og avtalebestemmelsene i Regelverk og delene av overordnet del har en liten stjerne ved navnet. Favoritten åpner siden med skolen, kontoret, paragrafen eller delen.
+- **Filtre i søket:** Når treffene er fra flere deler av appen, står filtre med antall under søkefeltet: sider, regelverk, fag, begreper og tilbud og skoler. Søket viser 50 treff om gangen, med «Vis flere».
+
+### Endret
+
+- **Nytt ikon:** hvit lapp med brettet hjørne og stor gul hake på mørkeblå bakgrunn, tydelig også i liten størrelse.
+- **Nytt navn:** Appen heter nå **Jukselappen**, med ny adresse: https://larsarnenilssen.github.io/jukselappen/. Legg appen til på hjemskjermen på nytt derfra. Innstillinger, favoritter og lagrede varianter følger med, og eksportfiler fra før kan importeres.
+- **Ikonene til favorittene** følger også ikonene på oversiktssidene i modulene, f.eks. skoleregisteret og opplæringskontorene i Opplæringsløp.
+
+### Fjernet
+
+- **«Tilbake til …» under knappene i veiviserne.** Veien hit lenker allerede til hvert valg.
+
 ## [0.33.0] – 2026-10-04
 
 ### Lagt til

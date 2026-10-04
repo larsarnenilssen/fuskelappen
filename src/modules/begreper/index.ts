@@ -1,6 +1,7 @@
 // Begrepsbanken: felles modul som alle moduler legger sine begreper i.
 // Aktiv fra fase 1, med begrepene om arbeidstid.
 import type { Innholdselement } from '../../core/innhold/skjema.ts';
+import { oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { hentBegreper } from './innhold.ts';
 import { lastMerknader, merknadsoppforinger } from './merknader.ts';
@@ -62,12 +63,13 @@ export const manifest: Modulmanifest = {
     return [...begreper, ...koder, ...kodegrupper];
   },
   async favorittbare() {
-    return (await unikeBegreper()).map((b) => ({
+    const begreper = (await unikeBegreper()).map((b) => ({
       id: `begreper:${b.id}`,
       type: 'begrep' as const,
       tittel: b.tittel,
       rute: `/begreper/${b.id}`,
     }));
+    return [oversiktsfavoritt(manifest), ...begreper];
   },
   async frister() {
     return [];

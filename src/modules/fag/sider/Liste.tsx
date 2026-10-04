@@ -6,6 +6,8 @@ import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import { formaterDato, formaterTall, type Malform } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
 import { type Fagroller, lastFagindeks, lastFagrelasjoner, lastFagroller } from '../data.ts';
@@ -291,7 +293,7 @@ export default function Liste({ sporring }: SideProps) {
 
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('fag.tittel')}</h1>
+      <Sidetopp tittel={t('fag.tittel')} favoritt={oversiktsid('fag')} />
       <p class="dempet"><Begrepstekst tekst={t('fag.innledning')} /></p>
       {feil ? (
         <p role="alert">{t('fag.lasterFeil')}</p>

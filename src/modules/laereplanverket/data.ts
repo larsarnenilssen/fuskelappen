@@ -13,6 +13,9 @@ export type Element = Laereplanverket['ferdigheter'][number];
 /** Adressen til en del i appen: kapittelnummeret når delen har det, ellers id-en fra udir.no. */
 export const delRute = (d: Pick<Del, 'nr' | 'id'>) => `/laereplanverket/overordnet-del/${d.nr ?? d.id}`;
 
+/** Favoritt-id-en til en del, den samme som i søket (avgjørelse 058). */
+export const delfavoritt = (d: Pick<Del, 'nr' | 'id'>) => `laereplanverket:${d.nr ?? d.id}`;
+
 /** Adressen til delen i overordnet del som omtaler en ferdighet eller et tema (GF1, TT2). */
 export const elementRute = (kode: string) => `/laereplanverket/overordnet-del/${kode}`;
 

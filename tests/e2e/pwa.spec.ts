@@ -13,8 +13,8 @@ test.describe('PWA', () => {
       theme_color: string;
       icons: { src: string; purpose?: string }[];
     };
-    expect(manifest.name).toBe('Fuskelappen');
-    expect(manifest.short_name).toBe('Fuskelappen');
+    expect(manifest.name).toBe('Jukselappen');
+    expect(manifest.short_name).toBe('Jukselappen');
     expect(manifest.display).toBe('standalone');
     expect(manifest.theme_color).toMatch(/^#[0-9a-f]{6}$/i);
     expect(manifest.icons.some((i) => i.purpose === 'maskable')).toBe(true);

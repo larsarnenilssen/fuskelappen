@@ -7,6 +7,9 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { fylker, fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
+import { skolefavoritt } from '../favoritter.ts';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
@@ -117,16 +120,20 @@ function Skolekort({ skole, indeks, tilbud, dinSkole, apen, valgt, program }: { 
   const under = [skole.sted, fylkesnavn(skole.fylke), skole.privat ? t('opplaeringslop.skoler.privat') : null, t('opplaeringslop.skoler.antallTilbud', { antall: formaterTall(antall) })].filter(Boolean).join(' · ');
   return (
     <li class={vist ? 'skolekort apen' : 'skolekort'} data-skole={skole.nr ?? undefined}>
-      <button type="button" class="kortknapp skolekort-knapp" aria-expanded={vist} aria-controls={id} onClick={() => settVist(!vist)}>
-        <span class="listelenke-tekst">
-          <span class="listelenke-tittel">{skole.navn}</span>
-          <span class="listelenke-under">
-            {under}
-            {dinSkole && <DinSkole />}
+      <div class="skolekort-hode">
+        <button type="button" class="kortknapp skolekort-knapp" aria-expanded={vist} aria-controls={id} onClick={() => settVist(!vist)}>
+          <span class="listelenke-tekst">
+            <span class="listelenke-tittel">{skole.navn}</span>
+            <span class="listelenke-under">
+              {under}
+              {dinSkole && <DinSkole />}
+            </span>
           </span>
-        </span>
-        <Ikon navn={vist ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
-      </button>
+          <Ikon navn={vist ? 'opp' : 'ned'} class="ikon-liten kortknapp-pil" />
+        </button>
+        {/* Skoler uten skolenummer har ingen adresse å lenke til, og kan ikke favorittmerkes. */}
+        {skole.nr && <FavorittKnapp id={skolefavoritt(skole.nr)} navn={skole.navn} liten />}
+      </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
         {vist && delvis && (
           <p class="skolekort-alle">
@@ -235,7 +242,7 @@ export default function Skoler({ sporring }: SideProps) {
   return (
     <div class="side skoleregister">
       <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
-      <h1 tabIndex={-1}>{t('opplaeringslop.skoler.tittel')}</h1>
+      <Sidetopp tittel={t('opplaeringslop.skoler.tittel')} favoritt="opplaeringslop:skoler" />
       <p class="dempet">
         <Begrepstekst tekst={t('opplaeringslop.skoler.innledning')} />
       </p>

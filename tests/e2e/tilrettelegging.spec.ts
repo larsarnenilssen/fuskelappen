@@ -32,10 +32,10 @@ test.describe('veiviser', () => {
     await expect(page.locator('.veiviser-stegnr')).toHaveText([/^Her ender veien · Vedtak/]);
     await expect(page.getByRole('button', { name: 'Kopier oppsummeringen' })).toBeVisible();
 
-    // Tilbake i nettleseren går én side tilbake, og lenken under knappene går til forrige valg.
+    // Tilbake i nettleseren går én side tilbake, og et valg i veien hit går tilbake til det steget.
     await page.goBack();
     await expect(steg).toHaveText(['Opplyse saken om assistanse eller fysisk tilrettelegging', 'Vedtak om individuell tilrettelegging']);
-    await page.getByRole('link', { name: 'Tilbake til «Elevens behov»' }).click();
+    await page.getByRole('link', { name: 'Elevens behov', exact: true }).filter({ visible: true }).first().click();
     await expect(steg).toHaveText(['Elevens behov']);
   });
 

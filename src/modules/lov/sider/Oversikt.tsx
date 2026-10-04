@@ -4,6 +4,8 @@
 import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
@@ -74,7 +76,7 @@ export default function Oversikt() {
   });
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('lov.tittel')}</h1>
+      <Sidetopp tittel={t('lov.tittel')} favoritt={oversiktsid('lov')} />
       <p class="dempet">
         <Begrepstekst tekst={t('lov.innledning')} />
       </p>

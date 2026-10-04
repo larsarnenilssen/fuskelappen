@@ -25,6 +25,6 @@ describe('kopitekst', () => {
     expect(tekst).toContain('   årstimer ÷ årsramme × 100');
     expect(tekst).toMatch(/- SFS 2213.*, Vedlegg 1 \(Engelsk – Stud\.spes Vg1\): https:\/\//);
     expect(tekst).not.toContain('kontrollert');
-    expect(tekst).toContain('Regnet ut med Fuskelappen 29. september 2026.\nFuskelappen er utviklet privat, og opplysningene kan være uriktige.');
+    expect(tekst).toContain('Regnet ut med Jukselappen 29. september 2026.\nJukselappen er utviklet privat, og opplysningene kan være uriktige.');
   });
 });

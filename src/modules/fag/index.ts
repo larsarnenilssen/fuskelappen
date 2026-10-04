@@ -1,5 +1,6 @@
 // Fag og læreplaner fra Grep: søk og filter, fagside med kompetansemål og vurdering, og favoritter (fase 2).
 // Dataene hentes hver uke med npm run hent:grep (avgjørelse 022).
+import { oversiktsfavoritt } from '../favoritter.ts';
 import type { Modulmanifest } from '../typer.ts';
 import { lastFagindeks, lastFagroller } from './data.ts';
 import { fagklasser } from './klasser.ts';
@@ -31,14 +32,19 @@ export const manifest: Modulmanifest = {
   },
   async favorittbare(ider) {
     // Fagindeksen lastes bare når brukeren har fag blant favorittene.
-    const onsket = ider?.filter((id) => id.startsWith('fag:'));
-    if (onsket && onsket.length === 0) return [];
+    const oversikt = oversiktsfavoritt(manifest);
+    const onsket = ider?.filter((id) => id.startsWith('fag:') && id !== oversikt.id);
+    const medOversikt = !ider || ider.includes(oversikt.id) ? [oversikt] : [];
+    if (onsket && onsket.length === 0) return medOversikt;
     const indeks = await lastFagindeks();
     const koder = onsket ? onsket.map((id) => id.slice(4)) : Object.keys(indeks.fag);
-    return koder.flatMap((kode) => {
-      const f = indeks.fag[kode];
-      return f ? [{ id: `fag:${kode}`, type: 'fag' as const, tittel: { nb: `${f.navn.nb} (${kode})`, nn: `${f.navn.nn} (${kode})` }, rute: `/fag/${kode}` }] : [];
-    });
+    return [
+      ...medOversikt,
+      ...koder.flatMap((kode) => {
+        const f = indeks.fag[kode];
+        return f ? [{ id: `fag:${kode}`, type: 'fag' as const, tittel: { nb: `${f.navn.nb} (${kode})`, nn: `${f.navn.nn} (${kode})` }, rute: `/fag/${kode}` }] : [];
+      }),
+    ];
   },
   async frister() {
     return [];

@@ -1,5 +1,6 @@
 // Laster veiviseren, stegene, fristene og reglene for poengberegningen fra content/inntak/ ved behov.
 import type { Frist, Innholdselement, Stegelement, Veiviserelement } from '../../core/innhold/skjema.ts';
+import type { Underside } from '../typer.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/inntak/*.yaml', { import: 'default' });
 
@@ -32,6 +33,12 @@ export function hentInnhold(): Promise<Inntaksinnhold> {
 export const veiviserRute = (id: string) => `/inntak/${id}`;
 export const fristerRute = '/inntak/frister';
 export const poengRute = '/inntak/poeng';
+
+/** Kortene med ikon på oversikten. Oversikten og favorittene henter ikonet herfra (`undersider`, avgjørelse 058). */
+export const UNDERSIDER = {
+  frister: { rute: fristerRute, ikon: 'klokke' },
+  poeng: { rute: poengRute, ikon: 'kalkulator' },
+} as const satisfies Record<string, Underside>;
 
 /** Har appen lokalt innhold om inntak for fylket? */
 export function harLokalt(innhold: Inntaksinnhold, fylke: string | null): boolean {

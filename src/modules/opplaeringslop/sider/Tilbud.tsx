@@ -11,6 +11,7 @@ import { fylkesnavn } from '../../../app/Stedmerknad.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { finnKobling } from '../../arbeidstid/beregning/index.ts';
@@ -747,7 +748,7 @@ export default function Tilbud({ parametre, sporring }: SideProps) {
           { tekst: indeks.utdanningsprogram[program]?.[malform] ?? program, href: `#/opplaeringslop/${program}` },
         ]}
       />
-      <h1 tabIndex={-1}>{po.navn[malform]}</h1>
+      <Sidetopp tittel={po.navn[malform]} favoritt={`opplaeringslop:${k}`} favorittnavn={`${po.navn[malform]} (${k})`} />
       <ul class="merker fagark-merker" aria-label={t('opplaeringslop.tittel')}>
         <li class="merke merke-kode">{k}</li>
         <li class="merke">{visningstrinnTekst(t, kode, po.trinn)}</li>

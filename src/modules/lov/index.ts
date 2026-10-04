@@ -3,9 +3,10 @@
 // paragraf og bestemmelse har egen adresse, så begreper og andre moduler kan lenke rett til den. Dokumentene og
 // utvalget står i content/lovverk.yaml.
 import utvalgFil from '../../../content/lovverk.yaml';
-import type { Modulmanifest } from '../typer.ts';
+import { bareSpurte, oversiktsfavoritt } from '../favoritter.ts';
+import type { Favorittbar, Modulmanifest } from '../typer.ts';
 import { avtaler, lastBestemmelser } from './avtaler.ts';
-import { dokumentRute, lastDokument, lastOversikt, paragrafRute } from './data.ts';
+import { dokumentRute, lastDokument, lastOversikt, paragraffavoritt, paragraffavorittnavn, paragrafRute } from './data.ts';
 import { alleParagrafer } from './typer.ts';
 
 /** Kildene følger utvalget i content/lovverk.yaml, så et nytt dokument ikke krever kodeendring. */
@@ -24,7 +25,7 @@ async function avtaleoppforinger() {
           if (!e) return [];
           return [
             {
-              id: `lov:${a.id}:${id}`,
+              id: paragraffavoritt(a.id, id),
               type: 'lov' as const,
               tittel: { nb: `${e.tittel.nb} (${a.korttittel.nb})`, nn: `${e.tittel.nn} (${a.korttittel.nn})` },
               tekst: e.tekst,
@@ -68,9 +69,9 @@ export const manifest: Modulmanifest = {
         modul: 'lov',
       },
       ...alleParagrafer(d.seksjoner).map(({ paragraf: p }) => {
-        const tittel = `${p.visNr} ${p.tittel} (${d.korttittel.toLowerCase()})`;
+        const tittel = paragraffavorittnavn(d, p);
         return {
-          id: `lov:${d.id}:${p.nr}`,
+          id: paragraffavoritt(d.id, p.nr),
           type: 'lov' as const,
           tittel: { nb: tittel, nn: tittel },
           stikkord: [p.nr, p.visNr, `§${p.nr}`, d.korttittel],
@@ -80,8 +81,31 @@ export const manifest: Modulmanifest = {
       }),
     ]).concat(await avtaleoppforinger());
   },
-  async favorittbare() {
-    return [];
+  async favorittbare(ider) {
+    // Oversikten, dokumentene og avtalene, og paragrafene og bestemmelsene med den diskré stjernen (avgjørelse 058).
+    // Bare dokumentene brukeren har favoritter i, lastes.
+    const { dokumenter } = await lastOversikt();
+    const trengs = (dok: string) => !ider || ider.some((id) => id === `lov:${dok}` || id.startsWith(`lov:${dok}:`));
+    const lastet = (await Promise.all(dokumenter.filter((d) => trengs(d.id)).map((d) => lastDokument(d.id)))).filter((d) => d !== null);
+    const lov: Favorittbar[] = lastet.flatMap((d) => [
+      { id: `lov:${d.id}`, type: 'side' as const, tittel: { nb: d.korttittel, nn: d.korttittel }, rute: dokumentRute(d.id) },
+      ...alleParagrafer(d.seksjoner).map(({ paragraf: p }) => {
+        const tittel = paragraffavorittnavn(d, p);
+        return { id: paragraffavoritt(d.id, p.nr), type: 'element' as const, tittel: { nb: tittel, nn: tittel }, rute: paragrafRute(d.id, p.nr) };
+      }),
+    ]);
+    const bestemmelser = avtaler.some((a) => trengs(a.id)) ? await lastBestemmelser() : new Map();
+    const avtalefavoritter: Favorittbar[] = avtaler.filter((a) => trengs(a.id)).flatMap((a) => [
+      { id: `lov:${a.id}`, type: 'side' as const, tittel: a.korttittel, rute: dokumentRute(a.id) },
+      ...a.kapitler.flatMap((k) =>
+        k.elementer.flatMap((id) => {
+          const e = bestemmelser.get(id);
+          if (!e) return [];
+          return [{ id: paragraffavoritt(a.id, id), type: 'element' as const, tittel: { nb: `${e.tittel.nb} (${a.korttittel.nb})`, nn: `${e.tittel.nn} (${a.korttittel.nn})` }, rute: paragrafRute(a.id, id) }];
+        }),
+      ),
+    ]);
+    return bareSpurte([oversiktsfavoritt(manifest), ...lov, ...avtalefavoritter], ider);
   },
   async frister() {
     return [];

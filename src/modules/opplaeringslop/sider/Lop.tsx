@@ -5,6 +5,7 @@
 import { useTekst } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Fagindeks } from '../../fag/skjema.ts';
@@ -54,7 +55,7 @@ export default function Lop() {
   return (
     <div class="side lop-oversikt">
       <Brodsmuler ledd={[{ tekst: t('opplaeringslop.tittel'), href: '#/opplaeringslop' }]} />
-      <h1 tabIndex={-1}>{t('opplaeringslop.lop.tittel')}</h1>
+      <Sidetopp tittel={t('opplaeringslop.lop.tittel')} favoritt="opplaeringslop:lop" />
       <p class="ingress">
         <Begrepstekst tekst={t('opplaeringslop.lop.innledning')} />
       </p>

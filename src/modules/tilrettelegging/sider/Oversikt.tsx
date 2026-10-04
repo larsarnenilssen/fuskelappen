@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
+import { Sidetopp } from '../../../components/Sidetopp.tsx';
+import { oversiktsid } from '../../favoritter.ts';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
@@ -55,7 +57,7 @@ export default function Oversikt() {
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('tilrettelegging.tittel')}</h1>
+      <Sidetopp tittel={t('tilrettelegging.tittel')} favoritt={oversiktsid('tilrettelegging')} />
       <p class="ingress"><Begrepstekst tekst={t('tilrettelegging.innledning')} /></p>
       <Figur />
       {innhold === null ? (
