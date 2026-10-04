@@ -36,7 +36,7 @@ export const nn: Tekster = {
     moduler: 'Innhald',
     seAlle: 'Sjå alle i {kategori}',
     ingenModuler: 'Innhaldet er under arbeid. Nye delar kjem etter kvart.',
-    stedMerknad: 'Du ser nasjonalt innhald. Lokale reglar i fylket eller på skulen kan også gjelde.',
+    stedKort: 'Nasjonalt innhald',
     stedValgt: 'Viser også innhald for {sted}.',
     velgSted: 'Vel fylke og skule',
     forbehold: '{app} er utvikla privat, og opplysningane i appen kan vere uriktige.',
@@ -47,6 +47,8 @@ export const nn: Tekster = {
     visFavoritterKort: 'Favorittar',
     endreRekkefolgeI: 'Endre rekkjefølgja i {gruppe}',
     endreFerdig: 'Ferdig',
+    enFavoritt: '1 favoritt',
+    antallFavoritter: '{antall} favorittar',
     tilpass: {
       knapp: 'Tilpass',
       ferdig: 'Ferdig',

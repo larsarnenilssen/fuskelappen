@@ -111,4 +111,6 @@
 
   /* Bevegelse */
   --varighet: 160ms;
+  /* Åpning og lukking av gruppene på forsiden (ANIMASJON_MS i Forside.tsx). */
+  --varighet-lang: 220ms;
 }

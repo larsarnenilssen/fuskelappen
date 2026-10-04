@@ -15,11 +15,12 @@ export function Stedmerknad() {
   const { innstillinger } = useTilstand();
   const fylke = fylkesnavn(innstillinger.fylke);
   if (!fylke) {
+    // Én kort linje, som når et sted er valgt (eier 04.10.2026). Forklaringen står under Innstillinger.
     return (
-      <p class="merknad merknad-ikon">
+      <p class="sted-valgt">
         <Ikon navn="info" class="ikon-liten" />
         <span>
-          {t('forside.stedMerknad')} <a href="#/innstillinger">{t('forside.velgSted')}</a>
+          {t('forside.stedKort')} · <a href="#/innstillinger">{t('forside.velgSted')}</a>
         </span>
       </p>
     );

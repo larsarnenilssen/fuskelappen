@@ -3390,6 +3390,9 @@ p.fagkort-tittel {
 
 .forside-topp {
   margin: 0 calc(-1 * (var(--rom-4) + env(safe-area-inset-right))) var(--rom-4) calc(-1 * (var(--rom-4) + env(safe-area-inset-left)));
+  /* Synlig bare i mørk visning, der feltet ellers glir i ett med bakgrunnen (eier 04.10.2026). */
+  border: var(--strek) solid var(--farge-forside-topp-kant);
+  border-top: 0;
   /* Litt luft over søket, men lavt, så forsiden ikke bruker mer høyde enn nødvendig (eier 02.10.2026). */
   padding: var(--rom-2) calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-3) calc(var(--rom-4) + env(safe-area-inset-left));
   border-radius: 0 0 var(--radius-l) var(--radius-l);
@@ -3530,6 +3533,72 @@ p.fagkort-tittel {
   border-color: var(--farge-topplinje-tekst);
   background: transparent;
   color: var(--farge-topplinje-tekst);
+}
+
+/* Lukket gruppe: overskriften viser hva som er inni, på en linje under tittelen (eier 04.10.2026). */
+.gruppeknapp-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.gruppe-sammendrag {
+  overflow: hidden;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Myk åpning og lukking: høyden går mellom 0 og innholdets høyde (grid-raden 0fr–1fr). Uten animasjon ved redusert
+   bevegelse, der Forside.tsx heller ikke venter. */
+.gruppe-innhold {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.gruppe-innhold[hidden] {
+  display: none;
+}
+
+.gruppe-innhold.utvidet {
+  grid-template-rows: 1fr;
+}
+
+.gruppe-innhold.animerer {
+  transition: grid-template-rows var(--varighet-lang) ease;
+}
+
+.gruppe-innhold-indre {
+  min-height: 0;
+}
+
+.gruppe-innhold.animerer > .gruppe-innhold-indre,
+.gruppe-innhold:not(.utvidet) > .gruppe-innhold-indre {
+  overflow: hidden;
+}
+
+/* To spalter på stor skjerm, med bredere side for forsiden (eier 04.10.2026). */
+@media (min-width: 64rem) {
+  main:has(> .forside),
+  .skall:has(main > .forside) .topplinje-innhold {
+    max-width: 72rem;
+  }
+
+  .forsidegrupper {
+    columns: 2;
+    column-gap: var(--rom-6);
+  }
+
+  /* Luften står under hver gruppe, så spaltene starter likt øverst. */
+  .forsidegruppe {
+    padding-bottom: var(--rom-4);
+    break-inside: avoid;
+  }
+
+  .forsidegruppe h2 {
+    margin-top: 0;
+  }
 }
 
 /* Blyanten for favorittene står i overskriften, ved siden av pilen, oppå knappen som lukker gruppen. */

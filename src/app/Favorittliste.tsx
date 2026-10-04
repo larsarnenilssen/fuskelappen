@@ -44,6 +44,7 @@ export function Favorittliste({ ider, merket = false }: { ider: readonly string[
                 <span class="listelenke-tekst">
                   <span class="listelenke-tittel">{f.tittel[malform]}</span>
                 </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
               </a>
             ) : (
               <span class="listelenke utilgjengelig">

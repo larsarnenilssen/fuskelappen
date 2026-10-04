@@ -7,6 +7,7 @@ import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
 import { Sorterbar } from '../../components/Sorterbar.tsx';
+import { visTekst } from '../../core/i18n/tekst.ts';
 import { flytt, flyttInnenfor, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
@@ -19,13 +20,18 @@ import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupp
 
 const FAVORITTER = 'favoritter';
 
+/** Hvor lenge åpning og lukking tar. Samme som --varighet-lang i tokens.css. */
+const ANIMASJON_MS = 220;
+
 /**
- * En gruppe med overskrift som åpner og lukker den. `verktoy` (blyanten for favorittene) står i overskriften ved
- * siden av pilen, som egen knapp oppå raden, så resten av raden fortsatt åpner og lukker gruppen (eier 04.10.2026).
+ * En gruppe med overskrift som åpner og lukker den, med en myk animasjon (ikke ved redusert bevegelse). Lukket viser
+ * overskriften hva som er inni (`sammendrag`). `verktoy` (blyanten for favorittene) står i overskriften ved siden av
+ * pilen, som egen knapp oppå raden, så resten av raden fortsatt åpner og lukker gruppen (eier 04.10.2026).
  */
 function Gruppe({
   id,
   tittel,
+  sammendrag,
   kategori,
   lukket,
   verktoy,
@@ -33,23 +39,54 @@ function Gruppe({
 }: {
   id: string;
   tittel: string;
+  sammendrag: string;
   kategori?: string;
   lukket: boolean;
   verktoy?: ComponentChildren;
   children: ComponentChildren;
 }) {
   const innhold = `forside-gruppe-${id}`;
+  // Innholdet er i DOM-en (vis) til lukkingen er ferdig animert, og utvidet når det skal ha full høyde.
+  const [vis, settVis] = useState(!lukket);
+  const [utvidet, settUtvidet] = useState(!lukket);
+  const [animerer, settAnimerer] = useState(false);
+  const forste = useRef(true);
+  useEffect(() => {
+    if (forste.current) {
+      forste.current = false;
+      return;
+    }
+    const rolig = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    settAnimerer(!rolig);
+    let ramme = 0;
+    if (lukket) settUtvidet(false);
+    else {
+      settVis(true);
+      ramme = requestAnimationFrame(() => requestAnimationFrame(() => settUtvidet(true)));
+    }
+    const ferdig = setTimeout(() => {
+      if (lukket) settVis(false);
+      settAnimerer(false);
+    }, rolig ? 0 : ANIMASJON_MS);
+    return () => {
+      cancelAnimationFrame(ramme);
+      clearTimeout(ferdig);
+    };
+  }, [lukket]);
   return (
     <section class="kategori forsidegruppe" data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
       <h2 id={`${innhold}-tittel`} class={verktoy && !lukket ? 'med-verktoy' : undefined}>
         <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={() => vekslGruppe(id)}>
-          <span>{tittel}</span>
+          <span class="gruppeknapp-tekst">
+            <span>{tittel}</span>
+            {lukket && <span class="gruppe-sammendrag">{sammendrag}</span>}
+          </span>
           <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
         </button>
         {!lukket && verktoy}
       </h2>
-      <div id={innhold} hidden={lukket}>
-        {children}
+      <div id={innhold} class={`gruppe-innhold${utvidet ? ' utvidet' : ''}${animerer ? ' animerer' : ''}`} hidden={!vis}>
+        <div class="gruppe-innhold-indre">{children}</div>
       </div>
     </section>
   );
@@ -135,7 +172,7 @@ function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) =
 }
 
 export default function Forside() {
-  const { t } = useTekst();
+  const { t, malform } = useTekst();
   const { favoritter, forside } = useTilstand();
   const [sporring, settSporring] = useState('');
   const [tilpass, settTilpass] = useState(false);
@@ -163,6 +200,7 @@ export default function Forside() {
   };
   const bare = forside.bareFavoritter;
 
+  const antallFavoritter = (n: number) => (n === 1 ? t('forside.enFavoritt') : t('forside.antallFavoritter', { antall: String(n) }));
   // Blyanten trengs bare når det er minst to favoritter å sortere.
   const endreknapp = (id: string, antall: number) =>
     antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
@@ -172,7 +210,7 @@ export default function Forside() {
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
-        <Gruppe key={id} id={id} tittel={navn(id)} lukket={lukket} verktoy={endreknapp(id, favoritter.length)}>
+        <Gruppe key={id} id={id} tittel={navn(id)} sammendrag={antallFavoritter(favoritter.length)} lukket={lukket} verktoy={endreknapp(id, favoritter.length)}>
           {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} merket endre={endrer === id} />}
         </Gruppe>
       );
@@ -183,14 +221,14 @@ export default function Forside() {
       const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id);
       if (ider.length === 0) return null;
       return (
-        <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>
+        <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} sammendrag={antallFavoritter(ider.length)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>
           <Favoritter ider={ider} merket={false} endre={endrer === id} />
         </Gruppe>
       );
     }
     const vises = k.moduler.slice(0, MAKS_PER_KATEGORI_PAA_FORSIDEN);
     return (
-      <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket}>
+      <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} sammendrag={k.moduler.map((m) => visTekst(m.navn, malform)).join(', ')} lukket={lukket}>
         <Innganger moduler={vises} />
         {k.moduler.length > vises.length && (
           <p>
@@ -223,7 +261,7 @@ export default function Forside() {
               onEndring={(v) => settBareFavoritter(v === 'favoritter')}
             />
             <button type="button" class="knapp knapp-sekundaer knapp-liten" aria-pressed={tilpass} onClick={() => settTilpass(!tilpass)}>
-              <Ikon navn={tilpass ? 'hake' : 'dra'} />
+              <Ikon navn={tilpass ? 'hake' : 'kategori'} />
               {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
             </button>
           </div>
@@ -240,7 +278,8 @@ export default function Forside() {
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {grupper.map(gruppe)}
+              {/* To spalter på stor skjerm (eier 04.10.2026). Gruppene står etter hverandre nedover i hver spalte. */}
+              <div class="forsidegrupper">{grupper.map(gruppe)}</div>
             </>
           )}
 

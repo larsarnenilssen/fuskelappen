@@ -36,7 +36,7 @@ export const nb = {
     moduler: 'Innhold',
     seAlle: 'Se alle i {kategori}',
     ingenModuler: 'Innholdet er under arbeid. Nye deler kommer etter hvert.',
-    stedMerknad: 'Du ser nasjonalt innhold. Lokale regler i fylket eller på skolen kan også gjelde.',
+    stedKort: 'Nasjonalt innhold',
     stedValgt: 'Viser også innhold for {sted}.',
     velgSted: 'Velg fylke og skole',
     forbehold: '{app} er utviklet privat, og opplysningene i appen kan være uriktige.',
@@ -47,6 +47,8 @@ export const nb = {
     visFavoritterKort: 'Favoritter',
     endreRekkefolgeI: 'Endre rekkefølgen i {gruppe}',
     endreFerdig: 'Ferdig',
+    enFavoritt: '1 favoritt',
+    antallFavoritter: '{antall} favoritter',
     tilpass: {
       knapp: 'Tilpass',
       ferdig: 'Ferdig',
