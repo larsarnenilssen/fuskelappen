@@ -675,6 +675,109 @@ kilder:
       Udirs side om standpunktvurdering under «Standpunkt- og underveisvurdering». Brukt på siden om underveis- og
       sluttvurdering (fase 6).
 
+  - id: udir-merknader-ofo-kap10
+    navn: Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar
+    kortnavn: Udirs merknader til opplæringsforskrifta
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs merknader til hver paragraf i kapittel 10, én side per paragraf. Kildesjekken leser oversiktssiden for
+      kapitlet. Stegene i veiviseren «Klage på karakter» viser til merknaden til hver paragraf. Lest 04.10.2026.
+
+  - id: udir-klage-standpunkt
+    navn: Behandling av klager på standpunktkarakterer i fag
+    kortnavn: Udirs veiledning om klager på standpunktkarakterer
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Veiledningen til statsforvalterne om klager på standpunktkarakterer og IV (sist endret 01.12.2025). Hvert punkt
+      har egen adresse. Kildesjekken leser forsiden. Brukt i veiviseren «Klage på karakter». Lest 04.10.2026.
+
+  - id: udir-sarskilt-tilrettelegging-eksamen
+    navn: Generelt om særskilt tilrettelegging av eksamen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Hvem som kan få særskilt tilrettelegging av eksamen, og eksempler på tiltak. Brukt på siden «Eksamen» og i
+      begrepet særskilt tilrettelegging av eksamen.
+
+  - id: udir-administrere-eksamen
+    navn: Administrere eksamen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side for skolene om eksamen: påmelding og frister, trekk, sensur og klage. Datoene herfra går foran
+      fylkenes når kildene er uenige (eier 04.10.2026). Hentes av npm run hent:eksamen.
+
+  - id: udir-fag-og-svenneprover
+    navn: Fag- og svenneprøver
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/fag-og-svenneprover/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side om fag- og svenneprøver, for kandidatene og for prøvenemndene. Siden om prøvene i Vurdering lenker hit
+      (eier 04.10.2026).
+
+  - id: eksamensdatoer
+    navn: Eksamensdatoer fra udir.no og fylkeskommunene
+    utgiver: Utdanningsdirektoratet og fylkeskommunene
+    url: https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0 (udir.no). Fylkenes sider er lest for datoene, som er fakta. Teksten kopieres ikke.
+    sjekkmetode: eksamen
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet i januar og august av
+      npm run hent:eksamen fra sidene i scripts/eksamen/kilder.ts (avgjørelse 059). Udirs dato går foran. Ellers må
+      minst to fylker ha samme dato (eier 04.10.2026). eksamensplan.udir.no brukes ikke, fordi robots.txt stenger.
+
   - id: udir-regbok-karakterer
     navn: Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk
     utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe
@@ -777,20 +880,166 @@ kilder:
       (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 7 bruker vestland-forskrift-skulereglar.
 
   - id: vlfk-sider
-    navn: vlfk.no – sider om inntak, tilrettelegging og språkopplæring
+    navn: vestlandfylke.no – søknad og inntak
     utgiver: Vestland fylkeskommune
-    url: https://www.vlfk.no/
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/
     type: side
     niva: fylke
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: false
+    aktiv: true
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4, 5]
-    merknad: Hvilke sider som sjekkes, bestemmes når kilden aktiveres.
+    merknad: >-
+      Inntak i Vestland: klage og klagenemnd. Adressen er flyttet fra vlfk.no til vestlandfylke.no (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-inntaksreglar
+    navn: vestlandfylke.no – inntaksreglar og opplæringsrett
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/inntaksregllar-og-opplaringsrett/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Inntaksområdepoeng, som venter på sidene (fase 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-minoritetsspraklege
+    navn: vestlandfylke.no – minoritetsspråklege
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Søknad, kartlegging og frist i Vestland for særskild språkopplæring (fase 4, Språk steg 2–3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-innforingskurs
+    navn: vestlandfylke.no – innføringskurs
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/innforingskurs/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Innføringskurs i Vestland (fase 4, Språk steg 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-tilrettelegging
+    navn: vestlandfylke.no – tilrettelegging ved læringsutfordringar
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/tilrettelegging-ved-laringsutfordringar/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Rettleiingstenesta og midlertidig vedtak ved inntak (fase 4, Tilrettelegging steg 0b, 5b og 6). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-eksamen
+    navn: vestlandfylke.no – eksamen og standpunkt
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Eksamen for elever i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-klage-standpunkt
+    navn: vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/klage-pa-standpunktkarakter-og-karakter-i-orden-og-atferd/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Hurtigklage og klage på standpunkt i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-privatist
+    navn: vestlandfylke.no – tid og stad for privatisteksamen
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/privatist/tid-og-stad-for-eksamen/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Når datoene for muntleg eksamen for privatistar kjem (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-fagproven
+    navn: vestlandfylke.no – fagprøven
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/laerling/fagproven/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Fag- og sveineprøva i Vestland, klagenemnda for fagprøver (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
   - id: ks-fou-sfs2213
     navn: Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)

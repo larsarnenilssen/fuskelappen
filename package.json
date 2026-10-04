@@ -58,6 +58,7 @@
     "hent:vigo": "tsx scripts/hent-vigo.ts",
     "hent:utdanning": "tsx scripts/hent-utdanning.ts",
     "hent:ndla": "tsx scripts/hent-ndla.ts",
-    "hent:nor": "tsx scripts/hent-nor.ts"
+    "hent:nor": "tsx scripts/hent-nor.ts",
+    "hent:eksamen": "tsx scripts/hent-eksamen.ts"
   }
 }

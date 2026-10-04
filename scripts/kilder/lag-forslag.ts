@@ -71,7 +71,7 @@ async function lagPr(gren: string, tittel: string, endre: () => void, beskrivels
   try {
     endre();
     const feilet = feiledeTester();
-    git('add', '-A', 'rules', 'data/grep', 'data/udir', 'data/vigo', 'data/utdanning', 'data/ndla', 'docs/KOBLING.md', 'docs/TILBUDSSTRUKTUR.md', 'data/status/kobling.json', 'data/status/lopsamsvar.json');
+    git('add', '-A', 'rules', 'data/grep', 'data/udir', 'data/vigo', 'data/utdanning', 'data/ndla', 'data/eksamen', 'docs/KOBLING.md', 'docs/TILBUDSSTRUKTUR.md', 'data/status/kobling.json', 'data/status/lopsamsvar.json');
     git('commit', '-m', tittel);
     git('push', '--force', 'origin', gren);
     const eier = repo?.split('/')[0] ?? '';

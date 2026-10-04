@@ -54,8 +54,8 @@ jobs:
         id: grep
         continue-on-error: true
         # Fag- og timefordelingen (Udir-1), VIGO Kodeverksbase, løpene fra utdanning.no og lov- og forskriftstekst fra
-        # Lovdata, fagene på NDLA og opplæringskontorene i NOR hentes selv om Grep feiler, og omvendt (avgjørelse 024, 026,
-        # 039, 052 og 053).
+        # Lovdata, fagene på NDLA, opplæringskontorene i NOR og eksamensdatoene (hvert halvår) hentes selv om Grep feiler,
+        # og omvendt (avgjørelse 024, 026, 039, 052, 053 og 059).
         run: |
           status=0
           npm run hent:grep || status=1
@@ -66,6 +66,7 @@ jobs:
           npm run hent:utdanning || status=1
           npm run hent:ndla || status=1
           npm run hent:nor || status=1
+          npm run hent:eksamen || status=1
           exit $status
       # Rapporten over koblingen fra fagkode til årsramme (avgjørelse 023) og oversikten over tilbudsstrukturen
       # (avgjørelse 024) lages på nytt med de nye dataene, så nye fag og endrede tilbud står der før testene kjøres.
@@ -73,7 +74,7 @@ jobs:
       - name: Test de nye dataene fra Grep, Udir-1, VIGO, utdanning.no, NDLA og NOR
         run: |
           mkdir -p .generert
-          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla)" ]; then
+          if [ -z "$(git status --porcelain -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen)" ]; then
             echo uendret > .generert/grep-tester.txt
             npm run kobling:rapport
             npm run tilbud:rapport
@@ -87,7 +88,8 @@ jobs:
             mkdir -p .generert/vigo-ny && cp -r data/vigo/. .generert/vigo-ny/
             mkdir -p .generert/utdanning-ny && cp -r data/utdanning/. .generert/utdanning-ny/
             mkdir -p .generert/ndla-ny && cp -r data/ndla/. .generert/ndla-ny/
-            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla
+            mkdir -p .generert/eksamen-ny && cp -r data/eksamen/. .generert/eksamen-ny/
+            git checkout -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen docs/KOBLING.md docs/TILBUDSSTRUKTUR.md data/status/kobling.json data/status/lopsamsvar.json && git clean -fdq -- data/grep data/udir data/vigo data/utdanning data/ndla data/eksamen
             npm run kobling:rapport
             npm run tilbud:rapport
           fi
@@ -100,6 +102,16 @@ jobs:
           else
             npm run kilder:sjekk
           fi
+      # Teksten fra kildene, så sider som ikke kan leses fra utviklingsmiljøet (f.eks. vestlandfylke.no), kan leses fra
+      # kjøringen (fase 6, pakke 3). Ligger i 14 dager.
+      - name: Last opp kildetekstene
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kildetekster
+          path: .generert/kildetekster/
+          retention-days: 14
+          if-no-files-found: ignore
       - name: Kontrolloversikt
         run: npm run kontroll:rapport
       - name: Sammendrag
@@ -108,7 +120,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
+          git add data/status/kildestatus.json data/status/verdistatus.json data/status/kildetekst.json data/status/kobling.json data/status/lopsamsvar.json data/skoler/vgs.json data/grep data/udir data/vigo data/utdanning data/ndla data/lovdata data/eksamen docs/KONTROLL.md docs/KOBLING.md docs/TILBUDSSTRUKTUR.md
           git commit -m "Kildestatus $(date -u +%F)" || echo "Ingen endring å lagre."
           git push
       # Endringsforslag (avgjørelse 020): PR med nye tall og sitater, og med nye Grep-data når testene feiler.

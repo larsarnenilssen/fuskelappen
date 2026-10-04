@@ -6710,3 +6710,114 @@ button.frist-stripe-celle:hover {
   background: var(--farge-topplinje-tekst);
   color: var(--farge-topplinje);
 }
+
+/*
+ * Tabeller fra innholdet (components/Tabell.tsx, fase 6, pakke 3). Rutenettet viser radene mot kolonnene med et stort
+ * tall i hver rute. Kortene viser hver rad for seg, i én spalte på mobil og side om side på stor skjerm.
+ */
+.tabell-rutenett {
+  width: 100%;
+  margin: 0 0 var(--rom-3);
+  border-collapse: separate;
+  border-spacing: var(--rom-1);
+  table-layout: fixed;
+  font-size: var(--str-s);
+}
+
+.tabell-rutenett thead th {
+  padding: 0 var(--rom-1);
+  hyphens: manual;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-align: left;
+}
+
+.tabell-rutenett thead td,
+.tabell-rutenett tbody th {
+  width: 4.5rem;
+  background: none;
+}
+
+.tabell-rutenett tbody th {
+  padding: var(--rom-2) var(--rom-1);
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabell-rutenett td {
+  padding: var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.tabell-tall {
+  display: block;
+  color: var(--farge-merke);
+  font-size: var(--str-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tabell-tekst {
+  display: block;
+  margin-top: var(--rom-1);
+  line-height: 1.35;
+}
+
+.tabell-kort {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .tabell-kort {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.tabell-kort-rad {
+  padding: var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.tabell-kort-tittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-m);
+}
+
+.tabell-kort dl {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.tabell-kort dt {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.tabell-kort dd {
+  margin: 0 0 var(--rom-2);
+}
+
+.tabell-kort dl > div:last-child dd {
+  margin-bottom: 0;
+}
+
+/* Kortene under «Videre» på sidene i Vurdering (fase 6, pakke 3). */
+.vu-videre {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}

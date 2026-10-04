@@ -191,6 +191,33 @@ function sjekkUtdanning(kilde: Kilde): Sjekkresultat {
   ]);
 }
 
+/**
+ * Eksamensdatoene fra udir.no og fylkenes sider (npm run hent:eksamen, avgjørelse 059), hentet i januar og august.
+ * Endrede datoer tas inn automatisk. Er fylkene uenige uten at Udir har datoen, eller finner ikke et mønster datoen
+ * lenger (siden kan være endret), blir det en kontrollsak. Datoer bare ett fylke har, står til orientering.
+ */
+function sjekkEksamen(): Sjekkresultat {
+  const sti = join(generert, 'eksamen-endringer.json');
+  if (!existsSync(sti)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen av eksamensdatoene kjørte ikke. Se loggen for steget «Hent Grep, fag- og timefordeling, overordnet del og lovtekst».' };
+  const e = JSON.parse(readFileSync(sti, 'utf8')) as { hoppetOver?: boolean; forste: boolean; endringer: string[]; uenige: string[]; enKilde: string[]; mangler: string[] };
+  const fil = join(rot, 'data/eksamen/datoer.json');
+  const fingeravtrykk = existsSync(fil) ? lagFingeravtrykk(readFileSync(fil, 'utf8').replace(/"hentet": "[^"]*"/, '')) : null;
+  if (e.hoppetOver) return { status: 'ok', fingeravtrykk, melding: null };
+  rapport.push(
+    '### Eksamensdatoer',
+    e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`,
+    ...e.endringer.map((l) => `- ${l}`),
+    ...(e.uenige.length > 0 ? ['', 'Fylkene er uenige, og Udir har ikke datoen:', ...e.uenige.map((l) => `- ${l}`)] : []),
+    ...(e.mangler.length > 0 ? ['', 'Fant ikke datoen (siden kan være endret):', ...e.mangler.map((l) => `- ${l}`)] : []),
+    ...(e.enKilde.length > 0 ? ['', 'Bare ett fylke har datoen, så den er ikke tatt inn:', ...e.enKilde.map((l) => `- ${l}`)] : []),
+    '',
+  );
+  if (e.uenige.length > 0 || e.mangler.length > 0) {
+    return { status: 'endret', fingeravtrykk, melding: `Eksamensdatoene: ${e.uenige.length} uenige og ${e.mangler.length} som ikke ble funnet. Se rapporten.` };
+  }
+  return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endrede eksamensdatoer.` : null };
+}
+
 /** Resultatet av npm run hent:lovdata for hvert dokument (.generert/lovdata-endringer.json). */
 interface Lovdataresultat {
   id: string;
@@ -253,6 +280,8 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
         return sjekkHentet('NDLA', 'ndla-endringer.json', [{ navn: 'Fagene', fil: 'data/ndla/fag.json', hent: del(null) }]);
       case 'nor':
         return sjekkHentet('NOR', 'nor-endringer.json', [{ navn: 'Opplæringskontorene', fil: 'data/udir/opplaeringskontor.json', hent: del(null) }]);
+      case 'eksamen':
+        return sjekkEksamen();
       case 'fil': {
         const { fingeravtrykk, bytes, tekst, tekstfeil } = await sjekkFil(kilde);
         tekster[kilde.id] = tekst === null ? { feil: tekstfeil ?? 'Teksten kunne ikke leses.' } : { tekst };

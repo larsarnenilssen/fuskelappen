@@ -104,6 +104,31 @@ export const kodegruppe = z
   })
   .strict();
 
+/**
+ * En tabell som står åpen over teksten i et kort (fase 6, pakke 3). `rutenett` viser radene mot kolonnene, f.eks.
+ * trinn mot utdanningsprogram, med et stort tall og en kort tekst i hver rute. `kort` viser hver rad som et kort med
+ * kolonnene som etiketter, så den kan leses på mobil. En rad med én celle går over alle kolonnene.
+ */
+export const tabellSkjema = z
+  .object({
+    form: z.enum(['rutenett', 'kort']),
+    kolonner: z.array(flerspraak).min(1),
+    rader: z
+      .array(
+        z
+          .object({
+            tittel: flerspraak,
+            celler: z.array(z.object({ tall: z.string().trim().min(1).optional(), tekst: flerspraak }).strict()).min(1),
+          })
+          .strict(),
+      )
+      .min(1),
+  })
+  .strict()
+  .refine((t) => t.rader.every((r) => r.celler.length === 1 || r.celler.length === t.kolonner.length), {
+    message: 'En rad har én celle eller like mange celler som kolonner',
+  });
+
 export const vanligElement = z
   .object({
     ...felles,
@@ -116,6 +141,7 @@ export const vanligElement = z
      */
     sammenligning: z.object({ venstre: flerspraak, hoyre: flerspraak }).strict().optional(),
     kodegrupper: z.array(kodegruppe).optional(),
+    tabell: tabellSkjema.optional(),
   })
   .strict();
 
@@ -182,7 +208,7 @@ export const stegElement = z
   });
 
 /** Fargene en veiviser kan ha (avgjørelse 042). Hver farge er definert for lyst og mørkt tema i tema.css. */
-export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav']);
+export const veiviserfarge = z.enum(['blaa', 'lilla', 'turkis', 'rav', 'baer']);
 
 /** En veiviser (avgjørelse 041): tittel, ingress (`tekst`), første steg og fasene stegene grupperes i. */
 export const veiviserElement = z
@@ -217,6 +243,12 @@ export const fristElement = z
       ])
       .optional(),
     naar: flerspraak.optional(),
+    /**
+     * Datoen hentes fra eksamensdatoene (data/eksamen, avgjørelse 059) når den finnes for skoleåret: `felt` er datoen
+     * (f.eks. `trekk`), og `periode` er høst- eller våreksamen. `fylke: true` betyr at hvert fylke har sin egen dato,
+     * som bare vises når fylket er valgt. Uten data vises `regel` og `naar`.
+     */
+    eksamensdato: z.object({ felt: idSkjema, periode: z.enum(['host', 'var']), fylke: z.boolean().default(false) }).strict().optional(),
     modul: z.string().min(1),
     malgruppe: z.array(malgruppe).min(1),
     grupper: z.array(idSkjema).default([]),
@@ -247,7 +279,7 @@ export const kildeSkjema = z
     niva: nivaSkjema,
     fylke: z.string().regex(/^\d{2}$/).optional(),
     lisens: z.string().min(1),
-    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'ingen']),
+    sjekkmetode: z.enum(['side', 'kf-infoserie', 'fil', 'lovdata', 'lovtekst', 'grep', 'udir-fagfordeling', 'vigo-kodeverk', 'utdanning-no', 'ndla', 'nor', 'nsr', 'eksamen', 'ingen']),
     aktiv: z.boolean(),
     uttrekk: z
       .object({
@@ -332,6 +364,7 @@ export type Kontrollert = z.infer<typeof kontrollertSkjema>;
 export type Innholdselement = z.infer<typeof innholdselement>;
 export type Stegelement = z.infer<typeof stegElement>;
 export type Kodegruppe = z.infer<typeof kodegruppe>;
+export type Tabell = z.infer<typeof tabellSkjema>;
 export type Vanligelement = z.infer<typeof vanligElement>;
 export type Veiviserelement = z.infer<typeof veiviserElement>;
 export type Frist = z.infer<typeof fristElement>;
