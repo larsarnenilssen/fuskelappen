@@ -26,19 +26,40 @@ import { USER_AGENT } from './kilder/metoder.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const GREP = 'https://data.udir.no/kl06/v201906';
-const SAMTIDIGE = 8;
+// Seks om gangen: med åtte svarte Grep 429 (for mange forespørsler) i kildesjekken 04.10.2026.
+const SAMTIDIGE = 6;
+const FORSOK = 6;
 
-/** Henter JSON fra Grep, med tre forsøk. */
+/**
+ * Hvor lenge et forsøk venter før det neste. Ved 429 og 503 er grensen for antall forespørsler nådd, så ventetiden
+ * er det serveren ber om (Retry-After, høyst to minutter) eller 15 s mer for hvert forsøk. Ellers 2 s mer for hvert.
+ */
+export function ventetid(forsok: number, status: number | null, retryAfter: string | null): number {
+  if (status !== 429 && status !== 503) return 2000 * forsok;
+  const sekunder = retryAfter !== null && /^\d+$/.test(retryAfter.trim()) ? Number(retryAfter) : 15 * forsok;
+  return Math.min(sekunder, 120) * 1000;
+}
+
+/** Henter JSON fra Grep, med inntil seks forsøk. */
 async function hentJson<T>(sti: string): Promise<T> {
   let feil: unknown;
-  for (let forsok = 1; forsok <= 3; forsok++) {
+  for (let forsok = 1; forsok <= FORSOK; forsok++) {
+    let status: number | null = null;
+    let retryAfter: string | null = null;
     try {
       const svar = await fetch(`${GREP}/${sti}`, { headers: { Accept: 'application/json', 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(120_000) });
-      if (!svar.ok) throw new Error(`${GREP}/${sti} svarte ${svar.status}`);
+      if (!svar.ok) {
+        status = svar.status;
+        retryAfter = svar.headers.get('retry-after');
+        throw new Error(`${GREP}/${sti} svarte ${svar.status}`);
+      }
       return (await svar.json()) as T;
     } catch (e) {
       feil = e;
-      await new Promise((r) => setTimeout(r, 2000 * forsok));
+      if (forsok === FORSOK) break;
+      const vent = ventetid(forsok, status, retryAfter);
+      if (status === 429 || status === 503) console.log(`Grep svarte ${status} for ${sti}. Venter ${vent / 1000} s (forsøk ${forsok} av ${FORSOK}).`);
+      await new Promise((r) => setTimeout(r, vent));
     }
   }
   throw feil;
