@@ -1,20 +1,20 @@
 // Forsiden bygges bare fra modulregisteret. En ny modul krever ingen endring her.
-// Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), og forsiden
-// kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
+// Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), favorittene
+// sorteres der de står, og forsiden kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
 import type { ComponentChildren } from 'preact';
 import { useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
 import { Sorterbar } from '../../components/Sorterbar.tsx';
-import { flytt, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
+import { flytt, flyttInnenfor, modulForFavoritt, ordneGrupper } from '../../core/forside/ordning.ts';
 import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
 import { Favorittliste, useFavorittbare } from '../Favorittliste.tsx';
 import { Innganger } from '../Innganger.tsx';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
-import { flyttFavorittTil, nullstillForside, settBareFavoritter, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe } from '../tilstand.ts';
+import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 
@@ -46,46 +46,65 @@ function TomFavoritter() {
   );
 }
 
-/** Rekkefølgen på gruppene og favorittene, med dra og slipp og piler. */
-function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) => string }) {
+/**
+ * Favorittene i en gruppe: lenker, eller håndtak, piler og «Fjern» når brukeren trykker «Endre rekkefølge». De sorteres
+ * der de står, så gruppen ikke flytter seg (eier 04.10.2026). Er `ider` bare en del av favorittene (under en kategori i
+ * «Bare favoritter»), flyttes de innenfor delen, og de andre favorittene står der de sto.
+ */
+function Favoritter({ ider }: { ider: readonly string[] }) {
   const { t, malform } = useTekst();
   const { favoritter } = useTilstand();
-  const kjente = useFavorittbare(favoritter);
-  const favorittnavn = (id: string) => kjente?.get(id)?.tittel[malform] ?? id;
+  const [endre, settEndre] = useState(false);
+  const kjente = useFavorittbare(ider);
+  const navn = (id: string) => kjente?.get(id)?.tittel[malform] ?? id;
+  return (
+    <>
+      {endre ? (
+        <Sorterbar
+          etikett={t('forside.favoritter')}
+          elementer={ider.map((id) => ({
+            id,
+            navn: navn(id),
+            innhold: (
+              <span class="sorterbar-navn">
+                {navn(id)}
+                {kjente && !kjente.has(id) && <span class="listelenke-under"> {t('favoritter.utilgjengelig')}</span>}
+              </span>
+            ),
+            ekstra: (
+              <button type="button" class="ikonknapp" aria-label={t('favoritter.fjern', { navn: navn(id) })} onClick={() => vekslFavoritt(id)}>
+                <Ikon navn="lukk" />
+              </button>
+            ),
+          }))}
+          onFlytt={(fra, til) => settFavorittrekkefolge(flyttInnenfor(favoritter, ider, fra, til))}
+        />
+      ) : (
+        <Favorittliste ider={ider} />
+      )}
+      {ider.length > 1 || endre ? (
+        <p class="gruppe-verktoy">
+          <button type="button" class="lenkeknapp" aria-pressed={endre} onClick={() => settEndre(!endre)}>
+            {endre ? t('forside.endreFerdig') : t('forside.endreRekkefolge')}
+          </button>
+        </p>
+      ) : null}
+    </>
+  );
+}
+
+/** Rekkefølgen på gruppene, med dra og slipp og piler. */
+function Tilpasning({ grupper, navn }: { grupper: string[]; navn: (id: string) => string }) {
+  const { t } = useTekst();
   return (
     <section class="tilpasning" aria-labelledby="tilpass-tittel">
       <h2 id="tilpass-tittel">{t('forside.tilpass.tittel')}</h2>
       <p class="dempet liten">{t('forside.tilpass.hjelp')}</p>
-      <h3 class="liten-overskrift">{t('forside.tilpass.grupper')}</h3>
       <Sorterbar
         etikett={t('forside.tilpass.grupper')}
         elementer={grupper.map((id) => ({ id, navn: navn(id), innhold: <span class="sorterbar-navn">{navn(id)}</span> }))}
         onFlytt={(fra, til) => settGrupperekkefolge(flytt(grupper, fra, til))}
       />
-      <h3 class="liten-overskrift">{t('forside.favoritter')}</h3>
-      {favoritter.length === 0 ? (
-        <TomFavoritter />
-      ) : (
-        <Sorterbar
-          etikett={t('forside.favoritter')}
-          elementer={favoritter.map((id) => ({
-            id,
-            navn: favorittnavn(id),
-            innhold: (
-              <span class="sorterbar-navn">
-                {favorittnavn(id)}
-                {kjente && !kjente.has(id) && <span class="listelenke-under"> {t('favoritter.utilgjengelig')}</span>}
-              </span>
-            ),
-            ekstra: (
-              <button type="button" class="ikonknapp" aria-label={t('favoritter.fjern', { navn: favorittnavn(id) })} onClick={() => vekslFavoritt(id)}>
-                <Ikon navn="lukk" />
-              </button>
-            ),
-          }))}
-          onFlytt={flyttFavorittTil}
-        />
-      )}
       <button type="button" class="knapp knapp-sekundaer" onClick={nullstillForside}>
         {t('forside.tilpass.nullstill')}
       </button>
@@ -113,7 +132,7 @@ export default function Forside() {
       if (bare) return null;
       return (
         <Gruppe key={id} id={id} tittel={navn(id)} lukket={lukket}>
-          {favoritter.length === 0 ? <TomFavoritter /> : <Favorittliste ider={favoritter} />}
+          {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} />}
         </Gruppe>
       );
     }
@@ -124,7 +143,7 @@ export default function Forside() {
       if (ider.length === 0) return null;
       return (
         <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket}>
-          <Favorittliste ider={ider} />
+          <Favoritter ider={ider} />
         </Gruppe>
       );
     }
@@ -160,8 +179,8 @@ export default function Forside() {
               kompakt
               verdi={bare ? 'favoritter' : 'alt'}
               valg={[
-                { verdi: 'alt', tekst: t('forside.visAlt') },
-                { verdi: 'favoritter', tekst: t('forside.visFavoritter') },
+                { verdi: 'alt', tekst: t('forside.visAlt'), tekstKort: t('forside.visAltKort') },
+                { verdi: 'favoritter', tekst: t('forside.visFavoritter'), tekstKort: t('forside.visFavoritterKort') },
               ]}
               onEndring={(v) => settBareFavoritter(v === 'favoritter')}
             />

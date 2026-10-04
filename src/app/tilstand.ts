@@ -1,6 +1,5 @@
 // Appens tilstand: innstillinger og favoritter, lagret lokalt via lagringsmodulen.
 import { useEffect, useMemo, useState } from 'preact/hooks';
-import { flytt } from '../core/forside/ordning.ts';
 import { hentTekst, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
 import {
   lesLagret,
@@ -135,20 +134,9 @@ export function vekslFavoritt(id: string): void {
   }));
 }
 
-export function flyttFavoritt(id: string, retning: -1 | 1): void {
-  tilstand.oppdater((d) => {
-    const liste = [...d.favoritter];
-    const i = liste.indexOf(id);
-    const j = i + retning;
-    if (i < 0 || j < 0 || j >= liste.length) return d;
-    [liste[i], liste[j]] = [liste[j] as string, liste[i] as string];
-    return { ...d, favoritter: liste };
-  });
-}
-
-/** Flytter en favoritt fra én plass til en annen (dra og slipp eller pilene på forsiden). */
-export function flyttFavorittTil(fra: number, til: number): void {
-  tilstand.oppdater((d) => ({ ...d, favoritter: flytt(d.favoritter, fra, til) }));
+/** Ny rekkefølge på favorittene (dra og slipp eller pilene på forsiden). */
+export function settFavorittrekkefolge(favoritter: string[]): void {
+  tilstand.oppdater((d) => ({ ...d, favoritter }));
 }
 
 /** Rekkefølgen på gruppene på forsiden (avgjørelse 056). */

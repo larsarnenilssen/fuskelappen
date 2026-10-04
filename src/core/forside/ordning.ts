@@ -27,3 +27,17 @@ export function ordneGrupper(standard: readonly string[], lagret: readonly strin
 
 /** Modulen en favoritt hører til, ut fra id-en («inntak:frister» → «inntak»). */
 export const modulForFavoritt = (id: string): string => id.split(':')[0] ?? id;
+
+/**
+ * Flytter et element innenfor et utvalg av listen (f.eks. favorittene under én kategori) og gir hele listen tilbake.
+ * Utvalgets elementer får de samme plassene i hele listen som før, i den nye rekkefølgen. De andre står der de sto.
+ */
+export function flyttInnenfor<T>(alle: readonly T[], utvalg: readonly T[], fra: number, til: number): T[] {
+  const ny = flytt(utvalg, fra, til);
+  const plasser = alle.map((x, i) => (utvalg.includes(x) ? i : -1)).filter((i) => i >= 0);
+  const resultat = [...alle];
+  plasser.forEach((plass, j) => {
+    resultat[plass] = ny[j] as T;
+  });
+  return resultat;
+}

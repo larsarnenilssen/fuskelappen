@@ -3492,6 +3492,28 @@ p.fagkort-tittel {
   margin-top: var(--rom-4);
 }
 
+/* «Endre rekkefølge» under favorittene i en gruppe. */
+.gruppe-verktoy {
+  display: flex;
+  justify-content: flex-end;
+  margin: var(--rom-1) 0 0;
+}
+
+/* Bryteren har korte tekster på smal skjerm og hele der det er plass (eier 04.10.2026). */
+.bryter-lang {
+  display: none;
+}
+
+@media (min-width: 30rem) {
+  .bryter-kort {
+    display: none;
+  }
+
+  .bryter-lang {
+    display: inline;
+  }
+}
+
 .tilpasning h2 {
   margin: 0 0 var(--rom-1);
   font-size: var(--str-l);

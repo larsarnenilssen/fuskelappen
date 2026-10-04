@@ -15,7 +15,8 @@ export function Bryter<V extends string>({
 }: {
   legend: string;
   verdi: V;
-  valg: { verdi: V; tekst: string }[];
+  /** `tekstKort` vises på smal skjerm, `tekst` der det er plass (eier 04.10.2026). */
+  valg: { verdi: V; tekst: string; tekstKort?: string }[];
   onEndring: (v: V) => void;
   skjultLegend?: boolean;
   kompakt?: boolean;
@@ -26,7 +27,14 @@ export function Bryter<V extends string>({
       {valg.map((v) => (
         <label key={v.verdi} class={verdi === v.verdi ? 'valgt' : undefined}>
           <input type="radio" name={id} checked={verdi === v.verdi} onChange={() => onEndring(v.verdi)} />
-          <span>{v.tekst}</span>
+          {v.tekstKort ? (
+            <span>
+              <span class="bryter-kort">{v.tekstKort}</span>
+              <span class="bryter-lang">{v.tekst}</span>
+            </span>
+          ) : (
+            <span>{v.tekst}</span>
+          )}
         </label>
       ))}
     </div>
