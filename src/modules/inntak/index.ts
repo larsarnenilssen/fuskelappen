@@ -10,7 +10,7 @@ export const manifest: Modulmanifest = {
   id: 'inntak',
   navn: 'moduler.inntak.navn',
   beskrivelse: 'moduler.inntak.beskrivelse',
-  ikon: 'skole',
+  ikon: 'inngang',
   kategori: 'inntak',
   rekkefolge: 5,
   ruter: [

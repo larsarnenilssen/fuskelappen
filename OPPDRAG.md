@@ -550,8 +550,16 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Samlet oversikt over frister fra alle moduler, filtrert på modul, målgruppe og nivå.
 - Visning som årshjul og som liste.
 - Eksport til kalender (.ics), generert i nettleseren.
+- *(Ønske fra eier 04.10.2026)* **Dagens fuskelapp:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den tas i denne fasen fordi den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet. Da finnes det også innhold fra de fleste modulene.
+  - En bryter «Dagens fuskelapp» under Innstillinger, av fra start. Valget lagres lokalt som de andre valgene.
+  - Når den er på, står en rubrikk «Dagens fuskelapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
+  - Fuskelappen byttes a) automatisk hver dag (samme faktum hele dagen, valgt ut fra datoen), eller b) når brukeren trykker på et tegn for ny fuskelapp ved siden av overskriften. Eier velger a, b eller begge når forslaget legges fram.
+  - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
+  - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.
+  - Når bryteren er av, kan forsiden ha en kort tekst som spør om brukeren vil slå på dagens fuskelapp. Teksten kan lukkes for godt.
+  - Legges fram for eier før det bygges: hvilke typer fakta som tas med, om bare kontrollert innhold skal vises, og hvordan rubrikken og spørsmålet ser ut.
 
-**Kontrollpunkt:** Eier kontrollerer frister og visning.
+**Kontrollpunkt:** Eier kontrollerer frister, visning og dagens fuskelapp.
 
 ### Fase 9 – Lokale avtaler og profiler for fylke og skole
 

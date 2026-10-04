@@ -6,7 +6,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
-- **Forsiden:** Ny overskrift «Inntak og opplæringstilbud» med Inntak og Opplæringstilbud. Læreplanverket har nå Overordnet del og Fag og læreplaner.
+- **Forsiden:** Ny overskrift «Inntak og opplæringstilbud» med Inntak og Opplæringstilbud. Læreplanverket har nå Overordnet del og Fag og læreplaner. Inntak har fått et eget ikon.
 
 ## [0.30.0] – 2026-10-03
 
