@@ -87,7 +87,7 @@ export const nb = {
       fagmerknad: 'Fagmerknad',
       vitnemalsmerknad: 'Vitnemålsmerknad',
       sokerstatus: 'Status på søkerønske',
-      kode: 'Kode',
+      kode: 'Karakter/statuskode',
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbud',

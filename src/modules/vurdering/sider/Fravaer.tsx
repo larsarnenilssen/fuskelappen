@@ -44,12 +44,16 @@ interface Skjema {
   okt: Oktvalg;
   annen: number | null;
   udokumentert: number | null;
+  /** Alt helsefraværet, før og etter at grensen ble nådd. */
   helse: number | null;
+  /** Brukeren har krysset av for at noe av helsefraværet kom etter grensen og er dokumentert av helsepersonell. */
+  delHelse: boolean;
+  /** Av helsefraværet: det som kom etter at grensen ble nådd og er dokumentert av helsepersonell. */
   helseEtter: number | null;
   andre: number | null;
 }
 
-const start = (): Skjema => ({ timer: null, egneTimer: false, okt: '60', annen: null, udokumentert: null, helse: null, helseEtter: null, andre: null });
+const start = (): Skjema => ({ timer: null, egneTimer: false, okt: '60', annen: null, udokumentert: null, helse: null, delHelse: false, helseEtter: null, andre: null });
 
 const tall = (n: number, d = 2) => formaterTall(n, d);
 
@@ -280,7 +284,12 @@ export default function Fravaer({ sporring }: SideProps) {
   const g = grenser && !('feil' in grenser) ? grenser : null;
 
   const fyltInn = [s.udokumentert, s.helse, s.helseEtter, s.andre].some((x) => x !== null);
-  const sjekk = g && fyltInn ? sjekkFravaer(g, { udokumentert: s.udokumentert ?? 0, helse: s.helse ?? 0, helseEtter: s.helseEtter ?? 0, andre: s.andre ?? 0 }) : null;
+  // Helsefraværet står i én boks. Bare når brukeren har krysset av, deles det i før og etter grensen: rekkefølgen
+  // avgjør om det teller (FR5 og FR8), og den kan ikke kalkulatoren vite selv (eier 04.10.2026).
+  const helse = s.helse ?? 0;
+  const helseEtter = s.delHelse ? Math.min(s.helseEtter ?? 0, helse) : 0;
+  const sjekk = g && fyltInn ? sjekkFravaer(g, { udokumentert: s.udokumentert ?? 0, helse: helse - helseEtter, helseEtter, andre: s.andre ?? 0 }) : null;
+  const unntak = regler?.find((r) => r.id === 'fr-unntak');
   // Navnet på fagmerknaden hentes fra VIGO bare når eleven er over grensen.
   const over = sjekk?.utfall === 'over';
   useEffect(() => {
@@ -356,8 +365,29 @@ export default function Fravaer({ sporring }: SideProps) {
             <div class="fr-felt">
               <Tallfelt etikett={t('vurdering.fravaer.sjekk.udokumentert')} verdi={s.udokumentert} onEndring={(udokumentert) => endre({ udokumentert })} hjelpetekst={t('vurdering.fravaer.sjekk.udokumentertHjelp')} min={0} />
               <Tallfelt etikett={t('vurdering.fravaer.sjekk.helse')} verdi={s.helse} onEndring={(helse) => endre({ helse })} hjelpetekst={t('vurdering.fravaer.sjekk.helseHjelp')} min={0} />
-              <Tallfelt etikett={t('vurdering.fravaer.sjekk.helseEtter')} verdi={s.helseEtter} onEndring={(helseEtter) => endre({ helseEtter })} hjelpetekst={t('vurdering.fravaer.sjekk.helseEtterHjelp')} min={0} />
+              <label class="poeng-avkryssing fr-del-helse">
+                <input type="checkbox" checked={s.delHelse} onChange={(e) => endre({ delHelse: (e.target as HTMLInputElement).checked })} />
+                {t('vurdering.fravaer.sjekk.delHelse')}
+              </label>
+              {s.delHelse && (
+                <Tallfelt
+                  class="fr-helse-etter"
+                  etikett={t('vurdering.fravaer.sjekk.helseEtter')}
+                  verdi={s.helseEtter}
+                  onEndring={(helseEtter) => endre({ helseEtter })}
+                  hjelpetekst={t('vurdering.fravaer.sjekk.helseEtterHjelp')}
+                  min={0}
+                  maks={helse}
+                />
+              )}
               <Tallfelt etikett={t('vurdering.fravaer.sjekk.andre')} verdi={s.andre} onEndring={(andre) => endre({ andre })} hjelpetekst={t('vurdering.fravaer.sjekk.andreHjelp')} min={0} />
+              {/* Grunnene som gjelder, fra samme innhold som reglene under kalkulatoren (eier 04.10.2026). */}
+              {unntak && (
+                <Forklaring tittel={t('vurdering.fravaer.sjekk.andreListe')}>
+                  <div class="brodtekst" dangerouslySetInnerHTML={{ __html: unntak.tekst[malform] }} />
+                  <Kortfot kilder={unntak.kilder} />
+                </Forklaring>
+              )}
             </div>
             {g && sjekk && <Fravaersstolpe g={g} r={sjekk} fam={fam} enhet={enhet} timer={iTimer} />}
           </Skjemadel>

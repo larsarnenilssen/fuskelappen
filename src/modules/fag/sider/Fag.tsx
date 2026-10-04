@@ -155,9 +155,10 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
 }
 
 /**
- * Fraværsgrensen i faget (lenke til kalkulatoren med faget valgt), om eksamen er sentralt eller lokalt gitt, og
- * fagmerknadene som hører til faget (VIGO, lenke til FAM-oppslaget). Står øverst under «Vurdering» (fase 6, pakke 2).
- * Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i en merknad.
+ * Boksen «Fravær og eksamen» under «Vurderingsordning», ved siden av boksene for elever og privatister (eier
+ * 04.10.2026): fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt (VIGO), og fagmerknadene som hører til
+ * faget (VIGO, lenke til FAM-oppslaget). Nederst står lenkene til Vurdering: kalkulatoren med faget valgt og
+ * underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i boksen.
  */
 function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; rel: Fagrelasjoner | null; malform: Malform }) {
   const hent = useHent();
@@ -182,49 +183,47 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
         ...(avvik.privatist !== undefined ? [t('fag.side.avvikPrivatist', { verdi: avvik.privatist ?? tom })] : []),
       ]
     : [];
-  if (grense === null && !v && avvikLinjer.length === 0) return null;
+  const harTall = grense !== null || Boolean(v?.eksamen) || fam.length > 0;
   return (
-    <>
-      <dl class="egenskaper fag-ifaget">
-        {grense !== null && fag.timer !== null && (
-          <div>
-            <dt>{t('fag.side.fravaersgrense')}</dt>
-            <dd>
-              <span class="tall">{t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense), arstimer: formaterTall(fag.timer) })}</span>
-              <a class="fag-ifaget-lenke" href={`#/vurdering/fravaer?fag=${kode}`}>
-                {t('fag.side.tilFravaer')}
-              </a>
-            </dd>
-          </div>
-        )}
-        {v?.eksamen && (
-          <div>
-            <dt>{t('fag.side.eksamenGitt')}</dt>
-            <dd>
-              {t(`fag.side.gitt.${v.eksamen}`)}
-              {v.sensur && `, ${t(`fag.side.sensur.${v.sensur}`)}`}
-            </dd>
-          </div>
-        )}
-        {fam.length > 0 && (
-          <div>
-            <dt>{t('fag.side.fagmerknader')}</dt>
-            <dd>
-              <ul class="tett">
-                {fam.map((k) => {
-                  const m = merknader?.find((x) => x.kode === k);
-                  return (
-                    <li key={k}>
-                      <a href={`#/begreper/fagmerknader?q=${k}`}>{k}</a>
-                      {m && ` ${m[malform]}`}
-                    </li>
-                  );
-                })}
-              </ul>
-            </dd>
-          </div>
-        )}
-      </dl>
+    <div class="fag-vurdering fag-ifaget">
+      <h3 class="liten-overskrift">{t('fag.side.fravaerOgEksamen')}</h3>
+      {harTall && (
+        <dl class="egenskaper">
+          {grense !== null && fag.timer !== null && (
+            <div>
+              <dt>{t('fag.side.fravaersgrense')}</dt>
+              <dd class="tall">{t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense), arstimer: formaterTall(fag.timer) })}</dd>
+            </div>
+          )}
+          {v?.eksamen && (
+            <div>
+              <dt>{t('fag.side.eksamenGitt')}</dt>
+              <dd>
+                {t(`fag.side.gitt.${v.eksamen}`)}
+                {v.sensur && `, ${t(`fag.side.sensur.${v.sensur}`)}`}
+              </dd>
+            </div>
+          )}
+          {fam.length > 0 && (
+            <div>
+              <dt>{t('fag.side.fagmerknader')}</dt>
+              <dd>
+                <ul class="tett">
+                  {fam.map((k) => {
+                    const m = merknader?.find((x) => x.kode === k);
+                    return (
+                      <li key={k}>
+                        <a href={`#/begreper/fagmerknader?q=${k}`}>{k}</a>
+                        {m && ` ${m[malform]}`}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </dd>
+            </div>
+          )}
+        </dl>
+      )}
       {avvikLinjer.length > 0 && (
         <div class="merknad merknad-advarsel fag-avvik">
           <p>{t('fag.side.avvikVigo')}</p>
@@ -235,7 +234,25 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
           </ul>
         </div>
       )}
-    </>
+      {/* Lenkene til den andre modulen er merket «I Vurdering» (mockup 3, eier 04.10.2026). */}
+      <p class="fag-ifaget-i">{t('fag.side.iVurdering')}</p>
+      <ul class="fag-ifaget-lenker">
+        {grense !== null && (
+          <li>
+            <a class="lenke-pil" href={`#/vurdering/fravaer?fag=${kode}`}>
+              {t('fag.side.tilFravaer')}
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        )}
+        <li>
+          <a class="lenke-pil" href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>
+            {t('fag.side.tilVurdering')}
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
 
@@ -613,20 +630,13 @@ export default function Fagside({ parametre }: SideProps) {
       )}
 
       <Seksjon id="vurdering" lukket tittel={t('fag.side.vurdering')}>
-        <IFaget t={t} kode={kode} fag={fag} rel={rel} malform={malform} />
-        {fag.elev || fag.privatist ? (
-          <div class="fag-vurderinger">
-            {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}
-            {fag.privatist && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.privatist')} v={fag.privatist} />}
-          </div>
-        ) : (
-          <p class="dempet">{t('fag.side.ingenVurdering')}</p>
-        )}
+        <div class="fag-vurderinger">
+          <IFaget t={t} kode={kode} fag={fag} rel={rel} malform={malform} />
+          {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}
+          {fag.privatist && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.privatist')} v={fag.privatist} />}
+        </div>
+        {!fag.elev && !fag.privatist && <p class="dempet">{t('fag.side.ingenVurdering')}</p>}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
-        {/* Underveis- og sluttvurdering med vurderingsteksten for faget (fase 6). */}
-        <p class="liten">
-          <a href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>{t('fag.side.tilVurdering')}</a>
-        </p>
       </Seksjon>
 
       {fag.po.length > 0 && (

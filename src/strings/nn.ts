@@ -87,7 +87,7 @@ export const nn: Tekster = {
       fagmerknad: 'Fagmerknad',
       vitnemalsmerknad: 'Vitnemålsmerknad',
       sokerstatus: 'Status på søkjarønske',
-      kode: 'Kode',
+      kode: 'Karakter/statuskode',
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbod',

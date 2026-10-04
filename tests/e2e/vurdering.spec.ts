@@ -59,16 +59,23 @@ test.describe('vurdering', () => {
     await expect(page.locator('.fr-utfall-tittel')).toHaveText('Over 15 prosent');
     await expect(page.locator('.fr-utfall')).toContainText('(FAM51)');
     await page.getByLabel('Udokumentert fravær').fill('17');
-    await page.getByLabel('Helsefravær etter at grensen ble nådd').fill('3');
+    // Helsefraværet står i én boks, og deles bare når brukeren krysser av (eier 04.10.2026).
+    await page.getByLabel('Helsefravær', { exact: true }).fill('3');
+    await expect(page.getByLabel('Av dette: etter at grensen ble nådd')).toHaveCount(0);
+    await page.getByRole('checkbox', { name: /^Noe av helsefraværet/ }).check();
+    await page.getByLabel('Av dette: etter at grensen ble nådd').fill('3');
     await expect(page.locator('.fr-utfall-tittel')).toHaveText('Innenfor grensen');
     await expect(page.locator('.fr-sjekk-svar .merknad')).toContainText('1 av øktene');
+    // Grunnene for dokumentert fravær kan åpnes under feltet.
+    await page.getByRole('button', { name: 'Grunnene som gjelder' }).click();
+    await expect(page.getByText(/b\. Velferd:/).first()).toBeVisible();
   });
 
   test('fagarket lenker til kalkulatoren med faget valgt, og kalkulatoren til steget om fravær', async ({ page }) => {
     await page.goto('./#/fag/ENG1007');
     await page.getByRole('button', { name: /^Vurderingsordning$/ }).click();
     await expect(page.locator('.fag-ifaget')).toContainText('Sentralt gitt');
-    await page.getByRole('link', { name: 'Regn ut i økter og sjekk fraværet' }).click();
+    await page.getByRole('link', { name: 'Fraværsgrensen i økter, og sjekk av fraværet' }).click();
     await expect(page).toHaveURL(/#\/vurdering\/fravaer\?fag=ENG1007$/);
     await expect(page.locator('main h1')).toHaveText('Fraværsgrensen');
     await page.getByRole('link', { name: /veiviseren «Grunnlag for vurdering»/ }).click();

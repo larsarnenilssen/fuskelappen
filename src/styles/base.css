@@ -3042,6 +3042,12 @@ p.fagkort-tittel {
   background: var(--farge-flate-2);
 }
 
+/* Etikettene i boksene får plass til det lengste ordet («Standpunktkarakter»), så det ikke deles midt i ordet når to
+   bokser står side om side. */
+.fagark .fag-vurdering .egenskaper > div {
+  grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
+}
+
 .egenskaper dd {
   margin: 0;
   overflow-wrap: anywhere;
@@ -6436,19 +6442,54 @@ button.frist-stripe-celle:hover {
   color: var(--farge-feil);
 }
 
-/* Fraværsgrensen, eksamen og fagmerknadene øverst under «Vurdering» på fagarket. */
+/* «Fravær og eksamen» på fagarket: samme blå boks som elever og privatister, med lenkene til Vurdering nederst. */
 .fag-ifaget {
-  margin-bottom: var(--rom-4);
+  display: flex;
+  flex-direction: column;
 }
 
-.fag-ifaget-lenke {
-  display: block;
+.fag-ifaget-i {
+  margin: var(--rom-3) 0 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-kant);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fag-ifaget-lenker {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fag-ifaget-lenker .lenke-pil {
+  font-size: var(--str-s);
 }
 
 .fag-avvik {
-  margin-bottom: var(--rom-4);
+  margin: var(--rom-2) 0 0;
 }
 
 .fag-avvik p {
   margin: 0 0 var(--rom-1);
+}
+
+/* Helsefraværet står i én boks. Delingen før og etter grensen vises bare når brukeren krysser av for den. */
+.fr-del-helse {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.fr-del-helse input {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.fr-helse-etter {
+  margin-left: var(--rom-2);
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-kant);
 }
