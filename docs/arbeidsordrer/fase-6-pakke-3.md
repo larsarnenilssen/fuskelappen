@@ -1,4 +1,4 @@
-# Fase 6, pakke 3: Eksamen og klage – overlevering (04.10.2026)
+# Fase 6, pakke 3: Eksamen og klage – overlevering (04.10.2026, oppdatert etter 0.34.0)
 
 Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-3.md og start pakke 3.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6.md` og `docs/arbeidsordrer/fase-6-forslag.md` (delene «Pakke 3: Eksamen og klage», «Nye begreper til begrepsbanken» og alle svarene fra eier).
 
@@ -12,6 +12,11 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-3.md og start pak
   - Fagarket har boksen «Fravær og eksamen» med lenkene «I Vurdering». Begreper kan ha en gul `merknad`.
   - Søketreffene sier hva treffet er (typene i `Sokeoppforingstype`, aldri «funksjon»), og søkefeltet har et kryss.
   - Øktlengden huskes på enheten (`src/app/kalkulatorvalg.ts`). Forsiden står i rader på stor skjerm.
+- **0.34.0:** appen heter **Jukselappen**, med ny adresse `https://larsarnenilssen.github.io/jukselappen/`, nytt repo-navn `jukselappen` og nytt ikon (avgjørelse 058):
+  - Alle sider har stjernen ved overskriften (`Sidetopp`). Elementer uten egen side har en diskré stjerne (`FavorittKnapp liten`): skoler, opplæringskontor, paragrafer, avtalebestemmelser og deler av overordnet del.
+  - Favorittene får ikonet fra lenkene med ikon på oversiktssidene (`undersider` i manifestet). I Vurdering står de i `UNDERSIDER` i `src/modules/vurdering/innhold.ts`, og oversikten henter ikonene derfra.
+  - Søket har filtre på grupper (`src/core/sok/grupper.ts`) og viser 50 treff om gangen.
+  - Lenken «Tilbake til …» under knappene i veiviserne er tatt bort. Veien hit lenker til hvert valg.
 
 ## Pakke 3: det som skal bygges (godkjent av eier i forslaget)
 
@@ -31,22 +36,28 @@ Detaljene står i `fase-6-forslag.md`, «Pakke 3: Eksamen og klage». Kort:
 - **Skriv «underveisvurdering», «sluttvurdering» og «halvårsvurdering» helt ut** der det er plass.
 - **Visning:** regelverk og kilder i lukkede rader nederst i kort (`Kortfot`), og stien tilbake (`Brodsmuler`) på alle undersider. Lenker til en annen modul er merket «I Vurdering» (eller modulens navn).
 - **Lenketekster** skal si hvor brukeren havner, og være korte. Lenker til veiviseren går til det riktige steget (`?steg=…&svar=…`).
-- **Søket:** nye oppføringer får en type som sier hva treffet heter i appen (veiviser, kalkulator, tidslinje, side osv.).
-- **Favoritter:** nye sider med stjerneknapp får en oppføring i `favorittbare`, eventuelt med eget ikon (det testes).
+- **Søket:** nye oppføringer får en type som sier hva treffet heter i appen (veiviser, kalkulator, tidslinje, side osv.). En ny type må også få en gruppe i `GRUPPE_FOR_TYPE` (typesjekken krever det).
+- **Favoritter (avgjørelse 058):**
+  - Nye sider bruker `Sidetopp` med en favoritt-id, og id-en får en oppføring i `favorittbare`.
+  - Ikoner på oversiktskortene legges i `UNDERSIDER` i `vurdering/innhold.ts`. Da får favorittene samme ikon.
+  - Nye ruter får en adresse i `tests/e2e/hjelp.ts`. En enhetstest krever det, og ende-til-ende-testen sjekker da stjernen og at favoritten finnes på forsiden.
+  - Veiviseren «Klage på karakter» blir favoritt av seg selv, fordi Vurdering lager favoritter av alle veiviserne.
+  - Rader uten egen side, f.eks. en eksamensfrist, får den diskré stjernen bare når de har en adresse favoritten kan åpne. Spør eier om det trengs.
 - **På stor skjerm** skal ingenting stå alene i høyre spalte før brukeren har fylt inn noe. Spar høyde der det går.
 
 ## Arbeidsmåte i dette miljøet
 
 - **Først et kort forslag til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene.
-- **Eier vil ikke ha lange tester før designet er ferdig.** Under designrundene: bare lint, typesjekk og eventuelt `npm test`. Når eier sier at designet er ferdig: `test:e2e:berorte` lokalt, så PR og hele suiten i CI.
+- **Ingen tester uten eiers klarsignal.** Under designrundene kjøres bare lint og typesjekk. Når eier sier at designet er ferdig og ber om det, kjøres `npm test` og `test:e2e:berorte` lokalt, og så lages PR-en med hele suiten i CI (eier 04.10.2026).
 - **Foreslå før du endrer** når eier ber om det, eller når et valg er faglig, juridisk eller endrer oppsettet mye.
-- **Testversjon:** push til `test` (`git push origin <gren>:test --force`) når eier ber om det, og etter hver designrunde.
+- **Testversjon:** push til `test` (`git push origin <gren>:test --force`) når eier ber om det, og etter hver designrunde. Den ligger under `…/jukselappen/test/`. Grenen `test` er fra før navnebyttet og virker ikke under den nye adressen før den overskrives.
 - **Skjermbilder:** `npm run build` og `npx vite preview --port 4173`, med et midlertidig skript i rotmappen som slettes etterpå. Stopp forhåndsvisningen før ende-til-ende-testene. Stopp prosessen ved å lese `/proc/<pid>/comm` (bare `node`, `sh` og `npm`), ikke med `pkill -f` eller en løkke som også treffer ditt eget skall.
 - **WebKit lokalt:** finnes ikke `/root/pw163`, installer med `PLAYWRIGHT_BROWSERS_PATH=/root/pw163 npx playwright install webkit` og `npx playwright install-deps webkit`.
 - **Testene lokalt:** `PLAYWRIGHT_BROWSERS_PATH=/root/pw163 npm run test:e2e:berorte`. Overflyttesten for `#/opplaeringslop/skoler?fylke=46&tilbud=HSHEA2` i 320 px feiler bare lokalt på grunn av fontene, og er grønn i CI.
 - **Ny e2e-spesifikasjon:** legg til en linje i `MODULSPEKER` i `scripts/e2e/velg.ts` hvis det kommer en ny spesifikasjon, og merk tester som bare gjelder mobil med `@mobil`. Nye regelverk i `rules/` får en linje i `REGELMODULER`.
 - **Kildesjekken** (`npm run kilder:sjekk`) feiler lokalt for Lovdata og Grep, fordi de bare hentes i GitHub Actions. Ikke commit `data/status/*` fra en lokal kjøring. Lokal henting med Node trenger `NODE_USE_ENV_PROXY=1`.
-- **Startpakken** er 99,6 kB gzip (grense 150 kB). Eier har valgt å ikke laste bare den valgte målformen. Hold UI-tekstene korte.
+- **Startpakken** er 101,4 kB gzip (grense 150 kB). Eier har valgt å ikke laste bare den valgte målformen. Hold UI-tekstene korte.
+- **Navnet og adressen:** I GitHub Actions bygges appen under navnet på repoet (`GITHUB_REPOSITORY`), ellers under `app.base` (`/jukselappen/`). Skymiljøet kan være satt opp med det gamle repo-navnet `protokollen`, men GitHub sender videre. GitHub-appen sender ikke PR-hendelser til økten når navnene er ulike, så sjekk CI selv.
 - **Versjon:** settes med en egen PR som øker `package.json` og `package-lock.json` og flytter endringsloggen. Når den flettes, tagger og publiserer arbeidsflyten (avgjørelse 029). Claude velger nummeret når eier ber om det.
 
 ## Åpent
