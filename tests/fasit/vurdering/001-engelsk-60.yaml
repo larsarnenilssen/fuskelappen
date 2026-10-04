@@ -1,0 +1,16 @@
+id: vurdering-001
+beskrivelse: "FR1: Engelsk vg1 studieforberedende (ENG1007), 140 timer, økter på 60 minutter."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 60
+forventet:
+  grense_timer: 14
+  innenfor: 14
+  over: 15
+  skjonn: 21
+begrunnelse: >-
+  140 × 10 % = 14 klokketimer. Innenfor med 14 timer, over med 15. Rektors skjønn opp til 140 × 15 % = 21.
+  Opplæringsforskrifta § 9-8 første og fjerde ledd, rundskrivet punkt 3.5. Eier 04.10.2026.

@@ -1,4 +1,4 @@
-// Data fra VIGO Kodeverksbase, hentet hver uke av npm run hent:vigo (avgjørelse 026): fagrelasjonene
+// Data fra VIGO Kodeverksbase, hentet hver uke av npm run hent:vigo (avgjørelse 026 og 057): fagrelasjonene med vurderingen i fagene
 // (data/vigo/fagrelasjoner.json) og fagmerknadene og vitnemålsmerknadene (data/vigo/merknader.json).
 // Se src/data/README.md.
 import type { Fagrelasjoner, Merknader } from '../modules/fag/vigo/skjema.ts';

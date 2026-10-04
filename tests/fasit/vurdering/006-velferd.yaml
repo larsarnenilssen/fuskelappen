@@ -1,0 +1,16 @@
+id: vurdering-006
+beskrivelse: "FR6: ENG1007, 60 minutter: 10 timer udokumentert og 12 timer velferd med dokumentasjon."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 60
+  fravaer: { udokumentert: 10, helse: 0, helse_etter: 0, andre: 12 }
+forventet:
+  teller: 10
+  over_10: 0
+  over_15: 0
+begrunnelse: >-
+  Bare de 10 udokumenterte timene teller. Innenfor, selv om alt fraværet er 22 timer (§ 9-8 andre ledd bokstav b,
+  rundskrivet punkt 3.3.3). Eier 04.10.2026.

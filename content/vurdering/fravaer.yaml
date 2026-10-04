@@ -1,0 +1,212 @@
+# Fraværsgrensen (fase 6, pakke 2). Reglene under kalkulatoren, lukket til brukeren åpner dem. Egne ord etter
+# opplæringsforskrifta § 9-8, § 9-9 og § 9-53 og Udirs rundskriv om fraværsgrensen. Tallene står i rules/vurdering/.
+- id: fr-teller
+  type: regel
+  tittel:
+    nb: "Fravær som teller mot grensen"
+    nn: "Fråvær som tel mot grensa"
+  tekst:
+    nb: |
+      Alt fravær fra opplæringen teller i utgangspunktet. Grensen er nådd når udokumentert og helserelatert fravær til sammen er 10 prosent av årstimetallet i faget.
+
+      - **Udokumentert fravær** teller alltid. Det gjelder også fravær av andre grunner enn dem som står i forskriften, for eksempel bortvisning.
+      - **Helserelatert fravær** teller til grensen er nådd, enten eleven har egenmelding, dokumentasjon fra helsepersonell eller ingen dokumentasjon. Egenmelding gjelder bare opp til 10 prosent.
+      - **Helserelatert fravær etter at grensen er nådd** teller ikke når det er dokumentert av helsepersonell. Har helsepersonell dokumentert en tilstand som gir høyere risiko for helserelatert fravær, kan eleven levere egenmelding også etter grensen.
+      - **Dokumentasjonen** trenger ikke si hva eleven feiler. Den kan også være skrevet etter fraværet.
+    nn: |
+      Alt fråvær frå opplæringa tel i utgangspunktet. Grensa er nådd når udokumentert og helserelatert fråvær til saman er 10 prosent av årstimetalet i faget.
+
+      - **Udokumentert fråvær** tel alltid. Det gjeld også fråvær av andre grunnar enn dei som står i forskrifta, til dømes bortvising.
+      - **Helserelatert fråvær** tel til grensa er nådd, anten eleven har eigenmelding, dokumentasjon frå helsepersonell eller ingen dokumentasjon. Eigenmelding gjeld berre opp til 10 prosent.
+      - **Helserelatert fråvær etter at grensa er nådd** tel ikkje når det er dokumentert av helsepersonell. Har helsepersonell dokumentert ein tilstand som gir høgare risiko for helserelatert fråvær, kan eleven leggje fram eigenmelding også etter grensa.
+      - **Dokumentasjonen** treng ikkje seie kva eleven har av plager. Han kan også vere skriven etter fråværet.
+  paragrafer: [opplaeringsforskrifta/9-8]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.3 Fravær som kan dokumenteres", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at dokumentasjon fra helsepersonell først får betydning for helsefravær etter at grensen er nådd (rundskrivet punkt 3.3.2)?"
+    - "Kalkulatoren lar helsefravær «etter grensen» telle til grensen er nådd når resten av fraværet er under grensen, og sier det i en merknad (eier 04.10.2026). Er merknaden forståelig?"
+
+- id: fr-unntak
+  type: regel
+  tittel:
+    nb: "Dokumentert fravær som ikke teller"
+    nn: "Dokumentert fråvær som ikkje tel"
+  tekst:
+    nb: |
+      Fravær som er dokumentert med en av disse grunnene, teller ikke, uansett når i skoleåret det er (§ 9-8 andre ledd bokstav b–i). Eleven kan dokumentere det når som helst, og skolen må ta imot dokumentasjonen fortløpende. Det udokumenterte fraværet kan likevel ikke være mer enn 10 prosent.
+
+      - **b. Velferd:** omsorg for egne barn, begravelse eller alvorlig sykdom i familien, konfirmasjon. Hvor mye som kan unntas, bestemmer fylkeskommunen.
+      - **c. Religiøse høytidsdager** utenom de offentlige helligdagene, høyst to dager.
+      - **d. Lovpålagt oppmøte:** å vitne i en rettssak eller møte på sesjon. Å sone en straff er ikke lovpålagt oppmøte.
+      - **e. Arbeid som tillitsvalgt** i en organisasjon.
+      - **f. Politisk arbeid:** for eksempel i kommunestyret eller en politisk organisasjon. Politisk streik er ikke politisk arbeid.
+      - **g. Hjelpearbeid** for en hjelpeorganisasjon, for eksempel Røde Kors. Å gi blod er vanligvis ikke hjelpearbeid.
+      - **h. Trafikkopplæring til klasse B:** sikkerhetskurs på bane, sikkerhetskurs på vei (del 2 og 3) og førerprøven, med rimelig reisetid.
+      - **i. Representasjon** på arrangement på nasjonalt og internasjonalt nivå.
+    nn: |
+      Fråvær som er dokumentert med ein av desse grunnane, tel ikkje, same kor i skoleåret det er (§ 9-8 andre ledd bokstav b–i). Eleven kan dokumentere det når som helst, og skolen må ta imot dokumentasjonen fortløpande. Det udokumenterte fråværet kan likevel ikkje vere meir enn 10 prosent.
+
+      - **b. Velferd:** omsorg for eigne barn, gravferd eller alvorleg sjukdom i familien, konfirmasjon. Kor mykje som kan unntakast, avgjer fylkeskommunen.
+      - **c. Religiøse høgtidsdagar** utanom dei offentlege heilagdagane, høgst to dagar.
+      - **d. Lovpålagt oppmøte:** å vitne i ei rettssak eller møte på sesjon. Å sone ei straff er ikkje lovpålagt oppmøte.
+      - **e. Arbeid som tillitsvald** i ein organisasjon.
+      - **f. Politisk arbeid:** til dømes i kommunestyret eller ein politisk organisasjon. Politisk streik er ikkje politisk arbeid.
+      - **g. Hjelpearbeid** for ein hjelpeorganisasjon, til dømes Raudekrossen. Å gi blod er vanlegvis ikkje hjelpearbeid.
+      - **h. Trafikkopplæring til klasse B:** tryggleikskurs på bane, tryggleikskurs på veg (del 2 og 3) og førarprøva, med rimeleg reisetid.
+      - **i. Representasjon** på arrangement på nasjonalt og internasjonalt nivå.
+  paragrafer: [opplaeringsforskrifta/9-8]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 andre ledd bokstav b–i", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.3.3 Fravær som skyldes årsaker som nevnt i § 9-8 andre ledd bokstav b til i", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på hver grunn riktige og dekkende nok (rundskrivet punkt 3.3.3)?"
+    - "Er det riktig å skrive at det udokumenterte fraværet likevel ikke kan være mer enn 10 prosent?"
+
+- id: fr-ikke-fravaer
+  type: regel
+  tittel:
+    nb: "Det som ikke er fravær"
+    nn: "Det som ikkje er fråvær"
+  tekst:
+    nb: |
+      Dette regnes ikke som fravær fra opplæringen, og føres ikke mot grensen:
+
+      - samtale eller undersøkelse hos skolehelsetjenesten
+      - rådgiving på skolen, og utredning hos PP-tjenesten og Statped
+      - studiearbeid som er avtalt med faglæreren på forhånd
+      - elevrådsarbeid og annet elevarbeid som skolen har godkjent
+      - avtalt samtale med rektor eller andre ansatte på skolen
+      - intervju til læreplass
+      - særskilt, ny og utsatt eksamen, og privatisteksamen i fremmedspråk når den er en del av fagvalget
+      - opplæring som ikke blir holdt, for eksempel ved streik
+      - opplæring hjemme ved langvarig sykdom, i institusjon eller som fjernundervisning
+
+      Rektor kan avgjøre at det ikke skal føres fravær når årsaken åpenbart er utenfor elevens kontroll, for eksempel stans i kollektivtrafikken. Eleven må likevel delta så mye at faglæreren har grunnlag for karakter.
+    nn: |
+      Dette blir ikkje rekna som fråvær frå opplæringa, og blir ikkje ført mot grensa:
+
+      - samtale eller undersøking hos skolehelsetenesta
+      - rådgiving på skolen, og utgreiing hos PP-tenesta og Statped
+      - studiearbeid som er avtalt med faglæraren på førehand
+      - elevrådsarbeid og anna elevarbeid som skolen har godkjent
+      - avtalt samtale med rektor eller andre tilsette på skolen
+      - intervju til læreplass
+      - særskild, ny og utsett eksamen, og privatisteksamen i framandspråk når han er ein del av fagvalet
+      - opplæring som ikkje blir halden, til dømes ved streik
+      - opplæring heime ved langvarig sjukdom, i institusjon eller som fjernundervisning
+
+      Rektor kan avgjere at det ikkje skal førast fråvær når årsaka openbert er utanfor kontrollen til eleven, til dømes stans i kollektivtrafikken. Eleven må likevel delta så mykje at faglæraren har grunnlag for karakter.
+  paragrafer: [opplaeringsforskrifta/9-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-9" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.1 og 3.2 Fravær fra opplæringen som ikke omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over det som ikke er fravær, riktig og fullstendig nok (rundskrivet punkt 3.1 og 3.2)?"
+
+- id: fr-skjonn
+  type: regel
+  tittel:
+    nb: "Rektors skjønn opp til 15 prosent"
+    nn: "Skjønet til rektor opp til 15 prosent"
+  tekst:
+    nb: |
+      Er eleven over 10 prosent uten nok dokumentasjon, kan rektor selv avgjøre at eleven likevel får karakter, når årsaken til fraværet gjør det klart urimelig at grensen skal gjelde. Et eksempel er en elev som har nådd grensen og så forsover seg.
+
+      - Egenmeldt og udokumentert fravær kan ikke være mer enn 15 prosent. Dokumentert fravær kommer i tillegg, så det samlede fraværet kan være høyere.
+      - Kalkulatoren regner helsefravær med legeerklæring fra før grensen ble nådd, med i de 15 prosentene.
+      - Det er årsaken til fraværet som avgjør, ikke hvilken karakter eleven ligger an til.
+      - Det er ikke en rett eleven kan kreve eller klage på.
+      - Faglæreren må uansett ha nok grunnlag for karakter. En elev kan være innenfor grensen og likevel ikke få karakter fordi grunnlaget ikke er nok.
+    nn: |
+      Er eleven over 10 prosent utan nok dokumentasjon, kan rektor sjølv avgjere at eleven likevel får karakter, når årsaka til fråværet gjer det klart urimeleg at grensa skal gjelde. Eit døme er ein elev som har nådd grensa og så forsøv seg.
+
+      - Eigenmeldt og udokumentert fråvær kan ikkje vere meir enn 15 prosent. Dokumentert fråvær kjem i tillegg, så det samla fråværet kan vere høgare.
+      - Kalkulatoren reknar helsefråvær med legeerklæring frå før grensa vart nådd, med i dei 15 prosentane.
+      - Det er årsaka til fråværet som avgjer, ikkje kva karakter eleven ligg an til.
+      - Det er ikkje ein rett eleven kan krevje eller klage på.
+      - Faglæraren må uansett ha nok grunnlag for karakter. Ein elev kan vere innanfor grensa og likevel ikkje få karakter fordi grunnlaget ikkje er nok.
+  paragrafer: [opplaeringsforskrifta/9-8]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.4 Skjønn opp til 15 prosent", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "5.2 Fraværsgrensen og vurderingsgrunnlaget", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/5.hva-er-skillet-mellom-fravarsgrensen-og-annet-regelverk/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at helsefravær med legeerklæring fra før grensen ble nådd, regnes med i de 15 prosentene (eier 04.10.2026, praksislisten «fravaer-15-prosent-legeerklaering»)?"
+
+- id: fr-arstimetall
+  type: regel
+  tittel:
+    nb: "Årstimetallet og øktene"
+    nn: "Årstimetalet og øktene"
+  tekst:
+    nb: |
+      Grensen regnes av årstimetallet i faget det skoleåret, slik det står i fag- og timefordelingen. Én time er en klokketime. Er øktene kortere eller lengre, regnes grensen om til økter. Eleven er innenfor så lenge fraværet ikke er mer enn grensen.
+
+      - **Hele årstimetallet** brukes alltid, også når eleven begynner sent eller bytter fag. Ved fagbytte starter fraværet i det nye faget på null, men grensen er den samme.
+      - **Gjennomgående fag**, for eksempel norsk og kroppsøving: timetallet det ene skoleåret, ikke hele faget.
+      - **Eget årstimetall i fylket:** Har fylkeskommunen fastsatt flere timer i en lokal fag- og timefordeling, gjelder det tallet. Skriv det inn selv.
+      - **Mer opplæring** i fag som ikke er bestått, med færre timer: Grensen regnes av det reduserte timetallet. Skriv det inn selv.
+      - **Én avregning for hele året,** ikke per halvår. Fraværet følger ikke med når eleven bytter skole.
+    nn: |
+      Grensa blir rekna av årstimetalet i faget det skoleåret, slik det står i fag- og timefordelinga. Éin time er ein klokketime. Er øktene kortare eller lengre, blir grensa rekna om til økter. Eleven er innanfor så lenge fråværet ikkje er meir enn grensa.
+
+      - **Heile årstimetalet** blir alltid brukt, også når eleven byrjar seint eller byter fag. Ved fagbyte startar fråværet i det nye faget på null, men grensa er den same.
+      - **Gjennomgåande fag**, til dømes norsk og kroppsøving: timetalet det eine skoleåret, ikkje heile faget.
+      - **Eige årstimetal i fylket:** Har fylkeskommunen fastsett fleire timar i ei lokal fag- og timefordeling, gjeld det talet. Skriv det inn sjølv.
+      - **Meir opplæring** i fag som ikkje er bestått, med færre timar: Grensa blir rekna av det reduserte timetalet. Skriv det inn sjølv.
+      - **Éi avrekning for heile året,** ikkje per halvår. Fråværet følgjer ikkje med når eleven byter skole.
+  paragrafer: [opplaeringsforskrifta/9-8]
+  kilder:
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.5–3.9", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+    - { id: udir-grep, punkt: "Årstimetallet i fagene" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å bruke hele årstimetallet når eleven begynner sent eller bytter fag, og at fraværet i det nye faget starter på null (eier 04.10.2026, rundskrivet punkt 3.9)?"
+
+- id: fr-hvem
+  type: regel
+  tittel:
+    nb: "Hvem grensen gjelder for"
+    nn: "Kven grensa gjeld for"
+  tekst:
+    nb: "Fraværsgrensen gjelder alle elever i videregående skole, også på påbygging (Vg3 og Vg4). Den gjelder ikke for lærlinger, lærekandidater, praksisbrevkandidater og voksne, og heller ikke for elever på yrkesfag som får et annet opplæringstilbud i stedet for opplæring i bedrift."
+    nn: "Fråværsgrensa gjeld alle elevar i vidaregåande skole, også på påbygging (Vg3 og Vg4). Ho gjeld ikkje for lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne, og heller ikkje for elevar på yrkesfag som får eit anna opplæringstilbod i staden for opplæring i bedrift."
+  kilder:
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "2. Hvem gjelder fraværsgrensen for", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/2.-hvem-gjelder-fravarsgrensen-for/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at grensen ikke gjelder for elever på yrkesfag som får et annet opplæringstilbud i stedet for opplæring i bedrift (rundskrivet punkt 2)?"
+
+- id: fr-vitnemal
+  type: regel
+  tittel:
+    nb: "Fraværsgrensen og fraværet på vitnemålet"
+    nn: "Fråværsgrensa og fråværet på vitnemålet"
+  tekst:
+    nb: |
+      Grunnene som unntar fravær, er de samme, men reglene er ulike:
+
+      - **Hva det gjelder:** Fraværsgrensen gjelder hvert fag for seg og kan gjøre at eleven ikke får karakter. Fraværet på vitnemålet er samlet for alle fag og har ingen kobling til karakterene.
+      - **Timer eller dager:** Ved grensen unntas timer. På vitnemålet unntas bare dager, så en time hos tannlegen kan ikke strykes der.
+      - **Hvor mye:** Ved grensen er det ingen øvre grense for dokumentert fravær. På vitnemålet kan høyst ti dager per skoleår strykes.
+      - **Helsefravær:** Ved grensen må helsefravær etter 10 prosent dokumenteres av helsepersonell. På vitnemålet kan helsefravær først strykes fra og med fjerde dag, også med egenmelding når fraværet er innenfor 10 prosent i faget. Har eleven dokumentert høyere risiko for helserelatert fravær, kan det strykes fra første dag.
+    nn: |
+      Grunnane som unntek fråvær, er dei same, men reglane er ulike:
+
+      - **Kva det gjeld:** Fråværsgrensa gjeld kvart fag for seg og kan gjere at eleven ikkje får karakter. Fråværet på vitnemålet er samla for alle fag og har inga kopling til karakterane.
+      - **Timar eller dagar:** Ved grensa blir timar unntekne. På vitnemålet blir berre dagar unntekne, så ein time hos tannlegen kan ikkje strykast der.
+      - **Kor mykje:** Ved grensa er det inga øvre grense for dokumentert fråvær. På vitnemålet kan høgst ti dagar per skoleår strykast.
+      - **Helsefråvær:** Ved grensa må helsefråvær etter 10 prosent dokumenterast av helsepersonell. På vitnemålet kan helsefråvær først strykast frå og med fjerde dag, også med eigenmelding når fråværet er innanfor 10 prosent i faget. Har eleven dokumentert høgare risiko for helserelatert fråvær, kan det strykast frå første dag.
+  paragrafer: [opplaeringsforskrifta/9-53]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-53 fjerde og femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-53" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "5.1 Forskjellen på reglene om fraværsgrense og føring av fravær på vitnemålet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/5.hva-er-skillet-mellom-fravarsgrensen-og-annet-regelverk/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er forskjellene mellom fraværsgrensen og fraværet på vitnemålet gjengitt riktig, særlig om helsefravær og egenmelding (rundskrivet punkt 5.1, § 9-53 femte ledd)?"

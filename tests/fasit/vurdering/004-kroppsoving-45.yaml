@@ -1,0 +1,17 @@
+id: vurdering-004
+beskrivelse: "FR4: Kroppsøving vg2 (KRO1018), 56 timer, økter på 45 minutter. Gjennomgående fag."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: KRO1018
+  arstimer: 56
+  minutter: 45
+forventet:
+  grense_timer: 5.6
+  grense_okter: 7.47
+  innenfor: 7
+  over: 8
+  skjonn: 11
+begrunnelse: >-
+  56 × 10 % = 5,6 timer = 7,47 økter: 7 innenfor, 8 over. 15 %: 8,4 timer = 11,2 økter, rektors skjønn opp til 11.
+  Timetallet for det ene skoleåret (rundskrivet punkt 3.8). Eier 04.10.2026.

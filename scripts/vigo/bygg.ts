@@ -1,6 +1,7 @@
 // Bygger dataene i data/vigo/ fra radene i VIGO Kodeverksbase, kontrollerer dem og finner endringene siden forrige
 // henting. Rene funksjoner, testes i tests/unit/vigo.test.ts (avgjørelse 026).
-import type { Fagrelasjoner, Merknad, Merknader, Skolenummer } from '../../src/modules/fag/vigo/skjema.ts';
+import type { Fagindeks } from '../../src/modules/fag/skjema.ts';
+import type { Fagrelasjoner, Fagvurdering, Merknad, Merknader, Skolenummer, Vigoavvik } from '../../src/modules/fag/vigo/skjema.ts';
 
 /** En rad fra API-et. Bare feltene som brukes, er beskrevet. */
 export type Vigorad = Record<string, unknown>;
@@ -83,9 +84,85 @@ export function byggFagrelasjoner(
       byggerPaa: sortert(Object.fromEntries(Object.entries(byggerPaa).map(([k, v]) => [k, [...v].sort()]))),
       navn: sortert(navn),
       grunnlag: sortert(Object.fromEntries(Object.entries(grunnlag).map(([k, v]) => [k, [...v].sort()]))),
+      // Fylles av byggVurdering, som trenger fagindeksen fra Grep.
+      vurdering: {},
+      avvik: {},
     },
     merknader,
   };
+}
+
+/** Trekkordningen i Grep og teksten VIGO bruker for den samme ordningen (feltene examCourseType…). */
+export const TREKK_I_VIGO: Readonly<Record<string, string>> = {
+  trekkordning_1: 'Ingen eksamen',
+  trekkordning_2: 'Trekkfag',
+  trekkordning_3: 'Obligatorisk',
+  trekkordning_saerskilt_eksamen: 'Bare særskilt eksamen',
+};
+
+const sentralLokal = (v: unknown): 'sentral' | 'lokal' | null => (v === 'Sentral' ? 'sentral' : v === 'Lokal' ? 'lokal' : null);
+
+/**
+ * Vurderingen i fagene i fagindeksen fra Grep (fase 6): sentralt eller lokalt gitt eksamen og sensur fra «courses»,
+ * og fagmerknadene fra «fam-connected-to-course» (code1 er FAM-koden, code2 fagkoden). Samtidig kontrolleres
+ * årstimetallet og trekkordningen fra Grep mot VIGO. Bare avvikene lagres, med VIGOs verdi, så samme opplysning ikke
+ * står to steder. `linjer` beskriver avvikene til kontrollsaken.
+ */
+export function byggVurdering(
+  rader: { fag: readonly Vigorad[]; fam: readonly Vigorad[] },
+  indeks: Pick<Fagindeks, 'fag'>,
+): { vurdering: Fagrelasjoner['vurdering']; avvik: Fagrelasjoner['avvik']; linjer: string[]; antall: number } {
+  const vurdering: Record<string, Fagvurdering> = {};
+  const avvik: Record<string, Vigoavvik> = {};
+  const linjer: string[] = [];
+  const famer: Record<string, Set<string>> = {};
+  for (const r of rader.fam) {
+    const fam = tekst(r.code1);
+    const kode = tekst(r.code2);
+    if (!fam || !kode || !/^FAM\d+$/.test(fam) || !indeks.fag[kode]) continue;
+    (famer[kode] ??= new Set()).add(fam);
+  }
+  let antall = 0;
+  for (const r of rader.fag) {
+    const kode = tekst(r.courseCode);
+    const fag = kode ? indeks.fag[kode] : undefined;
+    if (!kode || !fag) continue;
+    antall++;
+    const v: Fagvurdering = {};
+    const eksamen = sentralLokal(r.task);
+    const sensur = sentralLokal(r.censorship);
+    if (eksamen) v.eksamen = eksamen;
+    if (sensur && sensur !== eksamen) v.sensur = sensur;
+    const fam = famer[kode];
+    if (fam) v.fam = [...fam].sort((a, b) => a.localeCompare(b, 'nb', { numeric: true }));
+    if (Object.keys(v).length > 0) vurdering[kode] = v;
+
+    // Kontrollen: årstimetallet og trekkordningen for elev og privatist.
+    const a: Vigoavvik = {};
+    const timer = typeof r.yearHours === 'number' && r.yearHours > 0 ? r.yearHours : null;
+    if (fag.timer !== null && timer !== fag.timer) {
+      a.timer = timer;
+      linjer.push(`${kode} ${fag.navn.nb}: årstimetallet er ${fag.timer} i Grep og ${timer ?? 'tomt'} i VIGO.`);
+    }
+    for (const [hvem, felt, navn] of [
+      ['elev', 'examCourseTypePupil', 'elever'],
+      ['privatist', 'examCourseTypePrivateCandidate', 'privatister'],
+    ] as const) {
+      const trekk = fag[hvem]?.trekk;
+      const iGrep = trekk ? TREKK_I_VIGO[trekk] : undefined;
+      if (!iGrep) continue;
+      const iVigo = tekst(r[felt]);
+      if (iVigo !== iGrep) {
+        a[hvem] = iVigo;
+        linjer.push(`${kode} ${fag.navn.nb}: trekkordningen for ${navn} er «${iGrep}» i Grep og «${iVigo ?? 'tom'}» i VIGO.`);
+      }
+    }
+    if (Object.keys(a).length > 0) avvik[kode] = a;
+  }
+  const iVigo = new Set(rader.fag.map((r) => tekst(r.courseCode)));
+  for (const kode of Object.keys(indeks.fag)) if (!iVigo.has(kode)) linjer.push(`${kode}: finnes i Grep, men ikke i VIGO.`);
+  const sortert = <V>(o: Record<string, V>) => Object.fromEntries(Object.entries(o).sort(([x], [y]) => x.localeCompare(y)));
+  return { vurdering: sortert(vurdering), avvik: sortert(avvik), linjer: linjer.sort(), antall };
 }
 
 /** En fagmerknad (FAM) eller vitnemålsmerknad (VMM) fra kodebasen. */
@@ -159,6 +236,11 @@ export function validerVigo(rel: Fagrelasjoner, m: Merknader): string[] {
   if (m.sokerstatuser.length < 40 || m.sokerstatuser.some((x) => !/^[A-ZÆØÅ][A-ZÆØÅ0-9]+$/.test(x.kode))) feil.push(`Statusene på søkerønsker ser ikke ut som ventet (${m.sokerstatuser.length}).`);
   const grunnlag = Object.values(rel.grunnlag).flat().length;
   if (grunnlag < 300) feil.push(`Fant bare ${grunnlag} koblinger i grunnlaget for inntak.`);
+  const eksamen = Object.values(rel.vurdering).filter((v) => v.eksamen).length;
+  if (eksamen < 1000) feil.push(`Fant bare ${eksamen} fag med sentralt eller lokalt gitt eksamen.`);
+  if (!Object.values(rel.vurdering).some((v) => v.fam)) feil.push('Fant ingen fagmerknader knyttet til fagene.');
+  // Mange avvik betyr oftere at VIGO har endret feltene enn at Grep har feil.
+  if (Object.keys(rel.avvik).length > 200) feil.push(`${Object.keys(rel.avvik).length} fag har avvik mellom Grep og VIGO.`);
   return feil;
 }
 
@@ -194,6 +276,12 @@ export function sammenlignVigo(gammel: { rel: Fagrelasjoner; m: Merknader } | nu
   const fjernedeG = [...gg].filter((p) => !ng.has(p));
   if (nyeG.length > 0) ut.push(`Grunnlag for inntak, nye koblinger (${nyeG.length}): ${nyeG.slice(0, 10).join(', ')}${nyeG.length > 10 ? ' …' : ''}`);
   if (fjernedeG.length > 0) ut.push(`Grunnlag for inntak, fjernede koblinger (${fjernedeG.length}): ${fjernedeG.slice(0, 10).join(', ')}${fjernedeG.length > 10 ? ' …' : ''}`);
+  const gv = gammel.rel.vurdering ?? {};
+  const vtekst = (v: Fagvurdering | undefined) => (v ? [v.eksamen ? `${v.eksamen} eksamen` : '', v.sensur ? `${v.sensur} sensur` : '', v.fam?.join(' ') ?? ''].filter(Boolean).join(', ') : 'ingen');
+  const vurderingsendringer = [...new Set([...Object.keys(gv), ...Object.keys(ny.rel.vurdering)])]
+    .filter((k) => vtekst(gv[k]) !== vtekst(ny.rel.vurdering[k]))
+    .map((k) => `${k}: ${vtekst(ny.rel.vurdering[k])} (var ${vtekst(gv[k])})`);
+  if (vurderingsendringer.length > 0) ut.push(`Vurdering i fag, endret (${vurderingsendringer.length}): ${vurderingsendringer.slice(0, 10).join('; ')}${vurderingsendringer.length > 10 ? ' …' : ''}`);
   for (const [liste, navn] of [
     ['fagmerknader', 'fagmerknad'],
     ['vitnemalsmerknader', 'vitnemålsmerknad'],

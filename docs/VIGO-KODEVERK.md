@@ -25,6 +25,8 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 | `wish-statuses` | 55 | Oppslaget «Status på søkerønsker» i begrepsbanken, med søk, i VIGOs nummerrekkefølge (avgjørelse 051). |
 | `entry-requirements` | 44 493 (580 for programområdene i Grep, alle nasjonale) | Vg4 påbygging etter lærefagene i Opplæringsløp, der Grep ikke sier hva påbyggingen bygger på. Resten sammenlignes med «bygger på» i Grep i docs/TILBUDSSTRUKTUR.md (avgjørelse 051). |
 | `relation/course-paabygning` («fag_paabygning») | 131 (49 fag etter at VIGOs egne koder er tatt bort) | Rekkefølgen på fag over flere trinn i tilbudsstrukturen, f.eks. Teater og bevegelse 1 → 2. Eier 01.10.2026: fagene tas i denne rekkefølgen. Aktivitetslære og treningsledelse på idrettsfag mangler i VIGO. |
+| `courses` | 22 469 (1 978 i fagindeksen fra Grep) | Sentralt eller lokalt gitt eksamen (`task`) og sensuren når den er en annen (`censorship`) på fagarket (fase 6, avgjørelse 057). Årstimetallet og trekkordningen for elev og privatist kontrollerer fagindeksen fra Grep. Bare avvikene lagres, og de står i kontrollsaken og på fagarket. 04.10.2026: ingen avvik. |
+| `relation/fam-connected-to-course` | 153 (12 til fag i fagindeksen) | Fagmerknadene som hører til faget, på fagarket med lenke til oppslaget (avgjørelse 057). |
 
 ## Mulig bruk senere
 
@@ -32,10 +34,8 @@ Oversikt over VIGO Kodeverksbase (`kodeverk.vigo.no`) til senere apputvikling. A
 
 | Tabell eller kobling | Antall | Innhold | Mulig bruk |
 |---|--:|---|---|
-| `relation/fam-connected-to-course` | 153 | Hvilke FAM-koder som hører til hvilke fag | Vise aktuelle fagmerknader på fagsiden. |
-| `exam-assessments` | 10 611 | Vurderingsordning per fagkode: trekkfag, eksamensform på vitnemålet, vurderingsform, avsluttende fag | Kontrollere vurderingsordningen fra Grep. Fraværskalkulator og vurdering i fase 6. |
+| `exam-assessments` | 10 611 | Vurderingsordning per fagkode: trekkfag, eksamensform på vitnemålet, vurderingsform, avsluttende fag | Ikke i bruk: `courses` har det samme for elev og privatist, én rad per fagkode (fase 6). |
 | `relation/exam-assessment-pupil` og `…-private` | 5 444 og 4 072 | Eksamensordning for elever og privatister per fag | Samme som over. |
-| `courses` | 22 469 | Alle fagkoder med navn, type, omfang på vitnemålet, sensur, om faget teller for poeng | Kontrollere Grep. «Teller for poeng» kan brukes i poengberegningen i fase 5. |
 | `relation/main-course-sub-course` | 8 618 | Hovedfag og delfag (f.eks. tverrfaglig eksamen og delene) | Bedre kobling mellom eksamenskoder og fag i tilbudsstrukturen. |
 | `similar-courses` | 1 740 | Par av fagkoder som VIGO regner som «like» (f.eks. KRO1001 og KRO1004) | Antakelig for godkjenning av fag tatt tidligere. Eksemplene er ikke i bruk i dag (eier 01.10.2026). Ikke i bruk. |
 | `grades` | 131 | Karakterkoder (tall, IV, fritatt osv.) og om de teller som karakter | Forklaring av karakterkoder i fase 6. |

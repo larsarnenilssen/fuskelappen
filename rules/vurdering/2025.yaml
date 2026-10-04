@@ -1,0 +1,36 @@
+# Fraværsgrensen i videregående skole etter opplæringsforskrifta § 9-8 (fase 6, pakke 2). Paragrafen ble sist endret
+# ved forskrift 18. februar 2025 nr. 234, i kraft 1.8.2025. Ny periode bare når paragrafen endres.
+# Alle verdier er ikke kontrollert (kontrollert: null) til eier har godkjent dem.
+id: vurdering-2025
+regelverk: vurdering
+gyldig_fra: "2025-08-01"
+gyldig_til: "2099-12-31"
+kilde: opplaeringsforskrifta
+verdier:
+  fravaer_grense_prosent:
+    verdi: 10
+    enhet: prosent
+    kilde: { id: opplaeringsforskrifta, punkt: "§ 9-8 første ledd" }
+    kontrollert: null
+    sitat: "fråvær i meir enn ti prosent av årstimetalet i eit fag"
+    merknad: >-
+      Grensen er 10,0 prosent av årstimetallet i faget det skoleåret, og kan ikke rundes ned (Udirs rundskriv om
+      fraværsgrensen punkt 3.5). Eleven er innenfor så lenge fraværet ikke er mer enn grensen (eier 04.10.2026, FR3).
+  fravaer_skjonn_prosent:
+    verdi: 15
+    enhet: prosent
+    kilde: { id: opplaeringsforskrifta, punkt: "§ 9-8 fjerde ledd" }
+    kontrollert: null
+    sitat: "opp til femten prosent eigenmeldt eller udokumentert fråvær"
+    merknad: >-
+      Rektor kan avgjøre at eleven likevel får karakter. Helsefravær med legeerklæring før grensen ble nådd, teller med
+      i rammen (eier 04.10.2026, praksislisten «fravaer-15-prosent-legeerklaering», FR8).
+  klokketime_minutter:
+    verdi: 60
+    enhet: minutter
+    kilde: { id: udir-rundskriv-fravarsgrensen, punkt: "3.6 Én time er en klokketime" }
+    kontrollert: null
+    grunnlag: avledet
+    merknad: >-
+      Rundskrivet sier at én time i fag- og timefordelingen er en klokketime, altså 60 minutter. Er øktene kortere
+      eller lengre, regnes grensen om. Udirs regneeksempel i punkt 3.6 ses bort fra (eier 04.10.2026, FR2).

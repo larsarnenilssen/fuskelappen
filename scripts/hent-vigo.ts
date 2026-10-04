@@ -4,6 +4,9 @@
 //   over flere trinn). Brukes på fagsiden, i fagsøket og i tilbudsstrukturen.
 //   Og hva et programområde gir grunnlag for å søke videre på (f.eks. lærefag → Vg4 påbygging), brukt i
 //   tilbudsstrukturen.
+//   Og vurderingen i fagene i fagindeksen (fase 6): sentralt eller lokalt gitt eksamen, sensuren og fagmerknadene som
+//   hører til faget. Årstimetallet og trekkordningen fra Grep kontrolleres mot VIGO, og bare avvikene lagres. De står
+//   også i kontrollsaken.
 // - merknader.json: fagmerknader (FAM-koder), vitnemålsmerknader (VMM-koder) og status på søkerønsker. Brukes i
 //   begrepsbanken.
 // - skolenummer.json: skolenummeret og organisasjonsnummeret til skolene, som kobler skolene på utdanning.no til
@@ -20,7 +23,7 @@ import { fagrelasjonerSkjema, merknaderSkjema, skolenummerSkjema, type Fagrelasj
 import { USER_AGENT } from './kilder/metoder.ts';
 import { lesForrige, skrivHvisEndret, vigoJson } from './data/hent.ts';
 import { lesFagindeks } from './data/les.ts';
-import { byggFagrelasjoner, byggMerknader, byggSkolenummer, sammenlignVigo, validerVigo, type Vigorad } from './vigo/bygg.ts';
+import { byggFagrelasjoner, byggMerknader, byggSkolenummer, byggVurdering, sammenlignVigo, validerVigo, type Vigorad } from './vigo/bygg.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 export const VIGO = 'https://kodeverk.vigo.no/api';
@@ -59,7 +62,7 @@ const utenTid = <T extends { hentet: string }>(d: T) => vigoJson({ ...d, hentet:
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const hentet = new Date().toISOString();
-  const [erstatter, erstattesAv, brukesSammen, paabygning, fag, vitnemal, sokerstatuser, grunnlag, skoler] = await Promise.all([
+  const [erstatter, erstattesAv, brukesSammen, paabygning, fag, vitnemal, sokerstatuser, grunnlag, skoler, kurs, famKoblinger] = await Promise.all([
     hentAlle('/relation/element-replaces-element'),
     hentAlle('/relation/replaced-by'),
     hentAlle('/relation/course-used-together-with'),
@@ -69,10 +72,18 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     hentAlle('/wish-statuses'),
     hentAlle('/entry-requirements'),
     hentAlle('/schools'),
+    hentAlle('/courses'),
+    hentAlle('/relation/fam-connected-to-course'),
   ]);
   // Grunnlaget for inntak tas bare med for programområdene i fagindeksen, som hentes fra Grep i samme steg.
-  const programomrader = new Set(Object.keys(lesFagindeks(rot).programomrader));
+  const fagindeks = lesFagindeks(rot);
+  const programomrader = new Set(Object.keys(fagindeks.programomrader));
   const { data: rel, merknader: relmerknader } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, hentet, programomrader);
+  // Vurderingen i fagene, og kontrollen av årstimetallet og trekkordningen i fagindeksen fra Grep.
+  const vurdering = byggVurdering({ fag: kurs, fam: famKoblinger }, fagindeks);
+  rel.vurdering = vurdering.vurdering;
+  rel.avvik = vurdering.avvik;
+  if (vurdering.antall < Object.keys(fagindeks.fag).length * 0.9) throw new Error(`Fant bare ${vurdering.antall} av fagkodene i fagindeksen i VIGO. Beholder forrige filer.`);
   const m = byggMerknader({ fag, vitnemal, sokerstatuser }, hentet);
   fagrelasjonerSkjema.parse(rel);
   merknaderSkjema.parse(m);
@@ -105,8 +116,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   }
   const nyeNr = skrivHvisEndret(nrfil, forrigeNr, skolenummer);
   mkdirSync(join(rot, '.generert'), { recursive: true });
-  writeFileSync(join(rot, '.generert/vigo-endringer.json'), `${JSON.stringify({ endret: endret || nyeNr, forste, endringer, merknader: relmerknader }, null, 2)}\n`);
+  writeFileSync(join(rot, '.generert/vigo-endringer.json'), `${JSON.stringify({ endret: endret || nyeNr, forste, endringer, merknader: relmerknader, avvik: vurdering.linjer }, null, 2)}\n`);
   console.log(
-    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${Object.keys(rel.byggerPaa).length} fag som bygger på andre, ${m.fagmerknader.length} fagmerknader, ${m.vitnemalsmerknader.length} vitnemålsmerknader, ${m.sokerstatuser.length} statuser på søkerønsker og ${Object.values(rel.grunnlag).flat().length} koblinger i grunnlaget for inntak. ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
+    `VIGO Kodeverksbase: ${Object.keys(rel.erstatninger).length} utgåtte fagkoder med erstatning, ${Object.keys(rel.laereplaner).length} læreplaner, ${Object.keys(rel.brukesSammen).length} koder i «brukes sammen», ${Object.keys(rel.byggerPaa).length} fag som bygger på andre, ${m.fagmerknader.length} fagmerknader, ${m.vitnemalsmerknader.length} vitnemålsmerknader, ${m.sokerstatuser.length} statuser på søkerønsker, ${Object.values(rel.grunnlag).flat().length} koblinger i grunnlaget for inntak og vurderingen i ${Object.keys(rel.vurdering).length} fag (${vurdering.linjer.length} avvik fra Grep). ${forste ? 'Første henting.' : `${endringer.length} endringer.`}`,
   );
 }

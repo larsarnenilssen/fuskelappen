@@ -4,6 +4,14 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Fraværsgrensen** i Vurdering: velg faget (søk på navn eller kode) eller skriv inn årstimetallet, og velg hvor lange øktene er. Svaret er grensen i klokketimer og økter ved 10 og 15 prosent, med utregningen linje for linje og kilde på hver linje.
+  - **Sjekk fraværet** (valgfritt): fire felt og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Er eleven over 15 prosent, står fagmerknaden med kode.
+  - Under står reglene, lukket til de åpnes: fravær som teller, dokumentert fravær som ikke teller, det som ikke er fravær, rektors skjønn, årstimetallet og øktene, hvem grensen gjelder for, og forskjellen mot fraværet på vitnemålet.
+- **Fagarket** viser fraværsgrensen i faget (med lenke til kalkulatoren med faget valgt), om eksamen er sentralt eller lokalt gitt, og fagmerknadene som hører til faget. Er Grep og VIGO uenige om årstimetallet eller eksamen, står det på fagarket.
+- **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren, og kalkulatoren lenker tilbake.
+
 ## [0.32.0] – 2026-10-04
 
 ### Endret

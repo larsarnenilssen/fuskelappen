@@ -1,12 +1,12 @@
 // Oversikten i Vurdering: delene som kort, som i Inntak og Opplæringstilbud (fase 6, mockup godkjent av eier
-// 04.10.2026). Fravær, eksamen og klage kommer som egne deler i de neste pakkene.
+// 04.10.2026). Fravær har ett kort, kalkulatoren for fraværsgrensen (pakke 2). Eksamen og klage kommer i pakke 3.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Ikon, type Ikonnavn } from '../../../components/Ikon.tsx';
 import { Veiviserinnganger } from '../../../components/Veiviserinnganger.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
-import { hentInnhold, ordenRute, underveisSluttRute, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
+import { fravaerRute, hentInnhold, ordenRute, underveisSluttRute, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 
 function Inngang({ rute, ikon, tittel, tekst }: { rute: string; ikon: Ikonnavn; tittel: string; tekst: string }) {
   return (
@@ -54,6 +54,12 @@ export default function Oversikt() {
             ]}
           />
         )}
+      </section>
+      <section class="lop-del" aria-labelledby="vu-del-fravaer">
+        <h2 class="liten-overskrift" id="vu-del-fravaer">
+          {t('vurdering.delFravaer')}
+        </h2>
+        <Inngang rute={fravaerRute} ikon="klokke" tittel={t('vurdering.fravaer.kort')} tekst={t('vurdering.fravaer.beskrivelse')} />
       </section>
       <section class="lop-del" aria-labelledby="vu-del-orden">
         <h2 class="liten-overskrift" id="vu-del-orden">

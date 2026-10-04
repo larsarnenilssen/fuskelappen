@@ -13,6 +13,7 @@ export function Skjemadel({
   sum,
   oppsummering,
   hoyre,
+  standardLukket = false,
   children,
 }: {
   tittel: string;
@@ -23,9 +24,11 @@ export function Skjemadel({
   oppsummering?: string | null;
   /** Bryter eller knapp til høyre i overskriften, f.eks. «Regn ut lønn». */
   hoyre?: ComponentChildren;
+  /** Delen er lagt sammen til brukeren åpner den, f.eks. et valgfritt skjema. */
+  standardLukket?: boolean;
   children?: ComponentChildren;
 }) {
-  const [lukket, veksle] = useSammenlagt(`del-${del}`);
+  const [lukket, veksle] = useSammenlagt(`del-${del}`, standardLukket);
   const innhold = useId();
   const harInnhold = Boolean(children);
   const vist = lukket && harInnhold && oppsummering ? oppsummering : sum;

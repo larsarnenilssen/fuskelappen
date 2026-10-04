@@ -1,0 +1,16 @@
+id: vurdering-002
+beskrivelse: "FR2: Som FR1, økter på 45 minutter."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 45
+forventet:
+  grense_timer: 14
+  grense_okter: 18.67
+  innenfor: 18
+  over: 19
+begrunnelse: >-
+  14 × 60 ÷ 45 = 18,67 økter. Innenfor med 18 økter, over med 19. Kalkulatoren regner etter regelen, og Udirs
+  regneeksempel i rundskrivet punkt 3.6 (17 og 18) ses bort fra (eier 04.10.2026).

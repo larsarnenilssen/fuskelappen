@@ -1,0 +1,15 @@
+id: vurdering-007
+beskrivelse: "FR7: ENG1007, 60 minutter: 22 timer udokumentert."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 60
+  fravaer: { udokumentert: 22, helse: 0, helse_etter: 0, andre: 0 }
+forventet:
+  teller: 22
+  over_10: 1
+  over_15: 1
+begrunnelse: >-
+  22 > 21 (15 %). Ingen karakter, IV med fagmerknad (§ 9-8 fjerde ledd, rundskrivet punkt 3.4). Eier 04.10.2026.

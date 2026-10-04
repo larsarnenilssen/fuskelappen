@@ -16,7 +16,9 @@ import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { finnKobling, type Koblingsresultat } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
 import { nyGruppe, useKoblingsdata } from '../../arbeidstid/komponenter/Skjema.tsx';
-import { overforSkjema } from '../../arbeidstid/kontekst.ts';
+import { overforSkjema, useHent } from '../../arbeidstid/kontekst.ts';
+import { lastMerknader } from '../../../data/vigo.ts';
+import { beregnGrenser } from '../../vurdering/beregning/fravaer.ts';
 import { hentBegreper } from '../../begreper/innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
@@ -31,7 +33,7 @@ import { htmlSpraak, programmerFor, programSammendrag, udirLenke } from '../opps
 import type { Fag, Fagindeks, Fagtype, Laereplan, Vurdering } from '../skjema.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
 import { brukesSammenMed, erstatterKoder, gjeldendeKoder, nyLaereplan } from '../vigo/oppslag.ts';
-import type { Fagrelasjoner } from '../vigo/skjema.ts';
+import type { Fagrelasjoner, Merknad } from '../vigo/skjema.ts';
 
 /** Navnet på en fagkode: fra fagindeksen, ellers fra VIGO, ellers bare koden. */
 function navnFor(kode: string, indeks: Fagindeks, rel: Fagrelasjoner, malform: Malform): string {
@@ -148,6 +150,91 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
           );
         })}
       </div>
+    </>
+  );
+}
+
+/**
+ * Fraværsgrensen i faget (lenke til kalkulatoren med faget valgt), om eksamen er sentralt eller lokalt gitt, og
+ * fagmerknadene som hører til faget (VIGO, lenke til FAM-oppslaget). Står øverst under «Vurdering» (fase 6, pakke 2).
+ * Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i en merknad.
+ */
+function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; rel: Fagrelasjoner | null; malform: Malform }) {
+  const hent = useHent();
+  const v = rel?.vurdering[kode];
+  const avvik = rel?.avvik[kode];
+  const [merknader, settMerknader] = useState<readonly Merknad[] | null>(null);
+  const fam = v?.fam ?? [];
+  useEffect(() => {
+    if (fam.length > 0) lastMerknader().then((m) => settMerknader(m.fagmerknader), () => undefined);
+  }, [fam.join()]);
+  let grense: number | null = null;
+  try {
+    grense = fag.timer !== null ? beregnGrenser(hent, { arstimer: fag.timer, minutter: 60 }).grense.timer : null;
+  } catch {
+    // Uten regelsett for datoen står ikke raden.
+  }
+  const tom = t('fag.side.avvikTom');
+  const avvikLinjer = avvik
+    ? [
+        ...(avvik.timer !== undefined ? [t('fag.side.avvikTimer', { verdi: avvik.timer === null ? tom : formaterTall(avvik.timer) })] : []),
+        ...(avvik.elev !== undefined ? [t('fag.side.avvikElev', { verdi: avvik.elev ?? tom })] : []),
+        ...(avvik.privatist !== undefined ? [t('fag.side.avvikPrivatist', { verdi: avvik.privatist ?? tom })] : []),
+      ]
+    : [];
+  if (grense === null && !v && avvikLinjer.length === 0) return null;
+  return (
+    <>
+      <dl class="egenskaper fag-ifaget">
+        {grense !== null && fag.timer !== null && (
+          <div>
+            <dt>{t('fag.side.fravaersgrense')}</dt>
+            <dd>
+              <span class="tall">{t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense), arstimer: formaterTall(fag.timer) })}</span>
+              <a class="fag-ifaget-lenke" href={`#/vurdering/fravaer?fag=${kode}`}>
+                {t('fag.side.tilFravaer')}
+              </a>
+            </dd>
+          </div>
+        )}
+        {v?.eksamen && (
+          <div>
+            <dt>{t('fag.side.eksamenGitt')}</dt>
+            <dd>
+              {t(`fag.side.gitt.${v.eksamen}`)}
+              {v.sensur && `, ${t(`fag.side.sensur.${v.sensur}`)}`}
+            </dd>
+          </div>
+        )}
+        {fam.length > 0 && (
+          <div>
+            <dt>{t('fag.side.fagmerknader')}</dt>
+            <dd>
+              <ul class="tett">
+                {fam.map((k) => {
+                  const m = merknader?.find((x) => x.kode === k);
+                  return (
+                    <li key={k}>
+                      <a href={`#/begreper/fagmerknader?q=${k}`}>{k}</a>
+                      {m && ` ${m[malform]}`}
+                    </li>
+                  );
+                })}
+              </ul>
+            </dd>
+          </div>
+        )}
+      </dl>
+      {avvikLinjer.length > 0 && (
+        <div class="merknad merknad-advarsel fag-avvik">
+          <p>{t('fag.side.avvikVigo')}</p>
+          <ul class="tett">
+            {avvikLinjer.map((l) => (
+              <li key={l}>{l}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 }
@@ -388,7 +475,7 @@ export default function Fagside({ parametre }: SideProps) {
   const erstatter = rel ? erstatterKoder(kode, rel) : [];
   const sammen = rel ? brukesSammenMed(kode, rel) : [];
   const nyPlan = rel && lp ? nyLaereplan(lp, rel) : null;
-  const medVigo = erstatter.length > 0 || sammen.length > 0 || nyPlan !== null;
+  const medVigo = erstatter.length > 0 || sammen.length > 0 || nyPlan !== null || Boolean(rel?.vurdering[kode]) || Boolean(rel?.avvik[kode]);
   const erYff = fag.type === 'yrkesfaglig_fordypning';
   const typeBegrep = BEGREP_FOR_TYPE[fag.type];
   const ndlafag = ndla?.fag[kode] ?? [];
@@ -526,6 +613,7 @@ export default function Fagside({ parametre }: SideProps) {
       )}
 
       <Seksjon id="vurdering" lukket tittel={t('fag.side.vurdering')}>
+        <IFaget t={t} kode={kode} fag={fag} rel={rel} malform={malform} />
         {fag.elev || fag.privatist ? (
           <div class="fag-vurderinger">
             {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}

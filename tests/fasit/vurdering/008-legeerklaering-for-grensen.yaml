@@ -1,0 +1,17 @@
+id: vurdering-008
+beskrivelse: "FR8: ENG1007, 60 minutter: 10 timer sykdom med legeerklæring levert med en gang, så 5 timer udokumentert."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 60
+  fravaer: { udokumentert: 5, helse: 10, helse_etter: 0, andre: 0 }
+forventet:
+  teller: 15
+  over_10: 1
+  over_15: 0
+begrunnelse: >-
+  Legeerklæring før grensen er nådd, unntar ikke: 15 timer teller. Over 10 %, innenfor 21, så rektor kan avgjøre at
+  eleven likevel får karakter. Helsefraværet med legeerklæring og det udokumenterte teller sammen i 15-prosentrammen
+  (eier 04.10.2026, praksislisten «fravaer-15-prosent-legeerklaering»).

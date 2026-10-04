@@ -1,0 +1,13 @@
+# 057 – Fraværsgrensen, og VIGO som kontroll av fagene i Grep
+
+**Kontekst:** Fase 6, pakke 2 (godkjent av eier 04.10.2026, `docs/arbeidsordrer/fase-6-forslag.md`). Skoleledere trenger fraværsgrensen i et fag i timer og økter, og en rask sjekk av om et fravær er innenfor. Eier ville også at VIGO Kodeverksbase kontrollerer fagarkene. Svarene fra eier på forslaget til pakke 2 står under «Valg».
+
+**Valg:**
+- **Kalkulatoren** (`#/vurdering/fravaer?fag=<kode>`) følger poengberegningen (avgjørelse 047): faget (søk, bare fag med årstimetall) eller timer skrevet inn, og øktlengde (45, 60, 90 eller annet) til venstre. Til høyre står grensen i et resultatkort, med utregningen linje for linje og kortnavn på kilden. «Sjekk fraværet» er lukket til brukeren åpner det, og telles i økter av valgt lengde. Skjemadel har fått `standardLukket` for dette.
+- **Regelen:** grensen i økter er årstimer × 10 % × 60 ÷ øktlengde, og eleven er innenfor med det største hele antallet økter som ikke er mer enn grensen (FR2 og FR3). Hele årstimetallet brukes alltid. Tallene 10, 15 og 60 står i `rules/vurdering/2025.yaml`, som gjelder fra 1.8.2025, da § 9-8 sist ble endret. Verdisjekken kjenner nå tallordet «femten».
+- **Helsefravær «etter grensen»** teller til grensen er nådd når resten av fraværet er under grensen, og kalkulatoren sier det i en merknad (eier, svar 2). Egenmelding etter grensen ved dokumentert tilstand står i hjelpeteksten (svar 3). Over 15 % står fagmerknaden med navnet fra VIGO og koden i parentes, «Overskredet fraværsgrense» (FAM51) (svar 1).
+- **Fasittestene FR1–FR8** står i `tests/fasit/vurdering/`. Årstimetallet i hvert eksempel sjekkes mot Grep.
+- **VIGO:** `courses` og `relation/fam-connected-to-course` hentes i `scripts/hent-vigo.ts`. For fagene i fagindeksen lagres bare det som er nytt: sentralt eller lokalt gitt eksamen (`task`), sensuren når den er en annen (`censorship`, eier svar 5) og fagmerknadene. Årstimetallet og trekkordningen fra Grep kontrolleres mot VIGO, og bare avvikene lagres, med VIGOs verdi. Alt står i `data/vigo/fagrelasjoner.json`, som fagarket allerede laster. VIGO-dataene blandes ikke inn i fagindeksen fra Grep, så hver kilde beholder sin kildesjekk og sin forrige fil ved feil. Avvik står i kontrollsaken så lenge de finnes, og er merket på fagarket.
+- **Fagarket** viser fraværsgrensen (med lenke til kalkulatoren), eksamen og fagmerknadene øverst under «Vurderingsordning».
+
+**Konsekvens:** Nye regelperioder for § 9-8 trenger bare en ny regelfil og nye fasittester. `fagrelasjoner.json` øker fra 401 til 456 kB, men lastes bare på fagarket. Startpakken øker med om lag 3 kB (til 98,8 kB) for tekstene på bokmål og nynorsk.

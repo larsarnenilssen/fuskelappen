@@ -25,7 +25,9 @@ import {
   rund,
 } from '../../src/modules/arbeidstid/beregning/index.ts';
 import { beregnVg1, beregnVg2Vg3, type Karakterrad, type Vurdering } from '../../src/modules/inntak/beregning/poeng.ts';
+import { beregnGrenser, sjekkFravaer } from '../../src/modules/vurdering/beregning/fravaer.ts';
 import { lesFil } from '../../scripts/innhold/last.ts';
+import { lesFagindeks } from '../../scripts/data/les.ts';
 
 const mappe = __dirname;
 const rot = join(__dirname, '../..');
@@ -92,6 +94,10 @@ interface Fasitinput {
   fylke?: string;
   /** Nøkkelen til tilleggspoengene i fylkets regelsett, f.eks. tilleggspoeng_idrett_2. */
   tilleggspoeng?: string;
+  // Fraværsgrensen (tests/fasit/vurdering).
+  fag?: string;
+  arstimer?: number;
+  fravaer?: { udokumentert?: number; helse?: number; helse_etter?: number; andre?: number };
 }
 
 function krev<T>(verdi: T | undefined, navn: string): T {
@@ -247,6 +253,24 @@ function regn(f: Fasit): Record<string, number> {
           ? beregnVg1(hent, { standpunkt: i.standpunkt ?? [], eksamen: i.eksamen ?? [], valgfag: i.valgfag ?? [], tillegg })
           : beregnVg2Vg3(hent, { trinn, rader: krev(i.rader, 'rader') });
       return { snitt: r.snittAvrundet, poeng: r.poeng, samlet: r.samlet };
+    }
+    case 'fravaer': {
+      const arstimer = krev(i.arstimer, 'arstimer');
+      // Årstimetallet i eksempelet skal være det samme som i Grep for faget (data/grep/fagindeks.json).
+      if (i.fag) {
+        const iGrep = lesFagindeks(rot).fag[i.fag]?.timer;
+        if (iGrep !== arstimer) throw new Error(`${f.id}: ${i.fag} har ${String(iGrep)} timer i Grep, ikke ${arstimer}`);
+      }
+      const g = beregnGrenser(hent, { arstimer, minutter: krev(i.minutter, 'minutter') });
+      const ut: Record<string, number> = { grense_timer: g.grense.timer, grense_okter: g.grense.okter, innenfor: g.grense.innenfor, over: g.grense.over, skjonn: g.skjonn.innenfor };
+      if (i.fravaer) {
+        const fr = i.fravaer;
+        const r = sjekkFravaer(g, { udokumentert: fr.udokumentert ?? 0, helse: fr.helse ?? 0, helseEtter: fr.helse_etter ?? 0, andre: fr.andre ?? 0 });
+        ut.teller = r.teller;
+        ut.over_10 = r.utfall === 'innenfor' ? 0 : 1;
+        ut.over_15 = r.utfall === 'over' ? 1 : 0;
+      }
+      return ut;
     }
     default:
       throw new Error(`Ukjent kalkulator i ${f.id}: ${f.kalkulator}`);

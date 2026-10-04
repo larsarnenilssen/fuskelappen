@@ -1,7 +1,7 @@
 // Dataene fra VIGO Kodeverksbase: bygging, kontroll og sammenligning (scripts/vigo/bygg.ts) og oppslag
 // (src/modules/fag/vigo/oppslag.ts), med små testdata (avgjørelse 026).
 import { describe, expect, it } from 'vitest';
-import { byggFagrelasjoner, byggMerknader, erOpplaeringsfagkode, lesMerknad, lesSokerstatus, sammenlignVigo, validerVigo } from '../../scripts/vigo/bygg.ts';
+import { byggFagrelasjoner, byggMerknader, byggVurdering, erOpplaeringsfagkode, lesMerknad, lesSokerstatus, sammenlignVigo, validerVigo } from '../../scripts/vigo/bygg.ts';
 import { brukesSammenMed, erstatterKoder, gjeldendeKoder, nyLaereplan, sokMerknader } from '../../src/modules/fag/vigo/oppslag.ts';
 import type { Fagrelasjoner } from '../../src/modules/fag/vigo/skjema.ts';
 
@@ -119,7 +119,8 @@ describe('merknadene', () => {
 
   it('kontrolleres, og endringer meldes', () => {
     const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, 'x', programomrader);
-    expect(validerVigo(data, m)).toHaveLength(7);
+    // Sju feil i fagrelasjonene og merknadene, og to for vurderingen i fagene, som er tom her.
+    expect(validerVigo(data, m)).toHaveLength(9);
     const ny: Fagrelasjoner = { ...data, grunnlag: { 'HSHEA3----': ['PBPBY4----', 'PBPBY4YK--'] }, erstatninger: { ...data.erstatninger, NYA1001: { ny: ['NYA1002'], navn: 'Ny', utgatt: null } }, brukesSammen: { LBR3020: ['LBR3017'] }, byggerPaa: { DRA2011: ['DRA2010'], DRA2013: ['DRA2012'] } };
     const m2 = { ...m, fagmerknader: [...m.fagmerknader.map((x) => (x.kode === 'FAM10' ? { ...x, nb: 'Ti, endret' } : x)), { ...m.fagmerknader[0], kode: 'FAM70', nb: 'Ny merknad' } as (typeof m.fagmerknader)[number]] };
     expect(sammenlignVigo({ rel: data, m }, { rel: ny, m: m2 })).toEqual([
@@ -133,5 +134,52 @@ describe('merknadene', () => {
       'Ny fagmerknad FAM70: Ny merknad',
     ]);
     expect(sammenlignVigo(null, { rel: data, m })).toEqual([]);
+  });
+});
+
+describe('vurderingen i fagene og kontrollen av Grep', () => {
+  const indeks = {
+    fag: {
+      ENG1007: { navn: { nb: 'Engelsk', nn: 'Engelsk' }, timer: 140, elev: { trekk: 'trekkordning_2' }, privatist: { trekk: 'trekkordning_3' } },
+      NOR1260: { navn: { nb: 'Norsk', nn: 'Norsk' }, timer: 113, elev: { trekk: 'trekkordning_1' }, privatist: null },
+      AKT3103: { navn: { nb: 'Aktivitørfaget, skriftlig', nn: 'Aktivitørfaget, skriftleg' }, timer: null, elev: null, privatist: null },
+      MAN1001: { navn: { nb: 'Mangler i VIGO', nn: 'Manglar i VIGO' }, timer: 10, elev: null, privatist: null },
+    },
+  } as unknown as Parameters<typeof byggVurdering>[1];
+  const kurs = [
+    { courseCode: 'ENG1007', task: 'Sentral', censorship: 'Sentral', yearHours: 140, examCourseTypePupil: 'Trekkfag', examCourseTypePrivateCandidate: 'Obligatorisk' },
+    { courseCode: 'NOR1260', task: null, censorship: null, yearHours: 112, examCourseTypePupil: 'Trekkfag' },
+    { courseCode: 'AKT3103', task: 'Sentral', censorship: 'Lokal', yearHours: null },
+    // Fag som ikke er i fagindeksen, tas ikke med.
+    { courseCode: 'UPF9123', task: 'Lokal', censorship: 'Lokal', yearHours: 645 },
+  ];
+  const fam = [
+    { code1: 'FAM59', code2: 'NOR1260' },
+    { code1: 'FAM58', code2: 'NOR1260' },
+    { code1: 'FAM16', code2: 'UPF9123' },
+  ];
+  const r = byggVurdering({ fag: kurs, fam }, indeks);
+
+  it('gir sentralt eller lokalt gitt eksamen, sensuren når den er en annen, og fagmerknadene', () => {
+    expect(r.vurdering).toEqual({ AKT3103: { eksamen: 'sentral', sensur: 'lokal' }, ENG1007: { eksamen: 'sentral' }, NOR1260: { fam: ['FAM58', 'FAM59'] } });
+    expect(r.antall).toBe(3);
+  });
+
+  it('lagrer bare avvikene fra Grep, med VIGOs verdi', () => {
+    expect(r.avvik).toEqual({ NOR1260: { timer: 112, elev: 'Trekkfag' } });
+    expect(r.linjer).toEqual([
+      'MAN1001: finnes i Grep, men ikke i VIGO.',
+      'NOR1260 Norsk: trekkordningen for elever er «Ingen eksamen» i Grep og «Trekkfag» i VIGO.',
+      'NOR1260 Norsk: årstimetallet er 113 i Grep og 112 i VIGO.',
+    ]);
+  });
+
+  it('melder endringer i vurderingen', () => {
+    const { data } = byggFagrelasjoner({ erstatter, erstattesAv, brukesSammen, paabygning, grunnlag }, 'x', programomrader);
+    const tomme = byggMerknader({ fag: [], vitnemal: [], sokerstatuser: [] }, 'x');
+    const ny: Fagrelasjoner = { ...data, vurdering: { ENG1007: { eksamen: 'lokal' } } };
+    expect(sammenlignVigo({ rel: { ...data, vurdering: { ENG1007: { eksamen: 'sentral' } } }, m: tomme }, { rel: ny, m: tomme })).toEqual([
+      'Vurdering i fag, endret (1): ENG1007: lokal eksamen (var sentral eksamen)',
+    ]);
   });
 });

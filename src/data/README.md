@@ -12,7 +12,7 @@ av skriptene i `scripts/` (kildesjekken, avgjørelse 018) og endres bare av dem.
 | `udir.ts` | udir.no, NOR | overordnet del, tilbudene (Grep og Udir-1), opplæringskontorene | `lastOverordnetDel`, `lastTilbud`, `lastOpplaeringskontor` |
 | `utdanning.ts` | utdanning.no, VIGO | skolene og tilbudene deres (med organisasjonsnummer fra VIGO), yrkene | `lastSkoler`, `lastYrker` |
 | `ndla.ts` | NDLA | fagene på NDLA per fagkode | `lastNdla` |
-| `vigo.ts` | VIGO Kodeverksbase | fagrelasjoner, fagmerknader og vitnemålsmerknader | `lastFagrelasjoner`, `lastMerknader` |
+| `vigo.ts` | VIGO Kodeverksbase | fagrelasjoner (med vurderingen i fagene og avvikene fra Grep), fagmerknader og vitnemålsmerknader | `lastFagrelasjoner`, `lastMerknader` |
 | `skolear.ts` | – | skoleåret og valget av fag- og timefordeling etter dato | `iDag`, `skolearFor`, `velgFordeling`, `fordelingsfil` |
 
 Det som regnes ut når appen bygges (Vite-pluginene i `scripts/vite/plugins.ts`), leser de samme filene med

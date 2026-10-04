@@ -20,6 +20,7 @@ describe('tall på norsk', () => {
     const forskrift = 'eit utrekna gjennomsnitt, med to desimalar, multiplisert med ti';
     expect(verdiISitat(forskrift, 2)?.tekst).toBe('to');
     expect(verdiISitat(forskrift, 10)?.tekst).toBe('ti');
+    expect(verdiISitat('opp til femten prosent eigenmeldt', 15)?.tekst).toBe('femten');
     expect(verdiISitat('vere med i utrekninga med talverdien null', 0)?.tekst).toBe('null');
     expect(verdiISitat('Søkaren får 3 tilleggspoeng', 3)?.tekst).toBe('3');
     // Bare hele ord: «ti» i «tilleggspoeng» er ikke et tall.

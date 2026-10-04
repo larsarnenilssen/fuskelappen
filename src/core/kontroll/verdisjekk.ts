@@ -41,7 +41,7 @@ export function verdinokkel(regelsettId: string, nokkel: string): string {
  * Tall skrevet med ord, som lov- og forskriftstekst ofte gjør («med to desimalar, multiplisert med ti», «med
  * talverdien null»). «En», «ein» og «ett» er ikke med, fordi de oftere er ubestemt artikkel enn tall.
  */
-const TALLORD: Readonly<Record<string, number>> = { null: 0, to: 2, tre: 3, fire: 4, fem: 5, seks: 6, sju: 7, åtte: 8, ni: 9, ti: 10 };
+const TALLORD: Readonly<Record<string, number>> = { null: 0, to: 2, tre: 3, fire: 4, fem: 5, seks: 6, sju: 7, åtte: 8, ni: 9, ti: 10, femten: 15 };
 
 /**
  * Første tall i sitatet som er lik verdien, eller null hvis sitatet ikke inneholder verdien. Tall med sifre
