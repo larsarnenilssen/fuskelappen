@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.34.0] – 2026-10-04
+
 ### Lagt til
 
 - **Stjerne på alle sider:** Oversiktssidene i modulene, dokumentene og avtalene i Regelverk, og løpet, skoleregisteret, opplæringskontorene, utdanningsprogrammene og tilbudene i Opplæringsløp kan nå legges til i favorittene.
