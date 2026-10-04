@@ -532,7 +532,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 
 *Status 04.10.2026:*
 - Forslaget med tre pakker, fasittestene FR1–FR8 og svarene fra eier står i `docs/arbeidsordrer/fase-6-forslag.md`.
-- Pakke 1 er bygget på grenen `claude/fase-6-vurdering`: modulen **Vurdering** under «Elever og opplæring» med veiviseren «Grunnlag for vurdering», siden «Underveis- og sluttvurdering» med vurderingsteksten i læreplanen for et fag, «Orden og oppførsel», ni begreper og oppslaget over karakterkoder fra registreringshåndboken (avgjørelse 054). Venter på eiers kontroll av skjermbildene.
+- Pakke 1 er levert i 0.31.0: modulen **Vurdering** under «Elever og opplæring» med veiviseren «Grunnlag for vurdering», siden «Underveis- og sluttvurdering» med vurderingsteksten i læreplanen for et fag, «Orden og oppførsel», ni begreper og oppslaget over karakterkoder fra registreringshåndboken (avgjørelse 054). Regelverk og kilder står som lukkede rader nederst i alle kort i appen.
+- 0.31.0: bare de berørte ende-til-ende-testene kjøres lokalt, og hele suiten kjøres i CI med bygget én gang og åtte jobber (avgjørelse 055).
 - Pakke 2 (fravær) og pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
