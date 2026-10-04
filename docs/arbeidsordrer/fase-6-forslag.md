@@ -319,3 +319,15 @@ Eier ba om flere veier (påbygging, lærling før Vg1 eller etter Vg1, praksiska
 - Eier vil at VIGO også kontrollerer fagarkene, og at de nye modulene lenker til fagarkene og tilbudene (studieforberedende, yrkesfag, påbygging) der det passer.
 
 **Lærekandidat når som helst – dekning i kildene:** Udir «Hvordan bli lærekandidat» (sist endret 05.03.2026): fylkeskommunen kan godkjenne løp som avviker fra tilbudsstrukturen, «i lærebedrift, i skole eller i en kombinasjon av disse» (ol. § 7-2, ofo. § 6-3 første ledd bokstav c), og rådgivere på ungdomsskolen gir informasjon. ofo. § 7-3 tredje og fjerde ledd: formidling som lærekandidat etter bestått individuelt løp, og etter Vg1 eller Vg2 som ikke er bestått. ol. § 7-2 andre ledd: kontrakten kan endres med samtykke fra fylkeskommunen (lærling ↔ lærekandidat). «Når som helst» står ikke ordrett; appen sier «etter grunnskolen, etter Vg1 eller Vg2, eller ved å endre kontrakten», med disse kildene.
+
+### Pakke 3: eksamensdatoene og Vestland (04.10.2026)
+
+robots.txt hos eksamensplan.udir.no stenger fortsatt, og Udir har ikke API eller datasett for datoene. Eier regner ikke med svar fra Udir innen rimelig tid, og har åpnet for fylkenes sider i miljøet. Fylkene gjengir Udirs datoer og har egne datoer (når standpunkt blir kjent, hurtigklage for avgangselever, når datoene for muntlig eksamen for privatister kommer). vlfk.no bryter tilkoblingen fra skymiljøet, men har svart for kildesjekken i Actions.
+
+### Svar fra eier (04.10.2026, runde 5)
+
+- **Nasjonale datoer:** Et skript henter hvert halvår fra udir.no og flere fylkessider. Finnes datoen hos Udir (udir.no), brukes Udirs dato, uten kontrollsak, også når fylkene har en annen. Ellers tas en dato inn når minst to kilder har den samme, og uenighet gir en kontrollsak.
+- **Fylkesdatoer:** Med `gyldighet: fylke`, bare når fylket er valgt. Alle fylkene kan legges inn i bygget, men bare fylker vi har nådd og hentet fra, vises for brukeren.
+- **Vestland:** `vlfk-sider` slås på, og kildesjekken henter teksten. Oppgavene som venter på vlfk.no (inntaksområdepoeng, klagenemnd, stegene fra fase 4) tas med når teksten er hentet.
+- **Fag- og svenneprøven** bygges nå i pakke 3, med lenke til Udir.
+- **Fagarket:** Lykkes hentingen av eksamensdatoer per fag, viser fagarket eksamensdatoen (eller lenker til den på tidslinjen).
