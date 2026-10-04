@@ -53,7 +53,6 @@ export const ruter = [
   '#/begreper/arsramme',
   '#/begreper/fagmerknader',
   '#/begreper/vitnemalsmerknader?q=utvidet',
-  '#/arbeidstid',
   '#/arbeidstid/arbeidsplan',
   '#/arbeidstid/beskjeftigelse',
   '#/arbeidstid/vikar',

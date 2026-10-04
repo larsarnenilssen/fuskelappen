@@ -33,11 +33,32 @@ jobs:
       - name: Bygg (med sjekk av startpakkens størrelse)
         run: npm run build
 
-  # Ende-til-ende-testene deles på seks jobber som kjører samtidig (avgjørelse 040). WebKit mobil har de tunge
-  # overflyt- og tilgjengelighetstestene i lys og mørk visning, og deles derfor etter tema. Hver jobb bygger appen
-  # selv og bruker to workers.
+  # Appen bygges én gang for ende-til-ende-testene, og delene under henter bygget (avgjørelse 055).
+  bygg-e2e:
+    name: Bygg for ende-til-ende
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build:e2e
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist-e2e
+          path: dist-e2e/
+          retention-days: 1
+
+  # Ende-til-ende-testene fordeles på åtte jobber som kjører samtidig, med tre workers hver (avgjørelse 055). Playwright
+  # deler etter antall tester i rekkefølge, så hvert nettleseroppsett deles for seg: WebKit mobil har de tunge
+  # overflyt- og axe-testene (merket @mobil) og WebKit er tregest, så det får fire deler, Chromium mobil to og
+  # skrivebordsoppsettene én hver.
   e2e:
     name: Ende-til-ende (${{ matrix.navn }})
+    needs: bygg-e2e
     runs-on: ubuntu-latest
     # Playwrights eget bilde har nettleserne og alle systempakkene de trenger. Da slipper vi å installere dem
     # fra Ubuntu-speilet, som av og til er svært tregt. Versjonen må være den samme som @playwright/test i
@@ -49,10 +70,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - { navn: 'Chromium mobil', del: chromium-mobil, valg: '--project=chromium-mobil' }
-          - { navn: 'WebKit mobil, lys', del: webkit-mobil-lys, valg: '--project=webkit-mobil --grep "\\(lys\\)$"' }
-          - { navn: 'WebKit mobil, mørk', del: webkit-mobil-mork, valg: '--project=webkit-mobil --grep "\\(mork\\)$"' }
-          - { navn: 'WebKit mobil, resten', del: webkit-mobil-resten, valg: '--project=webkit-mobil --grep-invert "\\((lys|mork)\\)$"' }
+          - { navn: 'WebKit mobil 1/4', del: webkit-mobil-1, valg: '--project=webkit-mobil --shard=1/4' }
+          - { navn: 'WebKit mobil 2/4', del: webkit-mobil-2, valg: '--project=webkit-mobil --shard=2/4' }
+          - { navn: 'WebKit mobil 3/4', del: webkit-mobil-3, valg: '--project=webkit-mobil --shard=3/4' }
+          - { navn: 'WebKit mobil 4/4', del: webkit-mobil-4, valg: '--project=webkit-mobil --shard=4/4' }
+          - { navn: 'Chromium mobil 1/2', del: chromium-mobil-1, valg: '--project=chromium-mobil --shard=1/2' }
+          - { navn: 'Chromium mobil 2/2', del: chromium-mobil-2, valg: '--project=chromium-mobil --shard=2/2' }
           - { navn: 'Chromium skrivebord', del: chromium-skrivebord, valg: '--project=chromium-skrivebord' }
           - { navn: 'WebKit skrivebord', del: webkit-skrivebord, valg: '--project=webkit-skrivebord' }
     steps:
@@ -62,8 +85,14 @@ jobs:
           node-version-file: .nvmrc
           cache: npm
       - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist-e2e
+          path: dist-e2e/
       - name: Ende-til-ende-tester
         run: npm run test:e2e -- ${{ matrix.valg }}
+        env:
+          E2E_FERDIG_BYGD: '1'
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
@@ -74,11 +103,12 @@ jobs:
   # Samlet resultat med samme navn som før, så en regel om påkrevd sjekk på main fortsatt virker.
   test:
     name: Test og bygg
-    needs: [sjekk, e2e]
+    needs: [sjekk, bygg-e2e, e2e]
     if: always()
     runs-on: ubuntu-latest
     steps:
       - name: Alle jobbene må være grønne
         run: |
           test "${{ needs.sjekk.result }}" = success
+          test "${{ needs.bygg-e2e.result }}" = success
           test "${{ needs.e2e.result }}" = success

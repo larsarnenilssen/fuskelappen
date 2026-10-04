@@ -1,31 +1,29 @@
 import { expect, test } from '@playwright/test';
-import { aapneAlt, erMobil, finnOverflyt, ruter, settLagret, venterPaaSide } from './hjelp.ts';
+import { aapneAlt, finnOverflyt, ruter, settLagret, venterPaaSide } from './hjelp.ts';
 
 const bredder = [320, 360, 390, 414, 430];
 
-test.describe('ingen horisontal overflyt i 320–430 px', () => {
-  for (const tema of ['lys', 'mork'] as const) {
-    for (const rute of ruter) {
-      test(`${rute} (${tema})`, async ({ page }, info) => {
-        test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
-        // Fagsøket, tilbudene i Opplæringsløp, overordnet del og dokumentene i Regelverk åpner mange grupper og lister i fem bredder (opptil 100 trykk). Det tar
-        // nær 30 sekunder i WebKit i CI, så testen får mer tid.
-        test.slow(rute === '#/fag' || rute.startsWith('#/opplaeringslop/') || rute.startsWith('#/laereplanverket') || rute.startsWith('#/lov/'), 'Siden åpner mange grupper i fem bredder');
-        await settLagret(page, { tema, fylke: '46', favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
-        for (const bredde of bredder) {
-          await page.setViewportSize({ width: bredde, height: 740 });
-          await page.goto(`./${rute}`);
-          await venterPaaSide(page);
-          // Åpne alt som kan åpnes, så også skjult innhold sjekkes.
-          await aapneAlt(page);
-          expect(await finnOverflyt(page), `${rute} i ${bredde}px`).toEqual([]);
-        }
-      });
-    }
+// Bare i mobilprosjektene (@mobil, se playwright.config.ts), og bare i lys visning: mørk visning endrer bare fargene,
+// ikke oppsettet (avgjørelse 055).
+test.describe('ingen horisontal overflyt i 320–430 px', { tag: '@mobil' }, () => {
+  for (const rute of ruter) {
+    test(rute, async ({ page }) => {
+      // Fagsøket, tilbudene i Opplæringsløp, overordnet del og dokumentene i Regelverk åpner mange grupper og lister i fem bredder (opptil 100 trykk). Det tar
+      // nær 30 sekunder i WebKit i CI, så testen får mer tid.
+      test.slow(rute === '#/fag' || rute.startsWith('#/opplaeringslop/') || rute.startsWith('#/laereplanverket') || rute.startsWith('#/lov/'), 'Siden åpner mange grupper i fem bredder');
+      await settLagret(page, { tema: 'lys', fylke: '46', favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
+      for (const bredde of bredder) {
+        await page.setViewportSize({ width: bredde, height: 740 });
+        await page.goto(`./${rute}`);
+        await venterPaaSide(page);
+        // Åpne alt som kan åpnes, så også skjult innhold sjekkes.
+        await aapneAlt(page);
+        expect(await finnOverflyt(page), `${rute} i ${bredde}px`).toEqual([]);
+      }
+    });
   }
 
-  test('nynorsk og lange tekster gir heller ikke overflyt', async ({ page }, info) => {
-    test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
+  test('nynorsk og lange tekster gir heller ikke overflyt', async ({ page }) => {
     await settLagret(page, { malform: 'nn', fylke: '46', skole: { id: null, navn: 'Ein svært lang skulenamn som ikkje skal skape horisontal rulling' } });
     await page.setViewportSize({ width: 320, height: 740 });
     for (const rute of ['#/', '#/innstillinger', '#/om/kilder']) {
@@ -36,8 +34,7 @@ test.describe('ingen horisontal overflyt i 320–430 px', () => {
   });
 });
 
-test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', async ({ page }, info) => {
-  test.skip(!erMobil(info), 'Mobilbredder testes i mobilprosjektene');
+test('utfylt arbeidsplan med diagram og årslønn gir ikke overflyt', { tag: '@mobil' }, async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 740 });
   await page.goto('./#/arbeidstid/arbeidsplan');
   await venterPaaSide(page);

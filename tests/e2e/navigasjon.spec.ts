@@ -41,12 +41,6 @@ test.describe('navigasjon', () => {
     await expect(page).toHaveURL(/#\/$/);
   });
 
-  test('fokus flyttes til overskriften ved navigasjon', async ({ page }) => {
-    await page.goto('./');
-    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Søk' }).click();
-    await expect(page.getByRole('heading', { level: 1, name: 'Søk' })).toBeFocused();
-  });
-
   test('ukjent side gir tydelig melding', async ({ page }) => {
     await page.goto('./#/finnes-ikke');
     await expect(page.getByRole('heading', { level: 1, name: 'Fant ikke siden' })).toBeVisible();

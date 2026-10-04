@@ -5,8 +5,8 @@ import { aapneAlt, ruter, settLagret, venterPaaSide } from './hjelp.ts';
 test.describe('tilgjengelighet (axe)', () => {
   for (const tema of ['lys', 'mork'] as const) {
     for (const rute of ruter) {
-      test(`${rute} (${tema})`, async ({ page }, info) => {
-        test.skip(info.project.name.endsWith('-skrivebord'), 'axe kjøres i mobilprosjektene i begge motorer');
+      // axe kjøres i mobilprosjektene i begge motorer (@mobil), i lys og mørk visning, fordi kontrasten avhenger av temaet.
+      test(`${rute} (${tema})`, { tag: '@mobil' }, async ({ page }) => {
         await settLagret(page, { tema, favoritter: ['testmodul:funksjon'] });
         await page.goto(`./${rute}`);
         await venterPaaSide(page);
