@@ -9,10 +9,11 @@ test.describe('læreplanverket', () => {
     // Overskriften på forsiden er «Læreplanverket», med Overordnet del og Fag og læreplaner i den rekkefølgen.
     // Opplæringstilbud står under «Inntak og opplæringstilbud», etter Inntak (eier 04.10.2026).
     const kategori = page.locator('[data-kategori="fag"]');
-    await expect(kategori.locator('h3')).toHaveText('Læreplanverket');
+    // Gruppene på forsiden har overskriften som knapp (avgjørelse 056).
+    await expect(kategori.locator('h2 .gruppeknapp-tekst > span').first()).toHaveText('Læreplanverket');
     await expect(kategori.locator('a.listelenke .listelenke-tittel')).toHaveText(['Overordnet del', 'Fag og læreplaner']);
     const inntak = page.locator('[data-kategori="inntak"]');
-    await expect(inntak.locator('h3')).toHaveText('Inntak og opplæringstilbud');
+    await expect(inntak.locator('h2 .gruppeknapp-tekst > span').first()).toHaveText('Inntak og opplæringstilbud');
     await expect(inntak.locator('a.listelenke .listelenke-tittel')).toHaveText(['Inntak', 'Opplæringstilbud']);
     await page.getByRole('link', { name: /^Overordnet del/ }).click();
     await expect(page.locator('main h1')).toHaveText('Overordnet del');

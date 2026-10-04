@@ -9,7 +9,6 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
-import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
 import { finnParagraf, lastDokument, lovdataUrl, utvalgstekst } from '../data.ts';
@@ -127,7 +126,6 @@ function Lovside({ parametre }: SideProps) {
           <Kildeliste kilder={[{ id: data.kilde }]} />
         </>
       )}
-      <TilToppen />
     </div>
   );
 }

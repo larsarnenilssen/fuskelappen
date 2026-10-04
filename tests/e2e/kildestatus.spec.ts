@@ -25,13 +25,14 @@ const dagerSiden = (d: number) => new Date(Date.now() - d * 24 * 60 * 60 * 1000)
 test.describe('kildestatus', () => {
   test('viser ok når siste kjøring er fersk og alt er i orden', async ({ page }) => {
     await medStatus(page, status(dagerSiden(2), 'ok', 'ok'));
-    await page.goto('./');
+    // Kildestatusen står under Innstillinger (avgjørelse 056).
+    await page.goto('./#/innstillinger');
     await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'ok');
   });
 
   test('viser utdatert når statusfilen er eldre enn 14 dager', async ({ page }) => {
     await medStatus(page, status(dagerSiden(15), 'ok', 'ok'));
-    await page.goto('./');
+    await page.goto('./#/innstillinger');
     const indikator = page.locator('.indikator');
     await expect(indikator).toHaveAttribute('data-status', 'utdatert');
     await expect(indikator).toHaveAccessibleName('Kildestatus: utdatert');
@@ -42,7 +43,7 @@ test.describe('kildestatus', () => {
 
   test('viser endret og feilet', async ({ page }) => {
     await medStatus(page, status(dagerSiden(1), 'endret', 'ok'));
-    await page.goto('./');
+    await page.goto('./#/innstillinger');
     await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'endret');
     await page.unroute('**/data/status/kildestatus.json');
   });
@@ -63,23 +64,27 @@ test.describe('kildestatus', () => {
 
   test('varselet kan skjules til neste sjekk og vises igjen', async ({ page }) => {
     await medStatus(page, status(dagerSiden(1), 'feilet', 'ok'));
-    await page.goto('./#/om/kilder');
     const indikator = page.locator('.indikator');
+    await page.goto('./#/innstillinger');
     await expect(indikator).toHaveAttribute('data-status', 'feilet');
+    await indikator.click();
     await page.getByRole('button', { name: 'Skjul varselet til neste sjekk' }).click();
-    await expect(indikator).toHaveAttribute('data-status', 'skjult');
     await expect(page.getByText('Varselet er skjult på denne enheten til neste kildesjekk.')).toBeVisible();
     await page.reload();
-    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'skjult');
+    await expect(page.getByRole('button', { name: 'Vis varselet igjen' })).toBeVisible();
+    await page.goto('./#/innstillinger');
+    await expect(indikator).toHaveAttribute('data-status', 'skjult');
+    await page.goto('./#/om/kilder');
     await page.getByRole('button', { name: 'Vis varselet igjen' }).click();
-    await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'feilet');
+    await page.goto('./#/innstillinger');
+    await expect(indikator).toHaveAttribute('data-status', 'feilet');
   });
 
   test('et skjult varsel vises igjen etter ny kjøring', async ({ page }) => {
     const gammel = status(dagerSiden(8), 'feilet', 'ok');
     await settLagret(page, { skjultKildevarsel: `${gammel.kjort}|feilet` });
     await medStatus(page, status(dagerSiden(1), 'feilet', 'ok'));
-    await page.goto('./');
+    await page.goto('./#/innstillinger');
     await expect(page.locator('.indikator')).toHaveAttribute('data-status', 'feilet');
   });
 

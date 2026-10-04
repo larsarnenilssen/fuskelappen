@@ -19,7 +19,7 @@ test.describe('fylke og skole', () => {
     await expect(page.getByLabel('Fylke', { exact: true })).toHaveValue('46');
     await expect(page.getByLabel('Skole', { exact: true }).locator('option:checked')).toHaveText(forsteSkole);
 
-    await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Hjem' }).click();
+    await page.locator('.topplinje .appnavn').click();
     await expect(page.getByText(`Viser også innhold for ${forsteSkole}, Vestland.`)).toBeVisible();
 
     await page.getByRole('navigation', { name: 'Hovedmeny' }).getByRole('link', { name: 'Innstillinger' }).click();
@@ -33,7 +33,8 @@ test.describe('fylke og skole', () => {
 
   test('uten valgt fylke viser forsiden merknad om nasjonalt innhold', async ({ page }) => {
     await page.goto('./');
-    await expect(page.getByText('Du ser nasjonalt innhold.', { exact: false })).toBeVisible();
+    // Én kort linje (avgjørelse 056).
+    await expect(page.getByText('Nasjonalt innhold', { exact: false })).toBeVisible();
     await page.getByRole('link', { name: 'Velg fylke og skole' }).click();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
   });

@@ -71,10 +71,15 @@ describe('lagring', () => {
       favoritter: ['a'],
       scenarier: {},
     };
-    expect(migrer(v1)).toEqual({ ...v1, skjemaversjon: 2, skjultKildevarsel: null });
+    expect(migrer(v1)).toEqual({ ...v1, skjemaversjon: 3, skjultKildevarsel: null, forside: { rekkefolge: [], lukket: [], bareFavoritter: false } });
     const lager = new MinneLager();
     lager.setItem(LAGRINGSNOKKEL, JSON.stringify(v1));
-    expect(lesLagret(lager)).toMatchObject({ status: 'ok', data: { skjemaversjon: 2, favoritter: ['a'] } });
+    expect(lesLagret(lager)).toMatchObject({ status: 'ok', data: { skjemaversjon: 3, favoritter: ['a'] } });
+  });
+
+  it('migrerer data fra skjemaversjon 2 med standard forside (avgjørelse 056)', () => {
+    const v2 = { skjemaversjon: 2, innstillinger: { malform: 'nb', tema: 'system', fylke: null, skole: null }, favoritter: ['b'], scenarier: {}, skjultKildevarsel: null };
+    expect(migrer(v2)).toEqual({ ...v2, skjemaversjon: 3, forside: { rekkefolge: [], lukket: [], bareFavoritter: false } });
   });
 
   it('leser data lagret før appen het Fuskelappen, og skriver under den nye nøkkelen (avgjørelse 034)', () => {

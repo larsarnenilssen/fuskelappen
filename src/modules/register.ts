@@ -4,6 +4,7 @@ import { ekstraModuler, utvikling } from 'virtual:testoppsett';
 import { begge } from '../core/i18n/tekst.ts';
 import type { Sokeoppforing } from '../core/sok/sok.ts';
 import { kategorier, type KategoriId } from './kategorier.ts';
+import type { Ikonnavn } from '../components/Ikon.tsx';
 import type { Favorittbar, Inngang, Modulmanifest, Modulrute } from './typer.ts';
 
 const funnet = import.meta.glob<Modulmanifest>('./*/index.ts', { eager: true, import: 'manifest' });
@@ -44,6 +45,23 @@ export function kategorierMedModuler() {
 export function innganger(m: Modulmanifest): Inngang[] {
   if (m.innganger) return m.innganger;
   return [{ id: `modul:${m.id}`, tittel: m.navn, ...(m.beskrivelse ? { beskrivelse: m.beskrivelse } : {}), rute: m.ruter[0]?.sti ?? '/', ikon: m.ikon }];
+}
+
+/**
+ * Ikonet til en favoritt (avgjørelse 056): favorittens eget, ellers ikonet til den nærmeste inngangen over den
+ * (samme adresse, eller den lengste adressen som favoritten ligger under), ellers modulens ikon.
+ */
+export function ikonForFavoritt(id: string, favoritt: Favorittbar | undefined, moduler: readonly Modulmanifest[] = synligeModuler): Ikonnavn | null {
+  if (favoritt?.ikon) return favoritt.ikon;
+  const modul = moduler.find((m) => m.id === id.split(':')[0]);
+  if (!modul) return null;
+  if (favoritt) {
+    const over = innganger(modul)
+      .filter((i) => favoritt.rute === i.rute || favoritt.rute.startsWith(`${i.rute}/`))
+      .sort((a, b) => b.rute.length - a.rute.length)[0];
+    if (over) return over.ikon;
+  }
+  return modul.ikon;
 }
 
 export function alleRuter(): { modul: Modulmanifest; rute: Modulrute }[] {

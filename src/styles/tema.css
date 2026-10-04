@@ -11,6 +11,8 @@
   --farge-tekst: var(--p-blekk);
   --farge-tekst-dempet: var(--p-blekk-dempet);
   --farge-linje: var(--p-linje-lys);
+  /* Kanten rundt det blå feltet øverst på forsiden: synlig i mørk visning, der feltet ellers glir i ett med bakgrunnen. */
+  --farge-forside-topp-kant: transparent;
   --farge-kant: var(--p-linje-lys);
   --farge-aksent: var(--p-lapp-gul);
   --farge-aksent-tekst: var(--p-blaa-900);
@@ -66,6 +68,8 @@
   --farge-tekst: var(--p-maane);
   --farge-tekst-dempet: var(--p-maane-dempet);
   --farge-linje: var(--p-linje-mork);
+  /* Kanten rundt det blå feltet øverst på forsiden: synlig i mørk visning, der feltet ellers glir i ett med bakgrunnen. */
+  --farge-forside-topp-kant: var(--p-linje-mork);
   --farge-kant: var(--p-kant-mork);
   --farge-aksent: var(--p-lapp-gul);
   --farge-aksent-tekst: var(--p-blaa-900);
@@ -121,6 +125,8 @@
     --farge-tekst: var(--p-maane);
     --farge-tekst-dempet: var(--p-maane-dempet);
     --farge-linje: var(--p-linje-mork);
+    /* Kanten rundt det blå feltet øverst på forsiden: synlig i mørk visning, der feltet ellers glir i ett med bakgrunnen. */
+    --farge-forside-topp-kant: var(--p-linje-mork);
     --farge-kant: var(--p-kant-mork);
     --farge-aksent: var(--p-lapp-gul);
     --farge-aksent-tekst: var(--p-blaa-900);
@@ -180,6 +186,8 @@
     --farge-tekst: var(--p-blekk);
     --farge-tekst-dempet: var(--p-blekk-dempet);
     --farge-linje: var(--p-linje-lys);
+    /* Kanten rundt det blå feltet øverst på forsiden: synlig i mørk visning, der feltet ellers glir i ett med bakgrunnen. */
+    --farge-forside-topp-kant: transparent;
     --farge-kant: var(--p-linje-lys);
     --farge-aksent: var(--p-lapp-gul);
     --farge-aksent-tekst: var(--p-blaa-900);

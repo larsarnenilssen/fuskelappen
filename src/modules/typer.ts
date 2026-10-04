@@ -28,6 +28,8 @@ export interface Favorittbar {
   type: Favoritttype;
   tittel: Flerspraak;
   rute: string;
+  /** Eget ikon. Uten står ikonet til inngangen eller modulen over (ikonForFavoritt, avgjørelse 056). */
+  ikon?: Ikonnavn;
 }
 
 /** En inngang til modulen på forsiden. Uten innganger står modulen selv som én boks. */

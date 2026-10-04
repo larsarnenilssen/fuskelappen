@@ -1,8 +1,12 @@
+// Favorittene og forsiden (avgjørelse 056): favorittene står øverst på forsiden og sorteres der de står, gruppene kan
+// lukkes og sorteres, og forsiden kan vise bare favorittene under kategoriene sine.
 import { expect, test } from '@playwright/test';
 import { settLagret } from './hjelp.ts';
 
-test.describe('favoritter', () => {
-  test('kan legges til, vises på forsiden og fjernes', async ({ page }) => {
+const TO = ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'];
+
+test.describe('favoritter og forsiden', () => {
+  test('kan legges til, vises på forsiden med ikon og stjernemerke, og fjernes', async ({ page }) => {
     await page.goto('./#/testmodul');
     const stjerne = page.getByRole('button', { name: /Legg til i favoritter/ });
     await expect(stjerne).toHaveAttribute('aria-pressed', 'false');
@@ -10,22 +14,75 @@ test.describe('favoritter', () => {
     await expect(stjerne).toHaveAttribute('aria-pressed', 'true');
 
     await page.goto('./');
-    await expect(page.locator('.favorittliste').getByRole('link', { name: 'Testfunksjon' })).toBeVisible();
-
-    await page.goto('./#/favoritter');
-    await page.getByRole('button', { name: 'Fjern «Testfunksjon» fra favoritter' }).click();
+    const lenke = page.locator('.favorittliste').getByRole('link', { name: 'Testfunksjon' });
+    await expect(lenke).toBeVisible();
+    await expect(lenke.locator('.favorittmerke')).toHaveCount(1);
+    await page.goto('./#/testmodul');
+    await page.getByRole('button', { name: /Legg til i favoritter/ }).click();
+    await page.goto('./');
     await expect(page.getByText('Du har ingen favoritter ennå.', { exact: false })).toBeVisible();
   });
 
-  test('rekkefølgen kan endres med knapper', async ({ page }) => {
-    await settLagret(page, { favoritter: ['testmodul:funksjon', 'begreper:testbegrep-skolemiljo'] });
-    await page.goto('./#/favoritter');
-    const titler = page.locator('.favorittliste .listelenke-tittel');
+  test('rekkefølgen endres med blyanten i overskriften, og står der favorittene står', async ({ page }) => {
+    await settLagret(page, { favoritter: TO });
+    await page.goto('./');
+    const titler = page.locator('[data-gruppe="favoritter"] .listelenke-tittel');
     await expect(titler).toHaveText(['Testfunksjon', 'Skolemiljø (testbegrep)']);
+    const blyant = page.getByRole('button', { name: 'Endre rekkefølgen i Favoritter' });
+    await blyant.click();
     await expect(page.getByRole('button', { name: 'Flytt «Testfunksjon» opp' })).toBeDisabled();
     await page.getByRole('button', { name: 'Flytt «Testfunksjon» ned' }).click();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
     await expect(titler).toHaveText(['Skolemiljø (testbegrep)', 'Testfunksjon']);
     await page.reload();
     await expect(titler).toHaveText(['Skolemiljø (testbegrep)', 'Testfunksjon']);
+  });
+
+  test('en gruppe lukkes med overskriften og viser hva som er inni, og det huskes', async ({ page }) => {
+    await page.goto('./');
+    const knapp = page.locator('[data-gruppe="skolemiljo"] .gruppeknapp');
+    await expect(knapp).toHaveAttribute('aria-expanded', 'true');
+    await knapp.click();
+    await expect(knapp).toHaveAttribute('aria-expanded', 'false');
+    await expect(knapp.locator('.gruppe-sammendrag')).toHaveText('Testmodul for skolemiljø');
+    await expect(page.locator('#forside-gruppe-skolemiljo')).toBeHidden();
+    await page.reload();
+    await expect(knapp).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  test('«Bare favoritter» viser favorittene under kategoriene, uten favorittgruppen og uten stjernemerke', async ({ page }) => {
+    await settLagret(page, { favoritter: TO });
+    await page.goto('./');
+    await page.getByRole('radio', { name: /Favoritter|Bare favoritter/ }).check();
+    await expect(page.locator('[data-gruppe="favoritter"]')).toHaveCount(0);
+    await expect(page.locator('[data-gruppe="skolemiljo"]').getByRole('link', { name: 'Testfunksjon' })).toBeVisible();
+    await expect(page.locator('[data-gruppe="felles"]').getByRole('link', { name: 'Skolemiljø (testbegrep)' })).toBeVisible();
+    await expect(page.locator('.favorittmerke')).toHaveCount(0);
+  });
+
+  test('«Tilpass» flytter gruppene, og standard rekkefølge setter dem tilbake', async ({ page }) => {
+    await page.goto('./');
+    const grupper = page.locator('.forsidegruppe');
+    await expect(grupper.first()).toHaveAttribute('data-gruppe', 'favoritter');
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await page.getByRole('button', { name: 'Flytt «Favoritter» ned' }).click();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
+    await expect(grupper.first()).not.toHaveAttribute('data-gruppe', 'favoritter');
+    await expect(grupper.nth(1)).toHaveAttribute('data-gruppe', 'favoritter');
+    await page.getByRole('button', { name: 'Tilpass' }).click();
+    await page.getByRole('button', { name: /Standard rekkefølge/ }).click();
+    await page.getByRole('button', { name: 'Ferdig' }).click();
+    await expect(grupper.first()).toHaveAttribute('data-gruppe', 'favoritter');
+  });
+
+  test('søkeknappen kommer i toppfeltet når søket er rullet bort, og fører tilbake til søkefeltet', async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 500 });
+    await page.goto('./');
+    const knapp = page.locator('.topplinje').getByRole('button', { name: 'Søk' });
+    await expect(knapp).toHaveCount(0);
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await expect(knapp).toBeVisible();
+    await knapp.click();
+    await expect(page.locator('.forside-topp').getByRole('searchbox')).toBeFocused();
   });
 });

@@ -1,13 +1,11 @@
-import { Favorittliste } from '../Favorittliste.tsx';
-import { useTekst, useTilstand } from '../tilstand.ts';
+// Favorittsiden er tatt bort (avgjørelse 056). Favorittene står på forsiden, så lenker og bokmerker til
+// #/favoritter sendes dit, uten en ny oppføring i historikken.
+import { useEffect } from 'preact/hooks';
+import { lenke } from '../ruter.ts';
 
 export default function Favoritter() {
-  const { t } = useTekst();
-  const { favoritter } = useTilstand();
-  return (
-    <div class="side">
-      <h1 tabIndex={-1}>{t('favoritter.tittel')}</h1>
-      {favoritter.length === 0 ? <p class="dempet">{t('favoritter.tom')}</p> : <Favorittliste />}
-    </div>
-  );
+  useEffect(() => {
+    location.replace(lenke('/'));
+  }, []);
+  return null;
 }

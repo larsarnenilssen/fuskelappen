@@ -8,16 +8,16 @@
 
 /*
  * Lerretet bak siden. iOS tar fargen bak statuslinjen fra bakgrunnsfargen (background-color)
- * til html og body, så begge har toppfeltets farge. Fargeovergangen gir menyfarge nederst,
- * der installerte nettapper på iOS kan vise en stripe under bunnmenyen. Selve siden har
- * sidefargen på .skall.
+ * til html og body, så begge har toppfeltets farge. Fargeovergangen gir sidefargen nederst,
+ * der installerte nettapper på iOS kan vise en stripe under innholdet (bunnmenyen er tatt bort,
+ * avgjørelse 056). Selve siden har sidefargen på .skall.
  */
 html {
-  /* Elementer som rulles fram (fokus, ankre) havner ikke bak toppfeltet eller bunnmenyen (WCAG 2.4.11). */
+  /* Elementer som rulles fram (fokus, ankre) havner ikke bak toppfeltet (WCAG 2.4.11). */
   scroll-padding-top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top));
   scroll-padding-bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-3));
   background-color: var(--farge-topplinje);
-  background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
+  background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-bakgrunn) 50% 100%);
   color: var(--farge-tekst);
   font-family: var(--font-tekst);
   font-size: 100%;
@@ -183,9 +183,11 @@ select {
   }
 }
 
+/* Tilbake til venstre, appnavnet midt på og søk og innstillinger til høyre. Begge sidene er to knapper brede, så
+   appnavnet står midt på (avgjørelse 056). */
 .topplinje-innhold {
   display: grid;
-  grid-template-columns: var(--trykkflate) minmax(0, 1fr) var(--trykkflate);
+  grid-template-columns: calc(2 * var(--trykkflate)) minmax(0, 1fr) calc(2 * var(--trykkflate));
   align-items: center;
   min-height: var(--topplinje-hoyde);
   max-width: var(--maks-bredde);
@@ -193,13 +195,21 @@ select {
   padding: 0 var(--rom-2);
 }
 
-.topplinje .ikonknapp,
-.topplinje .indikator {
+.topplinje .ikonknapp {
   color: var(--farge-topplinje-tekst);
 }
 
-.topplinje-plass,
-.indikator-plass {
+.topplinje-meny {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topplinje .ikonknapp[aria-current='page'] {
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+.topplinje-plass {
   display: block;
   width: var(--trykkflate);
 }
@@ -226,19 +236,16 @@ select {
   text-overflow: ellipsis;
 }
 
+/* Kildestatusen under Innstillinger (avgjørelse 056). */
 .indikator {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: var(--trykkflate);
-  height: var(--trykkflate);
-  border-radius: 50%;
-  opacity: 0.85;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
 }
 
-.indikator-ok,
-.indikator-skjult {
-  opacity: 0.6;
+.indikator-feilet {
+  color: var(--farge-advarsel);
 }
 
 main {
@@ -248,54 +255,6 @@ main {
   margin: 0 auto;
   padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-6))
     calc(var(--rom-4) + env(safe-area-inset-left));
-}
-
-.bunnmeny {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  background: var(--farge-flate);
-  border-top: var(--strek) solid var(--farge-linje);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
-
-.bunnmeny ul {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  max-width: var(--maks-bredde);
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-.bunnmeny a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  min-height: var(--bunnmeny-hoyde);
-  padding: var(--rom-1);
-  color: var(--farge-tekst-dempet);
-  text-decoration: none;
-  font-size: var(--str-xs);
-  text-align: center;
-}
-
-.bunnmeny a span {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.bunnmeny a[aria-current='page'] {
-  color: var(--farge-merke);
-  font-weight: 650;
 }
 
 /* ---------- Byggeklosser ---------- */
@@ -512,14 +471,6 @@ main {
 
 .flis .ikon {
   color: var(--farge-merke);
-}
-
-.kategori h3 {
-  font-size: var(--str-m);
-  color: var(--farge-tekst-dempet);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: var(--rom-4) 0 var(--rom-2);
 }
 
 .merknad {
@@ -3121,7 +3072,6 @@ p.fagkort-tittel {
   }
 
   .topplinje,
-  .bunnmeny,
   .hopp,
   .resultatlinje,
   .tittelrad .ikonknapp,
@@ -3432,7 +3382,7 @@ p.fagkort-tittel {
   text-align: left;
 }
 
-/* ---------- Fuskelappen: forside, bunnmeny og detaljer (avgjørelse 034) ---------- */
+/* ---------- Fuskelappen: forside og detaljer (avgjørelse 034 og 056) ---------- */
 /* Forsiden: toppfeltet fortsetter ned rundt søket, med runde hjørner nederst. */
 .forside {
   padding-top: 0;
@@ -3440,6 +3390,9 @@ p.fagkort-tittel {
 
 .forside-topp {
   margin: 0 calc(-1 * (var(--rom-4) + env(safe-area-inset-right))) var(--rom-4) calc(-1 * (var(--rom-4) + env(safe-area-inset-left)));
+  /* Synlig bare i mørk visning, der feltet ellers glir i ett med bakgrunnen (eier 04.10.2026). */
+  border: var(--strek) solid var(--farge-forside-topp-kant);
+  border-top: 0;
   /* Litt luft over søket, men lavt, så forsiden ikke bruker mer høyde enn nødvendig (eier 02.10.2026). */
   padding: var(--rom-2) calc(var(--rom-4) + env(safe-area-inset-right)) var(--rom-3) calc(var(--rom-4) + env(safe-area-inset-left));
   border-radius: 0 0 var(--radius-l) var(--radius-l);
@@ -3457,19 +3410,6 @@ p.fagkort-tittel {
   color: var(--farge-topplinje-tekst);
 }
 
-/* Bunnmenyen: aktiv fane har en myk «pille» bak ikonet. */
-.bunnmeny a .ikon {
-  box-sizing: content-box;
-  padding: 3px 18px;
-  border-radius: 999px;
-  transition: background-color var(--varighet);
-}
-
-.bunnmeny a[aria-current='page'] .ikon {
-  background: var(--farge-aksent);
-  color: var(--farge-aksent-tekst);
-}
-
 /* Modulene på forsiden har ikonet i en farget sirkel. */
 .forside .listelenke > .ikon:first-child {
   box-sizing: content-box;
@@ -3477,6 +3417,29 @@ p.fagkort-tittel {
   padding: var(--rom-2);
   border-radius: 50%;
   background: var(--farge-flate-2);
+}
+
+/* Favorittene har ikonet til funksjonen eller modulen i samme sirkel som modulene. Med alt innhold på forsiden har
+   sirkelen en liten stjerne nede til venstre (avgjørelse 056). */
+.favorittikon {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  padding: var(--rom-2);
+  border-radius: 50%;
+  background: var(--farge-flate-2);
+}
+
+.favorittmerke {
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  width: 1rem;
+  height: 1rem;
+  padding: 1px;
+  border-radius: 50%;
+  background: var(--farge-flate);
+  color: var(--farge-merke);
 }
 
 /* Kategorioverskriftene er roligere: ikke store bokstaver. */
@@ -3515,11 +3478,252 @@ p.fagkort-tittel {
   }
 }
 
-.forside .kategori h3 {
-  text-transform: none;
-  letter-spacing: 0;
+/* Gruppene på forsiden: overskriften er en knapp som lukker og åpner gruppen (avgjørelse 056). */
+.forsidegruppe h2 {
+  margin: var(--rom-4) 0 var(--rom-2);
   font-size: var(--str-s);
+}
+
+.gruppeknapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
   font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.forside-verktoy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0 0;
+}
+
+/* I det blå feltet under søket (eier 04.10.2026): lyse kanter og tekst, og valgt visning lys med mørk tekst. */
+.forside-topp .bryter-valg {
+  border-color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label {
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label + label {
+  border-left-color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label.valgt {
+  background: var(--farge-topplinje-tekst);
+  color: var(--farge-topplinje);
+}
+
+.forside-topp .forside-verktoy .knapp {
+  border-color: var(--farge-topplinje-tekst);
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+}
+
+/* Lukket gruppe: overskriften viser hva som er inni, på en linje under tittelen (eier 04.10.2026). */
+.gruppeknapp-tekst {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.gruppe-sammendrag {
+  overflow: hidden;
+  font-size: var(--str-xs);
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Myk åpning og lukking: høyden går mellom 0 og innholdets høyde (grid-raden 0fr–1fr). Uten animasjon ved redusert
+   bevegelse, der Forside.tsx heller ikke venter. */
+.gruppe-innhold {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+
+.gruppe-innhold[hidden] {
+  display: none;
+}
+
+.gruppe-innhold.utvidet {
+  grid-template-rows: 1fr;
+}
+
+.gruppe-innhold.animerer {
+  transition: grid-template-rows var(--varighet-lang) ease;
+}
+
+.gruppe-innhold-indre {
+  min-height: 0;
+}
+
+.gruppe-innhold.animerer > .gruppe-innhold-indre,
+.gruppe-innhold:not(.utvidet) > .gruppe-innhold-indre {
+  overflow: hidden;
+}
+
+/* To spalter på stor skjerm, med bredere side for forsiden (eier 04.10.2026). */
+@media (min-width: 64rem) {
+  main:has(> .forside),
+  .skall:has(main > .forside) .topplinje-innhold {
+    max-width: 72rem;
+  }
+
+  .forsidegrupper {
+    columns: 2;
+    column-gap: var(--rom-6);
+  }
+
+  /* Luften står under hver gruppe, så spaltene starter likt øverst. */
+  .forsidegruppe {
+    padding-bottom: var(--rom-4);
+    break-inside: avoid;
+  }
+
+  .forsidegruppe h2 {
+    margin-top: 0;
+  }
+}
+
+/* Blyanten for favorittene står i overskriften, ved siden av pilen, oppå knappen som lukker gruppen. */
+.forsidegruppe h2.med-verktoy {
+  position: relative;
+}
+
+/* Til venstre for pilen, som er helt til høyre i knappen. */
+.gruppe-endre {
+  position: absolute;
+  top: 50%;
+  right: calc(1.1rem + var(--rom-1));
+  transform: translateY(-50%);
+  color: var(--farge-lenke);
+}
+
+.gruppe-endre[aria-pressed='true'] {
+  color: var(--farge-merke);
+}
+
+/* Søkeknappen i toppfeltet på forsiden kommer fram når søkefeltet er rullet ut av syne. */
+@media (prefers-reduced-motion: no-preference) {
+  .topplinje-sok {
+    animation: dukk-opp var(--varighet) ease-out;
+  }
+}
+
+@keyframes dukk-opp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.forside-verktoy .bryter {
+  margin: 0;
+}
+
+.tilpasning {
+  margin-top: var(--rom-4);
+}
+
+/* Bryteren har korte tekster på smal skjerm og hele der det er plass (eier 04.10.2026). */
+.bryter-lang {
+  display: none;
+}
+
+@media (min-width: 30rem) {
+  .bryter-kort {
+    display: none;
+  }
+
+  .bryter-lang {
+    display: inline;
+  }
+}
+
+.tilpasning h2 {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-l);
+}
+
+.tilpasning .knapp {
+  margin-top: var(--rom-4);
+}
+
+/* Lister som kan sorteres: håndtaket til venstre, pilene til høyre. Bare håndtaket fanger pekeren, så resten av
+   siden ruller som vanlig. */
+.sorterbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+.sorterbar-rad {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.sorterbar-rad.drar {
+  position: relative;
+  z-index: 5;
+  border-color: var(--farge-merke);
+  box-shadow: var(--skygge-flytende);
+}
+
+.sorterbar-handtak {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--trykkflate);
+  min-height: var(--trykkflate);
+  color: var(--farge-tekst-dempet);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sorterbar-rad.drar .sorterbar-handtak {
+  cursor: grabbing;
+}
+
+.sorterbar-innhold {
+  flex: 1;
+  min-width: 0;
+}
+
+.sorterbar-navn {
+  display: block;
+  font-weight: 600;
+}
+
+.sorterbar-knapper {
+  display: flex;
+  flex: none;
 }
 
 /* Merknad med ikon foran teksten. */
@@ -4575,19 +4779,6 @@ p.fagkort-tittel {
 }
 
 .veiviser-forrige a,
-.veiviser-til-toppen .lenkeknapp {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  padding: var(--rom-1) 0;
-}
-
-.veiviser-til-toppen {
-  margin: var(--rom-4) 0 0;
-  text-align: right;
-  font-size: var(--str-s);
-}
-
 .paragraflenker .liten-overskrift {
   margin: var(--rom-3) 0 var(--rom-1);
   font-size: var(--str-s);

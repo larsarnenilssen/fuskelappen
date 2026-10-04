@@ -8,7 +8,7 @@ test.describe('målform og tema', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'nn');
     await page.reload();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillingar' })).toBeVisible();
-    await expect(page.getByRole('navigation', { name: 'Hovudmeny' }).getByRole('link', { name: 'Heim' })).toBeVisible();
+    await expect(page.getByRole('navigation', { name: 'Hovudmeny' }).getByRole('link', { name: 'Innstillingar' })).toBeVisible();
     await page.getByRole('radio', { name: 'Bokmål' }).check();
     await expect(page.getByRole('heading', { level: 1, name: 'Innstillinger' })).toBeVisible();
   });

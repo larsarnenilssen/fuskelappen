@@ -10,7 +10,6 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
-import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
 import { type Element, elementRute, finnDel, sti } from '../data.ts';
@@ -142,7 +141,6 @@ export default function OverordnetDel({ parametre }: SideProps) {
           <p class="liten dempet">{t('laereplanverket.hentet', { dato: formaterDato(data.od.hentet, malform) })}</p>
         </>
       )}
-      <TilToppen />
       <Kildeliste kilder={[{ id: 'udir-overordnet-del' }, { id: 'udir-grep' }]} />
     </div>
   );

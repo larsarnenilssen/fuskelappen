@@ -1,71 +1,57 @@
-// Liste over favoritter. Rekkefølgen endres med knapper, ikke dra-gester.
+// Favorittene på forsiden (avgjørelse 056). Favorittsiden er tatt bort: favorittene står øverst på forsiden, eller
+// fordelt under kategoriene sine, og sorteres der de står.
 import { useEffect, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
-import { samleFavorittbare } from '../modules/register.ts';
+import { ikonForFavoritt, samleFavorittbare } from '../modules/register.ts';
 import type { Favorittbar } from '../modules/typer.ts';
-import { flyttFavoritt, useTekst, useTilstand, vekslFavoritt } from './tilstand.ts';
+import { useTekst } from './tilstand.ts';
 
-export function Favorittliste({ kompakt = false }: { kompakt?: boolean }) {
-  const { t, malform } = useTekst();
-  const { favoritter } = useTilstand();
+/** Favorittene brukeren har, slått opp i modulene. `null` mens de lastes. */
+export function useFavorittbare(ider: readonly string[]): Map<string, Favorittbar> | null {
   const [kjente, settKjente] = useState<Map<string, Favorittbar> | null>(null);
-
-  const ider = favoritter.join('|');
+  const nokkel = ider.join('|');
   useEffect(() => {
     let aktiv = true;
-    void samleFavorittbare(undefined, ider.split('|')).then((m) => aktiv && settKjente(m));
+    void samleFavorittbare(undefined, [...ider]).then((m) => aktiv && settKjente(m));
     return () => {
       aktiv = false;
     };
-  }, [ider]);
+  }, [nokkel]);
+  return kjente;
+}
 
+/**
+ * Favorittene som lenker, i brukerens rekkefølge, med ikonet til funksjonen eller modulen (avgjørelse 056). Med
+ * `merket` (forsiden viser alt innhold) har ikonet en liten stjerne nede til venstre, så favorittene skiller seg fra
+ * boksene i kategoriene. Med bare favoritter på forsiden står ikonet uten stjerne.
+ */
+export function Favorittliste({ ider, merket = false }: { ider: readonly string[]; merket?: boolean }) {
+  const { t, malform } = useTekst();
+  const kjente = useFavorittbare(ider);
   if (!kjente) return <p class="dempet">{t('app.lasterInn')}</p>;
-
   return (
     <ul class="liste favorittliste">
-      {favoritter.map((id, i) => {
+      {ider.map((id) => {
         const f = kjente.get(id);
-        const navn = f ? f.tittel[malform] : id;
         return (
           <li key={id} class="favoritt">
             {f ? (
               <a class="listelenke" href={`#${f.rute}`}>
-                <Ikon navn="stjerne" fylt />
-                <span class="listelenke-tekst">
-                  <span class="listelenke-tittel">{navn}</span>
+                <span class="favorittikon">
+                  <Ikon navn={ikonForFavoritt(id, f) ?? 'stjerne'} />
+                  {merket && <Ikon navn="stjerne" fylt class="favorittmerke" />}
                 </span>
+                <span class="listelenke-tekst">
+                  <span class="listelenke-tittel">{f.tittel[malform]}</span>
+                </span>
+                <Ikon navn="hoyre" class="ikon-liten" />
               </a>
             ) : (
               <span class="listelenke utilgjengelig">
                 <span class="listelenke-tekst">
-                  <span class="listelenke-tittel">{navn}</span>
+                  <span class="listelenke-tittel">{id}</span>
                   <span class="listelenke-under">{t('favoritter.utilgjengelig')}</span>
                 </span>
-              </span>
-            )}
-            {!kompakt && (
-              <span class="favoritt-knapper">
-                <button
-                  type="button"
-                  class="ikonknapp"
-                  disabled={i === 0}
-                  aria-label={t('favoritter.flyttOpp', { navn })}
-                  onClick={() => flyttFavoritt(id, -1)}
-                >
-                  <Ikon navn="opp" />
-                </button>
-                <button
-                  type="button"
-                  class="ikonknapp"
-                  disabled={i === favoritter.length - 1}
-                  aria-label={t('favoritter.flyttNed', { navn })}
-                  onClick={() => flyttFavoritt(id, 1)}
-                >
-                  <Ikon navn="ned" />
-                </button>
-                <button type="button" class="ikonknapp" aria-label={t('favoritter.fjern', { navn })} onClick={() => vekslFavoritt(id)}>
-                  <Ikon navn="lukk" />
-                </button>
               </span>
             )}
           </li>

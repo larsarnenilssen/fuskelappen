@@ -90,6 +90,7 @@ En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte
 ## Legge til noe nytt
 
 - **Ny modul:** ny mappe i `src/modules/` med manifest, innhold i `content/<modul>/`, kilder i kilderegisteret, tester.
+- **Favoritter og ikoner:** Alt med stjerneknapp har en oppføring i modulens `favorittbare` (testes). En favoritt kan ha eget `ikon`. Uten får den ikonet til den nærmeste inngangen over (samme adresse eller adressen den ligger under), ellers modulens ikon (`ikonForFavoritt`, avgjørelse 056). Gi favoritten eget ikon når siden har et eget ikon på oversikten i modulen.
 - **Ny regelperiode:** ny fil i `rules/<regelverk>/` og nye fasittester. Det skal ikke trengs kodeendringer.
 - **Nytt begrep:** lenkes automatisk i brødtekst med tittelen. Er ikke tittelen ordet som står i teksten, får begrepet `lenkeord` (avgjørelse 050).
 - **Ny fylkes- eller skoleprofil:** innhold og verdier med riktig `gyldighet`, og tester for oppslag på det nivået.

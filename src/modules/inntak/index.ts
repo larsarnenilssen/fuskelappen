@@ -55,8 +55,8 @@ export const manifest: Modulmanifest = {
   async favorittbare() {
     const { veivisere } = await hentInnhold();
     return [
-      { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute },
-      { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute },
+      { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute, ikon: 'klokke' as const },
+      { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute, ikon: 'kalkulator' as const },
       ...veivisere.map((v) => ({ id: `inntak:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },

@@ -1,4 +1,4 @@
-// Søkeoppføringer for appens egne sider (innstillinger, om, kilder, favoritter).
+// Søkeoppføringer for appens egne sider (innstillinger, om og kilder). Favorittene står på forsiden (avgjørelse 056).
 import { app } from '../config/app.ts';
 import { begge, hentTekst } from '../core/i18n/tekst.ts';
 import type { Sokeoppforing } from '../core/sok/sok.ts';
@@ -30,13 +30,6 @@ export function kjerneoppforinger(): Sokeoppforing[] {
       tekst: begge('kildestatus.forklaring'),
       stikkord: ['kilder', 'kildestatus', 'lovdata', 'udir', 'ks'],
       rute: '/om/kilder',
-      modul: 'app',
-    },
-    {
-      id: 'side:favoritter',
-      type: 'side',
-      tittel: begge('favoritter.tittel'),
-      rute: '/favoritter',
       modul: 'app',
     },
   ];

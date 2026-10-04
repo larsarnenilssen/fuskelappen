@@ -6,7 +6,6 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
-import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import { avtaler, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
 import { dokumentRute, lastDokument, lastOversikt, utvalgstekst } from '../data.ts';
@@ -105,7 +104,6 @@ export default function Oversikt() {
           />
         </Sok>
       )}
-      <TilToppen />
       {typeof data !== 'string' && <Kildeliste kilder={[...synlige(data).map((d) => ({ id: d.kilde })), ...synligAvtale.map((a) => ({ id: a.kilde }))]} />}
     </div>
   );

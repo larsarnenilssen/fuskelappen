@@ -134,13 +134,30 @@ export function vekslFavoritt(id: string): void {
   }));
 }
 
-export function flyttFavoritt(id: string, retning: -1 | 1): void {
+/** Ny rekkefølge på favorittene (dra og slipp eller pilene på forsiden). */
+export function settFavorittrekkefolge(favoritter: string[]): void {
+  tilstand.oppdater((d) => ({ ...d, favoritter }));
+}
+
+/** Rekkefølgen på gruppene på forsiden (avgjørelse 056). */
+export function settGrupperekkefolge(rekkefolge: string[]): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge } }));
+}
+
+/** Åpner eller lukker en gruppe på forsiden. */
+export function vekslGruppe(id: string): void {
   tilstand.oppdater((d) => {
-    const liste = [...d.favoritter];
-    const i = liste.indexOf(id);
-    const j = i + retning;
-    if (i < 0 || j < 0 || j >= liste.length) return d;
-    [liste[i], liste[j]] = [liste[j] as string, liste[i] as string];
-    return { ...d, favoritter: liste };
+    const lukket = d.forside.lukket.includes(id) ? d.forside.lukket.filter((g) => g !== id) : [...d.forside.lukket, id];
+    return { ...d, forside: { ...d.forside, lukket } };
   });
+}
+
+/** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */
+export function settBareFavoritter(bareFavoritter: boolean): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, bareFavoritter } }));
+}
+
+/** Standard rekkefølge, og alle gruppene åpne. */
+export function nullstillForside(): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge: [], lukket: [] } }));
 }

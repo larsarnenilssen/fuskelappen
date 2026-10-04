@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Ikon } from '../../components/Ikon.tsx';
 import { eksportfilnavn, lagEksport, lesEksport, velgFylke, type Innstillinger as Inn } from '../../core/lagring/lagring.ts';
+import { KildestatusIndikator } from '../Kildestatusindikator.tsx';
 import { fylker } from '../Stedmerknad.tsx';
 import { tilstand, useTekst, useTilstand } from '../tilstand.ts';
 
@@ -230,6 +231,10 @@ export default function Innstillinger() {
         </p>
       </fieldset>
 
+      {/* Kildestatusen sto i toppfeltet. Den står her, nederst, sammen med «Om» (avgjørelse 056). */}
+      <p class="innstillinger-kildestatus">
+        <KildestatusIndikator />
+      </p>
       <p>
         <a href="#/om">{t('om.tittel')}</a>
       </p>
