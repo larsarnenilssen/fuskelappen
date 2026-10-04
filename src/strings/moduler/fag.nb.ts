@@ -136,7 +136,7 @@ export const fagNb = {
     iVurdering: 'I Vurdering',
     fravaersgrense: 'Fraværsgrense',
     fravaersgrenseVerdi: '{timer} timer (10 % av {arstimer})',
-    tilFravaer: 'Fraværsgrensen i økter, og sjekk av fraværet',
+    tilFravaer: 'Fraværskalkulatoren for faget',
     eksamenGitt: 'Eksamen',
     gitt: { sentral: 'Sentralt gitt', lokal: 'Lokalt gitt' },
     sensur: { sentral: 'sentral sensur', lokal: 'lokal sensur' },

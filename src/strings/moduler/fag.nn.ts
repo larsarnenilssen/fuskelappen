@@ -138,7 +138,7 @@ export const fagNn: Skjema<typeof fagNb> = {
     iVurdering: 'I Vurdering',
     fravaersgrense: 'Fråværsgrense',
     fravaersgrenseVerdi: '{timer} timar (10 % av {arstimer})',
-    tilFravaer: 'Fråværsgrensa i økter, og sjekk av fråværet',
+    tilFravaer: 'Fråværskalkulatoren for faget',
     eksamenGitt: 'Eksamen',
     gitt: { sentral: 'Sentralt gitt', lokal: 'Lokalt gitt' },
     sensur: { sentral: 'sentral sensur', lokal: 'lokal sensur' },

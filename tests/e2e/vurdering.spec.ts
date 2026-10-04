@@ -75,7 +75,7 @@ test.describe('vurdering', () => {
     await page.goto('./#/fag/ENG1007');
     await page.getByRole('button', { name: /^Vurderingsordning$/ }).click();
     await expect(page.locator('.fag-ifaget')).toContainText('Sentralt gitt');
-    await page.getByRole('link', { name: 'Fraværsgrensen i økter, og sjekk av fraværet' }).click();
+    await page.getByRole('link', { name: 'Fraværskalkulatoren for faget' }).click();
     await expect(page).toHaveURL(/#\/vurdering\/fravaer\?fag=ENG1007$/);
     await expect(page.locator('main h1')).toHaveText('Fraværsgrensen');
     await page.getByRole('link', { name: /veiviseren «Grunnlag for vurdering»/ }).click();
