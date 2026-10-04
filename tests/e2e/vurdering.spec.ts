@@ -1,7 +1,8 @@
 // Vurdering (fase 6, pakke 1, avgjørelse 054): veiviseren med varsel rett etter faren, kortene med regelverk og
 // kilder i lukkede rader nederst, faget fra adressen og oppslaget over karakterkodene. Pakke 2: fraværsgrensen, med
-// lenker fra fagarket og til veiviseren.
+// lenker fra fagarket og til veiviseren. Pakke 3: eksamen, klage på karakter, prøvene og tidslinjen.
 import { expect, test } from '@playwright/test';
+import { settLagret } from './hjelp.ts';
 
 test.describe('vurdering', () => {
   test('fra oversikten gjennom fravær og varsel til karakter uten varsel', async ({ page }) => {
@@ -82,5 +83,60 @@ test.describe('vurdering', () => {
     await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Fravær i faget');
     await page.getByRole('link', { name: 'kalkulatoren for fraværsgrensen' }).click();
     await expect(page.locator('main h1')).toHaveText('Fraværsgrensen');
+  });
+
+  test('eksamen: rutenettet, stien med datoer, og et kort som åpnes fra adressen', async ({ page }) => {
+    await page.goto('./#/vurdering/eksamen?del=ek-tilrettelegging');
+    await expect(page.locator('.tabell-rutenett th[scope="row"]')).toHaveCount(4);
+    await expect(page.locator('.vu-sti-tall > li')).toHaveCount(6);
+    // Datoene i stien kommer fra eksamensdatoene (data/eksamen/datoer.json), eller fra innholdet.
+    await expect(page.locator('.vu-sti-naar').first()).toBeVisible();
+    await expect(page.locator('#ek-tilrettelegging .innholdskort-knapp')).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator('.samleboks .tabell-kort-rad')).toHaveCount(3);
+  });
+
+  test('Vestland-boksen på eksamen vises bare når Vestland er valgt', async ({ page }) => {
+    await page.goto('./#/vurdering/eksamen');
+    await expect(page.locator('#ek-vl-bortvisning')).toHaveCount(0);
+    await settLagret(page, { fylke: '46' });
+    await page.goto('./#/vurdering/eksamen');
+    await page.reload();
+    await expect(page.locator('#ek-vl-bortvisning')).toBeVisible();
+  });
+
+  test('klage på karakter: halvårsvurdering gir ingen klagerett, og standpunkt går til statsforvalteren', async ({ page }) => {
+    await page.goto('./#/vurdering/klage-pa-karakter');
+    await page.getByRole('link', { name: 'Halvårsvurdering eller annen underveisvurdering' }).click();
+    await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Ingen klagerett');
+    await page.goto('./#/vurdering/klage-pa-karakter');
+    await page.getByRole('link', { name: 'Standpunktkarakteren i et fag' }).click();
+    await page.getByRole('link', { name: 'Nei, klagen sendes til statsforvalteren' }).click();
+    await expect(page.locator('.veiviser-stegtittel').last()).toHaveText('Statsforvalteren avgjør');
+    await expect(page.locator('[data-veiviserfarge="baer"]').first()).toBeVisible();
+  });
+
+  test('prøvene: blå bokser, stien og lenken til klage på prøven', async ({ page }) => {
+    await page.goto('./#/vurdering/fag-og-svenneproven');
+    await expect(page.locator('.tabell-bokser .tabell-kort-rad')).toHaveCount(3);
+    await expect(page.locator('.vu-sti-tall > li')).toHaveCount(5);
+    await page.getByRole('link', { name: /Klage på karakter/ }).first().click();
+    await expect(page).toHaveURL(/steg=kl-prove&svar=prove$/);
+  });
+
+  test('tidslinjen: filteret står i adressen, og fylkets datoer vises når fylket er valgt', async ({ page }) => {
+    await page.goto('./#/vurdering/eksamen-og-klage');
+    await page.getByRole('link', { name: 'Privatister', exact: true }).click();
+    await expect(page).toHaveURL(/vis=privatister$/);
+    await expect(page.locator('.frist-kort .merke-fylke')).toHaveCount(0);
+    await settLagret(page, { fylke: '32' });
+    await page.reload();
+    await expect(page.locator('.frist-kort .merke-fylke').first()).toBeVisible();
+  });
+
+  test('fagarket lenker til eksamen', async ({ page }) => {
+    await page.goto('./#/fag/ENG1007');
+    await page.getByText('Vurderingsordning', { exact: true }).first().click();
+    await page.getByRole('link', { name: 'Eksamen: trekk, oppmelding og klage' }).click();
+    await expect(page).toHaveURL(/#\/vurdering\/eksamen$/);
   });
 });
