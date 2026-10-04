@@ -45,6 +45,7 @@ export const nn: Tekster = {
   kategorier: {
     arbeidstid: 'Arbeidstid',
     fag: 'Læreplanverket',
+    inntak: 'Inntak og opplæringstilbod',
     elev: 'Elevar og opplæring',
     skolemiljo: 'Skulemiljø',
     felles: 'Oppslag',

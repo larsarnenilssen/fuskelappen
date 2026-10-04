@@ -45,6 +45,7 @@ export const nb = {
   kategorier: {
     arbeidstid: 'Arbeidstid',
     fag: 'Læreplanverket',
+    inntak: 'Inntak og opplæringstilbud',
     elev: 'Elever og opplæring',
     skolemiljo: 'Skolemiljø',
     felles: 'Oppslag',

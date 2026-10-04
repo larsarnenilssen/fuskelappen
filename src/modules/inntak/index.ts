@@ -11,7 +11,7 @@ export const manifest: Modulmanifest = {
   navn: 'moduler.inntak.navn',
   beskrivelse: 'moduler.inntak.beskrivelse',
   ikon: 'skole',
-  kategori: 'elev',
+  kategori: 'inntak',
   rekkefolge: 5,
   ruter: [
     { sti: '/inntak', tittel: 'inntak.tittel', side: () => import('./sider/Oversikt.tsx') },

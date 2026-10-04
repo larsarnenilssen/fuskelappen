@@ -13,7 +13,7 @@ export const manifest: Modulmanifest = {
   navn: 'moduler.opplaeringslop.navn',
   beskrivelse: 'moduler.opplaeringslop.beskrivelse',
   ikon: 'veiviser',
-  kategori: 'fag',
+  kategori: 'inntak',
   rekkefolge: 20,
   ruter: [
     { sti: '/opplaeringslop', tittel: 'opplaeringslop.tittel', side: () => import('./sider/Oversikt.tsx') },

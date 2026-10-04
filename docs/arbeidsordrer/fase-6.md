@@ -36,6 +36,8 @@ Vi starter fase 6 i Fuskelappen (repo `larsarnenilssen/fuskelappen`). Skriv til 
 - vestlandfylke.no har ikke svart. Sjekk først om sidene svarer. Da kan antall inntaksområdepoeng og Vestlands klagenemnd legges inn. Svarer de ikke, tas spørsmålene med videre.
 - Forskjellene mellom VIGO og Grep i «bygger på» står i `docs/TILBUDSSTRUKTUR.md`: noen koblinger finnes bare i VIGO (salg, service og reiseliv Vg2 → fire lærefag, tysk skole) og noen bare i Grep. Ta dem opp med meg når det passer.
 
+**Forsiden (eier 04.10.2026), ikke publisert ennå:** Opplæringstilbud er flyttet fra «Læreplanverket» til den nye overskriften «Inntak og opplæringstilbud», sammen med Inntak. Endringen ligger på grenen `claude/fase-6` og er bare kontrollert med lint, typesjekk, `npm test` og forsidetestene i WebKit mobil. **Start på den grenen** (`git fetch origin claude/fase-6 && git checkout claude/fase-6`), og bygg pakke 1 videre der. Hele testrunden og publiseringen tas sammen med pakke 1. Planen for overskriftene når alle fasene er levert, står i `OPPDRAG.md` punkt 3.7.
+
 **Fase 6: Vurdering, fravær og eksamen.** Hver pakke er én gren, én PR og én versjon:
 
 1. **Vurdering**
@@ -62,7 +64,7 @@ I alle pakkene:
 - Stegene i de to veiviserne, med kilder.
 - Hvilke frister og datoer som skal med, og hvor de står.
 - Hvilke nye begreper du foreslår til begrepsbanken.
-- Om det trengs en ny modul for vurdering, eller om noe passer i en modul som finnes.
+- Om det trengs en ny modul for vurdering, eller om noe passer i en modul som finnes. Etter planen for forsiden blir det én modul, Vurdering (med fravær, eksamen og klage), under «Elever og opplæring» sammen med Tilrettelegging. Foreslår du noe annet, vis hvordan det passer med overskriftene (én til tre hovedbokser per overskrift).
 - Hvilke VIGO-data du vil bruke, og til hva.
 
 Bygg først når jeg har godkjent dette.

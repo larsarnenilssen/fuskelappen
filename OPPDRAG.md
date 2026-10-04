@@ -198,6 +198,14 @@ Skjemaet defineres med zod og valideres i testene.
 
 - Forsiden har samlet søkefelt øverst, deretter favoritter og moduler gruppert under overskrifter.
 - *(Endret 01.10.2026, eier:)* Hver overskrift har én til tre hovedbokser og eventuelt én sammenleggbar boks med resten. Under «Arbeidstid» står Arbeidsplan som egen boks og de andre kalkulatorene i den sammenleggbare boksen. Egen overskrift for hurtigkalkulatorer og mellomsiden for arbeidstid tas bort, og gamle adresser sendes videre.
+- *(Endret 04.10.2026, eier:)* Opplæringstilbud flyttes fra «Læreplanverket» til den nye overskriften «Inntak og opplæringstilbud», sammen med Inntak. Læreplanverket har da bare Overordnet del og Fag og læreplaner. Når alle fasene er levert, er overskriftene og modulene etter planen:
+  - **Arbeidstid:** Arbeidsplan og kalkulatorene.
+  - **Læreplanverket:** Overordnet del, Fag og læreplaner.
+  - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
+  - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
+  - **Skolemiljø:** Skolemiljø (fase 7).
+  - **Oppslag:** Begreper, Regelverk. Om Frister og årshjul (fase 8) står her eller øverst på forsiden, avgjøres i fase 8.
+  - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
 - Favoritter: funksjoner, fag og begreper. Lagres lokalt og kan sorteres.
