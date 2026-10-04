@@ -260,8 +260,9 @@ async function sjekk(kilde: Kilde): Promise<Sjekkresultat> {
   try {
     switch (kilde.sjekkmetode) {
       case 'side': {
-        const { fingeravtrykk, tekst } = await sjekkSide(kilde);
+        const { fingeravtrykk, tekst, nettleser } = await sjekkSide(kilde);
         tekster[kilde.id] = { tekst };
+        if (nettleser) rapport.push(`### ${kilde.navn}`, 'Lest med nettleser, fordi siden ikke svarte på vanlig henting.', '');
         return vurderMotGodkjent(fingeravtrykk, kilde.godkjent_fingeravtrykk);
       }
       case 'nsr':
