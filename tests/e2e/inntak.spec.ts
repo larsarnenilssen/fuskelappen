@@ -58,7 +58,7 @@ test.describe('inntak', () => {
     await boks.getByText('Inntaksområde, skoler og tilleggspoeng').click();
     // Paragrafene står i en lukket rad nederst i boksen, som i kortene ellers (eier 04.10.2026).
     await expect(lenke).toBeHidden();
-    await boks.getByText(/I regelverket/).click();
+    await boks.locator('summary', { hasText: /I regelverket/ }).click();
     await expect(lenke).toHaveAttribute('href', /#\/lov\/vestland-inntak\/2-1/);
     // Kildene til Vestland-boksen er med i kildene til steget.
     await expect(page.locator('.veiviser-steg').first().getByText(/Kilder \(7\)/)).toBeVisible();
