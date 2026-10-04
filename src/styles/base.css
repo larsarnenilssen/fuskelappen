@@ -6821,3 +6821,85 @@ button.frist-stripe-celle:hover {
   padding: 0;
   list-style: none;
 }
+
+/* Stien med nummer (components/Sti.tsx, fase 6, pakke 3): nummeret står i sirkelen på linjen, og tidspunktet over kortet. */
+.vu-sti-tall {
+  padding-left: var(--rom-6);
+}
+
+.vu-sti-tall::before {
+  left: calc(0.75rem - 1px);
+}
+
+.vu-sti-tall > li {
+  margin-bottom: var(--rom-2);
+}
+
+.vu-sti-tall > li::before {
+  display: none;
+}
+
+.vu-sti-nr {
+  position: absolute;
+  top: 0.75rem;
+  left: calc(-1 * var(--rom-6));
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.vu-sti-naar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.vu-sti-tid {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.vu-sti-naar + .innholdskort {
+  margin-top: 0;
+}
+
+.tabell-bokser .tabell-kort-rad {
+  border-color: transparent;
+  background: var(--farge-flate-2);
+}
+
+.tabell-bokser .tabell-kort-tittel {
+  color: var(--farge-merke);
+}
+
+.samleboks {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.samleboks-tittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-l);
+}
+
+.samleboks .tabell-kort {
+  margin-top: var(--rom-3);
+}
+
+.samleboks .tabell-kort-rad {
+  background: var(--farge-bakgrunn);
+}

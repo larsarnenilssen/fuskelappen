@@ -107,11 +107,12 @@ export const kodegruppe = z
 /**
  * En tabell som står åpen over teksten i et kort (fase 6, pakke 3). `rutenett` viser radene mot kolonnene, f.eks.
  * trinn mot utdanningsprogram, med et stort tall og en kort tekst i hver rute. `kort` viser hver rad som et kort med
- * kolonnene som etiketter, så den kan leses på mobil. En rad med én celle går over alle kolonnene.
+ * kolonnene som etiketter, så den kan leses på mobil. `bokser` er det samme som blå bokser, f.eks. prøvene øverst på
+ * siden om prøvene. En rad med én celle går over alle kolonnene.
  */
 export const tabellSkjema = z
   .object({
-    form: z.enum(['rutenett', 'kort']),
+    form: z.enum(['rutenett', 'kort', 'bokser']),
     kolonner: z.array(flerspraak).min(1),
     rader: z
       .array(
@@ -142,6 +143,8 @@ export const vanligElement = z
     sammenligning: z.object({ venstre: flerspraak, hoyre: flerspraak }).strict().optional(),
     kodegrupper: z.array(kodegruppe).optional(),
     tabell: tabellSkjema.optional(),
+    /** Når steget skjer, i to–fire ord, til merket over kortet i en sti (f.eks. «To måneder før»). */
+    naar: flerspraak.optional(),
   })
   .strict();
 

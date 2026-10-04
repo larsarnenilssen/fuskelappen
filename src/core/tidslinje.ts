@@ -62,21 +62,23 @@ function datoTekst(iso: string, malform: Malform, medAar: boolean): string {
   return `${d}. ${manedsnavn(m, malform)}${medAar ? ` ${aar}` : ''}`;
 }
 
+/** En dato eller en periode med dato: «16.–27. november 2026», «1. september–1. oktober 2026», «12. november kl. 09.00». */
+export function datoperiode(dato: string, til: string | undefined, kl: string | undefined, malform: Malform, medAar: boolean): string {
+  let tekst: string;
+  if (til && til !== dato) {
+    const sammeAar = til.slice(0, 4) === dato.slice(0, 4);
+    const sammeManed = sammeAar && til.slice(5, 7) === dato.slice(5, 7);
+    tekst = sammeManed ? `${Number(dato.slice(8, 10))}.–${datoTekst(til, malform, medAar)}` : `${datoTekst(dato, malform, medAar && !sammeAar)}–${datoTekst(til, malform, medAar)}`;
+  } else tekst = datoTekst(dato, malform, medAar);
+  return kl ? `${tekst} kl. ${kl}` : tekst;
+}
+
 /**
  * «1. februar» for en fast dag, ellers tidspunktet med ord, ellers navnet på måneden. En frist med dato fra dataene
  * får året, sluttdatoen og klokkeslettet: «16.–27. november 2026», «12. november 2026 kl. 09.00».
  */
 export function tidspunkt(f: Tidslinjefrist, malform: Malform): string {
-  if (f.dato && (f.aar || f.til || f.kl)) {
-    const medAar = f.aar ?? false;
-    let tekst: string;
-    if (f.til && f.til !== f.dato) {
-      const sammeAar = f.til.slice(0, 4) === f.dato.slice(0, 4);
-      const sammeManed = sammeAar && f.til.slice(5, 7) === f.dato.slice(5, 7);
-      tekst = sammeManed ? `${Number(f.dato.slice(8, 10))}.–${datoTekst(f.til, malform, medAar)}` : `${datoTekst(f.dato, malform, medAar && !sammeAar)}–${datoTekst(f.til, malform, medAar)}`;
-    } else tekst = datoTekst(f.dato, malform, medAar);
-    return f.kl ? `${tekst} kl. ${f.kl}` : tekst;
-  }
+  if (f.dato && (f.aar || f.til || f.kl)) return datoperiode(f.dato, f.til, f.kl, malform, f.aar ?? false);
   const m = maned(f);
   const d = dag(f);
   if (f.naar) return f.naar[malform];

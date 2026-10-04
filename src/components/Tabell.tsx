@@ -1,15 +1,15 @@
 // En tabell fra innholdet (`tabell` på et kort, fase 6, pakke 3), som står åpen over kortet så den gir oversikt med
 // ett blikk. `rutenett` viser radene mot kolonnene, med et stort tall og en kort tekst i hver rute, f.eks. antall
 // eksamener per trinn og utdanningsprogram. `kort` viser hver rad som et kort med kolonnene som etiketter, så lange
-// tekster kan leses også på mobil.
+// tekster kan leses også på mobil. `bokser` er de samme kortene som blå bokser.
 import { useTekst } from '../app/tilstand.ts';
 import type { Flerspraak, Tabell as TabellData } from '../core/innhold/skjema.ts';
 
 export function Tabell({ tabell, tittel }: { tabell: TabellData; tittel: Flerspraak }) {
   const { malform } = useTekst();
-  if (tabell.form === 'kort') {
+  if (tabell.form === 'kort' || tabell.form === 'bokser') {
     return (
-      <ul class="tabell-kort" aria-label={tittel[malform]}>
+      <ul class={`tabell-kort${tabell.form === 'bokser' ? ' tabell-bokser' : ''}`} aria-label={tittel[malform]}>
         {tabell.rader.map((r) => (
           <li key={r.tittel.nb} class="tabell-kort-rad">
             <h3 class="tabell-kort-tittel">{r.tittel[malform]}</h3>

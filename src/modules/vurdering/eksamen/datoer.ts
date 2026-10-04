@@ -2,7 +2,8 @@
 // En frist med `eksamensdato` får datoen fra perioden som har datoen i skoleåret (august–juli). Fylkenes egne datoer
 // vises bare for fylket brukeren har valgt, og merkes med fylket. Uten data står fristen med måneden og `naar`.
 import type { Frist } from '../../../core/innhold/skjema.ts';
-import type { Tidslinjefrist } from '../../../core/tidslinje.ts';
+import type { Malform } from '../../../core/i18n/tekst.ts';
+import { datoperiode, type Tidslinjefrist } from '../../../core/tidslinje.ts';
 import type { Eksamensdato, Eksamensdatoer } from './skjema.ts';
 
 /** Skoleåret fra august til juli, som tidslinjen viser. */
@@ -58,5 +59,18 @@ export function medEksamensdatoer(frister: readonly Frist[], data: Eksamensdatoe
       kilder: [...f.kilder, ...kilder],
       ...(e.fylke && fylke ? { gyldighet: { niva: 'fylke' as const, fylke, forhold: 'supplerer' as const } } : {}),
     };
+  });
+}
+
+/**
+ * Datoene til et steg i stien på siden «Eksamen», for høst- og våreksamen i skoleåret: «Høst: 12. november 2026 kl.
+ * 09.00». Tom når ingen av periodene har datoen.
+ */
+export function stidatoer(data: Eksamensdatoer | null, felt: string, skolear: number, malform: Malform, etiketter: { host: string; var: string }): string[] {
+  if (!data) return [];
+  return (['host', 'var'] as const).flatMap((p) => {
+    const d = finnDato(data.nasjonal, p, felt, skolear);
+    const dato = d?.fra ?? d?.til;
+    return d && dato ? [`${etiketter[p]}: ${datoperiode(dato, d.fra && d.til ? d.til : undefined, d.kl, malform, true)}`] : [];
   });
 }

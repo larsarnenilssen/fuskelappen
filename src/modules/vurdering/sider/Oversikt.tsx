@@ -72,39 +72,39 @@ export default function Oversikt() {
           {t('vurdering.delEksamen')}
         </h2>
         {innhold !== null && (
+          // Eksamen og prøvene står ved siden av hverandre, og veiviseren og tidslinjen under (eier 04.10.2026).
           <Veiviserinnganger
             veivisere={veivisere.filter((v) => v.id === KLAGE)}
             rute={veiviserRute}
             foran={[
               { id: 'eksamen', kort: <Inngang {...UNDERSIDER.eksamen} tittel={t('vurdering.eksamen.kort')} tekst={t('vurdering.eksamen.beskrivelse')} /> },
+              { id: 'provene', kort: <Inngang {...UNDERSIDER.provene} tittel={t('vurdering.provene.kort')} tekst={t('vurdering.provene.beskrivelse')} /> },
+            ]}
+            etter={[
+              {
+                id: 'frister',
+                // Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne tidslinjen.
+                kort: (
+                  <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
+                    <span class="frist-inngang-tittel">
+                      <Ikon navn={UNDERSIDER.frister.ikon} />
+                      {t('vurdering.frister.tittel')}
+                    </span>
+                    {neste ? (
+                      <span class="frist-inngang-neste">
+                        <span class="frist-inngang-etikett">{t('vurdering.frister.neste')}</span>
+                        <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
+                        <span>{neste.tittel[malform]}</span>
+                      </span>
+                    ) : (
+                      <span class="frist-inngang-neste">{t('vurdering.frister.beskrivelse')}</span>
+                    )}
+                    <Ikon navn="hoyre" class="frist-inngang-pil" />
+                  </a>
+                ),
+              },
             ]}
           />
-        )}
-        {innhold !== null && (
-          <ul class="veiviser-innganger">
-            <li>
-              {/* Kortet viser den neste datoen, så brukeren ser hva som kommer uten å åpne tidslinjen. */}
-              <a class="frist-inngang" href={`#${UNDERSIDER.frister.rute}`}>
-                <span class="frist-inngang-tittel">
-                  <Ikon navn={UNDERSIDER.frister.ikon} />
-                  {t('vurdering.frister.tittel')}
-                </span>
-                {neste ? (
-                  <span class="frist-inngang-neste">
-                    <span class="frist-inngang-etikett">{t('vurdering.frister.neste')}</span>
-                    <span class="frist-inngang-tid">{tidspunkt(neste, malform)}</span>
-                    <span>{neste.tittel[malform]}</span>
-                  </span>
-                ) : (
-                  <span class="frist-inngang-neste">{t('vurdering.frister.beskrivelse')}</span>
-                )}
-                <Ikon navn="hoyre" class="frist-inngang-pil" />
-              </a>
-            </li>
-            <li>
-              <Inngang {...UNDERSIDER.provene} tittel={t('vurdering.provene.kort')} tekst={t('vurdering.provene.beskrivelse')} />
-            </li>
-          </ul>
         )}
       </section>
       <section class="lop-del" aria-labelledby="vu-del-orden">

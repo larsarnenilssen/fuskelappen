@@ -69,6 +69,7 @@
 
 - id: ek-oppmelding
   type: forklaring
+  naar: { nb: Udir fastsetter fristene, nn: Udir fastset fristane }
   tittel:
     nb: "Oppmelding"
     nn: "Oppmelding"
@@ -93,40 +94,70 @@
   kontrollsporsmal:
     - "Er det riktig å skrive at ny og utsatt eksamen er gratis for privatister (§ 9-27 sjette ledd)?"
 
+- id: ek-trekket
+  type: forklaring
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  tittel:
+    nb: "Trekket blir kjent"
+    nn: "Trekket blir kjent"
+  tekst:
+    nb: "Elevene får vite hvilke fag de er trukket ut til, på datoen Udir fastsetter. Det gjelder både skriftlig, muntlig og praktisk eksamen. Datoene står på [tidslinjen](#/vurdering/eksamen-og-klage)."
+    nn: "Elevane får vite kva fag dei er trekte ut til, på datoen Udir fastset. Det gjeld både skriftleg, munnleg og praktisk eksamen. Datoane står på [tidslinja](#/vurdering/eksamen-og-klage)."
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: udir-administrere-eksamen, punkt: "Trekk på videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder Udirs trekkdato også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?"
+
+- id: ek-forberedelse
+  type: forklaring
+  naar: { nb: 24–48 timer før, nn: 24–48 timar før }
+  tittel:
+    nb: "Forberedelse"
+    nn: "Førebuing"
+  tekst:
+    nb: "Læreplanen sier om eksamen har en forberedelsesdel. Den er en del av opplæringen, og det som vurderes, er det kandidaten viser på eksamensdagen. Før muntlig eksamen varer den 24 timer, ellers 24 til 48 timer. Forberedelse og eksamen holdes på virkedager."
+    nn: "Læreplanen seier om eksamen har ein førebuingsdel. Han er ein del av opplæringa, og det som blir vurdert, er det kandidaten viser på eksamensdagen. Før munnleg eksamen varer han 24 timar, elles 24 til 48 timar. Førebuing og eksamen blir haldne på verkedagar."
+  paragrafer: [opplaeringsforskrifta/9-32, opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-32 og § 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at forberedelsesdelen før muntlig eksamen alltid er 24 timer (§ 9-32 andre ledd)?"
+
 - id: ek-gjennomforing
   type: forklaring
+  naar: { nb: Skriftlig kl. 09.00, nn: Skriftleg kl. 09.00 }
   tittel:
-    nb: "Gjennomføring"
-    nn: "Gjennomføring"
+    nb: "Eksamensdagen"
+    nn: "Eksamensdagen"
   tekst:
     nb: |-
-      Eksamen og forberedelse holdes på virkedager. Hvis ikke læreplanen sier noe annet, er tidsrammene:
+      Skriftlig eksamen starter kl. 09.00. Kandidater som kommer før kl. 10.00, kan gjennomføre, men får ikke igjen tiden de har tapt. Hvis ikke læreplanen sier noe annet, er tidsrammene:
 
       - **Skriftlig:** opptil fem timer
       - **Muntlig:** opptil 30 minutter per kandidat
       - **Muntlig-praktisk:** opptil 45 minutter per kandidat
       - **Praktisk:** opptil fem timer per kandidat
-
-      Skriftlig eksamen starter kl. 09.00. Kandidater som kommer før kl. 10.00, kan gjennomføre, men får ikke igjen tiden de har tapt. En forberedelsesdel er en del av opplæringen og varer 24 timer før muntlig eksamen, og 24 til 48 timer ellers.
     nn: |-
-      Eksamen og førebuing blir haldne på verkedagar. Viss ikkje læreplanen seier noko anna, er tidsrammene:
+      Skriftleg eksamen startar kl. 09.00. Kandidatar som kjem før kl. 10.00, kan gjennomføre, men får ikkje att tida dei har tapt. Viss ikkje læreplanen seier noko anna, er tidsrammene:
 
       - **Skriftleg:** opptil fem timar
       - **Munnleg:** opptil 30 minutt per kandidat
       - **Munnleg-praktisk:** opptil 45 minutt per kandidat
       - **Praktisk:** opptil fem timar per kandidat
-
-      Skriftleg eksamen startar kl. 09.00. Kandidatar som kjem før kl. 10.00, kan gjennomføre, men får ikkje att tida dei har tapt. Ein førebuingsdel er ein del av opplæringa og varer 24 timar før munnleg eksamen, og 24 til 48 timar elles.
-  paragrafer: [opplaeringsforskrifta/9-28, opplaeringsforskrifta/9-32]
+  paragrafer: [opplaeringsforskrifta/9-28]
   kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre, fjerde og femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
-    - { id: opplaeringsforskrifta, punkt: "§ 9-32", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-32" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 fjerde og femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig at forberedelsesdelen før muntlig eksamen alltid er 24 timer (§ 9-32 andre ledd)?"
+    - "Er tidsrammene i § 9-28 fjerde ledd gjengitt riktig?"
 
 - id: ek-sensur
   type: forklaring
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
   tittel:
     nb: "Sensur"
     nn: "Sensur"
@@ -139,6 +170,22 @@
   kontrollert: null
   kontrollsporsmal:
     - "«Oppmann» er ordet i forskriften («ein oppmann eller ei oppkvinne»). Er det greit å bruke bare det?"
+
+- id: ek-klage
+  type: forklaring
+  naar: { nb: Ti dager, nn: Ti dagar }
+  tittel:
+    nb: "Karakteren og klage"
+    nn: "Karakteren og klage"
+  tekst:
+    nb: "Kandidaten kan klage innen ti dager. På skriftlig eksamen kan kandidaten klage på selve karakteren, og en klagenemnd avgjør. På muntlig og praktisk eksamen kan kandidaten bare klage på formelle feil, og statsforvalteren avgjør. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+    nn: "Kandidaten kan klage innan ti dagar. På skriftleg eksamen kan kandidaten klage på sjølve karakteren, og ei klagenemnd avgjer. På munnleg og praktisk eksamen kan kandidaten berre klage på formelle feil, og statsforvaltaren avgjer. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+  paragrafer: [opplaeringsforskrifta/10-2, opplaeringsforskrifta/10-7, opplaeringsforskrifta/10-8, opplaeringsforskrifta/9-37]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2, § 10-7 og § 10-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av klagereglene for eksamen dekkende som et steg i stien?"
 
 - id: ek-bortvisning
   type: forklaring
