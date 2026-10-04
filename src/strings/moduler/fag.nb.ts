@@ -82,7 +82,6 @@ export const fagNb = {
     arsrammeAvhenger: 'Avhenger av program og trinn.',
     arsrammeVis: 'Se alle {antall}',
     arsrammeProgramVerdi: '{t60} ({t45})',
-    arsrammeHjelp: 'Bygger på appens tolkning av vedlegg 1 til SFS 2213.',
     regnUt: 'Regn ut i Arbeidsplan',
     nokkeltall: 'Årstimetall og årsramme',
     merker: 'Fagkode, fagtype og trinn',

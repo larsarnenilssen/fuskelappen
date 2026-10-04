@@ -90,7 +90,8 @@ test.describe('fag og læreplaner', () => {
     const ramme = page.locator('.nokkeltall-kort');
     await expect(ramme.locator('.nokkeltall-rute').first()).toContainText('197');
     await expect(ramme).toContainText('607,5');
-    await expect(ramme).toContainText('appens tolkning av vedlegg 1');
+    // At årsrammen bygger på appens tolkning, står på begrepet bak «i», ikke i ruten (eier 04.10.2026).
+    await expect(ramme).not.toContainText('appens tolkning av vedlegg 1');
     // Alle delene er lukket til brukeren åpner dem, og ferdighetene og temaene står før kompetansemålene (eier 02.10.2026).
     const deler = ['laereplanverket', 'kompetansemaal', 'vurdering', 'programomrader'];
     await expect(page.locator('[data-seksjon]')).toHaveCount(deler.length);
@@ -103,6 +104,11 @@ test.describe('fag og læreplaner', () => {
     await expect(page.locator('main h1')).toHaveText('Arbeidsplan');
     await expect(page.locator('[data-gruppe="1"] .fagvalg')).toContainText('HEA2005');
     await expect(page.getByLabel('Antall årstimer')).toHaveValue('197');
+  });
+
+  test('begrepet årsramme sier i en merknad at årsrammene bygger på appens tolkning (eier 04.10.2026)', async ({ page }) => {
+    await page.goto('./#/begreper/arsramme');
+    await expect(page.locator('.begrep-merknad')).toContainText('appens tolkning av vedlegg 1 til SFS 2213');
   });
 
   test('årsrammen som varierer med program, står i en utvidelse av ruten som er lukket (eier 02.10.2026)', async ({ page }) => {

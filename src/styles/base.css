@@ -2929,20 +2929,15 @@ p.fagkort-tittel {
   white-space: nowrap;
 }
 
-.nokkeltall-bunn {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--rom-2);
-  margin-top: var(--rom-3);
-}
-
-.nokkeltall-bunn .knapp {
+.nokkeltall-regn-ut {
   display: inline-flex;
   align-items: center;
   gap: var(--rom-1);
-  text-decoration: none;
+  align-self: flex-start;
+  min-height: var(--trykkflate);
+  margin-bottom: calc(-1 * var(--rom-2));
+  font-size: var(--str-s);
+  font-weight: 600;
 }
 
 .fagark-fakta {
@@ -6557,4 +6552,9 @@ button.frist-stripe-celle:hover {
   margin-left: var(--rom-2);
   padding-left: var(--rom-3);
   border-left: 3px solid var(--farge-kant);
+}
+
+/* Merknaden på et begrep, f.eks. at årsrammene bygger på appens tolkning (eier 04.10.2026). */
+.begrep-merknad {
+  margin: var(--rom-3) 0;
 }

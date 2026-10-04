@@ -84,7 +84,6 @@ export const fagNn: Skjema<typeof fagNb> = {
     arsrammeAvhenger: 'Avheng av program og trinn.',
     arsrammeVis: 'Sjå alle {antall}',
     arsrammeProgramVerdi: '{t60} ({t45})',
-    arsrammeHjelp: 'Byggjer på tolkinga appen gjer av vedlegg 1 til SFS 2213.',
     regnUt: 'Rekn ut i Arbeidsplan',
     nokkeltall: 'Årstimetal og årsramme',
     merker: 'Fagkode, fagtype og trinn',

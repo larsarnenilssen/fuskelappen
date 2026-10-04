@@ -49,6 +49,9 @@
   tekst:
     nb: Årsrammen er antallet undervisningstimer i et fag som utgjør en hel stilling i et helt skoleår. Årsrammene står i vedlegg 1 til SFS 2213, i 60- og 45-minutters enheter, og varierer med fag, utdanningsprogram og trinn. Har en time elever fra program eller nivåer med ulike årsrammer, brukes den laveste.
     nn: Årsramma er talet på undervisningstimar i eit fag som utgjer ei heil stilling i eit heilt skuleår. Årsrammene står i vedlegg 1 til SFS 2213, i 60- og 45-minutts einingar, og varierer med fag, utdanningsprogram og trinn. Har ein time elevar frå program eller nivå med ulike årsrammer, blir den lågaste brukt.
+  merknad:
+    nb: Årsrammene som brukes i appen, bygger på appens tolkning av vedlegg 1 til SFS 2213.
+    nn: Årsrammene som blir brukte i appen, byggjer på tolkinga appen har gjort av vedlegg 1 til SFS 2213.
   kilder: [{ id: ks-sfs2213-avtaletekst, punkt: Vedlegg 1 }]
   kontrollert: null
   kontrollsporsmal:

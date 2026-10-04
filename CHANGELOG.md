@@ -18,7 +18,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 - **Søketreffene** sier hva treffet er i appen: veiviser, kalkulator, tidslinje eller side i stedet for «funksjon», og fagmerknad, vitnemålsmerknad, status på søkerønske eller karakter/statuskode i stedet for «begrep» for kodene i oppslagene.
 - **Vurdering på forsiden** skriver underveis- og sluttvurdering helt ut.
-- **Fagarket:** «i» for trinnet står inni merket, som for fagtypen, og «Læreplan i …» er tatt bort over kompetansemålene.
+- **Fagarket:** «i» for trinnet står inni merket, som for fagtypen, og «Læreplan i …» er tatt bort over kompetansemålene. At årsrammen bygger på appens tolkning av vedlegg 1, står nå i en gul merknad på begrepet Årsramme, og «Regn ut i Arbeidsplan» står i ruten for årsrammen.
 
 ## [0.32.0] – 2026-10-04
 

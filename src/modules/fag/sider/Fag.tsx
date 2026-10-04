@@ -359,6 +359,20 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
                 </span>
               </button>
             )}
+            {/* «Regn ut i Arbeidsplan» står i ruten for årsrammen, så kortet ikke trenger en egen rad (eier 04.10.2026).
+                At årsrammen bygger på appens tolkning av vedlegg 1, står på begrepet Årsramme bak «i». */}
+            <a
+              class="nokkeltall-regn-ut"
+              href="#/arbeidstid/arbeidsplan"
+              onClick={(e) => {
+                e.preventDefault();
+                regnUtIArbeidsplan(kode, fag, r);
+              }}
+              data-regn-ut
+            >
+              <Ikon navn="kalkulator" class="ikon-liten" />
+              {t('fag.side.regnUt')}
+            </a>
           </div>
         )}
       </div>
@@ -373,23 +387,6 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
             </div>
           ))}
         </dl>
-      )}
-      {kjent && (
-        <div class="nokkeltall-bunn">
-          <span class="dempet liten">{t('fag.side.arsrammeHjelp')}</span>
-          <a
-            class="knapp knapp-sekundaer knapp-liten"
-            href="#/arbeidstid/arbeidsplan"
-            onClick={(e) => {
-              e.preventDefault();
-              regnUtIArbeidsplan(kode, fag, r);
-            }}
-            data-regn-ut
-          >
-            <Ikon navn="kalkulator" class="ikon-liten" />
-            {t('fag.side.regnUt')}
-          </a>
-        </div>
       )}
     </section>
   );
