@@ -1,6 +1,6 @@
 // Underveis- og sluttvurdering (fase 6, pakke 1, mockup godkjent av eier 04.10.2026): skoleåret som én stripe,
-// forskjellen side om side i én boks, prinsippene for å vurdere kompetansemålene som kort, og vurderingsteksten i
-// læreplanen for et fag fra Grep. Faget står i adressen (?fag=ENG1007), så fagarket kan lenke rett hit.
+// forskjellen side om side i én boks, vurderingsteksten i læreplanen for et fag fra Grep, og prinsippene for å vurdere
+// kompetansemålene som en sti av kort. Faget står i adressen (?fag=ENG1007), så fagarket kan lenke rett hit.
 import { useEffect, useId, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { useTekst } from '../../../app/tilstand.ts';
@@ -24,25 +24,25 @@ function Skolearet() {
   const felt = (fra: number, til: number) => ({ left: `${(fra / 11) * 100}%`, width: `${((til - fra) / 11) * 100}%` });
   return (
     <figure class="skolear" aria-label={t('vurdering.underveisSlutt.figurTittel')}>
+      {/* Etikettene over og under stolpen har samme størrelse. Underveisvurderingen står over, så feltene ikke deler den. */}
       <div class="skolear-rad" aria-hidden="true">
-        <span class="skolear-etikett skolear-standpunkt" style={felt(8.4, 10.95)}>
+        <span class="skolear-etikett skolear-underveis" style={{ left: 0 }}>
+          {t('vurdering.underveisSlutt.underveis')} {t('vurdering.underveisSlutt.heleAaret')}
+        </span>
+        <span class="skolear-etikett skolear-standpunkt" style={felt(8.6, 11)}>
           {t('vurdering.underveisSlutt.standpunkt')}
         </span>
       </div>
       <div class="skolear-spor" aria-hidden="true">
-        <span class="skolear-underveis">{t('vurdering.underveisSlutt.underveis')}</span>
-        <span class="skolear-underveis" style={{ left: '53%' }}>
-          {t('vurdering.underveisSlutt.heleAaret')}
-        </span>
         <span class="skolear-felt skolear-felt-halvaar" style={felt(4.3, 5.7)} />
-        <span class="skolear-felt skolear-felt-eksamen" style={felt(9.1, 9.7)} />
-        <span class="skolear-felt skolear-felt-standpunkt" style={felt(9.7, 10.6)} />
+        <span class="skolear-felt skolear-felt-eksamen" style={felt(9.05, 9.75)} />
+        <span class="skolear-felt skolear-felt-standpunkt" style={felt(9.85, 10.7)} />
       </div>
-      <div class="skolear-rad" aria-hidden="true">
+      <div class="skolear-rad skolear-rad-under" aria-hidden="true">
         <span class="skolear-etikett skolear-halvaar" style={felt(3.5, 6.5)}>
           {t('vurdering.underveisSlutt.halvaar')}
         </span>
-        <span class="skolear-etikett skolear-eksamen" style={felt(7.6, 10.2)}>
+        <span class="skolear-etikett skolear-eksamen" style={felt(7.9, 10.9)}>
           {t('vurdering.underveisSlutt.eksamen')}
         </span>
       </div>
@@ -200,6 +200,12 @@ export default function UnderveisSlutt({ sporring }: SideProps) {
         <Skolearet />
         {skolearet && <Innholdskort element={skolearet} />}
       </section>
+      {/* Fagsøket står rett under skoleåret, så det ikke blir oversett, og et fag fra fagarket vises høyt (eier 04.10.2026). */}
+      <section>
+        <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.iLaereplanen')}</h2>
+        {/* Ny nøkkel når faget i adressen endres via en lenke, så valget følger adressen. */}
+        <IFaget key={sporring.get('fag') ?? ''} startkode={sporring.get('fag') ?? ''} />
+      </section>
       {innhold === null ? (
         <p class="dempet">{t('app.lasterInn')}</p>
       ) : (
@@ -210,22 +216,24 @@ export default function UnderveisSlutt({ sporring }: SideProps) {
               tittel={t('vurdering.underveisSlutt.forskjellen')}
               venstre={t('vurdering.underveisSlutt.venstre')}
               hoyre={t('vurdering.underveisSlutt.hoyre')}
+              venstreLang={t('vurdering.underveisSlutt.venstreLang')}
+              hoyreLang={t('vurdering.underveisSlutt.hoyreLang')}
               rader={rader.flatMap((r) => (r.sammenligning ? [{ id: r.id, tittel: r.tittel, venstre: r.sammenligning.venstre, hoyre: r.sammenligning.hoyre }] : []))}
             />
           </section>
           <section>
             <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.prinsipper')}</h2>
-            {prinsipper.map((p) => (
-              <Innholdskort key={p.id} element={p} />
-            ))}
+            {/* Prinsippene i den rekkefølgen de kommer i skoleåret, som en sti. */}
+            <ol class="vu-sti">
+              {prinsipper.map((p) => (
+                <li key={p.id}>
+                  <Innholdskort element={p} />
+                </li>
+              ))}
+            </ol>
           </section>
         </>
       )}
-      <section>
-        <h2 class="liten-overskrift">{t('vurdering.underveisSlutt.iLaereplanen')}</h2>
-        {/* Ny nøkkel når faget i adressen endres via en lenke, så valget følger adressen. */}
-        <IFaget key={sporring.get('fag') ?? ''} startkode={sporring.get('fag') ?? ''} />
-      </section>
     </div>
   );
 }

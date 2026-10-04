@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Veiviser } from '../../../components/Veiviser.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import type { SideProps } from '../../typer.ts';
@@ -32,6 +33,7 @@ export default function Veiviserside({ parametre, sporring }: SideProps) {
   );
   return (
     <div class="side" data-veiviserfarge={veiviser.farge}>
+      <Brodsmuler ledd={[{ tekst: t('vurdering.tittel'), href: '#/vurdering' }]} />
       <div class="tittelrad">
         <h1 tabIndex={-1}>{veiviser.tittel[malform]}</h1>
         <FavorittKnapp id={`vurdering:${veiviser.id}`} navn={veiviser.tittel[malform]} />

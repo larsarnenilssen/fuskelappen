@@ -11,6 +11,7 @@ import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { finnKobling, type Koblingsresultat } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
@@ -403,6 +404,7 @@ export default function Fagside({ parametre }: SideProps) {
     plan && typeof plan === 'object' ? plan.kompetansemaalsett.filter((x) => fag.km.includes(x.kode)).reduce((sum, x) => sum + x.maal.length, 0) : null;
   return (
     <article class="side fagark" data-fagtype={fag.type}>
+      <Brodsmuler ledd={[{ tekst: t('fag.tittel'), href: '#/fag' }]} />
       <div class="tittelrad">
         <h1 tabIndex={-1}>{fag.navn[malform]}</h1>
         <FavorittKnapp id={`fag:${kode}`} navn={fag.navn[malform]} />

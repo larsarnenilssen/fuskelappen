@@ -30,7 +30,7 @@ export default function Oversikt() {
   }, []);
   const sted = { fylke: innstillinger.fylke, skole: innstillinger.skole?.id ?? null };
   return (
-    <div class="side lop-oversikt">
+    <div class="side">
       <h1 tabIndex={-1}>{t('vurdering.tittel')}</h1>
       <p class="ingress">
         <Begrepstekst tekst={t('vurdering.innledning')} />
@@ -39,14 +39,21 @@ export default function Oversikt() {
         <h2 class="liten-overskrift" id="vu-del-fag">
           {t('vurdering.delFag')}
         </h2>
-        <div class="lop-innganger">
-          <Inngang rute={underveisSluttRute} ikon="bok" tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />
-          {innhold === null ? (
-            <p class="dempet">{t('app.lasterInn')}</p>
-          ) : (
-            <Veiviserinnganger veivisere={velgSynlige(innhold.veivisere, sted)} rute={veiviserRute} />
-          )}
-        </div>
+        {innhold === null ? (
+          <p class="dempet">{t('app.lasterInn')}</p>
+        ) : (
+          // Kortet for underveis- og sluttvurdering står i samme rutenett som veiviseren, så de får lik bredde.
+          <Veiviserinnganger
+            veivisere={velgSynlige(innhold.veivisere, sted)}
+            rute={veiviserRute}
+            foran={[
+              {
+                id: 'underveis',
+                kort: <Inngang rute={underveisSluttRute} ikon="bok" tittel={t('vurdering.underveisSlutt.kort')} tekst={t('vurdering.underveisSlutt.beskrivelse')} />,
+              },
+            ]}
+          />
+        )}
       </section>
       <section class="lop-del" aria-labelledby="vu-del-orden">
         <h2 class="liten-overskrift" id="vu-del-orden">

@@ -1,11 +1,10 @@
-// Et innholdselement som et kort som kan åpnes (fase 6): tittelen og den første setningen er synlige, og teksten,
-// paragrafene i Regelverk og kildene står inne i kortet. Brukes på sidene i Vurdering.
+// Et innholdselement som et kort som kan åpnes (fase 6): tittelen og den første setningen er synlige, og teksten står
+// inne i kortet, med paragrafene og kildene som lukkede rader nederst (Kortfot). Brukes på sidene i Vurdering.
 import { useId, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import type { Flerspraak, KildeRef } from '../core/innhold/skjema.ts';
 import { Ikon } from './Ikon.tsx';
-import { Kildeliste } from './Kildelenke.tsx';
-import { Paragraflenker } from './Paragraflenker.tsx';
+import { Kortfot } from './Kortfot.tsx';
 import { forsteSetning } from './Veiviser.tsx';
 
 export interface Kortinnhold {
@@ -18,7 +17,7 @@ export interface Kortinnhold {
 }
 
 export function Innholdskort({ element, aapen = false }: { element: Kortinnhold; aapen?: boolean }) {
-  const { t, malform } = useTekst();
+  const { malform } = useTekst();
   const [erAapen, settAapen] = useState(aapen);
   const id = useId();
   const paragrafer = element.paragrafer ?? [];
@@ -33,8 +32,7 @@ export function Innholdskort({ element, aapen = false }: { element: Kortinnhold;
       </button>
       <div id={id} class="innholdskort-innhold" hidden={!erAapen}>
         <div class="brodtekst" dangerouslySetInnerHTML={{ __html: element.tekst[malform] }} />
-        {paragrafer.length > 0 && <Paragraflenker paragrafer={paragrafer} overskrift={t('vurdering.iRegelverket', { antall: String(paragrafer.length) })} />}
-        <Kildeliste kilder={element.kilder} niva={3} />
+        <Kortfot paragrafer={paragrafer} kilder={element.kilder} />
       </div>
     </div>
   );

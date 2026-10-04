@@ -10,6 +10,9 @@
 - **Vurderingsteksten i læreplanen** hentes fra Grep (underveis og standpunkt per kompetansemålsett, `fag.km`). Faget står i adressen (`?fag=ENG1007`), og fagarket lenker hit med faget valgt.
 - **Karakterer og vurderingsuttrykk** er et begrep med `kodegrupper`, bygd på registreringshåndboken B26, B23 og B25 og forskriften. Gruppene er lukket til de åpnes, og åpne når det søkes. Hver kode er med i det samlede søket og åpner oppslaget med koden søkt fram (`?q=IV`). VIGO brukes ikke her.
 - **Lenker inn i veiviserne** har med svarene på den korteste veien (`&svar=elev.iop`), så veiviseren ikke viser merknaden om at lenken ikke passet.
+- **Regelverk og kilder i kort** (eier 04.10.2026): komponenten `Kortfot` viser paragrafene og kildene som lukkede rader nederst i et kort, slik veiviserne og fristene gjorde fra før. Den brukes i alle kort og bokser i appen. Kilder nederst på en side og i begrepene står som før.
+- **Varsel** (eier 04.10.2026): veiviseren har ett steg for varsel om fravær og ett for varsel om manglende grunnlag, rett etter at faren er funnet, og et steg for karakter uten varsel (merknaden til § 9-7, rundskrivet punkt 6.1). At varselet må gjelde riktig grunn, står i praksislisten til eier har bekreftet det.
+- **Stien tilbake** (`Brodsmuler`) står på alle undersider, også veiviserne, lover og avtaler og fagarket. Kalkulatorene i Arbeidstid står på forsiden (avgjørelse 030) og har ingen sti.
 - **Nye kilder:** Udirs merknader til kapittel 9, rundskrivet om fraværsgrensen, siden om standpunktvurdering og registreringshåndboken B26 og oversikten. Alle følges av kildesjekken.
 
-**Konsekvens:** Startpakken øker med 2,8 kB (93,4 kB), fordi tekstene og stilene til modulen lastes med en gang som for de andre modulene. Innholdet og dataene lastes når de trengs. En ny side i Vurdering er innhold med riktig prefiks og en side som viser kortene.
+**Konsekvens:** Startpakken øker med 3,1 kB (93,7 kB), fordi tekstene og stilene til modulen lastes med en gang som for de andre modulene. Innholdet og dataene lastes når de trengs. En ny side i Vurdering er innhold med riktig prefiks og en side som viser kortene.

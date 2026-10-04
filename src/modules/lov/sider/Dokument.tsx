@@ -8,6 +8,7 @@ import { useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterDato, formaterTall } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
@@ -87,6 +88,7 @@ function Lovside({ parametre }: SideProps) {
   const apne = new Set(mal ? [mal.paragraf.nr] : []);
   return (
     <div class="side">
+      <Brodsmuler ledd={[{ tekst: t('lov.tittel'), href: '#/lov' }]} />
       {typeof data === 'string' ? (
         <>
           <h1 tabIndex={-1}>{t('lov.tittel')}</h1>

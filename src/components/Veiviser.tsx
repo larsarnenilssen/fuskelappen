@@ -14,9 +14,9 @@ import type { Stegelement, Veiviserelement } from '../core/innhold/skjema.ts';
 import { erUtfall, fasestatus, finnSide, finnVei, korstesteVei, lagKart, lesSvar, stegIRekkefolge, tilbakeTil, tilstand, videre, type Vei, type Veiviserkart } from '../core/veiviser/veiviser.ts';
 import { Forklaring } from './Forklaring.tsx';
 import { Ikon, type Ikonnavn } from './Ikon.tsx';
-import { Kildeliste } from './Kildelenke.tsx';
+import { Kortfot, KortfotRader } from './Kortfot.tsx';
 import { Laereplanboks } from './Laereplanboks.tsx';
-import { delParagrafRef, Paragraflenker } from './Paragraflenker.tsx';
+import { delParagrafRef } from './Paragraflenker.tsx';
 
 interface Props {
   veiviser: Veiviserelement;
@@ -221,7 +221,7 @@ function Tillegg({ steg }: { steg: Stegelement }) {
             {steg.frist && <Fakta ikon="klokke" etikett={t('komponenter.veiviser.frist')} tekst={steg.frist[malform]} />}
           </dl>
         )}
-        <Paragraflenker paragrafer={steg.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} />
+        <Kortfot paragrafer={steg.paragrafer} kilder={[]} />
       </div>
     </details>
   );
@@ -455,31 +455,14 @@ function Stegdel({
           <Tillegg key={`${s.gyldighet.niva}-${s.id}`} steg={s} />
         ))}
         <div class="veiviser-mer">
-          {/* Paragrafene med titler, lukket til brukeren åpner dem (eier 03.10.2026). */}
-          {node.paragrafer.length > 0 && (
-            <details class="veiviser-kilder veiviser-regelverk">
-              <summary class="forklaring-knapp">
-                <Ikon navn="paragraf" />
-                <span>{t('komponenter.veiviser.regelverkAntall', { antall: String(node.paragrafer.length) })}</span>
-                <Ikon navn="ned" class="forklaring-pil" />
-              </summary>
-              <Paragraflenker paragrafer={node.paragrafer} overskrift={t('komponenter.veiviser.regelverk')} utenOverskrift />
-            </details>
-          )}
-          {node.forklaring && (
-            <Forklaring tittel={t('komponenter.veiviser.merOm')}>
-              <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
-            </Forklaring>
-          )}
-          <details class="veiviser-kilder">
-            {/* Samme utseende som knappen i Forklaring rett over. */}
-            <summary class="forklaring-knapp">
-              <Ikon navn="bok" />
-              <span>{t('komponenter.veiviser.kilder', { antall: String(kilder.length) })}</span>
-              <Ikon navn="ned" class="forklaring-pil" />
-            </summary>
-            <Kildeliste kilder={kilder} niva={3} utenOverskrift />
-          </details>
+          {/* Paragrafene med titler og kildene, lukket til brukeren åpner dem (eier 03.10.2026). */}
+          <KortfotRader paragrafer={node.paragrafer} kilder={kilder}>
+            {node.forklaring && (
+              <Forklaring tittel={t('komponenter.veiviser.merOm')}>
+                <div class="brodtekst" dangerouslySetInnerHTML={{ __html: node.forklaring[malform] }} />
+              </Forklaring>
+            )}
+          </KortfotRader>
           {aapen && veksle}
         </div>
       </div>

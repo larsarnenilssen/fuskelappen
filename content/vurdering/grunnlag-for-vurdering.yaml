@@ -346,7 +346,7 @@
     svar:
       - { id: under, tekst: { nb: "Høyst 10 prosent", nn: "Høgst 10 prosent" }, neste: vu-grunnlag }
       - { id: skjonn, tekst: { nb: "Mer enn 10, men høyst 15 prosent", nn: "Meir enn 10, men høgst 15 prosent" }, neste: vu-skjonn }
-      - { id: over, tekst: { nb: "Mer enn 15 prosent", nn: "Meir enn 15 prosent" }, neste: vu-varsel }
+      - { id: over, tekst: { nb: "Mer enn 15 prosent", nn: "Meir enn 15 prosent" }, neste: vu-varsel-fravaer }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
     - { id: udir-rundskriv-fravarsgrensen, punkt: "1. Innledning – fraværsgrensen i korte trekk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/1.-innledning---fravarsgrensen-i-korte-trekk/" }
@@ -375,7 +375,7 @@
       nn: "Avgjer rektor at grensa ikkje skal gjelde?"
     svar:
       - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: vu-grunnlag }
-      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-varsel }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-varsel-fravaer }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-8 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-8", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-8-fravarsgrense-i-vidaregaande-skole/" }
@@ -401,7 +401,7 @@
       nn: "Har faglæraren nok grunnlag for karakter?"
     svar:
       - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: vu-karakter }
-      - { id: nei, tekst: { nb: "Nei, eller det er tvil", nn: "Nei, eller det er tvil" }, neste: vu-varsel }
+      - { id: nei, tekst: { nb: "Nei, eller det er tvil", nn: "Nei, eller det er tvil" }, neste: vu-varsel-grunnlag }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-1 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
     - { id: opplaeringsforskrifta, punkt: "§ 9-16 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
@@ -410,43 +410,113 @@
   kontrollsporsmal:
     - "Er det riktig at stort dokumentert fravær kan gi for lite grunnlag for karakter, selv om eleven er innenfor fraværsgrensen (rundskrivet punkt 5.2)?"
 
-- id: vu-varsel
+- id: vu-varsel-fravaer
   type: steg
   veiviser: grunnlag-for-vurdering
   fase: varsel
   tittel:
-    nb: "Varsel"
-    nn: "Varsel"
+    nb: "Varsel om fravær"
+    nn: "Varsel om fråvær"
   tekst:
-    nb: "Står eleven i fare for å ikke få halvårsvurdering med karakter eller standpunktkarakter, skal eleven varsles skriftlig med en gang, og foreldrene også hvis eleven er under 18. Varselet skal gi eleven mulighet til å få karakter. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Det samme gjelder fare for Ng eller Lg i orden eller oppførsel."
-    nn: "Står eleven i fare for ikkje å få halvårsvurdering med karakter eller standpunktkarakter, skal eleven varslast skriftleg med ein gong, og foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Det same gjeld fare for Ng eller Lg i orden eller oppførsel."
+    nb: "En elev kan ikke miste karakteren på grunn av fravær uten å ha fått skriftlig varsel i forkant. Varselet gis straks det er fare for at eleven ikke får karakter, for eksempel når fraværet nærmer seg 10 prosent, og til foreldrene også hvis eleven er under 18. Varselet skal si at faren gjelder fravær. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, selv om fraværsgrensen er overskredet."
+    nn: "Ein elev kan ikkje miste karakteren på grunn av fråvær utan å ha fått skriftleg varsel på førehand. Varselet blir gitt straks det er fare for at eleven ikkje får karakter, til dømes når fråværet nærmar seg 10 prosent, og til foreldra også dersom eleven er under 18. Varselet skal seie at faren gjeld fråvær. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sjølv om fråværsgrensa er overskriden."
   ansvar:
     nb: "Skolen, på vegne av fylkeskommunen."
     nn: "Skolen, på vegner av fylkeskommunen."
   dokumentasjon:
-    nb: "Skriftlig varsel med dato."
-    nn: "Skriftleg varsel med dato."
+    nb: "Skriftlig varsel med dato, om fare for IV på grunn av fravær."
+    nn: "Skriftleg varsel med dato, om fare for IV på grunn av fråvær."
+  frist:
+    nb: "Straks det er fare for at fraværet gjør at eleven ikke får karakter."
+    nn: "Straks det er fare for at fråværet gjer at eleven ikkje får karakter."
+  fristKort:
+    nb: "Straks"
+    nn: "Straks"
+  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/11-1]
+  forklaring:
+    nb: "Det samme gjelder fare for Ng eller Lg i orden eller oppførsel: eleven skal varsles skriftlig i forkant. Foreldre til elever under 18 har dessuten rett på melding om fraværet, og den kommer før varselet."
+    nn: "Det same gjeld fare for Ng eller Lg i orden eller oppførsel: eleven skal varslast skriftleg på førehand. Foreldre til elevar under 18 har dessutan rett på melding om fråværet, og den kjem før varselet."
+  sporsmal:
+    tekst:
+      nb: "Er eleven varslet skriftlig om at fraværet kan føre til at eleven ikke får karakter?"
+      nn: "Er eleven varsla skriftleg om at fråværet kan føre til at eleven ikkje får karakter?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja, i forkant", nn: "Ja, på førehand" }, neste: vu-halvaar-standpunkt }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-uten-varsel }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "7. Hvordan bør skolene informere og følge opp elevene", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/7.-hvordan-bor-skolene-informere-og-folge-opp-elevene/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at varselet skal si at faren gjelder fravær, og at et varsel om manglende grunnlag ikke er nok (eier 04.10.2026, praksislisten)?"
+    - "Er «når fraværet nærmer seg 10 prosent» et godt eksempel på når varselet skal gis (rundskrivet punkt 6.1)?"
+
+- id: vu-varsel-grunnlag
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Varsel om manglende grunnlag"
+    nn: "Varsel om manglande grunnlag"
+  tekst:
+    nb: "Er det tvil om faglæreren har grunnlag for karakter, skal eleven varsles skriftlig straks, og foreldrene også hvis eleven er under 18. Varselet skal si at faren gjelder manglende grunnlag for vurdering, og gi eleven mulighet til å vise kompetansen sin før karakteren settes. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, satt på det grunnlaget faglæreren har."
+    nn: "Er det tvil om faglæraren har grunnlag for karakter, skal eleven varslast skriftleg straks, og foreldra også dersom eleven er under 18. Varselet skal seie at faren gjeld manglande grunnlag for vurdering, og gi eleven høve til å vise kompetansen sin før karakteren blir sett. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sett på det grunnlaget faglæraren har."
+  ansvar:
+    nb: "Skolen, på vegne av fylkeskommunen."
+    nn: "Skolen, på vegner av fylkeskommunen."
+  dokumentasjon:
+    nb: "Skriftlig varsel med dato, om fare for IV fordi grunnlaget for vurdering mangler."
+    nn: "Skriftleg varsel med dato, om fare for IV fordi grunnlaget for vurdering manglar."
   frist:
     nb: "Straks det er tvil om eleven kan få karakter."
     nn: "Straks det er tvil om eleven kan få karakter."
   fristKort:
     nb: "Straks"
     nn: "Straks"
-  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/11-1]
+  paragrafer: [opplaeringsforskrifta/9-7]
+  forklaring:
+    nb: "Det samme gjelder fare for Ng eller Lg i orden eller oppførsel: eleven skal varsles skriftlig i forkant."
+    nn: "Det same gjeld fare for Ng eller Lg i orden eller oppførsel: eleven skal varslast skriftleg på førehand."
   sporsmal:
     tekst:
-      nb: "Er eleven varslet skriftlig?"
-      nn: "Er eleven varsla skriftleg?"
+      nb: "Er eleven varslet skriftlig om at grunnlaget for karakter kan mangle?"
+      nn: "Er eleven varsla skriftleg om at grunnlaget for karakter kan mangle?"
     svar:
-      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-karakter }
-      - { id: ja, tekst: { nb: "Ja, og eleven kan likevel ikke få karakter", nn: "Ja, og eleven kan likevel ikkje få karakter" }, neste: vu-halvaar-standpunkt }
+      - { id: ja, tekst: { nb: "Ja, og grunnlaget mangler fortsatt", nn: "Ja, og grunnlaget manglar framleis" }, neste: vu-halvaar-standpunkt }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-uten-varsel }
   kilder:
     - { id: opplaeringsforskrifta, punkt: "§ 9-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
     - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
     - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er det riktig at svaret «Nei» fører til at eleven skal få karakter (merknaden til § 9-7 og rundskrivet punkt 6.1)?"
+    - "Er det riktig at varselet skal si at faren gjelder manglende grunnlag, og at et varsel om fravær ikke er nok (eier 04.10.2026, praksislisten)?"
+    - "Skal veiviseren også nevne at IV på grunn av manglende grunnlag føres med FAM21 «Ikke vurderingsgrunnlag» fra VIGO, slik FAM51 nevnes for fravær?"
+
+- id: vu-uten-varsel
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Karakter uten varsel"
+    nn: "Karakter utan varsel"
+  tekst:
+    nb: "Er eleven ikke varslet skriftlig i forkant, skal eleven få karakter. Det gjelder også når fraværsgrensen er overskredet, og når grunnlaget er tynt. Faglæreren setter karakteren ut fra kompetansemålene og det grunnlaget som finnes. Opphever klageinstansen et vedtak om IV, og eleven ikke var varslet, skal skolen sette karakter."
+    nn: "Er eleven ikkje varsla skriftleg på førehand, skal eleven få karakter. Det gjeld også når fråværsgrensa er overskriden, og når grunnlaget er tynt. Faglæraren set karakteren ut frå kompetansemåla og det grunnlaget som finst. Opphevar klageinstansen eit vedtak om IV, og eleven ikkje var varsla, skal skolen setje karakter."
+  ansvar:
+    nb: "Faglæreren setter karakteren."
+    nn: "Faglæraren set karakteren."
+  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at faglæreren må sette karakter på det grunnlaget som finnes, også når grunnlaget er tynt, hvis eleven ikke er varslet?"
+    - "Er setningen om at skolen skal sette karakter når et IV-vedtak oppheves og eleven ikke var varslet, riktig og nyttig her (merknaden til kapittel 10)?"
 
 - id: vu-halvaar-standpunkt
   type: steg

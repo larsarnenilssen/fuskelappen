@@ -194,3 +194,19 @@ praksis:
       udokumentert fråvær». Udirs rundskriv sier ikke noe om helsefravær med legeerklæring før grensen.
     berorer: [vu-skjonn]
     bekreftet: null
+
+  - id: varsel-riktig-grunn
+    tittel: Varselet skal si om faren gjelder fravær eller manglende grunnlag
+    sporsmal: >-
+      Skal varselet om fare for IV si om faren gjelder fravær eller manglende grunnlag for vurdering, slik at et varsel
+      om fravær ikke er nok til å gi IV fordi grunnlaget mangler, og omvendt?
+    appen: >-
+      Veiviseren «Grunnlag for vurdering» har to steg for varsel, ett for fravær og ett for manglende grunnlag. Begge
+      sier at varselet skal si hva faren gjelder, og at eleven skal ha karakter uten varsel.
+    grunnlag: >-
+      Eier 04.10.2026: varselet må gjelde riktig grunn (fravær eller manglende vurderingsgrunnlag). Merknaden til
+      opplæringsforskrifta § 9-7 sier at årsaken til varselet kan være fravær eller tvil om grunnlaget, og
+      merknadene til kapittel 10 sier at nytt vedtak om IV kan fattes «på et annet grunnlag». Ingen av kildene sier
+      uttrykkelig at et varsel om den ene grunnen ikke dekker den andre.
+    berorer: [vu-varsel-fravaer, vu-varsel-grunnlag]
+    bekreftet: null

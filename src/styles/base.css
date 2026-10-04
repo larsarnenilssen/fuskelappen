@@ -4637,6 +4637,27 @@ p.fagkort-tittel {
   padding: 0 var(--rom-4) var(--rom-3);
 }
 
+/* Regelverket og kildene festet nederst i et kort, fra kant til kant (Kortfot, eier 04.10.2026). Kortet har innrykk
+   --rom-4 og luft --rom-3 i bunnen, som Forklaring og Innholdskort. */
+.kortfot {
+  margin: var(--rom-3) calc(-1 * var(--rom-4)) calc(-1 * var(--rom-3));
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.kortfot .forklaring-knapp {
+  padding-inline: var(--rom-4);
+}
+
+/* Fylkes- og skoleboksen i veiviserne har mindre innrykk. */
+.veiviser-tillegg .kortfot {
+  margin-inline: calc(-1 * var(--rom-3));
+}
+
+.veiviser-tillegg .kortfot .forklaring-knapp,
+.veiviser-tillegg .kortfot .paragraflenker {
+  padding-inline: var(--rom-3);
+}
+
 .veiviser-kilder > summary {
   list-style: none;
 }
@@ -4846,6 +4867,12 @@ div + .veiviser-svargruppe {
 
 .veiviser-inngang:hover {
   border-color: var(--farge-merke);
+}
+
+/* Et annet kort i samme rutenett som veiviserne (Vurdering): like høyt som veiviserkortet ved siden av. */
+.veiviser-innganger > li > .frist-inngang {
+  height: 100%;
+  align-content: start;
 }
 
 .veiviser-inngang-topp {
@@ -5765,6 +5792,20 @@ button.frist-stripe-celle:hover {
   text-align: left;
 }
 
+.sammenligning-lang {
+  display: none;
+}
+
+@media (min-width: 30rem) {
+  .sammenligning-kort {
+    display: none;
+  }
+
+  .sammenligning-lang {
+    display: inline;
+  }
+}
+
 .sammenligning-venstre {
   border-right: var(--strek) solid var(--farge-kant);
   color: var(--vurdering-halvaar);
@@ -5796,6 +5837,41 @@ button.frist-stripe-celle:hover {
   border-right: var(--strek) solid var(--farge-kant);
 }
 
+/* Prinsippene som en sti: en loddrett strek med et punkt ved hvert kort. */
+.vu-sti {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 var(--rom-5);
+  list-style: none;
+}
+
+.vu-sti::before {
+  content: '';
+  position: absolute;
+  top: var(--rom-4);
+  bottom: var(--rom-4);
+  left: calc(0.5rem - 1px);
+  width: 2px;
+  background: var(--farge-linje);
+}
+
+.vu-sti > li {
+  position: relative;
+}
+
+.vu-sti > li::before {
+  content: '';
+  position: absolute;
+  top: 1.05rem;
+  left: calc(0.5rem - 0.4rem - var(--rom-5));
+  box-sizing: border-box;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid var(--vurdering-halvaar);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
 .skolear {
   margin: 0 0 var(--rom-3);
   padding: var(--rom-3);
@@ -5806,19 +5882,28 @@ button.frist-stripe-celle:hover {
 
 .skolear-rad {
   position: relative;
-  height: 1.4rem;
+  height: 1.25rem;
 }
 
+/* Alle etikettene i figuren har samme størrelse og tykkelse (eier 04.10.2026). */
 .skolear-etikett {
   position: absolute;
-  font-size: var(--str-s);
-  font-weight: 800;
+  bottom: 0.15rem;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  line-height: 1;
   text-align: center;
   white-space: nowrap;
 }
 
-.skolear-rad:first-child .skolear-etikett {
-  bottom: 0.1rem;
+.skolear-rad-under .skolear-etikett {
+  top: 0.2rem;
+  bottom: auto;
+}
+
+.skolear-underveis {
+  color: var(--farge-tekst);
+  text-align: left;
 }
 
 .skolear-halvaar {
@@ -5831,22 +5916,22 @@ button.frist-stripe-celle:hover {
 
 .skolear-standpunkt {
   color: var(--vurdering-standpunkt);
+  text-align: right;
 }
 
+/* Underveisvurderingen er en smal stolpe gjennom hele året. Feltene for halvår, eksamen og standpunkt er høyere enn
+   stolpen, så de skiller seg ut. */
 .skolear-spor {
   position: relative;
-  height: 1.6rem;
-  border-radius: var(--radius-s);
-  background: var(--vurdering-underveis);
+  height: 1.75rem;
 }
 
-.skolear-underveis {
+.skolear-spor::before {
+  content: '';
   position: absolute;
-  top: 0.3rem;
-  left: var(--rom-2);
-  color: var(--vurdering-halvaar);
-  font-size: var(--str-xs);
-  font-weight: 700;
+  inset: 0.5rem 0;
+  border-radius: 999px;
+  background: var(--vurdering-underveis);
 }
 
 .skolear-felt {

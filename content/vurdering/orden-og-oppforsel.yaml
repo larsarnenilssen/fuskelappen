@@ -33,8 +33,8 @@
 - id: oo-underveis
   type: forklaring
   tittel:
-    nb: "Underveis og halvår"
-    nn: "Undervegs og halvår"
+    nb: "Underveisvurdering og halvårsvurdering"
+    nn: "Undervegsvurdering og halvårsvurdering"
   tekst:
     nb: "Eleven får jevnlig underveisvurdering i orden og oppførsel, med veiledning om hva som er god orden og oppførsel. Halvårsvurdering gis midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikke er i siste år. Kontaktlæreren gir den, i samråd med de andre lærerne."
     nn: "Eleven får jamleg undervegsvurdering i orden og oppførsel, med rettleiing om kva som er god orden og oppførsel. Halvårsvurdering blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikkje er i siste år. Kontaktlæraren gir henne, i samråd med dei andre lærarane."

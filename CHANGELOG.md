@@ -7,8 +7,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Vurdering** under «Elever og opplæring», etter opplæringsforskrifta kapittel 9, Udirs merknader og rundskrivet om fraværsgrensen:
-  - **Underveis- og sluttvurdering:** skoleåret som én stripe (underveis, halvår, eksamen og standpunkt), forskjellen mellom underveis- og sluttvurdering side om side, og hvordan kompetansemålene vurderes, i kort som kan åpnes. Søk etter et fag for å se hva læreplanen sier om underveis- og standpunktvurdering i faget.
-  - **Grunnlag for vurdering:** veiviser i ravfarge, steg for steg gjennom læreplanen eleven følger (også individuell opplæringsplan, innføringsopplæring og læreplaner uten karakter), fritak i sidemål, fremmedspråk og kroppsøving, fravær og rektors skjønn, grunnlaget for karakter, varsel og vedtak om IV. Lærlinger, lærekandidater og praksisbrevkandidater har egen gren.
+  - **Underveis- og sluttvurdering:** skoleåret som én stripe (underveis, halvår, eksamen og standpunkt), søk etter et fag for å se hva læreplanen sier om underveis- og standpunktvurdering i faget, forskjellen mellom underveis- og sluttvurdering side om side, og hvordan kompetansemålene vurderes, som en sti av kort som kan åpnes.
+  - **Grunnlag for vurdering:** veiviser i ravfarge, steg for steg gjennom læreplanen eleven følger (også individuell opplæringsplan, innføringsopplæring og læreplaner uten karakter), fritak i sidemål, fremmedspråk og kroppsøving, fravær og rektors skjønn, grunnlaget for karakter, og vedtak om IV. Varselet kommer rett etter fraværet eller grunnlaget, med eget steg for varsel om fravær og varsel om manglende grunnlag, og et steg for karakter uten varsel. Lærlinger, lærekandidater og praksisbrevkandidater har egen gren.
   - **Orden og oppførsel** for seg: skolereglene, karakterene, varsel, standpunkt og klage, og skulereglane i Vestland når Vestland er valgt.
 - **Begreper:** underveisvurdering, halvårsvurdering, sluttvurdering, standpunktkarakter, ikke vurderingsgrunnlag (IV), fraværsgrensen, fritak fra vurdering med karakter og orden og oppførsel.
 - **Karakterer og vurderingsuttrykk:** oppslag i begrepsbanken med kodene fra Udirs registreringshåndbok i tre grupper (karakterer og vurderingsuttrykk, orden og oppførsel, karakterstatus), med søk. Hver kode finnes også i det samlede søket.
@@ -18,6 +18,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Endret
 
 - **Forsiden:** Ny overskrift «Inntak og opplæringstilbud» med Inntak og Opplæringstilbud. Læreplanverket har nå Overordnet del og Fag og læreplaner. Inntak har fått et eget ikon.
+- **Regelverk og kilder** står som lukkede rader nederst i alle kort og bokser som har dem: i veiviserne, fristene i Inntak, reglene for poengberegningen, «Slik regnes det ut» i Arbeidstid og kortene i Vurdering.
+- **Stien tilbake** står nå øverst også i veiviserne, i lover, forskrifter og avtaler og på fagarket.
 
 ## [0.30.0] – 2026-10-03
 

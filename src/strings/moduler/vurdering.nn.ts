@@ -26,6 +26,8 @@ export const vurderingNn = {
     forskjellen: 'Skilnaden',
     venstre: 'Undervegs',
     hoyre: 'Slutt',
+    venstreLang: 'Undervegsvurdering',
+    hoyreLang: 'Sluttvurdering',
     prinsipper: 'Slik blir kompetansemåla vurderte',
     iLaereplanen: 'I læreplanen for faget',
     sokFag: 'Søk etter fag eller fagkode',

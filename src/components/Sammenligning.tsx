@@ -10,7 +10,32 @@ export interface Sammenligningsrad {
   hoyre: Flerspraak;
 }
 
-export function Sammenligning({ venstre, hoyre, rader, tittel }: { venstre: string; hoyre: string; rader: readonly Sammenligningsrad[]; tittel: string }) {
+/** Overskriften i kolonnen: det korte ordet på smal skjerm, det fulle der det er plass (eier 04.10.2026). */
+function Kolonnenavn({ kort, lang }: { kort: string; lang: string | undefined }) {
+  if (!lang) return <>{kort}</>;
+  return (
+    <>
+      <span class="sammenligning-kort">{kort}</span>
+      <span class="sammenligning-lang">{lang}</span>
+    </>
+  );
+}
+
+export function Sammenligning({
+  venstre,
+  hoyre,
+  venstreLang,
+  hoyreLang,
+  rader,
+  tittel,
+}: {
+  venstre: string;
+  hoyre: string;
+  venstreLang?: string;
+  hoyreLang?: string;
+  rader: readonly Sammenligningsrad[];
+  tittel: string;
+}) {
   const { malform } = useTekst();
   return (
     <table class="sammenligning">
@@ -18,10 +43,10 @@ export function Sammenligning({ venstre, hoyre, rader, tittel }: { venstre: stri
       <thead>
         <tr>
           <th scope="col" class="sammenligning-venstre">
-            {venstre}
+            <Kolonnenavn kort={venstre} lang={venstreLang} />
           </th>
           <th scope="col" class="sammenligning-hoyre">
-            {hoyre}
+            <Kolonnenavn kort={hoyre} lang={hoyreLang} />
           </th>
         </tr>
       </thead>

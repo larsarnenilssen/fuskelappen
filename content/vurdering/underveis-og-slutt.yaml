@@ -223,6 +223,21 @@
   kontrollsporsmal:
     - "Er de fire punktene i § 9-11 andre ledd og koblingen til tilfredsstillende utbytte (ol. § 11-2) gjengitt riktig?"
 
+- id: us-prinsipp-samtale
+  type: forklaring
+  tittel:
+    nb: "Samtale om utviklingen"
+    nn: "Samtale om utviklinga"
+  tekst:
+    nb: "Eleven har rett til minst én samtale i halvåret om den faglige utviklingen sin, og til jevnlig dialog med kontaktlæreren om hvordan hen utvikler seg sosialt og på andre måter. Samtalen kan holdes sammen med samtalen med foreldrene."
+    nn: "Eleven har rett til minst éin samtale i halvåret om den faglege utviklinga si, og til jamleg dialog med kontaktlæraren om korleis hen utviklar seg sosialt og på andre måtar. Samtalen kan haldast saman med samtalen med foreldra."
+  paragrafer: [opplaeringsforskrifta/9-6]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-6 riktig, når første ledd ikke sier hvem som har samtalen?"
+
 - id: us-prinsipp-halvaar
   type: forklaring
   tittel:
@@ -286,18 +301,3 @@
   kontrollert: null
   kontrollsporsmal:
     - "Er det riktig at også elever med IOP vurderes ut fra kompetansemålene (merknaden til § 9-1)?"
-
-- id: us-prinsipp-samtale
-  type: forklaring
-  tittel:
-    nb: "Samtale om utviklingen"
-    nn: "Samtale om utviklinga"
-  tekst:
-    nb: "Eleven har rett til minst én samtale i halvåret om den faglige utviklingen sin, og til jevnlig dialog med kontaktlæreren om hvordan hen utvikler seg sosialt og på andre måter. Samtalen kan holdes sammen med samtalen med foreldrene."
-    nn: "Eleven har rett til minst éin samtale i halvåret om den faglege utviklinga si, og til jamleg dialog med kontaktlæraren om korleis hen utviklar seg sosialt og på andre måtar. Samtalen kan haldast saman med samtalen med foreldra."
-  paragrafer: [opplaeringsforskrifta/9-6]
-  kilder:
-    - { id: opplaeringsforskrifta, punkt: "§ 9-6", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
-  kontrollert: null
-  kontrollsporsmal:
-    - "Er sammendraget av § 9-6 riktig, når første ledd ikke sier hvem som har samtalen?"
