@@ -122,14 +122,29 @@ test.describe('favoritter og forsiden', () => {
 });
 
 // Alle sidene i appen har stjernen ved overskriften (avgjørelse 058), bortsett fra appens egne sider, sidene som
-// ikke finnes, og utgåtte fagkoder. En ny side i rutelisten blir sjekket her også.
+// ikke finnes, og utgåtte fagkoder. Favoritten skal også finnes på forsiden, så en side med stjerne uten oppføring i
+// modulens `favorittbare` blir fanget opp. Har siden diskré stjerner (skoler, paragrafer), sjekkes den første som
+// vises, på samme måte. En enhetstest sjekker at hver rute i modulene har en adresse i listen (register.test.ts).
 const UTEN_STJERNE = /^#\/(sok|innstillinger|om|kategori|utvikling|finnes-ikke)|^#\/$|^#\/fag\/(FINNES0|LBR3004)/;
-test.describe('alle sider kan stjernemerkes', () => {
+test.describe('alle sider kan stjernemerkes, og favorittene finnes på forsiden', () => {
   for (const rute of ruter.filter((r) => !UTEN_STJERNE.test(r))) {
     test(rute, async ({ page }) => {
       await page.goto(`./${rute}`);
       await venterPaaSide(page);
-      await expect(page.locator('main .tittelrad').first().locator('.favorittknapp:not(.favorittknapp-liten)')).toHaveCount(1);
+      const stjerne = page.locator('main .tittelrad').first().locator('.favorittknapp:not(.favorittknapp-liten)');
+      await expect(stjerne).toHaveCount(1);
+      await stjerne.click();
+      await expect(stjerne).toHaveAttribute('aria-pressed', 'true');
+      const diskre = page.locator('main .favorittknapp-liten').filter({ visible: true }).first();
+      const antall = (await diskre.count()) > 0 ? 2 : 1;
+      if (antall === 2) {
+        await diskre.click();
+        await expect(diskre).toHaveAttribute('aria-pressed', 'true');
+      }
+      await page.goto('./');
+      await expect(page.locator('.favorittliste .favoritt')).toHaveCount(antall);
+      await expect(page.locator('.favorittliste a.listelenke')).toHaveCount(antall);
+      await expect(page.locator('.favorittliste .utilgjengelig')).toHaveCount(0);
     });
   }
 });

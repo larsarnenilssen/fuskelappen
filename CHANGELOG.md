@@ -12,8 +12,13 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Nytt ikon:** hvit lapp med brettet hjørne og stor gul hake på mørkeblå bakgrunn, tydelig også i liten størrelse.
 - **Nytt navn:** Appen heter nå **Jukselappen**, med ny adresse: https://larsarnenilssen.github.io/jukselappen/. Legg appen til på hjemskjermen på nytt derfra. Innstillinger, favoritter og lagrede varianter følger med, og eksportfiler fra før kan importeres.
 - **Ikonene til favorittene** følger også ikonene på oversiktssidene i modulene, f.eks. skoleregisteret og opplæringskontorene i Opplæringsløp.
+
+### Fjernet
+
+- **«Tilbake til …» under knappene i veiviserne.** Veien hit lenker allerede til hvert valg.
 
 ## [0.33.0] – 2026-10-04
 

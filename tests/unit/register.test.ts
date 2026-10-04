@@ -1,8 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { kjerneoppforinger } from '../../src/app/kjerneoppforinger.ts';
+import { lesHash, matchRute } from '../../src/app/ruter.ts';
+import { ruter as e2eRuter } from '../e2e/hjelp.ts';
 import {
   aktiveModuler,
   alleModuler,
+  alleRuter,
   kategorierMedModuler,
   ikonForFavoritt,
   samleFavorittbare,
@@ -116,6 +119,22 @@ describe('modulregisteret', () => {
     const f = await samleFavorittbare();
     expect(f.size).toBeGreaterThan(0);
     for (const [id, favoritt] of f) expect(ikonForFavoritt(id, favoritt), id).not.toBeNull();
+  });
+
+  it('hver rute i modulene har en adresse i ende-til-ende-testene, så stjernen og overflyten testes der (avgjørelse 058)', () => {
+    const truffet = new Set<string>();
+    for (const adresse of e2eRuter) {
+      const { sti } = lesHash(adresse);
+      const treff = alleRuter().find(({ rute }) => matchRute(rute.sti, sti));
+      if (treff) truffet.add(treff.rute.sti);
+    }
+    // Ruter uten egen side: /arbeidstid sender til forsiden, og /laereplanverket/overordnet-del er samme side som
+    // /laereplanverket.
+    const utenEgenSide = ['/arbeidstid', '/laereplanverket/overordnet-del'];
+    const mangler = alleRuter()
+      .map(({ rute }) => rute.sti)
+      .filter((sti) => !truffet.has(sti) && !utenEgenSide.includes(sti));
+    expect(mangler, 'Legg til en adresse for ruten i tests/e2e/hjelp.ts').toEqual([]);
   });
 
   it('kjernesidene er søkbare på begge målformer', () => {

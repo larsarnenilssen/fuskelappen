@@ -288,7 +288,6 @@ export const nb = {
       harLokalt: 'Har lokale regler for {sted}',
       regelverkAntall: 'I regelverket ({antall})',
       visHeleVeien: 'Vis hele veien ({antall} valg til)',
-      forrigeValg: 'Tilbake til «{steg}»',
       faseliste: 'Fasene: {faser}',
       antallFaser: '{antall} faser',
       malgruppe: { elever: 'For elever', voksne: 'For voksne' },

@@ -539,7 +539,6 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
   const fasenavn = (s: Stegelement) => veiviser.faser.find((f) => f.id === s.fase)?.tittel[malform];
   // Lang vei: bare de siste valgene står synlige, og resten vises med en knapp, så siden starter nær steget.
   const skjulte = helVei ? 0 : Math.max(0, valg.length - VISTE_VALG);
-  const forrigeValg = valg.at(-1);
 
   return (
     <div class={`veiviser${veiviser.faser.length > 0 ? ' veiviser-med-faser' : ''}`}>
@@ -647,14 +646,6 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
                   );
                 })}
               </div>
-            )}
-            {forrigeValg?.href && (
-              <p class="veiviser-forrige">
-                <a href={forrigeValg.href}>
-                  <Ikon navn="tilbake" class="ikon-liten" />
-                  {t('komponenter.veiviser.forrigeValg', { steg: forrigeValg.steg.tittel[malform] })}
-                </a>
-              </p>
             )}
             {utfall && (
               <Oppsummering

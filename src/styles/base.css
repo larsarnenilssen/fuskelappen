@@ -4854,18 +4854,13 @@ p.fagkort-tittel {
   background: var(--farge-flate-2);
 }
 
-/* «Vis hele veien», «Tilbake til …» og «Til toppen»: lave lenker, så brukeren slipper å rulle langt. */
+/* «Vis hele veien»: lav lenke, så brukeren slipper å rulle langt. Lenken til forrige valg under knappene er tatt bort;
+   veien hit lenker til hvert valg (eier 04.10.2026). */
 .veiviser-vei-vis {
   margin: 0 0 var(--rom-1);
   font-size: var(--str-s);
 }
 
-.veiviser-forrige {
-  margin: var(--rom-3) 0 0;
-  font-size: var(--str-s);
-}
-
-.veiviser-forrige a,
 .paragraflenker .liten-overskrift {
   margin: var(--rom-3) 0 var(--rom-1);
   font-size: var(--str-s);
@@ -6668,11 +6663,12 @@ button.frist-stripe-celle:hover {
 }
 
 /* ---------- Filtrene i søket (avgjørelse 058) ---------- */
+/* Like mye luft mellom radene, mellom filtrene og under filtrene, før det første treffet (eier 04.10.2026). */
 .sokefilter {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--rom-1) var(--rom-2);
-  margin: var(--rom-2) 0 0;
+  gap: var(--rom-2);
+  margin: var(--rom-2) 0;
 }
 
 .sokefilter-valg {

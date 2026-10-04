@@ -1,16 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="102 107 307 307">
-  <!-- Fuskelappen: hvit lapp med brettet hjørne og gul hake (eier 02.10.2026, forslag C). Motivet holder seg innenfor
-       midtre 80 %, så samme fil kan brukes som maskable-ikon. Bytt filen og kjør «npm run lag:ikoner». -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="108 108 297 297">
+  <!-- Jukselappen: hvit lapp med brettet hjørne og stor gul hake på mørkeblå bakgrunn (eier 04.10.2026, forslag F). Motivet
+       holder seg innenfor midtre 80 %, så samme fil kan brukes som maskable-ikon. Bytt filen og kjør «npm run lag:ikoner». -->
   
   <g transform="rotate(-8 256 256)">
-    <rect x="132" y="116" width="248" height="290" rx="10" fill="#17324f" opacity="0.15" transform="translate(10 12)"></rect>
-    <path d="M132 116h248v222l-68 68H132Z" fill="#ffffff" stroke="#17324f" stroke-width="10" stroke-linejoin="round"></path>
-    <path d="M380 338h-52a16 16 0 0 0-16 16v52" fill="#e3ecf5" stroke="#17324f" stroke-width="10" stroke-linejoin="round"></path>
-    <rect x="164" y="160" width="130" height="14" rx="7" fill="#1f4e79"></rect>
-    <rect x="164" y="198" width="180" height="12" rx="6" fill="#17324f" opacity="0.3"></rect>
-    <rect x="164" y="232" width="160" height="12" rx="6" fill="#17324f" opacity="0.3"></rect>
-    <rect x="164" y="266" width="120" height="12" rx="6" fill="#17324f" opacity="0.3"></rect>
-    <circle cx="200" cy="330" r="34" fill="#f2c94c"></circle>
-    <path d="M184 330l12 12 22-24" fill="none" stroke="#17324f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M140 116h232v214l-66 66H140Z" fill="#ffffff"></path>
+    <path d="M372 330h-50a16 16 0 0 0-16 16v50Z" fill="#c9d6e4"></path>
+    <rect x="172" y="156" width="120" height="16" rx="8" fill="#1f4e79"></rect>
+    <rect x="172" y="196" width="168" height="12" rx="6" fill="#17324f" opacity="0.3"></rect>
+    <path d="M186 284l44 44 88-96" fill="none" stroke="#f2c94c" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"></path>
   </g>
 </svg>

@@ -36,7 +36,8 @@ test.describe('inntak', () => {
       await page.getByRole('button', { name: /Vis hele veien/ }).click();
       await expect(page.locator('.veiviser-vei-punkt')).toHaveCount(6);
     }
-    await expect(page.getByRole('link', { name: 'Tilbake til «Inntaksmåte»' })).toBeVisible();
+    // Lenken til forrige valg under knappene er tatt bort; veien hit lenker til hvert valg (eier 04.10.2026).
+    await expect(page.getByRole('link', { name: /^Tilbake til «/ })).toHaveCount(0);
     // Uten valgt fylke er det ingen Vestland-bokser.
     await expect(page.locator('.veiviser-tillegg')).toHaveCount(0);
   });
