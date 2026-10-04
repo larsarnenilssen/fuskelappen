@@ -291,3 +291,12 @@ Eier vil ha «Fag- og svennebrev» i Opplæringstilbud, mer vekt på vurderingsp
 **Fag- og svennebrev som klosser:** Hver kloss er et innholdselement med hva den er, hva den ender i, hvilke klosser man kommer fra, og hvilke man kan gå videre til, med kilde på hver overgang. Øverst velger brukeren mål (fag- eller svennebrev, praksisbrev, kompetansebevis) og kan filtrere på veier uten krav om fellesfag. Løpene står som rader av klosser, og et diagram viser byttene. Klossene og overgangene testes som veiviseren: alle kan nås, og ingen overgang mangler kilde. Før det bygges, leses Udirs sider om lærekandidatordningen, praksisbrevordningen, fagbrev på jobb og praksiskandidatordningen, og overgangene legges fram for eier.
 
 **Vurderingspraksis:** Ny side «Underveis- og sluttvurdering» øverst i Vurdering: skoleåret som stripe (underveis hele året, halvår, standpunkt, eksamen), forskjellen mellom underveis- og sluttvurdering side om side, prinsippene for å vurdere kompetansemålene (§ 9-1, § 9-11, § 9-13, § 9-16 med merknadene), og et søk på fag som viser vurderingsteksten i læreplanen fra Grep (underveis og standpunkt per kompetansemålsett). Ny kilde: Udirs sider «Standpunkt- og underveisvurdering».
+
+### Mockup 3 (04.10.2026)
+
+Etter eiers innspill om navigasjon, tidslinjen, side om side-visningen og siden for fag- og svennebrev:
+
+- **Navigasjon mellom modulene:** Begge sider har sti øverst (f.eks. «Opplæringstilbud › Fag- og svennebrev › Lærekandidat»). Lenker til den andre modulen er merket «I Vurdering». Hver vei lenker til sin prøve i Vurdering, og prøvesiden i Vurdering har «Veiene hit» med lenker tilbake til hver vei i Opplæringstilbud.
+- **Underveis- og sluttvurdering:** Tidslinjen er én linje med underveisvurdering hele året, og halvår, eksamen og standpunkt som felt med etikettene over og under. Forskjellen står i én boks med de to kolonnene og felles underoverskrifter på hver rad, så radene står på linje.
+- **Fag- og svennebrev:** Tre faner etter hvorfor brukeren kommer: «Veiene» (velg mål, se veiene med stegene som knapper, hvem som melder opp, fellesfag og kilde), «Sammenlign» (velg to veier, side om side i samme boks som over) og «Bytte vei» (fra der man er, til veiene videre, med vilkår og kilde). Ordet «klosser» brukes ikke.
+- **Hver vei har egen side** med «Kommer fra» og «Veien videre» som knapper, og prøven i Vurdering som første kort.
