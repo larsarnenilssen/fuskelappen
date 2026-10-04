@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.33.0] – 2026-10-04
+
 ### Lagt til
 
 - **Fraværsgrensen** i Vurdering: velg faget (søk på navn eller kode) eller skriv inn årstimetallet, og velg hvor lange øktene er. Svaret er grensen i klokketimer og økter ved 10 og 15 prosent, med utregningen linje for linje og kilde på hver linje.

@@ -535,7 +535,8 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Pakke 1 er levert i 0.31.0: modulen **Vurdering** under «Elever og opplæring» med veiviseren «Grunnlag for vurdering», siden «Underveis- og sluttvurdering» med vurderingsteksten i læreplanen for et fag, «Orden og oppførsel», ni begreper og oppslaget over karakterkoder fra registreringshåndboken (avgjørelse 054). Regelverk og kilder står som lukkede rader nederst i alle kort i appen.
 - 0.31.0: bare de berørte ende-til-ende-testene kjøres lokalt, og hele suiten kjøres i CI med bygget én gang og åtte jobber (avgjørelse 055).
 - 0.32.0: forsiden kan tilpasses (grupper som lukkes og sorteres, favoritter som sorteres der de står, «Bare favoritter»), og toppfeltet med søk og innstillinger erstatter bunnmenyen (avgjørelse 056).
-- Pakke 2 (fravær) og pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter. Overleveringen til pakke 2 står i `docs/arbeidsordrer/fase-6-pakke-2.md`.
+- Pakke 2 er levert i 0.33.0: **Fraværsgrensen** i Vurdering med fasittestene FR1–FR8, VIGO som kontroll av fagene i Grep, boksen «Fravær og eksamen» på fagarket, og søketreff som sier hva treffet er (avgjørelse 057).
+- Pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter. Overleveringen til pakke 3 står i `docs/arbeidsordrer/fase-6-pakke-3.md`.
 
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 
