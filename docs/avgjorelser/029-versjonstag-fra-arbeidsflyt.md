@@ -11,3 +11,5 @@
 **Konsekvens:** Når versjons-PR-en flettes, settes taggen og appen publiseres uten flere steg. Eier kan fortsatt sette en tag selv (EIER.md punkt 3), og da publiserer `deploy.yml` som før.
 
 **Rettelse 01.10.2026:** I en kalt arbeidsflyt er `github.event_name` den kallende arbeidsflytens hendelse. Første kjøring tolket derfor kallet som et push av en tag og prøvde å publisere «main». `deploy.yml` sjekker nå også `github.ref_type == 'tag'`. 0.10.0 ble publisert for hånd med taggen.
+
+**Tillegg 04.10.2026:** Taggene fra arbeidsflyten fikk ingen utgivelse under Releases, så GitHub viste v0.9.0 som siste versjon selv om 0.30.0 var publisert. Jobben «Lag utgivelse» lager nå en utgivelse for hver tag som er nyere enn siste utgivelse, med avsnittet for versjonen i `CHANGELOG.md` som tekst. Den nyeste merkes som siste. Første kjøring etter endringen lager de som mangler fra v0.10.0 til v0.30.0.
