@@ -588,7 +588,7 @@
     - { id: udir-klage-standpunkt, punkt: "4. Hvordan skal eleven eller foreldrene klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/" }
   kontrollert: null
   kontrollsporsmal:
-    - "Er hurtigklage på standpunkt en ordning fylkene velger selv? Kilden er fylkets side, ikke forskriften."
+    - "Kilden er fylkets side, ikke forskriften. Er hurtigklage på standpunkt en ordning fylkene velger selv?"
 
 - id: fe-privatister-datoer-host
   type: frist
