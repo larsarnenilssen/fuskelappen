@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.32.0] – 2026-10-04
+
 ### Endret
 
 - **Toppfeltet erstatter bunnmenyen:** tilbake, «Fuskelappen» (til forsiden), søk og innstillinger står øverst. Kildestatusen står under Innstillinger.
