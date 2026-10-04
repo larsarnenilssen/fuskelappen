@@ -4,14 +4,21 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.35.0] – 2026-10-04
+
 ### Lagt til
 
-- **Eksamen** i Vurdering: hvor mange eksamener elevene har på hvert trinn (rutenett), oppmelding, gjennomføring og sensur, særskilt tilrettelegging, og utsatt, ny og særskilt eksamen side om side. Vestland: bortvisning og annullering etter skulereglane.
-- **Veiviseren «Klage på karakter»** (bær): hva eleven kan klage på, begrunnelse og frist, hva skolen kan gjøre, og hva statsforvalteren, klagenemnda eller fylkestinget kan komme til.
-- **Fag- og svenneprøven og de andre prøvene**: krav før prøven, oppmelding, prøvenemnda, karakterer, tilrettelegging, ny og utsatt prøve, og klage.
-- **Kalender for eksamen**: kalender fra august til juli for oppmelding, trekk, eksamen, sensur og klage, med filter for elever, privatister og lærlinger. Datoene hentes fra Udir og fylkeskommunene hvert halvår. Fylkets egne datoer vises når fylket er valgt.
+- **Eksamen** i Vurdering: blå bokser med antall eksamener på hvert trinn, en sti fra oppmelding til karakter med datoene for skoleåret, det som gjelder hele veien (sentralt og lokalt gitt eksamen, særskilt tilrettelegging, bortvisning og annullering), og utsatt, ny og særskilt eksamen samlet i én boks. Vestland: bortvisning og annullering etter skulereglane.
+- **Veiviseren «Klage på karakter»** (bær): hva eleven kan klage på, begrunnelse og frist, hva skolen kan gjøre, og hva statsforvalteren, klagenemnda eller fylkestinget kan komme til. Halvårsvurdering gir svaret «Ingen klagerett».
+- **Fag- og svenneprøven og de andre prøvene**, med samme oppsett som Eksamen: prøvene som blå bokser, en sti fra krav til resultat, og ny og utsatt prøve samlet i én boks. Siden lenker til Udir.
+- **Kalender for eksamen**: oppmelding, trekk, eksamen, sensur og klage fra august til juli, med filter for elever, privatister og lærlinger. Datoene hentes fra Udir og fylkeskommunene hvert halvår. Fylkets egne datoer vises når fylket er valgt.
 - **Nye begreper:** trekkfag, sentralt og lokalt gitt eksamen, tverrfaglig eksamen, utsatt, ny og særskilt eksamen, særskilt tilrettelegging av eksamen, fag- og svenneprøve, prøvenemnd, klagenemnd, og vitnemål og kompetansebevis.
-- **Fagarket** lenker til eksamen i boksen «Fravær og eksamen».
+- **Fagarket** lenker til Eksamen i boksen «Fravær og eksamen».
+
+### Endret
+
+- **Kalender for inntak:** Tidslinjen i Inntak heter nå «Kalender for inntak», og søket kaller tidslinjene kalender.
+- **Oversikten i Vurdering** har fått delen «Eksamen og klage», med Eksamen og fag- og svenneprøven ved siden av hverandre, og veiviseren og kalenderen under.
 
 ## [0.34.0] – 2026-10-04
 
