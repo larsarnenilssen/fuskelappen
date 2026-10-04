@@ -13,6 +13,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **«Til toppen»** kommer på alle sider som er lange nok.
 - **Fylkesmerknaden** på forsiden er én linje, og forsiden har to spalter på stor skjerm.
 
+## [0.31.0] – 2026-10-04
+
 ### Lagt til
 
 - **Vurdering** under «Elever og opplæring», etter opplæringsforskrifta kapittel 9, Udirs merknader og rundskrivet om fraværsgrensen:
@@ -35,6 +37,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Fikset
 
 - **Favoritter:** «Søknad og frister gjennom året» sto som «ikke lenger tilgjengelig» når den var lagt til som favoritt. En ny test sjekker at alle stjerneknappene i appen har en favoritt som finnes.
+- **Kildesjekken** fant ikke innholdet i oversikten over registreringshåndboken.
 
 ## [0.30.0] – 2026-10-03
 
