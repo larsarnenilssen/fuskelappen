@@ -3504,7 +3504,7 @@ p.fagkort-tittel {
   align-items: center;
   justify-content: space-between;
   gap: var(--rom-2);
-  margin: var(--rom-3) 0 0;
+  margin: 0 0 var(--rom-3);
 }
 
 .forside-verktoy .bryter {
@@ -3515,11 +3515,44 @@ p.fagkort-tittel {
   margin-top: var(--rom-4);
 }
 
-/* «Endre rekkefølge» under favorittene i en gruppe. */
+/* «Endre rekkefølge» over favorittene: en tynn strek med knappen midt på (eier 04.10.2026). */
 .gruppe-verktoy {
   display: flex;
-  justify-content: flex-end;
-  margin: var(--rom-1) 0 0;
+  align-items: center;
+  gap: var(--rom-2);
+  margin: calc(-1 * var(--rom-3)) 0 var(--rom-1);
+}
+
+.gruppe-verktoy::before,
+.gruppe-verktoy::after {
+  content: '';
+  flex: 1;
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.gruppe-verktoy-knapp {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  padding: 0 var(--rom-2);
+  border: 0;
+  background: none;
+  color: var(--farge-lenke);
+  font: inherit;
+  font-size: var(--str-s);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .gruppe-verktoy-knapp:hover {
+    text-decoration: underline;
+  }
+}
+
+.gruppe-verktoy-knapp[aria-pressed='true'] {
+  color: var(--farge-merke);
 }
 
 /* Bryteren har korte tekster på smal skjerm og hele der det er plass (eier 04.10.2026). */

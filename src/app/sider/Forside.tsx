@@ -59,6 +59,15 @@ function Favoritter({ ider, merket }: { ider: readonly string[]; merket: boolean
   const navn = (id: string) => kjente?.get(id)?.tittel[malform] ?? id;
   return (
     <>
+      {ider.length > 1 || endre ? (
+        // En tynn strek med knappen midt på, rett under overskriften (eier 04.10.2026).
+        <p class="gruppe-verktoy">
+          <button type="button" class="gruppe-verktoy-knapp" aria-pressed={endre} onClick={() => settEndre(!endre)}>
+            <Ikon navn={endre ? 'hake' : 'dra'} class="ikon-liten" />
+            {endre ? t('forside.endreFerdig') : t('forside.endreRekkefolge')}
+          </button>
+        </p>
+      ) : null}
       {endre ? (
         <Sorterbar
           etikett={t('forside.favoritter')}
@@ -82,13 +91,6 @@ function Favoritter({ ider, merket }: { ider: readonly string[]; merket: boolean
       ) : (
         <Favorittliste ider={ider} merket={merket} />
       )}
-      {ider.length > 1 || endre ? (
-        <p class="gruppe-verktoy">
-          <button type="button" class="lenkeknapp" aria-pressed={endre} onClick={() => settEndre(!endre)}>
-            {endre ? t('forside.endreFerdig') : t('forside.endreRekkefolge')}
-          </button>
-        </p>
-      ) : null}
     </>
   );
 }
@@ -171,7 +173,6 @@ export default function Forside() {
 
       {!erAktivtSok(sporring) && (
         <>
-          <Stedmerknad />
           <div class="forside-verktoy">
             <Bryter
               legend={t('forside.vis')}
@@ -189,6 +190,7 @@ export default function Forside() {
               {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
             </button>
           </div>
+          <Stedmerknad />
 
           {tilpass ? (
             <Tilpasning grupper={grupper} navn={navn} />
