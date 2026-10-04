@@ -112,7 +112,7 @@ export function lagKontrollindeks(
           kontrollert: element.kontrollert?.dato ?? null,
           sporsmal: element.kontrollsporsmal ?? [],
           kilder: element.kilder.map((r) => ({ id: r.id, punkt: r.punkt ?? null, url: r.url ?? null })),
-          paragrafer: 'paragrafer' in element ? [...element.paragrafer] : [],
+          paragrafer: 'paragrafer' in element ? [...(element.paragrafer ?? [])] : [],
         };
         liste.push(post);
       }

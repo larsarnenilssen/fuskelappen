@@ -533,6 +533,10 @@ export default function Fagside({ parametre }: SideProps) {
           <p class="dempet">{t('fag.side.ingenVurdering')}</p>
         )}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
+        {/* Underveis- og sluttvurdering med vurderingsteksten for faget (fase 6). */}
+        <p class="liten">
+          <a href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>{t('fag.side.tilVurdering')}</a>
+        </p>
       </Seksjon>
 
       {fag.po.length > 0 && (

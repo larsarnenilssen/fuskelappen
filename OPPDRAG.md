@@ -530,6 +530,11 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 
 Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på fase 2.
 
+*Status 04.10.2026:*
+- Forslaget med tre pakker, fasittestene FR1–FR8 og svarene fra eier står i `docs/arbeidsordrer/fase-6-forslag.md`.
+- Pakke 1 er bygget på grenen `claude/fase-6-vurdering`: modulen **Vurdering** under «Elever og opplæring» med veiviseren «Grunnlag for vurdering», siden «Underveis- og sluttvurdering» med vurderingsteksten i læreplanen for et fag, «Orden og oppførsel», ni begreper og oppslaget over karakterkoder fra registreringshåndboken (avgjørelse 054). Venter på eiers kontroll av skjermbildene.
+- Pakke 2 (fravær) og pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter.
+
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 
 ### Fase 7 – Skolemiljø og skoleregler

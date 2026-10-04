@@ -1,0 +1,303 @@
+# Underveis- og sluttvurdering (fase 6, pakke 1). Egne ord. Godkjent i forslaget av eier 04.10.2026.
+# Skoleåret (us-skolearet), forskjellen side om side (us-rad-*) og prinsippene for vurdering (us-prinsipp-*).
+- id: us-skolearet
+  type: forklaring
+  tittel:
+    nb: "Skoleåret i et fag"
+    nn: "Skoleåret i eit fag"
+  tekst:
+    nb: "Underveisvurderingen går hele året. Halvårsvurderingen gis midt i opplæringsperioden, og ved slutten av skoleåret når faget fortsetter neste år. Standpunktkarakteren settes så sent som mulig, og senest dagen før sensur når eleven har eksamen i faget. Datoene for eksamen fastsetter Udir hvert år."
+    nn: "Undervegsvurderinga går heile året. Halvårsvurderinga blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når faget held fram neste år. Standpunktkarakteren blir sett så seint som mogleg, og seinast dagen før sensur når eleven har eksamen i faget. Datoane for eksamen fastset Udir kvart år."
+  paragrafer: [opplaeringsforskrifta/9-13, opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 tredje og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-16", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iii.-sluttvurdering/-9-16-standpunktkarakterar-i-fag/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er figuren av skoleåret (underveis hele året, halvår midt i, eksamen i mai, standpunkt etter eksamen og før sensur) en riktig forenkling for et fag som avsluttes?"
+
+- id: us-rad-hva
+  type: forklaring
+  tittel:
+    nb: "Hva det er"
+    nn: "Kva det er"
+  tekst:
+    nb: "Underveis: All vurdering før opplæringen i faget er slutt, også halvårsvurderingen. Slutt: Standpunkt, eksamen og fag- og svenneprøven, praksisbrevprøven og kompetanseprøven."
+    nn: "Undervegs: All vurdering før opplæringa i faget er slutt, også halvårsvurderinga. Slutt: Standpunkt, eksamen og fag- og sveineprøva, praksisbrevprøva og kompetanseprøva."
+  sammenligning:
+    venstre:
+      nb: "All vurdering før opplæringen i faget er slutt, også halvårsvurderingen."
+      nn: "All vurdering før opplæringa i faget er slutt, også halvårsvurderinga."
+    hoyre:
+      nb: "Standpunkt, eksamen og fag- og svenneprøven, praksisbrevprøven og kompetanseprøven."
+      nn: "Standpunkt, eksamen og fag- og sveineprøva, praksisbrevprøva og kompetanseprøva."
+  paragrafer: [opplaeringsforskrifta/9-11, opplaeringsforskrifta/9-15]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-15 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-15" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-formal
+  type: forklaring
+  tittel:
+    nb: "Formål"
+    nn: "Formål"
+  tekst:
+    nb: "Underveis: Fremme læring, øke kompetansen og tilpasse opplæringen. Slutt: Gi informasjon om kompetansen når opplæringen i faget er slutt."
+    nn: "Undervegs: Fremje læring, auke kompetansen og tilpasse opplæringa. Slutt: Gi informasjon om kompetansen når opplæringa i faget er slutt."
+  sammenligning:
+    venstre:
+      nb: "Fremme læring, øke kompetansen og tilpasse opplæringen."
+      nn: "Fremje læring, auke kompetansen og tilpasse opplæringa."
+    hoyre:
+      nb: "Gi informasjon om kompetansen når opplæringen i faget er slutt."
+      nn: "Gi informasjon om kompetansen når opplæringa i faget er slutt."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-15 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-15" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-grunnlag
+  type: forklaring
+  tittel:
+    nb: "Grunnlag"
+    nn: "Grunnlag"
+  tekst:
+    nb: "Underveis: Kompetansemålene i læreplanen. Slutt: Kompetansemålene i læreplanen."
+    nn: "Undervegs: Kompetansemåla i læreplanen. Slutt: Kompetansemåla i læreplanen."
+  sammenligning:
+    venstre:
+      nb: "Kompetansemålene i læreplanen."
+      nn: "Kompetansemåla i læreplanen."
+    hoyre:
+      nb: "Kompetansemålene i læreplanen."
+      nn: "Kompetansemåla i læreplanen."
+  paragrafer: [opplaeringsforskrifta/9-1]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-15 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-15" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-form
+  type: forklaring
+  tittel:
+    nb: "Form"
+    nn: "Form"
+  tekst:
+    nb: "Underveis: Muntlig, skriftlig eller begge. Halvårsvurdering med karakter er skriftlig. Slutt: Karakter. Standpunkt etter at eleven har vist kompetansen på flere og varierte måter."
+    nn: "Undervegs: Munnleg, skriftleg eller begge delar. Halvårsvurdering med karakter er skriftleg. Slutt: Karakter. Standpunkt etter at eleven har vist kompetansen på fleire og varierte måtar."
+  sammenligning:
+    venstre:
+      nb: "Muntlig, skriftlig eller begge. Halvårsvurdering med karakter er skriftlig."
+      nn: "Munnleg, skriftleg eller begge delar. Halvårsvurdering med karakter er skriftleg."
+    hoyre:
+      nb: "Karakter. Standpunkt etter at eleven har vist kompetansen på flere og varierte måter."
+      nn: "Karakter. Standpunkt etter at eleven har vist kompetansen på fleire og varierte måtar."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-eleven
+  type: forklaring
+  tittel:
+    nb: "Eleven"
+    nn: "Eleven"
+  tekst:
+    nb: "Underveis: Vurderer eget arbeid, vet hva som skal læres, får vite hva hen mestrer og hvordan komme videre. Slutt: Er kjent med hva det legges vekt på når standpunkt settes."
+    nn: "Undervegs: Vurderer eige arbeid, veit kva som skal lærast, får vite kva hen meistrar og korleis kome vidare. Slutt: Er kjend med kva det blir lagt vekt på når standpunkt blir sett."
+  sammenligning:
+    venstre:
+      nb: "Vurderer eget arbeid, vet hva som skal læres, får vite hva hen mestrer og hvordan komme videre."
+      nn: "Vurderer eige arbeid, veit kva som skal lærast, får vite kva hen meistrar og korleis kome vidare."
+    hoyre:
+      nb: "Er kjent med hva det legges vekt på når standpunkt settes."
+      nn: "Er kjend med kva det blir lagt vekt på når standpunkt blir sett."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-klage
+  type: forklaring
+  tittel:
+    nb: "Klage"
+    nn: "Klage"
+  tekst:
+    nb: "Underveis: Ingen klagerett. Slutt: Klage innen 10 dager på standpunkt og eksamen."
+    nn: "Undervegs: Ingen klagerett. Slutt: Klage innan 10 dagar på standpunkt og eksamen."
+  sammenligning:
+    venstre:
+      nb: "Ingen klagerett."
+      nn: "Ingen klagerett."
+    hoyre:
+      nb: "Klage innen 10 dager på standpunkt og eksamen."
+      nn: "Klage innan 10 dagar på standpunkt og eksamen."
+  paragrafer: [opplaeringsforskrifta/10-1, opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-1", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-rad-vitnemal
+  type: forklaring
+  tittel:
+    nb: "Vitnemålet"
+    nn: "Vitnemålet"
+  tekst:
+    nb: "Underveis: Føres ikke på vitnemålet. Slutt: Føres på vitnemålet eller kompetansebeviset."
+    nn: "Undervegs: Blir ikkje ført på vitnemålet. Slutt: Blir ført på vitnemålet eller kompetansebeviset."
+  sammenligning:
+    venstre:
+      nb: "Føres ikke på vitnemålet."
+      nn: "Blir ikkje ført på vitnemålet."
+    hoyre:
+      nb: "Føres på vitnemålet eller kompetansebeviset."
+      nn: "Blir ført på vitnemålet eller kompetansebeviset."
+  paragrafer: [opplaeringsforskrifta/9-52]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-52 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-52" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-52", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/vii.-dokumentasjon-i-vidaregaande-opplaring/-9-52-foring-av-karakterar-i-fag-pa-vitnemal-og-kompetansebevis-i-vidaregaande-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det to sidene i raden gjengitt riktig og kort nok?"
+
+- id: us-prinsipp-kompetansemal
+  type: forklaring
+  tittel:
+    nb: "Grunnlaget er kompetansemålene"
+    nn: "Grunnlaget er kompetansemåla"
+  tekst:
+    nb: "Kompetansemålene skal forstås i lys av teksten om faget i læreplanen. Eleven, og den som har opplæring i bedrift, skal være kjent med læreplanen og med hva læreren legger vekt på."
+    nn: "Kompetansemåla skal forståast i lys av teksten om faget i læreplanen. Eleven, og den som har opplæring i bedrift, skal vere kjend med læreplanen og med kva læraren legg vekt på."
+  paragrafer: [opplaeringsforskrifta/9-1]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-1-formalet-med-og-grunnlaget-for-vurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «og med hva læreren legger vekt på» en riktig gjengivelse av merknaden til § 9-1?"
+
+- id: us-prinsipp-ikke-telle
+  type: forklaring
+  tittel:
+    nb: "Dette skal ikke telle"
+    nn: "Dette skal ikkje telje"
+  tekst:
+    nb: "Forutsetninger, fravær, orden og oppførsel skal ikke trekkes inn i vurderingen i fag. Innsats kan bare telle når læreplanen i faget sier det."
+    nn: "Føresetnader, fråvær, orden og oppførsel skal ikkje trekkjast inn i vurderinga i fag. Innsats kan berre telje når læreplanen i faget seier det."
+  paragrafer: [opplaeringsforskrifta/9-1]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten en riktig gjengivelse av § 9-1 tredje ledd?"
+
+- id: us-prinsipp-underveis
+  type: forklaring
+  tittel:
+    nb: "God underveisvurdering"
+    nn: "God undervegsvurdering"
+  tekst:
+    nb: "Underveisvurderingen er en del av opplæringen. Eleven skal være med og vurdere eget arbeid, forstå hva som skal læres og hva som ventes, få vite hva hen mestrer, og få veiledning om hvordan hen kan øke kompetansen. Den brukes også til å vurdere om eleven har tilfredsstillende utbytte av opplæringen."
+    nn: "Undervegsvurderinga er ein del av opplæringa. Eleven skal vere med og vurdere eige arbeid, forstå kva som skal lærast og kva som blir venta, få vite kva hen meistrar, og få rettleiing om korleis hen kan auke kompetansen. Ho blir også brukt til å vurdere om eleven har tilfredsstillande utbyte av opplæringa."
+  paragrafer: [opplaeringsforskrifta/9-11, opplaeringslova/11-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire punktene i § 9-11 andre ledd og koblingen til tilfredsstillende utbytte (ol. § 11-2) gjengitt riktig?"
+
+- id: us-prinsipp-halvaar
+  type: forklaring
+  tittel:
+    nb: "Halvårsvurderingen"
+    nn: "Halvårsvurderinga"
+  tekst:
+    nb: "Halvårsvurderingen er en del av underveisvurderingen. Den viser kompetansen ut fra det som ventes på tidspunktet, og gir veiledning. Halvårsvurdering med karakter er skriftlig. Den føres ikke på vitnemålet, og kan ikke endres etter at den er ført."
+    nn: "Halvårsvurderinga er ein del av undervegsvurderinga. Ho viser kompetansen ut frå det som blir venta på tidspunktet, og gir rettleiing. Halvårsvurdering med karakter er skriftleg. Ho blir ikkje ført på vitnemålet, og kan ikkje endrast etter at ho er ført."
+  paragrafer: [opplaeringsforskrifta/9-13, opplaeringsforskrifta/9-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-9", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-9-system-for-foring-av-karakterar-og-fravar/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at halvårsvurdering med karakter ikke kan endres etter at den er ført (merknaden til § 9-9)?"
+
+- id: us-prinsipp-standpunkt
+  type: forklaring
+  tittel:
+    nb: "Standpunkt er ikke et gjennomsnitt"
+    nn: "Standpunkt er ikkje eit gjennomsnitt"
+  tekst:
+    nb: "Standpunktkarakteren uttrykker den samlede kompetansen eleven har når opplæringen er slutt. Eleven skal ha fått vise kompetansen på flere og varierte måter, og kompetansen eleven har vist i hele opplæringstiden, skal tas med. Én prøve er normalt ikke nok, og karakteren skal ikke være et gjennomsnitt av karakterer fra underveisvurderingen."
+    nn: "Standpunktkarakteren uttrykkjer den samla kompetansen eleven har når opplæringa er slutt. Eleven skal ha fått vise kompetansen på fleire og varierte måtar, og kompetansen eleven har vist i heile opplæringstida, skal takast med. Éi prøve er normalt ikkje nok, og karakteren skal ikkje vere eit gjennomsnitt av karakterar frå undervegsvurderinga."
+  paragrafer: [opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-16", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iii.-sluttvurdering/-9-16-standpunktkarakterar-i-fag/" }
+    - { id: udir-standpunktvurdering, punkt: "Standpunktvurdering", url: "https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «Én prøve er normalt ikke nok» og «ikke et gjennomsnitt» riktige gjengivelser av merknaden til § 9-16?"
+
+- id: us-prinsipp-rektor
+  type: forklaring
+  tittel:
+    nb: "Rektors ansvar"
+    nn: "Ansvaret til rektor"
+  tekst:
+    nb: "Faglæreren setter standpunktkarakteren. Er rektor i tvil om reglene er fulgt, kan rektor kreve at faglæreren vurderer på nytt før karakteren fastsettes og føres."
+    nn: "Faglæraren set standpunktkarakteren. Er rektor i tvil om reglane er følgde, kan rektor krevje at faglæraren vurderer på nytt før karakteren blir fastsett og ført."
+  paragrafer: [opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten en riktig gjengivelse av § 9-16 femte ledd?"
+
+- id: us-prinsipp-iop
+  type: forklaring
+  tittel:
+    nb: "Elever med individuell opplæringsplan"
+    nn: "Elevar med individuell opplæringsplan"
+  tekst:
+    nb: "Elever med individuelt tilrettelagt opplæring vurderes også ut fra kompetansemålene i læreplanen. Underveisvurderingen skal ta utgangspunkt i målene i planen. Se veiviseren Grunnlag for vurdering."
+    nn: "Elevar med individuelt tilrettelagd opplæring blir også vurderte ut frå kompetansemåla i læreplanen. Undervegsvurderinga skal ta utgangspunkt i måla i planen. Sjå vegvisaren Grunnlag for vurdering."
+  paragrafer: [opplaeringsforskrifta/9-11]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-1-formalet-med-og-grunnlaget-for-vurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at også elever med IOP vurderes ut fra kompetansemålene (merknaden til § 9-1)?"
+
+- id: us-prinsipp-samtale
+  type: forklaring
+  tittel:
+    nb: "Samtale om utviklingen"
+    nn: "Samtale om utviklinga"
+  tekst:
+    nb: "Eleven har rett til minst én samtale i halvåret om den faglige utviklingen sin, og til jevnlig dialog med kontaktlæreren om hvordan hen utvikler seg sosialt og på andre måter. Samtalen kan holdes sammen med samtalen med foreldrene."
+    nn: "Eleven har rett til minst éin samtale i halvåret om den faglege utviklinga si, og til jamleg dialog med kontaktlæraren om korleis hen utviklar seg sosialt og på andre måtar. Samtalen kan haldast saman med samtalen med foreldra."
+  paragrafer: [opplaeringsforskrifta/9-6]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-6 riktig, når første ledd ikke sier hvem som har samtalen?"

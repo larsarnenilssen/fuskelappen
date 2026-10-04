@@ -7,6 +7,7 @@ import { lovNn } from './moduler/lov.nn.ts';
 import { opplaeringslopNn } from './moduler/opplaeringslop.nn.ts';
 import { inntakNn } from './moduler/inntak.nn.ts';
 import { tilretteleggingNn } from './moduler/tilrettelegging.nn.ts';
+import { vurderingNn } from './moduler/vurdering.nn.ts';
 
 export const nn: Tekster = {
   app: {
@@ -318,6 +319,10 @@ export const nn: Tekster = {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpassa opplæring, individuell tilrettelegging og språkopplæring.',
     },
+    vurdering: {
+      navn: 'Vurdering',
+      beskrivelse: 'Grunnlag for vurdering, undervegs og slutt, fritak, fråvær og orden og oppførsel.',
+    },
     laereplanverket: {
       navn: 'Overordna del',
       beskrivelse: 'Verdiar, prinsipp, ferdigheiter og tema.',
@@ -349,6 +354,7 @@ export const nn: Tekster = {
   laereplanverket: laereplanverketNn,
   lov: lovNn,
   tilrettelegging: tilretteleggingNn,
+  vurdering: vurderingNn,
   inntak: inntakNn,
   begreper: {
     tittel: 'Omgrep',
@@ -360,6 +366,9 @@ export const nn: Tekster = {
     relatert: 'Sjå også',
     kildetekst: 'Frå kjelda ({spraak})',
     lokalt: 'Gjeld {sted}',
+    kodegrupper: {
+      tittel: 'Kodane',
+    },
     kodeliste: {
       tittel: {
         fagmerknader: 'FAM-kodane',
@@ -368,6 +377,7 @@ export const nn: Tekster = {
       },
       sok: 'Søk på kode eller tekst',
       antall: '{antall} kodar',
+      enKode: '1 kode',
       ingenTreff: 'Ingen gjeldande kodar passar med søket.',
       utgatte: 'Kodar som har gått ut ({antall})',
       grunnskole: 'Grunnskule',

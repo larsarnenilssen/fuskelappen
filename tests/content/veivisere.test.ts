@@ -31,6 +31,24 @@ function finnes(ref: string): boolean {
 const fagindeks = JSON.parse(readFileSync(join(rot, 'data/grep/fagindeks.json'), 'utf8')) as Fagindeks;
 
 describe('veivisere', () => {
+
+  it('lenker i teksten til et steg i en veiviser har svarene på veien dit, så lenken passer (fase 6)', () => {
+    const lenke = /#\/[a-z-]+\/([a-z0-9-]+)\?steg=([a-z0-9-]+)(?:&(?:amp;)?svar=([a-z0-9.-]+))?/g;
+    for (const e of alle) {
+      const tekster = [e.tekst.nb, e.tekst.nn, ...(e.type === 'steg' && e.forklaring ? [e.forklaring.nb, e.forklaring.nn] : [])];
+      for (const tekst of tekster) {
+        for (const [, veiviserId = '', stegId = '', svar = ''] of tekst.matchAll(lenke)) {
+          const v = veivisere.find((x) => x.id === veiviserId);
+          expect(v, `${e.id}: veiviseren ${veiviserId}`).toBeDefined();
+          if (!v) continue;
+          const kart = lagKart(v.start, steg.filter((s) => s.veiviser === v.id));
+          const vei = finnVei(kart, lesSvar(svar), stegId);
+          expect(vei.korrigert, `${e.id}: ${veiviserId}?steg=${stegId}&svar=${svar}`).toBe(false);
+          expect(vei.gjeldende).toBe(stegId);
+        }
+      }
+    }
+  });
   it('det finnes minst én veiviser', () => {
     expect(veivisere.length).toBeGreaterThan(0);
   });

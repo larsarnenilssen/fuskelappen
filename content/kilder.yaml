@@ -621,6 +621,94 @@ kilder:
     merknad: >-
       Oversikt over klageinstansen for hvert vedtak etter opplæringsforskrifta. Brukt om klage på inntak (fase 5).
 
+  - id: udir-merknader-ofo-kap9
+    navn: Merknader til opplæringsforskrifta, kapittel 9 Individuell vurdering
+    kortnavn: Udirs merknader til opplæringsforskrifta
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs merknader til hver paragraf i kapittel 9, én side per paragraf. Kildesjekken leser oversiktssiden for
+      kapitlet. Stegene i veiviseren «Grunnlag for vurdering» og sidene om underveis- og sluttvurdering og orden og
+      oppførsel viser til merknaden til hver paragraf. Lest 04.10.2026.
+
+  - id: udir-rundskriv-fravarsgrensen
+    navn: Rundskriv om fraværsgrensen
+    kortnavn: Udirs rundskriv om fraværsgrensen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Hvordan fraværsgrensen i opplæringsforskrifta § 9-8 regnes, hva som teller, unntakene, varsel og vedtak.
+      Sist endret 01.08.2026 da det ble lest 04.10.2026. Hvert kapittel har egen adresse.
+
+  - id: udir-standpunktvurdering
+    navn: Standpunktvurdering
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/vurdering/standpunktvurdering/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side om standpunktvurdering under «Standpunkt- og underveisvurdering». Brukt på siden om underveis- og
+      sluttvurdering (fase 6).
+
+  - id: udir-regbok-karakterer
+    navn: Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk
+    utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe
+    url: https://regbok.udir.no/felt/?Id=1021153
+    type: side
+    niva: nasjonal
+    lisens: Ikke oppgitt. Lenkes, siteres kort.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: "#maincolpage"
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Gyldige karakterer og vurderingsuttrykk i videregående (1–6, B/IB, D, F, GK, IV, IM, VO, og IG for voksne), med
+      når de brukes. Oppslaget «Karakterer og vurderingsuttrykk» i begrepsbanken bygger på feltet (eier 04.10.2026).
+
+  - id: udir-regbok-oversikt
+    navn: Registreringshåndboken, oversikt over alle feltene
+    utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe
+    url: https://regbok.udir.no/oversikt
+    type: side
+    niva: nasjonal
+    lisens: Ikke oppgitt. Lenkes, siteres kort.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: "#maincolpage"
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Oversiktssiden har alle feltene med full tekst. B23 Karakterstatus og B25 Orden og oppførsel har ikke egne
+      adresser på oversikten, så kildesjekken følger hele siden. Endringer kommer en gang i året, vanligvis i april–mai.
+
   - id: vilbli
     navn: Vilbli.no – inntak og frister
     utgiver: Fylkeskommunene

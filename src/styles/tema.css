@@ -52,6 +52,10 @@
   --fagtype-valgfritt: var(--p-lilla-700);
   --fagtype-yff: var(--p-rav-700);
   --fagtype-andre: var(--p-graa-600);
+  --vurdering-underveis: var(--p-blaa-100);
+  --vurdering-halvaar: var(--p-blaa-700);
+  --vurdering-eksamen: var(--p-lilla-700);
+  --vurdering-standpunkt: var(--p-rav-700);
 }
 
 :root[data-tema='mork'] {
@@ -102,6 +106,10 @@
   --fagtype-valgfritt: var(--p-lilla-300);
   --fagtype-yff: var(--p-rav-300);
   --fagtype-andre: var(--p-graa-400);
+  --vurdering-underveis: var(--p-blaa-900);
+  --vurdering-halvaar: var(--p-blaa-300);
+  --vurdering-eksamen: var(--p-lilla-300);
+  --vurdering-standpunkt: var(--p-rav-300);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -153,6 +161,10 @@
     --fagtype-valgfritt: var(--p-lilla-300);
     --fagtype-yff: var(--p-rav-300);
     --fagtype-andre: var(--p-graa-400);
+    --vurdering-underveis: var(--p-blaa-900);
+    --vurdering-halvaar: var(--p-blaa-300);
+    --vurdering-eksamen: var(--p-lilla-300);
+    --vurdering-standpunkt: var(--p-rav-300);
   }
 }
 
@@ -208,6 +220,10 @@
     --fagtype-valgfritt: var(--p-lilla-700);
     --fagtype-yff: var(--p-rav-700);
     --fagtype-andre: var(--p-graa-600);
+    --vurdering-underveis: var(--p-blaa-100);
+    --vurdering-halvaar: var(--p-blaa-700);
+    --vurdering-eksamen: var(--p-lilla-700);
+    --vurdering-standpunkt: var(--p-rav-700);
   }
 }
 

@@ -84,7 +84,9 @@ export function Kodeliste({ liste, sti, sporring }: { liste: Merknadsliste; sti:
         </div>
       </div>
       <p role="status" class="dempet liten">
-        {gjeldende.length === 0 ? t('begreper.kodeliste.ingenTreff') : t('begreper.kodeliste.antall', { antall: formaterTall(gjeldende.length) })}
+        {gjeldende.length === 0 ? t('begreper.kodeliste.ingenTreff') : gjeldende.length === 1
+            ? t('begreper.kodeliste.enKode')
+            : t('begreper.kodeliste.antall', { antall: formaterTall(gjeldende.length) })}
       </p>
       {gjeldende.length > 0 && <Koder koder={gjeldende} liste={liste} t={t} malform={malform} />}
       {utgatte.length > 0 && (

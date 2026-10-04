@@ -122,6 +122,7 @@ export const fagNn: Skjema<typeof fagNb> = {
     kompetansemaal: 'Kompetansemål',
     underveis: 'Undervegsvurdering',
     standpunktvurdering: 'Standpunktvurdering',
+    tilVurdering: 'Undervegs- og sluttvurdering i faget',
     vurderingsordningLaereplan: 'Vurderingsordning i læreplanen',
     ingenMaal: 'Læreplanen har ingen kompetansemål for faget i Grep.',
     erstatter: 'Erstattar',
