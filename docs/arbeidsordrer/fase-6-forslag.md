@@ -271,3 +271,7 @@ Registreringshåndboken har kodene som egne felt (sist endret 08.04.2025):
 - **B23 Karakterstatus:** E (feilføring), K (klage), S, N og U (særskilt, ny og utsatt eksamen).
 
 Forslag: oppslaget «Karakterer og vurderingsuttrykk» bygger på B26, B25 og B23, sammen med føringsskrivet punkt 5 og forskriften § 9-3–§ 9-5. Kildesjekken følger de tre feltene (som B16–B19). VIGO brukes bare som kontroll: alle kodene i B26 finnes i VIGO med typen V, så V er karakterene i videregående. Typene trenger da ikke forklares i appen.
+
+### Planen for forsiden (OPPDRAG.md 3.7, eier 04.10.2026)
+
+Forslaget er flyttet til grenen `claude/fase-6`, der forsiden har fått overskriften «Inntak og opplæringstilbud». Etter planen heter modulen **Vurdering** og står under «Elever og opplæring» sammen med Tilrettelegging (to hovedbokser). Mockupene er laget på nytt med det navnet. Med Opplæringstilbud under «Inntak og opplæringstilbud» passer mockup B (veiene til fag- og svennebrev i Opplæringstilbud) bedre enn før.
