@@ -2929,15 +2929,52 @@ p.fagkort-tittel {
   white-space: nowrap;
 }
 
+.nokkeltall-topp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+}
+
+/* Knappen trekkes litt inn over og under, så linjen blir lite høyere enn overskriften. */
 .nokkeltall-regn-ut {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--rom-1);
-  align-self: flex-start;
-  min-height: var(--trykkflate);
-  margin-bottom: calc(-1 * var(--rom-2));
-  font-size: var(--str-s);
-  font-weight: 600;
+  flex-shrink: 0;
+  min-width: 2.25rem;
+  margin-block: calc(-1 * var(--rom-1));
+  text-decoration: none;
+}
+
+/* Teksten følger bredden på ruten (eier 04.10.2026): hele teksten, «Arbeidsplan» eller bare ikonet. */
+.nokkeltall-rute {
+  container-type: inline-size;
+}
+
+.nokkeltall-regn-ut-kort {
+  display: none;
+}
+
+@container (max-width: 21rem) {
+  .nokkeltall-regn-ut-lang {
+    display: none;
+  }
+
+  .nokkeltall-regn-ut-kort {
+    display: inline;
+  }
+}
+
+@container (max-width: 15rem) {
+  .nokkeltall-regn-ut {
+    padding-inline: 0;
+  }
+
+  .nokkeltall-regn-ut-kort {
+    display: none;
+  }
 }
 
 .fagark-fakta {
@@ -3606,15 +3643,18 @@ p.fagkort-tittel {
     max-width: 72rem;
   }
 
+  /* Rader med to grupper, så overskriftene i hver rad står i samme høyde (eier 04.10.2026). Gruppene leses rad for
+     rad, i rekkefølgen fra «Tilpass». */
   .forsidegrupper {
-    columns: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
     column-gap: var(--rom-6);
   }
 
-  /* Luften står under hver gruppe, så spaltene starter likt øverst. */
+  /* Luften står under hver gruppe. */
   .forsidegruppe {
     padding-bottom: var(--rom-4);
-    break-inside: avoid;
   }
 
   .forsidegruppe h2 {
@@ -6334,8 +6374,35 @@ button.frist-stripe-celle:hover {
   margin: var(--rom-3) 0;
 }
 
-.fr-veiviser {
-  margin: var(--rom-3) 0 0;
+.fr-veiviserkort {
+  margin-top: var(--rom-3);
+}
+
+/* Lenken i utfallet til steget i veiviseren som passer utfallet. */
+.fr-neste {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin-top: var(--rom-2);
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-kant);
+  text-decoration: none;
+}
+
+.fr-neste-tekst {
+  display: flex;
+  flex-direction: column;
+}
+
+.fr-neste-tittel {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.fr-neste-under {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
 }
 
 .fr-sjekk-svar {

@@ -278,7 +278,7 @@ export default function Forside() {
             <>
               {kategorier.length === 0 && <p class="dempet">{t('forside.ingenModuler')}</p>}
               {bare && favoritter.length === 0 && <TomFavoritter />}
-              {/* To spalter på stor skjerm (eier 04.10.2026). Gruppene står etter hverandre nedover i hver spalte. */}
+              {/* To spalter på stor skjerm, rad for rad, så overskriftene i en rad står likt (eier 04.10.2026). */}
               <div class="forsidegrupper">{grupper.map(gruppe)}</div>
             </>
           )}

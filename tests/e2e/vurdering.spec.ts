@@ -58,6 +58,8 @@ test.describe('vurdering', () => {
     await page.getByLabel('Udokumentert fravær').fill('30');
     await expect(page.locator('.fr-utfall-tittel')).toHaveText('Over 15 prosent');
     await expect(page.locator('.fr-utfall')).toContainText('(FAM51)');
+    // Utfallet lenker rett til steget i veiviseren som passer (eier 04.10.2026).
+    await expect(page.getByRole('link', { name: /Hva skolen må gjøre nå: varsel og vedtak/ })).toHaveAttribute('href', /steg=vu-varsel-fravaer&svar=elev\.vanlig\.nei\.over$/);
     await page.getByLabel('Udokumentert fravær').fill('17');
     // Helsefraværet står i én boks, og deles bare når brukeren krysser av (eier 04.10.2026).
     await page.getByLabel('Helsefravær', { exact: true }).fill('3');

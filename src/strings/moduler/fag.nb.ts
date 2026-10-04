@@ -83,6 +83,7 @@ export const fagNb = {
     arsrammeVis: 'Se alle {antall}',
     arsrammeProgramVerdi: '{t60} ({t45})',
     regnUt: 'Regn ut i Arbeidsplan',
+    regnUtKort: 'Arbeidsplan',
     nokkeltall: 'Årstimetall og årsramme',
     merker: 'Fagkode, fagtype og trinn',
     timerEnhet: 'timer à 60 minutter',

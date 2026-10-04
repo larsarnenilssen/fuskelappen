@@ -340,9 +340,33 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
         </div>
         {kjent && (
           <div class="nokkeltall-rute">
-            <span class="nokkeltall-etikett">
-              {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
-            </span>
+            {/* «Regn ut i Arbeidsplan» står som knapp på linje med overskriften i ruten, så kortet ikke trenger en egen rad
+                (eier 04.10.2026). På smal skjerm vises bare ikonet. At årsrammen bygger på appens tolkning av vedlegg 1,
+                står på begrepet Årsramme bak «i». Teksten følger bredden på ruten: hele, «Arbeidsplan» eller bare ikonet. */}
+            <div class="nokkeltall-topp">
+              <span class="nokkeltall-etikett">
+                {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
+              </span>
+              <a
+                class="knapp knapp-sekundaer knapp-liten nokkeltall-regn-ut"
+                href="#/arbeidstid/arbeidsplan"
+                title={t('fag.side.regnUt')}
+                aria-label={t('fag.side.regnUt')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  regnUtIArbeidsplan(kode, fag, r);
+                }}
+                data-regn-ut
+              >
+                <Ikon navn="kalkulator" class="ikon-liten" />
+                <span class="nokkeltall-regn-ut-lang" aria-hidden="true">
+                  {t('fag.side.regnUt')}
+                </span>
+                <span class="nokkeltall-regn-ut-kort" aria-hidden="true">
+                  {t('fag.side.regnUtKort')}
+                </span>
+              </a>
+            </div>
             {r.status === 'koblet' ? (
               <>
                 <span class="nokkeltall-verdi tall">{formaterTall(r.kandidat.rad.t60)}</span>
@@ -359,20 +383,6 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
                 </span>
               </button>
             )}
-            {/* «Regn ut i Arbeidsplan» står i ruten for årsrammen, så kortet ikke trenger en egen rad (eier 04.10.2026).
-                At årsrammen bygger på appens tolkning av vedlegg 1, står på begrepet Årsramme bak «i». */}
-            <a
-              class="nokkeltall-regn-ut"
-              href="#/arbeidstid/arbeidsplan"
-              onClick={(e) => {
-                e.preventDefault();
-                regnUtIArbeidsplan(kode, fag, r);
-              }}
-              data-regn-ut
-            >
-              <Ikon navn="kalkulator" class="ikon-liten" />
-              {t('fag.side.regnUt')}
-            </a>
           </div>
         )}
       </div>
