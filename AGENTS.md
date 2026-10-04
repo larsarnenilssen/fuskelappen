@@ -17,11 +17,12 @@ Installerbar nettapp (PWA) for skoleledere og lærere i videregående: arbeidsti
 | `npm run lint` | lint |
 | `npm run typecheck` | typesjekk |
 | `npm test` | enhets-, innholds- og fasittester |
-| `npm run test:e2e` | Playwright i WebKit og Chromium |
+| `npm run test:e2e` | hele ende-til-ende-suiten, Playwright i WebKit og Chromium (kjøres i CI) |
+| `npm run test:e2e:berorte` | bare de berørte ende-til-ende-testene, i WebKit mobil (avgjørelse 055) |
 | `npm run kilder:sjekk` | kjører kildesjekken lokalt |
 | `npm run hent:grep` | henter Grep-data og lager endringsrapport |
 
-En endring er ikke ferdig før alle er grønne.
+En endring er ikke ferdig før alle er grønne. Lokalt kjøres `test:e2e:berorte`, og hele ende-til-ende-suiten kjøres i CI med bygget én gang og åtte jobber (avgjørelse 055). Kjør ikke hele suiten lokalt uten grunn.
 
 ## Struktur
 
@@ -84,6 +85,7 @@ En endring er ikke ferdig før alle er grønne.
 - Pinch-zoom slås ikke av globalt.
 - Forklaringer er skjult til brukeren åpner dem.
 - WCAG 2.1 AA. Test i WebKit, ikke bare Chromium.
+- Ende-til-ende-tester som bare gjelder mobil (overflyt, axe), merkes `@mobil`. Overflyt testes i lys visning, axe i lys og mørk. En ny modul får en spesifikasjon i `tests/e2e/` og en linje i `MODULSPEKER` i `scripts/e2e/velg.ts`.
 
 ## Legge til noe nytt
 

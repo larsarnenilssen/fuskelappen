@@ -1,5 +1,7 @@
 # 040 – Ende-til-ende-testene delt på fire jobber i CI
 
+**Erstattet av avgjørelse 055** (04.10.2026): bygget én gang og åtte jobber med tre workers.
+
 **Kontekst:** CI tok om lag 16 minutter, og nesten 15 av dem var ende-til-ende-testene (153 tester i fire nettleseroppsett, med to workers på én maskin). Eier ba om raskere CI med flere workers (03.10.2026).
 
 **Valg:**

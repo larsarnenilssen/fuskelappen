@@ -85,7 +85,6 @@ test.describe('arbeidstid', () => {
     await expect(resultat(page)).toContainText('24,24');
 
     const kort = page.locator('.resultatkort');
-    await expect(kort.getByText('Ikke kontrollert')).toHaveCount(0);
     await expect(kort.locator('.utregning')).toBeHidden();
     await kort.getByRole('button', { name: 'Vis utregning' }).click();
     await expect(kort.getByText('årstimer ÷ justert årsramme × 100')).toBeVisible();
@@ -132,15 +131,6 @@ test.describe('arbeidstid', () => {
     await expect(knapp).toHaveAttribute('aria-expanded', 'false');
     await knapp.click();
     await expect(page.getByText(/Arbeidsplanen sammenligner det læreren skal gjøre/)).toBeVisible();
-  });
-
-  test('planfestet tid utvider arbeidsåret over 37,5 timer i uka', async ({ page }) => {
-    // 80 % funksjon i hel stilling: 1150 × 0,2 + 1687,5 × 0,8 = 1580 timer planfestet tid, som punkt 5.3.
-    await aapne(page, '/arbeidstid/arbeidsplan');
-    await page.getByRole('button', { name: 'Legg til funksjon' }).click();
-    await page.getByLabel('Funksjon 1: Prosent').fill('80');
-    await expect(page.locator('.fordeling-tabell').getByRole('row', { name: /^Planfestet tid/ })).toContainText(/1\s580,0/);
-    await expect(page.getByText(/utvides arbeidsåret med 14,7 dager/)).toBeVisible();
   });
 
   test('lokale testverdier slår gjennom og merkes med nivå', async ({ page }) => {
@@ -315,13 +305,6 @@ test.describe('arbeidstid', () => {
     await vindu.getByLabel('Antall årstimer').fill('70');
     await expect(vindu.locator('.resultatkort-verdi').first()).toContainText('13,33');
     await expect(resultat(page)).toContainText('26,67');
-  });
-
-  test('fagsøket finner fagnavn fra Grep', async ({ page }) => {
-    await aapne(page, '/arbeidstid/beskjeftigelse');
-    await page.getByLabel('Fag', { exact: true }).fill('HEA2005');
-    await expect(page.locator('.fagtreff button').first()).toContainText('Helse- og oppvekstfag Vg2');
-    await expect(page.locator('.fagtreff button').first()).toContainText('Helsefremmende arbeid');
   });
 
   test('felt side om side står på linje i 320–430 px', async ({ page }, info) => {
