@@ -1,11 +1,12 @@
-// Knapp som fører til toppen av siden, for lange lister som fagsøket (eier 02.10.2026).
-// Den vises først når brukeren har rullet godt nedover, og flytter fokus til overskriften på siden.
+// Knapp som fører til toppen av siden (eier 02.10.2026). Står i appskallet, så den kommer på alle sider som er lange
+// nok (avgjørelse 056). Den vises først når brukeren har rullet mer enn en skjermhøyde nedover, og flytter fokus til
+// overskriften på siden.
 import { useEffect, useState } from 'preact/hooks';
 import { useTekst } from '../app/tilstand.ts';
 import { Ikon } from './Ikon.tsx';
 
 /** Hvor mange skjermhøyder brukeren må ha rullet før knappen vises. */
-const SKJERMER = 2;
+const SKJERMER = 1;
 
 export function TilToppen() {
   const { t } = useTekst();

@@ -2,7 +2,7 @@
 // Avgjørelse 056: favorittene og kategoriene er grupper som kan lukkes og sorteres («Tilpass forsiden»), favorittene
 // sorteres der de står, og forsiden kan vise bare favorittene, fordelt under kategoriene sine. Valgene lagres på enheten.
 import type { ComponentChildren } from 'preact';
-import { useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../../config/app.ts';
 import { Bryter } from '../../components/Bryter.tsx';
 import { Ikon } from '../../components/Ikon.tsx';
@@ -12,27 +12,57 @@ import { MAKS_PER_KATEGORI_PAA_FORSIDEN } from '../../modules/kategorier.ts';
 import { kategorierMedModuler } from '../../modules/register.ts';
 import { Favorittliste, useFavorittbare } from '../Favorittliste.tsx';
 import { Innganger } from '../Innganger.tsx';
+import { settForsidesokSynlig } from '../forsidesok.ts';
 import { erAktivtSok, Sokeboks } from '../Sokeboks.tsx';
 import { Stedmerknad } from '../Stedmerknad.tsx';
 import { nullstillForside, settBareFavoritter, settFavorittrekkefolge, settGrupperekkefolge, useTekst, useTilstand, vekslFavoritt, vekslGruppe } from '../tilstand.ts';
 
 const FAVORITTER = 'favoritter';
 
-/** En gruppe med overskrift som åpner og lukker den. */
-function Gruppe({ id, tittel, kategori, lukket, children }: { id: string; tittel: string; kategori?: string; lukket: boolean; children: ComponentChildren }) {
+/**
+ * En gruppe med overskrift som åpner og lukker den. `verktoy` (blyanten for favorittene) står i overskriften ved
+ * siden av pilen, som egen knapp oppå raden, så resten av raden fortsatt åpner og lukker gruppen (eier 04.10.2026).
+ */
+function Gruppe({
+  id,
+  tittel,
+  kategori,
+  lukket,
+  verktoy,
+  children,
+}: {
+  id: string;
+  tittel: string;
+  kategori?: string;
+  lukket: boolean;
+  verktoy?: ComponentChildren;
+  children: ComponentChildren;
+}) {
   const innhold = `forside-gruppe-${id}`;
   return (
     <section class="kategori forsidegruppe" data-gruppe={id} data-kategori={kategori} aria-labelledby={`${innhold}-tittel`}>
-      <h2 id={`${innhold}-tittel`}>
+      <h2 id={`${innhold}-tittel`} class={verktoy && !lukket ? 'med-verktoy' : undefined}>
         <button type="button" class="gruppeknapp" aria-expanded={!lukket} aria-controls={innhold} onClick={() => vekslGruppe(id)}>
           <span>{tittel}</span>
           <Ikon navn={lukket ? 'ned' : 'opp'} class="ikon-liten" />
         </button>
+        {!lukket && verktoy}
       </h2>
       <div id={innhold} hidden={lukket}>
         {children}
       </div>
     </section>
+  );
+}
+
+/** Blyanten for å sortere favorittene i en gruppe, og haken for å avslutte. */
+function Endreknapp({ endre, onEndre, gruppe }: { endre: boolean; onEndre: () => void; gruppe: string }) {
+  const { t } = useTekst();
+  const etikett = endre ? t('forside.endreFerdig') : t('forside.endreRekkefolgeI', { gruppe });
+  return (
+    <button type="button" class="ikonknapp gruppe-endre" aria-pressed={endre} aria-label={etikett} title={etikett} onClick={onEndre}>
+      <Ikon navn={endre ? 'hake' : 'blyant'} class="ikon-liten" />
+    </button>
   );
 }
 
@@ -47,27 +77,17 @@ function TomFavoritter() {
 }
 
 /**
- * Favorittene i en gruppe: lenker, eller håndtak, piler og «Fjern» når brukeren trykker «Endre rekkefølge». De sorteres
- * der de står, så gruppen ikke flytter seg (eier 04.10.2026). Er `ider` bare en del av favorittene (under en kategori i
+ * Favorittene i en gruppe: lenker, eller håndtak, piler og «Fjern» når brukeren trykker på blyanten i overskriften. De
+ * sorteres der de står, så gruppen ikke flytter seg (eier 04.10.2026). Er `ider` bare en del av favorittene (under en kategori i
  * «Bare favoritter»), flyttes de innenfor delen, og de andre favorittene står der de sto.
  */
-function Favoritter({ ider, merket }: { ider: readonly string[]; merket: boolean }) {
+function Favoritter({ ider, merket, endre }: { ider: readonly string[]; merket: boolean; endre: boolean }) {
   const { t, malform } = useTekst();
   const { favoritter } = useTilstand();
-  const [endre, settEndre] = useState(false);
   const kjente = useFavorittbare(ider);
   const navn = (id: string) => kjente?.get(id)?.tittel[malform] ?? id;
   return (
     <>
-      {ider.length > 1 || endre ? (
-        // En tynn strek med knappen midt på, rett under overskriften (eier 04.10.2026).
-        <p class="gruppe-verktoy">
-          <button type="button" class="gruppe-verktoy-knapp" aria-pressed={endre} onClick={() => settEndre(!endre)}>
-            <Ikon navn={endre ? 'hake' : 'dra'} class="ikon-liten" />
-            {endre ? t('forside.endreFerdig') : t('forside.endreRekkefolge')}
-          </button>
-        </p>
-      ) : null}
       {endre ? (
         <Sorterbar
           etikett={t('forside.favoritter')}
@@ -119,6 +139,21 @@ export default function Forside() {
   const { favoritter, forside } = useTilstand();
   const [sporring, settSporring] = useState('');
   const [tilpass, settTilpass] = useState(false);
+  const [endrer, settEndrer] = useState<string | null>(null);
+  const topp = useRef<HTMLDivElement>(null);
+
+  // Toppfeltet viser en søkeknapp når søkefeltet er rullet ut av syne (avgjørelse 056).
+  useEffect(() => {
+    const felt = topp.current?.querySelector('.sokefelt');
+    if (!felt || typeof IntersectionObserver === 'undefined') return;
+    const hoyde = parseFloat(getComputedStyle(document.documentElement).fontSize) * 3.25;
+    const observator = new IntersectionObserver(([e]) => settForsidesokSynlig(e?.isIntersecting ?? true), { rootMargin: `-${hoyde}px 0px 0px 0px` });
+    observator.observe(felt);
+    return () => {
+      observator.disconnect();
+      settForsidesokSynlig(true);
+    };
+  }, []);
   const kategorier = kategorierMedModuler();
   const grupper = ordneGrupper([FAVORITTER, ...kategorier.map((k) => k.id)], forside.rekkefolge);
   const kategoriForModul = new Map(kategorier.flatMap((k) => k.moduler.map((m) => [m.id, k.id] as const)));
@@ -128,13 +163,17 @@ export default function Forside() {
   };
   const bare = forside.bareFavoritter;
 
+  // Blyanten trengs bare når det er minst to favoritter å sortere.
+  const endreknapp = (id: string, antall: number) =>
+    antall > 1 || endrer === id ? <Endreknapp endre={endrer === id} gruppe={navn(id)} onEndre={() => settEndrer(endrer === id ? null : id)} /> : undefined;
+
   const gruppe = (id: string) => {
     const lukket = forside.lukket.includes(id);
     if (id === FAVORITTER) {
       if (bare) return null;
       return (
-        <Gruppe key={id} id={id} tittel={navn(id)} lukket={lukket}>
-          {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} merket />}
+        <Gruppe key={id} id={id} tittel={navn(id)} lukket={lukket} verktoy={endreknapp(id, favoritter.length)}>
+          {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} merket endre={endrer === id} />}
         </Gruppe>
       );
     }
@@ -144,8 +183,8 @@ export default function Forside() {
       const ider = favoritter.filter((f) => kategoriForModul.get(modulForFavoritt(f)) === k.id);
       if (ider.length === 0) return null;
       return (
-        <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket}>
-          <Favoritter ider={ider} merket={false} />
+        <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket} verktoy={endreknapp(id, ider.length)}>
+          <Favoritter ider={ider} merket={false} endre={endrer === id} />
         </Gruppe>
       );
     }
@@ -167,12 +206,10 @@ export default function Forside() {
       <h1 class="skjult-visuelt" tabIndex={-1}>
         {t('forside.tittel')}
       </h1>
-      <div class="forside-topp">
+      <div class="forside-topp" ref={topp}>
         <Sokeboks etikett={t('forside.sokEtikett', { app: app.navn })} plassholder={t('forside.sokPlassholder')} onEndring={settSporring} />
-      </div>
-
-      {!erAktivtSok(sporring) && (
-        <>
+        {/* Visningen og «Tilpass» står i det blå feltet under søket (eier 04.10.2026), og er borte mens brukeren søker. */}
+        {!erAktivtSok(sporring) && (
           <div class="forside-verktoy">
             <Bryter
               legend={t('forside.vis')}
@@ -190,6 +227,11 @@ export default function Forside() {
               {tilpass ? t('forside.tilpass.ferdig') : t('forside.tilpass.knapp')}
             </button>
           </div>
+        )}
+      </div>
+
+      {!erAktivtSok(sporring) && (
+        <>
           <Stedmerknad />
 
           {tilpass ? (

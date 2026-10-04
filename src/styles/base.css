@@ -3504,7 +3504,64 @@ p.fagkort-tittel {
   align-items: center;
   justify-content: space-between;
   gap: var(--rom-2);
-  margin: 0 0 var(--rom-3);
+  margin: var(--rom-3) 0 0;
+}
+
+/* I det blå feltet under søket (eier 04.10.2026): lyse kanter og tekst, og valgt visning lys med mørk tekst. */
+.forside-topp .bryter-valg {
+  border-color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label {
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label + label {
+  border-left-color: var(--farge-topplinje-tekst);
+}
+
+.forside-topp .bryter-valg label.valgt {
+  background: var(--farge-topplinje-tekst);
+  color: var(--farge-topplinje);
+}
+
+.forside-topp .forside-verktoy .knapp {
+  border-color: var(--farge-topplinje-tekst);
+  background: transparent;
+  color: var(--farge-topplinje-tekst);
+}
+
+/* Blyanten for favorittene står i overskriften, ved siden av pilen, oppå knappen som lukker gruppen. */
+.forsidegruppe h2.med-verktoy {
+  position: relative;
+}
+
+/* Til venstre for pilen, som er helt til høyre i knappen. */
+.gruppe-endre {
+  position: absolute;
+  top: 50%;
+  right: calc(1.1rem + var(--rom-1));
+  transform: translateY(-50%);
+  color: var(--farge-lenke);
+}
+
+.gruppe-endre[aria-pressed='true'] {
+  color: var(--farge-merke);
+}
+
+/* Søkeknappen i toppfeltet på forsiden kommer fram når søkefeltet er rullet ut av syne. */
+@media (prefers-reduced-motion: no-preference) {
+  .topplinje-sok {
+    animation: dukk-opp var(--varighet) ease-out;
+  }
+}
+
+@keyframes dukk-opp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
 }
 
 .forside-verktoy .bryter {
@@ -3513,46 +3570,6 @@ p.fagkort-tittel {
 
 .tilpasning {
   margin-top: var(--rom-4);
-}
-
-/* «Endre rekkefølge» over favorittene: en tynn strek med knappen midt på (eier 04.10.2026). */
-.gruppe-verktoy {
-  display: flex;
-  align-items: center;
-  gap: var(--rom-2);
-  margin: calc(-1 * var(--rom-3)) 0 var(--rom-1);
-}
-
-.gruppe-verktoy::before,
-.gruppe-verktoy::after {
-  content: '';
-  flex: 1;
-  border-top: var(--strek) solid var(--farge-linje);
-}
-
-.gruppe-verktoy-knapp {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  min-height: var(--trykkflate);
-  padding: 0 var(--rom-2);
-  border: 0;
-  background: none;
-  color: var(--farge-lenke);
-  font: inherit;
-  font-size: var(--str-s);
-  font-weight: 600;
-  cursor: pointer;
-}
-
-@media (hover: hover) {
-  .gruppe-verktoy-knapp:hover {
-    text-decoration: underline;
-  }
-}
-
-.gruppe-verktoy-knapp[aria-pressed='true'] {
-  color: var(--farge-merke);
 }
 
 /* Bryteren har korte tekster på smal skjerm og hele der det er plass (eier 04.10.2026). */

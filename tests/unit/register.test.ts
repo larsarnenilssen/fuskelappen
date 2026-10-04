@@ -65,6 +65,12 @@ describe('modulregisteret', () => {
     expect(ikonForFavoritt('finnesikke:x', undefined)).toBeNull();
   });
 
+  it('alle favorittene i alle modulene får et ikon, også i nye moduler (avgjørelse 056)', async () => {
+    const f = await samleFavorittbare();
+    expect(f.size).toBeGreaterThan(0);
+    for (const [id, favoritt] of f) expect(ikonForFavoritt(id, favoritt), id).not.toBeNull();
+  });
+
   it('kjernesidene er søkbare på begge målformer', () => {
     for (const o of kjerneoppforinger()) {
       expect(o.tittel.nb.length).toBeGreaterThan(0);

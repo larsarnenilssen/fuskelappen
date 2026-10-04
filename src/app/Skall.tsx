@@ -5,6 +5,8 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../config/app.ts';
 import { visTekst } from '../core/i18n/tekst.ts';
 import { Ikon } from '../components/Ikon.tsx';
+import { TilToppen } from '../components/TilToppen.tsx';
+import { gaaTilForsidesok, useForsidesokSynlig } from './forsidesok.ts';
 import type { SideProps } from '../modules/typer.ts';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
 import { gaaTilbake, matchRute, usePlassering, utforScroll, type Navigasjonstype } from './ruter.ts';
@@ -72,7 +74,8 @@ function Side({ rute, props, type }: { rute: Rute; props: SideProps; type: Navig
     if (!modul) return;
     utforScroll();
     if (type !== 'forste' && !fokusert.current) {
-      const tittel = () => document.querySelector<HTMLElement>('main h1');
+      // Et felt merket data-autofokus (f.eks. søkefeltet på søkesiden) får fokus i stedet for overskriften.
+      const tittel = () => document.querySelector<HTMLElement>('main [data-autofokus]') ?? document.querySelector<HTMLElement>('main h1');
       const h1 = tittel();
       if (h1) h1.focus({ preventScroll: true });
       else {
@@ -126,6 +129,7 @@ export function Skall() {
   }, [treff?.rute, malform, erForside]);
 
   const paaSok = plassering.sti === '/sok';
+  const forsidesok = useForsidesokSynlig();
   const paaInnstillinger = plassering.sti === '/innstillinger';
 
   return (
@@ -154,8 +158,13 @@ export function Skall() {
           </a>
           {/* Søket står på forsiden, så knappen trengs bare på de andre sidene. Plassen holdes, så appnavnet står midt på. */}
           <nav class="topplinje-meny" aria-label={t('app.hovedmeny')}>
-            {erForside || paaSok ? (
+            {paaSok || (erForside && forsidesok) ? (
               <span class="topplinje-plass" aria-hidden="true" />
+            ) : erForside ? (
+              // På forsiden fører knappen tilbake til søkefeltet når brukeren har rullet forbi det.
+              <button type="button" class="ikonknapp topplinje-sok" aria-label={t('nav.sok')} title={t('nav.sok')} onClick={gaaTilForsidesok}>
+                <Ikon navn="sok" />
+              </button>
             ) : (
               <a class="ikonknapp" href="#/sok" aria-label={t('nav.sok')} title={t('nav.sok')}>
                 <Ikon navn="sok" />
@@ -180,6 +189,8 @@ export function Skall() {
           <IkkeFunnet />
         )}
       </main>
+      {/* «Til toppen» på alle sider, når siden er lang nok og brukeren har rullet ned (avgjørelse 056). */}
+      <TilToppen key={plassering.sti} />
       <Oppdateringsvarsel />
     </div>
   );

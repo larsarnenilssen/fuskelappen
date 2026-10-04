@@ -45,7 +45,7 @@ export const nb = {
     visAltKort: 'Alt',
     visFavoritter: 'Bare favoritter',
     visFavoritterKort: 'Favoritter',
-    endreRekkefolge: 'Endre rekkefølge',
+    endreRekkefolgeI: 'Endre rekkefølgen i {gruppe}',
     endreFerdig: 'Ferdig',
     tilpass: {
       knapp: 'Tilpass',

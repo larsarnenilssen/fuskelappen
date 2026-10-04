@@ -6,7 +6,6 @@ import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterDato, formaterTall, type Malform } from '../../../core/i18n/tekst.ts';
 import type { SideProps } from '../../typer.ts';
 import { type Fagroller, lastFagindeks, lastFagrelasjoner, lastFagroller } from '../data.ts';
@@ -292,7 +291,6 @@ export default function Liste({ sporring }: SideProps) {
 
   return (
     <div class="side">
-      <TilToppen />
       <h1 tabIndex={-1}>{t('fag.tittel')}</h1>
       <p class="dempet"><Begrepstekst tekst={t('fag.innledning')} /></p>
       {feil ? (

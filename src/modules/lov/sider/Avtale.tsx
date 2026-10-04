@@ -7,7 +7,6 @@ import { finnKilde, Kildelenke, Kildeliste } from '../../../components/Kildelenk
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
-import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { type Avtaleinfo, avtaleSomDokument, lastBestemmelser } from '../avtaler.ts';
@@ -89,7 +88,6 @@ export function Avtale({ avtale, nokkel }: { avtale: Avtaleinfo; nokkel: string 
         </Sok>
       )}
       <Kildeliste kilder={[{ id: avtale.kilde }]} />
-      <TilToppen />
     </div>
   );
 }

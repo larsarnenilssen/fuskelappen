@@ -45,7 +45,7 @@ export const nn: Tekster = {
     visAltKort: 'Alt',
     visFavoritter: 'Berre favorittar',
     visFavoritterKort: 'Favorittar',
-    endreRekkefolge: 'Endre rekkjefølgje',
+    endreRekkefolgeI: 'Endre rekkjefølgja i {gruppe}',
     endreFerdig: 'Ferdig',
     tilpass: {
       knapp: 'Tilpass',

@@ -84,6 +84,7 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
           placeholder={plassholder}
           value={sporring}
           aria-describedby={`${id}-status`}
+          data-autofokus={autofokus ? '' : undefined}
           onFocus={lastIndeks}
           onInput={(e) => {
             const ny = e.currentTarget.value;
