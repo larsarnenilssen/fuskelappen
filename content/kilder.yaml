@@ -702,12 +702,13 @@ kilder:
     sjekkmetode: side
     aktiv: true
     uttrekk:
-      selektor: "#maincolpage"
+      selektor: ".variabel-container"
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
       Oversiktssiden har alle feltene med full tekst. B23 Karakterstatus og B25 Orden og oppførsel har ikke egne
-      adresser på oversikten, så kildesjekken følger hele siden. Endringer kommer en gang i året, vanligvis i april–mai.
+      adresser på oversikten, så kildesjekken følger alle feltene (.variabel-container). HTML-en er så ujevn at
+      #maincolpage ikke blir funnet. Endringer kommer en gang i året, vanligvis i april–mai.
 
   - id: vilbli
     navn: Vilbli.no – inntak og frister
