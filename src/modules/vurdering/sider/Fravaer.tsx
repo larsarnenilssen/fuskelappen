@@ -5,6 +5,7 @@
 // Faget står i adressen (?fag=ENG1007), så fagarket kan lenke rett hit. Ingenting lagres; skjemaet huskes i
 // nettleserhistorikken som i de andre kalkulatorene.
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
+import { huskOktlengde, lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { erstattAdresse } from '../../../app/ruter.ts';
 import { type T, useTekst } from '../../../app/tilstand.ts';
 import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
@@ -53,7 +54,15 @@ interface Skjema {
   andre: number | null;
 }
 
-const start = (): Skjema => ({ timer: null, egneTimer: false, okt: '60', annen: null, udokumentert: null, helse: null, delHelse: false, helseEtter: null, andre: null });
+/** Øktlengden er den brukeren sist valgte i en kalkulator (eier 04.10.2026), ellers 60 minutter. */
+function startokt(): Pick<Skjema, 'okt' | 'annen'> {
+  const o = lesOktlengde();
+  if (!o) return { okt: '60', annen: null };
+  const okt = String(o.minutter) as Oktvalg;
+  return !o.fritt && OKTER.includes(okt) ? { okt, annen: null } : { okt: 'annen', annen: o.minutter };
+}
+
+const start = (): Skjema => ({ timer: null, egneTimer: false, ...startokt(), udokumentert: null, helse: null, delHelse: false, helseEtter: null, andre: null });
 
 const tall = (n: number, d = 2) => formaterTall(n, d);
 
@@ -186,26 +195,39 @@ function Grensetabell({ g }: { g: Grenseresultat }) {
 /** Stolpen fra 0 til litt over 15 prosent, med merker ved 10 og 15 prosent og utfallet i tekst (WCAG 1.4.1). */
 function Fravaersstolpe({ g, r, fam, enhet, timer }: { g: Grenseresultat; r: Fravaersresultat; fam: Merknad | null; enhet: (n: number) => string; timer: boolean }) {
   const { t, malform } = useTekst();
-  const maks = Math.max(g.skjonn.prosent * 4 / 3, r.prosent * 1.05);
+  // Stolpen går til litt over 15 prosent, eller lenger når alt fraværet er større.
+  const maks = Math.max((g.skjonn.prosent * 4) / 3, r.samletProsent * 1.05);
   const plass = (p: number) => `${Math.min(100, (p / maks) * 100)}%`;
   const prosent = tall(r.prosent, 1);
+  const samletProsent = tall(r.samletProsent, 1);
+  // Fraværet som teller, og alt fraværet, med prosent av årstimetallet (eier 04.10.2026).
+  const rad = (okter: number, klokketimer: number, p: string) => (
+    <dd class="tall">
+      {enhet(okter)}
+      {!timer && <span class="dempet"> · {t('vurdering.fravaer.sjekk.iTimer', { timer: tall(klokketimer) })}</span>}
+      <span class="fr-tall-prosent"> · {t('vurdering.fravaer.sjekk.prosentKort', { prosent: p })}</span>
+    </dd>
+  );
   return (
     <div class={`fr-sjekk-svar fr-${r.utfall}`}>
       <dl class="fr-tall">
         <div>
-          <dt>{t('vurdering.fravaer.sjekk.teller')}</dt>
-          <dd class="tall">
-            {enhet(r.teller)}
-            {!timer && <span class="dempet"> · {t('vurdering.fravaer.sjekk.iTimer', { timer: tall(r.timer) })}</span>}
-            <span class="dempet"> · {t('vurdering.fravaer.sjekk.prosent', { prosent })}</span>
-          </dd>
+          <dt>
+            <span class="fr-tegn fr-tegn-teller" aria-hidden="true" />
+            {t('vurdering.fravaer.sjekk.teller')}
+          </dt>
+          {rad(r.teller, r.timer, prosent)}
         </div>
         <div>
-          <dt>{t('vurdering.fravaer.sjekk.samlet')}</dt>
-          <dd class="tall">{enhet(r.samlet)}</dd>
+          <dt>
+            <span class="fr-tegn fr-tegn-samlet" aria-hidden="true" />
+            {t('vurdering.fravaer.sjekk.samlet')}
+          </dt>
+          {rad(r.samlet, r.samletTimer, samletProsent)}
         </div>
       </dl>
-      <div class="fr-stolpe" role="img" aria-label={t('vurdering.fravaer.sjekk.stolpe', { prosent })}>
+      <div class="fr-stolpe" role="img" aria-label={t('vurdering.fravaer.sjekk.stolpe', { prosent, samlet: samletProsent })}>
+        <span class="fr-stolpe-samlet" style={{ width: plass(r.samletProsent) }} />
         <span class="fr-stolpe-fyll" style={{ width: plass(r.prosent) }} />
         <span class="fr-stolpe-merke" style={{ left: plass(g.grense.prosent) }} />
         <span class="fr-stolpe-merke fr-stolpe-merke-15" style={{ left: plass(g.skjonn.prosent) }} />
@@ -348,10 +370,17 @@ export default function Fravaer({ sporring }: SideProps) {
               legend={t('vurdering.fravaer.oktlengde')}
               verdi={s.okt}
               valg={OKTER.map((o) => ({ verdi: o, tekst: o === 'annen' ? t('vurdering.fravaer.annen') : t('vurdering.fravaer.minutter', { antall: o }) }))}
-              onEndring={(okt) => endre({ okt })}
+              onEndring={(okt) => {
+                endre({ okt });
+                if (okt !== 'annen') huskOktlengde(Number(okt), false);
+                else huskOktlengde(s.annen, true);
+              }}
             />
             {s.okt === 'annen' && (
-              <Tallfelt etikett={t('vurdering.fravaer.annenEtikett')} verdi={s.annen} onEndring={(annen) => endre({ annen })} enhet="min" min={1} maks={600} />
+              <Tallfelt etikett={t('vurdering.fravaer.annenEtikett')} verdi={s.annen} onEndring={(annen) => {
+                  endre({ annen });
+                  huskOktlengde(annen, true);
+                }} enhet="min" min={1} maks={600} />
             )}
           </Skjemadel>
 

@@ -1,4 +1,5 @@
 // Vikartimer: økt beskjeftigelse for ansatte i stilling, eller lønn for timevikarer.
+import { lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Tallfelt } from '../../../components/Tallfelt.tsx';
 import { type Arsrammevalg, beregnTimevikar, beregnVikarFast } from '../beregning/index.ts';
@@ -22,8 +23,9 @@ export default function Vikar() {
     plasser: [tomArsrammeplass()],
     faaElever: false,
     okter: null as number | null,
-    minutter: 45 as number | null,
-    minutterFritt: false,
+    // Øktlengden er den brukeren sist valgte i en kalkulator (eier 04.10.2026).
+    minutter: (lesOktlengde()?.minutter ?? 45) as number | null,
+    minutterFritt: lesOktlengde()?.fritt ?? false,
     lonn: nyLonnstilstand(),
     over60: false,
   }));

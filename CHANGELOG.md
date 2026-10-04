@@ -7,16 +7,18 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 ### Lagt til
 
 - **Fraværsgrensen** i Vurdering: velg faget (søk på navn eller kode) eller skriv inn årstimetallet, og velg hvor lange øktene er. Svaret er grensen i klokketimer og økter ved 10 og 15 prosent, med utregningen linje for linje og kilde på hver linje.
-  - **Sjekk fraværet** (valgfritt): udokumentert fravær, helsefravær og fravær dokumentert med andre grunner, og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Helsefraværet deles i før og etter grensen bare når brukeren krysser av for det. Grunnene for dokumentert fravær kan åpnes under feltet. Er eleven over 15 prosent, står fagmerknaden med kode.
+  - **Sjekk fraværet** (valgfritt): udokumentert fravær, helsefravær og fravær dokumentert med andre grunner, og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Både fraværet som teller og alt fraværet står i økter og prosent. Helsefraværet deles i før og etter grensen bare når brukeren krysser av for det. Grunnene for dokumentert fravær kan åpnes under feltet. Er eleven over 15 prosent, står fagmerknaden med kode.
   - Under står reglene, lukket til de åpnes: fravær som teller, dokumentert fravær som ikke teller, det som ikke er fravær, rektors skjønn, årstimetallet og øktene, hvem grensen gjelder for, og forskjellen mot fraværet på vitnemålet.
 - **Fagarket** har boksen «Fravær og eksamen» ved siden av elever og privatister: fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt, og fagmerknadene som hører til faget, med lenkene til kalkulatoren og til underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller eksamen, står det i boksen.
 - **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren, og kalkulatoren lenker tilbake.
 - **Søkefeltet** har et kryss som tømmer søket.
+- **Øktlengden huskes:** Kalkulatorene husker øktlengden brukeren sist valgte (Fraværsgrensen, Vikartimer, Beskjeftigelse og Arbeidsplan). Den lagres på enheten.
 
 ### Endret
 
 - **Søketreffene** sier hva treffet er i appen: veiviser, kalkulator, tidslinje eller side i stedet for «funksjon», og fagmerknad, vitnemålsmerknad, status på søkerønske eller karakter/statuskode i stedet for «begrep» for kodene i oppslagene.
 - **Vurdering på forsiden** skriver underveis- og sluttvurdering helt ut.
+- **Fagarket:** «i» for trinnet står inni merket, som for fagtypen, og «Læreplan i …» er tatt bort over kompetansemålene.
 
 ## [0.32.0] – 2026-10-04
 

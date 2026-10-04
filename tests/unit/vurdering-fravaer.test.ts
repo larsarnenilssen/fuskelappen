@@ -61,6 +61,8 @@ describe('fraværsgrensen', () => {
     expect(r.timer).toBe(15);
     expect(r.prosent).toBeCloseTo(10.714, 3);
     expect(r.samlet).toBe(24);
+    expect(r.samletTimer).toBe(18);
+    expect(r.samletProsent).toBeCloseTo(12.857, 3);
   });
 
   it('ser bort fra tomme og negative felt', () => {

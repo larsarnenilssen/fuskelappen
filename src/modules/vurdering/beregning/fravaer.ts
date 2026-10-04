@@ -116,6 +116,9 @@ export interface Fravaersresultat {
   teller: number;
   /** Alt fraværet som er lagt inn, i økter. */
   samlet: number;
+  /** Alt fraværet, i klokketimer og i prosent av årstimetallet. */
+  samletTimer: number;
+  samletProsent: number;
   /** Helsefravær «etter grensen» som likevel teller, fordi grensen ikke var nådd (§ 9-8 tredje ledd). */
   helseEtterTeller: number;
   /** Fraværet som teller, i prosent av årstimetallet. */
@@ -144,10 +147,14 @@ export function sjekkFravaer(g: Grenseresultat, f: Fravaer): Fravaersresultat {
   const teller = forGrensen + helseEtterTeller;
   const timer = (teller * g.minutter) / g.klokketime;
   const prosent = (timer / g.arstimer) * 100;
+  const samlet = forGrensen + helseEtter + andre;
+  const samletTimer = (samlet * g.minutter) / g.klokketime;
   const utfall: Utfall = teller <= g.grense.okter + SLAKK ? 'innenfor' : teller <= g.skjonn.okter + SLAKK ? 'skjonn' : 'over';
   return {
     teller,
-    samlet: forGrensen + helseEtter + andre,
+    samlet,
+    samletTimer,
+    samletProsent: (samletTimer / g.arstimer) * 100,
     helseEtterTeller,
     prosent,
     timer,

@@ -2804,7 +2804,14 @@ p.fagkort-tittel {
   color: var(--fagtype);
 }
 
-.merke-fagtype .begrep-i {
+/* «i» for fagtypen og for trinnet står inni merket (eier 04.10.2026). */
+.fagark-merker .merke:has(.begrep-i) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.fagark-merker .merke .begrep-i {
   min-width: 1.25rem;
   min-height: 1.25rem;
   margin: -0.35rem -0.25rem;
@@ -3070,10 +3077,6 @@ p.fagkort-tittel {
 
 .fag-vurdering .liten-overskrift {
   margin-top: var(--rom-2);
-}
-
-.fag-laereplan-tittel {
-  font-weight: 600;
 }
 
 .kompetansemaal {
@@ -6280,7 +6283,25 @@ button.frist-stripe-celle:hover {
 
 .fr-felt {
   display: grid;
-  gap: var(--rom-1);
+  gap: var(--rom-3);
+}
+
+/* Mindre luft i «Sjekk fraværet» (eier 04.10.2026): feltene står tett, med hjelpeteksten rett under. */
+.fr-felt .felt {
+  margin: 0;
+}
+
+.fr-felt .felt-hjelp,
+.fravaer .skjemadel[data-del='funksjoner'] .skjemadel-innhold > .felt-hjelp {
+  margin: var(--rom-1) 0 0;
+}
+
+.fravaer .skjemadel[data-del='funksjoner'] .skjemadel-innhold > .felt-hjelp {
+  margin: 0 0 var(--rom-3);
+}
+
+.fr-felt .forklaring {
+  margin: 0;
 }
 
 .fr-tabell {
@@ -6323,7 +6344,7 @@ button.frist-stripe-celle:hover {
 }
 
 .fr-sjekk-svar {
-  margin-top: var(--rom-4);
+  margin-top: var(--rom-3);
 }
 
 .fr-tall {
@@ -6340,7 +6361,41 @@ button.frist-stripe-celle:hover {
 }
 
 .fr-tall dt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
   color: var(--farge-tekst-dempet);
+}
+
+.fr-tall-prosent {
+  color: var(--farge-tekst);
+}
+
+/* Tegnforklaringen: fylt for fraværet som teller, lys med striper for alt fraværet, som i stolpen. */
+.fr-tegn {
+  flex-shrink: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 3px;
+}
+
+.fr-tegn-teller {
+  background: var(--farge-ok);
+}
+
+.fr-skjonn .fr-tegn-teller {
+  background: var(--farge-advarsel);
+}
+
+.fr-over .fr-tegn-teller {
+  background: var(--farge-feil);
+}
+
+.fr-tegn-samlet,
+.fr-stolpe-samlet {
+  background: repeating-linear-gradient(135deg, var(--farge-tekst-dempet) 0 2px, transparent 2px 6px);
+  opacity: 0.45;
 }
 
 .fr-tall dd {
@@ -6357,9 +6412,13 @@ button.frist-stripe-celle:hover {
   overflow: hidden;
 }
 
+.fr-stolpe-samlet,
 .fr-stolpe-fyll {
   position: absolute;
   inset: 0 auto 0 0;
+}
+
+.fr-stolpe-fyll {
   background: var(--farge-ok);
 }
 
@@ -6446,6 +6505,12 @@ button.frist-stripe-celle:hover {
 .fag-ifaget {
   display: flex;
   flex-direction: column;
+}
+
+.fag-ifaget-andel {
+  display: block;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
 }
 
 .fag-ifaget-i {

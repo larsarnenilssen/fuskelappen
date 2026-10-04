@@ -103,7 +103,7 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
         </span>
       </p>
       <div lang={lang}>
-        <p class="fag-laereplan-tittel">{plan.tittel}</p>
+        {/* Tittelen på læreplanen står ikke her, så kompetansemålene kommer rett etter merket (eier 04.10.2026). */}
         {sett.length === 0 && (
           <p class="dempet" lang={malform}>
             {t('fag.side.ingenMaal')}
@@ -169,9 +169,9 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
   useEffect(() => {
     if (fam.length > 0) lastMerknader().then((m) => settMerknader(m.fagmerknader), () => undefined);
   }, [fam.join()]);
-  let grense: number | null = null;
+  let grense: { timer: number; prosent: number } | null = null;
   try {
-    grense = fag.timer !== null ? beregnGrenser(hent, { arstimer: fag.timer, minutter: 60 }).grense.timer : null;
+    grense = fag.timer !== null ? beregnGrenser(hent, { arstimer: fag.timer, minutter: 60 }).grense : null;
   } catch {
     // Uten regelsett for datoen står ikke raden.
   }
@@ -192,7 +192,11 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
           {grense !== null && fag.timer !== null && (
             <div>
               <dt>{t('fag.side.fravaersgrense')}</dt>
-              <dd class="tall">{t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense), arstimer: formaterTall(fag.timer) })}</dd>
+              <dd class="tall">
+                {t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense.timer) })}
+                {/* Andelen på egen linje, så den ikke deles midt i (eier 04.10.2026). */}
+                <span class="fag-ifaget-andel">{t('fag.side.fravaersgrenseAndel', { prosent: formaterTall(grense.prosent), arstimer: formaterTall(fag.timer) })}</span>
+              </dd>
             </div>
           )}
           {v?.eksamen && (
@@ -524,17 +528,14 @@ export default function Fagside({ parametre }: SideProps) {
           {fagtypeTekst(t, fag.type)}
           {typeBegrep && <Begrepslenke id={typeBegrep} navn={fagtypeTekst(t, fag.type)} />}
         </li>
-        {fag.trinn.map((x) => (
+        {/* «i» for trinnet står inni det siste trinnmerket, som for fagtypen (eier 04.10.2026). */}
+        {fag.trinn.map((x, i) => (
           <li key={x} class="merke">
             <span class="skjult-visuelt">{t('fag.side.trinn')}: </span>
             {trinnTekst(t, x)}
+            {i === fag.trinn.length - 1 && <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />}
           </li>
         ))}
-        {fag.trinn.length > 0 && (
-          <li class="merke-i">
-            <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />
-          </li>
-        )}
       </ul>
       <Nokkeltall kode={kode} fag={fag} r={kobling} indeks={indeks} malform={malform} />
       <dl class="egenskaper fagark-fakta">

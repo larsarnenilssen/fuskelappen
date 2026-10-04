@@ -121,7 +121,11 @@ export function skrivLagret(lager: Lager | null, data: Lagret): boolean {
  * Små valg i visningen som huskes på enheten, under egne nøkler, så hovedlagringen og skjemaversjonen ikke endres
  * (f.eks. «Min skole» eller «Alle» i Opplæringsløp, avgjørelse 053). Slettes med resten ved «Slett alt».
  */
-export const VALGNOKLER = { lopvisning: `${LAGRINGSNOKKEL}-lopvisning` } as const;
+export const VALGNOKLER = {
+  lopvisning: `${LAGRINGSNOKKEL}-lopvisning`,
+  /** Øktlengden sist valgt i en kalkulator, som JSON: { minutter, fritt } (eier 04.10.2026). */
+  oktlengde: `${LAGRINGSNOKKEL}-oktlengde`,
+} as const;
 export type Valg = keyof typeof VALGNOKLER;
 
 export function lesValg(lager: Lager | null, valg: Valg): string | null {
