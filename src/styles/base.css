@@ -8,16 +8,16 @@
 
 /*
  * Lerretet bak siden. iOS tar fargen bak statuslinjen fra bakgrunnsfargen (background-color)
- * til html og body, så begge har toppfeltets farge. Fargeovergangen gir menyfarge nederst,
- * der installerte nettapper på iOS kan vise en stripe under bunnmenyen. Selve siden har
- * sidefargen på .skall.
+ * til html og body, så begge har toppfeltets farge. Fargeovergangen gir sidefargen nederst,
+ * der installerte nettapper på iOS kan vise en stripe under innholdet (bunnmenyen er tatt bort,
+ * avgjørelse 056). Selve siden har sidefargen på .skall.
  */
 html {
-  /* Elementer som rulles fram (fokus, ankre) havner ikke bak toppfeltet eller bunnmenyen (WCAG 2.4.11). */
+  /* Elementer som rulles fram (fokus, ankre) havner ikke bak toppfeltet (WCAG 2.4.11). */
   scroll-padding-top: calc(var(--topplinje-hoyde) + env(safe-area-inset-top));
   scroll-padding-bottom: calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-3));
   background-color: var(--farge-topplinje);
-  background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-flate) 50% 100%);
+  background-image: linear-gradient(to bottom, var(--farge-topplinje) 0 50%, var(--farge-bakgrunn) 50% 100%);
   color: var(--farge-tekst);
   font-family: var(--font-tekst);
   font-size: 100%;
@@ -183,9 +183,11 @@ select {
   }
 }
 
+/* Tilbake til venstre, appnavnet midt på og søk og innstillinger til høyre. Begge sidene er to knapper brede, så
+   appnavnet står midt på (avgjørelse 056). */
 .topplinje-innhold {
   display: grid;
-  grid-template-columns: var(--trykkflate) minmax(0, 1fr) var(--trykkflate);
+  grid-template-columns: calc(2 * var(--trykkflate)) minmax(0, 1fr) calc(2 * var(--trykkflate));
   align-items: center;
   min-height: var(--topplinje-hoyde);
   max-width: var(--maks-bredde);
@@ -193,13 +195,21 @@ select {
   padding: 0 var(--rom-2);
 }
 
-.topplinje .ikonknapp,
-.topplinje .indikator {
+.topplinje .ikonknapp {
   color: var(--farge-topplinje-tekst);
 }
 
-.topplinje-plass,
-.indikator-plass {
+.topplinje-meny {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topplinje .ikonknapp[aria-current='page'] {
+  background: var(--farge-aksent);
+  color: var(--farge-aksent-tekst);
+}
+
+.topplinje-plass {
   display: block;
   width: var(--trykkflate);
 }
@@ -226,19 +236,16 @@ select {
   text-overflow: ellipsis;
 }
 
+/* Kildestatusen under Innstillinger (avgjørelse 056). */
 .indikator {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: var(--trykkflate);
-  height: var(--trykkflate);
-  border-radius: 50%;
-  opacity: 0.85;
+  gap: var(--rom-2);
+  min-height: var(--trykkflate);
 }
 
-.indikator-ok,
-.indikator-skjult {
-  opacity: 0.6;
+.indikator-feilet {
+  color: var(--farge-advarsel);
 }
 
 main {
@@ -248,54 +255,6 @@ main {
   margin: 0 auto;
   padding: 0 calc(var(--rom-4) + env(safe-area-inset-right)) calc(var(--bunnmeny-hoyde) + env(safe-area-inset-bottom) + var(--rom-6))
     calc(var(--rom-4) + env(safe-area-inset-left));
-}
-
-.bunnmeny {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  background: var(--farge-flate);
-  border-top: var(--strek) solid var(--farge-linje);
-  padding-bottom: env(safe-area-inset-bottom);
-  padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right);
-}
-
-.bunnmeny ul {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  max-width: var(--maks-bredde);
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-}
-
-.bunnmeny a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  min-height: var(--bunnmeny-hoyde);
-  padding: var(--rom-1);
-  color: var(--farge-tekst-dempet);
-  text-decoration: none;
-  font-size: var(--str-xs);
-  text-align: center;
-}
-
-.bunnmeny a span {
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.bunnmeny a[aria-current='page'] {
-  color: var(--farge-merke);
-  font-weight: 650;
 }
 
 /* ---------- Byggeklosser ---------- */
@@ -512,14 +471,6 @@ main {
 
 .flis .ikon {
   color: var(--farge-merke);
-}
-
-.kategori h3 {
-  font-size: var(--str-m);
-  color: var(--farge-tekst-dempet);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: var(--rom-4) 0 var(--rom-2);
 }
 
 .merknad {
@@ -3121,7 +3072,6 @@ p.fagkort-tittel {
   }
 
   .topplinje,
-  .bunnmeny,
   .hopp,
   .resultatlinje,
   .tittelrad .ikonknapp,
@@ -3432,7 +3382,7 @@ p.fagkort-tittel {
   text-align: left;
 }
 
-/* ---------- Fuskelappen: forside, bunnmeny og detaljer (avgjørelse 034) ---------- */
+/* ---------- Fuskelappen: forside og detaljer (avgjørelse 034 og 056) ---------- */
 /* Forsiden: toppfeltet fortsetter ned rundt søket, med runde hjørner nederst. */
 .forside {
   padding-top: 0;
@@ -3455,19 +3405,6 @@ p.fagkort-tittel {
   min-height: 0;
   margin: var(--rom-1) 0 0;
   color: var(--farge-topplinje-tekst);
-}
-
-/* Bunnmenyen: aktiv fane har en myk «pille» bak ikonet. */
-.bunnmeny a .ikon {
-  box-sizing: content-box;
-  padding: 3px 18px;
-  border-radius: 999px;
-  transition: background-color var(--varighet);
-}
-
-.bunnmeny a[aria-current='page'] .ikon {
-  background: var(--farge-aksent);
-  color: var(--farge-aksent-tekst);
 }
 
 /* Modulene på forsiden har ikonet i en farget sirkel. */
@@ -3515,11 +3452,114 @@ p.fagkort-tittel {
   }
 }
 
-.forside .kategori h3 {
-  text-transform: none;
-  letter-spacing: 0;
+/* Gruppene på forsiden: overskriften er en knapp som lukker og åpner gruppen (avgjørelse 056). */
+.forsidegruppe h2 {
+  margin: var(--rom-4) 0 var(--rom-2);
   font-size: var(--str-s);
+}
+
+.gruppeknapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--farge-tekst-dempet);
+  font: inherit;
   font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.forside-verktoy {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0 0;
+}
+
+.forside-verktoy .bryter {
+  margin: 0;
+}
+
+.tilpasning {
+  margin-top: var(--rom-4);
+}
+
+.tilpasning h2 {
+  margin: 0 0 var(--rom-1);
+  font-size: var(--str-l);
+}
+
+.tilpasning .knapp {
+  margin-top: var(--rom-4);
+}
+
+/* Lister som kan sorteres: håndtaket til venstre, pilene til høyre. Bare håndtaket fanger pekeren, så resten av
+   siden ruller som vanlig. */
+.sorterbar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+.sorterbar-rad {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-1);
+  min-height: var(--trykkflate);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.sorterbar-rad.drar {
+  position: relative;
+  z-index: 5;
+  border-color: var(--farge-merke);
+  box-shadow: var(--skygge-flytende);
+}
+
+.sorterbar-handtak {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: var(--trykkflate);
+  min-height: var(--trykkflate);
+  color: var(--farge-tekst-dempet);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.sorterbar-rad.drar .sorterbar-handtak {
+  cursor: grabbing;
+}
+
+.sorterbar-innhold {
+  flex: 1;
+  min-width: 0;
+}
+
+.sorterbar-navn {
+  display: block;
+  font-weight: 600;
+}
+
+.sorterbar-knapper {
+  display: flex;
+  flex: none;
 }
 
 /* Merknad med ikon foran teksten. */

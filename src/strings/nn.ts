@@ -22,9 +22,7 @@ export const nn: Tekster = {
     tittelMal: '{side} – {app}',
   },
   nav: {
-    hjem: 'Heim',
     sok: 'Søk',
-    favoritter: 'Favorittar',
     innstillinger: 'Innstillingar',
   },
   forside: {
@@ -42,6 +40,17 @@ export const nn: Tekster = {
     stedValgt: 'Viser også innhald for {sted}.',
     velgSted: 'Vel fylke og skule',
     forbehold: '{app} er utvikla privat, og opplysningane i appen kan vere uriktige.',
+    vis: 'Vis på framsida',
+    visAlt: 'Alt',
+    visFavoritter: 'Berre favorittar',
+    tilpass: {
+      knapp: 'Tilpass',
+      ferdig: 'Ferdig',
+      tittel: 'Tilpass framsida',
+      hjelp: 'Dra i handtaket for å flytte ei gruppe eller ein favoritt, eller bruk pilene. Trykk på overskrifta til ei gruppe på framsida for å lukke eller opne ho.',
+      grupper: 'Gruppene',
+      nullstill: 'Standard rekkjefølgje, alle grupper opne',
+    },
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
@@ -75,11 +84,12 @@ export const nn: Tekster = {
       skole: 'Skule',
     },
   },
-  favoritter: {
-    tittel: 'Favorittar',
-    tom: 'Du har ingen favorittar enno. Trykk på stjerna ved ein funksjon, eit fag eller eit omgrep for å leggje det til.',
+  sorterbar: {
     flyttOpp: 'Flytt «{navn}» opp',
     flyttNed: 'Flytt «{navn}» ned',
+  },
+  favoritter: {
+    tittel: 'Favorittar',
     fjern: 'Fjern «{navn}» frå favorittar',
     leggTil: 'Legg til i favorittar',
     fjernKort: 'Fjern frå favorittar',

@@ -22,9 +22,7 @@ export const nb = {
     tittelMal: '{side} – {app}',
   },
   nav: {
-    hjem: 'Hjem',
     sok: 'Søk',
-    favoritter: 'Favoritter',
     innstillinger: 'Innstillinger',
   },
   forside: {
@@ -42,6 +40,17 @@ export const nb = {
     stedValgt: 'Viser også innhold for {sted}.',
     velgSted: 'Velg fylke og skole',
     forbehold: '{app} er utviklet privat, og opplysningene i appen kan være uriktige.',
+    vis: 'Vis på forsiden',
+    visAlt: 'Alt',
+    visFavoritter: 'Bare favoritter',
+    tilpass: {
+      knapp: 'Tilpass',
+      ferdig: 'Ferdig',
+      tittel: 'Tilpass forsiden',
+      hjelp: 'Dra i håndtaket for å flytte en gruppe eller en favoritt, eller bruk pilene. Trykk på overskriften til en gruppe på forsiden for å lukke eller åpne den.',
+      grupper: 'Gruppene',
+      nullstill: 'Standard rekkefølge, alle grupper åpne',
+    },
   },
   kategorier: {
     arbeidstid: 'Arbeidstid',
@@ -75,11 +84,12 @@ export const nb = {
       skole: 'Skole',
     },
   },
-  favoritter: {
-    tittel: 'Favoritter',
-    tom: 'Du har ingen favoritter ennå. Trykk på stjernen ved en funksjon, et fag eller et begrep for å legge det til.',
+  sorterbar: {
     flyttOpp: 'Flytt «{navn}» opp',
     flyttNed: 'Flytt «{navn}» ned',
+  },
+  favoritter: {
+    tittel: 'Favoritter',
     fjern: 'Fjern «{navn}» fra favoritter',
     leggTil: 'Legg til i favoritter',
     fjernKort: 'Fjern fra favoritter',

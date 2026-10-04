@@ -36,7 +36,7 @@ describe('UI-tekster', () => {
   });
 
   it('viser tekst fra nøkkel eller fra innhold', () => {
-    expect(visTekst('nav.hjem', 'nn')).toBe('Heim');
+    expect(visTekst('nav.innstillinger', 'nn')).toBe('Innstillingar');
     expect(visTekst({ nb: 'skole', nn: 'skule' }, 'nn')).toBe('skule');
   });
 });

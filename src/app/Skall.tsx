@@ -1,16 +1,15 @@
-// Appskallet: fast topplinje, ett scrollområde (dokumentet) og fast bunnmeny.
+// Appskallet: fast topplinje og ett scrollområde (dokumentet). Bunnmenyen er tatt bort (avgjørelse 056): toppfeltet
+// har tilbake, appnavnet (til forsiden), søk og innstillinger, og kildestatus står under Innstillinger.
 import type { ComponentType } from 'preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { app } from '../config/app.ts';
 import { visTekst } from '../core/i18n/tekst.ts';
-import { visningsstatus, type Visningsstatus } from '../core/kildestatus/kildestatus.ts';
-import { Ikon, type Ikonnavn } from '../components/Ikon.tsx';
+import { Ikon } from '../components/Ikon.tsx';
 import type { SideProps } from '../modules/typer.ts';
-import { useKildestatus } from './kildestatus.ts';
 import { Oppdateringsvarsel } from './Oppdateringsvarsel.tsx';
 import { gaaTilbake, matchRute, usePlassering, utforScroll, type Navigasjonstype } from './ruter.ts';
 import { ruter, type Rute } from './ruteliste.ts';
-import { useTekst, useTilstand } from './tilstand.ts';
+import { useTekst } from './tilstand.ts';
 
 type Sidemodul = { default: ComponentType<SideProps> };
 const lastet = new Map<Rute, Sidemodul>();
@@ -115,36 +114,6 @@ function Side({ rute, props, type }: { rute: Rute; props: SideProps; type: Navig
   return <Komponent {...props} />;
 }
 
-function KildestatusIndikator() {
-  const { t } = useTekst();
-  const status = useKildestatus();
-  const { skjultKildevarsel } = useTilstand();
-  const samlet: Visningsstatus | null =
-    status.tilstand === 'ok' ? visningsstatus(status.data, new Date(), skjultKildevarsel) : status.tilstand === 'feil' ? 'ukjent' : null;
-  if (samlet === null) return <span class="indikator-plass" aria-hidden="true" />;
-  const ikon: Record<Visningsstatus, Ikonnavn> = {
-    ok: 'ok',
-    endret: 'info',
-    feilet: 'advarsel',
-    utdatert: 'klokke',
-    ukjent: 'info',
-    skjult: 'ok',
-  };
-  const etikett = t('kildestatus.indikator', { status: t(`kildestatus.status.${samlet}`) });
-  return (
-    <a class={`indikator indikator-${samlet}`} href="#/om/kilder" aria-label={etikett} title={etikett} data-status={samlet}>
-      <Ikon navn={ikon[samlet]} />
-    </a>
-  );
-}
-
-const menypunkter: { sti: string; ikon: Ikonnavn; tekst: 'nav.hjem' | 'nav.sok' | 'nav.favoritter' | 'nav.innstillinger' }[] = [
-  { sti: '/', ikon: 'hjem', tekst: 'nav.hjem' },
-  { sti: '/sok', ikon: 'sok', tekst: 'nav.sok' },
-  { sti: '/favoritter', ikon: 'stjerne', tekst: 'nav.favoritter' },
-  { sti: '/innstillinger', ikon: 'innstillinger', tekst: 'nav.innstillinger' },
-];
-
 export function Skall() {
   const { t, malform } = useTekst();
   const plassering = usePlassering();
@@ -156,7 +125,8 @@ export function Skall() {
     document.title = erForside ? app.navn : t('app.tittelMal', { side, app: app.navn });
   }, [treff?.rute, malform, erForside]);
 
-  const aktivMeny = menypunkter.find((m) => (m.sti === '/' ? erForside : plassering.sti.startsWith(m.sti)))?.sti;
+  const paaSok = plassering.sti === '/sok';
+  const paaInnstillinger = plassering.sti === '/innstillinger';
 
   return (
     <div class="skall">
@@ -182,7 +152,19 @@ export function Skall() {
           <a class="appnavn" href="#/">
             <span class="appnavn-tekst">{app.navn}</span>
           </a>
-          <KildestatusIndikator />
+          {/* Søket står på forsiden, så knappen trengs bare på de andre sidene. Plassen holdes, så appnavnet står midt på. */}
+          <nav class="topplinje-meny" aria-label={t('app.hovedmeny')}>
+            {erForside || paaSok ? (
+              <span class="topplinje-plass" aria-hidden="true" />
+            ) : (
+              <a class="ikonknapp" href="#/sok" aria-label={t('nav.sok')} title={t('nav.sok')}>
+                <Ikon navn="sok" />
+              </a>
+            )}
+            <a class="ikonknapp" href="#/innstillinger" aria-label={t('nav.innstillinger')} title={t('nav.innstillinger')} aria-current={paaInnstillinger ? 'page' : undefined}>
+              <Ikon navn="innstillinger" />
+            </a>
+          </nav>
         </div>
       </header>
       {__TESTVERSJON__ && <p class="testversjon">{t('app.testversjon')}</p>}
@@ -198,18 +180,6 @@ export function Skall() {
           <IkkeFunnet />
         )}
       </main>
-      <nav class="bunnmeny" aria-label={t('app.hovedmeny')}>
-        <ul>
-          {menypunkter.map((m) => (
-            <li key={m.sti}>
-              <a href={`#${m.sti}`} aria-current={aktivMeny === m.sti ? 'page' : undefined}>
-                <Ikon navn={m.ikon} fylt={aktivMeny === m.sti && m.ikon === 'stjerne'} />
-                <span>{t(m.tekst)}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
       <Oppdateringsvarsel />
     </div>
   );

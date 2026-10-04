@@ -1,5 +1,6 @@
 // Appens tilstand: innstillinger og favoritter, lagret lokalt via lagringsmodulen.
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { flytt } from '../core/forside/ordning.ts';
 import { hentTekst, type Malform, type Tekstnokkel, type Verdier } from '../core/i18n/tekst.ts';
 import {
   lesLagret,
@@ -143,4 +144,32 @@ export function flyttFavoritt(id: string, retning: -1 | 1): void {
     [liste[i], liste[j]] = [liste[j] as string, liste[i] as string];
     return { ...d, favoritter: liste };
   });
+}
+
+/** Flytter en favoritt fra én plass til en annen (dra og slipp eller pilene på forsiden). */
+export function flyttFavorittTil(fra: number, til: number): void {
+  tilstand.oppdater((d) => ({ ...d, favoritter: flytt(d.favoritter, fra, til) }));
+}
+
+/** Rekkefølgen på gruppene på forsiden (avgjørelse 056). */
+export function settGrupperekkefolge(rekkefolge: string[]): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge } }));
+}
+
+/** Åpner eller lukker en gruppe på forsiden. */
+export function vekslGruppe(id: string): void {
+  tilstand.oppdater((d) => {
+    const lukket = d.forside.lukket.includes(id) ? d.forside.lukket.filter((g) => g !== id) : [...d.forside.lukket, id];
+    return { ...d, forside: { ...d.forside, lukket } };
+  });
+}
+
+/** Bare favorittene, fordelt under kategoriene, eller hele forsiden. */
+export function settBareFavoritter(bareFavoritter: boolean): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, bareFavoritter } }));
+}
+
+/** Standard rekkefølge, og alle gruppene åpne. */
+export function nullstillForside(): void {
+  tilstand.oppdater((d) => ({ ...d, forside: { ...d.forside, rekkefolge: [], lukket: [] } }));
 }

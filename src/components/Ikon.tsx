@@ -7,6 +7,8 @@ const baner = {
   innstillinger:
     'M4 7h10M18 7h2M4 17h4M12 17h8M16 4.5v5M10 14.5v5',
   tilbake: 'M15 5 8 12l7 7',
+  // Håndtaket for dra og slipp: seks prikker.
+  dra: 'M9 6h.01M15 6h.01M9 12h.01M15 12h.01M9 18h.01M15 18h.01',
   hoyre: 'm9 5 7 7-7 7',
   opp: 'm6 15 6-6 6 6',
   ned: 'm6 9 6 6 6-6',

@@ -8,12 +8,13 @@ export interface Oppsett {
   skole?: { id: string | null; navn: string } | null;
   favoritter?: string[];
   skjultKildevarsel?: string | null;
+  forside?: { rekkefolge: string[]; lukket: string[]; bareFavoritter: boolean };
 }
 
 /** Setter lagrede innstillinger før siden lastes. */
 export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
   const data = {
-    skjemaversjon: 2,
+    skjemaversjon: 3,
     innstillinger: {
       malform: oppsett.malform ?? 'nb',
       tema: oppsett.tema ?? 'system',
@@ -23,6 +24,7 @@ export async function settLagret(side: Page, oppsett: Oppsett): Promise<void> {
     favoritter: oppsett.favoritter ?? [],
     scenarier: {},
     skjultKildevarsel: oppsett.skjultKildevarsel ?? null,
+    forside: oppsett.forside ?? { rekkefolge: [], lukket: [], bareFavoritter: false },
   };
   await side.addInitScript((d) => {
     if (!sessionStorage.getItem('oppsett-satt')) {

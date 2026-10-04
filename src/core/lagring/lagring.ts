@@ -6,7 +6,7 @@ import * as z from 'zod/mini';
 export const LAGRINGSNOKKEL = __TESTVERSJON__ ? 'fuskelappen-test' : 'fuskelappen';
 /** Nøkkelen før appen het Fuskelappen (0.17.0). Data der leses når det ikke finnes noe under den nye nøkkelen. */
 export const GAMMEL_LAGRINGSNOKKEL = 'protokollen';
-export const SKJEMAVERSJON = 2;
+export const SKJEMAVERSJON = 3;
 
 const skoleSkjema = z.strictObject({ id: z.nullable(z.string()), navn: z.string().check(z.minLength(1)) });
 
@@ -17,6 +17,16 @@ export const innstillingerSkjema = z.strictObject({
   skole: z.nullable(skoleSkjema),
 });
 
+/**
+ * Forsiden slik brukeren har tilpasset den (avgjørelse 056): rekkefølgen på gruppene (favorittene og kategoriene),
+ * gruppene som er lukket, og om forsiden bare viser favorittene under hver kategori. Tom rekkefølge er standard.
+ */
+export const forsideSkjema = z.strictObject({
+  rekkefolge: z.array(z.string()),
+  lukket: z.array(z.string()),
+  bareFavoritter: z.boolean(),
+});
+
 export const lagretSkjema = z.strictObject({
   skjemaversjon: z.literal(SKJEMAVERSJON),
   innstillinger: innstillingerSkjema,
@@ -24,11 +34,15 @@ export const lagretSkjema = z.strictObject({
   scenarier: z.record(z.string(), z.unknown()),
   /** Kildevarsel brukeren har skjult til neste kildesjekk («kjort|status»), eller null. */
   skjultKildevarsel: z.nullable(z.string()),
+  forside: forsideSkjema,
 });
 
 export type Innstillinger = z.infer<typeof innstillingerSkjema>;
 export type Skolevalg = z.infer<typeof skoleSkjema>;
 export type Lagret = z.infer<typeof lagretSkjema>;
+export type Forsideoppsett = z.infer<typeof forsideSkjema>;
+
+export const standardForside = (): Forsideoppsett => ({ rekkefolge: [], lukket: [], bareFavoritter: false });
 
 export function standard(malform: 'nb' | 'nn' = 'nb'): Lagret {
   return {
@@ -37,6 +51,7 @@ export function standard(malform: 'nb' | 'nn' = 'nb'): Lagret {
     favoritter: [],
     scenarier: {},
     skjultKildevarsel: null,
+    forside: standardForside(),
   };
 }
 
@@ -47,6 +62,8 @@ export function standard(malform: 'nb' | 'nn' = 'nb'): Lagret {
 export const migreringer: Record<number, (gammel: Record<string, unknown>) => Record<string, unknown>> = {
   // 1 → 2: mulighet for å skjule kildevarsel (0.1.1).
   1: (d) => ({ ...d, skjemaversjon: 2, skjultKildevarsel: null }),
+  // 2 → 3: forsiden kan tilpasses, og bunnmenyen er tatt bort (avgjørelse 056).
+  2: (d) => ({ ...d, skjemaversjon: 3, forside: standardForside() }),
 };
 
 export function migrer(raa: unknown): Lagret | null {
