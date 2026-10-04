@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { lagFingeravtrykk, normaliserTekst, nyPost, vurderMotGodkjent } from '../../scripts/kilder/logikk.ts';
 import { kfTekst } from '../../scripts/kilder/kf-infoserie.ts';
-import { filtrerSkoler, lovdataFilnavn, skoleendringer, strukturhint, trekkUt } from '../../scripts/kilder/metoder.ts';
+import { ventetid } from '../../scripts/hent-grep.ts';
+import { feilmelding, filtrerSkoler, lovdataFilnavn, skoleendringer, strukturhint, trekkUt } from '../../scripts/kilder/metoder.ts';
 
 const A = lagFingeravtrykk('a');
 const B = lagFingeravtrykk('b');
@@ -98,5 +99,24 @@ describe('sjekkmetoder for fase 1', () => {
 
   it('normaliserer teksten fra KF Infoserie og fjerner skript', () => {
     expect(kfTekst('<section><h1>SFS 2213</h1><script>x()</script><p>4.  Arbeidsåret</p></section>')).toBe('SFS 2213 4. Arbeidsåret');
+  });
+});
+
+describe('feil i hentingen (kildesjekken 04.10.2026)', () => {
+  it('feilmeldingen tar med årsaken bak «fetch failed»', () => {
+    const arsak = Object.assign(new Error('read ECONNRESET'), { code: 'ECONNRESET' });
+    expect(feilmelding(new TypeError('fetch failed', { cause: arsak }))).toBe('fetch failed (read ECONNRESET)');
+    const sertifikat = Object.assign(new Error('unable to verify the first certificate'), { code: 'UNABLE_TO_VERIFY_LEAF_SIGNATURE' });
+    expect(feilmelding(new TypeError('fetch failed', { cause: sertifikat }))).toBe('fetch failed (UNABLE_TO_VERIFY_LEAF_SIGNATURE: unable to verify the first certificate)');
+    expect(feilmelding('noe annet')).toBe('noe annet');
+  });
+
+  it('Grep venter lenger ved 429 og følger Retry-After', () => {
+    expect(ventetid(1, null, null)).toBe(2000);
+    expect(ventetid(2, 500, null)).toBe(4000);
+    expect(ventetid(1, 429, null)).toBe(15_000);
+    expect(ventetid(3, 429, null)).toBe(45_000);
+    expect(ventetid(1, 429, '30')).toBe(30_000);
+    expect(ventetid(1, 503, '600')).toBe(120_000);
   });
 });

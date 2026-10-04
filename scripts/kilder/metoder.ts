@@ -7,13 +7,32 @@ import { pdfTekst } from './pdf.ts';
 
 export const USER_AGENT = 'Jukselappen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/jukselappen)';
 
+/** Feil i nettverket, før serveren har svart. Meldingen tar med årsaken, som fetch ellers skjuler bak «fetch failed». */
+export class Nettverksfeil extends Error {}
+
 async function hent(url: string): Promise<Response> {
-  const svar = await fetch(url, {
-    headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,application/json;q=0.9' },
-    signal: AbortSignal.timeout(60_000),
-  });
+  let svar: Response;
+  try {
+    svar = await fetch(url, {
+      headers: { 'User-Agent': USER_AGENT, Accept: 'text/html,application/json;q=0.9' },
+      signal: AbortSignal.timeout(60_000),
+    });
+  } catch (e) {
+    throw new Nettverksfeil(feilmelding(e), { cause: e });
+  }
   if (!svar.ok) throw new Error(`${url} svarte ${svar.status} ${svar.statusText}`);
   return svar;
+}
+
+/** «fetch failed (ECONNRESET: read ECONNRESET)»: meldingen med årsakene under. */
+export function feilmelding(e: unknown): string {
+  const deler: string[] = [];
+  for (let f: unknown = e; f instanceof Error && deler.length < 4; f = f.cause) {
+    const kode = (f as { code?: unknown }).code;
+    deler.push(typeof kode === 'string' && !f.message.includes(kode) ? `${kode}: ${f.message}` : f.message);
+  }
+  if (deler.length === 0) return String(e);
+  return deler.length === 1 ? (deler[0] as string) : `${deler[0]} (${deler.slice(1).join('; ')})`;
 }
 
 /** Trekker ut og normaliserer den delen av siden som skal sammenlignes. */
@@ -30,11 +49,27 @@ export function trekkUt(html: string, uttrekk: NonNullable<Kilde['uttrekk']>): s
   return normaliserTekst(treff.map((el) => el.structuredText).join('\n'));
 }
 
-export async function sjekkSide(kilde: Kilde): Promise<{ fingeravtrykk: string; tekst: string }> {
+export async function sjekkSide(kilde: Kilde): Promise<{ fingeravtrykk: string; tekst: string; nettleser: boolean }> {
   if (!kilde.uttrekk) throw new Error('Mangler uttrekk i kilderegisteret');
-  const html = await (await hent(kilde.url)).text();
+  const { html, nettleser } = await hentSide(kilde.url);
   const tekst = trekkUt(html, kilde.uttrekk);
-  return { fingeravtrykk: lagFingeravtrykk(tekst), tekst };
+  return { fingeravtrykk: lagFingeravtrykk(tekst), tekst, nettleser };
+}
+
+/** Siden med fetch, og med Chromium hvis fetch ikke kommer fram (nettleser.ts). Begge feilene står i meldingen. */
+async function hentSide(url: string): Promise<{ html: string; nettleser: boolean }> {
+  try {
+    return { html: await (await hent(url)).text(), nettleser: false };
+  } catch (e) {
+    if (!(e instanceof Nettverksfeil)) throw e;
+    console.log(`${url}: ${e.message}. Prøver med nettleser.`);
+    const { hentMedNettleser } = await import('./nettleser.ts');
+    try {
+      return { html: await hentMedNettleser(url), nettleser: true };
+    } catch (f) {
+      throw new Error(`${e.message}. Med nettleser: ${feilmelding(f).split('\n')[0]}`, { cause: f });
+    }
+  }
 }
 
 // ---------- Nasjonalt skoleregister ----------
