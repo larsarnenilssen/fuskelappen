@@ -218,3 +218,40 @@ Hentes i `scripts/hent-vigo.ts`, kontrolleres (skjema og minstekrav) før de tas
 8. **Ny veiviserfarge** for «Klage på karakter»: forslag **bær** (dyp rosa, 700-tone #8a1f5c i lyst tema og 300-tone i mørkt), fordi grønt og rødt er opptatt og de andre fire er brukt. Eller en annen?
 9. **Navnet:** «Vurdering og eksamen», eller bare «Vurdering»?
 10. **Karakterkodene i VIGO** har en type (V, G, O, I, T, S, P, F) som ikke er forklart. Forslag: vise bare kodene for videregående (V) og orden og oppførsel (O), som er de som har tekster som stemmer med forskriften. Greit, eller vet du hva typene betyr?
+
+---
+
+## Svar fra eier (04.10.2026)
+
+1. **Udirs regneeksempel:** Kalkulatoren regner etter regelen, og Udirs eksempel ses bort fra. FR2: 18 økter innenfor, 19 over.
+2. **Hele timer:** Ja. 113 timer gir 11 innenfor og 12 over (FR3).
+3. **Legeerklæring før grensen og rektors skjønn:** Både de ti timene med legeerklæring og de fem udokumenterte teller i 15 %-rammen. FR8: 15 timer, innenfor 21, rektor kan avgjøre. Føres i praksislisten.
+4. **Sent oppstart og fagbytte:** Ja, alltid hele årstimetallet, med merknad.
+5. **Orden og oppførsel** påvirker ikke vurderingsgrunnlaget i fag. Steget om varsel kan nevne at det samme gjelder fare for Ng eller Lg i orden og oppførsel. Ellers får orden og oppførsel eget stoff, som ikke blandes med karaktervurderingen i fag.
+6. **Lærlinger:** Eier er usikker, fordi det er flere veier til fag- og svennebrev. Vil se et forslag før det bestemmes (under).
+7. **Eksamensdatoene:** Skriptet henter eksamensplanen hvert halvår.
+8. **Fargen:** Dyp rosa (bær).
+
+Ikke besvart ennå: 9 (navnet), 10 (karakterkodene) og godkjenning av fasittestene.
+
+### Forslag: veiene til fag- og svennebrev (spørsmål 6)
+
+Veiene er ikke valg brukeren går gjennom steg for steg, men ulike løp side om side. Forslaget er derfor en egen side **«Fag- og svenneprøven»** i delen «Eksamen og klage», ikke en veiviser:
+
+**Øverst: veiene som rader i en figur** (skole, bedrift og praksis som farget felt, prøven til høyre):
+
+| Vei | Opplæringen | Kontrakt | Prøve | Melder opp | Fellesfag | Dokumentasjon | Kilde |
+|---|---|---|---|---|---|---|---|
+| Lærling | Skole og læretid i bedrift etter tilbudsstrukturen | Lærekontrakt | Fag- eller svenneprøve | Lærebedriften | Må være bestått (unntak for ett eller to, som må bestås etterpå) | Fag- eller svennebrev | ol. § 7-1. ofo. § 9-56, § 9-57, § 9-48 |
+| Lærling med annen organisering | F.eks. mer i bedrift, mer i skole, annen rekkefølge, eller både yrkes- og studiekompetanse | Lærekontrakt som viser organiseringen | Fag- eller svenneprøve | Lærebedriften | Som over | Som over | ofo. § 6-3 |
+| Elev på Vg3 i skole | Tilbud i skole når søkeren ikke får læreplass | – | Fag- eller svenneprøve som elev | Skolen | Som over | Som over | ol. § 5-6. ofo. § 6-2, § 9-56 første ledd |
+| Kandidat for fagbrev på jobb | Minst ett års allsidig praksis i heltid før kontrakten, kontraktstid minst ett år | Kontrakt om opplæring | Fag- eller svenneprøve | Lærebedriften | Trengs ikke | Fag- eller svennebrev | ol. § 7-1. ofo. § 9-58, § 9-48 tredje ledd |
+| Praksiskandidat | Allsidig praksis 25 % lenger enn opplæringsløpet, uten opplæring | – | Eksamen og fag- eller svenneprøve | Kandidaten selv, med prøveavgift | Trengs ikke | Fag- eller svennebrev | ol. § 23-2. ofo. § 9-25 tredje ledd, § 9-56 tredje ledd, § 9-48 tredje ledd |
+| Lærekandidat | Opplæring mot mindre omfattende mål | Opplæringskontrakt | Kompetanseprøve | Lærebedriften | – | Kompetansebevis | ol. § 7-1. ofo. § 9-64, § 9-51 |
+| Praksisbrevkandidat | Opplæring etter lokal læreplan | Opplæringskontrakt | Praksisbrevprøve | Lærebedriften | Må være bestått (unntak for ett) | Praksisbrev | ol. § 7-1. ofo. § 6-3 bokstav e, § 9-57, § 9-64, § 9-48 |
+
+Under figuren står **videre fra lærekandidat og praksisbrev** (godskriving etter konkret vurdering, ofo. § 6-9 tredje ledd) og **godskriving av opplæring og praksis** (ofo. § 6-5–§ 6-12), lukket til de åpnes.
+
+**Under: det som er felles for prøvene**, som lukkede kort: krav før prøven (§ 9-57), oppmelding og frister (§ 9-56: senest to måneder før kontraktstiden er ute), når prøven holdes (§ 9-55: tidligst tre måneder før), prøvenemnda (§ 9-59–§ 9-61), særskilt tilrettelegging (§ 9-62), vurdering og karakterer (§ 9-5, § 9-63, § 9-64), ny og utsatt prøve (§ 9-66, § 9-67), og klage (lenke til klageveiviseren). Lenker til begrepene lærling, kontrakt om opplæring og lærebedrift og til oppslaget over opplæringskontorer.
+
+**I veiviseren «Grunnlag for vurdering»** blir steg L1 og L2 borte. Det første steget får svaret «Lærling, lærekandidat eller praksisbrevkandidat», som gir et utfall om halvårsvurdering i bedrift (§ 9-13 fjerde ledd, ingen fraværsgrense) med lenke til siden over.
