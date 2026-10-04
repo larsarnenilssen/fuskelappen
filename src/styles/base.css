@@ -5717,7 +5717,8 @@ button.frist-stripe-celle:hover {
   font-weight: 700;
 }
 
-/* Vurdering (fase 6): kort som kan åpnes, sammenligning side om side og skoleåret som én stripe. */
+/* Vurdering (fase 6): kort som kan åpnes, to sider av samme sak side om side (.tosidig, ikke .sammenligning, som
+   er variantene i Arbeidstid) og skoleåret som én stripe. */
 .innholdskort {
   margin: 0 0 var(--rom-3);
   border: var(--strek) solid var(--farge-kant);
@@ -5773,7 +5774,7 @@ button.frist-stripe-celle:hover {
   font-weight: 700;
 }
 
-.sammenligning {
+.tosidig {
   width: 100%;
   margin: 0 0 var(--rom-5);
   border: var(--strek) solid var(--farge-kant);
@@ -5785,23 +5786,23 @@ button.frist-stripe-celle:hover {
   table-layout: fixed;
 }
 
-.sammenligning thead th {
+.tosidig thead th {
   padding: var(--rom-2) var(--rom-3);
   border-bottom: var(--strek) solid var(--farge-kant);
   font-size: var(--str-l);
   text-align: left;
 }
 
-.sammenligning-venstre {
+.tosidig-venstre {
   border-right: var(--strek) solid var(--farge-kant);
   color: var(--vurdering-halvaar);
 }
 
-.sammenligning-hoyre {
+.tosidig-hoyre {
   color: var(--vurdering-standpunkt);
 }
 
-.sammenligning .sammenligning-etikett {
+.tosidig .tosidig-etikett {
   padding: var(--rom-1) var(--rom-3);
   background: var(--farge-flate-2);
   color: var(--farge-tekst-dempet);
@@ -5812,14 +5813,14 @@ button.frist-stripe-celle:hover {
   text-transform: uppercase;
 }
 
-.sammenligning td {
+.tosidig td {
   padding: var(--rom-2) var(--rom-3) var(--rom-3);
   font-size: var(--str-s);
   line-height: 1.4;
   vertical-align: top;
 }
 
-.sammenligning td:first-child {
+.tosidig td:first-child {
   border-right: var(--strek) solid var(--farge-kant);
 }
 

@@ -13,14 +13,14 @@ export interface Sammenligningsrad {
 export function Sammenligning({ venstre, hoyre, rader, tittel }: { venstre: string; hoyre: string; rader: readonly Sammenligningsrad[]; tittel: string }) {
   const { malform } = useTekst();
   return (
-    <table class="sammenligning">
+    <table class="tosidig">
       <caption class="skjult-visuelt">{tittel}</caption>
       <thead>
         <tr>
-          <th scope="col" class="sammenligning-venstre">
+          <th scope="col" class="tosidig-venstre">
             {venstre}
           </th>
-          <th scope="col" class="sammenligning-hoyre">
+          <th scope="col" class="tosidig-hoyre">
             {hoyre}
           </th>
         </tr>
@@ -28,7 +28,7 @@ export function Sammenligning({ venstre, hoyre, rader, tittel }: { venstre: stri
       {rader.map((r) => (
         <tbody key={r.id}>
           <tr>
-            <th scope="colgroup" colSpan={2} class="sammenligning-etikett">
+            <th scope="colgroup" colSpan={2} class="tosidig-etikett">
               {r.tittel[malform]}
             </th>
           </tr>
