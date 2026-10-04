@@ -30,7 +30,7 @@ Endringene er nå en del av hovedversjonen (`main`), men de er ikke publisert i 
 
 En ny versjon publiseres ved at den får et versjonsmerke (en «tag»), f.eks. `v0.1.0`.
 
-Fra 01.10.2026 setter Claude versjonsmerket når dere er enige om at en versjon skal publiseres, og hvilket nummer den får (det står også øverst i `CHANGELOG.md`). Claude øker versjonsnummeret i en egen PR. Når den flettes, setter arbeidsflyten **Sett versjonstag** merket og publiserer (avgjørelse 029). Claude følger med til publiseringen er ferdig og sier fra. Stegene under gjelder når du setter versjonsmerket selv.
+Fra 01.10.2026 setter Claude versjonsmerket når dere er enige om at en versjon skal publiseres, og hvilket nummer den får (det står også øverst i `CHANGELOG.md`). Claude øker versjonsnummeret i en egen PR. Når den flettes, setter arbeidsflyten **Sett versjonstag** merket og publiserer (avgjørelse 029). Arbeidsflyten lager også en utgivelse under **Releases** med teksten fra `CHANGELOG.md`. Claude følger med til publiseringen er ferdig og sier fra. Stegene under gjelder når du setter versjonsmerket selv.
 
 1. Åpne repoet og trykk **Releases** i høyre kolonne (eller gå til `…/fuskelappen/releases`).
 2. Trykk **Draft a new release**.
