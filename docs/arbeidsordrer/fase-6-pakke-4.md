@@ -26,7 +26,9 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-4.md og start pak
 - **Kildesjekken:**
   - Vestland-sidene på vestlandfylke.no er lagt inn (#88).
   - Teksten fra kildene lastes opp som artefaktet «kildetekster».
-  - Jobben har 50 minutter, og Grep-hentingen høyst 20 (#91). Grep var svært tregt 04.10.2026.
+  - Jobben har 50 minutter, og Grep-hentingen høyst 20 (#91).
+  - Sider som ikke svarer på fetch, prøves med Chromium. Feilmeldingen viser årsaken bak «fetch failed». Grep venter ved 429 (#93).
+  - Begge de forhåndsgodkjente endringene av kildesjekken er brukt (eier 04.10.2026). Nye endringer krever eiers avgjørelse.
 
 ## Pakke 4: kalenderen (godkjent av eier 04.10.2026, runde 6)
 
@@ -50,9 +52,13 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-4.md og start pak
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 
-## Vestland (venter på kildesjekken)
+## Vestland og Grep (venter på eiers avgjørelse)
 
-Når kildesjekken har lest sidene på vestlandfylke.no, hentes teksten fra artefaktet «kildetekster» i kjøringen. Selektoren `main` må kanskje rettes. Deretter legges innholdet fram for eier før det bygges:
+Kjøringen 37233727798 (04.10.2026, etter #93) viste:
+- **vestlandfylke.no** svarer ikke fra GitHub Actions. TCP-tilkoblingen får tidsavbrudd (`ETIMEDOUT`), også i Chromium etter 60 s. Nettstedet ser altså ut til å stenge IP-adressene i skyen. Hypotesen om at nettleseren kommer gjennom, holdt ikke. Chromium-forsøket koster nå 9 minutter per kjøring.
+- **Grep** svarer 429 og slipper bare gjennom om lag to forespørsler i sekundet. Ventingen fungerer (ingen forespørsel trengte mer enn ett nytt forsøk), men hentingen når ikke gjennom på 20 minutter. Appen beholder forrige henting.
+
+Når eier har valgt vei og sidene på vestlandfylke.no kan leses, hentes teksten fra artefaktet «kildetekster» (eller fra eier). Selektoren `main` må kanskje rettes. Deretter legges innholdet fram for eier før det bygges:
 - antall inntaksområdepoeng (`vlfk-inntaksreglar`, VL § 2-1)
 - klagenemnda i Vestland: inntak og fag- og svenneprøven (`vlfk-sider`, `vlfk-fagproven`)
 - stegene som venter fra fase 4: Språk steg 2–3 og 5 og Tilrettelegging steg 0b, 5b og 6 (`vlfk-minoritetsspraklege`, `vlfk-innforingskurs`, `vlfk-tilrettelegging`)
