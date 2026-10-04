@@ -20,7 +20,7 @@ export const manifest: Modulmanifest = {
       .filter((v) => v.gyldighet.niva === 'nasjonal')
       .map((v) => ({
         id: `tilrettelegging:${v.id}`,
-        type: 'funksjon' as const,
+        type: 'veiviser' as const,
         tittel: v.tittel,
         tekst: v.tekst,
         stikkord: v.stikkord,

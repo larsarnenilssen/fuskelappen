@@ -77,10 +77,17 @@ export const nn: Tekster = {
     ingenTreff: 'Ingen treff på «{sok}».',
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
+    tom: 'Tøm søket',
     typer: {
       modul: 'Del av appen',
-      funksjon: 'Funksjon',
+      veiviser: 'Vegvisar',
+      kalkulator: 'Kalkulator',
+      tidslinje: 'Tidslinje',
       begrep: 'Omgrep',
+      fagmerknad: 'Fagmerknad',
+      vitnemalsmerknad: 'Vitnemålsmerknad',
+      sokerstatus: 'Status på søkjarønske',
+      kode: 'Kode',
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbod',
@@ -336,7 +343,7 @@ export const nn: Tekster = {
     },
     vurdering: {
       navn: 'Vurdering',
-      beskrivelse: 'Grunnlag for vurdering, undervegs og slutt, fritak, fråvær og orden og oppførsel.',
+      beskrivelse: 'Grunnlag for vurdering, undervegs- og sluttvurdering, fritak, fråvær og orden og oppførsel.',
     },
     laereplanverket: {
       navn: 'Overordna del',

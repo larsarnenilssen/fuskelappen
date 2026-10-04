@@ -33,7 +33,7 @@ export const manifest: Modulmanifest = {
     return [
       {
         id: 'opplaeringslop:lop',
-        type: 'funksjon' as const,
+        type: 'side' as const,
         tittel: begge('opplaeringslop.lop.tittel'),
         tekst: begge('opplaeringslop.inngang.programTekst'),
         stikkord: ['utdanningsprogram', 'løp', 'tilbudsstruktur', 'vg1', 'vg2', 'vg3'],

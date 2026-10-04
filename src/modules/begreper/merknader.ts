@@ -9,6 +9,9 @@ export { lastMerknader } from '../../data/vigo.ts';
 /** Begrepet som viser hver kodeliste. */
 export const BEGREP_FOR: Record<Merknadsliste, string> = { fagmerknader: 'fagmerknader', vitnemalsmerknader: 'vitnemalsmerknader', sokerstatuser: 'status-sokeronsker' };
 
+/** Hva en kode i hver liste heter i søkeresultatene. */
+const TYPE_FOR = { fagmerknader: 'fagmerknad', vitnemalsmerknader: 'vitnemalsmerknad', sokerstatuser: 'sokerstatus' } as const satisfies Record<Merknadsliste, Sokeoppforing['type']>;
+
 const STIKKORD: Record<Merknadsliste, string> = { fagmerknader: 'fagmerknad', vitnemalsmerknader: 'vitnemålsmerknad', sokerstatuser: 'status på søkerønske' };
 
 /** Én søkeoppføring per gjeldende kode, som åpner oppslaget med koden søkt fram. */
@@ -18,7 +21,7 @@ export function merknadsoppforinger(m: Merknader): Sokeoppforing[] {
       .filter((x) => x.utgatt === null)
       .map((x) => ({
         id: `merknad:${x.kode}`,
-        type: 'begrep' as const,
+        type: TYPE_FOR[liste],
         tittel: { nb: `${x.kode} ${x.nb}`, nn: `${x.kode} ${x.nn}` },
         stikkord: [x.kode, STIKKORD[liste]],
         rute: `/begreper/${BEGREP_FOR[liste]}?q=${x.kode}`,

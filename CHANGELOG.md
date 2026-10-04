@@ -11,6 +11,12 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
   - Under står reglene, lukket til de åpnes: fravær som teller, dokumentert fravær som ikke teller, det som ikke er fravær, rektors skjønn, årstimetallet og øktene, hvem grensen gjelder for, og forskjellen mot fraværet på vitnemålet.
 - **Fagarket** viser fraværsgrensen i faget (med lenke til kalkulatoren med faget valgt), om eksamen er sentralt eller lokalt gitt, og fagmerknadene som hører til faget. Er Grep og VIGO uenige om årstimetallet eller eksamen, står det på fagarket.
 - **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren, og kalkulatoren lenker tilbake.
+- **Søkefeltet** har et kryss som tømmer søket.
+
+### Endret
+
+- **Søketreffene** sier hva treffet er i appen: veiviser, kalkulator, tidslinje eller side i stedet for «funksjon», og fagmerknad, vitnemålsmerknad, status på søkerønske eller kode i stedet for «begrep» for kodene i oppslagene.
+- **Vurdering på forsiden** skriver underveis- og sluttvurdering helt ut.
 
 ## [0.32.0] – 2026-10-04
 

@@ -19,15 +19,15 @@ export const manifest: Modulmanifest = {
     return [
       {
         id: 'testmodul:skoleregler',
-        type: 'funksjon',
+        type: 'side',
         tittel: { nb: 'Skoleregler i testfylket', nn: 'Skulereglar i testfylket' },
         tekst: { nb: 'Eksempel på en funksjon om skoleregler.', nn: 'Døme på ein funksjon om skulereglar.' },
         rute: '/testmodul',
         modul: 'testmodul',
       },
       // Samme tekst i nb og nn, slik at testene viser at søket normaliserer mellom målformene.
-      { id: 'testmodul:bibliotek', type: 'funksjon', tittel: { nb: 'Skolebibliotek', nn: 'Skolebibliotek' }, rute: '/testmodul', modul: 'testmodul' },
-      { id: 'testmodul:skyss', type: 'funksjon', tittel: { nb: 'Skuleskyss', nn: 'Skuleskyss' }, rute: '/testmodul', modul: 'testmodul' },
+      { id: 'testmodul:bibliotek', type: 'side', tittel: { nb: 'Skolebibliotek', nn: 'Skolebibliotek' }, rute: '/testmodul', modul: 'testmodul' },
+      { id: 'testmodul:skyss', type: 'side', tittel: { nb: 'Skuleskyss', nn: 'Skuleskyss' }, rute: '/testmodul', modul: 'testmodul' },
     ];
   },
   async favorittbare() {

@@ -69,6 +69,20 @@ test.describe('modulregister og søk', () => {
     await expect(page.getByRole('link', { name: /Skuleskyss/ })).toBeVisible();
   });
 
+  test('treffene sier hva de er i appen, og krysset tømmer søket (eier 04.10.2026)', async ({ page }) => {
+    await page.goto('./');
+    const felt = page.getByRole('searchbox');
+    await felt.fill('fraværsgrensen');
+    await expect(page.getByRole('link', { name: /^Fraværsgrensen Kalkulator$/ })).toBeVisible();
+    await felt.fill('grunnlag for vurdering');
+    await expect(page.getByRole('link', { name: /^Grunnlag for vurdering Veiviser$/ })).toBeVisible();
+    await page.getByRole('button', { name: 'Tøm søket' }).click();
+    await expect(felt).toHaveValue('');
+    await expect(felt).toBeFocused();
+    await expect(page.locator('.sokeresultater')).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Tøm søket' })).toHaveCount(0);
+  });
+
   test('ingen treff gir melding', async ({ page }) => {
     await page.goto('./#/sok');
     await page.getByRole('searchbox').fill('xqzwvy');

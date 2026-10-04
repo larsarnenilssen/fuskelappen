@@ -25,7 +25,7 @@ export const manifest: Modulmanifest = {
     return [
       {
         id: 'vurdering:underveis-og-slutt',
-        type: 'funksjon' as const,
+        type: 'side' as const,
         tittel: begge('vurdering.underveisSlutt.tittel'),
         tekst: begge('vurdering.underveisSlutt.beskrivelse'),
         stikkord: ['underveisvurdering', 'sluttvurdering', 'standpunkt', 'halvårsvurdering', 'kompetansemål', 'vurdering'],
@@ -34,7 +34,7 @@ export const manifest: Modulmanifest = {
       },
       {
         id: 'vurdering:orden-og-oppforsel',
-        type: 'funksjon' as const,
+        type: 'side' as const,
         tittel: begge('vurdering.orden.tittel'),
         tekst: begge('vurdering.orden.beskrivelse'),
         stikkord: ['orden', 'oppførsel', 'atferd', 'skoleregler', 'Ng', 'Lg'],
@@ -43,7 +43,7 @@ export const manifest: Modulmanifest = {
       },
       {
         id: 'vurdering:fravaer',
-        type: 'funksjon' as const,
+        type: 'kalkulator' as const,
         tittel: begge('vurdering.fravaer.tittel'),
         tekst: begge('vurdering.fravaer.beskrivelse'),
         stikkord: ['fravær', 'fraværsgrense', 'fraværsgrensen', '10 prosent', '15 prosent', 'egenmelding', 'legeerklæring', 'IV', 'kalkulator'],
@@ -52,7 +52,7 @@ export const manifest: Modulmanifest = {
       },
       ...veivisere
         .filter((v) => v.gyldighet.niva === 'nasjonal')
-        .map((v) => ({ id: `vurdering:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'vurdering' })),
+        .map((v) => ({ id: `vurdering:${v.id}`, type: 'veiviser' as const, tittel: v.tittel, tekst: v.tekst, stikkord: v.stikkord, rute: veiviserRute(v.id), modul: 'vurdering' })),
     ];
   },
   async favorittbare() {

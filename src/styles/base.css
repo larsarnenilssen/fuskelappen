@@ -919,6 +919,23 @@ main {
   appearance: none;
 }
 
+.sokeboks .sokefelt input {
+  padding-right: 2.75rem;
+}
+
+/* Nettleserens eget kryss i søkefelt skjules; Sokeboks har sitt eget, som også virker i Safari på iPhone. */
+.sokeboks .sokefelt input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.sokefelt-tom {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--farge-tekst-dempet);
+}
+
 .sokefelt-ikon {
   position: absolute;
   left: 0.65rem;

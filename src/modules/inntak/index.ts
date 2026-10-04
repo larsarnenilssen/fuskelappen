@@ -24,7 +24,7 @@ export const manifest: Modulmanifest = {
     const { veivisere } = await hentInnhold();
     const tidslinje = {
       id: 'inntak:frister',
-      type: 'funksjon' as const,
+      type: 'tidslinje' as const,
       tittel: begge('inntak.frister.tittel'),
       tekst: begge('inntak.frister.beskrivelse'),
       stikkord: ['frist', 'søknadsfrist', 'tidslinje', 'inntak', '1. mars', '1. februar'],
@@ -33,7 +33,7 @@ export const manifest: Modulmanifest = {
     };
     const poeng = {
       id: 'inntak:poeng',
-      type: 'funksjon' as const,
+      type: 'kalkulator' as const,
       tittel: begge('inntak.poeng.tittel'),
       tekst: begge('inntak.poeng.beskrivelse'),
       stikkord: ['poeng', 'karakterpoeng', 'poengsum', 'snitt', 'gjennomsnitt', 'inntak', 'kalkulator'],
@@ -44,7 +44,7 @@ export const manifest: Modulmanifest = {
       .filter((v) => v.gyldighet.niva === 'nasjonal')
       .map((v) => ({
         id: `inntak:${v.id}`,
-        type: 'funksjon' as const,
+        type: 'veiviser' as const,
         tittel: v.tittel,
         tekst: v.tekst,
         stikkord: v.stikkord,

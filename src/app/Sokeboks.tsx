@@ -93,6 +93,21 @@ export function Sokeboks({ etikett, plassholder, startverdi = '', autofokus = fa
             onEndring?.(ny);
           }}
         />
+        {/* Krysset tømmer feltet, så brukeren slipper å slette tegn for tegn for å komme tilbake (eier 04.10.2026). */}
+        {sporring !== '' && (
+          <button
+            type="button"
+            class="ikonknapp sokefelt-tom"
+            aria-label={t('sok.tom')}
+            onClick={() => {
+              settSporring('');
+              onEndring?.('');
+              felt.current?.focus();
+            }}
+          >
+            <Ikon navn="lukk" />
+          </button>
+        )}
       </form>
       <p id={`${id}-status`} class="sokestatus" role="status" aria-live="polite">
         {status}
