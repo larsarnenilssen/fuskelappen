@@ -777,20 +777,166 @@ kilder:
       (avgjørelse 039). Står igjen fordi kildelisten i OPPDRAG har den. Fase 7 bruker vestland-forskrift-skulereglar.
 
   - id: vlfk-sider
-    navn: vlfk.no – sider om inntak, tilrettelegging og språkopplæring
+    navn: vestlandfylke.no – søknad og inntak
     utgiver: Vestland fylkeskommune
-    url: https://www.vlfk.no/
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/
     type: side
     niva: fylke
     fylke: "46"
     lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
     sjekkmetode: side
-    aktiv: false
+    aktiv: true
     uttrekk:
       selektor: main
     godkjent_fingeravtrykk: null
     faser: [4, 5]
-    merknad: Hvilke sider som sjekkes, bestemmes når kilden aktiveres.
+    merknad: >-
+      Inntak i Vestland: klage og klagenemnd. Adressen er flyttet fra vlfk.no til vestlandfylke.no (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-inntaksreglar
+    navn: vestlandfylke.no – inntaksreglar og opplæringsrett
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/soknad-inntak/inntaksregllar-og-opplaringsrett/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [5]
+    merknad: >-
+      Inntaksområdepoeng, som venter på sidene (fase 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-minoritetsspraklege
+    navn: vestlandfylke.no – minoritetsspråklege
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Søknad, kartlegging og frist i Vestland for særskild språkopplæring (fase 4, Språk steg 2–3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-innforingskurs
+    navn: vestlandfylke.no – innføringskurs
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/fremhevde-sider/minoritetsspraklege/innforingskurs/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Innføringskurs i Vestland (fase 4, Språk steg 5). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-tilrettelegging
+    navn: vestlandfylke.no – tilrettelegging ved læringsutfordringar
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/tilrettelegging-ved-laringsutfordringar/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [4]
+    merknad: >-
+      Rettleiingstenesta og midlertidig vedtak ved inntak (fase 4, Tilrettelegging steg 0b, 5b og 6). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-eksamen
+    navn: vestlandfylke.no – eksamen og standpunkt
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Eksamen for elever i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-klage-standpunkt
+    navn: vestlandfylke.no – klage på standpunktkarakter og karakter i orden og åtferd
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/elev/eksamen-og-standpunkt/klage-pa-standpunktkarakter-og-karakter-i-orden-og-atferd/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Hurtigklage og klage på standpunkt i Vestland (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-privatist
+    navn: vestlandfylke.no – tid og stad for privatisteksamen
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/privatist/tid-og-stad-for-eksamen/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Når datoene for muntleg eksamen for privatistar kjem (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
+
+  - id: vlfk-fagproven
+    navn: vestlandfylke.no – fagprøven
+    utgiver: Vestland fylkeskommune
+    url: https://www.vestlandfylke.no/utdanning-og-karriere/laerling/fagproven/
+    type: side
+    niva: fylke
+    fylke: "46"
+    lisens: Opphavsrett Vestland fylkeskommune. Vilkår for gjenbruk er ikke avklart. Lenkes, kopieres ikke.
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Fag- og sveineprøva i Vestland, klagenemnda for fagprøver (fase 6, pakke 3). vestlandfylke.no bryter tilkoblingen fra skymiljøet, så teksten leses fra kildesjekken i GitHub Actions
+      (artefaktet «kildetekster»). Selektoren må kanskje justeres første gang.
 
   - id: ks-fou-sfs2213
     navn: Erfaringer med arbeidstidsavtalen for undervisningspersonell (SFS 2213) – FoU-rapport for KS (Proba samfunnsanalyse, 2025)

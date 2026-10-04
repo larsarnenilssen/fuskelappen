@@ -100,6 +100,16 @@ jobs:
           else
             npm run kilder:sjekk
           fi
+      # Teksten fra kildene, så sider som ikke kan leses fra utviklingsmiljøet (f.eks. vestlandfylke.no), kan leses fra
+      # kjøringen (fase 6, pakke 3). Ligger i 14 dager.
+      - name: Last opp kildetekstene
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kildetekster
+          path: .generert/kildetekster/
+          retention-days: 14
+          if-no-files-found: ignore
       - name: Kontrolloversikt
         run: npm run kontroll:rapport
       - name: Sammendrag
