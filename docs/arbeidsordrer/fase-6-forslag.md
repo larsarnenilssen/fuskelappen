@@ -331,3 +331,13 @@ robots.txt hos eksamensplan.udir.no stenger fortsatt, og Udir har ikke API eller
 - **Vestland:** `vlfk-sider` slås på, og kildesjekken henter teksten. Oppgavene som venter på vlfk.no (inntaksområdepoeng, klagenemnd, stegene fra fase 4) tas med når teksten er hentet.
 - **Fag- og svenneprøven** bygges nå i pakke 3, med lenke til Udir.
 - **Fagarket:** Lykkes hentingen av eksamensdatoer per fag, viser fagarket eksamensdatoen (eller lenker til den på tidslinjen).
+
+### Svar fra eier (04.10.2026, runde 6)
+
+- **Oversikten:** Eksamen og fag- og svenneprøven står ved siden av hverandre, med veiviseren og tidslinjen under.
+- **Utsatt, ny og særskilt eksamen** står i én boks: det felles øverst, de tre kortene inni.
+- **Sti:** Eksamen og prøvene får en loddrett sti med nummer og datoer, og «Gjelder hele veien» for resten. Begge sidene får samme oppsett, med blå bokser øverst (antall eksamener og prøvene).
+- **Sensuren for høsten:** 4. januar 2027 fra fylkene beholdes, fordi appen skal bygge på mest mulig automatikk.
+- **Vestland:** Kildesjekken startes manuelt for å hente teksten fra vestlandfylke.no (egen PR, #88).
+- **Kalenderen** blir neste pakke: én samlet kalender for alle modulene, rullende tolv måneder eller fast skoleår (inneværende og neste når det finnes datoer, ellers generisk), passerte datoer dempet, flere filtre, tre til fire deler side om side på stor skjerm, lenker til veivisere, begreper og sider, ferdig filtrerte lenker fra sidene, og en forsideboks med de tre neste datoene som kan slås av og på eller står lukket. Grunnlag for årshjulet i fase 8.
+- **Lenken på fagarket** går til siden «Eksamen» i appen.
