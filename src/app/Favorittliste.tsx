@@ -1,8 +1,8 @@
 // Favorittene på forsiden (avgjørelse 056). Favorittsiden er tatt bort: favorittene står øverst på forsiden, eller
-// fordelt under kategoriene sine, og sorteres i «Tilpass forsiden».
+// fordelt under kategoriene sine, og sorteres der de står.
 import { useEffect, useState } from 'preact/hooks';
 import { Ikon } from '../components/Ikon.tsx';
-import { samleFavorittbare } from '../modules/register.ts';
+import { ikonForFavoritt, samleFavorittbare } from '../modules/register.ts';
 import type { Favorittbar } from '../modules/typer.ts';
 import { useTekst } from './tilstand.ts';
 
@@ -20,8 +20,12 @@ export function useFavorittbare(ider: readonly string[]): Map<string, Favorittba
   return kjente;
 }
 
-/** Favorittene som lenker, i brukerens rekkefølge. */
-export function Favorittliste({ ider }: { ider: readonly string[] }) {
+/**
+ * Favorittene som lenker, i brukerens rekkefølge, med ikonet til funksjonen eller modulen (avgjørelse 056). Med
+ * `merket` (forsiden viser alt innhold) har ikonet en liten stjerne nede til venstre, så favorittene skiller seg fra
+ * boksene i kategoriene. Med bare favoritter på forsiden står ikonet uten stjerne.
+ */
+export function Favorittliste({ ider, merket = false }: { ider: readonly string[]; merket?: boolean }) {
   const { t, malform } = useTekst();
   const kjente = useFavorittbare(ider);
   if (!kjente) return <p class="dempet">{t('app.lasterInn')}</p>;
@@ -33,7 +37,10 @@ export function Favorittliste({ ider }: { ider: readonly string[] }) {
           <li key={id} class="favoritt">
             {f ? (
               <a class="listelenke" href={`#${f.rute}`}>
-                <Ikon navn="stjerne" fylt />
+                <span class="favorittikon">
+                  <Ikon navn={ikonForFavoritt(id, f) ?? 'stjerne'} />
+                  {merket && <Ikon navn="stjerne" fylt class="favorittmerke" />}
+                </span>
                 <span class="listelenke-tekst">
                   <span class="listelenke-tittel">{f.tittel[malform]}</span>
                 </span>

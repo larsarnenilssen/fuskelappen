@@ -51,7 +51,7 @@ function TomFavoritter() {
  * der de står, så gruppen ikke flytter seg (eier 04.10.2026). Er `ider` bare en del av favorittene (under en kategori i
  * «Bare favoritter»), flyttes de innenfor delen, og de andre favorittene står der de sto.
  */
-function Favoritter({ ider }: { ider: readonly string[] }) {
+function Favoritter({ ider, merket }: { ider: readonly string[]; merket: boolean }) {
   const { t, malform } = useTekst();
   const { favoritter } = useTilstand();
   const [endre, settEndre] = useState(false);
@@ -80,7 +80,7 @@ function Favoritter({ ider }: { ider: readonly string[] }) {
           onFlytt={(fra, til) => settFavorittrekkefolge(flyttInnenfor(favoritter, ider, fra, til))}
         />
       ) : (
-        <Favorittliste ider={ider} />
+        <Favorittliste ider={ider} merket={merket} />
       )}
       {ider.length > 1 || endre ? (
         <p class="gruppe-verktoy">
@@ -132,7 +132,7 @@ export default function Forside() {
       if (bare) return null;
       return (
         <Gruppe key={id} id={id} tittel={navn(id)} lukket={lukket}>
-          {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} />}
+          {favoritter.length === 0 ? <TomFavoritter /> : <Favoritter ider={favoritter} merket />}
         </Gruppe>
       );
     }
@@ -143,7 +143,7 @@ export default function Forside() {
       if (ider.length === 0) return null;
       return (
         <Gruppe key={id} id={id} kategori={k.id} tittel={navn(id)} lukket={lukket}>
-          <Favoritter ider={ider} />
+          <Favoritter ider={ider} merket={false} />
         </Gruppe>
       );
     }

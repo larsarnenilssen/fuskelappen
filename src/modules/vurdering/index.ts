@@ -48,8 +48,8 @@ export const manifest: Modulmanifest = {
   async favorittbare() {
     const { veivisere } = await hentInnhold();
     return [
-      { id: 'vurdering:underveis-og-slutt', type: 'funksjon' as const, tittel: begge('vurdering.underveisSlutt.tittel'), rute: underveisSluttRute },
-      { id: 'vurdering:orden-og-oppforsel', type: 'funksjon' as const, tittel: begge('vurdering.orden.tittel'), rute: ordenRute },
+      { id: 'vurdering:underveis-og-slutt', type: 'funksjon' as const, tittel: begge('vurdering.underveisSlutt.tittel'), rute: underveisSluttRute, ikon: 'bok' as const },
+      { id: 'vurdering:orden-og-oppforsel', type: 'funksjon' as const, tittel: begge('vurdering.orden.tittel'), rute: ordenRute, ikon: 'person' as const },
       ...veivisere.map((v) => ({ id: `vurdering:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];
   },
