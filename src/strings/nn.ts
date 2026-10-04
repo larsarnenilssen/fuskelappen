@@ -272,7 +272,6 @@ export const nn: Tekster = {
       regelverkAntall: 'I regelverket ({antall})',
       visHeleVeien: 'Vis heile vegen ({antall} val til)',
       forrigeValg: 'Tilbake til «{steg}»',
-      tilToppen: 'Til toppen',
       faseliste: 'Fasane: {faser}',
       antallFaser: '{antall} fasar',
       malgruppe: { elever: 'For elevar', voksne: 'For vaksne' },

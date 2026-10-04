@@ -272,7 +272,6 @@ export const nb = {
       regelverkAntall: 'I regelverket ({antall})',
       visHeleVeien: 'Vis hele veien ({antall} valg til)',
       forrigeValg: 'Tilbake til «{steg}»',
-      tilToppen: 'Til toppen',
       faseliste: 'Fasene: {faser}',
       antallFaser: '{antall} faser',
       malgruppe: { elever: 'For elever', voksne: 'For voksne' },

@@ -363,12 +363,6 @@ function Prosesskart({
   );
 }
 
-/** Til toppen av siden, med fokus på sidetittelen, så tastatur og skjermleser også kommer dit. */
-function tilToppen() {
-  window.scrollTo({ top: 0, behavior: redusertBevegelse() ? 'auto' : 'smooth' });
-  document.querySelector<HTMLElement>('main h1')?.focus({ preventScroll: true });
-}
-
 /** Så mange av de siste valgene står synlige i «Veien hit» før resten legges bak en knapp. */
 const VISTE_VALG = 2;
 
@@ -679,12 +673,6 @@ export function Veiviser({ veiviser, steg, sti, sporring }: Props) {
             sti={sti}
             aapen={slutt.svar.length === 0}
           />
-          <p class="veiviser-til-toppen">
-            <button type="button" class="lenkeknapp" onClick={tilToppen}>
-              <Ikon navn="opp" class="ikon-liten" />
-              {t('komponenter.veiviser.tilToppen')}
-            </button>
-          </p>
         </div>
       </div>
     </div>

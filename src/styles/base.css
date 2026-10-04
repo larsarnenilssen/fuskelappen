@@ -4779,19 +4779,6 @@ p.fagkort-tittel {
 }
 
 .veiviser-forrige a,
-.veiviser-til-toppen .lenkeknapp {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--rom-1);
-  padding: var(--rom-1) 0;
-}
-
-.veiviser-til-toppen {
-  margin: var(--rom-4) 0 0;
-  text-align: right;
-  font-size: var(--str-s);
-}
-
 .paragraflenker .liten-overskrift {
   margin: var(--rom-3) 0 var(--rom-1);
   font-size: var(--str-s);
