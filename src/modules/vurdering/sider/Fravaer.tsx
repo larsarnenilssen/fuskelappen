@@ -250,16 +250,6 @@ function Fravaersstolpe({ g, r, fam, enhet, timer }: { g: Grenseresultat; r: Fra
           </p>
         )}
         {r.utfall !== 'innenfor' && <p class="liten">{t('vurdering.fravaer.sjekk.varsel')}</p>}
-        {/* Rett til steget i veiviseren som passer utfallet (eier 04.10.2026). */}
-        {r.utfall !== 'innenfor' && (
-          <a class="fr-neste" href={`#${veiviserRute('grunnlag-for-vurdering')}?${r.utfall === 'skjonn' ? 'steg=vu-skjonn&svar=elev.vanlig.nei.skjonn' : 'steg=vu-varsel-fravaer&svar=elev.vanlig.nei.over'}`}>
-            <span class="fr-neste-tekst">
-              <span class="fr-neste-tittel">{t(r.utfall === 'skjonn' ? 'vurdering.fravaer.nesteSkjonn' : 'vurdering.fravaer.nesteOver')}</span>
-              <span class="fr-neste-under">{t('vurdering.fravaer.nesteUnder')}</span>
-            </span>
-            <Ikon navn="hoyre" class="ikon-liten" />
-          </a>
-        )}
       </div>
       {r.helseEtterTeller > 0 && (
         <p class="merknad">
@@ -451,6 +441,16 @@ export default function Fravaer({ sporring }: SideProps) {
             <p class="dempet fr-tomt">{t('vurdering.fravaer.resultat.tom')}</p>
           )}
         </div>
+        {/* Til steget om fravær i veiviseren (eier 04.10.2026): under utregningen på mobil, og nederst i venstre spalte
+            på stor skjerm, så den ikke står alene øverst til høyre før grensen er regnet ut. */}
+        <a class="frist-inngang fr-veiviserkort" href={`#${veiviserRute('grunnlag-for-vurdering')}?steg=vu-fravaer&svar=elev.vanlig.nei`}>
+          <span class="frist-inngang-tittel">
+            <Ikon navn="veiviser" />
+            {t('vurdering.fravaer.veiviserKort')}
+          </span>
+          <span class="frist-inngang-neste">{t('vurdering.fravaer.veiviserKortTekst')}</span>
+          <Ikon navn="hoyre" class="frist-inngang-pil" />
+        </a>
       </div>
 
       {regler && regler.length > 0 && (
@@ -462,15 +462,6 @@ export default function Fravaer({ sporring }: SideProps) {
               <Kortfot kilder={r.kilder} />
             </Forklaring>
           ))}
-          {/* Til steget om fravær i veiviseren, som alltid står her (eier 04.10.2026). */}
-          <a class="frist-inngang fr-veiviserkort" href={`#${veiviserRute('grunnlag-for-vurdering')}?steg=vu-fravaer&svar=elev.vanlig.nei`}>
-            <span class="frist-inngang-tittel">
-              <Ikon navn="veiviser" />
-              {t('vurdering.fravaer.veiviserKort')}
-            </span>
-            <span class="frist-inngang-neste">{t('vurdering.fravaer.veiviserKortTekst')}</span>
-            <Ikon navn="hoyre" class="frist-inngang-pil" />
-          </a>
         </section>
       )}
     </div>

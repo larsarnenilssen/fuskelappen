@@ -6378,32 +6378,24 @@ button.frist-stripe-celle:hover {
   margin-top: var(--rom-3);
 }
 
-/* Lenken i utfallet til steget i veiviseren som passer utfallet. */
-.fr-neste {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--rom-2);
-  margin-top: var(--rom-2);
-  padding-top: var(--rom-2);
-  border-top: var(--strek) solid var(--farge-kant);
-  text-decoration: none;
+/* På stor skjerm står kortet til veiviseren nederst i venstre spalte, og resultatet går over begge radene. */
+@media (min-width: 64rem) {
+  .fravaer .kalkulator-flate {
+    grid-template-rows: auto 1fr;
+  }
+
+  .fravaer .kalkulator-resultat {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .fravaer .fr-veiviserkort {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
 }
 
-.fr-neste-tekst {
-  display: flex;
-  flex-direction: column;
-}
-
-.fr-neste-tittel {
-  font-weight: 600;
-  text-decoration: underline;
-}
-
-.fr-neste-under {
-  color: var(--farge-tekst-dempet);
-  font-size: var(--str-xs);
-}
 
 .fr-sjekk-svar {
   margin-top: var(--rom-3);
