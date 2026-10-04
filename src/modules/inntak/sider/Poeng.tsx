@@ -10,6 +10,7 @@ import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Forklaring } from '../../../components/Forklaring.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
+import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Resultatkort, type Utregningssteg } from '../../../components/Resultatkort.tsx';
 import { formaterTall, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
 import type { KildeRef } from '../../../core/innhold/skjema.ts';
@@ -243,7 +244,7 @@ export default function Poeng({ sporring }: SideProps) {
           {regler.map((r) => (
             <Forklaring key={`${r.gyldighet.niva}-${r.id}`} tittel={r.tittel[malform]}>
               <div class="brodtekst" dangerouslySetInnerHTML={{ __html: r.tekst[malform] }} />
-              <Kildeliste kilder={r.kilder} niva={3} />
+              <Kortfot kilder={r.kilder} />
             </Forklaring>
           ))}
         </section>

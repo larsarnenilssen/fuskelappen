@@ -201,8 +201,8 @@
     nb: Innføringsopplæring
     nn: Innføringsopplæring
   tekst:
-    nb: Fylkeskommunen kan gi elever med kort botid og vedtak om særskilt språkopplæring hele eller deler av opplæringen i egne grupper, klasser eller skoler. Det er et frivillig overgangstilbud for å lære norsk raskt. Vedtaket kan gjøre unntak fra læreplanene i fag og fra fag- og timefordelingen. Så lenge eleven får innføringsopplæring, har eleven rett til fritak fra vurdering med karakter, men ikke fra standpunktkarakter.
-    nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skolar. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter.
+    nb: Fylkeskommunen kan gi elever med kort botid og vedtak om særskilt språkopplæring hele eller deler av opplæringen i egne grupper, klasser eller skoler. Det er et frivillig overgangstilbud for å lære norsk raskt. Vedtaket kan gjøre unntak fra læreplanene i fag og fra fag- og timefordelingen. Så lenge eleven får innføringsopplæring, har eleven rett til fritak fra vurdering med karakter, men ikke fra standpunktkarakter. Se også [vurdering i innføringsopplæringen](#/vurdering/grunnlag-for-vurdering?steg=vu-innforing&svar=elev.innforing).
+    nn: Fylkeskommunen kan gi elevar med kort butid og vedtak om særskild språkopplæring heile eller delar av opplæringa i eigne grupper, klassar eller skolar. Det er eit frivillig overgangstilbod for å lære norsk raskt. Vedtaket kan gjere unntak frå læreplanane i fag og frå fag- og timefordelinga. Så lenge eleven får innføringsopplæring, har eleven rett til fritak frå vurdering med karakter, men ikkje frå standpunktkarakter. Sjå også [vurdering i innføringsopplæringa](#/vurdering/grunnlag-for-vurdering?steg=vu-innforing&svar=elev.innforing).
   ansvar:
     nb: Fylkeskommunen. Eleven samtykker selv når eleven er i stand til det, ellers foreldrene.
     nn: Fylkeskommunen. Eleven samtykkjer sjølv når eleven er i stand til det, elles foreldra.
@@ -243,13 +243,13 @@
     nn: Læreplanane i særskild språkopplæring
   tekst:
     nb: |-
-      Det er tre læreplaner for særskilt språkopplæring. Grunnleggende norsk og morsmål for språklige minoriteter gir ikke karakter, og er ikke kompetansegivende. Norsk for språklige minoriteter med kort botid (NOR09-05) gir karakter, og er kompetansegivende.
+      Det er tre læreplaner for særskilt språkopplæring. Grunnleggende norsk og morsmål for språklige minoriteter gir ikke karakter, og er ikke kompetansegivende. Norsk for språklige minoriteter med kort botid (NOR09-05) gir karakter, og er kompetansegivende. Hva dette betyr for vurderingen, står i [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-uten-karakter&svar=elev.sprak).
 
       Elever med særskilt språkopplæring kan velge å følge læreplanen for kort botid, hvis de har hatt høyst fire års opplæring fra og med 5. trinn i norsk grunnskole. Eleven velger selv.
 
       For voksne i modulstrukturert opplæring er det en egen læreplan i norsk og samfunnskunnskap for språklige minoriteter (GNS02-01).
     nn: |-
-      Det er tre læreplanar for særskild språkopplæring. Grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje karakter, og er ikkje kompetansegivande. Norsk for språklege minoritetar med kort butid (NOR09-05) gir karakter, og er kompetansegivande.
+      Det er tre læreplanar for særskild språkopplæring. Grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje karakter, og er ikkje kompetansegivande. Norsk for språklege minoritetar med kort butid (NOR09-05) gir karakter, og er kompetansegivande. Kva dette tyder for vurderinga, står i [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-uten-karakter&svar=elev.sprak).
 
       Elevar med særskild språkopplæring kan velje å følgje læreplanen for kort butid, dersom dei har hatt høgst fire års opplæring frå og med 5. trinn i norsk grunnskole. Eleven vel sjølv.
 

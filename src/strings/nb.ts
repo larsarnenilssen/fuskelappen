@@ -7,6 +7,7 @@ import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 import { inntakNb } from './moduler/inntak.nb.ts';
 import { tilretteleggingNb } from './moduler/tilrettelegging.nb.ts';
+import { vurderingNb } from './moduler/vurdering.nb.ts';
 
 export const nb = {
   app: {
@@ -45,6 +46,7 @@ export const nb = {
   kategorier: {
     arbeidstid: 'Arbeidstid',
     fag: 'Læreplanverket',
+    inntak: 'Inntak og opplæringstilbud',
     elev: 'Elever og opplæring',
     skolemiljo: 'Skolemiljø',
     felles: 'Oppslag',
@@ -317,6 +319,10 @@ export const nb = {
       navn: 'Tilrettelegging',
       beskrivelse: 'Tilpasset opplæring, individuell tilrettelegging og språkopplæring.',
     },
+    vurdering: {
+      navn: 'Vurdering',
+      beskrivelse: 'Grunnlag for vurdering, underveis og slutt, fritak, fravær og orden og oppførsel.',
+    },
     laereplanverket: {
       navn: 'Overordnet del',
       beskrivelse: 'Verdier, prinsipper, ferdigheter og temaer.',
@@ -348,6 +354,7 @@ export const nb = {
   laereplanverket: laereplanverketNb,
   lov: lovNb,
   tilrettelegging: tilretteleggingNb,
+  vurdering: vurderingNb,
   inntak: inntakNb,
   begreper: {
     tittel: 'Begreper',
@@ -359,6 +366,9 @@ export const nb = {
     relatert: 'Se også',
     kildetekst: 'Fra kilden ({spraak})',
     lokalt: 'Gjelder {sted}',
+    kodegrupper: {
+      tittel: 'Kodene',
+    },
     kodeliste: {
       tittel: {
         fagmerknader: 'FAM-kodene',
@@ -367,6 +377,7 @@ export const nb = {
       },
       sok: 'Søk på kode eller tekst',
       antall: '{antall} koder',
+      enKode: '1 kode',
       ingenTreff: 'Ingen gjeldende koder passer med søket.',
       utgatte: 'Utgåtte koder ({antall})',
       grunnskole: 'Grunnskole',

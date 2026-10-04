@@ -21,6 +21,10 @@ const baner = {
   klokke: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7v5l3.5 2',
   // Kontor: en mappe, for opplæringskontorene (avgjørelse 053).
   kontor: 'M4 8h16v11H4zM9 8V5.5h6V8M4 12.5h16',
+  // Inntak: en pil inn gjennom en døråpning (eier 04.10.2026).
+  inngang: 'M14 4h5.5v16H14M3.5 12H14m0 0-4-4m4 4-4 4',
+  // Ark med hake, for Vurdering (fase 6).
+  vurdering: 'M6 3.5h8.5L18 7v13.5H6zM14.5 3.5V7H18M9 13l2.2 2.2L15.5 11',
   skole: 'M3 9.5 12 5l9 4.5-9 4.5-9-4.5ZM6.5 11.5V16c1.5 1.5 3.5 2.2 5.5 2.2s4-.7 5.5-2.2v-4.5M21 9.5V15',
   dokument: 'M6 3.5h8l4 4v13H6v-17ZM14 3.5v4h4M9 12h6M9 15.5h6',
   ekstern: 'M14 4h6v6M20 4l-8.5 8.5M18 14v5.5H4.5V6H10',

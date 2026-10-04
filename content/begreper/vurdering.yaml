@@ -1,0 +1,184 @@
+# Begreper om vurdering (fase 6, pakke 1). Egne ord. Godkjent i forslaget av eier 04.10.2026.
+- id: underveisvurdering
+  type: begrep
+  tittel: { nb: "Underveisvurdering", nn: "Undervegsvurdering" }
+  lenkeord: { nb: ["underveisvurdering"], nn: ["undervegsvurdering"] }
+  tekst:
+    nb: "Underveisvurdering er all vurdering i et fag før opplæringen i faget er slutt, også halvårsvurderingen. Den skal være en del av opplæringen og fremme læring. Eleven skal være med og vurdere eget arbeid, forstå hva som skal læres, få vite hva hen mestrer og få veiledning om hvordan hen kan komme videre. Det er ikke klagerett på underveisvurdering."
+    nn: "Undervegsvurdering er all vurdering i eit fag før opplæringa i faget er slutt, også halvårsvurderinga. Ho skal vere ein del av opplæringa og fremje læring. Eleven skal vere med og vurdere eige arbeid, forstå kva som skal lærast, få vite kva hen meistrar og få rettleiing om korleis hen kan kome vidare. Det er ikkje klagerett på undervegsvurdering."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-1", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-11", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/ii.-undervegsvurdering/-9-11-undervegsvurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at det ikke er klagerett på underveisvurdering (merknaden til § 10-1)?"
+  stikkord: [vurdering, underveis, formativ vurdering]
+  relatert: [halvarsvurdering, sluttvurdering]
+
+- id: halvarsvurdering
+  type: begrep
+  tittel: { nb: "Halvårsvurdering", nn: "Halvårsvurdering" }
+  tekst:
+    nb: "Halvårsvurdering er en del av underveisvurderingen. Den gis midt i opplæringsperioden, og ved slutten av skoleåret når faget fortsetter. Fra 8. trinn får eleven halvårsvurdering både med og uten karakter. Halvårsvurdering med karakter er skriftlig, kan ikke endres etter at den er ført og føres ikke på vitnemålet. Når en elev ikke fullfører et fag, føres halvårsvurderingen fra siste fullførte skoleår på kompetansebeviset."
+    nn: "Halvårsvurdering er ein del av undervegsvurderinga. Ho blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når faget held fram. Frå 8. trinn får eleven halvårsvurdering både med og utan karakter. Halvårsvurdering med karakter er skriftleg, kan ikkje endrast etter at ho er ført og blir ikkje ført på vitnemålet. Når ein elev ikkje fullfører eit fag, blir halvårsvurderinga frå siste fullførte skoleår ført på kompetansebeviset."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-52 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-52" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-9", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-9-system-for-foring-av-karakterar-og-fravar/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at halvårsvurdering med karakter ikke kan endres etter at den er ført (merknaden til § 9-9)?"
+  stikkord: [halvår, vurdering, karakter]
+  relatert: [underveisvurdering, standpunktkarakter]
+
+- id: sluttvurdering
+  type: begrep
+  tittel: { nb: "Sluttvurdering", nn: "Sluttvurdering" }
+  tekst:
+    nb: "Sluttvurdering gir informasjon om kompetansen når opplæringen i faget er slutt. I videregående er sluttvurderingene standpunktkarakterer, eksamenskarakterer og karakterer på fag- eller svenneprøve, praksisbrevprøve og kompetanseprøve. Sluttvurderingen føres på vitnemålet eller kompetansebeviset, og det er klagerett."
+    nn: "Sluttvurdering gir informasjon om kompetansen når opplæringa i faget er slutt. I vidaregåande er sluttvurderingane standpunktkarakterar, eksamenskarakterar og karakterar på fag- eller sveineprøve, praksisbrevprøve og kompetanseprøve. Sluttvurderinga blir ført på vitnemålet eller kompetansebeviset, og det er klagerett."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-15", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-15" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-1", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er listen over sluttvurderinger i videregående fullstendig (§ 9-15 tredje ledd)?"
+  stikkord: [sluttvurdering, standpunkt, eksamen]
+  relatert: [standpunktkarakter, underveisvurdering]
+
+- id: standpunktkarakter
+  type: begrep
+  tittel: { nb: "Standpunktkarakter", nn: "Standpunktkarakter" }
+  lenkeord: { nb: ["standpunktkarakter", "standpunkt"], nn: ["standpunktkarakter", "standpunkt"] }
+  tekst:
+    nb: "Standpunktkarakteren er faglærerens sluttvurdering av den samlede kompetansen eleven har når opplæringen i faget er slutt. Eleven skal ha fått vise kompetansen på flere og varierte måter, og karakteren settes så sent som mulig, senest dagen før sensur når eleven har eksamen i faget. Den skal ikke være et gjennomsnitt av karakterer fra underveisvurderingen. Eleven kan klage på hvordan den er satt, innen 10 dager."
+    nn: "Standpunktkarakteren er sluttvurderinga til faglæraren av den samla kompetansen eleven har når opplæringa i faget er slutt. Eleven skal ha fått vise kompetansen på fleire og varierte måtar, og karakteren blir sett så seint som mogleg, seinast dagen før sensur når eleven har eksamen i faget. Han skal ikkje vere eit gjennomsnitt av karakterar frå undervegsvurderinga. Eleven kan klage på korleis han er sett, innan 10 dagar."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-16", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iii.-sluttvurdering/-9-16-standpunktkarakterar-i-fag/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at eleven bare kan klage på hvordan karakteren er satt, ikke på karakteren i seg selv (merknaden til § 10-4)?"
+  stikkord: [standpunkt, karakter, sluttvurdering]
+  relatert: [sluttvurdering, ikke-vurderingsgrunnlag]
+
+- id: ikke-vurderingsgrunnlag
+  type: begrep
+  tittel: { nb: "Ikke vurderingsgrunnlag (IV)", nn: "Ikkje vurderingsgrunnlag (IV)" }
+  lenkeord: { nb: ["ikke vurderingsgrunnlag", "IV"], nn: ["ikkje vurderingsgrunnlag", "IV"] }
+  tekst:
+    nb: "IV (ikke vurderingsgrunnlag) føres når en elev ikke får standpunktkarakter i et fag, fordi faglæreren ikke har nok grunnlag eller eleven har overskredet fraværsgrensen. Rektor selv fatter vedtaket, og eleven skal ha fått varsel. Ved overskredet fraværsgrense føres også FAM51. Har eleven hatt eksamen i faget, annulleres den. Eleven kan klage på vedtaket innen 10 dager. IV føres også i rubrikken for eksamenskarakter ved bortvisning fra eksamen eller juks."
+    nn: "IV (ikkje vurderingsgrunnlag) blir ført når ein elev ikkje får standpunktkarakter i eit fag, fordi faglæraren ikkje har nok grunnlag eller eleven har overskride fråværsgrensa. Rektor sjølv gjer vedtaket, og eleven skal ha fått varsel. Ved overskriden fråværsgrense blir også FAM51 ført. Har eleven hatt eksamen i faget, blir han annullert. Eleven kan klage på vedtaket innan 10 dagar. IV blir også ført i rubrikken for eksamenskarakter ved bortvising frå eksamen eller juks."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-41", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-41" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-5" }
+    - { id: udir-regbok-karakterer, punkt: "B26 Karakterer og andre vurderingsuttrykk", url: "https://regbok.udir.no/felt/?Id=1021153" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.3 Føring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å nevne IV ved bortvisning og juks (registreringshåndboken B26)?"
+  stikkord: [IV, ikke vurderingsgrunnlag, standpunkt, fravær, FAM51]
+  relatert: [standpunktkarakter, fravaersgrensen, karakterer-og-vurderingsuttrykk]
+
+- id: fravaersgrensen
+  type: begrep
+  tittel: { nb: "Fraværsgrensen", nn: "Fråværsgrensa" }
+  lenkeord: { nb: ["fraværsgrense", "fraværsgrensen"], nn: ["fråværsgrense", "fråværsgrensa"] }
+  tekst:
+    nb: "Fraværsgrensen sier at en elev i videregående skole som har fravær i mer enn 10 prosent av årstimetallet i et fag, ikke kan få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i forskriften, for eksempel velferd eller sykdom etter at grensen er nådd, teller ikke. Rektor selv kan la en elev med opptil 15 prosent egenmeldt eller udokumentert fravær få karakter når det er klart urimelig at grensen skal gjelde. Grensen gjelder ikke lærlinger, lærekandidater, praksisbrevkandidater og voksne."
+    nn: "Fråværsgrensa seier at ein elev i vidaregåande skole som har fråvær i meir enn 10 prosent av årstimetalet i eit fag, ikkje kan få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i forskrifta, til dømes velferd eller sjukdom etter at grensa er nådd, tel ikkje. Rektor sjølv kan la ein elev med opptil 15 prosent eigenmeldt eller udokumentert fråvær få karakter når det er klart urimeleg at grensa skal gjelde. Grensa gjeld ikkje lærlingar, lærekandidatar, praksisbrevkandidatar og vaksne."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "1. Innledning – fraværsgrensen i korte trekk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/1.-innledning---fravarsgrensen-i-korte-trekk/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "2. Hvem gjelder fraværsgrensen for", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/2.-hvem-gjelder-fravarsgrensen-for/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-8 og rundskrivet riktig og ikke misvisende?"
+  stikkord: [fravær, 10 prosent, 15 prosent, egenmelding]
+  relatert: [ikke-vurderingsgrunnlag]
+
+- id: fritak-fra-vurdering-med-karakter
+  type: begrep
+  tittel: { nb: "Fritak fra vurdering med karakter", nn: "Fritak frå vurdering med karakter" }
+  lenkeord: { nb: ["fritak fra vurdering med karakter"], nn: ["fritak frå vurdering med karakter"] }
+  tekst:
+    nb: "Fritak fra vurdering med karakter betyr at eleven får vurdering uten karakter i et fag, og ikke skal ha eksamen i faget. I videregående kan det gis i sidemålet, i fremmedspråk på studieforberedende, i kroppsøving og så lenge eleven får innføringsopplæring, når vilkårene er oppfylt. Eleven skal få veiledning om hva fritaket betyr, før det gis. Fritak fra vurdering er ikke det samme som fritak fra opplæring."
+    nn: "Fritak frå vurdering med karakter tyder at eleven får vurdering utan karakter i eit fag, og ikkje skal ha eksamen i faget. I vidaregåande kan det givast i sidemålet, i framandspråk på studieførebuande, i kroppsøving og så lenge eleven får innføringsopplæring, når vilkåra er oppfylte. Eleven skal få rettleiing om kva fritaket inneber, før det blir gitt. Fritak frå vurdering er ikkje det same som fritak frå opplæring."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-18", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-18" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-20", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-20" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-21", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-21" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-22", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-22" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-23", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-23" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at innføringsopplæringen ikke gir fritak fra standpunkt i videregående (§ 9-20 andre ledd), slik veiviseren sier?"
+  stikkord: [fritak, sidemål, fremmedspråk, kroppsøving]
+  relatert: [innforingsopplaering]
+
+- id: orden-og-oppforsel
+  type: begrep
+  tittel: { nb: "Orden og oppførsel", nn: "Orden og oppførsel" }
+  lenkeord: { nb: ["orden og oppførsel"], nn: ["orden og oppførsel"] }
+  tekst:
+    nb: "Elevene får karakter i orden og i oppførsel, med skolereglene som grunnlag. Karakterene er God (G), Nokså god (Ng) og Lite god (Lg). Kompetanse i fag skal ikke trekkes inn, og orden og oppførsel skal heller ikke trekkes inn i vurderingen i fag. Eleven skal varsles når hen står i fare for Ng eller Lg, og kan klage på standpunktkarakteren."
+    nn: "Elevane får karakter i orden og i oppførsel, med skolereglane som grunnlag. Karakterane er God (G), Nokså god (Ng) og Lite god (Lg). Kompetanse i fag skal ikkje trekkjast inn, og orden og oppførsel skal heller ikkje trekkjast inn i vurderinga i fag. Eleven skal varslast når hen står i fare for Ng eller Lg, og kan klage på standpunktkarakteren."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-2" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-4" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det tydelig at orden og oppførsel og vurderingen i fag holdes adskilt (eier 04.10.2026)?"
+  stikkord: [orden, oppførsel, atferd, G, Ng, Lg]
+  relatert: [karakterer-og-vurderingsuttrykk]
+
+- id: karakterer-og-vurderingsuttrykk
+  type: begrep
+  tittel: { nb: "Karakterer og vurderingsuttrykk", nn: "Karakterar og vurderingsuttrykk" }
+  lenkeord: { nb: ["vurderingsuttrykk", "karakterkode"], nn: ["vurderingsuttrykk", "karakterkode"] }
+  tekst:
+    nb: "Kodene skolene fører for karakterer og andre vurderingsuttrykk i videregående opplæring, for orden og oppførsel, og for karakterstatus når en karakter endres. Kodene står i Udirs registreringshåndbok og brukes i de skoleadministrative systemene og VIGO. Søk på kode eller tekst. Forklaringene er korte; reglene står i opplæringsforskrifta."
+    nn: "Kodane skolane fører for karakterar og andre vurderingsuttrykk i vidaregåande opplæring, for orden og oppførsel, og for karakterstatus når ein karakter blir endra. Kodane står i registreringshandboka til Udir og blir brukte i dei skoleadministrative systema og VIGO. Søk på kode eller tekst. Forklaringane er korte; reglane står i opplæringsforskrifta."
+  kilder:
+    - { id: udir-regbok-karakterer, punkt: "B26 Karakterer og andre vurderingsuttrykk", url: "https://regbok.udir.no/felt/?Id=1021153" }
+    - { id: udir-regbok-oversikt, punkt: "B23 Karakterstatus og B25 Orden og oppførsel", url: "https://regbok.udir.no/oversikt" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Registreringshåndboken B25 skriver «klare avvik» og «ekstraordinære tilfeller», mens § 9-4 skriver «store negative avvik» og «særleg store negative avvik». Er det riktig å følge forskriften?"
+    - "Er forklaringene til hver kode riktige og korte nok?"
+  stikkord: [karakter, IV, IM, VO, fritatt, deltatt, karakterstatus, orden, oppførsel]
+  relatert: [ikke-vurderingsgrunnlag, orden-og-oppforsel, fagmerknader]
+  kodegrupper:
+    - id: karakterer
+      tittel: { nb: Karakterer og vurderingsuttrykk, nn: Karakterar og vurderingsuttrykk }
+      koder:
+        - { kode: "1–6", navn: { nb: "Tallkarakterer", nn: "Talkarakterar" }, tekst: { nb: "6 er framifrå, 1 er svært låg kompetanse. Faget er bestått med 2 eller bedre.", nn: "6 er framifrå, 1 er svært låg kompetanse. Faget er bestått med 2 eller betre." } }
+        - { kode: "B", navn: { nb: "Bestått", nn: "Bestått" }, tekst: { nb: "I fag der læreplanen sier bestått eller ikke bestått i stedet for tallkarakter.", nn: "I fag der læreplanen seier bestått eller ikkje bestått i staden for talkarakter." } }
+        - { kode: "IB", navn: { nb: "Ikke bestått", nn: "Ikkje bestått" }, tekst: { nb: "I fag der læreplanen sier bestått eller ikke bestått. Skal ikke stå på vitnemål i fag som gir kompetansen.", nn: "I fag der læreplanen seier bestått eller ikkje bestått. Skal ikkje stå på vitnemål i fag som gir kompetansen." } }
+        - { kode: "D", navn: { nb: "Deltatt", nn: "Delteke" }, tekst: { nb: "I fag der læreplanen sier deltatt. Uten grunnlag for vurdering føres stiplet linje.", nn: "I fag der læreplanen seier delteke. Utan grunnlag for vurdering blir det ført stipla linje." } }
+        - { kode: "F", navn: { nb: "Fritatt", nn: "Friteken" }, tekst: { nb: "Eleven har fritak i faget.", nn: "Eleven har fritak i faget." } }
+        - { kode: "GK", navn: { nb: "Godkjent", nn: "Godkjend" }, tekst: { nb: "Brukes ved realkompetansevurdering.", nn: "Blir brukt ved realkompetansevurdering." } }
+        - { kode: "IG", navn: { nb: "Ikke godkjent", nn: "Ikkje godkjend" }, tekst: { nb: "For voksne som er realkompetansevurdert, når ikke hele faget er godkjent.", nn: "For vaksne som er realkompetansevurderte, når ikkje heile faget er godkjent." } }
+        - { kode: "IV", navn: { nb: "Ikke vurderingsgrunnlag", nn: "Ikkje vurderingsgrunnlag" }, tekst: { nb: "Ikke grunnlag for å sette karakter, eller overskredet fraværsgrense. Også ved bortvisning fra eksamen og juks.", nn: "Ikkje grunnlag for å setje karakter, eller overskriden fråværsgrense. Også ved bortvising frå eksamen og juks." } }
+        - { kode: "IM", navn: { nb: "Ikke møtt", nn: "Ikkje møtt" }, tekst: { nb: "Eleven eller privatisten møtte ikke til eksamen, uansett grunn. FAM29 eller FAM39 føres i tillegg.", nn: "Eleven eller privatisten møtte ikkje til eksamen, same kva grunnen er. FAM29 eller FAM39 blir ført i tillegg." } }
+        - { kode: "VO", navn: { nb: "Vurdert etter individuell opplæringsplan", nn: "Vurdert etter individuell opplæringsplan" }, tekst: { nb: "Når planen ikke gir grunnlag for standpunktkarakter. Kompetansen står i et vedlegg til kompetansebeviset.", nn: "Når planen ikkje gir grunnlag for standpunktkarakter. Kompetansen står i eit vedlegg til kompetansebeviset." } }
+    - id: orden-og-oppforsel
+      tittel: { nb: Orden og oppførsel, nn: Orden og oppførsel }
+      koder:
+        - { kode: "G", navn: { nb: "God", nn: "God" }, tekst: { nb: "Vanlig god orden og vanlig god oppførsel.", nn: "Vanleg god orden og vanleg god oppførsel." } }
+        - { kode: "Ng", navn: { nb: "Nokså god", nn: "Nokså god" }, tekst: { nb: "Store negative avvik fra vanlig god orden og oppførsel. Eleven skal ha fått varsel.", nn: "Store negative avvik frå vanleg god orden og oppførsel. Eleven skal ha fått varsel." } }
+        - { kode: "Lg", navn: { nb: "Lite god", nn: "Lite god" }, tekst: { nb: "Særlig store negative avvik fra vanlig god orden og oppførsel. Eleven skal ha fått varsel.", nn: "Særleg store negative avvik frå vanleg god orden og oppførsel. Eleven skal ha fått varsel." } }
+    - id: karakterstatus
+      tittel: { nb: Karakterstatus, nn: Karakterstatus }
+      koder:
+        - { kode: "E", navn: { nb: "Endring på grunn av feilføring", nn: "Endring på grunn av feilføring" }, tekst: { nb: "Bare ved reell feilføring, før eleven har fått vite karakteren.", nn: "Berre ved reell feilføring, før eleven har fått vite karakteren." } }
+        - { kode: "K", navn: { nb: "Klage på karakteren", nn: "Klage på karakteren" }, tekst: { nb: "Karakteren er endret etter klage.", nn: "Karakteren er endra etter klage." } }
+        - { kode: "S", navn: { nb: "Særskilt eksamen", nn: "Særskild eksamen" }, tekst: { nb: "Karakter fra særskilt eksamen.", nn: "Karakter frå særskild eksamen." } }
+        - { kode: "N", navn: { nb: "Ny eksamen", nn: "Ny eksamen" }, tekst: { nb: "Karakter fra ny eksamen.", nn: "Karakter frå ny eksamen." } }
+        - { kode: "U", navn: { nb: "Utsatt eksamen", nn: "Utsett eksamen" }, tekst: { nb: "Karakter fra utsatt eksamen.", nn: "Karakter frå utsett eksamen." } }

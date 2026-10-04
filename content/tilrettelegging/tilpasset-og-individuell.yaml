@@ -393,8 +393,8 @@
     nn: Utan ugrunna opphald. Er det ikkje gjort vedtak innan ein månad etter at den sakkunnige vurderinga er motteken, skal eleven eller foreldra få eit førebels svar. Utan sakkunnig vurdering blir månaden rekna frå førespurnaden.
   fristKort: { nb: "Foreløpig svar: 1 måned", nn: "Førebels svar: 1 månad" }
   forklaring:
-    nb: Vedtaket kan gjelde for mer enn ett år hvis behovet er stabilt. Varigheten må stå tydelig i vedtaket. Ber eleven eller foreldrene om fritak fra vurdering med karakter, gjelder det i videregående bare sidemålet.
-    nn: Vedtaket kan gjelde for meir enn eitt år dersom behovet er stabilt. Varigheita må stå tydeleg i vedtaket. Ber eleven eller foreldra om fritak frå vurdering med karakter, gjeld det i vidaregåande berre sidemålet.
+    nb: Vedtaket kan gjelde for mer enn ett år hvis behovet er stabilt. Varigheten må stå tydelig i vedtaket. Ber eleven eller foreldrene om fritak fra vurdering med karakter, gjelder det i videregående bare sidemålet. Se [Fritak i sidemålet](#/vurdering/grunnlag-for-vurdering?steg=vu-fritak-sidemal&svar=elev.vanlig.sidemal).
+    nn: Vedtaket kan gjelde for meir enn eitt år dersom behovet er stabilt. Varigheita må stå tydeleg i vedtaket. Ber eleven eller foreldra om fritak frå vurdering med karakter, gjeld det i vidaregåande berre sidemålet. Sjå [Fritak i sidemålet](#/vurdering/grunnlag-for-vurdering?steg=vu-fritak-sidemal&svar=elev.vanlig.sidemal).
   paragrafer: [opplaeringslova/11-6, opplaeringslova/11-7, forvaltningsloven/11a, forvaltningsloven/24]
   sporsmal:
     tekst:
@@ -425,8 +425,8 @@
     nb: Individuell opplæringsplan (IOP)
     nn: Individuell opplæringsplan (IOP)
   tekst:
-    nb: Skolen lager en individuell opplæringsplan for elever som får individuelt tilrettelagt opplæring. Planen bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den kan ikke gi eleven andre rettigheter enn vedtaket. Planen skal være nyttig i hverdagen, ikke et stort dokument.
-    nn: Skolen lagar ein individuell opplæringsplan for elevar som får individuelt tilrettelagd opplæring. Planen byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han kan ikkje gi eleven andre rettar enn vedtaket. Planen skal vere nyttig i kvardagen, ikkje eit stort dokument.
+    nb: Skolen lager en individuell opplæringsplan for elever som får individuelt tilrettelagt opplæring. Planen bygger på vedtaket og sier hva som er målene, innholdet og hvordan opplæringen skal gjennomføres. Den kan ikke gi eleven andre rettigheter enn vedtaket. Planen skal være nyttig i hverdagen, ikke et stort dokument. Hvordan eleven vurderes, står i veiviseren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop).
+    nn: Skolen lagar ein individuell opplæringsplan for elevar som får individuelt tilrettelagd opplæring. Planen byggjer på vedtaket og seier kva som er måla, innhaldet og korleis opplæringa skal gjennomførast. Han kan ikkje gi eleven andre rettar enn vedtaket. Planen skal vere nyttig i kvardagen, ikkje eit stort dokument. Korleis eleven blir vurdert, står i vegvisaren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering?steg=vu-iop&svar=elev.iop).
   ansvar:
     nb: Skolen, i samarbeid med eleven og foreldrene. Kontaktlæreren og faglærerne bruker planen.
     nn: Skolen, i samarbeid med eleven og foreldra. Kontaktlæraren og faglærarane brukar planen.

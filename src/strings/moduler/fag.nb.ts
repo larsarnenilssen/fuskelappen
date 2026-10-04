@@ -120,6 +120,7 @@ export const fagNb = {
     kompetansemaal: 'Kompetansemål',
     underveis: 'Underveisvurdering',
     standpunktvurdering: 'Standpunktvurdering',
+    tilVurdering: 'Underveis- og sluttvurdering i faget',
     vurderingsordningLaereplan: 'Vurderingsordning i læreplanen',
     ingenMaal: 'Læreplanen har ingen kompetansemål for faget i Grep.',
     erstatter: 'Erstatter',

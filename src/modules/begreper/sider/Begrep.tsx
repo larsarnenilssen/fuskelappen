@@ -9,6 +9,7 @@ import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { beregnStatus, velgSynlige } from '../../../core/innhold/status.ts';
 import type { SideProps } from '../../typer.ts';
 import { hentBegreper } from '../innhold.ts';
+import { Kodegrupper } from '../Kodegrupper.tsx';
 import { Kodeliste } from '../Kodeliste.tsx';
 
 export default function Begrep({ parametre, sporring }: SideProps) {
@@ -62,6 +63,7 @@ export default function Begrep({ parametre, sporring }: SideProps) {
         </blockquote>
       )}
       {begrep.kodeliste && <Kodeliste liste={begrep.kodeliste} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
+      {'kodegrupper' in begrep && begrep.kodegrupper && <Kodegrupper grupper={begrep.kodegrupper} sti={`/begreper/${begrep.id}`} sporring={sporring} />}
       <Kildeliste kilder={begrep.kilder} />
       {relaterte.length > 0 && (
         <section>

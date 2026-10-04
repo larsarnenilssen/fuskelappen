@@ -40,6 +40,19 @@ describe('modulregisteret', () => {
     expect(f.get('begreper:testbegrep-skolemiljo')?.type).toBe('begrep');
   });
 
+  it('hver stjerneknapp i modulene har en favoritt som finnes, ellers står den som «ikke lenger tilgjengelig»', async () => {
+    const f = await samleFavorittbare();
+    // Faste id-er i koden, f.eks. id="inntak:frister".
+    const kilder = import.meta.glob('../../src/modules/*/**/*.tsx', { query: '?raw', import: 'default', eager: true }) as Record<string, string>;
+    const faste = Object.values(kilder).flatMap((tekst) => [...tekst.matchAll(/<FavorittKnapp\s+id="([^"]+)"/g)].map((m) => m[1] ?? ''));
+    expect(faste.length).toBeGreaterThan(0);
+    for (const id of faste) expect(f.has(id), id).toBe(true);
+    // Id-er som bygges av data: veiviserne, kalkulatorene, fagene og begrepene.
+    for (const id of ['inntak:rett-inntak-soknad', 'tilrettelegging:tilpasset-og-individuell', 'vurdering:grunnlag-for-vurdering', 'arbeidstid:beskjeftigelse', 'begreper:standpunktkarakter']) {
+      expect(f.has(id), id).toBe(true);
+    }
+  });
+
   it('kjernesidene er søkbare på begge målformer', () => {
     for (const o of kjerneoppforinger()) {
       expect(o.tittel.nb.length).toBeGreaterThan(0);

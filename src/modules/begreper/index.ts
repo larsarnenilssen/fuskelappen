@@ -43,7 +43,23 @@ export const manifest: Modulmanifest = {
       modul: 'begreper',
       ...(b.gyldighet.niva === 'nasjonal' ? {} : { fylke: b.gyldighet.fylke }),
     }));
-    return [...begreper, ...koder];
+    // Kodene i kodegruppene (f.eks. karakterer og vurderingsuttrykk) er søkbare hver for seg (eier 04.10.2026).
+    const kodegrupper = (await unikeBegreper()).flatMap((b) =>
+      'kodegrupper' in b && b.kodegrupper
+        ? b.kodegrupper.flatMap((g) =>
+            g.koder.map((k) => ({
+              id: `kode:${b.id}:${g.id}:${k.kode}`,
+              type: 'begrep' as const,
+              tittel: { nb: `${k.kode} ${k.navn.nb}`, nn: `${k.kode} ${k.navn.nn}` },
+              tekst: k.tekst,
+              stikkord: [k.kode, g.tittel.nb, g.tittel.nn],
+              rute: `/begreper/${b.id}?q=${encodeURIComponent(k.kode)}`,
+              modul: 'begreper',
+            })),
+          )
+        : [],
+    );
+    return [...begreper, ...koder, ...kodegrupper];
   },
   async favorittbare() {
     return (await unikeBegreper()).map((b) => ({

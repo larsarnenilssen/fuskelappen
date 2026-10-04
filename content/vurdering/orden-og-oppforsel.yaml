@@ -1,0 +1,111 @@
+# Orden og oppførsel (fase 6, pakke 1). Eget stoff, ikke blandet med vurderingen i fag (eier 04.10.2026). Egne ord.
+- id: oo-grunnlag
+  type: forklaring
+  tittel:
+    nb: "Grunnlaget er skolereglene"
+    nn: "Grunnlaget er skolereglane"
+  tekst:
+    nb: "Vurderingen i orden og oppførsel skal fremme sosial læring og et trygt og godt skolemiljø. Grunnlaget er skolereglene, og elevene skal være kjent med dem. Orden handler om å være punktlig og forberedt og følge opp arbeid. Oppførsel handler om å vise hensyn og respekt for andre. Kompetanse i fag skal ikke trekkes inn, og det skal tas hensyn til elevens forutsetninger. Enkelthendelser skal ikke veie tungt, med mindre de er særlig klanderverdige eller grove."
+    nn: "Vurderinga i orden og oppførsel skal fremje sosial læring og eit trygt og godt skolemiljø. Grunnlaget er skolereglane, og elevane skal vere kjende med dei. Orden handlar om å vere punktleg og førebudd og følgje opp arbeid. Oppførsel handlar om å vise omsyn og respekt for andre. Kompetanse i fag skal ikkje trekkjast inn, og det skal takast omsyn til føresetnadene til eleven. Enkelthendingar skal ikkje vege tungt, med mindre dei er særleg klanderverdige eller grove."
+  paragrafer: [opplaeringsforskrifta/9-2, opplaeringslova/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-2" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-2", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-2-formalet-med-og-grunnlaget-for-vurdering-i-orden-og-i-oppforsel/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-2 riktig og dekkende?"
+
+- id: oo-karakterer
+  type: forklaring
+  tittel:
+    nb: "Karakterene"
+    nn: "Karakterane"
+  tekst:
+    nb: "Karakterene er God (G) for vanlig god orden og oppførsel, Nokså god (Ng) for store negative avvik, og Lite god (Lg) for særlig store negative avvik."
+    nn: "Karakterane er God (G) for vanleg god orden og oppførsel, Nokså god (Ng) for store negative avvik, og Lite god (Lg) for særleg store negative avvik."
+  paragrafer: [opplaeringsforskrifta/9-4]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-4", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-4" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «store negative avvik» og «særlig store negative avvik» gjengitt riktig etter § 9-4?"
+
+- id: oo-underveis
+  type: forklaring
+  tittel:
+    nb: "Underveisvurdering og halvårsvurdering"
+    nn: "Undervegsvurdering og halvårsvurdering"
+  tekst:
+    nb: "Eleven får jevnlig underveisvurdering i orden og oppførsel, med veiledning om hva som er god orden og oppførsel. Halvårsvurdering gis midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikke er i siste år. Kontaktlæreren gir den, i samråd med de andre lærerne."
+    nn: "Eleven får jamleg undervegsvurdering i orden og oppførsel, med rettleiing om kva som er god orden og oppførsel. Halvårsvurdering blir gitt midt i opplæringsperioden, og ved slutten av skoleåret når eleven ikkje er i siste år. Kontaktlæraren gir henne, i samråd med dei andre lærarane."
+  paragrafer: [opplaeringsforskrifta/9-12, opplaeringsforskrifta/9-14]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-12", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-12" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-14", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-14" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-12 og § 9-14 riktig?"
+
+- id: oo-varsel
+  type: forklaring
+  tittel:
+    nb: "Varsel om Ng eller Lg"
+    nn: "Varsel om Ng eller Lg"
+  tekst:
+    nb: "Står eleven i fare for å få Ng eller Lg ved halvårsvurderingen eller i standpunkt, skal eleven varsles, og foreldrene hvis eleven er under 18. Varselet skal gi eleven mulighet til å forbedre seg. Får eleven en nedsatt karakter som sanksjon for en enkelthendelse etter skolereglene, trengs det ikke varsel."
+    nn: "Står eleven i fare for å få Ng eller Lg ved halvårsvurderinga eller i standpunkt, skal eleven varslast, og foreldra dersom eleven er under 18. Varselet skal gi eleven høve til å betre seg. Får eleven ein nedsett karakter som sanksjon for ei enkelthending etter skolereglane, trengst det ikkje varsel."
+  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/9-17]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-7 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-17 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-17" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er unntaket for sanksjon for en enkelthendelse gjengitt riktig etter § 9-17 fjerde ledd?"
+
+- id: oo-standpunkt
+  type: forklaring
+  tittel:
+    nb: "Standpunkt"
+    nn: "Standpunkt"
+  tekst:
+    nb: "Når opplæringsløpet i videregående skole er slutt, settes én standpunktkarakter i orden og én i oppførsel, etter en helhetlig vurdering av hele opplæringstiden. Rektor må drøfte karakterene med lærerne før de settes."
+    nn: "Når opplæringsløpet i vidaregåande skole er slutt, blir det sett éin standpunktkarakter i orden og éin i oppførsel, etter ei heilskapleg vurdering av heile opplæringstida. Rektor må drøfte karakterane med lærarane før dei blir sette."
+  paragrafer: [opplaeringsforskrifta/9-17]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-17", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-17" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at standpunkt i orden og oppførsel bare settes ved slutten av opplæringsløpet i videregående?"
+
+- id: oo-klage
+  type: forklaring
+  tittel:
+    nb: "Klage"
+    nn: "Klage"
+  tekst:
+    nb: "Eleven kan klage på standpunktkarakteren i orden og oppførsel innen 10 dager. Skolen vurderer klagen først og kan sette karakteren opp. Statsforvalteren er klageinstans og kan justere karakteren opp eller ned."
+    nn: "Eleven kan klage på standpunktkarakteren i orden og oppførsel innan 10 dagar. Skolen vurderer klaga først og kan setje karakteren opp. Statsforvaltaren er klageinstans og kan justere karakteren opp eller ned."
+  paragrafer: [opplaeringsforskrifta/10-6, opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-6", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at statsforvalteren kan justere karakteren både opp og ned (§ 10-6 tredje ledd)?"
+
+- id: oo-vestland
+  type: forklaring
+  tittel:
+    nb: "Skulereglane i Vestland"
+    nn: "Skulereglane i Vestland"
+  tekst:
+    nb: "Skulereglane i Vestland sier at det skal gjøres en helhetlig vurdering av eleven opp mot skulereglane over en lengre periode, og at eleven og foreldrene til elever under 18 har rett på skriftlig varsel når eleven kan få Ng eller Lg."
+    nn: "Skulereglane i Vestland seier at det skal gjerast ei heilskapleg vurdering av eleven opp mot skulereglane over ein lengre periode, og at eleven og foreldra til elevar under 18 har rett på skriftleg varsel når eleven kan få Ng eller Lg."
+  paragrafer: [vestland-skulereglar/11]
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  kilder:
+    - { id: vestland-forskrift-skulereglar, punkt: "§ 11 Vurdering i orden og oppførsel" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 11 i skulereglane riktig?"

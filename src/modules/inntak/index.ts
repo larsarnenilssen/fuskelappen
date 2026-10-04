@@ -10,8 +10,8 @@ export const manifest: Modulmanifest = {
   id: 'inntak',
   navn: 'moduler.inntak.navn',
   beskrivelse: 'moduler.inntak.beskrivelse',
-  ikon: 'skole',
-  kategori: 'elev',
+  ikon: 'inngang',
+  kategori: 'inntak',
   rekkefolge: 5,
   ruter: [
     { sti: '/inntak', tittel: 'inntak.tittel', side: () => import('./sider/Oversikt.tsx') },
@@ -55,6 +55,7 @@ export const manifest: Modulmanifest = {
   async favorittbare() {
     const { veivisere } = await hentInnhold();
     return [
+      { id: 'inntak:frister', type: 'funksjon' as const, tittel: begge('inntak.frister.tittel'), rute: fristerRute },
       { id: 'inntak:poeng', type: 'funksjon' as const, tittel: begge('inntak.poeng.tittel'), rute: poengRute },
       ...veivisere.map((v) => ({ id: `inntak:${v.id}`, type: 'funksjon' as const, tittel: v.tittel, rute: veiviserRute(v.id) })),
     ];

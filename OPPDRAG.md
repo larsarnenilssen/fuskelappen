@@ -198,6 +198,14 @@ Skjemaet defineres med zod og valideres i testene.
 
 - Forsiden har samlet søkefelt øverst, deretter favoritter og moduler gruppert under overskrifter.
 - *(Endret 01.10.2026, eier:)* Hver overskrift har én til tre hovedbokser og eventuelt én sammenleggbar boks med resten. Under «Arbeidstid» står Arbeidsplan som egen boks og de andre kalkulatorene i den sammenleggbare boksen. Egen overskrift for hurtigkalkulatorer og mellomsiden for arbeidstid tas bort, og gamle adresser sendes videre.
+- *(Endret 04.10.2026, eier:)* Opplæringstilbud flyttes fra «Læreplanverket» til den nye overskriften «Inntak og opplæringstilbud», sammen med Inntak. Læreplanverket har da bare Overordnet del og Fag og læreplaner. Når alle fasene er levert, er overskriftene og modulene etter planen:
+  - **Arbeidstid:** Arbeidsplan og kalkulatorene.
+  - **Læreplanverket:** Overordnet del, Fag og læreplaner.
+  - **Inntak og opplæringstilbud:** Inntak, Opplæringstilbud.
+  - **Elever og opplæring:** Tilrettelegging, Vurdering (fase 6, med fravær, eksamen og klage).
+  - **Skolemiljø:** Skolemiljø (fase 7).
+  - **Oppslag:** Begreper, Regelverk. Om Frister og årshjul (fase 8) står her eller øverst på forsiden, avgjøres i fase 8.
+  - Lokale profiler (fase 9) hører hjemme i Innstillinger.
 - Oppsettet skal tåle mange moduler. Forsiden bygges fortsatt bare fra modulregisteret.
 - Søket treffer moduler, funksjoner, begreper, regler og fag (navn og kode). Kompetansemål ligger i en egen indeks som lastes første gang et søk trenger den.
 - Favoritter: funksjoner, fag og begreper. Lagres lokalt og kan sorteres.
@@ -522,6 +530,11 @@ Bygger på Regelverk i fase 3 (avgjørelse 039): forklaringene lenker til paragr
 
 Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på fase 2.
 
+*Status 04.10.2026:*
+- Forslaget med tre pakker, fasittestene FR1–FR8 og svarene fra eier står i `docs/arbeidsordrer/fase-6-forslag.md`.
+- Pakke 1 er bygget på grenen `claude/fase-6-vurdering`: modulen **Vurdering** under «Elever og opplæring» med veiviseren «Grunnlag for vurdering», siden «Underveis- og sluttvurdering» med vurderingsteksten i læreplanen for et fag, «Orden og oppførsel», ni begreper og oppslaget over karakterkoder fra registreringshåndboken (avgjørelse 054). Venter på eiers kontroll av skjermbildene.
+- Pakke 2 (fravær) og pakke 3 (eksamen og klage), og «Fag- og svennebrev» i Opplæringstilbud, kommer etter.
+
 **Kontrollpunkt:** Eier kontrollerer regler, kalkulator og veivisere.
 
 ### Fase 7 – Skolemiljø og skoleregler
@@ -542,8 +555,16 @@ Fasen kan flyttes foran fase 4 hvis eier ønsker det, siden den bare bygger på 
 - Samlet oversikt over frister fra alle moduler, filtrert på modul, målgruppe og nivå.
 - Visning som årshjul og som liste.
 - Eksport til kalender (.ics), generert i nettleseren.
+- *(Ønske fra eier 04.10.2026)* **Dagens fuskelapp:** et faktum fra appen på forsiden, som en morsomhet, en kuriositet og en inngang til å bli kjent med innholdet. Den tas i denne fasen fordi den bygger på samme mønster som fristene: hver modul bidrar gjennom manifestet. Da finnes det også innhold fra de fleste modulene.
+  - En bryter «Dagens fuskelapp» under Innstillinger, av fra start. Valget lagres lokalt som de andre valgene.
+  - Når den er på, står en rubrikk «Dagens fuskelapp» på forsiden med ett faktum: en frist, en regel, et begrep, timetallet og årsrammen i et fag, en setning fra overordnet del og så videre. Hvert faktum lenker til stedet i appen der det står, og har kilden.
+  - Fuskelappen byttes a) automatisk hver dag (samme faktum hele dagen, valgt ut fra datoen), eller b) når brukeren trykker på et tegn for ny fuskelapp ved siden av overskriften. Eier velger a, b eller begge når forslaget legges fram.
+  - Modulene bidrar med fakta gjennom en ny funksjon i manifestet (som `frister()`), så nye moduler kommer med av seg selv. Fakta hentes fra innholdet, regelsettene og dataene appen alt har. Det gjøres ingen kall til eksterne tjenester, og alt virker uten nett.
+  - Innhold for fylke og skole vises bare når brukeren har valgt fylket eller skolen. Teksten står på bokmål og nynorsk.
+  - Når bryteren er av, kan forsiden ha en kort tekst som spør om brukeren vil slå på dagens fuskelapp. Teksten kan lukkes for godt.
+  - Legges fram for eier før det bygges: hvilke typer fakta som tas med, om bare kontrollert innhold skal vises, og hvordan rubrikken og spørsmålet ser ut.
 
-**Kontrollpunkt:** Eier kontrollerer frister og visning.
+**Kontrollpunkt:** Eier kontrollerer frister, visning og dagens fuskelapp.
 
 ### Fase 9 – Lokale avtaler og profiler for fylke og skole
 

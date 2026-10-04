@@ -5,6 +5,7 @@
 // udir.no og vises uendret, på valgt målform.
 import { useEffect, useId } from 'preact/hooks';
 import { useTekst } from '../../../app/tilstand.ts';
+import { FavorittKnapp } from '../../../components/FavorittKnapp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
 import { Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
@@ -103,7 +104,10 @@ export default function OverordnetDel({ parametre }: SideProps) {
   useRullTil(mal?.id);
   return (
     <div class="side">
-      <h1 tabIndex={-1}>{t('laereplanverket.tittel')}</h1>
+      <div class="tittelrad">
+        <h1 tabIndex={-1}>{t('laereplanverket.tittel')}</h1>
+        <FavorittKnapp id="laereplanverket:overordnet-del" navn={t('laereplanverket.tittel')} />
+      </div>
       <p class="dempet">
         <Begrepstekst tekst={t('laereplanverket.innledning')} />
       </p>

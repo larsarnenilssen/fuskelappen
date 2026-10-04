@@ -4637,6 +4637,27 @@ p.fagkort-tittel {
   padding: 0 var(--rom-4) var(--rom-3);
 }
 
+/* Regelverket og kildene festet nederst i et kort, fra kant til kant (Kortfot, eier 04.10.2026). Kortet har innrykk
+   --rom-4 og luft --rom-3 i bunnen, som Forklaring og Innholdskort. */
+.kortfot {
+  margin: var(--rom-3) calc(-1 * var(--rom-4)) calc(-1 * var(--rom-3));
+  border-top: var(--strek) solid var(--farge-linje);
+}
+
+.kortfot .forklaring-knapp {
+  padding-inline: var(--rom-4);
+}
+
+/* Fylkes- og skoleboksen i veiviserne har mindre innrykk. */
+.veiviser-tillegg .kortfot {
+  margin-inline: calc(-1 * var(--rom-3));
+}
+
+.veiviser-tillegg .kortfot .forklaring-knapp,
+.veiviser-tillegg .kortfot .paragraflenker {
+  padding-inline: var(--rom-3);
+}
+
 .veiviser-kilder > summary {
   list-style: none;
 }
@@ -4846,6 +4867,12 @@ div + .veiviser-svargruppe {
 
 .veiviser-inngang:hover {
   border-color: var(--farge-merke);
+}
+
+/* Et annet kort i samme rutenett som veiviserne (Vurdering): like høyt som veiviserkortet ved siden av. */
+.veiviser-innganger > li > .frist-inngang {
+  height: 100%;
+  align-content: start;
 }
 
 .veiviser-inngang-topp {
@@ -5688,4 +5715,317 @@ button.frist-stripe-celle:hover {
   margin-bottom: var(--rom-1);
   font-size: var(--str-s);
   font-weight: 700;
+}
+
+/* Vurdering (fase 6): kort som kan åpnes, to sider av samme sak side om side (.tosidig, ikke .sammenligning, som
+   er variantene i Arbeidstid) og skoleåret som én stripe. */
+.innholdskort {
+  margin: 0 0 var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.innholdskort-knapp {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-3);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-3) var(--rom-4);
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.innholdskort-topp {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--rom-1);
+  min-width: 0;
+}
+
+.innholdskort-tittel {
+  font-weight: 700;
+}
+
+.innholdskort-smakebit {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.innholdskort-pil {
+  flex: none;
+  color: var(--farge-tekst-dempet);
+}
+
+.innholdskort-innhold {
+  padding: 0 var(--rom-4) var(--rom-3);
+}
+
+.lokalkort-sted {
+  margin: var(--rom-4) 0 var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.tosidig {
+  width: 100%;
+  margin: 0 0 var(--rom-5);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  background: var(--farge-flate);
+  table-layout: fixed;
+}
+
+.tosidig thead th {
+  padding: var(--rom-2) var(--rom-3);
+  border-bottom: var(--strek) solid var(--farge-kant);
+  font-size: var(--str-l);
+  text-align: left;
+}
+
+.tosidig-venstre {
+  border-right: var(--strek) solid var(--farge-kant);
+  color: var(--vurdering-halvaar);
+}
+
+.tosidig-hoyre {
+  color: var(--vurdering-standpunkt);
+}
+
+.tosidig .tosidig-etikett {
+  padding: var(--rom-1) var(--rom-3);
+  background: var(--farge-flate-2);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.tosidig td {
+  padding: var(--rom-2) var(--rom-3) var(--rom-3);
+  font-size: var(--str-s);
+  line-height: 1.4;
+  vertical-align: top;
+}
+
+.tosidig td:first-child {
+  border-right: var(--strek) solid var(--farge-kant);
+}
+
+/* Prinsippene som en sti: en loddrett strek med et punkt ved hvert kort. */
+.vu-sti {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 var(--rom-5);
+  list-style: none;
+}
+
+.vu-sti::before {
+  content: '';
+  position: absolute;
+  top: var(--rom-4);
+  bottom: var(--rom-4);
+  left: calc(0.5rem - 1px);
+  width: 2px;
+  background: var(--farge-linje);
+}
+
+.vu-sti > li {
+  position: relative;
+}
+
+.vu-sti > li::before {
+  content: '';
+  position: absolute;
+  top: 1.05rem;
+  left: calc(0.5rem - 0.4rem - var(--rom-5));
+  box-sizing: border-box;
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 2px solid var(--vurdering-halvaar);
+  border-radius: 50%;
+  background: var(--farge-bakgrunn);
+}
+
+.skolear {
+  margin: 0 0 var(--rom-3);
+  padding: var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.skolear-rad {
+  position: relative;
+  height: 1.25rem;
+}
+
+/* Alle etikettene i figuren har samme størrelse og tykkelse (eier 04.10.2026). */
+.skolear-etikett {
+  position: absolute;
+  bottom: 0.15rem;
+  font-size: var(--str-xs);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.skolear-rad-under .skolear-etikett {
+  top: 0.2rem;
+  bottom: auto;
+}
+
+.skolear-underveis {
+  color: var(--farge-tekst);
+  text-align: left;
+}
+
+.skolear-halvaar {
+  color: var(--vurdering-halvaar);
+}
+
+.skolear-eksamen {
+  color: var(--vurdering-eksamen);
+}
+
+.skolear-standpunkt {
+  color: var(--vurdering-standpunkt);
+  text-align: right;
+}
+
+/* Underveisvurderingen er en smal stolpe gjennom hele året. Feltene for halvår, eksamen og standpunkt er høyere enn
+   stolpen, så de skiller seg ut. */
+.skolear-spor {
+  position: relative;
+  height: 1.75rem;
+}
+
+.skolear-spor::before {
+  content: '';
+  position: absolute;
+  inset: 0.5rem 0;
+  border-radius: 999px;
+  background: var(--vurdering-underveis);
+}
+
+.skolear-felt {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: var(--radius-s);
+}
+
+.skolear-felt-halvaar {
+  background: var(--vurdering-halvaar);
+}
+
+.skolear-felt-eksamen {
+  background: var(--vurdering-eksamen);
+}
+
+.skolear-felt-standpunkt {
+  background: var(--vurdering-standpunkt);
+}
+
+.skolear-maneder {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  margin-top: var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: 0.625rem;
+  text-align: center;
+}
+
+.skolear-tegn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-4);
+  margin: var(--rom-3) 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--str-xs);
+}
+
+.skolear-tegn li::before {
+  content: '';
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: var(--rom-1);
+  border-radius: 3px;
+  vertical-align: -1px;
+  background: var(--tegn);
+}
+
+.skolear-tegn-underveis {
+  --tegn: var(--vurdering-underveis);
+}
+
+.skolear-tegn-halvaar {
+  --tegn: var(--vurdering-halvaar);
+}
+
+.skolear-tegn-eksamen {
+  --tegn: var(--vurdering-eksamen);
+}
+
+.skolear-tegn-standpunkt {
+  --tegn: var(--vurdering-standpunkt);
+}
+
+.vu-fag-treff {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vu-fag-valg {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--rom-3);
+  width: 100%;
+  min-height: var(--trykkflate);
+  padding: var(--rom-2) var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.vu-fag {
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.vu-fag-navn {
+  font-weight: 700;
+}
+
+.vu-fag-etikett {
+  margin: var(--rom-3) 0 var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }

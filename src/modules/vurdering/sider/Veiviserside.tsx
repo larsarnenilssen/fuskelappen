@@ -5,12 +5,12 @@ import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { Veiviser } from '../../../components/Veiviser.tsx';
 import { velgSynlige } from '../../../core/innhold/status.ts';
 import type { SideProps } from '../../typer.ts';
-import { hentInnhold, veiviserRute, type Veiviserinnhold } from '../innhold.ts';
+import { hentInnhold, veiviserRute, type Vurderingsinnhold } from '../innhold.ts';
 
 export default function Veiviserside({ parametre, sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
-  const [innhold, settInnhold] = useState<Veiviserinnhold | null>(null);
+  const [innhold, settInnhold] = useState<Vurderingsinnhold | null>(null);
   useEffect(() => {
     void hentInnhold().then(settInnhold);
   }, []);
@@ -20,9 +20,9 @@ export default function Veiviserside({ parametre, sporring }: SideProps) {
   if (!veiviser) {
     return (
       <div class="side">
-        <h1 tabIndex={-1}>{t('tilrettelegging.ikkeFunnet')}</h1>
+        <h1 tabIndex={-1}>{t('vurdering.ikkeFunnet')}</h1>
         <p>
-          <a href="#/tilrettelegging">{t('tilrettelegging.tittel')}</a>
+          <a href="#/vurdering">{t('vurdering.tittel')}</a>
         </p>
       </div>
     );
@@ -33,10 +33,10 @@ export default function Veiviserside({ parametre, sporring }: SideProps) {
   );
   return (
     <div class="side" data-veiviserfarge={veiviser.farge}>
-      <Brodsmuler ledd={[{ tekst: t('tilrettelegging.tittel'), href: '#/tilrettelegging' }]} />
+      <Brodsmuler ledd={[{ tekst: t('vurdering.tittel'), href: '#/vurdering' }]} />
       <div class="tittelrad">
         <h1 tabIndex={-1}>{veiviser.tittel[malform]}</h1>
-        <FavorittKnapp id={`tilrettelegging:${veiviser.id}`} navn={veiviser.tittel[malform]} />
+        <FavorittKnapp id={`vurdering:${veiviser.id}`} navn={veiviser.tittel[malform]} />
       </div>
       {/* Ingressen står bare på starten, så stegene kommer høyt opp på skjermen. */}
       {!sporring.get('steg') && <div class="ingress" dangerouslySetInnerHTML={{ __html: veiviser.tekst[malform] }} />}

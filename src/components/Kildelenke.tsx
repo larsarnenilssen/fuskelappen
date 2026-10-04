@@ -20,9 +20,11 @@ const PARAGRAF = /^§\s?([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)/i;
  */
 export function kildeTekst(t: T, kilde: KildeRef, kort = false): { navn: string; punkt: string; url: string | undefined } {
   const k = kilder.get(kilde.id);
-  // «punkt 5.2», men «Vedlegg 1» og «Kap. 1 § 12.4» uten «punkt» foran.
-  const punkt = kilde.punkt ? `${kort ? ' ' : ', '}${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
+  // «punkt 5.2», men «Vedlegg 1» og «Kap. 1 § 12.4» uten «punkt» foran. Slutter navnet med punktet, f.eks. et felt i
+  // registreringshåndboken, gjentas det ikke.
   const navn = (kort ? k?.kortnavn : undefined) ?? k?.navn ?? t('komponenter.kilde.ukjent');
+  const gjentatt = kilde.punkt !== undefined && navn.endsWith(`, ${kilde.punkt}`);
+  const punkt = kilde.punkt && !gjentatt ? `${kort ? ' ' : ', '}${/^\d/.test(kilde.punkt) ? t('komponenter.kilde.punkt', { punkt: kilde.punkt }) : kilde.punkt}` : '';
   const paragraf = kilde.punkt ? PARAGRAF.exec(kilde.punkt)?.[1] : undefined;
   const url = kilde.url ?? (paragraf && k?.url.startsWith('https://lovdata.no/') ? `${k.url}/§${paragraf}` : k?.url);
   return { navn, punkt, url };

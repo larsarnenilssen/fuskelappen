@@ -6,6 +6,7 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { finnKilde, Kildelenke, Kildeliste } from '../../../components/Kildelenke.tsx';
 import { Rubrikk } from '../../../components/Rubrikk.tsx';
 import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
+import { Brodsmuler } from '../../../components/Brodsmuler.tsx';
 import { TilToppen } from '../../../components/TilToppen.tsx';
 import { formaterTall } from '../../../core/i18n/tekst.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
@@ -48,6 +49,7 @@ export function Avtale({ avtale, nokkel }: { avtale: Avtaleinfo; nokkel: string 
   const url = finnKilde(avtale.kilde)?.url;
   return (
     <div class="side">
+      <Brodsmuler ledd={[{ tekst: t('lov.tittel'), href: '#/lov' }]} />
       <h1 tabIndex={-1}>{avtale.korttittel[malform]}</h1>
       <p class="dempet">{avtale.tittel[malform]}</p>
       <p class="merknad">

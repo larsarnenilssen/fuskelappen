@@ -82,12 +82,37 @@ const felles = {
   kodeliste: z.enum(['fagmerknader', 'vitnemalsmerknader', 'sokerstatuser']).optional(),
 };
 
-export const vanligElement = z
-  .object({ ...felles, type: elementtype.exclude(['frist', 'steg', 'veiviser']) })
-  .strict();
-
 /** Paragraf i Regelverk: «dokument/nummer», f.eks. «opplaeringslova/11-1» eller «forvaltningsloven/11a». */
 export const paragrafRef = z.string().regex(/^[a-z0-9-]+\/[0-9a-z-]+$/, 'Paragraf skrives «dokument/nummer», f.eks. «opplaeringslova/11-1»');
+
+/**
+ * Koder med forklaring, i grupper som kan lukkes, f.eks. karakterer og vurderingsuttrykk (fase 6, eier 04.10.2026).
+ * Kodene vises under teksten med søk, og hver kode er med i det samlede søket. Teksten er egne ord med kilde.
+ */
+export const kodegruppe = z
+  .object({
+    id: idSkjema,
+    tittel: flerspraak,
+    koder: z
+      .array(z.object({ kode: z.string().trim().min(1), navn: flerspraak, tekst: flerspraak }).strict())
+      .min(1),
+  })
+  .strict();
+
+export const vanligElement = z
+  .object({
+    ...felles,
+    type: elementtype.exclude(['frist', 'steg', 'veiviser']),
+    /** Paragrafer i Regelverk, som i stegene i veiviserne. Vises som lenker til paragrafen i appen. */
+    paragrafer: z.array(paragrafRef).optional(),
+    /**
+     * To sider av samme sak i en rad, f.eks. underveis- og sluttvurdering (fase 6). Tittelen er underoverskriften i
+     * raden, og `tekst` er en setning som sier det samme for søket og skjermlesere.
+     */
+    sammenligning: z.object({ venstre: flerspraak, hoyre: flerspraak }).strict().optional(),
+    kodegrupper: z.array(kodegruppe).optional(),
+  })
+  .strict();
 
 /** Læreplankode i Grep, f.eks. «NOR09-05». */
 export const laereplanKode = z.string().regex(/^[A-Z]{3}\d{2}-\d{2}$/, 'Læreplankoden skrives som i Grep, f.eks. «NOR09-05»');
@@ -301,6 +326,8 @@ export type Forhold = z.infer<typeof forholdSkjema>;
 export type Kontrollert = z.infer<typeof kontrollertSkjema>;
 export type Innholdselement = z.infer<typeof innholdselement>;
 export type Stegelement = z.infer<typeof stegElement>;
+export type Kodegruppe = z.infer<typeof kodegruppe>;
+export type Vanligelement = z.infer<typeof vanligElement>;
 export type Veiviserelement = z.infer<typeof veiviserElement>;
 export type Frist = z.infer<typeof fristElement>;
 export type Kilde = z.infer<typeof kildeSkjema>;

@@ -179,3 +179,18 @@ praksis:
       § 4-25 sier ikke noe om fag som fortsetter.
     berorer: [po-vg2-vg3]
     bekreftet: null
+
+  - id: fravaer-15-prosent-legeerklaering
+    tittel: Helsefravær med legeerklæring før grensen og rektors skjønn
+    sporsmal: >-
+      Teller helserelatert fravær som er dokumentert av helsepersonell før 10 prosent er nådd, med i rammen på 15
+      prosent for rektors skjønn, sammen med det udokumenterte fraværet?
+    appen: >-
+      Veiviseren «Grunnlag for vurdering» sier at fravær som teller mot grensen (også helsefravær med legeerklæring
+      levert før grensen ble nådd), kan gi rektors skjønn opp til 15 prosent. Fraværskalkulatoren (pakke 2) regner
+      likt (fasittest FR8).
+    grunnlag: >-
+      Eier 04.10.2026: «De ti og de fem teller.» Opplæringsforskrifta § 9-8 fjerde ledd sier «eigenmeldt eller
+      udokumentert fråvær». Udirs rundskriv sier ikke noe om helsefravær med legeerklæring før grensen.
+    berorer: [vu-skjonn]
+    bekreftet: null

@@ -1,0 +1,621 @@
+# Veiviser: grunnlag for vurdering (fase 6, pakke 1). Egne ord. Godkjent i forslaget av eier 04.10.2026
+# (docs/arbeidsordrer/fase-6-forslag.md). Bygger på opplæringsforskrifta kapittel 9, Udirs merknader til kapitlet og
+# rundskrivet om fraværsgrensen. Orden og oppførsel har egen side (eier 04.10.2026).
+- id: grunnlag-for-vurdering
+  type: veiviser
+  tittel: { nb: Grunnlag for vurdering, nn: Grunnlag for vurdering }
+  tekst:
+    nb: "Kan eleven få karakter i faget? Veiviseren går gjennom læreplanen, fritak, fravær og grunnlaget for karakter, og hva skolen må gjøre når eleven står i fare for å ikke få karakter."
+    nn: "Kan eleven få karakter i faget? Vegvisaren går gjennom læreplanen, fritak, fråvær og grunnlaget for karakter, og kva skolen må gjere når eleven står i fare for ikkje å få karakter."
+  start: vu-start
+  farge: rav
+  rekkefolge: 20
+  faser:
+    - { id: hvem, tittel: { nb: Hvem og læreplan, nn: Kven og læreplan } }
+    - { id: fritak, tittel: { nb: Fritak, nn: Fritak } }
+    - { id: fravaer, tittel: { nb: Fravær og grunnlag, nn: Fråvær og grunnlag } }
+    - { id: varsel, tittel: { nb: Varsel og vedtak, nn: Varsel og vedtak } }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "Kapittel 9 Individuell vurdering", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-1-formalet-med-og-grunnlaget-for-vurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire fasene (hvem og læreplan, fritak, fravær og grunnlag, varsel og vedtak) en dekkende og ikke misvisende inndeling?"
+  stikkord: [veiviser, karakter, ikke vurderingsgrunnlag, IV, fritak, fravær, standpunkt, halvårsvurdering]
+
+- id: vu-start
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Hvem skal vurderes"
+    nn: "Kven skal vurderast"
+  tekst:
+    nb: "Elever får halvårsvurdering med og uten karakter, og standpunktkarakter når faget er slutt. Lærlinger, lærekandidater og praksisbrevkandidater får halvårsvurdering uten karakter fra instruktøren i bedriften."
+    nn: "Elevar får halvårsvurdering med og utan karakter, og standpunktkarakter når faget er slutt. Lærlingar, lærekandidatar og praksisbrevkandidatar får halvårsvurdering utan karakter frå instruktøren i bedrifta."
+  paragrafer: [opplaeringsforskrifta/9-13]
+  sporsmal:
+    tekst:
+      nb: "Hvem gjelder det?"
+      nn: "Kven gjeld det?"
+    svar:
+      - { id: elev, tekst: { nb: "En elev", nn: "Ein elev" }, neste: vu-laereplan }
+      - { id: bedrift, tekst: { nb: "En lærling, lærekandidat eller praksisbrevkandidat", nn: "Ein lærling, lærekandidat eller praksisbrevkandidat" }, neste: vu-bedrift }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 første, andre og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-13", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/ii.-undervegsvurdering/-9-13-halvarsvurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at lærlinger, lærekandidater og praksisbrevkandidater bare får halvårsvurdering uten karakter (§ 9-13 første og andre ledd)?"
+
+- id: vu-bedrift
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Vurdering i bedrift"
+    nn: "Vurdering i bedrift"
+  tekst:
+    nb: "Instruktøren gir halvårsvurdering uten karakter, og den som har læretid i bedrift, har rett til minst én samtale i halvåret om utviklingen sin. Fraværsgrensen gjelder ikke for lærlinger, lærekandidater og praksisbrevkandidater. Sluttvurderingen er fag- eller svenneprøven, kompetanseprøven eller praksisbrevprøven."
+    nn: "Instruktøren gir halvårsvurdering utan karakter, og den som har læretid i bedrift, har rett til minst éin samtale i halvåret om utviklinga si. Fråværsgrensa gjeld ikkje for lærlingar, lærekandidatar og praksisbrevkandidatar. Sluttvurderinga er fag- eller sveineprøva, kompetanseprøva eller praksisbrevprøva."
+  ansvar:
+    nb: "Instruktøren i lærebedriften."
+    nn: "Instruktøren i lærebedrifta."
+  frist:
+    nb: "Halvårsvurdering og samtale hvert halvår."
+    nn: "Halvårsvurdering og samtale kvart halvår."
+  fristKort:
+    nb: "Hvert halvår"
+    nn: "Kvart halvår"
+  paragrafer: [opplaeringsforskrifta/9-6, opplaeringsforskrifta/9-13, opplaeringsforskrifta/9-15]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-15 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-15" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "2. Hvem gjelder fraværsgrensen for", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/2.-hvem-gjelder-fravarsgrensen-for/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at fraværsgrensen ikke gjelder for de som har læretid i bedrift (rundskrivet punkt 2)?"
+
+- id: vu-laereplan
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Læreplanen eleven følger"
+    nn: "Læreplanen eleven følgjer"
+  tekst:
+    nb: "Grunnlaget for vurdering i et fag er kompetansemålene i læreplanen, forstått i lys av teksten om faget. Det gjelder også elever med individuelt tilrettelagt opplæring. Forutsetninger, fravær, orden og oppførsel skal ikke trekkes inn, og innsats bare når læreplanen sier det."
+    nn: "Grunnlaget for vurdering i eit fag er kompetansemåla i læreplanen, forstått i lys av teksten om faget. Det gjeld også elevar med individuelt tilrettelagd opplæring. Føresetnader, fråvær, orden og oppførsel skal ikkje trekkjast inn, og innsats berre når læreplanen seier det."
+  paragrafer: [opplaeringsforskrifta/9-1]
+  sporsmal:
+    tekst:
+      nb: "Hvilken læreplan følger eleven i faget?"
+      nn: "Kva læreplan følgjer eleven i faget?"
+    svar:
+      - { id: vanlig, tekst: { nb: "Den vanlige læreplanen i faget", nn: "Den vanlege læreplanen i faget" }, neste: vu-fritak }
+      - { id: iop, tekst: { nb: "En individuell opplæringsplan som avviker fra læreplanen", nn: "Ein individuell opplæringsplan som vik av frå læreplanen" }, neste: vu-iop }
+      - { id: innforing, tekst: { nb: "Innføringsopplæring for elever med kort botid", nn: "Innføringsopplæring for elevar med kort butid" }, neste: vu-innforing }
+      - { id: sprak, tekst: { nb: "Grunnleggende norsk eller morsmål for språklige minoriteter", nn: "Grunnleggjande norsk eller morsmål for språklege minoritetar" }, neste: vu-uten-karakter }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-1-formalet-med-og-grunnlaget-for-vurdering-i-fag/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire svarene en dekkende inndeling av læreplanene en elev kan følge i et fag?"
+
+- id: vu-uten-karakter
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Læreplanen gir ikke karakter"
+    nn: "Læreplanen gir ikkje karakter"
+  tekst:
+    nb: "Læreplanene i grunnleggende norsk og morsmål for språklige minoriteter gir ikke vurdering med karakter. Eleven får underveisvurdering og halvårsvurdering uten karakter. Læreplanen i norsk for elever med kort botid gir karakter. Se steget om læreplaner i [særskilt språkopplæring](#/tilrettelegging/sprak-og-kort-botid?steg=sp-laereplan&svar=ja.nei.nei)."
+    nn: "Læreplanane i grunnleggjande norsk og morsmål for språklege minoritetar gir ikkje vurdering med karakter. Eleven får undervegsvurdering og halvårsvurdering utan karakter. Læreplanen i norsk for elevar med kort butid gir karakter. Sjå steget om læreplanar i [særskild språkopplæring](#/tilrettelegging/sprak-og-kort-botid?steg=sp-laereplan&svar=ja.nei.nei)."
+  paragrafer: [opplaeringsforskrifta/9-13]
+  laereplaner:
+    - kode: NOR07-03
+      kompetansegivende: false
+      merknad: { nb: Gir ikke karakter., nn: Gir ikkje karakter. }
+    - kode: NOR08-03
+      kompetansegivende: false
+      merknad: { nb: Gir ikke karakter., nn: Gir ikkje karakter. }
+    - kode: NOR09-05
+      kompetansegivende: true
+      merknad: { nb: "Gir karakter, i stedet for den vanlige læreplanen i norsk.", nn: "Gir karakter, i staden for den vanlege læreplanen i norsk." }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+    - { id: udir-grep, punkt: "Vurderingsordningen i læreplanene NOR07-03 og NOR08-03" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at eleven får halvårsvurdering uten karakter i grunnleggende norsk og morsmål, når vurderingsordningen sier at det ikke gis karakter?"
+
+- id: vu-iop
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Individuell opplæringsplan"
+    nn: "Individuell opplæringsplan"
+  tekst:
+    nb: "Elever med individuelt tilrettelagt opplæring skal ha underveisvurdering ut fra målene i den individuelle opplæringsplanen. I videregående har de ikke rett til fritak fra vurdering med karakter, unntatt i sidemålet. Spørsmålet er om planen gir grunnlag for å sette standpunktkarakter etter læreplanen. Se også [steget om IOP](#/tilrettelegging/tilpasset-og-individuell?steg=ti-iop&svar=foresporsel.praktisk.ito)."
+    nn: "Elevar med individuelt tilrettelagd opplæring skal ha undervegsvurdering ut frå måla i den individuelle opplæringsplanen. I vidaregåande har dei ikkje rett til fritak frå vurdering med karakter, unnateke i sidemålet. Spørsmålet er om planen gir grunnlag for å setje standpunktkarakter etter læreplanen. Sjå også [steget om IOP](#/tilrettelegging/tilpasset-og-individuell?steg=ti-iop&svar=foresporsel.praktisk.ito)."
+  paragrafer: [opplaeringsforskrifta/9-11, opplaeringsforskrifta/9-19]
+  sporsmal:
+    tekst:
+      nb: "Gir planen grunnlag for standpunktkarakter i faget?"
+      nn: "Gir planen grunnlag for standpunktkarakter i faget?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja, eleven vurderes etter læreplanen", nn: "Ja, eleven blir vurdert etter læreplanen" }, neste: vu-fritak }
+      - { id: nei, tekst: { nb: "Nei, planen avviker for mye", nn: "Nei, planen vik av for mykje" }, neste: vu-vo }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-11 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-11" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-19 andre og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-19" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-19", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-19-fritak-fra-vurdering-med-karakter-for-elevar-som-far-individuelt-tilrettelagd-opplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er spørsmålet «Gir planen grunnlag for standpunktkarakter i faget?» en riktig måte å skille mellom de to utfallene på?"
+
+- id: vu-vo
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Vurdert etter individuell opplæringsplan"
+    nn: "Vurdert etter individuell opplæringsplan"
+  tekst:
+    nb: "Gir planen ikke grunnlag for standpunktkarakter i faget, føres det på kompetansebeviset at eleven er vurdert etter individuell opplæringsplan (VO). Kompetansen dokumenteres i et vedlegg. Vedlegget sier ikke hva eleven ikke kan."
+    nn: "Gir planen ikkje grunnlag for standpunktkarakter i faget, blir det ført på kompetansebeviset at eleven er vurdert etter individuell opplæringsplan (VO). Kompetansen blir dokumentert i eit vedlegg. Vedlegget seier ikkje kva eleven ikkje kan."
+  dokumentasjon:
+    nb: "Kompetansebevis med VO og vedlegg om kompetansen."
+    nn: "Kompetansebevis med VO og vedlegg om kompetansen."
+  paragrafer: [opplaeringsforskrifta/9-52]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-52 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-52" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-52", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/vii.-dokumentasjon-i-vidaregaande-opplaring/-9-52-foring-av-karakterar-i-fag-pa-vitnemal-og-kompetansebevis-i-vidaregaande-opplaring/" }
+    - { id: udir-regbok-karakterer, punkt: "B26 Karakterer og andre vurderingsuttrykk, VO" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at VO brukes når planen ikke gir grunnlag for standpunktkarakter, og at det da gis kompetansebevis?"
+
+- id: vu-innforing
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Innføringsopplæring"
+    nn: "Innføringsopplæring"
+  tekst:
+    nb: "Elever som får innføringsopplæring, har rett til fritak fra vurdering med karakter så lenge innføringsopplæringen varer, hvis de ber om det. I videregående gjelder fritaket ikke standpunktkarakter. Se [steget om innføringsopplæring](#/tilrettelegging/sprak-og-kort-botid?steg=sp-innforing&svar=ja.nei.ja)."
+    nn: "Elevar som får innføringsopplæring, har rett til fritak frå vurdering med karakter så lenge innføringsopplæringa varer, dersom dei ber om det. I vidaregåande gjeld fritaket ikkje standpunktkarakter. Sjå [steget om innføringsopplæring](#/tilrettelegging/sprak-og-kort-botid?steg=sp-innforing&svar=ja.nei.ja)."
+  paragrafer: [opplaeringsforskrifta/9-20]
+  sporsmal:
+    tekst:
+      nb: "Hvilken vurdering gjelder det?"
+      nn: "Kva vurdering gjeld det?"
+    svar:
+      - { id: halvaar, tekst: { nb: "Halvårsvurdering med karakter", nn: "Halvårsvurdering med karakter" }, neste: vu-fritak-innforing }
+      - { id: standpunkt, tekst: { nb: "Standpunktkarakter", nn: "Standpunktkarakter" }, neste: vu-fritak }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-20 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-20" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-20", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-20-fritak-fra-vurdering-med-karakter-for-elevar-som-far-innforingsopplaring/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at eleven selv (eller foreldrene) må be om fritaket etter § 9-20, slik merknaden sier for videregående?"
+
+- id: vu-fritak-innforing
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: hvem
+  tittel:
+    nb: "Fritak i innføringsopplæringen"
+    nn: "Fritak i innføringsopplæringa"
+  tekst:
+    nb: "Ber eleven om det, får eleven fritak fra vurdering med karakter, men ikke fra standpunktkarakter. Eleven og foreldrene, hvis eleven ikke er myndig, skal få veiledning om hva fritaket betyr før det gis. Eleven får underveisvurdering og halvårsvurdering uten karakter."
+    nn: "Ber eleven om det, får eleven fritak frå vurdering med karakter, men ikkje frå standpunktkarakter. Eleven og foreldra, dersom eleven ikkje er myndig, skal få rettleiing om kva fritaket inneber før det blir gitt. Eleven får undervegsvurdering og halvårsvurdering utan karakter."
+  ansvar:
+    nb: "Fylkeskommunen fatter vedtaket. Klage går til statsforvalteren."
+    nn: "Fylkeskommunen gjer vedtaket. Klage går til statsforvaltaren."
+  dokumentasjon:
+    nb: "Vedtak om fritak."
+    nn: "Vedtak om fritak."
+  paragrafer: [opplaeringsforskrifta/9-18, opplaeringsforskrifta/9-20]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-18 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-18" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-20 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-20" }
+    - { id: udir-klageinstanser, punkt: "§ 9-20, vedtak for elev i videregående", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at fylkeskommunen fatter vedtaket, og at statsforvalteren er klageinstans (Udirs oversikt over klageinstanser)?"
+
+- id: vu-fritak
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fritak
+  tittel:
+    nb: "Fritak fra vurdering med karakter"
+    nn: "Fritak frå vurdering med karakter"
+  tekst:
+    nb: "I videregående kan eleven få fritak fra vurdering med karakter i sidemålet, i fremmedspråk og i kroppsøving, når vilkårene er oppfylt. Før fritak gis, skal eleven, og foreldrene hvis eleven ikke er myndig, få veiledning om hva det betyr. Eleven får da vurdering uten karakter og skal ikke ha eksamen i faget."
+    nn: "I vidaregåande kan eleven få fritak frå vurdering med karakter i sidemålet, i framandspråk og i kroppsøving, når vilkåra er oppfylte. Før fritak blir gitt, skal eleven, og foreldra dersom eleven ikkje er myndig, få rettleiing om kva det inneber. Eleven får då vurdering utan karakter og skal ikkje ha eksamen i faget."
+  paragrafer: [opplaeringsforskrifta/9-18]
+  sporsmal:
+    tekst:
+      nb: "Gjelder det fritak fra vurdering med karakter?"
+      nn: "Gjeld det fritak frå vurdering med karakter?"
+    svar:
+      - { id: sidemal, tekst: { nb: "Fritak i sidemålet", nn: "Fritak i sidemålet" }, neste: vu-fritak-sidemal }
+      - { id: fremmedsprak, tekst: { nb: "Fritak i fremmedspråk", nn: "Fritak i framandspråk" }, neste: vu-fritak-fremmedsprak }
+      - { id: kroppsoving, tekst: { nb: "Fritak i kroppsøving", nn: "Fritak i kroppsøving" }, neste: vu-fritak-kroppsoving }
+      - { id: nei, tekst: { nb: "Nei, eleven skal ha karakter", nn: "Nei, eleven skal ha karakter" }, neste: vu-fravaer }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-18", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-18" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-18", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-18-fellesreglar-om-fritak-fra-vurdering-med-karakter/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de tre fritakene (sidemål, fremmedspråk, kroppsøving) alle som gjelder i videregående, når innføringsopplæringen står for seg?"
+
+- id: vu-fritak-sidemal
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fritak
+  tittel:
+    nb: "Fritak i sidemålet"
+    nn: "Fritak i sidemålet"
+  tekst:
+    nb: "Eleven har rett til fritak fra vurdering med karakter i sidemålet hvis eleven har vansker med å lære begge skriftspråkene på grunn av dokumentert sykdom, skade eller dysfunksjon, ikke har gått i norsk grunnskole på 8.–10. trinn, har hatt særskilt språkopplæring, eller har gått på en godkjent internasjonal eller utenlandsk skole i Norge. Elever med individuelt tilrettelagt opplæring får fritaket hvis de ber om det."
+    nn: "Eleven har rett til fritak frå vurdering med karakter i sidemålet dersom eleven har vanskar med å lære begge skriftspråka på grunn av dokumentert sjukdom, skade eller dysfunksjon, ikkje har gått i norsk grunnskole på 8.–10. trinn, har hatt særskild språkopplæring, eller har gått på ein godkjend internasjonal eller utanlandsk skole i Noreg. Elevar med individuelt tilrettelagd opplæring får fritaket dersom dei ber om det."
+  ansvar:
+    nb: "Skolen eller fylkeskommunen som skriver ut vitnemålet. Klage går til statsforvalteren."
+    nn: "Skolen eller fylkeskommunen som skriv ut vitnemålet. Klage går til statsforvaltaren."
+  forklaring:
+    nb: "Ved dokumentert sykdom, skade eller dysfunksjon må dokumentasjonen vise sammenhengen mellom vanskene og det å lære begge skriftspråkene. At eleven har dysleksi, er ikke nok alene. Eleven trenger ikke ligge an til karakteren 1. Med fritak har eleven bare én eksamensdag i norsk hovedmål."
+    nn: "Ved dokumentert sjukdom, skade eller dysfunksjon må dokumentasjonen vise samanhengen mellom vanskane og det å lære begge skriftspråka. At eleven har dysleksi, er ikkje nok åleine. Eleven treng ikkje liggje an til karakteren 1. Med fritak har eleven berre éin eksamensdag i norsk hovudmål."
+  paragrafer: [opplaeringsforskrifta/9-21, opplaeringsforskrifta/9-19]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-21", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-21" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-19 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-19" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-21", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-21-fritak-fra-vurdering-med-karakter-i-eitt-av-dei-norske-skriftspraka/" }
+    - { id: udir-klageinstanser, punkt: "§ 9-21", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er vilkårene i § 9-21 gjengitt riktig og kort nok?"
+    - "Er det riktig at statsforvalteren er klageinstans for fritak i sidemålet?"
+
+- id: vu-fritak-fremmedsprak
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fritak
+  tittel:
+    nb: "Fritak i fremmedspråk"
+    nn: "Fritak i framandspråk"
+  tekst:
+    nb: "På studieforberedende utdanningsprogram har eleven rett til fritak fra vurdering med karakter i fremmedspråk når eleven har dysleksi, spesifikke språkvansker eller vansker som ligner, og individuell tilrettelegging ikke er nok. Har eleven sluttet i faget, må eleven også sannsynliggjøre at hen ikke var i stand til å følge det. Fritaket gjelder bare fellesfaget fremmedspråk. Fraværsgrensen gjelder ikke for faget."
+    nn: "På studieførebuande utdanningsprogram har eleven rett til fritak frå vurdering med karakter i framandspråk når eleven har dysleksi, spesifikke språkvanskar eller vanskar som liknar, og individuell tilrettelegging ikkje er nok. Har eleven slutta i faget, må eleven også sannsynleggjere at hen ikkje var i stand til å følgje det. Fritaket gjeld berre fellesfaget framandspråk. Fråværsgrensa gjeld ikkje for faget."
+  ansvar:
+    nb: "Statsforvalteren avgjør søknaden. Klage går til Udir."
+    nn: "Statsforvaltaren avgjer søknaden. Klage går til Udir."
+  paragrafer: [opplaeringsforskrifta/9-22]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-22", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-22" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-22", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-22-fritak-fra-vurdering-med-karakter-i-framandsprak-i-vidaregaande-opplaring/" }
+    - { id: udir-klageinstanser, punkt: "§ 9-22", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at fraværsgrensen ikke gjelder for faget når eleven har fritak (merknaden til § 9-22)?"
+
+- id: vu-fritak-kroppsoving
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fritak
+  tittel:
+    nb: "Fritak i kroppsøving"
+    nn: "Fritak i kroppsøving"
+  tekst:
+    nb: "Eleven har rett til fritak fra vurdering med karakter i kroppsøving når den tilpassede opplæringen eleven får, ikke kan vurderes med karakter. Fritaket gjelder hele faget. Det er ikke det samme som fritak fra opplæring i kroppsøving."
+    nn: "Eleven har rett til fritak frå vurdering med karakter i kroppsøving når den tilpassa opplæringa eleven får, ikkje kan vurderast med karakter. Fritaket gjeld heile faget. Det er ikkje det same som fritak frå opplæring i kroppsøving."
+  ansvar:
+    nb: "Fylkeskommunen avgjør søknaden. Klage går til statsforvalteren."
+    nn: "Fylkeskommunen avgjer søknaden. Klage går til statsforvaltaren."
+  paragrafer: [opplaeringsforskrifta/9-23, opplaeringsforskrifta/5-10]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-23", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-23" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-23", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iv.-fritak-fra-vurdering-med-karakter/-9-23-fritak-fra-vurdering-med-karakter-i-kroppsoving/" }
+    - { id: udir-klageinstanser, punkt: "§ 9-23", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/hvem-er-klageinstanser/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er skillet mellom fritak fra vurdering med karakter og fritak fra opplæring i kroppsøving tydelig nok?"
+
+- id: vu-fravaer
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fravaer
+  tittel:
+    nb: "Fravær i faget"
+    nn: "Fråvær i faget"
+  tekst:
+    nb: "En elev som har fravær i mer enn 10 prosent av årstimetallet i faget, kan ikke få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i § 9-8 andre ledd, for eksempel sykdom etter at grensen er nådd, velferd eller lovpålagt oppmøte, teller ikke. Grensen regnes for hvert skoleår, og kan ikke rundes ned."
+    nn: "Ein elev som har fråvær i meir enn 10 prosent av årstimetalet i faget, kan ikkje få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i § 9-8 andre ledd, til dømes sjukdom etter at grensa er nådd, velferd eller lovpålagt oppmøte, tel ikkje. Grensa blir rekna for kvart skoleår, og kan ikkje rundast ned."
+  paragrafer: [opplaeringsforskrifta/9-8]
+  sporsmal:
+    tekst:
+      nb: "Hvor mye fravær som teller mot grensen, har eleven i faget?"
+      nn: "Kor mykje fråvær som tel mot grensa, har eleven i faget?"
+    svar:
+      - { id: under, tekst: { nb: "Høyst 10 prosent", nn: "Høgst 10 prosent" }, neste: vu-grunnlag }
+      - { id: skjonn, tekst: { nb: "Mer enn 10, men høyst 15 prosent", nn: "Meir enn 10, men høgst 15 prosent" }, neste: vu-skjonn }
+      - { id: over, tekst: { nb: "Mer enn 15 prosent", nn: "Meir enn 15 prosent" }, neste: vu-varsel-fravaer }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "1. Innledning – fraværsgrensen i korte trekk", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/1.-innledning---fravarsgrensen-i-korte-trekk/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3. Hva omfattes av fraværsgrensen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig og forståelig å si at fraværet «teller mot grensen» når det er udokumentert eller helserelatert fram til 10 prosent er nådd?"
+
+- id: vu-skjonn
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fravaer
+  tittel:
+    nb: "Rektors skjønn"
+    nn: "Skjønnet til rektor"
+  tekst:
+    nb: "Rektor selv kan avgjøre at en elev med opptil 15 prosent egenmeldt eller udokumentert fravær likevel kan få karakter, når årsaken gjør det klart urimelig at grensen skal gjelde. Det er ikke en rett eleven kan kreve eller klage på, og karakteren eleven ligger an til, skal ikke telle. Faglæreren må uansett ha nok grunnlag for karakter."
+    nn: "Rektor sjølv kan avgjere at ein elev med opptil 15 prosent eigenmeldt eller udokumentert fråvær likevel kan få karakter, når årsaka gjer det klart urimeleg at grensa skal gjelde. Det er ikkje ein rett eleven kan krevje eller klage på, og karakteren eleven ligg an til, skal ikkje telje. Faglæraren må uansett ha nok grunnlag for karakter."
+  ansvar:
+    nb: "Rektor selv. Kan ikke delegeres."
+    nn: "Rektor sjølv. Kan ikkje delegerast."
+  paragrafer: [opplaeringsforskrifta/9-8]
+  sporsmal:
+    tekst:
+      nb: "Avgjør rektor at grensen ikke skal gjelde?"
+      nn: "Avgjer rektor at grensa ikkje skal gjelde?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: vu-grunnlag }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-varsel-fravaer }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-8 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-8" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-8", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-8-fravarsgrense-i-vidaregaande-skole/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "3.4 Skjønn opp til 15 prosent", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/3.-hva-omfattes-av-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at helsefravær med legeerklæring levert før grensen ble nådd, teller med i 15-prosentrammen (eier 04.10.2026, praksislisten)?"
+
+- id: vu-grunnlag
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: fravaer
+  tittel:
+    nb: "Nok grunnlag for karakter"
+    nn: "Nok grunnlag for karakter"
+  tekst:
+    nb: "Faglæreren må ha nok grunnlag til å sette karakter ut fra kompetansemålene. Eleven skal ha fått vise kompetansen sin på flere og varierte måter. Stort fravær, også dokumentert fravær, eller andre særlige forhold kan gjøre at grunnlaget ikke er nok, selv om eleven er innenfor fraværsgrensen."
+    nn: "Faglæraren må ha nok grunnlag til å setje karakter ut frå kompetansemåla. Eleven skal ha fått vise kompetansen sin på fleire og varierte måtar. Stort fråvær, også dokumentert fråvær, eller andre særlege forhold kan gjere at grunnlaget ikkje er nok, sjølv om eleven er innanfor fråværsgrensa."
+  paragrafer: [opplaeringsforskrifta/9-1, opplaeringsforskrifta/9-16]
+  sporsmal:
+    tekst:
+      nb: "Har faglæreren nok grunnlag for karakter?"
+      nn: "Har faglæraren nok grunnlag for karakter?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja", nn: "Ja" }, neste: vu-karakter }
+      - { id: nei, tekst: { nb: "Nei, eller det er tvil", nn: "Nei, eller det er tvil" }, neste: vu-varsel-grunnlag }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-1 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-1" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "5.2 Fraværsgrensen og vurderingsgrunnlaget", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/5.hva-er-skillet-mellom-fravarsgrensen-og-annet-regelverk/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at stort dokumentert fravær kan gi for lite grunnlag for karakter, selv om eleven er innenfor fraværsgrensen (rundskrivet punkt 5.2)?"
+
+- id: vu-varsel-fravaer
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Varsel om fravær"
+    nn: "Varsel om fråvær"
+  tekst:
+    nb: "En elev kan ikke miste karakteren på grunn av fravær uten å ha fått skriftlig varsel i forkant. Varselet gis straks det er fare for at eleven ikke får karakter, for eksempel når fraværet nærmer seg 10 prosent, og til foreldrene også hvis eleven er under 18. Varselet skal gi eleven mulighet til å få karakter. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, selv om fraværsgrensen er overskredet."
+    nn: "Ein elev kan ikkje miste karakteren på grunn av fråvær utan å ha fått skriftleg varsel på førehand. Varselet blir gitt straks det er fare for at eleven ikkje får karakter, til dømes når fråværet nærmar seg 10 prosent, og til foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sjølv om fråværsgrensa er overskriden."
+  ansvar:
+    nb: "Skolen, på vegne av fylkeskommunen."
+    nn: "Skolen, på vegner av fylkeskommunen."
+  dokumentasjon:
+    nb: "Skriftlig varsel med dato, om fare for IV på grunn av fravær."
+    nn: "Skriftleg varsel med dato, om fare for IV på grunn av fråvær."
+  frist:
+    nb: "Straks det er fare for at fraværet gjør at eleven ikke får karakter."
+    nn: "Straks det er fare for at fråværet gjer at eleven ikkje får karakter."
+  fristKort:
+    nb: "Straks"
+    nn: "Straks"
+  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/11-1]
+  forklaring:
+    nb: "Det samme gjelder fare for Ng eller Lg i orden eller oppførsel: eleven skal varsles skriftlig i forkant. Foreldre til elever under 18 har dessuten rett på melding om fraværet, og den kommer før varselet."
+    nn: "Det same gjeld fare for Ng eller Lg i orden eller oppførsel: eleven skal varslast skriftleg på førehand. Foreldre til elevar under 18 har dessutan rett på melding om fråværet, og den kjem før varselet."
+  sporsmal:
+    tekst:
+      nb: "Er eleven varslet skriftlig om at fraværet kan føre til at eleven ikke får karakter?"
+      nn: "Er eleven varsla skriftleg om at fråværet kan føre til at eleven ikkje får karakter?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja, i forkant", nn: "Ja, på førehand" }, neste: vu-halvaar-standpunkt }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-uten-varsel }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "7. Hvordan bør skolene informere og følge opp elevene", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/7.-hvordan-bor-skolene-informere-og-folge-opp-elevene/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «når fraværet nærmer seg 10 prosent» et godt eksempel på når varselet skal gis (rundskrivet punkt 6.1)?"
+
+- id: vu-varsel-grunnlag
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Varsel om manglende grunnlag"
+    nn: "Varsel om manglande grunnlag"
+  tekst:
+    nb: "Er det tvil om faglæreren har grunnlag for karakter, skal eleven varsles skriftlig straks, og foreldrene også hvis eleven er under 18. Varselet skal gi eleven mulighet til å få karakter. Det gis én gang per fag, og på nytt før standpunkt selv om eleven ble varslet før halvårsvurderingen. Er eleven ikke varslet, skal eleven ha karakter, satt på det grunnlaget faglæreren har."
+    nn: "Er det tvil om faglæraren har grunnlag for karakter, skal eleven varslast skriftleg straks, og foreldra også dersom eleven er under 18. Varselet skal gi eleven høve til å få karakter. Det blir gitt éin gong per fag, og på nytt før standpunkt sjølv om eleven blei varsla før halvårsvurderinga. Er eleven ikkje varsla, skal eleven ha karakter, sett på det grunnlaget faglæraren har."
+  ansvar:
+    nb: "Skolen, på vegne av fylkeskommunen."
+    nn: "Skolen, på vegner av fylkeskommunen."
+  dokumentasjon:
+    nb: "Skriftlig varsel med dato, om fare for IV fordi grunnlaget for vurdering mangler."
+    nn: "Skriftleg varsel med dato, om fare for IV fordi grunnlaget for vurdering manglar."
+  frist:
+    nb: "Straks det er tvil om eleven kan få karakter."
+    nn: "Straks det er tvil om eleven kan få karakter."
+  fristKort:
+    nb: "Straks"
+    nn: "Straks"
+  paragrafer: [opplaeringsforskrifta/9-7]
+  forklaring:
+    nb: "Det samme gjelder fare for Ng eller Lg i orden eller oppførsel: eleven skal varsles skriftlig i forkant."
+    nn: "Det same gjeld fare for Ng eller Lg i orden eller oppførsel: eleven skal varslast skriftleg på førehand."
+  sporsmal:
+    tekst:
+      nb: "Er eleven varslet skriftlig om at grunnlaget for karakter kan mangle?"
+      nn: "Er eleven varsla skriftleg om at grunnlaget for karakter kan mangle?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja, og grunnlaget mangler fortsatt", nn: "Ja, og grunnlaget manglar framleis" }, neste: vu-halvaar-standpunkt }
+      - { id: nei, tekst: { nb: "Nei", nn: "Nei" }, neste: vu-uten-varsel }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det klart nok at varselet skal gi eleven mulighet til å få karakter, for eksempel ved å vise kompetansen sin før karakteren settes (§ 9-7 tredje ledd)?"
+
+- id: vu-uten-varsel
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Karakter uten varsel"
+    nn: "Karakter utan varsel"
+  tekst:
+    nb: "Er eleven ikke varslet skriftlig i forkant, skal eleven få karakter. Det gjelder også når fraværsgrensen er overskredet, og når grunnlaget er tynt. Faglæreren setter karakteren ut fra kompetansemålene og det grunnlaget som finnes. Opphever klageinstansen et vedtak om IV, og eleven ikke var varslet, skal skolen sette karakter."
+    nn: "Er eleven ikkje varsla skriftleg på førehand, skal eleven få karakter. Det gjeld også når fråværsgrensa er overskriden, og når grunnlaget er tynt. Faglæraren set karakteren ut frå kompetansemåla og det grunnlaget som finst. Opphevar klageinstansen eit vedtak om IV, og eleven ikkje var varsla, skal skolen setje karakter."
+  ansvar:
+    nb: "Faglæreren setter karakteren."
+    nn: "Faglæraren set karakteren."
+  paragrafer: [opplaeringsforskrifta/9-7, opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/i.-generelle-reglar/-9-7-varsling-om-at-karakteren-kan-falle-bort-eller-bli-sett-ned/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.1 Varsel", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at faglæreren må sette karakter på det grunnlaget som finnes, også når grunnlaget er tynt, hvis eleven ikke er varslet?"
+    - "Er setningen om at skolen skal sette karakter når et IV-vedtak oppheves og eleven ikke var varslet, riktig og nyttig her (merknaden til kapittel 10)?"
+
+- id: vu-halvaar-standpunkt
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Halvår eller standpunkt"
+    nn: "Halvår eller standpunkt"
+  tekst:
+    nb: "Er eleven varslet og kan likevel ikke få karakter, avhenger det videre av om det gjelder halvårsvurdering eller standpunkt."
+    nn: "Er eleven varsla og kan likevel ikkje få karakter, kjem det vidare an på om det gjeld halvårsvurdering eller standpunkt."
+  paragrafer: [opplaeringsforskrifta/9-16]
+  sporsmal:
+    tekst:
+      nb: "Hvilken vurdering gjelder det?"
+      nn: "Kva vurdering gjeld det?"
+    svar:
+      - { id: halvaar, tekst: { nb: "Halvårsvurdering med karakter", nn: "Halvårsvurdering med karakter" }, neste: vu-ingen-halvaar }
+      - { id: standpunkt, tekst: { nb: "Standpunktkarakter", nn: "Standpunktkarakter" }, neste: vu-iv }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.2 Vedtak og klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Trengs dette steget, eller bør skillet stå i steget om varsel?"
+
+- id: vu-ingen-halvaar
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Ingen halvårsvurdering med karakter"
+    nn: "Inga halvårsvurdering med karakter"
+  tekst:
+    nb: "Eleven får ikke halvårsvurdering med karakter i faget. Det er ikke et enkeltvedtak, og det er ikke klagerett. Eleven har fortsatt rett til opplæring og underveisvurdering, og kan få standpunktkarakter senere."
+    nn: "Eleven får ikkje halvårsvurdering med karakter i faget. Det er ikkje eit enkeltvedtak, og det er ikkje klagerett. Eleven har framleis rett til opplæring og undervegsvurdering, og kan få standpunktkarakter seinare."
+  kilder:
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.2 Vedtak og klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "4.1 Rett til vurdering", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/4.elever-som-overskrider-fravarsgrensen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at eleven kan få standpunktkarakter senere selv om halvårsvurderingen med karakter faller bort?"
+
+- id: vu-iv
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Vedtak om IV"
+    nn: "Vedtak om IV"
+  tekst:
+    nb: "Rektor selv fatter vedtak om at eleven ikke får standpunktkarakter i faget. Det føres IV (ikke vurderingsgrunnlag). Har eleven hatt eksamen i faget, annulleres den. Eleven kan ha rett til mer opplæring i faget, eller ta det som privatist. Eleven kan klage innen 10 dager."
+    nn: "Rektor sjølv gjer vedtak om at eleven ikkje får standpunktkarakter i faget. Det blir ført IV (ikkje vurderingsgrunnlag). Har eleven hatt eksamen i faget, blir han annullert. Eleven kan ha rett til meir opplæring i faget, eller ta det som privatist. Eleven kan klage innan 10 dagar."
+  ansvar:
+    nb: "Rektor selv."
+    nn: "Rektor sjølv."
+  dokumentasjon:
+    nb: "Enkeltvedtak med grunngiving, fraværet og grensen, og datoen for varselet."
+    nn: "Enkeltvedtak med grunngiving, fråværet og grensa, og datoen for varselet."
+  frist:
+    nb: "Klage innen 10 dager."
+    nn: "Klage innan 10 dagar."
+  fristKort:
+    nb: "Klage: 10 dager"
+    nn: "Klage: 10 dagar"
+  paragrafer: [opplaeringsforskrifta/9-16, opplaeringsforskrifta/9-41, opplaeringsforskrifta/5-2, opplaeringsforskrifta/10-5]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-41", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-41" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-5" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "4.2 Mer opplæring og privatist", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/4.elever-som-overskrider-fravarsgrensen/" }
+    - { id: udir-rundskriv-fravarsgrensen, punkt: "6.2 og 6.3 Vedtak, klage og føring", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/rundskriv-om-fravarsgrensen/6.-hva-ma-skolen-gjore/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å nevne mer opplæring (§ 5-2) for elever med IV, slik rundskrivet punkt 4.2 gjør?"
+
+- id: vu-karakter
+  type: steg
+  veiviser: grunnlag-for-vurdering
+  fase: varsel
+  tittel:
+    nb: "Karakter settes"
+    nn: "Karakter blir sett"
+  tekst:
+    nb: "Faglæreren setter karakter ut fra kompetansemålene. Standpunkt settes så sent som mulig, og senest dagen før sensur når eleven har eksamen i faget. Karakteren er fastsatt når den er ført. Med 2 eller bedre er faget bestått. Med 1 i standpunkt har eleven rett til særskilt eksamen og mer opplæring."
+    nn: "Faglæraren set karakter ut frå kompetansemåla. Standpunkt blir sett så seint som mogleg, og seinast dagen før sensur når eleven har eksamen i faget. Karakteren er fastsett når han er ført. Med 2 eller betre er faget bestått. Med 1 i standpunkt har eleven rett til særskild eksamen og meir opplæring."
+  ansvar:
+    nb: "Faglæreren setter karakteren."
+    nn: "Faglæraren set karakteren."
+  frist:
+    nb: "Standpunkt senest dagen før sensur av eksamen i faget."
+    nn: "Standpunkt seinast dagen før sensur av eksamen i faget."
+  fristKort:
+    nb: "Før sensur"
+    nn: "Før sensur"
+  paragrafer: [opplaeringsforskrifta/9-16, opplaeringsforskrifta/9-3, opplaeringsforskrifta/9-9, opplaeringsforskrifta/9-38]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 tredje–femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-16", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/iii.-sluttvurdering/-9-16-standpunktkarakterar-i-fag/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-3 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-3" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at retten til mer opplæring gjelder ved 1 i standpunkt (§ 5-2 første ledd)?"
