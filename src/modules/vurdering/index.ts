@@ -78,7 +78,7 @@ export const manifest: Modulmanifest = {
         type: 'tidslinje' as const,
         tittel: begge('vurdering.frister.tittel'),
         tekst: begge('vurdering.frister.beskrivelse'),
-        stikkord: ['frist', 'eksamensdato', 'trekk', 'sensur', 'klagefrist', 'oppmelding', 'tidslinje', 'privatist'],
+        stikkord: ['frist', 'eksamensdato', 'trekk', 'sensur', 'klage', 'klagefrist', 'oppmelding', 'kalender', 'tidslinje', 'privatist'],
         rute: fristerRute,
         modul: 'vurdering',
       },

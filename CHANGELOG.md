@@ -9,7 +9,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 - **Eksamen** i Vurdering: hvor mange eksamener elevene har på hvert trinn (rutenett), oppmelding, gjennomføring og sensur, særskilt tilrettelegging, og utsatt, ny og særskilt eksamen side om side. Vestland: bortvisning og annullering etter skulereglane.
 - **Veiviseren «Klage på karakter»** (bær): hva eleven kan klage på, begrunnelse og frist, hva skolen kan gjøre, og hva statsforvalteren, klagenemnda eller fylkestinget kan komme til.
 - **Fag- og svenneprøven og de andre prøvene**: krav før prøven, oppmelding, prøvenemnda, karakterer, tilrettelegging, ny og utsatt prøve, og klage.
-- **Eksamen og klage gjennom året**: tidslinje fra august til juli med filter for elever, privatister og lærlinger. Datoene hentes fra Udir og fylkeskommunene hvert halvår. Fylkets egne datoer vises når fylket er valgt.
+- **Kalender for eksamen**: kalender fra august til juli for oppmelding, trekk, eksamen, sensur og klage, med filter for elever, privatister og lærlinger. Datoene hentes fra Udir og fylkeskommunene hvert halvår. Fylkets egne datoer vises når fylket er valgt.
 - **Nye begreper:** trekkfag, sentralt og lokalt gitt eksamen, tverrfaglig eksamen, utsatt, ny og særskilt eksamen, særskilt tilrettelegging av eksamen, fag- og svenneprøve, prøvenemnd, klagenemnd, og vitnemål og kompetansebevis.
 - **Fagarket** lenker til eksamen i boksen «Fravær og eksamen».
 

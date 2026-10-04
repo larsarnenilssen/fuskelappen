@@ -173,7 +173,7 @@ export const vurderingNn = {
     beskrivelse: 'Steg for steg: grunngiving, frist, kva skolen kan gjere, og klageinstansen.',
   },
   frister: {
-    tittel: 'Kalender for eksamen og klage',
+    tittel: 'Kalender for eksamen',
     kort: 'Datoar og fristar',
     beskrivelse: 'Oppmelding, trekk, eksamen, sensur og klage, frå august til juli, for elevar, privatistar og lærlingar.',
     innledning: 'Datoane for eksamen og klage gjennom skoleåret, frå august til juli. Trykk på ein dato for å lese meir.',
@@ -188,7 +188,7 @@ export const vurderingNn = {
     nasjonal: 'Nasjonal',
     heleAret: 'Heile året',
     neste: 'Neste dato',
-    alle: 'Kalender for eksamen og klage',
+    alle: 'Kalender for eksamen',
     tomt: 'Ingen datoar for dette valet.',
     kilde: 'Datoane frå Udir og fylkeskommunane blir henta kvart halvår. Datoen til Udir gjeld når kjeldene er usamde.',
     eksamensplan: 'Eksamensplanen hos Udir',

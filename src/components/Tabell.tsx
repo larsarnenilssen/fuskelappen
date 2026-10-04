@@ -11,8 +11,7 @@ export function Tabell({ tabell, tittel }: { tabell: TabellData; tittel: Flerspr
     return (
       <ul class={`tabell-kort${tabell.form === 'bokser' ? ' tabell-bokser' : ''}`} aria-label={tittel[malform]}>
         {tabell.rader.map((r) => (
-          // `--rader` er tittelen og én rad per kolonne, så radene står på linje på tvers av boksene på stor skjerm.
-          <li key={r.tittel.nb} class="tabell-kort-rad" style={{ '--rader': String(tabell.kolonner.length + 1) }}>
+          <li key={r.tittel.nb} class="tabell-kort-rad">
             <h3 class="tabell-kort-tittel">{r.tittel[malform]}</h3>
             <dl>
               {r.celler.map((c, i) => (

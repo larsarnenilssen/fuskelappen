@@ -6876,7 +6876,7 @@ button.frist-stripe-celle:hover {
 
 /*
  * De blå boksene for prøvene (eier 04.10.2026): som boksene for elever og privatister på fagarket, med etiketten til
- * venstre og verdien til høyre. På stor skjerm står radene på linje på tvers av boksene (subgrid).
+ * venstre og verdien til høyre.
  */
 .tabell-bokser .tabell-kort-rad {
   border-color: transparent;
@@ -6910,24 +6910,10 @@ button.frist-stripe-celle:hover {
   hyphens: auto;
 }
 
+/* Boksene står under hverandre også på stor skjerm, så teksten får plass på én linje (eier 04.10.2026). */
 @media (min-width: 48rem) {
-  .tabell-bokser .tabell-kort-rad {
-    display: grid;
-    grid-row: span var(--rader, 3);
-    grid-template-rows: subgrid;
-    row-gap: var(--rom-2);
-  }
-
-  .tabell-bokser .tabell-kort-tittel {
-    margin: 0;
-  }
-
-  .tabell-bokser dl {
-    display: contents;
-  }
-
-  .tabell-bokser dl > div {
-    margin: 0;
+  .tabell-bokser {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
