@@ -300,3 +300,13 @@ Etter eiers innspill om navigasjon, tidslinjen, side om side-visningen og siden 
 - **Underveis- og sluttvurdering:** Tidslinjen er én linje med underveisvurdering hele året, og halvår, eksamen og standpunkt som felt med etikettene over og under. Forskjellen står i én boks med de to kolonnene og felles underoverskrifter på hver rad, så radene står på linje.
 - **Fag- og svennebrev:** Tre faner etter hvorfor brukeren kommer: «Veiene» (velg mål, se veiene med stegene som knapper, hvem som melder opp, fellesfag og kilde), «Sammenlign» (velg to veier, side om side i samme boks som over) og «Bytte vei» (fra der man er, til veiene videre, med vilkår og kilde). Ordet «klosser» brukes ikke.
 - **Hver vei har egen side** med «Kommer fra» og «Veien videre» som knapper, og prøven i Vurdering som første kort.
+
+### Mockup 4: veiene til fag- og svennebrev (04.10.2026)
+
+Eier ba om flere veier (påbygging, lærling før Vg1 eller etter Vg1, praksiskandidat uten skole, opphenting fra Vg1 studieforberedende) og kilder for fellesfagene. Lest 04.10.2026 (notater: Udir-1-2026 pkt. 3.1, 3.4.2–3.4.5, 3.5.2–3.5.3, Udirs sider om lærekandidat, praksisbrevkandidat, fagbrev på jobb, veilederen om praksiskandidatordningen, ol. § 5-1–§ 5-7, § 7-1–§ 7-3, § 18-3–§ 18-8, § 23-2, ofo. § 6-2–§ 6-12, § 9-46–§ 9-58):
+
+- **Veiene til fag- eller svennebrev (8):** lærling i hovedmodellen; lærling rett etter grunnskolen eller etter Vg1 (0+4, 1+3, særløp); praksisbrev og så fagbrev; fra Vg1 studieforberedende med yrkesfaglig opphenting eller kryssløp; Vg3 i skole uten læreplass; lærekandidat som blir lærling; fagbrev på jobb; praksiskandidat. Voksne (ol. kap. 18) står under hver vei.
+- **Bytte vei:** fra grunnskolen, Vg1 studieforberedende, Vg1 yrkesfag, Vg2 yrkesfag (også Vg3 påbygging, som bruker opp ungdomsretten), lærling, lærekandidat, praksisbrevkandidat, ferdig fagbrev (Vg4 påbygging, nytt fagbrev) og praksis i arbeidslivet.
+- **Fellesfag i veiene** som egen liste i «Sammenlign».
+- **Ikke funnet i nasjonale kilder:** fellesfag for lærekandidater (står i planen for kandidaten), fellesfag i TAF/YSK og vekslingsmodeller, uttrykkelig regel om godskriving når lærekandidat blir lærling, nedre aldersgrense for yrkesfaglig rekvalifisering, krav om grunnskole for praksiskandidater.
+- **Udirs kilder er uenige** noen steder: merknaden til § 7-6 om særløp (læreplass etter Vg3) mot Udir-1 (kontrakt etter Vg1); merknadene til § 6-3, § 6-4, § 7-1, § 7-3 og § 7-6 viser til «opplæringsloven § 7-7 tredje ledd»; § 9-64 viser til ol. § 7-4 sjette ledd om opplæringsmål; merknadene til § 9-46 og § 9-48 nevner et unntak for fremmedspråk som ikke står i paragrafen. Nasjonale rammer for yrkesfaglig opphenting (2018) har hjemmel i den gamle loven.
