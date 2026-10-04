@@ -1,0 +1,301 @@
+# Oversikten «Eksamen» (fase 6, pakke 3). Egne ord. Godkjent i forslaget av eier 04.10.2026
+# (docs/arbeidsordrer/fase-6-forslag.md, «Oversikten «Eksamen»»). Bygger på opplæringsforskrifta kapittel 9 del V og
+# § 5-2, Udirs merknader til paragrafene og Udirs side om særskilt tilrettelegging av eksamen. Kortene står i
+# rekkefølgen på siden. `tabell` vises som rutenett eller som kort, og står åpen over kortet.
+- id: ek-trekk
+  type: forklaring
+  tittel:
+    nb: "Trekk og antall eksamener"
+    nn: "Trekk og tal på eksamenar"
+  tekst:
+    nb: |-
+      Læreplanen i hvert fag sier om alle skal ha eksamen, eller om noen elever trekkes ut. Udir bestemmer datoen trekket blir kjent for elevene. Eleven trekkes ikke ut i et fag der eleven får mer opplæring etter å ha bestått eksamenene.
+
+      - **Vg3 studieforberedende:** Realfag og språk, samfunnsfag og økonomi har normalt to skriftlige og én muntlig, praktisk eller muntlig-praktisk eksamen. Musikk, dans og drama har to trekk, og én av dem er muntlig-praktisk i eget programområde. De andre har tre trekk, minst ett fra eget programområde.
+      - **Vg3 yrkesfag i skole:** Studieforberedende naturbruk har hovedmålet og to trekk, ett av dem i et felles programfag. Landbruk har tverrfaglig eksamen og ett valgfritt programfag.
+      - **Påbygging for dem med fag- eller svennebrev eller yrkeskompetanse:** hovedmålet og to trekk.
+    nn: |-
+      Læreplanen i kvart fag seier om alle skal ha eksamen, eller om nokre elevar blir trekte ut. Udir bestemmer datoen trekket blir kjent for elevane. Eleven blir ikkje trekt ut i eit fag der eleven får meir opplæring etter å ha bestått eksamenane.
+
+      - **Vg3 studieførebuande:** Realfag og språk, samfunnsfag og økonomi har normalt to skriftlege og éin munnleg, praktisk eller munnleg-praktisk eksamen. Musikk, dans og drama har to trekk, og éin av dei er munnleg-praktisk i eige programområde. Dei andre har tre trekk, minst eitt frå eige programområde.
+      - **Vg3 yrkesfag i skole:** Studieførebuande naturbruk har hovudmålet og to trekk, eitt av dei i eit felles programfag. Landbruk har tverrfagleg eksamen og eitt valfritt programfag.
+      - **Påbygging for dei med fag- eller sveinebrev eller yrkeskompetanse:** hovudmålet og to trekk.
+  tabell:
+    form: rutenett
+    kolonner:
+      - { nb: "Studie\u00adforberedende", nn: "Studie\u00adførebuande" }
+      - { nb: Yrkesfag, nn: Yrkesfag }
+    rader:
+      - tittel: { nb: Vg1, nn: Vg1 }
+        celler:
+          - { tall: "20 %", tekst: { nb: "trekkes ut til én eksamen", nn: "blir trekte ut til éin eksamen" } }
+          - { tall: "20 %", tekst: { nb: "trekkes ut til én eksamen", nn: "blir trekte ut til éin eksamen" } }
+      - tittel: { nb: Vg2, nn: Vg2 }
+        celler:
+          - { tall: "1", tekst: { nb: "Alle trekkes ut til én eksamen.", nn: "Alle blir trekte ut til éin eksamen." } }
+          - { tall: "1 + 20 %", tekst: { nb: "Tverrfaglig eksamen for alle, og om lag 20 % trekkes i tillegg ut.", nn: "Tverrfagleg eksamen for alle, og om lag 20 % blir i tillegg trekte ut." } }
+      - tittel: { nb: Vg3, nn: Vg3 }
+        celler:
+          - { tall: "1 + 3", tekst: { nb: "Hovedmålet skriftlig og tre trekk.", nn: "Hovudmålet skriftleg og tre trekk." } }
+          - { tall: "Prøve", tekst: { nb: "Fag- eller svenneprøve etter læretiden.", nn: "Fag- eller sveineprøve etter læretida." } }
+      - tittel: { nb: "På\u00adbygging", nn: "På\u00adbygging" }
+        celler:
+          - { tall: "1 + 2", tekst: { nb: "Hovedmålet skriftlig, og én skriftlig og én muntlig eller praktisk eksamen.", nn: "Hovudmålet skriftleg, og éin skriftleg og éin munnleg eller praktisk eksamen." } }
+  paragrafer: [opplaeringsforskrifta/9-28, opplaeringsforskrifta/9-30, opplaeringsforskrifta/9-31]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 første til tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-30 og § 9-31", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-30" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-31", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-31-talet-pa-eksamenar-pa-yrkesfaglege-utdanningsprogram/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at de om lag 20 prosent på Vg2 yrkesfag trekkes ut i tillegg til den tverrfaglige eksamenen (§ 9-31 første og andre ledd)?"
+    - "Påbygging etter opplæringslova § 5-7 er skrevet som «for dem med fag- eller svennebrev eller yrkeskompetanse». Er det en god forenkling?"
+    - "Er rutenettet (trinn mot studieforberedende og yrkesfag) en god måte å vise § 9-30 og § 9-31 på, eller mangler noe viktig?"
+
+- id: ek-sentralt-lokalt
+  type: forklaring
+  tittel:
+    nb: "Sentralt og lokalt gitt eksamen"
+    nn: "Sentralt og lokalt gitt eksamen"
+  tekst:
+    nb: "Læreplanen sier om eksamen er sentralt eller lokalt gitt, og om det er en forberedelsesdel. Ved sentralt gitt eksamen lager Udir oppgavene, setter datoen og bestemmer sensuren. Ved lokalt gitt eksamen gjør fylkeskommunen det, og faglæreren foreslår oppgaver. Fylkeskommunen gjennomfører alle eksamenene og trekker ut elevene. Fagarket viser hva som gjelder i faget."
+    nn: "Læreplanen seier om eksamen er sentralt eller lokalt gitt, og om det er ein førebuingsdel. Ved sentralt gitt eksamen lagar Udir oppgåvene, set datoen og bestemmer sensuren. Ved lokalt gitt eksamen gjer fylkeskommunen det, og faglæraren foreslår oppgåver. Fylkeskommunen gjennomfører alle eksamenane og trekkjer ut elevane. Fagarket viser kva som gjeld i faget."
+  paragrafer: [opplaeringsforskrifta/9-25, opplaeringsforskrifta/9-26]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 andre ledd og § 9-26", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å skrive «fylkeskommunen» der forskriften sier «kommunen eller fylkeskommunen», siden appen gjelder videregående?"
+
+- id: ek-oppmelding
+  type: forklaring
+  naar: { nb: Udir fastsetter fristene, nn: Udir fastset fristane }
+  tittel:
+    nb: "Oppmelding"
+    nn: "Oppmelding"
+  tekst:
+    nb: |-
+      Udir fastsetter fristene for oppmelding. Datoene står i [kalenderen](#/vurdering/eksamen-og-klage).
+
+      - **Elever:** Skolen melder opp alle elever i fag som avsluttes med eksamen. Til ny, utsatt og særskilt eksamen melder eleven seg selv, til skolen.
+      - **Lærlinger og kandidater for fagbrev på jobb:** Lærebedriften melder opp.
+      - **Privatister:** Melder seg selv, der fylkeskommunen bestemmer, og betaler prøveavgift. Ny og utsatt eksamen er gratis.
+    nn: |-
+      Udir fastset fristane for oppmelding. Datoane står i [kalenderen](#/vurdering/eksamen-og-klage).
+
+      - **Elevar:** Skolen melder opp alle elevar i fag som blir avslutta med eksamen. Til ny, utsett og særskild eksamen melder eleven seg sjølv, til skolen.
+      - **Lærlingar og kandidatar for fagbrev på jobb:** Lærebedrifta melder opp.
+      - **Privatistar:** Melder seg sjølve, der fylkeskommunen bestemmer, og betaler prøveavgift. Ny og utsett eksamen er gratis.
+  paragrafer: [opplaeringsforskrifta/9-27]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: udir-administrere-eksamen, punkt: "Påmelding av eksamenskandidater" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å skrive at ny og utsatt eksamen er gratis for privatister (§ 9-27 sjette ledd)?"
+
+- id: ek-trekket
+  type: forklaring
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  tittel:
+    nb: "Trekket blir kjent"
+    nn: "Trekket blir kjent"
+  tekst:
+    nb: "Elevene får vite hvilke fag de er trukket ut til, på datoen Udir fastsetter. Det gjelder både skriftlig, muntlig og praktisk eksamen. Datoene står i [kalenderen](#/vurdering/eksamen-og-klage)."
+    nn: "Elevane får vite kva fag dei er trekte ut til, på datoen Udir fastset. Det gjeld både skriftleg, munnleg og praktisk eksamen. Datoane står i [kalenderen](#/vurdering/eksamen-og-klage)."
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: udir-administrere-eksamen, punkt: "Trekk på videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder Udirs trekkdato også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?"
+
+- id: ek-forberedelse
+  type: forklaring
+  naar: { nb: 24–48 timer før, nn: 24–48 timar før }
+  tittel:
+    nb: "Forberedelse"
+    nn: "Førebuing"
+  tekst:
+    nb: "Læreplanen sier om eksamen har en forberedelsesdel. Den er en del av opplæringen, og det som vurderes, er det kandidaten viser på eksamensdagen. Før muntlig eksamen varer den 24 timer, ellers 24 til 48 timer. Forberedelse og eksamen holdes på virkedager."
+    nn: "Læreplanen seier om eksamen har ein førebuingsdel. Han er ein del av opplæringa, og det som blir vurdert, er det kandidaten viser på eksamensdagen. Før munnleg eksamen varer han 24 timar, elles 24 til 48 timar. Førebuing og eksamen blir haldne på verkedagar."
+  paragrafer: [opplaeringsforskrifta/9-32, opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-32 og § 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-32" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at forberedelsesdelen før muntlig eksamen alltid er 24 timer (§ 9-32 andre ledd)?"
+
+- id: ek-gjennomforing
+  type: forklaring
+  naar: { nb: Skriftlig kl. 09.00, nn: Skriftleg kl. 09.00 }
+  tittel:
+    nb: "Eksamensdagen"
+    nn: "Eksamensdagen"
+  tekst:
+    nb: |-
+      Skriftlig eksamen starter kl. 09.00. Kandidater som kommer før kl. 10.00, kan gjennomføre, men får ikke igjen tiden de har tapt. Hvis ikke læreplanen sier noe annet, er tidsrammene:
+
+      - **Skriftlig:** opptil fem timer
+      - **Muntlig:** opptil 30 minutter per kandidat
+      - **Muntlig-praktisk:** opptil 45 minutter per kandidat
+      - **Praktisk:** opptil fem timer per kandidat
+    nn: |-
+      Skriftleg eksamen startar kl. 09.00. Kandidatar som kjem før kl. 10.00, kan gjennomføre, men får ikkje att tida dei har tapt. Viss ikkje læreplanen seier noko anna, er tidsrammene:
+
+      - **Skriftleg:** opptil fem timar
+      - **Munnleg:** opptil 30 minutt per kandidat
+      - **Munnleg-praktisk:** opptil 45 minutt per kandidat
+      - **Praktisk:** opptil fem timar per kandidat
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 fjerde og femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er tidsrammene i § 9-28 fjerde ledd gjengitt riktig?"
+
+- id: ek-sensur
+  type: forklaring
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  tittel:
+    nb: "Sensur"
+    nn: "Sensur"
+  tekst:
+    nb: "To sensorer vurderer hvert svar. Ved sentralt gitt eksamen er begge eksterne, og er de uenige, avgjør en oppmann. Ved lokalt gitt eksamen er minst én ekstern. Faglæreren kan ikke være sensor ved lokalt gitt skriftlig eksamen, men skal være det ved muntlig og praktisk eksamen hvis fylkeskommunen vil. En fagarbeider kan være sensor i programfag på yrkesfag."
+    nn: "To sensorar vurderer kvart svar. Ved sentralt gitt eksamen er begge eksterne, og er dei usamde, avgjer ein oppmann. Ved lokalt gitt eksamen er minst éin ekstern. Faglæraren kan ikkje vere sensor ved lokalt gitt skriftleg eksamen, men skal vere det ved munnleg og praktisk eksamen dersom fylkeskommunen vil. Ein fagarbeidar kan vere sensor i programfag på yrkesfag."
+  paragrafer: [opplaeringsforskrifta/9-33]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-33", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-33" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«Oppmann» er ordet i forskriften («ein oppmann eller ei oppkvinne»). Er det greit å bruke bare det?"
+
+- id: ek-klage
+  type: forklaring
+  naar: { nb: Ti dager, nn: Ti dagar }
+  tittel:
+    nb: "Karakteren og klage"
+    nn: "Karakteren og klage"
+  tekst:
+    nb: "Kandidaten kan klage innen ti dager. På skriftlig eksamen kan kandidaten klage på selve karakteren, og en klagenemnd avgjør. På muntlig og praktisk eksamen kan kandidaten bare klage på formelle feil, og statsforvalteren avgjør. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+    nn: "Kandidaten kan klage innan ti dagar. På skriftleg eksamen kan kandidaten klage på sjølve karakteren, og ei klagenemnd avgjer. På munnleg og praktisk eksamen kan kandidaten berre klage på formelle feil, og statsforvaltaren avgjer. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter). Får eleven 1, har eleven rett til ny eksamen."
+  paragrafer: [opplaeringsforskrifta/10-2, opplaeringsforskrifta/10-7, opplaeringsforskrifta/10-8, opplaeringsforskrifta/9-37]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2, § 10-7 og § 10-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av klagereglene for eksamen dekkende som et steg i stien?"
+
+- id: ek-bortvisning
+  type: forklaring
+  tittel:
+    nb: "Bortvisning og annullering"
+    nn: "Bortvising og annullering"
+  tekst:
+    nb: |-
+      En kandidat kan vises bort, og eksamen kan annulleres av flere grunner.
+
+      - **Bortvisning:** En kandidat som hindrer eller forstyrrer eksamen, kan vises bort etter en advarsel. Rektor avgjør for elever, og fylkeskommunen for privatister, lærlinger og praksiskandidater. Elever og lærlinger får rett til ny eksamen.
+      - **Juks:** Rektor annullerer eksamen for en elev som jukser eller prøver å jukse, og standpunktkarakteren i faget faller bort. Kandidaten får fullføre eksamensdagen og kan ta eksamen på nytt tidligst etter ett år.
+      - **Feil ved gjennomføringen:** Udir kan annullere eksamen. Kandidaten får rett til ny eksamen.
+      - **Uten standpunktkarakter:** Får eleven ikke standpunktkarakter i faget, annulleres eksamen.
+
+      Den det gjelder, skal få uttale seg før det avgjøres.
+    nn: |-
+      Ein kandidat kan visast bort, og eksamen kan annullerast av fleire grunnar.
+
+      - **Bortvising:** Ein kandidat som hindrar eller forstyrrar eksamen, kan visast bort etter ei åtvaring. Rektor avgjer for elevar, og fylkeskommunen for privatistar, lærlingar og praksiskandidatar. Elevar og lærlingar får rett til ny eksamen.
+      - **Juks:** Rektor annullerer eksamen for ein elev som jukser eller prøver å jukse, og standpunktkarakteren i faget fell bort. Kandidaten får fullføre eksamensdagen og kan ta eksamen på nytt tidlegast etter eitt år.
+      - **Feil ved gjennomføringa:** Udir kan annullere eksamen. Kandidaten får rett til ny eksamen.
+      - **Utan standpunktkarakter:** Får ikkje eleven standpunktkarakter i faget, blir eksamen annullert.
+
+      Den det gjeld, skal få uttale seg før det blir avgjort.
+  paragrafer: [opplaeringsforskrifta/9-39, opplaeringsforskrifta/9-40, opplaeringsforskrifta/9-41, opplaeringsforskrifta/9-42]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-39 til § 9-42", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-39" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Tverrfaglig eksamen annulleres bare når eleven ikke får standpunktkarakter i noen av programfagene (§ 9-41). Bør det stå?"
+
+- id: ek-tilrettelegging
+  type: forklaring
+  tittel:
+    nb: "Særskilt tilrettelegging av eksamen"
+    nn: "Særskild tilrettelegging av eksamen"
+  tekst:
+    nb: |-
+      Elever og privatister har rett til særskilt tilrettelegging når de trenger det for å vise kompetansen sin, f.eks. ved allergi eller funksjonsnedsettelse. Tilretteleggingen skal ikke veie opp for manglende kompetanse eller norskferdigheter, og skal ikke gi fordeler. Eksempler er lengre tid, opplesing, forstørret skrift, skrivehjelp og ekstra lys. Eksamensformen endres bare når ingen mindre tiltak er nok, og ikke når læreplanen krever ferdighetene.
+
+      Eleven søker fylkeskommunen. Det trengs ikke vedtak om individuelt tilrettelagt opplæring. Fylkeskommunen kan sette en veiledende frist, men kan ikke avslå bare fordi søknaden kom sent. Vedtaket er et enkeltvedtak som kan påklages. Tilrettelegging i opplæringen står i veiviseren [Tilpasset opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
+    nn: |-
+      Elevar og privatistar har rett til særskild tilrettelegging når dei treng det for å vise kompetansen sin, til dømes ved allergi eller funksjonsnedsetjing. Tilrettelegginga skal ikkje vege opp for manglande kompetanse eller norskferdigheiter, og skal ikkje gi fordelar. Døme er lengre tid, opplesing, forstørra skrift, skrivehjelp og ekstra lys. Eksamensforma blir berre endra når ingen mindre tiltak er nok, og ikkje når læreplanen krev ferdigheitene.
+
+      Eleven søkjer fylkeskommunen. Det trengst ikkje vedtak om individuelt tilrettelagd opplæring. Fylkeskommunen kan setje ein rettleiande frist, men kan ikkje avslå berre fordi søknaden kom seint. Vedtaket er eit enkeltvedtak som kan klagast på. Tilrettelegging i opplæringa står i vegvisaren [Tilpassa opplæring og individuell tilrettelegging](#/tilrettelegging/tilpasset-og-individuell).
+  paragrafer: [opplaeringsforskrifta/9-34]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-34", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-34" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }
+    - { id: udir-sarskilt-tilrettelegging-eksamen, punkt: "Generelt om særskilt tilrettelegging av eksamen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at fylkeskommunen ikke kan avslå bare fordi søknaden kom etter den veiledende fristen (merknaden til § 9-34)?"
+    - "Er rektor ofte delegert myndighet til å avgjøre søknadene? Bør det stå (forslaget nevnte «eller rektor ved delegering»)?"
+
+- id: ek-utsatt-ny-sarskilt
+  type: forklaring
+  tittel:
+    nb: "Utsatt, ny og særskilt eksamen"
+    nn: "Utsett, ny og særskild eksamen"
+  tekst:
+    nb: "Alle tre holdes ved første eksamen etter, og eleven melder seg selv til skolen. Består eleven, faller retten til mer opplæring i faget bort. Eleven velger selv om retten til mer opplæring skal brukes. Har eleven rett til både særskilt og utsatt eksamen i samme fag, gjelder reglene for særskilt eksamen."
+    nn: "Alle tre blir haldne ved første eksamen etter, og eleven melder seg sjølv til skolen. Består eleven, fell retten til meir opplæring i faget bort. Eleven vel sjølv om retten til meir opplæring skal brukast. Har eleven rett til både særskild og utsett eksamen i same fag, gjeld reglane for særskild eksamen."
+  tabell:
+    form: kort
+    kolonner:
+      - { nb: Hvem, nn: Kven }
+      - { nb: Når, nn: Når }
+      - { nb: Standpunktkarakteren, nn: Standpunktkarakteren }
+    rader:
+      - tittel: { nb: Utsatt eksamen, nn: Utsett eksamen }
+        celler:
+          - { tekst: { nb: "Elever og privatister med dokumentert fravær på eksamen, f.eks. legeerklæring for eksamensdagen.", nn: "Elevar og privatistar med dokumentert fråvær på eksamen, til dømes legeerklæring for eksamensdagen." } }
+          - { tekst: { nb: "Ved første eksamen etter. Ingen grense for hvor mange ganger.", nn: "Ved første eksamen etter. Inga grense for kor mange gonger." } }
+          - { tekst: { nb: "Står hvis eleven består. Faller bort hvis eleven ikke går opp eller ikke består.", nn: "Står dersom eleven består. Fell bort dersom eleven ikkje går opp eller ikkje består." } }
+      - tittel: { nb: Ny eksamen, nn: Ny eksamen }
+        celler:
+          - { tekst: { nb: "Elever som fikk 1 på eksamen, ble vist bort eller fikk eksamen annullert.", nn: "Elevar som fekk 1 på eksamen, vart viste bort eller fekk eksamen annullert." } }
+          - { tekst: { nb: "Ved første eksamen etter. Noen fylker har sommerskole med muntlig eksamen.", nn: "Ved første eksamen etter. Nokre fylke har sommarskule med munnleg eksamen." } }
+          - { tekst: { nb: "Står hvis eleven består. Faller bort hvis eleven ikke går opp eller får 1 igjen.", nn: "Står dersom eleven består. Fell bort dersom eleven ikkje går opp eller får 1 igjen." } }
+      - tittel: { nb: Særskilt eksamen, nn: Særskild eksamen }
+        celler:
+          - { tekst: { nb: "Elever som fikk 1 i standpunkt og ikke er trukket ut til eksamen i faget. Gjelder også fag uten eksamen.", nn: "Elevar som fekk 1 i standpunkt og ikkje er trekte ut til eksamen i faget. Gjeld også fag utan eksamen." } }
+          - { tekst: { nb: "Ved første eksamen etter, sammen med ny og utsatt eksamen.", nn: "Ved første eksamen etter, saman med ny og utsett eksamen." } }
+          - { tekst: { nb: "Består eleven, er faget bestått.", nn: "Består eleven, er faget bestått." } }
+  paragrafer: [opplaeringsforskrifta/9-36, opplaeringsforskrifta/9-37, opplaeringsforskrifta/9-38, opplaeringsforskrifta/5-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-36 til § 9-38 og § 5-2 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-36" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-36", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-36-utsett-eksamen-for-elevar-og-privatistar-i-den-vidaregaande-opplaringa/" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-37", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-37-ny-eksamen-for-elevar-i-den-vidaregaande-opplaringa/" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-38", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-38-sarskild-eksamen-for-elevar-i-den-vidaregaande-opplaringa/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Ved ny eksamen faller bare standpunktkarakteren som svarer til eksamenen bort (merknaden til § 9-37, f.eks. bare skriftlig hovedmål). Bør tabellen si det?"
+    - "Er det riktig at sommerskole er nevnt bare under ny eksamen, når merknaden til § 9-38 sier at det også gjelder særskilt eksamen?"
+
+- id: ek-vl-bortvisning
+  type: forklaring
+  gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
+  tittel:
+    nb: "Bortvisning og annullering i Vestland"
+    nn: "Bortvising og annullering i Vestland"
+  tekst:
+    nb: "Skulereglane i Vestland regner bortvisning fra og annullering av eksamen som en sanksjon med klagerett, etter vedtak av rektor selv. Klagen sendes til rektor, og fristen er vanligvis tre uker. Statsforvalteren er klageinstans."
+    nn: "Skulereglane i Vestland reknar bortvising frå og annullering av eksamen som ein sanksjon med klagerett, etter vedtak av rektor sjølv. Klaga blir send til rektor, og fristen er vanlegvis tre veker. Statsforvaltaren er klageinstans."
+  paragrafer: [vestland-skulereglar/8, vestland-skulereglar/13]
+  kilder:
+    - { id: vestland-forskrift-skulereglar, punkt: "§ 8 tredje ledd nr. 6" }
+    - { id: vestland-forskrift-skulereglar, punkt: "§ 13 første og tredje ledd" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit at Vestland-boksen bare gjengir skulereglane, uten fylkeskommunens egne sider om eksamen (vlfk.no hentes ikke ennå)?"

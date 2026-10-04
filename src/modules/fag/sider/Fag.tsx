@@ -157,8 +157,8 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
 /**
  * Boksen «Fravær og eksamen» under «Vurderingsordning», ved siden av boksene for elever og privatister (eier
  * 04.10.2026): fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt (VIGO), og fagmerknadene som hører til
- * faget (VIGO, lenke til FAM-oppslaget). Nederst står lenkene til Vurdering: kalkulatoren med faget valgt og
- * underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i boksen.
+ * faget (VIGO, lenke til FAM-oppslaget). Nederst står lenkene til Vurdering: kalkulatoren med faget valgt,
+ * underveis- og sluttvurdering i faget og oversikten «Eksamen» (fase 6, pakke 3). Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i boksen.
  */
 function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; rel: Fagrelasjoner | null; malform: Malform }) {
   const hent = useHent();
@@ -252,6 +252,12 @@ function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; 
         <li>
           <a class="lenke-pil" href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>
             {t('fag.side.tilVurdering')}
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+        <li>
+          <a class="lenke-pil" href="#/vurdering/eksamen">
+            {t('fag.side.tilEksamen')}
             <Ikon navn="hoyre" class="ikon-liten" />
           </a>
         </li>

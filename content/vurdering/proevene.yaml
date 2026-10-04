@@ -1,0 +1,208 @@
+# Siden «Fag- og svenneprøven og de andre prøvene» (fase 6, pakke 3, eier 04.10.2026: bygges nå, med lenke til Udir).
+# Prøvene som sluttvurdering. Veiene til fag- og svennebrev kommer i Opplæringstilbud, og «Veiene hit» legges inn da.
+# Egne ord. Bygger på opplæringsforskrifta kapittel 9 del VIII, § 9-5, § 5-2 og Udirs merknader.
+- id: pr-hva
+  type: forklaring
+  tittel:
+    nb: "Prøvene som sluttvurdering"
+    nn: "Prøvene som sluttvurdering"
+  tekst:
+    nb: "Lærlinger og elever på Vg3 i skole avslutter med fag- eller svenneprøven og får fag- eller svennebrev. Praksisbrevkandidater tar praksisbrevprøven og får praksisbrev. Lærekandidater tar kompetanseprøven og får kompetansebevis. Kandidater for fagbrev på jobb og praksiskandidater tar også fag- eller svenneprøven. Fylkeskommunen har ansvaret for prøvene og skal gjøre kandidatene kjent med reglene."
+    nn: "Lærlingar og elevar på Vg3 i skole avsluttar med fag- eller sveineprøva og får fag- eller sveinebrev. Praksisbrevkandidatar tek praksisbrevprøva og får praksisbrev. Lærekandidatar tek kompetanseprøva og får kompetansebevis. Kandidatar for fagbrev på jobb og praksiskandidatar tek også fag- eller sveineprøva. Fylkeskommunen har ansvaret for prøvene og skal gjere kandidatane kjende med reglane."
+  tabell:
+    form: bokser
+    kolonner:
+      - { nb: Hvem, nn: Kven }
+      - { nb: Gir, nn: Gir }
+    rader:
+      - tittel: { nb: Fag- eller svenneprøve, nn: Fag- eller sveineprøve }
+        celler:
+          - { tekst: { nb: "Lærlinger, elever på Vg3 i skole, kandidater for fagbrev på jobb og praksiskandidater.", nn: "Lærlingar, elevar på Vg3 i skole, kandidatar for fagbrev på jobb og praksiskandidatar." } }
+          - { tekst: { nb: "Fag- eller svennebrev.", nn: "Fag- eller sveinebrev." } }
+      - tittel: { nb: Praksisbrevprøve, nn: Praksisbrevprøve }
+        celler:
+          - { tekst: { nb: "Praksisbrevkandidater.", nn: "Praksisbrevkandidatar." } }
+          - { tekst: { nb: "Praksisbrev.", nn: "Praksisbrev." } }
+      - tittel: { nb: Kompetanseprøve, nn: Kompetanseprøve }
+        celler:
+          - { tekst: { nb: "Lærekandidater.", nn: "Lærekandidatar." } }
+          - { tekst: { nb: "Kompetansebevis.", nn: "Kompetansebevis." } }
+  paragrafer: [opplaeringsforskrifta/9-48, opplaeringsforskrifta/9-51, opplaeringsforskrifta/9-55]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48, § 9-51 og § 9-55 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-55" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at lærekandidater får kompetansebevis etter kompetanseprøven (§ 9-51), og ikke et eget kompetansebrev (merknaden til § 9-55 nevner «kompetansebrev»)?"
+
+- id: pr-krav
+  type: forklaring
+  naar: { nb: Før oppmelding, nn: Før oppmelding }
+  tittel:
+    nb: "Krav før prøven"
+    nn: "Krav før prøva"
+  tekst:
+    nb: "Elever, lærlinger og praksisbrevkandidater skal ha bestått alle relevante fag og eksamener før prøven. Mangler en elev eller lærling bestått i ett eller to fellesfag, kan prøven likevel tas. For praksisbrevkandidater gjelder det ett fellesfag. Fagene må da bestås etter prøven for å få brevet, hvis det ikke er gjort vedtak om unntak for store lærevansker. Kandidater for fagbrev på jobb og praksiskandidater trenger ikke fellesfag."
+    nn: "Elevar, lærlingar og praksisbrevkandidatar skal ha bestått alle relevante fag og eksamenar før prøva. Manglar ein elev eller lærling bestått i eitt eller to fellesfag, kan prøva likevel takast. For praksisbrevkandidatar gjeld det eitt fellesfag. Faga må då beståast etter prøva for å få brevet, dersom det ikkje er gjort vedtak om unntak for store lærevanskar. Kandidatar for fagbrev på jobb og praksiskandidatar treng ikkje fellesfag."
+  paragrafer: [opplaeringsforskrifta/9-57, opplaeringsforskrifta/9-48, opplaeringsforskrifta/9-49]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-57", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-57" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-48 tredje ledd og § 9-49", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å kalle vedtaket etter § 9-49 «unntak for store lærevansker»?"
+
+- id: pr-oppmelding
+  type: forklaring
+  naar: { nb: Senest to måneder før, nn: Seinast to månader før }
+  tittel:
+    nb: "Oppmelding og når prøven holdes"
+    nn: "Oppmelding og når prøva blir halden"
+  tekst:
+    nb: |-
+      Hvem som melder opp til prøven, avhenger av hvor kandidaten har fått opplæringen.
+
+      - **Lærlinger og andre med læretid i bedrift:** Lærebedriften melder opp til fylkeskommunen der kontrakten er godkjent, senest to måneder før kontraktstiden er ute.
+      - **Elever på Vg3 i skole:** Skolen melder opp til fylkeskommunen der skolen ligger.
+      - **Praksiskandidater:** Melder seg selv innen fristen fylkeskommunen setter, og betaler prøveavgift.
+
+      Prøven holdes som hovedregel før læretiden er over, men tidligst tre måneder før. Den holdes i lærebedriften der kandidaten har fått det meste av opplæringen, hvis ikke fylkeskommunen etter råd fra prøvenemnda bestemmer noe annet. Kandidaten må fullføre læretiden for å få brevet.
+    nn: |-
+      Kven som melder opp til prøva, kjem an på kvar kandidaten har fått opplæringa.
+
+      - **Lærlingar og andre med læretid i bedrift:** Lærebedrifta melder opp til fylkeskommunen der kontrakten er godkjend, seinast to månader før kontraktstida er ute.
+      - **Elevar på Vg3 i skole:** Skolen melder opp til fylkeskommunen der skolen ligg.
+      - **Praksiskandidatar:** Melder seg sjølve innan fristen fylkeskommunen set, og betaler prøveavgift.
+
+      Prøva blir som hovudregel halden før læretida er over, men tidlegast tre månader før. Ho blir halden i lærebedrifta der kandidaten har fått det meste av opplæringa, viss ikkje fylkeskommunen etter råd frå prøvenemnda bestemmer noko anna. Kandidaten må fullføre læretida for å få brevet.
+  paragrafer: [opplaeringsforskrifta/9-55, opplaeringsforskrifta/9-56]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-55 andre og tredje ledd og § 9-56", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-55", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/viii.-sarskilde-reglar-for-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova-i-vidaregaande-opplaring/-9-55-organisering-av-fag--og-sveineprova-praksisbrevprova-og-kompetanseprova/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder fristen «to måneder før kontraktstiden er ute» også for lærekandidater og praksisbrevkandidater (§ 9-56 andre ledd sier «dei som har læretid i bedrift»)?"
+
+- id: pr-provenemnda
+  type: forklaring
+  naar: { nb: Tidligst tre måneder før, nn: Tidlegast tre månader før }
+  tittel:
+    nb: "Prøvenemnda og prøven"
+    nn: "Prøvenemnda og prøva"
+  tekst:
+    nb: "Fylkeskommunen oppnevner prøvenemnder etter forslag fra yrkesopplæringsnemnda og partene i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og de skal som hovedregel ikke være knyttet til lærebedriften eller skolen. Prøvenemnda lager oppgaven og grunnlaget for vurderingen. Prøven starter med et møte der kandidaten får oppgaven, og skal vise at kandidaten kan planlegge, gjennomføre, vurdere og dokumentere arbeidet og begrunne løsningene. Prøvenemnda fører protokoll."
+    nn: "Fylkeskommunen nemner opp prøvenemnder etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere knytte til lærebedrifta eller skolen. Prøvenemnda lagar oppgåva og grunnlaget for vurderinga. Prøva startar med eit møte der kandidaten får oppgåva, og skal vise at kandidaten kan planleggje, gjennomføre, vurdere og dokumentere arbeidet og grunngi løysingane. Prøvenemnda fører protokoll."
+  paragrafer: [opplaeringsforskrifta/9-59, opplaeringsforskrifta/9-60, opplaeringsforskrifta/9-61]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-59 til § 9-61", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-59" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-59 til § 9-61 dekkende, eller mangler noe lærere og ledere trenger å vite?"
+
+- id: pr-vurdering
+  type: forklaring
+  naar: { nb: Etter prøven, nn: Etter prøva }
+  tittel:
+    nb: "Vurdering og karakterer"
+    nn: "Vurdering og karakterar"
+  tekst:
+    nb: |-
+      Prøvenemnda vurderer kompetansen kandidaten har vist, og setter karakter etter målene i læreplanen. Praksisbrevprøven og kompetanseprøven vurderes etter den lokale læreplanen eller målene som er satt for kandidaten.
+
+      - **Bestått meget godt:** meget god eller fremragende kompetanse
+      - **Bestått:** tilfredsstillende eller god kompetanse
+      - **Ikke bestått:** svært lav kompetanse
+
+      Er prøven ikke bestått, tar prøvenemnda vare på prøvearbeidet til en eventuell klage.
+    nn: |-
+      Prøvenemnda vurderer kompetansen kandidaten har vist, og set karakter etter måla i læreplanen. Praksisbrevprøva og kompetanseprøva blir vurderte etter den lokale læreplanen eller måla som er sette for kandidaten.
+
+      - **Bestått mykje godt:** mykje god eller framifrå kompetanse
+      - **Bestått:** tilfredsstillande eller god kompetanse
+      - **Ikkje bestått:** svært låg kompetanse
+
+      Er prøva ikkje bestått, tek prøvenemnda vare på prøvearbeidet til ei eventuell klage.
+  paragrafer: [opplaeringsforskrifta/9-5, opplaeringsforskrifta/9-63, opplaeringsforskrifta/9-64, opplaeringsforskrifta/9-65]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-5", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-5" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-63 til § 9-65", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-63" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er karakterene i § 9-5 gjengitt riktig på bokmål («bestått meget godt»)?"
+
+- id: pr-tilrettelegging
+  type: forklaring
+  tittel:
+    nb: "Særskilt tilrettelegging av prøven"
+    nn: "Særskild tilrettelegging av prøva"
+  tekst:
+    nb: "Kandidater i bedrift, elever og praksiskandidater har rett til særskilt tilrettelegging når de trenger det for å vise kompetansen sin. Kandidaten skal prøves i kompetansemålene og skal ikke få fordeler. Kandidaten søker fylkeskommunen, som kan be om en uttalelse fra en sakkyndig instans."
+    nn: "Kandidatar i bedrift, elevar og praksiskandidatar har rett til særskild tilrettelegging når dei treng det for å vise kompetansen sin. Kandidaten skal prøvast i kompetansemåla og skal ikkje få fordelar. Kandidaten søkjer fylkeskommunen, som kan be om ei fråsegn frå ein sakkunnig instans."
+  paragrafer: [opplaeringsforskrifta/9-62]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-62", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-62" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-62 riktig?"
+
+- id: pr-klage
+  type: forklaring
+  naar: { nb: Tre uker, nn: Tre veker }
+  tittel:
+    nb: "Resultatet og klage"
+    nn: "Resultatet og klage"
+  tekst:
+    nb: "Består kandidaten, gir fylkeskommunen fag- eller svennebrev, praksisbrev eller kompetansebevis. Er karakteren «ikke bestått», kan kandidaten klage innen tre uker, både på karakteren og på formelle feil. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove)."
+    nn: "Består kandidaten, gir fylkeskommunen fag- eller sveinebrev, praksisbrev eller kompetansebevis. Er karakteren «ikkje bestått», kan kandidaten klage innan tre veker, både på karakteren og på formelle feil. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove)."
+  paragrafer: [opplaeringsforskrifta/9-54, opplaeringsforskrifta/10-9, opplaeringsforskrifta/10-10]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-54 fjerde ledd, § 10-9 og § 10-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-9" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2, andre avsnitt", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at fylkeskommunen utsteder også kompetansebevis for lærekandidater (§ 9-51 tredje ledd)?"
+
+- id: pr-ny-utsatt
+  type: forklaring
+  tittel:
+    nb: "Ny og utsatt prøve"
+    nn: "Ny og utsett prøve"
+  tekst:
+    nb: "Kandidaten har rett til én ny prøve. Får kandidaten lengre kontrakt eller mer opplæring i faget, gjelder ikke grensen på én ny prøve. Kandidater som ikke har bestått, har rett til mer opplæring på Vg3, så langt det er mulig i samme lærefag."
+    nn: "Kandidaten har rett til éi ny prøve. Får kandidaten lengre kontrakt eller meir opplæring i faget, gjeld ikkje grensa på éi ny prøve. Kandidatar som ikkje har bestått, har rett til meir opplæring på Vg3, så langt det er mogleg i same lærefag."
+  tabell:
+    form: kort
+    kolonner:
+      - { nb: Hvem, nn: Kven }
+      - { nb: Når og hvordan, nn: Når og korleis }
+    rader:
+      - tittel: { nb: Ny prøve, nn: Ny prøve }
+        celler:
+          - { tekst: { nb: "Kandidater som ikke besto første gang, og kandidater som ble vist bort.", nn: "Kandidatar som ikkje bestod første gongen, og kandidatar som vart viste bort." } }
+          - { tekst: { nb: "Lærebedriften melder opp, eller fylkeskommunen når opplæringen var i skole. Praksiskandidater melder seg selv tidligst seks måneder etter, og betaler ny prøveavgift.", nn: "Lærebedrifta melder opp, eller fylkeskommunen når opplæringa var i skole. Praksiskandidatar melder seg sjølve tidlegast seks månader etter, og betaler ny prøveavgift." } }
+      - tittel: { nb: Utsatt prøve, nn: Utsett prøve }
+        celler:
+          - { tekst: { nb: "Kandidater med dokumentert fravær på prøven.", nn: "Kandidatar med dokumentert fråvær på prøva." } }
+          - { tekst: { nb: "Så snart som mulig. Praksiskandidater melder seg selv. Består kandidaten ikke, er det rett til en ny prøve.", nn: "Så snart som mogleg. Praksiskandidatar melder seg sjølve. Består ikkje kandidaten, er det rett til ei ny prøve." } }
+  paragrafer: [opplaeringsforskrifta/9-66, opplaeringsforskrifta/9-67, opplaeringsforskrifta/9-68, opplaeringsforskrifta/5-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-66 og § 9-67", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-66" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-68 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-68" }
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at grensen på én ny prøve ikke gjelder når kontrakten forlenges eller kandidaten får mer opplæring (§ 9-66 tredje ledd)?"
+
+- id: pr-bortvisning
+  type: forklaring
+  tittel:
+    nb: "Bortvisning og annullering"
+    nn: "Bortvising og annullering"
+  tekst:
+    nb: "En kandidat som hindrer eller forstyrrer prøven, kan vises bort etter en advarsel, og har da rett til ny prøve. Jukser kandidaten eller prøver å jukse, annullerer prøvenemnda fag- eller svenneprøven, eller fylkeskommunen de andre prøvene. Kandidaten får fullføre, og kan ta ny prøve tidligst etter ett år. Kandidaten skal få uttale seg før det avgjøres."
+    nn: "Ein kandidat som hindrar eller forstyrrar prøva, kan visast bort etter ei åtvaring, og har då rett til ny prøve. Juksar kandidaten eller prøver å jukse, annullerer prøvenemnda fag- eller sveineprøva, eller fylkeskommunen dei andre prøvene. Kandidaten får fullføre, og kan ta ny prøve tidlegast etter eitt år. Kandidaten skal få uttale seg før det blir avgjort."
+  paragrafer: [opplaeringsforskrifta/9-68, opplaeringsforskrifta/9-69]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-68 og § 9-69", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-68" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sammendraget av § 9-68 og § 9-69 riktig?"

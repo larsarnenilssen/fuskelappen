@@ -92,7 +92,7 @@ export const nb = {
       modul: 'Del av appen',
       veiviser: 'Veiviser',
       kalkulator: 'Kalkulator',
-      tidslinje: 'Tidslinje',
+      tidslinje: 'Kalender',
       begrep: 'Begrep',
       fagmerknad: 'Fagmerknad',
       vitnemalsmerknad: 'Vitnemålsmerknad',

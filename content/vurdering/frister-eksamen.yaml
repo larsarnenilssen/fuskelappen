@@ -1,0 +1,675 @@
+# Fristene på tidslinjen «Eksamen og klage gjennom året» (fase 6, pakke 3, avgjørelse 046 og 059). Egne ord.
+# Godkjent i forslaget av eier 04.10.2026 (docs/arbeidsordrer/fase-6-forslag.md, «Frister og datoer»).
+# grupper: elever, privatister, laerlinger. Frister uten grupper gjelder alle.
+# Frister med `eksamensdato` får datoen fra eksamensdatoene (data/eksamen/datoer.json, npm run hent:eksamen) når den
+# finnes for skoleåret. Ellers vises måneden og `naar`. Datoer med `fylke: true` vises bare når fylket er valgt.
+
+# Faste regler fra forskriften
+
+- id: fe-samtale
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: lopende }
+  naar: { nb: Hvert halvår, nn: Kvart halvår }
+  tittel:
+    nb: Samtale om utviklingen
+    nn: Samtale om utviklinga
+  tekst:
+    nb: Eleven, og den som har læretid i bedrift, har rett til minst én samtale i halvåret med kontaktlæreren eller instruktøren om utviklingen sin. Skolen dokumenterer fraværet hvert halvår.
+    nn: Eleven, og den som har læretid i bedrift, har rett til minst éin samtale i halvåret med kontaktlæraren eller instruktøren om utviklinga si. Skolen dokumenterer fråværet kvart halvår.
+  paragrafer: [opplaeringsforskrifta/9-6, opplaeringsforskrifta/9-9]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6 første ledd og § 9-9 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står det i § 9-9 femte ledd at fraværet skal dokumenteres hvert halvår, eller er det en forenkling?"
+
+- id: fe-varsel
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: lopende }
+  naar: { nb: Straks det er fare, nn: Straks det er fare }
+  grupper: [elever]
+  tittel:
+    nb: Varsel om at karakteren kan falle bort
+    nn: Varsel om at karakteren kan falle bort
+  tekst:
+    nb: Står eleven i fare for å ikke få halvårsvurdering med karakter eller standpunktkarakter, skal eleven varsles skriftlig, og foreldrene når eleven er under 18. Se veiviseren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering).
+    nn: Står eleven i fare for ikkje å få halvårsvurdering med karakter eller standpunktkarakter, skal eleven varslast skriftleg, og foreldra når eleven er under 18. Sjå vegvisaren [Grunnlag for vurdering](#/vurdering/grunnlag-for-vurdering).
+  paragrafer: [opplaeringsforskrifta/9-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-7 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «straks det er fare» en god forenkling av når varselet skal gis etter § 9-7?"
+
+- id: fe-klagefrist
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: lopende }
+  naar: { nb: Ti dager, nn: Ti dagar }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Klagefrist på standpunkt og eksamen
+    nn: Klagefrist på standpunkt og eksamen
+  tekst:
+    nb: Fristen for å klage på standpunktkarakterer, vedtak om IV og eksamenskarakterer er ti kalenderdager. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter).
+    nn: Fristen for å klage på standpunktkarakterar, vedtak om IV og eksamenskarakterar er ti kalenderdagar. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter).
+  paragrafer: [opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit at klagefristen står under «Hele året», når den gjelder fra hver karakter blir kjent?"
+
+- id: fe-oppmelding-prove
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: lopende }
+  naar: { nb: To måneder før kontraktstiden er ute, nn: To månader før kontraktstida er ute }
+  grupper: [laerlinger]
+  tittel:
+    nb: Oppmelding til fag- eller svenneprøven
+    nn: Oppmelding til fag- eller sveineprøva
+  tekst:
+    nb: Lærebedriften melder opp lærlingen til fylkeskommunen der kontrakten er godkjent, senest to måneder før kontraktstiden er ute. Prøven holdes tidligst tre måneder før læretiden er over. Se [Fag- og svenneprøven](#/vurdering/fag-og-svenneproven).
+    nn: Lærebedrifta melder opp lærlingen til fylkeskommunen der kontrakten er godkjend, seinast to månader før kontraktstida er ute. Prøva blir halden tidlegast tre månader før læretida er over. Sjå [Fag- og sveineprøva](#/vurdering/fag-og-svenneproven).
+  paragrafer: [opplaeringsforskrifta/9-55, opplaeringsforskrifta/9-56]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-55 andre ledd og § 9-56 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å slå sammen fristen for oppmelding (§ 9-56) og når prøven tidligst holdes (§ 9-55) i én frist?"
+
+- id: fe-klage-prove
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: lopende }
+  naar: { nb: Tre uker, nn: Tre veker }
+  grupper: [laerlinger]
+  tittel:
+    nb: Klagefrist på fag- og svenneprøven
+    nn: Klagefrist på fag- og sveineprøva
+  tekst:
+    nb: Kandidaten kan klage når karakteren er «ikke bestått». Fristen er tre uker etter forvaltningsloven. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove).
+    nn: Kandidaten kan klage når karakteren er «ikkje bestått». Fristen er tre veker etter forvaltningsloven. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-prove&svar=prove).
+  paragrafer: [opplaeringsforskrifta/10-9, forvaltningsloven/29]
+  kilder:
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2, andre avsnitt", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er fristen på tre uker riktig også for praksisbrevprøven og kompetanseprøven (merknaden til § 10-2)?"
+
+- id: fe-halvar-midt
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 1 }
+  naar: { nb: Midt i opplæringsperioden, nn: Midt i opplæringsperioden }
+  grupper: [elever, laerlinger]
+  tittel:
+    nb: Halvårsvurdering
+    nn: Halvårsvurdering
+  tekst:
+    nb: Halvårsvurdering gis midt i opplæringsperioden. Elever får den med og uten karakter. Lærlinger, lærekandidater og praksisbrevkandidater får den uten karakter fra instruktøren.
+    nn: Halvårsvurdering blir gitt midt i opplæringsperioden. Elevar får henne med og utan karakter. Lærlingar, lærekandidatar og praksisbrevkandidatar får henne utan karakter frå instruktøren.
+  paragrafer: [opplaeringsforskrifta/9-13]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Halvårsvurderingen midt i opplæringsperioden står i januar. Er det en god plassering for fag som går over hele skoleåret?"
+
+- id: fe-mer-opplaering-mars
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: arlig, dag: 1, maned: 3 }
+  grupper: [elever]
+  tittel:
+    nb: Opplæringen regnes som gjennomført
+    nn: Opplæringa blir rekna som gjennomført
+  tekst:
+    nb: Har eleven fulgt opplæringen i faget fram til 1. mars, regnes den som gjennomført. Stryker eleven i faget, har eleven da rett til mer opplæring.
+    nn: Har eleven følgt opplæringa i faget fram til 1. mars, blir ho rekna som gjennomført. Strykar eleven i faget, har eleven då rett til meir opplæring.
+  paragrafer: [opplaeringsforskrifta/5-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 5-2 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§5-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «stryker eleven i faget» en god forenkling av «ikkje har bestått standpunktkarakter eller eksamen»?"
+
+- id: fe-standpunkt-senest
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Senest dagen før sensur, nn: Seinast dagen før sensur }
+  grupper: [elever]
+  tittel:
+    nb: Standpunktkarakteren settes
+    nn: Standpunktkarakteren blir sett
+  tekst:
+    nb: Standpunktkarakteren settes så sent som mulig, og senest dagen før sensur når eleven har eksamen i faget.
+    nn: Standpunktkarakteren blir sett så seint som mogleg, og seinast dagen før sensur når eleven har eksamen i faget.
+  paragrafer: [opplaeringsforskrifta/9-16]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-16 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-16" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «senest dagen før sensur» riktig gjengitt fra § 9-16?"
+
+- id: fe-halvar-slutt
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Ved slutten av skoleåret, nn: Ved slutten av skoleåret }
+  grupper: [elever, laerlinger]
+  tittel:
+    nb: Halvårsvurdering i fag som fortsetter
+    nn: Halvårsvurdering i fag som held fram
+  tekst:
+    nb: I fag som fortsetter neste skoleår, får eleven halvårsvurdering ved slutten av skoleåret i stedet for standpunktkarakter.
+    nn: I fag som held fram neste skoleår, får eleven halvårsvurdering ved slutten av skoleåret i staden for standpunktkarakter.
+  paragrafer: [opplaeringsforskrifta/9-13]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-13 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-13" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig for halvårsvurderingen ved slutten av skoleåret (§ 9-13 tredje ledd)?"
+
+- id: fe-mer-opplaering-melding
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Minst en uke etter standpunkt og sensur, nn: Minst ei veke etter standpunkt og sensur }
+  grupper: [elever]
+  tittel:
+    nb: Melde seg til mer opplæring
+    nn: Melde seg til meir opplæring
+  tekst:
+    nb: Elever som har rett til mer opplæring i et fag, må melde fra til fylkeskommunen. Fylkeskommunen setter fristen, minst en uke etter at standpunkt er satt og sensuren er klar.
+    nn: Elevar som har rett til meir opplæring i eit fag, må melde frå til fylkeskommunen. Fylkeskommunen set fristen, minst ei veke etter at standpunkt er sett og sensuren er klar.
+  paragrafer: [opplaeringsforskrifta/4-3]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 4-3", url: "https://lovdata.no/forskrift/2024-06-03-900/§4-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Står denne fristen også i tidslinjen i Inntak? Skal den da bare lenke dit?"
+
+# Datoer fra Udir for hver eksamensperiode (hentes hvert halvår, eier 04.10.2026)
+
+- id: fe-skoler-oppmelding-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 9 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: skoler-oppmelding, periode: host }
+  grupper: [elever]
+  tittel:
+    nb: Skolene melder opp til høsteksamen
+    nn: Skolane melder opp til hausteksamen
+  tekst:
+    nb: Skolen melder opp elevene til eksamen, også til ny, utsatt og særskilt eksamen, som holdes om høsten. Eleven må selv melde seg til skolen.
+    nn: Skolen melder opp elevane til eksamen, også til ny, utsett og særskild eksamen, som blir haldne om hausten. Eleven må sjølv melde seg til skolen.
+  paragrafer: [opplaeringsforskrifta/9-27]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27 første til tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: udir-administrere-eksamen, punkt: "Påmelding av eksamenskandidater" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Holdes ny, utsatt og særskilt eksamen alltid i høstperioden, eller kan fylket legge dem andre steder (f.eks. sommerskole)?"
+
+- id: fe-privatister-oppmelding-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 9 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: privatister-oppmelding, periode: host }
+  grupper: [privatister]
+  tittel:
+    nb: Privatister melder seg opp til høsteksamen
+    nn: Privatistar melder seg opp til hausteksamen
+  tekst:
+    nb: Privatister melder seg selv opp, der fylkeskommunen bestemmer, og betaler prøveavgift.
+    nn: Privatistar melder seg sjølve opp, der fylkeskommunen bestemmer, og betaler prøveavgift.
+  paragrafer: [opplaeringsforskrifta/9-27]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27 femte og sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: udir-administrere-eksamen, punkt: "Påmelding av eksamenskandidater" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten dekkende for privatister?"
+
+- id: fe-trekk-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 11 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: trekk, periode: host }
+  grupper: [elever]
+  tittel:
+    nb: Trekket til høsteksamen blir kjent
+    nn: Trekket til hausteksamen blir kjent
+  tekst:
+    nb: Elevene får vite hvilke fag de er trukket ut til, på datoen Udir har fastsatt. Det gjelder både skriftlig, muntlig og praktisk eksamen.
+    nn: Elevane får vite kva fag dei er trekte ut til, på datoen Udir har fastsett. Det gjeld både skriftleg, munnleg og praktisk eksamen.
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: udir-administrere-eksamen, punkt: "Trekk på videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder trekkdatoen fra Udir også muntlig og praktisk eksamen i videregående (Udir: «alle eksamen» fra 1. januar 2026)?"
+
+- id: fe-eksamen-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 11 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: eksamen, periode: host }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Skriftlig høsteksamen
+    nn: Skriftleg hausteksamen
+  tekst:
+    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/vurdering/eksamen).
+    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/vurdering/eksamen).
+  paragrafer: [opplaeringsforskrifta/9-26, opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 og § 9-28 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at datoene for muntlig og praktisk eksamen settes av fylkeskommunen (§ 9-26 andre ledd)?"
+
+- id: fe-sensur-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 1 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: sensur, periode: host }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Sensur for høsteksamen
+    nn: Sensur for hausteksamen
+  tekst:
+    nb: Karakterene på skriftlig eksamen blir kjent. Klagefristen er ti dager.
+    nn: Karakterane på skriftleg eksamen blir kjende. Klagefristen er ti dagar.
+  paragrafer: [opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er sensurfristen den dagen karakterene blir kjent for kandidatene, eller kan de komme tidligere?"
+
+- id: fe-klage-registrering-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 1 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: klage-registrering, periode: host }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Skolene registrerer klager på høsteksamen
+    nn: Skolane registrerer klager på hausteksamen
+  tekst:
+    nb: Siste dag for skolene og fylkeskommunene til å registrere klagene på skriftlig eksamen.
+    nn: Siste dag for skolane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
+  paragrafer: [opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at denne fristen også gjelder fylkeskommunene for privatister?"
+
+- id: fe-klage-behandlet-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 3 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: klage-behandlet, periode: host }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Klagene på høsteksamen er behandlet
+    nn: Klagene på hausteksamen er behandla
+  tekst:
+    nb: Klagenemndene har behandlet klagene på skriftlig eksamen.
+    nn: Klagenemndene har behandla klagene på skriftleg eksamen.
+  paragrafer: [opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-skoler-oppmelding-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 1 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: skoler-oppmelding, periode: var }
+  grupper: [elever]
+  tittel:
+    nb: Skolene melder opp til våreksamen
+    nn: Skolane melder opp til våreksamen
+  tekst:
+    nb: Skolen melder opp alle elever i fag som avsluttes med eksamen. Etter fristen går oppmeldingen tjenestevei til fylkeskommunen.
+    nn: Skolen melder opp alle elevar i fag som blir avslutta med eksamen. Etter fristen går oppmeldinga tenesteveg til fylkeskommunen.
+  paragrafer: [opplaeringsforskrifta/9-27]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: udir-administrere-eksamen, punkt: "Påmeldinger etter fristen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at oppmelding etter fristen går tjenestevei til skoleeier (Udir, «Påmeldinger etter fristen»)?"
+
+- id: fe-privatister-oppmelding-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 1 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: privatister-oppmelding, periode: var }
+  grupper: [privatister]
+  tittel:
+    nb: Privatister melder seg opp til våreksamen
+    nn: Privatistar melder seg opp til våreksamen
+  tekst:
+    nb: Privatister melder seg selv opp, der fylkeskommunen bestemmer, og betaler prøveavgift.
+    nn: Privatistar melder seg sjølve opp, der fylkeskommunen bestemmer, og betaler prøveavgift.
+  paragrafer: [opplaeringsforskrifta/9-27]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-27 femte og sjette ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-27" }
+    - { id: udir-administrere-eksamen, punkt: "Påmelding av eksamenskandidater" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten dekkende for privatister?"
+
+- id: fe-ekstra-trekk-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 2 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: ekstra-trekk, periode: var }
+  grupper: [elever]
+  tittel:
+    nb: Ekstra trekkdato
+    nn: Ekstra trekkdato
+  tekst:
+    nb: For fag som må ha eksamen før den vanlige trekkdatoen, har Udir en ekstra trekkdato.
+    nn: For fag som må ha eksamen før den vanlege trekkdatoen, har Udir ein ekstra trekkdato.
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: udir-administrere-eksamen, punkt: "Trekk på videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Gjelder den ekstra trekkdatoen bare 2027, eller kommer den hvert år?"
+
+- id: fe-trekk-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 4 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: trekk, periode: var }
+  grupper: [elever]
+  tittel:
+    nb: Trekket til våreksamen blir kjent
+    nn: Trekket til våreksamen blir kjent
+  tekst:
+    nb: Elevene får vite hvilke fag de er trukket ut til, på datoen Udir har fastsatt. Det gjelder både skriftlig, muntlig og praktisk eksamen.
+    nn: Elevane får vite kva fag dei er trekte ut til, på datoen Udir har fastsett. Det gjeld både skriftleg, munnleg og praktisk eksamen.
+  paragrafer: [opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: udir-administrere-eksamen, punkt: "Trekk på videregående" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-eksamen-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 5 }
+  naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
+  eksamensdato: { felt: eksamen, periode: var }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Skriftlig våreksamen
+    nn: Skriftleg våreksamen
+  tekst:
+    nb: Perioden for sentralt gitt skriftlig eksamen. Skriftlig eksamen starter kl. 09.00, og kandidater som kommer etter kl. 10.00, får ikke gjennomføre. Muntlige og praktiske eksamener settes av fylkeskommunen. Se [Eksamen](#/vurdering/eksamen).
+    nn: Perioden for sentralt gitt skriftleg eksamen. Skriftleg eksamen startar kl. 09.00, og kandidatar som kjem etter kl. 10.00, får ikkje gjennomføre. Munnlege og praktiske eksamenar blir sette av fylkeskommunen. Sjå [Eksamen](#/vurdering/eksamen).
+  paragrafer: [opplaeringsforskrifta/9-26, opplaeringsforskrifta/9-28]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 og § 9-28 femte ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-sensur-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: sensur, periode: var }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Sensur for våreksamen
+    nn: Sensur for våreksamen
+  tekst:
+    nb: Karakterene på skriftlig eksamen blir kjent. Klagefristen er ti dager.
+    nn: Karakterane på skriftleg eksamen blir kjende. Klagefristen er ti dagar.
+  paragrafer: [opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-hurtigklage-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: hurtigklage, periode: var }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Hurtigklage på våreksamen
+    nn: Hurtigklage på våreksamen
+  tekst:
+    nb: Kandidater som trenger karakteren til opptak til høyere utdanning, kan få klagen behandlet raskere i noen fag. Fristen for å registrere hurtigklager er kortere enn den vanlige klagefristen.
+    nn: Kandidatar som treng karakteren til opptak til høgare utdanning, kan få klaga behandla raskare i nokre fag. Fristen for å registrere hurtigklager er kortare enn den vanlege klagefristen.
+  kilder:
+    - { id: udir-administrere-eksamen, punkt: "Hurtigklage" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at hurtigklage er for kandidater som trenger karakteren til opptak til høyere utdanning?"
+
+- id: fe-klage-registrering-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 7 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: klage-registrering, periode: var }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Skolene registrerer klager på våreksamen
+    nn: Skolane registrerer klager på våreksamen
+  tekst:
+    nb: Siste dag for skolene og fylkeskommunene til å registrere klagene på skriftlig eksamen.
+    nn: Siste dag for skolane og fylkeskommunane til å registrere klagene på skriftleg eksamen.
+  paragrafer: [opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-klage-behandlet-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 9 }
+  naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
+  eksamensdato: { felt: klage-behandlet, periode: var }
+  grupper: [elever, privatister]
+  tittel:
+    nb: Klagene på våreksamen er behandlet
+    nn: Klagene på våreksamen er behandla
+  tekst:
+    nb: Klagenemndene har behandlet klagene på skriftlig eksamen fra våren.
+    nn: Klagenemndene har behandla klagene på skriftleg eksamen frå våren.
+  paragrafer: [opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Klagene på våreksamen er behandlet i september, i neste skoleår. Er det greit at de står i september på tidslinjen?"
+
+# Fylkenes egne datoer. Vises bare når fylket er valgt og datoen er hentet fra fylkets side (eier 04.10.2026).
+
+- id: fe-standpunkt-kjent
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder, laerer]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
+  eksamensdato: { felt: standpunkt, periode: var, fylke: true }
+  grupper: [elever]
+  tittel:
+    nb: Standpunktkarakterene blir kjent
+    nn: Standpunktkarakterane blir kjende
+  tekst:
+    nb: Elevene får vite standpunktkarakterene. Klagefristen på ti dager regnes fra denne dagen, eller fra dagen eleven får begrunnelsen.
+    nn: Elevane får vite standpunktkarakterane. Klagefristen på ti dagar blir rekna frå denne dagen, eller frå dagen eleven får grunngivinga.
+  paragrafer: [opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: udir-klage-standpunkt, punkt: "4. Hvordan skal eleven eller foreldrene klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å vise fylkets dato for når standpunkt blir kjent, når den står på fylkets egen side?"
+
+- id: fe-hurtigklage-standpunkt
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 6 }
+  naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
+  eksamensdato: { felt: hurtigklage-standpunkt, periode: var, fylke: true }
+  grupper: [elever]
+  tittel:
+    nb: Hurtigklage på standpunkt for avgangselever
+    nn: Hurtigklage på standpunkt for avgangselevar
+  tekst:
+    nb: Avgangselever som søker høyere utdanning samme år, kan ha en kortere klagefrist så klagen kan behandles før fristen for vitnemålet.
+    nn: Avgangselevar som søkjer høgare utdanning same år, kan ha ein kortare klagefrist så klaga kan behandlast før fristen for vitnemålet.
+  kilder:
+    - { id: udir-klage-standpunkt, punkt: "4. Hvordan skal eleven eller foreldrene klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kilden er fylkets side, ikke forskriften. Er hurtigklage på standpunkt en ordning fylkene velger selv?"
+
+- id: fe-privatister-datoer-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 10 }
+  naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
+  eksamensdato: { felt: privatister-datoer, periode: host, fylke: true }
+  grupper: [privatister]
+  tittel:
+    nb: Datoene for muntlig og praktisk høsteksamen for privatister
+    nn: Datoane for munnleg og praktisk hausteksamen for privatistar
+  tekst:
+    nb: Fylkeskommunen setter datoene for lokalt gitt eksamen. Privatistene ser dem i Privatistportalen fra denne dagen.
+    nn: Fylkeskommunen set datoane for lokalt gitt eksamen. Privatistane ser dei i Privatistportalen frå denne dagen.
+  paragrafer: [opplaeringsforskrifta/9-26]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å nevne Privatistportalen ved navn?"
+
+- id: fe-privatister-datoer-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 3 }
+  naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
+  eksamensdato: { felt: privatister-datoer, periode: var, fylke: true }
+  grupper: [privatister]
+  tittel:
+    nb: Datoene for muntlig og praktisk våreksamen for privatister
+    nn: Datoane for munnleg og praktisk våreksamen for privatistar
+  tekst:
+    nb: Fylkeskommunen setter datoene for lokalt gitt eksamen. Privatistene ser dem i Privatistportalen fra denne dagen.
+    nn: Fylkeskommunen set datoane for lokalt gitt eksamen. Privatistane ser dei i Privatistportalen frå denne dagen.
+  paragrafer: [opplaeringsforskrifta/9-26]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"
+
+- id: fe-tilrettelegging-privatister-host
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 9 }
+  naar: { nb: Fylket fastsetter fristen, nn: Fylket fastset fristen }
+  eksamensdato: { felt: tilrettelegging-privatister, periode: host, fylke: true }
+  grupper: [privatister]
+  tittel:
+    nb: Privatister søker om tilrettelegging til høsteksamen
+    nn: Privatistar søkjer om tilrettelegging til hausteksamen
+  tekst:
+    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+  paragrafer: [opplaeringsforskrifta/9-34]
+  kilder:
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34, tredje ledd", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å kalle fylkets frist «veiledende» (merknaden til § 9-34), når fylkene kaller den søknadsfrist?"
+
+- id: fe-tilrettelegging-privatister-var
+  type: frist
+  modul: vurdering
+  malgruppe: [skoleleder]
+  regel: { type: maned, maned: 2 }
+  naar: { nb: Fylket fastsetter fristen, nn: Fylket fastset fristen }
+  eksamensdato: { felt: tilrettelegging-privatister, periode: var, fylke: true }
+  grupper: [privatister]
+  tittel:
+    nb: Privatister søker om tilrettelegging til våreksamen
+    nn: Privatistar søkjer om tilrettelegging til våreksamen
+  tekst:
+    nb: Privatister søker fylkeskommunen om særskilt tilrettelegging av eksamen. Fristen er veiledende, og en søknad kan ikke avslås bare fordi den kom sent. Se [Særskilt tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+    nn: Privatistar søkjer fylkeskommunen om særskild tilrettelegging av eksamen. Fristen er rettleiande, og ein søknad kan ikkje avslåast berre fordi han kom seint. Sjå [Særskild tilrettelegging](#/vurdering/eksamen?del=ek-tilrettelegging).
+  paragrafer: [opplaeringsforskrifta/9-34]
+  kilder:
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-34, tredje ledd", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-34-sarskild-tilrettelegging-av-eksamen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er teksten riktig?"

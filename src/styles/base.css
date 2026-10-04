@@ -6710,3 +6710,217 @@ button.frist-stripe-celle:hover {
   background: var(--farge-topplinje-tekst);
   color: var(--farge-topplinje);
 }
+
+/*
+ * Tabeller fra innholdet (components/Tabell.tsx, fase 6, pakke 3). Rutenettet viser radene mot kolonnene med et stort
+ * tall i hver rute. Kortene viser hver rad for seg, i én spalte på mobil og side om side på stor skjerm.
+ */
+.tabell-rutenett {
+  width: 100%;
+  margin: 0 0 var(--rom-3);
+  border-collapse: separate;
+  border-spacing: var(--rom-1);
+  table-layout: fixed;
+  font-size: var(--str-s);
+}
+
+.tabell-rutenett thead th {
+  padding: 0 var(--rom-1);
+  hyphens: manual;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+  text-align: left;
+}
+
+.tabell-rutenett thead td,
+.tabell-rutenett tbody th {
+  width: 4.5rem;
+  background: none;
+}
+
+.tabell-rutenett tbody th {
+  padding: var(--rom-2) var(--rom-1);
+  font-weight: 700;
+  text-align: left;
+  vertical-align: top;
+}
+
+.tabell-rutenett td {
+  padding: var(--rom-2);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.tabell-tall {
+  display: block;
+  color: var(--farge-merke);
+  font-size: var(--str-xl);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.tabell-tekst {
+  display: block;
+  margin-top: var(--rom-1);
+  line-height: 1.35;
+}
+
+.tabell-kort {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 48rem) {
+  .tabell-kort {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.tabell-kort-rad {
+  padding: var(--rom-3);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.tabell-kort-tittel {
+  margin: 0 0 var(--rom-2);
+  font-size: var(--str-m);
+}
+
+.tabell-kort dl {
+  margin: 0;
+  font-size: var(--str-s);
+}
+
+.tabell-kort dt {
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.tabell-kort dd {
+  margin: 0 0 var(--rom-2);
+}
+
+.tabell-kort dl > div:last-child dd {
+  margin-bottom: 0;
+}
+
+/* Kortene under «Videre» på sidene i Vurdering (fase 6, pakke 3). */
+.vu-videre {
+  display: grid;
+  gap: var(--rom-2);
+  margin: 0 0 var(--rom-3);
+  padding: 0;
+  list-style: none;
+}
+
+/* Stien med nummer (components/Sti.tsx, fase 6, pakke 3): nummeret står i sirkelen på linjen, og tidspunktet over kortet. */
+.vu-sti-tall {
+  padding-left: var(--rom-6);
+}
+
+.vu-sti-tall::before {
+  left: calc(0.75rem - 1px);
+}
+
+.vu-sti-tall > li {
+  margin-bottom: var(--rom-2);
+}
+
+.vu-sti-tall > li::before {
+  display: none;
+}
+
+.vu-sti-nr {
+  position: absolute;
+  top: 0.75rem;
+  left: calc(-1 * var(--rom-6));
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--farge-merke);
+  color: var(--farge-merke-tekst);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.vu-sti-naar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--rom-1) var(--rom-3);
+  margin: 0 0 var(--rom-1);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 700;
+}
+
+.vu-sti-tid {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.vu-sti-naar + .innholdskort {
+  margin-top: 0;
+}
+
+/*
+ * De blå boksene for prøvene (eier 04.10.2026): som boksene for elever og privatister på fagarket, med etiketten til
+ * venstre og verdien til høyre.
+ */
+.tabell-bokser .tabell-kort-rad {
+  border-color: transparent;
+  background: var(--farge-flate-2);
+}
+
+.tabell-bokser .tabell-kort-tittel {
+  font-size: var(--str-l);
+}
+
+.tabell-bokser dl > div {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: var(--rom-2);
+  margin-bottom: var(--rom-2);
+}
+
+.tabell-bokser dl > div:last-child {
+  margin-bottom: 0;
+}
+
+.tabell-bokser dt {
+  color: var(--farge-merke);
+  font-size: var(--str-s);
+  font-weight: 700;
+}
+
+.tabell-bokser dd {
+  margin: 0;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Boksene står under hverandre også på stor skjerm, så teksten får plass på én linje (eier 04.10.2026). */
+@media (min-width: 48rem) {
+  .tabell-bokser {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.samleboks .tabell-kort {
+  margin-top: var(--rom-3);
+}
+
+.samleboks .tabell-kort-rad {
+  background: var(--farge-bakgrunn);
+}

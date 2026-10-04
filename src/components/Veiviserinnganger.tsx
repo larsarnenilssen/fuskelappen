@@ -1,6 +1,7 @@
 // Veiviserne på oversikten i en modul: like høye kort med en liten fasestolpe, som stolpen øverst i veiviseren, og
 // med fargen til hver veiviser (eier 03.10.2026, avgjørelse 042). Brukes av Tilrettelegging, Inntak og Vurdering.
-// Andre kort kan stå først i samme rutenett (`foran`), så kortene får like bredde også på stor skjerm.
+// Andre kort kan stå først (`foran`) eller sist (`etter`) i samme rutenett, så kortene får like bredde også på stor
+// skjerm.
 import type { ComponentChildren } from 'preact';
 import { useTekst } from '../app/tilstand.ts';
 import type { Veiviserelement } from '../core/innhold/skjema.ts';
@@ -10,10 +11,12 @@ export function Veiviserinnganger({
   veivisere,
   rute,
   foran = [],
+  etter = [],
 }: {
   veivisere: readonly Veiviserelement[];
   rute: (id: string) => string;
   foran?: readonly { id: string; kort: ComponentChildren }[];
+  etter?: readonly { id: string; kort: ComponentChildren }[];
 }) {
   const { t, malform } = useTekst();
   return (
@@ -50,6 +53,9 @@ export function Veiviserinnganger({
             </a>
           </li>
         ))}
+      {etter.map((f) => (
+        <li key={f.id}>{f.kort}</li>
+      ))}
     </ul>
   );
 }

@@ -1,0 +1,182 @@
+# Begreper om eksamen, prøvene og klage (fase 6, pakke 3). Egne ord. Godkjent i forslaget av eier 04.10.2026
+# (docs/arbeidsordrer/fase-6-forslag.md, «Nye begreper til begrepsbanken»). «Klage» er lenkeord for «Klage på
+# enkeltvedtak», så klage på karakter har ikke eget begrep. Veiviseren lenkes fra standpunktkarakter og klagenemnd.
+- id: trekkfag
+  type: begrep
+  tittel: { nb: "Trekkfag", nn: "Trekkfag" }
+  tekst:
+    nb: "Et trekkfag er et fag der bare noen elever trekkes ut til eksamen. Læreplanen sier om faget er et trekkfag, og forskriften sier hvor mange eksamener eleven skal ha på hvert trinn. Udir bestemmer datoen trekket blir kjent. Annulleres en eksamen i et trekkfag etter klage, trekkes faget på nytt."
+    nn: "Eit trekkfag er eit fag der berre nokre elevar blir trekte ut til eksamen. Læreplanen seier om faget er eit trekkfag, og forskrifta seier kor mange eksamenar eleven skal ha på kvart trinn. Udir bestemmer datoen trekket blir kjent. Blir ein eksamen i eit trekkfag annullert etter klage, blir faget trekt på nytt."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-28 første og andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-28" }
+    - { id: opplaeringsforskrifta, punkt: "§ 10-8 fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-8" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «et fag der bare noen elever trekkes ut» en god definisjon av trekkfag, når ordet ikke står i § 9-28?"
+  stikkord: [trekk, uttrekk, eksamen]
+  relatert: [sentralt-gitt-eksamen, lokalt-gitt-eksamen]
+
+- id: sentralt-gitt-eksamen
+  type: begrep
+  tittel: { nb: "Sentralt gitt eksamen", nn: "Sentralt gitt eksamen" }
+  tekst:
+    nb: "Ved sentralt gitt eksamen lager Udir oppgavene, setter datoen og bestemmer sensuren, hvis ikke læreplanen sier noe annet. Begge sensorene er eksterne. Læreplanen sier om eksamen i faget er sentralt eller lokalt gitt."
+    nn: "Ved sentralt gitt eksamen lagar Udir oppgåvene, set datoen og bestemmer sensuren, viss ikkje læreplanen seier noko anna. Begge sensorane er eksterne. Læreplanen seier om eksamen i faget er sentralt eller lokalt gitt."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-25 andre ledd og § 9-26 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-33 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-33" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende?"
+  stikkord: [eksamen, Udir, sentralt gitt]
+  relatert: [lokalt-gitt-eksamen, trekkfag]
+
+- id: lokalt-gitt-eksamen
+  type: begrep
+  tittel: { nb: "Lokalt gitt eksamen", nn: "Lokalt gitt eksamen" }
+  tekst:
+    nb: "Ved lokalt gitt eksamen lager fylkeskommunen oppgavene, setter datoen og gjennomfører sensuren. Faglæreren foreslår oppgaver. Minst én sensor er ekstern. De fleste muntlige og praktiske eksamenene er lokalt gitt."
+    nn: "Ved lokalt gitt eksamen lagar fylkeskommunen oppgåvene, set datoen og gjennomfører sensuren. Faglæraren foreslår oppgåver. Minst éin sensor er ekstern. Dei fleste munnlege og praktiske eksamenane er lokalt gitte."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-26 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-26" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-33 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-33" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«De fleste muntlige og praktiske eksamenene er lokalt gitt» står ikke i forskriften. Stemmer det, eller bør setningen tas bort?"
+  stikkord: [eksamen, fylkeskommunen, lokalt gitt]
+  relatert: [sentralt-gitt-eksamen, trekkfag]
+
+- id: tverrfaglig-eksamen
+  type: begrep
+  tittel: { nb: "Tverrfaglig eksamen", nn: "Tverrfagleg eksamen" }
+  tekst:
+    nb: "Alle elever på Vg2 yrkesfag har tverrfaglig eksamen i programfagene. Eksamen dekker flere fag. Får eleven ikke standpunktkarakter i noen av programfagene, annulleres den. Stryker eleven i et programfag som er med i eksamen, har eleven rett til særskilt eksamen i faget."
+    nn: "Alle elevar på Vg2 yrkesfag har tverrfagleg eksamen i programfaga. Eksamen dekkjer fleire fag. Får eleven ikkje standpunktkarakter i nokon av programfaga, blir han annullert. Strykar eleven i eit programfag som er med i eksamen, har eleven rett til særskild eksamen i faget."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-31 andre ledd og § 9-41", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-31" }
+    - { id: udir-merknader-ofo-kap9, punkt: "Merknad til § 9-38", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-9-individuell-vurdering/v.-eksamen/-9-38-sarskild-eksamen-for-elevar-i-den-vidaregaande-opplaringa/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Landbruk har også tverrfaglig eksamen på Vg3 (§ 9-31 fjerde ledd). Bør det stå?"
+  stikkord: [eksamen, yrkesfag, Vg2, programfag]
+  relatert: [sarskilt-eksamen]
+
+- id: utsatt-eksamen
+  type: begrep
+  tittel: { nb: "Utsatt eksamen", nn: "Utsett eksamen" }
+  tekst:
+    nb: "Elever og privatister som har dokumentert fravær på eksamen, har rett til utsatt eksamen ved første eksamen etter. Dokumentasjonen må vise at de var hindret, at det ikke kunne forutses, og at de ikke kan lastes for det. Eleven melder seg selv til skolen. Går eleven ikke opp eller stryker, faller standpunktkarakteren bort."
+    nn: "Elevar og privatistar som har dokumentert fråvær på eksamen, har rett til utsett eksamen ved første eksamen etter. Dokumentasjonen må vise at dei var hindra, at det ikkje kunne føresjåast, og at dei ikkje kan lastast for det. Eleven melder seg sjølv til skolen. Går eleven ikkje opp eller strykar, fell standpunktkarakteren bort."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-36", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-36" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende?"
+  stikkord: [eksamen, fravær, legeerklæring]
+  relatert: [ny-eksamen, sarskilt-eksamen]
+
+- id: ny-eksamen
+  type: begrep
+  tittel: { nb: "Ny eksamen", nn: "Ny eksamen" }
+  tekst:
+    nb: "Elever som får 1 på eksamen, har rett til ny eksamen ved første eksamen etter. Det gjelder også ved bortvisning og annullering. Går eleven ikke opp eller får 1 igjen, faller standpunktkarakteren bort. Består eleven, faller retten til mer opplæring i faget bort."
+    nn: "Elevar som får 1 på eksamen, har rett til ny eksamen ved første eksamen etter. Det gjeld også ved bortvising og annullering. Går eleven ikkje opp eller får 1 igjen, fell standpunktkarakteren bort. Består eleven, fell retten til meir opplæring i faget bort."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-37", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-37" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-39 tredje ledd og § 9-40 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-39" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende?"
+  stikkord: [eksamen, stryk, karakteren 1]
+  relatert: [utsatt-eksamen, sarskilt-eksamen]
+
+- id: sarskilt-eksamen
+  type: begrep
+  tittel: { nb: "Særskilt eksamen", nn: "Særskild eksamen" }
+  tekst:
+    nb: "Elever som får 1 i standpunkt i et fag og ikke er trukket ut til eksamen i faget, har rett til særskilt eksamen ved første eksamen etter. Det gjelder også fag der det vanligvis ikke er eksamen. Består eleven, har eleven bestått faget."
+    nn: "Elevar som får 1 i standpunkt i eit fag og ikkje er trekte ut til eksamen i faget, har rett til særskild eksamen ved første eksamen etter. Det gjeld også fag der det vanlegvis ikkje er eksamen. Består eleven, har eleven bestått faget."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-38", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-38" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende?"
+  stikkord: [eksamen, stryk, standpunkt]
+  relatert: [ny-eksamen, utsatt-eksamen]
+
+- id: sarskilt-tilrettelegging-av-eksamen
+  type: begrep
+  tittel: { nb: "Særskilt tilrettelegging av eksamen", nn: "Særskild tilrettelegging av eksamen" }
+  lenkeord: { nb: ["særskilt tilrettelegging av eksamen", "særskilt tilrettelagt eksamen"], nn: ["særskild tilrettelegging av eksamen", "særskilt tilrettelagd eksamen"] }
+  tekst:
+    nb: "Elever og privatister har rett til særskilt tilrettelegging av eksamen når de trenger det for å vise kompetansen sin, f.eks. lengre tid eller opplesing. Tilretteleggingen skal ikke veie opp for manglende kompetanse eller norskferdigheter. Eleven søker fylkeskommunen, og vedtaket kan påklages. Det er noe annet enn individuelt tilrettelagt opplæring."
+    nn: "Elevar og privatistar har rett til særskild tilrettelegging av eksamen når dei treng det for å vise kompetansen sin, til dømes lengre tid eller opplesing. Tilrettelegginga skal ikkje vege opp for manglande kompetanse eller norskferdigheiter. Eleven søkjer fylkeskommunen, og vedtaket kan klagast på. Det er noko anna enn individuelt tilrettelagd opplæring."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-34", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-34" }
+    - { id: udir-sarskilt-tilrettelegging-eksamen, punkt: "Generelt om særskilt tilrettelegging av eksamen" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det greit å skrive at det er «noe annet enn individuelt tilrettelagt opplæring», så de to ikke blandes?"
+  stikkord: [tilrettelegging, eksamen, lengre tid, opplesing]
+  relatert: [individuelt-tilrettelagt-opplaering]
+
+- id: fag-og-svenneprove
+  type: begrep
+  tittel: { nb: "Fag- og svenneprøve", nn: "Fag- og sveineprøve" }
+  lenkeord: { nb: ["fag- og svenneprøve", "fag- eller svenneprøve"], nn: ["fag- og sveineprøve", "fag- eller sveineprøve"] }
+  tekst:
+    nb: "Fag- og svenneprøven er sluttvurderingen i et lærefag, og gir fag- eller svennebrev. Prøvenemnda lager og vurderer prøven, og karakterene er bestått meget godt, bestått og ikke bestått. Lærebedriften melder opp lærlingen senest to måneder før kontraktstiden er ute. Lærekandidater tar kompetanseprøve, og praksisbrevkandidater praksisbrevprøve."
+    nn: "Fag- og sveineprøva er sluttvurderinga i eit lærefag, og gir fag- eller sveinebrev. Prøvenemnda lagar og vurderer prøva, og karakterane er bestått mykje godt, bestått og ikkje bestått. Lærebedrifta melder opp lærlingen seinast to månader før kontraktstida er ute. Lærekandidatar tek kompetanseprøve, og praksisbrevkandidatar praksisbrevprøve."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-5 og § 9-48 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-48" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-56 og § 9-63", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-56" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende for lærere og ledere i videregående?"
+  stikkord: [fagbrev, svennebrev, fagprøve, svenneprøve, lærling, prøve]
+  relatert: [provenemnd, laerling, kontrakt-om-opplaering, laerebedrift]
+
+- id: provenemnd
+  type: begrep
+  tittel: { nb: "Prøvenemnd", nn: "Prøvenemnd" }
+  tekst:
+    nb: "Prøvenemnda lager, gjennomfører og vurderer fag- og svenneprøven. Fylkeskommunen oppnevner den etter forslag fra yrkesopplæringsnemnda og partene i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og de skal som hovedregel ikke være fra lærebedriften eller skolen der kandidaten har fått opplæring."
+    nn: "Prøvenemnda lagar, gjennomfører og vurderer fag- og sveineprøva. Fylkeskommunen nemner henne opp etter framlegg frå yrkesopplæringsnemnda og partane i arbeidslivet. Minst to medlemmer har fagutdanning i faget, og dei skal som hovudregel ikkje vere frå lærebedrifta eller skolen der kandidaten har fått opplæring."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-59 til § 9-61 og § 9-63", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-59" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er definisjonen dekkende?"
+  stikkord: [fagprøve, svenneprøve, nemnd]
+  relatert: [fag-og-svenneprove, klagenemnd]
+
+- id: klagenemnd
+  type: begrep
+  tittel: { nb: "Klagenemnd", nn: "Klagenemnd" }
+  tekst:
+    nb: "Det finnes to slags klagenemnder for karakterer. Ved skriftlig eksamen oppnevner statsforvalteren en klagenemnd som vurderer svaret på nytt, kan sette karakteren opp eller ned og ikke trenger å begrunne avgjørelsen. Ved «ikke bestått» på fag- og svenneprøven avgjør en klagenemnd oppnevnt av departementet. Se veiviseren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+    nn: "Det finst to slag klagenemnder for karakterar. Ved skriftleg eksamen nemner statsforvaltaren opp ei klagenemnd som vurderer svaret på nytt, kan setje karakteren opp eller ned og ikkje treng å grunngi avgjerda. Ved «ikkje bestått» på fag- og sveineprøva avgjer ei klagenemnd oppnemnd av departementet. Sjå vegvisaren [Klage på karakter](#/vurdering/klage-pa-karakter?steg=kl-klagenemnd&svar=skriftlig)."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7 og § 10-9 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+    - { id: opplaeringslova, punkt: "§ 8-3", url: "https://lovdata.no/lov/2023-06-09-30/§8-3" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Bør begrepet også nevne klagenemnda for inntak, som noen fylker har (f.eks. Vestland)?"
+  stikkord: [klage, eksamen, karakter, fag- og svenneprøve]
+  relatert: [standpunktkarakter, fag-og-svenneprove]
+
+- id: vitnemal-og-kompetansebevis
+  type: begrep
+  tittel: { nb: "Vitnemål og kompetansebevis", nn: "Vitnemål og kompetansebevis" }
+  lenkeord: { nb: ["vitnemål", "kompetansebevis"], nn: ["vitnemål", "kompetansebevis"] }
+  tekst:
+    nb: "Vitnemål gis når eleven har bestått alle fag og eksamener i opplæringsløpet. Kompetansebevis gis når vilkårene for vitnemål eller fag- og svennebrev ikke er oppfylt, eller når eleven bare har hatt deler av et fag. Begge viser standpunkt- og eksamenskarakterer og fravær. Skolen skriver ut vitnemålet, og fylkeskommunen for lærlinger og privatister."
+    nn: "Vitnemål blir gitt når eleven har bestått alle fag og eksamenar i opplæringsløpet. Kompetansebevis blir gitt når vilkåra for vitnemål eller fag- og sveinebrev ikkje er oppfylte, eller når eleven berre har hatt delar av eit fag. Begge viser standpunkt- og eksamenskarakterar og fråvær. Skolen skriv ut vitnemålet, og fylkeskommunen for lærlingar og privatistar."
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 9-46, § 9-51 og § 9-53", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-46" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-54", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-54" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "«Fylkeskommunen for lærlinger og privatister» er en forenkling av § 9-54. Er den god nok?"
+  stikkord: [vitnemål, kompetansebevis, dokumentasjon]
+  relatert: [vitnemalsmerknader, fagmerknader]

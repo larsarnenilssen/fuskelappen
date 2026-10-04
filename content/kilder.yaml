@@ -675,6 +675,109 @@ kilder:
       Udirs side om standpunktvurdering under «Standpunkt- og underveisvurdering». Brukt på siden om underveis- og
       sluttvurdering (fase 6).
 
+  - id: udir-merknader-ofo-kap10
+    navn: Merknader til opplæringsforskrifta, kapittel 10 Klage på sluttvurderingar
+    kortnavn: Udirs merknader til opplæringsforskrifta
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs merknader til hver paragraf i kapittel 10, én side per paragraf. Kildesjekken leser oversiktssiden for
+      kapitlet. Stegene i veiviseren «Klage på karakter» viser til merknaden til hver paragraf. Lest 04.10.2026.
+
+  - id: udir-klage-standpunkt
+    navn: Behandling av klager på standpunktkarakterer i fag
+    kortnavn: Udirs veiledning om klager på standpunktkarakterer
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Veiledningen til statsforvalterne om klager på standpunktkarakterer og IV (sist endret 01.12.2025). Hvert punkt
+      har egen adresse. Kildesjekken leser forsiden. Brukt i veiviseren «Klage på karakter». Lest 04.10.2026.
+
+  - id: udir-sarskilt-tilrettelegging-eksamen
+    navn: Generelt om særskilt tilrettelegging av eksamen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/sarskilt-tilrettelegging-av-eksamen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Hvem som kan få særskilt tilrettelegging av eksamen, og eksempler på tiltak. Brukt på siden «Eksamen» og i
+      begrepet særskilt tilrettelegging av eksamen.
+
+  - id: udir-administrere-eksamen
+    navn: Administrere eksamen
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side for skolene om eksamen: påmelding og frister, trekk, sensur og klage. Datoene herfra går foran
+      fylkenes når kildene er uenige (eier 04.10.2026). Hentes av npm run hent:eksamen.
+
+  - id: udir-fag-og-svenneprover
+    navn: Fag- og svenneprøver
+    utgiver: Utdanningsdirektoratet
+    url: https://www.udir.no/eksamen-og-prover/eksamen/fag-og-svenneprover/
+    type: side
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: side
+    aktiv: true
+    uttrekk:
+      selektor: main
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Udirs side om fag- og svenneprøver, for kandidatene og for prøvenemndene. Siden om prøvene i Vurdering lenker hit
+      (eier 04.10.2026).
+
+  - id: eksamensdatoer
+    navn: Eksamensdatoer fra udir.no og fylkeskommunene
+    utgiver: Utdanningsdirektoratet og fylkeskommunene
+    url: https://www.udir.no/eksamen-og-prover/eksamen/administrere-eksamen/
+    type: data
+    niva: nasjonal
+    lisens: NLOD 2.0 (udir.no). Fylkenes sider er lest for datoene, som er fakta. Teksten kopieres ikke.
+    sjekkmetode: eksamen
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [6]
+    merknad: >-
+      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet i januar og august av
+      npm run hent:eksamen fra sidene i scripts/eksamen/kilder.ts (avgjørelse 059). Udirs dato går foran. Ellers må
+      minst to fylker ha samme dato (eier 04.10.2026). eksamensplan.udir.no brukes ikke, fordi robots.txt stenger.
+
   - id: udir-regbok-karakterer
     navn: Registreringshåndboken, B26 Karakterer og andre vurderingsuttrykk
     utgiver: Utdanningsdirektoratet og VIGO Kodeverksgruppe

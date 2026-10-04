@@ -24,7 +24,8 @@ const DATAMODULER: Record<string, readonly string[]> = {
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
   udir: ['inntak', 'vurdering'],
-  skolear: ['inntak', 'arbeidstid'],
+  skolear: ['inntak', 'arbeidstid', 'vurdering'],
+  eksamen: ['vurdering'],
 };
 
 /** Regelsettene i rules/ og modulene som bruker dem. */

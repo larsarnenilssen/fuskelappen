@@ -1,0 +1,382 @@
+# Veiviser: klage på karakter (fase 6, pakke 3). Egne ord. Godkjent i forslaget av eier 04.10.2026
+# (docs/arbeidsordrer/fase-6-forslag.md, «Stegene i veiviseren «Klage på karakter»»). Bygger på opplæringsforskrifta
+# kapittel 10, Udirs merknader til kapitlet, Udirs veiledning om klager på standpunktkarakterer og forvaltningsloven.
+# Vestland supplerer steget om andre vedtak (klage-pa-karakter-vestland.yaml).
+- id: klage-pa-karakter
+  type: veiviser
+  tittel: { nb: Klage på karakter, nn: Klage på karakter }
+  tekst:
+    nb: "Hva kan eleven klage på, og hvem avgjør klagen? Veiviseren går gjennom begrunnelsen, fristen, hva skolen kan gjøre, og hva klageinstansen kan komme til."
+    nn: "Kva kan eleven klage på, og kven avgjer klaga? Vegvisaren går gjennom grunngivinga, fristen, kva skolen kan gjere, og kva klageinstansen kan kome til."
+  start: kl-start
+  farge: baer
+  rekkefolge: 30
+  faser:
+    - { id: hva, tittel: { nb: Hva klagen gjelder, nn: Kva klaga gjeld } }
+    - { id: begrunnelse, tittel: { nb: "Begrun\u00adnelse og frist", nn: "Grunn\u00adgiving og frist" } }
+    - { id: skolen, tittel: { nb: Skolen, nn: Skolen } }
+    - { id: klageinstans, tittel: { nb: "Klage\u00adinstansen", nn: "Klage\u00adinstansen" } }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "Kapittel 10 Klage på sluttvurderingar", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er de fire fasene (hva klagen gjelder, begrunnelse og frist, skolen, klageinstansen) en dekkende inndeling av klagegangen?"
+  stikkord: [veiviser, klage, klagefrist, standpunktkarakter, eksamenskarakter, IV, klagenemnd, statsforvalteren, begrunnelse]
+
+- id: kl-start
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: hva
+  tittel:
+    nb: "Hva klagen gjelder"
+    nn: "Kva klaga gjeld"
+  tekst:
+    nb: "Eleven kan klage på sluttvurderingen: standpunktkarakterer, vedtak om at eleven ikke får standpunktkarakter, eksamenskarakterer og karakteren på fag- og svenneprøven og de andre prøvene. Det er ikke klagerett på underveisvurderingen. Eleven klager selv fra fylte 15 år."
+    nn: "Eleven kan klage på sluttvurderinga: standpunktkarakterar, vedtak om at eleven ikkje får standpunktkarakter, eksamenskarakterar og karakteren på fag- og sveineprøva og dei andre prøvene. Det er ikkje klagerett på undervegsvurderinga. Eleven klagar sjølv frå fylte 15 år."
+  paragrafer: [opplaeringsforskrifta/10-1, opplaeringslova/24-5]
+  sporsmal:
+    tekst:
+      nb: "Hva vil eleven klage på?"
+      nn: "Kva vil eleven klage på?"
+    svar:
+      - { id: standpunkt, gruppe: { nb: Standpunkt, nn: Standpunkt }, tekst: { nb: "Standpunktkarakteren i et fag", nn: "Standpunktkarakteren i eit fag" }, neste: kl-begrunnelse }
+      - { id: iv, gruppe: { nb: Standpunkt, nn: Standpunkt }, tekst: { nb: "Vedtaket om ikke vurderingsgrunnlag (IV)", nn: "Vedtaket om ikkje vurderingsgrunnlag (IV)" }, neste: kl-begrunnelse }
+      - { id: orden, gruppe: { nb: Standpunkt, nn: Standpunkt }, tekst: { nb: "Karakteren i orden eller oppførsel", nn: "Karakteren i orden eller oppførsel" }, neste: kl-begrunnelse }
+      - { id: skriftlig, gruppe: { nb: Eksamen, nn: Eksamen }, tekst: { nb: "Skriftlig eksamen", nn: "Skriftleg eksamen" }, neste: kl-skriftlig }
+      - { id: muntlig, gruppe: { nb: Eksamen, nn: Eksamen }, tekst: { nb: "Muntlig, praktisk eller muntlig-praktisk eksamen", nn: "Munnleg, praktisk eller munnleg-praktisk eksamen" }, neste: kl-muntlig }
+      - { id: prove, gruppe: { nb: Prøver, nn: Prøver }, tekst: { nb: "Fag- og svenneprøven, praksisbrevprøven eller kompetanseprøven", nn: "Fag- og sveineprøva, praksisbrevprøva eller kompetanseprøva" }, neste: kl-prove }
+      - { id: annet, gruppe: { nb: Annet, nn: Anna }, tekst: { nb: "Fritak, tilrettelegging, utsatt eksamen, bortvisning eller annullering", nn: "Fritak, tilrettelegging, utsett eksamen, bortvising eller annullering" }, neste: kl-andre }
+      - { id: underveis, gruppe: { nb: Annet, nn: Anna }, tekst: { nb: "Halvårsvurdering eller annen underveisvurdering", nn: "Halvårsvurdering eller anna undervegsvurdering" }, neste: kl-ingen-klagerett }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-1", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-1" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-1", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/" }
+    - { id: opplaeringslova, punkt: "§ 24-5 Sjølvråderett for dei som har fylt 15 år", url: "https://lovdata.no/lov/2023-06-09-30/§24-5" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er svarene i spørsmålet en dekkende liste over hva en elev, lærling eller privatist kan ville klage på?"
+    - "Er det riktig å si at eleven klager selv fra fylte 15 år, også på karakterer (merknaden til § 10-1)?"
+
+- id: kl-ingen-klagerett
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: hva
+  tittel:
+    nb: "Ingen klagerett"
+    nn: "Ingen klagerett"
+  tekst:
+    nb: "Halvårsvurdering og annen underveisvurdering kan ikke påklages, heller ikke at eleven ikke får halvårsvurdering med karakter. Eleven kan be læreren forklare vurderingen, og har rett til samtale om utviklingen sin. Er eleven uenig i standpunktkarakteren senere, kan eleven klage på den."
+    nn: "Halvårsvurdering og anna undervegsvurdering kan ikkje klagast på, heller ikkje at eleven ikkje får halvårsvurdering med karakter. Eleven kan be læraren forklare vurderinga, og har rett til samtale om utviklinga si. Er eleven usamd i standpunktkarakteren seinare, kan eleven klage på han."
+  paragrafer: [opplaeringsforskrifta/10-1, opplaeringsforskrifta/9-6]
+  kilder:
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-1, første ledd", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-1-kva-kapittelet-gjeld-og-forholdet-til-forvaltningsloven/" }
+    - { id: udir-klage-standpunkt, punkt: "7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/" }
+    - { id: opplaeringsforskrifta, punkt: "§ 9-6 første ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§9-6" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Klageveiledningen punkt 7 sier at det ikke er klagerett på å ikke få halvårsvurdering med karakter. Er det greit å si det her for alle elever?"
+
+- id: kl-begrunnelse
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: begrunnelse
+  tittel:
+    nb: "Begrunnelse for karakteren"
+    nn: "Grunngiving for karakteren"
+  tekst:
+    nb: "Før eleven klager, kan eleven kreve en skriftlig begrunnelse. Faglæreren begrunner standpunktkarakteren i faget og vedtaket om IV. Kontaktlæreren begrunner karakteren i orden og oppførsel. Begrunnelsen må kreves innen klagefristen."
+    nn: "Før eleven klagar, kan eleven krevje ei skriftleg grunngiving. Faglæraren grunngir standpunktkarakteren i faget og vedtaket om IV. Kontaktlæraren grunngir karakteren i orden og oppførsel. Grunngivinga må krevjast innan klagefristen."
+  ansvar:
+    nb: "Faglæreren, eller kontaktlæreren i orden og oppførsel."
+    nn: "Faglæraren, eller kontaktlæraren i orden og oppførsel."
+  frist:
+    nb: "Kreves innen klagefristen på ti dager."
+    nn: "Må krevjast innan klagefristen på ti dagar."
+  fristKort:
+    nb: "10 dager"
+    nn: "10 dagar"
+  neste: kl-frist
+  paragrafer: [opplaeringsforskrifta/10-3]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-3 første og tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-3" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-3", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-3-rett-til-grunngiving-for-karakteren/" }
+    - { id: udir-klage-standpunkt, punkt: "2. Hvem kan klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/2.-hvem-kan-klage/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at faglæreren også begrunner vedtaket om IV (§ 10-5 andre ledd sier «i samråd med faglæraren»)?"
+
+- id: kl-frist
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: begrunnelse
+  tittel:
+    nb: "Klagefristen"
+    nn: "Klagefristen"
+  tekst:
+    nb: "Fristen er ti kalenderdager. Den regnes fra dagen eleven fikk karakteren, eller fra dagen eleven fikk begrunnelsen, hvis den kom senere. Klagen er skriftlig, sier hva eleven klager på, og sendes til skolen. Den bør si hvorfor eleven mener reglene ikke er fulgt."
+    nn: "Fristen er ti kalenderdagar. Han blir rekna frå dagen eleven fekk karakteren, eller frå dagen eleven fekk grunngivinga, dersom ho kom seinare. Klaga er skriftleg, seier kva eleven klagar på, og blir send til skolen. Ho bør seie kvifor eleven meiner reglane ikkje er følgde."
+  ansvar:
+    nb: "Eleven, eller foreldrene når eleven er under 15 år."
+    nn: "Eleven, eller foreldra når eleven er under 15 år."
+  frist:
+    nb: "Ti kalenderdager."
+    nn: "Ti kalenderdagar."
+  fristKort:
+    nb: "10 dager"
+    nn: "10 dagar"
+  neste: kl-skolen
+  paragrafer: [opplaeringsforskrifta/10-2]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-2", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-2" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
+    - { id: udir-klage-standpunkt, punkt: "4. Hvordan skal eleven eller foreldrene klage", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/4.-hvordan-skal-eleven-eller-foreldrene-klage/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Klageveiledningen punkt 4 sier at fristen regnes fra begrunnelsen når den ikke gis samme dag. Gjelder det også for IV og orden og oppførsel?"
+
+- id: kl-skolen
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: skolen
+  tittel:
+    nb: "Skolen vurderer klagen"
+    nn: "Skolen vurderer klaga"
+  tekst:
+    nb: |-
+      Rektor sørger for at skolen vurderer klagen, sammen med faglæreren som satte karakteren.
+
+      - **Standpunkt i fag:** Eleven kan ikke klage på karakteren i seg selv, bare på at reglene for å sette standpunktkarakter ikke er fulgt. Er skolen enig, kan den sette karakteren opp, men ikke ned.
+      - **IV:** Er skolen enig, setter den en karakter fra 1 til 6.
+      - **Orden og oppførsel:** Skolen kan endre karakteren til gunst for eleven.
+
+      Endrer ikke skolen vedtaket, sender den klagen til statsforvalteren med begrunnelsen fra læreren og en uttalelse fra skolen. Eleven får kopi.
+    nn: |-
+      Rektor syter for at skolen vurderer klaga, saman med faglæraren som sette karakteren.
+
+      - **Standpunkt i fag:** Eleven kan ikkje klage på karakteren i seg sjølv, berre på at reglane for å setje standpunktkarakter ikkje er følgde. Er skolen samd, kan han setje karakteren opp, men ikkje ned.
+      - **IV:** Er skolen samd, set han ein karakter frå 1 til 6.
+      - **Orden og oppførsel:** Skolen kan endre karakteren til gunst for eleven.
+
+      Endrar ikkje skolen vedtaket, sender han klaga til statsforvaltaren med grunngivinga frå læraren og ei fråsegn frå skolen. Eleven får kopi.
+  ansvar:
+    nb: "Rektor, med faglæreren."
+    nn: "Rektor, med faglæraren."
+  paragrafer: [opplaeringsforskrifta/10-4, opplaeringsforskrifta/10-5, opplaeringsforskrifta/10-6, opplaeringsforskrifta/9-16, forvaltningsloven/33]
+  sporsmal:
+    tekst:
+      nb: "Endrer skolen vedtaket?"
+      nn: "Endrar skolen vedtaket?"
+    svar:
+      - { id: ja, tekst: { nb: "Ja, skolen gir eleven medhold", nn: "Ja, skolen gir eleven medhald" }, neste: kl-ny-karakter }
+      - { id: nei, tekst: { nb: "Nei, klagen sendes til statsforvalteren", nn: "Nei, klaga blir send til statsforvaltaren" }, neste: kl-statsforvalteren }
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-4 andre ledd, § 10-5 andre ledd og § 10-6 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-4" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-4", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-4-klage-pa-fastsetjing-av-standpunktkarakter-i-fag/" }
+    - { id: udir-klage-standpunkt, punkt: "5. Hvordan skal skolen behandle klagen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/5.-hvordan-skal-skolen-behandle-klagen/" }
+    - { id: forvaltningsloven, punkt: "§ 33 andre ledd", url: "https://lovdata.no/lov/1967-02-10/§33" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Kan skolen også i orden og oppførsel bare endre karakteren til gunst for eleven (forvaltningsloven § 33), eller kan den sette den ned?"
+    - "Bør steget nevne at skolen kan rette en ren feilføring uten å sende saken videre (klageveiledningen punkt 5)?"
+
+- id: kl-ny-karakter
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: skolen
+  tittel:
+    nb: "Ny karakter fra skolen"
+    nn: "Ny karakter frå skolen"
+  tekst:
+    nb: "Skolen gjør et nytt vedtak, og saken sendes ikke til statsforvalteren. Den nye karakteren er et nytt vedtak: eleven kan kreve begrunnelse og har ny klagerett."
+    nn: "Skolen gjer eit nytt vedtak, og saka blir ikkje send til statsforvaltaren. Den nye karakteren er eit nytt vedtak: eleven kan krevje grunngiving og har ny klagerett."
+  paragrafer: [opplaeringsforskrifta/10-3, forvaltningsloven/33]
+  kilder:
+    - { id: udir-klage-standpunkt, punkt: "5. Hvordan skal skolen behandle klagen", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/5.-hvordan-skal-skolen-behandle-klagen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at eleven får ny klagerett når skolen setter karakteren opp (klageveiledningen punkt 5)?"
+
+- id: kl-statsforvalteren
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: klageinstans
+  tittel:
+    nb: "Statsforvalteren avgjør"
+    nn: "Statsforvaltaren avgjer"
+  tekst:
+    nb: |-
+      Hva statsforvalteren kan gjøre, avhenger av hva klagen gjelder.
+
+      - **Standpunkt i fag:** Statsforvalteren kan avvise klagen, stadfeste karakteren eller oppheve den, men ikke sette en ny karakter. Opphever statsforvalteren karakteren, vurderer skolen på nytt og kan la karakteren stå, sette den opp eller sette den ned. Den nye karakteren er endelig.
+      - **IV:** Statsforvalteren vurderer om eleven er varslet, og om læreren har vist at grunnlaget mangler eller at fraværsgrensen er overskredet. Rektors skjønn for fravær mellom 10 og 15 prosent vurderes ikke.
+      - **Orden og oppførsel:** Statsforvalteren kan avvise klagen, stadfeste karakteren eller justere den opp eller ned.
+    nn: |-
+      Kva statsforvaltaren kan gjere, kjem an på kva klaga gjeld.
+
+      - **Standpunkt i fag:** Statsforvaltaren kan avvise klaga, stadfeste karakteren eller oppheve han, men ikkje setje ein ny karakter. Opphevar statsforvaltaren karakteren, vurderer skolen på nytt og kan la karakteren stå, setje han opp eller setje han ned. Den nye karakteren er endeleg.
+      - **IV:** Statsforvaltaren vurderer om eleven er varsla, og om læraren har vist at grunnlaget manglar eller at fråværsgrensa er overskriden. Skjønnet til rektor for fråvær mellom 10 og 15 prosent blir ikkje vurdert.
+      - **Orden og oppførsel:** Statsforvaltaren kan avvise klaga, stadfeste karakteren eller justere han opp eller ned.
+  ansvar:
+    nb: "Statsforvalteren."
+    nn: "Statsforvaltaren."
+  paragrafer: [opplaeringsforskrifta/10-4, opplaeringsforskrifta/10-5, opplaeringsforskrifta/10-6]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-4 tredje og fjerde ledd, § 10-5 tredje og fjerde ledd og § 10-6 tredje ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-4" }
+    - { id: udir-klage-standpunkt, punkt: "Resultatet", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/resultatet/" }
+    - { id: udir-klage-standpunkt, punkt: "7. Klage på vedtak om å ikke fastsette standpunktkarakter i fag (IV)", url: "https://www.udir.no/regelverk-og-tilsyn/skole-og-opplaring/behandling-av-klager-pa-standpunktkarakterer-i-fag/7.--klage-pa-vedtak-om-a-ikke-fastsette-standpunktkarakter-i-fag-iv/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Klageveiledningen («Resultatet») sier at skolen kan sette karakteren ned etter at statsforvalteren har opphevet den. Er det riktig å si det så tydelig til lærere og ledere?"
+    - "Bør steget si hva skolen kan gjøre når statsforvalteren opphever et vedtak om IV (la IV stå, eller sette karakter)?"
+
+- id: kl-skriftlig
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: begrunnelse
+  tittel:
+    nb: "Skriftlig eksamen"
+    nn: "Skriftleg eksamen"
+  tekst:
+    nb: "Eleven kan klage på selve karakteren. Det gis ingen begrunnelse, men eleven har rett til kopi av svaret sitt og sensorveiledningen. Klagen sendes til skolen, og privatister sender den til fylkeskommunen. Skolen eller fylkeskommunen sender klagen og svaret videre uten å vurdere dem."
+    nn: "Eleven kan klage på sjølve karakteren. Det blir ikkje gitt grunngiving, men eleven har rett til kopi av svaret sitt og retningslinjene for sensorane. Klaga blir send til skolen, og privatistar sender ho til fylkeskommunen. Skolen eller fylkeskommunen sender klaga og svaret vidare utan å vurdere dei."
+  ansvar:
+    nb: "Skolen, eller fylkeskommunen for privatister."
+    nn: "Skolen, eller fylkeskommunen for privatistar."
+  frist:
+    nb: "Ti kalenderdager fra karakteren er kjent. Datoene for klageperioden står i kalenderen."
+    nn: "Ti kalenderdagar frå karakteren er kjend. Datoane for klageperioden står i kalenderen."
+  fristKort:
+    nb: "10 dager"
+    nn: "10 dagar"
+  neste: kl-klagenemnd
+  paragrafer: [opplaeringsforskrifta/10-2, opplaeringsforskrifta/10-3, opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-3 fjerde ledd og § 10-7 andre ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er «sensorveiledningen» et godt nok ord for «retningslinjer som er utarbeidde for sensorane» i § 10-3 fjerde ledd?"
+
+- id: kl-klagenemnd
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: klageinstans
+  tittel:
+    nb: "Klagenemnda avgjør"
+    nn: "Klagenemnda avgjer"
+  tekst:
+    nb: "En klagenemnd oppnevnt av statsforvalteren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikke klagen. Den kan avvise klagen, stadfeste karakteren eller sette den opp eller ned, og trenger ikke begrunne avgjørelsen. Datoen klagene er behandlet, står i [kalenderen](#/vurdering/eksamen-og-klage)."
+    nn: "Ei klagenemnd oppnemnd av statsforvaltaren vurderer svaret på nytt. Nemnda ser den første karakteren, men ikkje klaga. Ho kan avvise klaga, stadfeste karakteren eller setje han opp eller ned, og treng ikkje grunngi avgjerda. Datoen klagene er behandla, står i [kalenderen](#/vurdering/eksamen-og-klage)."
+  ansvar:
+    nb: "Klagenemnda."
+    nn: "Klagenemnda."
+  paragrafer: [opplaeringsforskrifta/10-7]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-7 første, tredje og fjerde ledd", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-7" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-7", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-7-klage-pa-karakter-ved-skriftleg-eksamen/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig å si at karakteren kan settes ned etter klage på skriftlig eksamen (§ 10-7 fjerde ledd)?"
+
+- id: kl-muntlig
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: klageinstans
+  tittel:
+    nb: "Muntlig og praktisk eksamen"
+    nn: "Munnleg og praktisk eksamen"
+  tekst:
+    nb: |-
+      Eleven kan bare klage på formelle feil ved gjennomføringen som kan ha påvirket resultatet, ikke på karakteren. Eksempler er feil oppgave, for kort tid eller en inhabil sensor. Eleven kan kreve en muntlig begrunnelse innen klagefristen.
+
+      Skolen sender klagen til statsforvalteren med oppgaven og uttalelser fra rektor og sensorene. Statsforvalteren avviser klagen, stadfester karakteren eller annullerer den. Annulleres karakteren, kan eleven ta [ny eksamen](#/vurdering/eksamen?del=ek-utsatt-ny-sarskilt). I et trekkfag trekkes faget på nytt.
+    nn: |-
+      Eleven kan berre klage på formelle feil ved gjennomføringa som kan ha påverka resultatet, ikkje på karakteren. Døme er feil oppgåve, for kort tid eller ein ugild sensor. Eleven kan krevje ei munnleg grunngiving innan klagefristen.
+
+      Skolen sender klaga til statsforvaltaren med oppgåva og fråsegner frå rektor og sensorane. Statsforvaltaren avviser klaga, stadfestar karakteren eller annullerer han. Blir karakteren annullert, kan eleven ta [ny eksamen](#/vurdering/eksamen?del=ek-utsatt-ny-sarskilt). I eit trekkfag blir faget trekt på nytt.
+  ansvar:
+    nb: "Statsforvalteren."
+    nn: "Statsforvaltaren."
+  frist:
+    nb: "Ti kalenderdager."
+    nn: "Ti kalenderdagar."
+  fristKort:
+    nb: "10 dager"
+    nn: "10 dagar"
+  paragrafer: [opplaeringsforskrifta/10-3, opplaeringsforskrifta/10-8, opplaeringsforskrifta/9-37]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-3 andre ledd og § 10-8", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-8" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-8", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-8-klage-pa-gjennomforinga-av-munnleg-eksamen-og-eksamen-som-ikkje-berre-er-skriftleg-eller-munnleg/" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2 (fristen gjelder også formelle feil)", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er eksemplene på formelle feil (feil oppgave, for kort tid, inhabil sensor) godt valgt fra merknaden til § 10-8?"
+
+- id: kl-prove
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: klageinstans
+  tittel:
+    nb: "Fag- og svenneprøven og de andre prøvene"
+    nn: "Fag- og sveineprøva og dei andre prøvene"
+  tekst:
+    nb: |-
+      Kandidaten kan bare klage når karakteren er «ikke bestått», men både på karakteren og på formelle feil. Kandidaten kan kreve en skriftlig begrunnelse fra prøvenemnda. Fristen er tre uker etter forvaltningsloven.
+
+      - **Karakteren på fag- og svenneprøven:** En klagenemnd oppnevnt av departementet avgjør. Fylkeskommunen sender klagen til Udir med oppgaven, vurderingsgrunnlaget, protokollen og prøvearbeidet.
+      - **Formelle feil på fag- og svenneprøven, og praksisbrevprøven og kompetanseprøven:** Fylkestinget, eller den fylkestinget gir fullmakt, avgjør.
+
+      Mer om prøvene står på siden [Fag- og svenneprøven](#/vurdering/fag-og-svenneproven).
+    nn: |-
+      Kandidaten kan berre klage når karakteren er «ikkje bestått», men både på karakteren og på formelle feil. Kandidaten kan krevje ei skriftleg grunngiving frå prøvenemnda. Fristen er tre veker etter forvaltningsloven.
+
+      - **Karakteren på fag- og sveineprøva:** Ei klagenemnd oppnemnd av departementet avgjer. Fylkeskommunen sender klaga til Udir med oppgåva, vurderingsgrunnlaget, protokollen og prøvearbeidet.
+      - **Formelle feil på fag- og sveineprøva, og praksisbrevprøva og kompetanseprøva:** Fylkestinget, eller den fylkestinget gir fullmakt, avgjer.
+
+      Meir om prøvene står på sida [Fag- og sveineprøva](#/vurdering/fag-og-svenneproven).
+  ansvar:
+    nb: "Fylkeskommunen sender klagen videre."
+    nn: "Fylkeskommunen sender klaga vidare."
+  frist:
+    nb: "Tre uker."
+    nn: "Tre veker."
+  fristKort:
+    nb: "3 uker"
+    nn: "3 veker"
+  paragrafer: [opplaeringsforskrifta/10-3, opplaeringsforskrifta/10-9, opplaeringsforskrifta/10-10, opplaeringslova/8-3, forvaltningsloven/29]
+  kilder:
+    - { id: opplaeringsforskrifta, punkt: "§ 10-9 og § 10-10", url: "https://lovdata.no/forskrift/2024-06-03-900/§10-9" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-9", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-9-klage-pa-fag--og-sveineprove/" }
+    - { id: udir-merknader-ofo-kap10, punkt: "Merknad til § 10-2, andre avsnitt", url: "https://www.udir.no/regelverkstolkninger/opplaring/forskrift-om-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-opplaringsforskrifta/tredje-delen--fellesreglar-for-grunnskoleopplaringa-og-den-vidaregaande-opplaringa-for-barn-og-unge/kapittel-10-klage-pa-sluttvurderingar/-10-2-klagefristar/" }
+    - { id: opplaeringslova, punkt: "§ 8-3 Klagenemnd for fag- og sveineprøver", url: "https://lovdata.no/lov/2023-06-09-30/§8-3" }
+    - { id: forvaltningsloven, punkt: "§ 29 første ledd", url: "https://lovdata.no/lov/1967-02-10/§29" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Er det riktig at klage på praksisbrevprøven og kompetanseprøven, både karakter og formelle feil, avgjøres av fylkestinget (§ 10-10 første ledd)?"
+    - "Bør steget si at klagenemnda kan oppheve prøven og vise til ny prøve (§ 10-9 fjerde ledd)?"
+
+- id: kl-andre
+  type: steg
+  veiviser: klage-pa-karakter
+  fase: klageinstans
+  tittel:
+    nb: "Andre vedtak om vurdering og eksamen"
+    nn: "Andre vedtak om vurdering og eksamen"
+  tekst:
+    nb: "Fritak fra vurdering med karakter, særskilt tilrettelegging av eksamen, utsatt eksamen, bortvisning og annullering er enkeltvedtak. Eleven klager etter forvaltningsloven til den som gjorde vedtaket, og fristen er tre uker. Endrer ikke skolen eller fylkeskommunen vedtaket, går klagen til statsforvalteren. Udirs oversikt over klageinstanser sier hvem som avgjør hver klage."
+    nn: "Fritak frå vurdering med karakter, særskild tilrettelegging av eksamen, utsett eksamen, bortvising og annullering er enkeltvedtak. Eleven klagar etter forvaltningsloven til den som gjorde vedtaket, og fristen er tre veker. Endrar ikkje skolen eller fylkeskommunen vedtaket, går klaga til statsforvaltaren. Oversikta til Udir over klageinstansar seier kven som avgjer kvar klage."
+  frist:
+    nb: "Tre uker."
+    nn: "Tre veker."
+  fristKort:
+    nb: "3 uker"
+    nn: "3 veker"
+  paragrafer: [forvaltningsloven/28, forvaltningsloven/29, forvaltningsloven/33, opplaeringslova/29-1]
+  kilder:
+    - { id: forvaltningsloven, punkt: "§ 28, § 29 og § 33", url: "https://lovdata.no/lov/1967-02-10/§28" }
+    - { id: opplaeringslova, punkt: "§ 29-1 Klage på enkeltvedtak", url: "https://lovdata.no/lov/2023-06-09-30/§29-1" }
+    - { id: udir-klageinstanser, punkt: "Opplæringsforskrifta kapittel 9" }
+  kontrollert: null
+  kontrollsporsmal:
+    - "Forslaget nevnte at Udir er klageinstans for fritak i fremmedspråk. Skal det stå i steget, eller holder det å vise til oversikten over klageinstanser?"
+    - "Er statsforvalteren klageinstans for alle disse vedtakene i videregående (Udirs oversikt)?"
