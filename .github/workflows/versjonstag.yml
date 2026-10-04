@@ -4,6 +4,8 @@
 #   Versjonsnummeret økes bare når eier og Claude er enige om en ny versjon (AGENTS.md).
 # - Manuelt (Actions → Sett versjonstag → Run workflow): lager taggen for versjonen i package.json hvis den
 #   mangler, og publiserer.
+# - Hver tag nyere enn siste utgivelse får en utgivelse under Releases, med teksten fra CHANGELOG.md. Mangler noen,
+#   lages de i versjonsrekkefølge, og den nyeste merkes som siste.
 # Taggen settes her fordi Claudes arbeidsmiljø ikke kan pushe tagger. En tag pushet med GITHUB_TOKEN starter ikke
 # andre arbeidsflyter, så publiseringen kalles direkte.
 name: Sett versjonstag
@@ -68,3 +70,43 @@ jobs:
       pages: write
       id-token: write
       actions: write
+
+  utgivelse:
+    name: Lag utgivelse
+    needs: tag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Lag utgivelser for tagger som mangler
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          SISTE=$(gh release view --json tagName --jq .tagName 2>/dev/null || true)
+          git tag --list 'v*.*.*' --sort=v:refname > "$RUNNER_TEMP/tagger"
+          NYESTE=$(tail -n 1 "$RUNNER_TEMP/tagger")
+          while read -r TAG; do
+            if [ -n "$SISTE" ] && [ "$(printf '%s\n%s\n' "$SISTE" "$TAG" | sort -V | tail -n 1)" = "$SISTE" ]; then
+              continue
+            fi
+            if gh release view "$TAG" </dev/null >/dev/null 2>&1; then
+              continue
+            fi
+            VERSJON="${TAG#v}"
+            # Avsnittet for versjonen i CHANGELOG.md, uten overskriften.
+            awk -v v="$VERSJON" '
+              index($0, "## [" v "]") == 1 { med = 1; next }
+              med && /^## \[/ { exit }
+              med { print }
+            ' CHANGELOG.md > "$RUNNER_TEMP/notat.md"
+            if ! grep -q '[^[:space:]]' "$RUNNER_TEMP/notat.md"; then
+              echo "Versjon $VERSJON." > "$RUNNER_TEMP/notat.md"
+            fi
+            if [ "$TAG" = "$NYESTE" ]; then SIST=true; else SIST=false; fi
+            gh release create "$TAG" --verify-tag --title "$TAG" --notes-file "$RUNNER_TEMP/notat.md" --latest="$SIST" </dev/null
+            echo "::notice::Laget utgivelsen $TAG."
+          done < "$RUNNER_TEMP/tagger"
