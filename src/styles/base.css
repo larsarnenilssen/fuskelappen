@@ -919,6 +919,23 @@ main {
   appearance: none;
 }
 
+.sokeboks .sokefelt input {
+  padding-right: 2.75rem;
+}
+
+/* Nettleserens eget kryss i søkefelt skjules; Sokeboks har sitt eget, som også virker i Safari på iPhone. */
+.sokeboks .sokefelt input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.sokefelt-tom {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--farge-tekst-dempet);
+}
+
 .sokefelt-ikon {
   position: absolute;
   left: 0.65rem;
@@ -2787,7 +2804,14 @@ p.fagkort-tittel {
   color: var(--fagtype);
 }
 
-.merke-fagtype .begrep-i {
+/* «i» for fagtypen og for trinnet står inni merket (eier 04.10.2026). */
+.fagark-merker .merke:has(.begrep-i) {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-1);
+}
+
+.fagark-merker .merke .begrep-i {
   min-width: 1.25rem;
   min-height: 1.25rem;
   margin: -0.35rem -0.25rem;
@@ -2905,20 +2929,52 @@ p.fagkort-tittel {
   white-space: nowrap;
 }
 
-.nokkeltall-bunn {
+.nokkeltall-topp {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: var(--rom-2);
-  margin-top: var(--rom-3);
 }
 
-.nokkeltall-bunn .knapp {
+/* Knappen trekkes litt inn over og under, så linjen blir lite høyere enn overskriften. */
+.nokkeltall-regn-ut {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--rom-1);
+  flex-shrink: 0;
+  min-width: 2.25rem;
+  margin-block: calc(-1 * var(--rom-1));
   text-decoration: none;
+}
+
+/* Teksten følger bredden på ruten (eier 04.10.2026): hele teksten, «Arbeidsplan» eller bare ikonet. */
+.nokkeltall-rute {
+  container-type: inline-size;
+}
+
+.nokkeltall-regn-ut-kort {
+  display: none;
+}
+
+@container (max-width: 21rem) {
+  .nokkeltall-regn-ut-lang {
+    display: none;
+  }
+
+  .nokkeltall-regn-ut-kort {
+    display: inline;
+  }
+}
+
+@container (max-width: 15rem) {
+  .nokkeltall-regn-ut {
+    padding-inline: 0;
+  }
+
+  .nokkeltall-regn-ut-kort {
+    display: none;
+  }
 }
 
 .fagark-fakta {
@@ -3025,6 +3081,12 @@ p.fagkort-tittel {
   background: var(--farge-flate-2);
 }
 
+/* Etikettene i boksene får plass til det lengste ordet («Standpunktkarakter»), så det ikke deles midt i ordet når to
+   bokser står side om side. */
+.fagark .fag-vurdering .egenskaper > div {
+  grid-template-columns: minmax(0, 10rem) minmax(0, 1fr);
+}
+
 .egenskaper dd {
   margin: 0;
   overflow-wrap: anywhere;
@@ -3047,10 +3109,6 @@ p.fagkort-tittel {
 
 .fag-vurdering .liten-overskrift {
   margin-top: var(--rom-2);
-}
-
-.fag-laereplan-tittel {
-  font-weight: 600;
 }
 
 .kompetansemaal {
@@ -3585,15 +3643,18 @@ p.fagkort-tittel {
     max-width: 72rem;
   }
 
+  /* Rader med to grupper, så overskriftene i hver rad står i samme høyde (eier 04.10.2026). Gruppene leses rad for
+     rad, i rekkefølgen fra «Tilpass». */
   .forsidegrupper {
-    columns: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
     column-gap: var(--rom-6);
   }
 
-  /* Luften står under hver gruppe, så spaltene starter likt øverst. */
+  /* Luften står under hver gruppe. */
   .forsidegruppe {
     padding-bottom: var(--rom-4);
-    break-inside: avoid;
   }
 
   .forsidegruppe h2 {
@@ -6219,4 +6280,340 @@ button.frist-stripe-celle:hover {
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+/* ---------- Fraværsgrensen (fase 6, pakke 2) ----------
+   Samme oppbygning som poengberegningen. Stolpen viser fraværet som teller, med merker ved 10 og 15 prosent, og
+   utfallet står i tekst under (WCAG 1.4.1). */
+
+@media (min-width: 64rem) {
+  .fravaer .kalkulator-resultat {
+    position: sticky;
+    top: calc(var(--topplinje-hoyde) + var(--rom-4));
+  }
+}
+
+.fr-fag {
+  padding: var(--rom-3) var(--rom-4);
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-m);
+  background: var(--farge-flate);
+}
+
+.fr-fag p {
+  margin: 0 0 var(--rom-1);
+}
+
+.fr-fag-navn {
+  font-weight: 700;
+}
+
+.fr-fag-timer {
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-hele-aaret {
+  margin: var(--rom-3) 0 0;
+}
+
+.fr-felt {
+  display: grid;
+  gap: var(--rom-3);
+}
+
+/* Mindre luft i «Sjekk fraværet» (eier 04.10.2026): feltene står tett, med hjelpeteksten rett under. */
+.fr-felt .felt {
+  margin: 0;
+}
+
+.fr-felt .felt-hjelp,
+.fravaer .skjemadel[data-del='funksjoner'] .skjemadel-innhold > .felt-hjelp {
+  margin: var(--rom-1) 0 0;
+}
+
+.fravaer .skjemadel[data-del='funksjoner'] .skjemadel-innhold > .felt-hjelp {
+  margin: 0 0 var(--rom-3);
+}
+
+.fr-felt .forklaring {
+  margin: 0;
+}
+
+.fr-tabell {
+  width: 100%;
+  margin: var(--rom-3) 0;
+  border-collapse: collapse;
+  font-size: var(--str-s);
+}
+
+.fr-tabell th,
+.fr-tabell td {
+  padding: var(--rom-1) var(--rom-2);
+  border-bottom: var(--strek) solid var(--farge-linje);
+  text-align: right;
+}
+
+.fr-tabell thead th,
+.fr-tabell td {
+  white-space: nowrap;
+}
+
+.fr-tabell th[scope='row'] {
+  font-weight: 400;
+  text-align: left;
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-tabell-svar th[scope='row'],
+.fr-tabell-svar td {
+  font-weight: 700;
+  color: var(--farge-tekst);
+}
+
+.fr-tomt {
+  margin: var(--rom-3) 0;
+}
+
+.fr-veiviserkort {
+  margin-top: var(--rom-3);
+}
+
+/* På stor skjerm står kortet til veiviseren nederst i venstre spalte, og resultatet går over begge radene. */
+@media (min-width: 64rem) {
+  .fravaer .kalkulator-flate {
+    grid-template-rows: auto 1fr;
+  }
+
+  .fravaer .kalkulator-resultat {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .fravaer .fr-veiviserkort {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0;
+  }
+}
+
+
+.fr-sjekk-svar {
+  margin-top: var(--rom-3);
+}
+
+.fr-tall {
+  display: grid;
+  gap: var(--rom-1);
+  margin: 0 0 var(--rom-3);
+}
+
+.fr-tall div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 var(--rom-3);
+}
+
+.fr-tall dt {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rom-2);
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-tall-prosent {
+  color: var(--farge-tekst);
+}
+
+/* Tegnforklaringen: fylt for fraværet som teller, lys med striper for alt fraværet, som i stolpen. */
+.fr-tegn {
+  flex-shrink: 0;
+  width: 0.875rem;
+  height: 0.875rem;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: 3px;
+}
+
+.fr-tegn-teller {
+  background: var(--farge-ok);
+}
+
+.fr-skjonn .fr-tegn-teller {
+  background: var(--farge-advarsel);
+}
+
+.fr-over .fr-tegn-teller {
+  background: var(--farge-feil);
+}
+
+.fr-tegn-samlet,
+.fr-stolpe-samlet {
+  background: repeating-linear-gradient(135deg, var(--farge-tekst-dempet) 0 2px, transparent 2px 6px);
+  opacity: 0.45;
+}
+
+.fr-tall dd {
+  margin: 0;
+  font-weight: 700;
+}
+
+.fr-stolpe {
+  position: relative;
+  height: 1.25rem;
+  border: var(--strek) solid var(--farge-kant);
+  border-radius: var(--radius-s);
+  background: var(--farge-flate-2);
+  overflow: hidden;
+}
+
+.fr-stolpe-samlet,
+.fr-stolpe-fyll {
+  position: absolute;
+  inset: 0 auto 0 0;
+}
+
+.fr-stolpe-fyll {
+  background: var(--farge-ok);
+}
+
+.fr-skjonn .fr-stolpe-fyll {
+  background: var(--farge-advarsel);
+}
+
+.fr-over .fr-stolpe-fyll {
+  background: var(--farge-feil);
+}
+
+.fr-stolpe-merke {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 2px solid var(--farge-tekst);
+}
+
+.fr-stolpe-merke-15 {
+  border-left-style: dashed;
+}
+
+.fr-stolpe-etiketter {
+  position: relative;
+  height: 1.25rem;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.fr-stolpe-etiketter span {
+  position: absolute;
+  top: 0.125rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.fr-utfall {
+  margin: var(--rom-3) 0;
+  padding: var(--rom-3) var(--rom-4);
+  border-left: 4px solid var(--farge-ok);
+  border-radius: var(--radius-s);
+  background: var(--farge-ok-flate);
+}
+
+.fr-skjonn .fr-utfall {
+  border-left-color: var(--farge-advarsel);
+  background: var(--farge-advarsel-flate);
+}
+
+.fr-over .fr-utfall {
+  border-left-color: var(--farge-feil);
+  background: var(--farge-feil-flate);
+}
+
+.fr-utfall p {
+  margin: 0 0 var(--rom-2);
+}
+
+.fr-utfall p:last-child {
+  margin-bottom: 0;
+}
+
+.fr-utfall-tittel {
+  display: flex;
+  align-items: center;
+  gap: var(--rom-2);
+  font-weight: 700;
+}
+
+.fr-innenfor .fr-utfall-tittel .ikon {
+  color: var(--farge-ok);
+}
+
+.fr-skjonn .fr-utfall-tittel .ikon {
+  color: var(--farge-advarsel);
+}
+
+.fr-over .fr-utfall-tittel .ikon {
+  color: var(--farge-feil);
+}
+
+/* «Fravær og eksamen» på fagarket: samme blå boks som elever og privatister, med lenkene til Vurdering nederst. */
+.fag-ifaget {
+  display: flex;
+  flex-direction: column;
+}
+
+.fag-ifaget-andel {
+  display: block;
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-s);
+}
+
+.fag-ifaget-i {
+  margin: var(--rom-3) 0 0;
+  padding-top: var(--rom-2);
+  border-top: var(--strek) solid var(--farge-kant);
+  color: var(--farge-tekst-dempet);
+  font-size: var(--str-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fag-ifaget-lenker {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fag-ifaget-lenker .lenke-pil {
+  font-size: var(--str-s);
+}
+
+.fag-avvik {
+  margin: var(--rom-2) 0 0;
+}
+
+.fag-avvik p {
+  margin: 0 0 var(--rom-1);
+}
+
+/* Helsefraværet står i én boks. Delingen før og etter grensen vises bare når brukeren krysser av for den. */
+.fr-del-helse {
+  align-items: flex-start;
+  padding: 0;
+}
+
+.fr-del-helse input {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.fr-helse-etter {
+  margin-left: var(--rom-2);
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-kant);
+}
+
+/* Merknaden på et begrep, f.eks. at årsrammene bygger på appens tolkning (eier 04.10.2026). */
+.begrep-merknad {
+  margin: var(--rom-3) 0;
 }

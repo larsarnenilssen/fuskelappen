@@ -26,7 +26,7 @@ export const manifest: Modulmanifest = {
   async sokeoppforinger() {
     return kalkulatorer.map((k) => ({
       id: `arbeidstid:${k.id}`,
-      type: 'funksjon' as const,
+      type: 'kalkulator' as const,
       tittel: begge(k.tittel),
       tekst: begge(k.beskrivelse),
       rute: k.rute,

@@ -80,6 +80,11 @@ const felles = {
    * med i det samlede søket.
    */
   kodeliste: z.enum(['fagmerknader', 'vitnemalsmerknader', 'sokerstatuser']).optional(),
+  /**
+   * Kort merknad med egne ord i en gul boks under teksten, f.eks. at verdiene i appen bygger på appens egen tolkning
+   * (eier 04.10.2026). Vises på begrepssiden.
+   */
+  merknad: flerspraak.optional(),
 };
 
 /** Paragraf i Regelverk: «dokument/nummer», f.eks. «opplaeringslova/11-1» eller «forvaltningsloven/11a». */

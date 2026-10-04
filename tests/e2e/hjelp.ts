@@ -95,6 +95,8 @@ export const ruter = [
   '#/vurdering/grunnlag-for-vurdering',
   '#/vurdering/grunnlag-for-vurdering?steg=vu-varsel-fravaer&svar=elev.vanlig.nei.over',
   '#/vurdering/orden-og-oppforsel',
+  '#/vurdering/fravaer',
+  '#/vurdering/fravaer?fag=ENG1007',
   '#/begreper/karakterer-og-vurderingsuttrykk?q=IV',
   '#/inntak',
   '#/inntak/frister',

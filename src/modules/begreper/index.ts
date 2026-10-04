@@ -49,7 +49,7 @@ export const manifest: Modulmanifest = {
         ? b.kodegrupper.flatMap((g) =>
             g.koder.map((k) => ({
               id: `kode:${b.id}:${g.id}:${k.kode}`,
-              type: 'begrep' as const,
+              type: 'kode' as const,
               tittel: { nb: `${k.kode} ${k.navn.nb}`, nn: `${k.kode} ${k.navn.nn}` },
               tekst: k.tekst,
               stikkord: [k.kode, g.tittel.nb, g.tittel.nn],

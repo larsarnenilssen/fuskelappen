@@ -132,12 +132,17 @@ function sjekkUdir(): Sjekkresultat {
 function sjekkVigo(): Sjekkresultat {
   const endringsfil = join(generert, 'vigo-endringer.json');
   if (!existsSync(endringsfil)) return { status: 'feilet', fingeravtrykk: null, melding: 'Hentingen fra VIGO Kodeverksbase feilet. Se loggen for steget «Hent Grep og fag- og timefordeling».' };
-  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { forste: boolean; endringer: string[] };
+  const e = JSON.parse(readFileSync(endringsfil, 'utf8')) as { forste: boolean; endringer: string[]; avvik?: string[] };
   const tester = existsSync(join(generert, 'grep-tester.txt')) ? readFileSync(join(generert, 'grep-tester.txt'), 'utf8').trim() : 'ikke kjørt';
+  const avvik = e.avvik ?? [];
   const filer = ['fagrelasjoner', 'merknader', 'skolenummer'].map((f) => join(rot, 'data/vigo', `${f}.json`)).filter(existsSync);
   const fingeravtrykk = filer.length > 0 ? lagFingeravtrykk(filer.map((f) => readFileSync(f, 'utf8').replace(/"hentet": "[^"]*"/, '')).join('\n')) : null;
   rapport.push('### VIGO Kodeverksbase', e.forste ? 'Første henting.' : e.endringer.length === 0 ? 'Ingen endringer.' : `${e.endringer.length} endringer:`, ...e.endringer.slice(0, 60).map((l) => `- ${l}`), '');
+  // VIGO kontrollerer årstimetallet og trekkordningen i fagindeksen fra Grep (fase 6). Avvikene står i kontrollsaken
+  // så lenge de finnes, og er merket på fagarket.
+  rapport.push('#### Grep kontrollert mot VIGO', avvik.length === 0 ? 'Årstimetallet og trekkordningen stemmer for alle fagene.' : `${avvik.length} avvik:`, ...avvik.slice(0, 60).map((l) => `- ${l}`), '');
   if (tester === 'feilet' && e.endringer.length > 0) return { status: 'endret', fingeravtrykk, melding: `Dataene fra VIGO Kodeverksbase er endret slik at testene feiler, og endringene er ikke tatt inn (${e.endringer.length} endringer).` };
+  if (avvik.length > 0) return { status: 'endret', fingeravtrykk, melding: `Grep og VIGO er uenige om årstimetallet eller trekkordningen i ${avvik.length} fag. Se rapporten.` };
   return { status: 'ok', fingeravtrykk, melding: e.endringer.length > 0 ? `Tatt inn automatisk: ${e.endringer.length} endringer i VIGO Kodeverksbase.` : null };
 }
 

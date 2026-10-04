@@ -45,3 +45,12 @@ Kalkulatoren heter `poeng`. Karakterene er tall (1–6) eller `IV`, `IM`, `frita
 |---|---|---|
 | `Vg1` | `standpunkt`, `eksamen`, `valgfag` (lister med karakterer), og for tilleggspoeng `fylke` og `tilleggspoeng` (nøkkelen i fylkets regelsett, f.eks. `tilleggspoeng_idrett_2`) | `snitt` (avrundet til to desimaler), `poeng`, `samlet` (med tilleggspoeng) |
 | `Vg2`, `Vg3` | `rader: [{ type: standpunkt \| eksamen \| halvar, vurdering, annen, fag, trinn }]`. `annen` er en annen karakter i samme fag (privatist eller omvalg), og den beste teller. `fag` og `trinn` brukes for halvårsvurdering i samme fag på Vg1 og Vg2 | `snitt`, `poeng` |
+
+## Input og forventet: fraværsgrensen (`tests/fasit/vurdering/`)
+
+Kalkulatoren heter `fravaer`. `fag` er fagkoden, og `arstimer` må være det samme som årstimetallet i Grep for faget.
+Fraværet er i økter av lengden `minutter`.
+
+| input | forventet |
+|---|---|
+| `fag`, `arstimer`, `minutter`, og for å sjekke fraværet `fravaer: { udokumentert, helse, helse_etter, andre }` (`helse` er helsefravær til grensen ble nådd, `helse_etter` helsefravær dokumentert av helsepersonell etter det, `andre` fravær dokumentert med grunnene i § 9-8 andre ledd bokstav b–i) | `grense_timer` og `grense_okter` (10 %, uavrundet), `innenfor` (flest hele økter innenfor), `over` (færrest økter over), `skjonn` (flest hele økter innenfor 15 %), `teller` (økter som teller), `over_10` og `over_15` (0 eller 1) |

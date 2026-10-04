@@ -2,7 +2,11 @@
 import MiniSearch, { type Options, type SearchResult } from 'minisearch';
 import type { Flerspraak, Synonymer } from '../innhold/skjema.ts';
 
-export type Sokeoppforingstype = 'modul' | 'funksjon' | 'begrep' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'lov' | 'side' | 'skole';
+/**
+ * Hva treffet er, vist under tittelen i søkeresultatene. Typen skal være det treffet kalles ellers i appen: en veiviser,
+ * en kalkulator, en tidslinje eller en side, ikke noe generelt (eier 04.10.2026).
+ */
+export type Sokeoppforingstype = 'modul' | 'veiviser' | 'kalkulator' | 'tidslinje' | 'side' | 'begrep' | 'fagmerknad' | 'vitnemalsmerknad' | 'sokerstatus' | 'kode' | 'regel' | 'fag' | 'tilbud' | 'laereplanverk' | 'lov' | 'skole';
 
 export interface Sokeoppforing {
   id: string;

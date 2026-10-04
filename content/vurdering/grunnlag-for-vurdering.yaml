@@ -336,8 +336,8 @@
     nb: "Fravær i faget"
     nn: "Fråvær i faget"
   tekst:
-    nb: "En elev som har fravær i mer enn 10 prosent av årstimetallet i faget, kan ikke få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i § 9-8 andre ledd, for eksempel sykdom etter at grensen er nådd, velferd eller lovpålagt oppmøte, teller ikke. Grensen regnes for hvert skoleår, og kan ikke rundes ned."
-    nn: "Ein elev som har fråvær i meir enn 10 prosent av årstimetalet i faget, kan ikkje få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i § 9-8 andre ledd, til dømes sjukdom etter at grensa er nådd, velferd eller lovpålagt oppmøte, tel ikkje. Grensa blir rekna for kvart skoleår, og kan ikkje rundast ned."
+    nb: "En elev som har fravær i mer enn 10 prosent av årstimetallet i faget, kan ikke få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i et fag som fortsetter. Fravær som er dokumentert med grunnene i § 9-8 andre ledd, for eksempel sykdom etter at grensen er nådd, velferd eller lovpålagt oppmøte, teller ikke. Grensen regnes for hvert skoleår, og kan ikke rundes ned. Grensen i faget i timer og økter står i [kalkulatoren for fraværsgrensen](#/vurdering/fravaer)."
+    nn: "Ein elev som har fråvær i meir enn 10 prosent av årstimetalet i faget, kan ikkje få standpunktkarakter, eller halvårsvurdering med karakter ved slutten av skoleåret i eit fag som held fram. Fråvær som er dokumentert med grunnane i § 9-8 andre ledd, til dømes sjukdom etter at grensa er nådd, velferd eller lovpålagt oppmøte, tel ikkje. Grensa blir rekna for kvart skoleår, og kan ikkje rundast ned. Grensa i faget i timar og økter står i [kalkulatoren for fråværsgrensa](#/vurdering/fravaer)."
   paragrafer: [opplaeringsforskrifta/9-8]
   sporsmal:
     tekst:

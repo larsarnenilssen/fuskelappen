@@ -2,6 +2,7 @@
 import type { ComponentChildren } from 'preact';
 import { useEffect, useId, useMemo, useState } from 'preact/hooks';
 import fagsok from 'virtual:fagsok';
+import { huskOktlengde, lesOktlengde } from '../../../app/kalkulatorvalg.ts';
 import { useTekst } from '../../../app/tilstand.ts';
 import { Hjelp } from '../../../components/Hjelp.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
@@ -479,9 +480,16 @@ export function Fagfelt({
   );
 }
 
-/** Minutter per økt: 45, 60, 90 eller annet. Kompakt, med etiketten på samme linje. */
-export function Minuttvelger({ minutter, fritt, onEndring }: { minutter: number | null; fritt: boolean; onEndring: (m: number | null, fritt: boolean) => void }) {
+/**
+ * Minutter per økt: 45, 60, 90 eller annet. Kompakt, med etiketten på samme linje. Valget huskes på enheten og er
+ * standard i nye skjemaer i alle kalkulatorene (eier 04.10.2026).
+ */
+export function Minuttvelger({ minutter, fritt, onEndring: endre }: { minutter: number | null; fritt: boolean; onEndring: (m: number | null, fritt: boolean) => void }) {
   const { t } = useTekst();
+  const onEndring = (m: number | null, f: boolean) => {
+    huskOktlengde(m, f);
+    endre(m, f);
+  };
   const valg = fritt ? 'annet' : String(minutter ?? 45);
   return (
     <>
@@ -520,7 +528,9 @@ export interface Gruppetilstand {
 let nesteId = 1;
 
 export function nyGruppe(): Gruppetilstand {
-  return { id: nesteId++, arsrammer: [tomArsrammeplass()], faaElever: false, modus: 'arstimer', arstimer: null, arstimerAuto: false, okter: null, minutter: 45, minutterFritt: false, uker: null, endreUker: false };
+  // Øktlengden er den brukeren sist valgte i en kalkulator, ellers 45 minutter.
+  const okt = lesOktlengde();
+  return { id: nesteId++, arsrammer: [tomArsrammeplass()], faaElever: false, modus: 'arstimer', arstimer: null, arstimerAuto: false, okter: null, minutter: okt?.minutter ?? 45, minutterFritt: okt?.fritt ?? false, uker: null, endreUker: false };
 }
 
 /** Sørger for at nye grupper får id-er som ikke er brukt (etter at tilstanden er hentet fra historikken). */

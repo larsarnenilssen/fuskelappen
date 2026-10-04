@@ -17,7 +17,7 @@ const oppforinger: Sokeoppforing[] = [
     rute: '/a',
     modul: 'm',
   },
-  { id: 'b', type: 'funksjon', tittel: { nb: 'Skulereglar i Vestland', nn: 'Skulereglar i Vestland' }, rute: '/b', modul: 'm' },
+  { id: 'b', type: 'side', tittel: { nb: 'Skulereglar i Vestland', nn: 'Skulereglar i Vestland' }, rute: '/b', modul: 'm' },
   { id: 'c', type: 'begrep', tittel: { nb: 'Fravær', nn: 'Fravær' }, rute: '/c', modul: 'm' },
   { id: 'd', type: 'begrep', tittel: { nb: 'Årsramme', nn: 'Årsramme' }, stikkord: ['beskjeftigelse'], rute: '/d', modul: 'm' },
   { id: 'e', type: 'fag', tittel: { nb: 'Norsk', nn: 'Norsk' }, stikkord: ['NOR1267'], rute: '/e', modul: 'm' },

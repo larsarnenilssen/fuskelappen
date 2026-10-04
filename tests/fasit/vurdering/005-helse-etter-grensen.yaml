@@ -1,0 +1,16 @@
+id: vurdering-005
+beskrivelse: "FR5: ENG1007, 60 minutter: 6 timer helse med egenmelding og 8 udokumentert, så 2 timer sykdom med legeerklæring."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: ENG1007
+  arstimer: 140
+  minutter: 60
+  fravaer: { udokumentert: 8, helse: 6, helse_etter: 2, andre: 0 }
+forventet:
+  teller: 14
+  over_10: 0
+  over_15: 0
+begrunnelse: >-
+  6 + 8 = 14: grensen er nådd, ikke overskredet. De 2 timene med legeerklæring etterpå teller ikke. Innenfor
+  (opplæringsforskrifta § 9-8 tredje ledd, rundskrivet punkt 3.3.2). Eier 04.10.2026.

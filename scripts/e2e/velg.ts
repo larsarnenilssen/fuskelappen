@@ -19,7 +19,7 @@ const DATAMODULER: Record<string, readonly string[]> = {
   grep: ['fag', 'opplaeringslop', 'laereplanverket', 'arbeidstid'],
   fagfordeling: ['fag', 'arbeidstid'],
   lovdata: ['lov'],
-  vigo: ['begreper', 'fag', 'opplaeringslop'],
+  vigo: ['begreper', 'fag', 'opplaeringslop', 'vurdering'],
   utdanning: ['opplaeringslop'],
   skoler: ['opplaeringslop'],
   ndla: ['fag'],
@@ -32,6 +32,7 @@ const REGELMODULER: Record<string, readonly string[]> = {
   sfs2213: ['arbeidstid'],
   hta: ['arbeidstid'],
   inntak: ['inntak'],
+  vurdering: ['vurdering', 'fag'],
 };
 
 /** Felles kode: kjernetestene for skallet, navigasjonen og de felles komponentene, og overflyt for alle rutene. */

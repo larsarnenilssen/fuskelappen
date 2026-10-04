@@ -56,6 +56,7 @@ export default function Begrep({ parametre, sporring }: SideProps) {
         <Statusmerke status={status} kontrollert={begrep.kontrollert} />
       </div>
       <div class="brodtekst" dangerouslySetInnerHTML={{ __html: begrep.tekst[malform] }} />
+      {begrep.merknad && <p class="merknad merknad-advarsel begrep-merknad">{begrep.merknad[malform]}</p>}
       {begrep.kildetekst && (
         <blockquote class="kildetekst" lang={begrep.kildetekst.spraak}>
           <p class="liten dempet">{t('begreper.kildetekst', { spraak: t(`spraak.${begrep.kildetekst.spraak}`) })}</p>

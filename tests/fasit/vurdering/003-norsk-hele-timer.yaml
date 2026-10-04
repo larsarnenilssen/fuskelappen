@@ -1,0 +1,16 @@
+id: vurdering-003
+beskrivelse: "FR3: Norsk vg1 studieforberedende (NOR1260), 113 timer, økter på 60 minutter (hele timer)."
+godkjent: { av: eier, dato: 2026-10-04 }
+kalkulator: fravaer
+input:
+  fag: NOR1260
+  arstimer: 113
+  minutter: 60
+forventet:
+  grense_timer: 11.3
+  innenfor: 11
+  over: 12
+  skjonn: 16
+begrunnelse: >-
+  113 × 10 % = 11,3 timer. Eleven er innenfor så lenge fraværet ikke er mer enn grensen: 11 innenfor, 12 over. 15 %:
+  16,95 timer, rektors skjønn opp til 16. Eier 04.10.2026.

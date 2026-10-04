@@ -192,5 +192,21 @@ praksis:
     grunnlag: >-
       Eier 04.10.2026: «De ti og de fem teller.» Opplæringsforskrifta § 9-8 fjerde ledd sier «eigenmeldt eller
       udokumentert fråvær». Udirs rundskriv sier ikke noe om helsefravær med legeerklæring før grensen.
-    berorer: [vu-skjonn]
+    berorer: [vu-skjonn, fr-skjonn, vurdering-2025/fravaer_skjonn_prosent]
+    bekreftet: null
+
+  - id: fravaer-helse-etter-grensen
+    tittel: Helsefravær «etter grensen» når grensen ikke er nådd
+    sporsmal: >-
+      Teller helsefravær dokumentert av helsepersonell mot grensen helt til grensen er nådd, også når det er lagt inn
+      som fravær «etter at grensen ble nådd» i kalkulatoren?
+    appen: >-
+      Fraværskalkulatoren har én boks for helsefravær. Krysser brukeren av for at noe kom etter at grensen ble nådd og
+      er dokumentert av helsepersonell, regnes den delen med opp til grensen når resten av fraværet er under grensen,
+      og kalkulatoren sier det i en merknad. Grensen er da det største hele antallet økter som ikke er over 10 prosent.
+    grunnlag: >-
+      Eier 04.10.2026 (svar 2 på forslaget til pakke 2). Opplæringsforskrifta § 9-8 tredje ledd og rundskrivet punkt
+      3.3.2: helserelatert fravær teller til 10 prosent er nådd, og dokumentasjon fra helsepersonell får først betydning
+      for fravær over det.
+    berorer: [fr-teller]
     bekreftet: null

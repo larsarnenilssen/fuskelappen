@@ -77,10 +77,17 @@ export const nb = {
     ingenTreff: 'Ingen treff på «{sok}».',
     antallTreff: '{antall} treff',
     etTreff: '1 treff',
+    tom: 'Tøm søket',
     typer: {
       modul: 'Del av appen',
-      funksjon: 'Funksjon',
+      veiviser: 'Veiviser',
+      kalkulator: 'Kalkulator',
+      tidslinje: 'Tidslinje',
       begrep: 'Begrep',
+      fagmerknad: 'Fagmerknad',
+      vitnemalsmerknad: 'Vitnemålsmerknad',
+      sokerstatus: 'Status på søkerønske',
+      kode: 'Karakter/statuskode',
       regel: 'Regel',
       fag: 'Fag',
       tilbud: 'Tilbud',
@@ -336,7 +343,7 @@ export const nb = {
     },
     vurdering: {
       navn: 'Vurdering',
-      beskrivelse: 'Grunnlag for vurdering, underveis og slutt, fritak, fravær og orden og oppførsel.',
+      beskrivelse: 'Grunnlag for vurdering, underveis- og sluttvurdering, fritak, fravær og orden og oppførsel.',
     },
     laereplanverket: {
       navn: 'Overordnet del',

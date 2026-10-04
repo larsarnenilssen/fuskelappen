@@ -4,6 +4,23 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+### Lagt til
+
+- **Fraværsgrensen** i Vurdering: velg faget (søk på navn eller kode) eller skriv inn årstimetallet, og velg hvor lange øktene er. Svaret er grensen i klokketimer og økter ved 10 og 15 prosent, med utregningen linje for linje og kilde på hver linje.
+  - **Sjekk fraværet** (valgfritt): udokumentert fravær, helsefravær og fravær dokumentert med andre grunner, og en stolpe med merker ved 10 og 15 prosent, med utfallet i tekst. Både fraværet som teller og alt fraværet står i økter og prosent. Helsefraværet deles i før og etter grensen bare når brukeren krysser av for det. Grunnene for dokumentert fravær kan åpnes under feltet. Er eleven over 15 prosent, står fagmerknaden med kode.
+  - Under står reglene, lukket til de åpnes: fravær som teller, dokumentert fravær som ikke teller, det som ikke er fravær, rektors skjønn, årstimetallet og øktene, hvem grensen gjelder for, og forskjellen mot fraværet på vitnemålet.
+- **Fagarket** har boksen «Fravær og eksamen» ved siden av elever og privatister: fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt, og fagmerknadene som hører til faget, med lenkene til kalkulatoren og til underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller eksamen, står det i boksen.
+- **Veiviseren «Grunnlag for vurdering»** lenker fra steget om fravær til kalkulatoren. Kalkulatoren lenker tilbake fra kortet «Varsel, vedtak og karakter», under utregningen på mobil og nederst i venstre spalte på stor skjerm.
+- **Søkefeltet** har et kryss som tømmer søket.
+- **Øktlengden huskes:** Kalkulatorene husker øktlengden brukeren sist valgte (Fraværsgrensen, Vikartimer, Beskjeftigelse og Arbeidsplan). Den lagres på enheten.
+
+### Endret
+
+- **Søketreffene** sier hva treffet er i appen: veiviser, kalkulator, tidslinje eller side i stedet for «funksjon», og fagmerknad, vitnemålsmerknad, status på søkerønske eller karakter/statuskode i stedet for «begrep» for kodene i oppslagene.
+- **Vurdering på forsiden** skriver underveis- og sluttvurdering helt ut.
+- **Forsiden på stor skjerm** har gruppene i rader med to og to, så overskriftene i hver rad står i samme høyde. Gruppene leses rad for rad i rekkefølgen fra «Tilpass».
+- **Fagarket:** «i» for trinnet står inni merket, som for fagtypen, og «Læreplan i …» er tatt bort over kompetansemålene. At årsrammen bygger på appens tolkning av vedlegg 1, står nå i en gul merknad på begrepet Årsramme, og «Regn ut i Arbeidsplan» er en knapp på linje med «Årsramme» (bare ikonet på mobil), så nøkkeltallene tar mindre plass.
+
 ## [0.32.0] – 2026-10-04
 
 ### Endret

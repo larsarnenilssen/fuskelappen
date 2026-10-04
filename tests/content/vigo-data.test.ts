@@ -31,6 +31,12 @@ describe('dataene fra VIGO Kodeverksbase', () => {
     expect(tilIndeks.length).toBeGreaterThan(1000);
   });
 
+  it('har vurderingen og avvikene bare for fag i fagindeksen fra Grep', () => {
+    expect(Object.keys(rel.vurdering).filter((k) => !indeks.fag[k])).toEqual([]);
+    expect(Object.keys(rel.avvik).filter((k) => !indeks.fag[k])).toEqual([]);
+    expect(rel.vurdering.ENG1007?.eksamen).toBe('sentral');
+  });
+
   it('har fagmerknader og vitnemålsmerknader med tekst på bokmål og nynorsk', () => {
     expect(m.fagmerknader.find((x) => x.kode === 'FAM01')).toMatchObject({ nb: 'Fritatt fra opplæring', nn: 'Friteken frå opplæring' });
     expect(m.vitnemalsmerknader.some((x) => x.kode === 'VMM01')).toBe(true);

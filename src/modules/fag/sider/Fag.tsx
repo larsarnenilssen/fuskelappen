@@ -16,7 +16,9 @@ import { useSammenlagt } from '../../../components/Sammenlegg.tsx';
 import { finnKobling, type Koblingsresultat } from '../../arbeidstid/beregning/index.ts';
 import { fagvalgFraKobling } from '../../arbeidstid/fagvalg.ts';
 import { nyGruppe, useKoblingsdata } from '../../arbeidstid/komponenter/Skjema.tsx';
-import { overforSkjema } from '../../arbeidstid/kontekst.ts';
+import { overforSkjema, useHent } from '../../arbeidstid/kontekst.ts';
+import { lastMerknader } from '../../../data/vigo.ts';
+import { beregnGrenser } from '../../vurdering/beregning/fravaer.ts';
 import { hentBegreper } from '../../begreper/innhold.ts';
 import type { Innholdselement } from '../../../core/innhold/skjema.ts';
 import { formaterDato, formaterTall, type Malform, type Tekstnokkel } from '../../../core/i18n/tekst.ts';
@@ -31,7 +33,7 @@ import { htmlSpraak, programmerFor, programSammendrag, udirLenke } from '../opps
 import type { Fag, Fagindeks, Fagtype, Laereplan, Vurdering } from '../skjema.ts';
 import { fagtypeTekst, koTekst, programTekst, trinnTekst } from '../visning.ts';
 import { brukesSammenMed, erstatterKoder, gjeldendeKoder, nyLaereplan } from '../vigo/oppslag.ts';
-import type { Fagrelasjoner } from '../vigo/skjema.ts';
+import type { Fagrelasjoner, Merknad } from '../vigo/skjema.ts';
 
 /** Navnet på en fagkode: fra fagindeksen, ellers fra VIGO, ellers bare koden. */
 function navnFor(kode: string, indeks: Fagindeks, rel: Fagrelasjoner, malform: Malform): string {
@@ -101,7 +103,7 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
         </span>
       </p>
       <div lang={lang}>
-        <p class="fag-laereplan-tittel">{plan.tittel}</p>
+        {/* Tittelen på læreplanen står ikke her, så kompetansemålene kommer rett etter merket (eier 04.10.2026). */}
         {sett.length === 0 && (
           <p class="dempet" lang={malform}>
             {t('fag.side.ingenMaal')}
@@ -149,6 +151,112 @@ function Laereplandel({ t, fag, plan, malform }: { t: T; fag: Fag; plan: Laerepl
         })}
       </div>
     </>
+  );
+}
+
+/**
+ * Boksen «Fravær og eksamen» under «Vurderingsordning», ved siden av boksene for elever og privatister (eier
+ * 04.10.2026): fraværsgrensen i faget, om eksamen er sentralt eller lokalt gitt (VIGO), og fagmerknadene som hører til
+ * faget (VIGO, lenke til FAM-oppslaget). Nederst står lenkene til Vurdering: kalkulatoren med faget valgt og
+ * underveis- og sluttvurdering i faget. Er Grep og VIGO uenige om årstimetallet eller trekkordningen, står det i boksen.
+ */
+function IFaget({ t, kode, fag, rel, malform }: { t: T; kode: string; fag: Fag; rel: Fagrelasjoner | null; malform: Malform }) {
+  const hent = useHent();
+  const v = rel?.vurdering[kode];
+  const avvik = rel?.avvik[kode];
+  const [merknader, settMerknader] = useState<readonly Merknad[] | null>(null);
+  const fam = v?.fam ?? [];
+  useEffect(() => {
+    if (fam.length > 0) lastMerknader().then((m) => settMerknader(m.fagmerknader), () => undefined);
+  }, [fam.join()]);
+  let grense: { timer: number; prosent: number } | null = null;
+  try {
+    grense = fag.timer !== null ? beregnGrenser(hent, { arstimer: fag.timer, minutter: 60 }).grense : null;
+  } catch {
+    // Uten regelsett for datoen står ikke raden.
+  }
+  const tom = t('fag.side.avvikTom');
+  const avvikLinjer = avvik
+    ? [
+        ...(avvik.timer !== undefined ? [t('fag.side.avvikTimer', { verdi: avvik.timer === null ? tom : formaterTall(avvik.timer) })] : []),
+        ...(avvik.elev !== undefined ? [t('fag.side.avvikElev', { verdi: avvik.elev ?? tom })] : []),
+        ...(avvik.privatist !== undefined ? [t('fag.side.avvikPrivatist', { verdi: avvik.privatist ?? tom })] : []),
+      ]
+    : [];
+  const harTall = grense !== null || Boolean(v?.eksamen) || fam.length > 0;
+  return (
+    <div class="fag-vurdering fag-ifaget">
+      <h3 class="liten-overskrift">{t('fag.side.fravaerOgEksamen')}</h3>
+      {harTall && (
+        <dl class="egenskaper">
+          {grense !== null && fag.timer !== null && (
+            <div>
+              <dt>{t('fag.side.fravaersgrense')}</dt>
+              <dd class="tall">
+                {t('fag.side.fravaersgrenseVerdi', { timer: formaterTall(grense.timer) })}
+                {/* Andelen på egen linje, så den ikke deles midt i (eier 04.10.2026). */}
+                <span class="fag-ifaget-andel">{t('fag.side.fravaersgrenseAndel', { prosent: formaterTall(grense.prosent), arstimer: formaterTall(fag.timer) })}</span>
+              </dd>
+            </div>
+          )}
+          {v?.eksamen && (
+            <div>
+              <dt>{t('fag.side.eksamenGitt')}</dt>
+              <dd>
+                {t(`fag.side.gitt.${v.eksamen}`)}
+                {v.sensur && `, ${t(`fag.side.sensur.${v.sensur}`)}`}
+              </dd>
+            </div>
+          )}
+          {fam.length > 0 && (
+            <div>
+              <dt>{t('fag.side.fagmerknader')}</dt>
+              <dd>
+                <ul class="tett">
+                  {fam.map((k) => {
+                    const m = merknader?.find((x) => x.kode === k);
+                    return (
+                      <li key={k}>
+                        <a href={`#/begreper/fagmerknader?q=${k}`}>{k}</a>
+                        {m && ` ${m[malform]}`}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </dd>
+            </div>
+          )}
+        </dl>
+      )}
+      {avvikLinjer.length > 0 && (
+        <div class="merknad merknad-advarsel fag-avvik">
+          <p>{t('fag.side.avvikVigo')}</p>
+          <ul class="tett">
+            {avvikLinjer.map((l) => (
+              <li key={l}>{l}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {/* Lenkene til den andre modulen er merket «I Vurdering» (mockup 3, eier 04.10.2026). */}
+      <p class="fag-ifaget-i">{t('fag.side.iVurdering')}</p>
+      <ul class="fag-ifaget-lenker">
+        {grense !== null && (
+          <li>
+            <a class="lenke-pil" href={`#/vurdering/fravaer?fag=${kode}`}>
+              {t('fag.side.tilFravaer')}
+              <Ikon navn="hoyre" class="ikon-liten" />
+            </a>
+          </li>
+        )}
+        <li>
+          <a class="lenke-pil" href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>
+            {t('fag.side.tilVurdering')}
+            <Ikon navn="hoyre" class="ikon-liten" />
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
 
@@ -232,9 +340,33 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
         </div>
         {kjent && (
           <div class="nokkeltall-rute">
-            <span class="nokkeltall-etikett">
-              {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
-            </span>
+            {/* «Regn ut i Arbeidsplan» står som knapp på linje med overskriften i ruten, så kortet ikke trenger en egen rad
+                (eier 04.10.2026). På smal skjerm vises bare ikonet. At årsrammen bygger på appens tolkning av vedlegg 1,
+                står på begrepet Årsramme bak «i». Teksten følger bredden på ruten: hele, «Arbeidsplan» eller bare ikonet. */}
+            <div class="nokkeltall-topp">
+              <span class="nokkeltall-etikett">
+                {t('fag.side.arsramme')} <Begrepslenke id="arsramme" navn={t('fag.side.arsramme')} />
+              </span>
+              <a
+                class="knapp knapp-sekundaer knapp-liten nokkeltall-regn-ut"
+                href="#/arbeidstid/arbeidsplan"
+                title={t('fag.side.regnUt')}
+                aria-label={t('fag.side.regnUt')}
+                onClick={(e) => {
+                  e.preventDefault();
+                  regnUtIArbeidsplan(kode, fag, r);
+                }}
+                data-regn-ut
+              >
+                <Ikon navn="kalkulator" class="ikon-liten" />
+                <span class="nokkeltall-regn-ut-lang" aria-hidden="true">
+                  {t('fag.side.regnUt')}
+                </span>
+                <span class="nokkeltall-regn-ut-kort" aria-hidden="true">
+                  {t('fag.side.regnUtKort')}
+                </span>
+              </a>
+            </div>
             {r.status === 'koblet' ? (
               <>
                 <span class="nokkeltall-verdi tall">{formaterTall(r.kandidat.rad.t60)}</span>
@@ -265,23 +397,6 @@ function Nokkeltall({ kode, fag, r, indeks, malform }: { kode: string; fag: Fag;
             </div>
           ))}
         </dl>
-      )}
-      {kjent && (
-        <div class="nokkeltall-bunn">
-          <span class="dempet liten">{t('fag.side.arsrammeHjelp')}</span>
-          <a
-            class="knapp knapp-sekundaer knapp-liten"
-            href="#/arbeidstid/arbeidsplan"
-            onClick={(e) => {
-              e.preventDefault();
-              regnUtIArbeidsplan(kode, fag, r);
-            }}
-            data-regn-ut
-          >
-            <Ikon navn="kalkulator" class="ikon-liten" />
-            {t('fag.side.regnUt')}
-          </a>
-        </div>
       )}
     </section>
   );
@@ -388,7 +503,7 @@ export default function Fagside({ parametre }: SideProps) {
   const erstatter = rel ? erstatterKoder(kode, rel) : [];
   const sammen = rel ? brukesSammenMed(kode, rel) : [];
   const nyPlan = rel && lp ? nyLaereplan(lp, rel) : null;
-  const medVigo = erstatter.length > 0 || sammen.length > 0 || nyPlan !== null;
+  const medVigo = erstatter.length > 0 || sammen.length > 0 || nyPlan !== null || Boolean(rel?.vurdering[kode]) || Boolean(rel?.avvik[kode]);
   const erYff = fag.type === 'yrkesfaglig_fordypning';
   const typeBegrep = BEGREP_FOR_TYPE[fag.type];
   const ndlafag = ndla?.fag[kode] ?? [];
@@ -420,17 +535,14 @@ export default function Fagside({ parametre }: SideProps) {
           {fagtypeTekst(t, fag.type)}
           {typeBegrep && <Begrepslenke id={typeBegrep} navn={fagtypeTekst(t, fag.type)} />}
         </li>
-        {fag.trinn.map((x) => (
+        {/* «i» for trinnet står inni det siste trinnmerket, som for fagtypen (eier 04.10.2026). */}
+        {fag.trinn.map((x, i) => (
           <li key={x} class="merke">
             <span class="skjult-visuelt">{t('fag.side.trinn')}: </span>
             {trinnTekst(t, x)}
+            {i === fag.trinn.length - 1 && <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />}
           </li>
         ))}
-        {fag.trinn.length > 0 && (
-          <li class="merke-i">
-            <Begrepslenke id="trinn-vg" navn={t('fag.side.trinn')} />
-          </li>
-        )}
       </ul>
       <Nokkeltall kode={kode} fag={fag} r={kobling} indeks={indeks} malform={malform} />
       <dl class="egenskaper fagark-fakta">
@@ -526,19 +638,13 @@ export default function Fagside({ parametre }: SideProps) {
       )}
 
       <Seksjon id="vurdering" lukket tittel={t('fag.side.vurdering')}>
-        {fag.elev || fag.privatist ? (
-          <div class="fag-vurderinger">
-            {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}
-            {fag.privatist && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.privatist')} v={fag.privatist} />}
-          </div>
-        ) : (
-          <p class="dempet">{t('fag.side.ingenVurdering')}</p>
-        )}
+        <div class="fag-vurderinger">
+          <IFaget t={t} kode={kode} fag={fag} rel={rel} malform={malform} />
+          {fag.elev && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.elev')} v={fag.elev} />}
+          {fag.privatist && <Vurderingstabell t={t} indeks={indeks} tittel={t('fag.side.privatist')} v={fag.privatist} />}
+        </div>
+        {!fag.elev && !fag.privatist && <p class="dempet">{t('fag.side.ingenVurdering')}</p>}
         {plan && typeof plan === 'object' && <VurderingIPlan t={t} plan={plan} />}
-        {/* Underveis- og sluttvurdering med vurderingsteksten for faget (fase 6). */}
-        <p class="liten">
-          <a href={`#/vurdering/underveis-og-sluttvurdering?fag=${kode}`}>{t('fag.side.tilVurdering')}</a>
-        </p>
       </Seksjon>
 
       {fag.po.length > 0 && (
