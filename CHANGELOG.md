@@ -14,6 +14,7 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ### Endret
 
+- **Eksamensdatoene** fra Udir og fylkene oppdateres nå hver uke, ikke bare i januar og august.
 - **Vestland:** Skulereglane og inntaksforskrifta hentes nå på samme måte som de lokale forskriftene for de andre fylkene.
 
 ## [0.35.0] – 2026-10-04

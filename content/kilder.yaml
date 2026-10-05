@@ -791,7 +791,7 @@ kilder:
     godkjent_fingeravtrykk: null
     faser: [6]
     merknad: >-
-      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet i januar og august av
+      Datoene for oppmelding, trekk, eksamen, sensur og klage, og fylkenes egne datoer, hentet hver uke av
       npm run hent:eksamen fra sidene i scripts/eksamen/kilder.ts (avgjørelse 059). Udirs dato går foran. Ellers må
       minst to fylker ha samme dato (eier 04.10.2026). eksamensplan.udir.no brukes ikke, fordi robots.txt stenger.
 

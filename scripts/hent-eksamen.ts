@@ -1,6 +1,6 @@
 // Henter eksamensdatoene fra udir.no og fylkenes sider til data/eksamen/datoer.json (fase 6, pakke 3, avgjørelse 059).
-// Kjøres av kildesjekken, men henter bare hvert halvår (eier 04.10.2026): i januar og august, når forrige henting er
-// mer enn 45 dager gammel. Mellom hentingene blir forrige fil stående.
+// Kjøres hver uke av kildesjekken (eier 05.10.2026, før hvert halvår), fordi fylkene legger ut sine datoer spredt
+// gjennom året. Filen skrives bare når en dato er endret.
 //
 // - Sidene og mønstrene står i scripts/eksamen/kilder.ts, og lesingen og sammenslåingen i scripts/eksamen/les.ts.
 // - eksamensplan.udir.no brukes ikke, fordi robots.txt stenger for alle andre enn søkemotorene.
@@ -8,8 +8,7 @@
 //   står i .generert/eksamen-endringer.json, som kildesjekken tar med i kontrollsaken.
 // - Feiler alle Udirs sider, eller ser dataene feil ut, kastes en feil før noe skrives, og forrige fil blir stående.
 //
-// Bruk: npm run hent:eksamen [-- --alle] [-- --fra=<mappe>]
-//   --alle henter uansett måned.
+// Bruk: npm run hent:eksamen [-- --fra=<mappe>]
 //   --fra leser sidene fra en mappe (<kilde-id>.html) i stedet for å laste ned.
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -23,14 +22,6 @@ import { USER_AGENT } from './kilder/metoder.ts';
 
 const rot = fileURLToPath(new URL('..', import.meta.url));
 const FIL = join(rot, 'data/eksamen/datoer.json');
-
-/** Skal datoene hentes nå? I januar og august, når forrige henting er mer enn 45 dager gammel. */
-export function skalHente(idag: string, forrige: string | null): boolean {
-  if (!forrige) return true;
-  const maned = Number(idag.slice(5, 7));
-  const dager = (Date.parse(idag) - Date.parse(forrige.slice(0, 10))) / 86_400_000;
-  return (maned === 1 || maned === 8) && dager > 45;
-}
 
 /** Endringene fra forrige fil, én linje per dato. */
 export function sammenlign(forrige: Eksamensdatoer | null, ny: Eksamensdatoer): string[] {
@@ -83,15 +74,9 @@ async function hentSide(url: string): Promise<string> {
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
-  const alle = process.argv.includes('--alle');
   const fra = process.argv.find((a) => a.startsWith('--fra='))?.slice(6);
   const hentet = new Date().toISOString();
   const forrige = lesForrige<Eksamensdatoer>(FIL);
-  if (!alle && !fra && !skalHente(hentet.slice(0, 10), forrige?.hentet ?? null)) {
-    skrivEndringer(rot, 'eksamen', { endret: false, forste: false, hoppetOver: true, endringer: [], uenige: [], enKilde: [], mangler: [], feil: null });
-    console.log('Eksamensdatoene hentes i januar og august. Beholder forrige henting.');
-    process.exit(0);
-  }
 
   const kandidater: Kandidat[] = [];
   const mangler: string[] = [];

@@ -192,7 +192,7 @@ function sjekkUtdanning(kilde: Kilde): Sjekkresultat {
 }
 
 /**
- * Eksamensdatoene fra udir.no og fylkenes sider (npm run hent:eksamen, avgjørelse 059), hentet i januar og august.
+ * Eksamensdatoene fra udir.no og fylkenes sider (npm run hent:eksamen, avgjørelse 059), hentet hver uke.
  * Endrede datoer tas inn automatisk. Er fylkene uenige uten at Udir har datoen, eller finner ikke et mønster datoen
  * lenger (siden kan være endret), blir det en kontrollsak. Datoer bare ett fylke har, står til orientering.
  */

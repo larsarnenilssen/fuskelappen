@@ -1,5 +1,5 @@
-// Skjema for eksamensdatoene i data/eksamen/datoer.json (fase 6, pakke 3, avgjørelse 059). Datoene hentes hvert
-// halvår fra udir.no og fylkenes sider (scripts/hent-eksamen.ts). Brukes av skriptet før filen skrives, av appen og av
+// Skjema for eksamensdatoene i data/eksamen/datoer.json (fase 6, pakke 3, avgjørelse 059). Datoene hentes hver
+// uke fra udir.no og fylkenes sider (scripts/hent-eksamen.ts). Brukes av skriptet før filen skrives, av appen og av
 // testene.
 import { z } from 'zod';
 

@@ -8,6 +8,9 @@ name: Kildesjekk
 on:
   schedule:
     - cron: '17 4 * * 1' # mandager kl. 04.17 UTC
+    # Dagen etter at de fleste endringer i lover og forskrifter trer i kraft (1. januar, 1. juli og 1. august), så
+    # teksten i appen er oppdatert innen et døgn (eier 05.10.2026). Faller dagen på en mandag, går bare den vanlige.
+    - cron: '47 4 2 1,7,8 *'
   workflow_dispatch:
     inputs:
       simuler_feil:
@@ -25,8 +28,23 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Den ekstra kjøringen 2. januar, juli og august hoppes over når dagen er en mandag, fordi den vanlige går da.
+  dag:
+    name: Skal kildesjekken gå i dag?
+    runs-on: ubuntu-latest
+    outputs:
+      kjor: ${{ steps.dag.outputs.kjor }}
+    steps:
+      - id: dag
+        env:
+          PLAN: ${{ github.event.schedule }}
+        run: |
+          if [ "$PLAN" = '47 4 2 1,7,8 *' ] && [ "$(date -u +%u)" = 1 ]; then echo kjor=nei >> "$GITHUB_OUTPUT"; else echo kjor=ja >> "$GITHUB_OUTPUT"; fi
+
   sjekk:
     name: Sjekk kilder
+    needs: dag
+    if: needs.dag.outputs.kjor == 'ja'
     runs-on: ubuntu-latest
     # Grep kan være tregt (04.10.2026: over 20 minutter), så jobben får god tid. Grep-hentingen har egen grense under.
     # Første lesing av hele registeret over lokale forskrifter hos Lovdata tar 15–20 minutter (avgjørelse 061), og
