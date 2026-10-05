@@ -57,7 +57,10 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
    - **Fra fagarket** (eier 04.10.2026, fase 6-forslaget runde 5): lenke til kalenderen filtrert på eksamen, siden datoene per fag ikke kunne hentes. I dag lenker fagarket til siden Eksamen.
 7. **Svar, svarfrist og andre inntak** (eier 03.10.2026, `fase-5-forslag.md`, «Svar fra eier, runde 2»): en fil per inntaksår med datoene, `grunnlag: praksis`, og en påminnelse i kontrollrunden i mai. Ikke bygget i fase 5 (avgjørelse 046 lenker bare til Vilbli). Prøv først å hente datoene fra fylkenes sider, som eksamensdatoene (avgjørelse 059). Funnet igjen i gjennomgangen 05.10.2026.
 8. **På forsiden:** en boks med de tre neste datoene, som kan slås av og på eller står lukket. På mobil viser den bare neste dato til den åpnes. Vurder hvor mye annet innhold den skyver ned. Vis mockup av variantene.
-9. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
+9. **Kontrollsakene** (eier 05.10.2026):
+   - **Kildesjekken (sak #92):** En kilde uten godkjent fingeravtrykk merkes «Ny kilde, ikke godkjent ennå», ikke «Endret siden …». Alle 26 punktene i #92 er nye kilder fra fase 6, ikke endringer.
+   - **Lenkesjekken (sak #98):** Saken opprettes bare når en lenke er borte eller flyttet. Nettstedene som stenger for automatisk sjekk, står i kontrolloversikten (`docs/KONTROLL.md`), ikke i saken. Lukk #98 når endringen er flettet.
+10. Oppdater `OPPDRAG.md` (fase 8 bygger på kalenderen) og skriv en avgjørelse.
 
 **Først et forslag med mockup til eier.** Bygg deretter, og vis skjermbilder (iPhone 15 Pro i WebKit, PC i 1231 px og mørk visning) før testene kjøres.
 
