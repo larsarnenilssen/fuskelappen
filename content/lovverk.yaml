@@ -40,15 +40,29 @@ dokumenter:
     kilde: offentleglova
     kapitler: ['1-4']
     merknad: >-
-      Forslag 05.10.2026 etter ønske fra eier: innsyn, journalføring, unntak (bl.a. taushetsplikt, organinterne
+      Eier 05.10.2026: innsyn, journalføring, unntak (bl.a. taushetsplikt, organinterne
       dokumenter og eksamen) og klage. Ikke med: 5 (sluttføresegner).
 
   - id: arkivlova
     kilde: arkivlova
     kapitler: ['1', '2', '4']
     merknad: >-
-      Forslag 05.10.2026 etter ønske fra eier: den nye arkivlova fra 1.1.2026, med arkivplikta, dokumentasjonsplan,
+      Eier 05.10.2026: den nye arkivlova fra 1.1.2026, med arkivplikta, dokumentasjonsplan,
       bevaring og kassasjon og tilsyn. Ikke med: 3 (privatarkiv) og 5 (sluttføresegner).
+
+  - id: offentlegforskrifta
+    kilde: offentlegforskrifta
+    merknad: >-
+      Eier 05.10.2026. Hele forskriften (den har ikke kapitler).
+
+  - id: arkivforskrifta
+    kilde: arkivforskrifta
+    kapitler: ['1', '2', '8']
+    merknad: >-
+      Eier ba om forskriften 05.10.2026. Kapitlene er Claudes utvalg, til eiers kontroll: forvaltning av
+      dokumentasjon som arkiv, journalføring og personopplysninger i arkiv. Ikke med:
+      3 (konvertering), 4–6 (avlevering fra statlige organ), 7 (tilgjengeliggjøring av avleverte arkiv),
+      9 (omorganiseringer) og 10 (iverksetjing).
 
   - id: helse-og-miljo
     kilde: forskrift-helse-miljo-skoler
