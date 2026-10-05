@@ -21,7 +21,7 @@
   kontrollsporsmal:
     - "Opplæringslova § 29-1 sier at departementet er klageinstans, mens Udir skriver at statsforvalteren er klageinstans og viser til § 29-1. Er det greit å gjengi det slik, uten å forklare at myndigheten er delegert fra departementet?"
     - "Er det riktig og dekkende at klager på inntak til utdanningsprogram, programområde og skole går til et organ i fylkeskommunen (§ 29-1 andre ledd og forvaltningsloven § 28), og ikke til statsforvalteren?"
-    - "Bør begrepet si hva statsforvalteren er (statens regionale organ, og at ett embete kan dekke flere fylker)? Det står ikke i kildene som er brukt."
+    - "Bør begrepet si hva statsforvalteren er (statens regionale organ, og at ett embete kan dekke flere fylker), selv om det ikke står i kildene som er brukt?"
   stikkord: [statsforvalter, statsforvaltaren, fylkesmannen, klageinstans, klage, tilsyn, skolemiljø, innsyn]
   relatert: [tilsyn, klage, enkeltvedtak, aktivitetsplikt]
 
@@ -120,7 +120,7 @@
     - { id: forvaltningsloven, punkt: "§ 25 Begrunnelsens innhold (første ledd)", url: "https://lovdata.no/lov/1967-02-10/§25" }
   kontrollert: null
   kontrollsporsmal:
-    - "Bør begrepet nevne legalitetsprinsippet (at inngrep overfor enkeltpersoner må ha hjemmel i lov, Grunnloven § 113)? Grunnloven er ikke blant kildene."
+    - "Bør begrepet nevne legalitetsprinsippet (at inngrep overfor enkeltpersoner må ha hjemmel i lov, Grunnloven § 113), selv om Grunnloven ikke er blant kildene?"
     - "Er det riktig å si at hjemmel er grunnlaget for «et vedtak», når forvaltningsloven § 25 bare sier at begrunnelsen skal vise til reglene vedtaket bygger på?"
   stikkord: [hjemmel, heimel, lovhjemmel, forskriftshjemmel, kan gi forskrift, legalitetsprinsippet]
   relatert: [lov, forskrift, lokal-forskrift, begrunnelse]
