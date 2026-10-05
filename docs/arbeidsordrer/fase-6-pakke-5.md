@@ -1,6 +1,6 @@
 # Fase 6, pakke 5: Kalenderen – overlevering (04.10.2026, etter 0.35.0; flyttet til pakke 5 av eier 05.10.2026)
 
-Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene, `fase-6-pakke-4-fylkene.md`) må være levert først.
+Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pakke 5.» Les også `AGENTS.md`, `docs/arbeidsordrer/fase-6-pakke-3.md` (føringene som gjelder videre) og `docs/arbeidsordrer/fase-6-forslag.md` (runde 5 og 6). Pakke 4 (fylkene) og de nye begrepene er levert i 0.36.0.
 
 ## Levert så langt
 
@@ -16,14 +16,22 @@ Start en ny samtale med: «Les docs/arbeidsordrer/fase-6-pakke-5.md og start pak
     Tabeller i innholdet står i `tabell` (rutenett, kort eller bokser). Tidspunktet over et steg står i `naar`.
   - **Veiviseren «Klage på karakter»** har fargen bær.
   - **Kalender for eksamen** (`#/vurdering/eksamen-og-klage`) og **Kalender for inntak** (`#/inntak/frister`) bruker samme tidslinje (`src/core/tidslinje.ts`, `src/components/Tidslinje.tsx`).
-  - **Eksamensdatoene** hentes i januar og august av `npm run hent:eksamen` fra udir.no og åtte fylker (`scripts/eksamen/`) til `data/eksamen/datoer.json`:
+  - **Eksamensdatoene** hentes (nå hver uke, avgjørelse 063) av `npm run hent:eksamen` fra udir.no og åtte fylker (`scripts/eksamen/`) til `data/eksamen/datoer.json`:
     - Udirs dato går foran.
     - Ellers må minst to fylker ha samme dato.
     - Uenighet og mønstre som ikke finner datoen, gir kontrollsak.
     - Fylkenes egne datoer vises bare når fylket er valgt.
     - Høstsensuren er 4. januar 2027 fra fylkene (eier: mest mulig automatikk).
   - Fagarket lenker til Eksamen («Eksamen og klage»).
-- **Kildesjekken:**
+- **0.36.0** (05.10.2026): pakke 4 og begrepene:
+  - **Fylkene** (`#/fylker`, avgjørelse 061): lenker til fylkenes egne sider per tema, boksen «Hos fylkeskommunen» i veiviserne, og lokale forskrifter fra Lovdata for alle fylker og skoler (`data/lovdata/lokale.json`, med `lokaltype` som `skolerute`). Forskriftene holdes oppdatert fra Norsk Lovtidend avd. II hver uke.
+  - **Lenkesjekken** går hver uke (avgjørelse 062).
+  - **Kildesjekken** går hver uke, med ekstra kjøringer 2. januar, 2. juli og 2. august (avgjørelse 063). Eksamensdatoene hentes hver uke.
+  - **Søket** i toppfeltet åpnes over siden og lukkes med tilbake. Knappen med fylket avgrenser treffene til fylket.
+  - **Sti** øverst på alle sider unntatt forsiden og sidene rett under den. Regelen står i AGENTS.md og testes.
+  - **27 nye begreper** (`fase-6-begreper.md`), blant dem skolerute, ikrafttredelse og kunngjøring, oppmelding, sensur og hurtigklage, som kalenderen kan lenke til.
+  - Offentleglova, offentlegforskrifta, arkivlova og arkivforskrifta i Regelverk.
+- **Kildesjekken (pakke 3):**
   - Vestland-sidene på vestlandfylke.no er lagt inn (#88).
   - Teksten fra kildene lastes opp som artefaktet «kildetekster».
   - Jobben har 50 minutter, og Grep-hentingen høyst 20 (#91).
