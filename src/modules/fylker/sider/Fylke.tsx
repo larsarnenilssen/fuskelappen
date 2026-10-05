@@ -14,6 +14,7 @@ import type { Lokaltype, Lovoversikt } from '../../lov/typer.ts';
 import { useLast } from '../../lov/sider/felles.tsx';
 import type { SideProps } from '../../typer.ts';
 import { fylkeFor, nettsted } from '../innhold.ts';
+import { kalenderLenke } from '../../kalender/adresse.ts';
 
 const REKKEFOLGE: Lokaltype[] = ['skoleregler', 'skoleregler-voksne', 'inntak', 'skolerute', 'skyss'];
 
@@ -120,8 +121,8 @@ export default function Fylke({ parametre }: SideProps) {
       </Rubrikk>
       <Rubrikk nokkel="fylke-datoer" tittel={t('fylker.datoer')}>
         <ul class="liste">
-          <Lenkerad href="#/inntak/frister" ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
-          <Lenkerad href="#/vurdering/eksamen-og-klage" ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
+          <Lenkerad href={`#${kalenderLenke('inntak')}`} ikon="klokke" tittel={t('fylker.kalenderInntak')} under={t('fylker.kalenderInntakTekst')} />
+          <Lenkerad href={`#${kalenderLenke('eksamen')}`} ikon="flagg" tittel={t('fylker.kalenderEksamen')} under={t('fylker.kalenderEksamenTekst')} />
           <Lenkerad href="#/vurdering/klage-pa-karakter" ikon="veiviser" tittel={t('fylker.klage')} under={t('fylker.klageTekst')} />
         </ul>
       </Rubrikk>

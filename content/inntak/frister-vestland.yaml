@@ -3,6 +3,7 @@
 - id: fr-vl-voksne-host
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder, laerer]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 1, maned: 3 }
@@ -23,10 +24,11 @@
 - id: fr-vl-flytting
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder, laerer]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 23, maned: 6 }
-  grupper: [ungdom]
+  grupper: [elever]
   tittel:
     nb: Dokumentasjon av flytting til Vestland
     nn: Dokumentasjon av flytting til Vestland
@@ -43,10 +45,11 @@
 - id: fr-vl-ventelister
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 31, maned: 8 }
-  grupper: [ungdom]
+  grupper: [elever]
   naar:
     nb: Ut august
     nn: Ut august
@@ -66,10 +69,11 @@
 - id: fr-vl-forste-skoledag
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder, laerer]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: maned, maned: 8 }
-  grupper: [ungdom]
+  grupper: [elever]
   naar:
     nb: Første skoledag
     nn: Første skuledag
@@ -89,10 +93,11 @@
 - id: fr-vl-inntak-avsluttet
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 1, maned: 9 }
-  grupper: [ungdom]
+  grupper: [elever]
   tittel:
     nb: Inntaket er avsluttet
     nn: Inntaket er avslutta
@@ -109,6 +114,7 @@
 - id: fr-vl-voksne-var
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder, laerer]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 1, maned: 10 }
@@ -129,10 +135,11 @@
 - id: fr-vl-omvalg-fag
   type: frist
   modul: inntak
+  lenker: [/fylker/46]
   malgruppe: [skoleleder, laerer]
   gyldighet: { niva: fylke, fylke: "46", forhold: supplerer }
   regel: { type: arlig, dag: 1, maned: 11 }
-  grupper: [ungdom]
+  grupper: [elever]
   tittel:
     nb: Slutte i et fag for å beholde standpunktkarakteren
     nn: Slutte i eit fag for å halde på standpunktkarakteren

@@ -57,6 +57,12 @@
   --vurdering-underveis: var(--p-blaa-100);
   --vurdering-halvaar: var(--p-blaa-700);
   --vurdering-eksamen: var(--p-lilla-700);
+  /* Temaene i kalenderen (fase 6, pakke 5). Peker på diagramfargene, så lyst og mørkt tema følger med. */
+  --kalender-inntak: var(--diagram-tekst-undervisning);
+  --kalender-vurdering: var(--diagram-tekst-motetid);
+  --kalender-eksamen: var(--diagram-tekst-funksjon);
+  --kalender-skolerute: var(--diagram-tekst-annen);
+  --kalender-regelverk: var(--diagram-tekst-selv);
   --vurdering-standpunkt: var(--p-rav-700);
 }
 

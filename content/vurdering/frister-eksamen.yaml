@@ -9,6 +9,8 @@
 - id: fe-samtale
   type: frist
   modul: vurdering
+  tema: [vurdering]
+  lenker: [/vurdering/underveis-og-sluttvurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: lopende }
   naar: { nb: Hvert halvår, nn: Kvart halvår }
@@ -28,6 +30,8 @@
 - id: fe-varsel
   type: frist
   modul: vurdering
+  tema: [vurdering]
+  lenker: [/begreper/forhandsvarsel, /vurdering/fravaer]
   malgruppe: [skoleleder, laerer]
   regel: { type: lopende }
   naar: { nb: Straks det er fare, nn: Straks det er fare }
@@ -48,6 +52,8 @@
 - id: fe-klagefrist
   type: frist
   modul: vurdering
+  tema: [vurdering, eksamen]
+  lenker: [/vurdering/klage-pa-karakter, /begreper/klage]
   malgruppe: [skoleleder, laerer]
   regel: { type: lopende }
   naar: { nb: Ti dager, nn: Ti dagar }
@@ -68,6 +74,8 @@
 - id: fe-oppmelding-prove
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/fag-og-svenneproven, /begreper/fag-og-svenneprove]
   malgruppe: [skoleleder]
   regel: { type: lopende }
   naar: { nb: To måneder før kontraktstiden er ute, nn: To månader før kontraktstida er ute }
@@ -88,6 +96,8 @@
 - id: fe-klage-prove
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/fag-og-svenneproven, /vurdering/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: lopende }
   naar: { nb: Tre uker, nn: Tre veker }
@@ -108,6 +118,8 @@
 - id: fe-halvar-midt
   type: frist
   modul: vurdering
+  tema: [vurdering]
+  lenker: [/begreper/halvarsvurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 1 }
   naar: { nb: Midt i opplæringsperioden, nn: Midt i opplæringsperioden }
@@ -128,6 +140,7 @@
 - id: fe-mer-opplaering-mars
   type: frist
   modul: vurdering
+  tema: [vurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: arlig, dag: 1, maned: 3 }
   grupper: [elever]
@@ -147,6 +160,8 @@
 - id: fe-standpunkt-senest
   type: frist
   modul: vurdering
+  tema: [vurdering]
+  lenker: [/begreper/standpunktkarakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Senest dagen før sensur, nn: Seinast dagen før sensur }
@@ -167,6 +182,8 @@
 - id: fe-halvar-slutt
   type: frist
   modul: vurdering
+  tema: [vurdering]
+  lenker: [/begreper/halvarsvurdering]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Ved slutten av skoleåret, nn: Ved slutten av skoleåret }
@@ -187,6 +204,7 @@
 - id: fe-mer-opplaering-melding
   type: frist
   modul: vurdering
+  tema: [vurdering]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 6 }
   naar: { nb: Minst en uke etter standpunkt og sensur, nn: Minst ei veke etter standpunkt og sensur }
@@ -209,6 +227,8 @@
 - id: fe-skoler-oppmelding-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/oppmelding, /vurdering/eksamen]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 9 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -231,6 +251,8 @@
 - id: fe-privatister-oppmelding-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/privatist, /begreper/oppmelding]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 9 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -253,6 +275,8 @@
 - id: fe-trekk-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/trekkfag, /vurdering/eksamen]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 11 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -275,6 +299,8 @@
 - id: fe-eksamen-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/eksamen]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 11 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -296,6 +322,8 @@
 - id: fe-sensur-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/sensur, /vurdering/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -317,6 +345,8 @@
 - id: fe-klage-registrering-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -338,6 +368,8 @@
 - id: fe-klage-behandlet-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/klage-pa-karakter, /begreper/klagenemnd]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 3 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -359,6 +391,8 @@
 - id: fe-skoler-oppmelding-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/oppmelding, /vurdering/eksamen]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -381,6 +415,8 @@
 - id: fe-privatister-oppmelding-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/privatist, /begreper/oppmelding]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 1 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -403,6 +439,8 @@
 - id: fe-ekstra-trekk-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/trekkfag]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 2 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -424,6 +462,8 @@
 - id: fe-trekk-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/trekkfag, /vurdering/eksamen]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 4 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -446,6 +486,8 @@
 - id: fe-eksamen-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/eksamen]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 5 }
   naar: { nb: Udir fastsetter datoene, nn: Udir fastset datoane }
@@ -467,6 +509,8 @@
 - id: fe-sensur-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/sensur, /vurdering/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -488,6 +532,8 @@
 - id: fe-hurtigklage-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/hurtigklage, /vurdering/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 6 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -508,6 +554,8 @@
 - id: fe-klage-registrering-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/klage-pa-karakter]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 7 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -529,6 +577,8 @@
 - id: fe-klage-behandlet-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/vurdering/klage-pa-karakter, /begreper/klagenemnd]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 9 }
   naar: { nb: Udir fastsetter datoen, nn: Udir fastset datoen }
@@ -552,6 +602,8 @@
 - id: fe-standpunkt-kjent
   type: frist
   modul: vurdering
+  tema: [vurdering, eksamen]
+  lenker: [/begreper/standpunktkarakter, /vurdering/klage-pa-karakter]
   malgruppe: [skoleleder, laerer]
   regel: { type: maned, maned: 6 }
   naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
@@ -573,6 +625,8 @@
 - id: fe-hurtigklage-standpunkt
   type: frist
   modul: vurdering
+  tema: [vurdering, eksamen]
+  lenker: [/begreper/hurtigklage]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 6 }
   naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
@@ -593,6 +647,8 @@
 - id: fe-privatister-datoer-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/privatist]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 10 }
   naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
@@ -614,6 +670,8 @@
 - id: fe-privatister-datoer-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/privatist]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 3 }
   naar: { nb: Fylket fastsetter datoen, nn: Fylket fastset datoen }
@@ -635,6 +693,8 @@
 - id: fe-tilrettelegging-privatister-host
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/sarskilt-tilrettelegging-av-eksamen]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 9 }
   naar: { nb: Fylket fastsetter fristen, nn: Fylket fastset fristen }
@@ -656,6 +716,8 @@
 - id: fe-tilrettelegging-privatister-var
   type: frist
   modul: vurdering
+  tema: [eksamen]
+  lenker: [/begreper/sarskilt-tilrettelegging-av-eksamen]
   malgruppe: [skoleleder]
   regel: { type: maned, maned: 2 }
   naar: { nb: Fylket fastsetter fristen, nn: Fylket fastset fristen }

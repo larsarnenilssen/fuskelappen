@@ -4,6 +4,7 @@ import { arbeidstidNb } from './moduler/arbeidstid.nb.ts';
 import { fagNb } from './moduler/fag.nb.ts';
 import { laereplanverketNb } from './moduler/laereplanverket.nb.ts';
 import { fylkerNb } from './moduler/fylker.nb.ts';
+import { kalenderNb } from './moduler/kalender.nb.ts';
 import { lovNb } from './moduler/lov.nb.ts';
 import { opplaeringslopNb } from './moduler/opplaeringslop.nb.ts';
 import { inntakNb } from './moduler/inntak.nb.ts';
@@ -389,6 +390,10 @@ export const nb = {
       navn: 'Begreper',
       beskrivelse: 'Forklaringer av sentrale begreper.',
     },
+    kalender: {
+      navn: 'Kalender',
+      beskrivelse: 'Frister og datoer fra hele appen, med skoleruta.',
+    },
     fylker: {
       navn: 'Fylkene',
       beskrivelse: 'Fylkets sider, lokale forskrifter, skoler og opplæringskontor.',
@@ -411,6 +416,7 @@ export const nb = {
   opplaeringslop: opplaeringslopNb,
   laereplanverket: laereplanverketNb,
   fylker: fylkerNb,
+  kalender: kalenderNb,
   lov: lovNb,
   tilrettelegging: tilretteleggingNb,
   vurdering: vurderingNb,

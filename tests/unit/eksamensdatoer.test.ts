@@ -121,6 +121,7 @@ const frist = (id: string, eksamensdato: Frist['eksamensdato']): Frist =>
     malgruppe: ['skoleleder'],
     regel: { type: 'maned', maned: 11 },
     grupper: [],
+    lenker: [],
     paragrafer: [],
     tittel: { nb: id, nn: id },
     tekst: { nb: id, nn: id },

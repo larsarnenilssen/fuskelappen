@@ -21,6 +21,10 @@ const baner = {
   hake: 'M5 12.5l4.5 4.5L19 7.5',
   feil: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM9 9l6 6M15 9l-6 6',
   klokke: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7v5l3.5 2',
+  // Kalender: et ark med ringer og ruter, for kalenderen (fase 6, pakke 5).
+  kalender: 'M4 6h16v14H4zM4 10.5h16M8.5 3.5V8M15.5 3.5V8M8 14h2M14 14h2M8 17h2',
+  // Filter: tre streker som blir kortere.
+  filter: 'M4 6h16M7 12h10M10 18h4',
   // Kontor: en mappe, for opplæringskontorene (avgjørelse 053).
   kontor: 'M4 8h16v11H4zM9 8V5.5h6V8M4 12.5h16',
   // Inntak: en pil inn gjennom en døråpning (eier 04.10.2026).

@@ -2,6 +2,7 @@
 // fraværsgrensen (pakke 2) og eksamen, prøvene og fristene (pakke 3) fra content/vurdering/ ved behov.
 import type { Frist, Innholdselement, Stegelement, Vanligelement, Veiviserelement } from '../../core/innhold/skjema.ts';
 import type { Underside } from '../typer.ts';
+import { kalenderLenke } from '../kalender/adresse.ts';
 
 const filer = import.meta.glob<Innholdselement[]>('/content/vurdering/*.yaml', { import: 'default' });
 
@@ -43,7 +44,10 @@ export const ordenRute = '/vurdering/orden-og-oppforsel';
 export const fravaerRute = '/vurdering/fravaer';
 export const eksamenRute = '/vurdering/eksamen';
 export const proveneRute = '/vurdering/fag-og-svenneproven';
-export const fristerRute = '/vurdering/eksamen-og-klage';
+/** Den gamle adressen til Kalender for eksamen. Sender videre til kalenderen (avgjørelse 066). */
+export const gammelFristerRute = '/vurdering/eksamen-og-klage';
+/** Kalenderen filtrert på eksamen (fase 6, pakke 5). */
+export const fristerRute = kalenderLenke('eksamen');
 export const klageRute = veiviserRute('klage-pa-karakter');
 
 /** Udirs side om fag- og svenneprøver (kilden udir-fag-og-svenneprover), som siden om prøvene lenker til. */
