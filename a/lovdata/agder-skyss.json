@@ -1,0 +1,233 @@
+{
+ "id": "agder-skyss",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om rabattordning for skoleskyss, Agder fylke",
+ "korttittel": "Skyss og rabattordning i Agder",
+ "korttittelNn": "Skyss og rabattordning i Agder",
+ "malform": "nb",
+ "refid": "forskrift/2026-06-16-1422",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-07-31",
+ "lokaltype": "skyss",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "42"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om rabattordning for skoleskyss, Agder fylke",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde og varighet",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder elever i videregående opplæring som har rett til skoleskyss etter ",
+        {
+         "t": "opplæringsloven § 9-1 første",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        " og ",
+        {
+         "t": "andre ledd",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        ", og som er bosatt og går på videregående skole i områder av Kristiansand og Vennesla kommuner hvor kollektivtilbudet er godt utbygd. Forskriften gjelder tilsvarende for deltakere i den videregående opplæringen for voksne som har rett til skoleskyss etter ",
+        {
+         "t": "opplæringsloven § 21-1 tredje ledd",
+         "l": "lov/2023-06-09-30/§21-1",
+         "a": "opplaeringslova/21-1"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For andre elever og voksne deltakere i fylket, gjelder reglene om gratis skoleskyss eller fri skyssgodtgjørelse i ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskriften gjelder for skoleåret 2026/2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Rabattordning",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever og deltakere som har rett til skoleskyss etter ",
+        {
+         "t": "§ 1",
+         "l": "forskrift/2026-06-16-1422/§1",
+         "a": "agder-skyss/1"
+        },
+        " får skyssretten oppfylt ved at eleven eller deltakeren selv kjøper rabattert reisekort (ungdomskort eller ung voksenkort). Reisekortet skal koste mindre enn halvparten av tilsvarende billett for voksne."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Kriterier for at kollektivtilbudet anses godt utbygd",
+     "ledd": [
+      {
+       "tekst": [
+        "Kollektivtilbudet er ansett godt utbygd der det er timesavganger mellom omtrent klokken 07.00 og 23.00 på hverdager og lørdager, og med mulighet for retur fra Kristiansand sentrum omtrent klokken 24.00 lørdag."
+       ]
+      },
+      {
+       "tekst": [
+        "I vurderingen av om kollektivtilbudet anses godt utbygd er det også lagt vekt på om tilbudet anses rimelig og i tilstrekkelig grad tar hensyn til elevenes mobilitetstilbud."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Områder der rabattordningen ikke gjelder",
+     "ledd": [
+      {
+       "tekst": [
+        "I områder i Kristiansand og Vennesla kommuner hvor kollektivtilbudet vurderes å være mindre utbygd gjelder ikke rabattordningen. Dette er følgende områder:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ålefjær/Kostøl (nord for Jærnesheia)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Ytre Randesund (områder som Stangenes, Støle, deler av Frikstad)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nord for Solsletta på Tveit"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "d.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nord for Grovane stasjon i Vennesla"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "e.",
+         "ledd": [
+          {
+           "tekst": [
+            "Drivenesområdet i Vennesla"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "f.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nord for Hortemo ringvei / Øvre Hortemo"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "Sør for Kjellandsheia i Søgne"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "h.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nord for Vedderheia i Søgne."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "I disse områdene vil elever og deltakere som har minst 6 kilometer reiseavstand mellom bosted og opplæringssted etter søknad innvilges gratis skoleskyss eller fri skyssgodtgjørelse. Søknadene sendes til Agder kollektivtrafikk (AKT) via F-skyss eller skjema via skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

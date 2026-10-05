@@ -1,0 +1,142 @@
+
+> jukselappen@0.35.0 hent:lovdata
+> tsx scripts/hent-lovdata.ts
+
+Lokale forskrifter: 0 kunngjøringer i Lovtidend avdeling II siden 2026-10-02T15:00, 0 for videregående, 0 nye.
+Fant ikke skolen i skoleregisteret: Forskrift om lokalt tillegg til skulereglar – reglar for bruk av mobiltelefon Os gymnas, Vestland fylkeskommune
+opplaeringslova: 173 paragrafer. 0 endringer.
+opplaeringsforskrifta: 262 paragrafer. 0 endringer.
+forvaltningsloven: 50 paragrafer. 0 endringer.
+offentleglova: 32 paragrafer. 0 endringer.
+arkivlova: 20 paragrafer. 0 endringer.
+offentlegforskrifta: 14 paragrafer. 0 endringer.
+arkivforskrifta: 19 paragrafer. 0 endringer.
+helse-og-miljo: 24 paragrafer. 0 endringer.
+arbeidsmiljoloven: 83 paragrafer. 0 endringer.
+oslo-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+oslo-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+oslo-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+bergeland-videregaende-skole-fagfordeling-1107: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+bergeland-videregaende-skole-fagfordeling-1108: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rogaland-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rogaland-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rogaland-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rogaland-skolerute-2025-2028: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rogaland-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+more-og-romsdal-fagfordeling-1493: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+more-og-romsdal-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+more-og-romsdal-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+more-og-romsdal-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nordland-fagfordeling-3359: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nordland-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nordland-skoleregler: 10 paragrafer. 0 endringer.
+sandnessjoen-videregaende-skole-fagfordeling-1310: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+askim-videregaende-skole-fagfordeling-2183: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+frederik-ii-videregaende-skole-fagfordeling-982: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+frederik-ii-videregaende-skole-fagfordeling-983: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+glemmen-videregaende-skole-fagfordeling-2184: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+glemmen-videregaende-skole-fagfordeling-2186: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+greaker-videregaende-skole-fagfordeling-2185: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+greaker-videregaende-skole-fagfordeling-881: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+greaker-videregaende-skole-fagfordeling-882: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+greaker-videregaende-skole-fagfordeling-883: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+greaker-videregaende-skole-fagfordeling-981: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+mysen-videregaende-skole-fagfordeling-2181: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+ostfold-fagfordeling-2115: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+ostfold-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+ostfold-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+ostfold-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+akershus-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+akershus-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+akershus-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+bleiker-videregaende-skole-fagfordeling-801: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+bleiker-videregaende-skole-fagfordeling-920: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+frogn-videregaende-skole-fagfordeling-3081: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+frogn-videregaende-skole-fagfordeling-800: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+frogn-videregaende-skole-fagfordeling-885: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nesbru-videregaende-skole-fagfordeling-868: 10 paragrafer. 0 endringer.
+rud-videregaende-skole-fagfordeling-3082: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+rud-videregaende-skole-fagfordeling-3083: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+skedsmo-videregaende-skole-fagfordeling-922: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestby-videregaende-skole-fagfordeling-3076: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestby-videregaende-skole-fagfordeling-3084: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestby-videregaende-skole-fagfordeling-886: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestby-videregaende-skole-fagfordeling-887: 10 paragrafer. 0 endringer.
+vestby-videregaende-skole-fagfordeling-921: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+buskerud-fagfordeling-265: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+buskerud-inntak: 32 paragrafer. 0 endringer.
+buskerud-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+buskerud-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+buskerud-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+drammen-videregaende-skole-fagfordeling-271: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+honefoss-videregaende-skole-fagfordeling-267: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+honefoss-videregaende-skole-fagfordeling-268: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+honefoss-videregaende-skole-fagfordeling-3929: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+lier-videregaende-skole-fagfordeling-264: 5 paragrafer. 0 endringer.
+lier-videregaende-skole-fagfordeling-266: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+lier-videregaende-skole-fagfordeling-269: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+lier-videregaende-skole-fagfordeling-270: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+lier-videregaende-skole-fagfordeling-872: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+innlandet-fagfordeling-3681: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+innlandet-fagfordeling-3685: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+innlandet-fagfordeling-3688: 11 paragrafer. 0 endringer.
+innlandet-fagfordeling-3699: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+innlandet-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+innlandet-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestfold-fagfordeling-622: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestfold-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestfold-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestfold-skoleregler-voksne: 13 paragrafer. 0 endringer.
+telemark-fagfordeling-2186: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+telemark-fagfordeling-645: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+telemark-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+telemark-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+telemark-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+agder-inntak: 28 paragrafer. 0 endringer.
+agder-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+agder-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+arna-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+askoy-videregaende-skole-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+austevoll-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+dale-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+eid-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+fitjar-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+forde-vidaregaande-skule-skoleregler: 2 paragrafer. 0 endringer.
+fusa-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+fyllingsdalen-videregaende-skole-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+kvam-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+kvinnherad-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+laksevag-og-bergen-maritime-videregaende-skole-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+maloy-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nordahl-grieg-videregaende-skole-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+odda-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+osteroy-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+sandsli-videregaende-skole-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+sogndal-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+sotra-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+stryn-vidaregaande-skule-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestland-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestland-skoleregler: 19 paragrafer. 0 endringer.
+vestland-skolerute-2026-2027: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vestland-skyss: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+voss-gymnas-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+strinda-videregaende-skole-fagfordeling-2590: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+trondelag-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+trondelag-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+trondelag-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+troms-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+troms-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+troms-skolerute-2026-2027: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+troms-skolerute-2027-2028-fra-2027-08-01: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+troms-skolerute-2028-2029-fra-2028-08-01: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+finnmark-inntak: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+finnmark-skoleregler: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+finnmark-skoleregler-voksne: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+finnmark-skolerute-2026-2027: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+finnmark-skolerute-2027-2028-fra-2027-08-01: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+nordkapp-videregaende-skole-fagfordeling-2547: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+vardo-videregaende-skole-fagfordeling-2546: hentes ikke denne uken (uke 41). Forrige henting beholdes.
+
+real	0m25.353s
+user	0m8.152s
+sys	0m1.336s

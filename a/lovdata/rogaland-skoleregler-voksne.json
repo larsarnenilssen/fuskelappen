@@ -1,0 +1,642 @@
+{
+ "id": "rogaland-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om ordensregler for deltakere i videregående opplæring for voksne, Rogaland fylkeskommune",
+ "korttittel": "Regler for voksne i Rogaland",
+ "korttittelNn": "Reglar for vaksne i Rogaland",
+ "malform": "nb",
+ "refid": "forskrift/2025-06-17-1164",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "11"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål, virkeområde og saksbehandlingsregler",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med ordensregler er at deltakerne skal få kjennskap til hvilke forventninger som stilles til dem og at de kan medvirke i sin skolehverdag. De skal bli kjent med sine plikter og rettigheter. Ordensregler skal bidra til et trygt og godt læringsmiljø, godt samarbeid, god trivsel, respekt og medansvar. Reglementet skal fremme deltakelse og gode arbeidsvaner og slik legge til rette for god læring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglene gjelder for deltakere som følger videregående opplæring organisert for voksne ved fylkeskommunale videregående skoler i Rogaland."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglene gjelder for alle deltakere i skoletiden. Reglementet gjelder også opplæringsformer og aktiviteter i skolens regi utenfor skolens områder, som for eksempel ved ekskursjoner/turer og i praksis. I tillegg gjelder ordensreglene for skoleveien. Reglementet gjelder også utenfor skoletiden hvis deltakerens oppførsel har tilstrekkelig tilknytning til eller setter sitt preg på skolen, blant annet situasjoner der deltakeres oppførsel på fritiden fører til at andre ikke har det trygt og godt på skolen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Saksbehandlingsregler",
+     "ledd": [
+      {
+       "tekst": [
+        {
+         "t": "Forvaltningslovens",
+         "l": "lov/1967-02-10"
+        },
+        " regler gjelder, med mindre annet er spesifisert."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Regler om orden og atferd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Regler for orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakeren skal ha god orden. Det innebærer blant annet å:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Møte til opplæringen og delta aktivt jf. ",
+            {
+             "t": "opplæringslova § 18-11",
+             "l": "lov/2023-06-09-30/§18-11",
+             "a": "opplaeringslova/18-11"
+            },
+            "."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Følge skolens og praksisplassens regler for melding om fravær."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Holde orden på egne ting og ha med nødvendige læremidler og utstyr."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bidra til å holde det rent og ryddig på skolens og praksisplassens område."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Overholde frister og følge instrukser gitt av de som arbeider på skolen og på praksisplassen."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Regler for atferd",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakerne skal vise alminnelig god oppførsel. Dette innebærer blant annet å:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Ta vare på hverandre, være høflige og vise respekt for de ansatte og meddeltakerne og hverandres ulikheter."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Vise respekt for skolens, praksisplassens og andres eiendeler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Følge lærers og øvrige ansattes anvisninger."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Be om lov før man fotograferer eller filmer deltakere eller ansatte, eller før man deler bilder, video- eller lydklipp eller liknende."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke utstyr i henhold til gjennomført opplæring og retningslinjer, herunder bruke nødvendig verneutstyr hvor dette er påbudt og overholde gjeldende regler for helse, miljø og sikkerhet."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne skal blant annet ikke:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Mobbe eller på andre måter krenke andre fysisk, verbalt eller digitalt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Være voldelig eller komme med trusler."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke tobakk, snus, e-sigaretter, alkohol, narkotika, andre rusmidler eller dopingmidler på skolens område."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Ha med seg farlige gjenstander eller våpen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Fuske eller forsøke å fuske på prøver, innleveringer eller andre vurderingssituasjoner ved å benytte hjelpemidler som ikke er tillatt. Det er heller ikke tillatt å levere eller presentere andres produkt som sitt eget, heller ikke hvis det er fremskaffet ved bruk av kunstig intelligens (KI)."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke mobiltelefoner, elektronisk eller annet digitalt utstyr i undervisningstiden uten at dette er avtalt med læreren."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruke klesplagg som helt eller delvis dekker ansiktet i undervisningstiden, med mindre dette er nødvendig på grunn av pedagogiske, helsemessige, klimatiske eller sikkerhetsmessige forhold."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Laste ned eller spre fysisk eller elektronisk; pornografisk, rasistisk eller annet krenkende eller ulovlig materiale."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Forfalske eller forsøke å forfalske dokumenter, som legeerklæringer eller liknende."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Drive fysisk eller digitalt med pengespill eller annen tilsvarende aktivitet som bidrar til å skape dårlig skolemiljø."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Sanksjoner og saksbehandling ved brudd på reglene om orden og atferd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Generelt om saksbehandling ved brudd på reglene om orden og atferd",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakere som bryter reglene for orden og adferd i forskriftens ",
+        {
+         "t": "kapittel 2",
+         "l": "forskrift/2025-06-17-1164/kap2"
+        },
+        ", kan gis sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Det kan kun benyttes sanksjoner som angitt i dette kapittelet."
+       ]
+      },
+      {
+       "tekst": [
+        "Sanksjonen skal stå i rimelig forhold til deltakerens brudd på reglementet, hvor alvorlighetsgrad og gjentakelse har betydning for valg av sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Kollektiv avstraffelse er ikke tillatt."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Alminnelige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Alminnelige sanksjoner kan bestemmes av rektor, avdelingsleder og skolens lærere ved ett eller flere brudd på ordensreglene. Alminnelige sanksjoner er ikke enkeltvedtak. Sanksjonen med begrunnelse skal formidles til deltakeren."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakere kan gis en eller flere av følgende alminnelige sanksjoner:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Muntlig og/eller skriftlig oppfølgning."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Begrenset adgang til utstyr/verksted/spesialrom."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Inndragning av gjenstander som brukes til å bryte ordensreglene for atferd ",
+            {
+             "t": "(§ 5)",
+             "l": "forskrift/2025-06-17-1164/§5",
+             "a": "rogaland-skoleregler-voksne/5"
+            },
+            " og andre gjenstander som ellers er ulovlige."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra klasse/gruppe for resten av undervisningsøkten."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Ved inndragning skal gjenstanden leveres tilbake til deltakeren etter endt skoletid. Ulovlige gjenstander overleveres til politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Særlige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Særlige sanksjoner kan bestemmes ved særlig klanderverdige eller alvorlige enkelthendelser eller ved gjentatte brudd på ordensreglene."
+       ]
+      },
+      {
+       "tekst": [
+        "Ved alvorlige eller gjentatte brudd på plikten til oppmøte og aktiv deltakelse i undervisningen jf. ",
+        {
+         "t": "opplæringslova § 18-11",
+         "l": "lov/2023-06-09-30/§18-11",
+         "a": "opplaeringslova/18-11"
+        },
+        ", kan særlige sanksjoner gis."
+       ]
+      },
+      {
+       "tekst": [
+        "Før en særlig sanksjon blir vurdert og besluttet, skal deltakeren få mulighet til å forklare seg muntlig. Rektor skal tilby deltakeren å ha med seg en person til denne samtalen."
+       ]
+      },
+      {
+       "tekst": [
+        "Særlige sanksjoner er enkeltvedtak etter ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        " og skal være skriftlig, begrunnet, samt opplyse om deltakerens rett til å klage. Deltakeren har rett til veiledning om sine rettigheter som part i saken, og hvordan man går frem ved en klage."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakeren kan gis en eller flere slike særlige sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende sanksjoner kan vedtas av rektor:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra skolen/bedriften for resten av skoledagen."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning fra og med en hel skoledag og inntil fem skoledager, herunder bortvisning fra pågående skoletur eller annen aktivitet i skolens regi."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Følgende sanksjoner kan bare vedtas av fylkesopplæringssjefen:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning for resten av kurset eller modulen, jf. ",
+            {
+             "t": "oppll. § 20-4",
+             "l": "lov/2023-06-09-30/§20-4",
+             "a": "opplaeringslova/20-4"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Før det blir gjort vedtak om bortvisning, skal hjelpetiltak og mildere sanksjoner vurderes, jf. ",
+        {
+         "t": "oppll. § 20-4 annet ledd",
+         "l": "lov/2023-06-09-30/§20-4",
+         "a": "opplaeringslova/20-4"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen har ikke anledning til å bortvise en deltaker fra en planlagt skoletur av preventive hensyn. Det vil si at en deltaker ikke kan risikere å gå glipp av aktiviteter som skolen arrangerer på bakgrunn av noe deltakeren har gjort i forkant av, og uavhengig av, aktiviteten. Klagenemnda i Rogaland fylkeskommune er klageinstans for enkeltvedtak om særlige sanksjoner."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Straffbare forhold og spørsmål om erstatning på grunn av regelbrudd",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Straffbare forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Dersom en deltaker begår et mulig straffbart forhold i skoletiden, skal rektor ta kontakt med fylkesadvokaten for å vurdere om skolen skal anmelde saken. Rektor anmelder vold og trusler mot ansatte. Deltaker som er utsatt for straffbare forhold, har alltid rett til å anmelde disse selv."
+       ]
+      },
+      {
+       "tekst": [
+        "I akutte situasjoner kontaktes politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Erstatning",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved brudd på ordensreglene som medfører skade på eller tap av skolens eiendom eller eiendeler, kan deltakeren bli holdt erstatningspliktig. Reglene for erstatning er regulert i ",
+        {
+         "t": "skadeserstatningsloven",
+         "l": "lov/1969-06-13-26"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom skaden(e) deltakeren har påført skolens eiendom eller eiendeler kan rettes opp av deltakeren selv, vil deltakeren få tilbud om å gjøre dette før skolen eventuelt fremmer et erstatningskrav. Dette er aktuelt når deltaker kan rette opp skaden(e) ved å rydde opp, vaske opp, fjerne påført tagging eller lignende."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap5",
+   "type": "kapittel",
+   "nr": "5",
+   "overskrift": "Kapittel 5 Ikrafttredelse",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fra og med 1. august 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

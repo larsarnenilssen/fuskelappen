@@ -1,0 +1,934 @@
+{
+  "dokumenter": [
+    {
+      "id": "opplaeringslova",
+      "kilde": "opplaeringslova",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "opplaeringsforskrifta",
+      "kilde": "opplaeringsforskrifta",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "forvaltningsloven",
+      "kilde": "forvaltningsloven",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "offentleglova",
+      "kilde": "offentleglova",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "arkivlova",
+      "kilde": "arkivlova",
+      "endringer": [],
+      "feil": null,
+      "forste": true
+    },
+    {
+      "id": "offentlegforskrifta",
+      "kilde": "offentlegforskrifta",
+      "endringer": [],
+      "feil": null,
+      "forste": true
+    },
+    {
+      "id": "arkivforskrifta",
+      "kilde": "arkivforskrifta",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "helse-og-miljo",
+      "kilde": "forskrift-helse-miljo-skoler",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "arbeidsmiljoloven",
+      "kilde": "arbeidsmiljoloven",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "oslo-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "oslo-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "oslo-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "bergeland-videregaende-skole-fagfordeling-1107",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "bergeland-videregaende-skole-fagfordeling-1108",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rogaland-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rogaland-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rogaland-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rogaland-skolerute-2025-2028",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rogaland-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "more-og-romsdal-fagfordeling-1493",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "more-og-romsdal-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "more-og-romsdal-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "more-og-romsdal-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nordland-fagfordeling-3359",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nordland-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nordland-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "sandnessjoen-videregaende-skole-fagfordeling-1310",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "askim-videregaende-skole-fagfordeling-2183",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "frederik-ii-videregaende-skole-fagfordeling-982",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "frederik-ii-videregaende-skole-fagfordeling-983",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "glemmen-videregaende-skole-fagfordeling-2184",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "glemmen-videregaende-skole-fagfordeling-2186",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "greaker-videregaende-skole-fagfordeling-2185",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "greaker-videregaende-skole-fagfordeling-881",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "greaker-videregaende-skole-fagfordeling-882",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "greaker-videregaende-skole-fagfordeling-883",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "greaker-videregaende-skole-fagfordeling-981",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "mysen-videregaende-skole-fagfordeling-2181",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "ostfold-fagfordeling-2115",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "ostfold-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "ostfold-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "ostfold-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "akershus-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "akershus-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "akershus-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "bleiker-videregaende-skole-fagfordeling-801",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "bleiker-videregaende-skole-fagfordeling-920",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "frogn-videregaende-skole-fagfordeling-3081",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "frogn-videregaende-skole-fagfordeling-800",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "frogn-videregaende-skole-fagfordeling-885",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nesbru-videregaende-skole-fagfordeling-868",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rud-videregaende-skole-fagfordeling-3082",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "rud-videregaende-skole-fagfordeling-3083",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "skedsmo-videregaende-skole-fagfordeling-922",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestby-videregaende-skole-fagfordeling-3076",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestby-videregaende-skole-fagfordeling-3084",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestby-videregaende-skole-fagfordeling-886",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestby-videregaende-skole-fagfordeling-887",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestby-videregaende-skole-fagfordeling-921",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "buskerud-fagfordeling-265",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "buskerud-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "buskerud-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "buskerud-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "buskerud-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "drammen-videregaende-skole-fagfordeling-271",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "honefoss-videregaende-skole-fagfordeling-267",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "honefoss-videregaende-skole-fagfordeling-268",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "honefoss-videregaende-skole-fagfordeling-3929",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "lier-videregaende-skole-fagfordeling-264",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "lier-videregaende-skole-fagfordeling-266",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "lier-videregaende-skole-fagfordeling-269",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "lier-videregaende-skole-fagfordeling-270",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "lier-videregaende-skole-fagfordeling-872",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-fagfordeling-3681",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-fagfordeling-3685",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-fagfordeling-3688",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-fagfordeling-3699",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "innlandet-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestfold-fagfordeling-622",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestfold-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestfold-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestfold-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "telemark-fagfordeling-2186",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "telemark-fagfordeling-645",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "telemark-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "telemark-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "telemark-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "agder-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "agder-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "agder-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "arna-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "askoy-videregaende-skole-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "austevoll-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "dale-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "eid-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "fitjar-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "forde-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "fusa-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "fyllingsdalen-videregaende-skole-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [
+        "Ny paragraf: 5. Mobil-hotell",
+        "Endret: 5. punkter for å skape eit godt arbeids- og læringsmiljø"
+      ],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "kvam-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "kvinnherad-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "laksevag-og-bergen-maritime-videregaende-skole-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "maloy-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nordahl-grieg-videregaende-skole-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "odda-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "osteroy-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "sandsli-videregaende-skole-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "sogndal-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "sotra-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "stryn-vidaregaande-skule-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestland-inntak",
+      "kilde": "vestland-forskrift-inntak",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestland-skoleregler",
+      "kilde": "vestland-forskrift-skulereglar",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestland-skolerute-2026-2027",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vestland-skyss",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "voss-gymnas-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "strinda-videregaende-skole-fagfordeling-2590",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "trondelag-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "trondelag-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "trondelag-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "troms-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "troms-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "troms-skolerute-2026-2027",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "troms-skolerute-2027-2028-fra-2027-08-01",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "troms-skolerute-2028-2029-fra-2028-08-01",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "finnmark-inntak",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "finnmark-skoleregler",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "finnmark-skoleregler-voksne",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "finnmark-skolerute-2026-2027",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "finnmark-skolerute-2027-2028-fra-2027-08-01",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "nordkapp-videregaende-skole-fagfordeling-2547",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    },
+    {
+      "id": "vardo-videregaende-skole-fagfordeling-2546",
+      "kilde": "lovdata-lokale",
+      "endringer": [],
+      "feil": null,
+      "forste": false
+    }
+  ],
+  "lokale": [
+    "Fant ikke skolen i skoleregisteret: Forskrift om lokalt tillegg til skulereglar – reglar for bruk av mobiltelefon Os gymnas, Vestland fylkeskommune"
+  ]
+}

@@ -1,0 +1,626 @@
+{
+ "id": "trondelag-skoleregler-voksne",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om felles ordensregler for opplæringa for voksne deltakere, Trøndelag",
+ "korttittel": "Regler for voksne i Trøndelag",
+ "korttittelNn": "Reglar for vaksne i Trøndelag",
+ "malform": "nb",
+ "refid": "forskrift/2025-06-13-1031",
+ "sistEndret": null,
+ "iKraft": "2025-08-01",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-voksne",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "50"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om felles ordensregler for opplæringa for voksne deltakere, Trøndelag",
+   "merknader": [
+    [
+     "Gjeldende fra 1. august 2025."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med ordensreglene er at deltakerne skal bli kjent med sine plikter og rettigheter. Ordensreglene skal bidra til et godt og trygt læringsmiljø for deltakere og skal fremme godt samarbeid, god trivsel, respekt og medansvar."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet skal gi informasjon om:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rettigheter og plikter for deltakerne (blant annet orden og oppførsel)"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Tiltak når deltakerne bryter ordensreglene og hvordan slike saker skal behandles."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Ordensreglene gjelder for deltakere tatt inn etter ",
+        {
+         "t": "opplæringslovens kapittel 18",
+         "l": "lov/2023-06-09-30/kap18"
+        },
+        " i den fylkeskommunale voksenopplæringen. Reglene gjelder for disse deltakerne i alle typer opplæringsaktiviteter i regi av skolen, både i og utenfor skolens område."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Medvirkning",
+     "ledd": [
+      {
+       "tekst": [
+        "Alle deltakere i den videregående opplæringen for voksne har rett til medvirkning i forhold som gjelder dem selv i forbindelse med opplæringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne har rett til å ytre meningene sine fritt, de har rett til å bli hørt, og det skal legges vekt på meningene deres."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Deltakernes rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal gi deltakerne et opplæringstilbud som følger vedtatt opplæringsplan, ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        ", styringsdokumenter og vedtak som gjelder for fylkeskommunen."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal jobbe kontinuerlig for at alle deltakere har et trygt og godt skolemiljø, som fremmer helse, inkludering, trivsel og læring. Det skal så langt det er mulig legges til rette for at deltakerne kan ha kontakt og kommunikasjon med hverandre."
+       ]
+      },
+      {
+       "tekst": [
+        "Det skal være nulltoleranse for krenkelser, mobbing, trakassering og diskriminering. Alle som arbeider i den videregående opplæringen for voksne skal, så fremt det er mulig, gripe inn hvis en deltaker blir utsatt for krenking."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal jobbe kontinuerlig for at alle deltakere har et skolemiljø som er fritt for negativ sosial kontroll. Dette betyr for eksempel at alle deltakere skal ha mulighet til å samarbeide i klasserommet, uavhengig av kjønn og seksualitet."
+       ]
+      },
+      {
+       "tekst": [
+        "Negativ sosial kontroll forstås som press, oppsyn, trusler eller tvang som systematisk begrenser noen i sin livsutfoldelse eller gjentatte ganger hindrer dem i å treffe selvstendige valg om eget liv og egen fremtid. Dette gjelder for eksempel den enkeltes selvbestemmelse over egen identitet, kropp, seksualitet, frihet til å velge venner, fritidsaktiviteter, religion, påkledning, utdannelse, jobb, kjæreste og ektefelle, og muligheten til å be om helsehjelp."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Deltakernes plikter",
+     "ledd": [
+      {
+       "tekst": [
+        "Deltakerne skal bidra til et inkluderende, trygt og godt skolemiljø, og til at alle i skolesamfunnet har et godt lærings- og arbeidsmiljø. Deltakerne skal møte opp og delta aktivt i opplæringen og følge ordensreglene. Deltakerne skal rette seg etter de bestemmelser i lov, reglement og instrukser som til enhver tid gjelder."
+       ]
+      },
+      {
+       "tekst": [
+        "5.1"
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne skal ha god orden. Det innebærer bl.a. å"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte presis til kurs/opplæring/praksis"
+           ],
+           "liste": [
+            {
+             "merke": "b.",
+             "ledd": [
+              {
+               "tekst": [
+                "varsle skolen og/eller praksisplassen dersom man for en kortere periode er forhindret fra å møte til kurset/opplæringen/praksisen. Manglende tilstedeværelse, uansett grunn, kan føre til at skolen mangler vurderingsgrunnlag og at deltakeren ikke får vurdering i modulen og/eller faget"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "c.",
+             "ledd": [
+              {
+               "tekst": [
+                "følge retningslinjer for søknad om permisjon i tilfelle fravær over en lengre periode, som også påvirker innholdet i egen utdanningsplan"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "d.",
+             "ledd": [
+              {
+               "tekst": [
+                "ha med seg nødvendige læremidler og utstyr"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "e.",
+             "ledd": [
+              {
+               "tekst": [
+                "utføre avtalte gjøremål og overholde frister"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "f.",
+             "ledd": [
+              {
+               "tekst": [
+                "bidra til å holde det rent og ryddig på skolens område"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "g.",
+             "ledd": [
+              {
+               "tekst": [
+                "ta vare på skolens utstyr og lærebøker"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "h.",
+             "ledd": [
+              {
+               "tekst": [
+                "ta ansvar for privat utstyr som bringes med på skolens område"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "i.",
+             "ledd": [
+              {
+               "tekst": [
+                "følge fylkeskommunens gjeldende reglement for IKT."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "5.2"
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne skal ha god oppførsel. Det innebærer bl.a. å"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "opptre ærlig og høflig"
+           ],
+           "liste": [
+            {
+             "merke": "b.",
+             "ledd": [
+              {
+               "tekst": [
+                "behandle meddeltakere, lærere og andre ansatte med respekt"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "c.",
+             "ledd": [
+              {
+               "tekst": [
+                "være oppmerksomme i timene og delta aktivt i opplæringa"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "d.",
+             "ledd": [
+              {
+               "tekst": [
+                "vise respekt for skolens og andres eiendeler"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "e.",
+             "ledd": [
+              {
+               "tekst": [
+                "bruke utstyr i henhold til gjennomført opplæring og retningslinjer"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "f.",
+             "ledd": [
+              {
+               "tekst": [
+                "rette seg etter de bestemmelser i lov, reglement og instrukser som til enhver tid gjelder."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Deltakerne skal bl.a. ikke:"
+       ],
+       "liste": [
+        {
+         "merke": "g.",
+         "ledd": [
+          {
+           "tekst": [
+            "forstyrre undervisningen"
+           ],
+           "liste": [
+            {
+             "merke": "h.",
+             "ledd": [
+              {
+               "tekst": [
+                "mobbe eller krenke andre"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "i.",
+             "ledd": [
+              {
+               "tekst": [
+                "røyke, snuse, innta, være påvirket av eller oppbevare rusmidler på skolens område, eller på andre undervisningsarenaer i skoletida. Elektroniske sigaretter er ikke tillatt. Se ",
+                {
+                 "t": "tobakksskadeloven §§ 27",
+                 "l": "lov/1973-03-09-14/§27"
+                },
+                " og ",
+                {
+                 "t": "28a",
+                 "l": "lov/1973-03-09-14/§28a"
+                }
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "j.",
+             "ledd": [
+              {
+               "tekst": [
+                "ha med seg våpen eller gjenstander som er egnet til å skade, skremme eller true andre"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "k.",
+             "ledd": [
+              {
+               "tekst": [
+                "jukse eller forsøke å jukse i forbindelse med vurderingssituasjoner"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "l.",
+             "ledd": [
+              {
+               "tekst": [
+                "bruke skolens nettressurser til å laste ned, lese eller spre pornografisk, hatefullt eller annet ulovlig materiale"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "m.",
+             "ledd": [
+              {
+               "tekst": [
+                "bruke mobiltelefoner, PC-er og annet elektronisk utstyr på en slik måte at det virker forstyrrende på opplæringen eller krenkende overfor medmennesker"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "n.",
+             "ledd": [
+              {
+               "tekst": [
+                "dele film eller bilder av ansatte eller medelever uten først å ha fått gyldig samtykke fra den eller de som er filmet eller avbildet"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "o.",
+             "ledd": [
+              {
+               "tekst": [
+                "utøve negativ sosial kontroll overfor andre"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "p.",
+             "ledd": [
+              {
+               "tekst": [
+                "bruke klesplagg som helt eller delvis dekker ansiktet, med mindre dette er nødvendig på grunn av pedagogiske, helsemessige, klimatiske eller sikkerhetsmessige forhold. Dette forbudet gjelder i undervisning, i vurderingssituasjoner og på turer og arrangement i regi av skolen. Se ",
+                {
+                 "t": "opplæringsloven § 27-2",
+                 "l": "lov/2023-06-09-30/§27-2",
+                 "a": "opplaeringslova/27-2"
+                },
+                "."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen vil som hovedregel politianmelde straffbare forhold."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Konsekvenser av brudd på ordensreglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Ved brudd på ordensreglene kan følgende reaksjoner ilegges:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "Samtale med skoleleder"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bortvisning"
+           ],
+           "liste": [
+            {
+             "merke": "a.",
+             "ledd": [
+              {
+               "tekst": [
+                "Faglærer kan vise bort en deltaker fra en undervisningsøkt på inntil 2 klokketimer."
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "b.",
+             "ledd": [
+              {
+               "tekst": [
+                "Rektor kan vise bort en deltaker fra lærestedet i inntil fem dager etter flere og/eller alvorlige brudd på ordensreglementet"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "c.",
+             "ledd": [
+              {
+               "tekst": [
+                "Fylkeskommunen kan vedta at en deltaker vises bort for resten av kurset eller modulen deltakeren er tatt inn på, dersom regelbruddet eller regelbruddene er særlig alvorlige."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Ved bortvisning for mer enn to klokketimer skal det fattes enkeltvedtak med nødvendig klagerett for deltakeren. Før det fattes enkeltvedtak skal deltakeren varsles og få anledning til å uttale seg innen en rimelig frist. Skolen skal også først vurdere om det er mulig å bruke andre og mer hensiktsmessige reaksjoner. Regler for saksbehandling, enkeltvedtak, rett til varsling, til å forklare seg og til å klage framgår av ",
+        {
+         "t": "forvaltningsloven",
+         "l": "lov/1967-02-10"
+        },
+        ", ",
+        {
+         "t": "opplæringsloven",
+         "l": "lov/2023-06-09-30"
+        },
+        " og ",
+        {
+         "t": "forskrift til opplæringsloven",
+         "l": "forskrift/2024-06-03-900"
+        },
+        "."
+       ],
+       "liste": [
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "Erstatningsansvar"
+           ],
+           "liste": [
+            {
+             "merke": "•",
+             "ledd": [
+              {
+               "tekst": [
+                "Deltakere må regne med å bli gjort erstatningsansvarlige for hærverk eller andre ødeleggelser av skolens eiendeler/eiendom e.l., jf. ",
+                {
+                 "t": "skadeserstatningsloven",
+                 "l": "lov/1969-06-13-26"
+                },
+                "."
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Reaksjonen på et regelbrudd må stå i et rimelig forhold til hvor alvorlig bruddet er."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Prosedyre ved usikkerhet om deltaker har sluttet",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal legge til rette for at deltakeren skal fullføre opplæringen."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det på tross av skolens tiltak oppstår usikkerhet om hvorvidt en deltaker har sluttet, for eksempel på grunn av fraværet, skal skolen uten ugrunnet opphold sende et skriftlig forhåndsvarsel om at det vil fattes enkeltvedtak om tap av opplæringsplass til deltakeren."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom deltakeren ikke har besvart henvendelsen innen en frist på 2 uker, skal deltakeren ansees som å ha sluttet, og en sluttmelding i form av enkeltvedtak skrives, med 3 ukers klageadgang. Dersom deltakeren enda ikke har fylt 25 år varsles oppfølgingstjenesten senest når sluttmelding sendes."
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom det ikke fremsettes klage innenfor klagefristen, bortfaller opplæringsplassen i henhold til enkeltvedtaket."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

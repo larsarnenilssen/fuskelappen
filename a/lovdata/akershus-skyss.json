@@ -1,0 +1,119 @@
+{
+ "id": "akershus-skyss",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, Akershus",
+ "korttittel": "Skyss og rabattordning i Akershus",
+ "korttittelNn": "Skyss og rabattordning i Akershus",
+ "malform": "nb",
+ "refid": "forskrift/2026-02-26-364",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-08-01",
+ "lokaltype": "skyss",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "32"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse i videregående opplæring, Akershus",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde og varighet",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder elever og deltakere i videregående skoler, og voksenopplæringssentrene som er eid av Akershus fylkeskommune, som er bosatt i Akershus fylke og går på skole i Akershus."
+       ]
+      },
+      {
+       "tekst": [
+        "Forskriften gjelder for skoleåret 2026/2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Rabattordning i stedet for gratis skoleskyss eller full skyssgodtgjørelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har rett til gratis skyss til skolen eller full skyssgodtgjørelse etter ",
+        {
+         "t": "opplæringsloven §§ 9-1",
+         "l": "lov/2023-06-09-30/§9-1",
+         "a": "opplaeringslova/9-1"
+        },
+        " eller ",
+        {
+         "t": "21-1",
+         "l": "lov/2023-06-09-30/§21-1",
+         "a": "opplaeringslova/21-1"
+        },
+        ", skal få tilbud om rabattert billett i stedet for gratis skoleskyss eller full skyssgodtgjørelse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Unntak for enkeltelever som bor i områder som ikke har et godt utbygd kollektivtilbud",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som har minst 6 km reiseavstand mellom bosted og opplæringssted, og som bor i et område som ikke har et godt utbygd kollektivtilbud, skal etter søknad innvilges gratis skoleskyss, eller skyssgodtgjørelse."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Overgangsordning",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder ikke for elever som allerede har et gyldig vedtak om gratis skoleskyss."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. august 2026."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

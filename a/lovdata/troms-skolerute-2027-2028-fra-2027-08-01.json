@@ -1,0 +1,263 @@
+{
+ "id": "troms-skolerute-2027-2028-fra-2027-08-01",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skolerute for skoleåret 2027–2028, Troms fylkeskommune",
+ "korttittel": "Skolerute 2027–2028 i Troms",
+ "korttittelNn": "Skulerute 2027–2028 i Troms",
+ "malform": "nb",
+ "refid": "forskrift/2026-05-13-1638",
+ "sistEndret": null,
+ "iKraft": "2027-08-01",
+ "iKraftTil": "2028-07-31",
+ "lokaltype": "skolerute",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "55"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skolerute for skoleåret 2027–2028, Troms fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål og virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gir informasjon om hvilke skole- og feriedager elevene har skoleåret 2027–2028. Elevene har rett og plikt til å møte på skolen på de fastsatte skoledagene. Forskriften gjelder for elever ved alle videregående skoler i Troms fylkeskommune skoleåret 2027–2028."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Skole- og feriedager skoleåret 2027–2028",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Høst 2027"
+         ],
+         [],
+         []
+        ],
+        "rader": [
+         [
+          [
+           "Måned"
+          ],
+          [
+           "Merknader"
+          ],
+          [
+           "Skoledager"
+          ]
+         ],
+         [
+          [
+           "August"
+          ],
+          [
+           "Første skoledag – onsdag 18. august"
+          ],
+          [
+           "10"
+          ]
+         ],
+         [
+          [
+           "September"
+          ],
+          [],
+          [
+           "22"
+          ]
+         ],
+         [
+          [
+           "Oktober"
+          ],
+          [
+           "Høstferie – fri fra og med onsdag 6. oktober til og med fredag 8. oktober"
+          ],
+          [
+           "18"
+          ]
+         ],
+         [
+          [
+           "November"
+          ],
+          [
+           "Mandag 15. og tirsdag 16. november – Felles planleggingsdager VGS. Fridager for elevene."
+          ],
+          [
+           "20"
+          ]
+         ],
+         [
+          [
+           "Desember"
+          ],
+          [
+           "Siste skoledag før jul – fredag 17. desember"
+          ],
+          [
+           "13"
+          ]
+         ],
+         [
+          [
+           "Antall skoledager høst 2027"
+          ],
+          [],
+          [
+           "83"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Vår 2028"
+         ],
+         [],
+         []
+        ],
+        "rader": [
+         [
+          [
+           "Måned"
+          ],
+          [
+           "Merknader"
+          ],
+          [
+           "Skoledager"
+          ]
+         ],
+         [
+          [
+           "Januar"
+          ],
+          [
+           "Første skoledag – mandag 3. januar"
+          ],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Februar"
+          ],
+          [],
+          [
+           "21"
+          ]
+         ],
+         [
+          [
+           "Mars"
+          ],
+          [
+           "Vinterferie – fri fra og med mandag 6. mars til og med fredag 10. mars"
+          ],
+          [
+           "18"
+          ]
+         ],
+         [
+          [
+           "April"
+          ],
+          [
+           "Påskeferie – fri fra og med mandag 10. april – til og med mandag 17. april Oppstart etter påske – tirsdag 18. april"
+          ],
+          [
+           "14"
+          ]
+         ],
+         [
+          [
+           "Mai"
+          ],
+          [
+           "Mandag 1. mai – Offentlig høytidsdag Onsdag 17. mai – Grunnlovsdag Torsdag 25. mai – Kristi himmelfartsdag Fredag 26. mai – Fridag for elevene"
+          ],
+          [
+           "19"
+          ]
+         ],
+         [
+          [
+           "Juni"
+          ],
+          [
+           "Mandag 5. juni – andre pinsedag Siste skoledag – onsdag 21. juni"
+          ],
+          [
+           "14"
+          ]
+         ],
+         [
+          [
+           "Antall skoledager vår 2028"
+          ],
+          [],
+          [
+           "107"
+          ]
+         ],
+         [
+          [
+           "Totalt antall skoledager hele skoleåret"
+          ],
+          [],
+          [
+           "190"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "1. august 2027–31. juli 2028."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,589 @@
+{
+ "id": "bergeland-videregaende-skole-fagfordeling-1107",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet helse- og oppvekstfag med Barne- og ungdomsarbeiderfag på vg2 ved Bergeland videregående skole, Rogaland fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Bergeland videregående skole",
+ "korttittelNn": "Fag- og timefordeling, Bergeland videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2026-06-16-1107",
+ "sistEndret": null,
+ "iKraft": "2026-08-01",
+ "iKraftTil": "2027-08-01",
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "11",
+  "skoler": [
+   "974624532"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet helse- og oppvekstfag, barne- og ungdomsarbeiderfag med studiekompetanse ved Bergeland videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elever som tas inn på utdanningsprogrammet helse- og oppvekstfag, barne- og ungdomsarbeiderfag med studiekompetanse ved Bergeland videregående skole høsten 2026 og til de er ferdig med treårig løp."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordeling",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Matematikk (MAT1019, MAT1023 ev. REA3056, 5 t)"
+          ],
+          [
+           "140"
+          ],
+          [
+           "84/140"
+          ],
+          [],
+          [
+           "224/280"
+          ]
+         ],
+         [
+          [
+           "Naturfag (NAT1007)"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving (KRO1017, KRO1018, KRO10)"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap (SAK1001)"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie (HIS1011)"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Engelsk (ENG1007)"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Sum fellesfag"
+          ],
+          [
+           "449"
+          ],
+          [
+           "476/532"
+          ],
+          [
+           "364"
+          ],
+          [
+           "1289/1345"
+          ]
+         ],
+         [
+          [
+           "Programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Helsefremmende arbeid (HSF1006)"
+          ],
+          [
+           "197"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Pedagogisk arbeid (BUA2005)"
+          ],
+          [],
+          [],
+          [
+           "197"
+          ],
+          [
+           "197"
+          ]
+         ],
+         [
+          [
+           "Kommunikasjon og samhandling (HSF1007)"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kommunikasjon og samhandling (BUA2006)"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesliv i helse- og oppvekstfag (HSF1008)"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesliv i barne- og ungdomsarbeiderfag (BUA2007)"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning (YFF4106 HSF)"
+          ],
+          [],
+          [
+           "168"
+          ],
+          [],
+          [
+           "168"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning (YFF4209 BUA)"
+          ],
+          [],
+          [],
+          [
+           "253"
+          ],
+          [
+           "253"
+          ]
+         ],
+         [
+          [
+           "Valgfrie programfag (fra studiespesialisering)"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Sum programfag"
+          ],
+          [
+           "477"
+          ],
+          [
+           "448"
+          ],
+          [
+           "590"
+          ],
+          [
+           "1515"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "926"
+          ],
+          [
+           "924/980"
+          ],
+          [
+           "954"
+          ],
+          [
+           "2804/2860"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Norskfaget følger den studieforberedende modellen og er lagt over tre år."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag (NAT1007) er flyttet fra vg1 til vg2 og følger studieforberedende løp."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Pedagogisk arbeid (BUA2005) er flyttet fra vg2 til vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Yrkesfaglig fordypning YFF4106 HSF er flyttet fra vg1 til vg2."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Yrkesfaglig fordypning YFF4209 BUA er flyttet fra vg2 til vg3."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for vg1, vg2 og vg3 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget/fagene som privatist. Ordinære tilbud innen helse- og oppvekstfag tilbys ved andre skoler i Rogaland fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Yrkesfaglig opplæringsløp skal være en del av trekket i vg1 og vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i ett fag, sett over to år. Den obligatoriske tverrfaglige eksamenen i programfag blir flyttet til vg3. Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål vg3. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig praktisk eksamen på vg3."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til vg1 og opptak til vg2/vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til vg1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger av ",
+        {
+         "t": "§ 4-12",
+         "l": "forskrift/2024-06-03-900/§4-12",
+         "a": "opplaeringsforskrifta/4-12"
+        },
+        ", jf. ",
+        {
+         "t": "§ 4-1 i opplæringsforskriften",
+         "l": "forskrift/2024-06-03-900/§4-1",
+         "a": "opplaeringsforskrifta/4-1"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til vg2/vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til vg2 og vg3 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. ",
+        {
+         "t": "§ 4-13 første ledd i opplæringsforskriften",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        ". Elever som ikke har bestått alle fagene på vg1 eller vg2, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering finner det forsvarlig jf. ",
+        {
+         "t": "§ 4-13 annet ledd bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2026 og gjelder til 1. august 2027."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

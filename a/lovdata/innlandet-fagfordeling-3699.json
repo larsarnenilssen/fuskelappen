@@ -1,0 +1,680 @@
+{
+ "id": "innlandet-fagfordeling-3699",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse gjennom programområdet industriteknologi, Innlandet fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Innlandet",
+ "korttittelNn": "Fag- og timefordeling, Innlandet",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-05-3699",
+ "sistEndret": null,
+ "iKraft": "2025-01-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "34"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse gjennom programområdet industriteknologi, Innlandet fylkeskommune",
+   "merknader": [
+    [
+     "Utdanningsprogram: Teknologi- og industrifag, industriteknologi."
+    ],
+    [
+     "Opplæringsløpet tilbys ved følgende skole: Raufoss videregående skole."
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": []
+  },
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å gi et tilbud for søkere/elever som sikter seg mot høyere utdanning ved starten av opplæringsløpet, men som også ønsker en yrkesfaglig utdanning i bunn."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven får fagbrev/svennebrev og generell studiekompetanse, med fordypning i realfag. Den fleksible fag- og timefordelingen tilrettelegger for et mer tilpasset opplæringsløp, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fleksibel fag- og timefordeling for utdanningsprogrammet teknologi- og industrifag."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for søker/elev som tas inn på utdanningsprogrammet 4-årig opplæringsløp (YSK) teknologi- og industrifag, industriteknologi ved Raufoss videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Eleven skal ha følgende fag- og timefordeling:",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Vg4"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "112"
+          ]
+         ],
+         [
+          [
+           "Naturfag (fra studieforberedende modell)"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Matematikk (fra studieforberedende modell)"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [
+           "420"
+          ]
+         ],
+         [
+          [
+           "Norsk (fra studieforberedende modell)"
+          ],
+          [],
+          [
+           "113"
+          ],
+          [
+           "112"
+          ],
+          [
+           "168"
+          ],
+          [
+           "393"
+          ]
+         ],
+         [
+          [
+           "Samfunnskunnskap"
+          ],
+          [],
+          [],
+          [
+           "84"
+          ],
+          [],
+          [
+           "84"
+          ]
+         ],
+         [
+          [
+           "Historie (fra studieforberedende modell)"
+          ],
+          [],
+          [],
+          [
+           "56"
+          ],
+          [
+           "113"
+          ],
+          [
+           "169"
+          ]
+         ],
+         [
+          [
+           "Felles programfag* *Felles programfag er fordelt på tre ulike fag på Vg1 og Vg2. Informasjon om fagene finnes på nettstedet: ",
+           {
+            "t": "www.vilbli.no",
+            "l": "https://www.vilbli.no/"
+           },
+           " – detaljert informasjon om felles programfag"
+          ],
+          [
+           "477"
+          ],
+          [
+           "477"
+          ],
+          [],
+          [],
+          [
+           "954"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning"
+          ],
+          [
+           "168"
+          ],
+          [
+           "253"
+          ],
+          [],
+          [],
+          [
+           "421"
+          ]
+         ],
+         [
+          [
+           "Obligatorisk programfag fra utdanningsprogrammet studiespesialisering: Fysikk 1"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Obligatorisk programfag fra utdanningsprogrammet studiespesialisering: Fysikk 2"
+          ],
+          [],
+          [],
+          [],
+          [
+           "140"
+          ],
+          [
+           "140"
+          ]
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "1065"
+          ],
+          [
+           "1039"
+          ],
+          [
+           "588"
+          ],
+          [
+           "421"
+          ],
+          [
+           "3113"
+          ]
+         ],
+         [
+          [
+           "Læretid i bedrift på Vg1 Felles programfag foregår både i skole og bedrift. Eleven får ca. 3 dager i skole og ca. 2 dager ute i bedrift per uke."
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Læretid i bedrift på Vg2 Felles programfag foregår både i skole og bedrift. Eleven får ca. 3 dager i skole og ca. 2 dager ute i bedrift per uke."
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Læretid i bedrift på Vg3 Fag i skole ca. 3 dager i uka. Ute i bedrift, ca. 2 dager"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Læretid i bedrift på Vg4 Fag i skole ca. 2 dager i uka. Ute i bedrift, ca. 3 dager"
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Total læretid i bedrift etter 4 år: Skolen skal sikre at samlet opplæringstid i bedrift tilsvarer den samlede læretid i bedrift etter ordinær 2+2 modell."
+          ],
+          [],
+          [],
+          [],
+          [],
+          []
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Matematikk følger den studieforberedende modellen og er lagt til er lagt til Vg1, Vg2 og Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Naturfag følger den studieforberedende modellen og er lagt til Vg1."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kroppsøving er lagt til Vg2 og Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Norsk følger den studieforberedende modellen og er lagt til Vg2, Vg3 og Vg4."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Samfunnsfag er lagt til Vg3."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Historie følger den studieforberedende modellen og er lagt til Vg3 og Vg4."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Programfag fra utdanningsprogrammet studiespesialisering er lagt til Vg3 og Vg4."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2, Vg3 og Vg4 skal være lik den nasjonale fag- og timefordelingen for det gitte utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølge som framgår av læreplanen, i tråd med progresjonen i faget og det er ikke anledning til å dele et fag opp i andre enheter enn det som framgår av læreplanen."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Elev som velger å avbryte det fleksible opplæringsløpet og søker seg til et ordinært opplæringsløp innenfor samme utdanningsprogram og programområde må ta eventuelle fag som mangler for å få vitnemål eller fagbrev. I Innlandet fylkeskommune skal mottakerskolen tilrettelegge for at eleven får fag som mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at fagene kan tas som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "Ordinære løp innen utdanningsprogrammet teknologi- og industrifag, industriteknologi tilbys ved flere videregående skoler i Innlandet fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "For å oppfylle kravene til vitnemål må elevene ha samme antall obligatoriske eksamener som elever med nasjonal fag- og timefordeling. Eksamen og trekkordning følger kravene i det enkelte fag og trinn."
+       ]
+      },
+      {
+       "tekst": [
+        "Vg1 og Vg2: Over en toårsperiode skal ca. 20 % av elevene på Vg1 og Vg2 trekkes ut til eksamen i fellesfag. (Vg1: Mulig med en trekkeksamen. Vg2: Mulig med en trekkeksamen.) Obligatorisk tverrfaglig eksamen på Vg2."
+       ]
+      },
+      {
+       "tekst": [
+        "Vg3 og Vg4: 2 fag trekkes til eksamen, skriftlig, muntlig eller muntlig-praktisk. Vg3 og Vg4 sees under ett for trekkfagene. Obligatorisk skriftlig eksamen i norsk hovedmål på Vg4."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til Vg1 og opptak til Vg2, Vg3 og Vg4",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Søknad og inntak til Vg1 med fleksibel fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i ",
+        {
+         "t": "opplæringslovens § 5-1",
+         "l": "lov/2023-06-09-30/§5-1",
+         "a": "opplaeringslova/5-1"
+        },
+        ", ",
+        {
+         "t": "opplæringsforskriften andre del kapittel 4",
+         "l": "forskrift/2024-06-03-900/kap4"
+        },
+        " og ",
+        {
+         "t": "kapittel 2",
+         "l": "forskrift/2024-12-17-3529/kap2"
+        },
+        " i forskrift om inntak til videregående skole og formidling til læreplass i Innlandet fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er kun søkere som har prioritert utdanningsprogrammet Teknologi- og industrifag, industriteknologi, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse ved Raufoss videregående skole som sitt førsteønske som innkalles til intervju med skole og bedrift, jf. ",
+        {
+         "t": "forskrift om inntak til videregående opplæring og formidling til læreplass, Innlandet fylkeskommune § 2-5",
+         "l": "forskrift/2024-12-17-3529/§2-5",
+         "a": "innlandet-inntak/2-5"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "For at søker skal kunne tas inn til et yrkesfaglige utdanningsløp som leder fram til yrkes- og studiekompetanse, er det et krav at samarbeidende bedrifter er godkjent som lærebedrift før tilbud til søker gis."
+       ]
+      },
+      {
+       "tekst": [
+        "For inntak til YSK-løp innenfor teknologi- og industrifag, Vg2 industriteknologi som gir både yrkes- og studiekompetanse legges det vekt på karakterer i fagene matematikk og naturfag og søkers samlede karaktersnitt. Skole og lærebedrift samarbeider om utvelgelse av søkere til intervju."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2, Vg3 og Vg4",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til Vg2 og Vg3 må eleven ha bestått alle fagene på lavere nivå i tråd med den fastsatte fleksible fag- og timefordelingen, jf. ",
+        {
+         "t": "opplæringsforskrifta § 4-13",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Elev som ikke har bestått alle fagene på Vg1, Vg2 eller Vg3, kan likevel flyttes opp til neste nivå dersom skolen etter en helhetlig vurdering finner det forsvarlig, jf. ",
+        {
+         "t": "opplæringsforskriftens § 4-13 bokstav c",
+         "l": "forskrift/2024-06-03-900/§4-13",
+         "a": "opplaeringsforskrifta/4-13"
+        },
+        "."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen har ansvar for å gi inntakskontoret informasjon om elev som skolen ikke skal flytte opp til neste nivå på grunn av fag som ikke er bestått innen 25. juni."
+       ]
+      },
+      {
+       "tekst": [
+        "Elev som er kvalifisert til neste nivå preutfylles og flyttes automatisk opp til neste nivå."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Mindre endringer i den lokale forskriften",
+     "ledd": [
+      {
+       "tekst": [
+        "Avdelingssjef for Kompetanse og tannhelse kan gjøre redaksjonelle endringer i den lokale forskriften. Dersom endringen er av en slik art at de påvirker søkeren sin mulighet for inntak til bestemte tilbud, skal endringene behandles politisk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "11",
+     "visNr": "§ 11",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 1. januar 2025."
+       ]
+      },
+      {
+       "tekst": [
+        "Samtidig oppheves ",
+        {
+         "t": "forskrift 10. november 2020 nr. 2363 om fleksibilitet i fag- og timefordeling i videregående opplæring, 4-årig opplæringsløp (YSK) med yrkes- og studiekompetanse gjennom programområdet industriteknologi, Innlandet fylkeskommune",
+         "l": "forskrift/2020-11-10-2363"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

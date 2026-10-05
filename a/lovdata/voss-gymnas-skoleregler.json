@@ -1,0 +1,73 @@
+{
+ "id": "voss-gymnas-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om lokale tilleggsreglar for Voss gymnas, Vestland fylkeskommune",
+ "korttittel": "Skoleregler ved Voss gymnas",
+ "korttittelNn": "Skulereglar ved Voss gymnas",
+ "malform": "nn",
+ "refid": "forskrift/2024-08-01-1933",
+ "sistEndret": null,
+ "iKraft": "2024-09-13",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler-skole",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "46",
+  "skoler": [
+   "816031982"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om lokale tilleggsreglar for Voss gymnas, Vestland fylkeskommune",
+   "merknader": [
+    [
+     "Skulereglar som gjeld ved Voss gymnas"
+    ]
+   ],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Bruk av mobiltelefon i timane",
+     "ledd": [
+      {
+       "tekst": [
+        "For å sørgja for eit godt undervisningsmiljø nyttar Voss gymnas obligatorisk mobilhotell i undervisninga. Skulen gjennomførte ein lokal prosess våren 2024 der elevrådet, skulemiljøutval og tillitsvalde vart høyrde."
+       ]
+      },
+      {
+       "tekst": [
+        "Mobiltelefonar skal i undervisningstida setjast i flymodus og oppbevarast i dei felles mobiltelefon-behaldarane til skulen (mobilhotell) som står i kvart klasserom. Mobiltelefon kan berre brukast når lærar gir beskjed om at mobiltelefonen skal nyttast som ein del av undervisninga eller etter avtale i høve tilretteleggingstiltak."
+       ]
+      },
+      {
+       "tekst": [
+        "Kvar elev er sjølv ansvarleg for å plassera mobiltelefonen sin i mobilhotellet før kvar undervisningsøkt og dessutan ta han med seg etter at undervisningsøkta er avslutta."
+       ]
+      },
+      {
+       "tekst": [
+        "Synleg mobil eller bruk av mobil i timen utan avtale med lærar kan føre til sanksjon, jamfør § 8 i ",
+        {
+         "t": "forskrift om skulereglar i Vestland fylkeskommune",
+         "l": "forskrift/2024-06-18-1455"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1152 @@
+{
+ "id": "telemark-skoleregler",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune",
+ "korttittel": "Skoleregler i Telemark",
+ "korttittelNn": "Skulereglar i Telemark",
+ "malform": "nb",
+ "refid": "forskrift/2024-12-10-3620",
+ "sistEndret": "2026-08-01",
+ "iKraft": "2025-01-20",
+ "iKraftTil": null,
+ "lokaltype": "skoleregler",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "40"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om skoleregler for videregående skoler, Telemark fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med skolereglene i Telemark fylkeskommune er:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "å bidra til at alle elever utvikler kunnskap, ferdigheter og holdninger for å kunne mestre livene sine og for å kunne delta i arbeid og fellesskap i samfunnet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "å gi tydelige rammer som fremmer god orden og atferd, og et trygt og godt læringsmiljø"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "å gi informasjon om elevenes rettigheter og plikter, og hvilke sanksjoner og saksbehandlingsregler som gjelder når elever bryter reglementet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "å være retningsgivende for vurdering av orden og atferd, ileggelse av sanksjoner og for likebehandling av alle elever."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolereglene gjelder for alle elever i offentlige videregående skoler i Telemark fylkeskommune."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet gjelder i skoletiden, på skolens område, på skolevei, i skolens nærområde, på ekskursjoner, skoleturer, ved aktiviteter og på arrangementer i skolens regi, samt når elever er ute i praksis eller har yrkesfaglig fordypning (YFF) i bedrifter."
+       ]
+      },
+      {
+       "tekst": [
+        "Reglementet gjelder også for mobbing og andre krenkelser som skjer utenfor skolens område, på skoleveien, utenfor skoletiden, og i det digitale rom. Utvidelsen gjelder når handlingen har en klar tilknytning til skolemiljøet ved at handlingen er foranlediget av skolesituasjonen eller setter sitt preg på den."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Organisering av skoledemokratiet",
+     "ledd": [
+      {
+       "tekst": [
+        "Skolen skal legge til rette for at hver enkelt elev skal kunne ytre meningene sine fritt og oppmuntre til å delta i skoledemokratiet. Skolen skal hjelpe elevene i arbeidet med skoledemokratiet."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevråd"
+       ]
+      },
+      {
+       "tekst": [
+        "Alle de videregående skolene i Telemark skal ha et elevråd som er valgt av elevene. Elevene bestemmer selv størrelsen på elevrådet."
+       ]
+      },
+      {
+       "tekst": [
+        "Elevrådet er et rådgivende organ med rett til å uttale seg i alle saker som gjelder skolen. Elevrådet har ikke myndighet til å fatte vedtak. Elevrådet skal blant annet arbeide for læringsmiljøet, arbeidsforholdene og velferdsinteressene til elevene."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoleutvalg"
+       ]
+      },
+      {
+       "tekst": [
+        "Alle videregående skoler i Telemark skal ha et skoleutvalg som skal fungere som et rådgivende organ for rektor. Skoleutvalget har rett til å uttale seg i saker som gjelder skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Skoleutvalget består av rektor, representanter fra elevene, representanter fra de ansatte, samt representant fra skoleeier. Elevene skal være i flertall."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Orden",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene skal møte presis, vise gode arbeidsvaner og god arbeidsinnsats. Det er god orden å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "møte forberedt og delta aktivt i opplæringen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "gjøre arbeid som blir pålagt etter beste evne og til rett tid"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "melde fra til skolen/bedrift (YFF/praksissted) så raskt som mulig ved fravær"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "dokumentere fravær i tråd med gjeldende fraværsrutiner"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "holde orden på og ha med nødvendige læremidler og utstyr"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha mobiltelefonen på lydløs og ute av syne i opplæringen om ikke annet av avklart med lærer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge verne- og sikkerhetsregler og bruke arbeidstøy og verneutstyr som kreves i læreplan eller som er påbudt."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "rydde opp etter seg ved bruk av skolens/bedriftens (YFF/praksissted) arealer og kantine"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "9.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge skoleeiers og skolens rutinebeskrivelser, som omtalt i ",
+            {
+             "t": "§ 9-3",
+             "l": "forskrift/2024-12-10-3620/§9-3",
+             "a": "telemark-skoleregler/9-3"
+            },
+            "."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene skal bidra til å skape et godt skolemiljø ved å opptre hensynsfullt og høflig overfor hverandre, og vise alminnelig god folkeskikk."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er god oppførsel å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "bidra til arbeidsro i timene"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "følge lærers og øvrige ansattes anvisninger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "behandle skolens og andres eiendeler på en forsvarlig måte."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikke tillatt å:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke grovt språk, mobbe eller krenke andre fysisk, verbalt eller digitalt, være voldelig eller komme med trusler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke mobiltelefoner eller annet elektronisk utstyr i opplæringen, uten at det er avklart med lærer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "ta eller bruke bilder, film eller lydopptak av medelever, lærere, ansatte eller andre uten deres samtykke"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "laste ned eller spre fysisk eller elektronisk; pornografisk, rasistisk eller annet krenkende eller ulovlig materiale."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "drive med pengespill på skolen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke eller ha befatning med tobakk, snus, e-sigaretter, alkohol, narkotika, andre rusmidler eller dopingmidler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "ha med farlige gjenstander eller våpen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "fuske eller forsøke å fuske på prøver eller innleveringer ved å motta hjelp fra andre, gi hjelp til andre eller benytte hjelpemidler som ikke er tillatt"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "9.",
+         "ledd": [
+          {
+           "tekst": [
+            "levere eller presentere som eget produkt; tekster, oppgaveløsninger og liknende som er produsert av andre, herunder også tekster og løsninger som er lastet ned fra internett"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "10.",
+         "ledd": [
+          {
+           "tekst": [
+            "bruke plagg som er til hinder for kommunikasjon eller identifisering i undervisningssituasjoner."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "11.",
+         "ledd": [
+          {
+           "tekst": [
+            "markere russegrupper, gjennom blant annet bruk av symboler og effekter, da det motvirker et inkluderende læringsmiljø for alle. Eleven skal bidra til at alle medelever blir inkludert i skolen sitt fellesskap og til et skolemiljø som involverer alle. Skolemiljøet omfatter også aktiviteter som er knyttet til skolen. Dette gjelder i hele studieperioden."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Dersom bedriften (YFF/praksisstedet) har egne retningslinjer for orden og atferd, så skal disse følges."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved forskrift ",
+       {
+        "t": "2 okt 2025 nr. 3012",
+        "l": "forskrift/2025-10-02-3012"
+       },
+       " (i kraft 1 aug 2026)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Tiltak ved brudd på skolereglene",
+     "ledd": [
+      {
+       "tekst": [
+        "Elever som bryter skolereglenes kapittel 4 og/eller 5, kan ilegges sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Sanksjoner skal stå i rimelig forhold til elevens brudd på reglementet, hvor alvorlighetsgrad og gjentakelse har betydning for valg av sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven plikter å følge de sanksjoner som skolen har vedtatt. Ved manglende overholdelse kan det vedtas nye sanksjoner."
+       ]
+      },
+      {
+       "tekst": [
+        "Det er ikke lov å sanksjonere en gruppe kollektivt for noe en elev har gjort seg skyldig i."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-1",
+     "visNr": "§ 6-1",
+     "tittel": "Alminnelige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Alminnelige sanksjoner kan ilegges ved ett eller flere brudd på skolereglene. Sanksjonen skal formidles til eleven og registreres med begrunnelse. Eleven kan ilegges en eller flere alminnelige sanksjoner:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "muntlig tilsnakk"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "skriftlig anmerkning"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "nedsatt terminkarakter i orden eller atferd"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "frata eleven gjenstander eller rusmidler"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "ved gjentatt bruk av mobil uten tillatelse, kan denne midlertidig inndras"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "ved en alvorlig hendelse knyttet til mobilbruk (spredning av bilder, mobbing etc.) kan mobilen midlertidig inndras"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "utføring av pålagte oppgaver og/eller utbedring av skader eleven har utført ved f.eks. å vaske, rydde og/eller fjerne gjenstander"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "pålegg om tilstedeværelse i møter på eller utenfor skolen, før eller etter ordinær skoletid, f.eks. møte i konfliktrådet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "9.",
+         "ledd": [
+          {
+           "tekst": [
+            "begrenset adgang til utstyr/verksted/spesialrom"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "10.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra klasse/gruppe for resten av en opplæringsøkt, avgrenset til to klokketimer, etter lærers avgjørelse."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-2",
+     "visNr": "§ 6-2",
+     "tittel": "Særlige sanksjoner",
+     "ledd": [
+      {
+       "tekst": [
+        "Særlige sanksjoner er enkeltvedtak, og kan ilegges etter alvorlige enkelthendelser eller gjentatte brudd på skolereglene. Eksempler kan være vold, trakassering, befatning med våpen eller rusmidler, fusk eller plagiering."
+       ]
+      },
+      {
+       "tekst": [
+        "Før særlige sanksjoner blir vurdert og besluttet, skal eleven få mulighet til å forklare seg muntlig. Rektor bør tilby eleven å ha med seg en person til denne samtalen. Foresatte til elever under 18 år skal uansett varsles."
+       ]
+      },
+      {
+       "tekst": [
+        "Særlige sanksjoner skal være skriftlig, begrunnet og opplyse om elevens rett til å klage. Eleven har rett til veiledning om sine rettigheter som part i saken, og hvordan man går frem ved en klage."
+       ]
+      },
+      {
+       "tekst": [
+        "Før det blir gjort vedtak om bortvisning, skal hjelpetiltak og mildere sanksjoner vurderes."
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven kan ilegges en eller flere særlige sanksjoner:"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "nedsatt termin-/standpunktkarakter i orden eller atferd"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra skolen/bedriften (YFF/praksissted) for resten av skoledagen etter vedtak av rektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning fra og med en hel skoledag og inntil fem skoledager etter vedtak av rektor"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "bortvisning for resten av skoleåret etter vedtak av fylkeskommunen ved sjef for utdanning, folkehelse og tannhelse"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "omgjøring av skoleplass til alternativ opplæringsarena etter vedtak av fylkeskommunen ved sjef for utdanning, folkehelse og tannhelse."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6-3",
+     "visNr": "§ 6-3",
+     "tittel": "Klageinstans",
+     "ledd": [
+      {
+       "tekst": [
+        "Fylkestinget, eller den fylkestinget har gitt myndighet, er klageinstans for enkeltvedtak om særlige sanksjoner, jf. ",
+        {
+         "t": "§ 6-2",
+         "l": "forskrift/2024-12-10-3620/§6-2",
+         "a": "telemark-skoleregler/6-2"
+        },
+        "."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Elevenes rettigheter",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-1",
+     "visNr": "§ 7-1",
+     "tittel": "Trygt og godt læringsmiljø",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene har rett til et trygt og godt læringsmiljø."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal jobbe aktivt og systematisk for å fremme et godt psykososialt miljø, der den enkelte elev skal kunne oppleve arbeidsro, trygghet og sosial tilhørighet."
+       ]
+      },
+      {
+       "tekst": [
+        "Skolen skal ha nulltoleranse mot krenking som mobbing, vold, diskriminering og trakassering, og skal ha klare rutiner for håndtering av slike saker."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-2",
+     "visNr": "§ 7-2",
+     "tittel": "Elevenes rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene har rett til"
+       ],
+       "liste": [
+        {
+         "merke": "1.",
+         "ledd": [
+          {
+           "tekst": [
+            "å bli behandlet med høflighet, respekt og omtanke"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "2.",
+         "ledd": [
+          {
+           "tekst": [
+            "videregående opplæring i henhold til ",
+            {
+             "t": "opplæringslova",
+             "l": "lov/2023-06-09-30"
+            },
+            " med forskrifter, gjeldende læreplaner og fylkeskommunale vedtak"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "3.",
+         "ledd": [
+          {
+           "tekst": [
+            "en opplæring som er tilpasset deres evner og forutsetninger"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "4.",
+         "ledd": [
+          {
+           "tekst": [
+            "å ta del i planlegging og gjennomføring av arbeidet for et trygt og godt skolemiljø"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "5.",
+         "ledd": [
+          {
+           "tekst": [
+            "å kjenne målene for opplæringen og hva som blir vektlagt i vurderingen av kompetansen"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "6.",
+         "ledd": [
+          {
+           "tekst": [
+            "å delta aktivt i vurderingen av eget arbeid, egen kompetanse og egen faglig utvikling"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "7.",
+         "ledd": [
+          {
+           "tekst": [
+            "underveis- og sluttvurdering i fag, i orden og i atferd. Underveisvurderingen skal gis løpende og systematisk og kan være både muntlig og skriftlig"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "8.",
+         "ledd": [
+          {
+           "tekst": [
+            "en utviklingssamtale minst én gang hvert halvår med kontaktlærer. Samtalen skal dokumenteres."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "9.",
+         "ledd": [
+          {
+           "tekst": [
+            "nødvendig rådgivning ut fra egne behov, innenfor utdanning, karriere- og yrkesvalg, og personlige og sosiale forhold"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "10.",
+         "ledd": [
+          {
+           "tekst": [
+            "å bli varslet skriftlig uten ugrunnet opphold, dersom det er"
+           ],
+           "liste": [
+            {
+             "merke": "a.",
+             "ledd": [
+              {
+               "tekst": [
+                "tvil om eleven kan få karakter i fag ved halvårsvurdering eller standpunktkarakter"
+               ]
+              }
+             ]
+            },
+            {
+             "merke": "b.",
+             "ledd": [
+              {
+               "tekst": [
+                "fare for å få nedsatt karakter i orden eller atferd ved halvårsvurdering eller standpunktkarakter"
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "11.",
+         "ledd": [
+          {
+           "tekst": [
+            "at skolen samarbeider med elevenes foresatte."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-3",
+     "visNr": "§ 7-3",
+     "tittel": "Varslingsrett",
+     "ledd": [
+      {
+       "tekst": [
+        "Manglende ivaretakelse av rettigheter etter dette kapitelet bør elevene melde fra om til skolen, ombud eller elevrådet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7-4",
+     "visNr": "§ 7-4",
+     "tittel": "Vurdering i orden og oppførsel",
+     "ledd": [
+      {
+       "tekst": [
+        "Vurdering i orden og i oppførsel skal kun knyttes til i hvilken grad eleven opptrer i tråd med skolereglene, og skal holdes adskilt fra vurderingen av elevens kompetanse i fag."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Elevenes plikter",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "8-1",
+     "visNr": "§ 8-1",
+     "tittel": "Fravær og oppmøte",
+     "ledd": [
+      {
+       "tekst": [
+        "Elevene skal være til stede under opplæringen dersom ikke annet er avtalt med skolen."
+       ]
+      },
+      {
+       "tekst": [
+        "Alt fravær registreres i dager og enkelttimer."
+       ]
+      },
+      {
+       "tekst": [
+        "Elever som kommer for sent, har rett til å ta del i opplæringen."
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Oppmøte inntil 15 minutter etter at opplæringen starter uten dokumentert begrunnelse, blir registrert som anmerkning om forsentkomming."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Oppmøte mer enn 15 minutter etter at opplæringen starter uten dokumentert begrunnelse, blir i tillegg registrert som fravær."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Eleven må melde fra så raskt som mulig til skolen/bedriften (YFF)/praksissted ved sykdom eller andre årsaker til fravær. Dette gjelder også dersom eleven må forlate opplæringen. Dersom et fravær vedvarer, skal eleven gi ny melding til skolen om dette."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Diverse bestemmelser",
+     "ledd": [],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9-1",
+     "visNr": "§ 9-1",
+     "tittel": "Erstatningsansvar",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan bli erstatningsansvarlig for skader på skolens eller andres eiendeler."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9-2",
+     "visNr": "§ 9-2",
+     "tittel": "Straffbare forhold",
+     "ledd": [
+      {
+       "tekst": [
+        "Straffbare forhold innenfor skolereglenes virkeområde, jf. ",
+        {
+         "t": "§ 2",
+         "l": "forskrift/2024-12-10-3620/§2",
+         "a": "telemark-skoleregler/2"
+        },
+        ", vil bli meldt til politiet."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9-3",
+     "visNr": "§ 9-3",
+     "tittel": "Øvrige rutinebeskrivelser",
+     "ledd": [
+      {
+       "tekst": [
+        "Skoleeier har utarbeidet egne rutinebeskrivelser for:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Eksamensreglement"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ekskursjoner/skoleturer"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Fraværshåndtering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Fusk og plagiering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Rutiner – rus."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tekst": [
+        "Den enkelte videregående skole kan utarbeide egne rutinebeskrivelser for:"
+       ],
+       "liste": [
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Kantine"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Parkering"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Bruk av utstyr/verksted/spesialrom"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Helse, miljø og sikkerhet"
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "•",
+         "ledd": [
+          {
+           "tekst": [
+            "Ekskursjoner/skoleturer."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Ikraftsetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften trer i kraft 20. januar 2025."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

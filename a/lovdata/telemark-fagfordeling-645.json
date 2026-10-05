@@ -1,0 +1,799 @@
+{
+ "id": "telemark-fagfordeling-645",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fag på avvikende trinn i videregående opplæring, Telemark fylkeskommune",
+ "korttittel": "Fag- og timefordeling, Telemark",
+ "korttittelNn": "Fag- og timefordeling, Telemark",
+ "malform": "nb",
+ "refid": "forskrift/2016-06-07-645",
+ "sistEndret": "2018-08-01",
+ "iKraft": "2016-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "fylke",
+  "fylke": "40"
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "dokument",
+   "type": "avsnitt",
+   "nr": null,
+   "overskrift": "Forskrift om fag på avvikende trinn i videregående opplæring, Telemark fylkeskommune",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for de videregående skolene til Telemark fylkeskommune."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med forskriften er å tydeliggjøre hvilke fag som er lagt på andre trinn enn det som framgår av den nasjonale fag- og timefordelingen innen videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Skoler med tilbud om fag på avvikende trinn",
+     "ledd": [
+      {
+       "tekst": [
+        "I Telemark fylkeskommune er det fag på avvikende trinn på følgende skoler:"
+       ],
+       "liste": [
+        {
+         "merke": "a.",
+         "ledd": [
+          {
+           "tekst": [
+            "Skogmo vgs innen utdanningsprogram for helse- og oppvekstfag."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "b.",
+         "ledd": [
+          {
+           "tekst": [
+            "Nome vgs innen utdanningsprogram for naturbruk."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "c.",
+         "ledd": [
+          {
+           "tekst": [
+            "Bø vgs innen utdanningsprogram for studiespesialisering."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved ",
+       {
+        "t": "forskrift 24 april 2018 nr. 712",
+        "l": "forskrift/2018-04-24-712"
+       },
+       " (i kraft 1 aug 2018)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Avvikende fag på Skogmo vgs",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordinært løp innen utdanningsprogram for helse- og oppvekstfag, tilbyr Skogmo videregående skole helse- og oppvekstfag med studiekompetanse. Fem timer naturfag gjennomføres på Vg1 (tilsvarende studieforberedende), dvs. tre timer naturfag flyttes fra Vg3 til Vg1. Matematikk 2P-Y flyttes fra Vg3 til Vg2. Timene til fellesfag som er flyttet fra Vg3 (totalt 8 timer), tas fra faget yrkesfaglig fordypning – 3 timer på Vg1 og 5 timer på Vg2. Dette gir følgende timefordeling og plasseringen på trinn for helse- og oppvekstfag med studiekompetanse (HAF-løpet): Fag Vg1 Vg2 Vg3"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "3"
+          ],
+          [
+           "2"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "5"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ],
+          [
+           "10"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "3"
+          ],
+          [
+           "5"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "3"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "5"
+          ]
+         ],
+         [
+          [
+           "Sum fellesfag"
+          ],
+          [
+           "15"
+          ],
+          [
+           "14"
+          ],
+          [
+           "17"
+          ]
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "17"
+          ],
+          [
+           "17"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag fra studiespesialisering"
+          ],
+          [],
+          [],
+          [
+           "13"
+          ]
+         ],
+         [
+          [
+           "Yrkesfaglig fordypning (YFF)"
+          ],
+          [
+           "3"
+          ],
+          [
+           "4"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum programfag og YFF"
+          ],
+          [
+           "20"
+          ],
+          [
+           "21"
+          ],
+          [
+           "13"
+          ]
+         ],
+         [
+          [
+           "Totalt"
+          ],
+          [
+           "35"
+          ],
+          [
+           "35"
+          ],
+          [
+           "30"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved ",
+       {
+        "t": "forskrift 6 juni 2017 nr. 725",
+        "l": "forskrift/2017-06-06-725"
+       },
+       " (i kraft 1 aug 2017)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Avvikende fag på Nome vgs",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordinært løp innen utdanningsprogram for naturbruk, har Nome videregående skole et tilbud med spesiell studiekompetanse. Tre timer naturfag flyttes fra Vg3 til Vg1. For matematikk er normalløpet 3 + 0 + 5. Faget prosjekt til fordypning i Vg2 er i sin helhet benyttet til fag fra studieforberedende utdanningsprogram mens 5 av 6 timer i V g1 benyttes på samme måte. Totalt uketimetall er økt til 36 i vg2 mens normalløpet har 35 uketimer. Dette gir denne timefordelingen og plassering på trinn:"
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "3"
+          ],
+          [
+           "2"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "5"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Kjemi Biologi"
+          ],
+          [],
+          [
+           "Enten 5 (KJ1) Eller 5 (BI1)"
+          ],
+          [
+           "Enten 5 (KJ2) Eller 5 (BI2)"
+          ]
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ],
+          [
+           "10"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ]
+         ],
+         [
+          [
+           "Matematikk"
+          ],
+          [
+           "5 (1T)"
+          ],
+          [
+           "5 (R1)"
+          ],
+          [
+           "5 (R2) Eller 5 (KJ1) Eller 5 (BI1)"
+          ]
+         ],
+         [
+          [
+           "Geofag X"
+          ],
+          [],
+          [],
+          [
+           "3"
+          ]
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "3"
+          ],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "5"
+          ]
+         ],
+         [
+          [
+           "Sum fellesfag"
+          ],
+          [
+           "17"
+          ],
+          [
+           "19"
+          ],
+          [
+           "30"
+          ]
+         ],
+         [
+          [
+           "Felles programfag"
+          ],
+          [
+           "17"
+          ],
+          [
+           "17"
+          ],
+          [
+           "5"
+          ]
+         ],
+         [
+          [
+           "Prosjekt til fordypning"
+          ],
+          [
+           "1"
+          ],
+          [
+           "0"
+          ],
+          []
+         ],
+         [
+          [
+           "Sum programfag og PTF"
+          ],
+          [
+           "18"
+          ],
+          [
+           "17"
+          ],
+          [
+           "5"
+          ]
+         ],
+         [
+          [
+           "Totalt"
+          ],
+          [
+           "35"
+          ],
+          [
+           "36"
+          ],
+          [
+           "35"
+          ]
+         ]
+        ]
+       }
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved ",
+       {
+        "t": "forskrift 6 juni 2017 nr. 725",
+        "l": "forskrift/2017-06-06-725"
+       },
+       " (i kraft 1 aug 2017), ",
+       {
+        "t": "24 april 2018 nr. 712",
+        "l": "forskrift/2018-04-24-712"
+       },
+       " (i kraft 1 aug 2018, endret fotnote)."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Avvikende fag på Bø vgs",
+     "ledd": [
+      {
+       "tekst": [
+        "I tillegg til ordinært løp innen utdanningsprogram for studiespesialisering tilbyr Bø vgs egen innovasjonslinje. Innovasjonslinja har samme krav til timetall som det ordinære løpet, dvs. minimum 90 uketimer over tre år, men har 35 obligatoriske uketimer i vg1. Dette fordi to programfag starter opp i vg1 og avsluttes i vg2. Det dreier seg om Entreprenørskap og bedriftsutvikling 1 (2+3 timer) og Teknologi og forskningslære 1 (3+2 timer)."
+       ]
+      },
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "4"
+          ],
+          [
+           "4"
+          ],
+          [
+           "6"
+          ]
+         ],
+         [
+          [
+           "Matematikk T eller P"
+          ],
+          [
+           "5"
+          ],
+          [
+           "3"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "5"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "5"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Fremmedspråk"
+          ],
+          [
+           "4"
+          ],
+          [
+           "4"
+          ],
+          [
+           "5​*"
+          ]
+         ],
+         [
+          [
+           "Geografi"
+          ],
+          [
+           "2"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [
+           "3"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [
+           "2"
+          ],
+          [
+           "4"
+          ]
+         ],
+         [
+          [
+           "Religion og etikk"
+          ],
+          [],
+          [],
+          [
+           "3"
+          ]
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ],
+          [
+           "2"
+          ]
+         ],
+         [
+          [
+           "Obligatoriske programfag:"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Entreprenørskap og bedriftsutvikling 1"
+          ],
+          [
+           "2"
+          ],
+          [
+           "3"
+          ],
+          []
+         ],
+         [
+          [
+           "Entreprenørskap og bedriftsutvikling 2"
+          ],
+          [],
+          [],
+          [
+           "5"
+          ]
+         ],
+         [
+          [
+           "Teknologi og forskningslære 1"
+          ],
+          [
+           "3"
+          ],
+          [
+           "2"
+          ],
+          []
+         ],
+         [
+          [
+           "Andre programfag fra realfag eller språk- samfunns- og økonomiske fag"
+          ],
+          [],
+          [
+           "10/15​**"
+          ],
+          [
+           "5/10/15​**"
+          ]
+         ],
+         [
+          [
+           "Sum"
+          ],
+          [
+           "35"
+          ],
+          [
+           "30/35​**"
+          ],
+          [
+           "25/30/35​**"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Skolen tilrettelegger for at elever kan velge programfagskombinasjoner som gir et høyere timetall enn 90 over tre år."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Elever som ikke har hatt fremmedspråk fra ungdomsskolen må ha dette over alle tre år."
+      ],
+      [
+       "Tilføyd ved ",
+       {
+        "t": "forskrift 24 april 2018 nr. 712",
+        "l": "forskrift/2018-04-24-712"
+       },
+       "."
+      ]
+     ],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Ikrafttredelse",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder fra 1. august 2016."
+       ]
+      }
+     ],
+     "endringer": [
+      [
+       "Endret ved ",
+       {
+        "t": "forskrift 24 april 2018 nr. 712",
+        "l": "forskrift/2018-04-24-712"
+       },
+       " (i kraft 1 aug 2018), tidligere § 6."
+      ]
+     ],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}

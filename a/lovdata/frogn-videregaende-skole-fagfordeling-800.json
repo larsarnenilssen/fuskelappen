@@ -1,0 +1,492 @@
+{
+ "id": "frogn-videregaende-skole-fagfordeling-800",
+ "kilde": "lovdata-lokale",
+ "type": "forskrift",
+ "tittel": "Forskrift om fleksibilitet i fag- og timefordeling i videregående opplæring i Akershus fylkeskommune, 3-årig opplæringsløp til generell studiekompetanse innen utdanningsprogrammet service og samferdsel ved Frogn videregående skole",
+ "korttittel": "Fag- og timefordeling, Frogn videregående skole",
+ "korttittelNn": "Fag- og timefordeling, Frogn videregående skole",
+ "malform": "nb",
+ "refid": "forskrift/2016-06-13-800",
+ "sistEndret": null,
+ "iKraft": "2016-08-01",
+ "iKraftTil": null,
+ "lokaltype": "fagfordeling",
+ "hentet": "2026-10-05",
+ "gyldighet": {
+  "niva": "skole",
+  "fylke": "32",
+  "skoler": [
+   "988843709"
+  ]
+ },
+ "utvalg": null,
+ "seksjoner": [
+  {
+   "id": "kap1",
+   "type": "kapittel",
+   "nr": "1",
+   "overskrift": "Kapittel 1 Formål og virkeområde",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "1",
+     "visNr": "§ 1",
+     "tittel": "Formål",
+     "ledd": [
+      {
+       "tekst": [
+        "Formålet med den endrede fag- og timefordelingen er å legge til rette for mer tilpassede tilbud i opplæringsløpet for elevgruppen som beskrives i forskriften, og kan være et virkemiddel for å øke andelen elever som fullfører og består videregående opplæring."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "2",
+     "visNr": "§ 2",
+     "tittel": "Virkeområde",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder alternativ fag- og timefordeling for utdanningsprogrammet service og samferdsel ved Frogn videregående skole."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "3",
+     "visNr": "§ 3",
+     "tittel": "Virketid",
+     "ledd": [
+      {
+       "tekst": [
+        "Forskriften gjelder for elver som tas inn på utdanningsprogrammet service og samferdsel ved Frogn videregående skole høsten 2016."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap2",
+   "type": "kapittel",
+   "nr": "2",
+   "overskrift": "Kapittel 2 Fag- og timefordelingen",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "4",
+     "visNr": "§ 4",
+     "tittel": "Elevene skal ha følgende fag- og timefordelingen:",
+     "ledd": [
+      {
+       "tekst": [],
+       "tabell": {
+        "hode": [
+         [
+          "Fag"
+         ],
+         [
+          "Vg1"
+         ],
+         [
+          "Vg2"
+         ],
+         [
+          "Vg3"
+         ],
+         [
+          "Sum"
+         ]
+        ],
+        "rader": [
+         [
+          [
+           "Fellesfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Engelsk"
+          ],
+          [
+           "84"
+          ],
+          [
+           "56"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Kroppsøving"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          [
+           "56"
+          ],
+          []
+         ],
+         [
+          [
+           "Naturfag"
+          ],
+          [
+           "56"
+          ],
+          [],
+          [
+           "84"
+          ],
+          []
+         ],
+         [
+          [
+           "Matematikk 1P+2P"
+          ],
+          [
+           "84"
+          ],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Norsk"
+          ],
+          [
+           "112"
+          ],
+          [
+           "113"
+          ],
+          [
+           "168"
+          ],
+          []
+         ],
+         [
+          [
+           "Samfunnsfag"
+          ],
+          [],
+          [
+           "84"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Historie"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Valgfrie programfag"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Entreprenørskap og bedriftsutvikling"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Reiseliv &språk 1"
+          ],
+          [],
+          [],
+          [
+           "140"
+          ],
+          []
+         ],
+         [
+          [
+           "Programfag:"
+          ],
+          [],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Drift og oppfølging"
+          ],
+          [
+           "168"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Kommunikasjon og service"
+          ],
+          [
+           "140"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Planlegging"
+          ],
+          [
+           "169"
+          ],
+          [],
+          [],
+          []
+         ],
+         [
+          [
+           "Markedsføring og salg"
+          ],
+          [],
+          [
+           "169"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Sikkerhet"
+          ],
+          [],
+          [
+           "140"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Økonomi og administrasjon"
+          ],
+          [],
+          [
+           "168"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Prosjekt til fordypning i bedrift/skole"
+          ],
+          [
+           "168"
+          ],
+          [
+           "113"
+          ],
+          [],
+          []
+         ],
+         [
+          [
+           "Sum opplæring i skole"
+          ],
+          [
+           "1037"
+          ],
+          [
+           "1038"
+          ],
+          [
+           "728"
+          ],
+          [
+           "2804"
+          ]
+         ]
+        ]
+       }
+      },
+      {
+       "tekst": [
+        "Opplæringsløpet innebærer følgende flytting av fag:"
+       ],
+       "liste": [
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Norskfaget følger den studieforberedende modellen og er lagt over tre år."
+           ]
+          }
+         ]
+        },
+        {
+         "merke": "-",
+         "ledd": [
+          {
+           "tekst": [
+            "Elevene benytter 140 årstimer fra faget prosjekt til fordypning på Vg2 for å ta et relevant programfag innenfor utdanningsprogrammet service og samferdsel."
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "5",
+     "visNr": "§ 5",
+     "tittel": "Nasjonale krav til den endrede fag- og timefordelingen",
+     "ledd": [
+      {
+       "tekst": [
+        "Den samlede fag- og timefordelingen for Vg1, Vg2 og Vg3 skal være lik den nasjonale fag- og timefordelingen for et gitt utdanningsprogram og programområde, og skal være i samsvar med læreplanverket, inkludert læreplaner for fag, og minstetimetallet i fag. Fagene må tas i den rekkefølgen som framgår av læreplanen, i tråd med progresjonen i faget."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "6",
+     "visNr": "§ 6",
+     "tittel": "Elevens rettigheter",
+     "ledd": [
+      {
+       "tekst": [
+        "Eleven kan søke seg til et ordinært tilbud. Ved et slikt bytte må eleven ta eventuelle fag som eleven mangler for å få vitnemål. Ved bytte av skole i Akershus fylkeskommune har mottakerskolen ansvaret for at eleven får fagene eleven mangler. Dersom eleven ønsker det, kan mottakerskolen inngå avtale med eleven om at vedkommende tar faget som privatist."
+       ]
+      },
+      {
+       "tekst": [
+        "I Follo tilbys ordinære løp innen utdanningsprogrammet service og samferdsel ved Drømtorp, Frogn og Vestby vgs. Alle tre skolene tilbyr programområdet salg, service og sikkerhet på Vg2. Drømtorp vgs. tilbyr også IKT-servicefag og reiseliv på Vg2. Vestby vgs. tilbyr i tillegg programområdet transport og logistikk."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "7",
+     "visNr": "§ 7",
+     "tittel": "Den endrede fag- og timefordelingen skal følge trekkordningen for eksamen",
+     "ledd": [
+      {
+       "tekst": [
+        "Trekkordningen for eksamen gjelder også for elever som følger en alternativ fag- og timefordeling. Yrkesfaglig opplæringsløp skal være en del av trekket i V g1 og Vg2 hvor inntil 20 % av elevene trekkes ut til eksamen i ett fag, sett over to år. Elevene skal opp til den obligatoriske tverrfaglige eksamen i programfag på Vg2. Alle elevene skal opp til obligatorisk eksamen i norsk hovedmål Vg3. I tillegg skal elevene trekkes ut til én skriftlig eksamen, og én muntlig eller muntlig praktisk eksamen på Vg3."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap3",
+   "type": "kapittel",
+   "nr": "3",
+   "overskrift": "Kapittel 3 Søknad om inntak til V g1 og opptak til Vg2/Vg3",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "8",
+     "visNr": "§ 8",
+     "tittel": "Inntak til V g1 i opplæringen med alternativ fag- og timefordeling",
+     "ledd": [
+      {
+       "tekst": [
+        "Vilkår for inntak følger bestemmelsene i Kap. 6, jf. forskrift § 6-13."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    },
+    {
+     "nr": "9",
+     "visNr": "§ 9",
+     "tittel": "Inntak til Vg2/Vg3",
+     "ledd": [
+      {
+       "tekst": [
+        "For inntak til Vg2 og Vg3 må søkeren ha bestått alle fagene på lavere nivå i tråd med den fastsatte alternative fag- og timefordelingen, jf. § 6-28 i forskrift til opplæringsloven. Elever som ikke har bestått alle fagene på V g1 eller Vg2, kan likevel flyttes opp til neste nivå dersom fylkeskommunen etter en helhetlig vurdering, finner det forsvarlig jf. § 6-37, se forskriften kapittel 6."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  },
+  {
+   "id": "kap4",
+   "type": "kapittel",
+   "nr": "4",
+   "overskrift": "Kapittel 4 Iverksetting",
+   "merknader": [],
+   "seksjoner": [],
+   "paragrafer": [
+    {
+     "nr": "10",
+     "visNr": "§ 10",
+     "tittel": "Iverksetting",
+     "ledd": [
+      {
+       "tekst": [
+        "Den lokale forskriften trer i kraft 1. august 2016."
+       ]
+      }
+     ],
+     "endringer": [],
+     "fotnoter": []
+    }
+   ]
+  }
+ ]
+}
