@@ -155,14 +155,7 @@ function Skolekort({
         {skole.nr && <FavorittKnapp id={skolefavoritt(skole.nr)} navn={skole.navn} liten />}
       </div>
       <div id={id} class="skolekort-innhold" hidden={!vist}>
-        {vist && delvis && (
-          <p class="skolekort-alle">
-            <button type="button" class="lenkeknapp liten" onClick={() => settAlle(!alle)}>
-              {alle ? bareTekst : t('opplaeringslop.skoler.alleVedSkolen', { antall: formaterTall(antall) })}
-            </button>
-          </p>
-        )}
-        {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud koder={alle ? vedSkolen : utvalg} indeks={indeks} tilbud={tilbud} valgt={valgt} />)}
+        {/* Nettsiden og skolens egne regler øverst, før tilbudene (eier 05.10.2026). */}
         {vist && skole.nettside && (
           <p>
             <a class="ekstern-lenke" href={skole.nettside} target="_blank" rel="noopener noreferrer">
@@ -177,6 +170,14 @@ function Skolekort({
               <a href={`#${dokumentRute(r.id)}`}>{dokumentnavn(r, malform)}</a>
             </p>
           ))}
+        {vist && delvis && (
+          <p class="skolekort-alle">
+            <button type="button" class="lenkeknapp liten" onClick={() => settAlle(!alle)}>
+              {alle ? bareTekst : t('opplaeringslop.skoler.alleVedSkolen', { antall: formaterTall(antall) })}
+            </button>
+          </p>
+        )}
+        {vist && (antall === 0 ? <p class="dempet">{t('opplaeringslop.skoler.utenTilbud')}</p> : <Skoletilbud koder={alle ? vedSkolen : utvalg} indeks={indeks} tilbud={tilbud} valgt={valgt} />)}
       </div>
     </li>
   );

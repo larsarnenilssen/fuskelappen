@@ -4892,6 +4892,15 @@ p.fagkort-tittel {
   margin-bottom: var(--rom-1);
 }
 
+/* Skolenes egne regler på fylkessiden: en lukket gruppe under fylkets forskrifter. */
+.fylke-skolegruppe {
+  margin-top: var(--rom-2);
+}
+
+.fylke-skolegruppe > .liste {
+  margin-top: var(--rom-2);
+}
+
 .hos-fylket select {
   width: 100%;
   margin-bottom: var(--rom-2);

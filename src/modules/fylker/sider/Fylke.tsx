@@ -58,6 +58,10 @@ export default function Fylke({ parametre }: SideProps) {
     .sort((a, b) => (a.lokaltype ? REKKEFOLGE.indexOf(a.lokaltype) : 9) - (b.lokaltype ? REKKEFOLGE.indexOf(b.lokaltype) : 9));
   const skolenes = dokumenter.filter((d) => d.gyldighet.niva === 'skole' && d.gyldighet.fylke === nr).sort((a, b) => dokumentnavn(a, malform).localeCompare(dokumentnavn(b, malform), 'nb'));
   const minSkole = innstillinger.skole?.id ?? null;
+  // Skolens egne regler står rett under fylkets, og de andre skolenes i en lukket gruppe (eier 05.10.2026).
+  const erMin = (d: Lovoversikt['dokumenter'][number]) => minSkole !== null && d.gyldighet.niva === 'skole' && d.gyldighet.skoler.includes(minSkole);
+  const mine = skolenes.filter(erMin);
+  const andre = skolenes.filter((d) => !erMin(d));
   return (
     <div class="side">
       <Brodsmuler ledd={[{ tekst: t('fylker.tittel'), href: '#/fylker' }]} />
@@ -79,20 +83,32 @@ export default function Fylke({ parametre }: SideProps) {
         {fylkets.length + skolenes.length === 0 ? (
           <p class="dempet">{t('fylker.ingenLokale')}</p>
         ) : (
-          <ul class="liste">
-            {fylkets.map((d) => (
-              <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
-            ))}
-            {skolenes.map((d) => (
-              <Lenkerad
-                key={d.id}
-                href={`#${dokumentRute(d.id)}`}
-                tittel={dokumentnavn(d, malform)}
-                under={iKraft(d)}
-                {...(minSkole && d.gyldighet.niva === 'skole' && d.gyldighet.skoler.includes(minSkole) ? { merke: t('lov.skolenDin') } : {})}
-              />
-            ))}
-          </ul>
+          <>
+            {fylkets.length + mine.length > 0 && (
+              <ul class="liste">
+                {fylkets.map((d) => (
+                  <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
+                ))}
+                {mine.map((d) => (
+                  <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} merke={t('lov.skolenDin')} />
+                ))}
+              </ul>
+            )}
+            {andre.length > 0 && (
+              <details class="veiviser-kilder fylke-skolegruppe">
+                <summary class="forklaring-knapp">
+                  <Ikon navn="skole" />
+                  <span>{t('fylker.skolenesReglerAntall', { antall: formaterTall(andre.length) })}</span>
+                  <Ikon navn="ned" class="forklaring-pil" />
+                </summary>
+                <ul class="liste">
+                  {andre.map((d) => (
+                    <Lenkerad key={d.id} href={`#${dokumentRute(d.id)}`} tittel={dokumentnavn(d, malform)} under={iKraft(d)} />
+                  ))}
+                </ul>
+              </details>
+            )}
+          </>
         )}
       </Rubrikk>
       <Rubrikk nokkel="fylke-skoler" tittel={t('fylker.skolerOgKontor')}>

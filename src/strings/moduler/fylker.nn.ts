@@ -10,7 +10,7 @@ export const fylkerNn = {
   ikkeBekreftet: 'Nettstaden stengjer for automatisk sjekk, så lenkja kan vere utdatert.',
   lokale: 'Lokale forskrifter',
   ingenLokale: 'Appen har ingen lokale forskrifter for dette fylket enno.',
-  skolenesRegler: 'Skulane sine eigne reglar',
+  skolenesReglerAntall: 'Skulane sine eigne reglar ({antall})',
   antallSkoler: '{antall} skular',
   skolerOgKontor: 'Skular og opplæringskontor',
   skoler: 'Vidaregåande skular i {fylke}',
