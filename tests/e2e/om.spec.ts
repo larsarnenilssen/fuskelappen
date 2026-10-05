@@ -13,7 +13,7 @@ test('«Om» viser versjon, brukserklæring, personvern og kreditering', async (
   await expect(erklaering).toContainText('KI-assistent');
   await expect(erklaering).toContainText('god tro, som et redskap og et hjelpemiddel');
   await expect(erklaering).toContainText('tas imot med takk');
-  await expect(erklaering.getByRole('link', { name: 'Meld fra på GitHub' })).toHaveAttribute('href', /\/issues\/new$/);
+  await expect(erklaering.getByRole('link', { name: /GitHub/ })).toHaveCount(0);
   await expect(page.getByRole('heading', { name: 'Tilbakemelding' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Personvern' })).toBeVisible();
   await expect(page.getByText('Norsk lisens for offentlige data (NLOD) 2.0', { exact: false })).toBeVisible();
@@ -36,7 +36,7 @@ test('forsiden sier at appen er utviklet privat og kan ha feil, og lenker til «
   await expect(page.getByRole('heading', { name: 'Brukserklæring' })).toBeVisible();
 });
 
-test('tilbakemeldingen åpner e-post med versjonen og siden brukeren kom fra, og adressen kan vises (eier 05.10.2026)', async ({ page }) => {
+test('tilbakemeldingen åpner e-post med versjonen og siden brukeren kom fra, og adressen kan kopieres (eier 05.10.2026)', async ({ page }) => {
   await page.goto('./#/fylker/46');
   await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
   await page.goto('./#/om');
@@ -48,10 +48,9 @@ test('tilbakemeldingen åpner e-post med versjonen og siden brukeren kom fra, og
   expect(url.searchParams.get('subject')).toBe(`Tilbakemelding på Jukselappen ${versjon}`);
   expect(url.searchParams.get('body')).toContain(`Versjon: ${versjon}`);
   expect(url.searchParams.get('body')).toContain('#/fylker/46');
-  await expect(boks.getByText('jukselappen.app@gmail.com')).toHaveCount(0);
-  await boks.getByRole('button', { name: 'Vis adressen' }).click();
-  await expect(boks.getByText('jukselappen.app@gmail.com')).toBeVisible();
-  await expect(boks.getByRole('button', { name: 'Kopier' })).toBeVisible();
+  // Adressen vises ikke på siden, men kan kopieres (eier 05.10.2026).
+  await expect(boks).not.toContainText('jukselappen.app@gmail.com');
+  await expect(boks.getByRole('button', { name: 'Kopier adressen' })).toBeVisible();
 });
 
 test('tilbakemeldingen står også under Innstillinger', async ({ page }) => {

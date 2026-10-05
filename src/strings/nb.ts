@@ -176,10 +176,9 @@ export const nb = {
     tittel: 'Tilbakemelding',
     tekst: 'Har du et spørsmål, et innspill eller funnet en feil? Send en e-post. Skriv ikke navn eller andre personopplysninger om elever eller ansatte.',
     skriv: 'Skriv e-post',
-    visAdressen: 'Vis adressen',
-    kopier: 'Kopier',
-    kopiert: 'Adressen er kopiert.',
-    kopierSelv: 'Adressen kunne ikke kopieres. Merk den og kopier den selv.',
+    kopier: 'Kopier adressen',
+    kopiert: 'E-postadressen er kopiert. Lim den inn i e-postprogrammet ditt.',
+    kopierFeil: 'Adressen kunne ikke kopieres. Bruk «Skriv e-post».',
     emne: 'Tilbakemelding på {app} {versjon}',
     mal: 'Skriv tilbakemeldingen her:',
     versjon: 'Versjon: {versjon}',
@@ -201,8 +200,7 @@ export const nb = {
       grunnlag:
         'Samtidig er appen laget i god tro, som et redskap og et hjelpemiddel. Beregningene og forklaringene bygger på kilder: lover og forskrifter, tariffavtaler, læreplaner og data fra Utdanningsdirektoratet. Hver utregning kan vises trinn for trinn med kilden til hver verdi, slik at du kan kontrollere den selv. Beregningene testes mot regneeksemplene før hver ny versjon, og kildene sjekkes automatisk for endringer hver uke.',
       innspill:
-        'Innspill til funksjonaliteten og beskjed om feil tas imot med takk, på e-post under «Tilbakemelding» nedenfor. Har du en GitHub-konto, kan du også melde fra der.',
-      innspillLenke: 'Meld fra på GitHub',
+        'Innspill til funksjonaliteten og beskjed om feil tas imot med takk, på e-post under «Tilbakemelding» nedenfor.',
     },
     personvern: {
       tittel: 'Personvern',
@@ -424,6 +422,7 @@ export const nb = {
     ingenTreff: 'Ingen begreper passer med «{filter}».',
     tema: {
       etikett: 'Vis begreper om',
+      vis: 'Tema: {tema}',
       alle: 'Alle',
       inntak: 'Inntak og tilbud',
       fag: 'Læreplanverket',

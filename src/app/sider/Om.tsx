@@ -22,11 +22,6 @@ export default function Om() {
         <p>{t('om.erklaering.ki')}</p>
         <p>{t('om.erklaering.grunnlag')}</p>
         <p>{t('om.erklaering.innspill')}</p>
-        <p>
-          <a href={`${app.repo}/issues/new`} target="_blank" rel="noopener noreferrer">
-            {t('om.erklaering.innspillLenke')}
-          </a>
-        </p>
       </section>
 
       <Tilbakemelding />

@@ -7095,18 +7095,3 @@ button.frist-stripe-celle:hover {
 a.knapp {
   text-decoration: none;
 }
-
-.tilbakemelding-adresse {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--rom-2);
-}
-
-/* Adressen merkes med ett trykk, så den er lett å kopiere selv. */
-.tilbakemelding-epost {
-  font-weight: 600;
-  overflow-wrap: anywhere;
-  user-select: all;
-  -webkit-user-select: all;
-}
