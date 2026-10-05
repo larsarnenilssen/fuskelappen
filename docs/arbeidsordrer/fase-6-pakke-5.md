@@ -75,7 +75,7 @@ Når eier har valgt vei og sidene på vestlandfylke.no kan leses, hentes teksten
 
 - Kontrollspørsmålene fra pakke 1–3 venter på eier (kontrolloversikten), og to poster i praksislisten (`fravaer-15-prosent-legeerklaering` og `fravaer-helse-etter-grensen`).
 - Fylker som stenger skymiljøet (Østfold, Buskerud, Vestfold, Agder, Møre og Romsdal og Troms), legges inn i `scripts/eksamen/kilder.ts` når sidene kan leses. Med Agder får høsttrekket (12. november) to kilder.
-- «Fag- og svennebrev» i Opplæringstilbud er ikke bygget. Siden om prøvene får «Veiene hit» da.
+- «Fag- og svennebrev» i Opplæringstilbud er pakke 6, etter kalenderen: `docs/arbeidsordrer/fase-6-pakke-6-fag-og-svennebrev.md`. Siden om prøvene får «Veiene hit» da.
 - «Dagens jukselapp» kommer i fase 8.
 
 ## Arbeidsmåte
