@@ -146,6 +146,8 @@ test.describe('søket fra toppfeltet (eier 05.10.2026)', () => {
     await expect(page.locator('main h1')).toBeVisible();
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(y);
     await page.locator('.topplinje').getByRole('button', { name: 'Søk' }).click();
+    // Esc lyttes etter når søket er åpnet, ikke i samme øyeblikk som trykket.
+    await expect(page.getByRole('searchbox')).toBeFocused();
     await page.keyboard.press('Escape');
     await expect(page.getByRole('searchbox')).toHaveCount(0);
     await expect(page.locator('main h1')).toHaveText('Vestland fylkeskommune');
