@@ -234,6 +234,18 @@ function hodefelt(rot: HTMLElement, navn: string): string | null {
   return t ? t : null;
 }
 
+/**
+ * Den første datoen i et datofelt (ÅÅÅÅ-MM-DD). Feltet kan ha flere datoer eller tekst når deler av loven tok til å
+ * gjelde på ulike tidspunkt (05.10.2026: arkivlova og offentlegforskrifta).
+ */
+export function forsteDato(tekst: string | null): string | null {
+  if (!tekst) return null;
+  const iso = /\d{4}-\d{2}-\d{2}/.exec(tekst);
+  if (iso) return iso[0];
+  const norsk = /(\d{2})\.(\d{2})\.(\d{4})/.exec(tekst);
+  return norsk ? `${norsk[3]}-${norsk[2]}-${norsk[1]}` : null;
+}
+
 /** Kapittelnumrene i dokumentet, i rekkefølge. */
 export function kapittelnumre(seksjoner: readonly Seksjon[]): string[] {
   return seksjoner.flatMap((s) => [...(s.type === 'kapittel' && s.nr !== null ? [s.nr] : []), ...kapittelnumre(s.seksjoner)]);
@@ -311,7 +323,7 @@ export function lesLovdokument(html: string, oppsett: Leseoppsett): Lovdokument 
     malform: oppsett.malform ?? (lang === 'nn' ? 'nn' : 'nb'),
     refid,
     sistEndret: hodefelt(rot, 'lastChangeInForce'),
-    iKraft: hodefelt(rot, 'dateInForce'),
+    iKraft: forsteDato(hodefelt(rot, 'dateInForce')),
     hentet: oppsett.hentet,
     gyldighet: oppsett.gyldighet,
     utvalg: oppsett.kapitler ? [...oppsett.kapitler] : null,

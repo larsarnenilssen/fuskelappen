@@ -208,3 +208,15 @@ describe('hentingen', () => {
     expect(rapport.punkter).toBeGreaterThan(0);
   });
 });
+
+describe('datoen for ikrafttredelse', () => {
+  it('tar den første datoen, også når feltet har flere datoer eller tekst', async () => {
+    const { forsteDato } = await import('../../scripts/lovdata/les.ts');
+    expect(forsteDato('2026-01-01')).toBe('2026-01-01');
+    expect(forsteDato('2009-01-01, 2010-07-01')).toBe('2009-01-01');
+    expect(forsteDato('01.01.2026 (delvis)')).toBe('2026-01-01');
+    expect(forsteDato('Kongen bestemmer')).toBeNull();
+    expect(forsteDato(null)).toBeNull();
+  });
+});
+
