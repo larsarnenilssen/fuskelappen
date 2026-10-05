@@ -6,7 +6,8 @@ import type { Synonymer } from '../../core/innhold/skjema.ts';
 import { lagOrdformer } from '../../core/sok/ordformer.ts';
 import { alleParagrafer, type Lovdokument, type Lovoversikt, type Paragraf, paragraftekst, type Seksjon } from './typer.ts';
 
-const filer = import.meta.glob<Lovdokument>('../../../data/lovdata/*.json', { import: 'default' });
+// kommende.json er kalenderens liste over vedtatte endringer (avgjørelse 066), ikke et dokument.
+const filer = import.meta.glob<Lovdokument>(['../../../data/lovdata/*.json', '!../../../data/lovdata/kommende.json'], { import: 'default' });
 
 let oversikt: Promise<Lovoversikt> | null = null;
 const dokumenter = new Map<string, Promise<Lovdokument>>();

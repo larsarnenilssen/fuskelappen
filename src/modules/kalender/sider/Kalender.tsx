@@ -13,19 +13,15 @@ import { Ikon } from '../../../components/Ikon.tsx';
 import { KortfotRader } from '../../../components/Kortfot.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { formaterDato, type Malform } from '../../../core/i18n/tekst.ts';
-import { FRISTGRUPPER, KALENDERTEMAER, type Frist, type Fristgruppe, type Kalendertema } from '../../../core/innhold/skjema.ts';
-import { velgSynlige } from '../../../core/innhold/status.ts';
+import { FRISTGRUPPER, KALENDERTEMAER, type Fristgruppe, type Kalendertema } from '../../../core/innhold/kalendertema.ts';
 import { kortManed, manedsnavn } from '../../../core/tidslinje.ts';
-import { lastEksamensdatoer } from '../../../data/eksamen.ts';
 import { iDag } from '../../../data/skolear.ts';
 import { oversiktsid } from '../../favoritter.ts';
 import type { SideProps } from '../../typer.ts';
-import type { Eksamensdatoer } from '../../vurdering/eksamen/skjema.ts';
 import { EKSAMENSPLAN } from '../../vurdering/innhold.ts';
 import { kalenderRute, lesValg, sporringFor, type Kalendervalg } from '../adresse.ts';
 import {
   delInn,
-  heleAret as gjelderHeleAret,
   idagIndeks,
   pagar,
   passer,
@@ -38,8 +34,9 @@ import {
   type Kalenderoppforing,
   type Kalenderpost,
 } from '../beregning/kalender.ts';
-import { fraFrist, fristposter, harEksamensdatoer } from '../beregning/oppforinger.ts';
-import { hentAlleFrister } from '../data.ts';
+import { harEksamensdatoer } from '../beregning/oppforinger.ts';
+import { folgerVertskommunen, harSkolerute } from '../datakilder.ts';
+import { hentKalenderdata, samle, type Kalenderdata } from '../samle.ts';
 import { finnLenker, type Kalenderlenke } from '../lenker.ts';
 import { datocelle, datoLang, manedTittel, periodeTekst } from '../visning.ts';
 
@@ -77,15 +74,15 @@ export default function Kalender({ sporring }: SideProps) {
   const { t, malform } = useTekst();
   const { innstillinger } = useTilstand();
   const [valg, settValg] = useState<Kalendervalg>(() => lesValg(sporring));
-  const [frister, settFrister] = useState<Frist[] | null>(null);
-  const [data, settData] = useState<Eksamensdatoer | null>(null);
+  const [alt, settAlt] = useState<Kalenderdata | null>(null);
   const deler = useDeler();
 
   useEffect(() => {
-    void hentAlleFrister().then(settFrister);
-    // Uten eksamensdatoene står eksamen med måneden.
-    lastEksamensdatoer().then(settData, () => settData(null));
+    // En datafil som ikke kan lastes, gir null. Uten eksamensdatoene står eksamen med måneden.
+    void hentKalenderdata().then(settAlt);
   }, []);
+  const frister = alt?.frister ?? null;
+  const data = alt?.eksamen ?? null;
 
   const endre = (ny: Partial<Kalendervalg>) => {
     const neste = { ...valg, ...ny };
@@ -101,12 +98,14 @@ export default function Kalender({ sporring }: SideProps) {
   const vindu = valg.visning === 'rullende' ? rullendeVindu(idag) : skolearVindu(skolear);
   const filter = { tema: valg.tema, gruppe: valg.gruppe };
 
-  const synlige = useMemo(() => (frister ? velgSynlige(frister, sted) : []), [frister, sted.fylke, sted.skole]);
-  const poster = useMemo(() => fristposter(synlige, data, vindu, fylke), [synlige, data, vindu.fra, vindu.til, fylke]);
-  const valgte = velgPoster(poster, filter);
+  const innhold = useMemo(() => (alt ? samle(alt, sted, vindu) : null), [alt, sted.fylke, sted.skole, vindu.fra, vindu.til]);
+  const valgte = velgPoster(innhold?.poster ?? [], filter);
   const maneder = perManed(valgte, vindu);
-  // Frister som gjelder hele året, står øverst når det er filtrert på tema.
-  const hele: Kalenderoppforing[] = valg.tema ? synlige.filter((f) => !f.dato && f.regel?.type === 'lopende').map(fraFrist).filter((o) => gjelderHeleAret(o) && passer(o, filter)) : [];
+  // Frister som gjelder hele året, og vedtatte endringer uten dato, står øverst når det er filtrert på tema.
+  const hele: Kalenderoppforing[] = valg.tema ? (innhold?.heleAret ?? []).filter((o) => passer(o, filter)) : [];
+  const udatert: Kalenderoppforing[] = valg.tema ? (innhold?.udatert ?? []).filter((o) => passer(o, filter)) : [];
+  const skolerute = harSkolerute(alt?.skolerute ?? null, fylke) && (valg.tema === null || valg.tema === 'skolerute');
+  const fylkenavn = fylke ? (fylkesnavn(fylke) ?? fylke) : null;
   const ukjentEksamen = valg.visning === 'skolear' && data !== null && !harEksamensdatoer(data, skolear);
 
   const filtertekst = [valg.tema ? t(`kalender.temaer.${valg.tema}`) : t('kalender.filter.alleTemaer'), valg.gruppe ? t(`kalender.grupper.${valg.gruppe}`).toLowerCase() : null].filter(Boolean).join(', ');
@@ -222,6 +221,27 @@ export default function Kalender({ sporring }: SideProps) {
 
           {ukjentEksamen && <p class="kal-merknad">{t('kalender.ikkeKjent', { aar: `${skolear}–${skolear + 1}` })}</p>}
 
+          {skolerute && fylkenavn && (
+            <p class="kal-merknad">
+              {t('kalender.skolerute.merknad', { fylke: fylkenavn })} {folgerVertskommunen(alt?.skolerute ?? null, fylke) && t('kalender.skolerute.vertskommune')}
+            </p>
+          )}
+          {valg.tema === 'skolerute' && fylkenavn && !harSkolerute(alt?.skolerute ?? null, fylke) && <p class="kal-merknad">{t('kalender.skolerute.ingen', { fylke: fylkenavn })}</p>}
+
+          {udatert.length > 0 && (
+            <section class="kal-hele">
+              <h2 class="kal-maned-tittel">{t('kalender.regelverk.udatert')}</h2>
+              <p class="liten dempet">{t('kalender.regelverk.udatertUnder')}</p>
+              <ul class="kal-hele-liste">
+                {udatert.map((o) => (
+                  <li key={o.id}>
+                    <Kort oppforing={o} tid={o.naar?.[malform] ?? ''} />
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {hele.length > 0 && (
             <section class="kal-hele">
               <h2 class="kal-maned-tittel">{t('kalender.heleAret')}</h2>
@@ -236,7 +256,7 @@ export default function Kalender({ sporring }: SideProps) {
             </section>
           )}
 
-          {valgte.length === 0 && hele.length === 0 && <p class="dempet">{t('kalender.tomt')}</p>}
+          {valgte.length === 0 && hele.length === 0 && udatert.length === 0 && <p class="dempet">{t('kalender.tomt')}</p>}
 
           <div class="kal-kolonner" data-deler={deler}>
             {delInn(maneder, deler).map((del, i) => (

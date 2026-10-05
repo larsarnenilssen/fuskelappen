@@ -42,6 +42,8 @@ export const kalenderNn = {
     vertskommune: 'Forskrifta seier at skulane som hovudregel følgjer skuleruta til vertskommunen.',
     ingen: 'Appen har ikkje skuleruta for {fylke}. Ho står på sidene til fylkeskommunen.',
     fraForskriften: 'Frå skuleruta for {skolear}:',
+    sisteForJul: 'Siste skuledag før jul',
+    sisteForPaske: 'Siste skuledag før påske',
     forskrift: 'Skuleruta for {skolear}',
     typer: {
       'forste-skoledag': 'Første skuledag',
@@ -78,7 +80,7 @@ export const kalenderNn = {
     tittel: 'Endring i {hva} gjeld',
     og: 'og',
     tekstDato: 'Endringa i {hva} vart vedteken ved {lov} og gjeld frå {dato}.',
-    tekstUtenDato: 'Endringa i {hva} er vedteken ved {lov}, men gjeld ikkje enno. Iverksetjing: {naar}.',
+    tekstUtenDato: 'Endringa i {hva} er vedteken ved {lov}, men gjeld ikkje enno ({naar}).',
     teksten: 'Teksten i Regelverk blir endra når endringa gjeld.',
     ikkeSatt: 'Dato ikkje sett',
     udatert: 'Vedteke, ikkje sett i kraft enno',

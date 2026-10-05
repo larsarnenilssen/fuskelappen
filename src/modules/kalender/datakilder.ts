@@ -4,7 +4,7 @@ import { hentTekst, type Malform } from '../../core/i18n/tekst.ts';
 import type { Flerspraak } from '../../core/innhold/skjema.ts';
 import { datoLang } from './visning.ts';
 import type { Kalenderoppforing } from './beregning/kalender.ts';
-import type { Inntaksdatoer, Inntaksfelt, KommendeEndringer, Skoleruter } from './datatyper.ts';
+import type { Inntaksdatoer, Inntaksfelt, KommendeEndringer, Skoleruter, Skolerutetype } from './datatyper.ts';
 
 /** Teksten på begge målformene. */
 function begge(lag: (m: Malform) => string): Flerspraak {
@@ -17,6 +17,23 @@ function escape(tekst: string): string {
 
 const lovdataUrl = (refid: string) => `https://lovdata.no/${refid}`;
 
+/** Helligdagene slik de står i skolerutene. Navnet fra forskriften brukes som tittel. */
+const HELLIGDAGER = /(kristi himmelfartsdag|grunnlovsdag(?:en)?|andre pinsedag|andre påskedag|skjærtorsdag|langfredag|arbeidernes dag|offentle(?:g|ig) hø(?:g|y)tidsdag)/i;
+
+/** Tittelen på en hendelse i skoleruta: navnet på typen, eller navnet på helligdagen. «Annet» får en tittel når det er siste skoledag før jul eller påske. */
+function skolerutetittel(type: string, tekst: string): Flerspraak {
+  if (type === 'helligdag') {
+    const navn = HELLIGDAGER.exec(tekst)?.[1];
+    if (navn) return { nb: navn.charAt(0).toUpperCase() + navn.slice(1), nn: navn.charAt(0).toUpperCase() + navn.slice(1) };
+  }
+  if (type === 'annet' && /siste\s+sk[uo]ledag/i.test(tekst)) {
+    if (/jul/i.test(tekst)) return begge((m) => hentTekst(m, 'kalender.skolerute.sisteForJul'));
+    if (/påske/i.test(tekst)) return begge((m) => hentTekst(m, 'kalender.skolerute.sisteForPaske'));
+  }
+  if (type === 'annet') return { nb: tekst, nn: tekst };
+  return begge((m) => hentTekst(m, `kalender.skolerute.typer.${type as Exclude<Skolerutetype, 'annet'>}`));
+}
+
 /**
  * Skoleruta i fylket som oppføringer. Bare når fylket er valgt. Teksten fra forskriften står uendret, merket med
  * målformen, under kortets egen tekst.
@@ -26,7 +43,7 @@ export function skoleruteOppforinger(data: Skoleruter | null, fylke: string | nu
   if (!f || !fylke) return [];
   return f.hendelser.map((h, i) => {
     const dok = f.dokumenter.find((d) => d.id === h.dokument);
-    const tittel = h.type === 'annet' ? { nb: h.tekst, nn: h.tekst } : begge((m) => hentTekst(m, `kalender.skolerute.typer.${h.type}`));
+    const tittel = skolerutetittel(h.type, h.tekst);
     return {
       id: `skolerute-${fylke}-${h.fra}-${h.type}-${i}`,
       tittel,

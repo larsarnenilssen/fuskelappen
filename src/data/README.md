@@ -14,6 +14,7 @@ av skriptene i `scripts/` (kildesjekken, avgjørelse 018) og endres bare av dem.
 | `ndla.ts` | NDLA | fagene på NDLA per fagkode | `lastNdla` |
 | `vigo.ts` | VIGO Kodeverksbase | fagrelasjoner (med vurderingen i fagene og avvikene fra Grep), fagmerknader og vitnemålsmerknader | `lastFagrelasjoner`, `lastMerknader` |
 | `eksamen.ts` | udir.no og fylkenes sider | eksamensdatoene, hentet i januar og august (avgjørelse 059) | `lastEksamensdatoer` |
+| `kalender.ts` | Lovdata | skoleruta fra fylkenes forskrifter og vedtatte endringer i regelverket, til kalenderen (avgjørelse 066) | `lastSkoleruter`, `lastKommende` |
 | `skolear.ts` | – | skoleåret og valget av fag- og timefordeling etter dato | `iDag`, `skolearFor`, `velgFordeling`, `fordelingsfil` |
 
 Det som regnes ut når appen bygges (Vite-pluginene i `scripts/vite/plugins.ts`), leser de samme filene med
