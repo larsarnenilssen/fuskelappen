@@ -6,6 +6,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
   arbeidstid: ['arbeidstid', 'kalkulator-fag'],
   begreper: ['kodelister', 'modul-og-sok'],
   fag: ['fag', 'kalkulator-fag'],
+  fylker: ['fylker'],
   inntak: ['inntak'],
   laereplanverket: ['laereplanverket'],
   lov: ['regelverk'],
@@ -18,7 +19,7 @@ const MODULSPEKER: Record<string, readonly string[]> = {
 const DATAMODULER: Record<string, readonly string[]> = {
   grep: ['fag', 'opplaeringslop', 'laereplanverket', 'arbeidstid'],
   fagfordeling: ['fag', 'arbeidstid'],
-  lovdata: ['lov'],
+  lovdata: ['lov', 'fylker'],
   vigo: ['begreper', 'fag', 'opplaeringslop', 'vurdering'],
   utdanning: ['opplaeringslop'],
   skoler: ['opplaeringslop'],

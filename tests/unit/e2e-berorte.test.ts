@@ -12,7 +12,7 @@ describe('berørte ende-til-ende-tester', () => {
 
   it('strenger og data peker til modulene som bruker dem', () => {
     expect(velgTester(['src/strings/moduler/vurdering.nb.ts']).speker).toEqual(['vurdering']);
-    expect(velgTester(['data/lovdata/opplaeringsforskrifta.json']).speker).toEqual(['regelverk']);
+    expect(velgTester(['data/lovdata/opplaeringsforskrifta.json']).speker).toEqual(['fylker', 'regelverk']);
     expect(velgTester(['rules/sfs2213/2025.yaml']).speker).toEqual(['arbeidstid', 'kalkulator-fag']);
   });
 
