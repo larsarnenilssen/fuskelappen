@@ -10,7 +10,7 @@ import { useTekst, useTilstand } from '../../../app/tilstand.ts';
 import { Begrepstekst } from '../../../components/Begrepstekst.tsx';
 import { Bryter } from '../../../components/Bryter.tsx';
 import { Ikon } from '../../../components/Ikon.tsx';
-import { KortfotRader } from '../../../components/Kortfot.tsx';
+import { Kortfot } from '../../../components/Kortfot.tsx';
 import { Sidetopp } from '../../../components/Sidetopp.tsx';
 import { formaterDato, type Malform } from '../../../core/i18n/tekst.ts';
 import { FRISTGRUPPER, KALENDERTEMAER, type Fristgruppe, type Kalendertema } from '../../../core/innhold/kalendertema.ts';
@@ -108,7 +108,11 @@ export default function Kalender({ sporring }: SideProps) {
   const fylkenavn = fylke ? (fylkesnavn(fylke) ?? fylke) : null;
   const ukjentEksamen = valg.visning === 'skolear' && data !== null && !harEksamensdatoer(data, skolear);
 
-  const filtertekst = [valg.tema ? t(`kalender.temaer.${valg.tema}`) : t('kalender.filter.alleTemaer'), valg.gruppe ? t(`kalender.grupper.${valg.gruppe}`).toLowerCase() : null].filter(Boolean).join(', ');
+  const valgtekst = [
+    valg.visning === 'rullende' ? t('kalender.visning.rullende') : t('kalender.visning.skolearAar', { aar: `${skolear}–${skolear + 1}` }),
+    valg.tema ? t(`kalender.temaer.${valg.tema}`) : t('kalender.filter.alleTemaer'),
+    valg.gruppe ? t(`kalender.grupper.${valg.gruppe}`) : t('kalender.filter.alleGrupper'),
+  ].join(' · ');
   const antall = (n: number) => (n === 0 ? t('kalender.ingen') : n === 1 ? t('kalender.enDato') : t('kalender.flereDatoer', { antall: n }));
 
   return (
@@ -118,35 +122,37 @@ export default function Kalender({ sporring }: SideProps) {
         <Begrepstekst tekst={t('kalender.innledning')} />
       </p>
 
-      <div class="kal-visning">
-        <Bryter
-          legend={t('kalender.visning.etikett')}
-          skjultLegend
-          kompakt
-          verdi={valg.visning}
-          valg={[
-            { verdi: 'rullende', tekst: t('kalender.visning.rullende'), tekstKort: t('kalender.visning.rullendeKort') },
-            { verdi: 'skolear', tekst: t('kalender.visning.skolear') },
-          ]}
-          onEndring={(v) => endre({ visning: v })}
-        />
-        {valg.visning === 'skolear' && (
-          <div class="sokefilter kal-skolear" role="group" aria-label={t('kalender.skolearEtikett')}>
-            {[iAar, iAar + 1].map((s) => (
-              <button key={s} type="button" class="sokefilter-valg" aria-pressed={skolear === s} onClick={() => endre({ aar: s === iAar ? null : s })}>
-                {s}–{s + 1}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-
+      {/* Visningen, skoleåret og filtrene står i én boks som er lukket fra start. Overskriften viser alle valgene, så
+          brukeren ser hva som er aktivt uten å åpne den, og kalenderen begynner høyt oppe på siden (eier 05.10.2026). */}
       <details class="veiviser-kilder kal-filter">
         <summary class="forklaring-knapp">
           <Ikon navn="filter" />
-          <span>{t('kalender.filter.vis', { valg: filtertekst })}</span>
+          <span class="kal-valgt">{valgtekst}</span>
           <Ikon navn="ned" class="forklaring-pil" />
         </summary>
+        <p class="liten-overskrift">{t('kalender.visning.etikett')}</p>
+        <div class="kal-visning">
+          <Bryter
+            legend={t('kalender.visning.etikett')}
+            skjultLegend
+            kompakt
+            verdi={valg.visning}
+            valg={[
+              { verdi: 'rullende', tekst: t('kalender.visning.rullende'), tekstKort: t('kalender.visning.rullendeKort') },
+              { verdi: 'skolear', tekst: t('kalender.visning.skolear') },
+            ]}
+            onEndring={(v) => endre({ visning: v })}
+          />
+          {valg.visning === 'skolear' && (
+            <div class="sokefilter kal-skolear" role="group" aria-label={t('kalender.skolearEtikett')}>
+              {[iAar, iAar + 1].map((s) => (
+                <button key={s} type="button" class="sokefilter-valg" aria-pressed={skolear === s} onClick={() => endre({ aar: s === iAar ? null : s })}>
+                  {s}–{s + 1}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
         <p class="liten-overskrift" id="kal-filter-tema">
           {t('kalender.filter.tema')}
         </p>
@@ -174,7 +180,7 @@ export default function Kalender({ sporring }: SideProps) {
       ) : (
         <>
           <section class="frist-aar" aria-labelledby="kal-aaret">
-            <h2 id="kal-aaret" class="liten-overskrift">
+            <h2 id="kal-aaret" class="skjult-visuelt">
               {valg.visning === 'rullende' ? t('kalender.aaretRullende') : t('kalender.aaretSkolear', { aar: `${skolear}–${skolear + 1}` })}
             </h2>
             <ol class="frist-stripe">
@@ -221,9 +227,13 @@ export default function Kalender({ sporring }: SideProps) {
 
           {ukjentEksamen && <p class="kal-merknad">{t('kalender.ikkeKjent', { aar: `${skolear}–${skolear + 1}` })}</p>}
 
+          {/* Kort merknad på én linje om skoleruta, så tidslinjen kommer raskt (eier 05.10.2026). */}
           {skolerute && fylkenavn && (
-            <p class="kal-merknad">
-              {t('kalender.skolerute.merknad', { fylke: fylkenavn })} {folgerVertskommunen(alt?.skolerute ?? null, fylke) && t('kalender.skolerute.vertskommune')}
+            <p class="kal-notis">
+              <Ikon navn="skole" class="ikon-liten" />
+              <span>
+                {t('kalender.skolerute.merknad', { fylke: fylkenavn })} {folgerVertskommunen(alt?.skolerute ?? null, fylke) && t('kalender.skolerute.vertskommune')}
+              </span>
             </p>
           )}
           {valg.tema === 'skolerute' && fylkenavn && !harSkolerute(alt?.skolerute ?? null, fylke) && <p class="kal-merknad">{t('kalender.skolerute.ingen', { fylke: fylkenavn })}</p>}
@@ -396,7 +406,6 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
         {o.tekst && <div class="brodtekst" dangerouslySetInnerHTML={{ __html: o.tekst[malform] }} />}
         {(o.lenker.length > 0 || ferdige.length > 0) && (
           <>
-            <p class="liten-overskrift">{t('kalender.lesMer')}</p>
             {lenker === null ? (
               <p class="liten dempet">{t('kalender.lasterLenker')}</p>
             ) : (
@@ -424,9 +433,7 @@ function Kort({ oppforing: o, tid, dato = null }: { oppforing: Kalenderoppforing
             </a>
           </p>
         )}
-        <div class="kal-fot">
-          <KortfotRader paragrafer={[...o.paragrafer]} kilder={[...o.kilder]} />
-        </div>
+        <Kortfot paragrafer={[...o.paragrafer]} kilder={[...o.kilder]} />
       </div>
     </details>
   );

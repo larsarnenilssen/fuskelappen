@@ -7022,7 +7022,7 @@ a.knapp {
   flex-wrap: wrap;
   align-items: center;
   gap: var(--rom-2) var(--rom-3);
-  margin: 0 0 var(--rom-3);
+  margin: 0 var(--rom-4) var(--rom-2);
 }
 
 .kal-visning .bryter,
@@ -7031,7 +7031,11 @@ a.knapp {
 }
 
 .kal-filter {
-  margin: 0 0 var(--rom-4);
+  margin: 0 0 var(--rom-3);
+}
+
+.kal-valgt {
+  font-weight: 600;
 }
 
 .kal-filter > summary {
@@ -7052,12 +7056,16 @@ a.knapp {
   margin: 0 var(--rom-4) var(--rom-3);
 }
 
+.kal-filter .kal-visning .sokefilter {
+  margin: 0;
+}
+
 .kal-tegn {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--rom-1) var(--rom-3);
-  margin: var(--rom-2) 0 0;
-  font-size: var(--str-s);
+  gap: var(--rom-1) var(--rom-2);
+  margin: var(--rom-1) 0 0;
+  font-size: var(--str-xs);
   color: var(--farge-tekst-dempet);
 }
 
@@ -7069,6 +7077,32 @@ a.knapp {
 
 .kal-stripe-passert {
   opacity: 0.55;
+}
+
+/* Lavere celler i stripen, så tidslinjen kommer raskere på mobil. */
+.kalender .frist-stripe-celle {
+  min-height: 2.5rem;
+  padding: var(--rom-1) 0;
+}
+
+.kal-notis {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--rom-2);
+  margin: var(--rom-3) 0 0;
+  font-size: var(--str-xs);
+  color: var(--farge-tekst-dempet);
+}
+
+.kal-notis > .ikon {
+  flex: none;
+  margin-top: 0.1rem;
+}
+
+.kal-innhold blockquote {
+  margin: 0 0 var(--rom-2);
+  padding-left: var(--rom-3);
+  border-left: 3px solid var(--farge-kant);
 }
 
 .kal-merknad {
@@ -7310,9 +7344,19 @@ a.knapp {
 }
 
 .kal-innhold {
-  margin: 0 var(--rom-3) var(--rom-2);
+  margin: 0 var(--rom-3) var(--rom-3);
   padding-top: var(--rom-2);
   border-top: var(--strek) solid var(--farge-kant);
+}
+
+/* Regelverket og kildene nederst i kortet, fra kant til kant som i de andre kortene (Kortfot). */
+.kal-kort .kortfot {
+  margin-inline: calc(-1 * var(--rom-3));
+}
+
+.kal-kort .kortfot .forklaring-knapp,
+.kal-kort .kortfot .paragraflenker {
+  padding-inline: var(--rom-3);
 }
 
 .kal-innhold .liten-overskrift {
@@ -7381,9 +7425,9 @@ a.knapp {
 .kal-neste .kal-neste-dato {
   display: flex;
   flex: none;
-  flex-direction: column;
-  align-items: center;
-  width: 3.8rem;
+  align-items: baseline;
+  gap: 0.25rem;
+  width: 5.6rem;
   font-weight: 700;
   line-height: 1.1;
   white-space: nowrap;
@@ -7397,7 +7441,18 @@ a.knapp {
   color: var(--farge-tekst-dempet);
 }
 
+/* «Hele kalenderen» er en lenke videre, ikke en dato: blå flate og lenkefarge, som knappene til andre sider. */
+.kal-neste .kal-neste-alle {
+  background: var(--farge-flate-2);
+  color: var(--farge-lenke);
+}
+
+.kal-neste-alle .listelenke-tittel {
+  color: var(--farge-lenke);
+}
+
 .kal-neste-alle .kal-neste-dato {
+  justify-content: center;
   color: var(--farge-lenke);
 }
 

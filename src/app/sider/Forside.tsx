@@ -355,6 +355,7 @@ function NesteDatoer() {
           return (
             <li key={p.nokkel}>
               <a class="listelenke" href={`#${kalenderRute}`}>
+                {/* Datoen på én linje: «5.–9. okt» (eier 05.10.2026). */}
                 <span class="kal-neste-dato" aria-hidden="true">
                   {til && fra.slice(0, 7) === til.slice(0, 7) ? `${Number(fra.slice(8, 10))}.–${Number(til.slice(8, 10))}.` : `${Number(fra.slice(8, 10))}.`}
                   <small>{kortManed(Number(fra.slice(5, 7)), malform)}</small>

@@ -1,12 +1,12 @@
 // UI-tekstar for kalenderen (fase 6, pakke 5, avgjerd 066) på nynorsk. Same nøklar som kalender.nb.ts.
 export const kalenderNn = {
   tittel: 'Kalender',
-  innledning: 'Fristane og datoane frå heile appen, med skuleruta i fylket ditt og endringar i regelverket som kjem. Trykk på ein dato for å lese meir.',
-  visning: { etikett: 'Vis', rullende: 'Neste tolv månader', rullendeKort: 'Tolv månader', skolear: 'Skuleåret' },
+  innledning: 'Fristane og datoane frå heile appen. Trykk på ein dato for å lese meir.',
+  visning: { etikett: 'Vis', rullende: 'Neste tolv månader', rullendeKort: 'Tolv månader', skolear: 'Skuleåret', skolearAar: 'Skuleåret {aar}' },
   skolearEtikett: 'Vel skuleår',
   filter: {
-    vis: 'Filter: {valg}',
-    alleTemaer: 'alle tema',
+    alleTemaer: 'Alle tema',
+    alleGrupper: 'Alle grupper',
     tema: 'Tema',
     hvem: 'Kven det gjeld',
     alle: 'Alle',
@@ -26,7 +26,6 @@ export const kalenderNn = {
   heleAretUnder: 'Fristane her har ingen dato. Dei blir rekna frå noko anna, eller gjeld heile tida.',
   ikkeKjent: 'Datoane for eksamen i {aar} er ikkje kjende enno. Eksamen står med månaden.',
   tomt: 'Ingen datoar for dette valet.',
-  lesMer: 'Les meir i appen',
   lasterLenker: 'Hentar lenkjene …',
   kilde: 'Eksamensdatoane frå Udir og fylkeskommunane blir henta kvar veke. Datoen frå Udir gjeld når kjeldene er usamde.',
   hentet: 'Henta {dato}.',
@@ -38,7 +37,7 @@ export const kalenderNn = {
   heleKalenderen: 'Heile kalenderen',
   ingenNeste: 'Ingen datoar dei neste tolv månadene.',
   skolerute: {
-    merknad: 'Skuleruta for {fylke} er frå forskrifta til fylket. Datoane ved den enkelte skulen kan avvike.',
+    merknad: 'Skuleruta er frå forskrifta for {fylke}. Skulen din kan ha andre datoar.',
     vertskommune: 'Forskrifta seier at skulane som hovudregel følgjer skuleruta til vertskommunen.',
     ingen: 'Appen har ikkje skuleruta for {fylke}. Ho står på sidene til fylkeskommunen.',
     fraForskriften: 'Frå skuleruta for {skolear}:',
