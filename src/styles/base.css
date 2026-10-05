@@ -7038,7 +7038,8 @@ a.knapp {
 /* Innholdet i filterboksen: tre grupper med overskrift, samme venstrekant og like avstander. */
 .kal-filter-innhold {
   display: grid;
-  gap: var(--rom-4);
+  /* Tydelig større enn avstanden mellom radene med knapper, og den samme mellom alle gruppene (eier 05.10.2026). */
+  gap: var(--rom-5);
   padding: var(--rom-2) var(--rom-4) var(--rom-4);
 }
 

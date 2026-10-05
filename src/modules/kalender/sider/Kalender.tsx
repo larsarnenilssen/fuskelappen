@@ -81,6 +81,11 @@ export default function Kalender({ sporring }: SideProps) {
   const frister = alt?.frister ?? null;
   const data = alt?.eksamen ?? null;
 
+  // Åpnes kalenderen med en ny adresse mens den allerede vises (f.eks. en lenke til en filtrert kalender), er det samme
+  // side, så valgene leses fra adressen på nytt.
+  const fraAdressen = sporring.toString();
+  useEffect(() => settValg(lesValg(new URLSearchParams(fraAdressen))), [fraAdressen]);
+
   const endre = (ny: Partial<Kalendervalg>) => {
     const neste = { ...valg, ...ny };
     settValg(neste);
