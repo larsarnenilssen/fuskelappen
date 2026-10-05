@@ -34,6 +34,10 @@ describe('Lovtidend avdeling II', () => {
     expect(kunngjoringstype('Forskrift om endring i forskrift om kommunale bostøtter, Oslo kommune, Oslo')).toBe('endring');
     expect(kunngjoringstype('Ikrafttredelse av forskrift 10. juni 2026 nr. 1971 om endring i forskrift om kommunale bostøtter')).toBe('endring');
     expect(kunngjoringstype('Forskrift om skoleregler for videregående skoler, Agder fylkeskommune')).toBe('ny');
+    // Titler fra Lovtidend 2026 som skriver det på andre måter.
+    expect(kunngjoringstype('Forskrift om opphevelse av forskrift om lokale tilleggsreglar for Olsvikåsen videregående skole, Vestland')).toBe('oppheving');
+    expect(kunngjoringstype('Forskrift om endringar i forskrift om skulereglar, Vestland fylkeskommune')).toBe('endring');
+    expect(kunngjoringstype('Forskrift om endringer av forskrift om inntak, Agder fylkeskommune')).toBe('endring');
   });
 
   it('finner forskriften en oppheving eller endring gjelder, og når den tar til å gjelde', () => {
@@ -112,5 +116,23 @@ describe('oppdatering fra Lovtidend', () => {
     const svar = await oppdaterLokale(forrige, { full: false, fylker: [{ nummer: '46', navn: 'Vestland' }], skoler: [], titler, idag: '2026-10-01', pauseMs: 0 });
     expect(svar.lokale.vurdert).toHaveLength(1);
     expect(svar.lokale.opphevinger).toEqual({ 'forskrift/2024-06-18-1455': '2026-10-02' });
+  });
+
+  it('leser en kunngjøring som ikke finnes blant de lokale forskriftene, fra Lovtidend, uten å stoppe', async () => {
+    // Tittelen sier ikke at forskriften oppheves, så den ser ny ut. Siden i Lovtidend viser at den er en oppheving.
+    const side = (navn: string) => readFileSync(`tests/fixtures/lovdata/${navn}.html`, 'utf8');
+    const lovtidend = side('lovtidend-side').replaceAll('Forskrift om oppheving av forskrift om skulereglar, Vestland fylkeskommune', 'Forskrift om skulereglar, Vestland fylkeskommune');
+    const hentet: string[] = [];
+    vi.stubGlobal('fetch', async (url: string) => {
+      const u = decodeURIComponent(url);
+      hentet.push(u);
+      if (u.includes('/dokument/LF/')) return new Response('', { status: 404 });
+      const html = u.endsWith('avdeling=LTII') ? side('lovtidend-meny') : u.includes('15.00') ? lovtidend : u.includes('/dokument/LTII/') ? side('ltii-oppheving') : '<html></html>';
+      return new Response(html, { status: 200 });
+    });
+    const svar = await oppdaterLokale(forrige, { full: false, fylker: [{ nummer: '46', navn: 'Vestland' }], skoler: [], titler, idag: '2026-10-05', pauseMs: 0 });
+    expect(hentet).toContain('https://lovdata.no/dokument/LF/forskrift/2026-09-29-1985');
+    expect(hentet).toContain('https://lovdata.no/dokument/LTII/forskrift/2026-09-29-1985');
+    expect(svar.lokale.vurdert).toEqual([]);
   });
 });

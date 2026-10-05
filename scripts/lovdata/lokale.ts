@@ -162,14 +162,19 @@ export function velgForskrifter(vurdert: readonly Vurdering[], fylker: readonly 
 let pauseMs = PAUSE_MS;
 const pause = () => new Promise((r) => setTimeout(r, pauseMs));
 
+/** Siden finnes ikke (404 eller 410). Prøves ikke igjen. */
+class IkkeFunnet extends Error {}
+
 async function hentTekst(url: string): Promise<string> {
   let feil: unknown;
   for (let forsok = 1; forsok <= 3; forsok++) {
     try {
       const svar = await fetch(url, { headers: { 'User-Agent': USER_AGENT, Accept: 'text/html' }, signal: AbortSignal.timeout(60_000) });
+      if (svar.status === 404 || svar.status === 410) throw new IkkeFunnet(`${url} svarte ${svar.status}`);
       if (!svar.ok) throw new Error(`${url} svarte ${svar.status} ${svar.statusText}`);
       return await svar.text();
     } catch (e) {
+      if (e instanceof IkkeFunnet) throw e;
       feil = e;
       await new Promise((r) => setTimeout(r, 10_000 * forsok));
     }
@@ -208,6 +213,7 @@ export function vurder(refid: string, meta: Metadata, idag: string): Vurdering {
 /**
  * Nye kandidater fra registeret eller Lovtidend: siden hentes én gang, og metadataene lagres. En ny forskrift som
  * endrer en forskrift appen har (metaField_endrer), erstatter den: den gamle fjernes når den nye tar til å gjelde.
+ * Gir forskriftene som ikke finnes blant de lokale forskriftene hos Lovdata (f.eks. en oppheving).
  */
 async function vurderNye(
   refider: Iterable<string>,
@@ -216,21 +222,36 @@ async function vurderNye(
   opphevinger: Map<string, string>,
   rapport: string[],
   valg: { fylker: readonly Fylke[]; skoler: readonly Skole[]; idag: string },
-) {
+): Promise<string[]> {
+  const ikkeFunnet: string[] = [];
+  const erstatter: { refid: string; endrer: string[]; fra: string }[] = [];
   for (const refid of refider) {
     if (tidligere.has(refid)) continue;
-    const html = await hentTekst(`${LOVDATA}/dokument/LF/${refid}`);
-    await pause();
+    let html: string;
+    try {
+      html = await hentTekst(`${LOVDATA}/dokument/LF/${refid}`);
+    } catch (e) {
+      if (!(e instanceof IkkeFunnet)) throw e;
+      ikkeFunnet.push(refid);
+      continue;
+    } finally {
+      await pause();
+    }
     sider.set(refid, html);
     const meta = lesMetadata(html);
     const v = vurder(refid, meta, valg.idag);
     tidligere.set(refid, v);
     rapport.push(`Ny: ${v.tittel} (${klassifiserVurdering(v, valg.fylker, valg.skoler).type ?? 'ikke tatt med'})`);
-    for (const e of meta.endrer.filter((x) => tidligere.has(x) && x !== refid)) {
-      opphevinger.set(e, meta.iKraft ?? valg.idag);
-      rapport.push(`Erstattes fra ${meta.iKraft ?? valg.idag}: ${tidligere.get(e)?.tittel}`);
+    erstatter.push({ refid, endrer: meta.endrer, fra: meta.iKraft ?? valg.idag });
+  }
+  // Etter at alle er lest, så rekkefølgen ikke betyr noe.
+  for (const n of erstatter) {
+    for (const e of n.endrer.filter((x) => tidligere.has(x) && x !== n.refid)) {
+      opphevinger.set(e, n.fra);
+      rapport.push(`Erstattes fra ${n.fra}: ${tidligere.get(e)?.tittel}`);
     }
   }
+  return ikkeFunnet;
 }
 
 /** Leser registeret fylke for fylke: hele, eller bare årene i `aar`. */
@@ -298,7 +319,7 @@ export async function oppdaterLokale(
     if (meny[0]) lovtidend = tidspunkt(meny[0]);
     const treff = await lesRegisterPerFylke(fylker, null);
     const kandidater = new Set(treff.filter((t) => erKandidat(t.tittel)).map((t) => t.refid));
-    await vurderNye(kandidater, tidligere, sider, opphevinger, rapport, { fylker, skoler, idag });
+    for (const refid of await vurderNye(kandidater, tidligere, sider, opphevinger, rapport, { fylker, skoler, idag })) rapport.push(`Står i registeret, men siden finnes ikke: ${refid}`);
     for (const refid of [...tidligere.keys()]) {
       if (kandidater.has(refid)) continue;
       const finnes = await fetch(`${LOVDATA}/dokument/LF/${refid}`, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(60_000) })
@@ -315,7 +336,7 @@ export async function oppdaterLokale(
     const lt = await lesLovtidend(fra);
     lovtidend = lt.nyeste;
     const relevante = lt.kunngjoringer.filter((k) => erKandidat(k.tittel));
-    await vurderNye(
+    const ikkeFunnet = await vurderNye(
       relevante.filter((k) => kunngjoringstype(k.tittel) === 'ny').map((k) => k.refid),
       tidligere,
       sider,
@@ -323,11 +344,22 @@ export async function oppdaterLokale(
       rapport,
       { fylker, skoler, idag },
     );
-    for (const k of relevante.filter((x) => kunngjoringstype(x.tittel) !== 'ny')) {
-      const meta = lesMetadata(await hentTekst(`${LOVDATA}/dokument/LTII/${k.refid}`));
-      await pause();
+    // Endringer og opphevinger, og «nye» som ikke er blant de lokale forskriftene (en tittel som ikke sier hva
+    // kunngjøringen gjør): «Endrer» på siden i Lovtidend viser hvilke forskrifter de gjelder.
+    for (const k of relevante.filter((x) => kunngjoringstype(x.tittel) !== 'ny' || ikkeFunnet.includes(x.refid))) {
+      let meta: ReturnType<typeof lesMetadata>;
+      try {
+        meta = lesMetadata(await hentTekst(`${LOVDATA}/dokument/LTII/${k.refid}`));
+      } catch (e) {
+        if (!(e instanceof IkkeFunnet)) throw e;
+        rapport.push(`Fant ikke kunngjøringen i Lovtidend: ${k.tittel} (${k.refid})`);
+        continue;
+      } finally {
+        await pause();
+      }
+      const oppheving = kunngjoringstype(k.tittel) === 'oppheving' || /opphev/i.test(meta.tittel);
       for (const e of meta.endrer.filter((x) => tidligere.has(x))) {
-        if (kunngjoringstype(k.tittel) === 'oppheving') {
+        if (oppheving) {
           opphevinger.set(e, meta.iKraft ?? idag);
           rapport.push(`Oppheves fra ${meta.iKraft ?? idag}: ${tidligere.get(e)?.tittel}`);
         } else {
@@ -339,7 +371,8 @@ export async function oppdaterLokale(
     if (lt.hull) {
       rapport.push('Lovtidend dekket ikke hele perioden (årsskifte eller mange kunngjøringer samtidig). Registeret for inneværende og forrige år er lest i tillegg.');
       const treff = await lesRegisterPerFylke(fylker, [aar, aar - 1]);
-      await vurderNye(treff.filter((t) => erKandidat(t.tittel)).map((t) => t.refid), tidligere, sider, opphevinger, rapport, { fylker, skoler, idag });
+      const mangler = await vurderNye(treff.filter((t) => erKandidat(t.tittel)).map((t) => t.refid), tidligere, sider, opphevinger, rapport, { fylker, skoler, idag });
+      for (const refid of mangler) rapport.push(`Står i registeret, men siden finnes ikke: ${refid}`);
     }
     console.log(`Lokale forskrifter: ${lt.kunngjoringer.length} kunngjøringer i Lovtidend avdeling II siden ${fra}, ${relevante.length} for videregående, ${sider.size} nye.`);
   }

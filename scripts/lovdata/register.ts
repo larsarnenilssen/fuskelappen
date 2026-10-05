@@ -72,8 +72,8 @@ export function lesLovtidendside(html: string): { treff: Kunngjoring[]; neste: b
 /** Hva en kunngjøring i avdeling II gjør med forskriftene den endrer, ut fra tittelen. */
 export function kunngjoringstype(tittel: string): 'ny' | 'endring' | 'oppheving' {
   const t = tittel.toLowerCase();
-  if (/^forskrift om oppheving|^oppheving/.test(t)) return 'oppheving';
-  if (/endring i |^ikrafttredelse|^ikraftsetjing|^ikraftsetting/.test(t)) return 'endring';
+  if (/^(forskrift om )?(oppheving|opphevelse|oppheve|opphevning)\b/.test(t)) return 'oppheving';
+  if (/\bendring(ar|er)? (i|av|til)\b|^ikrafttredelse|^ikraftsetjing|^ikraftsetting/.test(t)) return 'endring';
   return 'ny';
 }
 
