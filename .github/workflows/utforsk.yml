@@ -1,6 +1,6 @@
-# Midlertidig (05.10.2026): undersøker Norsk Lovtidend avdeling II. Sjekker at hver lokale forskrift i registeret
-# (lokale.json fra forrige kjøring på grenen utforsk-data) også er kunngjort i Lovtidend, og henter eksempelsider.
-# Resultatet legges på grenen utforsk-lovtidend. Slettes når fylkesarbeidet er bygget.
+# Midlertidig (05.10.2026): prøver hentingen av lokale forskrifter fra grenen claude/fylkene i tre runder: hele
+# registeret, så Lovtidend avdeling II siden 1. juni 2026, så siden 1. desember 2025 (årsskiftet, med registeret for
+# årene i tillegg). Resultatet legges på grenen utforsk-data. Slettes når fylkesarbeidet er bygget.
 name: Utforsk
 on:
   push:
@@ -10,34 +10,37 @@ permissions:
 jobs:
   hent:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
-      - run: |
-          mkdir -p ut
-          ua='Jukselappen-kildesjekk/0.1 (+https://github.com/larsarnenilssen/jukselappen)'
-          hent() { curl -sSL -A "$ua" --max-time 60 -o "ut/$1" -w "$1 %{http_code} %{size_download} %{url_effective}\n" "$2" >> ut/logg.txt || echo "$1 feilet" >> ut/logg.txt; sleep 1; }
-          hent lovtidend-0.html 'https://lovdata.no/register/lovtidend'
-          hent lovtidend-20.html 'https://lovdata.no/register/lovtidend?offset=20'
-          hent lovtidend-avd2.html 'https://lovdata.no/register/lovtidend?avdeling=avdeling2'
-          hent ltii-oppheving.html 'https://lovdata.no/dokument/LTII/forskrift/2026-09-29-1985'
-          hent ltii-endring.html 'https://lovdata.no/dokument/LTII/forskrift/2026-06-10-1971'
-          hent ltii-ikraft.html 'https://lovdata.no/dokument/LTII/forskrift/2026-09-03-1972'
-          hent ltii-ny.html 'https://lovdata.no/dokument/LTII/forskrift/2026-10-01-1986'
-          for ts in '02.10.2026 kl. 15.00' '30.09.2026 kl. 14.25' '29.09.2026 kl. 15.45' '01.10.2026 kl. 14.30'; do
-            q=$(python3 -c "import urllib.parse,sys;print(urllib.parse.quote(sys.argv[1]))" "$ts")
-            n=$(echo "$ts" | tr -cd '0-9')
-            hent "lt-$n.html" "https://lovdata.no/register/lovtidend?avdeling=LTII&kunngjortDato=$q"
-            hent "lt-$n-20.html" "https://lovdata.no/register/lovtidend?avdeling=LTII&kunngjortDato=$q&offset=20"
-          done
-          hent lt-avd2-20.html 'https://lovdata.no/register/lovtidend?avdeling=LTII&offset=20'
-          hent lt-avd2.html 'https://lovdata.no/register/lovtidend?avdeling=LTII'
+        with:
+          ref: claude/fylkene
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Hele registeret
+        run: |
+          mkdir -p ut/a ut/b ut/c
+          (time npm run hent:lovdata -- --alle) > ut/a/logg.txt 2>&1 || echo "feilet" >> ut/a/logg.txt
+          cp -r data/lovdata ut/a/ ; cp .generert/lovdata-endringer.json ut/a/ || true
+      - name: Lovtidend siden 1. juni
+        run: |
+          node -e "const f='data/lovdata/lokale.json';const fs=require('fs');const d=JSON.parse(fs.readFileSync(f));d.lovtidend='2026-06-01T00:00';fs.writeFileSync(f,JSON.stringify(d,null,1)+'\n')"
+          (time npm run hent:lovdata) > ut/b/logg.txt 2>&1 || echo "feilet" >> ut/b/logg.txt
+          cp data/lovdata/lokale.json ut/b/ ; cp .generert/lovdata-endringer.json ut/b/ || true
+      - name: Lovtidend siden 1. desember 2025
+        run: |
+          node -e "const f='data/lovdata/lokale.json';const fs=require('fs');const d=JSON.parse(fs.readFileSync(f));d.lovtidend='2025-12-01T00:00';fs.writeFileSync(f,JSON.stringify(d,null,1)+'\n')"
+          (time npm run hent:lovdata) > ut/c/logg.txt 2>&1 || echo "feilet" >> ut/c/logg.txt
+          cp data/lovdata/lokale.json ut/c/ ; cp .generert/lovdata-endringer.json ut/c/ || true
       - if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           export GIT_INDEX_FILE=$(mktemp -u)
-          (cd ut && for f in *; do git update-index --add --cacheinfo 100644,$(git hash-object -w "$f"),"$f"; done)
+          (cd ut && find . -type f | sed 's#^\./##' | while read f; do git update-index --add --cacheinfo 100644,$(git hash-object -w "$f"),"$f"; done)
           tree=$(git write-tree)
-          commit=$(git commit-tree "$tree" -m "Utforsk Lovtidend $(date -u +%F)")
-          git push --force origin "$commit:refs/heads/utforsk-lovtidend"
+          commit=$(git commit-tree "$tree" -m "Utforsk $(date -u +%F)")
+          git push --force origin "$commit:refs/heads/utforsk-data"
