@@ -29,6 +29,54 @@ export function lesRegisterside(html: string): { treff: Registertreff[]; antall:
   return { treff, antall: antall ? Number(antall[1]) : null, neste: rot.querySelector('.pager .next a') !== null };
 }
 
+/**
+ * Norsk Lovtidend (https://lovdata.no/register/lovtidend): kunngjøringene, nyeste først, gruppert etter tidspunktet
+ * for kunngjøringen. Avdeling II er de lokale forskriftene (/dokument/LTII/…), også endringer og opphevinger, med
+ * forskriftene de endrer i «Endrer» (metaField_endrer). Lokale forskrifter skal kunngjøres her (sjekket 05.10.2026:
+ * alle 124 forskriftene i registeret som appen vurderte, er kunngjort i avdeling II).
+ */
+export interface Kunngjoring {
+  /** «forskrift/2026-09-29-1985». */
+  refid: string;
+  avdeling: 'LTI' | 'LTII';
+  tittel: string;
+}
+
+/** Tidspunktene for kunngjøringene i menyen på siden, nyeste først: «02.10.2026 kl. 15.00». */
+export function lesKunngjoringstidspunkter(html: string): string[] {
+  const rot = parse(html);
+  return rot
+    .querySelectorAll('select[name="kunngjortDato"] option')
+    .map((o) => o.text.replace(/\s+/g, ' ').trim())
+    .filter((t) => /^\d{2}\.\d{2}\.\d{4} kl\. \d{2}\.\d{2}$/.test(t));
+}
+
+/** «02.10.2026 kl. 15.00» → «2026-10-02T15:00», som kan sammenlignes som tekst. */
+export function tidspunkt(tekst: string): string {
+  const m = /(\d{2})\.(\d{2})\.(\d{4})(?:\s+kl\.\s+(\d{2})\.(\d{2}))?/.exec(tekst);
+  if (!m) throw new Error(`Ukjent tidspunkt: ${tekst}`);
+  return `${m[3]}-${m[2]}-${m[1]}T${m[4] ?? '00'}:${m[5] ?? '00'}`;
+}
+
+/** Én side med kunngjøringer: treffene og om det finnes en side til. */
+export function lesLovtidendside(html: string): { treff: Kunngjoring[]; neste: boolean } {
+  const rot = parse(html);
+  const treff = rot.querySelectorAll('article').flatMap((a) => {
+    const lenke = a.querySelector('h3 a');
+    const m = /\/dokument\/(LTII?)\/(forskrift\/\d{4}-\d{2}-\d{2}-\d+)/.exec(lenke?.getAttribute('href') ?? '');
+    return m && lenke ? [{ refid: m[2] as string, avdeling: m[1] as 'LTI' | 'LTII', tittel: lenke.text.replace(/\s+/g, ' ').trim() }] : [];
+  });
+  return { treff, neste: rot.querySelector('.pager .next a') !== null };
+}
+
+/** Hva en kunngjøring i avdeling II gjør med forskriftene den endrer, ut fra tittelen. */
+export function kunngjoringstype(tittel: string): 'ny' | 'endring' | 'oppheving' {
+  const t = tittel.toLowerCase();
+  if (/^forskrift om oppheving|^oppheving/.test(t)) return 'oppheving';
+  if (/endring i |^ikrafttredelse|^ikraftsetjing|^ikraftsetting/.test(t)) return 'endring';
+  return 'ny';
+}
+
 const VGS = /vidaregåande|videregående|vgs\b|gymnas/;
 
 /**
@@ -55,6 +103,10 @@ export interface Metadata {
   gjelderFor: string;
   /** Hjemlene som adresser hos Lovdata, f.eks. «lov/2023-06-09-30/§10-7». */
   hjemmel: string[];
+  /** Forskriftene en endring eller oppheving gjelder (metaField_endrer), som adresser hos Lovdata. */
+  endrer: string[];
+  /** Tidspunktet for kunngjøringen i Lovtidend, «2026-10-02T15:00». */
+  kunngjort: string | null;
   malform: 'nb' | 'nn';
 }
 
@@ -81,6 +133,8 @@ export function lesMetadata(html: string): Metadata {
     sistEndret: datoFra(tekst('endret')),
     gjelderFor: tekst('gjelder'),
     hjemmel: (felt('hjemmel')?.querySelectorAll('a') ?? []).map((a) => a.getAttribute('data-id') ?? '').filter(Boolean),
+    endrer: (felt('endrer')?.querySelectorAll('a') ?? []).map((a) => a.getAttribute('data-id') ?? '').filter(Boolean),
+    kunngjort: tekst('kunngjort') ? tidspunkt(tekst('kunngjort')) : null,
     malform: nynorsk ? 'nn' : 'nb',
   };
 }

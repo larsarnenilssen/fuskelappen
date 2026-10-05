@@ -6,7 +6,8 @@
 // - Lokale forskrifter finnes ikke i datasettene. Skoleregler, inntak og skolerute for alle fylker og skoler finnes i
 //   registeret hos Lovdata (scripts/lovdata/lokale.ts, avgjørelse 061). Hver forskrift hentes fra siden hos Lovdata,
 //   én side per forskrift, på omgang over 13 uker (intervall_uker), av hensyn til Lovdata (eier 02.10.2026). Mellom
-//   hentingene beholdes forrige henting. Nye forskrifter, og alle med --alle, hentes med en gang.
+//   hentingene beholdes forrige henting. Nye og endrede forskrifter, som Lovtidend avdeling II viser hver uke, og alle
+//   med --alle, hentes med en gang. Hele registeret leses én gang i året som kontroll.
 // - Hvert dokument leses med scripts/lovdata/les.ts og valideres. Feiler et dokument, beholdes forrige fil for det,
 //   og de andre hentes som vanlig. Skriptet avslutter da med feil, så kildesjekken sier fra.
 // - Endrede, nye og fjernede paragrafer lagres i .generert/lovdata-endringer.json, som kildesjekken tar med i
@@ -72,6 +73,9 @@ async function hentDatasett(url: string): Promise<string> {
   }
   throw feil;
 }
+
+/** Hele registeret over lokale forskrifter leses én gang i året, som kontroll av Lovtidend (avgjørelse 061). */
+const FULLT_REGISTER_DAGER = 365;
 
 /** Standard for intervall_uker: lokale forskrifter hentes i uke 13, 26, 39 og 52. */
 const INTERVALL_UKER = 13;
@@ -238,8 +242,8 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const register = lesFil(rot, join(rot, 'content/kilder.yaml')) as Kilderegister;
   const idag = new Date().toISOString().slice(0, 10);
 
-  // Registeret over lokale forskrifter: hele registeret første gang, med --alle og hver 13. uke, inneværende og
-  // forrige år hver 4. uke (avgjørelse 061).
+  // Lokale forskrifter (avgjørelse 061): hele registeret første gang, med --alle og når det er et år siden sist, ellers
+  // kunngjøringene i Lovtidend avdeling II siden forrige gang.
   const lokalefil = join(MAPPE, 'lokale.json');
   const forrigeLokale: Lokale | null = existsSync(lokalefil) ? lokaleSkjema.parse(JSON.parse(readFileSync(lokalefil, 'utf8'))) : null;
   const fylker = (lesFil(rot, join(rot, 'content/fylker.yaml')) as { fylker: Fylke[] }).fylker;
@@ -247,20 +251,20 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   let lokale = forrigeLokale;
   let sider = new Map<string, string>();
   const lokalrapport: string[] = [];
-  const fullRegister = !forrigeLokale || alle || uke % 13 === 0;
-  if (!fra && utvalg.lokale && (fullRegister || uke % 4 === 0 || process.argv.includes('--register'))) {
+  const full = !forrigeLokale?.fullstendig || alle || Date.parse(idag) - Date.parse(forrigeLokale.fullstendig) >= FULLT_REGISTER_DAGER * 86_400_000;
+  if (!fra && utvalg.lokale) {
     try {
-      const svar = await oppdaterLokale(forrigeLokale, { full: fullRegister, fylker, skoler, titler: utvalg.lokale.titler as Titler, idag });
+      const svar = await oppdaterLokale(forrigeLokale, { full, fylker, skoler, titler: utvalg.lokale.titler as Titler, idag });
       lokale = svar.lokale;
       sider = svar.sider;
       lokalrapport.push(...svar.rapport);
       mkdirSync(MAPPE, { recursive: true });
       writeFileSync(lokalefil, `${JSON.stringify(lokale, null, 1)}\n`);
     } catch (e) {
-      lokalrapport.push(`Registeret over lokale forskrifter kunne ikke leses: ${e instanceof Error ? e.message : String(e)}. Forrige register beholdes.`);
+      lokalrapport.push(`De lokale forskriftene kunne ikke oppdateres: ${e instanceof Error ? e.message : String(e)}. Forrige register beholdes.`);
       console.error(lokalrapport.at(-1));
     }
-  } else console.log('Registeret over lokale forskrifter leses ikke denne uken.');
+  }
   for (const l of lokalrapport) console.log(l);
 
   // En lokal forskrift som også står i kilderegisteret (fordi innhold viser til den), beholder kilden derfra.
@@ -302,7 +306,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   for (const { d, url, lokal, navn, type, lokaltype } of oppgaver) {
     const forrige = lesForrige(d.id);
     // Lokale forskrifter hentes på omgang, hver intervall_uker, spredt over ukene etter id-en. Uken imellom beholdes
-    // forrige henting uten å spørre Lovdata. En side som registeret nettopp hentet, brukes uansett.
+    // forrige henting uten å spørre Lovdata. En side som nettopp ble hentet (ny eller endret forskrift), brukes uansett.
     const forskyvning = createHash('sha1').update(d.id).digest().readUInt16BE(0);
     const fraRegisteret = lokal ? sider.get(lokal.refid) : undefined;
     if (lokal && forrige && !alle && !fra && !fraRegisteret && (uke + forskyvning) % (d.intervall_uker ?? INTERVALL_UKER) !== 0) {
