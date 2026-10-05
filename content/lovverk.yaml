@@ -36,6 +36,20 @@ dokumenter:
       Valgt ut fra Udirs regelverkssider, godkjent av eier 02.10.2026: habilitet, alminnelige regler,
       saksforberedelse ved enkeltvedtak, vedtaket og klage.
 
+  - id: offentleglova
+    kilde: offentleglova
+    kapitler: ['1-4']
+    merknad: >-
+      Forslag 05.10.2026 etter ønske fra eier: innsyn, journalføring, unntak (bl.a. taushetsplikt, organinterne
+      dokumenter og eksamen) og klage. Ikke med: 5 (sluttføresegner).
+
+  - id: arkivlova
+    kilde: arkivlova
+    kapitler: ['1', '2', '4']
+    merknad: >-
+      Forslag 05.10.2026 etter ønske fra eier: den nye arkivlova fra 1.1.2026, med arkivplikta, dokumentasjonsplan,
+      bevaring og kassasjon og tilsyn. Ikke med: 3 (privatarkiv) og 5 (sluttføresegner).
+
   - id: helse-og-miljo
     kilde: forskrift-helse-miljo-skoler
     korttittel: Helse og miljø i skoler

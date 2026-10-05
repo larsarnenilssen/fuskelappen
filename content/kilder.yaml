@@ -145,6 +145,39 @@ kilder:
       Kapittel II–VI: habilitet, alminnelige regler, saksforberedelse ved enkeltvedtak, vedtaket og klage. Valgt ut
       fra Udirs regelverkssider (eier 02.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
 
+  - id: offentleglova
+    navn: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
+    kortnavn: Offentleglova
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2006-05-19-16
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Kapittel 1–4: formål og verkeområde, hovudreglane om innsyn og journalføring, unntaka frå innsynsretten og
+      saksbehandling og klage (eier 05.10.2026). Teksten hentes som for opplæringslova (avgjørelse 039).
+
+  - id: arkivlova
+    navn: Lov om dokumentasjon og arkiv (arkivlova)
+    kortnavn: Arkivlova
+    utgiver: Lovdata
+    url: https://lovdata.no/lov/2025-06-20-96
+    type: lovdata-datasett
+    niva: nasjonal
+    lisens: NLOD 2.0
+    sjekkmetode: lovtekst
+    aktiv: true
+    godkjent_fingeravtrykk: null
+    faser: [3]
+    merknad: >-
+      Den nye arkivlova, i kraft 1.1.2026 (den gamle fra 1992 er opphevet). Kapittel 1, 2 og 4: verkeområde,
+      arkivplikta, dokumentasjonsplan, bevaring og kassasjon, og tilsyn (eier 05.10.2026). Teksten hentes som for
+      opplæringslova (avgjørelse 039).
+
   - id: forskrift-helse-miljo-skoler
     navn: Forskrift om helse og miljø i barnehager, skoler og skolefritidsordninger
     utgiver: Lovdata
