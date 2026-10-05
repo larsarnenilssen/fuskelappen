@@ -10,7 +10,7 @@
 - Lokalt og i ende-til-ende-testene ligger appen fortsatt under `/jukselappen/` (`app.base`).
 
 **Konsekvens:**
-- Versjonen med flyttevarselet (0.37.0) må være publisert før domenet tas i bruk, og helst åpnet en gang på de enhetene som har appen. Eldre installerte versjoner viser ikke varselet og må legges til på nytt fra den nye adressen.
-- Eldre versjoner enn 0.37.0 kan ikke publiseres på nytt etter at domenet er tatt i bruk (de bygges under `/jukselappen/`).
+- Versjonen med flyttevarselet (0.36.1) må være publisert før domenet tas i bruk, og helst åpnet en gang på de enhetene som har appen. Eldre installerte versjoner viser ikke varselet og må legges til på nytt fra den nye adressen.
+- Eldre versjoner enn 0.36.1 kan ikke publiseres på nytt etter at domenet er tatt i bruk (de bygges under `/jukselappen/`).
 - Installerte apper må legges til på hjemskjermen på nytt fra den nye adressen.
 - Stegene for eier står i `docs/EIER.md`, punkt 16.

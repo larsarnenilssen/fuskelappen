@@ -9,7 +9,7 @@ describe('flytting til ny adresse', () => {
       innstillinger: { malform: 'nn' as const, tema: 'mork' as const, fylke: '46', skole: { id: '974', navn: 'Årstad vgs – Bjørgvin' } },
       favoritter: ['begreper:arsramme', 'fylker:46'],
     };
-    const lenke = flyttelenke('https://jukselappen.no/', data, '0.37.0', new Date('2026-10-05T12:00:00Z'));
+    const lenke = flyttelenke('https://jukselappen.no/', data, '0.36.1', new Date('2026-10-05T12:00:00Z'));
     expect(lenke.startsWith(`https://jukselappen.no/#/innstillinger?${FLYTTEPARAMETER}=`)).toBe(true);
     // Lenken kan brukes som den er: bare tegn som ikke må kodes i adressen.
     expect(lenke.split('=')[1]).toMatch(/^[A-Za-z0-9_-]+$/);

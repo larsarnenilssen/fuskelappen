@@ -336,9 +336,9 @@ Slutter en lenke å virke senere, si fra hvordan adressen ser ut når du finner 
 
 Appen flyttes fra `https://larsarnenilssen.github.io/jukselappen/` til **https://jukselappen.no/** (avgjørelse 065). Gjør stegene i denne rekkefølgen. Navnene på knappene hos Webhuset kan avvike litt fra det som står her. Spør Claude hvis du er i tvil.
 
-**A. Først: versjon 0.37.0 (Claude)**
+**A. Først: versjon 0.36.1 (Claude)**
 
-Versjonen har varselet som sender brukerne av den gamle adressen til den nye, med innstillingene og favorittene. Åpne appen på telefonen og PC-en og trykk «Oppdater» når den spør, så du har 0.37.0 (Innstillinger → Om appen).
+Versjonen har varselet som sender brukerne av den gamle adressen til den nye, med innstillingene og favorittene. Åpne appen på telefonen og PC-en og trykk «Oppdater» når den spør, så du har 0.36.1 (Innstillinger → Om appen).
 
 **B. Bekreft domenet hos GitHub (anbefalt, gjøres én gang)**
 

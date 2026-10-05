@@ -4,6 +4,8 @@ Alle endringer brukerne merker, føres her. Formatet følger [Keep a Changelog](
 
 ## [Unreleased]
 
+## [0.36.1] – 2026-10-05
+
 ### Lagt til
 
 - **Tilbakemelding på e-post** under Innstillinger og i Om appen: «Skriv e-post» åpner e-postprogrammet med emne, versjonen og siden du kom fra. «Vis adressen» viser adressen (jukselappen.app@gmail.com) med en knapp for å kopiere den.
